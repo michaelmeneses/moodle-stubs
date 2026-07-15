@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1SearchResponseSearchResultRankSignalsCustomSignal extends \Google\Model
-{
-    /**
-     * Optional. Name of the signal.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optional. Float value representing the ranking signal (e.g. 1.25 for BM25).
-     *
-     * @var float
-     */
-    public $value;
-    /**
-     * Optional. Name of the signal.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1SearchResponseSearchResultRankSignalsCustomSignal extends \Google\Model
     {
+        /**
+         * Optional. Name of the signal.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optional. Float value representing the ranking signal (e.g. 1.25 for BM25).
+         *
+         * @var float
+         */
+        public $value;
+        /**
+         * Optional. Name of the signal.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. Float value representing the ranking signal (e.g. 1.25 for BM25).
+         *
+         * @param float $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1SearchResponseSearchResultRankSignalsCustomSignal registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. Float value representing the ranking signal (e.g. 1.25 for BM25).
-     *
-     * @param float $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getValue()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1SearchResponseSearchResultRankSignalsCustomSignal extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1SearchResponseSearchResultRankSignalsCustomSignal
     {
     }
 }

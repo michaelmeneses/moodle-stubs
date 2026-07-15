@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class LiveChatNewSponsorDetails extends \Google\Model
-{
-    /**
-     * If the viewer just had upgraded from a lower level. For viewers that were
-     * not members at the time of purchase, this field is false.
-     *
-     * @var bool
-     */
-    public $isUpgrade;
-    /**
-     * The name of the Level that the viewer just had joined. The Level names are
-     * defined by the YouTube channel offering the Membership. In some situations
-     * this field isn't filled.
-     *
-     * @var string
-     */
-    public $memberLevelName;
-    /**
-     * If the viewer just had upgraded from a lower level. For viewers that were
-     * not members at the time of purchase, this field is false.
-     *
-     * @param bool $isUpgrade
-     */
-    public function setIsUpgrade($isUpgrade)
+namespace Google\Service\YouTube {
+    class LiveChatNewSponsorDetails extends \Google\Model
     {
+        /**
+         * If the viewer just had upgraded from a lower level. For viewers that were
+         * not members at the time of purchase, this field is false.
+         *
+         * @var bool
+         */
+        public $isUpgrade;
+        /**
+         * The name of the Level that the viewer just had joined. The Level names are
+         * defined by the YouTube channel offering the Membership. In some situations
+         * this field isn't filled.
+         *
+         * @var string
+         */
+        public $memberLevelName;
+        /**
+         * If the viewer just had upgraded from a lower level. For viewers that were
+         * not members at the time of purchase, this field is false.
+         *
+         * @param bool $isUpgrade
+         */
+        public function setIsUpgrade($isUpgrade)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsUpgrade()
+        {
+        }
+        /**
+         * The name of the Level that the viewer just had joined. The Level names are
+         * defined by the YouTube channel offering the Membership. In some situations
+         * this field isn't filled.
+         *
+         * @param string $memberLevelName
+         */
+        public function setMemberLevelName($memberLevelName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMemberLevelName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\YouTube\LiveChatNewSponsorDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIsUpgrade()
-    {
-    }
-    /**
-     * The name of the Level that the viewer just had joined. The Level names are
-     * defined by the YouTube channel offering the Membership. In some situations
-     * this field isn't filled.
-     *
-     * @param string $memberLevelName
-     */
-    public function setMemberLevelName($memberLevelName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMemberLevelName()
+    class Google_Service_YouTube_LiveChatNewSponsorDetails extends \Google\Service\YouTube\LiveChatNewSponsorDetails
     {
     }
 }

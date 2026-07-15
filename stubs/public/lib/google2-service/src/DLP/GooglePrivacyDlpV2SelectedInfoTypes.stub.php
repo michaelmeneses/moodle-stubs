@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2SelectedInfoTypes extends \Google\Collection
-{
-    protected $collection_key = 'infoTypes';
-    protected $infoTypesType = GooglePrivacyDlpV2InfoType::class;
-    protected $infoTypesDataType = 'array';
-    /**
-     * Required. InfoTypes to apply the transformation to. Required. Provided
-     * InfoType must be unique within the ImageTransformations message.
-     *
-     * @param GooglePrivacyDlpV2InfoType[] $infoTypes
-     */
-    public function setInfoTypes($infoTypes)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2SelectedInfoTypes extends \Google\Collection
     {
+        protected $collection_key = 'infoTypes';
+        protected $infoTypesType = GooglePrivacyDlpV2InfoType::class;
+        protected $infoTypesDataType = 'array';
+        /**
+         * Required. InfoTypes to apply the transformation to. Required. Provided
+         * InfoType must be unique within the ImageTransformations message.
+         *
+         * @param GooglePrivacyDlpV2InfoType[] $infoTypes
+         */
+        public function setInfoTypes($infoTypes)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2InfoType[]
+         */
+        public function getInfoTypes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2InfoType[]
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2SelectedInfoTypes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInfoTypes()
+    class Google_Service_DLP_GooglePrivacyDlpV2SelectedInfoTypes extends \Google\Service\DLP\GooglePrivacyDlpV2SelectedInfoTypes
     {
     }
 }

@@ -21,29 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare\Resource;
-
-/**
- * The "series" collection of methods.
- * Typical usage is:
- *  <code>
- *   $healthcareService = new Google\Service\CloudHealthcare(...);
- *   $series = $healthcareService->projects_locations_datasets_dicomStores_dicomWeb_studies_series;
- *  </code>
- */
-class ProjectsLocationsDatasetsDicomStoresDicomWebStudiesSeries extends \Google\Service\Resource
-{
+namespace Google\Service\CloudHealthcare\Resource {
+    use Google\Service\CloudHealthcare\SeriesMetrics;
     /**
-     * GetSeriesMetrics returns metrics for a series. (series.getSeriesMetrics)
-     *
-     * @param string $series Required. The series resource path. For example, `proje
-     * cts/{project_id}/locations/{location_id}/datasets/{dataset_id}/dicomStores/{d
-     * icom_store_id}/dicomWeb/studies/{study_uid}/series/{series_uid}`.
-     * @param array $optParams Optional parameters.
-     * @return SeriesMetrics
-     * @throws \Google\Service\Exception
+     * The "series" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $healthcareService = new Google\Service\CloudHealthcare(...);
+     *   $series = $healthcareService->projects_locations_datasets_dicomStores_dicomWeb_studies_series;
+     *  </code>
      */
-    public function getSeriesMetrics($series, $optParams = [])
+    class ProjectsLocationsDatasetsDicomStoresDicomWebStudiesSeries extends \Google\Service\Resource
+    {
+        /**
+         * GetSeriesMetrics returns metrics for a series. (series.getSeriesMetrics)
+         *
+         * @param string $series Required. The series resource path. For example, `proje
+         * cts/{project_id}/locations/{location_id}/datasets/{dataset_id}/dicomStores/{d
+         * icom_store_id}/dicomWeb/studies/{study_uid}/series/{series_uid}`.
+         * @param array $optParams Optional parameters.
+         * @return SeriesMetrics
+         * @throws \Google\Service\Exception
+         */
+        public function getSeriesMetrics($series, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudHealthcare\Resource\ProjectsLocationsDatasetsDicomStoresDicomWebStudiesSeries registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudHealthcare_Resource_ProjectsLocationsDatasetsDicomStoresDicomWebStudiesSeries extends \Google\Service\CloudHealthcare\Resource\ProjectsLocationsDatasetsDicomStoresDicomWebStudiesSeries
     {
     }
 }

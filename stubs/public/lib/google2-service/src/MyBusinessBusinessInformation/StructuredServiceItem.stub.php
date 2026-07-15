@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessBusinessInformation;
-
-class StructuredServiceItem extends \Google\Model
-{
-    /**
-     * Optional. Description of structured service item. The character limit is
-     * 300.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Required. The `service_type_id` field is a Google provided unique ID that
-     * can be found in `ServiceType`. This information is provided by
-     * `BatchGetCategories` rpc service.
-     *
-     * @var string
-     */
-    public $serviceTypeId;
-    /**
-     * Optional. Description of structured service item. The character limit is
-     * 300.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\MyBusinessBusinessInformation {
+    class StructuredServiceItem extends \Google\Model
     {
+        /**
+         * Optional. Description of structured service item. The character limit is
+         * 300.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Required. The `service_type_id` field is a Google provided unique ID that
+         * can be found in `ServiceType`. This information is provided by
+         * `BatchGetCategories` rpc service.
+         *
+         * @var string
+         */
+        public $serviceTypeId;
+        /**
+         * Optional. Description of structured service item. The character limit is
+         * 300.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Required. The `service_type_id` field is a Google provided unique ID that
+         * can be found in `ServiceType`. This information is provided by
+         * `BatchGetCategories` rpc service.
+         *
+         * @param string $serviceTypeId
+         */
+        public function setServiceTypeId($serviceTypeId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceTypeId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MyBusinessBusinessInformation\StructuredServiceItem registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * Required. The `service_type_id` field is a Google provided unique ID that
-     * can be found in `ServiceType`. This information is provided by
-     * `BatchGetCategories` rpc service.
-     *
-     * @param string $serviceTypeId
-     */
-    public function setServiceTypeId($serviceTypeId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceTypeId()
+    class Google_Service_MyBusinessBusinessInformation_StructuredServiceItem extends \Google\Service\MyBusinessBusinessInformation\StructuredServiceItem
     {
     }
 }

@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class GoogleFirestoreAdminV1PitrSnapshot extends \Google\Model
-{
-    /**
-     * Required. The name of the database that this was a snapshot of. Format:
-     * `projects/{project}/databases/{database}`.
-     *
-     * @var string
-     */
-    public $database;
-    /**
-     * Output only. Public UUID of the database the snapshot was associated with.
-     *
-     * @var string
-     */
-    public $databaseUid;
-    /**
-     * Required. Snapshot time of the database.
-     *
-     * @var string
-     */
-    public $snapshotTime;
-    /**
-     * Required. The name of the database that this was a snapshot of. Format:
-     * `projects/{project}/databases/{database}`.
-     *
-     * @param string $database
-     */
-    public function setDatabase($database)
+namespace Google\Service\Firestore {
+    class GoogleFirestoreAdminV1PitrSnapshot extends \Google\Model
     {
+        /**
+         * Required. The name of the database that this was a snapshot of. Format:
+         * `projects/{project}/databases/{database}`.
+         *
+         * @var string
+         */
+        public $database;
+        /**
+         * Output only. Public UUID of the database the snapshot was associated with.
+         *
+         * @var string
+         */
+        public $databaseUid;
+        /**
+         * Required. Snapshot time of the database.
+         *
+         * @var string
+         */
+        public $snapshotTime;
+        /**
+         * Required. The name of the database that this was a snapshot of. Format:
+         * `projects/{project}/databases/{database}`.
+         *
+         * @param string $database
+         */
+        public function setDatabase($database)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatabase()
+        {
+        }
+        /**
+         * Output only. Public UUID of the database the snapshot was associated with.
+         *
+         * @param string $databaseUid
+         */
+        public function setDatabaseUid($databaseUid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatabaseUid()
+        {
+        }
+        /**
+         * Required. Snapshot time of the database.
+         *
+         * @param string $snapshotTime
+         */
+        public function setSnapshotTime($snapshotTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSnapshotTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Firestore\GoogleFirestoreAdminV1PitrSnapshot registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatabase()
-    {
-    }
-    /**
-     * Output only. Public UUID of the database the snapshot was associated with.
-     *
-     * @param string $databaseUid
-     */
-    public function setDatabaseUid($databaseUid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDatabaseUid()
-    {
-    }
-    /**
-     * Required. Snapshot time of the database.
-     *
-     * @param string $snapshotTime
-     */
-    public function setSnapshotTime($snapshotTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSnapshotTime()
+    class Google_Service_Firestore_GoogleFirestoreAdminV1PitrSnapshot extends \Google\Service\Firestore\GoogleFirestoreAdminV1PitrSnapshot
     {
     }
 }

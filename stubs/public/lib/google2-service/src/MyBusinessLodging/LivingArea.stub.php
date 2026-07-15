@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessLodging;
-
-class LivingArea extends \Google\Model
-{
-    protected $accessibilityType = LivingAreaAccessibility::class;
-    protected $accessibilityDataType = '';
-    protected $eatingType = LivingAreaEating::class;
-    protected $eatingDataType = '';
-    protected $featuresType = LivingAreaFeatures::class;
-    protected $featuresDataType = '';
-    protected $layoutType = LivingAreaLayout::class;
-    protected $layoutDataType = '';
-    protected $sleepingType = LivingAreaSleeping::class;
-    protected $sleepingDataType = '';
-    /**
-     * Accessibility features of the living area.
-     *
-     * @param LivingAreaAccessibility $accessibility
-     */
-    public function setAccessibility(LivingAreaAccessibility $accessibility)
+namespace Google\Service\MyBusinessLodging {
+    class LivingArea extends \Google\Model
     {
+        protected $accessibilityType = LivingAreaAccessibility::class;
+        protected $accessibilityDataType = '';
+        protected $eatingType = LivingAreaEating::class;
+        protected $eatingDataType = '';
+        protected $featuresType = LivingAreaFeatures::class;
+        protected $featuresDataType = '';
+        protected $layoutType = LivingAreaLayout::class;
+        protected $layoutDataType = '';
+        protected $sleepingType = LivingAreaSleeping::class;
+        protected $sleepingDataType = '';
+        /**
+         * Accessibility features of the living area.
+         *
+         * @param LivingAreaAccessibility $accessibility
+         */
+        public function setAccessibility(LivingAreaAccessibility $accessibility)
+        {
+        }
+        /**
+         * @return LivingAreaAccessibility
+         */
+        public function getAccessibility()
+        {
+        }
+        /**
+         * Information about eating features in the living area.
+         *
+         * @param LivingAreaEating $eating
+         */
+        public function setEating(LivingAreaEating $eating)
+        {
+        }
+        /**
+         * @return LivingAreaEating
+         */
+        public function getEating()
+        {
+        }
+        /**
+         * Features in the living area.
+         *
+         * @param LivingAreaFeatures $features
+         */
+        public function setFeatures(LivingAreaFeatures $features)
+        {
+        }
+        /**
+         * @return LivingAreaFeatures
+         */
+        public function getFeatures()
+        {
+        }
+        /**
+         * Information about the layout of the living area.
+         *
+         * @param LivingAreaLayout $layout
+         */
+        public function setLayout(LivingAreaLayout $layout)
+        {
+        }
+        /**
+         * @return LivingAreaLayout
+         */
+        public function getLayout()
+        {
+        }
+        /**
+         * Information about sleeping features in the living area.
+         *
+         * @param LivingAreaSleeping $sleeping
+         */
+        public function setSleeping(LivingAreaSleeping $sleeping)
+        {
+        }
+        /**
+         * @return LivingAreaSleeping
+         */
+        public function getSleeping()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LivingAreaAccessibility
+     * Runtime class alias of \Google\Service\MyBusinessLodging\LivingArea registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccessibility()
-    {
-    }
-    /**
-     * Information about eating features in the living area.
-     *
-     * @param LivingAreaEating $eating
-     */
-    public function setEating(LivingAreaEating $eating)
-    {
-    }
-    /**
-     * @return LivingAreaEating
-     */
-    public function getEating()
-    {
-    }
-    /**
-     * Features in the living area.
-     *
-     * @param LivingAreaFeatures $features
-     */
-    public function setFeatures(LivingAreaFeatures $features)
-    {
-    }
-    /**
-     * @return LivingAreaFeatures
-     */
-    public function getFeatures()
-    {
-    }
-    /**
-     * Information about the layout of the living area.
-     *
-     * @param LivingAreaLayout $layout
-     */
-    public function setLayout(LivingAreaLayout $layout)
-    {
-    }
-    /**
-     * @return LivingAreaLayout
-     */
-    public function getLayout()
-    {
-    }
-    /**
-     * Information about sleeping features in the living area.
-     *
-     * @param LivingAreaSleeping $sleeping
-     */
-    public function setSleeping(LivingAreaSleeping $sleeping)
-    {
-    }
-    /**
-     * @return LivingAreaSleeping
-     */
-    public function getSleeping()
+    class Google_Service_MyBusinessLodging_LivingArea extends \Google\Service\MyBusinessLodging\LivingArea
     {
     }
 }

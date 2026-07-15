@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class OfferDetails extends \Google\Collection
-{
-    protected $collection_key = 'offerTags';
-    /**
-     * The base plan ID. Present for all base plan and offers.
-     *
-     * @var string
-     */
-    public $basePlanId;
-    /**
-     * The offer ID. Only present for discounted offers.
-     *
-     * @var string
-     */
-    public $offerId;
-    /**
-     * The latest offer tags associated with the offer. It includes tags inherited
-     * from the base plan.
-     *
-     * @var string[]
-     */
-    public $offerTags;
-    /**
-     * The base plan ID. Present for all base plan and offers.
-     *
-     * @param string $basePlanId
-     */
-    public function setBasePlanId($basePlanId)
+namespace Google\Service\AndroidPublisher {
+    class OfferDetails extends \Google\Collection
     {
+        protected $collection_key = 'offerTags';
+        /**
+         * The base plan ID. Present for all base plan and offers.
+         *
+         * @var string
+         */
+        public $basePlanId;
+        /**
+         * The offer ID. Only present for discounted offers.
+         *
+         * @var string
+         */
+        public $offerId;
+        /**
+         * The latest offer tags associated with the offer. It includes tags inherited
+         * from the base plan.
+         *
+         * @var string[]
+         */
+        public $offerTags;
+        /**
+         * The base plan ID. Present for all base plan and offers.
+         *
+         * @param string $basePlanId
+         */
+        public function setBasePlanId($basePlanId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBasePlanId()
+        {
+        }
+        /**
+         * The offer ID. Only present for discounted offers.
+         *
+         * @param string $offerId
+         */
+        public function setOfferId($offerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOfferId()
+        {
+        }
+        /**
+         * The latest offer tags associated with the offer. It includes tags inherited
+         * from the base plan.
+         *
+         * @param string[] $offerTags
+         */
+        public function setOfferTags($offerTags)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getOfferTags()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidPublisher\OfferDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBasePlanId()
-    {
-    }
-    /**
-     * The offer ID. Only present for discounted offers.
-     *
-     * @param string $offerId
-     */
-    public function setOfferId($offerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOfferId()
-    {
-    }
-    /**
-     * The latest offer tags associated with the offer. It includes tags inherited
-     * from the base plan.
-     *
-     * @param string[] $offerTags
-     */
-    public function setOfferTags($offerTags)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getOfferTags()
+    class Google_Service_AndroidPublisher_OfferDetails extends \Google\Service\AndroidPublisher\OfferDetails
     {
     }
 }

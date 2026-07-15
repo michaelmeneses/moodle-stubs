@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class RegionsListResponse extends \Google\Collection
-{
-    protected $collection_key = 'regions';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#regionsListResponse".
-     *
-     * @var string
-     */
-    public $kind;
-    protected $regionsType = Region::class;
-    protected $regionsDataType = 'array';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#regionsListResponse".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Dfareporting {
+    class RegionsListResponse extends \Google\Collection
     {
+        protected $collection_key = 'regions';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#regionsListResponse".
+         *
+         * @var string
+         */
+        public $kind;
+        protected $regionsType = Region::class;
+        protected $regionsDataType = 'array';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#regionsListResponse".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Region collection.
+         *
+         * @param Region[] $regions
+         */
+        public function setRegions($regions)
+        {
+        }
+        /**
+         * @return Region[]
+         */
+        public function getRegions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\RegionsListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * Region collection.
-     *
-     * @param Region[] $regions
-     */
-    public function setRegions($regions)
-    {
-    }
-    /**
-     * @return Region[]
-     */
-    public function getRegions()
+    class Google_Service_Dfareporting_RegionsListResponse extends \Google\Service\Dfareporting\RegionsListResponse
     {
     }
 }

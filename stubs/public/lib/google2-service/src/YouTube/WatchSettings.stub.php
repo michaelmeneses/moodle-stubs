@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class WatchSettings extends \Google\Model
-{
-    /**
-     * The text color for the video watch page's branded area.
-     *
-     * @var string
-     */
-    public $backgroundColor;
-    /**
-     * An ID that uniquely identifies a playlist that displays next to the video
-     * player.
-     *
-     * @var string
-     */
-    public $featuredPlaylistId;
-    /**
-     * The background color for the video watch page's branded area.
-     *
-     * @var string
-     */
-    public $textColor;
-    /**
-     * The text color for the video watch page's branded area.
-     *
-     * @param string $backgroundColor
-     */
-    public function setBackgroundColor($backgroundColor)
+namespace Google\Service\YouTube {
+    class WatchSettings extends \Google\Model
     {
+        /**
+         * The text color for the video watch page's branded area.
+         *
+         * @var string
+         */
+        public $backgroundColor;
+        /**
+         * An ID that uniquely identifies a playlist that displays next to the video
+         * player.
+         *
+         * @var string
+         */
+        public $featuredPlaylistId;
+        /**
+         * The background color for the video watch page's branded area.
+         *
+         * @var string
+         */
+        public $textColor;
+        /**
+         * The text color for the video watch page's branded area.
+         *
+         * @param string $backgroundColor
+         */
+        public function setBackgroundColor($backgroundColor)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBackgroundColor()
+        {
+        }
+        /**
+         * An ID that uniquely identifies a playlist that displays next to the video
+         * player.
+         *
+         * @param string $featuredPlaylistId
+         */
+        public function setFeaturedPlaylistId($featuredPlaylistId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFeaturedPlaylistId()
+        {
+        }
+        /**
+         * The background color for the video watch page's branded area.
+         *
+         * @param string $textColor
+         */
+        public function setTextColor($textColor)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTextColor()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\WatchSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackgroundColor()
-    {
-    }
-    /**
-     * An ID that uniquely identifies a playlist that displays next to the video
-     * player.
-     *
-     * @param string $featuredPlaylistId
-     */
-    public function setFeaturedPlaylistId($featuredPlaylistId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFeaturedPlaylistId()
-    {
-    }
-    /**
-     * The background color for the video watch page's branded area.
-     *
-     * @param string $textColor
-     */
-    public function setTextColor($textColor)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTextColor()
+    class Google_Service_YouTube_WatchSettings extends \Google\Service\YouTube\WatchSettings
     {
     }
 }

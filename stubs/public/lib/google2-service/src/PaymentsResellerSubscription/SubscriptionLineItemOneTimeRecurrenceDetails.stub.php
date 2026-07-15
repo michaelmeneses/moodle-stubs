@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PaymentsResellerSubscription;
-
-class SubscriptionLineItemOneTimeRecurrenceDetails extends \Google\Model
-{
-    protected $servicePeriodType = ServicePeriod::class;
-    protected $servicePeriodDataType = '';
-    /**
-     * Output only. The service period of the ONE_TIME line item.
-     *
-     * @param ServicePeriod $servicePeriod
-     */
-    public function setServicePeriod(ServicePeriod $servicePeriod)
+namespace Google\Service\PaymentsResellerSubscription {
+    class SubscriptionLineItemOneTimeRecurrenceDetails extends \Google\Model
     {
+        protected $servicePeriodType = ServicePeriod::class;
+        protected $servicePeriodDataType = '';
+        /**
+         * Output only. The service period of the ONE_TIME line item.
+         *
+         * @param ServicePeriod $servicePeriod
+         */
+        public function setServicePeriod(ServicePeriod $servicePeriod)
+        {
+        }
+        /**
+         * @return ServicePeriod
+         */
+        public function getServicePeriod()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ServicePeriod
+     * Runtime class alias of \Google\Service\PaymentsResellerSubscription\SubscriptionLineItemOneTimeRecurrenceDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getServicePeriod()
+    class Google_Service_PaymentsResellerSubscription_SubscriptionLineItemOneTimeRecurrenceDetails extends \Google\Service\PaymentsResellerSubscription\SubscriptionLineItemOneTimeRecurrenceDetails
     {
     }
 }

@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAlloyDBAdmin;
-
-class DenyMaintenancePeriod extends \Google\Model
-{
-    protected $endDateType = GoogleTypeDate::class;
-    protected $endDateDataType = '';
-    protected $startDateType = GoogleTypeDate::class;
-    protected $startDateDataType = '';
-    protected $timeType = GoogleTypeTimeOfDay::class;
-    protected $timeDataType = '';
-    /**
-     * Deny period end date. This can be: * A full date, with non-zero year, month
-     * and day values OR * A month and day value, with a zero year for recurring
-     *
-     * @param GoogleTypeDate $endDate
-     */
-    public function setEndDate(GoogleTypeDate $endDate)
+namespace Google\Service\CloudAlloyDBAdmin {
+    class DenyMaintenancePeriod extends \Google\Model
     {
+        protected $endDateType = GoogleTypeDate::class;
+        protected $endDateDataType = '';
+        protected $startDateType = GoogleTypeDate::class;
+        protected $startDateDataType = '';
+        protected $timeType = GoogleTypeTimeOfDay::class;
+        protected $timeDataType = '';
+        /**
+         * Deny period end date. This can be: * A full date, with non-zero year, month
+         * and day values OR * A month and day value, with a zero year for recurring
+         *
+         * @param GoogleTypeDate $endDate
+         */
+        public function setEndDate(GoogleTypeDate $endDate)
+        {
+        }
+        /**
+         * @return GoogleTypeDate
+         */
+        public function getEndDate()
+        {
+        }
+        /**
+         * Deny period start date. This can be: * A full date, with non-zero year,
+         * month and day values OR * A month and day value, with a zero year for
+         * recurring
+         *
+         * @param GoogleTypeDate $startDate
+         */
+        public function setStartDate(GoogleTypeDate $startDate)
+        {
+        }
+        /**
+         * @return GoogleTypeDate
+         */
+        public function getStartDate()
+        {
+        }
+        /**
+         * Time in UTC when the deny period starts on start_date and ends on end_date.
+         * This can be: * Full time OR * All zeros for 00:00:00 UTC
+         *
+         * @param GoogleTypeTimeOfDay $time
+         */
+        public function setTime(GoogleTypeTimeOfDay $time)
+        {
+        }
+        /**
+         * @return GoogleTypeTimeOfDay
+         */
+        public function getTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleTypeDate
+     * Runtime class alias of \Google\Service\CloudAlloyDBAdmin\DenyMaintenancePeriod registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndDate()
-    {
-    }
-    /**
-     * Deny period start date. This can be: * A full date, with non-zero year,
-     * month and day values OR * A month and day value, with a zero year for
-     * recurring
-     *
-     * @param GoogleTypeDate $startDate
-     */
-    public function setStartDate(GoogleTypeDate $startDate)
-    {
-    }
-    /**
-     * @return GoogleTypeDate
-     */
-    public function getStartDate()
-    {
-    }
-    /**
-     * Time in UTC when the deny period starts on start_date and ends on end_date.
-     * This can be: * Full time OR * All zeros for 00:00:00 UTC
-     *
-     * @param GoogleTypeTimeOfDay $time
-     */
-    public function setTime(GoogleTypeTimeOfDay $time)
-    {
-    }
-    /**
-     * @return GoogleTypeTimeOfDay
-     */
-    public function getTime()
+    class Google_Service_CloudAlloyDBAdmin_DenyMaintenancePeriod extends \Google\Service\CloudAlloyDBAdmin\DenyMaintenancePeriod
     {
     }
 }

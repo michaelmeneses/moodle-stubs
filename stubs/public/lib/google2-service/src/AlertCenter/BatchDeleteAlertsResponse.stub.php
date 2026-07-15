@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AlertCenter;
-
-class BatchDeleteAlertsResponse extends \Google\Collection
-{
-    protected $collection_key = 'successAlertIds';
-    protected $failedAlertStatusType = Status::class;
-    protected $failedAlertStatusDataType = 'map';
-    /**
-     * The successful list of alert IDs.
-     *
-     * @var string[]
-     */
-    public $successAlertIds;
-    /**
-     * The status details for each failed `alert_id`.
-     *
-     * @param Status[] $failedAlertStatus
-     */
-    public function setFailedAlertStatus($failedAlertStatus)
+namespace Google\Service\AlertCenter {
+    class BatchDeleteAlertsResponse extends \Google\Collection
     {
+        protected $collection_key = 'successAlertIds';
+        protected $failedAlertStatusType = Status::class;
+        protected $failedAlertStatusDataType = 'map';
+        /**
+         * The successful list of alert IDs.
+         *
+         * @var string[]
+         */
+        public $successAlertIds;
+        /**
+         * The status details for each failed `alert_id`.
+         *
+         * @param Status[] $failedAlertStatus
+         */
+        public function setFailedAlertStatus($failedAlertStatus)
+        {
+        }
+        /**
+         * @return Status[]
+         */
+        public function getFailedAlertStatus()
+        {
+        }
+        /**
+         * The successful list of alert IDs.
+         *
+         * @param string[] $successAlertIds
+         */
+        public function setSuccessAlertIds($successAlertIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSuccessAlertIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Status[]
+     * Runtime class alias of \Google\Service\AlertCenter\BatchDeleteAlertsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFailedAlertStatus()
-    {
-    }
-    /**
-     * The successful list of alert IDs.
-     *
-     * @param string[] $successAlertIds
-     */
-    public function setSuccessAlertIds($successAlertIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSuccessAlertIds()
+    class Google_Service_AlertCenter_BatchDeleteAlertsResponse extends \Google\Service\AlertCenter\BatchDeleteAlertsResponse
     {
     }
 }

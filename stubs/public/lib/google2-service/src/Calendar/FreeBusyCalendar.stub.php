@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Calendar;
-
-class FreeBusyCalendar extends \Google\Collection
-{
-    protected $collection_key = 'errors';
-    protected $busyType = TimePeriod::class;
-    protected $busyDataType = 'array';
-    protected $errorsType = Error::class;
-    protected $errorsDataType = 'array';
-    /**
-     * List of time ranges during which this calendar should be regarded as busy.
-     *
-     * @param TimePeriod[] $busy
-     */
-    public function setBusy($busy)
+namespace Google\Service\Calendar {
+    class FreeBusyCalendar extends \Google\Collection
     {
+        protected $collection_key = 'errors';
+        protected $busyType = TimePeriod::class;
+        protected $busyDataType = 'array';
+        protected $errorsType = Error::class;
+        protected $errorsDataType = 'array';
+        /**
+         * List of time ranges during which this calendar should be regarded as busy.
+         *
+         * @param TimePeriod[] $busy
+         */
+        public function setBusy($busy)
+        {
+        }
+        /**
+         * @return TimePeriod[]
+         */
+        public function getBusy()
+        {
+        }
+        /**
+         * Optional error(s) (if computation for the calendar failed).
+         *
+         * @param Error[] $errors
+         */
+        public function setErrors($errors)
+        {
+        }
+        /**
+         * @return Error[]
+         */
+        public function getErrors()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TimePeriod[]
+     * Runtime class alias of \Google\Service\Calendar\FreeBusyCalendar registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBusy()
-    {
-    }
-    /**
-     * Optional error(s) (if computation for the calendar failed).
-     *
-     * @param Error[] $errors
-     */
-    public function setErrors($errors)
-    {
-    }
-    /**
-     * @return Error[]
-     */
-    public function getErrors()
+    class Google_Service_Calendar_FreeBusyCalendar extends \Google\Service\Calendar\FreeBusyCalendar
     {
     }
 }

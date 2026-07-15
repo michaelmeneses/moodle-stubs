@@ -21,146 +21,155 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3Deployment extends \Google\Model
-{
-    /**
-     * State unspecified.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * The deployment is running.
-     */
-    public const STATE_RUNNING = 'RUNNING';
-    /**
-     * The deployment succeeded.
-     */
-    public const STATE_SUCCEEDED = 'SUCCEEDED';
-    /**
-     * The deployment failed.
-     */
-    public const STATE_FAILED = 'FAILED';
-    /**
-     * End time of this deployment.
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * The name of the flow version for this deployment. Format:
-     * projects//locations//agents//flows//versions/.
-     *
-     * @var string
-     */
-    public $flowVersion;
-    /**
-     * The name of the deployment. Format:
-     * projects//locations//agents//environments//deployments/.
-     *
-     * @var string
-     */
-    public $name;
-    protected $resultType = GoogleCloudDialogflowCxV3DeploymentResult::class;
-    protected $resultDataType = '';
-    /**
-     * Start time of this deployment.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * The current state of the deployment.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * End time of this deployment.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3Deployment extends \Google\Model
     {
+        /**
+         * State unspecified.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * The deployment is running.
+         */
+        public const STATE_RUNNING = 'RUNNING';
+        /**
+         * The deployment succeeded.
+         */
+        public const STATE_SUCCEEDED = 'SUCCEEDED';
+        /**
+         * The deployment failed.
+         */
+        public const STATE_FAILED = 'FAILED';
+        /**
+         * End time of this deployment.
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * The name of the flow version for this deployment. Format:
+         * projects//locations//agents//flows//versions/.
+         *
+         * @var string
+         */
+        public $flowVersion;
+        /**
+         * The name of the deployment. Format:
+         * projects//locations//agents//environments//deployments/.
+         *
+         * @var string
+         */
+        public $name;
+        protected $resultType = GoogleCloudDialogflowCxV3DeploymentResult::class;
+        protected $resultDataType = '';
+        /**
+         * Start time of this deployment.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * The current state of the deployment.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * End time of this deployment.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * The name of the flow version for this deployment. Format:
+         * projects//locations//agents//flows//versions/.
+         *
+         * @param string $flowVersion
+         */
+        public function setFlowVersion($flowVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFlowVersion()
+        {
+        }
+        /**
+         * The name of the deployment. Format:
+         * projects//locations//agents//environments//deployments/.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Result of the deployment.
+         *
+         * @param GoogleCloudDialogflowCxV3DeploymentResult $result
+         */
+        public function setResult(GoogleCloudDialogflowCxV3DeploymentResult $result)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3DeploymentResult
+         */
+        public function getResult()
+        {
+        }
+        /**
+         * Start time of this deployment.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
+        /**
+         * The current state of the deployment.
+         *
+         * Accepted values: STATE_UNSPECIFIED, RUNNING, SUCCEEDED, FAILED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3Deployment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndTime()
-    {
-    }
-    /**
-     * The name of the flow version for this deployment. Format:
-     * projects//locations//agents//flows//versions/.
-     *
-     * @param string $flowVersion
-     */
-    public function setFlowVersion($flowVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFlowVersion()
-    {
-    }
-    /**
-     * The name of the deployment. Format:
-     * projects//locations//agents//environments//deployments/.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Result of the deployment.
-     *
-     * @param GoogleCloudDialogflowCxV3DeploymentResult $result
-     */
-    public function setResult(GoogleCloudDialogflowCxV3DeploymentResult $result)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3DeploymentResult
-     */
-    public function getResult()
-    {
-    }
-    /**
-     * Start time of this deployment.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
-    {
-    }
-    /**
-     * The current state of the deployment.
-     *
-     * Accepted values: STATE_UNSPECIFIED, RUNNING, SUCCEEDED, FAILED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3Deployment extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3Deployment
     {
     }
 }

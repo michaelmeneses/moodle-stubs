@@ -21,149 +21,158 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OrgPolicyAPI;
-
-class GoogleCloudOrgpolicyV2ConstraintCustomConstraintDefinitionParameter extends \Google\Model
-{
-    /**
-     * This is only used for distinguishing unset values and should never be used.
-     * Results in an error.
-     */
-    public const ITEM_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
-    /**
-     * List parameter type.
-     */
-    public const ITEM_LIST = 'LIST';
-    /**
-     * String parameter type.
-     */
-    public const ITEM_STRING = 'STRING';
-    /**
-     * Boolean parameter type.
-     */
-    public const ITEM_BOOLEAN = 'BOOLEAN';
-    /**
-     * This is only used for distinguishing unset values and should never be used.
-     * Results in an error.
-     */
-    public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
-    /**
-     * List parameter type.
-     */
-    public const TYPE_LIST = 'LIST';
-    /**
-     * String parameter type.
-     */
-    public const TYPE_STRING = 'STRING';
-    /**
-     * Boolean parameter type.
-     */
-    public const TYPE_BOOLEAN = 'BOOLEAN';
-    /**
-     * Sets the value of the parameter in an assignment if no value is given.
-     *
-     * @var array
-     */
-    public $defaultValue;
-    /**
-     * Determines the parameter's value structure. For example, `LIST` can be
-     * specified by defining `type: LIST`, and `item: STRING`.
-     *
-     * @var string
-     */
-    public $item;
-    protected $metadataType = GoogleCloudOrgpolicyV2ConstraintCustomConstraintDefinitionParameterMetadata::class;
-    protected $metadataDataType = '';
-    /**
-     * Type of the parameter.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Provides a CEL expression to specify the acceptable parameter values during
-     * assignment. For example, parameterName in ("parameterValue1",
-     * "parameterValue2")
-     *
-     * @var string
-     */
-    public $validValuesExpr;
-    /**
-     * Sets the value of the parameter in an assignment if no value is given.
-     *
-     * @param array $defaultValue
-     */
-    public function setDefaultValue($defaultValue)
+namespace Google\Service\OrgPolicyAPI {
+    class GoogleCloudOrgpolicyV2ConstraintCustomConstraintDefinitionParameter extends \Google\Model
     {
+        /**
+         * This is only used for distinguishing unset values and should never be used.
+         * Results in an error.
+         */
+        public const ITEM_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
+        /**
+         * List parameter type.
+         */
+        public const ITEM_LIST = 'LIST';
+        /**
+         * String parameter type.
+         */
+        public const ITEM_STRING = 'STRING';
+        /**
+         * Boolean parameter type.
+         */
+        public const ITEM_BOOLEAN = 'BOOLEAN';
+        /**
+         * This is only used for distinguishing unset values and should never be used.
+         * Results in an error.
+         */
+        public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
+        /**
+         * List parameter type.
+         */
+        public const TYPE_LIST = 'LIST';
+        /**
+         * String parameter type.
+         */
+        public const TYPE_STRING = 'STRING';
+        /**
+         * Boolean parameter type.
+         */
+        public const TYPE_BOOLEAN = 'BOOLEAN';
+        /**
+         * Sets the value of the parameter in an assignment if no value is given.
+         *
+         * @var array
+         */
+        public $defaultValue;
+        /**
+         * Determines the parameter's value structure. For example, `LIST` can be
+         * specified by defining `type: LIST`, and `item: STRING`.
+         *
+         * @var string
+         */
+        public $item;
+        protected $metadataType = GoogleCloudOrgpolicyV2ConstraintCustomConstraintDefinitionParameterMetadata::class;
+        protected $metadataDataType = '';
+        /**
+         * Type of the parameter.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Provides a CEL expression to specify the acceptable parameter values during
+         * assignment. For example, parameterName in ("parameterValue1",
+         * "parameterValue2")
+         *
+         * @var string
+         */
+        public $validValuesExpr;
+        /**
+         * Sets the value of the parameter in an assignment if no value is given.
+         *
+         * @param array $defaultValue
+         */
+        public function setDefaultValue($defaultValue)
+        {
+        }
+        /**
+         * @return array
+         */
+        public function getDefaultValue()
+        {
+        }
+        /**
+         * Determines the parameter's value structure. For example, `LIST` can be
+         * specified by defining `type: LIST`, and `item: STRING`.
+         *
+         * Accepted values: TYPE_UNSPECIFIED, LIST, STRING, BOOLEAN
+         *
+         * @param self::ITEM_* $item
+         */
+        public function setItem($item)
+        {
+        }
+        /**
+         * @return self::ITEM_*
+         */
+        public function getItem()
+        {
+        }
+        /**
+         * Defines subproperties primarily used by the UI to display user-friendly
+         * information.
+         *
+         * @param GoogleCloudOrgpolicyV2ConstraintCustomConstraintDefinitionParameterMetadata $metadata
+         */
+        public function setMetadata(GoogleCloudOrgpolicyV2ConstraintCustomConstraintDefinitionParameterMetadata $metadata)
+        {
+        }
+        /**
+         * @return GoogleCloudOrgpolicyV2ConstraintCustomConstraintDefinitionParameterMetadata
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * Type of the parameter.
+         *
+         * Accepted values: TYPE_UNSPECIFIED, LIST, STRING, BOOLEAN
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
+        /**
+         * Provides a CEL expression to specify the acceptable parameter values during
+         * assignment. For example, parameterName in ("parameterValue1",
+         * "parameterValue2")
+         *
+         * @param string $validValuesExpr
+         */
+        public function setValidValuesExpr($validValuesExpr)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValidValuesExpr()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array
+     * Runtime class alias of \Google\Service\OrgPolicyAPI\GoogleCloudOrgpolicyV2ConstraintCustomConstraintDefinitionParameter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDefaultValue()
-    {
-    }
-    /**
-     * Determines the parameter's value structure. For example, `LIST` can be
-     * specified by defining `type: LIST`, and `item: STRING`.
-     *
-     * Accepted values: TYPE_UNSPECIFIED, LIST, STRING, BOOLEAN
-     *
-     * @param self::ITEM_* $item
-     */
-    public function setItem($item)
-    {
-    }
-    /**
-     * @return self::ITEM_*
-     */
-    public function getItem()
-    {
-    }
-    /**
-     * Defines subproperties primarily used by the UI to display user-friendly
-     * information.
-     *
-     * @param GoogleCloudOrgpolicyV2ConstraintCustomConstraintDefinitionParameterMetadata $metadata
-     */
-    public function setMetadata(GoogleCloudOrgpolicyV2ConstraintCustomConstraintDefinitionParameterMetadata $metadata)
-    {
-    }
-    /**
-     * @return GoogleCloudOrgpolicyV2ConstraintCustomConstraintDefinitionParameterMetadata
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * Type of the parameter.
-     *
-     * Accepted values: TYPE_UNSPECIFIED, LIST, STRING, BOOLEAN
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
-    {
-    }
-    /**
-     * Provides a CEL expression to specify the acceptable parameter values during
-     * assignment. For example, parameterName in ("parameterValue1",
-     * "parameterValue2")
-     *
-     * @param string $validValuesExpr
-     */
-    public function setValidValuesExpr($validValuesExpr)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValidValuesExpr()
+    class Google_Service_OrgPolicyAPI_GoogleCloudOrgpolicyV2ConstraintCustomConstraintDefinitionParameter extends \Google\Service\OrgPolicyAPI\GoogleCloudOrgpolicyV2ConstraintCustomConstraintDefinitionParameter
     {
     }
 }

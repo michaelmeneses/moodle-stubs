@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkManagement;
-
-class HybridSubnetInfo extends \Google\Model
-{
-    /**
-     * Name of a hybrid subnet.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Name of a Google Cloud region where the hybrid subnet is configured.
-     *
-     * @var string
-     */
-    public $region;
-    /**
-     * URI of a hybrid subnet.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * Name of a hybrid subnet.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\NetworkManagement {
+    class HybridSubnetInfo extends \Google\Model
     {
+        /**
+         * Name of a hybrid subnet.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Name of a Google Cloud region where the hybrid subnet is configured.
+         *
+         * @var string
+         */
+        public $region;
+        /**
+         * URI of a hybrid subnet.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * Name of a hybrid subnet.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Name of a Google Cloud region where the hybrid subnet is configured.
+         *
+         * @param string $region
+         */
+        public function setRegion($region)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegion()
+        {
+        }
+        /**
+         * URI of a hybrid subnet.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetworkManagement\HybridSubnetInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Name of a Google Cloud region where the hybrid subnet is configured.
-     *
-     * @param string $region
-     */
-    public function setRegion($region)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegion()
-    {
-    }
-    /**
-     * URI of a hybrid subnet.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_NetworkManagement_HybridSubnetInfo extends \Google\Service\NetworkManagement\HybridSubnetInfo
     {
     }
 }

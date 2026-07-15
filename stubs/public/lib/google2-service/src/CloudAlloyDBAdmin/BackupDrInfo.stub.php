@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAlloyDBAdmin;
-
-class BackupDrInfo extends \Google\Collection
-{
-    protected $collection_key = 'previousWindows';
-    protected $currentWindowType = BackupDrEnabledWindow::class;
-    protected $currentWindowDataType = '';
-    protected $previousWindowsType = BackupDrEnabledWindow::class;
-    protected $previousWindowsDataType = 'array';
-    /**
-     * The current BackupDR configuration for this cluster. If BackupDR protection
-     * is not enabled for this cluster, this field will be empty.
-     *
-     * @param BackupDrEnabledWindow $currentWindow
-     */
-    public function setCurrentWindow(BackupDrEnabledWindow $currentWindow)
+namespace Google\Service\CloudAlloyDBAdmin {
+    class BackupDrInfo extends \Google\Collection
     {
+        protected $collection_key = 'previousWindows';
+        protected $currentWindowType = BackupDrEnabledWindow::class;
+        protected $currentWindowDataType = '';
+        protected $previousWindowsType = BackupDrEnabledWindow::class;
+        protected $previousWindowsDataType = 'array';
+        /**
+         * The current BackupDR configuration for this cluster. If BackupDR protection
+         * is not enabled for this cluster, this field will be empty.
+         *
+         * @param BackupDrEnabledWindow $currentWindow
+         */
+        public function setCurrentWindow(BackupDrEnabledWindow $currentWindow)
+        {
+        }
+        /**
+         * @return BackupDrEnabledWindow
+         */
+        public function getCurrentWindow()
+        {
+        }
+        /**
+         * Windows during which BackupDR was enabled for this cluster, along with
+         * associated configuration for that window. These are used to determine
+         * points-in-time for which restores can be performed. The windows are ordered
+         * with the most recent window last. Windows are mutally exclusive. Windows
+         * which closed more than 1 year ago will be removed from this list.
+         *
+         * @param BackupDrEnabledWindow[] $previousWindows
+         */
+        public function setPreviousWindows($previousWindows)
+        {
+        }
+        /**
+         * @return BackupDrEnabledWindow[]
+         */
+        public function getPreviousWindows()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BackupDrEnabledWindow
+     * Runtime class alias of \Google\Service\CloudAlloyDBAdmin\BackupDrInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCurrentWindow()
-    {
-    }
-    /**
-     * Windows during which BackupDR was enabled for this cluster, along with
-     * associated configuration for that window. These are used to determine
-     * points-in-time for which restores can be performed. The windows are ordered
-     * with the most recent window last. Windows are mutally exclusive. Windows
-     * which closed more than 1 year ago will be removed from this list.
-     *
-     * @param BackupDrEnabledWindow[] $previousWindows
-     */
-    public function setPreviousWindows($previousWindows)
-    {
-    }
-    /**
-     * @return BackupDrEnabledWindow[]
-     */
-    public function getPreviousWindows()
+    class Google_Service_CloudAlloyDBAdmin_BackupDrInfo extends \Google\Service\CloudAlloyDBAdmin\BackupDrInfo
     {
     }
 }

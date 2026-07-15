@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1beta1ListEntryGroupsResponse extends \Google\Collection
-{
-    protected $collection_key = 'entryGroups';
-    protected $entryGroupsType = GoogleCloudDatacatalogV1beta1EntryGroup::class;
-    protected $entryGroupsDataType = 'array';
-    public $nextPageToken;
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1beta1ListEntryGroupsResponse extends \Google\Collection
+    {
+        protected $collection_key = 'entryGroups';
+        protected $entryGroupsType = GoogleCloudDatacatalogV1beta1EntryGroup::class;
+        protected $entryGroupsDataType = 'array';
+        public $nextPageToken;
+        /**
+         * @param GoogleCloudDatacatalogV1beta1EntryGroup[]
+         */
+        public function setEntryGroups($entryGroups)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1beta1EntryGroup[]
+         */
+        public function getEntryGroups()
+        {
+        }
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        public function getNextPageToken()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @param GoogleCloudDatacatalogV1beta1EntryGroup[]
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1beta1ListEntryGroupsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setEntryGroups($entryGroups)
-    {
-    }
-    /**
-     * @return GoogleCloudDatacatalogV1beta1EntryGroup[]
-     */
-    public function getEntryGroups()
-    {
-    }
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    public function getNextPageToken()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1beta1ListEntryGroupsResponse extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1beta1ListEntryGroupsResponse
     {
     }
 }

@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastore;
-
-class CommitResponse extends \Google\Collection
-{
-    protected $collection_key = 'mutationResults';
-    /**
-     * The transaction commit timestamp. Not set for non-transactional commits.
-     *
-     * @var string
-     */
-    public $commitTime;
-    /**
-     * The number of index entries updated during the commit, or zero if none were
-     * updated.
-     *
-     * @var int
-     */
-    public $indexUpdates;
-    protected $mutationResultsType = MutationResult::class;
-    protected $mutationResultsDataType = 'array';
-    /**
-     * The transaction commit timestamp. Not set for non-transactional commits.
-     *
-     * @param string $commitTime
-     */
-    public function setCommitTime($commitTime)
+namespace Google\Service\Datastore {
+    class CommitResponse extends \Google\Collection
     {
+        protected $collection_key = 'mutationResults';
+        /**
+         * The transaction commit timestamp. Not set for non-transactional commits.
+         *
+         * @var string
+         */
+        public $commitTime;
+        /**
+         * The number of index entries updated during the commit, or zero if none were
+         * updated.
+         *
+         * @var int
+         */
+        public $indexUpdates;
+        protected $mutationResultsType = MutationResult::class;
+        protected $mutationResultsDataType = 'array';
+        /**
+         * The transaction commit timestamp. Not set for non-transactional commits.
+         *
+         * @param string $commitTime
+         */
+        public function setCommitTime($commitTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCommitTime()
+        {
+        }
+        /**
+         * The number of index entries updated during the commit, or zero if none were
+         * updated.
+         *
+         * @param int $indexUpdates
+         */
+        public function setIndexUpdates($indexUpdates)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getIndexUpdates()
+        {
+        }
+        /**
+         * The result of performing the mutations. The i-th mutation result
+         * corresponds to the i-th mutation in the request.
+         *
+         * @param MutationResult[] $mutationResults
+         */
+        public function setMutationResults($mutationResults)
+        {
+        }
+        /**
+         * @return MutationResult[]
+         */
+        public function getMutationResults()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Datastore\CommitResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCommitTime()
-    {
-    }
-    /**
-     * The number of index entries updated during the commit, or zero if none were
-     * updated.
-     *
-     * @param int $indexUpdates
-     */
-    public function setIndexUpdates($indexUpdates)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getIndexUpdates()
-    {
-    }
-    /**
-     * The result of performing the mutations. The i-th mutation result
-     * corresponds to the i-th mutation in the request.
-     *
-     * @param MutationResult[] $mutationResults
-     */
-    public function setMutationResults($mutationResults)
-    {
-    }
-    /**
-     * @return MutationResult[]
-     */
-    public function getMutationResults()
+    class Google_Service_Datastore_CommitResponse extends \Google\Service\Datastore\CommitResponse
     {
     }
 }

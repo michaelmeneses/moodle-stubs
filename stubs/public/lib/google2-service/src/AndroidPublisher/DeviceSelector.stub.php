@@ -21,109 +21,118 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class DeviceSelector extends \Google\Collection
-{
-    protected $collection_key = 'systemOnChips';
-    protected $deviceRamType = DeviceRam::class;
-    protected $deviceRamDataType = '';
-    protected $excludedDeviceIdsType = DeviceId::class;
-    protected $excludedDeviceIdsDataType = 'array';
-    protected $forbiddenSystemFeaturesType = SystemFeature::class;
-    protected $forbiddenSystemFeaturesDataType = 'array';
-    protected $includedDeviceIdsType = DeviceId::class;
-    protected $includedDeviceIdsDataType = 'array';
-    protected $requiredSystemFeaturesType = SystemFeature::class;
-    protected $requiredSystemFeaturesDataType = 'array';
-    protected $systemOnChipsType = SystemOnChip::class;
-    protected $systemOnChipsDataType = 'array';
-    /**
-     * Conditions on the device's RAM.
-     *
-     * @param DeviceRam $deviceRam
-     */
-    public function setDeviceRam(DeviceRam $deviceRam)
+namespace Google\Service\AndroidPublisher {
+    class DeviceSelector extends \Google\Collection
     {
+        protected $collection_key = 'systemOnChips';
+        protected $deviceRamType = DeviceRam::class;
+        protected $deviceRamDataType = '';
+        protected $excludedDeviceIdsType = DeviceId::class;
+        protected $excludedDeviceIdsDataType = 'array';
+        protected $forbiddenSystemFeaturesType = SystemFeature::class;
+        protected $forbiddenSystemFeaturesDataType = 'array';
+        protected $includedDeviceIdsType = DeviceId::class;
+        protected $includedDeviceIdsDataType = 'array';
+        protected $requiredSystemFeaturesType = SystemFeature::class;
+        protected $requiredSystemFeaturesDataType = 'array';
+        protected $systemOnChipsType = SystemOnChip::class;
+        protected $systemOnChipsDataType = 'array';
+        /**
+         * Conditions on the device's RAM.
+         *
+         * @param DeviceRam $deviceRam
+         */
+        public function setDeviceRam(DeviceRam $deviceRam)
+        {
+        }
+        /**
+         * @return DeviceRam
+         */
+        public function getDeviceRam()
+        {
+        }
+        /**
+         * Device models excluded by this selector, even if they match all other
+         * conditions.
+         *
+         * @param DeviceId[] $excludedDeviceIds
+         */
+        public function setExcludedDeviceIds($excludedDeviceIds)
+        {
+        }
+        /**
+         * @return DeviceId[]
+         */
+        public function getExcludedDeviceIds()
+        {
+        }
+        /**
+         * A device that has any of these system features is excluded by this
+         * selector, even if it matches all other conditions.
+         *
+         * @param SystemFeature[] $forbiddenSystemFeatures
+         */
+        public function setForbiddenSystemFeatures($forbiddenSystemFeatures)
+        {
+        }
+        /**
+         * @return SystemFeature[]
+         */
+        public function getForbiddenSystemFeatures()
+        {
+        }
+        /**
+         * Device models included by this selector.
+         *
+         * @param DeviceId[] $includedDeviceIds
+         */
+        public function setIncludedDeviceIds($includedDeviceIds)
+        {
+        }
+        /**
+         * @return DeviceId[]
+         */
+        public function getIncludedDeviceIds()
+        {
+        }
+        /**
+         * A device needs to have all these system features to be included by the
+         * selector.
+         *
+         * @param SystemFeature[] $requiredSystemFeatures
+         */
+        public function setRequiredSystemFeatures($requiredSystemFeatures)
+        {
+        }
+        /**
+         * @return SystemFeature[]
+         */
+        public function getRequiredSystemFeatures()
+        {
+        }
+        /**
+         * Optional. The SoCs included by this selector. Only works for Android S+
+         * devices.
+         *
+         * @param SystemOnChip[] $systemOnChips
+         */
+        public function setSystemOnChips($systemOnChips)
+        {
+        }
+        /**
+         * @return SystemOnChip[]
+         */
+        public function getSystemOnChips()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DeviceRam
+     * Runtime class alias of \Google\Service\AndroidPublisher\DeviceSelector registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeviceRam()
-    {
-    }
-    /**
-     * Device models excluded by this selector, even if they match all other
-     * conditions.
-     *
-     * @param DeviceId[] $excludedDeviceIds
-     */
-    public function setExcludedDeviceIds($excludedDeviceIds)
-    {
-    }
-    /**
-     * @return DeviceId[]
-     */
-    public function getExcludedDeviceIds()
-    {
-    }
-    /**
-     * A device that has any of these system features is excluded by this
-     * selector, even if it matches all other conditions.
-     *
-     * @param SystemFeature[] $forbiddenSystemFeatures
-     */
-    public function setForbiddenSystemFeatures($forbiddenSystemFeatures)
-    {
-    }
-    /**
-     * @return SystemFeature[]
-     */
-    public function getForbiddenSystemFeatures()
-    {
-    }
-    /**
-     * Device models included by this selector.
-     *
-     * @param DeviceId[] $includedDeviceIds
-     */
-    public function setIncludedDeviceIds($includedDeviceIds)
-    {
-    }
-    /**
-     * @return DeviceId[]
-     */
-    public function getIncludedDeviceIds()
-    {
-    }
-    /**
-     * A device needs to have all these system features to be included by the
-     * selector.
-     *
-     * @param SystemFeature[] $requiredSystemFeatures
-     */
-    public function setRequiredSystemFeatures($requiredSystemFeatures)
-    {
-    }
-    /**
-     * @return SystemFeature[]
-     */
-    public function getRequiredSystemFeatures()
-    {
-    }
-    /**
-     * Optional. The SoCs included by this selector. Only works for Android S+
-     * devices.
-     *
-     * @param SystemOnChip[] $systemOnChips
-     */
-    public function setSystemOnChips($systemOnChips)
-    {
-    }
-    /**
-     * @return SystemOnChip[]
-     */
-    public function getSystemOnChips()
+    class Google_Service_AndroidPublisher_DeviceSelector extends \Google\Service\AndroidPublisher\DeviceSelector
     {
     }
 }

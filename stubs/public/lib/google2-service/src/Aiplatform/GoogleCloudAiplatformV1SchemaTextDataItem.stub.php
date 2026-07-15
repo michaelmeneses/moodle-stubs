@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaTextDataItem extends \Google\Model
-{
-    /**
-     * Output only. Google Cloud Storage URI points to a copy of the original text
-     * in the Vertex-managed bucket in the user's project. The text file is up to
-     * 10MB in size.
-     *
-     * @var string
-     */
-    public $gcsUri;
-    /**
-     * Output only. Google Cloud Storage URI points to a copy of the original text
-     * in the Vertex-managed bucket in the user's project. The text file is up to
-     * 10MB in size.
-     *
-     * @param string $gcsUri
-     */
-    public function setGcsUri($gcsUri)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaTextDataItem extends \Google\Model
     {
+        /**
+         * Output only. Google Cloud Storage URI points to a copy of the original text
+         * in the Vertex-managed bucket in the user's project. The text file is up to
+         * 10MB in size.
+         *
+         * @var string
+         */
+        public $gcsUri;
+        /**
+         * Output only. Google Cloud Storage URI points to a copy of the original text
+         * in the Vertex-managed bucket in the user's project. The text file is up to
+         * 10MB in size.
+         *
+         * @param string $gcsUri
+         */
+        public function setGcsUri($gcsUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGcsUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaTextDataItem registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGcsUri()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaTextDataItem extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaTextDataItem
     {
     }
 }

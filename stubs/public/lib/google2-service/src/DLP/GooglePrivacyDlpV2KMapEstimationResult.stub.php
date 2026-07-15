@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2KMapEstimationResult extends \Google\Collection
-{
-    protected $collection_key = 'kMapEstimationHistogram';
-    protected $kMapEstimationHistogramType = GooglePrivacyDlpV2KMapEstimationHistogramBucket::class;
-    protected $kMapEstimationHistogramDataType = 'array';
-    /**
-     * The intervals [min_anonymity, max_anonymity] do not overlap. If a value
-     * doesn't correspond to any such interval, the associated frequency is zero.
-     * For example, the following records: {min_anonymity: 1, max_anonymity: 1,
-     * frequency: 17} {min_anonymity: 2, max_anonymity: 3, frequency: 42}
-     * {min_anonymity: 5, max_anonymity: 10, frequency: 99} mean that there are no
-     * record with an estimated anonymity of 4, 5, or larger than 10.
-     *
-     * @param GooglePrivacyDlpV2KMapEstimationHistogramBucket[] $kMapEstimationHistogram
-     */
-    public function setKMapEstimationHistogram($kMapEstimationHistogram)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2KMapEstimationResult extends \Google\Collection
     {
+        protected $collection_key = 'kMapEstimationHistogram';
+        protected $kMapEstimationHistogramType = GooglePrivacyDlpV2KMapEstimationHistogramBucket::class;
+        protected $kMapEstimationHistogramDataType = 'array';
+        /**
+         * The intervals [min_anonymity, max_anonymity] do not overlap. If a value
+         * doesn't correspond to any such interval, the associated frequency is zero.
+         * For example, the following records: {min_anonymity: 1, max_anonymity: 1,
+         * frequency: 17} {min_anonymity: 2, max_anonymity: 3, frequency: 42}
+         * {min_anonymity: 5, max_anonymity: 10, frequency: 99} mean that there are no
+         * record with an estimated anonymity of 4, 5, or larger than 10.
+         *
+         * @param GooglePrivacyDlpV2KMapEstimationHistogramBucket[] $kMapEstimationHistogram
+         */
+        public function setKMapEstimationHistogram($kMapEstimationHistogram)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2KMapEstimationHistogramBucket[]
+         */
+        public function getKMapEstimationHistogram()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2KMapEstimationHistogramBucket[]
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2KMapEstimationResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKMapEstimationHistogram()
+    class Google_Service_DLP_GooglePrivacyDlpV2KMapEstimationResult extends \Google\Service\DLP\GooglePrivacyDlpV2KMapEstimationResult
     {
     }
 }

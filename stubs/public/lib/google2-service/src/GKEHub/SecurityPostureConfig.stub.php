@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class SecurityPostureConfig extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $mode;
-    /**
-     * @var string
-     */
-    public $vulnerabilityMode;
-    /**
-     * @param string
-     */
-    public function setMode($mode)
+namespace Google\Service\GKEHub {
+    class SecurityPostureConfig extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $mode;
+        /**
+         * @var string
+         */
+        public $vulnerabilityMode;
+        /**
+         * @param string
+         */
+        public function setMode($mode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMode()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setVulnerabilityMode($vulnerabilityMode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVulnerabilityMode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEHub\SecurityPostureConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMode()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setVulnerabilityMode($vulnerabilityMode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVulnerabilityMode()
+    class Google_Service_GKEHub_SecurityPostureConfig extends \Google\Service\GKEHub\SecurityPostureConfig
     {
     }
 }

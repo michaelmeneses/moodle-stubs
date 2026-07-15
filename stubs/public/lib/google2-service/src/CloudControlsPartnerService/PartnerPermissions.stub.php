@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudControlsPartnerService;
-
-class PartnerPermissions extends \Google\Collection
-{
-    protected $collection_key = 'partnerPermissions';
-    /**
-     * Identifier. Format: `organizations/{organization}/locations/{location}/cust
-     * omers/{customer}/workloads/{workload}/partnerPermissions`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The partner permissions granted for the workload
-     *
-     * @var string[]
-     */
-    public $partnerPermissions;
-    /**
-     * Identifier. Format: `organizations/{organization}/locations/{location}/cust
-     * omers/{customer}/workloads/{workload}/partnerPermissions`
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\CloudControlsPartnerService {
+    class PartnerPermissions extends \Google\Collection
     {
+        protected $collection_key = 'partnerPermissions';
+        /**
+         * Identifier. Format: `organizations/{organization}/locations/{location}/cust
+         * omers/{customer}/workloads/{workload}/partnerPermissions`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The partner permissions granted for the workload
+         *
+         * @var string[]
+         */
+        public $partnerPermissions;
+        /**
+         * Identifier. Format: `organizations/{organization}/locations/{location}/cust
+         * omers/{customer}/workloads/{workload}/partnerPermissions`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The partner permissions granted for the workload
+         *
+         * @param string[] $partnerPermissions
+         */
+        public function setPartnerPermissions($partnerPermissions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPartnerPermissions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudControlsPartnerService\PartnerPermissions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * The partner permissions granted for the workload
-     *
-     * @param string[] $partnerPermissions
-     */
-    public function setPartnerPermissions($partnerPermissions)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPartnerPermissions()
+    class Google_Service_CloudControlsPartnerService_PartnerPermissions extends \Google\Service\CloudControlsPartnerService\PartnerPermissions
     {
     }
 }

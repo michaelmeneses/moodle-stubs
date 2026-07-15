@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class CloudAiLargeModelsVisionSemanticFilterResponse extends \Google\Collection
-{
-    protected $collection_key = 'namedBoundingBoxes';
-    protected $namedBoundingBoxesType = CloudAiLargeModelsVisionNamedBoundingBox::class;
-    protected $namedBoundingBoxesDataType = 'array';
-    /**
-     * This response is added when semantic filter config is turned on in
-     * EditConfig. It reports if this image is passed semantic filter response. If
-     * passed_semantic_filter is false, the bounding box information will be
-     * populated for user to check what caused the semantic filter to fail.
-     *
-     * @var bool
-     */
-    public $passedSemanticFilter;
-    /**
-     * Class labels of the bounding boxes that failed the semantic filtering.
-     * Bounding box coordinates.
-     *
-     * @param CloudAiLargeModelsVisionNamedBoundingBox[] $namedBoundingBoxes
-     */
-    public function setNamedBoundingBoxes($namedBoundingBoxes)
+namespace Google\Service\Aiplatform {
+    class CloudAiLargeModelsVisionSemanticFilterResponse extends \Google\Collection
     {
+        protected $collection_key = 'namedBoundingBoxes';
+        protected $namedBoundingBoxesType = CloudAiLargeModelsVisionNamedBoundingBox::class;
+        protected $namedBoundingBoxesDataType = 'array';
+        /**
+         * This response is added when semantic filter config is turned on in
+         * EditConfig. It reports if this image is passed semantic filter response. If
+         * passed_semantic_filter is false, the bounding box information will be
+         * populated for user to check what caused the semantic filter to fail.
+         *
+         * @var bool
+         */
+        public $passedSemanticFilter;
+        /**
+         * Class labels of the bounding boxes that failed the semantic filtering.
+         * Bounding box coordinates.
+         *
+         * @param CloudAiLargeModelsVisionNamedBoundingBox[] $namedBoundingBoxes
+         */
+        public function setNamedBoundingBoxes($namedBoundingBoxes)
+        {
+        }
+        /**
+         * @return CloudAiLargeModelsVisionNamedBoundingBox[]
+         */
+        public function getNamedBoundingBoxes()
+        {
+        }
+        /**
+         * This response is added when semantic filter config is turned on in
+         * EditConfig. It reports if this image is passed semantic filter response. If
+         * passed_semantic_filter is false, the bounding box information will be
+         * populated for user to check what caused the semantic filter to fail.
+         *
+         * @param bool $passedSemanticFilter
+         */
+        public function setPassedSemanticFilter($passedSemanticFilter)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPassedSemanticFilter()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CloudAiLargeModelsVisionNamedBoundingBox[]
+     * Runtime class alias of \Google\Service\Aiplatform\CloudAiLargeModelsVisionSemanticFilterResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNamedBoundingBoxes()
-    {
-    }
-    /**
-     * This response is added when semantic filter config is turned on in
-     * EditConfig. It reports if this image is passed semantic filter response. If
-     * passed_semantic_filter is false, the bounding box information will be
-     * populated for user to check what caused the semantic filter to fail.
-     *
-     * @param bool $passedSemanticFilter
-     */
-    public function setPassedSemanticFilter($passedSemanticFilter)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPassedSemanticFilter()
+    class Google_Service_Aiplatform_CloudAiLargeModelsVisionSemanticFilterResponse extends \Google\Service\Aiplatform\CloudAiLargeModelsVisionSemanticFilterResponse
     {
     }
 }

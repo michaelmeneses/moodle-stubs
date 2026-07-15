@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Forms;
-
-class ImageItem extends \Google\Model
-{
-    protected $imageType = Image::class;
-    protected $imageDataType = '';
-    /**
-     * Required. The image displayed in the item.
-     *
-     * @param Image $image
-     */
-    public function setImage(Image $image)
+namespace Google\Service\Forms {
+    class ImageItem extends \Google\Model
     {
+        protected $imageType = Image::class;
+        protected $imageDataType = '';
+        /**
+         * Required. The image displayed in the item.
+         *
+         * @param Image $image
+         */
+        public function setImage(Image $image)
+        {
+        }
+        /**
+         * @return Image
+         */
+        public function getImage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Image
+     * Runtime class alias of \Google\Service\Forms\ImageItem registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getImage()
+    class Google_Service_Forms_ImageItem extends \Google\Service\Forms\ImageItem
     {
     }
 }

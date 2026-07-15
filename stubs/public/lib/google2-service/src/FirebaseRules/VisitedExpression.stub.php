@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseRules;
-
-class VisitedExpression extends \Google\Model
-{
-    protected $sourcePositionType = SourcePosition::class;
-    protected $sourcePositionDataType = '';
-    /**
-     * The evaluated value for the visited expression, e.g. true/false
-     *
-     * @var array
-     */
-    public $value;
-    /**
-     * Position in the `Source` or `Ruleset` where an expression was visited.
-     *
-     * @param SourcePosition $sourcePosition
-     */
-    public function setSourcePosition(SourcePosition $sourcePosition)
+namespace Google\Service\FirebaseRules {
+    class VisitedExpression extends \Google\Model
     {
+        protected $sourcePositionType = SourcePosition::class;
+        protected $sourcePositionDataType = '';
+        /**
+         * The evaluated value for the visited expression, e.g. true/false
+         *
+         * @var array
+         */
+        public $value;
+        /**
+         * Position in the `Source` or `Ruleset` where an expression was visited.
+         *
+         * @param SourcePosition $sourcePosition
+         */
+        public function setSourcePosition(SourcePosition $sourcePosition)
+        {
+        }
+        /**
+         * @return SourcePosition
+         */
+        public function getSourcePosition()
+        {
+        }
+        /**
+         * The evaluated value for the visited expression, e.g. true/false
+         *
+         * @param array $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return array
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SourcePosition
+     * Runtime class alias of \Google\Service\FirebaseRules\VisitedExpression registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSourcePosition()
-    {
-    }
-    /**
-     * The evaluated value for the visited expression, e.g. true/false
-     *
-     * @param array $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return array
-     */
-    public function getValue()
+    class Google_Service_FirebaseRules_VisitedExpression extends \Google\Service\FirebaseRules\VisitedExpression
     {
     }
 }

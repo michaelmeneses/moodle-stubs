@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmEventbusProtoFunction extends \Google\Collection
-{
-    protected $collection_key = 'parameters';
-    protected $functionTypeType = EnterpriseCrmEventbusProtoFunctionType::class;
-    protected $functionTypeDataType = '';
-    protected $parametersType = EnterpriseCrmEventbusProtoTransformExpression::class;
-    protected $parametersDataType = 'array';
-    /**
-     * The name of the function to perform.
-     *
-     * @param EnterpriseCrmEventbusProtoFunctionType $functionType
-     */
-    public function setFunctionType(EnterpriseCrmEventbusProtoFunctionType $functionType)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmEventbusProtoFunction extends \Google\Collection
     {
+        protected $collection_key = 'parameters';
+        protected $functionTypeType = EnterpriseCrmEventbusProtoFunctionType::class;
+        protected $functionTypeDataType = '';
+        protected $parametersType = EnterpriseCrmEventbusProtoTransformExpression::class;
+        protected $parametersDataType = 'array';
+        /**
+         * The name of the function to perform.
+         *
+         * @param EnterpriseCrmEventbusProtoFunctionType $functionType
+         */
+        public function setFunctionType(EnterpriseCrmEventbusProtoFunctionType $functionType)
+        {
+        }
+        /**
+         * @return EnterpriseCrmEventbusProtoFunctionType
+         */
+        public function getFunctionType()
+        {
+        }
+        /**
+         * List of parameters required for the transformation.
+         *
+         * @param EnterpriseCrmEventbusProtoTransformExpression[] $parameters
+         */
+        public function setParameters($parameters)
+        {
+        }
+        /**
+         * @return EnterpriseCrmEventbusProtoTransformExpression[]
+         */
+        public function getParameters()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EnterpriseCrmEventbusProtoFunctionType
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmEventbusProtoFunction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFunctionType()
-    {
-    }
-    /**
-     * List of parameters required for the transformation.
-     *
-     * @param EnterpriseCrmEventbusProtoTransformExpression[] $parameters
-     */
-    public function setParameters($parameters)
-    {
-    }
-    /**
-     * @return EnterpriseCrmEventbusProtoTransformExpression[]
-     */
-    public function getParameters()
+    class Google_Service_Integrations_EnterpriseCrmEventbusProtoFunction extends \Google\Service\Integrations\EnterpriseCrmEventbusProtoFunction
     {
     }
 }

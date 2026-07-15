@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1mainBulkAnalyzeConversationsResponse extends \Google\Model
-{
-    /**
-     * Count of failed analyses.
-     *
-     * @var int
-     */
-    public $failedAnalysisCount;
-    /**
-     * Count of successful analyses.
-     *
-     * @var int
-     */
-    public $successfulAnalysisCount;
-    /**
-     * Count of failed analyses.
-     *
-     * @param int $failedAnalysisCount
-     */
-    public function setFailedAnalysisCount($failedAnalysisCount)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1mainBulkAnalyzeConversationsResponse extends \Google\Model
     {
+        /**
+         * Count of failed analyses.
+         *
+         * @var int
+         */
+        public $failedAnalysisCount;
+        /**
+         * Count of successful analyses.
+         *
+         * @var int
+         */
+        public $successfulAnalysisCount;
+        /**
+         * Count of failed analyses.
+         *
+         * @param int $failedAnalysisCount
+         */
+        public function setFailedAnalysisCount($failedAnalysisCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getFailedAnalysisCount()
+        {
+        }
+        /**
+         * Count of successful analyses.
+         *
+         * @param int $successfulAnalysisCount
+         */
+        public function setSuccessfulAnalysisCount($successfulAnalysisCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSuccessfulAnalysisCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainBulkAnalyzeConversationsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFailedAnalysisCount()
-    {
-    }
-    /**
-     * Count of successful analyses.
-     *
-     * @param int $successfulAnalysisCount
-     */
-    public function setSuccessfulAnalysisCount($successfulAnalysisCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSuccessfulAnalysisCount()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1mainBulkAnalyzeConversationsResponse extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainBulkAnalyzeConversationsResponse
     {
     }
 }

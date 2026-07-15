@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaEnhancedMeasurementSettings extends \Google\Model
-{
-    public $fileDownloadsEnabled;
-    public $name;
-    public $outboundClicksEnabled;
-    public $pageChangesEnabled;
-    public $pageLoadsEnabled;
-    public $pageViewsEnabled;
-    public $scrollsEnabled;
-    public $searchQueryParameter;
-    public $siteSearchEnabled;
-    public $streamEnabled;
-    public $uriQueryParameter;
-    public $videoEngagementEnabled;
-    public function setFileDownloadsEnabled($fileDownloadsEnabled)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaEnhancedMeasurementSettings extends \Google\Model
     {
+        public $fileDownloadsEnabled;
+        public $name;
+        public $outboundClicksEnabled;
+        public $pageChangesEnabled;
+        public $pageLoadsEnabled;
+        public $pageViewsEnabled;
+        public $scrollsEnabled;
+        public $searchQueryParameter;
+        public $siteSearchEnabled;
+        public $streamEnabled;
+        public $uriQueryParameter;
+        public $videoEngagementEnabled;
+        public function setFileDownloadsEnabled($fileDownloadsEnabled)
+        {
+        }
+        public function getFileDownloadsEnabled()
+        {
+        }
+        public function setName($name)
+        {
+        }
+        public function getName()
+        {
+        }
+        public function setOutboundClicksEnabled($outboundClicksEnabled)
+        {
+        }
+        public function getOutboundClicksEnabled()
+        {
+        }
+        public function setPageChangesEnabled($pageChangesEnabled)
+        {
+        }
+        public function getPageChangesEnabled()
+        {
+        }
+        public function setPageLoadsEnabled($pageLoadsEnabled)
+        {
+        }
+        public function getPageLoadsEnabled()
+        {
+        }
+        public function setPageViewsEnabled($pageViewsEnabled)
+        {
+        }
+        public function getPageViewsEnabled()
+        {
+        }
+        public function setScrollsEnabled($scrollsEnabled)
+        {
+        }
+        public function getScrollsEnabled()
+        {
+        }
+        public function setSearchQueryParameter($searchQueryParameter)
+        {
+        }
+        public function getSearchQueryParameter()
+        {
+        }
+        public function setSiteSearchEnabled($siteSearchEnabled)
+        {
+        }
+        public function getSiteSearchEnabled()
+        {
+        }
+        public function setStreamEnabled($streamEnabled)
+        {
+        }
+        public function getStreamEnabled()
+        {
+        }
+        public function setUriQueryParameter($uriQueryParameter)
+        {
+        }
+        public function getUriQueryParameter()
+        {
+        }
+        public function setVideoEngagementEnabled($videoEngagementEnabled)
+        {
+        }
+        public function getVideoEngagementEnabled()
+        {
+        }
     }
-    public function getFileDownloadsEnabled()
-    {
-    }
-    public function setName($name)
-    {
-    }
-    public function getName()
-    {
-    }
-    public function setOutboundClicksEnabled($outboundClicksEnabled)
-    {
-    }
-    public function getOutboundClicksEnabled()
-    {
-    }
-    public function setPageChangesEnabled($pageChangesEnabled)
-    {
-    }
-    public function getPageChangesEnabled()
-    {
-    }
-    public function setPageLoadsEnabled($pageLoadsEnabled)
-    {
-    }
-    public function getPageLoadsEnabled()
-    {
-    }
-    public function setPageViewsEnabled($pageViewsEnabled)
-    {
-    }
-    public function getPageViewsEnabled()
-    {
-    }
-    public function setScrollsEnabled($scrollsEnabled)
-    {
-    }
-    public function getScrollsEnabled()
-    {
-    }
-    public function setSearchQueryParameter($searchQueryParameter)
-    {
-    }
-    public function getSearchQueryParameter()
-    {
-    }
-    public function setSiteSearchEnabled($siteSearchEnabled)
-    {
-    }
-    public function getSiteSearchEnabled()
-    {
-    }
-    public function setStreamEnabled($streamEnabled)
-    {
-    }
-    public function getStreamEnabled()
-    {
-    }
-    public function setUriQueryParameter($uriQueryParameter)
-    {
-    }
-    public function getUriQueryParameter()
-    {
-    }
-    public function setVideoEngagementEnabled($videoEngagementEnabled)
-    {
-    }
-    public function getVideoEngagementEnabled()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaEnhancedMeasurementSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaEnhancedMeasurementSettings extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaEnhancedMeasurementSettings
     {
     }
 }

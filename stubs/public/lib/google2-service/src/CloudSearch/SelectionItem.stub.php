@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class SelectionItem extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $selected;
-    /**
-     * @var string
-     */
-    public $text;
-    /**
-     * @var string
-     */
-    public $value;
-    /**
-     * @param bool
-     */
-    public function setSelected($selected)
+namespace Google\Service\CloudSearch {
+    class SelectionItem extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $selected;
+        /**
+         * @var string
+         */
+        public $text;
+        /**
+         * @var string
+         */
+        public $value;
+        /**
+         * @param bool
+         */
+        public function setSelected($selected)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSelected()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudSearch\SelectionItem registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSelected()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_CloudSearch_SelectionItem extends \Google\Service\CloudSearch\SelectionItem
     {
     }
 }

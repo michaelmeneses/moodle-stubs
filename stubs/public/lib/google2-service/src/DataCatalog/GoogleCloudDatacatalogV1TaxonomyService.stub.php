@@ -21,63 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1TaxonomyService extends \Google\Model
-{
-    /**
-     * Default value
-     */
-    public const NAME_MANAGING_SYSTEM_UNSPECIFIED = 'MANAGING_SYSTEM_UNSPECIFIED';
-    /**
-     * Dataplex Universal Catalog.
-     */
-    public const NAME_MANAGING_SYSTEM_DATAPLEX = 'MANAGING_SYSTEM_DATAPLEX';
-    /**
-     * Other
-     */
-    public const NAME_MANAGING_SYSTEM_OTHER = 'MANAGING_SYSTEM_OTHER';
-    /**
-     * The service agent for the service.
-     *
-     * @var string
-     */
-    public $identity;
-    /**
-     * The Google Cloud service name.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The service agent for the service.
-     *
-     * @param string $identity
-     */
-    public function setIdentity($identity)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1TaxonomyService extends \Google\Model
     {
+        /**
+         * Default value
+         */
+        public const NAME_MANAGING_SYSTEM_UNSPECIFIED = 'MANAGING_SYSTEM_UNSPECIFIED';
+        /**
+         * Dataplex Universal Catalog.
+         */
+        public const NAME_MANAGING_SYSTEM_DATAPLEX = 'MANAGING_SYSTEM_DATAPLEX';
+        /**
+         * Other
+         */
+        public const NAME_MANAGING_SYSTEM_OTHER = 'MANAGING_SYSTEM_OTHER';
+        /**
+         * The service agent for the service.
+         *
+         * @var string
+         */
+        public $identity;
+        /**
+         * The Google Cloud service name.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The service agent for the service.
+         *
+         * @param string $identity
+         */
+        public function setIdentity($identity)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIdentity()
+        {
+        }
+        /**
+         * The Google Cloud service name.
+         *
+         * Accepted values: MANAGING_SYSTEM_UNSPECIFIED, MANAGING_SYSTEM_DATAPLEX,
+         * MANAGING_SYSTEM_OTHER
+         *
+         * @param self::NAME_* $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return self::NAME_*
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1TaxonomyService registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIdentity()
-    {
-    }
-    /**
-     * The Google Cloud service name.
-     *
-     * Accepted values: MANAGING_SYSTEM_UNSPECIFIED, MANAGING_SYSTEM_DATAPLEX,
-     * MANAGING_SYSTEM_OTHER
-     *
-     * @param self::NAME_* $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return self::NAME_*
-     */
-    public function getName()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1TaxonomyService extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1TaxonomyService
     {
     }
 }

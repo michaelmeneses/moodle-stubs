@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1GenerationConfigRoutingConfigAutoRoutingMode extends \Google\Model
-{
-    /**
-     * Unspecified model routing preference.
-     */
-    public const MODEL_ROUTING_PREFERENCE_UNKNOWN = 'UNKNOWN';
-    /**
-     * The model will be selected to prioritize the quality of the response.
-     */
-    public const MODEL_ROUTING_PREFERENCE_PRIORITIZE_QUALITY = 'PRIORITIZE_QUALITY';
-    /**
-     * The model will be selected to balance quality and cost.
-     */
-    public const MODEL_ROUTING_PREFERENCE_BALANCED = 'BALANCED';
-    /**
-     * The model will be selected to prioritize the cost of the request.
-     */
-    public const MODEL_ROUTING_PREFERENCE_PRIORITIZE_COST = 'PRIORITIZE_COST';
-    /**
-     * The model routing preference.
-     *
-     * @var string
-     */
-    public $modelRoutingPreference;
-    /**
-     * The model routing preference.
-     *
-     * Accepted values: UNKNOWN, PRIORITIZE_QUALITY, BALANCED, PRIORITIZE_COST
-     *
-     * @param self::MODEL_ROUTING_PREFERENCE_* $modelRoutingPreference
-     */
-    public function setModelRoutingPreference($modelRoutingPreference)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1GenerationConfigRoutingConfigAutoRoutingMode extends \Google\Model
     {
+        /**
+         * Unspecified model routing preference.
+         */
+        public const MODEL_ROUTING_PREFERENCE_UNKNOWN = 'UNKNOWN';
+        /**
+         * The model will be selected to prioritize the quality of the response.
+         */
+        public const MODEL_ROUTING_PREFERENCE_PRIORITIZE_QUALITY = 'PRIORITIZE_QUALITY';
+        /**
+         * The model will be selected to balance quality and cost.
+         */
+        public const MODEL_ROUTING_PREFERENCE_BALANCED = 'BALANCED';
+        /**
+         * The model will be selected to prioritize the cost of the request.
+         */
+        public const MODEL_ROUTING_PREFERENCE_PRIORITIZE_COST = 'PRIORITIZE_COST';
+        /**
+         * The model routing preference.
+         *
+         * @var string
+         */
+        public $modelRoutingPreference;
+        /**
+         * The model routing preference.
+         *
+         * Accepted values: UNKNOWN, PRIORITIZE_QUALITY, BALANCED, PRIORITIZE_COST
+         *
+         * @param self::MODEL_ROUTING_PREFERENCE_* $modelRoutingPreference
+         */
+        public function setModelRoutingPreference($modelRoutingPreference)
+        {
+        }
+        /**
+         * @return self::MODEL_ROUTING_PREFERENCE_*
+         */
+        public function getModelRoutingPreference()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::MODEL_ROUTING_PREFERENCE_*
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1GenerationConfigRoutingConfigAutoRoutingMode registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getModelRoutingPreference()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1GenerationConfigRoutingConfigAutoRoutingMode extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1GenerationConfigRoutingConfigAutoRoutingMode
     {
     }
 }

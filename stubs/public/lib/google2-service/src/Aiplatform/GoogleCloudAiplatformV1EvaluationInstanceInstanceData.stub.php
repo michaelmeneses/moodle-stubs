@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1EvaluationInstanceInstanceData extends \Google\Model
-{
-    protected $contentsType = GoogleCloudAiplatformV1EvaluationInstanceInstanceDataContents::class;
-    protected $contentsDataType = '';
-    /**
-     * Text data.
-     *
-     * @var string
-     */
-    public $text;
-    /**
-     * List of Gemini content data.
-     *
-     * @param GoogleCloudAiplatformV1EvaluationInstanceInstanceDataContents $contents
-     */
-    public function setContents(GoogleCloudAiplatformV1EvaluationInstanceInstanceDataContents $contents)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1EvaluationInstanceInstanceData extends \Google\Model
     {
+        protected $contentsType = GoogleCloudAiplatformV1EvaluationInstanceInstanceDataContents::class;
+        protected $contentsDataType = '';
+        /**
+         * Text data.
+         *
+         * @var string
+         */
+        public $text;
+        /**
+         * List of Gemini content data.
+         *
+         * @param GoogleCloudAiplatformV1EvaluationInstanceInstanceDataContents $contents
+         */
+        public function setContents(GoogleCloudAiplatformV1EvaluationInstanceInstanceDataContents $contents)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1EvaluationInstanceInstanceDataContents
+         */
+        public function getContents()
+        {
+        }
+        /**
+         * Text data.
+         *
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1EvaluationInstanceInstanceDataContents
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1EvaluationInstanceInstanceData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContents()
-    {
-    }
-    /**
-     * Text data.
-     *
-     * @param string $text
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1EvaluationInstanceInstanceData extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1EvaluationInstanceInstanceData
     {
     }
 }

@@ -21,70 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager\Resource;
-
-/**
- * The "built_in_variables" collection of methods.
- * Typical usage is:
- *  <code>
- *   $tagmanagerService = new Google\Service\TagManager(...);
- *   $built_in_variables = $tagmanagerService->accounts_containers_workspaces_built_in_variables;
- *  </code>
- */
-class AccountsContainersWorkspacesBuiltInVariables extends \Google\Service\Resource
-{
+namespace Google\Service\TagManager\Resource {
+    use Google\Service\TagManager\CreateBuiltInVariableResponse;
+    use Google\Service\TagManager\ListEnabledBuiltInVariablesResponse;
+    use Google\Service\TagManager\RevertBuiltInVariableResponse;
     /**
-     * Creates one or more GTM Built-In Variables. (built_in_variables.create)
-     *
-     * @param string $parent GTM Workspace's API relative path.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string type The types of built-in variables to enable.
-     * @return CreateBuiltInVariableResponse
-     * @throws \Google\Service\Exception
+     * The "built_in_variables" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $tagmanagerService = new Google\Service\TagManager(...);
+     *   $built_in_variables = $tagmanagerService->accounts_containers_workspaces_built_in_variables;
+     *  </code>
      */
-    public function create($parent, $optParams = [])
+    class AccountsContainersWorkspacesBuiltInVariables extends \Google\Service\Resource
     {
+        /**
+         * Creates one or more GTM Built-In Variables. (built_in_variables.create)
+         *
+         * @param string $parent GTM Workspace's API relative path.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string type The types of built-in variables to enable.
+         * @return CreateBuiltInVariableResponse
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, $optParams = [])
+        {
+        }
+        /**
+         * Deletes one or more GTM Built-In Variables. (built_in_variables.delete)
+         *
+         * @param string $path GTM BuiltInVariable's API relative path.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string type The types of built-in variables to delete.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($path, $optParams = [])
+        {
+        }
+        /**
+         * Lists all the enabled Built-In Variables of a GTM Container.
+         * (built_in_variables.listAccountsContainersWorkspacesBuiltInVariables)
+         *
+         * @param string $parent GTM Workspace's API relative path.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string pageToken Continuation token for fetching the next page of
+         * results.
+         * @return ListEnabledBuiltInVariablesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listAccountsContainersWorkspacesBuiltInVariables($parent, $optParams = [])
+        {
+        }
+        /**
+         * Reverts changes to a GTM Built-In Variables in a GTM Workspace.
+         * (built_in_variables.revert)
+         *
+         * @param string $path GTM BuiltInVariable's API relative path.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string type The type of built-in variable to revert.
+         * @return RevertBuiltInVariableResponse
+         * @throws \Google\Service\Exception
+         */
+        public function revert($path, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes one or more GTM Built-In Variables. (built_in_variables.delete)
-     *
-     * @param string $path GTM BuiltInVariable's API relative path.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string type The types of built-in variables to delete.
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\TagManager\Resource\AccountsContainersWorkspacesBuiltInVariables registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($path, $optParams = [])
-    {
-    }
-    /**
-     * Lists all the enabled Built-In Variables of a GTM Container.
-     * (built_in_variables.listAccountsContainersWorkspacesBuiltInVariables)
-     *
-     * @param string $parent GTM Workspace's API relative path.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string pageToken Continuation token for fetching the next page of
-     * results.
-     * @return ListEnabledBuiltInVariablesResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listAccountsContainersWorkspacesBuiltInVariables($parent, $optParams = [])
-    {
-    }
-    /**
-     * Reverts changes to a GTM Built-In Variables in a GTM Workspace.
-     * (built_in_variables.revert)
-     *
-     * @param string $path GTM BuiltInVariable's API relative path.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string type The type of built-in variable to revert.
-     * @return RevertBuiltInVariableResponse
-     * @throws \Google\Service\Exception
-     */
-    public function revert($path, $optParams = [])
+    class Google_Service_TagManager_Resource_AccountsContainersWorkspacesBuiltInVariables extends \Google\Service\TagManager\Resource\AccountsContainersWorkspacesBuiltInVariables
     {
     }
 }

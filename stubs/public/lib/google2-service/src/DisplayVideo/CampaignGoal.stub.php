@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class CampaignGoal extends \Google\Model
-{
-    /**
-     * Goal value is not specified or unknown in this version.
-     */
-    public const CAMPAIGN_GOAL_TYPE_CAMPAIGN_GOAL_TYPE_UNSPECIFIED = 'CAMPAIGN_GOAL_TYPE_UNSPECIFIED';
-    /**
-     * Drive app installs or engagements.
-     */
-    public const CAMPAIGN_GOAL_TYPE_CAMPAIGN_GOAL_TYPE_APP_INSTALL = 'CAMPAIGN_GOAL_TYPE_APP_INSTALL';
-    /**
-     * Raise awareness of a brand or product.
-     */
-    public const CAMPAIGN_GOAL_TYPE_CAMPAIGN_GOAL_TYPE_BRAND_AWARENESS = 'CAMPAIGN_GOAL_TYPE_BRAND_AWARENESS';
-    /**
-     * Drive offline or in-store sales.
-     */
-    public const CAMPAIGN_GOAL_TYPE_CAMPAIGN_GOAL_TYPE_OFFLINE_ACTION = 'CAMPAIGN_GOAL_TYPE_OFFLINE_ACTION';
-    /**
-     * Drive online action or visits.
-     */
-    public const CAMPAIGN_GOAL_TYPE_CAMPAIGN_GOAL_TYPE_ONLINE_ACTION = 'CAMPAIGN_GOAL_TYPE_ONLINE_ACTION';
-    /**
-     * Required. The type of the campaign goal.
-     *
-     * @var string
-     */
-    public $campaignGoalType;
-    protected $performanceGoalType = PerformanceGoal::class;
-    protected $performanceGoalDataType = '';
-    /**
-     * Required. The type of the campaign goal.
-     *
-     * Accepted values: CAMPAIGN_GOAL_TYPE_UNSPECIFIED,
-     * CAMPAIGN_GOAL_TYPE_APP_INSTALL, CAMPAIGN_GOAL_TYPE_BRAND_AWARENESS,
-     * CAMPAIGN_GOAL_TYPE_OFFLINE_ACTION, CAMPAIGN_GOAL_TYPE_ONLINE_ACTION
-     *
-     * @param self::CAMPAIGN_GOAL_TYPE_* $campaignGoalType
-     */
-    public function setCampaignGoalType($campaignGoalType)
+namespace Google\Service\DisplayVideo {
+    class CampaignGoal extends \Google\Model
     {
+        /**
+         * Goal value is not specified or unknown in this version.
+         */
+        public const CAMPAIGN_GOAL_TYPE_CAMPAIGN_GOAL_TYPE_UNSPECIFIED = 'CAMPAIGN_GOAL_TYPE_UNSPECIFIED';
+        /**
+         * Drive app installs or engagements.
+         */
+        public const CAMPAIGN_GOAL_TYPE_CAMPAIGN_GOAL_TYPE_APP_INSTALL = 'CAMPAIGN_GOAL_TYPE_APP_INSTALL';
+        /**
+         * Raise awareness of a brand or product.
+         */
+        public const CAMPAIGN_GOAL_TYPE_CAMPAIGN_GOAL_TYPE_BRAND_AWARENESS = 'CAMPAIGN_GOAL_TYPE_BRAND_AWARENESS';
+        /**
+         * Drive offline or in-store sales.
+         */
+        public const CAMPAIGN_GOAL_TYPE_CAMPAIGN_GOAL_TYPE_OFFLINE_ACTION = 'CAMPAIGN_GOAL_TYPE_OFFLINE_ACTION';
+        /**
+         * Drive online action or visits.
+         */
+        public const CAMPAIGN_GOAL_TYPE_CAMPAIGN_GOAL_TYPE_ONLINE_ACTION = 'CAMPAIGN_GOAL_TYPE_ONLINE_ACTION';
+        /**
+         * Required. The type of the campaign goal.
+         *
+         * @var string
+         */
+        public $campaignGoalType;
+        protected $performanceGoalType = PerformanceGoal::class;
+        protected $performanceGoalDataType = '';
+        /**
+         * Required. The type of the campaign goal.
+         *
+         * Accepted values: CAMPAIGN_GOAL_TYPE_UNSPECIFIED,
+         * CAMPAIGN_GOAL_TYPE_APP_INSTALL, CAMPAIGN_GOAL_TYPE_BRAND_AWARENESS,
+         * CAMPAIGN_GOAL_TYPE_OFFLINE_ACTION, CAMPAIGN_GOAL_TYPE_ONLINE_ACTION
+         *
+         * @param self::CAMPAIGN_GOAL_TYPE_* $campaignGoalType
+         */
+        public function setCampaignGoalType($campaignGoalType)
+        {
+        }
+        /**
+         * @return self::CAMPAIGN_GOAL_TYPE_*
+         */
+        public function getCampaignGoalType()
+        {
+        }
+        /**
+         * Required. The performance goal of the campaign. Acceptable values for
+         * performance_goal_type are: * `PERFORMANCE_GOAL_TYPE_CPM` *
+         * `PERFORMANCE_GOAL_TYPE_CPC` * `PERFORMANCE_GOAL_TYPE_CPA` *
+         * `PERFORMANCE_GOAL_TYPE_CPIAVC` * `PERFORMANCE_GOAL_TYPE_CTR` *
+         * `PERFORMANCE_GOAL_TYPE_VIEWABILITY` * `PERFORMANCE_GOAL_TYPE_OTHER`
+         *
+         * @param PerformanceGoal $performanceGoal
+         */
+        public function setPerformanceGoal(PerformanceGoal $performanceGoal)
+        {
+        }
+        /**
+         * @return PerformanceGoal
+         */
+        public function getPerformanceGoal()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::CAMPAIGN_GOAL_TYPE_*
+     * Runtime class alias of \Google\Service\DisplayVideo\CampaignGoal registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCampaignGoalType()
-    {
-    }
-    /**
-     * Required. The performance goal of the campaign. Acceptable values for
-     * performance_goal_type are: * `PERFORMANCE_GOAL_TYPE_CPM` *
-     * `PERFORMANCE_GOAL_TYPE_CPC` * `PERFORMANCE_GOAL_TYPE_CPA` *
-     * `PERFORMANCE_GOAL_TYPE_CPIAVC` * `PERFORMANCE_GOAL_TYPE_CTR` *
-     * `PERFORMANCE_GOAL_TYPE_VIEWABILITY` * `PERFORMANCE_GOAL_TYPE_OTHER`
-     *
-     * @param PerformanceGoal $performanceGoal
-     */
-    public function setPerformanceGoal(PerformanceGoal $performanceGoal)
-    {
-    }
-    /**
-     * @return PerformanceGoal
-     */
-    public function getPerformanceGoal()
+    class Google_Service_DisplayVideo_CampaignGoal extends \Google\Service\DisplayVideo\CampaignGoal
     {
     }
 }

@@ -8,6 +8,7 @@
  */
 namespace customfield_number;
 
+use MoodleQuickForm;
 /**
  * Data controller class
  *

@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTubeReporting;
-
-class GdataObjectId extends \Google\Model
-{
-    /**
-     * gdata
-     *
-     * @var string
-     */
-    public $bucketName;
-    /**
-     * gdata
-     *
-     * @var string
-     */
-    public $generation;
-    /**
-     * gdata
-     *
-     * @var string
-     */
-    public $objectName;
-    /**
-     * gdata
-     *
-     * @param string $bucketName
-     */
-    public function setBucketName($bucketName)
+namespace Google\Service\YouTubeReporting {
+    class GdataObjectId extends \Google\Model
     {
+        /**
+         * gdata
+         *
+         * @var string
+         */
+        public $bucketName;
+        /**
+         * gdata
+         *
+         * @var string
+         */
+        public $generation;
+        /**
+         * gdata
+         *
+         * @var string
+         */
+        public $objectName;
+        /**
+         * gdata
+         *
+         * @param string $bucketName
+         */
+        public function setBucketName($bucketName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBucketName()
+        {
+        }
+        /**
+         * gdata
+         *
+         * @param string $generation
+         */
+        public function setGeneration($generation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGeneration()
+        {
+        }
+        /**
+         * gdata
+         *
+         * @param string $objectName
+         */
+        public function setObjectName($objectName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTubeReporting\GdataObjectId registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBucketName()
-    {
-    }
-    /**
-     * gdata
-     *
-     * @param string $generation
-     */
-    public function setGeneration($generation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGeneration()
-    {
-    }
-    /**
-     * gdata
-     *
-     * @param string $objectName
-     */
-    public function setObjectName($objectName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObjectName()
+    class Google_Service_YouTubeReporting_GdataObjectId extends \Google\Service\YouTubeReporting\GdataObjectId
     {
     }
 }

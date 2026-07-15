@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1ComputeEnvironmentScoresResponse extends \Google\Collection
-{
-    protected $collection_key = 'scores';
-    /**
-     * A page token, received from a previous `ComputeScore` call. Provide this to
-     * retrieve the subsequent page.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $scoresType = GoogleCloudApigeeV1Score::class;
-    protected $scoresDataType = 'array';
-    /**
-     * A page token, received from a previous `ComputeScore` call. Provide this to
-     * retrieve the subsequent page.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1ComputeEnvironmentScoresResponse extends \Google\Collection
     {
+        protected $collection_key = 'scores';
+        /**
+         * A page token, received from a previous `ComputeScore` call. Provide this to
+         * retrieve the subsequent page.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $scoresType = GoogleCloudApigeeV1Score::class;
+        protected $scoresDataType = 'array';
+        /**
+         * A page token, received from a previous `ComputeScore` call. Provide this to
+         * retrieve the subsequent page.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * List of scores. One score per day.
+         *
+         * @param GoogleCloudApigeeV1Score[] $scores
+         */
+        public function setScores($scores)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1Score[]
+         */
+        public function getScores()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1ComputeEnvironmentScoresResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * List of scores. One score per day.
-     *
-     * @param GoogleCloudApigeeV1Score[] $scores
-     */
-    public function setScores($scores)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1Score[]
-     */
-    public function getScores()
+    class Google_Service_Apigee_GoogleCloudApigeeV1ComputeEnvironmentScoresResponse extends \Google\Service\Apigee\GoogleCloudApigeeV1ComputeEnvironmentScoresResponse
     {
     }
 }

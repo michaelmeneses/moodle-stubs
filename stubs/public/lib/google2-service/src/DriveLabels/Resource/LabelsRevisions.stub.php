@@ -21,36 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveLabels\Resource;
-
-/**
- * The "revisions" collection of methods.
- * Typical usage is:
- *  <code>
- *   $drivelabelsService = new Google\Service\DriveLabels(...);
- *   $revisions = $drivelabelsService->labels_revisions;
- *  </code>
- */
-class LabelsRevisions extends \Google\Service\Resource
-{
+namespace Google\Service\DriveLabels\Resource {
+    use Google\Service\DriveLabels\GoogleAppsDriveLabelsV2LabelPermission;
     /**
-     * Updates a label's permissions. If a permission for the indicated principal
-     * doesn't exist, a label permission is created, otherwise the existing
-     * permission is updated. Permissions affect the label resource as a whole,
-     * aren't revisioned, and don't require publishing.
-     * (revisions.updatePermissions)
-     *
-     * @param string $parent Required. The parent label resource name.
-     * @param GoogleAppsDriveLabelsV2LabelPermission $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool useAdminAccess Set to `true` in order to use the user's admin
-     * credentials. The server will verify the user is an admin for the label before
-     * allowing access.
-     * @return GoogleAppsDriveLabelsV2LabelPermission
-     * @throws \Google\Service\Exception
+     * The "revisions" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $drivelabelsService = new Google\Service\DriveLabels(...);
+     *   $revisions = $drivelabelsService->labels_revisions;
+     *  </code>
      */
-    public function updatePermissions($parent, GoogleAppsDriveLabelsV2LabelPermission $postBody, $optParams = [])
+    class LabelsRevisions extends \Google\Service\Resource
+    {
+        /**
+         * Updates a label's permissions. If a permission for the indicated principal
+         * doesn't exist, a label permission is created, otherwise the existing
+         * permission is updated. Permissions affect the label resource as a whole,
+         * aren't revisioned, and don't require publishing.
+         * (revisions.updatePermissions)
+         *
+         * @param string $parent Required. The parent label resource name.
+         * @param GoogleAppsDriveLabelsV2LabelPermission $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool useAdminAccess Set to `true` in order to use the user's admin
+         * credentials. The server will verify the user is an admin for the label before
+         * allowing access.
+         * @return GoogleAppsDriveLabelsV2LabelPermission
+         * @throws \Google\Service\Exception
+         */
+        public function updatePermissions($parent, GoogleAppsDriveLabelsV2LabelPermission $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\DriveLabels\Resource\LabelsRevisions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_DriveLabels_Resource_LabelsRevisions extends \Google\Service\DriveLabels\Resource\LabelsRevisions
     {
     }
 }

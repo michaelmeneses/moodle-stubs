@@ -21,27 +21,36 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2DatabaseResourceRegexes extends \Google\Collection
-{
-    protected $collection_key = 'patterns';
-    protected $patternsType = GooglePrivacyDlpV2DatabaseResourceRegex::class;
-    protected $patternsDataType = 'array';
-    /**
-     * A group of regular expression patterns to match against one or more
-     * database resources. Maximum of 100 entries. The sum of all regular
-     * expression's length can't exceed 10 KiB.
-     *
-     * @param GooglePrivacyDlpV2DatabaseResourceRegex[] $patterns
-     */
-    public function setPatterns($patterns)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2DatabaseResourceRegexes extends \Google\Collection
     {
+        protected $collection_key = 'patterns';
+        protected $patternsType = GooglePrivacyDlpV2DatabaseResourceRegex::class;
+        protected $patternsDataType = 'array';
+        /**
+         * A group of regular expression patterns to match against one or more
+         * database resources. Maximum of 100 entries. The sum of all regular
+         * expression's length can't exceed 10 KiB.
+         *
+         * @param GooglePrivacyDlpV2DatabaseResourceRegex[] $patterns
+         */
+        public function setPatterns($patterns)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2DatabaseResourceRegex[]
+         */
+        public function getPatterns()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2DatabaseResourceRegex[]
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2DatabaseResourceRegexes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPatterns()
+    class Google_Service_DLP_GooglePrivacyDlpV2DatabaseResourceRegexes extends \Google\Service\DLP\GooglePrivacyDlpV2DatabaseResourceRegexes
     {
     }
 }

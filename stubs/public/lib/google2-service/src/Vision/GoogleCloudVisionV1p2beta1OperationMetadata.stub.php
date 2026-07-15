@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class GoogleCloudVisionV1p2beta1OperationMetadata extends \Google\Model
-{
-    /**
-     * Invalid.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * Request is received.
-     */
-    public const STATE_CREATED = 'CREATED';
-    /**
-     * Request is actively being processed.
-     */
-    public const STATE_RUNNING = 'RUNNING';
-    /**
-     * The batch processing is done.
-     */
-    public const STATE_DONE = 'DONE';
-    /**
-     * The batch processing was cancelled.
-     */
-    public const STATE_CANCELLED = 'CANCELLED';
-    /**
-     * The time when the batch request was received.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Current state of the batch operation.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * The time when the operation result was last updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * The time when the batch request was received.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\Vision {
+    class GoogleCloudVisionV1p2beta1OperationMetadata extends \Google\Model
     {
+        /**
+         * Invalid.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * Request is received.
+         */
+        public const STATE_CREATED = 'CREATED';
+        /**
+         * Request is actively being processed.
+         */
+        public const STATE_RUNNING = 'RUNNING';
+        /**
+         * The batch processing is done.
+         */
+        public const STATE_DONE = 'DONE';
+        /**
+         * The batch processing was cancelled.
+         */
+        public const STATE_CANCELLED = 'CANCELLED';
+        /**
+         * The time when the batch request was received.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Current state of the batch operation.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * The time when the operation result was last updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * The time when the batch request was received.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Current state of the batch operation.
+         *
+         * Accepted values: STATE_UNSPECIFIED, CREATED, RUNNING, DONE, CANCELLED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * The time when the operation result was last updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Vision\GoogleCloudVisionV1p2beta1OperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Current state of the batch operation.
-     *
-     * Accepted values: STATE_UNSPECIFIED, CREATED, RUNNING, DONE, CANCELLED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * The time when the operation result was last updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_Vision_GoogleCloudVisionV1p2beta1OperationMetadata extends \Google\Service\Vision\GoogleCloudVisionV1p2beta1OperationMetadata
     {
     }
 }

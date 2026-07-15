@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AccessContextManager;
-
-class ListServicePerimetersResponse extends \Google\Collection
-{
-    protected $collection_key = 'servicePerimeters';
-    /**
-     * The pagination token to retrieve the next page of results. If the value is
-     * empty, no further results remain.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $servicePerimetersType = ServicePerimeter::class;
-    protected $servicePerimetersDataType = 'array';
-    /**
-     * The pagination token to retrieve the next page of results. If the value is
-     * empty, no further results remain.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\AccessContextManager {
+    class ListServicePerimetersResponse extends \Google\Collection
     {
+        protected $collection_key = 'servicePerimeters';
+        /**
+         * The pagination token to retrieve the next page of results. If the value is
+         * empty, no further results remain.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $servicePerimetersType = ServicePerimeter::class;
+        protected $servicePerimetersDataType = 'array';
+        /**
+         * The pagination token to retrieve the next page of results. If the value is
+         * empty, no further results remain.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * List of the Service Perimeter instances.
+         *
+         * @param ServicePerimeter[] $servicePerimeters
+         */
+        public function setServicePerimeters($servicePerimeters)
+        {
+        }
+        /**
+         * @return ServicePerimeter[]
+         */
+        public function getServicePerimeters()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AccessContextManager\ListServicePerimetersResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * List of the Service Perimeter instances.
-     *
-     * @param ServicePerimeter[] $servicePerimeters
-     */
-    public function setServicePerimeters($servicePerimeters)
-    {
-    }
-    /**
-     * @return ServicePerimeter[]
-     */
-    public function getServicePerimeters()
+    class Google_Service_AccessContextManager_ListServicePerimetersResponse extends \Google\Service\AccessContextManager\ListServicePerimetersResponse
     {
     }
 }

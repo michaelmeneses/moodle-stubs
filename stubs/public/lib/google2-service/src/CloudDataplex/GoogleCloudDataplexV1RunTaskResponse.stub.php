@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1RunTaskResponse extends \Google\Model
-{
-    protected $jobType = GoogleCloudDataplexV1Job::class;
-    protected $jobDataType = '';
-    /**
-     * Jobs created by RunTask API.
-     *
-     * @param GoogleCloudDataplexV1Job $job
-     */
-    public function setJob(GoogleCloudDataplexV1Job $job)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1RunTaskResponse extends \Google\Model
     {
+        protected $jobType = GoogleCloudDataplexV1Job::class;
+        protected $jobDataType = '';
+        /**
+         * Jobs created by RunTask API.
+         *
+         * @param GoogleCloudDataplexV1Job $job
+         */
+        public function setJob(GoogleCloudDataplexV1Job $job)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1Job
+         */
+        public function getJob()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDataplexV1Job
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1RunTaskResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getJob()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1RunTaskResponse extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1RunTaskResponse
     {
     }
 }

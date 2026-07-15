@@ -21,27 +21,36 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1EvaluationInstanceAgentDataTools extends \Google\Collection
-{
-    protected $collection_key = 'tool';
-    protected $toolType = GoogleCloudAiplatformV1Tool::class;
-    protected $toolDataType = 'array';
-    /**
-     * Optional. List of tools: each tool can have multiple function declarations.
-     *
-     * @deprecated
-     * @param GoogleCloudAiplatformV1Tool[] $tool
-     */
-    public function setTool($tool)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1EvaluationInstanceAgentDataTools extends \Google\Collection
     {
+        protected $collection_key = 'tool';
+        protected $toolType = GoogleCloudAiplatformV1Tool::class;
+        protected $toolDataType = 'array';
+        /**
+         * Optional. List of tools: each tool can have multiple function declarations.
+         *
+         * @deprecated
+         * @param GoogleCloudAiplatformV1Tool[] $tool
+         */
+        public function setTool($tool)
+        {
+        }
+        /**
+         * @deprecated
+         * @return GoogleCloudAiplatformV1Tool[]
+         */
+        public function getTool()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return GoogleCloudAiplatformV1Tool[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1EvaluationInstanceAgentDataTools registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTool()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1EvaluationInstanceAgentDataTools extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1EvaluationInstanceAgentDataTools
     {
     }
 }

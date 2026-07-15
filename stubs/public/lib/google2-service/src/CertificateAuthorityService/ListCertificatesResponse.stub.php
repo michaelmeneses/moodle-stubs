@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CertificateAuthorityService;
-
-class ListCertificatesResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $certificatesType = Certificate::class;
-    protected $certificatesDataType = 'array';
-    /**
-     * A token to retrieve next page of results. Pass this value in
-     * ListCertificatesRequest.page_token to retrieve the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * A list of locations (e.g. "us-west1") that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * The list of Certificates.
-     *
-     * @param Certificate[] $certificates
-     */
-    public function setCertificates($certificates)
+namespace Google\Service\CertificateAuthorityService {
+    class ListCertificatesResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $certificatesType = Certificate::class;
+        protected $certificatesDataType = 'array';
+        /**
+         * A token to retrieve next page of results. Pass this value in
+         * ListCertificatesRequest.page_token to retrieve the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * A list of locations (e.g. "us-west1") that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * The list of Certificates.
+         *
+         * @param Certificate[] $certificates
+         */
+        public function setCertificates($certificates)
+        {
+        }
+        /**
+         * @return Certificate[]
+         */
+        public function getCertificates()
+        {
+        }
+        /**
+         * A token to retrieve next page of results. Pass this value in
+         * ListCertificatesRequest.page_token to retrieve the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * A list of locations (e.g. "us-west1") that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Certificate[]
+     * Runtime class alias of \Google\Service\CertificateAuthorityService\ListCertificatesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCertificates()
-    {
-    }
-    /**
-     * A token to retrieve next page of results. Pass this value in
-     * ListCertificatesRequest.page_token to retrieve the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * A list of locations (e.g. "us-west1") that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_CertificateAuthorityService_ListCertificatesResponse extends \Google\Service\CertificateAuthorityService\ListCertificatesResponse
     {
     }
 }

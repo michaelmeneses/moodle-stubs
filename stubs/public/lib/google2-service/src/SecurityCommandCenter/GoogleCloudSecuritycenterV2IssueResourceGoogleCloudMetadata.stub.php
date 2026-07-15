@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GoogleCloudSecuritycenterV2IssueResourceGoogleCloudMetadata extends \Google\Model
-{
-    /**
-     * The project ID that the resource associated with the issue belongs to.
-     *
-     * @var string
-     */
-    public $projectId;
-    /**
-     * The project ID that the resource associated with the issue belongs to.
-     *
-     * @param string $projectId
-     */
-    public function setProjectId($projectId)
+namespace Google\Service\SecurityCommandCenter {
+    class GoogleCloudSecuritycenterV2IssueResourceGoogleCloudMetadata extends \Google\Model
     {
+        /**
+         * The project ID that the resource associated with the issue belongs to.
+         *
+         * @var string
+         */
+        public $projectId;
+        /**
+         * The project ID that the resource associated with the issue belongs to.
+         *
+         * @param string $projectId
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2IssueResourceGoogleCloudMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProjectId()
+    class Google_Service_SecurityCommandCenter_GoogleCloudSecuritycenterV2IssueResourceGoogleCloudMetadata extends \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2IssueResourceGoogleCloudMetadata
     {
     }
 }

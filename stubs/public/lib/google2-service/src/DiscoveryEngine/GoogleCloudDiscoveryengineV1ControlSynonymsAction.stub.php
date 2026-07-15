@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1ControlSynonymsAction extends \Google\Collection
-{
-    protected $collection_key = 'synonyms';
-    /**
-     * Defines a set of synonyms. Can specify up to 100 synonyms. Must specify at
-     * least 2 synonyms. Otherwise an INVALID ARGUMENT error is thrown.
-     *
-     * @var string[]
-     */
-    public $synonyms;
-    /**
-     * Defines a set of synonyms. Can specify up to 100 synonyms. Must specify at
-     * least 2 synonyms. Otherwise an INVALID ARGUMENT error is thrown.
-     *
-     * @param string[] $synonyms
-     */
-    public function setSynonyms($synonyms)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1ControlSynonymsAction extends \Google\Collection
     {
+        protected $collection_key = 'synonyms';
+        /**
+         * Defines a set of synonyms. Can specify up to 100 synonyms. Must specify at
+         * least 2 synonyms. Otherwise an INVALID ARGUMENT error is thrown.
+         *
+         * @var string[]
+         */
+        public $synonyms;
+        /**
+         * Defines a set of synonyms. Can specify up to 100 synonyms. Must specify at
+         * least 2 synonyms. Otherwise an INVALID ARGUMENT error is thrown.
+         *
+         * @param string[] $synonyms
+         */
+        public function setSynonyms($synonyms)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSynonyms()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ControlSynonymsAction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSynonyms()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1ControlSynonymsAction extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ControlSynonymsAction
     {
     }
 }

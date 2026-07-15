@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class ContaineranalysisResource extends \Google\Model
-{
-    protected $contentHashType = Hash::class;
-    protected $contentHashDataType = '';
-    public $name;
-    public $uri;
+namespace Google\Service\ContainerAnalysis {
+    class ContaineranalysisResource extends \Google\Model
+    {
+        protected $contentHashType = Hash::class;
+        protected $contentHashDataType = '';
+        public $name;
+        public $uri;
+        /**
+         * @param Hash
+         */
+        public function setContentHash(Hash $contentHash)
+        {
+        }
+        /**
+         * @return Hash
+         */
+        public function getContentHash()
+        {
+        }
+        public function setName($name)
+        {
+        }
+        public function getName()
+        {
+        }
+        public function setUri($uri)
+        {
+        }
+        public function getUri()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @param Hash
+     * Runtime class alias of \Google\Service\ContainerAnalysis\ContaineranalysisResource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setContentHash(Hash $contentHash)
-    {
-    }
-    /**
-     * @return Hash
-     */
-    public function getContentHash()
-    {
-    }
-    public function setName($name)
-    {
-    }
-    public function getName()
-    {
-    }
-    public function setUri($uri)
-    {
-    }
-    public function getUri()
+    class Google_Service_ContainerAnalysis_ContaineranalysisResource extends \Google\Service\ContainerAnalysis\ContaineranalysisResource
     {
     }
 }

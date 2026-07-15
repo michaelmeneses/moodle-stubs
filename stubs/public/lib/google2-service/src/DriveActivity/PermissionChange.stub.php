@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveActivity;
-
-class PermissionChange extends \Google\Collection
-{
-    protected $collection_key = 'removedPermissions';
-    protected $addedPermissionsType = Permission::class;
-    protected $addedPermissionsDataType = 'array';
-    protected $removedPermissionsType = Permission::class;
-    protected $removedPermissionsDataType = 'array';
-    /**
-     * The set of permissions added by this change.
-     *
-     * @param Permission[] $addedPermissions
-     */
-    public function setAddedPermissions($addedPermissions)
+namespace Google\Service\DriveActivity {
+    class PermissionChange extends \Google\Collection
     {
+        protected $collection_key = 'removedPermissions';
+        protected $addedPermissionsType = Permission::class;
+        protected $addedPermissionsDataType = 'array';
+        protected $removedPermissionsType = Permission::class;
+        protected $removedPermissionsDataType = 'array';
+        /**
+         * The set of permissions added by this change.
+         *
+         * @param Permission[] $addedPermissions
+         */
+        public function setAddedPermissions($addedPermissions)
+        {
+        }
+        /**
+         * @return Permission[]
+         */
+        public function getAddedPermissions()
+        {
+        }
+        /**
+         * The set of permissions removed by this change.
+         *
+         * @param Permission[] $removedPermissions
+         */
+        public function setRemovedPermissions($removedPermissions)
+        {
+        }
+        /**
+         * @return Permission[]
+         */
+        public function getRemovedPermissions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Permission[]
+     * Runtime class alias of \Google\Service\DriveActivity\PermissionChange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddedPermissions()
-    {
-    }
-    /**
-     * The set of permissions removed by this change.
-     *
-     * @param Permission[] $removedPermissions
-     */
-    public function setRemovedPermissions($removedPermissions)
-    {
-    }
-    /**
-     * @return Permission[]
-     */
-    public function getRemovedPermissions()
+    class Google_Service_DriveActivity_PermissionChange extends \Google\Service\DriveActivity\PermissionChange
     {
     }
 }

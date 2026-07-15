@@ -21,154 +21,163 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ArtifactRegistry;
-
-class Version extends \Google\Collection
-{
-    protected $collection_key = 'relatedTags';
-    /**
-     * Optional. Client specified annotations.
-     *
-     * @var string[]
-     */
-    public $annotations;
-    /**
-     * The time when the version was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Optional. Description of the version, as specified in its metadata.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Output only. Repository-specific Metadata stored against this version. The
-     * fields returned are defined by the underlying repository-specific resource.
-     * Currently, the resources could be: DockerImage MavenArtifact
-     *
-     * @var array[]
-     */
-    public $metadata;
-    /**
-     * The name of the version, for example: `projects/p1/locations/us-
-     * central1/repositories/repo1/packages/pkg1/versions/art1`. If the package or
-     * version ID parts contain slashes, the slashes are escaped.
-     *
-     * @var string
-     */
-    public $name;
-    protected $relatedTagsType = Tag::class;
-    protected $relatedTagsDataType = 'array';
-    /**
-     * The time when the version was last updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Optional. Client specified annotations.
-     *
-     * @param string[] $annotations
-     */
-    public function setAnnotations($annotations)
+namespace Google\Service\ArtifactRegistry {
+    class Version extends \Google\Collection
     {
+        protected $collection_key = 'relatedTags';
+        /**
+         * Optional. Client specified annotations.
+         *
+         * @var string[]
+         */
+        public $annotations;
+        /**
+         * The time when the version was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Optional. Description of the version, as specified in its metadata.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Output only. Repository-specific Metadata stored against this version. The
+         * fields returned are defined by the underlying repository-specific resource.
+         * Currently, the resources could be: DockerImage MavenArtifact
+         *
+         * @var array[]
+         */
+        public $metadata;
+        /**
+         * The name of the version, for example: `projects/p1/locations/us-
+         * central1/repositories/repo1/packages/pkg1/versions/art1`. If the package or
+         * version ID parts contain slashes, the slashes are escaped.
+         *
+         * @var string
+         */
+        public $name;
+        protected $relatedTagsType = Tag::class;
+        protected $relatedTagsDataType = 'array';
+        /**
+         * The time when the version was last updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Optional. Client specified annotations.
+         *
+         * @param string[] $annotations
+         */
+        public function setAnnotations($annotations)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAnnotations()
+        {
+        }
+        /**
+         * The time when the version was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Optional. Description of the version, as specified in its metadata.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Output only. Repository-specific Metadata stored against this version. The
+         * fields returned are defined by the underlying repository-specific resource.
+         * Currently, the resources could be: DockerImage MavenArtifact
+         *
+         * @param array[] $metadata
+         */
+        public function setMetadata($metadata)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * The name of the version, for example: `projects/p1/locations/us-
+         * central1/repositories/repo1/packages/pkg1/versions/art1`. If the package or
+         * version ID parts contain slashes, the slashes are escaped.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. A list of related tags. Will contain up to 100 tags that
+         * reference this version.
+         *
+         * @param Tag[] $relatedTags
+         */
+        public function setRelatedTags($relatedTags)
+        {
+        }
+        /**
+         * @return Tag[]
+         */
+        public function getRelatedTags()
+        {
+        }
+        /**
+         * The time when the version was last updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\ArtifactRegistry\Version registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotations()
-    {
-    }
-    /**
-     * The time when the version was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Optional. Description of the version, as specified in its metadata.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Output only. Repository-specific Metadata stored against this version. The
-     * fields returned are defined by the underlying repository-specific resource.
-     * Currently, the resources could be: DockerImage MavenArtifact
-     *
-     * @param array[] $metadata
-     */
-    public function setMetadata($metadata)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * The name of the version, for example: `projects/p1/locations/us-
-     * central1/repositories/repo1/packages/pkg1/versions/art1`. If the package or
-     * version ID parts contain slashes, the slashes are escaped.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. A list of related tags. Will contain up to 100 tags that
-     * reference this version.
-     *
-     * @param Tag[] $relatedTags
-     */
-    public function setRelatedTags($relatedTags)
-    {
-    }
-    /**
-     * @return Tag[]
-     */
-    public function getRelatedTags()
-    {
-    }
-    /**
-     * The time when the version was last updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_ArtifactRegistry_Version extends \Google\Service\ArtifactRegistry\Version
     {
     }
 }

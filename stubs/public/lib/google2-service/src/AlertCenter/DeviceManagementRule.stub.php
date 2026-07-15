@@ -21,208 +21,217 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AlertCenter;
-
-class DeviceManagementRule extends \Google\Model
-{
-    /**
-     * Required. The device ID.
-     *
-     * @var string
-     */
-    public $deviceId;
-    /**
-     * The model of the device.
-     *
-     * @var string
-     */
-    public $deviceModel;
-    /**
-     * The type of the device.
-     *
-     * @var string
-     */
-    public $deviceType;
-    /**
-     * The email of the user this alert was created for.
-     *
-     * @var string
-     */
-    public $email;
-    /**
-     * ID of the rule that triggered the alert
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Required for iOS, empty for others.
-     *
-     * @var string
-     */
-    public $iosVendorId;
-    /**
-     * Obfuscated ID of the owner of the device
-     *
-     * @var string
-     */
-    public $ownerId;
-    /**
-     * The device resource ID.
-     *
-     * @var string
-     */
-    public $resourceId;
-    /**
-     * Action taken as result of the rule
-     *
-     * @var string
-     */
-    public $ruleAction;
-    /**
-     * The serial number of the device.
-     *
-     * @var string
-     */
-    public $serialNumber;
-    /**
-     * Required. The device ID.
-     *
-     * @param string $deviceId
-     */
-    public function setDeviceId($deviceId)
+namespace Google\Service\AlertCenter {
+    class DeviceManagementRule extends \Google\Model
     {
+        /**
+         * Required. The device ID.
+         *
+         * @var string
+         */
+        public $deviceId;
+        /**
+         * The model of the device.
+         *
+         * @var string
+         */
+        public $deviceModel;
+        /**
+         * The type of the device.
+         *
+         * @var string
+         */
+        public $deviceType;
+        /**
+         * The email of the user this alert was created for.
+         *
+         * @var string
+         */
+        public $email;
+        /**
+         * ID of the rule that triggered the alert
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Required for iOS, empty for others.
+         *
+         * @var string
+         */
+        public $iosVendorId;
+        /**
+         * Obfuscated ID of the owner of the device
+         *
+         * @var string
+         */
+        public $ownerId;
+        /**
+         * The device resource ID.
+         *
+         * @var string
+         */
+        public $resourceId;
+        /**
+         * Action taken as result of the rule
+         *
+         * @var string
+         */
+        public $ruleAction;
+        /**
+         * The serial number of the device.
+         *
+         * @var string
+         */
+        public $serialNumber;
+        /**
+         * Required. The device ID.
+         *
+         * @param string $deviceId
+         */
+        public function setDeviceId($deviceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeviceId()
+        {
+        }
+        /**
+         * The model of the device.
+         *
+         * @param string $deviceModel
+         */
+        public function setDeviceModel($deviceModel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeviceModel()
+        {
+        }
+        /**
+         * The type of the device.
+         *
+         * @param string $deviceType
+         */
+        public function setDeviceType($deviceType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeviceType()
+        {
+        }
+        /**
+         * The email of the user this alert was created for.
+         *
+         * @param string $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
+        /**
+         * ID of the rule that triggered the alert
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Required for iOS, empty for others.
+         *
+         * @param string $iosVendorId
+         */
+        public function setIosVendorId($iosVendorId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIosVendorId()
+        {
+        }
+        /**
+         * Obfuscated ID of the owner of the device
+         *
+         * @param string $ownerId
+         */
+        public function setOwnerId($ownerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOwnerId()
+        {
+        }
+        /**
+         * The device resource ID.
+         *
+         * @param string $resourceId
+         */
+        public function setResourceId($resourceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceId()
+        {
+        }
+        /**
+         * Action taken as result of the rule
+         *
+         * @param string $ruleAction
+         */
+        public function setRuleAction($ruleAction)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRuleAction()
+        {
+        }
+        /**
+         * The serial number of the device.
+         *
+         * @param string $serialNumber
+         */
+        public function setSerialNumber($serialNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSerialNumber()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AlertCenter\DeviceManagementRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeviceId()
-    {
-    }
-    /**
-     * The model of the device.
-     *
-     * @param string $deviceModel
-     */
-    public function setDeviceModel($deviceModel)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeviceModel()
-    {
-    }
-    /**
-     * The type of the device.
-     *
-     * @param string $deviceType
-     */
-    public function setDeviceType($deviceType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeviceType()
-    {
-    }
-    /**
-     * The email of the user this alert was created for.
-     *
-     * @param string $email
-     */
-    public function setEmail($email)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEmail()
-    {
-    }
-    /**
-     * ID of the rule that triggered the alert
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Required for iOS, empty for others.
-     *
-     * @param string $iosVendorId
-     */
-    public function setIosVendorId($iosVendorId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIosVendorId()
-    {
-    }
-    /**
-     * Obfuscated ID of the owner of the device
-     *
-     * @param string $ownerId
-     */
-    public function setOwnerId($ownerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOwnerId()
-    {
-    }
-    /**
-     * The device resource ID.
-     *
-     * @param string $resourceId
-     */
-    public function setResourceId($resourceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceId()
-    {
-    }
-    /**
-     * Action taken as result of the rule
-     *
-     * @param string $ruleAction
-     */
-    public function setRuleAction($ruleAction)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRuleAction()
-    {
-    }
-    /**
-     * The serial number of the device.
-     *
-     * @param string $serialNumber
-     */
-    public function setSerialNumber($serialNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSerialNumber()
+    class Google_Service_AlertCenter_DeviceManagementRule extends \Google\Service\AlertCenter\DeviceManagementRule
     {
     }
 }

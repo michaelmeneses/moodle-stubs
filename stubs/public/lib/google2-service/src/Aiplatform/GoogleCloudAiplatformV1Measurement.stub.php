@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1Measurement extends \Google\Collection
-{
-    protected $collection_key = 'metrics';
-    /**
-     * Output only. Time that the Trial has been running at the point of this
-     * Measurement.
-     *
-     * @var string
-     */
-    public $elapsedDuration;
-    protected $metricsType = GoogleCloudAiplatformV1MeasurementMetric::class;
-    protected $metricsDataType = 'array';
-    /**
-     * Output only. The number of steps the machine learning model has been
-     * trained for. Must be non-negative.
-     *
-     * @var string
-     */
-    public $stepCount;
-    /**
-     * Output only. Time that the Trial has been running at the point of this
-     * Measurement.
-     *
-     * @param string $elapsedDuration
-     */
-    public function setElapsedDuration($elapsedDuration)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1Measurement extends \Google\Collection
     {
+        protected $collection_key = 'metrics';
+        /**
+         * Output only. Time that the Trial has been running at the point of this
+         * Measurement.
+         *
+         * @var string
+         */
+        public $elapsedDuration;
+        protected $metricsType = GoogleCloudAiplatformV1MeasurementMetric::class;
+        protected $metricsDataType = 'array';
+        /**
+         * Output only. The number of steps the machine learning model has been
+         * trained for. Must be non-negative.
+         *
+         * @var string
+         */
+        public $stepCount;
+        /**
+         * Output only. Time that the Trial has been running at the point of this
+         * Measurement.
+         *
+         * @param string $elapsedDuration
+         */
+        public function setElapsedDuration($elapsedDuration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getElapsedDuration()
+        {
+        }
+        /**
+         * Output only. A list of metrics got by evaluating the objective functions
+         * using suggested Parameter values.
+         *
+         * @param GoogleCloudAiplatformV1MeasurementMetric[] $metrics
+         */
+        public function setMetrics($metrics)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1MeasurementMetric[]
+         */
+        public function getMetrics()
+        {
+        }
+        /**
+         * Output only. The number of steps the machine learning model has been
+         * trained for. Must be non-negative.
+         *
+         * @param string $stepCount
+         */
+        public function setStepCount($stepCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStepCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1Measurement registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getElapsedDuration()
-    {
-    }
-    /**
-     * Output only. A list of metrics got by evaluating the objective functions
-     * using suggested Parameter values.
-     *
-     * @param GoogleCloudAiplatformV1MeasurementMetric[] $metrics
-     */
-    public function setMetrics($metrics)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1MeasurementMetric[]
-     */
-    public function getMetrics()
-    {
-    }
-    /**
-     * Output only. The number of steps the machine learning model has been
-     * trained for. Must be non-negative.
-     *
-     * @param string $stepCount
-     */
-    public function setStepCount($stepCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStepCount()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1Measurement extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1Measurement
     {
     }
 }

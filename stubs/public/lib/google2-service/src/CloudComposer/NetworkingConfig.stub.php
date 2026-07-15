@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudComposer;
-
-class NetworkingConfig extends \Google\Model
-{
-    /**
-     * No specific connection type was requested, so the environment uses the
-     * default value corresponding to the rest of its configuration.
-     */
-    public const CONNECTION_TYPE_CONNECTION_TYPE_UNSPECIFIED = 'CONNECTION_TYPE_UNSPECIFIED';
-    /**
-     * Requests the use of VPC peerings for connecting the Customer and Tenant
-     * projects.
-     */
-    public const CONNECTION_TYPE_VPC_PEERING = 'VPC_PEERING';
-    /**
-     * Requests the use of Private Service Connect for connecting the Customer and
-     * Tenant projects.
-     */
-    public const CONNECTION_TYPE_PRIVATE_SERVICE_CONNECT = 'PRIVATE_SERVICE_CONNECT';
-    /**
-     * Optional. Indicates the user requested specific connection type between
-     * Tenant and Customer projects. You cannot set networking connection type in
-     * public IP environment.
-     *
-     * @var string
-     */
-    public $connectionType;
-    /**
-     * Optional. Indicates the user requested specific connection type between
-     * Tenant and Customer projects. You cannot set networking connection type in
-     * public IP environment.
-     *
-     * Accepted values: CONNECTION_TYPE_UNSPECIFIED, VPC_PEERING,
-     * PRIVATE_SERVICE_CONNECT
-     *
-     * @param self::CONNECTION_TYPE_* $connectionType
-     */
-    public function setConnectionType($connectionType)
+namespace Google\Service\CloudComposer {
+    class NetworkingConfig extends \Google\Model
     {
+        /**
+         * No specific connection type was requested, so the environment uses the
+         * default value corresponding to the rest of its configuration.
+         */
+        public const CONNECTION_TYPE_CONNECTION_TYPE_UNSPECIFIED = 'CONNECTION_TYPE_UNSPECIFIED';
+        /**
+         * Requests the use of VPC peerings for connecting the Customer and Tenant
+         * projects.
+         */
+        public const CONNECTION_TYPE_VPC_PEERING = 'VPC_PEERING';
+        /**
+         * Requests the use of Private Service Connect for connecting the Customer and
+         * Tenant projects.
+         */
+        public const CONNECTION_TYPE_PRIVATE_SERVICE_CONNECT = 'PRIVATE_SERVICE_CONNECT';
+        /**
+         * Optional. Indicates the user requested specific connection type between
+         * Tenant and Customer projects. You cannot set networking connection type in
+         * public IP environment.
+         *
+         * @var string
+         */
+        public $connectionType;
+        /**
+         * Optional. Indicates the user requested specific connection type between
+         * Tenant and Customer projects. You cannot set networking connection type in
+         * public IP environment.
+         *
+         * Accepted values: CONNECTION_TYPE_UNSPECIFIED, VPC_PEERING,
+         * PRIVATE_SERVICE_CONNECT
+         *
+         * @param self::CONNECTION_TYPE_* $connectionType
+         */
+        public function setConnectionType($connectionType)
+        {
+        }
+        /**
+         * @return self::CONNECTION_TYPE_*
+         */
+        public function getConnectionType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::CONNECTION_TYPE_*
+     * Runtime class alias of \Google\Service\CloudComposer\NetworkingConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConnectionType()
+    class Google_Service_CloudComposer_NetworkingConfig extends \Google\Service\CloudComposer\NetworkingConfig
     {
     }
 }

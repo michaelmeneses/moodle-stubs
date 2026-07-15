@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vault;
-
-class HeldGroupsQuery extends \Google\Model
-{
-    /**
-     * The end time for the query. Specify in GMT. The value is rounded to 12 AM
-     * on the specified date.
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * The start time for the query. Specify in GMT. The value is rounded to 12 AM
-     * on the specified date.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * The [search operators](https://support.google.com/vault/answer/2474474)
-     * used to refine the messages covered by the hold.
-     *
-     * @var string
-     */
-    public $terms;
-    /**
-     * The end time for the query. Specify in GMT. The value is rounded to 12 AM
-     * on the specified date.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
+namespace Google\Service\Vault {
+    class HeldGroupsQuery extends \Google\Model
     {
+        /**
+         * The end time for the query. Specify in GMT. The value is rounded to 12 AM
+         * on the specified date.
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * The start time for the query. Specify in GMT. The value is rounded to 12 AM
+         * on the specified date.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * The [search operators](https://support.google.com/vault/answer/2474474)
+         * used to refine the messages covered by the hold.
+         *
+         * @var string
+         */
+        public $terms;
+        /**
+         * The end time for the query. Specify in GMT. The value is rounded to 12 AM
+         * on the specified date.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * The start time for the query. Specify in GMT. The value is rounded to 12 AM
+         * on the specified date.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
+        /**
+         * The [search operators](https://support.google.com/vault/answer/2474474)
+         * used to refine the messages covered by the hold.
+         *
+         * @param string $terms
+         */
+        public function setTerms($terms)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTerms()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Vault\HeldGroupsQuery registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndTime()
-    {
-    }
-    /**
-     * The start time for the query. Specify in GMT. The value is rounded to 12 AM
-     * on the specified date.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
-    {
-    }
-    /**
-     * The [search operators](https://support.google.com/vault/answer/2474474)
-     * used to refine the messages covered by the hold.
-     *
-     * @param string $terms
-     */
-    public function setTerms($terms)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTerms()
+    class Google_Service_Vault_HeldGroupsQuery extends \Google\Service\Vault\HeldGroupsQuery
     {
     }
 }

@@ -21,27 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting\Resource;
-
-/**
- * The "browsers" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dfareportingService = new Google\Service\Dfareporting(...);
- *   $browsers = $dfareportingService->browsers;
- *  </code>
- */
-class Browsers extends \Google\Service\Resource
-{
+namespace Google\Service\Dfareporting\Resource {
+    use Google\Service\Dfareporting\BrowsersListResponse;
     /**
-     * Retrieves a list of browsers. (browsers.listBrowsers)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param array $optParams Optional parameters.
-     * @return BrowsersListResponse
-     * @throws \Google\Service\Exception
+     * The "browsers" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dfareportingService = new Google\Service\Dfareporting(...);
+     *   $browsers = $dfareportingService->browsers;
+     *  </code>
      */
-    public function listBrowsers($profileId, $optParams = [])
+    class Browsers extends \Google\Service\Resource
+    {
+        /**
+         * Retrieves a list of browsers. (browsers.listBrowsers)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param array $optParams Optional parameters.
+         * @return BrowsersListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listBrowsers($profileId, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Dfareporting\Resource\Browsers registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Dfareporting_Resource_Browsers extends \Google\Service\Dfareporting\Resource\Browsers
     {
     }
 }

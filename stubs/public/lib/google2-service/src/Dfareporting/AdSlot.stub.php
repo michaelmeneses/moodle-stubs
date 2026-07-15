@@ -21,136 +21,145 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class AdSlot extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $comment;
-    /**
-     * @var string
-     */
-    public $compatibility;
-    /**
-     * @var string
-     */
-    public $height;
-    /**
-     * @var string
-     */
-    public $linkedPlacementId;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $paymentSourceType;
-    /**
-     * @var bool
-     */
-    public $primary;
-    /**
-     * @var string
-     */
-    public $width;
-    /**
-     * @param string
-     */
-    public function setComment($comment)
+namespace Google\Service\Dfareporting {
+    class AdSlot extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $comment;
+        /**
+         * @var string
+         */
+        public $compatibility;
+        /**
+         * @var string
+         */
+        public $height;
+        /**
+         * @var string
+         */
+        public $linkedPlacementId;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $paymentSourceType;
+        /**
+         * @var bool
+         */
+        public $primary;
+        /**
+         * @var string
+         */
+        public $width;
+        /**
+         * @param string
+         */
+        public function setComment($comment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getComment()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCompatibility($compatibility)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCompatibility()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setHeight($height)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHeight()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLinkedPlacementId($linkedPlacementId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLinkedPlacementId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPaymentSourceType($paymentSourceType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPaymentSourceType()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setPrimary($primary)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPrimary()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setWidth($width)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWidth()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\AdSlot registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getComment()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCompatibility($compatibility)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCompatibility()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setHeight($height)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHeight()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLinkedPlacementId($linkedPlacementId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLinkedPlacementId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPaymentSourceType($paymentSourceType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPaymentSourceType()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setPrimary($primary)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPrimary()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setWidth($width)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWidth()
+    class Google_Service_Dfareporting_AdSlot extends \Google\Service\Dfareporting\AdSlot
     {
     }
 }

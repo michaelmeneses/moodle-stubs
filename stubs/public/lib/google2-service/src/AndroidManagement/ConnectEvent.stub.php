@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class ConnectEvent extends \Google\Model
-{
-    /**
-     * The destination IP address of the connect call.
-     *
-     * @var string
-     */
-    public $destinationIpAddress;
-    /**
-     * The destination port of the connect call.
-     *
-     * @var int
-     */
-    public $destinationPort;
-    /**
-     * The package name of the UID that performed the connect call.
-     *
-     * @var string
-     */
-    public $packageName;
-    /**
-     * The destination IP address of the connect call.
-     *
-     * @param string $destinationIpAddress
-     */
-    public function setDestinationIpAddress($destinationIpAddress)
+namespace Google\Service\AndroidManagement {
+    class ConnectEvent extends \Google\Model
     {
+        /**
+         * The destination IP address of the connect call.
+         *
+         * @var string
+         */
+        public $destinationIpAddress;
+        /**
+         * The destination port of the connect call.
+         *
+         * @var int
+         */
+        public $destinationPort;
+        /**
+         * The package name of the UID that performed the connect call.
+         *
+         * @var string
+         */
+        public $packageName;
+        /**
+         * The destination IP address of the connect call.
+         *
+         * @param string $destinationIpAddress
+         */
+        public function setDestinationIpAddress($destinationIpAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDestinationIpAddress()
+        {
+        }
+        /**
+         * The destination port of the connect call.
+         *
+         * @param int $destinationPort
+         */
+        public function setDestinationPort($destinationPort)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getDestinationPort()
+        {
+        }
+        /**
+         * The package name of the UID that performed the connect call.
+         *
+         * @param string $packageName
+         */
+        public function setPackageName($packageName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPackageName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidManagement\ConnectEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDestinationIpAddress()
-    {
-    }
-    /**
-     * The destination port of the connect call.
-     *
-     * @param int $destinationPort
-     */
-    public function setDestinationPort($destinationPort)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getDestinationPort()
-    {
-    }
-    /**
-     * The package name of the UID that performed the connect call.
-     *
-     * @param string $packageName
-     */
-    public function setPackageName($packageName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPackageName()
+    class Google_Service_AndroidManagement_ConnectEvent extends \Google\Service\AndroidManagement\ConnectEvent
     {
     }
 }

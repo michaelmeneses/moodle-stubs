@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSColorMapIntColor extends \Google\Model
-{
-    /**
-     * The value should be in range of [0, 255].
-     *
-     * @var int
-     */
-    public $blue;
-    /**
-     * The value should be in range of [0, 255].
-     *
-     * @var int
-     */
-    public $green;
-    /**
-     * The value should be in range of [0, 255].
-     *
-     * @var int
-     */
-    public $red;
-    /**
-     * The value should be in range of [0, 255].
-     *
-     * @param int $blue
-     */
-    public function setBlue($blue)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSColorMapIntColor extends \Google\Model
     {
+        /**
+         * The value should be in range of [0, 255].
+         *
+         * @var int
+         */
+        public $blue;
+        /**
+         * The value should be in range of [0, 255].
+         *
+         * @var int
+         */
+        public $green;
+        /**
+         * The value should be in range of [0, 255].
+         *
+         * @var int
+         */
+        public $red;
+        /**
+         * The value should be in range of [0, 255].
+         *
+         * @param int $blue
+         */
+        public function setBlue($blue)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getBlue()
+        {
+        }
+        /**
+         * The value should be in range of [0, 255].
+         *
+         * @param int $green
+         */
+        public function setGreen($green)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getGreen()
+        {
+        }
+        /**
+         * The value should be in range of [0, 255].
+         *
+         * @param int $red
+         */
+        public function setRed($red)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRed()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSColorMapIntColor registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBlue()
-    {
-    }
-    /**
-     * The value should be in range of [0, 255].
-     *
-     * @param int $green
-     */
-    public function setGreen($green)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getGreen()
-    {
-    }
-    /**
-     * The value should be in range of [0, 255].
-     *
-     * @param int $red
-     */
-    public function setRed($red)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getRed()
+    class Google_Service_CloudNaturalLanguage_XPSColorMapIntColor extends \Google\Service\CloudNaturalLanguage\XPSColorMapIntColor
     {
     }
 }

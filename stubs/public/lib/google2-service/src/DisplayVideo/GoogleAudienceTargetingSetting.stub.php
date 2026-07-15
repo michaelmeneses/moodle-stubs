@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class GoogleAudienceTargetingSetting extends \Google\Model
-{
-    /**
-     * Required. Google audience id of the Google audience targeting setting. This
-     * id is google_audience_id.
-     *
-     * @var string
-     */
-    public $googleAudienceId;
-    /**
-     * Required. Google audience id of the Google audience targeting setting. This
-     * id is google_audience_id.
-     *
-     * @param string $googleAudienceId
-     */
-    public function setGoogleAudienceId($googleAudienceId)
+namespace Google\Service\DisplayVideo {
+    class GoogleAudienceTargetingSetting extends \Google\Model
     {
+        /**
+         * Required. Google audience id of the Google audience targeting setting. This
+         * id is google_audience_id.
+         *
+         * @var string
+         */
+        public $googleAudienceId;
+        /**
+         * Required. Google audience id of the Google audience targeting setting. This
+         * id is google_audience_id.
+         *
+         * @param string $googleAudienceId
+         */
+        public function setGoogleAudienceId($googleAudienceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGoogleAudienceId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\GoogleAudienceTargetingSetting registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGoogleAudienceId()
+    class Google_Service_DisplayVideo_GoogleAudienceTargetingSetting extends \Google\Service\DisplayVideo\GoogleAudienceTargetingSetting
     {
     }
 }

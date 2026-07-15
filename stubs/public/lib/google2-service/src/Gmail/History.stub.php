@@ -21,111 +21,120 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Gmail;
-
-class History extends \Google\Collection
-{
-    protected $collection_key = 'messagesDeleted';
-    /**
-     * The mailbox sequence ID.
-     *
-     * @var string
-     */
-    public $id;
-    protected $labelsAddedType = HistoryLabelAdded::class;
-    protected $labelsAddedDataType = 'array';
-    protected $labelsRemovedType = HistoryLabelRemoved::class;
-    protected $labelsRemovedDataType = 'array';
-    protected $messagesType = Message::class;
-    protected $messagesDataType = 'array';
-    protected $messagesAddedType = HistoryMessageAdded::class;
-    protected $messagesAddedDataType = 'array';
-    protected $messagesDeletedType = HistoryMessageDeleted::class;
-    protected $messagesDeletedDataType = 'array';
-    /**
-     * The mailbox sequence ID.
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\Gmail {
+    class History extends \Google\Collection
     {
+        protected $collection_key = 'messagesDeleted';
+        /**
+         * The mailbox sequence ID.
+         *
+         * @var string
+         */
+        public $id;
+        protected $labelsAddedType = HistoryLabelAdded::class;
+        protected $labelsAddedDataType = 'array';
+        protected $labelsRemovedType = HistoryLabelRemoved::class;
+        protected $labelsRemovedDataType = 'array';
+        protected $messagesType = Message::class;
+        protected $messagesDataType = 'array';
+        protected $messagesAddedType = HistoryMessageAdded::class;
+        protected $messagesAddedDataType = 'array';
+        protected $messagesDeletedType = HistoryMessageDeleted::class;
+        protected $messagesDeletedDataType = 'array';
+        /**
+         * The mailbox sequence ID.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Labels added to messages in this history record.
+         *
+         * @param HistoryLabelAdded[] $labelsAdded
+         */
+        public function setLabelsAdded($labelsAdded)
+        {
+        }
+        /**
+         * @return HistoryLabelAdded[]
+         */
+        public function getLabelsAdded()
+        {
+        }
+        /**
+         * Labels removed from messages in this history record.
+         *
+         * @param HistoryLabelRemoved[] $labelsRemoved
+         */
+        public function setLabelsRemoved($labelsRemoved)
+        {
+        }
+        /**
+         * @return HistoryLabelRemoved[]
+         */
+        public function getLabelsRemoved()
+        {
+        }
+        /**
+         * List of messages changed in this history record. The fields for specific
+         * change types, such as `messagesAdded` may duplicate messages in this field.
+         * We recommend using the specific change-type fields instead of this.
+         *
+         * @param Message[] $messages
+         */
+        public function setMessages($messages)
+        {
+        }
+        /**
+         * @return Message[]
+         */
+        public function getMessages()
+        {
+        }
+        /**
+         * Messages added to the mailbox in this history record.
+         *
+         * @param HistoryMessageAdded[] $messagesAdded
+         */
+        public function setMessagesAdded($messagesAdded)
+        {
+        }
+        /**
+         * @return HistoryMessageAdded[]
+         */
+        public function getMessagesAdded()
+        {
+        }
+        /**
+         * Messages deleted (not Trashed) from the mailbox in this history record.
+         *
+         * @param HistoryMessageDeleted[] $messagesDeleted
+         */
+        public function setMessagesDeleted($messagesDeleted)
+        {
+        }
+        /**
+         * @return HistoryMessageDeleted[]
+         */
+        public function getMessagesDeleted()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Gmail\History registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * Labels added to messages in this history record.
-     *
-     * @param HistoryLabelAdded[] $labelsAdded
-     */
-    public function setLabelsAdded($labelsAdded)
-    {
-    }
-    /**
-     * @return HistoryLabelAdded[]
-     */
-    public function getLabelsAdded()
-    {
-    }
-    /**
-     * Labels removed from messages in this history record.
-     *
-     * @param HistoryLabelRemoved[] $labelsRemoved
-     */
-    public function setLabelsRemoved($labelsRemoved)
-    {
-    }
-    /**
-     * @return HistoryLabelRemoved[]
-     */
-    public function getLabelsRemoved()
-    {
-    }
-    /**
-     * List of messages changed in this history record. The fields for specific
-     * change types, such as `messagesAdded` may duplicate messages in this field.
-     * We recommend using the specific change-type fields instead of this.
-     *
-     * @param Message[] $messages
-     */
-    public function setMessages($messages)
-    {
-    }
-    /**
-     * @return Message[]
-     */
-    public function getMessages()
-    {
-    }
-    /**
-     * Messages added to the mailbox in this history record.
-     *
-     * @param HistoryMessageAdded[] $messagesAdded
-     */
-    public function setMessagesAdded($messagesAdded)
-    {
-    }
-    /**
-     * @return HistoryMessageAdded[]
-     */
-    public function getMessagesAdded()
-    {
-    }
-    /**
-     * Messages deleted (not Trashed) from the mailbox in this history record.
-     *
-     * @param HistoryMessageDeleted[] $messagesDeleted
-     */
-    public function setMessagesDeleted($messagesDeleted)
-    {
-    }
-    /**
-     * @return HistoryMessageDeleted[]
-     */
-    public function getMessagesDeleted()
+    class Google_Service_Gmail_History extends \Google\Service\Gmail\History
     {
     }
 }

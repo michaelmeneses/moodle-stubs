@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1mainSmartReplyData extends \Google\Model
-{
-    /**
-     * The system's confidence score that this reply is a good match for this
-     * conversation, ranging from 0.0 (completely uncertain) to 1.0 (completely
-     * certain).
-     *
-     * @var 
-     */
-    public $confidenceScore;
-    /**
-     * Map that contains metadata about the Smart Reply and the document from
-     * which it originates.
-     *
-     * @var string[]
-     */
-    public $metadata;
-    /**
-     * The name of the answer record. Format:
-     * projects/{project}/locations/{location}/answerRecords/{answer_record}
-     *
-     * @var string
-     */
-    public $queryRecord;
-    /**
-     * The content of the reply.
-     *
-     * @var string
-     */
-    public $reply;
-    public function setConfidenceScore($confidenceScore)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1mainSmartReplyData extends \Google\Model
     {
+        /**
+         * The system's confidence score that this reply is a good match for this
+         * conversation, ranging from 0.0 (completely uncertain) to 1.0 (completely
+         * certain).
+         *
+         * @var 
+         */
+        public $confidenceScore;
+        /**
+         * Map that contains metadata about the Smart Reply and the document from
+         * which it originates.
+         *
+         * @var string[]
+         */
+        public $metadata;
+        /**
+         * The name of the answer record. Format:
+         * projects/{project}/locations/{location}/answerRecords/{answer_record}
+         *
+         * @var string
+         */
+        public $queryRecord;
+        /**
+         * The content of the reply.
+         *
+         * @var string
+         */
+        public $reply;
+        public function setConfidenceScore($confidenceScore)
+        {
+        }
+        public function getConfidenceScore()
+        {
+        }
+        /**
+         * Map that contains metadata about the Smart Reply and the document from
+         * which it originates.
+         *
+         * @param string[] $metadata
+         */
+        public function setMetadata($metadata)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * The name of the answer record. Format:
+         * projects/{project}/locations/{location}/answerRecords/{answer_record}
+         *
+         * @param string $queryRecord
+         */
+        public function setQueryRecord($queryRecord)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQueryRecord()
+        {
+        }
+        /**
+         * The content of the reply.
+         *
+         * @param string $reply
+         */
+        public function setReply($reply)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReply()
+        {
+        }
     }
-    public function getConfidenceScore()
-    {
-    }
+}
+namespace {
     /**
-     * Map that contains metadata about the Smart Reply and the document from
-     * which it originates.
-     *
-     * @param string[] $metadata
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainSmartReplyData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setMetadata($metadata)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * The name of the answer record. Format:
-     * projects/{project}/locations/{location}/answerRecords/{answer_record}
-     *
-     * @param string $queryRecord
-     */
-    public function setQueryRecord($queryRecord)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQueryRecord()
-    {
-    }
-    /**
-     * The content of the reply.
-     *
-     * @param string $reply
-     */
-    public function setReply($reply)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReply()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1mainSmartReplyData extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainSmartReplyData
     {
     }
 }

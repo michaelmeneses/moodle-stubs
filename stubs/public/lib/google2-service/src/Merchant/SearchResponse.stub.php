@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Merchant;
-
-class SearchResponse extends \Google\Collection
-{
-    protected $collection_key = 'results';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    protected $resultsType = ReportRow::class;
-    protected $resultsDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Merchant {
+    class SearchResponse extends \Google\Collection
     {
+        protected $collection_key = 'results';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        protected $resultsType = ReportRow::class;
+        protected $resultsDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param ReportRow[]
+         */
+        public function setResults($results)
+        {
+        }
+        /**
+         * @return ReportRow[]
+         */
+        public function getResults()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Merchant\SearchResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param ReportRow[]
-     */
-    public function setResults($results)
-    {
-    }
-    /**
-     * @return ReportRow[]
-     */
-    public function getResults()
+    class Google_Service_Merchant_SearchResponse extends \Google\Service\Merchant\SearchResponse
     {
     }
 }

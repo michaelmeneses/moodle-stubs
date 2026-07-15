@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3beta1LanguageInfo extends \Google\Model
-{
-    /**
-     * The confidence score of the detected language between 0 and 1.
-     *
-     * @var float
-     */
-    public $confidenceScore;
-    /**
-     * The language code specified in the original request.
-     *
-     * @var string
-     */
-    public $inputLanguageCode;
-    /**
-     * The language code detected for this request based on the user conversation.
-     *
-     * @var string
-     */
-    public $resolvedLanguageCode;
-    /**
-     * The confidence score of the detected language between 0 and 1.
-     *
-     * @param float $confidenceScore
-     */
-    public function setConfidenceScore($confidenceScore)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3beta1LanguageInfo extends \Google\Model
     {
+        /**
+         * The confidence score of the detected language between 0 and 1.
+         *
+         * @var float
+         */
+        public $confidenceScore;
+        /**
+         * The language code specified in the original request.
+         *
+         * @var string
+         */
+        public $inputLanguageCode;
+        /**
+         * The language code detected for this request based on the user conversation.
+         *
+         * @var string
+         */
+        public $resolvedLanguageCode;
+        /**
+         * The confidence score of the detected language between 0 and 1.
+         *
+         * @param float $confidenceScore
+         */
+        public function setConfidenceScore($confidenceScore)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getConfidenceScore()
+        {
+        }
+        /**
+         * The language code specified in the original request.
+         *
+         * @param string $inputLanguageCode
+         */
+        public function setInputLanguageCode($inputLanguageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInputLanguageCode()
+        {
+        }
+        /**
+         * The language code detected for this request based on the user conversation.
+         *
+         * @param string $resolvedLanguageCode
+         */
+        public function setResolvedLanguageCode($resolvedLanguageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResolvedLanguageCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3beta1LanguageInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfidenceScore()
-    {
-    }
-    /**
-     * The language code specified in the original request.
-     *
-     * @param string $inputLanguageCode
-     */
-    public function setInputLanguageCode($inputLanguageCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInputLanguageCode()
-    {
-    }
-    /**
-     * The language code detected for this request based on the user conversation.
-     *
-     * @param string $resolvedLanguageCode
-     */
-    public function setResolvedLanguageCode($resolvedLanguageCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResolvedLanguageCode()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3beta1LanguageInfo extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3beta1LanguageInfo
     {
     }
 }

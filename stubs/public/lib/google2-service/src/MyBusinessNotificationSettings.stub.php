@@ -21,36 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for MyBusinessNotificationSettings (v1).
- *
- * <p>
- * The My Business Notification Settings API enables managing notification
- * settings for business accounts. Note - If you have a quota of 0 after
- * enabling the API, please request for GBP API access.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://developers.google.com/my-business/" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class MyBusinessNotificationSettings extends \Google\Service
-{
-    public $accounts;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the
-     * MyBusinessNotificationSettings service.
+     * Service definition for MyBusinessNotificationSettings (v1).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * The My Business Notification Settings API enables managing notification
+     * settings for business accounts. Note - If you have a quota of 0 after
+     * enabling the API, please request for GBP API access.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://developers.google.com/my-business/" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class MyBusinessNotificationSettings extends \Google\Service
+    {
+        public $accounts;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the
+         * MyBusinessNotificationSettings service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\MyBusinessNotificationSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_MyBusinessNotificationSettings extends \Google\Service\MyBusinessNotificationSettings
     {
     }
 }

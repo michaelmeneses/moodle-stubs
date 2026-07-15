@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetAppFiles;
-
-class WeeklySchedule extends \Google\Model
-{
+namespace Google\Service\NetAppFiles {
+    class WeeklySchedule extends \Google\Model
+    {
+        /**
+         * Set the day or days of the week to make a snapshot. Accepts a comma
+         * separated days of the week. Defaults to 'Sunday'.
+         *
+         * @var string
+         */
+        public $day;
+        /**
+         * Set the hour to start the snapshot (0-23), defaults to midnight (0).
+         *
+         * @var 
+         */
+        public $hour;
+        /**
+         * Set the minute of the hour to start the snapshot (0-59), defaults to the
+         * top of the hour (0).
+         *
+         * @var 
+         */
+        public $minute;
+        /**
+         * The maximum number of Snapshots to keep for the hourly schedule
+         *
+         * @var 
+         */
+        public $snapshotsToKeep;
+        /**
+         * Set the day or days of the week to make a snapshot. Accepts a comma
+         * separated days of the week. Defaults to 'Sunday'.
+         *
+         * @param string $day
+         */
+        public function setDay($day)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDay()
+        {
+        }
+        public function setHour($hour)
+        {
+        }
+        public function getHour()
+        {
+        }
+        public function setMinute($minute)
+        {
+        }
+        public function getMinute()
+        {
+        }
+        public function setSnapshotsToKeep($snapshotsToKeep)
+        {
+        }
+        public function getSnapshotsToKeep()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * Set the day or days of the week to make a snapshot. Accepts a comma
-     * separated days of the week. Defaults to 'Sunday'.
-     *
-     * @var string
+     * Runtime class alias of \Google\Service\NetAppFiles\WeeklySchedule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public $day;
-    /**
-     * Set the hour to start the snapshot (0-23), defaults to midnight (0).
-     *
-     * @var 
-     */
-    public $hour;
-    /**
-     * Set the minute of the hour to start the snapshot (0-59), defaults to the
-     * top of the hour (0).
-     *
-     * @var 
-     */
-    public $minute;
-    /**
-     * The maximum number of Snapshots to keep for the hourly schedule
-     *
-     * @var 
-     */
-    public $snapshotsToKeep;
-    /**
-     * Set the day or days of the week to make a snapshot. Accepts a comma
-     * separated days of the week. Defaults to 'Sunday'.
-     *
-     * @param string $day
-     */
-    public function setDay($day)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDay()
-    {
-    }
-    public function setHour($hour)
-    {
-    }
-    public function getHour()
-    {
-    }
-    public function setMinute($minute)
-    {
-    }
-    public function getMinute()
-    {
-    }
-    public function setSnapshotsToKeep($snapshotsToKeep)
-    {
-    }
-    public function getSnapshotsToKeep()
+    class Google_Service_NetAppFiles_WeeklySchedule extends \Google\Service\NetAppFiles\WeeklySchedule
     {
     }
 }

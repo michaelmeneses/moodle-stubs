@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class LiveStreamHealthStatus extends \Google\Collection
-{
-    public const STATUS_good = 'good';
-    public const STATUS_ok = 'ok';
-    public const STATUS_bad = 'bad';
-    public const STATUS_noData = 'noData';
-    public const STATUS_revoked = 'revoked';
-    protected $collection_key = 'configurationIssues';
-    protected $configurationIssuesType = LiveStreamConfigurationIssue::class;
-    protected $configurationIssuesDataType = 'array';
-    /**
-     * The last time this status was updated (in seconds)
-     *
-     * @var string
-     */
-    public $lastUpdateTimeSeconds;
-    /**
-     * The status code of this stream
-     *
-     * @var string
-     */
-    public $status;
-    /**
-     * The configurations issues on this stream
-     *
-     * @param LiveStreamConfigurationIssue[] $configurationIssues
-     */
-    public function setConfigurationIssues($configurationIssues)
+namespace Google\Service\YouTube {
+    class LiveStreamHealthStatus extends \Google\Collection
     {
+        public const STATUS_good = 'good';
+        public const STATUS_ok = 'ok';
+        public const STATUS_bad = 'bad';
+        public const STATUS_noData = 'noData';
+        public const STATUS_revoked = 'revoked';
+        protected $collection_key = 'configurationIssues';
+        protected $configurationIssuesType = LiveStreamConfigurationIssue::class;
+        protected $configurationIssuesDataType = 'array';
+        /**
+         * The last time this status was updated (in seconds)
+         *
+         * @var string
+         */
+        public $lastUpdateTimeSeconds;
+        /**
+         * The status code of this stream
+         *
+         * @var string
+         */
+        public $status;
+        /**
+         * The configurations issues on this stream
+         *
+         * @param LiveStreamConfigurationIssue[] $configurationIssues
+         */
+        public function setConfigurationIssues($configurationIssues)
+        {
+        }
+        /**
+         * @return LiveStreamConfigurationIssue[]
+         */
+        public function getConfigurationIssues()
+        {
+        }
+        /**
+         * The last time this status was updated (in seconds)
+         *
+         * @param string $lastUpdateTimeSeconds
+         */
+        public function setLastUpdateTimeSeconds($lastUpdateTimeSeconds)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastUpdateTimeSeconds()
+        {
+        }
+        /**
+         * The status code of this stream
+         *
+         * Accepted values: good, ok, bad, noData, revoked
+         *
+         * @param self::STATUS_* $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return self::STATUS_*
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LiveStreamConfigurationIssue[]
+     * Runtime class alias of \Google\Service\YouTube\LiveStreamHealthStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfigurationIssues()
-    {
-    }
-    /**
-     * The last time this status was updated (in seconds)
-     *
-     * @param string $lastUpdateTimeSeconds
-     */
-    public function setLastUpdateTimeSeconds($lastUpdateTimeSeconds)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastUpdateTimeSeconds()
-    {
-    }
-    /**
-     * The status code of this stream
-     *
-     * Accepted values: good, ok, bad, noData, revoked
-     *
-     * @param self::STATUS_* $status
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return self::STATUS_*
-     */
-    public function getStatus()
+    class Google_Service_YouTube_LiveStreamHealthStatus extends \Google\Service\YouTube\LiveStreamHealthStatus
     {
     }
 }

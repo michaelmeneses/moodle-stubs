@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datalineage;
-
-class GoogleCloudDatacatalogLineageV1BatchSearchLinkProcessesResponse extends \Google\Collection
-{
-    protected $collection_key = 'processLinks';
-    /**
-     * The token to specify as `page_token` in the subsequent call to get the next
-     * page. Omitted if there are no more pages in the response.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $processLinksType = GoogleCloudDatacatalogLineageV1ProcessLinks::class;
-    protected $processLinksDataType = 'array';
-    /**
-     * The token to specify as `page_token` in the subsequent call to get the next
-     * page. Omitted if there are no more pages in the response.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Datalineage {
+    class GoogleCloudDatacatalogLineageV1BatchSearchLinkProcessesResponse extends \Google\Collection
     {
+        protected $collection_key = 'processLinks';
+        /**
+         * The token to specify as `page_token` in the subsequent call to get the next
+         * page. Omitted if there are no more pages in the response.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $processLinksType = GoogleCloudDatacatalogLineageV1ProcessLinks::class;
+        protected $processLinksDataType = 'array';
+        /**
+         * The token to specify as `page_token` in the subsequent call to get the next
+         * page. Omitted if there are no more pages in the response.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * An array of processes associated with the specified links.
+         *
+         * @param GoogleCloudDatacatalogLineageV1ProcessLinks[] $processLinks
+         */
+        public function setProcessLinks($processLinks)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogLineageV1ProcessLinks[]
+         */
+        public function getProcessLinks()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Datalineage\GoogleCloudDatacatalogLineageV1BatchSearchLinkProcessesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * An array of processes associated with the specified links.
-     *
-     * @param GoogleCloudDatacatalogLineageV1ProcessLinks[] $processLinks
-     */
-    public function setProcessLinks($processLinks)
-    {
-    }
-    /**
-     * @return GoogleCloudDatacatalogLineageV1ProcessLinks[]
-     */
-    public function getProcessLinks()
+    class Google_Service_Datalineage_GoogleCloudDatacatalogLineageV1BatchSearchLinkProcessesResponse extends \Google\Service\Datalineage\GoogleCloudDatacatalogLineageV1BatchSearchLinkProcessesResponse
     {
     }
 }

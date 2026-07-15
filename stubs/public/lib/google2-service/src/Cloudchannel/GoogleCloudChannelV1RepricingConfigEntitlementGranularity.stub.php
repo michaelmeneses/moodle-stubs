@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1RepricingConfigEntitlementGranularity extends \Google\Model
-{
-    /**
-     * Resource name of the entitlement. Format:
-     * accounts/{account_id}/customers/{customer_id}/entitlements/{entitlement_id}
-     *
-     * @var string
-     */
-    public $entitlement;
-    /**
-     * Resource name of the entitlement. Format:
-     * accounts/{account_id}/customers/{customer_id}/entitlements/{entitlement_id}
-     *
-     * @param string $entitlement
-     */
-    public function setEntitlement($entitlement)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1RepricingConfigEntitlementGranularity extends \Google\Model
     {
+        /**
+         * Resource name of the entitlement. Format:
+         * accounts/{account_id}/customers/{customer_id}/entitlements/{entitlement_id}
+         *
+         * @var string
+         */
+        public $entitlement;
+        /**
+         * Resource name of the entitlement. Format:
+         * accounts/{account_id}/customers/{customer_id}/entitlements/{entitlement_id}
+         *
+         * @param string $entitlement
+         */
+        public function setEntitlement($entitlement)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEntitlement()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1RepricingConfigEntitlementGranularity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntitlement()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1RepricingConfigEntitlementGranularity extends \Google\Service\Cloudchannel\GoogleCloudChannelV1RepricingConfigEntitlementGranularity
     {
     }
 }

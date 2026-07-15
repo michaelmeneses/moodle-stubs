@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Fitness;
-
-class Value extends \Google\Collection
-{
-    protected $collection_key = 'mapVal';
-    /**
-     * Floating point value. When this is set, other values must not be set.
-     *
-     * @var 
-     */
-    public $fpVal;
-    /**
-     * Integer value. When this is set, other values must not be set.
-     *
-     * @var int
-     */
-    public $intVal;
-    protected $mapValType = ValueMapValEntry::class;
-    protected $mapValDataType = 'array';
-    /**
-     * String value. When this is set, other values must not be set. Strings
-     * should be kept small whenever possible. Data streams with large string
-     * values and high data frequency may be down sampled.
-     *
-     * @var string
-     */
-    public $stringVal;
-    public function setFpVal($fpVal)
+namespace Google\Service\Fitness {
+    class Value extends \Google\Collection
     {
+        protected $collection_key = 'mapVal';
+        /**
+         * Floating point value. When this is set, other values must not be set.
+         *
+         * @var 
+         */
+        public $fpVal;
+        /**
+         * Integer value. When this is set, other values must not be set.
+         *
+         * @var int
+         */
+        public $intVal;
+        protected $mapValType = ValueMapValEntry::class;
+        protected $mapValDataType = 'array';
+        /**
+         * String value. When this is set, other values must not be set. Strings
+         * should be kept small whenever possible. Data streams with large string
+         * values and high data frequency may be down sampled.
+         *
+         * @var string
+         */
+        public $stringVal;
+        public function setFpVal($fpVal)
+        {
+        }
+        public function getFpVal()
+        {
+        }
+        /**
+         * Integer value. When this is set, other values must not be set.
+         *
+         * @param int $intVal
+         */
+        public function setIntVal($intVal)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getIntVal()
+        {
+        }
+        /**
+         * Map value. The valid key space and units for the corresponding value of
+         * each entry should be documented as part of the data type definition. Keys
+         * should be kept small whenever possible. Data streams with large keys and
+         * high data frequency may be down sampled.
+         *
+         * @param ValueMapValEntry[] $mapVal
+         */
+        public function setMapVal($mapVal)
+        {
+        }
+        /**
+         * @return ValueMapValEntry[]
+         */
+        public function getMapVal()
+        {
+        }
+        /**
+         * String value. When this is set, other values must not be set. Strings
+         * should be kept small whenever possible. Data streams with large string
+         * values and high data frequency may be down sampled.
+         *
+         * @param string $stringVal
+         */
+        public function setStringVal($stringVal)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStringVal()
+        {
+        }
     }
-    public function getFpVal()
-    {
-    }
+}
+namespace {
     /**
-     * Integer value. When this is set, other values must not be set.
-     *
-     * @param int $intVal
+     * Runtime class alias of \Google\Service\Fitness\Value registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setIntVal($intVal)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getIntVal()
-    {
-    }
-    /**
-     * Map value. The valid key space and units for the corresponding value of
-     * each entry should be documented as part of the data type definition. Keys
-     * should be kept small whenever possible. Data streams with large keys and
-     * high data frequency may be down sampled.
-     *
-     * @param ValueMapValEntry[] $mapVal
-     */
-    public function setMapVal($mapVal)
-    {
-    }
-    /**
-     * @return ValueMapValEntry[]
-     */
-    public function getMapVal()
-    {
-    }
-    /**
-     * String value. When this is set, other values must not be set. Strings
-     * should be kept small whenever possible. Data streams with large string
-     * values and high data frequency may be down sampled.
-     *
-     * @param string $stringVal
-     */
-    public function setStringVal($stringVal)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStringVal()
+    class Google_Service_Fitness_Value extends \Google\Service\Fitness\Value
     {
     }
 }

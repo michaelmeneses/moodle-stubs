@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastore;
-
-class ReadWrite extends \Google\Model
-{
-    /**
-     * The transaction identifier of the transaction being retried.
-     *
-     * @var string
-     */
-    public $previousTransaction;
-    /**
-     * The transaction identifier of the transaction being retried.
-     *
-     * @param string $previousTransaction
-     */
-    public function setPreviousTransaction($previousTransaction)
+namespace Google\Service\Datastore {
+    class ReadWrite extends \Google\Model
     {
+        /**
+         * The transaction identifier of the transaction being retried.
+         *
+         * @var string
+         */
+        public $previousTransaction;
+        /**
+         * The transaction identifier of the transaction being retried.
+         *
+         * @param string $previousTransaction
+         */
+        public function setPreviousTransaction($previousTransaction)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPreviousTransaction()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Datastore\ReadWrite registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPreviousTransaction()
+    class Google_Service_Datastore_ReadWrite extends \Google\Service\Datastore\ReadWrite
     {
     }
 }

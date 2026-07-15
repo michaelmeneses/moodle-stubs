@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceUsage;
-
-class GetServiceIdentityResponse extends \Google\Model
-{
-    /**
-     * Default service identity state. This value is used if the state is omitted.
-     */
-    public const STATE_IDENTITY_STATE_UNSPECIFIED = 'IDENTITY_STATE_UNSPECIFIED';
-    /**
-     * Service identity has been created and can be used.
-     */
-    public const STATE_ACTIVE = 'ACTIVE';
-    protected $identityType = ServiceIdentity::class;
-    protected $identityDataType = '';
-    /**
-     * Service identity state.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Service identity that service producer can use to access consumer
-     * resources. If exists is true, it contains email and unique_id. If exists is
-     * false, it contains pre-constructed email and empty unique_id.
-     *
-     * @param ServiceIdentity $identity
-     */
-    public function setIdentity(ServiceIdentity $identity)
+namespace Google\Service\ServiceUsage {
+    class GetServiceIdentityResponse extends \Google\Model
     {
+        /**
+         * Default service identity state. This value is used if the state is omitted.
+         */
+        public const STATE_IDENTITY_STATE_UNSPECIFIED = 'IDENTITY_STATE_UNSPECIFIED';
+        /**
+         * Service identity has been created and can be used.
+         */
+        public const STATE_ACTIVE = 'ACTIVE';
+        protected $identityType = ServiceIdentity::class;
+        protected $identityDataType = '';
+        /**
+         * Service identity state.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Service identity that service producer can use to access consumer
+         * resources. If exists is true, it contains email and unique_id. If exists is
+         * false, it contains pre-constructed email and empty unique_id.
+         *
+         * @param ServiceIdentity $identity
+         */
+        public function setIdentity(ServiceIdentity $identity)
+        {
+        }
+        /**
+         * @return ServiceIdentity
+         */
+        public function getIdentity()
+        {
+        }
+        /**
+         * Service identity state.
+         *
+         * Accepted values: IDENTITY_STATE_UNSPECIFIED, ACTIVE
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ServiceIdentity
+     * Runtime class alias of \Google\Service\ServiceUsage\GetServiceIdentityResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIdentity()
-    {
-    }
-    /**
-     * Service identity state.
-     *
-     * Accepted values: IDENTITY_STATE_UNSPECIFIED, ACTIVE
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
+    class Google_Service_ServiceUsage_GetServiceIdentityResponse extends \Google\Service\ServiceUsage\GetServiceIdentityResponse
     {
     }
 }

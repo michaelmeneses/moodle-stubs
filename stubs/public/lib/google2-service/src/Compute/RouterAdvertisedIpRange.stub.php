@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class RouterAdvertisedIpRange extends \Google\Model
-{
-    /**
-     * User-specified description for the IP range.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * The IP range to advertise. The value must be a CIDR-formatted string.
-     *
-     * @var string
-     */
-    public $range;
-    /**
-     * User-specified description for the IP range.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\Compute {
+    class RouterAdvertisedIpRange extends \Google\Model
     {
+        /**
+         * User-specified description for the IP range.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * The IP range to advertise. The value must be a CIDR-formatted string.
+         *
+         * @var string
+         */
+        public $range;
+        /**
+         * User-specified description for the IP range.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * The IP range to advertise. The value must be a CIDR-formatted string.
+         *
+         * @param string $range
+         */
+        public function setRange($range)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRange()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\RouterAdvertisedIpRange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * The IP range to advertise. The value must be a CIDR-formatted string.
-     *
-     * @param string $range
-     */
-    public function setRange($range)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRange()
+    class Google_Service_Compute_RouterAdvertisedIpRange extends \Google\Service\Compute\RouterAdvertisedIpRange
     {
     }
 }

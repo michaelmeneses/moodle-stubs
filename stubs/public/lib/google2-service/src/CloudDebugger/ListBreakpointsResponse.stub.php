@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDebugger;
-
-class ListBreakpointsResponse extends \Google\Collection
-{
-    protected $collection_key = 'breakpoints';
-    protected $breakpointsType = Breakpoint::class;
-    protected $breakpointsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $nextWaitToken;
-    /**
-     * @param Breakpoint[]
-     */
-    public function setBreakpoints($breakpoints)
+namespace Google\Service\CloudDebugger {
+    class ListBreakpointsResponse extends \Google\Collection
     {
+        protected $collection_key = 'breakpoints';
+        protected $breakpointsType = Breakpoint::class;
+        protected $breakpointsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $nextWaitToken;
+        /**
+         * @param Breakpoint[]
+         */
+        public function setBreakpoints($breakpoints)
+        {
+        }
+        /**
+         * @return Breakpoint[]
+         */
+        public function getBreakpoints()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNextWaitToken($nextWaitToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextWaitToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Breakpoint[]
+     * Runtime class alias of \Google\Service\CloudDebugger\ListBreakpointsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBreakpoints()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNextWaitToken($nextWaitToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextWaitToken()
+    class Google_Service_CloudDebugger_ListBreakpointsResponse extends \Google\Service\CloudDebugger\ListBreakpointsResponse
     {
     }
 }

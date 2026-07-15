@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class DistributionCut extends \Google\Model
-{
-    /**
-     * A monitoring filter (https://cloud.google.com/monitoring/api/v3/filters)
-     * specifying a TimeSeries aggregating values. Must have ValueType =
-     * DISTRIBUTION and MetricKind = DELTA or MetricKind = CUMULATIVE.
-     *
-     * @var string
-     */
-    public $distributionFilter;
-    protected $rangeType = GoogleMonitoringV3Range::class;
-    protected $rangeDataType = '';
-    /**
-     * A monitoring filter (https://cloud.google.com/monitoring/api/v3/filters)
-     * specifying a TimeSeries aggregating values. Must have ValueType =
-     * DISTRIBUTION and MetricKind = DELTA or MetricKind = CUMULATIVE.
-     *
-     * @param string $distributionFilter
-     */
-    public function setDistributionFilter($distributionFilter)
+namespace Google\Service\Monitoring {
+    class DistributionCut extends \Google\Model
     {
+        /**
+         * A monitoring filter (https://cloud.google.com/monitoring/api/v3/filters)
+         * specifying a TimeSeries aggregating values. Must have ValueType =
+         * DISTRIBUTION and MetricKind = DELTA or MetricKind = CUMULATIVE.
+         *
+         * @var string
+         */
+        public $distributionFilter;
+        protected $rangeType = GoogleMonitoringV3Range::class;
+        protected $rangeDataType = '';
+        /**
+         * A monitoring filter (https://cloud.google.com/monitoring/api/v3/filters)
+         * specifying a TimeSeries aggregating values. Must have ValueType =
+         * DISTRIBUTION and MetricKind = DELTA or MetricKind = CUMULATIVE.
+         *
+         * @param string $distributionFilter
+         */
+        public function setDistributionFilter($distributionFilter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDistributionFilter()
+        {
+        }
+        /**
+         * Range of values considered "good." For a one-sided range, set one bound to
+         * an infinite value.
+         *
+         * @param GoogleMonitoringV3Range $range
+         */
+        public function setRange(GoogleMonitoringV3Range $range)
+        {
+        }
+        /**
+         * @return GoogleMonitoringV3Range
+         */
+        public function getRange()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Monitoring\DistributionCut registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDistributionFilter()
-    {
-    }
-    /**
-     * Range of values considered "good." For a one-sided range, set one bound to
-     * an infinite value.
-     *
-     * @param GoogleMonitoringV3Range $range
-     */
-    public function setRange(GoogleMonitoringV3Range $range)
-    {
-    }
-    /**
-     * @return GoogleMonitoringV3Range
-     */
-    public function getRange()
+    class Google_Service_Monitoring_DistributionCut extends \Google\Service\Monitoring\DistributionCut
     {
     }
 }

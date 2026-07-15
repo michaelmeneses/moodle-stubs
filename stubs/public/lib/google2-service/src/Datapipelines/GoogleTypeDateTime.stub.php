@@ -21,150 +21,159 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datapipelines;
-
-class GoogleTypeDateTime extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $day;
-    /**
-     * @var int
-     */
-    public $hours;
-    /**
-     * @var int
-     */
-    public $minutes;
-    /**
-     * @var int
-     */
-    public $month;
-    /**
-     * @var int
-     */
-    public $nanos;
-    /**
-     * @var int
-     */
-    public $seconds;
-    protected $timeZoneType = GoogleTypeTimeZone::class;
-    protected $timeZoneDataType = '';
-    /**
-     * @var string
-     */
-    public $utcOffset;
-    /**
-     * @var int
-     */
-    public $year;
-    /**
-     * @param int
-     */
-    public function setDay($day)
+namespace Google\Service\Datapipelines {
+    class GoogleTypeDateTime extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $day;
+        /**
+         * @var int
+         */
+        public $hours;
+        /**
+         * @var int
+         */
+        public $minutes;
+        /**
+         * @var int
+         */
+        public $month;
+        /**
+         * @var int
+         */
+        public $nanos;
+        /**
+         * @var int
+         */
+        public $seconds;
+        protected $timeZoneType = GoogleTypeTimeZone::class;
+        protected $timeZoneDataType = '';
+        /**
+         * @var string
+         */
+        public $utcOffset;
+        /**
+         * @var int
+         */
+        public $year;
+        /**
+         * @param int
+         */
+        public function setDay($day)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getDay()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setHours($hours)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getHours()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setMinutes($minutes)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMinutes()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setMonth($month)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMonth()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setNanos($nanos)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNanos()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setSeconds($seconds)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSeconds()
+        {
+        }
+        /**
+         * @param GoogleTypeTimeZone
+         */
+        public function setTimeZone(GoogleTypeTimeZone $timeZone)
+        {
+        }
+        /**
+         * @return GoogleTypeTimeZone
+         */
+        public function getTimeZone()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUtcOffset($utcOffset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUtcOffset()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setYear($year)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getYear()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Datapipelines\GoogleTypeDateTime registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDay()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setHours($hours)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getHours()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setMinutes($minutes)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMinutes()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setMonth($month)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMonth()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setNanos($nanos)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNanos()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setSeconds($seconds)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSeconds()
-    {
-    }
-    /**
-     * @param GoogleTypeTimeZone
-     */
-    public function setTimeZone(GoogleTypeTimeZone $timeZone)
-    {
-    }
-    /**
-     * @return GoogleTypeTimeZone
-     */
-    public function getTimeZone()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUtcOffset($utcOffset)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUtcOffset()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setYear($year)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getYear()
+    class Google_Service_Datapipelines_GoogleTypeDateTime extends \Google\Service\Datapipelines\GoogleTypeDateTime
     {
     }
 }

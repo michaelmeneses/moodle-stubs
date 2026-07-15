@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PlayableLocations;
-
-class GoogleMapsPlayablelocationsV3SampleCriterion extends \Google\Model
-{
-    public $fieldsToReturn;
-    protected $filterType = GoogleMapsPlayablelocationsV3SampleFilter::class;
-    protected $filterDataType = '';
-    public $gameObjectType;
-    public function setFieldsToReturn($fieldsToReturn)
+namespace Google\Service\PlayableLocations {
+    class GoogleMapsPlayablelocationsV3SampleCriterion extends \Google\Model
     {
+        public $fieldsToReturn;
+        protected $filterType = GoogleMapsPlayablelocationsV3SampleFilter::class;
+        protected $filterDataType = '';
+        public $gameObjectType;
+        public function setFieldsToReturn($fieldsToReturn)
+        {
+        }
+        public function getFieldsToReturn()
+        {
+        }
+        /**
+         * @param GoogleMapsPlayablelocationsV3SampleFilter
+         */
+        public function setFilter(GoogleMapsPlayablelocationsV3SampleFilter $filter)
+        {
+        }
+        /**
+         * @return GoogleMapsPlayablelocationsV3SampleFilter
+         */
+        public function getFilter()
+        {
+        }
+        public function setGameObjectType($gameObjectType)
+        {
+        }
+        public function getGameObjectType()
+        {
+        }
     }
-    public function getFieldsToReturn()
-    {
-    }
+}
+namespace {
     /**
-     * @param GoogleMapsPlayablelocationsV3SampleFilter
+     * Runtime class alias of \Google\Service\PlayableLocations\GoogleMapsPlayablelocationsV3SampleCriterion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setFilter(GoogleMapsPlayablelocationsV3SampleFilter $filter)
-    {
-    }
-    /**
-     * @return GoogleMapsPlayablelocationsV3SampleFilter
-     */
-    public function getFilter()
-    {
-    }
-    public function setGameObjectType($gameObjectType)
-    {
-    }
-    public function getGameObjectType()
+    class Google_Service_PlayableLocations_GoogleMapsPlayablelocationsV3SampleCriterion extends \Google\Service\PlayableLocations\GoogleMapsPlayablelocationsV3SampleCriterion
     {
     }
 }

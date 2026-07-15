@@ -21,59 +21,68 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class Histogram extends \Google\Collection
-{
-    protected $collection_key = 'bucketCounts';
-    /**
-     * Counts of values in each bucket. For efficiency, prefix and trailing
-     * buckets with count = 0 are elided. Buckets can store the full range of
-     * values of an unsigned long, with ULLONG_MAX falling into the 59th bucket
-     * with range [1e19, 2e19).
-     *
-     * @var string[]
-     */
-    public $bucketCounts;
-    /**
-     * Starting index of first stored bucket. The non-inclusive upper-bound of the
-     * ith bucket is given by: pow(10,(i-first_bucket_offset)/3) *
-     * (1,2,5)[(i-first_bucket_offset)%3]
-     *
-     * @var int
-     */
-    public $firstBucketOffset;
-    /**
-     * Counts of values in each bucket. For efficiency, prefix and trailing
-     * buckets with count = 0 are elided. Buckets can store the full range of
-     * values of an unsigned long, with ULLONG_MAX falling into the 59th bucket
-     * with range [1e19, 2e19).
-     *
-     * @param string[] $bucketCounts
-     */
-    public function setBucketCounts($bucketCounts)
+namespace Google\Service\Dataflow {
+    class Histogram extends \Google\Collection
     {
+        protected $collection_key = 'bucketCounts';
+        /**
+         * Counts of values in each bucket. For efficiency, prefix and trailing
+         * buckets with count = 0 are elided. Buckets can store the full range of
+         * values of an unsigned long, with ULLONG_MAX falling into the 59th bucket
+         * with range [1e19, 2e19).
+         *
+         * @var string[]
+         */
+        public $bucketCounts;
+        /**
+         * Starting index of first stored bucket. The non-inclusive upper-bound of the
+         * ith bucket is given by: pow(10,(i-first_bucket_offset)/3) *
+         * (1,2,5)[(i-first_bucket_offset)%3]
+         *
+         * @var int
+         */
+        public $firstBucketOffset;
+        /**
+         * Counts of values in each bucket. For efficiency, prefix and trailing
+         * buckets with count = 0 are elided. Buckets can store the full range of
+         * values of an unsigned long, with ULLONG_MAX falling into the 59th bucket
+         * with range [1e19, 2e19).
+         *
+         * @param string[] $bucketCounts
+         */
+        public function setBucketCounts($bucketCounts)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getBucketCounts()
+        {
+        }
+        /**
+         * Starting index of first stored bucket. The non-inclusive upper-bound of the
+         * ith bucket is given by: pow(10,(i-first_bucket_offset)/3) *
+         * (1,2,5)[(i-first_bucket_offset)%3]
+         *
+         * @param int $firstBucketOffset
+         */
+        public function setFirstBucketOffset($firstBucketOffset)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getFirstBucketOffset()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Dataflow\Histogram registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBucketCounts()
-    {
-    }
-    /**
-     * Starting index of first stored bucket. The non-inclusive upper-bound of the
-     * ith bucket is given by: pow(10,(i-first_bucket_offset)/3) *
-     * (1,2,5)[(i-first_bucket_offset)%3]
-     *
-     * @param int $firstBucketOffset
-     */
-    public function setFirstBucketOffset($firstBucketOffset)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getFirstBucketOffset()
+    class Google_Service_Dataflow_Histogram extends \Google\Service\Dataflow\Histogram
     {
     }
 }

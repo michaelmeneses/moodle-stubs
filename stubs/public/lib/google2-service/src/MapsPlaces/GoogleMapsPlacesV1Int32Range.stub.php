@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MapsPlaces;
-
-class GoogleMapsPlacesV1Int32Range extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $max;
-    /**
-     * @var int
-     */
-    public $min;
-    /**
-     * @param int
-     */
-    public function setMax($max)
+namespace Google\Service\MapsPlaces {
+    class GoogleMapsPlacesV1Int32Range extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $max;
+        /**
+         * @var int
+         */
+        public $min;
+        /**
+         * @param int
+         */
+        public function setMax($max)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMax()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setMin($min)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMin()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\MapsPlaces\GoogleMapsPlacesV1Int32Range registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMax()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setMin($min)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMin()
+    class Google_Service_MapsPlaces_GoogleMapsPlacesV1Int32Range extends \Google\Service\MapsPlaces\GoogleMapsPlacesV1Int32Range
     {
     }
 }

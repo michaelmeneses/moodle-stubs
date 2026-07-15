@@ -21,59 +21,68 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1TaggedEntry extends \Google\Collection
-{
-    protected $collection_key = 'presentTags';
-    protected $absentTagsType = GoogleCloudDatacatalogV1Tag::class;
-    protected $absentTagsDataType = 'array';
-    protected $presentTagsType = GoogleCloudDatacatalogV1Tag::class;
-    protected $presentTagsDataType = 'array';
-    protected $v1EntryType = GoogleCloudDatacatalogV1Entry::class;
-    protected $v1EntryDataType = '';
-    /**
-     * Optional. Tags that should be deleted from the Data Catalog. Caller should
-     * populate template name and column only.
-     *
-     * @param GoogleCloudDatacatalogV1Tag[] $absentTags
-     */
-    public function setAbsentTags($absentTags)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1TaggedEntry extends \Google\Collection
     {
+        protected $collection_key = 'presentTags';
+        protected $absentTagsType = GoogleCloudDatacatalogV1Tag::class;
+        protected $absentTagsDataType = 'array';
+        protected $presentTagsType = GoogleCloudDatacatalogV1Tag::class;
+        protected $presentTagsDataType = 'array';
+        protected $v1EntryType = GoogleCloudDatacatalogV1Entry::class;
+        protected $v1EntryDataType = '';
+        /**
+         * Optional. Tags that should be deleted from the Data Catalog. Caller should
+         * populate template name and column only.
+         *
+         * @param GoogleCloudDatacatalogV1Tag[] $absentTags
+         */
+        public function setAbsentTags($absentTags)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1Tag[]
+         */
+        public function getAbsentTags()
+        {
+        }
+        /**
+         * Optional. Tags that should be ingested into the Data Catalog. Caller should
+         * populate template name, column and fields.
+         *
+         * @param GoogleCloudDatacatalogV1Tag[] $presentTags
+         */
+        public function setPresentTags($presentTags)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1Tag[]
+         */
+        public function getPresentTags()
+        {
+        }
+        /**
+         * Non-encrypted Data Catalog v1 Entry.
+         *
+         * @param GoogleCloudDatacatalogV1Entry $v1Entry
+         */
+        public function setV1Entry(GoogleCloudDatacatalogV1Entry $v1Entry)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1Entry
+         */
+        public function getV1Entry()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatacatalogV1Tag[]
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1TaggedEntry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAbsentTags()
-    {
-    }
-    /**
-     * Optional. Tags that should be ingested into the Data Catalog. Caller should
-     * populate template name, column and fields.
-     *
-     * @param GoogleCloudDatacatalogV1Tag[] $presentTags
-     */
-    public function setPresentTags($presentTags)
-    {
-    }
-    /**
-     * @return GoogleCloudDatacatalogV1Tag[]
-     */
-    public function getPresentTags()
-    {
-    }
-    /**
-     * Non-encrypted Data Catalog v1 Entry.
-     *
-     * @param GoogleCloudDatacatalogV1Entry $v1Entry
-     */
-    public function setV1Entry(GoogleCloudDatacatalogV1Entry $v1Entry)
-    {
-    }
-    /**
-     * @return GoogleCloudDatacatalogV1Entry
-     */
-    public function getV1Entry()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1TaggedEntry extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1TaggedEntry
     {
     }
 }

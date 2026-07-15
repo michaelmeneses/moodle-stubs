@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class VideoAbuseReportReason extends \Google\Model
-{
-    /**
-     * Etag of this resource.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * The ID of this abuse report reason.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * `"youtube#videoAbuseReportReason"`.
-     *
-     * @var string
-     */
-    public $kind;
-    protected $snippetType = VideoAbuseReportReasonSnippet::class;
-    protected $snippetDataType = '';
-    /**
-     * Etag of this resource.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
+namespace Google\Service\YouTube {
+    class VideoAbuseReportReason extends \Google\Model
     {
+        /**
+         * Etag of this resource.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * The ID of this abuse report reason.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * `"youtube#videoAbuseReportReason"`.
+         *
+         * @var string
+         */
+        public $kind;
+        protected $snippetType = VideoAbuseReportReasonSnippet::class;
+        protected $snippetDataType = '';
+        /**
+         * Etag of this resource.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * The ID of this abuse report reason.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * `"youtube#videoAbuseReportReason"`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The `snippet` object contains basic details about the abuse report reason.
+         *
+         * @param VideoAbuseReportReasonSnippet $snippet
+         */
+        public function setSnippet(VideoAbuseReportReasonSnippet $snippet)
+        {
+        }
+        /**
+         * @return VideoAbuseReportReasonSnippet
+         */
+        public function getSnippet()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\VideoAbuseReportReason registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
-    {
-    }
-    /**
-     * The ID of this abuse report reason.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * `"youtube#videoAbuseReportReason"`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The `snippet` object contains basic details about the abuse report reason.
-     *
-     * @param VideoAbuseReportReasonSnippet $snippet
-     */
-    public function setSnippet(VideoAbuseReportReasonSnippet $snippet)
-    {
-    }
-    /**
-     * @return VideoAbuseReportReasonSnippet
-     */
-    public function getSnippet()
+    class Google_Service_YouTube_VideoAbuseReportReason extends \Google\Service\YouTube\VideoAbuseReportReason
     {
     }
 }

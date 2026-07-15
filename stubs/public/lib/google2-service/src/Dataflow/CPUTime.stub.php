@@ -21,63 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class CPUTime extends \Google\Model
-{
-    /**
-     * Average CPU utilization rate (% non-idle cpu / second) since previous
-     * sample.
-     *
-     * @var 
-     */
-    public $rate;
-    /**
-     * Timestamp of the measurement.
-     *
-     * @var string
-     */
-    public $timestamp;
-    /**
-     * Total active CPU time across all cores (ie., non-idle) in milliseconds
-     * since start-up.
-     *
-     * @var string
-     */
-    public $totalMs;
-    public function setRate($rate)
+namespace Google\Service\Dataflow {
+    class CPUTime extends \Google\Model
     {
+        /**
+         * Average CPU utilization rate (% non-idle cpu / second) since previous
+         * sample.
+         *
+         * @var 
+         */
+        public $rate;
+        /**
+         * Timestamp of the measurement.
+         *
+         * @var string
+         */
+        public $timestamp;
+        /**
+         * Total active CPU time across all cores (ie., non-idle) in milliseconds
+         * since start-up.
+         *
+         * @var string
+         */
+        public $totalMs;
+        public function setRate($rate)
+        {
+        }
+        public function getRate()
+        {
+        }
+        /**
+         * Timestamp of the measurement.
+         *
+         * @param string $timestamp
+         */
+        public function setTimestamp($timestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimestamp()
+        {
+        }
+        /**
+         * Total active CPU time across all cores (ie., non-idle) in milliseconds
+         * since start-up.
+         *
+         * @param string $totalMs
+         */
+        public function setTotalMs($totalMs)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalMs()
+        {
+        }
     }
-    public function getRate()
-    {
-    }
+}
+namespace {
     /**
-     * Timestamp of the measurement.
-     *
-     * @param string $timestamp
+     * Runtime class alias of \Google\Service\Dataflow\CPUTime registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setTimestamp($timestamp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimestamp()
-    {
-    }
-    /**
-     * Total active CPU time across all cores (ie., non-idle) in milliseconds
-     * since start-up.
-     *
-     * @param string $totalMs
-     */
-    public function setTotalMs($totalMs)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalMs()
+    class Google_Service_Dataflow_CPUTime extends \Google\Service\Dataflow\CPUTime
     {
     }
 }

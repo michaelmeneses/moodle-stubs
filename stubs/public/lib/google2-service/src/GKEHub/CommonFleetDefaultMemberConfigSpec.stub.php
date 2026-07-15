@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class CommonFleetDefaultMemberConfigSpec extends \Google\Model
-{
-    protected $configmanagementType = ConfigManagementMembershipSpec::class;
-    protected $configmanagementDataType = '';
-    protected $identityserviceType = IdentityServiceMembershipSpec::class;
-    protected $identityserviceDataType = '';
-    protected $meshType = ServiceMeshMembershipSpec::class;
-    protected $meshDataType = '';
-    protected $policycontrollerType = PolicyControllerMembershipSpec::class;
-    protected $policycontrollerDataType = '';
-    /**
-     * @param ConfigManagementMembershipSpec
-     */
-    public function setConfigmanagement(ConfigManagementMembershipSpec $configmanagement)
+namespace Google\Service\GKEHub {
+    class CommonFleetDefaultMemberConfigSpec extends \Google\Model
     {
+        protected $configmanagementType = ConfigManagementMembershipSpec::class;
+        protected $configmanagementDataType = '';
+        protected $identityserviceType = IdentityServiceMembershipSpec::class;
+        protected $identityserviceDataType = '';
+        protected $meshType = ServiceMeshMembershipSpec::class;
+        protected $meshDataType = '';
+        protected $policycontrollerType = PolicyControllerMembershipSpec::class;
+        protected $policycontrollerDataType = '';
+        /**
+         * @param ConfigManagementMembershipSpec
+         */
+        public function setConfigmanagement(ConfigManagementMembershipSpec $configmanagement)
+        {
+        }
+        /**
+         * @return ConfigManagementMembershipSpec
+         */
+        public function getConfigmanagement()
+        {
+        }
+        /**
+         * @param IdentityServiceMembershipSpec
+         */
+        public function setIdentityservice(IdentityServiceMembershipSpec $identityservice)
+        {
+        }
+        /**
+         * @return IdentityServiceMembershipSpec
+         */
+        public function getIdentityservice()
+        {
+        }
+        /**
+         * @param ServiceMeshMembershipSpec
+         */
+        public function setMesh(ServiceMeshMembershipSpec $mesh)
+        {
+        }
+        /**
+         * @return ServiceMeshMembershipSpec
+         */
+        public function getMesh()
+        {
+        }
+        /**
+         * @param PolicyControllerMembershipSpec
+         */
+        public function setPolicycontroller(PolicyControllerMembershipSpec $policycontroller)
+        {
+        }
+        /**
+         * @return PolicyControllerMembershipSpec
+         */
+        public function getPolicycontroller()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ConfigManagementMembershipSpec
+     * Runtime class alias of \Google\Service\GKEHub\CommonFleetDefaultMemberConfigSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfigmanagement()
-    {
-    }
-    /**
-     * @param IdentityServiceMembershipSpec
-     */
-    public function setIdentityservice(IdentityServiceMembershipSpec $identityservice)
-    {
-    }
-    /**
-     * @return IdentityServiceMembershipSpec
-     */
-    public function getIdentityservice()
-    {
-    }
-    /**
-     * @param ServiceMeshMembershipSpec
-     */
-    public function setMesh(ServiceMeshMembershipSpec $mesh)
-    {
-    }
-    /**
-     * @return ServiceMeshMembershipSpec
-     */
-    public function getMesh()
-    {
-    }
-    /**
-     * @param PolicyControllerMembershipSpec
-     */
-    public function setPolicycontroller(PolicyControllerMembershipSpec $policycontroller)
-    {
-    }
-    /**
-     * @return PolicyControllerMembershipSpec
-     */
-    public function getPolicycontroller()
+    class Google_Service_GKEHub_CommonFleetDefaultMemberConfigSpec extends \Google\Service\GKEHub\CommonFleetDefaultMemberConfigSpec
     {
     }
 }

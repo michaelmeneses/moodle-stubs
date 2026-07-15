@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_question\local\bank;
 
+use core\context;
+use core_course\cm_info;
+use JsonSerializable;
 /**
  * Data class to hold bank info and categories, and return them with formatted names for output.
  *

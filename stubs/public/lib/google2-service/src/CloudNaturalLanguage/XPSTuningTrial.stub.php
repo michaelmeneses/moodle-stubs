@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSTuningTrial extends \Google\Model
-{
-    protected $modelStructureType = XPSTablesModelStructure::class;
-    protected $modelStructureDataType = '';
-    protected $trainingObjectivePointType = XPSTrainingObjectivePoint::class;
-    protected $trainingObjectivePointDataType = '';
-    /**
-     * Model parameters for the trial.
-     *
-     * @param XPSTablesModelStructure $modelStructure
-     */
-    public function setModelStructure(XPSTablesModelStructure $modelStructure)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSTuningTrial extends \Google\Model
     {
+        protected $modelStructureType = XPSTablesModelStructure::class;
+        protected $modelStructureDataType = '';
+        protected $trainingObjectivePointType = XPSTrainingObjectivePoint::class;
+        protected $trainingObjectivePointDataType = '';
+        /**
+         * Model parameters for the trial.
+         *
+         * @param XPSTablesModelStructure $modelStructure
+         */
+        public function setModelStructure(XPSTablesModelStructure $modelStructure)
+        {
+        }
+        /**
+         * @return XPSTablesModelStructure
+         */
+        public function getModelStructure()
+        {
+        }
+        /**
+         * The optimization objective evaluation of the eval split data.
+         *
+         * @param XPSTrainingObjectivePoint $trainingObjectivePoint
+         */
+        public function setTrainingObjectivePoint(XPSTrainingObjectivePoint $trainingObjectivePoint)
+        {
+        }
+        /**
+         * @return XPSTrainingObjectivePoint
+         */
+        public function getTrainingObjectivePoint()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return XPSTablesModelStructure
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSTuningTrial registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getModelStructure()
-    {
-    }
-    /**
-     * The optimization objective evaluation of the eval split data.
-     *
-     * @param XPSTrainingObjectivePoint $trainingObjectivePoint
-     */
-    public function setTrainingObjectivePoint(XPSTrainingObjectivePoint $trainingObjectivePoint)
-    {
-    }
-    /**
-     * @return XPSTrainingObjectivePoint
-     */
-    public function getTrainingObjectivePoint()
+    class Google_Service_CloudNaturalLanguage_XPSTuningTrial extends \Google\Service\CloudNaturalLanguage\XPSTuningTrial
     {
     }
 }

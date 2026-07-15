@@ -21,71 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChecksService\Resource;
-
-/**
- * The "privacyPolicies" collection of methods.
- * Typical usage is:
- *  <code>
- *   $checksService = new Google\Service\ChecksService(...);
- *   $privacyPolicies = $checksService->projects_privacyPolicies;
- *  </code>
- */
-class ProjectsPrivacyPolicies extends \Google\Service\Resource
-{
+namespace Google\Service\ChecksService\Resource {
+    use Google\Service\ChecksService\ChecksEmpty;
+    use Google\Service\ChecksService\FindPrivacyPolicyRequest;
+    use Google\Service\ChecksService\ListPrivacyPoliciesResponse;
+    use Google\Service\ChecksService\Operation;
+    use Google\Service\ChecksService\PrivacyPolicy;
     /**
-     * Deletes a privacy policy. (privacyPolicies.delete)
-     *
-     * @param string $name Required. Resource name of the privacy policy.
-     * @param array $optParams Optional parameters.
-     * @return ChecksEmpty
+     * The "privacyPolicies" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $checksService = new Google\Service\ChecksService(...);
+     *   $privacyPolicies = $checksService->projects_privacyPolicies;
+     *  </code>
      */
-    public function delete($name, $optParams = [])
+    class ProjectsPrivacyPolicies extends \Google\Service\Resource
     {
+        /**
+         * Deletes a privacy policy. (privacyPolicies.delete)
+         *
+         * @param string $name Required. Resource name of the privacy policy.
+         * @param array $optParams Optional parameters.
+         * @return ChecksEmpty
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Finds the privacy policy of a given website. (privacyPolicies.find)
+         *
+         * @param string $parent Required. Resource name of the GCP project to which
+         * PrivacyPolicy resources will be added, in the format:
+         * `projects/{projectNumber}`.
+         * @param FindPrivacyPolicyRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         */
+        public function find($parent, FindPrivacyPolicyRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Gets a privacy policy. (privacyPolicies.get)
+         *
+         * @param string $name Required. Resource name of the privacy policy.
+         * @param array $optParams Optional parameters.
+         * @return PrivacyPolicy
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists privacy policies. (privacyPolicies.listProjectsPrivacyPolicies)
+         *
+         * @param string $parent Required. Resource name of the parent project, in the
+         * format `projects/{projectNumber}`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Optional. A filter string to filters results. The
+         * filter syntax is defined by AIP-160 (https://google.aip.dev/160).
+         * @opt_param int pageSize Optional. The maximum number of results to return. If
+         * unspecified, at most 50 results will be returned. The maximum value is 1000;
+         * values above 1000 will be coerced to 1000.
+         * @opt_param string pageToken Optional. A page token, received from a previous
+         * `ListPrivacyPoliciesRequest` call. Provide this to retrieve the subsequent
+         * page. When paginating, all other parameters provided to
+         * `ListPrivacyPoliciesRequest` must match the call that provided the page
+         * token.
+         * @return ListPrivacyPoliciesResponse
+         */
+        public function listProjectsPrivacyPolicies($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Finds the privacy policy of a given website. (privacyPolicies.find)
-     *
-     * @param string $parent Required. Resource name of the GCP project to which
-     * PrivacyPolicy resources will be added, in the format:
-     * `projects/{projectNumber}`.
-     * @param FindPrivacyPolicyRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Operation
+     * Runtime class alias of \Google\Service\ChecksService\Resource\ProjectsPrivacyPolicies registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function find($parent, FindPrivacyPolicyRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Gets a privacy policy. (privacyPolicies.get)
-     *
-     * @param string $name Required. Resource name of the privacy policy.
-     * @param array $optParams Optional parameters.
-     * @return PrivacyPolicy
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists privacy policies. (privacyPolicies.listProjectsPrivacyPolicies)
-     *
-     * @param string $parent Required. Resource name of the parent project, in the
-     * format `projects/{projectNumber}`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Optional. A filter string to filters results. The
-     * filter syntax is defined by AIP-160 (https://google.aip.dev/160).
-     * @opt_param int pageSize Optional. The maximum number of results to return. If
-     * unspecified, at most 50 results will be returned. The maximum value is 1000;
-     * values above 1000 will be coerced to 1000.
-     * @opt_param string pageToken Optional. A page token, received from a previous
-     * `ListPrivacyPoliciesRequest` call. Provide this to retrieve the subsequent
-     * page. When paginating, all other parameters provided to
-     * `ListPrivacyPoliciesRequest` must match the call that provided the page
-     * token.
-     * @return ListPrivacyPoliciesResponse
-     */
-    public function listProjectsPrivacyPolicies($parent, $optParams = [])
+    class Google_Service_ChecksService_Resource_ProjectsPrivacyPolicies extends \Google\Service\ChecksService\Resource\ProjectsPrivacyPolicies
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecureSourceManager;
-
-class CreatePullRequestCommentRequest extends \Google\Model
-{
-    /**
-     * Required. The pull request in which to create the pull request comment.
-     * Format: `projects/{project_number}/locations/{location_id}/repositories/{re
-     * pository_id}/pullRequests/{pull_request_id}`
-     *
-     * @var string
-     */
-    public $parent;
-    protected $pullRequestCommentType = PullRequestComment::class;
-    protected $pullRequestCommentDataType = '';
-    /**
-     * Required. The pull request in which to create the pull request comment.
-     * Format: `projects/{project_number}/locations/{location_id}/repositories/{re
-     * pository_id}/pullRequests/{pull_request_id}`
-     *
-     * @param string $parent
-     */
-    public function setParent($parent)
+namespace Google\Service\SecureSourceManager {
+    class CreatePullRequestCommentRequest extends \Google\Model
     {
+        /**
+         * Required. The pull request in which to create the pull request comment.
+         * Format: `projects/{project_number}/locations/{location_id}/repositories/{re
+         * pository_id}/pullRequests/{pull_request_id}`
+         *
+         * @var string
+         */
+        public $parent;
+        protected $pullRequestCommentType = PullRequestComment::class;
+        protected $pullRequestCommentDataType = '';
+        /**
+         * Required. The pull request in which to create the pull request comment.
+         * Format: `projects/{project_number}/locations/{location_id}/repositories/{re
+         * pository_id}/pullRequests/{pull_request_id}`
+         *
+         * @param string $parent
+         */
+        public function setParent($parent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParent()
+        {
+        }
+        /**
+         * Required. The pull request comment to create.
+         *
+         * @param PullRequestComment $pullRequestComment
+         */
+        public function setPullRequestComment(PullRequestComment $pullRequestComment)
+        {
+        }
+        /**
+         * @return PullRequestComment
+         */
+        public function getPullRequestComment()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecureSourceManager\CreatePullRequestCommentRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getParent()
-    {
-    }
-    /**
-     * Required. The pull request comment to create.
-     *
-     * @param PullRequestComment $pullRequestComment
-     */
-    public function setPullRequestComment(PullRequestComment $pullRequestComment)
-    {
-    }
-    /**
-     * @return PullRequestComment
-     */
-    public function getPullRequestComment()
+    class Google_Service_SecureSourceManager_CreatePullRequestCommentRequest extends \Google\Service\SecureSourceManager\CreatePullRequestCommentRequest
     {
     }
 }

@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PaymentsResellerSubscription;
-
-class GoogleCloudPaymentsResellerSubscriptionV1FindEligiblePromotionsRequest extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $filter;
-    /**
-     * @var int
-     */
-    public $pageSize;
-    /**
-     * @var string
-     */
-    public $pageToken;
-    /**
-     * @param string
-     */
-    public function setFilter($filter)
+namespace Google\Service\PaymentsResellerSubscription {
+    class GoogleCloudPaymentsResellerSubscriptionV1FindEligiblePromotionsRequest extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $filter;
+        /**
+         * @var int
+         */
+        public $pageSize;
+        /**
+         * @var string
+         */
+        public $pageToken;
+        /**
+         * @param string
+         */
+        public function setFilter($filter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilter()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setPageSize($pageSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPageSize()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPageToken($pageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1FindEligiblePromotionsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFilter()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setPageSize($pageSize)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPageSize()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPageToken($pageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPageToken()
+    class Google_Service_PaymentsResellerSubscription_GoogleCloudPaymentsResellerSubscriptionV1FindEligiblePromotionsRequest extends \Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1FindEligiblePromotionsRequest
     {
     }
 }

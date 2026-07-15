@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecommendationsAI;
-
-class GoogleCloudRecommendationengineV1beta1Catalog extends \Google\Model
-{
-    protected $catalogItemLevelConfigType = GoogleCloudRecommendationengineV1beta1CatalogItemLevelConfig::class;
-    protected $catalogItemLevelConfigDataType = '';
-    /**
-     * Required. The ID of the default event store.
-     *
-     * @var string
-     */
-    public $defaultEventStoreId;
-    /**
-     * Required. The catalog display name.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The fully qualified resource name of the catalog.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. The catalog item level configuration.
-     *
-     * @param GoogleCloudRecommendationengineV1beta1CatalogItemLevelConfig $catalogItemLevelConfig
-     */
-    public function setCatalogItemLevelConfig(GoogleCloudRecommendationengineV1beta1CatalogItemLevelConfig $catalogItemLevelConfig)
+namespace Google\Service\RecommendationsAI {
+    class GoogleCloudRecommendationengineV1beta1Catalog extends \Google\Model
     {
+        protected $catalogItemLevelConfigType = GoogleCloudRecommendationengineV1beta1CatalogItemLevelConfig::class;
+        protected $catalogItemLevelConfigDataType = '';
+        /**
+         * Required. The ID of the default event store.
+         *
+         * @var string
+         */
+        public $defaultEventStoreId;
+        /**
+         * Required. The catalog display name.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The fully qualified resource name of the catalog.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. The catalog item level configuration.
+         *
+         * @param GoogleCloudRecommendationengineV1beta1CatalogItemLevelConfig $catalogItemLevelConfig
+         */
+        public function setCatalogItemLevelConfig(GoogleCloudRecommendationengineV1beta1CatalogItemLevelConfig $catalogItemLevelConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudRecommendationengineV1beta1CatalogItemLevelConfig
+         */
+        public function getCatalogItemLevelConfig()
+        {
+        }
+        /**
+         * Required. The ID of the default event store.
+         *
+         * @param string $defaultEventStoreId
+         */
+        public function setDefaultEventStoreId($defaultEventStoreId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDefaultEventStoreId()
+        {
+        }
+        /**
+         * Required. The catalog display name.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The fully qualified resource name of the catalog.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRecommendationengineV1beta1CatalogItemLevelConfig
+     * Runtime class alias of \Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1Catalog registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCatalogItemLevelConfig()
-    {
-    }
-    /**
-     * Required. The ID of the default event store.
-     *
-     * @param string $defaultEventStoreId
-     */
-    public function setDefaultEventStoreId($defaultEventStoreId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDefaultEventStoreId()
-    {
-    }
-    /**
-     * Required. The catalog display name.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The fully qualified resource name of the catalog.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_RecommendationsAI_GoogleCloudRecommendationengineV1beta1Catalog extends \Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1Catalog
     {
     }
 }

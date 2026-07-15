@@ -21,63 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudTalentSolution;
-
-class ListJobsResponse extends \Google\Collection
-{
-    protected $collection_key = 'jobs';
-    protected $jobsType = Job::class;
-    protected $jobsDataType = 'array';
-    protected $metadataType = ResponseMetadata::class;
-    protected $metadataDataType = '';
-    /**
-     * A token to retrieve the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The Jobs for a given company. The maximum number of items returned is based
-     * on the limit field provided in the request.
-     *
-     * @param Job[] $jobs
-     */
-    public function setJobs($jobs)
+namespace Google\Service\CloudTalentSolution {
+    class ListJobsResponse extends \Google\Collection
     {
+        protected $collection_key = 'jobs';
+        protected $jobsType = Job::class;
+        protected $jobsDataType = 'array';
+        protected $metadataType = ResponseMetadata::class;
+        protected $metadataDataType = '';
+        /**
+         * A token to retrieve the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The Jobs for a given company. The maximum number of items returned is based
+         * on the limit field provided in the request.
+         *
+         * @param Job[] $jobs
+         */
+        public function setJobs($jobs)
+        {
+        }
+        /**
+         * @return Job[]
+         */
+        public function getJobs()
+        {
+        }
+        /**
+         * Additional information for the API invocation, such as the request tracking
+         * id.
+         *
+         * @param ResponseMetadata $metadata
+         */
+        public function setMetadata(ResponseMetadata $metadata)
+        {
+        }
+        /**
+         * @return ResponseMetadata
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * A token to retrieve the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Job[]
+     * Runtime class alias of \Google\Service\CloudTalentSolution\ListJobsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getJobs()
-    {
-    }
-    /**
-     * Additional information for the API invocation, such as the request tracking
-     * id.
-     *
-     * @param ResponseMetadata $metadata
-     */
-    public function setMetadata(ResponseMetadata $metadata)
-    {
-    }
-    /**
-     * @return ResponseMetadata
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * A token to retrieve the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_CloudTalentSolution_ListJobsResponse extends \Google\Service\CloudTalentSolution\ListJobsResponse
     {
     }
 }

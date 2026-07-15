@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class ListMembershipsResponse extends \Google\Collection
-{
-    protected $collection_key = 'memberships';
-    protected $membershipsType = Membership::class;
-    protected $membershipsDataType = 'array';
-    /**
-     * A token that you can send as `pageToken` to retrieve the next page of
-     * results. If empty, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Unordered list. List of memberships in the requested (or first) page.
-     *
-     * @param Membership[] $memberships
-     */
-    public function setMemberships($memberships)
+namespace Google\Service\HangoutsChat {
+    class ListMembershipsResponse extends \Google\Collection
     {
+        protected $collection_key = 'memberships';
+        protected $membershipsType = Membership::class;
+        protected $membershipsDataType = 'array';
+        /**
+         * A token that you can send as `pageToken` to retrieve the next page of
+         * results. If empty, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Unordered list. List of memberships in the requested (or first) page.
+         *
+         * @param Membership[] $memberships
+         */
+        public function setMemberships($memberships)
+        {
+        }
+        /**
+         * @return Membership[]
+         */
+        public function getMemberships()
+        {
+        }
+        /**
+         * A token that you can send as `pageToken` to retrieve the next page of
+         * results. If empty, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Membership[]
+     * Runtime class alias of \Google\Service\HangoutsChat\ListMembershipsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMemberships()
-    {
-    }
-    /**
-     * A token that you can send as `pageToken` to retrieve the next page of
-     * results. If empty, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_HangoutsChat_ListMembershipsResponse extends \Google\Service\HangoutsChat\ListMembershipsResponse
     {
     }
 }

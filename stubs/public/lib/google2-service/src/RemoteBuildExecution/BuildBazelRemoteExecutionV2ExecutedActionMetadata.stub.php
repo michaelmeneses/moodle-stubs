@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution;
-
-class BuildBazelRemoteExecutionV2ExecutedActionMetadata extends \Google\Collection
-{
-    protected $collection_key = 'auxiliaryMetadata';
-    public $auxiliaryMetadata;
-    public $executionCompletedTimestamp;
-    public $executionStartTimestamp;
-    public $inputFetchCompletedTimestamp;
-    public $inputFetchStartTimestamp;
-    public $outputUploadCompletedTimestamp;
-    public $outputUploadStartTimestamp;
-    public $queuedTimestamp;
-    public $worker;
-    public $workerCompletedTimestamp;
-    public $workerStartTimestamp;
-    public function setAuxiliaryMetadata($auxiliaryMetadata)
+namespace Google\Service\RemoteBuildExecution {
+    class BuildBazelRemoteExecutionV2ExecutedActionMetadata extends \Google\Collection
     {
+        protected $collection_key = 'auxiliaryMetadata';
+        public $auxiliaryMetadata;
+        public $executionCompletedTimestamp;
+        public $executionStartTimestamp;
+        public $inputFetchCompletedTimestamp;
+        public $inputFetchStartTimestamp;
+        public $outputUploadCompletedTimestamp;
+        public $outputUploadStartTimestamp;
+        public $queuedTimestamp;
+        public $worker;
+        public $workerCompletedTimestamp;
+        public $workerStartTimestamp;
+        public function setAuxiliaryMetadata($auxiliaryMetadata)
+        {
+        }
+        public function getAuxiliaryMetadata()
+        {
+        }
+        public function setExecutionCompletedTimestamp($executionCompletedTimestamp)
+        {
+        }
+        public function getExecutionCompletedTimestamp()
+        {
+        }
+        public function setExecutionStartTimestamp($executionStartTimestamp)
+        {
+        }
+        public function getExecutionStartTimestamp()
+        {
+        }
+        public function setInputFetchCompletedTimestamp($inputFetchCompletedTimestamp)
+        {
+        }
+        public function getInputFetchCompletedTimestamp()
+        {
+        }
+        public function setInputFetchStartTimestamp($inputFetchStartTimestamp)
+        {
+        }
+        public function getInputFetchStartTimestamp()
+        {
+        }
+        public function setOutputUploadCompletedTimestamp($outputUploadCompletedTimestamp)
+        {
+        }
+        public function getOutputUploadCompletedTimestamp()
+        {
+        }
+        public function setOutputUploadStartTimestamp($outputUploadStartTimestamp)
+        {
+        }
+        public function getOutputUploadStartTimestamp()
+        {
+        }
+        public function setQueuedTimestamp($queuedTimestamp)
+        {
+        }
+        public function getQueuedTimestamp()
+        {
+        }
+        public function setWorker($worker)
+        {
+        }
+        public function getWorker()
+        {
+        }
+        public function setWorkerCompletedTimestamp($workerCompletedTimestamp)
+        {
+        }
+        public function getWorkerCompletedTimestamp()
+        {
+        }
+        public function setWorkerStartTimestamp($workerStartTimestamp)
+        {
+        }
+        public function getWorkerStartTimestamp()
+        {
+        }
     }
-    public function getAuxiliaryMetadata()
-    {
-    }
-    public function setExecutionCompletedTimestamp($executionCompletedTimestamp)
-    {
-    }
-    public function getExecutionCompletedTimestamp()
-    {
-    }
-    public function setExecutionStartTimestamp($executionStartTimestamp)
-    {
-    }
-    public function getExecutionStartTimestamp()
-    {
-    }
-    public function setInputFetchCompletedTimestamp($inputFetchCompletedTimestamp)
-    {
-    }
-    public function getInputFetchCompletedTimestamp()
-    {
-    }
-    public function setInputFetchStartTimestamp($inputFetchStartTimestamp)
-    {
-    }
-    public function getInputFetchStartTimestamp()
-    {
-    }
-    public function setOutputUploadCompletedTimestamp($outputUploadCompletedTimestamp)
-    {
-    }
-    public function getOutputUploadCompletedTimestamp()
-    {
-    }
-    public function setOutputUploadStartTimestamp($outputUploadStartTimestamp)
-    {
-    }
-    public function getOutputUploadStartTimestamp()
-    {
-    }
-    public function setQueuedTimestamp($queuedTimestamp)
-    {
-    }
-    public function getQueuedTimestamp()
-    {
-    }
-    public function setWorker($worker)
-    {
-    }
-    public function getWorker()
-    {
-    }
-    public function setWorkerCompletedTimestamp($workerCompletedTimestamp)
-    {
-    }
-    public function getWorkerCompletedTimestamp()
-    {
-    }
-    public function setWorkerStartTimestamp($workerStartTimestamp)
-    {
-    }
-    public function getWorkerStartTimestamp()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2ExecutedActionMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_RemoteBuildExecution_BuildBazelRemoteExecutionV2ExecutedActionMetadata extends \Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2ExecutedActionMetadata
     {
     }
 }

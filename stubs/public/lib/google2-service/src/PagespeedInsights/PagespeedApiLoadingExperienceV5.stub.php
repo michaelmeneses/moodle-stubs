@@ -21,105 +21,114 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PagespeedInsights;
-
-class PagespeedApiLoadingExperienceV5 extends \Google\Model
-{
-    protected $internal_gapi_mappings = ["initialUrl" => "initial_url", "originFallback" => "origin_fallback", "overallCategory" => "overall_category"];
-    /**
-     * The url, pattern or origin which the metrics are on.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * The requested URL, which may differ from the resolved "id".
-     *
-     * @var string
-     */
-    public $initialUrl;
-    protected $metricsType = UserPageLoadMetricV5::class;
-    protected $metricsDataType = 'map';
-    /**
-     * True if the result is an origin fallback from a page, false otherwise.
-     *
-     * @var bool
-     */
-    public $originFallback;
-    /**
-     * The human readable speed "category" of the id.
-     *
-     * @var string
-     */
-    public $overallCategory;
-    /**
-     * The url, pattern or origin which the metrics are on.
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\PagespeedInsights {
+    class PagespeedApiLoadingExperienceV5 extends \Google\Model
     {
+        protected $internal_gapi_mappings = ["initialUrl" => "initial_url", "originFallback" => "origin_fallback", "overallCategory" => "overall_category"];
+        /**
+         * The url, pattern or origin which the metrics are on.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * The requested URL, which may differ from the resolved "id".
+         *
+         * @var string
+         */
+        public $initialUrl;
+        protected $metricsType = UserPageLoadMetricV5::class;
+        protected $metricsDataType = 'map';
+        /**
+         * True if the result is an origin fallback from a page, false otherwise.
+         *
+         * @var bool
+         */
+        public $originFallback;
+        /**
+         * The human readable speed "category" of the id.
+         *
+         * @var string
+         */
+        public $overallCategory;
+        /**
+         * The url, pattern or origin which the metrics are on.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * The requested URL, which may differ from the resolved "id".
+         *
+         * @param string $initialUrl
+         */
+        public function setInitialUrl($initialUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInitialUrl()
+        {
+        }
+        /**
+         * The map of .
+         *
+         * @param UserPageLoadMetricV5[] $metrics
+         */
+        public function setMetrics($metrics)
+        {
+        }
+        /**
+         * @return UserPageLoadMetricV5[]
+         */
+        public function getMetrics()
+        {
+        }
+        /**
+         * True if the result is an origin fallback from a page, false otherwise.
+         *
+         * @param bool $originFallback
+         */
+        public function setOriginFallback($originFallback)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getOriginFallback()
+        {
+        }
+        /**
+         * The human readable speed "category" of the id.
+         *
+         * @param string $overallCategory
+         */
+        public function setOverallCategory($overallCategory)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOverallCategory()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PagespeedInsights\PagespeedApiLoadingExperienceV5 registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * The requested URL, which may differ from the resolved "id".
-     *
-     * @param string $initialUrl
-     */
-    public function setInitialUrl($initialUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInitialUrl()
-    {
-    }
-    /**
-     * The map of .
-     *
-     * @param UserPageLoadMetricV5[] $metrics
-     */
-    public function setMetrics($metrics)
-    {
-    }
-    /**
-     * @return UserPageLoadMetricV5[]
-     */
-    public function getMetrics()
-    {
-    }
-    /**
-     * True if the result is an origin fallback from a page, false otherwise.
-     *
-     * @param bool $originFallback
-     */
-    public function setOriginFallback($originFallback)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getOriginFallback()
-    {
-    }
-    /**
-     * The human readable speed "category" of the id.
-     *
-     * @param string $overallCategory
-     */
-    public function setOverallCategory($overallCategory)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOverallCategory()
+    class Google_Service_PagespeedInsights_PagespeedApiLoadingExperienceV5 extends \Google\Service\PagespeedInsights\PagespeedApiLoadingExperienceV5
     {
     }
 }

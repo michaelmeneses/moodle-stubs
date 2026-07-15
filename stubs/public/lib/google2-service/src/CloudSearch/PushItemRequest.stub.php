@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class PushItemRequest extends \Google\Model
-{
-    /**
-     * The name of connector making this call. Format:
-     * datasources/{source_id}/connectors/{ID}
-     *
-     * @var string
-     */
-    public $connectorName;
-    protected $debugOptionsType = DebugOptions::class;
-    protected $debugOptionsDataType = '';
-    protected $itemType = PushItem::class;
-    protected $itemDataType = '';
-    /**
-     * The name of connector making this call. Format:
-     * datasources/{source_id}/connectors/{ID}
-     *
-     * @param string $connectorName
-     */
-    public function setConnectorName($connectorName)
+namespace Google\Service\CloudSearch {
+    class PushItemRequest extends \Google\Model
     {
+        /**
+         * The name of connector making this call. Format:
+         * datasources/{source_id}/connectors/{ID}
+         *
+         * @var string
+         */
+        public $connectorName;
+        protected $debugOptionsType = DebugOptions::class;
+        protected $debugOptionsDataType = '';
+        protected $itemType = PushItem::class;
+        protected $itemDataType = '';
+        /**
+         * The name of connector making this call. Format:
+         * datasources/{source_id}/connectors/{ID}
+         *
+         * @param string $connectorName
+         */
+        public function setConnectorName($connectorName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConnectorName()
+        {
+        }
+        /**
+         * Common debug options.
+         *
+         * @param DebugOptions $debugOptions
+         */
+        public function setDebugOptions(DebugOptions $debugOptions)
+        {
+        }
+        /**
+         * @return DebugOptions
+         */
+        public function getDebugOptions()
+        {
+        }
+        /**
+         * Item to push onto the queue.
+         *
+         * @param PushItem $item
+         */
+        public function setItem(PushItem $item)
+        {
+        }
+        /**
+         * @return PushItem
+         */
+        public function getItem()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\PushItemRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConnectorName()
-    {
-    }
-    /**
-     * Common debug options.
-     *
-     * @param DebugOptions $debugOptions
-     */
-    public function setDebugOptions(DebugOptions $debugOptions)
-    {
-    }
-    /**
-     * @return DebugOptions
-     */
-    public function getDebugOptions()
-    {
-    }
-    /**
-     * Item to push onto the queue.
-     *
-     * @param PushItem $item
-     */
-    public function setItem(PushItem $item)
-    {
-    }
-    /**
-     * @return PushItem
-     */
-    public function getItem()
+    class Google_Service_CloudSearch_PushItemRequest extends \Google\Service\CloudSearch\PushItemRequest
     {
     }
 }

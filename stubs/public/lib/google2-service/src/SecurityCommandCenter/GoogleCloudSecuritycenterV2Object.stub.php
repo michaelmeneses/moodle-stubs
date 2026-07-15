@@ -21,111 +21,120 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GoogleCloudSecuritycenterV2Object extends \Google\Collection
-{
-    protected $collection_key = 'containers';
-    protected $containersType = GoogleCloudSecuritycenterV2Container::class;
-    protected $containersDataType = 'array';
-    /**
-     * Kubernetes object group, such as "policy.k8s.io/v1".
-     *
-     * @var string
-     */
-    public $group;
-    /**
-     * Kubernetes object kind, such as "Namespace".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Kubernetes object name. For details see
-     * https://kubernetes.io/docs/concepts/overview/working-with-objects/names/.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Kubernetes object namespace. Must be a valid DNS label. Named "ns" to avoid
-     * collision with C++ namespace keyword. For details see
-     * https://kubernetes.io/docs/tasks/administer-cluster/namespaces/.
-     *
-     * @var string
-     */
-    public $ns;
-    /**
-     * Pod containers associated with this finding, if any.
-     *
-     * @param GoogleCloudSecuritycenterV2Container[] $containers
-     */
-    public function setContainers($containers)
+namespace Google\Service\SecurityCommandCenter {
+    class GoogleCloudSecuritycenterV2Object extends \Google\Collection
     {
+        protected $collection_key = 'containers';
+        protected $containersType = GoogleCloudSecuritycenterV2Container::class;
+        protected $containersDataType = 'array';
+        /**
+         * Kubernetes object group, such as "policy.k8s.io/v1".
+         *
+         * @var string
+         */
+        public $group;
+        /**
+         * Kubernetes object kind, such as "Namespace".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Kubernetes object name. For details see
+         * https://kubernetes.io/docs/concepts/overview/working-with-objects/names/.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Kubernetes object namespace. Must be a valid DNS label. Named "ns" to avoid
+         * collision with C++ namespace keyword. For details see
+         * https://kubernetes.io/docs/tasks/administer-cluster/namespaces/.
+         *
+         * @var string
+         */
+        public $ns;
+        /**
+         * Pod containers associated with this finding, if any.
+         *
+         * @param GoogleCloudSecuritycenterV2Container[] $containers
+         */
+        public function setContainers($containers)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV2Container[]
+         */
+        public function getContainers()
+        {
+        }
+        /**
+         * Kubernetes object group, such as "policy.k8s.io/v1".
+         *
+         * @param string $group
+         */
+        public function setGroup($group)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGroup()
+        {
+        }
+        /**
+         * Kubernetes object kind, such as "Namespace".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Kubernetes object name. For details see
+         * https://kubernetes.io/docs/concepts/overview/working-with-objects/names/.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Kubernetes object namespace. Must be a valid DNS label. Named "ns" to avoid
+         * collision with C++ namespace keyword. For details see
+         * https://kubernetes.io/docs/tasks/administer-cluster/namespaces/.
+         *
+         * @param string $ns
+         */
+        public function setNs($ns)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudSecuritycenterV2Container[]
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2Object registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContainers()
-    {
-    }
-    /**
-     * Kubernetes object group, such as "policy.k8s.io/v1".
-     *
-     * @param string $group
-     */
-    public function setGroup($group)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGroup()
-    {
-    }
-    /**
-     * Kubernetes object kind, such as "Namespace".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Kubernetes object name. For details see
-     * https://kubernetes.io/docs/concepts/overview/working-with-objects/names/.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Kubernetes object namespace. Must be a valid DNS label. Named "ns" to avoid
-     * collision with C++ namespace keyword. For details see
-     * https://kubernetes.io/docs/tasks/administer-cluster/namespaces/.
-     *
-     * @param string $ns
-     */
-    public function setNs($ns)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNs()
+    class Google_Service_SecurityCommandCenter_GoogleCloudSecuritycenterV2Object extends \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2Object
     {
     }
 }

@@ -21,48 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher\Resource;
-
-/**
- * The "internalappsharingartifacts" collection of methods.
- * Typical usage is:
- *  <code>
- *   $androidpublisherService = new Google\Service\AndroidPublisher(...);
- *   $internalappsharingartifacts = $androidpublisherService->internalappsharingartifacts;
- *  </code>
- */
-class Internalappsharingartifacts extends \Google\Service\Resource
-{
+namespace Google\Service\AndroidPublisher\Resource {
+    use Google\Service\AndroidPublisher\InternalAppSharingArtifact;
     /**
-     * Uploads an APK to internal app sharing. If you are using the Google API
-     * client libraries, please increase the timeout of the http request before
-     * calling this endpoint (a timeout of 2 minutes is recommended). See [Timeouts
-     * and Errors](https://developers.google.com/api-client-library/java/google-api-
-     * java-client/errors) for an example in java.
-     * (internalappsharingartifacts.uploadapk)
-     *
-     * @param string $packageName Package name of the app.
-     * @param array $optParams Optional parameters.
-     * @return InternalAppSharingArtifact
-     * @throws \Google\Service\Exception
+     * The "internalappsharingartifacts" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $androidpublisherService = new Google\Service\AndroidPublisher(...);
+     *   $internalappsharingartifacts = $androidpublisherService->internalappsharingartifacts;
+     *  </code>
      */
-    public function uploadapk($packageName, $optParams = [])
+    class Internalappsharingartifacts extends \Google\Service\Resource
     {
+        /**
+         * Uploads an APK to internal app sharing. If you are using the Google API
+         * client libraries, please increase the timeout of the http request before
+         * calling this endpoint (a timeout of 2 minutes is recommended). See [Timeouts
+         * and Errors](https://developers.google.com/api-client-library/java/google-api-
+         * java-client/errors) for an example in java.
+         * (internalappsharingartifacts.uploadapk)
+         *
+         * @param string $packageName Package name of the app.
+         * @param array $optParams Optional parameters.
+         * @return InternalAppSharingArtifact
+         * @throws \Google\Service\Exception
+         */
+        public function uploadapk($packageName, $optParams = [])
+        {
+        }
+        /**
+         * Uploads an app bundle to internal app sharing. If you are using the Google
+         * API client libraries, please increase the timeout of the http request before
+         * calling this endpoint (a timeout of 2 minutes is recommended). See [Timeouts
+         * and Errors](https://developers.google.com/api-client-library/java/google-api-
+         * java-client/errors) for an example in java.
+         * (internalappsharingartifacts.uploadbundle)
+         *
+         * @param string $packageName Package name of the app.
+         * @param array $optParams Optional parameters.
+         * @return InternalAppSharingArtifact
+         * @throws \Google\Service\Exception
+         */
+        public function uploadbundle($packageName, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Uploads an app bundle to internal app sharing. If you are using the Google
-     * API client libraries, please increase the timeout of the http request before
-     * calling this endpoint (a timeout of 2 minutes is recommended). See [Timeouts
-     * and Errors](https://developers.google.com/api-client-library/java/google-api-
-     * java-client/errors) for an example in java.
-     * (internalappsharingartifacts.uploadbundle)
-     *
-     * @param string $packageName Package name of the app.
-     * @param array $optParams Optional parameters.
-     * @return InternalAppSharingArtifact
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\AndroidPublisher\Resource\Internalappsharingartifacts registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function uploadbundle($packageName, $optParams = [])
+    class Google_Service_AndroidPublisher_Resource_Internalappsharingartifacts extends \Google\Service\AndroidPublisher\Resource\Internalappsharingartifacts
     {
     }
 }

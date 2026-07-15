@@ -21,27 +21,36 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class MaterializedViewStatistics extends \Google\Collection
-{
-    protected $collection_key = 'materializedView';
-    protected $materializedViewType = MaterializedView::class;
-    protected $materializedViewDataType = 'array';
-    /**
-     * Materialized views considered for the query job. Only certain materialized
-     * views are used. For a detailed list, see the child message. If many
-     * materialized views are considered, then the list might be incomplete.
-     *
-     * @param MaterializedView[] $materializedView
-     */
-    public function setMaterializedView($materializedView)
+namespace Google\Service\Bigquery {
+    class MaterializedViewStatistics extends \Google\Collection
     {
+        protected $collection_key = 'materializedView';
+        protected $materializedViewType = MaterializedView::class;
+        protected $materializedViewDataType = 'array';
+        /**
+         * Materialized views considered for the query job. Only certain materialized
+         * views are used. For a detailed list, see the child message. If many
+         * materialized views are considered, then the list might be incomplete.
+         *
+         * @param MaterializedView[] $materializedView
+         */
+        public function setMaterializedView($materializedView)
+        {
+        }
+        /**
+         * @return MaterializedView[]
+         */
+        public function getMaterializedView()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MaterializedView[]
+     * Runtime class alias of \Google\Service\Bigquery\MaterializedViewStatistics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaterializedView()
+    class Google_Service_Bigquery_MaterializedViewStatistics extends \Google\Service\Bigquery\MaterializedViewStatistics
     {
     }
 }

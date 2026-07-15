@@ -21,37 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class AdPolicyTopicEvidenceDestinationMismatch extends \Google\Collection
-{
-    protected $collection_key = 'uriTypes';
-    /**
-     * The set of URLs that do not match. The list can include single or multiple
-     * uri types. Example 1: [`DISPLAY_URL`, `FINAL_URL`] means ad display URL
-     * does not match with the ad final URL. Example 2: [`FINAL_URL`] means ad
-     * final URL did not match the crawled url, which is also considered as
-     * destination mismatch.
-     *
-     * @var string[]
-     */
-    public $uriTypes;
-    /**
-     * The set of URLs that do not match. The list can include single or multiple
-     * uri types. Example 1: [`DISPLAY_URL`, `FINAL_URL`] means ad display URL
-     * does not match with the ad final URL. Example 2: [`FINAL_URL`] means ad
-     * final URL did not match the crawled url, which is also considered as
-     * destination mismatch.
-     *
-     * @param string[] $uriTypes
-     */
-    public function setUriTypes($uriTypes)
+namespace Google\Service\DisplayVideo {
+    class AdPolicyTopicEvidenceDestinationMismatch extends \Google\Collection
     {
+        protected $collection_key = 'uriTypes';
+        /**
+         * The set of URLs that do not match. The list can include single or multiple
+         * uri types. Example 1: [`DISPLAY_URL`, `FINAL_URL`] means ad display URL
+         * does not match with the ad final URL. Example 2: [`FINAL_URL`] means ad
+         * final URL did not match the crawled url, which is also considered as
+         * destination mismatch.
+         *
+         * @var string[]
+         */
+        public $uriTypes;
+        /**
+         * The set of URLs that do not match. The list can include single or multiple
+         * uri types. Example 1: [`DISPLAY_URL`, `FINAL_URL`] means ad display URL
+         * does not match with the ad final URL. Example 2: [`FINAL_URL`] means ad
+         * final URL did not match the crawled url, which is also considered as
+         * destination mismatch.
+         *
+         * @param string[] $uriTypes
+         */
+        public function setUriTypes($uriTypes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUriTypes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\DisplayVideo\AdPolicyTopicEvidenceDestinationMismatch registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUriTypes()
+    class Google_Service_DisplayVideo_AdPolicyTopicEvidenceDestinationMismatch extends \Google\Service\DisplayVideo\AdPolicyTopicEvidenceDestinationMismatch
     {
     }
 }

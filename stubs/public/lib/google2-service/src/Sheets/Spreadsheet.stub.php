@@ -21,145 +21,154 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class Spreadsheet extends \Google\Collection
-{
-    protected $collection_key = 'sheets';
-    protected $dataSourceSchedulesType = DataSourceRefreshSchedule::class;
-    protected $dataSourceSchedulesDataType = 'array';
-    protected $dataSourcesType = DataSource::class;
-    protected $dataSourcesDataType = 'array';
-    protected $developerMetadataType = DeveloperMetadata::class;
-    protected $developerMetadataDataType = 'array';
-    protected $namedRangesType = NamedRange::class;
-    protected $namedRangesDataType = 'array';
-    protected $propertiesType = SpreadsheetProperties::class;
-    protected $propertiesDataType = '';
-    protected $sheetsType = Sheet::class;
-    protected $sheetsDataType = 'array';
-    /**
-     * The ID of the spreadsheet. This field is read-only.
-     *
-     * @var string
-     */
-    public $spreadsheetId;
-    /**
-     * The url of the spreadsheet. This field is read-only.
-     *
-     * @var string
-     */
-    public $spreadsheetUrl;
-    /**
-     * Output only. A list of data source refresh schedules.
-     *
-     * @param DataSourceRefreshSchedule[] $dataSourceSchedules
-     */
-    public function setDataSourceSchedules($dataSourceSchedules)
+namespace Google\Service\Sheets {
+    class Spreadsheet extends \Google\Collection
     {
+        protected $collection_key = 'sheets';
+        protected $dataSourceSchedulesType = DataSourceRefreshSchedule::class;
+        protected $dataSourceSchedulesDataType = 'array';
+        protected $dataSourcesType = DataSource::class;
+        protected $dataSourcesDataType = 'array';
+        protected $developerMetadataType = DeveloperMetadata::class;
+        protected $developerMetadataDataType = 'array';
+        protected $namedRangesType = NamedRange::class;
+        protected $namedRangesDataType = 'array';
+        protected $propertiesType = SpreadsheetProperties::class;
+        protected $propertiesDataType = '';
+        protected $sheetsType = Sheet::class;
+        protected $sheetsDataType = 'array';
+        /**
+         * The ID of the spreadsheet. This field is read-only.
+         *
+         * @var string
+         */
+        public $spreadsheetId;
+        /**
+         * The url of the spreadsheet. This field is read-only.
+         *
+         * @var string
+         */
+        public $spreadsheetUrl;
+        /**
+         * Output only. A list of data source refresh schedules.
+         *
+         * @param DataSourceRefreshSchedule[] $dataSourceSchedules
+         */
+        public function setDataSourceSchedules($dataSourceSchedules)
+        {
+        }
+        /**
+         * @return DataSourceRefreshSchedule[]
+         */
+        public function getDataSourceSchedules()
+        {
+        }
+        /**
+         * A list of external data sources connected with the spreadsheet.
+         *
+         * @param DataSource[] $dataSources
+         */
+        public function setDataSources($dataSources)
+        {
+        }
+        /**
+         * @return DataSource[]
+         */
+        public function getDataSources()
+        {
+        }
+        /**
+         * The developer metadata associated with a spreadsheet.
+         *
+         * @param DeveloperMetadata[] $developerMetadata
+         */
+        public function setDeveloperMetadata($developerMetadata)
+        {
+        }
+        /**
+         * @return DeveloperMetadata[]
+         */
+        public function getDeveloperMetadata()
+        {
+        }
+        /**
+         * The named ranges defined in a spreadsheet.
+         *
+         * @param NamedRange[] $namedRanges
+         */
+        public function setNamedRanges($namedRanges)
+        {
+        }
+        /**
+         * @return NamedRange[]
+         */
+        public function getNamedRanges()
+        {
+        }
+        /**
+         * Overall properties of a spreadsheet.
+         *
+         * @param SpreadsheetProperties $properties
+         */
+        public function setProperties(SpreadsheetProperties $properties)
+        {
+        }
+        /**
+         * @return SpreadsheetProperties
+         */
+        public function getProperties()
+        {
+        }
+        /**
+         * The sheets that are part of a spreadsheet.
+         *
+         * @param Sheet[] $sheets
+         */
+        public function setSheets($sheets)
+        {
+        }
+        /**
+         * @return Sheet[]
+         */
+        public function getSheets()
+        {
+        }
+        /**
+         * The ID of the spreadsheet. This field is read-only.
+         *
+         * @param string $spreadsheetId
+         */
+        public function setSpreadsheetId($spreadsheetId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSpreadsheetId()
+        {
+        }
+        /**
+         * The url of the spreadsheet. This field is read-only.
+         *
+         * @param string $spreadsheetUrl
+         */
+        public function setSpreadsheetUrl($spreadsheetUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSpreadsheetUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DataSourceRefreshSchedule[]
+     * Runtime class alias of \Google\Service\Sheets\Spreadsheet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataSourceSchedules()
-    {
-    }
-    /**
-     * A list of external data sources connected with the spreadsheet.
-     *
-     * @param DataSource[] $dataSources
-     */
-    public function setDataSources($dataSources)
-    {
-    }
-    /**
-     * @return DataSource[]
-     */
-    public function getDataSources()
-    {
-    }
-    /**
-     * The developer metadata associated with a spreadsheet.
-     *
-     * @param DeveloperMetadata[] $developerMetadata
-     */
-    public function setDeveloperMetadata($developerMetadata)
-    {
-    }
-    /**
-     * @return DeveloperMetadata[]
-     */
-    public function getDeveloperMetadata()
-    {
-    }
-    /**
-     * The named ranges defined in a spreadsheet.
-     *
-     * @param NamedRange[] $namedRanges
-     */
-    public function setNamedRanges($namedRanges)
-    {
-    }
-    /**
-     * @return NamedRange[]
-     */
-    public function getNamedRanges()
-    {
-    }
-    /**
-     * Overall properties of a spreadsheet.
-     *
-     * @param SpreadsheetProperties $properties
-     */
-    public function setProperties(SpreadsheetProperties $properties)
-    {
-    }
-    /**
-     * @return SpreadsheetProperties
-     */
-    public function getProperties()
-    {
-    }
-    /**
-     * The sheets that are part of a spreadsheet.
-     *
-     * @param Sheet[] $sheets
-     */
-    public function setSheets($sheets)
-    {
-    }
-    /**
-     * @return Sheet[]
-     */
-    public function getSheets()
-    {
-    }
-    /**
-     * The ID of the spreadsheet. This field is read-only.
-     *
-     * @param string $spreadsheetId
-     */
-    public function setSpreadsheetId($spreadsheetId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSpreadsheetId()
-    {
-    }
-    /**
-     * The url of the spreadsheet. This field is read-only.
-     *
-     * @param string $spreadsheetUrl
-     */
-    public function setSpreadsheetUrl($spreadsheetUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSpreadsheetUrl()
+    class Google_Service_Sheets_Spreadsheet extends \Google\Service\Sheets\Spreadsheet
     {
     }
 }

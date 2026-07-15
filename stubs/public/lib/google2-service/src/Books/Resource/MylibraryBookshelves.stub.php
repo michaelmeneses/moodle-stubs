@@ -21,105 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books\Resource;
-
-/**
- * The "bookshelves" collection of methods.
- * Typical usage is:
- *  <code>
- *   $booksService = new Google\Service\Books(...);
- *   $bookshelves = $booksService->mylibrary_bookshelves;
- *  </code>
- */
-class MylibraryBookshelves extends \Google\Service\Resource
-{
+namespace Google\Service\Books\Resource {
+    use Google\Service\Books\BooksEmpty;
+    use Google\Service\Books\Bookshelf;
+    use Google\Service\Books\Bookshelves as BookshelvesModel;
     /**
-     * Adds a volume to a bookshelf. (bookshelves.addVolume)
-     *
-     * @param string $shelf ID of bookshelf to which to add a volume.
-     * @param string $volumeId ID of volume to add.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string reason The reason for which the book is added to the
-     * library.
-     * @opt_param string source String to identify the originator of this request.
-     * @return BooksEmpty
-     * @throws \Google\Service\Exception
+     * The "bookshelves" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $booksService = new Google\Service\Books(...);
+     *   $bookshelves = $booksService->mylibrary_bookshelves;
+     *  </code>
      */
-    public function addVolume($shelf, $volumeId, $optParams = [])
+    class MylibraryBookshelves extends \Google\Service\Resource
     {
+        /**
+         * Adds a volume to a bookshelf. (bookshelves.addVolume)
+         *
+         * @param string $shelf ID of bookshelf to which to add a volume.
+         * @param string $volumeId ID of volume to add.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string reason The reason for which the book is added to the
+         * library.
+         * @opt_param string source String to identify the originator of this request.
+         * @return BooksEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function addVolume($shelf, $volumeId, $optParams = [])
+        {
+        }
+        /**
+         * Clears all volumes from a bookshelf. (bookshelves.clearVolumes)
+         *
+         * @param string $shelf ID of bookshelf from which to remove a volume.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string source String to identify the originator of this request.
+         * @return BooksEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function clearVolumes($shelf, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves metadata for a specific bookshelf belonging to the authenticated
+         * user. (bookshelves.get)
+         *
+         * @param string $shelf ID of bookshelf to retrieve.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string source String to identify the originator of this request.
+         * @return Bookshelf
+         * @throws \Google\Service\Exception
+         */
+        public function get($shelf, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves a list of bookshelves belonging to the authenticated user.
+         * (bookshelves.listMylibraryBookshelves)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string source String to identify the originator of this request.
+         * @return BookshelvesModel
+         * @throws \Google\Service\Exception
+         */
+        public function listMylibraryBookshelves($optParams = [])
+        {
+        }
+        /**
+         * Moves a volume within a bookshelf. (bookshelves.moveVolume)
+         *
+         * @param string $shelf ID of bookshelf with the volume.
+         * @param string $volumeId ID of volume to move.
+         * @param int $volumePosition Position on shelf to move the item (0 puts the
+         * item before the current first item, 1 puts it between the first and the
+         * second and so on.)
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string source String to identify the originator of this request.
+         * @return BooksEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function moveVolume($shelf, $volumeId, $volumePosition, $optParams = [])
+        {
+        }
+        /**
+         * Removes a volume from a bookshelf. (bookshelves.removeVolume)
+         *
+         * @param string $shelf ID of bookshelf from which to remove a volume.
+         * @param string $volumeId ID of volume to remove.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string reason The reason for which the book is removed from the
+         * library.
+         * @opt_param string source String to identify the originator of this request.
+         * @return BooksEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function removeVolume($shelf, $volumeId, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Clears all volumes from a bookshelf. (bookshelves.clearVolumes)
-     *
-     * @param string $shelf ID of bookshelf from which to remove a volume.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string source String to identify the originator of this request.
-     * @return BooksEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Books\Resource\MylibraryBookshelves registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function clearVolumes($shelf, $optParams = [])
-    {
-    }
-    /**
-     * Retrieves metadata for a specific bookshelf belonging to the authenticated
-     * user. (bookshelves.get)
-     *
-     * @param string $shelf ID of bookshelf to retrieve.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string source String to identify the originator of this request.
-     * @return Bookshelf
-     * @throws \Google\Service\Exception
-     */
-    public function get($shelf, $optParams = [])
-    {
-    }
-    /**
-     * Retrieves a list of bookshelves belonging to the authenticated user.
-     * (bookshelves.listMylibraryBookshelves)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string source String to identify the originator of this request.
-     * @return BookshelvesModel
-     * @throws \Google\Service\Exception
-     */
-    public function listMylibraryBookshelves($optParams = [])
-    {
-    }
-    /**
-     * Moves a volume within a bookshelf. (bookshelves.moveVolume)
-     *
-     * @param string $shelf ID of bookshelf with the volume.
-     * @param string $volumeId ID of volume to move.
-     * @param int $volumePosition Position on shelf to move the item (0 puts the
-     * item before the current first item, 1 puts it between the first and the
-     * second and so on.)
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string source String to identify the originator of this request.
-     * @return BooksEmpty
-     * @throws \Google\Service\Exception
-     */
-    public function moveVolume($shelf, $volumeId, $volumePosition, $optParams = [])
-    {
-    }
-    /**
-     * Removes a volume from a bookshelf. (bookshelves.removeVolume)
-     *
-     * @param string $shelf ID of bookshelf from which to remove a volume.
-     * @param string $volumeId ID of volume to remove.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string reason The reason for which the book is removed from the
-     * library.
-     * @opt_param string source String to identify the originator of this request.
-     * @return BooksEmpty
-     * @throws \Google\Service\Exception
-     */
-    public function removeVolume($shelf, $volumeId, $optParams = [])
+    class Google_Service_Books_Resource_MylibraryBookshelves extends \Google\Service\Books\Resource\MylibraryBookshelves
     {
     }
 }

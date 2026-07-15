@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class LiaInventorySettings extends \Google\Model
-{
-    /**
-     * The email of the contact for the inventory verification process.
-     *
-     * @var string
-     */
-    public $inventoryVerificationContactEmail;
-    /**
-     * The name of the contact for the inventory verification process.
-     *
-     * @var string
-     */
-    public $inventoryVerificationContactName;
-    /**
-     * The status of the verification contact. Acceptable values are: - "`active`"
-     * - "`inactive`" - "`pending`"
-     *
-     * @var string
-     */
-    public $inventoryVerificationContactStatus;
-    /**
-     * The status of the inventory verification process. Acceptable values are: -
-     * "`active`" - "`inactive`" - "`pending`"
-     *
-     * @var string
-     */
-    public $status;
-    /**
-     * The email of the contact for the inventory verification process.
-     *
-     * @param string $inventoryVerificationContactEmail
-     */
-    public function setInventoryVerificationContactEmail($inventoryVerificationContactEmail)
+namespace Google\Service\ShoppingContent {
+    class LiaInventorySettings extends \Google\Model
     {
+        /**
+         * The email of the contact for the inventory verification process.
+         *
+         * @var string
+         */
+        public $inventoryVerificationContactEmail;
+        /**
+         * The name of the contact for the inventory verification process.
+         *
+         * @var string
+         */
+        public $inventoryVerificationContactName;
+        /**
+         * The status of the verification contact. Acceptable values are: - "`active`"
+         * - "`inactive`" - "`pending`"
+         *
+         * @var string
+         */
+        public $inventoryVerificationContactStatus;
+        /**
+         * The status of the inventory verification process. Acceptable values are: -
+         * "`active`" - "`inactive`" - "`pending`"
+         *
+         * @var string
+         */
+        public $status;
+        /**
+         * The email of the contact for the inventory verification process.
+         *
+         * @param string $inventoryVerificationContactEmail
+         */
+        public function setInventoryVerificationContactEmail($inventoryVerificationContactEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInventoryVerificationContactEmail()
+        {
+        }
+        /**
+         * The name of the contact for the inventory verification process.
+         *
+         * @param string $inventoryVerificationContactName
+         */
+        public function setInventoryVerificationContactName($inventoryVerificationContactName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInventoryVerificationContactName()
+        {
+        }
+        /**
+         * The status of the verification contact. Acceptable values are: - "`active`"
+         * - "`inactive`" - "`pending`"
+         *
+         * @param string $inventoryVerificationContactStatus
+         */
+        public function setInventoryVerificationContactStatus($inventoryVerificationContactStatus)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInventoryVerificationContactStatus()
+        {
+        }
+        /**
+         * The status of the inventory verification process. Acceptable values are: -
+         * "`active`" - "`inactive`" - "`pending`"
+         *
+         * @param string $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\LiaInventorySettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInventoryVerificationContactEmail()
-    {
-    }
-    /**
-     * The name of the contact for the inventory verification process.
-     *
-     * @param string $inventoryVerificationContactName
-     */
-    public function setInventoryVerificationContactName($inventoryVerificationContactName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInventoryVerificationContactName()
-    {
-    }
-    /**
-     * The status of the verification contact. Acceptable values are: - "`active`"
-     * - "`inactive`" - "`pending`"
-     *
-     * @param string $inventoryVerificationContactStatus
-     */
-    public function setInventoryVerificationContactStatus($inventoryVerificationContactStatus)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInventoryVerificationContactStatus()
-    {
-    }
-    /**
-     * The status of the inventory verification process. Acceptable values are: -
-     * "`active`" - "`inactive`" - "`pending`"
-     *
-     * @param string $status
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStatus()
+    class Google_Service_ShoppingContent_LiaInventorySettings extends \Google\Service\ShoppingContent\LiaInventorySettings
     {
     }
 }

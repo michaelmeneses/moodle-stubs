@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1RawDocuments extends \Google\Collection
-{
-    protected $collection_key = 'documents';
-    protected $documentsType = GoogleCloudDocumentaiV1RawDocument::class;
-    protected $documentsDataType = 'array';
-    /**
-     * Specifies raw document content and mime type.
-     *
-     * @param GoogleCloudDocumentaiV1RawDocument[] $documents
-     */
-    public function setDocuments($documents)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1RawDocuments extends \Google\Collection
     {
+        protected $collection_key = 'documents';
+        protected $documentsType = GoogleCloudDocumentaiV1RawDocument::class;
+        protected $documentsDataType = 'array';
+        /**
+         * Specifies raw document content and mime type.
+         *
+         * @param GoogleCloudDocumentaiV1RawDocument[] $documents
+         */
+        public function setDocuments($documents)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1RawDocument[]
+         */
+        public function getDocuments()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiV1RawDocument[]
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1RawDocuments registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDocuments()
+    class Google_Service_Document_GoogleCloudDocumentaiV1RawDocuments extends \Google\Service\Document\GoogleCloudDocumentaiV1RawDocuments
     {
     }
 }

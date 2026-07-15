@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class PickupCarrierService extends \Google\Model
-{
-    /**
-     * The name of the pickup carrier (for example, `"UPS"`). Required.
-     *
-     * @var string
-     */
-    public $carrierName;
-    /**
-     * The name of the pickup service (for example, `"Access point"`). Required.
-     *
-     * @var string
-     */
-    public $serviceName;
-    /**
-     * The name of the pickup carrier (for example, `"UPS"`). Required.
-     *
-     * @param string $carrierName
-     */
-    public function setCarrierName($carrierName)
+namespace Google\Service\ShoppingContent {
+    class PickupCarrierService extends \Google\Model
     {
+        /**
+         * The name of the pickup carrier (for example, `"UPS"`). Required.
+         *
+         * @var string
+         */
+        public $carrierName;
+        /**
+         * The name of the pickup service (for example, `"Access point"`). Required.
+         *
+         * @var string
+         */
+        public $serviceName;
+        /**
+         * The name of the pickup carrier (for example, `"UPS"`). Required.
+         *
+         * @param string $carrierName
+         */
+        public function setCarrierName($carrierName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCarrierName()
+        {
+        }
+        /**
+         * The name of the pickup service (for example, `"Access point"`). Required.
+         *
+         * @param string $serviceName
+         */
+        public function setServiceName($serviceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\PickupCarrierService registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCarrierName()
-    {
-    }
-    /**
-     * The name of the pickup service (for example, `"Access point"`). Required.
-     *
-     * @param string $serviceName
-     */
-    public function setServiceName($serviceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceName()
+    class Google_Service_ShoppingContent_PickupCarrierService extends \Google\Service\ShoppingContent\PickupCarrierService
     {
     }
 }

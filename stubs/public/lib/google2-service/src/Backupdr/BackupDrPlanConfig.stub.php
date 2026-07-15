@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Backupdr;
-
-class BackupDrPlanConfig extends \Google\Collection
-{
-    protected $collection_key = 'backupDrPlanRules';
-    protected $backupDrPlanRulesType = BackupDrPlanRule::class;
-    protected $backupDrPlanRulesDataType = 'array';
-    /**
-     * Backup rules of the backup plan resource.
-     *
-     * @param BackupDrPlanRule[] $backupDrPlanRules
-     */
-    public function setBackupDrPlanRules($backupDrPlanRules)
+namespace Google\Service\Backupdr {
+    class BackupDrPlanConfig extends \Google\Collection
     {
+        protected $collection_key = 'backupDrPlanRules';
+        protected $backupDrPlanRulesType = BackupDrPlanRule::class;
+        protected $backupDrPlanRulesDataType = 'array';
+        /**
+         * Backup rules of the backup plan resource.
+         *
+         * @param BackupDrPlanRule[] $backupDrPlanRules
+         */
+        public function setBackupDrPlanRules($backupDrPlanRules)
+        {
+        }
+        /**
+         * @return BackupDrPlanRule[]
+         */
+        public function getBackupDrPlanRules()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BackupDrPlanRule[]
+     * Runtime class alias of \Google\Service\Backupdr\BackupDrPlanConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackupDrPlanRules()
+    class Google_Service_Backupdr_BackupDrPlanConfig extends \Google\Service\Backupdr\BackupDrPlanConfig
     {
     }
 }

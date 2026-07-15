@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementVersionsV1ClaimCertificateProvisioningProcessResponse extends \Google\Model
-{
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementVersionsV1ClaimCertificateProvisioningProcessResponse extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1ClaimCertificateProvisioningProcessResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ChromeManagement_GoogleChromeManagementVersionsV1ClaimCertificateProvisioningProcessResponse extends \Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1ClaimCertificateProvisioningProcessResponse
+    {
+    }
 }

@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise;
-
-class EnterpriseUpgradeEvent extends \Google\Model
-{
-    /**
-     * Unspecified. This value is not used.
-     */
-    public const UPGRADE_STATE_upgradeStateUnspecified = 'upgradeStateUnspecified';
-    /**
-     * The upgrade has succeeded.
-     */
-    public const UPGRADE_STATE_upgradeStateSucceeded = 'upgradeStateSucceeded';
-    /**
-     * The upgrade state.
-     *
-     * @var string
-     */
-    public $upgradeState;
-    /**
-     * The upgrade state.
-     *
-     * Accepted values: upgradeStateUnspecified, upgradeStateSucceeded
-     *
-     * @param self::UPGRADE_STATE_* $upgradeState
-     */
-    public function setUpgradeState($upgradeState)
+namespace Google\Service\AndroidEnterprise {
+    class EnterpriseUpgradeEvent extends \Google\Model
     {
+        /**
+         * Unspecified. This value is not used.
+         */
+        public const UPGRADE_STATE_upgradeStateUnspecified = 'upgradeStateUnspecified';
+        /**
+         * The upgrade has succeeded.
+         */
+        public const UPGRADE_STATE_upgradeStateSucceeded = 'upgradeStateSucceeded';
+        /**
+         * The upgrade state.
+         *
+         * @var string
+         */
+        public $upgradeState;
+        /**
+         * The upgrade state.
+         *
+         * Accepted values: upgradeStateUnspecified, upgradeStateSucceeded
+         *
+         * @param self::UPGRADE_STATE_* $upgradeState
+         */
+        public function setUpgradeState($upgradeState)
+        {
+        }
+        /**
+         * @return self::UPGRADE_STATE_*
+         */
+        public function getUpgradeState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::UPGRADE_STATE_*
+     * Runtime class alias of \Google\Service\AndroidEnterprise\EnterpriseUpgradeEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUpgradeState()
+    class Google_Service_AndroidEnterprise_EnterpriseUpgradeEvent extends \Google\Service\AndroidEnterprise\EnterpriseUpgradeEvent
     {
     }
 }

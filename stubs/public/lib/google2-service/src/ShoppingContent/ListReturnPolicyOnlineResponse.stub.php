@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class ListReturnPolicyOnlineResponse extends \Google\Collection
-{
-    protected $collection_key = 'returnPolicies';
-    protected $returnPoliciesType = ReturnPolicyOnline::class;
-    protected $returnPoliciesDataType = 'array';
-    /**
-     * The retrieved return policies.
-     *
-     * @param ReturnPolicyOnline[] $returnPolicies
-     */
-    public function setReturnPolicies($returnPolicies)
+namespace Google\Service\ShoppingContent {
+    class ListReturnPolicyOnlineResponse extends \Google\Collection
     {
+        protected $collection_key = 'returnPolicies';
+        protected $returnPoliciesType = ReturnPolicyOnline::class;
+        protected $returnPoliciesDataType = 'array';
+        /**
+         * The retrieved return policies.
+         *
+         * @param ReturnPolicyOnline[] $returnPolicies
+         */
+        public function setReturnPolicies($returnPolicies)
+        {
+        }
+        /**
+         * @return ReturnPolicyOnline[]
+         */
+        public function getReturnPolicies()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ReturnPolicyOnline[]
+     * Runtime class alias of \Google\Service\ShoppingContent\ListReturnPolicyOnlineResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReturnPolicies()
+    class Google_Service_ShoppingContent_ListReturnPolicyOnlineResponse extends \Google\Service\ShoppingContent\ListReturnPolicyOnlineResponse
     {
     }
 }

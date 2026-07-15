@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1ListDataCollectorsResponse extends \Google\Collection
-{
-    protected $collection_key = 'dataCollectors';
-    protected $dataCollectorsType = GoogleCloudApigeeV1DataCollector::class;
-    protected $dataCollectorsDataType = 'array';
-    /**
-     * Page token that you can include in a ListDataCollectors request to retrieve
-     * the next page. If omitted, no subsequent pages exist.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Data collectors in the specified organization.
-     *
-     * @param GoogleCloudApigeeV1DataCollector[] $dataCollectors
-     */
-    public function setDataCollectors($dataCollectors)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1ListDataCollectorsResponse extends \Google\Collection
     {
+        protected $collection_key = 'dataCollectors';
+        protected $dataCollectorsType = GoogleCloudApigeeV1DataCollector::class;
+        protected $dataCollectorsDataType = 'array';
+        /**
+         * Page token that you can include in a ListDataCollectors request to retrieve
+         * the next page. If omitted, no subsequent pages exist.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Data collectors in the specified organization.
+         *
+         * @param GoogleCloudApigeeV1DataCollector[] $dataCollectors
+         */
+        public function setDataCollectors($dataCollectors)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1DataCollector[]
+         */
+        public function getDataCollectors()
+        {
+        }
+        /**
+         * Page token that you can include in a ListDataCollectors request to retrieve
+         * the next page. If omitted, no subsequent pages exist.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApigeeV1DataCollector[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1ListDataCollectorsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataCollectors()
-    {
-    }
-    /**
-     * Page token that you can include in a ListDataCollectors request to retrieve
-     * the next page. If omitted, no subsequent pages exist.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Apigee_GoogleCloudApigeeV1ListDataCollectorsResponse extends \Google\Service\Apigee\GoogleCloudApigeeV1ListDataCollectorsResponse
     {
     }
 }

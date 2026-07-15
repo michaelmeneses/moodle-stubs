@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1ImportIssueModelMetadata extends \Google\Model
-{
-    /**
-     * The time the operation was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * The time the operation finished running.
-     *
-     * @var string
-     */
-    public $endTime;
-    protected $requestType = GoogleCloudContactcenterinsightsV1ImportIssueModelRequest::class;
-    protected $requestDataType = '';
-    /**
-     * The time the operation was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1ImportIssueModelMetadata extends \Google\Model
     {
+        /**
+         * The time the operation was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * The time the operation finished running.
+         *
+         * @var string
+         */
+        public $endTime;
+        protected $requestType = GoogleCloudContactcenterinsightsV1ImportIssueModelRequest::class;
+        protected $requestDataType = '';
+        /**
+         * The time the operation was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * The time the operation finished running.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * The original import request.
+         *
+         * @param GoogleCloudContactcenterinsightsV1ImportIssueModelRequest $request
+         */
+        public function setRequest(GoogleCloudContactcenterinsightsV1ImportIssueModelRequest $request)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1ImportIssueModelRequest
+         */
+        public function getRequest()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1ImportIssueModelMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * The time the operation finished running.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndTime()
-    {
-    }
-    /**
-     * The original import request.
-     *
-     * @param GoogleCloudContactcenterinsightsV1ImportIssueModelRequest $request
-     */
-    public function setRequest(GoogleCloudContactcenterinsightsV1ImportIssueModelRequest $request)
-    {
-    }
-    /**
-     * @return GoogleCloudContactcenterinsightsV1ImportIssueModelRequest
-     */
-    public function getRequest()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1ImportIssueModelMetadata extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1ImportIssueModelMetadata
     {
     }
 }

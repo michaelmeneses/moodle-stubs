@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BeyondCorp;
-
-class GoogleCloudBeyondcorpAppconnectionsV1alphaAppConnectionGateway extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $appGateway;
-    /**
-     * @var int
-     */
-    public $ingressPort;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @var string
-     */
-    public $uri;
-    /**
-     * @param string
-     */
-    public function setAppGateway($appGateway)
+namespace Google\Service\BeyondCorp {
+    class GoogleCloudBeyondcorpAppconnectionsV1alphaAppConnectionGateway extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $appGateway;
+        /**
+         * @var int
+         */
+        public $ingressPort;
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @var string
+         */
+        public $uri;
+        /**
+         * @param string
+         */
+        public function setAppGateway($appGateway)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAppGateway()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setIngressPort($ingressPort)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getIngressPort()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BeyondCorp\GoogleCloudBeyondcorpAppconnectionsV1alphaAppConnectionGateway registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAppGateway()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setIngressPort($ingressPort)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getIngressPort()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_BeyondCorp_GoogleCloudBeyondcorpAppconnectionsV1alphaAppConnectionGateway extends \Google\Service\BeyondCorp\GoogleCloudBeyondcorpAppconnectionsV1alphaAppConnectionGateway
     {
     }
 }

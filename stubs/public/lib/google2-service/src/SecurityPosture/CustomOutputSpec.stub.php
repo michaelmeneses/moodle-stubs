@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityPosture;
-
-class CustomOutputSpec extends \Google\Collection
-{
-    protected $collection_key = 'properties';
-    protected $propertiesType = Property::class;
-    protected $propertiesDataType = 'array';
-    /**
-     * Optional. The custom source properties that can appear in findings.
-     *
-     * @param Property[] $properties
-     */
-    public function setProperties($properties)
+namespace Google\Service\SecurityPosture {
+    class CustomOutputSpec extends \Google\Collection
     {
+        protected $collection_key = 'properties';
+        protected $propertiesType = Property::class;
+        protected $propertiesDataType = 'array';
+        /**
+         * Optional. The custom source properties that can appear in findings.
+         *
+         * @param Property[] $properties
+         */
+        public function setProperties($properties)
+        {
+        }
+        /**
+         * @return Property[]
+         */
+        public function getProperties()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Property[]
+     * Runtime class alias of \Google\Service\SecurityPosture\CustomOutputSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProperties()
+    class Google_Service_SecurityPosture_CustomOutputSpec extends \Google\Service\SecurityPosture\CustomOutputSpec
     {
     }
 }

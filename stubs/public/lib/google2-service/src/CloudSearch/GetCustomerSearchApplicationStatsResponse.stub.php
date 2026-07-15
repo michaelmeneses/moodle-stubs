@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class GetCustomerSearchApplicationStatsResponse extends \Google\Collection
-{
-    protected $collection_key = 'stats';
-    /**
-     * Average search application count for the given date range.
-     *
-     * @var string
-     */
-    public $averageSearchApplicationCount;
-    protected $statsType = CustomerSearchApplicationStats::class;
-    protected $statsDataType = 'array';
-    /**
-     * Average search application count for the given date range.
-     *
-     * @param string $averageSearchApplicationCount
-     */
-    public function setAverageSearchApplicationCount($averageSearchApplicationCount)
+namespace Google\Service\CloudSearch {
+    class GetCustomerSearchApplicationStatsResponse extends \Google\Collection
     {
+        protected $collection_key = 'stats';
+        /**
+         * Average search application count for the given date range.
+         *
+         * @var string
+         */
+        public $averageSearchApplicationCount;
+        protected $statsType = CustomerSearchApplicationStats::class;
+        protected $statsDataType = 'array';
+        /**
+         * Average search application count for the given date range.
+         *
+         * @param string $averageSearchApplicationCount
+         */
+        public function setAverageSearchApplicationCount($averageSearchApplicationCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAverageSearchApplicationCount()
+        {
+        }
+        /**
+         * Search application stats by date.
+         *
+         * @param CustomerSearchApplicationStats[] $stats
+         */
+        public function setStats($stats)
+        {
+        }
+        /**
+         * @return CustomerSearchApplicationStats[]
+         */
+        public function getStats()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\GetCustomerSearchApplicationStatsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAverageSearchApplicationCount()
-    {
-    }
-    /**
-     * Search application stats by date.
-     *
-     * @param CustomerSearchApplicationStats[] $stats
-     */
-    public function setStats($stats)
-    {
-    }
-    /**
-     * @return CustomerSearchApplicationStats[]
-     */
-    public function getStats()
+    class Google_Service_CloudSearch_GetCustomerSearchApplicationStatsResponse extends \Google\Service\CloudSearch\GetCustomerSearchApplicationStatsResponse
     {
     }
 }

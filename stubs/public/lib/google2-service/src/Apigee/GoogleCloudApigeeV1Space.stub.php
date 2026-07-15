@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1Space extends \Google\Model
-{
-    /**
-     * Output only. Create timestamp of the space.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Optional. Display name of the space.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Output only. Identifier. Id of the space. This field is used as the
-     * resource name, and must follow [AIP-122](https://google.aip.dev/122)
-     * guidelines.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. Last modified timestamp of the space.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. Create timestamp of the space.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1Space extends \Google\Model
     {
+        /**
+         * Output only. Create timestamp of the space.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Optional. Display name of the space.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Output only. Identifier. Id of the space. This field is used as the
+         * resource name, and must follow [AIP-122](https://google.aip.dev/122)
+         * guidelines.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. Last modified timestamp of the space.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. Create timestamp of the space.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Optional. Display name of the space.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Output only. Identifier. Id of the space. This field is used as the
+         * resource name, and must follow [AIP-122](https://google.aip.dev/122)
+         * guidelines.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. Last modified timestamp of the space.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1Space registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Optional. Display name of the space.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Output only. Identifier. Id of the space. This field is used as the
-     * resource name, and must follow [AIP-122](https://google.aip.dev/122)
-     * guidelines.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. Last modified timestamp of the space.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_Apigee_GoogleCloudApigeeV1Space extends \Google\Service\Apigee\GoogleCloudApigeeV1Space
     {
     }
 }

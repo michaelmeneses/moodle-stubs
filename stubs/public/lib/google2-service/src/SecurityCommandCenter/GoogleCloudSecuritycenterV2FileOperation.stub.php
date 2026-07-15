@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GoogleCloudSecuritycenterV2FileOperation extends \Google\Model
-{
-    /**
-     * The operation is unspecified.
-     */
-    public const TYPE_OPERATION_TYPE_UNSPECIFIED = 'OPERATION_TYPE_UNSPECIFIED';
-    /**
-     * Represents an open operation.
-     */
-    public const TYPE_OPEN = 'OPEN';
-    /**
-     * Represents a read operation.
-     */
-    public const TYPE_READ = 'READ';
-    /**
-     * Represents a rename operation.
-     */
-    public const TYPE_RENAME = 'RENAME';
-    /**
-     * Represents a write operation.
-     */
-    public const TYPE_WRITE = 'WRITE';
-    /**
-     * Represents an execute operation.
-     */
-    public const TYPE_EXECUTE = 'EXECUTE';
-    /**
-     * The type of the operation
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The type of the operation
-     *
-     * Accepted values: OPERATION_TYPE_UNSPECIFIED, OPEN, READ, RENAME, WRITE,
-     * EXECUTE
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
+namespace Google\Service\SecurityCommandCenter {
+    class GoogleCloudSecuritycenterV2FileOperation extends \Google\Model
     {
+        /**
+         * The operation is unspecified.
+         */
+        public const TYPE_OPERATION_TYPE_UNSPECIFIED = 'OPERATION_TYPE_UNSPECIFIED';
+        /**
+         * Represents an open operation.
+         */
+        public const TYPE_OPEN = 'OPEN';
+        /**
+         * Represents a read operation.
+         */
+        public const TYPE_READ = 'READ';
+        /**
+         * Represents a rename operation.
+         */
+        public const TYPE_RENAME = 'RENAME';
+        /**
+         * Represents a write operation.
+         */
+        public const TYPE_WRITE = 'WRITE';
+        /**
+         * Represents an execute operation.
+         */
+        public const TYPE_EXECUTE = 'EXECUTE';
+        /**
+         * The type of the operation
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The type of the operation
+         *
+         * Accepted values: OPERATION_TYPE_UNSPECIFIED, OPEN, READ, RENAME, WRITE,
+         * EXECUTE
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::TYPE_*
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2FileOperation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getType()
+    class Google_Service_SecurityCommandCenter_GoogleCloudSecuritycenterV2FileOperation extends \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2FileOperation
     {
     }
 }

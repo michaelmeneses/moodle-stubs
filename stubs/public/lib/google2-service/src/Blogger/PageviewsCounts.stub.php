@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Blogger;
-
-class PageviewsCounts extends \Google\Model
-{
-    public const TIME_RANGE_ALL_TIME = 'ALL_TIME';
-    public const TIME_RANGE_THIRTY_DAYS = 'THIRTY_DAYS';
-    public const TIME_RANGE_SEVEN_DAYS = 'SEVEN_DAYS';
-    /**
-     * Count of page views for the given time range.
-     *
-     * @var string
-     */
-    public $count;
-    /**
-     * Time range the given count applies to.
-     *
-     * @var string
-     */
-    public $timeRange;
-    /**
-     * Count of page views for the given time range.
-     *
-     * @param string $count
-     */
-    public function setCount($count)
+namespace Google\Service\Blogger {
+    class PageviewsCounts extends \Google\Model
     {
+        public const TIME_RANGE_ALL_TIME = 'ALL_TIME';
+        public const TIME_RANGE_THIRTY_DAYS = 'THIRTY_DAYS';
+        public const TIME_RANGE_SEVEN_DAYS = 'SEVEN_DAYS';
+        /**
+         * Count of page views for the given time range.
+         *
+         * @var string
+         */
+        public $count;
+        /**
+         * Time range the given count applies to.
+         *
+         * @var string
+         */
+        public $timeRange;
+        /**
+         * Count of page views for the given time range.
+         *
+         * @param string $count
+         */
+        public function setCount($count)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCount()
+        {
+        }
+        /**
+         * Time range the given count applies to.
+         *
+         * Accepted values: ALL_TIME, THIRTY_DAYS, SEVEN_DAYS
+         *
+         * @param self::TIME_RANGE_* $timeRange
+         */
+        public function setTimeRange($timeRange)
+        {
+        }
+        /**
+         * @return self::TIME_RANGE_*
+         */
+        public function getTimeRange()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Blogger\PageviewsCounts registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCount()
-    {
-    }
-    /**
-     * Time range the given count applies to.
-     *
-     * Accepted values: ALL_TIME, THIRTY_DAYS, SEVEN_DAYS
-     *
-     * @param self::TIME_RANGE_* $timeRange
-     */
-    public function setTimeRange($timeRange)
-    {
-    }
-    /**
-     * @return self::TIME_RANGE_*
-     */
-    public function getTimeRange()
+    class Google_Service_Blogger_PageviewsCounts extends \Google\Service\Blogger\PageviewsCounts
     {
     }
 }

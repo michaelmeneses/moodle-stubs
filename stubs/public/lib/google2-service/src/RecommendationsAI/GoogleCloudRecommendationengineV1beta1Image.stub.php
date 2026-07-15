@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecommendationsAI;
-
-class GoogleCloudRecommendationengineV1beta1Image extends \Google\Model
-{
-    /**
-     * Optional. Height of the image in number of pixels.
-     *
-     * @var int
-     */
-    public $height;
-    /**
-     * Required. URL of the image with a length limit of 5 KiB.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * Optional. Width of the image in number of pixels.
-     *
-     * @var int
-     */
-    public $width;
-    /**
-     * Optional. Height of the image in number of pixels.
-     *
-     * @param int $height
-     */
-    public function setHeight($height)
+namespace Google\Service\RecommendationsAI {
+    class GoogleCloudRecommendationengineV1beta1Image extends \Google\Model
     {
+        /**
+         * Optional. Height of the image in number of pixels.
+         *
+         * @var int
+         */
+        public $height;
+        /**
+         * Required. URL of the image with a length limit of 5 KiB.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * Optional. Width of the image in number of pixels.
+         *
+         * @var int
+         */
+        public $width;
+        /**
+         * Optional. Height of the image in number of pixels.
+         *
+         * @param int $height
+         */
+        public function setHeight($height)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getHeight()
+        {
+        }
+        /**
+         * Required. URL of the image with a length limit of 5 KiB.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
+        /**
+         * Optional. Width of the image in number of pixels.
+         *
+         * @param int $width
+         */
+        public function setWidth($width)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getWidth()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1Image registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHeight()
-    {
-    }
-    /**
-     * Required. URL of the image with a length limit of 5 KiB.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
-    {
-    }
-    /**
-     * Optional. Width of the image in number of pixels.
-     *
-     * @param int $width
-     */
-    public function setWidth($width)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getWidth()
+    class Google_Service_RecommendationsAI_GoogleCloudRecommendationengineV1beta1Image extends \Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1Image
     {
     }
 }

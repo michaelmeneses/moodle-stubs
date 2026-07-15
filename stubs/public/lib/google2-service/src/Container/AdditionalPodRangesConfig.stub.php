@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class AdditionalPodRangesConfig extends \Google\Collection
-{
-    protected $collection_key = 'podRangeNames';
-    protected $podRangeInfoType = RangeInfo::class;
-    protected $podRangeInfoDataType = 'array';
-    /**
-     * Name for pod secondary ipv4 range which has the actual range defined ahead.
-     *
-     * @var string[]
-     */
-    public $podRangeNames;
-    /**
-     * Output only. Information for additional pod range.
-     *
-     * @param RangeInfo[] $podRangeInfo
-     */
-    public function setPodRangeInfo($podRangeInfo)
+namespace Google\Service\Container {
+    class AdditionalPodRangesConfig extends \Google\Collection
     {
+        protected $collection_key = 'podRangeNames';
+        protected $podRangeInfoType = RangeInfo::class;
+        protected $podRangeInfoDataType = 'array';
+        /**
+         * Name for pod secondary ipv4 range which has the actual range defined ahead.
+         *
+         * @var string[]
+         */
+        public $podRangeNames;
+        /**
+         * Output only. Information for additional pod range.
+         *
+         * @param RangeInfo[] $podRangeInfo
+         */
+        public function setPodRangeInfo($podRangeInfo)
+        {
+        }
+        /**
+         * @return RangeInfo[]
+         */
+        public function getPodRangeInfo()
+        {
+        }
+        /**
+         * Name for pod secondary ipv4 range which has the actual range defined ahead.
+         *
+         * @param string[] $podRangeNames
+         */
+        public function setPodRangeNames($podRangeNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPodRangeNames()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RangeInfo[]
+     * Runtime class alias of \Google\Service\Container\AdditionalPodRangesConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPodRangeInfo()
-    {
-    }
-    /**
-     * Name for pod secondary ipv4 range which has the actual range defined ahead.
-     *
-     * @param string[] $podRangeNames
-     */
-    public function setPodRangeNames($podRangeNames)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPodRangeNames()
+    class Google_Service_Container_AdditionalPodRangesConfig extends \Google\Service\Container\AdditionalPodRangesConfig
     {
     }
 }

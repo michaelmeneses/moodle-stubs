@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class SubscriptionPurchasesAcknowledgeRequest extends \Google\Model
-{
-    /**
-     * Payload to attach to the purchase.
-     *
-     * @var string
-     */
-    public $developerPayload;
-    protected $externalAccountIdsType = ExternalAccountIds::class;
-    protected $externalAccountIdsDataType = '';
-    /**
-     * Payload to attach to the purchase.
-     *
-     * @param string $developerPayload
-     */
-    public function setDeveloperPayload($developerPayload)
+namespace Google\Service\AndroidPublisher {
+    class SubscriptionPurchasesAcknowledgeRequest extends \Google\Model
     {
+        /**
+         * Payload to attach to the purchase.
+         *
+         * @var string
+         */
+        public $developerPayload;
+        protected $externalAccountIdsType = ExternalAccountIds::class;
+        protected $externalAccountIdsDataType = '';
+        /**
+         * Payload to attach to the purchase.
+         *
+         * @param string $developerPayload
+         */
+        public function setDeveloperPayload($developerPayload)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeveloperPayload()
+        {
+        }
+        /**
+         * Optional. User account identifier in your app.
+         *
+         * @param ExternalAccountIds $externalAccountIds
+         */
+        public function setExternalAccountIds(ExternalAccountIds $externalAccountIds)
+        {
+        }
+        /**
+         * @return ExternalAccountIds
+         */
+        public function getExternalAccountIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidPublisher\SubscriptionPurchasesAcknowledgeRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeveloperPayload()
-    {
-    }
-    /**
-     * Optional. User account identifier in your app.
-     *
-     * @param ExternalAccountIds $externalAccountIds
-     */
-    public function setExternalAccountIds(ExternalAccountIds $externalAccountIds)
-    {
-    }
-    /**
-     * @return ExternalAccountIds
-     */
-    public function getExternalAccountIds()
+    class Google_Service_AndroidPublisher_SubscriptionPurchasesAcknowledgeRequest extends \Google\Service\AndroidPublisher\SubscriptionPurchasesAcknowledgeRequest
     {
     }
 }

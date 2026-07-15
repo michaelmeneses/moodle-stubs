@@ -21,75 +21,84 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetAppFiles;
-
-class RestoreBackupFilesRequest extends \Google\Collection
-{
-    protected $collection_key = 'fileList';
-    /**
-     * Required. The backup resource name, in the format `projects/{project_id}/lo
-     * cations/{location}/backupVaults/{backup_vault_id}/backups/{backup_id}`
-     *
-     * @var string
-     */
-    public $backup;
-    /**
-     * Required. List of files to be restored, specified by their absolute path in
-     * the source volume.
-     *
-     * @var string[]
-     */
-    public $fileList;
-    /**
-     * Optional. Absolute directory path in the destination volume. This is
-     * required if the `file_list` is provided.
-     *
-     * @var string
-     */
-    public $restoreDestinationPath;
-    /**
-     * Required. The backup resource name, in the format `projects/{project_id}/lo
-     * cations/{location}/backupVaults/{backup_vault_id}/backups/{backup_id}`
-     *
-     * @param string $backup
-     */
-    public function setBackup($backup)
+namespace Google\Service\NetAppFiles {
+    class RestoreBackupFilesRequest extends \Google\Collection
     {
+        protected $collection_key = 'fileList';
+        /**
+         * Required. The backup resource name, in the format `projects/{project_id}/lo
+         * cations/{location}/backupVaults/{backup_vault_id}/backups/{backup_id}`
+         *
+         * @var string
+         */
+        public $backup;
+        /**
+         * Required. List of files to be restored, specified by their absolute path in
+         * the source volume.
+         *
+         * @var string[]
+         */
+        public $fileList;
+        /**
+         * Optional. Absolute directory path in the destination volume. This is
+         * required if the `file_list` is provided.
+         *
+         * @var string
+         */
+        public $restoreDestinationPath;
+        /**
+         * Required. The backup resource name, in the format `projects/{project_id}/lo
+         * cations/{location}/backupVaults/{backup_vault_id}/backups/{backup_id}`
+         *
+         * @param string $backup
+         */
+        public function setBackup($backup)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBackup()
+        {
+        }
+        /**
+         * Required. List of files to be restored, specified by their absolute path in
+         * the source volume.
+         *
+         * @param string[] $fileList
+         */
+        public function setFileList($fileList)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getFileList()
+        {
+        }
+        /**
+         * Optional. Absolute directory path in the destination volume. This is
+         * required if the `file_list` is provided.
+         *
+         * @param string $restoreDestinationPath
+         */
+        public function setRestoreDestinationPath($restoreDestinationPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRestoreDestinationPath()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetAppFiles\RestoreBackupFilesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackup()
-    {
-    }
-    /**
-     * Required. List of files to be restored, specified by their absolute path in
-     * the source volume.
-     *
-     * @param string[] $fileList
-     */
-    public function setFileList($fileList)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getFileList()
-    {
-    }
-    /**
-     * Optional. Absolute directory path in the destination volume. This is
-     * required if the `file_list` is provided.
-     *
-     * @param string $restoreDestinationPath
-     */
-    public function setRestoreDestinationPath($restoreDestinationPath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRestoreDestinationPath()
+    class Google_Service_NetAppFiles_RestoreBackupFilesRequest extends \Google\Service\NetAppFiles\RestoreBackupFilesRequest
     {
     }
 }

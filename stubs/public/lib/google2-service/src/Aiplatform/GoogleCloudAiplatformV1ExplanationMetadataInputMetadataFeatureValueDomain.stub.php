@@ -21,96 +21,105 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ExplanationMetadataInputMetadataFeatureValueDomain extends \Google\Model
-{
-    /**
-     * The maximum permissible value for this feature.
-     *
-     * @var float
-     */
-    public $maxValue;
-    /**
-     * The minimum permissible value for this feature.
-     *
-     * @var float
-     */
-    public $minValue;
-    /**
-     * If this input feature has been normalized to a mean value of 0, the
-     * original_mean specifies the mean value of the domain prior to
-     * normalization.
-     *
-     * @var float
-     */
-    public $originalMean;
-    /**
-     * If this input feature has been normalized to a standard deviation of 1.0,
-     * the original_stddev specifies the standard deviation of the domain prior to
-     * normalization.
-     *
-     * @var float
-     */
-    public $originalStddev;
-    /**
-     * The maximum permissible value for this feature.
-     *
-     * @param float $maxValue
-     */
-    public function setMaxValue($maxValue)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ExplanationMetadataInputMetadataFeatureValueDomain extends \Google\Model
     {
+        /**
+         * The maximum permissible value for this feature.
+         *
+         * @var float
+         */
+        public $maxValue;
+        /**
+         * The minimum permissible value for this feature.
+         *
+         * @var float
+         */
+        public $minValue;
+        /**
+         * If this input feature has been normalized to a mean value of 0, the
+         * original_mean specifies the mean value of the domain prior to
+         * normalization.
+         *
+         * @var float
+         */
+        public $originalMean;
+        /**
+         * If this input feature has been normalized to a standard deviation of 1.0,
+         * the original_stddev specifies the standard deviation of the domain prior to
+         * normalization.
+         *
+         * @var float
+         */
+        public $originalStddev;
+        /**
+         * The maximum permissible value for this feature.
+         *
+         * @param float $maxValue
+         */
+        public function setMaxValue($maxValue)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getMaxValue()
+        {
+        }
+        /**
+         * The minimum permissible value for this feature.
+         *
+         * @param float $minValue
+         */
+        public function setMinValue($minValue)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getMinValue()
+        {
+        }
+        /**
+         * If this input feature has been normalized to a mean value of 0, the
+         * original_mean specifies the mean value of the domain prior to
+         * normalization.
+         *
+         * @param float $originalMean
+         */
+        public function setOriginalMean($originalMean)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getOriginalMean()
+        {
+        }
+        /**
+         * If this input feature has been normalized to a standard deviation of 1.0,
+         * the original_stddev specifies the standard deviation of the domain prior to
+         * normalization.
+         *
+         * @param float $originalStddev
+         */
+        public function setOriginalStddev($originalStddev)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getOriginalStddev()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ExplanationMetadataInputMetadataFeatureValueDomain registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaxValue()
-    {
-    }
-    /**
-     * The minimum permissible value for this feature.
-     *
-     * @param float $minValue
-     */
-    public function setMinValue($minValue)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getMinValue()
-    {
-    }
-    /**
-     * If this input feature has been normalized to a mean value of 0, the
-     * original_mean specifies the mean value of the domain prior to
-     * normalization.
-     *
-     * @param float $originalMean
-     */
-    public function setOriginalMean($originalMean)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getOriginalMean()
-    {
-    }
-    /**
-     * If this input feature has been normalized to a standard deviation of 1.0,
-     * the original_stddev specifies the standard deviation of the domain prior to
-     * normalization.
-     *
-     * @param float $originalStddev
-     */
-    public function setOriginalStddev($originalStddev)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getOriginalStddev()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ExplanationMetadataInputMetadataFeatureValueDomain extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ExplanationMetadataInputMetadataFeatureValueDomain
     {
     }
 }

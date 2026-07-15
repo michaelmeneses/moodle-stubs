@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class TextRotation extends \Google\Model
-{
-    /**
-     * The angle between the standard orientation and the desired orientation.
-     * Measured in degrees. Valid values are between -90 and 90. Positive angles
-     * are angled upwards, negative are angled downwards. Note: For LTR text
-     * direction positive angles are in the counterclockwise direction, whereas
-     * for RTL they are in the clockwise direction
-     *
-     * @var int
-     */
-    public $angle;
-    /**
-     * If true, text reads top to bottom, but the orientation of individual
-     * characters is unchanged. For example: | V | | e | | r | | t | | i | | c | |
-     * a | | l |
-     *
-     * @var bool
-     */
-    public $vertical;
-    /**
-     * The angle between the standard orientation and the desired orientation.
-     * Measured in degrees. Valid values are between -90 and 90. Positive angles
-     * are angled upwards, negative are angled downwards. Note: For LTR text
-     * direction positive angles are in the counterclockwise direction, whereas
-     * for RTL they are in the clockwise direction
-     *
-     * @param int $angle
-     */
-    public function setAngle($angle)
+namespace Google\Service\Sheets {
+    class TextRotation extends \Google\Model
     {
+        /**
+         * The angle between the standard orientation and the desired orientation.
+         * Measured in degrees. Valid values are between -90 and 90. Positive angles
+         * are angled upwards, negative are angled downwards. Note: For LTR text
+         * direction positive angles are in the counterclockwise direction, whereas
+         * for RTL they are in the clockwise direction
+         *
+         * @var int
+         */
+        public $angle;
+        /**
+         * If true, text reads top to bottom, but the orientation of individual
+         * characters is unchanged. For example: | V | | e | | r | | t | | i | | c | |
+         * a | | l |
+         *
+         * @var bool
+         */
+        public $vertical;
+        /**
+         * The angle between the standard orientation and the desired orientation.
+         * Measured in degrees. Valid values are between -90 and 90. Positive angles
+         * are angled upwards, negative are angled downwards. Note: For LTR text
+         * direction positive angles are in the counterclockwise direction, whereas
+         * for RTL they are in the clockwise direction
+         *
+         * @param int $angle
+         */
+        public function setAngle($angle)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getAngle()
+        {
+        }
+        /**
+         * If true, text reads top to bottom, but the orientation of individual
+         * characters is unchanged. For example: | V | | e | | r | | t | | i | | c | |
+         * a | | l |
+         *
+         * @param bool $vertical
+         */
+        public function setVertical($vertical)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getVertical()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Sheets\TextRotation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAngle()
-    {
-    }
-    /**
-     * If true, text reads top to bottom, but the orientation of individual
-     * characters is unchanged. For example: | V | | e | | r | | t | | i | | c | |
-     * a | | l |
-     *
-     * @param bool $vertical
-     */
-    public function setVertical($vertical)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getVertical()
+    class Google_Service_Sheets_TextRotation extends \Google\Service\Sheets\TextRotation
     {
     }
 }

@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class EncryptionAndServerValidation extends \Google\Model
-{
-    /**
-     * Optional. Input only. PEM-encoded certificate of the CA that signed the
-     * source database server's certificate.
-     *
-     * @var string
-     */
-    public $caCertificate;
-    /**
-     * Optional. The hostname mentioned in the Subject or SAN extension of the
-     * server certificate. This field is used for bypassing the hostname
-     * validation while verifying server certificate. This is required for
-     * scenarios where the host name that datastream connects to is different from
-     * the certificate's subject. This specifically happens for private
-     * connectivity. It could also happen when the customer provides a public IP
-     * in connection profile but the same is not present in the server
-     * certificate.
-     *
-     * @var string
-     */
-    public $serverCertificateHostname;
-    /**
-     * Optional. Input only. PEM-encoded certificate of the CA that signed the
-     * source database server's certificate.
-     *
-     * @param string $caCertificate
-     */
-    public function setCaCertificate($caCertificate)
+namespace Google\Service\Datastream {
+    class EncryptionAndServerValidation extends \Google\Model
     {
+        /**
+         * Optional. Input only. PEM-encoded certificate of the CA that signed the
+         * source database server's certificate.
+         *
+         * @var string
+         */
+        public $caCertificate;
+        /**
+         * Optional. The hostname mentioned in the Subject or SAN extension of the
+         * server certificate. This field is used for bypassing the hostname
+         * validation while verifying server certificate. This is required for
+         * scenarios where the host name that datastream connects to is different from
+         * the certificate's subject. This specifically happens for private
+         * connectivity. It could also happen when the customer provides a public IP
+         * in connection profile but the same is not present in the server
+         * certificate.
+         *
+         * @var string
+         */
+        public $serverCertificateHostname;
+        /**
+         * Optional. Input only. PEM-encoded certificate of the CA that signed the
+         * source database server's certificate.
+         *
+         * @param string $caCertificate
+         */
+        public function setCaCertificate($caCertificate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCaCertificate()
+        {
+        }
+        /**
+         * Optional. The hostname mentioned in the Subject or SAN extension of the
+         * server certificate. This field is used for bypassing the hostname
+         * validation while verifying server certificate. This is required for
+         * scenarios where the host name that datastream connects to is different from
+         * the certificate's subject. This specifically happens for private
+         * connectivity. It could also happen when the customer provides a public IP
+         * in connection profile but the same is not present in the server
+         * certificate.
+         *
+         * @param string $serverCertificateHostname
+         */
+        public function setServerCertificateHostname($serverCertificateHostname)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServerCertificateHostname()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Datastream\EncryptionAndServerValidation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCaCertificate()
-    {
-    }
-    /**
-     * Optional. The hostname mentioned in the Subject or SAN extension of the
-     * server certificate. This field is used for bypassing the hostname
-     * validation while verifying server certificate. This is required for
-     * scenarios where the host name that datastream connects to is different from
-     * the certificate's subject. This specifically happens for private
-     * connectivity. It could also happen when the customer provides a public IP
-     * in connection profile but the same is not present in the server
-     * certificate.
-     *
-     * @param string $serverCertificateHostname
-     */
-    public function setServerCertificateHostname($serverCertificateHostname)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServerCertificateHostname()
+    class Google_Service_Datastream_EncryptionAndServerValidation extends \Google\Service\Datastream\EncryptionAndServerValidation
     {
     }
 }

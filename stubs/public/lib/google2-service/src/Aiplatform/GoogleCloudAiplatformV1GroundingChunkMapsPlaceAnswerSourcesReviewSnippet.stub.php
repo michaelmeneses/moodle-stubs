@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1GroundingChunkMapsPlaceAnswerSourcesReviewSnippet extends \Google\Model
-{
-    /**
-     * A link to show the review on Google Maps.
-     *
-     * @var string
-     */
-    public $googleMapsUri;
-    /**
-     * The ID of the review that is being referenced.
-     *
-     * @var string
-     */
-    public $reviewId;
-    /**
-     * The title of the review.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * A link to show the review on Google Maps.
-     *
-     * @param string $googleMapsUri
-     */
-    public function setGoogleMapsUri($googleMapsUri)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1GroundingChunkMapsPlaceAnswerSourcesReviewSnippet extends \Google\Model
     {
+        /**
+         * A link to show the review on Google Maps.
+         *
+         * @var string
+         */
+        public $googleMapsUri;
+        /**
+         * The ID of the review that is being referenced.
+         *
+         * @var string
+         */
+        public $reviewId;
+        /**
+         * The title of the review.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * A link to show the review on Google Maps.
+         *
+         * @param string $googleMapsUri
+         */
+        public function setGoogleMapsUri($googleMapsUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGoogleMapsUri()
+        {
+        }
+        /**
+         * The ID of the review that is being referenced.
+         *
+         * @param string $reviewId
+         */
+        public function setReviewId($reviewId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReviewId()
+        {
+        }
+        /**
+         * The title of the review.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1GroundingChunkMapsPlaceAnswerSourcesReviewSnippet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGoogleMapsUri()
-    {
-    }
-    /**
-     * The ID of the review that is being referenced.
-     *
-     * @param string $reviewId
-     */
-    public function setReviewId($reviewId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReviewId()
-    {
-    }
-    /**
-     * The title of the review.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1GroundingChunkMapsPlaceAnswerSourcesReviewSnippet extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1GroundingChunkMapsPlaceAnswerSourcesReviewSnippet
     {
     }
 }

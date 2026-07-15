@@ -21,145 +21,154 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromePolicy;
-
-class GoogleChromePolicyV1PolicySchemaFieldDescription extends \Google\Collection
-{
-    protected $collection_key = 'requiredItems';
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var string
-     */
-    public $field;
-    protected $fieldDependenciesType = GoogleChromePolicyV1PolicySchemaFieldDependencies::class;
-    protected $fieldDependenciesDataType = 'array';
-    /**
-     * @var string
-     */
-    public $fieldDescription;
-    /**
-     * @var string
-     */
-    public $inputConstraint;
-    protected $knownValueDescriptionsType = GoogleChromePolicyV1PolicySchemaFieldKnownValueDescription::class;
-    protected $knownValueDescriptionsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $name;
-    protected $nestedFieldDescriptionsType = GoogleChromePolicyV1PolicySchemaFieldDescription::class;
-    protected $nestedFieldDescriptionsDataType = 'array';
-    protected $requiredItemsType = GoogleChromePolicyV1PolicySchemaRequiredItems::class;
-    protected $requiredItemsDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setDescription($description)
+namespace Google\Service\ChromePolicy {
+    class GoogleChromePolicyV1PolicySchemaFieldDescription extends \Google\Collection
     {
+        protected $collection_key = 'requiredItems';
+        /**
+         * @var string
+         */
+        public $description;
+        /**
+         * @var string
+         */
+        public $field;
+        protected $fieldDependenciesType = GoogleChromePolicyV1PolicySchemaFieldDependencies::class;
+        protected $fieldDependenciesDataType = 'array';
+        /**
+         * @var string
+         */
+        public $fieldDescription;
+        /**
+         * @var string
+         */
+        public $inputConstraint;
+        protected $knownValueDescriptionsType = GoogleChromePolicyV1PolicySchemaFieldKnownValueDescription::class;
+        protected $knownValueDescriptionsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $name;
+        protected $nestedFieldDescriptionsType = GoogleChromePolicyV1PolicySchemaFieldDescription::class;
+        protected $nestedFieldDescriptionsDataType = 'array';
+        protected $requiredItemsType = GoogleChromePolicyV1PolicySchemaRequiredItems::class;
+        protected $requiredItemsDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setField($field)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getField()
+        {
+        }
+        /**
+         * @param GoogleChromePolicyV1PolicySchemaFieldDependencies[]
+         */
+        public function setFieldDependencies($fieldDependencies)
+        {
+        }
+        /**
+         * @return GoogleChromePolicyV1PolicySchemaFieldDependencies[]
+         */
+        public function getFieldDependencies()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setFieldDescription($fieldDescription)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFieldDescription()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setInputConstraint($inputConstraint)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInputConstraint()
+        {
+        }
+        /**
+         * @param GoogleChromePolicyV1PolicySchemaFieldKnownValueDescription[]
+         */
+        public function setKnownValueDescriptions($knownValueDescriptions)
+        {
+        }
+        /**
+         * @return GoogleChromePolicyV1PolicySchemaFieldKnownValueDescription[]
+         */
+        public function getKnownValueDescriptions()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param GoogleChromePolicyV1PolicySchemaFieldDescription[]
+         */
+        public function setNestedFieldDescriptions($nestedFieldDescriptions)
+        {
+        }
+        /**
+         * @return GoogleChromePolicyV1PolicySchemaFieldDescription[]
+         */
+        public function getNestedFieldDescriptions()
+        {
+        }
+        /**
+         * @param GoogleChromePolicyV1PolicySchemaRequiredItems[]
+         */
+        public function setRequiredItems($requiredItems)
+        {
+        }
+        /**
+         * @return GoogleChromePolicyV1PolicySchemaRequiredItems[]
+         */
+        public function getRequiredItems()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromePolicy\GoogleChromePolicyV1PolicySchemaFieldDescription registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setField($field)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getField()
-    {
-    }
-    /**
-     * @param GoogleChromePolicyV1PolicySchemaFieldDependencies[]
-     */
-    public function setFieldDependencies($fieldDependencies)
-    {
-    }
-    /**
-     * @return GoogleChromePolicyV1PolicySchemaFieldDependencies[]
-     */
-    public function getFieldDependencies()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setFieldDescription($fieldDescription)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFieldDescription()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setInputConstraint($inputConstraint)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInputConstraint()
-    {
-    }
-    /**
-     * @param GoogleChromePolicyV1PolicySchemaFieldKnownValueDescription[]
-     */
-    public function setKnownValueDescriptions($knownValueDescriptions)
-    {
-    }
-    /**
-     * @return GoogleChromePolicyV1PolicySchemaFieldKnownValueDescription[]
-     */
-    public function getKnownValueDescriptions()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param GoogleChromePolicyV1PolicySchemaFieldDescription[]
-     */
-    public function setNestedFieldDescriptions($nestedFieldDescriptions)
-    {
-    }
-    /**
-     * @return GoogleChromePolicyV1PolicySchemaFieldDescription[]
-     */
-    public function getNestedFieldDescriptions()
-    {
-    }
-    /**
-     * @param GoogleChromePolicyV1PolicySchemaRequiredItems[]
-     */
-    public function setRequiredItems($requiredItems)
-    {
-    }
-    /**
-     * @return GoogleChromePolicyV1PolicySchemaRequiredItems[]
-     */
-    public function getRequiredItems()
+    class Google_Service_ChromePolicy_GoogleChromePolicyV1PolicySchemaFieldDescription extends \Google\Service\ChromePolicy\GoogleChromePolicyV1PolicySchemaFieldDescription
     {
     }
 }

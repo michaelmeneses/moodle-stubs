@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceUsage;
-
-class CustomError extends \Google\Collection
-{
-    protected $collection_key = 'types';
-    protected $rulesType = CustomErrorRule::class;
-    protected $rulesDataType = 'array';
-    /**
-     * The list of custom error detail types, e.g. 'google.foo.v1.CustomError'.
-     *
-     * @var string[]
-     */
-    public $types;
-    /**
-     * The list of custom error rules that apply to individual API messages.
-     * **NOTE:** All service configuration rules follow "last one wins" order.
-     *
-     * @param CustomErrorRule[] $rules
-     */
-    public function setRules($rules)
+namespace Google\Service\ServiceUsage {
+    class CustomError extends \Google\Collection
     {
+        protected $collection_key = 'types';
+        protected $rulesType = CustomErrorRule::class;
+        protected $rulesDataType = 'array';
+        /**
+         * The list of custom error detail types, e.g. 'google.foo.v1.CustomError'.
+         *
+         * @var string[]
+         */
+        public $types;
+        /**
+         * The list of custom error rules that apply to individual API messages.
+         * **NOTE:** All service configuration rules follow "last one wins" order.
+         *
+         * @param CustomErrorRule[] $rules
+         */
+        public function setRules($rules)
+        {
+        }
+        /**
+         * @return CustomErrorRule[]
+         */
+        public function getRules()
+        {
+        }
+        /**
+         * The list of custom error detail types, e.g. 'google.foo.v1.CustomError'.
+         *
+         * @param string[] $types
+         */
+        public function setTypes($types)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTypes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CustomErrorRule[]
+     * Runtime class alias of \Google\Service\ServiceUsage\CustomError registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRules()
-    {
-    }
-    /**
-     * The list of custom error detail types, e.g. 'google.foo.v1.CustomError'.
-     *
-     * @param string[] $types
-     */
-    public function setTypes($types)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTypes()
+    class Google_Service_ServiceUsage_CustomError extends \Google\Service\ServiceUsage\CustomError
     {
     }
 }

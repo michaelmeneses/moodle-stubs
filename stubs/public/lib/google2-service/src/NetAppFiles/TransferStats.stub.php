@@ -21,172 +21,181 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetAppFiles;
-
-class TransferStats extends \Google\Model
-{
-    /**
-     * Lag duration indicates the duration by which Destination region volume
-     * content lags behind the primary region volume content.
-     *
-     * @var string
-     */
-    public $lagDuration;
-    /**
-     * Last transfer size in bytes.
-     *
-     * @var string
-     */
-    public $lastTransferBytes;
-    /**
-     * Time taken during last transfer.
-     *
-     * @var string
-     */
-    public $lastTransferDuration;
-    /**
-     * Time when last transfer completed.
-     *
-     * @var string
-     */
-    public $lastTransferEndTime;
-    /**
-     * A message describing the cause of the last transfer failure.
-     *
-     * @var string
-     */
-    public $lastTransferError;
-    /**
-     * Cumulative time taken across all transfers for the replication
-     * relationship.
-     *
-     * @var string
-     */
-    public $totalTransferDuration;
-    /**
-     * Cumulative bytes transferred so far for the replication relationship.
-     *
-     * @var string
-     */
-    public $transferBytes;
-    /**
-     * Time when progress was updated last.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Lag duration indicates the duration by which Destination region volume
-     * content lags behind the primary region volume content.
-     *
-     * @param string $lagDuration
-     */
-    public function setLagDuration($lagDuration)
+namespace Google\Service\NetAppFiles {
+    class TransferStats extends \Google\Model
     {
+        /**
+         * Lag duration indicates the duration by which Destination region volume
+         * content lags behind the primary region volume content.
+         *
+         * @var string
+         */
+        public $lagDuration;
+        /**
+         * Last transfer size in bytes.
+         *
+         * @var string
+         */
+        public $lastTransferBytes;
+        /**
+         * Time taken during last transfer.
+         *
+         * @var string
+         */
+        public $lastTransferDuration;
+        /**
+         * Time when last transfer completed.
+         *
+         * @var string
+         */
+        public $lastTransferEndTime;
+        /**
+         * A message describing the cause of the last transfer failure.
+         *
+         * @var string
+         */
+        public $lastTransferError;
+        /**
+         * Cumulative time taken across all transfers for the replication
+         * relationship.
+         *
+         * @var string
+         */
+        public $totalTransferDuration;
+        /**
+         * Cumulative bytes transferred so far for the replication relationship.
+         *
+         * @var string
+         */
+        public $transferBytes;
+        /**
+         * Time when progress was updated last.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Lag duration indicates the duration by which Destination region volume
+         * content lags behind the primary region volume content.
+         *
+         * @param string $lagDuration
+         */
+        public function setLagDuration($lagDuration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLagDuration()
+        {
+        }
+        /**
+         * Last transfer size in bytes.
+         *
+         * @param string $lastTransferBytes
+         */
+        public function setLastTransferBytes($lastTransferBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastTransferBytes()
+        {
+        }
+        /**
+         * Time taken during last transfer.
+         *
+         * @param string $lastTransferDuration
+         */
+        public function setLastTransferDuration($lastTransferDuration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastTransferDuration()
+        {
+        }
+        /**
+         * Time when last transfer completed.
+         *
+         * @param string $lastTransferEndTime
+         */
+        public function setLastTransferEndTime($lastTransferEndTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastTransferEndTime()
+        {
+        }
+        /**
+         * A message describing the cause of the last transfer failure.
+         *
+         * @param string $lastTransferError
+         */
+        public function setLastTransferError($lastTransferError)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastTransferError()
+        {
+        }
+        /**
+         * Cumulative time taken across all transfers for the replication
+         * relationship.
+         *
+         * @param string $totalTransferDuration
+         */
+        public function setTotalTransferDuration($totalTransferDuration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalTransferDuration()
+        {
+        }
+        /**
+         * Cumulative bytes transferred so far for the replication relationship.
+         *
+         * @param string $transferBytes
+         */
+        public function setTransferBytes($transferBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTransferBytes()
+        {
+        }
+        /**
+         * Time when progress was updated last.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetAppFiles\TransferStats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLagDuration()
-    {
-    }
-    /**
-     * Last transfer size in bytes.
-     *
-     * @param string $lastTransferBytes
-     */
-    public function setLastTransferBytes($lastTransferBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastTransferBytes()
-    {
-    }
-    /**
-     * Time taken during last transfer.
-     *
-     * @param string $lastTransferDuration
-     */
-    public function setLastTransferDuration($lastTransferDuration)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastTransferDuration()
-    {
-    }
-    /**
-     * Time when last transfer completed.
-     *
-     * @param string $lastTransferEndTime
-     */
-    public function setLastTransferEndTime($lastTransferEndTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastTransferEndTime()
-    {
-    }
-    /**
-     * A message describing the cause of the last transfer failure.
-     *
-     * @param string $lastTransferError
-     */
-    public function setLastTransferError($lastTransferError)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastTransferError()
-    {
-    }
-    /**
-     * Cumulative time taken across all transfers for the replication
-     * relationship.
-     *
-     * @param string $totalTransferDuration
-     */
-    public function setTotalTransferDuration($totalTransferDuration)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalTransferDuration()
-    {
-    }
-    /**
-     * Cumulative bytes transferred so far for the replication relationship.
-     *
-     * @param string $transferBytes
-     */
-    public function setTransferBytes($transferBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTransferBytes()
-    {
-    }
-    /**
-     * Time when progress was updated last.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_NetAppFiles_TransferStats extends \Google\Service\NetAppFiles\TransferStats
     {
     }
 }

@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudKMS;
-
-class ListCryptoKeyVersionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'cryptoKeyVersions';
-    protected $cryptoKeyVersionsType = CryptoKeyVersion::class;
-    protected $cryptoKeyVersionsDataType = 'array';
-    /**
-     * A token to retrieve next page of results. Pass this value in
-     * ListCryptoKeyVersionsRequest.page_token to retrieve the next page of
-     * results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The total number of CryptoKeyVersions that matched the query. This field is
-     * not populated if ListCryptoKeyVersionsRequest.filter is applied.
-     *
-     * @var int
-     */
-    public $totalSize;
-    /**
-     * The list of CryptoKeyVersions.
-     *
-     * @param CryptoKeyVersion[] $cryptoKeyVersions
-     */
-    public function setCryptoKeyVersions($cryptoKeyVersions)
+namespace Google\Service\CloudKMS {
+    class ListCryptoKeyVersionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'cryptoKeyVersions';
+        protected $cryptoKeyVersionsType = CryptoKeyVersion::class;
+        protected $cryptoKeyVersionsDataType = 'array';
+        /**
+         * A token to retrieve next page of results. Pass this value in
+         * ListCryptoKeyVersionsRequest.page_token to retrieve the next page of
+         * results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The total number of CryptoKeyVersions that matched the query. This field is
+         * not populated if ListCryptoKeyVersionsRequest.filter is applied.
+         *
+         * @var int
+         */
+        public $totalSize;
+        /**
+         * The list of CryptoKeyVersions.
+         *
+         * @param CryptoKeyVersion[] $cryptoKeyVersions
+         */
+        public function setCryptoKeyVersions($cryptoKeyVersions)
+        {
+        }
+        /**
+         * @return CryptoKeyVersion[]
+         */
+        public function getCryptoKeyVersions()
+        {
+        }
+        /**
+         * A token to retrieve next page of results. Pass this value in
+         * ListCryptoKeyVersionsRequest.page_token to retrieve the next page of
+         * results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The total number of CryptoKeyVersions that matched the query. This field is
+         * not populated if ListCryptoKeyVersionsRequest.filter is applied.
+         *
+         * @param int $totalSize
+         */
+        public function setTotalSize($totalSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalSize()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CryptoKeyVersion[]
+     * Runtime class alias of \Google\Service\CloudKMS\ListCryptoKeyVersionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCryptoKeyVersions()
-    {
-    }
-    /**
-     * A token to retrieve next page of results. Pass this value in
-     * ListCryptoKeyVersionsRequest.page_token to retrieve the next page of
-     * results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The total number of CryptoKeyVersions that matched the query. This field is
-     * not populated if ListCryptoKeyVersionsRequest.filter is applied.
-     *
-     * @param int $totalSize
-     */
-    public function setTotalSize($totalSize)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalSize()
+    class Google_Service_CloudKMS_ListCryptoKeyVersionsResponse extends \Google\Service\CloudKMS\ListCryptoKeyVersionsResponse
     {
     }
 }

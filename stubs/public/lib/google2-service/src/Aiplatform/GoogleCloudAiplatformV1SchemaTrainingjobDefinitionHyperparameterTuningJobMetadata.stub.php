@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaTrainingjobDefinitionHyperparameterTuningJobMetadata extends \Google\Model
-{
-    /**
-     * The resource name of the HyperparameterTuningJob that has been created to
-     * carry out this HyperparameterTuning task.
-     *
-     * @var string
-     */
-    public $backingHyperparameterTuningJob;
-    /**
-     * The resource name of the CustomJob that has been created to run the best
-     * Trial of this HyperparameterTuning task.
-     *
-     * @var string
-     */
-    public $bestTrialBackingCustomJob;
-    /**
-     * The resource name of the HyperparameterTuningJob that has been created to
-     * carry out this HyperparameterTuning task.
-     *
-     * @param string $backingHyperparameterTuningJob
-     */
-    public function setBackingHyperparameterTuningJob($backingHyperparameterTuningJob)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaTrainingjobDefinitionHyperparameterTuningJobMetadata extends \Google\Model
     {
+        /**
+         * The resource name of the HyperparameterTuningJob that has been created to
+         * carry out this HyperparameterTuning task.
+         *
+         * @var string
+         */
+        public $backingHyperparameterTuningJob;
+        /**
+         * The resource name of the CustomJob that has been created to run the best
+         * Trial of this HyperparameterTuning task.
+         *
+         * @var string
+         */
+        public $bestTrialBackingCustomJob;
+        /**
+         * The resource name of the HyperparameterTuningJob that has been created to
+         * carry out this HyperparameterTuning task.
+         *
+         * @param string $backingHyperparameterTuningJob
+         */
+        public function setBackingHyperparameterTuningJob($backingHyperparameterTuningJob)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBackingHyperparameterTuningJob()
+        {
+        }
+        /**
+         * The resource name of the CustomJob that has been created to run the best
+         * Trial of this HyperparameterTuning task.
+         *
+         * @param string $bestTrialBackingCustomJob
+         */
+        public function setBestTrialBackingCustomJob($bestTrialBackingCustomJob)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBestTrialBackingCustomJob()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaTrainingjobDefinitionHyperparameterTuningJobMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackingHyperparameterTuningJob()
-    {
-    }
-    /**
-     * The resource name of the CustomJob that has been created to run the best
-     * Trial of this HyperparameterTuning task.
-     *
-     * @param string $bestTrialBackingCustomJob
-     */
-    public function setBestTrialBackingCustomJob($bestTrialBackingCustomJob)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBestTrialBackingCustomJob()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaTrainingjobDefinitionHyperparameterTuningJobMetadata extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaTrainingjobDefinitionHyperparameterTuningJobMetadata
     {
     }
 }

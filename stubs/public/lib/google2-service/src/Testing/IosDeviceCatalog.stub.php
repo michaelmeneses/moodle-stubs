@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Testing;
-
-class IosDeviceCatalog extends \Google\Collection
-{
-    protected $collection_key = 'xcodeVersions';
-    protected $modelsType = IosModel::class;
-    protected $modelsDataType = 'array';
-    protected $runtimeConfigurationType = IosRuntimeConfiguration::class;
-    protected $runtimeConfigurationDataType = '';
-    protected $versionsType = IosVersion::class;
-    protected $versionsDataType = 'array';
-    protected $xcodeVersionsType = XcodeVersion::class;
-    protected $xcodeVersionsDataType = 'array';
-    /**
-     * The set of supported iOS device models.
-     *
-     * @param IosModel[] $models
-     */
-    public function setModels($models)
+namespace Google\Service\Testing {
+    class IosDeviceCatalog extends \Google\Collection
     {
+        protected $collection_key = 'xcodeVersions';
+        protected $modelsType = IosModel::class;
+        protected $modelsDataType = 'array';
+        protected $runtimeConfigurationType = IosRuntimeConfiguration::class;
+        protected $runtimeConfigurationDataType = '';
+        protected $versionsType = IosVersion::class;
+        protected $versionsDataType = 'array';
+        protected $xcodeVersionsType = XcodeVersion::class;
+        protected $xcodeVersionsDataType = 'array';
+        /**
+         * The set of supported iOS device models.
+         *
+         * @param IosModel[] $models
+         */
+        public function setModels($models)
+        {
+        }
+        /**
+         * @return IosModel[]
+         */
+        public function getModels()
+        {
+        }
+        /**
+         * The set of supported runtime configurations.
+         *
+         * @param IosRuntimeConfiguration $runtimeConfiguration
+         */
+        public function setRuntimeConfiguration(IosRuntimeConfiguration $runtimeConfiguration)
+        {
+        }
+        /**
+         * @return IosRuntimeConfiguration
+         */
+        public function getRuntimeConfiguration()
+        {
+        }
+        /**
+         * The set of supported iOS software versions.
+         *
+         * @param IosVersion[] $versions
+         */
+        public function setVersions($versions)
+        {
+        }
+        /**
+         * @return IosVersion[]
+         */
+        public function getVersions()
+        {
+        }
+        /**
+         * The set of supported Xcode versions.
+         *
+         * @param XcodeVersion[] $xcodeVersions
+         */
+        public function setXcodeVersions($xcodeVersions)
+        {
+        }
+        /**
+         * @return XcodeVersion[]
+         */
+        public function getXcodeVersions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return IosModel[]
+     * Runtime class alias of \Google\Service\Testing\IosDeviceCatalog registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getModels()
-    {
-    }
-    /**
-     * The set of supported runtime configurations.
-     *
-     * @param IosRuntimeConfiguration $runtimeConfiguration
-     */
-    public function setRuntimeConfiguration(IosRuntimeConfiguration $runtimeConfiguration)
-    {
-    }
-    /**
-     * @return IosRuntimeConfiguration
-     */
-    public function getRuntimeConfiguration()
-    {
-    }
-    /**
-     * The set of supported iOS software versions.
-     *
-     * @param IosVersion[] $versions
-     */
-    public function setVersions($versions)
-    {
-    }
-    /**
-     * @return IosVersion[]
-     */
-    public function getVersions()
-    {
-    }
-    /**
-     * The set of supported Xcode versions.
-     *
-     * @param XcodeVersion[] $xcodeVersions
-     */
-    public function setXcodeVersions($xcodeVersions)
-    {
-    }
-    /**
-     * @return XcodeVersion[]
-     */
-    public function getXcodeVersions()
+    class Google_Service_Testing_IosDeviceCatalog extends \Google\Service\Testing\IosDeviceCatalog
     {
     }
 }

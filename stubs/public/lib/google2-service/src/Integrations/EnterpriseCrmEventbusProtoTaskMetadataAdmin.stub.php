@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmEventbusProtoTaskMetadataAdmin extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $googleGroupEmail;
-    /**
-     * @var string
-     */
-    public $userEmail;
-    /**
-     * @param string $googleGroupEmail
-     */
-    public function setGoogleGroupEmail($googleGroupEmail)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmEventbusProtoTaskMetadataAdmin extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $googleGroupEmail;
+        /**
+         * @var string
+         */
+        public $userEmail;
+        /**
+         * @param string $googleGroupEmail
+         */
+        public function setGoogleGroupEmail($googleGroupEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGoogleGroupEmail()
+        {
+        }
+        /**
+         * @param string $userEmail
+         */
+        public function setUserEmail($userEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserEmail()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmEventbusProtoTaskMetadataAdmin registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGoogleGroupEmail()
-    {
-    }
-    /**
-     * @param string $userEmail
-     */
-    public function setUserEmail($userEmail)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserEmail()
+    class Google_Service_Integrations_EnterpriseCrmEventbusProtoTaskMetadataAdmin extends \Google\Service\Integrations\EnterpriseCrmEventbusProtoTaskMetadataAdmin
     {
     }
 }

@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ListMemoriesResponse extends \Google\Collection
-{
-    protected $collection_key = 'memories';
-    protected $memoriesType = GoogleCloudAiplatformV1Memory::class;
-    protected $memoriesDataType = 'array';
-    /**
-     * A token to retrieve the next page of results. Pass to
-     * ListMemoriesRequest.page_token to obtain that page.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of Memories in the requested page.
-     *
-     * @param GoogleCloudAiplatformV1Memory[] $memories
-     */
-    public function setMemories($memories)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ListMemoriesResponse extends \Google\Collection
     {
+        protected $collection_key = 'memories';
+        protected $memoriesType = GoogleCloudAiplatformV1Memory::class;
+        protected $memoriesDataType = 'array';
+        /**
+         * A token to retrieve the next page of results. Pass to
+         * ListMemoriesRequest.page_token to obtain that page.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of Memories in the requested page.
+         *
+         * @param GoogleCloudAiplatformV1Memory[] $memories
+         */
+        public function setMemories($memories)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1Memory[]
+         */
+        public function getMemories()
+        {
+        }
+        /**
+         * A token to retrieve the next page of results. Pass to
+         * ListMemoriesRequest.page_token to obtain that page.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1Memory[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListMemoriesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMemories()
-    {
-    }
-    /**
-     * A token to retrieve the next page of results. Pass to
-     * ListMemoriesRequest.page_token to obtain that page.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ListMemoriesResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListMemoriesResponse
     {
     }
 }

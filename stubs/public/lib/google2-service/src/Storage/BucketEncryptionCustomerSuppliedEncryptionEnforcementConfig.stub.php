@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storage;
-
-class BucketEncryptionCustomerSuppliedEncryptionEnforcementConfig extends \Google\Model
-{
-    /**
-     * Creation of new objects with Customer-Supplied Encryption is not
-     * restricted.
-     */
-    public const RESTRICTION_MODE_NotRestricted = 'NotRestricted';
-    /**
-     * Creation of new objects with Customer-Supplied Encryption is fully
-     * restricted.
-     */
-    public const RESTRICTION_MODE_FullyRestricted = 'FullyRestricted';
-    /**
-     * Server-determined value that indicates the time from which configuration
-     * was enforced and effective. This value is in RFC 3339 format.
-     *
-     * @var string
-     */
-    public $effectiveTime;
-    /**
-     * Restriction mode for Customer-Supplied Encryption Keys. Defaults to
-     * NotRestricted.
-     *
-     * @var string
-     */
-    public $restrictionMode;
-    /**
-     * Server-determined value that indicates the time from which configuration
-     * was enforced and effective. This value is in RFC 3339 format.
-     *
-     * @param string $effectiveTime
-     */
-    public function setEffectiveTime($effectiveTime)
+namespace Google\Service\Storage {
+    class BucketEncryptionCustomerSuppliedEncryptionEnforcementConfig extends \Google\Model
     {
+        /**
+         * Creation of new objects with Customer-Supplied Encryption is not
+         * restricted.
+         */
+        public const RESTRICTION_MODE_NotRestricted = 'NotRestricted';
+        /**
+         * Creation of new objects with Customer-Supplied Encryption is fully
+         * restricted.
+         */
+        public const RESTRICTION_MODE_FullyRestricted = 'FullyRestricted';
+        /**
+         * Server-determined value that indicates the time from which configuration
+         * was enforced and effective. This value is in RFC 3339 format.
+         *
+         * @var string
+         */
+        public $effectiveTime;
+        /**
+         * Restriction mode for Customer-Supplied Encryption Keys. Defaults to
+         * NotRestricted.
+         *
+         * @var string
+         */
+        public $restrictionMode;
+        /**
+         * Server-determined value that indicates the time from which configuration
+         * was enforced and effective. This value is in RFC 3339 format.
+         *
+         * @param string $effectiveTime
+         */
+        public function setEffectiveTime($effectiveTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEffectiveTime()
+        {
+        }
+        /**
+         * Restriction mode for Customer-Supplied Encryption Keys. Defaults to
+         * NotRestricted.
+         *
+         * Accepted values: NotRestricted, FullyRestricted
+         *
+         * @param self::RESTRICTION_MODE_* $restrictionMode
+         */
+        public function setRestrictionMode($restrictionMode)
+        {
+        }
+        /**
+         * @return self::RESTRICTION_MODE_*
+         */
+        public function getRestrictionMode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Storage\BucketEncryptionCustomerSuppliedEncryptionEnforcementConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEffectiveTime()
-    {
-    }
-    /**
-     * Restriction mode for Customer-Supplied Encryption Keys. Defaults to
-     * NotRestricted.
-     *
-     * Accepted values: NotRestricted, FullyRestricted
-     *
-     * @param self::RESTRICTION_MODE_* $restrictionMode
-     */
-    public function setRestrictionMode($restrictionMode)
-    {
-    }
-    /**
-     * @return self::RESTRICTION_MODE_*
-     */
-    public function getRestrictionMode()
+    class Google_Service_Storage_BucketEncryptionCustomerSuppliedEncryptionEnforcementConfig extends \Google\Service\Storage\BucketEncryptionCustomerSuppliedEncryptionEnforcementConfig
     {
     }
 }

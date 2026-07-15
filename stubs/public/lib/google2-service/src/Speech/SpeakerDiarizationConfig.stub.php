@@ -21,103 +21,112 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Speech;
-
-class SpeakerDiarizationConfig extends \Google\Model
-{
-    /**
-     * If 'true', enables speaker detection for each recognized word in the top
-     * alternative of the recognition result using a speaker_label provided in the
-     * WordInfo.
-     *
-     * @var bool
-     */
-    public $enableSpeakerDiarization;
-    /**
-     * Maximum number of speakers in the conversation. This range gives you more
-     * flexibility by allowing the system to automatically determine the correct
-     * number of speakers. If not set, the default value is 6.
-     *
-     * @var int
-     */
-    public $maxSpeakerCount;
-    /**
-     * Minimum number of speakers in the conversation. This range gives you more
-     * flexibility by allowing the system to automatically determine the correct
-     * number of speakers. If not set, the default value is 2.
-     *
-     * @var int
-     */
-    public $minSpeakerCount;
-    /**
-     * Output only. Unused.
-     *
-     * @deprecated
-     * @var int
-     */
-    public $speakerTag;
-    /**
-     * If 'true', enables speaker detection for each recognized word in the top
-     * alternative of the recognition result using a speaker_label provided in the
-     * WordInfo.
-     *
-     * @param bool $enableSpeakerDiarization
-     */
-    public function setEnableSpeakerDiarization($enableSpeakerDiarization)
+namespace Google\Service\Speech {
+    class SpeakerDiarizationConfig extends \Google\Model
     {
+        /**
+         * If 'true', enables speaker detection for each recognized word in the top
+         * alternative of the recognition result using a speaker_label provided in the
+         * WordInfo.
+         *
+         * @var bool
+         */
+        public $enableSpeakerDiarization;
+        /**
+         * Maximum number of speakers in the conversation. This range gives you more
+         * flexibility by allowing the system to automatically determine the correct
+         * number of speakers. If not set, the default value is 6.
+         *
+         * @var int
+         */
+        public $maxSpeakerCount;
+        /**
+         * Minimum number of speakers in the conversation. This range gives you more
+         * flexibility by allowing the system to automatically determine the correct
+         * number of speakers. If not set, the default value is 2.
+         *
+         * @var int
+         */
+        public $minSpeakerCount;
+        /**
+         * Output only. Unused.
+         *
+         * @deprecated
+         * @var int
+         */
+        public $speakerTag;
+        /**
+         * If 'true', enables speaker detection for each recognized word in the top
+         * alternative of the recognition result using a speaker_label provided in the
+         * WordInfo.
+         *
+         * @param bool $enableSpeakerDiarization
+         */
+        public function setEnableSpeakerDiarization($enableSpeakerDiarization)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableSpeakerDiarization()
+        {
+        }
+        /**
+         * Maximum number of speakers in the conversation. This range gives you more
+         * flexibility by allowing the system to automatically determine the correct
+         * number of speakers. If not set, the default value is 6.
+         *
+         * @param int $maxSpeakerCount
+         */
+        public function setMaxSpeakerCount($maxSpeakerCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxSpeakerCount()
+        {
+        }
+        /**
+         * Minimum number of speakers in the conversation. This range gives you more
+         * flexibility by allowing the system to automatically determine the correct
+         * number of speakers. If not set, the default value is 2.
+         *
+         * @param int $minSpeakerCount
+         */
+        public function setMinSpeakerCount($minSpeakerCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMinSpeakerCount()
+        {
+        }
+        /**
+         * Output only. Unused.
+         *
+         * @deprecated
+         * @param int $speakerTag
+         */
+        public function setSpeakerTag($speakerTag)
+        {
+        }
+        /**
+         * @deprecated
+         * @return int
+         */
+        public function getSpeakerTag()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Speech\SpeakerDiarizationConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnableSpeakerDiarization()
-    {
-    }
-    /**
-     * Maximum number of speakers in the conversation. This range gives you more
-     * flexibility by allowing the system to automatically determine the correct
-     * number of speakers. If not set, the default value is 6.
-     *
-     * @param int $maxSpeakerCount
-     */
-    public function setMaxSpeakerCount($maxSpeakerCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxSpeakerCount()
-    {
-    }
-    /**
-     * Minimum number of speakers in the conversation. This range gives you more
-     * flexibility by allowing the system to automatically determine the correct
-     * number of speakers. If not set, the default value is 2.
-     *
-     * @param int $minSpeakerCount
-     */
-    public function setMinSpeakerCount($minSpeakerCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMinSpeakerCount()
-    {
-    }
-    /**
-     * Output only. Unused.
-     *
-     * @deprecated
-     * @param int $speakerTag
-     */
-    public function setSpeakerTag($speakerTag)
-    {
-    }
-    /**
-     * @deprecated
-     * @return int
-     */
-    public function getSpeakerTag()
+    class Google_Service_Speech_SpeakerDiarizationConfig extends \Google\Service\Speech\SpeakerDiarizationConfig
     {
     }
 }

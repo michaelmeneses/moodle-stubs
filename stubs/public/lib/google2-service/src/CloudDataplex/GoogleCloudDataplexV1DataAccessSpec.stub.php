@@ -21,33 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1DataAccessSpec extends \Google\Collection
-{
-    protected $collection_key = 'readers';
-    /**
-     * Optional. The format of strings follows the pattern followed by IAM in the
-     * bindings. user:{email}, serviceAccount:{email} group:{email}. The set of
-     * principals to be granted reader role on data stored within resources.
-     *
-     * @var string[]
-     */
-    public $readers;
-    /**
-     * Optional. The format of strings follows the pattern followed by IAM in the
-     * bindings. user:{email}, serviceAccount:{email} group:{email}. The set of
-     * principals to be granted reader role on data stored within resources.
-     *
-     * @param string[] $readers
-     */
-    public function setReaders($readers)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1DataAccessSpec extends \Google\Collection
     {
+        protected $collection_key = 'readers';
+        /**
+         * Optional. The format of strings follows the pattern followed by IAM in the
+         * bindings. user:{email}, serviceAccount:{email} group:{email}. The set of
+         * principals to be granted reader role on data stored within resources.
+         *
+         * @var string[]
+         */
+        public $readers;
+        /**
+         * Optional. The format of strings follows the pattern followed by IAM in the
+         * bindings. user:{email}, serviceAccount:{email} group:{email}. The set of
+         * principals to be granted reader role on data stored within resources.
+         *
+         * @param string[] $readers
+         */
+        public function setReaders($readers)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getReaders()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataAccessSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReaders()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1DataAccessSpec extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataAccessSpec
     {
     }
 }

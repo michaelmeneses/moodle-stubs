@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2alphaGcsOutputResult extends \Google\Model
-{
-    /**
-     * The uri of Gcs output
-     *
-     * @var string
-     */
-    public $outputUri;
-    /**
-     * The uri of Gcs output
-     *
-     * @param string $outputUri
-     */
-    public function setOutputUri($outputUri)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2alphaGcsOutputResult extends \Google\Model
     {
+        /**
+         * The uri of Gcs output
+         *
+         * @var string
+         */
+        public $outputUri;
+        /**
+         * The uri of Gcs output
+         *
+         * @param string $outputUri
+         */
+        public function setOutputUri($outputUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOutputUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2alphaGcsOutputResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOutputUri()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2alphaGcsOutputResult extends \Google\Service\CloudRetail\GoogleCloudRetailV2alphaGcsOutputResult
     {
     }
 }

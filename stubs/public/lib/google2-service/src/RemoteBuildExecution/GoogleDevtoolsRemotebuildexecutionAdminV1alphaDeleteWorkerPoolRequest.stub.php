@@ -21,15 +21,24 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution;
-
-class GoogleDevtoolsRemotebuildexecutionAdminV1alphaDeleteWorkerPoolRequest extends \Google\Model
-{
-    public $name;
-    public function setName($name)
+namespace Google\Service\RemoteBuildExecution {
+    class GoogleDevtoolsRemotebuildexecutionAdminV1alphaDeleteWorkerPoolRequest extends \Google\Model
     {
+        public $name;
+        public function setName($name)
+        {
+        }
+        public function getName()
+        {
+        }
     }
-    public function getName()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\GoogleDevtoolsRemotebuildexecutionAdminV1alphaDeleteWorkerPoolRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_RemoteBuildExecution_GoogleDevtoolsRemotebuildexecutionAdminV1alphaDeleteWorkerPoolRequest extends \Google\Service\RemoteBuildExecution\GoogleDevtoolsRemotebuildexecutionAdminV1alphaDeleteWorkerPoolRequest
     {
     }
 }

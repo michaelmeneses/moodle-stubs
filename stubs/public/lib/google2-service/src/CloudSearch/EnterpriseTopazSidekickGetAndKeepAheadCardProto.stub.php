@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class EnterpriseTopazSidekickGetAndKeepAheadCardProto extends \Google\Model
-{
-    protected $declinedEventsType = EnterpriseTopazSidekickGetAndKeepAheadCardProtoDeclinedEvents::class;
-    protected $declinedEventsDataType = '';
-    protected $mentionedDocumentsType = EnterpriseTopazSidekickDocumentPerCategoryList::class;
-    protected $mentionedDocumentsDataType = '';
-    protected $sharedDocumentsType = EnterpriseTopazSidekickDocumentPerCategoryList::class;
-    protected $sharedDocumentsDataType = '';
-    /**
-     * @param EnterpriseTopazSidekickGetAndKeepAheadCardProtoDeclinedEvents $declinedEvents
-     */
-    public function setDeclinedEvents(EnterpriseTopazSidekickGetAndKeepAheadCardProtoDeclinedEvents $declinedEvents)
+namespace Google\Service\CloudSearch {
+    class EnterpriseTopazSidekickGetAndKeepAheadCardProto extends \Google\Model
     {
+        protected $declinedEventsType = EnterpriseTopazSidekickGetAndKeepAheadCardProtoDeclinedEvents::class;
+        protected $declinedEventsDataType = '';
+        protected $mentionedDocumentsType = EnterpriseTopazSidekickDocumentPerCategoryList::class;
+        protected $mentionedDocumentsDataType = '';
+        protected $sharedDocumentsType = EnterpriseTopazSidekickDocumentPerCategoryList::class;
+        protected $sharedDocumentsDataType = '';
+        /**
+         * @param EnterpriseTopazSidekickGetAndKeepAheadCardProtoDeclinedEvents $declinedEvents
+         */
+        public function setDeclinedEvents(EnterpriseTopazSidekickGetAndKeepAheadCardProtoDeclinedEvents $declinedEvents)
+        {
+        }
+        /**
+         * @return EnterpriseTopazSidekickGetAndKeepAheadCardProtoDeclinedEvents
+         */
+        public function getDeclinedEvents()
+        {
+        }
+        /**
+         * @param EnterpriseTopazSidekickDocumentPerCategoryList $mentionedDocuments
+         */
+        public function setMentionedDocuments(EnterpriseTopazSidekickDocumentPerCategoryList $mentionedDocuments)
+        {
+        }
+        /**
+         * @return EnterpriseTopazSidekickDocumentPerCategoryList
+         */
+        public function getMentionedDocuments()
+        {
+        }
+        /**
+         * @param EnterpriseTopazSidekickDocumentPerCategoryList $sharedDocuments
+         */
+        public function setSharedDocuments(EnterpriseTopazSidekickDocumentPerCategoryList $sharedDocuments)
+        {
+        }
+        /**
+         * @return EnterpriseTopazSidekickDocumentPerCategoryList
+         */
+        public function getSharedDocuments()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EnterpriseTopazSidekickGetAndKeepAheadCardProtoDeclinedEvents
+     * Runtime class alias of \Google\Service\CloudSearch\EnterpriseTopazSidekickGetAndKeepAheadCardProto registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeclinedEvents()
-    {
-    }
-    /**
-     * @param EnterpriseTopazSidekickDocumentPerCategoryList $mentionedDocuments
-     */
-    public function setMentionedDocuments(EnterpriseTopazSidekickDocumentPerCategoryList $mentionedDocuments)
-    {
-    }
-    /**
-     * @return EnterpriseTopazSidekickDocumentPerCategoryList
-     */
-    public function getMentionedDocuments()
-    {
-    }
-    /**
-     * @param EnterpriseTopazSidekickDocumentPerCategoryList $sharedDocuments
-     */
-    public function setSharedDocuments(EnterpriseTopazSidekickDocumentPerCategoryList $sharedDocuments)
-    {
-    }
-    /**
-     * @return EnterpriseTopazSidekickDocumentPerCategoryList
-     */
-    public function getSharedDocuments()
+    class Google_Service_CloudSearch_EnterpriseTopazSidekickGetAndKeepAheadCardProto extends \Google\Service\CloudSearch\EnterpriseTopazSidekickGetAndKeepAheadCardProto
     {
     }
 }

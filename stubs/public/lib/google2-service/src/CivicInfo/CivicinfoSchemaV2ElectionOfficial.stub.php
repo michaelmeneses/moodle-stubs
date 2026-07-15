@@ -21,108 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CivicInfo;
-
-class CivicinfoSchemaV2ElectionOfficial extends \Google\Model
-{
-    /**
-     * The email address of the election official.
-     *
-     * @var string
-     */
-    public $emailAddress;
-    /**
-     * The fax number of the election official.
-     *
-     * @var string
-     */
-    public $faxNumber;
-    /**
-     * The full name of the election official.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The office phone number of the election official.
-     *
-     * @var string
-     */
-    public $officePhoneNumber;
-    /**
-     * The title of the election official.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * The email address of the election official.
-     *
-     * @param string $emailAddress
-     */
-    public function setEmailAddress($emailAddress)
+namespace Google\Service\CivicInfo {
+    class CivicinfoSchemaV2ElectionOfficial extends \Google\Model
     {
+        /**
+         * The email address of the election official.
+         *
+         * @var string
+         */
+        public $emailAddress;
+        /**
+         * The fax number of the election official.
+         *
+         * @var string
+         */
+        public $faxNumber;
+        /**
+         * The full name of the election official.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The office phone number of the election official.
+         *
+         * @var string
+         */
+        public $officePhoneNumber;
+        /**
+         * The title of the election official.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * The email address of the election official.
+         *
+         * @param string $emailAddress
+         */
+        public function setEmailAddress($emailAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmailAddress()
+        {
+        }
+        /**
+         * The fax number of the election official.
+         *
+         * @param string $faxNumber
+         */
+        public function setFaxNumber($faxNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFaxNumber()
+        {
+        }
+        /**
+         * The full name of the election official.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The office phone number of the election official.
+         *
+         * @param string $officePhoneNumber
+         */
+        public function setOfficePhoneNumber($officePhoneNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOfficePhoneNumber()
+        {
+        }
+        /**
+         * The title of the election official.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CivicInfo\CivicinfoSchemaV2ElectionOfficial registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmailAddress()
-    {
-    }
-    /**
-     * The fax number of the election official.
-     *
-     * @param string $faxNumber
-     */
-    public function setFaxNumber($faxNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFaxNumber()
-    {
-    }
-    /**
-     * The full name of the election official.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The office phone number of the election official.
-     *
-     * @param string $officePhoneNumber
-     */
-    public function setOfficePhoneNumber($officePhoneNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOfficePhoneNumber()
-    {
-    }
-    /**
-     * The title of the election official.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_CivicInfo_CivicinfoSchemaV2ElectionOfficial extends \Google\Service\CivicInfo\CivicinfoSchemaV2ElectionOfficial
     {
     }
 }

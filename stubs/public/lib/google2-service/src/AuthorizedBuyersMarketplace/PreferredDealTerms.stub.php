@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AuthorizedBuyersMarketplace;
-
-class PreferredDealTerms extends \Google\Model
-{
-    protected $fixedPriceType = Price::class;
-    protected $fixedPriceDataType = '';
-    /**
-     * Fixed price for the deal.
-     *
-     * @param Price $fixedPrice
-     */
-    public function setFixedPrice(Price $fixedPrice)
+namespace Google\Service\AuthorizedBuyersMarketplace {
+    class PreferredDealTerms extends \Google\Model
     {
+        protected $fixedPriceType = Price::class;
+        protected $fixedPriceDataType = '';
+        /**
+         * Fixed price for the deal.
+         *
+         * @param Price $fixedPrice
+         */
+        public function setFixedPrice(Price $fixedPrice)
+        {
+        }
+        /**
+         * @return Price
+         */
+        public function getFixedPrice()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Price
+     * Runtime class alias of \Google\Service\AuthorizedBuyersMarketplace\PreferredDealTerms registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFixedPrice()
+    class Google_Service_AuthorizedBuyersMarketplace_PreferredDealTerms extends \Google\Service\AuthorizedBuyersMarketplace\PreferredDealTerms
     {
     }
 }

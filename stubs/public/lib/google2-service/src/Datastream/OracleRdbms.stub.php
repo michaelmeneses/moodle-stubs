@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class OracleRdbms extends \Google\Collection
-{
-    protected $collection_key = 'oracleSchemas';
-    protected $oracleSchemasType = OracleSchema::class;
-    protected $oracleSchemasDataType = 'array';
-    /**
-     * Oracle schemas/databases in the database server.
-     *
-     * @param OracleSchema[] $oracleSchemas
-     */
-    public function setOracleSchemas($oracleSchemas)
+namespace Google\Service\Datastream {
+    class OracleRdbms extends \Google\Collection
     {
+        protected $collection_key = 'oracleSchemas';
+        protected $oracleSchemasType = OracleSchema::class;
+        protected $oracleSchemasDataType = 'array';
+        /**
+         * Oracle schemas/databases in the database server.
+         *
+         * @param OracleSchema[] $oracleSchemas
+         */
+        public function setOracleSchemas($oracleSchemas)
+        {
+        }
+        /**
+         * @return OracleSchema[]
+         */
+        public function getOracleSchemas()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return OracleSchema[]
+     * Runtime class alias of \Google\Service\Datastream\OracleRdbms registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOracleSchemas()
+    class Google_Service_Datastream_OracleRdbms extends \Google\Service\Datastream\OracleRdbms
     {
     }
 }

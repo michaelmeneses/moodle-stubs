@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaListAccountsResponse extends \Google\Collection
-{
-    protected $collection_key = 'accounts';
-    protected $accountsType = GoogleAnalyticsAdminV1alphaAccount::class;
-    protected $accountsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * @param GoogleAnalyticsAdminV1alphaAccount[]
-     */
-    public function setAccounts($accounts)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaListAccountsResponse extends \Google\Collection
     {
+        protected $collection_key = 'accounts';
+        protected $accountsType = GoogleAnalyticsAdminV1alphaAccount::class;
+        protected $accountsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * @param GoogleAnalyticsAdminV1alphaAccount[]
+         */
+        public function setAccounts($accounts)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaAccount[]
+         */
+        public function getAccounts()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAnalyticsAdminV1alphaAccount[]
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaListAccountsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccounts()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaListAccountsResponse extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaListAccountsResponse
     {
     }
 }

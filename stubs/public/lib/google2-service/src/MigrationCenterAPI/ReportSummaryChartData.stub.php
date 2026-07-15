@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class ReportSummaryChartData extends \Google\Collection
-{
-    protected $collection_key = 'dataPoints';
-    protected $dataPointsType = ReportSummaryChartDataDataPoint::class;
-    protected $dataPointsDataType = 'array';
-    /**
-     * Each data point in the chart is represented as a name-value pair with the
-     * name being the x-axis label, and the value being the y-axis value.
-     *
-     * @param ReportSummaryChartDataDataPoint[] $dataPoints
-     */
-    public function setDataPoints($dataPoints)
+namespace Google\Service\MigrationCenterAPI {
+    class ReportSummaryChartData extends \Google\Collection
     {
+        protected $collection_key = 'dataPoints';
+        protected $dataPointsType = ReportSummaryChartDataDataPoint::class;
+        protected $dataPointsDataType = 'array';
+        /**
+         * Each data point in the chart is represented as a name-value pair with the
+         * name being the x-axis label, and the value being the y-axis value.
+         *
+         * @param ReportSummaryChartDataDataPoint[] $dataPoints
+         */
+        public function setDataPoints($dataPoints)
+        {
+        }
+        /**
+         * @return ReportSummaryChartDataDataPoint[]
+         */
+        public function getDataPoints()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ReportSummaryChartDataDataPoint[]
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\ReportSummaryChartData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataPoints()
+    class Google_Service_MigrationCenterAPI_ReportSummaryChartData extends \Google\Service\MigrationCenterAPI\ReportSummaryChartData
     {
     }
 }

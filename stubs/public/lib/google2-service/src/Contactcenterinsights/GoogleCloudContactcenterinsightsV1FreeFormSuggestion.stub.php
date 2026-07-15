@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1FreeFormSuggestion extends \Google\Collection
-{
-    protected $collection_key = 'labels';
-    /**
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * @var string
-     */
-    public $response;
-    /**
-     * @param string[]
-     */
-    public function setLabels($labels)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1FreeFormSuggestion extends \Google\Collection
     {
+        protected $collection_key = 'labels';
+        /**
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * @var string
+         */
+        public $response;
+        /**
+         * @param string[]
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setResponse($response)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResponse()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1FreeFormSuggestion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLabels()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setResponse($response)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResponse()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1FreeFormSuggestion extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1FreeFormSuggestion
     {
     }
 }

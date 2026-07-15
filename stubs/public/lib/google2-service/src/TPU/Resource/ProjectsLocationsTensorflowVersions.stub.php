@@ -21,43 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TPU\Resource;
-
-/**
- * The "tensorflowVersions" collection of methods.
- * Typical usage is:
- *  <code>
- *   $tpuService = new Google\Service\TPU(...);
- *   $tensorflowVersions = $tpuService->tensorflowVersions;
- *  </code>
- */
-class ProjectsLocationsTensorflowVersions extends \Google\Service\Resource
-{
+namespace Google\Service\TPU\Resource {
+    use Google\Service\TPU\ListTensorFlowVersionsResponse;
+    use Google\Service\TPU\TensorFlowVersion;
     /**
-     * Gets TensorFlow Version. (tensorflowVersions.get)
-     *
-     * @param string $name Required. The resource name.
-     * @param array $optParams Optional parameters.
-     * @return TensorFlowVersion
+     * The "tensorflowVersions" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $tpuService = new Google\Service\TPU(...);
+     *   $tensorflowVersions = $tpuService->tensorflowVersions;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class ProjectsLocationsTensorflowVersions extends \Google\Service\Resource
     {
+        /**
+         * Gets TensorFlow Version. (tensorflowVersions.get)
+         *
+         * @param string $name Required. The resource name.
+         * @param array $optParams Optional parameters.
+         * @return TensorFlowVersion
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * List TensorFlow versions supported by this API.
+         * (tensorflowVersions.listProjectsLocationsTensorflowVersions)
+         *
+         * @param string $parent Required. The parent resource name.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter List filter.
+         * @opt_param string orderBy Sort results.
+         * @opt_param int pageSize The maximum number of items to return.
+         * @opt_param string pageToken The next_page_token value returned from a
+         * previous List request, if any.
+         * @return ListTensorFlowVersionsResponse
+         */
+        public function listProjectsLocationsTensorflowVersions($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * List TensorFlow versions supported by this API.
-     * (tensorflowVersions.listProjectsLocationsTensorflowVersions)
-     *
-     * @param string $parent Required. The parent resource name.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter List filter.
-     * @opt_param string orderBy Sort results.
-     * @opt_param int pageSize The maximum number of items to return.
-     * @opt_param string pageToken The next_page_token value returned from a
-     * previous List request, if any.
-     * @return ListTensorFlowVersionsResponse
+     * Runtime class alias of \Google\Service\TPU\Resource\ProjectsLocationsTensorflowVersions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listProjectsLocationsTensorflowVersions($parent, $optParams = [])
+    class Google_Service_TPU_Resource_ProjectsLocationsTensorflowVersions extends \Google\Service\TPU\Resource\ProjectsLocationsTensorflowVersions
     {
     }
 }

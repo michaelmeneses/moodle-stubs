@@ -21,100 +21,109 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ExportTensorboardTimeSeriesDataRequest extends \Google\Model
-{
-    /**
-     * Exports the TensorboardTimeSeries' data that match the filter expression.
-     *
-     * @var string
-     */
-    public $filter;
-    /**
-     * Field to use to sort the TensorboardTimeSeries' data. By default,
-     * TensorboardTimeSeries' data is returned in a pseudo random order.
-     *
-     * @var string
-     */
-    public $orderBy;
-    /**
-     * The maximum number of data points to return per page. The default page_size
-     * is 1000. Values must be between 1 and 10000. Values above 10000 are coerced
-     * to 10000.
-     *
-     * @var int
-     */
-    public $pageSize;
-    /**
-     * A page token, received from a previous ExportTensorboardTimeSeriesData
-     * call. Provide this to retrieve the subsequent page. When paginating, all
-     * other parameters provided to ExportTensorboardTimeSeriesData must match the
-     * call that provided the page token.
-     *
-     * @var string
-     */
-    public $pageToken;
-    /**
-     * Exports the TensorboardTimeSeries' data that match the filter expression.
-     *
-     * @param string $filter
-     */
-    public function setFilter($filter)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ExportTensorboardTimeSeriesDataRequest extends \Google\Model
     {
+        /**
+         * Exports the TensorboardTimeSeries' data that match the filter expression.
+         *
+         * @var string
+         */
+        public $filter;
+        /**
+         * Field to use to sort the TensorboardTimeSeries' data. By default,
+         * TensorboardTimeSeries' data is returned in a pseudo random order.
+         *
+         * @var string
+         */
+        public $orderBy;
+        /**
+         * The maximum number of data points to return per page. The default page_size
+         * is 1000. Values must be between 1 and 10000. Values above 10000 are coerced
+         * to 10000.
+         *
+         * @var int
+         */
+        public $pageSize;
+        /**
+         * A page token, received from a previous ExportTensorboardTimeSeriesData
+         * call. Provide this to retrieve the subsequent page. When paginating, all
+         * other parameters provided to ExportTensorboardTimeSeriesData must match the
+         * call that provided the page token.
+         *
+         * @var string
+         */
+        public $pageToken;
+        /**
+         * Exports the TensorboardTimeSeries' data that match the filter expression.
+         *
+         * @param string $filter
+         */
+        public function setFilter($filter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilter()
+        {
+        }
+        /**
+         * Field to use to sort the TensorboardTimeSeries' data. By default,
+         * TensorboardTimeSeries' data is returned in a pseudo random order.
+         *
+         * @param string $orderBy
+         */
+        public function setOrderBy($orderBy)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOrderBy()
+        {
+        }
+        /**
+         * The maximum number of data points to return per page. The default page_size
+         * is 1000. Values must be between 1 and 10000. Values above 10000 are coerced
+         * to 10000.
+         *
+         * @param int $pageSize
+         */
+        public function setPageSize($pageSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPageSize()
+        {
+        }
+        /**
+         * A page token, received from a previous ExportTensorboardTimeSeriesData
+         * call. Provide this to retrieve the subsequent page. When paginating, all
+         * other parameters provided to ExportTensorboardTimeSeriesData must match the
+         * call that provided the page token.
+         *
+         * @param string $pageToken
+         */
+        public function setPageToken($pageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ExportTensorboardTimeSeriesDataRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFilter()
-    {
-    }
-    /**
-     * Field to use to sort the TensorboardTimeSeries' data. By default,
-     * TensorboardTimeSeries' data is returned in a pseudo random order.
-     *
-     * @param string $orderBy
-     */
-    public function setOrderBy($orderBy)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOrderBy()
-    {
-    }
-    /**
-     * The maximum number of data points to return per page. The default page_size
-     * is 1000. Values must be between 1 and 10000. Values above 10000 are coerced
-     * to 10000.
-     *
-     * @param int $pageSize
-     */
-    public function setPageSize($pageSize)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPageSize()
-    {
-    }
-    /**
-     * A page token, received from a previous ExportTensorboardTimeSeriesData
-     * call. Provide this to retrieve the subsequent page. When paginating, all
-     * other parameters provided to ExportTensorboardTimeSeriesData must match the
-     * call that provided the page token.
-     *
-     * @param string $pageToken
-     */
-    public function setPageToken($pageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPageToken()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ExportTensorboardTimeSeriesDataRequest extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ExportTensorboardTimeSeriesDataRequest
     {
     }
 }

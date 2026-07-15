@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Config;
-
-class PreviewArtifacts extends \Google\Model
-{
-    /**
-     * Output only. Location of artifacts in Google Cloud Storage. Format:
-     * `gs://{bucket}/{object}`
-     *
-     * @var string
-     */
-    public $artifacts;
-    /**
-     * Output only. Location of a blueprint copy and other content in Google Cloud
-     * Storage. Format: `gs://{bucket}/{object}`
-     *
-     * @var string
-     */
-    public $content;
-    /**
-     * Output only. Location of artifacts in Google Cloud Storage. Format:
-     * `gs://{bucket}/{object}`
-     *
-     * @param string $artifacts
-     */
-    public function setArtifacts($artifacts)
+namespace Google\Service\Config {
+    class PreviewArtifacts extends \Google\Model
     {
+        /**
+         * Output only. Location of artifacts in Google Cloud Storage. Format:
+         * `gs://{bucket}/{object}`
+         *
+         * @var string
+         */
+        public $artifacts;
+        /**
+         * Output only. Location of a blueprint copy and other content in Google Cloud
+         * Storage. Format: `gs://{bucket}/{object}`
+         *
+         * @var string
+         */
+        public $content;
+        /**
+         * Output only. Location of artifacts in Google Cloud Storage. Format:
+         * `gs://{bucket}/{object}`
+         *
+         * @param string $artifacts
+         */
+        public function setArtifacts($artifacts)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getArtifacts()
+        {
+        }
+        /**
+         * Output only. Location of a blueprint copy and other content in Google Cloud
+         * Storage. Format: `gs://{bucket}/{object}`
+         *
+         * @param string $content
+         */
+        public function setContent($content)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Config\PreviewArtifacts registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArtifacts()
-    {
-    }
-    /**
-     * Output only. Location of a blueprint copy and other content in Google Cloud
-     * Storage. Format: `gs://{bucket}/{object}`
-     *
-     * @param string $content
-     */
-    public function setContent($content)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContent()
+    class Google_Service_Config_PreviewArtifacts extends \Google\Service\Config\PreviewArtifacts
     {
     }
 }

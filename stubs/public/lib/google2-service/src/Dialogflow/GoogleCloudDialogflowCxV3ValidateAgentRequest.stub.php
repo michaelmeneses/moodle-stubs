@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3ValidateAgentRequest extends \Google\Model
-{
-    /**
-     * If not specified, the agent's default language is used.
-     *
-     * @var string
-     */
-    public $languageCode;
-    /**
-     * If not specified, the agent's default language is used.
-     *
-     * @param string $languageCode
-     */
-    public function setLanguageCode($languageCode)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3ValidateAgentRequest extends \Google\Model
     {
+        /**
+         * If not specified, the agent's default language is used.
+         *
+         * @var string
+         */
+        public $languageCode;
+        /**
+         * If not specified, the agent's default language is used.
+         *
+         * @param string $languageCode
+         */
+        public function setLanguageCode($languageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLanguageCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ValidateAgentRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLanguageCode()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3ValidateAgentRequest extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ValidateAgentRequest
     {
     }
 }

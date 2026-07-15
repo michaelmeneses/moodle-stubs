@@ -16,6 +16,10 @@
  */
 namespace Monolog\Handler;
 
+use Aws\Sqs\SqsClient;
+use Monolog\Level;
+use Monolog\Utils;
+use Monolog\LogRecord;
 /**
  * Writes to any sqs queue.
  *

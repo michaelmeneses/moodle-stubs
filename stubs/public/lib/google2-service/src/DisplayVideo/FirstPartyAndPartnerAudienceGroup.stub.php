@@ -21,27 +21,36 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class FirstPartyAndPartnerAudienceGroup extends \Google\Collection
-{
-    protected $collection_key = 'settings';
-    protected $settingsType = FirstPartyAndPartnerAudienceTargetingSetting::class;
-    protected $settingsDataType = 'array';
-    /**
-     * Required. All first party and partner audience targeting settings in first
-     * party and partner audience group. Repeated settings with the same id are
-     * not allowed.
-     *
-     * @param FirstPartyAndPartnerAudienceTargetingSetting[] $settings
-     */
-    public function setSettings($settings)
+namespace Google\Service\DisplayVideo {
+    class FirstPartyAndPartnerAudienceGroup extends \Google\Collection
     {
+        protected $collection_key = 'settings';
+        protected $settingsType = FirstPartyAndPartnerAudienceTargetingSetting::class;
+        protected $settingsDataType = 'array';
+        /**
+         * Required. All first party and partner audience targeting settings in first
+         * party and partner audience group. Repeated settings with the same id are
+         * not allowed.
+         *
+         * @param FirstPartyAndPartnerAudienceTargetingSetting[] $settings
+         */
+        public function setSettings($settings)
+        {
+        }
+        /**
+         * @return FirstPartyAndPartnerAudienceTargetingSetting[]
+         */
+        public function getSettings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FirstPartyAndPartnerAudienceTargetingSetting[]
+     * Runtime class alias of \Google\Service\DisplayVideo\FirstPartyAndPartnerAudienceGroup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSettings()
+    class Google_Service_DisplayVideo_FirstPartyAndPartnerAudienceGroup extends \Google\Service\DisplayVideo\FirstPartyAndPartnerAudienceGroup
     {
     }
 }

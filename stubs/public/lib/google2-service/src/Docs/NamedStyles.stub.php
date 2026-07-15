@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class NamedStyles extends \Google\Collection
-{
-    protected $collection_key = 'styles';
-    protected $stylesType = NamedStyle::class;
-    protected $stylesDataType = 'array';
-    /**
-     * The named styles. There's an entry for each of the possible named style
-     * types.
-     *
-     * @param NamedStyle[] $styles
-     */
-    public function setStyles($styles)
+namespace Google\Service\Docs {
+    class NamedStyles extends \Google\Collection
     {
+        protected $collection_key = 'styles';
+        protected $stylesType = NamedStyle::class;
+        protected $stylesDataType = 'array';
+        /**
+         * The named styles. There's an entry for each of the possible named style
+         * types.
+         *
+         * @param NamedStyle[] $styles
+         */
+        public function setStyles($styles)
+        {
+        }
+        /**
+         * @return NamedStyle[]
+         */
+        public function getStyles()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return NamedStyle[]
+     * Runtime class alias of \Google\Service\Docs\NamedStyles registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStyles()
+    class Google_Service_Docs_NamedStyles extends \Google\Service\Docs\NamedStyles
     {
     }
 }

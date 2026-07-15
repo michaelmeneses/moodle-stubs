@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1alpha1ConversationLevelSentiment extends \Google\Model
-{
-    /**
-     * The channel of the audio that the data applies to.
-     *
-     * @var int
-     */
-    public $channelTag;
-    protected $sentimentDataType = GoogleCloudContactcenterinsightsV1alpha1SentimentData::class;
-    protected $sentimentDataDataType = '';
-    /**
-     * The channel of the audio that the data applies to.
-     *
-     * @param int $channelTag
-     */
-    public function setChannelTag($channelTag)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1alpha1ConversationLevelSentiment extends \Google\Model
     {
+        /**
+         * The channel of the audio that the data applies to.
+         *
+         * @var int
+         */
+        public $channelTag;
+        protected $sentimentDataType = GoogleCloudContactcenterinsightsV1alpha1SentimentData::class;
+        protected $sentimentDataDataType = '';
+        /**
+         * The channel of the audio that the data applies to.
+         *
+         * @param int $channelTag
+         */
+        public function setChannelTag($channelTag)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getChannelTag()
+        {
+        }
+        /**
+         * Data specifying sentiment.
+         *
+         * @param GoogleCloudContactcenterinsightsV1alpha1SentimentData $sentimentData
+         */
+        public function setSentimentData(GoogleCloudContactcenterinsightsV1alpha1SentimentData $sentimentData)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1alpha1SentimentData
+         */
+        public function getSentimentData()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1ConversationLevelSentiment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChannelTag()
-    {
-    }
-    /**
-     * Data specifying sentiment.
-     *
-     * @param GoogleCloudContactcenterinsightsV1alpha1SentimentData $sentimentData
-     */
-    public function setSentimentData(GoogleCloudContactcenterinsightsV1alpha1SentimentData $sentimentData)
-    {
-    }
-    /**
-     * @return GoogleCloudContactcenterinsightsV1alpha1SentimentData
-     */
-    public function getSentimentData()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1alpha1ConversationLevelSentiment extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1ConversationLevelSentiment
     {
     }
 }

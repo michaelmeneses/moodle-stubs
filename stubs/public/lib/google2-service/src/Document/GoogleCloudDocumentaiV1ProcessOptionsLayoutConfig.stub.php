@@ -21,106 +21,115 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1ProcessOptionsLayoutConfig extends \Google\Model
-{
-    protected $chunkingConfigType = GoogleCloudDocumentaiV1ProcessOptionsLayoutConfigChunkingConfig::class;
-    protected $chunkingConfigDataType = '';
-    /**
-     * Optional. Whether to include image annotations in layout parser response.
-     *
-     * @var bool
-     */
-    public $enableImageAnnotation;
-    /**
-     * Optional. Whether to include table annotations in layout parser response.
-     *
-     * @var bool
-     */
-    public $enableTableAnnotation;
-    /**
-     * Optional. Whether to include bounding boxes in layout parser processor
-     * response.
-     *
-     * @var bool
-     */
-    public $returnBoundingBoxes;
-    /**
-     * Optional. Whether to include images in layout parser processor response.
-     *
-     * @var bool
-     */
-    public $returnImages;
-    /**
-     * Optional. Config for chunking in layout parser processor.
-     *
-     * @param GoogleCloudDocumentaiV1ProcessOptionsLayoutConfigChunkingConfig $chunkingConfig
-     */
-    public function setChunkingConfig(GoogleCloudDocumentaiV1ProcessOptionsLayoutConfigChunkingConfig $chunkingConfig)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1ProcessOptionsLayoutConfig extends \Google\Model
     {
+        protected $chunkingConfigType = GoogleCloudDocumentaiV1ProcessOptionsLayoutConfigChunkingConfig::class;
+        protected $chunkingConfigDataType = '';
+        /**
+         * Optional. Whether to include image annotations in layout parser response.
+         *
+         * @var bool
+         */
+        public $enableImageAnnotation;
+        /**
+         * Optional. Whether to include table annotations in layout parser response.
+         *
+         * @var bool
+         */
+        public $enableTableAnnotation;
+        /**
+         * Optional. Whether to include bounding boxes in layout parser processor
+         * response.
+         *
+         * @var bool
+         */
+        public $returnBoundingBoxes;
+        /**
+         * Optional. Whether to include images in layout parser processor response.
+         *
+         * @var bool
+         */
+        public $returnImages;
+        /**
+         * Optional. Config for chunking in layout parser processor.
+         *
+         * @param GoogleCloudDocumentaiV1ProcessOptionsLayoutConfigChunkingConfig $chunkingConfig
+         */
+        public function setChunkingConfig(GoogleCloudDocumentaiV1ProcessOptionsLayoutConfigChunkingConfig $chunkingConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1ProcessOptionsLayoutConfigChunkingConfig
+         */
+        public function getChunkingConfig()
+        {
+        }
+        /**
+         * Optional. Whether to include image annotations in layout parser response.
+         *
+         * @param bool $enableImageAnnotation
+         */
+        public function setEnableImageAnnotation($enableImageAnnotation)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableImageAnnotation()
+        {
+        }
+        /**
+         * Optional. Whether to include table annotations in layout parser response.
+         *
+         * @param bool $enableTableAnnotation
+         */
+        public function setEnableTableAnnotation($enableTableAnnotation)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableTableAnnotation()
+        {
+        }
+        /**
+         * Optional. Whether to include bounding boxes in layout parser processor
+         * response.
+         *
+         * @param bool $returnBoundingBoxes
+         */
+        public function setReturnBoundingBoxes($returnBoundingBoxes)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getReturnBoundingBoxes()
+        {
+        }
+        /**
+         * Optional. Whether to include images in layout parser processor response.
+         *
+         * @param bool $returnImages
+         */
+        public function setReturnImages($returnImages)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getReturnImages()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiV1ProcessOptionsLayoutConfigChunkingConfig
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1ProcessOptionsLayoutConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChunkingConfig()
-    {
-    }
-    /**
-     * Optional. Whether to include image annotations in layout parser response.
-     *
-     * @param bool $enableImageAnnotation
-     */
-    public function setEnableImageAnnotation($enableImageAnnotation)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnableImageAnnotation()
-    {
-    }
-    /**
-     * Optional. Whether to include table annotations in layout parser response.
-     *
-     * @param bool $enableTableAnnotation
-     */
-    public function setEnableTableAnnotation($enableTableAnnotation)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnableTableAnnotation()
-    {
-    }
-    /**
-     * Optional. Whether to include bounding boxes in layout parser processor
-     * response.
-     *
-     * @param bool $returnBoundingBoxes
-     */
-    public function setReturnBoundingBoxes($returnBoundingBoxes)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getReturnBoundingBoxes()
-    {
-    }
-    /**
-     * Optional. Whether to include images in layout parser processor response.
-     *
-     * @param bool $returnImages
-     */
-    public function setReturnImages($returnImages)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getReturnImages()
+    class Google_Service_Document_GoogleCloudDocumentaiV1ProcessOptionsLayoutConfig extends \Google\Service\Document\GoogleCloudDocumentaiV1ProcessOptionsLayoutConfig
     {
     }
 }

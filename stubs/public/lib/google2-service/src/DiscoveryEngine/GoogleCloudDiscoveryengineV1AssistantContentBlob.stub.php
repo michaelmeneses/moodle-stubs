@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1AssistantContentBlob extends \Google\Model
-{
-    /**
-     * Required. Raw bytes.
-     *
-     * @var string
-     */
-    public $data;
-    /**
-     * Required. The media type (MIME type) of the generated data.
-     *
-     * @var string
-     */
-    public $mimeType;
-    /**
-     * Required. Raw bytes.
-     *
-     * @param string $data
-     */
-    public function setData($data)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1AssistantContentBlob extends \Google\Model
     {
+        /**
+         * Required. Raw bytes.
+         *
+         * @var string
+         */
+        public $data;
+        /**
+         * Required. The media type (MIME type) of the generated data.
+         *
+         * @var string
+         */
+        public $mimeType;
+        /**
+         * Required. Raw bytes.
+         *
+         * @param string $data
+         */
+        public function setData($data)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getData()
+        {
+        }
+        /**
+         * Required. The media type (MIME type) of the generated data.
+         *
+         * @param string $mimeType
+         */
+        public function setMimeType($mimeType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMimeType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AssistantContentBlob registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getData()
-    {
-    }
-    /**
-     * Required. The media type (MIME type) of the generated data.
-     *
-     * @param string $mimeType
-     */
-    public function setMimeType($mimeType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMimeType()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1AssistantContentBlob extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AssistantContentBlob
     {
     }
 }

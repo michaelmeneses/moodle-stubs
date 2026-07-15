@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class ReturnaddressCustomBatchResponseEntry extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $batchId;
-    protected $errorsType = Errors::class;
-    protected $errorsDataType = '';
-    /**
-     * @var string
-     */
-    public $kind;
-    protected $returnAddressType = ReturnAddress::class;
-    protected $returnAddressDataType = '';
-    /**
-     * @param string
-     */
-    public function setBatchId($batchId)
+namespace Google\Service\ShoppingContent {
+    class ReturnaddressCustomBatchResponseEntry extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $batchId;
+        protected $errorsType = Errors::class;
+        protected $errorsDataType = '';
+        /**
+         * @var string
+         */
+        public $kind;
+        protected $returnAddressType = ReturnAddress::class;
+        protected $returnAddressDataType = '';
+        /**
+         * @param string
+         */
+        public function setBatchId($batchId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBatchId()
+        {
+        }
+        /**
+         * @param Errors
+         */
+        public function setErrors(Errors $errors)
+        {
+        }
+        /**
+         * @return Errors
+         */
+        public function getErrors()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * @param ReturnAddress
+         */
+        public function setReturnAddress(ReturnAddress $returnAddress)
+        {
+        }
+        /**
+         * @return ReturnAddress
+         */
+        public function getReturnAddress()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\ReturnaddressCustomBatchResponseEntry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBatchId()
-    {
-    }
-    /**
-     * @param Errors
-     */
-    public function setErrors(Errors $errors)
-    {
-    }
-    /**
-     * @return Errors
-     */
-    public function getErrors()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * @param ReturnAddress
-     */
-    public function setReturnAddress(ReturnAddress $returnAddress)
-    {
-    }
-    /**
-     * @return ReturnAddress
-     */
-    public function getReturnAddress()
+    class Google_Service_ShoppingContent_ReturnaddressCustomBatchResponseEntry extends \Google\Service\ShoppingContent\ReturnaddressCustomBatchResponseEntry
     {
     }
 }

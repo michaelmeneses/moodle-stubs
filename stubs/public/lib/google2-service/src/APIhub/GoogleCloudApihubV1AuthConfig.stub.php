@@ -21,119 +21,128 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1AuthConfig extends \Google\Model
-{
-    /**
-     * Authentication type not specified.
-     */
-    public const AUTH_TYPE_AUTH_TYPE_UNSPECIFIED = 'AUTH_TYPE_UNSPECIFIED';
-    /**
-     * No authentication.
-     */
-    public const AUTH_TYPE_NO_AUTH = 'NO_AUTH';
-    /**
-     * Google service account authentication.
-     */
-    public const AUTH_TYPE_GOOGLE_SERVICE_ACCOUNT = 'GOOGLE_SERVICE_ACCOUNT';
-    /**
-     * Username and password authentication.
-     */
-    public const AUTH_TYPE_USER_PASSWORD = 'USER_PASSWORD';
-    /**
-     * API Key authentication.
-     */
-    public const AUTH_TYPE_API_KEY = 'API_KEY';
-    /**
-     * Oauth 2.0 client credentials grant authentication.
-     */
-    public const AUTH_TYPE_OAUTH2_CLIENT_CREDENTIALS = 'OAUTH2_CLIENT_CREDENTIALS';
-    protected $apiKeyConfigType = GoogleCloudApihubV1ApiKeyConfig::class;
-    protected $apiKeyConfigDataType = '';
-    /**
-     * Required. The authentication type.
-     *
-     * @var string
-     */
-    public $authType;
-    protected $googleServiceAccountConfigType = GoogleCloudApihubV1GoogleServiceAccountConfig::class;
-    protected $googleServiceAccountConfigDataType = '';
-    protected $oauth2ClientCredentialsConfigType = GoogleCloudApihubV1Oauth2ClientCredentialsConfig::class;
-    protected $oauth2ClientCredentialsConfigDataType = '';
-    protected $userPasswordConfigType = GoogleCloudApihubV1UserPasswordConfig::class;
-    protected $userPasswordConfigDataType = '';
-    /**
-     * Api Key Config.
-     *
-     * @param GoogleCloudApihubV1ApiKeyConfig $apiKeyConfig
-     */
-    public function setApiKeyConfig(GoogleCloudApihubV1ApiKeyConfig $apiKeyConfig)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1AuthConfig extends \Google\Model
     {
+        /**
+         * Authentication type not specified.
+         */
+        public const AUTH_TYPE_AUTH_TYPE_UNSPECIFIED = 'AUTH_TYPE_UNSPECIFIED';
+        /**
+         * No authentication.
+         */
+        public const AUTH_TYPE_NO_AUTH = 'NO_AUTH';
+        /**
+         * Google service account authentication.
+         */
+        public const AUTH_TYPE_GOOGLE_SERVICE_ACCOUNT = 'GOOGLE_SERVICE_ACCOUNT';
+        /**
+         * Username and password authentication.
+         */
+        public const AUTH_TYPE_USER_PASSWORD = 'USER_PASSWORD';
+        /**
+         * API Key authentication.
+         */
+        public const AUTH_TYPE_API_KEY = 'API_KEY';
+        /**
+         * Oauth 2.0 client credentials grant authentication.
+         */
+        public const AUTH_TYPE_OAUTH2_CLIENT_CREDENTIALS = 'OAUTH2_CLIENT_CREDENTIALS';
+        protected $apiKeyConfigType = GoogleCloudApihubV1ApiKeyConfig::class;
+        protected $apiKeyConfigDataType = '';
+        /**
+         * Required. The authentication type.
+         *
+         * @var string
+         */
+        public $authType;
+        protected $googleServiceAccountConfigType = GoogleCloudApihubV1GoogleServiceAccountConfig::class;
+        protected $googleServiceAccountConfigDataType = '';
+        protected $oauth2ClientCredentialsConfigType = GoogleCloudApihubV1Oauth2ClientCredentialsConfig::class;
+        protected $oauth2ClientCredentialsConfigDataType = '';
+        protected $userPasswordConfigType = GoogleCloudApihubV1UserPasswordConfig::class;
+        protected $userPasswordConfigDataType = '';
+        /**
+         * Api Key Config.
+         *
+         * @param GoogleCloudApihubV1ApiKeyConfig $apiKeyConfig
+         */
+        public function setApiKeyConfig(GoogleCloudApihubV1ApiKeyConfig $apiKeyConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1ApiKeyConfig
+         */
+        public function getApiKeyConfig()
+        {
+        }
+        /**
+         * Required. The authentication type.
+         *
+         * Accepted values: AUTH_TYPE_UNSPECIFIED, NO_AUTH, GOOGLE_SERVICE_ACCOUNT,
+         * USER_PASSWORD, API_KEY, OAUTH2_CLIENT_CREDENTIALS
+         *
+         * @param self::AUTH_TYPE_* $authType
+         */
+        public function setAuthType($authType)
+        {
+        }
+        /**
+         * @return self::AUTH_TYPE_*
+         */
+        public function getAuthType()
+        {
+        }
+        /**
+         * Google Service Account.
+         *
+         * @param GoogleCloudApihubV1GoogleServiceAccountConfig $googleServiceAccountConfig
+         */
+        public function setGoogleServiceAccountConfig(GoogleCloudApihubV1GoogleServiceAccountConfig $googleServiceAccountConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1GoogleServiceAccountConfig
+         */
+        public function getGoogleServiceAccountConfig()
+        {
+        }
+        /**
+         * Oauth2.0 Client Credentials.
+         *
+         * @param GoogleCloudApihubV1Oauth2ClientCredentialsConfig $oauth2ClientCredentialsConfig
+         */
+        public function setOauth2ClientCredentialsConfig(GoogleCloudApihubV1Oauth2ClientCredentialsConfig $oauth2ClientCredentialsConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1Oauth2ClientCredentialsConfig
+         */
+        public function getOauth2ClientCredentialsConfig()
+        {
+        }
+        /**
+         * User Password.
+         *
+         * @param GoogleCloudApihubV1UserPasswordConfig $userPasswordConfig
+         */
+        public function setUserPasswordConfig(GoogleCloudApihubV1UserPasswordConfig $userPasswordConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1UserPasswordConfig
+         */
+        public function getUserPasswordConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApihubV1ApiKeyConfig
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1AuthConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiKeyConfig()
-    {
-    }
-    /**
-     * Required. The authentication type.
-     *
-     * Accepted values: AUTH_TYPE_UNSPECIFIED, NO_AUTH, GOOGLE_SERVICE_ACCOUNT,
-     * USER_PASSWORD, API_KEY, OAUTH2_CLIENT_CREDENTIALS
-     *
-     * @param self::AUTH_TYPE_* $authType
-     */
-    public function setAuthType($authType)
-    {
-    }
-    /**
-     * @return self::AUTH_TYPE_*
-     */
-    public function getAuthType()
-    {
-    }
-    /**
-     * Google Service Account.
-     *
-     * @param GoogleCloudApihubV1GoogleServiceAccountConfig $googleServiceAccountConfig
-     */
-    public function setGoogleServiceAccountConfig(GoogleCloudApihubV1GoogleServiceAccountConfig $googleServiceAccountConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudApihubV1GoogleServiceAccountConfig
-     */
-    public function getGoogleServiceAccountConfig()
-    {
-    }
-    /**
-     * Oauth2.0 Client Credentials.
-     *
-     * @param GoogleCloudApihubV1Oauth2ClientCredentialsConfig $oauth2ClientCredentialsConfig
-     */
-    public function setOauth2ClientCredentialsConfig(GoogleCloudApihubV1Oauth2ClientCredentialsConfig $oauth2ClientCredentialsConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudApihubV1Oauth2ClientCredentialsConfig
-     */
-    public function getOauth2ClientCredentialsConfig()
-    {
-    }
-    /**
-     * User Password.
-     *
-     * @param GoogleCloudApihubV1UserPasswordConfig $userPasswordConfig
-     */
-    public function setUserPasswordConfig(GoogleCloudApihubV1UserPasswordConfig $userPasswordConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudApihubV1UserPasswordConfig
-     */
-    public function getUserPasswordConfig()
+    class Google_Service_APIhub_GoogleCloudApihubV1AuthConfig extends \Google\Service\APIhub\GoogleCloudApihubV1AuthConfig
     {
     }
 }

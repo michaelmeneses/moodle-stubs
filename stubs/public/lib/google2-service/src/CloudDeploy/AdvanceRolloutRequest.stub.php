@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class AdvanceRolloutRequest extends \Google\Collection
-{
-    protected $collection_key = 'overrideDeployPolicy';
-    /**
-     * Optional. Deploy policies to override. Format is
-     * `projects/{project}/locations/{location}/deployPolicies/{deployPolicy}`.
-     *
-     * @var string[]
-     */
-    public $overrideDeployPolicy;
-    /**
-     * Required. The phase ID to advance the `Rollout` to.
-     *
-     * @var string
-     */
-    public $phaseId;
-    /**
-     * Optional. Deploy policies to override. Format is
-     * `projects/{project}/locations/{location}/deployPolicies/{deployPolicy}`.
-     *
-     * @param string[] $overrideDeployPolicy
-     */
-    public function setOverrideDeployPolicy($overrideDeployPolicy)
+namespace Google\Service\CloudDeploy {
+    class AdvanceRolloutRequest extends \Google\Collection
     {
+        protected $collection_key = 'overrideDeployPolicy';
+        /**
+         * Optional. Deploy policies to override. Format is
+         * `projects/{project}/locations/{location}/deployPolicies/{deployPolicy}`.
+         *
+         * @var string[]
+         */
+        public $overrideDeployPolicy;
+        /**
+         * Required. The phase ID to advance the `Rollout` to.
+         *
+         * @var string
+         */
+        public $phaseId;
+        /**
+         * Optional. Deploy policies to override. Format is
+         * `projects/{project}/locations/{location}/deployPolicies/{deployPolicy}`.
+         *
+         * @param string[] $overrideDeployPolicy
+         */
+        public function setOverrideDeployPolicy($overrideDeployPolicy)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getOverrideDeployPolicy()
+        {
+        }
+        /**
+         * Required. The phase ID to advance the `Rollout` to.
+         *
+         * @param string $phaseId
+         */
+        public function setPhaseId($phaseId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPhaseId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudDeploy\AdvanceRolloutRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOverrideDeployPolicy()
-    {
-    }
-    /**
-     * Required. The phase ID to advance the `Rollout` to.
-     *
-     * @param string $phaseId
-     */
-    public function setPhaseId($phaseId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPhaseId()
+    class Google_Service_CloudDeploy_AdvanceRolloutRequest extends \Google\Service\CloudDeploy\AdvanceRolloutRequest
     {
     }
 }

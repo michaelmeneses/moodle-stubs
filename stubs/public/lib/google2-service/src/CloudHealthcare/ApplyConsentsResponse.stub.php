@@ -21,100 +21,109 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class ApplyConsentsResponse extends \Google\Model
-{
-    /**
-     * The number of resources (including the Consent resources) that may have
-     * consensual access change.
-     *
-     * @var string
-     */
-    public $affectedResources;
-    /**
-     * If `validate_only = false` in ApplyConsentsRequest, this counter is the
-     * number of Consent resources that were failed to apply. Otherwise, it is the
-     * number of Consent resources that are not supported or invalid.
-     *
-     * @var string
-     */
-    public $consentApplyFailure;
-    /**
-     * If `validate_only = false` in ApplyConsentsRequest, this counter is the
-     * number of Consent resources that were successfully applied. Otherwise, it
-     * is the number of Consent resources that are supported.
-     *
-     * @var string
-     */
-    public $consentApplySuccess;
-    /**
-     * The number of resources (including the Consent resources) that
-     * ApplyConsents failed to re-index.
-     *
-     * @var string
-     */
-    public $failedResources;
-    /**
-     * The number of resources (including the Consent resources) that may have
-     * consensual access change.
-     *
-     * @param string $affectedResources
-     */
-    public function setAffectedResources($affectedResources)
+namespace Google\Service\CloudHealthcare {
+    class ApplyConsentsResponse extends \Google\Model
     {
+        /**
+         * The number of resources (including the Consent resources) that may have
+         * consensual access change.
+         *
+         * @var string
+         */
+        public $affectedResources;
+        /**
+         * If `validate_only = false` in ApplyConsentsRequest, this counter is the
+         * number of Consent resources that were failed to apply. Otherwise, it is the
+         * number of Consent resources that are not supported or invalid.
+         *
+         * @var string
+         */
+        public $consentApplyFailure;
+        /**
+         * If `validate_only = false` in ApplyConsentsRequest, this counter is the
+         * number of Consent resources that were successfully applied. Otherwise, it
+         * is the number of Consent resources that are supported.
+         *
+         * @var string
+         */
+        public $consentApplySuccess;
+        /**
+         * The number of resources (including the Consent resources) that
+         * ApplyConsents failed to re-index.
+         *
+         * @var string
+         */
+        public $failedResources;
+        /**
+         * The number of resources (including the Consent resources) that may have
+         * consensual access change.
+         *
+         * @param string $affectedResources
+         */
+        public function setAffectedResources($affectedResources)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAffectedResources()
+        {
+        }
+        /**
+         * If `validate_only = false` in ApplyConsentsRequest, this counter is the
+         * number of Consent resources that were failed to apply. Otherwise, it is the
+         * number of Consent resources that are not supported or invalid.
+         *
+         * @param string $consentApplyFailure
+         */
+        public function setConsentApplyFailure($consentApplyFailure)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConsentApplyFailure()
+        {
+        }
+        /**
+         * If `validate_only = false` in ApplyConsentsRequest, this counter is the
+         * number of Consent resources that were successfully applied. Otherwise, it
+         * is the number of Consent resources that are supported.
+         *
+         * @param string $consentApplySuccess
+         */
+        public function setConsentApplySuccess($consentApplySuccess)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConsentApplySuccess()
+        {
+        }
+        /**
+         * The number of resources (including the Consent resources) that
+         * ApplyConsents failed to re-index.
+         *
+         * @param string $failedResources
+         */
+        public function setFailedResources($failedResources)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFailedResources()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudHealthcare\ApplyConsentsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAffectedResources()
-    {
-    }
-    /**
-     * If `validate_only = false` in ApplyConsentsRequest, this counter is the
-     * number of Consent resources that were failed to apply. Otherwise, it is the
-     * number of Consent resources that are not supported or invalid.
-     *
-     * @param string $consentApplyFailure
-     */
-    public function setConsentApplyFailure($consentApplyFailure)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getConsentApplyFailure()
-    {
-    }
-    /**
-     * If `validate_only = false` in ApplyConsentsRequest, this counter is the
-     * number of Consent resources that were successfully applied. Otherwise, it
-     * is the number of Consent resources that are supported.
-     *
-     * @param string $consentApplySuccess
-     */
-    public function setConsentApplySuccess($consentApplySuccess)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getConsentApplySuccess()
-    {
-    }
-    /**
-     * The number of resources (including the Consent resources) that
-     * ApplyConsents failed to re-index.
-     *
-     * @param string $failedResources
-     */
-    public function setFailedResources($failedResources)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFailedResources()
+    class Google_Service_CloudHealthcare_ApplyConsentsResponse extends \Google\Service\CloudHealthcare\ApplyConsentsResponse
     {
     }
 }

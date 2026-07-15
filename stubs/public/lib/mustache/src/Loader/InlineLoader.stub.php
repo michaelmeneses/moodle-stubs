@@ -16,6 +16,9 @@
  */
 namespace Mustache\Loader;
 
+use Mustache\Exception\InvalidArgumentException;
+use Mustache\Exception\UnknownTemplateException;
+use Mustache\Loader;
 /**
  * A Mustache Template loader for inline templates.
  *

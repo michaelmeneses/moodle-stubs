@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class Details extends \Google\Model
-{
-    protected $attestationType = Attestation::class;
-    protected $attestationDataType = '';
-    /**
-     * @param Attestation
-     */
-    public function setAttestation(Attestation $attestation)
+namespace Google\Service\ContainerAnalysis {
+    class Details extends \Google\Model
     {
+        protected $attestationType = Attestation::class;
+        protected $attestationDataType = '';
+        /**
+         * @param Attestation
+         */
+        public function setAttestation(Attestation $attestation)
+        {
+        }
+        /**
+         * @return Attestation
+         */
+        public function getAttestation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Attestation
+     * Runtime class alias of \Google\Service\ContainerAnalysis\Details registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttestation()
+    class Google_Service_ContainerAnalysis_Details extends \Google\Service\ContainerAnalysis\Details
     {
     }
 }

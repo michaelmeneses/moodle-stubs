@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudContentwarehouseV1RunPipelineMetadataExportToCdwPipelineMetadata extends \Google\Collection
-{
-    protected $collection_key = 'documents';
-    /**
-     * The output CDW dataset resource name.
-     *
-     * @var string
-     */
-    public $docAiDataset;
-    /**
-     * The input list of all the resource names of the documents to be exported.
-     *
-     * @var string[]
-     */
-    public $documents;
-    /**
-     * The output Cloud Storage folder in this pipeline.
-     *
-     * @var string
-     */
-    public $outputPath;
-    /**
-     * The output CDW dataset resource name.
-     *
-     * @param string $docAiDataset
-     */
-    public function setDocAiDataset($docAiDataset)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudContentwarehouseV1RunPipelineMetadataExportToCdwPipelineMetadata extends \Google\Collection
     {
+        protected $collection_key = 'documents';
+        /**
+         * The output CDW dataset resource name.
+         *
+         * @var string
+         */
+        public $docAiDataset;
+        /**
+         * The input list of all the resource names of the documents to be exported.
+         *
+         * @var string[]
+         */
+        public $documents;
+        /**
+         * The output Cloud Storage folder in this pipeline.
+         *
+         * @var string
+         */
+        public $outputPath;
+        /**
+         * The output CDW dataset resource name.
+         *
+         * @param string $docAiDataset
+         */
+        public function setDocAiDataset($docAiDataset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDocAiDataset()
+        {
+        }
+        /**
+         * The input list of all the resource names of the documents to be exported.
+         *
+         * @param string[] $documents
+         */
+        public function setDocuments($documents)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDocuments()
+        {
+        }
+        /**
+         * The output Cloud Storage folder in this pipeline.
+         *
+         * @param string $outputPath
+         */
+        public function setOutputPath($outputPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOutputPath()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1RunPipelineMetadataExportToCdwPipelineMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDocAiDataset()
-    {
-    }
-    /**
-     * The input list of all the resource names of the documents to be exported.
-     *
-     * @param string[] $documents
-     */
-    public function setDocuments($documents)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getDocuments()
-    {
-    }
-    /**
-     * The output Cloud Storage folder in this pipeline.
-     *
-     * @param string $outputPath
-     */
-    public function setOutputPath($outputPath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOutputPath()
+    class Google_Service_Contentwarehouse_GoogleCloudContentwarehouseV1RunPipelineMetadataExportToCdwPipelineMetadata extends \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1RunPipelineMetadataExportToCdwPipelineMetadata
     {
     }
 }

@@ -21,166 +21,175 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataprocMetastore;
-
-class Federation extends \Google\Model
-{
-    protected $backendMetastoresType = BackendMetastore::class;
-    protected $backendMetastoresDataType = 'map';
-    /**
-     * @var string
-     */
-    public $createTime;
-    /**
-     * @var string
-     */
-    public $endpointUri;
-    /**
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $state;
-    /**
-     * @var string
-     */
-    public $stateMessage;
-    /**
-     * @var string
-     */
-    public $uid;
-    /**
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * @var string
-     */
-    public $version;
-    /**
-     * @param BackendMetastore[]
-     */
-    public function setBackendMetastores($backendMetastores)
+namespace Google\Service\DataprocMetastore {
+    class Federation extends \Google\Model
     {
+        protected $backendMetastoresType = BackendMetastore::class;
+        protected $backendMetastoresDataType = 'map';
+        /**
+         * @var string
+         */
+        public $createTime;
+        /**
+         * @var string
+         */
+        public $endpointUri;
+        /**
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $state;
+        /**
+         * @var string
+         */
+        public $stateMessage;
+        /**
+         * @var string
+         */
+        public $uid;
+        /**
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * @var string
+         */
+        public $version;
+        /**
+         * @param BackendMetastore[]
+         */
+        public function setBackendMetastores($backendMetastores)
+        {
+        }
+        /**
+         * @return BackendMetastore[]
+         */
+        public function getBackendMetastores()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEndpointUri($endpointUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndpointUri()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getState()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setStateMessage($stateMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStateMessage()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUid($uid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUid()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BackendMetastore[]
+     * Runtime class alias of \Google\Service\DataprocMetastore\Federation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackendMetastores()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEndpointUri($endpointUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndpointUri()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getState()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setStateMessage($stateMessage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStateMessage()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUid($uid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUid()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_DataprocMetastore_Federation extends \Google\Service\DataprocMetastore\Federation
     {
     }
 }

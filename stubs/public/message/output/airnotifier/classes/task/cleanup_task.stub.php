@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace message_airnotifier\task;
 
+use core\task\scheduled_task;
 /**
  * Scheduled task that cleans up orphaned Airnotifier devices.
  *

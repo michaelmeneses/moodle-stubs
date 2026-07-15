@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2LDiversityEquivalenceClass extends \Google\Collection
-{
-    protected $collection_key = 'topSensitiveValues';
-    /**
-     * Size of the k-anonymity equivalence class.
-     *
-     * @var string
-     */
-    public $equivalenceClassSize;
-    /**
-     * Number of distinct sensitive values in this equivalence class.
-     *
-     * @var string
-     */
-    public $numDistinctSensitiveValues;
-    protected $quasiIdsValuesType = GooglePrivacyDlpV2Value::class;
-    protected $quasiIdsValuesDataType = 'array';
-    protected $topSensitiveValuesType = GooglePrivacyDlpV2ValueFrequency::class;
-    protected $topSensitiveValuesDataType = 'array';
-    /**
-     * Size of the k-anonymity equivalence class.
-     *
-     * @param string $equivalenceClassSize
-     */
-    public function setEquivalenceClassSize($equivalenceClassSize)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2LDiversityEquivalenceClass extends \Google\Collection
     {
+        protected $collection_key = 'topSensitiveValues';
+        /**
+         * Size of the k-anonymity equivalence class.
+         *
+         * @var string
+         */
+        public $equivalenceClassSize;
+        /**
+         * Number of distinct sensitive values in this equivalence class.
+         *
+         * @var string
+         */
+        public $numDistinctSensitiveValues;
+        protected $quasiIdsValuesType = GooglePrivacyDlpV2Value::class;
+        protected $quasiIdsValuesDataType = 'array';
+        protected $topSensitiveValuesType = GooglePrivacyDlpV2ValueFrequency::class;
+        protected $topSensitiveValuesDataType = 'array';
+        /**
+         * Size of the k-anonymity equivalence class.
+         *
+         * @param string $equivalenceClassSize
+         */
+        public function setEquivalenceClassSize($equivalenceClassSize)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEquivalenceClassSize()
+        {
+        }
+        /**
+         * Number of distinct sensitive values in this equivalence class.
+         *
+         * @param string $numDistinctSensitiveValues
+         */
+        public function setNumDistinctSensitiveValues($numDistinctSensitiveValues)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNumDistinctSensitiveValues()
+        {
+        }
+        /**
+         * Quasi-identifier values defining the k-anonymity equivalence class. The
+         * order is always the same as the original request.
+         *
+         * @param GooglePrivacyDlpV2Value[] $quasiIdsValues
+         */
+        public function setQuasiIdsValues($quasiIdsValues)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2Value[]
+         */
+        public function getQuasiIdsValues()
+        {
+        }
+        /**
+         * Estimated frequencies of top sensitive values.
+         *
+         * @param GooglePrivacyDlpV2ValueFrequency[] $topSensitiveValues
+         */
+        public function setTopSensitiveValues($topSensitiveValues)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2ValueFrequency[]
+         */
+        public function getTopSensitiveValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2LDiversityEquivalenceClass registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEquivalenceClassSize()
-    {
-    }
-    /**
-     * Number of distinct sensitive values in this equivalence class.
-     *
-     * @param string $numDistinctSensitiveValues
-     */
-    public function setNumDistinctSensitiveValues($numDistinctSensitiveValues)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNumDistinctSensitiveValues()
-    {
-    }
-    /**
-     * Quasi-identifier values defining the k-anonymity equivalence class. The
-     * order is always the same as the original request.
-     *
-     * @param GooglePrivacyDlpV2Value[] $quasiIdsValues
-     */
-    public function setQuasiIdsValues($quasiIdsValues)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2Value[]
-     */
-    public function getQuasiIdsValues()
-    {
-    }
-    /**
-     * Estimated frequencies of top sensitive values.
-     *
-     * @param GooglePrivacyDlpV2ValueFrequency[] $topSensitiveValues
-     */
-    public function setTopSensitiveValues($topSensitiveValues)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2ValueFrequency[]
-     */
-    public function getTopSensitiveValues()
+    class Google_Service_DLP_GooglePrivacyDlpV2LDiversityEquivalenceClass extends \Google\Service\DLP\GooglePrivacyDlpV2LDiversityEquivalenceClass
     {
     }
 }

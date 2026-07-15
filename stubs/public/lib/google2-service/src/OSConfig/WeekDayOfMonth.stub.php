@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OSConfig;
-
-class WeekDayOfMonth extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $dayOfWeek;
-    /**
-     * @var int
-     */
-    public $dayOffset;
-    /**
-     * @var int
-     */
-    public $weekOrdinal;
-    /**
-     * @param string
-     */
-    public function setDayOfWeek($dayOfWeek)
+namespace Google\Service\OSConfig {
+    class WeekDayOfMonth extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $dayOfWeek;
+        /**
+         * @var int
+         */
+        public $dayOffset;
+        /**
+         * @var int
+         */
+        public $weekOrdinal;
+        /**
+         * @param string
+         */
+        public function setDayOfWeek($dayOfWeek)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDayOfWeek()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setDayOffset($dayOffset)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getDayOffset()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setWeekOrdinal($weekOrdinal)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getWeekOrdinal()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OSConfig\WeekDayOfMonth registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDayOfWeek()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setDayOffset($dayOffset)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getDayOffset()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setWeekOrdinal($weekOrdinal)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getWeekOrdinal()
+    class Google_Service_OSConfig_WeekDayOfMonth extends \Google\Service\OSConfig\WeekDayOfMonth
     {
     }
 }

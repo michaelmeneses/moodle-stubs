@@ -21,37 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class ContextualAddOnMarkup extends \Google\Collection
-{
-    protected $collection_key = 'cards';
-    protected $cardsType = Card::class;
-    protected $cardsDataType = 'array';
-    protected $toolbarType = Toolbar::class;
-    protected $toolbarDataType = '';
-    /**
-     * @param Card[]
-     */
-    public function setCards($cards)
+namespace Google\Service\CloudSearch {
+    class ContextualAddOnMarkup extends \Google\Collection
     {
+        protected $collection_key = 'cards';
+        protected $cardsType = Card::class;
+        protected $cardsDataType = 'array';
+        protected $toolbarType = Toolbar::class;
+        protected $toolbarDataType = '';
+        /**
+         * @param Card[]
+         */
+        public function setCards($cards)
+        {
+        }
+        /**
+         * @return Card[]
+         */
+        public function getCards()
+        {
+        }
+        /**
+         * @param Toolbar
+         */
+        public function setToolbar(Toolbar $toolbar)
+        {
+        }
+        /**
+         * @return Toolbar
+         */
+        public function getToolbar()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Card[]
+     * Runtime class alias of \Google\Service\CloudSearch\ContextualAddOnMarkup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCards()
-    {
-    }
-    /**
-     * @param Toolbar
-     */
-    public function setToolbar(Toolbar $toolbar)
-    {
-    }
-    /**
-     * @return Toolbar
-     */
-    public function getToolbar()
+    class Google_Service_CloudSearch_ContextualAddOnMarkup extends \Google\Service\CloudSearch\ContextualAddOnMarkup
     {
     }
 }

@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleIamV1AuditLogConfig extends \Google\Collection
-{
-    /**
-     * Default case. Should never be this.
-     */
-    public const LOG_TYPE_LOG_TYPE_UNSPECIFIED = 'LOG_TYPE_UNSPECIFIED';
-    /**
-     * Admin reads. Example: CloudIAM getIamPolicy
-     */
-    public const LOG_TYPE_ADMIN_READ = 'ADMIN_READ';
-    /**
-     * Data writes. Example: CloudSQL Users create
-     */
-    public const LOG_TYPE_DATA_WRITE = 'DATA_WRITE';
-    /**
-     * Data reads. Example: CloudSQL Users list
-     */
-    public const LOG_TYPE_DATA_READ = 'DATA_READ';
-    protected $collection_key = 'exemptedMembers';
-    /**
-     * Specifies the identities that do not cause logging for this type of
-     * permission. Follows the same format of Binding.members.
-     *
-     * @var string[]
-     */
-    public $exemptedMembers;
-    /**
-     * The log type that this config enables.
-     *
-     * @var string
-     */
-    public $logType;
-    /**
-     * Specifies the identities that do not cause logging for this type of
-     * permission. Follows the same format of Binding.members.
-     *
-     * @param string[] $exemptedMembers
-     */
-    public function setExemptedMembers($exemptedMembers)
+namespace Google\Service\CloudDataplex {
+    class GoogleIamV1AuditLogConfig extends \Google\Collection
     {
+        /**
+         * Default case. Should never be this.
+         */
+        public const LOG_TYPE_LOG_TYPE_UNSPECIFIED = 'LOG_TYPE_UNSPECIFIED';
+        /**
+         * Admin reads. Example: CloudIAM getIamPolicy
+         */
+        public const LOG_TYPE_ADMIN_READ = 'ADMIN_READ';
+        /**
+         * Data writes. Example: CloudSQL Users create
+         */
+        public const LOG_TYPE_DATA_WRITE = 'DATA_WRITE';
+        /**
+         * Data reads. Example: CloudSQL Users list
+         */
+        public const LOG_TYPE_DATA_READ = 'DATA_READ';
+        protected $collection_key = 'exemptedMembers';
+        /**
+         * Specifies the identities that do not cause logging for this type of
+         * permission. Follows the same format of Binding.members.
+         *
+         * @var string[]
+         */
+        public $exemptedMembers;
+        /**
+         * The log type that this config enables.
+         *
+         * @var string
+         */
+        public $logType;
+        /**
+         * Specifies the identities that do not cause logging for this type of
+         * permission. Follows the same format of Binding.members.
+         *
+         * @param string[] $exemptedMembers
+         */
+        public function setExemptedMembers($exemptedMembers)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getExemptedMembers()
+        {
+        }
+        /**
+         * The log type that this config enables.
+         *
+         * Accepted values: LOG_TYPE_UNSPECIFIED, ADMIN_READ, DATA_WRITE, DATA_READ
+         *
+         * @param self::LOG_TYPE_* $logType
+         */
+        public function setLogType($logType)
+        {
+        }
+        /**
+         * @return self::LOG_TYPE_*
+         */
+        public function getLogType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleIamV1AuditLogConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExemptedMembers()
-    {
-    }
-    /**
-     * The log type that this config enables.
-     *
-     * Accepted values: LOG_TYPE_UNSPECIFIED, ADMIN_READ, DATA_WRITE, DATA_READ
-     *
-     * @param self::LOG_TYPE_* $logType
-     */
-    public function setLogType($logType)
-    {
-    }
-    /**
-     * @return self::LOG_TYPE_*
-     */
-    public function getLogType()
+    class Google_Service_CloudDataplex_GoogleIamV1AuditLogConfig extends \Google\Service\CloudDataplex\GoogleIamV1AuditLogConfig
     {
     }
 }

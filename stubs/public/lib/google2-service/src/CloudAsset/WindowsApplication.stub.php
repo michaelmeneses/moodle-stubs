@@ -21,106 +21,115 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class WindowsApplication extends \Google\Model
-{
-    /**
-     * The name of the application or product.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The version of the product or application in string format.
-     *
-     * @var string
-     */
-    public $displayVersion;
-    /**
-     * The internet address for technical support.
-     *
-     * @var string
-     */
-    public $helpLink;
-    protected $installDateType = Date::class;
-    protected $installDateDataType = '';
-    /**
-     * The name of the manufacturer for the product or application.
-     *
-     * @var string
-     */
-    public $publisher;
-    /**
-     * The name of the application or product.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\CloudAsset {
+    class WindowsApplication extends \Google\Model
     {
+        /**
+         * The name of the application or product.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The version of the product or application in string format.
+         *
+         * @var string
+         */
+        public $displayVersion;
+        /**
+         * The internet address for technical support.
+         *
+         * @var string
+         */
+        public $helpLink;
+        protected $installDateType = Date::class;
+        protected $installDateDataType = '';
+        /**
+         * The name of the manufacturer for the product or application.
+         *
+         * @var string
+         */
+        public $publisher;
+        /**
+         * The name of the application or product.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The version of the product or application in string format.
+         *
+         * @param string $displayVersion
+         */
+        public function setDisplayVersion($displayVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayVersion()
+        {
+        }
+        /**
+         * The internet address for technical support.
+         *
+         * @param string $helpLink
+         */
+        public function setHelpLink($helpLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHelpLink()
+        {
+        }
+        /**
+         * The last time this product received service. The value of this property is
+         * replaced each time a patch is applied or removed from the product or the
+         * command-line option is used to repair the product.
+         *
+         * @param Date $installDate
+         */
+        public function setInstallDate(Date $installDate)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getInstallDate()
+        {
+        }
+        /**
+         * The name of the manufacturer for the product or application.
+         *
+         * @param string $publisher
+         */
+        public function setPublisher($publisher)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPublisher()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudAsset\WindowsApplication registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The version of the product or application in string format.
-     *
-     * @param string $displayVersion
-     */
-    public function setDisplayVersion($displayVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayVersion()
-    {
-    }
-    /**
-     * The internet address for technical support.
-     *
-     * @param string $helpLink
-     */
-    public function setHelpLink($helpLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHelpLink()
-    {
-    }
-    /**
-     * The last time this product received service. The value of this property is
-     * replaced each time a patch is applied or removed from the product or the
-     * command-line option is used to repair the product.
-     *
-     * @param Date $installDate
-     */
-    public function setInstallDate(Date $installDate)
-    {
-    }
-    /**
-     * @return Date
-     */
-    public function getInstallDate()
-    {
-    }
-    /**
-     * The name of the manufacturer for the product or application.
-     *
-     * @param string $publisher
-     */
-    public function setPublisher($publisher)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPublisher()
+    class Google_Service_CloudAsset_WindowsApplication extends \Google\Service\CloudAsset\WindowsApplication
     {
     }
 }

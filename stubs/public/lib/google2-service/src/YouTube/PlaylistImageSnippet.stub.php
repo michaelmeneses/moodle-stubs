@@ -21,94 +21,103 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class PlaylistImageSnippet extends \Google\Model
-{
-    /**
-     * The main image that will be used for this playlist.
-     */
-    public const TYPE_hero = 'hero';
-    /**
-     * The image height.
-     *
-     * @var int
-     */
-    public $height;
-    /**
-     * The Playlist ID of the playlist this image is associated with.
-     *
-     * @var string
-     */
-    public $playlistId;
-    /**
-     * The image type.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The image width.
-     *
-     * @var int
-     */
-    public $width;
-    /**
-     * The image height.
-     *
-     * @param int $height
-     */
-    public function setHeight($height)
+namespace Google\Service\YouTube {
+    class PlaylistImageSnippet extends \Google\Model
     {
+        /**
+         * The main image that will be used for this playlist.
+         */
+        public const TYPE_hero = 'hero';
+        /**
+         * The image height.
+         *
+         * @var int
+         */
+        public $height;
+        /**
+         * The Playlist ID of the playlist this image is associated with.
+         *
+         * @var string
+         */
+        public $playlistId;
+        /**
+         * The image type.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The image width.
+         *
+         * @var int
+         */
+        public $width;
+        /**
+         * The image height.
+         *
+         * @param int $height
+         */
+        public function setHeight($height)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getHeight()
+        {
+        }
+        /**
+         * The Playlist ID of the playlist this image is associated with.
+         *
+         * @param string $playlistId
+         */
+        public function setPlaylistId($playlistId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPlaylistId()
+        {
+        }
+        /**
+         * The image type.
+         *
+         * Accepted values: hero
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
+        /**
+         * The image width.
+         *
+         * @param int $width
+         */
+        public function setWidth($width)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getWidth()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\YouTube\PlaylistImageSnippet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHeight()
-    {
-    }
-    /**
-     * The Playlist ID of the playlist this image is associated with.
-     *
-     * @param string $playlistId
-     */
-    public function setPlaylistId($playlistId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPlaylistId()
-    {
-    }
-    /**
-     * The image type.
-     *
-     * Accepted values: hero
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
-    {
-    }
-    /**
-     * The image width.
-     *
-     * @param int $width
-     */
-    public function setWidth($width)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getWidth()
+    class Google_Service_YouTube_PlaylistImageSnippet extends \Google\Service\YouTube\PlaylistImageSnippet
     {
     }
 }

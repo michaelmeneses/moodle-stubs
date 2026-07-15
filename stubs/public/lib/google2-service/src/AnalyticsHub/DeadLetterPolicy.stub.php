@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsHub;
-
-class DeadLetterPolicy extends \Google\Model
-{
-    /**
-     * Optional. The name of the topic to which dead letter messages should be
-     * published. Format is `projects/{project}/topics/{topic}`.The Pub/Sub
-     * service account associated with the enclosing subscription's parent project
-     * (i.e., service-{project_number}@gcp-sa-pubsub.iam.gserviceaccount.com) must
-     * have permission to Publish() to this topic. The operation will fail if the
-     * topic does not exist. Users should ensure that there is a subscription
-     * attached to this topic since messages published to a topic with no
-     * subscriptions are lost.
-     *
-     * @var string
-     */
-    public $deadLetterTopic;
-    /**
-     * Optional. The maximum number of delivery attempts for any message. The
-     * value must be between 5 and 100. The number of delivery attempts is defined
-     * as 1 + (the sum of number of NACKs and number of times the acknowledgement
-     * deadline has been exceeded for the message). A NACK is any call to
-     * ModifyAckDeadline with a 0 deadline. Note that client libraries may
-     * automatically extend ack_deadlines. This field will be honored on a best
-     * effort basis. If this parameter is 0, a default value of 5 is used.
-     *
-     * @var int
-     */
-    public $maxDeliveryAttempts;
-    /**
-     * Optional. The name of the topic to which dead letter messages should be
-     * published. Format is `projects/{project}/topics/{topic}`.The Pub/Sub
-     * service account associated with the enclosing subscription's parent project
-     * (i.e., service-{project_number}@gcp-sa-pubsub.iam.gserviceaccount.com) must
-     * have permission to Publish() to this topic. The operation will fail if the
-     * topic does not exist. Users should ensure that there is a subscription
-     * attached to this topic since messages published to a topic with no
-     * subscriptions are lost.
-     *
-     * @param string $deadLetterTopic
-     */
-    public function setDeadLetterTopic($deadLetterTopic)
+namespace Google\Service\AnalyticsHub {
+    class DeadLetterPolicy extends \Google\Model
     {
+        /**
+         * Optional. The name of the topic to which dead letter messages should be
+         * published. Format is `projects/{project}/topics/{topic}`.The Pub/Sub
+         * service account associated with the enclosing subscription's parent project
+         * (i.e., service-{project_number}@gcp-sa-pubsub.iam.gserviceaccount.com) must
+         * have permission to Publish() to this topic. The operation will fail if the
+         * topic does not exist. Users should ensure that there is a subscription
+         * attached to this topic since messages published to a topic with no
+         * subscriptions are lost.
+         *
+         * @var string
+         */
+        public $deadLetterTopic;
+        /**
+         * Optional. The maximum number of delivery attempts for any message. The
+         * value must be between 5 and 100. The number of delivery attempts is defined
+         * as 1 + (the sum of number of NACKs and number of times the acknowledgement
+         * deadline has been exceeded for the message). A NACK is any call to
+         * ModifyAckDeadline with a 0 deadline. Note that client libraries may
+         * automatically extend ack_deadlines. This field will be honored on a best
+         * effort basis. If this parameter is 0, a default value of 5 is used.
+         *
+         * @var int
+         */
+        public $maxDeliveryAttempts;
+        /**
+         * Optional. The name of the topic to which dead letter messages should be
+         * published. Format is `projects/{project}/topics/{topic}`.The Pub/Sub
+         * service account associated with the enclosing subscription's parent project
+         * (i.e., service-{project_number}@gcp-sa-pubsub.iam.gserviceaccount.com) must
+         * have permission to Publish() to this topic. The operation will fail if the
+         * topic does not exist. Users should ensure that there is a subscription
+         * attached to this topic since messages published to a topic with no
+         * subscriptions are lost.
+         *
+         * @param string $deadLetterTopic
+         */
+        public function setDeadLetterTopic($deadLetterTopic)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeadLetterTopic()
+        {
+        }
+        /**
+         * Optional. The maximum number of delivery attempts for any message. The
+         * value must be between 5 and 100. The number of delivery attempts is defined
+         * as 1 + (the sum of number of NACKs and number of times the acknowledgement
+         * deadline has been exceeded for the message). A NACK is any call to
+         * ModifyAckDeadline with a 0 deadline. Note that client libraries may
+         * automatically extend ack_deadlines. This field will be honored on a best
+         * effort basis. If this parameter is 0, a default value of 5 is used.
+         *
+         * @param int $maxDeliveryAttempts
+         */
+        public function setMaxDeliveryAttempts($maxDeliveryAttempts)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxDeliveryAttempts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AnalyticsHub\DeadLetterPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeadLetterTopic()
-    {
-    }
-    /**
-     * Optional. The maximum number of delivery attempts for any message. The
-     * value must be between 5 and 100. The number of delivery attempts is defined
-     * as 1 + (the sum of number of NACKs and number of times the acknowledgement
-     * deadline has been exceeded for the message). A NACK is any call to
-     * ModifyAckDeadline with a 0 deadline. Note that client libraries may
-     * automatically extend ack_deadlines. This field will be honored on a best
-     * effort basis. If this parameter is 0, a default value of 5 is used.
-     *
-     * @param int $maxDeliveryAttempts
-     */
-    public function setMaxDeliveryAttempts($maxDeliveryAttempts)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxDeliveryAttempts()
+    class Google_Service_AnalyticsHub_DeadLetterPolicy extends \Google\Service\AnalyticsHub\DeadLetterPolicy
     {
     }
 }

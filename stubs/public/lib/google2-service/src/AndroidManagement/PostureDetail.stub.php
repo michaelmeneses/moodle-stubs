@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class PostureDetail extends \Google\Collection
-{
-    /**
-     * Unspecified.
-     */
-    public const SECURITY_RISK_SECURITY_RISK_UNSPECIFIED = 'SECURITY_RISK_UNSPECIFIED';
-    /**
-     * Play Integrity API detects that the device is running an unknown OS
-     * (basicIntegrity check succeeds but ctsProfileMatch fails).
-     */
-    public const SECURITY_RISK_UNKNOWN_OS = 'UNKNOWN_OS';
-    /**
-     * Play Integrity API detects that the device is running a compromised OS
-     * (basicIntegrity check fails).
-     */
-    public const SECURITY_RISK_COMPROMISED_OS = 'COMPROMISED_OS';
-    /**
-     * Play Integrity API detects that the device does not have a strong guarantee
-     * of system integrity, if the MEETS_STRONG_INTEGRITY label doesn't show in
-     * the device integrity field
-     * (https://developer.android.com/google/play/integrity/verdicts#device-
-     * integrity-field).
-     */
-    public const SECURITY_RISK_HARDWARE_BACKED_EVALUATION_FAILED = 'HARDWARE_BACKED_EVALUATION_FAILED';
-    protected $collection_key = 'advice';
-    protected $adviceType = UserFacingMessage::class;
-    protected $adviceDataType = 'array';
-    /**
-     * A specific security risk that negatively affects the security posture of
-     * the device.
-     *
-     * @var string
-     */
-    public $securityRisk;
-    /**
-     * Corresponding admin-facing advice to mitigate this security risk and
-     * improve the security posture of the device.
-     *
-     * @param UserFacingMessage[] $advice
-     */
-    public function setAdvice($advice)
+namespace Google\Service\AndroidManagement {
+    class PostureDetail extends \Google\Collection
     {
+        /**
+         * Unspecified.
+         */
+        public const SECURITY_RISK_SECURITY_RISK_UNSPECIFIED = 'SECURITY_RISK_UNSPECIFIED';
+        /**
+         * Play Integrity API detects that the device is running an unknown OS
+         * (basicIntegrity check succeeds but ctsProfileMatch fails).
+         */
+        public const SECURITY_RISK_UNKNOWN_OS = 'UNKNOWN_OS';
+        /**
+         * Play Integrity API detects that the device is running a compromised OS
+         * (basicIntegrity check fails).
+         */
+        public const SECURITY_RISK_COMPROMISED_OS = 'COMPROMISED_OS';
+        /**
+         * Play Integrity API detects that the device does not have a strong guarantee
+         * of system integrity, if the MEETS_STRONG_INTEGRITY label doesn't show in
+         * the device integrity field
+         * (https://developer.android.com/google/play/integrity/verdicts#device-
+         * integrity-field).
+         */
+        public const SECURITY_RISK_HARDWARE_BACKED_EVALUATION_FAILED = 'HARDWARE_BACKED_EVALUATION_FAILED';
+        protected $collection_key = 'advice';
+        protected $adviceType = UserFacingMessage::class;
+        protected $adviceDataType = 'array';
+        /**
+         * A specific security risk that negatively affects the security posture of
+         * the device.
+         *
+         * @var string
+         */
+        public $securityRisk;
+        /**
+         * Corresponding admin-facing advice to mitigate this security risk and
+         * improve the security posture of the device.
+         *
+         * @param UserFacingMessage[] $advice
+         */
+        public function setAdvice($advice)
+        {
+        }
+        /**
+         * @return UserFacingMessage[]
+         */
+        public function getAdvice()
+        {
+        }
+        /**
+         * A specific security risk that negatively affects the security posture of
+         * the device.
+         *
+         * Accepted values: SECURITY_RISK_UNSPECIFIED, UNKNOWN_OS, COMPROMISED_OS,
+         * HARDWARE_BACKED_EVALUATION_FAILED
+         *
+         * @param self::SECURITY_RISK_* $securityRisk
+         */
+        public function setSecurityRisk($securityRisk)
+        {
+        }
+        /**
+         * @return self::SECURITY_RISK_*
+         */
+        public function getSecurityRisk()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return UserFacingMessage[]
+     * Runtime class alias of \Google\Service\AndroidManagement\PostureDetail registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdvice()
-    {
-    }
-    /**
-     * A specific security risk that negatively affects the security posture of
-     * the device.
-     *
-     * Accepted values: SECURITY_RISK_UNSPECIFIED, UNKNOWN_OS, COMPROMISED_OS,
-     * HARDWARE_BACKED_EVALUATION_FAILED
-     *
-     * @param self::SECURITY_RISK_* $securityRisk
-     */
-    public function setSecurityRisk($securityRisk)
-    {
-    }
-    /**
-     * @return self::SECURITY_RISK_*
-     */
-    public function getSecurityRisk()
+    class Google_Service_AndroidManagement_PostureDetail extends \Google\Service\AndroidManagement\PostureDetail
     {
     }
 }

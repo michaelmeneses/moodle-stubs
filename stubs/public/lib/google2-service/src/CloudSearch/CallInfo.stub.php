@@ -21,329 +21,338 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class CallInfo extends \Google\Collection
-{
-    protected $collection_key = 'youTubeBroadcastSessionInfos';
-    protected $abuseReportingConfigType = AbuseReportingConfig::class;
-    protected $abuseReportingConfigDataType = '';
-    protected $artifactOwnerType = UserDisplayInfo::class;
-    protected $artifactOwnerDataType = '';
-    protected $attachedDocumentsType = DocumentInfo::class;
-    protected $attachedDocumentsDataType = 'array';
-    /**
-     * @var string[]
-     */
-    public $availableAccessTypes;
-    /**
-     * @var string[]
-     */
-    public $availableAnnotationToolTypes;
-    protected $availableReactionsType = ReactionInfo::class;
-    protected $availableReactionsDataType = 'array';
-    protected $broadcastSessionInfoType = BroadcastSessionInfo::class;
-    protected $broadcastSessionInfoDataType = '';
-    /**
-     * @var string
-     */
-    public $calendarEventId;
-    protected $coActivityType = CoActivity::class;
-    protected $coActivityDataType = '';
-    protected $collaborationType = Collaboration::class;
-    protected $collaborationDataType = '';
-    protected $cseInfoType = CseInfo::class;
-    protected $cseInfoDataType = '';
-    /**
-     * @var int
-     */
-    public $maxJoinedDevices;
-    /**
-     * @var string
-     */
-    public $organizationName;
-    protected $paygateInfoType = PaygateInfo::class;
-    protected $paygateInfoDataType = '';
-    protected $presenterType = Presenter::class;
-    protected $presenterDataType = '';
-    protected $recordingInfoType = RecordingInfo::class;
-    protected $recordingInfoDataType = '';
-    protected $recordingSessionInfoType = RecordingSessionInfo::class;
-    protected $recordingSessionInfoDataType = '';
-    protected $settingsType = CallSettings::class;
-    protected $settingsDataType = '';
-    protected $streamingSessionsType = StreamingSessionInfo::class;
-    protected $streamingSessionsDataType = 'array';
-    protected $transcriptionSessionInfoType = TranscriptionSessionInfo::class;
-    protected $transcriptionSessionInfoDataType = '';
-    /**
-     * @var int
-     */
-    public $viewerCount;
-    protected $youTubeBroadcastSessionInfosType = YouTubeBroadcastSessionInfo::class;
-    protected $youTubeBroadcastSessionInfosDataType = 'array';
-    /**
-     * @param AbuseReportingConfig
-     */
-    public function setAbuseReportingConfig(AbuseReportingConfig $abuseReportingConfig)
+namespace Google\Service\CloudSearch {
+    class CallInfo extends \Google\Collection
     {
+        protected $collection_key = 'youTubeBroadcastSessionInfos';
+        protected $abuseReportingConfigType = AbuseReportingConfig::class;
+        protected $abuseReportingConfigDataType = '';
+        protected $artifactOwnerType = UserDisplayInfo::class;
+        protected $artifactOwnerDataType = '';
+        protected $attachedDocumentsType = DocumentInfo::class;
+        protected $attachedDocumentsDataType = 'array';
+        /**
+         * @var string[]
+         */
+        public $availableAccessTypes;
+        /**
+         * @var string[]
+         */
+        public $availableAnnotationToolTypes;
+        protected $availableReactionsType = ReactionInfo::class;
+        protected $availableReactionsDataType = 'array';
+        protected $broadcastSessionInfoType = BroadcastSessionInfo::class;
+        protected $broadcastSessionInfoDataType = '';
+        /**
+         * @var string
+         */
+        public $calendarEventId;
+        protected $coActivityType = CoActivity::class;
+        protected $coActivityDataType = '';
+        protected $collaborationType = Collaboration::class;
+        protected $collaborationDataType = '';
+        protected $cseInfoType = CseInfo::class;
+        protected $cseInfoDataType = '';
+        /**
+         * @var int
+         */
+        public $maxJoinedDevices;
+        /**
+         * @var string
+         */
+        public $organizationName;
+        protected $paygateInfoType = PaygateInfo::class;
+        protected $paygateInfoDataType = '';
+        protected $presenterType = Presenter::class;
+        protected $presenterDataType = '';
+        protected $recordingInfoType = RecordingInfo::class;
+        protected $recordingInfoDataType = '';
+        protected $recordingSessionInfoType = RecordingSessionInfo::class;
+        protected $recordingSessionInfoDataType = '';
+        protected $settingsType = CallSettings::class;
+        protected $settingsDataType = '';
+        protected $streamingSessionsType = StreamingSessionInfo::class;
+        protected $streamingSessionsDataType = 'array';
+        protected $transcriptionSessionInfoType = TranscriptionSessionInfo::class;
+        protected $transcriptionSessionInfoDataType = '';
+        /**
+         * @var int
+         */
+        public $viewerCount;
+        protected $youTubeBroadcastSessionInfosType = YouTubeBroadcastSessionInfo::class;
+        protected $youTubeBroadcastSessionInfosDataType = 'array';
+        /**
+         * @param AbuseReportingConfig
+         */
+        public function setAbuseReportingConfig(AbuseReportingConfig $abuseReportingConfig)
+        {
+        }
+        /**
+         * @return AbuseReportingConfig
+         */
+        public function getAbuseReportingConfig()
+        {
+        }
+        /**
+         * @param UserDisplayInfo
+         */
+        public function setArtifactOwner(UserDisplayInfo $artifactOwner)
+        {
+        }
+        /**
+         * @return UserDisplayInfo
+         */
+        public function getArtifactOwner()
+        {
+        }
+        /**
+         * @param DocumentInfo[]
+         */
+        public function setAttachedDocuments($attachedDocuments)
+        {
+        }
+        /**
+         * @return DocumentInfo[]
+         */
+        public function getAttachedDocuments()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setAvailableAccessTypes($availableAccessTypes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAvailableAccessTypes()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setAvailableAnnotationToolTypes($availableAnnotationToolTypes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAvailableAnnotationToolTypes()
+        {
+        }
+        /**
+         * @param ReactionInfo[]
+         */
+        public function setAvailableReactions($availableReactions)
+        {
+        }
+        /**
+         * @return ReactionInfo[]
+         */
+        public function getAvailableReactions()
+        {
+        }
+        /**
+         * @param BroadcastSessionInfo
+         */
+        public function setBroadcastSessionInfo(BroadcastSessionInfo $broadcastSessionInfo)
+        {
+        }
+        /**
+         * @return BroadcastSessionInfo
+         */
+        public function getBroadcastSessionInfo()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCalendarEventId($calendarEventId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCalendarEventId()
+        {
+        }
+        /**
+         * @param CoActivity
+         */
+        public function setCoActivity(CoActivity $coActivity)
+        {
+        }
+        /**
+         * @return CoActivity
+         */
+        public function getCoActivity()
+        {
+        }
+        /**
+         * @param Collaboration
+         */
+        public function setCollaboration(Collaboration $collaboration)
+        {
+        }
+        /**
+         * @return Collaboration
+         */
+        public function getCollaboration()
+        {
+        }
+        /**
+         * @param CseInfo
+         */
+        public function setCseInfo(CseInfo $cseInfo)
+        {
+        }
+        /**
+         * @return CseInfo
+         */
+        public function getCseInfo()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setMaxJoinedDevices($maxJoinedDevices)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxJoinedDevices()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOrganizationName($organizationName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOrganizationName()
+        {
+        }
+        /**
+         * @param PaygateInfo
+         */
+        public function setPaygateInfo(PaygateInfo $paygateInfo)
+        {
+        }
+        /**
+         * @return PaygateInfo
+         */
+        public function getPaygateInfo()
+        {
+        }
+        /**
+         * @param Presenter
+         */
+        public function setPresenter(Presenter $presenter)
+        {
+        }
+        /**
+         * @return Presenter
+         */
+        public function getPresenter()
+        {
+        }
+        /**
+         * @param RecordingInfo
+         */
+        public function setRecordingInfo(RecordingInfo $recordingInfo)
+        {
+        }
+        /**
+         * @return RecordingInfo
+         */
+        public function getRecordingInfo()
+        {
+        }
+        /**
+         * @param RecordingSessionInfo
+         */
+        public function setRecordingSessionInfo(RecordingSessionInfo $recordingSessionInfo)
+        {
+        }
+        /**
+         * @return RecordingSessionInfo
+         */
+        public function getRecordingSessionInfo()
+        {
+        }
+        /**
+         * @param CallSettings
+         */
+        public function setSettings(CallSettings $settings)
+        {
+        }
+        /**
+         * @return CallSettings
+         */
+        public function getSettings()
+        {
+        }
+        /**
+         * @param StreamingSessionInfo[]
+         */
+        public function setStreamingSessions($streamingSessions)
+        {
+        }
+        /**
+         * @return StreamingSessionInfo[]
+         */
+        public function getStreamingSessions()
+        {
+        }
+        /**
+         * @param TranscriptionSessionInfo
+         */
+        public function setTranscriptionSessionInfo(TranscriptionSessionInfo $transcriptionSessionInfo)
+        {
+        }
+        /**
+         * @return TranscriptionSessionInfo
+         */
+        public function getTranscriptionSessionInfo()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setViewerCount($viewerCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getViewerCount()
+        {
+        }
+        /**
+         * @param YouTubeBroadcastSessionInfo[]
+         */
+        public function setYouTubeBroadcastSessionInfos($youTubeBroadcastSessionInfos)
+        {
+        }
+        /**
+         * @return YouTubeBroadcastSessionInfo[]
+         */
+        public function getYouTubeBroadcastSessionInfos()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AbuseReportingConfig
+     * Runtime class alias of \Google\Service\CloudSearch\CallInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAbuseReportingConfig()
-    {
-    }
-    /**
-     * @param UserDisplayInfo
-     */
-    public function setArtifactOwner(UserDisplayInfo $artifactOwner)
-    {
-    }
-    /**
-     * @return UserDisplayInfo
-     */
-    public function getArtifactOwner()
-    {
-    }
-    /**
-     * @param DocumentInfo[]
-     */
-    public function setAttachedDocuments($attachedDocuments)
-    {
-    }
-    /**
-     * @return DocumentInfo[]
-     */
-    public function getAttachedDocuments()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setAvailableAccessTypes($availableAccessTypes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getAvailableAccessTypes()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setAvailableAnnotationToolTypes($availableAnnotationToolTypes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getAvailableAnnotationToolTypes()
-    {
-    }
-    /**
-     * @param ReactionInfo[]
-     */
-    public function setAvailableReactions($availableReactions)
-    {
-    }
-    /**
-     * @return ReactionInfo[]
-     */
-    public function getAvailableReactions()
-    {
-    }
-    /**
-     * @param BroadcastSessionInfo
-     */
-    public function setBroadcastSessionInfo(BroadcastSessionInfo $broadcastSessionInfo)
-    {
-    }
-    /**
-     * @return BroadcastSessionInfo
-     */
-    public function getBroadcastSessionInfo()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCalendarEventId($calendarEventId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCalendarEventId()
-    {
-    }
-    /**
-     * @param CoActivity
-     */
-    public function setCoActivity(CoActivity $coActivity)
-    {
-    }
-    /**
-     * @return CoActivity
-     */
-    public function getCoActivity()
-    {
-    }
-    /**
-     * @param Collaboration
-     */
-    public function setCollaboration(Collaboration $collaboration)
-    {
-    }
-    /**
-     * @return Collaboration
-     */
-    public function getCollaboration()
-    {
-    }
-    /**
-     * @param CseInfo
-     */
-    public function setCseInfo(CseInfo $cseInfo)
-    {
-    }
-    /**
-     * @return CseInfo
-     */
-    public function getCseInfo()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setMaxJoinedDevices($maxJoinedDevices)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxJoinedDevices()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOrganizationName($organizationName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOrganizationName()
-    {
-    }
-    /**
-     * @param PaygateInfo
-     */
-    public function setPaygateInfo(PaygateInfo $paygateInfo)
-    {
-    }
-    /**
-     * @return PaygateInfo
-     */
-    public function getPaygateInfo()
-    {
-    }
-    /**
-     * @param Presenter
-     */
-    public function setPresenter(Presenter $presenter)
-    {
-    }
-    /**
-     * @return Presenter
-     */
-    public function getPresenter()
-    {
-    }
-    /**
-     * @param RecordingInfo
-     */
-    public function setRecordingInfo(RecordingInfo $recordingInfo)
-    {
-    }
-    /**
-     * @return RecordingInfo
-     */
-    public function getRecordingInfo()
-    {
-    }
-    /**
-     * @param RecordingSessionInfo
-     */
-    public function setRecordingSessionInfo(RecordingSessionInfo $recordingSessionInfo)
-    {
-    }
-    /**
-     * @return RecordingSessionInfo
-     */
-    public function getRecordingSessionInfo()
-    {
-    }
-    /**
-     * @param CallSettings
-     */
-    public function setSettings(CallSettings $settings)
-    {
-    }
-    /**
-     * @return CallSettings
-     */
-    public function getSettings()
-    {
-    }
-    /**
-     * @param StreamingSessionInfo[]
-     */
-    public function setStreamingSessions($streamingSessions)
-    {
-    }
-    /**
-     * @return StreamingSessionInfo[]
-     */
-    public function getStreamingSessions()
-    {
-    }
-    /**
-     * @param TranscriptionSessionInfo
-     */
-    public function setTranscriptionSessionInfo(TranscriptionSessionInfo $transcriptionSessionInfo)
-    {
-    }
-    /**
-     * @return TranscriptionSessionInfo
-     */
-    public function getTranscriptionSessionInfo()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setViewerCount($viewerCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getViewerCount()
-    {
-    }
-    /**
-     * @param YouTubeBroadcastSessionInfo[]
-     */
-    public function setYouTubeBroadcastSessionInfos($youTubeBroadcastSessionInfos)
-    {
-    }
-    /**
-     * @return YouTubeBroadcastSessionInfo[]
-     */
-    public function getYouTubeBroadcastSessionInfos()
+    class Google_Service_CloudSearch_CallInfo extends \Google\Service\CloudSearch\CallInfo
     {
     }
 }

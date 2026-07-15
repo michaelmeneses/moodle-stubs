@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMMigrationService;
-
-class PersistentDisk extends \Google\Model
-{
-    /**
-     * The URI of the Persistent Disk.
-     *
-     * @var string
-     */
-    public $diskUri;
-    /**
-     * The ordinal number of the source VM disk.
-     *
-     * @var int
-     */
-    public $sourceDiskNumber;
-    /**
-     * The URI of the Persistent Disk.
-     *
-     * @param string $diskUri
-     */
-    public function setDiskUri($diskUri)
+namespace Google\Service\VMMigrationService {
+    class PersistentDisk extends \Google\Model
     {
+        /**
+         * The URI of the Persistent Disk.
+         *
+         * @var string
+         */
+        public $diskUri;
+        /**
+         * The ordinal number of the source VM disk.
+         *
+         * @var int
+         */
+        public $sourceDiskNumber;
+        /**
+         * The URI of the Persistent Disk.
+         *
+         * @param string $diskUri
+         */
+        public function setDiskUri($diskUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDiskUri()
+        {
+        }
+        /**
+         * The ordinal number of the source VM disk.
+         *
+         * @param int $sourceDiskNumber
+         */
+        public function setSourceDiskNumber($sourceDiskNumber)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSourceDiskNumber()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\VMMigrationService\PersistentDisk registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDiskUri()
-    {
-    }
-    /**
-     * The ordinal number of the source VM disk.
-     *
-     * @param int $sourceDiskNumber
-     */
-    public function setSourceDiskNumber($sourceDiskNumber)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSourceDiskNumber()
+    class Google_Service_VMMigrationService_PersistentDisk extends \Google\Service\VMMigrationService\PersistentDisk
     {
     }
 }

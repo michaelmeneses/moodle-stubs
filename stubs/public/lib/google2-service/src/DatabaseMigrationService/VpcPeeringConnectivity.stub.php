@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class VpcPeeringConnectivity extends \Google\Model
-{
-    /**
-     * The name of the VPC network to peer with the Cloud SQL private network.
-     *
-     * @var string
-     */
-    public $vpc;
-    /**
-     * The name of the VPC network to peer with the Cloud SQL private network.
-     *
-     * @param string $vpc
-     */
-    public function setVpc($vpc)
+namespace Google\Service\DatabaseMigrationService {
+    class VpcPeeringConnectivity extends \Google\Model
     {
+        /**
+         * The name of the VPC network to peer with the Cloud SQL private network.
+         *
+         * @var string
+         */
+        public $vpc;
+        /**
+         * The name of the VPC network to peer with the Cloud SQL private network.
+         *
+         * @param string $vpc
+         */
+        public function setVpc($vpc)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVpc()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\VpcPeeringConnectivity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getVpc()
+    class Google_Service_DatabaseMigrationService_VpcPeeringConnectivity extends \Google\Service\DatabaseMigrationService\VpcPeeringConnectivity
     {
     }
 }

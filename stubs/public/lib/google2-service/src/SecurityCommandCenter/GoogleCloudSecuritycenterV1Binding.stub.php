@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GoogleCloudSecuritycenterV1Binding extends \Google\Collection
-{
-    protected $collection_key = 'subjects';
-    /**
-     * Name for the binding.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Namespace for the binding.
-     *
-     * @var string
-     */
-    public $ns;
-    protected $roleType = Role::class;
-    protected $roleDataType = '';
-    protected $subjectsType = Subject::class;
-    protected $subjectsDataType = 'array';
-    /**
-     * Name for the binding.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\SecurityCommandCenter {
+    class GoogleCloudSecuritycenterV1Binding extends \Google\Collection
     {
+        protected $collection_key = 'subjects';
+        /**
+         * Name for the binding.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Namespace for the binding.
+         *
+         * @var string
+         */
+        public $ns;
+        protected $roleType = Role::class;
+        protected $roleDataType = '';
+        protected $subjectsType = Subject::class;
+        protected $subjectsDataType = 'array';
+        /**
+         * Name for the binding.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Namespace for the binding.
+         *
+         * @param string $ns
+         */
+        public function setNs($ns)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNs()
+        {
+        }
+        /**
+         * The Role or ClusterRole referenced by the binding.
+         *
+         * @param Role $role
+         */
+        public function setRole(Role $role)
+        {
+        }
+        /**
+         * @return Role
+         */
+        public function getRole()
+        {
+        }
+        /**
+         * Represents one or more subjects that are bound to the role. Not always
+         * available for PATCH requests.
+         *
+         * @param Subject[] $subjects
+         */
+        public function setSubjects($subjects)
+        {
+        }
+        /**
+         * @return Subject[]
+         */
+        public function getSubjects()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV1Binding registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Namespace for the binding.
-     *
-     * @param string $ns
-     */
-    public function setNs($ns)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNs()
-    {
-    }
-    /**
-     * The Role or ClusterRole referenced by the binding.
-     *
-     * @param Role $role
-     */
-    public function setRole(Role $role)
-    {
-    }
-    /**
-     * @return Role
-     */
-    public function getRole()
-    {
-    }
-    /**
-     * Represents one or more subjects that are bound to the role. Not always
-     * available for PATCH requests.
-     *
-     * @param Subject[] $subjects
-     */
-    public function setSubjects($subjects)
-    {
-    }
-    /**
-     * @return Subject[]
-     */
-    public function getSubjects()
+    class Google_Service_SecurityCommandCenter_GoogleCloudSecuritycenterV1Binding extends \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV1Binding
     {
     }
 }

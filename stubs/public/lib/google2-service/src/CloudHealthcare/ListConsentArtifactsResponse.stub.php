@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class ListConsentArtifactsResponse extends \Google\Collection
-{
-    protected $collection_key = 'consentArtifacts';
-    protected $consentArtifactsType = ConsentArtifact::class;
-    protected $consentArtifactsDataType = 'array';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The returned Consent artifacts. The maximum number of artifacts returned is
-     * determined by the value of page_size in the ListConsentArtifactsRequest.
-     *
-     * @param ConsentArtifact[] $consentArtifacts
-     */
-    public function setConsentArtifacts($consentArtifacts)
+namespace Google\Service\CloudHealthcare {
+    class ListConsentArtifactsResponse extends \Google\Collection
     {
+        protected $collection_key = 'consentArtifacts';
+        protected $consentArtifactsType = ConsentArtifact::class;
+        protected $consentArtifactsDataType = 'array';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The returned Consent artifacts. The maximum number of artifacts returned is
+         * determined by the value of page_size in the ListConsentArtifactsRequest.
+         *
+         * @param ConsentArtifact[] $consentArtifacts
+         */
+        public function setConsentArtifacts($consentArtifacts)
+        {
+        }
+        /**
+         * @return ConsentArtifact[]
+         */
+        public function getConsentArtifacts()
+        {
+        }
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ConsentArtifact[]
+     * Runtime class alias of \Google\Service\CloudHealthcare\ListConsentArtifactsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConsentArtifacts()
-    {
-    }
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_CloudHealthcare_ListConsentArtifactsResponse extends \Google\Service\CloudHealthcare\ListConsentArtifactsResponse
     {
     }
 }

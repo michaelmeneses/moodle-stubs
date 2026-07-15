@@ -21,27 +21,36 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class RefreshDataSourceResponse extends \Google\Collection
-{
-    protected $collection_key = 'statuses';
-    protected $statusesType = RefreshDataSourceObjectExecutionStatus::class;
-    protected $statusesDataType = 'array';
-    /**
-     * All the refresh status for the data source object references specified in
-     * the request. If is_all is specified, the field contains only those in
-     * failure status.
-     *
-     * @param RefreshDataSourceObjectExecutionStatus[] $statuses
-     */
-    public function setStatuses($statuses)
+namespace Google\Service\Sheets {
+    class RefreshDataSourceResponse extends \Google\Collection
     {
+        protected $collection_key = 'statuses';
+        protected $statusesType = RefreshDataSourceObjectExecutionStatus::class;
+        protected $statusesDataType = 'array';
+        /**
+         * All the refresh status for the data source object references specified in
+         * the request. If is_all is specified, the field contains only those in
+         * failure status.
+         *
+         * @param RefreshDataSourceObjectExecutionStatus[] $statuses
+         */
+        public function setStatuses($statuses)
+        {
+        }
+        /**
+         * @return RefreshDataSourceObjectExecutionStatus[]
+         */
+        public function getStatuses()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RefreshDataSourceObjectExecutionStatus[]
+     * Runtime class alias of \Google\Service\Sheets\RefreshDataSourceResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStatuses()
+    class Google_Service_Sheets_RefreshDataSourceResponse extends \Google\Service\Sheets\RefreshDataSourceResponse
     {
     }
 }

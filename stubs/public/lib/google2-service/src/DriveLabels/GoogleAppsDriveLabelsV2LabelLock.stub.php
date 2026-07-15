@@ -21,182 +21,191 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveLabels;
-
-class GoogleAppsDriveLabelsV2LabelLock extends \Google\Model
-{
-    /**
-     * Unknown state.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * The label lock is active and is being enforced by the server.
-     */
-    public const STATE_ACTIVE = 'ACTIVE';
-    /**
-     * The label lock is being deleted. The label lock will continue to be
-     * enforced by the server until it has been fully removed.
-     */
-    public const STATE_DELETING = 'DELETING';
-    protected $capabilitiesType = GoogleAppsDriveLabelsV2LabelLockCapabilities::class;
-    protected $capabilitiesDataType = '';
-    /**
-     * The ID of the selection field choice that should be locked. If present,
-     * `field_id` must also be present.
-     *
-     * @var string
-     */
-    public $choiceId;
-    /**
-     * Output only. The time this label lock was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    protected $creatorType = GoogleAppsDriveLabelsV2UserInfo::class;
-    protected $creatorDataType = '';
-    /**
-     * Output only. A timestamp indicating when this label lock was scheduled for
-     * deletion. Present only if this label lock is in the `DELETING` state.
-     *
-     * @var string
-     */
-    public $deleteTime;
-    /**
-     * The ID of the field that should be locked. Empty if the whole label should
-     * be locked.
-     *
-     * @var string
-     */
-    public $fieldId;
-    /**
-     * Output only. Resource name of this label lock.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. This label lock's state.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Output only. The user's capabilities on this label lock.
-     *
-     * @param GoogleAppsDriveLabelsV2LabelLockCapabilities $capabilities
-     */
-    public function setCapabilities(GoogleAppsDriveLabelsV2LabelLockCapabilities $capabilities)
+namespace Google\Service\DriveLabels {
+    class GoogleAppsDriveLabelsV2LabelLock extends \Google\Model
     {
+        /**
+         * Unknown state.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * The label lock is active and is being enforced by the server.
+         */
+        public const STATE_ACTIVE = 'ACTIVE';
+        /**
+         * The label lock is being deleted. The label lock will continue to be
+         * enforced by the server until it has been fully removed.
+         */
+        public const STATE_DELETING = 'DELETING';
+        protected $capabilitiesType = GoogleAppsDriveLabelsV2LabelLockCapabilities::class;
+        protected $capabilitiesDataType = '';
+        /**
+         * The ID of the selection field choice that should be locked. If present,
+         * `field_id` must also be present.
+         *
+         * @var string
+         */
+        public $choiceId;
+        /**
+         * Output only. The time this label lock was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        protected $creatorType = GoogleAppsDriveLabelsV2UserInfo::class;
+        protected $creatorDataType = '';
+        /**
+         * Output only. A timestamp indicating when this label lock was scheduled for
+         * deletion. Present only if this label lock is in the `DELETING` state.
+         *
+         * @var string
+         */
+        public $deleteTime;
+        /**
+         * The ID of the field that should be locked. Empty if the whole label should
+         * be locked.
+         *
+         * @var string
+         */
+        public $fieldId;
+        /**
+         * Output only. Resource name of this label lock.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. This label lock's state.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Output only. The user's capabilities on this label lock.
+         *
+         * @param GoogleAppsDriveLabelsV2LabelLockCapabilities $capabilities
+         */
+        public function setCapabilities(GoogleAppsDriveLabelsV2LabelLockCapabilities $capabilities)
+        {
+        }
+        /**
+         * @return GoogleAppsDriveLabelsV2LabelLockCapabilities
+         */
+        public function getCapabilities()
+        {
+        }
+        /**
+         * The ID of the selection field choice that should be locked. If present,
+         * `field_id` must also be present.
+         *
+         * @param string $choiceId
+         */
+        public function setChoiceId($choiceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChoiceId()
+        {
+        }
+        /**
+         * Output only. The time this label lock was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. The user whose credentials were used to create the label lock.
+         * Not present if no user was responsible for creating the label lock.
+         *
+         * @param GoogleAppsDriveLabelsV2UserInfo $creator
+         */
+        public function setCreator(GoogleAppsDriveLabelsV2UserInfo $creator)
+        {
+        }
+        /**
+         * @return GoogleAppsDriveLabelsV2UserInfo
+         */
+        public function getCreator()
+        {
+        }
+        /**
+         * Output only. A timestamp indicating when this label lock was scheduled for
+         * deletion. Present only if this label lock is in the `DELETING` state.
+         *
+         * @param string $deleteTime
+         */
+        public function setDeleteTime($deleteTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeleteTime()
+        {
+        }
+        /**
+         * The ID of the field that should be locked. Empty if the whole label should
+         * be locked.
+         *
+         * @param string $fieldId
+         */
+        public function setFieldId($fieldId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFieldId()
+        {
+        }
+        /**
+         * Output only. Resource name of this label lock.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. This label lock's state.
+         *
+         * Accepted values: STATE_UNSPECIFIED, ACTIVE, DELETING
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAppsDriveLabelsV2LabelLockCapabilities
+     * Runtime class alias of \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2LabelLock registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCapabilities()
-    {
-    }
-    /**
-     * The ID of the selection field choice that should be locked. If present,
-     * `field_id` must also be present.
-     *
-     * @param string $choiceId
-     */
-    public function setChoiceId($choiceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getChoiceId()
-    {
-    }
-    /**
-     * Output only. The time this label lock was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. The user whose credentials were used to create the label lock.
-     * Not present if no user was responsible for creating the label lock.
-     *
-     * @param GoogleAppsDriveLabelsV2UserInfo $creator
-     */
-    public function setCreator(GoogleAppsDriveLabelsV2UserInfo $creator)
-    {
-    }
-    /**
-     * @return GoogleAppsDriveLabelsV2UserInfo
-     */
-    public function getCreator()
-    {
-    }
-    /**
-     * Output only. A timestamp indicating when this label lock was scheduled for
-     * deletion. Present only if this label lock is in the `DELETING` state.
-     *
-     * @param string $deleteTime
-     */
-    public function setDeleteTime($deleteTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeleteTime()
-    {
-    }
-    /**
-     * The ID of the field that should be locked. Empty if the whole label should
-     * be locked.
-     *
-     * @param string $fieldId
-     */
-    public function setFieldId($fieldId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFieldId()
-    {
-    }
-    /**
-     * Output only. Resource name of this label lock.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. This label lock's state.
-     *
-     * Accepted values: STATE_UNSPECIFIED, ACTIVE, DELETING
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
+    class Google_Service_DriveLabels_GoogleAppsDriveLabelsV2LabelLock extends \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2LabelLock
     {
     }
 }

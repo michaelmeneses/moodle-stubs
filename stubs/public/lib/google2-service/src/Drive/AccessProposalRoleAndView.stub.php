@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Drive;
-
-class AccessProposalRoleAndView extends \Google\Model
-{
-    /**
-     * The role that was proposed by the requester. The supported values are: *
-     * `writer` * `commenter` * `reader`
-     *
-     * @var string
-     */
-    public $role;
-    /**
-     * Indicates the view for this access proposal. Only populated for proposals
-     * that belong to a view. Only `published` is supported.
-     *
-     * @var string
-     */
-    public $view;
-    /**
-     * The role that was proposed by the requester. The supported values are: *
-     * `writer` * `commenter` * `reader`
-     *
-     * @param string $role
-     */
-    public function setRole($role)
+namespace Google\Service\Drive {
+    class AccessProposalRoleAndView extends \Google\Model
     {
+        /**
+         * The role that was proposed by the requester. The supported values are: *
+         * `writer` * `commenter` * `reader`
+         *
+         * @var string
+         */
+        public $role;
+        /**
+         * Indicates the view for this access proposal. Only populated for proposals
+         * that belong to a view. Only `published` is supported.
+         *
+         * @var string
+         */
+        public $view;
+        /**
+         * The role that was proposed by the requester. The supported values are: *
+         * `writer` * `commenter` * `reader`
+         *
+         * @param string $role
+         */
+        public function setRole($role)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRole()
+        {
+        }
+        /**
+         * Indicates the view for this access proposal. Only populated for proposals
+         * that belong to a view. Only `published` is supported.
+         *
+         * @param string $view
+         */
+        public function setView($view)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getView()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Drive\AccessProposalRoleAndView registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRole()
-    {
-    }
-    /**
-     * Indicates the view for this access proposal. Only populated for proposals
-     * that belong to a view. Only `published` is supported.
-     *
-     * @param string $view
-     */
-    public function setView($view)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getView()
+    class Google_Service_Drive_AccessProposalRoleAndView extends \Google\Service\Drive\AccessProposalRoleAndView
     {
     }
 }

@@ -21,31 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement\Resource;
-
-/**
- * The "thirdPartyProfileUsers" collection of methods.
- * Typical usage is:
- *  <code>
- *   $chromemanagementService = new Google\Service\ChromeManagement(...);
- *   $thirdPartyProfileUsers = $chromemanagementService->customers_thirdPartyProfileUsers;
- *  </code>
- */
-class CustomersThirdPartyProfileUsers extends \Google\Service\Resource
-{
+namespace Google\Service\ChromeManagement\Resource {
+    use Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1MoveThirdPartyProfileUserRequest;
+    use Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1MoveThirdPartyProfileUserResponse;
     /**
-     * Moves a third party chrome profile user to a destination OU. All profiles
-     * associated to that user will be moved to the destination OU.
-     * (thirdPartyProfileUsers.move)
-     *
-     * @param string $name Required. Format:
-     * customers/{customer_id}/thirdPartyProfileUsers/{third_party_profile_user_id}
-     * @param GoogleChromeManagementVersionsV1MoveThirdPartyProfileUserRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleChromeManagementVersionsV1MoveThirdPartyProfileUserResponse
-     * @throws \Google\Service\Exception
+     * The "thirdPartyProfileUsers" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $chromemanagementService = new Google\Service\ChromeManagement(...);
+     *   $thirdPartyProfileUsers = $chromemanagementService->customers_thirdPartyProfileUsers;
+     *  </code>
      */
-    public function move($name, GoogleChromeManagementVersionsV1MoveThirdPartyProfileUserRequest $postBody, $optParams = [])
+    class CustomersThirdPartyProfileUsers extends \Google\Service\Resource
+    {
+        /**
+         * Moves a third party chrome profile user to a destination OU. All profiles
+         * associated to that user will be moved to the destination OU.
+         * (thirdPartyProfileUsers.move)
+         *
+         * @param string $name Required. Format:
+         * customers/{customer_id}/thirdPartyProfileUsers/{third_party_profile_user_id}
+         * @param GoogleChromeManagementVersionsV1MoveThirdPartyProfileUserRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleChromeManagementVersionsV1MoveThirdPartyProfileUserResponse
+         * @throws \Google\Service\Exception
+         */
+        public function move($name, GoogleChromeManagementVersionsV1MoveThirdPartyProfileUserRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ChromeManagement\Resource\CustomersThirdPartyProfileUsers registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ChromeManagement_Resource_CustomersThirdPartyProfileUsers extends \Google\Service\ChromeManagement\Resource\CustomersThirdPartyProfileUsers
     {
     }
 }

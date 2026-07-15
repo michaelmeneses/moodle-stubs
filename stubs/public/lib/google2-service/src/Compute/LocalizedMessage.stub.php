@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class LocalizedMessage extends \Google\Model
-{
-    /**
-     * The locale used following the specification defined at https://www.rfc-
-     * editor.org/rfc/bcp/bcp47.txt. Examples are: "en-US", "fr-CH", "es-MX"
-     *
-     * @var string
-     */
-    public $locale;
-    /**
-     * The localized error message in the above locale.
-     *
-     * @var string
-     */
-    public $message;
-    /**
-     * The locale used following the specification defined at https://www.rfc-
-     * editor.org/rfc/bcp/bcp47.txt. Examples are: "en-US", "fr-CH", "es-MX"
-     *
-     * @param string $locale
-     */
-    public function setLocale($locale)
+namespace Google\Service\Compute {
+    class LocalizedMessage extends \Google\Model
     {
+        /**
+         * The locale used following the specification defined at https://www.rfc-
+         * editor.org/rfc/bcp/bcp47.txt. Examples are: "en-US", "fr-CH", "es-MX"
+         *
+         * @var string
+         */
+        public $locale;
+        /**
+         * The localized error message in the above locale.
+         *
+         * @var string
+         */
+        public $message;
+        /**
+         * The locale used following the specification defined at https://www.rfc-
+         * editor.org/rfc/bcp/bcp47.txt. Examples are: "en-US", "fr-CH", "es-MX"
+         *
+         * @param string $locale
+         */
+        public function setLocale($locale)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocale()
+        {
+        }
+        /**
+         * The localized error message in the above locale.
+         *
+         * @param string $message
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\LocalizedMessage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLocale()
-    {
-    }
-    /**
-     * The localized error message in the above locale.
-     *
-     * @param string $message
-     */
-    public function setMessage($message)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMessage()
+    class Google_Service_Compute_LocalizedMessage extends \Google\Service\Compute\LocalizedMessage
     {
     }
 }

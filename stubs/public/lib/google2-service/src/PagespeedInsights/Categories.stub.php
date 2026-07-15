@@ -21,93 +21,102 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PagespeedInsights;
-
-class Categories extends \Google\Model
-{
-    protected $internal_gapi_mappings = ["bestPractices" => "best-practices"];
-    protected $accessibilityType = LighthouseCategoryV5::class;
-    protected $accessibilityDataType = '';
-    protected $bestPracticesType = LighthouseCategoryV5::class;
-    protected $bestPracticesDataType = '';
-    protected $performanceType = LighthouseCategoryV5::class;
-    protected $performanceDataType = '';
-    protected $pwaType = LighthouseCategoryV5::class;
-    protected $pwaDataType = '';
-    protected $seoType = LighthouseCategoryV5::class;
-    protected $seoDataType = '';
-    /**
-     * The accessibility category, containing all accessibility related audits.
-     *
-     * @param LighthouseCategoryV5 $accessibility
-     */
-    public function setAccessibility(LighthouseCategoryV5 $accessibility)
+namespace Google\Service\PagespeedInsights {
+    class Categories extends \Google\Model
     {
+        protected $internal_gapi_mappings = ["bestPractices" => "best-practices"];
+        protected $accessibilityType = LighthouseCategoryV5::class;
+        protected $accessibilityDataType = '';
+        protected $bestPracticesType = LighthouseCategoryV5::class;
+        protected $bestPracticesDataType = '';
+        protected $performanceType = LighthouseCategoryV5::class;
+        protected $performanceDataType = '';
+        protected $pwaType = LighthouseCategoryV5::class;
+        protected $pwaDataType = '';
+        protected $seoType = LighthouseCategoryV5::class;
+        protected $seoDataType = '';
+        /**
+         * The accessibility category, containing all accessibility related audits.
+         *
+         * @param LighthouseCategoryV5 $accessibility
+         */
+        public function setAccessibility(LighthouseCategoryV5 $accessibility)
+        {
+        }
+        /**
+         * @return LighthouseCategoryV5
+         */
+        public function getAccessibility()
+        {
+        }
+        /**
+         * The best practices category, containing all best practices related audits.
+         *
+         * @param LighthouseCategoryV5 $bestPractices
+         */
+        public function setBestPractices(LighthouseCategoryV5 $bestPractices)
+        {
+        }
+        /**
+         * @return LighthouseCategoryV5
+         */
+        public function getBestPractices()
+        {
+        }
+        /**
+         * The performance category, containing all performance related audits.
+         *
+         * @param LighthouseCategoryV5 $performance
+         */
+        public function setPerformance(LighthouseCategoryV5 $performance)
+        {
+        }
+        /**
+         * @return LighthouseCategoryV5
+         */
+        public function getPerformance()
+        {
+        }
+        /**
+         * The Progressive-Web-App (PWA) category, containing all pwa related audits.
+         * This is deprecated in Lighthouse's 12.0 release.
+         *
+         * @deprecated
+         * @param LighthouseCategoryV5 $pwa
+         */
+        public function setPwa(LighthouseCategoryV5 $pwa)
+        {
+        }
+        /**
+         * @deprecated
+         * @return LighthouseCategoryV5
+         */
+        public function getPwa()
+        {
+        }
+        /**
+         * The Search-Engine-Optimization (SEO) category, containing all seo related
+         * audits.
+         *
+         * @param LighthouseCategoryV5 $seo
+         */
+        public function setSeo(LighthouseCategoryV5 $seo)
+        {
+        }
+        /**
+         * @return LighthouseCategoryV5
+         */
+        public function getSeo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LighthouseCategoryV5
+     * Runtime class alias of \Google\Service\PagespeedInsights\Categories registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccessibility()
-    {
-    }
-    /**
-     * The best practices category, containing all best practices related audits.
-     *
-     * @param LighthouseCategoryV5 $bestPractices
-     */
-    public function setBestPractices(LighthouseCategoryV5 $bestPractices)
-    {
-    }
-    /**
-     * @return LighthouseCategoryV5
-     */
-    public function getBestPractices()
-    {
-    }
-    /**
-     * The performance category, containing all performance related audits.
-     *
-     * @param LighthouseCategoryV5 $performance
-     */
-    public function setPerformance(LighthouseCategoryV5 $performance)
-    {
-    }
-    /**
-     * @return LighthouseCategoryV5
-     */
-    public function getPerformance()
-    {
-    }
-    /**
-     * The Progressive-Web-App (PWA) category, containing all pwa related audits.
-     * This is deprecated in Lighthouse's 12.0 release.
-     *
-     * @deprecated
-     * @param LighthouseCategoryV5 $pwa
-     */
-    public function setPwa(LighthouseCategoryV5 $pwa)
-    {
-    }
-    /**
-     * @deprecated
-     * @return LighthouseCategoryV5
-     */
-    public function getPwa()
-    {
-    }
-    /**
-     * The Search-Engine-Optimization (SEO) category, containing all seo related
-     * audits.
-     *
-     * @param LighthouseCategoryV5 $seo
-     */
-    public function setSeo(LighthouseCategoryV5 $seo)
-    {
-    }
-    /**
-     * @return LighthouseCategoryV5
-     */
-    public function getSeo()
+    class Google_Service_PagespeedInsights_Categories extends \Google\Service\PagespeedInsights\Categories
     {
     }
 }

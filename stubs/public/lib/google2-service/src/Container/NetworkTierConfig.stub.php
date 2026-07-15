@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class NetworkTierConfig extends \Google\Model
-{
-    /**
-     * By default, use project-level configuration. When unspecified, the behavior
-     * defaults to NETWORK_TIER_DEFAULT. For cluster updates, this implies no
-     * action (no-op).
-     */
-    public const NETWORK_TIER_NETWORK_TIER_UNSPECIFIED = 'NETWORK_TIER_UNSPECIFIED';
-    /**
-     * Default network tier. Use project-level configuration. User can specify
-     * this value, meaning they want to keep the same behaviour as before cluster
-     * level network tier configuration is introduced. This field ensures backward
-     * compatibility for the network tier of cluster resources, such as node pools
-     * and load balancers, for their external IP addresses.
-     */
-    public const NETWORK_TIER_NETWORK_TIER_DEFAULT = 'NETWORK_TIER_DEFAULT';
-    /**
-     * Premium network tier.
-     */
-    public const NETWORK_TIER_NETWORK_TIER_PREMIUM = 'NETWORK_TIER_PREMIUM';
-    /**
-     * Standard network tier.
-     */
-    public const NETWORK_TIER_NETWORK_TIER_STANDARD = 'NETWORK_TIER_STANDARD';
-    /**
-     * Network tier configuration.
-     *
-     * @var string
-     */
-    public $networkTier;
-    /**
-     * Network tier configuration.
-     *
-     * Accepted values: NETWORK_TIER_UNSPECIFIED, NETWORK_TIER_DEFAULT,
-     * NETWORK_TIER_PREMIUM, NETWORK_TIER_STANDARD
-     *
-     * @param self::NETWORK_TIER_* $networkTier
-     */
-    public function setNetworkTier($networkTier)
+namespace Google\Service\Container {
+    class NetworkTierConfig extends \Google\Model
     {
+        /**
+         * By default, use project-level configuration. When unspecified, the behavior
+         * defaults to NETWORK_TIER_DEFAULT. For cluster updates, this implies no
+         * action (no-op).
+         */
+        public const NETWORK_TIER_NETWORK_TIER_UNSPECIFIED = 'NETWORK_TIER_UNSPECIFIED';
+        /**
+         * Default network tier. Use project-level configuration. User can specify
+         * this value, meaning they want to keep the same behaviour as before cluster
+         * level network tier configuration is introduced. This field ensures backward
+         * compatibility for the network tier of cluster resources, such as node pools
+         * and load balancers, for their external IP addresses.
+         */
+        public const NETWORK_TIER_NETWORK_TIER_DEFAULT = 'NETWORK_TIER_DEFAULT';
+        /**
+         * Premium network tier.
+         */
+        public const NETWORK_TIER_NETWORK_TIER_PREMIUM = 'NETWORK_TIER_PREMIUM';
+        /**
+         * Standard network tier.
+         */
+        public const NETWORK_TIER_NETWORK_TIER_STANDARD = 'NETWORK_TIER_STANDARD';
+        /**
+         * Network tier configuration.
+         *
+         * @var string
+         */
+        public $networkTier;
+        /**
+         * Network tier configuration.
+         *
+         * Accepted values: NETWORK_TIER_UNSPECIFIED, NETWORK_TIER_DEFAULT,
+         * NETWORK_TIER_PREMIUM, NETWORK_TIER_STANDARD
+         *
+         * @param self::NETWORK_TIER_* $networkTier
+         */
+        public function setNetworkTier($networkTier)
+        {
+        }
+        /**
+         * @return self::NETWORK_TIER_*
+         */
+        public function getNetworkTier()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::NETWORK_TIER_*
+     * Runtime class alias of \Google\Service\Container\NetworkTierConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNetworkTier()
+    class Google_Service_Container_NetworkTierConfig extends \Google\Service\Container\NetworkTierConfig
     {
     }
 }

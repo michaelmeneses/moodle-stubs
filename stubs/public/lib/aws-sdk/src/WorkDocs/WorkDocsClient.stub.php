@@ -8,6 +8,7 @@
  */
 namespace Aws\WorkDocs;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon WorkDocs** service.
  * @method \Aws\Result abortDocumentVersionUpload(array $args = [])

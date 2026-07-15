@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestDynamicRetrievalConfigurationDynamicRetrievalPredictor extends \Google\Model
-{
-    /**
-     * @var float
-     */
-    public $threshold;
-    /**
-     * @var string
-     */
-    public $version;
-    /**
-     * @param float
-     */
-    public function setThreshold($threshold)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestDynamicRetrievalConfigurationDynamicRetrievalPredictor extends \Google\Model
     {
+        /**
+         * @var float
+         */
+        public $threshold;
+        /**
+         * @var string
+         */
+        public $version;
+        /**
+         * @param float
+         */
+        public function setThreshold($threshold)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getThreshold()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestDynamicRetrievalConfigurationDynamicRetrievalPredictor registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getThreshold()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestDynamicRetrievalConfigurationDynamicRetrievalPredictor extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestDynamicRetrievalConfigurationDynamicRetrievalPredictor
     {
     }
 }

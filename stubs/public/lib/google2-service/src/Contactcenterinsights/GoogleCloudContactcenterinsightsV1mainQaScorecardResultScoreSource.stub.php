@@ -21,98 +21,107 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1mainQaScorecardResultScoreSource extends \Google\Collection
-{
-    /**
-     * Source type is unspecified.
-     */
-    public const SOURCE_TYPE_SOURCE_TYPE_UNSPECIFIED = 'SOURCE_TYPE_UNSPECIFIED';
-    /**
-     * Score is derived only from system-generated answers.
-     */
-    public const SOURCE_TYPE_SYSTEM_GENERATED_ONLY = 'SYSTEM_GENERATED_ONLY';
-    /**
-     * Score is derived from both system-generated answers, and includes any
-     * manual edits if they exist.
-     */
-    public const SOURCE_TYPE_INCLUDES_MANUAL_EDITS = 'INCLUDES_MANUAL_EDITS';
-    protected $collection_key = 'qaTagResults';
-    /**
-     * The normalized score, which is the score divided by the potential score.
-     *
-     * @var 
-     */
-    public $normalizedScore;
-    /**
-     * The maximum potential overall score of the scorecard. Any questions
-     * answered using `na_value` are excluded from this calculation.
-     *
-     * @var 
-     */
-    public $potentialScore;
-    protected $qaTagResultsType = GoogleCloudContactcenterinsightsV1mainQaScorecardResultQaTagResult::class;
-    protected $qaTagResultsDataType = 'array';
-    /**
-     * The overall numerical score of the result.
-     *
-     * @var 
-     */
-    public $score;
-    /**
-     * What created the score.
-     *
-     * @var string
-     */
-    public $sourceType;
-    public function setNormalizedScore($normalizedScore)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1mainQaScorecardResultScoreSource extends \Google\Collection
     {
+        /**
+         * Source type is unspecified.
+         */
+        public const SOURCE_TYPE_SOURCE_TYPE_UNSPECIFIED = 'SOURCE_TYPE_UNSPECIFIED';
+        /**
+         * Score is derived only from system-generated answers.
+         */
+        public const SOURCE_TYPE_SYSTEM_GENERATED_ONLY = 'SYSTEM_GENERATED_ONLY';
+        /**
+         * Score is derived from both system-generated answers, and includes any
+         * manual edits if they exist.
+         */
+        public const SOURCE_TYPE_INCLUDES_MANUAL_EDITS = 'INCLUDES_MANUAL_EDITS';
+        protected $collection_key = 'qaTagResults';
+        /**
+         * The normalized score, which is the score divided by the potential score.
+         *
+         * @var 
+         */
+        public $normalizedScore;
+        /**
+         * The maximum potential overall score of the scorecard. Any questions
+         * answered using `na_value` are excluded from this calculation.
+         *
+         * @var 
+         */
+        public $potentialScore;
+        protected $qaTagResultsType = GoogleCloudContactcenterinsightsV1mainQaScorecardResultQaTagResult::class;
+        protected $qaTagResultsDataType = 'array';
+        /**
+         * The overall numerical score of the result.
+         *
+         * @var 
+         */
+        public $score;
+        /**
+         * What created the score.
+         *
+         * @var string
+         */
+        public $sourceType;
+        public function setNormalizedScore($normalizedScore)
+        {
+        }
+        public function getNormalizedScore()
+        {
+        }
+        public function setPotentialScore($potentialScore)
+        {
+        }
+        public function getPotentialScore()
+        {
+        }
+        /**
+         * Collection of tags and their scores.
+         *
+         * @param GoogleCloudContactcenterinsightsV1mainQaScorecardResultQaTagResult[] $qaTagResults
+         */
+        public function setQaTagResults($qaTagResults)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1mainQaScorecardResultQaTagResult[]
+         */
+        public function getQaTagResults()
+        {
+        }
+        public function setScore($score)
+        {
+        }
+        public function getScore()
+        {
+        }
+        /**
+         * What created the score.
+         *
+         * Accepted values: SOURCE_TYPE_UNSPECIFIED, SYSTEM_GENERATED_ONLY,
+         * INCLUDES_MANUAL_EDITS
+         *
+         * @param self::SOURCE_TYPE_* $sourceType
+         */
+        public function setSourceType($sourceType)
+        {
+        }
+        /**
+         * @return self::SOURCE_TYPE_*
+         */
+        public function getSourceType()
+        {
+        }
     }
-    public function getNormalizedScore()
-    {
-    }
-    public function setPotentialScore($potentialScore)
-    {
-    }
-    public function getPotentialScore()
-    {
-    }
+}
+namespace {
     /**
-     * Collection of tags and their scores.
-     *
-     * @param GoogleCloudContactcenterinsightsV1mainQaScorecardResultQaTagResult[] $qaTagResults
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainQaScorecardResultScoreSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setQaTagResults($qaTagResults)
-    {
-    }
-    /**
-     * @return GoogleCloudContactcenterinsightsV1mainQaScorecardResultQaTagResult[]
-     */
-    public function getQaTagResults()
-    {
-    }
-    public function setScore($score)
-    {
-    }
-    public function getScore()
-    {
-    }
-    /**
-     * What created the score.
-     *
-     * Accepted values: SOURCE_TYPE_UNSPECIFIED, SYSTEM_GENERATED_ONLY,
-     * INCLUDES_MANUAL_EDITS
-     *
-     * @param self::SOURCE_TYPE_* $sourceType
-     */
-    public function setSourceType($sourceType)
-    {
-    }
-    /**
-     * @return self::SOURCE_TYPE_*
-     */
-    public function getSourceType()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1mainQaScorecardResultScoreSource extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainQaScorecardResultScoreSource
     {
     }
 }

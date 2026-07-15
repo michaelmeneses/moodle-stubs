@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SemanticTile;
-
-class Geometry extends \Google\Collection
-{
-    protected $collection_key = 'modeledVolumes';
-    protected $areasType = Area::class;
-    protected $areasDataType = 'array';
-    protected $extrudedAreasType = ExtrudedArea::class;
-    protected $extrudedAreasDataType = 'array';
-    protected $linesType = Line::class;
-    protected $linesDataType = 'array';
-    protected $modeledVolumesType = ModeledVolume::class;
-    protected $modeledVolumesDataType = 'array';
-    /**
-     * @param Area[]
-     */
-    public function setAreas($areas)
+namespace Google\Service\SemanticTile {
+    class Geometry extends \Google\Collection
     {
+        protected $collection_key = 'modeledVolumes';
+        protected $areasType = Area::class;
+        protected $areasDataType = 'array';
+        protected $extrudedAreasType = ExtrudedArea::class;
+        protected $extrudedAreasDataType = 'array';
+        protected $linesType = Line::class;
+        protected $linesDataType = 'array';
+        protected $modeledVolumesType = ModeledVolume::class;
+        protected $modeledVolumesDataType = 'array';
+        /**
+         * @param Area[]
+         */
+        public function setAreas($areas)
+        {
+        }
+        /**
+         * @return Area[]
+         */
+        public function getAreas()
+        {
+        }
+        /**
+         * @param ExtrudedArea[]
+         */
+        public function setExtrudedAreas($extrudedAreas)
+        {
+        }
+        /**
+         * @return ExtrudedArea[]
+         */
+        public function getExtrudedAreas()
+        {
+        }
+        /**
+         * @param Line[]
+         */
+        public function setLines($lines)
+        {
+        }
+        /**
+         * @return Line[]
+         */
+        public function getLines()
+        {
+        }
+        /**
+         * @param ModeledVolume[]
+         */
+        public function setModeledVolumes($modeledVolumes)
+        {
+        }
+        /**
+         * @return ModeledVolume[]
+         */
+        public function getModeledVolumes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Area[]
+     * Runtime class alias of \Google\Service\SemanticTile\Geometry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAreas()
-    {
-    }
-    /**
-     * @param ExtrudedArea[]
-     */
-    public function setExtrudedAreas($extrudedAreas)
-    {
-    }
-    /**
-     * @return ExtrudedArea[]
-     */
-    public function getExtrudedAreas()
-    {
-    }
-    /**
-     * @param Line[]
-     */
-    public function setLines($lines)
-    {
-    }
-    /**
-     * @return Line[]
-     */
-    public function getLines()
-    {
-    }
-    /**
-     * @param ModeledVolume[]
-     */
-    public function setModeledVolumes($modeledVolumes)
-    {
-    }
-    /**
-     * @return ModeledVolume[]
-     */
-    public function getModeledVolumes()
+    class Google_Service_SemanticTile_Geometry extends \Google\Service\SemanticTile\Geometry
     {
     }
 }

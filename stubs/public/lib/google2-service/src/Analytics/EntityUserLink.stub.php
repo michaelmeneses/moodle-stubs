@@ -21,117 +21,126 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics;
-
-class EntityUserLink extends \Google\Model
-{
-    protected $entityType = EntityUserLinkEntity::class;
-    protected $entityDataType = '';
-    /**
-     * Entity user link ID
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Resource type for entity user link.
-     *
-     * @var string
-     */
-    public $kind;
-    protected $permissionsType = EntityUserLinkPermissions::class;
-    protected $permissionsDataType = '';
-    /**
-     * Self link for this resource.
-     *
-     * @var string
-     */
-    public $selfLink;
-    protected $userRefType = UserRef::class;
-    protected $userRefDataType = '';
-    /**
-     * Entity for this link. It can be an account, a web property, or a view
-     * (profile).
-     *
-     * @param EntityUserLinkEntity $entity
-     */
-    public function setEntity(EntityUserLinkEntity $entity)
+namespace Google\Service\Analytics {
+    class EntityUserLink extends \Google\Model
     {
+        protected $entityType = EntityUserLinkEntity::class;
+        protected $entityDataType = '';
+        /**
+         * Entity user link ID
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Resource type for entity user link.
+         *
+         * @var string
+         */
+        public $kind;
+        protected $permissionsType = EntityUserLinkPermissions::class;
+        protected $permissionsDataType = '';
+        /**
+         * Self link for this resource.
+         *
+         * @var string
+         */
+        public $selfLink;
+        protected $userRefType = UserRef::class;
+        protected $userRefDataType = '';
+        /**
+         * Entity for this link. It can be an account, a web property, or a view
+         * (profile).
+         *
+         * @param EntityUserLinkEntity $entity
+         */
+        public function setEntity(EntityUserLinkEntity $entity)
+        {
+        }
+        /**
+         * @return EntityUserLinkEntity
+         */
+        public function getEntity()
+        {
+        }
+        /**
+         * Entity user link ID
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Resource type for entity user link.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Permissions the user has for this entity.
+         *
+         * @param EntityUserLinkPermissions $permissions
+         */
+        public function setPermissions(EntityUserLinkPermissions $permissions)
+        {
+        }
+        /**
+         * @return EntityUserLinkPermissions
+         */
+        public function getPermissions()
+        {
+        }
+        /**
+         * Self link for this resource.
+         *
+         * @param string $selfLink
+         */
+        public function setSelfLink($selfLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelfLink()
+        {
+        }
+        /**
+         * User reference.
+         *
+         * @param UserRef $userRef
+         */
+        public function setUserRef(UserRef $userRef)
+        {
+        }
+        /**
+         * @return UserRef
+         */
+        public function getUserRef()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EntityUserLinkEntity
+     * Runtime class alias of \Google\Service\Analytics\EntityUserLink registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntity()
-    {
-    }
-    /**
-     * Entity user link ID
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Resource type for entity user link.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Permissions the user has for this entity.
-     *
-     * @param EntityUserLinkPermissions $permissions
-     */
-    public function setPermissions(EntityUserLinkPermissions $permissions)
-    {
-    }
-    /**
-     * @return EntityUserLinkPermissions
-     */
-    public function getPermissions()
-    {
-    }
-    /**
-     * Self link for this resource.
-     *
-     * @param string $selfLink
-     */
-    public function setSelfLink($selfLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelfLink()
-    {
-    }
-    /**
-     * User reference.
-     *
-     * @param UserRef $userRef
-     */
-    public function setUserRef(UserRef $userRef)
-    {
-    }
-    /**
-     * @return UserRef
-     */
-    public function getUserRef()
+    class Google_Service_Analytics_EntityUserLink extends \Google\Service\Analytics\EntityUserLink
     {
     }
 }

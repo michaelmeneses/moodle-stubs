@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataFusion;
-
-class MaintenanceWindow extends \Google\Model
-{
-    protected $recurringTimeWindowType = RecurringTimeWindow::class;
-    protected $recurringTimeWindowDataType = '';
-    /**
-     * Required. The recurring time window of the maintenance window.
-     *
-     * @param RecurringTimeWindow $recurringTimeWindow
-     */
-    public function setRecurringTimeWindow(RecurringTimeWindow $recurringTimeWindow)
+namespace Google\Service\DataFusion {
+    class MaintenanceWindow extends \Google\Model
     {
+        protected $recurringTimeWindowType = RecurringTimeWindow::class;
+        protected $recurringTimeWindowDataType = '';
+        /**
+         * Required. The recurring time window of the maintenance window.
+         *
+         * @param RecurringTimeWindow $recurringTimeWindow
+         */
+        public function setRecurringTimeWindow(RecurringTimeWindow $recurringTimeWindow)
+        {
+        }
+        /**
+         * @return RecurringTimeWindow
+         */
+        public function getRecurringTimeWindow()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RecurringTimeWindow
+     * Runtime class alias of \Google\Service\DataFusion\MaintenanceWindow registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRecurringTimeWindow()
+    class Google_Service_DataFusion_MaintenanceWindow extends \Google\Service\DataFusion\MaintenanceWindow
     {
     }
 }

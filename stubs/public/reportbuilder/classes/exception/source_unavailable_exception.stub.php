@@ -8,6 +8,7 @@
  */
 namespace core_reportbuilder\exception;
 
+use moodle_exception;
 /**
  * Unavailable report source exception
  *

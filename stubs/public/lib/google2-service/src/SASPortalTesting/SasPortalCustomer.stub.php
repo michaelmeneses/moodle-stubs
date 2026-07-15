@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SASPortalTesting;
-
-class SasPortalCustomer extends \Google\Collection
-{
-    protected $collection_key = 'sasUserIds';
-    /**
-     * Required. Name of the organization that the customer entity represents.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Output only. Resource name of the customer.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * User IDs used by the devices belonging to this customer.
-     *
-     * @var string[]
-     */
-    public $sasUserIds;
-    /**
-     * Required. Name of the organization that the customer entity represents.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\SASPortalTesting {
+    class SasPortalCustomer extends \Google\Collection
     {
+        protected $collection_key = 'sasUserIds';
+        /**
+         * Required. Name of the organization that the customer entity represents.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Output only. Resource name of the customer.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * User IDs used by the devices belonging to this customer.
+         *
+         * @var string[]
+         */
+        public $sasUserIds;
+        /**
+         * Required. Name of the organization that the customer entity represents.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Output only. Resource name of the customer.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * User IDs used by the devices belonging to this customer.
+         *
+         * @param string[] $sasUserIds
+         */
+        public function setSasUserIds($sasUserIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSasUserIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SASPortalTesting\SasPortalCustomer registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Output only. Resource name of the customer.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * User IDs used by the devices belonging to this customer.
-     *
-     * @param string[] $sasUserIds
-     */
-    public function setSasUserIds($sasUserIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSasUserIds()
+    class Google_Service_SASPortalTesting_SasPortalCustomer extends \Google\Service\SASPortalTesting\SasPortalCustomer
     {
     }
 }

@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class ListCssesResponse extends \Google\Collection
-{
-    protected $collection_key = 'csses';
-    protected $cssesType = Css::class;
-    protected $cssesDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The CSS domains affiliated with the specified CSS group.
-     *
-     * @param Css[] $csses
-     */
-    public function setCsses($csses)
+namespace Google\Service\ShoppingContent {
+    class ListCssesResponse extends \Google\Collection
     {
+        protected $collection_key = 'csses';
+        protected $cssesType = Css::class;
+        protected $cssesDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The CSS domains affiliated with the specified CSS group.
+         *
+         * @param Css[] $csses
+         */
+        public function setCsses($csses)
+        {
+        }
+        /**
+         * @return Css[]
+         */
+        public function getCsses()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Css[]
+     * Runtime class alias of \Google\Service\ShoppingContent\ListCssesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCsses()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_ShoppingContent_ListCssesResponse extends \Google\Service\ShoppingContent\ListCssesResponse
     {
     }
 }

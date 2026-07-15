@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1BigQueryDestination extends \Google\Model
-{
-    /**
-     * Required. BigQuery URI to a project or table, up to 2000 characters long.
-     * When only the project is specified, the Dataset and Table is created. When
-     * the full table reference is specified, the Dataset must exist and table
-     * must not exist. Accepted forms: * BigQuery path. For example:
-     * `bq://projectId` or `bq://projectId.bqDatasetId` or
-     * `bq://projectId.bqDatasetId.bqTableId`.
-     *
-     * @var string
-     */
-    public $outputUri;
-    /**
-     * Required. BigQuery URI to a project or table, up to 2000 characters long.
-     * When only the project is specified, the Dataset and Table is created. When
-     * the full table reference is specified, the Dataset must exist and table
-     * must not exist. Accepted forms: * BigQuery path. For example:
-     * `bq://projectId` or `bq://projectId.bqDatasetId` or
-     * `bq://projectId.bqDatasetId.bqTableId`.
-     *
-     * @param string $outputUri
-     */
-    public function setOutputUri($outputUri)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1BigQueryDestination extends \Google\Model
     {
+        /**
+         * Required. BigQuery URI to a project or table, up to 2000 characters long.
+         * When only the project is specified, the Dataset and Table is created. When
+         * the full table reference is specified, the Dataset must exist and table
+         * must not exist. Accepted forms: * BigQuery path. For example:
+         * `bq://projectId` or `bq://projectId.bqDatasetId` or
+         * `bq://projectId.bqDatasetId.bqTableId`.
+         *
+         * @var string
+         */
+        public $outputUri;
+        /**
+         * Required. BigQuery URI to a project or table, up to 2000 characters long.
+         * When only the project is specified, the Dataset and Table is created. When
+         * the full table reference is specified, the Dataset must exist and table
+         * must not exist. Accepted forms: * BigQuery path. For example:
+         * `bq://projectId` or `bq://projectId.bqDatasetId` or
+         * `bq://projectId.bqDatasetId.bqTableId`.
+         *
+         * @param string $outputUri
+         */
+        public function setOutputUri($outputUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOutputUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1BigQueryDestination registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOutputUri()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1BigQueryDestination extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1BigQueryDestination
     {
     }
 }

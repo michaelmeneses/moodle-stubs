@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0ResourcesAudience extends \Google\Model
-{
-    /**
-     * Description of this audience.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Output only. ID of the audience.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Required. Name of the audience. It should be unique across all audiences.
-     * It must have a minimum length of 1 and maximum length of 255.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Immutable. The resource name of the audience. Audience names have the form:
-     * `customers/{customer_id}/audiences/{audience_id}`
-     *
-     * @var string
-     */
-    public $resourceName;
-    /**
-     * Description of this audience.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0ResourcesAudience extends \Google\Model
     {
+        /**
+         * Description of this audience.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Output only. ID of the audience.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Required. Name of the audience. It should be unique across all audiences.
+         * It must have a minimum length of 1 and maximum length of 255.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Immutable. The resource name of the audience. Audience names have the form:
+         * `customers/{customer_id}/audiences/{audience_id}`
+         *
+         * @var string
+         */
+        public $resourceName;
+        /**
+         * Description of this audience.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Output only. ID of the audience.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Required. Name of the audience. It should be unique across all audiences.
+         * It must have a minimum length of 1 and maximum length of 255.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Immutable. The resource name of the audience. Audience names have the form:
+         * `customers/{customer_id}/audiences/{audience_id}`
+         *
+         * @param string $resourceName
+         */
+        public function setResourceName($resourceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0ResourcesAudience registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * Output only. ID of the audience.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Required. Name of the audience. It should be unique across all audiences.
-     * It must have a minimum length of 1 and maximum length of 255.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Immutable. The resource name of the audience. Audience names have the form:
-     * `customers/{customer_id}/audiences/{audience_id}`
-     *
-     * @param string $resourceName
-     */
-    public function setResourceName($resourceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceName()
+    class Google_Service_SA360_GoogleAdsSearchads360V0ResourcesAudience extends \Google\Service\SA360\GoogleAdsSearchads360V0ResourcesAudience
     {
     }
 }

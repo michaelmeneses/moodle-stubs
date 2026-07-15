@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Appengine;
-
-class FileInfo extends \Google\Model
-{
-    /**
-     * The MIME type of the file.Defaults to the value from Google Cloud Storage.
-     *
-     * @var string
-     */
-    public $mimeType;
-    /**
-     * The SHA1 hash of the file, in hex.
-     *
-     * @var string
-     */
-    public $sha1Sum;
-    /**
-     * URL source to use to fetch this file. Must be a URL to a resource in Google
-     * Cloud Storage in the form 'http(s)://storage.googleapis.com//'.
-     *
-     * @var string
-     */
-    public $sourceUrl;
-    /**
-     * The MIME type of the file.Defaults to the value from Google Cloud Storage.
-     *
-     * @param string $mimeType
-     */
-    public function setMimeType($mimeType)
+namespace Google\Service\Appengine {
+    class FileInfo extends \Google\Model
     {
+        /**
+         * The MIME type of the file.Defaults to the value from Google Cloud Storage.
+         *
+         * @var string
+         */
+        public $mimeType;
+        /**
+         * The SHA1 hash of the file, in hex.
+         *
+         * @var string
+         */
+        public $sha1Sum;
+        /**
+         * URL source to use to fetch this file. Must be a URL to a resource in Google
+         * Cloud Storage in the form 'http(s)://storage.googleapis.com//'.
+         *
+         * @var string
+         */
+        public $sourceUrl;
+        /**
+         * The MIME type of the file.Defaults to the value from Google Cloud Storage.
+         *
+         * @param string $mimeType
+         */
+        public function setMimeType($mimeType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMimeType()
+        {
+        }
+        /**
+         * The SHA1 hash of the file, in hex.
+         *
+         * @param string $sha1Sum
+         */
+        public function setSha1Sum($sha1Sum)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSha1Sum()
+        {
+        }
+        /**
+         * URL source to use to fetch this file. Must be a URL to a resource in Google
+         * Cloud Storage in the form 'http(s)://storage.googleapis.com//'.
+         *
+         * @param string $sourceUrl
+         */
+        public function setSourceUrl($sourceUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Appengine\FileInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMimeType()
-    {
-    }
-    /**
-     * The SHA1 hash of the file, in hex.
-     *
-     * @param string $sha1Sum
-     */
-    public function setSha1Sum($sha1Sum)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSha1Sum()
-    {
-    }
-    /**
-     * URL source to use to fetch this file. Must be a URL to a resource in Google
-     * Cloud Storage in the form 'http(s)://storage.googleapis.com//'.
-     *
-     * @param string $sourceUrl
-     */
-    public function setSourceUrl($sourceUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourceUrl()
+    class Google_Service_Appengine_FileInfo extends \Google\Service\Appengine\FileInfo
     {
     }
 }

@@ -21,41 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults\Resource;
-
-/**
- * The "thumbnails" collection of methods.
- * Typical usage is:
- *  <code>
- *   $toolresultsService = new Google\Service\ToolResults(...);
- *   $thumbnails = $toolresultsService->projects_histories_executions_steps_thumbnails;
- *  </code>
- */
-class ProjectsHistoriesExecutionsStepsThumbnails extends \Google\Service\Resource
-{
+namespace Google\Service\ToolResults\Resource {
+    use Google\Service\ToolResults\ListStepThumbnailsResponse;
     /**
-     * Lists thumbnails of images attached to a step. May return any of the
-     * following canonical error codes: - PERMISSION_DENIED - if the user is not
-     * authorized to read from the project, or from any of the images -
-     * INVALID_ARGUMENT - if the request is malformed - NOT_FOUND - if the step does
-     * not exist, or if any of the images do not exist
-     * (thumbnails.listProjectsHistoriesExecutionsStepsThumbnails)
-     *
-     * @param string $projectId A Project id. Required.
-     * @param string $historyId A History id. Required.
-     * @param string $executionId An Execution id. Required.
-     * @param string $stepId A Step id. Required.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The maximum number of thumbnails to fetch. Default
-     * value: 50. The server will use this default if the field is not set or has a
-     * value of 0. Optional.
-     * @opt_param string pageToken A continuation token to resume the query at the
-     * next item. Optional.
-     * @return ListStepThumbnailsResponse
-     * @throws \Google\Service\Exception
+     * The "thumbnails" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $toolresultsService = new Google\Service\ToolResults(...);
+     *   $thumbnails = $toolresultsService->projects_histories_executions_steps_thumbnails;
+     *  </code>
      */
-    public function listProjectsHistoriesExecutionsStepsThumbnails($projectId, $historyId, $executionId, $stepId, $optParams = [])
+    class ProjectsHistoriesExecutionsStepsThumbnails extends \Google\Service\Resource
+    {
+        /**
+         * Lists thumbnails of images attached to a step. May return any of the
+         * following canonical error codes: - PERMISSION_DENIED - if the user is not
+         * authorized to read from the project, or from any of the images -
+         * INVALID_ARGUMENT - if the request is malformed - NOT_FOUND - if the step does
+         * not exist, or if any of the images do not exist
+         * (thumbnails.listProjectsHistoriesExecutionsStepsThumbnails)
+         *
+         * @param string $projectId A Project id. Required.
+         * @param string $historyId A History id. Required.
+         * @param string $executionId An Execution id. Required.
+         * @param string $stepId A Step id. Required.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The maximum number of thumbnails to fetch. Default
+         * value: 50. The server will use this default if the field is not set or has a
+         * value of 0. Optional.
+         * @opt_param string pageToken A continuation token to resume the query at the
+         * next item. Optional.
+         * @return ListStepThumbnailsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsHistoriesExecutionsStepsThumbnails($projectId, $historyId, $executionId, $stepId, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ToolResults\Resource\ProjectsHistoriesExecutionsStepsThumbnails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ToolResults_Resource_ProjectsHistoriesExecutionsStepsThumbnails extends \Google\Service\ToolResults\Resource\ProjectsHistoriesExecutionsStepsThumbnails
     {
     }
 }

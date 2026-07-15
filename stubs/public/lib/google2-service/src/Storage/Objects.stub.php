@@ -21,91 +21,100 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storage;
-
-class Objects extends \Google\Collection
-{
-    protected $collection_key = 'prefixes';
-    protected $itemsType = StorageObject::class;
-    protected $itemsDataType = 'array';
-    /**
-     * The kind of item this is. For lists of objects, this is always
-     * storage#objects.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The continuation token, used to page through large result sets. Provide
-     * this value in a subsequent request to return the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of prefixes of objects matching-but-not-listed up to and including
-     * the requested delimiter.
-     *
-     * @var string[]
-     */
-    public $prefixes;
-    /**
-     * The list of items.
-     *
-     * @param StorageObject[] $items
-     */
-    public function setItems($items)
+namespace Google\Service\Storage {
+    class Objects extends \Google\Collection
     {
+        protected $collection_key = 'prefixes';
+        protected $itemsType = StorageObject::class;
+        protected $itemsDataType = 'array';
+        /**
+         * The kind of item this is. For lists of objects, this is always
+         * storage#objects.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The continuation token, used to page through large result sets. Provide
+         * this value in a subsequent request to return the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of prefixes of objects matching-but-not-listed up to and including
+         * the requested delimiter.
+         *
+         * @var string[]
+         */
+        public $prefixes;
+        /**
+         * The list of items.
+         *
+         * @param StorageObject[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return StorageObject[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * The kind of item this is. For lists of objects, this is always
+         * storage#objects.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The continuation token, used to page through large result sets. Provide
+         * this value in a subsequent request to return the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of prefixes of objects matching-but-not-listed up to and including
+         * the requested delimiter.
+         *
+         * @param string[] $prefixes
+         */
+        public function setPrefixes($prefixes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPrefixes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return StorageObject[]
+     * Runtime class alias of \Google\Service\Storage\Objects registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItems()
-    {
-    }
-    /**
-     * The kind of item this is. For lists of objects, this is always
-     * storage#objects.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The continuation token, used to page through large result sets. Provide
-     * this value in a subsequent request to return the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of prefixes of objects matching-but-not-listed up to and including
-     * the requested delimiter.
-     *
-     * @param string[] $prefixes
-     */
-    public function setPrefixes($prefixes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPrefixes()
+    class Google_Service_Storage_Objects extends \Google\Service\Storage\Objects
     {
     }
 }

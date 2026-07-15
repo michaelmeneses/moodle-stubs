@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class NodeGroupMaintenanceWindow extends \Google\Model
-{
-    protected $maintenanceDurationType = Duration::class;
-    protected $maintenanceDurationDataType = '';
-    /**
-     * Start time of the window. This must be in UTC format that resolves to one
-     * of 00:00, 04:00, 08:00,12:00, 16:00, or 20:00. For example, both 13:00-5
-     * and 08:00 are valid.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * Output only. [Output only] A predetermined duration for the window,
-     * automatically chosen to be the smallest possible in the given scenario.
-     *
-     * @param Duration $maintenanceDuration
-     */
-    public function setMaintenanceDuration(Duration $maintenanceDuration)
+namespace Google\Service\Compute {
+    class NodeGroupMaintenanceWindow extends \Google\Model
     {
+        protected $maintenanceDurationType = Duration::class;
+        protected $maintenanceDurationDataType = '';
+        /**
+         * Start time of the window. This must be in UTC format that resolves to one
+         * of 00:00, 04:00, 08:00,12:00, 16:00, or 20:00. For example, both 13:00-5
+         * and 08:00 are valid.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * Output only. [Output only] A predetermined duration for the window,
+         * automatically chosen to be the smallest possible in the given scenario.
+         *
+         * @param Duration $maintenanceDuration
+         */
+        public function setMaintenanceDuration(Duration $maintenanceDuration)
+        {
+        }
+        /**
+         * @return Duration
+         */
+        public function getMaintenanceDuration()
+        {
+        }
+        /**
+         * Start time of the window. This must be in UTC format that resolves to one
+         * of 00:00, 04:00, 08:00,12:00, 16:00, or 20:00. For example, both 13:00-5
+         * and 08:00 are valid.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Duration
+     * Runtime class alias of \Google\Service\Compute\NodeGroupMaintenanceWindow registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaintenanceDuration()
-    {
-    }
-    /**
-     * Start time of the window. This must be in UTC format that resolves to one
-     * of 00:00, 04:00, 08:00,12:00, 16:00, or 20:00. For example, both 13:00-5
-     * and 08:00 are valid.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
+    class Google_Service_Compute_NodeGroupMaintenanceWindow extends \Google\Service\Compute\NodeGroupMaintenanceWindow
     {
     }
 }

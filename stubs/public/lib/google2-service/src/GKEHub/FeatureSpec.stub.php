@@ -21,138 +21,147 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class FeatureSpec extends \Google\Model
-{
-    protected $cloudbuildType = CloudBuildSpec::class;
-    protected $cloudbuildDataType = '';
-    protected $configmanagementType = ConfigManagementSpec::class;
-    protected $configmanagementDataType = '';
-    protected $identityserviceType = IdentityServiceSpec::class;
-    protected $identityserviceDataType = '';
-    protected $originType = Origin::class;
-    protected $originDataType = '';
-    protected $policycontrollerType = PolicyControllerSpec::class;
-    protected $policycontrollerDataType = '';
-    protected $rbacrolebindingactuationType = RBACRoleBindingActuationSpec::class;
-    protected $rbacrolebindingactuationDataType = '';
-    protected $servicemeshType = ServiceMeshSpec::class;
-    protected $servicemeshDataType = '';
-    protected $workloadcertificateType = WorkloadCertificateSpec::class;
-    protected $workloadcertificateDataType = '';
-    /**
-     * Cloudbuild-specific FeatureSpec.
-     *
-     * @param CloudBuildSpec $cloudbuild
-     */
-    public function setCloudbuild(CloudBuildSpec $cloudbuild)
+namespace Google\Service\GKEHub {
+    class FeatureSpec extends \Google\Model
     {
+        protected $cloudbuildType = CloudBuildSpec::class;
+        protected $cloudbuildDataType = '';
+        protected $configmanagementType = ConfigManagementSpec::class;
+        protected $configmanagementDataType = '';
+        protected $identityserviceType = IdentityServiceSpec::class;
+        protected $identityserviceDataType = '';
+        protected $originType = Origin::class;
+        protected $originDataType = '';
+        protected $policycontrollerType = PolicyControllerSpec::class;
+        protected $policycontrollerDataType = '';
+        protected $rbacrolebindingactuationType = RBACRoleBindingActuationSpec::class;
+        protected $rbacrolebindingactuationDataType = '';
+        protected $servicemeshType = ServiceMeshSpec::class;
+        protected $servicemeshDataType = '';
+        protected $workloadcertificateType = WorkloadCertificateSpec::class;
+        protected $workloadcertificateDataType = '';
+        /**
+         * Cloudbuild-specific FeatureSpec.
+         *
+         * @param CloudBuildSpec $cloudbuild
+         */
+        public function setCloudbuild(CloudBuildSpec $cloudbuild)
+        {
+        }
+        /**
+         * @return CloudBuildSpec
+         */
+        public function getCloudbuild()
+        {
+        }
+        /**
+         * Config Management FeatureSpec.
+         *
+         * @param ConfigManagementSpec $configmanagement
+         */
+        public function setConfigmanagement(ConfigManagementSpec $configmanagement)
+        {
+        }
+        /**
+         * @return ConfigManagementSpec
+         */
+        public function getConfigmanagement()
+        {
+        }
+        /**
+         * IdentityService FeatureSpec.
+         *
+         * @param IdentityServiceSpec $identityservice
+         */
+        public function setIdentityservice(IdentityServiceSpec $identityservice)
+        {
+        }
+        /**
+         * @return IdentityServiceSpec
+         */
+        public function getIdentityservice()
+        {
+        }
+        /**
+         * Whether this per-Feature spec was inherited from a fleet-level default.
+         * This field can be updated by users by either overriding a Feature config
+         * (updated to USER implicitly) or setting to FLEET explicitly.
+         *
+         * @param Origin $origin
+         */
+        public function setOrigin(Origin $origin)
+        {
+        }
+        /**
+         * @return Origin
+         */
+        public function getOrigin()
+        {
+        }
+        /**
+         * Policycontroller-specific FeatureSpec.
+         *
+         * @param PolicyControllerSpec $policycontroller
+         */
+        public function setPolicycontroller(PolicyControllerSpec $policycontroller)
+        {
+        }
+        /**
+         * @return PolicyControllerSpec
+         */
+        public function getPolicycontroller()
+        {
+        }
+        /**
+         * Rbacrolebindingactuation-specific FeatureSpec.
+         *
+         * @param RBACRoleBindingActuationSpec $rbacrolebindingactuation
+         */
+        public function setRbacrolebindingactuation(RBACRoleBindingActuationSpec $rbacrolebindingactuation)
+        {
+        }
+        /**
+         * @return RBACRoleBindingActuationSpec
+         */
+        public function getRbacrolebindingactuation()
+        {
+        }
+        /**
+         * ServiceMesh Feature Spec.
+         *
+         * @param ServiceMeshSpec $servicemesh
+         */
+        public function setServicemesh(ServiceMeshSpec $servicemesh)
+        {
+        }
+        /**
+         * @return ServiceMeshSpec
+         */
+        public function getServicemesh()
+        {
+        }
+        /**
+         * Workloadcertificate-specific FeatureSpec.
+         *
+         * @param WorkloadCertificateSpec $workloadcertificate
+         */
+        public function setWorkloadcertificate(WorkloadCertificateSpec $workloadcertificate)
+        {
+        }
+        /**
+         * @return WorkloadCertificateSpec
+         */
+        public function getWorkloadcertificate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CloudBuildSpec
+     * Runtime class alias of \Google\Service\GKEHub\FeatureSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCloudbuild()
-    {
-    }
-    /**
-     * Config Management FeatureSpec.
-     *
-     * @param ConfigManagementSpec $configmanagement
-     */
-    public function setConfigmanagement(ConfigManagementSpec $configmanagement)
-    {
-    }
-    /**
-     * @return ConfigManagementSpec
-     */
-    public function getConfigmanagement()
-    {
-    }
-    /**
-     * IdentityService FeatureSpec.
-     *
-     * @param IdentityServiceSpec $identityservice
-     */
-    public function setIdentityservice(IdentityServiceSpec $identityservice)
-    {
-    }
-    /**
-     * @return IdentityServiceSpec
-     */
-    public function getIdentityservice()
-    {
-    }
-    /**
-     * Whether this per-Feature spec was inherited from a fleet-level default.
-     * This field can be updated by users by either overriding a Feature config
-     * (updated to USER implicitly) or setting to FLEET explicitly.
-     *
-     * @param Origin $origin
-     */
-    public function setOrigin(Origin $origin)
-    {
-    }
-    /**
-     * @return Origin
-     */
-    public function getOrigin()
-    {
-    }
-    /**
-     * Policycontroller-specific FeatureSpec.
-     *
-     * @param PolicyControllerSpec $policycontroller
-     */
-    public function setPolicycontroller(PolicyControllerSpec $policycontroller)
-    {
-    }
-    /**
-     * @return PolicyControllerSpec
-     */
-    public function getPolicycontroller()
-    {
-    }
-    /**
-     * Rbacrolebindingactuation-specific FeatureSpec.
-     *
-     * @param RBACRoleBindingActuationSpec $rbacrolebindingactuation
-     */
-    public function setRbacrolebindingactuation(RBACRoleBindingActuationSpec $rbacrolebindingactuation)
-    {
-    }
-    /**
-     * @return RBACRoleBindingActuationSpec
-     */
-    public function getRbacrolebindingactuation()
-    {
-    }
-    /**
-     * ServiceMesh Feature Spec.
-     *
-     * @param ServiceMeshSpec $servicemesh
-     */
-    public function setServicemesh(ServiceMeshSpec $servicemesh)
-    {
-    }
-    /**
-     * @return ServiceMeshSpec
-     */
-    public function getServicemesh()
-    {
-    }
-    /**
-     * Workloadcertificate-specific FeatureSpec.
-     *
-     * @param WorkloadCertificateSpec $workloadcertificate
-     */
-    public function setWorkloadcertificate(WorkloadCertificateSpec $workloadcertificate)
-    {
-    }
-    /**
-     * @return WorkloadCertificateSpec
-     */
-    public function getWorkloadcertificate()
+    class Google_Service_GKEHub_FeatureSpec extends \Google\Service\GKEHub\FeatureSpec
     {
     }
 }

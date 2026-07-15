@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AddOnFrameStartingState extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $additionalData;
-    /**
-     * @var string
-     */
-    public $uri;
-    /**
-     * @param string
-     */
-    public function setAdditionalData($additionalData)
+namespace Google\Service\CloudSearch {
+    class AddOnFrameStartingState extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $additionalData;
+        /**
+         * @var string
+         */
+        public $uri;
+        /**
+         * @param string
+         */
+        public function setAdditionalData($additionalData)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdditionalData()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\AddOnFrameStartingState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdditionalData()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_CloudSearch_AddOnFrameStartingState extends \Google\Service\CloudSearch\AddOnFrameStartingState
     {
     }
 }

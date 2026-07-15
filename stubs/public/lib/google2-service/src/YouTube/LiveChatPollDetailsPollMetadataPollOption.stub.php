@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class LiveChatPollDetailsPollMetadataPollOption extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $optionText;
-    /**
-     * @var string
-     */
-    public $tally;
-    /**
-     * @param string $optionText
-     */
-    public function setOptionText($optionText)
+namespace Google\Service\YouTube {
+    class LiveChatPollDetailsPollMetadataPollOption extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $optionText;
+        /**
+         * @var string
+         */
+        public $tally;
+        /**
+         * @param string $optionText
+         */
+        public function setOptionText($optionText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOptionText()
+        {
+        }
+        /**
+         * @param string $tally
+         */
+        public function setTally($tally)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTally()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\LiveChatPollDetailsPollMetadataPollOption registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOptionText()
-    {
-    }
-    /**
-     * @param string $tally
-     */
-    public function setTally($tally)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTally()
+    class Google_Service_YouTube_LiveChatPollDetailsPollMetadataPollOption extends \Google\Service\YouTube\LiveChatPollDetailsPollMetadataPollOption
     {
     }
 }

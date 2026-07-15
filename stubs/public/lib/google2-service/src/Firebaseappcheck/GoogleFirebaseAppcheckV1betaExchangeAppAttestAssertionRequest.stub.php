@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firebaseappcheck;
-
-class GoogleFirebaseAppcheckV1betaExchangeAppAttestAssertionRequest extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $artifact;
-    /**
-     * @var string
-     */
-    public $assertion;
-    /**
-     * @var string
-     */
-    public $challenge;
-    /**
-     * @param string
-     */
-    public function setArtifact($artifact)
+namespace Google\Service\Firebaseappcheck {
+    class GoogleFirebaseAppcheckV1betaExchangeAppAttestAssertionRequest extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $artifact;
+        /**
+         * @var string
+         */
+        public $assertion;
+        /**
+         * @var string
+         */
+        public $challenge;
+        /**
+         * @param string
+         */
+        public function setArtifact($artifact)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getArtifact()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setAssertion($assertion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAssertion()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setChallenge($challenge)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChallenge()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1betaExchangeAppAttestAssertionRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArtifact()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setAssertion($assertion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAssertion()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setChallenge($challenge)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getChallenge()
+    class Google_Service_Firebaseappcheck_GoogleFirebaseAppcheckV1betaExchangeAppAttestAssertionRequest extends \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1betaExchangeAppAttestAssertionRequest
     {
     }
 }

@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class MachineDiskDetails extends \Google\Model
-{
-    protected $disksType = DiskEntryList::class;
-    protected $disksDataType = '';
-    /**
-     * Disk total Capacity.
-     *
-     * @var string
-     */
-    public $totalCapacityBytes;
-    /**
-     * Total disk free space.
-     *
-     * @var string
-     */
-    public $totalFreeBytes;
-    /**
-     * List of disks.
-     *
-     * @param DiskEntryList $disks
-     */
-    public function setDisks(DiskEntryList $disks)
+namespace Google\Service\MigrationCenterAPI {
+    class MachineDiskDetails extends \Google\Model
     {
+        protected $disksType = DiskEntryList::class;
+        protected $disksDataType = '';
+        /**
+         * Disk total Capacity.
+         *
+         * @var string
+         */
+        public $totalCapacityBytes;
+        /**
+         * Total disk free space.
+         *
+         * @var string
+         */
+        public $totalFreeBytes;
+        /**
+         * List of disks.
+         *
+         * @param DiskEntryList $disks
+         */
+        public function setDisks(DiskEntryList $disks)
+        {
+        }
+        /**
+         * @return DiskEntryList
+         */
+        public function getDisks()
+        {
+        }
+        /**
+         * Disk total Capacity.
+         *
+         * @param string $totalCapacityBytes
+         */
+        public function setTotalCapacityBytes($totalCapacityBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalCapacityBytes()
+        {
+        }
+        /**
+         * Total disk free space.
+         *
+         * @param string $totalFreeBytes
+         */
+        public function setTotalFreeBytes($totalFreeBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalFreeBytes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DiskEntryList
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\MachineDiskDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisks()
-    {
-    }
-    /**
-     * Disk total Capacity.
-     *
-     * @param string $totalCapacityBytes
-     */
-    public function setTotalCapacityBytes($totalCapacityBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalCapacityBytes()
-    {
-    }
-    /**
-     * Total disk free space.
-     *
-     * @param string $totalFreeBytes
-     */
-    public function setTotalFreeBytes($totalFreeBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalFreeBytes()
+    class Google_Service_MigrationCenterAPI_MachineDiskDetails extends \Google\Service\MigrationCenterAPI\MachineDiskDetails
     {
     }
 }

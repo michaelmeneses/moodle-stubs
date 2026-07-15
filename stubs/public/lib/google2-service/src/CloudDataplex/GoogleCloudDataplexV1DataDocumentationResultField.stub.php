@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1DataDocumentationResultField extends \Google\Collection
-{
-    protected $collection_key = 'fields';
-    /**
-     * Output only. Generated description for columns and fields.
-     *
-     * @var string
-     */
-    public $description;
-    protected $fieldsType = GoogleCloudDataplexV1DataDocumentationResultField::class;
-    protected $fieldsDataType = 'array';
-    /**
-     * Output only. The name of the column.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. Generated description for columns and fields.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1DataDocumentationResultField extends \Google\Collection
     {
+        protected $collection_key = 'fields';
+        /**
+         * Output only. Generated description for columns and fields.
+         *
+         * @var string
+         */
+        public $description;
+        protected $fieldsType = GoogleCloudDataplexV1DataDocumentationResultField::class;
+        protected $fieldsDataType = 'array';
+        /**
+         * Output only. The name of the column.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. Generated description for columns and fields.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Output only. Nested fields.
+         *
+         * @param GoogleCloudDataplexV1DataDocumentationResultField[] $fields
+         */
+        public function setFields($fields)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1DataDocumentationResultField[]
+         */
+        public function getFields()
+        {
+        }
+        /**
+         * Output only. The name of the column.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataDocumentationResultField registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * Output only. Nested fields.
-     *
-     * @param GoogleCloudDataplexV1DataDocumentationResultField[] $fields
-     */
-    public function setFields($fields)
-    {
-    }
-    /**
-     * @return GoogleCloudDataplexV1DataDocumentationResultField[]
-     */
-    public function getFields()
-    {
-    }
-    /**
-     * Output only. The name of the column.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1DataDocumentationResultField extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataDocumentationResultField
     {
     }
 }

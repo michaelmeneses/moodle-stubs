@@ -8,6 +8,7 @@
  */
 namespace Aws\IoTDeviceAdvisor;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS IoT Core Device Advisor** service.
  * @method \Aws\Result createSuiteDefinition(array $args = [])

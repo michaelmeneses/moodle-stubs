@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class AdPolicyTopicEvidenceTextList extends \Google\Collection
-{
-    protected $collection_key = 'texts';
-    /**
-     * The fragments of text from the resource that caused the policy finding.
-     *
-     * @var string[]
-     */
-    public $texts;
-    /**
-     * The fragments of text from the resource that caused the policy finding.
-     *
-     * @param string[] $texts
-     */
-    public function setTexts($texts)
+namespace Google\Service\DisplayVideo {
+    class AdPolicyTopicEvidenceTextList extends \Google\Collection
     {
+        protected $collection_key = 'texts';
+        /**
+         * The fragments of text from the resource that caused the policy finding.
+         *
+         * @var string[]
+         */
+        public $texts;
+        /**
+         * The fragments of text from the resource that caused the policy finding.
+         *
+         * @param string[] $texts
+         */
+        public function setTexts($texts)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTexts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\DisplayVideo\AdPolicyTopicEvidenceTextList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTexts()
+    class Google_Service_DisplayVideo_AdPolicyTopicEvidenceTextList extends \Google\Service\DisplayVideo\AdPolicyTopicEvidenceTextList
     {
     }
 }

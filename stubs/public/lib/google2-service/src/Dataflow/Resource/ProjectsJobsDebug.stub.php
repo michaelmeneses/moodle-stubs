@@ -21,43 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow\Resource;
-
-/**
- * The "debug" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dataflowService = new Google\Service\Dataflow(...);
- *   $debug = $dataflowService->projects_jobs_debug;
- *  </code>
- */
-class ProjectsJobsDebug extends \Google\Service\Resource
-{
+namespace Google\Service\Dataflow\Resource {
+    use Google\Service\Dataflow\GetDebugConfigRequest;
+    use Google\Service\Dataflow\GetDebugConfigResponse;
+    use Google\Service\Dataflow\SendDebugCaptureRequest;
+    use Google\Service\Dataflow\SendDebugCaptureResponse;
     /**
-     * Get encoded debug configuration for component. Not cacheable.
-     * (debug.getConfig)
-     *
-     * @param string $projectId The project id.
-     * @param string $jobId The job id.
-     * @param GetDebugConfigRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GetDebugConfigResponse
-     * @throws \Google\Service\Exception
+     * The "debug" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dataflowService = new Google\Service\Dataflow(...);
+     *   $debug = $dataflowService->projects_jobs_debug;
+     *  </code>
      */
-    public function getConfig($projectId, $jobId, GetDebugConfigRequest $postBody, $optParams = [])
+    class ProjectsJobsDebug extends \Google\Service\Resource
     {
+        /**
+         * Get encoded debug configuration for component. Not cacheable.
+         * (debug.getConfig)
+         *
+         * @param string $projectId The project id.
+         * @param string $jobId The job id.
+         * @param GetDebugConfigRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GetDebugConfigResponse
+         * @throws \Google\Service\Exception
+         */
+        public function getConfig($projectId, $jobId, GetDebugConfigRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Send encoded debug capture data for component. (debug.sendCapture)
+         *
+         * @param string $projectId The project id.
+         * @param string $jobId The job id.
+         * @param SendDebugCaptureRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return SendDebugCaptureResponse
+         * @throws \Google\Service\Exception
+         */
+        public function sendCapture($projectId, $jobId, SendDebugCaptureRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Send encoded debug capture data for component. (debug.sendCapture)
-     *
-     * @param string $projectId The project id.
-     * @param string $jobId The job id.
-     * @param SendDebugCaptureRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return SendDebugCaptureResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Dataflow\Resource\ProjectsJobsDebug registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function sendCapture($projectId, $jobId, SendDebugCaptureRequest $postBody, $optParams = [])
+    class Google_Service_Dataflow_Resource_ProjectsJobsDebug extends \Google\Service\Dataflow\Resource\ProjectsJobsDebug
     {
     }
 }

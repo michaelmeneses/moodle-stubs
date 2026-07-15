@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class DeleteDataSourceRequest extends \Google\Model
-{
-    /**
-     * The ID of the data source to delete.
-     *
-     * @var string
-     */
-    public $dataSourceId;
-    /**
-     * The ID of the data source to delete.
-     *
-     * @param string $dataSourceId
-     */
-    public function setDataSourceId($dataSourceId)
+namespace Google\Service\Sheets {
+    class DeleteDataSourceRequest extends \Google\Model
     {
+        /**
+         * The ID of the data source to delete.
+         *
+         * @var string
+         */
+        public $dataSourceId;
+        /**
+         * The ID of the data source to delete.
+         *
+         * @param string $dataSourceId
+         */
+        public function setDataSourceId($dataSourceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataSourceId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Sheets\DeleteDataSourceRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataSourceId()
+    class Google_Service_Sheets_DeleteDataSourceRequest extends \Google\Service\Sheets\DeleteDataSourceRequest
     {
     }
 }

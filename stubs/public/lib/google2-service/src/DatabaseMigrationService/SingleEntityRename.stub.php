@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class SingleEntityRename extends \Google\Model
-{
-    /**
-     * Required. The new name of the destination entity
-     *
-     * @var string
-     */
-    public $newName;
-    /**
-     * Required. The new name of the destination entity
-     *
-     * @param string $newName
-     */
-    public function setNewName($newName)
+namespace Google\Service\DatabaseMigrationService {
+    class SingleEntityRename extends \Google\Model
     {
+        /**
+         * Required. The new name of the destination entity
+         *
+         * @var string
+         */
+        public $newName;
+        /**
+         * Required. The new name of the destination entity
+         *
+         * @param string $newName
+         */
+        public function setNewName($newName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNewName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\SingleEntityRename registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNewName()
+    class Google_Service_DatabaseMigrationService_SingleEntityRename extends \Google\Service\DatabaseMigrationService\SingleEntityRename
     {
     }
 }

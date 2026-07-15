@@ -8,6 +8,8 @@
  */
 namespace core_reportbuilder\local\aggregation;
 
+use core\lang_string;
+use core_reportbuilder\local\report\column;
 /**
  * Base class for column aggregation types
  *

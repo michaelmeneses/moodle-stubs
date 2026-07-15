@@ -21,135 +21,144 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class ReportWorkItemStatusRequest extends \Google\Collection
-{
-    protected $collection_key = 'workItemStatuses';
-    /**
-     * The current timestamp at the worker.
-     *
-     * @var string
-     */
-    public $currentWorkerTime;
-    /**
-     * The [regional endpoint]
-     * (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that
-     * contains the WorkItem's job.
-     *
-     * @var string
-     */
-    public $location;
-    /**
-     * Optional. The project number of the project which owns the WorkItem's job.
-     *
-     * @var string
-     */
-    public $projectNumber;
-    /**
-     * Untranslated bag-of-bytes WorkProgressUpdateRequest from UnifiedWorker.
-     *
-     * @var array[]
-     */
-    public $unifiedWorkerRequest;
-    protected $workItemStatusesType = WorkItemStatus::class;
-    protected $workItemStatusesDataType = 'array';
-    /**
-     * The ID of the worker reporting the WorkItem status. If this does not match
-     * the ID of the worker which the Dataflow service believes currently has the
-     * lease on the WorkItem, the report will be dropped (with an error response).
-     *
-     * @var string
-     */
-    public $workerId;
-    /**
-     * The current timestamp at the worker.
-     *
-     * @param string $currentWorkerTime
-     */
-    public function setCurrentWorkerTime($currentWorkerTime)
+namespace Google\Service\Dataflow {
+    class ReportWorkItemStatusRequest extends \Google\Collection
     {
+        protected $collection_key = 'workItemStatuses';
+        /**
+         * The current timestamp at the worker.
+         *
+         * @var string
+         */
+        public $currentWorkerTime;
+        /**
+         * The [regional endpoint]
+         * (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that
+         * contains the WorkItem's job.
+         *
+         * @var string
+         */
+        public $location;
+        /**
+         * Optional. The project number of the project which owns the WorkItem's job.
+         *
+         * @var string
+         */
+        public $projectNumber;
+        /**
+         * Untranslated bag-of-bytes WorkProgressUpdateRequest from UnifiedWorker.
+         *
+         * @var array[]
+         */
+        public $unifiedWorkerRequest;
+        protected $workItemStatusesType = WorkItemStatus::class;
+        protected $workItemStatusesDataType = 'array';
+        /**
+         * The ID of the worker reporting the WorkItem status. If this does not match
+         * the ID of the worker which the Dataflow service believes currently has the
+         * lease on the WorkItem, the report will be dropped (with an error response).
+         *
+         * @var string
+         */
+        public $workerId;
+        /**
+         * The current timestamp at the worker.
+         *
+         * @param string $currentWorkerTime
+         */
+        public function setCurrentWorkerTime($currentWorkerTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCurrentWorkerTime()
+        {
+        }
+        /**
+         * The [regional endpoint]
+         * (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that
+         * contains the WorkItem's job.
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * Optional. The project number of the project which owns the WorkItem's job.
+         *
+         * @param string $projectNumber
+         */
+        public function setProjectNumber($projectNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectNumber()
+        {
+        }
+        /**
+         * Untranslated bag-of-bytes WorkProgressUpdateRequest from UnifiedWorker.
+         *
+         * @param array[] $unifiedWorkerRequest
+         */
+        public function setUnifiedWorkerRequest($unifiedWorkerRequest)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getUnifiedWorkerRequest()
+        {
+        }
+        /**
+         * The order is unimportant, except that the order of the WorkItemServiceState
+         * messages in the ReportWorkItemStatusResponse corresponds to the order of
+         * WorkItemStatus messages here.
+         *
+         * @param WorkItemStatus[] $workItemStatuses
+         */
+        public function setWorkItemStatuses($workItemStatuses)
+        {
+        }
+        /**
+         * @return WorkItemStatus[]
+         */
+        public function getWorkItemStatuses()
+        {
+        }
+        /**
+         * The ID of the worker reporting the WorkItem status. If this does not match
+         * the ID of the worker which the Dataflow service believes currently has the
+         * lease on the WorkItem, the report will be dropped (with an error response).
+         *
+         * @param string $workerId
+         */
+        public function setWorkerId($workerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWorkerId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataflow\ReportWorkItemStatusRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCurrentWorkerTime()
-    {
-    }
-    /**
-     * The [regional endpoint]
-     * (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that
-     * contains the WorkItem's job.
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocation()
-    {
-    }
-    /**
-     * Optional. The project number of the project which owns the WorkItem's job.
-     *
-     * @param string $projectNumber
-     */
-    public function setProjectNumber($projectNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProjectNumber()
-    {
-    }
-    /**
-     * Untranslated bag-of-bytes WorkProgressUpdateRequest from UnifiedWorker.
-     *
-     * @param array[] $unifiedWorkerRequest
-     */
-    public function setUnifiedWorkerRequest($unifiedWorkerRequest)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getUnifiedWorkerRequest()
-    {
-    }
-    /**
-     * The order is unimportant, except that the order of the WorkItemServiceState
-     * messages in the ReportWorkItemStatusResponse corresponds to the order of
-     * WorkItemStatus messages here.
-     *
-     * @param WorkItemStatus[] $workItemStatuses
-     */
-    public function setWorkItemStatuses($workItemStatuses)
-    {
-    }
-    /**
-     * @return WorkItemStatus[]
-     */
-    public function getWorkItemStatuses()
-    {
-    }
-    /**
-     * The ID of the worker reporting the WorkItem status. If this does not match
-     * the ID of the worker which the Dataflow service believes currently has the
-     * lease on the WorkItem, the report will be dropped (with an error response).
-     *
-     * @param string $workerId
-     */
-    public function setWorkerId($workerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWorkerId()
+    class Google_Service_Dataflow_ReportWorkItemStatusRequest extends \Google\Service\Dataflow\ReportWorkItemStatusRequest
     {
     }
 }

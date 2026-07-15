@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudFunctions;
-
-class SourceRepository extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $deployedUrl;
-    /**
-     * @var string
-     */
-    public $url;
-    /**
-     * @param string
-     */
-    public function setDeployedUrl($deployedUrl)
+namespace Google\Service\CloudFunctions {
+    class SourceRepository extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $deployedUrl;
+        /**
+         * @var string
+         */
+        public $url;
+        /**
+         * @param string
+         */
+        public function setDeployedUrl($deployedUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeployedUrl()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudFunctions\SourceRepository registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeployedUrl()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
+    class Google_Service_CloudFunctions_SourceRepository extends \Google\Service\CloudFunctions\SourceRepository
     {
     }
 }

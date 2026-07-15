@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1FeedbackThread extends \Google\Model
-{
-    protected $feedbackThreadMetadataType = GoogleCloudDatalabelingV1beta1FeedbackThreadMetadata::class;
-    protected $feedbackThreadMetadataDataType = '';
-    /**
-     * Name of the feedback thread. Format: 'project/{project_id}/datasets/{datase
-     * t_id}/annotatedDatasets/{annotated_dataset_id}/feedbackThreads/{feedback_th
-     * read_id}'
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Metadata regarding the feedback thread.
-     *
-     * @param GoogleCloudDatalabelingV1beta1FeedbackThreadMetadata $feedbackThreadMetadata
-     */
-    public function setFeedbackThreadMetadata(GoogleCloudDatalabelingV1beta1FeedbackThreadMetadata $feedbackThreadMetadata)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1FeedbackThread extends \Google\Model
     {
+        protected $feedbackThreadMetadataType = GoogleCloudDatalabelingV1beta1FeedbackThreadMetadata::class;
+        protected $feedbackThreadMetadataDataType = '';
+        /**
+         * Name of the feedback thread. Format: 'project/{project_id}/datasets/{datase
+         * t_id}/annotatedDatasets/{annotated_dataset_id}/feedbackThreads/{feedback_th
+         * read_id}'
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Metadata regarding the feedback thread.
+         *
+         * @param GoogleCloudDatalabelingV1beta1FeedbackThreadMetadata $feedbackThreadMetadata
+         */
+        public function setFeedbackThreadMetadata(GoogleCloudDatalabelingV1beta1FeedbackThreadMetadata $feedbackThreadMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1FeedbackThreadMetadata
+         */
+        public function getFeedbackThreadMetadata()
+        {
+        }
+        /**
+         * Name of the feedback thread. Format: 'project/{project_id}/datasets/{datase
+         * t_id}/annotatedDatasets/{annotated_dataset_id}/feedbackThreads/{feedback_th
+         * read_id}'
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatalabelingV1beta1FeedbackThreadMetadata
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1FeedbackThread registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFeedbackThreadMetadata()
-    {
-    }
-    /**
-     * Name of the feedback thread. Format: 'project/{project_id}/datasets/{datase
-     * t_id}/annotatedDatasets/{annotated_dataset_id}/feedbackThreads/{feedback_th
-     * read_id}'
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1FeedbackThread extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1FeedbackThread
     {
     }
 }

@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveLabels;
-
-class GoogleAppsDriveLabelsV2BatchUpdateLabelPermissionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'permissions';
-    protected $permissionsType = GoogleAppsDriveLabelsV2LabelPermission::class;
-    protected $permissionsDataType = 'array';
-    /**
-     * Required. Permissions updated.
-     *
-     * @param GoogleAppsDriveLabelsV2LabelPermission[] $permissions
-     */
-    public function setPermissions($permissions)
+namespace Google\Service\DriveLabels {
+    class GoogleAppsDriveLabelsV2BatchUpdateLabelPermissionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'permissions';
+        protected $permissionsType = GoogleAppsDriveLabelsV2LabelPermission::class;
+        protected $permissionsDataType = 'array';
+        /**
+         * Required. Permissions updated.
+         *
+         * @param GoogleAppsDriveLabelsV2LabelPermission[] $permissions
+         */
+        public function setPermissions($permissions)
+        {
+        }
+        /**
+         * @return GoogleAppsDriveLabelsV2LabelPermission[]
+         */
+        public function getPermissions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAppsDriveLabelsV2LabelPermission[]
+     * Runtime class alias of \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2BatchUpdateLabelPermissionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPermissions()
+    class Google_Service_DriveLabels_GoogleAppsDriveLabelsV2BatchUpdateLabelPermissionsResponse extends \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2BatchUpdateLabelPermissionsResponse
     {
     }
 }

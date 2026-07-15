@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsHub;
-
-class DestinationPubSubSubscription extends \Google\Model
-{
-    protected $pubsubSubscriptionType = GooglePubsubV1Subscription::class;
-    protected $pubsubSubscriptionDataType = '';
-    /**
-     * Required. Destination Pub/Sub subscription resource.
-     *
-     * @param GooglePubsubV1Subscription $pubsubSubscription
-     */
-    public function setPubsubSubscription(GooglePubsubV1Subscription $pubsubSubscription)
+namespace Google\Service\AnalyticsHub {
+    class DestinationPubSubSubscription extends \Google\Model
     {
+        protected $pubsubSubscriptionType = GooglePubsubV1Subscription::class;
+        protected $pubsubSubscriptionDataType = '';
+        /**
+         * Required. Destination Pub/Sub subscription resource.
+         *
+         * @param GooglePubsubV1Subscription $pubsubSubscription
+         */
+        public function setPubsubSubscription(GooglePubsubV1Subscription $pubsubSubscription)
+        {
+        }
+        /**
+         * @return GooglePubsubV1Subscription
+         */
+        public function getPubsubSubscription()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePubsubV1Subscription
+     * Runtime class alias of \Google\Service\AnalyticsHub\DestinationPubSubSubscription registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPubsubSubscription()
+    class Google_Service_AnalyticsHub_DestinationPubSubSubscription extends \Google\Service\AnalyticsHub\DestinationPubSubSubscription
     {
     }
 }

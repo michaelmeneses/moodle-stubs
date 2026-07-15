@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class Background extends \Google\Model
-{
-    protected $colorType = OptionalColor::class;
-    protected $colorDataType = '';
-    /**
-     * The background color.
-     *
-     * @param OptionalColor $color
-     */
-    public function setColor(OptionalColor $color)
+namespace Google\Service\Docs {
+    class Background extends \Google\Model
     {
+        protected $colorType = OptionalColor::class;
+        protected $colorDataType = '';
+        /**
+         * The background color.
+         *
+         * @param OptionalColor $color
+         */
+        public function setColor(OptionalColor $color)
+        {
+        }
+        /**
+         * @return OptionalColor
+         */
+        public function getColor()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return OptionalColor
+     * Runtime class alias of \Google\Service\Docs\Background registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColor()
+    class Google_Service_Docs_Background extends \Google\Service\Docs\Background
     {
     }
 }

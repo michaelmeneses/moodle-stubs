@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataprocMetastore;
-
-class AutoscalingConfig extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $autoscalingEnabled;
-    /**
-     * @var float
-     */
-    public $autoscalingFactor;
-    protected $limitConfigType = LimitConfig::class;
-    protected $limitConfigDataType = '';
-    /**
-     * @param bool
-     */
-    public function setAutoscalingEnabled($autoscalingEnabled)
+namespace Google\Service\DataprocMetastore {
+    class AutoscalingConfig extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $autoscalingEnabled;
+        /**
+         * @var float
+         */
+        public $autoscalingFactor;
+        protected $limitConfigType = LimitConfig::class;
+        protected $limitConfigDataType = '';
+        /**
+         * @param bool
+         */
+        public function setAutoscalingEnabled($autoscalingEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAutoscalingEnabled()
+        {
+        }
+        /**
+         * @param float
+         */
+        public function setAutoscalingFactor($autoscalingFactor)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getAutoscalingFactor()
+        {
+        }
+        /**
+         * @param LimitConfig
+         */
+        public function setLimitConfig(LimitConfig $limitConfig)
+        {
+        }
+        /**
+         * @return LimitConfig
+         */
+        public function getLimitConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DataprocMetastore\AutoscalingConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAutoscalingEnabled()
-    {
-    }
-    /**
-     * @param float
-     */
-    public function setAutoscalingFactor($autoscalingFactor)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getAutoscalingFactor()
-    {
-    }
-    /**
-     * @param LimitConfig
-     */
-    public function setLimitConfig(LimitConfig $limitConfig)
-    {
-    }
-    /**
-     * @return LimitConfig
-     */
-    public function getLimitConfig()
+    class Google_Service_DataprocMetastore_AutoscalingConfig extends \Google\Service\DataprocMetastore\AutoscalingConfig
     {
     }
 }

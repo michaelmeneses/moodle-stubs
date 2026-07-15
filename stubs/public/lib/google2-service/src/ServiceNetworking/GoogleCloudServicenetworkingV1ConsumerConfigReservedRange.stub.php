@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceNetworking;
-
-class GoogleCloudServicenetworkingV1ConsumerConfigReservedRange extends \Google\Model
-{
-    /**
-     * The starting address of the reserved range. The address must be a valid
-     * IPv4 address in the x.x.x.x format. This value combined with the IP prefix
-     * length is the CIDR range for the reserved range.
-     *
-     * @var string
-     */
-    public $address;
-    /**
-     * The prefix length of the reserved range.
-     *
-     * @var int
-     */
-    public $ipPrefixLength;
-    /**
-     * The name of the reserved range.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The starting address of the reserved range. The address must be a valid
-     * IPv4 address in the x.x.x.x format. This value combined with the IP prefix
-     * length is the CIDR range for the reserved range.
-     *
-     * @param string $address
-     */
-    public function setAddress($address)
+namespace Google\Service\ServiceNetworking {
+    class GoogleCloudServicenetworkingV1ConsumerConfigReservedRange extends \Google\Model
     {
+        /**
+         * The starting address of the reserved range. The address must be a valid
+         * IPv4 address in the x.x.x.x format. This value combined with the IP prefix
+         * length is the CIDR range for the reserved range.
+         *
+         * @var string
+         */
+        public $address;
+        /**
+         * The prefix length of the reserved range.
+         *
+         * @var int
+         */
+        public $ipPrefixLength;
+        /**
+         * The name of the reserved range.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The starting address of the reserved range. The address must be a valid
+         * IPv4 address in the x.x.x.x format. This value combined with the IP prefix
+         * length is the CIDR range for the reserved range.
+         *
+         * @param string $address
+         */
+        public function setAddress($address)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAddress()
+        {
+        }
+        /**
+         * The prefix length of the reserved range.
+         *
+         * @param int $ipPrefixLength
+         */
+        public function setIpPrefixLength($ipPrefixLength)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getIpPrefixLength()
+        {
+        }
+        /**
+         * The name of the reserved range.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ServiceNetworking\GoogleCloudServicenetworkingV1ConsumerConfigReservedRange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddress()
-    {
-    }
-    /**
-     * The prefix length of the reserved range.
-     *
-     * @param int $ipPrefixLength
-     */
-    public function setIpPrefixLength($ipPrefixLength)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getIpPrefixLength()
-    {
-    }
-    /**
-     * The name of the reserved range.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_ServiceNetworking_GoogleCloudServicenetworkingV1ConsumerConfigReservedRange extends \Google\Service\ServiceNetworking\GoogleCloudServicenetworkingV1ConsumerConfigReservedRange
     {
     }
 }

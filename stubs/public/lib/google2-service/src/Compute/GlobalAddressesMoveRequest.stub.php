@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class GlobalAddressesMoveRequest extends \Google\Model
-{
-    /**
-     * An optional destination address description if intended to be different
-     * from the source.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * The URL of the destination address to move to. This can be a full or
-     * partial URL. For example, the following are all valid URLs to a address:
-     * - https://www.googleapis.com/compute/v1/projects/project/global/addresses/a
-     * ddress     - projects/project/global/addresses/address
-     *
-     * Note that destination project must be different from the source project.
-     * So/global/addresses/address is not valid partial url.
-     *
-     * @var string
-     */
-    public $destinationAddress;
-    /**
-     * An optional destination address description if intended to be different
-     * from the source.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\Compute {
+    class GlobalAddressesMoveRequest extends \Google\Model
     {
+        /**
+         * An optional destination address description if intended to be different
+         * from the source.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * The URL of the destination address to move to. This can be a full or
+         * partial URL. For example, the following are all valid URLs to a address:
+         * - https://www.googleapis.com/compute/v1/projects/project/global/addresses/a
+         * ddress     - projects/project/global/addresses/address
+         *
+         * Note that destination project must be different from the source project.
+         * So/global/addresses/address is not valid partial url.
+         *
+         * @var string
+         */
+        public $destinationAddress;
+        /**
+         * An optional destination address description if intended to be different
+         * from the source.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * The URL of the destination address to move to. This can be a full or
+         * partial URL. For example, the following are all valid URLs to a address:
+         * - https://www.googleapis.com/compute/v1/projects/project/global/addresses/a
+         * ddress     - projects/project/global/addresses/address
+         *
+         * Note that destination project must be different from the source project.
+         * So/global/addresses/address is not valid partial url.
+         *
+         * @param string $destinationAddress
+         */
+        public function setDestinationAddress($destinationAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDestinationAddress()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\GlobalAddressesMoveRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * The URL of the destination address to move to. This can be a full or
-     * partial URL. For example, the following are all valid URLs to a address:
-     * - https://www.googleapis.com/compute/v1/projects/project/global/addresses/a
-     * ddress     - projects/project/global/addresses/address
-     *
-     * Note that destination project must be different from the source project.
-     * So/global/addresses/address is not valid partial url.
-     *
-     * @param string $destinationAddress
-     */
-    public function setDestinationAddress($destinationAddress)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDestinationAddress()
+    class Google_Service_Compute_GlobalAddressesMoveRequest extends \Google\Service\Compute\GlobalAddressesMoveRequest
     {
     }
 }

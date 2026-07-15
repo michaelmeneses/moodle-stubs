@@ -21,27 +21,36 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1InitializeEncryptionSpecRequest extends \Google\Model
-{
-    protected $encryptionSpecType = GoogleCloudContactcenterinsightsV1EncryptionSpec::class;
-    protected $encryptionSpecDataType = '';
-    /**
-     * Required. The encryption spec used for CMEK encryption. It is required that
-     * the kms key is in the same region as the endpoint. The same key will be
-     * used for all provisioned resources, if encryption is available. If the
-     * `kms_key_name` field is left empty, no encryption will be enforced.
-     *
-     * @param GoogleCloudContactcenterinsightsV1EncryptionSpec $encryptionSpec
-     */
-    public function setEncryptionSpec(GoogleCloudContactcenterinsightsV1EncryptionSpec $encryptionSpec)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1InitializeEncryptionSpecRequest extends \Google\Model
     {
+        protected $encryptionSpecType = GoogleCloudContactcenterinsightsV1EncryptionSpec::class;
+        protected $encryptionSpecDataType = '';
+        /**
+         * Required. The encryption spec used for CMEK encryption. It is required that
+         * the kms key is in the same region as the endpoint. The same key will be
+         * used for all provisioned resources, if encryption is available. If the
+         * `kms_key_name` field is left empty, no encryption will be enforced.
+         *
+         * @param GoogleCloudContactcenterinsightsV1EncryptionSpec $encryptionSpec
+         */
+        public function setEncryptionSpec(GoogleCloudContactcenterinsightsV1EncryptionSpec $encryptionSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1EncryptionSpec
+         */
+        public function getEncryptionSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudContactcenterinsightsV1EncryptionSpec
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1InitializeEncryptionSpecRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEncryptionSpec()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1InitializeEncryptionSpecRequest extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1InitializeEncryptionSpecRequest
     {
     }
 }

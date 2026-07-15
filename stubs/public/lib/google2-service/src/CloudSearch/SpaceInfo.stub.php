@@ -21,148 +21,157 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class SpaceInfo extends \Google\Model
-{
-    protected $avatarInfoType = AvatarInfo::class;
-    protected $avatarInfoDataType = '';
-    /**
-     * @var string
-     */
-    public $avatarUrl;
-    /**
-     * @var string
-     */
-    public $description;
-    protected $groupIdType = GroupId::class;
-    protected $groupIdDataType = '';
-    /**
-     * @var string
-     */
-    public $inviterEmail;
-    /**
-     * @var bool
-     */
-    public $isExternal;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var int
-     */
-    public $numMembers;
-    /**
-     * @var string
-     */
-    public $userMembershipState;
-    /**
-     * @param AvatarInfo
-     */
-    public function setAvatarInfo(AvatarInfo $avatarInfo)
+namespace Google\Service\CloudSearch {
+    class SpaceInfo extends \Google\Model
     {
+        protected $avatarInfoType = AvatarInfo::class;
+        protected $avatarInfoDataType = '';
+        /**
+         * @var string
+         */
+        public $avatarUrl;
+        /**
+         * @var string
+         */
+        public $description;
+        protected $groupIdType = GroupId::class;
+        protected $groupIdDataType = '';
+        /**
+         * @var string
+         */
+        public $inviterEmail;
+        /**
+         * @var bool
+         */
+        public $isExternal;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var int
+         */
+        public $numMembers;
+        /**
+         * @var string
+         */
+        public $userMembershipState;
+        /**
+         * @param AvatarInfo
+         */
+        public function setAvatarInfo(AvatarInfo $avatarInfo)
+        {
+        }
+        /**
+         * @return AvatarInfo
+         */
+        public function getAvatarInfo()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setAvatarUrl($avatarUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAvatarUrl()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * @param GroupId
+         */
+        public function setGroupId(GroupId $groupId)
+        {
+        }
+        /**
+         * @return GroupId
+         */
+        public function getGroupId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setInviterEmail($inviterEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInviterEmail()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setIsExternal($isExternal)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsExternal()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setNumMembers($numMembers)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumMembers()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUserMembershipState($userMembershipState)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserMembershipState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AvatarInfo
+     * Runtime class alias of \Google\Service\CloudSearch\SpaceInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAvatarInfo()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setAvatarUrl($avatarUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAvatarUrl()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * @param GroupId
-     */
-    public function setGroupId(GroupId $groupId)
-    {
-    }
-    /**
-     * @return GroupId
-     */
-    public function getGroupId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setInviterEmail($inviterEmail)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInviterEmail()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setIsExternal($isExternal)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsExternal()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setNumMembers($numMembers)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNumMembers()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUserMembershipState($userMembershipState)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserMembershipState()
+    class Google_Service_CloudSearch_SpaceInfo extends \Google\Service\CloudSearch\SpaceInfo
     {
     }
 }

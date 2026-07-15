@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class ApkSet extends \Google\Collection
-{
-    protected $collection_key = 'apkDescription';
-    protected $apkDescriptionType = ApkDescription::class;
-    protected $apkDescriptionDataType = 'array';
-    protected $moduleMetadataType = ModuleMetadata::class;
-    protected $moduleMetadataDataType = '';
-    /**
-     * Description of the generated apks.
-     *
-     * @param ApkDescription[] $apkDescription
-     */
-    public function setApkDescription($apkDescription)
+namespace Google\Service\AndroidPublisher {
+    class ApkSet extends \Google\Collection
     {
+        protected $collection_key = 'apkDescription';
+        protected $apkDescriptionType = ApkDescription::class;
+        protected $apkDescriptionDataType = 'array';
+        protected $moduleMetadataType = ModuleMetadata::class;
+        protected $moduleMetadataDataType = '';
+        /**
+         * Description of the generated apks.
+         *
+         * @param ApkDescription[] $apkDescription
+         */
+        public function setApkDescription($apkDescription)
+        {
+        }
+        /**
+         * @return ApkDescription[]
+         */
+        public function getApkDescription()
+        {
+        }
+        /**
+         * Metadata about the module represented by this ApkSet
+         *
+         * @param ModuleMetadata $moduleMetadata
+         */
+        public function setModuleMetadata(ModuleMetadata $moduleMetadata)
+        {
+        }
+        /**
+         * @return ModuleMetadata
+         */
+        public function getModuleMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ApkDescription[]
+     * Runtime class alias of \Google\Service\AndroidPublisher\ApkSet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApkDescription()
-    {
-    }
-    /**
-     * Metadata about the module represented by this ApkSet
-     *
-     * @param ModuleMetadata $moduleMetadata
-     */
-    public function setModuleMetadata(ModuleMetadata $moduleMetadata)
-    {
-    }
-    /**
-     * @return ModuleMetadata
-     */
-    public function getModuleMetadata()
+    class Google_Service_AndroidPublisher_ApkSet extends \Google\Service\AndroidPublisher\ApkSet
     {
     }
 }

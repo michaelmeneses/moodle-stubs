@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1DirectRawPredictResponse extends \Google\Model
-{
-    /**
-     * The prediction output.
-     *
-     * @var string
-     */
-    public $output;
-    /**
-     * The prediction output.
-     *
-     * @param string $output
-     */
-    public function setOutput($output)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1DirectRawPredictResponse extends \Google\Model
     {
+        /**
+         * The prediction output.
+         *
+         * @var string
+         */
+        public $output;
+        /**
+         * The prediction output.
+         *
+         * @param string $output
+         */
+        public function setOutput($output)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOutput()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1DirectRawPredictResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOutput()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1DirectRawPredictResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1DirectRawPredictResponse
     {
     }
 }

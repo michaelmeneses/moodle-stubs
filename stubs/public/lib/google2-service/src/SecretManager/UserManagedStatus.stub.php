@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecretManager;
-
-class UserManagedStatus extends \Google\Collection
-{
-    protected $collection_key = 'replicas';
-    protected $replicasType = ReplicaStatus::class;
-    protected $replicasDataType = 'array';
-    /**
-     * Output only. The list of replica statuses for the SecretVersion.
-     *
-     * @param ReplicaStatus[] $replicas
-     */
-    public function setReplicas($replicas)
+namespace Google\Service\SecretManager {
+    class UserManagedStatus extends \Google\Collection
     {
+        protected $collection_key = 'replicas';
+        protected $replicasType = ReplicaStatus::class;
+        protected $replicasDataType = 'array';
+        /**
+         * Output only. The list of replica statuses for the SecretVersion.
+         *
+         * @param ReplicaStatus[] $replicas
+         */
+        public function setReplicas($replicas)
+        {
+        }
+        /**
+         * @return ReplicaStatus[]
+         */
+        public function getReplicas()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ReplicaStatus[]
+     * Runtime class alias of \Google\Service\SecretManager\UserManagedStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReplicas()
+    class Google_Service_SecretManager_UserManagedStatus extends \Google\Service\SecretManager\UserManagedStatus
     {
     }
 }

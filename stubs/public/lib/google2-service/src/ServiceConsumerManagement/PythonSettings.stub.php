@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceConsumerManagement;
-
-class PythonSettings extends \Google\Model
-{
-    protected $commonType = CommonLanguageSettings::class;
-    protected $commonDataType = '';
-    protected $experimentalFeaturesType = ExperimentalFeatures::class;
-    protected $experimentalFeaturesDataType = '';
-    /**
-     * Some settings.
-     *
-     * @param CommonLanguageSettings $common
-     */
-    public function setCommon(CommonLanguageSettings $common)
+namespace Google\Service\ServiceConsumerManagement {
+    class PythonSettings extends \Google\Model
     {
+        protected $commonType = CommonLanguageSettings::class;
+        protected $commonDataType = '';
+        protected $experimentalFeaturesType = ExperimentalFeatures::class;
+        protected $experimentalFeaturesDataType = '';
+        /**
+         * Some settings.
+         *
+         * @param CommonLanguageSettings $common
+         */
+        public function setCommon(CommonLanguageSettings $common)
+        {
+        }
+        /**
+         * @return CommonLanguageSettings
+         */
+        public function getCommon()
+        {
+        }
+        /**
+         * Experimental features to be included during client library generation.
+         *
+         * @param ExperimentalFeatures $experimentalFeatures
+         */
+        public function setExperimentalFeatures(ExperimentalFeatures $experimentalFeatures)
+        {
+        }
+        /**
+         * @return ExperimentalFeatures
+         */
+        public function getExperimentalFeatures()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CommonLanguageSettings
+     * Runtime class alias of \Google\Service\ServiceConsumerManagement\PythonSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCommon()
-    {
-    }
-    /**
-     * Experimental features to be included during client library generation.
-     *
-     * @param ExperimentalFeatures $experimentalFeatures
-     */
-    public function setExperimentalFeatures(ExperimentalFeatures $experimentalFeatures)
-    {
-    }
-    /**
-     * @return ExperimentalFeatures
-     */
-    public function getExperimentalFeatures()
+    class Google_Service_ServiceConsumerManagement_PythonSettings extends \Google\Service\ServiceConsumerManagement\PythonSettings
     {
     }
 }

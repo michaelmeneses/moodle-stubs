@@ -21,63 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InstanceGroupManagersSetTargetPoolsRequest extends \Google\Collection
-{
-    protected $collection_key = 'targetPools';
-    /**
-     * The fingerprint of the target pools information. Use this optional property
-     * to prevent conflicts when multiple users change the target pools settings
-     * concurrently. Obtain the fingerprint with theinstanceGroupManagers.get
-     * method. Then, include the fingerprint in your request to ensure that you do
-     * not overwrite changes that were applied from another concurrent request.
-     *
-     * @var string
-     */
-    public $fingerprint;
-    /**
-     * The list of target pool URLs that instances in this managed instance group
-     * belong to. The managed instance group applies these target pools to all of
-     * the instances in the group. Existing instances and new instances in the
-     * group all receive these target pool settings.
-     *
-     * @var string[]
-     */
-    public $targetPools;
-    /**
-     * The fingerprint of the target pools information. Use this optional property
-     * to prevent conflicts when multiple users change the target pools settings
-     * concurrently. Obtain the fingerprint with theinstanceGroupManagers.get
-     * method. Then, include the fingerprint in your request to ensure that you do
-     * not overwrite changes that were applied from another concurrent request.
-     *
-     * @param string $fingerprint
-     */
-    public function setFingerprint($fingerprint)
+namespace Google\Service\Compute {
+    class InstanceGroupManagersSetTargetPoolsRequest extends \Google\Collection
     {
+        protected $collection_key = 'targetPools';
+        /**
+         * The fingerprint of the target pools information. Use this optional property
+         * to prevent conflicts when multiple users change the target pools settings
+         * concurrently. Obtain the fingerprint with theinstanceGroupManagers.get
+         * method. Then, include the fingerprint in your request to ensure that you do
+         * not overwrite changes that were applied from another concurrent request.
+         *
+         * @var string
+         */
+        public $fingerprint;
+        /**
+         * The list of target pool URLs that instances in this managed instance group
+         * belong to. The managed instance group applies these target pools to all of
+         * the instances in the group. Existing instances and new instances in the
+         * group all receive these target pool settings.
+         *
+         * @var string[]
+         */
+        public $targetPools;
+        /**
+         * The fingerprint of the target pools information. Use this optional property
+         * to prevent conflicts when multiple users change the target pools settings
+         * concurrently. Obtain the fingerprint with theinstanceGroupManagers.get
+         * method. Then, include the fingerprint in your request to ensure that you do
+         * not overwrite changes that were applied from another concurrent request.
+         *
+         * @param string $fingerprint
+         */
+        public function setFingerprint($fingerprint)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFingerprint()
+        {
+        }
+        /**
+         * The list of target pool URLs that instances in this managed instance group
+         * belong to. The managed instance group applies these target pools to all of
+         * the instances in the group. Existing instances and new instances in the
+         * group all receive these target pool settings.
+         *
+         * @param string[] $targetPools
+         */
+        public function setTargetPools($targetPools)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTargetPools()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\InstanceGroupManagersSetTargetPoolsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFingerprint()
-    {
-    }
-    /**
-     * The list of target pool URLs that instances in this managed instance group
-     * belong to. The managed instance group applies these target pools to all of
-     * the instances in the group. Existing instances and new instances in the
-     * group all receive these target pool settings.
-     *
-     * @param string[] $targetPools
-     */
-    public function setTargetPools($targetPools)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTargetPools()
+    class Google_Service_Compute_InstanceGroupManagersSetTargetPoolsRequest extends \Google\Service\Compute\InstanceGroupManagersSetTargetPoolsRequest
     {
     }
 }

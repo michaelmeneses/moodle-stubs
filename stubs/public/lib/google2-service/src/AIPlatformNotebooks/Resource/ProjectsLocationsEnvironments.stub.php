@@ -21,71 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AIPlatformNotebooks\Resource;
-
-/**
- * The "environments" collection of methods.
- * Typical usage is:
- *  <code>
- *   $notebooksService = new Google\Service\AIPlatformNotebooks(...);
- *   $environments = $notebooksService->projects_locations_environments;
- *  </code>
- */
-class ProjectsLocationsEnvironments extends \Google\Service\Resource
-{
+namespace Google\Service\AIPlatformNotebooks\Resource {
+    use Google\Service\AIPlatformNotebooks\Environment;
+    use Google\Service\AIPlatformNotebooks\ListEnvironmentsResponse;
+    use Google\Service\AIPlatformNotebooks\Operation;
     /**
-     * Creates a new Environment. (environments.create)
-     *
-     * @param string $parent Required. Format:
-     * `projects/{project_id}/locations/{location}`
-     * @param Environment $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string environmentId Required. User-defined unique ID of this
-     * environment. The `environment_id` must be 1 to 63 characters long and contain
-     * only lowercase letters, numeric characters, and dashes. The first character
-     * must be a lowercase letter and the last character cannot be a dash.
-     * @return Operation
+     * The "environments" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $notebooksService = new Google\Service\AIPlatformNotebooks(...);
+     *   $environments = $notebooksService->projects_locations_environments;
+     *  </code>
      */
-    public function create($parent, Environment $postBody, $optParams = [])
+    class ProjectsLocationsEnvironments extends \Google\Service\Resource
     {
+        /**
+         * Creates a new Environment. (environments.create)
+         *
+         * @param string $parent Required. Format:
+         * `projects/{project_id}/locations/{location}`
+         * @param Environment $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string environmentId Required. User-defined unique ID of this
+         * environment. The `environment_id` must be 1 to 63 characters long and contain
+         * only lowercase letters, numeric characters, and dashes. The first character
+         * must be a lowercase letter and the last character cannot be a dash.
+         * @return Operation
+         */
+        public function create($parent, Environment $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a single Environment. (environments.delete)
+         *
+         * @param string $name Required. Format:
+         * `projects/{project_id}/locations/{location}/environments/{environment_id}`
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets details of a single Environment. (environments.get)
+         *
+         * @param string $name Required. Format:
+         * `projects/{project_id}/locations/{location}/environments/{environment_id}`
+         * @param array $optParams Optional parameters.
+         * @return Environment
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists environments in a project.
+         * (environments.listProjectsLocationsEnvironments)
+         *
+         * @param string $parent Required. Format:
+         * `projects/{project_id}/locations/{location}`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Maximum return size of the list call.
+         * @opt_param string pageToken A previous returned page token that can be used
+         * to continue listing from the last result.
+         * @return ListEnvironmentsResponse
+         */
+        public function listProjectsLocationsEnvironments($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a single Environment. (environments.delete)
-     *
-     * @param string $name Required. Format:
-     * `projects/{project_id}/locations/{location}/environments/{environment_id}`
-     * @param array $optParams Optional parameters.
-     * @return Operation
+     * Runtime class alias of \Google\Service\AIPlatformNotebooks\Resource\ProjectsLocationsEnvironments registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets details of a single Environment. (environments.get)
-     *
-     * @param string $name Required. Format:
-     * `projects/{project_id}/locations/{location}/environments/{environment_id}`
-     * @param array $optParams Optional parameters.
-     * @return Environment
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists environments in a project.
-     * (environments.listProjectsLocationsEnvironments)
-     *
-     * @param string $parent Required. Format:
-     * `projects/{project_id}/locations/{location}`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Maximum return size of the list call.
-     * @opt_param string pageToken A previous returned page token that can be used
-     * to continue listing from the last result.
-     * @return ListEnvironmentsResponse
-     */
-    public function listProjectsLocationsEnvironments($parent, $optParams = [])
+    class Google_Service_AIPlatformNotebooks_Resource_ProjectsLocationsEnvironments extends \Google\Service\AIPlatformNotebooks\Resource\ProjectsLocationsEnvironments
     {
     }
 }

@@ -21,80 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChecksService;
-
-class GoogleChecksRepoScanV1alphaGenerateScanRequest extends \Google\Model
-{
-    protected $cliAnalysisType = GoogleChecksRepoScanV1alphaCliAnalysis::class;
-    protected $cliAnalysisDataType = '';
-    /**
-     * Required. CLI version.
-     *
-     * @var string
-     */
-    public $cliVersion;
-    /**
-     * Required. Local scan path.
-     *
-     * @var string
-     */
-    public $localScanPath;
-    protected $scmMetadataType = GoogleChecksRepoScanV1alphaScmMetadata::class;
-    protected $scmMetadataDataType = '';
-    /**
-     * Required. CLI analysis results.
-     *
-     * @param GoogleChecksRepoScanV1alphaCliAnalysis $cliAnalysis
-     */
-    public function setCliAnalysis(GoogleChecksRepoScanV1alphaCliAnalysis $cliAnalysis)
+namespace Google\Service\ChecksService {
+    class GoogleChecksRepoScanV1alphaGenerateScanRequest extends \Google\Model
     {
+        protected $cliAnalysisType = GoogleChecksRepoScanV1alphaCliAnalysis::class;
+        protected $cliAnalysisDataType = '';
+        /**
+         * Required. CLI version.
+         *
+         * @var string
+         */
+        public $cliVersion;
+        /**
+         * Required. Local scan path.
+         *
+         * @var string
+         */
+        public $localScanPath;
+        protected $scmMetadataType = GoogleChecksRepoScanV1alphaScmMetadata::class;
+        protected $scmMetadataDataType = '';
+        /**
+         * Required. CLI analysis results.
+         *
+         * @param GoogleChecksRepoScanV1alphaCliAnalysis $cliAnalysis
+         */
+        public function setCliAnalysis(GoogleChecksRepoScanV1alphaCliAnalysis $cliAnalysis)
+        {
+        }
+        /**
+         * @return GoogleChecksRepoScanV1alphaCliAnalysis
+         */
+        public function getCliAnalysis()
+        {
+        }
+        /**
+         * Required. CLI version.
+         *
+         * @param string $cliVersion
+         */
+        public function setCliVersion($cliVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCliVersion()
+        {
+        }
+        /**
+         * Required. Local scan path.
+         *
+         * @param string $localScanPath
+         */
+        public function setLocalScanPath($localScanPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocalScanPath()
+        {
+        }
+        /**
+         * Required. SCM metadata.
+         *
+         * @param GoogleChecksRepoScanV1alphaScmMetadata $scmMetadata
+         */
+        public function setScmMetadata(GoogleChecksRepoScanV1alphaScmMetadata $scmMetadata)
+        {
+        }
+        /**
+         * @return GoogleChecksRepoScanV1alphaScmMetadata
+         */
+        public function getScmMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleChecksRepoScanV1alphaCliAnalysis
+     * Runtime class alias of \Google\Service\ChecksService\GoogleChecksRepoScanV1alphaGenerateScanRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCliAnalysis()
-    {
-    }
-    /**
-     * Required. CLI version.
-     *
-     * @param string $cliVersion
-     */
-    public function setCliVersion($cliVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCliVersion()
-    {
-    }
-    /**
-     * Required. Local scan path.
-     *
-     * @param string $localScanPath
-     */
-    public function setLocalScanPath($localScanPath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocalScanPath()
-    {
-    }
-    /**
-     * Required. SCM metadata.
-     *
-     * @param GoogleChecksRepoScanV1alphaScmMetadata $scmMetadata
-     */
-    public function setScmMetadata(GoogleChecksRepoScanV1alphaScmMetadata $scmMetadata)
-    {
-    }
-    /**
-     * @return GoogleChecksRepoScanV1alphaScmMetadata
-     */
-    public function getScmMetadata()
+    class Google_Service_ChecksService_GoogleChecksRepoScanV1alphaGenerateScanRequest extends \Google\Service\ChecksService\GoogleChecksRepoScanV1alphaGenerateScanRequest
     {
     }
 }

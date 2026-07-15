@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2CreateJobTriggerRequest extends \Google\Model
-{
-    protected $jobTriggerType = GooglePrivacyDlpV2JobTrigger::class;
-    protected $jobTriggerDataType = '';
-    /**
-     * Deprecated. This field has no effect.
-     *
-     * @var string
-     */
-    public $locationId;
-    /**
-     * The trigger id can contain uppercase and lowercase letters, numbers, and
-     * hyphens; that is, it must match the regular expression: `[a-zA-Z\d-_]+`.
-     * The maximum length is 100 characters. Can be empty to allow the system to
-     * generate one.
-     *
-     * @var string
-     */
-    public $triggerId;
-    /**
-     * Required. The JobTrigger to create.
-     *
-     * @param GooglePrivacyDlpV2JobTrigger $jobTrigger
-     */
-    public function setJobTrigger(GooglePrivacyDlpV2JobTrigger $jobTrigger)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2CreateJobTriggerRequest extends \Google\Model
     {
+        protected $jobTriggerType = GooglePrivacyDlpV2JobTrigger::class;
+        protected $jobTriggerDataType = '';
+        /**
+         * Deprecated. This field has no effect.
+         *
+         * @var string
+         */
+        public $locationId;
+        /**
+         * The trigger id can contain uppercase and lowercase letters, numbers, and
+         * hyphens; that is, it must match the regular expression: `[a-zA-Z\d-_]+`.
+         * The maximum length is 100 characters. Can be empty to allow the system to
+         * generate one.
+         *
+         * @var string
+         */
+        public $triggerId;
+        /**
+         * Required. The JobTrigger to create.
+         *
+         * @param GooglePrivacyDlpV2JobTrigger $jobTrigger
+         */
+        public function setJobTrigger(GooglePrivacyDlpV2JobTrigger $jobTrigger)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2JobTrigger
+         */
+        public function getJobTrigger()
+        {
+        }
+        /**
+         * Deprecated. This field has no effect.
+         *
+         * @param string $locationId
+         */
+        public function setLocationId($locationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocationId()
+        {
+        }
+        /**
+         * The trigger id can contain uppercase and lowercase letters, numbers, and
+         * hyphens; that is, it must match the regular expression: `[a-zA-Z\d-_]+`.
+         * The maximum length is 100 characters. Can be empty to allow the system to
+         * generate one.
+         *
+         * @param string $triggerId
+         */
+        public function setTriggerId($triggerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTriggerId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2JobTrigger
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2CreateJobTriggerRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getJobTrigger()
-    {
-    }
-    /**
-     * Deprecated. This field has no effect.
-     *
-     * @param string $locationId
-     */
-    public function setLocationId($locationId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocationId()
-    {
-    }
-    /**
-     * The trigger id can contain uppercase and lowercase letters, numbers, and
-     * hyphens; that is, it must match the regular expression: `[a-zA-Z\d-_]+`.
-     * The maximum length is 100 characters. Can be empty to allow the system to
-     * generate one.
-     *
-     * @param string $triggerId
-     */
-    public function setTriggerId($triggerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTriggerId()
+    class Google_Service_DLP_GooglePrivacyDlpV2CreateJobTriggerRequest extends \Google\Service\DLP\GooglePrivacyDlpV2CreateJobTriggerRequest
     {
     }
 }

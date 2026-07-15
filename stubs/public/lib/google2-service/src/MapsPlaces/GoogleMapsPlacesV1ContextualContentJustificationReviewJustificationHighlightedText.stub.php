@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MapsPlaces;
-
-class GoogleMapsPlacesV1ContextualContentJustificationReviewJustificationHighlightedText extends \Google\Collection
-{
-    protected $collection_key = 'highlightedTextRanges';
-    protected $highlightedTextRangesType = GoogleMapsPlacesV1ContextualContentJustificationReviewJustificationHighlightedTextHighlightedTextRange::class;
-    protected $highlightedTextRangesDataType = 'array';
-    /**
-     * @var string
-     */
-    public $text;
-    /**
-     * The list of the ranges of the highlighted text.
-     *
-     * @param GoogleMapsPlacesV1ContextualContentJustificationReviewJustificationHighlightedTextHighlightedTextRange[] $highlightedTextRanges
-     */
-    public function setHighlightedTextRanges($highlightedTextRanges)
+namespace Google\Service\MapsPlaces {
+    class GoogleMapsPlacesV1ContextualContentJustificationReviewJustificationHighlightedText extends \Google\Collection
     {
+        protected $collection_key = 'highlightedTextRanges';
+        protected $highlightedTextRangesType = GoogleMapsPlacesV1ContextualContentJustificationReviewJustificationHighlightedTextHighlightedTextRange::class;
+        protected $highlightedTextRangesDataType = 'array';
+        /**
+         * @var string
+         */
+        public $text;
+        /**
+         * The list of the ranges of the highlighted text.
+         *
+         * @param GoogleMapsPlacesV1ContextualContentJustificationReviewJustificationHighlightedTextHighlightedTextRange[] $highlightedTextRanges
+         */
+        public function setHighlightedTextRanges($highlightedTextRanges)
+        {
+        }
+        /**
+         * @return GoogleMapsPlacesV1ContextualContentJustificationReviewJustificationHighlightedTextHighlightedTextRange[]
+         */
+        public function getHighlightedTextRanges()
+        {
+        }
+        /**
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleMapsPlacesV1ContextualContentJustificationReviewJustificationHighlightedTextHighlightedTextRange[]
+     * Runtime class alias of \Google\Service\MapsPlaces\GoogleMapsPlacesV1ContextualContentJustificationReviewJustificationHighlightedText registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHighlightedTextRanges()
-    {
-    }
-    /**
-     * @param string $text
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
+    class Google_Service_MapsPlaces_GoogleMapsPlacesV1ContextualContentJustificationReviewJustificationHighlightedText extends \Google\Service\MapsPlaces\GoogleMapsPlacesV1ContextualContentJustificationReviewJustificationHighlightedText
     {
     }
 }

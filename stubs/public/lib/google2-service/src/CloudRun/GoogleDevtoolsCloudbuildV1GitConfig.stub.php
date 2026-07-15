@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleDevtoolsCloudbuildV1GitConfig extends \Google\Model
-{
-    protected $httpType = GoogleDevtoolsCloudbuildV1HttpConfig::class;
-    protected $httpDataType = '';
-    /**
-     * Configuration for HTTP related git operations.
-     *
-     * @param GoogleDevtoolsCloudbuildV1HttpConfig $http
-     */
-    public function setHttp(GoogleDevtoolsCloudbuildV1HttpConfig $http)
+namespace Google\Service\CloudRun {
+    class GoogleDevtoolsCloudbuildV1GitConfig extends \Google\Model
     {
+        protected $httpType = GoogleDevtoolsCloudbuildV1HttpConfig::class;
+        protected $httpDataType = '';
+        /**
+         * Configuration for HTTP related git operations.
+         *
+         * @param GoogleDevtoolsCloudbuildV1HttpConfig $http
+         */
+        public function setHttp(GoogleDevtoolsCloudbuildV1HttpConfig $http)
+        {
+        }
+        /**
+         * @return GoogleDevtoolsCloudbuildV1HttpConfig
+         */
+        public function getHttp()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleDevtoolsCloudbuildV1HttpConfig
+     * Runtime class alias of \Google\Service\CloudRun\GoogleDevtoolsCloudbuildV1GitConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHttp()
+    class Google_Service_CloudRun_GoogleDevtoolsCloudbuildV1GitConfig extends \Google\Service\CloudRun\GoogleDevtoolsCloudbuildV1GitConfig
     {
     }
 }

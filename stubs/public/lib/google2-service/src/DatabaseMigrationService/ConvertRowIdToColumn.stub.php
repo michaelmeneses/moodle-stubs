@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class ConvertRowIdToColumn extends \Google\Model
-{
-    /**
-     * Required. Only work on tables without primary key defined
-     *
-     * @var bool
-     */
-    public $onlyIfNoPrimaryKey;
-    /**
-     * Required. Only work on tables without primary key defined
-     *
-     * @param bool $onlyIfNoPrimaryKey
-     */
-    public function setOnlyIfNoPrimaryKey($onlyIfNoPrimaryKey)
+namespace Google\Service\DatabaseMigrationService {
+    class ConvertRowIdToColumn extends \Google\Model
     {
+        /**
+         * Required. Only work on tables without primary key defined
+         *
+         * @var bool
+         */
+        public $onlyIfNoPrimaryKey;
+        /**
+         * Required. Only work on tables without primary key defined
+         *
+         * @param bool $onlyIfNoPrimaryKey
+         */
+        public function setOnlyIfNoPrimaryKey($onlyIfNoPrimaryKey)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getOnlyIfNoPrimaryKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\ConvertRowIdToColumn registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOnlyIfNoPrimaryKey()
+    class Google_Service_DatabaseMigrationService_ConvertRowIdToColumn extends \Google\Service\DatabaseMigrationService\ConvertRowIdToColumn
     {
     }
 }

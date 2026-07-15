@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1RagRetrievalConfigFilter extends \Google\Model
-{
-    /**
-     * Optional. String for metadata filtering.
-     *
-     * @var string
-     */
-    public $metadataFilter;
-    /**
-     * Optional. Only returns contexts with vector distance smaller than the
-     * threshold.
-     *
-     * @var 
-     */
-    public $vectorDistanceThreshold;
-    /**
-     * Optional. Only returns contexts with vector similarity larger than the
-     * threshold.
-     *
-     * @var 
-     */
-    public $vectorSimilarityThreshold;
-    /**
-     * Optional. String for metadata filtering.
-     *
-     * @param string $metadataFilter
-     */
-    public function setMetadataFilter($metadataFilter)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1RagRetrievalConfigFilter extends \Google\Model
     {
+        /**
+         * Optional. String for metadata filtering.
+         *
+         * @var string
+         */
+        public $metadataFilter;
+        /**
+         * Optional. Only returns contexts with vector distance smaller than the
+         * threshold.
+         *
+         * @var 
+         */
+        public $vectorDistanceThreshold;
+        /**
+         * Optional. Only returns contexts with vector similarity larger than the
+         * threshold.
+         *
+         * @var 
+         */
+        public $vectorSimilarityThreshold;
+        /**
+         * Optional. String for metadata filtering.
+         *
+         * @param string $metadataFilter
+         */
+        public function setMetadataFilter($metadataFilter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMetadataFilter()
+        {
+        }
+        public function setVectorDistanceThreshold($vectorDistanceThreshold)
+        {
+        }
+        public function getVectorDistanceThreshold()
+        {
+        }
+        public function setVectorSimilarityThreshold($vectorSimilarityThreshold)
+        {
+        }
+        public function getVectorSimilarityThreshold()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1RagRetrievalConfigFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetadataFilter()
-    {
-    }
-    public function setVectorDistanceThreshold($vectorDistanceThreshold)
-    {
-    }
-    public function getVectorDistanceThreshold()
-    {
-    }
-    public function setVectorSimilarityThreshold($vectorSimilarityThreshold)
-    {
-    }
-    public function getVectorSimilarityThreshold()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1RagRetrievalConfigFilter extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1RagRetrievalConfigFilter
     {
     }
 }

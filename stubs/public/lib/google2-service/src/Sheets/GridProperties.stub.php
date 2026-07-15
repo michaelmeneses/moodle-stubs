@@ -21,148 +21,157 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class GridProperties extends \Google\Model
-{
-    /**
-     * The number of columns in the grid.
-     *
-     * @var int
-     */
-    public $columnCount;
-    /**
-     * True if the column grouping control toggle is shown after the group.
-     *
-     * @var bool
-     */
-    public $columnGroupControlAfter;
-    /**
-     * The number of columns that are frozen in the grid.
-     *
-     * @var int
-     */
-    public $frozenColumnCount;
-    /**
-     * The number of rows that are frozen in the grid.
-     *
-     * @var int
-     */
-    public $frozenRowCount;
-    /**
-     * True if the grid isn't showing gridlines in the UI.
-     *
-     * @var bool
-     */
-    public $hideGridlines;
-    /**
-     * The number of rows in the grid.
-     *
-     * @var int
-     */
-    public $rowCount;
-    /**
-     * True if the row grouping control toggle is shown after the group.
-     *
-     * @var bool
-     */
-    public $rowGroupControlAfter;
-    /**
-     * The number of columns in the grid.
-     *
-     * @param int $columnCount
-     */
-    public function setColumnCount($columnCount)
+namespace Google\Service\Sheets {
+    class GridProperties extends \Google\Model
     {
+        /**
+         * The number of columns in the grid.
+         *
+         * @var int
+         */
+        public $columnCount;
+        /**
+         * True if the column grouping control toggle is shown after the group.
+         *
+         * @var bool
+         */
+        public $columnGroupControlAfter;
+        /**
+         * The number of columns that are frozen in the grid.
+         *
+         * @var int
+         */
+        public $frozenColumnCount;
+        /**
+         * The number of rows that are frozen in the grid.
+         *
+         * @var int
+         */
+        public $frozenRowCount;
+        /**
+         * True if the grid isn't showing gridlines in the UI.
+         *
+         * @var bool
+         */
+        public $hideGridlines;
+        /**
+         * The number of rows in the grid.
+         *
+         * @var int
+         */
+        public $rowCount;
+        /**
+         * True if the row grouping control toggle is shown after the group.
+         *
+         * @var bool
+         */
+        public $rowGroupControlAfter;
+        /**
+         * The number of columns in the grid.
+         *
+         * @param int $columnCount
+         */
+        public function setColumnCount($columnCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getColumnCount()
+        {
+        }
+        /**
+         * True if the column grouping control toggle is shown after the group.
+         *
+         * @param bool $columnGroupControlAfter
+         */
+        public function setColumnGroupControlAfter($columnGroupControlAfter)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getColumnGroupControlAfter()
+        {
+        }
+        /**
+         * The number of columns that are frozen in the grid.
+         *
+         * @param int $frozenColumnCount
+         */
+        public function setFrozenColumnCount($frozenColumnCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getFrozenColumnCount()
+        {
+        }
+        /**
+         * The number of rows that are frozen in the grid.
+         *
+         * @param int $frozenRowCount
+         */
+        public function setFrozenRowCount($frozenRowCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getFrozenRowCount()
+        {
+        }
+        /**
+         * True if the grid isn't showing gridlines in the UI.
+         *
+         * @param bool $hideGridlines
+         */
+        public function setHideGridlines($hideGridlines)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getHideGridlines()
+        {
+        }
+        /**
+         * The number of rows in the grid.
+         *
+         * @param int $rowCount
+         */
+        public function setRowCount($rowCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRowCount()
+        {
+        }
+        /**
+         * True if the row grouping control toggle is shown after the group.
+         *
+         * @param bool $rowGroupControlAfter
+         */
+        public function setRowGroupControlAfter($rowGroupControlAfter)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getRowGroupControlAfter()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Sheets\GridProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumnCount()
-    {
-    }
-    /**
-     * True if the column grouping control toggle is shown after the group.
-     *
-     * @param bool $columnGroupControlAfter
-     */
-    public function setColumnGroupControlAfter($columnGroupControlAfter)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getColumnGroupControlAfter()
-    {
-    }
-    /**
-     * The number of columns that are frozen in the grid.
-     *
-     * @param int $frozenColumnCount
-     */
-    public function setFrozenColumnCount($frozenColumnCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getFrozenColumnCount()
-    {
-    }
-    /**
-     * The number of rows that are frozen in the grid.
-     *
-     * @param int $frozenRowCount
-     */
-    public function setFrozenRowCount($frozenRowCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getFrozenRowCount()
-    {
-    }
-    /**
-     * True if the grid isn't showing gridlines in the UI.
-     *
-     * @param bool $hideGridlines
-     */
-    public function setHideGridlines($hideGridlines)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getHideGridlines()
-    {
-    }
-    /**
-     * The number of rows in the grid.
-     *
-     * @param int $rowCount
-     */
-    public function setRowCount($rowCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getRowCount()
-    {
-    }
-    /**
-     * True if the row grouping control toggle is shown after the group.
-     *
-     * @param bool $rowGroupControlAfter
-     */
-    public function setRowGroupControlAfter($rowGroupControlAfter)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getRowGroupControlAfter()
+    class Google_Service_Sheets_GridProperties extends \Google\Service\Sheets\GridProperties
     {
     }
 }

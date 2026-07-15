@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BeyondCorp;
-
-class GoogleCloudBeyondcorpSecuritygatewaysV1ApplicationUpstreamExternal extends \Google\Collection
-{
-    protected $collection_key = 'endpoints';
-    protected $endpointsType = GoogleCloudBeyondcorpSecuritygatewaysV1Endpoint::class;
-    protected $endpointsDataType = 'array';
-    /**
-     * Required. List of the endpoints to forward traffic to.
-     *
-     * @param GoogleCloudBeyondcorpSecuritygatewaysV1Endpoint[] $endpoints
-     */
-    public function setEndpoints($endpoints)
+namespace Google\Service\BeyondCorp {
+    class GoogleCloudBeyondcorpSecuritygatewaysV1ApplicationUpstreamExternal extends \Google\Collection
     {
+        protected $collection_key = 'endpoints';
+        protected $endpointsType = GoogleCloudBeyondcorpSecuritygatewaysV1Endpoint::class;
+        protected $endpointsDataType = 'array';
+        /**
+         * Required. List of the endpoints to forward traffic to.
+         *
+         * @param GoogleCloudBeyondcorpSecuritygatewaysV1Endpoint[] $endpoints
+         */
+        public function setEndpoints($endpoints)
+        {
+        }
+        /**
+         * @return GoogleCloudBeyondcorpSecuritygatewaysV1Endpoint[]
+         */
+        public function getEndpoints()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudBeyondcorpSecuritygatewaysV1Endpoint[]
+     * Runtime class alias of \Google\Service\BeyondCorp\GoogleCloudBeyondcorpSecuritygatewaysV1ApplicationUpstreamExternal registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndpoints()
+    class Google_Service_BeyondCorp_GoogleCloudBeyondcorpSecuritygatewaysV1ApplicationUpstreamExternal extends \Google\Service\BeyondCorp\GoogleCloudBeyondcorpSecuritygatewaysV1ApplicationUpstreamExternal
     {
     }
 }

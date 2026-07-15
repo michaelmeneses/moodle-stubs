@@ -21,42 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudComposer\Resource;
-
-/**
- * The "workloads" collection of methods.
- * Typical usage is:
- *  <code>
- *   $composerService = new Google\Service\CloudComposer(...);
- *   $workloads = $composerService->projects_locations_environments_workloads;
- *  </code>
- */
-class ProjectsLocationsEnvironmentsWorkloads extends \Google\Service\Resource
-{
+namespace Google\Service\CloudComposer\Resource {
+    use Google\Service\CloudComposer\ListWorkloadsResponse;
     /**
-     * Lists workloads in a Cloud Composer environment. Workload is a unit that runs
-     * a single Composer component. This method is supported for Cloud Composer
-     * environments in versions composer-2.*.*-airflow-*.*.* and newer.
-     * (workloads.listProjectsLocationsEnvironmentsWorkloads)
-     *
-     * @param string $parent Required. The environment name to get workloads for, in
-     * the form:
-     * "projects/{projectId}/locations/{locationId}/environments/{environmentId}"
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Optional. The list filter. Currently only supports
-     * equality on the type field. The value of a field specified in the filter
-     * expression must be one ComposerWorkloadType enum option. It's possible to get
-     * multiple types using "OR" operator, e.g.: "type=SCHEDULER OR
-     * type=CELERY_WORKER". If not specified, all items are returned.
-     * @opt_param int pageSize Optional. The maximum number of environments to
-     * return.
-     * @opt_param string pageToken Optional. The next_page_token value returned from
-     * a previous List request, if any.
-     * @return ListWorkloadsResponse
-     * @throws \Google\Service\Exception
+     * The "workloads" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $composerService = new Google\Service\CloudComposer(...);
+     *   $workloads = $composerService->projects_locations_environments_workloads;
+     *  </code>
      */
-    public function listProjectsLocationsEnvironmentsWorkloads($parent, $optParams = [])
+    class ProjectsLocationsEnvironmentsWorkloads extends \Google\Service\Resource
+    {
+        /**
+         * Lists workloads in a Cloud Composer environment. Workload is a unit that runs
+         * a single Composer component. This method is supported for Cloud Composer
+         * environments in versions composer-2.*.*-airflow-*.*.* and newer.
+         * (workloads.listProjectsLocationsEnvironmentsWorkloads)
+         *
+         * @param string $parent Required. The environment name to get workloads for, in
+         * the form:
+         * "projects/{projectId}/locations/{locationId}/environments/{environmentId}"
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Optional. The list filter. Currently only supports
+         * equality on the type field. The value of a field specified in the filter
+         * expression must be one ComposerWorkloadType enum option. It's possible to get
+         * multiple types using "OR" operator, e.g.: "type=SCHEDULER OR
+         * type=CELERY_WORKER". If not specified, all items are returned.
+         * @opt_param int pageSize Optional. The maximum number of environments to
+         * return.
+         * @opt_param string pageToken Optional. The next_page_token value returned from
+         * a previous List request, if any.
+         * @return ListWorkloadsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsEnvironmentsWorkloads($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudComposer\Resource\ProjectsLocationsEnvironmentsWorkloads registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudComposer_Resource_ProjectsLocationsEnvironmentsWorkloads extends \Google\Service\CloudComposer\Resource\ProjectsLocationsEnvironmentsWorkloads
     {
     }
 }

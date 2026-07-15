@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Backupdr;
-
-class ListBackupPlanRevisionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $backupPlanRevisionsType = BackupPlanRevision::class;
-    protected $backupPlanRevisionsDataType = 'array';
-    /**
-     * A token which may be sent as page_token in a subsequent
-     * `ListBackupPlanRevisions` call to retrieve the next page of results. If
-     * this field is omitted or empty, then there are no more results to return.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * The list of `BackupPlanRevisions` in the project for the specified
-     * location. If the `{location}` value in the request is "-", the response
-     * contains a list of resources from all locations. In case any location is
-     * unreachable, the response will only return backup plans in reachable
-     * locations and the 'unreachable' field will be populated with a list of
-     * unreachable locations.
-     *
-     * @param BackupPlanRevision[] $backupPlanRevisions
-     */
-    public function setBackupPlanRevisions($backupPlanRevisions)
+namespace Google\Service\Backupdr {
+    class ListBackupPlanRevisionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $backupPlanRevisionsType = BackupPlanRevision::class;
+        protected $backupPlanRevisionsDataType = 'array';
+        /**
+         * A token which may be sent as page_token in a subsequent
+         * `ListBackupPlanRevisions` call to retrieve the next page of results. If
+         * this field is omitted or empty, then there are no more results to return.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * The list of `BackupPlanRevisions` in the project for the specified
+         * location. If the `{location}` value in the request is "-", the response
+         * contains a list of resources from all locations. In case any location is
+         * unreachable, the response will only return backup plans in reachable
+         * locations and the 'unreachable' field will be populated with a list of
+         * unreachable locations.
+         *
+         * @param BackupPlanRevision[] $backupPlanRevisions
+         */
+        public function setBackupPlanRevisions($backupPlanRevisions)
+        {
+        }
+        /**
+         * @return BackupPlanRevision[]
+         */
+        public function getBackupPlanRevisions()
+        {
+        }
+        /**
+         * A token which may be sent as page_token in a subsequent
+         * `ListBackupPlanRevisions` call to retrieve the next page of results. If
+         * this field is omitted or empty, then there are no more results to return.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BackupPlanRevision[]
+     * Runtime class alias of \Google\Service\Backupdr\ListBackupPlanRevisionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackupPlanRevisions()
-    {
-    }
-    /**
-     * A token which may be sent as page_token in a subsequent
-     * `ListBackupPlanRevisions` call to retrieve the next page of results. If
-     * this field is omitted or empty, then there are no more results to return.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_Backupdr_ListBackupPlanRevisionsResponse extends \Google\Service\Backupdr\ListBackupPlanRevisionsResponse
     {
     }
 }

@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudFunctions;
-
-class EventFilter extends \Google\Model
-{
-    /**
-     * Required. The name of a CloudEvents attribute.
-     *
-     * @var string
-     */
-    public $attribute;
-    /**
-     * Optional. The operator used for matching the events with the value of the
-     * filter. If not specified, only events that have an exact key-value pair
-     * specified in the filter are matched. The only allowed value is `match-path-
-     * pattern`.
-     *
-     * @var string
-     */
-    public $operator;
-    /**
-     * Required. The value for the attribute.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Required. The name of a CloudEvents attribute.
-     *
-     * @param string $attribute
-     */
-    public function setAttribute($attribute)
+namespace Google\Service\CloudFunctions {
+    class EventFilter extends \Google\Model
     {
+        /**
+         * Required. The name of a CloudEvents attribute.
+         *
+         * @var string
+         */
+        public $attribute;
+        /**
+         * Optional. The operator used for matching the events with the value of the
+         * filter. If not specified, only events that have an exact key-value pair
+         * specified in the filter are matched. The only allowed value is `match-path-
+         * pattern`.
+         *
+         * @var string
+         */
+        public $operator;
+        /**
+         * Required. The value for the attribute.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Required. The name of a CloudEvents attribute.
+         *
+         * @param string $attribute
+         */
+        public function setAttribute($attribute)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAttribute()
+        {
+        }
+        /**
+         * Optional. The operator used for matching the events with the value of the
+         * filter. If not specified, only events that have an exact key-value pair
+         * specified in the filter are matched. The only allowed value is `match-path-
+         * pattern`.
+         *
+         * @param string $operator
+         */
+        public function setOperator($operator)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOperator()
+        {
+        }
+        /**
+         * Required. The value for the attribute.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudFunctions\EventFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttribute()
-    {
-    }
-    /**
-     * Optional. The operator used for matching the events with the value of the
-     * filter. If not specified, only events that have an exact key-value pair
-     * specified in the filter are matched. The only allowed value is `match-path-
-     * pattern`.
-     *
-     * @param string $operator
-     */
-    public function setOperator($operator)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOperator()
-    {
-    }
-    /**
-     * Required. The value for the attribute.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_CloudFunctions_EventFilter extends \Google\Service\CloudFunctions\EventFilter
     {
     }
 }

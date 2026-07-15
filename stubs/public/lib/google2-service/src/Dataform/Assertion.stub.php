@@ -21,121 +21,130 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataform;
-
-class Assertion extends \Google\Collection
-{
-    protected $collection_key = 'tags';
-    protected $dependencyTargetsType = Target::class;
-    protected $dependencyTargetsDataType = 'array';
-    /**
-     * Whether this action is disabled (i.e. should not be run).
-     *
-     * @var bool
-     */
-    public $disabled;
-    protected $parentActionType = Target::class;
-    protected $parentActionDataType = '';
-    protected $relationDescriptorType = RelationDescriptor::class;
-    protected $relationDescriptorDataType = '';
-    /**
-     * The SELECT query which must return zero rows in order for this assertion to
-     * succeed.
-     *
-     * @var string
-     */
-    public $selectQuery;
-    /**
-     * Arbitrary, user-defined tags on this action.
-     *
-     * @var string[]
-     */
-    public $tags;
-    /**
-     * A list of actions that this action depends on.
-     *
-     * @param Target[] $dependencyTargets
-     */
-    public function setDependencyTargets($dependencyTargets)
+namespace Google\Service\Dataform {
+    class Assertion extends \Google\Collection
     {
+        protected $collection_key = 'tags';
+        protected $dependencyTargetsType = Target::class;
+        protected $dependencyTargetsDataType = 'array';
+        /**
+         * Whether this action is disabled (i.e. should not be run).
+         *
+         * @var bool
+         */
+        public $disabled;
+        protected $parentActionType = Target::class;
+        protected $parentActionDataType = '';
+        protected $relationDescriptorType = RelationDescriptor::class;
+        protected $relationDescriptorDataType = '';
+        /**
+         * The SELECT query which must return zero rows in order for this assertion to
+         * succeed.
+         *
+         * @var string
+         */
+        public $selectQuery;
+        /**
+         * Arbitrary, user-defined tags on this action.
+         *
+         * @var string[]
+         */
+        public $tags;
+        /**
+         * A list of actions that this action depends on.
+         *
+         * @param Target[] $dependencyTargets
+         */
+        public function setDependencyTargets($dependencyTargets)
+        {
+        }
+        /**
+         * @return Target[]
+         */
+        public function getDependencyTargets()
+        {
+        }
+        /**
+         * Whether this action is disabled (i.e. should not be run).
+         *
+         * @param bool $disabled
+         */
+        public function setDisabled($disabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisabled()
+        {
+        }
+        /**
+         * The parent action of this assertion. Only set if this assertion was
+         * automatically generated.
+         *
+         * @param Target $parentAction
+         */
+        public function setParentAction(Target $parentAction)
+        {
+        }
+        /**
+         * @return Target
+         */
+        public function getParentAction()
+        {
+        }
+        /**
+         * Descriptor for the assertion's automatically-generated view and its
+         * columns.
+         *
+         * @param RelationDescriptor $relationDescriptor
+         */
+        public function setRelationDescriptor(RelationDescriptor $relationDescriptor)
+        {
+        }
+        /**
+         * @return RelationDescriptor
+         */
+        public function getRelationDescriptor()
+        {
+        }
+        /**
+         * The SELECT query which must return zero rows in order for this assertion to
+         * succeed.
+         *
+         * @param string $selectQuery
+         */
+        public function setSelectQuery($selectQuery)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelectQuery()
+        {
+        }
+        /**
+         * Arbitrary, user-defined tags on this action.
+         *
+         * @param string[] $tags
+         */
+        public function setTags($tags)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTags()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Target[]
+     * Runtime class alias of \Google\Service\Dataform\Assertion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDependencyTargets()
-    {
-    }
-    /**
-     * Whether this action is disabled (i.e. should not be run).
-     *
-     * @param bool $disabled
-     */
-    public function setDisabled($disabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDisabled()
-    {
-    }
-    /**
-     * The parent action of this assertion. Only set if this assertion was
-     * automatically generated.
-     *
-     * @param Target $parentAction
-     */
-    public function setParentAction(Target $parentAction)
-    {
-    }
-    /**
-     * @return Target
-     */
-    public function getParentAction()
-    {
-    }
-    /**
-     * Descriptor for the assertion's automatically-generated view and its
-     * columns.
-     *
-     * @param RelationDescriptor $relationDescriptor
-     */
-    public function setRelationDescriptor(RelationDescriptor $relationDescriptor)
-    {
-    }
-    /**
-     * @return RelationDescriptor
-     */
-    public function getRelationDescriptor()
-    {
-    }
-    /**
-     * The SELECT query which must return zero rows in order for this assertion to
-     * succeed.
-     *
-     * @param string $selectQuery
-     */
-    public function setSelectQuery($selectQuery)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelectQuery()
-    {
-    }
-    /**
-     * Arbitrary, user-defined tags on this action.
-     *
-     * @param string[] $tags
-     */
-    public function setTags($tags)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTags()
+    class Google_Service_Dataform_Assertion extends \Google\Service\Dataform\Assertion
     {
     }
 }

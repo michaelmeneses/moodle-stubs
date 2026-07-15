@@ -21,107 +21,119 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Doubleclicksearch\Resource;
-
-/**
- * The "conversion" collection of methods.
- * Typical usage is:
- *  <code>
- *   $doubleclicksearchService = new Google\Service\Doubleclicksearch(...);
- *   $conversion = $doubleclicksearchService->conversion;
- *  </code>
- */
-class Conversion extends \Google\Service\Resource
-{
+namespace Google\Service\Doubleclicksearch\Resource {
+    use Google\Service\Doubleclicksearch\ConversionList;
+    use Google\Service\Doubleclicksearch\UpdateAvailabilityRequest;
+    use Google\Service\Doubleclicksearch\UpdateAvailabilityResponse;
     /**
-     * Retrieves a list of conversions from a DoubleClick Search engine account.
-     * (conversion.get)
-     *
-     * @param string $agencyId Numeric ID of the agency.
-     * @param string $advertiserId Numeric ID of the advertiser.
-     * @param string $engineAccountId Numeric ID of the engine account.
-     * @param int $endDate Last date (inclusive) on which to retrieve conversions.
-     * Format is yyyymmdd.
-     * @param int $rowCount The number of conversions to return per call.
-     * @param int $startDate First date (inclusive) on which to retrieve
-     * conversions. Format is yyyymmdd.
-     * @param string $startRow The 0-based starting index for retrieving conversions
-     * results.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string adGroupId Numeric ID of the ad group.
-     * @opt_param string adId Numeric ID of the ad.
-     * @opt_param string campaignId Numeric ID of the campaign.
-     * @opt_param string criterionId Numeric ID of the criterion.
-     * @opt_param string customerId Customer ID of a client account in the new
-     * Search Ads 360 experience.
-     * @return ConversionList
-     * @throws \Google\Service\Exception
+     * The "conversion" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $doubleclicksearchService = new Google\Service\Doubleclicksearch(...);
+     *   $conversion = $doubleclicksearchService->conversion;
+     *  </code>
      */
-    public function get($agencyId, $advertiserId, $engineAccountId, $endDate, $rowCount, $startDate, $startRow, $optParams = [])
+    class Conversion extends \Google\Service\Resource
     {
+        /**
+         * Retrieves a list of conversions from a DoubleClick Search engine account.
+         * (conversion.get)
+         *
+         * @param string $agencyId Numeric ID of the agency.
+         * @param string $advertiserId Numeric ID of the advertiser.
+         * @param string $engineAccountId Numeric ID of the engine account.
+         * @param int $endDate Last date (inclusive) on which to retrieve conversions.
+         * Format is yyyymmdd.
+         * @param int $rowCount The number of conversions to return per call.
+         * @param int $startDate First date (inclusive) on which to retrieve
+         * conversions. Format is yyyymmdd.
+         * @param string $startRow The 0-based starting index for retrieving conversions
+         * results.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string adGroupId Numeric ID of the ad group.
+         * @opt_param string adId Numeric ID of the ad.
+         * @opt_param string campaignId Numeric ID of the campaign.
+         * @opt_param string criterionId Numeric ID of the criterion.
+         * @opt_param string customerId Customer ID of a client account in the new
+         * Search Ads 360 experience.
+         * @return ConversionList
+         * @throws \Google\Service\Exception
+         */
+        public function get($agencyId, $advertiserId, $engineAccountId, $endDate, $rowCount, $startDate, $startRow, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves a list of conversions from a DoubleClick Search engine account.
+         * (conversion.getByCustomerId)
+         *
+         * @param string $customerId Customer ID of a client account in the new Search
+         * Ads 360 experience.
+         * @param int $endDate Last date (inclusive) on which to retrieve conversions.
+         * Format is yyyymmdd.
+         * @param int $rowCount The number of conversions to return per call.
+         * @param int $startDate First date (inclusive) on which to retrieve
+         * conversions. Format is yyyymmdd.
+         * @param string $startRow The 0-based starting index for retrieving conversions
+         * results.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string adGroupId Numeric ID of the ad group.
+         * @opt_param string adId Numeric ID of the ad.
+         * @opt_param string advertiserId Numeric ID of the advertiser.
+         * @opt_param string agencyId Numeric ID of the agency.
+         * @opt_param string campaignId Numeric ID of the campaign.
+         * @opt_param string criterionId Numeric ID of the criterion.
+         * @opt_param string engineAccountId Numeric ID of the engine account.
+         * @return ConversionList
+         * @throws \Google\Service\Exception
+         */
+        public function getByCustomerId($customerId, $endDate, $rowCount, $startDate, $startRow, $optParams = [])
+        {
+        }
+        /**
+         * Inserts a batch of new conversions into DoubleClick Search.
+         * (conversion.insert)
+         *
+         * @param ConversionList $postBody
+         * @param array $optParams Optional parameters.
+         * @return ConversionList
+         * @throws \Google\Service\Exception
+         */
+        public function insert(ConversionList $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Updates a batch of conversions in DoubleClick Search. (conversion.update)
+         *
+         * @param ConversionList $postBody
+         * @param array $optParams Optional parameters.
+         * @return ConversionList
+         * @throws \Google\Service\Exception
+         */
+        public function update(ConversionList $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Updates the availabilities of a batch of floodlight activities in DoubleClick
+         * Search. (conversion.updateAvailability)
+         *
+         * @param UpdateAvailabilityRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return UpdateAvailabilityResponse
+         * @throws \Google\Service\Exception
+         */
+        public function updateAvailability(UpdateAvailabilityRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Retrieves a list of conversions from a DoubleClick Search engine account.
-     * (conversion.getByCustomerId)
-     *
-     * @param string $customerId Customer ID of a client account in the new Search
-     * Ads 360 experience.
-     * @param int $endDate Last date (inclusive) on which to retrieve conversions.
-     * Format is yyyymmdd.
-     * @param int $rowCount The number of conversions to return per call.
-     * @param int $startDate First date (inclusive) on which to retrieve
-     * conversions. Format is yyyymmdd.
-     * @param string $startRow The 0-based starting index for retrieving conversions
-     * results.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string adGroupId Numeric ID of the ad group.
-     * @opt_param string adId Numeric ID of the ad.
-     * @opt_param string advertiserId Numeric ID of the advertiser.
-     * @opt_param string agencyId Numeric ID of the agency.
-     * @opt_param string campaignId Numeric ID of the campaign.
-     * @opt_param string criterionId Numeric ID of the criterion.
-     * @opt_param string engineAccountId Numeric ID of the engine account.
-     * @return ConversionList
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Doubleclicksearch\Resource\Conversion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getByCustomerId($customerId, $endDate, $rowCount, $startDate, $startRow, $optParams = [])
-    {
-    }
-    /**
-     * Inserts a batch of new conversions into DoubleClick Search.
-     * (conversion.insert)
-     *
-     * @param ConversionList $postBody
-     * @param array $optParams Optional parameters.
-     * @return ConversionList
-     * @throws \Google\Service\Exception
-     */
-    public function insert(ConversionList $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Updates a batch of conversions in DoubleClick Search. (conversion.update)
-     *
-     * @param ConversionList $postBody
-     * @param array $optParams Optional parameters.
-     * @return ConversionList
-     * @throws \Google\Service\Exception
-     */
-    public function update(ConversionList $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Updates the availabilities of a batch of floodlight activities in DoubleClick
-     * Search. (conversion.updateAvailability)
-     *
-     * @param UpdateAvailabilityRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return UpdateAvailabilityResponse
-     * @throws \Google\Service\Exception
-     */
-    public function updateAvailability(UpdateAvailabilityRequest $postBody, $optParams = [])
+    class Google_Service_Doubleclicksearch_Resource_Conversion extends \Google\Service\Doubleclicksearch\Resource\Conversion
     {
     }
 }

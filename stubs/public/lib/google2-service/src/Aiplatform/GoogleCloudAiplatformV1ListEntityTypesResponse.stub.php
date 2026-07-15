@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ListEntityTypesResponse extends \Google\Collection
-{
-    protected $collection_key = 'entityTypes';
-    protected $entityTypesType = GoogleCloudAiplatformV1EntityType::class;
-    protected $entityTypesDataType = 'array';
-    /**
-     * A token, which can be sent as ListEntityTypesRequest.page_token to retrieve
-     * the next page. If this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The EntityTypes matching the request.
-     *
-     * @param GoogleCloudAiplatformV1EntityType[] $entityTypes
-     */
-    public function setEntityTypes($entityTypes)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ListEntityTypesResponse extends \Google\Collection
     {
+        protected $collection_key = 'entityTypes';
+        protected $entityTypesType = GoogleCloudAiplatformV1EntityType::class;
+        protected $entityTypesDataType = 'array';
+        /**
+         * A token, which can be sent as ListEntityTypesRequest.page_token to retrieve
+         * the next page. If this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The EntityTypes matching the request.
+         *
+         * @param GoogleCloudAiplatformV1EntityType[] $entityTypes
+         */
+        public function setEntityTypes($entityTypes)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1EntityType[]
+         */
+        public function getEntityTypes()
+        {
+        }
+        /**
+         * A token, which can be sent as ListEntityTypesRequest.page_token to retrieve
+         * the next page. If this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1EntityType[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListEntityTypesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntityTypes()
-    {
-    }
-    /**
-     * A token, which can be sent as ListEntityTypesRequest.page_token to retrieve
-     * the next page. If this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ListEntityTypesResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListEntityTypesResponse
     {
     }
 }

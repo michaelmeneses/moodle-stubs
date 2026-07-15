@@ -21,94 +21,103 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMMigrationService;
-
-class ShieldedInstanceConfig extends \Google\Model
-{
-    /**
-     * No explicit value is selected. Will use the configuration of the source (if
-     * exists, otherwise the default will be false).
-     */
-    public const SECURE_BOOT_SECURE_BOOT_UNSPECIFIED = 'SECURE_BOOT_UNSPECIFIED';
-    /**
-     * Use secure boot. This can be set to true only if the image boot option is
-     * EFI.
-     */
-    public const SECURE_BOOT_TRUE = 'TRUE';
-    /**
-     * Do not use secure boot.
-     */
-    public const SECURE_BOOT_FALSE = 'FALSE';
-    /**
-     * Optional. Defines whether the instance created by the machine image has
-     * integrity monitoring enabled. This can be set to true only if the image
-     * boot option is EFI, and vTPM is enabled.
-     *
-     * @var bool
-     */
-    public $enableIntegrityMonitoring;
-    /**
-     * Optional. Defines whether the instance created by the machine image has
-     * vTPM enabled. This can be set to true only if the image boot option is EFI.
-     *
-     * @var bool
-     */
-    public $enableVtpm;
-    /**
-     * Optional. Defines whether the instance created by the machine image has
-     * Secure Boot enabled. This can be set to true only if the image boot option
-     * is EFI.
-     *
-     * @var string
-     */
-    public $secureBoot;
-    /**
-     * Optional. Defines whether the instance created by the machine image has
-     * integrity monitoring enabled. This can be set to true only if the image
-     * boot option is EFI, and vTPM is enabled.
-     *
-     * @param bool $enableIntegrityMonitoring
-     */
-    public function setEnableIntegrityMonitoring($enableIntegrityMonitoring)
+namespace Google\Service\VMMigrationService {
+    class ShieldedInstanceConfig extends \Google\Model
     {
+        /**
+         * No explicit value is selected. Will use the configuration of the source (if
+         * exists, otherwise the default will be false).
+         */
+        public const SECURE_BOOT_SECURE_BOOT_UNSPECIFIED = 'SECURE_BOOT_UNSPECIFIED';
+        /**
+         * Use secure boot. This can be set to true only if the image boot option is
+         * EFI.
+         */
+        public const SECURE_BOOT_TRUE = 'TRUE';
+        /**
+         * Do not use secure boot.
+         */
+        public const SECURE_BOOT_FALSE = 'FALSE';
+        /**
+         * Optional. Defines whether the instance created by the machine image has
+         * integrity monitoring enabled. This can be set to true only if the image
+         * boot option is EFI, and vTPM is enabled.
+         *
+         * @var bool
+         */
+        public $enableIntegrityMonitoring;
+        /**
+         * Optional. Defines whether the instance created by the machine image has
+         * vTPM enabled. This can be set to true only if the image boot option is EFI.
+         *
+         * @var bool
+         */
+        public $enableVtpm;
+        /**
+         * Optional. Defines whether the instance created by the machine image has
+         * Secure Boot enabled. This can be set to true only if the image boot option
+         * is EFI.
+         *
+         * @var string
+         */
+        public $secureBoot;
+        /**
+         * Optional. Defines whether the instance created by the machine image has
+         * integrity monitoring enabled. This can be set to true only if the image
+         * boot option is EFI, and vTPM is enabled.
+         *
+         * @param bool $enableIntegrityMonitoring
+         */
+        public function setEnableIntegrityMonitoring($enableIntegrityMonitoring)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableIntegrityMonitoring()
+        {
+        }
+        /**
+         * Optional. Defines whether the instance created by the machine image has
+         * vTPM enabled. This can be set to true only if the image boot option is EFI.
+         *
+         * @param bool $enableVtpm
+         */
+        public function setEnableVtpm($enableVtpm)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableVtpm()
+        {
+        }
+        /**
+         * Optional. Defines whether the instance created by the machine image has
+         * Secure Boot enabled. This can be set to true only if the image boot option
+         * is EFI.
+         *
+         * Accepted values: SECURE_BOOT_UNSPECIFIED, TRUE, FALSE
+         *
+         * @param self::SECURE_BOOT_* $secureBoot
+         */
+        public function setSecureBoot($secureBoot)
+        {
+        }
+        /**
+         * @return self::SECURE_BOOT_*
+         */
+        public function getSecureBoot()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\VMMigrationService\ShieldedInstanceConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnableIntegrityMonitoring()
-    {
-    }
-    /**
-     * Optional. Defines whether the instance created by the machine image has
-     * vTPM enabled. This can be set to true only if the image boot option is EFI.
-     *
-     * @param bool $enableVtpm
-     */
-    public function setEnableVtpm($enableVtpm)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnableVtpm()
-    {
-    }
-    /**
-     * Optional. Defines whether the instance created by the machine image has
-     * Secure Boot enabled. This can be set to true only if the image boot option
-     * is EFI.
-     *
-     * Accepted values: SECURE_BOOT_UNSPECIFIED, TRUE, FALSE
-     *
-     * @param self::SECURE_BOOT_* $secureBoot
-     */
-    public function setSecureBoot($secureBoot)
-    {
-    }
-    /**
-     * @return self::SECURE_BOOT_*
-     */
-    public function getSecureBoot()
+    class Google_Service_VMMigrationService_ShieldedInstanceConfig extends \Google\Service\VMMigrationService\ShieldedInstanceConfig
     {
     }
 }

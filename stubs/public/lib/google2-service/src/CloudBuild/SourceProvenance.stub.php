@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class SourceProvenance extends \Google\Model
-{
-    protected $fileHashesType = FileHashes::class;
-    protected $fileHashesDataType = 'map';
-    protected $resolvedRepoSourceType = RepoSource::class;
-    protected $resolvedRepoSourceDataType = '';
-    protected $resolvedStorageSourceType = StorageSource::class;
-    protected $resolvedStorageSourceDataType = '';
-    protected $resolvedStorageSourceManifestType = StorageSourceManifest::class;
-    protected $resolvedStorageSourceManifestDataType = '';
-    /**
-     * @param FileHashes[]
-     */
-    public function setFileHashes($fileHashes)
+namespace Google\Service\CloudBuild {
+    class SourceProvenance extends \Google\Model
     {
+        protected $fileHashesType = FileHashes::class;
+        protected $fileHashesDataType = 'map';
+        protected $resolvedRepoSourceType = RepoSource::class;
+        protected $resolvedRepoSourceDataType = '';
+        protected $resolvedStorageSourceType = StorageSource::class;
+        protected $resolvedStorageSourceDataType = '';
+        protected $resolvedStorageSourceManifestType = StorageSourceManifest::class;
+        protected $resolvedStorageSourceManifestDataType = '';
+        /**
+         * @param FileHashes[]
+         */
+        public function setFileHashes($fileHashes)
+        {
+        }
+        /**
+         * @return FileHashes[]
+         */
+        public function getFileHashes()
+        {
+        }
+        /**
+         * @param RepoSource
+         */
+        public function setResolvedRepoSource(RepoSource $resolvedRepoSource)
+        {
+        }
+        /**
+         * @return RepoSource
+         */
+        public function getResolvedRepoSource()
+        {
+        }
+        /**
+         * @param StorageSource
+         */
+        public function setResolvedStorageSource(StorageSource $resolvedStorageSource)
+        {
+        }
+        /**
+         * @return StorageSource
+         */
+        public function getResolvedStorageSource()
+        {
+        }
+        /**
+         * @param StorageSourceManifest
+         */
+        public function setResolvedStorageSourceManifest(StorageSourceManifest $resolvedStorageSourceManifest)
+        {
+        }
+        /**
+         * @return StorageSourceManifest
+         */
+        public function getResolvedStorageSourceManifest()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FileHashes[]
+     * Runtime class alias of \Google\Service\CloudBuild\SourceProvenance registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFileHashes()
-    {
-    }
-    /**
-     * @param RepoSource
-     */
-    public function setResolvedRepoSource(RepoSource $resolvedRepoSource)
-    {
-    }
-    /**
-     * @return RepoSource
-     */
-    public function getResolvedRepoSource()
-    {
-    }
-    /**
-     * @param StorageSource
-     */
-    public function setResolvedStorageSource(StorageSource $resolvedStorageSource)
-    {
-    }
-    /**
-     * @return StorageSource
-     */
-    public function getResolvedStorageSource()
-    {
-    }
-    /**
-     * @param StorageSourceManifest
-     */
-    public function setResolvedStorageSourceManifest(StorageSourceManifest $resolvedStorageSourceManifest)
-    {
-    }
-    /**
-     * @return StorageSourceManifest
-     */
-    public function getResolvedStorageSourceManifest()
+    class Google_Service_CloudBuild_SourceProvenance extends \Google\Service\CloudBuild\SourceProvenance
     {
     }
 }

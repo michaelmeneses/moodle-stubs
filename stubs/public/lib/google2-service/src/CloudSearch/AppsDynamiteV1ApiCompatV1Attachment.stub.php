@@ -21,310 +21,319 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteV1ApiCompatV1Attachment extends \Google\Collection
-{
-    protected $collection_key = 'mrkdwn_in';
-    protected $internal_gapi_mappings = ["attachmentType" => "attachment_type", "authorIcon" => "author_icon", "authorLink" => "author_link", "authorName" => "author_name", "callbackId" => "callback_id", "footerIcon" => "footer_icon", "imageUrl" => "image_url", "mrkdwnIn" => "mrkdwn_in", "thumbUrl" => "thumb_url", "titleLink" => "title_link"];
-    protected $actionsType = AppsDynamiteV1ApiCompatV1Action::class;
-    protected $actionsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $attachmentType;
-    /**
-     * @var string
-     */
-    public $authorIcon;
-    /**
-     * @var string
-     */
-    public $authorLink;
-    /**
-     * @var string
-     */
-    public $authorName;
-    /**
-     * @var string
-     */
-    public $callbackId;
-    /**
-     * @var string
-     */
-    public $color;
-    /**
-     * @var string
-     */
-    public $fallback;
-    protected $fieldsType = AppsDynamiteV1ApiCompatV1Field::class;
-    protected $fieldsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $footer;
-    /**
-     * @var string
-     */
-    public $footerIcon;
-    /**
-     * @var string
-     */
-    public $imageUrl;
-    /**
-     * @var string[]
-     */
-    public $mrkdwnIn;
-    /**
-     * @var string
-     */
-    public $pretext;
-    /**
-     * @var string
-     */
-    public $text;
-    /**
-     * @var string
-     */
-    public $thumbUrl;
-    /**
-     * @var string
-     */
-    public $title;
-    /**
-     * @var string
-     */
-    public $titleLink;
-    /**
-     * @var int
-     */
-    public $ts;
-    /**
-     * @param AppsDynamiteV1ApiCompatV1Action[]
-     */
-    public function setActions($actions)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteV1ApiCompatV1Attachment extends \Google\Collection
     {
+        protected $collection_key = 'mrkdwn_in';
+        protected $internal_gapi_mappings = ["attachmentType" => "attachment_type", "authorIcon" => "author_icon", "authorLink" => "author_link", "authorName" => "author_name", "callbackId" => "callback_id", "footerIcon" => "footer_icon", "imageUrl" => "image_url", "mrkdwnIn" => "mrkdwn_in", "thumbUrl" => "thumb_url", "titleLink" => "title_link"];
+        protected $actionsType = AppsDynamiteV1ApiCompatV1Action::class;
+        protected $actionsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $attachmentType;
+        /**
+         * @var string
+         */
+        public $authorIcon;
+        /**
+         * @var string
+         */
+        public $authorLink;
+        /**
+         * @var string
+         */
+        public $authorName;
+        /**
+         * @var string
+         */
+        public $callbackId;
+        /**
+         * @var string
+         */
+        public $color;
+        /**
+         * @var string
+         */
+        public $fallback;
+        protected $fieldsType = AppsDynamiteV1ApiCompatV1Field::class;
+        protected $fieldsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $footer;
+        /**
+         * @var string
+         */
+        public $footerIcon;
+        /**
+         * @var string
+         */
+        public $imageUrl;
+        /**
+         * @var string[]
+         */
+        public $mrkdwnIn;
+        /**
+         * @var string
+         */
+        public $pretext;
+        /**
+         * @var string
+         */
+        public $text;
+        /**
+         * @var string
+         */
+        public $thumbUrl;
+        /**
+         * @var string
+         */
+        public $title;
+        /**
+         * @var string
+         */
+        public $titleLink;
+        /**
+         * @var int
+         */
+        public $ts;
+        /**
+         * @param AppsDynamiteV1ApiCompatV1Action[]
+         */
+        public function setActions($actions)
+        {
+        }
+        /**
+         * @return AppsDynamiteV1ApiCompatV1Action[]
+         */
+        public function getActions()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setAttachmentType($attachmentType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAttachmentType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setAuthorIcon($authorIcon)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAuthorIcon()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setAuthorLink($authorLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAuthorLink()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setAuthorName($authorName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAuthorName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCallbackId($callbackId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCallbackId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setColor($color)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getColor()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setFallback($fallback)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFallback()
+        {
+        }
+        /**
+         * @param AppsDynamiteV1ApiCompatV1Field[]
+         */
+        public function setFields($fields)
+        {
+        }
+        /**
+         * @return AppsDynamiteV1ApiCompatV1Field[]
+         */
+        public function getFields()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setFooter($footer)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFooter()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setFooterIcon($footerIcon)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFooterIcon()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setImageUrl($imageUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImageUrl()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setMrkdwnIn($mrkdwnIn)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMrkdwnIn()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPretext($pretext)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPretext()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setThumbUrl($thumbUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getThumbUrl()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTitleLink($titleLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitleLink()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setTs($ts)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppsDynamiteV1ApiCompatV1Action[]
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteV1ApiCompatV1Attachment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActions()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setAttachmentType($attachmentType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAttachmentType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setAuthorIcon($authorIcon)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAuthorIcon()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setAuthorLink($authorLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAuthorLink()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setAuthorName($authorName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAuthorName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCallbackId($callbackId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCallbackId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setColor($color)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getColor()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setFallback($fallback)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFallback()
-    {
-    }
-    /**
-     * @param AppsDynamiteV1ApiCompatV1Field[]
-     */
-    public function setFields($fields)
-    {
-    }
-    /**
-     * @return AppsDynamiteV1ApiCompatV1Field[]
-     */
-    public function getFields()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setFooter($footer)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFooter()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setFooterIcon($footerIcon)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFooterIcon()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setImageUrl($imageUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImageUrl()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setMrkdwnIn($mrkdwnIn)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getMrkdwnIn()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPretext($pretext)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPretext()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setThumbUrl($thumbUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getThumbUrl()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTitleLink($titleLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitleLink()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setTs($ts)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTs()
+    class Google_Service_CloudSearch_AppsDynamiteV1ApiCompatV1Attachment extends \Google\Service\CloudSearch\AppsDynamiteV1ApiCompatV1Attachment
     {
     }
 }

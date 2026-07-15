@@ -21,116 +21,125 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Speech;
-
-class LongRunningRecognizeResponse extends \Google\Collection
-{
-    protected $collection_key = 'results';
-    protected $outputConfigType = TranscriptOutputConfig::class;
-    protected $outputConfigDataType = '';
-    protected $outputErrorType = Status::class;
-    protected $outputErrorDataType = '';
-    /**
-     * The ID associated with the request. This is a unique ID specific only to
-     * the given request.
-     *
-     * @var string
-     */
-    public $requestId;
-    protected $resultsType = SpeechRecognitionResult::class;
-    protected $resultsDataType = 'array';
-    protected $speechAdaptationInfoType = SpeechAdaptationInfo::class;
-    protected $speechAdaptationInfoDataType = '';
-    /**
-     * When available, billed audio seconds for the corresponding request.
-     *
-     * @var string
-     */
-    public $totalBilledTime;
-    /**
-     * Original output config if present in the request.
-     *
-     * @param TranscriptOutputConfig $outputConfig
-     */
-    public function setOutputConfig(TranscriptOutputConfig $outputConfig)
+namespace Google\Service\Speech {
+    class LongRunningRecognizeResponse extends \Google\Collection
     {
+        protected $collection_key = 'results';
+        protected $outputConfigType = TranscriptOutputConfig::class;
+        protected $outputConfigDataType = '';
+        protected $outputErrorType = Status::class;
+        protected $outputErrorDataType = '';
+        /**
+         * The ID associated with the request. This is a unique ID specific only to
+         * the given request.
+         *
+         * @var string
+         */
+        public $requestId;
+        protected $resultsType = SpeechRecognitionResult::class;
+        protected $resultsDataType = 'array';
+        protected $speechAdaptationInfoType = SpeechAdaptationInfo::class;
+        protected $speechAdaptationInfoDataType = '';
+        /**
+         * When available, billed audio seconds for the corresponding request.
+         *
+         * @var string
+         */
+        public $totalBilledTime;
+        /**
+         * Original output config if present in the request.
+         *
+         * @param TranscriptOutputConfig $outputConfig
+         */
+        public function setOutputConfig(TranscriptOutputConfig $outputConfig)
+        {
+        }
+        /**
+         * @return TranscriptOutputConfig
+         */
+        public function getOutputConfig()
+        {
+        }
+        /**
+         * If the transcript output fails this field contains the relevant error.
+         *
+         * @param Status $outputError
+         */
+        public function setOutputError(Status $outputError)
+        {
+        }
+        /**
+         * @return Status
+         */
+        public function getOutputError()
+        {
+        }
+        /**
+         * The ID associated with the request. This is a unique ID specific only to
+         * the given request.
+         *
+         * @param string $requestId
+         */
+        public function setRequestId($requestId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestId()
+        {
+        }
+        /**
+         * Sequential list of transcription results corresponding to sequential
+         * portions of audio.
+         *
+         * @param SpeechRecognitionResult[] $results
+         */
+        public function setResults($results)
+        {
+        }
+        /**
+         * @return SpeechRecognitionResult[]
+         */
+        public function getResults()
+        {
+        }
+        /**
+         * Provides information on speech adaptation behavior in response
+         *
+         * @param SpeechAdaptationInfo $speechAdaptationInfo
+         */
+        public function setSpeechAdaptationInfo(SpeechAdaptationInfo $speechAdaptationInfo)
+        {
+        }
+        /**
+         * @return SpeechAdaptationInfo
+         */
+        public function getSpeechAdaptationInfo()
+        {
+        }
+        /**
+         * When available, billed audio seconds for the corresponding request.
+         *
+         * @param string $totalBilledTime
+         */
+        public function setTotalBilledTime($totalBilledTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalBilledTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TranscriptOutputConfig
+     * Runtime class alias of \Google\Service\Speech\LongRunningRecognizeResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOutputConfig()
-    {
-    }
-    /**
-     * If the transcript output fails this field contains the relevant error.
-     *
-     * @param Status $outputError
-     */
-    public function setOutputError(Status $outputError)
-    {
-    }
-    /**
-     * @return Status
-     */
-    public function getOutputError()
-    {
-    }
-    /**
-     * The ID associated with the request. This is a unique ID specific only to
-     * the given request.
-     *
-     * @param string $requestId
-     */
-    public function setRequestId($requestId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestId()
-    {
-    }
-    /**
-     * Sequential list of transcription results corresponding to sequential
-     * portions of audio.
-     *
-     * @param SpeechRecognitionResult[] $results
-     */
-    public function setResults($results)
-    {
-    }
-    /**
-     * @return SpeechRecognitionResult[]
-     */
-    public function getResults()
-    {
-    }
-    /**
-     * Provides information on speech adaptation behavior in response
-     *
-     * @param SpeechAdaptationInfo $speechAdaptationInfo
-     */
-    public function setSpeechAdaptationInfo(SpeechAdaptationInfo $speechAdaptationInfo)
-    {
-    }
-    /**
-     * @return SpeechAdaptationInfo
-     */
-    public function getSpeechAdaptationInfo()
-    {
-    }
-    /**
-     * When available, billed audio seconds for the corresponding request.
-     *
-     * @param string $totalBilledTime
-     */
-    public function setTotalBilledTime($totalBilledTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalBilledTime()
+    class Google_Service_Speech_LongRunningRecognizeResponse extends \Google\Service\Speech\LongRunningRecognizeResponse
     {
     }
 }

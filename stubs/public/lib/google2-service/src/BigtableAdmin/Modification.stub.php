@@ -21,108 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class Modification extends \Google\Model
-{
-    protected $createType = ColumnFamily::class;
-    protected $createDataType = '';
-    /**
-     * Drop (delete) the column family with the given ID, or fail if no such
-     * family exists.
-     *
-     * @var bool
-     */
-    public $drop;
-    /**
-     * The ID of the column family to be modified.
-     *
-     * @var string
-     */
-    public $id;
-    protected $updateType = ColumnFamily::class;
-    protected $updateDataType = '';
-    /**
-     * Optional. A mask specifying which fields (e.g. `gc_rule`) in the `update`
-     * mod should be updated, ignored for other modification types. If unset or
-     * empty, we treat it as updating `gc_rule` to be backward compatible.
-     *
-     * @var string
-     */
-    public $updateMask;
-    /**
-     * Create a new column family with the specified schema, or fail if one
-     * already exists with the given ID.
-     *
-     * @param ColumnFamily $create
-     */
-    public function setCreate(ColumnFamily $create)
+namespace Google\Service\BigtableAdmin {
+    class Modification extends \Google\Model
     {
+        protected $createType = ColumnFamily::class;
+        protected $createDataType = '';
+        /**
+         * Drop (delete) the column family with the given ID, or fail if no such
+         * family exists.
+         *
+         * @var bool
+         */
+        public $drop;
+        /**
+         * The ID of the column family to be modified.
+         *
+         * @var string
+         */
+        public $id;
+        protected $updateType = ColumnFamily::class;
+        protected $updateDataType = '';
+        /**
+         * Optional. A mask specifying which fields (e.g. `gc_rule`) in the `update`
+         * mod should be updated, ignored for other modification types. If unset or
+         * empty, we treat it as updating `gc_rule` to be backward compatible.
+         *
+         * @var string
+         */
+        public $updateMask;
+        /**
+         * Create a new column family with the specified schema, or fail if one
+         * already exists with the given ID.
+         *
+         * @param ColumnFamily $create
+         */
+        public function setCreate(ColumnFamily $create)
+        {
+        }
+        /**
+         * @return ColumnFamily
+         */
+        public function getCreate()
+        {
+        }
+        /**
+         * Drop (delete) the column family with the given ID, or fail if no such
+         * family exists.
+         *
+         * @param bool $drop
+         */
+        public function setDrop($drop)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDrop()
+        {
+        }
+        /**
+         * The ID of the column family to be modified.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Update an existing column family to the specified schema, or fail if no
+         * column family exists with the given ID.
+         *
+         * @param ColumnFamily $update
+         */
+        public function setUpdate(ColumnFamily $update)
+        {
+        }
+        /**
+         * @return ColumnFamily
+         */
+        public function getUpdate()
+        {
+        }
+        /**
+         * Optional. A mask specifying which fields (e.g. `gc_rule`) in the `update`
+         * mod should be updated, ignored for other modification types. If unset or
+         * empty, we treat it as updating `gc_rule` to be backward compatible.
+         *
+         * @param string $updateMask
+         */
+        public function setUpdateMask($updateMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateMask()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ColumnFamily
+     * Runtime class alias of \Google\Service\BigtableAdmin\Modification registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreate()
-    {
-    }
-    /**
-     * Drop (delete) the column family with the given ID, or fail if no such
-     * family exists.
-     *
-     * @param bool $drop
-     */
-    public function setDrop($drop)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDrop()
-    {
-    }
-    /**
-     * The ID of the column family to be modified.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Update an existing column family to the specified schema, or fail if no
-     * column family exists with the given ID.
-     *
-     * @param ColumnFamily $update
-     */
-    public function setUpdate(ColumnFamily $update)
-    {
-    }
-    /**
-     * @return ColumnFamily
-     */
-    public function getUpdate()
-    {
-    }
-    /**
-     * Optional. A mask specifying which fields (e.g. `gc_rule`) in the `update`
-     * mod should be updated, ignored for other modification types. If unset or
-     * empty, we treat it as updating `gc_rule` to be backward compatible.
-     *
-     * @param string $updateMask
-     */
-    public function setUpdateMask($updateMask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateMask()
+    class Google_Service_BigtableAdmin_Modification extends \Google\Service\BigtableAdmin\Modification
     {
     }
 }

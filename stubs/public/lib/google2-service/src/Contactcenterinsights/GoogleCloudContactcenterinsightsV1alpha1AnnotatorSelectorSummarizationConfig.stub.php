@@ -21,93 +21,102 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1alpha1AnnotatorSelectorSummarizationConfig extends \Google\Model
-{
-    /**
-     * Unspecified summarization model.
-     */
-    public const SUMMARIZATION_MODEL_SUMMARIZATION_MODEL_UNSPECIFIED = 'SUMMARIZATION_MODEL_UNSPECIFIED';
-    /**
-     * The CCAI baseline model. This model is deprecated and will be removed in
-     * the future. We recommend using `generator` instead.
-     *
-     * @deprecated
-     */
-    public const SUMMARIZATION_MODEL_BASELINE_MODEL = 'BASELINE_MODEL';
-    /**
-     * The CCAI baseline model, V2.0. This model is deprecated and will be removed
-     * in the future. We recommend using `generator` instead.
-     *
-     * @deprecated
-     */
-    public const SUMMARIZATION_MODEL_BASELINE_MODEL_V2_0 = 'BASELINE_MODEL_V2_0';
-    /**
-     * Resource name of the Dialogflow conversation profile. Format: projects/{pro
-     * ject}/locations/{location}/conversationProfiles/{conversation_profile}
-     *
-     * @var string
-     */
-    public $conversationProfile;
-    /**
-     * The resource name of the existing created generator. Format:
-     * projects//locations//generators/
-     *
-     * @var string
-     */
-    public $generator;
-    /**
-     * Default summarization model to be used.
-     *
-     * @var string
-     */
-    public $summarizationModel;
-    /**
-     * Resource name of the Dialogflow conversation profile. Format: projects/{pro
-     * ject}/locations/{location}/conversationProfiles/{conversation_profile}
-     *
-     * @param string $conversationProfile
-     */
-    public function setConversationProfile($conversationProfile)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1alpha1AnnotatorSelectorSummarizationConfig extends \Google\Model
     {
+        /**
+         * Unspecified summarization model.
+         */
+        public const SUMMARIZATION_MODEL_SUMMARIZATION_MODEL_UNSPECIFIED = 'SUMMARIZATION_MODEL_UNSPECIFIED';
+        /**
+         * The CCAI baseline model. This model is deprecated and will be removed in
+         * the future. We recommend using `generator` instead.
+         *
+         * @deprecated
+         */
+        public const SUMMARIZATION_MODEL_BASELINE_MODEL = 'BASELINE_MODEL';
+        /**
+         * The CCAI baseline model, V2.0. This model is deprecated and will be removed
+         * in the future. We recommend using `generator` instead.
+         *
+         * @deprecated
+         */
+        public const SUMMARIZATION_MODEL_BASELINE_MODEL_V2_0 = 'BASELINE_MODEL_V2_0';
+        /**
+         * Resource name of the Dialogflow conversation profile. Format: projects/{pro
+         * ject}/locations/{location}/conversationProfiles/{conversation_profile}
+         *
+         * @var string
+         */
+        public $conversationProfile;
+        /**
+         * The resource name of the existing created generator. Format:
+         * projects//locations//generators/
+         *
+         * @var string
+         */
+        public $generator;
+        /**
+         * Default summarization model to be used.
+         *
+         * @var string
+         */
+        public $summarizationModel;
+        /**
+         * Resource name of the Dialogflow conversation profile. Format: projects/{pro
+         * ject}/locations/{location}/conversationProfiles/{conversation_profile}
+         *
+         * @param string $conversationProfile
+         */
+        public function setConversationProfile($conversationProfile)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConversationProfile()
+        {
+        }
+        /**
+         * The resource name of the existing created generator. Format:
+         * projects//locations//generators/
+         *
+         * @param string $generator
+         */
+        public function setGenerator($generator)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGenerator()
+        {
+        }
+        /**
+         * Default summarization model to be used.
+         *
+         * Accepted values: SUMMARIZATION_MODEL_UNSPECIFIED, BASELINE_MODEL,
+         * BASELINE_MODEL_V2_0
+         *
+         * @param self::SUMMARIZATION_MODEL_* $summarizationModel
+         */
+        public function setSummarizationModel($summarizationModel)
+        {
+        }
+        /**
+         * @return self::SUMMARIZATION_MODEL_*
+         */
+        public function getSummarizationModel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1AnnotatorSelectorSummarizationConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConversationProfile()
-    {
-    }
-    /**
-     * The resource name of the existing created generator. Format:
-     * projects//locations//generators/
-     *
-     * @param string $generator
-     */
-    public function setGenerator($generator)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGenerator()
-    {
-    }
-    /**
-     * Default summarization model to be used.
-     *
-     * Accepted values: SUMMARIZATION_MODEL_UNSPECIFIED, BASELINE_MODEL,
-     * BASELINE_MODEL_V2_0
-     *
-     * @param self::SUMMARIZATION_MODEL_* $summarizationModel
-     */
-    public function setSummarizationModel($summarizationModel)
-    {
-    }
-    /**
-     * @return self::SUMMARIZATION_MODEL_*
-     */
-    public function getSummarizationModel()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1alpha1AnnotatorSelectorSummarizationConfig extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1AnnotatorSelectorSummarizationConfig
     {
     }
 }

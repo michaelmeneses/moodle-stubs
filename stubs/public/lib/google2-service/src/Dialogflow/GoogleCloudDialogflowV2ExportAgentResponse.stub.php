@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2ExportAgentResponse extends \Google\Model
-{
-    /**
-     * Zip compressed raw byte content for agent.
-     *
-     * @var string
-     */
-    public $agentContent;
-    /**
-     * The URI to a file containing the exported agent. This field is populated
-     * only if `agent_uri` is specified in `ExportAgentRequest`.
-     *
-     * @var string
-     */
-    public $agentUri;
-    /**
-     * Zip compressed raw byte content for agent.
-     *
-     * @param string $agentContent
-     */
-    public function setAgentContent($agentContent)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2ExportAgentResponse extends \Google\Model
     {
+        /**
+         * Zip compressed raw byte content for agent.
+         *
+         * @var string
+         */
+        public $agentContent;
+        /**
+         * The URI to a file containing the exported agent. This field is populated
+         * only if `agent_uri` is specified in `ExportAgentRequest`.
+         *
+         * @var string
+         */
+        public $agentUri;
+        /**
+         * Zip compressed raw byte content for agent.
+         *
+         * @param string $agentContent
+         */
+        public function setAgentContent($agentContent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAgentContent()
+        {
+        }
+        /**
+         * The URI to a file containing the exported agent. This field is populated
+         * only if `agent_uri` is specified in `ExportAgentRequest`.
+         *
+         * @param string $agentUri
+         */
+        public function setAgentUri($agentUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAgentUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2ExportAgentResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAgentContent()
-    {
-    }
-    /**
-     * The URI to a file containing the exported agent. This field is populated
-     * only if `agent_uri` is specified in `ExportAgentRequest`.
-     *
-     * @param string $agentUri
-     */
-    public function setAgentUri($agentUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAgentUri()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2ExportAgentResponse extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2ExportAgentResponse
     {
     }
 }

@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkspaceEvents;
-
-class APIKeySecurityScheme extends \Google\Model
-{
-    /**
-     * Description of this security scheme.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Location of the API key, valid values are "query", "header", or "cookie"
-     *
-     * @var string
-     */
-    public $location;
-    /**
-     * Name of the header, query or cookie parameter to be used.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Description of this security scheme.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\WorkspaceEvents {
+    class APIKeySecurityScheme extends \Google\Model
     {
+        /**
+         * Description of this security scheme.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Location of the API key, valid values are "query", "header", or "cookie"
+         *
+         * @var string
+         */
+        public $location;
+        /**
+         * Name of the header, query or cookie parameter to be used.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Description of this security scheme.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Location of the API key, valid values are "query", "header", or "cookie"
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * Name of the header, query or cookie parameter to be used.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\WorkspaceEvents\APIKeySecurityScheme registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * Location of the API key, valid values are "query", "header", or "cookie"
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocation()
-    {
-    }
-    /**
-     * Name of the header, query or cookie parameter to be used.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_WorkspaceEvents_APIKeySecurityScheme extends \Google\Service\WorkspaceEvents\APIKeySecurityScheme
     {
     }
 }

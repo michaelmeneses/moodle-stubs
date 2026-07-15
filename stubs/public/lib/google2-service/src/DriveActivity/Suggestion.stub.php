@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveActivity;
-
-class Suggestion extends \Google\Model
-{
-    /**
-     * Subtype not available.
-     */
-    public const SUBTYPE_SUBTYPE_UNSPECIFIED = 'SUBTYPE_UNSPECIFIED';
-    /**
-     * A suggestion was added.
-     */
-    public const SUBTYPE_ADDED = 'ADDED';
-    /**
-     * A suggestion was deleted.
-     */
-    public const SUBTYPE_DELETED = 'DELETED';
-    /**
-     * A suggestion reply was added.
-     */
-    public const SUBTYPE_REPLY_ADDED = 'REPLY_ADDED';
-    /**
-     * A suggestion reply was deleted.
-     */
-    public const SUBTYPE_REPLY_DELETED = 'REPLY_DELETED';
-    /**
-     * A suggestion was accepted.
-     */
-    public const SUBTYPE_ACCEPTED = 'ACCEPTED';
-    /**
-     * A suggestion was rejected.
-     */
-    public const SUBTYPE_REJECTED = 'REJECTED';
-    /**
-     * An accepted suggestion was deleted.
-     */
-    public const SUBTYPE_ACCEPT_DELETED = 'ACCEPT_DELETED';
-    /**
-     * A rejected suggestion was deleted.
-     */
-    public const SUBTYPE_REJECT_DELETED = 'REJECT_DELETED';
-    /**
-     * The sub-type of this event.
-     *
-     * @var string
-     */
-    public $subtype;
-    /**
-     * The sub-type of this event.
-     *
-     * Accepted values: SUBTYPE_UNSPECIFIED, ADDED, DELETED, REPLY_ADDED,
-     * REPLY_DELETED, ACCEPTED, REJECTED, ACCEPT_DELETED, REJECT_DELETED
-     *
-     * @param self::SUBTYPE_* $subtype
-     */
-    public function setSubtype($subtype)
+namespace Google\Service\DriveActivity {
+    class Suggestion extends \Google\Model
     {
+        /**
+         * Subtype not available.
+         */
+        public const SUBTYPE_SUBTYPE_UNSPECIFIED = 'SUBTYPE_UNSPECIFIED';
+        /**
+         * A suggestion was added.
+         */
+        public const SUBTYPE_ADDED = 'ADDED';
+        /**
+         * A suggestion was deleted.
+         */
+        public const SUBTYPE_DELETED = 'DELETED';
+        /**
+         * A suggestion reply was added.
+         */
+        public const SUBTYPE_REPLY_ADDED = 'REPLY_ADDED';
+        /**
+         * A suggestion reply was deleted.
+         */
+        public const SUBTYPE_REPLY_DELETED = 'REPLY_DELETED';
+        /**
+         * A suggestion was accepted.
+         */
+        public const SUBTYPE_ACCEPTED = 'ACCEPTED';
+        /**
+         * A suggestion was rejected.
+         */
+        public const SUBTYPE_REJECTED = 'REJECTED';
+        /**
+         * An accepted suggestion was deleted.
+         */
+        public const SUBTYPE_ACCEPT_DELETED = 'ACCEPT_DELETED';
+        /**
+         * A rejected suggestion was deleted.
+         */
+        public const SUBTYPE_REJECT_DELETED = 'REJECT_DELETED';
+        /**
+         * The sub-type of this event.
+         *
+         * @var string
+         */
+        public $subtype;
+        /**
+         * The sub-type of this event.
+         *
+         * Accepted values: SUBTYPE_UNSPECIFIED, ADDED, DELETED, REPLY_ADDED,
+         * REPLY_DELETED, ACCEPTED, REJECTED, ACCEPT_DELETED, REJECT_DELETED
+         *
+         * @param self::SUBTYPE_* $subtype
+         */
+        public function setSubtype($subtype)
+        {
+        }
+        /**
+         * @return self::SUBTYPE_*
+         */
+        public function getSubtype()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::SUBTYPE_*
+     * Runtime class alias of \Google\Service\DriveActivity\Suggestion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSubtype()
+    class Google_Service_DriveActivity_Suggestion extends \Google\Service\DriveActivity\Suggestion
     {
     }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SearchConsole;
-
-class InspectUrlIndexResponse extends \Google\Model
-{
-    protected $inspectionResultType = UrlInspectionResult::class;
-    protected $inspectionResultDataType = '';
-    /**
-     * URL inspection results.
-     *
-     * @param UrlInspectionResult $inspectionResult
-     */
-    public function setInspectionResult(UrlInspectionResult $inspectionResult)
+namespace Google\Service\SearchConsole {
+    class InspectUrlIndexResponse extends \Google\Model
     {
+        protected $inspectionResultType = UrlInspectionResult::class;
+        protected $inspectionResultDataType = '';
+        /**
+         * URL inspection results.
+         *
+         * @param UrlInspectionResult $inspectionResult
+         */
+        public function setInspectionResult(UrlInspectionResult $inspectionResult)
+        {
+        }
+        /**
+         * @return UrlInspectionResult
+         */
+        public function getInspectionResult()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return UrlInspectionResult
+     * Runtime class alias of \Google\Service\SearchConsole\InspectUrlIndexResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInspectionResult()
+    class Google_Service_SearchConsole_InspectUrlIndexResponse extends \Google\Service\SearchConsole\InspectUrlIndexResponse
     {
     }
 }

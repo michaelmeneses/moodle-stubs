@@ -21,31 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Logging\Resource;
-
-/**
- * The "buckets" collection of methods.
- * Typical usage is:
- *  <code>
- *   $loggingService = new Google\Service\Logging(...);
- *   $buckets = $loggingService->buckets;
- *  </code>
- */
-class BillingAccountsBuckets extends \Google\Service\Resource
-{
+namespace Google\Service\Logging\Resource {
+    use Google\Service\Logging\LogBucket;
     /**
-     * Gets a log bucket. (buckets.get)
-     *
-     * @param string $name Required. The resource name of the bucket:
-     * "projects/[PROJECT_ID]/locations/[LOCATION_ID]/buckets/[BUCKET_ID]"
-     * "organizations/[ORGANIZATION_ID]/locations/[LOCATION_ID]/buckets/[BUCKET_ID]"
-     * "billingAccounts/[BILLING_ACCOUNT_ID]/locations/[LOCATION_ID]/buckets/[BUCKET
-     * _ID]" "folders/[FOLDER_ID]/locations/[LOCATION_ID]/buckets/[BUCKET_ID]" For
-     * example:"projects/my-project/locations/global/buckets/my-bucket"
-     * @param array $optParams Optional parameters.
-     * @return LogBucket
+     * The "buckets" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $loggingService = new Google\Service\Logging(...);
+     *   $buckets = $loggingService->buckets;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class BillingAccountsBuckets extends \Google\Service\Resource
+    {
+        /**
+         * Gets a log bucket. (buckets.get)
+         *
+         * @param string $name Required. The resource name of the bucket:
+         * "projects/[PROJECT_ID]/locations/[LOCATION_ID]/buckets/[BUCKET_ID]"
+         * "organizations/[ORGANIZATION_ID]/locations/[LOCATION_ID]/buckets/[BUCKET_ID]"
+         * "billingAccounts/[BILLING_ACCOUNT_ID]/locations/[LOCATION_ID]/buckets/[BUCKET
+         * _ID]" "folders/[FOLDER_ID]/locations/[LOCATION_ID]/buckets/[BUCKET_ID]" For
+         * example:"projects/my-project/locations/global/buckets/my-bucket"
+         * @param array $optParams Optional parameters.
+         * @return LogBucket
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Logging\Resource\BillingAccountsBuckets registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Logging_Resource_BillingAccountsBuckets extends \Google\Service\Logging\Resource\BillingAccountsBuckets
     {
     }
 }

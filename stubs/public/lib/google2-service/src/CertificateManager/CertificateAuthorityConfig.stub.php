@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CertificateManager;
-
-class CertificateAuthorityConfig extends \Google\Model
-{
-    protected $certificateAuthorityServiceConfigType = CertificateAuthorityServiceConfig::class;
-    protected $certificateAuthorityServiceConfigDataType = '';
-    /**
-     * Defines a CertificateAuthorityServiceConfig.
-     *
-     * @param CertificateAuthorityServiceConfig $certificateAuthorityServiceConfig
-     */
-    public function setCertificateAuthorityServiceConfig(CertificateAuthorityServiceConfig $certificateAuthorityServiceConfig)
+namespace Google\Service\CertificateManager {
+    class CertificateAuthorityConfig extends \Google\Model
     {
+        protected $certificateAuthorityServiceConfigType = CertificateAuthorityServiceConfig::class;
+        protected $certificateAuthorityServiceConfigDataType = '';
+        /**
+         * Defines a CertificateAuthorityServiceConfig.
+         *
+         * @param CertificateAuthorityServiceConfig $certificateAuthorityServiceConfig
+         */
+        public function setCertificateAuthorityServiceConfig(CertificateAuthorityServiceConfig $certificateAuthorityServiceConfig)
+        {
+        }
+        /**
+         * @return CertificateAuthorityServiceConfig
+         */
+        public function getCertificateAuthorityServiceConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CertificateAuthorityServiceConfig
+     * Runtime class alias of \Google\Service\CertificateManager\CertificateAuthorityConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCertificateAuthorityServiceConfig()
+    class Google_Service_CertificateManager_CertificateAuthorityConfig extends \Google\Service\CertificateManager\CertificateAuthorityConfig
     {
     }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceManagement;
-
-class UndeleteServiceResponse extends \Google\Model
-{
-    protected $serviceType = ManagedService::class;
-    protected $serviceDataType = '';
-    /**
-     * Revived service resource.
-     *
-     * @param ManagedService $service
-     */
-    public function setService(ManagedService $service)
+namespace Google\Service\ServiceManagement {
+    class UndeleteServiceResponse extends \Google\Model
     {
+        protected $serviceType = ManagedService::class;
+        protected $serviceDataType = '';
+        /**
+         * Revived service resource.
+         *
+         * @param ManagedService $service
+         */
+        public function setService(ManagedService $service)
+        {
+        }
+        /**
+         * @return ManagedService
+         */
+        public function getService()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ManagedService
+     * Runtime class alias of \Google\Service\ServiceManagement\UndeleteServiceResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getService()
+    class Google_Service_ServiceManagement_UndeleteServiceResponse extends \Google\Service\ServiceManagement\UndeleteServiceResponse
     {
     }
 }

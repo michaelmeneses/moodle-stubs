@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OnDemandScanning;
-
-class GrafeasV1SlsaProvenance02SlsaMetadata extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $buildFinishedOn;
-    /**
-     * @var string
-     */
-    public $buildInvocationId;
-    /**
-     * @var string
-     */
-    public $buildStartedOn;
-    protected $completenessType = GrafeasV1SlsaProvenance02SlsaCompleteness::class;
-    protected $completenessDataType = '';
-    /**
-     * @var bool
-     */
-    public $reproducible;
-    /**
-     * @param string
-     */
-    public function setBuildFinishedOn($buildFinishedOn)
+namespace Google\Service\OnDemandScanning {
+    class GrafeasV1SlsaProvenance02SlsaMetadata extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $buildFinishedOn;
+        /**
+         * @var string
+         */
+        public $buildInvocationId;
+        /**
+         * @var string
+         */
+        public $buildStartedOn;
+        protected $completenessType = GrafeasV1SlsaProvenance02SlsaCompleteness::class;
+        protected $completenessDataType = '';
+        /**
+         * @var bool
+         */
+        public $reproducible;
+        /**
+         * @param string
+         */
+        public function setBuildFinishedOn($buildFinishedOn)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBuildFinishedOn()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setBuildInvocationId($buildInvocationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBuildInvocationId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setBuildStartedOn($buildStartedOn)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBuildStartedOn()
+        {
+        }
+        /**
+         * @param GrafeasV1SlsaProvenance02SlsaCompleteness
+         */
+        public function setCompleteness(GrafeasV1SlsaProvenance02SlsaCompleteness $completeness)
+        {
+        }
+        /**
+         * @return GrafeasV1SlsaProvenance02SlsaCompleteness
+         */
+        public function getCompleteness()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setReproducible($reproducible)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getReproducible()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OnDemandScanning\GrafeasV1SlsaProvenance02SlsaMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBuildFinishedOn()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setBuildInvocationId($buildInvocationId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBuildInvocationId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setBuildStartedOn($buildStartedOn)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBuildStartedOn()
-    {
-    }
-    /**
-     * @param GrafeasV1SlsaProvenance02SlsaCompleteness
-     */
-    public function setCompleteness(GrafeasV1SlsaProvenance02SlsaCompleteness $completeness)
-    {
-    }
-    /**
-     * @return GrafeasV1SlsaProvenance02SlsaCompleteness
-     */
-    public function getCompleteness()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setReproducible($reproducible)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getReproducible()
+    class Google_Service_OnDemandScanning_GrafeasV1SlsaProvenance02SlsaMetadata extends \Google\Service\OnDemandScanning\GrafeasV1SlsaProvenance02SlsaMetadata
     {
     }
 }

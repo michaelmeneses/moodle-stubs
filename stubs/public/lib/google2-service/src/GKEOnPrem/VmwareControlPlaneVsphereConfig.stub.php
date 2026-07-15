@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class VmwareControlPlaneVsphereConfig extends \Google\Model
-{
-    /**
-     * The Vsphere datastore used by the control plane Node.
-     *
-     * @var string
-     */
-    public $datastore;
-    /**
-     * The Vsphere storage policy used by the control plane Node.
-     *
-     * @var string
-     */
-    public $storagePolicyName;
-    /**
-     * The Vsphere datastore used by the control plane Node.
-     *
-     * @param string $datastore
-     */
-    public function setDatastore($datastore)
+namespace Google\Service\GKEOnPrem {
+    class VmwareControlPlaneVsphereConfig extends \Google\Model
     {
+        /**
+         * The Vsphere datastore used by the control plane Node.
+         *
+         * @var string
+         */
+        public $datastore;
+        /**
+         * The Vsphere storage policy used by the control plane Node.
+         *
+         * @var string
+         */
+        public $storagePolicyName;
+        /**
+         * The Vsphere datastore used by the control plane Node.
+         *
+         * @param string $datastore
+         */
+        public function setDatastore($datastore)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatastore()
+        {
+        }
+        /**
+         * The Vsphere storage policy used by the control plane Node.
+         *
+         * @param string $storagePolicyName
+         */
+        public function setStoragePolicyName($storagePolicyName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStoragePolicyName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEOnPrem\VmwareControlPlaneVsphereConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatastore()
-    {
-    }
-    /**
-     * The Vsphere storage policy used by the control plane Node.
-     *
-     * @param string $storagePolicyName
-     */
-    public function setStoragePolicyName($storagePolicyName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStoragePolicyName()
+    class Google_Service_GKEOnPrem_VmwareControlPlaneVsphereConfig extends \Google\Service\GKEOnPrem\VmwareControlPlaneVsphereConfig
     {
     }
 }

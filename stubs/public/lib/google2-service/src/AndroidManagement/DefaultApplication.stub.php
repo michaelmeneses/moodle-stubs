@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class DefaultApplication extends \Google\Model
-{
-    /**
-     * Required. The package name that should be set as the default application.
-     * The policy is rejected if the package name is invalid.
-     *
-     * @var string
-     */
-    public $packageName;
-    /**
-     * Required. The package name that should be set as the default application.
-     * The policy is rejected if the package name is invalid.
-     *
-     * @param string $packageName
-     */
-    public function setPackageName($packageName)
+namespace Google\Service\AndroidManagement {
+    class DefaultApplication extends \Google\Model
     {
+        /**
+         * Required. The package name that should be set as the default application.
+         * The policy is rejected if the package name is invalid.
+         *
+         * @var string
+         */
+        public $packageName;
+        /**
+         * Required. The package name that should be set as the default application.
+         * The policy is rejected if the package name is invalid.
+         *
+         * @param string $packageName
+         */
+        public function setPackageName($packageName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPackageName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidManagement\DefaultApplication registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPackageName()
+    class Google_Service_AndroidManagement_DefaultApplication extends \Google\Service\AndroidManagement\DefaultApplication
     {
     }
 }

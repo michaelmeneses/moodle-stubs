@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class ExternalSyncSelectedObject extends \Google\Model
-{
-    /**
-     * The name of the database that Cloud SQL migrates.
-     *
-     * @var string
-     */
-    public $database;
-    /**
-     * The name of the database that Cloud SQL migrates.
-     *
-     * @param string $database
-     */
-    public function setDatabase($database)
+namespace Google\Service\SQLAdmin {
+    class ExternalSyncSelectedObject extends \Google\Model
     {
+        /**
+         * The name of the database that Cloud SQL migrates.
+         *
+         * @var string
+         */
+        public $database;
+        /**
+         * The name of the database that Cloud SQL migrates.
+         *
+         * @param string $database
+         */
+        public function setDatabase($database)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatabase()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SQLAdmin\ExternalSyncSelectedObject registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatabase()
+    class Google_Service_SQLAdmin_ExternalSyncSelectedObject extends \Google\Service\SQLAdmin\ExternalSyncSelectedObject
     {
     }
 }

@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedCardSection extends \Google\Collection
-{
-    protected $collection_key = 'widgets';
-    /**
-     * @var bool
-     */
-    public $collapsible;
-    /**
-     * @var string
-     */
-    public $header;
-    /**
-     * @var int
-     */
-    public $uncollapsibleWidgetsCount;
-    protected $widgetsType = AppsDynamiteSharedWidget::class;
-    protected $widgetsDataType = 'array';
-    public $widgets;
-    /**
-     * @param bool
-     */
-    public function setCollapsible($collapsible)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedCardSection extends \Google\Collection
     {
+        protected $collection_key = 'widgets';
+        /**
+         * @var bool
+         */
+        public $collapsible;
+        /**
+         * @var string
+         */
+        public $header;
+        /**
+         * @var int
+         */
+        public $uncollapsibleWidgetsCount;
+        protected $widgetsType = AppsDynamiteSharedWidget::class;
+        protected $widgetsDataType = 'array';
+        public $widgets;
+        /**
+         * @param bool
+         */
+        public function setCollapsible($collapsible)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCollapsible()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setHeader($header)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHeader()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setUncollapsibleWidgetsCount($uncollapsibleWidgetsCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getUncollapsibleWidgetsCount()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedWidget[]
+         */
+        public function setWidgets($widgets)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedWidget[]
+         */
+        public function getWidgets()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedCardSection registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCollapsible()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setHeader($header)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHeader()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setUncollapsibleWidgetsCount($uncollapsibleWidgetsCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getUncollapsibleWidgetsCount()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedWidget[]
-     */
-    public function setWidgets($widgets)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedWidget[]
-     */
-    public function getWidgets()
+    class Google_Service_CloudSearch_AppsDynamiteSharedCardSection extends \Google\Service\CloudSearch\AppsDynamiteSharedCardSection
     {
     }
 }

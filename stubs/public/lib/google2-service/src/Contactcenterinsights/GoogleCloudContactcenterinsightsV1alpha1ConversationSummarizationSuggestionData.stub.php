@@ -21,158 +21,167 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1alpha1ConversationSummarizationSuggestionData extends \Google\Model
-{
-    /**
-     * The name of the answer record. Format:
-     * projects/{project}/locations/{location}/answerRecords/{answer_record}
-     *
-     * @var string
-     */
-    public $answerRecord;
-    /**
-     * The confidence score of the summarization.
-     *
-     * @var float
-     */
-    public $confidence;
-    /**
-     * The name of the model that generates this summary. Format: projects/{projec
-     * t}/locations/{location}/conversationModels/{conversation_model}
-     *
-     * @var string
-     */
-    public $conversationModel;
-    /**
-     * Agent Assist generator ID.
-     *
-     * @var string
-     */
-    public $generatorId;
-    /**
-     * A map that contains metadata about the summarization and the document from
-     * which it originates.
-     *
-     * @var string[]
-     */
-    public $metadata;
-    /**
-     * The summarization content that is concatenated into one string.
-     *
-     * @var string
-     */
-    public $text;
-    /**
-     * The summarization content that is divided into sections. The key is the
-     * section's name and the value is the section's content. There is no specific
-     * format for the key or value.
-     *
-     * @var string[]
-     */
-    public $textSections;
-    /**
-     * The name of the answer record. Format:
-     * projects/{project}/locations/{location}/answerRecords/{answer_record}
-     *
-     * @param string $answerRecord
-     */
-    public function setAnswerRecord($answerRecord)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1alpha1ConversationSummarizationSuggestionData extends \Google\Model
     {
+        /**
+         * The name of the answer record. Format:
+         * projects/{project}/locations/{location}/answerRecords/{answer_record}
+         *
+         * @var string
+         */
+        public $answerRecord;
+        /**
+         * The confidence score of the summarization.
+         *
+         * @var float
+         */
+        public $confidence;
+        /**
+         * The name of the model that generates this summary. Format: projects/{projec
+         * t}/locations/{location}/conversationModels/{conversation_model}
+         *
+         * @var string
+         */
+        public $conversationModel;
+        /**
+         * Agent Assist generator ID.
+         *
+         * @var string
+         */
+        public $generatorId;
+        /**
+         * A map that contains metadata about the summarization and the document from
+         * which it originates.
+         *
+         * @var string[]
+         */
+        public $metadata;
+        /**
+         * The summarization content that is concatenated into one string.
+         *
+         * @var string
+         */
+        public $text;
+        /**
+         * The summarization content that is divided into sections. The key is the
+         * section's name and the value is the section's content. There is no specific
+         * format for the key or value.
+         *
+         * @var string[]
+         */
+        public $textSections;
+        /**
+         * The name of the answer record. Format:
+         * projects/{project}/locations/{location}/answerRecords/{answer_record}
+         *
+         * @param string $answerRecord
+         */
+        public function setAnswerRecord($answerRecord)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnswerRecord()
+        {
+        }
+        /**
+         * The confidence score of the summarization.
+         *
+         * @param float $confidence
+         */
+        public function setConfidence($confidence)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getConfidence()
+        {
+        }
+        /**
+         * The name of the model that generates this summary. Format: projects/{projec
+         * t}/locations/{location}/conversationModels/{conversation_model}
+         *
+         * @param string $conversationModel
+         */
+        public function setConversationModel($conversationModel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConversationModel()
+        {
+        }
+        /**
+         * Agent Assist generator ID.
+         *
+         * @param string $generatorId
+         */
+        public function setGeneratorId($generatorId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGeneratorId()
+        {
+        }
+        /**
+         * A map that contains metadata about the summarization and the document from
+         * which it originates.
+         *
+         * @param string[] $metadata
+         */
+        public function setMetadata($metadata)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * The summarization content that is concatenated into one string.
+         *
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
+        /**
+         * The summarization content that is divided into sections. The key is the
+         * section's name and the value is the section's content. There is no specific
+         * format for the key or value.
+         *
+         * @param string[] $textSections
+         */
+        public function setTextSections($textSections)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTextSections()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1ConversationSummarizationSuggestionData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnswerRecord()
-    {
-    }
-    /**
-     * The confidence score of the summarization.
-     *
-     * @param float $confidence
-     */
-    public function setConfidence($confidence)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getConfidence()
-    {
-    }
-    /**
-     * The name of the model that generates this summary. Format: projects/{projec
-     * t}/locations/{location}/conversationModels/{conversation_model}
-     *
-     * @param string $conversationModel
-     */
-    public function setConversationModel($conversationModel)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getConversationModel()
-    {
-    }
-    /**
-     * Agent Assist generator ID.
-     *
-     * @param string $generatorId
-     */
-    public function setGeneratorId($generatorId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGeneratorId()
-    {
-    }
-    /**
-     * A map that contains metadata about the summarization and the document from
-     * which it originates.
-     *
-     * @param string[] $metadata
-     */
-    public function setMetadata($metadata)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * The summarization content that is concatenated into one string.
-     *
-     * @param string $text
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
-    {
-    }
-    /**
-     * The summarization content that is divided into sections. The key is the
-     * section's name and the value is the section's content. There is no specific
-     * format for the key or value.
-     *
-     * @param string[] $textSections
-     */
-    public function setTextSections($textSections)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTextSections()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1alpha1ConversationSummarizationSuggestionData extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1ConversationSummarizationSuggestionData
     {
     }
 }

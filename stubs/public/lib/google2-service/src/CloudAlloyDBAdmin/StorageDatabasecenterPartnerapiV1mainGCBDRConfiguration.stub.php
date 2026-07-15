@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAlloyDBAdmin;
-
-class StorageDatabasecenterPartnerapiV1mainGCBDRConfiguration extends \Google\Model
-{
-    /**
-     * Whether the resource is managed by GCBDR.
-     *
-     * @var bool
-     */
-    public $gcbdrManaged;
-    /**
-     * Whether the resource is managed by GCBDR.
-     *
-     * @param bool $gcbdrManaged
-     */
-    public function setGcbdrManaged($gcbdrManaged)
+namespace Google\Service\CloudAlloyDBAdmin {
+    class StorageDatabasecenterPartnerapiV1mainGCBDRConfiguration extends \Google\Model
     {
+        /**
+         * Whether the resource is managed by GCBDR.
+         *
+         * @var bool
+         */
+        public $gcbdrManaged;
+        /**
+         * Whether the resource is managed by GCBDR.
+         *
+         * @param bool $gcbdrManaged
+         */
+        public function setGcbdrManaged($gcbdrManaged)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getGcbdrManaged()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudAlloyDBAdmin\StorageDatabasecenterPartnerapiV1mainGCBDRConfiguration registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGcbdrManaged()
+    class Google_Service_CloudAlloyDBAdmin_StorageDatabasecenterPartnerapiV1mainGCBDRConfiguration extends \Google\Service\CloudAlloyDBAdmin\StorageDatabasecenterPartnerapiV1mainGCBDRConfiguration
     {
     }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1ServiceSpec extends \Google\Model
-{
-    protected $cloudBigtableInstanceSpecType = GoogleCloudDatacatalogV1CloudBigtableInstanceSpec::class;
-    protected $cloudBigtableInstanceSpecDataType = '';
-    /**
-     * Specification that applies to Instance entries of `CLOUD_BIGTABLE` system.
-     *
-     * @param GoogleCloudDatacatalogV1CloudBigtableInstanceSpec $cloudBigtableInstanceSpec
-     */
-    public function setCloudBigtableInstanceSpec(GoogleCloudDatacatalogV1CloudBigtableInstanceSpec $cloudBigtableInstanceSpec)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1ServiceSpec extends \Google\Model
     {
+        protected $cloudBigtableInstanceSpecType = GoogleCloudDatacatalogV1CloudBigtableInstanceSpec::class;
+        protected $cloudBigtableInstanceSpecDataType = '';
+        /**
+         * Specification that applies to Instance entries of `CLOUD_BIGTABLE` system.
+         *
+         * @param GoogleCloudDatacatalogV1CloudBigtableInstanceSpec $cloudBigtableInstanceSpec
+         */
+        public function setCloudBigtableInstanceSpec(GoogleCloudDatacatalogV1CloudBigtableInstanceSpec $cloudBigtableInstanceSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1CloudBigtableInstanceSpec
+         */
+        public function getCloudBigtableInstanceSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatacatalogV1CloudBigtableInstanceSpec
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1ServiceSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCloudBigtableInstanceSpec()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1ServiceSpec extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1ServiceSpec
     {
     }
 }

@@ -21,33 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class RegionGeoTargetArea extends \Google\Collection
-{
-    protected $collection_key = 'geotargetCriteriaIds';
-    /**
-     * Required. A non-empty list of [location
-     * IDs](https://developers.google.com/adwords/api/docs/appendix/geotargeting).
-     * They must all be of the same location type (e.g., state).
-     *
-     * @var string[]
-     */
-    public $geotargetCriteriaIds;
-    /**
-     * Required. A non-empty list of [location
-     * IDs](https://developers.google.com/adwords/api/docs/appendix/geotargeting).
-     * They must all be of the same location type (e.g., state).
-     *
-     * @param string[] $geotargetCriteriaIds
-     */
-    public function setGeotargetCriteriaIds($geotargetCriteriaIds)
+namespace Google\Service\ShoppingContent {
+    class RegionGeoTargetArea extends \Google\Collection
     {
+        protected $collection_key = 'geotargetCriteriaIds';
+        /**
+         * Required. A non-empty list of [location
+         * IDs](https://developers.google.com/adwords/api/docs/appendix/geotargeting).
+         * They must all be of the same location type (e.g., state).
+         *
+         * @var string[]
+         */
+        public $geotargetCriteriaIds;
+        /**
+         * Required. A non-empty list of [location
+         * IDs](https://developers.google.com/adwords/api/docs/appendix/geotargeting).
+         * They must all be of the same location type (e.g., state).
+         *
+         * @param string[] $geotargetCriteriaIds
+         */
+        public function setGeotargetCriteriaIds($geotargetCriteriaIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getGeotargetCriteriaIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\ShoppingContent\RegionGeoTargetArea registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGeotargetCriteriaIds()
+    class Google_Service_ShoppingContent_RegionGeoTargetArea extends \Google\Service\ShoppingContent\RegionGeoTargetArea
     {
     }
 }

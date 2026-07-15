@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigQueryConnectionService;
-
-class ConnectionCredential extends \Google\Model
-{
-    /**
-     * @var CloudSqlCredential
-     */
-    public $cloudSql;
-    protected $cloudSqlType = CloudSqlCredential::class;
-    protected $cloudSqlDataType = '';
-    /**
-     * @param CloudSqlCredential
-     */
-    public function setCloudSql(CloudSqlCredential $cloudSql)
+namespace Google\Service\BigQueryConnectionService {
+    class ConnectionCredential extends \Google\Model
     {
+        /**
+         * @var CloudSqlCredential
+         */
+        public $cloudSql;
+        protected $cloudSqlType = CloudSqlCredential::class;
+        protected $cloudSqlDataType = '';
+        /**
+         * @param CloudSqlCredential
+         */
+        public function setCloudSql(CloudSqlCredential $cloudSql)
+        {
+        }
+        /**
+         * @return CloudSqlCredential
+         */
+        public function getCloudSql()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CloudSqlCredential
+     * Runtime class alias of \Google\Service\BigQueryConnectionService\ConnectionCredential registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCloudSql()
+    class Google_Service_BigQueryConnectionService_ConnectionCredential extends \Google\Service\BigQueryConnectionService\ConnectionCredential
     {
     }
 }

@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Css;
-
-class Price extends \Google\Model
-{
-    /**
-     * The price represented as a number in micros (1 million micros is an
-     * equivalent to one's currency standard unit, for example, 1 USD = 1000000
-     * micros).
-     *
-     * @var string
-     */
-    public $amountMicros;
-    /**
-     * The currency of the price using three-letter acronyms according to [ISO
-     * 4217](http://en.wikipedia.org/wiki/ISO_4217).
-     *
-     * @var string
-     */
-    public $currencyCode;
-    /**
-     * The price represented as a number in micros (1 million micros is an
-     * equivalent to one's currency standard unit, for example, 1 USD = 1000000
-     * micros).
-     *
-     * @param string $amountMicros
-     */
-    public function setAmountMicros($amountMicros)
+namespace Google\Service\Css {
+    class Price extends \Google\Model
     {
+        /**
+         * The price represented as a number in micros (1 million micros is an
+         * equivalent to one's currency standard unit, for example, 1 USD = 1000000
+         * micros).
+         *
+         * @var string
+         */
+        public $amountMicros;
+        /**
+         * The currency of the price using three-letter acronyms according to [ISO
+         * 4217](http://en.wikipedia.org/wiki/ISO_4217).
+         *
+         * @var string
+         */
+        public $currencyCode;
+        /**
+         * The price represented as a number in micros (1 million micros is an
+         * equivalent to one's currency standard unit, for example, 1 USD = 1000000
+         * micros).
+         *
+         * @param string $amountMicros
+         */
+        public function setAmountMicros($amountMicros)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAmountMicros()
+        {
+        }
+        /**
+         * The currency of the price using three-letter acronyms according to [ISO
+         * 4217](http://en.wikipedia.org/wiki/ISO_4217).
+         *
+         * @param string $currencyCode
+         */
+        public function setCurrencyCode($currencyCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCurrencyCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Css\Price registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAmountMicros()
-    {
-    }
-    /**
-     * The currency of the price using three-letter acronyms according to [ISO
-     * 4217](http://en.wikipedia.org/wiki/ISO_4217).
-     *
-     * @param string $currencyCode
-     */
-    public function setCurrencyCode($currencyCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCurrencyCode()
+    class Google_Service_Css_Price extends \Google\Service\Css\Price
     {
     }
 }

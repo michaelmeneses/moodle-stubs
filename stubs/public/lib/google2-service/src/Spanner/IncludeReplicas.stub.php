@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class IncludeReplicas extends \Google\Collection
-{
-    protected $collection_key = 'replicaSelections';
-    /**
-     * If `true`, Spanner doesn't route requests to a replica outside the
-     * <`include_replicas` list when all of the specified replicas are unavailable
-     * or unhealthy. Default value is `false`.
-     *
-     * @var bool
-     */
-    public $autoFailoverDisabled;
-    protected $replicaSelectionsType = ReplicaSelection::class;
-    protected $replicaSelectionsDataType = 'array';
-    /**
-     * If `true`, Spanner doesn't route requests to a replica outside the
-     * <`include_replicas` list when all of the specified replicas are unavailable
-     * or unhealthy. Default value is `false`.
-     *
-     * @param bool $autoFailoverDisabled
-     */
-    public function setAutoFailoverDisabled($autoFailoverDisabled)
+namespace Google\Service\Spanner {
+    class IncludeReplicas extends \Google\Collection
     {
+        protected $collection_key = 'replicaSelections';
+        /**
+         * If `true`, Spanner doesn't route requests to a replica outside the
+         * <`include_replicas` list when all of the specified replicas are unavailable
+         * or unhealthy. Default value is `false`.
+         *
+         * @var bool
+         */
+        public $autoFailoverDisabled;
+        protected $replicaSelectionsType = ReplicaSelection::class;
+        protected $replicaSelectionsDataType = 'array';
+        /**
+         * If `true`, Spanner doesn't route requests to a replica outside the
+         * <`include_replicas` list when all of the specified replicas are unavailable
+         * or unhealthy. Default value is `false`.
+         *
+         * @param bool $autoFailoverDisabled
+         */
+        public function setAutoFailoverDisabled($autoFailoverDisabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAutoFailoverDisabled()
+        {
+        }
+        /**
+         * The directed read replica selector.
+         *
+         * @param ReplicaSelection[] $replicaSelections
+         */
+        public function setReplicaSelections($replicaSelections)
+        {
+        }
+        /**
+         * @return ReplicaSelection[]
+         */
+        public function getReplicaSelections()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Spanner\IncludeReplicas registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAutoFailoverDisabled()
-    {
-    }
-    /**
-     * The directed read replica selector.
-     *
-     * @param ReplicaSelection[] $replicaSelections
-     */
-    public function setReplicaSelections($replicaSelections)
-    {
-    }
-    /**
-     * @return ReplicaSelection[]
-     */
-    public function getReplicaSelections()
+    class Google_Service_Spanner_IncludeReplicas extends \Google\Service\Spanner\IncludeReplicas
     {
     }
 }

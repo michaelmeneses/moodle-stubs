@@ -21,107 +21,125 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement\Resource;
-
-/**
- * The "certificateProvisioningProcesses" collection of methods.
- * Typical usage is:
- *  <code>
- *   $chromemanagementService = new Google\Service\ChromeManagement(...);
- *   $certificateProvisioningProcesses = $chromemanagementService->customers_certificateProvisioningProcesses;
- *  </code>
- */
-class CustomersCertificateProvisioningProcesses extends \Google\Service\Resource
-{
+namespace Google\Service\ChromeManagement\Resource {
+    use Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1CertificateProvisioningProcess;
+    use Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1ClaimCertificateProvisioningProcessRequest;
+    use Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1ClaimCertificateProvisioningProcessResponse;
+    use Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1SetFailureRequest;
+    use Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1SetFailureResponse;
+    use Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1SignDataRequest;
+    use Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1UploadCertificateRequest;
+    use Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1UploadCertificateResponse;
+    use Google\Service\ChromeManagement\GoogleLongrunningOperation;
     /**
-     * Claims a certificate provisioning process. For each certificate provisioning
-     * process, this operation can succeed only for one `caller_instance_id`.
-     * (certificateProvisioningProcesses.claim)
-     *
-     * @param string $name Required. Resource name of the
-     * `CertificateProvisioningProcess` to claim. The name pattern is given as `cust
-     * omers/{customer}/certificateProvisioningProcesses/{certificate_provisioning_p
-     * rocess}` with `{customer}` being the obfuscated customer id and
-     * `{certificate_provisioning_process}` being the certificate provisioning
-     * process id.
-     * @param GoogleChromeManagementVersionsV1ClaimCertificateProvisioningProcessRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleChromeManagementVersionsV1ClaimCertificateProvisioningProcessResponse
-     * @throws \Google\Service\Exception
+     * The "certificateProvisioningProcesses" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $chromemanagementService = new Google\Service\ChromeManagement(...);
+     *   $certificateProvisioningProcesses = $chromemanagementService->customers_certificateProvisioningProcesses;
+     *  </code>
      */
-    public function claim($name, GoogleChromeManagementVersionsV1ClaimCertificateProvisioningProcessRequest $postBody, $optParams = [])
+    class CustomersCertificateProvisioningProcesses extends \Google\Service\Resource
     {
+        /**
+         * Claims a certificate provisioning process. For each certificate provisioning
+         * process, this operation can succeed only for one `caller_instance_id`.
+         * (certificateProvisioningProcesses.claim)
+         *
+         * @param string $name Required. Resource name of the
+         * `CertificateProvisioningProcess` to claim. The name pattern is given as `cust
+         * omers/{customer}/certificateProvisioningProcesses/{certificate_provisioning_p
+         * rocess}` with `{customer}` being the obfuscated customer id and
+         * `{certificate_provisioning_process}` being the certificate provisioning
+         * process id.
+         * @param GoogleChromeManagementVersionsV1ClaimCertificateProvisioningProcessRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleChromeManagementVersionsV1ClaimCertificateProvisioningProcessResponse
+         * @throws \Google\Service\Exception
+         */
+        public function claim($name, GoogleChromeManagementVersionsV1ClaimCertificateProvisioningProcessRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves a certificate provisioning process.
+         * (certificateProvisioningProcesses.get)
+         *
+         * @param string $name Required. Resource name of the
+         * `CertificateProvisioningProcess` to return. The name pattern is given as `cus
+         * tomers/{customer}/certificateProvisioningProcesses/{certificate_provisioning_
+         * process}` with `{customer}` being the obfuscated customer id and
+         * `{certificate_provisioning_process}` being the certificate provisioning
+         * process id.
+         * @param array $optParams Optional parameters.
+         * @return GoogleChromeManagementVersionsV1CertificateProvisioningProcess
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Marks a certificate provisioning process as failed.
+         * (certificateProvisioningProcesses.setFailure)
+         *
+         * @param string $name Required. Resource name of the
+         * `CertificateProvisioningProcess` to return. The name pattern is given as `cus
+         * tomers/{customer}/certificateProvisioningProcesses/{certificate_provisioning_
+         * process}` with `{customer}` being the obfuscated customer id and
+         * `{certificate_provisioning_process}` being the certificate provisioning
+         * process id.
+         * @param GoogleChromeManagementVersionsV1SetFailureRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleChromeManagementVersionsV1SetFailureResponse
+         * @throws \Google\Service\Exception
+         */
+        public function setFailure($name, GoogleChromeManagementVersionsV1SetFailureRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Requests the client that initiated a certificate provisioning process to sign
+         * data. This should only be called after `ClaimCertificateProvisioningProcess`
+         * has been successfully executed. (certificateProvisioningProcesses.signData)
+         *
+         * @param string $name Required. Resource name of the
+         * `CertificateProvisioningProcess` to return. The name pattern is given as `cus
+         * tomers/{customer}/certificateProvisioningProcesses/{certificate_provisioning_
+         * process}` with `{customer}` being the obfuscated customer id and
+         * `{certificate_provisioning_process}` being the certificate provisioning
+         * process id.
+         * @param GoogleChromeManagementVersionsV1SignDataRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function signData($name, GoogleChromeManagementVersionsV1SignDataRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Uploads a successfully issued certificate for a certificate provisioning
+         * process. (certificateProvisioningProcesses.uploadCertificate)
+         *
+         * @param string $name Required. Resource name of the
+         * `CertificateProvisioningProcess` to return. The name pattern is given as `cus
+         * tomers/{customer}/certificateProvisioningProcesses/{certificate_provisioning_
+         * process}` with `{customer}` being the obfuscated customer id and
+         * `{certificate_provisioning_process}` being the certificate provisioning
+         * process id.
+         * @param GoogleChromeManagementVersionsV1UploadCertificateRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleChromeManagementVersionsV1UploadCertificateResponse
+         * @throws \Google\Service\Exception
+         */
+        public function uploadCertificate($name, GoogleChromeManagementVersionsV1UploadCertificateRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Retrieves a certificate provisioning process.
-     * (certificateProvisioningProcesses.get)
-     *
-     * @param string $name Required. Resource name of the
-     * `CertificateProvisioningProcess` to return. The name pattern is given as `cus
-     * tomers/{customer}/certificateProvisioningProcesses/{certificate_provisioning_
-     * process}` with `{customer}` being the obfuscated customer id and
-     * `{certificate_provisioning_process}` being the certificate provisioning
-     * process id.
-     * @param array $optParams Optional parameters.
-     * @return GoogleChromeManagementVersionsV1CertificateProvisioningProcess
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\ChromeManagement\Resource\CustomersCertificateProvisioningProcesses registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Marks a certificate provisioning process as failed.
-     * (certificateProvisioningProcesses.setFailure)
-     *
-     * @param string $name Required. Resource name of the
-     * `CertificateProvisioningProcess` to return. The name pattern is given as `cus
-     * tomers/{customer}/certificateProvisioningProcesses/{certificate_provisioning_
-     * process}` with `{customer}` being the obfuscated customer id and
-     * `{certificate_provisioning_process}` being the certificate provisioning
-     * process id.
-     * @param GoogleChromeManagementVersionsV1SetFailureRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleChromeManagementVersionsV1SetFailureResponse
-     * @throws \Google\Service\Exception
-     */
-    public function setFailure($name, GoogleChromeManagementVersionsV1SetFailureRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Requests the client that initiated a certificate provisioning process to sign
-     * data. This should only be called after `ClaimCertificateProvisioningProcess`
-     * has been successfully executed. (certificateProvisioningProcesses.signData)
-     *
-     * @param string $name Required. Resource name of the
-     * `CertificateProvisioningProcess` to return. The name pattern is given as `cus
-     * tomers/{customer}/certificateProvisioningProcesses/{certificate_provisioning_
-     * process}` with `{customer}` being the obfuscated customer id and
-     * `{certificate_provisioning_process}` being the certificate provisioning
-     * process id.
-     * @param GoogleChromeManagementVersionsV1SignDataRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
-     */
-    public function signData($name, GoogleChromeManagementVersionsV1SignDataRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Uploads a successfully issued certificate for a certificate provisioning
-     * process. (certificateProvisioningProcesses.uploadCertificate)
-     *
-     * @param string $name Required. Resource name of the
-     * `CertificateProvisioningProcess` to return. The name pattern is given as `cus
-     * tomers/{customer}/certificateProvisioningProcesses/{certificate_provisioning_
-     * process}` with `{customer}` being the obfuscated customer id and
-     * `{certificate_provisioning_process}` being the certificate provisioning
-     * process id.
-     * @param GoogleChromeManagementVersionsV1UploadCertificateRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleChromeManagementVersionsV1UploadCertificateResponse
-     * @throws \Google\Service\Exception
-     */
-    public function uploadCertificate($name, GoogleChromeManagementVersionsV1UploadCertificateRequest $postBody, $optParams = [])
+    class Google_Service_ChromeManagement_Resource_CustomersCertificateProvisioningProcesses extends \Google\Service\ChromeManagement\Resource\CustomersCertificateProvisioningProcesses
     {
     }
 }

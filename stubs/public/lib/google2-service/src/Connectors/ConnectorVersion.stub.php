@@ -21,205 +21,214 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors;
-
-class ConnectorVersion extends \Google\Collection
-{
-    protected $collection_key = 'roleGrants';
-    protected $authConfigTemplatesType = AuthConfigTemplate::class;
-    protected $authConfigTemplatesDataType = 'array';
-    protected $configVariableTemplatesType = ConfigVariableTemplate::class;
-    protected $configVariableTemplatesDataType = 'array';
-    /**
-     * @var string
-     */
-    public $createTime;
-    /**
-     * @var string
-     */
-    public $displayName;
-    protected $egressControlConfigType = EgressControlConfig::class;
-    protected $egressControlConfigDataType = '';
-    /**
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * @var string
-     */
-    public $launchStage;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $releaseVersion;
-    protected $roleGrantType = RoleGrant::class;
-    protected $roleGrantDataType = '';
-    protected $roleGrantsType = RoleGrant::class;
-    protected $roleGrantsDataType = 'array';
-    protected $supportedRuntimeFeaturesType = SupportedRuntimeFeatures::class;
-    protected $supportedRuntimeFeaturesDataType = '';
-    /**
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * @param AuthConfigTemplate[]
-     */
-    public function setAuthConfigTemplates($authConfigTemplates)
+namespace Google\Service\Connectors {
+    class ConnectorVersion extends \Google\Collection
     {
+        protected $collection_key = 'roleGrants';
+        protected $authConfigTemplatesType = AuthConfigTemplate::class;
+        protected $authConfigTemplatesDataType = 'array';
+        protected $configVariableTemplatesType = ConfigVariableTemplate::class;
+        protected $configVariableTemplatesDataType = 'array';
+        /**
+         * @var string
+         */
+        public $createTime;
+        /**
+         * @var string
+         */
+        public $displayName;
+        protected $egressControlConfigType = EgressControlConfig::class;
+        protected $egressControlConfigDataType = '';
+        /**
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * @var string
+         */
+        public $launchStage;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $releaseVersion;
+        protected $roleGrantType = RoleGrant::class;
+        protected $roleGrantDataType = '';
+        protected $roleGrantsType = RoleGrant::class;
+        protected $roleGrantsDataType = 'array';
+        protected $supportedRuntimeFeaturesType = SupportedRuntimeFeatures::class;
+        protected $supportedRuntimeFeaturesDataType = '';
+        /**
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * @param AuthConfigTemplate[]
+         */
+        public function setAuthConfigTemplates($authConfigTemplates)
+        {
+        }
+        /**
+         * @return AuthConfigTemplate[]
+         */
+        public function getAuthConfigTemplates()
+        {
+        }
+        /**
+         * @param ConfigVariableTemplate[]
+         */
+        public function setConfigVariableTemplates($configVariableTemplates)
+        {
+        }
+        /**
+         * @return ConfigVariableTemplate[]
+         */
+        public function getConfigVariableTemplates()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * @param EgressControlConfig
+         */
+        public function setEgressControlConfig(EgressControlConfig $egressControlConfig)
+        {
+        }
+        /**
+         * @return EgressControlConfig
+         */
+        public function getEgressControlConfig()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLaunchStage($launchStage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLaunchStage()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReleaseVersion($releaseVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReleaseVersion()
+        {
+        }
+        /**
+         * @param RoleGrant
+         */
+        public function setRoleGrant(RoleGrant $roleGrant)
+        {
+        }
+        /**
+         * @return RoleGrant
+         */
+        public function getRoleGrant()
+        {
+        }
+        /**
+         * @param RoleGrant[]
+         */
+        public function setRoleGrants($roleGrants)
+        {
+        }
+        /**
+         * @return RoleGrant[]
+         */
+        public function getRoleGrants()
+        {
+        }
+        /**
+         * @param SupportedRuntimeFeatures
+         */
+        public function setSupportedRuntimeFeatures(SupportedRuntimeFeatures $supportedRuntimeFeatures)
+        {
+        }
+        /**
+         * @return SupportedRuntimeFeatures
+         */
+        public function getSupportedRuntimeFeatures()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AuthConfigTemplate[]
+     * Runtime class alias of \Google\Service\Connectors\ConnectorVersion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuthConfigTemplates()
-    {
-    }
-    /**
-     * @param ConfigVariableTemplate[]
-     */
-    public function setConfigVariableTemplates($configVariableTemplates)
-    {
-    }
-    /**
-     * @return ConfigVariableTemplate[]
-     */
-    public function getConfigVariableTemplates()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * @param EgressControlConfig
-     */
-    public function setEgressControlConfig(EgressControlConfig $egressControlConfig)
-    {
-    }
-    /**
-     * @return EgressControlConfig
-     */
-    public function getEgressControlConfig()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLaunchStage($launchStage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLaunchStage()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReleaseVersion($releaseVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReleaseVersion()
-    {
-    }
-    /**
-     * @param RoleGrant
-     */
-    public function setRoleGrant(RoleGrant $roleGrant)
-    {
-    }
-    /**
-     * @return RoleGrant
-     */
-    public function getRoleGrant()
-    {
-    }
-    /**
-     * @param RoleGrant[]
-     */
-    public function setRoleGrants($roleGrants)
-    {
-    }
-    /**
-     * @return RoleGrant[]
-     */
-    public function getRoleGrants()
-    {
-    }
-    /**
-     * @param SupportedRuntimeFeatures
-     */
-    public function setSupportedRuntimeFeatures(SupportedRuntimeFeatures $supportedRuntimeFeatures)
-    {
-    }
-    /**
-     * @return SupportedRuntimeFeatures
-     */
-    public function getSupportedRuntimeFeatures()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_Connectors_ConnectorVersion extends \Google\Service\Connectors\ConnectorVersion
     {
     }
 }

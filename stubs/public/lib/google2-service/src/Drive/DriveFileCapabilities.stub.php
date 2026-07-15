@@ -21,997 +21,1006 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Drive;
-
-class DriveFileCapabilities extends \Google\Model
-{
-    /**
-     * Output only. Whether the current user is the pending owner of the file. Not
-     * populated for shared drive files.
-     *
-     * @var bool
-     */
-    public $canAcceptOwnership;
-    /**
-     * Output only. Whether the current user can add children to this folder. This
-     * is always `false` when the item isn't a folder.
-     *
-     * @var bool
-     */
-    public $canAddChildren;
-    /**
-     * Output only. Whether the current user can add a folder from another drive
-     * (different shared drive or My Drive) to this folder. This is `false` when
-     * the item isn't a folder. Only populated for items in shared drives.
-     *
-     * @var bool
-     */
-    public $canAddFolderFromAnotherDrive;
-    /**
-     * Output only. Whether the current user can add a parent for the item without
-     * removing an existing parent in the same request. Not populated for shared
-     * drive files.
-     *
-     * @var bool
-     */
-    public $canAddMyDriveParent;
-    /**
-     * Output only. Whether the current user can change the
-     * `copyRequiresWriterPermission` restriction of this file.
-     *
-     * @var bool
-     */
-    public $canChangeCopyRequiresWriterPermission;
-    /**
-     * Output only. Whether the current user can change the owner or organizer-
-     * applied download restrictions of the file.
-     *
-     * @var bool
-     */
-    public $canChangeItemDownloadRestriction;
-    /**
-     * Output only. Whether the current user can change the
-     * `securityUpdateEnabled` field on link share metadata.
-     *
-     * @var bool
-     */
-    public $canChangeSecurityUpdateEnabled;
-    /**
-     * Deprecated: Output only.
-     *
-     * @deprecated
-     * @var bool
-     */
-    public $canChangeViewersCanCopyContent;
-    /**
-     * Output only. Whether the current user can comment on this file.
-     *
-     * @var bool
-     */
-    public $canComment;
-    /**
-     * Output only. Whether the current user can copy this file. For an item in a
-     * shared drive, whether the current user can copy non-folder descendants of
-     * this item, or this item if it's not a folder.
-     *
-     * @var bool
-     */
-    public $canCopy;
-    /**
-     * Output only. Whether the current user can delete this file.
-     *
-     * @var bool
-     */
-    public $canDelete;
-    /**
-     * Output only. Whether the current user can delete children of this folder.
-     * This is `false` when the item isn't a folder. Only populated for items in
-     * shared drives.
-     *
-     * @var bool
-     */
-    public $canDeleteChildren;
-    /**
-     * Whether a user can disable inherited permissions.
-     *
-     * @var bool
-     */
-    public $canDisableInheritedPermissions;
-    /**
-     * Output only. Whether the current user can download this file.
-     *
-     * @var bool
-     */
-    public $canDownload;
-    /**
-     * Output only. Whether the current user can edit this file. Other factors may
-     * limit the type of changes a user can make to a file. For example, see
-     * `canChangeCopyRequiresWriterPermission` or `canModifyContent`.
-     *
-     * @var bool
-     */
-    public $canEdit;
-    /**
-     * Whether a user can re-enable inherited permissions.
-     *
-     * @var bool
-     */
-    public $canEnableInheritedPermissions;
-    /**
-     * Output only. Whether the current user can list the children of this folder.
-     * This is always `false` when the item isn't a folder.
-     *
-     * @var bool
-     */
-    public $canListChildren;
-    /**
-     * Output only. Whether the current user can modify the content of this file.
-     *
-     * @var bool
-     */
-    public $canModifyContent;
-    /**
-     * Deprecated: Output only. Use one of `canModifyEditorContentRestriction`,
-     * `canModifyOwnerContentRestriction`, or `canRemoveContentRestriction`.
-     *
-     * @deprecated
-     * @var bool
-     */
-    public $canModifyContentRestriction;
-    /**
-     * Output only. Whether the current user can add or modify content
-     * restrictions on the file which are editor restricted.
-     *
-     * @var bool
-     */
-    public $canModifyEditorContentRestriction;
-    /**
-     * Output only. Whether the current user can modify the labels on the file.
-     *
-     * @var bool
-     */
-    public $canModifyLabels;
-    /**
-     * Output only. Whether the current user can add or modify content
-     * restrictions which are owner restricted.
-     *
-     * @var bool
-     */
-    public $canModifyOwnerContentRestriction;
-    /**
-     * Output only. Whether the current user can move children of this folder
-     * outside of the shared drive. This is `false` when the item isn't a folder.
-     * Only populated for items in shared drives.
-     *
-     * @var bool
-     */
-    public $canMoveChildrenOutOfDrive;
-    /**
-     * Deprecated: Output only. Use `canMoveChildrenOutOfDrive` instead.
-     *
-     * @deprecated
-     * @var bool
-     */
-    public $canMoveChildrenOutOfTeamDrive;
-    /**
-     * Output only. Whether the current user can move children of this folder
-     * within this drive. This is `false` when the item isn't a folder. Note that
-     * a request to move the child may still fail depending on the current user's
-     * access to the child and to the destination folder.
-     *
-     * @var bool
-     */
-    public $canMoveChildrenWithinDrive;
-    /**
-     * Deprecated: Output only. Use `canMoveChildrenWithinDrive` instead.
-     *
-     * @deprecated
-     * @var bool
-     */
-    public $canMoveChildrenWithinTeamDrive;
-    /**
-     * Deprecated: Output only. Use `canMoveItemOutOfDrive` instead.
-     *
-     * @deprecated
-     * @var bool
-     */
-    public $canMoveItemIntoTeamDrive;
-    /**
-     * Output only. Whether the current user can move this item outside of this
-     * drive by changing its parent. Note that a request to change the parent of
-     * the item may still fail depending on the new parent that's being added.
-     *
-     * @var bool
-     */
-    public $canMoveItemOutOfDrive;
-    /**
-     * Deprecated: Output only. Use `canMoveItemOutOfDrive` instead.
-     *
-     * @deprecated
-     * @var bool
-     */
-    public $canMoveItemOutOfTeamDrive;
-    /**
-     * Output only. Whether the current user can move this item within this drive.
-     * Note that a request to change the parent of the item may still fail
-     * depending on the new parent that's being added and the parent that is being
-     * removed.
-     *
-     * @var bool
-     */
-    public $canMoveItemWithinDrive;
-    /**
-     * Deprecated: Output only. Use `canMoveItemWithinDrive` instead.
-     *
-     * @deprecated
-     * @var bool
-     */
-    public $canMoveItemWithinTeamDrive;
-    /**
-     * Deprecated: Output only. Use `canMoveItemWithinDrive` or
-     * `canMoveItemOutOfDrive` instead.
-     *
-     * @deprecated
-     * @var bool
-     */
-    public $canMoveTeamDriveItem;
-    /**
-     * Output only. Whether the current user can read the shared drive to which
-     * this file belongs. Only populated for items in shared drives.
-     *
-     * @var bool
-     */
-    public $canReadDrive;
-    /**
-     * Output only. Whether the current user can read the labels on the file.
-     *
-     * @var bool
-     */
-    public $canReadLabels;
-    /**
-     * Output only. Whether the current user can read the revisions resource of
-     * this file. For a shared drive item, whether revisions of non-folder
-     * descendants of this item, or this item if it's not a folder, can be read.
-     *
-     * @var bool
-     */
-    public $canReadRevisions;
-    /**
-     * Deprecated: Output only. Use `canReadDrive` instead.
-     *
-     * @deprecated
-     * @var bool
-     */
-    public $canReadTeamDrive;
-    /**
-     * Output only. Whether the current user can remove children from this folder.
-     * This is always `false` when the item isn't a folder. For a folder in a
-     * shared drive, use `canDeleteChildren` or `canTrashChildren` instead.
-     *
-     * @var bool
-     */
-    public $canRemoveChildren;
-    /**
-     * Output only. Whether there's a content restriction on the file that can be
-     * removed by the current user.
-     *
-     * @var bool
-     */
-    public $canRemoveContentRestriction;
-    /**
-     * Output only. Whether the current user can remove a parent from the item
-     * without adding another parent in the same request. Not populated for shared
-     * drive files.
-     *
-     * @var bool
-     */
-    public $canRemoveMyDriveParent;
-    /**
-     * Output only. Whether the current user can rename this file.
-     *
-     * @var bool
-     */
-    public $canRename;
-    /**
-     * Output only. Whether the current user can modify the sharing settings for
-     * this file.
-     *
-     * @var bool
-     */
-    public $canShare;
-    /**
-     * Output only. Whether the current user can move this file to trash.
-     *
-     * @var bool
-     */
-    public $canTrash;
-    /**
-     * Output only. Whether the current user can trash children of this folder.
-     * This is `false` when the item isn't a folder. Only populated for items in
-     * shared drives.
-     *
-     * @var bool
-     */
-    public $canTrashChildren;
-    /**
-     * Output only. Whether the current user can restore this file from trash.
-     *
-     * @var bool
-     */
-    public $canUntrash;
-    /**
-     * Output only. Whether the current user is the pending owner of the file. Not
-     * populated for shared drive files.
-     *
-     * @param bool $canAcceptOwnership
-     */
-    public function setCanAcceptOwnership($canAcceptOwnership)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanAcceptOwnership()
-    {
-    }
-    /**
-     * Output only. Whether the current user can add children to this folder. This
-     * is always `false` when the item isn't a folder.
-     *
-     * @param bool $canAddChildren
-     */
-    public function setCanAddChildren($canAddChildren)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanAddChildren()
-    {
-    }
-    /**
-     * Output only. Whether the current user can add a folder from another drive
-     * (different shared drive or My Drive) to this folder. This is `false` when
-     * the item isn't a folder. Only populated for items in shared drives.
-     *
-     * @param bool $canAddFolderFromAnotherDrive
-     */
-    public function setCanAddFolderFromAnotherDrive($canAddFolderFromAnotherDrive)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanAddFolderFromAnotherDrive()
-    {
-    }
-    /**
-     * Output only. Whether the current user can add a parent for the item without
-     * removing an existing parent in the same request. Not populated for shared
-     * drive files.
-     *
-     * @param bool $canAddMyDriveParent
-     */
-    public function setCanAddMyDriveParent($canAddMyDriveParent)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanAddMyDriveParent()
-    {
-    }
-    /**
-     * Output only. Whether the current user can change the
-     * `copyRequiresWriterPermission` restriction of this file.
-     *
-     * @param bool $canChangeCopyRequiresWriterPermission
-     */
-    public function setCanChangeCopyRequiresWriterPermission($canChangeCopyRequiresWriterPermission)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanChangeCopyRequiresWriterPermission()
-    {
-    }
-    /**
-     * Output only. Whether the current user can change the owner or organizer-
-     * applied download restrictions of the file.
-     *
-     * @param bool $canChangeItemDownloadRestriction
-     */
-    public function setCanChangeItemDownloadRestriction($canChangeItemDownloadRestriction)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanChangeItemDownloadRestriction()
-    {
-    }
-    /**
-     * Output only. Whether the current user can change the
-     * `securityUpdateEnabled` field on link share metadata.
-     *
-     * @param bool $canChangeSecurityUpdateEnabled
-     */
-    public function setCanChangeSecurityUpdateEnabled($canChangeSecurityUpdateEnabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanChangeSecurityUpdateEnabled()
-    {
-    }
-    /**
-     * Deprecated: Output only.
-     *
-     * @deprecated
-     * @param bool $canChangeViewersCanCopyContent
-     */
-    public function setCanChangeViewersCanCopyContent($canChangeViewersCanCopyContent)
-    {
-    }
-    /**
-     * @deprecated
-     * @return bool
-     */
-    public function getCanChangeViewersCanCopyContent()
-    {
-    }
-    /**
-     * Output only. Whether the current user can comment on this file.
-     *
-     * @param bool $canComment
-     */
-    public function setCanComment($canComment)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanComment()
-    {
-    }
-    /**
-     * Output only. Whether the current user can copy this file. For an item in a
-     * shared drive, whether the current user can copy non-folder descendants of
-     * this item, or this item if it's not a folder.
-     *
-     * @param bool $canCopy
-     */
-    public function setCanCopy($canCopy)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanCopy()
-    {
-    }
-    /**
-     * Output only. Whether the current user can delete this file.
-     *
-     * @param bool $canDelete
-     */
-    public function setCanDelete($canDelete)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanDelete()
-    {
-    }
-    /**
-     * Output only. Whether the current user can delete children of this folder.
-     * This is `false` when the item isn't a folder. Only populated for items in
-     * shared drives.
-     *
-     * @param bool $canDeleteChildren
-     */
-    public function setCanDeleteChildren($canDeleteChildren)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanDeleteChildren()
-    {
-    }
-    /**
-     * Whether a user can disable inherited permissions.
-     *
-     * @param bool $canDisableInheritedPermissions
-     */
-    public function setCanDisableInheritedPermissions($canDisableInheritedPermissions)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanDisableInheritedPermissions()
-    {
-    }
-    /**
-     * Output only. Whether the current user can download this file.
-     *
-     * @param bool $canDownload
-     */
-    public function setCanDownload($canDownload)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanDownload()
-    {
-    }
-    /**
-     * Output only. Whether the current user can edit this file. Other factors may
-     * limit the type of changes a user can make to a file. For example, see
-     * `canChangeCopyRequiresWriterPermission` or `canModifyContent`.
-     *
-     * @param bool $canEdit
-     */
-    public function setCanEdit($canEdit)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanEdit()
-    {
-    }
-    /**
-     * Whether a user can re-enable inherited permissions.
-     *
-     * @param bool $canEnableInheritedPermissions
-     */
-    public function setCanEnableInheritedPermissions($canEnableInheritedPermissions)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanEnableInheritedPermissions()
-    {
-    }
-    /**
-     * Output only. Whether the current user can list the children of this folder.
-     * This is always `false` when the item isn't a folder.
-     *
-     * @param bool $canListChildren
-     */
-    public function setCanListChildren($canListChildren)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanListChildren()
-    {
-    }
-    /**
-     * Output only. Whether the current user can modify the content of this file.
-     *
-     * @param bool $canModifyContent
-     */
-    public function setCanModifyContent($canModifyContent)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanModifyContent()
-    {
-    }
-    /**
-     * Deprecated: Output only. Use one of `canModifyEditorContentRestriction`,
-     * `canModifyOwnerContentRestriction`, or `canRemoveContentRestriction`.
-     *
-     * @deprecated
-     * @param bool $canModifyContentRestriction
-     */
-    public function setCanModifyContentRestriction($canModifyContentRestriction)
-    {
-    }
-    /**
-     * @deprecated
-     * @return bool
-     */
-    public function getCanModifyContentRestriction()
-    {
-    }
-    /**
-     * Output only. Whether the current user can add or modify content
-     * restrictions on the file which are editor restricted.
-     *
-     * @param bool $canModifyEditorContentRestriction
-     */
-    public function setCanModifyEditorContentRestriction($canModifyEditorContentRestriction)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanModifyEditorContentRestriction()
-    {
-    }
-    /**
-     * Output only. Whether the current user can modify the labels on the file.
-     *
-     * @param bool $canModifyLabels
-     */
-    public function setCanModifyLabels($canModifyLabels)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanModifyLabels()
-    {
-    }
-    /**
-     * Output only. Whether the current user can add or modify content
-     * restrictions which are owner restricted.
-     *
-     * @param bool $canModifyOwnerContentRestriction
-     */
-    public function setCanModifyOwnerContentRestriction($canModifyOwnerContentRestriction)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanModifyOwnerContentRestriction()
-    {
-    }
-    /**
-     * Output only. Whether the current user can move children of this folder
-     * outside of the shared drive. This is `false` when the item isn't a folder.
-     * Only populated for items in shared drives.
-     *
-     * @param bool $canMoveChildrenOutOfDrive
-     */
-    public function setCanMoveChildrenOutOfDrive($canMoveChildrenOutOfDrive)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanMoveChildrenOutOfDrive()
-    {
-    }
-    /**
-     * Deprecated: Output only. Use `canMoveChildrenOutOfDrive` instead.
-     *
-     * @deprecated
-     * @param bool $canMoveChildrenOutOfTeamDrive
-     */
-    public function setCanMoveChildrenOutOfTeamDrive($canMoveChildrenOutOfTeamDrive)
-    {
-    }
-    /**
-     * @deprecated
-     * @return bool
-     */
-    public function getCanMoveChildrenOutOfTeamDrive()
-    {
-    }
-    /**
-     * Output only. Whether the current user can move children of this folder
-     * within this drive. This is `false` when the item isn't a folder. Note that
-     * a request to move the child may still fail depending on the current user's
-     * access to the child and to the destination folder.
-     *
-     * @param bool $canMoveChildrenWithinDrive
-     */
-    public function setCanMoveChildrenWithinDrive($canMoveChildrenWithinDrive)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanMoveChildrenWithinDrive()
-    {
-    }
-    /**
-     * Deprecated: Output only. Use `canMoveChildrenWithinDrive` instead.
-     *
-     * @deprecated
-     * @param bool $canMoveChildrenWithinTeamDrive
-     */
-    public function setCanMoveChildrenWithinTeamDrive($canMoveChildrenWithinTeamDrive)
-    {
-    }
-    /**
-     * @deprecated
-     * @return bool
-     */
-    public function getCanMoveChildrenWithinTeamDrive()
-    {
-    }
-    /**
-     * Deprecated: Output only. Use `canMoveItemOutOfDrive` instead.
-     *
-     * @deprecated
-     * @param bool $canMoveItemIntoTeamDrive
-     */
-    public function setCanMoveItemIntoTeamDrive($canMoveItemIntoTeamDrive)
-    {
-    }
-    /**
-     * @deprecated
-     * @return bool
-     */
-    public function getCanMoveItemIntoTeamDrive()
-    {
-    }
-    /**
-     * Output only. Whether the current user can move this item outside of this
-     * drive by changing its parent. Note that a request to change the parent of
-     * the item may still fail depending on the new parent that's being added.
-     *
-     * @param bool $canMoveItemOutOfDrive
-     */
-    public function setCanMoveItemOutOfDrive($canMoveItemOutOfDrive)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanMoveItemOutOfDrive()
-    {
-    }
-    /**
-     * Deprecated: Output only. Use `canMoveItemOutOfDrive` instead.
-     *
-     * @deprecated
-     * @param bool $canMoveItemOutOfTeamDrive
-     */
-    public function setCanMoveItemOutOfTeamDrive($canMoveItemOutOfTeamDrive)
-    {
-    }
-    /**
-     * @deprecated
-     * @return bool
-     */
-    public function getCanMoveItemOutOfTeamDrive()
-    {
-    }
-    /**
-     * Output only. Whether the current user can move this item within this drive.
-     * Note that a request to change the parent of the item may still fail
-     * depending on the new parent that's being added and the parent that is being
-     * removed.
-     *
-     * @param bool $canMoveItemWithinDrive
-     */
-    public function setCanMoveItemWithinDrive($canMoveItemWithinDrive)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanMoveItemWithinDrive()
-    {
-    }
-    /**
-     * Deprecated: Output only. Use `canMoveItemWithinDrive` instead.
-     *
-     * @deprecated
-     * @param bool $canMoveItemWithinTeamDrive
-     */
-    public function setCanMoveItemWithinTeamDrive($canMoveItemWithinTeamDrive)
-    {
-    }
-    /**
-     * @deprecated
-     * @return bool
-     */
-    public function getCanMoveItemWithinTeamDrive()
-    {
-    }
-    /**
-     * Deprecated: Output only. Use `canMoveItemWithinDrive` or
-     * `canMoveItemOutOfDrive` instead.
-     *
-     * @deprecated
-     * @param bool $canMoveTeamDriveItem
-     */
-    public function setCanMoveTeamDriveItem($canMoveTeamDriveItem)
-    {
-    }
-    /**
-     * @deprecated
-     * @return bool
-     */
-    public function getCanMoveTeamDriveItem()
-    {
-    }
-    /**
-     * Output only. Whether the current user can read the shared drive to which
-     * this file belongs. Only populated for items in shared drives.
-     *
-     * @param bool $canReadDrive
-     */
-    public function setCanReadDrive($canReadDrive)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanReadDrive()
-    {
-    }
-    /**
-     * Output only. Whether the current user can read the labels on the file.
-     *
-     * @param bool $canReadLabels
-     */
-    public function setCanReadLabels($canReadLabels)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanReadLabels()
-    {
-    }
-    /**
-     * Output only. Whether the current user can read the revisions resource of
-     * this file. For a shared drive item, whether revisions of non-folder
-     * descendants of this item, or this item if it's not a folder, can be read.
-     *
-     * @param bool $canReadRevisions
-     */
-    public function setCanReadRevisions($canReadRevisions)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanReadRevisions()
-    {
-    }
-    /**
-     * Deprecated: Output only. Use `canReadDrive` instead.
-     *
-     * @deprecated
-     * @param bool $canReadTeamDrive
-     */
-    public function setCanReadTeamDrive($canReadTeamDrive)
-    {
-    }
-    /**
-     * @deprecated
-     * @return bool
-     */
-    public function getCanReadTeamDrive()
-    {
-    }
-    /**
-     * Output only. Whether the current user can remove children from this folder.
-     * This is always `false` when the item isn't a folder. For a folder in a
-     * shared drive, use `canDeleteChildren` or `canTrashChildren` instead.
-     *
-     * @param bool $canRemoveChildren
-     */
-    public function setCanRemoveChildren($canRemoveChildren)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanRemoveChildren()
-    {
-    }
-    /**
-     * Output only. Whether there's a content restriction on the file that can be
-     * removed by the current user.
-     *
-     * @param bool $canRemoveContentRestriction
-     */
-    public function setCanRemoveContentRestriction($canRemoveContentRestriction)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanRemoveContentRestriction()
-    {
-    }
-    /**
-     * Output only. Whether the current user can remove a parent from the item
-     * without adding another parent in the same request. Not populated for shared
-     * drive files.
-     *
-     * @param bool $canRemoveMyDriveParent
-     */
-    public function setCanRemoveMyDriveParent($canRemoveMyDriveParent)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanRemoveMyDriveParent()
-    {
-    }
-    /**
-     * Output only. Whether the current user can rename this file.
-     *
-     * @param bool $canRename
-     */
-    public function setCanRename($canRename)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanRename()
-    {
-    }
-    /**
-     * Output only. Whether the current user can modify the sharing settings for
-     * this file.
-     *
-     * @param bool $canShare
-     */
-    public function setCanShare($canShare)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanShare()
-    {
-    }
-    /**
-     * Output only. Whether the current user can move this file to trash.
-     *
-     * @param bool $canTrash
-     */
-    public function setCanTrash($canTrash)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanTrash()
-    {
-    }
-    /**
-     * Output only. Whether the current user can trash children of this folder.
-     * This is `false` when the item isn't a folder. Only populated for items in
-     * shared drives.
-     *
-     * @param bool $canTrashChildren
-     */
-    public function setCanTrashChildren($canTrashChildren)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanTrashChildren()
-    {
-    }
-    /**
-     * Output only. Whether the current user can restore this file from trash.
-     *
-     * @param bool $canUntrash
-     */
-    public function setCanUntrash($canUntrash)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanUntrash()
+namespace Google\Service\Drive {
+    class DriveFileCapabilities extends \Google\Model
+    {
+        /**
+         * Output only. Whether the current user is the pending owner of the file. Not
+         * populated for shared drive files.
+         *
+         * @var bool
+         */
+        public $canAcceptOwnership;
+        /**
+         * Output only. Whether the current user can add children to this folder. This
+         * is always `false` when the item isn't a folder.
+         *
+         * @var bool
+         */
+        public $canAddChildren;
+        /**
+         * Output only. Whether the current user can add a folder from another drive
+         * (different shared drive or My Drive) to this folder. This is `false` when
+         * the item isn't a folder. Only populated for items in shared drives.
+         *
+         * @var bool
+         */
+        public $canAddFolderFromAnotherDrive;
+        /**
+         * Output only. Whether the current user can add a parent for the item without
+         * removing an existing parent in the same request. Not populated for shared
+         * drive files.
+         *
+         * @var bool
+         */
+        public $canAddMyDriveParent;
+        /**
+         * Output only. Whether the current user can change the
+         * `copyRequiresWriterPermission` restriction of this file.
+         *
+         * @var bool
+         */
+        public $canChangeCopyRequiresWriterPermission;
+        /**
+         * Output only. Whether the current user can change the owner or organizer-
+         * applied download restrictions of the file.
+         *
+         * @var bool
+         */
+        public $canChangeItemDownloadRestriction;
+        /**
+         * Output only. Whether the current user can change the
+         * `securityUpdateEnabled` field on link share metadata.
+         *
+         * @var bool
+         */
+        public $canChangeSecurityUpdateEnabled;
+        /**
+         * Deprecated: Output only.
+         *
+         * @deprecated
+         * @var bool
+         */
+        public $canChangeViewersCanCopyContent;
+        /**
+         * Output only. Whether the current user can comment on this file.
+         *
+         * @var bool
+         */
+        public $canComment;
+        /**
+         * Output only. Whether the current user can copy this file. For an item in a
+         * shared drive, whether the current user can copy non-folder descendants of
+         * this item, or this item if it's not a folder.
+         *
+         * @var bool
+         */
+        public $canCopy;
+        /**
+         * Output only. Whether the current user can delete this file.
+         *
+         * @var bool
+         */
+        public $canDelete;
+        /**
+         * Output only. Whether the current user can delete children of this folder.
+         * This is `false` when the item isn't a folder. Only populated for items in
+         * shared drives.
+         *
+         * @var bool
+         */
+        public $canDeleteChildren;
+        /**
+         * Whether a user can disable inherited permissions.
+         *
+         * @var bool
+         */
+        public $canDisableInheritedPermissions;
+        /**
+         * Output only. Whether the current user can download this file.
+         *
+         * @var bool
+         */
+        public $canDownload;
+        /**
+         * Output only. Whether the current user can edit this file. Other factors may
+         * limit the type of changes a user can make to a file. For example, see
+         * `canChangeCopyRequiresWriterPermission` or `canModifyContent`.
+         *
+         * @var bool
+         */
+        public $canEdit;
+        /**
+         * Whether a user can re-enable inherited permissions.
+         *
+         * @var bool
+         */
+        public $canEnableInheritedPermissions;
+        /**
+         * Output only. Whether the current user can list the children of this folder.
+         * This is always `false` when the item isn't a folder.
+         *
+         * @var bool
+         */
+        public $canListChildren;
+        /**
+         * Output only. Whether the current user can modify the content of this file.
+         *
+         * @var bool
+         */
+        public $canModifyContent;
+        /**
+         * Deprecated: Output only. Use one of `canModifyEditorContentRestriction`,
+         * `canModifyOwnerContentRestriction`, or `canRemoveContentRestriction`.
+         *
+         * @deprecated
+         * @var bool
+         */
+        public $canModifyContentRestriction;
+        /**
+         * Output only. Whether the current user can add or modify content
+         * restrictions on the file which are editor restricted.
+         *
+         * @var bool
+         */
+        public $canModifyEditorContentRestriction;
+        /**
+         * Output only. Whether the current user can modify the labels on the file.
+         *
+         * @var bool
+         */
+        public $canModifyLabels;
+        /**
+         * Output only. Whether the current user can add or modify content
+         * restrictions which are owner restricted.
+         *
+         * @var bool
+         */
+        public $canModifyOwnerContentRestriction;
+        /**
+         * Output only. Whether the current user can move children of this folder
+         * outside of the shared drive. This is `false` when the item isn't a folder.
+         * Only populated for items in shared drives.
+         *
+         * @var bool
+         */
+        public $canMoveChildrenOutOfDrive;
+        /**
+         * Deprecated: Output only. Use `canMoveChildrenOutOfDrive` instead.
+         *
+         * @deprecated
+         * @var bool
+         */
+        public $canMoveChildrenOutOfTeamDrive;
+        /**
+         * Output only. Whether the current user can move children of this folder
+         * within this drive. This is `false` when the item isn't a folder. Note that
+         * a request to move the child may still fail depending on the current user's
+         * access to the child and to the destination folder.
+         *
+         * @var bool
+         */
+        public $canMoveChildrenWithinDrive;
+        /**
+         * Deprecated: Output only. Use `canMoveChildrenWithinDrive` instead.
+         *
+         * @deprecated
+         * @var bool
+         */
+        public $canMoveChildrenWithinTeamDrive;
+        /**
+         * Deprecated: Output only. Use `canMoveItemOutOfDrive` instead.
+         *
+         * @deprecated
+         * @var bool
+         */
+        public $canMoveItemIntoTeamDrive;
+        /**
+         * Output only. Whether the current user can move this item outside of this
+         * drive by changing its parent. Note that a request to change the parent of
+         * the item may still fail depending on the new parent that's being added.
+         *
+         * @var bool
+         */
+        public $canMoveItemOutOfDrive;
+        /**
+         * Deprecated: Output only. Use `canMoveItemOutOfDrive` instead.
+         *
+         * @deprecated
+         * @var bool
+         */
+        public $canMoveItemOutOfTeamDrive;
+        /**
+         * Output only. Whether the current user can move this item within this drive.
+         * Note that a request to change the parent of the item may still fail
+         * depending on the new parent that's being added and the parent that is being
+         * removed.
+         *
+         * @var bool
+         */
+        public $canMoveItemWithinDrive;
+        /**
+         * Deprecated: Output only. Use `canMoveItemWithinDrive` instead.
+         *
+         * @deprecated
+         * @var bool
+         */
+        public $canMoveItemWithinTeamDrive;
+        /**
+         * Deprecated: Output only. Use `canMoveItemWithinDrive` or
+         * `canMoveItemOutOfDrive` instead.
+         *
+         * @deprecated
+         * @var bool
+         */
+        public $canMoveTeamDriveItem;
+        /**
+         * Output only. Whether the current user can read the shared drive to which
+         * this file belongs. Only populated for items in shared drives.
+         *
+         * @var bool
+         */
+        public $canReadDrive;
+        /**
+         * Output only. Whether the current user can read the labels on the file.
+         *
+         * @var bool
+         */
+        public $canReadLabels;
+        /**
+         * Output only. Whether the current user can read the revisions resource of
+         * this file. For a shared drive item, whether revisions of non-folder
+         * descendants of this item, or this item if it's not a folder, can be read.
+         *
+         * @var bool
+         */
+        public $canReadRevisions;
+        /**
+         * Deprecated: Output only. Use `canReadDrive` instead.
+         *
+         * @deprecated
+         * @var bool
+         */
+        public $canReadTeamDrive;
+        /**
+         * Output only. Whether the current user can remove children from this folder.
+         * This is always `false` when the item isn't a folder. For a folder in a
+         * shared drive, use `canDeleteChildren` or `canTrashChildren` instead.
+         *
+         * @var bool
+         */
+        public $canRemoveChildren;
+        /**
+         * Output only. Whether there's a content restriction on the file that can be
+         * removed by the current user.
+         *
+         * @var bool
+         */
+        public $canRemoveContentRestriction;
+        /**
+         * Output only. Whether the current user can remove a parent from the item
+         * without adding another parent in the same request. Not populated for shared
+         * drive files.
+         *
+         * @var bool
+         */
+        public $canRemoveMyDriveParent;
+        /**
+         * Output only. Whether the current user can rename this file.
+         *
+         * @var bool
+         */
+        public $canRename;
+        /**
+         * Output only. Whether the current user can modify the sharing settings for
+         * this file.
+         *
+         * @var bool
+         */
+        public $canShare;
+        /**
+         * Output only. Whether the current user can move this file to trash.
+         *
+         * @var bool
+         */
+        public $canTrash;
+        /**
+         * Output only. Whether the current user can trash children of this folder.
+         * This is `false` when the item isn't a folder. Only populated for items in
+         * shared drives.
+         *
+         * @var bool
+         */
+        public $canTrashChildren;
+        /**
+         * Output only. Whether the current user can restore this file from trash.
+         *
+         * @var bool
+         */
+        public $canUntrash;
+        /**
+         * Output only. Whether the current user is the pending owner of the file. Not
+         * populated for shared drive files.
+         *
+         * @param bool $canAcceptOwnership
+         */
+        public function setCanAcceptOwnership($canAcceptOwnership)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanAcceptOwnership()
+        {
+        }
+        /**
+         * Output only. Whether the current user can add children to this folder. This
+         * is always `false` when the item isn't a folder.
+         *
+         * @param bool $canAddChildren
+         */
+        public function setCanAddChildren($canAddChildren)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanAddChildren()
+        {
+        }
+        /**
+         * Output only. Whether the current user can add a folder from another drive
+         * (different shared drive or My Drive) to this folder. This is `false` when
+         * the item isn't a folder. Only populated for items in shared drives.
+         *
+         * @param bool $canAddFolderFromAnotherDrive
+         */
+        public function setCanAddFolderFromAnotherDrive($canAddFolderFromAnotherDrive)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanAddFolderFromAnotherDrive()
+        {
+        }
+        /**
+         * Output only. Whether the current user can add a parent for the item without
+         * removing an existing parent in the same request. Not populated for shared
+         * drive files.
+         *
+         * @param bool $canAddMyDriveParent
+         */
+        public function setCanAddMyDriveParent($canAddMyDriveParent)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanAddMyDriveParent()
+        {
+        }
+        /**
+         * Output only. Whether the current user can change the
+         * `copyRequiresWriterPermission` restriction of this file.
+         *
+         * @param bool $canChangeCopyRequiresWriterPermission
+         */
+        public function setCanChangeCopyRequiresWriterPermission($canChangeCopyRequiresWriterPermission)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanChangeCopyRequiresWriterPermission()
+        {
+        }
+        /**
+         * Output only. Whether the current user can change the owner or organizer-
+         * applied download restrictions of the file.
+         *
+         * @param bool $canChangeItemDownloadRestriction
+         */
+        public function setCanChangeItemDownloadRestriction($canChangeItemDownloadRestriction)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanChangeItemDownloadRestriction()
+        {
+        }
+        /**
+         * Output only. Whether the current user can change the
+         * `securityUpdateEnabled` field on link share metadata.
+         *
+         * @param bool $canChangeSecurityUpdateEnabled
+         */
+        public function setCanChangeSecurityUpdateEnabled($canChangeSecurityUpdateEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanChangeSecurityUpdateEnabled()
+        {
+        }
+        /**
+         * Deprecated: Output only.
+         *
+         * @deprecated
+         * @param bool $canChangeViewersCanCopyContent
+         */
+        public function setCanChangeViewersCanCopyContent($canChangeViewersCanCopyContent)
+        {
+        }
+        /**
+         * @deprecated
+         * @return bool
+         */
+        public function getCanChangeViewersCanCopyContent()
+        {
+        }
+        /**
+         * Output only. Whether the current user can comment on this file.
+         *
+         * @param bool $canComment
+         */
+        public function setCanComment($canComment)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanComment()
+        {
+        }
+        /**
+         * Output only. Whether the current user can copy this file. For an item in a
+         * shared drive, whether the current user can copy non-folder descendants of
+         * this item, or this item if it's not a folder.
+         *
+         * @param bool $canCopy
+         */
+        public function setCanCopy($canCopy)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanCopy()
+        {
+        }
+        /**
+         * Output only. Whether the current user can delete this file.
+         *
+         * @param bool $canDelete
+         */
+        public function setCanDelete($canDelete)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanDelete()
+        {
+        }
+        /**
+         * Output only. Whether the current user can delete children of this folder.
+         * This is `false` when the item isn't a folder. Only populated for items in
+         * shared drives.
+         *
+         * @param bool $canDeleteChildren
+         */
+        public function setCanDeleteChildren($canDeleteChildren)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanDeleteChildren()
+        {
+        }
+        /**
+         * Whether a user can disable inherited permissions.
+         *
+         * @param bool $canDisableInheritedPermissions
+         */
+        public function setCanDisableInheritedPermissions($canDisableInheritedPermissions)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanDisableInheritedPermissions()
+        {
+        }
+        /**
+         * Output only. Whether the current user can download this file.
+         *
+         * @param bool $canDownload
+         */
+        public function setCanDownload($canDownload)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanDownload()
+        {
+        }
+        /**
+         * Output only. Whether the current user can edit this file. Other factors may
+         * limit the type of changes a user can make to a file. For example, see
+         * `canChangeCopyRequiresWriterPermission` or `canModifyContent`.
+         *
+         * @param bool $canEdit
+         */
+        public function setCanEdit($canEdit)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanEdit()
+        {
+        }
+        /**
+         * Whether a user can re-enable inherited permissions.
+         *
+         * @param bool $canEnableInheritedPermissions
+         */
+        public function setCanEnableInheritedPermissions($canEnableInheritedPermissions)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanEnableInheritedPermissions()
+        {
+        }
+        /**
+         * Output only. Whether the current user can list the children of this folder.
+         * This is always `false` when the item isn't a folder.
+         *
+         * @param bool $canListChildren
+         */
+        public function setCanListChildren($canListChildren)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanListChildren()
+        {
+        }
+        /**
+         * Output only. Whether the current user can modify the content of this file.
+         *
+         * @param bool $canModifyContent
+         */
+        public function setCanModifyContent($canModifyContent)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanModifyContent()
+        {
+        }
+        /**
+         * Deprecated: Output only. Use one of `canModifyEditorContentRestriction`,
+         * `canModifyOwnerContentRestriction`, or `canRemoveContentRestriction`.
+         *
+         * @deprecated
+         * @param bool $canModifyContentRestriction
+         */
+        public function setCanModifyContentRestriction($canModifyContentRestriction)
+        {
+        }
+        /**
+         * @deprecated
+         * @return bool
+         */
+        public function getCanModifyContentRestriction()
+        {
+        }
+        /**
+         * Output only. Whether the current user can add or modify content
+         * restrictions on the file which are editor restricted.
+         *
+         * @param bool $canModifyEditorContentRestriction
+         */
+        public function setCanModifyEditorContentRestriction($canModifyEditorContentRestriction)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanModifyEditorContentRestriction()
+        {
+        }
+        /**
+         * Output only. Whether the current user can modify the labels on the file.
+         *
+         * @param bool $canModifyLabels
+         */
+        public function setCanModifyLabels($canModifyLabels)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanModifyLabels()
+        {
+        }
+        /**
+         * Output only. Whether the current user can add or modify content
+         * restrictions which are owner restricted.
+         *
+         * @param bool $canModifyOwnerContentRestriction
+         */
+        public function setCanModifyOwnerContentRestriction($canModifyOwnerContentRestriction)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanModifyOwnerContentRestriction()
+        {
+        }
+        /**
+         * Output only. Whether the current user can move children of this folder
+         * outside of the shared drive. This is `false` when the item isn't a folder.
+         * Only populated for items in shared drives.
+         *
+         * @param bool $canMoveChildrenOutOfDrive
+         */
+        public function setCanMoveChildrenOutOfDrive($canMoveChildrenOutOfDrive)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanMoveChildrenOutOfDrive()
+        {
+        }
+        /**
+         * Deprecated: Output only. Use `canMoveChildrenOutOfDrive` instead.
+         *
+         * @deprecated
+         * @param bool $canMoveChildrenOutOfTeamDrive
+         */
+        public function setCanMoveChildrenOutOfTeamDrive($canMoveChildrenOutOfTeamDrive)
+        {
+        }
+        /**
+         * @deprecated
+         * @return bool
+         */
+        public function getCanMoveChildrenOutOfTeamDrive()
+        {
+        }
+        /**
+         * Output only. Whether the current user can move children of this folder
+         * within this drive. This is `false` when the item isn't a folder. Note that
+         * a request to move the child may still fail depending on the current user's
+         * access to the child and to the destination folder.
+         *
+         * @param bool $canMoveChildrenWithinDrive
+         */
+        public function setCanMoveChildrenWithinDrive($canMoveChildrenWithinDrive)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanMoveChildrenWithinDrive()
+        {
+        }
+        /**
+         * Deprecated: Output only. Use `canMoveChildrenWithinDrive` instead.
+         *
+         * @deprecated
+         * @param bool $canMoveChildrenWithinTeamDrive
+         */
+        public function setCanMoveChildrenWithinTeamDrive($canMoveChildrenWithinTeamDrive)
+        {
+        }
+        /**
+         * @deprecated
+         * @return bool
+         */
+        public function getCanMoveChildrenWithinTeamDrive()
+        {
+        }
+        /**
+         * Deprecated: Output only. Use `canMoveItemOutOfDrive` instead.
+         *
+         * @deprecated
+         * @param bool $canMoveItemIntoTeamDrive
+         */
+        public function setCanMoveItemIntoTeamDrive($canMoveItemIntoTeamDrive)
+        {
+        }
+        /**
+         * @deprecated
+         * @return bool
+         */
+        public function getCanMoveItemIntoTeamDrive()
+        {
+        }
+        /**
+         * Output only. Whether the current user can move this item outside of this
+         * drive by changing its parent. Note that a request to change the parent of
+         * the item may still fail depending on the new parent that's being added.
+         *
+         * @param bool $canMoveItemOutOfDrive
+         */
+        public function setCanMoveItemOutOfDrive($canMoveItemOutOfDrive)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanMoveItemOutOfDrive()
+        {
+        }
+        /**
+         * Deprecated: Output only. Use `canMoveItemOutOfDrive` instead.
+         *
+         * @deprecated
+         * @param bool $canMoveItemOutOfTeamDrive
+         */
+        public function setCanMoveItemOutOfTeamDrive($canMoveItemOutOfTeamDrive)
+        {
+        }
+        /**
+         * @deprecated
+         * @return bool
+         */
+        public function getCanMoveItemOutOfTeamDrive()
+        {
+        }
+        /**
+         * Output only. Whether the current user can move this item within this drive.
+         * Note that a request to change the parent of the item may still fail
+         * depending on the new parent that's being added and the parent that is being
+         * removed.
+         *
+         * @param bool $canMoveItemWithinDrive
+         */
+        public function setCanMoveItemWithinDrive($canMoveItemWithinDrive)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanMoveItemWithinDrive()
+        {
+        }
+        /**
+         * Deprecated: Output only. Use `canMoveItemWithinDrive` instead.
+         *
+         * @deprecated
+         * @param bool $canMoveItemWithinTeamDrive
+         */
+        public function setCanMoveItemWithinTeamDrive($canMoveItemWithinTeamDrive)
+        {
+        }
+        /**
+         * @deprecated
+         * @return bool
+         */
+        public function getCanMoveItemWithinTeamDrive()
+        {
+        }
+        /**
+         * Deprecated: Output only. Use `canMoveItemWithinDrive` or
+         * `canMoveItemOutOfDrive` instead.
+         *
+         * @deprecated
+         * @param bool $canMoveTeamDriveItem
+         */
+        public function setCanMoveTeamDriveItem($canMoveTeamDriveItem)
+        {
+        }
+        /**
+         * @deprecated
+         * @return bool
+         */
+        public function getCanMoveTeamDriveItem()
+        {
+        }
+        /**
+         * Output only. Whether the current user can read the shared drive to which
+         * this file belongs. Only populated for items in shared drives.
+         *
+         * @param bool $canReadDrive
+         */
+        public function setCanReadDrive($canReadDrive)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanReadDrive()
+        {
+        }
+        /**
+         * Output only. Whether the current user can read the labels on the file.
+         *
+         * @param bool $canReadLabels
+         */
+        public function setCanReadLabels($canReadLabels)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanReadLabels()
+        {
+        }
+        /**
+         * Output only. Whether the current user can read the revisions resource of
+         * this file. For a shared drive item, whether revisions of non-folder
+         * descendants of this item, or this item if it's not a folder, can be read.
+         *
+         * @param bool $canReadRevisions
+         */
+        public function setCanReadRevisions($canReadRevisions)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanReadRevisions()
+        {
+        }
+        /**
+         * Deprecated: Output only. Use `canReadDrive` instead.
+         *
+         * @deprecated
+         * @param bool $canReadTeamDrive
+         */
+        public function setCanReadTeamDrive($canReadTeamDrive)
+        {
+        }
+        /**
+         * @deprecated
+         * @return bool
+         */
+        public function getCanReadTeamDrive()
+        {
+        }
+        /**
+         * Output only. Whether the current user can remove children from this folder.
+         * This is always `false` when the item isn't a folder. For a folder in a
+         * shared drive, use `canDeleteChildren` or `canTrashChildren` instead.
+         *
+         * @param bool $canRemoveChildren
+         */
+        public function setCanRemoveChildren($canRemoveChildren)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanRemoveChildren()
+        {
+        }
+        /**
+         * Output only. Whether there's a content restriction on the file that can be
+         * removed by the current user.
+         *
+         * @param bool $canRemoveContentRestriction
+         */
+        public function setCanRemoveContentRestriction($canRemoveContentRestriction)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanRemoveContentRestriction()
+        {
+        }
+        /**
+         * Output only. Whether the current user can remove a parent from the item
+         * without adding another parent in the same request. Not populated for shared
+         * drive files.
+         *
+         * @param bool $canRemoveMyDriveParent
+         */
+        public function setCanRemoveMyDriveParent($canRemoveMyDriveParent)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanRemoveMyDriveParent()
+        {
+        }
+        /**
+         * Output only. Whether the current user can rename this file.
+         *
+         * @param bool $canRename
+         */
+        public function setCanRename($canRename)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanRename()
+        {
+        }
+        /**
+         * Output only. Whether the current user can modify the sharing settings for
+         * this file.
+         *
+         * @param bool $canShare
+         */
+        public function setCanShare($canShare)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanShare()
+        {
+        }
+        /**
+         * Output only. Whether the current user can move this file to trash.
+         *
+         * @param bool $canTrash
+         */
+        public function setCanTrash($canTrash)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanTrash()
+        {
+        }
+        /**
+         * Output only. Whether the current user can trash children of this folder.
+         * This is `false` when the item isn't a folder. Only populated for items in
+         * shared drives.
+         *
+         * @param bool $canTrashChildren
+         */
+        public function setCanTrashChildren($canTrashChildren)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanTrashChildren()
+        {
+        }
+        /**
+         * Output only. Whether the current user can restore this file from trash.
+         *
+         * @param bool $canUntrash
+         */
+        public function setCanUntrash($canUntrash)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanUntrash()
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Drive\DriveFileCapabilities registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Drive_DriveFileCapabilities extends \Google\Service\Drive\DriveFileCapabilities
     {
     }
 }

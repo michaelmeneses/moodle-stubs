@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseRules;
-
-class ListReleasesResponse extends \Google\Collection
-{
-    protected $collection_key = 'releases';
-    /**
-     * The pagination token to retrieve the next page of results. If the value is
-     * empty, no further results remain.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $releasesType = Release::class;
-    protected $releasesDataType = 'array';
-    /**
-     * The pagination token to retrieve the next page of results. If the value is
-     * empty, no further results remain.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\FirebaseRules {
+    class ListReleasesResponse extends \Google\Collection
     {
+        protected $collection_key = 'releases';
+        /**
+         * The pagination token to retrieve the next page of results. If the value is
+         * empty, no further results remain.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $releasesType = Release::class;
+        protected $releasesDataType = 'array';
+        /**
+         * The pagination token to retrieve the next page of results. If the value is
+         * empty, no further results remain.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * List of `Release` instances.
+         *
+         * @param Release[] $releases
+         */
+        public function setReleases($releases)
+        {
+        }
+        /**
+         * @return Release[]
+         */
+        public function getReleases()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\FirebaseRules\ListReleasesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * List of `Release` instances.
-     *
-     * @param Release[] $releases
-     */
-    public function setReleases($releases)
-    {
-    }
-    /**
-     * @return Release[]
-     */
-    public function getReleases()
+    class Google_Service_FirebaseRules_ListReleasesResponse extends \Google\Service\FirebaseRules\ListReleasesResponse
     {
     }
 }

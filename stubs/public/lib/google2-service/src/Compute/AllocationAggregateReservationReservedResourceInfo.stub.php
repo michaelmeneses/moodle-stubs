@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class AllocationAggregateReservationReservedResourceInfo extends \Google\Model
-{
-    protected $acceleratorType = AllocationAggregateReservationReservedResourceInfoAccelerator::class;
-    protected $acceleratorDataType = '';
-    /**
-     * Properties of accelerator resources in this reservation.
-     *
-     * @param AllocationAggregateReservationReservedResourceInfoAccelerator $accelerator
-     */
-    public function setAccelerator(AllocationAggregateReservationReservedResourceInfoAccelerator $accelerator)
+namespace Google\Service\Compute {
+    class AllocationAggregateReservationReservedResourceInfo extends \Google\Model
     {
+        protected $acceleratorType = AllocationAggregateReservationReservedResourceInfoAccelerator::class;
+        protected $acceleratorDataType = '';
+        /**
+         * Properties of accelerator resources in this reservation.
+         *
+         * @param AllocationAggregateReservationReservedResourceInfoAccelerator $accelerator
+         */
+        public function setAccelerator(AllocationAggregateReservationReservedResourceInfoAccelerator $accelerator)
+        {
+        }
+        /**
+         * @return AllocationAggregateReservationReservedResourceInfoAccelerator
+         */
+        public function getAccelerator()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AllocationAggregateReservationReservedResourceInfoAccelerator
+     * Runtime class alias of \Google\Service\Compute\AllocationAggregateReservationReservedResourceInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccelerator()
+    class Google_Service_Compute_AllocationAggregateReservationReservedResourceInfo extends \Google\Service\Compute\AllocationAggregateReservationReservedResourceInfo
     {
     }
 }

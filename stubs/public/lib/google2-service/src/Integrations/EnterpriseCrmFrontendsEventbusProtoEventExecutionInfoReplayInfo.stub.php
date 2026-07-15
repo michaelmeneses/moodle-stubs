@@ -21,105 +21,114 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmFrontendsEventbusProtoEventExecutionInfoReplayInfo extends \Google\Collection
-{
-    public const REPLAY_MODE_REPLAY_MODE_UNSPECIFIED = 'REPLAY_MODE_UNSPECIFIED';
-    /**
-     * Replay the original execution from the beginning.
-     */
-    public const REPLAY_MODE_REPLAY_MODE_FROM_BEGINNING = 'REPLAY_MODE_FROM_BEGINNING';
-    /**
-     * Replay the execution from the first failed task.
-     */
-    public const REPLAY_MODE_REPLAY_MODE_POINT_OF_FAILURE = 'REPLAY_MODE_POINT_OF_FAILURE';
-    protected $collection_key = 'replayedExecutionInfoIds';
-    /**
-     * If this execution is a replay of another execution, then this field
-     * contains the original execution id.
-     *
-     * @var string
-     */
-    public $originalExecutionInfoId;
-    /**
-     * Replay mode for the execution
-     *
-     * @var string
-     */
-    public $replayMode;
-    /**
-     * reason for replay
-     *
-     * @var string
-     */
-    public $replayReason;
-    /**
-     * If this execution has been replayed, then this field contains the execution
-     * ids of the replayed executions.
-     *
-     * @var string[]
-     */
-    public $replayedExecutionInfoIds;
-    /**
-     * If this execution is a replay of another execution, then this field
-     * contains the original execution id.
-     *
-     * @param string $originalExecutionInfoId
-     */
-    public function setOriginalExecutionInfoId($originalExecutionInfoId)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmFrontendsEventbusProtoEventExecutionInfoReplayInfo extends \Google\Collection
     {
+        public const REPLAY_MODE_REPLAY_MODE_UNSPECIFIED = 'REPLAY_MODE_UNSPECIFIED';
+        /**
+         * Replay the original execution from the beginning.
+         */
+        public const REPLAY_MODE_REPLAY_MODE_FROM_BEGINNING = 'REPLAY_MODE_FROM_BEGINNING';
+        /**
+         * Replay the execution from the first failed task.
+         */
+        public const REPLAY_MODE_REPLAY_MODE_POINT_OF_FAILURE = 'REPLAY_MODE_POINT_OF_FAILURE';
+        protected $collection_key = 'replayedExecutionInfoIds';
+        /**
+         * If this execution is a replay of another execution, then this field
+         * contains the original execution id.
+         *
+         * @var string
+         */
+        public $originalExecutionInfoId;
+        /**
+         * Replay mode for the execution
+         *
+         * @var string
+         */
+        public $replayMode;
+        /**
+         * reason for replay
+         *
+         * @var string
+         */
+        public $replayReason;
+        /**
+         * If this execution has been replayed, then this field contains the execution
+         * ids of the replayed executions.
+         *
+         * @var string[]
+         */
+        public $replayedExecutionInfoIds;
+        /**
+         * If this execution is a replay of another execution, then this field
+         * contains the original execution id.
+         *
+         * @param string $originalExecutionInfoId
+         */
+        public function setOriginalExecutionInfoId($originalExecutionInfoId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOriginalExecutionInfoId()
+        {
+        }
+        /**
+         * Replay mode for the execution
+         *
+         * Accepted values: REPLAY_MODE_UNSPECIFIED, REPLAY_MODE_FROM_BEGINNING,
+         * REPLAY_MODE_POINT_OF_FAILURE
+         *
+         * @param self::REPLAY_MODE_* $replayMode
+         */
+        public function setReplayMode($replayMode)
+        {
+        }
+        /**
+         * @return self::REPLAY_MODE_*
+         */
+        public function getReplayMode()
+        {
+        }
+        /**
+         * reason for replay
+         *
+         * @param string $replayReason
+         */
+        public function setReplayReason($replayReason)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReplayReason()
+        {
+        }
+        /**
+         * If this execution has been replayed, then this field contains the execution
+         * ids of the replayed executions.
+         *
+         * @param string[] $replayedExecutionInfoIds
+         */
+        public function setReplayedExecutionInfoIds($replayedExecutionInfoIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getReplayedExecutionInfoIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmFrontendsEventbusProtoEventExecutionInfoReplayInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOriginalExecutionInfoId()
-    {
-    }
-    /**
-     * Replay mode for the execution
-     *
-     * Accepted values: REPLAY_MODE_UNSPECIFIED, REPLAY_MODE_FROM_BEGINNING,
-     * REPLAY_MODE_POINT_OF_FAILURE
-     *
-     * @param self::REPLAY_MODE_* $replayMode
-     */
-    public function setReplayMode($replayMode)
-    {
-    }
-    /**
-     * @return self::REPLAY_MODE_*
-     */
-    public function getReplayMode()
-    {
-    }
-    /**
-     * reason for replay
-     *
-     * @param string $replayReason
-     */
-    public function setReplayReason($replayReason)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReplayReason()
-    {
-    }
-    /**
-     * If this execution has been replayed, then this field contains the execution
-     * ids of the replayed executions.
-     *
-     * @param string[] $replayedExecutionInfoIds
-     */
-    public function setReplayedExecutionInfoIds($replayedExecutionInfoIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getReplayedExecutionInfoIds()
+    class Google_Service_Integrations_EnterpriseCrmFrontendsEventbusProtoEventExecutionInfoReplayInfo extends \Google\Service\Integrations\EnterpriseCrmFrontendsEventbusProtoEventExecutionInfoReplayInfo
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecureSourceManager;
-
-class Comment extends \Google\Model
-{
-    /**
-     * Required. The comment body.
-     *
-     * @var string
-     */
-    public $body;
-    /**
-     * Required. The comment body.
-     *
-     * @param string $body
-     */
-    public function setBody($body)
+namespace Google\Service\SecureSourceManager {
+    class Comment extends \Google\Model
     {
+        /**
+         * Required. The comment body.
+         *
+         * @var string
+         */
+        public $body;
+        /**
+         * Required. The comment body.
+         *
+         * @param string $body
+         */
+        public function setBody($body)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBody()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecureSourceManager\Comment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBody()
+    class Google_Service_SecureSourceManager_Comment extends \Google\Service\SecureSourceManager\Comment
     {
     }
 }

@@ -8,6 +8,7 @@
  */
 namespace Aws\OSIS;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon OpenSearch Ingestion** service.
  * @method \Aws\Result createPipeline(array $args = [])

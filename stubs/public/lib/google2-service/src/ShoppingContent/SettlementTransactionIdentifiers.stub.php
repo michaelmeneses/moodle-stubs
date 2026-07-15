@@ -21,105 +21,114 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class SettlementTransactionIdentifiers extends \Google\Collection
-{
-    protected $collection_key = 'shipmentIds';
-    /**
-     * @var string
-     */
-    public $adjustmentId;
-    /**
-     * @var string
-     */
-    public $merchantOrderId;
-    /**
-     * @var string
-     */
-    public $orderItemId;
-    /**
-     * @var string
-     */
-    public $settlementEntryId;
-    /**
-     * @var string[]
-     */
-    public $shipmentIds;
-    /**
-     * @var string
-     */
-    public $transactionId;
-    /**
-     * @param string
-     */
-    public function setAdjustmentId($adjustmentId)
+namespace Google\Service\ShoppingContent {
+    class SettlementTransactionIdentifiers extends \Google\Collection
     {
+        protected $collection_key = 'shipmentIds';
+        /**
+         * @var string
+         */
+        public $adjustmentId;
+        /**
+         * @var string
+         */
+        public $merchantOrderId;
+        /**
+         * @var string
+         */
+        public $orderItemId;
+        /**
+         * @var string
+         */
+        public $settlementEntryId;
+        /**
+         * @var string[]
+         */
+        public $shipmentIds;
+        /**
+         * @var string
+         */
+        public $transactionId;
+        /**
+         * @param string
+         */
+        public function setAdjustmentId($adjustmentId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdjustmentId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMerchantOrderId($merchantOrderId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMerchantOrderId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOrderItemId($orderItemId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOrderItemId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSettlementEntryId($settlementEntryId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSettlementEntryId()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setShipmentIds($shipmentIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getShipmentIds()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTransactionId($transactionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTransactionId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\SettlementTransactionIdentifiers registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdjustmentId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMerchantOrderId($merchantOrderId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMerchantOrderId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOrderItemId($orderItemId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOrderItemId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSettlementEntryId($settlementEntryId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSettlementEntryId()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setShipmentIds($shipmentIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getShipmentIds()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTransactionId($transactionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTransactionId()
+    class Google_Service_ShoppingContent_SettlementTransactionIdentifiers extends \Google\Service\ShoppingContent\SettlementTransactionIdentifiers
     {
     }
 }

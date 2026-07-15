@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class Result extends \Google\Model
-{
-    protected $consentDetailsType = ConsentEvaluation::class;
-    protected $consentDetailsDataType = 'map';
-    /**
-     * Whether the resource is consented for the given use.
-     *
-     * @var bool
-     */
-    public $consented;
-    /**
-     * The unique identifier of the evaluated resource.
-     *
-     * @var string
-     */
-    public $dataId;
-    /**
-     * The resource names of all evaluated Consents mapped to their evaluation.
-     *
-     * @param ConsentEvaluation[] $consentDetails
-     */
-    public function setConsentDetails($consentDetails)
+namespace Google\Service\CloudHealthcare {
+    class Result extends \Google\Model
     {
+        protected $consentDetailsType = ConsentEvaluation::class;
+        protected $consentDetailsDataType = 'map';
+        /**
+         * Whether the resource is consented for the given use.
+         *
+         * @var bool
+         */
+        public $consented;
+        /**
+         * The unique identifier of the evaluated resource.
+         *
+         * @var string
+         */
+        public $dataId;
+        /**
+         * The resource names of all evaluated Consents mapped to their evaluation.
+         *
+         * @param ConsentEvaluation[] $consentDetails
+         */
+        public function setConsentDetails($consentDetails)
+        {
+        }
+        /**
+         * @return ConsentEvaluation[]
+         */
+        public function getConsentDetails()
+        {
+        }
+        /**
+         * Whether the resource is consented for the given use.
+         *
+         * @param bool $consented
+         */
+        public function setConsented($consented)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getConsented()
+        {
+        }
+        /**
+         * The unique identifier of the evaluated resource.
+         *
+         * @param string $dataId
+         */
+        public function setDataId($dataId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ConsentEvaluation[]
+     * Runtime class alias of \Google\Service\CloudHealthcare\Result registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConsentDetails()
-    {
-    }
-    /**
-     * Whether the resource is consented for the given use.
-     *
-     * @param bool $consented
-     */
-    public function setConsented($consented)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getConsented()
-    {
-    }
-    /**
-     * The unique identifier of the evaluated resource.
-     *
-     * @param string $dataId
-     */
-    public function setDataId($dataId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDataId()
+    class Google_Service_CloudHealthcare_Result extends \Google\Service\CloudHealthcare\Result
     {
     }
 }

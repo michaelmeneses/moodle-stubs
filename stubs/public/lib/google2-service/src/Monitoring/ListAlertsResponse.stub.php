@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class ListAlertsResponse extends \Google\Collection
-{
-    protected $collection_key = 'alerts';
-    protected $alertsType = Alert::class;
-    protected $alertsDataType = 'array';
-    /**
-     * If not empty, indicates that there may be more results that match the
-     * request. Use the value in the page_token field in a subsequent request to
-     * fetch the next set of results. The token is encrypted and only guaranteed
-     * to return correct results for 72 hours after it is created. If empty, all
-     * results have been returned.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The estimated total number of matching results for this query.
-     *
-     * @var int
-     */
-    public $totalSize;
-    /**
-     * The list of alerts.
-     *
-     * @param Alert[] $alerts
-     */
-    public function setAlerts($alerts)
+namespace Google\Service\Monitoring {
+    class ListAlertsResponse extends \Google\Collection
     {
+        protected $collection_key = 'alerts';
+        protected $alertsType = Alert::class;
+        protected $alertsDataType = 'array';
+        /**
+         * If not empty, indicates that there may be more results that match the
+         * request. Use the value in the page_token field in a subsequent request to
+         * fetch the next set of results. The token is encrypted and only guaranteed
+         * to return correct results for 72 hours after it is created. If empty, all
+         * results have been returned.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The estimated total number of matching results for this query.
+         *
+         * @var int
+         */
+        public $totalSize;
+        /**
+         * The list of alerts.
+         *
+         * @param Alert[] $alerts
+         */
+        public function setAlerts($alerts)
+        {
+        }
+        /**
+         * @return Alert[]
+         */
+        public function getAlerts()
+        {
+        }
+        /**
+         * If not empty, indicates that there may be more results that match the
+         * request. Use the value in the page_token field in a subsequent request to
+         * fetch the next set of results. The token is encrypted and only guaranteed
+         * to return correct results for 72 hours after it is created. If empty, all
+         * results have been returned.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The estimated total number of matching results for this query.
+         *
+         * @param int $totalSize
+         */
+        public function setTotalSize($totalSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalSize()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Alert[]
+     * Runtime class alias of \Google\Service\Monitoring\ListAlertsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAlerts()
-    {
-    }
-    /**
-     * If not empty, indicates that there may be more results that match the
-     * request. Use the value in the page_token field in a subsequent request to
-     * fetch the next set of results. The token is encrypted and only guaranteed
-     * to return correct results for 72 hours after it is created. If empty, all
-     * results have been returned.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The estimated total number of matching results for this query.
-     *
-     * @param int $totalSize
-     */
-    public function setTotalSize($totalSize)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalSize()
+    class Google_Service_Monitoring_ListAlertsResponse extends \Google\Service\Monitoring\ListAlertsResponse
     {
     }
 }

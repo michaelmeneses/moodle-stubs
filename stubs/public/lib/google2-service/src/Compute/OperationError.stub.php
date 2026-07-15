@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class OperationError extends \Google\Collection
-{
-    protected $collection_key = 'errors';
-    protected $errorsType = OperationErrorErrors::class;
-    protected $errorsDataType = 'array';
-    /**
-     * [Output Only] The array of errors encountered while processing this
-     * operation.
-     *
-     * @param OperationErrorErrors[] $errors
-     */
-    public function setErrors($errors)
+namespace Google\Service\Compute {
+    class OperationError extends \Google\Collection
     {
+        protected $collection_key = 'errors';
+        protected $errorsType = OperationErrorErrors::class;
+        protected $errorsDataType = 'array';
+        /**
+         * [Output Only] The array of errors encountered while processing this
+         * operation.
+         *
+         * @param OperationErrorErrors[] $errors
+         */
+        public function setErrors($errors)
+        {
+        }
+        /**
+         * @return OperationErrorErrors[]
+         */
+        public function getErrors()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return OperationErrorErrors[]
+     * Runtime class alias of \Google\Service\Compute\OperationError registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrors()
+    class Google_Service_Compute_OperationError extends \Google\Service\Compute\OperationError
     {
     }
 }

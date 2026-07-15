@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Backupdr;
-
-class ListDataSourcesResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $dataSourcesType = DataSource::class;
-    protected $dataSourcesDataType = 'array';
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * The list of DataSource instances in the project for the specified location.
-     * If the '{location}' value in the request is "-", the response contains a
-     * list of instances from all locations. In case any location is unreachable,
-     * the response will only return data sources in reachable locations and the
-     * 'unreachable' field will be populated with a list of unreachable locations.
-     *
-     * @param DataSource[] $dataSources
-     */
-    public function setDataSources($dataSources)
+namespace Google\Service\Backupdr {
+    class ListDataSourcesResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $dataSourcesType = DataSource::class;
+        protected $dataSourcesDataType = 'array';
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * The list of DataSource instances in the project for the specified location.
+         * If the '{location}' value in the request is "-", the response contains a
+         * list of instances from all locations. In case any location is unreachable,
+         * the response will only return data sources in reachable locations and the
+         * 'unreachable' field will be populated with a list of unreachable locations.
+         *
+         * @param DataSource[] $dataSources
+         */
+        public function setDataSources($dataSources)
+        {
+        }
+        /**
+         * @return DataSource[]
+         */
+        public function getDataSources()
+        {
+        }
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DataSource[]
+     * Runtime class alias of \Google\Service\Backupdr\ListDataSourcesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataSources()
-    {
-    }
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_Backupdr_ListDataSourcesResponse extends \Google\Service\Backupdr\ListDataSourcesResponse
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Forms;
-
-class Grid extends \Google\Model
-{
-    protected $columnsType = ChoiceQuestion::class;
-    protected $columnsDataType = '';
-    /**
-     * If `true`, the questions are randomly ordered. In other words, the rows
-     * appear in a different order for every respondent.
-     *
-     * @var bool
-     */
-    public $shuffleQuestions;
-    /**
-     * Required. The choices shared by each question in the grid. In other words,
-     * the values of the columns. Only `CHECK_BOX` and `RADIO` choices are
-     * allowed.
-     *
-     * @param ChoiceQuestion $columns
-     */
-    public function setColumns(ChoiceQuestion $columns)
+namespace Google\Service\Forms {
+    class Grid extends \Google\Model
     {
+        protected $columnsType = ChoiceQuestion::class;
+        protected $columnsDataType = '';
+        /**
+         * If `true`, the questions are randomly ordered. In other words, the rows
+         * appear in a different order for every respondent.
+         *
+         * @var bool
+         */
+        public $shuffleQuestions;
+        /**
+         * Required. The choices shared by each question in the grid. In other words,
+         * the values of the columns. Only `CHECK_BOX` and `RADIO` choices are
+         * allowed.
+         *
+         * @param ChoiceQuestion $columns
+         */
+        public function setColumns(ChoiceQuestion $columns)
+        {
+        }
+        /**
+         * @return ChoiceQuestion
+         */
+        public function getColumns()
+        {
+        }
+        /**
+         * If `true`, the questions are randomly ordered. In other words, the rows
+         * appear in a different order for every respondent.
+         *
+         * @param bool $shuffleQuestions
+         */
+        public function setShuffleQuestions($shuffleQuestions)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getShuffleQuestions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ChoiceQuestion
+     * Runtime class alias of \Google\Service\Forms\Grid registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumns()
-    {
-    }
-    /**
-     * If `true`, the questions are randomly ordered. In other words, the rows
-     * appear in a different order for every respondent.
-     *
-     * @param bool $shuffleQuestions
-     */
-    public function setShuffleQuestions($shuffleQuestions)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getShuffleQuestions()
+    class Google_Service_Forms_Grid extends \Google\Service\Forms\Grid
     {
     }
 }

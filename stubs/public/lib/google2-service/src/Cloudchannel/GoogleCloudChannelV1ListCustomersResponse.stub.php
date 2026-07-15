@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1ListCustomersResponse extends \Google\Collection
-{
-    protected $collection_key = 'customers';
-    protected $customersType = GoogleCloudChannelV1Customer::class;
-    protected $customersDataType = 'array';
-    /**
-     * A token to retrieve the next page of results. Pass to
-     * ListCustomersRequest.page_token to obtain that page.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The customers belonging to a reseller or distributor.
-     *
-     * @param GoogleCloudChannelV1Customer[] $customers
-     */
-    public function setCustomers($customers)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1ListCustomersResponse extends \Google\Collection
     {
+        protected $collection_key = 'customers';
+        protected $customersType = GoogleCloudChannelV1Customer::class;
+        protected $customersDataType = 'array';
+        /**
+         * A token to retrieve the next page of results. Pass to
+         * ListCustomersRequest.page_token to obtain that page.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The customers belonging to a reseller or distributor.
+         *
+         * @param GoogleCloudChannelV1Customer[] $customers
+         */
+        public function setCustomers($customers)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1Customer[]
+         */
+        public function getCustomers()
+        {
+        }
+        /**
+         * A token to retrieve the next page of results. Pass to
+         * ListCustomersRequest.page_token to obtain that page.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudChannelV1Customer[]
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1ListCustomersResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomers()
-    {
-    }
-    /**
-     * A token to retrieve the next page of results. Pass to
-     * ListCustomersRequest.page_token to obtain that page.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1ListCustomersResponse extends \Google\Service\Cloudchannel\GoogleCloudChannelV1ListCustomersResponse
     {
     }
 }

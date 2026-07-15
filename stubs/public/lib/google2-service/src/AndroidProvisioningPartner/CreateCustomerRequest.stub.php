@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidProvisioningPartner;
-
-class CreateCustomerRequest extends \Google\Model
-{
-    protected $customerType = Company::class;
-    protected $customerDataType = '';
-    /**
-     * Required. The company data to populate the new customer. Must contain a
-     * value for `companyName` and at least one `owner_email` that's associated
-     * with a Google Account. The values for `companyId` and `name` must be empty.
-     *
-     * @param Company $customer
-     */
-    public function setCustomer(Company $customer)
+namespace Google\Service\AndroidProvisioningPartner {
+    class CreateCustomerRequest extends \Google\Model
     {
+        protected $customerType = Company::class;
+        protected $customerDataType = '';
+        /**
+         * Required. The company data to populate the new customer. Must contain a
+         * value for `companyName` and at least one `owner_email` that's associated
+         * with a Google Account. The values for `companyId` and `name` must be empty.
+         *
+         * @param Company $customer
+         */
+        public function setCustomer(Company $customer)
+        {
+        }
+        /**
+         * @return Company
+         */
+        public function getCustomer()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Company
+     * Runtime class alias of \Google\Service\AndroidProvisioningPartner\CreateCustomerRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomer()
+    class Google_Service_AndroidProvisioningPartner_CreateCustomerRequest extends \Google\Service\AndroidProvisioningPartner\CreateCustomerRequest
     {
     }
 }

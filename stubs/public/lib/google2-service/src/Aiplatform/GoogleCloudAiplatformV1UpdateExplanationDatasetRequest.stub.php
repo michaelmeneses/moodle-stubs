@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1UpdateExplanationDatasetRequest extends \Google\Model
-{
-    protected $examplesType = GoogleCloudAiplatformV1Examples::class;
-    protected $examplesDataType = '';
-    /**
-     * The example config containing the location of the dataset.
-     *
-     * @param GoogleCloudAiplatformV1Examples $examples
-     */
-    public function setExamples(GoogleCloudAiplatformV1Examples $examples)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1UpdateExplanationDatasetRequest extends \Google\Model
     {
+        protected $examplesType = GoogleCloudAiplatformV1Examples::class;
+        protected $examplesDataType = '';
+        /**
+         * The example config containing the location of the dataset.
+         *
+         * @param GoogleCloudAiplatformV1Examples $examples
+         */
+        public function setExamples(GoogleCloudAiplatformV1Examples $examples)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1Examples
+         */
+        public function getExamples()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1Examples
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1UpdateExplanationDatasetRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExamples()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1UpdateExplanationDatasetRequest extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1UpdateExplanationDatasetRequest
     {
     }
 }

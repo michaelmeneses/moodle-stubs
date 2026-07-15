@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OSConfig;
-
-class OSPolicyResourceExecResource extends \Google\Model
-{
-    protected $enforceType = OSPolicyResourceExecResourceExec::class;
-    protected $enforceDataType = '';
-    protected $validateType = OSPolicyResourceExecResourceExec::class;
-    protected $validateDataType = '';
-    /**
-     * What to run to bring this resource into the desired state. An exit code of
-     * 100 indicates "success", any other exit code indicates a failure running
-     * enforce.
-     *
-     * @param OSPolicyResourceExecResourceExec $enforce
-     */
-    public function setEnforce(OSPolicyResourceExecResourceExec $enforce)
+namespace Google\Service\OSConfig {
+    class OSPolicyResourceExecResource extends \Google\Model
     {
+        protected $enforceType = OSPolicyResourceExecResourceExec::class;
+        protected $enforceDataType = '';
+        protected $validateType = OSPolicyResourceExecResourceExec::class;
+        protected $validateDataType = '';
+        /**
+         * What to run to bring this resource into the desired state. An exit code of
+         * 100 indicates "success", any other exit code indicates a failure running
+         * enforce.
+         *
+         * @param OSPolicyResourceExecResourceExec $enforce
+         */
+        public function setEnforce(OSPolicyResourceExecResourceExec $enforce)
+        {
+        }
+        /**
+         * @return OSPolicyResourceExecResourceExec
+         */
+        public function getEnforce()
+        {
+        }
+        /**
+         * Required. What to run to validate this resource is in the desired state. An
+         * exit code of 100 indicates "in desired state", and exit code of 101
+         * indicates "not in desired state". Any other exit code indicates a failure
+         * running validate.
+         *
+         * @param OSPolicyResourceExecResourceExec $validate
+         */
+        public function setValidate(OSPolicyResourceExecResourceExec $validate)
+        {
+        }
+        /**
+         * @return OSPolicyResourceExecResourceExec
+         */
+        public function getValidate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return OSPolicyResourceExecResourceExec
+     * Runtime class alias of \Google\Service\OSConfig\OSPolicyResourceExecResource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnforce()
-    {
-    }
-    /**
-     * Required. What to run to validate this resource is in the desired state. An
-     * exit code of 100 indicates "in desired state", and exit code of 101
-     * indicates "not in desired state". Any other exit code indicates a failure
-     * running validate.
-     *
-     * @param OSPolicyResourceExecResourceExec $validate
-     */
-    public function setValidate(OSPolicyResourceExecResourceExec $validate)
-    {
-    }
-    /**
-     * @return OSPolicyResourceExecResourceExec
-     */
-    public function getValidate()
+    class Google_Service_OSConfig_OSPolicyResourceExecResource extends \Google\Service\OSConfig\OSPolicyResourceExecResource
     {
     }
 }

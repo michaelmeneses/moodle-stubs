@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MapsPlaces;
-
-class GoogleMapsPlacesV1ContextualContentJustificationReviewJustificationHighlightedTextHighlightedTextRange extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $endIndex;
-    /**
-     * @var int
-     */
-    public $startIndex;
-    /**
-     * @param int $endIndex
-     */
-    public function setEndIndex($endIndex)
+namespace Google\Service\MapsPlaces {
+    class GoogleMapsPlacesV1ContextualContentJustificationReviewJustificationHighlightedTextHighlightedTextRange extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $endIndex;
+        /**
+         * @var int
+         */
+        public $startIndex;
+        /**
+         * @param int $endIndex
+         */
+        public function setEndIndex($endIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getEndIndex()
+        {
+        }
+        /**
+         * @param int $startIndex
+         */
+        public function setStartIndex($startIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getStartIndex()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\MapsPlaces\GoogleMapsPlacesV1ContextualContentJustificationReviewJustificationHighlightedTextHighlightedTextRange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndIndex()
-    {
-    }
-    /**
-     * @param int $startIndex
-     */
-    public function setStartIndex($startIndex)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getStartIndex()
+    class Google_Service_MapsPlaces_GoogleMapsPlacesV1ContextualContentJustificationReviewJustificationHighlightedTextHighlightedTextRange extends \Google\Service\MapsPlaces\GoogleMapsPlacesV1ContextualContentJustificationReviewJustificationHighlightedTextHighlightedTextRange
     {
     }
 }

@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PolicySimulator;
-
-class GoogleCloudPolicysimulatorV1ListReplayResultsResponse extends \Google\Collection
-{
-    protected $collection_key = 'replayResults';
-    /**
-     * A token that you can use to retrieve the next page of ReplayResult objects.
-     * If this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $replayResultsType = GoogleCloudPolicysimulatorV1ReplayResult::class;
-    protected $replayResultsDataType = 'array';
-    /**
-     * A token that you can use to retrieve the next page of ReplayResult objects.
-     * If this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\PolicySimulator {
+    class GoogleCloudPolicysimulatorV1ListReplayResultsResponse extends \Google\Collection
     {
+        protected $collection_key = 'replayResults';
+        /**
+         * A token that you can use to retrieve the next page of ReplayResult objects.
+         * If this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $replayResultsType = GoogleCloudPolicysimulatorV1ReplayResult::class;
+        protected $replayResultsDataType = 'array';
+        /**
+         * A token that you can use to retrieve the next page of ReplayResult objects.
+         * If this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The results of running a Replay.
+         *
+         * @param GoogleCloudPolicysimulatorV1ReplayResult[] $replayResults
+         */
+        public function setReplayResults($replayResults)
+        {
+        }
+        /**
+         * @return GoogleCloudPolicysimulatorV1ReplayResult[]
+         */
+        public function getReplayResults()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PolicySimulator\GoogleCloudPolicysimulatorV1ListReplayResultsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The results of running a Replay.
-     *
-     * @param GoogleCloudPolicysimulatorV1ReplayResult[] $replayResults
-     */
-    public function setReplayResults($replayResults)
-    {
-    }
-    /**
-     * @return GoogleCloudPolicysimulatorV1ReplayResult[]
-     */
-    public function getReplayResults()
+    class Google_Service_PolicySimulator_GoogleCloudPolicysimulatorV1ListReplayResultsResponse extends \Google\Service\PolicySimulator\GoogleCloudPolicysimulatorV1ListReplayResultsResponse
     {
     }
 }

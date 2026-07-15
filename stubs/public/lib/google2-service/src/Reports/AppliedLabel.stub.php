@@ -21,85 +21,94 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Reports;
-
-class AppliedLabel extends \Google\Collection
-{
-    protected $collection_key = 'fieldValues';
-    protected $fieldValuesType = FieldValue::class;
-    protected $fieldValuesDataType = 'array';
-    /**
-     * Identifier of the label - Only the label id, not the full OnePlatform
-     * resource name.
-     *
-     * @var string
-     */
-    public $id;
-    protected $reasonType = Reason::class;
-    protected $reasonDataType = '';
-    /**
-     * Title of the label
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * List of fields which are part of the label and have been set by the user.
-     * If label has a field which was not set by the user, it would not be present
-     * in this list.
-     *
-     * @param FieldValue[] $fieldValues
-     */
-    public function setFieldValues($fieldValues)
+namespace Google\Service\Reports {
+    class AppliedLabel extends \Google\Collection
     {
+        protected $collection_key = 'fieldValues';
+        protected $fieldValuesType = FieldValue::class;
+        protected $fieldValuesDataType = 'array';
+        /**
+         * Identifier of the label - Only the label id, not the full OnePlatform
+         * resource name.
+         *
+         * @var string
+         */
+        public $id;
+        protected $reasonType = Reason::class;
+        protected $reasonDataType = '';
+        /**
+         * Title of the label
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * List of fields which are part of the label and have been set by the user.
+         * If label has a field which was not set by the user, it would not be present
+         * in this list.
+         *
+         * @param FieldValue[] $fieldValues
+         */
+        public function setFieldValues($fieldValues)
+        {
+        }
+        /**
+         * @return FieldValue[]
+         */
+        public function getFieldValues()
+        {
+        }
+        /**
+         * Identifier of the label - Only the label id, not the full OnePlatform
+         * resource name.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * The reason why the label was applied on the resource.
+         *
+         * @param Reason $reason
+         */
+        public function setReason(Reason $reason)
+        {
+        }
+        /**
+         * @return Reason
+         */
+        public function getReason()
+        {
+        }
+        /**
+         * Title of the label
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FieldValue[]
+     * Runtime class alias of \Google\Service\Reports\AppliedLabel registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFieldValues()
-    {
-    }
-    /**
-     * Identifier of the label - Only the label id, not the full OnePlatform
-     * resource name.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * The reason why the label was applied on the resource.
-     *
-     * @param Reason $reason
-     */
-    public function setReason(Reason $reason)
-    {
-    }
-    /**
-     * @return Reason
-     */
-    public function getReason()
-    {
-    }
-    /**
-     * Title of the label
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_Reports_AppliedLabel extends \Google\Service\Reports\AppliedLabel
     {
     }
 }

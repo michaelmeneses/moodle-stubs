@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InstancesGetEffectiveFirewallsResponse extends \Google\Collection
-{
-    protected $collection_key = 'firewalls';
-    protected $firewallPolicysType = InstancesGetEffectiveFirewallsResponseEffectiveFirewallPolicy::class;
-    protected $firewallPolicysDataType = 'array';
-    protected $firewallsType = Firewall::class;
-    protected $firewallsDataType = 'array';
-    /**
-     * [Output Only] Effective firewalls from firewall policies.
-     *
-     * @param InstancesGetEffectiveFirewallsResponseEffectiveFirewallPolicy[] $firewallPolicys
-     */
-    public function setFirewallPolicys($firewallPolicys)
+namespace Google\Service\Compute {
+    class InstancesGetEffectiveFirewallsResponse extends \Google\Collection
     {
+        protected $collection_key = 'firewalls';
+        protected $firewallPolicysType = InstancesGetEffectiveFirewallsResponseEffectiveFirewallPolicy::class;
+        protected $firewallPolicysDataType = 'array';
+        protected $firewallsType = Firewall::class;
+        protected $firewallsDataType = 'array';
+        /**
+         * [Output Only] Effective firewalls from firewall policies.
+         *
+         * @param InstancesGetEffectiveFirewallsResponseEffectiveFirewallPolicy[] $firewallPolicys
+         */
+        public function setFirewallPolicys($firewallPolicys)
+        {
+        }
+        /**
+         * @return InstancesGetEffectiveFirewallsResponseEffectiveFirewallPolicy[]
+         */
+        public function getFirewallPolicys()
+        {
+        }
+        /**
+         * Effective firewalls on the instance.
+         *
+         * @param Firewall[] $firewalls
+         */
+        public function setFirewalls($firewalls)
+        {
+        }
+        /**
+         * @return Firewall[]
+         */
+        public function getFirewalls()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InstancesGetEffectiveFirewallsResponseEffectiveFirewallPolicy[]
+     * Runtime class alias of \Google\Service\Compute\InstancesGetEffectiveFirewallsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFirewallPolicys()
-    {
-    }
-    /**
-     * Effective firewalls on the instance.
-     *
-     * @param Firewall[] $firewalls
-     */
-    public function setFirewalls($firewalls)
-    {
-    }
-    /**
-     * @return Firewall[]
-     */
-    public function getFirewalls()
+    class Google_Service_Compute_InstancesGetEffectiveFirewallsResponse extends \Google\Service\Compute\InstancesGetEffectiveFirewallsResponse
     {
     }
 }

@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataFusion;
-
-class DataResidencyAugmentedView extends \Google\Collection
-{
-    protected $collection_key = 'tpIds';
-    /**
-     * @var string[]
-     */
-    public $crGopoGuris;
-    /**
-     * @var string[]
-     */
-    public $crGopoPrefixes;
-    protected $serviceDataType = ServiceData::class;
-    protected $serviceDataDataType = '';
-    /**
-     * @var string[]
-     */
-    public $tpIds;
-    /**
-     * @param string[]
-     */
-    public function setCrGopoGuris($crGopoGuris)
+namespace Google\Service\DataFusion {
+    class DataResidencyAugmentedView extends \Google\Collection
     {
+        protected $collection_key = 'tpIds';
+        /**
+         * @var string[]
+         */
+        public $crGopoGuris;
+        /**
+         * @var string[]
+         */
+        public $crGopoPrefixes;
+        protected $serviceDataType = ServiceData::class;
+        protected $serviceDataDataType = '';
+        /**
+         * @var string[]
+         */
+        public $tpIds;
+        /**
+         * @param string[]
+         */
+        public function setCrGopoGuris($crGopoGuris)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCrGopoGuris()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setCrGopoPrefixes($crGopoPrefixes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCrGopoPrefixes()
+        {
+        }
+        /**
+         * @param ServiceData
+         */
+        public function setServiceData(ServiceData $serviceData)
+        {
+        }
+        /**
+         * @return ServiceData
+         */
+        public function getServiceData()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setTpIds($tpIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTpIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\DataFusion\DataResidencyAugmentedView registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCrGopoGuris()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setCrGopoPrefixes($crGopoPrefixes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getCrGopoPrefixes()
-    {
-    }
-    /**
-     * @param ServiceData
-     */
-    public function setServiceData(ServiceData $serviceData)
-    {
-    }
-    /**
-     * @return ServiceData
-     */
-    public function getServiceData()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setTpIds($tpIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTpIds()
+    class Google_Service_DataFusion_DataResidencyAugmentedView extends \Google\Service\DataFusion\DataResidencyAugmentedView
     {
     }
 }

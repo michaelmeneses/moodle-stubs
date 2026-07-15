@@ -21,266 +21,275 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1DataProduct extends \Google\Collection
-{
-    protected $collection_key = 'ownerEmails';
-    protected $accessGroupsType = GoogleCloudDataplexV1DataProductAccessGroup::class;
-    protected $accessGroupsDataType = 'map';
-    /**
-     * Output only. Number of Data Assets associated with this Data Product.
-     *
-     * @var int
-     */
-    public $assetCount;
-    /**
-     * Output only. The time at which the Data Product was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Optional. Description of the Data Product.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Required. User-friendly display name of the Data Product.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * This checksum is computed by the server based on the value of other fields,
-     * and may be sent on update and delete requests to ensure the client has an
-     * up-to-date value before proceeding.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * Optional. Base64 encoded image representing the Data Product. Max Size:
-     * 3.0MiB Expected image dimensions are 512x512 pixels, however the API only
-     * performs validation on size of the encoded data. Note: For byte fields, the
-     * content of the fields are base64-encoded (which increases the size of the
-     * data by 33-36%) when using JSON on the wire.
-     *
-     * @var string
-     */
-    public $icon;
-    /**
-     * Optional. User-defined labels for the Data Product.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Identifier. Resource name of the Data Product. Format: projects/{project_id
-     * _or_number}/locations/{location_id}/dataProducts/{data_product_id}.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. Emails of the Data Product owners.
-     *
-     * @var string[]
-     */
-    public $ownerEmails;
-    /**
-     * Output only. System generated unique ID for the Data Product. This ID will
-     * be different if the Data Product is deleted and re-created with the same
-     * name.
-     *
-     * @var string
-     */
-    public $uid;
-    /**
-     * Output only. The time at which the Data Product was last updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Optional. Data Product access groups by access group id as key. If Data
-     * Product is used only for packaging Data Assets, then access groups may be
-     * empty. However, if a Data Product is used for sharing Data Assets, then at
-     * least one access group must be specified.
-     *
-     * @param GoogleCloudDataplexV1DataProductAccessGroup[] $accessGroups
-     */
-    public function setAccessGroups($accessGroups)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1DataProduct extends \Google\Collection
     {
+        protected $collection_key = 'ownerEmails';
+        protected $accessGroupsType = GoogleCloudDataplexV1DataProductAccessGroup::class;
+        protected $accessGroupsDataType = 'map';
+        /**
+         * Output only. Number of Data Assets associated with this Data Product.
+         *
+         * @var int
+         */
+        public $assetCount;
+        /**
+         * Output only. The time at which the Data Product was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Optional. Description of the Data Product.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Required. User-friendly display name of the Data Product.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * This checksum is computed by the server based on the value of other fields,
+         * and may be sent on update and delete requests to ensure the client has an
+         * up-to-date value before proceeding.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * Optional. Base64 encoded image representing the Data Product. Max Size:
+         * 3.0MiB Expected image dimensions are 512x512 pixels, however the API only
+         * performs validation on size of the encoded data. Note: For byte fields, the
+         * content of the fields are base64-encoded (which increases the size of the
+         * data by 33-36%) when using JSON on the wire.
+         *
+         * @var string
+         */
+        public $icon;
+        /**
+         * Optional. User-defined labels for the Data Product.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Identifier. Resource name of the Data Product. Format: projects/{project_id
+         * _or_number}/locations/{location_id}/dataProducts/{data_product_id}.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. Emails of the Data Product owners.
+         *
+         * @var string[]
+         */
+        public $ownerEmails;
+        /**
+         * Output only. System generated unique ID for the Data Product. This ID will
+         * be different if the Data Product is deleted and re-created with the same
+         * name.
+         *
+         * @var string
+         */
+        public $uid;
+        /**
+         * Output only. The time at which the Data Product was last updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Optional. Data Product access groups by access group id as key. If Data
+         * Product is used only for packaging Data Assets, then access groups may be
+         * empty. However, if a Data Product is used for sharing Data Assets, then at
+         * least one access group must be specified.
+         *
+         * @param GoogleCloudDataplexV1DataProductAccessGroup[] $accessGroups
+         */
+        public function setAccessGroups($accessGroups)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1DataProductAccessGroup[]
+         */
+        public function getAccessGroups()
+        {
+        }
+        /**
+         * Output only. Number of Data Assets associated with this Data Product.
+         *
+         * @param int $assetCount
+         */
+        public function setAssetCount($assetCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getAssetCount()
+        {
+        }
+        /**
+         * Output only. The time at which the Data Product was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Optional. Description of the Data Product.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Required. User-friendly display name of the Data Product.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * This checksum is computed by the server based on the value of other fields,
+         * and may be sent on update and delete requests to ensure the client has an
+         * up-to-date value before proceeding.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * Optional. Base64 encoded image representing the Data Product. Max Size:
+         * 3.0MiB Expected image dimensions are 512x512 pixels, however the API only
+         * performs validation on size of the encoded data. Note: For byte fields, the
+         * content of the fields are base64-encoded (which increases the size of the
+         * data by 33-36%) when using JSON on the wire.
+         *
+         * @param string $icon
+         */
+        public function setIcon($icon)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIcon()
+        {
+        }
+        /**
+         * Optional. User-defined labels for the Data Product.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Identifier. Resource name of the Data Product. Format: projects/{project_id
+         * _or_number}/locations/{location_id}/dataProducts/{data_product_id}.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Required. Emails of the Data Product owners.
+         *
+         * @param string[] $ownerEmails
+         */
+        public function setOwnerEmails($ownerEmails)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getOwnerEmails()
+        {
+        }
+        /**
+         * Output only. System generated unique ID for the Data Product. This ID will
+         * be different if the Data Product is deleted and re-created with the same
+         * name.
+         *
+         * @param string $uid
+         */
+        public function setUid($uid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUid()
+        {
+        }
+        /**
+         * Output only. The time at which the Data Product was last updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDataplexV1DataProductAccessGroup[]
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataProduct registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccessGroups()
-    {
-    }
-    /**
-     * Output only. Number of Data Assets associated with this Data Product.
-     *
-     * @param int $assetCount
-     */
-    public function setAssetCount($assetCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getAssetCount()
-    {
-    }
-    /**
-     * Output only. The time at which the Data Product was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Optional. Description of the Data Product.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Required. User-friendly display name of the Data Product.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * This checksum is computed by the server based on the value of other fields,
-     * and may be sent on update and delete requests to ensure the client has an
-     * up-to-date value before proceeding.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * Optional. Base64 encoded image representing the Data Product. Max Size:
-     * 3.0MiB Expected image dimensions are 512x512 pixels, however the API only
-     * performs validation on size of the encoded data. Note: For byte fields, the
-     * content of the fields are base64-encoded (which increases the size of the
-     * data by 33-36%) when using JSON on the wire.
-     *
-     * @param string $icon
-     */
-    public function setIcon($icon)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIcon()
-    {
-    }
-    /**
-     * Optional. User-defined labels for the Data Product.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Identifier. Resource name of the Data Product. Format: projects/{project_id
-     * _or_number}/locations/{location_id}/dataProducts/{data_product_id}.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Required. Emails of the Data Product owners.
-     *
-     * @param string[] $ownerEmails
-     */
-    public function setOwnerEmails($ownerEmails)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getOwnerEmails()
-    {
-    }
-    /**
-     * Output only. System generated unique ID for the Data Product. This ID will
-     * be different if the Data Product is deleted and re-created with the same
-     * name.
-     *
-     * @param string $uid
-     */
-    public function setUid($uid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUid()
-    {
-    }
-    /**
-     * Output only. The time at which the Data Product was last updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1DataProduct extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataProduct
     {
     }
 }

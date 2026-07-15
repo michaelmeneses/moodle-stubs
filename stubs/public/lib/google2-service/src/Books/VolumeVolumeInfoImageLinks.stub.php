@@ -21,132 +21,141 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class VolumeVolumeInfoImageLinks extends \Google\Model
-{
-    /**
-     * Image link for extra large size (width of ~1280 pixels). (In LITE
-     * projection)
-     *
-     * @var string
-     */
-    public $extraLarge;
-    /**
-     * Image link for large size (width of ~800 pixels). (In LITE projection)
-     *
-     * @var string
-     */
-    public $large;
-    /**
-     * Image link for medium size (width of ~575 pixels). (In LITE projection)
-     *
-     * @var string
-     */
-    public $medium;
-    /**
-     * Image link for small size (width of ~300 pixels). (In LITE projection)
-     *
-     * @var string
-     */
-    public $small;
-    /**
-     * Image link for small thumbnail size (width of ~80 pixels). (In LITE
-     * projection)
-     *
-     * @var string
-     */
-    public $smallThumbnail;
-    /**
-     * Image link for thumbnail size (width of ~128 pixels). (In LITE projection)
-     *
-     * @var string
-     */
-    public $thumbnail;
-    /**
-     * Image link for extra large size (width of ~1280 pixels). (In LITE
-     * projection)
-     *
-     * @param string $extraLarge
-     */
-    public function setExtraLarge($extraLarge)
+namespace Google\Service\Books {
+    class VolumeVolumeInfoImageLinks extends \Google\Model
     {
+        /**
+         * Image link for extra large size (width of ~1280 pixels). (In LITE
+         * projection)
+         *
+         * @var string
+         */
+        public $extraLarge;
+        /**
+         * Image link for large size (width of ~800 pixels). (In LITE projection)
+         *
+         * @var string
+         */
+        public $large;
+        /**
+         * Image link for medium size (width of ~575 pixels). (In LITE projection)
+         *
+         * @var string
+         */
+        public $medium;
+        /**
+         * Image link for small size (width of ~300 pixels). (In LITE projection)
+         *
+         * @var string
+         */
+        public $small;
+        /**
+         * Image link for small thumbnail size (width of ~80 pixels). (In LITE
+         * projection)
+         *
+         * @var string
+         */
+        public $smallThumbnail;
+        /**
+         * Image link for thumbnail size (width of ~128 pixels). (In LITE projection)
+         *
+         * @var string
+         */
+        public $thumbnail;
+        /**
+         * Image link for extra large size (width of ~1280 pixels). (In LITE
+         * projection)
+         *
+         * @param string $extraLarge
+         */
+        public function setExtraLarge($extraLarge)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExtraLarge()
+        {
+        }
+        /**
+         * Image link for large size (width of ~800 pixels). (In LITE projection)
+         *
+         * @param string $large
+         */
+        public function setLarge($large)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLarge()
+        {
+        }
+        /**
+         * Image link for medium size (width of ~575 pixels). (In LITE projection)
+         *
+         * @param string $medium
+         */
+        public function setMedium($medium)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMedium()
+        {
+        }
+        /**
+         * Image link for small size (width of ~300 pixels). (In LITE projection)
+         *
+         * @param string $small
+         */
+        public function setSmall($small)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSmall()
+        {
+        }
+        /**
+         * Image link for small thumbnail size (width of ~80 pixels). (In LITE
+         * projection)
+         *
+         * @param string $smallThumbnail
+         */
+        public function setSmallThumbnail($smallThumbnail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSmallThumbnail()
+        {
+        }
+        /**
+         * Image link for thumbnail size (width of ~128 pixels). (In LITE projection)
+         *
+         * @param string $thumbnail
+         */
+        public function setThumbnail($thumbnail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getThumbnail()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Books\VolumeVolumeInfoImageLinks registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExtraLarge()
-    {
-    }
-    /**
-     * Image link for large size (width of ~800 pixels). (In LITE projection)
-     *
-     * @param string $large
-     */
-    public function setLarge($large)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLarge()
-    {
-    }
-    /**
-     * Image link for medium size (width of ~575 pixels). (In LITE projection)
-     *
-     * @param string $medium
-     */
-    public function setMedium($medium)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMedium()
-    {
-    }
-    /**
-     * Image link for small size (width of ~300 pixels). (In LITE projection)
-     *
-     * @param string $small
-     */
-    public function setSmall($small)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSmall()
-    {
-    }
-    /**
-     * Image link for small thumbnail size (width of ~80 pixels). (In LITE
-     * projection)
-     *
-     * @param string $smallThumbnail
-     */
-    public function setSmallThumbnail($smallThumbnail)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSmallThumbnail()
-    {
-    }
-    /**
-     * Image link for thumbnail size (width of ~128 pixels). (In LITE projection)
-     *
-     * @param string $thumbnail
-     */
-    public function setThumbnail($thumbnail)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getThumbnail()
+    class Google_Service_Books_VolumeVolumeInfoImageLinks extends \Google\Service\Books\VolumeVolumeInfoImageLinks
     {
     }
 }

@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManagedKafka;
-
-class SchemaRegistry extends \Google\Collection
-{
-    protected $collection_key = 'contexts';
-    /**
-     * Output only. The contexts of the schema registry instance.
-     *
-     * @var string[]
-     */
-    public $contexts;
-    /**
-     * Identifier. The name of the schema registry instance. Structured like: `pro
-     * jects/{project}/locations/{location}/schemaRegistries/{schema_registry}`
-     * The instance name {schema_registry} can contain the following: * Up to 255
-     * characters. * Letters (uppercase or lowercase), numbers, and underscores.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The contexts of the schema registry instance.
-     *
-     * @param string[] $contexts
-     */
-    public function setContexts($contexts)
+namespace Google\Service\ManagedKafka {
+    class SchemaRegistry extends \Google\Collection
     {
+        protected $collection_key = 'contexts';
+        /**
+         * Output only. The contexts of the schema registry instance.
+         *
+         * @var string[]
+         */
+        public $contexts;
+        /**
+         * Identifier. The name of the schema registry instance. Structured like: `pro
+         * jects/{project}/locations/{location}/schemaRegistries/{schema_registry}`
+         * The instance name {schema_registry} can contain the following: * Up to 255
+         * characters. * Letters (uppercase or lowercase), numbers, and underscores.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The contexts of the schema registry instance.
+         *
+         * @param string[] $contexts
+         */
+        public function setContexts($contexts)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getContexts()
+        {
+        }
+        /**
+         * Identifier. The name of the schema registry instance. Structured like: `pro
+         * jects/{project}/locations/{location}/schemaRegistries/{schema_registry}`
+         * The instance name {schema_registry} can contain the following: * Up to 255
+         * characters. * Letters (uppercase or lowercase), numbers, and underscores.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\ManagedKafka\SchemaRegistry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContexts()
-    {
-    }
-    /**
-     * Identifier. The name of the schema registry instance. Structured like: `pro
-     * jects/{project}/locations/{location}/schemaRegistries/{schema_registry}`
-     * The instance name {schema_registry} can contain the following: * Up to 255
-     * characters. * Letters (uppercase or lowercase), numbers, and underscores.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_ManagedKafka_SchemaRegistry extends \Google\Service\ManagedKafka\SchemaRegistry
     {
     }
 }

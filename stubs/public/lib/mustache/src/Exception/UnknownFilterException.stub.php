@@ -16,6 +16,7 @@
  */
 namespace Mustache\Exception;
 
+use Mustache\Exception;
 /**
  * Unknown filter exception.
  */

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class IdentityConfig extends \Google\Model
-{
-    /**
-     * Required. Map of user to service account.
-     *
-     * @var string[]
-     */
-    public $userServiceAccountMapping;
-    /**
-     * Required. Map of user to service account.
-     *
-     * @param string[] $userServiceAccountMapping
-     */
-    public function setUserServiceAccountMapping($userServiceAccountMapping)
+namespace Google\Service\Dataproc {
+    class IdentityConfig extends \Google\Model
     {
+        /**
+         * Required. Map of user to service account.
+         *
+         * @var string[]
+         */
+        public $userServiceAccountMapping;
+        /**
+         * Required. Map of user to service account.
+         *
+         * @param string[] $userServiceAccountMapping
+         */
+        public function setUserServiceAccountMapping($userServiceAccountMapping)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUserServiceAccountMapping()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Dataproc\IdentityConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUserServiceAccountMapping()
+    class Google_Service_Dataproc_IdentityConfig extends \Google\Service\Dataproc\IdentityConfig
     {
     }
 }

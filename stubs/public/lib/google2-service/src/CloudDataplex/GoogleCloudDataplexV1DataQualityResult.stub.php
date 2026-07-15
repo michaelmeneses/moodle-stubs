@@ -21,188 +21,197 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1DataQualityResult extends \Google\Collection
-{
-    protected $collection_key = 'rules';
-    protected $anomalyDetectionGeneratedAssetsType = GoogleCloudDataplexV1DataQualityResultAnomalyDetectionGeneratedAssets::class;
-    protected $anomalyDetectionGeneratedAssetsDataType = '';
-    protected $catalogPublishingStatusType = GoogleCloudDataplexV1DataScanCatalogPublishingStatus::class;
-    protected $catalogPublishingStatusDataType = '';
-    protected $columnsType = GoogleCloudDataplexV1DataQualityColumnResult::class;
-    protected $columnsDataType = 'array';
-    protected $dimensionsType = GoogleCloudDataplexV1DataQualityDimensionResult::class;
-    protected $dimensionsDataType = 'array';
-    /**
-     * Output only. Overall data quality result -- true if all rules passed.
-     *
-     * @var bool
-     */
-    public $passed;
-    protected $postScanActionsResultType = GoogleCloudDataplexV1DataQualityResultPostScanActionsResult::class;
-    protected $postScanActionsResultDataType = '';
-    /**
-     * Output only. The count of rows processed.
-     *
-     * @var string
-     */
-    public $rowCount;
-    protected $rulesType = GoogleCloudDataplexV1DataQualityRuleResult::class;
-    protected $rulesDataType = 'array';
-    protected $scannedDataType = GoogleCloudDataplexV1ScannedData::class;
-    protected $scannedDataDataType = '';
-    /**
-     * Output only. The overall data quality score.The score ranges between 0, 100
-     * (up to two decimal points).
-     *
-     * @var float
-     */
-    public $score;
-    /**
-     * Output only. The generated assets for anomaly detection.
-     *
-     * @param GoogleCloudDataplexV1DataQualityResultAnomalyDetectionGeneratedAssets $anomalyDetectionGeneratedAssets
-     */
-    public function setAnomalyDetectionGeneratedAssets(GoogleCloudDataplexV1DataQualityResultAnomalyDetectionGeneratedAssets $anomalyDetectionGeneratedAssets)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1DataQualityResult extends \Google\Collection
     {
+        protected $collection_key = 'rules';
+        protected $anomalyDetectionGeneratedAssetsType = GoogleCloudDataplexV1DataQualityResultAnomalyDetectionGeneratedAssets::class;
+        protected $anomalyDetectionGeneratedAssetsDataType = '';
+        protected $catalogPublishingStatusType = GoogleCloudDataplexV1DataScanCatalogPublishingStatus::class;
+        protected $catalogPublishingStatusDataType = '';
+        protected $columnsType = GoogleCloudDataplexV1DataQualityColumnResult::class;
+        protected $columnsDataType = 'array';
+        protected $dimensionsType = GoogleCloudDataplexV1DataQualityDimensionResult::class;
+        protected $dimensionsDataType = 'array';
+        /**
+         * Output only. Overall data quality result -- true if all rules passed.
+         *
+         * @var bool
+         */
+        public $passed;
+        protected $postScanActionsResultType = GoogleCloudDataplexV1DataQualityResultPostScanActionsResult::class;
+        protected $postScanActionsResultDataType = '';
+        /**
+         * Output only. The count of rows processed.
+         *
+         * @var string
+         */
+        public $rowCount;
+        protected $rulesType = GoogleCloudDataplexV1DataQualityRuleResult::class;
+        protected $rulesDataType = 'array';
+        protected $scannedDataType = GoogleCloudDataplexV1ScannedData::class;
+        protected $scannedDataDataType = '';
+        /**
+         * Output only. The overall data quality score.The score ranges between 0, 100
+         * (up to two decimal points).
+         *
+         * @var float
+         */
+        public $score;
+        /**
+         * Output only. The generated assets for anomaly detection.
+         *
+         * @param GoogleCloudDataplexV1DataQualityResultAnomalyDetectionGeneratedAssets $anomalyDetectionGeneratedAssets
+         */
+        public function setAnomalyDetectionGeneratedAssets(GoogleCloudDataplexV1DataQualityResultAnomalyDetectionGeneratedAssets $anomalyDetectionGeneratedAssets)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1DataQualityResultAnomalyDetectionGeneratedAssets
+         */
+        public function getAnomalyDetectionGeneratedAssets()
+        {
+        }
+        /**
+         * Output only. The status of publishing the data scan as Dataplex Universal
+         * Catalog metadata.
+         *
+         * @param GoogleCloudDataplexV1DataScanCatalogPublishingStatus $catalogPublishingStatus
+         */
+        public function setCatalogPublishingStatus(GoogleCloudDataplexV1DataScanCatalogPublishingStatus $catalogPublishingStatus)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1DataScanCatalogPublishingStatus
+         */
+        public function getCatalogPublishingStatus()
+        {
+        }
+        /**
+         * Output only. A list of results at the column level.A column will have a
+         * corresponding DataQualityColumnResult if and only if there is at least one
+         * rule with the 'column' field set to it.
+         *
+         * @param GoogleCloudDataplexV1DataQualityColumnResult[] $columns
+         */
+        public function setColumns($columns)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1DataQualityColumnResult[]
+         */
+        public function getColumns()
+        {
+        }
+        /**
+         * Output only. A list of results at the dimension level.A dimension will have
+         * a corresponding DataQualityDimensionResult if and only if there is at least
+         * one rule with the 'dimension' field set to it.
+         *
+         * @param GoogleCloudDataplexV1DataQualityDimensionResult[] $dimensions
+         */
+        public function setDimensions($dimensions)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1DataQualityDimensionResult[]
+         */
+        public function getDimensions()
+        {
+        }
+        /**
+         * Output only. Overall data quality result -- true if all rules passed.
+         *
+         * @param bool $passed
+         */
+        public function setPassed($passed)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPassed()
+        {
+        }
+        /**
+         * Output only. The result of post scan actions.
+         *
+         * @param GoogleCloudDataplexV1DataQualityResultPostScanActionsResult $postScanActionsResult
+         */
+        public function setPostScanActionsResult(GoogleCloudDataplexV1DataQualityResultPostScanActionsResult $postScanActionsResult)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1DataQualityResultPostScanActionsResult
+         */
+        public function getPostScanActionsResult()
+        {
+        }
+        /**
+         * Output only. The count of rows processed.
+         *
+         * @param string $rowCount
+         */
+        public function setRowCount($rowCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRowCount()
+        {
+        }
+        /**
+         * Output only. A list of all the rules in a job, and their results.
+         *
+         * @param GoogleCloudDataplexV1DataQualityRuleResult[] $rules
+         */
+        public function setRules($rules)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1DataQualityRuleResult[]
+         */
+        public function getRules()
+        {
+        }
+        /**
+         * Output only. The data scanned for this result.
+         *
+         * @param GoogleCloudDataplexV1ScannedData $scannedData
+         */
+        public function setScannedData(GoogleCloudDataplexV1ScannedData $scannedData)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1ScannedData
+         */
+        public function getScannedData()
+        {
+        }
+        /**
+         * Output only. The overall data quality score.The score ranges between 0, 100
+         * (up to two decimal points).
+         *
+         * @param float $score
+         */
+        public function setScore($score)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getScore()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDataplexV1DataQualityResultAnomalyDetectionGeneratedAssets
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataQualityResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnomalyDetectionGeneratedAssets()
-    {
-    }
-    /**
-     * Output only. The status of publishing the data scan as Dataplex Universal
-     * Catalog metadata.
-     *
-     * @param GoogleCloudDataplexV1DataScanCatalogPublishingStatus $catalogPublishingStatus
-     */
-    public function setCatalogPublishingStatus(GoogleCloudDataplexV1DataScanCatalogPublishingStatus $catalogPublishingStatus)
-    {
-    }
-    /**
-     * @return GoogleCloudDataplexV1DataScanCatalogPublishingStatus
-     */
-    public function getCatalogPublishingStatus()
-    {
-    }
-    /**
-     * Output only. A list of results at the column level.A column will have a
-     * corresponding DataQualityColumnResult if and only if there is at least one
-     * rule with the 'column' field set to it.
-     *
-     * @param GoogleCloudDataplexV1DataQualityColumnResult[] $columns
-     */
-    public function setColumns($columns)
-    {
-    }
-    /**
-     * @return GoogleCloudDataplexV1DataQualityColumnResult[]
-     */
-    public function getColumns()
-    {
-    }
-    /**
-     * Output only. A list of results at the dimension level.A dimension will have
-     * a corresponding DataQualityDimensionResult if and only if there is at least
-     * one rule with the 'dimension' field set to it.
-     *
-     * @param GoogleCloudDataplexV1DataQualityDimensionResult[] $dimensions
-     */
-    public function setDimensions($dimensions)
-    {
-    }
-    /**
-     * @return GoogleCloudDataplexV1DataQualityDimensionResult[]
-     */
-    public function getDimensions()
-    {
-    }
-    /**
-     * Output only. Overall data quality result -- true if all rules passed.
-     *
-     * @param bool $passed
-     */
-    public function setPassed($passed)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPassed()
-    {
-    }
-    /**
-     * Output only. The result of post scan actions.
-     *
-     * @param GoogleCloudDataplexV1DataQualityResultPostScanActionsResult $postScanActionsResult
-     */
-    public function setPostScanActionsResult(GoogleCloudDataplexV1DataQualityResultPostScanActionsResult $postScanActionsResult)
-    {
-    }
-    /**
-     * @return GoogleCloudDataplexV1DataQualityResultPostScanActionsResult
-     */
-    public function getPostScanActionsResult()
-    {
-    }
-    /**
-     * Output only. The count of rows processed.
-     *
-     * @param string $rowCount
-     */
-    public function setRowCount($rowCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRowCount()
-    {
-    }
-    /**
-     * Output only. A list of all the rules in a job, and their results.
-     *
-     * @param GoogleCloudDataplexV1DataQualityRuleResult[] $rules
-     */
-    public function setRules($rules)
-    {
-    }
-    /**
-     * @return GoogleCloudDataplexV1DataQualityRuleResult[]
-     */
-    public function getRules()
-    {
-    }
-    /**
-     * Output only. The data scanned for this result.
-     *
-     * @param GoogleCloudDataplexV1ScannedData $scannedData
-     */
-    public function setScannedData(GoogleCloudDataplexV1ScannedData $scannedData)
-    {
-    }
-    /**
-     * @return GoogleCloudDataplexV1ScannedData
-     */
-    public function getScannedData()
-    {
-    }
-    /**
-     * Output only. The overall data quality score.The score ranges between 0, 100
-     * (up to two decimal points).
-     *
-     * @param float $score
-     */
-    public function setScore($score)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getScore()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1DataQualityResult extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataQualityResult
     {
     }
 }

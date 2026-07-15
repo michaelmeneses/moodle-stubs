@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class YoutubeAndPartnersInventorySourceConfig extends \Google\Model
-{
-    /**
-     * Optional. Whether to target inventory in video apps available with Google
-     * TV.
-     *
-     * @var bool
-     */
-    public $includeGoogleTv;
-    /**
-     * Optional. Whether to target inventory on YouTube. This includes both
-     * search, channels and videos.
-     *
-     * @var bool
-     */
-    public $includeYoutube;
-    /**
-     * Whether to target inventory on a collection of partner sites and apps that
-     * follow the same brand safety standards as YouTube.
-     *
-     * @var bool
-     */
-    public $includeYoutubeVideoPartners;
-    /**
-     * Optional. Whether to target inventory in video apps available with Google
-     * TV.
-     *
-     * @param bool $includeGoogleTv
-     */
-    public function setIncludeGoogleTv($includeGoogleTv)
+namespace Google\Service\DisplayVideo {
+    class YoutubeAndPartnersInventorySourceConfig extends \Google\Model
     {
+        /**
+         * Optional. Whether to target inventory in video apps available with Google
+         * TV.
+         *
+         * @var bool
+         */
+        public $includeGoogleTv;
+        /**
+         * Optional. Whether to target inventory on YouTube. This includes both
+         * search, channels and videos.
+         *
+         * @var bool
+         */
+        public $includeYoutube;
+        /**
+         * Whether to target inventory on a collection of partner sites and apps that
+         * follow the same brand safety standards as YouTube.
+         *
+         * @var bool
+         */
+        public $includeYoutubeVideoPartners;
+        /**
+         * Optional. Whether to target inventory in video apps available with Google
+         * TV.
+         *
+         * @param bool $includeGoogleTv
+         */
+        public function setIncludeGoogleTv($includeGoogleTv)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIncludeGoogleTv()
+        {
+        }
+        /**
+         * Optional. Whether to target inventory on YouTube. This includes both
+         * search, channels and videos.
+         *
+         * @param bool $includeYoutube
+         */
+        public function setIncludeYoutube($includeYoutube)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIncludeYoutube()
+        {
+        }
+        /**
+         * Whether to target inventory on a collection of partner sites and apps that
+         * follow the same brand safety standards as YouTube.
+         *
+         * @param bool $includeYoutubeVideoPartners
+         */
+        public function setIncludeYoutubeVideoPartners($includeYoutubeVideoPartners)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIncludeYoutubeVideoPartners()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DisplayVideo\YoutubeAndPartnersInventorySourceConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIncludeGoogleTv()
-    {
-    }
-    /**
-     * Optional. Whether to target inventory on YouTube. This includes both
-     * search, channels and videos.
-     *
-     * @param bool $includeYoutube
-     */
-    public function setIncludeYoutube($includeYoutube)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIncludeYoutube()
-    {
-    }
-    /**
-     * Whether to target inventory on a collection of partner sites and apps that
-     * follow the same brand safety standards as YouTube.
-     *
-     * @param bool $includeYoutubeVideoPartners
-     */
-    public function setIncludeYoutubeVideoPartners($includeYoutubeVideoPartners)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIncludeYoutubeVideoPartners()
+    class Google_Service_DisplayVideo_YoutubeAndPartnersInventorySourceConfig extends \Google\Service\DisplayVideo\YoutubeAndPartnersInventorySourceConfig
     {
     }
 }

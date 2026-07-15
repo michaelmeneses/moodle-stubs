@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class ThreadReadState extends \Google\Model
-{
-    /**
-     * The time when the user's thread read state was updated. Usually this
-     * corresponds with the timestamp of the last read message in a thread.
-     *
-     * @var string
-     */
-    public $lastReadTime;
-    /**
-     * Resource name of the thread read state. Format:
-     * `users/{user}/spaces/{space}/threads/{thread}/threadReadState`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The time when the user's thread read state was updated. Usually this
-     * corresponds with the timestamp of the last read message in a thread.
-     *
-     * @param string $lastReadTime
-     */
-    public function setLastReadTime($lastReadTime)
+namespace Google\Service\HangoutsChat {
+    class ThreadReadState extends \Google\Model
     {
+        /**
+         * The time when the user's thread read state was updated. Usually this
+         * corresponds with the timestamp of the last read message in a thread.
+         *
+         * @var string
+         */
+        public $lastReadTime;
+        /**
+         * Resource name of the thread read state. Format:
+         * `users/{user}/spaces/{space}/threads/{thread}/threadReadState`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The time when the user's thread read state was updated. Usually this
+         * corresponds with the timestamp of the last read message in a thread.
+         *
+         * @param string $lastReadTime
+         */
+        public function setLastReadTime($lastReadTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastReadTime()
+        {
+        }
+        /**
+         * Resource name of the thread read state. Format:
+         * `users/{user}/spaces/{space}/threads/{thread}/threadReadState`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\HangoutsChat\ThreadReadState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLastReadTime()
-    {
-    }
-    /**
-     * Resource name of the thread read state. Format:
-     * `users/{user}/spaces/{space}/threads/{thread}/threadReadState`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_HangoutsChat_ThreadReadState extends \Google\Service\HangoutsChat\ThreadReadState
     {
     }
 }

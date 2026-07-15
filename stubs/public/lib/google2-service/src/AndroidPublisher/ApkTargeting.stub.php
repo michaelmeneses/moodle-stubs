@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class ApkTargeting extends \Google\Model
-{
-    protected $abiTargetingType = AbiTargeting::class;
-    protected $abiTargetingDataType = '';
-    protected $languageTargetingType = LanguageTargeting::class;
-    protected $languageTargetingDataType = '';
-    protected $multiAbiTargetingType = MultiAbiTargeting::class;
-    protected $multiAbiTargetingDataType = '';
-    protected $screenDensityTargetingType = ScreenDensityTargeting::class;
-    protected $screenDensityTargetingDataType = '';
-    protected $sdkVersionTargetingType = SdkVersionTargeting::class;
-    protected $sdkVersionTargetingDataType = '';
-    protected $textureCompressionFormatTargetingType = TextureCompressionFormatTargeting::class;
-    protected $textureCompressionFormatTargetingDataType = '';
-    /**
-     * The abi that the apk targets
-     *
-     * @param AbiTargeting $abiTargeting
-     */
-    public function setAbiTargeting(AbiTargeting $abiTargeting)
+namespace Google\Service\AndroidPublisher {
+    class ApkTargeting extends \Google\Model
     {
+        protected $abiTargetingType = AbiTargeting::class;
+        protected $abiTargetingDataType = '';
+        protected $languageTargetingType = LanguageTargeting::class;
+        protected $languageTargetingDataType = '';
+        protected $multiAbiTargetingType = MultiAbiTargeting::class;
+        protected $multiAbiTargetingDataType = '';
+        protected $screenDensityTargetingType = ScreenDensityTargeting::class;
+        protected $screenDensityTargetingDataType = '';
+        protected $sdkVersionTargetingType = SdkVersionTargeting::class;
+        protected $sdkVersionTargetingDataType = '';
+        protected $textureCompressionFormatTargetingType = TextureCompressionFormatTargeting::class;
+        protected $textureCompressionFormatTargetingDataType = '';
+        /**
+         * The abi that the apk targets
+         *
+         * @param AbiTargeting $abiTargeting
+         */
+        public function setAbiTargeting(AbiTargeting $abiTargeting)
+        {
+        }
+        /**
+         * @return AbiTargeting
+         */
+        public function getAbiTargeting()
+        {
+        }
+        /**
+         * The language that the apk targets
+         *
+         * @param LanguageTargeting $languageTargeting
+         */
+        public function setLanguageTargeting(LanguageTargeting $languageTargeting)
+        {
+        }
+        /**
+         * @return LanguageTargeting
+         */
+        public function getLanguageTargeting()
+        {
+        }
+        /**
+         * Multi-api-level targeting.
+         *
+         * @param MultiAbiTargeting $multiAbiTargeting
+         */
+        public function setMultiAbiTargeting(MultiAbiTargeting $multiAbiTargeting)
+        {
+        }
+        /**
+         * @return MultiAbiTargeting
+         */
+        public function getMultiAbiTargeting()
+        {
+        }
+        /**
+         * The screen density that this apk supports.
+         *
+         * @param ScreenDensityTargeting $screenDensityTargeting
+         */
+        public function setScreenDensityTargeting(ScreenDensityTargeting $screenDensityTargeting)
+        {
+        }
+        /**
+         * @return ScreenDensityTargeting
+         */
+        public function getScreenDensityTargeting()
+        {
+        }
+        /**
+         * The sdk version that the apk targets
+         *
+         * @param SdkVersionTargeting $sdkVersionTargeting
+         */
+        public function setSdkVersionTargeting(SdkVersionTargeting $sdkVersionTargeting)
+        {
+        }
+        /**
+         * @return SdkVersionTargeting
+         */
+        public function getSdkVersionTargeting()
+        {
+        }
+        /**
+         * Texture-compression-format-level targeting
+         *
+         * @param TextureCompressionFormatTargeting $textureCompressionFormatTargeting
+         */
+        public function setTextureCompressionFormatTargeting(TextureCompressionFormatTargeting $textureCompressionFormatTargeting)
+        {
+        }
+        /**
+         * @return TextureCompressionFormatTargeting
+         */
+        public function getTextureCompressionFormatTargeting()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AbiTargeting
+     * Runtime class alias of \Google\Service\AndroidPublisher\ApkTargeting registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAbiTargeting()
-    {
-    }
-    /**
-     * The language that the apk targets
-     *
-     * @param LanguageTargeting $languageTargeting
-     */
-    public function setLanguageTargeting(LanguageTargeting $languageTargeting)
-    {
-    }
-    /**
-     * @return LanguageTargeting
-     */
-    public function getLanguageTargeting()
-    {
-    }
-    /**
-     * Multi-api-level targeting.
-     *
-     * @param MultiAbiTargeting $multiAbiTargeting
-     */
-    public function setMultiAbiTargeting(MultiAbiTargeting $multiAbiTargeting)
-    {
-    }
-    /**
-     * @return MultiAbiTargeting
-     */
-    public function getMultiAbiTargeting()
-    {
-    }
-    /**
-     * The screen density that this apk supports.
-     *
-     * @param ScreenDensityTargeting $screenDensityTargeting
-     */
-    public function setScreenDensityTargeting(ScreenDensityTargeting $screenDensityTargeting)
-    {
-    }
-    /**
-     * @return ScreenDensityTargeting
-     */
-    public function getScreenDensityTargeting()
-    {
-    }
-    /**
-     * The sdk version that the apk targets
-     *
-     * @param SdkVersionTargeting $sdkVersionTargeting
-     */
-    public function setSdkVersionTargeting(SdkVersionTargeting $sdkVersionTargeting)
-    {
-    }
-    /**
-     * @return SdkVersionTargeting
-     */
-    public function getSdkVersionTargeting()
-    {
-    }
-    /**
-     * Texture-compression-format-level targeting
-     *
-     * @param TextureCompressionFormatTargeting $textureCompressionFormatTargeting
-     */
-    public function setTextureCompressionFormatTargeting(TextureCompressionFormatTargeting $textureCompressionFormatTargeting)
-    {
-    }
-    /**
-     * @return TextureCompressionFormatTargeting
-     */
-    public function getTextureCompressionFormatTargeting()
+    class Google_Service_AndroidPublisher_ApkTargeting extends \Google\Service\AndroidPublisher\ApkTargeting
     {
     }
 }

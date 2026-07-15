@@ -21,107 +21,116 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastore;
-
-class LookupResponse extends \Google\Collection
-{
-    protected $collection_key = 'missing';
-    protected $deferredType = Key::class;
-    protected $deferredDataType = 'array';
-    protected $foundType = EntityResult::class;
-    protected $foundDataType = 'array';
-    protected $missingType = EntityResult::class;
-    protected $missingDataType = 'array';
-    /**
-     * The time at which these entities were read or found missing.
-     *
-     * @var string
-     */
-    public $readTime;
-    /**
-     * The identifier of the transaction that was started as part of this Lookup
-     * request. Set only when ReadOptions.new_transaction was set in
-     * LookupRequest.read_options.
-     *
-     * @var string
-     */
-    public $transaction;
-    /**
-     * A list of keys that were not looked up due to resource constraints. The
-     * order of results in this field is undefined and has no relation to the
-     * order of the keys in the input.
-     *
-     * @param Key[] $deferred
-     */
-    public function setDeferred($deferred)
+namespace Google\Service\Datastore {
+    class LookupResponse extends \Google\Collection
     {
+        protected $collection_key = 'missing';
+        protected $deferredType = Key::class;
+        protected $deferredDataType = 'array';
+        protected $foundType = EntityResult::class;
+        protected $foundDataType = 'array';
+        protected $missingType = EntityResult::class;
+        protected $missingDataType = 'array';
+        /**
+         * The time at which these entities were read or found missing.
+         *
+         * @var string
+         */
+        public $readTime;
+        /**
+         * The identifier of the transaction that was started as part of this Lookup
+         * request. Set only when ReadOptions.new_transaction was set in
+         * LookupRequest.read_options.
+         *
+         * @var string
+         */
+        public $transaction;
+        /**
+         * A list of keys that were not looked up due to resource constraints. The
+         * order of results in this field is undefined and has no relation to the
+         * order of the keys in the input.
+         *
+         * @param Key[] $deferred
+         */
+        public function setDeferred($deferred)
+        {
+        }
+        /**
+         * @return Key[]
+         */
+        public function getDeferred()
+        {
+        }
+        /**
+         * Entities found as `ResultType.FULL` entities. The order of results in this
+         * field is undefined and has no relation to the order of the keys in the
+         * input.
+         *
+         * @param EntityResult[] $found
+         */
+        public function setFound($found)
+        {
+        }
+        /**
+         * @return EntityResult[]
+         */
+        public function getFound()
+        {
+        }
+        /**
+         * Entities not found as `ResultType.KEY_ONLY` entities. The order of results
+         * in this field is undefined and has no relation to the order of the keys in
+         * the input.
+         *
+         * @param EntityResult[] $missing
+         */
+        public function setMissing($missing)
+        {
+        }
+        /**
+         * @return EntityResult[]
+         */
+        public function getMissing()
+        {
+        }
+        /**
+         * The time at which these entities were read or found missing.
+         *
+         * @param string $readTime
+         */
+        public function setReadTime($readTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReadTime()
+        {
+        }
+        /**
+         * The identifier of the transaction that was started as part of this Lookup
+         * request. Set only when ReadOptions.new_transaction was set in
+         * LookupRequest.read_options.
+         *
+         * @param string $transaction
+         */
+        public function setTransaction($transaction)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTransaction()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Key[]
+     * Runtime class alias of \Google\Service\Datastore\LookupResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeferred()
-    {
-    }
-    /**
-     * Entities found as `ResultType.FULL` entities. The order of results in this
-     * field is undefined and has no relation to the order of the keys in the
-     * input.
-     *
-     * @param EntityResult[] $found
-     */
-    public function setFound($found)
-    {
-    }
-    /**
-     * @return EntityResult[]
-     */
-    public function getFound()
-    {
-    }
-    /**
-     * Entities not found as `ResultType.KEY_ONLY` entities. The order of results
-     * in this field is undefined and has no relation to the order of the keys in
-     * the input.
-     *
-     * @param EntityResult[] $missing
-     */
-    public function setMissing($missing)
-    {
-    }
-    /**
-     * @return EntityResult[]
-     */
-    public function getMissing()
-    {
-    }
-    /**
-     * The time at which these entities were read or found missing.
-     *
-     * @param string $readTime
-     */
-    public function setReadTime($readTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReadTime()
-    {
-    }
-    /**
-     * The identifier of the transaction that was started as part of this Lookup
-     * request. Set only when ReadOptions.new_transaction was set in
-     * LookupRequest.read_options.
-     *
-     * @param string $transaction
-     */
-    public function setTransaction($transaction)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTransaction()
+    class Google_Service_Datastore_LookupResponse extends \Google\Service\Datastore\LookupResponse
     {
     }
 }

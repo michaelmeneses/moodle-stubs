@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class RotateServerCaContext extends \Google\Model
-{
-    /**
-     * This is always `sql#rotateServerCaContext`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The fingerprint of the next version to be rotated to. If left unspecified,
-     * will be rotated to the most recently added server CA version.
-     *
-     * @var string
-     */
-    public $nextVersion;
-    /**
-     * This is always `sql#rotateServerCaContext`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\SQLAdmin {
+    class RotateServerCaContext extends \Google\Model
     {
+        /**
+         * This is always `sql#rotateServerCaContext`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The fingerprint of the next version to be rotated to. If left unspecified,
+         * will be rotated to the most recently added server CA version.
+         *
+         * @var string
+         */
+        public $nextVersion;
+        /**
+         * This is always `sql#rotateServerCaContext`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The fingerprint of the next version to be rotated to. If left unspecified,
+         * will be rotated to the most recently added server CA version.
+         *
+         * @param string $nextVersion
+         */
+        public function setNextVersion($nextVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SQLAdmin\RotateServerCaContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * The fingerprint of the next version to be rotated to. If left unspecified,
-     * will be rotated to the most recently added server CA version.
-     *
-     * @param string $nextVersion
-     */
-    public function setNextVersion($nextVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextVersion()
+    class Google_Service_SQLAdmin_RotateServerCaContext extends \Google\Service\SQLAdmin\RotateServerCaContext
     {
     }
 }

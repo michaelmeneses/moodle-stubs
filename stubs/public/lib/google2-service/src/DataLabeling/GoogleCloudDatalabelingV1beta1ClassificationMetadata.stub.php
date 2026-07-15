@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1ClassificationMetadata extends \Google\Model
-{
-    /**
-     * Whether the classification task is multi-label or not.
-     *
-     * @var bool
-     */
-    public $isMultiLabel;
-    /**
-     * Whether the classification task is multi-label or not.
-     *
-     * @param bool $isMultiLabel
-     */
-    public function setIsMultiLabel($isMultiLabel)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1ClassificationMetadata extends \Google\Model
     {
+        /**
+         * Whether the classification task is multi-label or not.
+         *
+         * @var bool
+         */
+        public $isMultiLabel;
+        /**
+         * Whether the classification task is multi-label or not.
+         *
+         * @param bool $isMultiLabel
+         */
+        public function setIsMultiLabel($isMultiLabel)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsMultiLabel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1ClassificationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIsMultiLabel()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1ClassificationMetadata extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1ClassificationMetadata
     {
     }
 }

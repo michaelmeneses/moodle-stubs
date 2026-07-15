@@ -21,48 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for CloudSourceRepositories (v1).
- *
- * <p>
- * Accesses source code repositories hosted by Google. Important: Cloud Source
- * Repositories is scheduled for end of sales starting June 17, 2024. Customers
- * who have enabled the API prior to this date will not be affected and can
- * continue to use Cloud Source Repositories. Organizations or projects who have
- * not previously enabled the API cannot use Cloud Source Repositories after
- * this date. View Cloud Source Repositories documentation for more info.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://cloud.google.com/source-repositories/docs" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class CloudSourceRepositories extends \Google\Service
-{
-    /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
-    const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
-    /** Manage your source code repositories. */
-    const SOURCE_FULL_CONTROL = "https://www.googleapis.com/auth/source.full_control";
-    /** View the contents of your source code repositories. */
-    const SOURCE_READ_ONLY = "https://www.googleapis.com/auth/source.read_only";
-    /** Manage the contents of your source code repositories. */
-    const SOURCE_READ_WRITE = "https://www.googleapis.com/auth/source.read_write";
-    public $projects;
-    public $projects_repos;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the CloudSourceRepositories
-     * service.
+     * Service definition for CloudSourceRepositories (v1).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * Accesses source code repositories hosted by Google. Important: Cloud Source
+     * Repositories is scheduled for end of sales starting June 17, 2024. Customers
+     * who have enabled the API prior to this date will not be affected and can
+     * continue to use Cloud Source Repositories. Organizations or projects who have
+     * not previously enabled the API cannot use Cloud Source Repositories after
+     * this date. View Cloud Source Repositories documentation for more info.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://cloud.google.com/source-repositories/docs" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class CloudSourceRepositories extends \Google\Service
+    {
+        /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
+        const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
+        /** Manage your source code repositories. */
+        const SOURCE_FULL_CONTROL = "https://www.googleapis.com/auth/source.full_control";
+        /** View the contents of your source code repositories. */
+        const SOURCE_READ_ONLY = "https://www.googleapis.com/auth/source.read_only";
+        /** Manage the contents of your source code repositories. */
+        const SOURCE_READ_WRITE = "https://www.googleapis.com/auth/source.read_write";
+        public $projects;
+        public $projects_repos;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the CloudSourceRepositories
+         * service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudSourceRepositories registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudSourceRepositories extends \Google\Service\CloudSourceRepositories
     {
     }
 }

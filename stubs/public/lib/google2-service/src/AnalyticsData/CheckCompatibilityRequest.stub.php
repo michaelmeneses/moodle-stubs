@@ -21,117 +21,126 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsData;
-
-class CheckCompatibilityRequest extends \Google\Collection
-{
-    /**
-     * Unspecified compatibility.
-     */
-    public const COMPATIBILITY_FILTER_COMPATIBILITY_UNSPECIFIED = 'COMPATIBILITY_UNSPECIFIED';
-    /**
-     * The dimension or metric is compatible. This dimension or metric can be
-     * successfully added to a report.
-     */
-    public const COMPATIBILITY_FILTER_COMPATIBLE = 'COMPATIBLE';
-    /**
-     * The dimension or metric is incompatible. This dimension or metric cannot be
-     * successfully added to a report.
-     */
-    public const COMPATIBILITY_FILTER_INCOMPATIBLE = 'INCOMPATIBLE';
-    protected $collection_key = 'metrics';
-    /**
-     * Filters the dimensions and metrics in the response to just this
-     * compatibility. Commonly used as `”compatibilityFilter”: “COMPATIBLE”` to
-     * only return compatible dimensions & metrics.
-     *
-     * @var string
-     */
-    public $compatibilityFilter;
-    protected $dimensionFilterType = FilterExpression::class;
-    protected $dimensionFilterDataType = '';
-    protected $dimensionsType = Dimension::class;
-    protected $dimensionsDataType = 'array';
-    protected $metricFilterType = FilterExpression::class;
-    protected $metricFilterDataType = '';
-    protected $metricsType = Metric::class;
-    protected $metricsDataType = 'array';
-    /**
-     * Filters the dimensions and metrics in the response to just this
-     * compatibility. Commonly used as `”compatibilityFilter”: “COMPATIBLE”` to
-     * only return compatible dimensions & metrics.
-     *
-     * Accepted values: COMPATIBILITY_UNSPECIFIED, COMPATIBLE, INCOMPATIBLE
-     *
-     * @param self::COMPATIBILITY_FILTER_* $compatibilityFilter
-     */
-    public function setCompatibilityFilter($compatibilityFilter)
+namespace Google\Service\AnalyticsData {
+    class CheckCompatibilityRequest extends \Google\Collection
     {
+        /**
+         * Unspecified compatibility.
+         */
+        public const COMPATIBILITY_FILTER_COMPATIBILITY_UNSPECIFIED = 'COMPATIBILITY_UNSPECIFIED';
+        /**
+         * The dimension or metric is compatible. This dimension or metric can be
+         * successfully added to a report.
+         */
+        public const COMPATIBILITY_FILTER_COMPATIBLE = 'COMPATIBLE';
+        /**
+         * The dimension or metric is incompatible. This dimension or metric cannot be
+         * successfully added to a report.
+         */
+        public const COMPATIBILITY_FILTER_INCOMPATIBLE = 'INCOMPATIBLE';
+        protected $collection_key = 'metrics';
+        /**
+         * Filters the dimensions and metrics in the response to just this
+         * compatibility. Commonly used as `”compatibilityFilter”: “COMPATIBLE”` to
+         * only return compatible dimensions & metrics.
+         *
+         * @var string
+         */
+        public $compatibilityFilter;
+        protected $dimensionFilterType = FilterExpression::class;
+        protected $dimensionFilterDataType = '';
+        protected $dimensionsType = Dimension::class;
+        protected $dimensionsDataType = 'array';
+        protected $metricFilterType = FilterExpression::class;
+        protected $metricFilterDataType = '';
+        protected $metricsType = Metric::class;
+        protected $metricsDataType = 'array';
+        /**
+         * Filters the dimensions and metrics in the response to just this
+         * compatibility. Commonly used as `”compatibilityFilter”: “COMPATIBLE”` to
+         * only return compatible dimensions & metrics.
+         *
+         * Accepted values: COMPATIBILITY_UNSPECIFIED, COMPATIBLE, INCOMPATIBLE
+         *
+         * @param self::COMPATIBILITY_FILTER_* $compatibilityFilter
+         */
+        public function setCompatibilityFilter($compatibilityFilter)
+        {
+        }
+        /**
+         * @return self::COMPATIBILITY_FILTER_*
+         */
+        public function getCompatibilityFilter()
+        {
+        }
+        /**
+         * The filter clause of dimensions. `dimensionFilter` should be the same value
+         * as in your `runReport` request.
+         *
+         * @param FilterExpression $dimensionFilter
+         */
+        public function setDimensionFilter(FilterExpression $dimensionFilter)
+        {
+        }
+        /**
+         * @return FilterExpression
+         */
+        public function getDimensionFilter()
+        {
+        }
+        /**
+         * The dimensions in this report. `dimensions` should be the same value as in
+         * your `runReport` request.
+         *
+         * @param Dimension[] $dimensions
+         */
+        public function setDimensions($dimensions)
+        {
+        }
+        /**
+         * @return Dimension[]
+         */
+        public function getDimensions()
+        {
+        }
+        /**
+         * The filter clause of metrics. `metricFilter` should be the same value as in
+         * your `runReport` request
+         *
+         * @param FilterExpression $metricFilter
+         */
+        public function setMetricFilter(FilterExpression $metricFilter)
+        {
+        }
+        /**
+         * @return FilterExpression
+         */
+        public function getMetricFilter()
+        {
+        }
+        /**
+         * The metrics in this report. `metrics` should be the same value as in your
+         * `runReport` request.
+         *
+         * @param Metric[] $metrics
+         */
+        public function setMetrics($metrics)
+        {
+        }
+        /**
+         * @return Metric[]
+         */
+        public function getMetrics()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::COMPATIBILITY_FILTER_*
+     * Runtime class alias of \Google\Service\AnalyticsData\CheckCompatibilityRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCompatibilityFilter()
-    {
-    }
-    /**
-     * The filter clause of dimensions. `dimensionFilter` should be the same value
-     * as in your `runReport` request.
-     *
-     * @param FilterExpression $dimensionFilter
-     */
-    public function setDimensionFilter(FilterExpression $dimensionFilter)
-    {
-    }
-    /**
-     * @return FilterExpression
-     */
-    public function getDimensionFilter()
-    {
-    }
-    /**
-     * The dimensions in this report. `dimensions` should be the same value as in
-     * your `runReport` request.
-     *
-     * @param Dimension[] $dimensions
-     */
-    public function setDimensions($dimensions)
-    {
-    }
-    /**
-     * @return Dimension[]
-     */
-    public function getDimensions()
-    {
-    }
-    /**
-     * The filter clause of metrics. `metricFilter` should be the same value as in
-     * your `runReport` request
-     *
-     * @param FilterExpression $metricFilter
-     */
-    public function setMetricFilter(FilterExpression $metricFilter)
-    {
-    }
-    /**
-     * @return FilterExpression
-     */
-    public function getMetricFilter()
-    {
-    }
-    /**
-     * The metrics in this report. `metrics` should be the same value as in your
-     * `runReport` request.
-     *
-     * @param Metric[] $metrics
-     */
-    public function setMetrics($metrics)
-    {
-    }
-    /**
-     * @return Metric[]
-     */
-    public function getMetrics()
+    class Google_Service_AnalyticsData_CheckCompatibilityRequest extends \Google\Service\AnalyticsData\CheckCompatibilityRequest
     {
     }
 }

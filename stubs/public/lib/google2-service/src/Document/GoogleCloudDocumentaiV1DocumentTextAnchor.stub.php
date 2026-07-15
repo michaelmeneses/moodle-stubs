@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1DocumentTextAnchor extends \Google\Collection
-{
-    protected $collection_key = 'textSegments';
-    /**
-     * Contains the content of the text span so that users do not have to look it
-     * up in the text_segments. It is always populated for formFields.
-     *
-     * @var string
-     */
-    public $content;
-    protected $textSegmentsType = GoogleCloudDocumentaiV1DocumentTextAnchorTextSegment::class;
-    protected $textSegmentsDataType = 'array';
-    /**
-     * Contains the content of the text span so that users do not have to look it
-     * up in the text_segments. It is always populated for formFields.
-     *
-     * @param string $content
-     */
-    public function setContent($content)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1DocumentTextAnchor extends \Google\Collection
     {
+        protected $collection_key = 'textSegments';
+        /**
+         * Contains the content of the text span so that users do not have to look it
+         * up in the text_segments. It is always populated for formFields.
+         *
+         * @var string
+         */
+        public $content;
+        protected $textSegmentsType = GoogleCloudDocumentaiV1DocumentTextAnchorTextSegment::class;
+        protected $textSegmentsDataType = 'array';
+        /**
+         * Contains the content of the text span so that users do not have to look it
+         * up in the text_segments. It is always populated for formFields.
+         *
+         * @param string $content
+         */
+        public function setContent($content)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContent()
+        {
+        }
+        /**
+         * The text segments from the Document.text.
+         *
+         * @param GoogleCloudDocumentaiV1DocumentTextAnchorTextSegment[] $textSegments
+         */
+        public function setTextSegments($textSegments)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1DocumentTextAnchorTextSegment[]
+         */
+        public function getTextSegments()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1DocumentTextAnchor registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContent()
-    {
-    }
-    /**
-     * The text segments from the Document.text.
-     *
-     * @param GoogleCloudDocumentaiV1DocumentTextAnchorTextSegment[] $textSegments
-     */
-    public function setTextSegments($textSegments)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1DocumentTextAnchorTextSegment[]
-     */
-    public function getTextSegments()
+    class Google_Service_Document_GoogleCloudDocumentaiV1DocumentTextAnchor extends \Google\Service\Document\GoogleCloudDocumentaiV1DocumentTextAnchor
     {
     }
 }

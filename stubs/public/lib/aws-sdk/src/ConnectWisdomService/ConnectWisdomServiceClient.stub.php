@@ -8,6 +8,7 @@
  */
 namespace Aws\ConnectWisdomService;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon Connect Wisdom Service** service.
  * @method \Aws\Result createAssistant(array $args = [])

@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class Package extends \Google\Collection
-{
-    protected $collection_key = 'distribution';
-    protected $distributionType = Distribution::class;
-    protected $distributionDataType = 'array';
-    public $name;
+namespace Google\Service\ContainerAnalysis {
+    class Package extends \Google\Collection
+    {
+        protected $collection_key = 'distribution';
+        protected $distributionType = Distribution::class;
+        protected $distributionDataType = 'array';
+        public $name;
+        /**
+         * @param Distribution[]
+         */
+        public function setDistribution($distribution)
+        {
+        }
+        /**
+         * @return Distribution[]
+         */
+        public function getDistribution()
+        {
+        }
+        public function setName($name)
+        {
+        }
+        public function getName()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @param Distribution[]
+     * Runtime class alias of \Google\Service\ContainerAnalysis\Package registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setDistribution($distribution)
-    {
-    }
-    /**
-     * @return Distribution[]
-     */
-    public function getDistribution()
-    {
-    }
-    public function setName($name)
-    {
-    }
-    public function getName()
+    class Google_Service_ContainerAnalysis_Package extends \Google\Service\ContainerAnalysis\Package
     {
     }
 }

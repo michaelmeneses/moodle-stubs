@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataform;
-
-class WriteFile extends \Google\Model
-{
-    /**
-     * The file's contents.
-     *
-     * @var string
-     */
-    public $contents;
-    /**
-     * The file's contents.
-     *
-     * @param string $contents
-     */
-    public function setContents($contents)
+namespace Google\Service\Dataform {
+    class WriteFile extends \Google\Model
     {
+        /**
+         * The file's contents.
+         *
+         * @var string
+         */
+        public $contents;
+        /**
+         * The file's contents.
+         *
+         * @param string $contents
+         */
+        public function setContents($contents)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContents()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataform\WriteFile registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContents()
+    class Google_Service_Dataform_WriteFile extends \Google\Service\Dataform\WriteFile
     {
     }
 }

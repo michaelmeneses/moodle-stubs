@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class OrdersGetTestOrderTemplateResponse extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $kind;
-    protected $templateType = TestOrder::class;
-    protected $templateDataType = '';
-    /**
-     * @param string
-     */
-    public function setKind($kind)
+namespace Google\Service\ShoppingContent {
+    class OrdersGetTestOrderTemplateResponse extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $kind;
+        protected $templateType = TestOrder::class;
+        protected $templateDataType = '';
+        /**
+         * @param string
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * @param TestOrder
+         */
+        public function setTemplate(TestOrder $template)
+        {
+        }
+        /**
+         * @return TestOrder
+         */
+        public function getTemplate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\OrdersGetTestOrderTemplateResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * @param TestOrder
-     */
-    public function setTemplate(TestOrder $template)
-    {
-    }
-    /**
-     * @return TestOrder
-     */
-    public function getTemplate()
+    class Google_Service_ShoppingContent_OrdersGetTestOrderTemplateResponse extends \Google\Service\ShoppingContent\OrdersGetTestOrderTemplateResponse
     {
     }
 }

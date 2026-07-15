@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class DeobfuscationFile extends \Google\Model
-{
-    /**
-     * Unspecified deobfuscation file type.
-     */
-    public const SYMBOL_TYPE_deobfuscationFileTypeUnspecified = 'deobfuscationFileTypeUnspecified';
-    /**
-     * Proguard deobfuscation file type.
-     */
-    public const SYMBOL_TYPE_proguard = 'proguard';
-    /**
-     * Native debugging symbols file type.
-     */
-    public const SYMBOL_TYPE_nativeCode = 'nativeCode';
-    /**
-     * The type of the deobfuscation file.
-     *
-     * @var string
-     */
-    public $symbolType;
-    /**
-     * The type of the deobfuscation file.
-     *
-     * Accepted values: deobfuscationFileTypeUnspecified, proguard, nativeCode
-     *
-     * @param self::SYMBOL_TYPE_* $symbolType
-     */
-    public function setSymbolType($symbolType)
+namespace Google\Service\AndroidPublisher {
+    class DeobfuscationFile extends \Google\Model
     {
+        /**
+         * Unspecified deobfuscation file type.
+         */
+        public const SYMBOL_TYPE_deobfuscationFileTypeUnspecified = 'deobfuscationFileTypeUnspecified';
+        /**
+         * Proguard deobfuscation file type.
+         */
+        public const SYMBOL_TYPE_proguard = 'proguard';
+        /**
+         * Native debugging symbols file type.
+         */
+        public const SYMBOL_TYPE_nativeCode = 'nativeCode';
+        /**
+         * The type of the deobfuscation file.
+         *
+         * @var string
+         */
+        public $symbolType;
+        /**
+         * The type of the deobfuscation file.
+         *
+         * Accepted values: deobfuscationFileTypeUnspecified, proguard, nativeCode
+         *
+         * @param self::SYMBOL_TYPE_* $symbolType
+         */
+        public function setSymbolType($symbolType)
+        {
+        }
+        /**
+         * @return self::SYMBOL_TYPE_*
+         */
+        public function getSymbolType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::SYMBOL_TYPE_*
+     * Runtime class alias of \Google\Service\AndroidPublisher\DeobfuscationFile registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSymbolType()
+    class Google_Service_AndroidPublisher_DeobfuscationFile extends \Google\Service\AndroidPublisher\DeobfuscationFile
     {
     }
 }

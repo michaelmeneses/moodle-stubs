@@ -21,102 +21,111 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAlloyDBAdmin;
-
-class CsvExportOptions extends \Google\Model
-{
-    /**
-     * Optional. Specifies the character that should appear before a data
-     * character that needs to be escaped. The default is the same as quote
-     * character. The value of this argument has to be a character in Hex ASCII
-     * Code.
-     *
-     * @var string
-     */
-    public $escapeCharacter;
-    /**
-     * Optional. Specifies the character that separates columns within each row
-     * (line) of the file. The default is comma. The value of this argument has to
-     * be a character in Hex ASCII Code.
-     *
-     * @var string
-     */
-    public $fieldDelimiter;
-    /**
-     * Optional. Specifies the quoting character to be used when a data value is
-     * quoted. The default is double-quote. The value of this argument has to be a
-     * character in Hex ASCII Code.
-     *
-     * @var string
-     */
-    public $quoteCharacter;
-    /**
-     * Required. The SELECT query used to extract the data.
-     *
-     * @var string
-     */
-    public $selectQuery;
-    /**
-     * Optional. Specifies the character that should appear before a data
-     * character that needs to be escaped. The default is the same as quote
-     * character. The value of this argument has to be a character in Hex ASCII
-     * Code.
-     *
-     * @param string $escapeCharacter
-     */
-    public function setEscapeCharacter($escapeCharacter)
+namespace Google\Service\CloudAlloyDBAdmin {
+    class CsvExportOptions extends \Google\Model
     {
+        /**
+         * Optional. Specifies the character that should appear before a data
+         * character that needs to be escaped. The default is the same as quote
+         * character. The value of this argument has to be a character in Hex ASCII
+         * Code.
+         *
+         * @var string
+         */
+        public $escapeCharacter;
+        /**
+         * Optional. Specifies the character that separates columns within each row
+         * (line) of the file. The default is comma. The value of this argument has to
+         * be a character in Hex ASCII Code.
+         *
+         * @var string
+         */
+        public $fieldDelimiter;
+        /**
+         * Optional. Specifies the quoting character to be used when a data value is
+         * quoted. The default is double-quote. The value of this argument has to be a
+         * character in Hex ASCII Code.
+         *
+         * @var string
+         */
+        public $quoteCharacter;
+        /**
+         * Required. The SELECT query used to extract the data.
+         *
+         * @var string
+         */
+        public $selectQuery;
+        /**
+         * Optional. Specifies the character that should appear before a data
+         * character that needs to be escaped. The default is the same as quote
+         * character. The value of this argument has to be a character in Hex ASCII
+         * Code.
+         *
+         * @param string $escapeCharacter
+         */
+        public function setEscapeCharacter($escapeCharacter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEscapeCharacter()
+        {
+        }
+        /**
+         * Optional. Specifies the character that separates columns within each row
+         * (line) of the file. The default is comma. The value of this argument has to
+         * be a character in Hex ASCII Code.
+         *
+         * @param string $fieldDelimiter
+         */
+        public function setFieldDelimiter($fieldDelimiter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFieldDelimiter()
+        {
+        }
+        /**
+         * Optional. Specifies the quoting character to be used when a data value is
+         * quoted. The default is double-quote. The value of this argument has to be a
+         * character in Hex ASCII Code.
+         *
+         * @param string $quoteCharacter
+         */
+        public function setQuoteCharacter($quoteCharacter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQuoteCharacter()
+        {
+        }
+        /**
+         * Required. The SELECT query used to extract the data.
+         *
+         * @param string $selectQuery
+         */
+        public function setSelectQuery($selectQuery)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelectQuery()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudAlloyDBAdmin\CsvExportOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEscapeCharacter()
-    {
-    }
-    /**
-     * Optional. Specifies the character that separates columns within each row
-     * (line) of the file. The default is comma. The value of this argument has to
-     * be a character in Hex ASCII Code.
-     *
-     * @param string $fieldDelimiter
-     */
-    public function setFieldDelimiter($fieldDelimiter)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFieldDelimiter()
-    {
-    }
-    /**
-     * Optional. Specifies the quoting character to be used when a data value is
-     * quoted. The default is double-quote. The value of this argument has to be a
-     * character in Hex ASCII Code.
-     *
-     * @param string $quoteCharacter
-     */
-    public function setQuoteCharacter($quoteCharacter)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQuoteCharacter()
-    {
-    }
-    /**
-     * Required. The SELECT query used to extract the data.
-     *
-     * @param string $selectQuery
-     */
-    public function setSelectQuery($selectQuery)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelectQuery()
+    class Google_Service_CloudAlloyDBAdmin_CsvExportOptions extends \Google\Service\CloudAlloyDBAdmin\CsvExportOptions
     {
     }
 }

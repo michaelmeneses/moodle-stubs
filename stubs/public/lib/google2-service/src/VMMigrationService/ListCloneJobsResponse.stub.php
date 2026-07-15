@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMMigrationService;
-
-class ListCloneJobsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $cloneJobsType = CloneJob::class;
-    protected $cloneJobsDataType = 'array';
-    /**
-     * Output only. A token, which can be sent as `page_token` to retrieve the
-     * next page. If this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Output only. Locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * Output only. The list of clone jobs response.
-     *
-     * @param CloneJob[] $cloneJobs
-     */
-    public function setCloneJobs($cloneJobs)
+namespace Google\Service\VMMigrationService {
+    class ListCloneJobsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $cloneJobsType = CloneJob::class;
+        protected $cloneJobsDataType = 'array';
+        /**
+         * Output only. A token, which can be sent as `page_token` to retrieve the
+         * next page. If this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Output only. Locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * Output only. The list of clone jobs response.
+         *
+         * @param CloneJob[] $cloneJobs
+         */
+        public function setCloneJobs($cloneJobs)
+        {
+        }
+        /**
+         * @return CloneJob[]
+         */
+        public function getCloneJobs()
+        {
+        }
+        /**
+         * Output only. A token, which can be sent as `page_token` to retrieve the
+         * next page. If this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Output only. Locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CloneJob[]
+     * Runtime class alias of \Google\Service\VMMigrationService\ListCloneJobsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCloneJobs()
-    {
-    }
-    /**
-     * Output only. A token, which can be sent as `page_token` to retrieve the
-     * next page. If this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Output only. Locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_VMMigrationService_ListCloneJobsResponse extends \Google\Service\VMMigrationService\ListCloneJobsResponse
     {
     }
 }

@@ -21,71 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for AndroidPublisher (v3).
- *
- * <p>
- * Lets Android application developers access their Google Play accounts. At a
- * high level, the expected workflow is to "insert" an Edit, make changes as
- * necessary, and then "commit" it.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://developers.google.com/android-publisher" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class AndroidPublisher extends \Google\Service
-{
-    /** View and manage your Google Play Developer account. */
-    const ANDROIDPUBLISHER = "https://www.googleapis.com/auth/androidpublisher";
-    public $applications;
-    public $applications_deviceTierConfigs;
-    public $apprecovery;
-    public $edits;
-    public $edits_apks;
-    public $edits_bundles;
-    public $edits_countryavailability;
-    public $edits_deobfuscationfiles;
-    public $edits_details;
-    public $edits_expansionfiles;
-    public $edits_images;
-    public $edits_listings;
-    public $edits_testers;
-    public $edits_tracks;
-    public $externaltransactions;
-    public $generatedapks;
-    public $grants;
-    public $inappproducts;
-    public $internalappsharingartifacts;
-    public $monetization;
-    public $monetization_onetimeproducts;
-    public $monetization_onetimeproducts_purchaseOptions;
-    public $monetization_onetimeproducts_purchaseOptions_offers;
-    public $monetization_subscriptions;
-    public $monetization_subscriptions_basePlans;
-    public $monetization_subscriptions_basePlans_offers;
-    public $orders;
-    public $purchases_products;
-    public $purchases_productsv2;
-    public $purchases_subscriptions;
-    public $purchases_subscriptionsv2;
-    public $purchases_voidedpurchases;
-    public $reviews;
-    public $systemapks_variants;
-    public $users;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the AndroidPublisher service.
+     * Service definition for AndroidPublisher (v3).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * Lets Android application developers access their Google Play accounts. At a
+     * high level, the expected workflow is to "insert" an Edit, make changes as
+     * necessary, and then "commit" it.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://developers.google.com/android-publisher" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class AndroidPublisher extends \Google\Service
+    {
+        /** View and manage your Google Play Developer account. */
+        const ANDROIDPUBLISHER = "https://www.googleapis.com/auth/androidpublisher";
+        public $applications;
+        public $applications_deviceTierConfigs;
+        public $apprecovery;
+        public $edits;
+        public $edits_apks;
+        public $edits_bundles;
+        public $edits_countryavailability;
+        public $edits_deobfuscationfiles;
+        public $edits_details;
+        public $edits_expansionfiles;
+        public $edits_images;
+        public $edits_listings;
+        public $edits_testers;
+        public $edits_tracks;
+        public $externaltransactions;
+        public $generatedapks;
+        public $grants;
+        public $inappproducts;
+        public $internalappsharingartifacts;
+        public $monetization;
+        public $monetization_onetimeproducts;
+        public $monetization_onetimeproducts_purchaseOptions;
+        public $monetization_onetimeproducts_purchaseOptions_offers;
+        public $monetization_subscriptions;
+        public $monetization_subscriptions_basePlans;
+        public $monetization_subscriptions_basePlans_offers;
+        public $orders;
+        public $purchases_products;
+        public $purchases_productsv2;
+        public $purchases_subscriptions;
+        public $purchases_subscriptionsv2;
+        public $purchases_voidedpurchases;
+        public $reviews;
+        public $systemapks_variants;
+        public $users;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the AndroidPublisher service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AndroidPublisher registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AndroidPublisher extends \Google\Service\AndroidPublisher
     {
     }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class RevokeSubscriptionPurchaseRequest extends \Google\Model
-{
-    protected $revocationContextType = RevocationContext::class;
-    protected $revocationContextDataType = '';
-    /**
-     * Required. Additional details around the subscription revocation.
-     *
-     * @param RevocationContext $revocationContext
-     */
-    public function setRevocationContext(RevocationContext $revocationContext)
+namespace Google\Service\AndroidPublisher {
+    class RevokeSubscriptionPurchaseRequest extends \Google\Model
     {
+        protected $revocationContextType = RevocationContext::class;
+        protected $revocationContextDataType = '';
+        /**
+         * Required. Additional details around the subscription revocation.
+         *
+         * @param RevocationContext $revocationContext
+         */
+        public function setRevocationContext(RevocationContext $revocationContext)
+        {
+        }
+        /**
+         * @return RevocationContext
+         */
+        public function getRevocationContext()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RevocationContext
+     * Runtime class alias of \Google\Service\AndroidPublisher\RevokeSubscriptionPurchaseRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRevocationContext()
+    class Google_Service_AndroidPublisher_RevokeSubscriptionPurchaseRequest extends \Google\Service\AndroidPublisher\RevokeSubscriptionPurchaseRequest
     {
     }
 }

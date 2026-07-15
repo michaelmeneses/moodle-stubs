@@ -21,125 +21,134 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class ValueAddedModuleData extends \Google\Model
-{
-    protected $bodyType = LocalizedString::class;
-    protected $bodyDataType = '';
-    protected $headerType = LocalizedString::class;
-    protected $headerDataType = '';
-    protected $imageType = Image::class;
-    protected $imageDataType = '';
-    /**
-     * The index for sorting the modules. Modules with a lower sort index are
-     * shown before modules with a higher sort index. If unspecified, the sort
-     * index is assumed to be INT_MAX. For two modules with the same index, the
-     * sorting behavior is undefined.
-     *
-     * @var int
-     */
-    public $sortIndex;
-    /**
-     * URI that the module leads to on click. This can be a web link or a deep
-     * link as mentioned in https://developer.android.com/training/app-links/deep-
-     * linking.
-     *
-     * @var string
-     */
-    public $uri;
-    protected $viewConstraintsType = ModuleViewConstraints::class;
-    protected $viewConstraintsDataType = '';
-    /**
-     * Body to be displayed on the module. Character limit is 50 and longer
-     * strings will be truncated.
-     *
-     * @param LocalizedString $body
-     */
-    public function setBody(LocalizedString $body)
+namespace Google\Service\Walletobjects {
+    class ValueAddedModuleData extends \Google\Model
     {
+        protected $bodyType = LocalizedString::class;
+        protected $bodyDataType = '';
+        protected $headerType = LocalizedString::class;
+        protected $headerDataType = '';
+        protected $imageType = Image::class;
+        protected $imageDataType = '';
+        /**
+         * The index for sorting the modules. Modules with a lower sort index are
+         * shown before modules with a higher sort index. If unspecified, the sort
+         * index is assumed to be INT_MAX. For two modules with the same index, the
+         * sorting behavior is undefined.
+         *
+         * @var int
+         */
+        public $sortIndex;
+        /**
+         * URI that the module leads to on click. This can be a web link or a deep
+         * link as mentioned in https://developer.android.com/training/app-links/deep-
+         * linking.
+         *
+         * @var string
+         */
+        public $uri;
+        protected $viewConstraintsType = ModuleViewConstraints::class;
+        protected $viewConstraintsDataType = '';
+        /**
+         * Body to be displayed on the module. Character limit is 50 and longer
+         * strings will be truncated.
+         *
+         * @param LocalizedString $body
+         */
+        public function setBody(LocalizedString $body)
+        {
+        }
+        /**
+         * @return LocalizedString
+         */
+        public function getBody()
+        {
+        }
+        /**
+         * Header to be displayed on the module. Character limit is 60 and longer
+         * strings will be truncated.
+         *
+         * @param LocalizedString $header
+         */
+        public function setHeader(LocalizedString $header)
+        {
+        }
+        /**
+         * @return LocalizedString
+         */
+        public function getHeader()
+        {
+        }
+        /**
+         * Image to be displayed on the module. Recommended image ratio is 1:1. Images
+         * will be resized to fit this ratio.
+         *
+         * @param Image $image
+         */
+        public function setImage(Image $image)
+        {
+        }
+        /**
+         * @return Image
+         */
+        public function getImage()
+        {
+        }
+        /**
+         * The index for sorting the modules. Modules with a lower sort index are
+         * shown before modules with a higher sort index. If unspecified, the sort
+         * index is assumed to be INT_MAX. For two modules with the same index, the
+         * sorting behavior is undefined.
+         *
+         * @param int $sortIndex
+         */
+        public function setSortIndex($sortIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSortIndex()
+        {
+        }
+        /**
+         * URI that the module leads to on click. This can be a web link or a deep
+         * link as mentioned in https://developer.android.com/training/app-links/deep-
+         * linking.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
+        /**
+         * Constraints that all must be met for the module to be shown.
+         *
+         * @param ModuleViewConstraints $viewConstraints
+         */
+        public function setViewConstraints(ModuleViewConstraints $viewConstraints)
+        {
+        }
+        /**
+         * @return ModuleViewConstraints
+         */
+        public function getViewConstraints()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LocalizedString
+     * Runtime class alias of \Google\Service\Walletobjects\ValueAddedModuleData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBody()
-    {
-    }
-    /**
-     * Header to be displayed on the module. Character limit is 60 and longer
-     * strings will be truncated.
-     *
-     * @param LocalizedString $header
-     */
-    public function setHeader(LocalizedString $header)
-    {
-    }
-    /**
-     * @return LocalizedString
-     */
-    public function getHeader()
-    {
-    }
-    /**
-     * Image to be displayed on the module. Recommended image ratio is 1:1. Images
-     * will be resized to fit this ratio.
-     *
-     * @param Image $image
-     */
-    public function setImage(Image $image)
-    {
-    }
-    /**
-     * @return Image
-     */
-    public function getImage()
-    {
-    }
-    /**
-     * The index for sorting the modules. Modules with a lower sort index are
-     * shown before modules with a higher sort index. If unspecified, the sort
-     * index is assumed to be INT_MAX. For two modules with the same index, the
-     * sorting behavior is undefined.
-     *
-     * @param int $sortIndex
-     */
-    public function setSortIndex($sortIndex)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSortIndex()
-    {
-    }
-    /**
-     * URI that the module leads to on click. This can be a web link or a deep
-     * link as mentioned in https://developer.android.com/training/app-links/deep-
-     * linking.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
-    {
-    }
-    /**
-     * Constraints that all must be met for the module to be shown.
-     *
-     * @param ModuleViewConstraints $viewConstraints
-     */
-    public function setViewConstraints(ModuleViewConstraints $viewConstraints)
-    {
-    }
-    /**
-     * @return ModuleViewConstraints
-     */
-    public function getViewConstraints()
+    class Google_Service_Walletobjects_ValueAddedModuleData extends \Google\Service\Walletobjects\ValueAddedModuleData
     {
     }
 }

@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudOSLogin;
-
-class ImportSshPublicKeyResponse extends \Google\Model
-{
-    /**
-     * Detailed information about import results.
-     *
-     * @var string
-     */
-    public $details;
-    protected $loginProfileType = LoginProfile::class;
-    protected $loginProfileDataType = '';
-    /**
-     * Detailed information about import results.
-     *
-     * @param string $details
-     */
-    public function setDetails($details)
+namespace Google\Service\CloudOSLogin {
+    class ImportSshPublicKeyResponse extends \Google\Model
     {
+        /**
+         * Detailed information about import results.
+         *
+         * @var string
+         */
+        public $details;
+        protected $loginProfileType = LoginProfile::class;
+        protected $loginProfileDataType = '';
+        /**
+         * Detailed information about import results.
+         *
+         * @param string $details
+         */
+        public function setDetails($details)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDetails()
+        {
+        }
+        /**
+         * The login profile information for the user.
+         *
+         * @param LoginProfile $loginProfile
+         */
+        public function setLoginProfile(LoginProfile $loginProfile)
+        {
+        }
+        /**
+         * @return LoginProfile
+         */
+        public function getLoginProfile()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudOSLogin\ImportSshPublicKeyResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDetails()
-    {
-    }
-    /**
-     * The login profile information for the user.
-     *
-     * @param LoginProfile $loginProfile
-     */
-    public function setLoginProfile(LoginProfile $loginProfile)
-    {
-    }
-    /**
-     * @return LoginProfile
-     */
-    public function getLoginProfile()
+    class Google_Service_CloudOSLogin_ImportSshPublicKeyResponse extends \Google\Service\CloudOSLogin\ImportSshPublicKeyResponse
     {
     }
 }

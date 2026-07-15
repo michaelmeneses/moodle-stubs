@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudComposer;
-
-class ListUserWorkloadsConfigMapsResponse extends \Google\Collection
-{
-    protected $collection_key = 'userWorkloadsConfigMaps';
-    /**
-     * The page token used to query for the next page if one exists.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $userWorkloadsConfigMapsType = UserWorkloadsConfigMap::class;
-    protected $userWorkloadsConfigMapsDataType = 'array';
-    /**
-     * The page token used to query for the next page if one exists.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\CloudComposer {
+    class ListUserWorkloadsConfigMapsResponse extends \Google\Collection
     {
+        protected $collection_key = 'userWorkloadsConfigMaps';
+        /**
+         * The page token used to query for the next page if one exists.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $userWorkloadsConfigMapsType = UserWorkloadsConfigMap::class;
+        protected $userWorkloadsConfigMapsDataType = 'array';
+        /**
+         * The page token used to query for the next page if one exists.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of ConfigMaps returned by a ListUserWorkloadsConfigMapsRequest.
+         *
+         * @param UserWorkloadsConfigMap[] $userWorkloadsConfigMaps
+         */
+        public function setUserWorkloadsConfigMaps($userWorkloadsConfigMaps)
+        {
+        }
+        /**
+         * @return UserWorkloadsConfigMap[]
+         */
+        public function getUserWorkloadsConfigMaps()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudComposer\ListUserWorkloadsConfigMapsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of ConfigMaps returned by a ListUserWorkloadsConfigMapsRequest.
-     *
-     * @param UserWorkloadsConfigMap[] $userWorkloadsConfigMaps
-     */
-    public function setUserWorkloadsConfigMaps($userWorkloadsConfigMaps)
-    {
-    }
-    /**
-     * @return UserWorkloadsConfigMap[]
-     */
-    public function getUserWorkloadsConfigMaps()
+    class Google_Service_CloudComposer_ListUserWorkloadsConfigMapsResponse extends \Google\Service\CloudComposer\ListUserWorkloadsConfigMapsResponse
     {
     }
 }

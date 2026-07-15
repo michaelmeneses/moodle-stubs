@@ -21,189 +21,198 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaSearchResponse extends \Google\Collection
-{
-    protected $collection_key = 'results';
-    /**
-     * @var string[]
-     */
-    public $appliedControls;
-    /**
-     * @var string
-     */
-    public $attributionToken;
-    /**
-     * @var string
-     */
-    public $correctedQuery;
-    protected $facetsType = GoogleCloudDiscoveryengineV1betaSearchResponseFacet::class;
-    protected $facetsDataType = 'array';
-    protected $geoSearchDebugInfoType = GoogleCloudDiscoveryengineV1betaSearchResponseGeoSearchDebugInfo::class;
-    protected $geoSearchDebugInfoDataType = 'array';
-    protected $guidedSearchResultType = GoogleCloudDiscoveryengineV1betaSearchResponseGuidedSearchResult::class;
-    protected $guidedSearchResultDataType = '';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    protected $queryExpansionInfoType = GoogleCloudDiscoveryengineV1betaSearchResponseQueryExpansionInfo::class;
-    protected $queryExpansionInfoDataType = '';
-    /**
-     * @var string
-     */
-    public $redirectUri;
-    protected $resultsType = GoogleCloudDiscoveryengineV1betaSearchResponseSearchResult::class;
-    protected $resultsDataType = 'array';
-    protected $summaryType = GoogleCloudDiscoveryengineV1betaSearchResponseSummary::class;
-    protected $summaryDataType = '';
-    /**
-     * @var int
-     */
-    public $totalSize;
-    /**
-     * @param string[]
-     */
-    public function setAppliedControls($appliedControls)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaSearchResponse extends \Google\Collection
     {
+        protected $collection_key = 'results';
+        /**
+         * @var string[]
+         */
+        public $appliedControls;
+        /**
+         * @var string
+         */
+        public $attributionToken;
+        /**
+         * @var string
+         */
+        public $correctedQuery;
+        protected $facetsType = GoogleCloudDiscoveryengineV1betaSearchResponseFacet::class;
+        protected $facetsDataType = 'array';
+        protected $geoSearchDebugInfoType = GoogleCloudDiscoveryengineV1betaSearchResponseGeoSearchDebugInfo::class;
+        protected $geoSearchDebugInfoDataType = 'array';
+        protected $guidedSearchResultType = GoogleCloudDiscoveryengineV1betaSearchResponseGuidedSearchResult::class;
+        protected $guidedSearchResultDataType = '';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        protected $queryExpansionInfoType = GoogleCloudDiscoveryengineV1betaSearchResponseQueryExpansionInfo::class;
+        protected $queryExpansionInfoDataType = '';
+        /**
+         * @var string
+         */
+        public $redirectUri;
+        protected $resultsType = GoogleCloudDiscoveryengineV1betaSearchResponseSearchResult::class;
+        protected $resultsDataType = 'array';
+        protected $summaryType = GoogleCloudDiscoveryengineV1betaSearchResponseSummary::class;
+        protected $summaryDataType = '';
+        /**
+         * @var int
+         */
+        public $totalSize;
+        /**
+         * @param string[]
+         */
+        public function setAppliedControls($appliedControls)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAppliedControls()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setAttributionToken($attributionToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAttributionToken()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCorrectedQuery($correctedQuery)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCorrectedQuery()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaSearchResponseFacet[]
+         */
+        public function setFacets($facets)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaSearchResponseFacet[]
+         */
+        public function getFacets()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaSearchResponseGeoSearchDebugInfo[]
+         */
+        public function setGeoSearchDebugInfo($geoSearchDebugInfo)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaSearchResponseGeoSearchDebugInfo[]
+         */
+        public function getGeoSearchDebugInfo()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaSearchResponseGuidedSearchResult
+         */
+        public function setGuidedSearchResult(GoogleCloudDiscoveryengineV1betaSearchResponseGuidedSearchResult $guidedSearchResult)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaSearchResponseGuidedSearchResult
+         */
+        public function getGuidedSearchResult()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaSearchResponseQueryExpansionInfo
+         */
+        public function setQueryExpansionInfo(GoogleCloudDiscoveryengineV1betaSearchResponseQueryExpansionInfo $queryExpansionInfo)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaSearchResponseQueryExpansionInfo
+         */
+        public function getQueryExpansionInfo()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRedirectUri($redirectUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRedirectUri()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaSearchResponseSearchResult[]
+         */
+        public function setResults($results)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaSearchResponseSearchResult[]
+         */
+        public function getResults()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaSearchResponseSummary
+         */
+        public function setSummary(GoogleCloudDiscoveryengineV1betaSearchResponseSummary $summary)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaSearchResponseSummary
+         */
+        public function getSummary()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setTotalSize($totalSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalSize()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaSearchResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAppliedControls()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setAttributionToken($attributionToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAttributionToken()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCorrectedQuery($correctedQuery)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCorrectedQuery()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaSearchResponseFacet[]
-     */
-    public function setFacets($facets)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaSearchResponseFacet[]
-     */
-    public function getFacets()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaSearchResponseGeoSearchDebugInfo[]
-     */
-    public function setGeoSearchDebugInfo($geoSearchDebugInfo)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaSearchResponseGeoSearchDebugInfo[]
-     */
-    public function getGeoSearchDebugInfo()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaSearchResponseGuidedSearchResult
-     */
-    public function setGuidedSearchResult(GoogleCloudDiscoveryengineV1betaSearchResponseGuidedSearchResult $guidedSearchResult)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaSearchResponseGuidedSearchResult
-     */
-    public function getGuidedSearchResult()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaSearchResponseQueryExpansionInfo
-     */
-    public function setQueryExpansionInfo(GoogleCloudDiscoveryengineV1betaSearchResponseQueryExpansionInfo $queryExpansionInfo)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaSearchResponseQueryExpansionInfo
-     */
-    public function getQueryExpansionInfo()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRedirectUri($redirectUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRedirectUri()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaSearchResponseSearchResult[]
-     */
-    public function setResults($results)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaSearchResponseSearchResult[]
-     */
-    public function getResults()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaSearchResponseSummary
-     */
-    public function setSummary(GoogleCloudDiscoveryengineV1betaSearchResponseSummary $summary)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaSearchResponseSummary
-     */
-    public function getSummary()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setTotalSize($totalSize)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalSize()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaSearchResponse extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaSearchResponse
     {
     }
 }

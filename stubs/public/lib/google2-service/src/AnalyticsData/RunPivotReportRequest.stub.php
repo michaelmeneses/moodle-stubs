@@ -21,259 +21,268 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsData;
-
-class RunPivotReportRequest extends \Google\Collection
-{
-    protected $collection_key = 'pivots';
-    protected $cohortSpecType = CohortSpec::class;
-    protected $cohortSpecDataType = '';
-    protected $comparisonsType = Comparison::class;
-    protected $comparisonsDataType = 'array';
-    /**
-     * A currency code in ISO4217 format, such as "AED", "USD", "JPY". If the
-     * field is empty, the report uses the property's default currency.
-     *
-     * @var string
-     */
-    public $currencyCode;
-    protected $dateRangesType = DateRange::class;
-    protected $dateRangesDataType = 'array';
-    protected $dimensionFilterType = FilterExpression::class;
-    protected $dimensionFilterDataType = '';
-    protected $dimensionsType = Dimension::class;
-    protected $dimensionsDataType = 'array';
-    /**
-     * If false or unspecified, each row with all metrics equal to 0 will not be
-     * returned. If true, these rows will be returned if they are not separately
-     * removed by a filter. Regardless of this `keep_empty_rows` setting, only
-     * data recorded by the Google Analytics property can be displayed in a
-     * report. For example if a property never logs a `purchase` event, then a
-     * query for the `eventName` dimension and `eventCount` metric will not have a
-     * row eventName: "purchase" and eventCount: 0.
-     *
-     * @var bool
-     */
-    public $keepEmptyRows;
-    protected $metricFilterType = FilterExpression::class;
-    protected $metricFilterDataType = '';
-    protected $metricsType = Metric::class;
-    protected $metricsDataType = 'array';
-    protected $pivotsType = Pivot::class;
-    protected $pivotsDataType = 'array';
-    /**
-     * A Google Analytics property identifier whose events are tracked. Specified
-     * in the URL path and not the body. To learn more, see [where to find your
-     * Property ID](https://developers.google.com/analytics/devguides/reporting/da
-     * ta/v1/property-id). Within a batch request, this property should either be
-     * unspecified or consistent with the batch-level property. Example:
-     * properties/1234
-     *
-     * @var string
-     */
-    public $property;
-    /**
-     * Toggles whether to return the current state of this Google Analytics
-     * property's quota. Quota is returned in [PropertyQuota](#PropertyQuota).
-     *
-     * @var bool
-     */
-    public $returnPropertyQuota;
-    /**
-     * Cohort group associated with this request. If there is a cohort group in
-     * the request the 'cohort' dimension must be present.
-     *
-     * @param CohortSpec $cohortSpec
-     */
-    public function setCohortSpec(CohortSpec $cohortSpec)
+namespace Google\Service\AnalyticsData {
+    class RunPivotReportRequest extends \Google\Collection
     {
+        protected $collection_key = 'pivots';
+        protected $cohortSpecType = CohortSpec::class;
+        protected $cohortSpecDataType = '';
+        protected $comparisonsType = Comparison::class;
+        protected $comparisonsDataType = 'array';
+        /**
+         * A currency code in ISO4217 format, such as "AED", "USD", "JPY". If the
+         * field is empty, the report uses the property's default currency.
+         *
+         * @var string
+         */
+        public $currencyCode;
+        protected $dateRangesType = DateRange::class;
+        protected $dateRangesDataType = 'array';
+        protected $dimensionFilterType = FilterExpression::class;
+        protected $dimensionFilterDataType = '';
+        protected $dimensionsType = Dimension::class;
+        protected $dimensionsDataType = 'array';
+        /**
+         * If false or unspecified, each row with all metrics equal to 0 will not be
+         * returned. If true, these rows will be returned if they are not separately
+         * removed by a filter. Regardless of this `keep_empty_rows` setting, only
+         * data recorded by the Google Analytics property can be displayed in a
+         * report. For example if a property never logs a `purchase` event, then a
+         * query for the `eventName` dimension and `eventCount` metric will not have a
+         * row eventName: "purchase" and eventCount: 0.
+         *
+         * @var bool
+         */
+        public $keepEmptyRows;
+        protected $metricFilterType = FilterExpression::class;
+        protected $metricFilterDataType = '';
+        protected $metricsType = Metric::class;
+        protected $metricsDataType = 'array';
+        protected $pivotsType = Pivot::class;
+        protected $pivotsDataType = 'array';
+        /**
+         * A Google Analytics property identifier whose events are tracked. Specified
+         * in the URL path and not the body. To learn more, see [where to find your
+         * Property ID](https://developers.google.com/analytics/devguides/reporting/da
+         * ta/v1/property-id). Within a batch request, this property should either be
+         * unspecified or consistent with the batch-level property. Example:
+         * properties/1234
+         *
+         * @var string
+         */
+        public $property;
+        /**
+         * Toggles whether to return the current state of this Google Analytics
+         * property's quota. Quota is returned in [PropertyQuota](#PropertyQuota).
+         *
+         * @var bool
+         */
+        public $returnPropertyQuota;
+        /**
+         * Cohort group associated with this request. If there is a cohort group in
+         * the request the 'cohort' dimension must be present.
+         *
+         * @param CohortSpec $cohortSpec
+         */
+        public function setCohortSpec(CohortSpec $cohortSpec)
+        {
+        }
+        /**
+         * @return CohortSpec
+         */
+        public function getCohortSpec()
+        {
+        }
+        /**
+         * Optional. The configuration of comparisons requested and displayed. The
+         * request requires both a comparisons field and a comparisons dimension to
+         * receive a comparison column in the response.
+         *
+         * @param Comparison[] $comparisons
+         */
+        public function setComparisons($comparisons)
+        {
+        }
+        /**
+         * @return Comparison[]
+         */
+        public function getComparisons()
+        {
+        }
+        /**
+         * A currency code in ISO4217 format, such as "AED", "USD", "JPY". If the
+         * field is empty, the report uses the property's default currency.
+         *
+         * @param string $currencyCode
+         */
+        public function setCurrencyCode($currencyCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCurrencyCode()
+        {
+        }
+        /**
+         * The date range to retrieve event data for the report. If multiple date
+         * ranges are specified, event data from each date range is used in the
+         * report. A special dimension with field name "dateRange" can be included in
+         * a Pivot's field names; if included, the report compares between date
+         * ranges. In a cohort request, this `dateRanges` must be unspecified.
+         *
+         * @param DateRange[] $dateRanges
+         */
+        public function setDateRanges($dateRanges)
+        {
+        }
+        /**
+         * @return DateRange[]
+         */
+        public function getDateRanges()
+        {
+        }
+        /**
+         * The filter clause of dimensions. Dimensions must be requested to be used in
+         * this filter. Metrics cannot be used in this filter.
+         *
+         * @param FilterExpression $dimensionFilter
+         */
+        public function setDimensionFilter(FilterExpression $dimensionFilter)
+        {
+        }
+        /**
+         * @return FilterExpression
+         */
+        public function getDimensionFilter()
+        {
+        }
+        /**
+         * The dimensions requested. All defined dimensions must be used by one of the
+         * following: dimension_expression, dimension_filter, pivots, order_bys.
+         *
+         * @param Dimension[] $dimensions
+         */
+        public function setDimensions($dimensions)
+        {
+        }
+        /**
+         * @return Dimension[]
+         */
+        public function getDimensions()
+        {
+        }
+        /**
+         * If false or unspecified, each row with all metrics equal to 0 will not be
+         * returned. If true, these rows will be returned if they are not separately
+         * removed by a filter. Regardless of this `keep_empty_rows` setting, only
+         * data recorded by the Google Analytics property can be displayed in a
+         * report. For example if a property never logs a `purchase` event, then a
+         * query for the `eventName` dimension and `eventCount` metric will not have a
+         * row eventName: "purchase" and eventCount: 0.
+         *
+         * @param bool $keepEmptyRows
+         */
+        public function setKeepEmptyRows($keepEmptyRows)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getKeepEmptyRows()
+        {
+        }
+        /**
+         * The filter clause of metrics. Applied at post aggregation phase, similar to
+         * SQL having-clause. Metrics must be requested to be used in this filter.
+         * Dimensions cannot be used in this filter.
+         *
+         * @param FilterExpression $metricFilter
+         */
+        public function setMetricFilter(FilterExpression $metricFilter)
+        {
+        }
+        /**
+         * @return FilterExpression
+         */
+        public function getMetricFilter()
+        {
+        }
+        /**
+         * The metrics requested, at least one metric needs to be specified. All
+         * defined metrics must be used by one of the following: metric_expression,
+         * metric_filter, order_bys.
+         *
+         * @param Metric[] $metrics
+         */
+        public function setMetrics($metrics)
+        {
+        }
+        /**
+         * @return Metric[]
+         */
+        public function getMetrics()
+        {
+        }
+        /**
+         * Describes the visual format of the report's dimensions in columns or rows.
+         * The union of the fieldNames (dimension names) in all pivots must be a
+         * subset of dimension names defined in Dimensions. No two pivots can share a
+         * dimension. A dimension is only visible if it appears in a pivot.
+         *
+         * @param Pivot[] $pivots
+         */
+        public function setPivots($pivots)
+        {
+        }
+        /**
+         * @return Pivot[]
+         */
+        public function getPivots()
+        {
+        }
+        /**
+         * A Google Analytics property identifier whose events are tracked. Specified
+         * in the URL path and not the body. To learn more, see [where to find your
+         * Property ID](https://developers.google.com/analytics/devguides/reporting/da
+         * ta/v1/property-id). Within a batch request, this property should either be
+         * unspecified or consistent with the batch-level property. Example:
+         * properties/1234
+         *
+         * @param string $property
+         */
+        public function setProperty($property)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProperty()
+        {
+        }
+        /**
+         * Toggles whether to return the current state of this Google Analytics
+         * property's quota. Quota is returned in [PropertyQuota](#PropertyQuota).
+         *
+         * @param bool $returnPropertyQuota
+         */
+        public function setReturnPropertyQuota($returnPropertyQuota)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getReturnPropertyQuota()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CohortSpec
+     * Runtime class alias of \Google\Service\AnalyticsData\RunPivotReportRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCohortSpec()
-    {
-    }
-    /**
-     * Optional. The configuration of comparisons requested and displayed. The
-     * request requires both a comparisons field and a comparisons dimension to
-     * receive a comparison column in the response.
-     *
-     * @param Comparison[] $comparisons
-     */
-    public function setComparisons($comparisons)
-    {
-    }
-    /**
-     * @return Comparison[]
-     */
-    public function getComparisons()
-    {
-    }
-    /**
-     * A currency code in ISO4217 format, such as "AED", "USD", "JPY". If the
-     * field is empty, the report uses the property's default currency.
-     *
-     * @param string $currencyCode
-     */
-    public function setCurrencyCode($currencyCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCurrencyCode()
-    {
-    }
-    /**
-     * The date range to retrieve event data for the report. If multiple date
-     * ranges are specified, event data from each date range is used in the
-     * report. A special dimension with field name "dateRange" can be included in
-     * a Pivot's field names; if included, the report compares between date
-     * ranges. In a cohort request, this `dateRanges` must be unspecified.
-     *
-     * @param DateRange[] $dateRanges
-     */
-    public function setDateRanges($dateRanges)
-    {
-    }
-    /**
-     * @return DateRange[]
-     */
-    public function getDateRanges()
-    {
-    }
-    /**
-     * The filter clause of dimensions. Dimensions must be requested to be used in
-     * this filter. Metrics cannot be used in this filter.
-     *
-     * @param FilterExpression $dimensionFilter
-     */
-    public function setDimensionFilter(FilterExpression $dimensionFilter)
-    {
-    }
-    /**
-     * @return FilterExpression
-     */
-    public function getDimensionFilter()
-    {
-    }
-    /**
-     * The dimensions requested. All defined dimensions must be used by one of the
-     * following: dimension_expression, dimension_filter, pivots, order_bys.
-     *
-     * @param Dimension[] $dimensions
-     */
-    public function setDimensions($dimensions)
-    {
-    }
-    /**
-     * @return Dimension[]
-     */
-    public function getDimensions()
-    {
-    }
-    /**
-     * If false or unspecified, each row with all metrics equal to 0 will not be
-     * returned. If true, these rows will be returned if they are not separately
-     * removed by a filter. Regardless of this `keep_empty_rows` setting, only
-     * data recorded by the Google Analytics property can be displayed in a
-     * report. For example if a property never logs a `purchase` event, then a
-     * query for the `eventName` dimension and `eventCount` metric will not have a
-     * row eventName: "purchase" and eventCount: 0.
-     *
-     * @param bool $keepEmptyRows
-     */
-    public function setKeepEmptyRows($keepEmptyRows)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getKeepEmptyRows()
-    {
-    }
-    /**
-     * The filter clause of metrics. Applied at post aggregation phase, similar to
-     * SQL having-clause. Metrics must be requested to be used in this filter.
-     * Dimensions cannot be used in this filter.
-     *
-     * @param FilterExpression $metricFilter
-     */
-    public function setMetricFilter(FilterExpression $metricFilter)
-    {
-    }
-    /**
-     * @return FilterExpression
-     */
-    public function getMetricFilter()
-    {
-    }
-    /**
-     * The metrics requested, at least one metric needs to be specified. All
-     * defined metrics must be used by one of the following: metric_expression,
-     * metric_filter, order_bys.
-     *
-     * @param Metric[] $metrics
-     */
-    public function setMetrics($metrics)
-    {
-    }
-    /**
-     * @return Metric[]
-     */
-    public function getMetrics()
-    {
-    }
-    /**
-     * Describes the visual format of the report's dimensions in columns or rows.
-     * The union of the fieldNames (dimension names) in all pivots must be a
-     * subset of dimension names defined in Dimensions. No two pivots can share a
-     * dimension. A dimension is only visible if it appears in a pivot.
-     *
-     * @param Pivot[] $pivots
-     */
-    public function setPivots($pivots)
-    {
-    }
-    /**
-     * @return Pivot[]
-     */
-    public function getPivots()
-    {
-    }
-    /**
-     * A Google Analytics property identifier whose events are tracked. Specified
-     * in the URL path and not the body. To learn more, see [where to find your
-     * Property ID](https://developers.google.com/analytics/devguides/reporting/da
-     * ta/v1/property-id). Within a batch request, this property should either be
-     * unspecified or consistent with the batch-level property. Example:
-     * properties/1234
-     *
-     * @param string $property
-     */
-    public function setProperty($property)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProperty()
-    {
-    }
-    /**
-     * Toggles whether to return the current state of this Google Analytics
-     * property's quota. Quota is returned in [PropertyQuota](#PropertyQuota).
-     *
-     * @param bool $returnPropertyQuota
-     */
-    public function setReturnPropertyQuota($returnPropertyQuota)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getReturnPropertyQuota()
+    class Google_Service_AnalyticsData_RunPivotReportRequest extends \Google\Service\AnalyticsData\RunPivotReportRequest
     {
     }
 }

@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class OrdersCreateTestReturnRequest extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    protected $itemsType = OrdersCustomBatchRequestEntryCreateTestReturnReturnItem::class;
-    protected $itemsDataType = 'array';
-    /**
-     * @param OrdersCustomBatchRequestEntryCreateTestReturnReturnItem[]
-     */
-    public function setItems($items)
+namespace Google\Service\ShoppingContent {
+    class OrdersCreateTestReturnRequest extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        protected $itemsType = OrdersCustomBatchRequestEntryCreateTestReturnReturnItem::class;
+        protected $itemsDataType = 'array';
+        /**
+         * @param OrdersCustomBatchRequestEntryCreateTestReturnReturnItem[]
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return OrdersCustomBatchRequestEntryCreateTestReturnReturnItem[]
+         */
+        public function getItems()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return OrdersCustomBatchRequestEntryCreateTestReturnReturnItem[]
+     * Runtime class alias of \Google\Service\ShoppingContent\OrdersCreateTestReturnRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItems()
+    class Google_Service_ShoppingContent_OrdersCreateTestReturnRequest extends \Google\Service\ShoppingContent\OrdersCreateTestReturnRequest
     {
     }
 }

@@ -21,80 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSTablesModelStructureModelParametersParameter extends \Google\Model
-{
-    /**
-     * Float type parameter value.
-     *
-     * @var 
-     */
-    public $floatValue;
-    /**
-     * Integer type parameter value.
-     *
-     * @var string
-     */
-    public $intValue;
-    /**
-     * Parameter name.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * String type parameter value.
-     *
-     * @var string
-     */
-    public $stringValue;
-    public function setFloatValue($floatValue)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSTablesModelStructureModelParametersParameter extends \Google\Model
     {
+        /**
+         * Float type parameter value.
+         *
+         * @var 
+         */
+        public $floatValue;
+        /**
+         * Integer type parameter value.
+         *
+         * @var string
+         */
+        public $intValue;
+        /**
+         * Parameter name.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * String type parameter value.
+         *
+         * @var string
+         */
+        public $stringValue;
+        public function setFloatValue($floatValue)
+        {
+        }
+        public function getFloatValue()
+        {
+        }
+        /**
+         * Integer type parameter value.
+         *
+         * @param string $intValue
+         */
+        public function setIntValue($intValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIntValue()
+        {
+        }
+        /**
+         * Parameter name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * String type parameter value.
+         *
+         * @param string $stringValue
+         */
+        public function setStringValue($stringValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStringValue()
+        {
+        }
     }
-    public function getFloatValue()
-    {
-    }
+}
+namespace {
     /**
-     * Integer type parameter value.
-     *
-     * @param string $intValue
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSTablesModelStructureModelParametersParameter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setIntValue($intValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIntValue()
-    {
-    }
-    /**
-     * Parameter name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * String type parameter value.
-     *
-     * @param string $stringValue
-     */
-    public function setStringValue($stringValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStringValue()
+    class Google_Service_CloudNaturalLanguage_XPSTablesModelStructureModelParametersParameter extends \Google\Service\CloudNaturalLanguage\XPSTablesModelStructureModelParametersParameter
     {
     }
 }

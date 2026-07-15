@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1Port extends \Google\Model
-{
-    /**
-     * The number of the port to expose on the pod's IP address. Must be a valid
-     * port number, between 1 and 65535 inclusive.
-     *
-     * @var int
-     */
-    public $containerPort;
-    /**
-     * The number of the port to expose on the pod's IP address. Must be a valid
-     * port number, between 1 and 65535 inclusive.
-     *
-     * @param int $containerPort
-     */
-    public function setContainerPort($containerPort)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1Port extends \Google\Model
     {
+        /**
+         * The number of the port to expose on the pod's IP address. Must be a valid
+         * port number, between 1 and 65535 inclusive.
+         *
+         * @var int
+         */
+        public $containerPort;
+        /**
+         * The number of the port to expose on the pod's IP address. Must be a valid
+         * port number, between 1 and 65535 inclusive.
+         *
+         * @param int $containerPort
+         */
+        public function setContainerPort($containerPort)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getContainerPort()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1Port registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContainerPort()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1Port extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1Port
     {
     }
 }

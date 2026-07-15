@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class MetricMatrixRow extends \Google\Collection
-{
-    protected $collection_key = 'cols';
-    /**
-     * The columns of the row.
-     *
-     * @var float[]
-     */
-    public $cols;
-    /**
-     * The columns of the row.
-     *
-     * @param float[] $cols
-     */
-    public function setCols($cols)
+namespace Google\Service\Spanner {
+    class MetricMatrixRow extends \Google\Collection
     {
+        protected $collection_key = 'cols';
+        /**
+         * The columns of the row.
+         *
+         * @var float[]
+         */
+        public $cols;
+        /**
+         * The columns of the row.
+         *
+         * @param float[] $cols
+         */
+        public function setCols($cols)
+        {
+        }
+        /**
+         * @return float[]
+         */
+        public function getCols()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float[]
+     * Runtime class alias of \Google\Service\Spanner\MetricMatrixRow registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCols()
+    class Google_Service_Spanner_MetricMatrixRow extends \Google\Service\Spanner\MetricMatrixRow
     {
     }
 }

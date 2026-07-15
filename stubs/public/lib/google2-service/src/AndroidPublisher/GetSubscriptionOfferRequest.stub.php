@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class GetSubscriptionOfferRequest extends \Google\Model
-{
-    /**
-     * Required. The parent base plan (ID) of the offer to get.
-     *
-     * @var string
-     */
-    public $basePlanId;
-    /**
-     * Required. The unique offer ID of the offer to get.
-     *
-     * @var string
-     */
-    public $offerId;
-    /**
-     * Required. The parent app (package name) of the offer to get.
-     *
-     * @var string
-     */
-    public $packageName;
-    /**
-     * Required. The parent subscription (ID) of the offer to get.
-     *
-     * @var string
-     */
-    public $productId;
-    /**
-     * Required. The parent base plan (ID) of the offer to get.
-     *
-     * @param string $basePlanId
-     */
-    public function setBasePlanId($basePlanId)
+namespace Google\Service\AndroidPublisher {
+    class GetSubscriptionOfferRequest extends \Google\Model
     {
+        /**
+         * Required. The parent base plan (ID) of the offer to get.
+         *
+         * @var string
+         */
+        public $basePlanId;
+        /**
+         * Required. The unique offer ID of the offer to get.
+         *
+         * @var string
+         */
+        public $offerId;
+        /**
+         * Required. The parent app (package name) of the offer to get.
+         *
+         * @var string
+         */
+        public $packageName;
+        /**
+         * Required. The parent subscription (ID) of the offer to get.
+         *
+         * @var string
+         */
+        public $productId;
+        /**
+         * Required. The parent base plan (ID) of the offer to get.
+         *
+         * @param string $basePlanId
+         */
+        public function setBasePlanId($basePlanId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBasePlanId()
+        {
+        }
+        /**
+         * Required. The unique offer ID of the offer to get.
+         *
+         * @param string $offerId
+         */
+        public function setOfferId($offerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOfferId()
+        {
+        }
+        /**
+         * Required. The parent app (package name) of the offer to get.
+         *
+         * @param string $packageName
+         */
+        public function setPackageName($packageName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPackageName()
+        {
+        }
+        /**
+         * Required. The parent subscription (ID) of the offer to get.
+         *
+         * @param string $productId
+         */
+        public function setProductId($productId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProductId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidPublisher\GetSubscriptionOfferRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBasePlanId()
-    {
-    }
-    /**
-     * Required. The unique offer ID of the offer to get.
-     *
-     * @param string $offerId
-     */
-    public function setOfferId($offerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOfferId()
-    {
-    }
-    /**
-     * Required. The parent app (package name) of the offer to get.
-     *
-     * @param string $packageName
-     */
-    public function setPackageName($packageName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPackageName()
-    {
-    }
-    /**
-     * Required. The parent subscription (ID) of the offer to get.
-     *
-     * @param string $productId
-     */
-    public function setProductId($productId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProductId()
+    class Google_Service_AndroidPublisher_GetSubscriptionOfferRequest extends \Google\Service\AndroidPublisher\GetSubscriptionOfferRequest
     {
     }
 }

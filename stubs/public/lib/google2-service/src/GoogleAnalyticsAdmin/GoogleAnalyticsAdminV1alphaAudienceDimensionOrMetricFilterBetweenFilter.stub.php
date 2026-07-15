@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterBetweenFilter extends \Google\Model
-{
-    protected $fromValueType = GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterNumericValue::class;
-    protected $fromValueDataType = '';
-    protected $toValueType = GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterNumericValue::class;
-    protected $toValueDataType = '';
-    /**
-     * @param GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterNumericValue
-     */
-    public function setFromValue(GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterNumericValue $fromValue)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterBetweenFilter extends \Google\Model
     {
+        protected $fromValueType = GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterNumericValue::class;
+        protected $fromValueDataType = '';
+        protected $toValueType = GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterNumericValue::class;
+        protected $toValueDataType = '';
+        /**
+         * @param GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterNumericValue
+         */
+        public function setFromValue(GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterNumericValue $fromValue)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterNumericValue
+         */
+        public function getFromValue()
+        {
+        }
+        /**
+         * @param GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterNumericValue
+         */
+        public function setToValue(GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterNumericValue $toValue)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterNumericValue
+         */
+        public function getToValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterNumericValue
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterBetweenFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFromValue()
-    {
-    }
-    /**
-     * @param GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterNumericValue
-     */
-    public function setToValue(GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterNumericValue $toValue)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterNumericValue
-     */
-    public function getToValue()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterBetweenFilter extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterBetweenFilter
     {
     }
 }

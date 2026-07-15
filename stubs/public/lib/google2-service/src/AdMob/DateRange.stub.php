@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdMob;
-
-class DateRange extends \Google\Model
-{
-    protected $endDateType = Date::class;
-    protected $endDateDataType = '';
-    protected $startDateType = Date::class;
-    protected $startDateDataType = '';
-    /**
-     * End date of the date range, inclusive. Must be greater than or equal to the
-     * start date.
-     *
-     * @param Date $endDate
-     */
-    public function setEndDate(Date $endDate)
+namespace Google\Service\AdMob {
+    class DateRange extends \Google\Model
     {
+        protected $endDateType = Date::class;
+        protected $endDateDataType = '';
+        protected $startDateType = Date::class;
+        protected $startDateDataType = '';
+        /**
+         * End date of the date range, inclusive. Must be greater than or equal to the
+         * start date.
+         *
+         * @param Date $endDate
+         */
+        public function setEndDate(Date $endDate)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getEndDate()
+        {
+        }
+        /**
+         * Start date of the date range, inclusive. Must be less than or equal to the
+         * end date.
+         *
+         * @param Date $startDate
+         */
+        public function setStartDate(Date $startDate)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getStartDate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Date
+     * Runtime class alias of \Google\Service\AdMob\DateRange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndDate()
-    {
-    }
-    /**
-     * Start date of the date range, inclusive. Must be less than or equal to the
-     * end date.
-     *
-     * @param Date $startDate
-     */
-    public function setStartDate(Date $startDate)
-    {
-    }
-    /**
-     * @return Date
-     */
-    public function getStartDate()
+    class Google_Service_AdMob_DateRange extends \Google\Service\AdMob\DateRange
     {
     }
 }

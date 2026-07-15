@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PaymentsResellerSubscription;
-
-class CycleOptions extends \Google\Model
-{
-    protected $initialCycleDurationType = Duration::class;
-    protected $initialCycleDurationDataType = '';
-    /**
-     * Optional. The duration of the initial cycle. Only `DAY` is supported. If
-     * set, Google will start the subscription with this initial cycle duration
-     * starting at the request time (see available methods below). A prorated
-     * charge will be applied. This option is available to the following methods:
-     * - partners.subscriptions.provision - partners.subscriptions.resume -
-     * partners.userSessions.generate
-     *
-     * @param Duration $initialCycleDuration
-     */
-    public function setInitialCycleDuration(Duration $initialCycleDuration)
+namespace Google\Service\PaymentsResellerSubscription {
+    class CycleOptions extends \Google\Model
     {
+        protected $initialCycleDurationType = Duration::class;
+        protected $initialCycleDurationDataType = '';
+        /**
+         * Optional. The duration of the initial cycle. Only `DAY` is supported. If
+         * set, Google will start the subscription with this initial cycle duration
+         * starting at the request time (see available methods below). A prorated
+         * charge will be applied. This option is available to the following methods:
+         * - partners.subscriptions.provision - partners.subscriptions.resume -
+         * partners.userSessions.generate
+         *
+         * @param Duration $initialCycleDuration
+         */
+        public function setInitialCycleDuration(Duration $initialCycleDuration)
+        {
+        }
+        /**
+         * @return Duration
+         */
+        public function getInitialCycleDuration()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Duration
+     * Runtime class alias of \Google\Service\PaymentsResellerSubscription\CycleOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInitialCycleDuration()
+    class Google_Service_PaymentsResellerSubscription_CycleOptions extends \Google\Service\PaymentsResellerSubscription\CycleOptions
     {
     }
 }

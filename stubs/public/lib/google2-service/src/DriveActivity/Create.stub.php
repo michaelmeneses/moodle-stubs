@@ -21,59 +21,68 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveActivity;
-
-class Create extends \Google\Model
-{
-    protected $copyType = Copy::class;
-    protected $copyDataType = '';
-    protected $newType = DriveactivityNew::class;
-    protected $newDataType = '';
-    protected $uploadType = Upload::class;
-    protected $uploadDataType = '';
-    /**
-     * If present, indicates the object was created by copying an existing Drive
-     * object.
-     *
-     * @param Copy $copy
-     */
-    public function setCopy(Copy $copy)
+namespace Google\Service\DriveActivity {
+    class Create extends \Google\Model
     {
+        protected $copyType = Copy::class;
+        protected $copyDataType = '';
+        protected $newType = DriveactivityNew::class;
+        protected $newDataType = '';
+        protected $uploadType = Upload::class;
+        protected $uploadDataType = '';
+        /**
+         * If present, indicates the object was created by copying an existing Drive
+         * object.
+         *
+         * @param Copy $copy
+         */
+        public function setCopy(Copy $copy)
+        {
+        }
+        /**
+         * @return Copy
+         */
+        public function getCopy()
+        {
+        }
+        /**
+         * If present, indicates the object was newly created (e.g. as a blank
+         * document), not derived from a Drive object or external object.
+         *
+         * @param DriveactivityNew $new
+         */
+        public function setNew(DriveactivityNew $new)
+        {
+        }
+        /**
+         * @return DriveactivityNew
+         */
+        public function getNew()
+        {
+        }
+        /**
+         * If present, indicates the object originated externally and was uploaded to
+         * Drive.
+         *
+         * @param Upload $upload
+         */
+        public function setUpload(Upload $upload)
+        {
+        }
+        /**
+         * @return Upload
+         */
+        public function getUpload()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Copy
+     * Runtime class alias of \Google\Service\DriveActivity\Create registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCopy()
-    {
-    }
-    /**
-     * If present, indicates the object was newly created (e.g. as a blank
-     * document), not derived from a Drive object or external object.
-     *
-     * @param DriveactivityNew $new
-     */
-    public function setNew(DriveactivityNew $new)
-    {
-    }
-    /**
-     * @return DriveactivityNew
-     */
-    public function getNew()
-    {
-    }
-    /**
-     * If present, indicates the object originated externally and was uploaded to
-     * Drive.
-     *
-     * @param Upload $upload
-     */
-    public function setUpload(Upload $upload)
-    {
-    }
-    /**
-     * @return Upload
-     */
-    public function getUpload()
+    class Google_Service_DriveActivity_Create extends \Google\Service\DriveActivity\Create
     {
     }
 }

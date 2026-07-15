@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromePolicy;
-
-class GoogleChromePolicyV1BatchDeleteGroupPoliciesRequest extends \Google\Collection
-{
-    protected $collection_key = 'requests';
-    protected $requestsType = GoogleChromePolicyV1DeleteGroupPolicyRequest::class;
-    protected $requestsDataType = 'array';
-    /**
-     * @param GoogleChromePolicyV1DeleteGroupPolicyRequest[]
-     */
-    public function setRequests($requests)
+namespace Google\Service\ChromePolicy {
+    class GoogleChromePolicyV1BatchDeleteGroupPoliciesRequest extends \Google\Collection
     {
+        protected $collection_key = 'requests';
+        protected $requestsType = GoogleChromePolicyV1DeleteGroupPolicyRequest::class;
+        protected $requestsDataType = 'array';
+        /**
+         * @param GoogleChromePolicyV1DeleteGroupPolicyRequest[]
+         */
+        public function setRequests($requests)
+        {
+        }
+        /**
+         * @return GoogleChromePolicyV1DeleteGroupPolicyRequest[]
+         */
+        public function getRequests()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleChromePolicyV1DeleteGroupPolicyRequest[]
+     * Runtime class alias of \Google\Service\ChromePolicy\GoogleChromePolicyV1BatchDeleteGroupPoliciesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequests()
+    class Google_Service_ChromePolicy_GoogleChromePolicyV1BatchDeleteGroupPoliciesRequest extends \Google\Service\ChromePolicy\GoogleChromePolicyV1BatchDeleteGroupPoliciesRequest
     {
     }
 }

@@ -21,69 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent\Resource;
-
-/**
- * The "accountstatuses" collection of methods.
- * Typical usage is:
- *  <code>
- *   $contentService = new Google\Service\ShoppingContent(...);
- *   $accountstatuses = $contentService->accountstatuses;
- *  </code>
- */
-class Accountstatuses extends \Google\Service\Resource
-{
+namespace Google\Service\ShoppingContent\Resource {
+    use Google\Service\ShoppingContent\AccountStatus;
+    use Google\Service\ShoppingContent\AccountstatusesCustomBatchRequest;
+    use Google\Service\ShoppingContent\AccountstatusesCustomBatchResponse;
+    use Google\Service\ShoppingContent\AccountstatusesListResponse;
     /**
-     * Retrieves multiple Merchant Center account statuses in a single request.
-     * (accountstatuses.custombatch)
-     *
-     * @param AccountstatusesCustomBatchRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return AccountstatusesCustomBatchResponse
-     * @throws \Google\Service\Exception
+     * The "accountstatuses" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $contentService = new Google\Service\ShoppingContent(...);
+     *   $accountstatuses = $contentService->accountstatuses;
+     *  </code>
      */
-    public function custombatch(AccountstatusesCustomBatchRequest $postBody, $optParams = [])
+    class Accountstatuses extends \Google\Service\Resource
     {
+        /**
+         * Retrieves multiple Merchant Center account statuses in a single request.
+         * (accountstatuses.custombatch)
+         *
+         * @param AccountstatusesCustomBatchRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return AccountstatusesCustomBatchResponse
+         * @throws \Google\Service\Exception
+         */
+        public function custombatch(AccountstatusesCustomBatchRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves the status of a Merchant Center account. No itemLevelIssues are
+         * returned for multi-client accounts. (accountstatuses.get)
+         *
+         * @param string $merchantId The ID of the managing account. If this parameter
+         * is not the same as accountId, then this account must be a multi-client
+         * account and `accountId` must be the ID of a sub-account of this account.
+         * @param string $accountId The ID of the account.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string destinations If set, only issues for the specified
+         * destinations are returned, otherwise only issues for the Shopping
+         * destination.
+         * @return AccountStatus
+         * @throws \Google\Service\Exception
+         */
+        public function get($merchantId, $accountId, $optParams = [])
+        {
+        }
+        /**
+         * Lists the statuses of the sub-accounts in your Merchant Center account.
+         * (accountstatuses.listAccountstatuses)
+         *
+         * @param string $merchantId The ID of the managing account. This must be a
+         * multi-client account.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string destinations If set, only issues for the specified
+         * destinations are returned, otherwise only issues for the Shopping
+         * destination.
+         * @opt_param string maxResults The maximum number of account statuses to return
+         * in the response, used for paging.
+         * @opt_param string name If set, only the accounts with the given name (case
+         * sensitive) will be returned.
+         * @opt_param string pageToken The token returned by the previous request.
+         * @return AccountstatusesListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listAccountstatuses($merchantId, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Retrieves the status of a Merchant Center account. No itemLevelIssues are
-     * returned for multi-client accounts. (accountstatuses.get)
-     *
-     * @param string $merchantId The ID of the managing account. If this parameter
-     * is not the same as accountId, then this account must be a multi-client
-     * account and `accountId` must be the ID of a sub-account of this account.
-     * @param string $accountId The ID of the account.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string destinations If set, only issues for the specified
-     * destinations are returned, otherwise only issues for the Shopping
-     * destination.
-     * @return AccountStatus
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\ShoppingContent\Resource\Accountstatuses registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($merchantId, $accountId, $optParams = [])
-    {
-    }
-    /**
-     * Lists the statuses of the sub-accounts in your Merchant Center account.
-     * (accountstatuses.listAccountstatuses)
-     *
-     * @param string $merchantId The ID of the managing account. This must be a
-     * multi-client account.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string destinations If set, only issues for the specified
-     * destinations are returned, otherwise only issues for the Shopping
-     * destination.
-     * @opt_param string maxResults The maximum number of account statuses to return
-     * in the response, used for paging.
-     * @opt_param string name If set, only the accounts with the given name (case
-     * sensitive) will be returned.
-     * @opt_param string pageToken The token returned by the previous request.
-     * @return AccountstatusesListResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listAccountstatuses($merchantId, $optParams = [])
+    class Google_Service_ShoppingContent_Resource_Accountstatuses extends \Google\Service\ShoppingContent\Resource\Accountstatuses
     {
     }
 }

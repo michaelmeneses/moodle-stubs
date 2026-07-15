@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaModelevaluationMetricsSummarizationEvaluationMetrics extends \Google\Model
-{
-    /**
-     * ROUGE-L (Longest Common Subsequence) scoring at summary level.
-     *
-     * @var float
-     */
-    public $rougeLSum;
-    /**
-     * ROUGE-L (Longest Common Subsequence) scoring at summary level.
-     *
-     * @param float $rougeLSum
-     */
-    public function setRougeLSum($rougeLSum)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaModelevaluationMetricsSummarizationEvaluationMetrics extends \Google\Model
     {
+        /**
+         * ROUGE-L (Longest Common Subsequence) scoring at summary level.
+         *
+         * @var float
+         */
+        public $rougeLSum;
+        /**
+         * ROUGE-L (Longest Common Subsequence) scoring at summary level.
+         *
+         * @param float $rougeLSum
+         */
+        public function setRougeLSum($rougeLSum)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getRougeLSum()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaModelevaluationMetricsSummarizationEvaluationMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRougeLSum()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaModelevaluationMetricsSummarizationEvaluationMetrics extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaModelevaluationMetricsSummarizationEvaluationMetrics
     {
     }
 }

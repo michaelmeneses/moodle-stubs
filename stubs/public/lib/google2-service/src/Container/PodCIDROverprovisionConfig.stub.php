@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class PodCIDROverprovisionConfig extends \Google\Model
-{
-    /**
-     * Whether Pod CIDR overprovisioning is disabled. Note: Pod CIDR
-     * overprovisioning is enabled by default.
-     *
-     * @var bool
-     */
-    public $disable;
-    /**
-     * Whether Pod CIDR overprovisioning is disabled. Note: Pod CIDR
-     * overprovisioning is enabled by default.
-     *
-     * @param bool $disable
-     */
-    public function setDisable($disable)
+namespace Google\Service\Container {
+    class PodCIDROverprovisionConfig extends \Google\Model
     {
+        /**
+         * Whether Pod CIDR overprovisioning is disabled. Note: Pod CIDR
+         * overprovisioning is enabled by default.
+         *
+         * @var bool
+         */
+        public $disable;
+        /**
+         * Whether Pod CIDR overprovisioning is disabled. Note: Pod CIDR
+         * overprovisioning is enabled by default.
+         *
+         * @param bool $disable
+         */
+        public function setDisable($disable)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Container\PodCIDROverprovisionConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisable()
+    class Google_Service_Container_PodCIDROverprovisionConfig extends \Google\Service\Container\PodCIDROverprovisionConfig
     {
     }
 }

@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1beta1Tag extends \Google\Model
-{
-    public $column;
-    protected $fieldsType = GoogleCloudDatacatalogV1beta1TagField::class;
-    protected $fieldsDataType = 'map';
-    public $name;
-    public $template;
-    public $templateDisplayName;
-    public function setColumn($column)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1beta1Tag extends \Google\Model
     {
+        public $column;
+        protected $fieldsType = GoogleCloudDatacatalogV1beta1TagField::class;
+        protected $fieldsDataType = 'map';
+        public $name;
+        public $template;
+        public $templateDisplayName;
+        public function setColumn($column)
+        {
+        }
+        public function getColumn()
+        {
+        }
+        /**
+         * @param GoogleCloudDatacatalogV1beta1TagField[]
+         */
+        public function setFields($fields)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1beta1TagField[]
+         */
+        public function getFields()
+        {
+        }
+        public function setName($name)
+        {
+        }
+        public function getName()
+        {
+        }
+        public function setTemplate($template)
+        {
+        }
+        public function getTemplate()
+        {
+        }
+        public function setTemplateDisplayName($templateDisplayName)
+        {
+        }
+        public function getTemplateDisplayName()
+        {
+        }
     }
-    public function getColumn()
-    {
-    }
+}
+namespace {
     /**
-     * @param GoogleCloudDatacatalogV1beta1TagField[]
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1beta1Tag registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setFields($fields)
-    {
-    }
-    /**
-     * @return GoogleCloudDatacatalogV1beta1TagField[]
-     */
-    public function getFields()
-    {
-    }
-    public function setName($name)
-    {
-    }
-    public function getName()
-    {
-    }
-    public function setTemplate($template)
-    {
-    }
-    public function getTemplate()
-    {
-    }
-    public function setTemplateDisplayName($templateDisplayName)
-    {
-    }
-    public function getTemplateDisplayName()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1beta1Tag extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1beta1Tag
     {
     }
 }

@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SearchConsole;
-
-class Image extends \Google\Model
-{
-    /**
-     * Image data in format determined by the mime type. Currently, the format
-     * will always be "image/png", but this might change in the future.
-     *
-     * @var string
-     */
-    public $data;
-    /**
-     * The mime-type of the image data.
-     *
-     * @var string
-     */
-    public $mimeType;
-    /**
-     * Image data in format determined by the mime type. Currently, the format
-     * will always be "image/png", but this might change in the future.
-     *
-     * @param string $data
-     */
-    public function setData($data)
+namespace Google\Service\SearchConsole {
+    class Image extends \Google\Model
     {
+        /**
+         * Image data in format determined by the mime type. Currently, the format
+         * will always be "image/png", but this might change in the future.
+         *
+         * @var string
+         */
+        public $data;
+        /**
+         * The mime-type of the image data.
+         *
+         * @var string
+         */
+        public $mimeType;
+        /**
+         * Image data in format determined by the mime type. Currently, the format
+         * will always be "image/png", but this might change in the future.
+         *
+         * @param string $data
+         */
+        public function setData($data)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getData()
+        {
+        }
+        /**
+         * The mime-type of the image data.
+         *
+         * @param string $mimeType
+         */
+        public function setMimeType($mimeType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMimeType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SearchConsole\Image registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getData()
-    {
-    }
-    /**
-     * The mime-type of the image data.
-     *
-     * @param string $mimeType
-     */
-    public function setMimeType($mimeType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMimeType()
+    class Google_Service_SearchConsole_Image extends \Google\Service\SearchConsole\Image
     {
     }
 }

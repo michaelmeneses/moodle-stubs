@@ -21,124 +21,133 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataform;
-
-class Operations extends \Google\Collection
-{
-    protected $collection_key = 'tags';
-    protected $dependencyTargetsType = Target::class;
-    protected $dependencyTargetsDataType = 'array';
-    /**
-     * Whether this action is disabled (i.e. should not be run).
-     *
-     * @var bool
-     */
-    public $disabled;
-    /**
-     * Whether these operations produce an output relation.
-     *
-     * @var bool
-     */
-    public $hasOutput;
-    /**
-     * A list of arbitrary SQL statements that will be executed without
-     * alteration.
-     *
-     * @var string[]
-     */
-    public $queries;
-    protected $relationDescriptorType = RelationDescriptor::class;
-    protected $relationDescriptorDataType = '';
-    /**
-     * Arbitrary, user-defined tags on this action.
-     *
-     * @var string[]
-     */
-    public $tags;
-    /**
-     * A list of actions that this action depends on.
-     *
-     * @param Target[] $dependencyTargets
-     */
-    public function setDependencyTargets($dependencyTargets)
+namespace Google\Service\Dataform {
+    class Operations extends \Google\Collection
     {
+        protected $collection_key = 'tags';
+        protected $dependencyTargetsType = Target::class;
+        protected $dependencyTargetsDataType = 'array';
+        /**
+         * Whether this action is disabled (i.e. should not be run).
+         *
+         * @var bool
+         */
+        public $disabled;
+        /**
+         * Whether these operations produce an output relation.
+         *
+         * @var bool
+         */
+        public $hasOutput;
+        /**
+         * A list of arbitrary SQL statements that will be executed without
+         * alteration.
+         *
+         * @var string[]
+         */
+        public $queries;
+        protected $relationDescriptorType = RelationDescriptor::class;
+        protected $relationDescriptorDataType = '';
+        /**
+         * Arbitrary, user-defined tags on this action.
+         *
+         * @var string[]
+         */
+        public $tags;
+        /**
+         * A list of actions that this action depends on.
+         *
+         * @param Target[] $dependencyTargets
+         */
+        public function setDependencyTargets($dependencyTargets)
+        {
+        }
+        /**
+         * @return Target[]
+         */
+        public function getDependencyTargets()
+        {
+        }
+        /**
+         * Whether this action is disabled (i.e. should not be run).
+         *
+         * @param bool $disabled
+         */
+        public function setDisabled($disabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisabled()
+        {
+        }
+        /**
+         * Whether these operations produce an output relation.
+         *
+         * @param bool $hasOutput
+         */
+        public function setHasOutput($hasOutput)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getHasOutput()
+        {
+        }
+        /**
+         * A list of arbitrary SQL statements that will be executed without
+         * alteration.
+         *
+         * @param string[] $queries
+         */
+        public function setQueries($queries)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getQueries()
+        {
+        }
+        /**
+         * Descriptor for any output relation and its columns. Only set if
+         * `has_output` is true.
+         *
+         * @param RelationDescriptor $relationDescriptor
+         */
+        public function setRelationDescriptor(RelationDescriptor $relationDescriptor)
+        {
+        }
+        /**
+         * @return RelationDescriptor
+         */
+        public function getRelationDescriptor()
+        {
+        }
+        /**
+         * Arbitrary, user-defined tags on this action.
+         *
+         * @param string[] $tags
+         */
+        public function setTags($tags)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTags()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Target[]
+     * Runtime class alias of \Google\Service\Dataform\Operations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDependencyTargets()
-    {
-    }
-    /**
-     * Whether this action is disabled (i.e. should not be run).
-     *
-     * @param bool $disabled
-     */
-    public function setDisabled($disabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDisabled()
-    {
-    }
-    /**
-     * Whether these operations produce an output relation.
-     *
-     * @param bool $hasOutput
-     */
-    public function setHasOutput($hasOutput)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getHasOutput()
-    {
-    }
-    /**
-     * A list of arbitrary SQL statements that will be executed without
-     * alteration.
-     *
-     * @param string[] $queries
-     */
-    public function setQueries($queries)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getQueries()
-    {
-    }
-    /**
-     * Descriptor for any output relation and its columns. Only set if
-     * `has_output` is true.
-     *
-     * @param RelationDescriptor $relationDescriptor
-     */
-    public function setRelationDescriptor(RelationDescriptor $relationDescriptor)
-    {
-    }
-    /**
-     * @return RelationDescriptor
-     */
-    public function getRelationDescriptor()
-    {
-    }
-    /**
-     * Arbitrary, user-defined tags on this action.
-     *
-     * @param string[] $tags
-     */
-    public function setTags($tags)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTags()
+    class Google_Service_Dataform_Operations extends \Google\Service\Dataform\Operations
     {
     }
 }

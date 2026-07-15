@@ -21,78 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1GcsFilesetSpec extends \Google\Collection
-{
-    protected $collection_key = 'sampleGcsFileSpecs';
-    /**
-     * Required. Patterns to identify a set of files in Google Cloud Storage. For
-     * more information, see [Wildcard Names]
-     * (https://cloud.google.com/storage/docs/wildcards). Note: Currently, bucket
-     * wildcards are not supported. Examples of valid `file_patterns`: *
-     * `gs://bucket_name/dir`: matches all files in `bucket_name/dir` directory *
-     * `gs://bucket_name/dir*`: matches all files in `bucket_name/dir` and all
-     * subdirectories * `gs://bucket_name/file*`: matches files prefixed by `file`
-     * in `bucket_name` * `gs://bucket_name/??.txt`: matches files with two
-     * characters followed by `.txt` in `bucket_name` *
-     * `gs://bucket_name/[aeiou].txt`: matches files that contain a single vowel
-     * character followed by `.txt` in `bucket_name` *
-     * `gs://bucket_name/[a-m].txt`: matches files that contain `a`, `b`, ... or
-     * `m` followed by `.txt` in `bucket_name` * `gs://bucket_name/a/b`: matches
-     * all files in `bucket_name` that match the `a/b` pattern, such as `a/c/b`,
-     * `a/d/b` * `gs://another_bucket/a.txt`: matches `gs://another_bucket/a.txt`
-     * You can combine wildcards to match complex sets of files, for example:
-     * `gs://bucket_name/[a-m]??.j*g`
-     *
-     * @var string[]
-     */
-    public $filePatterns;
-    protected $sampleGcsFileSpecsType = GoogleCloudDatacatalogV1GcsFileSpec::class;
-    protected $sampleGcsFileSpecsDataType = 'array';
-    /**
-     * Required. Patterns to identify a set of files in Google Cloud Storage. For
-     * more information, see [Wildcard Names]
-     * (https://cloud.google.com/storage/docs/wildcards). Note: Currently, bucket
-     * wildcards are not supported. Examples of valid `file_patterns`: *
-     * `gs://bucket_name/dir`: matches all files in `bucket_name/dir` directory *
-     * `gs://bucket_name/dir*`: matches all files in `bucket_name/dir` and all
-     * subdirectories * `gs://bucket_name/file*`: matches files prefixed by `file`
-     * in `bucket_name` * `gs://bucket_name/??.txt`: matches files with two
-     * characters followed by `.txt` in `bucket_name` *
-     * `gs://bucket_name/[aeiou].txt`: matches files that contain a single vowel
-     * character followed by `.txt` in `bucket_name` *
-     * `gs://bucket_name/[a-m].txt`: matches files that contain `a`, `b`, ... or
-     * `m` followed by `.txt` in `bucket_name` * `gs://bucket_name/a/b`: matches
-     * all files in `bucket_name` that match the `a/b` pattern, such as `a/c/b`,
-     * `a/d/b` * `gs://another_bucket/a.txt`: matches `gs://another_bucket/a.txt`
-     * You can combine wildcards to match complex sets of files, for example:
-     * `gs://bucket_name/[a-m]??.j*g`
-     *
-     * @param string[] $filePatterns
-     */
-    public function setFilePatterns($filePatterns)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1GcsFilesetSpec extends \Google\Collection
     {
+        protected $collection_key = 'sampleGcsFileSpecs';
+        /**
+         * Required. Patterns to identify a set of files in Google Cloud Storage. For
+         * more information, see [Wildcard Names]
+         * (https://cloud.google.com/storage/docs/wildcards). Note: Currently, bucket
+         * wildcards are not supported. Examples of valid `file_patterns`: *
+         * `gs://bucket_name/dir`: matches all files in `bucket_name/dir` directory *
+         * `gs://bucket_name/dir*`: matches all files in `bucket_name/dir` and all
+         * subdirectories * `gs://bucket_name/file*`: matches files prefixed by `file`
+         * in `bucket_name` * `gs://bucket_name/??.txt`: matches files with two
+         * characters followed by `.txt` in `bucket_name` *
+         * `gs://bucket_name/[aeiou].txt`: matches files that contain a single vowel
+         * character followed by `.txt` in `bucket_name` *
+         * `gs://bucket_name/[a-m].txt`: matches files that contain `a`, `b`, ... or
+         * `m` followed by `.txt` in `bucket_name` * `gs://bucket_name/a/b`: matches
+         * all files in `bucket_name` that match the `a/b` pattern, such as `a/c/b`,
+         * `a/d/b` * `gs://another_bucket/a.txt`: matches `gs://another_bucket/a.txt`
+         * You can combine wildcards to match complex sets of files, for example:
+         * `gs://bucket_name/[a-m]??.j*g`
+         *
+         * @var string[]
+         */
+        public $filePatterns;
+        protected $sampleGcsFileSpecsType = GoogleCloudDatacatalogV1GcsFileSpec::class;
+        protected $sampleGcsFileSpecsDataType = 'array';
+        /**
+         * Required. Patterns to identify a set of files in Google Cloud Storage. For
+         * more information, see [Wildcard Names]
+         * (https://cloud.google.com/storage/docs/wildcards). Note: Currently, bucket
+         * wildcards are not supported. Examples of valid `file_patterns`: *
+         * `gs://bucket_name/dir`: matches all files in `bucket_name/dir` directory *
+         * `gs://bucket_name/dir*`: matches all files in `bucket_name/dir` and all
+         * subdirectories * `gs://bucket_name/file*`: matches files prefixed by `file`
+         * in `bucket_name` * `gs://bucket_name/??.txt`: matches files with two
+         * characters followed by `.txt` in `bucket_name` *
+         * `gs://bucket_name/[aeiou].txt`: matches files that contain a single vowel
+         * character followed by `.txt` in `bucket_name` *
+         * `gs://bucket_name/[a-m].txt`: matches files that contain `a`, `b`, ... or
+         * `m` followed by `.txt` in `bucket_name` * `gs://bucket_name/a/b`: matches
+         * all files in `bucket_name` that match the `a/b` pattern, such as `a/c/b`,
+         * `a/d/b` * `gs://another_bucket/a.txt`: matches `gs://another_bucket/a.txt`
+         * You can combine wildcards to match complex sets of files, for example:
+         * `gs://bucket_name/[a-m]??.j*g`
+         *
+         * @param string[] $filePatterns
+         */
+        public function setFilePatterns($filePatterns)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getFilePatterns()
+        {
+        }
+        /**
+         * Output only. Sample files contained in this fileset, not all files
+         * contained in this fileset are represented here.
+         *
+         * @param GoogleCloudDatacatalogV1GcsFileSpec[] $sampleGcsFileSpecs
+         */
+        public function setSampleGcsFileSpecs($sampleGcsFileSpecs)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1GcsFileSpec[]
+         */
+        public function getSampleGcsFileSpecs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1GcsFilesetSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFilePatterns()
-    {
-    }
-    /**
-     * Output only. Sample files contained in this fileset, not all files
-     * contained in this fileset are represented here.
-     *
-     * @param GoogleCloudDatacatalogV1GcsFileSpec[] $sampleGcsFileSpecs
-     */
-    public function setSampleGcsFileSpecs($sampleGcsFileSpecs)
-    {
-    }
-    /**
-     * @return GoogleCloudDatacatalogV1GcsFileSpec[]
-     */
-    public function getSampleGcsFileSpecs()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1GcsFilesetSpec extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1GcsFilesetSpec
     {
     }
 }

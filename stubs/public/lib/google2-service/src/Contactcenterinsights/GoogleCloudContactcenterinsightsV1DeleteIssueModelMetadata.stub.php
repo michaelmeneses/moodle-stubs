@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1DeleteIssueModelMetadata extends \Google\Model
-{
-    /**
-     * Output only. The time the operation was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Output only. The time the operation finished running.
-     *
-     * @var string
-     */
-    public $endTime;
-    protected $requestType = GoogleCloudContactcenterinsightsV1DeleteIssueModelRequest::class;
-    protected $requestDataType = '';
-    /**
-     * Output only. The time the operation was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1DeleteIssueModelMetadata extends \Google\Model
     {
+        /**
+         * Output only. The time the operation was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Output only. The time the operation finished running.
+         *
+         * @var string
+         */
+        public $endTime;
+        protected $requestType = GoogleCloudContactcenterinsightsV1DeleteIssueModelRequest::class;
+        protected $requestDataType = '';
+        /**
+         * Output only. The time the operation was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. The time the operation finished running.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * The original request for deletion.
+         *
+         * @param GoogleCloudContactcenterinsightsV1DeleteIssueModelRequest $request
+         */
+        public function setRequest(GoogleCloudContactcenterinsightsV1DeleteIssueModelRequest $request)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1DeleteIssueModelRequest
+         */
+        public function getRequest()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1DeleteIssueModelMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. The time the operation finished running.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndTime()
-    {
-    }
-    /**
-     * The original request for deletion.
-     *
-     * @param GoogleCloudContactcenterinsightsV1DeleteIssueModelRequest $request
-     */
-    public function setRequest(GoogleCloudContactcenterinsightsV1DeleteIssueModelRequest $request)
-    {
-    }
-    /**
-     * @return GoogleCloudContactcenterinsightsV1DeleteIssueModelRequest
-     */
-    public function getRequest()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1DeleteIssueModelMetadata extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1DeleteIssueModelMetadata
     {
     }
 }

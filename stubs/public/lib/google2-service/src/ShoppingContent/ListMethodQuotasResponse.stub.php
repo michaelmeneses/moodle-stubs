@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class ListMethodQuotasResponse extends \Google\Collection
-{
-    protected $collection_key = 'methodQuotas';
-    protected $methodQuotasType = MethodQuota::class;
-    protected $methodQuotasDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The current quota usage and limits per each method.
-     *
-     * @param MethodQuota[] $methodQuotas
-     */
-    public function setMethodQuotas($methodQuotas)
+namespace Google\Service\ShoppingContent {
+    class ListMethodQuotasResponse extends \Google\Collection
     {
+        protected $collection_key = 'methodQuotas';
+        protected $methodQuotasType = MethodQuota::class;
+        protected $methodQuotasDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The current quota usage and limits per each method.
+         *
+         * @param MethodQuota[] $methodQuotas
+         */
+        public function setMethodQuotas($methodQuotas)
+        {
+        }
+        /**
+         * @return MethodQuota[]
+         */
+        public function getMethodQuotas()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MethodQuota[]
+     * Runtime class alias of \Google\Service\ShoppingContent\ListMethodQuotasResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMethodQuotas()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_ShoppingContent_ListMethodQuotasResponse extends \Google\Service\ShoppingContent\ListMethodQuotasResponse
     {
     }
 }

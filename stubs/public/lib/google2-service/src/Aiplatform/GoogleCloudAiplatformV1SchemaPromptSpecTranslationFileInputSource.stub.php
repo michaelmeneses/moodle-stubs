@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaPromptSpecTranslationFileInputSource extends \Google\Model
-{
-    /**
-     * The file's contents.
-     *
-     * @var string
-     */
-    public $content;
-    /**
-     * The file's display name.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The file's mime type.
-     *
-     * @var string
-     */
-    public $mimeType;
-    /**
-     * The file's contents.
-     *
-     * @param string $content
-     */
-    public function setContent($content)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaPromptSpecTranslationFileInputSource extends \Google\Model
     {
+        /**
+         * The file's contents.
+         *
+         * @var string
+         */
+        public $content;
+        /**
+         * The file's display name.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The file's mime type.
+         *
+         * @var string
+         */
+        public $mimeType;
+        /**
+         * The file's contents.
+         *
+         * @param string $content
+         */
+        public function setContent($content)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContent()
+        {
+        }
+        /**
+         * The file's display name.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The file's mime type.
+         *
+         * @param string $mimeType
+         */
+        public function setMimeType($mimeType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMimeType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaPromptSpecTranslationFileInputSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContent()
-    {
-    }
-    /**
-     * The file's display name.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The file's mime type.
-     *
-     * @param string $mimeType
-     */
-    public function setMimeType($mimeType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMimeType()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaPromptSpecTranslationFileInputSource extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaPromptSpecTranslationFileInputSource
     {
     }
 }

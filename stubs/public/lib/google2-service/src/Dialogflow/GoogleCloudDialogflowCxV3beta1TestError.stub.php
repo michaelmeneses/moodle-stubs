@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3beta1TestError extends \Google\Model
-{
-    protected $statusType = GoogleRpcStatus::class;
-    protected $statusDataType = '';
-    /**
-     * The test case resource name.
-     *
-     * @var string
-     */
-    public $testCase;
-    /**
-     * The timestamp when the test was completed.
-     *
-     * @var string
-     */
-    public $testTime;
-    /**
-     * The status associated with the test.
-     *
-     * @param GoogleRpcStatus $status
-     */
-    public function setStatus(GoogleRpcStatus $status)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3beta1TestError extends \Google\Model
     {
+        protected $statusType = GoogleRpcStatus::class;
+        protected $statusDataType = '';
+        /**
+         * The test case resource name.
+         *
+         * @var string
+         */
+        public $testCase;
+        /**
+         * The timestamp when the test was completed.
+         *
+         * @var string
+         */
+        public $testTime;
+        /**
+         * The status associated with the test.
+         *
+         * @param GoogleRpcStatus $status
+         */
+        public function setStatus(GoogleRpcStatus $status)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus
+         */
+        public function getStatus()
+        {
+        }
+        /**
+         * The test case resource name.
+         *
+         * @param string $testCase
+         */
+        public function setTestCase($testCase)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTestCase()
+        {
+        }
+        /**
+         * The timestamp when the test was completed.
+         *
+         * @param string $testTime
+         */
+        public function setTestTime($testTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTestTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleRpcStatus
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3beta1TestError registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStatus()
-    {
-    }
-    /**
-     * The test case resource name.
-     *
-     * @param string $testCase
-     */
-    public function setTestCase($testCase)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTestCase()
-    {
-    }
-    /**
-     * The timestamp when the test was completed.
-     *
-     * @param string $testTime
-     */
-    public function setTestTime($testTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTestTime()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3beta1TestError extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3beta1TestError
     {
     }
 }

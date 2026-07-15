@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaAclConfig extends \Google\Model
-{
-    protected $idpConfigType = GoogleCloudDiscoveryengineV1alphaIdpConfig::class;
-    protected $idpConfigDataType = '';
-    /**
-     * Immutable. The full resource name of the acl configuration. Format:
-     * `projects/{project}/locations/{location}/aclConfig`. This field must be a
-     * UTF-8 encoded string with a length limit of 1024 characters.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Identity provider config.
-     *
-     * @param GoogleCloudDiscoveryengineV1alphaIdpConfig $idpConfig
-     */
-    public function setIdpConfig(GoogleCloudDiscoveryengineV1alphaIdpConfig $idpConfig)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaAclConfig extends \Google\Model
     {
+        protected $idpConfigType = GoogleCloudDiscoveryengineV1alphaIdpConfig::class;
+        protected $idpConfigDataType = '';
+        /**
+         * Immutable. The full resource name of the acl configuration. Format:
+         * `projects/{project}/locations/{location}/aclConfig`. This field must be a
+         * UTF-8 encoded string with a length limit of 1024 characters.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Identity provider config.
+         *
+         * @param GoogleCloudDiscoveryengineV1alphaIdpConfig $idpConfig
+         */
+        public function setIdpConfig(GoogleCloudDiscoveryengineV1alphaIdpConfig $idpConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1alphaIdpConfig
+         */
+        public function getIdpConfig()
+        {
+        }
+        /**
+         * Immutable. The full resource name of the acl configuration. Format:
+         * `projects/{project}/locations/{location}/aclConfig`. This field must be a
+         * UTF-8 encoded string with a length limit of 1024 characters.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1alphaIdpConfig
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaAclConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIdpConfig()
-    {
-    }
-    /**
-     * Immutable. The full resource name of the acl configuration. Format:
-     * `projects/{project}/locations/{location}/aclConfig`. This field must be a
-     * UTF-8 encoded string with a length limit of 1024 characters.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaAclConfig extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaAclConfig
     {
     }
 }

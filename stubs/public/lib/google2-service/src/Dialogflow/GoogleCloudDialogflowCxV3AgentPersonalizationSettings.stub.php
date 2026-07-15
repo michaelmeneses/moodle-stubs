@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3AgentPersonalizationSettings extends \Google\Model
-{
-    /**
-     * Optional. Default end user metadata, used when processing DetectIntent
-     * requests. Recommended to be filled as a template instead of hard-coded
-     * value, for example { "age": "$session.params.age" }. The data will be
-     * merged with the QueryParameters.end_user_metadata in
-     * DetectIntentRequest.query_params during query processing.
-     *
-     * @var array[]
-     */
-    public $defaultEndUserMetadata;
-    /**
-     * Optional. Default end user metadata, used when processing DetectIntent
-     * requests. Recommended to be filled as a template instead of hard-coded
-     * value, for example { "age": "$session.params.age" }. The data will be
-     * merged with the QueryParameters.end_user_metadata in
-     * DetectIntentRequest.query_params during query processing.
-     *
-     * @param array[] $defaultEndUserMetadata
-     */
-    public function setDefaultEndUserMetadata($defaultEndUserMetadata)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3AgentPersonalizationSettings extends \Google\Model
     {
+        /**
+         * Optional. Default end user metadata, used when processing DetectIntent
+         * requests. Recommended to be filled as a template instead of hard-coded
+         * value, for example { "age": "$session.params.age" }. The data will be
+         * merged with the QueryParameters.end_user_metadata in
+         * DetectIntentRequest.query_params during query processing.
+         *
+         * @var array[]
+         */
+        public $defaultEndUserMetadata;
+        /**
+         * Optional. Default end user metadata, used when processing DetectIntent
+         * requests. Recommended to be filled as a template instead of hard-coded
+         * value, for example { "age": "$session.params.age" }. The data will be
+         * merged with the QueryParameters.end_user_metadata in
+         * DetectIntentRequest.query_params during query processing.
+         *
+         * @param array[] $defaultEndUserMetadata
+         */
+        public function setDefaultEndUserMetadata($defaultEndUserMetadata)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getDefaultEndUserMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3AgentPersonalizationSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDefaultEndUserMetadata()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3AgentPersonalizationSettings extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3AgentPersonalizationSettings
     {
     }
 }

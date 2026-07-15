@@ -21,89 +21,98 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides;
-
-class InsertTableColumnsRequest extends \Google\Model
-{
-    protected $cellLocationType = TableCellLocation::class;
-    protected $cellLocationDataType = '';
-    /**
-     * Whether to insert new columns to the right of the reference cell location.
-     * - `True`: insert to the right. - `False`: insert to the left.
-     *
-     * @var bool
-     */
-    public $insertRight;
-    /**
-     * The number of columns to be inserted. Maximum 20 per request.
-     *
-     * @var int
-     */
-    public $number;
-    /**
-     * The table to insert columns into.
-     *
-     * @var string
-     */
-    public $tableObjectId;
-    /**
-     * The reference table cell location from which columns will be inserted. A
-     * new column will be inserted to the left (or right) of the column where the
-     * reference cell is. If the reference cell is a merged cell, a new column
-     * will be inserted to the left (or right) of the merged cell.
-     *
-     * @param TableCellLocation $cellLocation
-     */
-    public function setCellLocation(TableCellLocation $cellLocation)
+namespace Google\Service\Slides {
+    class InsertTableColumnsRequest extends \Google\Model
     {
+        protected $cellLocationType = TableCellLocation::class;
+        protected $cellLocationDataType = '';
+        /**
+         * Whether to insert new columns to the right of the reference cell location.
+         * - `True`: insert to the right. - `False`: insert to the left.
+         *
+         * @var bool
+         */
+        public $insertRight;
+        /**
+         * The number of columns to be inserted. Maximum 20 per request.
+         *
+         * @var int
+         */
+        public $number;
+        /**
+         * The table to insert columns into.
+         *
+         * @var string
+         */
+        public $tableObjectId;
+        /**
+         * The reference table cell location from which columns will be inserted. A
+         * new column will be inserted to the left (or right) of the column where the
+         * reference cell is. If the reference cell is a merged cell, a new column
+         * will be inserted to the left (or right) of the merged cell.
+         *
+         * @param TableCellLocation $cellLocation
+         */
+        public function setCellLocation(TableCellLocation $cellLocation)
+        {
+        }
+        /**
+         * @return TableCellLocation
+         */
+        public function getCellLocation()
+        {
+        }
+        /**
+         * Whether to insert new columns to the right of the reference cell location.
+         * - `True`: insert to the right. - `False`: insert to the left.
+         *
+         * @param bool $insertRight
+         */
+        public function setInsertRight($insertRight)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getInsertRight()
+        {
+        }
+        /**
+         * The number of columns to be inserted. Maximum 20 per request.
+         *
+         * @param int $number
+         */
+        public function setNumber($number)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumber()
+        {
+        }
+        /**
+         * The table to insert columns into.
+         *
+         * @param string $tableObjectId
+         */
+        public function setTableObjectId($tableObjectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTableObjectId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TableCellLocation
+     * Runtime class alias of \Google\Service\Slides\InsertTableColumnsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCellLocation()
-    {
-    }
-    /**
-     * Whether to insert new columns to the right of the reference cell location.
-     * - `True`: insert to the right. - `False`: insert to the left.
-     *
-     * @param bool $insertRight
-     */
-    public function setInsertRight($insertRight)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getInsertRight()
-    {
-    }
-    /**
-     * The number of columns to be inserted. Maximum 20 per request.
-     *
-     * @param int $number
-     */
-    public function setNumber($number)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNumber()
-    {
-    }
-    /**
-     * The table to insert columns into.
-     *
-     * @param string $tableObjectId
-     */
-    public function setTableObjectId($tableObjectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTableObjectId()
+    class Google_Service_Slides_InsertTableColumnsRequest extends \Google\Service\Slides\InsertTableColumnsRequest
     {
     }
 }

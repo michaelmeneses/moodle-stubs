@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseManagement;
-
-class UndeleteIosAppRequest extends \Google\Model
-{
-    /**
-     * Checksum provided in the IosApp resource. If provided, this checksum
-     * ensures that the client has an up-to-date value before proceeding.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * If set to true, the request is only validated. The App will _not_ be
-     * undeleted.
-     *
-     * @var bool
-     */
-    public $validateOnly;
-    /**
-     * Checksum provided in the IosApp resource. If provided, this checksum
-     * ensures that the client has an up-to-date value before proceeding.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
+namespace Google\Service\FirebaseManagement {
+    class UndeleteIosAppRequest extends \Google\Model
     {
+        /**
+         * Checksum provided in the IosApp resource. If provided, this checksum
+         * ensures that the client has an up-to-date value before proceeding.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * If set to true, the request is only validated. The App will _not_ be
+         * undeleted.
+         *
+         * @var bool
+         */
+        public $validateOnly;
+        /**
+         * Checksum provided in the IosApp resource. If provided, this checksum
+         * ensures that the client has an up-to-date value before proceeding.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * If set to true, the request is only validated. The App will _not_ be
+         * undeleted.
+         *
+         * @param bool $validateOnly
+         */
+        public function setValidateOnly($validateOnly)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getValidateOnly()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\FirebaseManagement\UndeleteIosAppRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
-    {
-    }
-    /**
-     * If set to true, the request is only validated. The App will _not_ be
-     * undeleted.
-     *
-     * @param bool $validateOnly
-     */
-    public function setValidateOnly($validateOnly)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getValidateOnly()
+    class Google_Service_FirebaseManagement_UndeleteIosAppRequest extends \Google\Service\FirebaseManagement\UndeleteIosAppRequest
     {
     }
 }

@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class CircleProto extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $circleId;
-    /**
-     * @var string
-     */
-    public $ownerGaiaId;
-    /**
-     * @var string
-     */
-    public $requiredConsistencyTimestampUsec;
-    /**
-     * @param string
-     */
-    public function setCircleId($circleId)
+namespace Google\Service\CloudSearch {
+    class CircleProto extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $circleId;
+        /**
+         * @var string
+         */
+        public $ownerGaiaId;
+        /**
+         * @var string
+         */
+        public $requiredConsistencyTimestampUsec;
+        /**
+         * @param string
+         */
+        public function setCircleId($circleId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCircleId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOwnerGaiaId($ownerGaiaId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOwnerGaiaId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRequiredConsistencyTimestampUsec($requiredConsistencyTimestampUsec)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequiredConsistencyTimestampUsec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\CircleProto registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCircleId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOwnerGaiaId($ownerGaiaId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOwnerGaiaId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRequiredConsistencyTimestampUsec($requiredConsistencyTimestampUsec)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequiredConsistencyTimestampUsec()
+    class Google_Service_CloudSearch_CircleProto extends \Google\Service\CloudSearch\CircleProto
     {
     }
 }

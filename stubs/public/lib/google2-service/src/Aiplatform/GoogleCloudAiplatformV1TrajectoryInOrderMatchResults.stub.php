@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1TrajectoryInOrderMatchResults extends \Google\Collection
-{
-    protected $collection_key = 'trajectoryInOrderMatchMetricValues';
-    protected $trajectoryInOrderMatchMetricValuesType = GoogleCloudAiplatformV1TrajectoryInOrderMatchMetricValue::class;
-    protected $trajectoryInOrderMatchMetricValuesDataType = 'array';
-    /**
-     * Output only. TrajectoryInOrderMatch metric values.
-     *
-     * @param GoogleCloudAiplatformV1TrajectoryInOrderMatchMetricValue[] $trajectoryInOrderMatchMetricValues
-     */
-    public function setTrajectoryInOrderMatchMetricValues($trajectoryInOrderMatchMetricValues)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1TrajectoryInOrderMatchResults extends \Google\Collection
     {
+        protected $collection_key = 'trajectoryInOrderMatchMetricValues';
+        protected $trajectoryInOrderMatchMetricValuesType = GoogleCloudAiplatformV1TrajectoryInOrderMatchMetricValue::class;
+        protected $trajectoryInOrderMatchMetricValuesDataType = 'array';
+        /**
+         * Output only. TrajectoryInOrderMatch metric values.
+         *
+         * @param GoogleCloudAiplatformV1TrajectoryInOrderMatchMetricValue[] $trajectoryInOrderMatchMetricValues
+         */
+        public function setTrajectoryInOrderMatchMetricValues($trajectoryInOrderMatchMetricValues)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1TrajectoryInOrderMatchMetricValue[]
+         */
+        public function getTrajectoryInOrderMatchMetricValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1TrajectoryInOrderMatchMetricValue[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1TrajectoryInOrderMatchResults registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTrajectoryInOrderMatchMetricValues()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1TrajectoryInOrderMatchResults extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1TrajectoryInOrderMatchResults
     {
     }
 }

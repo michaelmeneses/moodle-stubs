@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class TextOperatorOptions extends \Google\Model
-{
-    /**
-     * If true, the text value is tokenized as one atomic value in operator
-     * searches and facet matches. For example, if the operator name is "genre"
-     * and the value is "science-fiction" the query restrictions "genre:science"
-     * and "genre:fiction" doesn't match the item; "genre:science-fiction" does.
-     * Text value matching is case-sensitive and does not remove special
-     * characters. If false, the text is tokenized. For example, if the value is
-     * "science-fiction" the queries "genre:science" and "genre:fiction" matches
-     * the item.
-     *
-     * @var bool
-     */
-    public $exactMatchWithOperator;
-    /**
-     * Indicates the operator name required in the query in order to isolate the
-     * text property. For example, if operatorName is *subject* and the property's
-     * name is *subjectLine*, then queries like *subject:* show results only where
-     * the value of the property named *subjectLine* matches **. By contrast, a
-     * search that uses the same ** without an operator returns all items where **
-     * matches the value of any text properties or text within the content field
-     * for the item. The operator name can only contain lowercase letters (a-z).
-     * The maximum length is 32 characters.
-     *
-     * @var string
-     */
-    public $operatorName;
-    /**
-     * If true, the text value is tokenized as one atomic value in operator
-     * searches and facet matches. For example, if the operator name is "genre"
-     * and the value is "science-fiction" the query restrictions "genre:science"
-     * and "genre:fiction" doesn't match the item; "genre:science-fiction" does.
-     * Text value matching is case-sensitive and does not remove special
-     * characters. If false, the text is tokenized. For example, if the value is
-     * "science-fiction" the queries "genre:science" and "genre:fiction" matches
-     * the item.
-     *
-     * @param bool $exactMatchWithOperator
-     */
-    public function setExactMatchWithOperator($exactMatchWithOperator)
+namespace Google\Service\CloudSearch {
+    class TextOperatorOptions extends \Google\Model
     {
+        /**
+         * If true, the text value is tokenized as one atomic value in operator
+         * searches and facet matches. For example, if the operator name is "genre"
+         * and the value is "science-fiction" the query restrictions "genre:science"
+         * and "genre:fiction" doesn't match the item; "genre:science-fiction" does.
+         * Text value matching is case-sensitive and does not remove special
+         * characters. If false, the text is tokenized. For example, if the value is
+         * "science-fiction" the queries "genre:science" and "genre:fiction" matches
+         * the item.
+         *
+         * @var bool
+         */
+        public $exactMatchWithOperator;
+        /**
+         * Indicates the operator name required in the query in order to isolate the
+         * text property. For example, if operatorName is *subject* and the property's
+         * name is *subjectLine*, then queries like *subject:* show results only where
+         * the value of the property named *subjectLine* matches **. By contrast, a
+         * search that uses the same ** without an operator returns all items where **
+         * matches the value of any text properties or text within the content field
+         * for the item. The operator name can only contain lowercase letters (a-z).
+         * The maximum length is 32 characters.
+         *
+         * @var string
+         */
+        public $operatorName;
+        /**
+         * If true, the text value is tokenized as one atomic value in operator
+         * searches and facet matches. For example, if the operator name is "genre"
+         * and the value is "science-fiction" the query restrictions "genre:science"
+         * and "genre:fiction" doesn't match the item; "genre:science-fiction" does.
+         * Text value matching is case-sensitive and does not remove special
+         * characters. If false, the text is tokenized. For example, if the value is
+         * "science-fiction" the queries "genre:science" and "genre:fiction" matches
+         * the item.
+         *
+         * @param bool $exactMatchWithOperator
+         */
+        public function setExactMatchWithOperator($exactMatchWithOperator)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getExactMatchWithOperator()
+        {
+        }
+        /**
+         * Indicates the operator name required in the query in order to isolate the
+         * text property. For example, if operatorName is *subject* and the property's
+         * name is *subjectLine*, then queries like *subject:* show results only where
+         * the value of the property named *subjectLine* matches **. By contrast, a
+         * search that uses the same ** without an operator returns all items where **
+         * matches the value of any text properties or text within the content field
+         * for the item. The operator name can only contain lowercase letters (a-z).
+         * The maximum length is 32 characters.
+         *
+         * @param string $operatorName
+         */
+        public function setOperatorName($operatorName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOperatorName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudSearch\TextOperatorOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExactMatchWithOperator()
-    {
-    }
-    /**
-     * Indicates the operator name required in the query in order to isolate the
-     * text property. For example, if operatorName is *subject* and the property's
-     * name is *subjectLine*, then queries like *subject:* show results only where
-     * the value of the property named *subjectLine* matches **. By contrast, a
-     * search that uses the same ** without an operator returns all items where **
-     * matches the value of any text properties or text within the content field
-     * for the item. The operator name can only contain lowercase letters (a-z).
-     * The maximum length is 32 characters.
-     *
-     * @param string $operatorName
-     */
-    public function setOperatorName($operatorName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOperatorName()
+    class Google_Service_CloudSearch_TextOperatorOptions extends \Google\Service\CloudSearch\TextOperatorOptions
     {
     }
 }

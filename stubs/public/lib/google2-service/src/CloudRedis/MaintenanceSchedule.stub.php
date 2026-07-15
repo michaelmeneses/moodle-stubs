@@ -21,97 +21,106 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRedis;
-
-class MaintenanceSchedule extends \Google\Model
-{
-    /**
-     * If the scheduled maintenance can be rescheduled, default is true.
-     *
-     * @deprecated
-     * @var bool
-     */
-    public $canReschedule;
-    /**
-     * Output only. The end time of any upcoming scheduled maintenance for this
-     * instance.
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * Output only. The deadline that the maintenance schedule start time can not
-     * go beyond, including reschedule.
-     *
-     * @var string
-     */
-    public $scheduleDeadlineTime;
-    /**
-     * Output only. The start time of any upcoming scheduled maintenance for this
-     * instance.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * If the scheduled maintenance can be rescheduled, default is true.
-     *
-     * @deprecated
-     * @param bool $canReschedule
-     */
-    public function setCanReschedule($canReschedule)
+namespace Google\Service\CloudRedis {
+    class MaintenanceSchedule extends \Google\Model
     {
+        /**
+         * If the scheduled maintenance can be rescheduled, default is true.
+         *
+         * @deprecated
+         * @var bool
+         */
+        public $canReschedule;
+        /**
+         * Output only. The end time of any upcoming scheduled maintenance for this
+         * instance.
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * Output only. The deadline that the maintenance schedule start time can not
+         * go beyond, including reschedule.
+         *
+         * @var string
+         */
+        public $scheduleDeadlineTime;
+        /**
+         * Output only. The start time of any upcoming scheduled maintenance for this
+         * instance.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * If the scheduled maintenance can be rescheduled, default is true.
+         *
+         * @deprecated
+         * @param bool $canReschedule
+         */
+        public function setCanReschedule($canReschedule)
+        {
+        }
+        /**
+         * @deprecated
+         * @return bool
+         */
+        public function getCanReschedule()
+        {
+        }
+        /**
+         * Output only. The end time of any upcoming scheduled maintenance for this
+         * instance.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * Output only. The deadline that the maintenance schedule start time can not
+         * go beyond, including reschedule.
+         *
+         * @param string $scheduleDeadlineTime
+         */
+        public function setScheduleDeadlineTime($scheduleDeadlineTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScheduleDeadlineTime()
+        {
+        }
+        /**
+         * Output only. The start time of any upcoming scheduled maintenance for this
+         * instance.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudRedis\MaintenanceSchedule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCanReschedule()
-    {
-    }
-    /**
-     * Output only. The end time of any upcoming scheduled maintenance for this
-     * instance.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndTime()
-    {
-    }
-    /**
-     * Output only. The deadline that the maintenance schedule start time can not
-     * go beyond, including reschedule.
-     *
-     * @param string $scheduleDeadlineTime
-     */
-    public function setScheduleDeadlineTime($scheduleDeadlineTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getScheduleDeadlineTime()
-    {
-    }
-    /**
-     * Output only. The start time of any upcoming scheduled maintenance for this
-     * instance.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
+    class Google_Service_CloudRedis_MaintenanceSchedule extends \Google\Service\CloudRedis\MaintenanceSchedule
     {
     }
 }

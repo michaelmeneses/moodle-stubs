@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class GoogleCloudVisionV1p3beta1AsyncAnnotateFileResponse extends \Google\Model
-{
-    protected $outputConfigType = GoogleCloudVisionV1p3beta1OutputConfig::class;
-    protected $outputConfigDataType = '';
-    /**
-     * The output location and metadata from AsyncAnnotateFileRequest.
-     *
-     * @param GoogleCloudVisionV1p3beta1OutputConfig $outputConfig
-     */
-    public function setOutputConfig(GoogleCloudVisionV1p3beta1OutputConfig $outputConfig)
+namespace Google\Service\Vision {
+    class GoogleCloudVisionV1p3beta1AsyncAnnotateFileResponse extends \Google\Model
     {
+        protected $outputConfigType = GoogleCloudVisionV1p3beta1OutputConfig::class;
+        protected $outputConfigDataType = '';
+        /**
+         * The output location and metadata from AsyncAnnotateFileRequest.
+         *
+         * @param GoogleCloudVisionV1p3beta1OutputConfig $outputConfig
+         */
+        public function setOutputConfig(GoogleCloudVisionV1p3beta1OutputConfig $outputConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudVisionV1p3beta1OutputConfig
+         */
+        public function getOutputConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudVisionV1p3beta1OutputConfig
+     * Runtime class alias of \Google\Service\Vision\GoogleCloudVisionV1p3beta1AsyncAnnotateFileResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOutputConfig()
+    class Google_Service_Vision_GoogleCloudVisionV1p3beta1AsyncAnnotateFileResponse extends \Google\Service\Vision\GoogleCloudVisionV1p3beta1AsyncAnnotateFileResponse
     {
     }
 }

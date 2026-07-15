@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SmartDeviceManagement;
-
-class GoogleHomeEnterpriseSdmV1ListDevicesResponse extends \Google\Collection
-{
-    protected $collection_key = 'devices';
-    protected $devicesType = GoogleHomeEnterpriseSdmV1Device::class;
-    protected $devicesDataType = 'array';
-    /**
-     * The list of devices.
-     *
-     * @param GoogleHomeEnterpriseSdmV1Device[] $devices
-     */
-    public function setDevices($devices)
+namespace Google\Service\SmartDeviceManagement {
+    class GoogleHomeEnterpriseSdmV1ListDevicesResponse extends \Google\Collection
     {
+        protected $collection_key = 'devices';
+        protected $devicesType = GoogleHomeEnterpriseSdmV1Device::class;
+        protected $devicesDataType = 'array';
+        /**
+         * The list of devices.
+         *
+         * @param GoogleHomeEnterpriseSdmV1Device[] $devices
+         */
+        public function setDevices($devices)
+        {
+        }
+        /**
+         * @return GoogleHomeEnterpriseSdmV1Device[]
+         */
+        public function getDevices()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleHomeEnterpriseSdmV1Device[]
+     * Runtime class alias of \Google\Service\SmartDeviceManagement\GoogleHomeEnterpriseSdmV1ListDevicesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDevices()
+    class Google_Service_SmartDeviceManagement_GoogleHomeEnterpriseSdmV1ListDevicesResponse extends \Google\Service\SmartDeviceManagement\GoogleHomeEnterpriseSdmV1ListDevicesResponse
     {
     }
 }

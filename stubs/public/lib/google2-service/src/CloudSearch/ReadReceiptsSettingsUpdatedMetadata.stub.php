@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class ReadReceiptsSettingsUpdatedMetadata extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $readReceiptsEnabled;
-    /**
-     * @param bool
-     */
-    public function setReadReceiptsEnabled($readReceiptsEnabled)
+namespace Google\Service\CloudSearch {
+    class ReadReceiptsSettingsUpdatedMetadata extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $readReceiptsEnabled;
+        /**
+         * @param bool
+         */
+        public function setReadReceiptsEnabled($readReceiptsEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getReadReceiptsEnabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudSearch\ReadReceiptsSettingsUpdatedMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReadReceiptsEnabled()
+    class Google_Service_CloudSearch_ReadReceiptsSettingsUpdatedMetadata extends \Google\Service\CloudSearch\ReadReceiptsSettingsUpdatedMetadata
     {
     }
 }

@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class SourceDiskEncryptionKey extends \Google\Model
-{
-    protected $diskEncryptionKeyType = CustomerEncryptionKey::class;
-    protected $diskEncryptionKeyDataType = '';
-    /**
-     * URL of the disk attached to the source instance. This can be a full or
-     * valid partial URL. For example, the following are valid values:
-     * - https://www.googleapis.com/compute/v1/projects/project/zones/zone/disks/d
-     * isk     - projects/project/zones/zone/disks/disk     -
-     * zones/zone/disks/disk
-     *
-     * @var string
-     */
-    public $sourceDisk;
-    /**
-     * Thecustomer-supplied encryption key of the source disk. Required if the
-     * source disk is protected by a customer-supplied encryption key.
-     *
-     * @param CustomerEncryptionKey $diskEncryptionKey
-     */
-    public function setDiskEncryptionKey(CustomerEncryptionKey $diskEncryptionKey)
+namespace Google\Service\Compute {
+    class SourceDiskEncryptionKey extends \Google\Model
     {
+        protected $diskEncryptionKeyType = CustomerEncryptionKey::class;
+        protected $diskEncryptionKeyDataType = '';
+        /**
+         * URL of the disk attached to the source instance. This can be a full or
+         * valid partial URL. For example, the following are valid values:
+         * - https://www.googleapis.com/compute/v1/projects/project/zones/zone/disks/d
+         * isk     - projects/project/zones/zone/disks/disk     -
+         * zones/zone/disks/disk
+         *
+         * @var string
+         */
+        public $sourceDisk;
+        /**
+         * Thecustomer-supplied encryption key of the source disk. Required if the
+         * source disk is protected by a customer-supplied encryption key.
+         *
+         * @param CustomerEncryptionKey $diskEncryptionKey
+         */
+        public function setDiskEncryptionKey(CustomerEncryptionKey $diskEncryptionKey)
+        {
+        }
+        /**
+         * @return CustomerEncryptionKey
+         */
+        public function getDiskEncryptionKey()
+        {
+        }
+        /**
+         * URL of the disk attached to the source instance. This can be a full or
+         * valid partial URL. For example, the following are valid values:
+         * - https://www.googleapis.com/compute/v1/projects/project/zones/zone/disks/d
+         * isk     - projects/project/zones/zone/disks/disk     -
+         * zones/zone/disks/disk
+         *
+         * @param string $sourceDisk
+         */
+        public function setSourceDisk($sourceDisk)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceDisk()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CustomerEncryptionKey
+     * Runtime class alias of \Google\Service\Compute\SourceDiskEncryptionKey registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDiskEncryptionKey()
-    {
-    }
-    /**
-     * URL of the disk attached to the source instance. This can be a full or
-     * valid partial URL. For example, the following are valid values:
-     * - https://www.googleapis.com/compute/v1/projects/project/zones/zone/disks/d
-     * isk     - projects/project/zones/zone/disks/disk     -
-     * zones/zone/disks/disk
-     *
-     * @param string $sourceDisk
-     */
-    public function setSourceDisk($sourceDisk)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourceDisk()
+    class Google_Service_Compute_SourceDiskEncryptionKey extends \Google\Service\Compute\SourceDiskEncryptionKey
     {
     }
 }

@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class Frames extends \Google\Collection
-{
-    protected $collection_key = 'framesData';
-    protected $framesDataType = AssetFrame::class;
-    protected $framesDataDataType = 'array';
-    /**
-     * A repeated field of asset data.
-     *
-     * @param AssetFrame[] $framesData
-     */
-    public function setFramesData($framesData)
+namespace Google\Service\MigrationCenterAPI {
+    class Frames extends \Google\Collection
     {
+        protected $collection_key = 'framesData';
+        protected $framesDataType = AssetFrame::class;
+        protected $framesDataDataType = 'array';
+        /**
+         * A repeated field of asset data.
+         *
+         * @param AssetFrame[] $framesData
+         */
+        public function setFramesData($framesData)
+        {
+        }
+        /**
+         * @return AssetFrame[]
+         */
+        public function getFramesData()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AssetFrame[]
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\Frames registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFramesData()
+    class Google_Service_MigrationCenterAPI_Frames extends \Google\Service\MigrationCenterAPI\Frames
     {
     }
 }

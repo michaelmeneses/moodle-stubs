@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DeveloperConnect;
-
-class AppHubWorkload extends \Google\Model
-{
-    /**
-     * Output only. The criticality of the App Hub Workload.
-     *
-     * @var string
-     */
-    public $criticality;
-    /**
-     * Output only. The environment of the App Hub Workload.
-     *
-     * @var string
-     */
-    public $environment;
-    /**
-     * Required. Output only. Immutable. The name of the App Hub Workload. Format:
-     * `projects/{project}/locations/{location}/applications/{application}/workloa
-     * ds/{workload}`.
-     *
-     * @var string
-     */
-    public $workload;
-    /**
-     * Output only. The criticality of the App Hub Workload.
-     *
-     * @param string $criticality
-     */
-    public function setCriticality($criticality)
+namespace Google\Service\DeveloperConnect {
+    class AppHubWorkload extends \Google\Model
     {
+        /**
+         * Output only. The criticality of the App Hub Workload.
+         *
+         * @var string
+         */
+        public $criticality;
+        /**
+         * Output only. The environment of the App Hub Workload.
+         *
+         * @var string
+         */
+        public $environment;
+        /**
+         * Required. Output only. Immutable. The name of the App Hub Workload. Format:
+         * `projects/{project}/locations/{location}/applications/{application}/workloa
+         * ds/{workload}`.
+         *
+         * @var string
+         */
+        public $workload;
+        /**
+         * Output only. The criticality of the App Hub Workload.
+         *
+         * @param string $criticality
+         */
+        public function setCriticality($criticality)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCriticality()
+        {
+        }
+        /**
+         * Output only. The environment of the App Hub Workload.
+         *
+         * @param string $environment
+         */
+        public function setEnvironment($environment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEnvironment()
+        {
+        }
+        /**
+         * Required. Output only. Immutable. The name of the App Hub Workload. Format:
+         * `projects/{project}/locations/{location}/applications/{application}/workloa
+         * ds/{workload}`.
+         *
+         * @param string $workload
+         */
+        public function setWorkload($workload)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWorkload()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DeveloperConnect\AppHubWorkload registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCriticality()
-    {
-    }
-    /**
-     * Output only. The environment of the App Hub Workload.
-     *
-     * @param string $environment
-     */
-    public function setEnvironment($environment)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEnvironment()
-    {
-    }
-    /**
-     * Required. Output only. Immutable. The name of the App Hub Workload. Format:
-     * `projects/{project}/locations/{location}/applications/{application}/workloa
-     * ds/{workload}`.
-     *
-     * @param string $workload
-     */
-    public function setWorkload($workload)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWorkload()
+    class Google_Service_DeveloperConnect_AppHubWorkload extends \Google\Service\DeveloperConnect\AppHubWorkload
     {
     }
 }

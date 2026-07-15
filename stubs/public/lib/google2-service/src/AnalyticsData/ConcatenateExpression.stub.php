@@ -21,59 +21,68 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsData;
-
-class ConcatenateExpression extends \Google\Collection
-{
-    protected $collection_key = 'dimensionNames';
-    /**
-     * The delimiter placed between dimension names. Delimiters are often single
-     * characters such as "|" or "," but can be longer strings. If a dimension
-     * value contains the delimiter, both will be present in response with no
-     * distinction. For example if dimension 1 value = "US,FR", dimension 2 value
-     * = "JP", and delimiter = ",", then the response will contain "US,FR,JP".
-     *
-     * @var string
-     */
-    public $delimiter;
-    /**
-     * Names of dimensions. The names must refer back to names in the dimensions
-     * field of the request.
-     *
-     * @var string[]
-     */
-    public $dimensionNames;
-    /**
-     * The delimiter placed between dimension names. Delimiters are often single
-     * characters such as "|" or "," but can be longer strings. If a dimension
-     * value contains the delimiter, both will be present in response with no
-     * distinction. For example if dimension 1 value = "US,FR", dimension 2 value
-     * = "JP", and delimiter = ",", then the response will contain "US,FR,JP".
-     *
-     * @param string $delimiter
-     */
-    public function setDelimiter($delimiter)
+namespace Google\Service\AnalyticsData {
+    class ConcatenateExpression extends \Google\Collection
     {
+        protected $collection_key = 'dimensionNames';
+        /**
+         * The delimiter placed between dimension names. Delimiters are often single
+         * characters such as "|" or "," but can be longer strings. If a dimension
+         * value contains the delimiter, both will be present in response with no
+         * distinction. For example if dimension 1 value = "US,FR", dimension 2 value
+         * = "JP", and delimiter = ",", then the response will contain "US,FR,JP".
+         *
+         * @var string
+         */
+        public $delimiter;
+        /**
+         * Names of dimensions. The names must refer back to names in the dimensions
+         * field of the request.
+         *
+         * @var string[]
+         */
+        public $dimensionNames;
+        /**
+         * The delimiter placed between dimension names. Delimiters are often single
+         * characters such as "|" or "," but can be longer strings. If a dimension
+         * value contains the delimiter, both will be present in response with no
+         * distinction. For example if dimension 1 value = "US,FR", dimension 2 value
+         * = "JP", and delimiter = ",", then the response will contain "US,FR,JP".
+         *
+         * @param string $delimiter
+         */
+        public function setDelimiter($delimiter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDelimiter()
+        {
+        }
+        /**
+         * Names of dimensions. The names must refer back to names in the dimensions
+         * field of the request.
+         *
+         * @param string[] $dimensionNames
+         */
+        public function setDimensionNames($dimensionNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDimensionNames()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AnalyticsData\ConcatenateExpression registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDelimiter()
-    {
-    }
-    /**
-     * Names of dimensions. The names must refer back to names in the dimensions
-     * field of the request.
-     *
-     * @param string[] $dimensionNames
-     */
-    public function setDimensionNames($dimensionNames)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getDimensionNames()
+    class Google_Service_AnalyticsData_ConcatenateExpression extends \Google\Service\AnalyticsData\ConcatenateExpression
     {
     }
 }

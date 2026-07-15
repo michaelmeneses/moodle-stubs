@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class ApplicationPermission extends \Google\Model
-{
-    /**
-     * A longer description of the permission, providing more detail on what it
-     * affects. Localized.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * The name of the permission. Localized.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * An opaque string uniquely identifying the permission. Not localized.
-     *
-     * @var string
-     */
-    public $permissionId;
-    /**
-     * A longer description of the permission, providing more detail on what it
-     * affects. Localized.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\AndroidManagement {
+    class ApplicationPermission extends \Google\Model
     {
+        /**
+         * A longer description of the permission, providing more detail on what it
+         * affects. Localized.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * The name of the permission. Localized.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * An opaque string uniquely identifying the permission. Not localized.
+         *
+         * @var string
+         */
+        public $permissionId;
+        /**
+         * A longer description of the permission, providing more detail on what it
+         * affects. Localized.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * The name of the permission. Localized.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * An opaque string uniquely identifying the permission. Not localized.
+         *
+         * @param string $permissionId
+         */
+        public function setPermissionId($permissionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPermissionId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidManagement\ApplicationPermission registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * The name of the permission. Localized.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * An opaque string uniquely identifying the permission. Not localized.
-     *
-     * @param string $permissionId
-     */
-    public function setPermissionId($permissionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPermissionId()
+    class Google_Service_AndroidManagement_ApplicationPermission extends \Google\Service\AndroidManagement\ApplicationPermission
     {
     }
 }

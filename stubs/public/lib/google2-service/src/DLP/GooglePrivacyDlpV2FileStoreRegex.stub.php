@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2FileStoreRegex extends \Google\Model
-{
-    protected $cloudStorageRegexType = GooglePrivacyDlpV2CloudStorageRegex::class;
-    protected $cloudStorageRegexDataType = '';
-    /**
-     * Optional. Regex for Cloud Storage.
-     *
-     * @param GooglePrivacyDlpV2CloudStorageRegex $cloudStorageRegex
-     */
-    public function setCloudStorageRegex(GooglePrivacyDlpV2CloudStorageRegex $cloudStorageRegex)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2FileStoreRegex extends \Google\Model
     {
+        protected $cloudStorageRegexType = GooglePrivacyDlpV2CloudStorageRegex::class;
+        protected $cloudStorageRegexDataType = '';
+        /**
+         * Optional. Regex for Cloud Storage.
+         *
+         * @param GooglePrivacyDlpV2CloudStorageRegex $cloudStorageRegex
+         */
+        public function setCloudStorageRegex(GooglePrivacyDlpV2CloudStorageRegex $cloudStorageRegex)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2CloudStorageRegex
+         */
+        public function getCloudStorageRegex()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2CloudStorageRegex
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2FileStoreRegex registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCloudStorageRegex()
+    class Google_Service_DLP_GooglePrivacyDlpV2FileStoreRegex extends \Google\Service\DLP\GooglePrivacyDlpV2FileStoreRegex
     {
     }
 }

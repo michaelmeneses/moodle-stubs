@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Keep;
-
-class Group extends \Google\Model
-{
-    /**
-     * The group email.
-     *
-     * @var string
-     */
-    public $email;
-    /**
-     * The group email.
-     *
-     * @param string $email
-     */
-    public function setEmail($email)
+namespace Google\Service\Keep {
+    class Group extends \Google\Model
     {
+        /**
+         * The group email.
+         *
+         * @var string
+         */
+        public $email;
+        /**
+         * The group email.
+         *
+         * @param string $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Keep\Group registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmail()
+    class Google_Service_Keep_Group extends \Google\Service\Keep\Group
     {
     }
 }

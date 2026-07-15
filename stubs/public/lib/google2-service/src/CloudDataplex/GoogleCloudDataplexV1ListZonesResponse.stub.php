@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1ListZonesResponse extends \Google\Collection
-{
-    protected $collection_key = 'zones';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $zonesType = GoogleCloudDataplexV1Zone::class;
-    protected $zonesDataType = 'array';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1ListZonesResponse extends \Google\Collection
     {
+        protected $collection_key = 'zones';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $zonesType = GoogleCloudDataplexV1Zone::class;
+        protected $zonesDataType = 'array';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Zones under the given parent lake.
+         *
+         * @param GoogleCloudDataplexV1Zone[] $zones
+         */
+        public function setZones($zones)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1Zone[]
+         */
+        public function getZones()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1ListZonesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Zones under the given parent lake.
-     *
-     * @param GoogleCloudDataplexV1Zone[] $zones
-     */
-    public function setZones($zones)
-    {
-    }
-    /**
-     * @return GoogleCloudDataplexV1Zone[]
-     */
-    public function getZones()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1ListZonesResponse extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1ListZonesResponse
     {
     }
 }

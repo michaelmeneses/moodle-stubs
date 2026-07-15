@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveActivity;
-
-class DataLeakPreventionChange extends \Google\Model
-{
-    /**
-     * An update to the DLP state that is neither FLAGGED or CLEARED.
-     */
-    public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
-    /**
-     * Document has been flagged as containing sensitive content.
-     */
-    public const TYPE_FLAGGED = 'FLAGGED';
-    /**
-     * Document is no longer flagged as containing sensitive content.
-     */
-    public const TYPE_CLEARED = 'CLEARED';
-    /**
-     * The type of Data Leak Prevention (DLP) change.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The type of Data Leak Prevention (DLP) change.
-     *
-     * Accepted values: TYPE_UNSPECIFIED, FLAGGED, CLEARED
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
+namespace Google\Service\DriveActivity {
+    class DataLeakPreventionChange extends \Google\Model
     {
+        /**
+         * An update to the DLP state that is neither FLAGGED or CLEARED.
+         */
+        public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
+        /**
+         * Document has been flagged as containing sensitive content.
+         */
+        public const TYPE_FLAGGED = 'FLAGGED';
+        /**
+         * Document is no longer flagged as containing sensitive content.
+         */
+        public const TYPE_CLEARED = 'CLEARED';
+        /**
+         * The type of Data Leak Prevention (DLP) change.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The type of Data Leak Prevention (DLP) change.
+         *
+         * Accepted values: TYPE_UNSPECIFIED, FLAGGED, CLEARED
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::TYPE_*
+     * Runtime class alias of \Google\Service\DriveActivity\DataLeakPreventionChange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getType()
+    class Google_Service_DriveActivity_DataLeakPreventionChange extends \Google\Service\DriveActivity\DataLeakPreventionChange
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class ListClustersResponse extends \Google\Collection
-{
-    protected $collection_key = 'missingZones';
-    protected $clustersType = Cluster::class;
-    protected $clustersDataType = 'array';
-    /**
-     * If any zones are listed here, the list of clusters returned may be missing
-     * those zones.
-     *
-     * @var string[]
-     */
-    public $missingZones;
-    /**
-     * A list of clusters in the project in the specified zone, or across all
-     * ones.
-     *
-     * @param Cluster[] $clusters
-     */
-    public function setClusters($clusters)
+namespace Google\Service\Container {
+    class ListClustersResponse extends \Google\Collection
     {
+        protected $collection_key = 'missingZones';
+        protected $clustersType = Cluster::class;
+        protected $clustersDataType = 'array';
+        /**
+         * If any zones are listed here, the list of clusters returned may be missing
+         * those zones.
+         *
+         * @var string[]
+         */
+        public $missingZones;
+        /**
+         * A list of clusters in the project in the specified zone, or across all
+         * ones.
+         *
+         * @param Cluster[] $clusters
+         */
+        public function setClusters($clusters)
+        {
+        }
+        /**
+         * @return Cluster[]
+         */
+        public function getClusters()
+        {
+        }
+        /**
+         * If any zones are listed here, the list of clusters returned may be missing
+         * those zones.
+         *
+         * @param string[] $missingZones
+         */
+        public function setMissingZones($missingZones)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMissingZones()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Cluster[]
+     * Runtime class alias of \Google\Service\Container\ListClustersResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClusters()
-    {
-    }
-    /**
-     * If any zones are listed here, the list of clusters returned may be missing
-     * those zones.
-     *
-     * @param string[] $missingZones
-     */
-    public function setMissingZones($missingZones)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getMissingZones()
+    class Google_Service_Container_ListClustersResponse extends \Google\Service\Container\ListClustersResponse
     {
     }
 }

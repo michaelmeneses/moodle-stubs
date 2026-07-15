@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1BoundingPoly extends \Google\Collection
-{
-    protected $collection_key = 'vertices';
-    protected $normalizedVerticesType = GoogleCloudDocumentaiV1NormalizedVertex::class;
-    protected $normalizedVerticesDataType = 'array';
-    protected $verticesType = GoogleCloudDocumentaiV1Vertex::class;
-    protected $verticesDataType = 'array';
-    /**
-     * The bounding polygon normalized vertices.
-     *
-     * @param GoogleCloudDocumentaiV1NormalizedVertex[] $normalizedVertices
-     */
-    public function setNormalizedVertices($normalizedVertices)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1BoundingPoly extends \Google\Collection
     {
+        protected $collection_key = 'vertices';
+        protected $normalizedVerticesType = GoogleCloudDocumentaiV1NormalizedVertex::class;
+        protected $normalizedVerticesDataType = 'array';
+        protected $verticesType = GoogleCloudDocumentaiV1Vertex::class;
+        protected $verticesDataType = 'array';
+        /**
+         * The bounding polygon normalized vertices.
+         *
+         * @param GoogleCloudDocumentaiV1NormalizedVertex[] $normalizedVertices
+         */
+        public function setNormalizedVertices($normalizedVertices)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1NormalizedVertex[]
+         */
+        public function getNormalizedVertices()
+        {
+        }
+        /**
+         * The bounding polygon vertices.
+         *
+         * @param GoogleCloudDocumentaiV1Vertex[] $vertices
+         */
+        public function setVertices($vertices)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1Vertex[]
+         */
+        public function getVertices()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiV1NormalizedVertex[]
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1BoundingPoly registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNormalizedVertices()
-    {
-    }
-    /**
-     * The bounding polygon vertices.
-     *
-     * @param GoogleCloudDocumentaiV1Vertex[] $vertices
-     */
-    public function setVertices($vertices)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1Vertex[]
-     */
-    public function getVertices()
+    class Google_Service_Document_GoogleCloudDocumentaiV1BoundingPoly extends \Google\Service\Document\GoogleCloudDocumentaiV1BoundingPoly
     {
     }
 }

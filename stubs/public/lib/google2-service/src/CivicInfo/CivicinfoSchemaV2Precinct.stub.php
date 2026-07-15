@@ -21,297 +21,306 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CivicInfo;
-
-class CivicinfoSchemaV2Precinct extends \Google\Collection
-{
-    protected $collection_key = 'spatialBoundaryId';
-    /**
-     * ID of the AdministrationRegion message for this precinct. Corresponds to
-     * LocalityId xml tag.
-     *
-     * @var string
-     */
-    public $administrationRegionId;
-    /**
-     * ID(s) of the Contest message(s) for this precinct.
-     *
-     * @var string[]
-     */
-    public $contestId;
-    /**
-     * Required. Dataset ID. What datasets our Precincts come from.
-     *
-     * @var string
-     */
-    public $datasetId;
-    /**
-     * ID(s) of the PollingLocation message(s) for this precinct.
-     *
-     * @var string[]
-     */
-    public $earlyVoteSiteId;
-    /**
-     * ID(s) of the ElectoralDistrict message(s) for this precinct.
-     *
-     * @var string[]
-     */
-    public $electoralDistrictId;
-    /**
-     * Required. A unique identifier for this precinct.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Specifies if the precinct runs mail-only elections.
-     *
-     * @var bool
-     */
-    public $mailOnly;
-    /**
-     * Required. The name of the precinct.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The number of the precinct.
-     *
-     * @var string
-     */
-    public $number;
-    /**
-     * Encouraged. The OCD ID of the precinct
-     *
-     * @var string[]
-     */
-    public $ocdId;
-    /**
-     * ID(s) of the PollingLocation message(s) for this precinct.
-     *
-     * @var string[]
-     */
-    public $pollingLocationId;
-    /**
-     * ID(s) of the SpatialBoundary message(s) for this precinct. Used to specify
-     * a geometrical boundary of the precinct.
-     *
-     * @var string[]
-     */
-    public $spatialBoundaryId;
-    /**
-     * If present, this proto corresponds to one portion of split precinct. Other
-     * portions of this precinct are guaranteed to have the same `name`. If not
-     * present, this proto represents a full precicnt.
-     *
-     * @var string
-     */
-    public $splitName;
-    /**
-     * Specifies the ward the precinct is contained within.
-     *
-     * @var string
-     */
-    public $ward;
-    /**
-     * ID of the AdministrationRegion message for this precinct. Corresponds to
-     * LocalityId xml tag.
-     *
-     * @param string $administrationRegionId
-     */
-    public function setAdministrationRegionId($administrationRegionId)
+namespace Google\Service\CivicInfo {
+    class CivicinfoSchemaV2Precinct extends \Google\Collection
     {
+        protected $collection_key = 'spatialBoundaryId';
+        /**
+         * ID of the AdministrationRegion message for this precinct. Corresponds to
+         * LocalityId xml tag.
+         *
+         * @var string
+         */
+        public $administrationRegionId;
+        /**
+         * ID(s) of the Contest message(s) for this precinct.
+         *
+         * @var string[]
+         */
+        public $contestId;
+        /**
+         * Required. Dataset ID. What datasets our Precincts come from.
+         *
+         * @var string
+         */
+        public $datasetId;
+        /**
+         * ID(s) of the PollingLocation message(s) for this precinct.
+         *
+         * @var string[]
+         */
+        public $earlyVoteSiteId;
+        /**
+         * ID(s) of the ElectoralDistrict message(s) for this precinct.
+         *
+         * @var string[]
+         */
+        public $electoralDistrictId;
+        /**
+         * Required. A unique identifier for this precinct.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Specifies if the precinct runs mail-only elections.
+         *
+         * @var bool
+         */
+        public $mailOnly;
+        /**
+         * Required. The name of the precinct.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The number of the precinct.
+         *
+         * @var string
+         */
+        public $number;
+        /**
+         * Encouraged. The OCD ID of the precinct
+         *
+         * @var string[]
+         */
+        public $ocdId;
+        /**
+         * ID(s) of the PollingLocation message(s) for this precinct.
+         *
+         * @var string[]
+         */
+        public $pollingLocationId;
+        /**
+         * ID(s) of the SpatialBoundary message(s) for this precinct. Used to specify
+         * a geometrical boundary of the precinct.
+         *
+         * @var string[]
+         */
+        public $spatialBoundaryId;
+        /**
+         * If present, this proto corresponds to one portion of split precinct. Other
+         * portions of this precinct are guaranteed to have the same `name`. If not
+         * present, this proto represents a full precicnt.
+         *
+         * @var string
+         */
+        public $splitName;
+        /**
+         * Specifies the ward the precinct is contained within.
+         *
+         * @var string
+         */
+        public $ward;
+        /**
+         * ID of the AdministrationRegion message for this precinct. Corresponds to
+         * LocalityId xml tag.
+         *
+         * @param string $administrationRegionId
+         */
+        public function setAdministrationRegionId($administrationRegionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdministrationRegionId()
+        {
+        }
+        /**
+         * ID(s) of the Contest message(s) for this precinct.
+         *
+         * @param string[] $contestId
+         */
+        public function setContestId($contestId)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getContestId()
+        {
+        }
+        /**
+         * Required. Dataset ID. What datasets our Precincts come from.
+         *
+         * @param string $datasetId
+         */
+        public function setDatasetId($datasetId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatasetId()
+        {
+        }
+        /**
+         * ID(s) of the PollingLocation message(s) for this precinct.
+         *
+         * @param string[] $earlyVoteSiteId
+         */
+        public function setEarlyVoteSiteId($earlyVoteSiteId)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getEarlyVoteSiteId()
+        {
+        }
+        /**
+         * ID(s) of the ElectoralDistrict message(s) for this precinct.
+         *
+         * @param string[] $electoralDistrictId
+         */
+        public function setElectoralDistrictId($electoralDistrictId)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getElectoralDistrictId()
+        {
+        }
+        /**
+         * Required. A unique identifier for this precinct.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Specifies if the precinct runs mail-only elections.
+         *
+         * @param bool $mailOnly
+         */
+        public function setMailOnly($mailOnly)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getMailOnly()
+        {
+        }
+        /**
+         * Required. The name of the precinct.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The number of the precinct.
+         *
+         * @param string $number
+         */
+        public function setNumber($number)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNumber()
+        {
+        }
+        /**
+         * Encouraged. The OCD ID of the precinct
+         *
+         * @param string[] $ocdId
+         */
+        public function setOcdId($ocdId)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getOcdId()
+        {
+        }
+        /**
+         * ID(s) of the PollingLocation message(s) for this precinct.
+         *
+         * @param string[] $pollingLocationId
+         */
+        public function setPollingLocationId($pollingLocationId)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPollingLocationId()
+        {
+        }
+        /**
+         * ID(s) of the SpatialBoundary message(s) for this precinct. Used to specify
+         * a geometrical boundary of the precinct.
+         *
+         * @param string[] $spatialBoundaryId
+         */
+        public function setSpatialBoundaryId($spatialBoundaryId)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSpatialBoundaryId()
+        {
+        }
+        /**
+         * If present, this proto corresponds to one portion of split precinct. Other
+         * portions of this precinct are guaranteed to have the same `name`. If not
+         * present, this proto represents a full precicnt.
+         *
+         * @param string $splitName
+         */
+        public function setSplitName($splitName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSplitName()
+        {
+        }
+        /**
+         * Specifies the ward the precinct is contained within.
+         *
+         * @param string $ward
+         */
+        public function setWard($ward)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWard()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CivicInfo\CivicinfoSchemaV2Precinct registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdministrationRegionId()
-    {
-    }
-    /**
-     * ID(s) of the Contest message(s) for this precinct.
-     *
-     * @param string[] $contestId
-     */
-    public function setContestId($contestId)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getContestId()
-    {
-    }
-    /**
-     * Required. Dataset ID. What datasets our Precincts come from.
-     *
-     * @param string $datasetId
-     */
-    public function setDatasetId($datasetId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDatasetId()
-    {
-    }
-    /**
-     * ID(s) of the PollingLocation message(s) for this precinct.
-     *
-     * @param string[] $earlyVoteSiteId
-     */
-    public function setEarlyVoteSiteId($earlyVoteSiteId)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getEarlyVoteSiteId()
-    {
-    }
-    /**
-     * ID(s) of the ElectoralDistrict message(s) for this precinct.
-     *
-     * @param string[] $electoralDistrictId
-     */
-    public function setElectoralDistrictId($electoralDistrictId)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getElectoralDistrictId()
-    {
-    }
-    /**
-     * Required. A unique identifier for this precinct.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Specifies if the precinct runs mail-only elections.
-     *
-     * @param bool $mailOnly
-     */
-    public function setMailOnly($mailOnly)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getMailOnly()
-    {
-    }
-    /**
-     * Required. The name of the precinct.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The number of the precinct.
-     *
-     * @param string $number
-     */
-    public function setNumber($number)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNumber()
-    {
-    }
-    /**
-     * Encouraged. The OCD ID of the precinct
-     *
-     * @param string[] $ocdId
-     */
-    public function setOcdId($ocdId)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getOcdId()
-    {
-    }
-    /**
-     * ID(s) of the PollingLocation message(s) for this precinct.
-     *
-     * @param string[] $pollingLocationId
-     */
-    public function setPollingLocationId($pollingLocationId)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPollingLocationId()
-    {
-    }
-    /**
-     * ID(s) of the SpatialBoundary message(s) for this precinct. Used to specify
-     * a geometrical boundary of the precinct.
-     *
-     * @param string[] $spatialBoundaryId
-     */
-    public function setSpatialBoundaryId($spatialBoundaryId)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSpatialBoundaryId()
-    {
-    }
-    /**
-     * If present, this proto corresponds to one portion of split precinct. Other
-     * portions of this precinct are guaranteed to have the same `name`. If not
-     * present, this proto represents a full precicnt.
-     *
-     * @param string $splitName
-     */
-    public function setSplitName($splitName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSplitName()
-    {
-    }
-    /**
-     * Specifies the ward the precinct is contained within.
-     *
-     * @param string $ward
-     */
-    public function setWard($ward)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWard()
+    class Google_Service_CivicInfo_CivicinfoSchemaV2Precinct extends \Google\Service\CivicInfo\CivicinfoSchemaV2Precinct
     {
     }
 }

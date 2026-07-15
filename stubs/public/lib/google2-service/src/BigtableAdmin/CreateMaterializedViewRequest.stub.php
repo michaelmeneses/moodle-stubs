@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class CreateMaterializedViewRequest extends \Google\Model
-{
-    protected $materializedViewType = MaterializedView::class;
-    protected $materializedViewDataType = '';
-    /**
-     * Required. The ID to use for the materialized view, which will become the
-     * final component of the materialized view's resource name.
-     *
-     * @var string
-     */
-    public $materializedViewId;
-    /**
-     * Required. The parent instance where this materialized view will be created.
-     * Format: `projects/{project}/instances/{instance}`.
-     *
-     * @var string
-     */
-    public $parent;
-    /**
-     * Required. The materialized view to create.
-     *
-     * @param MaterializedView $materializedView
-     */
-    public function setMaterializedView(MaterializedView $materializedView)
+namespace Google\Service\BigtableAdmin {
+    class CreateMaterializedViewRequest extends \Google\Model
     {
+        protected $materializedViewType = MaterializedView::class;
+        protected $materializedViewDataType = '';
+        /**
+         * Required. The ID to use for the materialized view, which will become the
+         * final component of the materialized view's resource name.
+         *
+         * @var string
+         */
+        public $materializedViewId;
+        /**
+         * Required. The parent instance where this materialized view will be created.
+         * Format: `projects/{project}/instances/{instance}`.
+         *
+         * @var string
+         */
+        public $parent;
+        /**
+         * Required. The materialized view to create.
+         *
+         * @param MaterializedView $materializedView
+         */
+        public function setMaterializedView(MaterializedView $materializedView)
+        {
+        }
+        /**
+         * @return MaterializedView
+         */
+        public function getMaterializedView()
+        {
+        }
+        /**
+         * Required. The ID to use for the materialized view, which will become the
+         * final component of the materialized view's resource name.
+         *
+         * @param string $materializedViewId
+         */
+        public function setMaterializedViewId($materializedViewId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaterializedViewId()
+        {
+        }
+        /**
+         * Required. The parent instance where this materialized view will be created.
+         * Format: `projects/{project}/instances/{instance}`.
+         *
+         * @param string $parent
+         */
+        public function setParent($parent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MaterializedView
+     * Runtime class alias of \Google\Service\BigtableAdmin\CreateMaterializedViewRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaterializedView()
-    {
-    }
-    /**
-     * Required. The ID to use for the materialized view, which will become the
-     * final component of the materialized view's resource name.
-     *
-     * @param string $materializedViewId
-     */
-    public function setMaterializedViewId($materializedViewId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMaterializedViewId()
-    {
-    }
-    /**
-     * Required. The parent instance where this materialized view will be created.
-     * Format: `projects/{project}/instances/{instance}`.
-     *
-     * @param string $parent
-     */
-    public function setParent($parent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParent()
+    class Google_Service_BigtableAdmin_CreateMaterializedViewRequest extends \Google\Service\BigtableAdmin\CreateMaterializedViewRequest
     {
     }
 }

@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class PartitionedDml extends \Google\Model
-{
+namespace Google\Service\Spanner {
+    class PartitionedDml extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Spanner\PartitionedDml registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Spanner_PartitionedDml extends \Google\Service\Spanner\PartitionedDml
+    {
+    }
 }

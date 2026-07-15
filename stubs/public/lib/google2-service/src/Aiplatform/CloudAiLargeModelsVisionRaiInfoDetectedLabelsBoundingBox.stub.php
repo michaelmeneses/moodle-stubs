@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class CloudAiLargeModelsVisionRaiInfoDetectedLabelsBoundingBox extends \Google\Model
-{
-    /**
-     * The X coordinate of the top-left corner, in pixels.
-     *
-     * @var int
-     */
-    public $x1;
-    /**
-     * The X coordinate of the bottom-right corner, in pixels.
-     *
-     * @var int
-     */
-    public $x2;
-    /**
-     * The Y coordinate of the top-left corner, in pixels.
-     *
-     * @var int
-     */
-    public $y1;
-    /**
-     * The Y coordinate of the bottom-right corner, in pixels.
-     *
-     * @var int
-     */
-    public $y2;
-    /**
-     * The X coordinate of the top-left corner, in pixels.
-     *
-     * @param int $x1
-     */
-    public function setX1($x1)
+namespace Google\Service\Aiplatform {
+    class CloudAiLargeModelsVisionRaiInfoDetectedLabelsBoundingBox extends \Google\Model
     {
+        /**
+         * The X coordinate of the top-left corner, in pixels.
+         *
+         * @var int
+         */
+        public $x1;
+        /**
+         * The X coordinate of the bottom-right corner, in pixels.
+         *
+         * @var int
+         */
+        public $x2;
+        /**
+         * The Y coordinate of the top-left corner, in pixels.
+         *
+         * @var int
+         */
+        public $y1;
+        /**
+         * The Y coordinate of the bottom-right corner, in pixels.
+         *
+         * @var int
+         */
+        public $y2;
+        /**
+         * The X coordinate of the top-left corner, in pixels.
+         *
+         * @param int $x1
+         */
+        public function setX1($x1)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getX1()
+        {
+        }
+        /**
+         * The X coordinate of the bottom-right corner, in pixels.
+         *
+         * @param int $x2
+         */
+        public function setX2($x2)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getX2()
+        {
+        }
+        /**
+         * The Y coordinate of the top-left corner, in pixels.
+         *
+         * @param int $y1
+         */
+        public function setY1($y1)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getY1()
+        {
+        }
+        /**
+         * The Y coordinate of the bottom-right corner, in pixels.
+         *
+         * @param int $y2
+         */
+        public function setY2($y2)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getY2()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Aiplatform\CloudAiLargeModelsVisionRaiInfoDetectedLabelsBoundingBox registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getX1()
-    {
-    }
-    /**
-     * The X coordinate of the bottom-right corner, in pixels.
-     *
-     * @param int $x2
-     */
-    public function setX2($x2)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getX2()
-    {
-    }
-    /**
-     * The Y coordinate of the top-left corner, in pixels.
-     *
-     * @param int $y1
-     */
-    public function setY1($y1)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getY1()
-    {
-    }
-    /**
-     * The Y coordinate of the bottom-right corner, in pixels.
-     *
-     * @param int $y2
-     */
-    public function setY2($y2)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getY2()
+    class Google_Service_Aiplatform_CloudAiLargeModelsVisionRaiInfoDetectedLabelsBoundingBox extends \Google\Service\Aiplatform\CloudAiLargeModelsVisionRaiInfoDetectedLabelsBoundingBox
     {
     }
 }

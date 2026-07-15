@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class AvailabilityCriteria extends \Google\Model
-{
+namespace Google\Service\Monitoring {
+    class AvailabilityCriteria extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Monitoring\AvailabilityCriteria registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Monitoring_AvailabilityCriteria extends \Google\Service\Monitoring\AvailabilityCriteria
+    {
+    }
 }

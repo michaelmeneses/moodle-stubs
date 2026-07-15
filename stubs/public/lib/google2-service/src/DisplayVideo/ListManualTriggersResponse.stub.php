@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class ListManualTriggersResponse extends \Google\Collection
-{
-    protected $collection_key = 'manualTriggers';
-    protected $manualTriggersType = ManualTrigger::class;
-    protected $manualTriggersDataType = 'array';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * @param ManualTrigger[]
-     */
-    public function setManualTriggers($manualTriggers)
+namespace Google\Service\DisplayVideo {
+    class ListManualTriggersResponse extends \Google\Collection
     {
+        protected $collection_key = 'manualTriggers';
+        protected $manualTriggersType = ManualTrigger::class;
+        protected $manualTriggersDataType = 'array';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * @param ManualTrigger[]
+         */
+        public function setManualTriggers($manualTriggers)
+        {
+        }
+        /**
+         * @return ManualTrigger[]
+         */
+        public function getManualTriggers()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ManualTrigger[]
+     * Runtime class alias of \Google\Service\DisplayVideo\ListManualTriggersResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getManualTriggers()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_DisplayVideo_ListManualTriggersResponse extends \Google\Service\DisplayVideo\ListManualTriggersResponse
     {
     }
 }

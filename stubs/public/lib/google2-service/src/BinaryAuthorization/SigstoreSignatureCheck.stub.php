@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BinaryAuthorization;
-
-class SigstoreSignatureCheck extends \Google\Collection
-{
-    protected $collection_key = 'sigstoreAuthorities';
-    protected $sigstoreAuthoritiesType = SigstoreAuthority::class;
-    protected $sigstoreAuthoritiesDataType = 'array';
-    /**
-     * Required. The authorities required by this check to verify the signature. A
-     * signature only needs to be verified by one authority to pass the check.
-     *
-     * @param SigstoreAuthority[] $sigstoreAuthorities
-     */
-    public function setSigstoreAuthorities($sigstoreAuthorities)
+namespace Google\Service\BinaryAuthorization {
+    class SigstoreSignatureCheck extends \Google\Collection
     {
+        protected $collection_key = 'sigstoreAuthorities';
+        protected $sigstoreAuthoritiesType = SigstoreAuthority::class;
+        protected $sigstoreAuthoritiesDataType = 'array';
+        /**
+         * Required. The authorities required by this check to verify the signature. A
+         * signature only needs to be verified by one authority to pass the check.
+         *
+         * @param SigstoreAuthority[] $sigstoreAuthorities
+         */
+        public function setSigstoreAuthorities($sigstoreAuthorities)
+        {
+        }
+        /**
+         * @return SigstoreAuthority[]
+         */
+        public function getSigstoreAuthorities()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SigstoreAuthority[]
+     * Runtime class alias of \Google\Service\BinaryAuthorization\SigstoreSignatureCheck registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSigstoreAuthorities()
+    class Google_Service_BinaryAuthorization_SigstoreSignatureCheck extends \Google\Service\BinaryAuthorization\SigstoreSignatureCheck
     {
     }
 }

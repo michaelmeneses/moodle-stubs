@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1Product extends \Google\Model
-{
-    protected $marketingInfoType = GoogleCloudChannelV1MarketingInfo::class;
-    protected $marketingInfoDataType = '';
-    /**
-     * Resource Name of the Product. Format: products/{product_id}
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Marketing information for the product.
-     *
-     * @param GoogleCloudChannelV1MarketingInfo $marketingInfo
-     */
-    public function setMarketingInfo(GoogleCloudChannelV1MarketingInfo $marketingInfo)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1Product extends \Google\Model
     {
+        protected $marketingInfoType = GoogleCloudChannelV1MarketingInfo::class;
+        protected $marketingInfoDataType = '';
+        /**
+         * Resource Name of the Product. Format: products/{product_id}
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Marketing information for the product.
+         *
+         * @param GoogleCloudChannelV1MarketingInfo $marketingInfo
+         */
+        public function setMarketingInfo(GoogleCloudChannelV1MarketingInfo $marketingInfo)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1MarketingInfo
+         */
+        public function getMarketingInfo()
+        {
+        }
+        /**
+         * Resource Name of the Product. Format: products/{product_id}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudChannelV1MarketingInfo
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1Product registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMarketingInfo()
-    {
-    }
-    /**
-     * Resource Name of the Product. Format: products/{product_id}
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1Product extends \Google\Service\Cloudchannel\GoogleCloudChannelV1Product
     {
     }
 }

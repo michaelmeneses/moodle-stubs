@@ -21,160 +21,169 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSImageClassificationTrainResponse extends \Google\Model
-{
-    public const STOP_REASON_TRAIN_STOP_REASON_UNSPECIFIED = 'TRAIN_STOP_REASON_UNSPECIFIED';
-    public const STOP_REASON_TRAIN_STOP_REASON_BUDGET_REACHED = 'TRAIN_STOP_REASON_BUDGET_REACHED';
-    /**
-     * Model fully converged, can not be resumbed training.
-     */
-    public const STOP_REASON_TRAIN_STOP_REASON_MODEL_CONVERGED = 'TRAIN_STOP_REASON_MODEL_CONVERGED';
-    /**
-     * Model early converged, can be further trained till full convergency.
-     */
-    public const STOP_REASON_TRAIN_STOP_REASON_MODEL_EARLY_STOPPED = 'TRAIN_STOP_REASON_MODEL_EARLY_STOPPED';
-    /**
-     * Total number of classes.
-     *
-     * @var string
-     */
-    public $classCount;
-    protected $exportModelSpecType = XPSImageExportModelSpec::class;
-    protected $exportModelSpecDataType = '';
-    protected $modelArtifactSpecType = XPSImageModelArtifactSpec::class;
-    protected $modelArtifactSpecDataType = '';
-    protected $modelServingSpecType = XPSImageModelServingSpec::class;
-    protected $modelServingSpecDataType = '';
-    /**
-     * Stop reason for training job, e.g. 'TRAIN_BUDGET_REACHED',
-     * 'MODEL_CONVERGED', 'MODEL_EARLY_STOPPED'.
-     *
-     * @var string
-     */
-    public $stopReason;
-    /**
-     * The actual cost to create this model. - For edge type model, the cost is
-     * expressed in node hour. - For cloud type model,the cost is expressed in
-     * compute hour. - Populated for models created before GA. To be deprecated
-     * after GA.
-     *
-     * @var string
-     */
-    public $trainCostInNodeTime;
-    /**
-     * The actual training cost, expressed in node seconds. Populated for models
-     * trained in node time.
-     *
-     * @var string
-     */
-    public $trainCostNodeSeconds;
-    /**
-     * Total number of classes.
-     *
-     * @param string $classCount
-     */
-    public function setClassCount($classCount)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSImageClassificationTrainResponse extends \Google\Model
     {
+        public const STOP_REASON_TRAIN_STOP_REASON_UNSPECIFIED = 'TRAIN_STOP_REASON_UNSPECIFIED';
+        public const STOP_REASON_TRAIN_STOP_REASON_BUDGET_REACHED = 'TRAIN_STOP_REASON_BUDGET_REACHED';
+        /**
+         * Model fully converged, can not be resumbed training.
+         */
+        public const STOP_REASON_TRAIN_STOP_REASON_MODEL_CONVERGED = 'TRAIN_STOP_REASON_MODEL_CONVERGED';
+        /**
+         * Model early converged, can be further trained till full convergency.
+         */
+        public const STOP_REASON_TRAIN_STOP_REASON_MODEL_EARLY_STOPPED = 'TRAIN_STOP_REASON_MODEL_EARLY_STOPPED';
+        /**
+         * Total number of classes.
+         *
+         * @var string
+         */
+        public $classCount;
+        protected $exportModelSpecType = XPSImageExportModelSpec::class;
+        protected $exportModelSpecDataType = '';
+        protected $modelArtifactSpecType = XPSImageModelArtifactSpec::class;
+        protected $modelArtifactSpecDataType = '';
+        protected $modelServingSpecType = XPSImageModelServingSpec::class;
+        protected $modelServingSpecDataType = '';
+        /**
+         * Stop reason for training job, e.g. 'TRAIN_BUDGET_REACHED',
+         * 'MODEL_CONVERGED', 'MODEL_EARLY_STOPPED'.
+         *
+         * @var string
+         */
+        public $stopReason;
+        /**
+         * The actual cost to create this model. - For edge type model, the cost is
+         * expressed in node hour. - For cloud type model,the cost is expressed in
+         * compute hour. - Populated for models created before GA. To be deprecated
+         * after GA.
+         *
+         * @var string
+         */
+        public $trainCostInNodeTime;
+        /**
+         * The actual training cost, expressed in node seconds. Populated for models
+         * trained in node time.
+         *
+         * @var string
+         */
+        public $trainCostNodeSeconds;
+        /**
+         * Total number of classes.
+         *
+         * @param string $classCount
+         */
+        public function setClassCount($classCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClassCount()
+        {
+        }
+        /**
+         * Information of downloadable models that are pre-generated as part of
+         * training flow and will be persisted in AutoMl backend. Populated for AutoMl
+         * requests.
+         *
+         * @param XPSImageExportModelSpec $exportModelSpec
+         */
+        public function setExportModelSpec(XPSImageExportModelSpec $exportModelSpec)
+        {
+        }
+        /**
+         * @return XPSImageExportModelSpec
+         */
+        public function getExportModelSpec()
+        {
+        }
+        /**
+         * ## The fields below are only populated under uCAIP request scope.
+         *
+         * @param XPSImageModelArtifactSpec $modelArtifactSpec
+         */
+        public function setModelArtifactSpec(XPSImageModelArtifactSpec $modelArtifactSpec)
+        {
+        }
+        /**
+         * @return XPSImageModelArtifactSpec
+         */
+        public function getModelArtifactSpec()
+        {
+        }
+        /**
+         * @param XPSImageModelServingSpec $modelServingSpec
+         */
+        public function setModelServingSpec(XPSImageModelServingSpec $modelServingSpec)
+        {
+        }
+        /**
+         * @return XPSImageModelServingSpec
+         */
+        public function getModelServingSpec()
+        {
+        }
+        /**
+         * Stop reason for training job, e.g. 'TRAIN_BUDGET_REACHED',
+         * 'MODEL_CONVERGED', 'MODEL_EARLY_STOPPED'.
+         *
+         * Accepted values: TRAIN_STOP_REASON_UNSPECIFIED,
+         * TRAIN_STOP_REASON_BUDGET_REACHED, TRAIN_STOP_REASON_MODEL_CONVERGED,
+         * TRAIN_STOP_REASON_MODEL_EARLY_STOPPED
+         *
+         * @param self::STOP_REASON_* $stopReason
+         */
+        public function setStopReason($stopReason)
+        {
+        }
+        /**
+         * @return self::STOP_REASON_*
+         */
+        public function getStopReason()
+        {
+        }
+        /**
+         * The actual cost to create this model. - For edge type model, the cost is
+         * expressed in node hour. - For cloud type model,the cost is expressed in
+         * compute hour. - Populated for models created before GA. To be deprecated
+         * after GA.
+         *
+         * @param string $trainCostInNodeTime
+         */
+        public function setTrainCostInNodeTime($trainCostInNodeTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTrainCostInNodeTime()
+        {
+        }
+        /**
+         * The actual training cost, expressed in node seconds. Populated for models
+         * trained in node time.
+         *
+         * @param string $trainCostNodeSeconds
+         */
+        public function setTrainCostNodeSeconds($trainCostNodeSeconds)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTrainCostNodeSeconds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSImageClassificationTrainResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClassCount()
-    {
-    }
-    /**
-     * Information of downloadable models that are pre-generated as part of
-     * training flow and will be persisted in AutoMl backend. Populated for AutoMl
-     * requests.
-     *
-     * @param XPSImageExportModelSpec $exportModelSpec
-     */
-    public function setExportModelSpec(XPSImageExportModelSpec $exportModelSpec)
-    {
-    }
-    /**
-     * @return XPSImageExportModelSpec
-     */
-    public function getExportModelSpec()
-    {
-    }
-    /**
-     * ## The fields below are only populated under uCAIP request scope.
-     *
-     * @param XPSImageModelArtifactSpec $modelArtifactSpec
-     */
-    public function setModelArtifactSpec(XPSImageModelArtifactSpec $modelArtifactSpec)
-    {
-    }
-    /**
-     * @return XPSImageModelArtifactSpec
-     */
-    public function getModelArtifactSpec()
-    {
-    }
-    /**
-     * @param XPSImageModelServingSpec $modelServingSpec
-     */
-    public function setModelServingSpec(XPSImageModelServingSpec $modelServingSpec)
-    {
-    }
-    /**
-     * @return XPSImageModelServingSpec
-     */
-    public function getModelServingSpec()
-    {
-    }
-    /**
-     * Stop reason for training job, e.g. 'TRAIN_BUDGET_REACHED',
-     * 'MODEL_CONVERGED', 'MODEL_EARLY_STOPPED'.
-     *
-     * Accepted values: TRAIN_STOP_REASON_UNSPECIFIED,
-     * TRAIN_STOP_REASON_BUDGET_REACHED, TRAIN_STOP_REASON_MODEL_CONVERGED,
-     * TRAIN_STOP_REASON_MODEL_EARLY_STOPPED
-     *
-     * @param self::STOP_REASON_* $stopReason
-     */
-    public function setStopReason($stopReason)
-    {
-    }
-    /**
-     * @return self::STOP_REASON_*
-     */
-    public function getStopReason()
-    {
-    }
-    /**
-     * The actual cost to create this model. - For edge type model, the cost is
-     * expressed in node hour. - For cloud type model,the cost is expressed in
-     * compute hour. - Populated for models created before GA. To be deprecated
-     * after GA.
-     *
-     * @param string $trainCostInNodeTime
-     */
-    public function setTrainCostInNodeTime($trainCostInNodeTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTrainCostInNodeTime()
-    {
-    }
-    /**
-     * The actual training cost, expressed in node seconds. Populated for models
-     * trained in node time.
-     *
-     * @param string $trainCostNodeSeconds
-     */
-    public function setTrainCostNodeSeconds($trainCostNodeSeconds)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTrainCostNodeSeconds()
+    class Google_Service_CloudNaturalLanguage_XPSImageClassificationTrainResponse extends \Google\Service\CloudNaturalLanguage\XPSImageClassificationTrainResponse
     {
     }
 }

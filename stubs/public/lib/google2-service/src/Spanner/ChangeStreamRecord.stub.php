@@ -21,89 +21,98 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class ChangeStreamRecord extends \Google\Model
-{
-    protected $dataChangeRecordType = DataChangeRecord::class;
-    protected $dataChangeRecordDataType = '';
-    protected $heartbeatRecordType = HeartbeatRecord::class;
-    protected $heartbeatRecordDataType = '';
-    protected $partitionEndRecordType = PartitionEndRecord::class;
-    protected $partitionEndRecordDataType = '';
-    protected $partitionEventRecordType = PartitionEventRecord::class;
-    protected $partitionEventRecordDataType = '';
-    protected $partitionStartRecordType = PartitionStartRecord::class;
-    protected $partitionStartRecordDataType = '';
-    /**
-     * Data change record describing a data change for a change stream partition.
-     *
-     * @param DataChangeRecord $dataChangeRecord
-     */
-    public function setDataChangeRecord(DataChangeRecord $dataChangeRecord)
+namespace Google\Service\Spanner {
+    class ChangeStreamRecord extends \Google\Model
     {
+        protected $dataChangeRecordType = DataChangeRecord::class;
+        protected $dataChangeRecordDataType = '';
+        protected $heartbeatRecordType = HeartbeatRecord::class;
+        protected $heartbeatRecordDataType = '';
+        protected $partitionEndRecordType = PartitionEndRecord::class;
+        protected $partitionEndRecordDataType = '';
+        protected $partitionEventRecordType = PartitionEventRecord::class;
+        protected $partitionEventRecordDataType = '';
+        protected $partitionStartRecordType = PartitionStartRecord::class;
+        protected $partitionStartRecordDataType = '';
+        /**
+         * Data change record describing a data change for a change stream partition.
+         *
+         * @param DataChangeRecord $dataChangeRecord
+         */
+        public function setDataChangeRecord(DataChangeRecord $dataChangeRecord)
+        {
+        }
+        /**
+         * @return DataChangeRecord
+         */
+        public function getDataChangeRecord()
+        {
+        }
+        /**
+         * Heartbeat record describing a heartbeat for a change stream partition.
+         *
+         * @param HeartbeatRecord $heartbeatRecord
+         */
+        public function setHeartbeatRecord(HeartbeatRecord $heartbeatRecord)
+        {
+        }
+        /**
+         * @return HeartbeatRecord
+         */
+        public function getHeartbeatRecord()
+        {
+        }
+        /**
+         * Partition end record describing a terminated change stream partition.
+         *
+         * @param PartitionEndRecord $partitionEndRecord
+         */
+        public function setPartitionEndRecord(PartitionEndRecord $partitionEndRecord)
+        {
+        }
+        /**
+         * @return PartitionEndRecord
+         */
+        public function getPartitionEndRecord()
+        {
+        }
+        /**
+         * Partition event record describing key range changes for a change stream
+         * partition.
+         *
+         * @param PartitionEventRecord $partitionEventRecord
+         */
+        public function setPartitionEventRecord(PartitionEventRecord $partitionEventRecord)
+        {
+        }
+        /**
+         * @return PartitionEventRecord
+         */
+        public function getPartitionEventRecord()
+        {
+        }
+        /**
+         * Partition start record describing a new change stream partition.
+         *
+         * @param PartitionStartRecord $partitionStartRecord
+         */
+        public function setPartitionStartRecord(PartitionStartRecord $partitionStartRecord)
+        {
+        }
+        /**
+         * @return PartitionStartRecord
+         */
+        public function getPartitionStartRecord()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DataChangeRecord
+     * Runtime class alias of \Google\Service\Spanner\ChangeStreamRecord registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataChangeRecord()
-    {
-    }
-    /**
-     * Heartbeat record describing a heartbeat for a change stream partition.
-     *
-     * @param HeartbeatRecord $heartbeatRecord
-     */
-    public function setHeartbeatRecord(HeartbeatRecord $heartbeatRecord)
-    {
-    }
-    /**
-     * @return HeartbeatRecord
-     */
-    public function getHeartbeatRecord()
-    {
-    }
-    /**
-     * Partition end record describing a terminated change stream partition.
-     *
-     * @param PartitionEndRecord $partitionEndRecord
-     */
-    public function setPartitionEndRecord(PartitionEndRecord $partitionEndRecord)
-    {
-    }
-    /**
-     * @return PartitionEndRecord
-     */
-    public function getPartitionEndRecord()
-    {
-    }
-    /**
-     * Partition event record describing key range changes for a change stream
-     * partition.
-     *
-     * @param PartitionEventRecord $partitionEventRecord
-     */
-    public function setPartitionEventRecord(PartitionEventRecord $partitionEventRecord)
-    {
-    }
-    /**
-     * @return PartitionEventRecord
-     */
-    public function getPartitionEventRecord()
-    {
-    }
-    /**
-     * Partition start record describing a new change stream partition.
-     *
-     * @param PartitionStartRecord $partitionStartRecord
-     */
-    public function setPartitionStartRecord(PartitionStartRecord $partitionStartRecord)
-    {
-    }
-    /**
-     * @return PartitionStartRecord
-     */
-    public function getPartitionStartRecord()
+    class Google_Service_Spanner_ChangeStreamRecord extends \Google\Service\Spanner\ChangeStreamRecord
     {
     }
 }

@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1ListDeveloperSubscriptionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'developerSubscriptions';
-    protected $developerSubscriptionsType = GoogleCloudApigeeV1DeveloperSubscription::class;
-    protected $developerSubscriptionsDataType = 'array';
-    /**
-     * Value that can be sent as `startKey` to retrieve the next page of content.
-     * If this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextStartKey;
-    /**
-     * List of all subscriptions.
-     *
-     * @param GoogleCloudApigeeV1DeveloperSubscription[] $developerSubscriptions
-     */
-    public function setDeveloperSubscriptions($developerSubscriptions)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1ListDeveloperSubscriptionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'developerSubscriptions';
+        protected $developerSubscriptionsType = GoogleCloudApigeeV1DeveloperSubscription::class;
+        protected $developerSubscriptionsDataType = 'array';
+        /**
+         * Value that can be sent as `startKey` to retrieve the next page of content.
+         * If this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextStartKey;
+        /**
+         * List of all subscriptions.
+         *
+         * @param GoogleCloudApigeeV1DeveloperSubscription[] $developerSubscriptions
+         */
+        public function setDeveloperSubscriptions($developerSubscriptions)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1DeveloperSubscription[]
+         */
+        public function getDeveloperSubscriptions()
+        {
+        }
+        /**
+         * Value that can be sent as `startKey` to retrieve the next page of content.
+         * If this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextStartKey
+         */
+        public function setNextStartKey($nextStartKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextStartKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApigeeV1DeveloperSubscription[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1ListDeveloperSubscriptionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeveloperSubscriptions()
-    {
-    }
-    /**
-     * Value that can be sent as `startKey` to retrieve the next page of content.
-     * If this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextStartKey
-     */
-    public function setNextStartKey($nextStartKey)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextStartKey()
+    class Google_Service_Apigee_GoogleCloudApigeeV1ListDeveloperSubscriptionsResponse extends \Google\Service\Apigee\GoogleCloudApigeeV1ListDeveloperSubscriptionsResponse
     {
     }
 }

@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2RuleOnewaySynonymsAction extends \Google\Collection
-{
-    protected $collection_key = 'synonyms';
-    /**
-     * Will be [deprecated = true] post migration;
-     *
-     * @var string[]
-     */
-    public $onewayTerms;
-    /**
-     * Terms from the search query. Will treat synonyms as their synonyms. Not
-     * themselves synonyms of the synonyms. Can specify up to 100 terms.
-     *
-     * @var string[]
-     */
-    public $queryTerms;
-    /**
-     * Defines a set of synonyms. Cannot contain duplicates. Can specify up to 100
-     * synonyms.
-     *
-     * @var string[]
-     */
-    public $synonyms;
-    /**
-     * Will be [deprecated = true] post migration;
-     *
-     * @param string[] $onewayTerms
-     */
-    public function setOnewayTerms($onewayTerms)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2RuleOnewaySynonymsAction extends \Google\Collection
     {
+        protected $collection_key = 'synonyms';
+        /**
+         * Will be [deprecated = true] post migration;
+         *
+         * @var string[]
+         */
+        public $onewayTerms;
+        /**
+         * Terms from the search query. Will treat synonyms as their synonyms. Not
+         * themselves synonyms of the synonyms. Can specify up to 100 terms.
+         *
+         * @var string[]
+         */
+        public $queryTerms;
+        /**
+         * Defines a set of synonyms. Cannot contain duplicates. Can specify up to 100
+         * synonyms.
+         *
+         * @var string[]
+         */
+        public $synonyms;
+        /**
+         * Will be [deprecated = true] post migration;
+         *
+         * @param string[] $onewayTerms
+         */
+        public function setOnewayTerms($onewayTerms)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getOnewayTerms()
+        {
+        }
+        /**
+         * Terms from the search query. Will treat synonyms as their synonyms. Not
+         * themselves synonyms of the synonyms. Can specify up to 100 terms.
+         *
+         * @param string[] $queryTerms
+         */
+        public function setQueryTerms($queryTerms)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getQueryTerms()
+        {
+        }
+        /**
+         * Defines a set of synonyms. Cannot contain duplicates. Can specify up to 100
+         * synonyms.
+         *
+         * @param string[] $synonyms
+         */
+        public function setSynonyms($synonyms)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSynonyms()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2RuleOnewaySynonymsAction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOnewayTerms()
-    {
-    }
-    /**
-     * Terms from the search query. Will treat synonyms as their synonyms. Not
-     * themselves synonyms of the synonyms. Can specify up to 100 terms.
-     *
-     * @param string[] $queryTerms
-     */
-    public function setQueryTerms($queryTerms)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getQueryTerms()
-    {
-    }
-    /**
-     * Defines a set of synonyms. Cannot contain duplicates. Can specify up to 100
-     * synonyms.
-     *
-     * @param string[] $synonyms
-     */
-    public function setSynonyms($synonyms)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSynonyms()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2RuleOnewaySynonymsAction extends \Google\Service\CloudRetail\GoogleCloudRetailV2RuleOnewaySynonymsAction
     {
     }
 }

@@ -21,35 +21,44 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmEventbusProtoBooleanFunction extends \Google\Model
-{
-    public const FUNCTION_NAME_UNSPECIFIED = 'UNSPECIFIED';
-    public const FUNCTION_NAME_TO_JSON = 'TO_JSON';
-    public const FUNCTION_NAME_NOT = 'NOT';
-    public const FUNCTION_NAME_AND = 'AND';
-    public const FUNCTION_NAME_NAND = 'NAND';
-    public const FUNCTION_NAME_OR = 'OR';
-    public const FUNCTION_NAME_XOR = 'XOR';
-    public const FUNCTION_NAME_NOR = 'NOR';
-    public const FUNCTION_NAME_XNOR = 'XNOR';
-    public const FUNCTION_NAME_TO_STRING = 'TO_STRING';
-    public const FUNCTION_NAME_EQUALS = 'EQUALS';
-    /**
-     * @var string
-     */
-    public $functionName;
-    /**
-     * @param self::FUNCTION_NAME_* $functionName
-     */
-    public function setFunctionName($functionName)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmEventbusProtoBooleanFunction extends \Google\Model
     {
+        public const FUNCTION_NAME_UNSPECIFIED = 'UNSPECIFIED';
+        public const FUNCTION_NAME_TO_JSON = 'TO_JSON';
+        public const FUNCTION_NAME_NOT = 'NOT';
+        public const FUNCTION_NAME_AND = 'AND';
+        public const FUNCTION_NAME_NAND = 'NAND';
+        public const FUNCTION_NAME_OR = 'OR';
+        public const FUNCTION_NAME_XOR = 'XOR';
+        public const FUNCTION_NAME_NOR = 'NOR';
+        public const FUNCTION_NAME_XNOR = 'XNOR';
+        public const FUNCTION_NAME_TO_STRING = 'TO_STRING';
+        public const FUNCTION_NAME_EQUALS = 'EQUALS';
+        /**
+         * @var string
+         */
+        public $functionName;
+        /**
+         * @param self::FUNCTION_NAME_* $functionName
+         */
+        public function setFunctionName($functionName)
+        {
+        }
+        /**
+         * @return self::FUNCTION_NAME_*
+         */
+        public function getFunctionName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::FUNCTION_NAME_*
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmEventbusProtoBooleanFunction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFunctionName()
+    class Google_Service_Integrations_EnterpriseCrmEventbusProtoBooleanFunction extends \Google\Service\Integrations\EnterpriseCrmEventbusProtoBooleanFunction
     {
     }
 }

@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIdentity;
-
-class GoogleAppsCloudidentityDevicesV1ListClientStatesResponse extends \Google\Collection
-{
-    protected $collection_key = 'clientStates';
-    protected $clientStatesType = GoogleAppsCloudidentityDevicesV1ClientState::class;
-    protected $clientStatesDataType = 'array';
-    /**
-     * Token to retrieve the next page of results. Empty if there are no more
-     * results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Client states meeting the list restrictions.
-     *
-     * @param GoogleAppsCloudidentityDevicesV1ClientState[] $clientStates
-     */
-    public function setClientStates($clientStates)
+namespace Google\Service\CloudIdentity {
+    class GoogleAppsCloudidentityDevicesV1ListClientStatesResponse extends \Google\Collection
     {
+        protected $collection_key = 'clientStates';
+        protected $clientStatesType = GoogleAppsCloudidentityDevicesV1ClientState::class;
+        protected $clientStatesDataType = 'array';
+        /**
+         * Token to retrieve the next page of results. Empty if there are no more
+         * results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Client states meeting the list restrictions.
+         *
+         * @param GoogleAppsCloudidentityDevicesV1ClientState[] $clientStates
+         */
+        public function setClientStates($clientStates)
+        {
+        }
+        /**
+         * @return GoogleAppsCloudidentityDevicesV1ClientState[]
+         */
+        public function getClientStates()
+        {
+        }
+        /**
+         * Token to retrieve the next page of results. Empty if there are no more
+         * results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAppsCloudidentityDevicesV1ClientState[]
+     * Runtime class alias of \Google\Service\CloudIdentity\GoogleAppsCloudidentityDevicesV1ListClientStatesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClientStates()
-    {
-    }
-    /**
-     * Token to retrieve the next page of results. Empty if there are no more
-     * results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_CloudIdentity_GoogleAppsCloudidentityDevicesV1ListClientStatesResponse extends \Google\Service\CloudIdentity\GoogleAppsCloudidentityDevicesV1ListClientStatesResponse
     {
     }
 }

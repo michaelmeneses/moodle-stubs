@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class UpdateOneTimeProductOfferStateRequest extends \Google\Model
-{
-    protected $activateOneTimeProductOfferRequestType = ActivateOneTimeProductOfferRequest::class;
-    protected $activateOneTimeProductOfferRequestDataType = '';
-    protected $cancelOneTimeProductOfferRequestType = CancelOneTimeProductOfferRequest::class;
-    protected $cancelOneTimeProductOfferRequestDataType = '';
-    protected $deactivateOneTimeProductOfferRequestType = DeactivateOneTimeProductOfferRequest::class;
-    protected $deactivateOneTimeProductOfferRequestDataType = '';
-    /**
-     * Activates an offer. Once activated, the offer is available to users, as
-     * long as its conditions are met.
-     *
-     * @param ActivateOneTimeProductOfferRequest $activateOneTimeProductOfferRequest
-     */
-    public function setActivateOneTimeProductOfferRequest(ActivateOneTimeProductOfferRequest $activateOneTimeProductOfferRequest)
+namespace Google\Service\AndroidPublisher {
+    class UpdateOneTimeProductOfferStateRequest extends \Google\Model
     {
+        protected $activateOneTimeProductOfferRequestType = ActivateOneTimeProductOfferRequest::class;
+        protected $activateOneTimeProductOfferRequestDataType = '';
+        protected $cancelOneTimeProductOfferRequestType = CancelOneTimeProductOfferRequest::class;
+        protected $cancelOneTimeProductOfferRequestDataType = '';
+        protected $deactivateOneTimeProductOfferRequestType = DeactivateOneTimeProductOfferRequest::class;
+        protected $deactivateOneTimeProductOfferRequestDataType = '';
+        /**
+         * Activates an offer. Once activated, the offer is available to users, as
+         * long as its conditions are met.
+         *
+         * @param ActivateOneTimeProductOfferRequest $activateOneTimeProductOfferRequest
+         */
+        public function setActivateOneTimeProductOfferRequest(ActivateOneTimeProductOfferRequest $activateOneTimeProductOfferRequest)
+        {
+        }
+        /**
+         * @return ActivateOneTimeProductOfferRequest
+         */
+        public function getActivateOneTimeProductOfferRequest()
+        {
+        }
+        /**
+         * Cancels an offer. Once cancelled, the offer is not available to users. Any
+         * pending orders related to this offer will be cancelled. This state
+         * transition is specific to pre-orders.
+         *
+         * @param CancelOneTimeProductOfferRequest $cancelOneTimeProductOfferRequest
+         */
+        public function setCancelOneTimeProductOfferRequest(CancelOneTimeProductOfferRequest $cancelOneTimeProductOfferRequest)
+        {
+        }
+        /**
+         * @return CancelOneTimeProductOfferRequest
+         */
+        public function getCancelOneTimeProductOfferRequest()
+        {
+        }
+        /**
+         * Deactivates an offer. Once deactivated, the offer is no longer available to
+         * users. This state transition is specific to discounted offers.
+         *
+         * @param DeactivateOneTimeProductOfferRequest $deactivateOneTimeProductOfferRequest
+         */
+        public function setDeactivateOneTimeProductOfferRequest(DeactivateOneTimeProductOfferRequest $deactivateOneTimeProductOfferRequest)
+        {
+        }
+        /**
+         * @return DeactivateOneTimeProductOfferRequest
+         */
+        public function getDeactivateOneTimeProductOfferRequest()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ActivateOneTimeProductOfferRequest
+     * Runtime class alias of \Google\Service\AndroidPublisher\UpdateOneTimeProductOfferStateRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActivateOneTimeProductOfferRequest()
-    {
-    }
-    /**
-     * Cancels an offer. Once cancelled, the offer is not available to users. Any
-     * pending orders related to this offer will be cancelled. This state
-     * transition is specific to pre-orders.
-     *
-     * @param CancelOneTimeProductOfferRequest $cancelOneTimeProductOfferRequest
-     */
-    public function setCancelOneTimeProductOfferRequest(CancelOneTimeProductOfferRequest $cancelOneTimeProductOfferRequest)
-    {
-    }
-    /**
-     * @return CancelOneTimeProductOfferRequest
-     */
-    public function getCancelOneTimeProductOfferRequest()
-    {
-    }
-    /**
-     * Deactivates an offer. Once deactivated, the offer is no longer available to
-     * users. This state transition is specific to discounted offers.
-     *
-     * @param DeactivateOneTimeProductOfferRequest $deactivateOneTimeProductOfferRequest
-     */
-    public function setDeactivateOneTimeProductOfferRequest(DeactivateOneTimeProductOfferRequest $deactivateOneTimeProductOfferRequest)
-    {
-    }
-    /**
-     * @return DeactivateOneTimeProductOfferRequest
-     */
-    public function getDeactivateOneTimeProductOfferRequest()
+    class Google_Service_AndroidPublisher_UpdateOneTimeProductOfferStateRequest extends \Google\Service\AndroidPublisher\UpdateOneTimeProductOfferStateRequest
     {
     }
 }

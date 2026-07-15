@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class OffsetPosition extends \Google\Model
-{
-    /**
-     * Offset distance from left side of an asset or a window.
-     *
-     * @var int
-     */
-    public $left;
-    /**
-     * Offset distance from top side of an asset or a window.
-     *
-     * @var int
-     */
-    public $top;
-    /**
-     * Offset distance from left side of an asset or a window.
-     *
-     * @param int $left
-     */
-    public function setLeft($left)
+namespace Google\Service\Dfareporting {
+    class OffsetPosition extends \Google\Model
     {
+        /**
+         * Offset distance from left side of an asset or a window.
+         *
+         * @var int
+         */
+        public $left;
+        /**
+         * Offset distance from top side of an asset or a window.
+         *
+         * @var int
+         */
+        public $top;
+        /**
+         * Offset distance from left side of an asset or a window.
+         *
+         * @param int $left
+         */
+        public function setLeft($left)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getLeft()
+        {
+        }
+        /**
+         * Offset distance from top side of an asset or a window.
+         *
+         * @param int $top
+         */
+        public function setTop($top)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTop()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Dfareporting\OffsetPosition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLeft()
-    {
-    }
-    /**
-     * Offset distance from top side of an asset or a window.
-     *
-     * @param int $top
-     */
-    public function setTop($top)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTop()
+    class Google_Service_Dfareporting_OffsetPosition extends \Google\Service\Dfareporting\OffsetPosition
     {
     }
 }

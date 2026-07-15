@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Clouderrorreporting;
-
-class SourceLocation extends \Google\Model
-{
-    /**
-     * The source code filename, which can include a truncated relative path, or a
-     * full path from a production machine.
-     *
-     * @var string
-     */
-    public $filePath;
-    /**
-     * Human-readable name of a function or method. The value can include optional
-     * context like the class or package name. For example,
-     * `my.package.MyClass.method` in case of Java.
-     *
-     * @var string
-     */
-    public $functionName;
-    /**
-     * 1-based. 0 indicates that the line number is unknown.
-     *
-     * @var int
-     */
-    public $lineNumber;
-    /**
-     * The source code filename, which can include a truncated relative path, or a
-     * full path from a production machine.
-     *
-     * @param string $filePath
-     */
-    public function setFilePath($filePath)
+namespace Google\Service\Clouderrorreporting {
+    class SourceLocation extends \Google\Model
     {
+        /**
+         * The source code filename, which can include a truncated relative path, or a
+         * full path from a production machine.
+         *
+         * @var string
+         */
+        public $filePath;
+        /**
+         * Human-readable name of a function or method. The value can include optional
+         * context like the class or package name. For example,
+         * `my.package.MyClass.method` in case of Java.
+         *
+         * @var string
+         */
+        public $functionName;
+        /**
+         * 1-based. 0 indicates that the line number is unknown.
+         *
+         * @var int
+         */
+        public $lineNumber;
+        /**
+         * The source code filename, which can include a truncated relative path, or a
+         * full path from a production machine.
+         *
+         * @param string $filePath
+         */
+        public function setFilePath($filePath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilePath()
+        {
+        }
+        /**
+         * Human-readable name of a function or method. The value can include optional
+         * context like the class or package name. For example,
+         * `my.package.MyClass.method` in case of Java.
+         *
+         * @param string $functionName
+         */
+        public function setFunctionName($functionName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFunctionName()
+        {
+        }
+        /**
+         * 1-based. 0 indicates that the line number is unknown.
+         *
+         * @param int $lineNumber
+         */
+        public function setLineNumber($lineNumber)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getLineNumber()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Clouderrorreporting\SourceLocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFilePath()
-    {
-    }
-    /**
-     * Human-readable name of a function or method. The value can include optional
-     * context like the class or package name. For example,
-     * `my.package.MyClass.method` in case of Java.
-     *
-     * @param string $functionName
-     */
-    public function setFunctionName($functionName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFunctionName()
-    {
-    }
-    /**
-     * 1-based. 0 indicates that the line number is unknown.
-     *
-     * @param int $lineNumber
-     */
-    public function setLineNumber($lineNumber)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getLineNumber()
+    class Google_Service_Clouderrorreporting_SourceLocation extends \Google\Service\Clouderrorreporting\SourceLocation
     {
     }
 }

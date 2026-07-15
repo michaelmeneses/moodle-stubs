@@ -8,6 +8,10 @@
  */
 namespace Slim\Handlers\Strategies;
 
+use Psr\Http\Message\ResponseInterface;
+use Psr\Http\Message\ServerRequestInterface;
+use Slim\Interfaces\InvocationStrategyInterface;
+use RuntimeException;
 /**
  * Route callback strategy with route parameters as individual arguments.
  * @api

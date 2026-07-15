@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class GoogleCloudVisionV1p3beta1DominantColorsAnnotation extends \Google\Collection
-{
-    protected $collection_key = 'colors';
-    protected $colorsType = GoogleCloudVisionV1p3beta1ColorInfo::class;
-    protected $colorsDataType = 'array';
-    /**
-     * RGB color values with their score and pixel fraction.
-     *
-     * @param GoogleCloudVisionV1p3beta1ColorInfo[] $colors
-     */
-    public function setColors($colors)
+namespace Google\Service\Vision {
+    class GoogleCloudVisionV1p3beta1DominantColorsAnnotation extends \Google\Collection
     {
+        protected $collection_key = 'colors';
+        protected $colorsType = GoogleCloudVisionV1p3beta1ColorInfo::class;
+        protected $colorsDataType = 'array';
+        /**
+         * RGB color values with their score and pixel fraction.
+         *
+         * @param GoogleCloudVisionV1p3beta1ColorInfo[] $colors
+         */
+        public function setColors($colors)
+        {
+        }
+        /**
+         * @return GoogleCloudVisionV1p3beta1ColorInfo[]
+         */
+        public function getColors()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudVisionV1p3beta1ColorInfo[]
+     * Runtime class alias of \Google\Service\Vision\GoogleCloudVisionV1p3beta1DominantColorsAnnotation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColors()
+    class Google_Service_Vision_GoogleCloudVisionV1p3beta1DominantColorsAnnotation extends \Google\Service\Vision\GoogleCloudVisionV1p3beta1DominantColorsAnnotation
     {
     }
 }

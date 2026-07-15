@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1DocumentChunkedDocumentChunkChunkPageFooter extends \Google\Model
-{
-    protected $pageSpanType = GoogleCloudDocumentaiV1DocumentChunkedDocumentChunkChunkPageSpan::class;
-    protected $pageSpanDataType = '';
-    /**
-     * Footer in text format.
-     *
-     * @var string
-     */
-    public $text;
-    /**
-     * Page span of the footer.
-     *
-     * @param GoogleCloudDocumentaiV1DocumentChunkedDocumentChunkChunkPageSpan $pageSpan
-     */
-    public function setPageSpan(GoogleCloudDocumentaiV1DocumentChunkedDocumentChunkChunkPageSpan $pageSpan)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1DocumentChunkedDocumentChunkChunkPageFooter extends \Google\Model
     {
+        protected $pageSpanType = GoogleCloudDocumentaiV1DocumentChunkedDocumentChunkChunkPageSpan::class;
+        protected $pageSpanDataType = '';
+        /**
+         * Footer in text format.
+         *
+         * @var string
+         */
+        public $text;
+        /**
+         * Page span of the footer.
+         *
+         * @param GoogleCloudDocumentaiV1DocumentChunkedDocumentChunkChunkPageSpan $pageSpan
+         */
+        public function setPageSpan(GoogleCloudDocumentaiV1DocumentChunkedDocumentChunkChunkPageSpan $pageSpan)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1DocumentChunkedDocumentChunkChunkPageSpan
+         */
+        public function getPageSpan()
+        {
+        }
+        /**
+         * Footer in text format.
+         *
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiV1DocumentChunkedDocumentChunkChunkPageSpan
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1DocumentChunkedDocumentChunkChunkPageFooter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPageSpan()
-    {
-    }
-    /**
-     * Footer in text format.
-     *
-     * @param string $text
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
+    class Google_Service_Document_GoogleCloudDocumentaiV1DocumentChunkedDocumentChunkChunkPageFooter extends \Google\Service\Document\GoogleCloudDocumentaiV1DocumentChunkedDocumentChunkChunkPageFooter
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager;
-
-class ScannedResource extends \Google\Model
-{
-    /**
-     * resource name
-     *
-     * @var string
-     */
-    public $resource;
-    /**
-     * resource type
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * resource name
-     *
-     * @param string $resource
-     */
-    public function setResource($resource)
+namespace Google\Service\WorkloadManager {
+    class ScannedResource extends \Google\Model
     {
+        /**
+         * resource name
+         *
+         * @var string
+         */
+        public $resource;
+        /**
+         * resource type
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * resource name
+         *
+         * @param string $resource
+         */
+        public function setResource($resource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResource()
+        {
+        }
+        /**
+         * resource type
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\WorkloadManager\ScannedResource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResource()
-    {
-    }
-    /**
-     * resource type
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_WorkloadManager_ScannedResource extends \Google\Service\WorkloadManager\ScannedResource
     {
     }
 }

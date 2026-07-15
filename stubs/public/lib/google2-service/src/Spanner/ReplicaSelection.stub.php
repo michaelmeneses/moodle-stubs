@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class ReplicaSelection extends \Google\Model
-{
-    /**
-     * Not specified.
-     */
-    public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
-    /**
-     * Read-write replicas support both reads and writes.
-     */
-    public const TYPE_READ_WRITE = 'READ_WRITE';
-    /**
-     * Read-only replicas only support reads (not writes).
-     */
-    public const TYPE_READ_ONLY = 'READ_ONLY';
-    /**
-     * The location or region of the serving requests, for example, "us-east1".
-     *
-     * @var string
-     */
-    public $location;
-    /**
-     * The type of replica.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The location or region of the serving requests, for example, "us-east1".
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
+namespace Google\Service\Spanner {
+    class ReplicaSelection extends \Google\Model
     {
+        /**
+         * Not specified.
+         */
+        public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
+        /**
+         * Read-write replicas support both reads and writes.
+         */
+        public const TYPE_READ_WRITE = 'READ_WRITE';
+        /**
+         * Read-only replicas only support reads (not writes).
+         */
+        public const TYPE_READ_ONLY = 'READ_ONLY';
+        /**
+         * The location or region of the serving requests, for example, "us-east1".
+         *
+         * @var string
+         */
+        public $location;
+        /**
+         * The type of replica.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The location or region of the serving requests, for example, "us-east1".
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * The type of replica.
+         *
+         * Accepted values: TYPE_UNSPECIFIED, READ_WRITE, READ_ONLY
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Spanner\ReplicaSelection registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLocation()
-    {
-    }
-    /**
-     * The type of replica.
-     *
-     * Accepted values: TYPE_UNSPECIFIED, READ_WRITE, READ_ONLY
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_Spanner_ReplicaSelection extends \Google\Service\Spanner\ReplicaSelection
     {
     }
 }

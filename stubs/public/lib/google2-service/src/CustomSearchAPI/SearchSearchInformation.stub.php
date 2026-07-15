@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CustomSearchAPI;
-
-class SearchSearchInformation extends \Google\Model
-{
-    /**
-     * The time taken for the server to return search results, formatted according
-     * to locale style.
-     *
-     * @var string
-     */
-    public $formattedSearchTime;
-    /**
-     * The total number of search results, formatted according to locale style.
-     *
-     * @var string
-     */
-    public $formattedTotalResults;
-    /**
-     * The time taken for the server to return search results.
-     *
-     * @var 
-     */
-    public $searchTime;
-    /**
-     * The total number of search results returned by the query.
-     *
-     * @var string
-     */
-    public $totalResults;
-    /**
-     * The time taken for the server to return search results, formatted according
-     * to locale style.
-     *
-     * @param string $formattedSearchTime
-     */
-    public function setFormattedSearchTime($formattedSearchTime)
+namespace Google\Service\CustomSearchAPI {
+    class SearchSearchInformation extends \Google\Model
     {
+        /**
+         * The time taken for the server to return search results, formatted according
+         * to locale style.
+         *
+         * @var string
+         */
+        public $formattedSearchTime;
+        /**
+         * The total number of search results, formatted according to locale style.
+         *
+         * @var string
+         */
+        public $formattedTotalResults;
+        /**
+         * The time taken for the server to return search results.
+         *
+         * @var 
+         */
+        public $searchTime;
+        /**
+         * The total number of search results returned by the query.
+         *
+         * @var string
+         */
+        public $totalResults;
+        /**
+         * The time taken for the server to return search results, formatted according
+         * to locale style.
+         *
+         * @param string $formattedSearchTime
+         */
+        public function setFormattedSearchTime($formattedSearchTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFormattedSearchTime()
+        {
+        }
+        /**
+         * The total number of search results, formatted according to locale style.
+         *
+         * @param string $formattedTotalResults
+         */
+        public function setFormattedTotalResults($formattedTotalResults)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFormattedTotalResults()
+        {
+        }
+        public function setSearchTime($searchTime)
+        {
+        }
+        public function getSearchTime()
+        {
+        }
+        /**
+         * The total number of search results returned by the query.
+         *
+         * @param string $totalResults
+         */
+        public function setTotalResults($totalResults)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalResults()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CustomSearchAPI\SearchSearchInformation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFormattedSearchTime()
-    {
-    }
-    /**
-     * The total number of search results, formatted according to locale style.
-     *
-     * @param string $formattedTotalResults
-     */
-    public function setFormattedTotalResults($formattedTotalResults)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFormattedTotalResults()
-    {
-    }
-    public function setSearchTime($searchTime)
-    {
-    }
-    public function getSearchTime()
-    {
-    }
-    /**
-     * The total number of search results returned by the query.
-     *
-     * @param string $totalResults
-     */
-    public function setTotalResults($totalResults)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalResults()
+    class Google_Service_CustomSearchAPI_SearchSearchInformation extends \Google\Service\CustomSearchAPI\SearchSearchInformation
     {
     }
 }

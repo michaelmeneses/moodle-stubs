@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution;
-
-class GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool extends \Google\Model
-{
-    protected $autoscaleType = GoogleDevtoolsRemotebuildexecutionAdminV1alphaAutoscale::class;
-    protected $autoscaleDataType = '';
-    public $channel;
-    public $name;
-    public $state;
-    protected $workerConfigType = GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig::class;
-    protected $workerConfigDataType = '';
-    public $workerCount;
+namespace Google\Service\RemoteBuildExecution {
+    class GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool extends \Google\Model
+    {
+        protected $autoscaleType = GoogleDevtoolsRemotebuildexecutionAdminV1alphaAutoscale::class;
+        protected $autoscaleDataType = '';
+        public $channel;
+        public $name;
+        public $state;
+        protected $workerConfigType = GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig::class;
+        protected $workerConfigDataType = '';
+        public $workerCount;
+        /**
+         * @param GoogleDevtoolsRemotebuildexecutionAdminV1alphaAutoscale
+         */
+        public function setAutoscale(GoogleDevtoolsRemotebuildexecutionAdminV1alphaAutoscale $autoscale)
+        {
+        }
+        /**
+         * @return GoogleDevtoolsRemotebuildexecutionAdminV1alphaAutoscale
+         */
+        public function getAutoscale()
+        {
+        }
+        public function setChannel($channel)
+        {
+        }
+        public function getChannel()
+        {
+        }
+        public function setName($name)
+        {
+        }
+        public function getName()
+        {
+        }
+        public function setState($state)
+        {
+        }
+        public function getState()
+        {
+        }
+        /**
+         * @param GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig
+         */
+        public function setWorkerConfig(GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig $workerConfig)
+        {
+        }
+        /**
+         * @return GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig
+         */
+        public function getWorkerConfig()
+        {
+        }
+        public function setWorkerCount($workerCount)
+        {
+        }
+        public function getWorkerCount()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @param GoogleDevtoolsRemotebuildexecutionAdminV1alphaAutoscale
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setAutoscale(GoogleDevtoolsRemotebuildexecutionAdminV1alphaAutoscale $autoscale)
-    {
-    }
-    /**
-     * @return GoogleDevtoolsRemotebuildexecutionAdminV1alphaAutoscale
-     */
-    public function getAutoscale()
-    {
-    }
-    public function setChannel($channel)
-    {
-    }
-    public function getChannel()
-    {
-    }
-    public function setName($name)
-    {
-    }
-    public function getName()
-    {
-    }
-    public function setState($state)
-    {
-    }
-    public function getState()
-    {
-    }
-    /**
-     * @param GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig
-     */
-    public function setWorkerConfig(GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig $workerConfig)
-    {
-    }
-    /**
-     * @return GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig
-     */
-    public function getWorkerConfig()
-    {
-    }
-    public function setWorkerCount($workerCount)
-    {
-    }
-    public function getWorkerCount()
+    class Google_Service_RemoteBuildExecution_GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool extends \Google\Service\RemoteBuildExecution\GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool
     {
     }
 }

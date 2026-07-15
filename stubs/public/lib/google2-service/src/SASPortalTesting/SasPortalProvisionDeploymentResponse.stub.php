@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SASPortalTesting;
-
-class SasPortalProvisionDeploymentResponse extends \Google\Model
-{
-    /**
-     * Optional. Optional error message if the provisioning request is not
-     * successful.
-     *
-     * @var string
-     */
-    public $errorMessage;
-    /**
-     * Optional. Optional error message if the provisioning request is not
-     * successful.
-     *
-     * @param string $errorMessage
-     */
-    public function setErrorMessage($errorMessage)
+namespace Google\Service\SASPortalTesting {
+    class SasPortalProvisionDeploymentResponse extends \Google\Model
     {
+        /**
+         * Optional. Optional error message if the provisioning request is not
+         * successful.
+         *
+         * @var string
+         */
+        public $errorMessage;
+        /**
+         * Optional. Optional error message if the provisioning request is not
+         * successful.
+         *
+         * @param string $errorMessage
+         */
+        public function setErrorMessage($errorMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getErrorMessage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SASPortalTesting\SasPortalProvisionDeploymentResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrorMessage()
+    class Google_Service_SASPortalTesting_SasPortalProvisionDeploymentResponse extends \Google\Service\SASPortalTesting\SasPortalProvisionDeploymentResponse
     {
     }
 }

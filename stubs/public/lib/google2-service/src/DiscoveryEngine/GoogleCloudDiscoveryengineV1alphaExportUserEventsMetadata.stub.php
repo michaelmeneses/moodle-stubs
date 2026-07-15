@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaExportUserEventsMetadata extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $createTime;
-    /**
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * @param string
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaExportUserEventsMetadata extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $createTime;
+        /**
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * @param string
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaExportUserEventsMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaExportUserEventsMetadata extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaExportUserEventsMetadata
     {
     }
 }

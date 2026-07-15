@@ -21,63 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1ReconcileTagsRequest extends \Google\Collection
-{
-    protected $collection_key = 'tags';
-    /**
-     * @var bool
-     */
-    public $forceDeleteMissing;
-    /**
-     * Required. The name of the tag template, which is used for reconciliation.
-     *
-     * @var string
-     */
-    public $tagTemplate;
-    protected $tagsType = GoogleCloudDatacatalogV1Tag::class;
-    protected $tagsDataType = 'array';
-    /**
-     * @param bool $forceDeleteMissing
-     */
-    public function setForceDeleteMissing($forceDeleteMissing)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1ReconcileTagsRequest extends \Google\Collection
     {
+        protected $collection_key = 'tags';
+        /**
+         * @var bool
+         */
+        public $forceDeleteMissing;
+        /**
+         * Required. The name of the tag template, which is used for reconciliation.
+         *
+         * @var string
+         */
+        public $tagTemplate;
+        protected $tagsType = GoogleCloudDatacatalogV1Tag::class;
+        protected $tagsDataType = 'array';
+        /**
+         * @param bool $forceDeleteMissing
+         */
+        public function setForceDeleteMissing($forceDeleteMissing)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getForceDeleteMissing()
+        {
+        }
+        /**
+         * Required. The name of the tag template, which is used for reconciliation.
+         *
+         * @param string $tagTemplate
+         */
+        public function setTagTemplate($tagTemplate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTagTemplate()
+        {
+        }
+        /**
+         * A list of tags to apply to an entry. A tag can specify a tag template,
+         * which must be the template specified in the `ReconcileTagsRequest`. The
+         * sole entry and each of its columns must be mentioned at most once.
+         *
+         * @param GoogleCloudDatacatalogV1Tag[] $tags
+         */
+        public function setTags($tags)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1Tag[]
+         */
+        public function getTags()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1ReconcileTagsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getForceDeleteMissing()
-    {
-    }
-    /**
-     * Required. The name of the tag template, which is used for reconciliation.
-     *
-     * @param string $tagTemplate
-     */
-    public function setTagTemplate($tagTemplate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTagTemplate()
-    {
-    }
-    /**
-     * A list of tags to apply to an entry. A tag can specify a tag template,
-     * which must be the template specified in the `ReconcileTagsRequest`. The
-     * sole entry and each of its columns must be mentioned at most once.
-     *
-     * @param GoogleCloudDatacatalogV1Tag[] $tags
-     */
-    public function setTags($tags)
-    {
-    }
-    /**
-     * @return GoogleCloudDatacatalogV1Tag[]
-     */
-    public function getTags()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1ReconcileTagsRequest extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1ReconcileTagsRequest
     {
     }
 }

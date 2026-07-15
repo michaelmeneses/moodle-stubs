@@ -21,106 +21,115 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class RunAggregationQueryRequest extends \Google\Model
-{
-    protected $explainOptionsType = ExplainOptions::class;
-    protected $explainOptionsDataType = '';
-    protected $newTransactionType = TransactionOptions::class;
-    protected $newTransactionDataType = '';
-    /**
-     * Executes the query at the given timestamp. This must be a microsecond
-     * precision timestamp within the past one hour, or if Point-in-Time Recovery
-     * is enabled, can additionally be a whole minute timestamp within the past 7
-     * days.
-     *
-     * @var string
-     */
-    public $readTime;
-    protected $structuredAggregationQueryType = StructuredAggregationQuery::class;
-    protected $structuredAggregationQueryDataType = '';
-    /**
-     * Run the aggregation within an already active transaction. The value here is
-     * the opaque transaction ID to execute the query in.
-     *
-     * @var string
-     */
-    public $transaction;
-    /**
-     * Optional. Explain options for the query. If set, additional query
-     * statistics will be returned. If not, only query results will be returned.
-     *
-     * @param ExplainOptions $explainOptions
-     */
-    public function setExplainOptions(ExplainOptions $explainOptions)
+namespace Google\Service\Firestore {
+    class RunAggregationQueryRequest extends \Google\Model
     {
+        protected $explainOptionsType = ExplainOptions::class;
+        protected $explainOptionsDataType = '';
+        protected $newTransactionType = TransactionOptions::class;
+        protected $newTransactionDataType = '';
+        /**
+         * Executes the query at the given timestamp. This must be a microsecond
+         * precision timestamp within the past one hour, or if Point-in-Time Recovery
+         * is enabled, can additionally be a whole minute timestamp within the past 7
+         * days.
+         *
+         * @var string
+         */
+        public $readTime;
+        protected $structuredAggregationQueryType = StructuredAggregationQuery::class;
+        protected $structuredAggregationQueryDataType = '';
+        /**
+         * Run the aggregation within an already active transaction. The value here is
+         * the opaque transaction ID to execute the query in.
+         *
+         * @var string
+         */
+        public $transaction;
+        /**
+         * Optional. Explain options for the query. If set, additional query
+         * statistics will be returned. If not, only query results will be returned.
+         *
+         * @param ExplainOptions $explainOptions
+         */
+        public function setExplainOptions(ExplainOptions $explainOptions)
+        {
+        }
+        /**
+         * @return ExplainOptions
+         */
+        public function getExplainOptions()
+        {
+        }
+        /**
+         * Starts a new transaction as part of the query, defaulting to read-only. The
+         * new transaction ID will be returned as the first response in the stream.
+         *
+         * @param TransactionOptions $newTransaction
+         */
+        public function setNewTransaction(TransactionOptions $newTransaction)
+        {
+        }
+        /**
+         * @return TransactionOptions
+         */
+        public function getNewTransaction()
+        {
+        }
+        /**
+         * Executes the query at the given timestamp. This must be a microsecond
+         * precision timestamp within the past one hour, or if Point-in-Time Recovery
+         * is enabled, can additionally be a whole minute timestamp within the past 7
+         * days.
+         *
+         * @param string $readTime
+         */
+        public function setReadTime($readTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReadTime()
+        {
+        }
+        /**
+         * An aggregation query.
+         *
+         * @param StructuredAggregationQuery $structuredAggregationQuery
+         */
+        public function setStructuredAggregationQuery(StructuredAggregationQuery $structuredAggregationQuery)
+        {
+        }
+        /**
+         * @return StructuredAggregationQuery
+         */
+        public function getStructuredAggregationQuery()
+        {
+        }
+        /**
+         * Run the aggregation within an already active transaction. The value here is
+         * the opaque transaction ID to execute the query in.
+         *
+         * @param string $transaction
+         */
+        public function setTransaction($transaction)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTransaction()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ExplainOptions
+     * Runtime class alias of \Google\Service\Firestore\RunAggregationQueryRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExplainOptions()
-    {
-    }
-    /**
-     * Starts a new transaction as part of the query, defaulting to read-only. The
-     * new transaction ID will be returned as the first response in the stream.
-     *
-     * @param TransactionOptions $newTransaction
-     */
-    public function setNewTransaction(TransactionOptions $newTransaction)
-    {
-    }
-    /**
-     * @return TransactionOptions
-     */
-    public function getNewTransaction()
-    {
-    }
-    /**
-     * Executes the query at the given timestamp. This must be a microsecond
-     * precision timestamp within the past one hour, or if Point-in-Time Recovery
-     * is enabled, can additionally be a whole minute timestamp within the past 7
-     * days.
-     *
-     * @param string $readTime
-     */
-    public function setReadTime($readTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReadTime()
-    {
-    }
-    /**
-     * An aggregation query.
-     *
-     * @param StructuredAggregationQuery $structuredAggregationQuery
-     */
-    public function setStructuredAggregationQuery(StructuredAggregationQuery $structuredAggregationQuery)
-    {
-    }
-    /**
-     * @return StructuredAggregationQuery
-     */
-    public function getStructuredAggregationQuery()
-    {
-    }
-    /**
-     * Run the aggregation within an already active transaction. The value here is
-     * the opaque transaction ID to execute the query in.
-     *
-     * @param string $transaction
-     */
-    public function setTransaction($transaction)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTransaction()
+    class Google_Service_Firestore_RunAggregationQueryRequest extends \Google\Service\Firestore\RunAggregationQueryRequest
     {
     }
 }

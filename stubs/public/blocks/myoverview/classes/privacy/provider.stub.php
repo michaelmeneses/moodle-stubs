@@ -29,6 +29,9 @@
  */
 namespace block_myoverview\privacy;
 
+use core_privacy\local\request\user_preference_provider;
+use core_privacy\local\metadata\collection;
+use core_privacy\local\request\writer;
 /**
  * Privacy Subsystem for block_myoverview.
  *

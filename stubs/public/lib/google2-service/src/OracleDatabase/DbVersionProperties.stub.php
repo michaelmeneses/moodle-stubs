@@ -21,116 +21,125 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OracleDatabase;
-
-class DbVersionProperties extends \Google\Model
-{
-    /**
-     * Output only. True if this version of the Oracle Database software is the
-     * latest version for a release.
-     *
-     * @var bool
-     */
-    public $isLatestForMajorVersion;
-    /**
-     * Output only. True if this version of the Oracle Database software is the
-     * preview version.
-     *
-     * @var bool
-     */
-    public $isPreviewDbVersion;
-    /**
-     * Output only. True if this version of the Oracle Database software is
-     * supported for Upgrade.
-     *
-     * @var bool
-     */
-    public $isUpgradeSupported;
-    /**
-     * Output only. True if this version of the Oracle Database software supports
-     * pluggable databases.
-     *
-     * @var bool
-     */
-    public $supportsPdb;
-    /**
-     * Output only. A valid Oracle Database version.
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * Output only. True if this version of the Oracle Database software is the
-     * latest version for a release.
-     *
-     * @param bool $isLatestForMajorVersion
-     */
-    public function setIsLatestForMajorVersion($isLatestForMajorVersion)
+namespace Google\Service\OracleDatabase {
+    class DbVersionProperties extends \Google\Model
     {
+        /**
+         * Output only. True if this version of the Oracle Database software is the
+         * latest version for a release.
+         *
+         * @var bool
+         */
+        public $isLatestForMajorVersion;
+        /**
+         * Output only. True if this version of the Oracle Database software is the
+         * preview version.
+         *
+         * @var bool
+         */
+        public $isPreviewDbVersion;
+        /**
+         * Output only. True if this version of the Oracle Database software is
+         * supported for Upgrade.
+         *
+         * @var bool
+         */
+        public $isUpgradeSupported;
+        /**
+         * Output only. True if this version of the Oracle Database software supports
+         * pluggable databases.
+         *
+         * @var bool
+         */
+        public $supportsPdb;
+        /**
+         * Output only. A valid Oracle Database version.
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * Output only. True if this version of the Oracle Database software is the
+         * latest version for a release.
+         *
+         * @param bool $isLatestForMajorVersion
+         */
+        public function setIsLatestForMajorVersion($isLatestForMajorVersion)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsLatestForMajorVersion()
+        {
+        }
+        /**
+         * Output only. True if this version of the Oracle Database software is the
+         * preview version.
+         *
+         * @param bool $isPreviewDbVersion
+         */
+        public function setIsPreviewDbVersion($isPreviewDbVersion)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsPreviewDbVersion()
+        {
+        }
+        /**
+         * Output only. True if this version of the Oracle Database software is
+         * supported for Upgrade.
+         *
+         * @param bool $isUpgradeSupported
+         */
+        public function setIsUpgradeSupported($isUpgradeSupported)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsUpgradeSupported()
+        {
+        }
+        /**
+         * Output only. True if this version of the Oracle Database software supports
+         * pluggable databases.
+         *
+         * @param bool $supportsPdb
+         */
+        public function setSupportsPdb($supportsPdb)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSupportsPdb()
+        {
+        }
+        /**
+         * Output only. A valid Oracle Database version.
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\OracleDatabase\DbVersionProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIsLatestForMajorVersion()
-    {
-    }
-    /**
-     * Output only. True if this version of the Oracle Database software is the
-     * preview version.
-     *
-     * @param bool $isPreviewDbVersion
-     */
-    public function setIsPreviewDbVersion($isPreviewDbVersion)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsPreviewDbVersion()
-    {
-    }
-    /**
-     * Output only. True if this version of the Oracle Database software is
-     * supported for Upgrade.
-     *
-     * @param bool $isUpgradeSupported
-     */
-    public function setIsUpgradeSupported($isUpgradeSupported)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsUpgradeSupported()
-    {
-    }
-    /**
-     * Output only. True if this version of the Oracle Database software supports
-     * pluggable databases.
-     *
-     * @param bool $supportsPdb
-     */
-    public function setSupportsPdb($supportsPdb)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSupportsPdb()
-    {
-    }
-    /**
-     * Output only. A valid Oracle Database version.
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_OracleDatabase_DbVersionProperties extends \Google\Service\OracleDatabase\DbVersionProperties
     {
     }
 }

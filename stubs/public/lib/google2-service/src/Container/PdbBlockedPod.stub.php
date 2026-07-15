@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class PdbBlockedPod extends \Google\Model
-{
-    /**
-     * The name of the pod.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The namespace of the pod.
-     *
-     * @var string
-     */
-    public $namespace;
-    /**
-     * The name of the pod.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Container {
+    class PdbBlockedPod extends \Google\Model
     {
+        /**
+         * The name of the pod.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The namespace of the pod.
+         *
+         * @var string
+         */
+        public $namespace;
+        /**
+         * The name of the pod.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The namespace of the pod.
+         *
+         * @param string $namespace
+         */
+        public function setNamespace($namespace)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNamespace()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Container\PdbBlockedPod registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * The namespace of the pod.
-     *
-     * @param string $namespace
-     */
-    public function setNamespace($namespace)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNamespace()
+    class Google_Service_Container_PdbBlockedPod extends \Google\Service\Container\PdbBlockedPod
     {
     }
 }

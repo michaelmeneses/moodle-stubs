@@ -21,103 +21,112 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class ReturnPolicyOnlineReturnReasonCategoryInfo extends \Google\Model
-{
-    /**
-     * Default value. This value is unused.
-     */
-    public const RETURN_LABEL_SOURCE_RETURN_LABEL_SOURCE_UNSPECIFIED = 'RETURN_LABEL_SOURCE_UNSPECIFIED';
-    /**
-     * Download and print the label.
-     */
-    public const RETURN_LABEL_SOURCE_DOWNLOAD_AND_PRINT = 'DOWNLOAD_AND_PRINT';
-    /**
-     * Label in the box.
-     */
-    public const RETURN_LABEL_SOURCE_IN_THE_BOX = 'IN_THE_BOX';
-    /**
-     * Customers' responsibility to get the label.
-     */
-    public const RETURN_LABEL_SOURCE_CUSTOMER_RESPONSIBILITY = 'CUSTOMER_RESPONSIBILITY';
-    /**
-     * Default value. This value is unused.
-     */
-    public const RETURN_REASON_CATEGORY_RETURN_REASON_CATEGORY_UNSPECIFIED = 'RETURN_REASON_CATEGORY_UNSPECIFIED';
-    /**
-     * Buyer remorse.
-     */
-    public const RETURN_REASON_CATEGORY_BUYER_REMORSE = 'BUYER_REMORSE';
-    /**
-     * Item defect.
-     */
-    public const RETURN_REASON_CATEGORY_ITEM_DEFECT = 'ITEM_DEFECT';
-    /**
-     * The corresponding return label source. If the `ReturnMethod` field includes
-     * `BY_MAIL`, it is required to specify `ReturnLabelSource` for both
-     * `BUYER_REMORSE` and `ITEM_DEFECT` return reason categories.
-     *
-     * @var string
-     */
-    public $returnLabelSource;
-    /**
-     * The return reason category.
-     *
-     * @var string
-     */
-    public $returnReasonCategory;
-    protected $returnShippingFeeType = ReturnPolicyOnlineReturnShippingFee::class;
-    protected $returnShippingFeeDataType = '';
-    /**
-     * The corresponding return label source. If the `ReturnMethod` field includes
-     * `BY_MAIL`, it is required to specify `ReturnLabelSource` for both
-     * `BUYER_REMORSE` and `ITEM_DEFECT` return reason categories.
-     *
-     * Accepted values: RETURN_LABEL_SOURCE_UNSPECIFIED, DOWNLOAD_AND_PRINT,
-     * IN_THE_BOX, CUSTOMER_RESPONSIBILITY
-     *
-     * @param self::RETURN_LABEL_SOURCE_* $returnLabelSource
-     */
-    public function setReturnLabelSource($returnLabelSource)
+namespace Google\Service\ShoppingContent {
+    class ReturnPolicyOnlineReturnReasonCategoryInfo extends \Google\Model
     {
+        /**
+         * Default value. This value is unused.
+         */
+        public const RETURN_LABEL_SOURCE_RETURN_LABEL_SOURCE_UNSPECIFIED = 'RETURN_LABEL_SOURCE_UNSPECIFIED';
+        /**
+         * Download and print the label.
+         */
+        public const RETURN_LABEL_SOURCE_DOWNLOAD_AND_PRINT = 'DOWNLOAD_AND_PRINT';
+        /**
+         * Label in the box.
+         */
+        public const RETURN_LABEL_SOURCE_IN_THE_BOX = 'IN_THE_BOX';
+        /**
+         * Customers' responsibility to get the label.
+         */
+        public const RETURN_LABEL_SOURCE_CUSTOMER_RESPONSIBILITY = 'CUSTOMER_RESPONSIBILITY';
+        /**
+         * Default value. This value is unused.
+         */
+        public const RETURN_REASON_CATEGORY_RETURN_REASON_CATEGORY_UNSPECIFIED = 'RETURN_REASON_CATEGORY_UNSPECIFIED';
+        /**
+         * Buyer remorse.
+         */
+        public const RETURN_REASON_CATEGORY_BUYER_REMORSE = 'BUYER_REMORSE';
+        /**
+         * Item defect.
+         */
+        public const RETURN_REASON_CATEGORY_ITEM_DEFECT = 'ITEM_DEFECT';
+        /**
+         * The corresponding return label source. If the `ReturnMethod` field includes
+         * `BY_MAIL`, it is required to specify `ReturnLabelSource` for both
+         * `BUYER_REMORSE` and `ITEM_DEFECT` return reason categories.
+         *
+         * @var string
+         */
+        public $returnLabelSource;
+        /**
+         * The return reason category.
+         *
+         * @var string
+         */
+        public $returnReasonCategory;
+        protected $returnShippingFeeType = ReturnPolicyOnlineReturnShippingFee::class;
+        protected $returnShippingFeeDataType = '';
+        /**
+         * The corresponding return label source. If the `ReturnMethod` field includes
+         * `BY_MAIL`, it is required to specify `ReturnLabelSource` for both
+         * `BUYER_REMORSE` and `ITEM_DEFECT` return reason categories.
+         *
+         * Accepted values: RETURN_LABEL_SOURCE_UNSPECIFIED, DOWNLOAD_AND_PRINT,
+         * IN_THE_BOX, CUSTOMER_RESPONSIBILITY
+         *
+         * @param self::RETURN_LABEL_SOURCE_* $returnLabelSource
+         */
+        public function setReturnLabelSource($returnLabelSource)
+        {
+        }
+        /**
+         * @return self::RETURN_LABEL_SOURCE_*
+         */
+        public function getReturnLabelSource()
+        {
+        }
+        /**
+         * The return reason category.
+         *
+         * Accepted values: RETURN_REASON_CATEGORY_UNSPECIFIED, BUYER_REMORSE,
+         * ITEM_DEFECT
+         *
+         * @param self::RETURN_REASON_CATEGORY_* $returnReasonCategory
+         */
+        public function setReturnReasonCategory($returnReasonCategory)
+        {
+        }
+        /**
+         * @return self::RETURN_REASON_CATEGORY_*
+         */
+        public function getReturnReasonCategory()
+        {
+        }
+        /**
+         * The corresponding return shipping fee. This is only applicable when
+         * returnLabelSource is not the customer's responsibility.
+         *
+         * @param ReturnPolicyOnlineReturnShippingFee $returnShippingFee
+         */
+        public function setReturnShippingFee(ReturnPolicyOnlineReturnShippingFee $returnShippingFee)
+        {
+        }
+        /**
+         * @return ReturnPolicyOnlineReturnShippingFee
+         */
+        public function getReturnShippingFee()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::RETURN_LABEL_SOURCE_*
+     * Runtime class alias of \Google\Service\ShoppingContent\ReturnPolicyOnlineReturnReasonCategoryInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReturnLabelSource()
-    {
-    }
-    /**
-     * The return reason category.
-     *
-     * Accepted values: RETURN_REASON_CATEGORY_UNSPECIFIED, BUYER_REMORSE,
-     * ITEM_DEFECT
-     *
-     * @param self::RETURN_REASON_CATEGORY_* $returnReasonCategory
-     */
-    public function setReturnReasonCategory($returnReasonCategory)
-    {
-    }
-    /**
-     * @return self::RETURN_REASON_CATEGORY_*
-     */
-    public function getReturnReasonCategory()
-    {
-    }
-    /**
-     * The corresponding return shipping fee. This is only applicable when
-     * returnLabelSource is not the customer's responsibility.
-     *
-     * @param ReturnPolicyOnlineReturnShippingFee $returnShippingFee
-     */
-    public function setReturnShippingFee(ReturnPolicyOnlineReturnShippingFee $returnShippingFee)
-    {
-    }
-    /**
-     * @return ReturnPolicyOnlineReturnShippingFee
-     */
-    public function getReturnShippingFee()
+    class Google_Service_ShoppingContent_ReturnPolicyOnlineReturnReasonCategoryInfo extends \Google\Service\ShoppingContent\ReturnPolicyOnlineReturnReasonCategoryInfo
     {
     }
 }

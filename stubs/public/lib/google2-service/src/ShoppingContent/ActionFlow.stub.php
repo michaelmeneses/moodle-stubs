@@ -21,149 +21,158 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class ActionFlow extends \Google\Collection
-{
-    protected $collection_key = 'inputs';
-    /**
-     * Label for the button to trigger the action from the action dialog. For
-     * example: "Request review"
-     *
-     * @var string
-     */
-    public $dialogButtonLabel;
-    protected $dialogCalloutType = Callout::class;
-    protected $dialogCalloutDataType = '';
-    protected $dialogMessageType = TextWithTooltip::class;
-    protected $dialogMessageDataType = '';
-    /**
-     * Title of the request dialog. For example: "Before you request a review"
-     *
-     * @var string
-     */
-    public $dialogTitle;
-    /**
-     * Not for display but need to be sent back for the selected action flow.
-     *
-     * @var string
-     */
-    public $id;
-    protected $inputsType = InputField::class;
-    protected $inputsDataType = 'array';
-    /**
-     * Text value describing the intent for the action flow. It can be used as an
-     * input label if merchant needs to pick one of multiple flows. For example:
-     * "I disagree with the issue"
-     *
-     * @var string
-     */
-    public $label;
-    /**
-     * Label for the button to trigger the action from the action dialog. For
-     * example: "Request review"
-     *
-     * @param string $dialogButtonLabel
-     */
-    public function setDialogButtonLabel($dialogButtonLabel)
+namespace Google\Service\ShoppingContent {
+    class ActionFlow extends \Google\Collection
     {
+        protected $collection_key = 'inputs';
+        /**
+         * Label for the button to trigger the action from the action dialog. For
+         * example: "Request review"
+         *
+         * @var string
+         */
+        public $dialogButtonLabel;
+        protected $dialogCalloutType = Callout::class;
+        protected $dialogCalloutDataType = '';
+        protected $dialogMessageType = TextWithTooltip::class;
+        protected $dialogMessageDataType = '';
+        /**
+         * Title of the request dialog. For example: "Before you request a review"
+         *
+         * @var string
+         */
+        public $dialogTitle;
+        /**
+         * Not for display but need to be sent back for the selected action flow.
+         *
+         * @var string
+         */
+        public $id;
+        protected $inputsType = InputField::class;
+        protected $inputsDataType = 'array';
+        /**
+         * Text value describing the intent for the action flow. It can be used as an
+         * input label if merchant needs to pick one of multiple flows. For example:
+         * "I disagree with the issue"
+         *
+         * @var string
+         */
+        public $label;
+        /**
+         * Label for the button to trigger the action from the action dialog. For
+         * example: "Request review"
+         *
+         * @param string $dialogButtonLabel
+         */
+        public function setDialogButtonLabel($dialogButtonLabel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDialogButtonLabel()
+        {
+        }
+        /**
+         * Important message to be highlighted in the request dialog. For example:
+         * "You can only request a review for disagreeing with this issue once. If
+         * it's not approved, you'll need to fix the issue and wait a few days before
+         * you can request another review."
+         *
+         * @param Callout $dialogCallout
+         */
+        public function setDialogCallout(Callout $dialogCallout)
+        {
+        }
+        /**
+         * @return Callout
+         */
+        public function getDialogCallout()
+        {
+        }
+        /**
+         * Message displayed in the request dialog. For example: "Make sure you've
+         * fixed all your country-specific issues. If not, you may have to wait 7 days
+         * to request another review". There may be an more information to be shown in
+         * a tooltip.
+         *
+         * @param TextWithTooltip $dialogMessage
+         */
+        public function setDialogMessage(TextWithTooltip $dialogMessage)
+        {
+        }
+        /**
+         * @return TextWithTooltip
+         */
+        public function getDialogMessage()
+        {
+        }
+        /**
+         * Title of the request dialog. For example: "Before you request a review"
+         *
+         * @param string $dialogTitle
+         */
+        public function setDialogTitle($dialogTitle)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDialogTitle()
+        {
+        }
+        /**
+         * Not for display but need to be sent back for the selected action flow.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * A list of input fields.
+         *
+         * @param InputField[] $inputs
+         */
+        public function setInputs($inputs)
+        {
+        }
+        /**
+         * @return InputField[]
+         */
+        public function getInputs()
+        {
+        }
+        /**
+         * Text value describing the intent for the action flow. It can be used as an
+         * input label if merchant needs to pick one of multiple flows. For example:
+         * "I disagree with the issue"
+         *
+         * @param string $label
+         */
+        public function setLabel($label)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLabel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\ActionFlow registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDialogButtonLabel()
-    {
-    }
-    /**
-     * Important message to be highlighted in the request dialog. For example:
-     * "You can only request a review for disagreeing with this issue once. If
-     * it's not approved, you'll need to fix the issue and wait a few days before
-     * you can request another review."
-     *
-     * @param Callout $dialogCallout
-     */
-    public function setDialogCallout(Callout $dialogCallout)
-    {
-    }
-    /**
-     * @return Callout
-     */
-    public function getDialogCallout()
-    {
-    }
-    /**
-     * Message displayed in the request dialog. For example: "Make sure you've
-     * fixed all your country-specific issues. If not, you may have to wait 7 days
-     * to request another review". There may be an more information to be shown in
-     * a tooltip.
-     *
-     * @param TextWithTooltip $dialogMessage
-     */
-    public function setDialogMessage(TextWithTooltip $dialogMessage)
-    {
-    }
-    /**
-     * @return TextWithTooltip
-     */
-    public function getDialogMessage()
-    {
-    }
-    /**
-     * Title of the request dialog. For example: "Before you request a review"
-     *
-     * @param string $dialogTitle
-     */
-    public function setDialogTitle($dialogTitle)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDialogTitle()
-    {
-    }
-    /**
-     * Not for display but need to be sent back for the selected action flow.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * A list of input fields.
-     *
-     * @param InputField[] $inputs
-     */
-    public function setInputs($inputs)
-    {
-    }
-    /**
-     * @return InputField[]
-     */
-    public function getInputs()
-    {
-    }
-    /**
-     * Text value describing the intent for the action flow. It can be used as an
-     * input label if merchant needs to pick one of multiple flows. For example:
-     * "I disagree with the issue"
-     *
-     * @param string $label
-     */
-    public function setLabel($label)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLabel()
+    class Google_Service_ShoppingContent_ActionFlow extends \Google\Service\ShoppingContent\ActionFlow
     {
     }
 }

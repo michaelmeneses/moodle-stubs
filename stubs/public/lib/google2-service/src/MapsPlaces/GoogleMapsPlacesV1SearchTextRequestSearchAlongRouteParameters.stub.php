@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MapsPlaces;
-
-class GoogleMapsPlacesV1SearchTextRequestSearchAlongRouteParameters extends \Google\Model
-{
-    protected $polylineType = GoogleMapsPlacesV1Polyline::class;
-    protected $polylineDataType = '';
-    /**
-     * Required. The route polyline.
-     *
-     * @param GoogleMapsPlacesV1Polyline $polyline
-     */
-    public function setPolyline(GoogleMapsPlacesV1Polyline $polyline)
+namespace Google\Service\MapsPlaces {
+    class GoogleMapsPlacesV1SearchTextRequestSearchAlongRouteParameters extends \Google\Model
     {
+        protected $polylineType = GoogleMapsPlacesV1Polyline::class;
+        protected $polylineDataType = '';
+        /**
+         * Required. The route polyline.
+         *
+         * @param GoogleMapsPlacesV1Polyline $polyline
+         */
+        public function setPolyline(GoogleMapsPlacesV1Polyline $polyline)
+        {
+        }
+        /**
+         * @return GoogleMapsPlacesV1Polyline
+         */
+        public function getPolyline()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleMapsPlacesV1Polyline
+     * Runtime class alias of \Google\Service\MapsPlaces\GoogleMapsPlacesV1SearchTextRequestSearchAlongRouteParameters registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPolyline()
+    class Google_Service_MapsPlaces_GoogleMapsPlacesV1SearchTextRequestSearchAlongRouteParameters extends \Google\Service\MapsPlaces\GoogleMapsPlacesV1SearchTextRequestSearchAlongRouteParameters
     {
     }
 }

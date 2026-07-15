@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class V2Model extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $contentCategoriesVersion;
-    /**
-     * @param string
-     */
-    public function setContentCategoriesVersion($contentCategoriesVersion)
+namespace Google\Service\CloudNaturalLanguage {
+    class V2Model extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $contentCategoriesVersion;
+        /**
+         * @param string
+         */
+        public function setContentCategoriesVersion($contentCategoriesVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContentCategoriesVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\V2Model registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContentCategoriesVersion()
+    class Google_Service_CloudNaturalLanguage_V2Model extends \Google\Service\CloudNaturalLanguage\V2Model
     {
     }
 }

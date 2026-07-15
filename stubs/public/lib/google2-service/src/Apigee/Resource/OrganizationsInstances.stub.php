@@ -21,107 +21,121 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee\Resource;
-
-/**
- * The "instances" collection of methods.
- * Typical usage is:
- *  <code>
- *   $apigeeService = new Google\Service\Apigee(...);
- *   $instances = $apigeeService->organizations_instances;
- *  </code>
- */
-class OrganizationsInstances extends \Google\Service\Resource
-{
+namespace Google\Service\Apigee\Resource {
+    use Google\Service\Apigee\GoogleCloudApigeeV1Instance;
+    use Google\Service\Apigee\GoogleCloudApigeeV1ListInstancesResponse;
+    use Google\Service\Apigee\GoogleCloudApigeeV1ReportInstanceStatusRequest;
+    use Google\Service\Apigee\GoogleCloudApigeeV1ReportInstanceStatusResponse;
+    use Google\Service\Apigee\GoogleLongrunningOperation;
     /**
-     * Creates an Apigee runtime instance. The instance is accessible from the
-     * authorized network configured on the organization. **Note:** Not supported
-     * for Apigee hybrid. (instances.create)
-     *
-     * @param string $parent Required. Name of the organization. Use the following
-     * structure in your request: `organizations/{org}`.
-     * @param GoogleCloudApigeeV1Instance $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
+     * The "instances" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $apigeeService = new Google\Service\Apigee(...);
+     *   $instances = $apigeeService->organizations_instances;
+     *  </code>
      */
-    public function create($parent, GoogleCloudApigeeV1Instance $postBody, $optParams = [])
+    class OrganizationsInstances extends \Google\Service\Resource
     {
+        /**
+         * Creates an Apigee runtime instance. The instance is accessible from the
+         * authorized network configured on the organization. **Note:** Not supported
+         * for Apigee hybrid. (instances.create)
+         *
+         * @param string $parent Required. Name of the organization. Use the following
+         * structure in your request: `organizations/{org}`.
+         * @param GoogleCloudApigeeV1Instance $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, GoogleCloudApigeeV1Instance $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes an Apigee runtime instance. The instance stops serving requests and
+         * the runtime data is deleted. **Note:** Not supported for Apigee hybrid.
+         * (instances.delete)
+         *
+         * @param string $name Required. Name of the instance. Use the following
+         * structure in your request: `organizations/{org}/instances/{instance}`.
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets the details for an Apigee runtime instance. **Note:** Not supported for
+         * Apigee hybrid. (instances.get)
+         *
+         * @param string $name Required. Name of the instance. Use the following
+         * structure in your request: `organizations/{org}/instances/{instance}`.
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudApigeeV1Instance
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists all Apigee runtime instances for the organization. **Note:** Not
+         * supported for Apigee hybrid. (instances.listOrganizationsInstances)
+         *
+         * @param string $parent Required. Name of the organization. Use the following
+         * structure in your request: `organizations/{org}`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Maximum number of instances to return. Defaults to
+         * 25.
+         * @opt_param string pageToken Page token, returned from a previous
+         * ListInstances call, that you can use to retrieve the next page of content.
+         * @return GoogleCloudApigeeV1ListInstancesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listOrganizationsInstances($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates an Apigee runtime instance. You can update the fields described in
+         * NodeConfig. No other fields will be updated. **Note:** Not supported for
+         * Apigee hybrid. (instances.patch)
+         *
+         * @param string $name Required. Name of the instance. Use the following
+         * structure in your request: `organizations/{org}/instances/{instance}`.
+         * @param GoogleCloudApigeeV1Instance $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask List of fields to be updated.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, GoogleCloudApigeeV1Instance $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Reports the latest status for a runtime instance. (instances.reportStatus)
+         *
+         * @param string $instance The name of the instance reporting this status. For
+         * SaaS the request will be rejected if no instance exists under this name.
+         * Format is organizations/{org}/instances/{instance}
+         * @param GoogleCloudApigeeV1ReportInstanceStatusRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudApigeeV1ReportInstanceStatusResponse
+         * @throws \Google\Service\Exception
+         */
+        public function reportStatus($instance, GoogleCloudApigeeV1ReportInstanceStatusRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes an Apigee runtime instance. The instance stops serving requests and
-     * the runtime data is deleted. **Note:** Not supported for Apigee hybrid.
-     * (instances.delete)
-     *
-     * @param string $name Required. Name of the instance. Use the following
-     * structure in your request: `organizations/{org}/instances/{instance}`.
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Apigee\Resource\OrganizationsInstances registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets the details for an Apigee runtime instance. **Note:** Not supported for
-     * Apigee hybrid. (instances.get)
-     *
-     * @param string $name Required. Name of the instance. Use the following
-     * structure in your request: `organizations/{org}/instances/{instance}`.
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudApigeeV1Instance
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists all Apigee runtime instances for the organization. **Note:** Not
-     * supported for Apigee hybrid. (instances.listOrganizationsInstances)
-     *
-     * @param string $parent Required. Name of the organization. Use the following
-     * structure in your request: `organizations/{org}`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Maximum number of instances to return. Defaults to
-     * 25.
-     * @opt_param string pageToken Page token, returned from a previous
-     * ListInstances call, that you can use to retrieve the next page of content.
-     * @return GoogleCloudApigeeV1ListInstancesResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listOrganizationsInstances($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates an Apigee runtime instance. You can update the fields described in
-     * NodeConfig. No other fields will be updated. **Note:** Not supported for
-     * Apigee hybrid. (instances.patch)
-     *
-     * @param string $name Required. Name of the instance. Use the following
-     * structure in your request: `organizations/{org}/instances/{instance}`.
-     * @param GoogleCloudApigeeV1Instance $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask List of fields to be updated.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, GoogleCloudApigeeV1Instance $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Reports the latest status for a runtime instance. (instances.reportStatus)
-     *
-     * @param string $instance The name of the instance reporting this status. For
-     * SaaS the request will be rejected if no instance exists under this name.
-     * Format is organizations/{org}/instances/{instance}
-     * @param GoogleCloudApigeeV1ReportInstanceStatusRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudApigeeV1ReportInstanceStatusResponse
-     * @throws \Google\Service\Exception
-     */
-    public function reportStatus($instance, GoogleCloudApigeeV1ReportInstanceStatusRequest $postBody, $optParams = [])
+    class Google_Service_Apigee_Resource_OrganizationsInstances extends \Google\Service\Apigee\Resource\OrganizationsInstances
     {
     }
 }

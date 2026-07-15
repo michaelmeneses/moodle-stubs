@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudVideoIntelligence;
-
-class GoogleCloudVideointelligenceV1beta2FaceSegment extends \Google\Model
-{
-    protected $segmentType = GoogleCloudVideointelligenceV1beta2VideoSegment::class;
-    protected $segmentDataType = '';
-    /**
-     * Video segment where a face was detected.
-     *
-     * @param GoogleCloudVideointelligenceV1beta2VideoSegment $segment
-     */
-    public function setSegment(GoogleCloudVideointelligenceV1beta2VideoSegment $segment)
+namespace Google\Service\CloudVideoIntelligence {
+    class GoogleCloudVideointelligenceV1beta2FaceSegment extends \Google\Model
     {
+        protected $segmentType = GoogleCloudVideointelligenceV1beta2VideoSegment::class;
+        protected $segmentDataType = '';
+        /**
+         * Video segment where a face was detected.
+         *
+         * @param GoogleCloudVideointelligenceV1beta2VideoSegment $segment
+         */
+        public function setSegment(GoogleCloudVideointelligenceV1beta2VideoSegment $segment)
+        {
+        }
+        /**
+         * @return GoogleCloudVideointelligenceV1beta2VideoSegment
+         */
+        public function getSegment()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudVideointelligenceV1beta2VideoSegment
+     * Runtime class alias of \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1beta2FaceSegment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSegment()
+    class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1beta2FaceSegment extends \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1beta2FaceSegment
     {
     }
 }

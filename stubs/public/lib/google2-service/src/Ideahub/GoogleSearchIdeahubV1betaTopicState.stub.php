@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Ideahub;
-
-class GoogleSearchIdeahubV1betaTopicState extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $dismissed;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var bool
-     */
-    public $saved;
-    /**
-     * @param bool
-     */
-    public function setDismissed($dismissed)
+namespace Google\Service\Ideahub {
+    class GoogleSearchIdeahubV1betaTopicState extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $dismissed;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var bool
+         */
+        public $saved;
+        /**
+         * @param bool
+         */
+        public function setDismissed($dismissed)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDismissed()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setSaved($saved)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSaved()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Ideahub\GoogleSearchIdeahubV1betaTopicState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDismissed()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setSaved($saved)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSaved()
+    class Google_Service_Ideahub_GoogleSearchIdeahubV1betaTopicState extends \Google\Service\Ideahub\GoogleSearchIdeahubV1betaTopicState
     {
     }
 }

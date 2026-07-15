@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1ResourceConfig extends \Google\Model
-{
-    /**
-     * Default unspecified action type.
-     */
-    public const ACTION_TYPE_ACTION_TYPE_UNSPECIFIED = 'ACTION_TYPE_UNSPECIFIED';
-    /**
-     * Action type for sync metadata.
-     */
-    public const ACTION_TYPE_SYNC_METADATA = 'SYNC_METADATA';
-    /**
-     * Action type for sync runtime data.
-     */
-    public const ACTION_TYPE_SYNC_RUNTIME_DATA = 'SYNC_RUNTIME_DATA';
-    /**
-     * Output only. The type of the action.
-     *
-     * @var string
-     */
-    public $actionType;
-    /**
-     * Output only. The pubsub topic to publish the data to. Format is
-     * projects/{project}/topics/{topic}
-     *
-     * @var string
-     */
-    public $pubsubTopic;
-    /**
-     * Output only. The type of the action.
-     *
-     * Accepted values: ACTION_TYPE_UNSPECIFIED, SYNC_METADATA, SYNC_RUNTIME_DATA
-     *
-     * @param self::ACTION_TYPE_* $actionType
-     */
-    public function setActionType($actionType)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1ResourceConfig extends \Google\Model
     {
+        /**
+         * Default unspecified action type.
+         */
+        public const ACTION_TYPE_ACTION_TYPE_UNSPECIFIED = 'ACTION_TYPE_UNSPECIFIED';
+        /**
+         * Action type for sync metadata.
+         */
+        public const ACTION_TYPE_SYNC_METADATA = 'SYNC_METADATA';
+        /**
+         * Action type for sync runtime data.
+         */
+        public const ACTION_TYPE_SYNC_RUNTIME_DATA = 'SYNC_RUNTIME_DATA';
+        /**
+         * Output only. The type of the action.
+         *
+         * @var string
+         */
+        public $actionType;
+        /**
+         * Output only. The pubsub topic to publish the data to. Format is
+         * projects/{project}/topics/{topic}
+         *
+         * @var string
+         */
+        public $pubsubTopic;
+        /**
+         * Output only. The type of the action.
+         *
+         * Accepted values: ACTION_TYPE_UNSPECIFIED, SYNC_METADATA, SYNC_RUNTIME_DATA
+         *
+         * @param self::ACTION_TYPE_* $actionType
+         */
+        public function setActionType($actionType)
+        {
+        }
+        /**
+         * @return self::ACTION_TYPE_*
+         */
+        public function getActionType()
+        {
+        }
+        /**
+         * Output only. The pubsub topic to publish the data to. Format is
+         * projects/{project}/topics/{topic}
+         *
+         * @param string $pubsubTopic
+         */
+        public function setPubsubTopic($pubsubTopic)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPubsubTopic()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::ACTION_TYPE_*
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1ResourceConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActionType()
-    {
-    }
-    /**
-     * Output only. The pubsub topic to publish the data to. Format is
-     * projects/{project}/topics/{topic}
-     *
-     * @param string $pubsubTopic
-     */
-    public function setPubsubTopic($pubsubTopic)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPubsubTopic()
+    class Google_Service_APIhub_GoogleCloudApihubV1ResourceConfig extends \Google\Service\APIhub\GoogleCloudApihubV1ResourceConfig
     {
     }
 }

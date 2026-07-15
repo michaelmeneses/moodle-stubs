@@ -21,79 +21,88 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CertificateManager;
-
-class CNAME extends \Google\Collection
-{
-    protected $collection_key = 'resolvedData';
-    /**
-     * Output only. The expected value of the CNAME record for the domain, equals
-     * to `dns_resource_record.data` in the corresponding `DnsAuthorization`.
-     *
-     * @var string
-     */
-    public $expectedData;
-    /**
-     * Output only. The name of the CNAME record for the domain, equals to
-     * `dns_resource_record.name` in the corresponding `DnsAuthorization`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The resolved CNAME chain. Empty list if the CNAME record for
-     * `CNAME.name` is not found. Otherwise the first item is the value of the
-     * CNAME record for `CNAME.name`. If the CNAME chain is longer, the second
-     * item is the value of the CNAME record for the first item, and so on.
-     *
-     * @var string[]
-     */
-    public $resolvedData;
-    /**
-     * Output only. The expected value of the CNAME record for the domain, equals
-     * to `dns_resource_record.data` in the corresponding `DnsAuthorization`.
-     *
-     * @param string $expectedData
-     */
-    public function setExpectedData($expectedData)
+namespace Google\Service\CertificateManager {
+    class CNAME extends \Google\Collection
     {
+        protected $collection_key = 'resolvedData';
+        /**
+         * Output only. The expected value of the CNAME record for the domain, equals
+         * to `dns_resource_record.data` in the corresponding `DnsAuthorization`.
+         *
+         * @var string
+         */
+        public $expectedData;
+        /**
+         * Output only. The name of the CNAME record for the domain, equals to
+         * `dns_resource_record.name` in the corresponding `DnsAuthorization`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The resolved CNAME chain. Empty list if the CNAME record for
+         * `CNAME.name` is not found. Otherwise the first item is the value of the
+         * CNAME record for `CNAME.name`. If the CNAME chain is longer, the second
+         * item is the value of the CNAME record for the first item, and so on.
+         *
+         * @var string[]
+         */
+        public $resolvedData;
+        /**
+         * Output only. The expected value of the CNAME record for the domain, equals
+         * to `dns_resource_record.data` in the corresponding `DnsAuthorization`.
+         *
+         * @param string $expectedData
+         */
+        public function setExpectedData($expectedData)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpectedData()
+        {
+        }
+        /**
+         * Output only. The name of the CNAME record for the domain, equals to
+         * `dns_resource_record.name` in the corresponding `DnsAuthorization`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The resolved CNAME chain. Empty list if the CNAME record for
+         * `CNAME.name` is not found. Otherwise the first item is the value of the
+         * CNAME record for `CNAME.name`. If the CNAME chain is longer, the second
+         * item is the value of the CNAME record for the first item, and so on.
+         *
+         * @param string[] $resolvedData
+         */
+        public function setResolvedData($resolvedData)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getResolvedData()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CertificateManager\CNAME registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExpectedData()
-    {
-    }
-    /**
-     * Output only. The name of the CNAME record for the domain, equals to
-     * `dns_resource_record.name` in the corresponding `DnsAuthorization`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The resolved CNAME chain. Empty list if the CNAME record for
-     * `CNAME.name` is not found. Otherwise the first item is the value of the
-     * CNAME record for `CNAME.name`. If the CNAME chain is longer, the second
-     * item is the value of the CNAME record for the first item, and so on.
-     *
-     * @param string[] $resolvedData
-     */
-    public function setResolvedData($resolvedData)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getResolvedData()
+    class Google_Service_CertificateManager_CNAME extends \Google\Service\CertificateManager\CNAME
     {
     }
 }

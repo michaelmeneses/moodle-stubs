@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vault;
-
-class RemoveHeldAccountsRequest extends \Google\Collection
-{
-    protected $collection_key = 'accountIds';
-    /**
-     * The account IDs of the accounts to remove from the hold.
-     *
-     * @var string[]
-     */
-    public $accountIds;
-    /**
-     * The account IDs of the accounts to remove from the hold.
-     *
-     * @param string[] $accountIds
-     */
-    public function setAccountIds($accountIds)
+namespace Google\Service\Vault {
+    class RemoveHeldAccountsRequest extends \Google\Collection
     {
+        protected $collection_key = 'accountIds';
+        /**
+         * The account IDs of the accounts to remove from the hold.
+         *
+         * @var string[]
+         */
+        public $accountIds;
+        /**
+         * The account IDs of the accounts to remove from the hold.
+         *
+         * @param string[] $accountIds
+         */
+        public function setAccountIds($accountIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAccountIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Vault\RemoveHeldAccountsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountIds()
+    class Google_Service_Vault_RemoveHeldAccountsRequest extends \Google\Service\Vault\RemoveHeldAccountsRequest
     {
     }
 }

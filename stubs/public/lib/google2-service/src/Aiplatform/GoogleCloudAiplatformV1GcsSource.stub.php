@@ -21,33 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1GcsSource extends \Google\Collection
-{
-    protected $collection_key = 'uris';
-    /**
-     * Required. Google Cloud Storage URI(-s) to the input file(s). May contain
-     * wildcards. For more information on wildcards, see
-     * https://cloud.google.com/storage/docs/wildcards.
-     *
-     * @var string[]
-     */
-    public $uris;
-    /**
-     * Required. Google Cloud Storage URI(-s) to the input file(s). May contain
-     * wildcards. For more information on wildcards, see
-     * https://cloud.google.com/storage/docs/wildcards.
-     *
-     * @param string[] $uris
-     */
-    public function setUris($uris)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1GcsSource extends \Google\Collection
     {
+        protected $collection_key = 'uris';
+        /**
+         * Required. Google Cloud Storage URI(-s) to the input file(s). May contain
+         * wildcards. For more information on wildcards, see
+         * https://cloud.google.com/storage/docs/wildcards.
+         *
+         * @var string[]
+         */
+        public $uris;
+        /**
+         * Required. Google Cloud Storage URI(-s) to the input file(s). May contain
+         * wildcards. For more information on wildcards, see
+         * https://cloud.google.com/storage/docs/wildcards.
+         *
+         * @param string[] $uris
+         */
+        public function setUris($uris)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUris()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1GcsSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUris()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1GcsSource extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1GcsSource
     {
     }
 }

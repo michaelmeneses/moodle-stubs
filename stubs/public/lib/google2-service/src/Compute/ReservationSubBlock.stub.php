@@ -21,304 +21,313 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class ReservationSubBlock extends \Google\Model
-{
-    /**
-     * Resources are being allocated for the reservation subBlock.
-     */
-    public const STATUS_CREATING = 'CREATING';
-    /**
-     * Reservation subBlock is currently being deleted.
-     */
-    public const STATUS_DELETING = 'DELETING';
-    public const STATUS_INVALID = 'INVALID';
-    /**
-     * Reservation subBlock has allocated all its resources.
-     */
-    public const STATUS_READY = 'READY';
-    protected $acceleratorTopologiesInfoType = AcceleratorTopologiesInfo::class;
-    protected $acceleratorTopologiesInfoDataType = '';
-    /**
-     * Output only. [Output Only] The number of hosts that are allocated in this
-     * reservation subBlock.
-     *
-     * @var int
-     */
-    public $count;
-    /**
-     * Output only. [Output Only] Creation timestamp inRFC3339 text format.
-     *
-     * @var string
-     */
-    public $creationTimestamp;
-    protected $healthInfoType = ReservationSubBlockHealthInfo::class;
-    protected $healthInfoDataType = '';
-    /**
-     * Output only. [Output Only] The unique identifier for the resource. This
-     * identifier is defined by the server.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Output only. [Output Only] The number of instances that are currently in
-     * use on this reservation subBlock.
-     *
-     * @var int
-     */
-    public $inUseCount;
-    /**
-     * Output only. [Output Only] Type of the resource.
-     * Alwayscompute#reservationSubBlock for reservation subBlocks.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Output only. [Output Only] The name of this reservation subBlock generated
-     * by Google Compute Engine. The name must be 1-63 characters long, and comply
-     * with RFC1035 @pattern [a-z](?:[-a-z0-9]{0,61}[a-z0-9])?
-     *
-     * @var string
-     */
-    public $name;
-    protected $physicalTopologyType = ReservationSubBlockPhysicalTopology::class;
-    protected $physicalTopologyDataType = '';
-    protected $reservationSubBlockMaintenanceType = GroupMaintenanceInfo::class;
-    protected $reservationSubBlockMaintenanceDataType = '';
-    /**
-     * Output only. [Output Only] Server-defined fully-qualified URL for this
-     * resource.
-     *
-     * @var string
-     */
-    public $selfLink;
-    /**
-     * Output only. [Output Only] Server-defined URL for this resource with the
-     * resource id.
-     *
-     * @var string
-     */
-    public $selfLinkWithId;
-    /**
-     * Output only. [Output Only] Status of the reservation subBlock.
-     *
-     * @var string
-     */
-    public $status;
-    /**
-     * Output only. [Output Only] Zone in which the reservation subBlock resides.
-     *
-     * @var string
-     */
-    public $zone;
-    /**
-     * Output only. [Output Only] Slice info for the reservation subBlock.
-     *
-     * @param AcceleratorTopologiesInfo $acceleratorTopologiesInfo
-     */
-    public function setAcceleratorTopologiesInfo(AcceleratorTopologiesInfo $acceleratorTopologiesInfo)
+namespace Google\Service\Compute {
+    class ReservationSubBlock extends \Google\Model
     {
+        /**
+         * Resources are being allocated for the reservation subBlock.
+         */
+        public const STATUS_CREATING = 'CREATING';
+        /**
+         * Reservation subBlock is currently being deleted.
+         */
+        public const STATUS_DELETING = 'DELETING';
+        public const STATUS_INVALID = 'INVALID';
+        /**
+         * Reservation subBlock has allocated all its resources.
+         */
+        public const STATUS_READY = 'READY';
+        protected $acceleratorTopologiesInfoType = AcceleratorTopologiesInfo::class;
+        protected $acceleratorTopologiesInfoDataType = '';
+        /**
+         * Output only. [Output Only] The number of hosts that are allocated in this
+         * reservation subBlock.
+         *
+         * @var int
+         */
+        public $count;
+        /**
+         * Output only. [Output Only] Creation timestamp inRFC3339 text format.
+         *
+         * @var string
+         */
+        public $creationTimestamp;
+        protected $healthInfoType = ReservationSubBlockHealthInfo::class;
+        protected $healthInfoDataType = '';
+        /**
+         * Output only. [Output Only] The unique identifier for the resource. This
+         * identifier is defined by the server.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Output only. [Output Only] The number of instances that are currently in
+         * use on this reservation subBlock.
+         *
+         * @var int
+         */
+        public $inUseCount;
+        /**
+         * Output only. [Output Only] Type of the resource.
+         * Alwayscompute#reservationSubBlock for reservation subBlocks.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Output only. [Output Only] The name of this reservation subBlock generated
+         * by Google Compute Engine. The name must be 1-63 characters long, and comply
+         * with RFC1035 @pattern [a-z](?:[-a-z0-9]{0,61}[a-z0-9])?
+         *
+         * @var string
+         */
+        public $name;
+        protected $physicalTopologyType = ReservationSubBlockPhysicalTopology::class;
+        protected $physicalTopologyDataType = '';
+        protected $reservationSubBlockMaintenanceType = GroupMaintenanceInfo::class;
+        protected $reservationSubBlockMaintenanceDataType = '';
+        /**
+         * Output only. [Output Only] Server-defined fully-qualified URL for this
+         * resource.
+         *
+         * @var string
+         */
+        public $selfLink;
+        /**
+         * Output only. [Output Only] Server-defined URL for this resource with the
+         * resource id.
+         *
+         * @var string
+         */
+        public $selfLinkWithId;
+        /**
+         * Output only. [Output Only] Status of the reservation subBlock.
+         *
+         * @var string
+         */
+        public $status;
+        /**
+         * Output only. [Output Only] Zone in which the reservation subBlock resides.
+         *
+         * @var string
+         */
+        public $zone;
+        /**
+         * Output only. [Output Only] Slice info for the reservation subBlock.
+         *
+         * @param AcceleratorTopologiesInfo $acceleratorTopologiesInfo
+         */
+        public function setAcceleratorTopologiesInfo(AcceleratorTopologiesInfo $acceleratorTopologiesInfo)
+        {
+        }
+        /**
+         * @return AcceleratorTopologiesInfo
+         */
+        public function getAcceleratorTopologiesInfo()
+        {
+        }
+        /**
+         * Output only. [Output Only] The number of hosts that are allocated in this
+         * reservation subBlock.
+         *
+         * @param int $count
+         */
+        public function setCount($count)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCount()
+        {
+        }
+        /**
+         * Output only. [Output Only] Creation timestamp inRFC3339 text format.
+         *
+         * @param string $creationTimestamp
+         */
+        public function setCreationTimestamp($creationTimestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreationTimestamp()
+        {
+        }
+        /**
+         * Output only. [Output Only] Health information for the reservation subBlock.
+         *
+         * @param ReservationSubBlockHealthInfo $healthInfo
+         */
+        public function setHealthInfo(ReservationSubBlockHealthInfo $healthInfo)
+        {
+        }
+        /**
+         * @return ReservationSubBlockHealthInfo
+         */
+        public function getHealthInfo()
+        {
+        }
+        /**
+         * Output only. [Output Only] The unique identifier for the resource. This
+         * identifier is defined by the server.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Output only. [Output Only] The number of instances that are currently in
+         * use on this reservation subBlock.
+         *
+         * @param int $inUseCount
+         */
+        public function setInUseCount($inUseCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getInUseCount()
+        {
+        }
+        /**
+         * Output only. [Output Only] Type of the resource.
+         * Alwayscompute#reservationSubBlock for reservation subBlocks.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Output only. [Output Only] The name of this reservation subBlock generated
+         * by Google Compute Engine. The name must be 1-63 characters long, and comply
+         * with RFC1035 @pattern [a-z](?:[-a-z0-9]{0,61}[a-z0-9])?
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. [Output Only] The physical topology of the reservation
+         * subBlock.
+         *
+         * @param ReservationSubBlockPhysicalTopology $physicalTopology
+         */
+        public function setPhysicalTopology(ReservationSubBlockPhysicalTopology $physicalTopology)
+        {
+        }
+        /**
+         * @return ReservationSubBlockPhysicalTopology
+         */
+        public function getPhysicalTopology()
+        {
+        }
+        /**
+         * Output only. Maintenance information for this reservation subBlock.
+         *
+         * @param GroupMaintenanceInfo $reservationSubBlockMaintenance
+         */
+        public function setReservationSubBlockMaintenance(GroupMaintenanceInfo $reservationSubBlockMaintenance)
+        {
+        }
+        /**
+         * @return GroupMaintenanceInfo
+         */
+        public function getReservationSubBlockMaintenance()
+        {
+        }
+        /**
+         * Output only. [Output Only] Server-defined fully-qualified URL for this
+         * resource.
+         *
+         * @param string $selfLink
+         */
+        public function setSelfLink($selfLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelfLink()
+        {
+        }
+        /**
+         * Output only. [Output Only] Server-defined URL for this resource with the
+         * resource id.
+         *
+         * @param string $selfLinkWithId
+         */
+        public function setSelfLinkWithId($selfLinkWithId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelfLinkWithId()
+        {
+        }
+        /**
+         * Output only. [Output Only] Status of the reservation subBlock.
+         *
+         * Accepted values: CREATING, DELETING, INVALID, READY
+         *
+         * @param self::STATUS_* $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return self::STATUS_*
+         */
+        public function getStatus()
+        {
+        }
+        /**
+         * Output only. [Output Only] Zone in which the reservation subBlock resides.
+         *
+         * @param string $zone
+         */
+        public function setZone($zone)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getZone()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AcceleratorTopologiesInfo
+     * Runtime class alias of \Google\Service\Compute\ReservationSubBlock registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAcceleratorTopologiesInfo()
-    {
-    }
-    /**
-     * Output only. [Output Only] The number of hosts that are allocated in this
-     * reservation subBlock.
-     *
-     * @param int $count
-     */
-    public function setCount($count)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getCount()
-    {
-    }
-    /**
-     * Output only. [Output Only] Creation timestamp inRFC3339 text format.
-     *
-     * @param string $creationTimestamp
-     */
-    public function setCreationTimestamp($creationTimestamp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreationTimestamp()
-    {
-    }
-    /**
-     * Output only. [Output Only] Health information for the reservation subBlock.
-     *
-     * @param ReservationSubBlockHealthInfo $healthInfo
-     */
-    public function setHealthInfo(ReservationSubBlockHealthInfo $healthInfo)
-    {
-    }
-    /**
-     * @return ReservationSubBlockHealthInfo
-     */
-    public function getHealthInfo()
-    {
-    }
-    /**
-     * Output only. [Output Only] The unique identifier for the resource. This
-     * identifier is defined by the server.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Output only. [Output Only] The number of instances that are currently in
-     * use on this reservation subBlock.
-     *
-     * @param int $inUseCount
-     */
-    public function setInUseCount($inUseCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getInUseCount()
-    {
-    }
-    /**
-     * Output only. [Output Only] Type of the resource.
-     * Alwayscompute#reservationSubBlock for reservation subBlocks.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Output only. [Output Only] The name of this reservation subBlock generated
-     * by Google Compute Engine. The name must be 1-63 characters long, and comply
-     * with RFC1035 @pattern [a-z](?:[-a-z0-9]{0,61}[a-z0-9])?
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. [Output Only] The physical topology of the reservation
-     * subBlock.
-     *
-     * @param ReservationSubBlockPhysicalTopology $physicalTopology
-     */
-    public function setPhysicalTopology(ReservationSubBlockPhysicalTopology $physicalTopology)
-    {
-    }
-    /**
-     * @return ReservationSubBlockPhysicalTopology
-     */
-    public function getPhysicalTopology()
-    {
-    }
-    /**
-     * Output only. Maintenance information for this reservation subBlock.
-     *
-     * @param GroupMaintenanceInfo $reservationSubBlockMaintenance
-     */
-    public function setReservationSubBlockMaintenance(GroupMaintenanceInfo $reservationSubBlockMaintenance)
-    {
-    }
-    /**
-     * @return GroupMaintenanceInfo
-     */
-    public function getReservationSubBlockMaintenance()
-    {
-    }
-    /**
-     * Output only. [Output Only] Server-defined fully-qualified URL for this
-     * resource.
-     *
-     * @param string $selfLink
-     */
-    public function setSelfLink($selfLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelfLink()
-    {
-    }
-    /**
-     * Output only. [Output Only] Server-defined URL for this resource with the
-     * resource id.
-     *
-     * @param string $selfLinkWithId
-     */
-    public function setSelfLinkWithId($selfLinkWithId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelfLinkWithId()
-    {
-    }
-    /**
-     * Output only. [Output Only] Status of the reservation subBlock.
-     *
-     * Accepted values: CREATING, DELETING, INVALID, READY
-     *
-     * @param self::STATUS_* $status
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return self::STATUS_*
-     */
-    public function getStatus()
-    {
-    }
-    /**
-     * Output only. [Output Only] Zone in which the reservation subBlock resides.
-     *
-     * @param string $zone
-     */
-    public function setZone($zone)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getZone()
+    class Google_Service_Compute_ReservationSubBlock extends \Google\Service\Compute\ReservationSubBlock
     {
     }
 }

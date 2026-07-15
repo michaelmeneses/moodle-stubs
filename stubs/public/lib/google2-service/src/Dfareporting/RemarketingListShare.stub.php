@@ -21,91 +21,100 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class RemarketingListShare extends \Google\Collection
-{
-    protected $collection_key = 'sharedAdvertiserIds';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#remarketingListShare".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Remarketing list ID. This is a read-only, auto-generated field.
-     *
-     * @var string
-     */
-    public $remarketingListId;
-    /**
-     * Accounts that the remarketing list is shared with.
-     *
-     * @var string[]
-     */
-    public $sharedAccountIds;
-    /**
-     * Advertisers that the remarketing list is shared with.
-     *
-     * @var string[]
-     */
-    public $sharedAdvertiserIds;
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#remarketingListShare".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Dfareporting {
+    class RemarketingListShare extends \Google\Collection
     {
+        protected $collection_key = 'sharedAdvertiserIds';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#remarketingListShare".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Remarketing list ID. This is a read-only, auto-generated field.
+         *
+         * @var string
+         */
+        public $remarketingListId;
+        /**
+         * Accounts that the remarketing list is shared with.
+         *
+         * @var string[]
+         */
+        public $sharedAccountIds;
+        /**
+         * Advertisers that the remarketing list is shared with.
+         *
+         * @var string[]
+         */
+        public $sharedAdvertiserIds;
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#remarketingListShare".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Remarketing list ID. This is a read-only, auto-generated field.
+         *
+         * @param string $remarketingListId
+         */
+        public function setRemarketingListId($remarketingListId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRemarketingListId()
+        {
+        }
+        /**
+         * Accounts that the remarketing list is shared with.
+         *
+         * @param string[] $sharedAccountIds
+         */
+        public function setSharedAccountIds($sharedAccountIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSharedAccountIds()
+        {
+        }
+        /**
+         * Advertisers that the remarketing list is shared with.
+         *
+         * @param string[] $sharedAdvertiserIds
+         */
+        public function setSharedAdvertiserIds($sharedAdvertiserIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSharedAdvertiserIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\RemarketingListShare registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * Remarketing list ID. This is a read-only, auto-generated field.
-     *
-     * @param string $remarketingListId
-     */
-    public function setRemarketingListId($remarketingListId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRemarketingListId()
-    {
-    }
-    /**
-     * Accounts that the remarketing list is shared with.
-     *
-     * @param string[] $sharedAccountIds
-     */
-    public function setSharedAccountIds($sharedAccountIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSharedAccountIds()
-    {
-    }
-    /**
-     * Advertisers that the remarketing list is shared with.
-     *
-     * @param string[] $sharedAdvertiserIds
-     */
-    public function setSharedAdvertiserIds($sharedAdvertiserIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSharedAdvertiserIds()
+    class Google_Service_Dfareporting_RemarketingListShare extends \Google\Service\Dfareporting\RemarketingListShare
     {
     }
 }

@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRedis;
-
-class ClusterMaintenancePolicy extends \Google\Collection
-{
-    protected $collection_key = 'weeklyMaintenanceWindow';
-    /**
-     * Output only. The time when the policy was created i.e. Maintenance Window
-     * or Deny Period was assigned.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Output only. The time when the policy was updated i.e. Maintenance Window
-     * or Deny Period was updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    protected $weeklyMaintenanceWindowType = ClusterWeeklyMaintenanceWindow::class;
-    protected $weeklyMaintenanceWindowDataType = 'array';
-    /**
-     * Output only. The time when the policy was created i.e. Maintenance Window
-     * or Deny Period was assigned.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\CloudRedis {
+    class ClusterMaintenancePolicy extends \Google\Collection
     {
+        protected $collection_key = 'weeklyMaintenanceWindow';
+        /**
+         * Output only. The time when the policy was created i.e. Maintenance Window
+         * or Deny Period was assigned.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Output only. The time when the policy was updated i.e. Maintenance Window
+         * or Deny Period was updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        protected $weeklyMaintenanceWindowType = ClusterWeeklyMaintenanceWindow::class;
+        protected $weeklyMaintenanceWindowDataType = 'array';
+        /**
+         * Output only. The time when the policy was created i.e. Maintenance Window
+         * or Deny Period was assigned.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. The time when the policy was updated i.e. Maintenance Window
+         * or Deny Period was updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
+        /**
+         * Optional. Maintenance window that is applied to resources covered by this
+         * policy. Minimum 1. For the current version, the maximum number of
+         * weekly_maintenance_window is expected to be one.
+         *
+         * @param ClusterWeeklyMaintenanceWindow[] $weeklyMaintenanceWindow
+         */
+        public function setWeeklyMaintenanceWindow($weeklyMaintenanceWindow)
+        {
+        }
+        /**
+         * @return ClusterWeeklyMaintenanceWindow[]
+         */
+        public function getWeeklyMaintenanceWindow()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRedis\ClusterMaintenancePolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. The time when the policy was updated i.e. Maintenance Window
-     * or Deny Period was updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
-    {
-    }
-    /**
-     * Optional. Maintenance window that is applied to resources covered by this
-     * policy. Minimum 1. For the current version, the maximum number of
-     * weekly_maintenance_window is expected to be one.
-     *
-     * @param ClusterWeeklyMaintenanceWindow[] $weeklyMaintenanceWindow
-     */
-    public function setWeeklyMaintenanceWindow($weeklyMaintenanceWindow)
-    {
-    }
-    /**
-     * @return ClusterWeeklyMaintenanceWindow[]
-     */
-    public function getWeeklyMaintenanceWindow()
+    class Google_Service_CloudRedis_ClusterMaintenancePolicy extends \Google\Service\CloudRedis\ClusterMaintenancePolicy
     {
     }
 }

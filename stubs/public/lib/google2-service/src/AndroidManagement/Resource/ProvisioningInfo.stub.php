@@ -21,30 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement\Resource;
-
-/**
- * The "provisioningInfo" collection of methods.
- * Typical usage is:
- *  <code>
- *   $androidmanagementService = new Google\Service\AndroidManagement(...);
- *   $provisioningInfo = $androidmanagementService->provisioningInfo;
- *  </code>
- */
-class ProvisioningInfo extends \Google\Service\Resource
-{
+namespace Google\Service\AndroidManagement\Resource {
+    use Google\Service\AndroidManagement\ProvisioningInfo as ProvisioningInfoModel;
     /**
-     * Get the device provisioning information by the identifier provided in the
-     * sign-in url. (provisioningInfo.get)
-     *
-     * @param string $name Required. The identifier that Android Device Policy
-     * passes to the 3P sign-in page in the form of
-     * provisioningInfo/{provisioning_info}.
-     * @param array $optParams Optional parameters.
-     * @return ProvisioningInfoModel
-     * @throws \Google\Service\Exception
+     * The "provisioningInfo" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $androidmanagementService = new Google\Service\AndroidManagement(...);
+     *   $provisioningInfo = $androidmanagementService->provisioningInfo;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class ProvisioningInfo extends \Google\Service\Resource
+    {
+        /**
+         * Get the device provisioning information by the identifier provided in the
+         * sign-in url. (provisioningInfo.get)
+         *
+         * @param string $name Required. The identifier that Android Device Policy
+         * passes to the 3P sign-in page in the form of
+         * provisioningInfo/{provisioning_info}.
+         * @param array $optParams Optional parameters.
+         * @return ProvisioningInfoModel
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AndroidManagement\Resource\ProvisioningInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AndroidManagement_Resource_ProvisioningInfo extends \Google\Service\AndroidManagement\Resource\ProvisioningInfo
     {
     }
 }

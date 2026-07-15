@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class AdPolicyTopicEvidenceRegionalRequirementsRegionalRequirementsEntry extends \Google\Collection
-{
-    protected $collection_key = 'countryRestrictions';
-    protected $countryRestrictionsType = AdPolicyCriterionRestriction::class;
-    protected $countryRestrictionsDataType = 'array';
-    /**
-     * The legal policy that is being violated.
-     *
-     * @var string
-     */
-    public $legalPolicy;
-    /**
-     * The countries restricted due to the legal policy.
-     *
-     * @param AdPolicyCriterionRestriction[] $countryRestrictions
-     */
-    public function setCountryRestrictions($countryRestrictions)
+namespace Google\Service\DisplayVideo {
+    class AdPolicyTopicEvidenceRegionalRequirementsRegionalRequirementsEntry extends \Google\Collection
     {
+        protected $collection_key = 'countryRestrictions';
+        protected $countryRestrictionsType = AdPolicyCriterionRestriction::class;
+        protected $countryRestrictionsDataType = 'array';
+        /**
+         * The legal policy that is being violated.
+         *
+         * @var string
+         */
+        public $legalPolicy;
+        /**
+         * The countries restricted due to the legal policy.
+         *
+         * @param AdPolicyCriterionRestriction[] $countryRestrictions
+         */
+        public function setCountryRestrictions($countryRestrictions)
+        {
+        }
+        /**
+         * @return AdPolicyCriterionRestriction[]
+         */
+        public function getCountryRestrictions()
+        {
+        }
+        /**
+         * The legal policy that is being violated.
+         *
+         * @param string $legalPolicy
+         */
+        public function setLegalPolicy($legalPolicy)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLegalPolicy()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AdPolicyCriterionRestriction[]
+     * Runtime class alias of \Google\Service\DisplayVideo\AdPolicyTopicEvidenceRegionalRequirementsRegionalRequirementsEntry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCountryRestrictions()
-    {
-    }
-    /**
-     * The legal policy that is being violated.
-     *
-     * @param string $legalPolicy
-     */
-    public function setLegalPolicy($legalPolicy)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLegalPolicy()
+    class Google_Service_DisplayVideo_AdPolicyTopicEvidenceRegionalRequirementsRegionalRequirementsEntry extends \Google\Service\DisplayVideo\AdPolicyTopicEvidenceRegionalRequirementsRegionalRequirementsEntry
     {
     }
 }

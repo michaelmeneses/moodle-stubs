@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace theme_boost\output;
 
+use context_course;
+use moodle_url;
+use html_writer;
+use get_string;
 /**
  * Renderers to align Moodle's HTML with that expected by Bootstrap
  *

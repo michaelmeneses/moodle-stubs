@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2beta1IntentMessageSuggestion extends \Google\Model
-{
-    /**
-     * Required. The text shown the in the suggestion chip.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * Required. The text shown the in the suggestion chip.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2beta1IntentMessageSuggestion extends \Google\Model
     {
+        /**
+         * Required. The text shown the in the suggestion chip.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * Required. The text shown the in the suggestion chip.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1IntentMessageSuggestion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTitle()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1IntentMessageSuggestion extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1IntentMessageSuggestion
     {
     }
 }

@@ -21,30 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Blogger\Resource;
-
-/**
- * The "blogUserInfos" collection of methods.
- * Typical usage is:
- *  <code>
- *   $bloggerService = new Google\Service\Blogger(...);
- *   $blogUserInfos = $bloggerService->blogUserInfos;
- *  </code>
- */
-class BlogUserInfos extends \Google\Service\Resource
-{
+namespace Google\Service\Blogger\Resource {
+    use Google\Service\Blogger\BlogUserInfo;
     /**
-     * Gets one blog and user info pair by blog id and user id. (blogUserInfos.get)
-     *
-     * @param string $userId
-     * @param string $blogId
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string maxPosts
-     * @return BlogUserInfo
-     * @throws \Google\Service\Exception
+     * The "blogUserInfos" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $bloggerService = new Google\Service\Blogger(...);
+     *   $blogUserInfos = $bloggerService->blogUserInfos;
+     *  </code>
      */
-    public function get($userId, $blogId, $optParams = [])
+    class BlogUserInfos extends \Google\Service\Resource
+    {
+        /**
+         * Gets one blog and user info pair by blog id and user id. (blogUserInfos.get)
+         *
+         * @param string $userId
+         * @param string $blogId
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string maxPosts
+         * @return BlogUserInfo
+         * @throws \Google\Service\Exception
+         */
+        public function get($userId, $blogId, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Blogger\Resource\BlogUserInfos registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Blogger_Resource_BlogUserInfos extends \Google\Service\Blogger\Resource\BlogUserInfos
     {
     }
 }

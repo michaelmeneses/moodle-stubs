@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2beta1SummarySuggestion extends \Google\Collection
-{
-    protected $collection_key = 'summarySections';
-    protected $summarySectionsType = GoogleCloudDialogflowV2beta1SummarySuggestionSummarySection::class;
-    protected $summarySectionsDataType = 'array';
-    /**
-     * Required. All the parts of generated summary.
-     *
-     * @param GoogleCloudDialogflowV2beta1SummarySuggestionSummarySection[] $summarySections
-     */
-    public function setSummarySections($summarySections)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2beta1SummarySuggestion extends \Google\Collection
     {
+        protected $collection_key = 'summarySections';
+        protected $summarySectionsType = GoogleCloudDialogflowV2beta1SummarySuggestionSummarySection::class;
+        protected $summarySectionsDataType = 'array';
+        /**
+         * Required. All the parts of generated summary.
+         *
+         * @param GoogleCloudDialogflowV2beta1SummarySuggestionSummarySection[] $summarySections
+         */
+        public function setSummarySections($summarySections)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2beta1SummarySuggestionSummarySection[]
+         */
+        public function getSummarySections()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowV2beta1SummarySuggestionSummarySection[]
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1SummarySuggestion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSummarySections()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1SummarySuggestion extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1SummarySuggestion
     {
     }
 }

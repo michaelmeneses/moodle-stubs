@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1FeatureOnlineStoreSpec extends \Google\Model
-{
-    /**
-     * Should not be used.
-     */
-    public const STORAGE_TYPE_STORAGE_TYPE_UNSPECIFIED = 'STORAGE_TYPE_UNSPECIFIED';
-    /**
-     * Underlsying storgae is Bigtable.
-     */
-    public const STORAGE_TYPE_BIGTABLE = 'BIGTABLE';
-    /**
-     * Underlying is optimized online server (Lightning).
-     */
-    public const STORAGE_TYPE_OPTIMIZED = 'OPTIMIZED';
-    /**
-     * Output only. Type of underlying storage for the FeatureOnlineStore.
-     *
-     * @var string
-     */
-    public $storageType;
-    /**
-     * Output only. Type of underlying storage for the FeatureOnlineStore.
-     *
-     * Accepted values: STORAGE_TYPE_UNSPECIFIED, BIGTABLE, OPTIMIZED
-     *
-     * @param self::STORAGE_TYPE_* $storageType
-     */
-    public function setStorageType($storageType)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1FeatureOnlineStoreSpec extends \Google\Model
     {
+        /**
+         * Should not be used.
+         */
+        public const STORAGE_TYPE_STORAGE_TYPE_UNSPECIFIED = 'STORAGE_TYPE_UNSPECIFIED';
+        /**
+         * Underlsying storgae is Bigtable.
+         */
+        public const STORAGE_TYPE_BIGTABLE = 'BIGTABLE';
+        /**
+         * Underlying is optimized online server (Lightning).
+         */
+        public const STORAGE_TYPE_OPTIMIZED = 'OPTIMIZED';
+        /**
+         * Output only. Type of underlying storage for the FeatureOnlineStore.
+         *
+         * @var string
+         */
+        public $storageType;
+        /**
+         * Output only. Type of underlying storage for the FeatureOnlineStore.
+         *
+         * Accepted values: STORAGE_TYPE_UNSPECIFIED, BIGTABLE, OPTIMIZED
+         *
+         * @param self::STORAGE_TYPE_* $storageType
+         */
+        public function setStorageType($storageType)
+        {
+        }
+        /**
+         * @return self::STORAGE_TYPE_*
+         */
+        public function getStorageType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::STORAGE_TYPE_*
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1FeatureOnlineStoreSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStorageType()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1FeatureOnlineStoreSpec extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1FeatureOnlineStoreSpec
     {
     }
 }

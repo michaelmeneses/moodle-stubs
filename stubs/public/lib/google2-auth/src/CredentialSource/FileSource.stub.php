@@ -23,6 +23,9 @@
  */
 namespace Google\Auth\CredentialSource;
 
+use Google\Auth\ExternalAccountCredentialSourceInterface;
+use InvalidArgumentException;
+use UnexpectedValueException;
 /**
  * Retrieve a token from a file.
  */

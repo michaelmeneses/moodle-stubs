@@ -21,113 +21,122 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class MembershipsLevelListResponse extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    /**
-     * Etag of this resource.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * Serialized EventId of the request which produced this response.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $eventId;
-    protected $itemsType = MembershipsLevel::class;
-    protected $itemsDataType = 'array';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "youtube#membershipsLevelListResponse".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The visitorId identifies the visitor.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $visitorId;
-    /**
-     * Etag of this resource.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
+namespace Google\Service\YouTube {
+    class MembershipsLevelListResponse extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        /**
+         * Etag of this resource.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * Serialized EventId of the request which produced this response.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $eventId;
+        protected $itemsType = MembershipsLevel::class;
+        protected $itemsDataType = 'array';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "youtube#membershipsLevelListResponse".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The visitorId identifies the visitor.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $visitorId;
+        /**
+         * Etag of this resource.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * Serialized EventId of the request which produced this response.
+         *
+         * @deprecated
+         * @param string $eventId
+         */
+        public function setEventId($eventId)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getEventId()
+        {
+        }
+        /**
+         * A list of pricing levels offered by a creator to the fans.
+         *
+         * @param MembershipsLevel[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return MembershipsLevel[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "youtube#membershipsLevelListResponse".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The visitorId identifies the visitor.
+         *
+         * @deprecated
+         * @param string $visitorId
+         */
+        public function setVisitorId($visitorId)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getVisitorId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\MembershipsLevelListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
-    {
-    }
-    /**
-     * Serialized EventId of the request which produced this response.
-     *
-     * @deprecated
-     * @param string $eventId
-     */
-    public function setEventId($eventId)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getEventId()
-    {
-    }
-    /**
-     * A list of pricing levels offered by a creator to the fans.
-     *
-     * @param MembershipsLevel[] $items
-     */
-    public function setItems($items)
-    {
-    }
-    /**
-     * @return MembershipsLevel[]
-     */
-    public function getItems()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "youtube#membershipsLevelListResponse".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The visitorId identifies the visitor.
-     *
-     * @deprecated
-     * @param string $visitorId
-     */
-    public function setVisitorId($visitorId)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getVisitorId()
+    class Google_Service_YouTube_MembershipsLevelListResponse extends \Google\Service\YouTube\MembershipsLevelListResponse
     {
     }
 }

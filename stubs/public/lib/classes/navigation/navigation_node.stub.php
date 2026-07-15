@@ -20,586 +20,602 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\navigation;
-
-/**
- * This class is used to represent a node in a navigation tree
- *
- * This class is used to represent a node in a navigation tree within Moodle,
- * the tree could be one of global navigation, settings navigation, or the navbar.
- * Each node can be one of two types either a Leaf (default) or a branch.
- * When a node is first created it is created as a leaf, when/if children are added
- * the node then becomes a branch.
- *
- * @package   core
- * @category  navigation
- * @copyright 2009 Sam Hemelryk
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-class navigation_node implements renderable
-{
-    /** @var int Used to identify this node a leaf (default) 0 */
-    public const NODETYPE_LEAF = 0;
-    /** @var int Used to identify this node a branch, happens with children  1 */
-    public const NODETYPE_BRANCH = 1;
-    /** @var null Unknown node type null */
-    public const TYPE_UNKNOWN = null;
-    /** @var int System node type 0 */
-    public const TYPE_ROOTNODE = 0;
-    /** @var int System node type 1 */
-    public const TYPE_SYSTEM = 1;
-    /** @var int Category node type 10 */
-    public const TYPE_CATEGORY = 10;
-    /** var int Category displayed in MyHome navigation node */
-    public const TYPE_MY_CATEGORY = 11;
-    /** @var int Course node type 20 */
-    public const TYPE_COURSE = 20;
-    /** @var int Course Structure node type 30 */
-    public const TYPE_SECTION = 30;
-    /** @var int Activity node type, e.g. Forum, Quiz 40 */
-    public const TYPE_ACTIVITY = 40;
-    /** @var int Resource node type, e.g. Link to a file, or label 50 */
-    public const TYPE_RESOURCE = 50;
-    /** @var int A custom node type, default when adding without specifing type 60 */
-    public const TYPE_CUSTOM = 60;
-    /** @var int Setting node type, used only within settings nav 70 */
-    public const TYPE_SETTING = 70;
-    /** @var int site admin branch node type, used only within settings nav 71 */
-    public const TYPE_SITE_ADMIN = 71;
-    /** @var int Setting node type, used only within settings nav 80 */
-    public const TYPE_USER = 80;
-    /** @var int Setting node type, used for containers of no importance 90 */
-    public const TYPE_CONTAINER = 90;
-    /** var int Course the current user is not enrolled in */
-    public const COURSE_OTHER = 0;
-    /** var int Course the current user is enrolled in but not viewing */
-    public const COURSE_MY = 1;
-    /** var int Course the current user is currently viewing */
-    public const COURSE_CURRENT = 2;
-    /** var string The course index page navigation node */
-    public const COURSE_INDEX_PAGE = 'courseindexpage';
-    /** @var string The name that will be used for the navigation cache */
-    protected const CACHE_NAME = 'navigation';
-    /** @var string The name that will be used for the site admin navigation cache */
-    protected const SITE_ADMIN_CACHE_NAME = 'navigationsiteadmin';
-    /** @var int Parameter to aid the coder in tracking [optional] */
-    public $id = null;
-    /** @var string|int The identifier for the node, used to retrieve the node */
-    public $key = null;
-    /** @var string|lang_string The text to use for the node */
-    public $text = null;
-    /** @var string Short text to use if requested [optional] */
-    public $shorttext = null;
-    /** @var string The title attribute for an action if one is defined */
-    public $title = null;
-    /** @var string A string that can be used to build a help button */
-    public $helpbutton = null;
-    /** @var url|action_link|null An action for the node (link) */
-    public $action = null;
-    /** @var pix_icon The path to an icon to use for this node */
-    public $icon = null;
-    /** @var int See TYPE_* constants defined for this class */
-    public $type = self::TYPE_UNKNOWN;
-    /** @var int See NODETYPE_* constants defined for this class */
-    public $nodetype = self::NODETYPE_LEAF;
-    /** @var bool If set to true the node will be collapsed by default */
-    public $collapse = false;
-    /** @var bool If set to true the node will be expanded by default */
-    public $forceopen = false;
-    /** @var array An array of CSS classes for the node */
-    public $classes = [];
-    /** @var array An array of HTML attributes for the node */
-    public $attributes = [];
-    /** @var navigation_node_collection An array of child nodes */
-    public $children = [];
-    /** @var bool If set to true the node will be recognised as active */
-    public $isactive = false;
-    /** @var bool If set to true the node will be dimmed */
-    public $hidden = false;
-    /** @var bool If set to false the node will not be displayed */
-    public $display = true;
-    /** @var bool If set to true then an HR will be printed before the node */
-    public $preceedwithhr = false;
-    /** @var bool If set to true the the navigation bar should ignore this node */
-    public $mainnavonly = false;
-    /** @var bool If set to true a title will be added to the action no matter what */
-    public $forcetitle = false;
-    /** @var navigation_node A reference to the node parent, you should never set this directly you should always call set_parent */
-    public $parent = null;
-    /** @var bool Override to not display the icon even if one is provided **/
-    public $hideicon = false;
-    /** @var bool Set to true if we KNOW that this node can be expanded.  */
-    public $isexpandable = false;
-    /** @var array */
-    protected $namedtypes = [0 => 'system', 10 => 'category', 20 => 'course', 30 => 'structure', 40 => 'activity', 50 => 'resource', 60 => 'custom', 70 => 'setting', 71 => 'siteadmin', 80 => 'user', 90 => 'container'];
-    /** @var url */
-    protected static $fullmeurl = null;
-    /** @var bool toogles auto matching of active node */
-    public static $autofindactive = true;
-    /** @var bool should we load full admin tree or rely on AJAX for performance reasons */
-    protected static $loadadmintree = false;
-    /** @var mixed If set to an int, that section will be included even if it has no activities */
-    public $includesectionnum = false;
-    /** @var bool does the node need to be loaded via ajax */
-    public $requiresajaxloading = false;
-    /** @var bool If set to true this node will be added to the "flat" navigation */
-    public $showinflatnavigation = false;
-    /** @var bool If set to true this node will be forced into a "more" menu whenever possible */
-    public $forceintomoremenu = false;
-    /** @var bool If set to true this node will be displayed in the "secondary" navigation when applicable */
-    public $showinsecondarynavigation = true;
-    /** @var bool If set to true the children of this node will be displayed within a submenu when applicable */
-    public $showchildreninsubmenu = false;
-    /** @var string tab element ID. */
-    public $tab;
-    /** @var string unique identifier. */
-    public $moremenuid;
-    /** @var bool node that have children. */
-    public $haschildren;
+namespace core\navigation {
+    use core\context_helper;
+    use core\exception\coding_exception;
+    use core\output\action_link;
+    use core\output\pix_icon;
+    use core\output\renderable;
+    use core\output\tabobject;
+    use core\url;
     /**
-     * Constructs a new navigation_node
+     * This class is used to represent a node in a navigation tree
      *
-     * @param array|string $properties Either an array of properties or a string to use
-     *                     as the text for the node
+     * This class is used to represent a node in a navigation tree within Moodle,
+     * the tree could be one of global navigation, settings navigation, or the navbar.
+     * Each node can be one of two types either a Leaf (default) or a branch.
+     * When a node is first created it is created as a leaf, when/if children are added
+     * the node then becomes a branch.
+     *
+     * @package   core
+     * @category  navigation
+     * @copyright 2009 Sam Hemelryk
+     * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
      */
-    public function __construct($properties)
+    class navigation_node implements renderable
     {
+        /** @var int Used to identify this node a leaf (default) 0 */
+        public const NODETYPE_LEAF = 0;
+        /** @var int Used to identify this node a branch, happens with children  1 */
+        public const NODETYPE_BRANCH = 1;
+        /** @var null Unknown node type null */
+        public const TYPE_UNKNOWN = null;
+        /** @var int System node type 0 */
+        public const TYPE_ROOTNODE = 0;
+        /** @var int System node type 1 */
+        public const TYPE_SYSTEM = 1;
+        /** @var int Category node type 10 */
+        public const TYPE_CATEGORY = 10;
+        /** var int Category displayed in MyHome navigation node */
+        public const TYPE_MY_CATEGORY = 11;
+        /** @var int Course node type 20 */
+        public const TYPE_COURSE = 20;
+        /** @var int Course Structure node type 30 */
+        public const TYPE_SECTION = 30;
+        /** @var int Activity node type, e.g. Forum, Quiz 40 */
+        public const TYPE_ACTIVITY = 40;
+        /** @var int Resource node type, e.g. Link to a file, or label 50 */
+        public const TYPE_RESOURCE = 50;
+        /** @var int A custom node type, default when adding without specifing type 60 */
+        public const TYPE_CUSTOM = 60;
+        /** @var int Setting node type, used only within settings nav 70 */
+        public const TYPE_SETTING = 70;
+        /** @var int site admin branch node type, used only within settings nav 71 */
+        public const TYPE_SITE_ADMIN = 71;
+        /** @var int Setting node type, used only within settings nav 80 */
+        public const TYPE_USER = 80;
+        /** @var int Setting node type, used for containers of no importance 90 */
+        public const TYPE_CONTAINER = 90;
+        /** var int Course the current user is not enrolled in */
+        public const COURSE_OTHER = 0;
+        /** var int Course the current user is enrolled in but not viewing */
+        public const COURSE_MY = 1;
+        /** var int Course the current user is currently viewing */
+        public const COURSE_CURRENT = 2;
+        /** var string The course index page navigation node */
+        public const COURSE_INDEX_PAGE = 'courseindexpage';
+        /** @var string The name that will be used for the navigation cache */
+        protected const CACHE_NAME = 'navigation';
+        /** @var string The name that will be used for the site admin navigation cache */
+        protected const SITE_ADMIN_CACHE_NAME = 'navigationsiteadmin';
+        /** @var int Parameter to aid the coder in tracking [optional] */
+        public $id = null;
+        /** @var string|int The identifier for the node, used to retrieve the node */
+        public $key = null;
+        /** @var string|lang_string The text to use for the node */
+        public $text = null;
+        /** @var string Short text to use if requested [optional] */
+        public $shorttext = null;
+        /** @var string The title attribute for an action if one is defined */
+        public $title = null;
+        /** @var string A string that can be used to build a help button */
+        public $helpbutton = null;
+        /** @var url|action_link|null An action for the node (link) */
+        public $action = null;
+        /** @var pix_icon The path to an icon to use for this node */
+        public $icon = null;
+        /** @var int See TYPE_* constants defined for this class */
+        public $type = self::TYPE_UNKNOWN;
+        /** @var int See NODETYPE_* constants defined for this class */
+        public $nodetype = self::NODETYPE_LEAF;
+        /** @var bool If set to true the node will be collapsed by default */
+        public $collapse = false;
+        /** @var bool If set to true the node will be expanded by default */
+        public $forceopen = false;
+        /** @var array An array of CSS classes for the node */
+        public $classes = [];
+        /** @var array An array of HTML attributes for the node */
+        public $attributes = [];
+        /** @var navigation_node_collection An array of child nodes */
+        public $children = [];
+        /** @var bool If set to true the node will be recognised as active */
+        public $isactive = false;
+        /** @var bool If set to true the node will be dimmed */
+        public $hidden = false;
+        /** @var bool If set to false the node will not be displayed */
+        public $display = true;
+        /** @var bool If set to true then an HR will be printed before the node */
+        public $preceedwithhr = false;
+        /** @var bool If set to true the the navigation bar should ignore this node */
+        public $mainnavonly = false;
+        /** @var bool If set to true a title will be added to the action no matter what */
+        public $forcetitle = false;
+        /** @var navigation_node A reference to the node parent, you should never set this directly you should always call set_parent */
+        public $parent = null;
+        /** @var bool Override to not display the icon even if one is provided **/
+        public $hideicon = false;
+        /** @var bool Set to true if we KNOW that this node can be expanded.  */
+        public $isexpandable = false;
+        /** @var array */
+        protected $namedtypes = [0 => 'system', 10 => 'category', 20 => 'course', 30 => 'structure', 40 => 'activity', 50 => 'resource', 60 => 'custom', 70 => 'setting', 71 => 'siteadmin', 80 => 'user', 90 => 'container'];
+        /** @var url */
+        protected static $fullmeurl = null;
+        /** @var bool toogles auto matching of active node */
+        public static $autofindactive = true;
+        /** @var bool should we load full admin tree or rely on AJAX for performance reasons */
+        protected static $loadadmintree = false;
+        /** @var mixed If set to an int, that section will be included even if it has no activities */
+        public $includesectionnum = false;
+        /** @var bool does the node need to be loaded via ajax */
+        public $requiresajaxloading = false;
+        /** @var bool If set to true this node will be added to the "flat" navigation */
+        public $showinflatnavigation = false;
+        /** @var bool If set to true this node will be forced into a "more" menu whenever possible */
+        public $forceintomoremenu = false;
+        /** @var bool If set to true this node will be displayed in the "secondary" navigation when applicable */
+        public $showinsecondarynavigation = true;
+        /** @var bool If set to true the children of this node will be displayed within a submenu when applicable */
+        public $showchildreninsubmenu = false;
+        /** @var string tab element ID. */
+        public $tab;
+        /** @var string unique identifier. */
+        public $moremenuid;
+        /** @var bool node that have children. */
+        public $haschildren;
+        /**
+         * Constructs a new navigation_node
+         *
+         * @param array|string $properties Either an array of properties or a string to use
+         *                     as the text for the node
+         */
+        public function __construct($properties)
+        {
+        }
+        /**
+         * Checks if this node is the active node.
+         *
+         * This is determined by comparing the action for the node against the
+         * defined URL for the page. A match will see this node marked as active.
+         *
+         * @param int $strength One of URL_MATCH_EXACT, URL_MATCH_PARAMS, or URL_MATCH_BASE
+         * @return bool
+         */
+        public function check_if_active($strength = URL_MATCH_EXACT)
+        {
+        }
+        /**
+         * True if this nav node has siblings in the tree.
+         *
+         * @return bool
+         */
+        public function has_siblings()
+        {
+        }
+        /**
+         * Get a list of sibling navigation nodes at the same level as this one.
+         *
+         * @return bool|array of navigation_node
+         */
+        public function get_siblings()
+        {
+        }
+        /**
+         * This sets the URL that the URL of new nodes get compared to when locating the active node.
+         *
+         * The active node is the node that matches the URL set here. By default this
+         * is either $PAGE->url or if that hasn't been set $FULLME.
+         *
+         * @param url $url The url to use for the fullmeurl.
+         * @param bool $loadadmintree use true if the URL point to administration tree
+         */
+        public static function override_active_url(url $url, $loadadmintree = false)
+        {
+        }
+        /**
+         * Require the admin tree.
+         *
+         * Use when page is linked from the admin tree,
+         * if not used navigation could not find the page using current URL
+         * because the tree is not fully loaded.
+         */
+        public static function require_admin_tree()
+        {
+        }
+        /**
+         * Creates a navigation node, ready to add it as a child using add_node function.
+         *
+         * The created node needs to be added before you can use it.
+         *
+         * @param string $text
+         * @param url|action_link $action
+         * @param int $type
+         * @param string $shorttext
+         * @param string|int $key
+         * @param pix_icon $icon
+         * @return navigation_node
+         */
+        public static function create($text, $action = null, $type = self::TYPE_CUSTOM, $shorttext = null, $key = null, ?pix_icon $icon = null)
+        {
+        }
+        /**
+         * Adds a navigation node as a child of this node.
+         *
+         * @param string $text
+         * @param url|action_link|string $action
+         * @param ?int $type
+         * @param string $shorttext
+         * @param string|int $key
+         * @param pix_icon $icon
+         * @return navigation_node
+         */
+        public function add($text, $action = null, $type = self::TYPE_CUSTOM, $shorttext = null, $key = null, ?pix_icon $icon = null)
+        {
+        }
+        /**
+         * Adds a navigation node as a child of this one, given a $node object
+         * created using the create function.
+         * @param navigation_node $childnode Node to add
+         * @param string $beforekey
+         * @return navigation_node The added node
+         */
+        public function add_node(navigation_node $childnode, $beforekey = null)
+        {
+        }
+        /**
+         * Return a list of all the keys of all the child nodes.
+         * @return array the keys.
+         */
+        public function get_children_key_list()
+        {
+        }
+        /**
+         * Searches for a node of the given type with the given key.
+         *
+         * This searches this node plus all of its children, and their children....
+         * If you know the node you are looking for is a child of this node then please
+         * use the get method instead.
+         *
+         * @param int|string $key The key of the node we are looking for
+         * @param ?int $type One of navigation_node::TYPE_*
+         * @return navigation_node|false
+         */
+        public function find($key, $type)
+        {
+        }
+        /**
+         * Walk the tree building up a list of all the flat navigation nodes.
+         *
+         * @deprecated since Moodle 4.0
+         * @param flat_navigation $nodes List of the found flat navigation nodes.
+         * @param boolean $showdivider Show a divider before the first node.
+         * @param string $label A label for the collection of navigation links.
+         */
+        public function build_flat_navigation_list(flat_navigation $nodes, $showdivider = false, $label = '')
+        {
+        }
+        /**
+         * Get the child of this node that has the given key + (optional) type.
+         *
+         * If you are looking for a node and want to search all children + their children
+         * then please use the find method instead.
+         *
+         * @param int|string $key The key of the node we are looking for
+         * @param int $type One of navigation_node::TYPE_*
+         * @return navigation_node|false
+         */
+        public function get($key, $type = null)
+        {
+        }
+        /**
+         * Removes this node.
+         *
+         * @return bool
+         */
+        public function remove()
+        {
+        }
+        /**
+         * Checks if this node has or could have any children
+         *
+         * @return bool Returns true if it has children or could have (by AJAX expansion)
+         */
+        public function has_children()
+        {
+        }
+        /**
+         * Marks this node as active and forces it open.
+         *
+         * Important: If you are here because you need to mark a node active to get
+         * the navigation to do what you want have you looked at {@link navigation_node::override_active_url()}?
+         * You can use it to specify a different URL to match the active navigation node on
+         * rather than having to locate and manually mark a node active.
+         */
+        public function make_active()
+        {
+        }
+        /**
+         * Marks a node as inactive and recusised back to the base of the tree
+         * doing the same to all parents.
+         */
+        public function make_inactive()
+        {
+        }
+        /**
+         * Forces this node to be open and at the same time forces open all
+         * parents until the root node.
+         *
+         * Recursive.
+         */
+        public function force_open()
+        {
+        }
+        /**
+         * Adds a CSS class to this node.
+         *
+         * @param string $class
+         * @return bool
+         */
+        public function add_class($class)
+        {
+        }
+        /**
+         * Adds an HTML attribute to this node.
+         *
+         * @param string $name
+         * @param string $value
+         */
+        public function add_attribute(string $name, string $value): void
+        {
+        }
+        /**
+         * Removes a CSS class from this node.
+         *
+         * @param string $class
+         * @return bool True if the class was successfully removed.
+         */
+        public function remove_class($class)
+        {
+        }
+        /**
+         * Sets the title for this node and forces Moodle to utilise it.
+         *
+         * Note that this method is named identically to the public "title" property of the class, which unfortunately confuses
+         * our Mustache renderer, because it will see the method and try and call it without any arguments (hence must be nullable)
+         * before trying to access the public property
+         *
+         * @param string|null $title
+         * @return string
+         */
+        public function title(?string $title = null): string
+        {
+        }
+        /**
+         * Resets the page specific information on this node if it is being unserialised.
+         */
+        public function __wakeup()
+        {
+        }
+        /**
+         * Checks if this node or any of its children contain the active node.
+         *
+         * Recursive.
+         *
+         * @return bool
+         */
+        public function contains_active_node()
+        {
+        }
+        /**
+         * To better balance the admin tree, we want to group all the short top branches together.
+         *
+         * This means < 8 nodes and no subtrees.
+         *
+         * @return bool
+         */
+        public function is_short_branch()
+        {
+        }
+        /**
+         * Finds the active node.
+         *
+         * Searches this nodes children plus all of the children for the active node
+         * and returns it if found.
+         *
+         * Recursive.
+         *
+         * @return navigation_node|false
+         */
+        public function find_active_node()
+        {
+        }
+        /**
+         * Searches all children for the best matching active node
+         * @param int $strength The url match to be made.
+         * @return navigation_node|false
+         */
+        public function search_for_active_node($strength = URL_MATCH_BASE)
+        {
+        }
+        /**
+         * Gets the content for this node.
+         *
+         * @param bool $shorttext If true shorttext is used rather than the normal text
+         * @return string
+         */
+        public function get_content($shorttext = false)
+        {
+        }
+        /**
+         * Gets the title to use for this node.
+         *
+         * @return string
+         */
+        public function get_title()
+        {
+        }
+        /**
+         * Used to easily determine if this link in the breadcrumbs has a valid action/url.
+         *
+         * @return boolean
+         */
+        public function has_action()
+        {
+        }
+        /**
+         * Used to easily determine if the action is an internal link.
+         *
+         * @return bool
+         */
+        public function has_internal_action(): bool
+        {
+        }
+        /**
+         * Used to easily determine if this link in the breadcrumbs is hidden.
+         *
+         * @return boolean
+         */
+        public function is_hidden()
+        {
+        }
+        /**
+         * Gets the CSS class to add to this node to describe its type
+         *
+         * @return string
+         */
+        public function get_css_type()
+        {
+        }
+        /**
+         * Finds all nodes that are expandable by AJAX
+         *
+         * @param array $expandable An array by reference to populate with expandable nodes.
+         */
+        public function find_expandable(array &$expandable)
+        {
+        }
+        /**
+         * Finds all nodes of a given type (recursive)
+         *
+         * @param int $type One of navigation_node::TYPE_*
+         * @return array
+         */
+        public function find_all_of_type($type)
+        {
+        }
+        /**
+         * Removes this node if it is empty
+         */
+        public function trim_if_empty()
+        {
+        }
+        /**
+         * Creates a tab representation of this nodes children that can be used
+         * with print_tabs to produce the tabs on a page.
+         *
+         * call_user_func_array('print_tabs', $node->get_tabs_array());
+         *
+         * @param array $inactive
+         * @param bool $return
+         * @return array Array (tabs, selected, inactive, activated, return)
+         */
+        public function get_tabs_array(array $inactive = [], $return = false)
+        {
+        }
+        /**
+         * Sets the parent for this node and if this node is active ensures that the tree is properly
+         * adjusted as well.
+         *
+         * @param navigation_node $parent
+         */
+        public function set_parent(navigation_node $parent)
+        {
+        }
+        /**
+         * Hides the node and any children it has.
+         *
+         * @since Moodle 2.5
+         * @param array $typestohide Optional. An array of node types that should be hidden.
+         *      If null all nodes will be hidden.
+         *      If an array is given then nodes will only be hidden if their type mtatches an element in the array.
+         *          e.g. array(navigation_node::TYPE_COURSE) would hide only course nodes.
+         */
+        public function hide(?array $typestohide = null)
+        {
+        }
+        /**
+         * Get the action url for this navigation node.
+         * Called from templates.
+         *
+         * @since Moodle 3.2
+         */
+        public function action()
+        {
+        }
+        /**
+         * Return an array consisting of the additional attributes for the action url.
+         *
+         * @return array Formatted array to parse in a template
+         */
+        public function actionattributes()
+        {
+        }
+        /**
+         * Check whether the node's action is of type action_link.
+         *
+         * @return bool
+         */
+        public function is_action_link()
+        {
+        }
+        /**
+         * Return an array consisting of the actions for the action link.
+         *
+         * @return array Formatted array to parse in a template
+         */
+        public function action_link_actions()
+        {
+        }
+        /**
+         * Sets whether the node and its children should be added into a "more" menu whenever possible.
+         *
+         * @param bool $forceintomoremenu
+         */
+        public function set_force_into_more_menu(bool $forceintomoremenu = false)
+        {
+        }
+        /**
+         * Sets whether the node and its children should be displayed in the "secondary" navigation when applicable.
+         *
+         * @param bool $show
+         */
+        public function set_show_in_secondary_navigation(bool $show = true)
+        {
+        }
+        /**
+         * Add the menu item to handle locking and unlocking of a conext.
+         *
+         * @param \navigation_node $node Node to add
+         * @param \context $context The context to be locked
+         */
+        protected function add_context_locking_node(\navigation_node $node, \context $context)
+        {
+        }
+        /**
+         * Reset all static data.
+         *
+         * @throws coding_exception if called outside of a unit test
+         */
+        public static function reset_all_data(): void
+        {
+        }
     }
+}
+namespace {
     /**
-     * Checks if this node is the active node.
-     *
-     * This is determined by comparing the action for the node against the
-     * defined URL for the page. A match will see this node marked as active.
-     *
-     * @param int $strength One of URL_MATCH_EXACT, URL_MATCH_PARAMS, or URL_MATCH_BASE
-     * @return bool
+     * Runtime class alias of \core\navigation\navigation_node registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function check_if_active($strength = URL_MATCH_EXACT)
-    {
-    }
-    /**
-     * True if this nav node has siblings in the tree.
-     *
-     * @return bool
-     */
-    public function has_siblings()
-    {
-    }
-    /**
-     * Get a list of sibling navigation nodes at the same level as this one.
-     *
-     * @return bool|array of navigation_node
-     */
-    public function get_siblings()
-    {
-    }
-    /**
-     * This sets the URL that the URL of new nodes get compared to when locating the active node.
-     *
-     * The active node is the node that matches the URL set here. By default this
-     * is either $PAGE->url or if that hasn't been set $FULLME.
-     *
-     * @param url $url The url to use for the fullmeurl.
-     * @param bool $loadadmintree use true if the URL point to administration tree
-     */
-    public static function override_active_url(url $url, $loadadmintree = false)
-    {
-    }
-    /**
-     * Require the admin tree.
-     *
-     * Use when page is linked from the admin tree,
-     * if not used navigation could not find the page using current URL
-     * because the tree is not fully loaded.
-     */
-    public static function require_admin_tree()
-    {
-    }
-    /**
-     * Creates a navigation node, ready to add it as a child using add_node function.
-     *
-     * The created node needs to be added before you can use it.
-     *
-     * @param string $text
-     * @param url|action_link $action
-     * @param int $type
-     * @param string $shorttext
-     * @param string|int $key
-     * @param pix_icon $icon
-     * @return navigation_node
-     */
-    public static function create($text, $action = null, $type = self::TYPE_CUSTOM, $shorttext = null, $key = null, ?pix_icon $icon = null)
-    {
-    }
-    /**
-     * Adds a navigation node as a child of this node.
-     *
-     * @param string $text
-     * @param url|action_link|string $action
-     * @param ?int $type
-     * @param string $shorttext
-     * @param string|int $key
-     * @param pix_icon $icon
-     * @return navigation_node
-     */
-    public function add($text, $action = null, $type = self::TYPE_CUSTOM, $shorttext = null, $key = null, ?pix_icon $icon = null)
-    {
-    }
-    /**
-     * Adds a navigation node as a child of this one, given a $node object
-     * created using the create function.
-     * @param navigation_node $childnode Node to add
-     * @param string $beforekey
-     * @return navigation_node The added node
-     */
-    public function add_node(navigation_node $childnode, $beforekey = null)
-    {
-    }
-    /**
-     * Return a list of all the keys of all the child nodes.
-     * @return array the keys.
-     */
-    public function get_children_key_list()
-    {
-    }
-    /**
-     * Searches for a node of the given type with the given key.
-     *
-     * This searches this node plus all of its children, and their children....
-     * If you know the node you are looking for is a child of this node then please
-     * use the get method instead.
-     *
-     * @param int|string $key The key of the node we are looking for
-     * @param ?int $type One of navigation_node::TYPE_*
-     * @return navigation_node|false
-     */
-    public function find($key, $type)
-    {
-    }
-    /**
-     * Walk the tree building up a list of all the flat navigation nodes.
-     *
-     * @deprecated since Moodle 4.0
-     * @param flat_navigation $nodes List of the found flat navigation nodes.
-     * @param boolean $showdivider Show a divider before the first node.
-     * @param string $label A label for the collection of navigation links.
-     */
-    public function build_flat_navigation_list(flat_navigation $nodes, $showdivider = false, $label = '')
-    {
-    }
-    /**
-     * Get the child of this node that has the given key + (optional) type.
-     *
-     * If you are looking for a node and want to search all children + their children
-     * then please use the find method instead.
-     *
-     * @param int|string $key The key of the node we are looking for
-     * @param int $type One of navigation_node::TYPE_*
-     * @return navigation_node|false
-     */
-    public function get($key, $type = null)
-    {
-    }
-    /**
-     * Removes this node.
-     *
-     * @return bool
-     */
-    public function remove()
-    {
-    }
-    /**
-     * Checks if this node has or could have any children
-     *
-     * @return bool Returns true if it has children or could have (by AJAX expansion)
-     */
-    public function has_children()
-    {
-    }
-    /**
-     * Marks this node as active and forces it open.
-     *
-     * Important: If you are here because you need to mark a node active to get
-     * the navigation to do what you want have you looked at {@link navigation_node::override_active_url()}?
-     * You can use it to specify a different URL to match the active navigation node on
-     * rather than having to locate and manually mark a node active.
-     */
-    public function make_active()
-    {
-    }
-    /**
-     * Marks a node as inactive and recusised back to the base of the tree
-     * doing the same to all parents.
-     */
-    public function make_inactive()
-    {
-    }
-    /**
-     * Forces this node to be open and at the same time forces open all
-     * parents until the root node.
-     *
-     * Recursive.
-     */
-    public function force_open()
-    {
-    }
-    /**
-     * Adds a CSS class to this node.
-     *
-     * @param string $class
-     * @return bool
-     */
-    public function add_class($class)
-    {
-    }
-    /**
-     * Adds an HTML attribute to this node.
-     *
-     * @param string $name
-     * @param string $value
-     */
-    public function add_attribute(string $name, string $value): void
-    {
-    }
-    /**
-     * Removes a CSS class from this node.
-     *
-     * @param string $class
-     * @return bool True if the class was successfully removed.
-     */
-    public function remove_class($class)
-    {
-    }
-    /**
-     * Sets the title for this node and forces Moodle to utilise it.
-     *
-     * Note that this method is named identically to the public "title" property of the class, which unfortunately confuses
-     * our Mustache renderer, because it will see the method and try and call it without any arguments (hence must be nullable)
-     * before trying to access the public property
-     *
-     * @param string|null $title
-     * @return string
-     */
-    public function title(?string $title = null): string
-    {
-    }
-    /**
-     * Resets the page specific information on this node if it is being unserialised.
-     */
-    public function __wakeup()
-    {
-    }
-    /**
-     * Checks if this node or any of its children contain the active node.
-     *
-     * Recursive.
-     *
-     * @return bool
-     */
-    public function contains_active_node()
-    {
-    }
-    /**
-     * To better balance the admin tree, we want to group all the short top branches together.
-     *
-     * This means < 8 nodes and no subtrees.
-     *
-     * @return bool
-     */
-    public function is_short_branch()
-    {
-    }
-    /**
-     * Finds the active node.
-     *
-     * Searches this nodes children plus all of the children for the active node
-     * and returns it if found.
-     *
-     * Recursive.
-     *
-     * @return navigation_node|false
-     */
-    public function find_active_node()
-    {
-    }
-    /**
-     * Searches all children for the best matching active node
-     * @param int $strength The url match to be made.
-     * @return navigation_node|false
-     */
-    public function search_for_active_node($strength = URL_MATCH_BASE)
-    {
-    }
-    /**
-     * Gets the content for this node.
-     *
-     * @param bool $shorttext If true shorttext is used rather than the normal text
-     * @return string
-     */
-    public function get_content($shorttext = false)
-    {
-    }
-    /**
-     * Gets the title to use for this node.
-     *
-     * @return string
-     */
-    public function get_title()
-    {
-    }
-    /**
-     * Used to easily determine if this link in the breadcrumbs has a valid action/url.
-     *
-     * @return boolean
-     */
-    public function has_action()
-    {
-    }
-    /**
-     * Used to easily determine if the action is an internal link.
-     *
-     * @return bool
-     */
-    public function has_internal_action(): bool
-    {
-    }
-    /**
-     * Used to easily determine if this link in the breadcrumbs is hidden.
-     *
-     * @return boolean
-     */
-    public function is_hidden()
-    {
-    }
-    /**
-     * Gets the CSS class to add to this node to describe its type
-     *
-     * @return string
-     */
-    public function get_css_type()
-    {
-    }
-    /**
-     * Finds all nodes that are expandable by AJAX
-     *
-     * @param array $expandable An array by reference to populate with expandable nodes.
-     */
-    public function find_expandable(array &$expandable)
-    {
-    }
-    /**
-     * Finds all nodes of a given type (recursive)
-     *
-     * @param int $type One of navigation_node::TYPE_*
-     * @return array
-     */
-    public function find_all_of_type($type)
-    {
-    }
-    /**
-     * Removes this node if it is empty
-     */
-    public function trim_if_empty()
-    {
-    }
-    /**
-     * Creates a tab representation of this nodes children that can be used
-     * with print_tabs to produce the tabs on a page.
-     *
-     * call_user_func_array('print_tabs', $node->get_tabs_array());
-     *
-     * @param array $inactive
-     * @param bool $return
-     * @return array Array (tabs, selected, inactive, activated, return)
-     */
-    public function get_tabs_array(array $inactive = [], $return = false)
-    {
-    }
-    /**
-     * Sets the parent for this node and if this node is active ensures that the tree is properly
-     * adjusted as well.
-     *
-     * @param navigation_node $parent
-     */
-    public function set_parent(navigation_node $parent)
-    {
-    }
-    /**
-     * Hides the node and any children it has.
-     *
-     * @since Moodle 2.5
-     * @param array $typestohide Optional. An array of node types that should be hidden.
-     *      If null all nodes will be hidden.
-     *      If an array is given then nodes will only be hidden if their type mtatches an element in the array.
-     *          e.g. array(navigation_node::TYPE_COURSE) would hide only course nodes.
-     */
-    public function hide(?array $typestohide = null)
-    {
-    }
-    /**
-     * Get the action url for this navigation node.
-     * Called from templates.
-     *
-     * @since Moodle 3.2
-     */
-    public function action()
-    {
-    }
-    /**
-     * Return an array consisting of the additional attributes for the action url.
-     *
-     * @return array Formatted array to parse in a template
-     */
-    public function actionattributes()
-    {
-    }
-    /**
-     * Check whether the node's action is of type action_link.
-     *
-     * @return bool
-     */
-    public function is_action_link()
-    {
-    }
-    /**
-     * Return an array consisting of the actions for the action link.
-     *
-     * @return array Formatted array to parse in a template
-     */
-    public function action_link_actions()
-    {
-    }
-    /**
-     * Sets whether the node and its children should be added into a "more" menu whenever possible.
-     *
-     * @param bool $forceintomoremenu
-     */
-    public function set_force_into_more_menu(bool $forceintomoremenu = false)
-    {
-    }
-    /**
-     * Sets whether the node and its children should be displayed in the "secondary" navigation when applicable.
-     *
-     * @param bool $show
-     */
-    public function set_show_in_secondary_navigation(bool $show = true)
-    {
-    }
-    /**
-     * Add the menu item to handle locking and unlocking of a conext.
-     *
-     * @param \navigation_node $node Node to add
-     * @param \context $context The context to be locked
-     */
-    protected function add_context_locking_node(\navigation_node $node, \context $context)
-    {
-    }
-    /**
-     * Reset all static data.
-     *
-     * @throws coding_exception if called outside of a unit test
-     */
-    public static function reset_all_data(): void
+    class navigation_node extends \core\navigation\navigation_node
     {
     }
 }

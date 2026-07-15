@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class EnvironmentVariable extends \Google\Model
-{
-    /**
-     * Environment variable name as a JSON encoded string.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Environment variable value as a JSON encoded string.
-     *
-     * @var string
-     */
-    public $val;
-    /**
-     * Environment variable name as a JSON encoded string.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\SecurityCommandCenter {
+    class EnvironmentVariable extends \Google\Model
     {
+        /**
+         * Environment variable name as a JSON encoded string.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Environment variable value as a JSON encoded string.
+         *
+         * @var string
+         */
+        public $val;
+        /**
+         * Environment variable name as a JSON encoded string.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Environment variable value as a JSON encoded string.
+         *
+         * @param string $val
+         */
+        public function setVal($val)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVal()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\EnvironmentVariable registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Environment variable value as a JSON encoded string.
-     *
-     * @param string $val
-     */
-    public function setVal($val)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVal()
+    class Google_Service_SecurityCommandCenter_EnvironmentVariable extends \Google\Service\SecurityCommandCenter\EnvironmentVariable
     {
     }
 }

@@ -21,98 +21,107 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteBabelMessageProps extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $clientGeneratedId;
-    protected $contentExtensionType = ChatContentExtension::class;
-    protected $contentExtensionDataType = '';
-    protected $deliveryMediumType = DeliveryMedium::class;
-    protected $deliveryMediumDataType = '';
-    /**
-     * @var string
-     */
-    public $eventId;
-    protected $messageContentType = MessageContent::class;
-    protected $messageContentDataType = '';
-    /**
-     * @var bool
-     */
-    public $wasUpdatedByBackfill;
-    /**
-     * @param string
-     */
-    public function setClientGeneratedId($clientGeneratedId)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteBabelMessageProps extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $clientGeneratedId;
+        protected $contentExtensionType = ChatContentExtension::class;
+        protected $contentExtensionDataType = '';
+        protected $deliveryMediumType = DeliveryMedium::class;
+        protected $deliveryMediumDataType = '';
+        /**
+         * @var string
+         */
+        public $eventId;
+        protected $messageContentType = MessageContent::class;
+        protected $messageContentDataType = '';
+        /**
+         * @var bool
+         */
+        public $wasUpdatedByBackfill;
+        /**
+         * @param string
+         */
+        public function setClientGeneratedId($clientGeneratedId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClientGeneratedId()
+        {
+        }
+        /**
+         * @param ChatContentExtension
+         */
+        public function setContentExtension(ChatContentExtension $contentExtension)
+        {
+        }
+        /**
+         * @return ChatContentExtension
+         */
+        public function getContentExtension()
+        {
+        }
+        /**
+         * @param DeliveryMedium
+         */
+        public function setDeliveryMedium(DeliveryMedium $deliveryMedium)
+        {
+        }
+        /**
+         * @return DeliveryMedium
+         */
+        public function getDeliveryMedium()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEventId($eventId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEventId()
+        {
+        }
+        /**
+         * @param MessageContent
+         */
+        public function setMessageContent(MessageContent $messageContent)
+        {
+        }
+        /**
+         * @return MessageContent
+         */
+        public function getMessageContent()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setWasUpdatedByBackfill($wasUpdatedByBackfill)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getWasUpdatedByBackfill()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteBabelMessageProps registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClientGeneratedId()
-    {
-    }
-    /**
-     * @param ChatContentExtension
-     */
-    public function setContentExtension(ChatContentExtension $contentExtension)
-    {
-    }
-    /**
-     * @return ChatContentExtension
-     */
-    public function getContentExtension()
-    {
-    }
-    /**
-     * @param DeliveryMedium
-     */
-    public function setDeliveryMedium(DeliveryMedium $deliveryMedium)
-    {
-    }
-    /**
-     * @return DeliveryMedium
-     */
-    public function getDeliveryMedium()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEventId($eventId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEventId()
-    {
-    }
-    /**
-     * @param MessageContent
-     */
-    public function setMessageContent(MessageContent $messageContent)
-    {
-    }
-    /**
-     * @return MessageContent
-     */
-    public function getMessageContent()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setWasUpdatedByBackfill($wasUpdatedByBackfill)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getWasUpdatedByBackfill()
+    class Google_Service_CloudSearch_AppsDynamiteBabelMessageProps extends \Google\Service\CloudSearch\AppsDynamiteBabelMessageProps
     {
     }
 }

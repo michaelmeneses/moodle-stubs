@@ -21,102 +21,116 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy\Resource;
-
-/**
- * The "releases" collection of methods.
- * Typical usage is:
- *  <code>
- *   $clouddeployService = new Google\Service\CloudDeploy(...);
- *   $releases = $clouddeployService->projects_locations_deliveryPipelines_releases;
- *  </code>
- */
-class ProjectsLocationsDeliveryPipelinesReleases extends \Google\Service\Resource
-{
+namespace Google\Service\CloudDeploy\Resource {
+    use Google\Service\CloudDeploy\AbandonReleaseRequest;
+    use Google\Service\CloudDeploy\AbandonReleaseResponse;
+    use Google\Service\CloudDeploy\ListReleasesResponse;
+    use Google\Service\CloudDeploy\Operation;
+    use Google\Service\CloudDeploy\Release;
     /**
-     * Abandons a Release in the Delivery Pipeline. (releases.abandon)
-     *
-     * @param string $name Required. Name of the Release. Format is `projects/{proje
-     * ct}/locations/{location}/deliveryPipelines/{deliveryPipeline}/releases/{relea
-     * se}`.
-     * @param AbandonReleaseRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return AbandonReleaseResponse
-     * @throws \Google\Service\Exception
+     * The "releases" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $clouddeployService = new Google\Service\CloudDeploy(...);
+     *   $releases = $clouddeployService->projects_locations_deliveryPipelines_releases;
+     *  </code>
      */
-    public function abandon($name, AbandonReleaseRequest $postBody, $optParams = [])
+    class ProjectsLocationsDeliveryPipelinesReleases extends \Google\Service\Resource
     {
+        /**
+         * Abandons a Release in the Delivery Pipeline. (releases.abandon)
+         *
+         * @param string $name Required. Name of the Release. Format is `projects/{proje
+         * ct}/locations/{location}/deliveryPipelines/{deliveryPipeline}/releases/{relea
+         * se}`.
+         * @param AbandonReleaseRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return AbandonReleaseResponse
+         * @throws \Google\Service\Exception
+         */
+        public function abandon($name, AbandonReleaseRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Creates a new Release in a given project and location. (releases.create)
+         *
+         * @param string $parent Required. The parent collection in which the `Release`
+         * is created. The format is `projects/{project_id}/locations/{location_name}/de
+         * liveryPipelines/{pipeline_name}`.
+         * @param Release $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string overrideDeployPolicy Optional. Deploy policies to override.
+         * Format is
+         * `projects/{project}/locations/{location}/deployPolicies/{deployPolicy}`.
+         * @opt_param string releaseId Required. ID of the `Release`.
+         * @opt_param string requestId Optional. A request ID to identify requests.
+         * Specify a unique request ID so that if you must retry your request, the
+         * server knows to ignore the request if it has already been completed. The
+         * server guarantees that for at least 60 minutes after the first request. For
+         * example, consider a situation where you make an initial request and the
+         * request times out. If you make the request again with the same request ID,
+         * the server can check if original operation with the same request ID was
+         * received, and if so, will ignore the second request. This prevents clients
+         * from accidentally creating duplicate commitments. The request ID must be a
+         * valid UUID with the exception that zero UUID is not supported
+         * (00000000-0000-0000-0000-000000000000).
+         * @opt_param bool validateOnly Optional. If set to true, the request is
+         * validated and the user is provided with an expected result, but no actual
+         * change is made.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, Release $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Gets details of a single Release. (releases.get)
+         *
+         * @param string $name Required. Name of the `Release`. Format must be `projects
+         * /{project_id}/locations/{location_name}/deliveryPipelines/{pipeline_name}/rel
+         * eases/{release_name}`.
+         * @param array $optParams Optional parameters.
+         * @return Release
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists Releases in a given project and location.
+         * (releases.listProjectsLocationsDeliveryPipelinesReleases)
+         *
+         * @param string $parent Required. The `DeliveryPipeline` which owns this
+         * collection of `Release` objects.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Optional. Filter releases to be returned. See
+         * https://google.aip.dev/160 for more details.
+         * @opt_param string orderBy Optional. Field to sort by. See
+         * https://google.aip.dev/132#ordering for more details.
+         * @opt_param int pageSize Optional. The maximum number of `Release` objects to
+         * return. The service may return fewer than this value. If unspecified, at most
+         * 50 `Release` objects will be returned. The maximum value is 1000; values
+         * above 1000 will be set to 1000.
+         * @opt_param string pageToken Optional. A page token, received from a previous
+         * `ListReleases` call. Provide this to retrieve the subsequent page. When
+         * paginating, all other provided parameters match the call that provided the
+         * page token.
+         * @return ListReleasesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsDeliveryPipelinesReleases($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Creates a new Release in a given project and location. (releases.create)
-     *
-     * @param string $parent Required. The parent collection in which the `Release`
-     * is created. The format is `projects/{project_id}/locations/{location_name}/de
-     * liveryPipelines/{pipeline_name}`.
-     * @param Release $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string overrideDeployPolicy Optional. Deploy policies to override.
-     * Format is
-     * `projects/{project}/locations/{location}/deployPolicies/{deployPolicy}`.
-     * @opt_param string releaseId Required. ID of the `Release`.
-     * @opt_param string requestId Optional. A request ID to identify requests.
-     * Specify a unique request ID so that if you must retry your request, the
-     * server knows to ignore the request if it has already been completed. The
-     * server guarantees that for at least 60 minutes after the first request. For
-     * example, consider a situation where you make an initial request and the
-     * request times out. If you make the request again with the same request ID,
-     * the server can check if original operation with the same request ID was
-     * received, and if so, will ignore the second request. This prevents clients
-     * from accidentally creating duplicate commitments. The request ID must be a
-     * valid UUID with the exception that zero UUID is not supported
-     * (00000000-0000-0000-0000-000000000000).
-     * @opt_param bool validateOnly Optional. If set to true, the request is
-     * validated and the user is provided with an expected result, but no actual
-     * change is made.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\CloudDeploy\Resource\ProjectsLocationsDeliveryPipelinesReleases registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function create($parent, Release $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Gets details of a single Release. (releases.get)
-     *
-     * @param string $name Required. Name of the `Release`. Format must be `projects
-     * /{project_id}/locations/{location_name}/deliveryPipelines/{pipeline_name}/rel
-     * eases/{release_name}`.
-     * @param array $optParams Optional parameters.
-     * @return Release
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists Releases in a given project and location.
-     * (releases.listProjectsLocationsDeliveryPipelinesReleases)
-     *
-     * @param string $parent Required. The `DeliveryPipeline` which owns this
-     * collection of `Release` objects.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Optional. Filter releases to be returned. See
-     * https://google.aip.dev/160 for more details.
-     * @opt_param string orderBy Optional. Field to sort by. See
-     * https://google.aip.dev/132#ordering for more details.
-     * @opt_param int pageSize Optional. The maximum number of `Release` objects to
-     * return. The service may return fewer than this value. If unspecified, at most
-     * 50 `Release` objects will be returned. The maximum value is 1000; values
-     * above 1000 will be set to 1000.
-     * @opt_param string pageToken Optional. A page token, received from a previous
-     * `ListReleases` call. Provide this to retrieve the subsequent page. When
-     * paginating, all other provided parameters match the call that provided the
-     * page token.
-     * @return ListReleasesResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsDeliveryPipelinesReleases($parent, $optParams = [])
+    class Google_Service_CloudDeploy_Resource_ProjectsLocationsDeliveryPipelinesReleases extends \Google\Service\CloudDeploy\Resource\ProjectsLocationsDeliveryPipelinesReleases
     {
     }
 }

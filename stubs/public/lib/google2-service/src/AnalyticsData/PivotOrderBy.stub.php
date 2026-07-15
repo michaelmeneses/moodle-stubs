@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsData;
-
-class PivotOrderBy extends \Google\Collection
-{
-    protected $collection_key = 'pivotSelections';
-    /**
-     * In the response to order by, order rows by this column. Must be a metric
-     * name from the request.
-     *
-     * @var string
-     */
-    public $metricName;
-    protected $pivotSelectionsType = PivotSelection::class;
-    protected $pivotSelectionsDataType = 'array';
-    /**
-     * In the response to order by, order rows by this column. Must be a metric
-     * name from the request.
-     *
-     * @param string $metricName
-     */
-    public function setMetricName($metricName)
+namespace Google\Service\AnalyticsData {
+    class PivotOrderBy extends \Google\Collection
     {
+        protected $collection_key = 'pivotSelections';
+        /**
+         * In the response to order by, order rows by this column. Must be a metric
+         * name from the request.
+         *
+         * @var string
+         */
+        public $metricName;
+        protected $pivotSelectionsType = PivotSelection::class;
+        protected $pivotSelectionsDataType = 'array';
+        /**
+         * In the response to order by, order rows by this column. Must be a metric
+         * name from the request.
+         *
+         * @param string $metricName
+         */
+        public function setMetricName($metricName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMetricName()
+        {
+        }
+        /**
+         * Used to select a dimension name and value pivot. If multiple pivot
+         * selections are given, the sort occurs on rows where all pivot selection
+         * dimension name and value pairs match the row's dimension name and value
+         * pair.
+         *
+         * @param PivotSelection[] $pivotSelections
+         */
+        public function setPivotSelections($pivotSelections)
+        {
+        }
+        /**
+         * @return PivotSelection[]
+         */
+        public function getPivotSelections()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AnalyticsData\PivotOrderBy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetricName()
-    {
-    }
-    /**
-     * Used to select a dimension name and value pivot. If multiple pivot
-     * selections are given, the sort occurs on rows where all pivot selection
-     * dimension name and value pairs match the row's dimension name and value
-     * pair.
-     *
-     * @param PivotSelection[] $pivotSelections
-     */
-    public function setPivotSelections($pivotSelections)
-    {
-    }
-    /**
-     * @return PivotSelection[]
-     */
-    public function getPivotSelections()
+    class Google_Service_AnalyticsData_PivotOrderBy extends \Google\Service\AnalyticsData\PivotOrderBy
     {
     }
 }

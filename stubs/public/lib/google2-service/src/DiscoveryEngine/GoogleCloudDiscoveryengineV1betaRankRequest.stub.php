@@ -21,87 +21,96 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaRankRequest extends \Google\Collection
-{
-    protected $collection_key = 'records';
-    /**
-     * @var bool
-     */
-    public $ignoreRecordDetailsInResponse;
-    /**
-     * @var string
-     */
-    public $model;
-    /**
-     * @var string
-     */
-    public $query;
-    protected $recordsType = GoogleCloudDiscoveryengineV1betaRankingRecord::class;
-    protected $recordsDataType = 'array';
-    /**
-     * @var int
-     */
-    public $topN;
-    /**
-     * @param bool
-     */
-    public function setIgnoreRecordDetailsInResponse($ignoreRecordDetailsInResponse)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaRankRequest extends \Google\Collection
     {
+        protected $collection_key = 'records';
+        /**
+         * @var bool
+         */
+        public $ignoreRecordDetailsInResponse;
+        /**
+         * @var string
+         */
+        public $model;
+        /**
+         * @var string
+         */
+        public $query;
+        protected $recordsType = GoogleCloudDiscoveryengineV1betaRankingRecord::class;
+        protected $recordsDataType = 'array';
+        /**
+         * @var int
+         */
+        public $topN;
+        /**
+         * @param bool
+         */
+        public function setIgnoreRecordDetailsInResponse($ignoreRecordDetailsInResponse)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIgnoreRecordDetailsInResponse()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setModel($model)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getModel()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setQuery($query)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQuery()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaRankingRecord[]
+         */
+        public function setRecords($records)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaRankingRecord[]
+         */
+        public function getRecords()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setTopN($topN)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTopN()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaRankRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIgnoreRecordDetailsInResponse()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setModel($model)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getModel()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setQuery($query)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQuery()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaRankingRecord[]
-     */
-    public function setRecords($records)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaRankingRecord[]
-     */
-    public function getRecords()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setTopN($topN)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTopN()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaRankRequest extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaRankRequest
     {
     }
 }

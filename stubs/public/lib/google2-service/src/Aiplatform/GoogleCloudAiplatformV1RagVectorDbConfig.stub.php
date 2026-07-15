@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1RagVectorDbConfig extends \Google\Model
-{
-    protected $apiAuthType = GoogleCloudAiplatformV1ApiAuth::class;
-    protected $apiAuthDataType = '';
-    protected $pineconeType = GoogleCloudAiplatformV1RagVectorDbConfigPinecone::class;
-    protected $pineconeDataType = '';
-    protected $ragEmbeddingModelConfigType = GoogleCloudAiplatformV1RagEmbeddingModelConfig::class;
-    protected $ragEmbeddingModelConfigDataType = '';
-    protected $ragManagedDbType = GoogleCloudAiplatformV1RagVectorDbConfigRagManagedDb::class;
-    protected $ragManagedDbDataType = '';
-    protected $vertexVectorSearchType = GoogleCloudAiplatformV1RagVectorDbConfigVertexVectorSearch::class;
-    protected $vertexVectorSearchDataType = '';
-    /**
-     * Authentication config for the chosen Vector DB.
-     *
-     * @param GoogleCloudAiplatformV1ApiAuth $apiAuth
-     */
-    public function setApiAuth(GoogleCloudAiplatformV1ApiAuth $apiAuth)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1RagVectorDbConfig extends \Google\Model
     {
+        protected $apiAuthType = GoogleCloudAiplatformV1ApiAuth::class;
+        protected $apiAuthDataType = '';
+        protected $pineconeType = GoogleCloudAiplatformV1RagVectorDbConfigPinecone::class;
+        protected $pineconeDataType = '';
+        protected $ragEmbeddingModelConfigType = GoogleCloudAiplatformV1RagEmbeddingModelConfig::class;
+        protected $ragEmbeddingModelConfigDataType = '';
+        protected $ragManagedDbType = GoogleCloudAiplatformV1RagVectorDbConfigRagManagedDb::class;
+        protected $ragManagedDbDataType = '';
+        protected $vertexVectorSearchType = GoogleCloudAiplatformV1RagVectorDbConfigVertexVectorSearch::class;
+        protected $vertexVectorSearchDataType = '';
+        /**
+         * Authentication config for the chosen Vector DB.
+         *
+         * @param GoogleCloudAiplatformV1ApiAuth $apiAuth
+         */
+        public function setApiAuth(GoogleCloudAiplatformV1ApiAuth $apiAuth)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ApiAuth
+         */
+        public function getApiAuth()
+        {
+        }
+        /**
+         * The config for the Pinecone.
+         *
+         * @param GoogleCloudAiplatformV1RagVectorDbConfigPinecone $pinecone
+         */
+        public function setPinecone(GoogleCloudAiplatformV1RagVectorDbConfigPinecone $pinecone)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1RagVectorDbConfigPinecone
+         */
+        public function getPinecone()
+        {
+        }
+        /**
+         * Optional. Immutable. The embedding model config of the Vector DB.
+         *
+         * @param GoogleCloudAiplatformV1RagEmbeddingModelConfig $ragEmbeddingModelConfig
+         */
+        public function setRagEmbeddingModelConfig(GoogleCloudAiplatformV1RagEmbeddingModelConfig $ragEmbeddingModelConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1RagEmbeddingModelConfig
+         */
+        public function getRagEmbeddingModelConfig()
+        {
+        }
+        /**
+         * The config for the RAG-managed Vector DB.
+         *
+         * @param GoogleCloudAiplatformV1RagVectorDbConfigRagManagedDb $ragManagedDb
+         */
+        public function setRagManagedDb(GoogleCloudAiplatformV1RagVectorDbConfigRagManagedDb $ragManagedDb)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1RagVectorDbConfigRagManagedDb
+         */
+        public function getRagManagedDb()
+        {
+        }
+        /**
+         * The config for the Vertex Vector Search.
+         *
+         * @param GoogleCloudAiplatformV1RagVectorDbConfigVertexVectorSearch $vertexVectorSearch
+         */
+        public function setVertexVectorSearch(GoogleCloudAiplatformV1RagVectorDbConfigVertexVectorSearch $vertexVectorSearch)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1RagVectorDbConfigVertexVectorSearch
+         */
+        public function getVertexVectorSearch()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1ApiAuth
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1RagVectorDbConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiAuth()
-    {
-    }
-    /**
-     * The config for the Pinecone.
-     *
-     * @param GoogleCloudAiplatformV1RagVectorDbConfigPinecone $pinecone
-     */
-    public function setPinecone(GoogleCloudAiplatformV1RagVectorDbConfigPinecone $pinecone)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1RagVectorDbConfigPinecone
-     */
-    public function getPinecone()
-    {
-    }
-    /**
-     * Optional. Immutable. The embedding model config of the Vector DB.
-     *
-     * @param GoogleCloudAiplatformV1RagEmbeddingModelConfig $ragEmbeddingModelConfig
-     */
-    public function setRagEmbeddingModelConfig(GoogleCloudAiplatformV1RagEmbeddingModelConfig $ragEmbeddingModelConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1RagEmbeddingModelConfig
-     */
-    public function getRagEmbeddingModelConfig()
-    {
-    }
-    /**
-     * The config for the RAG-managed Vector DB.
-     *
-     * @param GoogleCloudAiplatformV1RagVectorDbConfigRagManagedDb $ragManagedDb
-     */
-    public function setRagManagedDb(GoogleCloudAiplatformV1RagVectorDbConfigRagManagedDb $ragManagedDb)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1RagVectorDbConfigRagManagedDb
-     */
-    public function getRagManagedDb()
-    {
-    }
-    /**
-     * The config for the Vertex Vector Search.
-     *
-     * @param GoogleCloudAiplatformV1RagVectorDbConfigVertexVectorSearch $vertexVectorSearch
-     */
-    public function setVertexVectorSearch(GoogleCloudAiplatformV1RagVectorDbConfigVertexVectorSearch $vertexVectorSearch)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1RagVectorDbConfigVertexVectorSearch
-     */
-    public function getVertexVectorSearch()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1RagVectorDbConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1RagVectorDbConfig
     {
     }
 }

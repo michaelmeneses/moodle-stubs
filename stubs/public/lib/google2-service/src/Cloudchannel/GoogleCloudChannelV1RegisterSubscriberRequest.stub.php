@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1RegisterSubscriberRequest extends \Google\Model
-{
-    /**
-     * Optional. Resource name of the account. Required if integrator is not
-     * provided. Otherwise, leave this field empty/unset.
-     *
-     * @var string
-     */
-    public $account;
-    /**
-     * Optional. Resource name of the integrator. Required if account is not
-     * provided. Otherwise, leave this field empty/unset.
-     *
-     * @var string
-     */
-    public $integrator;
-    /**
-     * Required. Service account that provides subscriber access to the registered
-     * topic.
-     *
-     * @var string
-     */
-    public $serviceAccount;
-    /**
-     * Optional. Resource name of the account. Required if integrator is not
-     * provided. Otherwise, leave this field empty/unset.
-     *
-     * @param string $account
-     */
-    public function setAccount($account)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1RegisterSubscriberRequest extends \Google\Model
     {
+        /**
+         * Optional. Resource name of the account. Required if integrator is not
+         * provided. Otherwise, leave this field empty/unset.
+         *
+         * @var string
+         */
+        public $account;
+        /**
+         * Optional. Resource name of the integrator. Required if account is not
+         * provided. Otherwise, leave this field empty/unset.
+         *
+         * @var string
+         */
+        public $integrator;
+        /**
+         * Required. Service account that provides subscriber access to the registered
+         * topic.
+         *
+         * @var string
+         */
+        public $serviceAccount;
+        /**
+         * Optional. Resource name of the account. Required if integrator is not
+         * provided. Otherwise, leave this field empty/unset.
+         *
+         * @param string $account
+         */
+        public function setAccount($account)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccount()
+        {
+        }
+        /**
+         * Optional. Resource name of the integrator. Required if account is not
+         * provided. Otherwise, leave this field empty/unset.
+         *
+         * @param string $integrator
+         */
+        public function setIntegrator($integrator)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIntegrator()
+        {
+        }
+        /**
+         * Required. Service account that provides subscriber access to the registered
+         * topic.
+         *
+         * @param string $serviceAccount
+         */
+        public function setServiceAccount($serviceAccount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceAccount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1RegisterSubscriberRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccount()
-    {
-    }
-    /**
-     * Optional. Resource name of the integrator. Required if account is not
-     * provided. Otherwise, leave this field empty/unset.
-     *
-     * @param string $integrator
-     */
-    public function setIntegrator($integrator)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIntegrator()
-    {
-    }
-    /**
-     * Required. Service account that provides subscriber access to the registered
-     * topic.
-     *
-     * @param string $serviceAccount
-     */
-    public function setServiceAccount($serviceAccount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceAccount()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1RegisterSubscriberRequest extends \Google\Service\Cloudchannel\GoogleCloudChannelV1RegisterSubscriberRequest
     {
     }
 }

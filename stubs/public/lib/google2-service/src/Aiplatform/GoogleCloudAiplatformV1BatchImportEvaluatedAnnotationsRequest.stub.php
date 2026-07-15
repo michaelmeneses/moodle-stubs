@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1BatchImportEvaluatedAnnotationsRequest extends \Google\Collection
-{
-    protected $collection_key = 'evaluatedAnnotations';
-    protected $evaluatedAnnotationsType = GoogleCloudAiplatformV1EvaluatedAnnotation::class;
-    protected $evaluatedAnnotationsDataType = 'array';
-    /**
-     * Required. Evaluated annotations resource to be imported.
-     *
-     * @param GoogleCloudAiplatformV1EvaluatedAnnotation[] $evaluatedAnnotations
-     */
-    public function setEvaluatedAnnotations($evaluatedAnnotations)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1BatchImportEvaluatedAnnotationsRequest extends \Google\Collection
     {
+        protected $collection_key = 'evaluatedAnnotations';
+        protected $evaluatedAnnotationsType = GoogleCloudAiplatformV1EvaluatedAnnotation::class;
+        protected $evaluatedAnnotationsDataType = 'array';
+        /**
+         * Required. Evaluated annotations resource to be imported.
+         *
+         * @param GoogleCloudAiplatformV1EvaluatedAnnotation[] $evaluatedAnnotations
+         */
+        public function setEvaluatedAnnotations($evaluatedAnnotations)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1EvaluatedAnnotation[]
+         */
+        public function getEvaluatedAnnotations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1EvaluatedAnnotation[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1BatchImportEvaluatedAnnotationsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEvaluatedAnnotations()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1BatchImportEvaluatedAnnotationsRequest extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1BatchImportEvaluatedAnnotationsRequest
     {
     }
 }

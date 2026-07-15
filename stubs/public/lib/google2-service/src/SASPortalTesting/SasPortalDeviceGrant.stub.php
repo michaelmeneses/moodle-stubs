@@ -21,207 +21,216 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SASPortalTesting;
-
-class SasPortalDeviceGrant extends \Google\Collection
-{
-    public const CHANNEL_TYPE_CHANNEL_TYPE_UNSPECIFIED = 'CHANNEL_TYPE_UNSPECIFIED';
-    public const CHANNEL_TYPE_CHANNEL_TYPE_GAA = 'CHANNEL_TYPE_GAA';
-    public const CHANNEL_TYPE_CHANNEL_TYPE_PAL = 'CHANNEL_TYPE_PAL';
-    public const STATE_GRANT_STATE_UNSPECIFIED = 'GRANT_STATE_UNSPECIFIED';
-    /**
-     * The grant has been granted but the device is not heartbeating on it.
-     */
-    public const STATE_GRANT_STATE_GRANTED = 'GRANT_STATE_GRANTED';
-    /**
-     * The grant has been terminated by the SAS.
-     */
-    public const STATE_GRANT_STATE_TERMINATED = 'GRANT_STATE_TERMINATED';
-    /**
-     * The grant has been suspended by the SAS.
-     */
-    public const STATE_GRANT_STATE_SUSPENDED = 'GRANT_STATE_SUSPENDED';
-    /**
-     * The device is currently transmitting.
-     */
-    public const STATE_GRANT_STATE_AUTHORIZED = 'GRANT_STATE_AUTHORIZED';
-    /**
-     * The grant has expired.
-     */
-    public const STATE_GRANT_STATE_EXPIRED = 'GRANT_STATE_EXPIRED';
-    protected $collection_key = 'suspensionReason';
-    /**
-     * Type of channel used.
-     *
-     * @var string
-     */
-    public $channelType;
-    /**
-     * The expiration time of the grant.
-     *
-     * @var string
-     */
-    public $expireTime;
-    protected $frequencyRangeType = SasPortalFrequencyRange::class;
-    protected $frequencyRangeDataType = '';
-    /**
-     * Grant Id.
-     *
-     * @var string
-     */
-    public $grantId;
-    /**
-     * The transmit expiration time of the last heartbeat.
-     *
-     * @var string
-     */
-    public $lastHeartbeatTransmitExpireTime;
-    /**
-     * Maximum Equivalent Isotropically Radiated Power (EIRP) permitted by the
-     * grant. The maximum EIRP is in units of dBm/MHz. The value of `maxEirp`
-     * represents the average (RMS) EIRP that would be measured by the procedure
-     * defined in FCC part 96.41(e)(3).
-     *
-     * @var 
-     */
-    public $maxEirp;
-    protected $moveListType = SasPortalDpaMoveList::class;
-    protected $moveListDataType = 'array';
-    /**
-     * State of the grant.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * If the grant is suspended, the reason(s) for suspension.
-     *
-     * @var string[]
-     */
-    public $suspensionReason;
-    /**
-     * Type of channel used.
-     *
-     * Accepted values: CHANNEL_TYPE_UNSPECIFIED, CHANNEL_TYPE_GAA,
-     * CHANNEL_TYPE_PAL
-     *
-     * @param self::CHANNEL_TYPE_* $channelType
-     */
-    public function setChannelType($channelType)
+namespace Google\Service\SASPortalTesting {
+    class SasPortalDeviceGrant extends \Google\Collection
     {
+        public const CHANNEL_TYPE_CHANNEL_TYPE_UNSPECIFIED = 'CHANNEL_TYPE_UNSPECIFIED';
+        public const CHANNEL_TYPE_CHANNEL_TYPE_GAA = 'CHANNEL_TYPE_GAA';
+        public const CHANNEL_TYPE_CHANNEL_TYPE_PAL = 'CHANNEL_TYPE_PAL';
+        public const STATE_GRANT_STATE_UNSPECIFIED = 'GRANT_STATE_UNSPECIFIED';
+        /**
+         * The grant has been granted but the device is not heartbeating on it.
+         */
+        public const STATE_GRANT_STATE_GRANTED = 'GRANT_STATE_GRANTED';
+        /**
+         * The grant has been terminated by the SAS.
+         */
+        public const STATE_GRANT_STATE_TERMINATED = 'GRANT_STATE_TERMINATED';
+        /**
+         * The grant has been suspended by the SAS.
+         */
+        public const STATE_GRANT_STATE_SUSPENDED = 'GRANT_STATE_SUSPENDED';
+        /**
+         * The device is currently transmitting.
+         */
+        public const STATE_GRANT_STATE_AUTHORIZED = 'GRANT_STATE_AUTHORIZED';
+        /**
+         * The grant has expired.
+         */
+        public const STATE_GRANT_STATE_EXPIRED = 'GRANT_STATE_EXPIRED';
+        protected $collection_key = 'suspensionReason';
+        /**
+         * Type of channel used.
+         *
+         * @var string
+         */
+        public $channelType;
+        /**
+         * The expiration time of the grant.
+         *
+         * @var string
+         */
+        public $expireTime;
+        protected $frequencyRangeType = SasPortalFrequencyRange::class;
+        protected $frequencyRangeDataType = '';
+        /**
+         * Grant Id.
+         *
+         * @var string
+         */
+        public $grantId;
+        /**
+         * The transmit expiration time of the last heartbeat.
+         *
+         * @var string
+         */
+        public $lastHeartbeatTransmitExpireTime;
+        /**
+         * Maximum Equivalent Isotropically Radiated Power (EIRP) permitted by the
+         * grant. The maximum EIRP is in units of dBm/MHz. The value of `maxEirp`
+         * represents the average (RMS) EIRP that would be measured by the procedure
+         * defined in FCC part 96.41(e)(3).
+         *
+         * @var 
+         */
+        public $maxEirp;
+        protected $moveListType = SasPortalDpaMoveList::class;
+        protected $moveListDataType = 'array';
+        /**
+         * State of the grant.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * If the grant is suspended, the reason(s) for suspension.
+         *
+         * @var string[]
+         */
+        public $suspensionReason;
+        /**
+         * Type of channel used.
+         *
+         * Accepted values: CHANNEL_TYPE_UNSPECIFIED, CHANNEL_TYPE_GAA,
+         * CHANNEL_TYPE_PAL
+         *
+         * @param self::CHANNEL_TYPE_* $channelType
+         */
+        public function setChannelType($channelType)
+        {
+        }
+        /**
+         * @return self::CHANNEL_TYPE_*
+         */
+        public function getChannelType()
+        {
+        }
+        /**
+         * The expiration time of the grant.
+         *
+         * @param string $expireTime
+         */
+        public function setExpireTime($expireTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpireTime()
+        {
+        }
+        /**
+         * The transmission frequency range.
+         *
+         * @param SasPortalFrequencyRange $frequencyRange
+         */
+        public function setFrequencyRange(SasPortalFrequencyRange $frequencyRange)
+        {
+        }
+        /**
+         * @return SasPortalFrequencyRange
+         */
+        public function getFrequencyRange()
+        {
+        }
+        /**
+         * Grant Id.
+         *
+         * @param string $grantId
+         */
+        public function setGrantId($grantId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGrantId()
+        {
+        }
+        /**
+         * The transmit expiration time of the last heartbeat.
+         *
+         * @param string $lastHeartbeatTransmitExpireTime
+         */
+        public function setLastHeartbeatTransmitExpireTime($lastHeartbeatTransmitExpireTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastHeartbeatTransmitExpireTime()
+        {
+        }
+        public function setMaxEirp($maxEirp)
+        {
+        }
+        public function getMaxEirp()
+        {
+        }
+        /**
+         * The DPA move lists on which this grant appears.
+         *
+         * @param SasPortalDpaMoveList[] $moveList
+         */
+        public function setMoveList($moveList)
+        {
+        }
+        /**
+         * @return SasPortalDpaMoveList[]
+         */
+        public function getMoveList()
+        {
+        }
+        /**
+         * State of the grant.
+         *
+         * Accepted values: GRANT_STATE_UNSPECIFIED, GRANT_STATE_GRANTED,
+         * GRANT_STATE_TERMINATED, GRANT_STATE_SUSPENDED, GRANT_STATE_AUTHORIZED,
+         * GRANT_STATE_EXPIRED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * If the grant is suspended, the reason(s) for suspension.
+         *
+         * @param string[] $suspensionReason
+         */
+        public function setSuspensionReason($suspensionReason)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSuspensionReason()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::CHANNEL_TYPE_*
+     * Runtime class alias of \Google\Service\SASPortalTesting\SasPortalDeviceGrant registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChannelType()
-    {
-    }
-    /**
-     * The expiration time of the grant.
-     *
-     * @param string $expireTime
-     */
-    public function setExpireTime($expireTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExpireTime()
-    {
-    }
-    /**
-     * The transmission frequency range.
-     *
-     * @param SasPortalFrequencyRange $frequencyRange
-     */
-    public function setFrequencyRange(SasPortalFrequencyRange $frequencyRange)
-    {
-    }
-    /**
-     * @return SasPortalFrequencyRange
-     */
-    public function getFrequencyRange()
-    {
-    }
-    /**
-     * Grant Id.
-     *
-     * @param string $grantId
-     */
-    public function setGrantId($grantId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGrantId()
-    {
-    }
-    /**
-     * The transmit expiration time of the last heartbeat.
-     *
-     * @param string $lastHeartbeatTransmitExpireTime
-     */
-    public function setLastHeartbeatTransmitExpireTime($lastHeartbeatTransmitExpireTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastHeartbeatTransmitExpireTime()
-    {
-    }
-    public function setMaxEirp($maxEirp)
-    {
-    }
-    public function getMaxEirp()
-    {
-    }
-    /**
-     * The DPA move lists on which this grant appears.
-     *
-     * @param SasPortalDpaMoveList[] $moveList
-     */
-    public function setMoveList($moveList)
-    {
-    }
-    /**
-     * @return SasPortalDpaMoveList[]
-     */
-    public function getMoveList()
-    {
-    }
-    /**
-     * State of the grant.
-     *
-     * Accepted values: GRANT_STATE_UNSPECIFIED, GRANT_STATE_GRANTED,
-     * GRANT_STATE_TERMINATED, GRANT_STATE_SUSPENDED, GRANT_STATE_AUTHORIZED,
-     * GRANT_STATE_EXPIRED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * If the grant is suspended, the reason(s) for suspension.
-     *
-     * @param string[] $suspensionReason
-     */
-    public function setSuspensionReason($suspensionReason)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSuspensionReason()
+    class Google_Service_SASPortalTesting_SasPortalDeviceGrant extends \Google\Service\SASPortalTesting\SasPortalDeviceGrant
     {
     }
 }

@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessBusinessInformation;
-
-class Profile extends \Google\Model
-{
-    /**
-     * Required. Description of the location in your own voice, not editable by
-     * anyone else.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Required. Description of the location in your own voice, not editable by
-     * anyone else.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\MyBusinessBusinessInformation {
+    class Profile extends \Google\Model
     {
+        /**
+         * Required. Description of the location in your own voice, not editable by
+         * anyone else.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Required. Description of the location in your own voice, not editable by
+         * anyone else.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MyBusinessBusinessInformation\Profile registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
+    class Google_Service_MyBusinessBusinessInformation_Profile extends \Google\Service\MyBusinessBusinessInformation\Profile
     {
     }
 }

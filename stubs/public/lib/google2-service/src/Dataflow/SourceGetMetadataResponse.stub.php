@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class SourceGetMetadataResponse extends \Google\Model
-{
-    protected $metadataType = SourceMetadata::class;
-    protected $metadataDataType = '';
-    /**
-     * The computed metadata.
-     *
-     * @param SourceMetadata $metadata
-     */
-    public function setMetadata(SourceMetadata $metadata)
+namespace Google\Service\Dataflow {
+    class SourceGetMetadataResponse extends \Google\Model
     {
+        protected $metadataType = SourceMetadata::class;
+        protected $metadataDataType = '';
+        /**
+         * The computed metadata.
+         *
+         * @param SourceMetadata $metadata
+         */
+        public function setMetadata(SourceMetadata $metadata)
+        {
+        }
+        /**
+         * @return SourceMetadata
+         */
+        public function getMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SourceMetadata
+     * Runtime class alias of \Google\Service\Dataflow\SourceGetMetadataResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetadata()
+    class Google_Service_Dataflow_SourceGetMetadataResponse extends \Google\Service\Dataflow\SourceGetMetadataResponse
     {
     }
 }

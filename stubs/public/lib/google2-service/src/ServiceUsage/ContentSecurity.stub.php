@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceUsage;
-
-class ContentSecurity extends \Google\Collection
-{
-    protected $collection_key = 'contentSecurityProviders';
-    protected $contentSecurityProvidersType = ContentSecurityProvider::class;
-    protected $contentSecurityProvidersDataType = 'array';
-    /**
-     * List of content security providers that are enabled for content scanning.
-     *
-     * @param ContentSecurityProvider[] $contentSecurityProviders
-     */
-    public function setContentSecurityProviders($contentSecurityProviders)
+namespace Google\Service\ServiceUsage {
+    class ContentSecurity extends \Google\Collection
     {
+        protected $collection_key = 'contentSecurityProviders';
+        protected $contentSecurityProvidersType = ContentSecurityProvider::class;
+        protected $contentSecurityProvidersDataType = 'array';
+        /**
+         * List of content security providers that are enabled for content scanning.
+         *
+         * @param ContentSecurityProvider[] $contentSecurityProviders
+         */
+        public function setContentSecurityProviders($contentSecurityProviders)
+        {
+        }
+        /**
+         * @return ContentSecurityProvider[]
+         */
+        public function getContentSecurityProviders()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ContentSecurityProvider[]
+     * Runtime class alias of \Google\Service\ServiceUsage\ContentSecurity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContentSecurityProviders()
+    class Google_Service_ServiceUsage_ContentSecurity extends \Google\Service\ServiceUsage\ContentSecurity
     {
     }
 }

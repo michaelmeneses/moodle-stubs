@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class LicensesSummary extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $count;
-    /**
-     * @var string
-     */
-    public $license;
-    /**
-     * @param string
-     */
-    public function setCount($count)
+namespace Google\Service\ContainerAnalysis {
+    class LicensesSummary extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $count;
+        /**
+         * @var string
+         */
+        public $license;
+        /**
+         * @param string
+         */
+        public function setCount($count)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCount()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLicense($license)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLicense()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ContainerAnalysis\LicensesSummary registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCount()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLicense($license)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLicense()
+    class Google_Service_ContainerAnalysis_LicensesSummary extends \Google\Service\ContainerAnalysis\LicensesSummary
     {
     }
 }

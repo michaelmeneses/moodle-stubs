@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ReinforcementLearningDataStats extends \Google\Model
-{
-    protected $preferenceDatasetStatsType = GoogleCloudAiplatformV1DatasetStats::class;
-    protected $preferenceDatasetStatsDataType = '';
-    protected $promptDatasetStatsType = GoogleCloudAiplatformV1DatasetStats::class;
-    protected $promptDatasetStatsDataType = '';
-    /**
-     * @param GoogleCloudAiplatformV1DatasetStats
-     */
-    public function setPreferenceDatasetStats(GoogleCloudAiplatformV1DatasetStats $preferenceDatasetStats)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ReinforcementLearningDataStats extends \Google\Model
     {
+        protected $preferenceDatasetStatsType = GoogleCloudAiplatformV1DatasetStats::class;
+        protected $preferenceDatasetStatsDataType = '';
+        protected $promptDatasetStatsType = GoogleCloudAiplatformV1DatasetStats::class;
+        protected $promptDatasetStatsDataType = '';
+        /**
+         * @param GoogleCloudAiplatformV1DatasetStats
+         */
+        public function setPreferenceDatasetStats(GoogleCloudAiplatformV1DatasetStats $preferenceDatasetStats)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1DatasetStats
+         */
+        public function getPreferenceDatasetStats()
+        {
+        }
+        /**
+         * @param GoogleCloudAiplatformV1DatasetStats
+         */
+        public function setPromptDatasetStats(GoogleCloudAiplatformV1DatasetStats $promptDatasetStats)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1DatasetStats
+         */
+        public function getPromptDatasetStats()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1DatasetStats
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ReinforcementLearningDataStats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPreferenceDatasetStats()
-    {
-    }
-    /**
-     * @param GoogleCloudAiplatformV1DatasetStats
-     */
-    public function setPromptDatasetStats(GoogleCloudAiplatformV1DatasetStats $promptDatasetStats)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1DatasetStats
-     */
-    public function getPromptDatasetStats()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ReinforcementLearningDataStats extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ReinforcementLearningDataStats
     {
     }
 }

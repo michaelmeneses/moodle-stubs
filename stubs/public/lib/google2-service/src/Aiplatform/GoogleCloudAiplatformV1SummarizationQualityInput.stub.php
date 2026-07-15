@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SummarizationQualityInput extends \Google\Model
-{
-    protected $instanceType = GoogleCloudAiplatformV1SummarizationQualityInstance::class;
-    protected $instanceDataType = '';
-    protected $metricSpecType = GoogleCloudAiplatformV1SummarizationQualitySpec::class;
-    protected $metricSpecDataType = '';
-    /**
-     * Required. Summarization quality instance.
-     *
-     * @param GoogleCloudAiplatformV1SummarizationQualityInstance $instance
-     */
-    public function setInstance(GoogleCloudAiplatformV1SummarizationQualityInstance $instance)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SummarizationQualityInput extends \Google\Model
     {
+        protected $instanceType = GoogleCloudAiplatformV1SummarizationQualityInstance::class;
+        protected $instanceDataType = '';
+        protected $metricSpecType = GoogleCloudAiplatformV1SummarizationQualitySpec::class;
+        protected $metricSpecDataType = '';
+        /**
+         * Required. Summarization quality instance.
+         *
+         * @param GoogleCloudAiplatformV1SummarizationQualityInstance $instance
+         */
+        public function setInstance(GoogleCloudAiplatformV1SummarizationQualityInstance $instance)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SummarizationQualityInstance
+         */
+        public function getInstance()
+        {
+        }
+        /**
+         * Required. Spec for summarization quality score metric.
+         *
+         * @param GoogleCloudAiplatformV1SummarizationQualitySpec $metricSpec
+         */
+        public function setMetricSpec(GoogleCloudAiplatformV1SummarizationQualitySpec $metricSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SummarizationQualitySpec
+         */
+        public function getMetricSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1SummarizationQualityInstance
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SummarizationQualityInput registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstance()
-    {
-    }
-    /**
-     * Required. Spec for summarization quality score metric.
-     *
-     * @param GoogleCloudAiplatformV1SummarizationQualitySpec $metricSpec
-     */
-    public function setMetricSpec(GoogleCloudAiplatformV1SummarizationQualitySpec $metricSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1SummarizationQualitySpec
-     */
-    public function getMetricSpec()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SummarizationQualityInput extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SummarizationQualityInput
     {
     }
 }

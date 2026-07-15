@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0ServicesCustomColumnHeader extends \Google\Model
-{
-    /**
-     * The custom column ID.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * The user defined name of the custom column.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * True when the custom column references metrics.
-     *
-     * @var bool
-     */
-    public $referencesMetrics;
-    /**
-     * The custom column ID.
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0ServicesCustomColumnHeader extends \Google\Model
     {
+        /**
+         * The custom column ID.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * The user defined name of the custom column.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * True when the custom column references metrics.
+         *
+         * @var bool
+         */
+        public $referencesMetrics;
+        /**
+         * The custom column ID.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * The user defined name of the custom column.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * True when the custom column references metrics.
+         *
+         * @param bool $referencesMetrics
+         */
+        public function setReferencesMetrics($referencesMetrics)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getReferencesMetrics()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0ServicesCustomColumnHeader registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * The user defined name of the custom column.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * True when the custom column references metrics.
-     *
-     * @param bool $referencesMetrics
-     */
-    public function setReferencesMetrics($referencesMetrics)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getReferencesMetrics()
+    class Google_Service_SA360_GoogleAdsSearchads360V0ServicesCustomColumnHeader extends \Google\Service\SA360\GoogleAdsSearchads360V0ServicesCustomColumnHeader
     {
     }
 }

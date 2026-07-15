@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CertificateManager;
-
-class TrustStore extends \Google\Collection
-{
-    protected $collection_key = 'trustAnchors';
-    protected $intermediateCasType = IntermediateCA::class;
-    protected $intermediateCasDataType = 'array';
-    protected $trustAnchorsType = TrustAnchor::class;
-    protected $trustAnchorsDataType = 'array';
-    /**
-     * Optional. Set of intermediate CA certificates used for the path building
-     * phase of chain validation. The field is currently not supported if
-     * TrustConfig is used for the workload certificate feature.
-     *
-     * @param IntermediateCA[] $intermediateCas
-     */
-    public function setIntermediateCas($intermediateCas)
+namespace Google\Service\CertificateManager {
+    class TrustStore extends \Google\Collection
     {
+        protected $collection_key = 'trustAnchors';
+        protected $intermediateCasType = IntermediateCA::class;
+        protected $intermediateCasDataType = 'array';
+        protected $trustAnchorsType = TrustAnchor::class;
+        protected $trustAnchorsDataType = 'array';
+        /**
+         * Optional. Set of intermediate CA certificates used for the path building
+         * phase of chain validation. The field is currently not supported if
+         * TrustConfig is used for the workload certificate feature.
+         *
+         * @param IntermediateCA[] $intermediateCas
+         */
+        public function setIntermediateCas($intermediateCas)
+        {
+        }
+        /**
+         * @return IntermediateCA[]
+         */
+        public function getIntermediateCas()
+        {
+        }
+        /**
+         * Optional. List of Trust Anchors to be used while performing validation
+         * against a given TrustStore.
+         *
+         * @param TrustAnchor[] $trustAnchors
+         */
+        public function setTrustAnchors($trustAnchors)
+        {
+        }
+        /**
+         * @return TrustAnchor[]
+         */
+        public function getTrustAnchors()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return IntermediateCA[]
+     * Runtime class alias of \Google\Service\CertificateManager\TrustStore registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIntermediateCas()
-    {
-    }
-    /**
-     * Optional. List of Trust Anchors to be used while performing validation
-     * against a given TrustStore.
-     *
-     * @param TrustAnchor[] $trustAnchors
-     */
-    public function setTrustAnchors($trustAnchors)
-    {
-    }
-    /**
-     * @return TrustAnchor[]
-     */
-    public function getTrustAnchors()
+    class Google_Service_CertificateManager_TrustStore extends \Google\Service\CertificateManager\TrustStore
     {
     }
 }

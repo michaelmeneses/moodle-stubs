@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class OtrModificationEvent extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $newOtrStatus;
-    /**
-     * @var string
-     */
-    public $newOtrToggle;
-    /**
-     * @var string
-     */
-    public $oldOtrStatus;
-    /**
-     * @var string
-     */
-    public $oldOtrToggle;
-    /**
-     * @param string
-     */
-    public function setNewOtrStatus($newOtrStatus)
+namespace Google\Service\CloudSearch {
+    class OtrModificationEvent extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $newOtrStatus;
+        /**
+         * @var string
+         */
+        public $newOtrToggle;
+        /**
+         * @var string
+         */
+        public $oldOtrStatus;
+        /**
+         * @var string
+         */
+        public $oldOtrToggle;
+        /**
+         * @param string
+         */
+        public function setNewOtrStatus($newOtrStatus)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNewOtrStatus()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNewOtrToggle($newOtrToggle)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNewOtrToggle()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOldOtrStatus($oldOtrStatus)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOldOtrStatus()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOldOtrToggle($oldOtrToggle)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOldOtrToggle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\OtrModificationEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNewOtrStatus()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNewOtrToggle($newOtrToggle)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNewOtrToggle()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOldOtrStatus($oldOtrStatus)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOldOtrStatus()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOldOtrToggle($oldOtrToggle)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOldOtrToggle()
+    class Google_Service_CloudSearch_OtrModificationEvent extends \Google\Service\CloudSearch\OtrModificationEvent
     {
     }
 }

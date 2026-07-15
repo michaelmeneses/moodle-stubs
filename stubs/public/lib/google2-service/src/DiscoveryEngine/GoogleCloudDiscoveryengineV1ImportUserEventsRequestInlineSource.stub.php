@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1ImportUserEventsRequestInlineSource extends \Google\Collection
-{
-    protected $collection_key = 'userEvents';
-    protected $userEventsType = GoogleCloudDiscoveryengineV1UserEvent::class;
-    protected $userEventsDataType = 'array';
-    /**
-     * Required. A list of user events to import. Recommended max of 10k items.
-     *
-     * @param GoogleCloudDiscoveryengineV1UserEvent[] $userEvents
-     */
-    public function setUserEvents($userEvents)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1ImportUserEventsRequestInlineSource extends \Google\Collection
     {
+        protected $collection_key = 'userEvents';
+        protected $userEventsType = GoogleCloudDiscoveryengineV1UserEvent::class;
+        protected $userEventsDataType = 'array';
+        /**
+         * Required. A list of user events to import. Recommended max of 10k items.
+         *
+         * @param GoogleCloudDiscoveryengineV1UserEvent[] $userEvents
+         */
+        public function setUserEvents($userEvents)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1UserEvent[]
+         */
+        public function getUserEvents()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1UserEvent[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ImportUserEventsRequestInlineSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUserEvents()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1ImportUserEventsRequestInlineSource extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ImportUserEventsRequestInlineSource
     {
     }
 }

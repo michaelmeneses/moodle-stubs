@@ -21,122 +21,131 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1alpha1ExportInsightsDataMetadata extends \Google\Collection
-{
-    protected $collection_key = 'partialErrors';
-    /**
-     * The number of conversations that were exported successfully.
-     *
-     * @var int
-     */
-    public $completedExportCount;
-    /**
-     * Output only. The time the operation was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Output only. The time the operation finished running.
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * The number of conversations that failed to be exported.
-     *
-     * @var int
-     */
-    public $failedExportCount;
-    protected $partialErrorsType = GoogleRpcStatus::class;
-    protected $partialErrorsDataType = 'array';
-    protected $requestType = GoogleCloudContactcenterinsightsV1alpha1ExportInsightsDataRequest::class;
-    protected $requestDataType = '';
-    /**
-     * The number of conversations that were exported successfully.
-     *
-     * @param int $completedExportCount
-     */
-    public function setCompletedExportCount($completedExportCount)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1alpha1ExportInsightsDataMetadata extends \Google\Collection
     {
+        protected $collection_key = 'partialErrors';
+        /**
+         * The number of conversations that were exported successfully.
+         *
+         * @var int
+         */
+        public $completedExportCount;
+        /**
+         * Output only. The time the operation was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Output only. The time the operation finished running.
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * The number of conversations that failed to be exported.
+         *
+         * @var int
+         */
+        public $failedExportCount;
+        protected $partialErrorsType = GoogleRpcStatus::class;
+        protected $partialErrorsDataType = 'array';
+        protected $requestType = GoogleCloudContactcenterinsightsV1alpha1ExportInsightsDataRequest::class;
+        protected $requestDataType = '';
+        /**
+         * The number of conversations that were exported successfully.
+         *
+         * @param int $completedExportCount
+         */
+        public function setCompletedExportCount($completedExportCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCompletedExportCount()
+        {
+        }
+        /**
+         * Output only. The time the operation was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. The time the operation finished running.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * The number of conversations that failed to be exported.
+         *
+         * @param int $failedExportCount
+         */
+        public function setFailedExportCount($failedExportCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getFailedExportCount()
+        {
+        }
+        /**
+         * Partial errors during export operation that might cause the operation
+         * output to be incomplete.
+         *
+         * @param GoogleRpcStatus[] $partialErrors
+         */
+        public function setPartialErrors($partialErrors)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus[]
+         */
+        public function getPartialErrors()
+        {
+        }
+        /**
+         * The original request for export.
+         *
+         * @param GoogleCloudContactcenterinsightsV1alpha1ExportInsightsDataRequest $request
+         */
+        public function setRequest(GoogleCloudContactcenterinsightsV1alpha1ExportInsightsDataRequest $request)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1alpha1ExportInsightsDataRequest
+         */
+        public function getRequest()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1ExportInsightsDataMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCompletedExportCount()
-    {
-    }
-    /**
-     * Output only. The time the operation was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. The time the operation finished running.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndTime()
-    {
-    }
-    /**
-     * The number of conversations that failed to be exported.
-     *
-     * @param int $failedExportCount
-     */
-    public function setFailedExportCount($failedExportCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getFailedExportCount()
-    {
-    }
-    /**
-     * Partial errors during export operation that might cause the operation
-     * output to be incomplete.
-     *
-     * @param GoogleRpcStatus[] $partialErrors
-     */
-    public function setPartialErrors($partialErrors)
-    {
-    }
-    /**
-     * @return GoogleRpcStatus[]
-     */
-    public function getPartialErrors()
-    {
-    }
-    /**
-     * The original request for export.
-     *
-     * @param GoogleCloudContactcenterinsightsV1alpha1ExportInsightsDataRequest $request
-     */
-    public function setRequest(GoogleCloudContactcenterinsightsV1alpha1ExportInsightsDataRequest $request)
-    {
-    }
-    /**
-     * @return GoogleCloudContactcenterinsightsV1alpha1ExportInsightsDataRequest
-     */
-    public function getRequest()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1alpha1ExportInsightsDataMetadata extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1ExportInsightsDataMetadata
     {
     }
 }

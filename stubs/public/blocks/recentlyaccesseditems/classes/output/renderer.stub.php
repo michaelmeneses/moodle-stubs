@@ -29,6 +29,7 @@
  */
 namespace block_recentlyaccesseditems\output;
 
+use plugin_renderer_base;
 /**
  * Recently accessed items block renderer
  *

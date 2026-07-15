@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2FileStoreInfoTypeSummary extends \Google\Model
-{
-    protected $infoTypeType = GooglePrivacyDlpV2InfoType::class;
-    protected $infoTypeDataType = '';
-    /**
-     * The InfoType seen.
-     *
-     * @param GooglePrivacyDlpV2InfoType $infoType
-     */
-    public function setInfoType(GooglePrivacyDlpV2InfoType $infoType)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2FileStoreInfoTypeSummary extends \Google\Model
     {
+        protected $infoTypeType = GooglePrivacyDlpV2InfoType::class;
+        protected $infoTypeDataType = '';
+        /**
+         * The InfoType seen.
+         *
+         * @param GooglePrivacyDlpV2InfoType $infoType
+         */
+        public function setInfoType(GooglePrivacyDlpV2InfoType $infoType)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2InfoType
+         */
+        public function getInfoType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2InfoType
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2FileStoreInfoTypeSummary registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInfoType()
+    class Google_Service_DLP_GooglePrivacyDlpV2FileStoreInfoTypeSummary extends \Google\Service\DLP\GooglePrivacyDlpV2FileStoreInfoTypeSummary
     {
     }
 }

@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class VideoPlayer extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $embedHeight;
-    /**
-     * An
-     *
-     * @var string
-     */
-    public $embedHtml;
-    /**
-     * The embed width
-     *
-     * @var string
-     */
-    public $embedWidth;
-    /**
-     * @param string $embedHeight
-     */
-    public function setEmbedHeight($embedHeight)
+namespace Google\Service\YouTube {
+    class VideoPlayer extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $embedHeight;
+        /**
+         * An
+         *
+         * @var string
+         */
+        public $embedHtml;
+        /**
+         * The embed width
+         *
+         * @var string
+         */
+        public $embedWidth;
+        /**
+         * @param string $embedHeight
+         */
+        public function setEmbedHeight($embedHeight)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmbedHeight()
+        {
+        }
+        /**
+         * An
+         *
+         * @param string $embedHtml
+         */
+        public function setEmbedHtml($embedHtml)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmbedHtml()
+        {
+        }
+        /**
+         * The embed width
+         *
+         * @param string $embedWidth
+         */
+        public function setEmbedWidth($embedWidth)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmbedWidth()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\VideoPlayer registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmbedHeight()
-    {
-    }
-    /**
-     * An
-     *
-     * @param string $embedHtml
-     */
-    public function setEmbedHtml($embedHtml)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEmbedHtml()
-    {
-    }
-    /**
-     * The embed width
-     *
-     * @param string $embedWidth
-     */
-    public function setEmbedWidth($embedWidth)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEmbedWidth()
+    class Google_Service_YouTube_VideoPlayer extends \Google\Service\YouTube\VideoPlayer
     {
     }
 }

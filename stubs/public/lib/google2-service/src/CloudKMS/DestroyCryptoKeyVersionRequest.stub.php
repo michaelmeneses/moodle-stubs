@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudKMS;
-
-class DestroyCryptoKeyVersionRequest extends \Google\Model
-{
+namespace Google\Service\CloudKMS {
+    class DestroyCryptoKeyVersionRequest extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudKMS\DestroyCryptoKeyVersionRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudKMS_DestroyCryptoKeyVersionRequest extends \Google\Service\CloudKMS\DestroyCryptoKeyVersionRequest
+    {
+    }
 }

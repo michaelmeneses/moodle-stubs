@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Verifiedaccess;
-
-class Challenge extends \Google\Model
-{
-    /**
-     * Generated challenge, the bytes representation of SignedData.
-     *
-     * @var string
-     */
-    public $challenge;
-    /**
-     * Generated challenge, the bytes representation of SignedData.
-     *
-     * @param string $challenge
-     */
-    public function setChallenge($challenge)
+namespace Google\Service\Verifiedaccess {
+    class Challenge extends \Google\Model
     {
+        /**
+         * Generated challenge, the bytes representation of SignedData.
+         *
+         * @var string
+         */
+        public $challenge;
+        /**
+         * Generated challenge, the bytes representation of SignedData.
+         *
+         * @param string $challenge
+         */
+        public function setChallenge($challenge)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChallenge()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Verifiedaccess\Challenge registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChallenge()
+    class Google_Service_Verifiedaccess_Challenge extends \Google\Service\Verifiedaccess\Challenge
     {
     }
 }

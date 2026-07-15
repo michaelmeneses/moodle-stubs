@@ -21,44 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessPlaceActions\Resource;
-
-/**
- * The "placeActionTypeMetadata" collection of methods.
- * Typical usage is:
- *  <code>
- *   $mybusinessplaceactionsService = new Google\Service\MyBusinessPlaceActions(...);
- *   $placeActionTypeMetadata = $mybusinessplaceactionsService->placeActionTypeMetadata;
- *  </code>
- */
-class PlaceActionTypeMetadata extends \Google\Service\Resource
-{
+namespace Google\Service\MyBusinessPlaceActions\Resource {
+    use Google\Service\MyBusinessPlaceActions\ListPlaceActionTypeMetadataResponse;
     /**
-     * Returns the list of available place action types for a location or country.
-     * (placeActionTypeMetadata.listPlaceActionTypeMetadata)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Optional. A filter constraining the place action
-     * types to return metadata for. The response includes entries that match the
-     * filter. We support only the following filters: 1. location=XYZ where XYZ is a
-     * string indicating the resource name of a location, in the format
-     * `locations/{location_id}`. 2. region_code=XYZ where XYZ is a Unicode CLDR
-     * region code to find available action types. If no filter is provided, all
-     * place action types are returned.
-     * @opt_param string languageCode Optional. The IETF BCP-47 code of language to
-     * get display names in. If this language is not available, they will be
-     * provided in English.
-     * @opt_param int pageSize Optional. How many action types to include per page.
-     * Default is 10, minimum is 1.
-     * @opt_param string pageToken Optional. If specified, the next page of place
-     * action type metadata is retrieved. The `pageToken` is returned when a call to
-     * `placeActionTypeMetadata.list` returns more results than can fit into the
-     * requested page size.
-     * @return ListPlaceActionTypeMetadataResponse
-     * @throws \Google\Service\Exception
+     * The "placeActionTypeMetadata" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $mybusinessplaceactionsService = new Google\Service\MyBusinessPlaceActions(...);
+     *   $placeActionTypeMetadata = $mybusinessplaceactionsService->placeActionTypeMetadata;
+     *  </code>
      */
-    public function listPlaceActionTypeMetadata($optParams = [])
+    class PlaceActionTypeMetadata extends \Google\Service\Resource
+    {
+        /**
+         * Returns the list of available place action types for a location or country.
+         * (placeActionTypeMetadata.listPlaceActionTypeMetadata)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Optional. A filter constraining the place action
+         * types to return metadata for. The response includes entries that match the
+         * filter. We support only the following filters: 1. location=XYZ where XYZ is a
+         * string indicating the resource name of a location, in the format
+         * `locations/{location_id}`. 2. region_code=XYZ where XYZ is a Unicode CLDR
+         * region code to find available action types. If no filter is provided, all
+         * place action types are returned.
+         * @opt_param string languageCode Optional. The IETF BCP-47 code of language to
+         * get display names in. If this language is not available, they will be
+         * provided in English.
+         * @opt_param int pageSize Optional. How many action types to include per page.
+         * Default is 10, minimum is 1.
+         * @opt_param string pageToken Optional. If specified, the next page of place
+         * action type metadata is retrieved. The `pageToken` is returned when a call to
+         * `placeActionTypeMetadata.list` returns more results than can fit into the
+         * requested page size.
+         * @return ListPlaceActionTypeMetadataResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listPlaceActionTypeMetadata($optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\MyBusinessPlaceActions\Resource\PlaceActionTypeMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_MyBusinessPlaceActions_Resource_PlaceActionTypeMetadata extends \Google\Service\MyBusinessPlaceActions\Resource\PlaceActionTypeMetadata
     {
     }
 }

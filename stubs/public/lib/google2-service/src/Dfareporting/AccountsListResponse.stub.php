@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class AccountsListResponse extends \Google\Collection
-{
-    protected $collection_key = 'accounts';
-    protected $accountsType = Account::class;
-    protected $accountsDataType = 'array';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#accountsListResponse".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Pagination token to be used for the next list operation.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Account collection.
-     *
-     * @param Account[] $accounts
-     */
-    public function setAccounts($accounts)
+namespace Google\Service\Dfareporting {
+    class AccountsListResponse extends \Google\Collection
     {
+        protected $collection_key = 'accounts';
+        protected $accountsType = Account::class;
+        protected $accountsDataType = 'array';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#accountsListResponse".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Pagination token to be used for the next list operation.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Account collection.
+         *
+         * @param Account[] $accounts
+         */
+        public function setAccounts($accounts)
+        {
+        }
+        /**
+         * @return Account[]
+         */
+        public function getAccounts()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#accountsListResponse".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Pagination token to be used for the next list operation.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Account[]
+     * Runtime class alias of \Google\Service\Dfareporting\AccountsListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccounts()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#accountsListResponse".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Pagination token to be used for the next list operation.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Dfareporting_AccountsListResponse extends \Google\Service\Dfareporting\AccountsListResponse
     {
     }
 }

@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vault;
-
-class AddHeldAccountResult extends \Google\Model
-{
-    protected $accountType = HeldAccount::class;
-    protected $accountDataType = '';
-    protected $statusType = Status::class;
-    protected $statusDataType = '';
-    /**
-     * Returned when the account was successfully created.
-     *
-     * @param HeldAccount $account
-     */
-    public function setAccount(HeldAccount $account)
+namespace Google\Service\Vault {
+    class AddHeldAccountResult extends \Google\Model
     {
+        protected $accountType = HeldAccount::class;
+        protected $accountDataType = '';
+        protected $statusType = Status::class;
+        protected $statusDataType = '';
+        /**
+         * Returned when the account was successfully created.
+         *
+         * @param HeldAccount $account
+         */
+        public function setAccount(HeldAccount $account)
+        {
+        }
+        /**
+         * @return HeldAccount
+         */
+        public function getAccount()
+        {
+        }
+        /**
+         * Reports the request status. If it failed, returns an error message.
+         *
+         * @param Status $status
+         */
+        public function setStatus(Status $status)
+        {
+        }
+        /**
+         * @return Status
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return HeldAccount
+     * Runtime class alias of \Google\Service\Vault\AddHeldAccountResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccount()
-    {
-    }
-    /**
-     * Reports the request status. If it failed, returns an error message.
-     *
-     * @param Status $status
-     */
-    public function setStatus(Status $status)
-    {
-    }
-    /**
-     * @return Status
-     */
-    public function getStatus()
+    class Google_Service_Vault_AddHeldAccountResult extends \Google\Service\Vault\AddHeldAccountResult
     {
     }
 }

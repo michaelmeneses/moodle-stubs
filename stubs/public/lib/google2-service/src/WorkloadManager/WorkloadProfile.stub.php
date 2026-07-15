@@ -21,118 +21,127 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager;
-
-class WorkloadProfile extends \Google\Model
-{
-    /**
-     * unspecified workload type
-     */
-    public const WORKLOAD_TYPE_WORKLOAD_TYPE_UNSPECIFIED = 'WORKLOAD_TYPE_UNSPECIFIED';
-    /**
-     * running sap workload s4/hana
-     */
-    public const WORKLOAD_TYPE_S4_HANA = 'S4_HANA';
-    /**
-     * Optional. such as name, description, version. More example can be found in
-     * deployment
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Identifier. name of resource names have the form
-     * 'projects/{project_id}/locations/{location}/workloadProfiles/{workload_id}'
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. time when the workload data was refreshed
-     *
-     * @var string
-     */
-    public $refreshedTime;
-    protected $sapWorkloadType = SapWorkload::class;
-    protected $sapWorkloadDataType = '';
-    /**
-     * Required. The type of the workload
-     *
-     * @var string
-     */
-    public $workloadType;
-    /**
-     * Optional. such as name, description, version. More example can be found in
-     * deployment
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
+namespace Google\Service\WorkloadManager {
+    class WorkloadProfile extends \Google\Model
     {
+        /**
+         * unspecified workload type
+         */
+        public const WORKLOAD_TYPE_WORKLOAD_TYPE_UNSPECIFIED = 'WORKLOAD_TYPE_UNSPECIFIED';
+        /**
+         * running sap workload s4/hana
+         */
+        public const WORKLOAD_TYPE_S4_HANA = 'S4_HANA';
+        /**
+         * Optional. such as name, description, version. More example can be found in
+         * deployment
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Identifier. name of resource names have the form
+         * 'projects/{project_id}/locations/{location}/workloadProfiles/{workload_id}'
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. time when the workload data was refreshed
+         *
+         * @var string
+         */
+        public $refreshedTime;
+        protected $sapWorkloadType = SapWorkload::class;
+        protected $sapWorkloadDataType = '';
+        /**
+         * Required. The type of the workload
+         *
+         * @var string
+         */
+        public $workloadType;
+        /**
+         * Optional. such as name, description, version. More example can be found in
+         * deployment
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Identifier. name of resource names have the form
+         * 'projects/{project_id}/locations/{location}/workloadProfiles/{workload_id}'
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Required. time when the workload data was refreshed
+         *
+         * @param string $refreshedTime
+         */
+        public function setRefreshedTime($refreshedTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRefreshedTime()
+        {
+        }
+        /**
+         * The sap workload content
+         *
+         * @param SapWorkload $sapWorkload
+         */
+        public function setSapWorkload(SapWorkload $sapWorkload)
+        {
+        }
+        /**
+         * @return SapWorkload
+         */
+        public function getSapWorkload()
+        {
+        }
+        /**
+         * Required. The type of the workload
+         *
+         * Accepted values: WORKLOAD_TYPE_UNSPECIFIED, S4_HANA
+         *
+         * @param self::WORKLOAD_TYPE_* $workloadType
+         */
+        public function setWorkloadType($workloadType)
+        {
+        }
+        /**
+         * @return self::WORKLOAD_TYPE_*
+         */
+        public function getWorkloadType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\WorkloadManager\WorkloadProfile registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLabels()
-    {
-    }
-    /**
-     * Identifier. name of resource names have the form
-     * 'projects/{project_id}/locations/{location}/workloadProfiles/{workload_id}'
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Required. time when the workload data was refreshed
-     *
-     * @param string $refreshedTime
-     */
-    public function setRefreshedTime($refreshedTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRefreshedTime()
-    {
-    }
-    /**
-     * The sap workload content
-     *
-     * @param SapWorkload $sapWorkload
-     */
-    public function setSapWorkload(SapWorkload $sapWorkload)
-    {
-    }
-    /**
-     * @return SapWorkload
-     */
-    public function getSapWorkload()
-    {
-    }
-    /**
-     * Required. The type of the workload
-     *
-     * Accepted values: WORKLOAD_TYPE_UNSPECIFIED, S4_HANA
-     *
-     * @param self::WORKLOAD_TYPE_* $workloadType
-     */
-    public function setWorkloadType($workloadType)
-    {
-    }
-    /**
-     * @return self::WORKLOAD_TYPE_*
-     */
-    public function getWorkloadType()
+    class Google_Service_WorkloadManager_WorkloadProfile extends \Google\Service\WorkloadManager\WorkloadProfile
     {
     }
 }

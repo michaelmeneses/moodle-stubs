@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SearchConsole;
-
-class ApiDataRow extends \Google\Collection
-{
-    protected $collection_key = 'keys';
-    public $clicks;
-    public $ctr;
-    public $impressions;
+namespace Google\Service\SearchConsole {
+    class ApiDataRow extends \Google\Collection
+    {
+        protected $collection_key = 'keys';
+        public $clicks;
+        public $ctr;
+        public $impressions;
+        /**
+         * @var string[]
+         */
+        public $keys;
+        public $position;
+        public function setClicks($clicks)
+        {
+        }
+        public function getClicks()
+        {
+        }
+        public function setCtr($ctr)
+        {
+        }
+        public function getCtr()
+        {
+        }
+        public function setImpressions($impressions)
+        {
+        }
+        public function getImpressions()
+        {
+        }
+        /**
+         * @param string[] $keys
+         */
+        public function setKeys($keys)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getKeys()
+        {
+        }
+        public function setPosition($position)
+        {
+        }
+        public function getPosition()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @var string[]
+     * Runtime class alias of \Google\Service\SearchConsole\ApiDataRow registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public $keys;
-    public $position;
-    public function setClicks($clicks)
-    {
-    }
-    public function getClicks()
-    {
-    }
-    public function setCtr($ctr)
-    {
-    }
-    public function getCtr()
-    {
-    }
-    public function setImpressions($impressions)
-    {
-    }
-    public function getImpressions()
-    {
-    }
-    /**
-     * @param string[] $keys
-     */
-    public function setKeys($keys)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getKeys()
-    {
-    }
-    public function setPosition($position)
-    {
-    }
-    public function getPosition()
+    class Google_Service_SearchConsole_ApiDataRow extends \Google\Service\SearchConsole\ApiDataRow
     {
     }
 }

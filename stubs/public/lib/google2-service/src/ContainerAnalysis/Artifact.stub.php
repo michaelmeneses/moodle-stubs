@@ -21,81 +21,90 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class Artifact extends \Google\Collection
-{
-    protected $collection_key = 'names';
-    /**
-     * Hash or checksum value of a binary, or Docker Registry 2.0 digest of a
-     * container.
-     *
-     * @var string
-     */
-    public $checksum;
-    /**
-     * Artifact ID, if any; for container images, this will be a URL by digest
-     * like `gcr.io/projectID/imagename@sha256:123456`.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Related artifact names. This may be the path to a binary or jar file, or in
-     * the case of a container build, the name used to push the container image to
-     * Google Container Registry, as presented to `docker push`. Note that a
-     * single Artifact ID can have multiple names, for example if two tags are
-     * applied to one image.
-     *
-     * @var string[]
-     */
-    public $names;
-    /**
-     * Hash or checksum value of a binary, or Docker Registry 2.0 digest of a
-     * container.
-     *
-     * @param string $checksum
-     */
-    public function setChecksum($checksum)
+namespace Google\Service\ContainerAnalysis {
+    class Artifact extends \Google\Collection
     {
+        protected $collection_key = 'names';
+        /**
+         * Hash or checksum value of a binary, or Docker Registry 2.0 digest of a
+         * container.
+         *
+         * @var string
+         */
+        public $checksum;
+        /**
+         * Artifact ID, if any; for container images, this will be a URL by digest
+         * like `gcr.io/projectID/imagename@sha256:123456`.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Related artifact names. This may be the path to a binary or jar file, or in
+         * the case of a container build, the name used to push the container image to
+         * Google Container Registry, as presented to `docker push`. Note that a
+         * single Artifact ID can have multiple names, for example if two tags are
+         * applied to one image.
+         *
+         * @var string[]
+         */
+        public $names;
+        /**
+         * Hash or checksum value of a binary, or Docker Registry 2.0 digest of a
+         * container.
+         *
+         * @param string $checksum
+         */
+        public function setChecksum($checksum)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChecksum()
+        {
+        }
+        /**
+         * Artifact ID, if any; for container images, this will be a URL by digest
+         * like `gcr.io/projectID/imagename@sha256:123456`.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Related artifact names. This may be the path to a binary or jar file, or in
+         * the case of a container build, the name used to push the container image to
+         * Google Container Registry, as presented to `docker push`. Note that a
+         * single Artifact ID can have multiple names, for example if two tags are
+         * applied to one image.
+         *
+         * @param string[] $names
+         */
+        public function setNames($names)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getNames()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ContainerAnalysis\Artifact registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChecksum()
-    {
-    }
-    /**
-     * Artifact ID, if any; for container images, this will be a URL by digest
-     * like `gcr.io/projectID/imagename@sha256:123456`.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Related artifact names. This may be the path to a binary or jar file, or in
-     * the case of a container build, the name used to push the container image to
-     * Google Container Registry, as presented to `docker push`. Note that a
-     * single Artifact ID can have multiple names, for example if two tags are
-     * applied to one image.
-     *
-     * @param string[] $names
-     */
-    public function setNames($names)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getNames()
+    class Google_Service_ContainerAnalysis_Artifact extends \Google\Service\ContainerAnalysis\Artifact
     {
     }
 }

@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class CloudassetEmpty extends \Google\Model
-{
+namespace Google\Service\CloudAsset {
+    class CloudassetEmpty extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudAsset\CloudassetEmpty registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudAsset_CloudassetEmpty extends \Google\Service\CloudAsset\CloudassetEmpty
+    {
+    }
 }

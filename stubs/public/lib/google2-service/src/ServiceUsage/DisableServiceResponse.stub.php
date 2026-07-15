@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceUsage;
-
-class DisableServiceResponse extends \Google\Model
-{
-    protected $serviceType = GoogleApiServiceusageV1Service::class;
-    protected $serviceDataType = '';
-    /**
-     * The new state of the service after disabling.
-     *
-     * @param GoogleApiServiceusageV1Service $service
-     */
-    public function setService(GoogleApiServiceusageV1Service $service)
+namespace Google\Service\ServiceUsage {
+    class DisableServiceResponse extends \Google\Model
     {
+        protected $serviceType = GoogleApiServiceusageV1Service::class;
+        protected $serviceDataType = '';
+        /**
+         * The new state of the service after disabling.
+         *
+         * @param GoogleApiServiceusageV1Service $service
+         */
+        public function setService(GoogleApiServiceusageV1Service $service)
+        {
+        }
+        /**
+         * @return GoogleApiServiceusageV1Service
+         */
+        public function getService()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleApiServiceusageV1Service
+     * Runtime class alias of \Google\Service\ServiceUsage\DisableServiceResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getService()
+    class Google_Service_ServiceUsage_DisableServiceResponse extends \Google\Service\ServiceUsage\DisableServiceResponse
     {
     }
 }

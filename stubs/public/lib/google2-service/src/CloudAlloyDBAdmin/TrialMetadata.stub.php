@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAlloyDBAdmin;
-
-class TrialMetadata extends \Google\Model
-{
-    /**
-     * End time of the trial cluster.
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * grace end time of the cluster.
-     *
-     * @var string
-     */
-    public $graceEndTime;
-    /**
-     * start time of the trial cluster.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * Upgrade time of trial cluster to Standard cluster.
-     *
-     * @var string
-     */
-    public $upgradeTime;
-    /**
-     * End time of the trial cluster.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
+namespace Google\Service\CloudAlloyDBAdmin {
+    class TrialMetadata extends \Google\Model
     {
+        /**
+         * End time of the trial cluster.
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * grace end time of the cluster.
+         *
+         * @var string
+         */
+        public $graceEndTime;
+        /**
+         * start time of the trial cluster.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * Upgrade time of trial cluster to Standard cluster.
+         *
+         * @var string
+         */
+        public $upgradeTime;
+        /**
+         * End time of the trial cluster.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * grace end time of the cluster.
+         *
+         * @param string $graceEndTime
+         */
+        public function setGraceEndTime($graceEndTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGraceEndTime()
+        {
+        }
+        /**
+         * start time of the trial cluster.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
+        /**
+         * Upgrade time of trial cluster to Standard cluster.
+         *
+         * @param string $upgradeTime
+         */
+        public function setUpgradeTime($upgradeTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpgradeTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudAlloyDBAdmin\TrialMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndTime()
-    {
-    }
-    /**
-     * grace end time of the cluster.
-     *
-     * @param string $graceEndTime
-     */
-    public function setGraceEndTime($graceEndTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGraceEndTime()
-    {
-    }
-    /**
-     * start time of the trial cluster.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
-    {
-    }
-    /**
-     * Upgrade time of trial cluster to Standard cluster.
-     *
-     * @param string $upgradeTime
-     */
-    public function setUpgradeTime($upgradeTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpgradeTime()
+    class Google_Service_CloudAlloyDBAdmin_TrialMetadata extends \Google\Service\CloudAlloyDBAdmin\TrialMetadata
     {
     }
 }

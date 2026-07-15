@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class ResourceOptions extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $connectVersion;
-    /**
-     * @var string
-     */
-    public $k8sVersion;
-    /**
-     * @var bool
-     */
-    public $v1beta1Crd;
-    /**
-     * @param string
-     */
-    public function setConnectVersion($connectVersion)
+namespace Google\Service\GKEHub {
+    class ResourceOptions extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $connectVersion;
+        /**
+         * @var string
+         */
+        public $k8sVersion;
+        /**
+         * @var bool
+         */
+        public $v1beta1Crd;
+        /**
+         * @param string
+         */
+        public function setConnectVersion($connectVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConnectVersion()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setK8sVersion($k8sVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getK8sVersion()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setV1beta1Crd($v1beta1Crd)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getV1beta1Crd()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEHub\ResourceOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConnectVersion()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setK8sVersion($k8sVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getK8sVersion()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setV1beta1Crd($v1beta1Crd)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getV1beta1Crd()
+    class Google_Service_GKEHub_ResourceOptions extends \Google\Service\GKEHub\ResourceOptions
     {
     }
 }

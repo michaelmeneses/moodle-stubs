@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class ReturnpolicyCustomBatchRequestEntry extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $batchId;
-    /**
-     * @var string
-     */
-    public $merchantId;
-    /**
-     * @var string
-     */
-    public $method;
-    protected $returnPolicyType = ReturnPolicy::class;
-    protected $returnPolicyDataType = '';
-    /**
-     * @var string
-     */
-    public $returnPolicyId;
-    /**
-     * @param string
-     */
-    public function setBatchId($batchId)
+namespace Google\Service\ShoppingContent {
+    class ReturnpolicyCustomBatchRequestEntry extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $batchId;
+        /**
+         * @var string
+         */
+        public $merchantId;
+        /**
+         * @var string
+         */
+        public $method;
+        protected $returnPolicyType = ReturnPolicy::class;
+        protected $returnPolicyDataType = '';
+        /**
+         * @var string
+         */
+        public $returnPolicyId;
+        /**
+         * @param string
+         */
+        public function setBatchId($batchId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBatchId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMerchantId($merchantId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMerchantId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMethod($method)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMethod()
+        {
+        }
+        /**
+         * @param ReturnPolicy
+         */
+        public function setReturnPolicy(ReturnPolicy $returnPolicy)
+        {
+        }
+        /**
+         * @return ReturnPolicy
+         */
+        public function getReturnPolicy()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReturnPolicyId($returnPolicyId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReturnPolicyId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\ReturnpolicyCustomBatchRequestEntry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBatchId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMerchantId($merchantId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMerchantId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMethod($method)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMethod()
-    {
-    }
-    /**
-     * @param ReturnPolicy
-     */
-    public function setReturnPolicy(ReturnPolicy $returnPolicy)
-    {
-    }
-    /**
-     * @return ReturnPolicy
-     */
-    public function getReturnPolicy()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReturnPolicyId($returnPolicyId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReturnPolicyId()
+    class Google_Service_ShoppingContent_ReturnpolicyCustomBatchRequestEntry extends \Google\Service\ShoppingContent\ReturnpolicyCustomBatchRequestEntry
     {
     }
 }

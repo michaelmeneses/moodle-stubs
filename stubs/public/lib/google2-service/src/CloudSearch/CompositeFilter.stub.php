@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class CompositeFilter extends \Google\Collection
-{
-    /**
-     * Logical operators, which can only be applied to sub filters.
-     */
-    public const LOGIC_OPERATOR_AND = 'AND';
-    public const LOGIC_OPERATOR_OR = 'OR';
-    /**
-     * NOT can only be applied on a single sub filter.
-     */
-    public const LOGIC_OPERATOR_NOT = 'NOT';
-    protected $collection_key = 'subFilters';
-    /**
-     * The logic operator of the sub filter.
-     *
-     * @var string
-     */
-    public $logicOperator;
-    protected $subFiltersType = Filter::class;
-    protected $subFiltersDataType = 'array';
-    /**
-     * The logic operator of the sub filter.
-     *
-     * Accepted values: AND, OR, NOT
-     *
-     * @param self::LOGIC_OPERATOR_* $logicOperator
-     */
-    public function setLogicOperator($logicOperator)
+namespace Google\Service\CloudSearch {
+    class CompositeFilter extends \Google\Collection
     {
+        /**
+         * Logical operators, which can only be applied to sub filters.
+         */
+        public const LOGIC_OPERATOR_AND = 'AND';
+        public const LOGIC_OPERATOR_OR = 'OR';
+        /**
+         * NOT can only be applied on a single sub filter.
+         */
+        public const LOGIC_OPERATOR_NOT = 'NOT';
+        protected $collection_key = 'subFilters';
+        /**
+         * The logic operator of the sub filter.
+         *
+         * @var string
+         */
+        public $logicOperator;
+        protected $subFiltersType = Filter::class;
+        protected $subFiltersDataType = 'array';
+        /**
+         * The logic operator of the sub filter.
+         *
+         * Accepted values: AND, OR, NOT
+         *
+         * @param self::LOGIC_OPERATOR_* $logicOperator
+         */
+        public function setLogicOperator($logicOperator)
+        {
+        }
+        /**
+         * @return self::LOGIC_OPERATOR_*
+         */
+        public function getLogicOperator()
+        {
+        }
+        /**
+         * Sub filters.
+         *
+         * @param Filter[] $subFilters
+         */
+        public function setSubFilters($subFilters)
+        {
+        }
+        /**
+         * @return Filter[]
+         */
+        public function getSubFilters()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::LOGIC_OPERATOR_*
+     * Runtime class alias of \Google\Service\CloudSearch\CompositeFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLogicOperator()
-    {
-    }
-    /**
-     * Sub filters.
-     *
-     * @param Filter[] $subFilters
-     */
-    public function setSubFilters($subFilters)
-    {
-    }
-    /**
-     * @return Filter[]
-     */
-    public function getSubFilters()
+    class Google_Service_CloudSearch_CompositeFilter extends \Google\Service\CloudSearch\CompositeFilter
     {
     }
 }

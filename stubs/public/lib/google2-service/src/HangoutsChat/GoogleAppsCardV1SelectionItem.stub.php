@@ -21,114 +21,123 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class GoogleAppsCardV1SelectionItem extends \Google\Model
-{
-    /**
-     * For multiselect menus, a text description or label that's displayed below
-     * the item's `text` field.
-     *
-     * @var string
-     */
-    public $bottomText;
-    /**
-     * Whether the item is selected by default. If the selection input only
-     * accepts one value (such as for radio buttons or a dropdown menu), only set
-     * this field for one item.
-     *
-     * @var bool
-     */
-    public $selected;
-    /**
-     * @var string
-     */
-    public $startIconUri;
-    /**
-     * The text that identifies or describes the item to users.
-     *
-     * @var string
-     */
-    public $text;
-    /**
-     * The value associated with this item. The client should use this as a form
-     * input value. For details about working with form inputs, see [Receive form
-     * data](https://developers.google.com/workspace/chat/read-form-data).
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * For multiselect menus, a text description or label that's displayed below
-     * the item's `text` field.
-     *
-     * @param string $bottomText
-     */
-    public function setBottomText($bottomText)
+namespace Google\Service\HangoutsChat {
+    class GoogleAppsCardV1SelectionItem extends \Google\Model
     {
+        /**
+         * For multiselect menus, a text description or label that's displayed below
+         * the item's `text` field.
+         *
+         * @var string
+         */
+        public $bottomText;
+        /**
+         * Whether the item is selected by default. If the selection input only
+         * accepts one value (such as for radio buttons or a dropdown menu), only set
+         * this field for one item.
+         *
+         * @var bool
+         */
+        public $selected;
+        /**
+         * @var string
+         */
+        public $startIconUri;
+        /**
+         * The text that identifies or describes the item to users.
+         *
+         * @var string
+         */
+        public $text;
+        /**
+         * The value associated with this item. The client should use this as a form
+         * input value. For details about working with form inputs, see [Receive form
+         * data](https://developers.google.com/workspace/chat/read-form-data).
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * For multiselect menus, a text description or label that's displayed below
+         * the item's `text` field.
+         *
+         * @param string $bottomText
+         */
+        public function setBottomText($bottomText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBottomText()
+        {
+        }
+        /**
+         * Whether the item is selected by default. If the selection input only
+         * accepts one value (such as for radio buttons or a dropdown menu), only set
+         * this field for one item.
+         *
+         * @param bool $selected
+         */
+        public function setSelected($selected)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSelected()
+        {
+        }
+        /**
+         * @param string $startIconUri
+         */
+        public function setStartIconUri($startIconUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartIconUri()
+        {
+        }
+        /**
+         * The text that identifies or describes the item to users.
+         *
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
+        /**
+         * The value associated with this item. The client should use this as a form
+         * input value. For details about working with form inputs, see [Receive form
+         * data](https://developers.google.com/workspace/chat/read-form-data).
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\HangoutsChat\GoogleAppsCardV1SelectionItem registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBottomText()
-    {
-    }
-    /**
-     * Whether the item is selected by default. If the selection input only
-     * accepts one value (such as for radio buttons or a dropdown menu), only set
-     * this field for one item.
-     *
-     * @param bool $selected
-     */
-    public function setSelected($selected)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSelected()
-    {
-    }
-    /**
-     * @param string $startIconUri
-     */
-    public function setStartIconUri($startIconUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartIconUri()
-    {
-    }
-    /**
-     * The text that identifies or describes the item to users.
-     *
-     * @param string $text
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
-    {
-    }
-    /**
-     * The value associated with this item. The client should use this as a form
-     * input value. For details about working with form inputs, see [Receive form
-     * data](https://developers.google.com/workspace/chat/read-form-data).
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_HangoutsChat_GoogleAppsCardV1SelectionItem extends \Google\Service\HangoutsChat\GoogleAppsCardV1SelectionItem
     {
     }
 }

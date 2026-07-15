@@ -21,124 +21,133 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InterconnectAttachmentL2Forwarding extends \Google\Model
-{
-    protected $applianceMappingsType = InterconnectAttachmentL2ForwardingApplianceMapping::class;
-    protected $applianceMappingsDataType = 'map';
-    /**
-     * Optional. A single IPv4 or IPv6 address used as the default destination IP
-     * when there is no VLAN mapping result found.
-     *
-     * Unset field (null-value) indicates the unmatched packet should be dropped.
-     *
-     * @var string
-     */
-    public $defaultApplianceIpAddress;
-    protected $geneveHeaderType = InterconnectAttachmentL2ForwardingGeneveHeader::class;
-    protected $geneveHeaderDataType = '';
-    /**
-     * Required. Resource URL of the network to which this attachment belongs.
-     *
-     * @var string
-     */
-    public $network;
-    /**
-     * Required. A single IPv4 or IPv6 address. This address will be used as the
-     * source IP address for packets sent to the appliances, and must be used as
-     * the destination IP address for packets that should be sent out through this
-     * attachment.
-     *
-     * @var string
-     */
-    public $tunnelEndpointIpAddress;
-    /**
-     * Optional. A map of VLAN tags to appliances and optional inner mapping
-     * rules. If VLANs are not explicitly mapped to any appliance, the
-     * defaultApplianceIpAddress is used.
-     *
-     * Each VLAN tag can be a single number or a range of numbers in the range of
-     * 1 to 4094, e.g., "1" or "4001-4094". Non-empty and non-overlapping VLAN tag
-     * ranges are enforced, and violating operations will be rejected.
-     *
-     * The VLAN tags in the Ethernet header must use an ethertype value of 0x88A8
-     * or 0x8100.
-     *
-     * @param InterconnectAttachmentL2ForwardingApplianceMapping[] $applianceMappings
-     */
-    public function setApplianceMappings($applianceMappings)
+namespace Google\Service\Compute {
+    class InterconnectAttachmentL2Forwarding extends \Google\Model
     {
+        protected $applianceMappingsType = InterconnectAttachmentL2ForwardingApplianceMapping::class;
+        protected $applianceMappingsDataType = 'map';
+        /**
+         * Optional. A single IPv4 or IPv6 address used as the default destination IP
+         * when there is no VLAN mapping result found.
+         *
+         * Unset field (null-value) indicates the unmatched packet should be dropped.
+         *
+         * @var string
+         */
+        public $defaultApplianceIpAddress;
+        protected $geneveHeaderType = InterconnectAttachmentL2ForwardingGeneveHeader::class;
+        protected $geneveHeaderDataType = '';
+        /**
+         * Required. Resource URL of the network to which this attachment belongs.
+         *
+         * @var string
+         */
+        public $network;
+        /**
+         * Required. A single IPv4 or IPv6 address. This address will be used as the
+         * source IP address for packets sent to the appliances, and must be used as
+         * the destination IP address for packets that should be sent out through this
+         * attachment.
+         *
+         * @var string
+         */
+        public $tunnelEndpointIpAddress;
+        /**
+         * Optional. A map of VLAN tags to appliances and optional inner mapping
+         * rules. If VLANs are not explicitly mapped to any appliance, the
+         * defaultApplianceIpAddress is used.
+         *
+         * Each VLAN tag can be a single number or a range of numbers in the range of
+         * 1 to 4094, e.g., "1" or "4001-4094". Non-empty and non-overlapping VLAN tag
+         * ranges are enforced, and violating operations will be rejected.
+         *
+         * The VLAN tags in the Ethernet header must use an ethertype value of 0x88A8
+         * or 0x8100.
+         *
+         * @param InterconnectAttachmentL2ForwardingApplianceMapping[] $applianceMappings
+         */
+        public function setApplianceMappings($applianceMappings)
+        {
+        }
+        /**
+         * @return InterconnectAttachmentL2ForwardingApplianceMapping[]
+         */
+        public function getApplianceMappings()
+        {
+        }
+        /**
+         * Optional. A single IPv4 or IPv6 address used as the default destination IP
+         * when there is no VLAN mapping result found.
+         *
+         * Unset field (null-value) indicates the unmatched packet should be dropped.
+         *
+         * @param string $defaultApplianceIpAddress
+         */
+        public function setDefaultApplianceIpAddress($defaultApplianceIpAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDefaultApplianceIpAddress()
+        {
+        }
+        /**
+         * Optional. It represents the structure of a Geneve (Generic Network
+         * Virtualization Encapsulation) header, as defined in RFC8926. It
+         * encapsulates packets from various protocols (e.g., Ethernet, IPv4, IPv6)
+         * for use in network virtualization environments.
+         *
+         * @param InterconnectAttachmentL2ForwardingGeneveHeader $geneveHeader
+         */
+        public function setGeneveHeader(InterconnectAttachmentL2ForwardingGeneveHeader $geneveHeader)
+        {
+        }
+        /**
+         * @return InterconnectAttachmentL2ForwardingGeneveHeader
+         */
+        public function getGeneveHeader()
+        {
+        }
+        /**
+         * Required. Resource URL of the network to which this attachment belongs.
+         *
+         * @param string $network
+         */
+        public function setNetwork($network)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNetwork()
+        {
+        }
+        /**
+         * Required. A single IPv4 or IPv6 address. This address will be used as the
+         * source IP address for packets sent to the appliances, and must be used as
+         * the destination IP address for packets that should be sent out through this
+         * attachment.
+         *
+         * @param string $tunnelEndpointIpAddress
+         */
+        public function setTunnelEndpointIpAddress($tunnelEndpointIpAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTunnelEndpointIpAddress()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InterconnectAttachmentL2ForwardingApplianceMapping[]
+     * Runtime class alias of \Google\Service\Compute\InterconnectAttachmentL2Forwarding registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApplianceMappings()
-    {
-    }
-    /**
-     * Optional. A single IPv4 or IPv6 address used as the default destination IP
-     * when there is no VLAN mapping result found.
-     *
-     * Unset field (null-value) indicates the unmatched packet should be dropped.
-     *
-     * @param string $defaultApplianceIpAddress
-     */
-    public function setDefaultApplianceIpAddress($defaultApplianceIpAddress)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDefaultApplianceIpAddress()
-    {
-    }
-    /**
-     * Optional. It represents the structure of a Geneve (Generic Network
-     * Virtualization Encapsulation) header, as defined in RFC8926. It
-     * encapsulates packets from various protocols (e.g., Ethernet, IPv4, IPv6)
-     * for use in network virtualization environments.
-     *
-     * @param InterconnectAttachmentL2ForwardingGeneveHeader $geneveHeader
-     */
-    public function setGeneveHeader(InterconnectAttachmentL2ForwardingGeneveHeader $geneveHeader)
-    {
-    }
-    /**
-     * @return InterconnectAttachmentL2ForwardingGeneveHeader
-     */
-    public function getGeneveHeader()
-    {
-    }
-    /**
-     * Required. Resource URL of the network to which this attachment belongs.
-     *
-     * @param string $network
-     */
-    public function setNetwork($network)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNetwork()
-    {
-    }
-    /**
-     * Required. A single IPv4 or IPv6 address. This address will be used as the
-     * source IP address for packets sent to the appliances, and must be used as
-     * the destination IP address for packets that should be sent out through this
-     * attachment.
-     *
-     * @param string $tunnelEndpointIpAddress
-     */
-    public function setTunnelEndpointIpAddress($tunnelEndpointIpAddress)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTunnelEndpointIpAddress()
+    class Google_Service_Compute_InterconnectAttachmentL2Forwarding extends \Google\Service\Compute\InterconnectAttachmentL2Forwarding
     {
     }
 }

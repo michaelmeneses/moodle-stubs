@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleCloudRunOpV2EnvVarSource extends \Google\Model
-{
-    protected $secretKeyRefType = GoogleCloudRunOpV2SecretKeySelector::class;
-    protected $secretKeyRefDataType = '';
-    /**
-     * @param GoogleCloudRunOpV2SecretKeySelector
-     */
-    public function setSecretKeyRef(GoogleCloudRunOpV2SecretKeySelector $secretKeyRef)
+namespace Google\Service\CloudRun {
+    class GoogleCloudRunOpV2EnvVarSource extends \Google\Model
     {
+        protected $secretKeyRefType = GoogleCloudRunOpV2SecretKeySelector::class;
+        protected $secretKeyRefDataType = '';
+        /**
+         * @param GoogleCloudRunOpV2SecretKeySelector
+         */
+        public function setSecretKeyRef(GoogleCloudRunOpV2SecretKeySelector $secretKeyRef)
+        {
+        }
+        /**
+         * @return GoogleCloudRunOpV2SecretKeySelector
+         */
+        public function getSecretKeyRef()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRunOpV2SecretKeySelector
+     * Runtime class alias of \Google\Service\CloudRun\GoogleCloudRunOpV2EnvVarSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSecretKeyRef()
+    class Google_Service_CloudRun_GoogleCloudRunOpV2EnvVarSource extends \Google\Service\CloudRun\GoogleCloudRunOpV2EnvVarSource
     {
     }
 }

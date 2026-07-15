@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OracleDatabase;
-
-class DbHome extends \Google\Model
-{
-    protected $databaseType = Database::class;
-    protected $databaseDataType = '';
-    /**
-     * Required. A valid Oracle Database version. For a list of supported
-     * versions, use the ListDbVersions operation.
-     *
-     * @var string
-     */
-    public $dbVersion;
-    /**
-     * Optional. The display name for the Database Home. The name does not have to
-     * be unique within your project.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Optional. Whether unified auditing is enabled for the Database Home.
-     *
-     * @var bool
-     */
-    public $isUnifiedAuditingEnabled;
-    /**
-     * Required. The Database resource.
-     *
-     * @param Database $database
-     */
-    public function setDatabase(Database $database)
+namespace Google\Service\OracleDatabase {
+    class DbHome extends \Google\Model
     {
+        protected $databaseType = Database::class;
+        protected $databaseDataType = '';
+        /**
+         * Required. A valid Oracle Database version. For a list of supported
+         * versions, use the ListDbVersions operation.
+         *
+         * @var string
+         */
+        public $dbVersion;
+        /**
+         * Optional. The display name for the Database Home. The name does not have to
+         * be unique within your project.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Optional. Whether unified auditing is enabled for the Database Home.
+         *
+         * @var bool
+         */
+        public $isUnifiedAuditingEnabled;
+        /**
+         * Required. The Database resource.
+         *
+         * @param Database $database
+         */
+        public function setDatabase(Database $database)
+        {
+        }
+        /**
+         * @return Database
+         */
+        public function getDatabase()
+        {
+        }
+        /**
+         * Required. A valid Oracle Database version. For a list of supported
+         * versions, use the ListDbVersions operation.
+         *
+         * @param string $dbVersion
+         */
+        public function setDbVersion($dbVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDbVersion()
+        {
+        }
+        /**
+         * Optional. The display name for the Database Home. The name does not have to
+         * be unique within your project.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Optional. Whether unified auditing is enabled for the Database Home.
+         *
+         * @param bool $isUnifiedAuditingEnabled
+         */
+        public function setIsUnifiedAuditingEnabled($isUnifiedAuditingEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsUnifiedAuditingEnabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Database
+     * Runtime class alias of \Google\Service\OracleDatabase\DbHome registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatabase()
-    {
-    }
-    /**
-     * Required. A valid Oracle Database version. For a list of supported
-     * versions, use the ListDbVersions operation.
-     *
-     * @param string $dbVersion
-     */
-    public function setDbVersion($dbVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDbVersion()
-    {
-    }
-    /**
-     * Optional. The display name for the Database Home. The name does not have to
-     * be unique within your project.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Optional. Whether unified auditing is enabled for the Database Home.
-     *
-     * @param bool $isUnifiedAuditingEnabled
-     */
-    public function setIsUnifiedAuditingEnabled($isUnifiedAuditingEnabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsUnifiedAuditingEnabled()
+    class Google_Service_OracleDatabase_DbHome extends \Google\Service\OracleDatabase\DbHome
     {
     }
 }

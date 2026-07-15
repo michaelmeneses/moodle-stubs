@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class Notifications extends \Google\Model
-{
-    protected $expiryNotificationType = ExpiryNotification::class;
-    protected $expiryNotificationDataType = '';
-    protected $upcomingNotificationType = UpcomingNotification::class;
-    protected $upcomingNotificationDataType = '';
-    /**
-     * A notification would be triggered at a specific time before the card
-     * expires.
-     *
-     * @param ExpiryNotification $expiryNotification
-     */
-    public function setExpiryNotification(ExpiryNotification $expiryNotification)
+namespace Google\Service\Walletobjects {
+    class Notifications extends \Google\Model
     {
+        protected $expiryNotificationType = ExpiryNotification::class;
+        protected $expiryNotificationDataType = '';
+        protected $upcomingNotificationType = UpcomingNotification::class;
+        protected $upcomingNotificationDataType = '';
+        /**
+         * A notification would be triggered at a specific time before the card
+         * expires.
+         *
+         * @param ExpiryNotification $expiryNotification
+         */
+        public function setExpiryNotification(ExpiryNotification $expiryNotification)
+        {
+        }
+        /**
+         * @return ExpiryNotification
+         */
+        public function getExpiryNotification()
+        {
+        }
+        /**
+         * A notification would be triggered at a specific time before the card
+         * becomes usable.
+         *
+         * @param UpcomingNotification $upcomingNotification
+         */
+        public function setUpcomingNotification(UpcomingNotification $upcomingNotification)
+        {
+        }
+        /**
+         * @return UpcomingNotification
+         */
+        public function getUpcomingNotification()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ExpiryNotification
+     * Runtime class alias of \Google\Service\Walletobjects\Notifications registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExpiryNotification()
-    {
-    }
-    /**
-     * A notification would be triggered at a specific time before the card
-     * becomes usable.
-     *
-     * @param UpcomingNotification $upcomingNotification
-     */
-    public function setUpcomingNotification(UpcomingNotification $upcomingNotification)
-    {
-    }
-    /**
-     * @return UpcomingNotification
-     */
-    public function getUpcomingNotification()
+    class Google_Service_Walletobjects_Notifications extends \Google\Service\Walletobjects\Notifications
     {
     }
 }

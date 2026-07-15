@@ -21,105 +21,114 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class TableList extends \Google\Collection
-{
-    protected $collection_key = 'tables';
-    /**
-     * A hash of this page of results.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * The type of list.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * A token to request the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $tablesType = TableListTables::class;
-    protected $tablesDataType = 'array';
-    /**
-     * The total number of tables in the dataset.
-     *
-     * @var int
-     */
-    public $totalItems;
-    /**
-     * A hash of this page of results.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
+namespace Google\Service\Bigquery {
+    class TableList extends \Google\Collection
     {
+        protected $collection_key = 'tables';
+        /**
+         * A hash of this page of results.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * The type of list.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * A token to request the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $tablesType = TableListTables::class;
+        protected $tablesDataType = 'array';
+        /**
+         * The total number of tables in the dataset.
+         *
+         * @var int
+         */
+        public $totalItems;
+        /**
+         * A hash of this page of results.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * The type of list.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * A token to request the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Tables in the requested dataset.
+         *
+         * @param TableListTables[] $tables
+         */
+        public function setTables($tables)
+        {
+        }
+        /**
+         * @return TableListTables[]
+         */
+        public function getTables()
+        {
+        }
+        /**
+         * The total number of tables in the dataset.
+         *
+         * @param int $totalItems
+         */
+        public function setTotalItems($totalItems)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalItems()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Bigquery\TableList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
-    {
-    }
-    /**
-     * The type of list.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * A token to request the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Tables in the requested dataset.
-     *
-     * @param TableListTables[] $tables
-     */
-    public function setTables($tables)
-    {
-    }
-    /**
-     * @return TableListTables[]
-     */
-    public function getTables()
-    {
-    }
-    /**
-     * The total number of tables in the dataset.
-     *
-     * @param int $totalItems
-     */
-    public function setTotalItems($totalItems)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalItems()
+    class Google_Service_Bigquery_TableList extends \Google\Service\Bigquery\TableList
     {
     }
 }

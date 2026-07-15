@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class ImapUidsReassign extends \Google\Collection
-{
-    protected $collection_key = 'messageId';
-    /**
-     * @var string
-     */
-    public $labelId;
-    /**
-     * @var string[]
-     */
-    public $messageId;
-    /**
-     * @param string
-     */
-    public function setLabelId($labelId)
+namespace Google\Service\CloudSearch {
+    class ImapUidsReassign extends \Google\Collection
     {
+        protected $collection_key = 'messageId';
+        /**
+         * @var string
+         */
+        public $labelId;
+        /**
+         * @var string[]
+         */
+        public $messageId;
+        /**
+         * @param string
+         */
+        public function setLabelId($labelId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLabelId()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setMessageId($messageId)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMessageId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\ImapUidsReassign registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLabelId()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setMessageId($messageId)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getMessageId()
+    class Google_Service_CloudSearch_ImapUidsReassign extends \Google\Service\CloudSearch\ImapUidsReassign
     {
     }
 }

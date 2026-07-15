@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SmartDeviceManagement\Resource;
-
-/**
- * The "enterprises" collection of methods.
- * Typical usage is:
- *  <code>
- *   $smartdevicemanagementService = new Google\Service\SmartDeviceManagement(...);
- *   $enterprises = $smartdevicemanagementService->enterprises;
- *  </code>
- */
-class Enterprises extends \Google\Service\Resource
-{
+namespace Google\Service\SmartDeviceManagement\Resource {
+    /**
+     * The "enterprises" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $smartdevicemanagementService = new Google\Service\SmartDeviceManagement(...);
+     *   $enterprises = $smartdevicemanagementService->enterprises;
+     *  </code>
+     */
+    class Enterprises extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\SmartDeviceManagement\Resource\Enterprises registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_SmartDeviceManagement_Resource_Enterprises extends \Google\Service\SmartDeviceManagement\Resource\Enterprises
+    {
+    }
 }

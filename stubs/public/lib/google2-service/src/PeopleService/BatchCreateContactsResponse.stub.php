@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PeopleService;
-
-class BatchCreateContactsResponse extends \Google\Collection
-{
-    protected $collection_key = 'createdPeople';
-    protected $createdPeopleType = PersonResponse::class;
-    protected $createdPeopleDataType = 'array';
-    /**
-     * The contacts that were created, unless the request `read_mask` is empty.
-     *
-     * @param PersonResponse[] $createdPeople
-     */
-    public function setCreatedPeople($createdPeople)
+namespace Google\Service\PeopleService {
+    class BatchCreateContactsResponse extends \Google\Collection
     {
+        protected $collection_key = 'createdPeople';
+        protected $createdPeopleType = PersonResponse::class;
+        protected $createdPeopleDataType = 'array';
+        /**
+         * The contacts that were created, unless the request `read_mask` is empty.
+         *
+         * @param PersonResponse[] $createdPeople
+         */
+        public function setCreatedPeople($createdPeople)
+        {
+        }
+        /**
+         * @return PersonResponse[]
+         */
+        public function getCreatedPeople()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PersonResponse[]
+     * Runtime class alias of \Google\Service\PeopleService\BatchCreateContactsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreatedPeople()
+    class Google_Service_PeopleService_BatchCreateContactsResponse extends \Google\Service\PeopleService\BatchCreateContactsResponse
     {
     }
 }

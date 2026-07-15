@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InterconnectGroupPhysicalStructureMetrosFacilities extends \Google\Collection
-{
-    protected $collection_key = 'zones';
-    /**
-     * Output only. [Output Only] The ID of this facility, as a numeric string
-     * like "5467". This is the third component of the location of Interconnects
-     * in this facility.
-     *
-     * @var string
-     */
-    public $facility;
-    protected $zonesType = InterconnectGroupPhysicalStructureMetrosFacilitiesZones::class;
-    protected $zonesDataType = 'array';
-    /**
-     * Output only. [Output Only] The ID of this facility, as a numeric string
-     * like "5467". This is the third component of the location of Interconnects
-     * in this facility.
-     *
-     * @param string $facility
-     */
-    public function setFacility($facility)
+namespace Google\Service\Compute {
+    class InterconnectGroupPhysicalStructureMetrosFacilities extends \Google\Collection
     {
+        protected $collection_key = 'zones';
+        /**
+         * Output only. [Output Only] The ID of this facility, as a numeric string
+         * like "5467". This is the third component of the location of Interconnects
+         * in this facility.
+         *
+         * @var string
+         */
+        public $facility;
+        protected $zonesType = InterconnectGroupPhysicalStructureMetrosFacilitiesZones::class;
+        protected $zonesDataType = 'array';
+        /**
+         * Output only. [Output Only] The ID of this facility, as a numeric string
+         * like "5467". This is the third component of the location of Interconnects
+         * in this facility.
+         *
+         * @param string $facility
+         */
+        public function setFacility($facility)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFacility()
+        {
+        }
+        /**
+         * @param InterconnectGroupPhysicalStructureMetrosFacilitiesZones[] $zones
+         */
+        public function setZones($zones)
+        {
+        }
+        /**
+         * @return InterconnectGroupPhysicalStructureMetrosFacilitiesZones[]
+         */
+        public function getZones()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\InterconnectGroupPhysicalStructureMetrosFacilities registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFacility()
-    {
-    }
-    /**
-     * @param InterconnectGroupPhysicalStructureMetrosFacilitiesZones[] $zones
-     */
-    public function setZones($zones)
-    {
-    }
-    /**
-     * @return InterconnectGroupPhysicalStructureMetrosFacilitiesZones[]
-     */
-    public function getZones()
+    class Google_Service_Compute_InterconnectGroupPhysicalStructureMetrosFacilities extends \Google\Service\Compute\InterconnectGroupPhysicalStructureMetrosFacilities
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1GraphSpecGraphElementTableProperty extends \Google\Model
-{
-    /**
-     * Required. Property name.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. Property data type.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Required. Property name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1GraphSpecGraphElementTableProperty extends \Google\Model
     {
+        /**
+         * Required. Property name.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. Property data type.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Required. Property name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Required. Property data type.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1GraphSpecGraphElementTableProperty registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Required. Property data type.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1GraphSpecGraphElementTableProperty extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1GraphSpecGraphElementTableProperty
     {
     }
 }

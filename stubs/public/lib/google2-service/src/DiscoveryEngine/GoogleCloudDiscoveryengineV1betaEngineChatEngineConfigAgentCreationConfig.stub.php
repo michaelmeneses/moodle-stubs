@@ -21,106 +21,115 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaEngineChatEngineConfigAgentCreationConfig extends \Google\Model
-{
-    /**
-     * Name of the company, organization or other entity that the agent
-     * represents. Used for knowledge connector LLM prompt and for knowledge
-     * search.
-     *
-     * @var string
-     */
-    public $business;
-    /**
-     * Required. The default language of the agent as a language tag. See
-     * [Language
-     * Support](https://cloud.google.com/dialogflow/docs/reference/language) for a
-     * list of the currently supported language codes.
-     *
-     * @var string
-     */
-    public $defaultLanguageCode;
-    /**
-     * Agent location for Agent creation, supported values: global/us/eu. If not
-     * provided, us Engine will create Agent using us-central-1 by default; eu
-     * Engine will create Agent using eu-west-1 by default.
-     *
-     * @var string
-     */
-    public $location;
-    /**
-     * Required. The time zone of the agent from the [time zone
-     * database](https://www.iana.org/time-zones), e.g., America/New_York,
-     * Europe/Paris.
-     *
-     * @var string
-     */
-    public $timeZone;
-    /**
-     * Name of the company, organization or other entity that the agent
-     * represents. Used for knowledge connector LLM prompt and for knowledge
-     * search.
-     *
-     * @param string $business
-     */
-    public function setBusiness($business)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaEngineChatEngineConfigAgentCreationConfig extends \Google\Model
     {
+        /**
+         * Name of the company, organization or other entity that the agent
+         * represents. Used for knowledge connector LLM prompt and for knowledge
+         * search.
+         *
+         * @var string
+         */
+        public $business;
+        /**
+         * Required. The default language of the agent as a language tag. See
+         * [Language
+         * Support](https://cloud.google.com/dialogflow/docs/reference/language) for a
+         * list of the currently supported language codes.
+         *
+         * @var string
+         */
+        public $defaultLanguageCode;
+        /**
+         * Agent location for Agent creation, supported values: global/us/eu. If not
+         * provided, us Engine will create Agent using us-central-1 by default; eu
+         * Engine will create Agent using eu-west-1 by default.
+         *
+         * @var string
+         */
+        public $location;
+        /**
+         * Required. The time zone of the agent from the [time zone
+         * database](https://www.iana.org/time-zones), e.g., America/New_York,
+         * Europe/Paris.
+         *
+         * @var string
+         */
+        public $timeZone;
+        /**
+         * Name of the company, organization or other entity that the agent
+         * represents. Used for knowledge connector LLM prompt and for knowledge
+         * search.
+         *
+         * @param string $business
+         */
+        public function setBusiness($business)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBusiness()
+        {
+        }
+        /**
+         * Required. The default language of the agent as a language tag. See
+         * [Language
+         * Support](https://cloud.google.com/dialogflow/docs/reference/language) for a
+         * list of the currently supported language codes.
+         *
+         * @param string $defaultLanguageCode
+         */
+        public function setDefaultLanguageCode($defaultLanguageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDefaultLanguageCode()
+        {
+        }
+        /**
+         * Agent location for Agent creation, supported values: global/us/eu. If not
+         * provided, us Engine will create Agent using us-central-1 by default; eu
+         * Engine will create Agent using eu-west-1 by default.
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * Required. The time zone of the agent from the [time zone
+         * database](https://www.iana.org/time-zones), e.g., America/New_York,
+         * Europe/Paris.
+         *
+         * @param string $timeZone
+         */
+        public function setTimeZone($timeZone)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimeZone()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaEngineChatEngineConfigAgentCreationConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBusiness()
-    {
-    }
-    /**
-     * Required. The default language of the agent as a language tag. See
-     * [Language
-     * Support](https://cloud.google.com/dialogflow/docs/reference/language) for a
-     * list of the currently supported language codes.
-     *
-     * @param string $defaultLanguageCode
-     */
-    public function setDefaultLanguageCode($defaultLanguageCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDefaultLanguageCode()
-    {
-    }
-    /**
-     * Agent location for Agent creation, supported values: global/us/eu. If not
-     * provided, us Engine will create Agent using us-central-1 by default; eu
-     * Engine will create Agent using eu-west-1 by default.
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocation()
-    {
-    }
-    /**
-     * Required. The time zone of the agent from the [time zone
-     * database](https://www.iana.org/time-zones), e.g., America/New_York,
-     * Europe/Paris.
-     *
-     * @param string $timeZone
-     */
-    public function setTimeZone($timeZone)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimeZone()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaEngineChatEngineConfigAgentCreationConfig extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaEngineChatEngineConfigAgentCreationConfig
     {
     }
 }

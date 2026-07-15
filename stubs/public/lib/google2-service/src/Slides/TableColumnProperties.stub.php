@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides;
-
-class TableColumnProperties extends \Google\Model
-{
-    protected $columnWidthType = Dimension::class;
-    protected $columnWidthDataType = '';
-    /**
-     * Width of a column.
-     *
-     * @param Dimension $columnWidth
-     */
-    public function setColumnWidth(Dimension $columnWidth)
+namespace Google\Service\Slides {
+    class TableColumnProperties extends \Google\Model
     {
+        protected $columnWidthType = Dimension::class;
+        protected $columnWidthDataType = '';
+        /**
+         * Width of a column.
+         *
+         * @param Dimension $columnWidth
+         */
+        public function setColumnWidth(Dimension $columnWidth)
+        {
+        }
+        /**
+         * @return Dimension
+         */
+        public function getColumnWidth()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Dimension
+     * Runtime class alias of \Google\Service\Slides\TableColumnProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumnWidth()
+    class Google_Service_Slides_TableColumnProperties extends \Google\Service\Slides\TableColumnProperties
     {
     }
 }

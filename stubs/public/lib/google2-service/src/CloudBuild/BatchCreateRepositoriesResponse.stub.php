@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class BatchCreateRepositoriesResponse extends \Google\Collection
-{
-    protected $collection_key = 'repositories';
-    protected $repositoriesType = Repository::class;
-    protected $repositoriesDataType = 'array';
-    /**
-     * Repository resources created.
-     *
-     * @param Repository[] $repositories
-     */
-    public function setRepositories($repositories)
+namespace Google\Service\CloudBuild {
+    class BatchCreateRepositoriesResponse extends \Google\Collection
     {
+        protected $collection_key = 'repositories';
+        protected $repositoriesType = Repository::class;
+        protected $repositoriesDataType = 'array';
+        /**
+         * Repository resources created.
+         *
+         * @param Repository[] $repositories
+         */
+        public function setRepositories($repositories)
+        {
+        }
+        /**
+         * @return Repository[]
+         */
+        public function getRepositories()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Repository[]
+     * Runtime class alias of \Google\Service\CloudBuild\BatchCreateRepositoriesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRepositories()
+    class Google_Service_CloudBuild_BatchCreateRepositoriesResponse extends \Google\Service\CloudBuild\BatchCreateRepositoriesResponse
     {
     }
 }

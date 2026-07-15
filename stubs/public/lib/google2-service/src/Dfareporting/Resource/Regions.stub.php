@@ -21,27 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting\Resource;
-
-/**
- * The "regions" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dfareportingService = new Google\Service\Dfareporting(...);
- *   $regions = $dfareportingService->regions;
- *  </code>
- */
-class Regions extends \Google\Service\Resource
-{
+namespace Google\Service\Dfareporting\Resource {
+    use Google\Service\Dfareporting\RegionsListResponse;
     /**
-     * Retrieves a list of regions. (regions.listRegions)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param array $optParams Optional parameters.
-     * @return RegionsListResponse
-     * @throws \Google\Service\Exception
+     * The "regions" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dfareportingService = new Google\Service\Dfareporting(...);
+     *   $regions = $dfareportingService->regions;
+     *  </code>
      */
-    public function listRegions($profileId, $optParams = [])
+    class Regions extends \Google\Service\Resource
+    {
+        /**
+         * Retrieves a list of regions. (regions.listRegions)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param array $optParams Optional parameters.
+         * @return RegionsListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listRegions($profileId, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Dfareporting\Resource\Regions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Dfareporting_Resource_Regions extends \Google\Service\Dfareporting\Resource\Regions
     {
     }
 }

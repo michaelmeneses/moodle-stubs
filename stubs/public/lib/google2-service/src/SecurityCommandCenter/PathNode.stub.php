@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class PathNode extends \Google\Collection
-{
-    protected $collection_key = 'associatedFindings';
-    protected $associatedFindingsType = AssociatedFinding::class;
-    protected $associatedFindingsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $displayName;
-    /**
-     * @var string
-     */
-    public $resource;
-    /**
-     * @var string
-     */
-    public $resourceType;
-    /**
-     * @param AssociatedFinding[]
-     */
-    public function setAssociatedFindings($associatedFindings)
+namespace Google\Service\SecurityCommandCenter {
+    class PathNode extends \Google\Collection
     {
+        protected $collection_key = 'associatedFindings';
+        protected $associatedFindingsType = AssociatedFinding::class;
+        protected $associatedFindingsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $displayName;
+        /**
+         * @var string
+         */
+        public $resource;
+        /**
+         * @var string
+         */
+        public $resourceType;
+        /**
+         * @param AssociatedFinding[]
+         */
+        public function setAssociatedFindings($associatedFindings)
+        {
+        }
+        /**
+         * @return AssociatedFinding[]
+         */
+        public function getAssociatedFindings()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setResource($resource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResource()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setResourceType($resourceType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AssociatedFinding[]
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\PathNode registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssociatedFindings()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setResource($resource)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResource()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setResourceType($resourceType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceType()
+    class Google_Service_SecurityCommandCenter_PathNode extends \Google\Service\SecurityCommandCenter\PathNode
     {
     }
 }

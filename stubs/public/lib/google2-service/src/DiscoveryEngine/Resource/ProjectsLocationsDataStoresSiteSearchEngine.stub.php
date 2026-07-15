@@ -21,60 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine\Resource;
-
-/**
- * The "siteSearchEngine" collection of methods.
- * Typical usage is:
- *  <code>
- *   $discoveryengineService = new Google\Service\DiscoveryEngine(...);
- *   $siteSearchEngine = $discoveryengineService->projects_locations_dataStores_siteSearchEngine;
- *  </code>
- */
-class ProjectsLocationsDataStoresSiteSearchEngine extends \Google\Service\Resource
-{
+namespace Google\Service\DiscoveryEngine\Resource {
+    use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1DisableAdvancedSiteSearchRequest;
+    use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1EnableAdvancedSiteSearchRequest;
+    use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1RecrawlUrisRequest;
+    use Google\Service\DiscoveryEngine\GoogleLongrunningOperation;
     /**
-     * Downgrade from advanced site search to basic site search.
-     * (siteSearchEngine.disableAdvancedSiteSearch)
-     *
-     * @param string $siteSearchEngine Required. Full resource name of the
-     * SiteSearchEngine, such as `projects/{project}/locations/{location}/dataStores
-     * /{data_store_id}/siteSearchEngine`.
-     * @param GoogleCloudDiscoveryengineV1DisableAdvancedSiteSearchRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
+     * The "siteSearchEngine" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $discoveryengineService = new Google\Service\DiscoveryEngine(...);
+     *   $siteSearchEngine = $discoveryengineService->projects_locations_dataStores_siteSearchEngine;
+     *  </code>
      */
-    public function disableAdvancedSiteSearch($siteSearchEngine, GoogleCloudDiscoveryengineV1DisableAdvancedSiteSearchRequest $postBody, $optParams = [])
+    class ProjectsLocationsDataStoresSiteSearchEngine extends \Google\Service\Resource
     {
+        /**
+         * Downgrade from advanced site search to basic site search.
+         * (siteSearchEngine.disableAdvancedSiteSearch)
+         *
+         * @param string $siteSearchEngine Required. Full resource name of the
+         * SiteSearchEngine, such as `projects/{project}/locations/{location}/dataStores
+         * /{data_store_id}/siteSearchEngine`.
+         * @param GoogleCloudDiscoveryengineV1DisableAdvancedSiteSearchRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function disableAdvancedSiteSearch($siteSearchEngine, GoogleCloudDiscoveryengineV1DisableAdvancedSiteSearchRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Upgrade from basic site search to advanced site search.
+         * (siteSearchEngine.enableAdvancedSiteSearch)
+         *
+         * @param string $siteSearchEngine Required. Full resource name of the
+         * SiteSearchEngine, such as `projects/{project}/locations/{location}/dataStores
+         * /{data_store_id}/siteSearchEngine`.
+         * @param GoogleCloudDiscoveryengineV1EnableAdvancedSiteSearchRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function enableAdvancedSiteSearch($siteSearchEngine, GoogleCloudDiscoveryengineV1EnableAdvancedSiteSearchRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Request on-demand recrawl for a list of URIs. (siteSearchEngine.recrawlUris)
+         *
+         * @param string $siteSearchEngine Required. Full resource name of the
+         * SiteSearchEngine, such as
+         * `projects/locations/collections/dataStores/siteSearchEngine`.
+         * @param GoogleCloudDiscoveryengineV1RecrawlUrisRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function recrawlUris($siteSearchEngine, GoogleCloudDiscoveryengineV1RecrawlUrisRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Upgrade from basic site search to advanced site search.
-     * (siteSearchEngine.enableAdvancedSiteSearch)
-     *
-     * @param string $siteSearchEngine Required. Full resource name of the
-     * SiteSearchEngine, such as `projects/{project}/locations/{location}/dataStores
-     * /{data_store_id}/siteSearchEngine`.
-     * @param GoogleCloudDiscoveryengineV1EnableAdvancedSiteSearchRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\DiscoveryEngine\Resource\ProjectsLocationsDataStoresSiteSearchEngine registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function enableAdvancedSiteSearch($siteSearchEngine, GoogleCloudDiscoveryengineV1EnableAdvancedSiteSearchRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Request on-demand recrawl for a list of URIs. (siteSearchEngine.recrawlUris)
-     *
-     * @param string $siteSearchEngine Required. Full resource name of the
-     * SiteSearchEngine, such as
-     * `projects/locations/collections/dataStores/siteSearchEngine`.
-     * @param GoogleCloudDiscoveryengineV1RecrawlUrisRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
-     */
-    public function recrawlUris($siteSearchEngine, GoogleCloudDiscoveryengineV1RecrawlUrisRequest $postBody, $optParams = [])
+    class Google_Service_DiscoveryEngine_Resource_ProjectsLocationsDataStoresSiteSearchEngine extends \Google\Service\DiscoveryEngine\Resource\ProjectsLocationsDataStoresSiteSearchEngine
     {
     }
 }

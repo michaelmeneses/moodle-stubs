@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSStructType extends \Google\Model
-{
-    protected $fieldsType = XPSDataType::class;
-    protected $fieldsDataType = 'map';
-    /**
-     * Unordered map of struct field names to their data types.
-     *
-     * @param XPSDataType[] $fields
-     */
-    public function setFields($fields)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSStructType extends \Google\Model
     {
+        protected $fieldsType = XPSDataType::class;
+        protected $fieldsDataType = 'map';
+        /**
+         * Unordered map of struct field names to their data types.
+         *
+         * @param XPSDataType[] $fields
+         */
+        public function setFields($fields)
+        {
+        }
+        /**
+         * @return XPSDataType[]
+         */
+        public function getFields()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return XPSDataType[]
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSStructType registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFields()
+    class Google_Service_CloudNaturalLanguage_XPSStructType extends \Google\Service\CloudNaturalLanguage\XPSStructType
     {
     }
 }

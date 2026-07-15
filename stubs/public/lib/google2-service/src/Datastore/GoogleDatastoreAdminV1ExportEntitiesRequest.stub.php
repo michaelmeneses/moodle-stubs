@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastore;
-
-class GoogleDatastoreAdminV1ExportEntitiesRequest extends \Google\Model
-{
-    protected $entityFilterType = GoogleDatastoreAdminV1EntityFilter::class;
-    protected $entityFilterDataType = '';
-    /**
-     * Client-assigned labels.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Required. Location for the export metadata and data files. The full
-     * resource URL of the external storage location. Currently, only Google Cloud
-     * Storage is supported. So output_url_prefix should be of the form:
-     * `gs://BUCKET_NAME[/NAMESPACE_PATH]`, where `BUCKET_NAME` is the name of the
-     * Cloud Storage bucket and `NAMESPACE_PATH` is an optional Cloud Storage
-     * namespace path (this is not a Cloud Datastore namespace). For more
-     * information about Cloud Storage namespace paths, see [Object name
-     * considerations](https://cloud.google.com/storage/docs/naming#object-
-     * considerations). The resulting files will be nested deeper than the
-     * specified URL prefix. The final output URL will be provided in the
-     * google.datastore.admin.v1.ExportEntitiesResponse.output_url field. That
-     * value should be used for subsequent ImportEntities operations. By nesting
-     * the data files deeper, the same Cloud Storage bucket can be used in
-     * multiple ExportEntities operations without conflict.
-     *
-     * @var string
-     */
-    public $outputUrlPrefix;
-    /**
-     * Description of what data from the project is included in the export.
-     *
-     * @param GoogleDatastoreAdminV1EntityFilter $entityFilter
-     */
-    public function setEntityFilter(GoogleDatastoreAdminV1EntityFilter $entityFilter)
+namespace Google\Service\Datastore {
+    class GoogleDatastoreAdminV1ExportEntitiesRequest extends \Google\Model
     {
+        protected $entityFilterType = GoogleDatastoreAdminV1EntityFilter::class;
+        protected $entityFilterDataType = '';
+        /**
+         * Client-assigned labels.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Required. Location for the export metadata and data files. The full
+         * resource URL of the external storage location. Currently, only Google Cloud
+         * Storage is supported. So output_url_prefix should be of the form:
+         * `gs://BUCKET_NAME[/NAMESPACE_PATH]`, where `BUCKET_NAME` is the name of the
+         * Cloud Storage bucket and `NAMESPACE_PATH` is an optional Cloud Storage
+         * namespace path (this is not a Cloud Datastore namespace). For more
+         * information about Cloud Storage namespace paths, see [Object name
+         * considerations](https://cloud.google.com/storage/docs/naming#object-
+         * considerations). The resulting files will be nested deeper than the
+         * specified URL prefix. The final output URL will be provided in the
+         * google.datastore.admin.v1.ExportEntitiesResponse.output_url field. That
+         * value should be used for subsequent ImportEntities operations. By nesting
+         * the data files deeper, the same Cloud Storage bucket can be used in
+         * multiple ExportEntities operations without conflict.
+         *
+         * @var string
+         */
+        public $outputUrlPrefix;
+        /**
+         * Description of what data from the project is included in the export.
+         *
+         * @param GoogleDatastoreAdminV1EntityFilter $entityFilter
+         */
+        public function setEntityFilter(GoogleDatastoreAdminV1EntityFilter $entityFilter)
+        {
+        }
+        /**
+         * @return GoogleDatastoreAdminV1EntityFilter
+         */
+        public function getEntityFilter()
+        {
+        }
+        /**
+         * Client-assigned labels.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Required. Location for the export metadata and data files. The full
+         * resource URL of the external storage location. Currently, only Google Cloud
+         * Storage is supported. So output_url_prefix should be of the form:
+         * `gs://BUCKET_NAME[/NAMESPACE_PATH]`, where `BUCKET_NAME` is the name of the
+         * Cloud Storage bucket and `NAMESPACE_PATH` is an optional Cloud Storage
+         * namespace path (this is not a Cloud Datastore namespace). For more
+         * information about Cloud Storage namespace paths, see [Object name
+         * considerations](https://cloud.google.com/storage/docs/naming#object-
+         * considerations). The resulting files will be nested deeper than the
+         * specified URL prefix. The final output URL will be provided in the
+         * google.datastore.admin.v1.ExportEntitiesResponse.output_url field. That
+         * value should be used for subsequent ImportEntities operations. By nesting
+         * the data files deeper, the same Cloud Storage bucket can be used in
+         * multiple ExportEntities operations without conflict.
+         *
+         * @param string $outputUrlPrefix
+         */
+        public function setOutputUrlPrefix($outputUrlPrefix)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOutputUrlPrefix()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleDatastoreAdminV1EntityFilter
+     * Runtime class alias of \Google\Service\Datastore\GoogleDatastoreAdminV1ExportEntitiesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntityFilter()
-    {
-    }
-    /**
-     * Client-assigned labels.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Required. Location for the export metadata and data files. The full
-     * resource URL of the external storage location. Currently, only Google Cloud
-     * Storage is supported. So output_url_prefix should be of the form:
-     * `gs://BUCKET_NAME[/NAMESPACE_PATH]`, where `BUCKET_NAME` is the name of the
-     * Cloud Storage bucket and `NAMESPACE_PATH` is an optional Cloud Storage
-     * namespace path (this is not a Cloud Datastore namespace). For more
-     * information about Cloud Storage namespace paths, see [Object name
-     * considerations](https://cloud.google.com/storage/docs/naming#object-
-     * considerations). The resulting files will be nested deeper than the
-     * specified URL prefix. The final output URL will be provided in the
-     * google.datastore.admin.v1.ExportEntitiesResponse.output_url field. That
-     * value should be used for subsequent ImportEntities operations. By nesting
-     * the data files deeper, the same Cloud Storage bucket can be used in
-     * multiple ExportEntities operations without conflict.
-     *
-     * @param string $outputUrlPrefix
-     */
-    public function setOutputUrlPrefix($outputUrlPrefix)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOutputUrlPrefix()
+    class Google_Service_Datastore_GoogleDatastoreAdminV1ExportEntitiesRequest extends \Google\Service\Datastore\GoogleDatastoreAdminV1ExportEntitiesRequest
     {
     }
 }

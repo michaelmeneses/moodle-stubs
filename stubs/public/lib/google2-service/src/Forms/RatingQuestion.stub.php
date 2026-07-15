@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Forms;
-
-class RatingQuestion extends \Google\Model
-{
-    /**
-     * Default value. Unused.
-     */
-    public const ICON_TYPE_RATING_ICON_TYPE_UNSPECIFIED = 'RATING_ICON_TYPE_UNSPECIFIED';
-    /**
-     * A star icon.
-     */
-    public const ICON_TYPE_STAR = 'STAR';
-    /**
-     * A heart icon.
-     */
-    public const ICON_TYPE_HEART = 'HEART';
-    /**
-     * A thumbs down icon.
-     */
-    public const ICON_TYPE_THUMB_UP = 'THUMB_UP';
-    /**
-     * Required. The icon type to use for the rating.
-     *
-     * @var string
-     */
-    public $iconType;
-    /**
-     * Required. The rating scale level of the rating question.
-     *
-     * @var int
-     */
-    public $ratingScaleLevel;
-    /**
-     * Required. The icon type to use for the rating.
-     *
-     * Accepted values: RATING_ICON_TYPE_UNSPECIFIED, STAR, HEART, THUMB_UP
-     *
-     * @param self::ICON_TYPE_* $iconType
-     */
-    public function setIconType($iconType)
+namespace Google\Service\Forms {
+    class RatingQuestion extends \Google\Model
     {
+        /**
+         * Default value. Unused.
+         */
+        public const ICON_TYPE_RATING_ICON_TYPE_UNSPECIFIED = 'RATING_ICON_TYPE_UNSPECIFIED';
+        /**
+         * A star icon.
+         */
+        public const ICON_TYPE_STAR = 'STAR';
+        /**
+         * A heart icon.
+         */
+        public const ICON_TYPE_HEART = 'HEART';
+        /**
+         * A thumbs down icon.
+         */
+        public const ICON_TYPE_THUMB_UP = 'THUMB_UP';
+        /**
+         * Required. The icon type to use for the rating.
+         *
+         * @var string
+         */
+        public $iconType;
+        /**
+         * Required. The rating scale level of the rating question.
+         *
+         * @var int
+         */
+        public $ratingScaleLevel;
+        /**
+         * Required. The icon type to use for the rating.
+         *
+         * Accepted values: RATING_ICON_TYPE_UNSPECIFIED, STAR, HEART, THUMB_UP
+         *
+         * @param self::ICON_TYPE_* $iconType
+         */
+        public function setIconType($iconType)
+        {
+        }
+        /**
+         * @return self::ICON_TYPE_*
+         */
+        public function getIconType()
+        {
+        }
+        /**
+         * Required. The rating scale level of the rating question.
+         *
+         * @param int $ratingScaleLevel
+         */
+        public function setRatingScaleLevel($ratingScaleLevel)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRatingScaleLevel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::ICON_TYPE_*
+     * Runtime class alias of \Google\Service\Forms\RatingQuestion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIconType()
-    {
-    }
-    /**
-     * Required. The rating scale level of the rating question.
-     *
-     * @param int $ratingScaleLevel
-     */
-    public function setRatingScaleLevel($ratingScaleLevel)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getRatingScaleLevel()
+    class Google_Service_Forms_RatingQuestion extends \Google\Service\Forms\RatingQuestion
     {
     }
 }

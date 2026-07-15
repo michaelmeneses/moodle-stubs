@@ -21,108 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class TrackConfig extends \Google\Model
-{
-    /**
-     * Fallback value, do not use.
-     */
-    public const FORM_FACTOR_FORM_FACTOR_UNSPECIFIED = 'FORM_FACTOR_UNSPECIFIED';
-    /**
-     * Default track.
-     */
-    public const FORM_FACTOR_DEFAULT = 'DEFAULT';
-    /**
-     * Wear form factor track.
-     */
-    public const FORM_FACTOR_WEAR = 'WEAR';
-    /**
-     * Automotive form factor track.
-     */
-    public const FORM_FACTOR_AUTOMOTIVE = 'AUTOMOTIVE';
-    /**
-     * Fallback value, do not use.
-     */
-    public const TYPE_TRACK_TYPE_UNSPECIFIED = 'TRACK_TYPE_UNSPECIFIED';
-    /**
-     * Closed testing track.
-     */
-    public const TYPE_CLOSED_TESTING = 'CLOSED_TESTING';
-    /**
-     * Required. Form factor of the new track. Defaults to the default track.
-     *
-     * @var string
-     */
-    public $formFactor;
-    /**
-     * Required. Identifier of the new track. For default tracks, this field
-     * consists of the track alias only. Form factor tracks have a special prefix
-     * as an identifier, for example `wear:production`, `automotive:production`.
-     * This prefix must match the value of the `form_factor` field, if it is not a
-     * default track. [More on track name](https://developers.google.com/android-
-     * publisher/tracks#ff-track-name)
-     *
-     * @var string
-     */
-    public $track;
-    /**
-     * Required. Type of the new track. Currently, the only supported value is
-     * closedTesting.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Required. Form factor of the new track. Defaults to the default track.
-     *
-     * Accepted values: FORM_FACTOR_UNSPECIFIED, DEFAULT, WEAR, AUTOMOTIVE
-     *
-     * @param self::FORM_FACTOR_* $formFactor
-     */
-    public function setFormFactor($formFactor)
+namespace Google\Service\AndroidPublisher {
+    class TrackConfig extends \Google\Model
     {
+        /**
+         * Fallback value, do not use.
+         */
+        public const FORM_FACTOR_FORM_FACTOR_UNSPECIFIED = 'FORM_FACTOR_UNSPECIFIED';
+        /**
+         * Default track.
+         */
+        public const FORM_FACTOR_DEFAULT = 'DEFAULT';
+        /**
+         * Wear form factor track.
+         */
+        public const FORM_FACTOR_WEAR = 'WEAR';
+        /**
+         * Automotive form factor track.
+         */
+        public const FORM_FACTOR_AUTOMOTIVE = 'AUTOMOTIVE';
+        /**
+         * Fallback value, do not use.
+         */
+        public const TYPE_TRACK_TYPE_UNSPECIFIED = 'TRACK_TYPE_UNSPECIFIED';
+        /**
+         * Closed testing track.
+         */
+        public const TYPE_CLOSED_TESTING = 'CLOSED_TESTING';
+        /**
+         * Required. Form factor of the new track. Defaults to the default track.
+         *
+         * @var string
+         */
+        public $formFactor;
+        /**
+         * Required. Identifier of the new track. For default tracks, this field
+         * consists of the track alias only. Form factor tracks have a special prefix
+         * as an identifier, for example `wear:production`, `automotive:production`.
+         * This prefix must match the value of the `form_factor` field, if it is not a
+         * default track. [More on track name](https://developers.google.com/android-
+         * publisher/tracks#ff-track-name)
+         *
+         * @var string
+         */
+        public $track;
+        /**
+         * Required. Type of the new track. Currently, the only supported value is
+         * closedTesting.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Required. Form factor of the new track. Defaults to the default track.
+         *
+         * Accepted values: FORM_FACTOR_UNSPECIFIED, DEFAULT, WEAR, AUTOMOTIVE
+         *
+         * @param self::FORM_FACTOR_* $formFactor
+         */
+        public function setFormFactor($formFactor)
+        {
+        }
+        /**
+         * @return self::FORM_FACTOR_*
+         */
+        public function getFormFactor()
+        {
+        }
+        /**
+         * Required. Identifier of the new track. For default tracks, this field
+         * consists of the track alias only. Form factor tracks have a special prefix
+         * as an identifier, for example `wear:production`, `automotive:production`.
+         * This prefix must match the value of the `form_factor` field, if it is not a
+         * default track. [More on track name](https://developers.google.com/android-
+         * publisher/tracks#ff-track-name)
+         *
+         * @param string $track
+         */
+        public function setTrack($track)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTrack()
+        {
+        }
+        /**
+         * Required. Type of the new track. Currently, the only supported value is
+         * closedTesting.
+         *
+         * Accepted values: TRACK_TYPE_UNSPECIFIED, CLOSED_TESTING
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::FORM_FACTOR_*
+     * Runtime class alias of \Google\Service\AndroidPublisher\TrackConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFormFactor()
-    {
-    }
-    /**
-     * Required. Identifier of the new track. For default tracks, this field
-     * consists of the track alias only. Form factor tracks have a special prefix
-     * as an identifier, for example `wear:production`, `automotive:production`.
-     * This prefix must match the value of the `form_factor` field, if it is not a
-     * default track. [More on track name](https://developers.google.com/android-
-     * publisher/tracks#ff-track-name)
-     *
-     * @param string $track
-     */
-    public function setTrack($track)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTrack()
-    {
-    }
-    /**
-     * Required. Type of the new track. Currently, the only supported value is
-     * closedTesting.
-     *
-     * Accepted values: TRACK_TYPE_UNSPECIFIED, CLOSED_TESTING
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_AndroidPublisher_TrackConfig extends \Google\Service\AndroidPublisher\TrackConfig
     {
     }
 }

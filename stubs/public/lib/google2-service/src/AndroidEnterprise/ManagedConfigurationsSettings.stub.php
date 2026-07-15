@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise;
-
-class ManagedConfigurationsSettings extends \Google\Model
-{
-    /**
-     * The last updated time of the managed configuration settings in milliseconds
-     * since 1970-01-01T00:00:00Z.
-     *
-     * @var string
-     */
-    public $lastUpdatedTimestampMillis;
-    /**
-     * The ID of the managed configurations settings.
-     *
-     * @var string
-     */
-    public $mcmId;
-    /**
-     * The name of the managed configurations settings.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The last updated time of the managed configuration settings in milliseconds
-     * since 1970-01-01T00:00:00Z.
-     *
-     * @param string $lastUpdatedTimestampMillis
-     */
-    public function setLastUpdatedTimestampMillis($lastUpdatedTimestampMillis)
+namespace Google\Service\AndroidEnterprise {
+    class ManagedConfigurationsSettings extends \Google\Model
     {
+        /**
+         * The last updated time of the managed configuration settings in milliseconds
+         * since 1970-01-01T00:00:00Z.
+         *
+         * @var string
+         */
+        public $lastUpdatedTimestampMillis;
+        /**
+         * The ID of the managed configurations settings.
+         *
+         * @var string
+         */
+        public $mcmId;
+        /**
+         * The name of the managed configurations settings.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The last updated time of the managed configuration settings in milliseconds
+         * since 1970-01-01T00:00:00Z.
+         *
+         * @param string $lastUpdatedTimestampMillis
+         */
+        public function setLastUpdatedTimestampMillis($lastUpdatedTimestampMillis)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastUpdatedTimestampMillis()
+        {
+        }
+        /**
+         * The ID of the managed configurations settings.
+         *
+         * @param string $mcmId
+         */
+        public function setMcmId($mcmId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMcmId()
+        {
+        }
+        /**
+         * The name of the managed configurations settings.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidEnterprise\ManagedConfigurationsSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLastUpdatedTimestampMillis()
-    {
-    }
-    /**
-     * The ID of the managed configurations settings.
-     *
-     * @param string $mcmId
-     */
-    public function setMcmId($mcmId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMcmId()
-    {
-    }
-    /**
-     * The name of the managed configurations settings.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_AndroidEnterprise_ManagedConfigurationsSettings extends \Google\Service\AndroidEnterprise\ManagedConfigurationsSettings
     {
     }
 }

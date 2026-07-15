@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1Owner extends \Google\Model
-{
-    /**
-     * Optional. The name of the owner.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Required. The email of the owner.
-     *
-     * @var string
-     */
-    public $email;
-    /**
-     * Optional. The name of the owner.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1Owner extends \Google\Model
     {
+        /**
+         * Optional. The name of the owner.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Required. The email of the owner.
+         *
+         * @var string
+         */
+        public $email;
+        /**
+         * Optional. The name of the owner.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Required. The email of the owner.
+         *
+         * @param string $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1Owner registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Required. The email of the owner.
-     *
-     * @param string $email
-     */
-    public function setEmail($email)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEmail()
+    class Google_Service_APIhub_GoogleCloudApihubV1Owner extends \Google\Service\APIhub\GoogleCloudApihubV1Owner
     {
     }
 }

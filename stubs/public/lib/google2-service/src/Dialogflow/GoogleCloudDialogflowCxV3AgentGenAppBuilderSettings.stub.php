@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3AgentGenAppBuilderSettings extends \Google\Model
-{
-    /**
-     * Required. The full name of the Gen App Builder engine related to this agent
-     * if there is one. Format: `projects/{Project ID}/locations/{Location
-     * ID}/collections/{Collection ID}/engines/{Engine ID}`
-     *
-     * @var string
-     */
-    public $engine;
-    /**
-     * Required. The full name of the Gen App Builder engine related to this agent
-     * if there is one. Format: `projects/{Project ID}/locations/{Location
-     * ID}/collections/{Collection ID}/engines/{Engine ID}`
-     *
-     * @param string $engine
-     */
-    public function setEngine($engine)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3AgentGenAppBuilderSettings extends \Google\Model
     {
+        /**
+         * Required. The full name of the Gen App Builder engine related to this agent
+         * if there is one. Format: `projects/{Project ID}/locations/{Location
+         * ID}/collections/{Collection ID}/engines/{Engine ID}`
+         *
+         * @var string
+         */
+        public $engine;
+        /**
+         * Required. The full name of the Gen App Builder engine related to this agent
+         * if there is one. Format: `projects/{Project ID}/locations/{Location
+         * ID}/collections/{Collection ID}/engines/{Engine ID}`
+         *
+         * @param string $engine
+         */
+        public function setEngine($engine)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEngine()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3AgentGenAppBuilderSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEngine()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3AgentGenAppBuilderSettings extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3AgentGenAppBuilderSettings
     {
     }
 }

@@ -21,89 +21,98 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1HttpOperationDetails extends \Google\Collection
-{
-    protected $collection_key = 'pathParams';
-    protected $httpOperationType = GoogleCloudApihubV1HttpOperation::class;
-    protected $httpOperationDataType = '';
-    protected $pathParamsType = GoogleCloudApihubV1PathParam::class;
-    protected $pathParamsDataType = 'array';
-    protected $queryParamsType = GoogleCloudApihubV1QueryParam::class;
-    protected $queryParamsDataType = 'map';
-    protected $requestType = GoogleCloudApihubV1HttpRequest::class;
-    protected $requestDataType = '';
-    protected $responseType = GoogleCloudApihubV1HttpResponse::class;
-    protected $responseDataType = '';
-    /**
-     * Required. An HTTP Operation.
-     *
-     * @param GoogleCloudApihubV1HttpOperation $httpOperation
-     */
-    public function setHttpOperation(GoogleCloudApihubV1HttpOperation $httpOperation)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1HttpOperationDetails extends \Google\Collection
     {
+        protected $collection_key = 'pathParams';
+        protected $httpOperationType = GoogleCloudApihubV1HttpOperation::class;
+        protected $httpOperationDataType = '';
+        protected $pathParamsType = GoogleCloudApihubV1PathParam::class;
+        protected $pathParamsDataType = 'array';
+        protected $queryParamsType = GoogleCloudApihubV1QueryParam::class;
+        protected $queryParamsDataType = 'map';
+        protected $requestType = GoogleCloudApihubV1HttpRequest::class;
+        protected $requestDataType = '';
+        protected $responseType = GoogleCloudApihubV1HttpResponse::class;
+        protected $responseDataType = '';
+        /**
+         * Required. An HTTP Operation.
+         *
+         * @param GoogleCloudApihubV1HttpOperation $httpOperation
+         */
+        public function setHttpOperation(GoogleCloudApihubV1HttpOperation $httpOperation)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1HttpOperation
+         */
+        public function getHttpOperation()
+        {
+        }
+        /**
+         * Optional. Path params of HttpOperation
+         *
+         * @param GoogleCloudApihubV1PathParam[] $pathParams
+         */
+        public function setPathParams($pathParams)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1PathParam[]
+         */
+        public function getPathParams()
+        {
+        }
+        /**
+         * Optional. Query params of HttpOperation
+         *
+         * @param GoogleCloudApihubV1QueryParam[] $queryParams
+         */
+        public function setQueryParams($queryParams)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1QueryParam[]
+         */
+        public function getQueryParams()
+        {
+        }
+        /**
+         * Optional. Request metadata.
+         *
+         * @param GoogleCloudApihubV1HttpRequest $request
+         */
+        public function setRequest(GoogleCloudApihubV1HttpRequest $request)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1HttpRequest
+         */
+        public function getRequest()
+        {
+        }
+        /**
+         * Optional. Response metadata.
+         *
+         * @param GoogleCloudApihubV1HttpResponse $response
+         */
+        public function setResponse(GoogleCloudApihubV1HttpResponse $response)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1HttpResponse
+         */
+        public function getResponse()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApihubV1HttpOperation
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1HttpOperationDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHttpOperation()
-    {
-    }
-    /**
-     * Optional. Path params of HttpOperation
-     *
-     * @param GoogleCloudApihubV1PathParam[] $pathParams
-     */
-    public function setPathParams($pathParams)
-    {
-    }
-    /**
-     * @return GoogleCloudApihubV1PathParam[]
-     */
-    public function getPathParams()
-    {
-    }
-    /**
-     * Optional. Query params of HttpOperation
-     *
-     * @param GoogleCloudApihubV1QueryParam[] $queryParams
-     */
-    public function setQueryParams($queryParams)
-    {
-    }
-    /**
-     * @return GoogleCloudApihubV1QueryParam[]
-     */
-    public function getQueryParams()
-    {
-    }
-    /**
-     * Optional. Request metadata.
-     *
-     * @param GoogleCloudApihubV1HttpRequest $request
-     */
-    public function setRequest(GoogleCloudApihubV1HttpRequest $request)
-    {
-    }
-    /**
-     * @return GoogleCloudApihubV1HttpRequest
-     */
-    public function getRequest()
-    {
-    }
-    /**
-     * Optional. Response metadata.
-     *
-     * @param GoogleCloudApihubV1HttpResponse $response
-     */
-    public function setResponse(GoogleCloudApihubV1HttpResponse $response)
-    {
-    }
-    /**
-     * @return GoogleCloudApihubV1HttpResponse
-     */
-    public function getResponse()
+    class Google_Service_APIhub_GoogleCloudApihubV1HttpOperationDetails extends \Google\Service\APIhub\GoogleCloudApihubV1HttpOperationDetails
     {
     }
 }

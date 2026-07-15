@@ -21,80 +21,92 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics\Resource;
-
-/**
- * The "uploads" collection of methods.
- * Typical usage is:
- *  <code>
- *   $analyticsService = new Google\Service\Analytics(...);
- *   $uploads = $analyticsService->management_uploads;
- *  </code>
- */
-class ManagementUploads extends \Google\Service\Resource
-{
+namespace Google\Service\Analytics\Resource {
+    use Google\Service\Analytics\AnalyticsDataimportDeleteUploadDataRequest;
+    use Google\Service\Analytics\Upload;
+    use Google\Service\Analytics\Uploads;
     /**
-     * Delete data associated with a previous upload. (uploads.deleteUploadData)
-     *
-     * @param string $accountId Account Id for the uploads to be deleted.
-     * @param string $webPropertyId Web property Id for the uploads to be deleted.
-     * @param string $customDataSourceId Custom data source Id for the uploads to be
-     * deleted.
-     * @param AnalyticsDataimportDeleteUploadDataRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * The "uploads" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $analyticsService = new Google\Service\Analytics(...);
+     *   $uploads = $analyticsService->management_uploads;
+     *  </code>
      */
-    public function deleteUploadData($accountId, $webPropertyId, $customDataSourceId, AnalyticsDataimportDeleteUploadDataRequest $postBody, $optParams = [])
+    class ManagementUploads extends \Google\Service\Resource
     {
+        /**
+         * Delete data associated with a previous upload. (uploads.deleteUploadData)
+         *
+         * @param string $accountId Account Id for the uploads to be deleted.
+         * @param string $webPropertyId Web property Id for the uploads to be deleted.
+         * @param string $customDataSourceId Custom data source Id for the uploads to be
+         * deleted.
+         * @param AnalyticsDataimportDeleteUploadDataRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function deleteUploadData($accountId, $webPropertyId, $customDataSourceId, AnalyticsDataimportDeleteUploadDataRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * List uploads to which the user has access. (uploads.get)
+         *
+         * @param string $accountId Account Id for the upload to retrieve.
+         * @param string $webPropertyId Web property Id for the upload to retrieve.
+         * @param string $customDataSourceId Custom data source Id for upload to
+         * retrieve.
+         * @param string $uploadId Upload Id to retrieve.
+         * @param array $optParams Optional parameters.
+         * @return Upload
+         * @throws \Google\Service\Exception
+         */
+        public function get($accountId, $webPropertyId, $customDataSourceId, $uploadId, $optParams = [])
+        {
+        }
+        /**
+         * List uploads to which the user has access. (uploads.listManagementUploads)
+         *
+         * @param string $accountId Account Id for the uploads to retrieve.
+         * @param string $webPropertyId Web property Id for the uploads to retrieve.
+         * @param string $customDataSourceId Custom data source Id for uploads to
+         * retrieve.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int max-results The maximum number of uploads to include in this
+         * response.
+         * @opt_param int start-index A 1-based index of the first upload to retrieve.
+         * Use this parameter as a pagination mechanism along with the max-results
+         * parameter.
+         * @return Uploads
+         * @throws \Google\Service\Exception
+         */
+        public function listManagementUploads($accountId, $webPropertyId, $customDataSourceId, $optParams = [])
+        {
+        }
+        /**
+         * Upload data for a custom data source. (uploads.uploadData)
+         *
+         * @param string $accountId Account Id associated with the upload.
+         * @param string $webPropertyId Web property UA-string associated with the
+         * upload.
+         * @param string $customDataSourceId Custom data source Id to which the data
+         * being uploaded belongs.
+         * @param array $optParams Optional parameters.
+         * @return Upload
+         * @throws \Google\Service\Exception
+         */
+        public function uploadData($accountId, $webPropertyId, $customDataSourceId, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * List uploads to which the user has access. (uploads.get)
-     *
-     * @param string $accountId Account Id for the upload to retrieve.
-     * @param string $webPropertyId Web property Id for the upload to retrieve.
-     * @param string $customDataSourceId Custom data source Id for upload to
-     * retrieve.
-     * @param string $uploadId Upload Id to retrieve.
-     * @param array $optParams Optional parameters.
-     * @return Upload
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Analytics\Resource\ManagementUploads registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($accountId, $webPropertyId, $customDataSourceId, $uploadId, $optParams = [])
-    {
-    }
-    /**
-     * List uploads to which the user has access. (uploads.listManagementUploads)
-     *
-     * @param string $accountId Account Id for the uploads to retrieve.
-     * @param string $webPropertyId Web property Id for the uploads to retrieve.
-     * @param string $customDataSourceId Custom data source Id for uploads to
-     * retrieve.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int max-results The maximum number of uploads to include in this
-     * response.
-     * @opt_param int start-index A 1-based index of the first upload to retrieve.
-     * Use this parameter as a pagination mechanism along with the max-results
-     * parameter.
-     * @return Uploads
-     * @throws \Google\Service\Exception
-     */
-    public function listManagementUploads($accountId, $webPropertyId, $customDataSourceId, $optParams = [])
-    {
-    }
-    /**
-     * Upload data for a custom data source. (uploads.uploadData)
-     *
-     * @param string $accountId Account Id associated with the upload.
-     * @param string $webPropertyId Web property UA-string associated with the
-     * upload.
-     * @param string $customDataSourceId Custom data source Id to which the data
-     * being uploaded belongs.
-     * @param array $optParams Optional parameters.
-     * @return Upload
-     * @throws \Google\Service\Exception
-     */
-    public function uploadData($accountId, $webPropertyId, $customDataSourceId, $optParams = [])
+    class Google_Service_Analytics_Resource_ManagementUploads extends \Google\Service\Analytics\Resource\ManagementUploads
     {
     }
 }

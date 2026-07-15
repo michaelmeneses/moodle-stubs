@@ -21,160 +21,169 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class ExecuteSqlPayload extends \Google\Model
-{
-    /**
-     * Unspecified mode, effectively the same as `FAIL_PARTIAL_RESULT`.
-     */
-    public const PARTIAL_RESULT_MODE_PARTIAL_RESULT_MODE_UNSPECIFIED = 'PARTIAL_RESULT_MODE_UNSPECIFIED';
-    /**
-     * Throw an error if the result exceeds 10 MB or if only a partial result can
-     * be retrieved. Don't return the result.
-     */
-    public const PARTIAL_RESULT_MODE_FAIL_PARTIAL_RESULT = 'FAIL_PARTIAL_RESULT';
-    /**
-     * Return a truncated result and set `partial_result` to true if the result
-     * exceeds 10 MB or if only a partial result can be retrieved due to error.
-     * Don't throw an error.
-     */
-    public const PARTIAL_RESULT_MODE_ALLOW_PARTIAL_RESULT = 'ALLOW_PARTIAL_RESULT';
-    /**
-     * Optional. When set to true, the API caller identity associated with the
-     * request is used for database authentication. The API caller must be an IAM
-     * user in the database.
-     *
-     * @var bool
-     */
-    public $autoIamAuthn;
-    /**
-     * Optional. Name of the database on which the statement will be executed.
-     *
-     * @var string
-     */
-    public $database;
-    /**
-     * Optional. Controls how the API should respond when the SQL execution result
-     * is incomplete due to the size limit or another error. The default mode is
-     * to throw an error.
-     *
-     * @var string
-     */
-    public $partialResultMode;
-    /**
-     * Optional. The maximum number of rows returned per SQL statement.
-     *
-     * @var string
-     */
-    public $rowLimit;
-    /**
-     * Required. SQL statements to run on the database. It can be a single
-     * statement or a sequence of statements separated by semicolons.
-     *
-     * @var string
-     */
-    public $sqlStatement;
-    /**
-     * Optional. The name of an existing database user to connect to the database.
-     * When `auto_iam_authn` is set to true, this field is ignored and the API
-     * caller's IAM user is used.
-     *
-     * @var string
-     */
-    public $user;
-    /**
-     * Optional. When set to true, the API caller identity associated with the
-     * request is used for database authentication. The API caller must be an IAM
-     * user in the database.
-     *
-     * @param bool $autoIamAuthn
-     */
-    public function setAutoIamAuthn($autoIamAuthn)
+namespace Google\Service\SQLAdmin {
+    class ExecuteSqlPayload extends \Google\Model
     {
+        /**
+         * Unspecified mode, effectively the same as `FAIL_PARTIAL_RESULT`.
+         */
+        public const PARTIAL_RESULT_MODE_PARTIAL_RESULT_MODE_UNSPECIFIED = 'PARTIAL_RESULT_MODE_UNSPECIFIED';
+        /**
+         * Throw an error if the result exceeds 10 MB or if only a partial result can
+         * be retrieved. Don't return the result.
+         */
+        public const PARTIAL_RESULT_MODE_FAIL_PARTIAL_RESULT = 'FAIL_PARTIAL_RESULT';
+        /**
+         * Return a truncated result and set `partial_result` to true if the result
+         * exceeds 10 MB or if only a partial result can be retrieved due to error.
+         * Don't throw an error.
+         */
+        public const PARTIAL_RESULT_MODE_ALLOW_PARTIAL_RESULT = 'ALLOW_PARTIAL_RESULT';
+        /**
+         * Optional. When set to true, the API caller identity associated with the
+         * request is used for database authentication. The API caller must be an IAM
+         * user in the database.
+         *
+         * @var bool
+         */
+        public $autoIamAuthn;
+        /**
+         * Optional. Name of the database on which the statement will be executed.
+         *
+         * @var string
+         */
+        public $database;
+        /**
+         * Optional. Controls how the API should respond when the SQL execution result
+         * is incomplete due to the size limit or another error. The default mode is
+         * to throw an error.
+         *
+         * @var string
+         */
+        public $partialResultMode;
+        /**
+         * Optional. The maximum number of rows returned per SQL statement.
+         *
+         * @var string
+         */
+        public $rowLimit;
+        /**
+         * Required. SQL statements to run on the database. It can be a single
+         * statement or a sequence of statements separated by semicolons.
+         *
+         * @var string
+         */
+        public $sqlStatement;
+        /**
+         * Optional. The name of an existing database user to connect to the database.
+         * When `auto_iam_authn` is set to true, this field is ignored and the API
+         * caller's IAM user is used.
+         *
+         * @var string
+         */
+        public $user;
+        /**
+         * Optional. When set to true, the API caller identity associated with the
+         * request is used for database authentication. The API caller must be an IAM
+         * user in the database.
+         *
+         * @param bool $autoIamAuthn
+         */
+        public function setAutoIamAuthn($autoIamAuthn)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAutoIamAuthn()
+        {
+        }
+        /**
+         * Optional. Name of the database on which the statement will be executed.
+         *
+         * @param string $database
+         */
+        public function setDatabase($database)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatabase()
+        {
+        }
+        /**
+         * Optional. Controls how the API should respond when the SQL execution result
+         * is incomplete due to the size limit or another error. The default mode is
+         * to throw an error.
+         *
+         * Accepted values: PARTIAL_RESULT_MODE_UNSPECIFIED, FAIL_PARTIAL_RESULT,
+         * ALLOW_PARTIAL_RESULT
+         *
+         * @param self::PARTIAL_RESULT_MODE_* $partialResultMode
+         */
+        public function setPartialResultMode($partialResultMode)
+        {
+        }
+        /**
+         * @return self::PARTIAL_RESULT_MODE_*
+         */
+        public function getPartialResultMode()
+        {
+        }
+        /**
+         * Optional. The maximum number of rows returned per SQL statement.
+         *
+         * @param string $rowLimit
+         */
+        public function setRowLimit($rowLimit)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRowLimit()
+        {
+        }
+        /**
+         * Required. SQL statements to run on the database. It can be a single
+         * statement or a sequence of statements separated by semicolons.
+         *
+         * @param string $sqlStatement
+         */
+        public function setSqlStatement($sqlStatement)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSqlStatement()
+        {
+        }
+        /**
+         * Optional. The name of an existing database user to connect to the database.
+         * When `auto_iam_authn` is set to true, this field is ignored and the API
+         * caller's IAM user is used.
+         *
+         * @param string $user
+         */
+        public function setUser($user)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUser()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\SQLAdmin\ExecuteSqlPayload registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAutoIamAuthn()
-    {
-    }
-    /**
-     * Optional. Name of the database on which the statement will be executed.
-     *
-     * @param string $database
-     */
-    public function setDatabase($database)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDatabase()
-    {
-    }
-    /**
-     * Optional. Controls how the API should respond when the SQL execution result
-     * is incomplete due to the size limit or another error. The default mode is
-     * to throw an error.
-     *
-     * Accepted values: PARTIAL_RESULT_MODE_UNSPECIFIED, FAIL_PARTIAL_RESULT,
-     * ALLOW_PARTIAL_RESULT
-     *
-     * @param self::PARTIAL_RESULT_MODE_* $partialResultMode
-     */
-    public function setPartialResultMode($partialResultMode)
-    {
-    }
-    /**
-     * @return self::PARTIAL_RESULT_MODE_*
-     */
-    public function getPartialResultMode()
-    {
-    }
-    /**
-     * Optional. The maximum number of rows returned per SQL statement.
-     *
-     * @param string $rowLimit
-     */
-    public function setRowLimit($rowLimit)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRowLimit()
-    {
-    }
-    /**
-     * Required. SQL statements to run on the database. It can be a single
-     * statement or a sequence of statements separated by semicolons.
-     *
-     * @param string $sqlStatement
-     */
-    public function setSqlStatement($sqlStatement)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSqlStatement()
-    {
-    }
-    /**
-     * Optional. The name of an existing database user to connect to the database.
-     * When `auto_iam_authn` is set to true, this field is ignored and the API
-     * caller's IAM user is used.
-     *
-     * @param string $user
-     */
-    public function setUser($user)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUser()
+    class Google_Service_SQLAdmin_ExecuteSqlPayload extends \Google\Service\SQLAdmin\ExecuteSqlPayload
     {
     }
 }

@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class UrlMapsScopedList extends \Google\Collection
-{
-    protected $collection_key = 'urlMaps';
-    protected $urlMapsType = UrlMap::class;
-    protected $urlMapsDataType = 'array';
-    protected $warningType = UrlMapsScopedListWarning::class;
-    protected $warningDataType = '';
-    /**
-     * A list of UrlMaps contained in this scope.
-     *
-     * @param UrlMap[] $urlMaps
-     */
-    public function setUrlMaps($urlMaps)
+namespace Google\Service\Compute {
+    class UrlMapsScopedList extends \Google\Collection
     {
+        protected $collection_key = 'urlMaps';
+        protected $urlMapsType = UrlMap::class;
+        protected $urlMapsDataType = 'array';
+        protected $warningType = UrlMapsScopedListWarning::class;
+        protected $warningDataType = '';
+        /**
+         * A list of UrlMaps contained in this scope.
+         *
+         * @param UrlMap[] $urlMaps
+         */
+        public function setUrlMaps($urlMaps)
+        {
+        }
+        /**
+         * @return UrlMap[]
+         */
+        public function getUrlMaps()
+        {
+        }
+        /**
+         * Informational warning which replaces the list of backend services when the
+         * list is empty.
+         *
+         * @param UrlMapsScopedListWarning $warning
+         */
+        public function setWarning(UrlMapsScopedListWarning $warning)
+        {
+        }
+        /**
+         * @return UrlMapsScopedListWarning
+         */
+        public function getWarning()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return UrlMap[]
+     * Runtime class alias of \Google\Service\Compute\UrlMapsScopedList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUrlMaps()
-    {
-    }
-    /**
-     * Informational warning which replaces the list of backend services when the
-     * list is empty.
-     *
-     * @param UrlMapsScopedListWarning $warning
-     */
-    public function setWarning(UrlMapsScopedListWarning $warning)
-    {
-    }
-    /**
-     * @return UrlMapsScopedListWarning
-     */
-    public function getWarning()
+    class Google_Service_Compute_UrlMapsScopedList extends \Google\Service\Compute\UrlMapsScopedList
     {
     }
 }

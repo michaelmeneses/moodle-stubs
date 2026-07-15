@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1NormalizedVertex extends \Google\Model
-{
-    /**
-     * X coordinate.
-     *
-     * @var float
-     */
-    public $x;
-    /**
-     * Y coordinate.
-     *
-     * @var float
-     */
-    public $y;
-    /**
-     * X coordinate.
-     *
-     * @param float $x
-     */
-    public function setX($x)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1NormalizedVertex extends \Google\Model
     {
+        /**
+         * X coordinate.
+         *
+         * @var float
+         */
+        public $x;
+        /**
+         * Y coordinate.
+         *
+         * @var float
+         */
+        public $y;
+        /**
+         * X coordinate.
+         *
+         * @param float $x
+         */
+        public function setX($x)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getX()
+        {
+        }
+        /**
+         * Y coordinate.
+         *
+         * @param float $y
+         */
+        public function setY($y)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getY()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1NormalizedVertex registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getX()
-    {
-    }
-    /**
-     * Y coordinate.
-     *
-     * @param float $y
-     */
-    public function setY($y)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getY()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1NormalizedVertex extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1NormalizedVertex
     {
     }
 }

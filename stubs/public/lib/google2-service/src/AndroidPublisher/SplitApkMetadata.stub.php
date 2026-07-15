@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class SplitApkMetadata extends \Google\Model
-{
-    /**
-     * Indicates whether this APK is the main split of the module.
-     *
-     * @var bool
-     */
-    public $isMasterSplit;
-    /**
-     * Id of the split.
-     *
-     * @var string
-     */
-    public $splitId;
-    /**
-     * Indicates whether this APK is the main split of the module.
-     *
-     * @param bool $isMasterSplit
-     */
-    public function setIsMasterSplit($isMasterSplit)
+namespace Google\Service\AndroidPublisher {
+    class SplitApkMetadata extends \Google\Model
     {
+        /**
+         * Indicates whether this APK is the main split of the module.
+         *
+         * @var bool
+         */
+        public $isMasterSplit;
+        /**
+         * Id of the split.
+         *
+         * @var string
+         */
+        public $splitId;
+        /**
+         * Indicates whether this APK is the main split of the module.
+         *
+         * @param bool $isMasterSplit
+         */
+        public function setIsMasterSplit($isMasterSplit)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsMasterSplit()
+        {
+        }
+        /**
+         * Id of the split.
+         *
+         * @param string $splitId
+         */
+        public function setSplitId($splitId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSplitId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\AndroidPublisher\SplitApkMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIsMasterSplit()
-    {
-    }
-    /**
-     * Id of the split.
-     *
-     * @param string $splitId
-     */
-    public function setSplitId($splitId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSplitId()
+    class Google_Service_AndroidPublisher_SplitApkMetadata extends \Google\Service\AndroidPublisher\SplitApkMetadata
     {
     }
 }

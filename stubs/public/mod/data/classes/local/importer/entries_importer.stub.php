@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_data\local\importer;
 
+use coding_exception;
+use core_php_time_limit;
+use file_packer;
 /**
  * Importer class for importing data and - if needed - files as well from a zip archive.
  *

@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceControl;
-
-class ServiceAccountDelegationInfo extends \Google\Model
-{
-    protected $firstPartyPrincipalType = FirstPartyPrincipal::class;
-    protected $firstPartyPrincipalDataType = '';
-    /**
-     * A string representing the principal_subject associated with the identity.
-     * For most identities, the format will be
-     * `principal://iam.googleapis.com/{identity pool name}/subject/{subject)`
-     * except for some GKE identities (GKE_WORKLOAD, FREEFORM, GKE_HUB_WORKLOAD)
-     * that are still in the legacy format `serviceAccount:{identity pool
-     * name}[{subject}]`
-     *
-     * @var string
-     */
-    public $principalSubject;
-    protected $thirdPartyPrincipalType = ThirdPartyPrincipal::class;
-    protected $thirdPartyPrincipalDataType = '';
-    /**
-     * First party (Google) identity as the real authority.
-     *
-     * @param FirstPartyPrincipal $firstPartyPrincipal
-     */
-    public function setFirstPartyPrincipal(FirstPartyPrincipal $firstPartyPrincipal)
+namespace Google\Service\ServiceControl {
+    class ServiceAccountDelegationInfo extends \Google\Model
     {
+        protected $firstPartyPrincipalType = FirstPartyPrincipal::class;
+        protected $firstPartyPrincipalDataType = '';
+        /**
+         * A string representing the principal_subject associated with the identity.
+         * For most identities, the format will be
+         * `principal://iam.googleapis.com/{identity pool name}/subject/{subject)`
+         * except for some GKE identities (GKE_WORKLOAD, FREEFORM, GKE_HUB_WORKLOAD)
+         * that are still in the legacy format `serviceAccount:{identity pool
+         * name}[{subject}]`
+         *
+         * @var string
+         */
+        public $principalSubject;
+        protected $thirdPartyPrincipalType = ThirdPartyPrincipal::class;
+        protected $thirdPartyPrincipalDataType = '';
+        /**
+         * First party (Google) identity as the real authority.
+         *
+         * @param FirstPartyPrincipal $firstPartyPrincipal
+         */
+        public function setFirstPartyPrincipal(FirstPartyPrincipal $firstPartyPrincipal)
+        {
+        }
+        /**
+         * @return FirstPartyPrincipal
+         */
+        public function getFirstPartyPrincipal()
+        {
+        }
+        /**
+         * A string representing the principal_subject associated with the identity.
+         * For most identities, the format will be
+         * `principal://iam.googleapis.com/{identity pool name}/subject/{subject)`
+         * except for some GKE identities (GKE_WORKLOAD, FREEFORM, GKE_HUB_WORKLOAD)
+         * that are still in the legacy format `serviceAccount:{identity pool
+         * name}[{subject}]`
+         *
+         * @param string $principalSubject
+         */
+        public function setPrincipalSubject($principalSubject)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrincipalSubject()
+        {
+        }
+        /**
+         * Third party identity as the real authority.
+         *
+         * @param ThirdPartyPrincipal $thirdPartyPrincipal
+         */
+        public function setThirdPartyPrincipal(ThirdPartyPrincipal $thirdPartyPrincipal)
+        {
+        }
+        /**
+         * @return ThirdPartyPrincipal
+         */
+        public function getThirdPartyPrincipal()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FirstPartyPrincipal
+     * Runtime class alias of \Google\Service\ServiceControl\ServiceAccountDelegationInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFirstPartyPrincipal()
-    {
-    }
-    /**
-     * A string representing the principal_subject associated with the identity.
-     * For most identities, the format will be
-     * `principal://iam.googleapis.com/{identity pool name}/subject/{subject)`
-     * except for some GKE identities (GKE_WORKLOAD, FREEFORM, GKE_HUB_WORKLOAD)
-     * that are still in the legacy format `serviceAccount:{identity pool
-     * name}[{subject}]`
-     *
-     * @param string $principalSubject
-     */
-    public function setPrincipalSubject($principalSubject)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrincipalSubject()
-    {
-    }
-    /**
-     * Third party identity as the real authority.
-     *
-     * @param ThirdPartyPrincipal $thirdPartyPrincipal
-     */
-    public function setThirdPartyPrincipal(ThirdPartyPrincipal $thirdPartyPrincipal)
-    {
-    }
-    /**
-     * @return ThirdPartyPrincipal
-     */
-    public function getThirdPartyPrincipal()
+    class Google_Service_ServiceControl_ServiceAccountDelegationInfo extends \Google\Service\ServiceControl\ServiceAccountDelegationInfo
     {
     }
 }

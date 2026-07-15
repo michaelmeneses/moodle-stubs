@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3PageInfo extends \Google\Model
-{
-    /**
-     * Always present for WebhookRequest. Ignored for WebhookResponse. The unique
-     * identifier of the current page. Format:
-     * `projects//locations//agents//flows//pages/`.
-     *
-     * @var string
-     */
-    public $currentPage;
-    /**
-     * Always present for WebhookRequest. Ignored for WebhookResponse. The display
-     * name of the current page.
-     *
-     * @var string
-     */
-    public $displayName;
-    protected $formInfoType = GoogleCloudDialogflowCxV3PageInfoFormInfo::class;
-    protected $formInfoDataType = '';
-    /**
-     * Always present for WebhookRequest. Ignored for WebhookResponse. The unique
-     * identifier of the current page. Format:
-     * `projects//locations//agents//flows//pages/`.
-     *
-     * @param string $currentPage
-     */
-    public function setCurrentPage($currentPage)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3PageInfo extends \Google\Model
     {
+        /**
+         * Always present for WebhookRequest. Ignored for WebhookResponse. The unique
+         * identifier of the current page. Format:
+         * `projects//locations//agents//flows//pages/`.
+         *
+         * @var string
+         */
+        public $currentPage;
+        /**
+         * Always present for WebhookRequest. Ignored for WebhookResponse. The display
+         * name of the current page.
+         *
+         * @var string
+         */
+        public $displayName;
+        protected $formInfoType = GoogleCloudDialogflowCxV3PageInfoFormInfo::class;
+        protected $formInfoDataType = '';
+        /**
+         * Always present for WebhookRequest. Ignored for WebhookResponse. The unique
+         * identifier of the current page. Format:
+         * `projects//locations//agents//flows//pages/`.
+         *
+         * @param string $currentPage
+         */
+        public function setCurrentPage($currentPage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCurrentPage()
+        {
+        }
+        /**
+         * Always present for WebhookRequest. Ignored for WebhookResponse. The display
+         * name of the current page.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Optional for both WebhookRequest and WebhookResponse. Information about the
+         * form.
+         *
+         * @param GoogleCloudDialogflowCxV3PageInfoFormInfo $formInfo
+         */
+        public function setFormInfo(GoogleCloudDialogflowCxV3PageInfoFormInfo $formInfo)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3PageInfoFormInfo
+         */
+        public function getFormInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3PageInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCurrentPage()
-    {
-    }
-    /**
-     * Always present for WebhookRequest. Ignored for WebhookResponse. The display
-     * name of the current page.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Optional for both WebhookRequest and WebhookResponse. Information about the
-     * form.
-     *
-     * @param GoogleCloudDialogflowCxV3PageInfoFormInfo $formInfo
-     */
-    public function setFormInfo(GoogleCloudDialogflowCxV3PageInfoFormInfo $formInfo)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3PageInfoFormInfo
-     */
-    public function getFormInfo()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3PageInfo extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3PageInfo
     {
     }
 }

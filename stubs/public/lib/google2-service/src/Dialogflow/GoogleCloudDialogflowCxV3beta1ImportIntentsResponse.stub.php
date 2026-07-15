@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3beta1ImportIntentsResponse extends \Google\Collection
-{
-    protected $collection_key = 'intents';
-    protected $conflictingResourcesType = GoogleCloudDialogflowCxV3beta1ImportIntentsResponseConflictingResources::class;
-    protected $conflictingResourcesDataType = '';
-    /**
-     * The unique identifier of the imported intents. Format:
-     * `projects//locations//agents//intents/`.
-     *
-     * @var string[]
-     */
-    public $intents;
-    /**
-     * Info which resources have conflicts when REPORT_CONFLICT merge_option is
-     * set in ImportIntentsRequest.
-     *
-     * @param GoogleCloudDialogflowCxV3beta1ImportIntentsResponseConflictingResources $conflictingResources
-     */
-    public function setConflictingResources(GoogleCloudDialogflowCxV3beta1ImportIntentsResponseConflictingResources $conflictingResources)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3beta1ImportIntentsResponse extends \Google\Collection
     {
+        protected $collection_key = 'intents';
+        protected $conflictingResourcesType = GoogleCloudDialogflowCxV3beta1ImportIntentsResponseConflictingResources::class;
+        protected $conflictingResourcesDataType = '';
+        /**
+         * The unique identifier of the imported intents. Format:
+         * `projects//locations//agents//intents/`.
+         *
+         * @var string[]
+         */
+        public $intents;
+        /**
+         * Info which resources have conflicts when REPORT_CONFLICT merge_option is
+         * set in ImportIntentsRequest.
+         *
+         * @param GoogleCloudDialogflowCxV3beta1ImportIntentsResponseConflictingResources $conflictingResources
+         */
+        public function setConflictingResources(GoogleCloudDialogflowCxV3beta1ImportIntentsResponseConflictingResources $conflictingResources)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3beta1ImportIntentsResponseConflictingResources
+         */
+        public function getConflictingResources()
+        {
+        }
+        /**
+         * The unique identifier of the imported intents. Format:
+         * `projects//locations//agents//intents/`.
+         *
+         * @param string[] $intents
+         */
+        public function setIntents($intents)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getIntents()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowCxV3beta1ImportIntentsResponseConflictingResources
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3beta1ImportIntentsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConflictingResources()
-    {
-    }
-    /**
-     * The unique identifier of the imported intents. Format:
-     * `projects//locations//agents//intents/`.
-     *
-     * @param string[] $intents
-     */
-    public function setIntents($intents)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getIntents()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3beta1ImportIntentsResponse extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3beta1ImportIntentsResponse
     {
     }
 }

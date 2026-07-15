@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeUXReport;
-
-class Record extends \Google\Model
-{
-    protected $collectionPeriodType = CollectionPeriod::class;
-    protected $collectionPeriodDataType = '';
-    protected $keyType = Key::class;
-    protected $keyDataType = '';
-    protected $metricsType = Metric::class;
-    protected $metricsDataType = 'map';
-    /**
-     * The collection period indicates when the data reflected in this record was
-     * collected.
-     *
-     * @param CollectionPeriod $collectionPeriod
-     */
-    public function setCollectionPeriod(CollectionPeriod $collectionPeriod)
+namespace Google\Service\ChromeUXReport {
+    class Record extends \Google\Model
     {
+        protected $collectionPeriodType = CollectionPeriod::class;
+        protected $collectionPeriodDataType = '';
+        protected $keyType = Key::class;
+        protected $keyDataType = '';
+        protected $metricsType = Metric::class;
+        protected $metricsDataType = 'map';
+        /**
+         * The collection period indicates when the data reflected in this record was
+         * collected.
+         *
+         * @param CollectionPeriod $collectionPeriod
+         */
+        public function setCollectionPeriod(CollectionPeriod $collectionPeriod)
+        {
+        }
+        /**
+         * @return CollectionPeriod
+         */
+        public function getCollectionPeriod()
+        {
+        }
+        /**
+         * Key defines all of the unique querying parameters needed to look up a user
+         * experience record.
+         *
+         * @param Key $key
+         */
+        public function setKey(Key $key)
+        {
+        }
+        /**
+         * @return Key
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * Metrics is the map of user experience data available for the record defined
+         * in the key field. Metrics are keyed on the metric name. Allowed key values:
+         * ["first_contentful_paint", "first_input_delay", "largest_contentful_paint",
+         * "cumulative_layout_shift", "experimental_time_to_first_byte",
+         * "experimental_interaction_to_next_paint"]
+         *
+         * @param Metric[] $metrics
+         */
+        public function setMetrics($metrics)
+        {
+        }
+        /**
+         * @return Metric[]
+         */
+        public function getMetrics()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CollectionPeriod
+     * Runtime class alias of \Google\Service\ChromeUXReport\Record registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCollectionPeriod()
-    {
-    }
-    /**
-     * Key defines all of the unique querying parameters needed to look up a user
-     * experience record.
-     *
-     * @param Key $key
-     */
-    public function setKey(Key $key)
-    {
-    }
-    /**
-     * @return Key
-     */
-    public function getKey()
-    {
-    }
-    /**
-     * Metrics is the map of user experience data available for the record defined
-     * in the key field. Metrics are keyed on the metric name. Allowed key values:
-     * ["first_contentful_paint", "first_input_delay", "largest_contentful_paint",
-     * "cumulative_layout_shift", "experimental_time_to_first_byte",
-     * "experimental_interaction_to_next_paint"]
-     *
-     * @param Metric[] $metrics
-     */
-    public function setMetrics($metrics)
-    {
-    }
-    /**
-     * @return Metric[]
-     */
-    public function getMetrics()
+    class Google_Service_ChromeUXReport_Record extends \Google\Service\ChromeUXReport\Record
     {
     }
 }

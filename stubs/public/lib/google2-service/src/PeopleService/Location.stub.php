@@ -21,166 +21,175 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PeopleService;
-
-class Location extends \Google\Model
-{
-    /**
-     * The building identifier.
-     *
-     * @var string
-     */
-    public $buildingId;
-    /**
-     * Whether the location is the current location.
-     *
-     * @var bool
-     */
-    public $current;
-    /**
-     * The individual desk location.
-     *
-     * @var string
-     */
-    public $deskCode;
-    /**
-     * The floor name or number.
-     *
-     * @var string
-     */
-    public $floor;
-    /**
-     * The floor section in `floor_name`.
-     *
-     * @var string
-     */
-    public $floorSection;
-    protected $metadataType = FieldMetadata::class;
-    protected $metadataDataType = '';
-    /**
-     * The type of the location. The type can be custom or one of these predefined
-     * values: * `desk` * `grewUp`
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The free-form value of the location.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * The building identifier.
-     *
-     * @param string $buildingId
-     */
-    public function setBuildingId($buildingId)
+namespace Google\Service\PeopleService {
+    class Location extends \Google\Model
     {
+        /**
+         * The building identifier.
+         *
+         * @var string
+         */
+        public $buildingId;
+        /**
+         * Whether the location is the current location.
+         *
+         * @var bool
+         */
+        public $current;
+        /**
+         * The individual desk location.
+         *
+         * @var string
+         */
+        public $deskCode;
+        /**
+         * The floor name or number.
+         *
+         * @var string
+         */
+        public $floor;
+        /**
+         * The floor section in `floor_name`.
+         *
+         * @var string
+         */
+        public $floorSection;
+        protected $metadataType = FieldMetadata::class;
+        protected $metadataDataType = '';
+        /**
+         * The type of the location. The type can be custom or one of these predefined
+         * values: * `desk` * `grewUp`
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The free-form value of the location.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * The building identifier.
+         *
+         * @param string $buildingId
+         */
+        public function setBuildingId($buildingId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBuildingId()
+        {
+        }
+        /**
+         * Whether the location is the current location.
+         *
+         * @param bool $current
+         */
+        public function setCurrent($current)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCurrent()
+        {
+        }
+        /**
+         * The individual desk location.
+         *
+         * @param string $deskCode
+         */
+        public function setDeskCode($deskCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeskCode()
+        {
+        }
+        /**
+         * The floor name or number.
+         *
+         * @param string $floor
+         */
+        public function setFloor($floor)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFloor()
+        {
+        }
+        /**
+         * The floor section in `floor_name`.
+         *
+         * @param string $floorSection
+         */
+        public function setFloorSection($floorSection)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFloorSection()
+        {
+        }
+        /**
+         * Metadata about the location.
+         *
+         * @param FieldMetadata $metadata
+         */
+        public function setMetadata(FieldMetadata $metadata)
+        {
+        }
+        /**
+         * @return FieldMetadata
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * The type of the location. The type can be custom or one of these predefined
+         * values: * `desk` * `grewUp`
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
+        /**
+         * The free-form value of the location.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PeopleService\Location registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBuildingId()
-    {
-    }
-    /**
-     * Whether the location is the current location.
-     *
-     * @param bool $current
-     */
-    public function setCurrent($current)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCurrent()
-    {
-    }
-    /**
-     * The individual desk location.
-     *
-     * @param string $deskCode
-     */
-    public function setDeskCode($deskCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeskCode()
-    {
-    }
-    /**
-     * The floor name or number.
-     *
-     * @param string $floor
-     */
-    public function setFloor($floor)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFloor()
-    {
-    }
-    /**
-     * The floor section in `floor_name`.
-     *
-     * @param string $floorSection
-     */
-    public function setFloorSection($floorSection)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFloorSection()
-    {
-    }
-    /**
-     * Metadata about the location.
-     *
-     * @param FieldMetadata $metadata
-     */
-    public function setMetadata(FieldMetadata $metadata)
-    {
-    }
-    /**
-     * @return FieldMetadata
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * The type of the location. The type can be custom or one of these predefined
-     * values: * `desk` * `grewUp`
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
-    {
-    }
-    /**
-     * The free-form value of the location.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_PeopleService_Location extends \Google\Service\PeopleService\Location
     {
     }
 }

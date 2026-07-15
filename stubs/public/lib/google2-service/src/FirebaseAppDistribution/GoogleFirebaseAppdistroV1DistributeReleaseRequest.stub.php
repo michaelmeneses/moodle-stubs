@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseAppDistribution;
-
-class GoogleFirebaseAppdistroV1DistributeReleaseRequest extends \Google\Collection
-{
-    protected $collection_key = 'testerEmails';
-    /**
-     * Optional. A list of group aliases (IDs) to be given access to this release.
-     * A combined maximum of 999 `testerEmails` and `groupAliases` can be
-     * specified in a single request.
-     *
-     * @var string[]
-     */
-    public $groupAliases;
-    /**
-     * Optional. A list of tester email addresses to be given access to this
-     * release. A combined maximum of 999 `testerEmails` and `groupAliases` can be
-     * specified in a single request.
-     *
-     * @var string[]
-     */
-    public $testerEmails;
-    /**
-     * Optional. A list of group aliases (IDs) to be given access to this release.
-     * A combined maximum of 999 `testerEmails` and `groupAliases` can be
-     * specified in a single request.
-     *
-     * @param string[] $groupAliases
-     */
-    public function setGroupAliases($groupAliases)
+namespace Google\Service\FirebaseAppDistribution {
+    class GoogleFirebaseAppdistroV1DistributeReleaseRequest extends \Google\Collection
     {
+        protected $collection_key = 'testerEmails';
+        /**
+         * Optional. A list of group aliases (IDs) to be given access to this release.
+         * A combined maximum of 999 `testerEmails` and `groupAliases` can be
+         * specified in a single request.
+         *
+         * @var string[]
+         */
+        public $groupAliases;
+        /**
+         * Optional. A list of tester email addresses to be given access to this
+         * release. A combined maximum of 999 `testerEmails` and `groupAliases` can be
+         * specified in a single request.
+         *
+         * @var string[]
+         */
+        public $testerEmails;
+        /**
+         * Optional. A list of group aliases (IDs) to be given access to this release.
+         * A combined maximum of 999 `testerEmails` and `groupAliases` can be
+         * specified in a single request.
+         *
+         * @param string[] $groupAliases
+         */
+        public function setGroupAliases($groupAliases)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getGroupAliases()
+        {
+        }
+        /**
+         * Optional. A list of tester email addresses to be given access to this
+         * release. A combined maximum of 999 `testerEmails` and `groupAliases` can be
+         * specified in a single request.
+         *
+         * @param string[] $testerEmails
+         */
+        public function setTesterEmails($testerEmails)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTesterEmails()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\FirebaseAppDistribution\GoogleFirebaseAppdistroV1DistributeReleaseRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGroupAliases()
-    {
-    }
-    /**
-     * Optional. A list of tester email addresses to be given access to this
-     * release. A combined maximum of 999 `testerEmails` and `groupAliases` can be
-     * specified in a single request.
-     *
-     * @param string[] $testerEmails
-     */
-    public function setTesterEmails($testerEmails)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTesterEmails()
+    class Google_Service_FirebaseAppDistribution_GoogleFirebaseAppdistroV1DistributeReleaseRequest extends \Google\Service\FirebaseAppDistribution\GoogleFirebaseAppdistroV1DistributeReleaseRequest
     {
     }
 }

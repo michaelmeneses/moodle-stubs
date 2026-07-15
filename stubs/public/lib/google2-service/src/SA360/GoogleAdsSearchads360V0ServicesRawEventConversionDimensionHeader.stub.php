@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0ServicesRawEventConversionDimensionHeader extends \Google\Model
-{
-    /**
-     * The conversion custom variable ID.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * The user defined name of the raw event dimension.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The conversion custom variable ID.
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0ServicesRawEventConversionDimensionHeader extends \Google\Model
     {
+        /**
+         * The conversion custom variable ID.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * The user defined name of the raw event dimension.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The conversion custom variable ID.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * The user defined name of the raw event dimension.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0ServicesRawEventConversionDimensionHeader registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * The user defined name of the raw event dimension.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_SA360_GoogleAdsSearchads360V0ServicesRawEventConversionDimensionHeader extends \Google\Service\SA360\GoogleAdsSearchads360V0ServicesRawEventConversionDimensionHeader
     {
     }
 }

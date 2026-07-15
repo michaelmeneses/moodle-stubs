@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class VmwareVipConfig extends \Google\Model
-{
-    /**
-     * The VIP which you previously set aside for the Kubernetes API of this
-     * cluster.
-     *
-     * @var string
-     */
-    public $controlPlaneVip;
-    /**
-     * The VIP which you previously set aside for ingress traffic into this
-     * cluster.
-     *
-     * @var string
-     */
-    public $ingressVip;
-    /**
-     * The VIP which you previously set aside for the Kubernetes API of this
-     * cluster.
-     *
-     * @param string $controlPlaneVip
-     */
-    public function setControlPlaneVip($controlPlaneVip)
+namespace Google\Service\GKEOnPrem {
+    class VmwareVipConfig extends \Google\Model
     {
+        /**
+         * The VIP which you previously set aside for the Kubernetes API of this
+         * cluster.
+         *
+         * @var string
+         */
+        public $controlPlaneVip;
+        /**
+         * The VIP which you previously set aside for ingress traffic into this
+         * cluster.
+         *
+         * @var string
+         */
+        public $ingressVip;
+        /**
+         * The VIP which you previously set aside for the Kubernetes API of this
+         * cluster.
+         *
+         * @param string $controlPlaneVip
+         */
+        public function setControlPlaneVip($controlPlaneVip)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getControlPlaneVip()
+        {
+        }
+        /**
+         * The VIP which you previously set aside for ingress traffic into this
+         * cluster.
+         *
+         * @param string $ingressVip
+         */
+        public function setIngressVip($ingressVip)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIngressVip()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEOnPrem\VmwareVipConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getControlPlaneVip()
-    {
-    }
-    /**
-     * The VIP which you previously set aside for ingress traffic into this
-     * cluster.
-     *
-     * @param string $ingressVip
-     */
-    public function setIngressVip($ingressVip)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIngressVip()
+    class Google_Service_GKEOnPrem_VmwareVipConfig extends \Google\Service\GKEOnPrem\VmwareVipConfig
     {
     }
 }

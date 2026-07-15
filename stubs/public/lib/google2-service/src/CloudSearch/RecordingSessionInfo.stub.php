@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class RecordingSessionInfo extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $ownerEmail;
-    /**
-     * @var string
-     */
-    public $recordingSessionId;
-    protected $sessionStateInfoType = SessionStateInfo::class;
-    protected $sessionStateInfoDataType = '';
-    /**
-     * @param string
-     */
-    public function setOwnerEmail($ownerEmail)
+namespace Google\Service\CloudSearch {
+    class RecordingSessionInfo extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $ownerEmail;
+        /**
+         * @var string
+         */
+        public $recordingSessionId;
+        protected $sessionStateInfoType = SessionStateInfo::class;
+        protected $sessionStateInfoDataType = '';
+        /**
+         * @param string
+         */
+        public function setOwnerEmail($ownerEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOwnerEmail()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRecordingSessionId($recordingSessionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRecordingSessionId()
+        {
+        }
+        /**
+         * @param SessionStateInfo
+         */
+        public function setSessionStateInfo(SessionStateInfo $sessionStateInfo)
+        {
+        }
+        /**
+         * @return SessionStateInfo
+         */
+        public function getSessionStateInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\RecordingSessionInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOwnerEmail()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRecordingSessionId($recordingSessionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRecordingSessionId()
-    {
-    }
-    /**
-     * @param SessionStateInfo
-     */
-    public function setSessionStateInfo(SessionStateInfo $sessionStateInfo)
-    {
-    }
-    /**
-     * @return SessionStateInfo
-     */
-    public function getSessionStateInfo()
+    class Google_Service_CloudSearch_RecordingSessionInfo extends \Google\Service\CloudSearch\RecordingSessionInfo
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OrgPolicyAPI;
-
-class GoogleCloudOrgpolicyV2ListPoliciesResponse extends \Google\Collection
-{
-    protected $collection_key = 'policies';
-    /**
-     * Page token used to retrieve the next page. This is currently not used, but
-     * the server may at any point start supplying a valid token.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $policiesType = GoogleCloudOrgpolicyV2Policy::class;
-    protected $policiesDataType = 'array';
-    /**
-     * Page token used to retrieve the next page. This is currently not used, but
-     * the server may at any point start supplying a valid token.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\OrgPolicyAPI {
+    class GoogleCloudOrgpolicyV2ListPoliciesResponse extends \Google\Collection
     {
+        protected $collection_key = 'policies';
+        /**
+         * Page token used to retrieve the next page. This is currently not used, but
+         * the server may at any point start supplying a valid token.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $policiesType = GoogleCloudOrgpolicyV2Policy::class;
+        protected $policiesDataType = 'array';
+        /**
+         * Page token used to retrieve the next page. This is currently not used, but
+         * the server may at any point start supplying a valid token.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * All policies that exist on the resource. It will be empty if no policies
+         * are set.
+         *
+         * @param GoogleCloudOrgpolicyV2Policy[] $policies
+         */
+        public function setPolicies($policies)
+        {
+        }
+        /**
+         * @return GoogleCloudOrgpolicyV2Policy[]
+         */
+        public function getPolicies()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OrgPolicyAPI\GoogleCloudOrgpolicyV2ListPoliciesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * All policies that exist on the resource. It will be empty if no policies
-     * are set.
-     *
-     * @param GoogleCloudOrgpolicyV2Policy[] $policies
-     */
-    public function setPolicies($policies)
-    {
-    }
-    /**
-     * @return GoogleCloudOrgpolicyV2Policy[]
-     */
-    public function getPolicies()
+    class Google_Service_OrgPolicyAPI_GoogleCloudOrgpolicyV2ListPoliciesResponse extends \Google\Service\OrgPolicyAPI\GoogleCloudOrgpolicyV2ListPoliciesResponse
     {
     }
 }

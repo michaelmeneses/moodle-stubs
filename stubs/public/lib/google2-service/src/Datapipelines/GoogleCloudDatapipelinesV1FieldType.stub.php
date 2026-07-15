@@ -21,96 +21,105 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datapipelines;
-
-class GoogleCloudDatapipelinesV1FieldType extends \Google\Model
-{
-    protected $collectionElementTypeType = GoogleCloudDatapipelinesV1FieldType::class;
-    protected $collectionElementTypeDataType = '';
-    protected $logicalTypeType = GoogleCloudDatapipelinesV1LogicalType::class;
-    protected $logicalTypeDataType = '';
-    protected $mapTypeType = GoogleCloudDatapipelinesV1MapType::class;
-    protected $mapTypeDataType = '';
-    /**
-     * @var bool
-     */
-    public $nullable;
-    protected $rowSchemaType = GoogleCloudDatapipelinesV1Schema::class;
-    protected $rowSchemaDataType = '';
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @param GoogleCloudDatapipelinesV1FieldType
-     */
-    public function setCollectionElementType(GoogleCloudDatapipelinesV1FieldType $collectionElementType)
+namespace Google\Service\Datapipelines {
+    class GoogleCloudDatapipelinesV1FieldType extends \Google\Model
     {
+        protected $collectionElementTypeType = GoogleCloudDatapipelinesV1FieldType::class;
+        protected $collectionElementTypeDataType = '';
+        protected $logicalTypeType = GoogleCloudDatapipelinesV1LogicalType::class;
+        protected $logicalTypeDataType = '';
+        protected $mapTypeType = GoogleCloudDatapipelinesV1MapType::class;
+        protected $mapTypeDataType = '';
+        /**
+         * @var bool
+         */
+        public $nullable;
+        protected $rowSchemaType = GoogleCloudDatapipelinesV1Schema::class;
+        protected $rowSchemaDataType = '';
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @param GoogleCloudDatapipelinesV1FieldType
+         */
+        public function setCollectionElementType(GoogleCloudDatapipelinesV1FieldType $collectionElementType)
+        {
+        }
+        /**
+         * @return GoogleCloudDatapipelinesV1FieldType
+         */
+        public function getCollectionElementType()
+        {
+        }
+        /**
+         * @param GoogleCloudDatapipelinesV1LogicalType
+         */
+        public function setLogicalType(GoogleCloudDatapipelinesV1LogicalType $logicalType)
+        {
+        }
+        /**
+         * @return GoogleCloudDatapipelinesV1LogicalType
+         */
+        public function getLogicalType()
+        {
+        }
+        /**
+         * @param GoogleCloudDatapipelinesV1MapType
+         */
+        public function setMapType(GoogleCloudDatapipelinesV1MapType $mapType)
+        {
+        }
+        /**
+         * @return GoogleCloudDatapipelinesV1MapType
+         */
+        public function getMapType()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setNullable($nullable)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getNullable()
+        {
+        }
+        /**
+         * @param GoogleCloudDatapipelinesV1Schema
+         */
+        public function setRowSchema(GoogleCloudDatapipelinesV1Schema $rowSchema)
+        {
+        }
+        /**
+         * @return GoogleCloudDatapipelinesV1Schema
+         */
+        public function getRowSchema()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatapipelinesV1FieldType
+     * Runtime class alias of \Google\Service\Datapipelines\GoogleCloudDatapipelinesV1FieldType registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCollectionElementType()
-    {
-    }
-    /**
-     * @param GoogleCloudDatapipelinesV1LogicalType
-     */
-    public function setLogicalType(GoogleCloudDatapipelinesV1LogicalType $logicalType)
-    {
-    }
-    /**
-     * @return GoogleCloudDatapipelinesV1LogicalType
-     */
-    public function getLogicalType()
-    {
-    }
-    /**
-     * @param GoogleCloudDatapipelinesV1MapType
-     */
-    public function setMapType(GoogleCloudDatapipelinesV1MapType $mapType)
-    {
-    }
-    /**
-     * @return GoogleCloudDatapipelinesV1MapType
-     */
-    public function getMapType()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setNullable($nullable)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getNullable()
-    {
-    }
-    /**
-     * @param GoogleCloudDatapipelinesV1Schema
-     */
-    public function setRowSchema(GoogleCloudDatapipelinesV1Schema $rowSchema)
-    {
-    }
-    /**
-     * @return GoogleCloudDatapipelinesV1Schema
-     */
-    public function getRowSchema()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_Datapipelines_GoogleCloudDatapipelinesV1FieldType extends \Google\Service\Datapipelines\GoogleCloudDatapipelinesV1FieldType
     {
     }
 }

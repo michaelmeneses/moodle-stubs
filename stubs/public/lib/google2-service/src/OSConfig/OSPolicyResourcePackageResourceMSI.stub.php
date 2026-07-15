@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OSConfig;
-
-class OSPolicyResourcePackageResourceMSI extends \Google\Collection
-{
-    protected $collection_key = 'properties';
-    /**
-     * Additional properties to use during installation. This should be in the
-     * format of Property=Setting. Appended to the defaults of `ACTION=INSTALL
-     * REBOOT=ReallySuppress`.
-     *
-     * @var string[]
-     */
-    public $properties;
-    protected $sourceType = OSPolicyResourceFile::class;
-    protected $sourceDataType = '';
-    /**
-     * Additional properties to use during installation. This should be in the
-     * format of Property=Setting. Appended to the defaults of `ACTION=INSTALL
-     * REBOOT=ReallySuppress`.
-     *
-     * @param string[] $properties
-     */
-    public function setProperties($properties)
+namespace Google\Service\OSConfig {
+    class OSPolicyResourcePackageResourceMSI extends \Google\Collection
     {
+        protected $collection_key = 'properties';
+        /**
+         * Additional properties to use during installation. This should be in the
+         * format of Property=Setting. Appended to the defaults of `ACTION=INSTALL
+         * REBOOT=ReallySuppress`.
+         *
+         * @var string[]
+         */
+        public $properties;
+        protected $sourceType = OSPolicyResourceFile::class;
+        protected $sourceDataType = '';
+        /**
+         * Additional properties to use during installation. This should be in the
+         * format of Property=Setting. Appended to the defaults of `ACTION=INSTALL
+         * REBOOT=ReallySuppress`.
+         *
+         * @param string[] $properties
+         */
+        public function setProperties($properties)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getProperties()
+        {
+        }
+        /**
+         * Required. The MSI package.
+         *
+         * @param OSPolicyResourceFile $source
+         */
+        public function setSource(OSPolicyResourceFile $source)
+        {
+        }
+        /**
+         * @return OSPolicyResourceFile
+         */
+        public function getSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\OSConfig\OSPolicyResourcePackageResourceMSI registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProperties()
-    {
-    }
-    /**
-     * Required. The MSI package.
-     *
-     * @param OSPolicyResourceFile $source
-     */
-    public function setSource(OSPolicyResourceFile $source)
-    {
-    }
-    /**
-     * @return OSPolicyResourceFile
-     */
-    public function getSource()
+    class Google_Service_OSConfig_OSPolicyResourcePackageResourceMSI extends \Google\Service\OSConfig\OSPolicyResourcePackageResourceMSI
     {
     }
 }

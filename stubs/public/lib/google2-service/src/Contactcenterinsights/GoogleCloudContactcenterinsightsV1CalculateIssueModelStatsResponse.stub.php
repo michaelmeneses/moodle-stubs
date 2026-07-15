@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1CalculateIssueModelStatsResponse extends \Google\Model
-{
-    protected $currentStatsType = GoogleCloudContactcenterinsightsV1IssueModelLabelStats::class;
-    protected $currentStatsDataType = '';
-    /**
-     * The latest label statistics for the queried issue model. Includes results
-     * on both training data and data labeled after deployment.
-     *
-     * @param GoogleCloudContactcenterinsightsV1IssueModelLabelStats $currentStats
-     */
-    public function setCurrentStats(GoogleCloudContactcenterinsightsV1IssueModelLabelStats $currentStats)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1CalculateIssueModelStatsResponse extends \Google\Model
     {
+        protected $currentStatsType = GoogleCloudContactcenterinsightsV1IssueModelLabelStats::class;
+        protected $currentStatsDataType = '';
+        /**
+         * The latest label statistics for the queried issue model. Includes results
+         * on both training data and data labeled after deployment.
+         *
+         * @param GoogleCloudContactcenterinsightsV1IssueModelLabelStats $currentStats
+         */
+        public function setCurrentStats(GoogleCloudContactcenterinsightsV1IssueModelLabelStats $currentStats)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1IssueModelLabelStats
+         */
+        public function getCurrentStats()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudContactcenterinsightsV1IssueModelLabelStats
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1CalculateIssueModelStatsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCurrentStats()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1CalculateIssueModelStatsResponse extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1CalculateIssueModelStatsResponse
     {
     }
 }

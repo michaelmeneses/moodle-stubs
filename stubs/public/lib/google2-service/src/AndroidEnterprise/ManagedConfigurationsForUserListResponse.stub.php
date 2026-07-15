@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise;
-
-class ManagedConfigurationsForUserListResponse extends \Google\Collection
-{
-    protected $collection_key = 'managedConfigurationForUser';
-    protected $managedConfigurationForUserType = ManagedConfiguration::class;
-    protected $managedConfigurationForUserDataType = 'array';
-    /**
-     * A managed configuration for an app for a specific user.
-     *
-     * @param ManagedConfiguration[] $managedConfigurationForUser
-     */
-    public function setManagedConfigurationForUser($managedConfigurationForUser)
+namespace Google\Service\AndroidEnterprise {
+    class ManagedConfigurationsForUserListResponse extends \Google\Collection
     {
+        protected $collection_key = 'managedConfigurationForUser';
+        protected $managedConfigurationForUserType = ManagedConfiguration::class;
+        protected $managedConfigurationForUserDataType = 'array';
+        /**
+         * A managed configuration for an app for a specific user.
+         *
+         * @param ManagedConfiguration[] $managedConfigurationForUser
+         */
+        public function setManagedConfigurationForUser($managedConfigurationForUser)
+        {
+        }
+        /**
+         * @return ManagedConfiguration[]
+         */
+        public function getManagedConfigurationForUser()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ManagedConfiguration[]
+     * Runtime class alias of \Google\Service\AndroidEnterprise\ManagedConfigurationsForUserListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getManagedConfigurationForUser()
+    class Google_Service_AndroidEnterprise_ManagedConfigurationsForUserListResponse extends \Google\Service\AndroidEnterprise\ManagedConfigurationsForUserListResponse
     {
     }
 }

@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OracleDatabase;
-
-class ListDbNodesResponse extends \Google\Collection
-{
-    protected $collection_key = 'dbNodes';
-    protected $dbNodesType = DbNode::class;
-    protected $dbNodesDataType = 'array';
-    /**
-     * A token identifying a page of results the node should return.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of DB Nodes
-     *
-     * @param DbNode[] $dbNodes
-     */
-    public function setDbNodes($dbNodes)
+namespace Google\Service\OracleDatabase {
+    class ListDbNodesResponse extends \Google\Collection
     {
+        protected $collection_key = 'dbNodes';
+        protected $dbNodesType = DbNode::class;
+        protected $dbNodesDataType = 'array';
+        /**
+         * A token identifying a page of results the node should return.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of DB Nodes
+         *
+         * @param DbNode[] $dbNodes
+         */
+        public function setDbNodes($dbNodes)
+        {
+        }
+        /**
+         * @return DbNode[]
+         */
+        public function getDbNodes()
+        {
+        }
+        /**
+         * A token identifying a page of results the node should return.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DbNode[]
+     * Runtime class alias of \Google\Service\OracleDatabase\ListDbNodesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDbNodes()
-    {
-    }
-    /**
-     * A token identifying a page of results the node should return.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_OracleDatabase_ListDbNodesResponse extends \Google\Service\OracleDatabase\ListDbNodesResponse
     {
     }
 }

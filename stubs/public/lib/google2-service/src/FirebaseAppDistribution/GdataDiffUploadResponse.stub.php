@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseAppDistribution;
-
-class GdataDiffUploadResponse extends \Google\Model
-{
-    /**
-     * The object version of the object at the server. Must be included in the end
-     * notification response. The version in the end notification response must
-     * correspond to the new version of the object that is now stored at the
-     * server, after the upload.
-     *
-     * @var string
-     */
-    public $objectVersion;
-    protected $originalObjectType = GdataCompositeMedia::class;
-    protected $originalObjectDataType = '';
-    /**
-     * The object version of the object at the server. Must be included in the end
-     * notification response. The version in the end notification response must
-     * correspond to the new version of the object that is now stored at the
-     * server, after the upload.
-     *
-     * @param string $objectVersion
-     */
-    public function setObjectVersion($objectVersion)
+namespace Google\Service\FirebaseAppDistribution {
+    class GdataDiffUploadResponse extends \Google\Model
     {
+        /**
+         * The object version of the object at the server. Must be included in the end
+         * notification response. The version in the end notification response must
+         * correspond to the new version of the object that is now stored at the
+         * server, after the upload.
+         *
+         * @var string
+         */
+        public $objectVersion;
+        protected $originalObjectType = GdataCompositeMedia::class;
+        protected $originalObjectDataType = '';
+        /**
+         * The object version of the object at the server. Must be included in the end
+         * notification response. The version in the end notification response must
+         * correspond to the new version of the object that is now stored at the
+         * server, after the upload.
+         *
+         * @param string $objectVersion
+         */
+        public function setObjectVersion($objectVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectVersion()
+        {
+        }
+        /**
+         * The location of the original file for a diff upload request. Must be filled
+         * in if responding to an upload start notification.
+         *
+         * @param GdataCompositeMedia $originalObject
+         */
+        public function setOriginalObject(GdataCompositeMedia $originalObject)
+        {
+        }
+        /**
+         * @return GdataCompositeMedia
+         */
+        public function getOriginalObject()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\FirebaseAppDistribution\GdataDiffUploadResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getObjectVersion()
-    {
-    }
-    /**
-     * The location of the original file for a diff upload request. Must be filled
-     * in if responding to an upload start notification.
-     *
-     * @param GdataCompositeMedia $originalObject
-     */
-    public function setOriginalObject(GdataCompositeMedia $originalObject)
-    {
-    }
-    /**
-     * @return GdataCompositeMedia
-     */
-    public function getOriginalObject()
+    class Google_Service_FirebaseAppDistribution_GdataDiffUploadResponse extends \Google\Service\FirebaseAppDistribution\GdataDiffUploadResponse
     {
     }
 }

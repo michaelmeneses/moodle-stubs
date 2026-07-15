@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class DiscoverableProgramMerchantSigninInfo extends \Google\Model
-{
-    protected $signinWebsiteType = Uri::class;
-    protected $signinWebsiteDataType = '';
-    /**
-     * The URL to direct the user to for the merchant's signin site.
-     *
-     * @param Uri $signinWebsite
-     */
-    public function setSigninWebsite(Uri $signinWebsite)
+namespace Google\Service\Walletobjects {
+    class DiscoverableProgramMerchantSigninInfo extends \Google\Model
     {
+        protected $signinWebsiteType = Uri::class;
+        protected $signinWebsiteDataType = '';
+        /**
+         * The URL to direct the user to for the merchant's signin site.
+         *
+         * @param Uri $signinWebsite
+         */
+        public function setSigninWebsite(Uri $signinWebsite)
+        {
+        }
+        /**
+         * @return Uri
+         */
+        public function getSigninWebsite()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Uri
+     * Runtime class alias of \Google\Service\Walletobjects\DiscoverableProgramMerchantSigninInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSigninWebsite()
+    class Google_Service_Walletobjects_DiscoverableProgramMerchantSigninInfo extends \Google\Service\Walletobjects\DiscoverableProgramMerchantSigninInfo
     {
     }
 }

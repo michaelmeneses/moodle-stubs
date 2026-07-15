@@ -21,96 +21,105 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMMigrationService;
-
-class DiskMigrationStep extends \Google\Model
-{
-    protected $copyingSourceDiskSnapshotType = CopyingSourceDiskSnapshotStep::class;
-    protected $copyingSourceDiskSnapshotDataType = '';
-    protected $creatingSourceDiskSnapshotType = CreatingSourceDiskSnapshotStep::class;
-    protected $creatingSourceDiskSnapshotDataType = '';
-    /**
-     * Output only. The time the step has ended.
-     *
-     * @var string
-     */
-    public $endTime;
-    protected $provisioningTargetDiskType = ProvisioningTargetDiskStep::class;
-    protected $provisioningTargetDiskDataType = '';
-    /**
-     * Output only. The time the step has started.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * Copying source disk snapshot step.
-     *
-     * @param CopyingSourceDiskSnapshotStep $copyingSourceDiskSnapshot
-     */
-    public function setCopyingSourceDiskSnapshot(CopyingSourceDiskSnapshotStep $copyingSourceDiskSnapshot)
+namespace Google\Service\VMMigrationService {
+    class DiskMigrationStep extends \Google\Model
     {
+        protected $copyingSourceDiskSnapshotType = CopyingSourceDiskSnapshotStep::class;
+        protected $copyingSourceDiskSnapshotDataType = '';
+        protected $creatingSourceDiskSnapshotType = CreatingSourceDiskSnapshotStep::class;
+        protected $creatingSourceDiskSnapshotDataType = '';
+        /**
+         * Output only. The time the step has ended.
+         *
+         * @var string
+         */
+        public $endTime;
+        protected $provisioningTargetDiskType = ProvisioningTargetDiskStep::class;
+        protected $provisioningTargetDiskDataType = '';
+        /**
+         * Output only. The time the step has started.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * Copying source disk snapshot step.
+         *
+         * @param CopyingSourceDiskSnapshotStep $copyingSourceDiskSnapshot
+         */
+        public function setCopyingSourceDiskSnapshot(CopyingSourceDiskSnapshotStep $copyingSourceDiskSnapshot)
+        {
+        }
+        /**
+         * @return CopyingSourceDiskSnapshotStep
+         */
+        public function getCopyingSourceDiskSnapshot()
+        {
+        }
+        /**
+         * Creating source disk snapshot step.
+         *
+         * @param CreatingSourceDiskSnapshotStep $creatingSourceDiskSnapshot
+         */
+        public function setCreatingSourceDiskSnapshot(CreatingSourceDiskSnapshotStep $creatingSourceDiskSnapshot)
+        {
+        }
+        /**
+         * @return CreatingSourceDiskSnapshotStep
+         */
+        public function getCreatingSourceDiskSnapshot()
+        {
+        }
+        /**
+         * Output only. The time the step has ended.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * Creating target disk step.
+         *
+         * @param ProvisioningTargetDiskStep $provisioningTargetDisk
+         */
+        public function setProvisioningTargetDisk(ProvisioningTargetDiskStep $provisioningTargetDisk)
+        {
+        }
+        /**
+         * @return ProvisioningTargetDiskStep
+         */
+        public function getProvisioningTargetDisk()
+        {
+        }
+        /**
+         * Output only. The time the step has started.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CopyingSourceDiskSnapshotStep
+     * Runtime class alias of \Google\Service\VMMigrationService\DiskMigrationStep registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCopyingSourceDiskSnapshot()
-    {
-    }
-    /**
-     * Creating source disk snapshot step.
-     *
-     * @param CreatingSourceDiskSnapshotStep $creatingSourceDiskSnapshot
-     */
-    public function setCreatingSourceDiskSnapshot(CreatingSourceDiskSnapshotStep $creatingSourceDiskSnapshot)
-    {
-    }
-    /**
-     * @return CreatingSourceDiskSnapshotStep
-     */
-    public function getCreatingSourceDiskSnapshot()
-    {
-    }
-    /**
-     * Output only. The time the step has ended.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndTime()
-    {
-    }
-    /**
-     * Creating target disk step.
-     *
-     * @param ProvisioningTargetDiskStep $provisioningTargetDisk
-     */
-    public function setProvisioningTargetDisk(ProvisioningTargetDiskStep $provisioningTargetDisk)
-    {
-    }
-    /**
-     * @return ProvisioningTargetDiskStep
-     */
-    public function getProvisioningTargetDisk()
-    {
-    }
-    /**
-     * Output only. The time the step has started.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
+    class Google_Service_VMMigrationService_DiskMigrationStep extends \Google\Service\VMMigrationService\DiskMigrationStep
     {
     }
 }

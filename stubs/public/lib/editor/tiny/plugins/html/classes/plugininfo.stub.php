@@ -29,6 +29,7 @@
  */
 namespace tiny_html;
 
+use editor_tiny\plugin;
 /**
  * Tiny TinyMCE HTML formatter plugin for Moodle.
  *

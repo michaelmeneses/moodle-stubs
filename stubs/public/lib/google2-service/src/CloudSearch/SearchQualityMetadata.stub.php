@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class SearchQualityMetadata extends \Google\Model
-{
-    /**
-     * An indication of the quality of the item, used to influence search quality.
-     * Value should be between 0.0 (lowest quality) and 1.0 (highest quality). The
-     * default value is 0.0.
-     *
-     * @var 
-     */
-    public $quality;
-    public function setQuality($quality)
+namespace Google\Service\CloudSearch {
+    class SearchQualityMetadata extends \Google\Model
     {
+        /**
+         * An indication of the quality of the item, used to influence search quality.
+         * Value should be between 0.0 (lowest quality) and 1.0 (highest quality). The
+         * default value is 0.0.
+         *
+         * @var 
+         */
+        public $quality;
+        public function setQuality($quality)
+        {
+        }
+        public function getQuality()
+        {
+        }
     }
-    public function getQuality()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudSearch\SearchQualityMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudSearch_SearchQualityMetadata extends \Google\Service\CloudSearch\SearchQualityMetadata
     {
     }
 }

@@ -21,187 +21,196 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1mainQueryMetricsResponseSliceDataPointConversationMeasure extends \Google\Collection
-{
-    protected $collection_key = 'qaTagScores';
-    /**
-     * The average agent's sentiment score.
-     *
-     * @var float
-     */
-    public $averageAgentSentimentScore;
-    /**
-     * The average client's sentiment score.
-     *
-     * @var float
-     */
-    public $averageClientSentimentScore;
-    /**
-     * The average customer satisfaction rating.
-     *
-     * @var 
-     */
-    public $averageCustomerSatisfactionRating;
-    /**
-     * The average duration.
-     *
-     * @var string
-     */
-    public $averageDuration;
-    /**
-     * The average normalized QA score for a scorecard. When computing the average
-     * across a set of conversations, if a conversation has been evaluated with
-     * multiple revisions of a scorecard, only the latest revision results will be
-     * used. Will exclude 0's in average calculation. Will be only populated if
-     * the request specifies a dimension of QA_SCORECARD_ID.
-     *
-     * @var 
-     */
-    public $averageQaNormalizedScore;
-    /**
-     * Average QA normalized score averaged for questions averaged across all
-     * revisions of the parent scorecard. Will be only populated if the request
-     * specifies a dimension of QA_QUESTION_ID.
-     *
-     * @var 
-     */
-    public $averageQaQuestionNormalizedScore;
-    /**
-     * The average silence percentage.
-     *
-     * @var float
-     */
-    public $averageSilencePercentage;
-    /**
-     * The average turn count.
-     *
-     * @var float
-     */
-    public $averageTurnCount;
-    /**
-     * The conversation count.
-     *
-     * @var int
-     */
-    public $conversationCount;
-    protected $qaTagScoresType = GoogleCloudContactcenterinsightsV1mainQueryMetricsResponseSliceDataPointConversationMeasureQaTagScore::class;
-    protected $qaTagScoresDataType = 'array';
-    /**
-     * The average agent's sentiment score.
-     *
-     * @param float $averageAgentSentimentScore
-     */
-    public function setAverageAgentSentimentScore($averageAgentSentimentScore)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1mainQueryMetricsResponseSliceDataPointConversationMeasure extends \Google\Collection
     {
+        protected $collection_key = 'qaTagScores';
+        /**
+         * The average agent's sentiment score.
+         *
+         * @var float
+         */
+        public $averageAgentSentimentScore;
+        /**
+         * The average client's sentiment score.
+         *
+         * @var float
+         */
+        public $averageClientSentimentScore;
+        /**
+         * The average customer satisfaction rating.
+         *
+         * @var 
+         */
+        public $averageCustomerSatisfactionRating;
+        /**
+         * The average duration.
+         *
+         * @var string
+         */
+        public $averageDuration;
+        /**
+         * The average normalized QA score for a scorecard. When computing the average
+         * across a set of conversations, if a conversation has been evaluated with
+         * multiple revisions of a scorecard, only the latest revision results will be
+         * used. Will exclude 0's in average calculation. Will be only populated if
+         * the request specifies a dimension of QA_SCORECARD_ID.
+         *
+         * @var 
+         */
+        public $averageQaNormalizedScore;
+        /**
+         * Average QA normalized score averaged for questions averaged across all
+         * revisions of the parent scorecard. Will be only populated if the request
+         * specifies a dimension of QA_QUESTION_ID.
+         *
+         * @var 
+         */
+        public $averageQaQuestionNormalizedScore;
+        /**
+         * The average silence percentage.
+         *
+         * @var float
+         */
+        public $averageSilencePercentage;
+        /**
+         * The average turn count.
+         *
+         * @var float
+         */
+        public $averageTurnCount;
+        /**
+         * The conversation count.
+         *
+         * @var int
+         */
+        public $conversationCount;
+        protected $qaTagScoresType = GoogleCloudContactcenterinsightsV1mainQueryMetricsResponseSliceDataPointConversationMeasureQaTagScore::class;
+        protected $qaTagScoresDataType = 'array';
+        /**
+         * The average agent's sentiment score.
+         *
+         * @param float $averageAgentSentimentScore
+         */
+        public function setAverageAgentSentimentScore($averageAgentSentimentScore)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getAverageAgentSentimentScore()
+        {
+        }
+        /**
+         * The average client's sentiment score.
+         *
+         * @param float $averageClientSentimentScore
+         */
+        public function setAverageClientSentimentScore($averageClientSentimentScore)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getAverageClientSentimentScore()
+        {
+        }
+        public function setAverageCustomerSatisfactionRating($averageCustomerSatisfactionRating)
+        {
+        }
+        public function getAverageCustomerSatisfactionRating()
+        {
+        }
+        /**
+         * The average duration.
+         *
+         * @param string $averageDuration
+         */
+        public function setAverageDuration($averageDuration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAverageDuration()
+        {
+        }
+        public function setAverageQaNormalizedScore($averageQaNormalizedScore)
+        {
+        }
+        public function getAverageQaNormalizedScore()
+        {
+        }
+        public function setAverageQaQuestionNormalizedScore($averageQaQuestionNormalizedScore)
+        {
+        }
+        public function getAverageQaQuestionNormalizedScore()
+        {
+        }
+        /**
+         * The average silence percentage.
+         *
+         * @param float $averageSilencePercentage
+         */
+        public function setAverageSilencePercentage($averageSilencePercentage)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getAverageSilencePercentage()
+        {
+        }
+        /**
+         * The average turn count.
+         *
+         * @param float $averageTurnCount
+         */
+        public function setAverageTurnCount($averageTurnCount)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getAverageTurnCount()
+        {
+        }
+        /**
+         * The conversation count.
+         *
+         * @param int $conversationCount
+         */
+        public function setConversationCount($conversationCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getConversationCount()
+        {
+        }
+        /**
+         * Average QA normalized score for all the tags.
+         *
+         * @param GoogleCloudContactcenterinsightsV1mainQueryMetricsResponseSliceDataPointConversationMeasureQaTagScore[] $qaTagScores
+         */
+        public function setQaTagScores($qaTagScores)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1mainQueryMetricsResponseSliceDataPointConversationMeasureQaTagScore[]
+         */
+        public function getQaTagScores()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainQueryMetricsResponseSliceDataPointConversationMeasure registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAverageAgentSentimentScore()
-    {
-    }
-    /**
-     * The average client's sentiment score.
-     *
-     * @param float $averageClientSentimentScore
-     */
-    public function setAverageClientSentimentScore($averageClientSentimentScore)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getAverageClientSentimentScore()
-    {
-    }
-    public function setAverageCustomerSatisfactionRating($averageCustomerSatisfactionRating)
-    {
-    }
-    public function getAverageCustomerSatisfactionRating()
-    {
-    }
-    /**
-     * The average duration.
-     *
-     * @param string $averageDuration
-     */
-    public function setAverageDuration($averageDuration)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAverageDuration()
-    {
-    }
-    public function setAverageQaNormalizedScore($averageQaNormalizedScore)
-    {
-    }
-    public function getAverageQaNormalizedScore()
-    {
-    }
-    public function setAverageQaQuestionNormalizedScore($averageQaQuestionNormalizedScore)
-    {
-    }
-    public function getAverageQaQuestionNormalizedScore()
-    {
-    }
-    /**
-     * The average silence percentage.
-     *
-     * @param float $averageSilencePercentage
-     */
-    public function setAverageSilencePercentage($averageSilencePercentage)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getAverageSilencePercentage()
-    {
-    }
-    /**
-     * The average turn count.
-     *
-     * @param float $averageTurnCount
-     */
-    public function setAverageTurnCount($averageTurnCount)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getAverageTurnCount()
-    {
-    }
-    /**
-     * The conversation count.
-     *
-     * @param int $conversationCount
-     */
-    public function setConversationCount($conversationCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getConversationCount()
-    {
-    }
-    /**
-     * Average QA normalized score for all the tags.
-     *
-     * @param GoogleCloudContactcenterinsightsV1mainQueryMetricsResponseSliceDataPointConversationMeasureQaTagScore[] $qaTagScores
-     */
-    public function setQaTagScores($qaTagScores)
-    {
-    }
-    /**
-     * @return GoogleCloudContactcenterinsightsV1mainQueryMetricsResponseSliceDataPointConversationMeasureQaTagScore[]
-     */
-    public function getQaTagScores()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1mainQueryMetricsResponseSliceDataPointConversationMeasure extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainQueryMetricsResponseSliceDataPointConversationMeasure
     {
     }
 }

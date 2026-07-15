@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ResourceSettings;
-
-class GoogleCloudResourcesettingsV1ValueStringMap extends \Google\Model
-{
-    /**
-     * @var string[]
-     */
-    public $mappings;
-    /**
-     * @param string[]
-     */
-    public function setMappings($mappings)
+namespace Google\Service\ResourceSettings {
+    class GoogleCloudResourcesettingsV1ValueStringMap extends \Google\Model
     {
+        /**
+         * @var string[]
+         */
+        public $mappings;
+        /**
+         * @param string[]
+         */
+        public function setMappings($mappings)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMappings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\ResourceSettings\GoogleCloudResourcesettingsV1ValueStringMap registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMappings()
+    class Google_Service_ResourceSettings_GoogleCloudResourcesettingsV1ValueStringMap extends \Google\Service\ResourceSettings\GoogleCloudResourcesettingsV1ValueStringMap
     {
     }
 }

@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class ClassifyTextResponse extends \Google\Collection
-{
-    protected $collection_key = 'categories';
-    protected $categoriesType = ClassificationCategory::class;
-    protected $categoriesDataType = 'array';
-    /**
-     * The language of the text, which will be the same as the language specified
-     * in the request or, if not specified, the automatically-detected language.
-     * See Document.language_code field for more details.
-     *
-     * @var string
-     */
-    public $languageCode;
-    /**
-     * Whether the language is officially supported. The API may still return a
-     * response when the language is not supported, but it is on a best effort
-     * basis.
-     *
-     * @var bool
-     */
-    public $languageSupported;
-    /**
-     * Categories representing the input document.
-     *
-     * @param ClassificationCategory[] $categories
-     */
-    public function setCategories($categories)
+namespace Google\Service\CloudNaturalLanguage {
+    class ClassifyTextResponse extends \Google\Collection
     {
+        protected $collection_key = 'categories';
+        protected $categoriesType = ClassificationCategory::class;
+        protected $categoriesDataType = 'array';
+        /**
+         * The language of the text, which will be the same as the language specified
+         * in the request or, if not specified, the automatically-detected language.
+         * See Document.language_code field for more details.
+         *
+         * @var string
+         */
+        public $languageCode;
+        /**
+         * Whether the language is officially supported. The API may still return a
+         * response when the language is not supported, but it is on a best effort
+         * basis.
+         *
+         * @var bool
+         */
+        public $languageSupported;
+        /**
+         * Categories representing the input document.
+         *
+         * @param ClassificationCategory[] $categories
+         */
+        public function setCategories($categories)
+        {
+        }
+        /**
+         * @return ClassificationCategory[]
+         */
+        public function getCategories()
+        {
+        }
+        /**
+         * The language of the text, which will be the same as the language specified
+         * in the request or, if not specified, the automatically-detected language.
+         * See Document.language_code field for more details.
+         *
+         * @param string $languageCode
+         */
+        public function setLanguageCode($languageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLanguageCode()
+        {
+        }
+        /**
+         * Whether the language is officially supported. The API may still return a
+         * response when the language is not supported, but it is on a best effort
+         * basis.
+         *
+         * @param bool $languageSupported
+         */
+        public function setLanguageSupported($languageSupported)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getLanguageSupported()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ClassificationCategory[]
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\ClassifyTextResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCategories()
-    {
-    }
-    /**
-     * The language of the text, which will be the same as the language specified
-     * in the request or, if not specified, the automatically-detected language.
-     * See Document.language_code field for more details.
-     *
-     * @param string $languageCode
-     */
-    public function setLanguageCode($languageCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLanguageCode()
-    {
-    }
-    /**
-     * Whether the language is officially supported. The API may still return a
-     * response when the language is not supported, but it is on a best effort
-     * basis.
-     *
-     * @param bool $languageSupported
-     */
-    public function setLanguageSupported($languageSupported)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getLanguageSupported()
+    class Google_Service_CloudNaturalLanguage_ClassifyTextResponse extends \Google\Service\CloudNaturalLanguage\ClassifyTextResponse
     {
     }
 }

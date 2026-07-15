@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Reseller;
-
-class Subscriptions extends \Google\Collection
-{
-    protected $collection_key = 'subscriptions';
-    /**
-     * Identifies the resource as a collection of subscriptions. Value:
-     * reseller#subscriptions
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The continuation token, used to page through large result sets. Provide
-     * this value in a subsequent request to return the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $subscriptionsType = Subscription::class;
-    protected $subscriptionsDataType = 'array';
-    /**
-     * Identifies the resource as a collection of subscriptions. Value:
-     * reseller#subscriptions
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Reseller {
+    class Subscriptions extends \Google\Collection
     {
+        protected $collection_key = 'subscriptions';
+        /**
+         * Identifies the resource as a collection of subscriptions. Value:
+         * reseller#subscriptions
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The continuation token, used to page through large result sets. Provide
+         * this value in a subsequent request to return the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $subscriptionsType = Subscription::class;
+        protected $subscriptionsDataType = 'array';
+        /**
+         * Identifies the resource as a collection of subscriptions. Value:
+         * reseller#subscriptions
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The continuation token, used to page through large result sets. Provide
+         * this value in a subsequent request to return the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The subscriptions in this page of results.
+         *
+         * @param Subscription[] $subscriptions
+         */
+        public function setSubscriptions($subscriptions)
+        {
+        }
+        /**
+         * @return Subscription[]
+         */
+        public function getSubscriptions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Reseller\Subscriptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * The continuation token, used to page through large result sets. Provide
-     * this value in a subsequent request to return the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The subscriptions in this page of results.
-     *
-     * @param Subscription[] $subscriptions
-     */
-    public function setSubscriptions($subscriptions)
-    {
-    }
-    /**
-     * @return Subscription[]
-     */
-    public function getSubscriptions()
+    class Google_Service_Reseller_Subscriptions extends \Google\Service\Reseller\Subscriptions
     {
     }
 }

@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1betaAccessBetweenFilter extends \Google\Model
-{
-    protected $fromValueType = GoogleAnalyticsAdminV1betaNumericValue::class;
-    protected $fromValueDataType = '';
-    protected $toValueType = GoogleAnalyticsAdminV1betaNumericValue::class;
-    protected $toValueDataType = '';
-    /**
-     * Begins with this number.
-     *
-     * @param GoogleAnalyticsAdminV1betaNumericValue $fromValue
-     */
-    public function setFromValue(GoogleAnalyticsAdminV1betaNumericValue $fromValue)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1betaAccessBetweenFilter extends \Google\Model
     {
+        protected $fromValueType = GoogleAnalyticsAdminV1betaNumericValue::class;
+        protected $fromValueDataType = '';
+        protected $toValueType = GoogleAnalyticsAdminV1betaNumericValue::class;
+        protected $toValueDataType = '';
+        /**
+         * Begins with this number.
+         *
+         * @param GoogleAnalyticsAdminV1betaNumericValue $fromValue
+         */
+        public function setFromValue(GoogleAnalyticsAdminV1betaNumericValue $fromValue)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1betaNumericValue
+         */
+        public function getFromValue()
+        {
+        }
+        /**
+         * Ends with this number.
+         *
+         * @param GoogleAnalyticsAdminV1betaNumericValue $toValue
+         */
+        public function setToValue(GoogleAnalyticsAdminV1betaNumericValue $toValue)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1betaNumericValue
+         */
+        public function getToValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAnalyticsAdminV1betaNumericValue
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaAccessBetweenFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFromValue()
-    {
-    }
-    /**
-     * Ends with this number.
-     *
-     * @param GoogleAnalyticsAdminV1betaNumericValue $toValue
-     */
-    public function setToValue(GoogleAnalyticsAdminV1betaNumericValue $toValue)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1betaNumericValue
-     */
-    public function getToValue()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1betaAccessBetweenFilter extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaAccessBetweenFilter
     {
     }
 }

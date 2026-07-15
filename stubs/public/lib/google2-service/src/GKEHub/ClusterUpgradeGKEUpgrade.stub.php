@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class ClusterUpgradeGKEUpgrade extends \Google\Model
-{
-    /**
-     * Name of the upgrade, e.g., "k8s_control_plane".
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Version of the upgrade, e.g., "1.22.1-gke.100".
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * Name of the upgrade, e.g., "k8s_control_plane".
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\GKEHub {
+    class ClusterUpgradeGKEUpgrade extends \Google\Model
     {
+        /**
+         * Name of the upgrade, e.g., "k8s_control_plane".
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Version of the upgrade, e.g., "1.22.1-gke.100".
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * Name of the upgrade, e.g., "k8s_control_plane".
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Version of the upgrade, e.g., "1.22.1-gke.100".
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEHub\ClusterUpgradeGKEUpgrade registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Version of the upgrade, e.g., "1.22.1-gke.100".
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_GKEHub_ClusterUpgradeGKEUpgrade extends \Google\Service\GKEHub\ClusterUpgradeGKEUpgrade
     {
     }
 }

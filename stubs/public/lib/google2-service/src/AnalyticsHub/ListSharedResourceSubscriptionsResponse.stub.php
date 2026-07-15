@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsHub;
-
-class ListSharedResourceSubscriptionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'sharedResourceSubscriptions';
-    /**
-     * Next page token.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $sharedResourceSubscriptionsType = Subscription::class;
-    protected $sharedResourceSubscriptionsDataType = 'array';
-    /**
-     * Next page token.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\AnalyticsHub {
+    class ListSharedResourceSubscriptionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'sharedResourceSubscriptions';
+        /**
+         * Next page token.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $sharedResourceSubscriptionsType = Subscription::class;
+        protected $sharedResourceSubscriptionsDataType = 'array';
+        /**
+         * Next page token.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of subscriptions.
+         *
+         * @param Subscription[] $sharedResourceSubscriptions
+         */
+        public function setSharedResourceSubscriptions($sharedResourceSubscriptions)
+        {
+        }
+        /**
+         * @return Subscription[]
+         */
+        public function getSharedResourceSubscriptions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AnalyticsHub\ListSharedResourceSubscriptionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of subscriptions.
-     *
-     * @param Subscription[] $sharedResourceSubscriptions
-     */
-    public function setSharedResourceSubscriptions($sharedResourceSubscriptions)
-    {
-    }
-    /**
-     * @return Subscription[]
-     */
-    public function getSharedResourceSubscriptions()
+    class Google_Service_AnalyticsHub_ListSharedResourceSubscriptionsResponse extends \Google\Service\AnalyticsHub\ListSharedResourceSubscriptionsResponse
     {
     }
 }

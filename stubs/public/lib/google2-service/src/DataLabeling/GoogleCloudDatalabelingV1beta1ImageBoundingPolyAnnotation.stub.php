@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1ImageBoundingPolyAnnotation extends \Google\Model
-{
-    protected $annotationSpecType = GoogleCloudDatalabelingV1beta1AnnotationSpec::class;
-    protected $annotationSpecDataType = '';
-    protected $boundingPolyType = GoogleCloudDatalabelingV1beta1BoundingPoly::class;
-    protected $boundingPolyDataType = '';
-    protected $normalizedBoundingPolyType = GoogleCloudDatalabelingV1beta1NormalizedBoundingPoly::class;
-    protected $normalizedBoundingPolyDataType = '';
-    /**
-     * Label of object in this bounding polygon.
-     *
-     * @param GoogleCloudDatalabelingV1beta1AnnotationSpec $annotationSpec
-     */
-    public function setAnnotationSpec(GoogleCloudDatalabelingV1beta1AnnotationSpec $annotationSpec)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1ImageBoundingPolyAnnotation extends \Google\Model
     {
+        protected $annotationSpecType = GoogleCloudDatalabelingV1beta1AnnotationSpec::class;
+        protected $annotationSpecDataType = '';
+        protected $boundingPolyType = GoogleCloudDatalabelingV1beta1BoundingPoly::class;
+        protected $boundingPolyDataType = '';
+        protected $normalizedBoundingPolyType = GoogleCloudDatalabelingV1beta1NormalizedBoundingPoly::class;
+        protected $normalizedBoundingPolyDataType = '';
+        /**
+         * Label of object in this bounding polygon.
+         *
+         * @param GoogleCloudDatalabelingV1beta1AnnotationSpec $annotationSpec
+         */
+        public function setAnnotationSpec(GoogleCloudDatalabelingV1beta1AnnotationSpec $annotationSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1AnnotationSpec
+         */
+        public function getAnnotationSpec()
+        {
+        }
+        /**
+         * @param GoogleCloudDatalabelingV1beta1BoundingPoly $boundingPoly
+         */
+        public function setBoundingPoly(GoogleCloudDatalabelingV1beta1BoundingPoly $boundingPoly)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1BoundingPoly
+         */
+        public function getBoundingPoly()
+        {
+        }
+        /**
+         * @param GoogleCloudDatalabelingV1beta1NormalizedBoundingPoly $normalizedBoundingPoly
+         */
+        public function setNormalizedBoundingPoly(GoogleCloudDatalabelingV1beta1NormalizedBoundingPoly $normalizedBoundingPoly)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1NormalizedBoundingPoly
+         */
+        public function getNormalizedBoundingPoly()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatalabelingV1beta1AnnotationSpec
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1ImageBoundingPolyAnnotation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotationSpec()
-    {
-    }
-    /**
-     * @param GoogleCloudDatalabelingV1beta1BoundingPoly $boundingPoly
-     */
-    public function setBoundingPoly(GoogleCloudDatalabelingV1beta1BoundingPoly $boundingPoly)
-    {
-    }
-    /**
-     * @return GoogleCloudDatalabelingV1beta1BoundingPoly
-     */
-    public function getBoundingPoly()
-    {
-    }
-    /**
-     * @param GoogleCloudDatalabelingV1beta1NormalizedBoundingPoly $normalizedBoundingPoly
-     */
-    public function setNormalizedBoundingPoly(GoogleCloudDatalabelingV1beta1NormalizedBoundingPoly $normalizedBoundingPoly)
-    {
-    }
-    /**
-     * @return GoogleCloudDatalabelingV1beta1NormalizedBoundingPoly
-     */
-    public function getNormalizedBoundingPoly()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1ImageBoundingPolyAnnotation extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1ImageBoundingPolyAnnotation
     {
     }
 }

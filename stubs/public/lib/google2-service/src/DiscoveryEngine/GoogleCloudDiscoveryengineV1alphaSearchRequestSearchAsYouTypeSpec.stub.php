@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaSearchRequestSearchAsYouTypeSpec extends \Google\Model
-{
-    /**
-     * Server behavior defaults to Condition.DISABLED.
-     */
-    public const CONDITION_CONDITION_UNSPECIFIED = 'CONDITION_UNSPECIFIED';
-    /**
-     * Disables Search As You Type.
-     */
-    public const CONDITION_DISABLED = 'DISABLED';
-    /**
-     * Enables Search As You Type.
-     */
-    public const CONDITION_ENABLED = 'ENABLED';
-    /**
-     * Automatic switching between search-as-you-type and standard search modes,
-     * ideal for single-API implementations (e.g., debouncing).
-     */
-    public const CONDITION_AUTO = 'AUTO';
-    /**
-     * The condition under which search as you type should occur. Default to
-     * Condition.DISABLED.
-     *
-     * @var string
-     */
-    public $condition;
-    /**
-     * The condition under which search as you type should occur. Default to
-     * Condition.DISABLED.
-     *
-     * Accepted values: CONDITION_UNSPECIFIED, DISABLED, ENABLED, AUTO
-     *
-     * @param self::CONDITION_* $condition
-     */
-    public function setCondition($condition)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaSearchRequestSearchAsYouTypeSpec extends \Google\Model
     {
+        /**
+         * Server behavior defaults to Condition.DISABLED.
+         */
+        public const CONDITION_CONDITION_UNSPECIFIED = 'CONDITION_UNSPECIFIED';
+        /**
+         * Disables Search As You Type.
+         */
+        public const CONDITION_DISABLED = 'DISABLED';
+        /**
+         * Enables Search As You Type.
+         */
+        public const CONDITION_ENABLED = 'ENABLED';
+        /**
+         * Automatic switching between search-as-you-type and standard search modes,
+         * ideal for single-API implementations (e.g., debouncing).
+         */
+        public const CONDITION_AUTO = 'AUTO';
+        /**
+         * The condition under which search as you type should occur. Default to
+         * Condition.DISABLED.
+         *
+         * @var string
+         */
+        public $condition;
+        /**
+         * The condition under which search as you type should occur. Default to
+         * Condition.DISABLED.
+         *
+         * Accepted values: CONDITION_UNSPECIFIED, DISABLED, ENABLED, AUTO
+         *
+         * @param self::CONDITION_* $condition
+         */
+        public function setCondition($condition)
+        {
+        }
+        /**
+         * @return self::CONDITION_*
+         */
+        public function getCondition()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::CONDITION_*
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaSearchRequestSearchAsYouTypeSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCondition()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaSearchRequestSearchAsYouTypeSpec extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaSearchRequestSearchAsYouTypeSpec
     {
     }
 }

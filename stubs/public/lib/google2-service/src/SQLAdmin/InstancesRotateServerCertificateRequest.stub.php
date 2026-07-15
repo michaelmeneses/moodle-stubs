@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class InstancesRotateServerCertificateRequest extends \Google\Model
-{
-    protected $rotateServerCertificateContextType = RotateServerCertificateContext::class;
-    protected $rotateServerCertificateContextDataType = '';
-    /**
-     * Optional. Contains details about the rotate server certificate operation.
-     *
-     * @param RotateServerCertificateContext $rotateServerCertificateContext
-     */
-    public function setRotateServerCertificateContext(RotateServerCertificateContext $rotateServerCertificateContext)
+namespace Google\Service\SQLAdmin {
+    class InstancesRotateServerCertificateRequest extends \Google\Model
     {
+        protected $rotateServerCertificateContextType = RotateServerCertificateContext::class;
+        protected $rotateServerCertificateContextDataType = '';
+        /**
+         * Optional. Contains details about the rotate server certificate operation.
+         *
+         * @param RotateServerCertificateContext $rotateServerCertificateContext
+         */
+        public function setRotateServerCertificateContext(RotateServerCertificateContext $rotateServerCertificateContext)
+        {
+        }
+        /**
+         * @return RotateServerCertificateContext
+         */
+        public function getRotateServerCertificateContext()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RotateServerCertificateContext
+     * Runtime class alias of \Google\Service\SQLAdmin\InstancesRotateServerCertificateRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRotateServerCertificateContext()
+    class Google_Service_SQLAdmin_InstancesRotateServerCertificateRequest extends \Google\Service\SQLAdmin\InstancesRotateServerCertificateRequest
     {
     }
 }

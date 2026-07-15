@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Calendar;
-
-class ConferenceRequestStatus extends \Google\Model
-{
-    /**
-     * The current status of the conference create request. Read-only. The
-     * possible values are:   - "pending": the conference create request is still
-     * being processed. - "success": the conference create request succeeded, the
-     * entry points are populated. - "failure": the conference create request
-     * failed, there are no entry points.
-     *
-     * @var string
-     */
-    public $statusCode;
-    /**
-     * The current status of the conference create request. Read-only. The
-     * possible values are:   - "pending": the conference create request is still
-     * being processed. - "success": the conference create request succeeded, the
-     * entry points are populated. - "failure": the conference create request
-     * failed, there are no entry points.
-     *
-     * @param string $statusCode
-     */
-    public function setStatusCode($statusCode)
+namespace Google\Service\Calendar {
+    class ConferenceRequestStatus extends \Google\Model
     {
+        /**
+         * The current status of the conference create request. Read-only. The
+         * possible values are:   - "pending": the conference create request is still
+         * being processed. - "success": the conference create request succeeded, the
+         * entry points are populated. - "failure": the conference create request
+         * failed, there are no entry points.
+         *
+         * @var string
+         */
+        public $statusCode;
+        /**
+         * The current status of the conference create request. Read-only. The
+         * possible values are:   - "pending": the conference create request is still
+         * being processed. - "success": the conference create request succeeded, the
+         * entry points are populated. - "failure": the conference create request
+         * failed, there are no entry points.
+         *
+         * @param string $statusCode
+         */
+        public function setStatusCode($statusCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStatusCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Calendar\ConferenceRequestStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStatusCode()
+    class Google_Service_Calendar_ConferenceRequestStatus extends \Google\Service\Calendar\ConferenceRequestStatus
     {
     }
 }

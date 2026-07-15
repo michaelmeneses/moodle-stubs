@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class CreateFooterRequest extends \Google\Model
-{
-    /**
-     * The header/footer type is unspecified.
-     */
-    public const TYPE_HEADER_FOOTER_TYPE_UNSPECIFIED = 'HEADER_FOOTER_TYPE_UNSPECIFIED';
-    /**
-     * A default header/footer.
-     */
-    public const TYPE_DEFAULT = 'DEFAULT';
-    protected $sectionBreakLocationType = Location::class;
-    protected $sectionBreakLocationDataType = '';
-    /**
-     * The type of footer to create.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The location of the SectionBreak immediately preceding the section whose
-     * SectionStyle this footer should belong to. If this is unset or refers to
-     * the first section break in the document, the footer applies to the document
-     * style.
-     *
-     * @param Location $sectionBreakLocation
-     */
-    public function setSectionBreakLocation(Location $sectionBreakLocation)
+namespace Google\Service\Docs {
+    class CreateFooterRequest extends \Google\Model
     {
+        /**
+         * The header/footer type is unspecified.
+         */
+        public const TYPE_HEADER_FOOTER_TYPE_UNSPECIFIED = 'HEADER_FOOTER_TYPE_UNSPECIFIED';
+        /**
+         * A default header/footer.
+         */
+        public const TYPE_DEFAULT = 'DEFAULT';
+        protected $sectionBreakLocationType = Location::class;
+        protected $sectionBreakLocationDataType = '';
+        /**
+         * The type of footer to create.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The location of the SectionBreak immediately preceding the section whose
+         * SectionStyle this footer should belong to. If this is unset or refers to
+         * the first section break in the document, the footer applies to the document
+         * style.
+         *
+         * @param Location $sectionBreakLocation
+         */
+        public function setSectionBreakLocation(Location $sectionBreakLocation)
+        {
+        }
+        /**
+         * @return Location
+         */
+        public function getSectionBreakLocation()
+        {
+        }
+        /**
+         * The type of footer to create.
+         *
+         * Accepted values: HEADER_FOOTER_TYPE_UNSPECIFIED, DEFAULT
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Location
+     * Runtime class alias of \Google\Service\Docs\CreateFooterRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSectionBreakLocation()
-    {
-    }
-    /**
-     * The type of footer to create.
-     *
-     * Accepted values: HEADER_FOOTER_TYPE_UNSPECIFIED, DEFAULT
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_Docs_CreateFooterRequest extends \Google\Service\Docs\CreateFooterRequest
     {
     }
 }

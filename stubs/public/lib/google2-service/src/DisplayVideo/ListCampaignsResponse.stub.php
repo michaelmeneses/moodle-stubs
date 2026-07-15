@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class ListCampaignsResponse extends \Google\Collection
-{
-    protected $collection_key = 'campaigns';
-    protected $campaignsType = Campaign::class;
-    protected $campaignsDataType = 'array';
-    /**
-     * A token to retrieve the next page of results. Pass this value in the
-     * page_token field in the subsequent call to `ListCampaigns` method to
-     * retrieve the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of campaigns. This list will be absent if empty.
-     *
-     * @param Campaign[] $campaigns
-     */
-    public function setCampaigns($campaigns)
+namespace Google\Service\DisplayVideo {
+    class ListCampaignsResponse extends \Google\Collection
     {
+        protected $collection_key = 'campaigns';
+        protected $campaignsType = Campaign::class;
+        protected $campaignsDataType = 'array';
+        /**
+         * A token to retrieve the next page of results. Pass this value in the
+         * page_token field in the subsequent call to `ListCampaigns` method to
+         * retrieve the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of campaigns. This list will be absent if empty.
+         *
+         * @param Campaign[] $campaigns
+         */
+        public function setCampaigns($campaigns)
+        {
+        }
+        /**
+         * @return Campaign[]
+         */
+        public function getCampaigns()
+        {
+        }
+        /**
+         * A token to retrieve the next page of results. Pass this value in the
+         * page_token field in the subsequent call to `ListCampaigns` method to
+         * retrieve the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Campaign[]
+     * Runtime class alias of \Google\Service\DisplayVideo\ListCampaignsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCampaigns()
-    {
-    }
-    /**
-     * A token to retrieve the next page of results. Pass this value in the
-     * page_token field in the subsequent call to `ListCampaigns` method to
-     * retrieve the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_DisplayVideo_ListCampaignsResponse extends \Google\Service\DisplayVideo\ListCampaignsResponse
     {
     }
 }

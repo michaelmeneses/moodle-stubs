@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1EvaluationInstanceMapInstance extends \Google\Model
-{
-    protected $mapInstanceType = GoogleCloudAiplatformV1EvaluationInstanceInstanceData::class;
-    protected $mapInstanceDataType = 'map';
-    /**
-     * Optional. Map of instance data.
-     *
-     * @param GoogleCloudAiplatformV1EvaluationInstanceInstanceData[] $mapInstance
-     */
-    public function setMapInstance($mapInstance)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1EvaluationInstanceMapInstance extends \Google\Model
     {
+        protected $mapInstanceType = GoogleCloudAiplatformV1EvaluationInstanceInstanceData::class;
+        protected $mapInstanceDataType = 'map';
+        /**
+         * Optional. Map of instance data.
+         *
+         * @param GoogleCloudAiplatformV1EvaluationInstanceInstanceData[] $mapInstance
+         */
+        public function setMapInstance($mapInstance)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1EvaluationInstanceInstanceData[]
+         */
+        public function getMapInstance()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1EvaluationInstanceInstanceData[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1EvaluationInstanceMapInstance registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMapInstance()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1EvaluationInstanceMapInstance extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1EvaluationInstanceMapInstance
     {
     }
 }

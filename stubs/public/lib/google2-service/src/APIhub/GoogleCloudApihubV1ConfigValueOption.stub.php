@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1ConfigValueOption extends \Google\Model
-{
-    /**
-     * Optional. Description of the option.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Required. Display name of the option.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Required. Id of the option.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Optional. Description of the option.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1ConfigValueOption extends \Google\Model
     {
+        /**
+         * Optional. Description of the option.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Required. Display name of the option.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Required. Id of the option.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Optional. Description of the option.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Required. Display name of the option.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Required. Id of the option.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1ConfigValueOption registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * Required. Display name of the option.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Required. Id of the option.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
+    class Google_Service_APIhub_GoogleCloudApihubV1ConfigValueOption extends \Google\Service\APIhub\GoogleCloudApihubV1ConfigValueOption
     {
     }
 }

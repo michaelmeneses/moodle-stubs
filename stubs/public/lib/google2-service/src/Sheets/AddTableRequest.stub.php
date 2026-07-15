@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class AddTableRequest extends \Google\Model
-{
-    protected $tableType = Table::class;
-    protected $tableDataType = '';
-    /**
-     * Required. The table to add.
-     *
-     * @param Table $table
-     */
-    public function setTable(Table $table)
+namespace Google\Service\Sheets {
+    class AddTableRequest extends \Google\Model
     {
+        protected $tableType = Table::class;
+        protected $tableDataType = '';
+        /**
+         * Required. The table to add.
+         *
+         * @param Table $table
+         */
+        public function setTable(Table $table)
+        {
+        }
+        /**
+         * @return Table
+         */
+        public function getTable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Table
+     * Runtime class alias of \Google\Service\Sheets\AddTableRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTable()
+    class Google_Service_Sheets_AddTableRequest extends \Google\Service\Sheets\AddTableRequest
     {
     }
 }

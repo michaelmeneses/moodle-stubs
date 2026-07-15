@@ -21,63 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Games;
-
-class EventPeriodUpdate extends \Google\Collection
-{
-    protected $collection_key = 'updates';
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#eventPeriodUpdate`.
-     *
-     * @var string
-     */
-    public $kind;
-    protected $timePeriodType = EventPeriodRange::class;
-    protected $timePeriodDataType = '';
-    protected $updatesType = EventUpdateRequest::class;
-    protected $updatesDataType = 'array';
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#eventPeriodUpdate`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Games {
+    class EventPeriodUpdate extends \Google\Collection
     {
+        protected $collection_key = 'updates';
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#eventPeriodUpdate`.
+         *
+         * @var string
+         */
+        public $kind;
+        protected $timePeriodType = EventPeriodRange::class;
+        protected $timePeriodDataType = '';
+        protected $updatesType = EventUpdateRequest::class;
+        protected $updatesDataType = 'array';
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#eventPeriodUpdate`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The time period being covered by this update.
+         *
+         * @param EventPeriodRange $timePeriod
+         */
+        public function setTimePeriod(EventPeriodRange $timePeriod)
+        {
+        }
+        /**
+         * @return EventPeriodRange
+         */
+        public function getTimePeriod()
+        {
+        }
+        /**
+         * The updates being made for this time period.
+         *
+         * @param EventUpdateRequest[] $updates
+         */
+        public function setUpdates($updates)
+        {
+        }
+        /**
+         * @return EventUpdateRequest[]
+         */
+        public function getUpdates()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Games\EventPeriodUpdate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * The time period being covered by this update.
-     *
-     * @param EventPeriodRange $timePeriod
-     */
-    public function setTimePeriod(EventPeriodRange $timePeriod)
-    {
-    }
-    /**
-     * @return EventPeriodRange
-     */
-    public function getTimePeriod()
-    {
-    }
-    /**
-     * The updates being made for this time period.
-     *
-     * @param EventUpdateRequest[] $updates
-     */
-    public function setUpdates($updates)
-    {
-    }
-    /**
-     * @return EventUpdateRequest[]
-     */
-    public function getUpdates()
+    class Google_Service_Games_EventPeriodUpdate extends \Google\Service\Games\EventPeriodUpdate
     {
     }
 }

@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GamesManagement;
-
-class AchievementResetMultipleForAllRequest extends \Google\Collection
-{
-    protected $collection_key = 'achievement_ids';
-    protected $internal_gapi_mappings = ["achievementIds" => "achievement_ids"];
-    /**
-     * The IDs of achievements to reset.
-     *
-     * @var string[]
-     */
-    public $achievementIds;
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `gamesManagement#achievementResetMultipleForAllRequest`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The IDs of achievements to reset.
-     *
-     * @param string[] $achievementIds
-     */
-    public function setAchievementIds($achievementIds)
+namespace Google\Service\GamesManagement {
+    class AchievementResetMultipleForAllRequest extends \Google\Collection
     {
+        protected $collection_key = 'achievement_ids';
+        protected $internal_gapi_mappings = ["achievementIds" => "achievement_ids"];
+        /**
+         * The IDs of achievements to reset.
+         *
+         * @var string[]
+         */
+        public $achievementIds;
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `gamesManagement#achievementResetMultipleForAllRequest`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The IDs of achievements to reset.
+         *
+         * @param string[] $achievementIds
+         */
+        public function setAchievementIds($achievementIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAchievementIds()
+        {
+        }
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `gamesManagement#achievementResetMultipleForAllRequest`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\GamesManagement\AchievementResetMultipleForAllRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAchievementIds()
-    {
-    }
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `gamesManagement#achievementResetMultipleForAllRequest`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_GamesManagement_AchievementResetMultipleForAllRequest extends \Google\Service\GamesManagement\AchievementResetMultipleForAllRequest
     {
     }
 }

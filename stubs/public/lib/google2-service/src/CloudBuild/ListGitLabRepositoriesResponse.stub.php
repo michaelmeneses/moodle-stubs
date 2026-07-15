@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class ListGitLabRepositoriesResponse extends \Google\Collection
-{
-    protected $collection_key = 'gitlabRepositories';
-    protected $gitlabRepositoriesType = GitLabRepository::class;
-    protected $gitlabRepositoriesDataType = 'array';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * @param GitLabRepository[]
-     */
-    public function setGitlabRepositories($gitlabRepositories)
+namespace Google\Service\CloudBuild {
+    class ListGitLabRepositoriesResponse extends \Google\Collection
     {
+        protected $collection_key = 'gitlabRepositories';
+        protected $gitlabRepositoriesType = GitLabRepository::class;
+        protected $gitlabRepositoriesDataType = 'array';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * @param GitLabRepository[]
+         */
+        public function setGitlabRepositories($gitlabRepositories)
+        {
+        }
+        /**
+         * @return GitLabRepository[]
+         */
+        public function getGitlabRepositories()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GitLabRepository[]
+     * Runtime class alias of \Google\Service\CloudBuild\ListGitLabRepositoriesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGitlabRepositories()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_CloudBuild_ListGitLabRepositoriesResponse extends \Google\Service\CloudBuild\ListGitLabRepositoriesResponse
     {
     }
 }

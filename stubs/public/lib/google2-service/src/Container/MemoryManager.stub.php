@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class MemoryManager extends \Google\Model
-{
-    /**
-     * Controls the memory management policy on the Node. See
-     * https://kubernetes.io/docs/tasks/administer-cluster/memory-
-     * manager/#policies The following values are allowed. * "none" * "static" The
-     * default value is 'none' if unspecified.
-     *
-     * @var string
-     */
-    public $policy;
-    /**
-     * Controls the memory management policy on the Node. See
-     * https://kubernetes.io/docs/tasks/administer-cluster/memory-
-     * manager/#policies The following values are allowed. * "none" * "static" The
-     * default value is 'none' if unspecified.
-     *
-     * @param string $policy
-     */
-    public function setPolicy($policy)
+namespace Google\Service\Container {
+    class MemoryManager extends \Google\Model
     {
+        /**
+         * Controls the memory management policy on the Node. See
+         * https://kubernetes.io/docs/tasks/administer-cluster/memory-
+         * manager/#policies The following values are allowed. * "none" * "static" The
+         * default value is 'none' if unspecified.
+         *
+         * @var string
+         */
+        public $policy;
+        /**
+         * Controls the memory management policy on the Node. See
+         * https://kubernetes.io/docs/tasks/administer-cluster/memory-
+         * manager/#policies The following values are allowed. * "none" * "static" The
+         * default value is 'none' if unspecified.
+         *
+         * @param string $policy
+         */
+        public function setPolicy($policy)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPolicy()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Container\MemoryManager registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPolicy()
+    class Google_Service_Container_MemoryManager extends \Google\Service\Container\MemoryManager
     {
     }
 }

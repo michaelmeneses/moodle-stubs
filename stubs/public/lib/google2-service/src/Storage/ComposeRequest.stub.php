@@ -21,81 +21,90 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storage;
-
-class ComposeRequest extends \Google\Collection
-{
-    protected $collection_key = 'sourceObjects';
-    /**
-     * If true, the source objects will be deleted.
-     *
-     * @var bool
-     */
-    public $deleteSourceObjects;
-    protected $destinationType = StorageObject::class;
-    protected $destinationDataType = '';
-    /**
-     * The kind of item this is.
-     *
-     * @var string
-     */
-    public $kind;
-    protected $sourceObjectsType = ComposeRequestSourceObjects::class;
-    protected $sourceObjectsDataType = 'array';
-    /**
-     * If true, the source objects will be deleted.
-     *
-     * @param bool $deleteSourceObjects
-     */
-    public function setDeleteSourceObjects($deleteSourceObjects)
+namespace Google\Service\Storage {
+    class ComposeRequest extends \Google\Collection
     {
+        protected $collection_key = 'sourceObjects';
+        /**
+         * If true, the source objects will be deleted.
+         *
+         * @var bool
+         */
+        public $deleteSourceObjects;
+        protected $destinationType = StorageObject::class;
+        protected $destinationDataType = '';
+        /**
+         * The kind of item this is.
+         *
+         * @var string
+         */
+        public $kind;
+        protected $sourceObjectsType = ComposeRequestSourceObjects::class;
+        protected $sourceObjectsDataType = 'array';
+        /**
+         * If true, the source objects will be deleted.
+         *
+         * @param bool $deleteSourceObjects
+         */
+        public function setDeleteSourceObjects($deleteSourceObjects)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDeleteSourceObjects()
+        {
+        }
+        /**
+         * Properties of the resulting object.
+         *
+         * @param StorageObject $destination
+         */
+        public function setDestination(StorageObject $destination)
+        {
+        }
+        /**
+         * @return StorageObject
+         */
+        public function getDestination()
+        {
+        }
+        /**
+         * The kind of item this is.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The list of source objects that will be concatenated into a single object.
+         *
+         * @param ComposeRequestSourceObjects[] $sourceObjects
+         */
+        public function setSourceObjects($sourceObjects)
+        {
+        }
+        /**
+         * @return ComposeRequestSourceObjects[]
+         */
+        public function getSourceObjects()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Storage\ComposeRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeleteSourceObjects()
-    {
-    }
-    /**
-     * Properties of the resulting object.
-     *
-     * @param StorageObject $destination
-     */
-    public function setDestination(StorageObject $destination)
-    {
-    }
-    /**
-     * @return StorageObject
-     */
-    public function getDestination()
-    {
-    }
-    /**
-     * The kind of item this is.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The list of source objects that will be concatenated into a single object.
-     *
-     * @param ComposeRequestSourceObjects[] $sourceObjects
-     */
-    public function setSourceObjects($sourceObjects)
-    {
-    }
-    /**
-     * @return ComposeRequestSourceObjects[]
-     */
-    public function getSourceObjects()
+    class Google_Service_Storage_ComposeRequest extends \Google\Service\Storage\ComposeRequest
     {
     }
 }

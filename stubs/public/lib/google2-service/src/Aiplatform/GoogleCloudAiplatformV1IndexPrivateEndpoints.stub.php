@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1IndexPrivateEndpoints extends \Google\Collection
-{
-    protected $collection_key = 'pscAutomatedEndpoints';
-    /**
-     * Output only. The ip address used to send match gRPC requests.
-     *
-     * @var string
-     */
-    public $matchGrpcAddress;
-    protected $pscAutomatedEndpointsType = GoogleCloudAiplatformV1PscAutomatedEndpoints::class;
-    protected $pscAutomatedEndpointsDataType = 'array';
-    /**
-     * Output only. The name of the service attachment resource. Populated if
-     * private service connect is enabled.
-     *
-     * @var string
-     */
-    public $serviceAttachment;
-    /**
-     * Output only. The ip address used to send match gRPC requests.
-     *
-     * @param string $matchGrpcAddress
-     */
-    public function setMatchGrpcAddress($matchGrpcAddress)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1IndexPrivateEndpoints extends \Google\Collection
     {
+        protected $collection_key = 'pscAutomatedEndpoints';
+        /**
+         * Output only. The ip address used to send match gRPC requests.
+         *
+         * @var string
+         */
+        public $matchGrpcAddress;
+        protected $pscAutomatedEndpointsType = GoogleCloudAiplatformV1PscAutomatedEndpoints::class;
+        protected $pscAutomatedEndpointsDataType = 'array';
+        /**
+         * Output only. The name of the service attachment resource. Populated if
+         * private service connect is enabled.
+         *
+         * @var string
+         */
+        public $serviceAttachment;
+        /**
+         * Output only. The ip address used to send match gRPC requests.
+         *
+         * @param string $matchGrpcAddress
+         */
+        public function setMatchGrpcAddress($matchGrpcAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMatchGrpcAddress()
+        {
+        }
+        /**
+         * Output only. PscAutomatedEndpoints is populated if private service connect
+         * is enabled if PscAutomatedConfig is set.
+         *
+         * @param GoogleCloudAiplatformV1PscAutomatedEndpoints[] $pscAutomatedEndpoints
+         */
+        public function setPscAutomatedEndpoints($pscAutomatedEndpoints)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1PscAutomatedEndpoints[]
+         */
+        public function getPscAutomatedEndpoints()
+        {
+        }
+        /**
+         * Output only. The name of the service attachment resource. Populated if
+         * private service connect is enabled.
+         *
+         * @param string $serviceAttachment
+         */
+        public function setServiceAttachment($serviceAttachment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceAttachment()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1IndexPrivateEndpoints registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMatchGrpcAddress()
-    {
-    }
-    /**
-     * Output only. PscAutomatedEndpoints is populated if private service connect
-     * is enabled if PscAutomatedConfig is set.
-     *
-     * @param GoogleCloudAiplatformV1PscAutomatedEndpoints[] $pscAutomatedEndpoints
-     */
-    public function setPscAutomatedEndpoints($pscAutomatedEndpoints)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1PscAutomatedEndpoints[]
-     */
-    public function getPscAutomatedEndpoints()
-    {
-    }
-    /**
-     * Output only. The name of the service attachment resource. Populated if
-     * private service connect is enabled.
-     *
-     * @param string $serviceAttachment
-     */
-    public function setServiceAttachment($serviceAttachment)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceAttachment()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1IndexPrivateEndpoints extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1IndexPrivateEndpoints
     {
     }
 }

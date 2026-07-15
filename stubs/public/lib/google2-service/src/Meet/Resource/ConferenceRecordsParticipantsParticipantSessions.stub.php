@@ -21,58 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Meet\Resource;
-
-/**
- * The "participantSessions" collection of methods.
- * Typical usage is:
- *  <code>
- *   $meetService = new Google\Service\Meet(...);
- *   $participantSessions = $meetService->conferenceRecords_participants_participantSessions;
- *  </code>
- */
-class ConferenceRecordsParticipantsParticipantSessions extends \Google\Service\Resource
-{
+namespace Google\Service\Meet\Resource {
+    use Google\Service\Meet\ListParticipantSessionsResponse;
+    use Google\Service\Meet\ParticipantSession;
     /**
-     * Gets a participant session by participant session ID.
-     * (participantSessions.get)
-     *
-     * @param string $name Required. Resource name of the participant.
-     * @param array $optParams Optional parameters.
-     * @return ParticipantSession
-     * @throws \Google\Service\Exception
+     * The "participantSessions" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $meetService = new Google\Service\Meet(...);
+     *   $participantSessions = $meetService->conferenceRecords_participants_participantSessions;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class ConferenceRecordsParticipantsParticipantSessions extends \Google\Service\Resource
     {
+        /**
+         * Gets a participant session by participant session ID.
+         * (participantSessions.get)
+         *
+         * @param string $name Required. Resource name of the participant.
+         * @param array $optParams Optional parameters.
+         * @return ParticipantSession
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists the participant sessions of a participant in a conference record. By
+         * default, ordered by join time and in descending order. This API supports
+         * `fields` as standard parameters like every other API. However, when the
+         * `fields` request parameter is omitted this API defaults to
+         * `'participantsessions, next_page_token'`.
+         * (participantSessions.listConferenceRecordsParticipantsParticipantSessions)
+         *
+         * @param string $parent Required. Format:
+         * `conferenceRecords/{conference_record}/participants/{participant}`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Optional. User specified filtering condition in
+         * [EBNF
+         * format](https://en.wikipedia.org/wiki/Extended_Backus%E2%80%93Naur_form). The
+         * following are the filterable fields: * `start_time` * `end_time` For example,
+         * `end_time IS NULL` returns active participant sessions in the conference
+         * record.
+         * @opt_param int pageSize Optional. Maximum number of participant sessions to
+         * return. The service might return fewer than this value. If unspecified, at
+         * most 100 participants are returned. The maximum value is 250; values above
+         * 250 are coerced to 250. Maximum might change in the future.
+         * @opt_param string pageToken Optional. Page token returned from previous List
+         * Call.
+         * @return ListParticipantSessionsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listConferenceRecordsParticipantsParticipantSessions($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists the participant sessions of a participant in a conference record. By
-     * default, ordered by join time and in descending order. This API supports
-     * `fields` as standard parameters like every other API. However, when the
-     * `fields` request parameter is omitted this API defaults to
-     * `'participantsessions, next_page_token'`.
-     * (participantSessions.listConferenceRecordsParticipantsParticipantSessions)
-     *
-     * @param string $parent Required. Format:
-     * `conferenceRecords/{conference_record}/participants/{participant}`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Optional. User specified filtering condition in
-     * [EBNF
-     * format](https://en.wikipedia.org/wiki/Extended_Backus%E2%80%93Naur_form). The
-     * following are the filterable fields: * `start_time` * `end_time` For example,
-     * `end_time IS NULL` returns active participant sessions in the conference
-     * record.
-     * @opt_param int pageSize Optional. Maximum number of participant sessions to
-     * return. The service might return fewer than this value. If unspecified, at
-     * most 100 participants are returned. The maximum value is 250; values above
-     * 250 are coerced to 250. Maximum might change in the future.
-     * @opt_param string pageToken Optional. Page token returned from previous List
-     * Call.
-     * @return ListParticipantSessionsResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Meet\Resource\ConferenceRecordsParticipantsParticipantSessions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listConferenceRecordsParticipantsParticipantSessions($parent, $optParams = [])
+    class Google_Service_Meet_Resource_ConferenceRecordsParticipantsParticipantSessions extends \Google\Service\Meet\Resource\ConferenceRecordsParticipantsParticipantSessions
     {
     }
 }

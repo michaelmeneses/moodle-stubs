@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HomeGraphService;
-
-class RequestSyncDevicesRequest extends \Google\Model
-{
-    /**
-     * Required. Third-party user ID.
-     *
-     * @var string
-     */
-    public $agentUserId;
-    /**
-     * Optional. If set, the request will be added to a queue and a response will
-     * be returned immediately. This enables concurrent requests for the given
-     * `agent_user_id`, but the caller will not receive any error responses.
-     *
-     * @var bool
-     */
-    public $async;
-    /**
-     * Required. Third-party user ID.
-     *
-     * @param string $agentUserId
-     */
-    public function setAgentUserId($agentUserId)
+namespace Google\Service\HomeGraphService {
+    class RequestSyncDevicesRequest extends \Google\Model
     {
+        /**
+         * Required. Third-party user ID.
+         *
+         * @var string
+         */
+        public $agentUserId;
+        /**
+         * Optional. If set, the request will be added to a queue and a response will
+         * be returned immediately. This enables concurrent requests for the given
+         * `agent_user_id`, but the caller will not receive any error responses.
+         *
+         * @var bool
+         */
+        public $async;
+        /**
+         * Required. Third-party user ID.
+         *
+         * @param string $agentUserId
+         */
+        public function setAgentUserId($agentUserId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAgentUserId()
+        {
+        }
+        /**
+         * Optional. If set, the request will be added to a queue and a response will
+         * be returned immediately. This enables concurrent requests for the given
+         * `agent_user_id`, but the caller will not receive any error responses.
+         *
+         * @param bool $async
+         */
+        public function setAsync($async)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAsync()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\HomeGraphService\RequestSyncDevicesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAgentUserId()
-    {
-    }
-    /**
-     * Optional. If set, the request will be added to a queue and a response will
-     * be returned immediately. This enables concurrent requests for the given
-     * `agent_user_id`, but the caller will not receive any error responses.
-     *
-     * @param bool $async
-     */
-    public function setAsync($async)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getAsync()
+    class Google_Service_HomeGraphService_RequestSyncDevicesRequest extends \Google\Service\HomeGraphService\RequestSyncDevicesRequest
     {
     }
 }

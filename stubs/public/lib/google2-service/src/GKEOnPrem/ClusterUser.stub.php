@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class ClusterUser extends \Google\Model
-{
-    /**
-     * Required. The name of the user, e.g. `my-gcp-id@gmail.com`.
-     *
-     * @var string
-     */
-    public $username;
-    /**
-     * Required. The name of the user, e.g. `my-gcp-id@gmail.com`.
-     *
-     * @param string $username
-     */
-    public function setUsername($username)
+namespace Google\Service\GKEOnPrem {
+    class ClusterUser extends \Google\Model
     {
+        /**
+         * Required. The name of the user, e.g. `my-gcp-id@gmail.com`.
+         *
+         * @var string
+         */
+        public $username;
+        /**
+         * Required. The name of the user, e.g. `my-gcp-id@gmail.com`.
+         *
+         * @param string $username
+         */
+        public function setUsername($username)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUsername()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEOnPrem\ClusterUser registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUsername()
+    class Google_Service_GKEOnPrem_ClusterUser extends \Google\Service\GKEOnPrem\ClusterUser
     {
     }
 }

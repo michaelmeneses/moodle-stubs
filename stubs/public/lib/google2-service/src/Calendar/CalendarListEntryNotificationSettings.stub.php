@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Calendar;
-
-class CalendarListEntryNotificationSettings extends \Google\Collection
-{
-    protected $collection_key = 'notifications';
-    protected $notificationsType = CalendarNotification::class;
-    protected $notificationsDataType = 'array';
-    /**
-     * The list of notifications set for this calendar.
-     *
-     * @param CalendarNotification[] $notifications
-     */
-    public function setNotifications($notifications)
+namespace Google\Service\Calendar {
+    class CalendarListEntryNotificationSettings extends \Google\Collection
     {
+        protected $collection_key = 'notifications';
+        protected $notificationsType = CalendarNotification::class;
+        protected $notificationsDataType = 'array';
+        /**
+         * The list of notifications set for this calendar.
+         *
+         * @param CalendarNotification[] $notifications
+         */
+        public function setNotifications($notifications)
+        {
+        }
+        /**
+         * @return CalendarNotification[]
+         */
+        public function getNotifications()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CalendarNotification[]
+     * Runtime class alias of \Google\Service\Calendar\CalendarListEntryNotificationSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNotifications()
+    class Google_Service_Calendar_CalendarListEntryNotificationSettings extends \Google\Service\Calendar\CalendarListEntryNotificationSettings
     {
     }
 }

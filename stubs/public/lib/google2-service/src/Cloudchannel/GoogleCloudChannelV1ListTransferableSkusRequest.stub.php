@@ -21,150 +21,159 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1ListTransferableSkusRequest extends \Google\Model
-{
-    /**
-     * Optional. The super admin of the resold customer generates this token to
-     * authorize a reseller to access their Cloud Identity and purchase
-     * entitlements on their behalf. You can omit this token after authorization.
-     * See https://support.google.com/a/answer/7643790 for more details.
-     *
-     * @var string
-     */
-    public $authToken;
-    /**
-     * Customer's Cloud Identity ID
-     *
-     * @var string
-     */
-    public $cloudIdentityId;
-    /**
-     * A reseller is required to create a customer and use the resource name of
-     * the created customer here. Customer_name uses the format:
-     * accounts/{account_id}/customers/{customer_id}
-     *
-     * @var string
-     */
-    public $customerName;
-    /**
-     * The BCP-47 language code. For example, "en-US". The response will localize
-     * in the corresponding language code, if specified. The default value is "en-
-     * US". Optional.
-     *
-     * @var string
-     */
-    public $languageCode;
-    /**
-     * The requested page size. Server might return fewer results than requested.
-     * If unspecified, returns at most 100 SKUs. The maximum value is 1000; the
-     * server will coerce values above 1000. Optional.
-     *
-     * @var int
-     */
-    public $pageSize;
-    /**
-     * A token for a page of results other than the first page. Obtained using
-     * ListTransferableSkusResponse.next_page_token of the previous
-     * CloudChannelService.ListTransferableSkus call. Optional.
-     *
-     * @var string
-     */
-    public $pageToken;
-    /**
-     * Optional. The super admin of the resold customer generates this token to
-     * authorize a reseller to access their Cloud Identity and purchase
-     * entitlements on their behalf. You can omit this token after authorization.
-     * See https://support.google.com/a/answer/7643790 for more details.
-     *
-     * @param string $authToken
-     */
-    public function setAuthToken($authToken)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1ListTransferableSkusRequest extends \Google\Model
     {
+        /**
+         * Optional. The super admin of the resold customer generates this token to
+         * authorize a reseller to access their Cloud Identity and purchase
+         * entitlements on their behalf. You can omit this token after authorization.
+         * See https://support.google.com/a/answer/7643790 for more details.
+         *
+         * @var string
+         */
+        public $authToken;
+        /**
+         * Customer's Cloud Identity ID
+         *
+         * @var string
+         */
+        public $cloudIdentityId;
+        /**
+         * A reseller is required to create a customer and use the resource name of
+         * the created customer here. Customer_name uses the format:
+         * accounts/{account_id}/customers/{customer_id}
+         *
+         * @var string
+         */
+        public $customerName;
+        /**
+         * The BCP-47 language code. For example, "en-US". The response will localize
+         * in the corresponding language code, if specified. The default value is "en-
+         * US". Optional.
+         *
+         * @var string
+         */
+        public $languageCode;
+        /**
+         * The requested page size. Server might return fewer results than requested.
+         * If unspecified, returns at most 100 SKUs. The maximum value is 1000; the
+         * server will coerce values above 1000. Optional.
+         *
+         * @var int
+         */
+        public $pageSize;
+        /**
+         * A token for a page of results other than the first page. Obtained using
+         * ListTransferableSkusResponse.next_page_token of the previous
+         * CloudChannelService.ListTransferableSkus call. Optional.
+         *
+         * @var string
+         */
+        public $pageToken;
+        /**
+         * Optional. The super admin of the resold customer generates this token to
+         * authorize a reseller to access their Cloud Identity and purchase
+         * entitlements on their behalf. You can omit this token after authorization.
+         * See https://support.google.com/a/answer/7643790 for more details.
+         *
+         * @param string $authToken
+         */
+        public function setAuthToken($authToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAuthToken()
+        {
+        }
+        /**
+         * Customer's Cloud Identity ID
+         *
+         * @param string $cloudIdentityId
+         */
+        public function setCloudIdentityId($cloudIdentityId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCloudIdentityId()
+        {
+        }
+        /**
+         * A reseller is required to create a customer and use the resource name of
+         * the created customer here. Customer_name uses the format:
+         * accounts/{account_id}/customers/{customer_id}
+         *
+         * @param string $customerName
+         */
+        public function setCustomerName($customerName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomerName()
+        {
+        }
+        /**
+         * The BCP-47 language code. For example, "en-US". The response will localize
+         * in the corresponding language code, if specified. The default value is "en-
+         * US". Optional.
+         *
+         * @param string $languageCode
+         */
+        public function setLanguageCode($languageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLanguageCode()
+        {
+        }
+        /**
+         * The requested page size. Server might return fewer results than requested.
+         * If unspecified, returns at most 100 SKUs. The maximum value is 1000; the
+         * server will coerce values above 1000. Optional.
+         *
+         * @param int $pageSize
+         */
+        public function setPageSize($pageSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPageSize()
+        {
+        }
+        /**
+         * A token for a page of results other than the first page. Obtained using
+         * ListTransferableSkusResponse.next_page_token of the previous
+         * CloudChannelService.ListTransferableSkus call. Optional.
+         *
+         * @param string $pageToken
+         */
+        public function setPageToken($pageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1ListTransferableSkusRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuthToken()
-    {
-    }
-    /**
-     * Customer's Cloud Identity ID
-     *
-     * @param string $cloudIdentityId
-     */
-    public function setCloudIdentityId($cloudIdentityId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCloudIdentityId()
-    {
-    }
-    /**
-     * A reseller is required to create a customer and use the resource name of
-     * the created customer here. Customer_name uses the format:
-     * accounts/{account_id}/customers/{customer_id}
-     *
-     * @param string $customerName
-     */
-    public function setCustomerName($customerName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCustomerName()
-    {
-    }
-    /**
-     * The BCP-47 language code. For example, "en-US". The response will localize
-     * in the corresponding language code, if specified. The default value is "en-
-     * US". Optional.
-     *
-     * @param string $languageCode
-     */
-    public function setLanguageCode($languageCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLanguageCode()
-    {
-    }
-    /**
-     * The requested page size. Server might return fewer results than requested.
-     * If unspecified, returns at most 100 SKUs. The maximum value is 1000; the
-     * server will coerce values above 1000. Optional.
-     *
-     * @param int $pageSize
-     */
-    public function setPageSize($pageSize)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPageSize()
-    {
-    }
-    /**
-     * A token for a page of results other than the first page. Obtained using
-     * ListTransferableSkusResponse.next_page_token of the previous
-     * CloudChannelService.ListTransferableSkus call. Optional.
-     *
-     * @param string $pageToken
-     */
-    public function setPageToken($pageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPageToken()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1ListTransferableSkusRequest extends \Google\Service\Cloudchannel\GoogleCloudChannelV1ListTransferableSkusRequest
     {
     }
 }

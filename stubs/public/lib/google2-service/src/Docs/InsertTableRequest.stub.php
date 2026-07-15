@@ -21,87 +21,96 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class InsertTableRequest extends \Google\Model
-{
-    /**
-     * The number of columns in the table.
-     *
-     * @var int
-     */
-    public $columns;
-    protected $endOfSegmentLocationType = EndOfSegmentLocation::class;
-    protected $endOfSegmentLocationDataType = '';
-    protected $locationType = Location::class;
-    protected $locationDataType = '';
-    /**
-     * The number of rows in the table.
-     *
-     * @var int
-     */
-    public $rows;
-    /**
-     * The number of columns in the table.
-     *
-     * @param int $columns
-     */
-    public function setColumns($columns)
+namespace Google\Service\Docs {
+    class InsertTableRequest extends \Google\Model
     {
+        /**
+         * The number of columns in the table.
+         *
+         * @var int
+         */
+        public $columns;
+        protected $endOfSegmentLocationType = EndOfSegmentLocation::class;
+        protected $endOfSegmentLocationDataType = '';
+        protected $locationType = Location::class;
+        protected $locationDataType = '';
+        /**
+         * The number of rows in the table.
+         *
+         * @var int
+         */
+        public $rows;
+        /**
+         * The number of columns in the table.
+         *
+         * @param int $columns
+         */
+        public function setColumns($columns)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getColumns()
+        {
+        }
+        /**
+         * Inserts the table at the end of the given header, footer or document body.
+         * A newline character will be inserted before the inserted table. Tables
+         * cannot be inserted inside a footnote.
+         *
+         * @param EndOfSegmentLocation $endOfSegmentLocation
+         */
+        public function setEndOfSegmentLocation(EndOfSegmentLocation $endOfSegmentLocation)
+        {
+        }
+        /**
+         * @return EndOfSegmentLocation
+         */
+        public function getEndOfSegmentLocation()
+        {
+        }
+        /**
+         * Inserts the table at a specific model index. A newline character will be
+         * inserted before the inserted table, therefore the table start index will be
+         * at the specified location index + 1. The table must be inserted inside the
+         * bounds of an existing Paragraph. For instance, it cannot be inserted at a
+         * table's start index (i.e. between an existing table and its preceding
+         * paragraph). Tables cannot be inserted inside a footnote or equation.
+         *
+         * @param Location $location
+         */
+        public function setLocation(Location $location)
+        {
+        }
+        /**
+         * @return Location
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * The number of rows in the table.
+         *
+         * @param int $rows
+         */
+        public function setRows($rows)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRows()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Docs\InsertTableRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumns()
-    {
-    }
-    /**
-     * Inserts the table at the end of the given header, footer or document body.
-     * A newline character will be inserted before the inserted table. Tables
-     * cannot be inserted inside a footnote.
-     *
-     * @param EndOfSegmentLocation $endOfSegmentLocation
-     */
-    public function setEndOfSegmentLocation(EndOfSegmentLocation $endOfSegmentLocation)
-    {
-    }
-    /**
-     * @return EndOfSegmentLocation
-     */
-    public function getEndOfSegmentLocation()
-    {
-    }
-    /**
-     * Inserts the table at a specific model index. A newline character will be
-     * inserted before the inserted table, therefore the table start index will be
-     * at the specified location index + 1. The table must be inserted inside the
-     * bounds of an existing Paragraph. For instance, it cannot be inserted at a
-     * table's start index (i.e. between an existing table and its preceding
-     * paragraph). Tables cannot be inserted inside a footnote or equation.
-     *
-     * @param Location $location
-     */
-    public function setLocation(Location $location)
-    {
-    }
-    /**
-     * @return Location
-     */
-    public function getLocation()
-    {
-    }
-    /**
-     * The number of rows in the table.
-     *
-     * @param int $rows
-     */
-    public function setRows($rows)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getRows()
+    class Google_Service_Docs_InsertTableRequest extends \Google\Service\Docs\InsertTableRequest
     {
     }
 }

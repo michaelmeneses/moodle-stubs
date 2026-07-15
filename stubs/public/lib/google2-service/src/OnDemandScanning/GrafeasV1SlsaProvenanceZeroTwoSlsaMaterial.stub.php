@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OnDemandScanning;
-
-class GrafeasV1SlsaProvenanceZeroTwoSlsaMaterial extends \Google\Model
-{
-    /**
-     * @var string[]
-     */
-    public $digest;
-    /**
-     * @var string
-     */
-    public $uri;
-    /**
-     * @param string[] $digest
-     */
-    public function setDigest($digest)
+namespace Google\Service\OnDemandScanning {
+    class GrafeasV1SlsaProvenanceZeroTwoSlsaMaterial extends \Google\Model
     {
+        /**
+         * @var string[]
+         */
+        public $digest;
+        /**
+         * @var string
+         */
+        public $uri;
+        /**
+         * @param string[] $digest
+         */
+        public function setDigest($digest)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDigest()
+        {
+        }
+        /**
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\OnDemandScanning\GrafeasV1SlsaProvenanceZeroTwoSlsaMaterial registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDigest()
-    {
-    }
-    /**
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_OnDemandScanning_GrafeasV1SlsaProvenanceZeroTwoSlsaMaterial extends \Google\Service\OnDemandScanning\GrafeasV1SlsaProvenanceZeroTwoSlsaMaterial
     {
     }
 }

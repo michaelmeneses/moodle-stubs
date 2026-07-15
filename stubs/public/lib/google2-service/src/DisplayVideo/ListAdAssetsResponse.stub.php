@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class ListAdAssetsResponse extends \Google\Collection
-{
-    protected $collection_key = 'adAssets';
-    protected $adAssetsType = AdAsset::class;
-    protected $adAssetsDataType = 'array';
-    /**
-     * A token to retrieve the next page of results. Pass this value in the
-     * page_token field in the subsequent call to `ListAdAssets` method to
-     * retrieve the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of ad assets. The list will only contain assets of AdAssetType
-     * `AD_ASSET_TYPE_YOUTUBE_VIDEO`. This list will be absent if empty.
-     *
-     * @param AdAsset[] $adAssets
-     */
-    public function setAdAssets($adAssets)
+namespace Google\Service\DisplayVideo {
+    class ListAdAssetsResponse extends \Google\Collection
     {
+        protected $collection_key = 'adAssets';
+        protected $adAssetsType = AdAsset::class;
+        protected $adAssetsDataType = 'array';
+        /**
+         * A token to retrieve the next page of results. Pass this value in the
+         * page_token field in the subsequent call to `ListAdAssets` method to
+         * retrieve the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of ad assets. The list will only contain assets of AdAssetType
+         * `AD_ASSET_TYPE_YOUTUBE_VIDEO`. This list will be absent if empty.
+         *
+         * @param AdAsset[] $adAssets
+         */
+        public function setAdAssets($adAssets)
+        {
+        }
+        /**
+         * @return AdAsset[]
+         */
+        public function getAdAssets()
+        {
+        }
+        /**
+         * A token to retrieve the next page of results. Pass this value in the
+         * page_token field in the subsequent call to `ListAdAssets` method to
+         * retrieve the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AdAsset[]
+     * Runtime class alias of \Google\Service\DisplayVideo\ListAdAssetsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdAssets()
-    {
-    }
-    /**
-     * A token to retrieve the next page of results. Pass this value in the
-     * page_token field in the subsequent call to `ListAdAssets` method to
-     * retrieve the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_DisplayVideo_ListAdAssetsResponse extends \Google\Service\DisplayVideo\ListAdAssetsResponse
     {
     }
 }

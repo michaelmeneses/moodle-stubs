@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1FeaturestoreMonitoringConfigThresholdConfig extends \Google\Model
-{
-    /**
-     * Specify a threshold value that can trigger the alert. 1. For categorical
-     * feature, the distribution distance is calculated by L-inifinity norm. 2.
-     * For numerical feature, the distribution distance is calculated by
-     * Jensen–Shannon divergence. Each feature must have a non-zero threshold if
-     * they need to be monitored. Otherwise no alert will be triggered for that
-     * feature.
-     *
-     * @var 
-     */
-    public $value;
-    public function setValue($value)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1FeaturestoreMonitoringConfigThresholdConfig extends \Google\Model
     {
+        /**
+         * Specify a threshold value that can trigger the alert. 1. For categorical
+         * feature, the distribution distance is calculated by L-inifinity norm. 2.
+         * For numerical feature, the distribution distance is calculated by
+         * Jensen–Shannon divergence. Each feature must have a non-zero threshold if
+         * they need to be monitored. Otherwise no alert will be triggered for that
+         * feature.
+         *
+         * @var 
+         */
+        public $value;
+        public function setValue($value)
+        {
+        }
+        public function getValue()
+        {
+        }
     }
-    public function getValue()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1FeaturestoreMonitoringConfigThresholdConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1FeaturestoreMonitoringConfigThresholdConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1FeaturestoreMonitoringConfigThresholdConfig
     {
     }
 }

@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudFunctions;
-
-class SecretVersion extends \Google\Model
-{
-    /**
-     * Relative path of the file under the mount path where the secret value for
-     * this version will be fetched and made available. For example, setting the
-     * mount_path as '/etc/secrets' and path as `secret_foo` would mount the
-     * secret value file at `/etc/secrets/secret_foo`.
-     *
-     * @var string
-     */
-    public $path;
-    /**
-     * Version of the secret (version number or the string 'latest'). It is
-     * preferable to use `latest` version with secret volumes as secret value
-     * changes are reflected immediately.
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * Relative path of the file under the mount path where the secret value for
-     * this version will be fetched and made available. For example, setting the
-     * mount_path as '/etc/secrets' and path as `secret_foo` would mount the
-     * secret value file at `/etc/secrets/secret_foo`.
-     *
-     * @param string $path
-     */
-    public function setPath($path)
+namespace Google\Service\CloudFunctions {
+    class SecretVersion extends \Google\Model
     {
+        /**
+         * Relative path of the file under the mount path where the secret value for
+         * this version will be fetched and made available. For example, setting the
+         * mount_path as '/etc/secrets' and path as `secret_foo` would mount the
+         * secret value file at `/etc/secrets/secret_foo`.
+         *
+         * @var string
+         */
+        public $path;
+        /**
+         * Version of the secret (version number or the string 'latest'). It is
+         * preferable to use `latest` version with secret volumes as secret value
+         * changes are reflected immediately.
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * Relative path of the file under the mount path where the secret value for
+         * this version will be fetched and made available. For example, setting the
+         * mount_path as '/etc/secrets' and path as `secret_foo` would mount the
+         * secret value file at `/etc/secrets/secret_foo`.
+         *
+         * @param string $path
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
+        /**
+         * Version of the secret (version number or the string 'latest'). It is
+         * preferable to use `latest` version with secret volumes as secret value
+         * changes are reflected immediately.
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudFunctions\SecretVersion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPath()
-    {
-    }
-    /**
-     * Version of the secret (version number or the string 'latest'). It is
-     * preferable to use `latest` version with secret volumes as secret value
-     * changes are reflected immediately.
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_CloudFunctions_SecretVersion extends \Google\Service\CloudFunctions\SecretVersion
     {
     }
 }

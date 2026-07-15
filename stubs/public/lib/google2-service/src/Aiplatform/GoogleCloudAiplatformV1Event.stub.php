@@ -21,136 +21,145 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1Event extends \Google\Model
-{
-    /**
-     * Unspecified whether input or output of the Execution.
-     */
-    public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
-    /**
-     * An input of the Execution.
-     */
-    public const TYPE_INPUT = 'INPUT';
-    /**
-     * An output of the Execution.
-     */
-    public const TYPE_OUTPUT = 'OUTPUT';
-    /**
-     * Required. The relative resource name of the Artifact in the Event.
-     *
-     * @var string
-     */
-    public $artifact;
-    /**
-     * Output only. Time the Event occurred.
-     *
-     * @var string
-     */
-    public $eventTime;
-    /**
-     * Output only. The relative resource name of the Execution in the Event.
-     *
-     * @var string
-     */
-    public $execution;
-    /**
-     * The labels with user-defined metadata to annotate Events. Label keys and
-     * values can be no longer than 64 characters (Unicode codepoints), can only
-     * contain lowercase letters, numeric characters, underscores and dashes.
-     * International characters are allowed. No more than 64 user labels can be
-     * associated with one Event (System labels are excluded). See
-     * https://goo.gl/xmQnxf for more information and examples of labels. System
-     * reserved label keys are prefixed with "aiplatform.googleapis.com/" and are
-     * immutable.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Required. The type of the Event.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Required. The relative resource name of the Artifact in the Event.
-     *
-     * @param string $artifact
-     */
-    public function setArtifact($artifact)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1Event extends \Google\Model
     {
+        /**
+         * Unspecified whether input or output of the Execution.
+         */
+        public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
+        /**
+         * An input of the Execution.
+         */
+        public const TYPE_INPUT = 'INPUT';
+        /**
+         * An output of the Execution.
+         */
+        public const TYPE_OUTPUT = 'OUTPUT';
+        /**
+         * Required. The relative resource name of the Artifact in the Event.
+         *
+         * @var string
+         */
+        public $artifact;
+        /**
+         * Output only. Time the Event occurred.
+         *
+         * @var string
+         */
+        public $eventTime;
+        /**
+         * Output only. The relative resource name of the Execution in the Event.
+         *
+         * @var string
+         */
+        public $execution;
+        /**
+         * The labels with user-defined metadata to annotate Events. Label keys and
+         * values can be no longer than 64 characters (Unicode codepoints), can only
+         * contain lowercase letters, numeric characters, underscores and dashes.
+         * International characters are allowed. No more than 64 user labels can be
+         * associated with one Event (System labels are excluded). See
+         * https://goo.gl/xmQnxf for more information and examples of labels. System
+         * reserved label keys are prefixed with "aiplatform.googleapis.com/" and are
+         * immutable.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Required. The type of the Event.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Required. The relative resource name of the Artifact in the Event.
+         *
+         * @param string $artifact
+         */
+        public function setArtifact($artifact)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getArtifact()
+        {
+        }
+        /**
+         * Output only. Time the Event occurred.
+         *
+         * @param string $eventTime
+         */
+        public function setEventTime($eventTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEventTime()
+        {
+        }
+        /**
+         * Output only. The relative resource name of the Execution in the Event.
+         *
+         * @param string $execution
+         */
+        public function setExecution($execution)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExecution()
+        {
+        }
+        /**
+         * The labels with user-defined metadata to annotate Events. Label keys and
+         * values can be no longer than 64 characters (Unicode codepoints), can only
+         * contain lowercase letters, numeric characters, underscores and dashes.
+         * International characters are allowed. No more than 64 user labels can be
+         * associated with one Event (System labels are excluded). See
+         * https://goo.gl/xmQnxf for more information and examples of labels. System
+         * reserved label keys are prefixed with "aiplatform.googleapis.com/" and are
+         * immutable.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Required. The type of the Event.
+         *
+         * Accepted values: TYPE_UNSPECIFIED, INPUT, OUTPUT
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1Event registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArtifact()
-    {
-    }
-    /**
-     * Output only. Time the Event occurred.
-     *
-     * @param string $eventTime
-     */
-    public function setEventTime($eventTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEventTime()
-    {
-    }
-    /**
-     * Output only. The relative resource name of the Execution in the Event.
-     *
-     * @param string $execution
-     */
-    public function setExecution($execution)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExecution()
-    {
-    }
-    /**
-     * The labels with user-defined metadata to annotate Events. Label keys and
-     * values can be no longer than 64 characters (Unicode codepoints), can only
-     * contain lowercase letters, numeric characters, underscores and dashes.
-     * International characters are allowed. No more than 64 user labels can be
-     * associated with one Event (System labels are excluded). See
-     * https://goo.gl/xmQnxf for more information and examples of labels. System
-     * reserved label keys are prefixed with "aiplatform.googleapis.com/" and are
-     * immutable.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Required. The type of the Event.
-     *
-     * Accepted values: TYPE_UNSPECIFIED, INPUT, OUTPUT
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1Event extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1Event
     {
     }
 }

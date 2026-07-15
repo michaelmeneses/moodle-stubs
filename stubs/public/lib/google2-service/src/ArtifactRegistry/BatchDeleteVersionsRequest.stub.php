@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ArtifactRegistry;
-
-class BatchDeleteVersionsRequest extends \Google\Collection
-{
-    protected $collection_key = 'names';
-    /**
-     * Required. The names of the versions to delete. The maximum number of
-     * versions deleted per batch is determined by the service and is dependent on
-     * the available resources in the region.
-     *
-     * @var string[]
-     */
-    public $names;
-    /**
-     * If true, the request is performed without deleting data, following AIP-163.
-     *
-     * @var bool
-     */
-    public $validateOnly;
-    /**
-     * Required. The names of the versions to delete. The maximum number of
-     * versions deleted per batch is determined by the service and is dependent on
-     * the available resources in the region.
-     *
-     * @param string[] $names
-     */
-    public function setNames($names)
+namespace Google\Service\ArtifactRegistry {
+    class BatchDeleteVersionsRequest extends \Google\Collection
     {
+        protected $collection_key = 'names';
+        /**
+         * Required. The names of the versions to delete. The maximum number of
+         * versions deleted per batch is determined by the service and is dependent on
+         * the available resources in the region.
+         *
+         * @var string[]
+         */
+        public $names;
+        /**
+         * If true, the request is performed without deleting data, following AIP-163.
+         *
+         * @var bool
+         */
+        public $validateOnly;
+        /**
+         * Required. The names of the versions to delete. The maximum number of
+         * versions deleted per batch is determined by the service and is dependent on
+         * the available resources in the region.
+         *
+         * @param string[] $names
+         */
+        public function setNames($names)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getNames()
+        {
+        }
+        /**
+         * If true, the request is performed without deleting data, following AIP-163.
+         *
+         * @param bool $validateOnly
+         */
+        public function setValidateOnly($validateOnly)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getValidateOnly()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\ArtifactRegistry\BatchDeleteVersionsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNames()
-    {
-    }
-    /**
-     * If true, the request is performed without deleting data, following AIP-163.
-     *
-     * @param bool $validateOnly
-     */
-    public function setValidateOnly($validateOnly)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getValidateOnly()
+    class Google_Service_ArtifactRegistry_BatchDeleteVersionsRequest extends \Google\Service\ArtifactRegistry\BatchDeleteVersionsRequest
     {
     }
 }

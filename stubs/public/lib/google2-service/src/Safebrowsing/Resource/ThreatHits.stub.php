@@ -21,27 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Safebrowsing\Resource;
-
-/**
- * The "threatHits" collection of methods.
- * Typical usage is:
- *  <code>
- *   $safebrowsingService = new Google\Service\Safebrowsing(...);
- *   $threatHits = $safebrowsingService->threatHits;
- *  </code>
- */
-class ThreatHits extends \Google\Service\Resource
-{
+namespace Google\Service\Safebrowsing\Resource {
+    use Google\Service\Safebrowsing\GoogleProtobufEmpty;
+    use Google\Service\Safebrowsing\GoogleSecuritySafebrowsingV4ThreatHit;
     /**
-     * Reports a Safe Browsing threat list hit to Google. Only projects with
-     * TRUSTED_REPORTER visibility can use this method. (threatHits.create)
-     *
-     * @param GoogleSecuritySafebrowsingV4ThreatHit $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleProtobufEmpty
+     * The "threatHits" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $safebrowsingService = new Google\Service\Safebrowsing(...);
+     *   $threatHits = $safebrowsingService->threatHits;
+     *  </code>
      */
-    public function create(GoogleSecuritySafebrowsingV4ThreatHit $postBody, $optParams = [])
+    class ThreatHits extends \Google\Service\Resource
+    {
+        /**
+         * Reports a Safe Browsing threat list hit to Google. Only projects with
+         * TRUSTED_REPORTER visibility can use this method. (threatHits.create)
+         *
+         * @param GoogleSecuritySafebrowsingV4ThreatHit $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleProtobufEmpty
+         */
+        public function create(GoogleSecuritySafebrowsingV4ThreatHit $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Safebrowsing\Resource\ThreatHits registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Safebrowsing_Resource_ThreatHits extends \Google\Service\Safebrowsing\Resource\ThreatHits
     {
     }
 }

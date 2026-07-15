@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class CalendarClientActionMarkup extends \Google\Model
-{
-    protected $addAttachmentsActionMarkupType = AppsExtensionsMarkupCalendarClientActionMarkupAddAttachmentsActionMarkup::class;
-    protected $addAttachmentsActionMarkupDataType = '';
-    protected $editAttendeesActionMarkupType = AppsExtensionsMarkupCalendarClientActionMarkupEditAttendeesActionMarkup::class;
-    protected $editAttendeesActionMarkupDataType = '';
-    protected $editConferenceDataActionMarkupType = AppsExtensionsMarkupCalendarClientActionMarkupEditConferenceDataActionMarkup::class;
-    protected $editConferenceDataActionMarkupDataType = '';
-    /**
-     * @param AppsExtensionsMarkupCalendarClientActionMarkupAddAttachmentsActionMarkup
-     */
-    public function setAddAttachmentsActionMarkup(AppsExtensionsMarkupCalendarClientActionMarkupAddAttachmentsActionMarkup $addAttachmentsActionMarkup)
+namespace Google\Service\CloudSearch {
+    class CalendarClientActionMarkup extends \Google\Model
     {
+        protected $addAttachmentsActionMarkupType = AppsExtensionsMarkupCalendarClientActionMarkupAddAttachmentsActionMarkup::class;
+        protected $addAttachmentsActionMarkupDataType = '';
+        protected $editAttendeesActionMarkupType = AppsExtensionsMarkupCalendarClientActionMarkupEditAttendeesActionMarkup::class;
+        protected $editAttendeesActionMarkupDataType = '';
+        protected $editConferenceDataActionMarkupType = AppsExtensionsMarkupCalendarClientActionMarkupEditConferenceDataActionMarkup::class;
+        protected $editConferenceDataActionMarkupDataType = '';
+        /**
+         * @param AppsExtensionsMarkupCalendarClientActionMarkupAddAttachmentsActionMarkup
+         */
+        public function setAddAttachmentsActionMarkup(AppsExtensionsMarkupCalendarClientActionMarkupAddAttachmentsActionMarkup $addAttachmentsActionMarkup)
+        {
+        }
+        /**
+         * @return AppsExtensionsMarkupCalendarClientActionMarkupAddAttachmentsActionMarkup
+         */
+        public function getAddAttachmentsActionMarkup()
+        {
+        }
+        /**
+         * @param AppsExtensionsMarkupCalendarClientActionMarkupEditAttendeesActionMarkup
+         */
+        public function setEditAttendeesActionMarkup(AppsExtensionsMarkupCalendarClientActionMarkupEditAttendeesActionMarkup $editAttendeesActionMarkup)
+        {
+        }
+        /**
+         * @return AppsExtensionsMarkupCalendarClientActionMarkupEditAttendeesActionMarkup
+         */
+        public function getEditAttendeesActionMarkup()
+        {
+        }
+        /**
+         * @param AppsExtensionsMarkupCalendarClientActionMarkupEditConferenceDataActionMarkup
+         */
+        public function setEditConferenceDataActionMarkup(AppsExtensionsMarkupCalendarClientActionMarkupEditConferenceDataActionMarkup $editConferenceDataActionMarkup)
+        {
+        }
+        /**
+         * @return AppsExtensionsMarkupCalendarClientActionMarkupEditConferenceDataActionMarkup
+         */
+        public function getEditConferenceDataActionMarkup()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppsExtensionsMarkupCalendarClientActionMarkupAddAttachmentsActionMarkup
+     * Runtime class alias of \Google\Service\CloudSearch\CalendarClientActionMarkup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddAttachmentsActionMarkup()
-    {
-    }
-    /**
-     * @param AppsExtensionsMarkupCalendarClientActionMarkupEditAttendeesActionMarkup
-     */
-    public function setEditAttendeesActionMarkup(AppsExtensionsMarkupCalendarClientActionMarkupEditAttendeesActionMarkup $editAttendeesActionMarkup)
-    {
-    }
-    /**
-     * @return AppsExtensionsMarkupCalendarClientActionMarkupEditAttendeesActionMarkup
-     */
-    public function getEditAttendeesActionMarkup()
-    {
-    }
-    /**
-     * @param AppsExtensionsMarkupCalendarClientActionMarkupEditConferenceDataActionMarkup
-     */
-    public function setEditConferenceDataActionMarkup(AppsExtensionsMarkupCalendarClientActionMarkupEditConferenceDataActionMarkup $editConferenceDataActionMarkup)
-    {
-    }
-    /**
-     * @return AppsExtensionsMarkupCalendarClientActionMarkupEditConferenceDataActionMarkup
-     */
-    public function getEditConferenceDataActionMarkup()
+    class Google_Service_CloudSearch_CalendarClientActionMarkup extends \Google\Service\CloudSearch\CalendarClientActionMarkup
     {
     }
 }

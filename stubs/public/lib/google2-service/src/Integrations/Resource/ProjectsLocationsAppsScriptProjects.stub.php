@@ -21,42 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations\Resource;
-
-/**
- * The "appsScriptProjects" collection of methods.
- * Typical usage is:
- *  <code>
- *   $integrationsService = new Google\Service\Integrations(...);
- *   $appsScriptProjects = $integrationsService->projects_locations_appsScriptProjects;
- *  </code>
- */
-class ProjectsLocationsAppsScriptProjects extends \Google\Service\Resource
-{
+namespace Google\Service\Integrations\Resource {
+    use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaCreateAppsScriptProjectRequest;
+    use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaCreateAppsScriptProjectResponse;
+    use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaLinkAppsScriptProjectRequest;
+    use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaLinkAppsScriptProjectResponse;
     /**
-     * Creates an Apps Script project. (appsScriptProjects.create)
-     *
-     * @param string $parent Required. The project that the executed integration
-     * belongs to.
-     * @param GoogleCloudIntegrationsV1alphaCreateAppsScriptProjectRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudIntegrationsV1alphaCreateAppsScriptProjectResponse
-     * @throws \Google\Service\Exception
+     * The "appsScriptProjects" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $integrationsService = new Google\Service\Integrations(...);
+     *   $appsScriptProjects = $integrationsService->projects_locations_appsScriptProjects;
+     *  </code>
      */
-    public function create($parent, GoogleCloudIntegrationsV1alphaCreateAppsScriptProjectRequest $postBody, $optParams = [])
+    class ProjectsLocationsAppsScriptProjects extends \Google\Service\Resource
     {
+        /**
+         * Creates an Apps Script project. (appsScriptProjects.create)
+         *
+         * @param string $parent Required. The project that the executed integration
+         * belongs to.
+         * @param GoogleCloudIntegrationsV1alphaCreateAppsScriptProjectRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudIntegrationsV1alphaCreateAppsScriptProjectResponse
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, GoogleCloudIntegrationsV1alphaCreateAppsScriptProjectRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Links a existing Apps Script project. (appsScriptProjects.link)
+         *
+         * @param string $parent Required. The project that the executed integration
+         * belongs to.
+         * @param GoogleCloudIntegrationsV1alphaLinkAppsScriptProjectRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudIntegrationsV1alphaLinkAppsScriptProjectResponse
+         * @throws \Google\Service\Exception
+         */
+        public function link($parent, GoogleCloudIntegrationsV1alphaLinkAppsScriptProjectRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Links a existing Apps Script project. (appsScriptProjects.link)
-     *
-     * @param string $parent Required. The project that the executed integration
-     * belongs to.
-     * @param GoogleCloudIntegrationsV1alphaLinkAppsScriptProjectRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudIntegrationsV1alphaLinkAppsScriptProjectResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Integrations\Resource\ProjectsLocationsAppsScriptProjects registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function link($parent, GoogleCloudIntegrationsV1alphaLinkAppsScriptProjectRequest $postBody, $optParams = [])
+    class Google_Service_Integrations_Resource_ProjectsLocationsAppsScriptProjects extends \Google\Service\Integrations\Resource\ProjectsLocationsAppsScriptProjects
     {
     }
 }

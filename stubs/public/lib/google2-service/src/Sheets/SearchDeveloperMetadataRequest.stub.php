@@ -21,27 +21,36 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class SearchDeveloperMetadataRequest extends \Google\Collection
-{
-    protected $collection_key = 'dataFilters';
-    protected $dataFiltersType = DataFilter::class;
-    protected $dataFiltersDataType = 'array';
-    /**
-     * The data filters describing the criteria used to determine which
-     * DeveloperMetadata entries to return. DeveloperMetadata matching any of the
-     * specified filters are included in the response.
-     *
-     * @param DataFilter[] $dataFilters
-     */
-    public function setDataFilters($dataFilters)
+namespace Google\Service\Sheets {
+    class SearchDeveloperMetadataRequest extends \Google\Collection
     {
+        protected $collection_key = 'dataFilters';
+        protected $dataFiltersType = DataFilter::class;
+        protected $dataFiltersDataType = 'array';
+        /**
+         * The data filters describing the criteria used to determine which
+         * DeveloperMetadata entries to return. DeveloperMetadata matching any of the
+         * specified filters are included in the response.
+         *
+         * @param DataFilter[] $dataFilters
+         */
+        public function setDataFilters($dataFilters)
+        {
+        }
+        /**
+         * @return DataFilter[]
+         */
+        public function getDataFilters()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DataFilter[]
+     * Runtime class alias of \Google\Service\Sheets\SearchDeveloperMetadataRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataFilters()
+    class Google_Service_Sheets_SearchDeveloperMetadataRequest extends \Google\Service\Sheets\SearchDeveloperMetadataRequest
     {
     }
 }

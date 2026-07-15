@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AlertCenter;
-
-class Csv extends \Google\Collection
-{
-    protected $collection_key = 'headers';
-    protected $dataRowsType = CsvRow::class;
-    protected $dataRowsDataType = 'array';
-    /**
-     * The list of headers for data columns in a CSV file.
-     *
-     * @var string[]
-     */
-    public $headers;
-    /**
-     * The list of data rows in a CSV file, as string arrays rather than as a
-     * single comma-separated string.
-     *
-     * @param CsvRow[] $dataRows
-     */
-    public function setDataRows($dataRows)
+namespace Google\Service\AlertCenter {
+    class Csv extends \Google\Collection
     {
+        protected $collection_key = 'headers';
+        protected $dataRowsType = CsvRow::class;
+        protected $dataRowsDataType = 'array';
+        /**
+         * The list of headers for data columns in a CSV file.
+         *
+         * @var string[]
+         */
+        public $headers;
+        /**
+         * The list of data rows in a CSV file, as string arrays rather than as a
+         * single comma-separated string.
+         *
+         * @param CsvRow[] $dataRows
+         */
+        public function setDataRows($dataRows)
+        {
+        }
+        /**
+         * @return CsvRow[]
+         */
+        public function getDataRows()
+        {
+        }
+        /**
+         * The list of headers for data columns in a CSV file.
+         *
+         * @param string[] $headers
+         */
+        public function setHeaders($headers)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getHeaders()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CsvRow[]
+     * Runtime class alias of \Google\Service\AlertCenter\Csv registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataRows()
-    {
-    }
-    /**
-     * The list of headers for data columns in a CSV file.
-     *
-     * @param string[] $headers
-     */
-    public function setHeaders($headers)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getHeaders()
+    class Google_Service_AlertCenter_Csv extends \Google\Service\AlertCenter\Csv
     {
     }
 }

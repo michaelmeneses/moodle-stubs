@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1SetDefaultProcessorVersionRequest extends \Google\Model
-{
-    /**
-     * Required. The resource name of child ProcessorVersion to use as default.
-     * Format: `projects/{project}/locations/{location}/processors/{processor}/pro
-     * cessorVersions/{version}`
-     *
-     * @var string
-     */
-    public $defaultProcessorVersion;
-    /**
-     * Required. The resource name of child ProcessorVersion to use as default.
-     * Format: `projects/{project}/locations/{location}/processors/{processor}/pro
-     * cessorVersions/{version}`
-     *
-     * @param string $defaultProcessorVersion
-     */
-    public function setDefaultProcessorVersion($defaultProcessorVersion)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1SetDefaultProcessorVersionRequest extends \Google\Model
     {
+        /**
+         * Required. The resource name of child ProcessorVersion to use as default.
+         * Format: `projects/{project}/locations/{location}/processors/{processor}/pro
+         * cessorVersions/{version}`
+         *
+         * @var string
+         */
+        public $defaultProcessorVersion;
+        /**
+         * Required. The resource name of child ProcessorVersion to use as default.
+         * Format: `projects/{project}/locations/{location}/processors/{processor}/pro
+         * cessorVersions/{version}`
+         *
+         * @param string $defaultProcessorVersion
+         */
+        public function setDefaultProcessorVersion($defaultProcessorVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDefaultProcessorVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1SetDefaultProcessorVersionRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDefaultProcessorVersion()
+    class Google_Service_Document_GoogleCloudDocumentaiV1SetDefaultProcessorVersionRequest extends \Google\Service\Document\GoogleCloudDocumentaiV1SetDefaultProcessorVersionRequest
     {
     }
 }

@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Transcoder;
-
-class Input extends \Google\Model
-{
-    protected $attributesType = InputAttributes::class;
-    protected $attributesDataType = '';
-    /**
-     * A unique key for this input. Must be specified when using advanced mapping
-     * and edit lists.
-     *
-     * @var string
-     */
-    public $key;
-    protected $preprocessingConfigType = PreprocessingConfig::class;
-    protected $preprocessingConfigDataType = '';
-    /**
-     * URI of the media. Input files must be at least 5 seconds in duration and
-     * stored in Cloud Storage (for example, `gs://bucket/inputs/file.mp4`). If
-     * empty, the value is populated from Job.input_uri. See [Supported input and
-     * output
-     * formats](https://cloud.google.com/transcoder/docs/concepts/supported-input-
-     * and-output-formats).
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * Optional. Input Attributes.
-     *
-     * @param InputAttributes $attributes
-     */
-    public function setAttributes(InputAttributes $attributes)
+namespace Google\Service\Transcoder {
+    class Input extends \Google\Model
     {
+        protected $attributesType = InputAttributes::class;
+        protected $attributesDataType = '';
+        /**
+         * A unique key for this input. Must be specified when using advanced mapping
+         * and edit lists.
+         *
+         * @var string
+         */
+        public $key;
+        protected $preprocessingConfigType = PreprocessingConfig::class;
+        protected $preprocessingConfigDataType = '';
+        /**
+         * URI of the media. Input files must be at least 5 seconds in duration and
+         * stored in Cloud Storage (for example, `gs://bucket/inputs/file.mp4`). If
+         * empty, the value is populated from Job.input_uri. See [Supported input and
+         * output
+         * formats](https://cloud.google.com/transcoder/docs/concepts/supported-input-
+         * and-output-formats).
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * Optional. Input Attributes.
+         *
+         * @param InputAttributes $attributes
+         */
+        public function setAttributes(InputAttributes $attributes)
+        {
+        }
+        /**
+         * @return InputAttributes
+         */
+        public function getAttributes()
+        {
+        }
+        /**
+         * A unique key for this input. Must be specified when using advanced mapping
+         * and edit lists.
+         *
+         * @param string $key
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * Preprocessing configurations.
+         *
+         * @param PreprocessingConfig $preprocessingConfig
+         */
+        public function setPreprocessingConfig(PreprocessingConfig $preprocessingConfig)
+        {
+        }
+        /**
+         * @return PreprocessingConfig
+         */
+        public function getPreprocessingConfig()
+        {
+        }
+        /**
+         * URI of the media. Input files must be at least 5 seconds in duration and
+         * stored in Cloud Storage (for example, `gs://bucket/inputs/file.mp4`). If
+         * empty, the value is populated from Job.input_uri. See [Supported input and
+         * output
+         * formats](https://cloud.google.com/transcoder/docs/concepts/supported-input-
+         * and-output-formats).
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InputAttributes
+     * Runtime class alias of \Google\Service\Transcoder\Input registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttributes()
-    {
-    }
-    /**
-     * A unique key for this input. Must be specified when using advanced mapping
-     * and edit lists.
-     *
-     * @param string $key
-     */
-    public function setKey($key)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKey()
-    {
-    }
-    /**
-     * Preprocessing configurations.
-     *
-     * @param PreprocessingConfig $preprocessingConfig
-     */
-    public function setPreprocessingConfig(PreprocessingConfig $preprocessingConfig)
-    {
-    }
-    /**
-     * @return PreprocessingConfig
-     */
-    public function getPreprocessingConfig()
-    {
-    }
-    /**
-     * URI of the media. Input files must be at least 5 seconds in duration and
-     * stored in Cloud Storage (for example, `gs://bucket/inputs/file.mp4`). If
-     * empty, the value is populated from Job.input_uri. See [Supported input and
-     * output
-     * formats](https://cloud.google.com/transcoder/docs/concepts/supported-input-
-     * and-output-formats).
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_Transcoder_Input extends \Google\Service\Transcoder\Input
     {
     }
 }

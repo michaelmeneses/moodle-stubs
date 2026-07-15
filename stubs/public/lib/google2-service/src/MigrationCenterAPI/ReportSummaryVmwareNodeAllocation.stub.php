@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class ReportSummaryVmwareNodeAllocation extends \Google\Model
-{
-    /**
-     * Count of assets allocated to these nodes
-     *
-     * @var string
-     */
-    public $allocatedAssetCount;
-    /**
-     * Count of this node type to be provisioned
-     *
-     * @var string
-     */
-    public $nodeCount;
-    protected $vmwareNodeType = ReportSummaryVmwareNode::class;
-    protected $vmwareNodeDataType = '';
-    /**
-     * Count of assets allocated to these nodes
-     *
-     * @param string $allocatedAssetCount
-     */
-    public function setAllocatedAssetCount($allocatedAssetCount)
+namespace Google\Service\MigrationCenterAPI {
+    class ReportSummaryVmwareNodeAllocation extends \Google\Model
     {
+        /**
+         * Count of assets allocated to these nodes
+         *
+         * @var string
+         */
+        public $allocatedAssetCount;
+        /**
+         * Count of this node type to be provisioned
+         *
+         * @var string
+         */
+        public $nodeCount;
+        protected $vmwareNodeType = ReportSummaryVmwareNode::class;
+        protected $vmwareNodeDataType = '';
+        /**
+         * Count of assets allocated to these nodes
+         *
+         * @param string $allocatedAssetCount
+         */
+        public function setAllocatedAssetCount($allocatedAssetCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAllocatedAssetCount()
+        {
+        }
+        /**
+         * Count of this node type to be provisioned
+         *
+         * @param string $nodeCount
+         */
+        public function setNodeCount($nodeCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNodeCount()
+        {
+        }
+        /**
+         * VMWare node type, e.g. "ve1-standard-72"
+         *
+         * @param ReportSummaryVmwareNode $vmwareNode
+         */
+        public function setVmwareNode(ReportSummaryVmwareNode $vmwareNode)
+        {
+        }
+        /**
+         * @return ReportSummaryVmwareNode
+         */
+        public function getVmwareNode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\ReportSummaryVmwareNodeAllocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllocatedAssetCount()
-    {
-    }
-    /**
-     * Count of this node type to be provisioned
-     *
-     * @param string $nodeCount
-     */
-    public function setNodeCount($nodeCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNodeCount()
-    {
-    }
-    /**
-     * VMWare node type, e.g. "ve1-standard-72"
-     *
-     * @param ReportSummaryVmwareNode $vmwareNode
-     */
-    public function setVmwareNode(ReportSummaryVmwareNode $vmwareNode)
-    {
-    }
-    /**
-     * @return ReportSummaryVmwareNode
-     */
-    public function getVmwareNode()
+    class Google_Service_MigrationCenterAPI_ReportSummaryVmwareNodeAllocation extends \Google\Service\MigrationCenterAPI\ReportSummaryVmwareNodeAllocation
     {
     }
 }

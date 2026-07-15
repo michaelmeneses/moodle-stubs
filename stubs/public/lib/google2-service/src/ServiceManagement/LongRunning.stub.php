@@ -21,94 +21,103 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceManagement;
-
-class LongRunning extends \Google\Model
-{
-    /**
-     * Initial delay after which the first poll request will be made. Default
-     * value: 5 seconds.
-     *
-     * @var string
-     */
-    public $initialPollDelay;
-    /**
-     * Maximum time between two subsequent poll requests. Default value: 45
-     * seconds.
-     *
-     * @var string
-     */
-    public $maxPollDelay;
-    /**
-     * Multiplier to gradually increase delay between subsequent polls until it
-     * reaches max_poll_delay. Default value: 1.5.
-     *
-     * @var float
-     */
-    public $pollDelayMultiplier;
-    /**
-     * Total polling timeout. Default value: 5 minutes.
-     *
-     * @var string
-     */
-    public $totalPollTimeout;
-    /**
-     * Initial delay after which the first poll request will be made. Default
-     * value: 5 seconds.
-     *
-     * @param string $initialPollDelay
-     */
-    public function setInitialPollDelay($initialPollDelay)
+namespace Google\Service\ServiceManagement {
+    class LongRunning extends \Google\Model
     {
+        /**
+         * Initial delay after which the first poll request will be made. Default
+         * value: 5 seconds.
+         *
+         * @var string
+         */
+        public $initialPollDelay;
+        /**
+         * Maximum time between two subsequent poll requests. Default value: 45
+         * seconds.
+         *
+         * @var string
+         */
+        public $maxPollDelay;
+        /**
+         * Multiplier to gradually increase delay between subsequent polls until it
+         * reaches max_poll_delay. Default value: 1.5.
+         *
+         * @var float
+         */
+        public $pollDelayMultiplier;
+        /**
+         * Total polling timeout. Default value: 5 minutes.
+         *
+         * @var string
+         */
+        public $totalPollTimeout;
+        /**
+         * Initial delay after which the first poll request will be made. Default
+         * value: 5 seconds.
+         *
+         * @param string $initialPollDelay
+         */
+        public function setInitialPollDelay($initialPollDelay)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInitialPollDelay()
+        {
+        }
+        /**
+         * Maximum time between two subsequent poll requests. Default value: 45
+         * seconds.
+         *
+         * @param string $maxPollDelay
+         */
+        public function setMaxPollDelay($maxPollDelay)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaxPollDelay()
+        {
+        }
+        /**
+         * Multiplier to gradually increase delay between subsequent polls until it
+         * reaches max_poll_delay. Default value: 1.5.
+         *
+         * @param float $pollDelayMultiplier
+         */
+        public function setPollDelayMultiplier($pollDelayMultiplier)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getPollDelayMultiplier()
+        {
+        }
+        /**
+         * Total polling timeout. Default value: 5 minutes.
+         *
+         * @param string $totalPollTimeout
+         */
+        public function setTotalPollTimeout($totalPollTimeout)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalPollTimeout()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ServiceManagement\LongRunning registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInitialPollDelay()
-    {
-    }
-    /**
-     * Maximum time between two subsequent poll requests. Default value: 45
-     * seconds.
-     *
-     * @param string $maxPollDelay
-     */
-    public function setMaxPollDelay($maxPollDelay)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMaxPollDelay()
-    {
-    }
-    /**
-     * Multiplier to gradually increase delay between subsequent polls until it
-     * reaches max_poll_delay. Default value: 1.5.
-     *
-     * @param float $pollDelayMultiplier
-     */
-    public function setPollDelayMultiplier($pollDelayMultiplier)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getPollDelayMultiplier()
-    {
-    }
-    /**
-     * Total polling timeout. Default value: 5 minutes.
-     *
-     * @param string $totalPollTimeout
-     */
-    public function setTotalPollTimeout($totalPollTimeout)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalPollTimeout()
+    class Google_Service_ServiceManagement_LongRunning extends \Google\Service\ServiceManagement\LongRunning
     {
     }
 }

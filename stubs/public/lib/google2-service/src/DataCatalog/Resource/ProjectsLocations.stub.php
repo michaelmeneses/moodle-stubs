@@ -21,46 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog\Resource;
-
-/**
- * The "locations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $datacatalogService = new Google\Service\DataCatalog(...);
- *   $locations = $datacatalogService->projects_locations;
- *  </code>
- */
-class ProjectsLocations extends \Google\Service\Resource
-{
+namespace Google\Service\DataCatalog\Resource {
+    use Google\Service\DataCatalog\GoogleCloudDatacatalogV1MigrationConfig;
+    use Google\Service\DataCatalog\GoogleCloudDatacatalogV1SetConfigRequest;
     /**
-     * Retrieves the effective configuration related to the migration from Data
-     * Catalog to Dataplex Universal Catalog for a specific organization or project.
-     * If there is no specific configuration set for the resource, the setting is
-     * checked hierarchicahlly through the ancestors of the resource, starting from
-     * the resource itself. (locations.retrieveEffectiveConfig)
-     *
-     * @param string $name Required. The resource whose effective config is being
-     * retrieved.
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudDatacatalogV1MigrationConfig
-     * @throws \Google\Service\Exception
+     * The "locations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $datacatalogService = new Google\Service\DataCatalog(...);
+     *   $locations = $datacatalogService->projects_locations;
+     *  </code>
      */
-    public function retrieveEffectiveConfig($name, $optParams = [])
+    class ProjectsLocations extends \Google\Service\Resource
     {
+        /**
+         * Retrieves the effective configuration related to the migration from Data
+         * Catalog to Dataplex Universal Catalog for a specific organization or project.
+         * If there is no specific configuration set for the resource, the setting is
+         * checked hierarchicahlly through the ancestors of the resource, starting from
+         * the resource itself. (locations.retrieveEffectiveConfig)
+         *
+         * @param string $name Required. The resource whose effective config is being
+         * retrieved.
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudDatacatalogV1MigrationConfig
+         * @throws \Google\Service\Exception
+         */
+        public function retrieveEffectiveConfig($name, $optParams = [])
+        {
+        }
+        /**
+         * Sets the configuration related to the migration to Dataplex Universal Catalog
+         * for an organization or project. (locations.setConfig)
+         *
+         * @param string $name Required. The organization or project whose config is
+         * being specified.
+         * @param GoogleCloudDatacatalogV1SetConfigRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudDatacatalogV1MigrationConfig
+         * @throws \Google\Service\Exception
+         */
+        public function setConfig($name, GoogleCloudDatacatalogV1SetConfigRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Sets the configuration related to the migration to Dataplex Universal Catalog
-     * for an organization or project. (locations.setConfig)
-     *
-     * @param string $name Required. The organization or project whose config is
-     * being specified.
-     * @param GoogleCloudDatacatalogV1SetConfigRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudDatacatalogV1MigrationConfig
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\DataCatalog\Resource\ProjectsLocations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setConfig($name, GoogleCloudDatacatalogV1SetConfigRequest $postBody, $optParams = [])
+    class Google_Service_DataCatalog_Resource_ProjectsLocations extends \Google\Service\DataCatalog\Resource\ProjectsLocations
     {
     }
 }

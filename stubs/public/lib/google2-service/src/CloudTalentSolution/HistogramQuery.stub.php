@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudTalentSolution;
-
-class HistogramQuery extends \Google\Model
-{
-    /**
-     * An expression specifies a histogram request against matching jobs for
-     * searches. See SearchJobsRequest.histogram_queries for details about syntax.
-     *
-     * @var string
-     */
-    public $histogramQuery;
-    /**
-     * An expression specifies a histogram request against matching jobs for
-     * searches. See SearchJobsRequest.histogram_queries for details about syntax.
-     *
-     * @param string $histogramQuery
-     */
-    public function setHistogramQuery($histogramQuery)
+namespace Google\Service\CloudTalentSolution {
+    class HistogramQuery extends \Google\Model
     {
+        /**
+         * An expression specifies a histogram request against matching jobs for
+         * searches. See SearchJobsRequest.histogram_queries for details about syntax.
+         *
+         * @var string
+         */
+        public $histogramQuery;
+        /**
+         * An expression specifies a histogram request against matching jobs for
+         * searches. See SearchJobsRequest.histogram_queries for details about syntax.
+         *
+         * @param string $histogramQuery
+         */
+        public function setHistogramQuery($histogramQuery)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHistogramQuery()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudTalentSolution\HistogramQuery registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHistogramQuery()
+    class Google_Service_CloudTalentSolution_HistogramQuery extends \Google\Service\CloudTalentSolution\HistogramQuery
     {
     }
 }

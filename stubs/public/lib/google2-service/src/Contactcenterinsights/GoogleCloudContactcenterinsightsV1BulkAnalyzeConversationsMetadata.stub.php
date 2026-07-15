@@ -21,144 +21,153 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1BulkAnalyzeConversationsMetadata extends \Google\Collection
-{
-    protected $collection_key = 'partialErrors';
-    /**
-     * The number of requested analyses that have completed successfully so far.
-     *
-     * @var int
-     */
-    public $completedAnalysesCount;
-    /**
-     * The time the operation was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * The time the operation finished running.
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * The number of requested analyses that have failed so far.
-     *
-     * @var int
-     */
-    public $failedAnalysesCount;
-    protected $partialErrorsType = GoogleRpcStatus::class;
-    protected $partialErrorsDataType = 'array';
-    protected $requestType = GoogleCloudContactcenterinsightsV1BulkAnalyzeConversationsRequest::class;
-    protected $requestDataType = '';
-    /**
-     * Total number of analyses requested. Computed by the number of conversations
-     * returned by `filter` multiplied by `analysis_percentage` in the request.
-     *
-     * @var int
-     */
-    public $totalRequestedAnalysesCount;
-    /**
-     * The number of requested analyses that have completed successfully so far.
-     *
-     * @param int $completedAnalysesCount
-     */
-    public function setCompletedAnalysesCount($completedAnalysesCount)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1BulkAnalyzeConversationsMetadata extends \Google\Collection
     {
+        protected $collection_key = 'partialErrors';
+        /**
+         * The number of requested analyses that have completed successfully so far.
+         *
+         * @var int
+         */
+        public $completedAnalysesCount;
+        /**
+         * The time the operation was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * The time the operation finished running.
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * The number of requested analyses that have failed so far.
+         *
+         * @var int
+         */
+        public $failedAnalysesCount;
+        protected $partialErrorsType = GoogleRpcStatus::class;
+        protected $partialErrorsDataType = 'array';
+        protected $requestType = GoogleCloudContactcenterinsightsV1BulkAnalyzeConversationsRequest::class;
+        protected $requestDataType = '';
+        /**
+         * Total number of analyses requested. Computed by the number of conversations
+         * returned by `filter` multiplied by `analysis_percentage` in the request.
+         *
+         * @var int
+         */
+        public $totalRequestedAnalysesCount;
+        /**
+         * The number of requested analyses that have completed successfully so far.
+         *
+         * @param int $completedAnalysesCount
+         */
+        public function setCompletedAnalysesCount($completedAnalysesCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCompletedAnalysesCount()
+        {
+        }
+        /**
+         * The time the operation was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * The time the operation finished running.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * The number of requested analyses that have failed so far.
+         *
+         * @param int $failedAnalysesCount
+         */
+        public function setFailedAnalysesCount($failedAnalysesCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getFailedAnalysesCount()
+        {
+        }
+        /**
+         * Output only. Partial errors during bulk analyze operation that might cause
+         * the operation output to be incomplete.
+         *
+         * @param GoogleRpcStatus[] $partialErrors
+         */
+        public function setPartialErrors($partialErrors)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus[]
+         */
+        public function getPartialErrors()
+        {
+        }
+        /**
+         * The original request for bulk analyze.
+         *
+         * @param GoogleCloudContactcenterinsightsV1BulkAnalyzeConversationsRequest $request
+         */
+        public function setRequest(GoogleCloudContactcenterinsightsV1BulkAnalyzeConversationsRequest $request)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1BulkAnalyzeConversationsRequest
+         */
+        public function getRequest()
+        {
+        }
+        /**
+         * Total number of analyses requested. Computed by the number of conversations
+         * returned by `filter` multiplied by `analysis_percentage` in the request.
+         *
+         * @param int $totalRequestedAnalysesCount
+         */
+        public function setTotalRequestedAnalysesCount($totalRequestedAnalysesCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalRequestedAnalysesCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1BulkAnalyzeConversationsMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCompletedAnalysesCount()
-    {
-    }
-    /**
-     * The time the operation was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * The time the operation finished running.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndTime()
-    {
-    }
-    /**
-     * The number of requested analyses that have failed so far.
-     *
-     * @param int $failedAnalysesCount
-     */
-    public function setFailedAnalysesCount($failedAnalysesCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getFailedAnalysesCount()
-    {
-    }
-    /**
-     * Output only. Partial errors during bulk analyze operation that might cause
-     * the operation output to be incomplete.
-     *
-     * @param GoogleRpcStatus[] $partialErrors
-     */
-    public function setPartialErrors($partialErrors)
-    {
-    }
-    /**
-     * @return GoogleRpcStatus[]
-     */
-    public function getPartialErrors()
-    {
-    }
-    /**
-     * The original request for bulk analyze.
-     *
-     * @param GoogleCloudContactcenterinsightsV1BulkAnalyzeConversationsRequest $request
-     */
-    public function setRequest(GoogleCloudContactcenterinsightsV1BulkAnalyzeConversationsRequest $request)
-    {
-    }
-    /**
-     * @return GoogleCloudContactcenterinsightsV1BulkAnalyzeConversationsRequest
-     */
-    public function getRequest()
-    {
-    }
-    /**
-     * Total number of analyses requested. Computed by the number of conversations
-     * returned by `filter` multiplied by `analysis_percentage` in the request.
-     *
-     * @param int $totalRequestedAnalysesCount
-     */
-    public function setTotalRequestedAnalysesCount($totalRequestedAnalysesCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalRequestedAnalysesCount()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1BulkAnalyzeConversationsMetadata extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1BulkAnalyzeConversationsMetadata
     {
     }
 }

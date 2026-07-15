@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteMessageId extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $messageId;
-    protected $parentIdType = AppsDynamiteMessageParentId::class;
-    protected $parentIdDataType = '';
-    /**
-     * @param string
-     */
-    public function setMessageId($messageId)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteMessageId extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $messageId;
+        protected $parentIdType = AppsDynamiteMessageParentId::class;
+        protected $parentIdDataType = '';
+        /**
+         * @param string
+         */
+        public function setMessageId($messageId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessageId()
+        {
+        }
+        /**
+         * @param AppsDynamiteMessageParentId
+         */
+        public function setParentId(AppsDynamiteMessageParentId $parentId)
+        {
+        }
+        /**
+         * @return AppsDynamiteMessageParentId
+         */
+        public function getParentId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteMessageId registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMessageId()
-    {
-    }
-    /**
-     * @param AppsDynamiteMessageParentId
-     */
-    public function setParentId(AppsDynamiteMessageParentId $parentId)
-    {
-    }
-    /**
-     * @return AppsDynamiteMessageParentId
-     */
-    public function getParentId()
+    class Google_Service_CloudSearch_AppsDynamiteMessageId extends \Google\Service\CloudSearch\AppsDynamiteMessageId
     {
     }
 }

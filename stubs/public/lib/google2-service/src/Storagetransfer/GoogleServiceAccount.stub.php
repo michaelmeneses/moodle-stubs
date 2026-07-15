@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storagetransfer;
-
-class GoogleServiceAccount extends \Google\Model
-{
-    /**
-     * Email address of the service account.
-     *
-     * @var string
-     */
-    public $accountEmail;
-    /**
-     * Unique identifier for the service account.
-     *
-     * @var string
-     */
-    public $subjectId;
-    /**
-     * Email address of the service account.
-     *
-     * @param string $accountEmail
-     */
-    public function setAccountEmail($accountEmail)
+namespace Google\Service\Storagetransfer {
+    class GoogleServiceAccount extends \Google\Model
     {
+        /**
+         * Email address of the service account.
+         *
+         * @var string
+         */
+        public $accountEmail;
+        /**
+         * Unique identifier for the service account.
+         *
+         * @var string
+         */
+        public $subjectId;
+        /**
+         * Email address of the service account.
+         *
+         * @param string $accountEmail
+         */
+        public function setAccountEmail($accountEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccountEmail()
+        {
+        }
+        /**
+         * Unique identifier for the service account.
+         *
+         * @param string $subjectId
+         */
+        public function setSubjectId($subjectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubjectId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Storagetransfer\GoogleServiceAccount registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountEmail()
-    {
-    }
-    /**
-     * Unique identifier for the service account.
-     *
-     * @param string $subjectId
-     */
-    public function setSubjectId($subjectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubjectId()
+    class Google_Service_Storagetransfer_GoogleServiceAccount extends \Google\Service\Storagetransfer\GoogleServiceAccount
     {
     }
 }

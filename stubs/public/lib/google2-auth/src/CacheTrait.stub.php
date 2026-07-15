@@ -23,6 +23,7 @@
  */
 namespace Google\Auth;
 
+use Psr\Cache\CacheItemPoolInterface;
 trait CacheTrait
 {
     /**

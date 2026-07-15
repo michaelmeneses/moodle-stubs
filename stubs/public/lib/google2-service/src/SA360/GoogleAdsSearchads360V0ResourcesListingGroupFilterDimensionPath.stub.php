@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionPath extends \Google\Collection
-{
-    protected $collection_key = 'dimensions';
-    protected $dimensionsType = GoogleAdsSearchads360V0ResourcesListingGroupFilterDimension::class;
-    protected $dimensionsDataType = 'array';
-    /**
-     * Output only. The complete path of dimensions through the listing group
-     * filter hierarchy (excluding the root node) to this listing group filter.
-     *
-     * @param GoogleAdsSearchads360V0ResourcesListingGroupFilterDimension[] $dimensions
-     */
-    public function setDimensions($dimensions)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionPath extends \Google\Collection
     {
+        protected $collection_key = 'dimensions';
+        protected $dimensionsType = GoogleAdsSearchads360V0ResourcesListingGroupFilterDimension::class;
+        protected $dimensionsDataType = 'array';
+        /**
+         * Output only. The complete path of dimensions through the listing group
+         * filter hierarchy (excluding the root node) to this listing group filter.
+         *
+         * @param GoogleAdsSearchads360V0ResourcesListingGroupFilterDimension[] $dimensions
+         */
+        public function setDimensions($dimensions)
+        {
+        }
+        /**
+         * @return GoogleAdsSearchads360V0ResourcesListingGroupFilterDimension[]
+         */
+        public function getDimensions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAdsSearchads360V0ResourcesListingGroupFilterDimension[]
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionPath registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDimensions()
+    class Google_Service_SA360_GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionPath extends \Google\Service\SA360\GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionPath
     {
     }
 }

@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class YoutubeAndPartnersThirdPartyMeasurementSettings extends \Google\Collection
-{
-    protected $collection_key = 'viewabilityVendorConfigs';
-    protected $brandLiftVendorConfigsType = ThirdPartyVendorConfig::class;
-    protected $brandLiftVendorConfigsDataType = 'array';
-    protected $brandSafetyVendorConfigsType = ThirdPartyVendorConfig::class;
-    protected $brandSafetyVendorConfigsDataType = 'array';
-    protected $reachVendorConfigsType = ThirdPartyVendorConfig::class;
-    protected $reachVendorConfigsDataType = 'array';
-    protected $viewabilityVendorConfigsType = ThirdPartyVendorConfig::class;
-    protected $viewabilityVendorConfigsDataType = 'array';
-    /**
-     * @param ThirdPartyVendorConfig[]
-     */
-    public function setBrandLiftVendorConfigs($brandLiftVendorConfigs)
+namespace Google\Service\DisplayVideo {
+    class YoutubeAndPartnersThirdPartyMeasurementSettings extends \Google\Collection
     {
+        protected $collection_key = 'viewabilityVendorConfigs';
+        protected $brandLiftVendorConfigsType = ThirdPartyVendorConfig::class;
+        protected $brandLiftVendorConfigsDataType = 'array';
+        protected $brandSafetyVendorConfigsType = ThirdPartyVendorConfig::class;
+        protected $brandSafetyVendorConfigsDataType = 'array';
+        protected $reachVendorConfigsType = ThirdPartyVendorConfig::class;
+        protected $reachVendorConfigsDataType = 'array';
+        protected $viewabilityVendorConfigsType = ThirdPartyVendorConfig::class;
+        protected $viewabilityVendorConfigsDataType = 'array';
+        /**
+         * @param ThirdPartyVendorConfig[]
+         */
+        public function setBrandLiftVendorConfigs($brandLiftVendorConfigs)
+        {
+        }
+        /**
+         * @return ThirdPartyVendorConfig[]
+         */
+        public function getBrandLiftVendorConfigs()
+        {
+        }
+        /**
+         * @param ThirdPartyVendorConfig[]
+         */
+        public function setBrandSafetyVendorConfigs($brandSafetyVendorConfigs)
+        {
+        }
+        /**
+         * @return ThirdPartyVendorConfig[]
+         */
+        public function getBrandSafetyVendorConfigs()
+        {
+        }
+        /**
+         * @param ThirdPartyVendorConfig[]
+         */
+        public function setReachVendorConfigs($reachVendorConfigs)
+        {
+        }
+        /**
+         * @return ThirdPartyVendorConfig[]
+         */
+        public function getReachVendorConfigs()
+        {
+        }
+        /**
+         * @param ThirdPartyVendorConfig[]
+         */
+        public function setViewabilityVendorConfigs($viewabilityVendorConfigs)
+        {
+        }
+        /**
+         * @return ThirdPartyVendorConfig[]
+         */
+        public function getViewabilityVendorConfigs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ThirdPartyVendorConfig[]
+     * Runtime class alias of \Google\Service\DisplayVideo\YoutubeAndPartnersThirdPartyMeasurementSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBrandLiftVendorConfigs()
-    {
-    }
-    /**
-     * @param ThirdPartyVendorConfig[]
-     */
-    public function setBrandSafetyVendorConfigs($brandSafetyVendorConfigs)
-    {
-    }
-    /**
-     * @return ThirdPartyVendorConfig[]
-     */
-    public function getBrandSafetyVendorConfigs()
-    {
-    }
-    /**
-     * @param ThirdPartyVendorConfig[]
-     */
-    public function setReachVendorConfigs($reachVendorConfigs)
-    {
-    }
-    /**
-     * @return ThirdPartyVendorConfig[]
-     */
-    public function getReachVendorConfigs()
-    {
-    }
-    /**
-     * @param ThirdPartyVendorConfig[]
-     */
-    public function setViewabilityVendorConfigs($viewabilityVendorConfigs)
-    {
-    }
-    /**
-     * @return ThirdPartyVendorConfig[]
-     */
-    public function getViewabilityVendorConfigs()
+    class Google_Service_DisplayVideo_YoutubeAndPartnersThirdPartyMeasurementSettings extends \Google\Service\DisplayVideo\YoutubeAndPartnersThirdPartyMeasurementSettings
     {
     }
 }

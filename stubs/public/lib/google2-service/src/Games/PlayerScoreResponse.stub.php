@@ -21,133 +21,142 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Games;
-
-class PlayerScoreResponse extends \Google\Collection
-{
-    protected $collection_key = 'unbeatenScores';
-    /**
-     * The time spans where the submitted score is better than the existing score
-     * for that time span.
-     *
-     * @var string[]
-     */
-    public $beatenScoreTimeSpans;
-    /**
-     * The formatted value of the submitted score.
-     *
-     * @var string
-     */
-    public $formattedScore;
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#playerScoreResponse`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The leaderboard ID that this score was submitted to.
-     *
-     * @var string
-     */
-    public $leaderboardId;
-    /**
-     * Additional information about this score. Values will contain no more than
-     * 64 URI-safe characters as defined by section 2.3 of RFC 3986.
-     *
-     * @var string
-     */
-    public $scoreTag;
-    protected $unbeatenScoresType = PlayerScore::class;
-    protected $unbeatenScoresDataType = 'array';
-    /**
-     * The time spans where the submitted score is better than the existing score
-     * for that time span.
-     *
-     * @param string[] $beatenScoreTimeSpans
-     */
-    public function setBeatenScoreTimeSpans($beatenScoreTimeSpans)
+namespace Google\Service\Games {
+    class PlayerScoreResponse extends \Google\Collection
     {
+        protected $collection_key = 'unbeatenScores';
+        /**
+         * The time spans where the submitted score is better than the existing score
+         * for that time span.
+         *
+         * @var string[]
+         */
+        public $beatenScoreTimeSpans;
+        /**
+         * The formatted value of the submitted score.
+         *
+         * @var string
+         */
+        public $formattedScore;
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#playerScoreResponse`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The leaderboard ID that this score was submitted to.
+         *
+         * @var string
+         */
+        public $leaderboardId;
+        /**
+         * Additional information about this score. Values will contain no more than
+         * 64 URI-safe characters as defined by section 2.3 of RFC 3986.
+         *
+         * @var string
+         */
+        public $scoreTag;
+        protected $unbeatenScoresType = PlayerScore::class;
+        protected $unbeatenScoresDataType = 'array';
+        /**
+         * The time spans where the submitted score is better than the existing score
+         * for that time span.
+         *
+         * @param string[] $beatenScoreTimeSpans
+         */
+        public function setBeatenScoreTimeSpans($beatenScoreTimeSpans)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getBeatenScoreTimeSpans()
+        {
+        }
+        /**
+         * The formatted value of the submitted score.
+         *
+         * @param string $formattedScore
+         */
+        public function setFormattedScore($formattedScore)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFormattedScore()
+        {
+        }
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#playerScoreResponse`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The leaderboard ID that this score was submitted to.
+         *
+         * @param string $leaderboardId
+         */
+        public function setLeaderboardId($leaderboardId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLeaderboardId()
+        {
+        }
+        /**
+         * Additional information about this score. Values will contain no more than
+         * 64 URI-safe characters as defined by section 2.3 of RFC 3986.
+         *
+         * @param string $scoreTag
+         */
+        public function setScoreTag($scoreTag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScoreTag()
+        {
+        }
+        /**
+         * The scores in time spans that have not been beaten. As an example, the
+         * submitted score may be better than the player's `DAILY` score, but not
+         * better than the player's scores for the `WEEKLY` or `ALL_TIME` time spans.
+         *
+         * @param PlayerScore[] $unbeatenScores
+         */
+        public function setUnbeatenScores($unbeatenScores)
+        {
+        }
+        /**
+         * @return PlayerScore[]
+         */
+        public function getUnbeatenScores()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Games\PlayerScoreResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBeatenScoreTimeSpans()
-    {
-    }
-    /**
-     * The formatted value of the submitted score.
-     *
-     * @param string $formattedScore
-     */
-    public function setFormattedScore($formattedScore)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFormattedScore()
-    {
-    }
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#playerScoreResponse`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The leaderboard ID that this score was submitted to.
-     *
-     * @param string $leaderboardId
-     */
-    public function setLeaderboardId($leaderboardId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLeaderboardId()
-    {
-    }
-    /**
-     * Additional information about this score. Values will contain no more than
-     * 64 URI-safe characters as defined by section 2.3 of RFC 3986.
-     *
-     * @param string $scoreTag
-     */
-    public function setScoreTag($scoreTag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getScoreTag()
-    {
-    }
-    /**
-     * The scores in time spans that have not been beaten. As an example, the
-     * submitted score may be better than the player's `DAILY` score, but not
-     * better than the player's scores for the `WEEKLY` or `ALL_TIME` time spans.
-     *
-     * @param PlayerScore[] $unbeatenScores
-     */
-    public function setUnbeatenScores($unbeatenScores)
-    {
-    }
-    /**
-     * @return PlayerScore[]
-     */
-    public function getUnbeatenScores()
+    class Google_Service_Games_PlayerScoreResponse extends \Google\Service\Games\PlayerScoreResponse
     {
     }
 }

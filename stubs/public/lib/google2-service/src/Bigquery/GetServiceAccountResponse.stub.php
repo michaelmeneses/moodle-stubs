@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class GetServiceAccountResponse extends \Google\Model
-{
-    /**
-     * The service account email address.
-     *
-     * @var string
-     */
-    public $email;
-    /**
-     * The resource type of the response.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The service account email address.
-     *
-     * @param string $email
-     */
-    public function setEmail($email)
+namespace Google\Service\Bigquery {
+    class GetServiceAccountResponse extends \Google\Model
     {
+        /**
+         * The service account email address.
+         *
+         * @var string
+         */
+        public $email;
+        /**
+         * The resource type of the response.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The service account email address.
+         *
+         * @param string $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
+        /**
+         * The resource type of the response.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Bigquery\GetServiceAccountResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmail()
-    {
-    }
-    /**
-     * The resource type of the response.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_Bigquery_GetServiceAccountResponse extends \Google\Service\Bigquery\GetServiceAccountResponse
     {
     }
 }

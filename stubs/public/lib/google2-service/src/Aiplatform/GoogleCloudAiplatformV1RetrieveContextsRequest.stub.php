@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1RetrieveContextsRequest extends \Google\Model
-{
-    protected $queryType = GoogleCloudAiplatformV1RagQuery::class;
-    protected $queryDataType = '';
-    protected $vertexRagStoreType = GoogleCloudAiplatformV1RetrieveContextsRequestVertexRagStore::class;
-    protected $vertexRagStoreDataType = '';
-    /**
-     * Required. Single RAG retrieve query.
-     *
-     * @param GoogleCloudAiplatformV1RagQuery $query
-     */
-    public function setQuery(GoogleCloudAiplatformV1RagQuery $query)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1RetrieveContextsRequest extends \Google\Model
     {
+        protected $queryType = GoogleCloudAiplatformV1RagQuery::class;
+        protected $queryDataType = '';
+        protected $vertexRagStoreType = GoogleCloudAiplatformV1RetrieveContextsRequestVertexRagStore::class;
+        protected $vertexRagStoreDataType = '';
+        /**
+         * Required. Single RAG retrieve query.
+         *
+         * @param GoogleCloudAiplatformV1RagQuery $query
+         */
+        public function setQuery(GoogleCloudAiplatformV1RagQuery $query)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1RagQuery
+         */
+        public function getQuery()
+        {
+        }
+        /**
+         * The data source for Vertex RagStore.
+         *
+         * @param GoogleCloudAiplatformV1RetrieveContextsRequestVertexRagStore $vertexRagStore
+         */
+        public function setVertexRagStore(GoogleCloudAiplatformV1RetrieveContextsRequestVertexRagStore $vertexRagStore)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1RetrieveContextsRequestVertexRagStore
+         */
+        public function getVertexRagStore()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1RagQuery
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1RetrieveContextsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getQuery()
-    {
-    }
-    /**
-     * The data source for Vertex RagStore.
-     *
-     * @param GoogleCloudAiplatformV1RetrieveContextsRequestVertexRagStore $vertexRagStore
-     */
-    public function setVertexRagStore(GoogleCloudAiplatformV1RetrieveContextsRequestVertexRagStore $vertexRagStore)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1RetrieveContextsRequestVertexRagStore
-     */
-    public function getVertexRagStore()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1RetrieveContextsRequest extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1RetrieveContextsRequest
     {
     }
 }

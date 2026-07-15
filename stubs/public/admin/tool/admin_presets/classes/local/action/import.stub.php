@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_admin_presets\local\action;
 
+use tool_admin_presets\form\import_form;
 /**
  * This class extends base class and handles import function.
  *

@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkServices;
-
-class TcpRouteRouteMatch extends \Google\Model
-{
-    /**
-     * Required. Must be specified in the CIDR range format. A CIDR range consists
-     * of an IP Address and a prefix length to construct the subnet mask. By
-     * default, the prefix length is 32 (i.e. matches a single IP address). Only
-     * IPV4 addresses are supported. Examples: "10.0.0.1" - matches against this
-     * exact IP address. "10.0.0.0/8" - matches against any IP address within the
-     * 10.0.0.0 subnet and 255.255.255.0 mask. "0.0.0.0/0" - matches against any
-     * IP address'.
-     *
-     * @var string
-     */
-    public $address;
-    /**
-     * Required. Specifies the destination port to match against.
-     *
-     * @var string
-     */
-    public $port;
-    /**
-     * Required. Must be specified in the CIDR range format. A CIDR range consists
-     * of an IP Address and a prefix length to construct the subnet mask. By
-     * default, the prefix length is 32 (i.e. matches a single IP address). Only
-     * IPV4 addresses are supported. Examples: "10.0.0.1" - matches against this
-     * exact IP address. "10.0.0.0/8" - matches against any IP address within the
-     * 10.0.0.0 subnet and 255.255.255.0 mask. "0.0.0.0/0" - matches against any
-     * IP address'.
-     *
-     * @param string $address
-     */
-    public function setAddress($address)
+namespace Google\Service\NetworkServices {
+    class TcpRouteRouteMatch extends \Google\Model
     {
+        /**
+         * Required. Must be specified in the CIDR range format. A CIDR range consists
+         * of an IP Address and a prefix length to construct the subnet mask. By
+         * default, the prefix length is 32 (i.e. matches a single IP address). Only
+         * IPV4 addresses are supported. Examples: "10.0.0.1" - matches against this
+         * exact IP address. "10.0.0.0/8" - matches against any IP address within the
+         * 10.0.0.0 subnet and 255.255.255.0 mask. "0.0.0.0/0" - matches against any
+         * IP address'.
+         *
+         * @var string
+         */
+        public $address;
+        /**
+         * Required. Specifies the destination port to match against.
+         *
+         * @var string
+         */
+        public $port;
+        /**
+         * Required. Must be specified in the CIDR range format. A CIDR range consists
+         * of an IP Address and a prefix length to construct the subnet mask. By
+         * default, the prefix length is 32 (i.e. matches a single IP address). Only
+         * IPV4 addresses are supported. Examples: "10.0.0.1" - matches against this
+         * exact IP address. "10.0.0.0/8" - matches against any IP address within the
+         * 10.0.0.0 subnet and 255.255.255.0 mask. "0.0.0.0/0" - matches against any
+         * IP address'.
+         *
+         * @param string $address
+         */
+        public function setAddress($address)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAddress()
+        {
+        }
+        /**
+         * Required. Specifies the destination port to match against.
+         *
+         * @param string $port
+         */
+        public function setPort($port)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPort()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetworkServices\TcpRouteRouteMatch registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddress()
-    {
-    }
-    /**
-     * Required. Specifies the destination port to match against.
-     *
-     * @param string $port
-     */
-    public function setPort($port)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPort()
+    class Google_Service_NetworkServices_TcpRouteRouteMatch extends \Google\Service\NetworkServices\TcpRouteRouteMatch
     {
     }
 }

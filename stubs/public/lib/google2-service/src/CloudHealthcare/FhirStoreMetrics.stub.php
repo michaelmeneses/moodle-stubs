@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class FhirStoreMetrics extends \Google\Collection
-{
-    protected $collection_key = 'metrics';
-    protected $metricsType = FhirStoreMetric::class;
-    protected $metricsDataType = 'array';
-    /**
-     * The resource name of the FHIR store to get metrics for, in the format
-     * `projects/{project_id}/datasets/{dataset_id}/fhirStores/{fhir_store_id}`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * List of FhirStoreMetric by resource type.
-     *
-     * @param FhirStoreMetric[] $metrics
-     */
-    public function setMetrics($metrics)
+namespace Google\Service\CloudHealthcare {
+    class FhirStoreMetrics extends \Google\Collection
     {
+        protected $collection_key = 'metrics';
+        protected $metricsType = FhirStoreMetric::class;
+        protected $metricsDataType = 'array';
+        /**
+         * The resource name of the FHIR store to get metrics for, in the format
+         * `projects/{project_id}/datasets/{dataset_id}/fhirStores/{fhir_store_id}`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * List of FhirStoreMetric by resource type.
+         *
+         * @param FhirStoreMetric[] $metrics
+         */
+        public function setMetrics($metrics)
+        {
+        }
+        /**
+         * @return FhirStoreMetric[]
+         */
+        public function getMetrics()
+        {
+        }
+        /**
+         * The resource name of the FHIR store to get metrics for, in the format
+         * `projects/{project_id}/datasets/{dataset_id}/fhirStores/{fhir_store_id}`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FhirStoreMetric[]
+     * Runtime class alias of \Google\Service\CloudHealthcare\FhirStoreMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetrics()
-    {
-    }
-    /**
-     * The resource name of the FHIR store to get metrics for, in the format
-     * `projects/{project_id}/datasets/{dataset_id}/fhirStores/{fhir_store_id}`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_CloudHealthcare_FhirStoreMetrics extends \Google\Service\CloudHealthcare\FhirStoreMetrics
     {
     }
 }

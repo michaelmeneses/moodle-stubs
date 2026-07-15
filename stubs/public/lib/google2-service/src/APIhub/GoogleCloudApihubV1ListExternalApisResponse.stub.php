@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1ListExternalApisResponse extends \Google\Collection
-{
-    protected $collection_key = 'externalApis';
-    protected $externalApisType = GoogleCloudApihubV1ExternalApi::class;
-    protected $externalApisDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The External API resources present in the API hub.
-     *
-     * @param GoogleCloudApihubV1ExternalApi[] $externalApis
-     */
-    public function setExternalApis($externalApis)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1ListExternalApisResponse extends \Google\Collection
     {
+        protected $collection_key = 'externalApis';
+        protected $externalApisType = GoogleCloudApihubV1ExternalApi::class;
+        protected $externalApisDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The External API resources present in the API hub.
+         *
+         * @param GoogleCloudApihubV1ExternalApi[] $externalApis
+         */
+        public function setExternalApis($externalApis)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1ExternalApi[]
+         */
+        public function getExternalApis()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApihubV1ExternalApi[]
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1ListExternalApisResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExternalApis()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_APIhub_GoogleCloudApihubV1ListExternalApisResponse extends \Google\Service\APIhub\GoogleCloudApihubV1ListExternalApisResponse
     {
     }
 }

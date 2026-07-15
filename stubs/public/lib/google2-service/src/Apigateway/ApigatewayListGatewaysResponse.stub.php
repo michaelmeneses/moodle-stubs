@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigateway;
-
-class ApigatewayListGatewaysResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachableLocations';
-    protected $gatewaysType = ApigatewayGateway::class;
-    protected $gatewaysDataType = 'array';
-    /**
-     * Next page token.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachableLocations;
-    /**
-     * Gateways.
-     *
-     * @param ApigatewayGateway[] $gateways
-     */
-    public function setGateways($gateways)
+namespace Google\Service\Apigateway {
+    class ApigatewayListGatewaysResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachableLocations';
+        protected $gatewaysType = ApigatewayGateway::class;
+        protected $gatewaysDataType = 'array';
+        /**
+         * Next page token.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachableLocations;
+        /**
+         * Gateways.
+         *
+         * @param ApigatewayGateway[] $gateways
+         */
+        public function setGateways($gateways)
+        {
+        }
+        /**
+         * @return ApigatewayGateway[]
+         */
+        public function getGateways()
+        {
+        }
+        /**
+         * Next page token.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Locations that could not be reached.
+         *
+         * @param string[] $unreachableLocations
+         */
+        public function setUnreachableLocations($unreachableLocations)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachableLocations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ApigatewayGateway[]
+     * Runtime class alias of \Google\Service\Apigateway\ApigatewayListGatewaysResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGateways()
-    {
-    }
-    /**
-     * Next page token.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Locations that could not be reached.
-     *
-     * @param string[] $unreachableLocations
-     */
-    public function setUnreachableLocations($unreachableLocations)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachableLocations()
+    class Google_Service_Apigateway_ApigatewayListGatewaysResponse extends \Google\Service\Apigateway\ApigatewayListGatewaysResponse
     {
     }
 }

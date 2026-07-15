@@ -21,73 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Looker\Resource;
-
-/**
- * The "backups" collection of methods.
- * Typical usage is:
- *  <code>
- *   $lookerService = new Google\Service\Looker(...);
- *   $backups = $lookerService->projects_locations_instances_backups;
- *  </code>
- */
-class ProjectsLocationsInstancesBackups extends \Google\Service\Resource
-{
+namespace Google\Service\Looker\Resource {
+    use Google\Service\Looker\InstanceBackup;
+    use Google\Service\Looker\ListInstanceBackupsResponse;
+    use Google\Service\Looker\Operation;
     /**
-     * Backup Looker instance. (backups.create)
-     *
-     * @param string $parent Required. Format:
-     * projects/{project}/locations/{location}/instances/{instance}
-     * @param InstanceBackup $postBody
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * The "backups" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $lookerService = new Google\Service\Looker(...);
+     *   $backups = $lookerService->projects_locations_instances_backups;
+     *  </code>
      */
-    public function create($parent, InstanceBackup $postBody, $optParams = [])
+    class ProjectsLocationsInstancesBackups extends \Google\Service\Resource
     {
+        /**
+         * Backup Looker instance. (backups.create)
+         *
+         * @param string $parent Required. Format:
+         * projects/{project}/locations/{location}/instances/{instance}
+         * @param InstanceBackup $postBody
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, InstanceBackup $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Delete backup. (backups.delete)
+         *
+         * @param string $name Required. Format:
+         * projects/{project}/locations/{location}/instances/{instance}/backups/{backup}
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * (backups.get)
+         *
+         * @param string $name Required. Format: `projects/{project}/locations/{location
+         * }/instances/{instance}/backups/{backup}`.
+         * @param array $optParams Optional parameters.
+         * @return InstanceBackup
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * List backups of Looker instance.
+         * (backups.listProjectsLocationsInstancesBackups)
+         *
+         * @param string $parent Required. Format:
+         * projects/{project}/locations/{location}/instances/{instance}.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string orderBy Sort results. Default order is "create_time desc".
+         * Other supported fields are "state" and "expire_time".
+         * https://google.aip.dev/132#ordering
+         * @opt_param int pageSize The maximum number of instances to return.
+         * @opt_param string pageToken A page token received from a previous
+         * ListInstances request.
+         * @return ListInstanceBackupsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsInstancesBackups($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Delete backup. (backups.delete)
-     *
-     * @param string $name Required. Format:
-     * projects/{project}/locations/{location}/instances/{instance}/backups/{backup}
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Looker\Resource\ProjectsLocationsInstancesBackups registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * (backups.get)
-     *
-     * @param string $name Required. Format: `projects/{project}/locations/{location
-     * }/instances/{instance}/backups/{backup}`.
-     * @param array $optParams Optional parameters.
-     * @return InstanceBackup
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * List backups of Looker instance.
-     * (backups.listProjectsLocationsInstancesBackups)
-     *
-     * @param string $parent Required. Format:
-     * projects/{project}/locations/{location}/instances/{instance}.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string orderBy Sort results. Default order is "create_time desc".
-     * Other supported fields are "state" and "expire_time".
-     * https://google.aip.dev/132#ordering
-     * @opt_param int pageSize The maximum number of instances to return.
-     * @opt_param string pageToken A page token received from a previous
-     * ListInstances request.
-     * @return ListInstanceBackupsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsInstancesBackups($parent, $optParams = [])
+    class Google_Service_Looker_Resource_ProjectsLocationsInstancesBackups extends \Google\Service\Looker\Resource\ProjectsLocationsInstancesBackups
     {
     }
 }

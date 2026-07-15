@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class UpgradeSettings extends \Google\Model
-{
-    /**
-     * Default value if unset. GKE internally defaults the update strategy to
-     * SURGE for unspecified strategies.
-     */
-    public const STRATEGY_NODE_POOL_UPDATE_STRATEGY_UNSPECIFIED = 'NODE_POOL_UPDATE_STRATEGY_UNSPECIFIED';
-    /**
-     * blue-green upgrade.
-     */
-    public const STRATEGY_BLUE_GREEN = 'BLUE_GREEN';
-    /**
-     * SURGE is the traditional way of upgrade a node pool. max_surge and
-     * max_unavailable determines the level of upgrade parallelism.
-     */
-    public const STRATEGY_SURGE = 'SURGE';
-    protected $blueGreenSettingsType = BlueGreenSettings::class;
-    protected $blueGreenSettingsDataType = '';
-    /**
-     * The maximum number of nodes that can be created beyond the current size of
-     * the node pool during the upgrade process.
-     *
-     * @var int
-     */
-    public $maxSurge;
-    /**
-     * The maximum number of nodes that can be simultaneously unavailable during
-     * the upgrade process. A node is considered available if its status is Ready.
-     *
-     * @var int
-     */
-    public $maxUnavailable;
-    /**
-     * Update strategy of the node pool.
-     *
-     * @var string
-     */
-    public $strategy;
-    /**
-     * Settings for blue-green upgrade strategy.
-     *
-     * @param BlueGreenSettings $blueGreenSettings
-     */
-    public function setBlueGreenSettings(BlueGreenSettings $blueGreenSettings)
+namespace Google\Service\Container {
+    class UpgradeSettings extends \Google\Model
     {
+        /**
+         * Default value if unset. GKE internally defaults the update strategy to
+         * SURGE for unspecified strategies.
+         */
+        public const STRATEGY_NODE_POOL_UPDATE_STRATEGY_UNSPECIFIED = 'NODE_POOL_UPDATE_STRATEGY_UNSPECIFIED';
+        /**
+         * blue-green upgrade.
+         */
+        public const STRATEGY_BLUE_GREEN = 'BLUE_GREEN';
+        /**
+         * SURGE is the traditional way of upgrade a node pool. max_surge and
+         * max_unavailable determines the level of upgrade parallelism.
+         */
+        public const STRATEGY_SURGE = 'SURGE';
+        protected $blueGreenSettingsType = BlueGreenSettings::class;
+        protected $blueGreenSettingsDataType = '';
+        /**
+         * The maximum number of nodes that can be created beyond the current size of
+         * the node pool during the upgrade process.
+         *
+         * @var int
+         */
+        public $maxSurge;
+        /**
+         * The maximum number of nodes that can be simultaneously unavailable during
+         * the upgrade process. A node is considered available if its status is Ready.
+         *
+         * @var int
+         */
+        public $maxUnavailable;
+        /**
+         * Update strategy of the node pool.
+         *
+         * @var string
+         */
+        public $strategy;
+        /**
+         * Settings for blue-green upgrade strategy.
+         *
+         * @param BlueGreenSettings $blueGreenSettings
+         */
+        public function setBlueGreenSettings(BlueGreenSettings $blueGreenSettings)
+        {
+        }
+        /**
+         * @return BlueGreenSettings
+         */
+        public function getBlueGreenSettings()
+        {
+        }
+        /**
+         * The maximum number of nodes that can be created beyond the current size of
+         * the node pool during the upgrade process.
+         *
+         * @param int $maxSurge
+         */
+        public function setMaxSurge($maxSurge)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxSurge()
+        {
+        }
+        /**
+         * The maximum number of nodes that can be simultaneously unavailable during
+         * the upgrade process. A node is considered available if its status is Ready.
+         *
+         * @param int $maxUnavailable
+         */
+        public function setMaxUnavailable($maxUnavailable)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxUnavailable()
+        {
+        }
+        /**
+         * Update strategy of the node pool.
+         *
+         * Accepted values: NODE_POOL_UPDATE_STRATEGY_UNSPECIFIED, BLUE_GREEN, SURGE
+         *
+         * @param self::STRATEGY_* $strategy
+         */
+        public function setStrategy($strategy)
+        {
+        }
+        /**
+         * @return self::STRATEGY_*
+         */
+        public function getStrategy()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BlueGreenSettings
+     * Runtime class alias of \Google\Service\Container\UpgradeSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBlueGreenSettings()
-    {
-    }
-    /**
-     * The maximum number of nodes that can be created beyond the current size of
-     * the node pool during the upgrade process.
-     *
-     * @param int $maxSurge
-     */
-    public function setMaxSurge($maxSurge)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxSurge()
-    {
-    }
-    /**
-     * The maximum number of nodes that can be simultaneously unavailable during
-     * the upgrade process. A node is considered available if its status is Ready.
-     *
-     * @param int $maxUnavailable
-     */
-    public function setMaxUnavailable($maxUnavailable)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxUnavailable()
-    {
-    }
-    /**
-     * Update strategy of the node pool.
-     *
-     * Accepted values: NODE_POOL_UPDATE_STRATEGY_UNSPECIFIED, BLUE_GREEN, SURGE
-     *
-     * @param self::STRATEGY_* $strategy
-     */
-    public function setStrategy($strategy)
-    {
-    }
-    /**
-     * @return self::STRATEGY_*
-     */
-    public function getStrategy()
+    class Google_Service_Container_UpgradeSettings extends \Google\Service\Container\UpgradeSettings
     {
     }
 }

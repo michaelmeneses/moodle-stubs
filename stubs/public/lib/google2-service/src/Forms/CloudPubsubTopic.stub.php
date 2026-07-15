@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Forms;
-
-class CloudPubsubTopic extends \Google\Model
-{
-    /**
-     * Required. A fully qualified Pub/Sub topic name to publish the events to.
-     * This topic must be owned by the calling project and already exist in
-     * Pub/Sub.
-     *
-     * @var string
-     */
-    public $topicName;
-    /**
-     * Required. A fully qualified Pub/Sub topic name to publish the events to.
-     * This topic must be owned by the calling project and already exist in
-     * Pub/Sub.
-     *
-     * @param string $topicName
-     */
-    public function setTopicName($topicName)
+namespace Google\Service\Forms {
+    class CloudPubsubTopic extends \Google\Model
     {
+        /**
+         * Required. A fully qualified Pub/Sub topic name to publish the events to.
+         * This topic must be owned by the calling project and already exist in
+         * Pub/Sub.
+         *
+         * @var string
+         */
+        public $topicName;
+        /**
+         * Required. A fully qualified Pub/Sub topic name to publish the events to.
+         * This topic must be owned by the calling project and already exist in
+         * Pub/Sub.
+         *
+         * @param string $topicName
+         */
+        public function setTopicName($topicName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTopicName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Forms\CloudPubsubTopic registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTopicName()
+    class Google_Service_Forms_CloudPubsubTopic extends \Google\Service\Forms\CloudPubsubTopic
     {
     }
 }

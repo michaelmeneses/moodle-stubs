@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class YoutubeAssetAssociationSitelinkAsset extends \Google\Model
-{
-    /**
-     * Required. ID of the sitelink asset.
-     *
-     * @var string
-     */
-    public $assetId;
-    /**
-     * Required. ID of the sitelink asset.
-     *
-     * @param string $assetId
-     */
-    public function setAssetId($assetId)
+namespace Google\Service\DisplayVideo {
+    class YoutubeAssetAssociationSitelinkAsset extends \Google\Model
     {
+        /**
+         * Required. ID of the sitelink asset.
+         *
+         * @var string
+         */
+        public $assetId;
+        /**
+         * Required. ID of the sitelink asset.
+         *
+         * @param string $assetId
+         */
+        public function setAssetId($assetId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAssetId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\YoutubeAssetAssociationSitelinkAsset registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssetId()
+    class Google_Service_DisplayVideo_YoutubeAssetAssociationSitelinkAsset extends \Google\Service\DisplayVideo\YoutubeAssetAssociationSitelinkAsset
     {
     }
 }

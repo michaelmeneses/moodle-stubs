@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class FetchLinkableRepositoriesResponse extends \Google\Collection
-{
-    protected $collection_key = 'repositories';
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $repositoriesType = Repository::class;
-    protected $repositoriesDataType = 'array';
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\CloudBuild {
+    class FetchLinkableRepositoriesResponse extends \Google\Collection
     {
+        protected $collection_key = 'repositories';
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $repositoriesType = Repository::class;
+        protected $repositoriesDataType = 'array';
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * repositories ready to be created.
+         *
+         * @param Repository[] $repositories
+         */
+        public function setRepositories($repositories)
+        {
+        }
+        /**
+         * @return Repository[]
+         */
+        public function getRepositories()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudBuild\FetchLinkableRepositoriesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * repositories ready to be created.
-     *
-     * @param Repository[] $repositories
-     */
-    public function setRepositories($repositories)
-    {
-    }
-    /**
-     * @return Repository[]
-     */
-    public function getRepositories()
+    class Google_Service_CloudBuild_FetchLinkableRepositoriesResponse extends \Google\Service\CloudBuild\FetchLinkableRepositoriesResponse
     {
     }
 }

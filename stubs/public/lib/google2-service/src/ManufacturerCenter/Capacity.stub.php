@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManufacturerCenter;
-
-class Capacity extends \Google\Model
-{
-    /**
-     * The unit of the capacity, i.e., MB, GB, or TB.
-     *
-     * @var string
-     */
-    public $unit;
-    /**
-     * The numeric value of the capacity.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * The unit of the capacity, i.e., MB, GB, or TB.
-     *
-     * @param string $unit
-     */
-    public function setUnit($unit)
+namespace Google\Service\ManufacturerCenter {
+    class Capacity extends \Google\Model
     {
+        /**
+         * The unit of the capacity, i.e., MB, GB, or TB.
+         *
+         * @var string
+         */
+        public $unit;
+        /**
+         * The numeric value of the capacity.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * The unit of the capacity, i.e., MB, GB, or TB.
+         *
+         * @param string $unit
+         */
+        public function setUnit($unit)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUnit()
+        {
+        }
+        /**
+         * The numeric value of the capacity.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ManufacturerCenter\Capacity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUnit()
-    {
-    }
-    /**
-     * The numeric value of the capacity.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_ManufacturerCenter_Capacity extends \Google\Service\ManufacturerCenter\Capacity
     {
     }
 }

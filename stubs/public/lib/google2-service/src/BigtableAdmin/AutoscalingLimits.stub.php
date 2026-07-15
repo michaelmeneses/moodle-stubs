@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class AutoscalingLimits extends \Google\Model
-{
-    /**
-     * Required. Maximum number of nodes to scale up to.
-     *
-     * @var int
-     */
-    public $maxServeNodes;
-    /**
-     * Required. Minimum number of nodes to scale down to.
-     *
-     * @var int
-     */
-    public $minServeNodes;
-    /**
-     * Required. Maximum number of nodes to scale up to.
-     *
-     * @param int $maxServeNodes
-     */
-    public function setMaxServeNodes($maxServeNodes)
+namespace Google\Service\BigtableAdmin {
+    class AutoscalingLimits extends \Google\Model
     {
+        /**
+         * Required. Maximum number of nodes to scale up to.
+         *
+         * @var int
+         */
+        public $maxServeNodes;
+        /**
+         * Required. Minimum number of nodes to scale down to.
+         *
+         * @var int
+         */
+        public $minServeNodes;
+        /**
+         * Required. Maximum number of nodes to scale up to.
+         *
+         * @param int $maxServeNodes
+         */
+        public function setMaxServeNodes($maxServeNodes)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxServeNodes()
+        {
+        }
+        /**
+         * Required. Minimum number of nodes to scale down to.
+         *
+         * @param int $minServeNodes
+         */
+        public function setMinServeNodes($minServeNodes)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMinServeNodes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\BigtableAdmin\AutoscalingLimits registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaxServeNodes()
-    {
-    }
-    /**
-     * Required. Minimum number of nodes to scale down to.
-     *
-     * @param int $minServeNodes
-     */
-    public function setMinServeNodes($minServeNodes)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMinServeNodes()
+    class Google_Service_BigtableAdmin_AutoscalingLimits extends \Google\Service\BigtableAdmin\AutoscalingLimits
     {
     }
 }

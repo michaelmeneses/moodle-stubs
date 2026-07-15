@@ -21,28 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations\Resource;
-
-/**
- * The "projects" collection of methods.
- * Typical usage is:
- *  <code>
- *   $integrationsService = new Google\Service\Integrations(...);
- *   $projects = $integrationsService->projects;
- *  </code>
- */
-class Projects extends \Google\Service\Resource
-{
+namespace Google\Service\Integrations\Resource {
+    use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaGetClientMetadataResponse;
     /**
-     * Gets the metadata info for the requested client (projects.getClientmetadata)
-     *
-     * @param string $parent Required. Required: The ID of the GCP Project to be
-     * provisioned.
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudIntegrationsV1alphaGetClientMetadataResponse
-     * @throws \Google\Service\Exception
+     * The "projects" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $integrationsService = new Google\Service\Integrations(...);
+     *   $projects = $integrationsService->projects;
+     *  </code>
      */
-    public function getClientmetadata($parent, $optParams = [])
+    class Projects extends \Google\Service\Resource
+    {
+        /**
+         * Gets the metadata info for the requested client (projects.getClientmetadata)
+         *
+         * @param string $parent Required. Required: The ID of the GCP Project to be
+         * provisioned.
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudIntegrationsV1alphaGetClientMetadataResponse
+         * @throws \Google\Service\Exception
+         */
+        public function getClientmetadata($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Integrations\Resource\Projects registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Integrations_Resource_Projects extends \Google\Service\Integrations\Resource\Projects
     {
     }
 }

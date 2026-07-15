@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare\Resource;
-
-/**
- * The "services" collection of methods.
- * Typical usage is:
- *  <code>
- *   $healthcareService = new Google\Service\CloudHealthcare(...);
- *   $services = $healthcareService->projects_locations_services;
- *  </code>
- */
-class ProjectsLocationsServices extends \Google\Service\Resource
-{
+namespace Google\Service\CloudHealthcare\Resource {
+    /**
+     * The "services" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $healthcareService = new Google\Service\CloudHealthcare(...);
+     *   $services = $healthcareService->projects_locations_services;
+     *  </code>
+     */
+    class ProjectsLocationsServices extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudHealthcare\Resource\ProjectsLocationsServices registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudHealthcare_Resource_ProjectsLocationsServices extends \Google\Service\CloudHealthcare\Resource\ProjectsLocationsServices
+    {
+    }
 }

@@ -21,27 +21,36 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSVideoExportModelSpec extends \Google\Collection
-{
-    protected $collection_key = 'exportModelOutputConfig';
-    protected $exportModelOutputConfigType = XPSExportModelOutputConfig::class;
-    protected $exportModelOutputConfigDataType = 'array';
-    /**
-     * Contains the model format and internal location of the model files to be
-     * exported/downloaded. Use the Google Cloud Storage bucket name which is
-     * provided via TrainRequest.gcs_bucket_name to store the model files.
-     *
-     * @param XPSExportModelOutputConfig[] $exportModelOutputConfig
-     */
-    public function setExportModelOutputConfig($exportModelOutputConfig)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSVideoExportModelSpec extends \Google\Collection
     {
+        protected $collection_key = 'exportModelOutputConfig';
+        protected $exportModelOutputConfigType = XPSExportModelOutputConfig::class;
+        protected $exportModelOutputConfigDataType = 'array';
+        /**
+         * Contains the model format and internal location of the model files to be
+         * exported/downloaded. Use the Google Cloud Storage bucket name which is
+         * provided via TrainRequest.gcs_bucket_name to store the model files.
+         *
+         * @param XPSExportModelOutputConfig[] $exportModelOutputConfig
+         */
+        public function setExportModelOutputConfig($exportModelOutputConfig)
+        {
+        }
+        /**
+         * @return XPSExportModelOutputConfig[]
+         */
+        public function getExportModelOutputConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return XPSExportModelOutputConfig[]
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSVideoExportModelSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExportModelOutputConfig()
+    class Google_Service_CloudNaturalLanguage_XPSVideoExportModelSpec extends \Google\Service\CloudNaturalLanguage\XPSVideoExportModelSpec
     {
     }
 }

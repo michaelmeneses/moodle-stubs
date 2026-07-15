@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3ToolTLSConfig extends \Google\Collection
-{
-    protected $collection_key = 'caCerts';
-    protected $caCertsType = GoogleCloudDialogflowCxV3ToolTLSConfigCACert::class;
-    protected $caCertsDataType = 'array';
-    /**
-     * Required. Specifies a list of allowed custom CA certificates for HTTPS
-     * verification.
-     *
-     * @param GoogleCloudDialogflowCxV3ToolTLSConfigCACert[] $caCerts
-     */
-    public function setCaCerts($caCerts)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3ToolTLSConfig extends \Google\Collection
     {
+        protected $collection_key = 'caCerts';
+        protected $caCertsType = GoogleCloudDialogflowCxV3ToolTLSConfigCACert::class;
+        protected $caCertsDataType = 'array';
+        /**
+         * Required. Specifies a list of allowed custom CA certificates for HTTPS
+         * verification.
+         *
+         * @param GoogleCloudDialogflowCxV3ToolTLSConfigCACert[] $caCerts
+         */
+        public function setCaCerts($caCerts)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3ToolTLSConfigCACert[]
+         */
+        public function getCaCerts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowCxV3ToolTLSConfigCACert[]
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ToolTLSConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCaCerts()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3ToolTLSConfig extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ToolTLSConfig
     {
     }
 }

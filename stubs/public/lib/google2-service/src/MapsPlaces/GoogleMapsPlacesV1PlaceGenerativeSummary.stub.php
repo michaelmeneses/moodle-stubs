@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MapsPlaces;
-
-class GoogleMapsPlacesV1PlaceGenerativeSummary extends \Google\Model
-{
-    protected $disclosureTextType = GoogleTypeLocalizedText::class;
-    protected $disclosureTextDataType = '';
-    protected $overviewType = GoogleTypeLocalizedText::class;
-    protected $overviewDataType = '';
-    /**
-     * A link where users can flag a problem with the overview summary.
-     *
-     * @var string
-     */
-    public $overviewFlagContentUri;
-    /**
-     * The AI disclosure message "Summarized with Gemini" (and its localized
-     * variants). This will be in the language specified in the request if
-     * available.
-     *
-     * @param GoogleTypeLocalizedText $disclosureText
-     */
-    public function setDisclosureText(GoogleTypeLocalizedText $disclosureText)
+namespace Google\Service\MapsPlaces {
+    class GoogleMapsPlacesV1PlaceGenerativeSummary extends \Google\Model
     {
+        protected $disclosureTextType = GoogleTypeLocalizedText::class;
+        protected $disclosureTextDataType = '';
+        protected $overviewType = GoogleTypeLocalizedText::class;
+        protected $overviewDataType = '';
+        /**
+         * A link where users can flag a problem with the overview summary.
+         *
+         * @var string
+         */
+        public $overviewFlagContentUri;
+        /**
+         * The AI disclosure message "Summarized with Gemini" (and its localized
+         * variants). This will be in the language specified in the request if
+         * available.
+         *
+         * @param GoogleTypeLocalizedText $disclosureText
+         */
+        public function setDisclosureText(GoogleTypeLocalizedText $disclosureText)
+        {
+        }
+        /**
+         * @return GoogleTypeLocalizedText
+         */
+        public function getDisclosureText()
+        {
+        }
+        /**
+         * The overview of the place.
+         *
+         * @param GoogleTypeLocalizedText $overview
+         */
+        public function setOverview(GoogleTypeLocalizedText $overview)
+        {
+        }
+        /**
+         * @return GoogleTypeLocalizedText
+         */
+        public function getOverview()
+        {
+        }
+        /**
+         * A link where users can flag a problem with the overview summary.
+         *
+         * @param string $overviewFlagContentUri
+         */
+        public function setOverviewFlagContentUri($overviewFlagContentUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOverviewFlagContentUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleTypeLocalizedText
+     * Runtime class alias of \Google\Service\MapsPlaces\GoogleMapsPlacesV1PlaceGenerativeSummary registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisclosureText()
-    {
-    }
-    /**
-     * The overview of the place.
-     *
-     * @param GoogleTypeLocalizedText $overview
-     */
-    public function setOverview(GoogleTypeLocalizedText $overview)
-    {
-    }
-    /**
-     * @return GoogleTypeLocalizedText
-     */
-    public function getOverview()
-    {
-    }
-    /**
-     * A link where users can flag a problem with the overview summary.
-     *
-     * @param string $overviewFlagContentUri
-     */
-    public function setOverviewFlagContentUri($overviewFlagContentUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOverviewFlagContentUri()
+    class Google_Service_MapsPlaces_GoogleMapsPlacesV1PlaceGenerativeSummary extends \Google\Service\MapsPlaces\GoogleMapsPlacesV1PlaceGenerativeSummary
     {
     }
 }

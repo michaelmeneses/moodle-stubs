@@ -21,99 +21,111 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudObservability\Resource;
-
-/**
- * The "traceScopes" collection of methods.
- * Typical usage is:
- *  <code>
- *   $observabilityService = new Google\Service\CloudObservability(...);
- *   $traceScopes = $observabilityService->projects_locations_traceScopes;
- *  </code>
- */
-class ProjectsLocationsTraceScopes extends \Google\Service\Resource
-{
+namespace Google\Service\CloudObservability\Resource {
+    use Google\Service\CloudObservability\ListTraceScopesResponse;
+    use Google\Service\CloudObservability\ObservabilityEmpty;
+    use Google\Service\CloudObservability\TraceScope;
     /**
-     * Create a new TraceScope. (traceScopes.create)
-     *
-     * @param string $parent Required. The full resource name of the location where
-     * the trace scope should be created
-     * projects/[PROJECT_ID]/locations/[LOCATION_ID] For example: projects/my-
-     * project/locations/global
-     * @param TraceScope $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string traceScopeId Required. A client-assigned identifier for the
-     * trace scope.
-     * @return TraceScope
-     * @throws \Google\Service\Exception
+     * The "traceScopes" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $observabilityService = new Google\Service\CloudObservability(...);
+     *   $traceScopes = $observabilityService->projects_locations_traceScopes;
+     *  </code>
      */
-    public function create($parent, TraceScope $postBody, $optParams = [])
+    class ProjectsLocationsTraceScopes extends \Google\Service\Resource
     {
+        /**
+         * Create a new TraceScope. (traceScopes.create)
+         *
+         * @param string $parent Required. The full resource name of the location where
+         * the trace scope should be created
+         * projects/[PROJECT_ID]/locations/[LOCATION_ID] For example: projects/my-
+         * project/locations/global
+         * @param TraceScope $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string traceScopeId Required. A client-assigned identifier for the
+         * trace scope.
+         * @return TraceScope
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, TraceScope $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Delete a TraceScope. (traceScopes.delete)
+         *
+         * @param string $name Required. The full resource name of the trace scope to
+         * delete:
+         * projects/[PROJECT_ID]/locations/[LOCATION_ID]/traceScopes/[TRACE_SCOPE_ID]
+         * For example: projects/my-project/locations/global/traceScopes/my-trace-scope
+         * @param array $optParams Optional parameters.
+         * @return ObservabilityEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Get TraceScope resource. (traceScopes.get)
+         *
+         * @param string $name Required. The resource name of the trace scope:
+         * projects/[PROJECT_ID]/locations/[LOCATION_ID]/traceScopes/[TRACE_SCOPE_ID]
+         * For example: projects/my-project/locations/global/traceScopes/my-trace-scope
+         * @param array $optParams Optional parameters.
+         * @return TraceScope
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * List TraceScopes of a project in a particular location.
+         * (traceScopes.listProjectsLocationsTraceScopes)
+         *
+         * @param string $parent Required. The full resource name of the location to
+         * look for trace scopes: projects/[PROJECT_ID]/locations/[LOCATION_ID] For
+         * example: projects/my-project/locations/global
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Optional. The maximum number of results to return
+         * from this request. Non-positive values are ignored. The presence of
+         * `next_page_token` in the response indicates that more results might be
+         * available.
+         * @opt_param string pageToken Optional. If present, then retrieve the next
+         * batch of results from the preceding call to this method. `page_token` must be
+         * the value of `next_page_token` from the previous response. The values of
+         * other method parameters should be identical to those in the previous call.
+         * @return ListTraceScopesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsTraceScopes($parent, $optParams = [])
+        {
+        }
+        /**
+         * Update a TraceScope. (traceScopes.patch)
+         *
+         * @param string $name Identifier. The resource name of the trace scope. For
+         * example: projects/my-project/locations/global/traceScopes/my-trace-scope
+         * @param TraceScope $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Optional. The list of fields to update.
+         * @return TraceScope
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, TraceScope $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Delete a TraceScope. (traceScopes.delete)
-     *
-     * @param string $name Required. The full resource name of the trace scope to
-     * delete:
-     * projects/[PROJECT_ID]/locations/[LOCATION_ID]/traceScopes/[TRACE_SCOPE_ID]
-     * For example: projects/my-project/locations/global/traceScopes/my-trace-scope
-     * @param array $optParams Optional parameters.
-     * @return ObservabilityEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\CloudObservability\Resource\ProjectsLocationsTraceScopes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Get TraceScope resource. (traceScopes.get)
-     *
-     * @param string $name Required. The resource name of the trace scope:
-     * projects/[PROJECT_ID]/locations/[LOCATION_ID]/traceScopes/[TRACE_SCOPE_ID]
-     * For example: projects/my-project/locations/global/traceScopes/my-trace-scope
-     * @param array $optParams Optional parameters.
-     * @return TraceScope
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * List TraceScopes of a project in a particular location.
-     * (traceScopes.listProjectsLocationsTraceScopes)
-     *
-     * @param string $parent Required. The full resource name of the location to
-     * look for trace scopes: projects/[PROJECT_ID]/locations/[LOCATION_ID] For
-     * example: projects/my-project/locations/global
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Optional. The maximum number of results to return
-     * from this request. Non-positive values are ignored. The presence of
-     * `next_page_token` in the response indicates that more results might be
-     * available.
-     * @opt_param string pageToken Optional. If present, then retrieve the next
-     * batch of results from the preceding call to this method. `page_token` must be
-     * the value of `next_page_token` from the previous response. The values of
-     * other method parameters should be identical to those in the previous call.
-     * @return ListTraceScopesResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsTraceScopes($parent, $optParams = [])
-    {
-    }
-    /**
-     * Update a TraceScope. (traceScopes.patch)
-     *
-     * @param string $name Identifier. The resource name of the trace scope. For
-     * example: projects/my-project/locations/global/traceScopes/my-trace-scope
-     * @param TraceScope $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Optional. The list of fields to update.
-     * @return TraceScope
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, TraceScope $postBody, $optParams = [])
+    class Google_Service_CloudObservability_Resource_ProjectsLocationsTraceScopes extends \Google\Service\CloudObservability\Resource\ProjectsLocationsTraceScopes
     {
     }
 }

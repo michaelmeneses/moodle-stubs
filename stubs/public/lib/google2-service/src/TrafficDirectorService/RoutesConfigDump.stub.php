@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TrafficDirectorService;
-
-class RoutesConfigDump extends \Google\Collection
-{
-    protected $collection_key = 'staticRouteConfigs';
-    protected $dynamicRouteConfigsType = DynamicRouteConfig::class;
-    protected $dynamicRouteConfigsDataType = 'array';
-    protected $staticRouteConfigsType = StaticRouteConfig::class;
-    protected $staticRouteConfigsDataType = 'array';
-    /**
-     * The dynamically loaded route configs.
-     *
-     * @param DynamicRouteConfig[] $dynamicRouteConfigs
-     */
-    public function setDynamicRouteConfigs($dynamicRouteConfigs)
+namespace Google\Service\TrafficDirectorService {
+    class RoutesConfigDump extends \Google\Collection
     {
+        protected $collection_key = 'staticRouteConfigs';
+        protected $dynamicRouteConfigsType = DynamicRouteConfig::class;
+        protected $dynamicRouteConfigsDataType = 'array';
+        protected $staticRouteConfigsType = StaticRouteConfig::class;
+        protected $staticRouteConfigsDataType = 'array';
+        /**
+         * The dynamically loaded route configs.
+         *
+         * @param DynamicRouteConfig[] $dynamicRouteConfigs
+         */
+        public function setDynamicRouteConfigs($dynamicRouteConfigs)
+        {
+        }
+        /**
+         * @return DynamicRouteConfig[]
+         */
+        public function getDynamicRouteConfigs()
+        {
+        }
+        /**
+         * The statically loaded route configs.
+         *
+         * @param StaticRouteConfig[] $staticRouteConfigs
+         */
+        public function setStaticRouteConfigs($staticRouteConfigs)
+        {
+        }
+        /**
+         * @return StaticRouteConfig[]
+         */
+        public function getStaticRouteConfigs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DynamicRouteConfig[]
+     * Runtime class alias of \Google\Service\TrafficDirectorService\RoutesConfigDump registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDynamicRouteConfigs()
-    {
-    }
-    /**
-     * The statically loaded route configs.
-     *
-     * @param StaticRouteConfig[] $staticRouteConfigs
-     */
-    public function setStaticRouteConfigs($staticRouteConfigs)
-    {
-    }
-    /**
-     * @return StaticRouteConfig[]
-     */
-    public function getStaticRouteConfigs()
+    class Google_Service_TrafficDirectorService_RoutesConfigDump extends \Google\Service\TrafficDirectorService\RoutesConfigDump
     {
     }
 }

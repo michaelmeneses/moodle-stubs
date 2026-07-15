@@ -21,224 +21,233 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class StageMetrics extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $diskBytesSpilled;
-    /**
-     * @var string
-     */
-    public $executorCpuTimeNanos;
-    /**
-     * @var string
-     */
-    public $executorDeserializeCpuTimeNanos;
-    /**
-     * @var string
-     */
-    public $executorDeserializeTimeMillis;
-    /**
-     * @var string
-     */
-    public $executorRunTimeMillis;
-    /**
-     * @var string
-     */
-    public $jvmGcTimeMillis;
-    /**
-     * @var string
-     */
-    public $memoryBytesSpilled;
-    /**
-     * @var string
-     */
-    public $peakExecutionMemoryBytes;
-    /**
-     * @var string
-     */
-    public $resultSerializationTimeMillis;
-    /**
-     * @var string
-     */
-    public $resultSize;
-    protected $stageInputMetricsType = StageInputMetrics::class;
-    protected $stageInputMetricsDataType = '';
-    protected $stageOutputMetricsType = StageOutputMetrics::class;
-    protected $stageOutputMetricsDataType = '';
-    protected $stageShuffleReadMetricsType = StageShuffleReadMetrics::class;
-    protected $stageShuffleReadMetricsDataType = '';
-    protected $stageShuffleWriteMetricsType = StageShuffleWriteMetrics::class;
-    protected $stageShuffleWriteMetricsDataType = '';
-    /**
-     * @param string $diskBytesSpilled
-     */
-    public function setDiskBytesSpilled($diskBytesSpilled)
+namespace Google\Service\Dataproc {
+    class StageMetrics extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $diskBytesSpilled;
+        /**
+         * @var string
+         */
+        public $executorCpuTimeNanos;
+        /**
+         * @var string
+         */
+        public $executorDeserializeCpuTimeNanos;
+        /**
+         * @var string
+         */
+        public $executorDeserializeTimeMillis;
+        /**
+         * @var string
+         */
+        public $executorRunTimeMillis;
+        /**
+         * @var string
+         */
+        public $jvmGcTimeMillis;
+        /**
+         * @var string
+         */
+        public $memoryBytesSpilled;
+        /**
+         * @var string
+         */
+        public $peakExecutionMemoryBytes;
+        /**
+         * @var string
+         */
+        public $resultSerializationTimeMillis;
+        /**
+         * @var string
+         */
+        public $resultSize;
+        protected $stageInputMetricsType = StageInputMetrics::class;
+        protected $stageInputMetricsDataType = '';
+        protected $stageOutputMetricsType = StageOutputMetrics::class;
+        protected $stageOutputMetricsDataType = '';
+        protected $stageShuffleReadMetricsType = StageShuffleReadMetrics::class;
+        protected $stageShuffleReadMetricsDataType = '';
+        protected $stageShuffleWriteMetricsType = StageShuffleWriteMetrics::class;
+        protected $stageShuffleWriteMetricsDataType = '';
+        /**
+         * @param string $diskBytesSpilled
+         */
+        public function setDiskBytesSpilled($diskBytesSpilled)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDiskBytesSpilled()
+        {
+        }
+        /**
+         * @param string $executorCpuTimeNanos
+         */
+        public function setExecutorCpuTimeNanos($executorCpuTimeNanos)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExecutorCpuTimeNanos()
+        {
+        }
+        /**
+         * @param string $executorDeserializeCpuTimeNanos
+         */
+        public function setExecutorDeserializeCpuTimeNanos($executorDeserializeCpuTimeNanos)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExecutorDeserializeCpuTimeNanos()
+        {
+        }
+        /**
+         * @param string $executorDeserializeTimeMillis
+         */
+        public function setExecutorDeserializeTimeMillis($executorDeserializeTimeMillis)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExecutorDeserializeTimeMillis()
+        {
+        }
+        /**
+         * @param string $executorRunTimeMillis
+         */
+        public function setExecutorRunTimeMillis($executorRunTimeMillis)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExecutorRunTimeMillis()
+        {
+        }
+        /**
+         * @param string $jvmGcTimeMillis
+         */
+        public function setJvmGcTimeMillis($jvmGcTimeMillis)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getJvmGcTimeMillis()
+        {
+        }
+        /**
+         * @param string $memoryBytesSpilled
+         */
+        public function setMemoryBytesSpilled($memoryBytesSpilled)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMemoryBytesSpilled()
+        {
+        }
+        /**
+         * @param string $peakExecutionMemoryBytes
+         */
+        public function setPeakExecutionMemoryBytes($peakExecutionMemoryBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPeakExecutionMemoryBytes()
+        {
+        }
+        /**
+         * @param string $resultSerializationTimeMillis
+         */
+        public function setResultSerializationTimeMillis($resultSerializationTimeMillis)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResultSerializationTimeMillis()
+        {
+        }
+        /**
+         * @param string $resultSize
+         */
+        public function setResultSize($resultSize)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResultSize()
+        {
+        }
+        /**
+         * @param StageInputMetrics $stageInputMetrics
+         */
+        public function setStageInputMetrics(StageInputMetrics $stageInputMetrics)
+        {
+        }
+        /**
+         * @return StageInputMetrics
+         */
+        public function getStageInputMetrics()
+        {
+        }
+        /**
+         * @param StageOutputMetrics $stageOutputMetrics
+         */
+        public function setStageOutputMetrics(StageOutputMetrics $stageOutputMetrics)
+        {
+        }
+        /**
+         * @return StageOutputMetrics
+         */
+        public function getStageOutputMetrics()
+        {
+        }
+        /**
+         * @param StageShuffleReadMetrics $stageShuffleReadMetrics
+         */
+        public function setStageShuffleReadMetrics(StageShuffleReadMetrics $stageShuffleReadMetrics)
+        {
+        }
+        /**
+         * @return StageShuffleReadMetrics
+         */
+        public function getStageShuffleReadMetrics()
+        {
+        }
+        /**
+         * @param StageShuffleWriteMetrics $stageShuffleWriteMetrics
+         */
+        public function setStageShuffleWriteMetrics(StageShuffleWriteMetrics $stageShuffleWriteMetrics)
+        {
+        }
+        /**
+         * @return StageShuffleWriteMetrics
+         */
+        public function getStageShuffleWriteMetrics()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\StageMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDiskBytesSpilled()
-    {
-    }
-    /**
-     * @param string $executorCpuTimeNanos
-     */
-    public function setExecutorCpuTimeNanos($executorCpuTimeNanos)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExecutorCpuTimeNanos()
-    {
-    }
-    /**
-     * @param string $executorDeserializeCpuTimeNanos
-     */
-    public function setExecutorDeserializeCpuTimeNanos($executorDeserializeCpuTimeNanos)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExecutorDeserializeCpuTimeNanos()
-    {
-    }
-    /**
-     * @param string $executorDeserializeTimeMillis
-     */
-    public function setExecutorDeserializeTimeMillis($executorDeserializeTimeMillis)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExecutorDeserializeTimeMillis()
-    {
-    }
-    /**
-     * @param string $executorRunTimeMillis
-     */
-    public function setExecutorRunTimeMillis($executorRunTimeMillis)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExecutorRunTimeMillis()
-    {
-    }
-    /**
-     * @param string $jvmGcTimeMillis
-     */
-    public function setJvmGcTimeMillis($jvmGcTimeMillis)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getJvmGcTimeMillis()
-    {
-    }
-    /**
-     * @param string $memoryBytesSpilled
-     */
-    public function setMemoryBytesSpilled($memoryBytesSpilled)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMemoryBytesSpilled()
-    {
-    }
-    /**
-     * @param string $peakExecutionMemoryBytes
-     */
-    public function setPeakExecutionMemoryBytes($peakExecutionMemoryBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPeakExecutionMemoryBytes()
-    {
-    }
-    /**
-     * @param string $resultSerializationTimeMillis
-     */
-    public function setResultSerializationTimeMillis($resultSerializationTimeMillis)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResultSerializationTimeMillis()
-    {
-    }
-    /**
-     * @param string $resultSize
-     */
-    public function setResultSize($resultSize)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResultSize()
-    {
-    }
-    /**
-     * @param StageInputMetrics $stageInputMetrics
-     */
-    public function setStageInputMetrics(StageInputMetrics $stageInputMetrics)
-    {
-    }
-    /**
-     * @return StageInputMetrics
-     */
-    public function getStageInputMetrics()
-    {
-    }
-    /**
-     * @param StageOutputMetrics $stageOutputMetrics
-     */
-    public function setStageOutputMetrics(StageOutputMetrics $stageOutputMetrics)
-    {
-    }
-    /**
-     * @return StageOutputMetrics
-     */
-    public function getStageOutputMetrics()
-    {
-    }
-    /**
-     * @param StageShuffleReadMetrics $stageShuffleReadMetrics
-     */
-    public function setStageShuffleReadMetrics(StageShuffleReadMetrics $stageShuffleReadMetrics)
-    {
-    }
-    /**
-     * @return StageShuffleReadMetrics
-     */
-    public function getStageShuffleReadMetrics()
-    {
-    }
-    /**
-     * @param StageShuffleWriteMetrics $stageShuffleWriteMetrics
-     */
-    public function setStageShuffleWriteMetrics(StageShuffleWriteMetrics $stageShuffleWriteMetrics)
-    {
-    }
-    /**
-     * @return StageShuffleWriteMetrics
-     */
-    public function getStageShuffleWriteMetrics()
+    class Google_Service_Dataproc_StageMetrics extends \Google\Service\Dataproc\StageMetrics
     {
     }
 }

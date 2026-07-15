@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TrafficDirectorService;
-
-class EnvoyInternalAddress extends \Google\Model
-{
-    /**
-     * Specifies an endpoint identifier to distinguish between multiple endpoints
-     * for the same internal listener in a single upstream pool. Only used in the
-     * upstream addresses for tracking changes to individual endpoints. This, for
-     * example, may be set to the final destination IP for the target internal
-     * listener.
-     *
-     * @var string
-     */
-    public $endpointId;
-    /**
-     * Specifies the :ref:`name ` of the internal listener.
-     *
-     * @var string
-     */
-    public $serverListenerName;
-    /**
-     * Specifies an endpoint identifier to distinguish between multiple endpoints
-     * for the same internal listener in a single upstream pool. Only used in the
-     * upstream addresses for tracking changes to individual endpoints. This, for
-     * example, may be set to the final destination IP for the target internal
-     * listener.
-     *
-     * @param string $endpointId
-     */
-    public function setEndpointId($endpointId)
+namespace Google\Service\TrafficDirectorService {
+    class EnvoyInternalAddress extends \Google\Model
     {
+        /**
+         * Specifies an endpoint identifier to distinguish between multiple endpoints
+         * for the same internal listener in a single upstream pool. Only used in the
+         * upstream addresses for tracking changes to individual endpoints. This, for
+         * example, may be set to the final destination IP for the target internal
+         * listener.
+         *
+         * @var string
+         */
+        public $endpointId;
+        /**
+         * Specifies the :ref:`name ` of the internal listener.
+         *
+         * @var string
+         */
+        public $serverListenerName;
+        /**
+         * Specifies an endpoint identifier to distinguish between multiple endpoints
+         * for the same internal listener in a single upstream pool. Only used in the
+         * upstream addresses for tracking changes to individual endpoints. This, for
+         * example, may be set to the final destination IP for the target internal
+         * listener.
+         *
+         * @param string $endpointId
+         */
+        public function setEndpointId($endpointId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndpointId()
+        {
+        }
+        /**
+         * Specifies the :ref:`name ` of the internal listener.
+         *
+         * @param string $serverListenerName
+         */
+        public function setServerListenerName($serverListenerName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServerListenerName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\TrafficDirectorService\EnvoyInternalAddress registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndpointId()
-    {
-    }
-    /**
-     * Specifies the :ref:`name ` of the internal listener.
-     *
-     * @param string $serverListenerName
-     */
-    public function setServerListenerName($serverListenerName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServerListenerName()
+    class Google_Service_TrafficDirectorService_EnvoyInternalAddress extends \Google\Service\TrafficDirectorService\EnvoyInternalAddress
     {
     }
 }

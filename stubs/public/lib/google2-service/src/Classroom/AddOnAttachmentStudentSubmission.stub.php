@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Classroom;
-
-class AddOnAttachmentStudentSubmission extends \Google\Model
-{
-    /**
-     * No state specified. This should never be returned.
-     */
-    public const POST_SUBMISSION_STATE_SUBMISSION_STATE_UNSPECIFIED = 'SUBMISSION_STATE_UNSPECIFIED';
-    /**
-     * The student has never accessed this submission. Attachments are not
-     * returned and timestamps is not set.
-     */
-    public const POST_SUBMISSION_STATE_NEW = 'NEW';
-    /**
-     * Has been created.
-     */
-    public const POST_SUBMISSION_STATE_CREATED = 'CREATED';
-    /**
-     * Has been turned in to the teacher.
-     */
-    public const POST_SUBMISSION_STATE_TURNED_IN = 'TURNED_IN';
-    /**
-     * Has been returned to the student.
-     */
-    public const POST_SUBMISSION_STATE_RETURNED = 'RETURNED';
-    /**
-     * Student chose to "unsubmit" the assignment.
-     */
-    public const POST_SUBMISSION_STATE_RECLAIMED_BY_STUDENT = 'RECLAIMED_BY_STUDENT';
-    /**
-     * Student grade on this attachment. If unset, no grade was set.
-     *
-     * @var 
-     */
-    public $pointsEarned;
-    /**
-     * Submission state of add-on attachment's parent post (i.e. assignment).
-     *
-     * @var string
-     */
-    public $postSubmissionState;
-    public function setPointsEarned($pointsEarned)
+namespace Google\Service\Classroom {
+    class AddOnAttachmentStudentSubmission extends \Google\Model
     {
+        /**
+         * No state specified. This should never be returned.
+         */
+        public const POST_SUBMISSION_STATE_SUBMISSION_STATE_UNSPECIFIED = 'SUBMISSION_STATE_UNSPECIFIED';
+        /**
+         * The student has never accessed this submission. Attachments are not
+         * returned and timestamps is not set.
+         */
+        public const POST_SUBMISSION_STATE_NEW = 'NEW';
+        /**
+         * Has been created.
+         */
+        public const POST_SUBMISSION_STATE_CREATED = 'CREATED';
+        /**
+         * Has been turned in to the teacher.
+         */
+        public const POST_SUBMISSION_STATE_TURNED_IN = 'TURNED_IN';
+        /**
+         * Has been returned to the student.
+         */
+        public const POST_SUBMISSION_STATE_RETURNED = 'RETURNED';
+        /**
+         * Student chose to "unsubmit" the assignment.
+         */
+        public const POST_SUBMISSION_STATE_RECLAIMED_BY_STUDENT = 'RECLAIMED_BY_STUDENT';
+        /**
+         * Student grade on this attachment. If unset, no grade was set.
+         *
+         * @var 
+         */
+        public $pointsEarned;
+        /**
+         * Submission state of add-on attachment's parent post (i.e. assignment).
+         *
+         * @var string
+         */
+        public $postSubmissionState;
+        public function setPointsEarned($pointsEarned)
+        {
+        }
+        public function getPointsEarned()
+        {
+        }
+        /**
+         * Submission state of add-on attachment's parent post (i.e. assignment).
+         *
+         * Accepted values: SUBMISSION_STATE_UNSPECIFIED, NEW, CREATED, TURNED_IN,
+         * RETURNED, RECLAIMED_BY_STUDENT
+         *
+         * @param self::POST_SUBMISSION_STATE_* $postSubmissionState
+         */
+        public function setPostSubmissionState($postSubmissionState)
+        {
+        }
+        /**
+         * @return self::POST_SUBMISSION_STATE_*
+         */
+        public function getPostSubmissionState()
+        {
+        }
     }
-    public function getPointsEarned()
-    {
-    }
+}
+namespace {
     /**
-     * Submission state of add-on attachment's parent post (i.e. assignment).
-     *
-     * Accepted values: SUBMISSION_STATE_UNSPECIFIED, NEW, CREATED, TURNED_IN,
-     * RETURNED, RECLAIMED_BY_STUDENT
-     *
-     * @param self::POST_SUBMISSION_STATE_* $postSubmissionState
+     * Runtime class alias of \Google\Service\Classroom\AddOnAttachmentStudentSubmission registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setPostSubmissionState($postSubmissionState)
-    {
-    }
-    /**
-     * @return self::POST_SUBMISSION_STATE_*
-     */
-    public function getPostSubmissionState()
+    class Google_Service_Classroom_AddOnAttachmentStudentSubmission extends \Google\Service\Classroom\AddOnAttachmentStudentSubmission
     {
     }
 }

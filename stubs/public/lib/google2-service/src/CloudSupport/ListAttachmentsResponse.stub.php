@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSupport;
-
-class ListAttachmentsResponse extends \Google\Collection
-{
-    protected $collection_key = 'attachments';
-    protected $attachmentsType = Attachment::class;
-    protected $attachmentsDataType = 'array';
-    /**
-     * A token to retrieve the next page of results. Set this in the `page_token`
-     * field of subsequent `cases.attachments.list` requests. If unspecified,
-     * there are no more results to retrieve.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of attachments associated with a case.
-     *
-     * @param Attachment[] $attachments
-     */
-    public function setAttachments($attachments)
+namespace Google\Service\CloudSupport {
+    class ListAttachmentsResponse extends \Google\Collection
     {
+        protected $collection_key = 'attachments';
+        protected $attachmentsType = Attachment::class;
+        protected $attachmentsDataType = 'array';
+        /**
+         * A token to retrieve the next page of results. Set this in the `page_token`
+         * field of subsequent `cases.attachments.list` requests. If unspecified,
+         * there are no more results to retrieve.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of attachments associated with a case.
+         *
+         * @param Attachment[] $attachments
+         */
+        public function setAttachments($attachments)
+        {
+        }
+        /**
+         * @return Attachment[]
+         */
+        public function getAttachments()
+        {
+        }
+        /**
+         * A token to retrieve the next page of results. Set this in the `page_token`
+         * field of subsequent `cases.attachments.list` requests. If unspecified,
+         * there are no more results to retrieve.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Attachment[]
+     * Runtime class alias of \Google\Service\CloudSupport\ListAttachmentsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttachments()
-    {
-    }
-    /**
-     * A token to retrieve the next page of results. Set this in the `page_token`
-     * field of subsequent `cases.attachments.list` requests. If unspecified,
-     * there are no more results to retrieve.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_CloudSupport_ListAttachmentsResponse extends \Google\Service\CloudSupport\ListAttachmentsResponse
     {
     }
 }

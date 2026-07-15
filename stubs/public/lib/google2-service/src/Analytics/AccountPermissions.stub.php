@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics;
-
-class AccountPermissions extends \Google\Collection
-{
-    protected $collection_key = 'effective';
-    /**
-     * All the permissions that the user has for this account. These include any
-     * implied permissions (e.g., EDIT implies VIEW).
-     *
-     * @var string[]
-     */
-    public $effective;
-    /**
-     * All the permissions that the user has for this account. These include any
-     * implied permissions (e.g., EDIT implies VIEW).
-     *
-     * @param string[] $effective
-     */
-    public function setEffective($effective)
+namespace Google\Service\Analytics {
+    class AccountPermissions extends \Google\Collection
     {
+        protected $collection_key = 'effective';
+        /**
+         * All the permissions that the user has for this account. These include any
+         * implied permissions (e.g., EDIT implies VIEW).
+         *
+         * @var string[]
+         */
+        public $effective;
+        /**
+         * All the permissions that the user has for this account. These include any
+         * implied permissions (e.g., EDIT implies VIEW).
+         *
+         * @param string[] $effective
+         */
+        public function setEffective($effective)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getEffective()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Analytics\AccountPermissions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEffective()
+    class Google_Service_Analytics_AccountPermissions extends \Google\Service\Analytics\AccountPermissions
     {
     }
 }

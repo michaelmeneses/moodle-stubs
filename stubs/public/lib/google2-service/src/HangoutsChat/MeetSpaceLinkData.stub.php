@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class MeetSpaceLinkData extends \Google\Model
-{
-    /**
-     * Default value for the enum. Don't use.
-     */
-    public const HUDDLE_STATUS_HUDDLE_STATUS_UNSPECIFIED = 'HUDDLE_STATUS_UNSPECIFIED';
-    /**
-     * The huddle has started.
-     */
-    public const HUDDLE_STATUS_STARTED = 'STARTED';
-    /**
-     * The huddle has ended. In this case the Meet space URI and identifiers will
-     * no longer be valid.
-     */
-    public const HUDDLE_STATUS_ENDED = 'ENDED';
-    /**
-     * The huddle has been missed. In this case the Meet space URI and identifiers
-     * will no longer be valid.
-     */
-    public const HUDDLE_STATUS_MISSED = 'MISSED';
-    /**
-     * Default value for the enum. Don't use.
-     */
-    public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
-    /**
-     * The Meet space is a meeting.
-     */
-    public const TYPE_MEETING = 'MEETING';
-    /**
-     * The Meet space is a huddle.
-     */
-    public const TYPE_HUDDLE = 'HUDDLE';
-    /**
-     * Optional. Output only. If the Meet is a Huddle, indicates the status of the
-     * huddle. Otherwise, this is unset.
-     *
-     * @var string
-     */
-    public $huddleStatus;
-    /**
-     * Meeting code of the linked Meet space.
-     *
-     * @var string
-     */
-    public $meetingCode;
-    /**
-     * Indicates the type of the Meet space.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Optional. Output only. If the Meet is a Huddle, indicates the status of the
-     * huddle. Otherwise, this is unset.
-     *
-     * Accepted values: HUDDLE_STATUS_UNSPECIFIED, STARTED, ENDED, MISSED
-     *
-     * @param self::HUDDLE_STATUS_* $huddleStatus
-     */
-    public function setHuddleStatus($huddleStatus)
+namespace Google\Service\HangoutsChat {
+    class MeetSpaceLinkData extends \Google\Model
     {
+        /**
+         * Default value for the enum. Don't use.
+         */
+        public const HUDDLE_STATUS_HUDDLE_STATUS_UNSPECIFIED = 'HUDDLE_STATUS_UNSPECIFIED';
+        /**
+         * The huddle has started.
+         */
+        public const HUDDLE_STATUS_STARTED = 'STARTED';
+        /**
+         * The huddle has ended. In this case the Meet space URI and identifiers will
+         * no longer be valid.
+         */
+        public const HUDDLE_STATUS_ENDED = 'ENDED';
+        /**
+         * The huddle has been missed. In this case the Meet space URI and identifiers
+         * will no longer be valid.
+         */
+        public const HUDDLE_STATUS_MISSED = 'MISSED';
+        /**
+         * Default value for the enum. Don't use.
+         */
+        public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
+        /**
+         * The Meet space is a meeting.
+         */
+        public const TYPE_MEETING = 'MEETING';
+        /**
+         * The Meet space is a huddle.
+         */
+        public const TYPE_HUDDLE = 'HUDDLE';
+        /**
+         * Optional. Output only. If the Meet is a Huddle, indicates the status of the
+         * huddle. Otherwise, this is unset.
+         *
+         * @var string
+         */
+        public $huddleStatus;
+        /**
+         * Meeting code of the linked Meet space.
+         *
+         * @var string
+         */
+        public $meetingCode;
+        /**
+         * Indicates the type of the Meet space.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Optional. Output only. If the Meet is a Huddle, indicates the status of the
+         * huddle. Otherwise, this is unset.
+         *
+         * Accepted values: HUDDLE_STATUS_UNSPECIFIED, STARTED, ENDED, MISSED
+         *
+         * @param self::HUDDLE_STATUS_* $huddleStatus
+         */
+        public function setHuddleStatus($huddleStatus)
+        {
+        }
+        /**
+         * @return self::HUDDLE_STATUS_*
+         */
+        public function getHuddleStatus()
+        {
+        }
+        /**
+         * Meeting code of the linked Meet space.
+         *
+         * @param string $meetingCode
+         */
+        public function setMeetingCode($meetingCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMeetingCode()
+        {
+        }
+        /**
+         * Indicates the type of the Meet space.
+         *
+         * Accepted values: TYPE_UNSPECIFIED, MEETING, HUDDLE
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::HUDDLE_STATUS_*
+     * Runtime class alias of \Google\Service\HangoutsChat\MeetSpaceLinkData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHuddleStatus()
-    {
-    }
-    /**
-     * Meeting code of the linked Meet space.
-     *
-     * @param string $meetingCode
-     */
-    public function setMeetingCode($meetingCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMeetingCode()
-    {
-    }
-    /**
-     * Indicates the type of the Meet space.
-     *
-     * Accepted values: TYPE_UNSPECIFIED, MEETING, HUDDLE
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_HangoutsChat_MeetSpaceLinkData extends \Google\Service\HangoutsChat\MeetSpaceLinkData
     {
     }
 }

@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1DataConnectorRealtimeSyncConfigStreamingError extends \Google\Model
-{
-    /**
-     * Streaming error reason unspecified.
-     */
-    public const STREAMING_ERROR_REASON_STREAMING_ERROR_REASON_UNSPECIFIED = 'STREAMING_ERROR_REASON_UNSPECIFIED';
-    /**
-     * Some error occurred while setting up resources for realtime sync.
-     */
-    public const STREAMING_ERROR_REASON_STREAMING_SETUP_ERROR = 'STREAMING_SETUP_ERROR';
-    /**
-     * Some error was encountered while running realtime sync for the connector.
-     */
-    public const STREAMING_ERROR_REASON_STREAMING_SYNC_ERROR = 'STREAMING_SYNC_ERROR';
-    /**
-     * Ingress endpoint is required when setting up realtime sync in private
-     * connectivity.
-     */
-    public const STREAMING_ERROR_REASON_INGRESS_ENDPOINT_REQUIRED = 'INGRESS_ENDPOINT_REQUIRED';
-    protected $errorType = GoogleRpcStatus::class;
-    protected $errorDataType = '';
-    /**
-     * Optional. Streaming error.
-     *
-     * @var string
-     */
-    public $streamingErrorReason;
-    /**
-     * Optional. Error details.
-     *
-     * @param GoogleRpcStatus $error
-     */
-    public function setError(GoogleRpcStatus $error)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1DataConnectorRealtimeSyncConfigStreamingError extends \Google\Model
     {
+        /**
+         * Streaming error reason unspecified.
+         */
+        public const STREAMING_ERROR_REASON_STREAMING_ERROR_REASON_UNSPECIFIED = 'STREAMING_ERROR_REASON_UNSPECIFIED';
+        /**
+         * Some error occurred while setting up resources for realtime sync.
+         */
+        public const STREAMING_ERROR_REASON_STREAMING_SETUP_ERROR = 'STREAMING_SETUP_ERROR';
+        /**
+         * Some error was encountered while running realtime sync for the connector.
+         */
+        public const STREAMING_ERROR_REASON_STREAMING_SYNC_ERROR = 'STREAMING_SYNC_ERROR';
+        /**
+         * Ingress endpoint is required when setting up realtime sync in private
+         * connectivity.
+         */
+        public const STREAMING_ERROR_REASON_INGRESS_ENDPOINT_REQUIRED = 'INGRESS_ENDPOINT_REQUIRED';
+        protected $errorType = GoogleRpcStatus::class;
+        protected $errorDataType = '';
+        /**
+         * Optional. Streaming error.
+         *
+         * @var string
+         */
+        public $streamingErrorReason;
+        /**
+         * Optional. Error details.
+         *
+         * @param GoogleRpcStatus $error
+         */
+        public function setError(GoogleRpcStatus $error)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus
+         */
+        public function getError()
+        {
+        }
+        /**
+         * Optional. Streaming error.
+         *
+         * Accepted values: STREAMING_ERROR_REASON_UNSPECIFIED, STREAMING_SETUP_ERROR,
+         * STREAMING_SYNC_ERROR, INGRESS_ENDPOINT_REQUIRED
+         *
+         * @param self::STREAMING_ERROR_REASON_* $streamingErrorReason
+         */
+        public function setStreamingErrorReason($streamingErrorReason)
+        {
+        }
+        /**
+         * @return self::STREAMING_ERROR_REASON_*
+         */
+        public function getStreamingErrorReason()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleRpcStatus
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1DataConnectorRealtimeSyncConfigStreamingError registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getError()
-    {
-    }
-    /**
-     * Optional. Streaming error.
-     *
-     * Accepted values: STREAMING_ERROR_REASON_UNSPECIFIED, STREAMING_SETUP_ERROR,
-     * STREAMING_SYNC_ERROR, INGRESS_ENDPOINT_REQUIRED
-     *
-     * @param self::STREAMING_ERROR_REASON_* $streamingErrorReason
-     */
-    public function setStreamingErrorReason($streamingErrorReason)
-    {
-    }
-    /**
-     * @return self::STREAMING_ERROR_REASON_*
-     */
-    public function getStreamingErrorReason()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1DataConnectorRealtimeSyncConfigStreamingError extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1DataConnectorRealtimeSyncConfigStreamingError
     {
     }
 }

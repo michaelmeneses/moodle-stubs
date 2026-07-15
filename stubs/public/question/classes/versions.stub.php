@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_question;
 
+use core\attribute\deprecated;
+use core\di;
+use moodle_database;
 /**
  * Methods for finding and manipulating question versions
  *

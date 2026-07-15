@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class OncCertificateProvider extends \Google\Collection
-{
-    protected $collection_key = 'certificateReferences';
-    /**
-     * This feature is not generally available.
-     *
-     * @var string[]
-     */
-    public $certificateReferences;
-    protected $contentProviderEndpointType = ContentProviderEndpoint::class;
-    protected $contentProviderEndpointDataType = '';
-    /**
-     * This feature is not generally available.
-     *
-     * @param string[] $certificateReferences
-     */
-    public function setCertificateReferences($certificateReferences)
+namespace Google\Service\AndroidManagement {
+    class OncCertificateProvider extends \Google\Collection
     {
+        protected $collection_key = 'certificateReferences';
+        /**
+         * This feature is not generally available.
+         *
+         * @var string[]
+         */
+        public $certificateReferences;
+        protected $contentProviderEndpointType = ContentProviderEndpoint::class;
+        protected $contentProviderEndpointDataType = '';
+        /**
+         * This feature is not generally available.
+         *
+         * @param string[] $certificateReferences
+         */
+        public function setCertificateReferences($certificateReferences)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCertificateReferences()
+        {
+        }
+        /**
+         * This feature is not generally available.
+         *
+         * @param ContentProviderEndpoint $contentProviderEndpoint
+         */
+        public function setContentProviderEndpoint(ContentProviderEndpoint $contentProviderEndpoint)
+        {
+        }
+        /**
+         * @return ContentProviderEndpoint
+         */
+        public function getContentProviderEndpoint()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\AndroidManagement\OncCertificateProvider registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCertificateReferences()
-    {
-    }
-    /**
-     * This feature is not generally available.
-     *
-     * @param ContentProviderEndpoint $contentProviderEndpoint
-     */
-    public function setContentProviderEndpoint(ContentProviderEndpoint $contentProviderEndpoint)
-    {
-    }
-    /**
-     * @return ContentProviderEndpoint
-     */
-    public function getContentProviderEndpoint()
+    class Google_Service_AndroidManagement_OncCertificateProvider extends \Google\Service\AndroidManagement\OncCertificateProvider
     {
     }
 }

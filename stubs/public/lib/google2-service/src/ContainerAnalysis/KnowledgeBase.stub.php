@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class KnowledgeBase extends \Google\Model
-{
-    /**
-     * The KB name (generally of the form KB[0-9]+ (e.g., KB123456)).
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * A link to the KB in the [Windows update catalog]
-     * (https://www.catalog.update.microsoft.com/).
-     *
-     * @var string
-     */
-    public $url;
-    /**
-     * The KB name (generally of the form KB[0-9]+ (e.g., KB123456)).
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\ContainerAnalysis {
+    class KnowledgeBase extends \Google\Model
     {
+        /**
+         * The KB name (generally of the form KB[0-9]+ (e.g., KB123456)).
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * A link to the KB in the [Windows update catalog]
+         * (https://www.catalog.update.microsoft.com/).
+         *
+         * @var string
+         */
+        public $url;
+        /**
+         * The KB name (generally of the form KB[0-9]+ (e.g., KB123456)).
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * A link to the KB in the [Windows update catalog]
+         * (https://www.catalog.update.microsoft.com/).
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ContainerAnalysis\KnowledgeBase registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * A link to the KB in the [Windows update catalog]
-     * (https://www.catalog.update.microsoft.com/).
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
+    class Google_Service_ContainerAnalysis_KnowledgeBase extends \Google\Service\ContainerAnalysis\KnowledgeBase
     {
     }
 }

@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OnDemandScanning;
-
-class ListVulnerabilitiesResponseV1 extends \Google\Collection
-{
-    protected $collection_key = 'occurrences';
-    /**
-     * A page token that can be used in a subsequent call to ListVulnerabilities
-     * to continue retrieving results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $occurrencesType = Occurrence::class;
-    protected $occurrencesDataType = 'array';
-    /**
-     * A page token that can be used in a subsequent call to ListVulnerabilities
-     * to continue retrieving results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\OnDemandScanning {
+    class ListVulnerabilitiesResponseV1 extends \Google\Collection
     {
+        protected $collection_key = 'occurrences';
+        /**
+         * A page token that can be used in a subsequent call to ListVulnerabilities
+         * to continue retrieving results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $occurrencesType = Occurrence::class;
+        protected $occurrencesDataType = 'array';
+        /**
+         * A page token that can be used in a subsequent call to ListVulnerabilities
+         * to continue retrieving results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of Vulnerability Occurrences resulting from a scan.
+         *
+         * @param Occurrence[] $occurrences
+         */
+        public function setOccurrences($occurrences)
+        {
+        }
+        /**
+         * @return Occurrence[]
+         */
+        public function getOccurrences()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OnDemandScanning\ListVulnerabilitiesResponseV1 registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of Vulnerability Occurrences resulting from a scan.
-     *
-     * @param Occurrence[] $occurrences
-     */
-    public function setOccurrences($occurrences)
-    {
-    }
-    /**
-     * @return Occurrence[]
-     */
-    public function getOccurrences()
+    class Google_Service_OnDemandScanning_ListVulnerabilitiesResponseV1 extends \Google\Service\OnDemandScanning\ListVulnerabilitiesResponseV1
     {
     }
 }

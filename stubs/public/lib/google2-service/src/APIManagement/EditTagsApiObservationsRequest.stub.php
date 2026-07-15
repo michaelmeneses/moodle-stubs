@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIManagement;
-
-class EditTagsApiObservationsRequest extends \Google\Collection
-{
-    protected $collection_key = 'tagActions';
-    /**
-     * Required. Identifier of ApiObservation need to be edit tags Format example:
-     * "apigee.googleapis.com|us-west1|443"
-     *
-     * @var string
-     */
-    public $apiObservationId;
-    protected $tagActionsType = TagAction::class;
-    protected $tagActionsDataType = 'array';
-    /**
-     * Required. Identifier of ApiObservation need to be edit tags Format example:
-     * "apigee.googleapis.com|us-west1|443"
-     *
-     * @param string $apiObservationId
-     */
-    public function setApiObservationId($apiObservationId)
+namespace Google\Service\APIManagement {
+    class EditTagsApiObservationsRequest extends \Google\Collection
     {
+        protected $collection_key = 'tagActions';
+        /**
+         * Required. Identifier of ApiObservation need to be edit tags Format example:
+         * "apigee.googleapis.com|us-west1|443"
+         *
+         * @var string
+         */
+        public $apiObservationId;
+        protected $tagActionsType = TagAction::class;
+        protected $tagActionsDataType = 'array';
+        /**
+         * Required. Identifier of ApiObservation need to be edit tags Format example:
+         * "apigee.googleapis.com|us-west1|443"
+         *
+         * @param string $apiObservationId
+         */
+        public function setApiObservationId($apiObservationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApiObservationId()
+        {
+        }
+        /**
+         * Required. Tag actions to be applied
+         *
+         * @param TagAction[] $tagActions
+         */
+        public function setTagActions($tagActions)
+        {
+        }
+        /**
+         * @return TagAction[]
+         */
+        public function getTagActions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\APIManagement\EditTagsApiObservationsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiObservationId()
-    {
-    }
-    /**
-     * Required. Tag actions to be applied
-     *
-     * @param TagAction[] $tagActions
-     */
-    public function setTagActions($tagActions)
-    {
-    }
-    /**
-     * @return TagAction[]
-     */
-    public function getTagActions()
+    class Google_Service_APIManagement_EditTagsApiObservationsRequest extends \Google\Service\APIManagement\EditTagsApiObservationsRequest
     {
     }
 }

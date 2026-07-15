@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1DataProductAccessGroup extends \Google\Model
-{
-    /**
-     * Optional. Description of the access group.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Required. User friendly display name of the access group. Eg. "Analyst",
-     * "Developer", etc.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Required. Unique identifier of the access group within the Data Product.
-     * User defined. Eg. "analyst", "developer", etc.
-     *
-     * @var string
-     */
-    public $id;
-    protected $principalType = GoogleCloudDataplexV1DataProductPrincipal::class;
-    protected $principalDataType = '';
-    /**
-     * Optional. Description of the access group.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1DataProductAccessGroup extends \Google\Model
     {
+        /**
+         * Optional. Description of the access group.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Required. User friendly display name of the access group. Eg. "Analyst",
+         * "Developer", etc.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Required. Unique identifier of the access group within the Data Product.
+         * User defined. Eg. "analyst", "developer", etc.
+         *
+         * @var string
+         */
+        public $id;
+        protected $principalType = GoogleCloudDataplexV1DataProductPrincipal::class;
+        protected $principalDataType = '';
+        /**
+         * Optional. Description of the access group.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Required. User friendly display name of the access group. Eg. "Analyst",
+         * "Developer", etc.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Required. Unique identifier of the access group within the Data Product.
+         * User defined. Eg. "analyst", "developer", etc.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Required. The principal entity associated with this access group.
+         *
+         * @param GoogleCloudDataplexV1DataProductPrincipal $principal
+         */
+        public function setPrincipal(GoogleCloudDataplexV1DataProductPrincipal $principal)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1DataProductPrincipal
+         */
+        public function getPrincipal()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataProductAccessGroup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * Required. User friendly display name of the access group. Eg. "Analyst",
-     * "Developer", etc.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Required. Unique identifier of the access group within the Data Product.
-     * User defined. Eg. "analyst", "developer", etc.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Required. The principal entity associated with this access group.
-     *
-     * @param GoogleCloudDataplexV1DataProductPrincipal $principal
-     */
-    public function setPrincipal(GoogleCloudDataplexV1DataProductPrincipal $principal)
-    {
-    }
-    /**
-     * @return GoogleCloudDataplexV1DataProductPrincipal
-     */
-    public function getPrincipal()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1DataProductAccessGroup extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataProductAccessGroup
     {
     }
 }

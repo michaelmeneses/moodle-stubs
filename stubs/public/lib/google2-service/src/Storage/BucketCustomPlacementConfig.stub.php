@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storage;
-
-class BucketCustomPlacementConfig extends \Google\Collection
-{
-    protected $collection_key = 'dataLocations';
-    /**
-     * The list of regional locations in which data is placed.
-     *
-     * @var string[]
-     */
-    public $dataLocations;
-    /**
-     * The list of regional locations in which data is placed.
-     *
-     * @param string[] $dataLocations
-     */
-    public function setDataLocations($dataLocations)
+namespace Google\Service\Storage {
+    class BucketCustomPlacementConfig extends \Google\Collection
     {
+        protected $collection_key = 'dataLocations';
+        /**
+         * The list of regional locations in which data is placed.
+         *
+         * @var string[]
+         */
+        public $dataLocations;
+        /**
+         * The list of regional locations in which data is placed.
+         *
+         * @param string[] $dataLocations
+         */
+        public function setDataLocations($dataLocations)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDataLocations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Storage\BucketCustomPlacementConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataLocations()
+    class Google_Service_Storage_BucketCustomPlacementConfig extends \Google\Service\Storage\BucketCustomPlacementConfig
     {
     }
 }

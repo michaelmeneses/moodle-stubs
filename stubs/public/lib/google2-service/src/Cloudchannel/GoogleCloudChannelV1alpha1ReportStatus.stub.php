@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1alpha1ReportStatus extends \Google\Model
-{
-    /**
-     * Not used.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * Report processing started.
-     */
-    public const STATE_STARTED = 'STARTED';
-    /**
-     * Data generated from the report is being staged.
-     */
-    public const STATE_WRITING = 'WRITING';
-    /**
-     * Report data is available for access.
-     */
-    public const STATE_AVAILABLE = 'AVAILABLE';
-    /**
-     * Report failed.
-     */
-    public const STATE_FAILED = 'FAILED';
-    /**
-     * The report generation's completion time.
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * The report generation's start time.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * The current state of the report generation process.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * The report generation's completion time.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1alpha1ReportStatus extends \Google\Model
     {
+        /**
+         * Not used.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * Report processing started.
+         */
+        public const STATE_STARTED = 'STARTED';
+        /**
+         * Data generated from the report is being staged.
+         */
+        public const STATE_WRITING = 'WRITING';
+        /**
+         * Report data is available for access.
+         */
+        public const STATE_AVAILABLE = 'AVAILABLE';
+        /**
+         * Report failed.
+         */
+        public const STATE_FAILED = 'FAILED';
+        /**
+         * The report generation's completion time.
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * The report generation's start time.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * The current state of the report generation process.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * The report generation's completion time.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * The report generation's start time.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
+        /**
+         * The current state of the report generation process.
+         *
+         * Accepted values: STATE_UNSPECIFIED, STARTED, WRITING, AVAILABLE, FAILED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1alpha1ReportStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndTime()
-    {
-    }
-    /**
-     * The report generation's start time.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
-    {
-    }
-    /**
-     * The current state of the report generation process.
-     *
-     * Accepted values: STATE_UNSPECIFIED, STARTED, WRITING, AVAILABLE, FAILED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1alpha1ReportStatus extends \Google\Service\Cloudchannel\GoogleCloudChannelV1alpha1ReportStatus
     {
     }
 }

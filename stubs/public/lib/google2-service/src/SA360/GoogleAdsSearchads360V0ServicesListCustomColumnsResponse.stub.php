@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0ServicesListCustomColumnsResponse extends \Google\Collection
-{
-    protected $collection_key = 'customColumns';
-    protected $customColumnsType = GoogleAdsSearchads360V0ResourcesCustomColumn::class;
-    protected $customColumnsDataType = 'array';
-    /**
-     * The CustomColumns owned by the provided customer.
-     *
-     * @param GoogleAdsSearchads360V0ResourcesCustomColumn[] $customColumns
-     */
-    public function setCustomColumns($customColumns)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0ServicesListCustomColumnsResponse extends \Google\Collection
     {
+        protected $collection_key = 'customColumns';
+        protected $customColumnsType = GoogleAdsSearchads360V0ResourcesCustomColumn::class;
+        protected $customColumnsDataType = 'array';
+        /**
+         * The CustomColumns owned by the provided customer.
+         *
+         * @param GoogleAdsSearchads360V0ResourcesCustomColumn[] $customColumns
+         */
+        public function setCustomColumns($customColumns)
+        {
+        }
+        /**
+         * @return GoogleAdsSearchads360V0ResourcesCustomColumn[]
+         */
+        public function getCustomColumns()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAdsSearchads360V0ResourcesCustomColumn[]
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0ServicesListCustomColumnsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomColumns()
+    class Google_Service_SA360_GoogleAdsSearchads360V0ServicesListCustomColumnsResponse extends \Google\Service\SA360\GoogleAdsSearchads360V0ServicesListCustomColumnsResponse
     {
     }
 }

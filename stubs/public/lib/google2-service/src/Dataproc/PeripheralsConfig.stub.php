@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class PeripheralsConfig extends \Google\Model
-{
-    /**
-     * Optional. Resource name of an existing Dataproc Metastore service.Example:
-     * projects/[project_id]/locations/[region]/services/[service_id]
-     *
-     * @var string
-     */
-    public $metastoreService;
-    protected $sparkHistoryServerConfigType = SparkHistoryServerConfig::class;
-    protected $sparkHistoryServerConfigDataType = '';
-    /**
-     * Optional. Resource name of an existing Dataproc Metastore service.Example:
-     * projects/[project_id]/locations/[region]/services/[service_id]
-     *
-     * @param string $metastoreService
-     */
-    public function setMetastoreService($metastoreService)
+namespace Google\Service\Dataproc {
+    class PeripheralsConfig extends \Google\Model
     {
+        /**
+         * Optional. Resource name of an existing Dataproc Metastore service.Example:
+         * projects/[project_id]/locations/[region]/services/[service_id]
+         *
+         * @var string
+         */
+        public $metastoreService;
+        protected $sparkHistoryServerConfigType = SparkHistoryServerConfig::class;
+        protected $sparkHistoryServerConfigDataType = '';
+        /**
+         * Optional. Resource name of an existing Dataproc Metastore service.Example:
+         * projects/[project_id]/locations/[region]/services/[service_id]
+         *
+         * @param string $metastoreService
+         */
+        public function setMetastoreService($metastoreService)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMetastoreService()
+        {
+        }
+        /**
+         * Optional. The Spark History Server configuration for the workload.
+         *
+         * @param SparkHistoryServerConfig $sparkHistoryServerConfig
+         */
+        public function setSparkHistoryServerConfig(SparkHistoryServerConfig $sparkHistoryServerConfig)
+        {
+        }
+        /**
+         * @return SparkHistoryServerConfig
+         */
+        public function getSparkHistoryServerConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\PeripheralsConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetastoreService()
-    {
-    }
-    /**
-     * Optional. The Spark History Server configuration for the workload.
-     *
-     * @param SparkHistoryServerConfig $sparkHistoryServerConfig
-     */
-    public function setSparkHistoryServerConfig(SparkHistoryServerConfig $sparkHistoryServerConfig)
-    {
-    }
-    /**
-     * @return SparkHistoryServerConfig
-     */
-    public function getSparkHistoryServerConfig()
+    class Google_Service_Dataproc_PeripheralsConfig extends \Google\Service\Dataproc\PeripheralsConfig
     {
     }
 }

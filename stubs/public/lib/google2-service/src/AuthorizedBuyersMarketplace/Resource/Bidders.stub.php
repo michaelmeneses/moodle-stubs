@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AuthorizedBuyersMarketplace\Resource;
-
-/**
- * The "bidders" collection of methods.
- * Typical usage is:
- *  <code>
- *   $authorizedbuyersmarketplaceService = new Google\Service\AuthorizedBuyersMarketplace(...);
- *   $bidders = $authorizedbuyersmarketplaceService->bidders;
- *  </code>
- */
-class Bidders extends \Google\Service\Resource
-{
+namespace Google\Service\AuthorizedBuyersMarketplace\Resource {
+    /**
+     * The "bidders" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $authorizedbuyersmarketplaceService = new Google\Service\AuthorizedBuyersMarketplace(...);
+     *   $bidders = $authorizedbuyersmarketplaceService->bidders;
+     *  </code>
+     */
+    class Bidders extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AuthorizedBuyersMarketplace\Resource\Bidders registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AuthorizedBuyersMarketplace_Resource_Bidders extends \Google\Service\AuthorizedBuyersMarketplace\Resource\Bidders
+    {
+    }
 }

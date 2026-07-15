@@ -21,35 +21,44 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class ChannelToStoreLinkDetailsBillingDetails extends \Google\Model
-{
-    public const BILLING_STATUS_billingStatusUnspecified = 'billingStatusUnspecified';
-    public const BILLING_STATUS_billingStatusPending = 'billingStatusPending';
-    public const BILLING_STATUS_billingStatusActive = 'billingStatusActive';
-    public const BILLING_STATUS_billingStatusInactive = 'billingStatusInactive';
-    /**
-     * The current billing profile status.
-     *
-     * @var string
-     */
-    public $billingStatus;
-    /**
-     * The current billing profile status.
-     *
-     * Accepted values: billingStatusUnspecified, billingStatusPending,
-     * billingStatusActive, billingStatusInactive
-     *
-     * @param self::BILLING_STATUS_* $billingStatus
-     */
-    public function setBillingStatus($billingStatus)
+namespace Google\Service\YouTube {
+    class ChannelToStoreLinkDetailsBillingDetails extends \Google\Model
     {
+        public const BILLING_STATUS_billingStatusUnspecified = 'billingStatusUnspecified';
+        public const BILLING_STATUS_billingStatusPending = 'billingStatusPending';
+        public const BILLING_STATUS_billingStatusActive = 'billingStatusActive';
+        public const BILLING_STATUS_billingStatusInactive = 'billingStatusInactive';
+        /**
+         * The current billing profile status.
+         *
+         * @var string
+         */
+        public $billingStatus;
+        /**
+         * The current billing profile status.
+         *
+         * Accepted values: billingStatusUnspecified, billingStatusPending,
+         * billingStatusActive, billingStatusInactive
+         *
+         * @param self::BILLING_STATUS_* $billingStatus
+         */
+        public function setBillingStatus($billingStatus)
+        {
+        }
+        /**
+         * @return self::BILLING_STATUS_*
+         */
+        public function getBillingStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::BILLING_STATUS_*
+     * Runtime class alias of \Google\Service\YouTube\ChannelToStoreLinkDetailsBillingDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBillingStatus()
+    class Google_Service_YouTube_ChannelToStoreLinkDetailsBillingDetails extends \Google\Service\YouTube\ChannelToStoreLinkDetailsBillingDetails
     {
     }
 }

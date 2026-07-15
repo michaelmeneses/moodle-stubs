@@ -21,139 +21,148 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class CloudAiPlatformTenantresourceGcsBucketConfig extends \Google\Collection
-{
-    protected $collection_key = 'viewers';
-    /**
-     * @var string[]
-     */
-    public $admins;
-    /**
-     * Input/Output [Optional]. The name of a GCS bucket with max length of 63
-     * chars. If not set, a random UUID will be generated as bucket name.
-     *
-     * @var string
-     */
-    public $bucketName;
-    /**
-     * Input/Output [Optional]. Only needed for per-entity tenant GCP resources.
-     * During Deprovision API, the on-demand deletion will only cover the tenant
-     * GCP resources with the specified entity name.
-     *
-     * @var string
-     */
-    public $entityName;
-    /**
-     * Input/Output [Optional]. The KMS key name or the KMS grant name used for
-     * CMEK encryption. Only set this field when provisioning new GCS bucket. For
-     * existing GCS bucket, this field will be ignored because CMEK re-encryption
-     * is not supported.
-     *
-     * @var string
-     */
-    public $kmsKeyReference;
-    /**
-     * Input/Output [Optional]. Only needed when the content in bucket need to be
-     * garbage collected within some amount of days.
-     *
-     * @var int
-     */
-    public $ttlDays;
-    /**
-     * Input/Output [Required]. IAM roles (viewer/admin) put on the bucket.
-     *
-     * @var string[]
-     */
-    public $viewers;
-    /**
-     * @param string[] $admins
-     */
-    public function setAdmins($admins)
+namespace Google\Service\Contentwarehouse {
+    class CloudAiPlatformTenantresourceGcsBucketConfig extends \Google\Collection
     {
+        protected $collection_key = 'viewers';
+        /**
+         * @var string[]
+         */
+        public $admins;
+        /**
+         * Input/Output [Optional]. The name of a GCS bucket with max length of 63
+         * chars. If not set, a random UUID will be generated as bucket name.
+         *
+         * @var string
+         */
+        public $bucketName;
+        /**
+         * Input/Output [Optional]. Only needed for per-entity tenant GCP resources.
+         * During Deprovision API, the on-demand deletion will only cover the tenant
+         * GCP resources with the specified entity name.
+         *
+         * @var string
+         */
+        public $entityName;
+        /**
+         * Input/Output [Optional]. The KMS key name or the KMS grant name used for
+         * CMEK encryption. Only set this field when provisioning new GCS bucket. For
+         * existing GCS bucket, this field will be ignored because CMEK re-encryption
+         * is not supported.
+         *
+         * @var string
+         */
+        public $kmsKeyReference;
+        /**
+         * Input/Output [Optional]. Only needed when the content in bucket need to be
+         * garbage collected within some amount of days.
+         *
+         * @var int
+         */
+        public $ttlDays;
+        /**
+         * Input/Output [Required]. IAM roles (viewer/admin) put on the bucket.
+         *
+         * @var string[]
+         */
+        public $viewers;
+        /**
+         * @param string[] $admins
+         */
+        public function setAdmins($admins)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAdmins()
+        {
+        }
+        /**
+         * Input/Output [Optional]. The name of a GCS bucket with max length of 63
+         * chars. If not set, a random UUID will be generated as bucket name.
+         *
+         * @param string $bucketName
+         */
+        public function setBucketName($bucketName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBucketName()
+        {
+        }
+        /**
+         * Input/Output [Optional]. Only needed for per-entity tenant GCP resources.
+         * During Deprovision API, the on-demand deletion will only cover the tenant
+         * GCP resources with the specified entity name.
+         *
+         * @param string $entityName
+         */
+        public function setEntityName($entityName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEntityName()
+        {
+        }
+        /**
+         * Input/Output [Optional]. The KMS key name or the KMS grant name used for
+         * CMEK encryption. Only set this field when provisioning new GCS bucket. For
+         * existing GCS bucket, this field will be ignored because CMEK re-encryption
+         * is not supported.
+         *
+         * @param string $kmsKeyReference
+         */
+        public function setKmsKeyReference($kmsKeyReference)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKmsKeyReference()
+        {
+        }
+        /**
+         * Input/Output [Optional]. Only needed when the content in bucket need to be
+         * garbage collected within some amount of days.
+         *
+         * @param int $ttlDays
+         */
+        public function setTtlDays($ttlDays)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTtlDays()
+        {
+        }
+        /**
+         * Input/Output [Required]. IAM roles (viewer/admin) put on the bucket.
+         *
+         * @param string[] $viewers
+         */
+        public function setViewers($viewers)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getViewers()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Contentwarehouse\CloudAiPlatformTenantresourceGcsBucketConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdmins()
-    {
-    }
-    /**
-     * Input/Output [Optional]. The name of a GCS bucket with max length of 63
-     * chars. If not set, a random UUID will be generated as bucket name.
-     *
-     * @param string $bucketName
-     */
-    public function setBucketName($bucketName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBucketName()
-    {
-    }
-    /**
-     * Input/Output [Optional]. Only needed for per-entity tenant GCP resources.
-     * During Deprovision API, the on-demand deletion will only cover the tenant
-     * GCP resources with the specified entity name.
-     *
-     * @param string $entityName
-     */
-    public function setEntityName($entityName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEntityName()
-    {
-    }
-    /**
-     * Input/Output [Optional]. The KMS key name or the KMS grant name used for
-     * CMEK encryption. Only set this field when provisioning new GCS bucket. For
-     * existing GCS bucket, this field will be ignored because CMEK re-encryption
-     * is not supported.
-     *
-     * @param string $kmsKeyReference
-     */
-    public function setKmsKeyReference($kmsKeyReference)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKmsKeyReference()
-    {
-    }
-    /**
-     * Input/Output [Optional]. Only needed when the content in bucket need to be
-     * garbage collected within some amount of days.
-     *
-     * @param int $ttlDays
-     */
-    public function setTtlDays($ttlDays)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTtlDays()
-    {
-    }
-    /**
-     * Input/Output [Required]. IAM roles (viewer/admin) put on the bucket.
-     *
-     * @param string[] $viewers
-     */
-    public function setViewers($viewers)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getViewers()
+    class Google_Service_Contentwarehouse_CloudAiPlatformTenantresourceGcsBucketConfig extends \Google\Service\Contentwarehouse\CloudAiPlatformTenantresourceGcsBucketConfig
     {
     }
 }

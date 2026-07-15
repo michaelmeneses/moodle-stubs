@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1DeleteFeatureValuesResponseSelectEntity extends \Google\Model
-{
-    /**
-     * The count of deleted entity rows in the offline storage. Each row
-     * corresponds to the combination of an entity ID and a timestamp. One entity
-     * ID can have multiple rows in the offline storage.
-     *
-     * @var string
-     */
-    public $offlineStorageDeletedEntityRowCount;
-    /**
-     * The count of deleted entities in the online storage. Each entity ID
-     * corresponds to one entity.
-     *
-     * @var string
-     */
-    public $onlineStorageDeletedEntityCount;
-    /**
-     * The count of deleted entity rows in the offline storage. Each row
-     * corresponds to the combination of an entity ID and a timestamp. One entity
-     * ID can have multiple rows in the offline storage.
-     *
-     * @param string $offlineStorageDeletedEntityRowCount
-     */
-    public function setOfflineStorageDeletedEntityRowCount($offlineStorageDeletedEntityRowCount)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1DeleteFeatureValuesResponseSelectEntity extends \Google\Model
     {
+        /**
+         * The count of deleted entity rows in the offline storage. Each row
+         * corresponds to the combination of an entity ID and a timestamp. One entity
+         * ID can have multiple rows in the offline storage.
+         *
+         * @var string
+         */
+        public $offlineStorageDeletedEntityRowCount;
+        /**
+         * The count of deleted entities in the online storage. Each entity ID
+         * corresponds to one entity.
+         *
+         * @var string
+         */
+        public $onlineStorageDeletedEntityCount;
+        /**
+         * The count of deleted entity rows in the offline storage. Each row
+         * corresponds to the combination of an entity ID and a timestamp. One entity
+         * ID can have multiple rows in the offline storage.
+         *
+         * @param string $offlineStorageDeletedEntityRowCount
+         */
+        public function setOfflineStorageDeletedEntityRowCount($offlineStorageDeletedEntityRowCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOfflineStorageDeletedEntityRowCount()
+        {
+        }
+        /**
+         * The count of deleted entities in the online storage. Each entity ID
+         * corresponds to one entity.
+         *
+         * @param string $onlineStorageDeletedEntityCount
+         */
+        public function setOnlineStorageDeletedEntityCount($onlineStorageDeletedEntityCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOnlineStorageDeletedEntityCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1DeleteFeatureValuesResponseSelectEntity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOfflineStorageDeletedEntityRowCount()
-    {
-    }
-    /**
-     * The count of deleted entities in the online storage. Each entity ID
-     * corresponds to one entity.
-     *
-     * @param string $onlineStorageDeletedEntityCount
-     */
-    public function setOnlineStorageDeletedEntityCount($onlineStorageDeletedEntityCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOnlineStorageDeletedEntityCount()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1DeleteFeatureValuesResponseSelectEntity extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1DeleteFeatureValuesResponseSelectEntity
     {
     }
 }

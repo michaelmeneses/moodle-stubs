@@ -21,231 +21,240 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OracleDatabase;
-
-class DbNodeProperties extends \Google\Model
-{
-    /**
-     * Default unspecified value.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * Indicates that the resource is in provisioning state.
-     */
-    public const STATE_PROVISIONING = 'PROVISIONING';
-    /**
-     * Indicates that the resource is in available state.
-     */
-    public const STATE_AVAILABLE = 'AVAILABLE';
-    /**
-     * Indicates that the resource is in updating state.
-     */
-    public const STATE_UPDATING = 'UPDATING';
-    /**
-     * Indicates that the resource is in stopping state.
-     */
-    public const STATE_STOPPING = 'STOPPING';
-    /**
-     * Indicates that the resource is in stopped state.
-     */
-    public const STATE_STOPPED = 'STOPPED';
-    /**
-     * Indicates that the resource is in starting state.
-     */
-    public const STATE_STARTING = 'STARTING';
-    /**
-     * Indicates that the resource is in terminating state.
-     */
-    public const STATE_TERMINATING = 'TERMINATING';
-    /**
-     * Indicates that the resource is in terminated state.
-     */
-    public const STATE_TERMINATED = 'TERMINATED';
-    /**
-     * Indicates that the resource is in failed state.
-     */
-    public const STATE_FAILED = 'FAILED';
-    /**
-     * Output only. The date and time that the database node was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Optional. Local storage per database node.
-     *
-     * @var int
-     */
-    public $dbNodeStorageSizeGb;
-    /**
-     * Optional. Database server OCID.
-     *
-     * @var string
-     */
-    public $dbServerOcid;
-    /**
-     * Optional. DNS
-     *
-     * @var string
-     */
-    public $hostname;
-    /**
-     * Memory allocated in GBs.
-     *
-     * @var int
-     */
-    public $memorySizeGb;
-    /**
-     * Output only. OCID of database node.
-     *
-     * @var string
-     */
-    public $ocid;
-    /**
-     * Optional. OCPU count per database node.
-     *
-     * @var int
-     */
-    public $ocpuCount;
-    /**
-     * Output only. State of the database node.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Total CPU core count of the database node.
-     *
-     * @var int
-     */
-    public $totalCpuCoreCount;
-    /**
-     * Output only. The date and time that the database node was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\OracleDatabase {
+    class DbNodeProperties extends \Google\Model
     {
+        /**
+         * Default unspecified value.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * Indicates that the resource is in provisioning state.
+         */
+        public const STATE_PROVISIONING = 'PROVISIONING';
+        /**
+         * Indicates that the resource is in available state.
+         */
+        public const STATE_AVAILABLE = 'AVAILABLE';
+        /**
+         * Indicates that the resource is in updating state.
+         */
+        public const STATE_UPDATING = 'UPDATING';
+        /**
+         * Indicates that the resource is in stopping state.
+         */
+        public const STATE_STOPPING = 'STOPPING';
+        /**
+         * Indicates that the resource is in stopped state.
+         */
+        public const STATE_STOPPED = 'STOPPED';
+        /**
+         * Indicates that the resource is in starting state.
+         */
+        public const STATE_STARTING = 'STARTING';
+        /**
+         * Indicates that the resource is in terminating state.
+         */
+        public const STATE_TERMINATING = 'TERMINATING';
+        /**
+         * Indicates that the resource is in terminated state.
+         */
+        public const STATE_TERMINATED = 'TERMINATED';
+        /**
+         * Indicates that the resource is in failed state.
+         */
+        public const STATE_FAILED = 'FAILED';
+        /**
+         * Output only. The date and time that the database node was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Optional. Local storage per database node.
+         *
+         * @var int
+         */
+        public $dbNodeStorageSizeGb;
+        /**
+         * Optional. Database server OCID.
+         *
+         * @var string
+         */
+        public $dbServerOcid;
+        /**
+         * Optional. DNS
+         *
+         * @var string
+         */
+        public $hostname;
+        /**
+         * Memory allocated in GBs.
+         *
+         * @var int
+         */
+        public $memorySizeGb;
+        /**
+         * Output only. OCID of database node.
+         *
+         * @var string
+         */
+        public $ocid;
+        /**
+         * Optional. OCPU count per database node.
+         *
+         * @var int
+         */
+        public $ocpuCount;
+        /**
+         * Output only. State of the database node.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Total CPU core count of the database node.
+         *
+         * @var int
+         */
+        public $totalCpuCoreCount;
+        /**
+         * Output only. The date and time that the database node was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Optional. Local storage per database node.
+         *
+         * @param int $dbNodeStorageSizeGb
+         */
+        public function setDbNodeStorageSizeGb($dbNodeStorageSizeGb)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getDbNodeStorageSizeGb()
+        {
+        }
+        /**
+         * Optional. Database server OCID.
+         *
+         * @param string $dbServerOcid
+         */
+        public function setDbServerOcid($dbServerOcid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDbServerOcid()
+        {
+        }
+        /**
+         * Optional. DNS
+         *
+         * @param string $hostname
+         */
+        public function setHostname($hostname)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHostname()
+        {
+        }
+        /**
+         * Memory allocated in GBs.
+         *
+         * @param int $memorySizeGb
+         */
+        public function setMemorySizeGb($memorySizeGb)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMemorySizeGb()
+        {
+        }
+        /**
+         * Output only. OCID of database node.
+         *
+         * @param string $ocid
+         */
+        public function setOcid($ocid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOcid()
+        {
+        }
+        /**
+         * Optional. OCPU count per database node.
+         *
+         * @param int $ocpuCount
+         */
+        public function setOcpuCount($ocpuCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getOcpuCount()
+        {
+        }
+        /**
+         * Output only. State of the database node.
+         *
+         * Accepted values: STATE_UNSPECIFIED, PROVISIONING, AVAILABLE, UPDATING,
+         * STOPPING, STOPPED, STARTING, TERMINATING, TERMINATED, FAILED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Total CPU core count of the database node.
+         *
+         * @param int $totalCpuCoreCount
+         */
+        public function setTotalCpuCoreCount($totalCpuCoreCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalCpuCoreCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OracleDatabase\DbNodeProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Optional. Local storage per database node.
-     *
-     * @param int $dbNodeStorageSizeGb
-     */
-    public function setDbNodeStorageSizeGb($dbNodeStorageSizeGb)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getDbNodeStorageSizeGb()
-    {
-    }
-    /**
-     * Optional. Database server OCID.
-     *
-     * @param string $dbServerOcid
-     */
-    public function setDbServerOcid($dbServerOcid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDbServerOcid()
-    {
-    }
-    /**
-     * Optional. DNS
-     *
-     * @param string $hostname
-     */
-    public function setHostname($hostname)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHostname()
-    {
-    }
-    /**
-     * Memory allocated in GBs.
-     *
-     * @param int $memorySizeGb
-     */
-    public function setMemorySizeGb($memorySizeGb)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMemorySizeGb()
-    {
-    }
-    /**
-     * Output only. OCID of database node.
-     *
-     * @param string $ocid
-     */
-    public function setOcid($ocid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOcid()
-    {
-    }
-    /**
-     * Optional. OCPU count per database node.
-     *
-     * @param int $ocpuCount
-     */
-    public function setOcpuCount($ocpuCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getOcpuCount()
-    {
-    }
-    /**
-     * Output only. State of the database node.
-     *
-     * Accepted values: STATE_UNSPECIFIED, PROVISIONING, AVAILABLE, UPDATING,
-     * STOPPING, STOPPED, STARTING, TERMINATING, TERMINATED, FAILED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Total CPU core count of the database node.
-     *
-     * @param int $totalCpuCoreCount
-     */
-    public function setTotalCpuCoreCount($totalCpuCoreCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalCpuCoreCount()
+    class Google_Service_OracleDatabase_DbNodeProperties extends \Google\Service\OracleDatabase\DbNodeProperties
     {
     }
 }

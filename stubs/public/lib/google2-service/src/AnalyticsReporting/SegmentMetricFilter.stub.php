@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsReporting;
-
-class SegmentMetricFilter extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $comparisonValue;
-    /**
-     * @var string
-     */
-    public $maxComparisonValue;
-    /**
-     * @var string
-     */
-    public $metricName;
-    /**
-     * @var string
-     */
-    public $operator;
-    /**
-     * @var string
-     */
-    public $scope;
-    /**
-     * @param string
-     */
-    public function setComparisonValue($comparisonValue)
+namespace Google\Service\AnalyticsReporting {
+    class SegmentMetricFilter extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $comparisonValue;
+        /**
+         * @var string
+         */
+        public $maxComparisonValue;
+        /**
+         * @var string
+         */
+        public $metricName;
+        /**
+         * @var string
+         */
+        public $operator;
+        /**
+         * @var string
+         */
+        public $scope;
+        /**
+         * @param string
+         */
+        public function setComparisonValue($comparisonValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getComparisonValue()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMaxComparisonValue($maxComparisonValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaxComparisonValue()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMetricName($metricName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMetricName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOperator($operator)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOperator()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setScope($scope)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScope()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AnalyticsReporting\SegmentMetricFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getComparisonValue()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMaxComparisonValue($maxComparisonValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMaxComparisonValue()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMetricName($metricName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMetricName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOperator($operator)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOperator()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setScope($scope)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getScope()
+    class Google_Service_AnalyticsReporting_SegmentMetricFilter extends \Google\Service\AnalyticsReporting\SegmentMetricFilter
     {
     }
 }

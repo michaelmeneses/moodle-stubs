@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Doubleclicksearch;
-
-class ConversionList extends \Google\Collection
-{
-    protected $collection_key = 'conversion';
-    protected $conversionType = Conversion::class;
-    protected $conversionDataType = 'array';
-    /**
-     * Identifies this as a ConversionList resource. Value: the fixed string
-     * doubleclicksearch#conversionList.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The conversions being requested.
-     *
-     * @param Conversion[] $conversion
-     */
-    public function setConversion($conversion)
+namespace Google\Service\Doubleclicksearch {
+    class ConversionList extends \Google\Collection
     {
+        protected $collection_key = 'conversion';
+        protected $conversionType = Conversion::class;
+        protected $conversionDataType = 'array';
+        /**
+         * Identifies this as a ConversionList resource. Value: the fixed string
+         * doubleclicksearch#conversionList.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The conversions being requested.
+         *
+         * @param Conversion[] $conversion
+         */
+        public function setConversion($conversion)
+        {
+        }
+        /**
+         * @return Conversion[]
+         */
+        public function getConversion()
+        {
+        }
+        /**
+         * Identifies this as a ConversionList resource. Value: the fixed string
+         * doubleclicksearch#conversionList.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Conversion[]
+     * Runtime class alias of \Google\Service\Doubleclicksearch\ConversionList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConversion()
-    {
-    }
-    /**
-     * Identifies this as a ConversionList resource. Value: the fixed string
-     * doubleclicksearch#conversionList.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_Doubleclicksearch_ConversionList extends \Google\Service\Doubleclicksearch\ConversionList
     {
     }
 }

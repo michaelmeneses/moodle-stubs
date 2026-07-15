@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firebaseappcheck;
-
-class GoogleFirebaseAppcheckV1BatchGetPlayIntegrityConfigsResponse extends \Google\Collection
-{
-    protected $collection_key = 'configs';
-    protected $configsType = GoogleFirebaseAppcheckV1PlayIntegrityConfig::class;
-    protected $configsDataType = 'array';
-    /**
-     * PlayIntegrityConfigs retrieved.
-     *
-     * @param GoogleFirebaseAppcheckV1PlayIntegrityConfig[] $configs
-     */
-    public function setConfigs($configs)
+namespace Google\Service\Firebaseappcheck {
+    class GoogleFirebaseAppcheckV1BatchGetPlayIntegrityConfigsResponse extends \Google\Collection
     {
+        protected $collection_key = 'configs';
+        protected $configsType = GoogleFirebaseAppcheckV1PlayIntegrityConfig::class;
+        protected $configsDataType = 'array';
+        /**
+         * PlayIntegrityConfigs retrieved.
+         *
+         * @param GoogleFirebaseAppcheckV1PlayIntegrityConfig[] $configs
+         */
+        public function setConfigs($configs)
+        {
+        }
+        /**
+         * @return GoogleFirebaseAppcheckV1PlayIntegrityConfig[]
+         */
+        public function getConfigs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleFirebaseAppcheckV1PlayIntegrityConfig[]
+     * Runtime class alias of \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1BatchGetPlayIntegrityConfigsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfigs()
+    class Google_Service_Firebaseappcheck_GoogleFirebaseAppcheckV1BatchGetPlayIntegrityConfigsResponse extends \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1BatchGetPlayIntegrityConfigsResponse
     {
     }
 }

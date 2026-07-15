@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1GenericOperationMetadata extends \Google\Collection
-{
-    protected $collection_key = 'partialFailures';
-    /**
-     * Output only. Time when the operation was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    protected $partialFailuresType = GoogleRpcStatus::class;
-    protected $partialFailuresDataType = 'array';
-    /**
-     * Output only. Time when the operation was updated for the last time. If the
-     * operation has finished (successfully or not), this is the finish time.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. Time when the operation was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1GenericOperationMetadata extends \Google\Collection
     {
+        protected $collection_key = 'partialFailures';
+        /**
+         * Output only. Time when the operation was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        protected $partialFailuresType = GoogleRpcStatus::class;
+        protected $partialFailuresDataType = 'array';
+        /**
+         * Output only. Time when the operation was updated for the last time. If the
+         * operation has finished (successfully or not), this is the finish time.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. Time when the operation was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. Partial failures encountered. E.g. single files that couldn't
+         * be read. This field should never exceed 20 entries. Status details field
+         * will contain standard Google Cloud error details.
+         *
+         * @param GoogleRpcStatus[] $partialFailures
+         */
+        public function setPartialFailures($partialFailures)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus[]
+         */
+        public function getPartialFailures()
+        {
+        }
+        /**
+         * Output only. Time when the operation was updated for the last time. If the
+         * operation has finished (successfully or not), this is the finish time.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1GenericOperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. Partial failures encountered. E.g. single files that couldn't
-     * be read. This field should never exceed 20 entries. Status details field
-     * will contain standard Google Cloud error details.
-     *
-     * @param GoogleRpcStatus[] $partialFailures
-     */
-    public function setPartialFailures($partialFailures)
-    {
-    }
-    /**
-     * @return GoogleRpcStatus[]
-     */
-    public function getPartialFailures()
-    {
-    }
-    /**
-     * Output only. Time when the operation was updated for the last time. If the
-     * operation has finished (successfully or not), this is the finish time.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1GenericOperationMetadata extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1GenericOperationMetadata
     {
     }
 }

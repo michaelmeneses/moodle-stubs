@@ -21,173 +21,182 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class ValueTransformation extends \Google\Model
-{
-    protected $applyHashType = ApplyHash::class;
-    protected $applyHashDataType = '';
-    protected $assignMaxValueType = DatamigrationEmpty::class;
-    protected $assignMaxValueDataType = '';
-    protected $assignMinValueType = DatamigrationEmpty::class;
-    protected $assignMinValueDataType = '';
-    protected $assignNullType = DatamigrationEmpty::class;
-    protected $assignNullDataType = '';
-    protected $assignSpecificValueType = AssignSpecificValue::class;
-    protected $assignSpecificValueDataType = '';
-    protected $doubleComparisonType = DoubleComparisonFilter::class;
-    protected $doubleComparisonDataType = '';
-    protected $intComparisonType = IntComparisonFilter::class;
-    protected $intComparisonDataType = '';
-    protected $isNullType = DatamigrationEmpty::class;
-    protected $isNullDataType = '';
-    protected $roundScaleType = RoundToScale::class;
-    protected $roundScaleDataType = '';
-    protected $valueListType = ValueListFilter::class;
-    protected $valueListDataType = '';
-    /**
-     * Optional. Applies a hash function on the data
-     *
-     * @param ApplyHash $applyHash
-     */
-    public function setApplyHash(ApplyHash $applyHash)
+namespace Google\Service\DatabaseMigrationService {
+    class ValueTransformation extends \Google\Model
     {
+        protected $applyHashType = ApplyHash::class;
+        protected $applyHashDataType = '';
+        protected $assignMaxValueType = DatamigrationEmpty::class;
+        protected $assignMaxValueDataType = '';
+        protected $assignMinValueType = DatamigrationEmpty::class;
+        protected $assignMinValueDataType = '';
+        protected $assignNullType = DatamigrationEmpty::class;
+        protected $assignNullDataType = '';
+        protected $assignSpecificValueType = AssignSpecificValue::class;
+        protected $assignSpecificValueDataType = '';
+        protected $doubleComparisonType = DoubleComparisonFilter::class;
+        protected $doubleComparisonDataType = '';
+        protected $intComparisonType = IntComparisonFilter::class;
+        protected $intComparisonDataType = '';
+        protected $isNullType = DatamigrationEmpty::class;
+        protected $isNullDataType = '';
+        protected $roundScaleType = RoundToScale::class;
+        protected $roundScaleDataType = '';
+        protected $valueListType = ValueListFilter::class;
+        protected $valueListDataType = '';
+        /**
+         * Optional. Applies a hash function on the data
+         *
+         * @param ApplyHash $applyHash
+         */
+        public function setApplyHash(ApplyHash $applyHash)
+        {
+        }
+        /**
+         * @return ApplyHash
+         */
+        public function getApplyHash()
+        {
+        }
+        /**
+         * Optional. Set to max_value - if integer or numeric, will use int.maxvalue,
+         * etc
+         *
+         * @param DatamigrationEmpty $assignMaxValue
+         */
+        public function setAssignMaxValue(DatamigrationEmpty $assignMaxValue)
+        {
+        }
+        /**
+         * @return DatamigrationEmpty
+         */
+        public function getAssignMaxValue()
+        {
+        }
+        /**
+         * Optional. Set to min_value - if integer or numeric, will use int.minvalue,
+         * etc
+         *
+         * @param DatamigrationEmpty $assignMinValue
+         */
+        public function setAssignMinValue(DatamigrationEmpty $assignMinValue)
+        {
+        }
+        /**
+         * @return DatamigrationEmpty
+         */
+        public function getAssignMinValue()
+        {
+        }
+        /**
+         * Optional. Set to null
+         *
+         * @param DatamigrationEmpty $assignNull
+         */
+        public function setAssignNull(DatamigrationEmpty $assignNull)
+        {
+        }
+        /**
+         * @return DatamigrationEmpty
+         */
+        public function getAssignNull()
+        {
+        }
+        /**
+         * Optional. Set to a specific value (value is converted to fit the target
+         * data type)
+         *
+         * @param AssignSpecificValue $assignSpecificValue
+         */
+        public function setAssignSpecificValue(AssignSpecificValue $assignSpecificValue)
+        {
+        }
+        /**
+         * @return AssignSpecificValue
+         */
+        public function getAssignSpecificValue()
+        {
+        }
+        /**
+         * Optional. Filter on relation between source value and compare value of type
+         * double.
+         *
+         * @param DoubleComparisonFilter $doubleComparison
+         */
+        public function setDoubleComparison(DoubleComparisonFilter $doubleComparison)
+        {
+        }
+        /**
+         * @return DoubleComparisonFilter
+         */
+        public function getDoubleComparison()
+        {
+        }
+        /**
+         * Optional. Filter on relation between source value and compare value of type
+         * integer.
+         *
+         * @param IntComparisonFilter $intComparison
+         */
+        public function setIntComparison(IntComparisonFilter $intComparison)
+        {
+        }
+        /**
+         * @return IntComparisonFilter
+         */
+        public function getIntComparison()
+        {
+        }
+        /**
+         * Optional. Value is null
+         *
+         * @param DatamigrationEmpty $isNull
+         */
+        public function setIsNull(DatamigrationEmpty $isNull)
+        {
+        }
+        /**
+         * @return DatamigrationEmpty
+         */
+        public function getIsNull()
+        {
+        }
+        /**
+         * Optional. Allows the data to change scale
+         *
+         * @param RoundToScale $roundScale
+         */
+        public function setRoundScale(RoundToScale $roundScale)
+        {
+        }
+        /**
+         * @return RoundToScale
+         */
+        public function getRoundScale()
+        {
+        }
+        /**
+         * Optional. Value is found in the specified list.
+         *
+         * @param ValueListFilter $valueList
+         */
+        public function setValueList(ValueListFilter $valueList)
+        {
+        }
+        /**
+         * @return ValueListFilter
+         */
+        public function getValueList()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ApplyHash
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\ValueTransformation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApplyHash()
-    {
-    }
-    /**
-     * Optional. Set to max_value - if integer or numeric, will use int.maxvalue,
-     * etc
-     *
-     * @param DatamigrationEmpty $assignMaxValue
-     */
-    public function setAssignMaxValue(DatamigrationEmpty $assignMaxValue)
-    {
-    }
-    /**
-     * @return DatamigrationEmpty
-     */
-    public function getAssignMaxValue()
-    {
-    }
-    /**
-     * Optional. Set to min_value - if integer or numeric, will use int.minvalue,
-     * etc
-     *
-     * @param DatamigrationEmpty $assignMinValue
-     */
-    public function setAssignMinValue(DatamigrationEmpty $assignMinValue)
-    {
-    }
-    /**
-     * @return DatamigrationEmpty
-     */
-    public function getAssignMinValue()
-    {
-    }
-    /**
-     * Optional. Set to null
-     *
-     * @param DatamigrationEmpty $assignNull
-     */
-    public function setAssignNull(DatamigrationEmpty $assignNull)
-    {
-    }
-    /**
-     * @return DatamigrationEmpty
-     */
-    public function getAssignNull()
-    {
-    }
-    /**
-     * Optional. Set to a specific value (value is converted to fit the target
-     * data type)
-     *
-     * @param AssignSpecificValue $assignSpecificValue
-     */
-    public function setAssignSpecificValue(AssignSpecificValue $assignSpecificValue)
-    {
-    }
-    /**
-     * @return AssignSpecificValue
-     */
-    public function getAssignSpecificValue()
-    {
-    }
-    /**
-     * Optional. Filter on relation between source value and compare value of type
-     * double.
-     *
-     * @param DoubleComparisonFilter $doubleComparison
-     */
-    public function setDoubleComparison(DoubleComparisonFilter $doubleComparison)
-    {
-    }
-    /**
-     * @return DoubleComparisonFilter
-     */
-    public function getDoubleComparison()
-    {
-    }
-    /**
-     * Optional. Filter on relation between source value and compare value of type
-     * integer.
-     *
-     * @param IntComparisonFilter $intComparison
-     */
-    public function setIntComparison(IntComparisonFilter $intComparison)
-    {
-    }
-    /**
-     * @return IntComparisonFilter
-     */
-    public function getIntComparison()
-    {
-    }
-    /**
-     * Optional. Value is null
-     *
-     * @param DatamigrationEmpty $isNull
-     */
-    public function setIsNull(DatamigrationEmpty $isNull)
-    {
-    }
-    /**
-     * @return DatamigrationEmpty
-     */
-    public function getIsNull()
-    {
-    }
-    /**
-     * Optional. Allows the data to change scale
-     *
-     * @param RoundToScale $roundScale
-     */
-    public function setRoundScale(RoundToScale $roundScale)
-    {
-    }
-    /**
-     * @return RoundToScale
-     */
-    public function getRoundScale()
-    {
-    }
-    /**
-     * Optional. Value is found in the specified list.
-     *
-     * @param ValueListFilter $valueList
-     */
-    public function setValueList(ValueListFilter $valueList)
-    {
-    }
-    /**
-     * @return ValueListFilter
-     */
-    public function getValueList()
+    class Google_Service_DatabaseMigrationService_ValueTransformation extends \Google\Service\DatabaseMigrationService\ValueTransformation
     {
     }
 }

@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OSConfig;
-
-class ListPatchDeploymentsResponse extends \Google\Collection
-{
-    protected $collection_key = 'patchDeployments';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    protected $patchDeploymentsType = PatchDeployment::class;
-    protected $patchDeploymentsDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\OSConfig {
+    class ListPatchDeploymentsResponse extends \Google\Collection
     {
+        protected $collection_key = 'patchDeployments';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        protected $patchDeploymentsType = PatchDeployment::class;
+        protected $patchDeploymentsDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param PatchDeployment[]
+         */
+        public function setPatchDeployments($patchDeployments)
+        {
+        }
+        /**
+         * @return PatchDeployment[]
+         */
+        public function getPatchDeployments()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OSConfig\ListPatchDeploymentsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param PatchDeployment[]
-     */
-    public function setPatchDeployments($patchDeployments)
-    {
-    }
-    /**
-     * @return PatchDeployment[]
-     */
-    public function getPatchDeployments()
+    class Google_Service_OSConfig_ListPatchDeploymentsResponse extends \Google\Service\OSConfig\ListPatchDeploymentsResponse
     {
     }
 }

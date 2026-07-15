@@ -21,142 +21,153 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Gmail\Resource;
-
-/**
- * The "identities" collection of methods.
- * Typical usage is:
- *  <code>
- *   $gmailService = new Google\Service\Gmail(...);
- *   $identities = $gmailService->users_settings_cse_identities;
- *  </code>
- */
-class UsersSettingsCseIdentities extends \Google\Service\Resource
-{
+namespace Google\Service\Gmail\Resource {
+    use Google\Service\Gmail\CseIdentity;
+    use Google\Service\Gmail\ListCseIdentitiesResponse;
     /**
-     * Creates and configures a client-side encryption identity that's authorized to
-     * send mail from the user account. Google publishes the S/MIME certificate to a
-     * shared domain-wide directory so that people within a Google Workspace
-     * organization can encrypt and send mail to the identity. For administrators
-     * managing identities and keypairs for users in their organization, requests
-     * require authorization with a [service account](https://developers.google.com/
-     * identity/protocols/OAuth2ServiceAccount) that has [domain-wide delegation aut
-     * hority](https://developers.google.com/identity/protocols/OAuth2ServiceAccount
-     * #delegatingauthority) to impersonate users with the
-     * `https://www.googleapis.com/auth/gmail.settings.basic` scope. For users
-     * managing their own identities and keypairs, requests require [hardware key
-     * encryption](https://support.google.com/a/answer/14153163) turned on and
-     * configured. (identities.create)
-     *
-     * @param string $userId The requester's primary email address. To indicate the
-     * authenticated user, you can use the special value `me`.
-     * @param CseIdentity $postBody
-     * @param array $optParams Optional parameters.
-     * @return CseIdentity
-     * @throws \Google\Service\Exception
+     * The "identities" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $gmailService = new Google\Service\Gmail(...);
+     *   $identities = $gmailService->users_settings_cse_identities;
+     *  </code>
      */
-    public function create($userId, CseIdentity $postBody, $optParams = [])
+    class UsersSettingsCseIdentities extends \Google\Service\Resource
     {
+        /**
+         * Creates and configures a client-side encryption identity that's authorized to
+         * send mail from the user account. Google publishes the S/MIME certificate to a
+         * shared domain-wide directory so that people within a Google Workspace
+         * organization can encrypt and send mail to the identity. For administrators
+         * managing identities and keypairs for users in their organization, requests
+         * require authorization with a [service account](https://developers.google.com/
+         * identity/protocols/OAuth2ServiceAccount) that has [domain-wide delegation aut
+         * hority](https://developers.google.com/identity/protocols/OAuth2ServiceAccount
+         * #delegatingauthority) to impersonate users with the
+         * `https://www.googleapis.com/auth/gmail.settings.basic` scope. For users
+         * managing their own identities and keypairs, requests require [hardware key
+         * encryption](https://support.google.com/a/answer/14153163) turned on and
+         * configured. (identities.create)
+         *
+         * @param string $userId The requester's primary email address. To indicate the
+         * authenticated user, you can use the special value `me`.
+         * @param CseIdentity $postBody
+         * @param array $optParams Optional parameters.
+         * @return CseIdentity
+         * @throws \Google\Service\Exception
+         */
+        public function create($userId, CseIdentity $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a client-side encryption identity. The authenticated user can no
+         * longer use the identity to send encrypted messages. You cannot restore the
+         * identity after you delete it. Instead, use the CreateCseIdentity method to
+         * create another identity with the same configuration. For administrators
+         * managing identities and keypairs for users in their organization, requests
+         * require authorization with a [service account](https://developers.google.com/
+         * identity/protocols/OAuth2ServiceAccount) that has [domain-wide delegation aut
+         * hority](https://developers.google.com/identity/protocols/OAuth2ServiceAccount
+         * #delegatingauthority) to impersonate users with the
+         * `https://www.googleapis.com/auth/gmail.settings.basic` scope. For users
+         * managing their own identities and keypairs, requests require [hardware key
+         * encryption](https://support.google.com/a/answer/14153163) turned on and
+         * configured. (identities.delete)
+         *
+         * @param string $userId The requester's primary email address. To indicate the
+         * authenticated user, you can use the special value `me`.
+         * @param string $cseEmailAddress The primary email address associated with the
+         * client-side encryption identity configuration that's removed.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($userId, $cseEmailAddress, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves a client-side encryption identity configuration. For administrators
+         * managing identities and keypairs for users in their organization, requests
+         * require authorization with a [service account](https://developers.google.com/
+         * identity/protocols/OAuth2ServiceAccount) that has [domain-wide delegation aut
+         * hority](https://developers.google.com/identity/protocols/OAuth2ServiceAccount
+         * #delegatingauthority) to impersonate users with the
+         * `https://www.googleapis.com/auth/gmail.settings.basic` scope. For users
+         * managing their own identities and keypairs, requests require [hardware key
+         * encryption](https://support.google.com/a/answer/14153163) turned on and
+         * configured. (identities.get)
+         *
+         * @param string $userId The requester's primary email address. To indicate the
+         * authenticated user, you can use the special value `me`.
+         * @param string $cseEmailAddress The primary email address associated with the
+         * client-side encryption identity configuration that's retrieved.
+         * @param array $optParams Optional parameters.
+         * @return CseIdentity
+         * @throws \Google\Service\Exception
+         */
+        public function get($userId, $cseEmailAddress, $optParams = [])
+        {
+        }
+        /**
+         * Lists the client-side encrypted identities for an authenticated user. For
+         * administrators managing identities and keypairs for users in their
+         * organization, requests require authorization with a [service account](https:/
+         * /developers.google.com/identity/protocols/OAuth2ServiceAccount) that has
+         * [domain-wide delegation authority](https://developers.google.com/identity/pro
+         * tocols/OAuth2ServiceAccount#delegatingauthority) to impersonate users with
+         * the `https://www.googleapis.com/auth/gmail.settings.basic` scope. For users
+         * managing their own identities and keypairs, requests require [hardware key
+         * encryption](https://support.google.com/a/answer/14153163) turned on and
+         * configured. (identities.listUsersSettingsCseIdentities)
+         *
+         * @param string $userId The requester's primary email address. To indicate the
+         * authenticated user, you can use the special value `me`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The number of identities to return. If not provided,
+         * the page size will default to 20 entries.
+         * @opt_param string pageToken Pagination token indicating which page of
+         * identities to return. If the token is not supplied, then the API will return
+         * the first page of results.
+         * @return ListCseIdentitiesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listUsersSettingsCseIdentities($userId, $optParams = [])
+        {
+        }
+        /**
+         * Associates a different key pair with an existing client-side encryption
+         * identity. The updated key pair must validate against Google's [S/MIME
+         * certificate profiles](https://support.google.com/a/answer/7300887). For
+         * administrators managing identities and keypairs for users in their
+         * organization, requests require authorization with a [service account](https:/
+         * /developers.google.com/identity/protocols/OAuth2ServiceAccount) that has
+         * [domain-wide delegation authority](https://developers.google.com/identity/pro
+         * tocols/OAuth2ServiceAccount#delegatingauthority) to impersonate users with
+         * the `https://www.googleapis.com/auth/gmail.settings.basic` scope. For users
+         * managing their own identities and keypairs, requests require [hardware key
+         * encryption](https://support.google.com/a/answer/14153163) turned on and
+         * configured. (identities.patch)
+         *
+         * @param string $userId The requester's primary email address. To indicate the
+         * authenticated user, you can use the special value `me`.
+         * @param string $emailAddress The email address of the client-side encryption
+         * identity to update.
+         * @param CseIdentity $postBody
+         * @param array $optParams Optional parameters.
+         * @return CseIdentity
+         * @throws \Google\Service\Exception
+         */
+        public function patch($userId, $emailAddress, CseIdentity $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a client-side encryption identity. The authenticated user can no
-     * longer use the identity to send encrypted messages. You cannot restore the
-     * identity after you delete it. Instead, use the CreateCseIdentity method to
-     * create another identity with the same configuration. For administrators
-     * managing identities and keypairs for users in their organization, requests
-     * require authorization with a [service account](https://developers.google.com/
-     * identity/protocols/OAuth2ServiceAccount) that has [domain-wide delegation aut
-     * hority](https://developers.google.com/identity/protocols/OAuth2ServiceAccount
-     * #delegatingauthority) to impersonate users with the
-     * `https://www.googleapis.com/auth/gmail.settings.basic` scope. For users
-     * managing their own identities and keypairs, requests require [hardware key
-     * encryption](https://support.google.com/a/answer/14153163) turned on and
-     * configured. (identities.delete)
-     *
-     * @param string $userId The requester's primary email address. To indicate the
-     * authenticated user, you can use the special value `me`.
-     * @param string $cseEmailAddress The primary email address associated with the
-     * client-side encryption identity configuration that's removed.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Gmail\Resource\UsersSettingsCseIdentities registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($userId, $cseEmailAddress, $optParams = [])
-    {
-    }
-    /**
-     * Retrieves a client-side encryption identity configuration. For administrators
-     * managing identities and keypairs for users in their organization, requests
-     * require authorization with a [service account](https://developers.google.com/
-     * identity/protocols/OAuth2ServiceAccount) that has [domain-wide delegation aut
-     * hority](https://developers.google.com/identity/protocols/OAuth2ServiceAccount
-     * #delegatingauthority) to impersonate users with the
-     * `https://www.googleapis.com/auth/gmail.settings.basic` scope. For users
-     * managing their own identities and keypairs, requests require [hardware key
-     * encryption](https://support.google.com/a/answer/14153163) turned on and
-     * configured. (identities.get)
-     *
-     * @param string $userId The requester's primary email address. To indicate the
-     * authenticated user, you can use the special value `me`.
-     * @param string $cseEmailAddress The primary email address associated with the
-     * client-side encryption identity configuration that's retrieved.
-     * @param array $optParams Optional parameters.
-     * @return CseIdentity
-     * @throws \Google\Service\Exception
-     */
-    public function get($userId, $cseEmailAddress, $optParams = [])
-    {
-    }
-    /**
-     * Lists the client-side encrypted identities for an authenticated user. For
-     * administrators managing identities and keypairs for users in their
-     * organization, requests require authorization with a [service account](https:/
-     * /developers.google.com/identity/protocols/OAuth2ServiceAccount) that has
-     * [domain-wide delegation authority](https://developers.google.com/identity/pro
-     * tocols/OAuth2ServiceAccount#delegatingauthority) to impersonate users with
-     * the `https://www.googleapis.com/auth/gmail.settings.basic` scope. For users
-     * managing their own identities and keypairs, requests require [hardware key
-     * encryption](https://support.google.com/a/answer/14153163) turned on and
-     * configured. (identities.listUsersSettingsCseIdentities)
-     *
-     * @param string $userId The requester's primary email address. To indicate the
-     * authenticated user, you can use the special value `me`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The number of identities to return. If not provided,
-     * the page size will default to 20 entries.
-     * @opt_param string pageToken Pagination token indicating which page of
-     * identities to return. If the token is not supplied, then the API will return
-     * the first page of results.
-     * @return ListCseIdentitiesResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listUsersSettingsCseIdentities($userId, $optParams = [])
-    {
-    }
-    /**
-     * Associates a different key pair with an existing client-side encryption
-     * identity. The updated key pair must validate against Google's [S/MIME
-     * certificate profiles](https://support.google.com/a/answer/7300887). For
-     * administrators managing identities and keypairs for users in their
-     * organization, requests require authorization with a [service account](https:/
-     * /developers.google.com/identity/protocols/OAuth2ServiceAccount) that has
-     * [domain-wide delegation authority](https://developers.google.com/identity/pro
-     * tocols/OAuth2ServiceAccount#delegatingauthority) to impersonate users with
-     * the `https://www.googleapis.com/auth/gmail.settings.basic` scope. For users
-     * managing their own identities and keypairs, requests require [hardware key
-     * encryption](https://support.google.com/a/answer/14153163) turned on and
-     * configured. (identities.patch)
-     *
-     * @param string $userId The requester's primary email address. To indicate the
-     * authenticated user, you can use the special value `me`.
-     * @param string $emailAddress The email address of the client-side encryption
-     * identity to update.
-     * @param CseIdentity $postBody
-     * @param array $optParams Optional parameters.
-     * @return CseIdentity
-     * @throws \Google\Service\Exception
-     */
-    public function patch($userId, $emailAddress, CseIdentity $postBody, $optParams = [])
+    class Google_Service_Gmail_Resource_UsersSettingsCseIdentities extends \Google\Service\Gmail\Resource\UsersSettingsCseIdentities
     {
     }
 }

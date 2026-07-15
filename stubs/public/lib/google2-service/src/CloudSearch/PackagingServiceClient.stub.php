@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class PackagingServiceClient extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $androidPackageName;
-    /**
-     * @var string
-     */
-    public $iosAppStoreId;
-    /**
-     * @var string
-     */
-    public $iosBundleId;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @param string
-     */
-    public function setAndroidPackageName($androidPackageName)
+namespace Google\Service\CloudSearch {
+    class PackagingServiceClient extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $androidPackageName;
+        /**
+         * @var string
+         */
+        public $iosAppStoreId;
+        /**
+         * @var string
+         */
+        public $iosBundleId;
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @param string
+         */
+        public function setAndroidPackageName($androidPackageName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAndroidPackageName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setIosAppStoreId($iosAppStoreId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIosAppStoreId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setIosBundleId($iosBundleId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIosBundleId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\PackagingServiceClient registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAndroidPackageName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setIosAppStoreId($iosAppStoreId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIosAppStoreId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setIosBundleId($iosBundleId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIosBundleId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_CloudSearch_PackagingServiceClient extends \Google\Service\CloudSearch\PackagingServiceClient
     {
     }
 }

@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSVideoActionRecognitionTrainResponse extends \Google\Model
-{
-    protected $modelArtifactSpecType = XPSVideoModelArtifactSpec::class;
-    protected $modelArtifactSpecDataType = '';
-    /**
-     * The actual train cost of creating this model, expressed in node seconds,
-     * i.e. 3,600 value in this field means 1 node hour.
-     *
-     * @var string
-     */
-    public $trainCostNodeSeconds;
-    /**
-     * ## The fields below are only populated under uCAIP request scope.
-     *
-     * @param XPSVideoModelArtifactSpec $modelArtifactSpec
-     */
-    public function setModelArtifactSpec(XPSVideoModelArtifactSpec $modelArtifactSpec)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSVideoActionRecognitionTrainResponse extends \Google\Model
     {
+        protected $modelArtifactSpecType = XPSVideoModelArtifactSpec::class;
+        protected $modelArtifactSpecDataType = '';
+        /**
+         * The actual train cost of creating this model, expressed in node seconds,
+         * i.e. 3,600 value in this field means 1 node hour.
+         *
+         * @var string
+         */
+        public $trainCostNodeSeconds;
+        /**
+         * ## The fields below are only populated under uCAIP request scope.
+         *
+         * @param XPSVideoModelArtifactSpec $modelArtifactSpec
+         */
+        public function setModelArtifactSpec(XPSVideoModelArtifactSpec $modelArtifactSpec)
+        {
+        }
+        /**
+         * @return XPSVideoModelArtifactSpec
+         */
+        public function getModelArtifactSpec()
+        {
+        }
+        /**
+         * The actual train cost of creating this model, expressed in node seconds,
+         * i.e. 3,600 value in this field means 1 node hour.
+         *
+         * @param string $trainCostNodeSeconds
+         */
+        public function setTrainCostNodeSeconds($trainCostNodeSeconds)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTrainCostNodeSeconds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return XPSVideoModelArtifactSpec
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSVideoActionRecognitionTrainResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getModelArtifactSpec()
-    {
-    }
-    /**
-     * The actual train cost of creating this model, expressed in node seconds,
-     * i.e. 3,600 value in this field means 1 node hour.
-     *
-     * @param string $trainCostNodeSeconds
-     */
-    public function setTrainCostNodeSeconds($trainCostNodeSeconds)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTrainCostNodeSeconds()
+    class Google_Service_CloudNaturalLanguage_XPSVideoActionRecognitionTrainResponse extends \Google\Service\CloudNaturalLanguage\XPSVideoActionRecognitionTrainResponse
     {
     }
 }

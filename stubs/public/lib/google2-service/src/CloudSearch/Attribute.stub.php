@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class Attribute extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $name;
-    protected $valueType = CaribouAttributeValue::class;
-    protected $valueDataType = '';
-    /**
-     * @param string
-     */
-    public function setName($name)
+namespace Google\Service\CloudSearch {
+    class Attribute extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $name;
+        protected $valueType = CaribouAttributeValue::class;
+        protected $valueDataType = '';
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param CaribouAttributeValue
+         */
+        public function setValue(CaribouAttributeValue $value)
+        {
+        }
+        /**
+         * @return CaribouAttributeValue
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\Attribute registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * @param CaribouAttributeValue
-     */
-    public function setValue(CaribouAttributeValue $value)
-    {
-    }
-    /**
-     * @return CaribouAttributeValue
-     */
-    public function getValue()
+    class Google_Service_CloudSearch_Attribute extends \Google\Service\CloudSearch\Attribute
     {
     }
 }

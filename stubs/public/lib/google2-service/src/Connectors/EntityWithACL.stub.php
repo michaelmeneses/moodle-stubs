@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors;
-
-class EntityWithACL extends \Google\Model
-{
-    protected $internal_gapi_mappings = ["aclInfo" => "acl_info"];
-    protected $aclInfoType = AclInfo::class;
-    protected $aclInfoDataType = '';
-    /**
-     * @var string
-     */
-    public $id;
-    /**
-     * @var string
-     */
-    public $jsonData;
-    /**
-     * @param AclInfo
-     */
-    public function setAclInfo(AclInfo $aclInfo)
+namespace Google\Service\Connectors {
+    class EntityWithACL extends \Google\Model
     {
+        protected $internal_gapi_mappings = ["aclInfo" => "acl_info"];
+        protected $aclInfoType = AclInfo::class;
+        protected $aclInfoDataType = '';
+        /**
+         * @var string
+         */
+        public $id;
+        /**
+         * @var string
+         */
+        public $jsonData;
+        /**
+         * @param AclInfo
+         */
+        public function setAclInfo(AclInfo $aclInfo)
+        {
+        }
+        /**
+         * @return AclInfo
+         */
+        public function getAclInfo()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setJsonData($jsonData)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getJsonData()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AclInfo
+     * Runtime class alias of \Google\Service\Connectors\EntityWithACL registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAclInfo()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setJsonData($jsonData)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getJsonData()
+    class Google_Service_Connectors_EntityWithACL extends \Google\Service\Connectors\EntityWithACL
     {
     }
 }

@@ -21,112 +21,121 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Classroom;
-
-class GradeHistory extends \Google\Model
-{
-    /**
-     * No grade change type specified. This should never be returned.
-     */
-    public const GRADE_CHANGE_TYPE_UNKNOWN_GRADE_CHANGE_TYPE = 'UNKNOWN_GRADE_CHANGE_TYPE';
-    /**
-     * A change in the numerator of the draft grade.
-     */
-    public const GRADE_CHANGE_TYPE_DRAFT_GRADE_POINTS_EARNED_CHANGE = 'DRAFT_GRADE_POINTS_EARNED_CHANGE';
-    /**
-     * A change in the numerator of the assigned grade.
-     */
-    public const GRADE_CHANGE_TYPE_ASSIGNED_GRADE_POINTS_EARNED_CHANGE = 'ASSIGNED_GRADE_POINTS_EARNED_CHANGE';
-    /**
-     * A change in the denominator of the grade.
-     */
-    public const GRADE_CHANGE_TYPE_MAX_POINTS_CHANGE = 'MAX_POINTS_CHANGE';
-    /**
-     * The teacher who made the grade change.
-     *
-     * @var string
-     */
-    public $actorUserId;
-    /**
-     * The type of grade change at this time in the submission grade history.
-     *
-     * @var string
-     */
-    public $gradeChangeType;
-    /**
-     * When the grade of the submission was changed.
-     *
-     * @var string
-     */
-    public $gradeTimestamp;
-    /**
-     * The denominator of the grade at this time in the submission grade history.
-     *
-     * @var 
-     */
-    public $maxPoints;
-    /**
-     * The numerator of the grade at this time in the submission grade history.
-     *
-     * @var 
-     */
-    public $pointsEarned;
-    /**
-     * The teacher who made the grade change.
-     *
-     * @param string $actorUserId
-     */
-    public function setActorUserId($actorUserId)
+namespace Google\Service\Classroom {
+    class GradeHistory extends \Google\Model
     {
+        /**
+         * No grade change type specified. This should never be returned.
+         */
+        public const GRADE_CHANGE_TYPE_UNKNOWN_GRADE_CHANGE_TYPE = 'UNKNOWN_GRADE_CHANGE_TYPE';
+        /**
+         * A change in the numerator of the draft grade.
+         */
+        public const GRADE_CHANGE_TYPE_DRAFT_GRADE_POINTS_EARNED_CHANGE = 'DRAFT_GRADE_POINTS_EARNED_CHANGE';
+        /**
+         * A change in the numerator of the assigned grade.
+         */
+        public const GRADE_CHANGE_TYPE_ASSIGNED_GRADE_POINTS_EARNED_CHANGE = 'ASSIGNED_GRADE_POINTS_EARNED_CHANGE';
+        /**
+         * A change in the denominator of the grade.
+         */
+        public const GRADE_CHANGE_TYPE_MAX_POINTS_CHANGE = 'MAX_POINTS_CHANGE';
+        /**
+         * The teacher who made the grade change.
+         *
+         * @var string
+         */
+        public $actorUserId;
+        /**
+         * The type of grade change at this time in the submission grade history.
+         *
+         * @var string
+         */
+        public $gradeChangeType;
+        /**
+         * When the grade of the submission was changed.
+         *
+         * @var string
+         */
+        public $gradeTimestamp;
+        /**
+         * The denominator of the grade at this time in the submission grade history.
+         *
+         * @var 
+         */
+        public $maxPoints;
+        /**
+         * The numerator of the grade at this time in the submission grade history.
+         *
+         * @var 
+         */
+        public $pointsEarned;
+        /**
+         * The teacher who made the grade change.
+         *
+         * @param string $actorUserId
+         */
+        public function setActorUserId($actorUserId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getActorUserId()
+        {
+        }
+        /**
+         * The type of grade change at this time in the submission grade history.
+         *
+         * Accepted values: UNKNOWN_GRADE_CHANGE_TYPE,
+         * DRAFT_GRADE_POINTS_EARNED_CHANGE, ASSIGNED_GRADE_POINTS_EARNED_CHANGE,
+         * MAX_POINTS_CHANGE
+         *
+         * @param self::GRADE_CHANGE_TYPE_* $gradeChangeType
+         */
+        public function setGradeChangeType($gradeChangeType)
+        {
+        }
+        /**
+         * @return self::GRADE_CHANGE_TYPE_*
+         */
+        public function getGradeChangeType()
+        {
+        }
+        /**
+         * When the grade of the submission was changed.
+         *
+         * @param string $gradeTimestamp
+         */
+        public function setGradeTimestamp($gradeTimestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGradeTimestamp()
+        {
+        }
+        public function setMaxPoints($maxPoints)
+        {
+        }
+        public function getMaxPoints()
+        {
+        }
+        public function setPointsEarned($pointsEarned)
+        {
+        }
+        public function getPointsEarned()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Classroom\GradeHistory registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActorUserId()
-    {
-    }
-    /**
-     * The type of grade change at this time in the submission grade history.
-     *
-     * Accepted values: UNKNOWN_GRADE_CHANGE_TYPE,
-     * DRAFT_GRADE_POINTS_EARNED_CHANGE, ASSIGNED_GRADE_POINTS_EARNED_CHANGE,
-     * MAX_POINTS_CHANGE
-     *
-     * @param self::GRADE_CHANGE_TYPE_* $gradeChangeType
-     */
-    public function setGradeChangeType($gradeChangeType)
-    {
-    }
-    /**
-     * @return self::GRADE_CHANGE_TYPE_*
-     */
-    public function getGradeChangeType()
-    {
-    }
-    /**
-     * When the grade of the submission was changed.
-     *
-     * @param string $gradeTimestamp
-     */
-    public function setGradeTimestamp($gradeTimestamp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGradeTimestamp()
-    {
-    }
-    public function setMaxPoints($maxPoints)
-    {
-    }
-    public function getMaxPoints()
-    {
-    }
-    public function setPointsEarned($pointsEarned)
-    {
-    }
-    public function getPointsEarned()
+    class Google_Service_Classroom_GradeHistory extends \Google\Service\Classroom\GradeHistory
     {
     }
 }

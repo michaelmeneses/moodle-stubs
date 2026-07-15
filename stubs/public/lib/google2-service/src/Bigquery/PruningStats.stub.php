@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class PruningStats extends \Google\Model
-{
-    /**
-     * The number of parallel inputs matched.
-     *
-     * @var string
-     */
-    public $postCmetaPruningParallelInputCount;
-    /**
-     * The number of partitions matched.
-     *
-     * @var string
-     */
-    public $postCmetaPruningPartitionCount;
-    /**
-     * The number of parallel inputs scanned.
-     *
-     * @var string
-     */
-    public $preCmetaPruningParallelInputCount;
-    /**
-     * The number of parallel inputs matched.
-     *
-     * @param string $postCmetaPruningParallelInputCount
-     */
-    public function setPostCmetaPruningParallelInputCount($postCmetaPruningParallelInputCount)
+namespace Google\Service\Bigquery {
+    class PruningStats extends \Google\Model
     {
+        /**
+         * The number of parallel inputs matched.
+         *
+         * @var string
+         */
+        public $postCmetaPruningParallelInputCount;
+        /**
+         * The number of partitions matched.
+         *
+         * @var string
+         */
+        public $postCmetaPruningPartitionCount;
+        /**
+         * The number of parallel inputs scanned.
+         *
+         * @var string
+         */
+        public $preCmetaPruningParallelInputCount;
+        /**
+         * The number of parallel inputs matched.
+         *
+         * @param string $postCmetaPruningParallelInputCount
+         */
+        public function setPostCmetaPruningParallelInputCount($postCmetaPruningParallelInputCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPostCmetaPruningParallelInputCount()
+        {
+        }
+        /**
+         * The number of partitions matched.
+         *
+         * @param string $postCmetaPruningPartitionCount
+         */
+        public function setPostCmetaPruningPartitionCount($postCmetaPruningPartitionCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPostCmetaPruningPartitionCount()
+        {
+        }
+        /**
+         * The number of parallel inputs scanned.
+         *
+         * @param string $preCmetaPruningParallelInputCount
+         */
+        public function setPreCmetaPruningParallelInputCount($preCmetaPruningParallelInputCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPreCmetaPruningParallelInputCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Bigquery\PruningStats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPostCmetaPruningParallelInputCount()
-    {
-    }
-    /**
-     * The number of partitions matched.
-     *
-     * @param string $postCmetaPruningPartitionCount
-     */
-    public function setPostCmetaPruningPartitionCount($postCmetaPruningPartitionCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPostCmetaPruningPartitionCount()
-    {
-    }
-    /**
-     * The number of parallel inputs scanned.
-     *
-     * @param string $preCmetaPruningParallelInputCount
-     */
-    public function setPreCmetaPruningParallelInputCount($preCmetaPruningParallelInputCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPreCmetaPruningParallelInputCount()
+    class Google_Service_Bigquery_PruningStats extends \Google\Service\Bigquery\PruningStats
     {
     }
 }

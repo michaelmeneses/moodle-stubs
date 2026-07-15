@@ -21,415 +21,424 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleCloudRunOpV2Revision extends \Google\Collection
-{
-    protected $collection_key = 'volumes';
-    /**
-     * @var string[]
-     */
-    public $annotations;
-    protected $conditionsType = GoogleCloudRunOpV2Condition::class;
-    protected $conditionsDataType = 'array';
-    /**
-     * @var bool
-     */
-    public $confidential;
-    /**
-     * @var int
-     */
-    public $containerConcurrency;
-    protected $containersType = GoogleCloudRunOpV2Container::class;
-    protected $containersDataType = 'array';
-    /**
-     * @var string
-     */
-    public $createTime;
-    /**
-     * @var string
-     */
-    public $deleteTime;
-    /**
-     * @var string
-     */
-    public $encryptionKey;
-    /**
-     * @var string
-     */
-    public $etag;
-    /**
-     * @var string
-     */
-    public $executionEnvironment;
-    /**
-     * @var string
-     */
-    public $expireTime;
-    /**
-     * @var string
-     */
-    public $generation;
-    /**
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * @var string
-     */
-    public $launchStage;
-    /**
-     * @var string
-     */
-    public $logUri;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $observedGeneration;
-    /**
-     * @var bool
-     */
-    public $reconciling;
-    protected $scalingType = GoogleCloudRunOpV2RevisionScaling::class;
-    protected $scalingDataType = '';
-    /**
-     * @var string
-     */
-    public $service;
-    /**
-     * @var string
-     */
-    public $serviceAccount;
-    /**
-     * @var string
-     */
-    public $timeout;
-    /**
-     * @var string
-     */
-    public $uid;
-    /**
-     * @var string
-     */
-    public $updateTime;
-    protected $volumesType = GoogleCloudRunOpV2Volume::class;
-    protected $volumesDataType = 'array';
-    protected $vpcAccessType = GoogleCloudRunOpV2VpcAccess::class;
-    protected $vpcAccessDataType = '';
-    /**
-     * @param string[]
-     */
-    public function setAnnotations($annotations)
+namespace Google\Service\CloudRun {
+    class GoogleCloudRunOpV2Revision extends \Google\Collection
     {
+        protected $collection_key = 'volumes';
+        /**
+         * @var string[]
+         */
+        public $annotations;
+        protected $conditionsType = GoogleCloudRunOpV2Condition::class;
+        protected $conditionsDataType = 'array';
+        /**
+         * @var bool
+         */
+        public $confidential;
+        /**
+         * @var int
+         */
+        public $containerConcurrency;
+        protected $containersType = GoogleCloudRunOpV2Container::class;
+        protected $containersDataType = 'array';
+        /**
+         * @var string
+         */
+        public $createTime;
+        /**
+         * @var string
+         */
+        public $deleteTime;
+        /**
+         * @var string
+         */
+        public $encryptionKey;
+        /**
+         * @var string
+         */
+        public $etag;
+        /**
+         * @var string
+         */
+        public $executionEnvironment;
+        /**
+         * @var string
+         */
+        public $expireTime;
+        /**
+         * @var string
+         */
+        public $generation;
+        /**
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * @var string
+         */
+        public $launchStage;
+        /**
+         * @var string
+         */
+        public $logUri;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $observedGeneration;
+        /**
+         * @var bool
+         */
+        public $reconciling;
+        protected $scalingType = GoogleCloudRunOpV2RevisionScaling::class;
+        protected $scalingDataType = '';
+        /**
+         * @var string
+         */
+        public $service;
+        /**
+         * @var string
+         */
+        public $serviceAccount;
+        /**
+         * @var string
+         */
+        public $timeout;
+        /**
+         * @var string
+         */
+        public $uid;
+        /**
+         * @var string
+         */
+        public $updateTime;
+        protected $volumesType = GoogleCloudRunOpV2Volume::class;
+        protected $volumesDataType = 'array';
+        protected $vpcAccessType = GoogleCloudRunOpV2VpcAccess::class;
+        protected $vpcAccessDataType = '';
+        /**
+         * @param string[]
+         */
+        public function setAnnotations($annotations)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAnnotations()
+        {
+        }
+        /**
+         * @param GoogleCloudRunOpV2Condition[]
+         */
+        public function setConditions($conditions)
+        {
+        }
+        /**
+         * @return GoogleCloudRunOpV2Condition[]
+         */
+        public function getConditions()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setConfidential($confidential)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getConfidential()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setContainerConcurrency($containerConcurrency)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getContainerConcurrency()
+        {
+        }
+        /**
+         * @param GoogleCloudRunOpV2Container[]
+         */
+        public function setContainers($containers)
+        {
+        }
+        /**
+         * @return GoogleCloudRunOpV2Container[]
+         */
+        public function getContainers()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDeleteTime($deleteTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeleteTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEncryptionKey($encryptionKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEncryptionKey()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setExecutionEnvironment($executionEnvironment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExecutionEnvironment()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setExpireTime($expireTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpireTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setGeneration($generation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGeneration()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLaunchStage($launchStage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLaunchStage()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLogUri($logUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLogUri()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setObservedGeneration($observedGeneration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObservedGeneration()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setReconciling($reconciling)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getReconciling()
+        {
+        }
+        /**
+         * @param GoogleCloudRunOpV2RevisionScaling
+         */
+        public function setScaling(GoogleCloudRunOpV2RevisionScaling $scaling)
+        {
+        }
+        /**
+         * @return GoogleCloudRunOpV2RevisionScaling
+         */
+        public function getScaling()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setService($service)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getService()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setServiceAccount($serviceAccount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceAccount()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTimeout($timeout)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimeout()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUid($uid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUid()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
+        /**
+         * @param GoogleCloudRunOpV2Volume[]
+         */
+        public function setVolumes($volumes)
+        {
+        }
+        /**
+         * @return GoogleCloudRunOpV2Volume[]
+         */
+        public function getVolumes()
+        {
+        }
+        /**
+         * @param GoogleCloudRunOpV2VpcAccess
+         */
+        public function setVpcAccess(GoogleCloudRunOpV2VpcAccess $vpcAccess)
+        {
+        }
+        /**
+         * @return GoogleCloudRunOpV2VpcAccess
+         */
+        public function getVpcAccess()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudRun\GoogleCloudRunOpV2Revision registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotations()
-    {
-    }
-    /**
-     * @param GoogleCloudRunOpV2Condition[]
-     */
-    public function setConditions($conditions)
-    {
-    }
-    /**
-     * @return GoogleCloudRunOpV2Condition[]
-     */
-    public function getConditions()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setConfidential($confidential)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getConfidential()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setContainerConcurrency($containerConcurrency)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getContainerConcurrency()
-    {
-    }
-    /**
-     * @param GoogleCloudRunOpV2Container[]
-     */
-    public function setContainers($containers)
-    {
-    }
-    /**
-     * @return GoogleCloudRunOpV2Container[]
-     */
-    public function getContainers()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDeleteTime($deleteTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeleteTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEncryptionKey($encryptionKey)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEncryptionKey()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setExecutionEnvironment($executionEnvironment)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExecutionEnvironment()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setExpireTime($expireTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExpireTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setGeneration($generation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGeneration()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLaunchStage($launchStage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLaunchStage()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLogUri($logUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLogUri()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setObservedGeneration($observedGeneration)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObservedGeneration()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setReconciling($reconciling)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getReconciling()
-    {
-    }
-    /**
-     * @param GoogleCloudRunOpV2RevisionScaling
-     */
-    public function setScaling(GoogleCloudRunOpV2RevisionScaling $scaling)
-    {
-    }
-    /**
-     * @return GoogleCloudRunOpV2RevisionScaling
-     */
-    public function getScaling()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setService($service)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getService()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setServiceAccount($serviceAccount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceAccount()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTimeout($timeout)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimeout()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUid($uid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUid()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
-    {
-    }
-    /**
-     * @param GoogleCloudRunOpV2Volume[]
-     */
-    public function setVolumes($volumes)
-    {
-    }
-    /**
-     * @return GoogleCloudRunOpV2Volume[]
-     */
-    public function getVolumes()
-    {
-    }
-    /**
-     * @param GoogleCloudRunOpV2VpcAccess
-     */
-    public function setVpcAccess(GoogleCloudRunOpV2VpcAccess $vpcAccess)
-    {
-    }
-    /**
-     * @return GoogleCloudRunOpV2VpcAccess
-     */
-    public function getVpcAccess()
+    class Google_Service_CloudRun_GoogleCloudRunOpV2Revision extends \Google\Service\CloudRun\GoogleCloudRunOpV2Revision
     {
     }
 }

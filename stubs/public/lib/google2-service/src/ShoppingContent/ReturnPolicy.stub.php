@@ -21,147 +21,156 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class ReturnPolicy extends \Google\Collection
-{
-    protected $collection_key = 'seasonalOverrides';
-    /**
-     * @var string
-     */
-    public $country;
-    /**
-     * @var string
-     */
-    public $kind;
-    /**
-     * @var string
-     */
-    public $label;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string[]
-     */
-    public $nonFreeReturnReasons;
-    protected $policyType = ReturnPolicyPolicy::class;
-    protected $policyDataType = '';
-    /**
-     * @var string
-     */
-    public $returnPolicyId;
-    protected $returnShippingFeeType = Price::class;
-    protected $returnShippingFeeDataType = '';
-    protected $seasonalOverridesType = ReturnPolicySeasonalOverride::class;
-    protected $seasonalOverridesDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setCountry($country)
+namespace Google\Service\ShoppingContent {
+    class ReturnPolicy extends \Google\Collection
     {
+        protected $collection_key = 'seasonalOverrides';
+        /**
+         * @var string
+         */
+        public $country;
+        /**
+         * @var string
+         */
+        public $kind;
+        /**
+         * @var string
+         */
+        public $label;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string[]
+         */
+        public $nonFreeReturnReasons;
+        protected $policyType = ReturnPolicyPolicy::class;
+        protected $policyDataType = '';
+        /**
+         * @var string
+         */
+        public $returnPolicyId;
+        protected $returnShippingFeeType = Price::class;
+        protected $returnShippingFeeDataType = '';
+        protected $seasonalOverridesType = ReturnPolicySeasonalOverride::class;
+        protected $seasonalOverridesDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setCountry($country)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCountry()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLabel($label)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLabel()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setNonFreeReturnReasons($nonFreeReturnReasons)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getNonFreeReturnReasons()
+        {
+        }
+        /**
+         * @param ReturnPolicyPolicy
+         */
+        public function setPolicy(ReturnPolicyPolicy $policy)
+        {
+        }
+        /**
+         * @return ReturnPolicyPolicy
+         */
+        public function getPolicy()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReturnPolicyId($returnPolicyId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReturnPolicyId()
+        {
+        }
+        /**
+         * @param Price
+         */
+        public function setReturnShippingFee(Price $returnShippingFee)
+        {
+        }
+        /**
+         * @return Price
+         */
+        public function getReturnShippingFee()
+        {
+        }
+        /**
+         * @param ReturnPolicySeasonalOverride[]
+         */
+        public function setSeasonalOverrides($seasonalOverrides)
+        {
+        }
+        /**
+         * @return ReturnPolicySeasonalOverride[]
+         */
+        public function getSeasonalOverrides()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\ReturnPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCountry()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLabel($label)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLabel()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setNonFreeReturnReasons($nonFreeReturnReasons)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getNonFreeReturnReasons()
-    {
-    }
-    /**
-     * @param ReturnPolicyPolicy
-     */
-    public function setPolicy(ReturnPolicyPolicy $policy)
-    {
-    }
-    /**
-     * @return ReturnPolicyPolicy
-     */
-    public function getPolicy()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReturnPolicyId($returnPolicyId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReturnPolicyId()
-    {
-    }
-    /**
-     * @param Price
-     */
-    public function setReturnShippingFee(Price $returnShippingFee)
-    {
-    }
-    /**
-     * @return Price
-     */
-    public function getReturnShippingFee()
-    {
-    }
-    /**
-     * @param ReturnPolicySeasonalOverride[]
-     */
-    public function setSeasonalOverrides($seasonalOverrides)
-    {
-    }
-    /**
-     * @return ReturnPolicySeasonalOverride[]
-     */
-    public function getSeasonalOverrides()
+    class Google_Service_ShoppingContent_ReturnPolicy extends \Google\Service\ShoppingContent\ReturnPolicy
     {
     }
 }

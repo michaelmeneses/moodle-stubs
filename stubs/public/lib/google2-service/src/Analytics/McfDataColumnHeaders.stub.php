@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics;
-
-class McfDataColumnHeaders extends \Google\Model
-{
-    /**
-     * Column Type. Either DIMENSION or METRIC.
-     *
-     * @var string
-     */
-    public $columnType;
-    /**
-     * Data type. Dimension and metric values data types such as INTEGER, DOUBLE,
-     * CURRENCY, MCF_SEQUENCE etc.
-     *
-     * @var string
-     */
-    public $dataType;
-    /**
-     * Column name.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Column Type. Either DIMENSION or METRIC.
-     *
-     * @param string $columnType
-     */
-    public function setColumnType($columnType)
+namespace Google\Service\Analytics {
+    class McfDataColumnHeaders extends \Google\Model
     {
+        /**
+         * Column Type. Either DIMENSION or METRIC.
+         *
+         * @var string
+         */
+        public $columnType;
+        /**
+         * Data type. Dimension and metric values data types such as INTEGER, DOUBLE,
+         * CURRENCY, MCF_SEQUENCE etc.
+         *
+         * @var string
+         */
+        public $dataType;
+        /**
+         * Column name.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Column Type. Either DIMENSION or METRIC.
+         *
+         * @param string $columnType
+         */
+        public function setColumnType($columnType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getColumnType()
+        {
+        }
+        /**
+         * Data type. Dimension and metric values data types such as INTEGER, DOUBLE,
+         * CURRENCY, MCF_SEQUENCE etc.
+         *
+         * @param string $dataType
+         */
+        public function setDataType($dataType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataType()
+        {
+        }
+        /**
+         * Column name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Analytics\McfDataColumnHeaders registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumnType()
-    {
-    }
-    /**
-     * Data type. Dimension and metric values data types such as INTEGER, DOUBLE,
-     * CURRENCY, MCF_SEQUENCE etc.
-     *
-     * @param string $dataType
-     */
-    public function setDataType($dataType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDataType()
-    {
-    }
-    /**
-     * Column name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Analytics_McfDataColumnHeaders extends \Google\Service\Analytics\McfDataColumnHeaders
     {
     }
 }

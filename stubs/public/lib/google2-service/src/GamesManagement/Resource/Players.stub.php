@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GamesManagement\Resource;
-
-/**
- * The "players" collection of methods.
- * Typical usage is:
- *  <code>
- *   $gamesManagementService = new Google\Service\GamesManagement(...);
- *   $players = $gamesManagementService->players;
- *  </code>
- */
-class Players extends \Google\Service\Resource
-{
+namespace Google\Service\GamesManagement\Resource {
     /**
-     * Hide the given player's leaderboard scores from the given application. This
-     * method is only available to user accounts for your developer console.
-     * (players.hide)
-     *
-     * @param string $applicationId The application ID from the Google Play
-     * developer console.
-     * @param string $playerId A player ID. A value of `me` may be used in place of
-     * the authenticated player's ID.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * The "players" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $gamesManagementService = new Google\Service\GamesManagement(...);
+     *   $players = $gamesManagementService->players;
+     *  </code>
      */
-    public function hide($applicationId, $playerId, $optParams = [])
+    class Players extends \Google\Service\Resource
     {
+        /**
+         * Hide the given player's leaderboard scores from the given application. This
+         * method is only available to user accounts for your developer console.
+         * (players.hide)
+         *
+         * @param string $applicationId The application ID from the Google Play
+         * developer console.
+         * @param string $playerId A player ID. A value of `me` may be used in place of
+         * the authenticated player's ID.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function hide($applicationId, $playerId, $optParams = [])
+        {
+        }
+        /**
+         * Unhide the given player's leaderboard scores from the given application. This
+         * method is only available to user accounts for your developer console.
+         * (players.unhide)
+         *
+         * @param string $applicationId The application ID from the Google Play
+         * developer console.
+         * @param string $playerId A player ID. A value of `me` may be used in place of
+         * the authenticated player's ID.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function unhide($applicationId, $playerId, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Unhide the given player's leaderboard scores from the given application. This
-     * method is only available to user accounts for your developer console.
-     * (players.unhide)
-     *
-     * @param string $applicationId The application ID from the Google Play
-     * developer console.
-     * @param string $playerId A player ID. A value of `me` may be used in place of
-     * the authenticated player's ID.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\GamesManagement\Resource\Players registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function unhide($applicationId, $playerId, $optParams = [])
+    class Google_Service_GamesManagement_Resource_Players extends \Google\Service\GamesManagement\Resource\Players
     {
     }
 }

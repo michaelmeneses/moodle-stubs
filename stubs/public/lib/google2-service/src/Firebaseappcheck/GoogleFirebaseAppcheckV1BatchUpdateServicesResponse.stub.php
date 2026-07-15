@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firebaseappcheck;
-
-class GoogleFirebaseAppcheckV1BatchUpdateServicesResponse extends \Google\Collection
-{
-    protected $collection_key = 'services';
-    protected $servicesType = GoogleFirebaseAppcheckV1Service::class;
-    protected $servicesDataType = 'array';
-    /**
-     * Service objects after the updates have been applied.
-     *
-     * @param GoogleFirebaseAppcheckV1Service[] $services
-     */
-    public function setServices($services)
+namespace Google\Service\Firebaseappcheck {
+    class GoogleFirebaseAppcheckV1BatchUpdateServicesResponse extends \Google\Collection
     {
+        protected $collection_key = 'services';
+        protected $servicesType = GoogleFirebaseAppcheckV1Service::class;
+        protected $servicesDataType = 'array';
+        /**
+         * Service objects after the updates have been applied.
+         *
+         * @param GoogleFirebaseAppcheckV1Service[] $services
+         */
+        public function setServices($services)
+        {
+        }
+        /**
+         * @return GoogleFirebaseAppcheckV1Service[]
+         */
+        public function getServices()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleFirebaseAppcheckV1Service[]
+     * Runtime class alias of \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1BatchUpdateServicesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getServices()
+    class Google_Service_Firebaseappcheck_GoogleFirebaseAppcheckV1BatchUpdateServicesResponse extends \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1BatchUpdateServicesResponse
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class ConvertJobDetails extends \Google\Model
-{
-    /**
-     * Output only. AIP-160 based filter used to specify the entities to convert
-     *
-     * @var string
-     */
-    public $filter;
-    /**
-     * Output only. AIP-160 based filter used to specify the entities to convert
-     *
-     * @param string $filter
-     */
-    public function setFilter($filter)
+namespace Google\Service\DatabaseMigrationService {
+    class ConvertJobDetails extends \Google\Model
     {
+        /**
+         * Output only. AIP-160 based filter used to specify the entities to convert
+         *
+         * @var string
+         */
+        public $filter;
+        /**
+         * Output only. AIP-160 based filter used to specify the entities to convert
+         *
+         * @param string $filter
+         */
+        public function setFilter($filter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilter()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\ConvertJobDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFilter()
+    class Google_Service_DatabaseMigrationService_ConvertJobDetails extends \Google\Service\DatabaseMigrationService\ConvertJobDetails
     {
     }
 }

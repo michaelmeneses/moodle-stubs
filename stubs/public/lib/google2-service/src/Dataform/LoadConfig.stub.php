@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataform;
-
-class LoadConfig extends \Google\Model
-{
-    protected $appendType = SimpleLoadMode::class;
-    protected $appendDataType = '';
-    protected $maximumType = IncrementalLoadMode::class;
-    protected $maximumDataType = '';
-    protected $replaceType = SimpleLoadMode::class;
-    protected $replaceDataType = '';
-    protected $uniqueType = IncrementalLoadMode::class;
-    protected $uniqueDataType = '';
-    /**
-     * Append into destination table
-     *
-     * @param SimpleLoadMode $append
-     */
-    public function setAppend(SimpleLoadMode $append)
+namespace Google\Service\Dataform {
+    class LoadConfig extends \Google\Model
     {
+        protected $appendType = SimpleLoadMode::class;
+        protected $appendDataType = '';
+        protected $maximumType = IncrementalLoadMode::class;
+        protected $maximumDataType = '';
+        protected $replaceType = SimpleLoadMode::class;
+        protected $replaceDataType = '';
+        protected $uniqueType = IncrementalLoadMode::class;
+        protected $uniqueDataType = '';
+        /**
+         * Append into destination table
+         *
+         * @param SimpleLoadMode $append
+         */
+        public function setAppend(SimpleLoadMode $append)
+        {
+        }
+        /**
+         * @return SimpleLoadMode
+         */
+        public function getAppend()
+        {
+        }
+        /**
+         * Insert records where the value exceeds the previous maximum value for a
+         * column in the destination table
+         *
+         * @param IncrementalLoadMode $maximum
+         */
+        public function setMaximum(IncrementalLoadMode $maximum)
+        {
+        }
+        /**
+         * @return IncrementalLoadMode
+         */
+        public function getMaximum()
+        {
+        }
+        /**
+         * Replace destination table
+         *
+         * @param SimpleLoadMode $replace
+         */
+        public function setReplace(SimpleLoadMode $replace)
+        {
+        }
+        /**
+         * @return SimpleLoadMode
+         */
+        public function getReplace()
+        {
+        }
+        /**
+         * Insert records where the value of a column is not already present in the
+         * destination table
+         *
+         * @param IncrementalLoadMode $unique
+         */
+        public function setUnique(IncrementalLoadMode $unique)
+        {
+        }
+        /**
+         * @return IncrementalLoadMode
+         */
+        public function getUnique()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SimpleLoadMode
+     * Runtime class alias of \Google\Service\Dataform\LoadConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAppend()
-    {
-    }
-    /**
-     * Insert records where the value exceeds the previous maximum value for a
-     * column in the destination table
-     *
-     * @param IncrementalLoadMode $maximum
-     */
-    public function setMaximum(IncrementalLoadMode $maximum)
-    {
-    }
-    /**
-     * @return IncrementalLoadMode
-     */
-    public function getMaximum()
-    {
-    }
-    /**
-     * Replace destination table
-     *
-     * @param SimpleLoadMode $replace
-     */
-    public function setReplace(SimpleLoadMode $replace)
-    {
-    }
-    /**
-     * @return SimpleLoadMode
-     */
-    public function getReplace()
-    {
-    }
-    /**
-     * Insert records where the value of a column is not already present in the
-     * destination table
-     *
-     * @param IncrementalLoadMode $unique
-     */
-    public function setUnique(IncrementalLoadMode $unique)
-    {
-    }
-    /**
-     * @return IncrementalLoadMode
-     */
-    public function getUnique()
+    class Google_Service_Dataform_LoadConfig extends \Google\Service\Dataform\LoadConfig
     {
     }
 }

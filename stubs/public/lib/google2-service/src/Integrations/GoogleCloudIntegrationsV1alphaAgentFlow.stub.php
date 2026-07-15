@@ -21,136 +21,145 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaAgentFlow extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $createTime;
-    /**
-     * @var string
-     */
-    public $creator;
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var string
-     */
-    public $displayName;
-    /**
-     * @var string
-     */
-    public $flowConfig;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $noCodeAgent;
-    /**
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * @param string
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaAgentFlow extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $createTime;
+        /**
+         * @var string
+         */
+        public $creator;
+        /**
+         * @var string
+         */
+        public $description;
+        /**
+         * @var string
+         */
+        public $displayName;
+        /**
+         * @var string
+         */
+        public $flowConfig;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $noCodeAgent;
+        /**
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * @param string
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCreator($creator)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreator()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setFlowConfig($flowConfig)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFlowConfig()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNoCodeAgent($noCodeAgent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNoCodeAgent()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaAgentFlow registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCreator($creator)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreator()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setFlowConfig($flowConfig)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFlowConfig()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNoCodeAgent($noCodeAgent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNoCodeAgent()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaAgentFlow extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaAgentFlow
     {
     }
 }

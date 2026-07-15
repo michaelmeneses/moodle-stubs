@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class GetNotificationChannelVerificationCodeResponse extends \Google\Model
-{
-    /**
-     * The verification code, which may be used to verify other channels that have
-     * an equivalent identity (i.e. other channels of the same type with the same
-     * fingerprint such as other email channels with the same email address or
-     * other sms channels with the same number).
-     *
-     * @var string
-     */
-    public $code;
-    /**
-     * The expiration time associated with the code that was returned. If an
-     * expiration was provided in the request, this is the minimum of the
-     * requested expiration in the request and the max permitted expiration.
-     *
-     * @var string
-     */
-    public $expireTime;
-    /**
-     * The verification code, which may be used to verify other channels that have
-     * an equivalent identity (i.e. other channels of the same type with the same
-     * fingerprint such as other email channels with the same email address or
-     * other sms channels with the same number).
-     *
-     * @param string $code
-     */
-    public function setCode($code)
+namespace Google\Service\Monitoring {
+    class GetNotificationChannelVerificationCodeResponse extends \Google\Model
     {
+        /**
+         * The verification code, which may be used to verify other channels that have
+         * an equivalent identity (i.e. other channels of the same type with the same
+         * fingerprint such as other email channels with the same email address or
+         * other sms channels with the same number).
+         *
+         * @var string
+         */
+        public $code;
+        /**
+         * The expiration time associated with the code that was returned. If an
+         * expiration was provided in the request, this is the minimum of the
+         * requested expiration in the request and the max permitted expiration.
+         *
+         * @var string
+         */
+        public $expireTime;
+        /**
+         * The verification code, which may be used to verify other channels that have
+         * an equivalent identity (i.e. other channels of the same type with the same
+         * fingerprint such as other email channels with the same email address or
+         * other sms channels with the same number).
+         *
+         * @param string $code
+         */
+        public function setCode($code)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCode()
+        {
+        }
+        /**
+         * The expiration time associated with the code that was returned. If an
+         * expiration was provided in the request, this is the minimum of the
+         * requested expiration in the request and the max permitted expiration.
+         *
+         * @param string $expireTime
+         */
+        public function setExpireTime($expireTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpireTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Monitoring\GetNotificationChannelVerificationCodeResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCode()
-    {
-    }
-    /**
-     * The expiration time associated with the code that was returned. If an
-     * expiration was provided in the request, this is the minimum of the
-     * requested expiration in the request and the max permitted expiration.
-     *
-     * @param string $expireTime
-     */
-    public function setExpireTime($expireTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExpireTime()
+    class Google_Service_Monitoring_GetNotificationChannelVerificationCodeResponse extends \Google\Service\Monitoring\GetNotificationChannelVerificationCodeResponse
     {
     }
 }

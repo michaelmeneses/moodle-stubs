@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class QueryTimeSeriesResponse extends \Google\Collection
-{
-    protected $collection_key = 'timeSeriesData';
-    /**
-     * If there are more results than have been returned, then this field is set
-     * to a non-empty value. To see the additional results, use that value as
-     * page_token in the next call to this method.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $partialErrorsType = Status::class;
-    protected $partialErrorsDataType = 'array';
-    protected $timeSeriesDataType = TimeSeriesData::class;
-    protected $timeSeriesDataDataType = 'array';
-    protected $timeSeriesDescriptorType = TimeSeriesDescriptor::class;
-    protected $timeSeriesDescriptorDataType = '';
-    /**
-     * If there are more results than have been returned, then this field is set
-     * to a non-empty value. To see the additional results, use that value as
-     * page_token in the next call to this method.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Monitoring {
+    class QueryTimeSeriesResponse extends \Google\Collection
     {
+        protected $collection_key = 'timeSeriesData';
+        /**
+         * If there are more results than have been returned, then this field is set
+         * to a non-empty value. To see the additional results, use that value as
+         * page_token in the next call to this method.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $partialErrorsType = Status::class;
+        protected $partialErrorsDataType = 'array';
+        protected $timeSeriesDataType = TimeSeriesData::class;
+        protected $timeSeriesDataDataType = 'array';
+        protected $timeSeriesDescriptorType = TimeSeriesDescriptor::class;
+        protected $timeSeriesDescriptorDataType = '';
+        /**
+         * If there are more results than have been returned, then this field is set
+         * to a non-empty value. To see the additional results, use that value as
+         * page_token in the next call to this method.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Query execution errors that may have caused the time series data returned
+         * to be incomplete. The available data will be available in the response.
+         *
+         * @param Status[] $partialErrors
+         */
+        public function setPartialErrors($partialErrors)
+        {
+        }
+        /**
+         * @return Status[]
+         */
+        public function getPartialErrors()
+        {
+        }
+        /**
+         * The time series data.
+         *
+         * @param TimeSeriesData[] $timeSeriesData
+         */
+        public function setTimeSeriesData($timeSeriesData)
+        {
+        }
+        /**
+         * @return TimeSeriesData[]
+         */
+        public function getTimeSeriesData()
+        {
+        }
+        /**
+         * The descriptor for the time series data.
+         *
+         * @param TimeSeriesDescriptor $timeSeriesDescriptor
+         */
+        public function setTimeSeriesDescriptor(TimeSeriesDescriptor $timeSeriesDescriptor)
+        {
+        }
+        /**
+         * @return TimeSeriesDescriptor
+         */
+        public function getTimeSeriesDescriptor()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Monitoring\QueryTimeSeriesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Query execution errors that may have caused the time series data returned
-     * to be incomplete. The available data will be available in the response.
-     *
-     * @param Status[] $partialErrors
-     */
-    public function setPartialErrors($partialErrors)
-    {
-    }
-    /**
-     * @return Status[]
-     */
-    public function getPartialErrors()
-    {
-    }
-    /**
-     * The time series data.
-     *
-     * @param TimeSeriesData[] $timeSeriesData
-     */
-    public function setTimeSeriesData($timeSeriesData)
-    {
-    }
-    /**
-     * @return TimeSeriesData[]
-     */
-    public function getTimeSeriesData()
-    {
-    }
-    /**
-     * The descriptor for the time series data.
-     *
-     * @param TimeSeriesDescriptor $timeSeriesDescriptor
-     */
-    public function setTimeSeriesDescriptor(TimeSeriesDescriptor $timeSeriesDescriptor)
-    {
-    }
-    /**
-     * @return TimeSeriesDescriptor
-     */
-    public function getTimeSeriesDescriptor()
+    class Google_Service_Monitoring_QueryTimeSeriesResponse extends \Google\Service\Monitoring\QueryTimeSeriesResponse
     {
     }
 }

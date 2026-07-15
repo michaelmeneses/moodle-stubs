@@ -21,65 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail\Resource;
-
-/**
- * The "attributesConfig" collection of methods.
- * Typical usage is:
- *  <code>
- *   $retailService = new Google\Service\CloudRetail(...);
- *   $attributesConfig = $retailService->projects_locations_catalogs_attributesConfig;
- *  </code>
- */
-class ProjectsLocationsCatalogsAttributesConfig extends \Google\Service\Resource
-{
+namespace Google\Service\CloudRetail\Resource {
+    use Google\Service\CloudRetail\GoogleCloudRetailV2AddCatalogAttributeRequest;
+    use Google\Service\CloudRetail\GoogleCloudRetailV2AttributesConfig;
+    use Google\Service\CloudRetail\GoogleCloudRetailV2RemoveCatalogAttributeRequest;
+    use Google\Service\CloudRetail\GoogleCloudRetailV2ReplaceCatalogAttributeRequest;
     /**
-     * Adds the specified CatalogAttribute to the AttributesConfig. If the
-     * CatalogAttribute to add already exists, an ALREADY_EXISTS error is returned.
-     * (attributesConfig.addCatalogAttribute)
-     *
-     * @param string $attributesConfig Required. Full AttributesConfig resource
-     * name. Format: `projects/{project_number}/locations/{location_id}/catalogs/{ca
-     * talog_id}/attributesConfig`
-     * @param GoogleCloudRetailV2AddCatalogAttributeRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudRetailV2AttributesConfig
-     * @throws \Google\Service\Exception
+     * The "attributesConfig" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $retailService = new Google\Service\CloudRetail(...);
+     *   $attributesConfig = $retailService->projects_locations_catalogs_attributesConfig;
+     *  </code>
      */
-    public function addCatalogAttribute($attributesConfig, GoogleCloudRetailV2AddCatalogAttributeRequest $postBody, $optParams = [])
+    class ProjectsLocationsCatalogsAttributesConfig extends \Google\Service\Resource
     {
+        /**
+         * Adds the specified CatalogAttribute to the AttributesConfig. If the
+         * CatalogAttribute to add already exists, an ALREADY_EXISTS error is returned.
+         * (attributesConfig.addCatalogAttribute)
+         *
+         * @param string $attributesConfig Required. Full AttributesConfig resource
+         * name. Format: `projects/{project_number}/locations/{location_id}/catalogs/{ca
+         * talog_id}/attributesConfig`
+         * @param GoogleCloudRetailV2AddCatalogAttributeRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudRetailV2AttributesConfig
+         * @throws \Google\Service\Exception
+         */
+        public function addCatalogAttribute($attributesConfig, GoogleCloudRetailV2AddCatalogAttributeRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Removes the specified CatalogAttribute from the AttributesConfig. If the
+         * CatalogAttribute to remove does not exist, a NOT_FOUND error is returned.
+         * (attributesConfig.removeCatalogAttribute)
+         *
+         * @param string $attributesConfig Required. Full AttributesConfig resource
+         * name. Format: `projects/{project_number}/locations/{location_id}/catalogs/{ca
+         * talog_id}/attributesConfig`
+         * @param GoogleCloudRetailV2RemoveCatalogAttributeRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudRetailV2AttributesConfig
+         * @throws \Google\Service\Exception
+         */
+        public function removeCatalogAttribute($attributesConfig, GoogleCloudRetailV2RemoveCatalogAttributeRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Replaces the specified CatalogAttribute in the AttributesConfig by updating
+         * the catalog attribute with the same CatalogAttribute.key. If the
+         * CatalogAttribute to replace does not exist, a NOT_FOUND error is returned.
+         * (attributesConfig.replaceCatalogAttribute)
+         *
+         * @param string $attributesConfig Required. Full AttributesConfig resource
+         * name. Format: `projects/{project_number}/locations/{location_id}/catalogs/{ca
+         * talog_id}/attributesConfig`
+         * @param GoogleCloudRetailV2ReplaceCatalogAttributeRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudRetailV2AttributesConfig
+         * @throws \Google\Service\Exception
+         */
+        public function replaceCatalogAttribute($attributesConfig, GoogleCloudRetailV2ReplaceCatalogAttributeRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Removes the specified CatalogAttribute from the AttributesConfig. If the
-     * CatalogAttribute to remove does not exist, a NOT_FOUND error is returned.
-     * (attributesConfig.removeCatalogAttribute)
-     *
-     * @param string $attributesConfig Required. Full AttributesConfig resource
-     * name. Format: `projects/{project_number}/locations/{location_id}/catalogs/{ca
-     * talog_id}/attributesConfig`
-     * @param GoogleCloudRetailV2RemoveCatalogAttributeRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudRetailV2AttributesConfig
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\CloudRetail\Resource\ProjectsLocationsCatalogsAttributesConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function removeCatalogAttribute($attributesConfig, GoogleCloudRetailV2RemoveCatalogAttributeRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Replaces the specified CatalogAttribute in the AttributesConfig by updating
-     * the catalog attribute with the same CatalogAttribute.key. If the
-     * CatalogAttribute to replace does not exist, a NOT_FOUND error is returned.
-     * (attributesConfig.replaceCatalogAttribute)
-     *
-     * @param string $attributesConfig Required. Full AttributesConfig resource
-     * name. Format: `projects/{project_number}/locations/{location_id}/catalogs/{ca
-     * talog_id}/attributesConfig`
-     * @param GoogleCloudRetailV2ReplaceCatalogAttributeRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudRetailV2AttributesConfig
-     * @throws \Google\Service\Exception
-     */
-    public function replaceCatalogAttribute($attributesConfig, GoogleCloudRetailV2ReplaceCatalogAttributeRequest $postBody, $optParams = [])
+    class Google_Service_CloudRetail_Resource_ProjectsLocationsCatalogsAttributesConfig extends \Google\Service\CloudRetail\Resource\ProjectsLocationsCatalogsAttributesConfig
     {
     }
 }

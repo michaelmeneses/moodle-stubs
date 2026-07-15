@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataform;
-
-class MakeDirectoryResponse extends \Google\Model
-{
+namespace Google\Service\Dataform {
+    class MakeDirectoryResponse extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Dataform\MakeDirectoryResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Dataform_MakeDirectoryResponse extends \Google\Service\Dataform\MakeDirectoryResponse
+    {
+    }
 }

@@ -21,59 +21,68 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigQueryDataTransfer;
-
-class ScheduleOptionsV2 extends \Google\Model
-{
-    protected $eventDrivenScheduleType = EventDrivenSchedule::class;
-    protected $eventDrivenScheduleDataType = '';
-    protected $manualScheduleType = ManualSchedule::class;
-    protected $manualScheduleDataType = '';
-    protected $timeBasedScheduleType = TimeBasedSchedule::class;
-    protected $timeBasedScheduleDataType = '';
-    /**
-     * Event driven transfer schedule options. If set, the transfer will be
-     * scheduled upon events arrial.
-     *
-     * @param EventDrivenSchedule $eventDrivenSchedule
-     */
-    public function setEventDrivenSchedule(EventDrivenSchedule $eventDrivenSchedule)
+namespace Google\Service\BigQueryDataTransfer {
+    class ScheduleOptionsV2 extends \Google\Model
     {
+        protected $eventDrivenScheduleType = EventDrivenSchedule::class;
+        protected $eventDrivenScheduleDataType = '';
+        protected $manualScheduleType = ManualSchedule::class;
+        protected $manualScheduleDataType = '';
+        protected $timeBasedScheduleType = TimeBasedSchedule::class;
+        protected $timeBasedScheduleDataType = '';
+        /**
+         * Event driven transfer schedule options. If set, the transfer will be
+         * scheduled upon events arrial.
+         *
+         * @param EventDrivenSchedule $eventDrivenSchedule
+         */
+        public function setEventDrivenSchedule(EventDrivenSchedule $eventDrivenSchedule)
+        {
+        }
+        /**
+         * @return EventDrivenSchedule
+         */
+        public function getEventDrivenSchedule()
+        {
+        }
+        /**
+         * Manual transfer schedule. If set, the transfer run will not be auto-
+         * scheduled by the system, unless the client invokes StartManualTransferRuns.
+         * This is equivalent to disable_auto_scheduling = true.
+         *
+         * @param ManualSchedule $manualSchedule
+         */
+        public function setManualSchedule(ManualSchedule $manualSchedule)
+        {
+        }
+        /**
+         * @return ManualSchedule
+         */
+        public function getManualSchedule()
+        {
+        }
+        /**
+         * Time based transfer schedule options. This is the default schedule option.
+         *
+         * @param TimeBasedSchedule $timeBasedSchedule
+         */
+        public function setTimeBasedSchedule(TimeBasedSchedule $timeBasedSchedule)
+        {
+        }
+        /**
+         * @return TimeBasedSchedule
+         */
+        public function getTimeBasedSchedule()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EventDrivenSchedule
+     * Runtime class alias of \Google\Service\BigQueryDataTransfer\ScheduleOptionsV2 registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEventDrivenSchedule()
-    {
-    }
-    /**
-     * Manual transfer schedule. If set, the transfer run will not be auto-
-     * scheduled by the system, unless the client invokes StartManualTransferRuns.
-     * This is equivalent to disable_auto_scheduling = true.
-     *
-     * @param ManualSchedule $manualSchedule
-     */
-    public function setManualSchedule(ManualSchedule $manualSchedule)
-    {
-    }
-    /**
-     * @return ManualSchedule
-     */
-    public function getManualSchedule()
-    {
-    }
-    /**
-     * Time based transfer schedule options. This is the default schedule option.
-     *
-     * @param TimeBasedSchedule $timeBasedSchedule
-     */
-    public function setTimeBasedSchedule(TimeBasedSchedule $timeBasedSchedule)
-    {
-    }
-    /**
-     * @return TimeBasedSchedule
-     */
-    public function getTimeBasedSchedule()
+    class Google_Service_BigQueryDataTransfer_ScheduleOptionsV2 extends \Google\Service\BigQueryDataTransfer\ScheduleOptionsV2
     {
     }
 }

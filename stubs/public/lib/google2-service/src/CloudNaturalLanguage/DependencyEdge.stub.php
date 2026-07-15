@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class DependencyEdge extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $headTokenIndex;
-    /**
-     * @var string
-     */
-    public $label;
-    /**
-     * @param int
-     */
-    public function setHeadTokenIndex($headTokenIndex)
+namespace Google\Service\CloudNaturalLanguage {
+    class DependencyEdge extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $headTokenIndex;
+        /**
+         * @var string
+         */
+        public $label;
+        /**
+         * @param int
+         */
+        public function setHeadTokenIndex($headTokenIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getHeadTokenIndex()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLabel($label)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLabel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\DependencyEdge registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHeadTokenIndex()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLabel($label)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLabel()
+    class Google_Service_CloudNaturalLanguage_DependencyEdge extends \Google\Service\CloudNaturalLanguage\DependencyEdge
     {
     }
 }

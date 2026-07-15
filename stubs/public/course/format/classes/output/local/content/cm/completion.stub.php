@@ -22,6 +22,18 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_courseformat\output\local\content\cm;
 
+use cm_info;
+use core_course\output\activity_completion;
+use section_info;
+use stdClass;
+use core\output\externable;
+use core\output\named_templatable;
+use core\output\renderable;
+use core\output\local\dropdown\dialog as dropdown_dialog;
+use core_completion\cm_completion_details;
+use core_completion\external\completion_info_exporter;
+use core_courseformat\base as course_format;
+use core_courseformat\output\local\courseformat_named_templatable;
 /**
  * Base class to render course module completion.
  *

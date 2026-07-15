@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1betaNumericValue extends \Google\Model
-{
-    /**
-     * Double value
-     *
-     * @var 
-     */
-    public $doubleValue;
-    /**
-     * Integer value
-     *
-     * @var string
-     */
-    public $int64Value;
-    public function setDoubleValue($doubleValue)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1betaNumericValue extends \Google\Model
     {
+        /**
+         * Double value
+         *
+         * @var 
+         */
+        public $doubleValue;
+        /**
+         * Integer value
+         *
+         * @var string
+         */
+        public $int64Value;
+        public function setDoubleValue($doubleValue)
+        {
+        }
+        public function getDoubleValue()
+        {
+        }
+        /**
+         * Integer value
+         *
+         * @param string $int64Value
+         */
+        public function setInt64Value($int64Value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInt64Value()
+        {
+        }
     }
-    public function getDoubleValue()
-    {
-    }
+}
+namespace {
     /**
-     * Integer value
-     *
-     * @param string $int64Value
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaNumericValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setInt64Value($int64Value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInt64Value()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1betaNumericValue extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaNumericValue
     {
     }
 }

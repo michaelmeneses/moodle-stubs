@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class TimeOfDay extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $hours;
-    /**
-     * @var int
-     */
-    public $minutes;
-    /**
-     * @var int
-     */
-    public $nanos;
-    /**
-     * @var int
-     */
-    public $seconds;
-    /**
-     * @param int
-     */
-    public function setHours($hours)
+namespace Google\Service\Firestore {
+    class TimeOfDay extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $hours;
+        /**
+         * @var int
+         */
+        public $minutes;
+        /**
+         * @var int
+         */
+        public $nanos;
+        /**
+         * @var int
+         */
+        public $seconds;
+        /**
+         * @param int
+         */
+        public function setHours($hours)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getHours()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setMinutes($minutes)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMinutes()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setNanos($nanos)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNanos()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setSeconds($seconds)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSeconds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Firestore\TimeOfDay registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHours()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setMinutes($minutes)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMinutes()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setNanos($nanos)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNanos()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setSeconds($seconds)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSeconds()
+    class Google_Service_Firestore_TimeOfDay extends \Google\Service\Firestore\TimeOfDay
     {
     }
 }

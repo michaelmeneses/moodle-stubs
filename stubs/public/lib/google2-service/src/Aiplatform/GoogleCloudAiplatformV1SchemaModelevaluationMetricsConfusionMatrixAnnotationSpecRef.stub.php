@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaModelevaluationMetricsConfusionMatrixAnnotationSpecRef extends \Google\Model
-{
-    /**
-     * Display name of the AnnotationSpec.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * ID of the AnnotationSpec.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Display name of the AnnotationSpec.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaModelevaluationMetricsConfusionMatrixAnnotationSpecRef extends \Google\Model
     {
+        /**
+         * Display name of the AnnotationSpec.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * ID of the AnnotationSpec.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Display name of the AnnotationSpec.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * ID of the AnnotationSpec.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaModelevaluationMetricsConfusionMatrixAnnotationSpecRef registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * ID of the AnnotationSpec.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaModelevaluationMetricsConfusionMatrixAnnotationSpecRef extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaModelevaluationMetricsConfusionMatrixAnnotationSpecRef
     {
     }
 }

@@ -21,49 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets\Resource;
-
-/**
- * The "developerMetadata" collection of methods.
- * Typical usage is:
- *  <code>
- *   $sheetsService = new Google\Service\Sheets(...);
- *   $developerMetadata = $sheetsService->spreadsheets_developerMetadata;
- *  </code>
- */
-class SpreadsheetsDeveloperMetadata extends \Google\Service\Resource
-{
+namespace Google\Service\Sheets\Resource {
+    use Google\Service\Sheets\DeveloperMetadata;
+    use Google\Service\Sheets\SearchDeveloperMetadataRequest;
+    use Google\Service\Sheets\SearchDeveloperMetadataResponse;
     /**
-     * Returns the developer metadata with the specified ID. The caller must specify
-     * the spreadsheet ID and the developer metadata's unique metadataId.
-     * (developerMetadata.get)
-     *
-     * @param string $spreadsheetId The ID of the spreadsheet to retrieve metadata
-     * from.
-     * @param int $metadataId The ID of the developer metadata to retrieve.
-     * @param array $optParams Optional parameters.
-     * @return DeveloperMetadata
-     * @throws \Google\Service\Exception
+     * The "developerMetadata" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $sheetsService = new Google\Service\Sheets(...);
+     *   $developerMetadata = $sheetsService->spreadsheets_developerMetadata;
+     *  </code>
      */
-    public function get($spreadsheetId, $metadataId, $optParams = [])
+    class SpreadsheetsDeveloperMetadata extends \Google\Service\Resource
     {
+        /**
+         * Returns the developer metadata with the specified ID. The caller must specify
+         * the spreadsheet ID and the developer metadata's unique metadataId.
+         * (developerMetadata.get)
+         *
+         * @param string $spreadsheetId The ID of the spreadsheet to retrieve metadata
+         * from.
+         * @param int $metadataId The ID of the developer metadata to retrieve.
+         * @param array $optParams Optional parameters.
+         * @return DeveloperMetadata
+         * @throws \Google\Service\Exception
+         */
+        public function get($spreadsheetId, $metadataId, $optParams = [])
+        {
+        }
+        /**
+         * Returns all developer metadata matching the specified DataFilter. If the
+         * provided DataFilter represents a DeveloperMetadataLookup object, this will
+         * return all DeveloperMetadata entries selected by it. If the DataFilter
+         * represents a location in a spreadsheet, this will return all developer
+         * metadata associated with locations intersecting that region.
+         * (developerMetadata.search)
+         *
+         * @param string $spreadsheetId The ID of the spreadsheet to retrieve metadata
+         * from.
+         * @param SearchDeveloperMetadataRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return SearchDeveloperMetadataResponse
+         * @throws \Google\Service\Exception
+         */
+        public function search($spreadsheetId, SearchDeveloperMetadataRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Returns all developer metadata matching the specified DataFilter. If the
-     * provided DataFilter represents a DeveloperMetadataLookup object, this will
-     * return all DeveloperMetadata entries selected by it. If the DataFilter
-     * represents a location in a spreadsheet, this will return all developer
-     * metadata associated with locations intersecting that region.
-     * (developerMetadata.search)
-     *
-     * @param string $spreadsheetId The ID of the spreadsheet to retrieve metadata
-     * from.
-     * @param SearchDeveloperMetadataRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return SearchDeveloperMetadataResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Sheets\Resource\SpreadsheetsDeveloperMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function search($spreadsheetId, SearchDeveloperMetadataRequest $postBody, $optParams = [])
+    class Google_Service_Sheets_Resource_SpreadsheetsDeveloperMetadata extends \Google\Service\Sheets\Resource\SpreadsheetsDeveloperMetadata
     {
     }
 }

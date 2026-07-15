@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Genomics;
-
-class Network extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $subnetwork;
-    /**
-     * @var bool
-     */
-    public $usePrivateAddress;
-    /**
-     * @param string
-     */
-    public function setName($name)
+namespace Google\Service\Genomics {
+    class Network extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $subnetwork;
+        /**
+         * @var bool
+         */
+        public $usePrivateAddress;
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSubnetwork($subnetwork)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubnetwork()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setUsePrivateAddress($usePrivateAddress)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUsePrivateAddress()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Genomics\Network registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSubnetwork($subnetwork)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubnetwork()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setUsePrivateAddress($usePrivateAddress)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUsePrivateAddress()
+    class Google_Service_Genomics_Network extends \Google\Service\Genomics\Network
     {
     }
 }

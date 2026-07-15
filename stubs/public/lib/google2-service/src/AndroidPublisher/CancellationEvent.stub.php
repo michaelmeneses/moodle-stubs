@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class CancellationEvent extends \Google\Model
-{
-    /**
-     * The time when the order was canceled.
-     *
-     * @var string
-     */
-    public $eventTime;
-    /**
-     * The time when the order was canceled.
-     *
-     * @param string $eventTime
-     */
-    public function setEventTime($eventTime)
+namespace Google\Service\AndroidPublisher {
+    class CancellationEvent extends \Google\Model
     {
+        /**
+         * The time when the order was canceled.
+         *
+         * @var string
+         */
+        public $eventTime;
+        /**
+         * The time when the order was canceled.
+         *
+         * @param string $eventTime
+         */
+        public function setEventTime($eventTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEventTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidPublisher\CancellationEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEventTime()
+    class Google_Service_AndroidPublisher_CancellationEvent extends \Google\Service\AndroidPublisher\CancellationEvent
     {
     }
 }

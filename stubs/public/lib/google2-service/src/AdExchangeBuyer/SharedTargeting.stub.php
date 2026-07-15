@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer;
-
-class SharedTargeting extends \Google\Collection
-{
-    protected $collection_key = 'inclusions';
-    protected $exclusionsType = TargetingValue::class;
-    protected $exclusionsDataType = 'array';
-    protected $inclusionsType = TargetingValue::class;
-    protected $inclusionsDataType = 'array';
-    public $key;
+namespace Google\Service\AdExchangeBuyer {
+    class SharedTargeting extends \Google\Collection
+    {
+        protected $collection_key = 'inclusions';
+        protected $exclusionsType = TargetingValue::class;
+        protected $exclusionsDataType = 'array';
+        protected $inclusionsType = TargetingValue::class;
+        protected $inclusionsDataType = 'array';
+        public $key;
+        /**
+         * @param TargetingValue[]
+         */
+        public function setExclusions($exclusions)
+        {
+        }
+        /**
+         * @return TargetingValue[]
+         */
+        public function getExclusions()
+        {
+        }
+        /**
+         * @param TargetingValue[]
+         */
+        public function setInclusions($inclusions)
+        {
+        }
+        /**
+         * @return TargetingValue[]
+         */
+        public function getInclusions()
+        {
+        }
+        public function setKey($key)
+        {
+        }
+        public function getKey()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @param TargetingValue[]
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\SharedTargeting registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setExclusions($exclusions)
-    {
-    }
-    /**
-     * @return TargetingValue[]
-     */
-    public function getExclusions()
-    {
-    }
-    /**
-     * @param TargetingValue[]
-     */
-    public function setInclusions($inclusions)
-    {
-    }
-    /**
-     * @return TargetingValue[]
-     */
-    public function getInclusions()
-    {
-    }
-    public function setKey($key)
-    {
-    }
-    public function getKey()
+    class Google_Service_AdExchangeBuyer_SharedTargeting extends \Google\Service\AdExchangeBuyer\SharedTargeting
     {
     }
 }

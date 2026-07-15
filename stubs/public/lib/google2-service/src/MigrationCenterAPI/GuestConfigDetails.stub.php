@@ -21,115 +21,124 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class GuestConfigDetails extends \Google\Model
-{
-    /**
-     * SELinux mode unknown or unspecified.
-     */
-    public const SELINUX_MODE_SE_LINUX_MODE_UNSPECIFIED = 'SE_LINUX_MODE_UNSPECIFIED';
-    /**
-     * SELinux is disabled.
-     */
-    public const SELINUX_MODE_SE_LINUX_MODE_DISABLED = 'SE_LINUX_MODE_DISABLED';
-    /**
-     * SELinux permissive mode.
-     */
-    public const SELINUX_MODE_SE_LINUX_MODE_PERMISSIVE = 'SE_LINUX_MODE_PERMISSIVE';
-    /**
-     * SELinux enforcing mode.
-     */
-    public const SELINUX_MODE_SE_LINUX_MODE_ENFORCING = 'SE_LINUX_MODE_ENFORCING';
-    protected $fstabType = FstabEntryList::class;
-    protected $fstabDataType = '';
-    protected $hostsType = HostsEntryList::class;
-    protected $hostsDataType = '';
-    /**
-     * OS issue (typically /etc/issue in Linux).
-     *
-     * @var string
-     */
-    public $issue;
-    protected $nfsExportsType = NfsExportList::class;
-    protected $nfsExportsDataType = '';
-    /**
-     * Security-Enhanced Linux (SELinux) mode.
-     *
-     * @var string
-     */
-    public $selinuxMode;
-    /**
-     * Mount list (Linux fstab).
-     *
-     * @param FstabEntryList $fstab
-     */
-    public function setFstab(FstabEntryList $fstab)
+namespace Google\Service\MigrationCenterAPI {
+    class GuestConfigDetails extends \Google\Model
     {
+        /**
+         * SELinux mode unknown or unspecified.
+         */
+        public const SELINUX_MODE_SE_LINUX_MODE_UNSPECIFIED = 'SE_LINUX_MODE_UNSPECIFIED';
+        /**
+         * SELinux is disabled.
+         */
+        public const SELINUX_MODE_SE_LINUX_MODE_DISABLED = 'SE_LINUX_MODE_DISABLED';
+        /**
+         * SELinux permissive mode.
+         */
+        public const SELINUX_MODE_SE_LINUX_MODE_PERMISSIVE = 'SE_LINUX_MODE_PERMISSIVE';
+        /**
+         * SELinux enforcing mode.
+         */
+        public const SELINUX_MODE_SE_LINUX_MODE_ENFORCING = 'SE_LINUX_MODE_ENFORCING';
+        protected $fstabType = FstabEntryList::class;
+        protected $fstabDataType = '';
+        protected $hostsType = HostsEntryList::class;
+        protected $hostsDataType = '';
+        /**
+         * OS issue (typically /etc/issue in Linux).
+         *
+         * @var string
+         */
+        public $issue;
+        protected $nfsExportsType = NfsExportList::class;
+        protected $nfsExportsDataType = '';
+        /**
+         * Security-Enhanced Linux (SELinux) mode.
+         *
+         * @var string
+         */
+        public $selinuxMode;
+        /**
+         * Mount list (Linux fstab).
+         *
+         * @param FstabEntryList $fstab
+         */
+        public function setFstab(FstabEntryList $fstab)
+        {
+        }
+        /**
+         * @return FstabEntryList
+         */
+        public function getFstab()
+        {
+        }
+        /**
+         * Hosts file (/etc/hosts).
+         *
+         * @param HostsEntryList $hosts
+         */
+        public function setHosts(HostsEntryList $hosts)
+        {
+        }
+        /**
+         * @return HostsEntryList
+         */
+        public function getHosts()
+        {
+        }
+        /**
+         * OS issue (typically /etc/issue in Linux).
+         *
+         * @param string $issue
+         */
+        public function setIssue($issue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIssue()
+        {
+        }
+        /**
+         * NFS exports.
+         *
+         * @param NfsExportList $nfsExports
+         */
+        public function setNfsExports(NfsExportList $nfsExports)
+        {
+        }
+        /**
+         * @return NfsExportList
+         */
+        public function getNfsExports()
+        {
+        }
+        /**
+         * Security-Enhanced Linux (SELinux) mode.
+         *
+         * Accepted values: SE_LINUX_MODE_UNSPECIFIED, SE_LINUX_MODE_DISABLED,
+         * SE_LINUX_MODE_PERMISSIVE, SE_LINUX_MODE_ENFORCING
+         *
+         * @param self::SELINUX_MODE_* $selinuxMode
+         */
+        public function setSelinuxMode($selinuxMode)
+        {
+        }
+        /**
+         * @return self::SELINUX_MODE_*
+         */
+        public function getSelinuxMode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FstabEntryList
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\GuestConfigDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFstab()
-    {
-    }
-    /**
-     * Hosts file (/etc/hosts).
-     *
-     * @param HostsEntryList $hosts
-     */
-    public function setHosts(HostsEntryList $hosts)
-    {
-    }
-    /**
-     * @return HostsEntryList
-     */
-    public function getHosts()
-    {
-    }
-    /**
-     * OS issue (typically /etc/issue in Linux).
-     *
-     * @param string $issue
-     */
-    public function setIssue($issue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIssue()
-    {
-    }
-    /**
-     * NFS exports.
-     *
-     * @param NfsExportList $nfsExports
-     */
-    public function setNfsExports(NfsExportList $nfsExports)
-    {
-    }
-    /**
-     * @return NfsExportList
-     */
-    public function getNfsExports()
-    {
-    }
-    /**
-     * Security-Enhanced Linux (SELinux) mode.
-     *
-     * Accepted values: SE_LINUX_MODE_UNSPECIFIED, SE_LINUX_MODE_DISABLED,
-     * SE_LINUX_MODE_PERMISSIVE, SE_LINUX_MODE_ENFORCING
-     *
-     * @param self::SELINUX_MODE_* $selinuxMode
-     */
-    public function setSelinuxMode($selinuxMode)
-    {
-    }
-    /**
-     * @return self::SELINUX_MODE_*
-     */
-    public function getSelinuxMode()
+    class Google_Service_MigrationCenterAPI_GuestConfigDetails extends \Google\Service\MigrationCenterAPI\GuestConfigDetails
     {
     }
 }

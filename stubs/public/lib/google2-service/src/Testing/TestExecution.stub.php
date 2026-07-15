@@ -21,250 +21,259 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Testing;
-
-class TestExecution extends \Google\Model
-{
-    /**
-     * Do not use. For proto versioning only.
-     */
-    public const STATE_TEST_STATE_UNSPECIFIED = 'TEST_STATE_UNSPECIFIED';
-    /**
-     * The execution or matrix is being validated.
-     */
-    public const STATE_VALIDATING = 'VALIDATING';
-    /**
-     * The execution or matrix is waiting for resources to become available.
-     */
-    public const STATE_PENDING = 'PENDING';
-    /**
-     * The execution is currently being processed. Can only be set on an
-     * execution.
-     */
-    public const STATE_RUNNING = 'RUNNING';
-    /**
-     * The execution or matrix has terminated normally. On a matrix this means
-     * that the matrix level processing completed normally, but individual
-     * executions may be in an ERROR state.
-     */
-    public const STATE_FINISHED = 'FINISHED';
-    /**
-     * The execution or matrix has stopped because it encountered an
-     * infrastructure failure.
-     */
-    public const STATE_ERROR = 'ERROR';
-    /**
-     * The execution was not run because it corresponds to a unsupported
-     * environment. Can only be set on an execution.
-     */
-    public const STATE_UNSUPPORTED_ENVIRONMENT = 'UNSUPPORTED_ENVIRONMENT';
-    /**
-     * The execution was not run because the provided inputs are incompatible with
-     * the requested environment. Example: requested AndroidVersion is lower than
-     * APK's minSdkVersion Can only be set on an execution.
-     */
-    public const STATE_INCOMPATIBLE_ENVIRONMENT = 'INCOMPATIBLE_ENVIRONMENT';
-    /**
-     * The execution was not run because the provided inputs are incompatible with
-     * the requested architecture. Example: requested device does not support
-     * running the native code in the supplied APK Can only be set on an
-     * execution.
-     */
-    public const STATE_INCOMPATIBLE_ARCHITECTURE = 'INCOMPATIBLE_ARCHITECTURE';
-    /**
-     * The user cancelled the execution. Can only be set on an execution.
-     */
-    public const STATE_CANCELLED = 'CANCELLED';
-    /**
-     * The execution or matrix was not run because the provided inputs are not
-     * valid. Examples: input file is not of the expected type, is
-     * malformed/corrupt, or was flagged as malware
-     */
-    public const STATE_INVALID = 'INVALID';
-    protected $environmentType = Environment::class;
-    protected $environmentDataType = '';
-    /**
-     * Output only. Unique id set by the service.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Output only. Id of the containing TestMatrix.
-     *
-     * @var string
-     */
-    public $matrixId;
-    /**
-     * Output only. The cloud project that owns the test execution.
-     *
-     * @var string
-     */
-    public $projectId;
-    protected $shardType = Shard::class;
-    protected $shardDataType = '';
-    /**
-     * Output only. Indicates the current progress of the test execution (e.g.,
-     * FINISHED).
-     *
-     * @var string
-     */
-    public $state;
-    protected $testDetailsType = TestDetails::class;
-    protected $testDetailsDataType = '';
-    protected $testSpecificationType = TestSpecification::class;
-    protected $testSpecificationDataType = '';
-    /**
-     * Output only. The time this test execution was initially created.
-     *
-     * @var string
-     */
-    public $timestamp;
-    protected $toolResultsStepType = ToolResultsStep::class;
-    protected $toolResultsStepDataType = '';
-    /**
-     * Output only. How the host machine(s) are configured.
-     *
-     * @param Environment $environment
-     */
-    public function setEnvironment(Environment $environment)
+namespace Google\Service\Testing {
+    class TestExecution extends \Google\Model
     {
+        /**
+         * Do not use. For proto versioning only.
+         */
+        public const STATE_TEST_STATE_UNSPECIFIED = 'TEST_STATE_UNSPECIFIED';
+        /**
+         * The execution or matrix is being validated.
+         */
+        public const STATE_VALIDATING = 'VALIDATING';
+        /**
+         * The execution or matrix is waiting for resources to become available.
+         */
+        public const STATE_PENDING = 'PENDING';
+        /**
+         * The execution is currently being processed. Can only be set on an
+         * execution.
+         */
+        public const STATE_RUNNING = 'RUNNING';
+        /**
+         * The execution or matrix has terminated normally. On a matrix this means
+         * that the matrix level processing completed normally, but individual
+         * executions may be in an ERROR state.
+         */
+        public const STATE_FINISHED = 'FINISHED';
+        /**
+         * The execution or matrix has stopped because it encountered an
+         * infrastructure failure.
+         */
+        public const STATE_ERROR = 'ERROR';
+        /**
+         * The execution was not run because it corresponds to a unsupported
+         * environment. Can only be set on an execution.
+         */
+        public const STATE_UNSUPPORTED_ENVIRONMENT = 'UNSUPPORTED_ENVIRONMENT';
+        /**
+         * The execution was not run because the provided inputs are incompatible with
+         * the requested environment. Example: requested AndroidVersion is lower than
+         * APK's minSdkVersion Can only be set on an execution.
+         */
+        public const STATE_INCOMPATIBLE_ENVIRONMENT = 'INCOMPATIBLE_ENVIRONMENT';
+        /**
+         * The execution was not run because the provided inputs are incompatible with
+         * the requested architecture. Example: requested device does not support
+         * running the native code in the supplied APK Can only be set on an
+         * execution.
+         */
+        public const STATE_INCOMPATIBLE_ARCHITECTURE = 'INCOMPATIBLE_ARCHITECTURE';
+        /**
+         * The user cancelled the execution. Can only be set on an execution.
+         */
+        public const STATE_CANCELLED = 'CANCELLED';
+        /**
+         * The execution or matrix was not run because the provided inputs are not
+         * valid. Examples: input file is not of the expected type, is
+         * malformed/corrupt, or was flagged as malware
+         */
+        public const STATE_INVALID = 'INVALID';
+        protected $environmentType = Environment::class;
+        protected $environmentDataType = '';
+        /**
+         * Output only. Unique id set by the service.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Output only. Id of the containing TestMatrix.
+         *
+         * @var string
+         */
+        public $matrixId;
+        /**
+         * Output only. The cloud project that owns the test execution.
+         *
+         * @var string
+         */
+        public $projectId;
+        protected $shardType = Shard::class;
+        protected $shardDataType = '';
+        /**
+         * Output only. Indicates the current progress of the test execution (e.g.,
+         * FINISHED).
+         *
+         * @var string
+         */
+        public $state;
+        protected $testDetailsType = TestDetails::class;
+        protected $testDetailsDataType = '';
+        protected $testSpecificationType = TestSpecification::class;
+        protected $testSpecificationDataType = '';
+        /**
+         * Output only. The time this test execution was initially created.
+         *
+         * @var string
+         */
+        public $timestamp;
+        protected $toolResultsStepType = ToolResultsStep::class;
+        protected $toolResultsStepDataType = '';
+        /**
+         * Output only. How the host machine(s) are configured.
+         *
+         * @param Environment $environment
+         */
+        public function setEnvironment(Environment $environment)
+        {
+        }
+        /**
+         * @return Environment
+         */
+        public function getEnvironment()
+        {
+        }
+        /**
+         * Output only. Unique id set by the service.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Output only. Id of the containing TestMatrix.
+         *
+         * @param string $matrixId
+         */
+        public function setMatrixId($matrixId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMatrixId()
+        {
+        }
+        /**
+         * Output only. The cloud project that owns the test execution.
+         *
+         * @param string $projectId
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
+        /**
+         * Output only. Details about the shard.
+         *
+         * @param Shard $shard
+         */
+        public function setShard(Shard $shard)
+        {
+        }
+        /**
+         * @return Shard
+         */
+        public function getShard()
+        {
+        }
+        /**
+         * Output only. Indicates the current progress of the test execution (e.g.,
+         * FINISHED).
+         *
+         * Accepted values: TEST_STATE_UNSPECIFIED, VALIDATING, PENDING, RUNNING,
+         * FINISHED, ERROR, UNSUPPORTED_ENVIRONMENT, INCOMPATIBLE_ENVIRONMENT,
+         * INCOMPATIBLE_ARCHITECTURE, CANCELLED, INVALID
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Output only. Additional details about the running test.
+         *
+         * @param TestDetails $testDetails
+         */
+        public function setTestDetails(TestDetails $testDetails)
+        {
+        }
+        /**
+         * @return TestDetails
+         */
+        public function getTestDetails()
+        {
+        }
+        /**
+         * Output only. How to run the test.
+         *
+         * @param TestSpecification $testSpecification
+         */
+        public function setTestSpecification(TestSpecification $testSpecification)
+        {
+        }
+        /**
+         * @return TestSpecification
+         */
+        public function getTestSpecification()
+        {
+        }
+        /**
+         * Output only. The time this test execution was initially created.
+         *
+         * @param string $timestamp
+         */
+        public function setTimestamp($timestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimestamp()
+        {
+        }
+        /**
+         * Output only. Where the results for this execution are written.
+         *
+         * @param ToolResultsStep $toolResultsStep
+         */
+        public function setToolResultsStep(ToolResultsStep $toolResultsStep)
+        {
+        }
+        /**
+         * @return ToolResultsStep
+         */
+        public function getToolResultsStep()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Environment
+     * Runtime class alias of \Google\Service\Testing\TestExecution registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnvironment()
-    {
-    }
-    /**
-     * Output only. Unique id set by the service.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Output only. Id of the containing TestMatrix.
-     *
-     * @param string $matrixId
-     */
-    public function setMatrixId($matrixId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMatrixId()
-    {
-    }
-    /**
-     * Output only. The cloud project that owns the test execution.
-     *
-     * @param string $projectId
-     */
-    public function setProjectId($projectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProjectId()
-    {
-    }
-    /**
-     * Output only. Details about the shard.
-     *
-     * @param Shard $shard
-     */
-    public function setShard(Shard $shard)
-    {
-    }
-    /**
-     * @return Shard
-     */
-    public function getShard()
-    {
-    }
-    /**
-     * Output only. Indicates the current progress of the test execution (e.g.,
-     * FINISHED).
-     *
-     * Accepted values: TEST_STATE_UNSPECIFIED, VALIDATING, PENDING, RUNNING,
-     * FINISHED, ERROR, UNSUPPORTED_ENVIRONMENT, INCOMPATIBLE_ENVIRONMENT,
-     * INCOMPATIBLE_ARCHITECTURE, CANCELLED, INVALID
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Output only. Additional details about the running test.
-     *
-     * @param TestDetails $testDetails
-     */
-    public function setTestDetails(TestDetails $testDetails)
-    {
-    }
-    /**
-     * @return TestDetails
-     */
-    public function getTestDetails()
-    {
-    }
-    /**
-     * Output only. How to run the test.
-     *
-     * @param TestSpecification $testSpecification
-     */
-    public function setTestSpecification(TestSpecification $testSpecification)
-    {
-    }
-    /**
-     * @return TestSpecification
-     */
-    public function getTestSpecification()
-    {
-    }
-    /**
-     * Output only. The time this test execution was initially created.
-     *
-     * @param string $timestamp
-     */
-    public function setTimestamp($timestamp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimestamp()
-    {
-    }
-    /**
-     * Output only. Where the results for this execution are written.
-     *
-     * @param ToolResultsStep $toolResultsStep
-     */
-    public function setToolResultsStep(ToolResultsStep $toolResultsStep)
-    {
-    }
-    /**
-     * @return ToolResultsStep
-     */
-    public function getToolResultsStep()
+    class Google_Service_Testing_TestExecution extends \Google\Service\Testing\TestExecution
     {
     }
 }

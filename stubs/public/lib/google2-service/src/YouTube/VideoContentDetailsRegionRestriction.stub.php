@@ -21,61 +21,70 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class VideoContentDetailsRegionRestriction extends \Google\Collection
-{
-    protected $collection_key = 'blocked';
-    /**
-     * A list of region codes that identify countries where the video is viewable.
-     * If this property is present and a country is not listed in its value, then
-     * the video is blocked from appearing in that country. If this property is
-     * present and contains an empty list, the video is blocked in all countries.
-     *
-     * @var string[]
-     */
-    public $allowed;
-    /**
-     * A list of region codes that identify countries where the video is blocked.
-     * If this property is present and a country is not listed in its value, then
-     * the video is viewable in that country. If this property is present and
-     * contains an empty list, the video is viewable in all countries.
-     *
-     * @var string[]
-     */
-    public $blocked;
-    /**
-     * A list of region codes that identify countries where the video is viewable.
-     * If this property is present and a country is not listed in its value, then
-     * the video is blocked from appearing in that country. If this property is
-     * present and contains an empty list, the video is blocked in all countries.
-     *
-     * @param string[] $allowed
-     */
-    public function setAllowed($allowed)
+namespace Google\Service\YouTube {
+    class VideoContentDetailsRegionRestriction extends \Google\Collection
     {
+        protected $collection_key = 'blocked';
+        /**
+         * A list of region codes that identify countries where the video is viewable.
+         * If this property is present and a country is not listed in its value, then
+         * the video is blocked from appearing in that country. If this property is
+         * present and contains an empty list, the video is blocked in all countries.
+         *
+         * @var string[]
+         */
+        public $allowed;
+        /**
+         * A list of region codes that identify countries where the video is blocked.
+         * If this property is present and a country is not listed in its value, then
+         * the video is viewable in that country. If this property is present and
+         * contains an empty list, the video is viewable in all countries.
+         *
+         * @var string[]
+         */
+        public $blocked;
+        /**
+         * A list of region codes that identify countries where the video is viewable.
+         * If this property is present and a country is not listed in its value, then
+         * the video is blocked from appearing in that country. If this property is
+         * present and contains an empty list, the video is blocked in all countries.
+         *
+         * @param string[] $allowed
+         */
+        public function setAllowed($allowed)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAllowed()
+        {
+        }
+        /**
+         * A list of region codes that identify countries where the video is blocked.
+         * If this property is present and a country is not listed in its value, then
+         * the video is viewable in that country. If this property is present and
+         * contains an empty list, the video is viewable in all countries.
+         *
+         * @param string[] $blocked
+         */
+        public function setBlocked($blocked)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getBlocked()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\YouTube\VideoContentDetailsRegionRestriction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowed()
-    {
-    }
-    /**
-     * A list of region codes that identify countries where the video is blocked.
-     * If this property is present and a country is not listed in its value, then
-     * the video is viewable in that country. If this property is present and
-     * contains an empty list, the video is viewable in all countries.
-     *
-     * @param string[] $blocked
-     */
-    public function setBlocked($blocked)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getBlocked()
+    class Google_Service_YouTube_VideoContentDetailsRegionRestriction extends \Google\Service\YouTube\VideoContentDetailsRegionRestriction
     {
     }
 }

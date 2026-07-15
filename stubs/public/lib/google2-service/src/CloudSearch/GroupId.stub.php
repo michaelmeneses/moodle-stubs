@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class GroupId extends \Google\Model
-{
-    protected $dmIdType = DmId::class;
-    protected $dmIdDataType = '';
-    protected $spaceIdType = SpaceId::class;
-    protected $spaceIdDataType = '';
-    /**
-     * @param DmId
-     */
-    public function setDmId(DmId $dmId)
+namespace Google\Service\CloudSearch {
+    class GroupId extends \Google\Model
     {
+        protected $dmIdType = DmId::class;
+        protected $dmIdDataType = '';
+        protected $spaceIdType = SpaceId::class;
+        protected $spaceIdDataType = '';
+        /**
+         * @param DmId
+         */
+        public function setDmId(DmId $dmId)
+        {
+        }
+        /**
+         * @return DmId
+         */
+        public function getDmId()
+        {
+        }
+        /**
+         * @param SpaceId
+         */
+        public function setSpaceId(SpaceId $spaceId)
+        {
+        }
+        /**
+         * @return SpaceId
+         */
+        public function getSpaceId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DmId
+     * Runtime class alias of \Google\Service\CloudSearch\GroupId registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDmId()
-    {
-    }
-    /**
-     * @param SpaceId
-     */
-    public function setSpaceId(SpaceId $spaceId)
-    {
-    }
-    /**
-     * @return SpaceId
-     */
-    public function getSpaceId()
+    class Google_Service_CloudSearch_GroupId extends \Google\Service\CloudSearch\GroupId
     {
     }
 }

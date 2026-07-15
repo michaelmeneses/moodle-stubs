@@ -8,6 +8,7 @@
  */
 namespace core_reportbuilder\table;
 
+use moodle_url;
 /**
  * Custom report view dynamic table class
  *

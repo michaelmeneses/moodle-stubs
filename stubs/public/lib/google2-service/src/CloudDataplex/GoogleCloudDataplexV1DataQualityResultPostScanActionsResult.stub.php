@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1DataQualityResultPostScanActionsResult extends \Google\Model
-{
-    protected $bigqueryExportResultType = GoogleCloudDataplexV1DataQualityResultPostScanActionsResultBigQueryExportResult::class;
-    protected $bigqueryExportResultDataType = '';
-    /**
-     * Output only. The result of BigQuery export post scan action.
-     *
-     * @param GoogleCloudDataplexV1DataQualityResultPostScanActionsResultBigQueryExportResult $bigqueryExportResult
-     */
-    public function setBigqueryExportResult(GoogleCloudDataplexV1DataQualityResultPostScanActionsResultBigQueryExportResult $bigqueryExportResult)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1DataQualityResultPostScanActionsResult extends \Google\Model
     {
+        protected $bigqueryExportResultType = GoogleCloudDataplexV1DataQualityResultPostScanActionsResultBigQueryExportResult::class;
+        protected $bigqueryExportResultDataType = '';
+        /**
+         * Output only. The result of BigQuery export post scan action.
+         *
+         * @param GoogleCloudDataplexV1DataQualityResultPostScanActionsResultBigQueryExportResult $bigqueryExportResult
+         */
+        public function setBigqueryExportResult(GoogleCloudDataplexV1DataQualityResultPostScanActionsResultBigQueryExportResult $bigqueryExportResult)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1DataQualityResultPostScanActionsResultBigQueryExportResult
+         */
+        public function getBigqueryExportResult()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDataplexV1DataQualityResultPostScanActionsResultBigQueryExportResult
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataQualityResultPostScanActionsResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBigqueryExportResult()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1DataQualityResultPostScanActionsResult extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataQualityResultPostScanActionsResult
     {
     }
 }

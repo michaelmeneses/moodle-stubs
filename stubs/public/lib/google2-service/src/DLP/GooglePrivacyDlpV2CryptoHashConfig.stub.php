@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2CryptoHashConfig extends \Google\Model
-{
-    protected $cryptoKeyType = GooglePrivacyDlpV2CryptoKey::class;
-    protected $cryptoKeyDataType = '';
-    /**
-     * The key used by the hash function.
-     *
-     * @param GooglePrivacyDlpV2CryptoKey $cryptoKey
-     */
-    public function setCryptoKey(GooglePrivacyDlpV2CryptoKey $cryptoKey)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2CryptoHashConfig extends \Google\Model
     {
+        protected $cryptoKeyType = GooglePrivacyDlpV2CryptoKey::class;
+        protected $cryptoKeyDataType = '';
+        /**
+         * The key used by the hash function.
+         *
+         * @param GooglePrivacyDlpV2CryptoKey $cryptoKey
+         */
+        public function setCryptoKey(GooglePrivacyDlpV2CryptoKey $cryptoKey)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2CryptoKey
+         */
+        public function getCryptoKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2CryptoKey
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2CryptoHashConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCryptoKey()
+    class Google_Service_DLP_GooglePrivacyDlpV2CryptoHashConfig extends \Google\Service\DLP\GooglePrivacyDlpV2CryptoHashConfig
     {
     }
 }

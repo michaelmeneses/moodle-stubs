@@ -21,50 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow\Resource;
-
-/**
- * The "messages" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dataflowService = new Google\Service\Dataflow(...);
- *   $messages = $dataflowService->projects_locations_jobs_messages;
- *  </code>
- */
-class ProjectsLocationsJobsMessages extends \Google\Service\Resource
-{
+namespace Google\Service\Dataflow\Resource {
+    use Google\Service\Dataflow\ListJobMessagesResponse;
     /**
-     * Request the job status. To request the status of a job, we recommend using
-     * `projects.locations.jobs.messages.list` with a [regional endpoint]
-     * (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints). Using
-     * `projects.jobs.messages.list` is not recommended, as you can only request the
-     * status of jobs that are running in `us-central1`.
-     * (messages.listProjectsLocationsJobsMessages)
-     *
-     * @param string $projectId A project id.
-     * @param string $location The [regional endpoint]
-     * (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that
-     * contains the job specified by job_id.
-     * @param string $jobId The job to get messages about.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string endTime Return only messages with timestamps < end_time.
-     * The default is now (i.e. return up to the latest messages available).
-     * @opt_param string minimumImportance Filter to only get messages with
-     * importance >= level
-     * @opt_param int pageSize If specified, determines the maximum number of
-     * messages to return. If unspecified, the service may choose an appropriate
-     * default, or may return an arbitrarily large number of results.
-     * @opt_param string pageToken If supplied, this should be the value of
-     * next_page_token returned by an earlier call. This will cause the next page of
-     * results to be returned.
-     * @opt_param string startTime If specified, return only messages with
-     * timestamps >= start_time. The default is the job creation time (i.e.
-     * beginning of messages).
-     * @return ListJobMessagesResponse
-     * @throws \Google\Service\Exception
+     * The "messages" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dataflowService = new Google\Service\Dataflow(...);
+     *   $messages = $dataflowService->projects_locations_jobs_messages;
+     *  </code>
      */
-    public function listProjectsLocationsJobsMessages($projectId, $location, $jobId, $optParams = [])
+    class ProjectsLocationsJobsMessages extends \Google\Service\Resource
+    {
+        /**
+         * Request the job status. To request the status of a job, we recommend using
+         * `projects.locations.jobs.messages.list` with a [regional endpoint]
+         * (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints). Using
+         * `projects.jobs.messages.list` is not recommended, as you can only request the
+         * status of jobs that are running in `us-central1`.
+         * (messages.listProjectsLocationsJobsMessages)
+         *
+         * @param string $projectId A project id.
+         * @param string $location The [regional endpoint]
+         * (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that
+         * contains the job specified by job_id.
+         * @param string $jobId The job to get messages about.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string endTime Return only messages with timestamps < end_time.
+         * The default is now (i.e. return up to the latest messages available).
+         * @opt_param string minimumImportance Filter to only get messages with
+         * importance >= level
+         * @opt_param int pageSize If specified, determines the maximum number of
+         * messages to return. If unspecified, the service may choose an appropriate
+         * default, or may return an arbitrarily large number of results.
+         * @opt_param string pageToken If supplied, this should be the value of
+         * next_page_token returned by an earlier call. This will cause the next page of
+         * results to be returned.
+         * @opt_param string startTime If specified, return only messages with
+         * timestamps >= start_time. The default is the job creation time (i.e.
+         * beginning of messages).
+         * @return ListJobMessagesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsJobsMessages($projectId, $location, $jobId, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Dataflow\Resource\ProjectsLocationsJobsMessages registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Dataflow_Resource_ProjectsLocationsJobsMessages extends \Google\Service\Dataflow\Resource\ProjectsLocationsJobsMessages
     {
     }
 }

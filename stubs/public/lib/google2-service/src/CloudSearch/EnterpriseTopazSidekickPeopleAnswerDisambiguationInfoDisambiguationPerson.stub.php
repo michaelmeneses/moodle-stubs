@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class EnterpriseTopazSidekickPeopleAnswerDisambiguationInfoDisambiguationPerson extends \Google\Model
-{
-    protected $personType = EnterpriseTopazSidekickCommonPerson::class;
-    protected $personDataType = '';
-    /**
-     * The query that can be used to produce an answer card with the same
-     * attribute, but for this person.
-     *
-     * @var string
-     */
-    public $query;
-    /**
-     * The profile of this person.
-     *
-     * @param EnterpriseTopazSidekickCommonPerson $person
-     */
-    public function setPerson(EnterpriseTopazSidekickCommonPerson $person)
+namespace Google\Service\CloudSearch {
+    class EnterpriseTopazSidekickPeopleAnswerDisambiguationInfoDisambiguationPerson extends \Google\Model
     {
+        protected $personType = EnterpriseTopazSidekickCommonPerson::class;
+        protected $personDataType = '';
+        /**
+         * The query that can be used to produce an answer card with the same
+         * attribute, but for this person.
+         *
+         * @var string
+         */
+        public $query;
+        /**
+         * The profile of this person.
+         *
+         * @param EnterpriseTopazSidekickCommonPerson $person
+         */
+        public function setPerson(EnterpriseTopazSidekickCommonPerson $person)
+        {
+        }
+        /**
+         * @return EnterpriseTopazSidekickCommonPerson
+         */
+        public function getPerson()
+        {
+        }
+        /**
+         * The query that can be used to produce an answer card with the same
+         * attribute, but for this person.
+         *
+         * @param string $query
+         */
+        public function setQuery($query)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQuery()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EnterpriseTopazSidekickCommonPerson
+     * Runtime class alias of \Google\Service\CloudSearch\EnterpriseTopazSidekickPeopleAnswerDisambiguationInfoDisambiguationPerson registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPerson()
-    {
-    }
-    /**
-     * The query that can be used to produce an answer card with the same
-     * attribute, but for this person.
-     *
-     * @param string $query
-     */
-    public function setQuery($query)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQuery()
+    class Google_Service_CloudSearch_EnterpriseTopazSidekickPeopleAnswerDisambiguationInfoDisambiguationPerson extends \Google\Service\CloudSearch\EnterpriseTopazSidekickPeopleAnswerDisambiguationInfoDisambiguationPerson
     {
     }
 }

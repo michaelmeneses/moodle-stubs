@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class BareMetalAdminProxyConfig extends \Google\Collection
-{
-    protected $collection_key = 'noProxy';
-    /**
-     * A list of IPs, hostnames, and domains that should skip the proxy. Examples:
-     * ["127.0.0.1", "example.com", ".corp", "localhost"].
-     *
-     * @var string[]
-     */
-    public $noProxy;
-    /**
-     * Required. Specifies the address of your proxy server. Examples:
-     * `http://domain` WARNING: Do not provide credentials in the format
-     * `http://(username:password@)domain` these will be rejected by the server.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * A list of IPs, hostnames, and domains that should skip the proxy. Examples:
-     * ["127.0.0.1", "example.com", ".corp", "localhost"].
-     *
-     * @param string[] $noProxy
-     */
-    public function setNoProxy($noProxy)
+namespace Google\Service\GKEOnPrem {
+    class BareMetalAdminProxyConfig extends \Google\Collection
     {
+        protected $collection_key = 'noProxy';
+        /**
+         * A list of IPs, hostnames, and domains that should skip the proxy. Examples:
+         * ["127.0.0.1", "example.com", ".corp", "localhost"].
+         *
+         * @var string[]
+         */
+        public $noProxy;
+        /**
+         * Required. Specifies the address of your proxy server. Examples:
+         * `http://domain` WARNING: Do not provide credentials in the format
+         * `http://(username:password@)domain` these will be rejected by the server.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * A list of IPs, hostnames, and domains that should skip the proxy. Examples:
+         * ["127.0.0.1", "example.com", ".corp", "localhost"].
+         *
+         * @param string[] $noProxy
+         */
+        public function setNoProxy($noProxy)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getNoProxy()
+        {
+        }
+        /**
+         * Required. Specifies the address of your proxy server. Examples:
+         * `http://domain` WARNING: Do not provide credentials in the format
+         * `http://(username:password@)domain` these will be rejected by the server.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\GKEOnPrem\BareMetalAdminProxyConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNoProxy()
-    {
-    }
-    /**
-     * Required. Specifies the address of your proxy server. Examples:
-     * `http://domain` WARNING: Do not provide credentials in the format
-     * `http://(username:password@)domain` these will be rejected by the server.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_GKEOnPrem_BareMetalAdminProxyConfig extends \Google\Service\GKEOnPrem\BareMetalAdminProxyConfig
     {
     }
 }

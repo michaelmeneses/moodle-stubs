@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedReaction extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $count;
-    /**
-     * @var string
-     */
-    public $createTimestamp;
-    /**
-     * @var bool
-     */
-    public $currentUserParticipated;
-    protected $emojiType = AppsDynamiteSharedEmoji::class;
-    protected $emojiDataType = '';
-    /**
-     * @param int
-     */
-    public function setCount($count)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedReaction extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $count;
+        /**
+         * @var string
+         */
+        public $createTimestamp;
+        /**
+         * @var bool
+         */
+        public $currentUserParticipated;
+        protected $emojiType = AppsDynamiteSharedEmoji::class;
+        protected $emojiDataType = '';
+        /**
+         * @param int
+         */
+        public function setCount($count)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCount()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCreateTimestamp($createTimestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTimestamp()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setCurrentUserParticipated($currentUserParticipated)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCurrentUserParticipated()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedEmoji
+         */
+        public function setEmoji(AppsDynamiteSharedEmoji $emoji)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedEmoji
+         */
+        public function getEmoji()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedReaction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCount()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCreateTimestamp($createTimestamp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTimestamp()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setCurrentUserParticipated($currentUserParticipated)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCurrentUserParticipated()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedEmoji
-     */
-    public function setEmoji(AppsDynamiteSharedEmoji $emoji)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedEmoji
-     */
-    public function getEmoji()
+    class Google_Service_CloudSearch_AppsDynamiteSharedReaction extends \Google\Service\CloudSearch\AppsDynamiteSharedReaction
     {
     }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1GoogleSearchRetrieval extends \Google\Model
-{
-    protected $dynamicRetrievalConfigType = GoogleCloudAiplatformV1DynamicRetrievalConfig::class;
-    protected $dynamicRetrievalConfigDataType = '';
-    /**
-     * Specifies the dynamic retrieval configuration for the given source.
-     *
-     * @param GoogleCloudAiplatformV1DynamicRetrievalConfig $dynamicRetrievalConfig
-     */
-    public function setDynamicRetrievalConfig(GoogleCloudAiplatformV1DynamicRetrievalConfig $dynamicRetrievalConfig)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1GoogleSearchRetrieval extends \Google\Model
     {
+        protected $dynamicRetrievalConfigType = GoogleCloudAiplatformV1DynamicRetrievalConfig::class;
+        protected $dynamicRetrievalConfigDataType = '';
+        /**
+         * Specifies the dynamic retrieval configuration for the given source.
+         *
+         * @param GoogleCloudAiplatformV1DynamicRetrievalConfig $dynamicRetrievalConfig
+         */
+        public function setDynamicRetrievalConfig(GoogleCloudAiplatformV1DynamicRetrievalConfig $dynamicRetrievalConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1DynamicRetrievalConfig
+         */
+        public function getDynamicRetrievalConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1DynamicRetrievalConfig
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1GoogleSearchRetrieval registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDynamicRetrievalConfig()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1GoogleSearchRetrieval extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1GoogleSearchRetrieval
     {
     }
 }

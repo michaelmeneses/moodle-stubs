@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyerII;
-
-class WatchCreativeRequest extends \Google\Model
-{
-    /**
-     * The Pub/Sub topic to publish notifications to. This topic must already
-     * exist and must give permission to ad-exchange-buyside-reports@google.com to
-     * write to the topic. This should be the full resource name in
-     * "projects/{project_id}/topics/{topic_id}" format.
-     *
-     * @var string
-     */
-    public $topic;
-    /**
-     * The Pub/Sub topic to publish notifications to. This topic must already
-     * exist and must give permission to ad-exchange-buyside-reports@google.com to
-     * write to the topic. This should be the full resource name in
-     * "projects/{project_id}/topics/{topic_id}" format.
-     *
-     * @param string $topic
-     */
-    public function setTopic($topic)
+namespace Google\Service\AdExchangeBuyerII {
+    class WatchCreativeRequest extends \Google\Model
     {
+        /**
+         * The Pub/Sub topic to publish notifications to. This topic must already
+         * exist and must give permission to ad-exchange-buyside-reports@google.com to
+         * write to the topic. This should be the full resource name in
+         * "projects/{project_id}/topics/{topic_id}" format.
+         *
+         * @var string
+         */
+        public $topic;
+        /**
+         * The Pub/Sub topic to publish notifications to. This topic must already
+         * exist and must give permission to ad-exchange-buyside-reports@google.com to
+         * write to the topic. This should be the full resource name in
+         * "projects/{project_id}/topics/{topic_id}" format.
+         *
+         * @param string $topic
+         */
+        public function setTopic($topic)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTopic()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AdExchangeBuyerII\WatchCreativeRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTopic()
+    class Google_Service_AdExchangeBuyerII_WatchCreativeRequest extends \Google\Service\AdExchangeBuyerII\WatchCreativeRequest
     {
     }
 }

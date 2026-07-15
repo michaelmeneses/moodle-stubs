@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class SuperStickerMetadata extends \Google\Model
-{
-    /**
-     * Internationalized alt text that describes the sticker image and any
-     * animation associated with it.
-     *
-     * @var string
-     */
-    public $altText;
-    /**
-     * Specifies the localization language in which the alt text is returned.
-     *
-     * @var string
-     */
-    public $altTextLanguage;
-    /**
-     * Unique identifier of the Super Sticker. This is a shorter form of the
-     * alt_text that includes pack name and a recognizable characteristic of the
-     * sticker.
-     *
-     * @var string
-     */
-    public $stickerId;
-    /**
-     * Internationalized alt text that describes the sticker image and any
-     * animation associated with it.
-     *
-     * @param string $altText
-     */
-    public function setAltText($altText)
+namespace Google\Service\YouTube {
+    class SuperStickerMetadata extends \Google\Model
     {
+        /**
+         * Internationalized alt text that describes the sticker image and any
+         * animation associated with it.
+         *
+         * @var string
+         */
+        public $altText;
+        /**
+         * Specifies the localization language in which the alt text is returned.
+         *
+         * @var string
+         */
+        public $altTextLanguage;
+        /**
+         * Unique identifier of the Super Sticker. This is a shorter form of the
+         * alt_text that includes pack name and a recognizable characteristic of the
+         * sticker.
+         *
+         * @var string
+         */
+        public $stickerId;
+        /**
+         * Internationalized alt text that describes the sticker image and any
+         * animation associated with it.
+         *
+         * @param string $altText
+         */
+        public function setAltText($altText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAltText()
+        {
+        }
+        /**
+         * Specifies the localization language in which the alt text is returned.
+         *
+         * @param string $altTextLanguage
+         */
+        public function setAltTextLanguage($altTextLanguage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAltTextLanguage()
+        {
+        }
+        /**
+         * Unique identifier of the Super Sticker. This is a shorter form of the
+         * alt_text that includes pack name and a recognizable characteristic of the
+         * sticker.
+         *
+         * @param string $stickerId
+         */
+        public function setStickerId($stickerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStickerId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\SuperStickerMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAltText()
-    {
-    }
-    /**
-     * Specifies the localization language in which the alt text is returned.
-     *
-     * @param string $altTextLanguage
-     */
-    public function setAltTextLanguage($altTextLanguage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAltTextLanguage()
-    {
-    }
-    /**
-     * Unique identifier of the Super Sticker. This is a shorter form of the
-     * alt_text that includes pack name and a recognizable characteristic of the
-     * sticker.
-     *
-     * @param string $stickerId
-     */
-    public function setStickerId($stickerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStickerId()
+    class Google_Service_YouTube_SuperStickerMetadata extends \Google\Service\YouTube\SuperStickerMetadata
     {
     }
 }

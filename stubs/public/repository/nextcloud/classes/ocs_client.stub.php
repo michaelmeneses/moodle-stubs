@@ -29,6 +29,8 @@
  */
 namespace repository_nextcloud;
 
+use core\oauth2\client;
+use core\oauth2\rest;
 /**
  * REST interface to Nextcloud's implementation of Open Collaboration Services.
  *

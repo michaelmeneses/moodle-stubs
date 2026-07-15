@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Forms;
-
-class PublishState extends \Google\Model
-{
-    /**
-     * Required. Whether the form accepts responses. If `is_published` is set to
-     * `false`, this field is forced to `false`.
-     *
-     * @var bool
-     */
-    public $isAcceptingResponses;
-    /**
-     * Required. Whether the form is published and visible to others.
-     *
-     * @var bool
-     */
-    public $isPublished;
-    /**
-     * Required. Whether the form accepts responses. If `is_published` is set to
-     * `false`, this field is forced to `false`.
-     *
-     * @param bool $isAcceptingResponses
-     */
-    public function setIsAcceptingResponses($isAcceptingResponses)
+namespace Google\Service\Forms {
+    class PublishState extends \Google\Model
     {
+        /**
+         * Required. Whether the form accepts responses. If `is_published` is set to
+         * `false`, this field is forced to `false`.
+         *
+         * @var bool
+         */
+        public $isAcceptingResponses;
+        /**
+         * Required. Whether the form is published and visible to others.
+         *
+         * @var bool
+         */
+        public $isPublished;
+        /**
+         * Required. Whether the form accepts responses. If `is_published` is set to
+         * `false`, this field is forced to `false`.
+         *
+         * @param bool $isAcceptingResponses
+         */
+        public function setIsAcceptingResponses($isAcceptingResponses)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsAcceptingResponses()
+        {
+        }
+        /**
+         * Required. Whether the form is published and visible to others.
+         *
+         * @param bool $isPublished
+         */
+        public function setIsPublished($isPublished)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsPublished()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Forms\PublishState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIsAcceptingResponses()
-    {
-    }
-    /**
-     * Required. Whether the form is published and visible to others.
-     *
-     * @param bool $isPublished
-     */
-    public function setIsPublished($isPublished)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsPublished()
+    class Google_Service_Forms_PublishState extends \Google\Service\Forms\PublishState
     {
     }
 }

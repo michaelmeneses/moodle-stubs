@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRedis;
-
-class NodeInfo extends \Google\Model
-{
-    /**
-     * Output only. Node identifying string. e.g. 'node-0', 'node-1'
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Output only. Location of the node.
-     *
-     * @var string
-     */
-    public $zone;
-    /**
-     * Output only. Node identifying string. e.g. 'node-0', 'node-1'
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\CloudRedis {
+    class NodeInfo extends \Google\Model
     {
+        /**
+         * Output only. Node identifying string. e.g. 'node-0', 'node-1'
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Output only. Location of the node.
+         *
+         * @var string
+         */
+        public $zone;
+        /**
+         * Output only. Node identifying string. e.g. 'node-0', 'node-1'
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Output only. Location of the node.
+         *
+         * @param string $zone
+         */
+        public function setZone($zone)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getZone()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRedis\NodeInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * Output only. Location of the node.
-     *
-     * @param string $zone
-     */
-    public function setZone($zone)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getZone()
+    class Google_Service_CloudRedis_NodeInfo extends \Google\Service\CloudRedis\NodeInfo
     {
     }
 }

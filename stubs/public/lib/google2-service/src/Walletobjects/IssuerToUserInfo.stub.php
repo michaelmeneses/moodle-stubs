@@ -21,93 +21,102 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class IssuerToUserInfo extends \Google\Model
-{
-    public const ACTION_ACTION_UNSPECIFIED = 'ACTION_UNSPECIFIED';
-    public const ACTION_S2AP = 'S2AP';
-    /**
-     * Legacy alias for `S2AP`. Deprecated.
-     *
-     * @deprecated
-     */
-    public const ACTION_s2ap = 's2ap';
-    public const ACTION_SIGN_UP = 'SIGN_UP';
-    /**
-     * Legacy alias for `SIGN_UP`. Deprecated.
-     *
-     * @deprecated
-     */
-    public const ACTION_signUp = 'signUp';
-    /**
-     * @var string
-     */
-    public $action;
-    protected $signUpInfoType = SignUpInfo::class;
-    protected $signUpInfoDataType = '';
-    /**
-     * Currently not used, consider deprecating.
-     *
-     * @var string
-     */
-    public $url;
-    /**
-     * JSON web token for action S2AP.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * @param self::ACTION_* $action
-     */
-    public function setAction($action)
+namespace Google\Service\Walletobjects {
+    class IssuerToUserInfo extends \Google\Model
     {
+        public const ACTION_ACTION_UNSPECIFIED = 'ACTION_UNSPECIFIED';
+        public const ACTION_S2AP = 'S2AP';
+        /**
+         * Legacy alias for `S2AP`. Deprecated.
+         *
+         * @deprecated
+         */
+        public const ACTION_s2ap = 's2ap';
+        public const ACTION_SIGN_UP = 'SIGN_UP';
+        /**
+         * Legacy alias for `SIGN_UP`. Deprecated.
+         *
+         * @deprecated
+         */
+        public const ACTION_signUp = 'signUp';
+        /**
+         * @var string
+         */
+        public $action;
+        protected $signUpInfoType = SignUpInfo::class;
+        protected $signUpInfoDataType = '';
+        /**
+         * Currently not used, consider deprecating.
+         *
+         * @var string
+         */
+        public $url;
+        /**
+         * JSON web token for action S2AP.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * @param self::ACTION_* $action
+         */
+        public function setAction($action)
+        {
+        }
+        /**
+         * @return self::ACTION_*
+         */
+        public function getAction()
+        {
+        }
+        /**
+         * @param SignUpInfo $signUpInfo
+         */
+        public function setSignUpInfo(SignUpInfo $signUpInfo)
+        {
+        }
+        /**
+         * @return SignUpInfo
+         */
+        public function getSignUpInfo()
+        {
+        }
+        /**
+         * Currently not used, consider deprecating.
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
+        /**
+         * JSON web token for action S2AP.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::ACTION_*
+     * Runtime class alias of \Google\Service\Walletobjects\IssuerToUserInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAction()
-    {
-    }
-    /**
-     * @param SignUpInfo $signUpInfo
-     */
-    public function setSignUpInfo(SignUpInfo $signUpInfo)
-    {
-    }
-    /**
-     * @return SignUpInfo
-     */
-    public function getSignUpInfo()
-    {
-    }
-    /**
-     * Currently not used, consider deprecating.
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
-    {
-    }
-    /**
-     * JSON web token for action S2AP.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_Walletobjects_IssuerToUserInfo extends \Google\Service\Walletobjects\IssuerToUserInfo
     {
     }
 }

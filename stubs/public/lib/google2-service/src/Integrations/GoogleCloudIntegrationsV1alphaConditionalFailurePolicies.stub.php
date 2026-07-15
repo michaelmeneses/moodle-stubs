@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaConditionalFailurePolicies extends \Google\Collection
-{
-    protected $collection_key = 'failurePolicies';
-    protected $defaultFailurePolicyType = GoogleCloudIntegrationsV1alphaFailurePolicy::class;
-    protected $defaultFailurePolicyDataType = '';
-    protected $failurePoliciesType = GoogleCloudIntegrationsV1alphaFailurePolicy::class;
-    protected $failurePoliciesDataType = 'array';
-    /**
-     * The default failure policy to be applied if no conditional failure policy
-     * matches.
-     *
-     * @param GoogleCloudIntegrationsV1alphaFailurePolicy $defaultFailurePolicy
-     */
-    public function setDefaultFailurePolicy(GoogleCloudIntegrationsV1alphaFailurePolicy $defaultFailurePolicy)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaConditionalFailurePolicies extends \Google\Collection
     {
+        protected $collection_key = 'failurePolicies';
+        protected $defaultFailurePolicyType = GoogleCloudIntegrationsV1alphaFailurePolicy::class;
+        protected $defaultFailurePolicyDataType = '';
+        protected $failurePoliciesType = GoogleCloudIntegrationsV1alphaFailurePolicy::class;
+        protected $failurePoliciesDataType = 'array';
+        /**
+         * The default failure policy to be applied if no conditional failure policy
+         * matches.
+         *
+         * @param GoogleCloudIntegrationsV1alphaFailurePolicy $defaultFailurePolicy
+         */
+        public function setDefaultFailurePolicy(GoogleCloudIntegrationsV1alphaFailurePolicy $defaultFailurePolicy)
+        {
+        }
+        /**
+         * @return GoogleCloudIntegrationsV1alphaFailurePolicy
+         */
+        public function getDefaultFailurePolicy()
+        {
+        }
+        /**
+         * The list of failure policies that will be applied to the task in order.
+         *
+         * @param GoogleCloudIntegrationsV1alphaFailurePolicy[] $failurePolicies
+         */
+        public function setFailurePolicies($failurePolicies)
+        {
+        }
+        /**
+         * @return GoogleCloudIntegrationsV1alphaFailurePolicy[]
+         */
+        public function getFailurePolicies()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudIntegrationsV1alphaFailurePolicy
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaConditionalFailurePolicies registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDefaultFailurePolicy()
-    {
-    }
-    /**
-     * The list of failure policies that will be applied to the task in order.
-     *
-     * @param GoogleCloudIntegrationsV1alphaFailurePolicy[] $failurePolicies
-     */
-    public function setFailurePolicies($failurePolicies)
-    {
-    }
-    /**
-     * @return GoogleCloudIntegrationsV1alphaFailurePolicy[]
-     */
-    public function getFailurePolicies()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaConditionalFailurePolicies extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaConditionalFailurePolicies
     {
     }
 }

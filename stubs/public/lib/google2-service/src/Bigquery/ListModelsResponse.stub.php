@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class ListModelsResponse extends \Google\Collection
-{
-    protected $collection_key = 'models';
-    protected $modelsType = Model::class;
-    protected $modelsDataType = 'array';
-    /**
-     * A token to request the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Models in the requested dataset. Only the following fields are populated:
-     * model_reference, model_type, creation_time, last_modified_time and labels.
-     *
-     * @param Model[] $models
-     */
-    public function setModels($models)
+namespace Google\Service\Bigquery {
+    class ListModelsResponse extends \Google\Collection
     {
+        protected $collection_key = 'models';
+        protected $modelsType = Model::class;
+        protected $modelsDataType = 'array';
+        /**
+         * A token to request the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Models in the requested dataset. Only the following fields are populated:
+         * model_reference, model_type, creation_time, last_modified_time and labels.
+         *
+         * @param Model[] $models
+         */
+        public function setModels($models)
+        {
+        }
+        /**
+         * @return Model[]
+         */
+        public function getModels()
+        {
+        }
+        /**
+         * A token to request the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Model[]
+     * Runtime class alias of \Google\Service\Bigquery\ListModelsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getModels()
-    {
-    }
-    /**
-     * A token to request the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Bigquery_ListModelsResponse extends \Google\Service\Bigquery\ListModelsResponse
     {
     }
 }

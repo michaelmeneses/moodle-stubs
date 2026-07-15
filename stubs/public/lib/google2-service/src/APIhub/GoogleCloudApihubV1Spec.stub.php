@@ -21,289 +21,298 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1Spec extends \Google\Collection
-{
-    /**
-     * Defaults to `RELAXED`.
-     */
-    public const PARSING_MODE_PARSING_MODE_UNSPECIFIED = 'PARSING_MODE_UNSPECIFIED';
-    /**
-     * Parsing of the Spec on create and update is relaxed, meaning that parsing
-     * errors the spec contents will not fail the API call.
-     */
-    public const PARSING_MODE_RELAXED = 'RELAXED';
-    /**
-     * Parsing of the Spec on create and update is strict, meaning that parsing
-     * errors in the spec contents will fail the API call.
-     */
-    public const PARSING_MODE_STRICT = 'STRICT';
-    protected $collection_key = 'sourceMetadata';
-    protected $additionalSpecContentsType = GoogleCloudApihubV1AdditionalSpecContent::class;
-    protected $additionalSpecContentsDataType = 'array';
-    protected $attributesType = GoogleCloudApihubV1AttributeValues::class;
-    protected $attributesDataType = 'map';
-    protected $contentsType = GoogleCloudApihubV1SpecContents::class;
-    protected $contentsDataType = '';
-    /**
-     * Output only. The time at which the spec was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    protected $detailsType = GoogleCloudApihubV1SpecDetails::class;
-    protected $detailsDataType = '';
-    /**
-     * Required. The display name of the spec. This can contain the file name of
-     * the spec.
-     *
-     * @var string
-     */
-    public $displayName;
-    protected $documentationType = GoogleCloudApihubV1Documentation::class;
-    protected $documentationDataType = '';
-    protected $lintResponseType = GoogleCloudApihubV1LintResponse::class;
-    protected $lintResponseDataType = '';
-    /**
-     * Identifier. The name of the spec. Format: `projects/{project}/locations/{lo
-     * cation}/apis/{api}/versions/{version}/specs/{spec}`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optional. Input only. Enum specifying the parsing mode for OpenAPI
-     * Specification (OAS) parsing.
-     *
-     * @var string
-     */
-    public $parsingMode;
-    protected $sourceMetadataType = GoogleCloudApihubV1SourceMetadata::class;
-    protected $sourceMetadataDataType = 'array';
-    /**
-     * Optional. The URI of the spec source in case file is uploaded from an
-     * external version control system.
-     *
-     * @var string
-     */
-    public $sourceUri;
-    protected $specTypeType = GoogleCloudApihubV1AttributeValues::class;
-    protected $specTypeDataType = '';
-    /**
-     * Output only. The time at which the spec was last updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. The additional spec contents for the spec.
-     *
-     * @param GoogleCloudApihubV1AdditionalSpecContent[] $additionalSpecContents
-     */
-    public function setAdditionalSpecContents($additionalSpecContents)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1Spec extends \Google\Collection
     {
+        /**
+         * Defaults to `RELAXED`.
+         */
+        public const PARSING_MODE_PARSING_MODE_UNSPECIFIED = 'PARSING_MODE_UNSPECIFIED';
+        /**
+         * Parsing of the Spec on create and update is relaxed, meaning that parsing
+         * errors the spec contents will not fail the API call.
+         */
+        public const PARSING_MODE_RELAXED = 'RELAXED';
+        /**
+         * Parsing of the Spec on create and update is strict, meaning that parsing
+         * errors in the spec contents will fail the API call.
+         */
+        public const PARSING_MODE_STRICT = 'STRICT';
+        protected $collection_key = 'sourceMetadata';
+        protected $additionalSpecContentsType = GoogleCloudApihubV1AdditionalSpecContent::class;
+        protected $additionalSpecContentsDataType = 'array';
+        protected $attributesType = GoogleCloudApihubV1AttributeValues::class;
+        protected $attributesDataType = 'map';
+        protected $contentsType = GoogleCloudApihubV1SpecContents::class;
+        protected $contentsDataType = '';
+        /**
+         * Output only. The time at which the spec was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        protected $detailsType = GoogleCloudApihubV1SpecDetails::class;
+        protected $detailsDataType = '';
+        /**
+         * Required. The display name of the spec. This can contain the file name of
+         * the spec.
+         *
+         * @var string
+         */
+        public $displayName;
+        protected $documentationType = GoogleCloudApihubV1Documentation::class;
+        protected $documentationDataType = '';
+        protected $lintResponseType = GoogleCloudApihubV1LintResponse::class;
+        protected $lintResponseDataType = '';
+        /**
+         * Identifier. The name of the spec. Format: `projects/{project}/locations/{lo
+         * cation}/apis/{api}/versions/{version}/specs/{spec}`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optional. Input only. Enum specifying the parsing mode for OpenAPI
+         * Specification (OAS) parsing.
+         *
+         * @var string
+         */
+        public $parsingMode;
+        protected $sourceMetadataType = GoogleCloudApihubV1SourceMetadata::class;
+        protected $sourceMetadataDataType = 'array';
+        /**
+         * Optional. The URI of the spec source in case file is uploaded from an
+         * external version control system.
+         *
+         * @var string
+         */
+        public $sourceUri;
+        protected $specTypeType = GoogleCloudApihubV1AttributeValues::class;
+        protected $specTypeDataType = '';
+        /**
+         * Output only. The time at which the spec was last updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. The additional spec contents for the spec.
+         *
+         * @param GoogleCloudApihubV1AdditionalSpecContent[] $additionalSpecContents
+         */
+        public function setAdditionalSpecContents($additionalSpecContents)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1AdditionalSpecContent[]
+         */
+        public function getAdditionalSpecContents()
+        {
+        }
+        /**
+         * Optional. The list of user defined attributes associated with the spec. The
+         * key is the attribute name. It will be of the format:
+         * `projects/{project}/locations/{location}/attributes/{attribute}`. The value
+         * is the attribute values associated with the resource.
+         *
+         * @param GoogleCloudApihubV1AttributeValues[] $attributes
+         */
+        public function setAttributes($attributes)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1AttributeValues[]
+         */
+        public function getAttributes()
+        {
+        }
+        /**
+         * Optional. Input only. The contents of the uploaded spec.
+         *
+         * @param GoogleCloudApihubV1SpecContents $contents
+         */
+        public function setContents(GoogleCloudApihubV1SpecContents $contents)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1SpecContents
+         */
+        public function getContents()
+        {
+        }
+        /**
+         * Output only. The time at which the spec was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. Details parsed from the spec.
+         *
+         * @param GoogleCloudApihubV1SpecDetails $details
+         */
+        public function setDetails(GoogleCloudApihubV1SpecDetails $details)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1SpecDetails
+         */
+        public function getDetails()
+        {
+        }
+        /**
+         * Required. The display name of the spec. This can contain the file name of
+         * the spec.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Optional. The documentation of the spec. For OpenAPI spec, this will be
+         * populated from `externalDocs` in OpenAPI spec.
+         *
+         * @param GoogleCloudApihubV1Documentation $documentation
+         */
+        public function setDocumentation(GoogleCloudApihubV1Documentation $documentation)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1Documentation
+         */
+        public function getDocumentation()
+        {
+        }
+        /**
+         * Optional. The lint response for the spec.
+         *
+         * @param GoogleCloudApihubV1LintResponse $lintResponse
+         */
+        public function setLintResponse(GoogleCloudApihubV1LintResponse $lintResponse)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1LintResponse
+         */
+        public function getLintResponse()
+        {
+        }
+        /**
+         * Identifier. The name of the spec. Format: `projects/{project}/locations/{lo
+         * cation}/apis/{api}/versions/{version}/specs/{spec}`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. Input only. Enum specifying the parsing mode for OpenAPI
+         * Specification (OAS) parsing.
+         *
+         * Accepted values: PARSING_MODE_UNSPECIFIED, RELAXED, STRICT
+         *
+         * @param self::PARSING_MODE_* $parsingMode
+         */
+        public function setParsingMode($parsingMode)
+        {
+        }
+        /**
+         * @return self::PARSING_MODE_*
+         */
+        public function getParsingMode()
+        {
+        }
+        /**
+         * Output only. The list of sources and metadata from the sources of the spec.
+         *
+         * @param GoogleCloudApihubV1SourceMetadata[] $sourceMetadata
+         */
+        public function setSourceMetadata($sourceMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1SourceMetadata[]
+         */
+        public function getSourceMetadata()
+        {
+        }
+        /**
+         * Optional. The URI of the spec source in case file is uploaded from an
+         * external version control system.
+         *
+         * @param string $sourceUri
+         */
+        public function setSourceUri($sourceUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceUri()
+        {
+        }
+        /**
+         * Required. The type of spec. The value should be one of the allowed values
+         * defined for `projects/{project}/locations/{location}/attributes/system-
+         * spec-type` attribute. The number of values for this attribute will be based
+         * on the cardinality of the attribute. The same can be retrieved via
+         * GetAttribute API. Note, this field is mandatory if content is provided.
+         *
+         * @param GoogleCloudApihubV1AttributeValues $specType
+         */
+        public function setSpecType(GoogleCloudApihubV1AttributeValues $specType)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1AttributeValues
+         */
+        public function getSpecType()
+        {
+        }
+        /**
+         * Output only. The time at which the spec was last updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApihubV1AdditionalSpecContent[]
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1Spec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdditionalSpecContents()
-    {
-    }
-    /**
-     * Optional. The list of user defined attributes associated with the spec. The
-     * key is the attribute name. It will be of the format:
-     * `projects/{project}/locations/{location}/attributes/{attribute}`. The value
-     * is the attribute values associated with the resource.
-     *
-     * @param GoogleCloudApihubV1AttributeValues[] $attributes
-     */
-    public function setAttributes($attributes)
-    {
-    }
-    /**
-     * @return GoogleCloudApihubV1AttributeValues[]
-     */
-    public function getAttributes()
-    {
-    }
-    /**
-     * Optional. Input only. The contents of the uploaded spec.
-     *
-     * @param GoogleCloudApihubV1SpecContents $contents
-     */
-    public function setContents(GoogleCloudApihubV1SpecContents $contents)
-    {
-    }
-    /**
-     * @return GoogleCloudApihubV1SpecContents
-     */
-    public function getContents()
-    {
-    }
-    /**
-     * Output only. The time at which the spec was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. Details parsed from the spec.
-     *
-     * @param GoogleCloudApihubV1SpecDetails $details
-     */
-    public function setDetails(GoogleCloudApihubV1SpecDetails $details)
-    {
-    }
-    /**
-     * @return GoogleCloudApihubV1SpecDetails
-     */
-    public function getDetails()
-    {
-    }
-    /**
-     * Required. The display name of the spec. This can contain the file name of
-     * the spec.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Optional. The documentation of the spec. For OpenAPI spec, this will be
-     * populated from `externalDocs` in OpenAPI spec.
-     *
-     * @param GoogleCloudApihubV1Documentation $documentation
-     */
-    public function setDocumentation(GoogleCloudApihubV1Documentation $documentation)
-    {
-    }
-    /**
-     * @return GoogleCloudApihubV1Documentation
-     */
-    public function getDocumentation()
-    {
-    }
-    /**
-     * Optional. The lint response for the spec.
-     *
-     * @param GoogleCloudApihubV1LintResponse $lintResponse
-     */
-    public function setLintResponse(GoogleCloudApihubV1LintResponse $lintResponse)
-    {
-    }
-    /**
-     * @return GoogleCloudApihubV1LintResponse
-     */
-    public function getLintResponse()
-    {
-    }
-    /**
-     * Identifier. The name of the spec. Format: `projects/{project}/locations/{lo
-     * cation}/apis/{api}/versions/{version}/specs/{spec}`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. Input only. Enum specifying the parsing mode for OpenAPI
-     * Specification (OAS) parsing.
-     *
-     * Accepted values: PARSING_MODE_UNSPECIFIED, RELAXED, STRICT
-     *
-     * @param self::PARSING_MODE_* $parsingMode
-     */
-    public function setParsingMode($parsingMode)
-    {
-    }
-    /**
-     * @return self::PARSING_MODE_*
-     */
-    public function getParsingMode()
-    {
-    }
-    /**
-     * Output only. The list of sources and metadata from the sources of the spec.
-     *
-     * @param GoogleCloudApihubV1SourceMetadata[] $sourceMetadata
-     */
-    public function setSourceMetadata($sourceMetadata)
-    {
-    }
-    /**
-     * @return GoogleCloudApihubV1SourceMetadata[]
-     */
-    public function getSourceMetadata()
-    {
-    }
-    /**
-     * Optional. The URI of the spec source in case file is uploaded from an
-     * external version control system.
-     *
-     * @param string $sourceUri
-     */
-    public function setSourceUri($sourceUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourceUri()
-    {
-    }
-    /**
-     * Required. The type of spec. The value should be one of the allowed values
-     * defined for `projects/{project}/locations/{location}/attributes/system-
-     * spec-type` attribute. The number of values for this attribute will be based
-     * on the cardinality of the attribute. The same can be retrieved via
-     * GetAttribute API. Note, this field is mandatory if content is provided.
-     *
-     * @param GoogleCloudApihubV1AttributeValues $specType
-     */
-    public function setSpecType(GoogleCloudApihubV1AttributeValues $specType)
-    {
-    }
-    /**
-     * @return GoogleCloudApihubV1AttributeValues
-     */
-    public function getSpecType()
-    {
-    }
-    /**
-     * Output only. The time at which the spec was last updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_APIhub_GoogleCloudApihubV1Spec extends \Google\Service\APIhub\GoogleCloudApihubV1Spec
     {
     }
 }

@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution;
-
-class GoogleDevtoolsRemotebuildbotCommandEvents extends \Google\Model
-{
-    public $cmUsage;
-    public $dockerCacheHit;
-    public $dockerImageName;
-    public $inputCacheMiss;
-    public $numErrors;
-    public $numWarnings;
-    public $outputLocation;
-    public $usedAsyncContainer;
-    public function setCmUsage($cmUsage)
+namespace Google\Service\RemoteBuildExecution {
+    class GoogleDevtoolsRemotebuildbotCommandEvents extends \Google\Model
     {
+        public $cmUsage;
+        public $dockerCacheHit;
+        public $dockerImageName;
+        public $inputCacheMiss;
+        public $numErrors;
+        public $numWarnings;
+        public $outputLocation;
+        public $usedAsyncContainer;
+        public function setCmUsage($cmUsage)
+        {
+        }
+        public function getCmUsage()
+        {
+        }
+        public function setDockerCacheHit($dockerCacheHit)
+        {
+        }
+        public function getDockerCacheHit()
+        {
+        }
+        public function setDockerImageName($dockerImageName)
+        {
+        }
+        public function getDockerImageName()
+        {
+        }
+        public function setInputCacheMiss($inputCacheMiss)
+        {
+        }
+        public function getInputCacheMiss()
+        {
+        }
+        public function setNumErrors($numErrors)
+        {
+        }
+        public function getNumErrors()
+        {
+        }
+        public function setNumWarnings($numWarnings)
+        {
+        }
+        public function getNumWarnings()
+        {
+        }
+        public function setOutputLocation($outputLocation)
+        {
+        }
+        public function getOutputLocation()
+        {
+        }
+        public function setUsedAsyncContainer($usedAsyncContainer)
+        {
+        }
+        public function getUsedAsyncContainer()
+        {
+        }
     }
-    public function getCmUsage()
-    {
-    }
-    public function setDockerCacheHit($dockerCacheHit)
-    {
-    }
-    public function getDockerCacheHit()
-    {
-    }
-    public function setDockerImageName($dockerImageName)
-    {
-    }
-    public function getDockerImageName()
-    {
-    }
-    public function setInputCacheMiss($inputCacheMiss)
-    {
-    }
-    public function getInputCacheMiss()
-    {
-    }
-    public function setNumErrors($numErrors)
-    {
-    }
-    public function getNumErrors()
-    {
-    }
-    public function setNumWarnings($numWarnings)
-    {
-    }
-    public function getNumWarnings()
-    {
-    }
-    public function setOutputLocation($outputLocation)
-    {
-    }
-    public function getOutputLocation()
-    {
-    }
-    public function setUsedAsyncContainer($usedAsyncContainer)
-    {
-    }
-    public function getUsedAsyncContainer()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\GoogleDevtoolsRemotebuildbotCommandEvents registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_RemoteBuildExecution_GoogleDevtoolsRemotebuildbotCommandEvents extends \Google\Service\RemoteBuildExecution\GoogleDevtoolsRemotebuildbotCommandEvents
     {
     }
 }

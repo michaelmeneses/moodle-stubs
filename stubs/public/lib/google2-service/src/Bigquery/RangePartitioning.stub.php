@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class RangePartitioning extends \Google\Model
-{
-    /**
-     * Required. The name of the column to partition the table on. It must be a
-     * top-level, INT64 column whose mode is NULLABLE or REQUIRED.
-     *
-     * @var string
-     */
-    public $field;
-    protected $rangeType = RangePartitioningRange::class;
-    protected $rangeDataType = '';
-    /**
-     * Required. The name of the column to partition the table on. It must be a
-     * top-level, INT64 column whose mode is NULLABLE or REQUIRED.
-     *
-     * @param string $field
-     */
-    public function setField($field)
+namespace Google\Service\Bigquery {
+    class RangePartitioning extends \Google\Model
     {
+        /**
+         * Required. The name of the column to partition the table on. It must be a
+         * top-level, INT64 column whose mode is NULLABLE or REQUIRED.
+         *
+         * @var string
+         */
+        public $field;
+        protected $rangeType = RangePartitioningRange::class;
+        protected $rangeDataType = '';
+        /**
+         * Required. The name of the column to partition the table on. It must be a
+         * top-level, INT64 column whose mode is NULLABLE or REQUIRED.
+         *
+         * @param string $field
+         */
+        public function setField($field)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getField()
+        {
+        }
+        /**
+         * [Experimental] Defines the ranges for range partitioning.
+         *
+         * @param RangePartitioningRange $range
+         */
+        public function setRange(RangePartitioningRange $range)
+        {
+        }
+        /**
+         * @return RangePartitioningRange
+         */
+        public function getRange()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Bigquery\RangePartitioning registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getField()
-    {
-    }
-    /**
-     * [Experimental] Defines the ranges for range partitioning.
-     *
-     * @param RangePartitioningRange $range
-     */
-    public function setRange(RangePartitioningRange $range)
-    {
-    }
-    /**
-     * @return RangePartitioningRange
-     */
-    public function getRange()
+    class Google_Service_Bigquery_RangePartitioning extends \Google\Service\Bigquery\RangePartitioning
     {
     }
 }

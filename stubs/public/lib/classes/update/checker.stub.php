@@ -29,6 +29,7 @@
  */
 namespace core\update;
 
+use html_writer, coding_exception, core_component;
 /**
  * Singleton class that handles checking for available updates
  */

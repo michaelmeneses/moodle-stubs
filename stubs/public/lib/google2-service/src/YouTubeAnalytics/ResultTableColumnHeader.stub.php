@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTubeAnalytics;
-
-class ResultTableColumnHeader extends \Google\Model
-{
-    /**
-     * The type of the column (`DIMENSION` or `METRIC`).
-     *
-     * @var string
-     */
-    public $columnType;
-    /**
-     * The type of the data in the column (`STRING`, `INTEGER`, `FLOAT`, etc.).
-     *
-     * @var string
-     */
-    public $dataType;
-    /**
-     * The name of the dimension or metric.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The type of the column (`DIMENSION` or `METRIC`).
-     *
-     * @param string $columnType
-     */
-    public function setColumnType($columnType)
+namespace Google\Service\YouTubeAnalytics {
+    class ResultTableColumnHeader extends \Google\Model
     {
+        /**
+         * The type of the column (`DIMENSION` or `METRIC`).
+         *
+         * @var string
+         */
+        public $columnType;
+        /**
+         * The type of the data in the column (`STRING`, `INTEGER`, `FLOAT`, etc.).
+         *
+         * @var string
+         */
+        public $dataType;
+        /**
+         * The name of the dimension or metric.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The type of the column (`DIMENSION` or `METRIC`).
+         *
+         * @param string $columnType
+         */
+        public function setColumnType($columnType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getColumnType()
+        {
+        }
+        /**
+         * The type of the data in the column (`STRING`, `INTEGER`, `FLOAT`, etc.).
+         *
+         * @param string $dataType
+         */
+        public function setDataType($dataType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataType()
+        {
+        }
+        /**
+         * The name of the dimension or metric.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTubeAnalytics\ResultTableColumnHeader registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumnType()
-    {
-    }
-    /**
-     * The type of the data in the column (`STRING`, `INTEGER`, `FLOAT`, etc.).
-     *
-     * @param string $dataType
-     */
-    public function setDataType($dataType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDataType()
-    {
-    }
-    /**
-     * The name of the dimension or metric.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_YouTubeAnalytics_ResultTableColumnHeader extends \Google\Service\YouTubeAnalytics\ResultTableColumnHeader
     {
     }
 }

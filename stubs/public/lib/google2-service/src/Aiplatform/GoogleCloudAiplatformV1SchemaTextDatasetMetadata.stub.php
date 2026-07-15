@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaTextDatasetMetadata extends \Google\Model
-{
-    /**
-     * Points to a YAML file stored on Google Cloud Storage describing payload of
-     * the Text DataItems that belong to this Dataset.
-     *
-     * @var string
-     */
-    public $dataItemSchemaUri;
-    /**
-     * Google Cloud Storage Bucket name that contains the blob data of this
-     * Dataset.
-     *
-     * @var string
-     */
-    public $gcsBucket;
-    /**
-     * Points to a YAML file stored on Google Cloud Storage describing payload of
-     * the Text DataItems that belong to this Dataset.
-     *
-     * @param string $dataItemSchemaUri
-     */
-    public function setDataItemSchemaUri($dataItemSchemaUri)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaTextDatasetMetadata extends \Google\Model
     {
+        /**
+         * Points to a YAML file stored on Google Cloud Storage describing payload of
+         * the Text DataItems that belong to this Dataset.
+         *
+         * @var string
+         */
+        public $dataItemSchemaUri;
+        /**
+         * Google Cloud Storage Bucket name that contains the blob data of this
+         * Dataset.
+         *
+         * @var string
+         */
+        public $gcsBucket;
+        /**
+         * Points to a YAML file stored on Google Cloud Storage describing payload of
+         * the Text DataItems that belong to this Dataset.
+         *
+         * @param string $dataItemSchemaUri
+         */
+        public function setDataItemSchemaUri($dataItemSchemaUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataItemSchemaUri()
+        {
+        }
+        /**
+         * Google Cloud Storage Bucket name that contains the blob data of this
+         * Dataset.
+         *
+         * @param string $gcsBucket
+         */
+        public function setGcsBucket($gcsBucket)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGcsBucket()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaTextDatasetMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataItemSchemaUri()
-    {
-    }
-    /**
-     * Google Cloud Storage Bucket name that contains the blob data of this
-     * Dataset.
-     *
-     * @param string $gcsBucket
-     */
-    public function setGcsBucket($gcsBucket)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGcsBucket()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaTextDatasetMetadata extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaTextDatasetMetadata
     {
     }
 }

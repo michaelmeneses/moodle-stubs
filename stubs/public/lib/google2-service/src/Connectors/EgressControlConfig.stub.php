@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors;
-
-class EgressControlConfig extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $backends;
-    protected $extractionRulesType = ExtractionRules::class;
-    protected $extractionRulesDataType = '';
-    /**
-     * @param string
-     */
-    public function setBackends($backends)
+namespace Google\Service\Connectors {
+    class EgressControlConfig extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $backends;
+        protected $extractionRulesType = ExtractionRules::class;
+        protected $extractionRulesDataType = '';
+        /**
+         * @param string
+         */
+        public function setBackends($backends)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBackends()
+        {
+        }
+        /**
+         * @param ExtractionRules
+         */
+        public function setExtractionRules(ExtractionRules $extractionRules)
+        {
+        }
+        /**
+         * @return ExtractionRules
+         */
+        public function getExtractionRules()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Connectors\EgressControlConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackends()
-    {
-    }
-    /**
-     * @param ExtractionRules
-     */
-    public function setExtractionRules(ExtractionRules $extractionRules)
-    {
-    }
-    /**
-     * @return ExtractionRules
-     */
-    public function getExtractionRules()
+    class Google_Service_Connectors_EgressControlConfig extends \Google\Service\Connectors\EgressControlConfig
     {
     }
 }

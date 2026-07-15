@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1JiraSource extends \Google\Collection
-{
-    protected $collection_key = 'jiraQueries';
-    protected $jiraQueriesType = GoogleCloudAiplatformV1JiraSourceJiraQueries::class;
-    protected $jiraQueriesDataType = 'array';
-    /**
-     * Required. The Jira queries.
-     *
-     * @param GoogleCloudAiplatformV1JiraSourceJiraQueries[] $jiraQueries
-     */
-    public function setJiraQueries($jiraQueries)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1JiraSource extends \Google\Collection
     {
+        protected $collection_key = 'jiraQueries';
+        protected $jiraQueriesType = GoogleCloudAiplatformV1JiraSourceJiraQueries::class;
+        protected $jiraQueriesDataType = 'array';
+        /**
+         * Required. The Jira queries.
+         *
+         * @param GoogleCloudAiplatformV1JiraSourceJiraQueries[] $jiraQueries
+         */
+        public function setJiraQueries($jiraQueries)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1JiraSourceJiraQueries[]
+         */
+        public function getJiraQueries()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1JiraSourceJiraQueries[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1JiraSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getJiraQueries()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1JiraSource extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1JiraSource
     {
     }
 }

@@ -21,156 +21,165 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BeyondCorp;
-
-class CloudSecurityZerotrustApplinkAppConnectorProtoConnectionConfig extends \Google\Collection
-{
-    protected $collection_key = 'gateway';
-    /**
-     * application_endpoint is the endpoint of the application the form of
-     * host:port. For example, "localhost:80".
-     *
-     * @var string
-     */
-    public $applicationEndpoint;
-    /**
-     * application_name represents the given name of the application the
-     * connection is connecting with.
-     *
-     * @var string
-     */
-    public $applicationName;
-    protected $gatewayType = CloudSecurityZerotrustApplinkAppConnectorProtoGateway::class;
-    protected $gatewayDataType = 'array';
-    /**
-     * name is the unique ID for each connection. TODO(b/190732451) returns
-     * connection name from user-specified name in config. Now, name =
-     * ${application_name}:${application_endpoint}
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * project represents the consumer project the connection belongs to.
-     *
-     * @var string
-     */
-    public $project;
-    /**
-     * tunnels_per_gateway reflects the number of tunnels between a connector and
-     * a gateway.
-     *
-     * @var string
-     */
-    public $tunnelsPerGateway;
-    /**
-     * user_port specifies the reserved port on gateways for user connections.
-     *
-     * @var int
-     */
-    public $userPort;
-    /**
-     * application_endpoint is the endpoint of the application the form of
-     * host:port. For example, "localhost:80".
-     *
-     * @param string $applicationEndpoint
-     */
-    public function setApplicationEndpoint($applicationEndpoint)
+namespace Google\Service\BeyondCorp {
+    class CloudSecurityZerotrustApplinkAppConnectorProtoConnectionConfig extends \Google\Collection
     {
+        protected $collection_key = 'gateway';
+        /**
+         * application_endpoint is the endpoint of the application the form of
+         * host:port. For example, "localhost:80".
+         *
+         * @var string
+         */
+        public $applicationEndpoint;
+        /**
+         * application_name represents the given name of the application the
+         * connection is connecting with.
+         *
+         * @var string
+         */
+        public $applicationName;
+        protected $gatewayType = CloudSecurityZerotrustApplinkAppConnectorProtoGateway::class;
+        protected $gatewayDataType = 'array';
+        /**
+         * name is the unique ID for each connection. TODO(b/190732451) returns
+         * connection name from user-specified name in config. Now, name =
+         * ${application_name}:${application_endpoint}
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * project represents the consumer project the connection belongs to.
+         *
+         * @var string
+         */
+        public $project;
+        /**
+         * tunnels_per_gateway reflects the number of tunnels between a connector and
+         * a gateway.
+         *
+         * @var string
+         */
+        public $tunnelsPerGateway;
+        /**
+         * user_port specifies the reserved port on gateways for user connections.
+         *
+         * @var int
+         */
+        public $userPort;
+        /**
+         * application_endpoint is the endpoint of the application the form of
+         * host:port. For example, "localhost:80".
+         *
+         * @param string $applicationEndpoint
+         */
+        public function setApplicationEndpoint($applicationEndpoint)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApplicationEndpoint()
+        {
+        }
+        /**
+         * application_name represents the given name of the application the
+         * connection is connecting with.
+         *
+         * @param string $applicationName
+         */
+        public function setApplicationName($applicationName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApplicationName()
+        {
+        }
+        /**
+         * gateway lists all instances running a gateway in GCP. They all connect to a
+         * connector on the host.
+         *
+         * @param CloudSecurityZerotrustApplinkAppConnectorProtoGateway[] $gateway
+         */
+        public function setGateway($gateway)
+        {
+        }
+        /**
+         * @return CloudSecurityZerotrustApplinkAppConnectorProtoGateway[]
+         */
+        public function getGateway()
+        {
+        }
+        /**
+         * name is the unique ID for each connection. TODO(b/190732451) returns
+         * connection name from user-specified name in config. Now, name =
+         * ${application_name}:${application_endpoint}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * project represents the consumer project the connection belongs to.
+         *
+         * @param string $project
+         */
+        public function setProject($project)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProject()
+        {
+        }
+        /**
+         * tunnels_per_gateway reflects the number of tunnels between a connector and
+         * a gateway.
+         *
+         * @param string $tunnelsPerGateway
+         */
+        public function setTunnelsPerGateway($tunnelsPerGateway)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTunnelsPerGateway()
+        {
+        }
+        /**
+         * user_port specifies the reserved port on gateways for user connections.
+         *
+         * @param int $userPort
+         */
+        public function setUserPort($userPort)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getUserPort()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BeyondCorp\CloudSecurityZerotrustApplinkAppConnectorProtoConnectionConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApplicationEndpoint()
-    {
-    }
-    /**
-     * application_name represents the given name of the application the
-     * connection is connecting with.
-     *
-     * @param string $applicationName
-     */
-    public function setApplicationName($applicationName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getApplicationName()
-    {
-    }
-    /**
-     * gateway lists all instances running a gateway in GCP. They all connect to a
-     * connector on the host.
-     *
-     * @param CloudSecurityZerotrustApplinkAppConnectorProtoGateway[] $gateway
-     */
-    public function setGateway($gateway)
-    {
-    }
-    /**
-     * @return CloudSecurityZerotrustApplinkAppConnectorProtoGateway[]
-     */
-    public function getGateway()
-    {
-    }
-    /**
-     * name is the unique ID for each connection. TODO(b/190732451) returns
-     * connection name from user-specified name in config. Now, name =
-     * ${application_name}:${application_endpoint}
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * project represents the consumer project the connection belongs to.
-     *
-     * @param string $project
-     */
-    public function setProject($project)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProject()
-    {
-    }
-    /**
-     * tunnels_per_gateway reflects the number of tunnels between a connector and
-     * a gateway.
-     *
-     * @param string $tunnelsPerGateway
-     */
-    public function setTunnelsPerGateway($tunnelsPerGateway)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTunnelsPerGateway()
-    {
-    }
-    /**
-     * user_port specifies the reserved port on gateways for user connections.
-     *
-     * @param int $userPort
-     */
-    public function setUserPort($userPort)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getUserPort()
+    class Google_Service_BeyondCorp_CloudSecurityZerotrustApplinkAppConnectorProtoConnectionConfig extends \Google\Service\BeyondCorp\CloudSecurityZerotrustApplinkAppConnectorProtoConnectionConfig
     {
     }
 }

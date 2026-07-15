@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudFilestore;
-
-class PauseReplicaRequest extends \Google\Model
-{
+namespace Google\Service\CloudFilestore {
+    class PauseReplicaRequest extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudFilestore\PauseReplicaRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudFilestore_PauseReplicaRequest extends \Google\Service\CloudFilestore\PauseReplicaRequest
+    {
+    }
 }

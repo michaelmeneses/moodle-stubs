@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class ListBitbucketServerConfigsResponse extends \Google\Collection
-{
-    protected $collection_key = 'bitbucketServerConfigs';
-    protected $bitbucketServerConfigsType = BitbucketServerConfig::class;
-    protected $bitbucketServerConfigsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * @param BitbucketServerConfig[]
-     */
-    public function setBitbucketServerConfigs($bitbucketServerConfigs)
+namespace Google\Service\CloudBuild {
+    class ListBitbucketServerConfigsResponse extends \Google\Collection
     {
+        protected $collection_key = 'bitbucketServerConfigs';
+        protected $bitbucketServerConfigsType = BitbucketServerConfig::class;
+        protected $bitbucketServerConfigsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * @param BitbucketServerConfig[]
+         */
+        public function setBitbucketServerConfigs($bitbucketServerConfigs)
+        {
+        }
+        /**
+         * @return BitbucketServerConfig[]
+         */
+        public function getBitbucketServerConfigs()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BitbucketServerConfig[]
+     * Runtime class alias of \Google\Service\CloudBuild\ListBitbucketServerConfigsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBitbucketServerConfigs()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_CloudBuild_ListBitbucketServerConfigsResponse extends \Google\Service\CloudBuild\ListBitbucketServerConfigsResponse
     {
     }
 }

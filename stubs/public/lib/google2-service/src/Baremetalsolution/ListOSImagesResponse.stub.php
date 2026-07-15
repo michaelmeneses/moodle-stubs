@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Baremetalsolution;
-
-class ListOSImagesResponse extends \Google\Collection
-{
-    protected $collection_key = 'osImages';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $osImagesType = OSImage::class;
-    protected $osImagesDataType = 'array';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Baremetalsolution {
+    class ListOSImagesResponse extends \Google\Collection
     {
+        protected $collection_key = 'osImages';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $osImagesType = OSImage::class;
+        protected $osImagesDataType = 'array';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The OS images available.
+         *
+         * @param OSImage[] $osImages
+         */
+        public function setOsImages($osImages)
+        {
+        }
+        /**
+         * @return OSImage[]
+         */
+        public function getOsImages()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Baremetalsolution\ListOSImagesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The OS images available.
-     *
-     * @param OSImage[] $osImages
-     */
-    public function setOsImages($osImages)
-    {
-    }
-    /**
-     * @return OSImage[]
-     */
-    public function getOsImages()
+    class Google_Service_Baremetalsolution_ListOSImagesResponse extends \Google\Service\Baremetalsolution\ListOSImagesResponse
     {
     }
 }

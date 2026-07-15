@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides;
-
-class SlidesList extends \Google\Model
-{
-    /**
-     * The ID of the list.
-     *
-     * @var string
-     */
-    public $listId;
-    protected $nestingLevelType = NestingLevel::class;
-    protected $nestingLevelDataType = 'map';
-    /**
-     * The ID of the list.
-     *
-     * @param string $listId
-     */
-    public function setListId($listId)
+namespace Google\Service\Slides {
+    class SlidesList extends \Google\Model
     {
+        /**
+         * The ID of the list.
+         *
+         * @var string
+         */
+        public $listId;
+        protected $nestingLevelType = NestingLevel::class;
+        protected $nestingLevelDataType = 'map';
+        /**
+         * The ID of the list.
+         *
+         * @param string $listId
+         */
+        public function setListId($listId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getListId()
+        {
+        }
+        /**
+         * A map of nesting levels to the properties of bullets at the associated
+         * level. A list has at most nine levels of nesting, so the possible values
+         * for the keys of this map are 0 through 8, inclusive.
+         *
+         * @param NestingLevel[] $nestingLevel
+         */
+        public function setNestingLevel($nestingLevel)
+        {
+        }
+        /**
+         * @return NestingLevel[]
+         */
+        public function getNestingLevel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Slides\SlidesList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getListId()
-    {
-    }
-    /**
-     * A map of nesting levels to the properties of bullets at the associated
-     * level. A list has at most nine levels of nesting, so the possible values
-     * for the keys of this map are 0 through 8, inclusive.
-     *
-     * @param NestingLevel[] $nestingLevel
-     */
-    public function setNestingLevel($nestingLevel)
-    {
-    }
-    /**
-     * @return NestingLevel[]
-     */
-    public function getNestingLevel()
+    class Google_Service_Slides_SlidesList extends \Google\Service\Slides\SlidesList
     {
     }
 }

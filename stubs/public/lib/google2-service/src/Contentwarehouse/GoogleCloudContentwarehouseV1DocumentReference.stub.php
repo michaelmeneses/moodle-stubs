@@ -21,194 +21,203 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudContentwarehouseV1DocumentReference extends \Google\Model
-{
-    /**
-     * Output only. The time when the document is created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Output only. The time when the document is deleted.
-     *
-     * @var string
-     */
-    public $deleteTime;
-    /**
-     * display_name of the referenced document; this name does not need to be
-     * consistent to the display_name in the Document proto, depending on the ACL
-     * constraint.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The document type of the document being referenced.
-     *
-     * @var bool
-     */
-    public $documentIsFolder;
-    /**
-     * Document is a folder with legal hold.
-     *
-     * @var bool
-     */
-    public $documentIsLegalHoldFolder;
-    /**
-     * Document is a folder with retention policy.
-     *
-     * @var bool
-     */
-    public $documentIsRetentionFolder;
-    /**
-     * Required. Name of the referenced document.
-     *
-     * @var string
-     */
-    public $documentName;
-    /**
-     * Stores the subset of the referenced document's content. This is useful to
-     * allow user peek the information of the referenced document.
-     *
-     * @var string
-     */
-    public $snippet;
-    /**
-     * Output only. The time when the document is last updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. The time when the document is created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudContentwarehouseV1DocumentReference extends \Google\Model
     {
+        /**
+         * Output only. The time when the document is created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Output only. The time when the document is deleted.
+         *
+         * @var string
+         */
+        public $deleteTime;
+        /**
+         * display_name of the referenced document; this name does not need to be
+         * consistent to the display_name in the Document proto, depending on the ACL
+         * constraint.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The document type of the document being referenced.
+         *
+         * @var bool
+         */
+        public $documentIsFolder;
+        /**
+         * Document is a folder with legal hold.
+         *
+         * @var bool
+         */
+        public $documentIsLegalHoldFolder;
+        /**
+         * Document is a folder with retention policy.
+         *
+         * @var bool
+         */
+        public $documentIsRetentionFolder;
+        /**
+         * Required. Name of the referenced document.
+         *
+         * @var string
+         */
+        public $documentName;
+        /**
+         * Stores the subset of the referenced document's content. This is useful to
+         * allow user peek the information of the referenced document.
+         *
+         * @var string
+         */
+        public $snippet;
+        /**
+         * Output only. The time when the document is last updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. The time when the document is created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. The time when the document is deleted.
+         *
+         * @param string $deleteTime
+         */
+        public function setDeleteTime($deleteTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeleteTime()
+        {
+        }
+        /**
+         * display_name of the referenced document; this name does not need to be
+         * consistent to the display_name in the Document proto, depending on the ACL
+         * constraint.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The document type of the document being referenced.
+         *
+         * @param bool $documentIsFolder
+         */
+        public function setDocumentIsFolder($documentIsFolder)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDocumentIsFolder()
+        {
+        }
+        /**
+         * Document is a folder with legal hold.
+         *
+         * @param bool $documentIsLegalHoldFolder
+         */
+        public function setDocumentIsLegalHoldFolder($documentIsLegalHoldFolder)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDocumentIsLegalHoldFolder()
+        {
+        }
+        /**
+         * Document is a folder with retention policy.
+         *
+         * @param bool $documentIsRetentionFolder
+         */
+        public function setDocumentIsRetentionFolder($documentIsRetentionFolder)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDocumentIsRetentionFolder()
+        {
+        }
+        /**
+         * Required. Name of the referenced document.
+         *
+         * @param string $documentName
+         */
+        public function setDocumentName($documentName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDocumentName()
+        {
+        }
+        /**
+         * Stores the subset of the referenced document's content. This is useful to
+         * allow user peek the information of the referenced document.
+         *
+         * @param string $snippet
+         */
+        public function setSnippet($snippet)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSnippet()
+        {
+        }
+        /**
+         * Output only. The time when the document is last updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1DocumentReference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. The time when the document is deleted.
-     *
-     * @param string $deleteTime
-     */
-    public function setDeleteTime($deleteTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeleteTime()
-    {
-    }
-    /**
-     * display_name of the referenced document; this name does not need to be
-     * consistent to the display_name in the Document proto, depending on the ACL
-     * constraint.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The document type of the document being referenced.
-     *
-     * @param bool $documentIsFolder
-     */
-    public function setDocumentIsFolder($documentIsFolder)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDocumentIsFolder()
-    {
-    }
-    /**
-     * Document is a folder with legal hold.
-     *
-     * @param bool $documentIsLegalHoldFolder
-     */
-    public function setDocumentIsLegalHoldFolder($documentIsLegalHoldFolder)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDocumentIsLegalHoldFolder()
-    {
-    }
-    /**
-     * Document is a folder with retention policy.
-     *
-     * @param bool $documentIsRetentionFolder
-     */
-    public function setDocumentIsRetentionFolder($documentIsRetentionFolder)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDocumentIsRetentionFolder()
-    {
-    }
-    /**
-     * Required. Name of the referenced document.
-     *
-     * @param string $documentName
-     */
-    public function setDocumentName($documentName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDocumentName()
-    {
-    }
-    /**
-     * Stores the subset of the referenced document's content. This is useful to
-     * allow user peek the information of the referenced document.
-     *
-     * @param string $snippet
-     */
-    public function setSnippet($snippet)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSnippet()
-    {
-    }
-    /**
-     * Output only. The time when the document is last updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_Contentwarehouse_GoogleCloudContentwarehouseV1DocumentReference extends \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1DocumentReference
     {
     }
 }

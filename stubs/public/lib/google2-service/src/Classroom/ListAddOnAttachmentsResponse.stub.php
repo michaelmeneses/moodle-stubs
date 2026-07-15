@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Classroom;
-
-class ListAddOnAttachmentsResponse extends \Google\Collection
-{
-    protected $collection_key = 'addOnAttachments';
-    protected $addOnAttachmentsType = AddOnAttachment::class;
-    protected $addOnAttachmentsDataType = 'array';
-    /**
-     * A token, which can be sent as `pageToken` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Attachments under the given post.
-     *
-     * @param AddOnAttachment[] $addOnAttachments
-     */
-    public function setAddOnAttachments($addOnAttachments)
+namespace Google\Service\Classroom {
+    class ListAddOnAttachmentsResponse extends \Google\Collection
     {
+        protected $collection_key = 'addOnAttachments';
+        protected $addOnAttachmentsType = AddOnAttachment::class;
+        protected $addOnAttachmentsDataType = 'array';
+        /**
+         * A token, which can be sent as `pageToken` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Attachments under the given post.
+         *
+         * @param AddOnAttachment[] $addOnAttachments
+         */
+        public function setAddOnAttachments($addOnAttachments)
+        {
+        }
+        /**
+         * @return AddOnAttachment[]
+         */
+        public function getAddOnAttachments()
+        {
+        }
+        /**
+         * A token, which can be sent as `pageToken` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AddOnAttachment[]
+     * Runtime class alias of \Google\Service\Classroom\ListAddOnAttachmentsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddOnAttachments()
-    {
-    }
-    /**
-     * A token, which can be sent as `pageToken` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Classroom_ListAddOnAttachmentsResponse extends \Google\Service\Classroom\ListAddOnAttachmentsResponse
     {
     }
 }

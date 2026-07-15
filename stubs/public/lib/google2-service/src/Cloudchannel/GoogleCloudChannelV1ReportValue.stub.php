@@ -21,115 +21,124 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1ReportValue extends \Google\Model
-{
-    protected $dateTimeValueType = GoogleTypeDateTime::class;
-    protected $dateTimeValueDataType = '';
-    protected $dateValueType = GoogleTypeDate::class;
-    protected $dateValueDataType = '';
-    protected $decimalValueType = GoogleTypeDecimal::class;
-    protected $decimalValueDataType = '';
-    /**
-     * A value of type `int`.
-     *
-     * @var string
-     */
-    public $intValue;
-    protected $moneyValueType = GoogleTypeMoney::class;
-    protected $moneyValueDataType = '';
-    /**
-     * A value of type `string`.
-     *
-     * @var string
-     */
-    public $stringValue;
-    /**
-     * A value of type `google.type.DateTime` (year, month, day, hour, minute,
-     * second, and UTC offset or timezone.)
-     *
-     * @param GoogleTypeDateTime $dateTimeValue
-     */
-    public function setDateTimeValue(GoogleTypeDateTime $dateTimeValue)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1ReportValue extends \Google\Model
     {
+        protected $dateTimeValueType = GoogleTypeDateTime::class;
+        protected $dateTimeValueDataType = '';
+        protected $dateValueType = GoogleTypeDate::class;
+        protected $dateValueDataType = '';
+        protected $decimalValueType = GoogleTypeDecimal::class;
+        protected $decimalValueDataType = '';
+        /**
+         * A value of type `int`.
+         *
+         * @var string
+         */
+        public $intValue;
+        protected $moneyValueType = GoogleTypeMoney::class;
+        protected $moneyValueDataType = '';
+        /**
+         * A value of type `string`.
+         *
+         * @var string
+         */
+        public $stringValue;
+        /**
+         * A value of type `google.type.DateTime` (year, month, day, hour, minute,
+         * second, and UTC offset or timezone.)
+         *
+         * @param GoogleTypeDateTime $dateTimeValue
+         */
+        public function setDateTimeValue(GoogleTypeDateTime $dateTimeValue)
+        {
+        }
+        /**
+         * @return GoogleTypeDateTime
+         */
+        public function getDateTimeValue()
+        {
+        }
+        /**
+         * A value of type `google.type.Date` (year, month, day).
+         *
+         * @param GoogleTypeDate $dateValue
+         */
+        public function setDateValue(GoogleTypeDate $dateValue)
+        {
+        }
+        /**
+         * @return GoogleTypeDate
+         */
+        public function getDateValue()
+        {
+        }
+        /**
+         * A value of type `google.type.Decimal`, representing non-integer numeric
+         * values.
+         *
+         * @param GoogleTypeDecimal $decimalValue
+         */
+        public function setDecimalValue(GoogleTypeDecimal $decimalValue)
+        {
+        }
+        /**
+         * @return GoogleTypeDecimal
+         */
+        public function getDecimalValue()
+        {
+        }
+        /**
+         * A value of type `int`.
+         *
+         * @param string $intValue
+         */
+        public function setIntValue($intValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIntValue()
+        {
+        }
+        /**
+         * A value of type `google.type.Money` (currency code, whole units, decimal
+         * units).
+         *
+         * @param GoogleTypeMoney $moneyValue
+         */
+        public function setMoneyValue(GoogleTypeMoney $moneyValue)
+        {
+        }
+        /**
+         * @return GoogleTypeMoney
+         */
+        public function getMoneyValue()
+        {
+        }
+        /**
+         * A value of type `string`.
+         *
+         * @param string $stringValue
+         */
+        public function setStringValue($stringValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStringValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleTypeDateTime
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1ReportValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDateTimeValue()
-    {
-    }
-    /**
-     * A value of type `google.type.Date` (year, month, day).
-     *
-     * @param GoogleTypeDate $dateValue
-     */
-    public function setDateValue(GoogleTypeDate $dateValue)
-    {
-    }
-    /**
-     * @return GoogleTypeDate
-     */
-    public function getDateValue()
-    {
-    }
-    /**
-     * A value of type `google.type.Decimal`, representing non-integer numeric
-     * values.
-     *
-     * @param GoogleTypeDecimal $decimalValue
-     */
-    public function setDecimalValue(GoogleTypeDecimal $decimalValue)
-    {
-    }
-    /**
-     * @return GoogleTypeDecimal
-     */
-    public function getDecimalValue()
-    {
-    }
-    /**
-     * A value of type `int`.
-     *
-     * @param string $intValue
-     */
-    public function setIntValue($intValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIntValue()
-    {
-    }
-    /**
-     * A value of type `google.type.Money` (currency code, whole units, decimal
-     * units).
-     *
-     * @param GoogleTypeMoney $moneyValue
-     */
-    public function setMoneyValue(GoogleTypeMoney $moneyValue)
-    {
-    }
-    /**
-     * @return GoogleTypeMoney
-     */
-    public function getMoneyValue()
-    {
-    }
-    /**
-     * A value of type `string`.
-     *
-     * @param string $stringValue
-     */
-    public function setStringValue($stringValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStringValue()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1ReportValue extends \Google\Service\Cloudchannel\GoogleCloudChannelV1ReportValue
     {
     }
 }

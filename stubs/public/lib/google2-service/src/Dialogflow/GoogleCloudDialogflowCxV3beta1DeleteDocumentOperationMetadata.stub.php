@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3beta1DeleteDocumentOperationMetadata extends \Google\Model
-{
-    protected $genericMetadataType = GoogleCloudDialogflowCxV3beta1GenericKnowledgeOperationMetadata::class;
-    protected $genericMetadataDataType = '';
-    /**
-     * @param GoogleCloudDialogflowCxV3beta1GenericKnowledgeOperationMetadata
-     */
-    public function setGenericMetadata(GoogleCloudDialogflowCxV3beta1GenericKnowledgeOperationMetadata $genericMetadata)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3beta1DeleteDocumentOperationMetadata extends \Google\Model
     {
+        protected $genericMetadataType = GoogleCloudDialogflowCxV3beta1GenericKnowledgeOperationMetadata::class;
+        protected $genericMetadataDataType = '';
+        /**
+         * @param GoogleCloudDialogflowCxV3beta1GenericKnowledgeOperationMetadata
+         */
+        public function setGenericMetadata(GoogleCloudDialogflowCxV3beta1GenericKnowledgeOperationMetadata $genericMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3beta1GenericKnowledgeOperationMetadata
+         */
+        public function getGenericMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowCxV3beta1GenericKnowledgeOperationMetadata
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3beta1DeleteDocumentOperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGenericMetadata()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3beta1DeleteDocumentOperationMetadata extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3beta1DeleteDocumentOperationMetadata
     {
     }
 }

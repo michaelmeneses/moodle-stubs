@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2ExperimentInfo extends \Google\Model
-{
-    /**
-     * The fully qualified resource name of the experiment that provides the
-     * serving config under test, should an active experiment exist. For example:
-     * `projects/locations/global/catalogs/default_catalog/experiments/experiment_
-     * id`
-     *
-     * @var string
-     */
-    public $experiment;
-    protected $servingConfigExperimentType = GoogleCloudRetailV2ExperimentInfoServingConfigExperiment::class;
-    protected $servingConfigExperimentDataType = '';
-    /**
-     * The fully qualified resource name of the experiment that provides the
-     * serving config under test, should an active experiment exist. For example:
-     * `projects/locations/global/catalogs/default_catalog/experiments/experiment_
-     * id`
-     *
-     * @param string $experiment
-     */
-    public function setExperiment($experiment)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2ExperimentInfo extends \Google\Model
     {
+        /**
+         * The fully qualified resource name of the experiment that provides the
+         * serving config under test, should an active experiment exist. For example:
+         * `projects/locations/global/catalogs/default_catalog/experiments/experiment_
+         * id`
+         *
+         * @var string
+         */
+        public $experiment;
+        protected $servingConfigExperimentType = GoogleCloudRetailV2ExperimentInfoServingConfigExperiment::class;
+        protected $servingConfigExperimentDataType = '';
+        /**
+         * The fully qualified resource name of the experiment that provides the
+         * serving config under test, should an active experiment exist. For example:
+         * `projects/locations/global/catalogs/default_catalog/experiments/experiment_
+         * id`
+         *
+         * @param string $experiment
+         */
+        public function setExperiment($experiment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExperiment()
+        {
+        }
+        /**
+         * A/B test between existing Cloud Retail Search ServingConfigs.
+         *
+         * @param GoogleCloudRetailV2ExperimentInfoServingConfigExperiment $servingConfigExperiment
+         */
+        public function setServingConfigExperiment(GoogleCloudRetailV2ExperimentInfoServingConfigExperiment $servingConfigExperiment)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2ExperimentInfoServingConfigExperiment
+         */
+        public function getServingConfigExperiment()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2ExperimentInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExperiment()
-    {
-    }
-    /**
-     * A/B test between existing Cloud Retail Search ServingConfigs.
-     *
-     * @param GoogleCloudRetailV2ExperimentInfoServingConfigExperiment $servingConfigExperiment
-     */
-    public function setServingConfigExperiment(GoogleCloudRetailV2ExperimentInfoServingConfigExperiment $servingConfigExperiment)
-    {
-    }
-    /**
-     * @return GoogleCloudRetailV2ExperimentInfoServingConfigExperiment
-     */
-    public function getServingConfigExperiment()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2ExperimentInfo extends \Google\Service\CloudRetail\GoogleCloudRetailV2ExperimentInfo
     {
     }
 }

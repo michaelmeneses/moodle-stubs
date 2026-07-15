@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class UploadPrivateImageResponse extends \Google\Model
-{
-    /**
-     * Unique ID of the uploaded image to be referenced later in
-     * Image.private_image_id.
-     *
-     * @var string
-     */
-    public $privateImageId;
-    /**
-     * Unique ID of the uploaded image to be referenced later in
-     * Image.private_image_id.
-     *
-     * @param string $privateImageId
-     */
-    public function setPrivateImageId($privateImageId)
+namespace Google\Service\Walletobjects {
+    class UploadPrivateImageResponse extends \Google\Model
     {
+        /**
+         * Unique ID of the uploaded image to be referenced later in
+         * Image.private_image_id.
+         *
+         * @var string
+         */
+        public $privateImageId;
+        /**
+         * Unique ID of the uploaded image to be referenced later in
+         * Image.private_image_id.
+         *
+         * @param string $privateImageId
+         */
+        public function setPrivateImageId($privateImageId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrivateImageId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Walletobjects\UploadPrivateImageResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPrivateImageId()
+    class Google_Service_Walletobjects_UploadPrivateImageResponse extends \Google\Service\Walletobjects\UploadPrivateImageResponse
     {
     }
 }

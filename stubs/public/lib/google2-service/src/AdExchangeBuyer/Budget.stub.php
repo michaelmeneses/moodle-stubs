@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer;
-
-class Budget extends \Google\Model
-{
-    public $accountId;
-    public $billingId;
-    public $budgetAmount;
-    public $currencyCode;
-    public $id;
-    public $kind;
-    public function setAccountId($accountId)
+namespace Google\Service\AdExchangeBuyer {
+    class Budget extends \Google\Model
     {
+        public $accountId;
+        public $billingId;
+        public $budgetAmount;
+        public $currencyCode;
+        public $id;
+        public $kind;
+        public function setAccountId($accountId)
+        {
+        }
+        public function getAccountId()
+        {
+        }
+        public function setBillingId($billingId)
+        {
+        }
+        public function getBillingId()
+        {
+        }
+        public function setBudgetAmount($budgetAmount)
+        {
+        }
+        public function getBudgetAmount()
+        {
+        }
+        public function setCurrencyCode($currencyCode)
+        {
+        }
+        public function getCurrencyCode()
+        {
+        }
+        public function setId($id)
+        {
+        }
+        public function getId()
+        {
+        }
+        public function setKind($kind)
+        {
+        }
+        public function getKind()
+        {
+        }
     }
-    public function getAccountId()
-    {
-    }
-    public function setBillingId($billingId)
-    {
-    }
-    public function getBillingId()
-    {
-    }
-    public function setBudgetAmount($budgetAmount)
-    {
-    }
-    public function getBudgetAmount()
-    {
-    }
-    public function setCurrencyCode($currencyCode)
-    {
-    }
-    public function getCurrencyCode()
-    {
-    }
-    public function setId($id)
-    {
-    }
-    public function getId()
-    {
-    }
-    public function setKind($kind)
-    {
-    }
-    public function getKind()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\Budget registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AdExchangeBuyer_Budget extends \Google\Service\AdExchangeBuyer\Budget
     {
     }
 }

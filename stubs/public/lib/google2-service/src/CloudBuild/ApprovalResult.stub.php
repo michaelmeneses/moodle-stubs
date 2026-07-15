@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class ApprovalResult extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $approvalTime;
-    /**
-     * @var string
-     */
-    public $approverAccount;
-    /**
-     * @var string
-     */
-    public $comment;
-    /**
-     * @var string
-     */
-    public $decision;
-    /**
-     * @var string
-     */
-    public $url;
-    /**
-     * @param string
-     */
-    public function setApprovalTime($approvalTime)
+namespace Google\Service\CloudBuild {
+    class ApprovalResult extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $approvalTime;
+        /**
+         * @var string
+         */
+        public $approverAccount;
+        /**
+         * @var string
+         */
+        public $comment;
+        /**
+         * @var string
+         */
+        public $decision;
+        /**
+         * @var string
+         */
+        public $url;
+        /**
+         * @param string
+         */
+        public function setApprovalTime($approvalTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApprovalTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setApproverAccount($approverAccount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApproverAccount()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setComment($comment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getComment()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDecision($decision)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDecision()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudBuild\ApprovalResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApprovalTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setApproverAccount($approverAccount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getApproverAccount()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setComment($comment)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getComment()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDecision($decision)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDecision()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
+    class Google_Service_CloudBuild_ApprovalResult extends \Google\Service\CloudBuild\ApprovalResult
     {
     }
 }

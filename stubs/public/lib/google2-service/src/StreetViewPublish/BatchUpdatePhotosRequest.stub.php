@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\StreetViewPublish;
-
-class BatchUpdatePhotosRequest extends \Google\Collection
-{
-    protected $collection_key = 'updatePhotoRequests';
-    protected $updatePhotoRequestsType = UpdatePhotoRequest::class;
-    protected $updatePhotoRequestsDataType = 'array';
-    /**
-     * Required. List of UpdatePhotoRequests.
-     *
-     * @param UpdatePhotoRequest[] $updatePhotoRequests
-     */
-    public function setUpdatePhotoRequests($updatePhotoRequests)
+namespace Google\Service\StreetViewPublish {
+    class BatchUpdatePhotosRequest extends \Google\Collection
     {
+        protected $collection_key = 'updatePhotoRequests';
+        protected $updatePhotoRequestsType = UpdatePhotoRequest::class;
+        protected $updatePhotoRequestsDataType = 'array';
+        /**
+         * Required. List of UpdatePhotoRequests.
+         *
+         * @param UpdatePhotoRequest[] $updatePhotoRequests
+         */
+        public function setUpdatePhotoRequests($updatePhotoRequests)
+        {
+        }
+        /**
+         * @return UpdatePhotoRequest[]
+         */
+        public function getUpdatePhotoRequests()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return UpdatePhotoRequest[]
+     * Runtime class alias of \Google\Service\StreetViewPublish\BatchUpdatePhotosRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUpdatePhotoRequests()
+    class Google_Service_StreetViewPublish_BatchUpdatePhotosRequest extends \Google\Service\StreetViewPublish\BatchUpdatePhotosRequest
     {
     }
 }

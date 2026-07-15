@@ -21,107 +21,116 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class ShippingsettingsCustomBatchRequestEntry extends \Google\Model
-{
-    /**
-     * The ID of the account for which to get/update account shipping settings.
-     *
-     * @var string
-     */
-    public $accountId;
-    /**
-     * An entry ID, unique within the batch request.
-     *
-     * @var string
-     */
-    public $batchId;
-    /**
-     * The ID of the managing account.
-     *
-     * @var string
-     */
-    public $merchantId;
-    /**
-     * The method of the batch entry. Acceptable values are: - "`get`" -
-     * "`update`"
-     *
-     * @var string
-     */
-    public $method;
-    protected $shippingSettingsType = ShippingSettings::class;
-    protected $shippingSettingsDataType = '';
-    /**
-     * The ID of the account for which to get/update account shipping settings.
-     *
-     * @param string $accountId
-     */
-    public function setAccountId($accountId)
+namespace Google\Service\ShoppingContent {
+    class ShippingsettingsCustomBatchRequestEntry extends \Google\Model
     {
+        /**
+         * The ID of the account for which to get/update account shipping settings.
+         *
+         * @var string
+         */
+        public $accountId;
+        /**
+         * An entry ID, unique within the batch request.
+         *
+         * @var string
+         */
+        public $batchId;
+        /**
+         * The ID of the managing account.
+         *
+         * @var string
+         */
+        public $merchantId;
+        /**
+         * The method of the batch entry. Acceptable values are: - "`get`" -
+         * "`update`"
+         *
+         * @var string
+         */
+        public $method;
+        protected $shippingSettingsType = ShippingSettings::class;
+        protected $shippingSettingsDataType = '';
+        /**
+         * The ID of the account for which to get/update account shipping settings.
+         *
+         * @param string $accountId
+         */
+        public function setAccountId($accountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccountId()
+        {
+        }
+        /**
+         * An entry ID, unique within the batch request.
+         *
+         * @param string $batchId
+         */
+        public function setBatchId($batchId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBatchId()
+        {
+        }
+        /**
+         * The ID of the managing account.
+         *
+         * @param string $merchantId
+         */
+        public function setMerchantId($merchantId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMerchantId()
+        {
+        }
+        /**
+         * The method of the batch entry. Acceptable values are: - "`get`" -
+         * "`update`"
+         *
+         * @param string $method
+         */
+        public function setMethod($method)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMethod()
+        {
+        }
+        /**
+         * The account shipping settings to update. Only defined if the method is
+         * `update`.
+         *
+         * @param ShippingSettings $shippingSettings
+         */
+        public function setShippingSettings(ShippingSettings $shippingSettings)
+        {
+        }
+        /**
+         * @return ShippingSettings
+         */
+        public function getShippingSettings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\ShippingsettingsCustomBatchRequestEntry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountId()
-    {
-    }
-    /**
-     * An entry ID, unique within the batch request.
-     *
-     * @param string $batchId
-     */
-    public function setBatchId($batchId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBatchId()
-    {
-    }
-    /**
-     * The ID of the managing account.
-     *
-     * @param string $merchantId
-     */
-    public function setMerchantId($merchantId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMerchantId()
-    {
-    }
-    /**
-     * The method of the batch entry. Acceptable values are: - "`get`" -
-     * "`update`"
-     *
-     * @param string $method
-     */
-    public function setMethod($method)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMethod()
-    {
-    }
-    /**
-     * The account shipping settings to update. Only defined if the method is
-     * `update`.
-     *
-     * @param ShippingSettings $shippingSettings
-     */
-    public function setShippingSettings(ShippingSettings $shippingSettings)
-    {
-    }
-    /**
-     * @return ShippingSettings
-     */
-    public function getShippingSettings()
+    class Google_Service_ShoppingContent_ShippingsettingsCustomBatchRequestEntry extends \Google\Service\ShoppingContent\ShippingsettingsCustomBatchRequestEntry
     {
     }
 }

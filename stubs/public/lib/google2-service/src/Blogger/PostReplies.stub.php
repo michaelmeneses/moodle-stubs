@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Blogger;
-
-class PostReplies extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    protected $itemsType = Comment::class;
-    protected $itemsDataType = 'array';
-    /**
-     * The URL of the comments on this post.
-     *
-     * @var string
-     */
-    public $selfLink;
-    /**
-     * The count of comments on this post.
-     *
-     * @var string
-     */
-    public $totalItems;
-    /**
-     * The List of Comments for this Post.
-     *
-     * @param Comment[] $items
-     */
-    public function setItems($items)
+namespace Google\Service\Blogger {
+    class PostReplies extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        protected $itemsType = Comment::class;
+        protected $itemsDataType = 'array';
+        /**
+         * The URL of the comments on this post.
+         *
+         * @var string
+         */
+        public $selfLink;
+        /**
+         * The count of comments on this post.
+         *
+         * @var string
+         */
+        public $totalItems;
+        /**
+         * The List of Comments for this Post.
+         *
+         * @param Comment[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return Comment[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * The URL of the comments on this post.
+         *
+         * @param string $selfLink
+         */
+        public function setSelfLink($selfLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelfLink()
+        {
+        }
+        /**
+         * The count of comments on this post.
+         *
+         * @param string $totalItems
+         */
+        public function setTotalItems($totalItems)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalItems()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Comment[]
+     * Runtime class alias of \Google\Service\Blogger\PostReplies registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItems()
-    {
-    }
-    /**
-     * The URL of the comments on this post.
-     *
-     * @param string $selfLink
-     */
-    public function setSelfLink($selfLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelfLink()
-    {
-    }
-    /**
-     * The count of comments on this post.
-     *
-     * @param string $totalItems
-     */
-    public function setTotalItems($totalItems)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalItems()
+    class Google_Service_Blogger_PostReplies extends \Google\Service\Blogger\PostReplies
     {
     }
 }

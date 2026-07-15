@@ -21,109 +21,118 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3AgentGitIntegrationSettingsGithubSettings extends \Google\Collection
-{
-    protected $collection_key = 'branches';
-    /**
-     * The access token used to authenticate the access to the GitHub repository.
-     *
-     * @var string
-     */
-    public $accessToken;
-    /**
-     * A list of branches configured to be used from Dialogflow.
-     *
-     * @var string[]
-     */
-    public $branches;
-    /**
-     * The unique repository display name for the GitHub repository.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The GitHub repository URI related to the agent.
-     *
-     * @var string
-     */
-    public $repositoryUri;
-    /**
-     * The branch of the GitHub repository tracked for this agent.
-     *
-     * @var string
-     */
-    public $trackingBranch;
-    /**
-     * The access token used to authenticate the access to the GitHub repository.
-     *
-     * @param string $accessToken
-     */
-    public function setAccessToken($accessToken)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3AgentGitIntegrationSettingsGithubSettings extends \Google\Collection
     {
+        protected $collection_key = 'branches';
+        /**
+         * The access token used to authenticate the access to the GitHub repository.
+         *
+         * @var string
+         */
+        public $accessToken;
+        /**
+         * A list of branches configured to be used from Dialogflow.
+         *
+         * @var string[]
+         */
+        public $branches;
+        /**
+         * The unique repository display name for the GitHub repository.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The GitHub repository URI related to the agent.
+         *
+         * @var string
+         */
+        public $repositoryUri;
+        /**
+         * The branch of the GitHub repository tracked for this agent.
+         *
+         * @var string
+         */
+        public $trackingBranch;
+        /**
+         * The access token used to authenticate the access to the GitHub repository.
+         *
+         * @param string $accessToken
+         */
+        public function setAccessToken($accessToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccessToken()
+        {
+        }
+        /**
+         * A list of branches configured to be used from Dialogflow.
+         *
+         * @param string[] $branches
+         */
+        public function setBranches($branches)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getBranches()
+        {
+        }
+        /**
+         * The unique repository display name for the GitHub repository.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The GitHub repository URI related to the agent.
+         *
+         * @param string $repositoryUri
+         */
+        public function setRepositoryUri($repositoryUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRepositoryUri()
+        {
+        }
+        /**
+         * The branch of the GitHub repository tracked for this agent.
+         *
+         * @param string $trackingBranch
+         */
+        public function setTrackingBranch($trackingBranch)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTrackingBranch()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3AgentGitIntegrationSettingsGithubSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccessToken()
-    {
-    }
-    /**
-     * A list of branches configured to be used from Dialogflow.
-     *
-     * @param string[] $branches
-     */
-    public function setBranches($branches)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getBranches()
-    {
-    }
-    /**
-     * The unique repository display name for the GitHub repository.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The GitHub repository URI related to the agent.
-     *
-     * @param string $repositoryUri
-     */
-    public function setRepositoryUri($repositoryUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRepositoryUri()
-    {
-    }
-    /**
-     * The branch of the GitHub repository tracked for this agent.
-     *
-     * @param string $trackingBranch
-     */
-    public function setTrackingBranch($trackingBranch)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTrackingBranch()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3AgentGitIntegrationSettingsGithubSettings extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3AgentGitIntegrationSettingsGithubSettings
     {
     }
 }

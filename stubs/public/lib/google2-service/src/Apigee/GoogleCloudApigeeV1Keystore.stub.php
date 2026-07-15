@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1Keystore extends \Google\Collection
-{
-    protected $collection_key = 'aliases';
-    /**
-     * Output only. Aliases in this keystore.
-     *
-     * @var string[]
-     */
-    public $aliases;
-    /**
-     * Required. Resource ID for this keystore. Values must match the regular
-     * expression `[\w[:space:].-]{1,255}`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. Aliases in this keystore.
-     *
-     * @param string[] $aliases
-     */
-    public function setAliases($aliases)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1Keystore extends \Google\Collection
     {
+        protected $collection_key = 'aliases';
+        /**
+         * Output only. Aliases in this keystore.
+         *
+         * @var string[]
+         */
+        public $aliases;
+        /**
+         * Required. Resource ID for this keystore. Values must match the regular
+         * expression `[\w[:space:].-]{1,255}`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. Aliases in this keystore.
+         *
+         * @param string[] $aliases
+         */
+        public function setAliases($aliases)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAliases()
+        {
+        }
+        /**
+         * Required. Resource ID for this keystore. Values must match the regular
+         * expression `[\w[:space:].-]{1,255}`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1Keystore registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAliases()
-    {
-    }
-    /**
-     * Required. Resource ID for this keystore. Values must match the regular
-     * expression `[\w[:space:].-]{1,255}`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Apigee_GoogleCloudApigeeV1Keystore extends \Google\Service\Apigee\GoogleCloudApigeeV1Keystore
     {
     }
 }

@@ -21,27 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer\Resource;
-
-/**
- * The "marketplaceprivateauction" collection of methods.
- * Typical usage is:
- *  <code>
- *   $adexchangebuyerService = new Google\Service\AdExchangeBuyer(...);
- *   $marketplaceprivateauction = $adexchangebuyerService->marketplaceprivateauction;
- *  </code>
- */
-class Marketplaceprivateauction extends \Google\Service\Resource
-{
+namespace Google\Service\AdExchangeBuyer\Resource {
+    use Google\Service\AdExchangeBuyer\UpdatePrivateAuctionProposalRequest;
     /**
-     * Update a given private auction proposal
-     * (marketplaceprivateauction.updateproposal)
-     *
-     * @param string $privateAuctionId The private auction id to be updated.
-     * @param UpdatePrivateAuctionProposalRequest $postBody
-     * @param array $optParams Optional parameters.
+     * The "marketplaceprivateauction" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $adexchangebuyerService = new Google\Service\AdExchangeBuyer(...);
+     *   $marketplaceprivateauction = $adexchangebuyerService->marketplaceprivateauction;
+     *  </code>
      */
-    public function updateproposal($privateAuctionId, UpdatePrivateAuctionProposalRequest $postBody, $optParams = [])
+    class Marketplaceprivateauction extends \Google\Service\Resource
+    {
+        /**
+         * Update a given private auction proposal
+         * (marketplaceprivateauction.updateproposal)
+         *
+         * @param string $privateAuctionId The private auction id to be updated.
+         * @param UpdatePrivateAuctionProposalRequest $postBody
+         * @param array $optParams Optional parameters.
+         */
+        public function updateproposal($privateAuctionId, UpdatePrivateAuctionProposalRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\Resource\Marketplaceprivateauction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AdExchangeBuyer_Resource_Marketplaceprivateauction extends \Google\Service\AdExchangeBuyer\Resource\Marketplaceprivateauction
     {
     }
 }

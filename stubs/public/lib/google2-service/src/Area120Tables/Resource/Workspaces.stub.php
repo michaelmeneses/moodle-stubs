@@ -21,48 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Area120Tables\Resource;
-
-/**
- * The "workspaces" collection of methods.
- * Typical usage is:
- *  <code>
- *   $area120tablesService = new Google\Service\Area120Tables(...);
- *   $workspaces = $area120tablesService->workspaces;
- *  </code>
- */
-class Workspaces extends \Google\Service\Resource
-{
+namespace Google\Service\Area120Tables\Resource {
+    use Google\Service\Area120Tables\ListWorkspacesResponse;
+    use Google\Service\Area120Tables\Workspace;
     /**
-     * Gets a workspace. Returns NOT_FOUND if the workspace does not exist.
-     * (workspaces.get)
-     *
-     * @param string $name Required. The name of the workspace to retrieve. Format:
-     * workspaces/{workspace}
-     * @param array $optParams Optional parameters.
-     * @return Workspace
-     * @throws \Google\Service\Exception
+     * The "workspaces" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $area120tablesService = new Google\Service\Area120Tables(...);
+     *   $workspaces = $area120tablesService->workspaces;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class Workspaces extends \Google\Service\Resource
     {
+        /**
+         * Gets a workspace. Returns NOT_FOUND if the workspace does not exist.
+         * (workspaces.get)
+         *
+         * @param string $name Required. The name of the workspace to retrieve. Format:
+         * workspaces/{workspace}
+         * @param array $optParams Optional parameters.
+         * @return Workspace
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists workspaces for the user. (workspaces.listWorkspaces)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The maximum number of workspaces to return. The
+         * service may return fewer than this value. If unspecified, at most 10
+         * workspaces are returned. The maximum value is 25; values above 25 are coerced
+         * to 25.
+         * @opt_param string pageToken A page token, received from a previous
+         * `ListWorkspaces` call. Provide this to retrieve the subsequent page. When
+         * paginating, all other parameters provided to `ListWorkspaces` must match the
+         * call that provided the page token.
+         * @return ListWorkspacesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listWorkspaces($optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists workspaces for the user. (workspaces.listWorkspaces)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The maximum number of workspaces to return. The
-     * service may return fewer than this value. If unspecified, at most 10
-     * workspaces are returned. The maximum value is 25; values above 25 are coerced
-     * to 25.
-     * @opt_param string pageToken A page token, received from a previous
-     * `ListWorkspaces` call. Provide this to retrieve the subsequent page. When
-     * paginating, all other parameters provided to `ListWorkspaces` must match the
-     * call that provided the page token.
-     * @return ListWorkspacesResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Area120Tables\Resource\Workspaces registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listWorkspaces($optParams = [])
+    class Google_Service_Area120Tables_Resource_Workspaces extends \Google\Service\Area120Tables\Resource\Workspaces
     {
     }
 }

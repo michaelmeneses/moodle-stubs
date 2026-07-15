@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaModelevaluationMetricsBoundingBoxMetricsConfidenceMetrics extends \Google\Model
-{
-    /**
-     * The confidence threshold value used to compute the metrics.
-     *
-     * @var float
-     */
-    public $confidenceThreshold;
-    /**
-     * The harmonic mean of recall and precision.
-     *
-     * @var float
-     */
-    public $f1Score;
-    /**
-     * Precision under the given confidence threshold.
-     *
-     * @var float
-     */
-    public $precision;
-    /**
-     * Recall under the given confidence threshold.
-     *
-     * @var float
-     */
-    public $recall;
-    /**
-     * The confidence threshold value used to compute the metrics.
-     *
-     * @param float $confidenceThreshold
-     */
-    public function setConfidenceThreshold($confidenceThreshold)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaModelevaluationMetricsBoundingBoxMetricsConfidenceMetrics extends \Google\Model
     {
+        /**
+         * The confidence threshold value used to compute the metrics.
+         *
+         * @var float
+         */
+        public $confidenceThreshold;
+        /**
+         * The harmonic mean of recall and precision.
+         *
+         * @var float
+         */
+        public $f1Score;
+        /**
+         * Precision under the given confidence threshold.
+         *
+         * @var float
+         */
+        public $precision;
+        /**
+         * Recall under the given confidence threshold.
+         *
+         * @var float
+         */
+        public $recall;
+        /**
+         * The confidence threshold value used to compute the metrics.
+         *
+         * @param float $confidenceThreshold
+         */
+        public function setConfidenceThreshold($confidenceThreshold)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getConfidenceThreshold()
+        {
+        }
+        /**
+         * The harmonic mean of recall and precision.
+         *
+         * @param float $f1Score
+         */
+        public function setF1Score($f1Score)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getF1Score()
+        {
+        }
+        /**
+         * Precision under the given confidence threshold.
+         *
+         * @param float $precision
+         */
+        public function setPrecision($precision)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getPrecision()
+        {
+        }
+        /**
+         * Recall under the given confidence threshold.
+         *
+         * @param float $recall
+         */
+        public function setRecall($recall)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getRecall()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaModelevaluationMetricsBoundingBoxMetricsConfidenceMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfidenceThreshold()
-    {
-    }
-    /**
-     * The harmonic mean of recall and precision.
-     *
-     * @param float $f1Score
-     */
-    public function setF1Score($f1Score)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getF1Score()
-    {
-    }
-    /**
-     * Precision under the given confidence threshold.
-     *
-     * @param float $precision
-     */
-    public function setPrecision($precision)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getPrecision()
-    {
-    }
-    /**
-     * Recall under the given confidence threshold.
-     *
-     * @param float $recall
-     */
-    public function setRecall($recall)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getRecall()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaModelevaluationMetricsBoundingBoxMetricsConfidenceMetrics extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaModelevaluationMetricsBoundingBoxMetricsConfidenceMetrics
     {
     }
 }

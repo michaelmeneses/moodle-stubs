@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaOidcToken extends \Google\Model
-{
-    /**
-     * Audience to be used when generating OIDC token. The audience claim
-     * identifies the recipients that the JWT is intended for.
-     *
-     * @var string
-     */
-    public $audience;
-    /**
-     * The service account email to be used as the identity for the token.
-     *
-     * @var string
-     */
-    public $serviceAccountEmail;
-    /**
-     * ID token obtained for the service account
-     *
-     * @var string
-     */
-    public $token;
-    /**
-     * The approximate time until the token retrieved is valid.
-     *
-     * @var string
-     */
-    public $tokenExpireTime;
-    /**
-     * Audience to be used when generating OIDC token. The audience claim
-     * identifies the recipients that the JWT is intended for.
-     *
-     * @param string $audience
-     */
-    public function setAudience($audience)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaOidcToken extends \Google\Model
     {
+        /**
+         * Audience to be used when generating OIDC token. The audience claim
+         * identifies the recipients that the JWT is intended for.
+         *
+         * @var string
+         */
+        public $audience;
+        /**
+         * The service account email to be used as the identity for the token.
+         *
+         * @var string
+         */
+        public $serviceAccountEmail;
+        /**
+         * ID token obtained for the service account
+         *
+         * @var string
+         */
+        public $token;
+        /**
+         * The approximate time until the token retrieved is valid.
+         *
+         * @var string
+         */
+        public $tokenExpireTime;
+        /**
+         * Audience to be used when generating OIDC token. The audience claim
+         * identifies the recipients that the JWT is intended for.
+         *
+         * @param string $audience
+         */
+        public function setAudience($audience)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAudience()
+        {
+        }
+        /**
+         * The service account email to be used as the identity for the token.
+         *
+         * @param string $serviceAccountEmail
+         */
+        public function setServiceAccountEmail($serviceAccountEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceAccountEmail()
+        {
+        }
+        /**
+         * ID token obtained for the service account
+         *
+         * @param string $token
+         */
+        public function setToken($token)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getToken()
+        {
+        }
+        /**
+         * The approximate time until the token retrieved is valid.
+         *
+         * @param string $tokenExpireTime
+         */
+        public function setTokenExpireTime($tokenExpireTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTokenExpireTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaOidcToken registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAudience()
-    {
-    }
-    /**
-     * The service account email to be used as the identity for the token.
-     *
-     * @param string $serviceAccountEmail
-     */
-    public function setServiceAccountEmail($serviceAccountEmail)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceAccountEmail()
-    {
-    }
-    /**
-     * ID token obtained for the service account
-     *
-     * @param string $token
-     */
-    public function setToken($token)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getToken()
-    {
-    }
-    /**
-     * The approximate time until the token retrieved is valid.
-     *
-     * @param string $tokenExpireTime
-     */
-    public function setTokenExpireTime($tokenExpireTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTokenExpireTime()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaOidcToken extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaOidcToken
     {
     }
 }

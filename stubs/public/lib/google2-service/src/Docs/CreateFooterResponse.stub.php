@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class CreateFooterResponse extends \Google\Model
-{
-    /**
-     * The ID of the created footer.
-     *
-     * @var string
-     */
-    public $footerId;
-    /**
-     * The ID of the created footer.
-     *
-     * @param string $footerId
-     */
-    public function setFooterId($footerId)
+namespace Google\Service\Docs {
+    class CreateFooterResponse extends \Google\Model
     {
+        /**
+         * The ID of the created footer.
+         *
+         * @var string
+         */
+        public $footerId;
+        /**
+         * The ID of the created footer.
+         *
+         * @param string $footerId
+         */
+        public function setFooterId($footerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFooterId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Docs\CreateFooterResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFooterId()
+    class Google_Service_Docs_CreateFooterResponse extends \Google\Service\Docs\CreateFooterResponse
     {
     }
 }

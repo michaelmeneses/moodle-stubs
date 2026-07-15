@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Calendar;
-
-class EventOrganizer extends \Google\Model
-{
-    /**
-     * The organizer's name, if available.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The organizer's email address, if available. It must be a valid email
-     * address as per RFC5322.
-     *
-     * @var string
-     */
-    public $email;
-    /**
-     * The organizer's Profile ID, if available.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Whether the organizer corresponds to the calendar on which this copy of the
-     * event appears. Read-only. The default is False.
-     *
-     * @var bool
-     */
-    public $self;
-    /**
-     * The organizer's name, if available.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\Calendar {
+    class EventOrganizer extends \Google\Model
     {
+        /**
+         * The organizer's name, if available.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The organizer's email address, if available. It must be a valid email
+         * address as per RFC5322.
+         *
+         * @var string
+         */
+        public $email;
+        /**
+         * The organizer's Profile ID, if available.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Whether the organizer corresponds to the calendar on which this copy of the
+         * event appears. Read-only. The default is False.
+         *
+         * @var bool
+         */
+        public $self;
+        /**
+         * The organizer's name, if available.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The organizer's email address, if available. It must be a valid email
+         * address as per RFC5322.
+         *
+         * @param string $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
+        /**
+         * The organizer's Profile ID, if available.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Whether the organizer corresponds to the calendar on which this copy of the
+         * event appears. Read-only. The default is False.
+         *
+         * @param bool $self
+         */
+        public function setSelf($self)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSelf()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Calendar\EventOrganizer registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The organizer's email address, if available. It must be a valid email
-     * address as per RFC5322.
-     *
-     * @param string $email
-     */
-    public function setEmail($email)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEmail()
-    {
-    }
-    /**
-     * The organizer's Profile ID, if available.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Whether the organizer corresponds to the calendar on which this copy of the
-     * event appears. Read-only. The default is False.
-     *
-     * @param bool $self
-     */
-    public function setSelf($self)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSelf()
+    class Google_Service_Calendar_EventOrganizer extends \Google\Service\Calendar\EventOrganizer
     {
     }
 }

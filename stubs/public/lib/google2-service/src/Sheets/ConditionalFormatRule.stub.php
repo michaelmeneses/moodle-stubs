@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class ConditionalFormatRule extends \Google\Collection
-{
-    protected $collection_key = 'ranges';
-    protected $booleanRuleType = BooleanRule::class;
-    protected $booleanRuleDataType = '';
-    protected $gradientRuleType = GradientRule::class;
-    protected $gradientRuleDataType = '';
-    protected $rangesType = GridRange::class;
-    protected $rangesDataType = 'array';
-    /**
-     * The formatting is either "on" or "off" according to the rule.
-     *
-     * @param BooleanRule $booleanRule
-     */
-    public function setBooleanRule(BooleanRule $booleanRule)
+namespace Google\Service\Sheets {
+    class ConditionalFormatRule extends \Google\Collection
     {
+        protected $collection_key = 'ranges';
+        protected $booleanRuleType = BooleanRule::class;
+        protected $booleanRuleDataType = '';
+        protected $gradientRuleType = GradientRule::class;
+        protected $gradientRuleDataType = '';
+        protected $rangesType = GridRange::class;
+        protected $rangesDataType = 'array';
+        /**
+         * The formatting is either "on" or "off" according to the rule.
+         *
+         * @param BooleanRule $booleanRule
+         */
+        public function setBooleanRule(BooleanRule $booleanRule)
+        {
+        }
+        /**
+         * @return BooleanRule
+         */
+        public function getBooleanRule()
+        {
+        }
+        /**
+         * The formatting will vary based on the gradients in the rule.
+         *
+         * @param GradientRule $gradientRule
+         */
+        public function setGradientRule(GradientRule $gradientRule)
+        {
+        }
+        /**
+         * @return GradientRule
+         */
+        public function getGradientRule()
+        {
+        }
+        /**
+         * The ranges that are formatted if the condition is true. All the ranges must
+         * be on the same grid.
+         *
+         * @param GridRange[] $ranges
+         */
+        public function setRanges($ranges)
+        {
+        }
+        /**
+         * @return GridRange[]
+         */
+        public function getRanges()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BooleanRule
+     * Runtime class alias of \Google\Service\Sheets\ConditionalFormatRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBooleanRule()
-    {
-    }
-    /**
-     * The formatting will vary based on the gradients in the rule.
-     *
-     * @param GradientRule $gradientRule
-     */
-    public function setGradientRule(GradientRule $gradientRule)
-    {
-    }
-    /**
-     * @return GradientRule
-     */
-    public function getGradientRule()
-    {
-    }
-    /**
-     * The ranges that are formatted if the condition is true. All the ranges must
-     * be on the same grid.
-     *
-     * @param GridRange[] $ranges
-     */
-    public function setRanges($ranges)
-    {
-    }
-    /**
-     * @return GridRange[]
-     */
-    public function getRanges()
+    class Google_Service_Sheets_ConditionalFormatRule extends \Google\Service\Sheets\ConditionalFormatRule
     {
     }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class NodePoolLoggingConfig extends \Google\Model
-{
-    protected $variantConfigType = LoggingVariantConfig::class;
-    protected $variantConfigDataType = '';
-    /**
-     * Logging variant configuration.
-     *
-     * @param LoggingVariantConfig $variantConfig
-     */
-    public function setVariantConfig(LoggingVariantConfig $variantConfig)
+namespace Google\Service\Container {
+    class NodePoolLoggingConfig extends \Google\Model
     {
+        protected $variantConfigType = LoggingVariantConfig::class;
+        protected $variantConfigDataType = '';
+        /**
+         * Logging variant configuration.
+         *
+         * @param LoggingVariantConfig $variantConfig
+         */
+        public function setVariantConfig(LoggingVariantConfig $variantConfig)
+        {
+        }
+        /**
+         * @return LoggingVariantConfig
+         */
+        public function getVariantConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LoggingVariantConfig
+     * Runtime class alias of \Google\Service\Container\NodePoolLoggingConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getVariantConfig()
+    class Google_Service_Container_NodePoolLoggingConfig extends \Google\Service\Container\NodePoolLoggingConfig
     {
     }
 }

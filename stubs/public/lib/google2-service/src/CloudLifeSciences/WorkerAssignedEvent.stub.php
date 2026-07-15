@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudLifeSciences;
-
-class WorkerAssignedEvent extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $instance;
-    /**
-     * @var string
-     */
-    public $machineType;
-    /**
-     * @var string
-     */
-    public $zone;
-    /**
-     * @param string
-     */
-    public function setInstance($instance)
+namespace Google\Service\CloudLifeSciences {
+    class WorkerAssignedEvent extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $instance;
+        /**
+         * @var string
+         */
+        public $machineType;
+        /**
+         * @var string
+         */
+        public $zone;
+        /**
+         * @param string
+         */
+        public function setInstance($instance)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstance()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMachineType($machineType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMachineType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setZone($zone)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getZone()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudLifeSciences\WorkerAssignedEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstance()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMachineType($machineType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMachineType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setZone($zone)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getZone()
+    class Google_Service_CloudLifeSciences_WorkerAssignedEvent extends \Google\Service\CloudLifeSciences\WorkerAssignedEvent
     {
     }
 }

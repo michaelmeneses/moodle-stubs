@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OnDemandScanning;
-
-class DSSEAttestationOccurrence extends \Google\Model
-{
-    protected $envelopeType = Envelope::class;
-    protected $envelopeDataType = '';
-    protected $statementType = InTotoStatement::class;
-    protected $statementDataType = '';
-    /**
-     * If doing something security critical, make sure to verify the signatures in
-     * this metadata.
-     *
-     * @param Envelope $envelope
-     */
-    public function setEnvelope(Envelope $envelope)
+namespace Google\Service\OnDemandScanning {
+    class DSSEAttestationOccurrence extends \Google\Model
     {
+        protected $envelopeType = Envelope::class;
+        protected $envelopeDataType = '';
+        protected $statementType = InTotoStatement::class;
+        protected $statementDataType = '';
+        /**
+         * If doing something security critical, make sure to verify the signatures in
+         * this metadata.
+         *
+         * @param Envelope $envelope
+         */
+        public function setEnvelope(Envelope $envelope)
+        {
+        }
+        /**
+         * @return Envelope
+         */
+        public function getEnvelope()
+        {
+        }
+        /**
+         * @param InTotoStatement $statement
+         */
+        public function setStatement(InTotoStatement $statement)
+        {
+        }
+        /**
+         * @return InTotoStatement
+         */
+        public function getStatement()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Envelope
+     * Runtime class alias of \Google\Service\OnDemandScanning\DSSEAttestationOccurrence registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnvelope()
-    {
-    }
-    /**
-     * @param InTotoStatement $statement
-     */
-    public function setStatement(InTotoStatement $statement)
-    {
-    }
-    /**
-     * @return InTotoStatement
-     */
-    public function getStatement()
+    class Google_Service_OnDemandScanning_DSSEAttestationOccurrence extends \Google\Service\OnDemandScanning\DSSEAttestationOccurrence
     {
     }
 }

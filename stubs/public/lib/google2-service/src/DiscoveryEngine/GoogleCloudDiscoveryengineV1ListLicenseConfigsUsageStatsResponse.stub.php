@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1ListLicenseConfigsUsageStatsResponse extends \Google\Collection
-{
-    protected $collection_key = 'licenseConfigUsageStats';
-    protected $licenseConfigUsageStatsType = GoogleCloudDiscoveryengineV1LicenseConfigUsageStats::class;
-    protected $licenseConfigUsageStatsDataType = 'array';
-    /**
-     * All the customer's LicenseConfigUsageStats.
-     *
-     * @param GoogleCloudDiscoveryengineV1LicenseConfigUsageStats[] $licenseConfigUsageStats
-     */
-    public function setLicenseConfigUsageStats($licenseConfigUsageStats)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1ListLicenseConfigsUsageStatsResponse extends \Google\Collection
     {
+        protected $collection_key = 'licenseConfigUsageStats';
+        protected $licenseConfigUsageStatsType = GoogleCloudDiscoveryengineV1LicenseConfigUsageStats::class;
+        protected $licenseConfigUsageStatsDataType = 'array';
+        /**
+         * All the customer's LicenseConfigUsageStats.
+         *
+         * @param GoogleCloudDiscoveryengineV1LicenseConfigUsageStats[] $licenseConfigUsageStats
+         */
+        public function setLicenseConfigUsageStats($licenseConfigUsageStats)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1LicenseConfigUsageStats[]
+         */
+        public function getLicenseConfigUsageStats()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1LicenseConfigUsageStats[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ListLicenseConfigsUsageStatsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLicenseConfigUsageStats()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1ListLicenseConfigsUsageStatsResponse extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ListLicenseConfigsUsageStatsResponse
     {
     }
 }

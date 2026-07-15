@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaUnshareTemplateRequest extends \Google\Collection
-{
-    protected $collection_key = 'resourceNames';
-    /**
-     * Optional. Project name resources to unshare the template. The project names
-     * is expected in resource format Ex: projects/{project-number}
-     *
-     * @var string[]
-     */
-    public $resourceNames;
-    /**
-     * Optional. Project name resources to unshare the template. The project names
-     * is expected in resource format Ex: projects/{project-number}
-     *
-     * @param string[] $resourceNames
-     */
-    public function setResourceNames($resourceNames)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaUnshareTemplateRequest extends \Google\Collection
     {
+        protected $collection_key = 'resourceNames';
+        /**
+         * Optional. Project name resources to unshare the template. The project names
+         * is expected in resource format Ex: projects/{project-number}
+         *
+         * @var string[]
+         */
+        public $resourceNames;
+        /**
+         * Optional. Project name resources to unshare the template. The project names
+         * is expected in resource format Ex: projects/{project-number}
+         *
+         * @param string[] $resourceNames
+         */
+        public function setResourceNames($resourceNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getResourceNames()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaUnshareTemplateRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResourceNames()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaUnshareTemplateRequest extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaUnshareTemplateRequest
     {
     }
 }

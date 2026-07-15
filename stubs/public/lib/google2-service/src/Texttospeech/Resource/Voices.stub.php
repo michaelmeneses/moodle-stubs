@@ -21,34 +21,44 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Texttospeech\Resource;
-
-/**
- * The "voices" collection of methods.
- * Typical usage is:
- *  <code>
- *   $texttospeechService = new Google\Service\Texttospeech(...);
- *   $voices = $texttospeechService->voices;
- *  </code>
- */
-class Voices extends \Google\Service\Resource
-{
+namespace Google\Service\Texttospeech\Resource {
+    use Google\Service\Texttospeech\ListVoicesResponse;
     /**
-     * Returns a list of Voice supported for synthesis. (voices.listVoices)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string languageCode Optional. Recommended.
-     * [BCP-47](https://www.rfc-editor.org/rfc/bcp/bcp47.txt) language tag. If not
-     * specified, the API will return all supported voices. If specified, the
-     * ListVoices call will only return voices that can be used to synthesize this
-     * language_code. For example, if you specify `"en-NZ"`, all `"en-NZ"` voices
-     * will be returned. If you specify `"no"`, both `"no-"` (Norwegian) and `"nb-"`
-     * (Norwegian Bokmal) voices will be returned.
-     * @return ListVoicesResponse
-     * @throws \Google\Service\Exception
+     * The "voices" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $texttospeechService = new Google\Service\Texttospeech(...);
+     *   $voices = $texttospeechService->voices;
+     *  </code>
      */
-    public function listVoices($optParams = [])
+    class Voices extends \Google\Service\Resource
+    {
+        /**
+         * Returns a list of Voice supported for synthesis. (voices.listVoices)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string languageCode Optional. Recommended.
+         * [BCP-47](https://www.rfc-editor.org/rfc/bcp/bcp47.txt) language tag. If not
+         * specified, the API will return all supported voices. If specified, the
+         * ListVoices call will only return voices that can be used to synthesize this
+         * language_code. For example, if you specify `"en-NZ"`, all `"en-NZ"` voices
+         * will be returned. If you specify `"no"`, both `"no-"` (Norwegian) and `"nb-"`
+         * (Norwegian Bokmal) voices will be returned.
+         * @return ListVoicesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listVoices($optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Texttospeech\Resource\Voices registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Texttospeech_Resource_Voices extends \Google\Service\Texttospeech\Resource\Voices
     {
     }
 }

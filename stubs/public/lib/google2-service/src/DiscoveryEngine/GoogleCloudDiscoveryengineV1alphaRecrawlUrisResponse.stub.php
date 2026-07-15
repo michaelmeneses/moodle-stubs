@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaRecrawlUrisResponse extends \Google\Collection
-{
-    protected $collection_key = 'failureSamples';
-    /**
-     * URIs that were not crawled before the LRO terminated.
-     *
-     * @var string[]
-     */
-    public $failedUris;
-    protected $failureSamplesType = GoogleCloudDiscoveryengineV1alphaRecrawlUrisResponseFailureInfo::class;
-    protected $failureSamplesDataType = 'array';
-    /**
-     * URIs that were not crawled before the LRO terminated.
-     *
-     * @param string[] $failedUris
-     */
-    public function setFailedUris($failedUris)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaRecrawlUrisResponse extends \Google\Collection
     {
+        protected $collection_key = 'failureSamples';
+        /**
+         * URIs that were not crawled before the LRO terminated.
+         *
+         * @var string[]
+         */
+        public $failedUris;
+        protected $failureSamplesType = GoogleCloudDiscoveryengineV1alphaRecrawlUrisResponseFailureInfo::class;
+        protected $failureSamplesDataType = 'array';
+        /**
+         * URIs that were not crawled before the LRO terminated.
+         *
+         * @param string[] $failedUris
+         */
+        public function setFailedUris($failedUris)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getFailedUris()
+        {
+        }
+        /**
+         * Details for a sample of up to 10 `failed_uris`.
+         *
+         * @param GoogleCloudDiscoveryengineV1alphaRecrawlUrisResponseFailureInfo[] $failureSamples
+         */
+        public function setFailureSamples($failureSamples)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1alphaRecrawlUrisResponseFailureInfo[]
+         */
+        public function getFailureSamples()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaRecrawlUrisResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFailedUris()
-    {
-    }
-    /**
-     * Details for a sample of up to 10 `failed_uris`.
-     *
-     * @param GoogleCloudDiscoveryengineV1alphaRecrawlUrisResponseFailureInfo[] $failureSamples
-     */
-    public function setFailureSamples($failureSamples)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1alphaRecrawlUrisResponseFailureInfo[]
-     */
-    public function getFailureSamples()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaRecrawlUrisResponse extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaRecrawlUrisResponse
     {
     }
 }

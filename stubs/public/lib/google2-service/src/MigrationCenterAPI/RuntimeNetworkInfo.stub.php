@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class RuntimeNetworkInfo extends \Google\Model
-{
-    protected $connectionsType = NetworkConnectionList::class;
-    protected $connectionsDataType = '';
-    /**
-     * Time of the last network scan.
-     *
-     * @var string
-     */
-    public $scanTime;
-    /**
-     * Network connections.
-     *
-     * @param NetworkConnectionList $connections
-     */
-    public function setConnections(NetworkConnectionList $connections)
+namespace Google\Service\MigrationCenterAPI {
+    class RuntimeNetworkInfo extends \Google\Model
     {
+        protected $connectionsType = NetworkConnectionList::class;
+        protected $connectionsDataType = '';
+        /**
+         * Time of the last network scan.
+         *
+         * @var string
+         */
+        public $scanTime;
+        /**
+         * Network connections.
+         *
+         * @param NetworkConnectionList $connections
+         */
+        public function setConnections(NetworkConnectionList $connections)
+        {
+        }
+        /**
+         * @return NetworkConnectionList
+         */
+        public function getConnections()
+        {
+        }
+        /**
+         * Time of the last network scan.
+         *
+         * @param string $scanTime
+         */
+        public function setScanTime($scanTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScanTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return NetworkConnectionList
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\RuntimeNetworkInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConnections()
-    {
-    }
-    /**
-     * Time of the last network scan.
-     *
-     * @param string $scanTime
-     */
-    public function setScanTime($scanTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getScanTime()
+    class Google_Service_MigrationCenterAPI_RuntimeNetworkInfo extends \Google\Service\MigrationCenterAPI\RuntimeNetworkInfo
     {
     }
 }

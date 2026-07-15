@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2AmazonS3Bucket extends \Google\Model
-{
-    protected $awsAccountType = GooglePrivacyDlpV2AwsAccount::class;
-    protected $awsAccountDataType = '';
-    /**
-     * Required. The bucket name.
-     *
-     * @var string
-     */
-    public $bucketName;
-    /**
-     * The AWS account.
-     *
-     * @param GooglePrivacyDlpV2AwsAccount $awsAccount
-     */
-    public function setAwsAccount(GooglePrivacyDlpV2AwsAccount $awsAccount)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2AmazonS3Bucket extends \Google\Model
     {
+        protected $awsAccountType = GooglePrivacyDlpV2AwsAccount::class;
+        protected $awsAccountDataType = '';
+        /**
+         * Required. The bucket name.
+         *
+         * @var string
+         */
+        public $bucketName;
+        /**
+         * The AWS account.
+         *
+         * @param GooglePrivacyDlpV2AwsAccount $awsAccount
+         */
+        public function setAwsAccount(GooglePrivacyDlpV2AwsAccount $awsAccount)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2AwsAccount
+         */
+        public function getAwsAccount()
+        {
+        }
+        /**
+         * Required. The bucket name.
+         *
+         * @param string $bucketName
+         */
+        public function setBucketName($bucketName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBucketName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2AwsAccount
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2AmazonS3Bucket registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAwsAccount()
-    {
-    }
-    /**
-     * Required. The bucket name.
-     *
-     * @param string $bucketName
-     */
-    public function setBucketName($bucketName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBucketName()
+    class Google_Service_DLP_GooglePrivacyDlpV2AmazonS3Bucket extends \Google\Service\DLP\GooglePrivacyDlpV2AmazonS3Bucket
     {
     }
 }

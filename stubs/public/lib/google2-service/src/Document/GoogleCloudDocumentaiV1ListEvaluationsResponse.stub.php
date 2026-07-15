@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1ListEvaluationsResponse extends \Google\Collection
-{
-    protected $collection_key = 'evaluations';
-    protected $evaluationsType = GoogleCloudDocumentaiV1Evaluation::class;
-    protected $evaluationsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The evaluations requested.
-     *
-     * @param GoogleCloudDocumentaiV1Evaluation[] $evaluations
-     */
-    public function setEvaluations($evaluations)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1ListEvaluationsResponse extends \Google\Collection
     {
+        protected $collection_key = 'evaluations';
+        protected $evaluationsType = GoogleCloudDocumentaiV1Evaluation::class;
+        protected $evaluationsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The evaluations requested.
+         *
+         * @param GoogleCloudDocumentaiV1Evaluation[] $evaluations
+         */
+        public function setEvaluations($evaluations)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1Evaluation[]
+         */
+        public function getEvaluations()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiV1Evaluation[]
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1ListEvaluationsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEvaluations()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Document_GoogleCloudDocumentaiV1ListEvaluationsResponse extends \Google\Service\Document\GoogleCloudDocumentaiV1ListEvaluationsResponse
     {
     }
 }

@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Classroom;
-
-class StudentContext extends \Google\Model
-{
-    /**
-     * Requesting user's submission id to be used for grade passback and to
-     * identify the student when showing student work to the teacher. This is set
-     * exactly when `supportsStudentWork` is `true`.
-     *
-     * @var string
-     */
-    public $submissionId;
-    /**
-     * Requesting user's submission id to be used for grade passback and to
-     * identify the student when showing student work to the teacher. This is set
-     * exactly when `supportsStudentWork` is `true`.
-     *
-     * @param string $submissionId
-     */
-    public function setSubmissionId($submissionId)
+namespace Google\Service\Classroom {
+    class StudentContext extends \Google\Model
     {
+        /**
+         * Requesting user's submission id to be used for grade passback and to
+         * identify the student when showing student work to the teacher. This is set
+         * exactly when `supportsStudentWork` is `true`.
+         *
+         * @var string
+         */
+        public $submissionId;
+        /**
+         * Requesting user's submission id to be used for grade passback and to
+         * identify the student when showing student work to the teacher. This is set
+         * exactly when `supportsStudentWork` is `true`.
+         *
+         * @param string $submissionId
+         */
+        public function setSubmissionId($submissionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubmissionId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Classroom\StudentContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSubmissionId()
+    class Google_Service_Classroom_StudentContext extends \Google\Service\Classroom\StudentContext
     {
     }
 }

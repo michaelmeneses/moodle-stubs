@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1AvroSource extends \Google\Model
-{
-    protected $gcsSourceType = GoogleCloudAiplatformV1GcsSource::class;
-    protected $gcsSourceDataType = '';
-    /**
-     * Required. Google Cloud Storage location.
-     *
-     * @param GoogleCloudAiplatformV1GcsSource $gcsSource
-     */
-    public function setGcsSource(GoogleCloudAiplatformV1GcsSource $gcsSource)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1AvroSource extends \Google\Model
     {
+        protected $gcsSourceType = GoogleCloudAiplatformV1GcsSource::class;
+        protected $gcsSourceDataType = '';
+        /**
+         * Required. Google Cloud Storage location.
+         *
+         * @param GoogleCloudAiplatformV1GcsSource $gcsSource
+         */
+        public function setGcsSource(GoogleCloudAiplatformV1GcsSource $gcsSource)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1GcsSource
+         */
+        public function getGcsSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1GcsSource
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1AvroSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGcsSource()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1AvroSource extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1AvroSource
     {
     }
 }

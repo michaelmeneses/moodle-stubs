@@ -21,147 +21,156 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CivicInfo;
-
-class PollingLocation extends \Google\Collection
-{
-    protected $collection_key = 'sources';
-    protected $addressType = SimpleAddressType::class;
-    protected $addressDataType = '';
-    /**
-     * @var string
-     */
-    public $endDate;
-    public $latitude;
-    public $longitude;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $notes;
-    /**
-     * @var string
-     */
-    public $pollingHours;
-    protected $sourcesType = Source::class;
-    protected $sourcesDataType = 'array';
-    /**
-     * @var string
-     */
-    public $startDate;
-    /**
-     * @var string
-     */
-    public $voterServices;
-    /**
-     * @param SimpleAddressType
-     */
-    public function setAddress(SimpleAddressType $address)
+namespace Google\Service\CivicInfo {
+    class PollingLocation extends \Google\Collection
     {
+        protected $collection_key = 'sources';
+        protected $addressType = SimpleAddressType::class;
+        protected $addressDataType = '';
+        /**
+         * @var string
+         */
+        public $endDate;
+        public $latitude;
+        public $longitude;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $notes;
+        /**
+         * @var string
+         */
+        public $pollingHours;
+        protected $sourcesType = Source::class;
+        protected $sourcesDataType = 'array';
+        /**
+         * @var string
+         */
+        public $startDate;
+        /**
+         * @var string
+         */
+        public $voterServices;
+        /**
+         * @param SimpleAddressType
+         */
+        public function setAddress(SimpleAddressType $address)
+        {
+        }
+        /**
+         * @return SimpleAddressType
+         */
+        public function getAddress()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEndDate($endDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndDate()
+        {
+        }
+        public function setLatitude($latitude)
+        {
+        }
+        public function getLatitude()
+        {
+        }
+        public function setLongitude($longitude)
+        {
+        }
+        public function getLongitude()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNotes($notes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNotes()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPollingHours($pollingHours)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPollingHours()
+        {
+        }
+        /**
+         * @param Source[]
+         */
+        public function setSources($sources)
+        {
+        }
+        /**
+         * @return Source[]
+         */
+        public function getSources()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setStartDate($startDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartDate()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setVoterServices($voterServices)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVoterServices()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SimpleAddressType
+     * Runtime class alias of \Google\Service\CivicInfo\PollingLocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddress()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEndDate($endDate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndDate()
-    {
-    }
-    public function setLatitude($latitude)
-    {
-    }
-    public function getLatitude()
-    {
-    }
-    public function setLongitude($longitude)
-    {
-    }
-    public function getLongitude()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNotes($notes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNotes()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPollingHours($pollingHours)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPollingHours()
-    {
-    }
-    /**
-     * @param Source[]
-     */
-    public function setSources($sources)
-    {
-    }
-    /**
-     * @return Source[]
-     */
-    public function getSources()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setStartDate($startDate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartDate()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setVoterServices($voterServices)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVoterServices()
+    class Google_Service_CivicInfo_PollingLocation extends \Google\Service\CivicInfo\PollingLocation
     {
     }
 }

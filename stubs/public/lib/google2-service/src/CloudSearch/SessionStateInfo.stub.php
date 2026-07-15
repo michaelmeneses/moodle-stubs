@@ -21,100 +21,109 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class SessionStateInfo extends \Google\Model
-{
-    protected $ackInfoType = AckInfo::class;
-    protected $ackInfoDataType = '';
-    protected $languageConfigType = LanguageConfig::class;
-    protected $languageConfigDataType = '';
-    /**
-     * @var string
-     */
-    public $lastActorDeviceId;
-    /**
-     * @var string
-     */
-    public $maxEndTime;
-    /**
-     * @var string
-     */
-    public $sessionState;
-    /**
-     * @var string
-     */
-    public $sessionStopReason;
-    /**
-     * @param AckInfo
-     */
-    public function setAckInfo(AckInfo $ackInfo)
+namespace Google\Service\CloudSearch {
+    class SessionStateInfo extends \Google\Model
     {
+        protected $ackInfoType = AckInfo::class;
+        protected $ackInfoDataType = '';
+        protected $languageConfigType = LanguageConfig::class;
+        protected $languageConfigDataType = '';
+        /**
+         * @var string
+         */
+        public $lastActorDeviceId;
+        /**
+         * @var string
+         */
+        public $maxEndTime;
+        /**
+         * @var string
+         */
+        public $sessionState;
+        /**
+         * @var string
+         */
+        public $sessionStopReason;
+        /**
+         * @param AckInfo
+         */
+        public function setAckInfo(AckInfo $ackInfo)
+        {
+        }
+        /**
+         * @return AckInfo
+         */
+        public function getAckInfo()
+        {
+        }
+        /**
+         * @param LanguageConfig
+         */
+        public function setLanguageConfig(LanguageConfig $languageConfig)
+        {
+        }
+        /**
+         * @return LanguageConfig
+         */
+        public function getLanguageConfig()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLastActorDeviceId($lastActorDeviceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastActorDeviceId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMaxEndTime($maxEndTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaxEndTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSessionState($sessionState)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSessionState()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSessionStopReason($sessionStopReason)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSessionStopReason()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AckInfo
+     * Runtime class alias of \Google\Service\CloudSearch\SessionStateInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAckInfo()
-    {
-    }
-    /**
-     * @param LanguageConfig
-     */
-    public function setLanguageConfig(LanguageConfig $languageConfig)
-    {
-    }
-    /**
-     * @return LanguageConfig
-     */
-    public function getLanguageConfig()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLastActorDeviceId($lastActorDeviceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastActorDeviceId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMaxEndTime($maxEndTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMaxEndTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSessionState($sessionState)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSessionState()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSessionStopReason($sessionStopReason)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSessionStopReason()
+    class Google_Service_CloudSearch_SessionStateInfo extends \Google\Service\CloudSearch\SessionStateInfo
     {
     }
 }

@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GoogleCloudSecuritycenterV2IssueSecurityContext extends \Google\Model
-{
-    protected $aggregatedCountType = GoogleCloudSecuritycenterV2IssueSecurityContextAggregatedCount::class;
-    protected $aggregatedCountDataType = '';
-    protected $contextType = GoogleCloudSecuritycenterV2IssueSecurityContextContext::class;
-    protected $contextDataType = '';
-    /**
-     * The aggregated count of the security context.
-     *
-     * @param GoogleCloudSecuritycenterV2IssueSecurityContextAggregatedCount $aggregatedCount
-     */
-    public function setAggregatedCount(GoogleCloudSecuritycenterV2IssueSecurityContextAggregatedCount $aggregatedCount)
+namespace Google\Service\SecurityCommandCenter {
+    class GoogleCloudSecuritycenterV2IssueSecurityContext extends \Google\Model
     {
+        protected $aggregatedCountType = GoogleCloudSecuritycenterV2IssueSecurityContextAggregatedCount::class;
+        protected $aggregatedCountDataType = '';
+        protected $contextType = GoogleCloudSecuritycenterV2IssueSecurityContextContext::class;
+        protected $contextDataType = '';
+        /**
+         * The aggregated count of the security context.
+         *
+         * @param GoogleCloudSecuritycenterV2IssueSecurityContextAggregatedCount $aggregatedCount
+         */
+        public function setAggregatedCount(GoogleCloudSecuritycenterV2IssueSecurityContextAggregatedCount $aggregatedCount)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV2IssueSecurityContextAggregatedCount
+         */
+        public function getAggregatedCount()
+        {
+        }
+        /**
+         * The context of the security context.
+         *
+         * @param GoogleCloudSecuritycenterV2IssueSecurityContextContext $context
+         */
+        public function setContext(GoogleCloudSecuritycenterV2IssueSecurityContextContext $context)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV2IssueSecurityContextContext
+         */
+        public function getContext()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudSecuritycenterV2IssueSecurityContextAggregatedCount
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2IssueSecurityContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAggregatedCount()
-    {
-    }
-    /**
-     * The context of the security context.
-     *
-     * @param GoogleCloudSecuritycenterV2IssueSecurityContextContext $context
-     */
-    public function setContext(GoogleCloudSecuritycenterV2IssueSecurityContextContext $context)
-    {
-    }
-    /**
-     * @return GoogleCloudSecuritycenterV2IssueSecurityContextContext
-     */
-    public function getContext()
+    class Google_Service_SecurityCommandCenter_GoogleCloudSecuritycenterV2IssueSecurityContext extends \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2IssueSecurityContext
     {
     }
 }

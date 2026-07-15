@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2ListDiscoveryConfigsResponse extends \Google\Collection
-{
-    protected $collection_key = 'discoveryConfigs';
-    protected $discoveryConfigsType = GooglePrivacyDlpV2DiscoveryConfig::class;
-    protected $discoveryConfigsDataType = 'array';
-    /**
-     * If the next page is available then this value is the next page token to be
-     * used in the following ListDiscoveryConfigs request.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of configs, up to page_size in ListDiscoveryConfigsRequest.
-     *
-     * @param GooglePrivacyDlpV2DiscoveryConfig[] $discoveryConfigs
-     */
-    public function setDiscoveryConfigs($discoveryConfigs)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2ListDiscoveryConfigsResponse extends \Google\Collection
     {
+        protected $collection_key = 'discoveryConfigs';
+        protected $discoveryConfigsType = GooglePrivacyDlpV2DiscoveryConfig::class;
+        protected $discoveryConfigsDataType = 'array';
+        /**
+         * If the next page is available then this value is the next page token to be
+         * used in the following ListDiscoveryConfigs request.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of configs, up to page_size in ListDiscoveryConfigsRequest.
+         *
+         * @param GooglePrivacyDlpV2DiscoveryConfig[] $discoveryConfigs
+         */
+        public function setDiscoveryConfigs($discoveryConfigs)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2DiscoveryConfig[]
+         */
+        public function getDiscoveryConfigs()
+        {
+        }
+        /**
+         * If the next page is available then this value is the next page token to be
+         * used in the following ListDiscoveryConfigs request.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2DiscoveryConfig[]
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2ListDiscoveryConfigsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDiscoveryConfigs()
-    {
-    }
-    /**
-     * If the next page is available then this value is the next page token to be
-     * used in the following ListDiscoveryConfigs request.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_DLP_GooglePrivacyDlpV2ListDiscoveryConfigsResponse extends \Google\Service\DLP\GooglePrivacyDlpV2ListDiscoveryConfigsResponse
     {
     }
 }

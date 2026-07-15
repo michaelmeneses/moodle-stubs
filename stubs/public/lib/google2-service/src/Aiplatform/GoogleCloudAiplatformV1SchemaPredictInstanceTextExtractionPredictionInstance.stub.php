@@ -21,78 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaPredictInstanceTextExtractionPredictionInstance extends \Google\Model
-{
-    /**
-     * The text snippet to make the predictions on.
-     *
-     * @var string
-     */
-    public $content;
-    /**
-     * This field is only used for batch prediction. If a key is provided, the
-     * batch prediction result will by mapped to this key. If omitted, then the
-     * batch prediction result will contain the entire input instance. Vertex AI
-     * will not check if keys in the request are duplicates, so it is up to the
-     * caller to ensure the keys are unique.
-     *
-     * @var string
-     */
-    public $key;
-    /**
-     * The MIME type of the text snippet. The supported MIME types are listed
-     * below. - text/plain
-     *
-     * @var string
-     */
-    public $mimeType;
-    /**
-     * The text snippet to make the predictions on.
-     *
-     * @param string $content
-     */
-    public function setContent($content)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaPredictInstanceTextExtractionPredictionInstance extends \Google\Model
     {
+        /**
+         * The text snippet to make the predictions on.
+         *
+         * @var string
+         */
+        public $content;
+        /**
+         * This field is only used for batch prediction. If a key is provided, the
+         * batch prediction result will by mapped to this key. If omitted, then the
+         * batch prediction result will contain the entire input instance. Vertex AI
+         * will not check if keys in the request are duplicates, so it is up to the
+         * caller to ensure the keys are unique.
+         *
+         * @var string
+         */
+        public $key;
+        /**
+         * The MIME type of the text snippet. The supported MIME types are listed
+         * below. - text/plain
+         *
+         * @var string
+         */
+        public $mimeType;
+        /**
+         * The text snippet to make the predictions on.
+         *
+         * @param string $content
+         */
+        public function setContent($content)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContent()
+        {
+        }
+        /**
+         * This field is only used for batch prediction. If a key is provided, the
+         * batch prediction result will by mapped to this key. If omitted, then the
+         * batch prediction result will contain the entire input instance. Vertex AI
+         * will not check if keys in the request are duplicates, so it is up to the
+         * caller to ensure the keys are unique.
+         *
+         * @param string $key
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * The MIME type of the text snippet. The supported MIME types are listed
+         * below. - text/plain
+         *
+         * @param string $mimeType
+         */
+        public function setMimeType($mimeType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMimeType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaPredictInstanceTextExtractionPredictionInstance registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContent()
-    {
-    }
-    /**
-     * This field is only used for batch prediction. If a key is provided, the
-     * batch prediction result will by mapped to this key. If omitted, then the
-     * batch prediction result will contain the entire input instance. Vertex AI
-     * will not check if keys in the request are duplicates, so it is up to the
-     * caller to ensure the keys are unique.
-     *
-     * @param string $key
-     */
-    public function setKey($key)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKey()
-    {
-    }
-    /**
-     * The MIME type of the text snippet. The supported MIME types are listed
-     * below. - text/plain
-     *
-     * @param string $mimeType
-     */
-    public function setMimeType($mimeType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMimeType()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaPredictInstanceTextExtractionPredictionInstance extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaPredictInstanceTextExtractionPredictionInstance
     {
     }
 }

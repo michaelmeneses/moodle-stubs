@@ -21,59 +21,70 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dns\Resource;
-
-/**
- * The "dnsKeys" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dnsService = new Google\Service\Dns(...);
- *   $dnsKeys = $dnsService->dnsKeys;
- *  </code>
- */
-class DnsKeys extends \Google\Service\Resource
-{
+namespace Google\Service\Dns\Resource {
+    use Google\Service\Dns\DnsKey;
+    use Google\Service\Dns\DnsKeysListResponse;
     /**
-     * Fetches the representation of an existing DnsKey. (dnsKeys.get)
-     *
-     * @param string $project Identifies the project addressed by this request.
-     * @param string $managedZone Identifies the managed zone addressed by this
-     * request. Can be the managed zone name or ID.
-     * @param string $dnsKeyId The identifier of the requested DnsKey.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string clientOperationId For mutating operation requests only. An
-     * optional identifier specified by the client. Must be unique for operation
-     * resources in the Operations collection.
-     * @opt_param string digestType An optional comma-separated list of digest types
-     * to compute and display for key signing keys. If omitted, the recommended
-     * digest type is computed and displayed.
-     * @return DnsKey
-     * @throws \Google\Service\Exception
+     * The "dnsKeys" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dnsService = new Google\Service\Dns(...);
+     *   $dnsKeys = $dnsService->dnsKeys;
+     *  </code>
      */
-    public function get($project, $managedZone, $dnsKeyId, $optParams = [])
+    class DnsKeys extends \Google\Service\Resource
     {
+        /**
+         * Fetches the representation of an existing DnsKey. (dnsKeys.get)
+         *
+         * @param string $project Identifies the project addressed by this request.
+         * @param string $managedZone Identifies the managed zone addressed by this
+         * request. Can be the managed zone name or ID.
+         * @param string $dnsKeyId The identifier of the requested DnsKey.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string clientOperationId For mutating operation requests only. An
+         * optional identifier specified by the client. Must be unique for operation
+         * resources in the Operations collection.
+         * @opt_param string digestType An optional comma-separated list of digest types
+         * to compute and display for key signing keys. If omitted, the recommended
+         * digest type is computed and displayed.
+         * @return DnsKey
+         * @throws \Google\Service\Exception
+         */
+        public function get($project, $managedZone, $dnsKeyId, $optParams = [])
+        {
+        }
+        /**
+         * Enumerates DnsKeys to a ResourceRecordSet collection. (dnsKeys.listDnsKeys)
+         *
+         * @param string $project Identifies the project addressed by this request.
+         * @param string $managedZone Identifies the managed zone addressed by this
+         * request. Can be the managed zone name or ID.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string digestType An optional comma-separated list of digest types
+         * to compute and display for key signing keys. If omitted, the recommended
+         * digest type is computed and displayed.
+         * @opt_param int maxResults Optional. Maximum number of results to be returned.
+         * If unspecified, the server decides how many results to return.
+         * @opt_param string pageToken Optional. A tag returned by a previous list
+         * request that was truncated. Use this parameter to continue a previous list
+         * request.
+         * @return DnsKeysListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listDnsKeys($project, $managedZone, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Enumerates DnsKeys to a ResourceRecordSet collection. (dnsKeys.listDnsKeys)
-     *
-     * @param string $project Identifies the project addressed by this request.
-     * @param string $managedZone Identifies the managed zone addressed by this
-     * request. Can be the managed zone name or ID.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string digestType An optional comma-separated list of digest types
-     * to compute and display for key signing keys. If omitted, the recommended
-     * digest type is computed and displayed.
-     * @opt_param int maxResults Optional. Maximum number of results to be returned.
-     * If unspecified, the server decides how many results to return.
-     * @opt_param string pageToken Optional. A tag returned by a previous list
-     * request that was truncated. Use this parameter to continue a previous list
-     * request.
-     * @return DnsKeysListResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Dns\Resource\DnsKeys registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listDnsKeys($project, $managedZone, $optParams = [])
+    class Google_Service_Dns_Resource_DnsKeys extends \Google\Service\Dns\Resource\DnsKeys
     {
     }
 }

@@ -21,78 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Appengine;
-
-class Deployment extends \Google\Model
-{
-    protected $cloudBuildOptionsType = CloudBuildOptions::class;
-    protected $cloudBuildOptionsDataType = '';
-    protected $containerType = ContainerInfo::class;
-    protected $containerDataType = '';
-    protected $filesType = FileInfo::class;
-    protected $filesDataType = 'map';
-    protected $zipType = ZipInfo::class;
-    protected $zipDataType = '';
-    /**
-     * Options for any Google Cloud Build builds created as a part of this
-     * deployment.These options will only be used if a new build is created, such
-     * as when deploying to the App Engine flexible environment using files or
-     * zip.
-     *
-     * @param CloudBuildOptions $cloudBuildOptions
-     */
-    public function setCloudBuildOptions(CloudBuildOptions $cloudBuildOptions)
+namespace Google\Service\Appengine {
+    class Deployment extends \Google\Model
     {
+        protected $cloudBuildOptionsType = CloudBuildOptions::class;
+        protected $cloudBuildOptionsDataType = '';
+        protected $containerType = ContainerInfo::class;
+        protected $containerDataType = '';
+        protected $filesType = FileInfo::class;
+        protected $filesDataType = 'map';
+        protected $zipType = ZipInfo::class;
+        protected $zipDataType = '';
+        /**
+         * Options for any Google Cloud Build builds created as a part of this
+         * deployment.These options will only be used if a new build is created, such
+         * as when deploying to the App Engine flexible environment using files or
+         * zip.
+         *
+         * @param CloudBuildOptions $cloudBuildOptions
+         */
+        public function setCloudBuildOptions(CloudBuildOptions $cloudBuildOptions)
+        {
+        }
+        /**
+         * @return CloudBuildOptions
+         */
+        public function getCloudBuildOptions()
+        {
+        }
+        /**
+         * The Docker image for the container that runs the version. Only applicable
+         * for instances running in the App Engine flexible environment.
+         *
+         * @param ContainerInfo $container
+         */
+        public function setContainer(ContainerInfo $container)
+        {
+        }
+        /**
+         * @return ContainerInfo
+         */
+        public function getContainer()
+        {
+        }
+        /**
+         * Manifest of the files stored in Google Cloud Storage that are included as
+         * part of this version. All files must be readable using the credentials
+         * supplied with this call.
+         *
+         * @param FileInfo[] $files
+         */
+        public function setFiles($files)
+        {
+        }
+        /**
+         * @return FileInfo[]
+         */
+        public function getFiles()
+        {
+        }
+        /**
+         * The zip file for this deployment, if this is a zip deployment.
+         *
+         * @param ZipInfo $zip
+         */
+        public function setZip(ZipInfo $zip)
+        {
+        }
+        /**
+         * @return ZipInfo
+         */
+        public function getZip()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CloudBuildOptions
+     * Runtime class alias of \Google\Service\Appengine\Deployment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCloudBuildOptions()
-    {
-    }
-    /**
-     * The Docker image for the container that runs the version. Only applicable
-     * for instances running in the App Engine flexible environment.
-     *
-     * @param ContainerInfo $container
-     */
-    public function setContainer(ContainerInfo $container)
-    {
-    }
-    /**
-     * @return ContainerInfo
-     */
-    public function getContainer()
-    {
-    }
-    /**
-     * Manifest of the files stored in Google Cloud Storage that are included as
-     * part of this version. All files must be readable using the credentials
-     * supplied with this call.
-     *
-     * @param FileInfo[] $files
-     */
-    public function setFiles($files)
-    {
-    }
-    /**
-     * @return FileInfo[]
-     */
-    public function getFiles()
-    {
-    }
-    /**
-     * The zip file for this deployment, if this is a zip deployment.
-     *
-     * @param ZipInfo $zip
-     */
-    public function setZip(ZipInfo $zip)
-    {
-    }
-    /**
-     * @return ZipInfo
-     */
-    public function getZip()
+    class Google_Service_Appengine_Deployment extends \Google\Service\Appengine\Deployment
     {
     }
 }

@@ -21,146 +21,155 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataManager;
-
-class IngestEventsRequest extends \Google\Collection
-{
-    /**
-     * Unspecified Encoding type. Should never be used.
-     */
-    public const ENCODING_ENCODING_UNSPECIFIED = 'ENCODING_UNSPECIFIED';
-    /**
-     * Hex encoding.
-     */
-    public const ENCODING_HEX = 'HEX';
-    /**
-     * Base 64 encoding.
-     */
-    public const ENCODING_BASE64 = 'BASE64';
-    protected $collection_key = 'events';
-    protected $consentType = Consent::class;
-    protected $consentDataType = '';
-    protected $destinationsType = Destination::class;
-    protected $destinationsDataType = 'array';
-    /**
-     * Optional. Required for UserData uploads. The encoding type of the user
-     * identifiers. For hashed user identifiers, this is the encoding type of the
-     * hashed string. For encrypted hashed user identifiers, this is the encoding
-     * type of the outer encrypted string, but not necessarily the inner hashed
-     * string, meaning the inner hashed string could be encoded in a different way
-     * than the outer encrypted string. For non `UserData` uploads, this field is
-     * ignored.
-     *
-     * @var string
-     */
-    public $encoding;
-    protected $encryptionInfoType = EncryptionInfo::class;
-    protected $encryptionInfoDataType = '';
-    protected $eventsType = Event::class;
-    protected $eventsDataType = 'array';
-    /**
-     * Optional. For testing purposes. If `true`, the request is validated but not
-     * executed. Only errors are returned, not results.
-     *
-     * @var bool
-     */
-    public $validateOnly;
-    /**
-     * Optional. Request-level consent to apply to all users in the request. User-
-     * level consent overrides request-level consent, and can be specified in each
-     * Event.
-     *
-     * @param Consent $consent
-     */
-    public function setConsent(Consent $consent)
+namespace Google\Service\DataManager {
+    class IngestEventsRequest extends \Google\Collection
     {
+        /**
+         * Unspecified Encoding type. Should never be used.
+         */
+        public const ENCODING_ENCODING_UNSPECIFIED = 'ENCODING_UNSPECIFIED';
+        /**
+         * Hex encoding.
+         */
+        public const ENCODING_HEX = 'HEX';
+        /**
+         * Base 64 encoding.
+         */
+        public const ENCODING_BASE64 = 'BASE64';
+        protected $collection_key = 'events';
+        protected $consentType = Consent::class;
+        protected $consentDataType = '';
+        protected $destinationsType = Destination::class;
+        protected $destinationsDataType = 'array';
+        /**
+         * Optional. Required for UserData uploads. The encoding type of the user
+         * identifiers. For hashed user identifiers, this is the encoding type of the
+         * hashed string. For encrypted hashed user identifiers, this is the encoding
+         * type of the outer encrypted string, but not necessarily the inner hashed
+         * string, meaning the inner hashed string could be encoded in a different way
+         * than the outer encrypted string. For non `UserData` uploads, this field is
+         * ignored.
+         *
+         * @var string
+         */
+        public $encoding;
+        protected $encryptionInfoType = EncryptionInfo::class;
+        protected $encryptionInfoDataType = '';
+        protected $eventsType = Event::class;
+        protected $eventsDataType = 'array';
+        /**
+         * Optional. For testing purposes. If `true`, the request is validated but not
+         * executed. Only errors are returned, not results.
+         *
+         * @var bool
+         */
+        public $validateOnly;
+        /**
+         * Optional. Request-level consent to apply to all users in the request. User-
+         * level consent overrides request-level consent, and can be specified in each
+         * Event.
+         *
+         * @param Consent $consent
+         */
+        public function setConsent(Consent $consent)
+        {
+        }
+        /**
+         * @return Consent
+         */
+        public function getConsent()
+        {
+        }
+        /**
+         * Required. The list of destinations to send the events to.
+         *
+         * @param Destination[] $destinations
+         */
+        public function setDestinations($destinations)
+        {
+        }
+        /**
+         * @return Destination[]
+         */
+        public function getDestinations()
+        {
+        }
+        /**
+         * Optional. Required for UserData uploads. The encoding type of the user
+         * identifiers. For hashed user identifiers, this is the encoding type of the
+         * hashed string. For encrypted hashed user identifiers, this is the encoding
+         * type of the outer encrypted string, but not necessarily the inner hashed
+         * string, meaning the inner hashed string could be encoded in a different way
+         * than the outer encrypted string. For non `UserData` uploads, this field is
+         * ignored.
+         *
+         * Accepted values: ENCODING_UNSPECIFIED, HEX, BASE64
+         *
+         * @param self::ENCODING_* $encoding
+         */
+        public function setEncoding($encoding)
+        {
+        }
+        /**
+         * @return self::ENCODING_*
+         */
+        public function getEncoding()
+        {
+        }
+        /**
+         * Optional. Encryption information for UserData uploads. If not set, it's
+         * assumed that uploaded identifying information is hashed but not encrypted.
+         * For non `UserData` uploads, this field is ignored.
+         *
+         * @param EncryptionInfo $encryptionInfo
+         */
+        public function setEncryptionInfo(EncryptionInfo $encryptionInfo)
+        {
+        }
+        /**
+         * @return EncryptionInfo
+         */
+        public function getEncryptionInfo()
+        {
+        }
+        /**
+         * Required. The list of events to send to the specified destinations. At most
+         * 2000 Event resources can be sent in a single request.
+         *
+         * @param Event[] $events
+         */
+        public function setEvents($events)
+        {
+        }
+        /**
+         * @return Event[]
+         */
+        public function getEvents()
+        {
+        }
+        /**
+         * Optional. For testing purposes. If `true`, the request is validated but not
+         * executed. Only errors are returned, not results.
+         *
+         * @param bool $validateOnly
+         */
+        public function setValidateOnly($validateOnly)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getValidateOnly()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Consent
+     * Runtime class alias of \Google\Service\DataManager\IngestEventsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConsent()
-    {
-    }
-    /**
-     * Required. The list of destinations to send the events to.
-     *
-     * @param Destination[] $destinations
-     */
-    public function setDestinations($destinations)
-    {
-    }
-    /**
-     * @return Destination[]
-     */
-    public function getDestinations()
-    {
-    }
-    /**
-     * Optional. Required for UserData uploads. The encoding type of the user
-     * identifiers. For hashed user identifiers, this is the encoding type of the
-     * hashed string. For encrypted hashed user identifiers, this is the encoding
-     * type of the outer encrypted string, but not necessarily the inner hashed
-     * string, meaning the inner hashed string could be encoded in a different way
-     * than the outer encrypted string. For non `UserData` uploads, this field is
-     * ignored.
-     *
-     * Accepted values: ENCODING_UNSPECIFIED, HEX, BASE64
-     *
-     * @param self::ENCODING_* $encoding
-     */
-    public function setEncoding($encoding)
-    {
-    }
-    /**
-     * @return self::ENCODING_*
-     */
-    public function getEncoding()
-    {
-    }
-    /**
-     * Optional. Encryption information for UserData uploads. If not set, it's
-     * assumed that uploaded identifying information is hashed but not encrypted.
-     * For non `UserData` uploads, this field is ignored.
-     *
-     * @param EncryptionInfo $encryptionInfo
-     */
-    public function setEncryptionInfo(EncryptionInfo $encryptionInfo)
-    {
-    }
-    /**
-     * @return EncryptionInfo
-     */
-    public function getEncryptionInfo()
-    {
-    }
-    /**
-     * Required. The list of events to send to the specified destinations. At most
-     * 2000 Event resources can be sent in a single request.
-     *
-     * @param Event[] $events
-     */
-    public function setEvents($events)
-    {
-    }
-    /**
-     * @return Event[]
-     */
-    public function getEvents()
-    {
-    }
-    /**
-     * Optional. For testing purposes. If `true`, the request is validated but not
-     * executed. Only errors are returned, not results.
-     *
-     * @param bool $validateOnly
-     */
-    public function setValidateOnly($validateOnly)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getValidateOnly()
+    class Google_Service_DataManager_IngestEventsRequest extends \Google\Service\DataManager\IngestEventsRequest
     {
     }
 }

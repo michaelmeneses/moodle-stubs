@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3beta1ExportTestCasesResponse extends \Google\Model
-{
-    /**
-     * Uncompressed raw byte content for test cases.
-     *
-     * @var string
-     */
-    public $content;
-    /**
-     * The URI to a file containing the exported test cases. This field is
-     * populated only if `gcs_uri` is specified in ExportTestCasesRequest.
-     *
-     * @var string
-     */
-    public $gcsUri;
-    /**
-     * Uncompressed raw byte content for test cases.
-     *
-     * @param string $content
-     */
-    public function setContent($content)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3beta1ExportTestCasesResponse extends \Google\Model
     {
+        /**
+         * Uncompressed raw byte content for test cases.
+         *
+         * @var string
+         */
+        public $content;
+        /**
+         * The URI to a file containing the exported test cases. This field is
+         * populated only if `gcs_uri` is specified in ExportTestCasesRequest.
+         *
+         * @var string
+         */
+        public $gcsUri;
+        /**
+         * Uncompressed raw byte content for test cases.
+         *
+         * @param string $content
+         */
+        public function setContent($content)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContent()
+        {
+        }
+        /**
+         * The URI to a file containing the exported test cases. This field is
+         * populated only if `gcs_uri` is specified in ExportTestCasesRequest.
+         *
+         * @param string $gcsUri
+         */
+        public function setGcsUri($gcsUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGcsUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3beta1ExportTestCasesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContent()
-    {
-    }
-    /**
-     * The URI to a file containing the exported test cases. This field is
-     * populated only if `gcs_uri` is specified in ExportTestCasesRequest.
-     *
-     * @param string $gcsUri
-     */
-    public function setGcsUri($gcsUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGcsUri()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3beta1ExportTestCasesResponse extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3beta1ExportTestCasesResponse
     {
     }
 }

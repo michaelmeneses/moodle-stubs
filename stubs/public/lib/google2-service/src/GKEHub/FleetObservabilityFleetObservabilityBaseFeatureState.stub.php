@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class FleetObservabilityFleetObservabilityBaseFeatureState extends \Google\Collection
-{
-    protected $collection_key = 'errors';
-    /**
-     * @var string
-     */
-    public $code;
-    protected $errorsType = FleetObservabilityFeatureError::class;
-    protected $errorsDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setCode($code)
+namespace Google\Service\GKEHub {
+    class FleetObservabilityFleetObservabilityBaseFeatureState extends \Google\Collection
     {
+        protected $collection_key = 'errors';
+        /**
+         * @var string
+         */
+        public $code;
+        protected $errorsType = FleetObservabilityFeatureError::class;
+        protected $errorsDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setCode($code)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCode()
+        {
+        }
+        /**
+         * @param FleetObservabilityFeatureError[]
+         */
+        public function setErrors($errors)
+        {
+        }
+        /**
+         * @return FleetObservabilityFeatureError[]
+         */
+        public function getErrors()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEHub\FleetObservabilityFleetObservabilityBaseFeatureState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCode()
-    {
-    }
-    /**
-     * @param FleetObservabilityFeatureError[]
-     */
-    public function setErrors($errors)
-    {
-    }
-    /**
-     * @return FleetObservabilityFeatureError[]
-     */
-    public function getErrors()
+    class Google_Service_GKEHub_FleetObservabilityFleetObservabilityBaseFeatureState extends \Google\Service\GKEHub\FleetObservabilityFleetObservabilityBaseFeatureState
     {
     }
 }

@@ -21,32 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveLabels\Resource;
-
-/**
- * The "users" collection of methods.
- * Typical usage is:
- *  <code>
- *   $drivelabelsService = new Google\Service\DriveLabels(...);
- *   $users = $drivelabelsService->users;
- *  </code>
- */
-class Users extends \Google\Service\Resource
-{
+namespace Google\Service\DriveLabels\Resource {
+    use Google\Service\DriveLabels\GoogleAppsDriveLabelsV2UserCapabilities;
     /**
-     * Gets the user capabilities. (users.getCapabilities)
-     *
-     * @param string $name Required. The resource name of the user. Only
-     * "users/me/capabilities" is supported.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string customer The customer to scope this request to. For
-     * example: `customers/abcd1234`. If unset, it will return settings within the
-     * current customer.
-     * @return GoogleAppsDriveLabelsV2UserCapabilities
-     * @throws \Google\Service\Exception
+     * The "users" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $drivelabelsService = new Google\Service\DriveLabels(...);
+     *   $users = $drivelabelsService->users;
+     *  </code>
      */
-    public function getCapabilities($name, $optParams = [])
+    class Users extends \Google\Service\Resource
+    {
+        /**
+         * Gets the user capabilities. (users.getCapabilities)
+         *
+         * @param string $name Required. The resource name of the user. Only
+         * "users/me/capabilities" is supported.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string customer The customer to scope this request to. For
+         * example: `customers/abcd1234`. If unset, it will return settings within the
+         * current customer.
+         * @return GoogleAppsDriveLabelsV2UserCapabilities
+         * @throws \Google\Service\Exception
+         */
+        public function getCapabilities($name, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\DriveLabels\Resource\Users registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_DriveLabels_Resource_Users extends \Google\Service\DriveLabels\Resource\Users
     {
     }
 }

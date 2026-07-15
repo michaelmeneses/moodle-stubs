@@ -21,44 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee\Resource;
-
-/**
- * The "securityStats" collection of methods.
- * Typical usage is:
- *  <code>
- *   $apigeeService = new Google\Service\Apigee(...);
- *   $securityStats = $apigeeService->organizations_environments_securityStats;
- *  </code>
- */
-class OrganizationsEnvironmentsSecurityStats extends \Google\Service\Resource
-{
+namespace Google\Service\Apigee\Resource {
+    use Google\Service\Apigee\GoogleCloudApigeeV1QueryTabularStatsRequest;
+    use Google\Service\Apigee\GoogleCloudApigeeV1QueryTabularStatsResponse;
+    use Google\Service\Apigee\GoogleCloudApigeeV1QueryTimeSeriesStatsRequest;
+    use Google\Service\Apigee\GoogleCloudApigeeV1QueryTimeSeriesStatsResponse;
     /**
-     * Retrieve security statistics as tabular rows.
-     * (securityStats.queryTabularStats)
-     *
-     * @param string $orgenv Required. Should be of the form
-     * organizations//environments/.
-     * @param GoogleCloudApigeeV1QueryTabularStatsRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudApigeeV1QueryTabularStatsResponse
-     * @throws \Google\Service\Exception
+     * The "securityStats" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $apigeeService = new Google\Service\Apigee(...);
+     *   $securityStats = $apigeeService->organizations_environments_securityStats;
+     *  </code>
      */
-    public function queryTabularStats($orgenv, GoogleCloudApigeeV1QueryTabularStatsRequest $postBody, $optParams = [])
+    class OrganizationsEnvironmentsSecurityStats extends \Google\Service\Resource
     {
+        /**
+         * Retrieve security statistics as tabular rows.
+         * (securityStats.queryTabularStats)
+         *
+         * @param string $orgenv Required. Should be of the form
+         * organizations//environments/.
+         * @param GoogleCloudApigeeV1QueryTabularStatsRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudApigeeV1QueryTabularStatsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function queryTabularStats($orgenv, GoogleCloudApigeeV1QueryTabularStatsRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Retrieve security statistics as a collection of time series.
+         * (securityStats.queryTimeSeriesStats)
+         *
+         * @param string $orgenv Required. Should be of the form
+         * organizations//environments/.
+         * @param GoogleCloudApigeeV1QueryTimeSeriesStatsRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudApigeeV1QueryTimeSeriesStatsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function queryTimeSeriesStats($orgenv, GoogleCloudApigeeV1QueryTimeSeriesStatsRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Retrieve security statistics as a collection of time series.
-     * (securityStats.queryTimeSeriesStats)
-     *
-     * @param string $orgenv Required. Should be of the form
-     * organizations//environments/.
-     * @param GoogleCloudApigeeV1QueryTimeSeriesStatsRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudApigeeV1QueryTimeSeriesStatsResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Apigee\Resource\OrganizationsEnvironmentsSecurityStats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function queryTimeSeriesStats($orgenv, GoogleCloudApigeeV1QueryTimeSeriesStatsRequest $postBody, $optParams = [])
+    class Google_Service_Apigee_Resource_OrganizationsEnvironmentsSecurityStats extends \Google\Service\Apigee\Resource\OrganizationsEnvironmentsSecurityStats
     {
     }
 }

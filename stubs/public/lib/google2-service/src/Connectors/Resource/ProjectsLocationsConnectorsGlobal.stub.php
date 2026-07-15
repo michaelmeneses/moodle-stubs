@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors\Resource;
-
-/**
- * The "global" collection of methods.
- * Typical usage is:
- *  <code>
- *   $connectorsService = new Google\Service\Connectors(...);
- *   $global = $connectorsService->global;
- *  </code>
- */
-class ProjectsLocationsConnectorsGlobal extends \Google\Service\Resource
-{
+namespace Google\Service\Connectors\Resource {
+    /**
+     * The "global" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $connectorsService = new Google\Service\Connectors(...);
+     *   $global = $connectorsService->global;
+     *  </code>
+     */
+    class ProjectsLocationsConnectorsGlobal extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Connectors\Resource\ProjectsLocationsConnectorsGlobal registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Connectors_Resource_ProjectsLocationsConnectorsGlobal extends \Google\Service\Connectors\Resource\ProjectsLocationsConnectorsGlobal
+    {
+    }
 }

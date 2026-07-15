@@ -21,48 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI\Resource;
-
-/**
- * The "relations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $migrationcenterService = new Google\Service\MigrationCenterAPI(...);
- *   $relations = $migrationcenterService->projects_locations_relations;
- *  </code>
- */
-class ProjectsLocationsRelations extends \Google\Service\Resource
-{
+namespace Google\Service\MigrationCenterAPI\Resource {
+    use Google\Service\MigrationCenterAPI\ListRelationsResponse;
+    use Google\Service\MigrationCenterAPI\Relation;
     /**
-     * Gets the details of an relation. (relations.get)
-     *
-     * @param string $name Required. Name of the resource.
-     * @param array $optParams Optional parameters.
-     * @return Relation
-     * @throws \Google\Service\Exception
+     * The "relations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $migrationcenterService = new Google\Service\MigrationCenterAPI(...);
+     *   $relations = $migrationcenterService->projects_locations_relations;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class ProjectsLocationsRelations extends \Google\Service\Resource
     {
+        /**
+         * Gets the details of an relation. (relations.get)
+         *
+         * @param string $name Required. Name of the resource.
+         * @param array $optParams Optional parameters.
+         * @return Relation
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists all the relations in a given project and location.
+         * (relations.listProjectsLocationsRelations)
+         *
+         * @param string $parent Required. Parent value for `ListRelationsRequest`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Optional. Filtering results.
+         * @opt_param string orderBy Optional. Field to sort by. See
+         * https://google.aip.dev/132#ordering for more details.
+         * @opt_param int pageSize Optional. Requested page size. Server may return
+         * fewer items than requested. If unspecified, server will pick an appropriate
+         * default.
+         * @opt_param string pageToken Optional. A token identifying a page of results
+         * the server should return.
+         * @return ListRelationsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsRelations($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists all the relations in a given project and location.
-     * (relations.listProjectsLocationsRelations)
-     *
-     * @param string $parent Required. Parent value for `ListRelationsRequest`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Optional. Filtering results.
-     * @opt_param string orderBy Optional. Field to sort by. See
-     * https://google.aip.dev/132#ordering for more details.
-     * @opt_param int pageSize Optional. Requested page size. Server may return
-     * fewer items than requested. If unspecified, server will pick an appropriate
-     * default.
-     * @opt_param string pageToken Optional. A token identifying a page of results
-     * the server should return.
-     * @return ListRelationsResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\Resource\ProjectsLocationsRelations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listProjectsLocationsRelations($parent, $optParams = [])
+    class Google_Service_MigrationCenterAPI_Resource_ProjectsLocationsRelations extends \Google\Service\MigrationCenterAPI\Resource\ProjectsLocationsRelations
     {
     }
 }

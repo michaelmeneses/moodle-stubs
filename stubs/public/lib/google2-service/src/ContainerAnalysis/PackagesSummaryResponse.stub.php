@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class PackagesSummaryResponse extends \Google\Collection
-{
-    protected $collection_key = 'licensesSummary';
-    protected $licensesSummaryType = LicensesSummary::class;
-    protected $licensesSummaryDataType = 'array';
-    /**
-     * @var string
-     */
-    public $resourceUrl;
-    /**
-     * @param LicensesSummary[]
-     */
-    public function setLicensesSummary($licensesSummary)
+namespace Google\Service\ContainerAnalysis {
+    class PackagesSummaryResponse extends \Google\Collection
     {
+        protected $collection_key = 'licensesSummary';
+        protected $licensesSummaryType = LicensesSummary::class;
+        protected $licensesSummaryDataType = 'array';
+        /**
+         * @var string
+         */
+        public $resourceUrl;
+        /**
+         * @param LicensesSummary[]
+         */
+        public function setLicensesSummary($licensesSummary)
+        {
+        }
+        /**
+         * @return LicensesSummary[]
+         */
+        public function getLicensesSummary()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setResourceUrl($resourceUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LicensesSummary[]
+     * Runtime class alias of \Google\Service\ContainerAnalysis\PackagesSummaryResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLicensesSummary()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setResourceUrl($resourceUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceUrl()
+    class Google_Service_ContainerAnalysis_PackagesSummaryResponse extends \Google\Service\ContainerAnalysis\PackagesSummaryResponse
     {
     }
 }

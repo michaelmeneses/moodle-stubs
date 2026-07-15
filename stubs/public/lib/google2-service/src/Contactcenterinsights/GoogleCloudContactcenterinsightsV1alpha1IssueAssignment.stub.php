@@ -21,63 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1alpha1IssueAssignment extends \Google\Model
-{
-    /**
-     * Immutable. Display name of the assigned issue. This field is set at time of
-     * analysis and immutable since then.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Resource name of the assigned issue.
-     *
-     * @var string
-     */
-    public $issue;
-    /**
-     * Score indicating the likelihood of the issue assignment. currently bounded
-     * on [0,1].
-     *
-     * @var 
-     */
-    public $score;
-    /**
-     * Immutable. Display name of the assigned issue. This field is set at time of
-     * analysis and immutable since then.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1alpha1IssueAssignment extends \Google\Model
     {
+        /**
+         * Immutable. Display name of the assigned issue. This field is set at time of
+         * analysis and immutable since then.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Resource name of the assigned issue.
+         *
+         * @var string
+         */
+        public $issue;
+        /**
+         * Score indicating the likelihood of the issue assignment. currently bounded
+         * on [0,1].
+         *
+         * @var 
+         */
+        public $score;
+        /**
+         * Immutable. Display name of the assigned issue. This field is set at time of
+         * analysis and immutable since then.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Resource name of the assigned issue.
+         *
+         * @param string $issue
+         */
+        public function setIssue($issue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIssue()
+        {
+        }
+        public function setScore($score)
+        {
+        }
+        public function getScore()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1IssueAssignment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Resource name of the assigned issue.
-     *
-     * @param string $issue
-     */
-    public function setIssue($issue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIssue()
-    {
-    }
-    public function setScore($score)
-    {
-    }
-    public function getScore()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1alpha1IssueAssignment extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1IssueAssignment
     {
     }
 }

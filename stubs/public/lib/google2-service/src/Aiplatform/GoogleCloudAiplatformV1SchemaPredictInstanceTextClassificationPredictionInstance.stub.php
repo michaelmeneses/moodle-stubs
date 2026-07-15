@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaPredictInstanceTextClassificationPredictionInstance extends \Google\Model
-{
-    /**
-     * The text snippet to make the predictions on.
-     *
-     * @var string
-     */
-    public $content;
-    /**
-     * The MIME type of the text snippet. The supported MIME types are listed
-     * below. - text/plain
-     *
-     * @var string
-     */
-    public $mimeType;
-    /**
-     * The text snippet to make the predictions on.
-     *
-     * @param string $content
-     */
-    public function setContent($content)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaPredictInstanceTextClassificationPredictionInstance extends \Google\Model
     {
+        /**
+         * The text snippet to make the predictions on.
+         *
+         * @var string
+         */
+        public $content;
+        /**
+         * The MIME type of the text snippet. The supported MIME types are listed
+         * below. - text/plain
+         *
+         * @var string
+         */
+        public $mimeType;
+        /**
+         * The text snippet to make the predictions on.
+         *
+         * @param string $content
+         */
+        public function setContent($content)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContent()
+        {
+        }
+        /**
+         * The MIME type of the text snippet. The supported MIME types are listed
+         * below. - text/plain
+         *
+         * @param string $mimeType
+         */
+        public function setMimeType($mimeType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMimeType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaPredictInstanceTextClassificationPredictionInstance registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContent()
-    {
-    }
-    /**
-     * The MIME type of the text snippet. The supported MIME types are listed
-     * below. - text/plain
-     *
-     * @param string $mimeType
-     */
-    public function setMimeType($mimeType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMimeType()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaPredictInstanceTextClassificationPredictionInstance extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaPredictInstanceTextClassificationPredictionInstance
     {
     }
 }

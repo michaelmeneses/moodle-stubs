@@ -21,111 +21,120 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class DeepLink extends \Google\Collection
-{
-    protected $collection_key = 'remarketingListIds';
-    /**
-     * The URL of the mobile app being linked to.
-     *
-     * @var string
-     */
-    public $appUrl;
-    /**
-     * The fallback URL. This URL will be served to users who do not have the
-     * mobile app installed.
-     *
-     * @var string
-     */
-    public $fallbackUrl;
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#deepLink".
-     *
-     * @var string
-     */
-    public $kind;
-    protected $mobileAppType = MobileApp::class;
-    protected $mobileAppDataType = '';
-    /**
-     * Ads served to users on these remarketing lists will use this deep link.
-     * Applicable when mobileApp.directory is APPLE_APP_STORE.
-     *
-     * @var string[]
-     */
-    public $remarketingListIds;
-    /**
-     * The URL of the mobile app being linked to.
-     *
-     * @param string $appUrl
-     */
-    public function setAppUrl($appUrl)
+namespace Google\Service\Dfareporting {
+    class DeepLink extends \Google\Collection
     {
+        protected $collection_key = 'remarketingListIds';
+        /**
+         * The URL of the mobile app being linked to.
+         *
+         * @var string
+         */
+        public $appUrl;
+        /**
+         * The fallback URL. This URL will be served to users who do not have the
+         * mobile app installed.
+         *
+         * @var string
+         */
+        public $fallbackUrl;
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#deepLink".
+         *
+         * @var string
+         */
+        public $kind;
+        protected $mobileAppType = MobileApp::class;
+        protected $mobileAppDataType = '';
+        /**
+         * Ads served to users on these remarketing lists will use this deep link.
+         * Applicable when mobileApp.directory is APPLE_APP_STORE.
+         *
+         * @var string[]
+         */
+        public $remarketingListIds;
+        /**
+         * The URL of the mobile app being linked to.
+         *
+         * @param string $appUrl
+         */
+        public function setAppUrl($appUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAppUrl()
+        {
+        }
+        /**
+         * The fallback URL. This URL will be served to users who do not have the
+         * mobile app installed.
+         *
+         * @param string $fallbackUrl
+         */
+        public function setFallbackUrl($fallbackUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFallbackUrl()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#deepLink".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The mobile app targeted by this deep link.
+         *
+         * @param MobileApp $mobileApp
+         */
+        public function setMobileApp(MobileApp $mobileApp)
+        {
+        }
+        /**
+         * @return MobileApp
+         */
+        public function getMobileApp()
+        {
+        }
+        /**
+         * Ads served to users on these remarketing lists will use this deep link.
+         * Applicable when mobileApp.directory is APPLE_APP_STORE.
+         *
+         * @param string[] $remarketingListIds
+         */
+        public function setRemarketingListIds($remarketingListIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRemarketingListIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\DeepLink registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAppUrl()
-    {
-    }
-    /**
-     * The fallback URL. This URL will be served to users who do not have the
-     * mobile app installed.
-     *
-     * @param string $fallbackUrl
-     */
-    public function setFallbackUrl($fallbackUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFallbackUrl()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#deepLink".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The mobile app targeted by this deep link.
-     *
-     * @param MobileApp $mobileApp
-     */
-    public function setMobileApp(MobileApp $mobileApp)
-    {
-    }
-    /**
-     * @return MobileApp
-     */
-    public function getMobileApp()
-    {
-    }
-    /**
-     * Ads served to users on these remarketing lists will use this deep link.
-     * Applicable when mobileApp.directory is APPLE_APP_STORE.
-     *
-     * @param string[] $remarketingListIds
-     */
-    public function setRemarketingListIds($remarketingListIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRemarketingListIds()
+    class Google_Service_Dfareporting_DeepLink extends \Google\Service\Dfareporting\DeepLink
     {
     }
 }

@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSVisionErrorAnalysisConfig extends \Google\Model
-{
-    /**
-     * Unspecified query type for model error analysis.
-     */
-    public const QUERY_TYPE_QUERY_TYPE_UNSPECIFIED = 'QUERY_TYPE_UNSPECIFIED';
-    /**
-     * Query similar samples across all classes in the dataset.
-     */
-    public const QUERY_TYPE_QUERY_TYPE_ALL_SIMILAR = 'QUERY_TYPE_ALL_SIMILAR';
-    /**
-     * Query similar samples from the same class of the input sample.
-     */
-    public const QUERY_TYPE_QUERY_TYPE_SAME_CLASS_SIMILAR = 'QUERY_TYPE_SAME_CLASS_SIMILAR';
-    /**
-     * Query dissimilar samples from the same class of the input sample.
-     */
-    public const QUERY_TYPE_QUERY_TYPE_SAME_CLASS_DISSIMILAR = 'QUERY_TYPE_SAME_CLASS_DISSIMILAR';
-    /**
-     * The number of query examples in error analysis.
-     *
-     * @var int
-     */
-    public $exampleCount;
-    /**
-     * The query type used in retrieval. The enum values are frozen in the
-     * foreseeable future.
-     *
-     * @var string
-     */
-    public $queryType;
-    /**
-     * The number of query examples in error analysis.
-     *
-     * @param int $exampleCount
-     */
-    public function setExampleCount($exampleCount)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSVisionErrorAnalysisConfig extends \Google\Model
     {
+        /**
+         * Unspecified query type for model error analysis.
+         */
+        public const QUERY_TYPE_QUERY_TYPE_UNSPECIFIED = 'QUERY_TYPE_UNSPECIFIED';
+        /**
+         * Query similar samples across all classes in the dataset.
+         */
+        public const QUERY_TYPE_QUERY_TYPE_ALL_SIMILAR = 'QUERY_TYPE_ALL_SIMILAR';
+        /**
+         * Query similar samples from the same class of the input sample.
+         */
+        public const QUERY_TYPE_QUERY_TYPE_SAME_CLASS_SIMILAR = 'QUERY_TYPE_SAME_CLASS_SIMILAR';
+        /**
+         * Query dissimilar samples from the same class of the input sample.
+         */
+        public const QUERY_TYPE_QUERY_TYPE_SAME_CLASS_DISSIMILAR = 'QUERY_TYPE_SAME_CLASS_DISSIMILAR';
+        /**
+         * The number of query examples in error analysis.
+         *
+         * @var int
+         */
+        public $exampleCount;
+        /**
+         * The query type used in retrieval. The enum values are frozen in the
+         * foreseeable future.
+         *
+         * @var string
+         */
+        public $queryType;
+        /**
+         * The number of query examples in error analysis.
+         *
+         * @param int $exampleCount
+         */
+        public function setExampleCount($exampleCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getExampleCount()
+        {
+        }
+        /**
+         * The query type used in retrieval. The enum values are frozen in the
+         * foreseeable future.
+         *
+         * Accepted values: QUERY_TYPE_UNSPECIFIED, QUERY_TYPE_ALL_SIMILAR,
+         * QUERY_TYPE_SAME_CLASS_SIMILAR, QUERY_TYPE_SAME_CLASS_DISSIMILAR
+         *
+         * @param self::QUERY_TYPE_* $queryType
+         */
+        public function setQueryType($queryType)
+        {
+        }
+        /**
+         * @return self::QUERY_TYPE_*
+         */
+        public function getQueryType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSVisionErrorAnalysisConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExampleCount()
-    {
-    }
-    /**
-     * The query type used in retrieval. The enum values are frozen in the
-     * foreseeable future.
-     *
-     * Accepted values: QUERY_TYPE_UNSPECIFIED, QUERY_TYPE_ALL_SIMILAR,
-     * QUERY_TYPE_SAME_CLASS_SIMILAR, QUERY_TYPE_SAME_CLASS_DISSIMILAR
-     *
-     * @param self::QUERY_TYPE_* $queryType
-     */
-    public function setQueryType($queryType)
-    {
-    }
-    /**
-     * @return self::QUERY_TYPE_*
-     */
-    public function getQueryType()
+    class Google_Service_CloudNaturalLanguage_XPSVisionErrorAnalysisConfig extends \Google\Service\CloudNaturalLanguage\XPSVisionErrorAnalysisConfig
     {
     }
 }

@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudVideoIntelligence;
-
-class GoogleCloudVideointelligenceV1beta2NormalizedBoundingBox extends \Google\Model
-{
-    /**
-     * Bottom Y coordinate.
-     *
-     * @var float
-     */
-    public $bottom;
-    /**
-     * Left X coordinate.
-     *
-     * @var float
-     */
-    public $left;
-    /**
-     * Right X coordinate.
-     *
-     * @var float
-     */
-    public $right;
-    /**
-     * Top Y coordinate.
-     *
-     * @var float
-     */
-    public $top;
-    /**
-     * Bottom Y coordinate.
-     *
-     * @param float $bottom
-     */
-    public function setBottom($bottom)
+namespace Google\Service\CloudVideoIntelligence {
+    class GoogleCloudVideointelligenceV1beta2NormalizedBoundingBox extends \Google\Model
     {
+        /**
+         * Bottom Y coordinate.
+         *
+         * @var float
+         */
+        public $bottom;
+        /**
+         * Left X coordinate.
+         *
+         * @var float
+         */
+        public $left;
+        /**
+         * Right X coordinate.
+         *
+         * @var float
+         */
+        public $right;
+        /**
+         * Top Y coordinate.
+         *
+         * @var float
+         */
+        public $top;
+        /**
+         * Bottom Y coordinate.
+         *
+         * @param float $bottom
+         */
+        public function setBottom($bottom)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getBottom()
+        {
+        }
+        /**
+         * Left X coordinate.
+         *
+         * @param float $left
+         */
+        public function setLeft($left)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getLeft()
+        {
+        }
+        /**
+         * Right X coordinate.
+         *
+         * @param float $right
+         */
+        public function setRight($right)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getRight()
+        {
+        }
+        /**
+         * Top Y coordinate.
+         *
+         * @param float $top
+         */
+        public function setTop($top)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getTop()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1beta2NormalizedBoundingBox registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBottom()
-    {
-    }
-    /**
-     * Left X coordinate.
-     *
-     * @param float $left
-     */
-    public function setLeft($left)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getLeft()
-    {
-    }
-    /**
-     * Right X coordinate.
-     *
-     * @param float $right
-     */
-    public function setRight($right)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getRight()
-    {
-    }
-    /**
-     * Top Y coordinate.
-     *
-     * @param float $top
-     */
-    public function setTop($top)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getTop()
+    class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1beta2NormalizedBoundingBox extends \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1beta2NormalizedBoundingBox
     {
     }
 }

@@ -21,112 +21,121 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudComposer;
-
-class WorkerResource extends \Google\Model
-{
-    /**
-     * Optional. CPU request and limit for a single Airflow worker replica.
-     *
-     * @var float
-     */
-    public $cpu;
-    /**
-     * Optional. Maximum number of workers for autoscaling.
-     *
-     * @var int
-     */
-    public $maxCount;
-    /**
-     * Optional. Memory (GB) request and limit for a single Airflow worker
-     * replica.
-     *
-     * @var float
-     */
-    public $memoryGb;
-    /**
-     * Optional. Minimum number of workers for autoscaling.
-     *
-     * @var int
-     */
-    public $minCount;
-    /**
-     * Optional. Storage (GB) request and limit for a single Airflow worker
-     * replica.
-     *
-     * @var float
-     */
-    public $storageGb;
-    /**
-     * Optional. CPU request and limit for a single Airflow worker replica.
-     *
-     * @param float $cpu
-     */
-    public function setCpu($cpu)
+namespace Google\Service\CloudComposer {
+    class WorkerResource extends \Google\Model
     {
+        /**
+         * Optional. CPU request and limit for a single Airflow worker replica.
+         *
+         * @var float
+         */
+        public $cpu;
+        /**
+         * Optional. Maximum number of workers for autoscaling.
+         *
+         * @var int
+         */
+        public $maxCount;
+        /**
+         * Optional. Memory (GB) request and limit for a single Airflow worker
+         * replica.
+         *
+         * @var float
+         */
+        public $memoryGb;
+        /**
+         * Optional. Minimum number of workers for autoscaling.
+         *
+         * @var int
+         */
+        public $minCount;
+        /**
+         * Optional. Storage (GB) request and limit for a single Airflow worker
+         * replica.
+         *
+         * @var float
+         */
+        public $storageGb;
+        /**
+         * Optional. CPU request and limit for a single Airflow worker replica.
+         *
+         * @param float $cpu
+         */
+        public function setCpu($cpu)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getCpu()
+        {
+        }
+        /**
+         * Optional. Maximum number of workers for autoscaling.
+         *
+         * @param int $maxCount
+         */
+        public function setMaxCount($maxCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxCount()
+        {
+        }
+        /**
+         * Optional. Memory (GB) request and limit for a single Airflow worker
+         * replica.
+         *
+         * @param float $memoryGb
+         */
+        public function setMemoryGb($memoryGb)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getMemoryGb()
+        {
+        }
+        /**
+         * Optional. Minimum number of workers for autoscaling.
+         *
+         * @param int $minCount
+         */
+        public function setMinCount($minCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMinCount()
+        {
+        }
+        /**
+         * Optional. Storage (GB) request and limit for a single Airflow worker
+         * replica.
+         *
+         * @param float $storageGb
+         */
+        public function setStorageGb($storageGb)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getStorageGb()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\CloudComposer\WorkerResource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCpu()
-    {
-    }
-    /**
-     * Optional. Maximum number of workers for autoscaling.
-     *
-     * @param int $maxCount
-     */
-    public function setMaxCount($maxCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxCount()
-    {
-    }
-    /**
-     * Optional. Memory (GB) request and limit for a single Airflow worker
-     * replica.
-     *
-     * @param float $memoryGb
-     */
-    public function setMemoryGb($memoryGb)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getMemoryGb()
-    {
-    }
-    /**
-     * Optional. Minimum number of workers for autoscaling.
-     *
-     * @param int $minCount
-     */
-    public function setMinCount($minCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMinCount()
-    {
-    }
-    /**
-     * Optional. Storage (GB) request and limit for a single Airflow worker
-     * replica.
-     *
-     * @param float $storageGb
-     */
-    public function setStorageGb($storageGb)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getStorageGb()
+    class Google_Service_CloudComposer_WorkerResource extends \Google\Service\CloudComposer\WorkerResource
     {
     }
 }

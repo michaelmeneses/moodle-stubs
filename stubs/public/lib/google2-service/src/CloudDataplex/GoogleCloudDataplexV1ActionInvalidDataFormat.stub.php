@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1ActionInvalidDataFormat extends \Google\Collection
-{
-    protected $collection_key = 'sampledDataLocations';
-    /**
-     * The expected data format of the entity.
-     *
-     * @var string
-     */
-    public $expectedFormat;
-    /**
-     * The new unexpected data format within the entity.
-     *
-     * @var string
-     */
-    public $newFormat;
-    /**
-     * The list of data locations sampled and used for format/schema inference.
-     *
-     * @var string[]
-     */
-    public $sampledDataLocations;
-    /**
-     * The expected data format of the entity.
-     *
-     * @param string $expectedFormat
-     */
-    public function setExpectedFormat($expectedFormat)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1ActionInvalidDataFormat extends \Google\Collection
     {
+        protected $collection_key = 'sampledDataLocations';
+        /**
+         * The expected data format of the entity.
+         *
+         * @var string
+         */
+        public $expectedFormat;
+        /**
+         * The new unexpected data format within the entity.
+         *
+         * @var string
+         */
+        public $newFormat;
+        /**
+         * The list of data locations sampled and used for format/schema inference.
+         *
+         * @var string[]
+         */
+        public $sampledDataLocations;
+        /**
+         * The expected data format of the entity.
+         *
+         * @param string $expectedFormat
+         */
+        public function setExpectedFormat($expectedFormat)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpectedFormat()
+        {
+        }
+        /**
+         * The new unexpected data format within the entity.
+         *
+         * @param string $newFormat
+         */
+        public function setNewFormat($newFormat)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNewFormat()
+        {
+        }
+        /**
+         * The list of data locations sampled and used for format/schema inference.
+         *
+         * @param string[] $sampledDataLocations
+         */
+        public function setSampledDataLocations($sampledDataLocations)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSampledDataLocations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1ActionInvalidDataFormat registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExpectedFormat()
-    {
-    }
-    /**
-     * The new unexpected data format within the entity.
-     *
-     * @param string $newFormat
-     */
-    public function setNewFormat($newFormat)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNewFormat()
-    {
-    }
-    /**
-     * The list of data locations sampled and used for format/schema inference.
-     *
-     * @param string[] $sampledDataLocations
-     */
-    public function setSampledDataLocations($sampledDataLocations)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSampledDataLocations()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1ActionInvalidDataFormat extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1ActionInvalidDataFormat
     {
     }
 }

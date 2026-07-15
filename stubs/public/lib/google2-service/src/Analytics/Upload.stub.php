@@ -21,151 +21,160 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics;
-
-class Upload extends \Google\Collection
-{
-    protected $collection_key = 'errors';
-    /**
-     * Account Id to which this upload belongs.
-     *
-     * @var string
-     */
-    public $accountId;
-    /**
-     * Custom data source Id to which this data import belongs.
-     *
-     * @var string
-     */
-    public $customDataSourceId;
-    /**
-     * Data import errors collection.
-     *
-     * @var string[]
-     */
-    public $errors;
-    /**
-     * A unique ID for this upload.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Resource type for Analytics upload.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Upload status. Possible values: PENDING, COMPLETED, FAILED, DELETING,
-     * DELETED.
-     *
-     * @var string
-     */
-    public $status;
-    /**
-     * Time this file is uploaded.
-     *
-     * @var string
-     */
-    public $uploadTime;
-    /**
-     * Account Id to which this upload belongs.
-     *
-     * @param string $accountId
-     */
-    public function setAccountId($accountId)
+namespace Google\Service\Analytics {
+    class Upload extends \Google\Collection
     {
+        protected $collection_key = 'errors';
+        /**
+         * Account Id to which this upload belongs.
+         *
+         * @var string
+         */
+        public $accountId;
+        /**
+         * Custom data source Id to which this data import belongs.
+         *
+         * @var string
+         */
+        public $customDataSourceId;
+        /**
+         * Data import errors collection.
+         *
+         * @var string[]
+         */
+        public $errors;
+        /**
+         * A unique ID for this upload.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Resource type for Analytics upload.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Upload status. Possible values: PENDING, COMPLETED, FAILED, DELETING,
+         * DELETED.
+         *
+         * @var string
+         */
+        public $status;
+        /**
+         * Time this file is uploaded.
+         *
+         * @var string
+         */
+        public $uploadTime;
+        /**
+         * Account Id to which this upload belongs.
+         *
+         * @param string $accountId
+         */
+        public function setAccountId($accountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccountId()
+        {
+        }
+        /**
+         * Custom data source Id to which this data import belongs.
+         *
+         * @param string $customDataSourceId
+         */
+        public function setCustomDataSourceId($customDataSourceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomDataSourceId()
+        {
+        }
+        /**
+         * Data import errors collection.
+         *
+         * @param string[] $errors
+         */
+        public function setErrors($errors)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getErrors()
+        {
+        }
+        /**
+         * A unique ID for this upload.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Resource type for Analytics upload.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Upload status. Possible values: PENDING, COMPLETED, FAILED, DELETING,
+         * DELETED.
+         *
+         * @param string $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStatus()
+        {
+        }
+        /**
+         * Time this file is uploaded.
+         *
+         * @param string $uploadTime
+         */
+        public function setUploadTime($uploadTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUploadTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Analytics\Upload registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountId()
-    {
-    }
-    /**
-     * Custom data source Id to which this data import belongs.
-     *
-     * @param string $customDataSourceId
-     */
-    public function setCustomDataSourceId($customDataSourceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCustomDataSourceId()
-    {
-    }
-    /**
-     * Data import errors collection.
-     *
-     * @param string[] $errors
-     */
-    public function setErrors($errors)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getErrors()
-    {
-    }
-    /**
-     * A unique ID for this upload.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Resource type for Analytics upload.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Upload status. Possible values: PENDING, COMPLETED, FAILED, DELETING,
-     * DELETED.
-     *
-     * @param string $status
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStatus()
-    {
-    }
-    /**
-     * Time this file is uploaded.
-     *
-     * @param string $uploadTime
-     */
-    public function setUploadTime($uploadTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUploadTime()
+    class Google_Service_Analytics_Upload extends \Google\Service\Analytics\Upload
     {
     }
 }

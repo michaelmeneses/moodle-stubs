@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1GraphSpecGraphElementTableLabelAndProperties extends \Google\Collection
-{
-    protected $collection_key = 'properties';
-    /**
-     * Required. The name of the label.
-     *
-     * @var string
-     */
-    public $label;
-    protected $propertiesType = GoogleCloudDatacatalogV1GraphSpecGraphElementTableProperty::class;
-    protected $propertiesDataType = 'array';
-    /**
-     * Required. The name of the label.
-     *
-     * @param string $label
-     */
-    public function setLabel($label)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1GraphSpecGraphElementTableLabelAndProperties extends \Google\Collection
     {
+        protected $collection_key = 'properties';
+        /**
+         * Required. The name of the label.
+         *
+         * @var string
+         */
+        public $label;
+        protected $propertiesType = GoogleCloudDatacatalogV1GraphSpecGraphElementTableProperty::class;
+        protected $propertiesDataType = 'array';
+        /**
+         * Required. The name of the label.
+         *
+         * @param string $label
+         */
+        public function setLabel($label)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLabel()
+        {
+        }
+        /**
+         * Optional. The properties associated with the label.
+         *
+         * @param GoogleCloudDatacatalogV1GraphSpecGraphElementTableProperty[] $properties
+         */
+        public function setProperties($properties)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1GraphSpecGraphElementTableProperty[]
+         */
+        public function getProperties()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1GraphSpecGraphElementTableLabelAndProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLabel()
-    {
-    }
-    /**
-     * Optional. The properties associated with the label.
-     *
-     * @param GoogleCloudDatacatalogV1GraphSpecGraphElementTableProperty[] $properties
-     */
-    public function setProperties($properties)
-    {
-    }
-    /**
-     * @return GoogleCloudDatacatalogV1GraphSpecGraphElementTableProperty[]
-     */
-    public function getProperties()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1GraphSpecGraphElementTableLabelAndProperties extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1GraphSpecGraphElementTableLabelAndProperties
     {
     }
 }

@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class Timestamp extends \Google\Model
-{
-    /**
-     * Non-negative fractions of a second at nanosecond resolution. Must be from 0
-     * to 999,999,999 inclusive.
-     *
-     * @var int
-     */
-    public $nanos;
-    /**
-     * Represents seconds of UTC time since Unix epoch.
-     *
-     * @var string
-     */
-    public $seconds;
-    /**
-     * Non-negative fractions of a second at nanosecond resolution. Must be from 0
-     * to 999,999,999 inclusive.
-     *
-     * @param int $nanos
-     */
-    public function setNanos($nanos)
+namespace Google\Service\AndroidPublisher {
+    class Timestamp extends \Google\Model
     {
+        /**
+         * Non-negative fractions of a second at nanosecond resolution. Must be from 0
+         * to 999,999,999 inclusive.
+         *
+         * @var int
+         */
+        public $nanos;
+        /**
+         * Represents seconds of UTC time since Unix epoch.
+         *
+         * @var string
+         */
+        public $seconds;
+        /**
+         * Non-negative fractions of a second at nanosecond resolution. Must be from 0
+         * to 999,999,999 inclusive.
+         *
+         * @param int $nanos
+         */
+        public function setNanos($nanos)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNanos()
+        {
+        }
+        /**
+         * Represents seconds of UTC time since Unix epoch.
+         *
+         * @param string $seconds
+         */
+        public function setSeconds($seconds)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSeconds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\AndroidPublisher\Timestamp registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNanos()
-    {
-    }
-    /**
-     * Represents seconds of UTC time since Unix epoch.
-     *
-     * @param string $seconds
-     */
-    public function setSeconds($seconds)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSeconds()
+    class Google_Service_AndroidPublisher_Timestamp extends \Google\Service\AndroidPublisher\Timestamp
     {
     }
 }

@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BeyondCorp;
-
-class GoogleCloudBeyondcorpAppconnectionsV1ResolveAppConnectionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $appConnectionDetailsType = GoogleCloudBeyondcorpAppconnectionsV1ResolveAppConnectionsResponseAppConnectionDetails::class;
-    protected $appConnectionDetailsDataType = 'array';
-    /**
-     * A token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * A list of locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * A list of BeyondCorp AppConnections with details in the project.
-     *
-     * @param GoogleCloudBeyondcorpAppconnectionsV1ResolveAppConnectionsResponseAppConnectionDetails[] $appConnectionDetails
-     */
-    public function setAppConnectionDetails($appConnectionDetails)
+namespace Google\Service\BeyondCorp {
+    class GoogleCloudBeyondcorpAppconnectionsV1ResolveAppConnectionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $appConnectionDetailsType = GoogleCloudBeyondcorpAppconnectionsV1ResolveAppConnectionsResponseAppConnectionDetails::class;
+        protected $appConnectionDetailsDataType = 'array';
+        /**
+         * A token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * A list of locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * A list of BeyondCorp AppConnections with details in the project.
+         *
+         * @param GoogleCloudBeyondcorpAppconnectionsV1ResolveAppConnectionsResponseAppConnectionDetails[] $appConnectionDetails
+         */
+        public function setAppConnectionDetails($appConnectionDetails)
+        {
+        }
+        /**
+         * @return GoogleCloudBeyondcorpAppconnectionsV1ResolveAppConnectionsResponseAppConnectionDetails[]
+         */
+        public function getAppConnectionDetails()
+        {
+        }
+        /**
+         * A token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * A list of locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudBeyondcorpAppconnectionsV1ResolveAppConnectionsResponseAppConnectionDetails[]
+     * Runtime class alias of \Google\Service\BeyondCorp\GoogleCloudBeyondcorpAppconnectionsV1ResolveAppConnectionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAppConnectionDetails()
-    {
-    }
-    /**
-     * A token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * A list of locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_BeyondCorp_GoogleCloudBeyondcorpAppconnectionsV1ResolveAppConnectionsResponse extends \Google\Service\BeyondCorp\GoogleCloudBeyondcorpAppconnectionsV1ResolveAppConnectionsResponse
     {
     }
 }

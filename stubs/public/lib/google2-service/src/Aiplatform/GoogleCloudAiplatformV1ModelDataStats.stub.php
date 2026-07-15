@@ -21,142 +21,151 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ModelDataStats extends \Google\Model
-{
-    /**
-     * Number of Annotations that are used for evaluating this Model. If the Model
-     * is evaluated multiple times, this will be the number of test Annotations
-     * used by the first evaluation. If the Model is not evaluated, the number is
-     * 0.
-     *
-     * @var string
-     */
-    public $testAnnotationsCount;
-    /**
-     * Number of DataItems that were used for evaluating this Model. If the Model
-     * is evaluated multiple times, this will be the number of test DataItems used
-     * by the first evaluation. If the Model is not evaluated, the number is 0.
-     *
-     * @var string
-     */
-    public $testDataItemsCount;
-    /**
-     * Number of Annotations that are used for training this Model.
-     *
-     * @var string
-     */
-    public $trainingAnnotationsCount;
-    /**
-     * Number of DataItems that were used for training this Model.
-     *
-     * @var string
-     */
-    public $trainingDataItemsCount;
-    /**
-     * Number of Annotations that are used for validating this Model during
-     * training.
-     *
-     * @var string
-     */
-    public $validationAnnotationsCount;
-    /**
-     * Number of DataItems that were used for validating this Model during
-     * training.
-     *
-     * @var string
-     */
-    public $validationDataItemsCount;
-    /**
-     * Number of Annotations that are used for evaluating this Model. If the Model
-     * is evaluated multiple times, this will be the number of test Annotations
-     * used by the first evaluation. If the Model is not evaluated, the number is
-     * 0.
-     *
-     * @param string $testAnnotationsCount
-     */
-    public function setTestAnnotationsCount($testAnnotationsCount)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ModelDataStats extends \Google\Model
     {
+        /**
+         * Number of Annotations that are used for evaluating this Model. If the Model
+         * is evaluated multiple times, this will be the number of test Annotations
+         * used by the first evaluation. If the Model is not evaluated, the number is
+         * 0.
+         *
+         * @var string
+         */
+        public $testAnnotationsCount;
+        /**
+         * Number of DataItems that were used for evaluating this Model. If the Model
+         * is evaluated multiple times, this will be the number of test DataItems used
+         * by the first evaluation. If the Model is not evaluated, the number is 0.
+         *
+         * @var string
+         */
+        public $testDataItemsCount;
+        /**
+         * Number of Annotations that are used for training this Model.
+         *
+         * @var string
+         */
+        public $trainingAnnotationsCount;
+        /**
+         * Number of DataItems that were used for training this Model.
+         *
+         * @var string
+         */
+        public $trainingDataItemsCount;
+        /**
+         * Number of Annotations that are used for validating this Model during
+         * training.
+         *
+         * @var string
+         */
+        public $validationAnnotationsCount;
+        /**
+         * Number of DataItems that were used for validating this Model during
+         * training.
+         *
+         * @var string
+         */
+        public $validationDataItemsCount;
+        /**
+         * Number of Annotations that are used for evaluating this Model. If the Model
+         * is evaluated multiple times, this will be the number of test Annotations
+         * used by the first evaluation. If the Model is not evaluated, the number is
+         * 0.
+         *
+         * @param string $testAnnotationsCount
+         */
+        public function setTestAnnotationsCount($testAnnotationsCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTestAnnotationsCount()
+        {
+        }
+        /**
+         * Number of DataItems that were used for evaluating this Model. If the Model
+         * is evaluated multiple times, this will be the number of test DataItems used
+         * by the first evaluation. If the Model is not evaluated, the number is 0.
+         *
+         * @param string $testDataItemsCount
+         */
+        public function setTestDataItemsCount($testDataItemsCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTestDataItemsCount()
+        {
+        }
+        /**
+         * Number of Annotations that are used for training this Model.
+         *
+         * @param string $trainingAnnotationsCount
+         */
+        public function setTrainingAnnotationsCount($trainingAnnotationsCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTrainingAnnotationsCount()
+        {
+        }
+        /**
+         * Number of DataItems that were used for training this Model.
+         *
+         * @param string $trainingDataItemsCount
+         */
+        public function setTrainingDataItemsCount($trainingDataItemsCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTrainingDataItemsCount()
+        {
+        }
+        /**
+         * Number of Annotations that are used for validating this Model during
+         * training.
+         *
+         * @param string $validationAnnotationsCount
+         */
+        public function setValidationAnnotationsCount($validationAnnotationsCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValidationAnnotationsCount()
+        {
+        }
+        /**
+         * Number of DataItems that were used for validating this Model during
+         * training.
+         *
+         * @param string $validationDataItemsCount
+         */
+        public function setValidationDataItemsCount($validationDataItemsCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValidationDataItemsCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ModelDataStats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTestAnnotationsCount()
-    {
-    }
-    /**
-     * Number of DataItems that were used for evaluating this Model. If the Model
-     * is evaluated multiple times, this will be the number of test DataItems used
-     * by the first evaluation. If the Model is not evaluated, the number is 0.
-     *
-     * @param string $testDataItemsCount
-     */
-    public function setTestDataItemsCount($testDataItemsCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTestDataItemsCount()
-    {
-    }
-    /**
-     * Number of Annotations that are used for training this Model.
-     *
-     * @param string $trainingAnnotationsCount
-     */
-    public function setTrainingAnnotationsCount($trainingAnnotationsCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTrainingAnnotationsCount()
-    {
-    }
-    /**
-     * Number of DataItems that were used for training this Model.
-     *
-     * @param string $trainingDataItemsCount
-     */
-    public function setTrainingDataItemsCount($trainingDataItemsCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTrainingDataItemsCount()
-    {
-    }
-    /**
-     * Number of Annotations that are used for validating this Model during
-     * training.
-     *
-     * @param string $validationAnnotationsCount
-     */
-    public function setValidationAnnotationsCount($validationAnnotationsCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValidationAnnotationsCount()
-    {
-    }
-    /**
-     * Number of DataItems that were used for validating this Model during
-     * training.
-     *
-     * @param string $validationDataItemsCount
-     */
-    public function setValidationDataItemsCount($validationDataItemsCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValidationDataItemsCount()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ModelDataStats extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ModelDataStats
     {
     }
 }

@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudWorkstations;
-
-class PortRange extends \Google\Model
-{
-    /**
-     * Required. Starting port number for the current range of ports. Valid ports
-     * are 22, 80, and ports within the range 1024-65535.
-     *
-     * @var int
-     */
-    public $first;
-    /**
-     * Required. Ending port number for the current range of ports. Valid ports
-     * are 22, 80, and ports within the range 1024-65535.
-     *
-     * @var int
-     */
-    public $last;
-    /**
-     * Required. Starting port number for the current range of ports. Valid ports
-     * are 22, 80, and ports within the range 1024-65535.
-     *
-     * @param int $first
-     */
-    public function setFirst($first)
+namespace Google\Service\CloudWorkstations {
+    class PortRange extends \Google\Model
     {
+        /**
+         * Required. Starting port number for the current range of ports. Valid ports
+         * are 22, 80, and ports within the range 1024-65535.
+         *
+         * @var int
+         */
+        public $first;
+        /**
+         * Required. Ending port number for the current range of ports. Valid ports
+         * are 22, 80, and ports within the range 1024-65535.
+         *
+         * @var int
+         */
+        public $last;
+        /**
+         * Required. Starting port number for the current range of ports. Valid ports
+         * are 22, 80, and ports within the range 1024-65535.
+         *
+         * @param int $first
+         */
+        public function setFirst($first)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getFirst()
+        {
+        }
+        /**
+         * Required. Ending port number for the current range of ports. Valid ports
+         * are 22, 80, and ports within the range 1024-65535.
+         *
+         * @param int $last
+         */
+        public function setLast($last)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getLast()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudWorkstations\PortRange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFirst()
-    {
-    }
-    /**
-     * Required. Ending port number for the current range of ports. Valid ports
-     * are 22, 80, and ports within the range 1024-65535.
-     *
-     * @param int $last
-     */
-    public function setLast($last)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getLast()
+    class Google_Service_CloudWorkstations_PortRange extends \Google\Service\CloudWorkstations\PortRange
     {
     }
 }

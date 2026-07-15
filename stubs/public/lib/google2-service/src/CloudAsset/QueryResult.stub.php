@@ -21,85 +21,94 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class QueryResult extends \Google\Collection
-{
-    protected $collection_key = 'rows';
-    /**
-     * Token to retrieve the next page of the results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Each row hold a query result in the format of `Struct`.
-     *
-     * @var array[]
-     */
-    public $rows;
-    protected $schemaType = TableSchema::class;
-    protected $schemaDataType = '';
-    /**
-     * Total rows of the whole query results.
-     *
-     * @var string
-     */
-    public $totalRows;
-    /**
-     * Token to retrieve the next page of the results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\CloudAsset {
+    class QueryResult extends \Google\Collection
     {
+        protected $collection_key = 'rows';
+        /**
+         * Token to retrieve the next page of the results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Each row hold a query result in the format of `Struct`.
+         *
+         * @var array[]
+         */
+        public $rows;
+        protected $schemaType = TableSchema::class;
+        protected $schemaDataType = '';
+        /**
+         * Total rows of the whole query results.
+         *
+         * @var string
+         */
+        public $totalRows;
+        /**
+         * Token to retrieve the next page of the results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Each row hold a query result in the format of `Struct`.
+         *
+         * @param array[] $rows
+         */
+        public function setRows($rows)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getRows()
+        {
+        }
+        /**
+         * Describes the format of the [rows].
+         *
+         * @param TableSchema $schema
+         */
+        public function setSchema(TableSchema $schema)
+        {
+        }
+        /**
+         * @return TableSchema
+         */
+        public function getSchema()
+        {
+        }
+        /**
+         * Total rows of the whole query results.
+         *
+         * @param string $totalRows
+         */
+        public function setTotalRows($totalRows)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalRows()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudAsset\QueryResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Each row hold a query result in the format of `Struct`.
-     *
-     * @param array[] $rows
-     */
-    public function setRows($rows)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getRows()
-    {
-    }
-    /**
-     * Describes the format of the [rows].
-     *
-     * @param TableSchema $schema
-     */
-    public function setSchema(TableSchema $schema)
-    {
-    }
-    /**
-     * @return TableSchema
-     */
-    public function getSchema()
-    {
-    }
-    /**
-     * Total rows of the whole query results.
-     *
-     * @param string $totalRows
-     */
-    public function setTotalRows($totalRows)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalRows()
+    class Google_Service_CloudAsset_QueryResult extends \Google\Service\CloudAsset\QueryResult
     {
     }
 }

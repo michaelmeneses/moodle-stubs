@@ -21,34 +21,44 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee\Resource;
-
-/**
- * The "deployments" collection of methods.
- * Typical usage is:
- *  <code>
- *   $apigeeService = new Google\Service\Apigee(...);
- *   $deployments = $apigeeService->organizations_deployments;
- *  </code>
- */
-class OrganizationsDeployments extends \Google\Service\Resource
-{
+namespace Google\Service\Apigee\Resource {
+    use Google\Service\Apigee\GoogleCloudApigeeV1ListDeploymentsResponse;
     /**
-     * Lists all deployments of API proxies or shared flows.
-     * (deployments.listOrganizationsDeployments)
-     *
-     * @param string $parent Required. Name of the organization for which to return
-     * deployment information in the following format: `organizations/{org}`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool sharedFlows Optional. Flag that specifies whether to return
-     * shared flow or API proxy deployments. Set to `true` to return shared flow
-     * deployments; set to `false` to return API proxy deployments. Defaults to
-     * `false`.
-     * @return GoogleCloudApigeeV1ListDeploymentsResponse
-     * @throws \Google\Service\Exception
+     * The "deployments" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $apigeeService = new Google\Service\Apigee(...);
+     *   $deployments = $apigeeService->organizations_deployments;
+     *  </code>
      */
-    public function listOrganizationsDeployments($parent, $optParams = [])
+    class OrganizationsDeployments extends \Google\Service\Resource
+    {
+        /**
+         * Lists all deployments of API proxies or shared flows.
+         * (deployments.listOrganizationsDeployments)
+         *
+         * @param string $parent Required. Name of the organization for which to return
+         * deployment information in the following format: `organizations/{org}`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool sharedFlows Optional. Flag that specifies whether to return
+         * shared flow or API proxy deployments. Set to `true` to return shared flow
+         * deployments; set to `false` to return API proxy deployments. Defaults to
+         * `false`.
+         * @return GoogleCloudApigeeV1ListDeploymentsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listOrganizationsDeployments($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Apigee\Resource\OrganizationsDeployments registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Apigee_Resource_OrganizationsDeployments extends \Google\Service\Apigee\Resource\OrganizationsDeployments
     {
     }
 }

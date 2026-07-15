@@ -21,206 +21,215 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseCloudMessaging;
-
-class Message extends \Google\Model
-{
-    protected $androidType = AndroidConfig::class;
-    protected $androidDataType = '';
-    protected $apnsType = ApnsConfig::class;
-    protected $apnsDataType = '';
-    /**
-     * Condition to send a message to, e.g. "'foo' in topics && 'bar' in topics".
-     *
-     * @var string
-     */
-    public $condition;
-    /**
-     * Input only. Arbitrary key/value payload, which must be UTF-8 encoded. The
-     * key should not be a reserved word ("from", "message_type", or any word
-     * starting with "google." or "gcm.notification."). When sending payloads
-     * containing only data fields to iOS devices, only normal priority (`"apns-
-     * priority": "5"`) is allowed in
-     * [`ApnsConfig`](/docs/reference/fcm/rest/v1/projects.messages#apnsconfig).
-     *
-     * @var string[]
-     */
-    public $data;
-    protected $fcmOptionsType = FcmOptions::class;
-    protected $fcmOptionsDataType = '';
-    /**
-     * Output Only. The identifier of the message sent, in the format of
-     * `projects/messages/{message_id}`.
-     *
-     * @var string
-     */
-    public $name;
-    protected $notificationType = Notification::class;
-    protected $notificationDataType = '';
-    /**
-     * Registration token to send a message to.
-     *
-     * @var string
-     */
-    public $token;
-    /**
-     * Topic name to send a message to, e.g. "weather". Note: "/topics/" prefix
-     * should not be provided.
-     *
-     * @var string
-     */
-    public $topic;
-    protected $webpushType = WebpushConfig::class;
-    protected $webpushDataType = '';
-    /**
-     * Input only. Android specific options for messages sent through [FCM
-     * connection server](https://goo.gl/4GLdUl).
-     *
-     * @param AndroidConfig $android
-     */
-    public function setAndroid(AndroidConfig $android)
+namespace Google\Service\FirebaseCloudMessaging {
+    class Message extends \Google\Model
     {
+        protected $androidType = AndroidConfig::class;
+        protected $androidDataType = '';
+        protected $apnsType = ApnsConfig::class;
+        protected $apnsDataType = '';
+        /**
+         * Condition to send a message to, e.g. "'foo' in topics && 'bar' in topics".
+         *
+         * @var string
+         */
+        public $condition;
+        /**
+         * Input only. Arbitrary key/value payload, which must be UTF-8 encoded. The
+         * key should not be a reserved word ("from", "message_type", or any word
+         * starting with "google." or "gcm.notification."). When sending payloads
+         * containing only data fields to iOS devices, only normal priority (`"apns-
+         * priority": "5"`) is allowed in
+         * [`ApnsConfig`](/docs/reference/fcm/rest/v1/projects.messages#apnsconfig).
+         *
+         * @var string[]
+         */
+        public $data;
+        protected $fcmOptionsType = FcmOptions::class;
+        protected $fcmOptionsDataType = '';
+        /**
+         * Output Only. The identifier of the message sent, in the format of
+         * `projects/messages/{message_id}`.
+         *
+         * @var string
+         */
+        public $name;
+        protected $notificationType = Notification::class;
+        protected $notificationDataType = '';
+        /**
+         * Registration token to send a message to.
+         *
+         * @var string
+         */
+        public $token;
+        /**
+         * Topic name to send a message to, e.g. "weather". Note: "/topics/" prefix
+         * should not be provided.
+         *
+         * @var string
+         */
+        public $topic;
+        protected $webpushType = WebpushConfig::class;
+        protected $webpushDataType = '';
+        /**
+         * Input only. Android specific options for messages sent through [FCM
+         * connection server](https://goo.gl/4GLdUl).
+         *
+         * @param AndroidConfig $android
+         */
+        public function setAndroid(AndroidConfig $android)
+        {
+        }
+        /**
+         * @return AndroidConfig
+         */
+        public function getAndroid()
+        {
+        }
+        /**
+         * Input only. [Apple Push Notification Service](https://goo.gl/MXRTPa)
+         * specific options.
+         *
+         * @param ApnsConfig $apns
+         */
+        public function setApns(ApnsConfig $apns)
+        {
+        }
+        /**
+         * @return ApnsConfig
+         */
+        public function getApns()
+        {
+        }
+        /**
+         * Condition to send a message to, e.g. "'foo' in topics && 'bar' in topics".
+         *
+         * @param string $condition
+         */
+        public function setCondition($condition)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCondition()
+        {
+        }
+        /**
+         * Input only. Arbitrary key/value payload, which must be UTF-8 encoded. The
+         * key should not be a reserved word ("from", "message_type", or any word
+         * starting with "google." or "gcm.notification."). When sending payloads
+         * containing only data fields to iOS devices, only normal priority (`"apns-
+         * priority": "5"`) is allowed in
+         * [`ApnsConfig`](/docs/reference/fcm/rest/v1/projects.messages#apnsconfig).
+         *
+         * @param string[] $data
+         */
+        public function setData($data)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getData()
+        {
+        }
+        /**
+         * Input only. Template for FCM SDK feature options to use across all
+         * platforms.
+         *
+         * @param FcmOptions $fcmOptions
+         */
+        public function setFcmOptions(FcmOptions $fcmOptions)
+        {
+        }
+        /**
+         * @return FcmOptions
+         */
+        public function getFcmOptions()
+        {
+        }
+        /**
+         * Output Only. The identifier of the message sent, in the format of
+         * `projects/messages/{message_id}`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Input only. Basic notification template to use across all platforms.
+         *
+         * @param Notification $notification
+         */
+        public function setNotification(Notification $notification)
+        {
+        }
+        /**
+         * @return Notification
+         */
+        public function getNotification()
+        {
+        }
+        /**
+         * Registration token to send a message to.
+         *
+         * @param string $token
+         */
+        public function setToken($token)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getToken()
+        {
+        }
+        /**
+         * Topic name to send a message to, e.g. "weather". Note: "/topics/" prefix
+         * should not be provided.
+         *
+         * @param string $topic
+         */
+        public function setTopic($topic)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTopic()
+        {
+        }
+        /**
+         * Input only. [Webpush protocol](https://tools.ietf.org/html/rfc8030)
+         * options.
+         *
+         * @param WebpushConfig $webpush
+         */
+        public function setWebpush(WebpushConfig $webpush)
+        {
+        }
+        /**
+         * @return WebpushConfig
+         */
+        public function getWebpush()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AndroidConfig
+     * Runtime class alias of \Google\Service\FirebaseCloudMessaging\Message registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAndroid()
-    {
-    }
-    /**
-     * Input only. [Apple Push Notification Service](https://goo.gl/MXRTPa)
-     * specific options.
-     *
-     * @param ApnsConfig $apns
-     */
-    public function setApns(ApnsConfig $apns)
-    {
-    }
-    /**
-     * @return ApnsConfig
-     */
-    public function getApns()
-    {
-    }
-    /**
-     * Condition to send a message to, e.g. "'foo' in topics && 'bar' in topics".
-     *
-     * @param string $condition
-     */
-    public function setCondition($condition)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCondition()
-    {
-    }
-    /**
-     * Input only. Arbitrary key/value payload, which must be UTF-8 encoded. The
-     * key should not be a reserved word ("from", "message_type", or any word
-     * starting with "google." or "gcm.notification."). When sending payloads
-     * containing only data fields to iOS devices, only normal priority (`"apns-
-     * priority": "5"`) is allowed in
-     * [`ApnsConfig`](/docs/reference/fcm/rest/v1/projects.messages#apnsconfig).
-     *
-     * @param string[] $data
-     */
-    public function setData($data)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getData()
-    {
-    }
-    /**
-     * Input only. Template for FCM SDK feature options to use across all
-     * platforms.
-     *
-     * @param FcmOptions $fcmOptions
-     */
-    public function setFcmOptions(FcmOptions $fcmOptions)
-    {
-    }
-    /**
-     * @return FcmOptions
-     */
-    public function getFcmOptions()
-    {
-    }
-    /**
-     * Output Only. The identifier of the message sent, in the format of
-     * `projects/messages/{message_id}`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Input only. Basic notification template to use across all platforms.
-     *
-     * @param Notification $notification
-     */
-    public function setNotification(Notification $notification)
-    {
-    }
-    /**
-     * @return Notification
-     */
-    public function getNotification()
-    {
-    }
-    /**
-     * Registration token to send a message to.
-     *
-     * @param string $token
-     */
-    public function setToken($token)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getToken()
-    {
-    }
-    /**
-     * Topic name to send a message to, e.g. "weather". Note: "/topics/" prefix
-     * should not be provided.
-     *
-     * @param string $topic
-     */
-    public function setTopic($topic)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTopic()
-    {
-    }
-    /**
-     * Input only. [Webpush protocol](https://tools.ietf.org/html/rfc8030)
-     * options.
-     *
-     * @param WebpushConfig $webpush
-     */
-    public function setWebpush(WebpushConfig $webpush)
-    {
-    }
-    /**
-     * @return WebpushConfig
-     */
-    public function getWebpush()
+    class Google_Service_FirebaseCloudMessaging_Message extends \Google\Service\FirebaseCloudMessaging\Message
     {
     }
 }

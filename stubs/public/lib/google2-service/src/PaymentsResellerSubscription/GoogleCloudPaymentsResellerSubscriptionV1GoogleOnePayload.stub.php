@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PaymentsResellerSubscription;
-
-class GoogleCloudPaymentsResellerSubscriptionV1GoogleOnePayload extends \Google\Collection
-{
-    protected $collection_key = 'campaigns';
-    /**
-     * @var string[]
-     */
-    public $campaigns;
-    /**
-     * @var string
-     */
-    public $offering;
-    /**
-     * @var string
-     */
-    public $salesChannel;
-    /**
-     * @var string
-     */
-    public $storeId;
-    /**
-     * @param string[]
-     */
-    public function setCampaigns($campaigns)
+namespace Google\Service\PaymentsResellerSubscription {
+    class GoogleCloudPaymentsResellerSubscriptionV1GoogleOnePayload extends \Google\Collection
     {
+        protected $collection_key = 'campaigns';
+        /**
+         * @var string[]
+         */
+        public $campaigns;
+        /**
+         * @var string
+         */
+        public $offering;
+        /**
+         * @var string
+         */
+        public $salesChannel;
+        /**
+         * @var string
+         */
+        public $storeId;
+        /**
+         * @param string[]
+         */
+        public function setCampaigns($campaigns)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCampaigns()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOffering($offering)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOffering()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSalesChannel($salesChannel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSalesChannel()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setStoreId($storeId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStoreId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1GoogleOnePayload registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCampaigns()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOffering($offering)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOffering()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSalesChannel($salesChannel)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSalesChannel()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setStoreId($storeId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStoreId()
+    class Google_Service_PaymentsResellerSubscription_GoogleCloudPaymentsResellerSubscriptionV1GoogleOnePayload extends \Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1GoogleOnePayload
     {
     }
 }

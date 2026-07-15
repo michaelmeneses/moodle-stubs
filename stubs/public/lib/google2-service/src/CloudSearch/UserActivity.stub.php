@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class UserActivity extends \Google\Model
-{
-    protected $queryActivityType = QueryActivity::class;
-    protected $queryActivityDataType = '';
-    /**
-     * Contains data which needs to be logged/removed.
-     *
-     * @param QueryActivity $queryActivity
-     */
-    public function setQueryActivity(QueryActivity $queryActivity)
+namespace Google\Service\CloudSearch {
+    class UserActivity extends \Google\Model
     {
+        protected $queryActivityType = QueryActivity::class;
+        protected $queryActivityDataType = '';
+        /**
+         * Contains data which needs to be logged/removed.
+         *
+         * @param QueryActivity $queryActivity
+         */
+        public function setQueryActivity(QueryActivity $queryActivity)
+        {
+        }
+        /**
+         * @return QueryActivity
+         */
+        public function getQueryActivity()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return QueryActivity
+     * Runtime class alias of \Google\Service\CloudSearch\UserActivity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getQueryActivity()
+    class Google_Service_CloudSearch_UserActivity extends \Google\Service\CloudSearch\UserActivity
     {
     }
 }

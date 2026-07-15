@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1Row extends \Google\Collection
-{
-    protected $collection_key = 'entries';
-    protected $annotationSpecType = GoogleCloudDatalabelingV1beta1AnnotationSpec::class;
-    protected $annotationSpecDataType = '';
-    protected $entriesType = GoogleCloudDatalabelingV1beta1ConfusionMatrixEntry::class;
-    protected $entriesDataType = 'array';
-    /**
-     * The annotation spec of the ground truth label for this row.
-     *
-     * @param GoogleCloudDatalabelingV1beta1AnnotationSpec $annotationSpec
-     */
-    public function setAnnotationSpec(GoogleCloudDatalabelingV1beta1AnnotationSpec $annotationSpec)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1Row extends \Google\Collection
     {
+        protected $collection_key = 'entries';
+        protected $annotationSpecType = GoogleCloudDatalabelingV1beta1AnnotationSpec::class;
+        protected $annotationSpecDataType = '';
+        protected $entriesType = GoogleCloudDatalabelingV1beta1ConfusionMatrixEntry::class;
+        protected $entriesDataType = 'array';
+        /**
+         * The annotation spec of the ground truth label for this row.
+         *
+         * @param GoogleCloudDatalabelingV1beta1AnnotationSpec $annotationSpec
+         */
+        public function setAnnotationSpec(GoogleCloudDatalabelingV1beta1AnnotationSpec $annotationSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1AnnotationSpec
+         */
+        public function getAnnotationSpec()
+        {
+        }
+        /**
+         * A list of the confusion matrix entries. One entry for each possible
+         * predicted label.
+         *
+         * @param GoogleCloudDatalabelingV1beta1ConfusionMatrixEntry[] $entries
+         */
+        public function setEntries($entries)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1ConfusionMatrixEntry[]
+         */
+        public function getEntries()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatalabelingV1beta1AnnotationSpec
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1Row registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotationSpec()
-    {
-    }
-    /**
-     * A list of the confusion matrix entries. One entry for each possible
-     * predicted label.
-     *
-     * @param GoogleCloudDatalabelingV1beta1ConfusionMatrixEntry[] $entries
-     */
-    public function setEntries($entries)
-    {
-    }
-    /**
-     * @return GoogleCloudDatalabelingV1beta1ConfusionMatrixEntry[]
-     */
-    public function getEntries()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1Row extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1Row
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1betaAccessMetricValue extends \Google\Model
-{
-    /**
-     * The measurement value. For example, this value may be '13'.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * The measurement value. For example, this value may be '13'.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1betaAccessMetricValue extends \Google\Model
     {
+        /**
+         * The measurement value. For example, this value may be '13'.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * The measurement value. For example, this value may be '13'.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaAccessMetricValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getValue()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1betaAccessMetricValue extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaAccessMetricValue
     {
     }
 }

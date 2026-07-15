@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class CategoryTargetingOptionDetails extends \Google\Model
-{
-    /**
-     * Output only. The display name of the category.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Output only. The display name of the category.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\DisplayVideo {
+    class CategoryTargetingOptionDetails extends \Google\Model
     {
+        /**
+         * Output only. The display name of the category.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Output only. The display name of the category.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\CategoryTargetingOptionDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
+    class Google_Service_DisplayVideo_CategoryTargetingOptionDetails extends \Google\Service\DisplayVideo\CategoryTargetingOptionDetails
     {
     }
 }

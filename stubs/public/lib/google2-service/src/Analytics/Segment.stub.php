@@ -21,188 +21,197 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics;
-
-class Segment extends \Google\Model
-{
-    /**
-     * Time the segment was created.
-     *
-     * @var string
-     */
-    public $created;
-    /**
-     * Segment definition.
-     *
-     * @var string
-     */
-    public $definition;
-    /**
-     * Segment ID.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Resource type for Analytics segment.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Segment name.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Segment ID. Can be used with the 'segment' parameter in Core Reporting API.
-     *
-     * @var string
-     */
-    public $segmentId;
-    /**
-     * Link for this segment.
-     *
-     * @var string
-     */
-    public $selfLink;
-    /**
-     * Type for a segment. Possible values are "BUILT_IN" or "CUSTOM".
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Time the segment was last modified.
-     *
-     * @var string
-     */
-    public $updated;
-    /**
-     * Time the segment was created.
-     *
-     * @param string $created
-     */
-    public function setCreated($created)
+namespace Google\Service\Analytics {
+    class Segment extends \Google\Model
     {
+        /**
+         * Time the segment was created.
+         *
+         * @var string
+         */
+        public $created;
+        /**
+         * Segment definition.
+         *
+         * @var string
+         */
+        public $definition;
+        /**
+         * Segment ID.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Resource type for Analytics segment.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Segment name.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Segment ID. Can be used with the 'segment' parameter in Core Reporting API.
+         *
+         * @var string
+         */
+        public $segmentId;
+        /**
+         * Link for this segment.
+         *
+         * @var string
+         */
+        public $selfLink;
+        /**
+         * Type for a segment. Possible values are "BUILT_IN" or "CUSTOM".
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Time the segment was last modified.
+         *
+         * @var string
+         */
+        public $updated;
+        /**
+         * Time the segment was created.
+         *
+         * @param string $created
+         */
+        public function setCreated($created)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreated()
+        {
+        }
+        /**
+         * Segment definition.
+         *
+         * @param string $definition
+         */
+        public function setDefinition($definition)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDefinition()
+        {
+        }
+        /**
+         * Segment ID.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Resource type for Analytics segment.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Segment name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Segment ID. Can be used with the 'segment' parameter in Core Reporting API.
+         *
+         * @param string $segmentId
+         */
+        public function setSegmentId($segmentId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSegmentId()
+        {
+        }
+        /**
+         * Link for this segment.
+         *
+         * @param string $selfLink
+         */
+        public function setSelfLink($selfLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelfLink()
+        {
+        }
+        /**
+         * Type for a segment. Possible values are "BUILT_IN" or "CUSTOM".
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
+        /**
+         * Time the segment was last modified.
+         *
+         * @param string $updated
+         */
+        public function setUpdated($updated)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdated()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Analytics\Segment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreated()
-    {
-    }
-    /**
-     * Segment definition.
-     *
-     * @param string $definition
-     */
-    public function setDefinition($definition)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDefinition()
-    {
-    }
-    /**
-     * Segment ID.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Resource type for Analytics segment.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Segment name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Segment ID. Can be used with the 'segment' parameter in Core Reporting API.
-     *
-     * @param string $segmentId
-     */
-    public function setSegmentId($segmentId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSegmentId()
-    {
-    }
-    /**
-     * Link for this segment.
-     *
-     * @param string $selfLink
-     */
-    public function setSelfLink($selfLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelfLink()
-    {
-    }
-    /**
-     * Type for a segment. Possible values are "BUILT_IN" or "CUSTOM".
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
-    {
-    }
-    /**
-     * Time the segment was last modified.
-     *
-     * @param string $updated
-     */
-    public function setUpdated($updated)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdated()
+    class Google_Service_Analytics_Segment extends \Google\Service\Analytics\Segment
     {
     }
 }

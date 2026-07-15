@@ -21,89 +21,98 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1HttpOperation extends \Google\Model
-{
-    /**
-     * Method unspecified.
-     */
-    public const METHOD_METHOD_UNSPECIFIED = 'METHOD_UNSPECIFIED';
-    /**
-     * Get Operation type.
-     */
-    public const METHOD_GET = 'GET';
-    /**
-     * Put Operation type.
-     */
-    public const METHOD_PUT = 'PUT';
-    /**
-     * Post Operation type.
-     */
-    public const METHOD_POST = 'POST';
-    /**
-     * Delete Operation type.
-     */
-    public const METHOD_DELETE = 'DELETE';
-    /**
-     * Options Operation type.
-     */
-    public const METHOD_OPTIONS = 'OPTIONS';
-    /**
-     * Head Operation type.
-     */
-    public const METHOD_HEAD = 'HEAD';
-    /**
-     * Patch Operation type.
-     */
-    public const METHOD_PATCH = 'PATCH';
-    /**
-     * Trace Operation type.
-     */
-    public const METHOD_TRACE = 'TRACE';
-    /**
-     * Optional. Operation method Note: Even though this field is optional, it is
-     * required for CreateApiOperation API and we will fail the request if not
-     * provided.
-     *
-     * @var string
-     */
-    public $method;
-    protected $pathType = GoogleCloudApihubV1Path::class;
-    protected $pathDataType = '';
-    /**
-     * Optional. Operation method Note: Even though this field is optional, it is
-     * required for CreateApiOperation API and we will fail the request if not
-     * provided.
-     *
-     * Accepted values: METHOD_UNSPECIFIED, GET, PUT, POST, DELETE, OPTIONS, HEAD,
-     * PATCH, TRACE
-     *
-     * @param self::METHOD_* $method
-     */
-    public function setMethod($method)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1HttpOperation extends \Google\Model
     {
+        /**
+         * Method unspecified.
+         */
+        public const METHOD_METHOD_UNSPECIFIED = 'METHOD_UNSPECIFIED';
+        /**
+         * Get Operation type.
+         */
+        public const METHOD_GET = 'GET';
+        /**
+         * Put Operation type.
+         */
+        public const METHOD_PUT = 'PUT';
+        /**
+         * Post Operation type.
+         */
+        public const METHOD_POST = 'POST';
+        /**
+         * Delete Operation type.
+         */
+        public const METHOD_DELETE = 'DELETE';
+        /**
+         * Options Operation type.
+         */
+        public const METHOD_OPTIONS = 'OPTIONS';
+        /**
+         * Head Operation type.
+         */
+        public const METHOD_HEAD = 'HEAD';
+        /**
+         * Patch Operation type.
+         */
+        public const METHOD_PATCH = 'PATCH';
+        /**
+         * Trace Operation type.
+         */
+        public const METHOD_TRACE = 'TRACE';
+        /**
+         * Optional. Operation method Note: Even though this field is optional, it is
+         * required for CreateApiOperation API and we will fail the request if not
+         * provided.
+         *
+         * @var string
+         */
+        public $method;
+        protected $pathType = GoogleCloudApihubV1Path::class;
+        protected $pathDataType = '';
+        /**
+         * Optional. Operation method Note: Even though this field is optional, it is
+         * required for CreateApiOperation API and we will fail the request if not
+         * provided.
+         *
+         * Accepted values: METHOD_UNSPECIFIED, GET, PUT, POST, DELETE, OPTIONS, HEAD,
+         * PATCH, TRACE
+         *
+         * @param self::METHOD_* $method
+         */
+        public function setMethod($method)
+        {
+        }
+        /**
+         * @return self::METHOD_*
+         */
+        public function getMethod()
+        {
+        }
+        /**
+         * Optional. The path details for the Operation. Note: Even though this field
+         * is optional, it is required for CreateApiOperation API and we will fail the
+         * request if not provided.
+         *
+         * @param GoogleCloudApihubV1Path $path
+         */
+        public function setPath(GoogleCloudApihubV1Path $path)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1Path
+         */
+        public function getPath()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::METHOD_*
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1HttpOperation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMethod()
-    {
-    }
-    /**
-     * Optional. The path details for the Operation. Note: Even though this field
-     * is optional, it is required for CreateApiOperation API and we will fail the
-     * request if not provided.
-     *
-     * @param GoogleCloudApihubV1Path $path
-     */
-    public function setPath(GoogleCloudApihubV1Path $path)
-    {
-    }
-    /**
-     * @return GoogleCloudApihubV1Path
-     */
-    public function getPath()
+    class Google_Service_APIhub_GoogleCloudApihubV1HttpOperation extends \Google\Service\APIhub\GoogleCloudApihubV1HttpOperation
     {
     }
 }

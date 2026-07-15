@@ -21,31 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform\Resource;
-
-/**
- * The "annotationSpecs" collection of methods.
- * Typical usage is:
- *  <code>
- *   $aiplatformService = new Google\Service\Aiplatform(...);
- *   $annotationSpecs = $aiplatformService->projects_locations_datasets_annotationSpecs;
- *  </code>
- */
-class ProjectsLocationsDatasetsAnnotationSpecs extends \Google\Service\Resource
-{
+namespace Google\Service\Aiplatform\Resource {
+    use Google\Service\Aiplatform\GoogleCloudAiplatformV1AnnotationSpec;
     /**
-     * Gets an AnnotationSpec. (annotationSpecs.get)
-     *
-     * @param string $name Required. The name of the AnnotationSpec resource.
-     * Format: `projects/{project}/locations/{location}/datasets/{dataset}/annotatio
-     * nSpecs/{annotation_spec}`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string readMask Mask specifying which fields to read.
-     * @return GoogleCloudAiplatformV1AnnotationSpec
-     * @throws \Google\Service\Exception
+     * The "annotationSpecs" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $aiplatformService = new Google\Service\Aiplatform(...);
+     *   $annotationSpecs = $aiplatformService->projects_locations_datasets_annotationSpecs;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class ProjectsLocationsDatasetsAnnotationSpecs extends \Google\Service\Resource
+    {
+        /**
+         * Gets an AnnotationSpec. (annotationSpecs.get)
+         *
+         * @param string $name Required. The name of the AnnotationSpec resource.
+         * Format: `projects/{project}/locations/{location}/datasets/{dataset}/annotatio
+         * nSpecs/{annotation_spec}`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string readMask Mask specifying which fields to read.
+         * @return GoogleCloudAiplatformV1AnnotationSpec
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Aiplatform\Resource\ProjectsLocationsDatasetsAnnotationSpecs registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Aiplatform_Resource_ProjectsLocationsDatasetsAnnotationSpecs extends \Google\Service\Aiplatform\Resource\ProjectsLocationsDatasetsAnnotationSpecs
     {
     }
 }

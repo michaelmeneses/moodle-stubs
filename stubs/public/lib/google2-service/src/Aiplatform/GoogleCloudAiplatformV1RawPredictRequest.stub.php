@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1RawPredictRequest extends \Google\Model
-{
-    protected $httpBodyType = GoogleApiHttpBody::class;
-    protected $httpBodyDataType = '';
-    /**
-     * The prediction input. Supports HTTP headers and arbitrary data payload. A
-     * DeployedModel may have an upper limit on the number of instances it
-     * supports per request. When this limit it is exceeded for an AutoML model,
-     * the RawPredict method returns an error. When this limit is exceeded for a
-     * custom-trained model, the behavior varies depending on the model. You can
-     * specify the schema for each instance in the
-     * predict_schemata.instance_schema_uri field when you create a Model. This
-     * schema applies when you deploy the `Model` as a `DeployedModel` to an
-     * Endpoint and use the `RawPredict` method.
-     *
-     * @param GoogleApiHttpBody $httpBody
-     */
-    public function setHttpBody(GoogleApiHttpBody $httpBody)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1RawPredictRequest extends \Google\Model
     {
+        protected $httpBodyType = GoogleApiHttpBody::class;
+        protected $httpBodyDataType = '';
+        /**
+         * The prediction input. Supports HTTP headers and arbitrary data payload. A
+         * DeployedModel may have an upper limit on the number of instances it
+         * supports per request. When this limit it is exceeded for an AutoML model,
+         * the RawPredict method returns an error. When this limit is exceeded for a
+         * custom-trained model, the behavior varies depending on the model. You can
+         * specify the schema for each instance in the
+         * predict_schemata.instance_schema_uri field when you create a Model. This
+         * schema applies when you deploy the `Model` as a `DeployedModel` to an
+         * Endpoint and use the `RawPredict` method.
+         *
+         * @param GoogleApiHttpBody $httpBody
+         */
+        public function setHttpBody(GoogleApiHttpBody $httpBody)
+        {
+        }
+        /**
+         * @return GoogleApiHttpBody
+         */
+        public function getHttpBody()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleApiHttpBody
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1RawPredictRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHttpBody()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1RawPredictRequest extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1RawPredictRequest
     {
     }
 }

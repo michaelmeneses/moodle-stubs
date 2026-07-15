@@ -21,135 +21,144 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OnDemandScanning;
-
-class Command extends \Google\Collection
-{
-    protected $collection_key = 'waitFor';
-    /**
-     * Command-line arguments used when executing this command.
-     *
-     * @var string[]
-     */
-    public $args;
-    /**
-     * Working directory (relative to project source root) used when running this
-     * command.
-     *
-     * @var string
-     */
-    public $dir;
-    /**
-     * Environment variables set before running this command.
-     *
-     * @var string[]
-     */
-    public $env;
-    /**
-     * Optional unique identifier for this command, used in wait_for to reference
-     * this command as a dependency.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Required. Name of the command, as presented on the command line, or if the
-     * command is packaged as a Docker container, as presented to `docker pull`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The ID(s) of the command(s) that this command depends on.
-     *
-     * @var string[]
-     */
-    public $waitFor;
-    /**
-     * Command-line arguments used when executing this command.
-     *
-     * @param string[] $args
-     */
-    public function setArgs($args)
+namespace Google\Service\OnDemandScanning {
+    class Command extends \Google\Collection
     {
+        protected $collection_key = 'waitFor';
+        /**
+         * Command-line arguments used when executing this command.
+         *
+         * @var string[]
+         */
+        public $args;
+        /**
+         * Working directory (relative to project source root) used when running this
+         * command.
+         *
+         * @var string
+         */
+        public $dir;
+        /**
+         * Environment variables set before running this command.
+         *
+         * @var string[]
+         */
+        public $env;
+        /**
+         * Optional unique identifier for this command, used in wait_for to reference
+         * this command as a dependency.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Required. Name of the command, as presented on the command line, or if the
+         * command is packaged as a Docker container, as presented to `docker pull`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The ID(s) of the command(s) that this command depends on.
+         *
+         * @var string[]
+         */
+        public $waitFor;
+        /**
+         * Command-line arguments used when executing this command.
+         *
+         * @param string[] $args
+         */
+        public function setArgs($args)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getArgs()
+        {
+        }
+        /**
+         * Working directory (relative to project source root) used when running this
+         * command.
+         *
+         * @param string $dir
+         */
+        public function setDir($dir)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDir()
+        {
+        }
+        /**
+         * Environment variables set before running this command.
+         *
+         * @param string[] $env
+         */
+        public function setEnv($env)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getEnv()
+        {
+        }
+        /**
+         * Optional unique identifier for this command, used in wait_for to reference
+         * this command as a dependency.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Required. Name of the command, as presented on the command line, or if the
+         * command is packaged as a Docker container, as presented to `docker pull`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The ID(s) of the command(s) that this command depends on.
+         *
+         * @param string[] $waitFor
+         */
+        public function setWaitFor($waitFor)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getWaitFor()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\OnDemandScanning\Command registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArgs()
-    {
-    }
-    /**
-     * Working directory (relative to project source root) used when running this
-     * command.
-     *
-     * @param string $dir
-     */
-    public function setDir($dir)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDir()
-    {
-    }
-    /**
-     * Environment variables set before running this command.
-     *
-     * @param string[] $env
-     */
-    public function setEnv($env)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getEnv()
-    {
-    }
-    /**
-     * Optional unique identifier for this command, used in wait_for to reference
-     * this command as a dependency.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Required. Name of the command, as presented on the command line, or if the
-     * command is packaged as a Docker container, as presented to `docker pull`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The ID(s) of the command(s) that this command depends on.
-     *
-     * @param string[] $waitFor
-     */
-    public function setWaitFor($waitFor)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getWaitFor()
+    class Google_Service_OnDemandScanning_Command extends \Google\Service\OnDemandScanning\Command
     {
     }
 }

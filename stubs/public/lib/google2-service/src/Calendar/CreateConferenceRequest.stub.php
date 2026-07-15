@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Calendar;
-
-class CreateConferenceRequest extends \Google\Model
-{
-    protected $conferenceSolutionKeyType = ConferenceSolutionKey::class;
-    protected $conferenceSolutionKeyDataType = '';
-    /**
-     * The client-generated unique ID for this request. Clients should regenerate
-     * this ID for every new request. If an ID provided is the same as for the
-     * previous request, the request is ignored.
-     *
-     * @var string
-     */
-    public $requestId;
-    protected $statusType = ConferenceRequestStatus::class;
-    protected $statusDataType = '';
-    /**
-     * The conference solution, such as Hangouts or Google Meet.
-     *
-     * @param ConferenceSolutionKey $conferenceSolutionKey
-     */
-    public function setConferenceSolutionKey(ConferenceSolutionKey $conferenceSolutionKey)
+namespace Google\Service\Calendar {
+    class CreateConferenceRequest extends \Google\Model
     {
+        protected $conferenceSolutionKeyType = ConferenceSolutionKey::class;
+        protected $conferenceSolutionKeyDataType = '';
+        /**
+         * The client-generated unique ID for this request. Clients should regenerate
+         * this ID for every new request. If an ID provided is the same as for the
+         * previous request, the request is ignored.
+         *
+         * @var string
+         */
+        public $requestId;
+        protected $statusType = ConferenceRequestStatus::class;
+        protected $statusDataType = '';
+        /**
+         * The conference solution, such as Hangouts or Google Meet.
+         *
+         * @param ConferenceSolutionKey $conferenceSolutionKey
+         */
+        public function setConferenceSolutionKey(ConferenceSolutionKey $conferenceSolutionKey)
+        {
+        }
+        /**
+         * @return ConferenceSolutionKey
+         */
+        public function getConferenceSolutionKey()
+        {
+        }
+        /**
+         * The client-generated unique ID for this request. Clients should regenerate
+         * this ID for every new request. If an ID provided is the same as for the
+         * previous request, the request is ignored.
+         *
+         * @param string $requestId
+         */
+        public function setRequestId($requestId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestId()
+        {
+        }
+        /**
+         * The status of the conference create request.
+         *
+         * @param ConferenceRequestStatus $status
+         */
+        public function setStatus(ConferenceRequestStatus $status)
+        {
+        }
+        /**
+         * @return ConferenceRequestStatus
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ConferenceSolutionKey
+     * Runtime class alias of \Google\Service\Calendar\CreateConferenceRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConferenceSolutionKey()
-    {
-    }
-    /**
-     * The client-generated unique ID for this request. Clients should regenerate
-     * this ID for every new request. If an ID provided is the same as for the
-     * previous request, the request is ignored.
-     *
-     * @param string $requestId
-     */
-    public function setRequestId($requestId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestId()
-    {
-    }
-    /**
-     * The status of the conference create request.
-     *
-     * @param ConferenceRequestStatus $status
-     */
-    public function setStatus(ConferenceRequestStatus $status)
-    {
-    }
-    /**
-     * @return ConferenceRequestStatus
-     */
-    public function getStatus()
+    class Google_Service_Calendar_CreateConferenceRequest extends \Google\Service\Calendar\CreateConferenceRequest
     {
     }
 }

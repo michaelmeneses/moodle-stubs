@@ -21,137 +21,146 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AppHub;
-
-class ServiceProjectAttachment extends \Google\Model
-{
-    /**
-     * Unspecified state.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * The ServiceProjectAttachment is being created.
-     */
-    public const STATE_CREATING = 'CREATING';
-    /**
-     * The ServiceProjectAttachment is ready. This means Services and Workloads
-     * under the corresponding ServiceProjectAttachment is ready for registration.
-     */
-    public const STATE_ACTIVE = 'ACTIVE';
-    /**
-     * The ServiceProjectAttachment is being deleted.
-     */
-    public const STATE_DELETING = 'DELETING';
-    /**
-     * Output only. Create time.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Identifier. The resource name of a ServiceProjectAttachment. Format:
-     * `"projects/{host-project-
-     * id}/locations/global/serviceProjectAttachments/{service-project-id}."`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. Immutable. Service project name in the format: `"projects/abc"`
-     * or `"projects/123"`. As input, project name with either project id or
-     * number are accepted. As output, this field will contain project number.
-     *
-     * @var string
-     */
-    public $serviceProject;
-    /**
-     * Output only. ServiceProjectAttachment state.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Output only. A globally unique identifier (in UUID4 format) for the
-     * `ServiceProjectAttachment`.
-     *
-     * @var string
-     */
-    public $uid;
-    /**
-     * Output only. Create time.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\AppHub {
+    class ServiceProjectAttachment extends \Google\Model
     {
+        /**
+         * Unspecified state.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * The ServiceProjectAttachment is being created.
+         */
+        public const STATE_CREATING = 'CREATING';
+        /**
+         * The ServiceProjectAttachment is ready. This means Services and Workloads
+         * under the corresponding ServiceProjectAttachment is ready for registration.
+         */
+        public const STATE_ACTIVE = 'ACTIVE';
+        /**
+         * The ServiceProjectAttachment is being deleted.
+         */
+        public const STATE_DELETING = 'DELETING';
+        /**
+         * Output only. Create time.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Identifier. The resource name of a ServiceProjectAttachment. Format:
+         * `"projects/{host-project-
+         * id}/locations/global/serviceProjectAttachments/{service-project-id}."`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. Immutable. Service project name in the format: `"projects/abc"`
+         * or `"projects/123"`. As input, project name with either project id or
+         * number are accepted. As output, this field will contain project number.
+         *
+         * @var string
+         */
+        public $serviceProject;
+        /**
+         * Output only. ServiceProjectAttachment state.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Output only. A globally unique identifier (in UUID4 format) for the
+         * `ServiceProjectAttachment`.
+         *
+         * @var string
+         */
+        public $uid;
+        /**
+         * Output only. Create time.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Identifier. The resource name of a ServiceProjectAttachment. Format:
+         * `"projects/{host-project-
+         * id}/locations/global/serviceProjectAttachments/{service-project-id}."`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Required. Immutable. Service project name in the format: `"projects/abc"`
+         * or `"projects/123"`. As input, project name with either project id or
+         * number are accepted. As output, this field will contain project number.
+         *
+         * @param string $serviceProject
+         */
+        public function setServiceProject($serviceProject)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceProject()
+        {
+        }
+        /**
+         * Output only. ServiceProjectAttachment state.
+         *
+         * Accepted values: STATE_UNSPECIFIED, CREATING, ACTIVE, DELETING
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Output only. A globally unique identifier (in UUID4 format) for the
+         * `ServiceProjectAttachment`.
+         *
+         * @param string $uid
+         */
+        public function setUid($uid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUid()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AppHub\ServiceProjectAttachment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Identifier. The resource name of a ServiceProjectAttachment. Format:
-     * `"projects/{host-project-
-     * id}/locations/global/serviceProjectAttachments/{service-project-id}."`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Required. Immutable. Service project name in the format: `"projects/abc"`
-     * or `"projects/123"`. As input, project name with either project id or
-     * number are accepted. As output, this field will contain project number.
-     *
-     * @param string $serviceProject
-     */
-    public function setServiceProject($serviceProject)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceProject()
-    {
-    }
-    /**
-     * Output only. ServiceProjectAttachment state.
-     *
-     * Accepted values: STATE_UNSPECIFIED, CREATING, ACTIVE, DELETING
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Output only. A globally unique identifier (in UUID4 format) for the
-     * `ServiceProjectAttachment`.
-     *
-     * @param string $uid
-     */
-    public function setUid($uid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUid()
+    class Google_Service_AppHub_ServiceProjectAttachment extends \Google\Service\AppHub\ServiceProjectAttachment
     {
     }
 }

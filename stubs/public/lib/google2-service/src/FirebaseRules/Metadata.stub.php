@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseRules;
-
-class Metadata extends \Google\Collection
-{
-    protected $collection_key = 'services';
-    /**
-     * Services that this ruleset has declarations for (e.g., "cloud.firestore").
-     * There may be 0+ of these.
-     *
-     * @var string[]
-     */
-    public $services;
-    /**
-     * Services that this ruleset has declarations for (e.g., "cloud.firestore").
-     * There may be 0+ of these.
-     *
-     * @param string[] $services
-     */
-    public function setServices($services)
+namespace Google\Service\FirebaseRules {
+    class Metadata extends \Google\Collection
     {
+        protected $collection_key = 'services';
+        /**
+         * Services that this ruleset has declarations for (e.g., "cloud.firestore").
+         * There may be 0+ of these.
+         *
+         * @var string[]
+         */
+        public $services;
+        /**
+         * Services that this ruleset has declarations for (e.g., "cloud.firestore").
+         * There may be 0+ of these.
+         *
+         * @param string[] $services
+         */
+        public function setServices($services)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getServices()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\FirebaseRules\Metadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getServices()
+    class Google_Service_FirebaseRules_Metadata extends \Google\Service\FirebaseRules\Metadata
     {
     }
 }

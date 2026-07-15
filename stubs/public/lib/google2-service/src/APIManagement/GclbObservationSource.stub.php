@@ -21,27 +21,36 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIManagement;
-
-class GclbObservationSource extends \Google\Collection
-{
-    protected $collection_key = 'pscNetworkConfigs';
-    protected $pscNetworkConfigsType = GclbObservationSourcePscNetworkConfig::class;
-    protected $pscNetworkConfigsDataType = 'array';
-    /**
-     * Required. The VPC networks where traffic will be observed. All load
-     * balancers within this network will be observed. Currently, this is limited
-     * to only one network.
-     *
-     * @param GclbObservationSourcePscNetworkConfig[] $pscNetworkConfigs
-     */
-    public function setPscNetworkConfigs($pscNetworkConfigs)
+namespace Google\Service\APIManagement {
+    class GclbObservationSource extends \Google\Collection
     {
+        protected $collection_key = 'pscNetworkConfigs';
+        protected $pscNetworkConfigsType = GclbObservationSourcePscNetworkConfig::class;
+        protected $pscNetworkConfigsDataType = 'array';
+        /**
+         * Required. The VPC networks where traffic will be observed. All load
+         * balancers within this network will be observed. Currently, this is limited
+         * to only one network.
+         *
+         * @param GclbObservationSourcePscNetworkConfig[] $pscNetworkConfigs
+         */
+        public function setPscNetworkConfigs($pscNetworkConfigs)
+        {
+        }
+        /**
+         * @return GclbObservationSourcePscNetworkConfig[]
+         */
+        public function getPscNetworkConfigs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GclbObservationSourcePscNetworkConfig[]
+     * Runtime class alias of \Google\Service\APIManagement\GclbObservationSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPscNetworkConfigs()
+    class Google_Service_APIManagement_GclbObservationSource extends \Google\Service\APIManagement\GclbObservationSource
     {
     }
 }

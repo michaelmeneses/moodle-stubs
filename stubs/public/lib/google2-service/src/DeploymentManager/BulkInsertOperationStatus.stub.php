@@ -21,125 +21,134 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DeploymentManager;
-
-class BulkInsertOperationStatus extends \Google\Model
-{
-    public const STATUS_STATUS_UNSPECIFIED = 'STATUS_UNSPECIFIED';
-    /**
-     * Rolling forward - creating VMs.
-     */
-    public const STATUS_CREATING = 'CREATING';
-    /**
-     * Rolling back - cleaning up after an error.
-     */
-    public const STATUS_ROLLING_BACK = 'ROLLING_BACK';
-    /**
-     * Done
-     */
-    public const STATUS_DONE = 'DONE';
-    /**
-     * [Output Only] Count of VMs successfully created so far.
-     *
-     * @var int
-     */
-    public $createdVmCount;
-    /**
-     * [Output Only] Count of VMs that got deleted during rollback.
-     *
-     * @var int
-     */
-    public $deletedVmCount;
-    /**
-     * [Output Only] Count of VMs that started creating but encountered an error.
-     *
-     * @var int
-     */
-    public $failedToCreateVmCount;
-    /**
-     * [Output Only] Creation status of BulkInsert operation - information if the
-     * flow is rolling forward or rolling back.
-     *
-     * @var string
-     */
-    public $status;
-    /**
-     * [Output Only] Count of VMs originally planned to be created.
-     *
-     * @var int
-     */
-    public $targetVmCount;
-    /**
-     * [Output Only] Count of VMs successfully created so far.
-     *
-     * @param int $createdVmCount
-     */
-    public function setCreatedVmCount($createdVmCount)
+namespace Google\Service\DeploymentManager {
+    class BulkInsertOperationStatus extends \Google\Model
     {
+        public const STATUS_STATUS_UNSPECIFIED = 'STATUS_UNSPECIFIED';
+        /**
+         * Rolling forward - creating VMs.
+         */
+        public const STATUS_CREATING = 'CREATING';
+        /**
+         * Rolling back - cleaning up after an error.
+         */
+        public const STATUS_ROLLING_BACK = 'ROLLING_BACK';
+        /**
+         * Done
+         */
+        public const STATUS_DONE = 'DONE';
+        /**
+         * [Output Only] Count of VMs successfully created so far.
+         *
+         * @var int
+         */
+        public $createdVmCount;
+        /**
+         * [Output Only] Count of VMs that got deleted during rollback.
+         *
+         * @var int
+         */
+        public $deletedVmCount;
+        /**
+         * [Output Only] Count of VMs that started creating but encountered an error.
+         *
+         * @var int
+         */
+        public $failedToCreateVmCount;
+        /**
+         * [Output Only] Creation status of BulkInsert operation - information if the
+         * flow is rolling forward or rolling back.
+         *
+         * @var string
+         */
+        public $status;
+        /**
+         * [Output Only] Count of VMs originally planned to be created.
+         *
+         * @var int
+         */
+        public $targetVmCount;
+        /**
+         * [Output Only] Count of VMs successfully created so far.
+         *
+         * @param int $createdVmCount
+         */
+        public function setCreatedVmCount($createdVmCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCreatedVmCount()
+        {
+        }
+        /**
+         * [Output Only] Count of VMs that got deleted during rollback.
+         *
+         * @param int $deletedVmCount
+         */
+        public function setDeletedVmCount($deletedVmCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getDeletedVmCount()
+        {
+        }
+        /**
+         * [Output Only] Count of VMs that started creating but encountered an error.
+         *
+         * @param int $failedToCreateVmCount
+         */
+        public function setFailedToCreateVmCount($failedToCreateVmCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getFailedToCreateVmCount()
+        {
+        }
+        /**
+         * [Output Only] Creation status of BulkInsert operation - information if the
+         * flow is rolling forward or rolling back.
+         *
+         * Accepted values: STATUS_UNSPECIFIED, CREATING, ROLLING_BACK, DONE
+         *
+         * @param self::STATUS_* $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return self::STATUS_*
+         */
+        public function getStatus()
+        {
+        }
+        /**
+         * [Output Only] Count of VMs originally planned to be created.
+         *
+         * @param int $targetVmCount
+         */
+        public function setTargetVmCount($targetVmCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTargetVmCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\DeploymentManager\BulkInsertOperationStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreatedVmCount()
-    {
-    }
-    /**
-     * [Output Only] Count of VMs that got deleted during rollback.
-     *
-     * @param int $deletedVmCount
-     */
-    public function setDeletedVmCount($deletedVmCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getDeletedVmCount()
-    {
-    }
-    /**
-     * [Output Only] Count of VMs that started creating but encountered an error.
-     *
-     * @param int $failedToCreateVmCount
-     */
-    public function setFailedToCreateVmCount($failedToCreateVmCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getFailedToCreateVmCount()
-    {
-    }
-    /**
-     * [Output Only] Creation status of BulkInsert operation - information if the
-     * flow is rolling forward or rolling back.
-     *
-     * Accepted values: STATUS_UNSPECIFIED, CREATING, ROLLING_BACK, DONE
-     *
-     * @param self::STATUS_* $status
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return self::STATUS_*
-     */
-    public function getStatus()
-    {
-    }
-    /**
-     * [Output Only] Count of VMs originally planned to be created.
-     *
-     * @param int $targetVmCount
-     */
-    public function setTargetVmCount($targetVmCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTargetVmCount()
+    class Google_Service_DeploymentManager_BulkInsertOperationStatus extends \Google\Service\DeploymentManager\BulkInsertOperationStatus
     {
     }
 }

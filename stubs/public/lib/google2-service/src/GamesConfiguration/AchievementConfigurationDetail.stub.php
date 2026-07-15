@@ -21,122 +21,131 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GamesConfiguration;
-
-class AchievementConfigurationDetail extends \Google\Model
-{
-    protected $descriptionType = LocalizedStringBundle::class;
-    protected $descriptionDataType = '';
-    /**
-     * The icon url of this achievement. Writes to this field are ignored.
-     *
-     * @var string
-     */
-    public $iconUrl;
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `gamesConfiguration#achievementConfigurationDetail`.
-     *
-     * @var string
-     */
-    public $kind;
-    protected $nameType = LocalizedStringBundle::class;
-    protected $nameDataType = '';
-    /**
-     * Point value for the achievement.
-     *
-     * @var int
-     */
-    public $pointValue;
-    /**
-     * The sort rank of this achievement. Writes to this field are ignored.
-     *
-     * @var int
-     */
-    public $sortRank;
-    /**
-     * Localized strings for the achievement description.
-     *
-     * @param LocalizedStringBundle $description
-     */
-    public function setDescription(LocalizedStringBundle $description)
+namespace Google\Service\GamesConfiguration {
+    class AchievementConfigurationDetail extends \Google\Model
     {
+        protected $descriptionType = LocalizedStringBundle::class;
+        protected $descriptionDataType = '';
+        /**
+         * The icon url of this achievement. Writes to this field are ignored.
+         *
+         * @var string
+         */
+        public $iconUrl;
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `gamesConfiguration#achievementConfigurationDetail`.
+         *
+         * @var string
+         */
+        public $kind;
+        protected $nameType = LocalizedStringBundle::class;
+        protected $nameDataType = '';
+        /**
+         * Point value for the achievement.
+         *
+         * @var int
+         */
+        public $pointValue;
+        /**
+         * The sort rank of this achievement. Writes to this field are ignored.
+         *
+         * @var int
+         */
+        public $sortRank;
+        /**
+         * Localized strings for the achievement description.
+         *
+         * @param LocalizedStringBundle $description
+         */
+        public function setDescription(LocalizedStringBundle $description)
+        {
+        }
+        /**
+         * @return LocalizedStringBundle
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * The icon url of this achievement. Writes to this field are ignored.
+         *
+         * @param string $iconUrl
+         */
+        public function setIconUrl($iconUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIconUrl()
+        {
+        }
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `gamesConfiguration#achievementConfigurationDetail`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Localized strings for the achievement name.
+         *
+         * @param LocalizedStringBundle $name
+         */
+        public function setName(LocalizedStringBundle $name)
+        {
+        }
+        /**
+         * @return LocalizedStringBundle
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Point value for the achievement.
+         *
+         * @param int $pointValue
+         */
+        public function setPointValue($pointValue)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPointValue()
+        {
+        }
+        /**
+         * The sort rank of this achievement. Writes to this field are ignored.
+         *
+         * @param int $sortRank
+         */
+        public function setSortRank($sortRank)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSortRank()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LocalizedStringBundle
+     * Runtime class alias of \Google\Service\GamesConfiguration\AchievementConfigurationDetail registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * The icon url of this achievement. Writes to this field are ignored.
-     *
-     * @param string $iconUrl
-     */
-    public function setIconUrl($iconUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIconUrl()
-    {
-    }
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `gamesConfiguration#achievementConfigurationDetail`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Localized strings for the achievement name.
-     *
-     * @param LocalizedStringBundle $name
-     */
-    public function setName(LocalizedStringBundle $name)
-    {
-    }
-    /**
-     * @return LocalizedStringBundle
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Point value for the achievement.
-     *
-     * @param int $pointValue
-     */
-    public function setPointValue($pointValue)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPointValue()
-    {
-    }
-    /**
-     * The sort rank of this achievement. Writes to this field are ignored.
-     *
-     * @param int $sortRank
-     */
-    public function setSortRank($sortRank)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSortRank()
+    class Google_Service_GamesConfiguration_AchievementConfigurationDetail extends \Google\Service\GamesConfiguration\AchievementConfigurationDetail
     {
     }
 }

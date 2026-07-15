@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Digitalassetlinks;
-
-class AndroidAppAsset extends \Google\Model
-{
-    protected $certificateType = CertificateInfo::class;
-    protected $certificateDataType = '';
-    /**
-     * Android App assets are naturally identified by their Java package name. For
-     * example, the Google Maps app uses the package name
-     * `com.google.android.apps.maps`. REQUIRED
-     *
-     * @var string
-     */
-    public $packageName;
-    /**
-     * Because there is no global enforcement of package name uniqueness, we also
-     * require a signing certificate, which in combination with the package name
-     * uniquely identifies an app. Some apps' signing keys are rotated, so they
-     * may be signed by different keys over time. We treat these as distinct
-     * assets, since we use (package name, cert) as the unique ID. This should not
-     * normally pose any problems as both versions of the app will make the same
-     * or similar statements. Other assets making statements about the app will
-     * have to be updated when a key is rotated, however. (Note that the syntaxes
-     * for publishing and querying for statements contain syntactic sugar to
-     * easily let you specify apps that are known by multiple certificates.)
-     * REQUIRED
-     *
-     * @param CertificateInfo $certificate
-     */
-    public function setCertificate(CertificateInfo $certificate)
+namespace Google\Service\Digitalassetlinks {
+    class AndroidAppAsset extends \Google\Model
     {
+        protected $certificateType = CertificateInfo::class;
+        protected $certificateDataType = '';
+        /**
+         * Android App assets are naturally identified by their Java package name. For
+         * example, the Google Maps app uses the package name
+         * `com.google.android.apps.maps`. REQUIRED
+         *
+         * @var string
+         */
+        public $packageName;
+        /**
+         * Because there is no global enforcement of package name uniqueness, we also
+         * require a signing certificate, which in combination with the package name
+         * uniquely identifies an app. Some apps' signing keys are rotated, so they
+         * may be signed by different keys over time. We treat these as distinct
+         * assets, since we use (package name, cert) as the unique ID. This should not
+         * normally pose any problems as both versions of the app will make the same
+         * or similar statements. Other assets making statements about the app will
+         * have to be updated when a key is rotated, however. (Note that the syntaxes
+         * for publishing and querying for statements contain syntactic sugar to
+         * easily let you specify apps that are known by multiple certificates.)
+         * REQUIRED
+         *
+         * @param CertificateInfo $certificate
+         */
+        public function setCertificate(CertificateInfo $certificate)
+        {
+        }
+        /**
+         * @return CertificateInfo
+         */
+        public function getCertificate()
+        {
+        }
+        /**
+         * Android App assets are naturally identified by their Java package name. For
+         * example, the Google Maps app uses the package name
+         * `com.google.android.apps.maps`. REQUIRED
+         *
+         * @param string $packageName
+         */
+        public function setPackageName($packageName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPackageName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CertificateInfo
+     * Runtime class alias of \Google\Service\Digitalassetlinks\AndroidAppAsset registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCertificate()
-    {
-    }
-    /**
-     * Android App assets are naturally identified by their Java package name. For
-     * example, the Google Maps app uses the package name
-     * `com.google.android.apps.maps`. REQUIRED
-     *
-     * @param string $packageName
-     */
-    public function setPackageName($packageName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPackageName()
+    class Google_Service_Digitalassetlinks_AndroidAppAsset extends \Google\Service\Digitalassetlinks\AndroidAppAsset
     {
     }
 }

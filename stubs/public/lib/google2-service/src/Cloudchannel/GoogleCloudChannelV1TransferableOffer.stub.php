@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1TransferableOffer extends \Google\Model
-{
-    protected $offerType = GoogleCloudChannelV1Offer::class;
-    protected $offerDataType = '';
-    /**
-     * Optional. Price reference ID for the offer. Only for offers that require
-     * additional price information. Used to guarantee that the pricing is
-     * consistent between quoting the offer and placing the order.
-     *
-     * @var string
-     */
-    public $priceReferenceId;
-    /**
-     * Offer with parameter constraints updated to allow the Transfer.
-     *
-     * @param GoogleCloudChannelV1Offer $offer
-     */
-    public function setOffer(GoogleCloudChannelV1Offer $offer)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1TransferableOffer extends \Google\Model
     {
+        protected $offerType = GoogleCloudChannelV1Offer::class;
+        protected $offerDataType = '';
+        /**
+         * Optional. Price reference ID for the offer. Only for offers that require
+         * additional price information. Used to guarantee that the pricing is
+         * consistent between quoting the offer and placing the order.
+         *
+         * @var string
+         */
+        public $priceReferenceId;
+        /**
+         * Offer with parameter constraints updated to allow the Transfer.
+         *
+         * @param GoogleCloudChannelV1Offer $offer
+         */
+        public function setOffer(GoogleCloudChannelV1Offer $offer)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1Offer
+         */
+        public function getOffer()
+        {
+        }
+        /**
+         * Optional. Price reference ID for the offer. Only for offers that require
+         * additional price information. Used to guarantee that the pricing is
+         * consistent between quoting the offer and placing the order.
+         *
+         * @param string $priceReferenceId
+         */
+        public function setPriceReferenceId($priceReferenceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPriceReferenceId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudChannelV1Offer
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1TransferableOffer registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOffer()
-    {
-    }
-    /**
-     * Optional. Price reference ID for the offer. Only for offers that require
-     * additional price information. Used to guarantee that the pricing is
-     * consistent between quoting the offer and placing the order.
-     *
-     * @param string $priceReferenceId
-     */
-    public function setPriceReferenceId($priceReferenceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPriceReferenceId()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1TransferableOffer extends \Google\Service\Cloudchannel\GoogleCloudChannelV1TransferableOffer
     {
     }
 }

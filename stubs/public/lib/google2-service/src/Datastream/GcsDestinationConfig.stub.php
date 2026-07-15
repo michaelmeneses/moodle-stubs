@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class GcsDestinationConfig extends \Google\Model
-{
-    protected $avroFileFormatType = AvroFileFormat::class;
-    protected $avroFileFormatDataType = '';
-    /**
-     * The maximum duration for which new events are added before a file is closed
-     * and a new file is created. Values within the range of 15-60 seconds are
-     * allowed.
-     *
-     * @var string
-     */
-    public $fileRotationInterval;
-    /**
-     * The maximum file size to be saved in the bucket.
-     *
-     * @var int
-     */
-    public $fileRotationMb;
-    protected $jsonFileFormatType = JsonFileFormat::class;
-    protected $jsonFileFormatDataType = '';
-    /**
-     * Path inside the Cloud Storage bucket to write data to.
-     *
-     * @var string
-     */
-    public $path;
-    /**
-     * AVRO file format configuration.
-     *
-     * @param AvroFileFormat $avroFileFormat
-     */
-    public function setAvroFileFormat(AvroFileFormat $avroFileFormat)
+namespace Google\Service\Datastream {
+    class GcsDestinationConfig extends \Google\Model
     {
+        protected $avroFileFormatType = AvroFileFormat::class;
+        protected $avroFileFormatDataType = '';
+        /**
+         * The maximum duration for which new events are added before a file is closed
+         * and a new file is created. Values within the range of 15-60 seconds are
+         * allowed.
+         *
+         * @var string
+         */
+        public $fileRotationInterval;
+        /**
+         * The maximum file size to be saved in the bucket.
+         *
+         * @var int
+         */
+        public $fileRotationMb;
+        protected $jsonFileFormatType = JsonFileFormat::class;
+        protected $jsonFileFormatDataType = '';
+        /**
+         * Path inside the Cloud Storage bucket to write data to.
+         *
+         * @var string
+         */
+        public $path;
+        /**
+         * AVRO file format configuration.
+         *
+         * @param AvroFileFormat $avroFileFormat
+         */
+        public function setAvroFileFormat(AvroFileFormat $avroFileFormat)
+        {
+        }
+        /**
+         * @return AvroFileFormat
+         */
+        public function getAvroFileFormat()
+        {
+        }
+        /**
+         * The maximum duration for which new events are added before a file is closed
+         * and a new file is created. Values within the range of 15-60 seconds are
+         * allowed.
+         *
+         * @param string $fileRotationInterval
+         */
+        public function setFileRotationInterval($fileRotationInterval)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFileRotationInterval()
+        {
+        }
+        /**
+         * The maximum file size to be saved in the bucket.
+         *
+         * @param int $fileRotationMb
+         */
+        public function setFileRotationMb($fileRotationMb)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getFileRotationMb()
+        {
+        }
+        /**
+         * JSON file format configuration.
+         *
+         * @param JsonFileFormat $jsonFileFormat
+         */
+        public function setJsonFileFormat(JsonFileFormat $jsonFileFormat)
+        {
+        }
+        /**
+         * @return JsonFileFormat
+         */
+        public function getJsonFileFormat()
+        {
+        }
+        /**
+         * Path inside the Cloud Storage bucket to write data to.
+         *
+         * @param string $path
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AvroFileFormat
+     * Runtime class alias of \Google\Service\Datastream\GcsDestinationConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAvroFileFormat()
-    {
-    }
-    /**
-     * The maximum duration for which new events are added before a file is closed
-     * and a new file is created. Values within the range of 15-60 seconds are
-     * allowed.
-     *
-     * @param string $fileRotationInterval
-     */
-    public function setFileRotationInterval($fileRotationInterval)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFileRotationInterval()
-    {
-    }
-    /**
-     * The maximum file size to be saved in the bucket.
-     *
-     * @param int $fileRotationMb
-     */
-    public function setFileRotationMb($fileRotationMb)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getFileRotationMb()
-    {
-    }
-    /**
-     * JSON file format configuration.
-     *
-     * @param JsonFileFormat $jsonFileFormat
-     */
-    public function setJsonFileFormat(JsonFileFormat $jsonFileFormat)
-    {
-    }
-    /**
-     * @return JsonFileFormat
-     */
-    public function getJsonFileFormat()
-    {
-    }
-    /**
-     * Path inside the Cloud Storage bucket to write data to.
-     *
-     * @param string $path
-     */
-    public function setPath($path)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPath()
+    class Google_Service_Datastream_GcsDestinationConfig extends \Google\Service\Datastream\GcsDestinationConfig
     {
     }
 }

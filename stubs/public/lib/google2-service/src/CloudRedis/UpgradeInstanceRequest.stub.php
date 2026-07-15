@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRedis;
-
-class UpgradeInstanceRequest extends \Google\Model
-{
-    /**
-     * Required. Specifies the target version of Redis software to upgrade to.
-     *
-     * @var string
-     */
-    public $redisVersion;
-    /**
-     * Required. Specifies the target version of Redis software to upgrade to.
-     *
-     * @param string $redisVersion
-     */
-    public function setRedisVersion($redisVersion)
+namespace Google\Service\CloudRedis {
+    class UpgradeInstanceRequest extends \Google\Model
     {
+        /**
+         * Required. Specifies the target version of Redis software to upgrade to.
+         *
+         * @var string
+         */
+        public $redisVersion;
+        /**
+         * Required. Specifies the target version of Redis software to upgrade to.
+         *
+         * @param string $redisVersion
+         */
+        public function setRedisVersion($redisVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRedisVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRedis\UpgradeInstanceRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRedisVersion()
+    class Google_Service_CloudRedis_UpgradeInstanceRequest extends \Google\Service\CloudRedis\UpgradeInstanceRequest
     {
     }
 }

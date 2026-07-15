@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3beta1SessionInfo extends \Google\Model
-{
-    /**
-     * Optional for WebhookRequest. Optional for WebhookResponse. All parameters
-     * collected from forms and intents during the session. Parameters can be
-     * created, updated, or removed by the webhook. To remove a parameter from the
-     * session, the webhook should explicitly set the parameter value to null in
-     * WebhookResponse. The map is keyed by parameters' display names.
-     *
-     * @var array[]
-     */
-    public $parameters;
-    /**
-     * Always present for WebhookRequest. Ignored for WebhookResponse. The unique
-     * identifier of the session. This field can be used by the webhook to
-     * identify a session. Format: `projects//locations//agents//sessions/` or
-     * `projects//locations//agents//environments//sessions/` if environment is
-     * specified.
-     *
-     * @var string
-     */
-    public $session;
-    /**
-     * Optional for WebhookRequest. Optional for WebhookResponse. All parameters
-     * collected from forms and intents during the session. Parameters can be
-     * created, updated, or removed by the webhook. To remove a parameter from the
-     * session, the webhook should explicitly set the parameter value to null in
-     * WebhookResponse. The map is keyed by parameters' display names.
-     *
-     * @param array[] $parameters
-     */
-    public function setParameters($parameters)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3beta1SessionInfo extends \Google\Model
     {
+        /**
+         * Optional for WebhookRequest. Optional for WebhookResponse. All parameters
+         * collected from forms and intents during the session. Parameters can be
+         * created, updated, or removed by the webhook. To remove a parameter from the
+         * session, the webhook should explicitly set the parameter value to null in
+         * WebhookResponse. The map is keyed by parameters' display names.
+         *
+         * @var array[]
+         */
+        public $parameters;
+        /**
+         * Always present for WebhookRequest. Ignored for WebhookResponse. The unique
+         * identifier of the session. This field can be used by the webhook to
+         * identify a session. Format: `projects//locations//agents//sessions/` or
+         * `projects//locations//agents//environments//sessions/` if environment is
+         * specified.
+         *
+         * @var string
+         */
+        public $session;
+        /**
+         * Optional for WebhookRequest. Optional for WebhookResponse. All parameters
+         * collected from forms and intents during the session. Parameters can be
+         * created, updated, or removed by the webhook. To remove a parameter from the
+         * session, the webhook should explicitly set the parameter value to null in
+         * WebhookResponse. The map is keyed by parameters' display names.
+         *
+         * @param array[] $parameters
+         */
+        public function setParameters($parameters)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getParameters()
+        {
+        }
+        /**
+         * Always present for WebhookRequest. Ignored for WebhookResponse. The unique
+         * identifier of the session. This field can be used by the webhook to
+         * identify a session. Format: `projects//locations//agents//sessions/` or
+         * `projects//locations//agents//environments//sessions/` if environment is
+         * specified.
+         *
+         * @param string $session
+         */
+        public function setSession($session)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSession()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3beta1SessionInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getParameters()
-    {
-    }
-    /**
-     * Always present for WebhookRequest. Ignored for WebhookResponse. The unique
-     * identifier of the session. This field can be used by the webhook to
-     * identify a session. Format: `projects//locations//agents//sessions/` or
-     * `projects//locations//agents//environments//sessions/` if environment is
-     * specified.
-     *
-     * @param string $session
-     */
-    public function setSession($session)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSession()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3beta1SessionInfo extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3beta1SessionInfo
     {
     }
 }

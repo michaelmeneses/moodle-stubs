@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMMigrationService;
-
-class OSDisk extends \Google\Model
-{
-    /**
-     * The disk's full name.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The disk's size in GB.
-     *
-     * @var int
-     */
-    public $sizeGb;
-    /**
-     * The disk's type.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The disk's full name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\VMMigrationService {
+    class OSDisk extends \Google\Model
     {
+        /**
+         * The disk's full name.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The disk's size in GB.
+         *
+         * @var int
+         */
+        public $sizeGb;
+        /**
+         * The disk's type.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The disk's full name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The disk's size in GB.
+         *
+         * @param int $sizeGb
+         */
+        public function setSizeGb($sizeGb)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSizeGb()
+        {
+        }
+        /**
+         * The disk's type.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\VMMigrationService\OSDisk registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * The disk's size in GB.
-     *
-     * @param int $sizeGb
-     */
-    public function setSizeGb($sizeGb)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSizeGb()
-    {
-    }
-    /**
-     * The disk's type.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_VMMigrationService_OSDisk extends \Google\Service\VMMigrationService\OSDisk
     {
     }
 }

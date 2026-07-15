@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class Row extends \Google\Collection
-{
-    protected $collection_key = 'values';
-    protected $valuesType = Value::class;
-    protected $valuesDataType = 'array';
-    /**
-     * The values for the row.
-     *
-     * @param Value[] $values
-     */
-    public function setValues($values)
+namespace Google\Service\SQLAdmin {
+    class Row extends \Google\Collection
     {
+        protected $collection_key = 'values';
+        protected $valuesType = Value::class;
+        protected $valuesDataType = 'array';
+        /**
+         * The values for the row.
+         *
+         * @param Value[] $values
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return Value[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Value[]
+     * Runtime class alias of \Google\Service\SQLAdmin\Row registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getValues()
+    class Google_Service_SQLAdmin_Row extends \Google\Service\SQLAdmin\Row
     {
     }
 }

@@ -21,168 +21,177 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineLoggingErrorLog extends \Google\Model
-{
-    protected $connectorRunPayloadType = GoogleCloudDiscoveryengineLoggingConnectorRunErrorContext::class;
-    protected $connectorRunPayloadDataType = '';
-    protected $contextType = GoogleCloudDiscoveryengineLoggingErrorContext::class;
-    protected $contextDataType = '';
-    protected $importPayloadType = GoogleCloudDiscoveryengineLoggingImportErrorContext::class;
-    protected $importPayloadDataType = '';
-    /**
-     * A message describing the error.
-     *
-     * @var string
-     */
-    public $message;
-    /**
-     * The API request payload, represented as a protocol buffer. Most API request
-     * types are supported—for example: * `type.googleapis.com/google.cloud.discov
-     * eryengine.v1alpha.DocumentService.CreateDocumentRequest` * `type.googleapis
-     * .com/google.cloud.discoveryengine.v1alpha.UserEventService.WriteUserEventRe
-     * quest`
-     *
-     * @var array[]
-     */
-    public $requestPayload;
-    /**
-     * The API response payload, represented as a protocol buffer. This is used to
-     * log some "soft errors", where the response is valid but we consider there
-     * are some quality issues like unjoined events. The following API responses
-     * are supported, and no PII is included: *
-     * `google.cloud.discoveryengine.v1alpha.RecommendationService.Recommend` *
-     * `google.cloud.discoveryengine.v1alpha.UserEventService.WriteUserEvent` *
-     * `google.cloud.discoveryengine.v1alpha.UserEventService.CollectUserEvent`
-     *
-     * @var array[]
-     */
-    public $responsePayload;
-    protected $serviceContextType = GoogleCloudDiscoveryengineLoggingServiceContext::class;
-    protected $serviceContextDataType = '';
-    protected $statusType = GoogleRpcStatus::class;
-    protected $statusDataType = '';
-    /**
-     * The error payload that is populated on LRO connector sync APIs.
-     *
-     * @param GoogleCloudDiscoveryengineLoggingConnectorRunErrorContext $connectorRunPayload
-     */
-    public function setConnectorRunPayload(GoogleCloudDiscoveryengineLoggingConnectorRunErrorContext $connectorRunPayload)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineLoggingErrorLog extends \Google\Model
     {
+        protected $connectorRunPayloadType = GoogleCloudDiscoveryengineLoggingConnectorRunErrorContext::class;
+        protected $connectorRunPayloadDataType = '';
+        protected $contextType = GoogleCloudDiscoveryengineLoggingErrorContext::class;
+        protected $contextDataType = '';
+        protected $importPayloadType = GoogleCloudDiscoveryengineLoggingImportErrorContext::class;
+        protected $importPayloadDataType = '';
+        /**
+         * A message describing the error.
+         *
+         * @var string
+         */
+        public $message;
+        /**
+         * The API request payload, represented as a protocol buffer. Most API request
+         * types are supported—for example: * `type.googleapis.com/google.cloud.discov
+         * eryengine.v1alpha.DocumentService.CreateDocumentRequest` * `type.googleapis
+         * .com/google.cloud.discoveryengine.v1alpha.UserEventService.WriteUserEventRe
+         * quest`
+         *
+         * @var array[]
+         */
+        public $requestPayload;
+        /**
+         * The API response payload, represented as a protocol buffer. This is used to
+         * log some "soft errors", where the response is valid but we consider there
+         * are some quality issues like unjoined events. The following API responses
+         * are supported, and no PII is included: *
+         * `google.cloud.discoveryengine.v1alpha.RecommendationService.Recommend` *
+         * `google.cloud.discoveryengine.v1alpha.UserEventService.WriteUserEvent` *
+         * `google.cloud.discoveryengine.v1alpha.UserEventService.CollectUserEvent`
+         *
+         * @var array[]
+         */
+        public $responsePayload;
+        protected $serviceContextType = GoogleCloudDiscoveryengineLoggingServiceContext::class;
+        protected $serviceContextDataType = '';
+        protected $statusType = GoogleRpcStatus::class;
+        protected $statusDataType = '';
+        /**
+         * The error payload that is populated on LRO connector sync APIs.
+         *
+         * @param GoogleCloudDiscoveryengineLoggingConnectorRunErrorContext $connectorRunPayload
+         */
+        public function setConnectorRunPayload(GoogleCloudDiscoveryengineLoggingConnectorRunErrorContext $connectorRunPayload)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineLoggingConnectorRunErrorContext
+         */
+        public function getConnectorRunPayload()
+        {
+        }
+        /**
+         * A description of the context in which the error occurred.
+         *
+         * @param GoogleCloudDiscoveryengineLoggingErrorContext $context
+         */
+        public function setContext(GoogleCloudDiscoveryengineLoggingErrorContext $context)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineLoggingErrorContext
+         */
+        public function getContext()
+        {
+        }
+        /**
+         * The error payload that is populated on LRO import APIs.
+         *
+         * @param GoogleCloudDiscoveryengineLoggingImportErrorContext $importPayload
+         */
+        public function setImportPayload(GoogleCloudDiscoveryengineLoggingImportErrorContext $importPayload)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineLoggingImportErrorContext
+         */
+        public function getImportPayload()
+        {
+        }
+        /**
+         * A message describing the error.
+         *
+         * @param string $message
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
+        /**
+         * The API request payload, represented as a protocol buffer. Most API request
+         * types are supported—for example: * `type.googleapis.com/google.cloud.discov
+         * eryengine.v1alpha.DocumentService.CreateDocumentRequest` * `type.googleapis
+         * .com/google.cloud.discoveryengine.v1alpha.UserEventService.WriteUserEventRe
+         * quest`
+         *
+         * @param array[] $requestPayload
+         */
+        public function setRequestPayload($requestPayload)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getRequestPayload()
+        {
+        }
+        /**
+         * The API response payload, represented as a protocol buffer. This is used to
+         * log some "soft errors", where the response is valid but we consider there
+         * are some quality issues like unjoined events. The following API responses
+         * are supported, and no PII is included: *
+         * `google.cloud.discoveryengine.v1alpha.RecommendationService.Recommend` *
+         * `google.cloud.discoveryengine.v1alpha.UserEventService.WriteUserEvent` *
+         * `google.cloud.discoveryengine.v1alpha.UserEventService.CollectUserEvent`
+         *
+         * @param array[] $responsePayload
+         */
+        public function setResponsePayload($responsePayload)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getResponsePayload()
+        {
+        }
+        /**
+         * The service context in which this error has occurred.
+         *
+         * @param GoogleCloudDiscoveryengineLoggingServiceContext $serviceContext
+         */
+        public function setServiceContext(GoogleCloudDiscoveryengineLoggingServiceContext $serviceContext)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineLoggingServiceContext
+         */
+        public function getServiceContext()
+        {
+        }
+        /**
+         * The RPC status associated with the error log.
+         *
+         * @param GoogleRpcStatus $status
+         */
+        public function setStatus(GoogleRpcStatus $status)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineLoggingConnectorRunErrorContext
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineLoggingErrorLog registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConnectorRunPayload()
-    {
-    }
-    /**
-     * A description of the context in which the error occurred.
-     *
-     * @param GoogleCloudDiscoveryengineLoggingErrorContext $context
-     */
-    public function setContext(GoogleCloudDiscoveryengineLoggingErrorContext $context)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineLoggingErrorContext
-     */
-    public function getContext()
-    {
-    }
-    /**
-     * The error payload that is populated on LRO import APIs.
-     *
-     * @param GoogleCloudDiscoveryengineLoggingImportErrorContext $importPayload
-     */
-    public function setImportPayload(GoogleCloudDiscoveryengineLoggingImportErrorContext $importPayload)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineLoggingImportErrorContext
-     */
-    public function getImportPayload()
-    {
-    }
-    /**
-     * A message describing the error.
-     *
-     * @param string $message
-     */
-    public function setMessage($message)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMessage()
-    {
-    }
-    /**
-     * The API request payload, represented as a protocol buffer. Most API request
-     * types are supported—for example: * `type.googleapis.com/google.cloud.discov
-     * eryengine.v1alpha.DocumentService.CreateDocumentRequest` * `type.googleapis
-     * .com/google.cloud.discoveryengine.v1alpha.UserEventService.WriteUserEventRe
-     * quest`
-     *
-     * @param array[] $requestPayload
-     */
-    public function setRequestPayload($requestPayload)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getRequestPayload()
-    {
-    }
-    /**
-     * The API response payload, represented as a protocol buffer. This is used to
-     * log some "soft errors", where the response is valid but we consider there
-     * are some quality issues like unjoined events. The following API responses
-     * are supported, and no PII is included: *
-     * `google.cloud.discoveryengine.v1alpha.RecommendationService.Recommend` *
-     * `google.cloud.discoveryengine.v1alpha.UserEventService.WriteUserEvent` *
-     * `google.cloud.discoveryengine.v1alpha.UserEventService.CollectUserEvent`
-     *
-     * @param array[] $responsePayload
-     */
-    public function setResponsePayload($responsePayload)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getResponsePayload()
-    {
-    }
-    /**
-     * The service context in which this error has occurred.
-     *
-     * @param GoogleCloudDiscoveryengineLoggingServiceContext $serviceContext
-     */
-    public function setServiceContext(GoogleCloudDiscoveryengineLoggingServiceContext $serviceContext)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineLoggingServiceContext
-     */
-    public function getServiceContext()
-    {
-    }
-    /**
-     * The RPC status associated with the error log.
-     *
-     * @param GoogleRpcStatus $status
-     */
-    public function setStatus(GoogleRpcStatus $status)
-    {
-    }
-    /**
-     * @return GoogleRpcStatus
-     */
-    public function getStatus()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineLoggingErrorLog extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineLoggingErrorLog
     {
     }
 }

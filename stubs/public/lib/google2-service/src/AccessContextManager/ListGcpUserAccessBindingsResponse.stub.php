@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AccessContextManager;
-
-class ListGcpUserAccessBindingsResponse extends \Google\Collection
-{
-    protected $collection_key = 'gcpUserAccessBindings';
-    protected $gcpUserAccessBindingsType = GcpUserAccessBinding::class;
-    protected $gcpUserAccessBindingsDataType = 'array';
-    /**
-     * Token to get the next page of items. If blank, there are no more items.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * GcpUserAccessBinding
-     *
-     * @param GcpUserAccessBinding[] $gcpUserAccessBindings
-     */
-    public function setGcpUserAccessBindings($gcpUserAccessBindings)
+namespace Google\Service\AccessContextManager {
+    class ListGcpUserAccessBindingsResponse extends \Google\Collection
     {
+        protected $collection_key = 'gcpUserAccessBindings';
+        protected $gcpUserAccessBindingsType = GcpUserAccessBinding::class;
+        protected $gcpUserAccessBindingsDataType = 'array';
+        /**
+         * Token to get the next page of items. If blank, there are no more items.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * GcpUserAccessBinding
+         *
+         * @param GcpUserAccessBinding[] $gcpUserAccessBindings
+         */
+        public function setGcpUserAccessBindings($gcpUserAccessBindings)
+        {
+        }
+        /**
+         * @return GcpUserAccessBinding[]
+         */
+        public function getGcpUserAccessBindings()
+        {
+        }
+        /**
+         * Token to get the next page of items. If blank, there are no more items.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GcpUserAccessBinding[]
+     * Runtime class alias of \Google\Service\AccessContextManager\ListGcpUserAccessBindingsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGcpUserAccessBindings()
-    {
-    }
-    /**
-     * Token to get the next page of items. If blank, there are no more items.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_AccessContextManager_ListGcpUserAccessBindingsResponse extends \Google\Service\AccessContextManager\ListGcpUserAccessBindingsResponse
     {
     }
 }

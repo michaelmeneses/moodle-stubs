@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class JobScheduling extends \Google\Model
-{
-    /**
-     * Optional. Maximum number of times per hour a driver can be restarted as a
-     * result of driver exiting with non-zero code before job is reported failed.A
-     * job might be reported as thrashing if the driver exits with a non-zero code
-     * four times within a 10-minute window.Maximum value is 10.Note: This
-     * restartable job option is not supported in Dataproc workflow templates
-     * (https://cloud.google.com/dataproc/docs/concepts/workflows/using-
-     * workflows#adding_jobs_to_a_template).
-     *
-     * @var int
-     */
-    public $maxFailuresPerHour;
-    /**
-     * Optional. Maximum total number of times a driver can be restarted as a
-     * result of the driver exiting with a non-zero code. After the maximum number
-     * is reached, the job will be reported as failed.Maximum value is 240.Note:
-     * Currently, this restartable job option is not supported in Dataproc
-     * workflow templates
-     * (https://cloud.google.com/dataproc/docs/concepts/workflows/using-
-     * workflows#adding_jobs_to_a_template).
-     *
-     * @var int
-     */
-    public $maxFailuresTotal;
-    /**
-     * Optional. Maximum number of times per hour a driver can be restarted as a
-     * result of driver exiting with non-zero code before job is reported failed.A
-     * job might be reported as thrashing if the driver exits with a non-zero code
-     * four times within a 10-minute window.Maximum value is 10.Note: This
-     * restartable job option is not supported in Dataproc workflow templates
-     * (https://cloud.google.com/dataproc/docs/concepts/workflows/using-
-     * workflows#adding_jobs_to_a_template).
-     *
-     * @param int $maxFailuresPerHour
-     */
-    public function setMaxFailuresPerHour($maxFailuresPerHour)
+namespace Google\Service\Dataproc {
+    class JobScheduling extends \Google\Model
     {
+        /**
+         * Optional. Maximum number of times per hour a driver can be restarted as a
+         * result of driver exiting with non-zero code before job is reported failed.A
+         * job might be reported as thrashing if the driver exits with a non-zero code
+         * four times within a 10-minute window.Maximum value is 10.Note: This
+         * restartable job option is not supported in Dataproc workflow templates
+         * (https://cloud.google.com/dataproc/docs/concepts/workflows/using-
+         * workflows#adding_jobs_to_a_template).
+         *
+         * @var int
+         */
+        public $maxFailuresPerHour;
+        /**
+         * Optional. Maximum total number of times a driver can be restarted as a
+         * result of the driver exiting with a non-zero code. After the maximum number
+         * is reached, the job will be reported as failed.Maximum value is 240.Note:
+         * Currently, this restartable job option is not supported in Dataproc
+         * workflow templates
+         * (https://cloud.google.com/dataproc/docs/concepts/workflows/using-
+         * workflows#adding_jobs_to_a_template).
+         *
+         * @var int
+         */
+        public $maxFailuresTotal;
+        /**
+         * Optional. Maximum number of times per hour a driver can be restarted as a
+         * result of driver exiting with non-zero code before job is reported failed.A
+         * job might be reported as thrashing if the driver exits with a non-zero code
+         * four times within a 10-minute window.Maximum value is 10.Note: This
+         * restartable job option is not supported in Dataproc workflow templates
+         * (https://cloud.google.com/dataproc/docs/concepts/workflows/using-
+         * workflows#adding_jobs_to_a_template).
+         *
+         * @param int $maxFailuresPerHour
+         */
+        public function setMaxFailuresPerHour($maxFailuresPerHour)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxFailuresPerHour()
+        {
+        }
+        /**
+         * Optional. Maximum total number of times a driver can be restarted as a
+         * result of the driver exiting with a non-zero code. After the maximum number
+         * is reached, the job will be reported as failed.Maximum value is 240.Note:
+         * Currently, this restartable job option is not supported in Dataproc
+         * workflow templates
+         * (https://cloud.google.com/dataproc/docs/concepts/workflows/using-
+         * workflows#adding_jobs_to_a_template).
+         *
+         * @param int $maxFailuresTotal
+         */
+        public function setMaxFailuresTotal($maxFailuresTotal)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxFailuresTotal()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Dataproc\JobScheduling registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaxFailuresPerHour()
-    {
-    }
-    /**
-     * Optional. Maximum total number of times a driver can be restarted as a
-     * result of the driver exiting with a non-zero code. After the maximum number
-     * is reached, the job will be reported as failed.Maximum value is 240.Note:
-     * Currently, this restartable job option is not supported in Dataproc
-     * workflow templates
-     * (https://cloud.google.com/dataproc/docs/concepts/workflows/using-
-     * workflows#adding_jobs_to_a_template).
-     *
-     * @param int $maxFailuresTotal
-     */
-    public function setMaxFailuresTotal($maxFailuresTotal)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxFailuresTotal()
+    class Google_Service_Dataproc_JobScheduling extends \Google\Service\Dataproc\JobScheduling
     {
     }
 }

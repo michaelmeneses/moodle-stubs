@@ -21,109 +21,118 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3beta1KnowledgeConnectorSettings extends \Google\Collection
-{
-    protected $collection_key = 'dataStoreConnections';
-    protected $dataStoreConnectionsType = GoogleCloudDialogflowCxV3beta1DataStoreConnection::class;
-    protected $dataStoreConnectionsDataType = 'array';
-    /**
-     * Whether Knowledge Connector is enabled or not.
-     *
-     * @var bool
-     */
-    public $enabled;
-    /**
-     * The target flow to transition to. Format:
-     * `projects//locations//agents//flows/`.
-     *
-     * @var string
-     */
-    public $targetFlow;
-    /**
-     * The target page to transition to. Format:
-     * `projects//locations//agents//flows//pages/`.
-     *
-     * @var string
-     */
-    public $targetPage;
-    protected $triggerFulfillmentType = GoogleCloudDialogflowCxV3beta1Fulfillment::class;
-    protected $triggerFulfillmentDataType = '';
-    /**
-     * Optional. List of related data store connections.
-     *
-     * @param GoogleCloudDialogflowCxV3beta1DataStoreConnection[] $dataStoreConnections
-     */
-    public function setDataStoreConnections($dataStoreConnections)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3beta1KnowledgeConnectorSettings extends \Google\Collection
     {
+        protected $collection_key = 'dataStoreConnections';
+        protected $dataStoreConnectionsType = GoogleCloudDialogflowCxV3beta1DataStoreConnection::class;
+        protected $dataStoreConnectionsDataType = 'array';
+        /**
+         * Whether Knowledge Connector is enabled or not.
+         *
+         * @var bool
+         */
+        public $enabled;
+        /**
+         * The target flow to transition to. Format:
+         * `projects//locations//agents//flows/`.
+         *
+         * @var string
+         */
+        public $targetFlow;
+        /**
+         * The target page to transition to. Format:
+         * `projects//locations//agents//flows//pages/`.
+         *
+         * @var string
+         */
+        public $targetPage;
+        protected $triggerFulfillmentType = GoogleCloudDialogflowCxV3beta1Fulfillment::class;
+        protected $triggerFulfillmentDataType = '';
+        /**
+         * Optional. List of related data store connections.
+         *
+         * @param GoogleCloudDialogflowCxV3beta1DataStoreConnection[] $dataStoreConnections
+         */
+        public function setDataStoreConnections($dataStoreConnections)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3beta1DataStoreConnection[]
+         */
+        public function getDataStoreConnections()
+        {
+        }
+        /**
+         * Whether Knowledge Connector is enabled or not.
+         *
+         * @param bool $enabled
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
+        /**
+         * The target flow to transition to. Format:
+         * `projects//locations//agents//flows/`.
+         *
+         * @param string $targetFlow
+         */
+        public function setTargetFlow($targetFlow)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetFlow()
+        {
+        }
+        /**
+         * The target page to transition to. Format:
+         * `projects//locations//agents//flows//pages/`.
+         *
+         * @param string $targetPage
+         */
+        public function setTargetPage($targetPage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetPage()
+        {
+        }
+        /**
+         * The fulfillment to be triggered. When the answers from the Knowledge
+         * Connector are selected by Dialogflow, you can utitlize the request scoped
+         * parameter `$request.knowledge.answers` (contains up to the 5 highest
+         * confidence answers) and `$request.knowledge.questions` (contains the
+         * corresponding questions) to construct the fulfillment.
+         *
+         * @param GoogleCloudDialogflowCxV3beta1Fulfillment $triggerFulfillment
+         */
+        public function setTriggerFulfillment(GoogleCloudDialogflowCxV3beta1Fulfillment $triggerFulfillment)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3beta1Fulfillment
+         */
+        public function getTriggerFulfillment()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowCxV3beta1DataStoreConnection[]
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3beta1KnowledgeConnectorSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataStoreConnections()
-    {
-    }
-    /**
-     * Whether Knowledge Connector is enabled or not.
-     *
-     * @param bool $enabled
-     */
-    public function setEnabled($enabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnabled()
-    {
-    }
-    /**
-     * The target flow to transition to. Format:
-     * `projects//locations//agents//flows/`.
-     *
-     * @param string $targetFlow
-     */
-    public function setTargetFlow($targetFlow)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetFlow()
-    {
-    }
-    /**
-     * The target page to transition to. Format:
-     * `projects//locations//agents//flows//pages/`.
-     *
-     * @param string $targetPage
-     */
-    public function setTargetPage($targetPage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetPage()
-    {
-    }
-    /**
-     * The fulfillment to be triggered. When the answers from the Knowledge
-     * Connector are selected by Dialogflow, you can utitlize the request scoped
-     * parameter `$request.knowledge.answers` (contains up to the 5 highest
-     * confidence answers) and `$request.knowledge.questions` (contains the
-     * corresponding questions) to construct the fulfillment.
-     *
-     * @param GoogleCloudDialogflowCxV3beta1Fulfillment $triggerFulfillment
-     */
-    public function setTriggerFulfillment(GoogleCloudDialogflowCxV3beta1Fulfillment $triggerFulfillment)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3beta1Fulfillment
-     */
-    public function getTriggerFulfillment()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3beta1KnowledgeConnectorSettings extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3beta1KnowledgeConnectorSettings
     {
     }
 }

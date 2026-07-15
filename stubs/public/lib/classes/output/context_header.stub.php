@@ -20,61 +20,70 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\output;
-
-/**
- * Renderable for the main page header.
- *
- * @package core
- * @category output
- * @since 2.9
- * @copyright 2015 Adrian Greeve <adrian@moodle.com>
- * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-class context_header implements renderable, templatable
-{
-    /** @var string $heading Main heading */
-    public $heading;
-    /** @var int $headinglevel Main heading 'h' tag level */
-    public $headinglevel;
-    /** @var string|null $imagedata HTML code for the picture in the page header */
-    public $imagedata;
+namespace core\output {
     /**
-     * @var array $additionalbuttons Additional buttons for the header e.g. Messaging button for the user header.
-     *      array elements - title => alternate text for the image, or if no image is available the button text.
-     *                       url => Link for the button to head to. Should be a moodle_url.
-     *                       image => location to the image, or name of the image in /pix/t/{image name}.
-     *                       linkattributes => additional attributes for the <a href> element.
-     *                       page => page object. Don't include if the image is an external image.
-     */
-    public $additionalbuttons;
-    /** @var string $prefix A string that is before the title */
-    public $prefix;
-    /**
-     * Constructor.
+     * Renderable for the main page header.
      *
-     * @param string $heading Main heading data.
-     * @param int $headinglevel Main heading 'h' tag level.
-     * @param string|null $imagedata HTML code for the picture in the page header.
-     * @param string $additionalbuttons Buttons for the header e.g. Messaging button for the user header.
-     * @param string $prefix Text that precedes the heading.
+     * @package core
+     * @category output
+     * @since 2.9
+     * @copyright 2015 Adrian Greeve <adrian@moodle.com>
+     * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
      */
-    public function __construct($heading = null, $headinglevel = 1, $imagedata = null, $additionalbuttons = null, $prefix = null)
+    class context_header implements renderable, templatable
     {
+        /** @var string $heading Main heading */
+        public $heading;
+        /** @var int $headinglevel Main heading 'h' tag level */
+        public $headinglevel;
+        /** @var string|null $imagedata HTML code for the picture in the page header */
+        public $imagedata;
+        /**
+         * @var array $additionalbuttons Additional buttons for the header e.g. Messaging button for the user header.
+         *      array elements - title => alternate text for the image, or if no image is available the button text.
+         *                       url => Link for the button to head to. Should be a moodle_url.
+         *                       image => location to the image, or name of the image in /pix/t/{image name}.
+         *                       linkattributes => additional attributes for the <a href> element.
+         *                       page => page object. Don't include if the image is an external image.
+         */
+        public $additionalbuttons;
+        /** @var string $prefix A string that is before the title */
+        public $prefix;
+        /**
+         * Constructor.
+         *
+         * @param string $heading Main heading data.
+         * @param int $headinglevel Main heading 'h' tag level.
+         * @param string|null $imagedata HTML code for the picture in the page header.
+         * @param string $additionalbuttons Buttons for the header e.g. Messaging button for the user header.
+         * @param string $prefix Text that precedes the heading.
+         */
+        public function __construct($heading = null, $headinglevel = 1, $imagedata = null, $additionalbuttons = null, $prefix = null)
+        {
+        }
+        /**
+         * Adds an array element for a formatted image.
+         */
+        protected function format_button_images()
+        {
+        }
+        /**
+         * Export for template.
+         *
+         * @param renderer_base $output Renderer.
+         * @return array
+         */
+        public function export_for_template(renderer_base $output): array
+        {
+        }
     }
+}
+namespace {
     /**
-     * Adds an array element for a formatted image.
+     * Runtime class alias of \core\output\context_header registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    protected function format_button_images()
-    {
-    }
-    /**
-     * Export for template.
-     *
-     * @param renderer_base $output Renderer.
-     * @return array
-     */
-    public function export_for_template(renderer_base $output): array
+    class context_header extends \core\output\context_header
     {
     }
 }

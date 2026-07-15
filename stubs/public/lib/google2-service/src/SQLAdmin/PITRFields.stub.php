@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class PITRFields extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $enableBinLog;
-    /**
-     * @var bool
-     */
-    public $replicationLogArchivingEnabled;
-    /**
-     * @var bool
-     */
-    public $sqlserverPitrEnabled;
-    /**
-     * @var int
-     */
-    public $transactionLogRetentionDays;
-    /**
-     * @param bool
-     */
-    public function setEnableBinLog($enableBinLog)
+namespace Google\Service\SQLAdmin {
+    class PITRFields extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $enableBinLog;
+        /**
+         * @var bool
+         */
+        public $replicationLogArchivingEnabled;
+        /**
+         * @var bool
+         */
+        public $sqlserverPitrEnabled;
+        /**
+         * @var int
+         */
+        public $transactionLogRetentionDays;
+        /**
+         * @param bool
+         */
+        public function setEnableBinLog($enableBinLog)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableBinLog()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setReplicationLogArchivingEnabled($replicationLogArchivingEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getReplicationLogArchivingEnabled()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setSqlserverPitrEnabled($sqlserverPitrEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSqlserverPitrEnabled()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setTransactionLogRetentionDays($transactionLogRetentionDays)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTransactionLogRetentionDays()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\SQLAdmin\PITRFields registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnableBinLog()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setReplicationLogArchivingEnabled($replicationLogArchivingEnabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getReplicationLogArchivingEnabled()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setSqlserverPitrEnabled($sqlserverPitrEnabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSqlserverPitrEnabled()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setTransactionLogRetentionDays($transactionLogRetentionDays)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTransactionLogRetentionDays()
+    class Google_Service_SQLAdmin_PITRFields extends \Google\Service\SQLAdmin\PITRFields
     {
     }
 }

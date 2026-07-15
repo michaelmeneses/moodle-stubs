@@ -21,108 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics;
-
-class ProfileSummary extends \Google\Model
-{
-    /**
-     * View (profile) ID.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Resource type for Analytics ProfileSummary.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * View (profile) name.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Indicates whether this view (profile) is starred or not.
-     *
-     * @var bool
-     */
-    public $starred;
-    /**
-     * View (Profile) type. Supported types: WEB or APP.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * View (profile) ID.
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\Analytics {
+    class ProfileSummary extends \Google\Model
     {
+        /**
+         * View (profile) ID.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Resource type for Analytics ProfileSummary.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * View (profile) name.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Indicates whether this view (profile) is starred or not.
+         *
+         * @var bool
+         */
+        public $starred;
+        /**
+         * View (Profile) type. Supported types: WEB or APP.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * View (profile) ID.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Resource type for Analytics ProfileSummary.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * View (profile) name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Indicates whether this view (profile) is starred or not.
+         *
+         * @param bool $starred
+         */
+        public function setStarred($starred)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getStarred()
+        {
+        }
+        /**
+         * View (Profile) type. Supported types: WEB or APP.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Analytics\ProfileSummary registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * Resource type for Analytics ProfileSummary.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * View (profile) name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Indicates whether this view (profile) is starred or not.
-     *
-     * @param bool $starred
-     */
-    public function setStarred($starred)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getStarred()
-    {
-    }
-    /**
-     * View (Profile) type. Supported types: WEB or APP.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_Analytics_ProfileSummary extends \Google\Service\Analytics\ProfileSummary
     {
     }
 }

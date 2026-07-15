@@ -8,6 +8,17 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Writer;
 
+use PhpOffice\PhpSpreadsheet\Spreadsheet;
+use PhpOffice\PhpSpreadsheet\Writer\Exception as WriterException;
+use PhpOffice\PhpSpreadsheet\Writer\Ods\Content;
+use PhpOffice\PhpSpreadsheet\Writer\Ods\Meta;
+use PhpOffice\PhpSpreadsheet\Writer\Ods\MetaInf;
+use PhpOffice\PhpSpreadsheet\Writer\Ods\Mimetype;
+use PhpOffice\PhpSpreadsheet\Writer\Ods\Settings;
+use PhpOffice\PhpSpreadsheet\Writer\Ods\Styles;
+use PhpOffice\PhpSpreadsheet\Writer\Ods\Thumbnails;
+use ZipStream\Exception\OverflowException;
+use ZipStream\ZipStream;
 class Ods extends BaseWriter
 {
     /**

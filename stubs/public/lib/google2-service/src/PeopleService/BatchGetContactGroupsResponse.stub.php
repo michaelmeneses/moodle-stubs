@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PeopleService;
-
-class BatchGetContactGroupsResponse extends \Google\Collection
-{
-    protected $collection_key = 'responses';
-    protected $responsesType = ContactGroupResponse::class;
-    protected $responsesDataType = 'array';
-    /**
-     * The list of responses for each requested contact group resource.
-     *
-     * @param ContactGroupResponse[] $responses
-     */
-    public function setResponses($responses)
+namespace Google\Service\PeopleService {
+    class BatchGetContactGroupsResponse extends \Google\Collection
     {
+        protected $collection_key = 'responses';
+        protected $responsesType = ContactGroupResponse::class;
+        protected $responsesDataType = 'array';
+        /**
+         * The list of responses for each requested contact group resource.
+         *
+         * @param ContactGroupResponse[] $responses
+         */
+        public function setResponses($responses)
+        {
+        }
+        /**
+         * @return ContactGroupResponse[]
+         */
+        public function getResponses()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ContactGroupResponse[]
+     * Runtime class alias of \Google\Service\PeopleService\BatchGetContactGroupsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResponses()
+    class Google_Service_PeopleService_BatchGetContactGroupsResponse extends \Google\Service\PeopleService\BatchGetContactGroupsResponse
     {
     }
 }

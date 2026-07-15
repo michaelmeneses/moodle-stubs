@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution;
-
-class BuildBazelRemoteExecutionV2FileNode extends \Google\Model
-{
-    protected $digestType = BuildBazelRemoteExecutionV2Digest::class;
-    protected $digestDataType = '';
-    public $isExecutable;
-    public $name;
-    protected $nodePropertiesType = BuildBazelRemoteExecutionV2NodeProperties::class;
-    protected $nodePropertiesDataType = '';
+namespace Google\Service\RemoteBuildExecution {
+    class BuildBazelRemoteExecutionV2FileNode extends \Google\Model
+    {
+        protected $digestType = BuildBazelRemoteExecutionV2Digest::class;
+        protected $digestDataType = '';
+        public $isExecutable;
+        public $name;
+        protected $nodePropertiesType = BuildBazelRemoteExecutionV2NodeProperties::class;
+        protected $nodePropertiesDataType = '';
+        /**
+         * @param BuildBazelRemoteExecutionV2Digest
+         */
+        public function setDigest(BuildBazelRemoteExecutionV2Digest $digest)
+        {
+        }
+        /**
+         * @return BuildBazelRemoteExecutionV2Digest
+         */
+        public function getDigest()
+        {
+        }
+        public function setIsExecutable($isExecutable)
+        {
+        }
+        public function getIsExecutable()
+        {
+        }
+        public function setName($name)
+        {
+        }
+        public function getName()
+        {
+        }
+        /**
+         * @param BuildBazelRemoteExecutionV2NodeProperties
+         */
+        public function setNodeProperties(BuildBazelRemoteExecutionV2NodeProperties $nodeProperties)
+        {
+        }
+        /**
+         * @return BuildBazelRemoteExecutionV2NodeProperties
+         */
+        public function getNodeProperties()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @param BuildBazelRemoteExecutionV2Digest
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2FileNode registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setDigest(BuildBazelRemoteExecutionV2Digest $digest)
-    {
-    }
-    /**
-     * @return BuildBazelRemoteExecutionV2Digest
-     */
-    public function getDigest()
-    {
-    }
-    public function setIsExecutable($isExecutable)
-    {
-    }
-    public function getIsExecutable()
-    {
-    }
-    public function setName($name)
-    {
-    }
-    public function getName()
-    {
-    }
-    /**
-     * @param BuildBazelRemoteExecutionV2NodeProperties
-     */
-    public function setNodeProperties(BuildBazelRemoteExecutionV2NodeProperties $nodeProperties)
-    {
-    }
-    /**
-     * @return BuildBazelRemoteExecutionV2NodeProperties
-     */
-    public function getNodeProperties()
+    class Google_Service_RemoteBuildExecution_BuildBazelRemoteExecutionV2FileNode extends \Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2FileNode
     {
     }
 }

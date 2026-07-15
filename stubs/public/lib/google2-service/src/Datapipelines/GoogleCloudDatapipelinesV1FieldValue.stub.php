@@ -21,106 +21,115 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datapipelines;
-
-class GoogleCloudDatapipelinesV1FieldValue extends \Google\Model
-{
-    protected $arrayValueType = GoogleCloudDatapipelinesV1ArrayValue::class;
-    protected $arrayValueDataType = '';
-    protected $atomicValueType = GoogleCloudDatapipelinesV1AtomicValue::class;
-    protected $atomicValueDataType = '';
-    protected $enumValueType = GoogleCloudDatapipelinesV1EnumerationValue::class;
-    protected $enumValueDataType = '';
-    protected $fixedBytesValueType = GoogleCloudDatapipelinesV1FixedBytesValue::class;
-    protected $fixedBytesValueDataType = '';
-    protected $iterableValueType = GoogleCloudDatapipelinesV1IterableValue::class;
-    protected $iterableValueDataType = '';
-    protected $mapValueType = GoogleCloudDatapipelinesV1MapValue::class;
-    protected $mapValueDataType = '';
-    protected $rowValueType = GoogleCloudDatapipelinesV1Row::class;
-    protected $rowValueDataType = '';
-    /**
-     * @param GoogleCloudDatapipelinesV1ArrayValue
-     */
-    public function setArrayValue(GoogleCloudDatapipelinesV1ArrayValue $arrayValue)
+namespace Google\Service\Datapipelines {
+    class GoogleCloudDatapipelinesV1FieldValue extends \Google\Model
     {
+        protected $arrayValueType = GoogleCloudDatapipelinesV1ArrayValue::class;
+        protected $arrayValueDataType = '';
+        protected $atomicValueType = GoogleCloudDatapipelinesV1AtomicValue::class;
+        protected $atomicValueDataType = '';
+        protected $enumValueType = GoogleCloudDatapipelinesV1EnumerationValue::class;
+        protected $enumValueDataType = '';
+        protected $fixedBytesValueType = GoogleCloudDatapipelinesV1FixedBytesValue::class;
+        protected $fixedBytesValueDataType = '';
+        protected $iterableValueType = GoogleCloudDatapipelinesV1IterableValue::class;
+        protected $iterableValueDataType = '';
+        protected $mapValueType = GoogleCloudDatapipelinesV1MapValue::class;
+        protected $mapValueDataType = '';
+        protected $rowValueType = GoogleCloudDatapipelinesV1Row::class;
+        protected $rowValueDataType = '';
+        /**
+         * @param GoogleCloudDatapipelinesV1ArrayValue
+         */
+        public function setArrayValue(GoogleCloudDatapipelinesV1ArrayValue $arrayValue)
+        {
+        }
+        /**
+         * @return GoogleCloudDatapipelinesV1ArrayValue
+         */
+        public function getArrayValue()
+        {
+        }
+        /**
+         * @param GoogleCloudDatapipelinesV1AtomicValue
+         */
+        public function setAtomicValue(GoogleCloudDatapipelinesV1AtomicValue $atomicValue)
+        {
+        }
+        /**
+         * @return GoogleCloudDatapipelinesV1AtomicValue
+         */
+        public function getAtomicValue()
+        {
+        }
+        /**
+         * @param GoogleCloudDatapipelinesV1EnumerationValue
+         */
+        public function setEnumValue(GoogleCloudDatapipelinesV1EnumerationValue $enumValue)
+        {
+        }
+        /**
+         * @return GoogleCloudDatapipelinesV1EnumerationValue
+         */
+        public function getEnumValue()
+        {
+        }
+        /**
+         * @param GoogleCloudDatapipelinesV1FixedBytesValue
+         */
+        public function setFixedBytesValue(GoogleCloudDatapipelinesV1FixedBytesValue $fixedBytesValue)
+        {
+        }
+        /**
+         * @return GoogleCloudDatapipelinesV1FixedBytesValue
+         */
+        public function getFixedBytesValue()
+        {
+        }
+        /**
+         * @param GoogleCloudDatapipelinesV1IterableValue
+         */
+        public function setIterableValue(GoogleCloudDatapipelinesV1IterableValue $iterableValue)
+        {
+        }
+        /**
+         * @return GoogleCloudDatapipelinesV1IterableValue
+         */
+        public function getIterableValue()
+        {
+        }
+        /**
+         * @param GoogleCloudDatapipelinesV1MapValue
+         */
+        public function setMapValue(GoogleCloudDatapipelinesV1MapValue $mapValue)
+        {
+        }
+        /**
+         * @return GoogleCloudDatapipelinesV1MapValue
+         */
+        public function getMapValue()
+        {
+        }
+        /**
+         * @param GoogleCloudDatapipelinesV1Row
+         */
+        public function setRowValue(GoogleCloudDatapipelinesV1Row $rowValue)
+        {
+        }
+        /**
+         * @return GoogleCloudDatapipelinesV1Row
+         */
+        public function getRowValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatapipelinesV1ArrayValue
+     * Runtime class alias of \Google\Service\Datapipelines\GoogleCloudDatapipelinesV1FieldValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArrayValue()
-    {
-    }
-    /**
-     * @param GoogleCloudDatapipelinesV1AtomicValue
-     */
-    public function setAtomicValue(GoogleCloudDatapipelinesV1AtomicValue $atomicValue)
-    {
-    }
-    /**
-     * @return GoogleCloudDatapipelinesV1AtomicValue
-     */
-    public function getAtomicValue()
-    {
-    }
-    /**
-     * @param GoogleCloudDatapipelinesV1EnumerationValue
-     */
-    public function setEnumValue(GoogleCloudDatapipelinesV1EnumerationValue $enumValue)
-    {
-    }
-    /**
-     * @return GoogleCloudDatapipelinesV1EnumerationValue
-     */
-    public function getEnumValue()
-    {
-    }
-    /**
-     * @param GoogleCloudDatapipelinesV1FixedBytesValue
-     */
-    public function setFixedBytesValue(GoogleCloudDatapipelinesV1FixedBytesValue $fixedBytesValue)
-    {
-    }
-    /**
-     * @return GoogleCloudDatapipelinesV1FixedBytesValue
-     */
-    public function getFixedBytesValue()
-    {
-    }
-    /**
-     * @param GoogleCloudDatapipelinesV1IterableValue
-     */
-    public function setIterableValue(GoogleCloudDatapipelinesV1IterableValue $iterableValue)
-    {
-    }
-    /**
-     * @return GoogleCloudDatapipelinesV1IterableValue
-     */
-    public function getIterableValue()
-    {
-    }
-    /**
-     * @param GoogleCloudDatapipelinesV1MapValue
-     */
-    public function setMapValue(GoogleCloudDatapipelinesV1MapValue $mapValue)
-    {
-    }
-    /**
-     * @return GoogleCloudDatapipelinesV1MapValue
-     */
-    public function getMapValue()
-    {
-    }
-    /**
-     * @param GoogleCloudDatapipelinesV1Row
-     */
-    public function setRowValue(GoogleCloudDatapipelinesV1Row $rowValue)
-    {
-    }
-    /**
-     * @return GoogleCloudDatapipelinesV1Row
-     */
-    public function getRowValue()
+    class Google_Service_Datapipelines_GoogleCloudDatapipelinesV1FieldValue extends \Google\Service\Datapipelines\GoogleCloudDatapipelinesV1FieldValue
     {
     }
 }

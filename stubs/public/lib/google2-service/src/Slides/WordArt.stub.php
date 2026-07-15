@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides;
-
-class WordArt extends \Google\Model
-{
-    /**
-     * The text rendered as word art.
-     *
-     * @var string
-     */
-    public $renderedText;
-    /**
-     * The text rendered as word art.
-     *
-     * @param string $renderedText
-     */
-    public function setRenderedText($renderedText)
+namespace Google\Service\Slides {
+    class WordArt extends \Google\Model
     {
+        /**
+         * The text rendered as word art.
+         *
+         * @var string
+         */
+        public $renderedText;
+        /**
+         * The text rendered as word art.
+         *
+         * @param string $renderedText
+         */
+        public function setRenderedText($renderedText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRenderedText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Slides\WordArt registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRenderedText()
+    class Google_Service_Slides_WordArt extends \Google\Service\Slides\WordArt
     {
     }
 }

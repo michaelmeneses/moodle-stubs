@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaListPropertiesResponse extends \Google\Collection
-{
-    protected $collection_key = 'properties';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    protected $propertiesType = GoogleAnalyticsAdminV1alphaProperty::class;
-    protected $propertiesDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaListPropertiesResponse extends \Google\Collection
     {
+        protected $collection_key = 'properties';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        protected $propertiesType = GoogleAnalyticsAdminV1alphaProperty::class;
+        protected $propertiesDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param GoogleAnalyticsAdminV1alphaProperty[]
+         */
+        public function setProperties($properties)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaProperty[]
+         */
+        public function getProperties()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaListPropertiesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param GoogleAnalyticsAdminV1alphaProperty[]
-     */
-    public function setProperties($properties)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1alphaProperty[]
-     */
-    public function getProperties()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaListPropertiesResponse extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaListPropertiesResponse
     {
     }
 }

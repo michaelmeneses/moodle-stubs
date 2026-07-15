@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class BulkEditNegativeKeywordsResponse extends \Google\Collection
-{
-    protected $collection_key = 'negativeKeywords';
-    protected $negativeKeywordsType = NegativeKeyword::class;
-    protected $negativeKeywordsDataType = 'array';
-    /**
-     * The list of negative keywords that have been successfully created. This
-     * list will be absent if empty.
-     *
-     * @param NegativeKeyword[] $negativeKeywords
-     */
-    public function setNegativeKeywords($negativeKeywords)
+namespace Google\Service\DisplayVideo {
+    class BulkEditNegativeKeywordsResponse extends \Google\Collection
     {
+        protected $collection_key = 'negativeKeywords';
+        protected $negativeKeywordsType = NegativeKeyword::class;
+        protected $negativeKeywordsDataType = 'array';
+        /**
+         * The list of negative keywords that have been successfully created. This
+         * list will be absent if empty.
+         *
+         * @param NegativeKeyword[] $negativeKeywords
+         */
+        public function setNegativeKeywords($negativeKeywords)
+        {
+        }
+        /**
+         * @return NegativeKeyword[]
+         */
+        public function getNegativeKeywords()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return NegativeKeyword[]
+     * Runtime class alias of \Google\Service\DisplayVideo\BulkEditNegativeKeywordsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNegativeKeywords()
+    class Google_Service_DisplayVideo_BulkEditNegativeKeywordsResponse extends \Google\Service\DisplayVideo\BulkEditNegativeKeywordsResponse
     {
     }
 }

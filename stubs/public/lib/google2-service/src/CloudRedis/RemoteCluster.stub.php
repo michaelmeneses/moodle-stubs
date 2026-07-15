@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRedis;
-
-class RemoteCluster extends \Google\Model
-{
-    /**
-     * Output only. The full resource path of the remote cluster in the format:
-     * projects//locations//clusters/
-     *
-     * @var string
-     */
-    public $cluster;
-    /**
-     * Output only. The unique identifier of the remote cluster.
-     *
-     * @var string
-     */
-    public $uid;
-    /**
-     * Output only. The full resource path of the remote cluster in the format:
-     * projects//locations//clusters/
-     *
-     * @param string $cluster
-     */
-    public function setCluster($cluster)
+namespace Google\Service\CloudRedis {
+    class RemoteCluster extends \Google\Model
     {
+        /**
+         * Output only. The full resource path of the remote cluster in the format:
+         * projects//locations//clusters/
+         *
+         * @var string
+         */
+        public $cluster;
+        /**
+         * Output only. The unique identifier of the remote cluster.
+         *
+         * @var string
+         */
+        public $uid;
+        /**
+         * Output only. The full resource path of the remote cluster in the format:
+         * projects//locations//clusters/
+         *
+         * @param string $cluster
+         */
+        public function setCluster($cluster)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCluster()
+        {
+        }
+        /**
+         * Output only. The unique identifier of the remote cluster.
+         *
+         * @param string $uid
+         */
+        public function setUid($uid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUid()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRedis\RemoteCluster registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCluster()
-    {
-    }
-    /**
-     * Output only. The unique identifier of the remote cluster.
-     *
-     * @param string $uid
-     */
-    public function setUid($uid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUid()
+    class Google_Service_CloudRedis_RemoteCluster extends \Google\Service\CloudRedis\RemoteCluster
     {
     }
 }

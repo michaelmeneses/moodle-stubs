@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseAppDistribution;
-
-class GoogleFirebaseAppdistroV1UploadReleaseRequest extends \Google\Model
-{
-    protected $blobType = GdataMedia::class;
-    protected $blobDataType = '';
-    /**
-     * Binary to upload
-     *
-     * @param GdataMedia $blob
-     */
-    public function setBlob(GdataMedia $blob)
+namespace Google\Service\FirebaseAppDistribution {
+    class GoogleFirebaseAppdistroV1UploadReleaseRequest extends \Google\Model
     {
+        protected $blobType = GdataMedia::class;
+        protected $blobDataType = '';
+        /**
+         * Binary to upload
+         *
+         * @param GdataMedia $blob
+         */
+        public function setBlob(GdataMedia $blob)
+        {
+        }
+        /**
+         * @return GdataMedia
+         */
+        public function getBlob()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GdataMedia
+     * Runtime class alias of \Google\Service\FirebaseAppDistribution\GoogleFirebaseAppdistroV1UploadReleaseRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBlob()
+    class Google_Service_FirebaseAppDistribution_GoogleFirebaseAppdistroV1UploadReleaseRequest extends \Google\Service\FirebaseAppDistribution\GoogleFirebaseAppdistroV1UploadReleaseRequest
     {
     }
 }

@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Safebrowsing;
-
-class GoogleSecuritySafebrowsingV4RiceDeltaEncoding extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $encodedData;
-    /**
-     * @var string
-     */
-    public $firstValue;
-    /**
-     * @var int
-     */
-    public $numEntries;
-    /**
-     * @var int
-     */
-    public $riceParameter;
-    /**
-     * @param string
-     */
-    public function setEncodedData($encodedData)
+namespace Google\Service\Safebrowsing {
+    class GoogleSecuritySafebrowsingV4RiceDeltaEncoding extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $encodedData;
+        /**
+         * @var string
+         */
+        public $firstValue;
+        /**
+         * @var int
+         */
+        public $numEntries;
+        /**
+         * @var int
+         */
+        public $riceParameter;
+        /**
+         * @param string
+         */
+        public function setEncodedData($encodedData)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEncodedData()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setFirstValue($firstValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFirstValue()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setNumEntries($numEntries)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumEntries()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setRiceParameter($riceParameter)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRiceParameter()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Safebrowsing\GoogleSecuritySafebrowsingV4RiceDeltaEncoding registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEncodedData()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setFirstValue($firstValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFirstValue()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setNumEntries($numEntries)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNumEntries()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setRiceParameter($riceParameter)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getRiceParameter()
+    class Google_Service_Safebrowsing_GoogleSecuritySafebrowsingV4RiceDeltaEncoding extends \Google\Service\Safebrowsing\GoogleSecuritySafebrowsingV4RiceDeltaEncoding
     {
     }
 }

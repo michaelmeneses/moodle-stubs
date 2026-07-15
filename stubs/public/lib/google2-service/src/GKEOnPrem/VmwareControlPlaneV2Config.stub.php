@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class VmwareControlPlaneV2Config extends \Google\Model
-{
-    protected $controlPlaneIpBlockType = VmwareIpBlock::class;
-    protected $controlPlaneIpBlockDataType = '';
-    /**
-     * Static IP addresses for the control plane nodes.
-     *
-     * @param VmwareIpBlock $controlPlaneIpBlock
-     */
-    public function setControlPlaneIpBlock(VmwareIpBlock $controlPlaneIpBlock)
+namespace Google\Service\GKEOnPrem {
+    class VmwareControlPlaneV2Config extends \Google\Model
     {
+        protected $controlPlaneIpBlockType = VmwareIpBlock::class;
+        protected $controlPlaneIpBlockDataType = '';
+        /**
+         * Static IP addresses for the control plane nodes.
+         *
+         * @param VmwareIpBlock $controlPlaneIpBlock
+         */
+        public function setControlPlaneIpBlock(VmwareIpBlock $controlPlaneIpBlock)
+        {
+        }
+        /**
+         * @return VmwareIpBlock
+         */
+        public function getControlPlaneIpBlock()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return VmwareIpBlock
+     * Runtime class alias of \Google\Service\GKEOnPrem\VmwareControlPlaneV2Config registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getControlPlaneIpBlock()
+    class Google_Service_GKEOnPrem_VmwareControlPlaneV2Config extends \Google\Service\GKEOnPrem\VmwareControlPlaneV2Config
     {
     }
 }

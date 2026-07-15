@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class BareMetalStorageConfig extends \Google\Model
-{
-    protected $lvpNodeMountsConfigType = BareMetalLvpConfig::class;
-    protected $lvpNodeMountsConfigDataType = '';
-    protected $lvpShareConfigType = BareMetalLvpShareConfig::class;
-    protected $lvpShareConfigDataType = '';
-    /**
-     * Required. Specifies the config for local PersistentVolumes backed by
-     * mounted node disks. These disks need to be formatted and mounted by the
-     * user, which can be done before or after cluster creation.
-     *
-     * @param BareMetalLvpConfig $lvpNodeMountsConfig
-     */
-    public function setLvpNodeMountsConfig(BareMetalLvpConfig $lvpNodeMountsConfig)
+namespace Google\Service\GKEOnPrem {
+    class BareMetalStorageConfig extends \Google\Model
     {
+        protected $lvpNodeMountsConfigType = BareMetalLvpConfig::class;
+        protected $lvpNodeMountsConfigDataType = '';
+        protected $lvpShareConfigType = BareMetalLvpShareConfig::class;
+        protected $lvpShareConfigDataType = '';
+        /**
+         * Required. Specifies the config for local PersistentVolumes backed by
+         * mounted node disks. These disks need to be formatted and mounted by the
+         * user, which can be done before or after cluster creation.
+         *
+         * @param BareMetalLvpConfig $lvpNodeMountsConfig
+         */
+        public function setLvpNodeMountsConfig(BareMetalLvpConfig $lvpNodeMountsConfig)
+        {
+        }
+        /**
+         * @return BareMetalLvpConfig
+         */
+        public function getLvpNodeMountsConfig()
+        {
+        }
+        /**
+         * Required. Specifies the config for local PersistentVolumes backed by
+         * subdirectories in a shared filesystem. These subdirectores are
+         * automatically created during cluster creation.
+         *
+         * @param BareMetalLvpShareConfig $lvpShareConfig
+         */
+        public function setLvpShareConfig(BareMetalLvpShareConfig $lvpShareConfig)
+        {
+        }
+        /**
+         * @return BareMetalLvpShareConfig
+         */
+        public function getLvpShareConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BareMetalLvpConfig
+     * Runtime class alias of \Google\Service\GKEOnPrem\BareMetalStorageConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLvpNodeMountsConfig()
-    {
-    }
-    /**
-     * Required. Specifies the config for local PersistentVolumes backed by
-     * subdirectories in a shared filesystem. These subdirectores are
-     * automatically created during cluster creation.
-     *
-     * @param BareMetalLvpShareConfig $lvpShareConfig
-     */
-    public function setLvpShareConfig(BareMetalLvpShareConfig $lvpShareConfig)
-    {
-    }
-    /**
-     * @return BareMetalLvpShareConfig
-     */
-    public function getLvpShareConfig()
+    class Google_Service_GKEOnPrem_BareMetalStorageConfig extends \Google\Service\GKEOnPrem\BareMetalStorageConfig
     {
     }
 }

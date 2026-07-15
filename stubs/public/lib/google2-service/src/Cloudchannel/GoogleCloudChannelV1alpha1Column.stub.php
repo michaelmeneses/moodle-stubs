@@ -21,105 +21,114 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1alpha1Column extends \Google\Model
-{
-    /**
-     * Not used.
-     */
-    public const DATA_TYPE_DATA_TYPE_UNSPECIFIED = 'DATA_TYPE_UNSPECIFIED';
-    /**
-     * ReportValues for this column will use string_value.
-     */
-    public const DATA_TYPE_STRING = 'STRING';
-    /**
-     * ReportValues for this column will use int_value.
-     */
-    public const DATA_TYPE_INT = 'INT';
-    /**
-     * ReportValues for this column will use decimal_value.
-     */
-    public const DATA_TYPE_DECIMAL = 'DECIMAL';
-    /**
-     * ReportValues for this column will use money_value.
-     */
-    public const DATA_TYPE_MONEY = 'MONEY';
-    /**
-     * ReportValues for this column will use date_value.
-     */
-    public const DATA_TYPE_DATE = 'DATE';
-    /**
-     * ReportValues for this column will use date_time_value.
-     */
-    public const DATA_TYPE_DATE_TIME = 'DATE_TIME';
-    /**
-     * The unique name of the column (for example, customer_domain,
-     * channel_partner, customer_cost). You can use column IDs in
-     * RunReportJobRequest.filter. To see all reports and their columns, call
-     * CloudChannelReportsService.ListReports.
-     *
-     * @var string
-     */
-    public $columnId;
-    /**
-     * The type of the values for this column.
-     *
-     * @var string
-     */
-    public $dataType;
-    /**
-     * The column's display name.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The unique name of the column (for example, customer_domain,
-     * channel_partner, customer_cost). You can use column IDs in
-     * RunReportJobRequest.filter. To see all reports and their columns, call
-     * CloudChannelReportsService.ListReports.
-     *
-     * @param string $columnId
-     */
-    public function setColumnId($columnId)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1alpha1Column extends \Google\Model
     {
+        /**
+         * Not used.
+         */
+        public const DATA_TYPE_DATA_TYPE_UNSPECIFIED = 'DATA_TYPE_UNSPECIFIED';
+        /**
+         * ReportValues for this column will use string_value.
+         */
+        public const DATA_TYPE_STRING = 'STRING';
+        /**
+         * ReportValues for this column will use int_value.
+         */
+        public const DATA_TYPE_INT = 'INT';
+        /**
+         * ReportValues for this column will use decimal_value.
+         */
+        public const DATA_TYPE_DECIMAL = 'DECIMAL';
+        /**
+         * ReportValues for this column will use money_value.
+         */
+        public const DATA_TYPE_MONEY = 'MONEY';
+        /**
+         * ReportValues for this column will use date_value.
+         */
+        public const DATA_TYPE_DATE = 'DATE';
+        /**
+         * ReportValues for this column will use date_time_value.
+         */
+        public const DATA_TYPE_DATE_TIME = 'DATE_TIME';
+        /**
+         * The unique name of the column (for example, customer_domain,
+         * channel_partner, customer_cost). You can use column IDs in
+         * RunReportJobRequest.filter. To see all reports and their columns, call
+         * CloudChannelReportsService.ListReports.
+         *
+         * @var string
+         */
+        public $columnId;
+        /**
+         * The type of the values for this column.
+         *
+         * @var string
+         */
+        public $dataType;
+        /**
+         * The column's display name.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The unique name of the column (for example, customer_domain,
+         * channel_partner, customer_cost). You can use column IDs in
+         * RunReportJobRequest.filter. To see all reports and their columns, call
+         * CloudChannelReportsService.ListReports.
+         *
+         * @param string $columnId
+         */
+        public function setColumnId($columnId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getColumnId()
+        {
+        }
+        /**
+         * The type of the values for this column.
+         *
+         * Accepted values: DATA_TYPE_UNSPECIFIED, STRING, INT, DECIMAL, MONEY, DATE,
+         * DATE_TIME
+         *
+         * @param self::DATA_TYPE_* $dataType
+         */
+        public function setDataType($dataType)
+        {
+        }
+        /**
+         * @return self::DATA_TYPE_*
+         */
+        public function getDataType()
+        {
+        }
+        /**
+         * The column's display name.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1alpha1Column registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumnId()
-    {
-    }
-    /**
-     * The type of the values for this column.
-     *
-     * Accepted values: DATA_TYPE_UNSPECIFIED, STRING, INT, DECIMAL, MONEY, DATE,
-     * DATE_TIME
-     *
-     * @param self::DATA_TYPE_* $dataType
-     */
-    public function setDataType($dataType)
-    {
-    }
-    /**
-     * @return self::DATA_TYPE_*
-     */
-    public function getDataType()
-    {
-    }
-    /**
-     * The column's display name.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1alpha1Column extends \Google\Service\Cloudchannel\GoogleCloudChannelV1alpha1Column
     {
     }
 }

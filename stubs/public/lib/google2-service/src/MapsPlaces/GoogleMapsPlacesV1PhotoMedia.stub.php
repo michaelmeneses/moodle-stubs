@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MapsPlaces;
-
-class GoogleMapsPlacesV1PhotoMedia extends \Google\Model
-{
-    /**
-     * The resource name of a photo media in the format:
-     * `places/{place_id}/photos/{photo_reference}/media`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * A short-lived uri that can be used to render the photo.
-     *
-     * @var string
-     */
-    public $photoUri;
-    /**
-     * The resource name of a photo media in the format:
-     * `places/{place_id}/photos/{photo_reference}/media`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\MapsPlaces {
+    class GoogleMapsPlacesV1PhotoMedia extends \Google\Model
     {
+        /**
+         * The resource name of a photo media in the format:
+         * `places/{place_id}/photos/{photo_reference}/media`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * A short-lived uri that can be used to render the photo.
+         *
+         * @var string
+         */
+        public $photoUri;
+        /**
+         * The resource name of a photo media in the format:
+         * `places/{place_id}/photos/{photo_reference}/media`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * A short-lived uri that can be used to render the photo.
+         *
+         * @param string $photoUri
+         */
+        public function setPhotoUri($photoUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPhotoUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MapsPlaces\GoogleMapsPlacesV1PhotoMedia registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * A short-lived uri that can be used to render the photo.
-     *
-     * @param string $photoUri
-     */
-    public function setPhotoUri($photoUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPhotoUri()
+    class Google_Service_MapsPlaces_GoogleMapsPlacesV1PhotoMedia extends \Google\Service\MapsPlaces\GoogleMapsPlacesV1PhotoMedia
     {
     }
 }

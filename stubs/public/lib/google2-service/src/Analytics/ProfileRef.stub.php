@@ -21,150 +21,159 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics;
-
-class ProfileRef extends \Google\Model
-{
-    /**
-     * Account ID to which this view (profile) belongs.
-     *
-     * @var string
-     */
-    public $accountId;
-    /**
-     * Link for this view (profile).
-     *
-     * @var string
-     */
-    public $href;
-    /**
-     * View (Profile) ID.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Internal ID for the web property to which this view (profile) belongs.
-     *
-     * @var string
-     */
-    public $internalWebPropertyId;
-    /**
-     * Analytics view (profile) reference.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Name of this view (profile).
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Web property ID of the form UA-XXXXX-YY to which this view (profile)
-     * belongs.
-     *
-     * @var string
-     */
-    public $webPropertyId;
-    /**
-     * Account ID to which this view (profile) belongs.
-     *
-     * @param string $accountId
-     */
-    public function setAccountId($accountId)
+namespace Google\Service\Analytics {
+    class ProfileRef extends \Google\Model
     {
+        /**
+         * Account ID to which this view (profile) belongs.
+         *
+         * @var string
+         */
+        public $accountId;
+        /**
+         * Link for this view (profile).
+         *
+         * @var string
+         */
+        public $href;
+        /**
+         * View (Profile) ID.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Internal ID for the web property to which this view (profile) belongs.
+         *
+         * @var string
+         */
+        public $internalWebPropertyId;
+        /**
+         * Analytics view (profile) reference.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Name of this view (profile).
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Web property ID of the form UA-XXXXX-YY to which this view (profile)
+         * belongs.
+         *
+         * @var string
+         */
+        public $webPropertyId;
+        /**
+         * Account ID to which this view (profile) belongs.
+         *
+         * @param string $accountId
+         */
+        public function setAccountId($accountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccountId()
+        {
+        }
+        /**
+         * Link for this view (profile).
+         *
+         * @param string $href
+         */
+        public function setHref($href)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHref()
+        {
+        }
+        /**
+         * View (Profile) ID.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Internal ID for the web property to which this view (profile) belongs.
+         *
+         * @param string $internalWebPropertyId
+         */
+        public function setInternalWebPropertyId($internalWebPropertyId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInternalWebPropertyId()
+        {
+        }
+        /**
+         * Analytics view (profile) reference.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Name of this view (profile).
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Web property ID of the form UA-XXXXX-YY to which this view (profile)
+         * belongs.
+         *
+         * @param string $webPropertyId
+         */
+        public function setWebPropertyId($webPropertyId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWebPropertyId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Analytics\ProfileRef registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountId()
-    {
-    }
-    /**
-     * Link for this view (profile).
-     *
-     * @param string $href
-     */
-    public function setHref($href)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHref()
-    {
-    }
-    /**
-     * View (Profile) ID.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Internal ID for the web property to which this view (profile) belongs.
-     *
-     * @param string $internalWebPropertyId
-     */
-    public function setInternalWebPropertyId($internalWebPropertyId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInternalWebPropertyId()
-    {
-    }
-    /**
-     * Analytics view (profile) reference.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Name of this view (profile).
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Web property ID of the form UA-XXXXX-YY to which this view (profile)
-     * belongs.
-     *
-     * @param string $webPropertyId
-     */
-    public function setWebPropertyId($webPropertyId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWebPropertyId()
+    class Google_Service_Analytics_ProfileRef extends \Google\Service\Analytics\ProfileRef
     {
     }
 }

@@ -21,98 +21,107 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1Example extends \Google\Collection
-{
-    protected $collection_key = 'annotations';
-    protected $annotationsType = GoogleCloudDatalabelingV1beta1Annotation::class;
-    protected $annotationsDataType = 'array';
-    protected $imagePayloadType = GoogleCloudDatalabelingV1beta1ImagePayload::class;
-    protected $imagePayloadDataType = '';
-    /**
-     * Output only. Name of the example, in format of:
-     * projects/{project_id}/datasets/{dataset_id}/annotatedDatasets/
-     * {annotated_dataset_id}/examples/{example_id}
-     *
-     * @var string
-     */
-    public $name;
-    protected $textPayloadType = GoogleCloudDatalabelingV1beta1TextPayload::class;
-    protected $textPayloadDataType = '';
-    protected $videoPayloadType = GoogleCloudDatalabelingV1beta1VideoPayload::class;
-    protected $videoPayloadDataType = '';
-    /**
-     * Output only. Annotations for the piece of data in Example. One piece of
-     * data can have multiple annotations.
-     *
-     * @param GoogleCloudDatalabelingV1beta1Annotation[] $annotations
-     */
-    public function setAnnotations($annotations)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1Example extends \Google\Collection
     {
+        protected $collection_key = 'annotations';
+        protected $annotationsType = GoogleCloudDatalabelingV1beta1Annotation::class;
+        protected $annotationsDataType = 'array';
+        protected $imagePayloadType = GoogleCloudDatalabelingV1beta1ImagePayload::class;
+        protected $imagePayloadDataType = '';
+        /**
+         * Output only. Name of the example, in format of:
+         * projects/{project_id}/datasets/{dataset_id}/annotatedDatasets/
+         * {annotated_dataset_id}/examples/{example_id}
+         *
+         * @var string
+         */
+        public $name;
+        protected $textPayloadType = GoogleCloudDatalabelingV1beta1TextPayload::class;
+        protected $textPayloadDataType = '';
+        protected $videoPayloadType = GoogleCloudDatalabelingV1beta1VideoPayload::class;
+        protected $videoPayloadDataType = '';
+        /**
+         * Output only. Annotations for the piece of data in Example. One piece of
+         * data can have multiple annotations.
+         *
+         * @param GoogleCloudDatalabelingV1beta1Annotation[] $annotations
+         */
+        public function setAnnotations($annotations)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1Annotation[]
+         */
+        public function getAnnotations()
+        {
+        }
+        /**
+         * The image payload, a container of the image bytes/uri.
+         *
+         * @param GoogleCloudDatalabelingV1beta1ImagePayload $imagePayload
+         */
+        public function setImagePayload(GoogleCloudDatalabelingV1beta1ImagePayload $imagePayload)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1ImagePayload
+         */
+        public function getImagePayload()
+        {
+        }
+        /**
+         * Output only. Name of the example, in format of:
+         * projects/{project_id}/datasets/{dataset_id}/annotatedDatasets/
+         * {annotated_dataset_id}/examples/{example_id}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The text payload, a container of the text content.
+         *
+         * @param GoogleCloudDatalabelingV1beta1TextPayload $textPayload
+         */
+        public function setTextPayload(GoogleCloudDatalabelingV1beta1TextPayload $textPayload)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1TextPayload
+         */
+        public function getTextPayload()
+        {
+        }
+        /**
+         * The video payload, a container of the video uri.
+         *
+         * @param GoogleCloudDatalabelingV1beta1VideoPayload $videoPayload
+         */
+        public function setVideoPayload(GoogleCloudDatalabelingV1beta1VideoPayload $videoPayload)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1VideoPayload
+         */
+        public function getVideoPayload()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatalabelingV1beta1Annotation[]
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1Example registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotations()
-    {
-    }
-    /**
-     * The image payload, a container of the image bytes/uri.
-     *
-     * @param GoogleCloudDatalabelingV1beta1ImagePayload $imagePayload
-     */
-    public function setImagePayload(GoogleCloudDatalabelingV1beta1ImagePayload $imagePayload)
-    {
-    }
-    /**
-     * @return GoogleCloudDatalabelingV1beta1ImagePayload
-     */
-    public function getImagePayload()
-    {
-    }
-    /**
-     * Output only. Name of the example, in format of:
-     * projects/{project_id}/datasets/{dataset_id}/annotatedDatasets/
-     * {annotated_dataset_id}/examples/{example_id}
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The text payload, a container of the text content.
-     *
-     * @param GoogleCloudDatalabelingV1beta1TextPayload $textPayload
-     */
-    public function setTextPayload(GoogleCloudDatalabelingV1beta1TextPayload $textPayload)
-    {
-    }
-    /**
-     * @return GoogleCloudDatalabelingV1beta1TextPayload
-     */
-    public function getTextPayload()
-    {
-    }
-    /**
-     * The video payload, a container of the video uri.
-     *
-     * @param GoogleCloudDatalabelingV1beta1VideoPayload $videoPayload
-     */
-    public function setVideoPayload(GoogleCloudDatalabelingV1beta1VideoPayload $videoPayload)
-    {
-    }
-    /**
-     * @return GoogleCloudDatalabelingV1beta1VideoPayload
-     */
-    public function getVideoPayload()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1Example extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1Example
     {
     }
 }

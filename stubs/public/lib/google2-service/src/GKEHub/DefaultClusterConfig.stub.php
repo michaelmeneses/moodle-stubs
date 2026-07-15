@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class DefaultClusterConfig extends \Google\Model
-{
-    protected $binaryAuthorizationConfigType = BinaryAuthorizationConfig::class;
-    protected $binaryAuthorizationConfigDataType = '';
-    protected $securityPostureConfigType = SecurityPostureConfig::class;
-    protected $securityPostureConfigDataType = '';
-    /**
-     * @param BinaryAuthorizationConfig
-     */
-    public function setBinaryAuthorizationConfig(BinaryAuthorizationConfig $binaryAuthorizationConfig)
+namespace Google\Service\GKEHub {
+    class DefaultClusterConfig extends \Google\Model
     {
+        protected $binaryAuthorizationConfigType = BinaryAuthorizationConfig::class;
+        protected $binaryAuthorizationConfigDataType = '';
+        protected $securityPostureConfigType = SecurityPostureConfig::class;
+        protected $securityPostureConfigDataType = '';
+        /**
+         * @param BinaryAuthorizationConfig
+         */
+        public function setBinaryAuthorizationConfig(BinaryAuthorizationConfig $binaryAuthorizationConfig)
+        {
+        }
+        /**
+         * @return BinaryAuthorizationConfig
+         */
+        public function getBinaryAuthorizationConfig()
+        {
+        }
+        /**
+         * @param SecurityPostureConfig
+         */
+        public function setSecurityPostureConfig(SecurityPostureConfig $securityPostureConfig)
+        {
+        }
+        /**
+         * @return SecurityPostureConfig
+         */
+        public function getSecurityPostureConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BinaryAuthorizationConfig
+     * Runtime class alias of \Google\Service\GKEHub\DefaultClusterConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBinaryAuthorizationConfig()
-    {
-    }
-    /**
-     * @param SecurityPostureConfig
-     */
-    public function setSecurityPostureConfig(SecurityPostureConfig $securityPostureConfig)
-    {
-    }
-    /**
-     * @return SecurityPostureConfig
-     */
-    public function getSecurityPostureConfig()
+    class Google_Service_GKEHub_DefaultClusterConfig extends \Google\Service\GKEHub\DefaultClusterConfig
     {
     }
 }

@@ -21,85 +21,94 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class DomainMappingStatus extends \Google\Collection
-{
-    protected $collection_key = 'resourceRecords';
-    protected $conditionsType = GoogleCloudRunV1Condition::class;
-    protected $conditionsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $mappedRouteName;
-    /**
-     * @var int
-     */
-    public $observedGeneration;
-    protected $resourceRecordsType = ResourceRecord::class;
-    protected $resourceRecordsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $url;
-    /**
-     * @param GoogleCloudRunV1Condition[]
-     */
-    public function setConditions($conditions)
+namespace Google\Service\CloudRun {
+    class DomainMappingStatus extends \Google\Collection
     {
+        protected $collection_key = 'resourceRecords';
+        protected $conditionsType = GoogleCloudRunV1Condition::class;
+        protected $conditionsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $mappedRouteName;
+        /**
+         * @var int
+         */
+        public $observedGeneration;
+        protected $resourceRecordsType = ResourceRecord::class;
+        protected $resourceRecordsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $url;
+        /**
+         * @param GoogleCloudRunV1Condition[]
+         */
+        public function setConditions($conditions)
+        {
+        }
+        /**
+         * @return GoogleCloudRunV1Condition[]
+         */
+        public function getConditions()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMappedRouteName($mappedRouteName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMappedRouteName()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setObservedGeneration($observedGeneration)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getObservedGeneration()
+        {
+        }
+        /**
+         * @param ResourceRecord[]
+         */
+        public function setResourceRecords($resourceRecords)
+        {
+        }
+        /**
+         * @return ResourceRecord[]
+         */
+        public function getResourceRecords()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRunV1Condition[]
+     * Runtime class alias of \Google\Service\CloudRun\DomainMappingStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConditions()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMappedRouteName($mappedRouteName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMappedRouteName()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setObservedGeneration($observedGeneration)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getObservedGeneration()
-    {
-    }
-    /**
-     * @param ResourceRecord[]
-     */
-    public function setResourceRecords($resourceRecords)
-    {
-    }
-    /**
-     * @return ResourceRecord[]
-     */
-    public function getResourceRecords()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
+    class Google_Service_CloudRun_DomainMappingStatus extends \Google\Service\CloudRun\DomainMappingStatus
     {
     }
 }

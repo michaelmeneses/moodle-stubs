@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1SecurityProfileEnvironment extends \Google\Model
-{
-    /**
-     * Output only. Time at which environment was attached to the security
-     * profile.
-     *
-     * @var string
-     */
-    public $attachTime;
-    /**
-     * Output only. Name of the environment.
-     *
-     * @var string
-     */
-    public $environment;
-    /**
-     * Output only. Time at which environment was attached to the security
-     * profile.
-     *
-     * @param string $attachTime
-     */
-    public function setAttachTime($attachTime)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1SecurityProfileEnvironment extends \Google\Model
     {
+        /**
+         * Output only. Time at which environment was attached to the security
+         * profile.
+         *
+         * @var string
+         */
+        public $attachTime;
+        /**
+         * Output only. Name of the environment.
+         *
+         * @var string
+         */
+        public $environment;
+        /**
+         * Output only. Time at which environment was attached to the security
+         * profile.
+         *
+         * @param string $attachTime
+         */
+        public function setAttachTime($attachTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAttachTime()
+        {
+        }
+        /**
+         * Output only. Name of the environment.
+         *
+         * @param string $environment
+         */
+        public function setEnvironment($environment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEnvironment()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1SecurityProfileEnvironment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttachTime()
-    {
-    }
-    /**
-     * Output only. Name of the environment.
-     *
-     * @param string $environment
-     */
-    public function setEnvironment($environment)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEnvironment()
+    class Google_Service_Apigee_GoogleCloudApigeeV1SecurityProfileEnvironment extends \Google\Service\Apigee\GoogleCloudApigeeV1SecurityProfileEnvironment
     {
     }
 }

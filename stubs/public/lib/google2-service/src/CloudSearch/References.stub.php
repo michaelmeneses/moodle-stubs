@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class References extends \Google\Collection
-{
-    protected $collection_key = 'references';
-    protected $referencesType = Reference::class;
-    protected $referencesDataType = 'array';
-    /**
-     * @param Reference[]
-     */
-    public function setReferences($references)
+namespace Google\Service\CloudSearch {
+    class References extends \Google\Collection
     {
+        protected $collection_key = 'references';
+        protected $referencesType = Reference::class;
+        protected $referencesDataType = 'array';
+        /**
+         * @param Reference[]
+         */
+        public function setReferences($references)
+        {
+        }
+        /**
+         * @return Reference[]
+         */
+        public function getReferences()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Reference[]
+     * Runtime class alias of \Google\Service\CloudSearch\References registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReferences()
+    class Google_Service_CloudSearch_References extends \Google\Service\CloudSearch\References
     {
     }
 }

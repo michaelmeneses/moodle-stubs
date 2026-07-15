@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1ApigeeEdgeConfig extends \Google\Model
-{
-    protected $environmentFilterType = GoogleCloudApihubV1EnvironmentFilter::class;
-    protected $environmentFilterDataType = '';
-    /**
-     * Optional. The filter to apply on the resources managed by the gateway
-     * plugin instance. If provided this filter applies environment specific
-     * filtering.
-     *
-     * @param GoogleCloudApihubV1EnvironmentFilter $environmentFilter
-     */
-    public function setEnvironmentFilter(GoogleCloudApihubV1EnvironmentFilter $environmentFilter)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1ApigeeEdgeConfig extends \Google\Model
     {
+        protected $environmentFilterType = GoogleCloudApihubV1EnvironmentFilter::class;
+        protected $environmentFilterDataType = '';
+        /**
+         * Optional. The filter to apply on the resources managed by the gateway
+         * plugin instance. If provided this filter applies environment specific
+         * filtering.
+         *
+         * @param GoogleCloudApihubV1EnvironmentFilter $environmentFilter
+         */
+        public function setEnvironmentFilter(GoogleCloudApihubV1EnvironmentFilter $environmentFilter)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1EnvironmentFilter
+         */
+        public function getEnvironmentFilter()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApihubV1EnvironmentFilter
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1ApigeeEdgeConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnvironmentFilter()
+    class Google_Service_APIhub_GoogleCloudApihubV1ApigeeEdgeConfig extends \Google\Service\APIhub\GoogleCloudApihubV1ApigeeEdgeConfig
     {
     }
 }

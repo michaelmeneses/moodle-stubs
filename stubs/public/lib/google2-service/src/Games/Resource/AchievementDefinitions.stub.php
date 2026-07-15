@@ -21,35 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Games\Resource;
-
-/**
- * The "achievementDefinitions" collection of methods.
- * Typical usage is:
- *  <code>
- *   $gamesService = new Google\Service\Games(...);
- *   $achievementDefinitions = $gamesService->achievementDefinitions;
- *  </code>
- */
-class AchievementDefinitions extends \Google\Service\Resource
-{
+namespace Google\Service\Games\Resource {
+    use Google\Service\Games\AchievementDefinitionsListResponse;
     /**
-     * Lists all the achievement definitions for your application.
-     * (achievementDefinitions.listAchievementDefinitions)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string language The preferred language to use for strings returned
-     * by this method.
-     * @opt_param int maxResults The maximum number of achievement resources to
-     * return in the response, used for paging. For any response, the actual number
-     * of achievement resources returned may be less than the specified
-     * `maxResults`.
-     * @opt_param string pageToken The token returned by the previous request.
-     * @return AchievementDefinitionsListResponse
-     * @throws \Google\Service\Exception
+     * The "achievementDefinitions" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $gamesService = new Google\Service\Games(...);
+     *   $achievementDefinitions = $gamesService->achievementDefinitions;
+     *  </code>
      */
-    public function listAchievementDefinitions($optParams = [])
+    class AchievementDefinitions extends \Google\Service\Resource
+    {
+        /**
+         * Lists all the achievement definitions for your application.
+         * (achievementDefinitions.listAchievementDefinitions)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string language The preferred language to use for strings returned
+         * by this method.
+         * @opt_param int maxResults The maximum number of achievement resources to
+         * return in the response, used for paging. For any response, the actual number
+         * of achievement resources returned may be less than the specified
+         * `maxResults`.
+         * @opt_param string pageToken The token returned by the previous request.
+         * @return AchievementDefinitionsListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listAchievementDefinitions($optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Games\Resource\AchievementDefinitions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Games_Resource_AchievementDefinitions extends \Google\Service\Games\Resource\AchievementDefinitions
     {
     }
 }

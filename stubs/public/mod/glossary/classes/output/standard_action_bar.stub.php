@@ -22,6 +22,13 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_glossary\output;
 
+use moodle_url;
+use context_module;
+use renderable;
+use renderer_base;
+use single_button;
+use templatable;
+use url_select;
 /**
  * Class standard_action_bar - Display the action bar
  *

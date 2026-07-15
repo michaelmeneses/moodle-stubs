@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAlloyDBAdmin;
-
-class ConnectionPoolConfig extends \Google\Model
-{
-    /**
-     * Optional. Whether to enable Managed Connection Pool (MCP).
-     *
-     * @var bool
-     */
-    public $enabled;
-    /**
-     * Optional. Connection Pool flags, as a list of "key": "value" pairs.
-     *
-     * @var string[]
-     */
-    public $flags;
-    /**
-     * Output only. The number of running poolers per instance.
-     *
-     * @var int
-     */
-    public $poolerCount;
-    /**
-     * Optional. Whether to enable Managed Connection Pool (MCP).
-     *
-     * @param bool $enabled
-     */
-    public function setEnabled($enabled)
+namespace Google\Service\CloudAlloyDBAdmin {
+    class ConnectionPoolConfig extends \Google\Model
     {
+        /**
+         * Optional. Whether to enable Managed Connection Pool (MCP).
+         *
+         * @var bool
+         */
+        public $enabled;
+        /**
+         * Optional. Connection Pool flags, as a list of "key": "value" pairs.
+         *
+         * @var string[]
+         */
+        public $flags;
+        /**
+         * Output only. The number of running poolers per instance.
+         *
+         * @var int
+         */
+        public $poolerCount;
+        /**
+         * Optional. Whether to enable Managed Connection Pool (MCP).
+         *
+         * @param bool $enabled
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
+        /**
+         * Optional. Connection Pool flags, as a list of "key": "value" pairs.
+         *
+         * @param string[] $flags
+         */
+        public function setFlags($flags)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getFlags()
+        {
+        }
+        /**
+         * Output only. The number of running poolers per instance.
+         *
+         * @param int $poolerCount
+         */
+        public function setPoolerCount($poolerCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPoolerCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudAlloyDBAdmin\ConnectionPoolConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnabled()
-    {
-    }
-    /**
-     * Optional. Connection Pool flags, as a list of "key": "value" pairs.
-     *
-     * @param string[] $flags
-     */
-    public function setFlags($flags)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getFlags()
-    {
-    }
-    /**
-     * Output only. The number of running poolers per instance.
-     *
-     * @param int $poolerCount
-     */
-    public function setPoolerCount($poolerCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPoolerCount()
+    class Google_Service_CloudAlloyDBAdmin_ConnectionPoolConfig extends \Google\Service\CloudAlloyDBAdmin\ConnectionPoolConfig
     {
     }
 }

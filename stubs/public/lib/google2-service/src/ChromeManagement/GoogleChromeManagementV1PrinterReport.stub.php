@@ -21,130 +21,139 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementV1PrinterReport extends \Google\Model
-{
-    /**
-     * Number of chrome devices that have been used to send print jobs to the
-     * specified printer.
-     *
-     * @var string
-     */
-    public $deviceCount;
-    /**
-     * Number of print jobs sent to the printer.
-     *
-     * @var string
-     */
-    public $jobCount;
-    /**
-     * Printer name.
-     *
-     * @var string
-     */
-    public $printer;
-    /**
-     * Printer API ID.
-     *
-     * @var string
-     */
-    public $printerId;
-    /**
-     * Printer model.
-     *
-     * @var string
-     */
-    public $printerModel;
-    /**
-     * Number of users that have sent print jobs to the printer.
-     *
-     * @var string
-     */
-    public $userCount;
-    /**
-     * Number of chrome devices that have been used to send print jobs to the
-     * specified printer.
-     *
-     * @param string $deviceCount
-     */
-    public function setDeviceCount($deviceCount)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementV1PrinterReport extends \Google\Model
     {
+        /**
+         * Number of chrome devices that have been used to send print jobs to the
+         * specified printer.
+         *
+         * @var string
+         */
+        public $deviceCount;
+        /**
+         * Number of print jobs sent to the printer.
+         *
+         * @var string
+         */
+        public $jobCount;
+        /**
+         * Printer name.
+         *
+         * @var string
+         */
+        public $printer;
+        /**
+         * Printer API ID.
+         *
+         * @var string
+         */
+        public $printerId;
+        /**
+         * Printer model.
+         *
+         * @var string
+         */
+        public $printerModel;
+        /**
+         * Number of users that have sent print jobs to the printer.
+         *
+         * @var string
+         */
+        public $userCount;
+        /**
+         * Number of chrome devices that have been used to send print jobs to the
+         * specified printer.
+         *
+         * @param string $deviceCount
+         */
+        public function setDeviceCount($deviceCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeviceCount()
+        {
+        }
+        /**
+         * Number of print jobs sent to the printer.
+         *
+         * @param string $jobCount
+         */
+        public function setJobCount($jobCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getJobCount()
+        {
+        }
+        /**
+         * Printer name.
+         *
+         * @param string $printer
+         */
+        public function setPrinter($printer)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrinter()
+        {
+        }
+        /**
+         * Printer API ID.
+         *
+         * @param string $printerId
+         */
+        public function setPrinterId($printerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrinterId()
+        {
+        }
+        /**
+         * Printer model.
+         *
+         * @param string $printerModel
+         */
+        public function setPrinterModel($printerModel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrinterModel()
+        {
+        }
+        /**
+         * Number of users that have sent print jobs to the printer.
+         *
+         * @param string $userCount
+         */
+        public function setUserCount($userCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementV1PrinterReport registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeviceCount()
-    {
-    }
-    /**
-     * Number of print jobs sent to the printer.
-     *
-     * @param string $jobCount
-     */
-    public function setJobCount($jobCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getJobCount()
-    {
-    }
-    /**
-     * Printer name.
-     *
-     * @param string $printer
-     */
-    public function setPrinter($printer)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrinter()
-    {
-    }
-    /**
-     * Printer API ID.
-     *
-     * @param string $printerId
-     */
-    public function setPrinterId($printerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrinterId()
-    {
-    }
-    /**
-     * Printer model.
-     *
-     * @param string $printerModel
-     */
-    public function setPrinterModel($printerModel)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrinterModel()
-    {
-    }
-    /**
-     * Number of users that have sent print jobs to the printer.
-     *
-     * @param string $userCount
-     */
-    public function setUserCount($userCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserCount()
+    class Google_Service_ChromeManagement_GoogleChromeManagementV1PrinterReport extends \Google\Service\ChromeManagement\GoogleChromeManagementV1PrinterReport
     {
     }
 }

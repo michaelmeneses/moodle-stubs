@@ -21,113 +21,122 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BinaryAuthorization;
-
-class Attestor extends \Google\Model
-{
-    /**
-     * Optional. A descriptive comment. This field may be updated. The field may
-     * be displayed in chooser dialogs.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Optional. A checksum, returned by the server, that can be sent on update
-     * requests to ensure the attestor has an up-to-date value before attempting
-     * to update it. See https://google.aip.dev/154.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * Required. The resource name, in the format: `projects/attestors`. This
-     * field may not be updated.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. Time when the attestor was last updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    protected $userOwnedGrafeasNoteType = UserOwnedGrafeasNote::class;
-    protected $userOwnedGrafeasNoteDataType = '';
-    /**
-     * Optional. A descriptive comment. This field may be updated. The field may
-     * be displayed in chooser dialogs.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\BinaryAuthorization {
+    class Attestor extends \Google\Model
     {
+        /**
+         * Optional. A descriptive comment. This field may be updated. The field may
+         * be displayed in chooser dialogs.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Optional. A checksum, returned by the server, that can be sent on update
+         * requests to ensure the attestor has an up-to-date value before attempting
+         * to update it. See https://google.aip.dev/154.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * Required. The resource name, in the format: `projects/attestors`. This
+         * field may not be updated.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. Time when the attestor was last updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        protected $userOwnedGrafeasNoteType = UserOwnedGrafeasNote::class;
+        protected $userOwnedGrafeasNoteDataType = '';
+        /**
+         * Optional. A descriptive comment. This field may be updated. The field may
+         * be displayed in chooser dialogs.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Optional. A checksum, returned by the server, that can be sent on update
+         * requests to ensure the attestor has an up-to-date value before attempting
+         * to update it. See https://google.aip.dev/154.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * Required. The resource name, in the format: `projects/attestors`. This
+         * field may not be updated.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. Time when the attestor was last updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
+        /**
+         * This specifies how an attestation will be read, and how it will be used
+         * during policy enforcement.
+         *
+         * @param UserOwnedGrafeasNote $userOwnedGrafeasNote
+         */
+        public function setUserOwnedGrafeasNote(UserOwnedGrafeasNote $userOwnedGrafeasNote)
+        {
+        }
+        /**
+         * @return UserOwnedGrafeasNote
+         */
+        public function getUserOwnedGrafeasNote()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BinaryAuthorization\Attestor registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * Optional. A checksum, returned by the server, that can be sent on update
-     * requests to ensure the attestor has an up-to-date value before attempting
-     * to update it. See https://google.aip.dev/154.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * Required. The resource name, in the format: `projects/attestors`. This
-     * field may not be updated.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. Time when the attestor was last updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
-    {
-    }
-    /**
-     * This specifies how an attestation will be read, and how it will be used
-     * during policy enforcement.
-     *
-     * @param UserOwnedGrafeasNote $userOwnedGrafeasNote
-     */
-    public function setUserOwnedGrafeasNote(UserOwnedGrafeasNote $userOwnedGrafeasNote)
-    {
-    }
-    /**
-     * @return UserOwnedGrafeasNote
-     */
-    public function getUserOwnedGrafeasNote()
+    class Google_Service_BinaryAuthorization_Attestor extends \Google\Service\BinaryAuthorization\Attestor
     {
     }
 }

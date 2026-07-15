@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1TimeSegment extends \Google\Model
-{
-    /**
-     * End of the time segment (exclusive), represented as the duration since the
-     * example start.
-     *
-     * @var string
-     */
-    public $endTimeOffset;
-    /**
-     * Start of the time segment (inclusive), represented as the duration since
-     * the example start.
-     *
-     * @var string
-     */
-    public $startTimeOffset;
-    /**
-     * End of the time segment (exclusive), represented as the duration since the
-     * example start.
-     *
-     * @param string $endTimeOffset
-     */
-    public function setEndTimeOffset($endTimeOffset)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1TimeSegment extends \Google\Model
     {
+        /**
+         * End of the time segment (exclusive), represented as the duration since the
+         * example start.
+         *
+         * @var string
+         */
+        public $endTimeOffset;
+        /**
+         * Start of the time segment (inclusive), represented as the duration since
+         * the example start.
+         *
+         * @var string
+         */
+        public $startTimeOffset;
+        /**
+         * End of the time segment (exclusive), represented as the duration since the
+         * example start.
+         *
+         * @param string $endTimeOffset
+         */
+        public function setEndTimeOffset($endTimeOffset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTimeOffset()
+        {
+        }
+        /**
+         * Start of the time segment (inclusive), represented as the duration since
+         * the example start.
+         *
+         * @param string $startTimeOffset
+         */
+        public function setStartTimeOffset($startTimeOffset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTimeOffset()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1TimeSegment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndTimeOffset()
-    {
-    }
-    /**
-     * Start of the time segment (inclusive), represented as the duration since
-     * the example start.
-     *
-     * @param string $startTimeOffset
-     */
-    public function setStartTimeOffset($startTimeOffset)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTimeOffset()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1TimeSegment extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1TimeSegment
     {
     }
 }

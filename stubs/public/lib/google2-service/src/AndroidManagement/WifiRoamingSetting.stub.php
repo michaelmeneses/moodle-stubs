@@ -21,77 +21,86 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class WifiRoamingSetting extends \Google\Model
-{
-    /**
-     * Unspecified. Defaults to WIFI_ROAMING_DEFAULT.
-     */
-    public const WIFI_ROAMING_MODE_WIFI_ROAMING_MODE_UNSPECIFIED = 'WIFI_ROAMING_MODE_UNSPECIFIED';
-    /**
-     * Wi-Fi roaming is disabled. Supported on Android 15 and above on fully
-     * managed devices and work profiles on company-owned devices. A
-     * NonComplianceDetail with MANAGEMENT_MODE is reported for other management
-     * modes. A NonComplianceDetail with API_LEVEL is reported if the Android
-     * version is less than 15.
-     */
-    public const WIFI_ROAMING_MODE_WIFI_ROAMING_DISABLED = 'WIFI_ROAMING_DISABLED';
-    /**
-     * Default Wi-Fi roaming mode of the device.
-     */
-    public const WIFI_ROAMING_MODE_WIFI_ROAMING_DEFAULT = 'WIFI_ROAMING_DEFAULT';
-    /**
-     * Aggressive roaming mode which allows quicker Wi-Fi roaming. Supported on
-     * Android 15 and above on fully managed devices and work profiles on company-
-     * owned devices. A NonComplianceDetail with MANAGEMENT_MODE is reported for
-     * other management modes. A NonComplianceDetail with API_LEVEL is reported if
-     * the Android version is less than 15. A NonComplianceDetail with
-     * DEVICE_INCOMPATIBLE is reported if the device does not support aggressive
-     * roaming mode.
-     */
-    public const WIFI_ROAMING_MODE_WIFI_ROAMING_AGGRESSIVE = 'WIFI_ROAMING_AGGRESSIVE';
-    /**
-     * Required. Wi-Fi roaming mode for the specified SSID.
-     *
-     * @var string
-     */
-    public $wifiRoamingMode;
-    /**
-     * Required. SSID of the Wi-Fi network.
-     *
-     * @var string
-     */
-    public $wifiSsid;
-    /**
-     * Required. Wi-Fi roaming mode for the specified SSID.
-     *
-     * Accepted values: WIFI_ROAMING_MODE_UNSPECIFIED, WIFI_ROAMING_DISABLED,
-     * WIFI_ROAMING_DEFAULT, WIFI_ROAMING_AGGRESSIVE
-     *
-     * @param self::WIFI_ROAMING_MODE_* $wifiRoamingMode
-     */
-    public function setWifiRoamingMode($wifiRoamingMode)
+namespace Google\Service\AndroidManagement {
+    class WifiRoamingSetting extends \Google\Model
     {
+        /**
+         * Unspecified. Defaults to WIFI_ROAMING_DEFAULT.
+         */
+        public const WIFI_ROAMING_MODE_WIFI_ROAMING_MODE_UNSPECIFIED = 'WIFI_ROAMING_MODE_UNSPECIFIED';
+        /**
+         * Wi-Fi roaming is disabled. Supported on Android 15 and above on fully
+         * managed devices and work profiles on company-owned devices. A
+         * NonComplianceDetail with MANAGEMENT_MODE is reported for other management
+         * modes. A NonComplianceDetail with API_LEVEL is reported if the Android
+         * version is less than 15.
+         */
+        public const WIFI_ROAMING_MODE_WIFI_ROAMING_DISABLED = 'WIFI_ROAMING_DISABLED';
+        /**
+         * Default Wi-Fi roaming mode of the device.
+         */
+        public const WIFI_ROAMING_MODE_WIFI_ROAMING_DEFAULT = 'WIFI_ROAMING_DEFAULT';
+        /**
+         * Aggressive roaming mode which allows quicker Wi-Fi roaming. Supported on
+         * Android 15 and above on fully managed devices and work profiles on company-
+         * owned devices. A NonComplianceDetail with MANAGEMENT_MODE is reported for
+         * other management modes. A NonComplianceDetail with API_LEVEL is reported if
+         * the Android version is less than 15. A NonComplianceDetail with
+         * DEVICE_INCOMPATIBLE is reported if the device does not support aggressive
+         * roaming mode.
+         */
+        public const WIFI_ROAMING_MODE_WIFI_ROAMING_AGGRESSIVE = 'WIFI_ROAMING_AGGRESSIVE';
+        /**
+         * Required. Wi-Fi roaming mode for the specified SSID.
+         *
+         * @var string
+         */
+        public $wifiRoamingMode;
+        /**
+         * Required. SSID of the Wi-Fi network.
+         *
+         * @var string
+         */
+        public $wifiSsid;
+        /**
+         * Required. Wi-Fi roaming mode for the specified SSID.
+         *
+         * Accepted values: WIFI_ROAMING_MODE_UNSPECIFIED, WIFI_ROAMING_DISABLED,
+         * WIFI_ROAMING_DEFAULT, WIFI_ROAMING_AGGRESSIVE
+         *
+         * @param self::WIFI_ROAMING_MODE_* $wifiRoamingMode
+         */
+        public function setWifiRoamingMode($wifiRoamingMode)
+        {
+        }
+        /**
+         * @return self::WIFI_ROAMING_MODE_*
+         */
+        public function getWifiRoamingMode()
+        {
+        }
+        /**
+         * Required. SSID of the Wi-Fi network.
+         *
+         * @param string $wifiSsid
+         */
+        public function setWifiSsid($wifiSsid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWifiSsid()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::WIFI_ROAMING_MODE_*
+     * Runtime class alias of \Google\Service\AndroidManagement\WifiRoamingSetting registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getWifiRoamingMode()
-    {
-    }
-    /**
-     * Required. SSID of the Wi-Fi network.
-     *
-     * @param string $wifiSsid
-     */
-    public function setWifiSsid($wifiSsid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWifiSsid()
+    class Google_Service_AndroidManagement_WifiRoamingSetting extends \Google\Service\AndroidManagement\WifiRoamingSetting
     {
     }
 }

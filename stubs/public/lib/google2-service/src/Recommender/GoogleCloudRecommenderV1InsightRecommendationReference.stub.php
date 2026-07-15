@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Recommender;
-
-class GoogleCloudRecommenderV1InsightRecommendationReference extends \Google\Model
-{
-    /**
-     * Recommendation resource name, e.g. projects/[PROJECT_NUMBER]/locations/[LOC
-     * ATION]/recommenders/[RECOMMENDER_ID]/recommendations/[RECOMMENDATION_ID]
-     *
-     * @var string
-     */
-    public $recommendation;
-    /**
-     * Recommendation resource name, e.g. projects/[PROJECT_NUMBER]/locations/[LOC
-     * ATION]/recommenders/[RECOMMENDER_ID]/recommendations/[RECOMMENDATION_ID]
-     *
-     * @param string $recommendation
-     */
-    public function setRecommendation($recommendation)
+namespace Google\Service\Recommender {
+    class GoogleCloudRecommenderV1InsightRecommendationReference extends \Google\Model
     {
+        /**
+         * Recommendation resource name, e.g. projects/[PROJECT_NUMBER]/locations/[LOC
+         * ATION]/recommenders/[RECOMMENDER_ID]/recommendations/[RECOMMENDATION_ID]
+         *
+         * @var string
+         */
+        public $recommendation;
+        /**
+         * Recommendation resource name, e.g. projects/[PROJECT_NUMBER]/locations/[LOC
+         * ATION]/recommenders/[RECOMMENDER_ID]/recommendations/[RECOMMENDATION_ID]
+         *
+         * @param string $recommendation
+         */
+        public function setRecommendation($recommendation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRecommendation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Recommender\GoogleCloudRecommenderV1InsightRecommendationReference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRecommendation()
+    class Google_Service_Recommender_GoogleCloudRecommenderV1InsightRecommendationReference extends \Google\Service\Recommender\GoogleCloudRecommenderV1InsightRecommendationReference
     {
     }
 }

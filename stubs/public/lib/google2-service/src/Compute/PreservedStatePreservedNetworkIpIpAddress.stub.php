@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class PreservedStatePreservedNetworkIpIpAddress extends \Google\Model
-{
-    /**
-     * The URL of the reservation for this IP address.
-     *
-     * @var string
-     */
-    public $address;
-    /**
-     * An IPv4 internal network address to assign to the instance for this network
-     * interface.
-     *
-     * @var string
-     */
-    public $literal;
-    /**
-     * The URL of the reservation for this IP address.
-     *
-     * @param string $address
-     */
-    public function setAddress($address)
+namespace Google\Service\Compute {
+    class PreservedStatePreservedNetworkIpIpAddress extends \Google\Model
     {
+        /**
+         * The URL of the reservation for this IP address.
+         *
+         * @var string
+         */
+        public $address;
+        /**
+         * An IPv4 internal network address to assign to the instance for this network
+         * interface.
+         *
+         * @var string
+         */
+        public $literal;
+        /**
+         * The URL of the reservation for this IP address.
+         *
+         * @param string $address
+         */
+        public function setAddress($address)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAddress()
+        {
+        }
+        /**
+         * An IPv4 internal network address to assign to the instance for this network
+         * interface.
+         *
+         * @param string $literal
+         */
+        public function setLiteral($literal)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLiteral()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\PreservedStatePreservedNetworkIpIpAddress registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddress()
-    {
-    }
-    /**
-     * An IPv4 internal network address to assign to the instance for this network
-     * interface.
-     *
-     * @param string $literal
-     */
-    public function setLiteral($literal)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLiteral()
+    class Google_Service_Compute_PreservedStatePreservedNetworkIpIpAddress extends \Google\Service\Compute\PreservedStatePreservedNetworkIpIpAddress
     {
     }
 }

@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Essentialcontacts;
-
-class GoogleCloudEssentialcontactsV1ComputeContactsResponse extends \Google\Collection
-{
-    protected $collection_key = 'contacts';
-    protected $contactsType = GoogleCloudEssentialcontactsV1Contact::class;
-    protected $contactsDataType = 'array';
-    /**
-     * If there are more results than those appearing in this response, then
-     * `next_page_token` is included. To get the next set of results, call this
-     * method again using the value of `next_page_token` as `page_token` and the
-     * rest of the parameters the same as the original request.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * All contacts for the resource that are subscribed to the specified
-     * notification categories, including contacts inherited from any parent
-     * resources.
-     *
-     * @param GoogleCloudEssentialcontactsV1Contact[] $contacts
-     */
-    public function setContacts($contacts)
+namespace Google\Service\Essentialcontacts {
+    class GoogleCloudEssentialcontactsV1ComputeContactsResponse extends \Google\Collection
     {
+        protected $collection_key = 'contacts';
+        protected $contactsType = GoogleCloudEssentialcontactsV1Contact::class;
+        protected $contactsDataType = 'array';
+        /**
+         * If there are more results than those appearing in this response, then
+         * `next_page_token` is included. To get the next set of results, call this
+         * method again using the value of `next_page_token` as `page_token` and the
+         * rest of the parameters the same as the original request.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * All contacts for the resource that are subscribed to the specified
+         * notification categories, including contacts inherited from any parent
+         * resources.
+         *
+         * @param GoogleCloudEssentialcontactsV1Contact[] $contacts
+         */
+        public function setContacts($contacts)
+        {
+        }
+        /**
+         * @return GoogleCloudEssentialcontactsV1Contact[]
+         */
+        public function getContacts()
+        {
+        }
+        /**
+         * If there are more results than those appearing in this response, then
+         * `next_page_token` is included. To get the next set of results, call this
+         * method again using the value of `next_page_token` as `page_token` and the
+         * rest of the parameters the same as the original request.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudEssentialcontactsV1Contact[]
+     * Runtime class alias of \Google\Service\Essentialcontacts\GoogleCloudEssentialcontactsV1ComputeContactsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContacts()
-    {
-    }
-    /**
-     * If there are more results than those appearing in this response, then
-     * `next_page_token` is included. To get the next set of results, call this
-     * method again using the value of `next_page_token` as `page_token` and the
-     * rest of the parameters the same as the original request.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Essentialcontacts_GoogleCloudEssentialcontactsV1ComputeContactsResponse extends \Google\Service\Essentialcontacts\GoogleCloudEssentialcontactsV1ComputeContactsResponse
     {
     }
 }

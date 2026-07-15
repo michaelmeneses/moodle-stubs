@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AlertCenter;
-
-class PrimaryAdminChangedEvent extends \Google\Model
-{
-    /**
-     * domain in which actioned occurred
-     *
-     * @var string
-     */
-    public $domain;
-    /**
-     * Email of person who was the primary admin before the action
-     *
-     * @var string
-     */
-    public $previousAdminEmail;
-    /**
-     * Email of person who is the primary admin after the action
-     *
-     * @var string
-     */
-    public $updatedAdminEmail;
-    /**
-     * domain in which actioned occurred
-     *
-     * @param string $domain
-     */
-    public function setDomain($domain)
+namespace Google\Service\AlertCenter {
+    class PrimaryAdminChangedEvent extends \Google\Model
     {
+        /**
+         * domain in which actioned occurred
+         *
+         * @var string
+         */
+        public $domain;
+        /**
+         * Email of person who was the primary admin before the action
+         *
+         * @var string
+         */
+        public $previousAdminEmail;
+        /**
+         * Email of person who is the primary admin after the action
+         *
+         * @var string
+         */
+        public $updatedAdminEmail;
+        /**
+         * domain in which actioned occurred
+         *
+         * @param string $domain
+         */
+        public function setDomain($domain)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDomain()
+        {
+        }
+        /**
+         * Email of person who was the primary admin before the action
+         *
+         * @param string $previousAdminEmail
+         */
+        public function setPreviousAdminEmail($previousAdminEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPreviousAdminEmail()
+        {
+        }
+        /**
+         * Email of person who is the primary admin after the action
+         *
+         * @param string $updatedAdminEmail
+         */
+        public function setUpdatedAdminEmail($updatedAdminEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdatedAdminEmail()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AlertCenter\PrimaryAdminChangedEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDomain()
-    {
-    }
-    /**
-     * Email of person who was the primary admin before the action
-     *
-     * @param string $previousAdminEmail
-     */
-    public function setPreviousAdminEmail($previousAdminEmail)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPreviousAdminEmail()
-    {
-    }
-    /**
-     * Email of person who is the primary admin after the action
-     *
-     * @param string $updatedAdminEmail
-     */
-    public function setUpdatedAdminEmail($updatedAdminEmail)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdatedAdminEmail()
+    class Google_Service_AlertCenter_PrimaryAdminChangedEvent extends \Google\Service\AlertCenter\PrimaryAdminChangedEvent
     {
     }
 }

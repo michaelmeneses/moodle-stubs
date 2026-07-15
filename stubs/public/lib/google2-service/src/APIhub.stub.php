@@ -21,55 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
-* Service definition for APIhub (v1).
-*
-* <p>
-</p>
-*
-* <p>
-* For more information about this service, see the API
-* <a href="https://cloud.google.com/apigee/docs/api-hub/what-is-api-hub" target="_blank">Documentation</a>
-* </p>
-*
-* @author Google, Inc.
-*/
-class APIhub extends \Google\Service
-{
-    /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
-    const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
-    public $projects_locations;
-    public $projects_locations_addons;
-    public $projects_locations_apiHubInstances;
-    public $projects_locations_apis;
-    public $projects_locations_apis_versions;
-    public $projects_locations_apis_versions_definitions;
-    public $projects_locations_apis_versions_operations;
-    public $projects_locations_apis_versions_specs;
-    public $projects_locations_attributes;
-    public $projects_locations_curations;
-    public $projects_locations_dependencies;
-    public $projects_locations_deployments;
-    public $projects_locations_discoveredApiObservations;
-    public $projects_locations_discoveredApiObservations_discoveredApiOperations;
-    public $projects_locations_externalApis;
-    public $projects_locations_hostProjectRegistrations;
-    public $projects_locations_operations;
-    public $projects_locations_plugins;
-    public $projects_locations_plugins_instances;
-    public $projects_locations_plugins_styleGuide;
-    public $projects_locations_runtimeProjectAttachments;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the APIhub service.
-     *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+    * Service definition for APIhub (v1).
+    *
+    * <p>
+    </p>
+    *
+    * <p>
+    * For more information about this service, see the API
+    * <a href="https://cloud.google.com/apigee/docs/api-hub/what-is-api-hub" target="_blank">Documentation</a>
+    * </p>
+    *
+    * @author Google, Inc.
+    */
+    class APIhub extends \Google\Service
+    {
+        /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
+        const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
+        public $projects_locations;
+        public $projects_locations_addons;
+        public $projects_locations_apiHubInstances;
+        public $projects_locations_apis;
+        public $projects_locations_apis_versions;
+        public $projects_locations_apis_versions_definitions;
+        public $projects_locations_apis_versions_operations;
+        public $projects_locations_apis_versions_specs;
+        public $projects_locations_attributes;
+        public $projects_locations_curations;
+        public $projects_locations_dependencies;
+        public $projects_locations_deployments;
+        public $projects_locations_discoveredApiObservations;
+        public $projects_locations_discoveredApiObservations_discoveredApiOperations;
+        public $projects_locations_externalApis;
+        public $projects_locations_hostProjectRegistrations;
+        public $projects_locations_operations;
+        public $projects_locations_plugins;
+        public $projects_locations_plugins_instances;
+        public $projects_locations_plugins_styleGuide;
+        public $projects_locations_runtimeProjectAttachments;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the APIhub service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\APIhub registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class Google_Service_APIhub extends \Google\Service\APIhub
     {
     }
 }

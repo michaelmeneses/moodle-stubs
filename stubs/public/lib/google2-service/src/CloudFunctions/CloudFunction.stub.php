@@ -21,527 +21,536 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudFunctions;
-
-class CloudFunction extends \Google\Collection
-{
-    protected $collection_key = 'secretVolumes';
-    /**
-     * @var int
-     */
-    public $availableMemoryMb;
-    /**
-     * @var string[]
-     */
-    public $buildEnvironmentVariables;
-    /**
-     * @var string
-     */
-    public $buildId;
-    /**
-     * @var string
-     */
-    public $buildName;
-    /**
-     * @var string
-     */
-    public $buildWorkerPool;
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var string
-     */
-    public $dockerRegistry;
-    /**
-     * @var string
-     */
-    public $dockerRepository;
-    /**
-     * @var string
-     */
-    public $entryPoint;
-    /**
-     * @var string[]
-     */
-    public $environmentVariables;
-    protected $eventTriggerType = EventTrigger::class;
-    protected $eventTriggerDataType = '';
-    protected $httpsTriggerType = HttpsTrigger::class;
-    protected $httpsTriggerDataType = '';
-    /**
-     * @var string
-     */
-    public $ingressSettings;
-    /**
-     * @var string
-     */
-    public $kmsKeyName;
-    /**
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * @var int
-     */
-    public $maxInstances;
-    /**
-     * @var int
-     */
-    public $minInstances;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $network;
-    /**
-     * @var string
-     */
-    public $runtime;
-    protected $secretEnvironmentVariablesType = SecretEnvVar::class;
-    protected $secretEnvironmentVariablesDataType = 'array';
-    protected $secretVolumesType = SecretVolume::class;
-    protected $secretVolumesDataType = 'array';
-    /**
-     * @var string
-     */
-    public $serviceAccountEmail;
-    /**
-     * @var string
-     */
-    public $sourceArchiveUrl;
-    protected $sourceRepositoryType = SourceRepository::class;
-    protected $sourceRepositoryDataType = '';
-    /**
-     * @var string
-     */
-    public $sourceToken;
-    /**
-     * @var string
-     */
-    public $sourceUploadUrl;
-    /**
-     * @var string
-     */
-    public $status;
-    /**
-     * @var string
-     */
-    public $timeout;
-    /**
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * @var string
-     */
-    public $versionId;
-    /**
-     * @var string
-     */
-    public $vpcConnector;
-    /**
-     * @var string
-     */
-    public $vpcConnectorEgressSettings;
-    /**
-     * @param int
-     */
-    public function setAvailableMemoryMb($availableMemoryMb)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getAvailableMemoryMb()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setBuildEnvironmentVariables($buildEnvironmentVariables)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getBuildEnvironmentVariables()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setBuildId($buildId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBuildId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setBuildName($buildName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBuildName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setBuildWorkerPool($buildWorkerPool)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBuildWorkerPool()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDockerRegistry($dockerRegistry)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDockerRegistry()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDockerRepository($dockerRepository)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDockerRepository()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEntryPoint($entryPoint)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEntryPoint()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setEnvironmentVariables($environmentVariables)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getEnvironmentVariables()
-    {
-    }
-    /**
-     * @param EventTrigger
-     */
-    public function setEventTrigger(EventTrigger $eventTrigger)
-    {
-    }
-    /**
-     * @return EventTrigger
-     */
-    public function getEventTrigger()
-    {
-    }
-    /**
-     * @param HttpsTrigger
-     */
-    public function setHttpsTrigger(HttpsTrigger $httpsTrigger)
-    {
-    }
-    /**
-     * @return HttpsTrigger
-     */
-    public function getHttpsTrigger()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setIngressSettings($ingressSettings)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIngressSettings()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKmsKeyName($kmsKeyName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKmsKeyName()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setMaxInstances($maxInstances)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxInstances()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setMinInstances($minInstances)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMinInstances()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNetwork($network)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNetwork()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRuntime($runtime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRuntime()
-    {
-    }
-    /**
-     * @param SecretEnvVar[]
-     */
-    public function setSecretEnvironmentVariables($secretEnvironmentVariables)
-    {
-    }
-    /**
-     * @return SecretEnvVar[]
-     */
-    public function getSecretEnvironmentVariables()
-    {
-    }
-    /**
-     * @param SecretVolume[]
-     */
-    public function setSecretVolumes($secretVolumes)
-    {
-    }
-    /**
-     * @return SecretVolume[]
-     */
-    public function getSecretVolumes()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setServiceAccountEmail($serviceAccountEmail)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceAccountEmail()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSourceArchiveUrl($sourceArchiveUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourceArchiveUrl()
-    {
-    }
-    /**
-     * @param SourceRepository
-     */
-    public function setSourceRepository(SourceRepository $sourceRepository)
-    {
-    }
-    /**
-     * @return SourceRepository
-     */
-    public function getSourceRepository()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSourceToken($sourceToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourceToken()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSourceUploadUrl($sourceUploadUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourceUploadUrl()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStatus()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTimeout($timeout)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimeout()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setVersionId($versionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersionId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setVpcConnector($vpcConnector)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVpcConnector()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setVpcConnectorEgressSettings($vpcConnectorEgressSettings)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVpcConnectorEgressSettings()
+namespace Google\Service\CloudFunctions {
+    class CloudFunction extends \Google\Collection
+    {
+        protected $collection_key = 'secretVolumes';
+        /**
+         * @var int
+         */
+        public $availableMemoryMb;
+        /**
+         * @var string[]
+         */
+        public $buildEnvironmentVariables;
+        /**
+         * @var string
+         */
+        public $buildId;
+        /**
+         * @var string
+         */
+        public $buildName;
+        /**
+         * @var string
+         */
+        public $buildWorkerPool;
+        /**
+         * @var string
+         */
+        public $description;
+        /**
+         * @var string
+         */
+        public $dockerRegistry;
+        /**
+         * @var string
+         */
+        public $dockerRepository;
+        /**
+         * @var string
+         */
+        public $entryPoint;
+        /**
+         * @var string[]
+         */
+        public $environmentVariables;
+        protected $eventTriggerType = EventTrigger::class;
+        protected $eventTriggerDataType = '';
+        protected $httpsTriggerType = HttpsTrigger::class;
+        protected $httpsTriggerDataType = '';
+        /**
+         * @var string
+         */
+        public $ingressSettings;
+        /**
+         * @var string
+         */
+        public $kmsKeyName;
+        /**
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * @var int
+         */
+        public $maxInstances;
+        /**
+         * @var int
+         */
+        public $minInstances;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $network;
+        /**
+         * @var string
+         */
+        public $runtime;
+        protected $secretEnvironmentVariablesType = SecretEnvVar::class;
+        protected $secretEnvironmentVariablesDataType = 'array';
+        protected $secretVolumesType = SecretVolume::class;
+        protected $secretVolumesDataType = 'array';
+        /**
+         * @var string
+         */
+        public $serviceAccountEmail;
+        /**
+         * @var string
+         */
+        public $sourceArchiveUrl;
+        protected $sourceRepositoryType = SourceRepository::class;
+        protected $sourceRepositoryDataType = '';
+        /**
+         * @var string
+         */
+        public $sourceToken;
+        /**
+         * @var string
+         */
+        public $sourceUploadUrl;
+        /**
+         * @var string
+         */
+        public $status;
+        /**
+         * @var string
+         */
+        public $timeout;
+        /**
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * @var string
+         */
+        public $versionId;
+        /**
+         * @var string
+         */
+        public $vpcConnector;
+        /**
+         * @var string
+         */
+        public $vpcConnectorEgressSettings;
+        /**
+         * @param int
+         */
+        public function setAvailableMemoryMb($availableMemoryMb)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getAvailableMemoryMb()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setBuildEnvironmentVariables($buildEnvironmentVariables)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getBuildEnvironmentVariables()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setBuildId($buildId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBuildId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setBuildName($buildName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBuildName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setBuildWorkerPool($buildWorkerPool)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBuildWorkerPool()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDockerRegistry($dockerRegistry)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDockerRegistry()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDockerRepository($dockerRepository)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDockerRepository()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEntryPoint($entryPoint)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEntryPoint()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setEnvironmentVariables($environmentVariables)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getEnvironmentVariables()
+        {
+        }
+        /**
+         * @param EventTrigger
+         */
+        public function setEventTrigger(EventTrigger $eventTrigger)
+        {
+        }
+        /**
+         * @return EventTrigger
+         */
+        public function getEventTrigger()
+        {
+        }
+        /**
+         * @param HttpsTrigger
+         */
+        public function setHttpsTrigger(HttpsTrigger $httpsTrigger)
+        {
+        }
+        /**
+         * @return HttpsTrigger
+         */
+        public function getHttpsTrigger()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setIngressSettings($ingressSettings)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIngressSettings()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKmsKeyName($kmsKeyName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKmsKeyName()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setMaxInstances($maxInstances)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxInstances()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setMinInstances($minInstances)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMinInstances()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNetwork($network)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNetwork()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRuntime($runtime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRuntime()
+        {
+        }
+        /**
+         * @param SecretEnvVar[]
+         */
+        public function setSecretEnvironmentVariables($secretEnvironmentVariables)
+        {
+        }
+        /**
+         * @return SecretEnvVar[]
+         */
+        public function getSecretEnvironmentVariables()
+        {
+        }
+        /**
+         * @param SecretVolume[]
+         */
+        public function setSecretVolumes($secretVolumes)
+        {
+        }
+        /**
+         * @return SecretVolume[]
+         */
+        public function getSecretVolumes()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setServiceAccountEmail($serviceAccountEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceAccountEmail()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSourceArchiveUrl($sourceArchiveUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceArchiveUrl()
+        {
+        }
+        /**
+         * @param SourceRepository
+         */
+        public function setSourceRepository(SourceRepository $sourceRepository)
+        {
+        }
+        /**
+         * @return SourceRepository
+         */
+        public function getSourceRepository()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSourceToken($sourceToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceToken()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSourceUploadUrl($sourceUploadUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceUploadUrl()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStatus()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTimeout($timeout)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimeout()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setVersionId($versionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersionId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setVpcConnector($vpcConnector)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVpcConnector()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setVpcConnectorEgressSettings($vpcConnectorEgressSettings)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVpcConnectorEgressSettings()
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudFunctions\CloudFunction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudFunctions_CloudFunction extends \Google\Service\CloudFunctions\CloudFunction
     {
     }
 }

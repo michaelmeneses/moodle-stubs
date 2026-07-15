@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3IntentCoverageIntent extends \Google\Model
-{
-    /**
-     * Whether the intent is covered by at least one of the agent's test cases.
-     *
-     * @var bool
-     */
-    public $covered;
-    /**
-     * The intent full resource name
-     *
-     * @var string
-     */
-    public $intent;
-    /**
-     * Whether the intent is covered by at least one of the agent's test cases.
-     *
-     * @param bool $covered
-     */
-    public function setCovered($covered)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3IntentCoverageIntent extends \Google\Model
     {
+        /**
+         * Whether the intent is covered by at least one of the agent's test cases.
+         *
+         * @var bool
+         */
+        public $covered;
+        /**
+         * The intent full resource name
+         *
+         * @var string
+         */
+        public $intent;
+        /**
+         * Whether the intent is covered by at least one of the agent's test cases.
+         *
+         * @param bool $covered
+         */
+        public function setCovered($covered)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCovered()
+        {
+        }
+        /**
+         * The intent full resource name
+         *
+         * @param string $intent
+         */
+        public function setIntent($intent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIntent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3IntentCoverageIntent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCovered()
-    {
-    }
-    /**
-     * The intent full resource name
-     *
-     * @param string $intent
-     */
-    public function setIntent($intent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIntent()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3IntentCoverageIntent extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3IntentCoverageIntent
     {
     }
 }

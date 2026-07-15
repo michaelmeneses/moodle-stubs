@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetAppFiles;
-
-class ListReplicationsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    /**
-     * The token you can use to retrieve the next page of results. Not returned if
-     * there are no more results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $replicationsType = Replication::class;
-    protected $replicationsDataType = 'array';
-    /**
-     * Locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * The token you can use to retrieve the next page of results. Not returned if
-     * there are no more results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\NetAppFiles {
+    class ListReplicationsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        /**
+         * The token you can use to retrieve the next page of results. Not returned if
+         * there are no more results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $replicationsType = Replication::class;
+        protected $replicationsDataType = 'array';
+        /**
+         * Locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * The token you can use to retrieve the next page of results. Not returned if
+         * there are no more results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * A list of replications in the project for the specified volume.
+         *
+         * @param Replication[] $replications
+         */
+        public function setReplications($replications)
+        {
+        }
+        /**
+         * @return Replication[]
+         */
+        public function getReplications()
+        {
+        }
+        /**
+         * Locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetAppFiles\ListReplicationsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * A list of replications in the project for the specified volume.
-     *
-     * @param Replication[] $replications
-     */
-    public function setReplications($replications)
-    {
-    }
-    /**
-     * @return Replication[]
-     */
-    public function getReplications()
-    {
-    }
-    /**
-     * Locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_NetAppFiles_ListReplicationsResponse extends \Google\Service\NetAppFiles\ListReplicationsResponse
     {
     }
 }

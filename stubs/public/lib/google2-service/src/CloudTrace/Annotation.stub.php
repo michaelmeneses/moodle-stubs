@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudTrace;
-
-class Annotation extends \Google\Model
-{
-    protected $attributesType = Attributes::class;
-    protected $attributesDataType = '';
-    protected $descriptionType = TruncatableString::class;
-    protected $descriptionDataType = '';
-    /**
-     * A set of attributes on the annotation. You can have up to 4 attributes per
-     * Annotation.
-     *
-     * @param Attributes $attributes
-     */
-    public function setAttributes(Attributes $attributes)
+namespace Google\Service\CloudTrace {
+    class Annotation extends \Google\Model
     {
+        protected $attributesType = Attributes::class;
+        protected $attributesDataType = '';
+        protected $descriptionType = TruncatableString::class;
+        protected $descriptionDataType = '';
+        /**
+         * A set of attributes on the annotation. You can have up to 4 attributes per
+         * Annotation.
+         *
+         * @param Attributes $attributes
+         */
+        public function setAttributes(Attributes $attributes)
+        {
+        }
+        /**
+         * @return Attributes
+         */
+        public function getAttributes()
+        {
+        }
+        /**
+         * A user-supplied message describing the event. The maximum length for the
+         * description is 256 bytes.
+         *
+         * @param TruncatableString $description
+         */
+        public function setDescription(TruncatableString $description)
+        {
+        }
+        /**
+         * @return TruncatableString
+         */
+        public function getDescription()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Attributes
+     * Runtime class alias of \Google\Service\CloudTrace\Annotation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttributes()
-    {
-    }
-    /**
-     * A user-supplied message describing the event. The maximum length for the
-     * description is 256 bytes.
-     *
-     * @param TruncatableString $description
-     */
-    public function setDescription(TruncatableString $description)
-    {
-    }
-    /**
-     * @return TruncatableString
-     */
-    public function getDescription()
+    class Google_Service_CloudTrace_Annotation extends \Google\Service\CloudTrace\Annotation
     {
     }
 }

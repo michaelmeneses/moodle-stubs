@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Acceleratedmobilepageurl;
-
-class AmpUrl extends \Google\Model
-{
-    /**
-     * The AMP URL pointing to the publisher's web server.
-     *
-     * @var string
-     */
-    public $ampUrl;
-    /**
-     * The [AMP Cache URL](/amp/cache/overview#amp-cache-url-format) pointing to
-     * the cached document in the Google AMP Cache.
-     *
-     * @var string
-     */
-    public $cdnAmpUrl;
-    /**
-     * The original non-AMP URL.
-     *
-     * @var string
-     */
-    public $originalUrl;
-    /**
-     * The AMP URL pointing to the publisher's web server.
-     *
-     * @param string $ampUrl
-     */
-    public function setAmpUrl($ampUrl)
+namespace Google\Service\Acceleratedmobilepageurl {
+    class AmpUrl extends \Google\Model
     {
+        /**
+         * The AMP URL pointing to the publisher's web server.
+         *
+         * @var string
+         */
+        public $ampUrl;
+        /**
+         * The [AMP Cache URL](/amp/cache/overview#amp-cache-url-format) pointing to
+         * the cached document in the Google AMP Cache.
+         *
+         * @var string
+         */
+        public $cdnAmpUrl;
+        /**
+         * The original non-AMP URL.
+         *
+         * @var string
+         */
+        public $originalUrl;
+        /**
+         * The AMP URL pointing to the publisher's web server.
+         *
+         * @param string $ampUrl
+         */
+        public function setAmpUrl($ampUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAmpUrl()
+        {
+        }
+        /**
+         * The [AMP Cache URL](/amp/cache/overview#amp-cache-url-format) pointing to
+         * the cached document in the Google AMP Cache.
+         *
+         * @param string $cdnAmpUrl
+         */
+        public function setCdnAmpUrl($cdnAmpUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCdnAmpUrl()
+        {
+        }
+        /**
+         * The original non-AMP URL.
+         *
+         * @param string $originalUrl
+         */
+        public function setOriginalUrl($originalUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOriginalUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Acceleratedmobilepageurl\AmpUrl registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAmpUrl()
-    {
-    }
-    /**
-     * The [AMP Cache URL](/amp/cache/overview#amp-cache-url-format) pointing to
-     * the cached document in the Google AMP Cache.
-     *
-     * @param string $cdnAmpUrl
-     */
-    public function setCdnAmpUrl($cdnAmpUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCdnAmpUrl()
-    {
-    }
-    /**
-     * The original non-AMP URL.
-     *
-     * @param string $originalUrl
-     */
-    public function setOriginalUrl($originalUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOriginalUrl()
+    class Google_Service_Acceleratedmobilepageurl_AmpUrl extends \Google\Service\Acceleratedmobilepageurl\AmpUrl
     {
     }
 }

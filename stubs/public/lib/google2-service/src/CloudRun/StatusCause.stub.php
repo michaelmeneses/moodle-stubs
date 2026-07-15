@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class StatusCause extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $field;
-    /**
-     * @var string
-     */
-    public $message;
-    /**
-     * @var string
-     */
-    public $reason;
-    /**
-     * @param string
-     */
-    public function setField($field)
+namespace Google\Service\CloudRun {
+    class StatusCause extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $field;
+        /**
+         * @var string
+         */
+        public $message;
+        /**
+         * @var string
+         */
+        public $reason;
+        /**
+         * @param string
+         */
+        public function setField($field)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getField()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReason($reason)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReason()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRun\StatusCause registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getField()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMessage($message)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMessage()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReason($reason)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReason()
+    class Google_Service_CloudRun_StatusCause extends \Google\Service\CloudRun\StatusCause
     {
     }
 }

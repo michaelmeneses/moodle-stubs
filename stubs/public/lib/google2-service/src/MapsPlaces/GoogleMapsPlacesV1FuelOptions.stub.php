@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MapsPlaces;
-
-class GoogleMapsPlacesV1FuelOptions extends \Google\Collection
-{
-    protected $collection_key = 'fuelPrices';
-    protected $fuelPricesType = GoogleMapsPlacesV1FuelOptionsFuelPrice::class;
-    protected $fuelPricesDataType = 'array';
-    /**
-     * The last known fuel price for each type of fuel this station has. There is
-     * one entry per fuel type this station has. Order is not important.
-     *
-     * @param GoogleMapsPlacesV1FuelOptionsFuelPrice[] $fuelPrices
-     */
-    public function setFuelPrices($fuelPrices)
+namespace Google\Service\MapsPlaces {
+    class GoogleMapsPlacesV1FuelOptions extends \Google\Collection
     {
+        protected $collection_key = 'fuelPrices';
+        protected $fuelPricesType = GoogleMapsPlacesV1FuelOptionsFuelPrice::class;
+        protected $fuelPricesDataType = 'array';
+        /**
+         * The last known fuel price for each type of fuel this station has. There is
+         * one entry per fuel type this station has. Order is not important.
+         *
+         * @param GoogleMapsPlacesV1FuelOptionsFuelPrice[] $fuelPrices
+         */
+        public function setFuelPrices($fuelPrices)
+        {
+        }
+        /**
+         * @return GoogleMapsPlacesV1FuelOptionsFuelPrice[]
+         */
+        public function getFuelPrices()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleMapsPlacesV1FuelOptionsFuelPrice[]
+     * Runtime class alias of \Google\Service\MapsPlaces\GoogleMapsPlacesV1FuelOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFuelPrices()
+    class Google_Service_MapsPlaces_GoogleMapsPlacesV1FuelOptions extends \Google\Service\MapsPlaces\GoogleMapsPlacesV1FuelOptions
     {
     }
 }

@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AccessContextManager;
-
-class ReauthSettings extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $maxInactivity;
-    /**
-     * @var string
-     */
-    public $reauthMethod;
-    /**
-     * @var string
-     */
-    public $sessionLength;
-    /**
-     * @var bool
-     */
-    public $sessionLengthEnabled;
-    /**
-     * @var bool
-     */
-    public $useOidcMaxAge;
-    /**
-     * @param string
-     */
-    public function setMaxInactivity($maxInactivity)
+namespace Google\Service\AccessContextManager {
+    class ReauthSettings extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $maxInactivity;
+        /**
+         * @var string
+         */
+        public $reauthMethod;
+        /**
+         * @var string
+         */
+        public $sessionLength;
+        /**
+         * @var bool
+         */
+        public $sessionLengthEnabled;
+        /**
+         * @var bool
+         */
+        public $useOidcMaxAge;
+        /**
+         * @param string
+         */
+        public function setMaxInactivity($maxInactivity)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaxInactivity()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReauthMethod($reauthMethod)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReauthMethod()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSessionLength($sessionLength)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSessionLength()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setSessionLengthEnabled($sessionLengthEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSessionLengthEnabled()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setUseOidcMaxAge($useOidcMaxAge)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUseOidcMaxAge()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AccessContextManager\ReauthSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaxInactivity()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReauthMethod($reauthMethod)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReauthMethod()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSessionLength($sessionLength)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSessionLength()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setSessionLengthEnabled($sessionLengthEnabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSessionLengthEnabled()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setUseOidcMaxAge($useOidcMaxAge)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUseOidcMaxAge()
+    class Google_Service_AccessContextManager_ReauthSettings extends \Google\Service\AccessContextManager\ReauthSettings
     {
     }
 }

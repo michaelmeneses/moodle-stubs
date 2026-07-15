@@ -21,67 +21,84 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromePolicy\Resource;
-
-/**
- * The "networks" collection of methods.
- * Typical usage is:
- *  <code>
- *   $chromepolicyService = new Google\Service\ChromePolicy(...);
- *   $networks = $chromepolicyService->customers_policies_networks;
- *  </code>
- */
-class CustomersPoliciesNetworks extends \Google\Service\Resource
-{
+namespace Google\Service\ChromePolicy\Resource {
+    use Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1DefineCertificateRequest;
+    use Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1DefineCertificateResponse;
+    use Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1DefineNetworkRequest;
+    use Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1DefineNetworkResponse;
+    use Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1RemoveCertificateRequest;
+    use Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1RemoveCertificateResponse;
+    use Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1RemoveNetworkRequest;
+    use Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1RemoveNetworkResponse;
     /**
-     * Creates a certificate at a specified OU for a customer.
-     * (networks.defineCertificate)
-     *
-     * @param string $customer Required. The customer for which the certificate will
-     * apply.
-     * @param GoogleChromePolicyVersionsV1DefineCertificateRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleChromePolicyVersionsV1DefineCertificateResponse
-     * @throws \Google\Service\Exception
+     * The "networks" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $chromepolicyService = new Google\Service\ChromePolicy(...);
+     *   $networks = $chromepolicyService->customers_policies_networks;
+     *  </code>
      */
-    public function defineCertificate($customer, GoogleChromePolicyVersionsV1DefineCertificateRequest $postBody, $optParams = [])
+    class CustomersPoliciesNetworks extends \Google\Service\Resource
     {
+        /**
+         * Creates a certificate at a specified OU for a customer.
+         * (networks.defineCertificate)
+         *
+         * @param string $customer Required. The customer for which the certificate will
+         * apply.
+         * @param GoogleChromePolicyVersionsV1DefineCertificateRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleChromePolicyVersionsV1DefineCertificateResponse
+         * @throws \Google\Service\Exception
+         */
+        public function defineCertificate($customer, GoogleChromePolicyVersionsV1DefineCertificateRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Define a new network. (networks.defineNetwork)
+         *
+         * @param string $customer Required. The customer who will own this new network.
+         * @param GoogleChromePolicyVersionsV1DefineNetworkRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleChromePolicyVersionsV1DefineNetworkResponse
+         * @throws \Google\Service\Exception
+         */
+        public function defineNetwork($customer, GoogleChromePolicyVersionsV1DefineNetworkRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Remove an existing certificate by guid. (networks.removeCertificate)
+         *
+         * @param string $customer Required. The customer whose certificate will be
+         * removed.
+         * @param GoogleChromePolicyVersionsV1RemoveCertificateRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleChromePolicyVersionsV1RemoveCertificateResponse
+         * @throws \Google\Service\Exception
+         */
+        public function removeCertificate($customer, GoogleChromePolicyVersionsV1RemoveCertificateRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Remove an existing network by guid. (networks.removeNetwork)
+         *
+         * @param string $customer Required. The customer whose network will be removed.
+         * @param GoogleChromePolicyVersionsV1RemoveNetworkRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleChromePolicyVersionsV1RemoveNetworkResponse
+         * @throws \Google\Service\Exception
+         */
+        public function removeNetwork($customer, GoogleChromePolicyVersionsV1RemoveNetworkRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Define a new network. (networks.defineNetwork)
-     *
-     * @param string $customer Required. The customer who will own this new network.
-     * @param GoogleChromePolicyVersionsV1DefineNetworkRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleChromePolicyVersionsV1DefineNetworkResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\ChromePolicy\Resource\CustomersPoliciesNetworks registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function defineNetwork($customer, GoogleChromePolicyVersionsV1DefineNetworkRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Remove an existing certificate by guid. (networks.removeCertificate)
-     *
-     * @param string $customer Required. The customer whose certificate will be
-     * removed.
-     * @param GoogleChromePolicyVersionsV1RemoveCertificateRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleChromePolicyVersionsV1RemoveCertificateResponse
-     * @throws \Google\Service\Exception
-     */
-    public function removeCertificate($customer, GoogleChromePolicyVersionsV1RemoveCertificateRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Remove an existing network by guid. (networks.removeNetwork)
-     *
-     * @param string $customer Required. The customer whose network will be removed.
-     * @param GoogleChromePolicyVersionsV1RemoveNetworkRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleChromePolicyVersionsV1RemoveNetworkResponse
-     * @throws \Google\Service\Exception
-     */
-    public function removeNetwork($customer, GoogleChromePolicyVersionsV1RemoveNetworkRequest $postBody, $optParams = [])
+    class Google_Service_ChromePolicy_Resource_CustomersPoliciesNetworks extends \Google\Service\ChromePolicy\Resource\CustomersPoliciesNetworks
     {
     }
 }

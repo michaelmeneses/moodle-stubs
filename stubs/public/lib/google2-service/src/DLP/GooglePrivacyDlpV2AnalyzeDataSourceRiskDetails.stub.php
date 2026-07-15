@@ -21,152 +21,161 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2AnalyzeDataSourceRiskDetails extends \Google\Model
-{
-    protected $categoricalStatsResultType = GooglePrivacyDlpV2CategoricalStatsResult::class;
-    protected $categoricalStatsResultDataType = '';
-    protected $deltaPresenceEstimationResultType = GooglePrivacyDlpV2DeltaPresenceEstimationResult::class;
-    protected $deltaPresenceEstimationResultDataType = '';
-    protected $kAnonymityResultType = GooglePrivacyDlpV2KAnonymityResult::class;
-    protected $kAnonymityResultDataType = '';
-    protected $kMapEstimationResultType = GooglePrivacyDlpV2KMapEstimationResult::class;
-    protected $kMapEstimationResultDataType = '';
-    protected $lDiversityResultType = GooglePrivacyDlpV2LDiversityResult::class;
-    protected $lDiversityResultDataType = '';
-    protected $numericalStatsResultType = GooglePrivacyDlpV2NumericalStatsResult::class;
-    protected $numericalStatsResultDataType = '';
-    protected $requestedOptionsType = GooglePrivacyDlpV2RequestedRiskAnalysisOptions::class;
-    protected $requestedOptionsDataType = '';
-    protected $requestedPrivacyMetricType = GooglePrivacyDlpV2PrivacyMetric::class;
-    protected $requestedPrivacyMetricDataType = '';
-    protected $requestedSourceTableType = GooglePrivacyDlpV2BigQueryTable::class;
-    protected $requestedSourceTableDataType = '';
-    /**
-     * Categorical stats result
-     *
-     * @param GooglePrivacyDlpV2CategoricalStatsResult $categoricalStatsResult
-     */
-    public function setCategoricalStatsResult(GooglePrivacyDlpV2CategoricalStatsResult $categoricalStatsResult)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2AnalyzeDataSourceRiskDetails extends \Google\Model
     {
+        protected $categoricalStatsResultType = GooglePrivacyDlpV2CategoricalStatsResult::class;
+        protected $categoricalStatsResultDataType = '';
+        protected $deltaPresenceEstimationResultType = GooglePrivacyDlpV2DeltaPresenceEstimationResult::class;
+        protected $deltaPresenceEstimationResultDataType = '';
+        protected $kAnonymityResultType = GooglePrivacyDlpV2KAnonymityResult::class;
+        protected $kAnonymityResultDataType = '';
+        protected $kMapEstimationResultType = GooglePrivacyDlpV2KMapEstimationResult::class;
+        protected $kMapEstimationResultDataType = '';
+        protected $lDiversityResultType = GooglePrivacyDlpV2LDiversityResult::class;
+        protected $lDiversityResultDataType = '';
+        protected $numericalStatsResultType = GooglePrivacyDlpV2NumericalStatsResult::class;
+        protected $numericalStatsResultDataType = '';
+        protected $requestedOptionsType = GooglePrivacyDlpV2RequestedRiskAnalysisOptions::class;
+        protected $requestedOptionsDataType = '';
+        protected $requestedPrivacyMetricType = GooglePrivacyDlpV2PrivacyMetric::class;
+        protected $requestedPrivacyMetricDataType = '';
+        protected $requestedSourceTableType = GooglePrivacyDlpV2BigQueryTable::class;
+        protected $requestedSourceTableDataType = '';
+        /**
+         * Categorical stats result
+         *
+         * @param GooglePrivacyDlpV2CategoricalStatsResult $categoricalStatsResult
+         */
+        public function setCategoricalStatsResult(GooglePrivacyDlpV2CategoricalStatsResult $categoricalStatsResult)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2CategoricalStatsResult
+         */
+        public function getCategoricalStatsResult()
+        {
+        }
+        /**
+         * Delta-presence result
+         *
+         * @param GooglePrivacyDlpV2DeltaPresenceEstimationResult $deltaPresenceEstimationResult
+         */
+        public function setDeltaPresenceEstimationResult(GooglePrivacyDlpV2DeltaPresenceEstimationResult $deltaPresenceEstimationResult)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2DeltaPresenceEstimationResult
+         */
+        public function getDeltaPresenceEstimationResult()
+        {
+        }
+        /**
+         * K-anonymity result
+         *
+         * @param GooglePrivacyDlpV2KAnonymityResult $kAnonymityResult
+         */
+        public function setKAnonymityResult(GooglePrivacyDlpV2KAnonymityResult $kAnonymityResult)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2KAnonymityResult
+         */
+        public function getKAnonymityResult()
+        {
+        }
+        /**
+         * K-map result
+         *
+         * @param GooglePrivacyDlpV2KMapEstimationResult $kMapEstimationResult
+         */
+        public function setKMapEstimationResult(GooglePrivacyDlpV2KMapEstimationResult $kMapEstimationResult)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2KMapEstimationResult
+         */
+        public function getKMapEstimationResult()
+        {
+        }
+        /**
+         * L-divesity result
+         *
+         * @param GooglePrivacyDlpV2LDiversityResult $lDiversityResult
+         */
+        public function setLDiversityResult(GooglePrivacyDlpV2LDiversityResult $lDiversityResult)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2LDiversityResult
+         */
+        public function getLDiversityResult()
+        {
+        }
+        /**
+         * Numerical stats result
+         *
+         * @param GooglePrivacyDlpV2NumericalStatsResult $numericalStatsResult
+         */
+        public function setNumericalStatsResult(GooglePrivacyDlpV2NumericalStatsResult $numericalStatsResult)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2NumericalStatsResult
+         */
+        public function getNumericalStatsResult()
+        {
+        }
+        /**
+         * The configuration used for this job.
+         *
+         * @param GooglePrivacyDlpV2RequestedRiskAnalysisOptions $requestedOptions
+         */
+        public function setRequestedOptions(GooglePrivacyDlpV2RequestedRiskAnalysisOptions $requestedOptions)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2RequestedRiskAnalysisOptions
+         */
+        public function getRequestedOptions()
+        {
+        }
+        /**
+         * Privacy metric to compute.
+         *
+         * @param GooglePrivacyDlpV2PrivacyMetric $requestedPrivacyMetric
+         */
+        public function setRequestedPrivacyMetric(GooglePrivacyDlpV2PrivacyMetric $requestedPrivacyMetric)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2PrivacyMetric
+         */
+        public function getRequestedPrivacyMetric()
+        {
+        }
+        /**
+         * Input dataset to compute metrics over.
+         *
+         * @param GooglePrivacyDlpV2BigQueryTable $requestedSourceTable
+         */
+        public function setRequestedSourceTable(GooglePrivacyDlpV2BigQueryTable $requestedSourceTable)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2BigQueryTable
+         */
+        public function getRequestedSourceTable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2CategoricalStatsResult
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2AnalyzeDataSourceRiskDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCategoricalStatsResult()
-    {
-    }
-    /**
-     * Delta-presence result
-     *
-     * @param GooglePrivacyDlpV2DeltaPresenceEstimationResult $deltaPresenceEstimationResult
-     */
-    public function setDeltaPresenceEstimationResult(GooglePrivacyDlpV2DeltaPresenceEstimationResult $deltaPresenceEstimationResult)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2DeltaPresenceEstimationResult
-     */
-    public function getDeltaPresenceEstimationResult()
-    {
-    }
-    /**
-     * K-anonymity result
-     *
-     * @param GooglePrivacyDlpV2KAnonymityResult $kAnonymityResult
-     */
-    public function setKAnonymityResult(GooglePrivacyDlpV2KAnonymityResult $kAnonymityResult)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2KAnonymityResult
-     */
-    public function getKAnonymityResult()
-    {
-    }
-    /**
-     * K-map result
-     *
-     * @param GooglePrivacyDlpV2KMapEstimationResult $kMapEstimationResult
-     */
-    public function setKMapEstimationResult(GooglePrivacyDlpV2KMapEstimationResult $kMapEstimationResult)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2KMapEstimationResult
-     */
-    public function getKMapEstimationResult()
-    {
-    }
-    /**
-     * L-divesity result
-     *
-     * @param GooglePrivacyDlpV2LDiversityResult $lDiversityResult
-     */
-    public function setLDiversityResult(GooglePrivacyDlpV2LDiversityResult $lDiversityResult)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2LDiversityResult
-     */
-    public function getLDiversityResult()
-    {
-    }
-    /**
-     * Numerical stats result
-     *
-     * @param GooglePrivacyDlpV2NumericalStatsResult $numericalStatsResult
-     */
-    public function setNumericalStatsResult(GooglePrivacyDlpV2NumericalStatsResult $numericalStatsResult)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2NumericalStatsResult
-     */
-    public function getNumericalStatsResult()
-    {
-    }
-    /**
-     * The configuration used for this job.
-     *
-     * @param GooglePrivacyDlpV2RequestedRiskAnalysisOptions $requestedOptions
-     */
-    public function setRequestedOptions(GooglePrivacyDlpV2RequestedRiskAnalysisOptions $requestedOptions)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2RequestedRiskAnalysisOptions
-     */
-    public function getRequestedOptions()
-    {
-    }
-    /**
-     * Privacy metric to compute.
-     *
-     * @param GooglePrivacyDlpV2PrivacyMetric $requestedPrivacyMetric
-     */
-    public function setRequestedPrivacyMetric(GooglePrivacyDlpV2PrivacyMetric $requestedPrivacyMetric)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2PrivacyMetric
-     */
-    public function getRequestedPrivacyMetric()
-    {
-    }
-    /**
-     * Input dataset to compute metrics over.
-     *
-     * @param GooglePrivacyDlpV2BigQueryTable $requestedSourceTable
-     */
-    public function setRequestedSourceTable(GooglePrivacyDlpV2BigQueryTable $requestedSourceTable)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2BigQueryTable
-     */
-    public function getRequestedSourceTable()
+    class Google_Service_DLP_GooglePrivacyDlpV2AnalyzeDataSourceRiskDetails extends \Google\Service\DLP\GooglePrivacyDlpV2AnalyzeDataSourceRiskDetails
     {
     }
 }

@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution;
-
-class GoogleDevtoolsRemotebuildexecutionAdminV1alphaAcceleratorConfig extends \Google\Model
-{
-    public $acceleratorCount;
-    public $acceleratorType;
-    public function setAcceleratorCount($acceleratorCount)
+namespace Google\Service\RemoteBuildExecution {
+    class GoogleDevtoolsRemotebuildexecutionAdminV1alphaAcceleratorConfig extends \Google\Model
     {
+        public $acceleratorCount;
+        public $acceleratorType;
+        public function setAcceleratorCount($acceleratorCount)
+        {
+        }
+        public function getAcceleratorCount()
+        {
+        }
+        public function setAcceleratorType($acceleratorType)
+        {
+        }
+        public function getAcceleratorType()
+        {
+        }
     }
-    public function getAcceleratorCount()
-    {
-    }
-    public function setAcceleratorType($acceleratorType)
-    {
-    }
-    public function getAcceleratorType()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\GoogleDevtoolsRemotebuildexecutionAdminV1alphaAcceleratorConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_RemoteBuildExecution_GoogleDevtoolsRemotebuildexecutionAdminV1alphaAcceleratorConfig extends \Google\Service\RemoteBuildExecution\GoogleDevtoolsRemotebuildexecutionAdminV1alphaAcceleratorConfig
     {
     }
 }

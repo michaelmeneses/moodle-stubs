@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1TrajectoryExactMatchResults extends \Google\Collection
-{
-    protected $collection_key = 'trajectoryExactMatchMetricValues';
-    protected $trajectoryExactMatchMetricValuesType = GoogleCloudAiplatformV1TrajectoryExactMatchMetricValue::class;
-    protected $trajectoryExactMatchMetricValuesDataType = 'array';
-    /**
-     * Output only. TrajectoryExactMatch metric values.
-     *
-     * @param GoogleCloudAiplatformV1TrajectoryExactMatchMetricValue[] $trajectoryExactMatchMetricValues
-     */
-    public function setTrajectoryExactMatchMetricValues($trajectoryExactMatchMetricValues)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1TrajectoryExactMatchResults extends \Google\Collection
     {
+        protected $collection_key = 'trajectoryExactMatchMetricValues';
+        protected $trajectoryExactMatchMetricValuesType = GoogleCloudAiplatformV1TrajectoryExactMatchMetricValue::class;
+        protected $trajectoryExactMatchMetricValuesDataType = 'array';
+        /**
+         * Output only. TrajectoryExactMatch metric values.
+         *
+         * @param GoogleCloudAiplatformV1TrajectoryExactMatchMetricValue[] $trajectoryExactMatchMetricValues
+         */
+        public function setTrajectoryExactMatchMetricValues($trajectoryExactMatchMetricValues)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1TrajectoryExactMatchMetricValue[]
+         */
+        public function getTrajectoryExactMatchMetricValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1TrajectoryExactMatchMetricValue[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1TrajectoryExactMatchResults registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTrajectoryExactMatchMetricValues()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1TrajectoryExactMatchResults extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1TrajectoryExactMatchResults
     {
     }
 }

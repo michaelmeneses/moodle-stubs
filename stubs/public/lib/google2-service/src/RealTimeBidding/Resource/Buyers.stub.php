@@ -21,69 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RealTimeBidding\Resource;
-
-/**
- * The "buyers" collection of methods.
- * Typical usage is:
- *  <code>
- *   $realtimebiddingService = new Google\Service\RealTimeBidding(...);
- *   $buyers = $realtimebiddingService->buyers;
- *  </code>
- */
-class Buyers extends \Google\Service\Resource
-{
+namespace Google\Service\RealTimeBidding\Resource {
+    use Google\Service\RealTimeBidding\Buyer;
+    use Google\Service\RealTimeBidding\GetRemarketingTagResponse;
+    use Google\Service\RealTimeBidding\ListBuyersResponse;
     /**
-     * Gets a buyer account by its name. (buyers.get)
-     *
-     * @param string $name Required. Name of the buyer to get. Format:
-     * `buyers/{buyerId}`
-     * @param array $optParams Optional parameters.
-     * @return Buyer
-     * @throws \Google\Service\Exception
+     * The "buyers" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $realtimebiddingService = new Google\Service\RealTimeBidding(...);
+     *   $buyers = $realtimebiddingService->buyers;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class Buyers extends \Google\Service\Resource
     {
+        /**
+         * Gets a buyer account by its name. (buyers.get)
+         *
+         * @param string $name Required. Name of the buyer to get. Format:
+         * `buyers/{buyerId}`
+         * @param array $optParams Optional parameters.
+         * @return Buyer
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * This has been sunset as of October 2023, and will return an error response if
+         * called. For more information, see the release notes:
+         * https://developers.google.com/authorized-buyers/apis/relnotes#real-time-
+         * bidding-api Gets remarketing tag for a buyer. A remarketing tag is a piece of
+         * JavaScript code that can be placed on a web page. When a user visits a page
+         * containing a remarketing tag, Google adds the user to a user list.
+         * (buyers.getRemarketingTag)
+         *
+         * @param string $name Required. To fetch the remarketing tag for an account,
+         * the name must follow the pattern `buyers/{accountId}`, where `{accountId}`
+         * represents the ID of the buyer that owns the remarketing tag. For a bidder
+         * accessing the remarketing tag on behalf of a child seat buyer, `{accountId}`
+         * should represent the ID of the child seat buyer. To fetch the remarketing tag
+         * for a specific user list, the name must follow the pattern
+         * `buyers/{accountId}/userLists/{userListId}`. See UserList.name.
+         * @param array $optParams Optional parameters.
+         * @return GetRemarketingTagResponse
+         * @throws \Google\Service\Exception
+         */
+        public function getRemarketingTag($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists all buyer account information the calling buyer user or service account
+         * is permissioned to manage. (buyers.listBuyers)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The maximum number of buyers to return. If
+         * unspecified, at most 100 buyers will be returned. The maximum value is 500;
+         * values above 500 will be coerced to 500.
+         * @opt_param string pageToken A token identifying a page of results the server
+         * should return. This value is received from a previous `ListBuyers` call in
+         * ListBuyersResponse.nextPageToken.
+         * @return ListBuyersResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listBuyers($optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * This has been sunset as of October 2023, and will return an error response if
-     * called. For more information, see the release notes:
-     * https://developers.google.com/authorized-buyers/apis/relnotes#real-time-
-     * bidding-api Gets remarketing tag for a buyer. A remarketing tag is a piece of
-     * JavaScript code that can be placed on a web page. When a user visits a page
-     * containing a remarketing tag, Google adds the user to a user list.
-     * (buyers.getRemarketingTag)
-     *
-     * @param string $name Required. To fetch the remarketing tag for an account,
-     * the name must follow the pattern `buyers/{accountId}`, where `{accountId}`
-     * represents the ID of the buyer that owns the remarketing tag. For a bidder
-     * accessing the remarketing tag on behalf of a child seat buyer, `{accountId}`
-     * should represent the ID of the child seat buyer. To fetch the remarketing tag
-     * for a specific user list, the name must follow the pattern
-     * `buyers/{accountId}/userLists/{userListId}`. See UserList.name.
-     * @param array $optParams Optional parameters.
-     * @return GetRemarketingTagResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\RealTimeBidding\Resource\Buyers registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRemarketingTag($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists all buyer account information the calling buyer user or service account
-     * is permissioned to manage. (buyers.listBuyers)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The maximum number of buyers to return. If
-     * unspecified, at most 100 buyers will be returned. The maximum value is 500;
-     * values above 500 will be coerced to 500.
-     * @opt_param string pageToken A token identifying a page of results the server
-     * should return. This value is received from a previous `ListBuyers` call in
-     * ListBuyersResponse.nextPageToken.
-     * @return ListBuyersResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listBuyers($optParams = [])
+    class Google_Service_RealTimeBidding_Resource_Buyers extends \Google\Service\RealTimeBidding\Resource\Buyers
     {
     }
 }

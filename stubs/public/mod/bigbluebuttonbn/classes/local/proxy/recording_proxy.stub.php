@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_bigbluebuttonbn\local\proxy;
 
+use cache;
+use cache_helper;
+use SimpleXMLElement;
 /**
  * The recording proxy.
  *

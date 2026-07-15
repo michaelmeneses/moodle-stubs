@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkSecurity;
-
-class FirewallEndpointEndpointSettings extends \Google\Model
-{
-    /**
-     * Optional. Immutable. Indicates whether Jumbo Frames are enabled. Default
-     * value is false.
-     *
-     * @var bool
-     */
-    public $jumboFramesEnabled;
-    /**
-     * Optional. Immutable. Indicates whether Jumbo Frames are enabled. Default
-     * value is false.
-     *
-     * @param bool $jumboFramesEnabled
-     */
-    public function setJumboFramesEnabled($jumboFramesEnabled)
+namespace Google\Service\NetworkSecurity {
+    class FirewallEndpointEndpointSettings extends \Google\Model
     {
+        /**
+         * Optional. Immutable. Indicates whether Jumbo Frames are enabled. Default
+         * value is false.
+         *
+         * @var bool
+         */
+        public $jumboFramesEnabled;
+        /**
+         * Optional. Immutable. Indicates whether Jumbo Frames are enabled. Default
+         * value is false.
+         *
+         * @param bool $jumboFramesEnabled
+         */
+        public function setJumboFramesEnabled($jumboFramesEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getJumboFramesEnabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\NetworkSecurity\FirewallEndpointEndpointSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getJumboFramesEnabled()
+    class Google_Service_NetworkSecurity_FirewallEndpointEndpointSettings extends \Google\Service\NetworkSecurity\FirewallEndpointEndpointSettings
     {
     }
 }

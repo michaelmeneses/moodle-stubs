@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TPU;
-
-class GuestAttributesValue extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    protected $itemsType = GuestAttributesEntry::class;
-    protected $itemsDataType = 'array';
-    /**
-     * The list of guest attributes entries.
-     *
-     * @param GuestAttributesEntry[] $items
-     */
-    public function setItems($items)
+namespace Google\Service\TPU {
+    class GuestAttributesValue extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        protected $itemsType = GuestAttributesEntry::class;
+        protected $itemsDataType = 'array';
+        /**
+         * The list of guest attributes entries.
+         *
+         * @param GuestAttributesEntry[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return GuestAttributesEntry[]
+         */
+        public function getItems()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GuestAttributesEntry[]
+     * Runtime class alias of \Google\Service\TPU\GuestAttributesValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItems()
+    class Google_Service_TPU_GuestAttributesValue extends \Google\Service\TPU\GuestAttributesValue
     {
     }
 }

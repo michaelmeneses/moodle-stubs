@@ -21,80 +21,92 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin\Resource;
-
-/**
- * The "backupRuns" collection of methods.
- * Typical usage is:
- *  <code>
- *   $sqladminService = new Google\Service\SQLAdmin(...);
- *   $backupRuns = $sqladminService->backupRuns;
- *  </code>
- */
-class BackupRuns extends \Google\Service\Resource
-{
+namespace Google\Service\SQLAdmin\Resource {
+    use Google\Service\SQLAdmin\BackupRun;
+    use Google\Service\SQLAdmin\BackupRunsListResponse;
+    use Google\Service\SQLAdmin\Operation;
     /**
-     * Deletes the backup taken by a backup run. (backupRuns.delete)
-     *
-     * @param string $project Project ID of the project that contains the instance.
-     * @param string $instance Cloud SQL instance ID. This does not include the
-     * project ID.
-     * @param string $id The ID of the backup run to delete. To find a backup run
-     * ID, use the [list](https://cloud.google.com/sql/docs/mysql/admin-
-     * api/rest/v1/backupRuns/list) method.
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * The "backupRuns" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $sqladminService = new Google\Service\SQLAdmin(...);
+     *   $backupRuns = $sqladminService->backupRuns;
+     *  </code>
      */
-    public function delete($project, $instance, $id, $optParams = [])
+    class BackupRuns extends \Google\Service\Resource
     {
+        /**
+         * Deletes the backup taken by a backup run. (backupRuns.delete)
+         *
+         * @param string $project Project ID of the project that contains the instance.
+         * @param string $instance Cloud SQL instance ID. This does not include the
+         * project ID.
+         * @param string $id The ID of the backup run to delete. To find a backup run
+         * ID, use the [list](https://cloud.google.com/sql/docs/mysql/admin-
+         * api/rest/v1/backupRuns/list) method.
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function delete($project, $instance, $id, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves a resource containing information about a backup run.
+         * (backupRuns.get)
+         *
+         * @param string $project Project ID of the project that contains the instance.
+         * @param string $instance Cloud SQL instance ID. This does not include the
+         * project ID.
+         * @param string $id The ID of this backup run.
+         * @param array $optParams Optional parameters.
+         * @return BackupRun
+         * @throws \Google\Service\Exception
+         */
+        public function get($project, $instance, $id, $optParams = [])
+        {
+        }
+        /**
+         * Creates a new backup run on demand. (backupRuns.insert)
+         *
+         * @param string $project Project ID of the project that contains the instance.
+         * @param string $instance Cloud SQL instance ID. This does not include the
+         * project ID.
+         * @param BackupRun $postBody
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function insert($project, $instance, BackupRun $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Lists all backup runs associated with the project or a given instance and
+         * configuration in the reverse chronological order of the backup initiation
+         * time. (backupRuns.listBackupRuns)
+         *
+         * @param string $project Project ID of the project that contains the instance.
+         * @param string $instance Cloud SQL instance ID, or "-" for all instances. This
+         * does not include the project ID.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int maxResults Maximum number of backup runs per response.
+         * @opt_param string pageToken A previously-returned page token representing
+         * part of the larger set of results to view.
+         * @return BackupRunsListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listBackupRuns($project, $instance, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Retrieves a resource containing information about a backup run.
-     * (backupRuns.get)
-     *
-     * @param string $project Project ID of the project that contains the instance.
-     * @param string $instance Cloud SQL instance ID. This does not include the
-     * project ID.
-     * @param string $id The ID of this backup run.
-     * @param array $optParams Optional parameters.
-     * @return BackupRun
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\SQLAdmin\Resource\BackupRuns registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($project, $instance, $id, $optParams = [])
-    {
-    }
-    /**
-     * Creates a new backup run on demand. (backupRuns.insert)
-     *
-     * @param string $project Project ID of the project that contains the instance.
-     * @param string $instance Cloud SQL instance ID. This does not include the
-     * project ID.
-     * @param BackupRun $postBody
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
-     */
-    public function insert($project, $instance, BackupRun $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Lists all backup runs associated with the project or a given instance and
-     * configuration in the reverse chronological order of the backup initiation
-     * time. (backupRuns.listBackupRuns)
-     *
-     * @param string $project Project ID of the project that contains the instance.
-     * @param string $instance Cloud SQL instance ID, or "-" for all instances. This
-     * does not include the project ID.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int maxResults Maximum number of backup runs per response.
-     * @opt_param string pageToken A previously-returned page token representing
-     * part of the larger set of results to view.
-     * @return BackupRunsListResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listBackupRuns($project, $instance, $optParams = [])
+    class Google_Service_SQLAdmin_Resource_BackupRuns extends \Google\Service\SQLAdmin\Resource\BackupRuns
     {
     }
 }

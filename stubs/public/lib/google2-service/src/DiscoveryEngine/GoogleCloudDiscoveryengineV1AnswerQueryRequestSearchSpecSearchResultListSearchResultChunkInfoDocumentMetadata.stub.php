@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResultChunkInfoDocumentMetadata extends \Google\Model
-{
-    /**
-     * Title of the document.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * Uri of the document.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * Title of the document.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResultChunkInfoDocumentMetadata extends \Google\Model
     {
+        /**
+         * Title of the document.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * Uri of the document.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * Title of the document.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * Uri of the document.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResultChunkInfoDocumentMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTitle()
-    {
-    }
-    /**
-     * Uri of the document.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResultChunkInfoDocumentMetadata extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResultChunkInfoDocumentMetadata
     {
     }
 }

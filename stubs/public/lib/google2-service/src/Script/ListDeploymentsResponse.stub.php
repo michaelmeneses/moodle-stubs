@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Script;
-
-class ListDeploymentsResponse extends \Google\Collection
-{
-    protected $collection_key = 'deployments';
-    protected $deploymentsType = Deployment::class;
-    protected $deploymentsDataType = 'array';
-    /**
-     * The token that can be used in the next call to get the next page of
-     * results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of deployments.
-     *
-     * @param Deployment[] $deployments
-     */
-    public function setDeployments($deployments)
+namespace Google\Service\Script {
+    class ListDeploymentsResponse extends \Google\Collection
     {
+        protected $collection_key = 'deployments';
+        protected $deploymentsType = Deployment::class;
+        protected $deploymentsDataType = 'array';
+        /**
+         * The token that can be used in the next call to get the next page of
+         * results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of deployments.
+         *
+         * @param Deployment[] $deployments
+         */
+        public function setDeployments($deployments)
+        {
+        }
+        /**
+         * @return Deployment[]
+         */
+        public function getDeployments()
+        {
+        }
+        /**
+         * The token that can be used in the next call to get the next page of
+         * results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Deployment[]
+     * Runtime class alias of \Google\Service\Script\ListDeploymentsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeployments()
-    {
-    }
-    /**
-     * The token that can be used in the next call to get the next page of
-     * results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Script_ListDeploymentsResponse extends \Google\Service\Script\ListDeploymentsResponse
     {
     }
 }

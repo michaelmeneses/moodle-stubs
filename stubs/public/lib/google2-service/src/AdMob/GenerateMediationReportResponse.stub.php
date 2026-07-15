@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdMob;
-
-class GenerateMediationReportResponse extends \Google\Model
-{
-    protected $footerType = ReportFooter::class;
-    protected $footerDataType = '';
-    protected $headerType = ReportHeader::class;
-    protected $headerDataType = '';
-    protected $rowType = ReportRow::class;
-    protected $rowDataType = '';
-    /**
-     * Additional information about the generated report, such as warnings about
-     * the data.
-     *
-     * @param ReportFooter $footer
-     */
-    public function setFooter(ReportFooter $footer)
+namespace Google\Service\AdMob {
+    class GenerateMediationReportResponse extends \Google\Model
     {
+        protected $footerType = ReportFooter::class;
+        protected $footerDataType = '';
+        protected $headerType = ReportHeader::class;
+        protected $headerDataType = '';
+        protected $rowType = ReportRow::class;
+        protected $rowDataType = '';
+        /**
+         * Additional information about the generated report, such as warnings about
+         * the data.
+         *
+         * @param ReportFooter $footer
+         */
+        public function setFooter(ReportFooter $footer)
+        {
+        }
+        /**
+         * @return ReportFooter
+         */
+        public function getFooter()
+        {
+        }
+        /**
+         * Report generation settings that describes the report contents, such as the
+         * report date range and localization settings.
+         *
+         * @param ReportHeader $header
+         */
+        public function setHeader(ReportHeader $header)
+        {
+        }
+        /**
+         * @return ReportHeader
+         */
+        public function getHeader()
+        {
+        }
+        /**
+         * Actual report data.
+         *
+         * @param ReportRow $row
+         */
+        public function setRow(ReportRow $row)
+        {
+        }
+        /**
+         * @return ReportRow
+         */
+        public function getRow()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ReportFooter
+     * Runtime class alias of \Google\Service\AdMob\GenerateMediationReportResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFooter()
-    {
-    }
-    /**
-     * Report generation settings that describes the report contents, such as the
-     * report date range and localization settings.
-     *
-     * @param ReportHeader $header
-     */
-    public function setHeader(ReportHeader $header)
-    {
-    }
-    /**
-     * @return ReportHeader
-     */
-    public function getHeader()
-    {
-    }
-    /**
-     * Actual report data.
-     *
-     * @param ReportRow $row
-     */
-    public function setRow(ReportRow $row)
-    {
-    }
-    /**
-     * @return ReportRow
-     */
-    public function getRow()
+    class Google_Service_AdMob_GenerateMediationReportResponse extends \Google\Service\AdMob\GenerateMediationReportResponse
     {
     }
 }

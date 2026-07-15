@@ -21,40 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin\Resource;
-
-/**
- * The "operations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $bigtableadminService = new Google\Service\BigtableAdmin(...);
- *   $operations = $bigtableadminService->operations_projects_operations;
- *  </code>
- */
-class OperationsProjectsOperations extends \Google\Service\Resource
-{
+namespace Google\Service\BigtableAdmin\Resource {
+    use Google\Service\BigtableAdmin\ListOperationsResponse;
     /**
-     * Lists operations that match the specified filter in the request. If the
-     * server doesn't support this method, it returns `UNIMPLEMENTED`.
-     * (operations.listOperationsProjectsOperations)
-     *
-     * @param string $name The name of the operation's parent resource.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter The standard list filter.
-     * @opt_param int pageSize The standard list page size.
-     * @opt_param string pageToken The standard list page token.
-     * @opt_param bool returnPartialSuccess When set to `true`, operations that are
-     * reachable are returned as normal, and those that are unreachable are returned
-     * in the [ListOperationsResponse.unreachable] field. This can only be `true`
-     * when reading across collections e.g. when `parent` is set to
-     * `"projects/example/locations/-"`. This field is not by default supported and
-     * will result in an `UNIMPLEMENTED` error if set unless explicitly documented
-     * otherwise in service or product specific documentation.
-     * @return ListOperationsResponse
-     * @throws \Google\Service\Exception
+     * The "operations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $bigtableadminService = new Google\Service\BigtableAdmin(...);
+     *   $operations = $bigtableadminService->operations_projects_operations;
+     *  </code>
      */
-    public function listOperationsProjectsOperations($name, $optParams = [])
+    class OperationsProjectsOperations extends \Google\Service\Resource
+    {
+        /**
+         * Lists operations that match the specified filter in the request. If the
+         * server doesn't support this method, it returns `UNIMPLEMENTED`.
+         * (operations.listOperationsProjectsOperations)
+         *
+         * @param string $name The name of the operation's parent resource.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter The standard list filter.
+         * @opt_param int pageSize The standard list page size.
+         * @opt_param string pageToken The standard list page token.
+         * @opt_param bool returnPartialSuccess When set to `true`, operations that are
+         * reachable are returned as normal, and those that are unreachable are returned
+         * in the [ListOperationsResponse.unreachable] field. This can only be `true`
+         * when reading across collections e.g. when `parent` is set to
+         * `"projects/example/locations/-"`. This field is not by default supported and
+         * will result in an `UNIMPLEMENTED` error if set unless explicitly documented
+         * otherwise in service or product specific documentation.
+         * @return ListOperationsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listOperationsProjectsOperations($name, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\BigtableAdmin\Resource\OperationsProjectsOperations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_BigtableAdmin_Resource_OperationsProjectsOperations extends \Google\Service\BigtableAdmin\Resource\OperationsProjectsOperations
     {
     }
 }

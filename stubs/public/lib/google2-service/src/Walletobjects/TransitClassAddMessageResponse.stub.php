@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class TransitClassAddMessageResponse extends \Google\Model
-{
-    protected $resourceType = TransitClass::class;
-    protected $resourceDataType = '';
-    /**
-     * The updated TransitClass resource.
-     *
-     * @param TransitClass $resource
-     */
-    public function setResource(TransitClass $resource)
+namespace Google\Service\Walletobjects {
+    class TransitClassAddMessageResponse extends \Google\Model
     {
+        protected $resourceType = TransitClass::class;
+        protected $resourceDataType = '';
+        /**
+         * The updated TransitClass resource.
+         *
+         * @param TransitClass $resource
+         */
+        public function setResource(TransitClass $resource)
+        {
+        }
+        /**
+         * @return TransitClass
+         */
+        public function getResource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TransitClass
+     * Runtime class alias of \Google\Service\Walletobjects\TransitClassAddMessageResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResource()
+    class Google_Service_Walletobjects_TransitClassAddMessageResponse extends \Google\Service\Walletobjects\TransitClassAddMessageResponse
     {
     }
 }

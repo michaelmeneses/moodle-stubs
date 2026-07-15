@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedMessageComponentSearchInfo extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $matchedSearch;
-    protected $titleTextWithDescriptionType = AppsDynamiteSharedTextWithDescription::class;
-    protected $titleTextWithDescriptionDataType = '';
-    /**
-     * @param bool
-     */
-    public function setMatchedSearch($matchedSearch)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedMessageComponentSearchInfo extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $matchedSearch;
+        protected $titleTextWithDescriptionType = AppsDynamiteSharedTextWithDescription::class;
+        protected $titleTextWithDescriptionDataType = '';
+        /**
+         * @param bool
+         */
+        public function setMatchedSearch($matchedSearch)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getMatchedSearch()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedTextWithDescription
+         */
+        public function setTitleTextWithDescription(AppsDynamiteSharedTextWithDescription $titleTextWithDescription)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedTextWithDescription
+         */
+        public function getTitleTextWithDescription()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedMessageComponentSearchInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMatchedSearch()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedTextWithDescription
-     */
-    public function setTitleTextWithDescription(AppsDynamiteSharedTextWithDescription $titleTextWithDescription)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedTextWithDescription
-     */
-    public function getTitleTextWithDescription()
+    class Google_Service_CloudSearch_AppsDynamiteSharedMessageComponentSearchInfo extends \Google\Service\CloudSearch\AppsDynamiteSharedMessageComponentSearchInfo
     {
     }
 }

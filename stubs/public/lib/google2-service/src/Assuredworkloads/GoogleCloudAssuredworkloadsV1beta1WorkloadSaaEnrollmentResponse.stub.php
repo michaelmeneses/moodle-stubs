@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Assuredworkloads;
-
-class GoogleCloudAssuredworkloadsV1beta1WorkloadSaaEnrollmentResponse extends \Google\Collection
-{
-    protected $collection_key = 'setupErrors';
-    /**
-     * @var string[]
-     */
-    public $setupErrors;
-    /**
-     * @var string
-     */
-    public $setupStatus;
-    /**
-     * @param string[]
-     */
-    public function setSetupErrors($setupErrors)
+namespace Google\Service\Assuredworkloads {
+    class GoogleCloudAssuredworkloadsV1beta1WorkloadSaaEnrollmentResponse extends \Google\Collection
     {
+        protected $collection_key = 'setupErrors';
+        /**
+         * @var string[]
+         */
+        public $setupErrors;
+        /**
+         * @var string
+         */
+        public $setupStatus;
+        /**
+         * @param string[]
+         */
+        public function setSetupErrors($setupErrors)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSetupErrors()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSetupStatus($setupStatus)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSetupStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1beta1WorkloadSaaEnrollmentResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSetupErrors()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSetupStatus($setupStatus)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSetupStatus()
+    class Google_Service_Assuredworkloads_GoogleCloudAssuredworkloadsV1beta1WorkloadSaaEnrollmentResponse extends \Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1beta1WorkloadSaaEnrollmentResponse
     {
     }
 }

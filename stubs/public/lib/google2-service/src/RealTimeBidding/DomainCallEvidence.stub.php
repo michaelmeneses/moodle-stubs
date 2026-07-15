@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RealTimeBidding;
-
-class DomainCallEvidence extends \Google\Collection
-{
-    protected $collection_key = 'topHttpCallDomains';
-    protected $topHttpCallDomainsType = DomainCalls::class;
-    protected $topHttpCallDomainsDataType = 'array';
-    /**
-     * The total number of HTTP calls made by the creative, including but not
-     * limited to the number of calls in the top_http_call_domains.
-     *
-     * @var int
-     */
-    public $totalHttpCallCount;
-    /**
-     * Breakdown of the most frequent domains called through HTTP by the creative.
-     *
-     * @param DomainCalls[] $topHttpCallDomains
-     */
-    public function setTopHttpCallDomains($topHttpCallDomains)
+namespace Google\Service\RealTimeBidding {
+    class DomainCallEvidence extends \Google\Collection
     {
+        protected $collection_key = 'topHttpCallDomains';
+        protected $topHttpCallDomainsType = DomainCalls::class;
+        protected $topHttpCallDomainsDataType = 'array';
+        /**
+         * The total number of HTTP calls made by the creative, including but not
+         * limited to the number of calls in the top_http_call_domains.
+         *
+         * @var int
+         */
+        public $totalHttpCallCount;
+        /**
+         * Breakdown of the most frequent domains called through HTTP by the creative.
+         *
+         * @param DomainCalls[] $topHttpCallDomains
+         */
+        public function setTopHttpCallDomains($topHttpCallDomains)
+        {
+        }
+        /**
+         * @return DomainCalls[]
+         */
+        public function getTopHttpCallDomains()
+        {
+        }
+        /**
+         * The total number of HTTP calls made by the creative, including but not
+         * limited to the number of calls in the top_http_call_domains.
+         *
+         * @param int $totalHttpCallCount
+         */
+        public function setTotalHttpCallCount($totalHttpCallCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalHttpCallCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DomainCalls[]
+     * Runtime class alias of \Google\Service\RealTimeBidding\DomainCallEvidence registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTopHttpCallDomains()
-    {
-    }
-    /**
-     * The total number of HTTP calls made by the creative, including but not
-     * limited to the number of calls in the top_http_call_domains.
-     *
-     * @param int $totalHttpCallCount
-     */
-    public function setTotalHttpCallCount($totalHttpCallCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalHttpCallCount()
+    class Google_Service_RealTimeBidding_DomainCallEvidence extends \Google\Service\RealTimeBidding\DomainCallEvidence
     {
     }
 }

@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecaptchaEnterprise;
-
-class GoogleCloudRecaptchaenterpriseV1ScoreMetrics extends \Google\Model
-{
-    protected $actionMetricsType = GoogleCloudRecaptchaenterpriseV1ScoreDistribution::class;
-    protected $actionMetricsDataType = 'map';
-    protected $overallMetricsType = GoogleCloudRecaptchaenterpriseV1ScoreDistribution::class;
-    protected $overallMetricsDataType = '';
-    /**
-     * Action-based metrics. The map key is the action name which specified by the
-     * site owners at time of the "execute" client-side call.
-     *
-     * @param GoogleCloudRecaptchaenterpriseV1ScoreDistribution[] $actionMetrics
-     */
-    public function setActionMetrics($actionMetrics)
+namespace Google\Service\RecaptchaEnterprise {
+    class GoogleCloudRecaptchaenterpriseV1ScoreMetrics extends \Google\Model
     {
+        protected $actionMetricsType = GoogleCloudRecaptchaenterpriseV1ScoreDistribution::class;
+        protected $actionMetricsDataType = 'map';
+        protected $overallMetricsType = GoogleCloudRecaptchaenterpriseV1ScoreDistribution::class;
+        protected $overallMetricsDataType = '';
+        /**
+         * Action-based metrics. The map key is the action name which specified by the
+         * site owners at time of the "execute" client-side call.
+         *
+         * @param GoogleCloudRecaptchaenterpriseV1ScoreDistribution[] $actionMetrics
+         */
+        public function setActionMetrics($actionMetrics)
+        {
+        }
+        /**
+         * @return GoogleCloudRecaptchaenterpriseV1ScoreDistribution[]
+         */
+        public function getActionMetrics()
+        {
+        }
+        /**
+         * Aggregated score metrics for all traffic.
+         *
+         * @param GoogleCloudRecaptchaenterpriseV1ScoreDistribution $overallMetrics
+         */
+        public function setOverallMetrics(GoogleCloudRecaptchaenterpriseV1ScoreDistribution $overallMetrics)
+        {
+        }
+        /**
+         * @return GoogleCloudRecaptchaenterpriseV1ScoreDistribution
+         */
+        public function getOverallMetrics()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRecaptchaenterpriseV1ScoreDistribution[]
+     * Runtime class alias of \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1ScoreMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActionMetrics()
-    {
-    }
-    /**
-     * Aggregated score metrics for all traffic.
-     *
-     * @param GoogleCloudRecaptchaenterpriseV1ScoreDistribution $overallMetrics
-     */
-    public function setOverallMetrics(GoogleCloudRecaptchaenterpriseV1ScoreDistribution $overallMetrics)
-    {
-    }
-    /**
-     * @return GoogleCloudRecaptchaenterpriseV1ScoreDistribution
-     */
-    public function getOverallMetrics()
+    class Google_Service_RecaptchaEnterprise_GoogleCloudRecaptchaenterpriseV1ScoreMetrics extends \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1ScoreMetrics
     {
     }
 }

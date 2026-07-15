@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datapipelines;
-
-class GoogleCloudDatapipelinesV1ArrayValue extends \Google\Collection
-{
-    protected $collection_key = 'elements';
-    protected $elementsType = GoogleCloudDatapipelinesV1FieldValue::class;
-    protected $elementsDataType = 'array';
-    /**
-     * @param GoogleCloudDatapipelinesV1FieldValue[]
-     */
-    public function setElements($elements)
+namespace Google\Service\Datapipelines {
+    class GoogleCloudDatapipelinesV1ArrayValue extends \Google\Collection
     {
+        protected $collection_key = 'elements';
+        protected $elementsType = GoogleCloudDatapipelinesV1FieldValue::class;
+        protected $elementsDataType = 'array';
+        /**
+         * @param GoogleCloudDatapipelinesV1FieldValue[]
+         */
+        public function setElements($elements)
+        {
+        }
+        /**
+         * @return GoogleCloudDatapipelinesV1FieldValue[]
+         */
+        public function getElements()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatapipelinesV1FieldValue[]
+     * Runtime class alias of \Google\Service\Datapipelines\GoogleCloudDatapipelinesV1ArrayValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getElements()
+    class Google_Service_Datapipelines_GoogleCloudDatapipelinesV1ArrayValue extends \Google\Service\Datapipelines\GoogleCloudDatapipelinesV1ArrayValue
     {
     }
 }

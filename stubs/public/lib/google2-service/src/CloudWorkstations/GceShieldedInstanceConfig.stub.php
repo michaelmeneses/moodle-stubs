@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudWorkstations;
-
-class GceShieldedInstanceConfig extends \Google\Model
-{
-    /**
-     * Optional. Whether the instance has integrity monitoring enabled.
-     *
-     * @var bool
-     */
-    public $enableIntegrityMonitoring;
-    /**
-     * Optional. Whether the instance has Secure Boot enabled.
-     *
-     * @var bool
-     */
-    public $enableSecureBoot;
-    /**
-     * Optional. Whether the instance has the vTPM enabled.
-     *
-     * @var bool
-     */
-    public $enableVtpm;
-    /**
-     * Optional. Whether the instance has integrity monitoring enabled.
-     *
-     * @param bool $enableIntegrityMonitoring
-     */
-    public function setEnableIntegrityMonitoring($enableIntegrityMonitoring)
+namespace Google\Service\CloudWorkstations {
+    class GceShieldedInstanceConfig extends \Google\Model
     {
+        /**
+         * Optional. Whether the instance has integrity monitoring enabled.
+         *
+         * @var bool
+         */
+        public $enableIntegrityMonitoring;
+        /**
+         * Optional. Whether the instance has Secure Boot enabled.
+         *
+         * @var bool
+         */
+        public $enableSecureBoot;
+        /**
+         * Optional. Whether the instance has the vTPM enabled.
+         *
+         * @var bool
+         */
+        public $enableVtpm;
+        /**
+         * Optional. Whether the instance has integrity monitoring enabled.
+         *
+         * @param bool $enableIntegrityMonitoring
+         */
+        public function setEnableIntegrityMonitoring($enableIntegrityMonitoring)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableIntegrityMonitoring()
+        {
+        }
+        /**
+         * Optional. Whether the instance has Secure Boot enabled.
+         *
+         * @param bool $enableSecureBoot
+         */
+        public function setEnableSecureBoot($enableSecureBoot)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableSecureBoot()
+        {
+        }
+        /**
+         * Optional. Whether the instance has the vTPM enabled.
+         *
+         * @param bool $enableVtpm
+         */
+        public function setEnableVtpm($enableVtpm)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableVtpm()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudWorkstations\GceShieldedInstanceConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnableIntegrityMonitoring()
-    {
-    }
-    /**
-     * Optional. Whether the instance has Secure Boot enabled.
-     *
-     * @param bool $enableSecureBoot
-     */
-    public function setEnableSecureBoot($enableSecureBoot)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnableSecureBoot()
-    {
-    }
-    /**
-     * Optional. Whether the instance has the vTPM enabled.
-     *
-     * @param bool $enableVtpm
-     */
-    public function setEnableVtpm($enableVtpm)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnableVtpm()
+    class Google_Service_CloudWorkstations_GceShieldedInstanceConfig extends \Google\Service\CloudWorkstations\GceShieldedInstanceConfig
     {
     }
 }

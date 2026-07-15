@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaAnswerStepActionSearchAction extends \Google\Model
-{
-    /**
-     * The query to search.
-     *
-     * @var string
-     */
-    public $query;
-    /**
-     * The query to search.
-     *
-     * @param string $query
-     */
-    public function setQuery($query)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaAnswerStepActionSearchAction extends \Google\Model
     {
+        /**
+         * The query to search.
+         *
+         * @var string
+         */
+        public $query;
+        /**
+         * The query to search.
+         *
+         * @param string $query
+         */
+        public function setQuery($query)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQuery()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaAnswerStepActionSearchAction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getQuery()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaAnswerStepActionSearchAction extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaAnswerStepActionSearchAction
     {
     }
 }

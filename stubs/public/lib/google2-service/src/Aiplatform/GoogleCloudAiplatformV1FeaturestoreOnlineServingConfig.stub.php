@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1FeaturestoreOnlineServingConfig extends \Google\Model
-{
-    /**
-     * The number of nodes for the online store. The number of nodes doesn't scale
-     * automatically, but you can manually update the number of nodes. If set to
-     * 0, the featurestore will not have an online store and cannot be used for
-     * online serving.
-     *
-     * @var int
-     */
-    public $fixedNodeCount;
-    protected $scalingType = GoogleCloudAiplatformV1FeaturestoreOnlineServingConfigScaling::class;
-    protected $scalingDataType = '';
-    /**
-     * The number of nodes for the online store. The number of nodes doesn't scale
-     * automatically, but you can manually update the number of nodes. If set to
-     * 0, the featurestore will not have an online store and cannot be used for
-     * online serving.
-     *
-     * @param int $fixedNodeCount
-     */
-    public function setFixedNodeCount($fixedNodeCount)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1FeaturestoreOnlineServingConfig extends \Google\Model
     {
+        /**
+         * The number of nodes for the online store. The number of nodes doesn't scale
+         * automatically, but you can manually update the number of nodes. If set to
+         * 0, the featurestore will not have an online store and cannot be used for
+         * online serving.
+         *
+         * @var int
+         */
+        public $fixedNodeCount;
+        protected $scalingType = GoogleCloudAiplatformV1FeaturestoreOnlineServingConfigScaling::class;
+        protected $scalingDataType = '';
+        /**
+         * The number of nodes for the online store. The number of nodes doesn't scale
+         * automatically, but you can manually update the number of nodes. If set to
+         * 0, the featurestore will not have an online store and cannot be used for
+         * online serving.
+         *
+         * @param int $fixedNodeCount
+         */
+        public function setFixedNodeCount($fixedNodeCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getFixedNodeCount()
+        {
+        }
+        /**
+         * Online serving scaling configuration. Only one of `fixed_node_count` and
+         * `scaling` can be set. Setting one will reset the other.
+         *
+         * @param GoogleCloudAiplatformV1FeaturestoreOnlineServingConfigScaling $scaling
+         */
+        public function setScaling(GoogleCloudAiplatformV1FeaturestoreOnlineServingConfigScaling $scaling)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1FeaturestoreOnlineServingConfigScaling
+         */
+        public function getScaling()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1FeaturestoreOnlineServingConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFixedNodeCount()
-    {
-    }
-    /**
-     * Online serving scaling configuration. Only one of `fixed_node_count` and
-     * `scaling` can be set. Setting one will reset the other.
-     *
-     * @param GoogleCloudAiplatformV1FeaturestoreOnlineServingConfigScaling $scaling
-     */
-    public function setScaling(GoogleCloudAiplatformV1FeaturestoreOnlineServingConfigScaling $scaling)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1FeaturestoreOnlineServingConfigScaling
-     */
-    public function getScaling()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1FeaturestoreOnlineServingConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1FeaturestoreOnlineServingConfig
     {
     }
 }

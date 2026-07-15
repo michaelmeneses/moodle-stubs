@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firebaseappcheck;
-
-class GoogleFirebaseAppcheckV1ExchangeAppAttestAttestationResponse extends \Google\Model
-{
-    protected $appCheckTokenType = GoogleFirebaseAppcheckV1AppCheckToken::class;
-    protected $appCheckTokenDataType = '';
-    /**
-     * An artifact that can be used in future calls to ExchangeAppAttestAssertion.
-     *
-     * @var string
-     */
-    public $artifact;
-    /**
-     * Encapsulates an App Check token.
-     *
-     * @param GoogleFirebaseAppcheckV1AppCheckToken $appCheckToken
-     */
-    public function setAppCheckToken(GoogleFirebaseAppcheckV1AppCheckToken $appCheckToken)
+namespace Google\Service\Firebaseappcheck {
+    class GoogleFirebaseAppcheckV1ExchangeAppAttestAttestationResponse extends \Google\Model
     {
+        protected $appCheckTokenType = GoogleFirebaseAppcheckV1AppCheckToken::class;
+        protected $appCheckTokenDataType = '';
+        /**
+         * An artifact that can be used in future calls to ExchangeAppAttestAssertion.
+         *
+         * @var string
+         */
+        public $artifact;
+        /**
+         * Encapsulates an App Check token.
+         *
+         * @param GoogleFirebaseAppcheckV1AppCheckToken $appCheckToken
+         */
+        public function setAppCheckToken(GoogleFirebaseAppcheckV1AppCheckToken $appCheckToken)
+        {
+        }
+        /**
+         * @return GoogleFirebaseAppcheckV1AppCheckToken
+         */
+        public function getAppCheckToken()
+        {
+        }
+        /**
+         * An artifact that can be used in future calls to ExchangeAppAttestAssertion.
+         *
+         * @param string $artifact
+         */
+        public function setArtifact($artifact)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getArtifact()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleFirebaseAppcheckV1AppCheckToken
+     * Runtime class alias of \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1ExchangeAppAttestAttestationResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAppCheckToken()
-    {
-    }
-    /**
-     * An artifact that can be used in future calls to ExchangeAppAttestAssertion.
-     *
-     * @param string $artifact
-     */
-    public function setArtifact($artifact)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getArtifact()
+    class Google_Service_Firebaseappcheck_GoogleFirebaseAppcheckV1ExchangeAppAttestAttestationResponse extends \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1ExchangeAppAttestAttestationResponse
     {
     }
 }

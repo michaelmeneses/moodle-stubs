@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class GoogleIdentityAccesscontextmanagerV1CustomLevel extends \Google\Model
-{
-    protected $exprType = Expr::class;
-    protected $exprDataType = '';
-    /**
-     * Required. A Cloud CEL expression evaluating to a boolean.
-     *
-     * @param Expr $expr
-     */
-    public function setExpr(Expr $expr)
+namespace Google\Service\CloudAsset {
+    class GoogleIdentityAccesscontextmanagerV1CustomLevel extends \Google\Model
     {
+        protected $exprType = Expr::class;
+        protected $exprDataType = '';
+        /**
+         * Required. A Cloud CEL expression evaluating to a boolean.
+         *
+         * @param Expr $expr
+         */
+        public function setExpr(Expr $expr)
+        {
+        }
+        /**
+         * @return Expr
+         */
+        public function getExpr()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Expr
+     * Runtime class alias of \Google\Service\CloudAsset\GoogleIdentityAccesscontextmanagerV1CustomLevel registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExpr()
+    class Google_Service_CloudAsset_GoogleIdentityAccesscontextmanagerV1CustomLevel extends \Google\Service\CloudAsset\GoogleIdentityAccesscontextmanagerV1CustomLevel
     {
     }
 }

@@ -21,35 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for CivicInfo (v2).
- *
- * <p>
- * Provides polling places, early vote locations, contest data, election
- * officials, and government representatives for U.S. residential addresses.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://developers.google.com/civic-information/" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class CivicInfo extends \Google\Service
-{
-    public $divisions;
-    public $elections;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the CivicInfo service.
+     * Service definition for CivicInfo (v2).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * Provides polling places, early vote locations, contest data, election
+     * officials, and government representatives for U.S. residential addresses.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://developers.google.com/civic-information/" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class CivicInfo extends \Google\Service
+    {
+        public $divisions;
+        public $elections;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the CivicInfo service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CivicInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CivicInfo extends \Google\Service\CivicInfo
     {
     }
 }

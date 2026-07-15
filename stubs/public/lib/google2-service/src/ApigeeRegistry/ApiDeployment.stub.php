@@ -21,330 +21,339 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ApigeeRegistry;
-
-class ApiDeployment extends \Google\Model
-{
-    /**
-     * Text briefly describing how to access the endpoint. Changes to this value
-     * will not affect the revision.
-     *
-     * @var string
-     */
-    public $accessGuidance;
-    /**
-     * Annotations attach non-identifying metadata to resources. Annotation keys
-     * and values are less restricted than those of labels, but should be
-     * generally used for small values of broad interest. Larger, topic- specific
-     * metadata should be stored in Artifacts.
-     *
-     * @var string[]
-     */
-    public $annotations;
-    /**
-     * The full resource name (including revision ID) of the spec of the API being
-     * served by the deployment. Changes to this value will update the revision.
-     * Format: `projects/{project}/locations/{location}/apis/{api}/versions/{versi
-     * on}/specs/{spec@revision}`
-     *
-     * @var string
-     */
-    public $apiSpecRevision;
-    /**
-     * Output only. Creation timestamp; when the deployment resource was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * A detailed description.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Human-meaningful name.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The address where the deployment is serving. Changes to this value will
-     * update the revision.
-     *
-     * @var string
-     */
-    public $endpointUri;
-    /**
-     * The address of the external channel of the API (e.g., the Developer
-     * Portal). Changes to this value will not affect the revision.
-     *
-     * @var string
-     */
-    public $externalChannelUri;
-    /**
-     * Text briefly identifying the intended audience of the API. Changes to this
-     * value will not affect the revision.
-     *
-     * @var string
-     */
-    public $intendedAudience;
-    /**
-     * Labels attach identifying metadata to resources. Identifying metadata can
-     * be used to filter list operations. Label keys and values can be no longer
-     * than 64 characters (Unicode codepoints), can only contain lowercase
-     * letters, numeric characters, underscores and dashes. International
-     * characters are allowed. No more than 64 user labels can be associated with
-     * one resource (System labels are excluded). See https://goo.gl/xmQnxf for
-     * more information and examples of labels. System reserved label keys are
-     * prefixed with `apigeeregistry.googleapis.com/` and cannot be changed.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Resource name.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. Revision creation timestamp; when the represented revision was
-     * created.
-     *
-     * @var string
-     */
-    public $revisionCreateTime;
-    /**
-     * Output only. Immutable. The revision ID of the deployment. A new revision
-     * is committed whenever the deployment contents are changed. The format is an
-     * 8-character hexadecimal string.
-     *
-     * @var string
-     */
-    public $revisionId;
-    /**
-     * Output only. Last update timestamp: when the represented revision was last
-     * modified.
-     *
-     * @var string
-     */
-    public $revisionUpdateTime;
-    /**
-     * Text briefly describing how to access the endpoint. Changes to this value
-     * will not affect the revision.
-     *
-     * @param string $accessGuidance
-     */
-    public function setAccessGuidance($accessGuidance)
+namespace Google\Service\ApigeeRegistry {
+    class ApiDeployment extends \Google\Model
     {
+        /**
+         * Text briefly describing how to access the endpoint. Changes to this value
+         * will not affect the revision.
+         *
+         * @var string
+         */
+        public $accessGuidance;
+        /**
+         * Annotations attach non-identifying metadata to resources. Annotation keys
+         * and values are less restricted than those of labels, but should be
+         * generally used for small values of broad interest. Larger, topic- specific
+         * metadata should be stored in Artifacts.
+         *
+         * @var string[]
+         */
+        public $annotations;
+        /**
+         * The full resource name (including revision ID) of the spec of the API being
+         * served by the deployment. Changes to this value will update the revision.
+         * Format: `projects/{project}/locations/{location}/apis/{api}/versions/{versi
+         * on}/specs/{spec@revision}`
+         *
+         * @var string
+         */
+        public $apiSpecRevision;
+        /**
+         * Output only. Creation timestamp; when the deployment resource was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * A detailed description.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Human-meaningful name.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The address where the deployment is serving. Changes to this value will
+         * update the revision.
+         *
+         * @var string
+         */
+        public $endpointUri;
+        /**
+         * The address of the external channel of the API (e.g., the Developer
+         * Portal). Changes to this value will not affect the revision.
+         *
+         * @var string
+         */
+        public $externalChannelUri;
+        /**
+         * Text briefly identifying the intended audience of the API. Changes to this
+         * value will not affect the revision.
+         *
+         * @var string
+         */
+        public $intendedAudience;
+        /**
+         * Labels attach identifying metadata to resources. Identifying metadata can
+         * be used to filter list operations. Label keys and values can be no longer
+         * than 64 characters (Unicode codepoints), can only contain lowercase
+         * letters, numeric characters, underscores and dashes. International
+         * characters are allowed. No more than 64 user labels can be associated with
+         * one resource (System labels are excluded). See https://goo.gl/xmQnxf for
+         * more information and examples of labels. System reserved label keys are
+         * prefixed with `apigeeregistry.googleapis.com/` and cannot be changed.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Resource name.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. Revision creation timestamp; when the represented revision was
+         * created.
+         *
+         * @var string
+         */
+        public $revisionCreateTime;
+        /**
+         * Output only. Immutable. The revision ID of the deployment. A new revision
+         * is committed whenever the deployment contents are changed. The format is an
+         * 8-character hexadecimal string.
+         *
+         * @var string
+         */
+        public $revisionId;
+        /**
+         * Output only. Last update timestamp: when the represented revision was last
+         * modified.
+         *
+         * @var string
+         */
+        public $revisionUpdateTime;
+        /**
+         * Text briefly describing how to access the endpoint. Changes to this value
+         * will not affect the revision.
+         *
+         * @param string $accessGuidance
+         */
+        public function setAccessGuidance($accessGuidance)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccessGuidance()
+        {
+        }
+        /**
+         * Annotations attach non-identifying metadata to resources. Annotation keys
+         * and values are less restricted than those of labels, but should be
+         * generally used for small values of broad interest. Larger, topic- specific
+         * metadata should be stored in Artifacts.
+         *
+         * @param string[] $annotations
+         */
+        public function setAnnotations($annotations)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAnnotations()
+        {
+        }
+        /**
+         * The full resource name (including revision ID) of the spec of the API being
+         * served by the deployment. Changes to this value will update the revision.
+         * Format: `projects/{project}/locations/{location}/apis/{api}/versions/{versi
+         * on}/specs/{spec@revision}`
+         *
+         * @param string $apiSpecRevision
+         */
+        public function setApiSpecRevision($apiSpecRevision)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApiSpecRevision()
+        {
+        }
+        /**
+         * Output only. Creation timestamp; when the deployment resource was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * A detailed description.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Human-meaningful name.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The address where the deployment is serving. Changes to this value will
+         * update the revision.
+         *
+         * @param string $endpointUri
+         */
+        public function setEndpointUri($endpointUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndpointUri()
+        {
+        }
+        /**
+         * The address of the external channel of the API (e.g., the Developer
+         * Portal). Changes to this value will not affect the revision.
+         *
+         * @param string $externalChannelUri
+         */
+        public function setExternalChannelUri($externalChannelUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExternalChannelUri()
+        {
+        }
+        /**
+         * Text briefly identifying the intended audience of the API. Changes to this
+         * value will not affect the revision.
+         *
+         * @param string $intendedAudience
+         */
+        public function setIntendedAudience($intendedAudience)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIntendedAudience()
+        {
+        }
+        /**
+         * Labels attach identifying metadata to resources. Identifying metadata can
+         * be used to filter list operations. Label keys and values can be no longer
+         * than 64 characters (Unicode codepoints), can only contain lowercase
+         * letters, numeric characters, underscores and dashes. International
+         * characters are allowed. No more than 64 user labels can be associated with
+         * one resource (System labels are excluded). See https://goo.gl/xmQnxf for
+         * more information and examples of labels. System reserved label keys are
+         * prefixed with `apigeeregistry.googleapis.com/` and cannot be changed.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Resource name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. Revision creation timestamp; when the represented revision was
+         * created.
+         *
+         * @param string $revisionCreateTime
+         */
+        public function setRevisionCreateTime($revisionCreateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRevisionCreateTime()
+        {
+        }
+        /**
+         * Output only. Immutable. The revision ID of the deployment. A new revision
+         * is committed whenever the deployment contents are changed. The format is an
+         * 8-character hexadecimal string.
+         *
+         * @param string $revisionId
+         */
+        public function setRevisionId($revisionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRevisionId()
+        {
+        }
+        /**
+         * Output only. Last update timestamp: when the represented revision was last
+         * modified.
+         *
+         * @param string $revisionUpdateTime
+         */
+        public function setRevisionUpdateTime($revisionUpdateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRevisionUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ApigeeRegistry\ApiDeployment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccessGuidance()
-    {
-    }
-    /**
-     * Annotations attach non-identifying metadata to resources. Annotation keys
-     * and values are less restricted than those of labels, but should be
-     * generally used for small values of broad interest. Larger, topic- specific
-     * metadata should be stored in Artifacts.
-     *
-     * @param string[] $annotations
-     */
-    public function setAnnotations($annotations)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getAnnotations()
-    {
-    }
-    /**
-     * The full resource name (including revision ID) of the spec of the API being
-     * served by the deployment. Changes to this value will update the revision.
-     * Format: `projects/{project}/locations/{location}/apis/{api}/versions/{versi
-     * on}/specs/{spec@revision}`
-     *
-     * @param string $apiSpecRevision
-     */
-    public function setApiSpecRevision($apiSpecRevision)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getApiSpecRevision()
-    {
-    }
-    /**
-     * Output only. Creation timestamp; when the deployment resource was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * A detailed description.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Human-meaningful name.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The address where the deployment is serving. Changes to this value will
-     * update the revision.
-     *
-     * @param string $endpointUri
-     */
-    public function setEndpointUri($endpointUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndpointUri()
-    {
-    }
-    /**
-     * The address of the external channel of the API (e.g., the Developer
-     * Portal). Changes to this value will not affect the revision.
-     *
-     * @param string $externalChannelUri
-     */
-    public function setExternalChannelUri($externalChannelUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExternalChannelUri()
-    {
-    }
-    /**
-     * Text briefly identifying the intended audience of the API. Changes to this
-     * value will not affect the revision.
-     *
-     * @param string $intendedAudience
-     */
-    public function setIntendedAudience($intendedAudience)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIntendedAudience()
-    {
-    }
-    /**
-     * Labels attach identifying metadata to resources. Identifying metadata can
-     * be used to filter list operations. Label keys and values can be no longer
-     * than 64 characters (Unicode codepoints), can only contain lowercase
-     * letters, numeric characters, underscores and dashes. International
-     * characters are allowed. No more than 64 user labels can be associated with
-     * one resource (System labels are excluded). See https://goo.gl/xmQnxf for
-     * more information and examples of labels. System reserved label keys are
-     * prefixed with `apigeeregistry.googleapis.com/` and cannot be changed.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Resource name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. Revision creation timestamp; when the represented revision was
-     * created.
-     *
-     * @param string $revisionCreateTime
-     */
-    public function setRevisionCreateTime($revisionCreateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRevisionCreateTime()
-    {
-    }
-    /**
-     * Output only. Immutable. The revision ID of the deployment. A new revision
-     * is committed whenever the deployment contents are changed. The format is an
-     * 8-character hexadecimal string.
-     *
-     * @param string $revisionId
-     */
-    public function setRevisionId($revisionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRevisionId()
-    {
-    }
-    /**
-     * Output only. Last update timestamp: when the represented revision was last
-     * modified.
-     *
-     * @param string $revisionUpdateTime
-     */
-    public function setRevisionUpdateTime($revisionUpdateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRevisionUpdateTime()
+    class Google_Service_ApigeeRegistry_ApiDeployment extends \Google\Service\ApigeeRegistry\ApiDeployment
     {
     }
 }

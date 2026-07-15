@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Games;
-
-class PlayerScoreListResponse extends \Google\Collection
-{
-    protected $collection_key = 'submittedScores';
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#playerScoreListResponse`.
-     *
-     * @var string
-     */
-    public $kind;
-    protected $submittedScoresType = PlayerScoreResponse::class;
-    protected $submittedScoresDataType = 'array';
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#playerScoreListResponse`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Games {
+    class PlayerScoreListResponse extends \Google\Collection
     {
+        protected $collection_key = 'submittedScores';
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#playerScoreListResponse`.
+         *
+         * @var string
+         */
+        public $kind;
+        protected $submittedScoresType = PlayerScoreResponse::class;
+        protected $submittedScoresDataType = 'array';
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#playerScoreListResponse`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The score submissions statuses.
+         *
+         * @param PlayerScoreResponse[] $submittedScores
+         */
+        public function setSubmittedScores($submittedScores)
+        {
+        }
+        /**
+         * @return PlayerScoreResponse[]
+         */
+        public function getSubmittedScores()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Games\PlayerScoreListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * The score submissions statuses.
-     *
-     * @param PlayerScoreResponse[] $submittedScores
-     */
-    public function setSubmittedScores($submittedScores)
-    {
-    }
-    /**
-     * @return PlayerScoreResponse[]
-     */
-    public function getSubmittedScores()
+    class Google_Service_Games_PlayerScoreListResponse extends \Google\Service\Games\PlayerScoreListResponse
     {
     }
 }

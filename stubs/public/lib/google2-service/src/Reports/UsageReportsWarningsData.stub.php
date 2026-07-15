@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Reports;
-
-class UsageReportsWarningsData extends \Google\Model
-{
-    /**
-     * Key associated with a key-value pair to give detailed information on the
-     * warning.
-     *
-     * @var string
-     */
-    public $key;
-    /**
-     * Value associated with a key-value pair to give detailed information on the
-     * warning.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Key associated with a key-value pair to give detailed information on the
-     * warning.
-     *
-     * @param string $key
-     */
-    public function setKey($key)
+namespace Google\Service\Reports {
+    class UsageReportsWarningsData extends \Google\Model
     {
+        /**
+         * Key associated with a key-value pair to give detailed information on the
+         * warning.
+         *
+         * @var string
+         */
+        public $key;
+        /**
+         * Value associated with a key-value pair to give detailed information on the
+         * warning.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Key associated with a key-value pair to give detailed information on the
+         * warning.
+         *
+         * @param string $key
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * Value associated with a key-value pair to give detailed information on the
+         * warning.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Reports\UsageReportsWarningsData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKey()
-    {
-    }
-    /**
-     * Value associated with a key-value pair to give detailed information on the
-     * warning.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_Reports_UsageReportsWarningsData extends \Google\Service\Reports\UsageReportsWarningsData
     {
     }
 }

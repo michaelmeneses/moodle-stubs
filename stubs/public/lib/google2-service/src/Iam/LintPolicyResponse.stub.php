@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Iam;
-
-class LintPolicyResponse extends \Google\Collection
-{
-    protected $collection_key = 'lintResults';
-    protected $lintResultsType = LintResult::class;
-    protected $lintResultsDataType = 'array';
-    public $lintResults;
-    /**
-     * @param LintResult[]
-     */
-    public function setLintResults($lintResults)
+namespace Google\Service\Iam {
+    class LintPolicyResponse extends \Google\Collection
     {
+        protected $collection_key = 'lintResults';
+        protected $lintResultsType = LintResult::class;
+        protected $lintResultsDataType = 'array';
+        public $lintResults;
+        /**
+         * @param LintResult[]
+         */
+        public function setLintResults($lintResults)
+        {
+        }
+        /**
+         * @return LintResult[]
+         */
+        public function getLintResults()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LintResult[]
+     * Runtime class alias of \Google\Service\Iam\LintPolicyResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLintResults()
+    class Google_Service_Iam_LintPolicyResponse extends \Google\Service\Iam\LintPolicyResponse
     {
     }
 }

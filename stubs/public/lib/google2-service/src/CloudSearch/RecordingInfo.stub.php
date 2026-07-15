@@ -21,102 +21,111 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class RecordingInfo extends \Google\Model
-{
-    protected $latestRecordingEventType = RecordingEvent::class;
-    protected $latestRecordingEventDataType = '';
-    /**
-     * @var string
-     */
-    public $ownerDisplayName;
-    /**
-     * @var string
-     */
-    public $producerDeviceId;
-    /**
-     * @var string
-     */
-    public $recordingApplicationType;
-    /**
-     * @var string
-     */
-    public $recordingId;
-    /**
-     * @var string
-     */
-    public $recordingStatus;
-    /**
-     * @param RecordingEvent
-     */
-    public function setLatestRecordingEvent(RecordingEvent $latestRecordingEvent)
+namespace Google\Service\CloudSearch {
+    class RecordingInfo extends \Google\Model
     {
+        protected $latestRecordingEventType = RecordingEvent::class;
+        protected $latestRecordingEventDataType = '';
+        /**
+         * @var string
+         */
+        public $ownerDisplayName;
+        /**
+         * @var string
+         */
+        public $producerDeviceId;
+        /**
+         * @var string
+         */
+        public $recordingApplicationType;
+        /**
+         * @var string
+         */
+        public $recordingId;
+        /**
+         * @var string
+         */
+        public $recordingStatus;
+        /**
+         * @param RecordingEvent
+         */
+        public function setLatestRecordingEvent(RecordingEvent $latestRecordingEvent)
+        {
+        }
+        /**
+         * @return RecordingEvent
+         */
+        public function getLatestRecordingEvent()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOwnerDisplayName($ownerDisplayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOwnerDisplayName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setProducerDeviceId($producerDeviceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProducerDeviceId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRecordingApplicationType($recordingApplicationType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRecordingApplicationType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRecordingId($recordingId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRecordingId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRecordingStatus($recordingStatus)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRecordingStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RecordingEvent
+     * Runtime class alias of \Google\Service\CloudSearch\RecordingInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLatestRecordingEvent()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOwnerDisplayName($ownerDisplayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOwnerDisplayName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setProducerDeviceId($producerDeviceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProducerDeviceId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRecordingApplicationType($recordingApplicationType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRecordingApplicationType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRecordingId($recordingId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRecordingId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRecordingStatus($recordingStatus)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRecordingStatus()
+    class Google_Service_CloudSearch_RecordingInfo extends \Google\Service\CloudSearch\RecordingInfo
     {
     }
 }

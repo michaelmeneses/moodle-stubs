@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class RuntimeUpdatableParams extends \Google\Model
-{
-    /**
-     * The maximum number of workers to cap autoscaling at. This field is
-     * currently only supported for Streaming Engine jobs.
-     *
-     * @var int
-     */
-    public $maxNumWorkers;
-    /**
-     * The minimum number of workers to scale down to. This field is currently
-     * only supported for Streaming Engine jobs.
-     *
-     * @var int
-     */
-    public $minNumWorkers;
-    /**
-     * Target worker utilization, compared against the aggregate utilization of
-     * the worker pool by autoscaler, to determine upscaling and downscaling when
-     * absent other constraints such as backlog. For more information, see [Update
-     * an existing
-     * pipeline](https://cloud.google.com/dataflow/docs/guides/updating-a-
-     * pipeline).
-     *
-     * @var 
-     */
-    public $workerUtilizationHint;
-    /**
-     * The maximum number of workers to cap autoscaling at. This field is
-     * currently only supported for Streaming Engine jobs.
-     *
-     * @param int $maxNumWorkers
-     */
-    public function setMaxNumWorkers($maxNumWorkers)
+namespace Google\Service\Dataflow {
+    class RuntimeUpdatableParams extends \Google\Model
     {
+        /**
+         * The maximum number of workers to cap autoscaling at. This field is
+         * currently only supported for Streaming Engine jobs.
+         *
+         * @var int
+         */
+        public $maxNumWorkers;
+        /**
+         * The minimum number of workers to scale down to. This field is currently
+         * only supported for Streaming Engine jobs.
+         *
+         * @var int
+         */
+        public $minNumWorkers;
+        /**
+         * Target worker utilization, compared against the aggregate utilization of
+         * the worker pool by autoscaler, to determine upscaling and downscaling when
+         * absent other constraints such as backlog. For more information, see [Update
+         * an existing
+         * pipeline](https://cloud.google.com/dataflow/docs/guides/updating-a-
+         * pipeline).
+         *
+         * @var 
+         */
+        public $workerUtilizationHint;
+        /**
+         * The maximum number of workers to cap autoscaling at. This field is
+         * currently only supported for Streaming Engine jobs.
+         *
+         * @param int $maxNumWorkers
+         */
+        public function setMaxNumWorkers($maxNumWorkers)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxNumWorkers()
+        {
+        }
+        /**
+         * The minimum number of workers to scale down to. This field is currently
+         * only supported for Streaming Engine jobs.
+         *
+         * @param int $minNumWorkers
+         */
+        public function setMinNumWorkers($minNumWorkers)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMinNumWorkers()
+        {
+        }
+        public function setWorkerUtilizationHint($workerUtilizationHint)
+        {
+        }
+        public function getWorkerUtilizationHint()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Dataflow\RuntimeUpdatableParams registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaxNumWorkers()
-    {
-    }
-    /**
-     * The minimum number of workers to scale down to. This field is currently
-     * only supported for Streaming Engine jobs.
-     *
-     * @param int $minNumWorkers
-     */
-    public function setMinNumWorkers($minNumWorkers)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMinNumWorkers()
-    {
-    }
-    public function setWorkerUtilizationHint($workerUtilizationHint)
-    {
-    }
-    public function getWorkerUtilizationHint()
+    class Google_Service_Dataflow_RuntimeUpdatableParams extends \Google\Service\Dataflow\RuntimeUpdatableParams
     {
     }
 }

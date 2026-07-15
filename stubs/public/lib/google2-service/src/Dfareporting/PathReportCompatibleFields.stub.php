@@ -21,81 +21,90 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class PathReportCompatibleFields extends \Google\Collection
-{
-    protected $collection_key = 'pathFilters';
-    protected $channelGroupingsType = Dimension::class;
-    protected $channelGroupingsDataType = 'array';
-    protected $dimensionsType = Dimension::class;
-    protected $dimensionsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $kind;
-    protected $metricsType = Metric::class;
-    protected $metricsDataType = 'array';
-    protected $pathFiltersType = Dimension::class;
-    protected $pathFiltersDataType = 'array';
-    /**
-     * @param Dimension[]
-     */
-    public function setChannelGroupings($channelGroupings)
+namespace Google\Service\Dfareporting {
+    class PathReportCompatibleFields extends \Google\Collection
     {
+        protected $collection_key = 'pathFilters';
+        protected $channelGroupingsType = Dimension::class;
+        protected $channelGroupingsDataType = 'array';
+        protected $dimensionsType = Dimension::class;
+        protected $dimensionsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $kind;
+        protected $metricsType = Metric::class;
+        protected $metricsDataType = 'array';
+        protected $pathFiltersType = Dimension::class;
+        protected $pathFiltersDataType = 'array';
+        /**
+         * @param Dimension[]
+         */
+        public function setChannelGroupings($channelGroupings)
+        {
+        }
+        /**
+         * @return Dimension[]
+         */
+        public function getChannelGroupings()
+        {
+        }
+        /**
+         * @param Dimension[]
+         */
+        public function setDimensions($dimensions)
+        {
+        }
+        /**
+         * @return Dimension[]
+         */
+        public function getDimensions()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * @param Metric[]
+         */
+        public function setMetrics($metrics)
+        {
+        }
+        /**
+         * @return Metric[]
+         */
+        public function getMetrics()
+        {
+        }
+        /**
+         * @param Dimension[]
+         */
+        public function setPathFilters($pathFilters)
+        {
+        }
+        /**
+         * @return Dimension[]
+         */
+        public function getPathFilters()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Dimension[]
+     * Runtime class alias of \Google\Service\Dfareporting\PathReportCompatibleFields registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChannelGroupings()
-    {
-    }
-    /**
-     * @param Dimension[]
-     */
-    public function setDimensions($dimensions)
-    {
-    }
-    /**
-     * @return Dimension[]
-     */
-    public function getDimensions()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * @param Metric[]
-     */
-    public function setMetrics($metrics)
-    {
-    }
-    /**
-     * @return Metric[]
-     */
-    public function getMetrics()
-    {
-    }
-    /**
-     * @param Dimension[]
-     */
-    public function setPathFilters($pathFilters)
-    {
-    }
-    /**
-     * @return Dimension[]
-     */
-    public function getPathFilters()
+    class Google_Service_Dfareporting_PathReportCompatibleFields extends \Google\Service\Dfareporting\PathReportCompatibleFields
     {
     }
 }

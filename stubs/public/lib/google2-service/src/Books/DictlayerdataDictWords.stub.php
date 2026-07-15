@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class DictlayerdataDictWords extends \Google\Collection
-{
-    protected $collection_key = 'senses';
-    protected $derivativesType = DictlayerdataDictWordsDerivatives::class;
-    protected $derivativesDataType = 'array';
-    protected $examplesType = DictlayerdataDictWordsExamples::class;
-    protected $examplesDataType = 'array';
-    protected $sensesType = DictlayerdataDictWordsSenses::class;
-    protected $sensesDataType = 'array';
-    protected $sourceType = DictlayerdataDictWordsSource::class;
-    protected $sourceDataType = '';
-    /**
-     * @param DictlayerdataDictWordsDerivatives[] $derivatives
-     */
-    public function setDerivatives($derivatives)
+namespace Google\Service\Books {
+    class DictlayerdataDictWords extends \Google\Collection
     {
+        protected $collection_key = 'senses';
+        protected $derivativesType = DictlayerdataDictWordsDerivatives::class;
+        protected $derivativesDataType = 'array';
+        protected $examplesType = DictlayerdataDictWordsExamples::class;
+        protected $examplesDataType = 'array';
+        protected $sensesType = DictlayerdataDictWordsSenses::class;
+        protected $sensesDataType = 'array';
+        protected $sourceType = DictlayerdataDictWordsSource::class;
+        protected $sourceDataType = '';
+        /**
+         * @param DictlayerdataDictWordsDerivatives[] $derivatives
+         */
+        public function setDerivatives($derivatives)
+        {
+        }
+        /**
+         * @return DictlayerdataDictWordsDerivatives[]
+         */
+        public function getDerivatives()
+        {
+        }
+        /**
+         * @param DictlayerdataDictWordsExamples[] $examples
+         */
+        public function setExamples($examples)
+        {
+        }
+        /**
+         * @return DictlayerdataDictWordsExamples[]
+         */
+        public function getExamples()
+        {
+        }
+        /**
+         * @param DictlayerdataDictWordsSenses[] $senses
+         */
+        public function setSenses($senses)
+        {
+        }
+        /**
+         * @return DictlayerdataDictWordsSenses[]
+         */
+        public function getSenses()
+        {
+        }
+        /**
+         * The words with different meanings but not related words, e.g. "go" (game)
+         * and "go" (verb).
+         *
+         * @param DictlayerdataDictWordsSource $source
+         */
+        public function setSource(DictlayerdataDictWordsSource $source)
+        {
+        }
+        /**
+         * @return DictlayerdataDictWordsSource
+         */
+        public function getSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DictlayerdataDictWordsDerivatives[]
+     * Runtime class alias of \Google\Service\Books\DictlayerdataDictWords registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDerivatives()
-    {
-    }
-    /**
-     * @param DictlayerdataDictWordsExamples[] $examples
-     */
-    public function setExamples($examples)
-    {
-    }
-    /**
-     * @return DictlayerdataDictWordsExamples[]
-     */
-    public function getExamples()
-    {
-    }
-    /**
-     * @param DictlayerdataDictWordsSenses[] $senses
-     */
-    public function setSenses($senses)
-    {
-    }
-    /**
-     * @return DictlayerdataDictWordsSenses[]
-     */
-    public function getSenses()
-    {
-    }
-    /**
-     * The words with different meanings but not related words, e.g. "go" (game)
-     * and "go" (verb).
-     *
-     * @param DictlayerdataDictWordsSource $source
-     */
-    public function setSource(DictlayerdataDictWordsSource $source)
-    {
-    }
-    /**
-     * @return DictlayerdataDictWordsSource
-     */
-    public function getSource()
+    class Google_Service_Books_DictlayerdataDictWords extends \Google\Service\Books\DictlayerdataDictWords
     {
     }
 }

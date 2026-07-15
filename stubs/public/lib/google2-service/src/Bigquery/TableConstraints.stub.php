@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class TableConstraints extends \Google\Collection
-{
-    protected $collection_key = 'foreignKeys';
-    protected $foreignKeysType = TableConstraintsForeignKeys::class;
-    protected $foreignKeysDataType = 'array';
-    protected $primaryKeyType = TableConstraintsPrimaryKey::class;
-    protected $primaryKeyDataType = '';
-    /**
-     * Optional. Present only if the table has a foreign key. The foreign key is
-     * not enforced.
-     *
-     * @param TableConstraintsForeignKeys[] $foreignKeys
-     */
-    public function setForeignKeys($foreignKeys)
+namespace Google\Service\Bigquery {
+    class TableConstraints extends \Google\Collection
     {
+        protected $collection_key = 'foreignKeys';
+        protected $foreignKeysType = TableConstraintsForeignKeys::class;
+        protected $foreignKeysDataType = 'array';
+        protected $primaryKeyType = TableConstraintsPrimaryKey::class;
+        protected $primaryKeyDataType = '';
+        /**
+         * Optional. Present only if the table has a foreign key. The foreign key is
+         * not enforced.
+         *
+         * @param TableConstraintsForeignKeys[] $foreignKeys
+         */
+        public function setForeignKeys($foreignKeys)
+        {
+        }
+        /**
+         * @return TableConstraintsForeignKeys[]
+         */
+        public function getForeignKeys()
+        {
+        }
+        /**
+         * Represents the primary key constraint on a table's columns.
+         *
+         * @param TableConstraintsPrimaryKey $primaryKey
+         */
+        public function setPrimaryKey(TableConstraintsPrimaryKey $primaryKey)
+        {
+        }
+        /**
+         * @return TableConstraintsPrimaryKey
+         */
+        public function getPrimaryKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TableConstraintsForeignKeys[]
+     * Runtime class alias of \Google\Service\Bigquery\TableConstraints registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getForeignKeys()
-    {
-    }
-    /**
-     * Represents the primary key constraint on a table's columns.
-     *
-     * @param TableConstraintsPrimaryKey $primaryKey
-     */
-    public function setPrimaryKey(TableConstraintsPrimaryKey $primaryKey)
-    {
-    }
-    /**
-     * @return TableConstraintsPrimaryKey
-     */
-    public function getPrimaryKey()
+    class Google_Service_Bigquery_TableConstraints extends \Google\Service\Bigquery\TableConstraints
     {
     }
 }

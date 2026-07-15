@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Appengine;
-
-class UrlDispatchRule extends \Google\Model
-{
-    /**
-     * Domain name to match against. The wildcard "*" is supported if specified
-     * before a period: "*.".Defaults to matching all domains: "*".
-     *
-     * @var string
-     */
-    public $domain;
-    /**
-     * Pathname within the host. Must start with a "/". A single "*" can be
-     * included at the end of the path.The sum of the lengths of the domain and
-     * path may not exceed 100 characters.
-     *
-     * @var string
-     */
-    public $path;
-    /**
-     * Resource ID of a service in this application that should serve the matched
-     * request. The service must already exist. Example: default.
-     *
-     * @var string
-     */
-    public $service;
-    /**
-     * Domain name to match against. The wildcard "*" is supported if specified
-     * before a period: "*.".Defaults to matching all domains: "*".
-     *
-     * @param string $domain
-     */
-    public function setDomain($domain)
+namespace Google\Service\Appengine {
+    class UrlDispatchRule extends \Google\Model
     {
+        /**
+         * Domain name to match against. The wildcard "*" is supported if specified
+         * before a period: "*.".Defaults to matching all domains: "*".
+         *
+         * @var string
+         */
+        public $domain;
+        /**
+         * Pathname within the host. Must start with a "/". A single "*" can be
+         * included at the end of the path.The sum of the lengths of the domain and
+         * path may not exceed 100 characters.
+         *
+         * @var string
+         */
+        public $path;
+        /**
+         * Resource ID of a service in this application that should serve the matched
+         * request. The service must already exist. Example: default.
+         *
+         * @var string
+         */
+        public $service;
+        /**
+         * Domain name to match against. The wildcard "*" is supported if specified
+         * before a period: "*.".Defaults to matching all domains: "*".
+         *
+         * @param string $domain
+         */
+        public function setDomain($domain)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDomain()
+        {
+        }
+        /**
+         * Pathname within the host. Must start with a "/". A single "*" can be
+         * included at the end of the path.The sum of the lengths of the domain and
+         * path may not exceed 100 characters.
+         *
+         * @param string $path
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
+        /**
+         * Resource ID of a service in this application that should serve the matched
+         * request. The service must already exist. Example: default.
+         *
+         * @param string $service
+         */
+        public function setService($service)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getService()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Appengine\UrlDispatchRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDomain()
-    {
-    }
-    /**
-     * Pathname within the host. Must start with a "/". A single "*" can be
-     * included at the end of the path.The sum of the lengths of the domain and
-     * path may not exceed 100 characters.
-     *
-     * @param string $path
-     */
-    public function setPath($path)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPath()
-    {
-    }
-    /**
-     * Resource ID of a service in this application that should serve the matched
-     * request. The service must already exist. Example: default.
-     *
-     * @param string $service
-     */
-    public function setService($service)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getService()
+    class Google_Service_Appengine_UrlDispatchRule extends \Google\Service\Appengine\UrlDispatchRule
     {
     }
 }

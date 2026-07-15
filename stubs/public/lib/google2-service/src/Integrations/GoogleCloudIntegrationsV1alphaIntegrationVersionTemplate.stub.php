@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaIntegrationVersionTemplate extends \Google\Model
-{
-    protected $integrationVersionType = GoogleCloudIntegrationsV1alphaIntegrationVersion::class;
-    protected $integrationVersionDataType = '';
-    /**
-     * Required. Unique Key of the IntegrationVersion.
-     *
-     * @var string
-     */
-    public $key;
-    /**
-     * Required. Templatized version of integration.
-     *
-     * @param GoogleCloudIntegrationsV1alphaIntegrationVersion $integrationVersion
-     */
-    public function setIntegrationVersion(GoogleCloudIntegrationsV1alphaIntegrationVersion $integrationVersion)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaIntegrationVersionTemplate extends \Google\Model
     {
+        protected $integrationVersionType = GoogleCloudIntegrationsV1alphaIntegrationVersion::class;
+        protected $integrationVersionDataType = '';
+        /**
+         * Required. Unique Key of the IntegrationVersion.
+         *
+         * @var string
+         */
+        public $key;
+        /**
+         * Required. Templatized version of integration.
+         *
+         * @param GoogleCloudIntegrationsV1alphaIntegrationVersion $integrationVersion
+         */
+        public function setIntegrationVersion(GoogleCloudIntegrationsV1alphaIntegrationVersion $integrationVersion)
+        {
+        }
+        /**
+         * @return GoogleCloudIntegrationsV1alphaIntegrationVersion
+         */
+        public function getIntegrationVersion()
+        {
+        }
+        /**
+         * Required. Unique Key of the IntegrationVersion.
+         *
+         * @param string $key
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudIntegrationsV1alphaIntegrationVersion
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaIntegrationVersionTemplate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIntegrationVersion()
-    {
-    }
-    /**
-     * Required. Unique Key of the IntegrationVersion.
-     *
-     * @param string $key
-     */
-    public function setKey($key)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKey()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaIntegrationVersionTemplate extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaIntegrationVersionTemplate
     {
     }
 }

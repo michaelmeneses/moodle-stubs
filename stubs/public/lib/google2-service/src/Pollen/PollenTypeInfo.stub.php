@@ -21,125 +21,134 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Pollen;
-
-class PollenTypeInfo extends \Google\Collection
-{
-    /**
-     * Unspecified plant type.
-     */
-    public const CODE_POLLEN_TYPE_UNSPECIFIED = 'POLLEN_TYPE_UNSPECIFIED';
-    /**
-     * Grass pollen type.
-     */
-    public const CODE_GRASS = 'GRASS';
-    /**
-     * Tree pollen type.
-     */
-    public const CODE_TREE = 'TREE';
-    /**
-     * Weed pollen type.
-     */
-    public const CODE_WEED = 'WEED';
-    protected $collection_key = 'healthRecommendations';
-    /**
-     * The pollen type's code name. For example: "GRASS"
-     *
-     * @var string
-     */
-    public $code;
-    /**
-     * A human readable representation of the pollen type name. Example: "Grass"
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Textual list of explanations, related to health insights based on the
-     * current pollen levels.
-     *
-     * @var string[]
-     */
-    public $healthRecommendations;
-    /**
-     * Indication whether the plant is in season or not.
-     *
-     * @var bool
-     */
-    public $inSeason;
-    protected $indexInfoType = IndexInfo::class;
-    protected $indexInfoDataType = '';
-    /**
-     * The pollen type's code name. For example: "GRASS"
-     *
-     * Accepted values: POLLEN_TYPE_UNSPECIFIED, GRASS, TREE, WEED
-     *
-     * @param self::CODE_* $code
-     */
-    public function setCode($code)
+namespace Google\Service\Pollen {
+    class PollenTypeInfo extends \Google\Collection
     {
+        /**
+         * Unspecified plant type.
+         */
+        public const CODE_POLLEN_TYPE_UNSPECIFIED = 'POLLEN_TYPE_UNSPECIFIED';
+        /**
+         * Grass pollen type.
+         */
+        public const CODE_GRASS = 'GRASS';
+        /**
+         * Tree pollen type.
+         */
+        public const CODE_TREE = 'TREE';
+        /**
+         * Weed pollen type.
+         */
+        public const CODE_WEED = 'WEED';
+        protected $collection_key = 'healthRecommendations';
+        /**
+         * The pollen type's code name. For example: "GRASS"
+         *
+         * @var string
+         */
+        public $code;
+        /**
+         * A human readable representation of the pollen type name. Example: "Grass"
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Textual list of explanations, related to health insights based on the
+         * current pollen levels.
+         *
+         * @var string[]
+         */
+        public $healthRecommendations;
+        /**
+         * Indication whether the plant is in season or not.
+         *
+         * @var bool
+         */
+        public $inSeason;
+        protected $indexInfoType = IndexInfo::class;
+        protected $indexInfoDataType = '';
+        /**
+         * The pollen type's code name. For example: "GRASS"
+         *
+         * Accepted values: POLLEN_TYPE_UNSPECIFIED, GRASS, TREE, WEED
+         *
+         * @param self::CODE_* $code
+         */
+        public function setCode($code)
+        {
+        }
+        /**
+         * @return self::CODE_*
+         */
+        public function getCode()
+        {
+        }
+        /**
+         * A human readable representation of the pollen type name. Example: "Grass"
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Textual list of explanations, related to health insights based on the
+         * current pollen levels.
+         *
+         * @param string[] $healthRecommendations
+         */
+        public function setHealthRecommendations($healthRecommendations)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getHealthRecommendations()
+        {
+        }
+        /**
+         * Indication whether the plant is in season or not.
+         *
+         * @param bool $inSeason
+         */
+        public function setInSeason($inSeason)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getInSeason()
+        {
+        }
+        /**
+         * Contains the Universal Pollen Index (UPI) data for the pollen type.
+         *
+         * @param IndexInfo $indexInfo
+         */
+        public function setIndexInfo(IndexInfo $indexInfo)
+        {
+        }
+        /**
+         * @return IndexInfo
+         */
+        public function getIndexInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::CODE_*
+     * Runtime class alias of \Google\Service\Pollen\PollenTypeInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCode()
-    {
-    }
-    /**
-     * A human readable representation of the pollen type name. Example: "Grass"
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Textual list of explanations, related to health insights based on the
-     * current pollen levels.
-     *
-     * @param string[] $healthRecommendations
-     */
-    public function setHealthRecommendations($healthRecommendations)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getHealthRecommendations()
-    {
-    }
-    /**
-     * Indication whether the plant is in season or not.
-     *
-     * @param bool $inSeason
-     */
-    public function setInSeason($inSeason)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getInSeason()
-    {
-    }
-    /**
-     * Contains the Universal Pollen Index (UPI) data for the pollen type.
-     *
-     * @param IndexInfo $indexInfo
-     */
-    public function setIndexInfo(IndexInfo $indexInfo)
-    {
-    }
-    /**
-     * @return IndexInfo
-     */
-    public function getIndexInfo()
+    class Google_Service_Pollen_PollenTypeInfo extends \Google\Service\Pollen\PollenTypeInfo
     {
     }
 }

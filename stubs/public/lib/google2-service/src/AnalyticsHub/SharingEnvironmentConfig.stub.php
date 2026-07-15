@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsHub;
-
-class SharingEnvironmentConfig extends \Google\Model
-{
-    protected $dcrExchangeConfigType = DcrExchangeConfig::class;
-    protected $dcrExchangeConfigDataType = '';
-    protected $defaultExchangeConfigType = DefaultExchangeConfig::class;
-    protected $defaultExchangeConfigDataType = '';
-    /**
-     * Data Clean Room (DCR), used for privacy-safe and secured data sharing.
-     *
-     * @param DcrExchangeConfig $dcrExchangeConfig
-     */
-    public function setDcrExchangeConfig(DcrExchangeConfig $dcrExchangeConfig)
+namespace Google\Service\AnalyticsHub {
+    class SharingEnvironmentConfig extends \Google\Model
     {
+        protected $dcrExchangeConfigType = DcrExchangeConfig::class;
+        protected $dcrExchangeConfigDataType = '';
+        protected $defaultExchangeConfigType = DefaultExchangeConfig::class;
+        protected $defaultExchangeConfigDataType = '';
+        /**
+         * Data Clean Room (DCR), used for privacy-safe and secured data sharing.
+         *
+         * @param DcrExchangeConfig $dcrExchangeConfig
+         */
+        public function setDcrExchangeConfig(DcrExchangeConfig $dcrExchangeConfig)
+        {
+        }
+        /**
+         * @return DcrExchangeConfig
+         */
+        public function getDcrExchangeConfig()
+        {
+        }
+        /**
+         * Default Analytics Hub data exchange, used for secured data sharing.
+         *
+         * @param DefaultExchangeConfig $defaultExchangeConfig
+         */
+        public function setDefaultExchangeConfig(DefaultExchangeConfig $defaultExchangeConfig)
+        {
+        }
+        /**
+         * @return DefaultExchangeConfig
+         */
+        public function getDefaultExchangeConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DcrExchangeConfig
+     * Runtime class alias of \Google\Service\AnalyticsHub\SharingEnvironmentConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDcrExchangeConfig()
-    {
-    }
-    /**
-     * Default Analytics Hub data exchange, used for secured data sharing.
-     *
-     * @param DefaultExchangeConfig $defaultExchangeConfig
-     */
-    public function setDefaultExchangeConfig(DefaultExchangeConfig $defaultExchangeConfig)
-    {
-    }
-    /**
-     * @return DefaultExchangeConfig
-     */
-    public function getDefaultExchangeConfig()
+    class Google_Service_AnalyticsHub_SharingEnvironmentConfig extends \Google\Service\AnalyticsHub\SharingEnvironmentConfig
     {
     }
 }

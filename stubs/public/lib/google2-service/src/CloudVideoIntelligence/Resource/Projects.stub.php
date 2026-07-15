@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudVideoIntelligence\Resource;
-
-/**
- * The "projects" collection of methods.
- * Typical usage is:
- *  <code>
- *   $videointelligenceService = new Google\Service\CloudVideoIntelligence(...);
- *   $projects = $videointelligenceService->projects;
- *  </code>
- */
-class Projects extends \Google\Service\Resource
-{
+namespace Google\Service\CloudVideoIntelligence\Resource {
+    /**
+     * The "projects" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $videointelligenceService = new Google\Service\CloudVideoIntelligence(...);
+     *   $projects = $videointelligenceService->projects;
+     *  </code>
+     */
+    class Projects extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudVideoIntelligence\Resource\Projects registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudVideoIntelligence_Resource_Projects extends \Google\Service\CloudVideoIntelligence\Resource\Projects
+    {
+    }
 }

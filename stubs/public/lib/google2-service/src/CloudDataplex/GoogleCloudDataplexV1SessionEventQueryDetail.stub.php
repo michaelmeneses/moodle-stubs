@@ -21,142 +21,151 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1SessionEventQueryDetail extends \Google\Model
-{
-    /**
-     * An unspecified Engine type.
-     */
-    public const ENGINE_ENGINE_UNSPECIFIED = 'ENGINE_UNSPECIFIED';
-    /**
-     * Spark-sql engine is specified in Query.
-     */
-    public const ENGINE_SPARK_SQL = 'SPARK_SQL';
-    /**
-     * BigQuery engine is specified in Query.
-     */
-    public const ENGINE_BIGQUERY = 'BIGQUERY';
-    /**
-     * The data processed by the query.
-     *
-     * @var string
-     */
-    public $dataProcessedBytes;
-    /**
-     * Time taken for execution of the query.
-     *
-     * @var string
-     */
-    public $duration;
-    /**
-     * Query Execution engine.
-     *
-     * @var string
-     */
-    public $engine;
-    /**
-     * The unique Query id identifying the query.
-     *
-     * @var string
-     */
-    public $queryId;
-    /**
-     * The query text executed.
-     *
-     * @var string
-     */
-    public $queryText;
-    /**
-     * The size of results the query produced.
-     *
-     * @var string
-     */
-    public $resultSizeBytes;
-    /**
-     * The data processed by the query.
-     *
-     * @param string $dataProcessedBytes
-     */
-    public function setDataProcessedBytes($dataProcessedBytes)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1SessionEventQueryDetail extends \Google\Model
     {
+        /**
+         * An unspecified Engine type.
+         */
+        public const ENGINE_ENGINE_UNSPECIFIED = 'ENGINE_UNSPECIFIED';
+        /**
+         * Spark-sql engine is specified in Query.
+         */
+        public const ENGINE_SPARK_SQL = 'SPARK_SQL';
+        /**
+         * BigQuery engine is specified in Query.
+         */
+        public const ENGINE_BIGQUERY = 'BIGQUERY';
+        /**
+         * The data processed by the query.
+         *
+         * @var string
+         */
+        public $dataProcessedBytes;
+        /**
+         * Time taken for execution of the query.
+         *
+         * @var string
+         */
+        public $duration;
+        /**
+         * Query Execution engine.
+         *
+         * @var string
+         */
+        public $engine;
+        /**
+         * The unique Query id identifying the query.
+         *
+         * @var string
+         */
+        public $queryId;
+        /**
+         * The query text executed.
+         *
+         * @var string
+         */
+        public $queryText;
+        /**
+         * The size of results the query produced.
+         *
+         * @var string
+         */
+        public $resultSizeBytes;
+        /**
+         * The data processed by the query.
+         *
+         * @param string $dataProcessedBytes
+         */
+        public function setDataProcessedBytes($dataProcessedBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataProcessedBytes()
+        {
+        }
+        /**
+         * Time taken for execution of the query.
+         *
+         * @param string $duration
+         */
+        public function setDuration($duration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDuration()
+        {
+        }
+        /**
+         * Query Execution engine.
+         *
+         * Accepted values: ENGINE_UNSPECIFIED, SPARK_SQL, BIGQUERY
+         *
+         * @param self::ENGINE_* $engine
+         */
+        public function setEngine($engine)
+        {
+        }
+        /**
+         * @return self::ENGINE_*
+         */
+        public function getEngine()
+        {
+        }
+        /**
+         * The unique Query id identifying the query.
+         *
+         * @param string $queryId
+         */
+        public function setQueryId($queryId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQueryId()
+        {
+        }
+        /**
+         * The query text executed.
+         *
+         * @param string $queryText
+         */
+        public function setQueryText($queryText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQueryText()
+        {
+        }
+        /**
+         * The size of results the query produced.
+         *
+         * @param string $resultSizeBytes
+         */
+        public function setResultSizeBytes($resultSizeBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResultSizeBytes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1SessionEventQueryDetail registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataProcessedBytes()
-    {
-    }
-    /**
-     * Time taken for execution of the query.
-     *
-     * @param string $duration
-     */
-    public function setDuration($duration)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDuration()
-    {
-    }
-    /**
-     * Query Execution engine.
-     *
-     * Accepted values: ENGINE_UNSPECIFIED, SPARK_SQL, BIGQUERY
-     *
-     * @param self::ENGINE_* $engine
-     */
-    public function setEngine($engine)
-    {
-    }
-    /**
-     * @return self::ENGINE_*
-     */
-    public function getEngine()
-    {
-    }
-    /**
-     * The unique Query id identifying the query.
-     *
-     * @param string $queryId
-     */
-    public function setQueryId($queryId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQueryId()
-    {
-    }
-    /**
-     * The query text executed.
-     *
-     * @param string $queryText
-     */
-    public function setQueryText($queryText)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQueryText()
-    {
-    }
-    /**
-     * The size of results the query produced.
-     *
-     * @param string $resultSizeBytes
-     */
-    public function setResultSizeBytes($resultSizeBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResultSizeBytes()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1SessionEventQueryDetail extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1SessionEventQueryDetail
     {
     }
 }

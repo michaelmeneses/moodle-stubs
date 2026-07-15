@@ -21,38 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OrgPolicyAPI\Resource;
-
-/**
- * The "constraints" collection of methods.
- * Typical usage is:
- *  <code>
- *   $orgpolicyService = new Google\Service\OrgPolicyAPI(...);
- *   $constraints = $orgpolicyService->projects_constraints;
- *  </code>
- */
-class ProjectsConstraints extends \Google\Service\Resource
-{
+namespace Google\Service\OrgPolicyAPI\Resource {
+    use Google\Service\OrgPolicyAPI\GoogleCloudOrgpolicyV2ListConstraintsResponse;
     /**
-     * Lists constraints that could be applied on the specified resource.
-     * (constraints.listProjectsConstraints)
-     *
-     * @param string $parent Required. The Google Cloud resource that parents the
-     * constraint. Must be in one of the following forms: *
-     * `projects/{project_number}` * `projects/{project_id}` * `folders/{folder_id}`
-     * * `organizations/{organization_id}`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Size of the pages to be returned. This is currently
-     * unsupported and will be ignored. The server may at any point start using this
-     * field to limit page size.
-     * @opt_param string pageToken Page token used to retrieve the next page. This
-     * is currently unsupported and will be ignored. The server may at any point
-     * start using this field.
-     * @return GoogleCloudOrgpolicyV2ListConstraintsResponse
-     * @throws \Google\Service\Exception
+     * The "constraints" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $orgpolicyService = new Google\Service\OrgPolicyAPI(...);
+     *   $constraints = $orgpolicyService->projects_constraints;
+     *  </code>
      */
-    public function listProjectsConstraints($parent, $optParams = [])
+    class ProjectsConstraints extends \Google\Service\Resource
+    {
+        /**
+         * Lists constraints that could be applied on the specified resource.
+         * (constraints.listProjectsConstraints)
+         *
+         * @param string $parent Required. The Google Cloud resource that parents the
+         * constraint. Must be in one of the following forms: *
+         * `projects/{project_number}` * `projects/{project_id}` * `folders/{folder_id}`
+         * * `organizations/{organization_id}`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Size of the pages to be returned. This is currently
+         * unsupported and will be ignored. The server may at any point start using this
+         * field to limit page size.
+         * @opt_param string pageToken Page token used to retrieve the next page. This
+         * is currently unsupported and will be ignored. The server may at any point
+         * start using this field.
+         * @return GoogleCloudOrgpolicyV2ListConstraintsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsConstraints($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\OrgPolicyAPI\Resource\ProjectsConstraints registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_OrgPolicyAPI_Resource_ProjectsConstraints extends \Google\Service\OrgPolicyAPI\Resource\ProjectsConstraints
     {
     }
 }

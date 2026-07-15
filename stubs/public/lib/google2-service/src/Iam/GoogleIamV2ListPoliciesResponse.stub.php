@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Iam;
-
-class GoogleIamV2ListPoliciesResponse extends \Google\Collection
-{
-    protected $collection_key = 'policies';
-    /**
-     * A page token that you can use in a ListPoliciesRequest to retrieve the next
-     * page. If this field is omitted, there are no additional pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $policiesType = GoogleIamV2Policy::class;
-    protected $policiesDataType = 'array';
-    /**
-     * A page token that you can use in a ListPoliciesRequest to retrieve the next
-     * page. If this field is omitted, there are no additional pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Iam {
+    class GoogleIamV2ListPoliciesResponse extends \Google\Collection
     {
+        protected $collection_key = 'policies';
+        /**
+         * A page token that you can use in a ListPoliciesRequest to retrieve the next
+         * page. If this field is omitted, there are no additional pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $policiesType = GoogleIamV2Policy::class;
+        protected $policiesDataType = 'array';
+        /**
+         * A page token that you can use in a ListPoliciesRequest to retrieve the next
+         * page. If this field is omitted, there are no additional pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Metadata for the policies that are attached to the resource.
+         *
+         * @param GoogleIamV2Policy[] $policies
+         */
+        public function setPolicies($policies)
+        {
+        }
+        /**
+         * @return GoogleIamV2Policy[]
+         */
+        public function getPolicies()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Iam\GoogleIamV2ListPoliciesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Metadata for the policies that are attached to the resource.
-     *
-     * @param GoogleIamV2Policy[] $policies
-     */
-    public function setPolicies($policies)
-    {
-    }
-    /**
-     * @return GoogleIamV2Policy[]
-     */
-    public function getPolicies()
+    class Google_Service_Iam_GoogleIamV2ListPoliciesResponse extends \Google\Service\Iam\GoogleIamV2ListPoliciesResponse
     {
     }
 }

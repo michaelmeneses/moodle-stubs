@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class HtmlPropertyOptions extends \Google\Model
-{
-    protected $operatorOptionsType = HtmlOperatorOptions::class;
-    protected $operatorOptionsDataType = '';
-    protected $retrievalImportanceType = RetrievalImportance::class;
-    protected $retrievalImportanceDataType = '';
-    /**
-     * If set, describes how the property should be used as a search operator.
-     *
-     * @param HtmlOperatorOptions $operatorOptions
-     */
-    public function setOperatorOptions(HtmlOperatorOptions $operatorOptions)
+namespace Google\Service\CloudSearch {
+    class HtmlPropertyOptions extends \Google\Model
     {
+        protected $operatorOptionsType = HtmlOperatorOptions::class;
+        protected $operatorOptionsDataType = '';
+        protected $retrievalImportanceType = RetrievalImportance::class;
+        protected $retrievalImportanceDataType = '';
+        /**
+         * If set, describes how the property should be used as a search operator.
+         *
+         * @param HtmlOperatorOptions $operatorOptions
+         */
+        public function setOperatorOptions(HtmlOperatorOptions $operatorOptions)
+        {
+        }
+        /**
+         * @return HtmlOperatorOptions
+         */
+        public function getOperatorOptions()
+        {
+        }
+        /**
+         * Indicates the search quality importance of the tokens within the field when
+         * used for retrieval. Can only be set to DEFAULT or NONE.
+         *
+         * @param RetrievalImportance $retrievalImportance
+         */
+        public function setRetrievalImportance(RetrievalImportance $retrievalImportance)
+        {
+        }
+        /**
+         * @return RetrievalImportance
+         */
+        public function getRetrievalImportance()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return HtmlOperatorOptions
+     * Runtime class alias of \Google\Service\CloudSearch\HtmlPropertyOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOperatorOptions()
-    {
-    }
-    /**
-     * Indicates the search quality importance of the tokens within the field when
-     * used for retrieval. Can only be set to DEFAULT or NONE.
-     *
-     * @param RetrievalImportance $retrievalImportance
-     */
-    public function setRetrievalImportance(RetrievalImportance $retrievalImportance)
-    {
-    }
-    /**
-     * @return RetrievalImportance
-     */
-    public function getRetrievalImportance()
+    class Google_Service_CloudSearch_HtmlPropertyOptions extends \Google\Service\CloudSearch\HtmlPropertyOptions
     {
     }
 }

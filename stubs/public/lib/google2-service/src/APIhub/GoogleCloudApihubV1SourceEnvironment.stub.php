@@ -21,94 +21,103 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1SourceEnvironment extends \Google\Model
-{
-    /**
-     * Optional. The time at which the environment was created at the source.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Required. The name of the environment at the source. This should map to
-     * Deployment.
-     *
-     * @var string
-     */
-    public $sourceEnvironment;
-    /**
-     * The location where additional information about source environments can be
-     * found. The location should be relative path of the environment manifest
-     * with respect to a plugin instance.
-     *
-     * @var string
-     */
-    public $sourceEnvironmentUri;
-    /**
-     * Optional. The time at which the environment was last updated at the source.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Optional. The time at which the environment was created at the source.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1SourceEnvironment extends \Google\Model
     {
+        /**
+         * Optional. The time at which the environment was created at the source.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Required. The name of the environment at the source. This should map to
+         * Deployment.
+         *
+         * @var string
+         */
+        public $sourceEnvironment;
+        /**
+         * The location where additional information about source environments can be
+         * found. The location should be relative path of the environment manifest
+         * with respect to a plugin instance.
+         *
+         * @var string
+         */
+        public $sourceEnvironmentUri;
+        /**
+         * Optional. The time at which the environment was last updated at the source.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Optional. The time at which the environment was created at the source.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Required. The name of the environment at the source. This should map to
+         * Deployment.
+         *
+         * @param string $sourceEnvironment
+         */
+        public function setSourceEnvironment($sourceEnvironment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceEnvironment()
+        {
+        }
+        /**
+         * The location where additional information about source environments can be
+         * found. The location should be relative path of the environment manifest
+         * with respect to a plugin instance.
+         *
+         * @param string $sourceEnvironmentUri
+         */
+        public function setSourceEnvironmentUri($sourceEnvironmentUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceEnvironmentUri()
+        {
+        }
+        /**
+         * Optional. The time at which the environment was last updated at the source.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1SourceEnvironment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Required. The name of the environment at the source. This should map to
-     * Deployment.
-     *
-     * @param string $sourceEnvironment
-     */
-    public function setSourceEnvironment($sourceEnvironment)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourceEnvironment()
-    {
-    }
-    /**
-     * The location where additional information about source environments can be
-     * found. The location should be relative path of the environment manifest
-     * with respect to a plugin instance.
-     *
-     * @param string $sourceEnvironmentUri
-     */
-    public function setSourceEnvironmentUri($sourceEnvironmentUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourceEnvironmentUri()
-    {
-    }
-    /**
-     * Optional. The time at which the environment was last updated at the source.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_APIhub_GoogleCloudApihubV1SourceEnvironment extends \Google\Service\APIhub\GoogleCloudApihubV1SourceEnvironment
     {
     }
 }

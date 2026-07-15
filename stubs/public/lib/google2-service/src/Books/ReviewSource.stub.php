@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class ReviewSource extends \Google\Model
-{
-    /**
-     * Name of the source.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Extra text about the source of the review.
-     *
-     * @var string
-     */
-    public $extraDescription;
-    /**
-     * URL of the source of the review.
-     *
-     * @var string
-     */
-    public $url;
-    /**
-     * Name of the source.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\Books {
+    class ReviewSource extends \Google\Model
     {
+        /**
+         * Name of the source.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Extra text about the source of the review.
+         *
+         * @var string
+         */
+        public $extraDescription;
+        /**
+         * URL of the source of the review.
+         *
+         * @var string
+         */
+        public $url;
+        /**
+         * Name of the source.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Extra text about the source of the review.
+         *
+         * @param string $extraDescription
+         */
+        public function setExtraDescription($extraDescription)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExtraDescription()
+        {
+        }
+        /**
+         * URL of the source of the review.
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Books\ReviewSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * Extra text about the source of the review.
-     *
-     * @param string $extraDescription
-     */
-    public function setExtraDescription($extraDescription)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExtraDescription()
-    {
-    }
-    /**
-     * URL of the source of the review.
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
+    class Google_Service_Books_ReviewSource extends \Google\Service\Books\ReviewSource
     {
     }
 }

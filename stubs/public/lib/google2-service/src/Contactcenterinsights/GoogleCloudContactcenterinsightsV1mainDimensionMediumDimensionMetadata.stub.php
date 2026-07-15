@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1mainDimensionMediumDimensionMetadata extends \Google\Model
-{
-    /**
-     * Optional. The conversation medium. Currently supports : PHONE_CALL, CHAT.
-     *
-     * @var string
-     */
-    public $medium;
-    /**
-     * Optional. The conversation medium. Currently supports : PHONE_CALL, CHAT.
-     *
-     * @param string $medium
-     */
-    public function setMedium($medium)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1mainDimensionMediumDimensionMetadata extends \Google\Model
     {
+        /**
+         * Optional. The conversation medium. Currently supports : PHONE_CALL, CHAT.
+         *
+         * @var string
+         */
+        public $medium;
+        /**
+         * Optional. The conversation medium. Currently supports : PHONE_CALL, CHAT.
+         *
+         * @param string $medium
+         */
+        public function setMedium($medium)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMedium()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainDimensionMediumDimensionMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMedium()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1mainDimensionMediumDimensionMetadata extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainDimensionMediumDimensionMetadata
     {
     }
 }

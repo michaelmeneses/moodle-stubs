@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TrafficDirectorService;
-
-class DoubleRange extends \Google\Model
-{
+namespace Google\Service\TrafficDirectorService {
+    class DoubleRange extends \Google\Model
+    {
+        /**
+         * end of the range (exclusive)
+         *
+         * @var 
+         */
+        public $end;
+        /**
+         * start of the range (inclusive)
+         *
+         * @var 
+         */
+        public $start;
+        public function setEnd($end)
+        {
+        }
+        public function getEnd()
+        {
+        }
+        public function setStart($start)
+        {
+        }
+        public function getStart()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * end of the range (exclusive)
-     *
-     * @var 
+     * Runtime class alias of \Google\Service\TrafficDirectorService\DoubleRange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public $end;
-    /**
-     * start of the range (inclusive)
-     *
-     * @var 
-     */
-    public $start;
-    public function setEnd($end)
-    {
-    }
-    public function getEnd()
-    {
-    }
-    public function setStart($start)
-    {
-    }
-    public function getStart()
+    class Google_Service_TrafficDirectorService_DoubleRange extends \Google\Service\TrafficDirectorService\DoubleRange
     {
     }
 }

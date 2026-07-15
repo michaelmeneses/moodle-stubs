@@ -8,6 +8,11 @@
  */
 namespace Aws\Api\Serializer;
 
+use Aws\Api\StructureShape;
+use Aws\Api\ListShape;
+use Aws\Api\MapShape;
+use Aws\Api\Shape;
+use Aws\Api\TimestampShape;
 /**
  * @internal
  */

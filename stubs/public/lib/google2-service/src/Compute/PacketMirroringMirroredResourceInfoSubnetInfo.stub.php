@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class PacketMirroringMirroredResourceInfoSubnetInfo extends \Google\Model
-{
-    /**
-     * Output only. [Output Only] Unique identifier for the subnetwork; defined by
-     * the server.
-     *
-     * @var string
-     */
-    public $canonicalUrl;
-    /**
-     * Resource URL to the subnetwork for which traffic from/to all VM instances
-     * will be mirrored.
-     *
-     * @var string
-     */
-    public $url;
-    /**
-     * Output only. [Output Only] Unique identifier for the subnetwork; defined by
-     * the server.
-     *
-     * @param string $canonicalUrl
-     */
-    public function setCanonicalUrl($canonicalUrl)
+namespace Google\Service\Compute {
+    class PacketMirroringMirroredResourceInfoSubnetInfo extends \Google\Model
     {
+        /**
+         * Output only. [Output Only] Unique identifier for the subnetwork; defined by
+         * the server.
+         *
+         * @var string
+         */
+        public $canonicalUrl;
+        /**
+         * Resource URL to the subnetwork for which traffic from/to all VM instances
+         * will be mirrored.
+         *
+         * @var string
+         */
+        public $url;
+        /**
+         * Output only. [Output Only] Unique identifier for the subnetwork; defined by
+         * the server.
+         *
+         * @param string $canonicalUrl
+         */
+        public function setCanonicalUrl($canonicalUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCanonicalUrl()
+        {
+        }
+        /**
+         * Resource URL to the subnetwork for which traffic from/to all VM instances
+         * will be mirrored.
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\PacketMirroringMirroredResourceInfoSubnetInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCanonicalUrl()
-    {
-    }
-    /**
-     * Resource URL to the subnetwork for which traffic from/to all VM instances
-     * will be mirrored.
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
+    class Google_Service_Compute_PacketMirroringMirroredResourceInfoSubnetInfo extends \Google\Service\Compute\PacketMirroringMirroredResourceInfoSubnetInfo
     {
     }
 }

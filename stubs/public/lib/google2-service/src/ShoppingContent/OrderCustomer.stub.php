@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class OrderCustomer extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $fullName;
-    /**
-     * @var string
-     */
-    public $invoiceReceivingEmail;
-    protected $loyaltyInfoType = OrderCustomerLoyaltyInfo::class;
-    protected $loyaltyInfoDataType = '';
-    protected $marketingRightsInfoType = OrderCustomerMarketingRightsInfo::class;
-    protected $marketingRightsInfoDataType = '';
-    /**
-     * @param string
-     */
-    public function setFullName($fullName)
+namespace Google\Service\ShoppingContent {
+    class OrderCustomer extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $fullName;
+        /**
+         * @var string
+         */
+        public $invoiceReceivingEmail;
+        protected $loyaltyInfoType = OrderCustomerLoyaltyInfo::class;
+        protected $loyaltyInfoDataType = '';
+        protected $marketingRightsInfoType = OrderCustomerMarketingRightsInfo::class;
+        protected $marketingRightsInfoDataType = '';
+        /**
+         * @param string
+         */
+        public function setFullName($fullName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFullName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setInvoiceReceivingEmail($invoiceReceivingEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInvoiceReceivingEmail()
+        {
+        }
+        /**
+         * @param OrderCustomerLoyaltyInfo
+         */
+        public function setLoyaltyInfo(OrderCustomerLoyaltyInfo $loyaltyInfo)
+        {
+        }
+        /**
+         * @return OrderCustomerLoyaltyInfo
+         */
+        public function getLoyaltyInfo()
+        {
+        }
+        /**
+         * @param OrderCustomerMarketingRightsInfo
+         */
+        public function setMarketingRightsInfo(OrderCustomerMarketingRightsInfo $marketingRightsInfo)
+        {
+        }
+        /**
+         * @return OrderCustomerMarketingRightsInfo
+         */
+        public function getMarketingRightsInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\OrderCustomer registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFullName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setInvoiceReceivingEmail($invoiceReceivingEmail)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInvoiceReceivingEmail()
-    {
-    }
-    /**
-     * @param OrderCustomerLoyaltyInfo
-     */
-    public function setLoyaltyInfo(OrderCustomerLoyaltyInfo $loyaltyInfo)
-    {
-    }
-    /**
-     * @return OrderCustomerLoyaltyInfo
-     */
-    public function getLoyaltyInfo()
-    {
-    }
-    /**
-     * @param OrderCustomerMarketingRightsInfo
-     */
-    public function setMarketingRightsInfo(OrderCustomerMarketingRightsInfo $marketingRightsInfo)
-    {
-    }
-    /**
-     * @return OrderCustomerMarketingRightsInfo
-     */
-    public function getMarketingRightsInfo()
+    class Google_Service_ShoppingContent_OrderCustomer extends \Google\Service\ShoppingContent\OrderCustomer
     {
     }
 }

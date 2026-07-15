@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class Clustering extends \Google\Collection
-{
-    protected $collection_key = 'fields';
-    /**
-     * One or more fields on which data should be clustered. Only top-level, non-
-     * repeated, simple-type fields are supported. The ordering of the clustering
-     * fields should be prioritized from most to least important for filtering
-     * purposes. For additional information, see [Introduction to clustered
-     * tables](https://cloud.google.com/bigquery/docs/clustered-
-     * tables#limitations).
-     *
-     * @var string[]
-     */
-    public $fields;
-    /**
-     * One or more fields on which data should be clustered. Only top-level, non-
-     * repeated, simple-type fields are supported. The ordering of the clustering
-     * fields should be prioritized from most to least important for filtering
-     * purposes. For additional information, see [Introduction to clustered
-     * tables](https://cloud.google.com/bigquery/docs/clustered-
-     * tables#limitations).
-     *
-     * @param string[] $fields
-     */
-    public function setFields($fields)
+namespace Google\Service\Bigquery {
+    class Clustering extends \Google\Collection
     {
+        protected $collection_key = 'fields';
+        /**
+         * One or more fields on which data should be clustered. Only top-level, non-
+         * repeated, simple-type fields are supported. The ordering of the clustering
+         * fields should be prioritized from most to least important for filtering
+         * purposes. For additional information, see [Introduction to clustered
+         * tables](https://cloud.google.com/bigquery/docs/clustered-
+         * tables#limitations).
+         *
+         * @var string[]
+         */
+        public $fields;
+        /**
+         * One or more fields on which data should be clustered. Only top-level, non-
+         * repeated, simple-type fields are supported. The ordering of the clustering
+         * fields should be prioritized from most to least important for filtering
+         * purposes. For additional information, see [Introduction to clustered
+         * tables](https://cloud.google.com/bigquery/docs/clustered-
+         * tables#limitations).
+         *
+         * @param string[] $fields
+         */
+        public function setFields($fields)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getFields()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Bigquery\Clustering registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFields()
+    class Google_Service_Bigquery_Clustering extends \Google\Service\Bigquery\Clustering
     {
     }
 }

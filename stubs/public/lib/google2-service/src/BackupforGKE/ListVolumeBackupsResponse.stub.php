@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BackupforGKE;
-
-class ListVolumeBackupsResponse extends \Google\Collection
-{
-    protected $collection_key = 'volumeBackups';
-    /**
-     * A token which may be sent as page_token in a subsequent `ListVolumeBackups`
-     * call to retrieve the next page of results. If this field is omitted or
-     * empty, then there are no more results to return.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $volumeBackupsType = VolumeBackup::class;
-    protected $volumeBackupsDataType = 'array';
-    /**
-     * A token which may be sent as page_token in a subsequent `ListVolumeBackups`
-     * call to retrieve the next page of results. If this field is omitted or
-     * empty, then there are no more results to return.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\BackupforGKE {
+    class ListVolumeBackupsResponse extends \Google\Collection
     {
+        protected $collection_key = 'volumeBackups';
+        /**
+         * A token which may be sent as page_token in a subsequent `ListVolumeBackups`
+         * call to retrieve the next page of results. If this field is omitted or
+         * empty, then there are no more results to return.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $volumeBackupsType = VolumeBackup::class;
+        protected $volumeBackupsDataType = 'array';
+        /**
+         * A token which may be sent as page_token in a subsequent `ListVolumeBackups`
+         * call to retrieve the next page of results. If this field is omitted or
+         * empty, then there are no more results to return.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of VolumeBackups matching the given criteria.
+         *
+         * @param VolumeBackup[] $volumeBackups
+         */
+        public function setVolumeBackups($volumeBackups)
+        {
+        }
+        /**
+         * @return VolumeBackup[]
+         */
+        public function getVolumeBackups()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BackupforGKE\ListVolumeBackupsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of VolumeBackups matching the given criteria.
-     *
-     * @param VolumeBackup[] $volumeBackups
-     */
-    public function setVolumeBackups($volumeBackups)
-    {
-    }
-    /**
-     * @return VolumeBackup[]
-     */
-    public function getVolumeBackups()
+    class Google_Service_BackupforGKE_ListVolumeBackupsResponse extends \Google\Service\BackupforGKE\ListVolumeBackupsResponse
     {
     }
 }

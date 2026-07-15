@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ModelArmorConfig extends \Google\Model
-{
-    /**
-     * Optional. The resource name of the Model Armor template to use for prompt
-     * screening. A Model Armor template is a set of customized filters and
-     * thresholds that define how Model Armor screens content. If specified, Model
-     * Armor will use this template to check the user's prompt for safety and
-     * security risks before it is sent to the model. The name must be in the
-     * format `projects/{project}/locations/{location}/templates/{template}`.
-     *
-     * @var string
-     */
-    public $promptTemplateName;
-    /**
-     * Optional. The resource name of the Model Armor template to use for response
-     * screening. A Model Armor template is a set of customized filters and
-     * thresholds that define how Model Armor screens content. If specified, Model
-     * Armor will use this template to check the model's response for safety and
-     * security risks before it is returned to the user. The name must be in the
-     * format `projects/{project}/locations/{location}/templates/{template}`.
-     *
-     * @var string
-     */
-    public $responseTemplateName;
-    /**
-     * Optional. The resource name of the Model Armor template to use for prompt
-     * screening. A Model Armor template is a set of customized filters and
-     * thresholds that define how Model Armor screens content. If specified, Model
-     * Armor will use this template to check the user's prompt for safety and
-     * security risks before it is sent to the model. The name must be in the
-     * format `projects/{project}/locations/{location}/templates/{template}`.
-     *
-     * @param string $promptTemplateName
-     */
-    public function setPromptTemplateName($promptTemplateName)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ModelArmorConfig extends \Google\Model
     {
+        /**
+         * Optional. The resource name of the Model Armor template to use for prompt
+         * screening. A Model Armor template is a set of customized filters and
+         * thresholds that define how Model Armor screens content. If specified, Model
+         * Armor will use this template to check the user's prompt for safety and
+         * security risks before it is sent to the model. The name must be in the
+         * format `projects/{project}/locations/{location}/templates/{template}`.
+         *
+         * @var string
+         */
+        public $promptTemplateName;
+        /**
+         * Optional. The resource name of the Model Armor template to use for response
+         * screening. A Model Armor template is a set of customized filters and
+         * thresholds that define how Model Armor screens content. If specified, Model
+         * Armor will use this template to check the model's response for safety and
+         * security risks before it is returned to the user. The name must be in the
+         * format `projects/{project}/locations/{location}/templates/{template}`.
+         *
+         * @var string
+         */
+        public $responseTemplateName;
+        /**
+         * Optional. The resource name of the Model Armor template to use for prompt
+         * screening. A Model Armor template is a set of customized filters and
+         * thresholds that define how Model Armor screens content. If specified, Model
+         * Armor will use this template to check the user's prompt for safety and
+         * security risks before it is sent to the model. The name must be in the
+         * format `projects/{project}/locations/{location}/templates/{template}`.
+         *
+         * @param string $promptTemplateName
+         */
+        public function setPromptTemplateName($promptTemplateName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPromptTemplateName()
+        {
+        }
+        /**
+         * Optional. The resource name of the Model Armor template to use for response
+         * screening. A Model Armor template is a set of customized filters and
+         * thresholds that define how Model Armor screens content. If specified, Model
+         * Armor will use this template to check the model's response for safety and
+         * security risks before it is returned to the user. The name must be in the
+         * format `projects/{project}/locations/{location}/templates/{template}`.
+         *
+         * @param string $responseTemplateName
+         */
+        public function setResponseTemplateName($responseTemplateName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResponseTemplateName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ModelArmorConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPromptTemplateName()
-    {
-    }
-    /**
-     * Optional. The resource name of the Model Armor template to use for response
-     * screening. A Model Armor template is a set of customized filters and
-     * thresholds that define how Model Armor screens content. If specified, Model
-     * Armor will use this template to check the model's response for safety and
-     * security risks before it is returned to the user. The name must be in the
-     * format `projects/{project}/locations/{location}/templates/{template}`.
-     *
-     * @param string $responseTemplateName
-     */
-    public function setResponseTemplateName($responseTemplateName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResponseTemplateName()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ModelArmorConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ModelArmorConfig
     {
     }
 }

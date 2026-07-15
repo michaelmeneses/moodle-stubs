@@ -21,150 +21,159 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaDocument extends \Google\Model
-{
-    protected $contentType = GoogleCloudDiscoveryengineV1betaDocumentContent::class;
-    protected $contentDataType = '';
-    /**
-     * @var array[]
-     */
-    public $derivedStructData;
-    /**
-     * @var string
-     */
-    public $id;
-    /**
-     * @var string
-     */
-    public $indexTime;
-    /**
-     * @var string
-     */
-    public $jsonData;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $parentDocumentId;
-    /**
-     * @var string
-     */
-    public $schemaId;
-    /**
-     * @var array[]
-     */
-    public $structData;
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaDocumentContent
-     */
-    public function setContent(GoogleCloudDiscoveryengineV1betaDocumentContent $content)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaDocument extends \Google\Model
     {
+        protected $contentType = GoogleCloudDiscoveryengineV1betaDocumentContent::class;
+        protected $contentDataType = '';
+        /**
+         * @var array[]
+         */
+        public $derivedStructData;
+        /**
+         * @var string
+         */
+        public $id;
+        /**
+         * @var string
+         */
+        public $indexTime;
+        /**
+         * @var string
+         */
+        public $jsonData;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $parentDocumentId;
+        /**
+         * @var string
+         */
+        public $schemaId;
+        /**
+         * @var array[]
+         */
+        public $structData;
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaDocumentContent
+         */
+        public function setContent(GoogleCloudDiscoveryengineV1betaDocumentContent $content)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaDocumentContent
+         */
+        public function getContent()
+        {
+        }
+        /**
+         * @param array[]
+         */
+        public function setDerivedStructData($derivedStructData)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getDerivedStructData()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setIndexTime($indexTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIndexTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setJsonData($jsonData)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getJsonData()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setParentDocumentId($parentDocumentId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParentDocumentId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSchemaId($schemaId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSchemaId()
+        {
+        }
+        /**
+         * @param array[]
+         */
+        public function setStructData($structData)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getStructData()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1betaDocumentContent
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaDocument registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContent()
-    {
-    }
-    /**
-     * @param array[]
-     */
-    public function setDerivedStructData($derivedStructData)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getDerivedStructData()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setIndexTime($indexTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIndexTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setJsonData($jsonData)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getJsonData()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setParentDocumentId($parentDocumentId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParentDocumentId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSchemaId($schemaId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSchemaId()
-    {
-    }
-    /**
-     * @param array[]
-     */
-    public function setStructData($structData)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getStructData()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaDocument extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaDocument
     {
     }
 }

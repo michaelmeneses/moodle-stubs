@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class Notebook extends \Google\Model
-{
-    /**
-     * The user ID of the latest author to modify the notebook.
-     *
-     * @var string
-     */
-    public $lastAuthor;
-    /**
-     * The name of the notebook.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The most recent time the notebook was updated.
-     *
-     * @var string
-     */
-    public $notebookUpdateTime;
-    /**
-     * The source notebook service, for example, "Colab Enterprise".
-     *
-     * @var string
-     */
-    public $service;
-    /**
-     * The user ID of the latest author to modify the notebook.
-     *
-     * @param string $lastAuthor
-     */
-    public function setLastAuthor($lastAuthor)
+namespace Google\Service\SecurityCommandCenter {
+    class Notebook extends \Google\Model
     {
+        /**
+         * The user ID of the latest author to modify the notebook.
+         *
+         * @var string
+         */
+        public $lastAuthor;
+        /**
+         * The name of the notebook.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The most recent time the notebook was updated.
+         *
+         * @var string
+         */
+        public $notebookUpdateTime;
+        /**
+         * The source notebook service, for example, "Colab Enterprise".
+         *
+         * @var string
+         */
+        public $service;
+        /**
+         * The user ID of the latest author to modify the notebook.
+         *
+         * @param string $lastAuthor
+         */
+        public function setLastAuthor($lastAuthor)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastAuthor()
+        {
+        }
+        /**
+         * The name of the notebook.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The most recent time the notebook was updated.
+         *
+         * @param string $notebookUpdateTime
+         */
+        public function setNotebookUpdateTime($notebookUpdateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNotebookUpdateTime()
+        {
+        }
+        /**
+         * The source notebook service, for example, "Colab Enterprise".
+         *
+         * @param string $service
+         */
+        public function setService($service)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getService()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\Notebook registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLastAuthor()
-    {
-    }
-    /**
-     * The name of the notebook.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The most recent time the notebook was updated.
-     *
-     * @param string $notebookUpdateTime
-     */
-    public function setNotebookUpdateTime($notebookUpdateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNotebookUpdateTime()
-    {
-    }
-    /**
-     * The source notebook service, for example, "Colab Enterprise".
-     *
-     * @param string $service
-     */
-    public function setService($service)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getService()
+    class Google_Service_SecurityCommandCenter_Notebook extends \Google\Service\SecurityCommandCenter\Notebook
     {
     }
 }

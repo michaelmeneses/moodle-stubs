@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InterconnectMacsecConfig extends \Google\Collection
-{
-    protected $collection_key = 'preSharedKeys';
-    protected $preSharedKeysType = InterconnectMacsecConfigPreSharedKey::class;
-    protected $preSharedKeysDataType = 'array';
-    /**
-     * A keychain placeholder describing a set of named key objects along with
-     * their start times. A MACsec CKN/CAK is generated for each key in the key
-     * chain. Google router automatically picks the key with the most recent
-     * startTime when establishing or re-establishing a MACsec secure link.
-     *
-     * @param InterconnectMacsecConfigPreSharedKey[] $preSharedKeys
-     */
-    public function setPreSharedKeys($preSharedKeys)
+namespace Google\Service\Compute {
+    class InterconnectMacsecConfig extends \Google\Collection
     {
+        protected $collection_key = 'preSharedKeys';
+        protected $preSharedKeysType = InterconnectMacsecConfigPreSharedKey::class;
+        protected $preSharedKeysDataType = 'array';
+        /**
+         * A keychain placeholder describing a set of named key objects along with
+         * their start times. A MACsec CKN/CAK is generated for each key in the key
+         * chain. Google router automatically picks the key with the most recent
+         * startTime when establishing or re-establishing a MACsec secure link.
+         *
+         * @param InterconnectMacsecConfigPreSharedKey[] $preSharedKeys
+         */
+        public function setPreSharedKeys($preSharedKeys)
+        {
+        }
+        /**
+         * @return InterconnectMacsecConfigPreSharedKey[]
+         */
+        public function getPreSharedKeys()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InterconnectMacsecConfigPreSharedKey[]
+     * Runtime class alias of \Google\Service\Compute\InterconnectMacsecConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPreSharedKeys()
+    class Google_Service_Compute_InterconnectMacsecConfig extends \Google\Service\Compute\InterconnectMacsecConfig
     {
     }
 }

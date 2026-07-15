@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class GoogleDevtoolsContaineranalysisV1alpha1OperationMetadata extends \Google\Model
-{
-    /**
-     * Output only. The time this operation was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Output only. The time that this operation was marked completed or failed.
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * Output only. The time this operation was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\ContainerAnalysis {
+    class GoogleDevtoolsContaineranalysisV1alpha1OperationMetadata extends \Google\Model
     {
+        /**
+         * Output only. The time this operation was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Output only. The time that this operation was marked completed or failed.
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * Output only. The time this operation was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. The time that this operation was marked completed or failed.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ContainerAnalysis\GoogleDevtoolsContaineranalysisV1alpha1OperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. The time that this operation was marked completed or failed.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndTime()
+    class Google_Service_ContainerAnalysis_GoogleDevtoolsContaineranalysisV1alpha1OperationMetadata extends \Google\Service\ContainerAnalysis\GoogleDevtoolsContaineranalysisV1alpha1OperationMetadata
     {
     }
 }

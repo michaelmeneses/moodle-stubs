@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1RuntimeTraceSamplingConfig extends \Google\Model
-{
-    /**
-     * Sampler unspecified.
-     */
-    public const SAMPLER_SAMPLER_UNSPECIFIED = 'SAMPLER_UNSPECIFIED';
-    /**
-     * OFF means distributed trace is disabled, or the sampling probability is 0.
-     */
-    public const SAMPLER_OFF = 'OFF';
-    /**
-     * PROBABILITY means traces are captured on a probability that defined by
-     * sampling_rate. The sampling rate is limited to 0 to 0.5 when this is set.
-     */
-    public const SAMPLER_PROBABILITY = 'PROBABILITY';
-    /**
-     * Sampler of distributed tracing. OFF is the default value.
-     *
-     * @var string
-     */
-    public $sampler;
-    /**
-     * Field sampling rate. This value is only applicable when using the
-     * PROBABILITY sampler. The supported values are > 0 and <= 0.5.
-     *
-     * @var float
-     */
-    public $samplingRate;
-    /**
-     * Sampler of distributed tracing. OFF is the default value.
-     *
-     * Accepted values: SAMPLER_UNSPECIFIED, OFF, PROBABILITY
-     *
-     * @param self::SAMPLER_* $sampler
-     */
-    public function setSampler($sampler)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1RuntimeTraceSamplingConfig extends \Google\Model
     {
+        /**
+         * Sampler unspecified.
+         */
+        public const SAMPLER_SAMPLER_UNSPECIFIED = 'SAMPLER_UNSPECIFIED';
+        /**
+         * OFF means distributed trace is disabled, or the sampling probability is 0.
+         */
+        public const SAMPLER_OFF = 'OFF';
+        /**
+         * PROBABILITY means traces are captured on a probability that defined by
+         * sampling_rate. The sampling rate is limited to 0 to 0.5 when this is set.
+         */
+        public const SAMPLER_PROBABILITY = 'PROBABILITY';
+        /**
+         * Sampler of distributed tracing. OFF is the default value.
+         *
+         * @var string
+         */
+        public $sampler;
+        /**
+         * Field sampling rate. This value is only applicable when using the
+         * PROBABILITY sampler. The supported values are > 0 and <= 0.5.
+         *
+         * @var float
+         */
+        public $samplingRate;
+        /**
+         * Sampler of distributed tracing. OFF is the default value.
+         *
+         * Accepted values: SAMPLER_UNSPECIFIED, OFF, PROBABILITY
+         *
+         * @param self::SAMPLER_* $sampler
+         */
+        public function setSampler($sampler)
+        {
+        }
+        /**
+         * @return self::SAMPLER_*
+         */
+        public function getSampler()
+        {
+        }
+        /**
+         * Field sampling rate. This value is only applicable when using the
+         * PROBABILITY sampler. The supported values are > 0 and <= 0.5.
+         *
+         * @param float $samplingRate
+         */
+        public function setSamplingRate($samplingRate)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getSamplingRate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::SAMPLER_*
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1RuntimeTraceSamplingConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSampler()
-    {
-    }
-    /**
-     * Field sampling rate. This value is only applicable when using the
-     * PROBABILITY sampler. The supported values are > 0 and <= 0.5.
-     *
-     * @param float $samplingRate
-     */
-    public function setSamplingRate($samplingRate)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getSamplingRate()
+    class Google_Service_Apigee_GoogleCloudApigeeV1RuntimeTraceSamplingConfig extends \Google\Service\Apigee\GoogleCloudApigeeV1RuntimeTraceSamplingConfig
     {
     }
 }

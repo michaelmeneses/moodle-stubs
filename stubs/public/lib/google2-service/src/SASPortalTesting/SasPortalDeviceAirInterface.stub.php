@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SASPortalTesting;
-
-class SasPortalDeviceAirInterface extends \Google\Model
-{
-    public const RADIO_TECHNOLOGY_RADIO_TECHNOLOGY_UNSPECIFIED = 'RADIO_TECHNOLOGY_UNSPECIFIED';
-    public const RADIO_TECHNOLOGY_E_UTRA = 'E_UTRA';
-    public const RADIO_TECHNOLOGY_CAMBIUM_NETWORKS = 'CAMBIUM_NETWORKS';
-    public const RADIO_TECHNOLOGY_FOUR_G_BBW_SAA_1 = 'FOUR_G_BBW_SAA_1';
-    public const RADIO_TECHNOLOGY_NR = 'NR';
-    public const RADIO_TECHNOLOGY_DOODLE_CBRS = 'DOODLE_CBRS';
-    public const RADIO_TECHNOLOGY_CW = 'CW';
-    public const RADIO_TECHNOLOGY_REDLINE = 'REDLINE';
-    public const RADIO_TECHNOLOGY_TARANA_WIRELESS = 'TARANA_WIRELESS';
-    public const RADIO_TECHNOLOGY_FAROS = 'FAROS';
-    /**
-     * Conditional. This field specifies the radio access technology that is used
-     * for the CBSD.
-     *
-     * @var string
-     */
-    public $radioTechnology;
-    /**
-     * Optional. This field is related to the `radioTechnology` and provides the
-     * air interface specification that the CBSD is compliant with at the time of
-     * registration.
-     *
-     * @var string
-     */
-    public $supportedSpec;
-    /**
-     * Conditional. This field specifies the radio access technology that is used
-     * for the CBSD.
-     *
-     * Accepted values: RADIO_TECHNOLOGY_UNSPECIFIED, E_UTRA, CAMBIUM_NETWORKS,
-     * FOUR_G_BBW_SAA_1, NR, DOODLE_CBRS, CW, REDLINE, TARANA_WIRELESS, FAROS
-     *
-     * @param self::RADIO_TECHNOLOGY_* $radioTechnology
-     */
-    public function setRadioTechnology($radioTechnology)
+namespace Google\Service\SASPortalTesting {
+    class SasPortalDeviceAirInterface extends \Google\Model
     {
+        public const RADIO_TECHNOLOGY_RADIO_TECHNOLOGY_UNSPECIFIED = 'RADIO_TECHNOLOGY_UNSPECIFIED';
+        public const RADIO_TECHNOLOGY_E_UTRA = 'E_UTRA';
+        public const RADIO_TECHNOLOGY_CAMBIUM_NETWORKS = 'CAMBIUM_NETWORKS';
+        public const RADIO_TECHNOLOGY_FOUR_G_BBW_SAA_1 = 'FOUR_G_BBW_SAA_1';
+        public const RADIO_TECHNOLOGY_NR = 'NR';
+        public const RADIO_TECHNOLOGY_DOODLE_CBRS = 'DOODLE_CBRS';
+        public const RADIO_TECHNOLOGY_CW = 'CW';
+        public const RADIO_TECHNOLOGY_REDLINE = 'REDLINE';
+        public const RADIO_TECHNOLOGY_TARANA_WIRELESS = 'TARANA_WIRELESS';
+        public const RADIO_TECHNOLOGY_FAROS = 'FAROS';
+        /**
+         * Conditional. This field specifies the radio access technology that is used
+         * for the CBSD.
+         *
+         * @var string
+         */
+        public $radioTechnology;
+        /**
+         * Optional. This field is related to the `radioTechnology` and provides the
+         * air interface specification that the CBSD is compliant with at the time of
+         * registration.
+         *
+         * @var string
+         */
+        public $supportedSpec;
+        /**
+         * Conditional. This field specifies the radio access technology that is used
+         * for the CBSD.
+         *
+         * Accepted values: RADIO_TECHNOLOGY_UNSPECIFIED, E_UTRA, CAMBIUM_NETWORKS,
+         * FOUR_G_BBW_SAA_1, NR, DOODLE_CBRS, CW, REDLINE, TARANA_WIRELESS, FAROS
+         *
+         * @param self::RADIO_TECHNOLOGY_* $radioTechnology
+         */
+        public function setRadioTechnology($radioTechnology)
+        {
+        }
+        /**
+         * @return self::RADIO_TECHNOLOGY_*
+         */
+        public function getRadioTechnology()
+        {
+        }
+        /**
+         * Optional. This field is related to the `radioTechnology` and provides the
+         * air interface specification that the CBSD is compliant with at the time of
+         * registration.
+         *
+         * @param string $supportedSpec
+         */
+        public function setSupportedSpec($supportedSpec)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSupportedSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::RADIO_TECHNOLOGY_*
+     * Runtime class alias of \Google\Service\SASPortalTesting\SasPortalDeviceAirInterface registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRadioTechnology()
-    {
-    }
-    /**
-     * Optional. This field is related to the `radioTechnology` and provides the
-     * air interface specification that the CBSD is compliant with at the time of
-     * registration.
-     *
-     * @param string $supportedSpec
-     */
-    public function setSupportedSpec($supportedSpec)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSupportedSpec()
+    class Google_Service_SASPortalTesting_SasPortalDeviceAirInterface extends \Google\Service\SASPortalTesting\SasPortalDeviceAirInterface
     {
     }
 }

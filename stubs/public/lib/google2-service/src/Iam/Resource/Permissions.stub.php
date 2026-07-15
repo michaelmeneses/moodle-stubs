@@ -21,28 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Iam\Resource;
-
-/**
- * The "permissions" collection of methods.
- * Typical usage is:
- *  <code>
- *   $iamService = new Google\Service\Iam(...);
- *   $permissions = $iamService->permissions;
- *  </code>
- */
-class Permissions extends \Google\Service\Resource
-{
+namespace Google\Service\Iam\Resource {
+    use Google\Service\Iam\QueryTestablePermissionsRequest;
+    use Google\Service\Iam\QueryTestablePermissionsResponse;
     /**
-     * Lists every permission that you can test on a resource. A permission is
-     * testable if you can check whether a principal has that permission on the
-     * resource. (permissions.queryTestablePermissions)
-     *
-     * @param QueryTestablePermissionsRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return QueryTestablePermissionsResponse
+     * The "permissions" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $iamService = new Google\Service\Iam(...);
+     *   $permissions = $iamService->permissions;
+     *  </code>
      */
-    public function queryTestablePermissions(QueryTestablePermissionsRequest $postBody, $optParams = [])
+    class Permissions extends \Google\Service\Resource
+    {
+        /**
+         * Lists every permission that you can test on a resource. A permission is
+         * testable if you can check whether a principal has that permission on the
+         * resource. (permissions.queryTestablePermissions)
+         *
+         * @param QueryTestablePermissionsRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return QueryTestablePermissionsResponse
+         */
+        public function queryTestablePermissions(QueryTestablePermissionsRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Iam\Resource\Permissions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Iam_Resource_Permissions extends \Google\Service\Iam\Resource\Permissions
     {
     }
 }

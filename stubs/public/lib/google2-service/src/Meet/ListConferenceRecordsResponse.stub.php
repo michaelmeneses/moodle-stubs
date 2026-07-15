@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Meet;
-
-class ListConferenceRecordsResponse extends \Google\Collection
-{
-    protected $collection_key = 'conferenceRecords';
-    protected $conferenceRecordsType = ConferenceRecord::class;
-    protected $conferenceRecordsDataType = 'array';
-    /**
-     * Token to be circulated back for further List call if current List does NOT
-     * include all the Conferences. Unset if all conferences have been returned.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of conferences in one page.
-     *
-     * @param ConferenceRecord[] $conferenceRecords
-     */
-    public function setConferenceRecords($conferenceRecords)
+namespace Google\Service\Meet {
+    class ListConferenceRecordsResponse extends \Google\Collection
     {
+        protected $collection_key = 'conferenceRecords';
+        protected $conferenceRecordsType = ConferenceRecord::class;
+        protected $conferenceRecordsDataType = 'array';
+        /**
+         * Token to be circulated back for further List call if current List does NOT
+         * include all the Conferences. Unset if all conferences have been returned.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of conferences in one page.
+         *
+         * @param ConferenceRecord[] $conferenceRecords
+         */
+        public function setConferenceRecords($conferenceRecords)
+        {
+        }
+        /**
+         * @return ConferenceRecord[]
+         */
+        public function getConferenceRecords()
+        {
+        }
+        /**
+         * Token to be circulated back for further List call if current List does NOT
+         * include all the Conferences. Unset if all conferences have been returned.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ConferenceRecord[]
+     * Runtime class alias of \Google\Service\Meet\ListConferenceRecordsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConferenceRecords()
-    {
-    }
-    /**
-     * Token to be circulated back for further List call if current List does NOT
-     * include all the Conferences. Unset if all conferences have been returned.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Meet_ListConferenceRecordsResponse extends \Google\Service\Meet\ListConferenceRecordsResponse
     {
     }
 }

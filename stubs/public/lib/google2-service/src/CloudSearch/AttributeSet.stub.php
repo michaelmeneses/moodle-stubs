@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AttributeSet extends \Google\Collection
-{
-    protected $collection_key = 'messageKeys';
-    /**
-     * @var string
-     */
-    public $attributeId;
-    /**
-     * @var string
-     */
-    public $attributeValue;
-    protected $messageKeysType = MultiKey::class;
-    protected $messageKeysDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setAttributeId($attributeId)
+namespace Google\Service\CloudSearch {
+    class AttributeSet extends \Google\Collection
     {
+        protected $collection_key = 'messageKeys';
+        /**
+         * @var string
+         */
+        public $attributeId;
+        /**
+         * @var string
+         */
+        public $attributeValue;
+        protected $messageKeysType = MultiKey::class;
+        protected $messageKeysDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setAttributeId($attributeId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAttributeId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setAttributeValue($attributeValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAttributeValue()
+        {
+        }
+        /**
+         * @param MultiKey[]
+         */
+        public function setMessageKeys($messageKeys)
+        {
+        }
+        /**
+         * @return MultiKey[]
+         */
+        public function getMessageKeys()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\AttributeSet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttributeId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setAttributeValue($attributeValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAttributeValue()
-    {
-    }
-    /**
-     * @param MultiKey[]
-     */
-    public function setMessageKeys($messageKeys)
-    {
-    }
-    /**
-     * @return MultiKey[]
-     */
-    public function getMessageKeys()
+    class Google_Service_CloudSearch_AttributeSet extends \Google\Service\CloudSearch\AttributeSet
     {
     }
 }

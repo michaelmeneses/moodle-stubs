@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class AuthenticationKey extends \Google\Model
-{
-    /**
-     * Available only to Smart Tap enabled partners. Contact support for
-     * additional guidance.
-     *
-     * @var int
-     */
-    public $id;
-    /**
-     * Available only to Smart Tap enabled partners. Contact support for
-     * additional guidance.
-     *
-     * @var string
-     */
-    public $publicKeyPem;
-    /**
-     * Available only to Smart Tap enabled partners. Contact support for
-     * additional guidance.
-     *
-     * @param int $id
-     */
-    public function setId($id)
+namespace Google\Service\Walletobjects {
+    class AuthenticationKey extends \Google\Model
     {
+        /**
+         * Available only to Smart Tap enabled partners. Contact support for
+         * additional guidance.
+         *
+         * @var int
+         */
+        public $id;
+        /**
+         * Available only to Smart Tap enabled partners. Contact support for
+         * additional guidance.
+         *
+         * @var string
+         */
+        public $publicKeyPem;
+        /**
+         * Available only to Smart Tap enabled partners. Contact support for
+         * additional guidance.
+         *
+         * @param int $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Available only to Smart Tap enabled partners. Contact support for
+         * additional guidance.
+         *
+         * @param string $publicKeyPem
+         */
+        public function setPublicKeyPem($publicKeyPem)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPublicKeyPem()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Walletobjects\AuthenticationKey registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * Available only to Smart Tap enabled partners. Contact support for
-     * additional guidance.
-     *
-     * @param string $publicKeyPem
-     */
-    public function setPublicKeyPem($publicKeyPem)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPublicKeyPem()
+    class Google_Service_Walletobjects_AuthenticationKey extends \Google\Service\Walletobjects\AuthenticationKey
     {
     }
 }

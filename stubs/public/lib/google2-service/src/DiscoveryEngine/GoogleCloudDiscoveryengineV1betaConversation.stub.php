@@ -21,103 +21,112 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaConversation extends \Google\Collection
-{
-    protected $collection_key = 'messages';
-    /**
-     * @var string
-     */
-    public $endTime;
-    protected $messagesType = GoogleCloudDiscoveryengineV1betaConversationMessage::class;
-    protected $messagesDataType = 'array';
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $startTime;
-    /**
-     * @var string
-     */
-    public $state;
-    /**
-     * @var string
-     */
-    public $userPseudoId;
-    /**
-     * @param string
-     */
-    public function setEndTime($endTime)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaConversation extends \Google\Collection
     {
+        protected $collection_key = 'messages';
+        /**
+         * @var string
+         */
+        public $endTime;
+        protected $messagesType = GoogleCloudDiscoveryengineV1betaConversationMessage::class;
+        protected $messagesDataType = 'array';
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $startTime;
+        /**
+         * @var string
+         */
+        public $state;
+        /**
+         * @var string
+         */
+        public $userPseudoId;
+        /**
+         * @param string
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaConversationMessage[]
+         */
+        public function setMessages($messages)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaConversationMessage[]
+         */
+        public function getMessages()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getState()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUserPseudoId($userPseudoId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserPseudoId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaConversation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndTime()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaConversationMessage[]
-     */
-    public function setMessages($messages)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaConversationMessage[]
-     */
-    public function getMessages()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getState()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUserPseudoId($userPseudoId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserPseudoId()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaConversation extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaConversation
     {
     }
 }

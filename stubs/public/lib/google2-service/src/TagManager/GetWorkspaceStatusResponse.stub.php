@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager;
-
-class GetWorkspaceStatusResponse extends \Google\Collection
-{
-    protected $collection_key = 'workspaceChange';
-    protected $mergeConflictType = MergeConflict::class;
-    protected $mergeConflictDataType = 'array';
-    protected $workspaceChangeType = Entity::class;
-    protected $workspaceChangeDataType = 'array';
-    /**
-     * The merge conflict after sync.
-     *
-     * @param MergeConflict[] $mergeConflict
-     */
-    public function setMergeConflict($mergeConflict)
+namespace Google\Service\TagManager {
+    class GetWorkspaceStatusResponse extends \Google\Collection
     {
+        protected $collection_key = 'workspaceChange';
+        protected $mergeConflictType = MergeConflict::class;
+        protected $mergeConflictDataType = 'array';
+        protected $workspaceChangeType = Entity::class;
+        protected $workspaceChangeDataType = 'array';
+        /**
+         * The merge conflict after sync.
+         *
+         * @param MergeConflict[] $mergeConflict
+         */
+        public function setMergeConflict($mergeConflict)
+        {
+        }
+        /**
+         * @return MergeConflict[]
+         */
+        public function getMergeConflict()
+        {
+        }
+        /**
+         * Entities that have been changed in the workspace.
+         *
+         * @param Entity[] $workspaceChange
+         */
+        public function setWorkspaceChange($workspaceChange)
+        {
+        }
+        /**
+         * @return Entity[]
+         */
+        public function getWorkspaceChange()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MergeConflict[]
+     * Runtime class alias of \Google\Service\TagManager\GetWorkspaceStatusResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMergeConflict()
-    {
-    }
-    /**
-     * Entities that have been changed in the workspace.
-     *
-     * @param Entity[] $workspaceChange
-     */
-    public function setWorkspaceChange($workspaceChange)
-    {
-    }
-    /**
-     * @return Entity[]
-     */
-    public function getWorkspaceChange()
+    class Google_Service_TagManager_GetWorkspaceStatusResponse extends \Google\Service\TagManager\GetWorkspaceStatusResponse
     {
     }
 }

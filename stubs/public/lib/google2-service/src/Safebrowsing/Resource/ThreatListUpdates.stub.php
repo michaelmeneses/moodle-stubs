@@ -21,27 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Safebrowsing\Resource;
-
-/**
- * The "threatListUpdates" collection of methods.
- * Typical usage is:
- *  <code>
- *   $safebrowsingService = new Google\Service\Safebrowsing(...);
- *   $threatListUpdates = $safebrowsingService->threatListUpdates;
- *  </code>
- */
-class ThreatListUpdates extends \Google\Service\Resource
-{
+namespace Google\Service\Safebrowsing\Resource {
+    use Google\Service\Safebrowsing\GoogleSecuritySafebrowsingV4FetchThreatListUpdatesRequest;
+    use Google\Service\Safebrowsing\GoogleSecuritySafebrowsingV4FetchThreatListUpdatesResponse;
     /**
-     * Fetches the most recent threat list updates. A client can request updates for
-     * multiple lists at once. (threatListUpdates.fetch)
-     *
-     * @param GoogleSecuritySafebrowsingV4FetchThreatListUpdatesRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleSecuritySafebrowsingV4FetchThreatListUpdatesResponse
+     * The "threatListUpdates" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $safebrowsingService = new Google\Service\Safebrowsing(...);
+     *   $threatListUpdates = $safebrowsingService->threatListUpdates;
+     *  </code>
      */
-    public function fetch(GoogleSecuritySafebrowsingV4FetchThreatListUpdatesRequest $postBody, $optParams = [])
+    class ThreatListUpdates extends \Google\Service\Resource
+    {
+        /**
+         * Fetches the most recent threat list updates. A client can request updates for
+         * multiple lists at once. (threatListUpdates.fetch)
+         *
+         * @param GoogleSecuritySafebrowsingV4FetchThreatListUpdatesRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleSecuritySafebrowsingV4FetchThreatListUpdatesResponse
+         */
+        public function fetch(GoogleSecuritySafebrowsingV4FetchThreatListUpdatesRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Safebrowsing\Resource\ThreatListUpdates registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Safebrowsing_Resource_ThreatListUpdates extends \Google\Service\Safebrowsing\Resource\ThreatListUpdates
     {
     }
 }

@@ -21,85 +21,94 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Merchant;
-
-class MerchantReviewStatus extends \Google\Collection
-{
-    protected $collection_key = 'itemLevelIssues';
-    /**
-     * Output only. Date on which the item has been created, in [ISO
-     * 8601](http://en.wikipedia.org/wiki/ISO_8601) format.
-     *
-     * @var string
-     */
-    public $createTime;
-    protected $destinationStatusesType = MerchantReviewDestinationStatus::class;
-    protected $destinationStatusesDataType = 'array';
-    protected $itemLevelIssuesType = MerchantReviewItemLevelIssue::class;
-    protected $itemLevelIssuesDataType = 'array';
-    /**
-     * Output only. Date on which the item has been last updated, in [ISO
-     * 8601](http://en.wikipedia.org/wiki/ISO_8601) format.
-     *
-     * @var string
-     */
-    public $lastUpdateTime;
-    /**
-     * Output only. Date on which the item has been created, in [ISO
-     * 8601](http://en.wikipedia.org/wiki/ISO_8601) format.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\Merchant {
+    class MerchantReviewStatus extends \Google\Collection
     {
+        protected $collection_key = 'itemLevelIssues';
+        /**
+         * Output only. Date on which the item has been created, in [ISO
+         * 8601](http://en.wikipedia.org/wiki/ISO_8601) format.
+         *
+         * @var string
+         */
+        public $createTime;
+        protected $destinationStatusesType = MerchantReviewDestinationStatus::class;
+        protected $destinationStatusesDataType = 'array';
+        protected $itemLevelIssuesType = MerchantReviewItemLevelIssue::class;
+        protected $itemLevelIssuesDataType = 'array';
+        /**
+         * Output only. Date on which the item has been last updated, in [ISO
+         * 8601](http://en.wikipedia.org/wiki/ISO_8601) format.
+         *
+         * @var string
+         */
+        public $lastUpdateTime;
+        /**
+         * Output only. Date on which the item has been created, in [ISO
+         * 8601](http://en.wikipedia.org/wiki/ISO_8601) format.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. The intended destinations for the merchant review.
+         *
+         * @param MerchantReviewDestinationStatus[] $destinationStatuses
+         */
+        public function setDestinationStatuses($destinationStatuses)
+        {
+        }
+        /**
+         * @return MerchantReviewDestinationStatus[]
+         */
+        public function getDestinationStatuses()
+        {
+        }
+        /**
+         * Output only. A list of all issues associated with the merchant review.
+         *
+         * @param MerchantReviewItemLevelIssue[] $itemLevelIssues
+         */
+        public function setItemLevelIssues($itemLevelIssues)
+        {
+        }
+        /**
+         * @return MerchantReviewItemLevelIssue[]
+         */
+        public function getItemLevelIssues()
+        {
+        }
+        /**
+         * Output only. Date on which the item has been last updated, in [ISO
+         * 8601](http://en.wikipedia.org/wiki/ISO_8601) format.
+         *
+         * @param string $lastUpdateTime
+         */
+        public function setLastUpdateTime($lastUpdateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Merchant\MerchantReviewStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. The intended destinations for the merchant review.
-     *
-     * @param MerchantReviewDestinationStatus[] $destinationStatuses
-     */
-    public function setDestinationStatuses($destinationStatuses)
-    {
-    }
-    /**
-     * @return MerchantReviewDestinationStatus[]
-     */
-    public function getDestinationStatuses()
-    {
-    }
-    /**
-     * Output only. A list of all issues associated with the merchant review.
-     *
-     * @param MerchantReviewItemLevelIssue[] $itemLevelIssues
-     */
-    public function setItemLevelIssues($itemLevelIssues)
-    {
-    }
-    /**
-     * @return MerchantReviewItemLevelIssue[]
-     */
-    public function getItemLevelIssues()
-    {
-    }
-    /**
-     * Output only. Date on which the item has been last updated, in [ISO
-     * 8601](http://en.wikipedia.org/wiki/ISO_8601) format.
-     *
-     * @param string $lastUpdateTime
-     */
-    public function setLastUpdateTime($lastUpdateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastUpdateTime()
+    class Google_Service_Merchant_MerchantReviewStatus extends \Google\Service\Merchant\MerchantReviewStatus
     {
     }
 }

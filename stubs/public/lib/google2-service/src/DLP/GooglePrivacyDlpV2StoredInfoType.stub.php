@@ -21,61 +21,70 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2StoredInfoType extends \Google\Collection
-{
-    protected $collection_key = 'pendingVersions';
-    protected $currentVersionType = GooglePrivacyDlpV2StoredInfoTypeVersion::class;
-    protected $currentVersionDataType = '';
-    /**
-     * Resource name.
-     *
-     * @var string
-     */
-    public $name;
-    protected $pendingVersionsType = GooglePrivacyDlpV2StoredInfoTypeVersion::class;
-    protected $pendingVersionsDataType = 'array';
-    /**
-     * Current version of the stored info type.
-     *
-     * @param GooglePrivacyDlpV2StoredInfoTypeVersion $currentVersion
-     */
-    public function setCurrentVersion(GooglePrivacyDlpV2StoredInfoTypeVersion $currentVersion)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2StoredInfoType extends \Google\Collection
     {
+        protected $collection_key = 'pendingVersions';
+        protected $currentVersionType = GooglePrivacyDlpV2StoredInfoTypeVersion::class;
+        protected $currentVersionDataType = '';
+        /**
+         * Resource name.
+         *
+         * @var string
+         */
+        public $name;
+        protected $pendingVersionsType = GooglePrivacyDlpV2StoredInfoTypeVersion::class;
+        protected $pendingVersionsDataType = 'array';
+        /**
+         * Current version of the stored info type.
+         *
+         * @param GooglePrivacyDlpV2StoredInfoTypeVersion $currentVersion
+         */
+        public function setCurrentVersion(GooglePrivacyDlpV2StoredInfoTypeVersion $currentVersion)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2StoredInfoTypeVersion
+         */
+        public function getCurrentVersion()
+        {
+        }
+        /**
+         * Resource name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Pending versions of the stored info type. Empty if no versions are pending.
+         *
+         * @param GooglePrivacyDlpV2StoredInfoTypeVersion[] $pendingVersions
+         */
+        public function setPendingVersions($pendingVersions)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2StoredInfoTypeVersion[]
+         */
+        public function getPendingVersions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2StoredInfoTypeVersion
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2StoredInfoType registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCurrentVersion()
-    {
-    }
-    /**
-     * Resource name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Pending versions of the stored info type. Empty if no versions are pending.
-     *
-     * @param GooglePrivacyDlpV2StoredInfoTypeVersion[] $pendingVersions
-     */
-    public function setPendingVersions($pendingVersions)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2StoredInfoTypeVersion[]
-     */
-    public function getPendingVersions()
+    class Google_Service_DLP_GooglePrivacyDlpV2StoredInfoType extends \Google\Service\DLP\GooglePrivacyDlpV2StoredInfoType
     {
     }
 }

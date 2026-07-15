@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveActivity;
-
-class Domain extends \Google\Model
-{
-    /**
-     * An opaque string used to identify this domain.
-     *
-     * @var string
-     */
-    public $legacyId;
-    /**
-     * The name of the domain, e.g. `google.com`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * An opaque string used to identify this domain.
-     *
-     * @param string $legacyId
-     */
-    public function setLegacyId($legacyId)
+namespace Google\Service\DriveActivity {
+    class Domain extends \Google\Model
     {
+        /**
+         * An opaque string used to identify this domain.
+         *
+         * @var string
+         */
+        public $legacyId;
+        /**
+         * The name of the domain, e.g. `google.com`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * An opaque string used to identify this domain.
+         *
+         * @param string $legacyId
+         */
+        public function setLegacyId($legacyId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLegacyId()
+        {
+        }
+        /**
+         * The name of the domain, e.g. `google.com`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DriveActivity\Domain registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLegacyId()
-    {
-    }
-    /**
-     * The name of the domain, e.g. `google.com`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_DriveActivity_Domain extends \Google\Service\DriveActivity\Domain
     {
     }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChecksService;
-
-class GoogleChecksReportV1alphaCheckEndpointEvidence extends \Google\Model
-{
-    protected $endpointType = GoogleChecksReportV1alphaEndpoint::class;
-    protected $endpointDataType = '';
-    /**
-     * The endpoint that was contacted by your app.
-     *
-     * @param GoogleChecksReportV1alphaEndpoint $endpoint
-     */
-    public function setEndpoint(GoogleChecksReportV1alphaEndpoint $endpoint)
+namespace Google\Service\ChecksService {
+    class GoogleChecksReportV1alphaCheckEndpointEvidence extends \Google\Model
     {
+        protected $endpointType = GoogleChecksReportV1alphaEndpoint::class;
+        protected $endpointDataType = '';
+        /**
+         * The endpoint that was contacted by your app.
+         *
+         * @param GoogleChecksReportV1alphaEndpoint $endpoint
+         */
+        public function setEndpoint(GoogleChecksReportV1alphaEndpoint $endpoint)
+        {
+        }
+        /**
+         * @return GoogleChecksReportV1alphaEndpoint
+         */
+        public function getEndpoint()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleChecksReportV1alphaEndpoint
+     * Runtime class alias of \Google\Service\ChecksService\GoogleChecksReportV1alphaCheckEndpointEvidence registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndpoint()
+    class Google_Service_ChecksService_GoogleChecksReportV1alphaCheckEndpointEvidence extends \Google\Service\ChecksService\GoogleChecksReportV1alphaCheckEndpointEvidence
     {
     }
 }

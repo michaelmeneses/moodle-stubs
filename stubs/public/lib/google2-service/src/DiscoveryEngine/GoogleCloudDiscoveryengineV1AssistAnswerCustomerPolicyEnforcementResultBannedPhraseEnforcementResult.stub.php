@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1AssistAnswerCustomerPolicyEnforcementResultBannedPhraseEnforcementResult extends \Google\Collection
-{
-    protected $collection_key = 'bannedPhrases';
-    /**
-     * The banned phrases that were found in the query or the answer.
-     *
-     * @var string[]
-     */
-    public $bannedPhrases;
-    /**
-     * The banned phrases that were found in the query or the answer.
-     *
-     * @param string[] $bannedPhrases
-     */
-    public function setBannedPhrases($bannedPhrases)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1AssistAnswerCustomerPolicyEnforcementResultBannedPhraseEnforcementResult extends \Google\Collection
     {
+        protected $collection_key = 'bannedPhrases';
+        /**
+         * The banned phrases that were found in the query or the answer.
+         *
+         * @var string[]
+         */
+        public $bannedPhrases;
+        /**
+         * The banned phrases that were found in the query or the answer.
+         *
+         * @param string[] $bannedPhrases
+         */
+        public function setBannedPhrases($bannedPhrases)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getBannedPhrases()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AssistAnswerCustomerPolicyEnforcementResultBannedPhraseEnforcementResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBannedPhrases()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1AssistAnswerCustomerPolicyEnforcementResultBannedPhraseEnforcementResult extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AssistAnswerCustomerPolicyEnforcementResultBannedPhraseEnforcementResult
     {
     }
 }

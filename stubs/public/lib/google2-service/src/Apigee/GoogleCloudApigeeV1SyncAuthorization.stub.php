@@ -21,83 +21,92 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1SyncAuthorization extends \Google\Collection
-{
-    protected $collection_key = 'identities';
-    /**
-     * Entity tag (ETag) used for optimistic concurrency control as a way to help
-     * prevent simultaneous updates from overwriting each other. For example, when
-     * you call [getSyncAuthorization](organizations/getSyncAuthorization) an ETag
-     * is returned in the response. Pass that ETag when calling the
-     * [setSyncAuthorization](organizations/setSyncAuthorization) to ensure that
-     * you are updating the correct version. If you don't pass the ETag in the
-     * call to `setSyncAuthorization`, then the existing authorization is
-     * overwritten indiscriminately. **Note**: We strongly recommend that you use
-     * the ETag in the read-modify-write cycle to avoid race conditions.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * Required. Array of service accounts to grant access to control plane
-     * resources, each specified using the following format: `serviceAccount:`
-     * service-account-name. The service-account-name is formatted like an email
-     * address. For example: `my-synchronizer-manager-
-     * service_account@my_project_id.iam.gserviceaccount.com` You might specify
-     * multiple service accounts, for example, if you have multiple environments
-     * and wish to assign a unique service account to each one. The service
-     * accounts must have **Apigee Synchronizer Manager** role. See also [Create
-     * service accounts](https://cloud.google.com/apigee/docs/hybrid/latest/sa-
-     * about#create-the-service-accounts).
-     *
-     * @var string[]
-     */
-    public $identities;
-    /**
-     * Entity tag (ETag) used for optimistic concurrency control as a way to help
-     * prevent simultaneous updates from overwriting each other. For example, when
-     * you call [getSyncAuthorization](organizations/getSyncAuthorization) an ETag
-     * is returned in the response. Pass that ETag when calling the
-     * [setSyncAuthorization](organizations/setSyncAuthorization) to ensure that
-     * you are updating the correct version. If you don't pass the ETag in the
-     * call to `setSyncAuthorization`, then the existing authorization is
-     * overwritten indiscriminately. **Note**: We strongly recommend that you use
-     * the ETag in the read-modify-write cycle to avoid race conditions.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1SyncAuthorization extends \Google\Collection
     {
+        protected $collection_key = 'identities';
+        /**
+         * Entity tag (ETag) used for optimistic concurrency control as a way to help
+         * prevent simultaneous updates from overwriting each other. For example, when
+         * you call [getSyncAuthorization](organizations/getSyncAuthorization) an ETag
+         * is returned in the response. Pass that ETag when calling the
+         * [setSyncAuthorization](organizations/setSyncAuthorization) to ensure that
+         * you are updating the correct version. If you don't pass the ETag in the
+         * call to `setSyncAuthorization`, then the existing authorization is
+         * overwritten indiscriminately. **Note**: We strongly recommend that you use
+         * the ETag in the read-modify-write cycle to avoid race conditions.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * Required. Array of service accounts to grant access to control plane
+         * resources, each specified using the following format: `serviceAccount:`
+         * service-account-name. The service-account-name is formatted like an email
+         * address. For example: `my-synchronizer-manager-
+         * service_account@my_project_id.iam.gserviceaccount.com` You might specify
+         * multiple service accounts, for example, if you have multiple environments
+         * and wish to assign a unique service account to each one. The service
+         * accounts must have **Apigee Synchronizer Manager** role. See also [Create
+         * service accounts](https://cloud.google.com/apigee/docs/hybrid/latest/sa-
+         * about#create-the-service-accounts).
+         *
+         * @var string[]
+         */
+        public $identities;
+        /**
+         * Entity tag (ETag) used for optimistic concurrency control as a way to help
+         * prevent simultaneous updates from overwriting each other. For example, when
+         * you call [getSyncAuthorization](organizations/getSyncAuthorization) an ETag
+         * is returned in the response. Pass that ETag when calling the
+         * [setSyncAuthorization](organizations/setSyncAuthorization) to ensure that
+         * you are updating the correct version. If you don't pass the ETag in the
+         * call to `setSyncAuthorization`, then the existing authorization is
+         * overwritten indiscriminately. **Note**: We strongly recommend that you use
+         * the ETag in the read-modify-write cycle to avoid race conditions.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * Required. Array of service accounts to grant access to control plane
+         * resources, each specified using the following format: `serviceAccount:`
+         * service-account-name. The service-account-name is formatted like an email
+         * address. For example: `my-synchronizer-manager-
+         * service_account@my_project_id.iam.gserviceaccount.com` You might specify
+         * multiple service accounts, for example, if you have multiple environments
+         * and wish to assign a unique service account to each one. The service
+         * accounts must have **Apigee Synchronizer Manager** role. See also [Create
+         * service accounts](https://cloud.google.com/apigee/docs/hybrid/latest/sa-
+         * about#create-the-service-accounts).
+         *
+         * @param string[] $identities
+         */
+        public function setIdentities($identities)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getIdentities()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1SyncAuthorization registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
-    {
-    }
-    /**
-     * Required. Array of service accounts to grant access to control plane
-     * resources, each specified using the following format: `serviceAccount:`
-     * service-account-name. The service-account-name is formatted like an email
-     * address. For example: `my-synchronizer-manager-
-     * service_account@my_project_id.iam.gserviceaccount.com` You might specify
-     * multiple service accounts, for example, if you have multiple environments
-     * and wish to assign a unique service account to each one. The service
-     * accounts must have **Apigee Synchronizer Manager** role. See also [Create
-     * service accounts](https://cloud.google.com/apigee/docs/hybrid/latest/sa-
-     * about#create-the-service-accounts).
-     *
-     * @param string[] $identities
-     */
-    public function setIdentities($identities)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getIdentities()
+    class Google_Service_Apigee_GoogleCloudApigeeV1SyncAuthorization extends \Google\Service\Apigee\GoogleCloudApigeeV1SyncAuthorization
     {
     }
 }

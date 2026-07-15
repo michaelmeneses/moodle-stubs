@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1DeployIndexOperationMetadata extends \Google\Model
-{
-    /**
-     * The unique index id specified by user
-     *
-     * @var string
-     */
-    public $deployedIndexId;
-    protected $genericMetadataType = GoogleCloudAiplatformV1GenericOperationMetadata::class;
-    protected $genericMetadataDataType = '';
-    /**
-     * The unique index id specified by user
-     *
-     * @param string $deployedIndexId
-     */
-    public function setDeployedIndexId($deployedIndexId)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1DeployIndexOperationMetadata extends \Google\Model
     {
+        /**
+         * The unique index id specified by user
+         *
+         * @var string
+         */
+        public $deployedIndexId;
+        protected $genericMetadataType = GoogleCloudAiplatformV1GenericOperationMetadata::class;
+        protected $genericMetadataDataType = '';
+        /**
+         * The unique index id specified by user
+         *
+         * @param string $deployedIndexId
+         */
+        public function setDeployedIndexId($deployedIndexId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeployedIndexId()
+        {
+        }
+        /**
+         * The operation generic information.
+         *
+         * @param GoogleCloudAiplatformV1GenericOperationMetadata $genericMetadata
+         */
+        public function setGenericMetadata(GoogleCloudAiplatformV1GenericOperationMetadata $genericMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1GenericOperationMetadata
+         */
+        public function getGenericMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1DeployIndexOperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeployedIndexId()
-    {
-    }
-    /**
-     * The operation generic information.
-     *
-     * @param GoogleCloudAiplatformV1GenericOperationMetadata $genericMetadata
-     */
-    public function setGenericMetadata(GoogleCloudAiplatformV1GenericOperationMetadata $genericMetadata)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1GenericOperationMetadata
-     */
-    public function getGenericMetadata()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1DeployIndexOperationMetadata extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1DeployIndexOperationMetadata
     {
     }
 }

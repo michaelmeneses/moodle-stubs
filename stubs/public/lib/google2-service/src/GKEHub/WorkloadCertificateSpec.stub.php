@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class WorkloadCertificateSpec extends \Google\Model
-{
-    /**
-     * Disable workload certificate feature.
-     */
-    public const CERTIFICATE_MANAGEMENT_CERTIFICATE_MANAGEMENT_UNSPECIFIED = 'CERTIFICATE_MANAGEMENT_UNSPECIFIED';
-    /**
-     * Disable workload certificate feature.
-     */
-    public const CERTIFICATE_MANAGEMENT_DISABLED = 'DISABLED';
-    /**
-     * Enable workload certificate feature.
-     */
-    public const CERTIFICATE_MANAGEMENT_ENABLED = 'ENABLED';
-    /**
-     * CertificateManagement specifies workload certificate management.
-     *
-     * @var string
-     */
-    public $certificateManagement;
-    /**
-     * CertificateManagement specifies workload certificate management.
-     *
-     * Accepted values: CERTIFICATE_MANAGEMENT_UNSPECIFIED, DISABLED, ENABLED
-     *
-     * @param self::CERTIFICATE_MANAGEMENT_* $certificateManagement
-     */
-    public function setCertificateManagement($certificateManagement)
+namespace Google\Service\GKEHub {
+    class WorkloadCertificateSpec extends \Google\Model
     {
+        /**
+         * Disable workload certificate feature.
+         */
+        public const CERTIFICATE_MANAGEMENT_CERTIFICATE_MANAGEMENT_UNSPECIFIED = 'CERTIFICATE_MANAGEMENT_UNSPECIFIED';
+        /**
+         * Disable workload certificate feature.
+         */
+        public const CERTIFICATE_MANAGEMENT_DISABLED = 'DISABLED';
+        /**
+         * Enable workload certificate feature.
+         */
+        public const CERTIFICATE_MANAGEMENT_ENABLED = 'ENABLED';
+        /**
+         * CertificateManagement specifies workload certificate management.
+         *
+         * @var string
+         */
+        public $certificateManagement;
+        /**
+         * CertificateManagement specifies workload certificate management.
+         *
+         * Accepted values: CERTIFICATE_MANAGEMENT_UNSPECIFIED, DISABLED, ENABLED
+         *
+         * @param self::CERTIFICATE_MANAGEMENT_* $certificateManagement
+         */
+        public function setCertificateManagement($certificateManagement)
+        {
+        }
+        /**
+         * @return self::CERTIFICATE_MANAGEMENT_*
+         */
+        public function getCertificateManagement()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::CERTIFICATE_MANAGEMENT_*
+     * Runtime class alias of \Google\Service\GKEHub\WorkloadCertificateSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCertificateManagement()
+    class Google_Service_GKEHub_WorkloadCertificateSpec extends \Google\Service\GKEHub\WorkloadCertificateSpec
     {
     }
 }

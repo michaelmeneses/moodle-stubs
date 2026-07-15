@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Iam;
-
-class WorkloadIdentityPool extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var bool
-     */
-    public $disabled;
-    /**
-     * @var string
-     */
-    public $displayName;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $state;
-    /**
-     * @param string
-     */
-    public function setDescription($description)
+namespace Google\Service\Iam {
+    class WorkloadIdentityPool extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $description;
+        /**
+         * @var bool
+         */
+        public $disabled;
+        /**
+         * @var string
+         */
+        public $displayName;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $state;
+        /**
+         * @param string
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setDisabled($disabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisabled()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Iam\WorkloadIdentityPool registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setDisabled($disabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDisabled()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getState()
+    class Google_Service_Iam_WorkloadIdentityPool extends \Google\Service\Iam\WorkloadIdentityPool
     {
     }
 }

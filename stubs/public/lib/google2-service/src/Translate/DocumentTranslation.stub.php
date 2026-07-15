@@ -21,79 +21,88 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Translate;
-
-class DocumentTranslation extends \Google\Collection
-{
-    protected $collection_key = 'byteStreamOutputs';
-    /**
-     * The array of translated documents. It is expected to be size 1 for now. We
-     * may produce multiple translated documents in the future for other type of
-     * file formats.
-     *
-     * @var string[]
-     */
-    public $byteStreamOutputs;
-    /**
-     * The detected language for the input document. If the user did not provide
-     * the source language for the input document, this field will have the
-     * language code automatically detected. If the source language was passed,
-     * auto-detection of the language does not occur and this field is empty.
-     *
-     * @var string
-     */
-    public $detectedLanguageCode;
-    /**
-     * The translated document's mime type.
-     *
-     * @var string
-     */
-    public $mimeType;
-    /**
-     * The array of translated documents. It is expected to be size 1 for now. We
-     * may produce multiple translated documents in the future for other type of
-     * file formats.
-     *
-     * @param string[] $byteStreamOutputs
-     */
-    public function setByteStreamOutputs($byteStreamOutputs)
+namespace Google\Service\Translate {
+    class DocumentTranslation extends \Google\Collection
     {
+        protected $collection_key = 'byteStreamOutputs';
+        /**
+         * The array of translated documents. It is expected to be size 1 for now. We
+         * may produce multiple translated documents in the future for other type of
+         * file formats.
+         *
+         * @var string[]
+         */
+        public $byteStreamOutputs;
+        /**
+         * The detected language for the input document. If the user did not provide
+         * the source language for the input document, this field will have the
+         * language code automatically detected. If the source language was passed,
+         * auto-detection of the language does not occur and this field is empty.
+         *
+         * @var string
+         */
+        public $detectedLanguageCode;
+        /**
+         * The translated document's mime type.
+         *
+         * @var string
+         */
+        public $mimeType;
+        /**
+         * The array of translated documents. It is expected to be size 1 for now. We
+         * may produce multiple translated documents in the future for other type of
+         * file formats.
+         *
+         * @param string[] $byteStreamOutputs
+         */
+        public function setByteStreamOutputs($byteStreamOutputs)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getByteStreamOutputs()
+        {
+        }
+        /**
+         * The detected language for the input document. If the user did not provide
+         * the source language for the input document, this field will have the
+         * language code automatically detected. If the source language was passed,
+         * auto-detection of the language does not occur and this field is empty.
+         *
+         * @param string $detectedLanguageCode
+         */
+        public function setDetectedLanguageCode($detectedLanguageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDetectedLanguageCode()
+        {
+        }
+        /**
+         * The translated document's mime type.
+         *
+         * @param string $mimeType
+         */
+        public function setMimeType($mimeType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMimeType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Translate\DocumentTranslation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getByteStreamOutputs()
-    {
-    }
-    /**
-     * The detected language for the input document. If the user did not provide
-     * the source language for the input document, this field will have the
-     * language code automatically detected. If the source language was passed,
-     * auto-detection of the language does not occur and this field is empty.
-     *
-     * @param string $detectedLanguageCode
-     */
-    public function setDetectedLanguageCode($detectedLanguageCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDetectedLanguageCode()
-    {
-    }
-    /**
-     * The translated document's mime type.
-     *
-     * @param string $mimeType
-     */
-    public function setMimeType($mimeType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMimeType()
+    class Google_Service_Translate_DocumentTranslation extends \Google\Service\Translate\DocumentTranslation
     {
     }
 }

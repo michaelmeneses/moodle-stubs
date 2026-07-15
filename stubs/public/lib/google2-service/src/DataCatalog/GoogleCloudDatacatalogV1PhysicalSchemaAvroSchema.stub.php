@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1PhysicalSchemaAvroSchema extends \Google\Model
-{
-    /**
-     * JSON source of the Avro schema.
-     *
-     * @var string
-     */
-    public $text;
-    /**
-     * JSON source of the Avro schema.
-     *
-     * @param string $text
-     */
-    public function setText($text)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1PhysicalSchemaAvroSchema extends \Google\Model
     {
+        /**
+         * JSON source of the Avro schema.
+         *
+         * @var string
+         */
+        public $text;
+        /**
+         * JSON source of the Avro schema.
+         *
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1PhysicalSchemaAvroSchema registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getText()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1PhysicalSchemaAvroSchema extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1PhysicalSchemaAvroSchema
     {
     }
 }

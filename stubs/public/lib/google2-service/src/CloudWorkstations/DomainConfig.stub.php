@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudWorkstations;
-
-class DomainConfig extends \Google\Model
-{
-    /**
-     * Immutable. Domain used by Workstations for HTTP ingress.
-     *
-     * @var string
-     */
-    public $domain;
-    /**
-     * Immutable. Domain used by Workstations for HTTP ingress.
-     *
-     * @param string $domain
-     */
-    public function setDomain($domain)
+namespace Google\Service\CloudWorkstations {
+    class DomainConfig extends \Google\Model
     {
+        /**
+         * Immutable. Domain used by Workstations for HTTP ingress.
+         *
+         * @var string
+         */
+        public $domain;
+        /**
+         * Immutable. Domain used by Workstations for HTTP ingress.
+         *
+         * @param string $domain
+         */
+        public function setDomain($domain)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDomain()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudWorkstations\DomainConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDomain()
+    class Google_Service_CloudWorkstations_DomainConfig extends \Google\Service\CloudWorkstations\DomainConfig
     {
     }
 }

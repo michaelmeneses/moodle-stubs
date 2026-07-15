@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class PartitionResponse extends \Google\Collection
-{
-    protected $collection_key = 'partitions';
-    protected $partitionsType = Partition::class;
-    protected $partitionsDataType = 'array';
-    protected $transactionType = Transaction::class;
-    protected $transactionDataType = '';
-    /**
-     * Partitions created by this request.
-     *
-     * @param Partition[] $partitions
-     */
-    public function setPartitions($partitions)
+namespace Google\Service\Spanner {
+    class PartitionResponse extends \Google\Collection
     {
+        protected $collection_key = 'partitions';
+        protected $partitionsType = Partition::class;
+        protected $partitionsDataType = 'array';
+        protected $transactionType = Transaction::class;
+        protected $transactionDataType = '';
+        /**
+         * Partitions created by this request.
+         *
+         * @param Partition[] $partitions
+         */
+        public function setPartitions($partitions)
+        {
+        }
+        /**
+         * @return Partition[]
+         */
+        public function getPartitions()
+        {
+        }
+        /**
+         * Transaction created by this request.
+         *
+         * @param Transaction $transaction
+         */
+        public function setTransaction(Transaction $transaction)
+        {
+        }
+        /**
+         * @return Transaction
+         */
+        public function getTransaction()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Partition[]
+     * Runtime class alias of \Google\Service\Spanner\PartitionResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPartitions()
-    {
-    }
-    /**
-     * Transaction created by this request.
-     *
-     * @param Transaction $transaction
-     */
-    public function setTransaction(Transaction $transaction)
-    {
-    }
-    /**
-     * @return Transaction
-     */
-    public function getTransaction()
+    class Google_Service_Spanner_PartitionResponse extends \Google\Service\Spanner\PartitionResponse
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkManagement;
-
-class ServerlessNegInfo extends \Google\Model
-{
-    /**
-     * URI of the serverless network endpoint group.
-     *
-     * @var string
-     */
-    public $negUri;
-    /**
-     * URI of the serverless network endpoint group.
-     *
-     * @param string $negUri
-     */
-    public function setNegUri($negUri)
+namespace Google\Service\NetworkManagement {
+    class ServerlessNegInfo extends \Google\Model
     {
+        /**
+         * URI of the serverless network endpoint group.
+         *
+         * @var string
+         */
+        public $negUri;
+        /**
+         * URI of the serverless network endpoint group.
+         *
+         * @param string $negUri
+         */
+        public function setNegUri($negUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNegUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetworkManagement\ServerlessNegInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNegUri()
+    class Google_Service_NetworkManagement_ServerlessNegInfo extends \Google\Service\NetworkManagement\ServerlessNegInfo
     {
     }
 }

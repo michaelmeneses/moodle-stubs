@@ -21,165 +21,174 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Recommender;
-
-class GoogleCloudRecommenderV1RecommenderConfig extends \Google\Model
-{
-    /**
-     * Allows clients to store small amounts of arbitrary data. Annotations must
-     * follow the Kubernetes syntax. The total size of all keys and values
-     * combined is limited to 256k. Key can have 2 segments: prefix (optional) and
-     * name (required), separated by a slash (/). Prefix must be a DNS subdomain.
-     * Name must be 63 characters or less, begin and end with alphanumerics, with
-     * dashes (-), underscores (_), dots (.), and alphanumerics between.
-     *
-     * @var string[]
-     */
-    public $annotations;
-    /**
-     * A user-settable field to provide a human-readable name to be used in user
-     * interfaces.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Fingerprint of the RecommenderConfig. Provides optimistic locking when
-     * updating.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * Identifier. Name of recommender config. Eg, projects/[PROJECT_NUMBER]/locat
-     * ions/[LOCATION]/recommenders/[RECOMMENDER_ID]/config
-     *
-     * @var string
-     */
-    public $name;
-    protected $recommenderGenerationConfigType = GoogleCloudRecommenderV1RecommenderGenerationConfig::class;
-    protected $recommenderGenerationConfigDataType = '';
-    /**
-     * Output only. Immutable. The revision ID of the config. A new revision is
-     * committed whenever the config is changed in any way. The format is an
-     * 8-character hexadecimal string.
-     *
-     * @var string
-     */
-    public $revisionId;
-    /**
-     * Last time when the config was updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Allows clients to store small amounts of arbitrary data. Annotations must
-     * follow the Kubernetes syntax. The total size of all keys and values
-     * combined is limited to 256k. Key can have 2 segments: prefix (optional) and
-     * name (required), separated by a slash (/). Prefix must be a DNS subdomain.
-     * Name must be 63 characters or less, begin and end with alphanumerics, with
-     * dashes (-), underscores (_), dots (.), and alphanumerics between.
-     *
-     * @param string[] $annotations
-     */
-    public function setAnnotations($annotations)
+namespace Google\Service\Recommender {
+    class GoogleCloudRecommenderV1RecommenderConfig extends \Google\Model
     {
+        /**
+         * Allows clients to store small amounts of arbitrary data. Annotations must
+         * follow the Kubernetes syntax. The total size of all keys and values
+         * combined is limited to 256k. Key can have 2 segments: prefix (optional) and
+         * name (required), separated by a slash (/). Prefix must be a DNS subdomain.
+         * Name must be 63 characters or less, begin and end with alphanumerics, with
+         * dashes (-), underscores (_), dots (.), and alphanumerics between.
+         *
+         * @var string[]
+         */
+        public $annotations;
+        /**
+         * A user-settable field to provide a human-readable name to be used in user
+         * interfaces.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Fingerprint of the RecommenderConfig. Provides optimistic locking when
+         * updating.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * Identifier. Name of recommender config. Eg, projects/[PROJECT_NUMBER]/locat
+         * ions/[LOCATION]/recommenders/[RECOMMENDER_ID]/config
+         *
+         * @var string
+         */
+        public $name;
+        protected $recommenderGenerationConfigType = GoogleCloudRecommenderV1RecommenderGenerationConfig::class;
+        protected $recommenderGenerationConfigDataType = '';
+        /**
+         * Output only. Immutable. The revision ID of the config. A new revision is
+         * committed whenever the config is changed in any way. The format is an
+         * 8-character hexadecimal string.
+         *
+         * @var string
+         */
+        public $revisionId;
+        /**
+         * Last time when the config was updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Allows clients to store small amounts of arbitrary data. Annotations must
+         * follow the Kubernetes syntax. The total size of all keys and values
+         * combined is limited to 256k. Key can have 2 segments: prefix (optional) and
+         * name (required), separated by a slash (/). Prefix must be a DNS subdomain.
+         * Name must be 63 characters or less, begin and end with alphanumerics, with
+         * dashes (-), underscores (_), dots (.), and alphanumerics between.
+         *
+         * @param string[] $annotations
+         */
+        public function setAnnotations($annotations)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAnnotations()
+        {
+        }
+        /**
+         * A user-settable field to provide a human-readable name to be used in user
+         * interfaces.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Fingerprint of the RecommenderConfig. Provides optimistic locking when
+         * updating.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * Identifier. Name of recommender config. Eg, projects/[PROJECT_NUMBER]/locat
+         * ions/[LOCATION]/recommenders/[RECOMMENDER_ID]/config
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * RecommenderGenerationConfig which configures the Generation of
+         * recommendations for this recommender.
+         *
+         * @param GoogleCloudRecommenderV1RecommenderGenerationConfig $recommenderGenerationConfig
+         */
+        public function setRecommenderGenerationConfig(GoogleCloudRecommenderV1RecommenderGenerationConfig $recommenderGenerationConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudRecommenderV1RecommenderGenerationConfig
+         */
+        public function getRecommenderGenerationConfig()
+        {
+        }
+        /**
+         * Output only. Immutable. The revision ID of the config. A new revision is
+         * committed whenever the config is changed in any way. The format is an
+         * 8-character hexadecimal string.
+         *
+         * @param string $revisionId
+         */
+        public function setRevisionId($revisionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRevisionId()
+        {
+        }
+        /**
+         * Last time when the config was updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Recommender\GoogleCloudRecommenderV1RecommenderConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotations()
-    {
-    }
-    /**
-     * A user-settable field to provide a human-readable name to be used in user
-     * interfaces.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Fingerprint of the RecommenderConfig. Provides optimistic locking when
-     * updating.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * Identifier. Name of recommender config. Eg, projects/[PROJECT_NUMBER]/locat
-     * ions/[LOCATION]/recommenders/[RECOMMENDER_ID]/config
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * RecommenderGenerationConfig which configures the Generation of
-     * recommendations for this recommender.
-     *
-     * @param GoogleCloudRecommenderV1RecommenderGenerationConfig $recommenderGenerationConfig
-     */
-    public function setRecommenderGenerationConfig(GoogleCloudRecommenderV1RecommenderGenerationConfig $recommenderGenerationConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudRecommenderV1RecommenderGenerationConfig
-     */
-    public function getRecommenderGenerationConfig()
-    {
-    }
-    /**
-     * Output only. Immutable. The revision ID of the config. A new revision is
-     * committed whenever the config is changed in any way. The format is an
-     * 8-character hexadecimal string.
-     *
-     * @param string $revisionId
-     */
-    public function setRevisionId($revisionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRevisionId()
-    {
-    }
-    /**
-     * Last time when the config was updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_Recommender_GoogleCloudRecommenderV1RecommenderConfig extends \Google\Service\Recommender\GoogleCloudRecommenderV1RecommenderConfig
     {
     }
 }

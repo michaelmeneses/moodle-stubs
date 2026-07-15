@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class AlgorithmRulesRuleCondition extends \Google\Collection
-{
-    protected $collection_key = 'signalComparisons';
-    protected $returnValueType = AlgorithmRulesSignalValue::class;
-    protected $returnValueDataType = '';
-    protected $signalComparisonsType = AlgorithmRulesSignalComparison::class;
-    protected $signalComparisonsDataType = 'array';
-    /**
-     * The value returned if the `signalComparisons` condition evaluates to
-     * `TRUE`.
-     *
-     * @param AlgorithmRulesSignalValue $returnValue
-     */
-    public function setReturnValue(AlgorithmRulesSignalValue $returnValue)
+namespace Google\Service\DisplayVideo {
+    class AlgorithmRulesRuleCondition extends \Google\Collection
     {
+        protected $collection_key = 'signalComparisons';
+        protected $returnValueType = AlgorithmRulesSignalValue::class;
+        protected $returnValueDataType = '';
+        protected $signalComparisonsType = AlgorithmRulesSignalComparison::class;
+        protected $signalComparisonsDataType = 'array';
+        /**
+         * The value returned if the `signalComparisons` condition evaluates to
+         * `TRUE`.
+         *
+         * @param AlgorithmRulesSignalValue $returnValue
+         */
+        public function setReturnValue(AlgorithmRulesSignalValue $returnValue)
+        {
+        }
+        /**
+         * @return AlgorithmRulesSignalValue
+         */
+        public function getReturnValue()
+        {
+        }
+        /**
+         * List of comparisons that build `if` statement condition. The comparisons
+         * are combined into a single condition with `AND` logical operators.
+         *
+         * @param AlgorithmRulesSignalComparison[] $signalComparisons
+         */
+        public function setSignalComparisons($signalComparisons)
+        {
+        }
+        /**
+         * @return AlgorithmRulesSignalComparison[]
+         */
+        public function getSignalComparisons()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AlgorithmRulesSignalValue
+     * Runtime class alias of \Google\Service\DisplayVideo\AlgorithmRulesRuleCondition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReturnValue()
-    {
-    }
-    /**
-     * List of comparisons that build `if` statement condition. The comparisons
-     * are combined into a single condition with `AND` logical operators.
-     *
-     * @param AlgorithmRulesSignalComparison[] $signalComparisons
-     */
-    public function setSignalComparisons($signalComparisons)
-    {
-    }
-    /**
-     * @return AlgorithmRulesSignalComparison[]
-     */
-    public function getSignalComparisons()
+    class Google_Service_DisplayVideo_AlgorithmRulesRuleCondition extends \Google\Service\DisplayVideo\AlgorithmRulesRuleCondition
     {
     }
 }

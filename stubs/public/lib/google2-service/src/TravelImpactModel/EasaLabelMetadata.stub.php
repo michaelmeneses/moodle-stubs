@@ -21,77 +21,86 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TravelImpactModel;
-
-class EasaLabelMetadata extends \Google\Model
-{
-    protected $labelExpiryDateType = Date::class;
-    protected $labelExpiryDateDataType = '';
-    protected $labelIssueDateType = Date::class;
-    protected $labelIssueDateDataType = '';
-    /**
-     * Version of the label.
-     *
-     * @var string
-     */
-    public $labelVersion;
-    /**
-     * Sustainable Aviation Fuel (SAF) emissions discount percentage applied to
-     * the label. It is a percentage as a decimal. The values are in the interval
-     * [0,1]. For example, 0.0021 means 0.21%. This discount and reduction in
-     * emissions are reported by the EASA label but they are not included in the
-     * CO2e estimates distributed by this API.
-     *
-     * @var 
-     */
-    public $safDiscountPercentage;
-    /**
-     * The date when the label expires. The label can be displayed until the end
-     * of this date.
-     *
-     * @param Date $labelExpiryDate
-     */
-    public function setLabelExpiryDate(Date $labelExpiryDate)
+namespace Google\Service\TravelImpactModel {
+    class EasaLabelMetadata extends \Google\Model
     {
+        protected $labelExpiryDateType = Date::class;
+        protected $labelExpiryDateDataType = '';
+        protected $labelIssueDateType = Date::class;
+        protected $labelIssueDateDataType = '';
+        /**
+         * Version of the label.
+         *
+         * @var string
+         */
+        public $labelVersion;
+        /**
+         * Sustainable Aviation Fuel (SAF) emissions discount percentage applied to
+         * the label. It is a percentage as a decimal. The values are in the interval
+         * [0,1]. For example, 0.0021 means 0.21%. This discount and reduction in
+         * emissions are reported by the EASA label but they are not included in the
+         * CO2e estimates distributed by this API.
+         *
+         * @var 
+         */
+        public $safDiscountPercentage;
+        /**
+         * The date when the label expires. The label can be displayed until the end
+         * of this date.
+         *
+         * @param Date $labelExpiryDate
+         */
+        public function setLabelExpiryDate(Date $labelExpiryDate)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getLabelExpiryDate()
+        {
+        }
+        /**
+         * The date when the label was issued.
+         *
+         * @param Date $labelIssueDate
+         */
+        public function setLabelIssueDate(Date $labelIssueDate)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getLabelIssueDate()
+        {
+        }
+        /**
+         * Version of the label.
+         *
+         * @param string $labelVersion
+         */
+        public function setLabelVersion($labelVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLabelVersion()
+        {
+        }
+        public function setSafDiscountPercentage($safDiscountPercentage)
+        {
+        }
+        public function getSafDiscountPercentage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Date
+     * Runtime class alias of \Google\Service\TravelImpactModel\EasaLabelMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLabelExpiryDate()
-    {
-    }
-    /**
-     * The date when the label was issued.
-     *
-     * @param Date $labelIssueDate
-     */
-    public function setLabelIssueDate(Date $labelIssueDate)
-    {
-    }
-    /**
-     * @return Date
-     */
-    public function getLabelIssueDate()
-    {
-    }
-    /**
-     * Version of the label.
-     *
-     * @param string $labelVersion
-     */
-    public function setLabelVersion($labelVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLabelVersion()
-    {
-    }
-    public function setSafDiscountPercentage($safDiscountPercentage)
-    {
-    }
-    public function getSafDiscountPercentage()
+    class Google_Service_TravelImpactModel_EasaLabelMetadata extends \Google\Service\TravelImpactModel\EasaLabelMetadata
     {
     }
 }

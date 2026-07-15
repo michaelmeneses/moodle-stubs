@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class OrgPolicy extends \Google\Model
-{
-    /**
-     * The resource name of the org policy. Example:
-     * "organizations/{organization_id}/policies/{constraint_name}"
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The resource name of the org policy. Example:
-     * "organizations/{organization_id}/policies/{constraint_name}"
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\SecurityCommandCenter {
+    class OrgPolicy extends \Google\Model
     {
+        /**
+         * The resource name of the org policy. Example:
+         * "organizations/{organization_id}/policies/{constraint_name}"
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The resource name of the org policy. Example:
+         * "organizations/{organization_id}/policies/{constraint_name}"
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\OrgPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
+    class Google_Service_SecurityCommandCenter_OrgPolicy extends \Google\Service\SecurityCommandCenter\OrgPolicy
     {
     }
 }

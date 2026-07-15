@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class AnalyzeIamPolicyLongrunningMetadata extends \Google\Model
-{
-    /**
-     * Output only. The time the operation was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Output only. The time the operation was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\CloudAsset {
+    class AnalyzeIamPolicyLongrunningMetadata extends \Google\Model
     {
+        /**
+         * Output only. The time the operation was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Output only. The time the operation was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudAsset\AnalyzeIamPolicyLongrunningMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
+    class Google_Service_CloudAsset_AnalyzeIamPolicyLongrunningMetadata extends \Google\Service\CloudAsset\AnalyzeIamPolicyLongrunningMetadata
     {
     }
 }

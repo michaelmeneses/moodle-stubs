@@ -21,36 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books\Resource;
-
-/**
- * The "volumes" collection of methods.
- * Typical usage is:
- *  <code>
- *   $booksService = new Google\Service\Books(...);
- *   $volumes = $booksService->bookshelves_volumes;
- *  </code>
- */
-class BookshelvesVolumes extends \Google\Service\Resource
-{
+namespace Google\Service\Books\Resource {
+    use Google\Service\Books\Volumes as VolumesModel;
     /**
-     * Retrieves volumes in a specific bookshelf for the specified user.
-     * (volumes.listBookshelvesVolumes)
-     *
-     * @param string $userId ID of user for whom to retrieve bookshelf volumes.
-     * @param string $shelf ID of bookshelf to retrieve volumes.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string maxResults Maximum number of results to return
-     * @opt_param bool showPreorders Set to true to show pre-ordered books. Defaults
-     * to false.
-     * @opt_param string source String to identify the originator of this request.
-     * @opt_param string startIndex Index of the first element to return (starts at
-     * 0)
-     * @return VolumesModel
-     * @throws \Google\Service\Exception
+     * The "volumes" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $booksService = new Google\Service\Books(...);
+     *   $volumes = $booksService->bookshelves_volumes;
+     *  </code>
      */
-    public function listBookshelvesVolumes($userId, $shelf, $optParams = [])
+    class BookshelvesVolumes extends \Google\Service\Resource
+    {
+        /**
+         * Retrieves volumes in a specific bookshelf for the specified user.
+         * (volumes.listBookshelvesVolumes)
+         *
+         * @param string $userId ID of user for whom to retrieve bookshelf volumes.
+         * @param string $shelf ID of bookshelf to retrieve volumes.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string maxResults Maximum number of results to return
+         * @opt_param bool showPreorders Set to true to show pre-ordered books. Defaults
+         * to false.
+         * @opt_param string source String to identify the originator of this request.
+         * @opt_param string startIndex Index of the first element to return (starts at
+         * 0)
+         * @return VolumesModel
+         * @throws \Google\Service\Exception
+         */
+        public function listBookshelvesVolumes($userId, $shelf, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Books\Resource\BookshelvesVolumes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Books_Resource_BookshelvesVolumes extends \Google\Service\Books\Resource\BookshelvesVolumes
     {
     }
 }

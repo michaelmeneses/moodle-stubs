@@ -21,61 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManagedKafka\Resource;
-
-/**
- * The "mode" collection of methods.
- * Typical usage is:
- *  <code>
- *   $managedkafkaService = new Google\Service\ManagedKafka(...);
- *   $mode = $managedkafkaService->projects_locations_schemaRegistries_mode;
- *  </code>
- */
-class ProjectsLocationsSchemaRegistriesMode extends \Google\Service\Resource
-{
+namespace Google\Service\ManagedKafka\Resource {
+    use Google\Service\ManagedKafka\SchemaMode;
+    use Google\Service\ManagedKafka\UpdateSchemaModeRequest;
     /**
-     * Delete schema mode for a subject. (mode.delete)
-     *
-     * @param string $name Required. The resource name of subject to delete the mode
-     * for. The format is * projects/{project}/locations/{location}/schemaRegistries
-     * /{schema_registry}/mode/{subject} * projects/{project}/locations/{location}/s
-     * chemaRegistries/{schema_registry}/contexts/{context}/mode/{subject}
-     * @param array $optParams Optional parameters.
-     * @return SchemaMode
-     * @throws \Google\Service\Exception
+     * The "mode" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $managedkafkaService = new Google\Service\ManagedKafka(...);
+     *   $mode = $managedkafkaService->projects_locations_schemaRegistries_mode;
+     *  </code>
      */
-    public function delete($name, $optParams = [])
+    class ProjectsLocationsSchemaRegistriesMode extends \Google\Service\Resource
     {
+        /**
+         * Delete schema mode for a subject. (mode.delete)
+         *
+         * @param string $name Required. The resource name of subject to delete the mode
+         * for. The format is * projects/{project}/locations/{location}/schemaRegistries
+         * /{schema_registry}/mode/{subject} * projects/{project}/locations/{location}/s
+         * chemaRegistries/{schema_registry}/contexts/{context}/mode/{subject}
+         * @param array $optParams Optional parameters.
+         * @return SchemaMode
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Get mode at global level or for a subject. (mode.get)
+         *
+         * @param string $name Required. The resource name of the mode. The format is *
+         * projects/{project}/locations/{location}/schemaRegistries/{schema_registry}/mo
+         * de/{subject}: mode for a schema registry, or * projects/{project}/locations/{
+         * location}/schemaRegistries/{schema_registry}/contexts/{context}/mode/{subject
+         * }: mode for a specific subject in a specific context
+         * @param array $optParams Optional parameters.
+         * @return SchemaMode
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Update mode at global level or for a subject. (mode.update)
+         *
+         * @param string $name Required. The resource name of the mode. The format is *
+         * projects/{project}/locations/{location}/schemaRegistries/{schema_registry}/mo
+         * de/{subject}: mode for a schema registry, or * projects/{project}/locations/{
+         * location}/schemaRegistries/{schema_registry}/contexts/{context}/mode/{subject
+         * }: mode for a specific subject in a specific context
+         * @param UpdateSchemaModeRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return SchemaMode
+         * @throws \Google\Service\Exception
+         */
+        public function update($name, UpdateSchemaModeRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Get mode at global level or for a subject. (mode.get)
-     *
-     * @param string $name Required. The resource name of the mode. The format is *
-     * projects/{project}/locations/{location}/schemaRegistries/{schema_registry}/mo
-     * de/{subject}: mode for a schema registry, or * projects/{project}/locations/{
-     * location}/schemaRegistries/{schema_registry}/contexts/{context}/mode/{subject
-     * }: mode for a specific subject in a specific context
-     * @param array $optParams Optional parameters.
-     * @return SchemaMode
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\ManagedKafka\Resource\ProjectsLocationsSchemaRegistriesMode registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Update mode at global level or for a subject. (mode.update)
-     *
-     * @param string $name Required. The resource name of the mode. The format is *
-     * projects/{project}/locations/{location}/schemaRegistries/{schema_registry}/mo
-     * de/{subject}: mode for a schema registry, or * projects/{project}/locations/{
-     * location}/schemaRegistries/{schema_registry}/contexts/{context}/mode/{subject
-     * }: mode for a specific subject in a specific context
-     * @param UpdateSchemaModeRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return SchemaMode
-     * @throws \Google\Service\Exception
-     */
-    public function update($name, UpdateSchemaModeRequest $postBody, $optParams = [])
+    class Google_Service_ManagedKafka_Resource_ProjectsLocationsSchemaRegistriesMode extends \Google\Service\ManagedKafka\Resource\ProjectsLocationsSchemaRegistriesMode
     {
     }
 }

@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class ReportSummaryMachineSeriesAllocation extends \Google\Model
-{
-    /**
-     * Count of assets allocated to this machine series.
-     *
-     * @var string
-     */
-    public $allocatedAssetCount;
-    protected $machineSeriesType = MachineSeries::class;
-    protected $machineSeriesDataType = '';
-    /**
-     * Count of assets allocated to this machine series.
-     *
-     * @param string $allocatedAssetCount
-     */
-    public function setAllocatedAssetCount($allocatedAssetCount)
+namespace Google\Service\MigrationCenterAPI {
+    class ReportSummaryMachineSeriesAllocation extends \Google\Model
     {
+        /**
+         * Count of assets allocated to this machine series.
+         *
+         * @var string
+         */
+        public $allocatedAssetCount;
+        protected $machineSeriesType = MachineSeries::class;
+        protected $machineSeriesDataType = '';
+        /**
+         * Count of assets allocated to this machine series.
+         *
+         * @param string $allocatedAssetCount
+         */
+        public function setAllocatedAssetCount($allocatedAssetCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAllocatedAssetCount()
+        {
+        }
+        /**
+         * The Machine Series (e.g. "E2", "N2")
+         *
+         * @param MachineSeries $machineSeries
+         */
+        public function setMachineSeries(MachineSeries $machineSeries)
+        {
+        }
+        /**
+         * @return MachineSeries
+         */
+        public function getMachineSeries()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\ReportSummaryMachineSeriesAllocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllocatedAssetCount()
-    {
-    }
-    /**
-     * The Machine Series (e.g. "E2", "N2")
-     *
-     * @param MachineSeries $machineSeries
-     */
-    public function setMachineSeries(MachineSeries $machineSeries)
-    {
-    }
-    /**
-     * @return MachineSeries
-     */
-    public function getMachineSeries()
+    class Google_Service_MigrationCenterAPI_ReportSummaryMachineSeriesAllocation extends \Google\Service\MigrationCenterAPI\ReportSummaryMachineSeriesAllocation
     {
     }
 }

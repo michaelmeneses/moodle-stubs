@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChecksService;
-
-class GoogleChecksReportV1alphaCheckPrivacyPolicyTextEvidence extends \Google\Model
-{
-    protected $policyFragmentType = GoogleChecksReportV1alphaPolicyFragment::class;
-    protected $policyFragmentDataType = '';
-    /**
-     * The privacy policy fragment that was used during the check.
-     *
-     * @param GoogleChecksReportV1alphaPolicyFragment $policyFragment
-     */
-    public function setPolicyFragment(GoogleChecksReportV1alphaPolicyFragment $policyFragment)
+namespace Google\Service\ChecksService {
+    class GoogleChecksReportV1alphaCheckPrivacyPolicyTextEvidence extends \Google\Model
     {
+        protected $policyFragmentType = GoogleChecksReportV1alphaPolicyFragment::class;
+        protected $policyFragmentDataType = '';
+        /**
+         * The privacy policy fragment that was used during the check.
+         *
+         * @param GoogleChecksReportV1alphaPolicyFragment $policyFragment
+         */
+        public function setPolicyFragment(GoogleChecksReportV1alphaPolicyFragment $policyFragment)
+        {
+        }
+        /**
+         * @return GoogleChecksReportV1alphaPolicyFragment
+         */
+        public function getPolicyFragment()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleChecksReportV1alphaPolicyFragment
+     * Runtime class alias of \Google\Service\ChecksService\GoogleChecksReportV1alphaCheckPrivacyPolicyTextEvidence registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPolicyFragment()
+    class Google_Service_ChecksService_GoogleChecksReportV1alphaCheckPrivacyPolicyTextEvidence extends \Google\Service\ChecksService\GoogleChecksReportV1alphaCheckPrivacyPolicyTextEvidence
     {
     }
 }

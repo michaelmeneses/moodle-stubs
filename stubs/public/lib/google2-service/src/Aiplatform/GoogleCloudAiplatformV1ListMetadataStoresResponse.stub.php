@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ListMetadataStoresResponse extends \Google\Collection
-{
-    protected $collection_key = 'metadataStores';
-    protected $metadataStoresType = GoogleCloudAiplatformV1MetadataStore::class;
-    protected $metadataStoresDataType = 'array';
-    /**
-     * A token, which can be sent as ListMetadataStoresRequest.page_token to
-     * retrieve the next page. If this field is not populated, there are no
-     * subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The MetadataStores found for the Location.
-     *
-     * @param GoogleCloudAiplatformV1MetadataStore[] $metadataStores
-     */
-    public function setMetadataStores($metadataStores)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ListMetadataStoresResponse extends \Google\Collection
     {
+        protected $collection_key = 'metadataStores';
+        protected $metadataStoresType = GoogleCloudAiplatformV1MetadataStore::class;
+        protected $metadataStoresDataType = 'array';
+        /**
+         * A token, which can be sent as ListMetadataStoresRequest.page_token to
+         * retrieve the next page. If this field is not populated, there are no
+         * subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The MetadataStores found for the Location.
+         *
+         * @param GoogleCloudAiplatformV1MetadataStore[] $metadataStores
+         */
+        public function setMetadataStores($metadataStores)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1MetadataStore[]
+         */
+        public function getMetadataStores()
+        {
+        }
+        /**
+         * A token, which can be sent as ListMetadataStoresRequest.page_token to
+         * retrieve the next page. If this field is not populated, there are no
+         * subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1MetadataStore[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListMetadataStoresResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetadataStores()
-    {
-    }
-    /**
-     * A token, which can be sent as ListMetadataStoresRequest.page_token to
-     * retrieve the next page. If this field is not populated, there are no
-     * subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ListMetadataStoresResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListMetadataStoresResponse
     {
     }
 }

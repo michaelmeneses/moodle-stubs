@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class CheckConsistencyRequest extends \Google\Model
-{
-    /**
-     * Required. The token created using GenerateConsistencyToken for the Table.
-     *
-     * @var string
-     */
-    public $consistencyToken;
-    protected $dataBoostReadLocalWritesType = DataBoostReadLocalWrites::class;
-    protected $dataBoostReadLocalWritesDataType = '';
-    protected $standardReadRemoteWritesType = StandardReadRemoteWrites::class;
-    protected $standardReadRemoteWritesDataType = '';
-    /**
-     * Required. The token created using GenerateConsistencyToken for the Table.
-     *
-     * @param string $consistencyToken
-     */
-    public function setConsistencyToken($consistencyToken)
+namespace Google\Service\BigtableAdmin {
+    class CheckConsistencyRequest extends \Google\Model
     {
+        /**
+         * Required. The token created using GenerateConsistencyToken for the Table.
+         *
+         * @var string
+         */
+        public $consistencyToken;
+        protected $dataBoostReadLocalWritesType = DataBoostReadLocalWrites::class;
+        protected $dataBoostReadLocalWritesDataType = '';
+        protected $standardReadRemoteWritesType = StandardReadRemoteWrites::class;
+        protected $standardReadRemoteWritesDataType = '';
+        /**
+         * Required. The token created using GenerateConsistencyToken for the Table.
+         *
+         * @param string $consistencyToken
+         */
+        public function setConsistencyToken($consistencyToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConsistencyToken()
+        {
+        }
+        /**
+         * Checks that reads using an app profile with `DataBoostIsolationReadOnly`
+         * can see all writes committed before the token was created, but only if the
+         * read and write target the same cluster.
+         *
+         * @param DataBoostReadLocalWrites $dataBoostReadLocalWrites
+         */
+        public function setDataBoostReadLocalWrites(DataBoostReadLocalWrites $dataBoostReadLocalWrites)
+        {
+        }
+        /**
+         * @return DataBoostReadLocalWrites
+         */
+        public function getDataBoostReadLocalWrites()
+        {
+        }
+        /**
+         * Checks that reads using an app profile with `StandardIsolation` can see all
+         * writes committed before the token was created, even if the read and write
+         * target different clusters.
+         *
+         * @param StandardReadRemoteWrites $standardReadRemoteWrites
+         */
+        public function setStandardReadRemoteWrites(StandardReadRemoteWrites $standardReadRemoteWrites)
+        {
+        }
+        /**
+         * @return StandardReadRemoteWrites
+         */
+        public function getStandardReadRemoteWrites()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BigtableAdmin\CheckConsistencyRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConsistencyToken()
-    {
-    }
-    /**
-     * Checks that reads using an app profile with `DataBoostIsolationReadOnly`
-     * can see all writes committed before the token was created, but only if the
-     * read and write target the same cluster.
-     *
-     * @param DataBoostReadLocalWrites $dataBoostReadLocalWrites
-     */
-    public function setDataBoostReadLocalWrites(DataBoostReadLocalWrites $dataBoostReadLocalWrites)
-    {
-    }
-    /**
-     * @return DataBoostReadLocalWrites
-     */
-    public function getDataBoostReadLocalWrites()
-    {
-    }
-    /**
-     * Checks that reads using an app profile with `StandardIsolation` can see all
-     * writes committed before the token was created, even if the read and write
-     * target different clusters.
-     *
-     * @param StandardReadRemoteWrites $standardReadRemoteWrites
-     */
-    public function setStandardReadRemoteWrites(StandardReadRemoteWrites $standardReadRemoteWrites)
-    {
-    }
-    /**
-     * @return StandardReadRemoteWrites
-     */
-    public function getStandardReadRemoteWrites()
+    class Google_Service_BigtableAdmin_CheckConsistencyRequest extends \Google\Service\BigtableAdmin\CheckConsistencyRequest
     {
     }
 }

@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class SchedulingOnInstanceStopAction extends \Google\Model
-{
-    /**
-     * If true, the contents of any attached Local SSD disks will be discarded
-     * else, the Local SSD data will be preserved when the instance is stopped at
-     * the end of the run duration/termination time.
-     *
-     * @var bool
-     */
-    public $discardLocalSsd;
-    /**
-     * If true, the contents of any attached Local SSD disks will be discarded
-     * else, the Local SSD data will be preserved when the instance is stopped at
-     * the end of the run duration/termination time.
-     *
-     * @param bool $discardLocalSsd
-     */
-    public function setDiscardLocalSsd($discardLocalSsd)
+namespace Google\Service\Compute {
+    class SchedulingOnInstanceStopAction extends \Google\Model
     {
+        /**
+         * If true, the contents of any attached Local SSD disks will be discarded
+         * else, the Local SSD data will be preserved when the instance is stopped at
+         * the end of the run duration/termination time.
+         *
+         * @var bool
+         */
+        public $discardLocalSsd;
+        /**
+         * If true, the contents of any attached Local SSD disks will be discarded
+         * else, the Local SSD data will be preserved when the instance is stopped at
+         * the end of the run duration/termination time.
+         *
+         * @param bool $discardLocalSsd
+         */
+        public function setDiscardLocalSsd($discardLocalSsd)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDiscardLocalSsd()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Compute\SchedulingOnInstanceStopAction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDiscardLocalSsd()
+    class Google_Service_Compute_SchedulingOnInstanceStopAction extends \Google\Service\Compute\SchedulingOnInstanceStopAction
     {
     }
 }

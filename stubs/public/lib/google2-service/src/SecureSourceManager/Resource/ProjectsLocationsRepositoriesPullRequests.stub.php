@@ -21,145 +21,161 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecureSourceManager\Resource;
-
-/**
- * The "pullRequests" collection of methods.
- * Typical usage is:
- *  <code>
- *   $securesourcemanagerService = new Google\Service\SecureSourceManager(...);
- *   $pullRequests = $securesourcemanagerService->projects_locations_repositories_pullRequests;
- *  </code>
- */
-class ProjectsLocationsRepositoriesPullRequests extends \Google\Service\Resource
-{
+namespace Google\Service\SecureSourceManager\Resource {
+    use Google\Service\SecureSourceManager\ClosePullRequestRequest;
+    use Google\Service\SecureSourceManager\ListPullRequestFileDiffsResponse;
+    use Google\Service\SecureSourceManager\ListPullRequestsResponse;
+    use Google\Service\SecureSourceManager\MergePullRequestRequest;
+    use Google\Service\SecureSourceManager\OpenPullRequestRequest;
+    use Google\Service\SecureSourceManager\Operation;
+    use Google\Service\SecureSourceManager\PullRequest;
     /**
-     * Closes a pull request without merging. (pullRequests.close)
-     *
-     * @param string $name Required. The pull request to close. Format: `projects/{p
-     * roject_number}/locations/{location_id}/repositories/{repository_id}/pullReque
-     * sts/{pull_request_id}`
-     * @param ClosePullRequestRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * The "pullRequests" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $securesourcemanagerService = new Google\Service\SecureSourceManager(...);
+     *   $pullRequests = $securesourcemanagerService->projects_locations_repositories_pullRequests;
+     *  </code>
      */
-    public function close($name, ClosePullRequestRequest $postBody, $optParams = [])
+    class ProjectsLocationsRepositoriesPullRequests extends \Google\Service\Resource
     {
+        /**
+         * Closes a pull request without merging. (pullRequests.close)
+         *
+         * @param string $name Required. The pull request to close. Format: `projects/{p
+         * roject_number}/locations/{location_id}/repositories/{repository_id}/pullReque
+         * sts/{pull_request_id}`
+         * @param ClosePullRequestRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function close($name, ClosePullRequestRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Creates a pull request. (pullRequests.create)
+         *
+         * @param string $parent Required. The repository that the pull request is
+         * created from. Format: `projects/{project_number}/locations/{location_id}/repo
+         * sitories/{repository_id}`
+         * @param PullRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, PullRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Gets a pull request. (pullRequests.get)
+         *
+         * @param string $name Required. Name of the pull request to retrieve. The
+         * format is `projects/{project}/locations/{location}/repositories/{repository}/
+         * pullRequests/{pull_request}`.
+         * @param array $optParams Optional parameters.
+         * @return PullRequest
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists pull requests in a repository.
+         * (pullRequests.listProjectsLocationsRepositoriesPullRequests)
+         *
+         * @param string $parent Required. The repository in which to list pull
+         * requests. Format: `projects/{project_number}/locations/{location_id}/reposito
+         * ries/{repository_id}`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Optional. Requested page size. Server may return
+         * fewer items than requested. If unspecified, server will pick an appropriate
+         * default.
+         * @opt_param string pageToken Optional. A token identifying a page of results
+         * the server should return.
+         * @return ListPullRequestsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsRepositoriesPullRequests($parent, $optParams = [])
+        {
+        }
+        /**
+         * Lists a pull request's file diffs. (pullRequests.listFileDiffs)
+         *
+         * @param string $name Required. The pull request to list file diffs for.
+         * Format: `projects/{project_number}/locations/{location_id}/repositories/{repo
+         * sitory_id}/pullRequests/{pull_request_id}`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Optional. Requested page size. Server may return
+         * fewer items than requested. If unspecified, server will pick an appropriate
+         * default.
+         * @opt_param string pageToken Optional. A token identifying a page of results
+         * the server should return.
+         * @return ListPullRequestFileDiffsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listFileDiffs($name, $optParams = [])
+        {
+        }
+        /**
+         * Merges a pull request. (pullRequests.merge)
+         *
+         * @param string $name Required. The pull request to merge. Format: `projects/{p
+         * roject_number}/locations/{location_id}/repositories/{repository_id}/pullReque
+         * sts/{pull_request_id}`
+         * @param MergePullRequestRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function merge($name, MergePullRequestRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Opens a pull request. (pullRequests.open)
+         *
+         * @param string $name Required. The pull request to open. Format: `projects/{pr
+         * oject_number}/locations/{location_id}/repositories/{repository_id}/pullReques
+         * ts/{pull_request_id}`
+         * @param OpenPullRequestRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function open($name, OpenPullRequestRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Updates a pull request. (pullRequests.patch)
+         *
+         * @param string $name Output only. A unique identifier for a PullRequest. The
+         * number appended at the end is generated by the server. Format: `projects/{pro
+         * ject}/locations/{location}/repositories/{repository}/pullRequests/{pull_reque
+         * st_id}`
+         * @param PullRequest $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Optional. Field mask is used to specify the
+         * fields to be overwritten in the pull request resource by the update. The
+         * fields specified in the update_mask are relative to the resource, not the
+         * full request. A field will be overwritten if it is in the mask. The special
+         * value "*" means full replacement.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, PullRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Creates a pull request. (pullRequests.create)
-     *
-     * @param string $parent Required. The repository that the pull request is
-     * created from. Format: `projects/{project_number}/locations/{location_id}/repo
-     * sitories/{repository_id}`
-     * @param PullRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\SecureSourceManager\Resource\ProjectsLocationsRepositoriesPullRequests registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function create($parent, PullRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Gets a pull request. (pullRequests.get)
-     *
-     * @param string $name Required. Name of the pull request to retrieve. The
-     * format is `projects/{project}/locations/{location}/repositories/{repository}/
-     * pullRequests/{pull_request}`.
-     * @param array $optParams Optional parameters.
-     * @return PullRequest
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists pull requests in a repository.
-     * (pullRequests.listProjectsLocationsRepositoriesPullRequests)
-     *
-     * @param string $parent Required. The repository in which to list pull
-     * requests. Format: `projects/{project_number}/locations/{location_id}/reposito
-     * ries/{repository_id}`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Optional. Requested page size. Server may return
-     * fewer items than requested. If unspecified, server will pick an appropriate
-     * default.
-     * @opt_param string pageToken Optional. A token identifying a page of results
-     * the server should return.
-     * @return ListPullRequestsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsRepositoriesPullRequests($parent, $optParams = [])
-    {
-    }
-    /**
-     * Lists a pull request's file diffs. (pullRequests.listFileDiffs)
-     *
-     * @param string $name Required. The pull request to list file diffs for.
-     * Format: `projects/{project_number}/locations/{location_id}/repositories/{repo
-     * sitory_id}/pullRequests/{pull_request_id}`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Optional. Requested page size. Server may return
-     * fewer items than requested. If unspecified, server will pick an appropriate
-     * default.
-     * @opt_param string pageToken Optional. A token identifying a page of results
-     * the server should return.
-     * @return ListPullRequestFileDiffsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listFileDiffs($name, $optParams = [])
-    {
-    }
-    /**
-     * Merges a pull request. (pullRequests.merge)
-     *
-     * @param string $name Required. The pull request to merge. Format: `projects/{p
-     * roject_number}/locations/{location_id}/repositories/{repository_id}/pullReque
-     * sts/{pull_request_id}`
-     * @param MergePullRequestRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
-     */
-    public function merge($name, MergePullRequestRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Opens a pull request. (pullRequests.open)
-     *
-     * @param string $name Required. The pull request to open. Format: `projects/{pr
-     * oject_number}/locations/{location_id}/repositories/{repository_id}/pullReques
-     * ts/{pull_request_id}`
-     * @param OpenPullRequestRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
-     */
-    public function open($name, OpenPullRequestRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Updates a pull request. (pullRequests.patch)
-     *
-     * @param string $name Output only. A unique identifier for a PullRequest. The
-     * number appended at the end is generated by the server. Format: `projects/{pro
-     * ject}/locations/{location}/repositories/{repository}/pullRequests/{pull_reque
-     * st_id}`
-     * @param PullRequest $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Optional. Field mask is used to specify the
-     * fields to be overwritten in the pull request resource by the update. The
-     * fields specified in the update_mask are relative to the resource, not the
-     * full request. A field will be overwritten if it is in the mask. The special
-     * value "*" means full replacement.
-     * @return Operation
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, PullRequest $postBody, $optParams = [])
+    class Google_Service_SecureSourceManager_Resource_ProjectsLocationsRepositoriesPullRequests extends \Google\Service\SecureSourceManager\Resource\ProjectsLocationsRepositoriesPullRequests
     {
     }
 }

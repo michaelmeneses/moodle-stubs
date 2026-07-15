@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceNetworking;
-
-class PolicyBinding extends \Google\Model
-{
-    /**
-     * Required. Member to bind the role with. See
-     * /iam/docs/reference/rest/v1/Policy#Binding for how to format each member.
-     * Eg. - user:myuser@mydomain.com - serviceAccount:my-service-
-     * account@app.gserviceaccount.com
-     *
-     * @var string
-     */
-    public $member;
-    /**
-     * Required. Role to apply. Only allowlisted roles can be used at the
-     * specified granularity. The role must be one of the following: -
-     * 'roles/container.hostServiceAgentUser' applied on the shared VPC host
-     * project - 'roles/compute.securityAdmin' applied on the shared VPC host
-     * project - 'roles/compute.networkAdmin' applied on the shared VPC host
-     * project - 'roles/tpu.xpnAgent' applied on the shared VPC host project -
-     * 'roles/dns.admin' applied on the shared VPC host project -
-     * 'roles/logging.admin' applied on the shared VPC host project -
-     * 'roles/monitoring.viewer' applied on the shared VPC host project -
-     * 'roles/servicemanagement.quotaViewer' applied on the shared VPC host
-     * project
-     *
-     * @var string
-     */
-    public $role;
-    /**
-     * Required. Member to bind the role with. See
-     * /iam/docs/reference/rest/v1/Policy#Binding for how to format each member.
-     * Eg. - user:myuser@mydomain.com - serviceAccount:my-service-
-     * account@app.gserviceaccount.com
-     *
-     * @param string $member
-     */
-    public function setMember($member)
+namespace Google\Service\ServiceNetworking {
+    class PolicyBinding extends \Google\Model
     {
+        /**
+         * Required. Member to bind the role with. See
+         * /iam/docs/reference/rest/v1/Policy#Binding for how to format each member.
+         * Eg. - user:myuser@mydomain.com - serviceAccount:my-service-
+         * account@app.gserviceaccount.com
+         *
+         * @var string
+         */
+        public $member;
+        /**
+         * Required. Role to apply. Only allowlisted roles can be used at the
+         * specified granularity. The role must be one of the following: -
+         * 'roles/container.hostServiceAgentUser' applied on the shared VPC host
+         * project - 'roles/compute.securityAdmin' applied on the shared VPC host
+         * project - 'roles/compute.networkAdmin' applied on the shared VPC host
+         * project - 'roles/tpu.xpnAgent' applied on the shared VPC host project -
+         * 'roles/dns.admin' applied on the shared VPC host project -
+         * 'roles/logging.admin' applied on the shared VPC host project -
+         * 'roles/monitoring.viewer' applied on the shared VPC host project -
+         * 'roles/servicemanagement.quotaViewer' applied on the shared VPC host
+         * project
+         *
+         * @var string
+         */
+        public $role;
+        /**
+         * Required. Member to bind the role with. See
+         * /iam/docs/reference/rest/v1/Policy#Binding for how to format each member.
+         * Eg. - user:myuser@mydomain.com - serviceAccount:my-service-
+         * account@app.gserviceaccount.com
+         *
+         * @param string $member
+         */
+        public function setMember($member)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMember()
+        {
+        }
+        /**
+         * Required. Role to apply. Only allowlisted roles can be used at the
+         * specified granularity. The role must be one of the following: -
+         * 'roles/container.hostServiceAgentUser' applied on the shared VPC host
+         * project - 'roles/compute.securityAdmin' applied on the shared VPC host
+         * project - 'roles/compute.networkAdmin' applied on the shared VPC host
+         * project - 'roles/tpu.xpnAgent' applied on the shared VPC host project -
+         * 'roles/dns.admin' applied on the shared VPC host project -
+         * 'roles/logging.admin' applied on the shared VPC host project -
+         * 'roles/monitoring.viewer' applied on the shared VPC host project -
+         * 'roles/servicemanagement.quotaViewer' applied on the shared VPC host
+         * project
+         *
+         * @param string $role
+         */
+        public function setRole($role)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRole()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ServiceNetworking\PolicyBinding registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMember()
-    {
-    }
-    /**
-     * Required. Role to apply. Only allowlisted roles can be used at the
-     * specified granularity. The role must be one of the following: -
-     * 'roles/container.hostServiceAgentUser' applied on the shared VPC host
-     * project - 'roles/compute.securityAdmin' applied on the shared VPC host
-     * project - 'roles/compute.networkAdmin' applied on the shared VPC host
-     * project - 'roles/tpu.xpnAgent' applied on the shared VPC host project -
-     * 'roles/dns.admin' applied on the shared VPC host project -
-     * 'roles/logging.admin' applied on the shared VPC host project -
-     * 'roles/monitoring.viewer' applied on the shared VPC host project -
-     * 'roles/servicemanagement.quotaViewer' applied on the shared VPC host
-     * project
-     *
-     * @param string $role
-     */
-    public function setRole($role)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRole()
+    class Google_Service_ServiceNetworking_PolicyBinding extends \Google\Service\ServiceNetworking\PolicyBinding
     {
     }
 }

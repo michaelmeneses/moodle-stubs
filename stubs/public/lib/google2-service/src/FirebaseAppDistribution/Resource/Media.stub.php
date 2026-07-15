@@ -21,31 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseAppDistribution\Resource;
-
-/**
- * The "media" collection of methods.
- * Typical usage is:
- *  <code>
- *   $firebaseappdistributionService = new Google\Service\FirebaseAppDistribution(...);
- *   $media = $firebaseappdistributionService->media;
- *  </code>
- */
-class Media extends \Google\Service\Resource
-{
+namespace Google\Service\FirebaseAppDistribution\Resource {
+    use Google\Service\FirebaseAppDistribution\GoogleFirebaseAppdistroV1UploadReleaseRequest;
+    use Google\Service\FirebaseAppDistribution\GoogleLongrunningOperation;
     /**
-     * Uploads a binary. Uploading a binary can result in a new release being
-     * created, an update to an existing release, or a no-op if a release with the
-     * same binary already exists. (media.upload)
-     *
-     * @param string $app Required. The name of the app resource. Format:
-     * `projects/{project_number}/apps/{app}`
-     * @param GoogleFirebaseAppdistroV1UploadReleaseRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
+     * The "media" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $firebaseappdistributionService = new Google\Service\FirebaseAppDistribution(...);
+     *   $media = $firebaseappdistributionService->media;
+     *  </code>
      */
-    public function upload($app, GoogleFirebaseAppdistroV1UploadReleaseRequest $postBody, $optParams = [])
+    class Media extends \Google\Service\Resource
+    {
+        /**
+         * Uploads a binary. Uploading a binary can result in a new release being
+         * created, an update to an existing release, or a no-op if a release with the
+         * same binary already exists. (media.upload)
+         *
+         * @param string $app Required. The name of the app resource. Format:
+         * `projects/{project_number}/apps/{app}`
+         * @param GoogleFirebaseAppdistroV1UploadReleaseRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function upload($app, GoogleFirebaseAppdistroV1UploadReleaseRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\FirebaseAppDistribution\Resource\Media registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_FirebaseAppDistribution_Resource_Media extends \Google\Service\FirebaseAppDistribution\Resource\Media
     {
     }
 }

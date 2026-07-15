@@ -21,152 +21,161 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGenerationSpec extends \Google\Model
-{
-    /**
-     * @var float
-     */
-    public $frequencyPenalty;
-    /**
-     * @var string
-     */
-    public $languageCode;
-    /**
-     * @var int
-     */
-    public $maxOutputTokens;
-    /**
-     * @var string
-     */
-    public $modelId;
-    /**
-     * @var float
-     */
-    public $presencePenalty;
-    /**
-     * @var int
-     */
-    public $seed;
-    /**
-     * @var float
-     */
-    public $temperature;
-    /**
-     * @var int
-     */
-    public $topK;
-    /**
-     * @var float
-     */
-    public $topP;
-    /**
-     * @param float
-     */
-    public function setFrequencyPenalty($frequencyPenalty)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGenerationSpec extends \Google\Model
     {
+        /**
+         * @var float
+         */
+        public $frequencyPenalty;
+        /**
+         * @var string
+         */
+        public $languageCode;
+        /**
+         * @var int
+         */
+        public $maxOutputTokens;
+        /**
+         * @var string
+         */
+        public $modelId;
+        /**
+         * @var float
+         */
+        public $presencePenalty;
+        /**
+         * @var int
+         */
+        public $seed;
+        /**
+         * @var float
+         */
+        public $temperature;
+        /**
+         * @var int
+         */
+        public $topK;
+        /**
+         * @var float
+         */
+        public $topP;
+        /**
+         * @param float
+         */
+        public function setFrequencyPenalty($frequencyPenalty)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getFrequencyPenalty()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLanguageCode($languageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLanguageCode()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setMaxOutputTokens($maxOutputTokens)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxOutputTokens()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setModelId($modelId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getModelId()
+        {
+        }
+        /**
+         * @param float
+         */
+        public function setPresencePenalty($presencePenalty)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getPresencePenalty()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setSeed($seed)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSeed()
+        {
+        }
+        /**
+         * @param float
+         */
+        public function setTemperature($temperature)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getTemperature()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setTopK($topK)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTopK()
+        {
+        }
+        /**
+         * @param float
+         */
+        public function setTopP($topP)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getTopP()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGenerationSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFrequencyPenalty()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLanguageCode($languageCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLanguageCode()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setMaxOutputTokens($maxOutputTokens)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxOutputTokens()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setModelId($modelId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getModelId()
-    {
-    }
-    /**
-     * @param float
-     */
-    public function setPresencePenalty($presencePenalty)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getPresencePenalty()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setSeed($seed)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSeed()
-    {
-    }
-    /**
-     * @param float
-     */
-    public function setTemperature($temperature)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getTemperature()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setTopK($topK)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTopK()
-    {
-    }
-    /**
-     * @param float
-     */
-    public function setTopP($topP)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getTopP()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGenerationSpec extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGenerationSpec
     {
     }
 }

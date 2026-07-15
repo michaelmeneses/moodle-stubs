@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dns;
-
-class OperationManagedZoneContext extends \Google\Model
-{
-    protected $newValueType = ManagedZone::class;
-    protected $newValueDataType = '';
-    protected $oldValueType = ManagedZone::class;
-    protected $oldValueDataType = '';
-    /**
-     * The post-operation ManagedZone resource.
-     *
-     * @param ManagedZone $newValue
-     */
-    public function setNewValue(ManagedZone $newValue)
+namespace Google\Service\Dns {
+    class OperationManagedZoneContext extends \Google\Model
     {
+        protected $newValueType = ManagedZone::class;
+        protected $newValueDataType = '';
+        protected $oldValueType = ManagedZone::class;
+        protected $oldValueDataType = '';
+        /**
+         * The post-operation ManagedZone resource.
+         *
+         * @param ManagedZone $newValue
+         */
+        public function setNewValue(ManagedZone $newValue)
+        {
+        }
+        /**
+         * @return ManagedZone
+         */
+        public function getNewValue()
+        {
+        }
+        /**
+         * The pre-operation ManagedZone resource.
+         *
+         * @param ManagedZone $oldValue
+         */
+        public function setOldValue(ManagedZone $oldValue)
+        {
+        }
+        /**
+         * @return ManagedZone
+         */
+        public function getOldValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ManagedZone
+     * Runtime class alias of \Google\Service\Dns\OperationManagedZoneContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNewValue()
-    {
-    }
-    /**
-     * The pre-operation ManagedZone resource.
-     *
-     * @param ManagedZone $oldValue
-     */
-    public function setOldValue(ManagedZone $oldValue)
-    {
-    }
-    /**
-     * @return ManagedZone
-     */
-    public function getOldValue()
+    class Google_Service_Dns_OperationManagedZoneContext extends \Google\Service\Dns\OperationManagedZoneContext
     {
     }
 }

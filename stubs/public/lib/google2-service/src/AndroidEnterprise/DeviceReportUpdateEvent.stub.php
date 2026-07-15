@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise;
-
-class DeviceReportUpdateEvent extends \Google\Model
-{
-    /**
-     * The Android ID of the device. This field will always be present.
-     *
-     * @var string
-     */
-    public $deviceId;
-    protected $reportType = DeviceReport::class;
-    protected $reportDataType = '';
-    /**
-     * The ID of the user. This field will always be present.
-     *
-     * @var string
-     */
-    public $userId;
-    /**
-     * The Android ID of the device. This field will always be present.
-     *
-     * @param string $deviceId
-     */
-    public function setDeviceId($deviceId)
+namespace Google\Service\AndroidEnterprise {
+    class DeviceReportUpdateEvent extends \Google\Model
     {
+        /**
+         * The Android ID of the device. This field will always be present.
+         *
+         * @var string
+         */
+        public $deviceId;
+        protected $reportType = DeviceReport::class;
+        protected $reportDataType = '';
+        /**
+         * The ID of the user. This field will always be present.
+         *
+         * @var string
+         */
+        public $userId;
+        /**
+         * The Android ID of the device. This field will always be present.
+         *
+         * @param string $deviceId
+         */
+        public function setDeviceId($deviceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeviceId()
+        {
+        }
+        /**
+         * The device report updated with the latest app states. This field will
+         * always be present.
+         *
+         * @param DeviceReport $report
+         */
+        public function setReport(DeviceReport $report)
+        {
+        }
+        /**
+         * @return DeviceReport
+         */
+        public function getReport()
+        {
+        }
+        /**
+         * The ID of the user. This field will always be present.
+         *
+         * @param string $userId
+         */
+        public function setUserId($userId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidEnterprise\DeviceReportUpdateEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeviceId()
-    {
-    }
-    /**
-     * The device report updated with the latest app states. This field will
-     * always be present.
-     *
-     * @param DeviceReport $report
-     */
-    public function setReport(DeviceReport $report)
-    {
-    }
-    /**
-     * @return DeviceReport
-     */
-    public function getReport()
-    {
-    }
-    /**
-     * The ID of the user. This field will always be present.
-     *
-     * @param string $userId
-     */
-    public function setUserId($userId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserId()
+    class Google_Service_AndroidEnterprise_DeviceReportUpdateEvent extends \Google\Service\AndroidEnterprise\DeviceReportUpdateEvent
     {
     }
 }

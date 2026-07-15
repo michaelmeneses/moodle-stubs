@@ -21,78 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaAccessQuota extends \Google\Model
-{
-    protected $concurrentRequestsType = GoogleAnalyticsAdminV1alphaAccessQuotaStatus::class;
-    protected $concurrentRequestsDataType = '';
-    protected $serverErrorsPerProjectPerHourType = GoogleAnalyticsAdminV1alphaAccessQuotaStatus::class;
-    protected $serverErrorsPerProjectPerHourDataType = '';
-    protected $tokensPerDayType = GoogleAnalyticsAdminV1alphaAccessQuotaStatus::class;
-    protected $tokensPerDayDataType = '';
-    protected $tokensPerHourType = GoogleAnalyticsAdminV1alphaAccessQuotaStatus::class;
-    protected $tokensPerHourDataType = '';
-    protected $tokensPerProjectPerHourType = GoogleAnalyticsAdminV1alphaAccessQuotaStatus::class;
-    protected $tokensPerProjectPerHourDataType = '';
-    /**
-     * @param GoogleAnalyticsAdminV1alphaAccessQuotaStatus
-     */
-    public function setConcurrentRequests(GoogleAnalyticsAdminV1alphaAccessQuotaStatus $concurrentRequests)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaAccessQuota extends \Google\Model
     {
+        protected $concurrentRequestsType = GoogleAnalyticsAdminV1alphaAccessQuotaStatus::class;
+        protected $concurrentRequestsDataType = '';
+        protected $serverErrorsPerProjectPerHourType = GoogleAnalyticsAdminV1alphaAccessQuotaStatus::class;
+        protected $serverErrorsPerProjectPerHourDataType = '';
+        protected $tokensPerDayType = GoogleAnalyticsAdminV1alphaAccessQuotaStatus::class;
+        protected $tokensPerDayDataType = '';
+        protected $tokensPerHourType = GoogleAnalyticsAdminV1alphaAccessQuotaStatus::class;
+        protected $tokensPerHourDataType = '';
+        protected $tokensPerProjectPerHourType = GoogleAnalyticsAdminV1alphaAccessQuotaStatus::class;
+        protected $tokensPerProjectPerHourDataType = '';
+        /**
+         * @param GoogleAnalyticsAdminV1alphaAccessQuotaStatus
+         */
+        public function setConcurrentRequests(GoogleAnalyticsAdminV1alphaAccessQuotaStatus $concurrentRequests)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaAccessQuotaStatus
+         */
+        public function getConcurrentRequests()
+        {
+        }
+        /**
+         * @param GoogleAnalyticsAdminV1alphaAccessQuotaStatus
+         */
+        public function setServerErrorsPerProjectPerHour(GoogleAnalyticsAdminV1alphaAccessQuotaStatus $serverErrorsPerProjectPerHour)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaAccessQuotaStatus
+         */
+        public function getServerErrorsPerProjectPerHour()
+        {
+        }
+        /**
+         * @param GoogleAnalyticsAdminV1alphaAccessQuotaStatus
+         */
+        public function setTokensPerDay(GoogleAnalyticsAdminV1alphaAccessQuotaStatus $tokensPerDay)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaAccessQuotaStatus
+         */
+        public function getTokensPerDay()
+        {
+        }
+        /**
+         * @param GoogleAnalyticsAdminV1alphaAccessQuotaStatus
+         */
+        public function setTokensPerHour(GoogleAnalyticsAdminV1alphaAccessQuotaStatus $tokensPerHour)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaAccessQuotaStatus
+         */
+        public function getTokensPerHour()
+        {
+        }
+        /**
+         * @param GoogleAnalyticsAdminV1alphaAccessQuotaStatus
+         */
+        public function setTokensPerProjectPerHour(GoogleAnalyticsAdminV1alphaAccessQuotaStatus $tokensPerProjectPerHour)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaAccessQuotaStatus
+         */
+        public function getTokensPerProjectPerHour()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAnalyticsAdminV1alphaAccessQuotaStatus
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaAccessQuota registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConcurrentRequests()
-    {
-    }
-    /**
-     * @param GoogleAnalyticsAdminV1alphaAccessQuotaStatus
-     */
-    public function setServerErrorsPerProjectPerHour(GoogleAnalyticsAdminV1alphaAccessQuotaStatus $serverErrorsPerProjectPerHour)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1alphaAccessQuotaStatus
-     */
-    public function getServerErrorsPerProjectPerHour()
-    {
-    }
-    /**
-     * @param GoogleAnalyticsAdminV1alphaAccessQuotaStatus
-     */
-    public function setTokensPerDay(GoogleAnalyticsAdminV1alphaAccessQuotaStatus $tokensPerDay)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1alphaAccessQuotaStatus
-     */
-    public function getTokensPerDay()
-    {
-    }
-    /**
-     * @param GoogleAnalyticsAdminV1alphaAccessQuotaStatus
-     */
-    public function setTokensPerHour(GoogleAnalyticsAdminV1alphaAccessQuotaStatus $tokensPerHour)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1alphaAccessQuotaStatus
-     */
-    public function getTokensPerHour()
-    {
-    }
-    /**
-     * @param GoogleAnalyticsAdminV1alphaAccessQuotaStatus
-     */
-    public function setTokensPerProjectPerHour(GoogleAnalyticsAdminV1alphaAccessQuotaStatus $tokensPerProjectPerHour)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1alphaAccessQuotaStatus
-     */
-    public function getTokensPerProjectPerHour()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaAccessQuota extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaAccessQuota
     {
     }
 }

@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleCloudRunV2ListTasksResponse extends \Google\Collection
-{
-    protected $collection_key = 'tasks';
-    /**
-     * A token indicating there are more items than page_size. Use it in the next
-     * ListTasks request to continue.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $tasksType = GoogleCloudRunV2Task::class;
-    protected $tasksDataType = 'array';
-    /**
-     * A token indicating there are more items than page_size. Use it in the next
-     * ListTasks request to continue.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\CloudRun {
+    class GoogleCloudRunV2ListTasksResponse extends \Google\Collection
     {
+        protected $collection_key = 'tasks';
+        /**
+         * A token indicating there are more items than page_size. Use it in the next
+         * ListTasks request to continue.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $tasksType = GoogleCloudRunV2Task::class;
+        protected $tasksDataType = 'array';
+        /**
+         * A token indicating there are more items than page_size. Use it in the next
+         * ListTasks request to continue.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The resulting list of Tasks.
+         *
+         * @param GoogleCloudRunV2Task[] $tasks
+         */
+        public function setTasks($tasks)
+        {
+        }
+        /**
+         * @return GoogleCloudRunV2Task[]
+         */
+        public function getTasks()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRun\GoogleCloudRunV2ListTasksResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The resulting list of Tasks.
-     *
-     * @param GoogleCloudRunV2Task[] $tasks
-     */
-    public function setTasks($tasks)
-    {
-    }
-    /**
-     * @return GoogleCloudRunV2Task[]
-     */
-    public function getTasks()
+    class Google_Service_CloudRun_GoogleCloudRunV2ListTasksResponse extends \Google\Service\CloudRun\GoogleCloudRunV2ListTasksResponse
     {
     }
 }

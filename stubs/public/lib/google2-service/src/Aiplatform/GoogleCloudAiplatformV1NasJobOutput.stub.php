@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1NasJobOutput extends \Google\Model
-{
-    protected $multiTrialJobOutputType = GoogleCloudAiplatformV1NasJobOutputMultiTrialJobOutput::class;
-    protected $multiTrialJobOutputDataType = '';
-    /**
-     * Output only. The output of this multi-trial Neural Architecture Search
-     * (NAS) job.
-     *
-     * @param GoogleCloudAiplatformV1NasJobOutputMultiTrialJobOutput $multiTrialJobOutput
-     */
-    public function setMultiTrialJobOutput(GoogleCloudAiplatformV1NasJobOutputMultiTrialJobOutput $multiTrialJobOutput)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1NasJobOutput extends \Google\Model
     {
+        protected $multiTrialJobOutputType = GoogleCloudAiplatformV1NasJobOutputMultiTrialJobOutput::class;
+        protected $multiTrialJobOutputDataType = '';
+        /**
+         * Output only. The output of this multi-trial Neural Architecture Search
+         * (NAS) job.
+         *
+         * @param GoogleCloudAiplatformV1NasJobOutputMultiTrialJobOutput $multiTrialJobOutput
+         */
+        public function setMultiTrialJobOutput(GoogleCloudAiplatformV1NasJobOutputMultiTrialJobOutput $multiTrialJobOutput)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1NasJobOutputMultiTrialJobOutput
+         */
+        public function getMultiTrialJobOutput()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1NasJobOutputMultiTrialJobOutput
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1NasJobOutput registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMultiTrialJobOutput()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1NasJobOutput extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1NasJobOutput
     {
     }
 }

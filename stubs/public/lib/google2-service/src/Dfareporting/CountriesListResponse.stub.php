@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class CountriesListResponse extends \Google\Collection
-{
-    protected $collection_key = 'countries';
-    protected $countriesType = Country::class;
-    protected $countriesDataType = 'array';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#countriesListResponse".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Country collection.
-     *
-     * @param Country[] $countries
-     */
-    public function setCountries($countries)
+namespace Google\Service\Dfareporting {
+    class CountriesListResponse extends \Google\Collection
     {
+        protected $collection_key = 'countries';
+        protected $countriesType = Country::class;
+        protected $countriesDataType = 'array';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#countriesListResponse".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Country collection.
+         *
+         * @param Country[] $countries
+         */
+        public function setCountries($countries)
+        {
+        }
+        /**
+         * @return Country[]
+         */
+        public function getCountries()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#countriesListResponse".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Country[]
+     * Runtime class alias of \Google\Service\Dfareporting\CountriesListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCountries()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#countriesListResponse".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_Dfareporting_CountriesListResponse extends \Google\Service\Dfareporting\CountriesListResponse
     {
     }
 }

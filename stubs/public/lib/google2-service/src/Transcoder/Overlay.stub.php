@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Transcoder;
-
-class Overlay extends \Google\Collection
-{
-    protected $collection_key = 'animations';
-    protected $animationsType = Animation::class;
-    protected $animationsDataType = 'array';
-    protected $imageType = Image::class;
-    protected $imageDataType = '';
-    /**
-     * List of animations. The list should be chronological, without any time
-     * overlap.
-     *
-     * @param Animation[] $animations
-     */
-    public function setAnimations($animations)
+namespace Google\Service\Transcoder {
+    class Overlay extends \Google\Collection
     {
+        protected $collection_key = 'animations';
+        protected $animationsType = Animation::class;
+        protected $animationsDataType = 'array';
+        protected $imageType = Image::class;
+        protected $imageDataType = '';
+        /**
+         * List of animations. The list should be chronological, without any time
+         * overlap.
+         *
+         * @param Animation[] $animations
+         */
+        public function setAnimations($animations)
+        {
+        }
+        /**
+         * @return Animation[]
+         */
+        public function getAnimations()
+        {
+        }
+        /**
+         * Image overlay.
+         *
+         * @param Image $image
+         */
+        public function setImage(Image $image)
+        {
+        }
+        /**
+         * @return Image
+         */
+        public function getImage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Animation[]
+     * Runtime class alias of \Google\Service\Transcoder\Overlay registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnimations()
-    {
-    }
-    /**
-     * Image overlay.
-     *
-     * @param Image $image
-     */
-    public function setImage(Image $image)
-    {
-    }
-    /**
-     * @return Image
-     */
-    public function getImage()
+    class Google_Service_Transcoder_Overlay extends \Google\Service\Transcoder\Overlay
     {
     }
 }

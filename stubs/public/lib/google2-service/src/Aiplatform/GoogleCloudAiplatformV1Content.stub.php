@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1Content extends \Google\Collection
-{
-    protected $collection_key = 'parts';
-    protected $partsType = GoogleCloudAiplatformV1Part::class;
-    protected $partsDataType = 'array';
-    /**
-     * Optional. The producer of the content. Must be either 'user' or 'model'. If
-     * not set, the service will default to 'user'.
-     *
-     * @var string
-     */
-    public $role;
-    /**
-     * Required. A list of Part objects that make up a single message. Parts of a
-     * message can have different MIME types. A Content message must have at least
-     * one Part.
-     *
-     * @param GoogleCloudAiplatformV1Part[] $parts
-     */
-    public function setParts($parts)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1Content extends \Google\Collection
     {
+        protected $collection_key = 'parts';
+        protected $partsType = GoogleCloudAiplatformV1Part::class;
+        protected $partsDataType = 'array';
+        /**
+         * Optional. The producer of the content. Must be either 'user' or 'model'. If
+         * not set, the service will default to 'user'.
+         *
+         * @var string
+         */
+        public $role;
+        /**
+         * Required. A list of Part objects that make up a single message. Parts of a
+         * message can have different MIME types. A Content message must have at least
+         * one Part.
+         *
+         * @param GoogleCloudAiplatformV1Part[] $parts
+         */
+        public function setParts($parts)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1Part[]
+         */
+        public function getParts()
+        {
+        }
+        /**
+         * Optional. The producer of the content. Must be either 'user' or 'model'. If
+         * not set, the service will default to 'user'.
+         *
+         * @param string $role
+         */
+        public function setRole($role)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRole()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1Part[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1Content registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getParts()
-    {
-    }
-    /**
-     * Optional. The producer of the content. Must be either 'user' or 'model'. If
-     * not set, the service will default to 'user'.
-     *
-     * @param string $role
-     */
-    public function setRole($role)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRole()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1Content extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1Content
     {
     }
 }

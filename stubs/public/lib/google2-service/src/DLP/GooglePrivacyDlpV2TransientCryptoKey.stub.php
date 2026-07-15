@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2TransientCryptoKey extends \Google\Model
-{
-    /**
-     * Required. Name of the key. This is an arbitrary string used to
-     * differentiate different keys. A unique key is generated per name: two
-     * separate `TransientCryptoKey` protos share the same generated key if their
-     * names are the same. When the data crypto key is generated, this name is not
-     * used in any way (repeating the api call will result in a different key
-     * being generated).
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. Name of the key. This is an arbitrary string used to
-     * differentiate different keys. A unique key is generated per name: two
-     * separate `TransientCryptoKey` protos share the same generated key if their
-     * names are the same. When the data crypto key is generated, this name is not
-     * used in any way (repeating the api call will result in a different key
-     * being generated).
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2TransientCryptoKey extends \Google\Model
     {
+        /**
+         * Required. Name of the key. This is an arbitrary string used to
+         * differentiate different keys. A unique key is generated per name: two
+         * separate `TransientCryptoKey` protos share the same generated key if their
+         * names are the same. When the data crypto key is generated, this name is not
+         * used in any way (repeating the api call will result in a different key
+         * being generated).
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. Name of the key. This is an arbitrary string used to
+         * differentiate different keys. A unique key is generated per name: two
+         * separate `TransientCryptoKey` protos share the same generated key if their
+         * names are the same. When the data crypto key is generated, this name is not
+         * used in any way (repeating the api call will result in a different key
+         * being generated).
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2TransientCryptoKey registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
+    class Google_Service_DLP_GooglePrivacyDlpV2TransientCryptoKey extends \Google\Service\DLP\GooglePrivacyDlpV2TransientCryptoKey
     {
     }
 }

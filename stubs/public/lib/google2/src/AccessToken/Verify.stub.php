@@ -23,6 +23,24 @@
  */
 namespace Google\AccessToken;
 
+use DateTime;
+use DomainException;
+use Exception;
+use ExpiredException;
+use Firebase\JWT\ExpiredException as ExpiredExceptionV3;
+use Firebase\JWT\JWT;
+use Firebase\JWT\Key;
+use Firebase\JWT\SignatureInvalidException;
+use Google\Auth\Cache\MemoryCacheItemPool;
+use Google\Exception as GoogleException;
+use GuzzleHttp\Client;
+use GuzzleHttp\ClientInterface;
+use InvalidArgumentException;
+use LogicException;
+use phpseclib3\Crypt\AES;
+use phpseclib3\Crypt\PublicKeyLoader;
+use phpseclib3\Math\BigInteger;
+use Psr\Cache\CacheItemPoolInterface;
 /**
  * Wrapper around Google Access Tokens which provides convenience functions
  *

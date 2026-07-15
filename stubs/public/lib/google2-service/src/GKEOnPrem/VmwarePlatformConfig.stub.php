@@ -21,89 +21,98 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class VmwarePlatformConfig extends \Google\Collection
-{
-    protected $collection_key = 'bundles';
-    protected $bundlesType = VmwareBundleConfig::class;
-    protected $bundlesDataType = 'array';
-    /**
-     * Output only. The platform version e.g. 1.13.2.
-     *
-     * @var string
-     */
-    public $platformVersion;
-    /**
-     * Input only. The required platform version e.g. 1.13.1. If the current
-     * platform version is lower than the target version, the platform version
-     * will be updated to the target version. If the target version is not
-     * installed in the platform (bundle versions), download the target version
-     * bundle.
-     *
-     * @var string
-     */
-    public $requiredPlatformVersion;
-    protected $statusType = ResourceStatus::class;
-    protected $statusDataType = '';
-    /**
-     * Output only. The list of bundles installed in the admin cluster.
-     *
-     * @param VmwareBundleConfig[] $bundles
-     */
-    public function setBundles($bundles)
+namespace Google\Service\GKEOnPrem {
+    class VmwarePlatformConfig extends \Google\Collection
     {
+        protected $collection_key = 'bundles';
+        protected $bundlesType = VmwareBundleConfig::class;
+        protected $bundlesDataType = 'array';
+        /**
+         * Output only. The platform version e.g. 1.13.2.
+         *
+         * @var string
+         */
+        public $platformVersion;
+        /**
+         * Input only. The required platform version e.g. 1.13.1. If the current
+         * platform version is lower than the target version, the platform version
+         * will be updated to the target version. If the target version is not
+         * installed in the platform (bundle versions), download the target version
+         * bundle.
+         *
+         * @var string
+         */
+        public $requiredPlatformVersion;
+        protected $statusType = ResourceStatus::class;
+        protected $statusDataType = '';
+        /**
+         * Output only. The list of bundles installed in the admin cluster.
+         *
+         * @param VmwareBundleConfig[] $bundles
+         */
+        public function setBundles($bundles)
+        {
+        }
+        /**
+         * @return VmwareBundleConfig[]
+         */
+        public function getBundles()
+        {
+        }
+        /**
+         * Output only. The platform version e.g. 1.13.2.
+         *
+         * @param string $platformVersion
+         */
+        public function setPlatformVersion($platformVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPlatformVersion()
+        {
+        }
+        /**
+         * Input only. The required platform version e.g. 1.13.1. If the current
+         * platform version is lower than the target version, the platform version
+         * will be updated to the target version. If the target version is not
+         * installed in the platform (bundle versions), download the target version
+         * bundle.
+         *
+         * @param string $requiredPlatformVersion
+         */
+        public function setRequiredPlatformVersion($requiredPlatformVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequiredPlatformVersion()
+        {
+        }
+        /**
+         * Output only. Resource status for the platform.
+         *
+         * @param ResourceStatus $status
+         */
+        public function setStatus(ResourceStatus $status)
+        {
+        }
+        /**
+         * @return ResourceStatus
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return VmwareBundleConfig[]
+     * Runtime class alias of \Google\Service\GKEOnPrem\VmwarePlatformConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBundles()
-    {
-    }
-    /**
-     * Output only. The platform version e.g. 1.13.2.
-     *
-     * @param string $platformVersion
-     */
-    public function setPlatformVersion($platformVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPlatformVersion()
-    {
-    }
-    /**
-     * Input only. The required platform version e.g. 1.13.1. If the current
-     * platform version is lower than the target version, the platform version
-     * will be updated to the target version. If the target version is not
-     * installed in the platform (bundle versions), download the target version
-     * bundle.
-     *
-     * @param string $requiredPlatformVersion
-     */
-    public function setRequiredPlatformVersion($requiredPlatformVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequiredPlatformVersion()
-    {
-    }
-    /**
-     * Output only. Resource status for the platform.
-     *
-     * @param ResourceStatus $status
-     */
-    public function setStatus(ResourceStatus $status)
-    {
-    }
-    /**
-     * @return ResourceStatus
-     */
-    public function getStatus()
+    class Google_Service_GKEOnPrem_VmwarePlatformConfig extends \Google\Service\GKEOnPrem\VmwarePlatformConfig
     {
     }
 }

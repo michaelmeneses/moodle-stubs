@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2beta1KnowledgeAnswers extends \Google\Collection
-{
-    protected $collection_key = 'answers';
-    protected $answersType = GoogleCloudDialogflowV2beta1KnowledgeAnswersAnswer::class;
-    protected $answersDataType = 'array';
-    /**
-     * A list of answers from Knowledge Connector.
-     *
-     * @param GoogleCloudDialogflowV2beta1KnowledgeAnswersAnswer[] $answers
-     */
-    public function setAnswers($answers)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2beta1KnowledgeAnswers extends \Google\Collection
     {
+        protected $collection_key = 'answers';
+        protected $answersType = GoogleCloudDialogflowV2beta1KnowledgeAnswersAnswer::class;
+        protected $answersDataType = 'array';
+        /**
+         * A list of answers from Knowledge Connector.
+         *
+         * @param GoogleCloudDialogflowV2beta1KnowledgeAnswersAnswer[] $answers
+         */
+        public function setAnswers($answers)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2beta1KnowledgeAnswersAnswer[]
+         */
+        public function getAnswers()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowV2beta1KnowledgeAnswersAnswer[]
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1KnowledgeAnswers registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnswers()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1KnowledgeAnswers extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1KnowledgeAnswers
     {
     }
 }

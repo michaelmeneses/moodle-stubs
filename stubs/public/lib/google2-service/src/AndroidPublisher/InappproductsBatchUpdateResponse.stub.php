@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class InappproductsBatchUpdateResponse extends \Google\Collection
-{
-    protected $collection_key = 'inappproducts';
-    protected $inappproductsType = InAppProduct::class;
-    protected $inappproductsDataType = 'array';
-    /**
-     * The updated or inserted in-app products.
-     *
-     * @param InAppProduct[] $inappproducts
-     */
-    public function setInappproducts($inappproducts)
+namespace Google\Service\AndroidPublisher {
+    class InappproductsBatchUpdateResponse extends \Google\Collection
     {
+        protected $collection_key = 'inappproducts';
+        protected $inappproductsType = InAppProduct::class;
+        protected $inappproductsDataType = 'array';
+        /**
+         * The updated or inserted in-app products.
+         *
+         * @param InAppProduct[] $inappproducts
+         */
+        public function setInappproducts($inappproducts)
+        {
+        }
+        /**
+         * @return InAppProduct[]
+         */
+        public function getInappproducts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InAppProduct[]
+     * Runtime class alias of \Google\Service\AndroidPublisher\InappproductsBatchUpdateResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInappproducts()
+    class Google_Service_AndroidPublisher_InappproductsBatchUpdateResponse extends \Google\Service\AndroidPublisher\InappproductsBatchUpdateResponse
     {
     }
 }

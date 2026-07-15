@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class OrderTrackingSignalShipmentLineItemMapping extends \Google\Model
-{
-    /**
-     * Required. The line item ID.
-     *
-     * @var string
-     */
-    public $lineItemId;
-    /**
-     * The line item quantity in the shipment.
-     *
-     * @var string
-     */
-    public $quantity;
-    /**
-     * Required. The shipment ID. This field will be hashed in returned
-     * OrderTrackingSignal creation response.
-     *
-     * @var string
-     */
-    public $shipmentId;
-    /**
-     * Required. The line item ID.
-     *
-     * @param string $lineItemId
-     */
-    public function setLineItemId($lineItemId)
+namespace Google\Service\ShoppingContent {
+    class OrderTrackingSignalShipmentLineItemMapping extends \Google\Model
     {
+        /**
+         * Required. The line item ID.
+         *
+         * @var string
+         */
+        public $lineItemId;
+        /**
+         * The line item quantity in the shipment.
+         *
+         * @var string
+         */
+        public $quantity;
+        /**
+         * Required. The shipment ID. This field will be hashed in returned
+         * OrderTrackingSignal creation response.
+         *
+         * @var string
+         */
+        public $shipmentId;
+        /**
+         * Required. The line item ID.
+         *
+         * @param string $lineItemId
+         */
+        public function setLineItemId($lineItemId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLineItemId()
+        {
+        }
+        /**
+         * The line item quantity in the shipment.
+         *
+         * @param string $quantity
+         */
+        public function setQuantity($quantity)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQuantity()
+        {
+        }
+        /**
+         * Required. The shipment ID. This field will be hashed in returned
+         * OrderTrackingSignal creation response.
+         *
+         * @param string $shipmentId
+         */
+        public function setShipmentId($shipmentId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getShipmentId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\OrderTrackingSignalShipmentLineItemMapping registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLineItemId()
-    {
-    }
-    /**
-     * The line item quantity in the shipment.
-     *
-     * @param string $quantity
-     */
-    public function setQuantity($quantity)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQuantity()
-    {
-    }
-    /**
-     * Required. The shipment ID. This field will be hashed in returned
-     * OrderTrackingSignal creation response.
-     *
-     * @param string $shipmentId
-     */
-    public function setShipmentId($shipmentId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getShipmentId()
+    class Google_Service_ShoppingContent_OrderTrackingSignalShipmentLineItemMapping extends \Google\Service\ShoppingContent\OrderTrackingSignalShipmentLineItemMapping
     {
     }
 }

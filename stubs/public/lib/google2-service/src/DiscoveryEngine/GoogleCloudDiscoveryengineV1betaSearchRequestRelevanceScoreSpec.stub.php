@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaSearchRequestRelevanceScoreSpec extends \Google\Model
-{
-    /**
-     * Optional. Whether to return the relevance score for search results. The
-     * higher the score, the more relevant the document is to the query.
-     *
-     * @var bool
-     */
-    public $returnRelevanceScore;
-    /**
-     * Optional. Whether to return the relevance score for search results. The
-     * higher the score, the more relevant the document is to the query.
-     *
-     * @param bool $returnRelevanceScore
-     */
-    public function setReturnRelevanceScore($returnRelevanceScore)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaSearchRequestRelevanceScoreSpec extends \Google\Model
     {
+        /**
+         * Optional. Whether to return the relevance score for search results. The
+         * higher the score, the more relevant the document is to the query.
+         *
+         * @var bool
+         */
+        public $returnRelevanceScore;
+        /**
+         * Optional. Whether to return the relevance score for search results. The
+         * higher the score, the more relevant the document is to the query.
+         *
+         * @param bool $returnRelevanceScore
+         */
+        public function setReturnRelevanceScore($returnRelevanceScore)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getReturnRelevanceScore()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaSearchRequestRelevanceScoreSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReturnRelevanceScore()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaSearchRequestRelevanceScoreSpec extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaSearchRequestRelevanceScoreSpec
     {
     }
 }

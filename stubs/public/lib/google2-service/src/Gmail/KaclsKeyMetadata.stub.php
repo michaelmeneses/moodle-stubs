@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Gmail;
-
-class KaclsKeyMetadata extends \Google\Model
-{
-    /**
-     * Opaque data generated and used by the key access control list service.
-     * Maximum size: 8 KiB.
-     *
-     * @var string
-     */
-    public $kaclsData;
-    /**
-     * The URI of the key access control list service that manages the private
-     * key.
-     *
-     * @var string
-     */
-    public $kaclsUri;
-    /**
-     * Opaque data generated and used by the key access control list service.
-     * Maximum size: 8 KiB.
-     *
-     * @param string $kaclsData
-     */
-    public function setKaclsData($kaclsData)
+namespace Google\Service\Gmail {
+    class KaclsKeyMetadata extends \Google\Model
     {
+        /**
+         * Opaque data generated and used by the key access control list service.
+         * Maximum size: 8 KiB.
+         *
+         * @var string
+         */
+        public $kaclsData;
+        /**
+         * The URI of the key access control list service that manages the private
+         * key.
+         *
+         * @var string
+         */
+        public $kaclsUri;
+        /**
+         * Opaque data generated and used by the key access control list service.
+         * Maximum size: 8 KiB.
+         *
+         * @param string $kaclsData
+         */
+        public function setKaclsData($kaclsData)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKaclsData()
+        {
+        }
+        /**
+         * The URI of the key access control list service that manages the private
+         * key.
+         *
+         * @param string $kaclsUri
+         */
+        public function setKaclsUri($kaclsUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKaclsUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Gmail\KaclsKeyMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKaclsData()
-    {
-    }
-    /**
-     * The URI of the key access control list service that manages the private
-     * key.
-     *
-     * @param string $kaclsUri
-     */
-    public function setKaclsUri($kaclsUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKaclsUri()
+    class Google_Service_Gmail_KaclsKeyMetadata extends \Google\Service\Gmail\KaclsKeyMetadata
     {
     }
 }

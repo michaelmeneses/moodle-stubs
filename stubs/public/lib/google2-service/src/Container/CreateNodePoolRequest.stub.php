@@ -21,127 +21,136 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class CreateNodePoolRequest extends \Google\Model
-{
-    /**
-     * Deprecated. The name of the cluster. This field has been deprecated and
-     * replaced by the parent field.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $clusterId;
-    protected $nodePoolType = NodePool::class;
-    protected $nodePoolDataType = '';
-    /**
-     * The parent (project, location, cluster name) where the node pool will be
-     * created. Specified in the format `projects/locations/clusters`.
-     *
-     * @var string
-     */
-    public $parent;
-    /**
-     * Deprecated. The Google Developers Console [project ID or project
-     * number](https://cloud.google.com/resource-manager/docs/creating-managing-
-     * projects). This field has been deprecated and replaced by the parent field.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $projectId;
-    /**
-     * Deprecated. The name of the Google Compute Engine
-     * [zone](https://cloud.google.com/compute/docs/zones#available) in which the
-     * cluster resides. This field has been deprecated and replaced by the parent
-     * field.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $zone;
-    /**
-     * Deprecated. The name of the cluster. This field has been deprecated and
-     * replaced by the parent field.
-     *
-     * @deprecated
-     * @param string $clusterId
-     */
-    public function setClusterId($clusterId)
+namespace Google\Service\Container {
+    class CreateNodePoolRequest extends \Google\Model
     {
+        /**
+         * Deprecated. The name of the cluster. This field has been deprecated and
+         * replaced by the parent field.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $clusterId;
+        protected $nodePoolType = NodePool::class;
+        protected $nodePoolDataType = '';
+        /**
+         * The parent (project, location, cluster name) where the node pool will be
+         * created. Specified in the format `projects/locations/clusters`.
+         *
+         * @var string
+         */
+        public $parent;
+        /**
+         * Deprecated. The Google Developers Console [project ID or project
+         * number](https://cloud.google.com/resource-manager/docs/creating-managing-
+         * projects). This field has been deprecated and replaced by the parent field.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $projectId;
+        /**
+         * Deprecated. The name of the Google Compute Engine
+         * [zone](https://cloud.google.com/compute/docs/zones#available) in which the
+         * cluster resides. This field has been deprecated and replaced by the parent
+         * field.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $zone;
+        /**
+         * Deprecated. The name of the cluster. This field has been deprecated and
+         * replaced by the parent field.
+         *
+         * @deprecated
+         * @param string $clusterId
+         */
+        public function setClusterId($clusterId)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getClusterId()
+        {
+        }
+        /**
+         * Required. The node pool to create.
+         *
+         * @param NodePool $nodePool
+         */
+        public function setNodePool(NodePool $nodePool)
+        {
+        }
+        /**
+         * @return NodePool
+         */
+        public function getNodePool()
+        {
+        }
+        /**
+         * The parent (project, location, cluster name) where the node pool will be
+         * created. Specified in the format `projects/locations/clusters`.
+         *
+         * @param string $parent
+         */
+        public function setParent($parent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParent()
+        {
+        }
+        /**
+         * Deprecated. The Google Developers Console [project ID or project
+         * number](https://cloud.google.com/resource-manager/docs/creating-managing-
+         * projects). This field has been deprecated and replaced by the parent field.
+         *
+         * @deprecated
+         * @param string $projectId
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
+        /**
+         * Deprecated. The name of the Google Compute Engine
+         * [zone](https://cloud.google.com/compute/docs/zones#available) in which the
+         * cluster resides. This field has been deprecated and replaced by the parent
+         * field.
+         *
+         * @deprecated
+         * @param string $zone
+         */
+        public function setZone($zone)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getZone()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return string
+     * Runtime class alias of \Google\Service\Container\CreateNodePoolRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClusterId()
-    {
-    }
-    /**
-     * Required. The node pool to create.
-     *
-     * @param NodePool $nodePool
-     */
-    public function setNodePool(NodePool $nodePool)
-    {
-    }
-    /**
-     * @return NodePool
-     */
-    public function getNodePool()
-    {
-    }
-    /**
-     * The parent (project, location, cluster name) where the node pool will be
-     * created. Specified in the format `projects/locations/clusters`.
-     *
-     * @param string $parent
-     */
-    public function setParent($parent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParent()
-    {
-    }
-    /**
-     * Deprecated. The Google Developers Console [project ID or project
-     * number](https://cloud.google.com/resource-manager/docs/creating-managing-
-     * projects). This field has been deprecated and replaced by the parent field.
-     *
-     * @deprecated
-     * @param string $projectId
-     */
-    public function setProjectId($projectId)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getProjectId()
-    {
-    }
-    /**
-     * Deprecated. The name of the Google Compute Engine
-     * [zone](https://cloud.google.com/compute/docs/zones#available) in which the
-     * cluster resides. This field has been deprecated and replaced by the parent
-     * field.
-     *
-     * @deprecated
-     * @param string $zone
-     */
-    public function setZone($zone)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getZone()
+    class Google_Service_Container_CreateNodePoolRequest extends \Google\Service\Container\CreateNodePoolRequest
     {
     }
 }

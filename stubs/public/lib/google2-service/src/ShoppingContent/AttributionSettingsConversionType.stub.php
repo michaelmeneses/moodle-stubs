@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class AttributionSettingsConversionType extends \Google\Model
-{
-    /**
-     * Output only. Option indicating if the type should be included in Merchant
-     * Center reporting.
-     *
-     * @var bool
-     */
-    public $includeInReporting;
-    /**
-     * Output only. Conversion event name, as it'll be reported by the client.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. Option indicating if the type should be included in Merchant
-     * Center reporting.
-     *
-     * @param bool $includeInReporting
-     */
-    public function setIncludeInReporting($includeInReporting)
+namespace Google\Service\ShoppingContent {
+    class AttributionSettingsConversionType extends \Google\Model
     {
+        /**
+         * Output only. Option indicating if the type should be included in Merchant
+         * Center reporting.
+         *
+         * @var bool
+         */
+        public $includeInReporting;
+        /**
+         * Output only. Conversion event name, as it'll be reported by the client.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. Option indicating if the type should be included in Merchant
+         * Center reporting.
+         *
+         * @param bool $includeInReporting
+         */
+        public function setIncludeInReporting($includeInReporting)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIncludeInReporting()
+        {
+        }
+        /**
+         * Output only. Conversion event name, as it'll be reported by the client.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\ShoppingContent\AttributionSettingsConversionType registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIncludeInReporting()
-    {
-    }
-    /**
-     * Output only. Conversion event name, as it'll be reported by the client.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_ShoppingContent_AttributionSettingsConversionType extends \Google\Service\ShoppingContent\AttributionSettingsConversionType
     {
     }
 }

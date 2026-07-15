@@ -21,94 +21,106 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations\Resource;
-
-/**
- * The "sfdcInstances" collection of methods.
- * Typical usage is:
- *  <code>
- *   $integrationsService = new Google\Service\Integrations(...);
- *   $sfdcInstances = $integrationsService->projects_locations_sfdcInstances;
- *  </code>
- */
-class ProjectsLocationsSfdcInstances extends \Google\Service\Resource
-{
+namespace Google\Service\Integrations\Resource {
+    use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaListSfdcInstancesResponse;
+    use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaSfdcInstance;
+    use Google\Service\Integrations\GoogleProtobufEmpty;
     /**
-     * Creates an sfdc instance record. Store the sfdc instance in Spanner. Returns
-     * the sfdc instance. (sfdcInstances.create)
-     *
-     * @param string $parent Required. "projects/{project}/locations/{location}"
-     * format.
-     * @param GoogleCloudIntegrationsV1alphaSfdcInstance $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudIntegrationsV1alphaSfdcInstance
-     * @throws \Google\Service\Exception
+     * The "sfdcInstances" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $integrationsService = new Google\Service\Integrations(...);
+     *   $sfdcInstances = $integrationsService->projects_locations_sfdcInstances;
+     *  </code>
      */
-    public function create($parent, GoogleCloudIntegrationsV1alphaSfdcInstance $postBody, $optParams = [])
+    class ProjectsLocationsSfdcInstances extends \Google\Service\Resource
     {
+        /**
+         * Creates an sfdc instance record. Store the sfdc instance in Spanner. Returns
+         * the sfdc instance. (sfdcInstances.create)
+         *
+         * @param string $parent Required. "projects/{project}/locations/{location}"
+         * format.
+         * @param GoogleCloudIntegrationsV1alphaSfdcInstance $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudIntegrationsV1alphaSfdcInstance
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, GoogleCloudIntegrationsV1alphaSfdcInstance $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes an sfdc instance. (sfdcInstances.delete)
+         *
+         * @param string $name Required. The name that is associated with the
+         * SfdcInstance.
+         * @param array $optParams Optional parameters.
+         * @return GoogleProtobufEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets an sfdc instance. If the instance doesn't exist, Code.NOT_FOUND
+         * exception will be thrown. (sfdcInstances.get)
+         *
+         * @param string $name Required. The name that is associated with the
+         * SfdcInstance.
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudIntegrationsV1alphaSfdcInstance
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists all sfdc instances that match the filter. Restrict to sfdc instances
+         * belonging to the current client only.
+         * (sfdcInstances.listProjectsLocationsSfdcInstances)
+         *
+         * @param string $parent Required. The client, which owns this collection of
+         * SfdcInstances.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Filtering as supported in
+         * https://developers.google.com/authorized-buyers/apis/guides/list-filters.
+         * @opt_param int pageSize The size of entries in the response. If unspecified,
+         * defaults to 100.
+         * @opt_param string pageToken The token returned in the previous response.
+         * @opt_param string readMask The mask which specifies fields that need to be
+         * returned in the SfdcInstance's response.
+         * @return GoogleCloudIntegrationsV1alphaListSfdcInstancesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsSfdcInstances($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates an sfdc instance. Updates the sfdc instance in spanner. Returns the
+         * sfdc instance. (sfdcInstances.patch)
+         *
+         * @param string $name Resource name of the SFDC instance
+         * projects/{project}/locations/{location}/sfdcInstances/{sfdcInstance}.
+         * @param GoogleCloudIntegrationsV1alphaSfdcInstance $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Field mask specifying the fields in the above
+         * SfdcInstance that have been modified and need to be updated.
+         * @return GoogleCloudIntegrationsV1alphaSfdcInstance
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, GoogleCloudIntegrationsV1alphaSfdcInstance $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes an sfdc instance. (sfdcInstances.delete)
-     *
-     * @param string $name Required. The name that is associated with the
-     * SfdcInstance.
-     * @param array $optParams Optional parameters.
-     * @return GoogleProtobufEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Integrations\Resource\ProjectsLocationsSfdcInstances registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets an sfdc instance. If the instance doesn't exist, Code.NOT_FOUND
-     * exception will be thrown. (sfdcInstances.get)
-     *
-     * @param string $name Required. The name that is associated with the
-     * SfdcInstance.
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudIntegrationsV1alphaSfdcInstance
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists all sfdc instances that match the filter. Restrict to sfdc instances
-     * belonging to the current client only.
-     * (sfdcInstances.listProjectsLocationsSfdcInstances)
-     *
-     * @param string $parent Required. The client, which owns this collection of
-     * SfdcInstances.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Filtering as supported in
-     * https://developers.google.com/authorized-buyers/apis/guides/list-filters.
-     * @opt_param int pageSize The size of entries in the response. If unspecified,
-     * defaults to 100.
-     * @opt_param string pageToken The token returned in the previous response.
-     * @opt_param string readMask The mask which specifies fields that need to be
-     * returned in the SfdcInstance's response.
-     * @return GoogleCloudIntegrationsV1alphaListSfdcInstancesResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsSfdcInstances($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates an sfdc instance. Updates the sfdc instance in spanner. Returns the
-     * sfdc instance. (sfdcInstances.patch)
-     *
-     * @param string $name Resource name of the SFDC instance
-     * projects/{project}/locations/{location}/sfdcInstances/{sfdcInstance}.
-     * @param GoogleCloudIntegrationsV1alphaSfdcInstance $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Field mask specifying the fields in the above
-     * SfdcInstance that have been modified and need to be updated.
-     * @return GoogleCloudIntegrationsV1alphaSfdcInstance
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, GoogleCloudIntegrationsV1alphaSfdcInstance $postBody, $optParams = [])
+    class Google_Service_Integrations_Resource_ProjectsLocationsSfdcInstances extends \Google\Service\Integrations\Resource\ProjectsLocationsSfdcInstances
     {
     }
 }

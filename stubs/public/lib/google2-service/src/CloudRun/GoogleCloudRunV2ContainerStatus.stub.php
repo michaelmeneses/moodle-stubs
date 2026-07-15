@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleCloudRunV2ContainerStatus extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $imageDigest;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @param string
-     */
-    public function setImageDigest($imageDigest)
+namespace Google\Service\CloudRun {
+    class GoogleCloudRunV2ContainerStatus extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $imageDigest;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @param string
+         */
+        public function setImageDigest($imageDigest)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImageDigest()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRun\GoogleCloudRunV2ContainerStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getImageDigest()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_CloudRun_GoogleCloudRunV2ContainerStatus extends \Google\Service\CloudRun\GoogleCloudRunV2ContainerStatus
     {
     }
 }

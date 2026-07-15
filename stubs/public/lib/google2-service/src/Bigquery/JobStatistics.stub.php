@@ -21,477 +21,486 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class JobStatistics extends \Google\Collection
-{
-    /**
-     * Default value, which will be treated as ENTERPRISE.
-     */
-    public const EDITION_RESERVATION_EDITION_UNSPECIFIED = 'RESERVATION_EDITION_UNSPECIFIED';
-    /**
-     * Standard edition.
-     */
-    public const EDITION_STANDARD = 'STANDARD';
-    /**
-     * Enterprise edition.
-     */
-    public const EDITION_ENTERPRISE = 'ENTERPRISE';
-    /**
-     * Enterprise Plus edition.
-     */
-    public const EDITION_ENTERPRISE_PLUS = 'ENTERPRISE_PLUS';
-    protected $collection_key = 'reservationUsage';
-    protected $internal_gapi_mappings = ["reservationId" => "reservation_id"];
-    /**
-     * Output only. [TrustedTester] Job progress (0.0 -> 1.0) for LOAD and EXTRACT
-     * jobs.
-     *
-     * @var 
-     */
-    public $completionRatio;
-    protected $copyType = JobStatistics5::class;
-    protected $copyDataType = '';
-    /**
-     * Output only. Creation time of this job, in milliseconds since the epoch.
-     * This field will be present on all jobs.
-     *
-     * @var string
-     */
-    public $creationTime;
-    protected $dataMaskingStatisticsType = DataMaskingStatistics::class;
-    protected $dataMaskingStatisticsDataType = '';
-    /**
-     * Output only. Name of edition corresponding to the reservation for this job
-     * at the time of this update.
-     *
-     * @var string
-     */
-    public $edition;
-    /**
-     * Output only. End time of this job, in milliseconds since the epoch. This
-     * field will be present whenever a job is in the DONE state.
-     *
-     * @var string
-     */
-    public $endTime;
-    protected $extractType = JobStatistics4::class;
-    protected $extractDataType = '';
-    /**
-     * Output only. The duration in milliseconds of the execution of the final
-     * attempt of this job, as BigQuery may internally re-attempt to execute the
-     * job.
-     *
-     * @var string
-     */
-    public $finalExecutionDurationMs;
-    protected $loadType = JobStatistics3::class;
-    protected $loadDataType = '';
-    /**
-     * Output only. Number of child jobs executed.
-     *
-     * @var string
-     */
-    public $numChildJobs;
-    /**
-     * Output only. If this is a child job, specifies the job ID of the parent.
-     *
-     * @var string
-     */
-    public $parentJobId;
-    protected $queryType = JobStatistics2::class;
-    protected $queryDataType = '';
-    /**
-     * Output only. Quotas which delayed this job's start time.
-     *
-     * @var string[]
-     */
-    public $quotaDeferments;
-    /**
-     * Output only. The reservation group path of the reservation assigned to this
-     * job. This field has a limit of 10 nested reservation groups. This is to
-     * maintain consistency between reservatins info schema and jobs info schema.
-     * The first reservation group is the root reservation group and the last is
-     * the leaf or lowest level reservation group.
-     *
-     * @var string[]
-     */
-    public $reservationGroupPath;
-    protected $reservationUsageType = JobStatisticsReservationUsage::class;
-    protected $reservationUsageDataType = 'array';
-    /**
-     * Output only. Name of the primary reservation assigned to this job. Note
-     * that this could be different than reservations reported in the reservation
-     * usage field if parent reservations were used to execute this job.
-     *
-     * @var string
-     */
-    public $reservationId;
-    protected $rowLevelSecurityStatisticsType = RowLevelSecurityStatistics::class;
-    protected $rowLevelSecurityStatisticsDataType = '';
-    protected $scriptStatisticsType = ScriptStatistics::class;
-    protected $scriptStatisticsDataType = '';
-    protected $sessionInfoType = SessionInfo::class;
-    protected $sessionInfoDataType = '';
-    /**
-     * Output only. Start time of this job, in milliseconds since the epoch. This
-     * field will be present when the job transitions from the PENDING state to
-     * either RUNNING or DONE.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * Output only. Total bytes processed for the job.
-     *
-     * @var string
-     */
-    public $totalBytesProcessed;
-    /**
-     * Output only. Slot-milliseconds for the job.
-     *
-     * @var string
-     */
-    public $totalSlotMs;
-    protected $transactionInfoType = TransactionInfo::class;
-    protected $transactionInfoDataType = '';
-    public function setCompletionRatio($completionRatio)
+namespace Google\Service\Bigquery {
+    class JobStatistics extends \Google\Collection
     {
+        /**
+         * Default value, which will be treated as ENTERPRISE.
+         */
+        public const EDITION_RESERVATION_EDITION_UNSPECIFIED = 'RESERVATION_EDITION_UNSPECIFIED';
+        /**
+         * Standard edition.
+         */
+        public const EDITION_STANDARD = 'STANDARD';
+        /**
+         * Enterprise edition.
+         */
+        public const EDITION_ENTERPRISE = 'ENTERPRISE';
+        /**
+         * Enterprise Plus edition.
+         */
+        public const EDITION_ENTERPRISE_PLUS = 'ENTERPRISE_PLUS';
+        protected $collection_key = 'reservationUsage';
+        protected $internal_gapi_mappings = ["reservationId" => "reservation_id"];
+        /**
+         * Output only. [TrustedTester] Job progress (0.0 -> 1.0) for LOAD and EXTRACT
+         * jobs.
+         *
+         * @var 
+         */
+        public $completionRatio;
+        protected $copyType = JobStatistics5::class;
+        protected $copyDataType = '';
+        /**
+         * Output only. Creation time of this job, in milliseconds since the epoch.
+         * This field will be present on all jobs.
+         *
+         * @var string
+         */
+        public $creationTime;
+        protected $dataMaskingStatisticsType = DataMaskingStatistics::class;
+        protected $dataMaskingStatisticsDataType = '';
+        /**
+         * Output only. Name of edition corresponding to the reservation for this job
+         * at the time of this update.
+         *
+         * @var string
+         */
+        public $edition;
+        /**
+         * Output only. End time of this job, in milliseconds since the epoch. This
+         * field will be present whenever a job is in the DONE state.
+         *
+         * @var string
+         */
+        public $endTime;
+        protected $extractType = JobStatistics4::class;
+        protected $extractDataType = '';
+        /**
+         * Output only. The duration in milliseconds of the execution of the final
+         * attempt of this job, as BigQuery may internally re-attempt to execute the
+         * job.
+         *
+         * @var string
+         */
+        public $finalExecutionDurationMs;
+        protected $loadType = JobStatistics3::class;
+        protected $loadDataType = '';
+        /**
+         * Output only. Number of child jobs executed.
+         *
+         * @var string
+         */
+        public $numChildJobs;
+        /**
+         * Output only. If this is a child job, specifies the job ID of the parent.
+         *
+         * @var string
+         */
+        public $parentJobId;
+        protected $queryType = JobStatistics2::class;
+        protected $queryDataType = '';
+        /**
+         * Output only. Quotas which delayed this job's start time.
+         *
+         * @var string[]
+         */
+        public $quotaDeferments;
+        /**
+         * Output only. The reservation group path of the reservation assigned to this
+         * job. This field has a limit of 10 nested reservation groups. This is to
+         * maintain consistency between reservatins info schema and jobs info schema.
+         * The first reservation group is the root reservation group and the last is
+         * the leaf or lowest level reservation group.
+         *
+         * @var string[]
+         */
+        public $reservationGroupPath;
+        protected $reservationUsageType = JobStatisticsReservationUsage::class;
+        protected $reservationUsageDataType = 'array';
+        /**
+         * Output only. Name of the primary reservation assigned to this job. Note
+         * that this could be different than reservations reported in the reservation
+         * usage field if parent reservations were used to execute this job.
+         *
+         * @var string
+         */
+        public $reservationId;
+        protected $rowLevelSecurityStatisticsType = RowLevelSecurityStatistics::class;
+        protected $rowLevelSecurityStatisticsDataType = '';
+        protected $scriptStatisticsType = ScriptStatistics::class;
+        protected $scriptStatisticsDataType = '';
+        protected $sessionInfoType = SessionInfo::class;
+        protected $sessionInfoDataType = '';
+        /**
+         * Output only. Start time of this job, in milliseconds since the epoch. This
+         * field will be present when the job transitions from the PENDING state to
+         * either RUNNING or DONE.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * Output only. Total bytes processed for the job.
+         *
+         * @var string
+         */
+        public $totalBytesProcessed;
+        /**
+         * Output only. Slot-milliseconds for the job.
+         *
+         * @var string
+         */
+        public $totalSlotMs;
+        protected $transactionInfoType = TransactionInfo::class;
+        protected $transactionInfoDataType = '';
+        public function setCompletionRatio($completionRatio)
+        {
+        }
+        public function getCompletionRatio()
+        {
+        }
+        /**
+         * Output only. Statistics for a copy job.
+         *
+         * @param JobStatistics5 $copy
+         */
+        public function setCopy(JobStatistics5 $copy)
+        {
+        }
+        /**
+         * @return JobStatistics5
+         */
+        public function getCopy()
+        {
+        }
+        /**
+         * Output only. Creation time of this job, in milliseconds since the epoch.
+         * This field will be present on all jobs.
+         *
+         * @param string $creationTime
+         */
+        public function setCreationTime($creationTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreationTime()
+        {
+        }
+        /**
+         * Output only. Statistics for data-masking. Present only for query and
+         * extract jobs.
+         *
+         * @param DataMaskingStatistics $dataMaskingStatistics
+         */
+        public function setDataMaskingStatistics(DataMaskingStatistics $dataMaskingStatistics)
+        {
+        }
+        /**
+         * @return DataMaskingStatistics
+         */
+        public function getDataMaskingStatistics()
+        {
+        }
+        /**
+         * Output only. Name of edition corresponding to the reservation for this job
+         * at the time of this update.
+         *
+         * Accepted values: RESERVATION_EDITION_UNSPECIFIED, STANDARD, ENTERPRISE,
+         * ENTERPRISE_PLUS
+         *
+         * @param self::EDITION_* $edition
+         */
+        public function setEdition($edition)
+        {
+        }
+        /**
+         * @return self::EDITION_*
+         */
+        public function getEdition()
+        {
+        }
+        /**
+         * Output only. End time of this job, in milliseconds since the epoch. This
+         * field will be present whenever a job is in the DONE state.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * Output only. Statistics for an extract job.
+         *
+         * @param JobStatistics4 $extract
+         */
+        public function setExtract(JobStatistics4 $extract)
+        {
+        }
+        /**
+         * @return JobStatistics4
+         */
+        public function getExtract()
+        {
+        }
+        /**
+         * Output only. The duration in milliseconds of the execution of the final
+         * attempt of this job, as BigQuery may internally re-attempt to execute the
+         * job.
+         *
+         * @param string $finalExecutionDurationMs
+         */
+        public function setFinalExecutionDurationMs($finalExecutionDurationMs)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFinalExecutionDurationMs()
+        {
+        }
+        /**
+         * Output only. Statistics for a load job.
+         *
+         * @param JobStatistics3 $load
+         */
+        public function setLoad(JobStatistics3 $load)
+        {
+        }
+        /**
+         * @return JobStatistics3
+         */
+        public function getLoad()
+        {
+        }
+        /**
+         * Output only. Number of child jobs executed.
+         *
+         * @param string $numChildJobs
+         */
+        public function setNumChildJobs($numChildJobs)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNumChildJobs()
+        {
+        }
+        /**
+         * Output only. If this is a child job, specifies the job ID of the parent.
+         *
+         * @param string $parentJobId
+         */
+        public function setParentJobId($parentJobId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParentJobId()
+        {
+        }
+        /**
+         * Output only. Statistics for a query job.
+         *
+         * @param JobStatistics2 $query
+         */
+        public function setQuery(JobStatistics2 $query)
+        {
+        }
+        /**
+         * @return JobStatistics2
+         */
+        public function getQuery()
+        {
+        }
+        /**
+         * Output only. Quotas which delayed this job's start time.
+         *
+         * @param string[] $quotaDeferments
+         */
+        public function setQuotaDeferments($quotaDeferments)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getQuotaDeferments()
+        {
+        }
+        /**
+         * Output only. The reservation group path of the reservation assigned to this
+         * job. This field has a limit of 10 nested reservation groups. This is to
+         * maintain consistency between reservatins info schema and jobs info schema.
+         * The first reservation group is the root reservation group and the last is
+         * the leaf or lowest level reservation group.
+         *
+         * @param string[] $reservationGroupPath
+         */
+        public function setReservationGroupPath($reservationGroupPath)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getReservationGroupPath()
+        {
+        }
+        /**
+         * Output only. Job resource usage breakdown by reservation. This field
+         * reported misleading information and will no longer be populated.
+         *
+         * @deprecated
+         * @param JobStatisticsReservationUsage[] $reservationUsage
+         */
+        public function setReservationUsage($reservationUsage)
+        {
+        }
+        /**
+         * @deprecated
+         * @return JobStatisticsReservationUsage[]
+         */
+        public function getReservationUsage()
+        {
+        }
+        /**
+         * Output only. Name of the primary reservation assigned to this job. Note
+         * that this could be different than reservations reported in the reservation
+         * usage field if parent reservations were used to execute this job.
+         *
+         * @param string $reservationId
+         */
+        public function setReservationId($reservationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReservationId()
+        {
+        }
+        /**
+         * Output only. Statistics for row-level security. Present only for query and
+         * extract jobs.
+         *
+         * @param RowLevelSecurityStatistics $rowLevelSecurityStatistics
+         */
+        public function setRowLevelSecurityStatistics(RowLevelSecurityStatistics $rowLevelSecurityStatistics)
+        {
+        }
+        /**
+         * @return RowLevelSecurityStatistics
+         */
+        public function getRowLevelSecurityStatistics()
+        {
+        }
+        /**
+         * Output only. If this a child job of a script, specifies information about
+         * the context of this job within the script.
+         *
+         * @param ScriptStatistics $scriptStatistics
+         */
+        public function setScriptStatistics(ScriptStatistics $scriptStatistics)
+        {
+        }
+        /**
+         * @return ScriptStatistics
+         */
+        public function getScriptStatistics()
+        {
+        }
+        /**
+         * Output only. Information of the session if this job is part of one.
+         *
+         * @param SessionInfo $sessionInfo
+         */
+        public function setSessionInfo(SessionInfo $sessionInfo)
+        {
+        }
+        /**
+         * @return SessionInfo
+         */
+        public function getSessionInfo()
+        {
+        }
+        /**
+         * Output only. Start time of this job, in milliseconds since the epoch. This
+         * field will be present when the job transitions from the PENDING state to
+         * either RUNNING or DONE.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
+        /**
+         * Output only. Total bytes processed for the job.
+         *
+         * @param string $totalBytesProcessed
+         */
+        public function setTotalBytesProcessed($totalBytesProcessed)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalBytesProcessed()
+        {
+        }
+        /**
+         * Output only. Slot-milliseconds for the job.
+         *
+         * @param string $totalSlotMs
+         */
+        public function setTotalSlotMs($totalSlotMs)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalSlotMs()
+        {
+        }
+        /**
+         * Output only. [Alpha] Information of the multi-statement transaction if this
+         * job is part of one. This property is only expected on a child job or a job
+         * that is in a session. A script parent job is not part of the transaction
+         * started in the script.
+         *
+         * @param TransactionInfo $transactionInfo
+         */
+        public function setTransactionInfo(TransactionInfo $transactionInfo)
+        {
+        }
+        /**
+         * @return TransactionInfo
+         */
+        public function getTransactionInfo()
+        {
+        }
     }
-    public function getCompletionRatio()
-    {
-    }
+}
+namespace {
     /**
-     * Output only. Statistics for a copy job.
-     *
-     * @param JobStatistics5 $copy
+     * Runtime class alias of \Google\Service\Bigquery\JobStatistics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setCopy(JobStatistics5 $copy)
-    {
-    }
-    /**
-     * @return JobStatistics5
-     */
-    public function getCopy()
-    {
-    }
-    /**
-     * Output only. Creation time of this job, in milliseconds since the epoch.
-     * This field will be present on all jobs.
-     *
-     * @param string $creationTime
-     */
-    public function setCreationTime($creationTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreationTime()
-    {
-    }
-    /**
-     * Output only. Statistics for data-masking. Present only for query and
-     * extract jobs.
-     *
-     * @param DataMaskingStatistics $dataMaskingStatistics
-     */
-    public function setDataMaskingStatistics(DataMaskingStatistics $dataMaskingStatistics)
-    {
-    }
-    /**
-     * @return DataMaskingStatistics
-     */
-    public function getDataMaskingStatistics()
-    {
-    }
-    /**
-     * Output only. Name of edition corresponding to the reservation for this job
-     * at the time of this update.
-     *
-     * Accepted values: RESERVATION_EDITION_UNSPECIFIED, STANDARD, ENTERPRISE,
-     * ENTERPRISE_PLUS
-     *
-     * @param self::EDITION_* $edition
-     */
-    public function setEdition($edition)
-    {
-    }
-    /**
-     * @return self::EDITION_*
-     */
-    public function getEdition()
-    {
-    }
-    /**
-     * Output only. End time of this job, in milliseconds since the epoch. This
-     * field will be present whenever a job is in the DONE state.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndTime()
-    {
-    }
-    /**
-     * Output only. Statistics for an extract job.
-     *
-     * @param JobStatistics4 $extract
-     */
-    public function setExtract(JobStatistics4 $extract)
-    {
-    }
-    /**
-     * @return JobStatistics4
-     */
-    public function getExtract()
-    {
-    }
-    /**
-     * Output only. The duration in milliseconds of the execution of the final
-     * attempt of this job, as BigQuery may internally re-attempt to execute the
-     * job.
-     *
-     * @param string $finalExecutionDurationMs
-     */
-    public function setFinalExecutionDurationMs($finalExecutionDurationMs)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFinalExecutionDurationMs()
-    {
-    }
-    /**
-     * Output only. Statistics for a load job.
-     *
-     * @param JobStatistics3 $load
-     */
-    public function setLoad(JobStatistics3 $load)
-    {
-    }
-    /**
-     * @return JobStatistics3
-     */
-    public function getLoad()
-    {
-    }
-    /**
-     * Output only. Number of child jobs executed.
-     *
-     * @param string $numChildJobs
-     */
-    public function setNumChildJobs($numChildJobs)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNumChildJobs()
-    {
-    }
-    /**
-     * Output only. If this is a child job, specifies the job ID of the parent.
-     *
-     * @param string $parentJobId
-     */
-    public function setParentJobId($parentJobId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParentJobId()
-    {
-    }
-    /**
-     * Output only. Statistics for a query job.
-     *
-     * @param JobStatistics2 $query
-     */
-    public function setQuery(JobStatistics2 $query)
-    {
-    }
-    /**
-     * @return JobStatistics2
-     */
-    public function getQuery()
-    {
-    }
-    /**
-     * Output only. Quotas which delayed this job's start time.
-     *
-     * @param string[] $quotaDeferments
-     */
-    public function setQuotaDeferments($quotaDeferments)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getQuotaDeferments()
-    {
-    }
-    /**
-     * Output only. The reservation group path of the reservation assigned to this
-     * job. This field has a limit of 10 nested reservation groups. This is to
-     * maintain consistency between reservatins info schema and jobs info schema.
-     * The first reservation group is the root reservation group and the last is
-     * the leaf or lowest level reservation group.
-     *
-     * @param string[] $reservationGroupPath
-     */
-    public function setReservationGroupPath($reservationGroupPath)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getReservationGroupPath()
-    {
-    }
-    /**
-     * Output only. Job resource usage breakdown by reservation. This field
-     * reported misleading information and will no longer be populated.
-     *
-     * @deprecated
-     * @param JobStatisticsReservationUsage[] $reservationUsage
-     */
-    public function setReservationUsage($reservationUsage)
-    {
-    }
-    /**
-     * @deprecated
-     * @return JobStatisticsReservationUsage[]
-     */
-    public function getReservationUsage()
-    {
-    }
-    /**
-     * Output only. Name of the primary reservation assigned to this job. Note
-     * that this could be different than reservations reported in the reservation
-     * usage field if parent reservations were used to execute this job.
-     *
-     * @param string $reservationId
-     */
-    public function setReservationId($reservationId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReservationId()
-    {
-    }
-    /**
-     * Output only. Statistics for row-level security. Present only for query and
-     * extract jobs.
-     *
-     * @param RowLevelSecurityStatistics $rowLevelSecurityStatistics
-     */
-    public function setRowLevelSecurityStatistics(RowLevelSecurityStatistics $rowLevelSecurityStatistics)
-    {
-    }
-    /**
-     * @return RowLevelSecurityStatistics
-     */
-    public function getRowLevelSecurityStatistics()
-    {
-    }
-    /**
-     * Output only. If this a child job of a script, specifies information about
-     * the context of this job within the script.
-     *
-     * @param ScriptStatistics $scriptStatistics
-     */
-    public function setScriptStatistics(ScriptStatistics $scriptStatistics)
-    {
-    }
-    /**
-     * @return ScriptStatistics
-     */
-    public function getScriptStatistics()
-    {
-    }
-    /**
-     * Output only. Information of the session if this job is part of one.
-     *
-     * @param SessionInfo $sessionInfo
-     */
-    public function setSessionInfo(SessionInfo $sessionInfo)
-    {
-    }
-    /**
-     * @return SessionInfo
-     */
-    public function getSessionInfo()
-    {
-    }
-    /**
-     * Output only. Start time of this job, in milliseconds since the epoch. This
-     * field will be present when the job transitions from the PENDING state to
-     * either RUNNING or DONE.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
-    {
-    }
-    /**
-     * Output only. Total bytes processed for the job.
-     *
-     * @param string $totalBytesProcessed
-     */
-    public function setTotalBytesProcessed($totalBytesProcessed)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalBytesProcessed()
-    {
-    }
-    /**
-     * Output only. Slot-milliseconds for the job.
-     *
-     * @param string $totalSlotMs
-     */
-    public function setTotalSlotMs($totalSlotMs)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalSlotMs()
-    {
-    }
-    /**
-     * Output only. [Alpha] Information of the multi-statement transaction if this
-     * job is part of one. This property is only expected on a child job or a job
-     * that is in a session. A script parent job is not part of the transaction
-     * started in the script.
-     *
-     * @param TransactionInfo $transactionInfo
-     */
-    public function setTransactionInfo(TransactionInfo $transactionInfo)
-    {
-    }
-    /**
-     * @return TransactionInfo
-     */
-    public function getTransactionInfo()
+    class Google_Service_Bigquery_JobStatistics extends \Google\Service\Bigquery\JobStatistics
     {
     }
 }

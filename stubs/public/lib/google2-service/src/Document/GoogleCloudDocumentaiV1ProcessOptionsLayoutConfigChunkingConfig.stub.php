@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1ProcessOptionsLayoutConfigChunkingConfig extends \Google\Model
-{
-    /**
-     * Optional. The chunk sizes to use when splitting documents, in order of
-     * level.
-     *
-     * @var int
-     */
-    public $chunkSize;
-    /**
-     * Optional. Whether or not to include ancestor headings when splitting.
-     *
-     * @var bool
-     */
-    public $includeAncestorHeadings;
-    /**
-     * Optional. The chunk sizes to use when splitting documents, in order of
-     * level.
-     *
-     * @param int $chunkSize
-     */
-    public function setChunkSize($chunkSize)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1ProcessOptionsLayoutConfigChunkingConfig extends \Google\Model
     {
+        /**
+         * Optional. The chunk sizes to use when splitting documents, in order of
+         * level.
+         *
+         * @var int
+         */
+        public $chunkSize;
+        /**
+         * Optional. Whether or not to include ancestor headings when splitting.
+         *
+         * @var bool
+         */
+        public $includeAncestorHeadings;
+        /**
+         * Optional. The chunk sizes to use when splitting documents, in order of
+         * level.
+         *
+         * @param int $chunkSize
+         */
+        public function setChunkSize($chunkSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getChunkSize()
+        {
+        }
+        /**
+         * Optional. Whether or not to include ancestor headings when splitting.
+         *
+         * @param bool $includeAncestorHeadings
+         */
+        public function setIncludeAncestorHeadings($includeAncestorHeadings)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIncludeAncestorHeadings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1ProcessOptionsLayoutConfigChunkingConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChunkSize()
-    {
-    }
-    /**
-     * Optional. Whether or not to include ancestor headings when splitting.
-     *
-     * @param bool $includeAncestorHeadings
-     */
-    public function setIncludeAncestorHeadings($includeAncestorHeadings)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIncludeAncestorHeadings()
+    class Google_Service_Document_GoogleCloudDocumentaiV1ProcessOptionsLayoutConfigChunkingConfig extends \Google\Service\Document\GoogleCloudDocumentaiV1ProcessOptionsLayoutConfigChunkingConfig
     {
     }
 }

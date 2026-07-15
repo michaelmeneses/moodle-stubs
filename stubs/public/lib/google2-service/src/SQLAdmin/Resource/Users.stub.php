@@ -21,94 +21,106 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin\Resource;
-
-/**
- * The "users" collection of methods.
- * Typical usage is:
- *  <code>
- *   $sqladminService = new Google\Service\SQLAdmin(...);
- *   $users = $sqladminService->users;
- *  </code>
- */
-class Users extends \Google\Service\Resource
-{
+namespace Google\Service\SQLAdmin\Resource {
+    use Google\Service\SQLAdmin\Operation;
+    use Google\Service\SQLAdmin\User;
+    use Google\Service\SQLAdmin\UsersListResponse;
     /**
-     * Deletes a user from a Cloud SQL instance. (users.delete)
-     *
-     * @param string $project Project ID of the project that contains the instance.
-     * @param string $instance Database instance ID. This does not include the
-     * project ID.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string host Host of the user in the instance.
-     * @opt_param string name Name of the user in the instance.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * The "users" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $sqladminService = new Google\Service\SQLAdmin(...);
+     *   $users = $sqladminService->users;
+     *  </code>
      */
-    public function delete($project, $instance, $optParams = [])
+    class Users extends \Google\Service\Resource
     {
+        /**
+         * Deletes a user from a Cloud SQL instance. (users.delete)
+         *
+         * @param string $project Project ID of the project that contains the instance.
+         * @param string $instance Database instance ID. This does not include the
+         * project ID.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string host Host of the user in the instance.
+         * @opt_param string name Name of the user in the instance.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function delete($project, $instance, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves a resource containing information about a user. (users.get)
+         *
+         * @param string $project Project ID of the project that contains the instance.
+         * @param string $instance Database instance ID. This does not include the
+         * project ID.
+         * @param string $name User of the instance.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string host Host of a user of the instance.
+         * @return User
+         * @throws \Google\Service\Exception
+         */
+        public function get($project, $instance, $name, $optParams = [])
+        {
+        }
+        /**
+         * Creates a new user in a Cloud SQL instance. (users.insert)
+         *
+         * @param string $project Project ID of the project that contains the instance.
+         * @param string $instance Database instance ID. This does not include the
+         * project ID.
+         * @param User $postBody
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function insert($project, $instance, User $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Lists users in the specified Cloud SQL instance. (users.listUsers)
+         *
+         * @param string $project Project ID of the project that contains the instance.
+         * @param string $instance Database instance ID. This does not include the
+         * project ID.
+         * @param array $optParams Optional parameters.
+         * @return UsersListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listUsers($project, $instance, $optParams = [])
+        {
+        }
+        /**
+         * Updates an existing user in a Cloud SQL instance. (users.update)
+         *
+         * @param string $project Project ID of the project that contains the instance.
+         * @param string $instance Database instance ID. This does not include the
+         * project ID.
+         * @param User $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string databaseRoles Optional. List of database roles to grant to
+         * the user. body.database_roles will be ignored for update request.
+         * @opt_param string host Optional. Host of the user in the instance.
+         * @opt_param string name Name of the user in the instance.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function update($project, $instance, User $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Retrieves a resource containing information about a user. (users.get)
-     *
-     * @param string $project Project ID of the project that contains the instance.
-     * @param string $instance Database instance ID. This does not include the
-     * project ID.
-     * @param string $name User of the instance.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string host Host of a user of the instance.
-     * @return User
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\SQLAdmin\Resource\Users registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($project, $instance, $name, $optParams = [])
-    {
-    }
-    /**
-     * Creates a new user in a Cloud SQL instance. (users.insert)
-     *
-     * @param string $project Project ID of the project that contains the instance.
-     * @param string $instance Database instance ID. This does not include the
-     * project ID.
-     * @param User $postBody
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
-     */
-    public function insert($project, $instance, User $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Lists users in the specified Cloud SQL instance. (users.listUsers)
-     *
-     * @param string $project Project ID of the project that contains the instance.
-     * @param string $instance Database instance ID. This does not include the
-     * project ID.
-     * @param array $optParams Optional parameters.
-     * @return UsersListResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listUsers($project, $instance, $optParams = [])
-    {
-    }
-    /**
-     * Updates an existing user in a Cloud SQL instance. (users.update)
-     *
-     * @param string $project Project ID of the project that contains the instance.
-     * @param string $instance Database instance ID. This does not include the
-     * project ID.
-     * @param User $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string databaseRoles Optional. List of database roles to grant to
-     * the user. body.database_roles will be ignored for update request.
-     * @opt_param string host Optional. Host of the user in the instance.
-     * @opt_param string name Name of the user in the instance.
-     * @return Operation
-     * @throws \Google\Service\Exception
-     */
-    public function update($project, $instance, User $postBody, $optParams = [])
+    class Google_Service_SQLAdmin_Resource_Users extends \Google\Service\SQLAdmin\Resource\Users
     {
     }
 }

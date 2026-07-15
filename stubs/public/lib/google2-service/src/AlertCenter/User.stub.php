@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AlertCenter;
-
-class User extends \Google\Model
-{
-    /**
-     * Display name of the user.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Email address of the user.
-     *
-     * @var string
-     */
-    public $emailAddress;
-    /**
-     * Display name of the user.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\AlertCenter {
+    class User extends \Google\Model
     {
+        /**
+         * Display name of the user.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Email address of the user.
+         *
+         * @var string
+         */
+        public $emailAddress;
+        /**
+         * Display name of the user.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Email address of the user.
+         *
+         * @param string $emailAddress
+         */
+        public function setEmailAddress($emailAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmailAddress()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AlertCenter\User registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Email address of the user.
-     *
-     * @param string $emailAddress
-     */
-    public function setEmailAddress($emailAddress)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEmailAddress()
+    class Google_Service_AlertCenter_User extends \Google\Service\AlertCenter\User
     {
     }
 }

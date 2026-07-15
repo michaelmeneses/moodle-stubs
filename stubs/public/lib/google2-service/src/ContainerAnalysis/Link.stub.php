@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class Link extends \Google\Collection
-{
-    protected $collection_key = 'products';
-    protected $byproductsType = ByProducts::class;
-    protected $byproductsDataType = '';
-    public $command;
-    protected $environmentType = Environment::class;
-    protected $environmentDataType = '';
-    protected $materialsType = GrafeasV1beta1IntotoArtifact::class;
-    protected $materialsDataType = 'array';
-    protected $productsType = GrafeasV1beta1IntotoArtifact::class;
-    protected $productsDataType = 'array';
+namespace Google\Service\ContainerAnalysis {
+    class Link extends \Google\Collection
+    {
+        protected $collection_key = 'products';
+        protected $byproductsType = ByProducts::class;
+        protected $byproductsDataType = '';
+        public $command;
+        protected $environmentType = Environment::class;
+        protected $environmentDataType = '';
+        protected $materialsType = GrafeasV1beta1IntotoArtifact::class;
+        protected $materialsDataType = 'array';
+        protected $productsType = GrafeasV1beta1IntotoArtifact::class;
+        protected $productsDataType = 'array';
+        /**
+         * @param ByProducts
+         */
+        public function setByproducts(ByProducts $byproducts)
+        {
+        }
+        /**
+         * @return ByProducts
+         */
+        public function getByproducts()
+        {
+        }
+        public function setCommand($command)
+        {
+        }
+        public function getCommand()
+        {
+        }
+        /**
+         * @param Environment
+         */
+        public function setEnvironment(Environment $environment)
+        {
+        }
+        /**
+         * @return Environment
+         */
+        public function getEnvironment()
+        {
+        }
+        /**
+         * @param GrafeasV1beta1IntotoArtifact[]
+         */
+        public function setMaterials($materials)
+        {
+        }
+        /**
+         * @return GrafeasV1beta1IntotoArtifact[]
+         */
+        public function getMaterials()
+        {
+        }
+        /**
+         * @param GrafeasV1beta1IntotoArtifact[]
+         */
+        public function setProducts($products)
+        {
+        }
+        /**
+         * @return GrafeasV1beta1IntotoArtifact[]
+         */
+        public function getProducts()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @param ByProducts
+     * Runtime class alias of \Google\Service\ContainerAnalysis\Link registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setByproducts(ByProducts $byproducts)
-    {
-    }
-    /**
-     * @return ByProducts
-     */
-    public function getByproducts()
-    {
-    }
-    public function setCommand($command)
-    {
-    }
-    public function getCommand()
-    {
-    }
-    /**
-     * @param Environment
-     */
-    public function setEnvironment(Environment $environment)
-    {
-    }
-    /**
-     * @return Environment
-     */
-    public function getEnvironment()
-    {
-    }
-    /**
-     * @param GrafeasV1beta1IntotoArtifact[]
-     */
-    public function setMaterials($materials)
-    {
-    }
-    /**
-     * @return GrafeasV1beta1IntotoArtifact[]
-     */
-    public function getMaterials()
-    {
-    }
-    /**
-     * @param GrafeasV1beta1IntotoArtifact[]
-     */
-    public function setProducts($products)
-    {
-    }
-    /**
-     * @return GrafeasV1beta1IntotoArtifact[]
-     */
-    public function getProducts()
+    class Google_Service_ContainerAnalysis_Link extends \Google\Service\ContainerAnalysis\Link
     {
     }
 }

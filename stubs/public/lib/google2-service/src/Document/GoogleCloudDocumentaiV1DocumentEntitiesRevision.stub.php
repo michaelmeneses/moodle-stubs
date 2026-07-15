@@ -21,61 +21,70 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1DocumentEntitiesRevision extends \Google\Collection
-{
-    protected $collection_key = 'entities';
-    protected $entitiesType = GoogleCloudDocumentaiV1DocumentEntity::class;
-    protected $entitiesDataType = 'array';
-    protected $entityValidationOutputType = GoogleCloudDocumentaiV1DocumentEntityValidationOutput::class;
-    protected $entityValidationOutputDataType = '';
-    /**
-     * The revision id.
-     *
-     * @var string
-     */
-    public $revisionId;
-    /**
-     * The entities in this revision.
-     *
-     * @param GoogleCloudDocumentaiV1DocumentEntity[] $entities
-     */
-    public function setEntities($entities)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1DocumentEntitiesRevision extends \Google\Collection
     {
+        protected $collection_key = 'entities';
+        protected $entitiesType = GoogleCloudDocumentaiV1DocumentEntity::class;
+        protected $entitiesDataType = 'array';
+        protected $entityValidationOutputType = GoogleCloudDocumentaiV1DocumentEntityValidationOutput::class;
+        protected $entityValidationOutputDataType = '';
+        /**
+         * The revision id.
+         *
+         * @var string
+         */
+        public $revisionId;
+        /**
+         * The entities in this revision.
+         *
+         * @param GoogleCloudDocumentaiV1DocumentEntity[] $entities
+         */
+        public function setEntities($entities)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1DocumentEntity[]
+         */
+        public function getEntities()
+        {
+        }
+        /**
+         * The entity validation output for this revision.
+         *
+         * @param GoogleCloudDocumentaiV1DocumentEntityValidationOutput $entityValidationOutput
+         */
+        public function setEntityValidationOutput(GoogleCloudDocumentaiV1DocumentEntityValidationOutput $entityValidationOutput)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1DocumentEntityValidationOutput
+         */
+        public function getEntityValidationOutput()
+        {
+        }
+        /**
+         * The revision id.
+         *
+         * @param string $revisionId
+         */
+        public function setRevisionId($revisionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRevisionId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiV1DocumentEntity[]
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1DocumentEntitiesRevision registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntities()
-    {
-    }
-    /**
-     * The entity validation output for this revision.
-     *
-     * @param GoogleCloudDocumentaiV1DocumentEntityValidationOutput $entityValidationOutput
-     */
-    public function setEntityValidationOutput(GoogleCloudDocumentaiV1DocumentEntityValidationOutput $entityValidationOutput)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1DocumentEntityValidationOutput
-     */
-    public function getEntityValidationOutput()
-    {
-    }
-    /**
-     * The revision id.
-     *
-     * @param string $revisionId
-     */
-    public function setRevisionId($revisionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRevisionId()
+    class Google_Service_Document_GoogleCloudDocumentaiV1DocumentEntitiesRevision extends \Google\Service\Document\GoogleCloudDocumentaiV1DocumentEntitiesRevision
     {
     }
 }

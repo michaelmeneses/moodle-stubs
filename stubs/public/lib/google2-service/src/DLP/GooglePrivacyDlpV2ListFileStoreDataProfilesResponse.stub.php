@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2ListFileStoreDataProfilesResponse extends \Google\Collection
-{
-    protected $collection_key = 'fileStoreDataProfiles';
-    protected $fileStoreDataProfilesType = GooglePrivacyDlpV2FileStoreDataProfile::class;
-    protected $fileStoreDataProfilesDataType = 'array';
-    /**
-     * The next page token.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of data profiles.
-     *
-     * @param GooglePrivacyDlpV2FileStoreDataProfile[] $fileStoreDataProfiles
-     */
-    public function setFileStoreDataProfiles($fileStoreDataProfiles)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2ListFileStoreDataProfilesResponse extends \Google\Collection
     {
+        protected $collection_key = 'fileStoreDataProfiles';
+        protected $fileStoreDataProfilesType = GooglePrivacyDlpV2FileStoreDataProfile::class;
+        protected $fileStoreDataProfilesDataType = 'array';
+        /**
+         * The next page token.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of data profiles.
+         *
+         * @param GooglePrivacyDlpV2FileStoreDataProfile[] $fileStoreDataProfiles
+         */
+        public function setFileStoreDataProfiles($fileStoreDataProfiles)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2FileStoreDataProfile[]
+         */
+        public function getFileStoreDataProfiles()
+        {
+        }
+        /**
+         * The next page token.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2FileStoreDataProfile[]
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2ListFileStoreDataProfilesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFileStoreDataProfiles()
-    {
-    }
-    /**
-     * The next page token.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_DLP_GooglePrivacyDlpV2ListFileStoreDataProfilesResponse extends \Google\Service\DLP\GooglePrivacyDlpV2ListFileStoreDataProfilesResponse
     {
     }
 }

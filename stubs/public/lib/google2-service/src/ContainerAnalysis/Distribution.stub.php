@@ -21,142 +21,151 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class Distribution extends \Google\Model
-{
-    /**
-     * Unknown architecture.
-     */
-    public const ARCHITECTURE_ARCHITECTURE_UNSPECIFIED = 'ARCHITECTURE_UNSPECIFIED';
-    /**
-     * X86 architecture.
-     */
-    public const ARCHITECTURE_X86 = 'X86';
-    /**
-     * X64 architecture.
-     */
-    public const ARCHITECTURE_X64 = 'X64';
-    /**
-     * The CPU architecture for which packages in this distribution channel were
-     * built.
-     *
-     * @var string
-     */
-    public $architecture;
-    /**
-     * Required. The cpe_uri in [CPE format](https://cpe.mitre.org/specification/)
-     * denoting the package manager version distributing a package.
-     *
-     * @var string
-     */
-    public $cpeUri;
-    /**
-     * The distribution channel-specific description of this package.
-     *
-     * @var string
-     */
-    public $description;
-    protected $latestVersionType = Version::class;
-    protected $latestVersionDataType = '';
-    /**
-     * A freeform string denoting the maintainer of this package.
-     *
-     * @var string
-     */
-    public $maintainer;
-    /**
-     * The distribution channel-specific homepage for this package.
-     *
-     * @var string
-     */
-    public $url;
-    /**
-     * The CPU architecture for which packages in this distribution channel were
-     * built.
-     *
-     * Accepted values: ARCHITECTURE_UNSPECIFIED, X86, X64
-     *
-     * @param self::ARCHITECTURE_* $architecture
-     */
-    public function setArchitecture($architecture)
+namespace Google\Service\ContainerAnalysis {
+    class Distribution extends \Google\Model
     {
+        /**
+         * Unknown architecture.
+         */
+        public const ARCHITECTURE_ARCHITECTURE_UNSPECIFIED = 'ARCHITECTURE_UNSPECIFIED';
+        /**
+         * X86 architecture.
+         */
+        public const ARCHITECTURE_X86 = 'X86';
+        /**
+         * X64 architecture.
+         */
+        public const ARCHITECTURE_X64 = 'X64';
+        /**
+         * The CPU architecture for which packages in this distribution channel were
+         * built.
+         *
+         * @var string
+         */
+        public $architecture;
+        /**
+         * Required. The cpe_uri in [CPE format](https://cpe.mitre.org/specification/)
+         * denoting the package manager version distributing a package.
+         *
+         * @var string
+         */
+        public $cpeUri;
+        /**
+         * The distribution channel-specific description of this package.
+         *
+         * @var string
+         */
+        public $description;
+        protected $latestVersionType = Version::class;
+        protected $latestVersionDataType = '';
+        /**
+         * A freeform string denoting the maintainer of this package.
+         *
+         * @var string
+         */
+        public $maintainer;
+        /**
+         * The distribution channel-specific homepage for this package.
+         *
+         * @var string
+         */
+        public $url;
+        /**
+         * The CPU architecture for which packages in this distribution channel were
+         * built.
+         *
+         * Accepted values: ARCHITECTURE_UNSPECIFIED, X86, X64
+         *
+         * @param self::ARCHITECTURE_* $architecture
+         */
+        public function setArchitecture($architecture)
+        {
+        }
+        /**
+         * @return self::ARCHITECTURE_*
+         */
+        public function getArchitecture()
+        {
+        }
+        /**
+         * Required. The cpe_uri in [CPE format](https://cpe.mitre.org/specification/)
+         * denoting the package manager version distributing a package.
+         *
+         * @param string $cpeUri
+         */
+        public function setCpeUri($cpeUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCpeUri()
+        {
+        }
+        /**
+         * The distribution channel-specific description of this package.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * The latest available version of this package in this distribution channel.
+         *
+         * @param Version $latestVersion
+         */
+        public function setLatestVersion(Version $latestVersion)
+        {
+        }
+        /**
+         * @return Version
+         */
+        public function getLatestVersion()
+        {
+        }
+        /**
+         * A freeform string denoting the maintainer of this package.
+         *
+         * @param string $maintainer
+         */
+        public function setMaintainer($maintainer)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaintainer()
+        {
+        }
+        /**
+         * The distribution channel-specific homepage for this package.
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::ARCHITECTURE_*
+     * Runtime class alias of \Google\Service\ContainerAnalysis\Distribution registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArchitecture()
-    {
-    }
-    /**
-     * Required. The cpe_uri in [CPE format](https://cpe.mitre.org/specification/)
-     * denoting the package manager version distributing a package.
-     *
-     * @param string $cpeUri
-     */
-    public function setCpeUri($cpeUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCpeUri()
-    {
-    }
-    /**
-     * The distribution channel-specific description of this package.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * The latest available version of this package in this distribution channel.
-     *
-     * @param Version $latestVersion
-     */
-    public function setLatestVersion(Version $latestVersion)
-    {
-    }
-    /**
-     * @return Version
-     */
-    public function getLatestVersion()
-    {
-    }
-    /**
-     * A freeform string denoting the maintainer of this package.
-     *
-     * @param string $maintainer
-     */
-    public function setMaintainer($maintainer)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMaintainer()
-    {
-    }
-    /**
-     * The distribution channel-specific homepage for this package.
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
+    class Google_Service_ContainerAnalysis_Distribution extends \Google\Service\ContainerAnalysis\Distribution
     {
     }
 }

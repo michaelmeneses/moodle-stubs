@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class ListRepricingProductReportsResponse extends \Google\Collection
-{
-    protected $collection_key = 'repricingProductReports';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * @var RepricingProductReport[]
-     */
-    public $repricingProductReports;
-    protected $repricingProductReportsType = RepricingProductReport::class;
-    protected $repricingProductReportsDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\ShoppingContent {
+    class ListRepricingProductReportsResponse extends \Google\Collection
     {
+        protected $collection_key = 'repricingProductReports';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * @var RepricingProductReport[]
+         */
+        public $repricingProductReports;
+        protected $repricingProductReportsType = RepricingProductReport::class;
+        protected $repricingProductReportsDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param RepricingProductReport[]
+         */
+        public function setRepricingProductReports($repricingProductReports)
+        {
+        }
+        /**
+         * @return RepricingProductReport[]
+         */
+        public function getRepricingProductReports()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\ListRepricingProductReportsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param RepricingProductReport[]
-     */
-    public function setRepricingProductReports($repricingProductReports)
-    {
-    }
-    /**
-     * @return RepricingProductReport[]
-     */
-    public function getRepricingProductReports()
+    class Google_Service_ShoppingContent_ListRepricingProductReportsResponse extends \Google\Service\ShoppingContent\ListRepricingProductReportsResponse
     {
     }
 }

@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigQueryDataTransfer;
-
-class ListTransferConfigsResponse extends \Google\Collection
-{
-    protected $collection_key = 'transferConfigs';
-    /**
-     * Output only. The next-pagination token. For multiple-page list results,
-     * this token can be used as the `ListTransferConfigsRequest.page_token` to
-     * request the next page of list results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $transferConfigsType = TransferConfig::class;
-    protected $transferConfigsDataType = 'array';
-    /**
-     * Output only. The next-pagination token. For multiple-page list results,
-     * this token can be used as the `ListTransferConfigsRequest.page_token` to
-     * request the next page of list results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\BigQueryDataTransfer {
+    class ListTransferConfigsResponse extends \Google\Collection
     {
+        protected $collection_key = 'transferConfigs';
+        /**
+         * Output only. The next-pagination token. For multiple-page list results,
+         * this token can be used as the `ListTransferConfigsRequest.page_token` to
+         * request the next page of list results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $transferConfigsType = TransferConfig::class;
+        protected $transferConfigsDataType = 'array';
+        /**
+         * Output only. The next-pagination token. For multiple-page list results,
+         * this token can be used as the `ListTransferConfigsRequest.page_token` to
+         * request the next page of list results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Output only. The stored pipeline transfer configurations.
+         *
+         * @param TransferConfig[] $transferConfigs
+         */
+        public function setTransferConfigs($transferConfigs)
+        {
+        }
+        /**
+         * @return TransferConfig[]
+         */
+        public function getTransferConfigs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BigQueryDataTransfer\ListTransferConfigsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Output only. The stored pipeline transfer configurations.
-     *
-     * @param TransferConfig[] $transferConfigs
-     */
-    public function setTransferConfigs($transferConfigs)
-    {
-    }
-    /**
-     * @return TransferConfig[]
-     */
-    public function getTransferConfigs()
+    class Google_Service_BigQueryDataTransfer_ListTransferConfigsResponse extends \Google\Service\BigQueryDataTransfer\ListTransferConfigsResponse
     {
     }
 }

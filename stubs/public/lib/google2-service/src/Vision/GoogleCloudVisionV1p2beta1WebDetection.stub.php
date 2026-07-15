@@ -21,109 +21,118 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class GoogleCloudVisionV1p2beta1WebDetection extends \Google\Collection
-{
-    protected $collection_key = 'webEntities';
-    protected $bestGuessLabelsType = GoogleCloudVisionV1p2beta1WebDetectionWebLabel::class;
-    protected $bestGuessLabelsDataType = 'array';
-    protected $fullMatchingImagesType = GoogleCloudVisionV1p2beta1WebDetectionWebImage::class;
-    protected $fullMatchingImagesDataType = 'array';
-    protected $pagesWithMatchingImagesType = GoogleCloudVisionV1p2beta1WebDetectionWebPage::class;
-    protected $pagesWithMatchingImagesDataType = 'array';
-    protected $partialMatchingImagesType = GoogleCloudVisionV1p2beta1WebDetectionWebImage::class;
-    protected $partialMatchingImagesDataType = 'array';
-    protected $visuallySimilarImagesType = GoogleCloudVisionV1p2beta1WebDetectionWebImage::class;
-    protected $visuallySimilarImagesDataType = 'array';
-    protected $webEntitiesType = GoogleCloudVisionV1p2beta1WebDetectionWebEntity::class;
-    protected $webEntitiesDataType = 'array';
-    /**
-     * The service's best guess as to the topic of the request image. Inferred
-     * from similar images on the open web.
-     *
-     * @param GoogleCloudVisionV1p2beta1WebDetectionWebLabel[] $bestGuessLabels
-     */
-    public function setBestGuessLabels($bestGuessLabels)
+namespace Google\Service\Vision {
+    class GoogleCloudVisionV1p2beta1WebDetection extends \Google\Collection
     {
+        protected $collection_key = 'webEntities';
+        protected $bestGuessLabelsType = GoogleCloudVisionV1p2beta1WebDetectionWebLabel::class;
+        protected $bestGuessLabelsDataType = 'array';
+        protected $fullMatchingImagesType = GoogleCloudVisionV1p2beta1WebDetectionWebImage::class;
+        protected $fullMatchingImagesDataType = 'array';
+        protected $pagesWithMatchingImagesType = GoogleCloudVisionV1p2beta1WebDetectionWebPage::class;
+        protected $pagesWithMatchingImagesDataType = 'array';
+        protected $partialMatchingImagesType = GoogleCloudVisionV1p2beta1WebDetectionWebImage::class;
+        protected $partialMatchingImagesDataType = 'array';
+        protected $visuallySimilarImagesType = GoogleCloudVisionV1p2beta1WebDetectionWebImage::class;
+        protected $visuallySimilarImagesDataType = 'array';
+        protected $webEntitiesType = GoogleCloudVisionV1p2beta1WebDetectionWebEntity::class;
+        protected $webEntitiesDataType = 'array';
+        /**
+         * The service's best guess as to the topic of the request image. Inferred
+         * from similar images on the open web.
+         *
+         * @param GoogleCloudVisionV1p2beta1WebDetectionWebLabel[] $bestGuessLabels
+         */
+        public function setBestGuessLabels($bestGuessLabels)
+        {
+        }
+        /**
+         * @return GoogleCloudVisionV1p2beta1WebDetectionWebLabel[]
+         */
+        public function getBestGuessLabels()
+        {
+        }
+        /**
+         * Fully matching images from the Internet. Can include resized copies of the
+         * query image.
+         *
+         * @param GoogleCloudVisionV1p2beta1WebDetectionWebImage[] $fullMatchingImages
+         */
+        public function setFullMatchingImages($fullMatchingImages)
+        {
+        }
+        /**
+         * @return GoogleCloudVisionV1p2beta1WebDetectionWebImage[]
+         */
+        public function getFullMatchingImages()
+        {
+        }
+        /**
+         * Web pages containing the matching images from the Internet.
+         *
+         * @param GoogleCloudVisionV1p2beta1WebDetectionWebPage[] $pagesWithMatchingImages
+         */
+        public function setPagesWithMatchingImages($pagesWithMatchingImages)
+        {
+        }
+        /**
+         * @return GoogleCloudVisionV1p2beta1WebDetectionWebPage[]
+         */
+        public function getPagesWithMatchingImages()
+        {
+        }
+        /**
+         * Partial matching images from the Internet. Those images are similar enough
+         * to share some key-point features. For example an original image will likely
+         * have partial matching for its crops.
+         *
+         * @param GoogleCloudVisionV1p2beta1WebDetectionWebImage[] $partialMatchingImages
+         */
+        public function setPartialMatchingImages($partialMatchingImages)
+        {
+        }
+        /**
+         * @return GoogleCloudVisionV1p2beta1WebDetectionWebImage[]
+         */
+        public function getPartialMatchingImages()
+        {
+        }
+        /**
+         * The visually similar image results.
+         *
+         * @param GoogleCloudVisionV1p2beta1WebDetectionWebImage[] $visuallySimilarImages
+         */
+        public function setVisuallySimilarImages($visuallySimilarImages)
+        {
+        }
+        /**
+         * @return GoogleCloudVisionV1p2beta1WebDetectionWebImage[]
+         */
+        public function getVisuallySimilarImages()
+        {
+        }
+        /**
+         * Deduced entities from similar images on the Internet.
+         *
+         * @param GoogleCloudVisionV1p2beta1WebDetectionWebEntity[] $webEntities
+         */
+        public function setWebEntities($webEntities)
+        {
+        }
+        /**
+         * @return GoogleCloudVisionV1p2beta1WebDetectionWebEntity[]
+         */
+        public function getWebEntities()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudVisionV1p2beta1WebDetectionWebLabel[]
+     * Runtime class alias of \Google\Service\Vision\GoogleCloudVisionV1p2beta1WebDetection registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBestGuessLabels()
-    {
-    }
-    /**
-     * Fully matching images from the Internet. Can include resized copies of the
-     * query image.
-     *
-     * @param GoogleCloudVisionV1p2beta1WebDetectionWebImage[] $fullMatchingImages
-     */
-    public function setFullMatchingImages($fullMatchingImages)
-    {
-    }
-    /**
-     * @return GoogleCloudVisionV1p2beta1WebDetectionWebImage[]
-     */
-    public function getFullMatchingImages()
-    {
-    }
-    /**
-     * Web pages containing the matching images from the Internet.
-     *
-     * @param GoogleCloudVisionV1p2beta1WebDetectionWebPage[] $pagesWithMatchingImages
-     */
-    public function setPagesWithMatchingImages($pagesWithMatchingImages)
-    {
-    }
-    /**
-     * @return GoogleCloudVisionV1p2beta1WebDetectionWebPage[]
-     */
-    public function getPagesWithMatchingImages()
-    {
-    }
-    /**
-     * Partial matching images from the Internet. Those images are similar enough
-     * to share some key-point features. For example an original image will likely
-     * have partial matching for its crops.
-     *
-     * @param GoogleCloudVisionV1p2beta1WebDetectionWebImage[] $partialMatchingImages
-     */
-    public function setPartialMatchingImages($partialMatchingImages)
-    {
-    }
-    /**
-     * @return GoogleCloudVisionV1p2beta1WebDetectionWebImage[]
-     */
-    public function getPartialMatchingImages()
-    {
-    }
-    /**
-     * The visually similar image results.
-     *
-     * @param GoogleCloudVisionV1p2beta1WebDetectionWebImage[] $visuallySimilarImages
-     */
-    public function setVisuallySimilarImages($visuallySimilarImages)
-    {
-    }
-    /**
-     * @return GoogleCloudVisionV1p2beta1WebDetectionWebImage[]
-     */
-    public function getVisuallySimilarImages()
-    {
-    }
-    /**
-     * Deduced entities from similar images on the Internet.
-     *
-     * @param GoogleCloudVisionV1p2beta1WebDetectionWebEntity[] $webEntities
-     */
-    public function setWebEntities($webEntities)
-    {
-    }
-    /**
-     * @return GoogleCloudVisionV1p2beta1WebDetectionWebEntity[]
-     */
-    public function getWebEntities()
+    class Google_Service_Vision_GoogleCloudVisionV1p2beta1WebDetection extends \Google\Service\Vision\GoogleCloudVisionV1p2beta1WebDetection
     {
     }
 }

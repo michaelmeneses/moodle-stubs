@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class Expr extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var string
-     */
-    public $expression;
-    /**
-     * @var string
-     */
-    public $location;
-    /**
-     * @var string
-     */
-    public $title;
-    /**
-     * @param string
-     */
-    public function setDescription($description)
+namespace Google\Service\GKEHub {
+    class Expr extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $description;
+        /**
+         * @var string
+         */
+        public $expression;
+        /**
+         * @var string
+         */
+        public $location;
+        /**
+         * @var string
+         */
+        public $title;
+        /**
+         * @param string
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setExpression($expression)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpression()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEHub\Expr registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setExpression($expression)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExpression()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLocation($location)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocation()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_GKEHub_Expr extends \Google\Service\GKEHub\Expr
     {
     }
 }

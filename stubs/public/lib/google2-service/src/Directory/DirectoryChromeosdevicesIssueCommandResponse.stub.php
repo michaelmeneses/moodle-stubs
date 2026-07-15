@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class DirectoryChromeosdevicesIssueCommandResponse extends \Google\Model
-{
-    /**
-     * The unique ID of the issued command, used to retrieve the command status.
-     *
-     * @var string
-     */
-    public $commandId;
-    /**
-     * The unique ID of the issued command, used to retrieve the command status.
-     *
-     * @param string $commandId
-     */
-    public function setCommandId($commandId)
+namespace Google\Service\Directory {
+    class DirectoryChromeosdevicesIssueCommandResponse extends \Google\Model
     {
+        /**
+         * The unique ID of the issued command, used to retrieve the command status.
+         *
+         * @var string
+         */
+        public $commandId;
+        /**
+         * The unique ID of the issued command, used to retrieve the command status.
+         *
+         * @param string $commandId
+         */
+        public function setCommandId($commandId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCommandId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Directory\DirectoryChromeosdevicesIssueCommandResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCommandId()
+    class Google_Service_Directory_DirectoryChromeosdevicesIssueCommandResponse extends \Google\Service\Directory\DirectoryChromeosdevicesIssueCommandResponse
     {
     }
 }

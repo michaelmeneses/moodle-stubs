@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIAP;
-
-class OAuth2 extends \Google\Model
-{
-    /**
-     * The OAuth 2.0 client ID registered in the workforce identity federation
-     * OAuth 2.0 Server.
-     *
-     * @var string
-     */
-    public $clientId;
-    /**
-     * Input only. The OAuth 2.0 client secret created while registering the
-     * client ID.
-     *
-     * @var string
-     */
-    public $clientSecret;
-    /**
-     * Output only. SHA256 hash value for the client secret. This field is
-     * returned by IAP when the settings are retrieved.
-     *
-     * @var string
-     */
-    public $clientSecretSha256;
-    /**
-     * The OAuth 2.0 client ID registered in the workforce identity federation
-     * OAuth 2.0 Server.
-     *
-     * @param string $clientId
-     */
-    public function setClientId($clientId)
+namespace Google\Service\CloudIAP {
+    class OAuth2 extends \Google\Model
     {
+        /**
+         * The OAuth 2.0 client ID registered in the workforce identity federation
+         * OAuth 2.0 Server.
+         *
+         * @var string
+         */
+        public $clientId;
+        /**
+         * Input only. The OAuth 2.0 client secret created while registering the
+         * client ID.
+         *
+         * @var string
+         */
+        public $clientSecret;
+        /**
+         * Output only. SHA256 hash value for the client secret. This field is
+         * returned by IAP when the settings are retrieved.
+         *
+         * @var string
+         */
+        public $clientSecretSha256;
+        /**
+         * The OAuth 2.0 client ID registered in the workforce identity federation
+         * OAuth 2.0 Server.
+         *
+         * @param string $clientId
+         */
+        public function setClientId($clientId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClientId()
+        {
+        }
+        /**
+         * Input only. The OAuth 2.0 client secret created while registering the
+         * client ID.
+         *
+         * @param string $clientSecret
+         */
+        public function setClientSecret($clientSecret)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClientSecret()
+        {
+        }
+        /**
+         * Output only. SHA256 hash value for the client secret. This field is
+         * returned by IAP when the settings are retrieved.
+         *
+         * @param string $clientSecretSha256
+         */
+        public function setClientSecretSha256($clientSecretSha256)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClientSecretSha256()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudIAP\OAuth2 registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClientId()
-    {
-    }
-    /**
-     * Input only. The OAuth 2.0 client secret created while registering the
-     * client ID.
-     *
-     * @param string $clientSecret
-     */
-    public function setClientSecret($clientSecret)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getClientSecret()
-    {
-    }
-    /**
-     * Output only. SHA256 hash value for the client secret. This field is
-     * returned by IAP when the settings are retrieved.
-     *
-     * @param string $clientSecretSha256
-     */
-    public function setClientSecretSha256($clientSecretSha256)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getClientSecretSha256()
+    class Google_Service_CloudIAP_OAuth2 extends \Google\Service\CloudIAP\OAuth2
     {
     }
 }

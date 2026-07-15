@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class AdvertiserAdServerConfig extends \Google\Model
-{
-    protected $cmHybridConfigType = CmHybridConfig::class;
-    protected $cmHybridConfigDataType = '';
-    protected $thirdPartyOnlyConfigType = ThirdPartyOnlyConfig::class;
-    protected $thirdPartyOnlyConfigDataType = '';
-    /**
-     * The configuration for advertisers that use both Campaign Manager 360
-     * (CM360) and third-party ad servers.
-     *
-     * @param CmHybridConfig $cmHybridConfig
-     */
-    public function setCmHybridConfig(CmHybridConfig $cmHybridConfig)
+namespace Google\Service\DisplayVideo {
+    class AdvertiserAdServerConfig extends \Google\Model
     {
+        protected $cmHybridConfigType = CmHybridConfig::class;
+        protected $cmHybridConfigDataType = '';
+        protected $thirdPartyOnlyConfigType = ThirdPartyOnlyConfig::class;
+        protected $thirdPartyOnlyConfigDataType = '';
+        /**
+         * The configuration for advertisers that use both Campaign Manager 360
+         * (CM360) and third-party ad servers.
+         *
+         * @param CmHybridConfig $cmHybridConfig
+         */
+        public function setCmHybridConfig(CmHybridConfig $cmHybridConfig)
+        {
+        }
+        /**
+         * @return CmHybridConfig
+         */
+        public function getCmHybridConfig()
+        {
+        }
+        /**
+         * The configuration for advertisers that use third-party ad servers only.
+         *
+         * @param ThirdPartyOnlyConfig $thirdPartyOnlyConfig
+         */
+        public function setThirdPartyOnlyConfig(ThirdPartyOnlyConfig $thirdPartyOnlyConfig)
+        {
+        }
+        /**
+         * @return ThirdPartyOnlyConfig
+         */
+        public function getThirdPartyOnlyConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CmHybridConfig
+     * Runtime class alias of \Google\Service\DisplayVideo\AdvertiserAdServerConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCmHybridConfig()
-    {
-    }
-    /**
-     * The configuration for advertisers that use third-party ad servers only.
-     *
-     * @param ThirdPartyOnlyConfig $thirdPartyOnlyConfig
-     */
-    public function setThirdPartyOnlyConfig(ThirdPartyOnlyConfig $thirdPartyOnlyConfig)
-    {
-    }
-    /**
-     * @return ThirdPartyOnlyConfig
-     */
-    public function getThirdPartyOnlyConfig()
+    class Google_Service_DisplayVideo_AdvertiserAdServerConfig extends \Google\Service\DisplayVideo\AdvertiserAdServerConfig
     {
     }
 }

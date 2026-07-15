@@ -29,6 +29,8 @@
  */
 namespace tool_usertours\output;
 
+use tool_usertours\helper;
+use tool_usertours\step as stepsource;
 /**
  * Tour Step Renderable.
  *

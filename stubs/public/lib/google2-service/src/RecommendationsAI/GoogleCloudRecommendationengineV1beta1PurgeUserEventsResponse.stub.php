@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecommendationsAI;
-
-class GoogleCloudRecommendationengineV1beta1PurgeUserEventsResponse extends \Google\Collection
-{
-    protected $collection_key = 'userEventsSample';
-    /**
-     * The total count of events purged as a result of the operation.
-     *
-     * @var string
-     */
-    public $purgedEventsCount;
-    protected $userEventsSampleType = GoogleCloudRecommendationengineV1beta1UserEvent::class;
-    protected $userEventsSampleDataType = 'array';
-    /**
-     * The total count of events purged as a result of the operation.
-     *
-     * @param string $purgedEventsCount
-     */
-    public function setPurgedEventsCount($purgedEventsCount)
+namespace Google\Service\RecommendationsAI {
+    class GoogleCloudRecommendationengineV1beta1PurgeUserEventsResponse extends \Google\Collection
     {
+        protected $collection_key = 'userEventsSample';
+        /**
+         * The total count of events purged as a result of the operation.
+         *
+         * @var string
+         */
+        public $purgedEventsCount;
+        protected $userEventsSampleType = GoogleCloudRecommendationengineV1beta1UserEvent::class;
+        protected $userEventsSampleDataType = 'array';
+        /**
+         * The total count of events purged as a result of the operation.
+         *
+         * @param string $purgedEventsCount
+         */
+        public function setPurgedEventsCount($purgedEventsCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPurgedEventsCount()
+        {
+        }
+        /**
+         * A sampling of events deleted (or will be deleted) depending on the `force`
+         * property in the request. Max of 500 items will be returned.
+         *
+         * @param GoogleCloudRecommendationengineV1beta1UserEvent[] $userEventsSample
+         */
+        public function setUserEventsSample($userEventsSample)
+        {
+        }
+        /**
+         * @return GoogleCloudRecommendationengineV1beta1UserEvent[]
+         */
+        public function getUserEventsSample()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1PurgeUserEventsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPurgedEventsCount()
-    {
-    }
-    /**
-     * A sampling of events deleted (or will be deleted) depending on the `force`
-     * property in the request. Max of 500 items will be returned.
-     *
-     * @param GoogleCloudRecommendationengineV1beta1UserEvent[] $userEventsSample
-     */
-    public function setUserEventsSample($userEventsSample)
-    {
-    }
-    /**
-     * @return GoogleCloudRecommendationengineV1beta1UserEvent[]
-     */
-    public function getUserEventsSample()
+    class Google_Service_RecommendationsAI_GoogleCloudRecommendationengineV1beta1PurgeUserEventsResponse extends \Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1PurgeUserEventsResponse
     {
     }
 }

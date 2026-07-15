@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class SocialGraphNodeProto extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $sgnDomain;
-    /**
-     * @var string
-     */
-    public $sgnPk;
-    /**
-     * @param string
-     */
-    public function setSgnDomain($sgnDomain)
+namespace Google\Service\CloudSearch {
+    class SocialGraphNodeProto extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $sgnDomain;
+        /**
+         * @var string
+         */
+        public $sgnPk;
+        /**
+         * @param string
+         */
+        public function setSgnDomain($sgnDomain)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSgnDomain()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSgnPk($sgnPk)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSgnPk()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\SocialGraphNodeProto registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSgnDomain()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSgnPk($sgnPk)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSgnPk()
+    class Google_Service_CloudSearch_SocialGraphNodeProto extends \Google\Service\CloudSearch\SocialGraphNodeProto
     {
     }
 }

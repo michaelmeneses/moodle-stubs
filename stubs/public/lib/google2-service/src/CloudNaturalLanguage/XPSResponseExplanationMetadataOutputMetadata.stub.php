@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSResponseExplanationMetadataOutputMetadata extends \Google\Model
-{
-    /**
-     * Name of the output tensor. Only needed in train response.
-     *
-     * @var string
-     */
-    public $outputTensorName;
-    /**
-     * Name of the output tensor. Only needed in train response.
-     *
-     * @param string $outputTensorName
-     */
-    public function setOutputTensorName($outputTensorName)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSResponseExplanationMetadataOutputMetadata extends \Google\Model
     {
+        /**
+         * Name of the output tensor. Only needed in train response.
+         *
+         * @var string
+         */
+        public $outputTensorName;
+        /**
+         * Name of the output tensor. Only needed in train response.
+         *
+         * @param string $outputTensorName
+         */
+        public function setOutputTensorName($outputTensorName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOutputTensorName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSResponseExplanationMetadataOutputMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOutputTensorName()
+    class Google_Service_CloudNaturalLanguage_XPSResponseExplanationMetadataOutputMetadata extends \Google\Service\CloudNaturalLanguage\XPSResponseExplanationMetadataOutputMetadata
     {
     }
 }

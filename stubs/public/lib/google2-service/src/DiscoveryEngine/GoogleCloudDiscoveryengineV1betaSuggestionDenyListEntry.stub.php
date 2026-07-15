@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaSuggestionDenyListEntry extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $blockPhrase;
-    /**
-     * @var string
-     */
-    public $matchOperator;
-    /**
-     * @param string
-     */
-    public function setBlockPhrase($blockPhrase)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaSuggestionDenyListEntry extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $blockPhrase;
+        /**
+         * @var string
+         */
+        public $matchOperator;
+        /**
+         * @param string
+         */
+        public function setBlockPhrase($blockPhrase)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBlockPhrase()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMatchOperator($matchOperator)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMatchOperator()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaSuggestionDenyListEntry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBlockPhrase()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMatchOperator($matchOperator)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMatchOperator()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaSuggestionDenyListEntry extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaSuggestionDenyListEntry
     {
     }
 }

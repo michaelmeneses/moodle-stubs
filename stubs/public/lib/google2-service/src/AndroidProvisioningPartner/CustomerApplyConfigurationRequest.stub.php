@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidProvisioningPartner;
-
-class CustomerApplyConfigurationRequest extends \Google\Model
-{
-    /**
-     * Required. The configuration applied to the device in the format
-     * `customers/[CUSTOMER_ID]/configurations/[CONFIGURATION_ID]`.
-     *
-     * @var string
-     */
-    public $configuration;
-    protected $deviceType = DeviceReference::class;
-    protected $deviceDataType = '';
-    /**
-     * Required. The configuration applied to the device in the format
-     * `customers/[CUSTOMER_ID]/configurations/[CONFIGURATION_ID]`.
-     *
-     * @param string $configuration
-     */
-    public function setConfiguration($configuration)
+namespace Google\Service\AndroidProvisioningPartner {
+    class CustomerApplyConfigurationRequest extends \Google\Model
     {
+        /**
+         * Required. The configuration applied to the device in the format
+         * `customers/[CUSTOMER_ID]/configurations/[CONFIGURATION_ID]`.
+         *
+         * @var string
+         */
+        public $configuration;
+        protected $deviceType = DeviceReference::class;
+        protected $deviceDataType = '';
+        /**
+         * Required. The configuration applied to the device in the format
+         * `customers/[CUSTOMER_ID]/configurations/[CONFIGURATION_ID]`.
+         *
+         * @param string $configuration
+         */
+        public function setConfiguration($configuration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConfiguration()
+        {
+        }
+        /**
+         * Required. The device the configuration is applied to. There are custom
+         * validations in ApplyConfigurationRequestValidator
+         *
+         * @param DeviceReference $device
+         */
+        public function setDevice(DeviceReference $device)
+        {
+        }
+        /**
+         * @return DeviceReference
+         */
+        public function getDevice()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidProvisioningPartner\CustomerApplyConfigurationRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfiguration()
-    {
-    }
-    /**
-     * Required. The device the configuration is applied to. There are custom
-     * validations in ApplyConfigurationRequestValidator
-     *
-     * @param DeviceReference $device
-     */
-    public function setDevice(DeviceReference $device)
-    {
-    }
-    /**
-     * @return DeviceReference
-     */
-    public function getDevice()
+    class Google_Service_AndroidProvisioningPartner_CustomerApplyConfigurationRequest extends \Google\Service\AndroidProvisioningPartner\CustomerApplyConfigurationRequest
     {
     }
 }

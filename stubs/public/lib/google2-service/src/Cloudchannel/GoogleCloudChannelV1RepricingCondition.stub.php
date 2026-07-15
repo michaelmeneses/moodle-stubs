@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1RepricingCondition extends \Google\Model
-{
-    protected $skuGroupConditionType = GoogleCloudChannelV1SkuGroupCondition::class;
-    protected $skuGroupConditionDataType = '';
-    /**
-     * SKU Group condition for override.
-     *
-     * @param GoogleCloudChannelV1SkuGroupCondition $skuGroupCondition
-     */
-    public function setSkuGroupCondition(GoogleCloudChannelV1SkuGroupCondition $skuGroupCondition)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1RepricingCondition extends \Google\Model
     {
+        protected $skuGroupConditionType = GoogleCloudChannelV1SkuGroupCondition::class;
+        protected $skuGroupConditionDataType = '';
+        /**
+         * SKU Group condition for override.
+         *
+         * @param GoogleCloudChannelV1SkuGroupCondition $skuGroupCondition
+         */
+        public function setSkuGroupCondition(GoogleCloudChannelV1SkuGroupCondition $skuGroupCondition)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1SkuGroupCondition
+         */
+        public function getSkuGroupCondition()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudChannelV1SkuGroupCondition
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1RepricingCondition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSkuGroupCondition()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1RepricingCondition extends \Google\Service\Cloudchannel\GoogleCloudChannelV1RepricingCondition
     {
     }
 }

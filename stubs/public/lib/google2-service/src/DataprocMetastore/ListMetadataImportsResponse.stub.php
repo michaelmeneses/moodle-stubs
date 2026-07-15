@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataprocMetastore;
-
-class ListMetadataImportsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $metadataImportsType = MetadataImport::class;
-    protected $metadataImportsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * @param MetadataImport[]
-     */
-    public function setMetadataImports($metadataImports)
+namespace Google\Service\DataprocMetastore {
+    class ListMetadataImportsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $metadataImportsType = MetadataImport::class;
+        protected $metadataImportsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * @param MetadataImport[]
+         */
+        public function setMetadataImports($metadataImports)
+        {
+        }
+        /**
+         * @return MetadataImport[]
+         */
+        public function getMetadataImports()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MetadataImport[]
+     * Runtime class alias of \Google\Service\DataprocMetastore\ListMetadataImportsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetadataImports()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_DataprocMetastore_ListMetadataImportsResponse extends \Google\Service\DataprocMetastore\ListMetadataImportsResponse
     {
     }
 }

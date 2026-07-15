@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1PluginInstanceActionID extends \Google\Model
-{
-    /**
-     * Output only. The action ID that is using the curation. This should map to
-     * one of the action IDs specified in action configs in the plugin.
-     *
-     * @var string
-     */
-    public $actionId;
-    /**
-     * Output only. Plugin instance that is using the curation. Format is `project
-     * s/{project}/locations/{location}/plugins/{plugin}/instances/{instance}`
-     *
-     * @var string
-     */
-    public $pluginInstance;
-    /**
-     * Output only. The action ID that is using the curation. This should map to
-     * one of the action IDs specified in action configs in the plugin.
-     *
-     * @param string $actionId
-     */
-    public function setActionId($actionId)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1PluginInstanceActionID extends \Google\Model
     {
+        /**
+         * Output only. The action ID that is using the curation. This should map to
+         * one of the action IDs specified in action configs in the plugin.
+         *
+         * @var string
+         */
+        public $actionId;
+        /**
+         * Output only. Plugin instance that is using the curation. Format is `project
+         * s/{project}/locations/{location}/plugins/{plugin}/instances/{instance}`
+         *
+         * @var string
+         */
+        public $pluginInstance;
+        /**
+         * Output only. The action ID that is using the curation. This should map to
+         * one of the action IDs specified in action configs in the plugin.
+         *
+         * @param string $actionId
+         */
+        public function setActionId($actionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getActionId()
+        {
+        }
+        /**
+         * Output only. Plugin instance that is using the curation. Format is `project
+         * s/{project}/locations/{location}/plugins/{plugin}/instances/{instance}`
+         *
+         * @param string $pluginInstance
+         */
+        public function setPluginInstance($pluginInstance)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPluginInstance()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1PluginInstanceActionID registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActionId()
-    {
-    }
-    /**
-     * Output only. Plugin instance that is using the curation. Format is `project
-     * s/{project}/locations/{location}/plugins/{plugin}/instances/{instance}`
-     *
-     * @param string $pluginInstance
-     */
-    public function setPluginInstance($pluginInstance)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPluginInstance()
+    class Google_Service_APIhub_GoogleCloudApihubV1PluginInstanceActionID extends \Google\Service\APIhub\GoogleCloudApihubV1PluginInstanceActionID
     {
     }
 }

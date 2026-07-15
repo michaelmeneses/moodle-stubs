@@ -21,129 +21,138 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class ReportFloodlightCriteria extends \Google\Collection
-{
-    protected $collection_key = 'metricNames';
-    protected $customRichMediaEventsType = DimensionValue::class;
-    protected $customRichMediaEventsDataType = 'array';
-    protected $dateRangeType = DateRange::class;
-    protected $dateRangeDataType = '';
-    protected $dimensionFiltersType = DimensionValue::class;
-    protected $dimensionFiltersDataType = 'array';
-    protected $dimensionsType = SortedDimension::class;
-    protected $dimensionsDataType = 'array';
-    protected $floodlightConfigIdType = DimensionValue::class;
-    protected $floodlightConfigIdDataType = '';
-    /**
-     * The list of names of metrics the report should include.
-     *
-     * @var string[]
-     */
-    public $metricNames;
-    protected $reportPropertiesType = ReportFloodlightCriteriaReportProperties::class;
-    protected $reportPropertiesDataType = '';
-    /**
-     * The list of custom rich media events to include.
-     *
-     * @param DimensionValue[] $customRichMediaEvents
-     */
-    public function setCustomRichMediaEvents($customRichMediaEvents)
+namespace Google\Service\Dfareporting {
+    class ReportFloodlightCriteria extends \Google\Collection
     {
+        protected $collection_key = 'metricNames';
+        protected $customRichMediaEventsType = DimensionValue::class;
+        protected $customRichMediaEventsDataType = 'array';
+        protected $dateRangeType = DateRange::class;
+        protected $dateRangeDataType = '';
+        protected $dimensionFiltersType = DimensionValue::class;
+        protected $dimensionFiltersDataType = 'array';
+        protected $dimensionsType = SortedDimension::class;
+        protected $dimensionsDataType = 'array';
+        protected $floodlightConfigIdType = DimensionValue::class;
+        protected $floodlightConfigIdDataType = '';
+        /**
+         * The list of names of metrics the report should include.
+         *
+         * @var string[]
+         */
+        public $metricNames;
+        protected $reportPropertiesType = ReportFloodlightCriteriaReportProperties::class;
+        protected $reportPropertiesDataType = '';
+        /**
+         * The list of custom rich media events to include.
+         *
+         * @param DimensionValue[] $customRichMediaEvents
+         */
+        public function setCustomRichMediaEvents($customRichMediaEvents)
+        {
+        }
+        /**
+         * @return DimensionValue[]
+         */
+        public function getCustomRichMediaEvents()
+        {
+        }
+        /**
+         * The date range this report should be run for.
+         *
+         * @param DateRange $dateRange
+         */
+        public function setDateRange(DateRange $dateRange)
+        {
+        }
+        /**
+         * @return DateRange
+         */
+        public function getDateRange()
+        {
+        }
+        /**
+         * The list of filters on which dimensions are filtered. Filters for different
+         * dimensions are ANDed, filters for the same dimension are grouped together
+         * and ORed.
+         *
+         * @param DimensionValue[] $dimensionFilters
+         */
+        public function setDimensionFilters($dimensionFilters)
+        {
+        }
+        /**
+         * @return DimensionValue[]
+         */
+        public function getDimensionFilters()
+        {
+        }
+        /**
+         * The list of dimensions the report should include.
+         *
+         * @param SortedDimension[] $dimensions
+         */
+        public function setDimensions($dimensions)
+        {
+        }
+        /**
+         * @return SortedDimension[]
+         */
+        public function getDimensions()
+        {
+        }
+        /**
+         * The floodlight ID for which to show data in this report. All advertisers
+         * associated with that ID will automatically be added. The dimension of the
+         * value needs to be 'dfa:floodlightConfigId'.
+         *
+         * @param DimensionValue $floodlightConfigId
+         */
+        public function setFloodlightConfigId(DimensionValue $floodlightConfigId)
+        {
+        }
+        /**
+         * @return DimensionValue
+         */
+        public function getFloodlightConfigId()
+        {
+        }
+        /**
+         * The list of names of metrics the report should include.
+         *
+         * @param string[] $metricNames
+         */
+        public function setMetricNames($metricNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMetricNames()
+        {
+        }
+        /**
+         * The properties of the report.
+         *
+         * @param ReportFloodlightCriteriaReportProperties $reportProperties
+         */
+        public function setReportProperties(ReportFloodlightCriteriaReportProperties $reportProperties)
+        {
+        }
+        /**
+         * @return ReportFloodlightCriteriaReportProperties
+         */
+        public function getReportProperties()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DimensionValue[]
+     * Runtime class alias of \Google\Service\Dfareporting\ReportFloodlightCriteria registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomRichMediaEvents()
-    {
-    }
-    /**
-     * The date range this report should be run for.
-     *
-     * @param DateRange $dateRange
-     */
-    public function setDateRange(DateRange $dateRange)
-    {
-    }
-    /**
-     * @return DateRange
-     */
-    public function getDateRange()
-    {
-    }
-    /**
-     * The list of filters on which dimensions are filtered. Filters for different
-     * dimensions are ANDed, filters for the same dimension are grouped together
-     * and ORed.
-     *
-     * @param DimensionValue[] $dimensionFilters
-     */
-    public function setDimensionFilters($dimensionFilters)
-    {
-    }
-    /**
-     * @return DimensionValue[]
-     */
-    public function getDimensionFilters()
-    {
-    }
-    /**
-     * The list of dimensions the report should include.
-     *
-     * @param SortedDimension[] $dimensions
-     */
-    public function setDimensions($dimensions)
-    {
-    }
-    /**
-     * @return SortedDimension[]
-     */
-    public function getDimensions()
-    {
-    }
-    /**
-     * The floodlight ID for which to show data in this report. All advertisers
-     * associated with that ID will automatically be added. The dimension of the
-     * value needs to be 'dfa:floodlightConfigId'.
-     *
-     * @param DimensionValue $floodlightConfigId
-     */
-    public function setFloodlightConfigId(DimensionValue $floodlightConfigId)
-    {
-    }
-    /**
-     * @return DimensionValue
-     */
-    public function getFloodlightConfigId()
-    {
-    }
-    /**
-     * The list of names of metrics the report should include.
-     *
-     * @param string[] $metricNames
-     */
-    public function setMetricNames($metricNames)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getMetricNames()
-    {
-    }
-    /**
-     * The properties of the report.
-     *
-     * @param ReportFloodlightCriteriaReportProperties $reportProperties
-     */
-    public function setReportProperties(ReportFloodlightCriteriaReportProperties $reportProperties)
-    {
-    }
-    /**
-     * @return ReportFloodlightCriteriaReportProperties
-     */
-    public function getReportProperties()
+    class Google_Service_Dfareporting_ReportFloodlightCriteria extends \Google\Service\Dfareporting\ReportFloodlightCriteria
     {
     }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudKMS;
-
-class ShowEffectiveKeyAccessJustificationsPolicyConfigResponse extends \Google\Model
-{
-    protected $effectiveKajPolicyType = KeyAccessJustificationsPolicyConfig::class;
-    protected $effectiveKajPolicyDataType = '';
-    /**
-     * The effective KeyAccessJustificationsPolicyConfig.
-     *
-     * @param KeyAccessJustificationsPolicyConfig $effectiveKajPolicy
-     */
-    public function setEffectiveKajPolicy(KeyAccessJustificationsPolicyConfig $effectiveKajPolicy)
+namespace Google\Service\CloudKMS {
+    class ShowEffectiveKeyAccessJustificationsPolicyConfigResponse extends \Google\Model
     {
+        protected $effectiveKajPolicyType = KeyAccessJustificationsPolicyConfig::class;
+        protected $effectiveKajPolicyDataType = '';
+        /**
+         * The effective KeyAccessJustificationsPolicyConfig.
+         *
+         * @param KeyAccessJustificationsPolicyConfig $effectiveKajPolicy
+         */
+        public function setEffectiveKajPolicy(KeyAccessJustificationsPolicyConfig $effectiveKajPolicy)
+        {
+        }
+        /**
+         * @return KeyAccessJustificationsPolicyConfig
+         */
+        public function getEffectiveKajPolicy()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return KeyAccessJustificationsPolicyConfig
+     * Runtime class alias of \Google\Service\CloudKMS\ShowEffectiveKeyAccessJustificationsPolicyConfigResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEffectiveKajPolicy()
+    class Google_Service_CloudKMS_ShowEffectiveKeyAccessJustificationsPolicyConfigResponse extends \Google\Service\CloudKMS\ShowEffectiveKeyAccessJustificationsPolicyConfigResponse
     {
     }
 }

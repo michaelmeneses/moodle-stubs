@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1NormalizedPolyline extends \Google\Collection
-{
-    protected $collection_key = 'normalizedVertices';
-    protected $normalizedVerticesType = GoogleCloudDatalabelingV1beta1NormalizedVertex::class;
-    protected $normalizedVerticesDataType = 'array';
-    /**
-     * The normalized polyline vertices.
-     *
-     * @param GoogleCloudDatalabelingV1beta1NormalizedVertex[] $normalizedVertices
-     */
-    public function setNormalizedVertices($normalizedVertices)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1NormalizedPolyline extends \Google\Collection
     {
+        protected $collection_key = 'normalizedVertices';
+        protected $normalizedVerticesType = GoogleCloudDatalabelingV1beta1NormalizedVertex::class;
+        protected $normalizedVerticesDataType = 'array';
+        /**
+         * The normalized polyline vertices.
+         *
+         * @param GoogleCloudDatalabelingV1beta1NormalizedVertex[] $normalizedVertices
+         */
+        public function setNormalizedVertices($normalizedVertices)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1NormalizedVertex[]
+         */
+        public function getNormalizedVertices()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatalabelingV1beta1NormalizedVertex[]
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1NormalizedPolyline registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNormalizedVertices()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1NormalizedPolyline extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1NormalizedPolyline
     {
     }
 }

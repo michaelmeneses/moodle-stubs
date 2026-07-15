@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1AssistantContentFile extends \Google\Model
-{
-    /**
-     * Required. The file ID.
-     *
-     * @var string
-     */
-    public $fileId;
-    /**
-     * Required. The media type (MIME type) of the file.
-     *
-     * @var string
-     */
-    public $mimeType;
-    /**
-     * Required. The file ID.
-     *
-     * @param string $fileId
-     */
-    public function setFileId($fileId)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1AssistantContentFile extends \Google\Model
     {
+        /**
+         * Required. The file ID.
+         *
+         * @var string
+         */
+        public $fileId;
+        /**
+         * Required. The media type (MIME type) of the file.
+         *
+         * @var string
+         */
+        public $mimeType;
+        /**
+         * Required. The file ID.
+         *
+         * @param string $fileId
+         */
+        public function setFileId($fileId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFileId()
+        {
+        }
+        /**
+         * Required. The media type (MIME type) of the file.
+         *
+         * @param string $mimeType
+         */
+        public function setMimeType($mimeType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMimeType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AssistantContentFile registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFileId()
-    {
-    }
-    /**
-     * Required. The media type (MIME type) of the file.
-     *
-     * @param string $mimeType
-     */
-    public function setMimeType($mimeType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMimeType()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1AssistantContentFile extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AssistantContentFile
     {
     }
 }

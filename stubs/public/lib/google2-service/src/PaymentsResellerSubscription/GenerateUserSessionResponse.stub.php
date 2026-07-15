@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PaymentsResellerSubscription;
-
-class GenerateUserSessionResponse extends \Google\Model
-{
-    protected $userSessionType = UserSession::class;
-    protected $userSessionDataType = '';
-    /**
-     * The generated user session. The token size is proportional to the size of
-     * the intent payload.
-     *
-     * @param UserSession $userSession
-     */
-    public function setUserSession(UserSession $userSession)
+namespace Google\Service\PaymentsResellerSubscription {
+    class GenerateUserSessionResponse extends \Google\Model
     {
+        protected $userSessionType = UserSession::class;
+        protected $userSessionDataType = '';
+        /**
+         * The generated user session. The token size is proportional to the size of
+         * the intent payload.
+         *
+         * @param UserSession $userSession
+         */
+        public function setUserSession(UserSession $userSession)
+        {
+        }
+        /**
+         * @return UserSession
+         */
+        public function getUserSession()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return UserSession
+     * Runtime class alias of \Google\Service\PaymentsResellerSubscription\GenerateUserSessionResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUserSession()
+    class Google_Service_PaymentsResellerSubscription_GenerateUserSessionResponse extends \Google\Service\PaymentsResellerSubscription\GenerateUserSessionResponse
     {
     }
 }

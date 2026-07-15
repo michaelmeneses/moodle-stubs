@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigQueryConnectionService;
-
-class ConnectorConfigurationSecret extends \Google\Model
-{
-    public const SECRET_TYPE_SECRET_TYPE_UNSPECIFIED = 'SECRET_TYPE_UNSPECIFIED';
-    public const SECRET_TYPE_PLAINTEXT = 'PLAINTEXT';
-    /**
-     * Input only. Secret as plaintext.
-     *
-     * @var string
-     */
-    public $plaintext;
-    /**
-     * Output only. Indicates type of secret. Can be used to check type of stored
-     * secret value even if it's `INPUT_ONLY`.
-     *
-     * @var string
-     */
-    public $secretType;
-    /**
-     * Input only. Secret as plaintext.
-     *
-     * @param string $plaintext
-     */
-    public function setPlaintext($plaintext)
+namespace Google\Service\BigQueryConnectionService {
+    class ConnectorConfigurationSecret extends \Google\Model
     {
+        public const SECRET_TYPE_SECRET_TYPE_UNSPECIFIED = 'SECRET_TYPE_UNSPECIFIED';
+        public const SECRET_TYPE_PLAINTEXT = 'PLAINTEXT';
+        /**
+         * Input only. Secret as plaintext.
+         *
+         * @var string
+         */
+        public $plaintext;
+        /**
+         * Output only. Indicates type of secret. Can be used to check type of stored
+         * secret value even if it's `INPUT_ONLY`.
+         *
+         * @var string
+         */
+        public $secretType;
+        /**
+         * Input only. Secret as plaintext.
+         *
+         * @param string $plaintext
+         */
+        public function setPlaintext($plaintext)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPlaintext()
+        {
+        }
+        /**
+         * Output only. Indicates type of secret. Can be used to check type of stored
+         * secret value even if it's `INPUT_ONLY`.
+         *
+         * Accepted values: SECRET_TYPE_UNSPECIFIED, PLAINTEXT
+         *
+         * @param self::SECRET_TYPE_* $secretType
+         */
+        public function setSecretType($secretType)
+        {
+        }
+        /**
+         * @return self::SECRET_TYPE_*
+         */
+        public function getSecretType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BigQueryConnectionService\ConnectorConfigurationSecret registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPlaintext()
-    {
-    }
-    /**
-     * Output only. Indicates type of secret. Can be used to check type of stored
-     * secret value even if it's `INPUT_ONLY`.
-     *
-     * Accepted values: SECRET_TYPE_UNSPECIFIED, PLAINTEXT
-     *
-     * @param self::SECRET_TYPE_* $secretType
-     */
-    public function setSecretType($secretType)
-    {
-    }
-    /**
-     * @return self::SECRET_TYPE_*
-     */
-    public function getSecretType()
+    class Google_Service_BigQueryConnectionService_ConnectorConfigurationSecret extends \Google\Service\BigQueryConnectionService\ConnectorConfigurationSecret
     {
     }
 }

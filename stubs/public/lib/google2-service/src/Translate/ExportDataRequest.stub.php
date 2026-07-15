@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Translate;
-
-class ExportDataRequest extends \Google\Model
-{
-    protected $outputConfigType = DatasetOutputConfig::class;
-    protected $outputConfigDataType = '';
-    /**
-     * Required. The config for the output content.
-     *
-     * @param DatasetOutputConfig $outputConfig
-     */
-    public function setOutputConfig(DatasetOutputConfig $outputConfig)
+namespace Google\Service\Translate {
+    class ExportDataRequest extends \Google\Model
     {
+        protected $outputConfigType = DatasetOutputConfig::class;
+        protected $outputConfigDataType = '';
+        /**
+         * Required. The config for the output content.
+         *
+         * @param DatasetOutputConfig $outputConfig
+         */
+        public function setOutputConfig(DatasetOutputConfig $outputConfig)
+        {
+        }
+        /**
+         * @return DatasetOutputConfig
+         */
+        public function getOutputConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DatasetOutputConfig
+     * Runtime class alias of \Google\Service\Translate\ExportDataRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOutputConfig()
+    class Google_Service_Translate_ExportDataRequest extends \Google\Service\Translate\ExportDataRequest
     {
     }
 }

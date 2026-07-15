@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AccessContextManager;
-
-class ListAccessPoliciesResponse extends \Google\Collection
-{
-    protected $collection_key = 'accessPolicies';
-    protected $accessPoliciesType = AccessPolicy::class;
-    protected $accessPoliciesDataType = 'array';
-    /**
-     * The pagination token to retrieve the next page of results. If the value is
-     * empty, no further results remain.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of the AccessPolicy instances.
-     *
-     * @param AccessPolicy[] $accessPolicies
-     */
-    public function setAccessPolicies($accessPolicies)
+namespace Google\Service\AccessContextManager {
+    class ListAccessPoliciesResponse extends \Google\Collection
     {
+        protected $collection_key = 'accessPolicies';
+        protected $accessPoliciesType = AccessPolicy::class;
+        protected $accessPoliciesDataType = 'array';
+        /**
+         * The pagination token to retrieve the next page of results. If the value is
+         * empty, no further results remain.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of the AccessPolicy instances.
+         *
+         * @param AccessPolicy[] $accessPolicies
+         */
+        public function setAccessPolicies($accessPolicies)
+        {
+        }
+        /**
+         * @return AccessPolicy[]
+         */
+        public function getAccessPolicies()
+        {
+        }
+        /**
+         * The pagination token to retrieve the next page of results. If the value is
+         * empty, no further results remain.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AccessPolicy[]
+     * Runtime class alias of \Google\Service\AccessContextManager\ListAccessPoliciesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccessPolicies()
-    {
-    }
-    /**
-     * The pagination token to retrieve the next page of results. If the value is
-     * empty, no further results remain.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_AccessContextManager_ListAccessPoliciesResponse extends \Google\Service\AccessContextManager\ListAccessPoliciesResponse
     {
     }
 }

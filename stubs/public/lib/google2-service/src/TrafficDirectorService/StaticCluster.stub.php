@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TrafficDirectorService;
-
-class StaticCluster extends \Google\Model
-{
-    /**
-     * The cluster config.
-     *
-     * @var array[]
-     */
-    public $cluster;
-    /**
-     * The timestamp when the Cluster was last updated.
-     *
-     * @var string
-     */
-    public $lastUpdated;
-    /**
-     * The cluster config.
-     *
-     * @param array[] $cluster
-     */
-    public function setCluster($cluster)
+namespace Google\Service\TrafficDirectorService {
+    class StaticCluster extends \Google\Model
     {
+        /**
+         * The cluster config.
+         *
+         * @var array[]
+         */
+        public $cluster;
+        /**
+         * The timestamp when the Cluster was last updated.
+         *
+         * @var string
+         */
+        public $lastUpdated;
+        /**
+         * The cluster config.
+         *
+         * @param array[] $cluster
+         */
+        public function setCluster($cluster)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getCluster()
+        {
+        }
+        /**
+         * The timestamp when the Cluster was last updated.
+         *
+         * @param string $lastUpdated
+         */
+        public function setLastUpdated($lastUpdated)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastUpdated()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\TrafficDirectorService\StaticCluster registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCluster()
-    {
-    }
-    /**
-     * The timestamp when the Cluster was last updated.
-     *
-     * @param string $lastUpdated
-     */
-    public function setLastUpdated($lastUpdated)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastUpdated()
+    class Google_Service_TrafficDirectorService_StaticCluster extends \Google\Service\TrafficDirectorService\StaticCluster
     {
     }
 }

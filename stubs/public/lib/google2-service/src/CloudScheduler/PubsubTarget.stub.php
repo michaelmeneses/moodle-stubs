@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudScheduler;
-
-class PubsubTarget extends \Google\Model
-{
-    /**
-     * Attributes for PubsubMessage. Pubsub message must contain either non-empty
-     * data, or at least one attribute.
-     *
-     * @var string[]
-     */
-    public $attributes;
-    /**
-     * The message payload for PubsubMessage. Pubsub message must contain either
-     * non-empty data, or at least one attribute.
-     *
-     * @var string
-     */
-    public $data;
-    /**
-     * Required. The name of the Cloud Pub/Sub topic to which messages will be
-     * published when a job is delivered. The topic name must be in the same
-     * format as required by Pub/Sub's [PublishRequest.name](https://cloud.google.
-     * com/pubsub/docs/reference/rpc/google.pubsub.v1#publishrequest), for example
-     * `projects/PROJECT_ID/topics/TOPIC_ID`. The topic must be in the same
-     * project as the Cloud Scheduler job.
-     *
-     * @var string
-     */
-    public $topicName;
-    /**
-     * Attributes for PubsubMessage. Pubsub message must contain either non-empty
-     * data, or at least one attribute.
-     *
-     * @param string[] $attributes
-     */
-    public function setAttributes($attributes)
+namespace Google\Service\CloudScheduler {
+    class PubsubTarget extends \Google\Model
     {
+        /**
+         * Attributes for PubsubMessage. Pubsub message must contain either non-empty
+         * data, or at least one attribute.
+         *
+         * @var string[]
+         */
+        public $attributes;
+        /**
+         * The message payload for PubsubMessage. Pubsub message must contain either
+         * non-empty data, or at least one attribute.
+         *
+         * @var string
+         */
+        public $data;
+        /**
+         * Required. The name of the Cloud Pub/Sub topic to which messages will be
+         * published when a job is delivered. The topic name must be in the same
+         * format as required by Pub/Sub's [PublishRequest.name](https://cloud.google.
+         * com/pubsub/docs/reference/rpc/google.pubsub.v1#publishrequest), for example
+         * `projects/PROJECT_ID/topics/TOPIC_ID`. The topic must be in the same
+         * project as the Cloud Scheduler job.
+         *
+         * @var string
+         */
+        public $topicName;
+        /**
+         * Attributes for PubsubMessage. Pubsub message must contain either non-empty
+         * data, or at least one attribute.
+         *
+         * @param string[] $attributes
+         */
+        public function setAttributes($attributes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAttributes()
+        {
+        }
+        /**
+         * The message payload for PubsubMessage. Pubsub message must contain either
+         * non-empty data, or at least one attribute.
+         *
+         * @param string $data
+         */
+        public function setData($data)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getData()
+        {
+        }
+        /**
+         * Required. The name of the Cloud Pub/Sub topic to which messages will be
+         * published when a job is delivered. The topic name must be in the same
+         * format as required by Pub/Sub's [PublishRequest.name](https://cloud.google.
+         * com/pubsub/docs/reference/rpc/google.pubsub.v1#publishrequest), for example
+         * `projects/PROJECT_ID/topics/TOPIC_ID`. The topic must be in the same
+         * project as the Cloud Scheduler job.
+         *
+         * @param string $topicName
+         */
+        public function setTopicName($topicName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTopicName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudScheduler\PubsubTarget registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttributes()
-    {
-    }
-    /**
-     * The message payload for PubsubMessage. Pubsub message must contain either
-     * non-empty data, or at least one attribute.
-     *
-     * @param string $data
-     */
-    public function setData($data)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getData()
-    {
-    }
-    /**
-     * Required. The name of the Cloud Pub/Sub topic to which messages will be
-     * published when a job is delivered. The topic name must be in the same
-     * format as required by Pub/Sub's [PublishRequest.name](https://cloud.google.
-     * com/pubsub/docs/reference/rpc/google.pubsub.v1#publishrequest), for example
-     * `projects/PROJECT_ID/topics/TOPIC_ID`. The topic must be in the same
-     * project as the Cloud Scheduler job.
-     *
-     * @param string $topicName
-     */
-    public function setTopicName($topicName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTopicName()
+    class Google_Service_CloudScheduler_PubsubTarget extends \Google\Service\CloudScheduler\PubsubTarget
     {
     }
 }

@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1RagEngineConfig extends \Google\Model
-{
-    /**
-     * Identifier. The name of the RagEngineConfig. Format:
-     * `projects/{project}/locations/{location}/ragEngineConfig`
-     *
-     * @var string
-     */
-    public $name;
-    protected $ragManagedDbConfigType = GoogleCloudAiplatformV1RagManagedDbConfig::class;
-    protected $ragManagedDbConfigDataType = '';
-    /**
-     * Identifier. The name of the RagEngineConfig. Format:
-     * `projects/{project}/locations/{location}/ragEngineConfig`
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1RagEngineConfig extends \Google\Model
     {
+        /**
+         * Identifier. The name of the RagEngineConfig. Format:
+         * `projects/{project}/locations/{location}/ragEngineConfig`
+         *
+         * @var string
+         */
+        public $name;
+        protected $ragManagedDbConfigType = GoogleCloudAiplatformV1RagManagedDbConfig::class;
+        protected $ragManagedDbConfigDataType = '';
+        /**
+         * Identifier. The name of the RagEngineConfig. Format:
+         * `projects/{project}/locations/{location}/ragEngineConfig`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The config of the RagManagedDb used by RagEngine.
+         *
+         * @param GoogleCloudAiplatformV1RagManagedDbConfig $ragManagedDbConfig
+         */
+        public function setRagManagedDbConfig(GoogleCloudAiplatformV1RagManagedDbConfig $ragManagedDbConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1RagManagedDbConfig
+         */
+        public function getRagManagedDbConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1RagEngineConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * The config of the RagManagedDb used by RagEngine.
-     *
-     * @param GoogleCloudAiplatformV1RagManagedDbConfig $ragManagedDbConfig
-     */
-    public function setRagManagedDbConfig(GoogleCloudAiplatformV1RagManagedDbConfig $ragManagedDbConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1RagManagedDbConfig
-     */
-    public function getRagManagedDbConfig()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1RagEngineConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1RagEngineConfig
     {
     }
 }

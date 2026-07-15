@@ -21,72 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults\Resource;
-
-/**
- * The "perfSampleSeries" collection of methods.
- * Typical usage is:
- *  <code>
- *   $toolresultsService = new Google\Service\ToolResults(...);
- *   $perfSampleSeries = $toolresultsService->projects_histories_executions_steps_perfSampleSeries;
- *  </code>
- */
-class ProjectsHistoriesExecutionsStepsPerfSampleSeries extends \Google\Service\Resource
-{
+namespace Google\Service\ToolResults\Resource {
+    use Google\Service\ToolResults\ListPerfSampleSeriesResponse;
+    use Google\Service\ToolResults\PerfSampleSeries;
     /**
-     * Creates a PerfSampleSeries. May return any of the following error code(s): -
-     * ALREADY_EXISTS - PerfMetricSummary already exists for the given Step -
-     * NOT_FOUND - The containing Step does not exist (perfSampleSeries.create)
-     *
-     * @param string $projectId The cloud project
-     * @param string $historyId A tool results history ID.
-     * @param string $executionId A tool results execution ID.
-     * @param string $stepId A tool results step ID.
-     * @param PerfSampleSeries $postBody
-     * @param array $optParams Optional parameters.
-     * @return PerfSampleSeries
-     * @throws \Google\Service\Exception
+     * The "perfSampleSeries" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $toolresultsService = new Google\Service\ToolResults(...);
+     *   $perfSampleSeries = $toolresultsService->projects_histories_executions_steps_perfSampleSeries;
+     *  </code>
      */
-    public function create($projectId, $historyId, $executionId, $stepId, PerfSampleSeries $postBody, $optParams = [])
+    class ProjectsHistoriesExecutionsStepsPerfSampleSeries extends \Google\Service\Resource
     {
+        /**
+         * Creates a PerfSampleSeries. May return any of the following error code(s): -
+         * ALREADY_EXISTS - PerfMetricSummary already exists for the given Step -
+         * NOT_FOUND - The containing Step does not exist (perfSampleSeries.create)
+         *
+         * @param string $projectId The cloud project
+         * @param string $historyId A tool results history ID.
+         * @param string $executionId A tool results execution ID.
+         * @param string $stepId A tool results step ID.
+         * @param PerfSampleSeries $postBody
+         * @param array $optParams Optional parameters.
+         * @return PerfSampleSeries
+         * @throws \Google\Service\Exception
+         */
+        public function create($projectId, $historyId, $executionId, $stepId, PerfSampleSeries $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Gets a PerfSampleSeries. May return any of the following error code(s): -
+         * NOT_FOUND - The specified PerfSampleSeries does not exist
+         * (perfSampleSeries.get)
+         *
+         * @param string $projectId The cloud project
+         * @param string $historyId A tool results history ID.
+         * @param string $executionId A tool results execution ID.
+         * @param string $stepId A tool results step ID.
+         * @param string $sampleSeriesId A sample series id
+         * @param array $optParams Optional parameters.
+         * @return PerfSampleSeries
+         * @throws \Google\Service\Exception
+         */
+        public function get($projectId, $historyId, $executionId, $stepId, $sampleSeriesId, $optParams = [])
+        {
+        }
+        /**
+         * Lists PerfSampleSeries for a given Step. The request provides an optional
+         * filter which specifies one or more PerfMetricsType to include in the result;
+         * if none returns all. The resulting PerfSampleSeries are sorted by ids. May
+         * return any of the following canonical error codes: - NOT_FOUND - The
+         * containing Step does not exist
+         * (perfSampleSeries.listProjectsHistoriesExecutionsStepsPerfSampleSeries)
+         *
+         * @param string $projectId The cloud project
+         * @param string $historyId A tool results history ID.
+         * @param string $executionId A tool results execution ID.
+         * @param string $stepId A tool results step ID.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Specify one or more PerfMetricType values such as
+         * CPU to filter the result
+         * @return ListPerfSampleSeriesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsHistoriesExecutionsStepsPerfSampleSeries($projectId, $historyId, $executionId, $stepId, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets a PerfSampleSeries. May return any of the following error code(s): -
-     * NOT_FOUND - The specified PerfSampleSeries does not exist
-     * (perfSampleSeries.get)
-     *
-     * @param string $projectId The cloud project
-     * @param string $historyId A tool results history ID.
-     * @param string $executionId A tool results execution ID.
-     * @param string $stepId A tool results step ID.
-     * @param string $sampleSeriesId A sample series id
-     * @param array $optParams Optional parameters.
-     * @return PerfSampleSeries
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\ToolResults\Resource\ProjectsHistoriesExecutionsStepsPerfSampleSeries registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($projectId, $historyId, $executionId, $stepId, $sampleSeriesId, $optParams = [])
-    {
-    }
-    /**
-     * Lists PerfSampleSeries for a given Step. The request provides an optional
-     * filter which specifies one or more PerfMetricsType to include in the result;
-     * if none returns all. The resulting PerfSampleSeries are sorted by ids. May
-     * return any of the following canonical error codes: - NOT_FOUND - The
-     * containing Step does not exist
-     * (perfSampleSeries.listProjectsHistoriesExecutionsStepsPerfSampleSeries)
-     *
-     * @param string $projectId The cloud project
-     * @param string $historyId A tool results history ID.
-     * @param string $executionId A tool results execution ID.
-     * @param string $stepId A tool results step ID.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Specify one or more PerfMetricType values such as
-     * CPU to filter the result
-     * @return ListPerfSampleSeriesResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsHistoriesExecutionsStepsPerfSampleSeries($projectId, $historyId, $executionId, $stepId, $optParams = [])
+    class Google_Service_ToolResults_Resource_ProjectsHistoriesExecutionsStepsPerfSampleSeries extends \Google\Service\ToolResults\Resource\ProjectsHistoriesExecutionsStepsPerfSampleSeries
     {
     }
 }

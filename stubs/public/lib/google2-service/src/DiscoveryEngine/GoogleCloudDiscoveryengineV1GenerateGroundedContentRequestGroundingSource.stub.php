@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGroundingSource extends \Google\Model
-{
-    protected $enterpriseWebRetrievalSourceType = GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGroundingSourceEnterpriseWebRetrievalSource::class;
-    protected $enterpriseWebRetrievalSourceDataType = '';
-    protected $googleSearchSourceType = GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGroundingSourceGoogleSearchSource::class;
-    protected $googleSearchSourceDataType = '';
-    protected $inlineSourceType = GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGroundingSourceInlineSource::class;
-    protected $inlineSourceDataType = '';
-    protected $searchSourceType = GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGroundingSourceSearchSource::class;
-    protected $searchSourceDataType = '';
-    /**
-     * @param GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGroundingSourceEnterpriseWebRetrievalSource
-     */
-    public function setEnterpriseWebRetrievalSource(GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGroundingSourceEnterpriseWebRetrievalSource $enterpriseWebRetrievalSource)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGroundingSource extends \Google\Model
     {
+        protected $enterpriseWebRetrievalSourceType = GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGroundingSourceEnterpriseWebRetrievalSource::class;
+        protected $enterpriseWebRetrievalSourceDataType = '';
+        protected $googleSearchSourceType = GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGroundingSourceGoogleSearchSource::class;
+        protected $googleSearchSourceDataType = '';
+        protected $inlineSourceType = GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGroundingSourceInlineSource::class;
+        protected $inlineSourceDataType = '';
+        protected $searchSourceType = GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGroundingSourceSearchSource::class;
+        protected $searchSourceDataType = '';
+        /**
+         * @param GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGroundingSourceEnterpriseWebRetrievalSource
+         */
+        public function setEnterpriseWebRetrievalSource(GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGroundingSourceEnterpriseWebRetrievalSource $enterpriseWebRetrievalSource)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGroundingSourceEnterpriseWebRetrievalSource
+         */
+        public function getEnterpriseWebRetrievalSource()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGroundingSourceGoogleSearchSource
+         */
+        public function setGoogleSearchSource(GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGroundingSourceGoogleSearchSource $googleSearchSource)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGroundingSourceGoogleSearchSource
+         */
+        public function getGoogleSearchSource()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGroundingSourceInlineSource
+         */
+        public function setInlineSource(GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGroundingSourceInlineSource $inlineSource)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGroundingSourceInlineSource
+         */
+        public function getInlineSource()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGroundingSourceSearchSource
+         */
+        public function setSearchSource(GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGroundingSourceSearchSource $searchSource)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGroundingSourceSearchSource
+         */
+        public function getSearchSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGroundingSourceEnterpriseWebRetrievalSource
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGroundingSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnterpriseWebRetrievalSource()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGroundingSourceGoogleSearchSource
-     */
-    public function setGoogleSearchSource(GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGroundingSourceGoogleSearchSource $googleSearchSource)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGroundingSourceGoogleSearchSource
-     */
-    public function getGoogleSearchSource()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGroundingSourceInlineSource
-     */
-    public function setInlineSource(GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGroundingSourceInlineSource $inlineSource)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGroundingSourceInlineSource
-     */
-    public function getInlineSource()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGroundingSourceSearchSource
-     */
-    public function setSearchSource(GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGroundingSourceSearchSource $searchSource)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGroundingSourceSearchSource
-     */
-    public function getSearchSource()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGroundingSource extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGroundingSource
     {
     }
 }

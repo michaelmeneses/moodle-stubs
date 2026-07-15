@@ -20,24 +20,33 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\exception;
-
-/**
- * An exception that indicates that file can not be served
- *
- * @package    core
- * @subpackage exception
- * @copyright  2010 Petr Skoda {@link http://skodak.org}
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-class file_serving_exception extends moodle_exception
-{
+namespace core\exception {
     /**
-     * Constructor.
+     * An exception that indicates that file can not be served
      *
-     * @param string $debuginfo optional more detailed information
+     * @package    core
+     * @subpackage exception
+     * @copyright  2010 Petr Skoda {@link http://skodak.org}
+     * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
      */
-    public function __construct($debuginfo = null)
+    class file_serving_exception extends moodle_exception
+    {
+        /**
+         * Constructor.
+         *
+         * @param string $debuginfo optional more detailed information
+         */
+        public function __construct($debuginfo = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \core\exception\file_serving_exception registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class file_serving_exception extends \core\exception\file_serving_exception
     {
     }
 }

@@ -21,109 +21,118 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Reports;
-
-class ResourceDetails extends \Google\Collection
-{
-    protected $collection_key = 'appliedLabels';
-    protected $appliedLabelsType = AppliedLabel::class;
-    protected $appliedLabelsDataType = 'array';
-    /**
-     * Identifier of the resource.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Defines relationship of the resource to the events
-     *
-     * @var string
-     */
-    public $relation;
-    /**
-     * Title of the resource. For instance, in case of a drive document, this
-     * would be the title of the document. In case of an email, this would be the
-     * subject.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * Type of the resource - document, email, chat message
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * List of labels applied on the resource
-     *
-     * @param AppliedLabel[] $appliedLabels
-     */
-    public function setAppliedLabels($appliedLabels)
+namespace Google\Service\Reports {
+    class ResourceDetails extends \Google\Collection
     {
+        protected $collection_key = 'appliedLabels';
+        protected $appliedLabelsType = AppliedLabel::class;
+        protected $appliedLabelsDataType = 'array';
+        /**
+         * Identifier of the resource.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Defines relationship of the resource to the events
+         *
+         * @var string
+         */
+        public $relation;
+        /**
+         * Title of the resource. For instance, in case of a drive document, this
+         * would be the title of the document. In case of an email, this would be the
+         * subject.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * Type of the resource - document, email, chat message
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * List of labels applied on the resource
+         *
+         * @param AppliedLabel[] $appliedLabels
+         */
+        public function setAppliedLabels($appliedLabels)
+        {
+        }
+        /**
+         * @return AppliedLabel[]
+         */
+        public function getAppliedLabels()
+        {
+        }
+        /**
+         * Identifier of the resource.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Defines relationship of the resource to the events
+         *
+         * @param string $relation
+         */
+        public function setRelation($relation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRelation()
+        {
+        }
+        /**
+         * Title of the resource. For instance, in case of a drive document, this
+         * would be the title of the document. In case of an email, this would be the
+         * subject.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * Type of the resource - document, email, chat message
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppliedLabel[]
+     * Runtime class alias of \Google\Service\Reports\ResourceDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAppliedLabels()
-    {
-    }
-    /**
-     * Identifier of the resource.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Defines relationship of the resource to the events
-     *
-     * @param string $relation
-     */
-    public function setRelation($relation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRelation()
-    {
-    }
-    /**
-     * Title of the resource. For instance, in case of a drive document, this
-     * would be the title of the document. In case of an email, this would be the
-     * subject.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
-    {
-    }
-    /**
-     * Type of the resource - document, email, chat message
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_Reports_ResourceDetails extends \Google\Service\Reports\ResourceDetails
     {
     }
 }

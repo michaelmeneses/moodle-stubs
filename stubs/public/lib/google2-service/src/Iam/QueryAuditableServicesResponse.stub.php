@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Iam;
-
-class QueryAuditableServicesResponse extends \Google\Collection
-{
-    protected $collection_key = 'services';
-    protected $servicesType = AuditableService::class;
-    protected $servicesDataType = 'array';
-    public $services;
-    /**
-     * @param AuditableService[]
-     */
-    public function setServices($services)
+namespace Google\Service\Iam {
+    class QueryAuditableServicesResponse extends \Google\Collection
     {
+        protected $collection_key = 'services';
+        protected $servicesType = AuditableService::class;
+        protected $servicesDataType = 'array';
+        public $services;
+        /**
+         * @param AuditableService[]
+         */
+        public function setServices($services)
+        {
+        }
+        /**
+         * @return AuditableService[]
+         */
+        public function getServices()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AuditableService[]
+     * Runtime class alias of \Google\Service\Iam\QueryAuditableServicesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getServices()
+    class Google_Service_Iam_QueryAuditableServicesResponse extends \Google\Service\Iam\QueryAuditableServicesResponse
     {
     }
 }

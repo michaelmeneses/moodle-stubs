@@ -21,130 +21,139 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class DomainAlias extends \Google\Model
-{
-    /**
-     * The creation time of the domain alias. (Read-only).
-     *
-     * @var string
-     */
-    public $creationTime;
-    /**
-     * The domain alias name.
-     *
-     * @var string
-     */
-    public $domainAliasName;
-    /**
-     * ETag of the resource.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * Kind of resource this is.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The parent domain name that the domain alias is associated with. This can
-     * either be a primary or secondary domain name within a customer.
-     *
-     * @var string
-     */
-    public $parentDomainName;
-    /**
-     * Indicates the verification state of a domain alias. (Read-only)
-     *
-     * @var bool
-     */
-    public $verified;
-    /**
-     * The creation time of the domain alias. (Read-only).
-     *
-     * @param string $creationTime
-     */
-    public function setCreationTime($creationTime)
+namespace Google\Service\Directory {
+    class DomainAlias extends \Google\Model
     {
+        /**
+         * The creation time of the domain alias. (Read-only).
+         *
+         * @var string
+         */
+        public $creationTime;
+        /**
+         * The domain alias name.
+         *
+         * @var string
+         */
+        public $domainAliasName;
+        /**
+         * ETag of the resource.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * Kind of resource this is.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The parent domain name that the domain alias is associated with. This can
+         * either be a primary or secondary domain name within a customer.
+         *
+         * @var string
+         */
+        public $parentDomainName;
+        /**
+         * Indicates the verification state of a domain alias. (Read-only)
+         *
+         * @var bool
+         */
+        public $verified;
+        /**
+         * The creation time of the domain alias. (Read-only).
+         *
+         * @param string $creationTime
+         */
+        public function setCreationTime($creationTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreationTime()
+        {
+        }
+        /**
+         * The domain alias name.
+         *
+         * @param string $domainAliasName
+         */
+        public function setDomainAliasName($domainAliasName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDomainAliasName()
+        {
+        }
+        /**
+         * ETag of the resource.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * Kind of resource this is.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The parent domain name that the domain alias is associated with. This can
+         * either be a primary or secondary domain name within a customer.
+         *
+         * @param string $parentDomainName
+         */
+        public function setParentDomainName($parentDomainName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParentDomainName()
+        {
+        }
+        /**
+         * Indicates the verification state of a domain alias. (Read-only)
+         *
+         * @param bool $verified
+         */
+        public function setVerified($verified)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getVerified()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Directory\DomainAlias registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreationTime()
-    {
-    }
-    /**
-     * The domain alias name.
-     *
-     * @param string $domainAliasName
-     */
-    public function setDomainAliasName($domainAliasName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDomainAliasName()
-    {
-    }
-    /**
-     * ETag of the resource.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * Kind of resource this is.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The parent domain name that the domain alias is associated with. This can
-     * either be a primary or secondary domain name within a customer.
-     *
-     * @param string $parentDomainName
-     */
-    public function setParentDomainName($parentDomainName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParentDomainName()
-    {
-    }
-    /**
-     * Indicates the verification state of a domain alias. (Read-only)
-     *
-     * @param bool $verified
-     */
-    public function setVerified($verified)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getVerified()
+    class Google_Service_Directory_DomainAlias extends \Google\Service\Directory\DomainAlias
     {
     }
 }

@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise;
-
-class ServiceAccountKeysListResponse extends \Google\Collection
-{
-    protected $collection_key = 'serviceAccountKey';
-    protected $serviceAccountKeyType = ServiceAccountKey::class;
-    protected $serviceAccountKeyDataType = 'array';
-    /**
-     * The service account credentials.
-     *
-     * @param ServiceAccountKey[] $serviceAccountKey
-     */
-    public function setServiceAccountKey($serviceAccountKey)
+namespace Google\Service\AndroidEnterprise {
+    class ServiceAccountKeysListResponse extends \Google\Collection
     {
+        protected $collection_key = 'serviceAccountKey';
+        protected $serviceAccountKeyType = ServiceAccountKey::class;
+        protected $serviceAccountKeyDataType = 'array';
+        /**
+         * The service account credentials.
+         *
+         * @param ServiceAccountKey[] $serviceAccountKey
+         */
+        public function setServiceAccountKey($serviceAccountKey)
+        {
+        }
+        /**
+         * @return ServiceAccountKey[]
+         */
+        public function getServiceAccountKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ServiceAccountKey[]
+     * Runtime class alias of \Google\Service\AndroidEnterprise\ServiceAccountKeysListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getServiceAccountKey()
+    class Google_Service_AndroidEnterprise_ServiceAccountKeysListResponse extends \Google\Service\AndroidEnterprise\ServiceAccountKeysListResponse
     {
     }
 }

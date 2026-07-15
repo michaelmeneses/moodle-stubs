@@ -21,75 +21,84 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class MetadataFilter extends \Google\Collection
-{
-    /**
-     * Specifies that all filterLabels must match for themetadataFilter to be
-     * considered a match.
-     */
-    public const FILTER_MATCH_CRITERIA_MATCH_ALL = 'MATCH_ALL';
-    /**
-     * Specifies that any filterLabel must match for themetadataFilter to be
-     * considered a match.
-     */
-    public const FILTER_MATCH_CRITERIA_MATCH_ANY = 'MATCH_ANY';
-    /**
-     * Indicates that the match criteria was not set. AmetadataFilter must never
-     * be created with this value.
-     */
-    public const FILTER_MATCH_CRITERIA_NOT_SET = 'NOT_SET';
-    protected $collection_key = 'filterLabels';
-    protected $filterLabelsType = MetadataFilterLabelMatch::class;
-    protected $filterLabelsDataType = 'array';
-    /**
-     * Specifies how individual filter label matches within the list of
-     * filterLabels and contributes toward the overall metadataFilter match.
-     *
-     *  Supported values are:        - MATCH_ANY: at least one of the filterLabels
-     * must have a matching label in the provided metadata.    - MATCH_ALL: all
-     * filterLabels must have    matching labels in the provided metadata.
-     *
-     * @var string
-     */
-    public $filterMatchCriteria;
-    /**
-     * The list of label value pairs that must match labels in the provided
-     * metadata based on filterMatchCriteria
-     *
-     * This list must not be empty and can have at the most 64 entries.
-     *
-     * @param MetadataFilterLabelMatch[] $filterLabels
-     */
-    public function setFilterLabels($filterLabels)
+namespace Google\Service\Compute {
+    class MetadataFilter extends \Google\Collection
     {
+        /**
+         * Specifies that all filterLabels must match for themetadataFilter to be
+         * considered a match.
+         */
+        public const FILTER_MATCH_CRITERIA_MATCH_ALL = 'MATCH_ALL';
+        /**
+         * Specifies that any filterLabel must match for themetadataFilter to be
+         * considered a match.
+         */
+        public const FILTER_MATCH_CRITERIA_MATCH_ANY = 'MATCH_ANY';
+        /**
+         * Indicates that the match criteria was not set. AmetadataFilter must never
+         * be created with this value.
+         */
+        public const FILTER_MATCH_CRITERIA_NOT_SET = 'NOT_SET';
+        protected $collection_key = 'filterLabels';
+        protected $filterLabelsType = MetadataFilterLabelMatch::class;
+        protected $filterLabelsDataType = 'array';
+        /**
+         * Specifies how individual filter label matches within the list of
+         * filterLabels and contributes toward the overall metadataFilter match.
+         *
+         *  Supported values are:        - MATCH_ANY: at least one of the filterLabels
+         * must have a matching label in the provided metadata.    - MATCH_ALL: all
+         * filterLabels must have    matching labels in the provided metadata.
+         *
+         * @var string
+         */
+        public $filterMatchCriteria;
+        /**
+         * The list of label value pairs that must match labels in the provided
+         * metadata based on filterMatchCriteria
+         *
+         * This list must not be empty and can have at the most 64 entries.
+         *
+         * @param MetadataFilterLabelMatch[] $filterLabels
+         */
+        public function setFilterLabels($filterLabels)
+        {
+        }
+        /**
+         * @return MetadataFilterLabelMatch[]
+         */
+        public function getFilterLabels()
+        {
+        }
+        /**
+         * Specifies how individual filter label matches within the list of
+         * filterLabels and contributes toward the overall metadataFilter match.
+         *
+         *  Supported values are:        - MATCH_ANY: at least one of the filterLabels
+         * must have a matching label in the provided metadata.    - MATCH_ALL: all
+         * filterLabels must have    matching labels in the provided metadata.
+         *
+         * Accepted values: MATCH_ALL, MATCH_ANY, NOT_SET
+         *
+         * @param self::FILTER_MATCH_CRITERIA_* $filterMatchCriteria
+         */
+        public function setFilterMatchCriteria($filterMatchCriteria)
+        {
+        }
+        /**
+         * @return self::FILTER_MATCH_CRITERIA_*
+         */
+        public function getFilterMatchCriteria()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MetadataFilterLabelMatch[]
+     * Runtime class alias of \Google\Service\Compute\MetadataFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFilterLabels()
-    {
-    }
-    /**
-     * Specifies how individual filter label matches within the list of
-     * filterLabels and contributes toward the overall metadataFilter match.
-     *
-     *  Supported values are:        - MATCH_ANY: at least one of the filterLabels
-     * must have a matching label in the provided metadata.    - MATCH_ALL: all
-     * filterLabels must have    matching labels in the provided metadata.
-     *
-     * Accepted values: MATCH_ALL, MATCH_ANY, NOT_SET
-     *
-     * @param self::FILTER_MATCH_CRITERIA_* $filterMatchCriteria
-     */
-    public function setFilterMatchCriteria($filterMatchCriteria)
-    {
-    }
-    /**
-     * @return self::FILTER_MATCH_CRITERIA_*
-     */
-    public function getFilterMatchCriteria()
+    class Google_Service_Compute_MetadataFilter extends \Google\Service\Compute\MetadataFilter
     {
     }
 }

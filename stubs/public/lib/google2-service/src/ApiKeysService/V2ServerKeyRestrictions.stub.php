@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ApiKeysService;
-
-class V2ServerKeyRestrictions extends \Google\Collection
-{
-    protected $collection_key = 'allowedIps';
-    /**
-     * A list of the caller IP addresses that are allowed to make API calls with
-     * this key.
-     *
-     * @var string[]
-     */
-    public $allowedIps;
-    /**
-     * A list of the caller IP addresses that are allowed to make API calls with
-     * this key.
-     *
-     * @param string[] $allowedIps
-     */
-    public function setAllowedIps($allowedIps)
+namespace Google\Service\ApiKeysService {
+    class V2ServerKeyRestrictions extends \Google\Collection
     {
+        protected $collection_key = 'allowedIps';
+        /**
+         * A list of the caller IP addresses that are allowed to make API calls with
+         * this key.
+         *
+         * @var string[]
+         */
+        public $allowedIps;
+        /**
+         * A list of the caller IP addresses that are allowed to make API calls with
+         * this key.
+         *
+         * @param string[] $allowedIps
+         */
+        public function setAllowedIps($allowedIps)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAllowedIps()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\ApiKeysService\V2ServerKeyRestrictions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowedIps()
+    class Google_Service_ApiKeysService_V2ServerKeyRestrictions extends \Google\Service\ApiKeysService\V2ServerKeyRestrictions
     {
     }
 }

@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class Word extends \Google\Collection
-{
-    protected $collection_key = 'symbols';
-    protected $boundingBoxType = BoundingPoly::class;
-    protected $boundingBoxDataType = '';
-    /**
-     * Confidence of the OCR results for the word. Range [0, 1].
-     *
-     * @var float
-     */
-    public $confidence;
-    protected $propertyType = TextProperty::class;
-    protected $propertyDataType = '';
-    protected $symbolsType = Symbol::class;
-    protected $symbolsDataType = 'array';
-    /**
-     * The bounding box for the word. The vertices are in the order of top-left,
-     * top-right, bottom-right, bottom-left. When a rotation of the bounding box
-     * is detected the rotation is represented as around the top-left corner as
-     * defined when the text is read in the 'natural' orientation. For example: *
-     * when the text is horizontal it might look like: 0----1 | | 3----2 * when
-     * it's rotated 180 degrees around the top-left corner it becomes: 2----3 | |
-     * 1----0 and the vertex order will still be (0, 1, 2, 3).
-     *
-     * @param BoundingPoly $boundingBox
-     */
-    public function setBoundingBox(BoundingPoly $boundingBox)
+namespace Google\Service\Vision {
+    class Word extends \Google\Collection
     {
+        protected $collection_key = 'symbols';
+        protected $boundingBoxType = BoundingPoly::class;
+        protected $boundingBoxDataType = '';
+        /**
+         * Confidence of the OCR results for the word. Range [0, 1].
+         *
+         * @var float
+         */
+        public $confidence;
+        protected $propertyType = TextProperty::class;
+        protected $propertyDataType = '';
+        protected $symbolsType = Symbol::class;
+        protected $symbolsDataType = 'array';
+        /**
+         * The bounding box for the word. The vertices are in the order of top-left,
+         * top-right, bottom-right, bottom-left. When a rotation of the bounding box
+         * is detected the rotation is represented as around the top-left corner as
+         * defined when the text is read in the 'natural' orientation. For example: *
+         * when the text is horizontal it might look like: 0----1 | | 3----2 * when
+         * it's rotated 180 degrees around the top-left corner it becomes: 2----3 | |
+         * 1----0 and the vertex order will still be (0, 1, 2, 3).
+         *
+         * @param BoundingPoly $boundingBox
+         */
+        public function setBoundingBox(BoundingPoly $boundingBox)
+        {
+        }
+        /**
+         * @return BoundingPoly
+         */
+        public function getBoundingBox()
+        {
+        }
+        /**
+         * Confidence of the OCR results for the word. Range [0, 1].
+         *
+         * @param float $confidence
+         */
+        public function setConfidence($confidence)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getConfidence()
+        {
+        }
+        /**
+         * Additional information detected for the word.
+         *
+         * @param TextProperty $property
+         */
+        public function setProperty(TextProperty $property)
+        {
+        }
+        /**
+         * @return TextProperty
+         */
+        public function getProperty()
+        {
+        }
+        /**
+         * List of symbols in the word. The order of the symbols follows the natural
+         * reading order.
+         *
+         * @param Symbol[] $symbols
+         */
+        public function setSymbols($symbols)
+        {
+        }
+        /**
+         * @return Symbol[]
+         */
+        public function getSymbols()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BoundingPoly
+     * Runtime class alias of \Google\Service\Vision\Word registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBoundingBox()
-    {
-    }
-    /**
-     * Confidence of the OCR results for the word. Range [0, 1].
-     *
-     * @param float $confidence
-     */
-    public function setConfidence($confidence)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getConfidence()
-    {
-    }
-    /**
-     * Additional information detected for the word.
-     *
-     * @param TextProperty $property
-     */
-    public function setProperty(TextProperty $property)
-    {
-    }
-    /**
-     * @return TextProperty
-     */
-    public function getProperty()
-    {
-    }
-    /**
-     * List of symbols in the word. The order of the symbols follows the natural
-     * reading order.
-     *
-     * @param Symbol[] $symbols
-     */
-    public function setSymbols($symbols)
-    {
-    }
-    /**
-     * @return Symbol[]
-     */
-    public function getSymbols()
+    class Google_Service_Vision_Word extends \Google\Service\Vision\Word
     {
     }
 }

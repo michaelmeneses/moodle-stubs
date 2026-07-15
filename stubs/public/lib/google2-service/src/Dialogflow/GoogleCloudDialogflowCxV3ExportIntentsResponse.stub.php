@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3ExportIntentsResponse extends \Google\Model
-{
-    protected $intentsContentType = GoogleCloudDialogflowCxV3InlineDestination::class;
-    protected $intentsContentDataType = '';
-    /**
-     * The URI to a file containing the exported intents. This field is populated
-     * only if `intents_uri` is specified in ExportIntentsRequest.
-     *
-     * @var string
-     */
-    public $intentsUri;
-    /**
-     * Uncompressed byte content for intents. This field is populated only if
-     * `intents_content_inline` is set to true in ExportIntentsRequest.
-     *
-     * @param GoogleCloudDialogflowCxV3InlineDestination $intentsContent
-     */
-    public function setIntentsContent(GoogleCloudDialogflowCxV3InlineDestination $intentsContent)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3ExportIntentsResponse extends \Google\Model
     {
+        protected $intentsContentType = GoogleCloudDialogflowCxV3InlineDestination::class;
+        protected $intentsContentDataType = '';
+        /**
+         * The URI to a file containing the exported intents. This field is populated
+         * only if `intents_uri` is specified in ExportIntentsRequest.
+         *
+         * @var string
+         */
+        public $intentsUri;
+        /**
+         * Uncompressed byte content for intents. This field is populated only if
+         * `intents_content_inline` is set to true in ExportIntentsRequest.
+         *
+         * @param GoogleCloudDialogflowCxV3InlineDestination $intentsContent
+         */
+        public function setIntentsContent(GoogleCloudDialogflowCxV3InlineDestination $intentsContent)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3InlineDestination
+         */
+        public function getIntentsContent()
+        {
+        }
+        /**
+         * The URI to a file containing the exported intents. This field is populated
+         * only if `intents_uri` is specified in ExportIntentsRequest.
+         *
+         * @param string $intentsUri
+         */
+        public function setIntentsUri($intentsUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIntentsUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowCxV3InlineDestination
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ExportIntentsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIntentsContent()
-    {
-    }
-    /**
-     * The URI to a file containing the exported intents. This field is populated
-     * only if `intents_uri` is specified in ExportIntentsRequest.
-     *
-     * @param string $intentsUri
-     */
-    public function setIntentsUri($intentsUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIntentsUri()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3ExportIntentsResponse extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ExportIntentsResponse
     {
     }
 }

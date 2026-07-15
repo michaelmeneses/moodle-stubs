@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class RbacSubjectProto extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $username;
-    /**
-     * @param string
-     */
-    public function setUsername($username)
+namespace Google\Service\CloudSearch {
+    class RbacSubjectProto extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $username;
+        /**
+         * @param string
+         */
+        public function setUsername($username)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUsername()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\RbacSubjectProto registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUsername()
+    class Google_Service_CloudSearch_RbacSubjectProto extends \Google\Service\CloudSearch\RbacSubjectProto
     {
     }
 }

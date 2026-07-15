@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Eventarc;
-
-class GoogleCloudEventarcV1PipelineDestinationAuthenticationConfig extends \Google\Model
-{
-    protected $googleOidcType = GoogleCloudEventarcV1PipelineDestinationAuthenticationConfigOidcToken::class;
-    protected $googleOidcDataType = '';
-    protected $oauthTokenType = GoogleCloudEventarcV1PipelineDestinationAuthenticationConfigOAuthToken::class;
-    protected $oauthTokenDataType = '';
-    /**
-     * Optional. This authenticate method will apply Google OIDC tokens signed by
-     * a Google Cloud service account to the requests.
-     *
-     * @param GoogleCloudEventarcV1PipelineDestinationAuthenticationConfigOidcToken $googleOidc
-     */
-    public function setGoogleOidc(GoogleCloudEventarcV1PipelineDestinationAuthenticationConfigOidcToken $googleOidc)
+namespace Google\Service\Eventarc {
+    class GoogleCloudEventarcV1PipelineDestinationAuthenticationConfig extends \Google\Model
     {
+        protected $googleOidcType = GoogleCloudEventarcV1PipelineDestinationAuthenticationConfigOidcToken::class;
+        protected $googleOidcDataType = '';
+        protected $oauthTokenType = GoogleCloudEventarcV1PipelineDestinationAuthenticationConfigOAuthToken::class;
+        protected $oauthTokenDataType = '';
+        /**
+         * Optional. This authenticate method will apply Google OIDC tokens signed by
+         * a Google Cloud service account to the requests.
+         *
+         * @param GoogleCloudEventarcV1PipelineDestinationAuthenticationConfigOidcToken $googleOidc
+         */
+        public function setGoogleOidc(GoogleCloudEventarcV1PipelineDestinationAuthenticationConfigOidcToken $googleOidc)
+        {
+        }
+        /**
+         * @return GoogleCloudEventarcV1PipelineDestinationAuthenticationConfigOidcToken
+         */
+        public function getGoogleOidc()
+        {
+        }
+        /**
+         * Optional. If specified, an [OAuth
+         * token](https://developers.google.com/identity/protocols/OAuth2) will be
+         * generated and attached as an `Authorization` header in the HTTP request.
+         * This type of authorization should generally only be used when calling
+         * Google APIs hosted on *.googleapis.com.
+         *
+         * @param GoogleCloudEventarcV1PipelineDestinationAuthenticationConfigOAuthToken $oauthToken
+         */
+        public function setOauthToken(GoogleCloudEventarcV1PipelineDestinationAuthenticationConfigOAuthToken $oauthToken)
+        {
+        }
+        /**
+         * @return GoogleCloudEventarcV1PipelineDestinationAuthenticationConfigOAuthToken
+         */
+        public function getOauthToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudEventarcV1PipelineDestinationAuthenticationConfigOidcToken
+     * Runtime class alias of \Google\Service\Eventarc\GoogleCloudEventarcV1PipelineDestinationAuthenticationConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGoogleOidc()
-    {
-    }
-    /**
-     * Optional. If specified, an [OAuth
-     * token](https://developers.google.com/identity/protocols/OAuth2) will be
-     * generated and attached as an `Authorization` header in the HTTP request.
-     * This type of authorization should generally only be used when calling
-     * Google APIs hosted on *.googleapis.com.
-     *
-     * @param GoogleCloudEventarcV1PipelineDestinationAuthenticationConfigOAuthToken $oauthToken
-     */
-    public function setOauthToken(GoogleCloudEventarcV1PipelineDestinationAuthenticationConfigOAuthToken $oauthToken)
-    {
-    }
-    /**
-     * @return GoogleCloudEventarcV1PipelineDestinationAuthenticationConfigOAuthToken
-     */
-    public function getOauthToken()
+    class Google_Service_Eventarc_GoogleCloudEventarcV1PipelineDestinationAuthenticationConfig extends \Google\Service\Eventarc\GoogleCloudEventarcV1PipelineDestinationAuthenticationConfig
     {
     }
 }

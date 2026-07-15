@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vault;
-
-class SharedDriveInfo extends \Google\Collection
-{
-    protected $collection_key = 'sharedDriveIds';
-    /**
-     * A list of shared drive IDs, as provided by the [Drive
-     * API](https://developers.google.com/drive).
-     *
-     * @var string[]
-     */
-    public $sharedDriveIds;
-    /**
-     * A list of shared drive IDs, as provided by the [Drive
-     * API](https://developers.google.com/drive).
-     *
-     * @param string[] $sharedDriveIds
-     */
-    public function setSharedDriveIds($sharedDriveIds)
+namespace Google\Service\Vault {
+    class SharedDriveInfo extends \Google\Collection
     {
+        protected $collection_key = 'sharedDriveIds';
+        /**
+         * A list of shared drive IDs, as provided by the [Drive
+         * API](https://developers.google.com/drive).
+         *
+         * @var string[]
+         */
+        public $sharedDriveIds;
+        /**
+         * A list of shared drive IDs, as provided by the [Drive
+         * API](https://developers.google.com/drive).
+         *
+         * @param string[] $sharedDriveIds
+         */
+        public function setSharedDriveIds($sharedDriveIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSharedDriveIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Vault\SharedDriveInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSharedDriveIds()
+    class Google_Service_Vault_SharedDriveInfo extends \Google\Service\Vault\SharedDriveInfo
     {
     }
 }

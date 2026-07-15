@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class ImageAsset extends \Google\Model
-{
-    /**
-     * File size of the image asset in bytes.
-     *
-     * @var string
-     */
-    public $fileSize;
-    protected $fullSizeType = Dimensions::class;
-    protected $fullSizeDataType = '';
-    /**
-     * MIME type of the image asset.
-     *
-     * @var string
-     */
-    public $mimeType;
-    /**
-     * File size of the image asset in bytes.
-     *
-     * @param string $fileSize
-     */
-    public function setFileSize($fileSize)
+namespace Google\Service\DisplayVideo {
+    class ImageAsset extends \Google\Model
     {
+        /**
+         * File size of the image asset in bytes.
+         *
+         * @var string
+         */
+        public $fileSize;
+        protected $fullSizeType = Dimensions::class;
+        protected $fullSizeDataType = '';
+        /**
+         * MIME type of the image asset.
+         *
+         * @var string
+         */
+        public $mimeType;
+        /**
+         * File size of the image asset in bytes.
+         *
+         * @param string $fileSize
+         */
+        public function setFileSize($fileSize)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFileSize()
+        {
+        }
+        /**
+         * Metadata for this image at its original size.
+         *
+         * @param Dimensions $fullSize
+         */
+        public function setFullSize(Dimensions $fullSize)
+        {
+        }
+        /**
+         * @return Dimensions
+         */
+        public function getFullSize()
+        {
+        }
+        /**
+         * MIME type of the image asset.
+         *
+         * @param string $mimeType
+         */
+        public function setMimeType($mimeType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMimeType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\ImageAsset registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFileSize()
-    {
-    }
-    /**
-     * Metadata for this image at its original size.
-     *
-     * @param Dimensions $fullSize
-     */
-    public function setFullSize(Dimensions $fullSize)
-    {
-    }
-    /**
-     * @return Dimensions
-     */
-    public function getFullSize()
-    {
-    }
-    /**
-     * MIME type of the image asset.
-     *
-     * @param string $mimeType
-     */
-    public function setMimeType($mimeType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMimeType()
+    class Google_Service_DisplayVideo_ImageAsset extends \Google\Service\DisplayVideo\ImageAsset
     {
     }
 }

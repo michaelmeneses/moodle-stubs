@@ -21,47 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform\Resource;
-
-/**
- * The "nasTrialDetails" collection of methods.
- * Typical usage is:
- *  <code>
- *   $aiplatformService = new Google\Service\Aiplatform(...);
- *   $nasTrialDetails = $aiplatformService->projects_locations_nasJobs_nasTrialDetails;
- *  </code>
- */
-class ProjectsLocationsNasJobsNasTrialDetails extends \Google\Service\Resource
-{
+namespace Google\Service\Aiplatform\Resource {
+    use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListNasTrialDetailsResponse;
+    use Google\Service\Aiplatform\GoogleCloudAiplatformV1NasTrialDetail;
     /**
-     * Gets a NasTrialDetail. (nasTrialDetails.get)
-     *
-     * @param string $name Required. The name of the NasTrialDetail resource.
-     * Format: `projects/{project}/locations/{location}/nasJobs/{nas_job}/nasTrialDe
-     * tails/{nas_trial_detail}`
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudAiplatformV1NasTrialDetail
-     * @throws \Google\Service\Exception
+     * The "nasTrialDetails" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $aiplatformService = new Google\Service\Aiplatform(...);
+     *   $nasTrialDetails = $aiplatformService->projects_locations_nasJobs_nasTrialDetails;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class ProjectsLocationsNasJobsNasTrialDetails extends \Google\Service\Resource
     {
+        /**
+         * Gets a NasTrialDetail. (nasTrialDetails.get)
+         *
+         * @param string $name Required. The name of the NasTrialDetail resource.
+         * Format: `projects/{project}/locations/{location}/nasJobs/{nas_job}/nasTrialDe
+         * tails/{nas_trial_detail}`
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudAiplatformV1NasTrialDetail
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * List top NasTrialDetails of a NasJob.
+         * (nasTrialDetails.listProjectsLocationsNasJobsNasTrialDetails)
+         *
+         * @param string $parent Required. The name of the NasJob resource. Format:
+         * `projects/{project}/locations/{location}/nasJobs/{nas_job}`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The standard list page size.
+         * @opt_param string pageToken The standard list page token. Typically obtained
+         * via ListNasTrialDetailsResponse.next_page_token of the previous
+         * JobService.ListNasTrialDetails call.
+         * @return GoogleCloudAiplatformV1ListNasTrialDetailsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsNasJobsNasTrialDetails($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * List top NasTrialDetails of a NasJob.
-     * (nasTrialDetails.listProjectsLocationsNasJobsNasTrialDetails)
-     *
-     * @param string $parent Required. The name of the NasJob resource. Format:
-     * `projects/{project}/locations/{location}/nasJobs/{nas_job}`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The standard list page size.
-     * @opt_param string pageToken The standard list page token. Typically obtained
-     * via ListNasTrialDetailsResponse.next_page_token of the previous
-     * JobService.ListNasTrialDetails call.
-     * @return GoogleCloudAiplatformV1ListNasTrialDetailsResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Aiplatform\Resource\ProjectsLocationsNasJobsNasTrialDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listProjectsLocationsNasJobsNasTrialDetails($parent, $optParams = [])
+    class Google_Service_Aiplatform_Resource_ProjectsLocationsNasJobsNasTrialDetails extends \Google\Service\Aiplatform\Resource\ProjectsLocationsNasJobsNasTrialDetails
     {
     }
 }

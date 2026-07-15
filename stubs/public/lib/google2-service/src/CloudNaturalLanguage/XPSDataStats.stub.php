@@ -21,164 +21,173 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSDataStats extends \Google\Model
-{
-    protected $arrayStatsType = XPSArrayStats::class;
-    protected $arrayStatsDataType = '';
-    protected $categoryStatsType = XPSCategoryStats::class;
-    protected $categoryStatsDataType = '';
-    /**
-     * The number of distinct values.
-     *
-     * @var string
-     */
-    public $distinctValueCount;
-    protected $float64StatsType = XPSFloat64Stats::class;
-    protected $float64StatsDataType = '';
-    /**
-     * The number of values that are null.
-     *
-     * @var string
-     */
-    public $nullValueCount;
-    protected $stringStatsType = XPSStringStats::class;
-    protected $stringStatsDataType = '';
-    protected $structStatsType = XPSStructStats::class;
-    protected $structStatsDataType = '';
-    protected $timestampStatsType = XPSTimestampStats::class;
-    protected $timestampStatsDataType = '';
-    /**
-     * The number of values that are valid.
-     *
-     * @var string
-     */
-    public $validValueCount;
-    /**
-     * The statistics for ARRAY DataType.
-     *
-     * @param XPSArrayStats $arrayStats
-     */
-    public function setArrayStats(XPSArrayStats $arrayStats)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSDataStats extends \Google\Model
     {
+        protected $arrayStatsType = XPSArrayStats::class;
+        protected $arrayStatsDataType = '';
+        protected $categoryStatsType = XPSCategoryStats::class;
+        protected $categoryStatsDataType = '';
+        /**
+         * The number of distinct values.
+         *
+         * @var string
+         */
+        public $distinctValueCount;
+        protected $float64StatsType = XPSFloat64Stats::class;
+        protected $float64StatsDataType = '';
+        /**
+         * The number of values that are null.
+         *
+         * @var string
+         */
+        public $nullValueCount;
+        protected $stringStatsType = XPSStringStats::class;
+        protected $stringStatsDataType = '';
+        protected $structStatsType = XPSStructStats::class;
+        protected $structStatsDataType = '';
+        protected $timestampStatsType = XPSTimestampStats::class;
+        protected $timestampStatsDataType = '';
+        /**
+         * The number of values that are valid.
+         *
+         * @var string
+         */
+        public $validValueCount;
+        /**
+         * The statistics for ARRAY DataType.
+         *
+         * @param XPSArrayStats $arrayStats
+         */
+        public function setArrayStats(XPSArrayStats $arrayStats)
+        {
+        }
+        /**
+         * @return XPSArrayStats
+         */
+        public function getArrayStats()
+        {
+        }
+        /**
+         * The statistics for CATEGORY DataType.
+         *
+         * @param XPSCategoryStats $categoryStats
+         */
+        public function setCategoryStats(XPSCategoryStats $categoryStats)
+        {
+        }
+        /**
+         * @return XPSCategoryStats
+         */
+        public function getCategoryStats()
+        {
+        }
+        /**
+         * The number of distinct values.
+         *
+         * @param string $distinctValueCount
+         */
+        public function setDistinctValueCount($distinctValueCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDistinctValueCount()
+        {
+        }
+        /**
+         * The statistics for FLOAT64 DataType.
+         *
+         * @param XPSFloat64Stats $float64Stats
+         */
+        public function setFloat64Stats(XPSFloat64Stats $float64Stats)
+        {
+        }
+        /**
+         * @return XPSFloat64Stats
+         */
+        public function getFloat64Stats()
+        {
+        }
+        /**
+         * The number of values that are null.
+         *
+         * @param string $nullValueCount
+         */
+        public function setNullValueCount($nullValueCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNullValueCount()
+        {
+        }
+        /**
+         * The statistics for STRING DataType.
+         *
+         * @param XPSStringStats $stringStats
+         */
+        public function setStringStats(XPSStringStats $stringStats)
+        {
+        }
+        /**
+         * @return XPSStringStats
+         */
+        public function getStringStats()
+        {
+        }
+        /**
+         * The statistics for STRUCT DataType.
+         *
+         * @param XPSStructStats $structStats
+         */
+        public function setStructStats(XPSStructStats $structStats)
+        {
+        }
+        /**
+         * @return XPSStructStats
+         */
+        public function getStructStats()
+        {
+        }
+        /**
+         * The statistics for TIMESTAMP DataType.
+         *
+         * @param XPSTimestampStats $timestampStats
+         */
+        public function setTimestampStats(XPSTimestampStats $timestampStats)
+        {
+        }
+        /**
+         * @return XPSTimestampStats
+         */
+        public function getTimestampStats()
+        {
+        }
+        /**
+         * The number of values that are valid.
+         *
+         * @param string $validValueCount
+         */
+        public function setValidValueCount($validValueCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValidValueCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return XPSArrayStats
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSDataStats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArrayStats()
-    {
-    }
-    /**
-     * The statistics for CATEGORY DataType.
-     *
-     * @param XPSCategoryStats $categoryStats
-     */
-    public function setCategoryStats(XPSCategoryStats $categoryStats)
-    {
-    }
-    /**
-     * @return XPSCategoryStats
-     */
-    public function getCategoryStats()
-    {
-    }
-    /**
-     * The number of distinct values.
-     *
-     * @param string $distinctValueCount
-     */
-    public function setDistinctValueCount($distinctValueCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDistinctValueCount()
-    {
-    }
-    /**
-     * The statistics for FLOAT64 DataType.
-     *
-     * @param XPSFloat64Stats $float64Stats
-     */
-    public function setFloat64Stats(XPSFloat64Stats $float64Stats)
-    {
-    }
-    /**
-     * @return XPSFloat64Stats
-     */
-    public function getFloat64Stats()
-    {
-    }
-    /**
-     * The number of values that are null.
-     *
-     * @param string $nullValueCount
-     */
-    public function setNullValueCount($nullValueCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNullValueCount()
-    {
-    }
-    /**
-     * The statistics for STRING DataType.
-     *
-     * @param XPSStringStats $stringStats
-     */
-    public function setStringStats(XPSStringStats $stringStats)
-    {
-    }
-    /**
-     * @return XPSStringStats
-     */
-    public function getStringStats()
-    {
-    }
-    /**
-     * The statistics for STRUCT DataType.
-     *
-     * @param XPSStructStats $structStats
-     */
-    public function setStructStats(XPSStructStats $structStats)
-    {
-    }
-    /**
-     * @return XPSStructStats
-     */
-    public function getStructStats()
-    {
-    }
-    /**
-     * The statistics for TIMESTAMP DataType.
-     *
-     * @param XPSTimestampStats $timestampStats
-     */
-    public function setTimestampStats(XPSTimestampStats $timestampStats)
-    {
-    }
-    /**
-     * @return XPSTimestampStats
-     */
-    public function getTimestampStats()
-    {
-    }
-    /**
-     * The number of values that are valid.
-     *
-     * @param string $validValueCount
-     */
-    public function setValidValueCount($validValueCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValidValueCount()
+    class Google_Service_CloudNaturalLanguage_XPSDataStats extends \Google\Service\CloudNaturalLanguage\XPSDataStats
     {
     }
 }

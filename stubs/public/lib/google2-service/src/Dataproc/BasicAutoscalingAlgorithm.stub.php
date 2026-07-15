@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class BasicAutoscalingAlgorithm extends \Google\Model
-{
-    /**
-     * Optional. Duration between scaling events. A scaling period starts after
-     * the update operation from the previous event has completed.Bounds: 2m, 1d.
-     * Default: 2m.
-     *
-     * @var string
-     */
-    public $cooldownPeriod;
-    protected $sparkStandaloneConfigType = SparkStandaloneAutoscalingConfig::class;
-    protected $sparkStandaloneConfigDataType = '';
-    protected $yarnConfigType = BasicYarnAutoscalingConfig::class;
-    protected $yarnConfigDataType = '';
-    /**
-     * Optional. Duration between scaling events. A scaling period starts after
-     * the update operation from the previous event has completed.Bounds: 2m, 1d.
-     * Default: 2m.
-     *
-     * @param string $cooldownPeriod
-     */
-    public function setCooldownPeriod($cooldownPeriod)
+namespace Google\Service\Dataproc {
+    class BasicAutoscalingAlgorithm extends \Google\Model
     {
+        /**
+         * Optional. Duration between scaling events. A scaling period starts after
+         * the update operation from the previous event has completed.Bounds: 2m, 1d.
+         * Default: 2m.
+         *
+         * @var string
+         */
+        public $cooldownPeriod;
+        protected $sparkStandaloneConfigType = SparkStandaloneAutoscalingConfig::class;
+        protected $sparkStandaloneConfigDataType = '';
+        protected $yarnConfigType = BasicYarnAutoscalingConfig::class;
+        protected $yarnConfigDataType = '';
+        /**
+         * Optional. Duration between scaling events. A scaling period starts after
+         * the update operation from the previous event has completed.Bounds: 2m, 1d.
+         * Default: 2m.
+         *
+         * @param string $cooldownPeriod
+         */
+        public function setCooldownPeriod($cooldownPeriod)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCooldownPeriod()
+        {
+        }
+        /**
+         * Optional. Spark Standalone autoscaling configuration
+         *
+         * @param SparkStandaloneAutoscalingConfig $sparkStandaloneConfig
+         */
+        public function setSparkStandaloneConfig(SparkStandaloneAutoscalingConfig $sparkStandaloneConfig)
+        {
+        }
+        /**
+         * @return SparkStandaloneAutoscalingConfig
+         */
+        public function getSparkStandaloneConfig()
+        {
+        }
+        /**
+         * Optional. YARN autoscaling configuration.
+         *
+         * @param BasicYarnAutoscalingConfig $yarnConfig
+         */
+        public function setYarnConfig(BasicYarnAutoscalingConfig $yarnConfig)
+        {
+        }
+        /**
+         * @return BasicYarnAutoscalingConfig
+         */
+        public function getYarnConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\BasicAutoscalingAlgorithm registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCooldownPeriod()
-    {
-    }
-    /**
-     * Optional. Spark Standalone autoscaling configuration
-     *
-     * @param SparkStandaloneAutoscalingConfig $sparkStandaloneConfig
-     */
-    public function setSparkStandaloneConfig(SparkStandaloneAutoscalingConfig $sparkStandaloneConfig)
-    {
-    }
-    /**
-     * @return SparkStandaloneAutoscalingConfig
-     */
-    public function getSparkStandaloneConfig()
-    {
-    }
-    /**
-     * Optional. YARN autoscaling configuration.
-     *
-     * @param BasicYarnAutoscalingConfig $yarnConfig
-     */
-    public function setYarnConfig(BasicYarnAutoscalingConfig $yarnConfig)
-    {
-    }
-    /**
-     * @return BasicYarnAutoscalingConfig
-     */
-    public function getYarnConfig()
+    class Google_Service_Dataproc_BasicAutoscalingAlgorithm extends \Google\Service\Dataproc\BasicAutoscalingAlgorithm
     {
     }
 }

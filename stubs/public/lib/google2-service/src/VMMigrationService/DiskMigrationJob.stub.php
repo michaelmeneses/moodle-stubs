@@ -21,186 +21,195 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMMigrationService;
-
-class DiskMigrationJob extends \Google\Collection
-{
-    /**
-     * The state is unspecified. This is not in use.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * The initial state of the disk migration. In this state the customers can
-     * update the target details.
-     */
-    public const STATE_READY = 'READY';
-    /**
-     * The migration is active, and it's running or scheduled to run.
-     */
-    public const STATE_RUNNING = 'RUNNING';
-    /**
-     * The migration completed successfully.
-     */
-    public const STATE_SUCCEEDED = 'SUCCEEDED';
-    /**
-     * Migration cancellation was initiated.
-     */
-    public const STATE_CANCELLING = 'CANCELLING';
-    /**
-     * The migration was cancelled.
-     */
-    public const STATE_CANCELLED = 'CANCELLED';
-    /**
-     * The migration process encountered an unrecoverable error and was aborted.
-     */
-    public const STATE_FAILED = 'FAILED';
-    protected $collection_key = 'steps';
-    protected $awsSourceDiskDetailsType = AwsSourceDiskDetails::class;
-    protected $awsSourceDiskDetailsDataType = '';
-    /**
-     * Output only. The time the DiskMigrationJob resource was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    protected $errorsType = Status::class;
-    protected $errorsDataType = 'array';
-    /**
-     * Output only. Identifier. The identifier of the DiskMigrationJob.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. State of the DiskMigrationJob.
-     *
-     * @var string
-     */
-    public $state;
-    protected $stepsType = DiskMigrationStep::class;
-    protected $stepsDataType = 'array';
-    protected $targetDetailsType = DiskMigrationJobTargetDetails::class;
-    protected $targetDetailsDataType = '';
-    /**
-     * Output only. The last time the DiskMigrationJob resource was updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Details of the unattached AWS source disk.
-     *
-     * @param AwsSourceDiskDetails $awsSourceDiskDetails
-     */
-    public function setAwsSourceDiskDetails(AwsSourceDiskDetails $awsSourceDiskDetails)
+namespace Google\Service\VMMigrationService {
+    class DiskMigrationJob extends \Google\Collection
     {
+        /**
+         * The state is unspecified. This is not in use.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * The initial state of the disk migration. In this state the customers can
+         * update the target details.
+         */
+        public const STATE_READY = 'READY';
+        /**
+         * The migration is active, and it's running or scheduled to run.
+         */
+        public const STATE_RUNNING = 'RUNNING';
+        /**
+         * The migration completed successfully.
+         */
+        public const STATE_SUCCEEDED = 'SUCCEEDED';
+        /**
+         * Migration cancellation was initiated.
+         */
+        public const STATE_CANCELLING = 'CANCELLING';
+        /**
+         * The migration was cancelled.
+         */
+        public const STATE_CANCELLED = 'CANCELLED';
+        /**
+         * The migration process encountered an unrecoverable error and was aborted.
+         */
+        public const STATE_FAILED = 'FAILED';
+        protected $collection_key = 'steps';
+        protected $awsSourceDiskDetailsType = AwsSourceDiskDetails::class;
+        protected $awsSourceDiskDetailsDataType = '';
+        /**
+         * Output only. The time the DiskMigrationJob resource was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        protected $errorsType = Status::class;
+        protected $errorsDataType = 'array';
+        /**
+         * Output only. Identifier. The identifier of the DiskMigrationJob.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. State of the DiskMigrationJob.
+         *
+         * @var string
+         */
+        public $state;
+        protected $stepsType = DiskMigrationStep::class;
+        protected $stepsDataType = 'array';
+        protected $targetDetailsType = DiskMigrationJobTargetDetails::class;
+        protected $targetDetailsDataType = '';
+        /**
+         * Output only. The last time the DiskMigrationJob resource was updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Details of the unattached AWS source disk.
+         *
+         * @param AwsSourceDiskDetails $awsSourceDiskDetails
+         */
+        public function setAwsSourceDiskDetails(AwsSourceDiskDetails $awsSourceDiskDetails)
+        {
+        }
+        /**
+         * @return AwsSourceDiskDetails
+         */
+        public function getAwsSourceDiskDetails()
+        {
+        }
+        /**
+         * Output only. The time the DiskMigrationJob resource was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. Provides details on the errors that led to the disk migration
+         * job's state in case of an error.
+         *
+         * @param Status[] $errors
+         */
+        public function setErrors($errors)
+        {
+        }
+        /**
+         * @return Status[]
+         */
+        public function getErrors()
+        {
+        }
+        /**
+         * Output only. Identifier. The identifier of the DiskMigrationJob.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. State of the DiskMigrationJob.
+         *
+         * Accepted values: STATE_UNSPECIFIED, READY, RUNNING, SUCCEEDED, CANCELLING,
+         * CANCELLED, FAILED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Output only. The disk migration steps list representing its progress.
+         *
+         * @param DiskMigrationStep[] $steps
+         */
+        public function setSteps($steps)
+        {
+        }
+        /**
+         * @return DiskMigrationStep[]
+         */
+        public function getSteps()
+        {
+        }
+        /**
+         * Required. Details of the target Disk in Compute Engine.
+         *
+         * @param DiskMigrationJobTargetDetails $targetDetails
+         */
+        public function setTargetDetails(DiskMigrationJobTargetDetails $targetDetails)
+        {
+        }
+        /**
+         * @return DiskMigrationJobTargetDetails
+         */
+        public function getTargetDetails()
+        {
+        }
+        /**
+         * Output only. The last time the DiskMigrationJob resource was updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AwsSourceDiskDetails
+     * Runtime class alias of \Google\Service\VMMigrationService\DiskMigrationJob registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAwsSourceDiskDetails()
-    {
-    }
-    /**
-     * Output only. The time the DiskMigrationJob resource was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. Provides details on the errors that led to the disk migration
-     * job's state in case of an error.
-     *
-     * @param Status[] $errors
-     */
-    public function setErrors($errors)
-    {
-    }
-    /**
-     * @return Status[]
-     */
-    public function getErrors()
-    {
-    }
-    /**
-     * Output only. Identifier. The identifier of the DiskMigrationJob.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. State of the DiskMigrationJob.
-     *
-     * Accepted values: STATE_UNSPECIFIED, READY, RUNNING, SUCCEEDED, CANCELLING,
-     * CANCELLED, FAILED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Output only. The disk migration steps list representing its progress.
-     *
-     * @param DiskMigrationStep[] $steps
-     */
-    public function setSteps($steps)
-    {
-    }
-    /**
-     * @return DiskMigrationStep[]
-     */
-    public function getSteps()
-    {
-    }
-    /**
-     * Required. Details of the target Disk in Compute Engine.
-     *
-     * @param DiskMigrationJobTargetDetails $targetDetails
-     */
-    public function setTargetDetails(DiskMigrationJobTargetDetails $targetDetails)
-    {
-    }
-    /**
-     * @return DiskMigrationJobTargetDetails
-     */
-    public function getTargetDetails()
-    {
-    }
-    /**
-     * Output only. The last time the DiskMigrationJob resource was updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_VMMigrationService_DiskMigrationJob extends \Google\Service\VMMigrationService\DiskMigrationJob
     {
     }
 }

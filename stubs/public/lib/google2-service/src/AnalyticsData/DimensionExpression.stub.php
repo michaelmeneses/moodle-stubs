@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsData;
-
-class DimensionExpression extends \Google\Model
-{
-    protected $concatenateType = ConcatenateExpression::class;
-    protected $concatenateDataType = '';
-    protected $lowerCaseType = CaseExpression::class;
-    protected $lowerCaseDataType = '';
-    protected $upperCaseType = CaseExpression::class;
-    protected $upperCaseDataType = '';
-    /**
-     * Used to combine dimension values to a single dimension. For example,
-     * dimension "country, city": concatenate(country, ", ", city).
-     *
-     * @param ConcatenateExpression $concatenate
-     */
-    public function setConcatenate(ConcatenateExpression $concatenate)
+namespace Google\Service\AnalyticsData {
+    class DimensionExpression extends \Google\Model
     {
+        protected $concatenateType = ConcatenateExpression::class;
+        protected $concatenateDataType = '';
+        protected $lowerCaseType = CaseExpression::class;
+        protected $lowerCaseDataType = '';
+        protected $upperCaseType = CaseExpression::class;
+        protected $upperCaseDataType = '';
+        /**
+         * Used to combine dimension values to a single dimension. For example,
+         * dimension "country, city": concatenate(country, ", ", city).
+         *
+         * @param ConcatenateExpression $concatenate
+         */
+        public function setConcatenate(ConcatenateExpression $concatenate)
+        {
+        }
+        /**
+         * @return ConcatenateExpression
+         */
+        public function getConcatenate()
+        {
+        }
+        /**
+         * Used to convert a dimension value to lower case.
+         *
+         * @param CaseExpression $lowerCase
+         */
+        public function setLowerCase(CaseExpression $lowerCase)
+        {
+        }
+        /**
+         * @return CaseExpression
+         */
+        public function getLowerCase()
+        {
+        }
+        /**
+         * Used to convert a dimension value to upper case.
+         *
+         * @param CaseExpression $upperCase
+         */
+        public function setUpperCase(CaseExpression $upperCase)
+        {
+        }
+        /**
+         * @return CaseExpression
+         */
+        public function getUpperCase()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ConcatenateExpression
+     * Runtime class alias of \Google\Service\AnalyticsData\DimensionExpression registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConcatenate()
-    {
-    }
-    /**
-     * Used to convert a dimension value to lower case.
-     *
-     * @param CaseExpression $lowerCase
-     */
-    public function setLowerCase(CaseExpression $lowerCase)
-    {
-    }
-    /**
-     * @return CaseExpression
-     */
-    public function getLowerCase()
-    {
-    }
-    /**
-     * Used to convert a dimension value to upper case.
-     *
-     * @param CaseExpression $upperCase
-     */
-    public function setUpperCase(CaseExpression $upperCase)
-    {
-    }
-    /**
-     * @return CaseExpression
-     */
-    public function getUpperCase()
+    class Google_Service_AnalyticsData_DimensionExpression extends \Google\Service\AnalyticsData\DimensionExpression
     {
     }
 }

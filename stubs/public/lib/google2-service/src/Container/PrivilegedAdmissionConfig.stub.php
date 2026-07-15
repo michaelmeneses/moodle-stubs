@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class PrivilegedAdmissionConfig extends \Google\Collection
-{
-    protected $collection_key = 'allowlistPaths';
-    /**
-     * The customer allowlist Cloud Storage paths for the cluster. These paths are
-     * used with the `--autopilot-privileged-admission` flag to authorize
-     * privileged workloads in Autopilot clusters. Paths can be GKE-owned, in the
-     * format `gke:/`, or customer-owned, in the format `gs:`. Wildcards (`*`) are
-     * supported to authorize all allowlists under specific paths or directories.
-     * Example: `gs://my-bucket` will authorize all allowlists under the `my-
-     * bucket` bucket.
-     *
-     * @var string[]
-     */
-    public $allowlistPaths;
-    /**
-     * The customer allowlist Cloud Storage paths for the cluster. These paths are
-     * used with the `--autopilot-privileged-admission` flag to authorize
-     * privileged workloads in Autopilot clusters. Paths can be GKE-owned, in the
-     * format `gke:/`, or customer-owned, in the format `gs:`. Wildcards (`*`) are
-     * supported to authorize all allowlists under specific paths or directories.
-     * Example: `gs://my-bucket` will authorize all allowlists under the `my-
-     * bucket` bucket.
-     *
-     * @param string[] $allowlistPaths
-     */
-    public function setAllowlistPaths($allowlistPaths)
+namespace Google\Service\Container {
+    class PrivilegedAdmissionConfig extends \Google\Collection
     {
+        protected $collection_key = 'allowlistPaths';
+        /**
+         * The customer allowlist Cloud Storage paths for the cluster. These paths are
+         * used with the `--autopilot-privileged-admission` flag to authorize
+         * privileged workloads in Autopilot clusters. Paths can be GKE-owned, in the
+         * format `gke:/`, or customer-owned, in the format `gs:`. Wildcards (`*`) are
+         * supported to authorize all allowlists under specific paths or directories.
+         * Example: `gs://my-bucket` will authorize all allowlists under the `my-
+         * bucket` bucket.
+         *
+         * @var string[]
+         */
+        public $allowlistPaths;
+        /**
+         * The customer allowlist Cloud Storage paths for the cluster. These paths are
+         * used with the `--autopilot-privileged-admission` flag to authorize
+         * privileged workloads in Autopilot clusters. Paths can be GKE-owned, in the
+         * format `gke:/`, or customer-owned, in the format `gs:`. Wildcards (`*`) are
+         * supported to authorize all allowlists under specific paths or directories.
+         * Example: `gs://my-bucket` will authorize all allowlists under the `my-
+         * bucket` bucket.
+         *
+         * @param string[] $allowlistPaths
+         */
+        public function setAllowlistPaths($allowlistPaths)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAllowlistPaths()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Container\PrivilegedAdmissionConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowlistPaths()
+    class Google_Service_Container_PrivilegedAdmissionConfig extends \Google\Service\Container\PrivilegedAdmissionConfig
     {
     }
 }

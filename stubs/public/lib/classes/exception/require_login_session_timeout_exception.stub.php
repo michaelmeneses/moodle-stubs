@@ -20,24 +20,33 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\exception;
-
-/**
- * Session timeout exception.
- *
- * This exception is thrown from require_login()
- *
- * @package    core
- * @subpackage exception
- * @copyright  2015 Andrew Nicols <andrew@nicols.co.uk>
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-class require_login_session_timeout_exception extends require_login_exception
-{
+namespace core\exception {
     /**
-     * Constructor
+     * Session timeout exception.
+     *
+     * This exception is thrown from require_login()
+     *
+     * @package    core
+     * @subpackage exception
+     * @copyright  2015 Andrew Nicols <andrew@nicols.co.uk>
+     * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
      */
-    public function __construct()
+    class require_login_session_timeout_exception extends require_login_exception
+    {
+        /**
+         * Constructor
+         */
+        public function __construct()
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \core\exception\require_login_session_timeout_exception registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class require_login_session_timeout_exception extends \core\exception\require_login_session_timeout_exception
     {
     }
 }

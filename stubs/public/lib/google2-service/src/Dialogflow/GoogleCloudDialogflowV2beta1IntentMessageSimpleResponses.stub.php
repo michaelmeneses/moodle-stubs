@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2beta1IntentMessageSimpleResponses extends \Google\Collection
-{
-    protected $collection_key = 'simpleResponses';
-    protected $simpleResponsesType = GoogleCloudDialogflowV2beta1IntentMessageSimpleResponse::class;
-    protected $simpleResponsesDataType = 'array';
-    /**
-     * Required. The list of simple responses.
-     *
-     * @param GoogleCloudDialogflowV2beta1IntentMessageSimpleResponse[] $simpleResponses
-     */
-    public function setSimpleResponses($simpleResponses)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2beta1IntentMessageSimpleResponses extends \Google\Collection
     {
+        protected $collection_key = 'simpleResponses';
+        protected $simpleResponsesType = GoogleCloudDialogflowV2beta1IntentMessageSimpleResponse::class;
+        protected $simpleResponsesDataType = 'array';
+        /**
+         * Required. The list of simple responses.
+         *
+         * @param GoogleCloudDialogflowV2beta1IntentMessageSimpleResponse[] $simpleResponses
+         */
+        public function setSimpleResponses($simpleResponses)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2beta1IntentMessageSimpleResponse[]
+         */
+        public function getSimpleResponses()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowV2beta1IntentMessageSimpleResponse[]
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1IntentMessageSimpleResponses registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSimpleResponses()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1IntentMessageSimpleResponses extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1IntentMessageSimpleResponses
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1ConversationCallMetadata extends \Google\Model
-{
-    /**
-     * The audio channel that contains the agent.
-     *
-     * @var int
-     */
-    public $agentChannel;
-    /**
-     * The audio channel that contains the customer.
-     *
-     * @var int
-     */
-    public $customerChannel;
-    /**
-     * The audio channel that contains the agent.
-     *
-     * @param int $agentChannel
-     */
-    public function setAgentChannel($agentChannel)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1ConversationCallMetadata extends \Google\Model
     {
+        /**
+         * The audio channel that contains the agent.
+         *
+         * @var int
+         */
+        public $agentChannel;
+        /**
+         * The audio channel that contains the customer.
+         *
+         * @var int
+         */
+        public $customerChannel;
+        /**
+         * The audio channel that contains the agent.
+         *
+         * @param int $agentChannel
+         */
+        public function setAgentChannel($agentChannel)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getAgentChannel()
+        {
+        }
+        /**
+         * The audio channel that contains the customer.
+         *
+         * @param int $customerChannel
+         */
+        public function setCustomerChannel($customerChannel)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCustomerChannel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1ConversationCallMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAgentChannel()
-    {
-    }
-    /**
-     * The audio channel that contains the customer.
-     *
-     * @param int $customerChannel
-     */
-    public function setCustomerChannel($customerChannel)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getCustomerChannel()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1ConversationCallMetadata extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1ConversationCallMetadata
     {
     }
 }

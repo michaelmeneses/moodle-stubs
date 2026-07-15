@@ -21,174 +21,183 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storage;
-
-class ManagedFolder extends \Google\Model
-{
-    /**
-     * The name of the bucket containing this managed folder.
-     *
-     * @var string
-     */
-    public $bucket;
-    /**
-     * The creation time of the managed folder in RFC 3339 format.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * The ID of the managed folder, including the bucket name and managed folder
-     * name.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * The kind of item this is. For managed folders, this is always
-     * storage#managedFolder.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The version of the metadata for this managed folder. Used for preconditions
-     * and for detecting changes in metadata.
-     *
-     * @var string
-     */
-    public $metageneration;
-    /**
-     * The name of the managed folder. Required if not specified by URL parameter.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The link to this managed folder.
-     *
-     * @var string
-     */
-    public $selfLink;
-    /**
-     * The last update time of the managed folder metadata in RFC 3339 format.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * The name of the bucket containing this managed folder.
-     *
-     * @param string $bucket
-     */
-    public function setBucket($bucket)
+namespace Google\Service\Storage {
+    class ManagedFolder extends \Google\Model
     {
+        /**
+         * The name of the bucket containing this managed folder.
+         *
+         * @var string
+         */
+        public $bucket;
+        /**
+         * The creation time of the managed folder in RFC 3339 format.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * The ID of the managed folder, including the bucket name and managed folder
+         * name.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * The kind of item this is. For managed folders, this is always
+         * storage#managedFolder.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The version of the metadata for this managed folder. Used for preconditions
+         * and for detecting changes in metadata.
+         *
+         * @var string
+         */
+        public $metageneration;
+        /**
+         * The name of the managed folder. Required if not specified by URL parameter.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The link to this managed folder.
+         *
+         * @var string
+         */
+        public $selfLink;
+        /**
+         * The last update time of the managed folder metadata in RFC 3339 format.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * The name of the bucket containing this managed folder.
+         *
+         * @param string $bucket
+         */
+        public function setBucket($bucket)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBucket()
+        {
+        }
+        /**
+         * The creation time of the managed folder in RFC 3339 format.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * The ID of the managed folder, including the bucket name and managed folder
+         * name.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * The kind of item this is. For managed folders, this is always
+         * storage#managedFolder.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The version of the metadata for this managed folder. Used for preconditions
+         * and for detecting changes in metadata.
+         *
+         * @param string $metageneration
+         */
+        public function setMetageneration($metageneration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMetageneration()
+        {
+        }
+        /**
+         * The name of the managed folder. Required if not specified by URL parameter.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The link to this managed folder.
+         *
+         * @param string $selfLink
+         */
+        public function setSelfLink($selfLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelfLink()
+        {
+        }
+        /**
+         * The last update time of the managed folder metadata in RFC 3339 format.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Storage\ManagedFolder registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBucket()
-    {
-    }
-    /**
-     * The creation time of the managed folder in RFC 3339 format.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * The ID of the managed folder, including the bucket name and managed folder
-     * name.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * The kind of item this is. For managed folders, this is always
-     * storage#managedFolder.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The version of the metadata for this managed folder. Used for preconditions
-     * and for detecting changes in metadata.
-     *
-     * @param string $metageneration
-     */
-    public function setMetageneration($metageneration)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMetageneration()
-    {
-    }
-    /**
-     * The name of the managed folder. Required if not specified by URL parameter.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The link to this managed folder.
-     *
-     * @param string $selfLink
-     */
-    public function setSelfLink($selfLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelfLink()
-    {
-    }
-    /**
-     * The last update time of the managed folder metadata in RFC 3339 format.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_Storage_ManagedFolder extends \Google\Service\Storage\ManagedFolder
     {
     }
 }

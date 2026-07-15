@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudContentwarehouseV1ListDocumentSchemasResponse extends \Google\Collection
-{
-    protected $collection_key = 'documentSchemas';
-    protected $documentSchemasType = GoogleCloudContentwarehouseV1DocumentSchema::class;
-    protected $documentSchemasDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The document schemas from the specified parent.
-     *
-     * @param GoogleCloudContentwarehouseV1DocumentSchema[] $documentSchemas
-     */
-    public function setDocumentSchemas($documentSchemas)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudContentwarehouseV1ListDocumentSchemasResponse extends \Google\Collection
     {
+        protected $collection_key = 'documentSchemas';
+        protected $documentSchemasType = GoogleCloudContentwarehouseV1DocumentSchema::class;
+        protected $documentSchemasDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The document schemas from the specified parent.
+         *
+         * @param GoogleCloudContentwarehouseV1DocumentSchema[] $documentSchemas
+         */
+        public function setDocumentSchemas($documentSchemas)
+        {
+        }
+        /**
+         * @return GoogleCloudContentwarehouseV1DocumentSchema[]
+         */
+        public function getDocumentSchemas()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudContentwarehouseV1DocumentSchema[]
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1ListDocumentSchemasResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDocumentSchemas()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Contentwarehouse_GoogleCloudContentwarehouseV1ListDocumentSchemasResponse extends \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1ListDocumentSchemasResponse
     {
     }
 }

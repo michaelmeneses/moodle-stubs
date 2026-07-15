@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessPlaceActions;
-
-class ListPlaceActionTypeMetadataResponse extends \Google\Collection
-{
-    protected $collection_key = 'placeActionTypeMetadata';
-    /**
-     * If the number of action types exceeded the requested page size, this field
-     * will be populated with a token to fetch the next page on a subsequent call
-     * to `placeActionTypeMetadata.list`. If there are no more results, this field
-     * will not be present in the response.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $placeActionTypeMetadataType = PlaceActionTypeMetadata::class;
-    protected $placeActionTypeMetadataDataType = 'array';
-    /**
-     * If the number of action types exceeded the requested page size, this field
-     * will be populated with a token to fetch the next page on a subsequent call
-     * to `placeActionTypeMetadata.list`. If there are no more results, this field
-     * will not be present in the response.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\MyBusinessPlaceActions {
+    class ListPlaceActionTypeMetadataResponse extends \Google\Collection
     {
+        protected $collection_key = 'placeActionTypeMetadata';
+        /**
+         * If the number of action types exceeded the requested page size, this field
+         * will be populated with a token to fetch the next page on a subsequent call
+         * to `placeActionTypeMetadata.list`. If there are no more results, this field
+         * will not be present in the response.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $placeActionTypeMetadataType = PlaceActionTypeMetadata::class;
+        protected $placeActionTypeMetadataDataType = 'array';
+        /**
+         * If the number of action types exceeded the requested page size, this field
+         * will be populated with a token to fetch the next page on a subsequent call
+         * to `placeActionTypeMetadata.list`. If there are no more results, this field
+         * will not be present in the response.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * A collection of metadata for the available place action types.
+         *
+         * @param PlaceActionTypeMetadata[] $placeActionTypeMetadata
+         */
+        public function setPlaceActionTypeMetadata($placeActionTypeMetadata)
+        {
+        }
+        /**
+         * @return PlaceActionTypeMetadata[]
+         */
+        public function getPlaceActionTypeMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MyBusinessPlaceActions\ListPlaceActionTypeMetadataResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * A collection of metadata for the available place action types.
-     *
-     * @param PlaceActionTypeMetadata[] $placeActionTypeMetadata
-     */
-    public function setPlaceActionTypeMetadata($placeActionTypeMetadata)
-    {
-    }
-    /**
-     * @return PlaceActionTypeMetadata[]
-     */
-    public function getPlaceActionTypeMetadata()
+    class Google_Service_MyBusinessPlaceActions_ListPlaceActionTypeMetadataResponse extends \Google\Service\MyBusinessPlaceActions\ListPlaceActionTypeMetadataResponse
     {
     }
 }

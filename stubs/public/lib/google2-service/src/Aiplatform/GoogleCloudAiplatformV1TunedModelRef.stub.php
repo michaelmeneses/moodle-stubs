@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1TunedModelRef extends \Google\Model
-{
-    /**
-     * Support migration from tuning job list page, from bison model to gemini
-     * model.
-     *
-     * @var string
-     */
-    public $pipelineJob;
-    /**
-     * Support migration from model registry.
-     *
-     * @var string
-     */
-    public $tunedModel;
-    /**
-     * Support migration from tuning job list page, from gemini-1.0-pro-002 to 1.5
-     * and above.
-     *
-     * @var string
-     */
-    public $tuningJob;
-    /**
-     * Support migration from tuning job list page, from bison model to gemini
-     * model.
-     *
-     * @param string $pipelineJob
-     */
-    public function setPipelineJob($pipelineJob)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1TunedModelRef extends \Google\Model
     {
+        /**
+         * Support migration from tuning job list page, from bison model to gemini
+         * model.
+         *
+         * @var string
+         */
+        public $pipelineJob;
+        /**
+         * Support migration from model registry.
+         *
+         * @var string
+         */
+        public $tunedModel;
+        /**
+         * Support migration from tuning job list page, from gemini-1.0-pro-002 to 1.5
+         * and above.
+         *
+         * @var string
+         */
+        public $tuningJob;
+        /**
+         * Support migration from tuning job list page, from bison model to gemini
+         * model.
+         *
+         * @param string $pipelineJob
+         */
+        public function setPipelineJob($pipelineJob)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPipelineJob()
+        {
+        }
+        /**
+         * Support migration from model registry.
+         *
+         * @param string $tunedModel
+         */
+        public function setTunedModel($tunedModel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTunedModel()
+        {
+        }
+        /**
+         * Support migration from tuning job list page, from gemini-1.0-pro-002 to 1.5
+         * and above.
+         *
+         * @param string $tuningJob
+         */
+        public function setTuningJob($tuningJob)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTuningJob()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1TunedModelRef registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPipelineJob()
-    {
-    }
-    /**
-     * Support migration from model registry.
-     *
-     * @param string $tunedModel
-     */
-    public function setTunedModel($tunedModel)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTunedModel()
-    {
-    }
-    /**
-     * Support migration from tuning job list page, from gemini-1.0-pro-002 to 1.5
-     * and above.
-     *
-     * @param string $tuningJob
-     */
-    public function setTuningJob($tuningJob)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTuningJob()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1TunedModelRef extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1TunedModelRef
     {
     }
 }

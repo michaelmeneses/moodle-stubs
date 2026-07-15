@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSTablesModelColumnInfo extends \Google\Model
-{
-    /**
-     * The ID of the column.
-     *
-     * @var int
-     */
-    public $columnId;
-    /**
-     * When given as part of a Model: Measurement of how much model predictions
-     * correctness on the TEST data depend on values in this column. A value
-     * between 0 and 1, higher means higher influence. These values are normalized
-     * - for all input feature columns of a given model they add to 1. When given
-     * back by Predict or Batch Predict: Measurement of how impactful for the
-     * prediction returned for the given row the value in this column was.
-     * Specifically, the feature importance specifies the marginal contribution
-     * that the feature made to the prediction score compared to the baseline
-     * score. These values are computed using the Sampled Shapley method.
-     *
-     * @var float
-     */
-    public $featureImportance;
-    /**
-     * The ID of the column.
-     *
-     * @param int $columnId
-     */
-    public function setColumnId($columnId)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSTablesModelColumnInfo extends \Google\Model
     {
+        /**
+         * The ID of the column.
+         *
+         * @var int
+         */
+        public $columnId;
+        /**
+         * When given as part of a Model: Measurement of how much model predictions
+         * correctness on the TEST data depend on values in this column. A value
+         * between 0 and 1, higher means higher influence. These values are normalized
+         * - for all input feature columns of a given model they add to 1. When given
+         * back by Predict or Batch Predict: Measurement of how impactful for the
+         * prediction returned for the given row the value in this column was.
+         * Specifically, the feature importance specifies the marginal contribution
+         * that the feature made to the prediction score compared to the baseline
+         * score. These values are computed using the Sampled Shapley method.
+         *
+         * @var float
+         */
+        public $featureImportance;
+        /**
+         * The ID of the column.
+         *
+         * @param int $columnId
+         */
+        public function setColumnId($columnId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getColumnId()
+        {
+        }
+        /**
+         * When given as part of a Model: Measurement of how much model predictions
+         * correctness on the TEST data depend on values in this column. A value
+         * between 0 and 1, higher means higher influence. These values are normalized
+         * - for all input feature columns of a given model they add to 1. When given
+         * back by Predict or Batch Predict: Measurement of how impactful for the
+         * prediction returned for the given row the value in this column was.
+         * Specifically, the feature importance specifies the marginal contribution
+         * that the feature made to the prediction score compared to the baseline
+         * score. These values are computed using the Sampled Shapley method.
+         *
+         * @param float $featureImportance
+         */
+        public function setFeatureImportance($featureImportance)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getFeatureImportance()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSTablesModelColumnInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumnId()
-    {
-    }
-    /**
-     * When given as part of a Model: Measurement of how much model predictions
-     * correctness on the TEST data depend on values in this column. A value
-     * between 0 and 1, higher means higher influence. These values are normalized
-     * - for all input feature columns of a given model they add to 1. When given
-     * back by Predict or Batch Predict: Measurement of how impactful for the
-     * prediction returned for the given row the value in this column was.
-     * Specifically, the feature importance specifies the marginal contribution
-     * that the feature made to the prediction score compared to the baseline
-     * score. These values are computed using the Sampled Shapley method.
-     *
-     * @param float $featureImportance
-     */
-    public function setFeatureImportance($featureImportance)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getFeatureImportance()
+    class Google_Service_CloudNaturalLanguage_XPSTablesModelColumnInfo extends \Google\Service\CloudNaturalLanguage\XPSTablesModelColumnInfo
     {
     }
 }

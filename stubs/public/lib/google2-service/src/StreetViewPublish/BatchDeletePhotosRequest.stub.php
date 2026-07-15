@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\StreetViewPublish;
-
-class BatchDeletePhotosRequest extends \Google\Collection
-{
-    protected $collection_key = 'photoIds';
-    /**
-     * @var string[]
-     */
-    public $photoIds;
-    /**
-     * @param string[] $photoIds
-     */
-    public function setPhotoIds($photoIds)
+namespace Google\Service\StreetViewPublish {
+    class BatchDeletePhotosRequest extends \Google\Collection
     {
+        protected $collection_key = 'photoIds';
+        /**
+         * @var string[]
+         */
+        public $photoIds;
+        /**
+         * @param string[] $photoIds
+         */
+        public function setPhotoIds($photoIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPhotoIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\StreetViewPublish\BatchDeletePhotosRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPhotoIds()
+    class Google_Service_StreetViewPublish_BatchDeletePhotosRequest extends \Google\Service\StreetViewPublish\BatchDeletePhotosRequest
     {
     }
 }

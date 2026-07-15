@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class StragglerSummary extends \Google\Collection
-{
-    protected $collection_key = 'recentStragglers';
-    protected $recentStragglersType = Straggler::class;
-    protected $recentStragglersDataType = 'array';
-    /**
-     * Aggregated counts of straggler causes, keyed by the string representation
-     * of the StragglerCause enum.
-     *
-     * @var string[]
-     */
-    public $stragglerCauseCount;
-    /**
-     * The total count of stragglers.
-     *
-     * @var string
-     */
-    public $totalStragglerCount;
-    /**
-     * The most recent stragglers.
-     *
-     * @param Straggler[] $recentStragglers
-     */
-    public function setRecentStragglers($recentStragglers)
+namespace Google\Service\Dataflow {
+    class StragglerSummary extends \Google\Collection
     {
+        protected $collection_key = 'recentStragglers';
+        protected $recentStragglersType = Straggler::class;
+        protected $recentStragglersDataType = 'array';
+        /**
+         * Aggregated counts of straggler causes, keyed by the string representation
+         * of the StragglerCause enum.
+         *
+         * @var string[]
+         */
+        public $stragglerCauseCount;
+        /**
+         * The total count of stragglers.
+         *
+         * @var string
+         */
+        public $totalStragglerCount;
+        /**
+         * The most recent stragglers.
+         *
+         * @param Straggler[] $recentStragglers
+         */
+        public function setRecentStragglers($recentStragglers)
+        {
+        }
+        /**
+         * @return Straggler[]
+         */
+        public function getRecentStragglers()
+        {
+        }
+        /**
+         * Aggregated counts of straggler causes, keyed by the string representation
+         * of the StragglerCause enum.
+         *
+         * @param string[] $stragglerCauseCount
+         */
+        public function setStragglerCauseCount($stragglerCauseCount)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getStragglerCauseCount()
+        {
+        }
+        /**
+         * The total count of stragglers.
+         *
+         * @param string $totalStragglerCount
+         */
+        public function setTotalStragglerCount($totalStragglerCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalStragglerCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Straggler[]
+     * Runtime class alias of \Google\Service\Dataflow\StragglerSummary registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRecentStragglers()
-    {
-    }
-    /**
-     * Aggregated counts of straggler causes, keyed by the string representation
-     * of the StragglerCause enum.
-     *
-     * @param string[] $stragglerCauseCount
-     */
-    public function setStragglerCauseCount($stragglerCauseCount)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getStragglerCauseCount()
-    {
-    }
-    /**
-     * The total count of stragglers.
-     *
-     * @param string $totalStragglerCount
-     */
-    public function setTotalStragglerCount($totalStragglerCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalStragglerCount()
+    class Google_Service_Dataflow_StragglerSummary extends \Google\Service\Dataflow\StragglerSummary
     {
     }
 }

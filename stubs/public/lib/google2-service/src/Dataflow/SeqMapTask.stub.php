@@ -21,123 +21,132 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class SeqMapTask extends \Google\Collection
-{
-    protected $collection_key = 'outputInfos';
-    protected $inputsType = SideInputInfo::class;
-    protected $inputsDataType = 'array';
-    /**
-     * The user-provided name of the SeqDo operation.
-     *
-     * @var string
-     */
-    public $name;
-    protected $outputInfosType = SeqMapTaskOutputInfo::class;
-    protected $outputInfosDataType = 'array';
-    /**
-     * System-defined name of the stage containing the SeqDo operation. Unique
-     * across the workflow.
-     *
-     * @var string
-     */
-    public $stageName;
-    /**
-     * System-defined name of the SeqDo operation. Unique across the workflow.
-     *
-     * @var string
-     */
-    public $systemName;
-    /**
-     * The user function to invoke.
-     *
-     * @var array[]
-     */
-    public $userFn;
-    /**
-     * Information about each of the inputs.
-     *
-     * @param SideInputInfo[] $inputs
-     */
-    public function setInputs($inputs)
+namespace Google\Service\Dataflow {
+    class SeqMapTask extends \Google\Collection
     {
+        protected $collection_key = 'outputInfos';
+        protected $inputsType = SideInputInfo::class;
+        protected $inputsDataType = 'array';
+        /**
+         * The user-provided name of the SeqDo operation.
+         *
+         * @var string
+         */
+        public $name;
+        protected $outputInfosType = SeqMapTaskOutputInfo::class;
+        protected $outputInfosDataType = 'array';
+        /**
+         * System-defined name of the stage containing the SeqDo operation. Unique
+         * across the workflow.
+         *
+         * @var string
+         */
+        public $stageName;
+        /**
+         * System-defined name of the SeqDo operation. Unique across the workflow.
+         *
+         * @var string
+         */
+        public $systemName;
+        /**
+         * The user function to invoke.
+         *
+         * @var array[]
+         */
+        public $userFn;
+        /**
+         * Information about each of the inputs.
+         *
+         * @param SideInputInfo[] $inputs
+         */
+        public function setInputs($inputs)
+        {
+        }
+        /**
+         * @return SideInputInfo[]
+         */
+        public function getInputs()
+        {
+        }
+        /**
+         * The user-provided name of the SeqDo operation.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Information about each of the outputs.
+         *
+         * @param SeqMapTaskOutputInfo[] $outputInfos
+         */
+        public function setOutputInfos($outputInfos)
+        {
+        }
+        /**
+         * @return SeqMapTaskOutputInfo[]
+         */
+        public function getOutputInfos()
+        {
+        }
+        /**
+         * System-defined name of the stage containing the SeqDo operation. Unique
+         * across the workflow.
+         *
+         * @param string $stageName
+         */
+        public function setStageName($stageName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStageName()
+        {
+        }
+        /**
+         * System-defined name of the SeqDo operation. Unique across the workflow.
+         *
+         * @param string $systemName
+         */
+        public function setSystemName($systemName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSystemName()
+        {
+        }
+        /**
+         * The user function to invoke.
+         *
+         * @param array[] $userFn
+         */
+        public function setUserFn($userFn)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getUserFn()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SideInputInfo[]
+     * Runtime class alias of \Google\Service\Dataflow\SeqMapTask registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInputs()
-    {
-    }
-    /**
-     * The user-provided name of the SeqDo operation.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Information about each of the outputs.
-     *
-     * @param SeqMapTaskOutputInfo[] $outputInfos
-     */
-    public function setOutputInfos($outputInfos)
-    {
-    }
-    /**
-     * @return SeqMapTaskOutputInfo[]
-     */
-    public function getOutputInfos()
-    {
-    }
-    /**
-     * System-defined name of the stage containing the SeqDo operation. Unique
-     * across the workflow.
-     *
-     * @param string $stageName
-     */
-    public function setStageName($stageName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStageName()
-    {
-    }
-    /**
-     * System-defined name of the SeqDo operation. Unique across the workflow.
-     *
-     * @param string $systemName
-     */
-    public function setSystemName($systemName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSystemName()
-    {
-    }
-    /**
-     * The user function to invoke.
-     *
-     * @param array[] $userFn
-     */
-    public function setUserFn($userFn)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getUserFn()
+    class Google_Service_Dataflow_SeqMapTask extends \Google\Service\Dataflow\SeqMapTask
     {
     }
 }

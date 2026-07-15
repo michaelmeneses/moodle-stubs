@@ -21,105 +21,114 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI;
-
-class Certificate extends \Google\Collection
-{
-    protected $collection_key = 'subjectAlternativeName';
-    /**
-     * The certificate expire time.
-     *
-     * @var string
-     */
-    public $expireTime;
-    protected $issuingCertificateType = Certificate::class;
-    protected $issuingCertificateDataType = '';
-    /**
-     * The certificate subject.
-     *
-     * @var string
-     */
-    public $subject;
-    /**
-     * The additional hostnames for the domain.
-     *
-     * @var string[]
-     */
-    public $subjectAlternativeName;
-    /**
-     * The certificate thumbprint which uniquely identifies the certificate.
-     *
-     * @var string
-     */
-    public $thumbprint;
-    /**
-     * The certificate expire time.
-     *
-     * @param string $expireTime
-     */
-    public function setExpireTime($expireTime)
+namespace Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI {
+    class Certificate extends \Google\Collection
     {
+        protected $collection_key = 'subjectAlternativeName';
+        /**
+         * The certificate expire time.
+         *
+         * @var string
+         */
+        public $expireTime;
+        protected $issuingCertificateType = Certificate::class;
+        protected $issuingCertificateDataType = '';
+        /**
+         * The certificate subject.
+         *
+         * @var string
+         */
+        public $subject;
+        /**
+         * The additional hostnames for the domain.
+         *
+         * @var string[]
+         */
+        public $subjectAlternativeName;
+        /**
+         * The certificate thumbprint which uniquely identifies the certificate.
+         *
+         * @var string
+         */
+        public $thumbprint;
+        /**
+         * The certificate expire time.
+         *
+         * @param string $expireTime
+         */
+        public function setExpireTime($expireTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpireTime()
+        {
+        }
+        /**
+         * The issuer of this certificate.
+         *
+         * @param Certificate $issuingCertificate
+         */
+        public function setIssuingCertificate(Certificate $issuingCertificate)
+        {
+        }
+        /**
+         * @return Certificate
+         */
+        public function getIssuingCertificate()
+        {
+        }
+        /**
+         * The certificate subject.
+         *
+         * @param string $subject
+         */
+        public function setSubject($subject)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubject()
+        {
+        }
+        /**
+         * The additional hostnames for the domain.
+         *
+         * @param string[] $subjectAlternativeName
+         */
+        public function setSubjectAlternativeName($subjectAlternativeName)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSubjectAlternativeName()
+        {
+        }
+        /**
+         * The certificate thumbprint which uniquely identifies the certificate.
+         *
+         * @param string $thumbprint
+         */
+        public function setThumbprint($thumbprint)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getThumbprint()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\Certificate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExpireTime()
-    {
-    }
-    /**
-     * The issuer of this certificate.
-     *
-     * @param Certificate $issuingCertificate
-     */
-    public function setIssuingCertificate(Certificate $issuingCertificate)
-    {
-    }
-    /**
-     * @return Certificate
-     */
-    public function getIssuingCertificate()
-    {
-    }
-    /**
-     * The certificate subject.
-     *
-     * @param string $subject
-     */
-    public function setSubject($subject)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubject()
-    {
-    }
-    /**
-     * The additional hostnames for the domain.
-     *
-     * @param string[] $subjectAlternativeName
-     */
-    public function setSubjectAlternativeName($subjectAlternativeName)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSubjectAlternativeName()
-    {
-    }
-    /**
-     * The certificate thumbprint which uniquely identifies the certificate.
-     *
-     * @param string $thumbprint
-     */
-    public function setThumbprint($thumbprint)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getThumbprint()
+    class Google_Service_ManagedServiceforMicrosoftActiveDirectoryConsumerAPI_Certificate extends \Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\Certificate
     {
     }
 }

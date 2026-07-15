@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class HangoutVideoEventMetadata extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $hangoutVideoType;
-    /**
-     * @param string
-     */
-    public function setHangoutVideoType($hangoutVideoType)
+namespace Google\Service\CloudSearch {
+    class HangoutVideoEventMetadata extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $hangoutVideoType;
+        /**
+         * @param string
+         */
+        public function setHangoutVideoType($hangoutVideoType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHangoutVideoType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\HangoutVideoEventMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHangoutVideoType()
+    class Google_Service_CloudSearch_HangoutVideoEventMetadata extends \Google\Service\CloudSearch\HangoutVideoEventMetadata
     {
     }
 }

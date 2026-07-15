@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class ImportError extends \Google\Model
-{
-    public const SEVERITY_SEVERITY_UNSPECIFIED = 'SEVERITY_UNSPECIFIED';
-    public const SEVERITY_ERROR = 'ERROR';
-    public const SEVERITY_WARNING = 'WARNING';
-    public const SEVERITY_INFO = 'INFO';
-    /**
-     * The error information.
-     *
-     * @var string
-     */
-    public $errorDetails;
-    /**
-     * The severity of the error.
-     *
-     * @var string
-     */
-    public $severity;
-    /**
-     * The error information.
-     *
-     * @param string $errorDetails
-     */
-    public function setErrorDetails($errorDetails)
+namespace Google\Service\MigrationCenterAPI {
+    class ImportError extends \Google\Model
     {
+        public const SEVERITY_SEVERITY_UNSPECIFIED = 'SEVERITY_UNSPECIFIED';
+        public const SEVERITY_ERROR = 'ERROR';
+        public const SEVERITY_WARNING = 'WARNING';
+        public const SEVERITY_INFO = 'INFO';
+        /**
+         * The error information.
+         *
+         * @var string
+         */
+        public $errorDetails;
+        /**
+         * The severity of the error.
+         *
+         * @var string
+         */
+        public $severity;
+        /**
+         * The error information.
+         *
+         * @param string $errorDetails
+         */
+        public function setErrorDetails($errorDetails)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getErrorDetails()
+        {
+        }
+        /**
+         * The severity of the error.
+         *
+         * Accepted values: SEVERITY_UNSPECIFIED, ERROR, WARNING, INFO
+         *
+         * @param self::SEVERITY_* $severity
+         */
+        public function setSeverity($severity)
+        {
+        }
+        /**
+         * @return self::SEVERITY_*
+         */
+        public function getSeverity()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\ImportError registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrorDetails()
-    {
-    }
-    /**
-     * The severity of the error.
-     *
-     * Accepted values: SEVERITY_UNSPECIFIED, ERROR, WARNING, INFO
-     *
-     * @param self::SEVERITY_* $severity
-     */
-    public function setSeverity($severity)
-    {
-    }
-    /**
-     * @return self::SEVERITY_*
-     */
-    public function getSeverity()
+    class Google_Service_MigrationCenterAPI_ImportError extends \Google\Service\MigrationCenterAPI\ImportError
     {
     }
 }

@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ProbeHttpHeader extends \Google\Model
-{
-    /**
-     * The header field name. This will be canonicalized upon output, so case-
-     * variant names will be understood as the same header.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The header field value
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * The header field name. This will be canonicalized upon output, so case-
-     * variant names will be understood as the same header.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ProbeHttpHeader extends \Google\Model
     {
+        /**
+         * The header field name. This will be canonicalized upon output, so case-
+         * variant names will be understood as the same header.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The header field value
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * The header field name. This will be canonicalized upon output, so case-
+         * variant names will be understood as the same header.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The header field value
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ProbeHttpHeader registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * The header field value
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ProbeHttpHeader extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ProbeHttpHeader
     {
     }
 }

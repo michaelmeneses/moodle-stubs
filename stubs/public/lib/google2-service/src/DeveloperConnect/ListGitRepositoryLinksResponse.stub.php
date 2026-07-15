@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DeveloperConnect;
-
-class ListGitRepositoryLinksResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $gitRepositoryLinksType = GitRepositoryLink::class;
-    protected $gitRepositoryLinksDataType = 'array';
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * The list of GitRepositoryLinks
-     *
-     * @param GitRepositoryLink[] $gitRepositoryLinks
-     */
-    public function setGitRepositoryLinks($gitRepositoryLinks)
+namespace Google\Service\DeveloperConnect {
+    class ListGitRepositoryLinksResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $gitRepositoryLinksType = GitRepositoryLink::class;
+        protected $gitRepositoryLinksDataType = 'array';
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * The list of GitRepositoryLinks
+         *
+         * @param GitRepositoryLink[] $gitRepositoryLinks
+         */
+        public function setGitRepositoryLinks($gitRepositoryLinks)
+        {
+        }
+        /**
+         * @return GitRepositoryLink[]
+         */
+        public function getGitRepositoryLinks()
+        {
+        }
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GitRepositoryLink[]
+     * Runtime class alias of \Google\Service\DeveloperConnect\ListGitRepositoryLinksResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGitRepositoryLinks()
-    {
-    }
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_DeveloperConnect_ListGitRepositoryLinksResponse extends \Google\Service\DeveloperConnect\ListGitRepositoryLinksResponse
     {
     }
 }

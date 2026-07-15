@@ -21,101 +21,112 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Drive\Resource;
-
-/**
- * The "replies" collection of methods.
- * Typical usage is:
- *  <code>
- *   $driveService = new Google\Service\Drive(...);
- *   $replies = $driveService->replies;
- *  </code>
- */
-class Replies extends \Google\Service\Resource
-{
+namespace Google\Service\Drive\Resource {
+    use Google\Service\Drive\Reply;
+    use Google\Service\Drive\ReplyList;
     /**
-     * Creates a reply to a comment. For more information, see [Manage comments and
-     * replies](https://developers.google.com/workspace/drive/api/guides/manage-
-     * comments). (replies.create)
-     *
-     * @param string $fileId The ID of the file.
-     * @param string $commentId The ID of the comment.
-     * @param Reply $postBody
-     * @param array $optParams Optional parameters.
-     * @return Reply
-     * @throws \Google\Service\Exception
+     * The "replies" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $driveService = new Google\Service\Drive(...);
+     *   $replies = $driveService->replies;
+     *  </code>
      */
-    public function create($fileId, $commentId, Reply $postBody, $optParams = [])
+    class Replies extends \Google\Service\Resource
     {
+        /**
+         * Creates a reply to a comment. For more information, see [Manage comments and
+         * replies](https://developers.google.com/workspace/drive/api/guides/manage-
+         * comments). (replies.create)
+         *
+         * @param string $fileId The ID of the file.
+         * @param string $commentId The ID of the comment.
+         * @param Reply $postBody
+         * @param array $optParams Optional parameters.
+         * @return Reply
+         * @throws \Google\Service\Exception
+         */
+        public function create($fileId, $commentId, Reply $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a reply. For more information, see [Manage comments and
+         * replies](https://developers.google.com/workspace/drive/api/guides/manage-
+         * comments). (replies.delete)
+         *
+         * @param string $fileId The ID of the file.
+         * @param string $commentId The ID of the comment.
+         * @param string $replyId The ID of the reply.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($fileId, $commentId, $replyId, $optParams = [])
+        {
+        }
+        /**
+         * Gets a reply by ID. For more information, see [Manage comments and
+         * replies](https://developers.google.com/workspace/drive/api/guides/manage-
+         * comments). (replies.get)
+         *
+         * @param string $fileId The ID of the file.
+         * @param string $commentId The ID of the comment.
+         * @param string $replyId The ID of the reply.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool includeDeleted Whether to return deleted replies. Deleted
+         * replies don't include their original content.
+         * @return Reply
+         * @throws \Google\Service\Exception
+         */
+        public function get($fileId, $commentId, $replyId, $optParams = [])
+        {
+        }
+        /**
+         * Lists a comment's replies. For more information, see [Manage comments and
+         * replies](https://developers.google.com/workspace/drive/api/guides/manage-
+         * comments). (replies.listReplies)
+         *
+         * @param string $fileId The ID of the file.
+         * @param string $commentId The ID of the comment.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool includeDeleted Whether to include deleted replies. Deleted
+         * replies don't include their original content.
+         * @opt_param int pageSize The maximum number of replies to return per page.
+         * @opt_param string pageToken The token for continuing a previous list request
+         * on the next page. This should be set to the value of `nextPageToken` from the
+         * previous response.
+         * @return ReplyList
+         * @throws \Google\Service\Exception
+         */
+        public function listReplies($fileId, $commentId, $optParams = [])
+        {
+        }
+        /**
+         * Updates a reply with patch semantics. For more information, see [Manage
+         * comments and
+         * replies](https://developers.google.com/workspace/drive/api/guides/manage-
+         * comments). (replies.update)
+         *
+         * @param string $fileId The ID of the file.
+         * @param string $commentId The ID of the comment.
+         * @param string $replyId The ID of the reply.
+         * @param Reply $postBody
+         * @param array $optParams Optional parameters.
+         * @return Reply
+         * @throws \Google\Service\Exception
+         */
+        public function update($fileId, $commentId, $replyId, Reply $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a reply. For more information, see [Manage comments and
-     * replies](https://developers.google.com/workspace/drive/api/guides/manage-
-     * comments). (replies.delete)
-     *
-     * @param string $fileId The ID of the file.
-     * @param string $commentId The ID of the comment.
-     * @param string $replyId The ID of the reply.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Drive\Resource\Replies registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($fileId, $commentId, $replyId, $optParams = [])
-    {
-    }
-    /**
-     * Gets a reply by ID. For more information, see [Manage comments and
-     * replies](https://developers.google.com/workspace/drive/api/guides/manage-
-     * comments). (replies.get)
-     *
-     * @param string $fileId The ID of the file.
-     * @param string $commentId The ID of the comment.
-     * @param string $replyId The ID of the reply.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool includeDeleted Whether to return deleted replies. Deleted
-     * replies don't include their original content.
-     * @return Reply
-     * @throws \Google\Service\Exception
-     */
-    public function get($fileId, $commentId, $replyId, $optParams = [])
-    {
-    }
-    /**
-     * Lists a comment's replies. For more information, see [Manage comments and
-     * replies](https://developers.google.com/workspace/drive/api/guides/manage-
-     * comments). (replies.listReplies)
-     *
-     * @param string $fileId The ID of the file.
-     * @param string $commentId The ID of the comment.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool includeDeleted Whether to include deleted replies. Deleted
-     * replies don't include their original content.
-     * @opt_param int pageSize The maximum number of replies to return per page.
-     * @opt_param string pageToken The token for continuing a previous list request
-     * on the next page. This should be set to the value of `nextPageToken` from the
-     * previous response.
-     * @return ReplyList
-     * @throws \Google\Service\Exception
-     */
-    public function listReplies($fileId, $commentId, $optParams = [])
-    {
-    }
-    /**
-     * Updates a reply with patch semantics. For more information, see [Manage
-     * comments and
-     * replies](https://developers.google.com/workspace/drive/api/guides/manage-
-     * comments). (replies.update)
-     *
-     * @param string $fileId The ID of the file.
-     * @param string $commentId The ID of the comment.
-     * @param string $replyId The ID of the reply.
-     * @param Reply $postBody
-     * @param array $optParams Optional parameters.
-     * @return Reply
-     * @throws \Google\Service\Exception
-     */
-    public function update($fileId, $commentId, $replyId, Reply $postBody, $optParams = [])
+    class Google_Service_Drive_Resource_Replies extends \Google\Service\Drive\Resource\Replies
     {
     }
 }

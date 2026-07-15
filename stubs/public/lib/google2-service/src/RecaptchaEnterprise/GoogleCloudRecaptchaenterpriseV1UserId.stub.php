@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecaptchaEnterprise;
-
-class GoogleCloudRecaptchaenterpriseV1UserId extends \Google\Model
-{
-    /**
-     * Optional. An email address.
-     *
-     * @var string
-     */
-    public $email;
-    /**
-     * Optional. A phone number. Should use the E.164 format.
-     *
-     * @var string
-     */
-    public $phoneNumber;
-    /**
-     * Optional. A unique username, if different from all the other identifiers
-     * and `account_id` that are provided. Can be a unique login handle or display
-     * name for a user.
-     *
-     * @var string
-     */
-    public $username;
-    /**
-     * Optional. An email address.
-     *
-     * @param string $email
-     */
-    public function setEmail($email)
+namespace Google\Service\RecaptchaEnterprise {
+    class GoogleCloudRecaptchaenterpriseV1UserId extends \Google\Model
     {
+        /**
+         * Optional. An email address.
+         *
+         * @var string
+         */
+        public $email;
+        /**
+         * Optional. A phone number. Should use the E.164 format.
+         *
+         * @var string
+         */
+        public $phoneNumber;
+        /**
+         * Optional. A unique username, if different from all the other identifiers
+         * and `account_id` that are provided. Can be a unique login handle or display
+         * name for a user.
+         *
+         * @var string
+         */
+        public $username;
+        /**
+         * Optional. An email address.
+         *
+         * @param string $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
+        /**
+         * Optional. A phone number. Should use the E.164 format.
+         *
+         * @param string $phoneNumber
+         */
+        public function setPhoneNumber($phoneNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPhoneNumber()
+        {
+        }
+        /**
+         * Optional. A unique username, if different from all the other identifiers
+         * and `account_id` that are provided. Can be a unique login handle or display
+         * name for a user.
+         *
+         * @param string $username
+         */
+        public function setUsername($username)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUsername()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1UserId registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmail()
-    {
-    }
-    /**
-     * Optional. A phone number. Should use the E.164 format.
-     *
-     * @param string $phoneNumber
-     */
-    public function setPhoneNumber($phoneNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPhoneNumber()
-    {
-    }
-    /**
-     * Optional. A unique username, if different from all the other identifiers
-     * and `account_id` that are provided. Can be a unique login handle or display
-     * name for a user.
-     *
-     * @param string $username
-     */
-    public function setUsername($username)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUsername()
+    class Google_Service_RecaptchaEnterprise_GoogleCloudRecaptchaenterpriseV1UserId extends \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1UserId
     {
     }
 }

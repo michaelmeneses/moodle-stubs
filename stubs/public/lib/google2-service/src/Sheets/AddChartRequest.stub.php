@@ -21,27 +21,36 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class AddChartRequest extends \Google\Model
-{
-    protected $chartType = EmbeddedChart::class;
-    protected $chartDataType = '';
-    /**
-     * The chart that should be added to the spreadsheet, including the position
-     * where it should be placed. The chartId field is optional; if one is not
-     * set, an id will be randomly generated. (It is an error to specify the ID of
-     * an embedded object that already exists.)
-     *
-     * @param EmbeddedChart $chart
-     */
-    public function setChart(EmbeddedChart $chart)
+namespace Google\Service\Sheets {
+    class AddChartRequest extends \Google\Model
     {
+        protected $chartType = EmbeddedChart::class;
+        protected $chartDataType = '';
+        /**
+         * The chart that should be added to the spreadsheet, including the position
+         * where it should be placed. The chartId field is optional; if one is not
+         * set, an id will be randomly generated. (It is an error to specify the ID of
+         * an embedded object that already exists.)
+         *
+         * @param EmbeddedChart $chart
+         */
+        public function setChart(EmbeddedChart $chart)
+        {
+        }
+        /**
+         * @return EmbeddedChart
+         */
+        public function getChart()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EmbeddedChart
+     * Runtime class alias of \Google\Service\Sheets\AddChartRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChart()
+    class Google_Service_Sheets_AddChartRequest extends \Google\Service\Sheets\AddChartRequest
     {
     }
 }

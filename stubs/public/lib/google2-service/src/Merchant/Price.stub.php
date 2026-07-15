@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Merchant;
-
-class Price extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $amountMicros;
-    /**
-     * @var string
-     */
-    public $currencyCode;
-    /**
-     * @param string
-     */
-    public function setAmountMicros($amountMicros)
+namespace Google\Service\Merchant {
+    class Price extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $amountMicros;
+        /**
+         * @var string
+         */
+        public $currencyCode;
+        /**
+         * @param string
+         */
+        public function setAmountMicros($amountMicros)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAmountMicros()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCurrencyCode($currencyCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCurrencyCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Merchant\Price registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAmountMicros()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCurrencyCode($currencyCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCurrencyCode()
+    class Google_Service_Merchant_Price extends \Google\Service\Merchant\Price
     {
     }
 }

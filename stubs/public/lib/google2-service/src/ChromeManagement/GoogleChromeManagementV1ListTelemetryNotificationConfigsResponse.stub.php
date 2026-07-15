@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementV1ListTelemetryNotificationConfigsResponse extends \Google\Collection
-{
-    protected $collection_key = 'telemetryNotificationConfigs';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $telemetryNotificationConfigsType = GoogleChromeManagementV1TelemetryNotificationConfig::class;
-    protected $telemetryNotificationConfigsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementV1ListTelemetryNotificationConfigsResponse extends \Google\Collection
     {
+        protected $collection_key = 'telemetryNotificationConfigs';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $telemetryNotificationConfigsType = GoogleChromeManagementV1TelemetryNotificationConfig::class;
+        protected $telemetryNotificationConfigsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The telemetry notification configs from the specified customer.
+         *
+         * @param GoogleChromeManagementV1TelemetryNotificationConfig[] $telemetryNotificationConfigs
+         */
+        public function setTelemetryNotificationConfigs($telemetryNotificationConfigs)
+        {
+        }
+        /**
+         * @return GoogleChromeManagementV1TelemetryNotificationConfig[]
+         */
+        public function getTelemetryNotificationConfigs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementV1ListTelemetryNotificationConfigsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The telemetry notification configs from the specified customer.
-     *
-     * @param GoogleChromeManagementV1TelemetryNotificationConfig[] $telemetryNotificationConfigs
-     */
-    public function setTelemetryNotificationConfigs($telemetryNotificationConfigs)
-    {
-    }
-    /**
-     * @return GoogleChromeManagementV1TelemetryNotificationConfig[]
-     */
-    public function getTelemetryNotificationConfigs()
+    class Google_Service_ChromeManagement_GoogleChromeManagementV1ListTelemetryNotificationConfigsResponse extends \Google\Service\ChromeManagement\GoogleChromeManagementV1ListTelemetryNotificationConfigsResponse
     {
     }
 }

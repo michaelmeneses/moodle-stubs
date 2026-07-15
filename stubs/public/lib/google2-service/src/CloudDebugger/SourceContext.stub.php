@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDebugger;
-
-class SourceContext extends \Google\Model
-{
-    protected $cloudRepoType = CloudRepoSourceContext::class;
-    protected $cloudRepoDataType = '';
-    protected $cloudWorkspaceType = CloudWorkspaceSourceContext::class;
-    protected $cloudWorkspaceDataType = '';
-    protected $gerritType = GerritSourceContext::class;
-    protected $gerritDataType = '';
-    protected $gitType = GitSourceContext::class;
-    protected $gitDataType = '';
-    /**
-     * @param CloudRepoSourceContext
-     */
-    public function setCloudRepo(CloudRepoSourceContext $cloudRepo)
+namespace Google\Service\CloudDebugger {
+    class SourceContext extends \Google\Model
     {
+        protected $cloudRepoType = CloudRepoSourceContext::class;
+        protected $cloudRepoDataType = '';
+        protected $cloudWorkspaceType = CloudWorkspaceSourceContext::class;
+        protected $cloudWorkspaceDataType = '';
+        protected $gerritType = GerritSourceContext::class;
+        protected $gerritDataType = '';
+        protected $gitType = GitSourceContext::class;
+        protected $gitDataType = '';
+        /**
+         * @param CloudRepoSourceContext
+         */
+        public function setCloudRepo(CloudRepoSourceContext $cloudRepo)
+        {
+        }
+        /**
+         * @return CloudRepoSourceContext
+         */
+        public function getCloudRepo()
+        {
+        }
+        /**
+         * @param CloudWorkspaceSourceContext
+         */
+        public function setCloudWorkspace(CloudWorkspaceSourceContext $cloudWorkspace)
+        {
+        }
+        /**
+         * @return CloudWorkspaceSourceContext
+         */
+        public function getCloudWorkspace()
+        {
+        }
+        /**
+         * @param GerritSourceContext
+         */
+        public function setGerrit(GerritSourceContext $gerrit)
+        {
+        }
+        /**
+         * @return GerritSourceContext
+         */
+        public function getGerrit()
+        {
+        }
+        /**
+         * @param GitSourceContext
+         */
+        public function setGit(GitSourceContext $git)
+        {
+        }
+        /**
+         * @return GitSourceContext
+         */
+        public function getGit()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CloudRepoSourceContext
+     * Runtime class alias of \Google\Service\CloudDebugger\SourceContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCloudRepo()
-    {
-    }
-    /**
-     * @param CloudWorkspaceSourceContext
-     */
-    public function setCloudWorkspace(CloudWorkspaceSourceContext $cloudWorkspace)
-    {
-    }
-    /**
-     * @return CloudWorkspaceSourceContext
-     */
-    public function getCloudWorkspace()
-    {
-    }
-    /**
-     * @param GerritSourceContext
-     */
-    public function setGerrit(GerritSourceContext $gerrit)
-    {
-    }
-    /**
-     * @return GerritSourceContext
-     */
-    public function getGerrit()
-    {
-    }
-    /**
-     * @param GitSourceContext
-     */
-    public function setGit(GitSourceContext $git)
-    {
-    }
-    /**
-     * @return GitSourceContext
-     */
-    public function getGit()
+    class Google_Service_CloudDebugger_SourceContext extends \Google\Service\CloudDebugger\SourceContext
     {
     }
 }

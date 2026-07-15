@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_brickfield;
 
+use core\event\base;
+use stdClass;
 /**
  * Observer class containing methods monitoring various events.
  *

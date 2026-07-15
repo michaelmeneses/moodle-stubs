@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class AdPolicyTopicConstraintAdPolicyCountryConstraintList extends \Google\Collection
-{
-    protected $collection_key = 'countries';
-    protected $countriesType = AdPolicyCriterionRestriction::class;
-    protected $countriesDataType = 'array';
-    /**
-     * Countries where the ad cannot serve.
-     *
-     * @param AdPolicyCriterionRestriction[] $countries
-     */
-    public function setCountries($countries)
+namespace Google\Service\DisplayVideo {
+    class AdPolicyTopicConstraintAdPolicyCountryConstraintList extends \Google\Collection
     {
+        protected $collection_key = 'countries';
+        protected $countriesType = AdPolicyCriterionRestriction::class;
+        protected $countriesDataType = 'array';
+        /**
+         * Countries where the ad cannot serve.
+         *
+         * @param AdPolicyCriterionRestriction[] $countries
+         */
+        public function setCountries($countries)
+        {
+        }
+        /**
+         * @return AdPolicyCriterionRestriction[]
+         */
+        public function getCountries()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AdPolicyCriterionRestriction[]
+     * Runtime class alias of \Google\Service\DisplayVideo\AdPolicyTopicConstraintAdPolicyCountryConstraintList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCountries()
+    class Google_Service_DisplayVideo_AdPolicyTopicConstraintAdPolicyCountryConstraintList extends \Google\Service\DisplayVideo\AdPolicyTopicConstraintAdPolicyCountryConstraintList
     {
     }
 }

@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaReplyReference extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $anchorText;
-    /**
-     * @var int
-     */
-    public $end;
-    /**
-     * @var int
-     */
-    public $start;
-    /**
-     * @var string
-     */
-    public $uri;
-    /**
-     * @param string
-     */
-    public function setAnchorText($anchorText)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaReplyReference extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $anchorText;
+        /**
+         * @var int
+         */
+        public $end;
+        /**
+         * @var int
+         */
+        public $start;
+        /**
+         * @var string
+         */
+        public $uri;
+        /**
+         * @param string
+         */
+        public function setAnchorText($anchorText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnchorText()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setEnd($end)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getEnd()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setStart($start)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getStart()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaReplyReference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnchorText()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setEnd($end)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getEnd()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setStart($start)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getStart()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaReplyReference extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaReplyReference
     {
     }
 }

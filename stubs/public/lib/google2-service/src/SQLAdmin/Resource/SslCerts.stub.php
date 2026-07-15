@@ -21,94 +21,109 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin\Resource;
-
-/**
- * The "sslCerts" collection of methods.
- * Typical usage is:
- *  <code>
- *   $sqladminService = new Google\Service\SQLAdmin(...);
- *   $sslCerts = $sqladminService->sslCerts;
- *  </code>
- */
-class SslCerts extends \Google\Service\Resource
-{
+namespace Google\Service\SQLAdmin\Resource {
+    use Google\Service\SQLAdmin\Operation;
+    use Google\Service\SQLAdmin\SslCert;
+    use Google\Service\SQLAdmin\SslCertsCreateEphemeralRequest;
+    use Google\Service\SQLAdmin\SslCertsInsertRequest;
+    use Google\Service\SQLAdmin\SslCertsInsertResponse;
+    use Google\Service\SQLAdmin\SslCertsListResponse;
     /**
-     * Generates a short-lived X509 certificate containing the provided public key
-     * and signed by a private key specific to the target instance. Users may use
-     * the certificate to authenticate as themselves when connecting to the
-     * database. (sslCerts.createEphemeral)
-     *
-     * @param string $project Project ID of the Cloud SQL project.
-     * @param string $instance Cloud SQL instance ID. This does not include the
-     * project ID.
-     * @param SslCertsCreateEphemeralRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return SslCert
-     * @throws \Google\Service\Exception
+     * The "sslCerts" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $sqladminService = new Google\Service\SQLAdmin(...);
+     *   $sslCerts = $sqladminService->sslCerts;
+     *  </code>
      */
-    public function createEphemeral($project, $instance, SslCertsCreateEphemeralRequest $postBody, $optParams = [])
+    class SslCerts extends \Google\Service\Resource
     {
+        /**
+         * Generates a short-lived X509 certificate containing the provided public key
+         * and signed by a private key specific to the target instance. Users may use
+         * the certificate to authenticate as themselves when connecting to the
+         * database. (sslCerts.createEphemeral)
+         *
+         * @param string $project Project ID of the Cloud SQL project.
+         * @param string $instance Cloud SQL instance ID. This does not include the
+         * project ID.
+         * @param SslCertsCreateEphemeralRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return SslCert
+         * @throws \Google\Service\Exception
+         */
+        public function createEphemeral($project, $instance, SslCertsCreateEphemeralRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes the SSL certificate. For First Generation instances, the certificate
+         * remains valid until the instance is restarted. (sslCerts.delete)
+         *
+         * @param string $project Project ID of the project that contains the instance.
+         * @param string $instance Cloud SQL instance ID. This does not include the
+         * project ID.
+         * @param string $sha1Fingerprint Sha1 FingerPrint.
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function delete($project, $instance, $sha1Fingerprint, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves a particular SSL certificate. Does not include the private key
+         * (required for usage). The private key must be saved from the response to
+         * initial creation. (sslCerts.get)
+         *
+         * @param string $project Project ID of the project that contains the instance.
+         * @param string $instance Cloud SQL instance ID. This does not include the
+         * project ID.
+         * @param string $sha1Fingerprint Sha1 FingerPrint.
+         * @param array $optParams Optional parameters.
+         * @return SslCert
+         * @throws \Google\Service\Exception
+         */
+        public function get($project, $instance, $sha1Fingerprint, $optParams = [])
+        {
+        }
+        /**
+         * Creates an SSL certificate and returns it along with the private key and
+         * server certificate authority. The new certificate will not be usable until
+         * the instance is restarted. (sslCerts.insert)
+         *
+         * @param string $project Project ID of the project that contains the instance.
+         * @param string $instance Cloud SQL instance ID. This does not include the
+         * project ID.
+         * @param SslCertsInsertRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return SslCertsInsertResponse
+         * @throws \Google\Service\Exception
+         */
+        public function insert($project, $instance, SslCertsInsertRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Lists all of the current SSL certificates for the instance.
+         * (sslCerts.listSslCerts)
+         *
+         * @param string $project Project ID of the project that contains the instance.
+         * @param string $instance Cloud SQL instance ID. This does not include the
+         * project ID.
+         * @param array $optParams Optional parameters.
+         * @return SslCertsListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listSslCerts($project, $instance, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes the SSL certificate. For First Generation instances, the certificate
-     * remains valid until the instance is restarted. (sslCerts.delete)
-     *
-     * @param string $project Project ID of the project that contains the instance.
-     * @param string $instance Cloud SQL instance ID. This does not include the
-     * project ID.
-     * @param string $sha1Fingerprint Sha1 FingerPrint.
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\SQLAdmin\Resource\SslCerts registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($project, $instance, $sha1Fingerprint, $optParams = [])
-    {
-    }
-    /**
-     * Retrieves a particular SSL certificate. Does not include the private key
-     * (required for usage). The private key must be saved from the response to
-     * initial creation. (sslCerts.get)
-     *
-     * @param string $project Project ID of the project that contains the instance.
-     * @param string $instance Cloud SQL instance ID. This does not include the
-     * project ID.
-     * @param string $sha1Fingerprint Sha1 FingerPrint.
-     * @param array $optParams Optional parameters.
-     * @return SslCert
-     * @throws \Google\Service\Exception
-     */
-    public function get($project, $instance, $sha1Fingerprint, $optParams = [])
-    {
-    }
-    /**
-     * Creates an SSL certificate and returns it along with the private key and
-     * server certificate authority. The new certificate will not be usable until
-     * the instance is restarted. (sslCerts.insert)
-     *
-     * @param string $project Project ID of the project that contains the instance.
-     * @param string $instance Cloud SQL instance ID. This does not include the
-     * project ID.
-     * @param SslCertsInsertRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return SslCertsInsertResponse
-     * @throws \Google\Service\Exception
-     */
-    public function insert($project, $instance, SslCertsInsertRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Lists all of the current SSL certificates for the instance.
-     * (sslCerts.listSslCerts)
-     *
-     * @param string $project Project ID of the project that contains the instance.
-     * @param string $instance Cloud SQL instance ID. This does not include the
-     * project ID.
-     * @param array $optParams Optional parameters.
-     * @return SslCertsListResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listSslCerts($project, $instance, $optParams = [])
+    class Google_Service_SQLAdmin_Resource_SslCerts extends \Google\Service\SQLAdmin\Resource\SslCerts
     {
     }
 }

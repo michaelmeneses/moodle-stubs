@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1ChunkPageSpan extends \Google\Model
-{
-    /**
-     * The end page of the chunk.
-     *
-     * @var int
-     */
-    public $pageEnd;
-    /**
-     * The start page of the chunk.
-     *
-     * @var int
-     */
-    public $pageStart;
-    /**
-     * The end page of the chunk.
-     *
-     * @param int $pageEnd
-     */
-    public function setPageEnd($pageEnd)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1ChunkPageSpan extends \Google\Model
     {
+        /**
+         * The end page of the chunk.
+         *
+         * @var int
+         */
+        public $pageEnd;
+        /**
+         * The start page of the chunk.
+         *
+         * @var int
+         */
+        public $pageStart;
+        /**
+         * The end page of the chunk.
+         *
+         * @param int $pageEnd
+         */
+        public function setPageEnd($pageEnd)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPageEnd()
+        {
+        }
+        /**
+         * The start page of the chunk.
+         *
+         * @param int $pageStart
+         */
+        public function setPageStart($pageStart)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPageStart()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ChunkPageSpan registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPageEnd()
-    {
-    }
-    /**
-     * The start page of the chunk.
-     *
-     * @param int $pageStart
-     */
-    public function setPageStart($pageStart)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPageStart()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1ChunkPageSpan extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ChunkPageSpan
     {
     }
 }

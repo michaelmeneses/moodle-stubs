@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class SslCertsListResponse extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    protected $itemsType = SslCert::class;
-    protected $itemsDataType = 'array';
-    /**
-     * This is always `sql#sslCertsList`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * List of client certificates for the instance.
-     *
-     * @param SslCert[] $items
-     */
-    public function setItems($items)
+namespace Google\Service\SQLAdmin {
+    class SslCertsListResponse extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        protected $itemsType = SslCert::class;
+        protected $itemsDataType = 'array';
+        /**
+         * This is always `sql#sslCertsList`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * List of client certificates for the instance.
+         *
+         * @param SslCert[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return SslCert[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * This is always `sql#sslCertsList`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SslCert[]
+     * Runtime class alias of \Google\Service\SQLAdmin\SslCertsListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItems()
-    {
-    }
-    /**
-     * This is always `sql#sslCertsList`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_SQLAdmin_SslCertsListResponse extends \Google\Service\SQLAdmin\SslCertsListResponse
     {
     }
 }

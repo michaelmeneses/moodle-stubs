@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class Attribute extends \Google\Collection
-{
-    protected $collection_key = 'values';
-    /**
-     * Indicates the name of an attribute defined in the consent store.
-     *
-     * @var string
-     */
-    public $attributeDefinitionId;
-    /**
-     * Required. The value of the attribute. Must be an acceptable value as
-     * defined in the consent store. For example, if the consent store defines
-     * "data type" with acceptable values "questionnaire" and "step-count", when
-     * the attribute name is data type, this field must contain one of those
-     * values.
-     *
-     * @var string[]
-     */
-    public $values;
-    /**
-     * Indicates the name of an attribute defined in the consent store.
-     *
-     * @param string $attributeDefinitionId
-     */
-    public function setAttributeDefinitionId($attributeDefinitionId)
+namespace Google\Service\CloudHealthcare {
+    class Attribute extends \Google\Collection
     {
+        protected $collection_key = 'values';
+        /**
+         * Indicates the name of an attribute defined in the consent store.
+         *
+         * @var string
+         */
+        public $attributeDefinitionId;
+        /**
+         * Required. The value of the attribute. Must be an acceptable value as
+         * defined in the consent store. For example, if the consent store defines
+         * "data type" with acceptable values "questionnaire" and "step-count", when
+         * the attribute name is data type, this field must contain one of those
+         * values.
+         *
+         * @var string[]
+         */
+        public $values;
+        /**
+         * Indicates the name of an attribute defined in the consent store.
+         *
+         * @param string $attributeDefinitionId
+         */
+        public function setAttributeDefinitionId($attributeDefinitionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAttributeDefinitionId()
+        {
+        }
+        /**
+         * Required. The value of the attribute. Must be an acceptable value as
+         * defined in the consent store. For example, if the consent store defines
+         * "data type" with acceptable values "questionnaire" and "step-count", when
+         * the attribute name is data type, this field must contain one of those
+         * values.
+         *
+         * @param string[] $values
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudHealthcare\Attribute registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttributeDefinitionId()
-    {
-    }
-    /**
-     * Required. The value of the attribute. Must be an acceptable value as
-     * defined in the consent store. For example, if the consent store defines
-     * "data type" with acceptable values "questionnaire" and "step-count", when
-     * the attribute name is data type, this field must contain one of those
-     * values.
-     *
-     * @param string[] $values
-     */
-    public function setValues($values)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getValues()
+    class Google_Service_CloudHealthcare_Attribute extends \Google\Service\CloudHealthcare\Attribute
     {
     }
 }

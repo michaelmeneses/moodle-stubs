@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class UsersettingsNotificationRewardExpirations extends \Google\Model
-{
-    protected $internal_gapi_mappings = ["optedState" => "opted_state"];
-    /**
-     * @var string
-     */
-    public $optedState;
-    /**
-     * @param string $optedState
-     */
-    public function setOptedState($optedState)
+namespace Google\Service\Books {
+    class UsersettingsNotificationRewardExpirations extends \Google\Model
     {
+        protected $internal_gapi_mappings = ["optedState" => "opted_state"];
+        /**
+         * @var string
+         */
+        public $optedState;
+        /**
+         * @param string $optedState
+         */
+        public function setOptedState($optedState)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOptedState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Books\UsersettingsNotificationRewardExpirations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOptedState()
+    class Google_Service_Books_UsersettingsNotificationRewardExpirations extends \Google\Service\Books\UsersettingsNotificationRewardExpirations
     {
     }
 }

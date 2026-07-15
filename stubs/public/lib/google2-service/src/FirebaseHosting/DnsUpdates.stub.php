@@ -21,61 +21,70 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseHosting;
-
-class DnsUpdates extends \Google\Collection
-{
-    protected $collection_key = 'discovered';
-    /**
-     * The last time Hosting checked your custom domain's DNS records.
-     *
-     * @var string
-     */
-    public $checkTime;
-    protected $desiredType = DnsRecordSet::class;
-    protected $desiredDataType = 'array';
-    protected $discoveredType = DnsRecordSet::class;
-    protected $discoveredDataType = 'array';
-    /**
-     * The last time Hosting checked your custom domain's DNS records.
-     *
-     * @param string $checkTime
-     */
-    public function setCheckTime($checkTime)
+namespace Google\Service\FirebaseHosting {
+    class DnsUpdates extends \Google\Collection
     {
+        protected $collection_key = 'discovered';
+        /**
+         * The last time Hosting checked your custom domain's DNS records.
+         *
+         * @var string
+         */
+        public $checkTime;
+        protected $desiredType = DnsRecordSet::class;
+        protected $desiredDataType = 'array';
+        protected $discoveredType = DnsRecordSet::class;
+        protected $discoveredDataType = 'array';
+        /**
+         * The last time Hosting checked your custom domain's DNS records.
+         *
+         * @param string $checkTime
+         */
+        public function setCheckTime($checkTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCheckTime()
+        {
+        }
+        /**
+         * The set of DNS records Hosting needs to serve secure content on the domain.
+         *
+         * @param DnsRecordSet[] $desired
+         */
+        public function setDesired($desired)
+        {
+        }
+        /**
+         * @return DnsRecordSet[]
+         */
+        public function getDesired()
+        {
+        }
+        /**
+         * The set of DNS records Hosting discovered when inspecting a domain.
+         *
+         * @param DnsRecordSet[] $discovered
+         */
+        public function setDiscovered($discovered)
+        {
+        }
+        /**
+         * @return DnsRecordSet[]
+         */
+        public function getDiscovered()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\FirebaseHosting\DnsUpdates registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCheckTime()
-    {
-    }
-    /**
-     * The set of DNS records Hosting needs to serve secure content on the domain.
-     *
-     * @param DnsRecordSet[] $desired
-     */
-    public function setDesired($desired)
-    {
-    }
-    /**
-     * @return DnsRecordSet[]
-     */
-    public function getDesired()
-    {
-    }
-    /**
-     * The set of DNS records Hosting discovered when inspecting a domain.
-     *
-     * @param DnsRecordSet[] $discovered
-     */
-    public function setDiscovered($discovered)
-    {
-    }
-    /**
-     * @return DnsRecordSet[]
-     */
-    public function getDiscovered()
+    class Google_Service_FirebaseHosting_DnsUpdates extends \Google\Service\FirebaseHosting\DnsUpdates
     {
     }
 }

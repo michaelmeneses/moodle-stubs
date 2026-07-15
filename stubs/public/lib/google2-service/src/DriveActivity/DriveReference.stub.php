@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveActivity;
-
-class DriveReference extends \Google\Model
-{
-    /**
-     * The resource name of the shared drive. The format is
-     * `COLLECTION_ID/DRIVE_ID`. Clients should not assume a specific collection
-     * ID for this resource name.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The title of the shared drive.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * The resource name of the shared drive. The format is
-     * `COLLECTION_ID/DRIVE_ID`. Clients should not assume a specific collection
-     * ID for this resource name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\DriveActivity {
+    class DriveReference extends \Google\Model
     {
+        /**
+         * The resource name of the shared drive. The format is
+         * `COLLECTION_ID/DRIVE_ID`. Clients should not assume a specific collection
+         * ID for this resource name.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The title of the shared drive.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * The resource name of the shared drive. The format is
+         * `COLLECTION_ID/DRIVE_ID`. Clients should not assume a specific collection
+         * ID for this resource name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The title of the shared drive.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DriveActivity\DriveReference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * The title of the shared drive.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_DriveActivity_DriveReference extends \Google\Service\DriveActivity\DriveReference
     {
     }
 }

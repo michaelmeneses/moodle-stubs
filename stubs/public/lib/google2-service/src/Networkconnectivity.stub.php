@@ -21,51 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for Networkconnectivity (v1).
- *
- * <p>
- * This API enables connectivity with and between Google Cloud resources.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://cloud.google.com/network-connectivity/docs/reference/networkconnectivity/rest" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class Networkconnectivity extends \Google\Service
-{
-    /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
-    const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
-    public $projects_locations;
-    public $projects_locations_global_hubs;
-    public $projects_locations_global_hubs_groups;
-    public $projects_locations_global_hubs_routeTables;
-    public $projects_locations_global_hubs_routeTables_routes;
-    public $projects_locations_global_policyBasedRoutes;
-    public $projects_locations_internalRanges;
-    public $projects_locations_multicloudDataTransferConfigs;
-    public $projects_locations_multicloudDataTransferConfigs_destinations;
-    public $projects_locations_multicloudDataTransferSupportedServices;
-    public $projects_locations_operations;
-    public $projects_locations_regionalEndpoints;
-    public $projects_locations_serviceClasses;
-    public $projects_locations_serviceConnectionMaps;
-    public $projects_locations_serviceConnectionPolicies;
-    public $projects_locations_serviceConnectionTokens;
-    public $projects_locations_spokes;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the Networkconnectivity service.
+     * Service definition for Networkconnectivity (v1).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * This API enables connectivity with and between Google Cloud resources.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://cloud.google.com/network-connectivity/docs/reference/networkconnectivity/rest" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class Networkconnectivity extends \Google\Service
+    {
+        /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
+        const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
+        public $projects_locations;
+        public $projects_locations_global_hubs;
+        public $projects_locations_global_hubs_groups;
+        public $projects_locations_global_hubs_routeTables;
+        public $projects_locations_global_hubs_routeTables_routes;
+        public $projects_locations_global_policyBasedRoutes;
+        public $projects_locations_internalRanges;
+        public $projects_locations_multicloudDataTransferConfigs;
+        public $projects_locations_multicloudDataTransferConfigs_destinations;
+        public $projects_locations_multicloudDataTransferSupportedServices;
+        public $projects_locations_operations;
+        public $projects_locations_regionalEndpoints;
+        public $projects_locations_serviceClasses;
+        public $projects_locations_serviceConnectionMaps;
+        public $projects_locations_serviceConnectionPolicies;
+        public $projects_locations_serviceConnectionTokens;
+        public $projects_locations_spokes;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the Networkconnectivity service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Networkconnectivity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Networkconnectivity extends \Google\Service\Networkconnectivity
     {
     }
 }

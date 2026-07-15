@@ -21,27 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager\Resource;
-
-/**
- * The "healthes" collection of methods.
- * Typical usage is:
- *  <code>
- *   $workloadmanagerService = new Google\Service\WorkloadManager(...);
- *   $healthes = $workloadmanagerService->projects_locations_discoveredprofiles_healthes;
- *  </code>
- */
-class ProjectsLocationsDiscoveredprofilesHealthes extends \Google\Service\Resource
-{
+namespace Google\Service\WorkloadManager\Resource {
+    use Google\Service\WorkloadManager\WorkloadProfileHealth;
     /**
-     * Get the health of a discovered workload profile. (healthes.get)
-     *
-     * @param string $name Required. The resource name
-     * @param array $optParams Optional parameters.
-     * @return WorkloadProfileHealth
-     * @throws \Google\Service\Exception
+     * The "healthes" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $workloadmanagerService = new Google\Service\WorkloadManager(...);
+     *   $healthes = $workloadmanagerService->projects_locations_discoveredprofiles_healthes;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class ProjectsLocationsDiscoveredprofilesHealthes extends \Google\Service\Resource
+    {
+        /**
+         * Get the health of a discovered workload profile. (healthes.get)
+         *
+         * @param string $name Required. The resource name
+         * @param array $optParams Optional parameters.
+         * @return WorkloadProfileHealth
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\WorkloadManager\Resource\ProjectsLocationsDiscoveredprofilesHealthes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_WorkloadManager_Resource_ProjectsLocationsDiscoveredprofilesHealthes extends \Google\Service\WorkloadManager\Resource\ProjectsLocationsDiscoveredprofilesHealthes
     {
     }
 }

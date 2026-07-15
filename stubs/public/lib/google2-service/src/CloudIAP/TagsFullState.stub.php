@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIAP;
-
-class TagsFullState extends \Google\Model
-{
-    /**
-     * If TagsFullState is initialized, the values in this field fully represent
-     * all the tags in the next state (the current tag values are not used). If
-     * tags.size() == 0, the next state of tags would be no tags for evaluation
-     * purposes. Only one type of tags reference (numeric or namespace) is
-     * required to be passed.
-     *
-     * @var string[]
-     */
-    public $tags;
-    /**
-     * If TagsFullState is initialized, the values in this field fully represent
-     * all the tags in the next state (the current tag values are not used). If
-     * tags.size() == 0, the next state of tags would be no tags for evaluation
-     * purposes. Only one type of tags reference (numeric or namespace) is
-     * required to be passed.
-     *
-     * @param string[] $tags
-     */
-    public function setTags($tags)
+namespace Google\Service\CloudIAP {
+    class TagsFullState extends \Google\Model
     {
+        /**
+         * If TagsFullState is initialized, the values in this field fully represent
+         * all the tags in the next state (the current tag values are not used). If
+         * tags.size() == 0, the next state of tags would be no tags for evaluation
+         * purposes. Only one type of tags reference (numeric or namespace) is
+         * required to be passed.
+         *
+         * @var string[]
+         */
+        public $tags;
+        /**
+         * If TagsFullState is initialized, the values in this field fully represent
+         * all the tags in the next state (the current tag values are not used). If
+         * tags.size() == 0, the next state of tags would be no tags for evaluation
+         * purposes. Only one type of tags reference (numeric or namespace) is
+         * required to be passed.
+         *
+         * @param string[] $tags
+         */
+        public function setTags($tags)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTags()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudIAP\TagsFullState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTags()
+    class Google_Service_CloudIAP_TagsFullState extends \Google\Service\CloudIAP\TagsFullState
     {
     }
 }

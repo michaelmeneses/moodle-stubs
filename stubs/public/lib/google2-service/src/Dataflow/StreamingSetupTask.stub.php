@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class StreamingSetupTask extends \Google\Model
-{
-    /**
-     * The user has requested drain.
-     *
-     * @var bool
-     */
-    public $drain;
-    /**
-     * The TCP port on which the worker should listen for messages from other
-     * streaming computation workers.
-     *
-     * @var int
-     */
-    public $receiveWorkPort;
-    protected $snapshotConfigType = StreamingApplianceSnapshotConfig::class;
-    protected $snapshotConfigDataType = '';
-    protected $streamingComputationTopologyType = TopologyConfig::class;
-    protected $streamingComputationTopologyDataType = '';
-    /**
-     * The TCP port used by the worker to communicate with the Dataflow worker
-     * harness.
-     *
-     * @var int
-     */
-    public $workerHarnessPort;
-    /**
-     * The user has requested drain.
-     *
-     * @param bool $drain
-     */
-    public function setDrain($drain)
+namespace Google\Service\Dataflow {
+    class StreamingSetupTask extends \Google\Model
     {
+        /**
+         * The user has requested drain.
+         *
+         * @var bool
+         */
+        public $drain;
+        /**
+         * The TCP port on which the worker should listen for messages from other
+         * streaming computation workers.
+         *
+         * @var int
+         */
+        public $receiveWorkPort;
+        protected $snapshotConfigType = StreamingApplianceSnapshotConfig::class;
+        protected $snapshotConfigDataType = '';
+        protected $streamingComputationTopologyType = TopologyConfig::class;
+        protected $streamingComputationTopologyDataType = '';
+        /**
+         * The TCP port used by the worker to communicate with the Dataflow worker
+         * harness.
+         *
+         * @var int
+         */
+        public $workerHarnessPort;
+        /**
+         * The user has requested drain.
+         *
+         * @param bool $drain
+         */
+        public function setDrain($drain)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDrain()
+        {
+        }
+        /**
+         * The TCP port on which the worker should listen for messages from other
+         * streaming computation workers.
+         *
+         * @param int $receiveWorkPort
+         */
+        public function setReceiveWorkPort($receiveWorkPort)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getReceiveWorkPort()
+        {
+        }
+        /**
+         * Configures streaming appliance snapshot.
+         *
+         * @param StreamingApplianceSnapshotConfig $snapshotConfig
+         */
+        public function setSnapshotConfig(StreamingApplianceSnapshotConfig $snapshotConfig)
+        {
+        }
+        /**
+         * @return StreamingApplianceSnapshotConfig
+         */
+        public function getSnapshotConfig()
+        {
+        }
+        /**
+         * The global topology of the streaming Dataflow job.
+         *
+         * @param TopologyConfig $streamingComputationTopology
+         */
+        public function setStreamingComputationTopology(TopologyConfig $streamingComputationTopology)
+        {
+        }
+        /**
+         * @return TopologyConfig
+         */
+        public function getStreamingComputationTopology()
+        {
+        }
+        /**
+         * The TCP port used by the worker to communicate with the Dataflow worker
+         * harness.
+         *
+         * @param int $workerHarnessPort
+         */
+        public function setWorkerHarnessPort($workerHarnessPort)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getWorkerHarnessPort()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Dataflow\StreamingSetupTask registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDrain()
-    {
-    }
-    /**
-     * The TCP port on which the worker should listen for messages from other
-     * streaming computation workers.
-     *
-     * @param int $receiveWorkPort
-     */
-    public function setReceiveWorkPort($receiveWorkPort)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getReceiveWorkPort()
-    {
-    }
-    /**
-     * Configures streaming appliance snapshot.
-     *
-     * @param StreamingApplianceSnapshotConfig $snapshotConfig
-     */
-    public function setSnapshotConfig(StreamingApplianceSnapshotConfig $snapshotConfig)
-    {
-    }
-    /**
-     * @return StreamingApplianceSnapshotConfig
-     */
-    public function getSnapshotConfig()
-    {
-    }
-    /**
-     * The global topology of the streaming Dataflow job.
-     *
-     * @param TopologyConfig $streamingComputationTopology
-     */
-    public function setStreamingComputationTopology(TopologyConfig $streamingComputationTopology)
-    {
-    }
-    /**
-     * @return TopologyConfig
-     */
-    public function getStreamingComputationTopology()
-    {
-    }
-    /**
-     * The TCP port used by the worker to communicate with the Dataflow worker
-     * harness.
-     *
-     * @param int $workerHarnessPort
-     */
-    public function setWorkerHarnessPort($workerHarnessPort)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getWorkerHarnessPort()
+    class Google_Service_Dataflow_StreamingSetupTask extends \Google\Service\Dataflow\StreamingSetupTask
     {
     }
 }

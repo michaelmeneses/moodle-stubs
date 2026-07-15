@@ -8,6 +8,9 @@
  */
 namespace Aws\S3\Exception;
 
+use Aws\CommandInterface;
+use Aws\Exception\AwsException;
+use Aws\Multipart\UploadState;
 class S3MultipartUploadException extends \Aws\Exception\MultipartUploadException
 {
     /** @var string Bucket of the transfer object */

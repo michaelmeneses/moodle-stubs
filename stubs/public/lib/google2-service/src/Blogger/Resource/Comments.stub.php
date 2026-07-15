@@ -21,123 +21,134 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Blogger\Resource;
-
-/**
- * The "comments" collection of methods.
- * Typical usage is:
- *  <code>
- *   $bloggerService = new Google\Service\Blogger(...);
- *   $comments = $bloggerService->comments;
- *  </code>
- */
-class Comments extends \Google\Service\Resource
-{
+namespace Google\Service\Blogger\Resource {
+    use Google\Service\Blogger\Comment;
+    use Google\Service\Blogger\CommentList;
     /**
-     * Marks a comment as not spam by blog id, post id and comment id.
-     * (comments.approve)
-     *
-     * @param string $blogId
-     * @param string $postId
-     * @param string $commentId
-     * @param array $optParams Optional parameters.
-     * @return Comment
-     * @throws \Google\Service\Exception
+     * The "comments" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $bloggerService = new Google\Service\Blogger(...);
+     *   $comments = $bloggerService->comments;
+     *  </code>
      */
-    public function approve($blogId, $postId, $commentId, $optParams = [])
+    class Comments extends \Google\Service\Resource
     {
+        /**
+         * Marks a comment as not spam by blog id, post id and comment id.
+         * (comments.approve)
+         *
+         * @param string $blogId
+         * @param string $postId
+         * @param string $commentId
+         * @param array $optParams Optional parameters.
+         * @return Comment
+         * @throws \Google\Service\Exception
+         */
+        public function approve($blogId, $postId, $commentId, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a comment by blog id, post id and comment id. (comments.delete)
+         *
+         * @param string $blogId
+         * @param string $postId
+         * @param string $commentId
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($blogId, $postId, $commentId, $optParams = [])
+        {
+        }
+        /**
+         * Gets a comment by id. (comments.get)
+         *
+         * @param string $blogId
+         * @param string $postId
+         * @param string $commentId
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string view
+         * @return Comment
+         * @throws \Google\Service\Exception
+         */
+        public function get($blogId, $postId, $commentId, $optParams = [])
+        {
+        }
+        /**
+         * Lists comments. (comments.listComments)
+         *
+         * @param string $blogId
+         * @param string $postId
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string endDate
+         * @opt_param bool fetchBodies
+         * @opt_param string maxResults
+         * @opt_param string pageToken
+         * @opt_param string startDate
+         * @opt_param string status
+         * @opt_param string view
+         * @return CommentList
+         * @throws \Google\Service\Exception
+         */
+        public function listComments($blogId, $postId, $optParams = [])
+        {
+        }
+        /**
+         * Lists comments by blog. (comments.listByBlog)
+         *
+         * @param string $blogId
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string endDate
+         * @opt_param bool fetchBodies
+         * @opt_param string maxResults
+         * @opt_param string pageToken
+         * @opt_param string startDate
+         * @opt_param string status
+         * @return CommentList
+         * @throws \Google\Service\Exception
+         */
+        public function listByBlog($blogId, $optParams = [])
+        {
+        }
+        /**
+         * Marks a comment as spam by blog id, post id and comment id.
+         * (comments.markAsSpam)
+         *
+         * @param string $blogId
+         * @param string $postId
+         * @param string $commentId
+         * @param array $optParams Optional parameters.
+         * @return Comment
+         * @throws \Google\Service\Exception
+         */
+        public function markAsSpam($blogId, $postId, $commentId, $optParams = [])
+        {
+        }
+        /**
+         * Removes the content of a comment by blog id, post id and comment id.
+         * (comments.removeContent)
+         *
+         * @param string $blogId
+         * @param string $postId
+         * @param string $commentId
+         * @param array $optParams Optional parameters.
+         * @return Comment
+         * @throws \Google\Service\Exception
+         */
+        public function removeContent($blogId, $postId, $commentId, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a comment by blog id, post id and comment id. (comments.delete)
-     *
-     * @param string $blogId
-     * @param string $postId
-     * @param string $commentId
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Blogger\Resource\Comments registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($blogId, $postId, $commentId, $optParams = [])
-    {
-    }
-    /**
-     * Gets a comment by id. (comments.get)
-     *
-     * @param string $blogId
-     * @param string $postId
-     * @param string $commentId
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string view
-     * @return Comment
-     * @throws \Google\Service\Exception
-     */
-    public function get($blogId, $postId, $commentId, $optParams = [])
-    {
-    }
-    /**
-     * Lists comments. (comments.listComments)
-     *
-     * @param string $blogId
-     * @param string $postId
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string endDate
-     * @opt_param bool fetchBodies
-     * @opt_param string maxResults
-     * @opt_param string pageToken
-     * @opt_param string startDate
-     * @opt_param string status
-     * @opt_param string view
-     * @return CommentList
-     * @throws \Google\Service\Exception
-     */
-    public function listComments($blogId, $postId, $optParams = [])
-    {
-    }
-    /**
-     * Lists comments by blog. (comments.listByBlog)
-     *
-     * @param string $blogId
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string endDate
-     * @opt_param bool fetchBodies
-     * @opt_param string maxResults
-     * @opt_param string pageToken
-     * @opt_param string startDate
-     * @opt_param string status
-     * @return CommentList
-     * @throws \Google\Service\Exception
-     */
-    public function listByBlog($blogId, $optParams = [])
-    {
-    }
-    /**
-     * Marks a comment as spam by blog id, post id and comment id.
-     * (comments.markAsSpam)
-     *
-     * @param string $blogId
-     * @param string $postId
-     * @param string $commentId
-     * @param array $optParams Optional parameters.
-     * @return Comment
-     * @throws \Google\Service\Exception
-     */
-    public function markAsSpam($blogId, $postId, $commentId, $optParams = [])
-    {
-    }
-    /**
-     * Removes the content of a comment by blog id, post id and comment id.
-     * (comments.removeContent)
-     *
-     * @param string $blogId
-     * @param string $postId
-     * @param string $commentId
-     * @param array $optParams Optional parameters.
-     * @return Comment
-     * @throws \Google\Service\Exception
-     */
-    public function removeContent($blogId, $postId, $commentId, $optParams = [])
+    class Google_Service_Blogger_Resource_Comments extends \Google\Service\Blogger\Resource\Comments
     {
     }
 }

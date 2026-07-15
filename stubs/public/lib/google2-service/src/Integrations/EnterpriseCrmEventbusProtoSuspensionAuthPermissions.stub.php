@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmEventbusProtoSuspensionAuthPermissions extends \Google\Model
-{
-    protected $gaiaIdentityType = EnterpriseCrmEventbusProtoSuspensionAuthPermissionsGaiaIdentity::class;
-    protected $gaiaIdentityDataType = '';
-    protected $googleGroupType = EnterpriseCrmEventbusProtoSuspensionAuthPermissionsGaiaIdentity::class;
-    protected $googleGroupDataType = '';
-    /**
-     * @var string
-     */
-    public $loasRole;
-    /**
-     * @var string
-     */
-    public $mdbGroup;
-    /**
-     * Represents a Gaia identity for a person or service account.
-     *
-     * @param EnterpriseCrmEventbusProtoSuspensionAuthPermissionsGaiaIdentity $gaiaIdentity
-     */
-    public function setGaiaIdentity(EnterpriseCrmEventbusProtoSuspensionAuthPermissionsGaiaIdentity $gaiaIdentity)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmEventbusProtoSuspensionAuthPermissions extends \Google\Model
     {
+        protected $gaiaIdentityType = EnterpriseCrmEventbusProtoSuspensionAuthPermissionsGaiaIdentity::class;
+        protected $gaiaIdentityDataType = '';
+        protected $googleGroupType = EnterpriseCrmEventbusProtoSuspensionAuthPermissionsGaiaIdentity::class;
+        protected $googleGroupDataType = '';
+        /**
+         * @var string
+         */
+        public $loasRole;
+        /**
+         * @var string
+         */
+        public $mdbGroup;
+        /**
+         * Represents a Gaia identity for a person or service account.
+         *
+         * @param EnterpriseCrmEventbusProtoSuspensionAuthPermissionsGaiaIdentity $gaiaIdentity
+         */
+        public function setGaiaIdentity(EnterpriseCrmEventbusProtoSuspensionAuthPermissionsGaiaIdentity $gaiaIdentity)
+        {
+        }
+        /**
+         * @return EnterpriseCrmEventbusProtoSuspensionAuthPermissionsGaiaIdentity
+         */
+        public function getGaiaIdentity()
+        {
+        }
+        /**
+         * @param EnterpriseCrmEventbusProtoSuspensionAuthPermissionsGaiaIdentity $googleGroup
+         */
+        public function setGoogleGroup(EnterpriseCrmEventbusProtoSuspensionAuthPermissionsGaiaIdentity $googleGroup)
+        {
+        }
+        /**
+         * @return EnterpriseCrmEventbusProtoSuspensionAuthPermissionsGaiaIdentity
+         */
+        public function getGoogleGroup()
+        {
+        }
+        /**
+         * @param string $loasRole
+         */
+        public function setLoasRole($loasRole)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLoasRole()
+        {
+        }
+        /**
+         * @param string $mdbGroup
+         */
+        public function setMdbGroup($mdbGroup)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMdbGroup()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EnterpriseCrmEventbusProtoSuspensionAuthPermissionsGaiaIdentity
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmEventbusProtoSuspensionAuthPermissions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGaiaIdentity()
-    {
-    }
-    /**
-     * @param EnterpriseCrmEventbusProtoSuspensionAuthPermissionsGaiaIdentity $googleGroup
-     */
-    public function setGoogleGroup(EnterpriseCrmEventbusProtoSuspensionAuthPermissionsGaiaIdentity $googleGroup)
-    {
-    }
-    /**
-     * @return EnterpriseCrmEventbusProtoSuspensionAuthPermissionsGaiaIdentity
-     */
-    public function getGoogleGroup()
-    {
-    }
-    /**
-     * @param string $loasRole
-     */
-    public function setLoasRole($loasRole)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLoasRole()
-    {
-    }
-    /**
-     * @param string $mdbGroup
-     */
-    public function setMdbGroup($mdbGroup)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMdbGroup()
+    class Google_Service_Integrations_EnterpriseCrmEventbusProtoSuspensionAuthPermissions extends \Google\Service\Integrations\EnterpriseCrmEventbusProtoSuspensionAuthPermissions
     {
     }
 }

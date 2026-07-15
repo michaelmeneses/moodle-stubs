@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer;
-
-class GetOrderDealsResponse extends \Google\Collection
-{
-    protected $collection_key = 'deals';
-    protected $dealsType = MarketplaceDeal::class;
-    protected $dealsDataType = 'array';
-    /**
-     * @param MarketplaceDeal[]
-     */
-    public function setDeals($deals)
+namespace Google\Service\AdExchangeBuyer {
+    class GetOrderDealsResponse extends \Google\Collection
     {
+        protected $collection_key = 'deals';
+        protected $dealsType = MarketplaceDeal::class;
+        protected $dealsDataType = 'array';
+        /**
+         * @param MarketplaceDeal[]
+         */
+        public function setDeals($deals)
+        {
+        }
+        /**
+         * @return MarketplaceDeal[]
+         */
+        public function getDeals()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MarketplaceDeal[]
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\GetOrderDealsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeals()
+    class Google_Service_AdExchangeBuyer_GetOrderDealsResponse extends \Google\Service\AdExchangeBuyer\GetOrderDealsResponse
     {
     }
 }

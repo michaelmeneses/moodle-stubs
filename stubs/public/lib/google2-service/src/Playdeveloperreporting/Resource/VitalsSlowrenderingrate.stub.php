@@ -21,41 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Playdeveloperreporting\Resource;
-
-/**
- * The "slowrenderingrate" collection of methods.
- * Typical usage is:
- *  <code>
- *   $playdeveloperreportingService = new Google\Service\Playdeveloperreporting(...);
- *   $slowrenderingrate = $playdeveloperreportingService->vitals_slowrenderingrate;
- *  </code>
- */
-class VitalsSlowrenderingrate extends \Google\Service\Resource
-{
+namespace Google\Service\Playdeveloperreporting\Resource {
+    use Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1QuerySlowRenderingRateMetricSetRequest;
+    use Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1QuerySlowRenderingRateMetricSetResponse;
+    use Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1SlowRenderingRateMetricSet;
     /**
-     * Describes the properties of the metric set. (slowrenderingrate.get)
-     *
-     * @param string $name Required. The resource name. Format:
-     * apps/{app}/slowRenderingRateMetricSet
-     * @param array $optParams Optional parameters.
-     * @return GooglePlayDeveloperReportingV1beta1SlowRenderingRateMetricSet
-     * @throws \Google\Service\Exception
+     * The "slowrenderingrate" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $playdeveloperreportingService = new Google\Service\Playdeveloperreporting(...);
+     *   $slowrenderingrate = $playdeveloperreportingService->vitals_slowrenderingrate;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class VitalsSlowrenderingrate extends \Google\Service\Resource
     {
+        /**
+         * Describes the properties of the metric set. (slowrenderingrate.get)
+         *
+         * @param string $name Required. The resource name. Format:
+         * apps/{app}/slowRenderingRateMetricSet
+         * @param array $optParams Optional parameters.
+         * @return GooglePlayDeveloperReportingV1beta1SlowRenderingRateMetricSet
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Queries the metrics in the metric set. (slowrenderingrate.query)
+         *
+         * @param string $name Required. The resource name. Format:
+         * apps/{app}/slowRenderingRateMetricSet
+         * @param GooglePlayDeveloperReportingV1beta1QuerySlowRenderingRateMetricSetRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GooglePlayDeveloperReportingV1beta1QuerySlowRenderingRateMetricSetResponse
+         * @throws \Google\Service\Exception
+         */
+        public function query($name, GooglePlayDeveloperReportingV1beta1QuerySlowRenderingRateMetricSetRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Queries the metrics in the metric set. (slowrenderingrate.query)
-     *
-     * @param string $name Required. The resource name. Format:
-     * apps/{app}/slowRenderingRateMetricSet
-     * @param GooglePlayDeveloperReportingV1beta1QuerySlowRenderingRateMetricSetRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GooglePlayDeveloperReportingV1beta1QuerySlowRenderingRateMetricSetResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Playdeveloperreporting\Resource\VitalsSlowrenderingrate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function query($name, GooglePlayDeveloperReportingV1beta1QuerySlowRenderingRateMetricSetRequest $postBody, $optParams = [])
+    class Google_Service_Playdeveloperreporting_Resource_VitalsSlowrenderingrate extends \Google\Service\Playdeveloperreporting\Resource\VitalsSlowrenderingrate
     {
     }
 }

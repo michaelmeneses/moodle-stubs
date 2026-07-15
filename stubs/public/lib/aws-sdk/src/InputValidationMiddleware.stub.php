@@ -8,6 +8,7 @@
  */
 namespace Aws;
 
+use Aws\Api\Service;
 /**
  * Validates the required input parameters of commands are non empty
  *

@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class RegionsVersion extends \Google\Model
-{
-    /**
-     * Required. A string representing the version of available regions being used
-     * for the specified resource. Regional prices and latest supported version
-     * for the resource have to be specified according to the information
-     * published in [this article](https://support.google.com/googleplay/android-
-     * developer/answer/10532353). Each time the supported locations substantially
-     * change, the version will be incremented. Using this field will ensure that
-     * creating and updating the resource with an older region's version and set
-     * of regional prices and currencies will succeed even though a new version is
-     * available.
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * Required. A string representing the version of available regions being used
-     * for the specified resource. Regional prices and latest supported version
-     * for the resource have to be specified according to the information
-     * published in [this article](https://support.google.com/googleplay/android-
-     * developer/answer/10532353). Each time the supported locations substantially
-     * change, the version will be incremented. Using this field will ensure that
-     * creating and updating the resource with an older region's version and set
-     * of regional prices and currencies will succeed even though a new version is
-     * available.
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
+namespace Google\Service\AndroidPublisher {
+    class RegionsVersion extends \Google\Model
     {
+        /**
+         * Required. A string representing the version of available regions being used
+         * for the specified resource. Regional prices and latest supported version
+         * for the resource have to be specified according to the information
+         * published in [this article](https://support.google.com/googleplay/android-
+         * developer/answer/10532353). Each time the supported locations substantially
+         * change, the version will be incremented. Using this field will ensure that
+         * creating and updating the resource with an older region's version and set
+         * of regional prices and currencies will succeed even though a new version is
+         * available.
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * Required. A string representing the version of available regions being used
+         * for the specified resource. Regional prices and latest supported version
+         * for the resource have to be specified according to the information
+         * published in [this article](https://support.google.com/googleplay/android-
+         * developer/answer/10532353). Each time the supported locations substantially
+         * change, the version will be incremented. Using this field will ensure that
+         * creating and updating the resource with an older region's version and set
+         * of regional prices and currencies will succeed even though a new version is
+         * available.
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidPublisher\RegionsVersion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getVersion()
+    class Google_Service_AndroidPublisher_RegionsVersion extends \Google\Service\AndroidPublisher\RegionsVersion
     {
     }
 }

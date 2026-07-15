@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BinaryAuthorization;
-
-class SimpleSigningAttestationCheck extends \Google\Collection
-{
-    protected $collection_key = 'containerAnalysisAttestationProjects';
-    protected $attestationAuthenticatorsType = AttestationAuthenticator::class;
-    protected $attestationAuthenticatorsDataType = 'array';
-    /**
-     * Optional. The projects where attestations are stored as Container Analysis
-     * Occurrences, in the format `projects/[PROJECT_ID]`. Only one attestation
-     * needs to successfully verify an image for this check to pass, so a single
-     * verified attestation found in any of
-     * `container_analysis_attestation_projects` is sufficient for the check to
-     * pass. A project ID must be used, not a project number. When fetching
-     * Occurrences from Container Analysis, only `AttestationOccurrence` kinds are
-     * considered. In the future, additional Occurrence kinds may be added to the
-     * query. Maximum number of `container_analysis_attestation_projects` allowed
-     * in each `SimpleSigningAttestationCheck` is 10.
-     *
-     * @var string[]
-     */
-    public $containerAnalysisAttestationProjects;
-    /**
-     * Required. The authenticators required by this check to verify an
-     * attestation. Typically this is one or more PKIX public keys for signature
-     * verification. Only one authenticator needs to consider an attestation
-     * verified in order for an attestation to be considered fully authenticated.
-     * In otherwords, this list of authenticators is an "OR" of the authenticator
-     * results. At least one authenticator is required.
-     *
-     * @param AttestationAuthenticator[] $attestationAuthenticators
-     */
-    public function setAttestationAuthenticators($attestationAuthenticators)
+namespace Google\Service\BinaryAuthorization {
+    class SimpleSigningAttestationCheck extends \Google\Collection
     {
+        protected $collection_key = 'containerAnalysisAttestationProjects';
+        protected $attestationAuthenticatorsType = AttestationAuthenticator::class;
+        protected $attestationAuthenticatorsDataType = 'array';
+        /**
+         * Optional. The projects where attestations are stored as Container Analysis
+         * Occurrences, in the format `projects/[PROJECT_ID]`. Only one attestation
+         * needs to successfully verify an image for this check to pass, so a single
+         * verified attestation found in any of
+         * `container_analysis_attestation_projects` is sufficient for the check to
+         * pass. A project ID must be used, not a project number. When fetching
+         * Occurrences from Container Analysis, only `AttestationOccurrence` kinds are
+         * considered. In the future, additional Occurrence kinds may be added to the
+         * query. Maximum number of `container_analysis_attestation_projects` allowed
+         * in each `SimpleSigningAttestationCheck` is 10.
+         *
+         * @var string[]
+         */
+        public $containerAnalysisAttestationProjects;
+        /**
+         * Required. The authenticators required by this check to verify an
+         * attestation. Typically this is one or more PKIX public keys for signature
+         * verification. Only one authenticator needs to consider an attestation
+         * verified in order for an attestation to be considered fully authenticated.
+         * In otherwords, this list of authenticators is an "OR" of the authenticator
+         * results. At least one authenticator is required.
+         *
+         * @param AttestationAuthenticator[] $attestationAuthenticators
+         */
+        public function setAttestationAuthenticators($attestationAuthenticators)
+        {
+        }
+        /**
+         * @return AttestationAuthenticator[]
+         */
+        public function getAttestationAuthenticators()
+        {
+        }
+        /**
+         * Optional. The projects where attestations are stored as Container Analysis
+         * Occurrences, in the format `projects/[PROJECT_ID]`. Only one attestation
+         * needs to successfully verify an image for this check to pass, so a single
+         * verified attestation found in any of
+         * `container_analysis_attestation_projects` is sufficient for the check to
+         * pass. A project ID must be used, not a project number. When fetching
+         * Occurrences from Container Analysis, only `AttestationOccurrence` kinds are
+         * considered. In the future, additional Occurrence kinds may be added to the
+         * query. Maximum number of `container_analysis_attestation_projects` allowed
+         * in each `SimpleSigningAttestationCheck` is 10.
+         *
+         * @param string[] $containerAnalysisAttestationProjects
+         */
+        public function setContainerAnalysisAttestationProjects($containerAnalysisAttestationProjects)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getContainerAnalysisAttestationProjects()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AttestationAuthenticator[]
+     * Runtime class alias of \Google\Service\BinaryAuthorization\SimpleSigningAttestationCheck registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttestationAuthenticators()
-    {
-    }
-    /**
-     * Optional. The projects where attestations are stored as Container Analysis
-     * Occurrences, in the format `projects/[PROJECT_ID]`. Only one attestation
-     * needs to successfully verify an image for this check to pass, so a single
-     * verified attestation found in any of
-     * `container_analysis_attestation_projects` is sufficient for the check to
-     * pass. A project ID must be used, not a project number. When fetching
-     * Occurrences from Container Analysis, only `AttestationOccurrence` kinds are
-     * considered. In the future, additional Occurrence kinds may be added to the
-     * query. Maximum number of `container_analysis_attestation_projects` allowed
-     * in each `SimpleSigningAttestationCheck` is 10.
-     *
-     * @param string[] $containerAnalysisAttestationProjects
-     */
-    public function setContainerAnalysisAttestationProjects($containerAnalysisAttestationProjects)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getContainerAnalysisAttestationProjects()
+    class Google_Service_BinaryAuthorization_SimpleSigningAttestationCheck extends \Google\Service\BinaryAuthorization\SimpleSigningAttestationCheck
     {
     }
 }

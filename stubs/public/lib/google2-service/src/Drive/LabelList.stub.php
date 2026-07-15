@@ -21,75 +21,84 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Drive;
-
-class LabelList extends \Google\Collection
-{
-    protected $collection_key = 'labels';
-    /**
-     * This is always `"drive#labelList"`.
-     *
-     * @var string
-     */
-    public $kind;
-    protected $labelsType = Label::class;
-    protected $labelsDataType = 'array';
-    /**
-     * The page token for the next page of labels. This field will be absent if
-     * the end of the list has been reached. If the token is rejected for any
-     * reason, it should be discarded, and pagination should be restarted from the
-     * first page of results. The page token is typically valid for several hours.
-     * However, if new items are added or removed, your expected results might
-     * differ.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * This is always `"drive#labelList"`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Drive {
+    class LabelList extends \Google\Collection
     {
+        protected $collection_key = 'labels';
+        /**
+         * This is always `"drive#labelList"`.
+         *
+         * @var string
+         */
+        public $kind;
+        protected $labelsType = Label::class;
+        protected $labelsDataType = 'array';
+        /**
+         * The page token for the next page of labels. This field will be absent if
+         * the end of the list has been reached. If the token is rejected for any
+         * reason, it should be discarded, and pagination should be restarted from the
+         * first page of results. The page token is typically valid for several hours.
+         * However, if new items are added or removed, your expected results might
+         * differ.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * This is always `"drive#labelList"`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The list of labels.
+         *
+         * @param Label[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return Label[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * The page token for the next page of labels. This field will be absent if
+         * the end of the list has been reached. If the token is rejected for any
+         * reason, it should be discarded, and pagination should be restarted from the
+         * first page of results. The page token is typically valid for several hours.
+         * However, if new items are added or removed, your expected results might
+         * differ.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Drive\LabelList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * The list of labels.
-     *
-     * @param Label[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return Label[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * The page token for the next page of labels. This field will be absent if
-     * the end of the list has been reached. If the token is rejected for any
-     * reason, it should be discarded, and pagination should be restarted from the
-     * first page of results. The page token is typically valid for several hours.
-     * However, if new items are added or removed, your expected results might
-     * differ.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Drive_LabelList extends \Google\Service\Drive\LabelList
     {
     }
 }

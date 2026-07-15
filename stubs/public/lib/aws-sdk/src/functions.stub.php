@@ -8,6 +8,9 @@
  */
 namespace Aws;
 
+use GuzzleHttp\Utils;
+use Psr\Http\Message\RequestInterface;
+use GuzzleHttp\Promise\FulfilledPromise;
 //-----------------------------------------------------------------------------
 // Functional functions
 //-----------------------------------------------------------------------------

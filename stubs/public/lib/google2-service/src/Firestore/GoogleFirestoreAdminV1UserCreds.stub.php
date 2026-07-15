@@ -21,144 +21,153 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class GoogleFirestoreAdminV1UserCreds extends \Google\Model
-{
-    /**
-     * The default value. Should not be used.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * The user creds are enabled.
-     */
-    public const STATE_ENABLED = 'ENABLED';
-    /**
-     * The user creds are disabled.
-     */
-    public const STATE_DISABLED = 'DISABLED';
-    /**
-     * Output only. The time the user creds were created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Identifier. The resource name of the UserCreds. Format:
-     * `projects/{project}/databases/{database}/userCreds/{user_creds}`
-     *
-     * @var string
-     */
-    public $name;
-    protected $resourceIdentityType = GoogleFirestoreAdminV1ResourceIdentity::class;
-    protected $resourceIdentityDataType = '';
-    /**
-     * Output only. The plaintext server-generated password for the user creds.
-     * Only populated in responses for CreateUserCreds and ResetUserPassword.
-     *
-     * @var string
-     */
-    public $securePassword;
-    /**
-     * Output only. Whether the user creds are enabled or disabled. Defaults to
-     * ENABLED on creation.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Output only. The time the user creds were last updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. The time the user creds were created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\Firestore {
+    class GoogleFirestoreAdminV1UserCreds extends \Google\Model
     {
+        /**
+         * The default value. Should not be used.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * The user creds are enabled.
+         */
+        public const STATE_ENABLED = 'ENABLED';
+        /**
+         * The user creds are disabled.
+         */
+        public const STATE_DISABLED = 'DISABLED';
+        /**
+         * Output only. The time the user creds were created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Identifier. The resource name of the UserCreds. Format:
+         * `projects/{project}/databases/{database}/userCreds/{user_creds}`
+         *
+         * @var string
+         */
+        public $name;
+        protected $resourceIdentityType = GoogleFirestoreAdminV1ResourceIdentity::class;
+        protected $resourceIdentityDataType = '';
+        /**
+         * Output only. The plaintext server-generated password for the user creds.
+         * Only populated in responses for CreateUserCreds and ResetUserPassword.
+         *
+         * @var string
+         */
+        public $securePassword;
+        /**
+         * Output only. Whether the user creds are enabled or disabled. Defaults to
+         * ENABLED on creation.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Output only. The time the user creds were last updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. The time the user creds were created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Identifier. The resource name of the UserCreds. Format:
+         * `projects/{project}/databases/{database}/userCreds/{user_creds}`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Resource Identity descriptor.
+         *
+         * @param GoogleFirestoreAdminV1ResourceIdentity $resourceIdentity
+         */
+        public function setResourceIdentity(GoogleFirestoreAdminV1ResourceIdentity $resourceIdentity)
+        {
+        }
+        /**
+         * @return GoogleFirestoreAdminV1ResourceIdentity
+         */
+        public function getResourceIdentity()
+        {
+        }
+        /**
+         * Output only. The plaintext server-generated password for the user creds.
+         * Only populated in responses for CreateUserCreds and ResetUserPassword.
+         *
+         * @param string $securePassword
+         */
+        public function setSecurePassword($securePassword)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSecurePassword()
+        {
+        }
+        /**
+         * Output only. Whether the user creds are enabled or disabled. Defaults to
+         * ENABLED on creation.
+         *
+         * Accepted values: STATE_UNSPECIFIED, ENABLED, DISABLED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Output only. The time the user creds were last updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Firestore\GoogleFirestoreAdminV1UserCreds registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Identifier. The resource name of the UserCreds. Format:
-     * `projects/{project}/databases/{database}/userCreds/{user_creds}`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Resource Identity descriptor.
-     *
-     * @param GoogleFirestoreAdminV1ResourceIdentity $resourceIdentity
-     */
-    public function setResourceIdentity(GoogleFirestoreAdminV1ResourceIdentity $resourceIdentity)
-    {
-    }
-    /**
-     * @return GoogleFirestoreAdminV1ResourceIdentity
-     */
-    public function getResourceIdentity()
-    {
-    }
-    /**
-     * Output only. The plaintext server-generated password for the user creds.
-     * Only populated in responses for CreateUserCreds and ResetUserPassword.
-     *
-     * @param string $securePassword
-     */
-    public function setSecurePassword($securePassword)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSecurePassword()
-    {
-    }
-    /**
-     * Output only. Whether the user creds are enabled or disabled. Defaults to
-     * ENABLED on creation.
-     *
-     * Accepted values: STATE_UNSPECIFIED, ENABLED, DISABLED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Output only. The time the user creds were last updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_Firestore_GoogleFirestoreAdminV1UserCreds extends \Google\Service\Firestore\GoogleFirestoreAdminV1UserCreds
     {
     }
 }

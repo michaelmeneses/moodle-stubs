@@ -21,95 +21,106 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics\Resource;
-
-/**
- * The "filters" collection of methods.
- * Typical usage is:
- *  <code>
- *   $analyticsService = new Google\Service\Analytics(...);
- *   $filters = $analyticsService->management_filters;
- *  </code>
- */
-class ManagementFilters extends \Google\Service\Resource
-{
+namespace Google\Service\Analytics\Resource {
+    use Google\Service\Analytics\Filter;
+    use Google\Service\Analytics\Filters;
     /**
-     * Delete a filter. (filters.delete)
-     *
-     * @param string $accountId Account ID to delete the filter for.
-     * @param string $filterId ID of the filter to be deleted.
-     * @param array $optParams Optional parameters.
-     * @return Filter
-     * @throws \Google\Service\Exception
+     * The "filters" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $analyticsService = new Google\Service\Analytics(...);
+     *   $filters = $analyticsService->management_filters;
+     *  </code>
      */
-    public function delete($accountId, $filterId, $optParams = [])
+    class ManagementFilters extends \Google\Service\Resource
     {
+        /**
+         * Delete a filter. (filters.delete)
+         *
+         * @param string $accountId Account ID to delete the filter for.
+         * @param string $filterId ID of the filter to be deleted.
+         * @param array $optParams Optional parameters.
+         * @return Filter
+         * @throws \Google\Service\Exception
+         */
+        public function delete($accountId, $filterId, $optParams = [])
+        {
+        }
+        /**
+         * Returns filters to which the user has access. (filters.get)
+         *
+         * @param string $accountId Account ID to retrieve filters for.
+         * @param string $filterId Filter ID to retrieve filters for.
+         * @param array $optParams Optional parameters.
+         * @return Filter
+         * @throws \Google\Service\Exception
+         */
+        public function get($accountId, $filterId, $optParams = [])
+        {
+        }
+        /**
+         * Create a new filter. (filters.insert)
+         *
+         * @param string $accountId Account ID to create filter for.
+         * @param Filter $postBody
+         * @param array $optParams Optional parameters.
+         * @return Filter
+         * @throws \Google\Service\Exception
+         */
+        public function insert($accountId, Filter $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Lists all filters for an account (filters.listManagementFilters)
+         *
+         * @param string $accountId Account ID to retrieve filters for.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int max-results The maximum number of filters to include in this
+         * response.
+         * @opt_param int start-index An index of the first entity to retrieve. Use this
+         * parameter as a pagination mechanism along with the max-results parameter.
+         * @return Filters
+         * @throws \Google\Service\Exception
+         */
+        public function listManagementFilters($accountId, $optParams = [])
+        {
+        }
+        /**
+         * Updates an existing filter. This method supports patch semantics.
+         * (filters.patch)
+         *
+         * @param string $accountId Account ID to which the filter belongs.
+         * @param string $filterId ID of the filter to be updated.
+         * @param Filter $postBody
+         * @param array $optParams Optional parameters.
+         * @return Filter
+         * @throws \Google\Service\Exception
+         */
+        public function patch($accountId, $filterId, Filter $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Updates an existing filter. (filters.update)
+         *
+         * @param string $accountId Account ID to which the filter belongs.
+         * @param string $filterId ID of the filter to be updated.
+         * @param Filter $postBody
+         * @param array $optParams Optional parameters.
+         * @return Filter
+         * @throws \Google\Service\Exception
+         */
+        public function update($accountId, $filterId, Filter $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Returns filters to which the user has access. (filters.get)
-     *
-     * @param string $accountId Account ID to retrieve filters for.
-     * @param string $filterId Filter ID to retrieve filters for.
-     * @param array $optParams Optional parameters.
-     * @return Filter
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Analytics\Resource\ManagementFilters registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($accountId, $filterId, $optParams = [])
-    {
-    }
-    /**
-     * Create a new filter. (filters.insert)
-     *
-     * @param string $accountId Account ID to create filter for.
-     * @param Filter $postBody
-     * @param array $optParams Optional parameters.
-     * @return Filter
-     * @throws \Google\Service\Exception
-     */
-    public function insert($accountId, Filter $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Lists all filters for an account (filters.listManagementFilters)
-     *
-     * @param string $accountId Account ID to retrieve filters for.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int max-results The maximum number of filters to include in this
-     * response.
-     * @opt_param int start-index An index of the first entity to retrieve. Use this
-     * parameter as a pagination mechanism along with the max-results parameter.
-     * @return Filters
-     * @throws \Google\Service\Exception
-     */
-    public function listManagementFilters($accountId, $optParams = [])
-    {
-    }
-    /**
-     * Updates an existing filter. This method supports patch semantics.
-     * (filters.patch)
-     *
-     * @param string $accountId Account ID to which the filter belongs.
-     * @param string $filterId ID of the filter to be updated.
-     * @param Filter $postBody
-     * @param array $optParams Optional parameters.
-     * @return Filter
-     * @throws \Google\Service\Exception
-     */
-    public function patch($accountId, $filterId, Filter $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Updates an existing filter. (filters.update)
-     *
-     * @param string $accountId Account ID to which the filter belongs.
-     * @param string $filterId ID of the filter to be updated.
-     * @param Filter $postBody
-     * @param array $optParams Optional parameters.
-     * @return Filter
-     * @throws \Google\Service\Exception
-     */
-    public function update($accountId, $filterId, Filter $postBody, $optParams = [])
+    class Google_Service_Analytics_Resource_ManagementFilters extends \Google\Service\Analytics\Resource\ManagementFilters
     {
     }
 }

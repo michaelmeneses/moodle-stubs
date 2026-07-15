@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GoogleCloudSecuritycenterV2Allowed extends \Google\Collection
-{
-    protected $collection_key = 'ipRules';
-    protected $ipRulesType = GoogleCloudSecuritycenterV2IpRule::class;
-    protected $ipRulesDataType = 'array';
-    /**
-     * Optional. Optional list of allowed IP rules.
-     *
-     * @param GoogleCloudSecuritycenterV2IpRule[] $ipRules
-     */
-    public function setIpRules($ipRules)
+namespace Google\Service\SecurityCommandCenter {
+    class GoogleCloudSecuritycenterV2Allowed extends \Google\Collection
     {
+        protected $collection_key = 'ipRules';
+        protected $ipRulesType = GoogleCloudSecuritycenterV2IpRule::class;
+        protected $ipRulesDataType = 'array';
+        /**
+         * Optional. Optional list of allowed IP rules.
+         *
+         * @param GoogleCloudSecuritycenterV2IpRule[] $ipRules
+         */
+        public function setIpRules($ipRules)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV2IpRule[]
+         */
+        public function getIpRules()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudSecuritycenterV2IpRule[]
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2Allowed registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIpRules()
+    class Google_Service_SecurityCommandCenter_GoogleCloudSecuritycenterV2Allowed extends \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2Allowed
     {
     }
 }

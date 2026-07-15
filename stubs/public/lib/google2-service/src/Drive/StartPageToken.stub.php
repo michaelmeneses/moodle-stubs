@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Drive;
-
-class StartPageToken extends \Google\Model
-{
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * `"drive#startPageToken"`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The starting page token for listing future changes. The page token doesn't
-     * expire.
-     *
-     * @var string
-     */
-    public $startPageToken;
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * `"drive#startPageToken"`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Drive {
+    class StartPageToken extends \Google\Model
     {
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * `"drive#startPageToken"`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The starting page token for listing future changes. The page token doesn't
+         * expire.
+         *
+         * @var string
+         */
+        public $startPageToken;
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * `"drive#startPageToken"`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The starting page token for listing future changes. The page token doesn't
+         * expire.
+         *
+         * @param string $startPageToken
+         */
+        public function setStartPageToken($startPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Drive\StartPageToken registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * The starting page token for listing future changes. The page token doesn't
-     * expire.
-     *
-     * @param string $startPageToken
-     */
-    public function setStartPageToken($startPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartPageToken()
+    class Google_Service_Drive_StartPageToken extends \Google\Service\Drive\StartPageToken
     {
     }
 }

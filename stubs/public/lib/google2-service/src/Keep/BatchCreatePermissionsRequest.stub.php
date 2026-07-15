@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Keep;
-
-class BatchCreatePermissionsRequest extends \Google\Collection
-{
-    protected $collection_key = 'requests';
-    protected $requestsType = CreatePermissionRequest::class;
-    protected $requestsDataType = 'array';
-    /**
-     * The request message specifying the resources to create.
-     *
-     * @param CreatePermissionRequest[] $requests
-     */
-    public function setRequests($requests)
+namespace Google\Service\Keep {
+    class BatchCreatePermissionsRequest extends \Google\Collection
     {
+        protected $collection_key = 'requests';
+        protected $requestsType = CreatePermissionRequest::class;
+        protected $requestsDataType = 'array';
+        /**
+         * The request message specifying the resources to create.
+         *
+         * @param CreatePermissionRequest[] $requests
+         */
+        public function setRequests($requests)
+        {
+        }
+        /**
+         * @return CreatePermissionRequest[]
+         */
+        public function getRequests()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CreatePermissionRequest[]
+     * Runtime class alias of \Google\Service\Keep\BatchCreatePermissionsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequests()
+    class Google_Service_Keep_BatchCreatePermissionsRequest extends \Google\Service\Keep\BatchCreatePermissionsRequest
     {
     }
 }

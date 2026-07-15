@@ -21,28 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Baremetalsolution\Resource;
-
-/**
- * The "instanceProvisioningSettings" collection of methods.
- * Typical usage is:
- *  <code>
- *   $baremetalsolutionService = new Google\Service\Baremetalsolution(...);
- *   $instanceProvisioningSettings = $baremetalsolutionService->projects_locations_instanceProvisioningSettings;
- *  </code>
- */
-class ProjectsLocationsInstanceProvisioningSettings extends \Google\Service\Resource
-{
+namespace Google\Service\Baremetalsolution\Resource {
+    use Google\Service\Baremetalsolution\FetchInstanceProvisioningSettingsResponse;
     /**
-     * Get instance provisioning settings for a given project. This is hidden method
-     * used by UI only. (instanceProvisioningSettings.fetch)
-     *
-     * @param string $location Required. The parent project and location containing
-     * the ProvisioningSettings.
-     * @param array $optParams Optional parameters.
-     * @return FetchInstanceProvisioningSettingsResponse
+     * The "instanceProvisioningSettings" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $baremetalsolutionService = new Google\Service\Baremetalsolution(...);
+     *   $instanceProvisioningSettings = $baremetalsolutionService->projects_locations_instanceProvisioningSettings;
+     *  </code>
      */
-    public function fetch($location, $optParams = [])
+    class ProjectsLocationsInstanceProvisioningSettings extends \Google\Service\Resource
+    {
+        /**
+         * Get instance provisioning settings for a given project. This is hidden method
+         * used by UI only. (instanceProvisioningSettings.fetch)
+         *
+         * @param string $location Required. The parent project and location containing
+         * the ProvisioningSettings.
+         * @param array $optParams Optional parameters.
+         * @return FetchInstanceProvisioningSettingsResponse
+         */
+        public function fetch($location, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Baremetalsolution\Resource\ProjectsLocationsInstanceProvisioningSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Baremetalsolution_Resource_ProjectsLocationsInstanceProvisioningSettings extends \Google\Service\Baremetalsolution\Resource\ProjectsLocationsInstanceProvisioningSettings
     {
     }
 }

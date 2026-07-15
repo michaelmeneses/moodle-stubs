@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2Table extends \Google\Collection
-{
-    protected $collection_key = 'rows';
-    protected $headersType = GooglePrivacyDlpV2FieldId::class;
-    protected $headersDataType = 'array';
-    protected $rowsType = GooglePrivacyDlpV2Row::class;
-    protected $rowsDataType = 'array';
-    /**
-     * Headers of the table.
-     *
-     * @param GooglePrivacyDlpV2FieldId[] $headers
-     */
-    public function setHeaders($headers)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2Table extends \Google\Collection
     {
+        protected $collection_key = 'rows';
+        protected $headersType = GooglePrivacyDlpV2FieldId::class;
+        protected $headersDataType = 'array';
+        protected $rowsType = GooglePrivacyDlpV2Row::class;
+        protected $rowsDataType = 'array';
+        /**
+         * Headers of the table.
+         *
+         * @param GooglePrivacyDlpV2FieldId[] $headers
+         */
+        public function setHeaders($headers)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2FieldId[]
+         */
+        public function getHeaders()
+        {
+        }
+        /**
+         * Rows of the table.
+         *
+         * @param GooglePrivacyDlpV2Row[] $rows
+         */
+        public function setRows($rows)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2Row[]
+         */
+        public function getRows()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2FieldId[]
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2Table registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHeaders()
-    {
-    }
-    /**
-     * Rows of the table.
-     *
-     * @param GooglePrivacyDlpV2Row[] $rows
-     */
-    public function setRows($rows)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2Row[]
-     */
-    public function getRows()
+    class Google_Service_DLP_GooglePrivacyDlpV2Table extends \Google\Service\DLP\GooglePrivacyDlpV2Table
     {
     }
 }

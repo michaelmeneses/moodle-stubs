@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AIPlatformNotebooks;
-
-class SwitchRuntimeRequest extends \Google\Model
-{
-    protected $acceleratorConfigType = RuntimeAcceleratorConfig::class;
-    protected $acceleratorConfigDataType = '';
-    public $acceleratorConfig;
-    /**
-     * @var string
-     */
-    public $machineType;
-    /**
-     * @var string
-     */
-    public $requestId;
-    /**
-     * @param RuntimeAcceleratorConfig
-     */
-    public function setAcceleratorConfig(RuntimeAcceleratorConfig $acceleratorConfig)
+namespace Google\Service\AIPlatformNotebooks {
+    class SwitchRuntimeRequest extends \Google\Model
     {
+        protected $acceleratorConfigType = RuntimeAcceleratorConfig::class;
+        protected $acceleratorConfigDataType = '';
+        public $acceleratorConfig;
+        /**
+         * @var string
+         */
+        public $machineType;
+        /**
+         * @var string
+         */
+        public $requestId;
+        /**
+         * @param RuntimeAcceleratorConfig
+         */
+        public function setAcceleratorConfig(RuntimeAcceleratorConfig $acceleratorConfig)
+        {
+        }
+        /**
+         * @return RuntimeAcceleratorConfig
+         */
+        public function getAcceleratorConfig()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMachineType($machineType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMachineType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRequestId($requestId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RuntimeAcceleratorConfig
+     * Runtime class alias of \Google\Service\AIPlatformNotebooks\SwitchRuntimeRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAcceleratorConfig()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMachineType($machineType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMachineType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRequestId($requestId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestId()
+    class Google_Service_AIPlatformNotebooks_SwitchRuntimeRequest extends \Google\Service\AIPlatformNotebooks\SwitchRuntimeRequest
     {
     }
 }

@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecommendationsAI;
-
-class GoogleCloudRecommendationengineV1alphaTuningMetadata extends \Google\Model
-{
-    /**
-     * The resource name of the recommendation model that this tune applies to.
-     * Format: projects/{project_number}/locations/{location_id}/catalogs/{catalog
-     * _id}/eventStores/{event_store_id}/recommendationModels/{recommendation_mode
-     * l_id}
-     *
-     * @var string
-     */
-    public $recommendationModel;
-    /**
-     * The resource name of the recommendation model that this tune applies to.
-     * Format: projects/{project_number}/locations/{location_id}/catalogs/{catalog
-     * _id}/eventStores/{event_store_id}/recommendationModels/{recommendation_mode
-     * l_id}
-     *
-     * @param string $recommendationModel
-     */
-    public function setRecommendationModel($recommendationModel)
+namespace Google\Service\RecommendationsAI {
+    class GoogleCloudRecommendationengineV1alphaTuningMetadata extends \Google\Model
     {
+        /**
+         * The resource name of the recommendation model that this tune applies to.
+         * Format: projects/{project_number}/locations/{location_id}/catalogs/{catalog
+         * _id}/eventStores/{event_store_id}/recommendationModels/{recommendation_mode
+         * l_id}
+         *
+         * @var string
+         */
+        public $recommendationModel;
+        /**
+         * The resource name of the recommendation model that this tune applies to.
+         * Format: projects/{project_number}/locations/{location_id}/catalogs/{catalog
+         * _id}/eventStores/{event_store_id}/recommendationModels/{recommendation_mode
+         * l_id}
+         *
+         * @param string $recommendationModel
+         */
+        public function setRecommendationModel($recommendationModel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRecommendationModel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1alphaTuningMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRecommendationModel()
+    class Google_Service_RecommendationsAI_GoogleCloudRecommendationengineV1alphaTuningMetadata extends \Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1alphaTuningMetadata
     {
     }
 }

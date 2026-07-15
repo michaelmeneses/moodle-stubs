@@ -21,95 +21,104 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ArtifactRegistry;
-
-class CleanupPolicy extends \Google\Model
-{
-    /**
-     * Action not specified.
-     */
-    public const ACTION_ACTION_UNSPECIFIED = 'ACTION_UNSPECIFIED';
-    /**
-     * Delete action.
-     */
-    public const ACTION_DELETE = 'DELETE';
-    /**
-     * Keep action.
-     */
-    public const ACTION_KEEP = 'KEEP';
-    /**
-     * Policy action.
-     *
-     * @var string
-     */
-    public $action;
-    protected $conditionType = CleanupPolicyCondition::class;
-    protected $conditionDataType = '';
-    /**
-     * The user-provided ID of the cleanup policy.
-     *
-     * @var string
-     */
-    public $id;
-    protected $mostRecentVersionsType = CleanupPolicyMostRecentVersions::class;
-    protected $mostRecentVersionsDataType = '';
-    /**
-     * Policy action.
-     *
-     * Accepted values: ACTION_UNSPECIFIED, DELETE, KEEP
-     *
-     * @param self::ACTION_* $action
-     */
-    public function setAction($action)
+namespace Google\Service\ArtifactRegistry {
+    class CleanupPolicy extends \Google\Model
     {
+        /**
+         * Action not specified.
+         */
+        public const ACTION_ACTION_UNSPECIFIED = 'ACTION_UNSPECIFIED';
+        /**
+         * Delete action.
+         */
+        public const ACTION_DELETE = 'DELETE';
+        /**
+         * Keep action.
+         */
+        public const ACTION_KEEP = 'KEEP';
+        /**
+         * Policy action.
+         *
+         * @var string
+         */
+        public $action;
+        protected $conditionType = CleanupPolicyCondition::class;
+        protected $conditionDataType = '';
+        /**
+         * The user-provided ID of the cleanup policy.
+         *
+         * @var string
+         */
+        public $id;
+        protected $mostRecentVersionsType = CleanupPolicyMostRecentVersions::class;
+        protected $mostRecentVersionsDataType = '';
+        /**
+         * Policy action.
+         *
+         * Accepted values: ACTION_UNSPECIFIED, DELETE, KEEP
+         *
+         * @param self::ACTION_* $action
+         */
+        public function setAction($action)
+        {
+        }
+        /**
+         * @return self::ACTION_*
+         */
+        public function getAction()
+        {
+        }
+        /**
+         * Policy condition for matching versions.
+         *
+         * @param CleanupPolicyCondition $condition
+         */
+        public function setCondition(CleanupPolicyCondition $condition)
+        {
+        }
+        /**
+         * @return CleanupPolicyCondition
+         */
+        public function getCondition()
+        {
+        }
+        /**
+         * The user-provided ID of the cleanup policy.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Policy condition for retaining a minimum number of versions. May only be
+         * specified with a Keep action.
+         *
+         * @param CleanupPolicyMostRecentVersions $mostRecentVersions
+         */
+        public function setMostRecentVersions(CleanupPolicyMostRecentVersions $mostRecentVersions)
+        {
+        }
+        /**
+         * @return CleanupPolicyMostRecentVersions
+         */
+        public function getMostRecentVersions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::ACTION_*
+     * Runtime class alias of \Google\Service\ArtifactRegistry\CleanupPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAction()
-    {
-    }
-    /**
-     * Policy condition for matching versions.
-     *
-     * @param CleanupPolicyCondition $condition
-     */
-    public function setCondition(CleanupPolicyCondition $condition)
-    {
-    }
-    /**
-     * @return CleanupPolicyCondition
-     */
-    public function getCondition()
-    {
-    }
-    /**
-     * The user-provided ID of the cleanup policy.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Policy condition for retaining a minimum number of versions. May only be
-     * specified with a Keep action.
-     *
-     * @param CleanupPolicyMostRecentVersions $mostRecentVersions
-     */
-    public function setMostRecentVersions(CleanupPolicyMostRecentVersions $mostRecentVersions)
-    {
-    }
-    /**
-     * @return CleanupPolicyMostRecentVersions
-     */
-    public function getMostRecentVersions()
+    class Google_Service_ArtifactRegistry_CleanupPolicy extends \Google\Service\ArtifactRegistry\CleanupPolicy
     {
     }
 }

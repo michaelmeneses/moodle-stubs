@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Backupdr;
-
-class LocationMetadata extends \Google\Collection
-{
-    protected $collection_key = 'unsupportedFeatures';
-    /**
-     * @var string[]
-     */
-    public $unsupportedFeatures;
-    /**
-     * @param string[] $unsupportedFeatures
-     */
-    public function setUnsupportedFeatures($unsupportedFeatures)
+namespace Google\Service\Backupdr {
+    class LocationMetadata extends \Google\Collection
     {
+        protected $collection_key = 'unsupportedFeatures';
+        /**
+         * @var string[]
+         */
+        public $unsupportedFeatures;
+        /**
+         * @param string[] $unsupportedFeatures
+         */
+        public function setUnsupportedFeatures($unsupportedFeatures)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnsupportedFeatures()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Backupdr\LocationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUnsupportedFeatures()
+    class Google_Service_Backupdr_LocationMetadata extends \Google\Service\Backupdr\LocationMetadata
     {
     }
 }

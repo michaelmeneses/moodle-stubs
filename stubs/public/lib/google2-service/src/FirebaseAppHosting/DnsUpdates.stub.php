@@ -21,85 +21,94 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseAppHosting;
-
-class DnsUpdates extends \Google\Collection
-{
-    protected $collection_key = 'discovered';
-    /**
-     * Output only. The last time App Hosting checked your custom domain's DNS
-     * records.
-     *
-     * @var string
-     */
-    public $checkTime;
-    protected $desiredType = DnsRecordSet::class;
-    protected $desiredDataType = 'array';
-    protected $discoveredType = DnsRecordSet::class;
-    protected $discoveredDataType = 'array';
-    /**
-     * Output only. The domain name the DNS updates pertain to.
-     *
-     * @var string
-     */
-    public $domainName;
-    /**
-     * Output only. The last time App Hosting checked your custom domain's DNS
-     * records.
-     *
-     * @param string $checkTime
-     */
-    public function setCheckTime($checkTime)
+namespace Google\Service\FirebaseAppHosting {
+    class DnsUpdates extends \Google\Collection
     {
+        protected $collection_key = 'discovered';
+        /**
+         * Output only. The last time App Hosting checked your custom domain's DNS
+         * records.
+         *
+         * @var string
+         */
+        public $checkTime;
+        protected $desiredType = DnsRecordSet::class;
+        protected $desiredDataType = 'array';
+        protected $discoveredType = DnsRecordSet::class;
+        protected $discoveredDataType = 'array';
+        /**
+         * Output only. The domain name the DNS updates pertain to.
+         *
+         * @var string
+         */
+        public $domainName;
+        /**
+         * Output only. The last time App Hosting checked your custom domain's DNS
+         * records.
+         *
+         * @param string $checkTime
+         */
+        public function setCheckTime($checkTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCheckTime()
+        {
+        }
+        /**
+         * Output only. The set of DNS records App Hosting needs in order to be able
+         * to serve secure content on the domain.
+         *
+         * @param DnsRecordSet[] $desired
+         */
+        public function setDesired($desired)
+        {
+        }
+        /**
+         * @return DnsRecordSet[]
+         */
+        public function getDesired()
+        {
+        }
+        /**
+         * Output only. The set of DNS records App Hosting discovered when inspecting
+         * a domain.
+         *
+         * @param DnsRecordSet[] $discovered
+         */
+        public function setDiscovered($discovered)
+        {
+        }
+        /**
+         * @return DnsRecordSet[]
+         */
+        public function getDiscovered()
+        {
+        }
+        /**
+         * Output only. The domain name the DNS updates pertain to.
+         *
+         * @param string $domainName
+         */
+        public function setDomainName($domainName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDomainName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\FirebaseAppHosting\DnsUpdates registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCheckTime()
-    {
-    }
-    /**
-     * Output only. The set of DNS records App Hosting needs in order to be able
-     * to serve secure content on the domain.
-     *
-     * @param DnsRecordSet[] $desired
-     */
-    public function setDesired($desired)
-    {
-    }
-    /**
-     * @return DnsRecordSet[]
-     */
-    public function getDesired()
-    {
-    }
-    /**
-     * Output only. The set of DNS records App Hosting discovered when inspecting
-     * a domain.
-     *
-     * @param DnsRecordSet[] $discovered
-     */
-    public function setDiscovered($discovered)
-    {
-    }
-    /**
-     * @return DnsRecordSet[]
-     */
-    public function getDiscovered()
-    {
-    }
-    /**
-     * Output only. The domain name the DNS updates pertain to.
-     *
-     * @param string $domainName
-     */
-    public function setDomainName($domainName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDomainName()
+    class Google_Service_FirebaseAppHosting_DnsUpdates extends \Google\Service\FirebaseAppHosting\DnsUpdates
     {
     }
 }

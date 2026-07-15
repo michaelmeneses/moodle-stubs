@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class MetricShortId extends \Google\Model
-{
-    /**
-     * The index of the corresponding metric in the ReportWorkItemStatusRequest.
-     * Required.
-     *
-     * @var int
-     */
-    public $metricIndex;
-    /**
-     * The service-generated short identifier for the metric.
-     *
-     * @var string
-     */
-    public $shortId;
-    /**
-     * The index of the corresponding metric in the ReportWorkItemStatusRequest.
-     * Required.
-     *
-     * @param int $metricIndex
-     */
-    public function setMetricIndex($metricIndex)
+namespace Google\Service\Dataflow {
+    class MetricShortId extends \Google\Model
     {
+        /**
+         * The index of the corresponding metric in the ReportWorkItemStatusRequest.
+         * Required.
+         *
+         * @var int
+         */
+        public $metricIndex;
+        /**
+         * The service-generated short identifier for the metric.
+         *
+         * @var string
+         */
+        public $shortId;
+        /**
+         * The index of the corresponding metric in the ReportWorkItemStatusRequest.
+         * Required.
+         *
+         * @param int $metricIndex
+         */
+        public function setMetricIndex($metricIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMetricIndex()
+        {
+        }
+        /**
+         * The service-generated short identifier for the metric.
+         *
+         * @param string $shortId
+         */
+        public function setShortId($shortId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getShortId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Dataflow\MetricShortId registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetricIndex()
-    {
-    }
-    /**
-     * The service-generated short identifier for the metric.
-     *
-     * @param string $shortId
-     */
-    public function setShortId($shortId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getShortId()
+    class Google_Service_Dataflow_MetricShortId extends \Google\Service\Dataflow\MetricShortId
     {
     }
 }

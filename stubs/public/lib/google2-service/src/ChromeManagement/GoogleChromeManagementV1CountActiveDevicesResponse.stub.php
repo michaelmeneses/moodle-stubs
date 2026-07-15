@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementV1CountActiveDevicesResponse extends \Google\Model
-{
-    /**
-     * Number of active devices in the 7 days leading up to the date specified in
-     * the request.
-     *
-     * @var string
-     */
-    public $sevenDaysCount;
-    /**
-     * Number of active devices in the 30 days leading up to the date specified in
-     * the request.
-     *
-     * @var string
-     */
-    public $thirtyDaysCount;
-    /**
-     * Number of active devices in the 7 days leading up to the date specified in
-     * the request.
-     *
-     * @param string $sevenDaysCount
-     */
-    public function setSevenDaysCount($sevenDaysCount)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementV1CountActiveDevicesResponse extends \Google\Model
     {
+        /**
+         * Number of active devices in the 7 days leading up to the date specified in
+         * the request.
+         *
+         * @var string
+         */
+        public $sevenDaysCount;
+        /**
+         * Number of active devices in the 30 days leading up to the date specified in
+         * the request.
+         *
+         * @var string
+         */
+        public $thirtyDaysCount;
+        /**
+         * Number of active devices in the 7 days leading up to the date specified in
+         * the request.
+         *
+         * @param string $sevenDaysCount
+         */
+        public function setSevenDaysCount($sevenDaysCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSevenDaysCount()
+        {
+        }
+        /**
+         * Number of active devices in the 30 days leading up to the date specified in
+         * the request.
+         *
+         * @param string $thirtyDaysCount
+         */
+        public function setThirtyDaysCount($thirtyDaysCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getThirtyDaysCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementV1CountActiveDevicesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSevenDaysCount()
-    {
-    }
-    /**
-     * Number of active devices in the 30 days leading up to the date specified in
-     * the request.
-     *
-     * @param string $thirtyDaysCount
-     */
-    public function setThirtyDaysCount($thirtyDaysCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getThirtyDaysCount()
+    class Google_Service_ChromeManagement_GoogleChromeManagementV1CountActiveDevicesResponse extends \Google\Service\ChromeManagement\GoogleChromeManagementV1CountActiveDevicesResponse
     {
     }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2InspectContentResponse extends \Google\Model
-{
-    protected $resultType = GooglePrivacyDlpV2InspectResult::class;
-    protected $resultDataType = '';
-    /**
-     * The findings.
-     *
-     * @param GooglePrivacyDlpV2InspectResult $result
-     */
-    public function setResult(GooglePrivacyDlpV2InspectResult $result)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2InspectContentResponse extends \Google\Model
     {
+        protected $resultType = GooglePrivacyDlpV2InspectResult::class;
+        protected $resultDataType = '';
+        /**
+         * The findings.
+         *
+         * @param GooglePrivacyDlpV2InspectResult $result
+         */
+        public function setResult(GooglePrivacyDlpV2InspectResult $result)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2InspectResult
+         */
+        public function getResult()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2InspectResult
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2InspectContentResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResult()
+    class Google_Service_DLP_GooglePrivacyDlpV2InspectContentResponse extends \Google\Service\DLP\GooglePrivacyDlpV2InspectContentResponse
     {
     }
 }

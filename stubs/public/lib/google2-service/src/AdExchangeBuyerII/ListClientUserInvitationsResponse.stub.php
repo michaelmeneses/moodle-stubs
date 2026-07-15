@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyerII;
-
-class ListClientUserInvitationsResponse extends \Google\Collection
-{
-    protected $collection_key = 'invitations';
-    protected $invitationsType = ClientUserInvitation::class;
-    protected $invitationsDataType = 'array';
-    /**
-     * A token to retrieve the next page of results. Pass this value in the
-     * ListClientUserInvitationsRequest.pageToken field in the subsequent call to
-     * the clients.invitations.list method to retrieve the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The returned list of client users.
-     *
-     * @param ClientUserInvitation[] $invitations
-     */
-    public function setInvitations($invitations)
+namespace Google\Service\AdExchangeBuyerII {
+    class ListClientUserInvitationsResponse extends \Google\Collection
     {
+        protected $collection_key = 'invitations';
+        protected $invitationsType = ClientUserInvitation::class;
+        protected $invitationsDataType = 'array';
+        /**
+         * A token to retrieve the next page of results. Pass this value in the
+         * ListClientUserInvitationsRequest.pageToken field in the subsequent call to
+         * the clients.invitations.list method to retrieve the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The returned list of client users.
+         *
+         * @param ClientUserInvitation[] $invitations
+         */
+        public function setInvitations($invitations)
+        {
+        }
+        /**
+         * @return ClientUserInvitation[]
+         */
+        public function getInvitations()
+        {
+        }
+        /**
+         * A token to retrieve the next page of results. Pass this value in the
+         * ListClientUserInvitationsRequest.pageToken field in the subsequent call to
+         * the clients.invitations.list method to retrieve the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ClientUserInvitation[]
+     * Runtime class alias of \Google\Service\AdExchangeBuyerII\ListClientUserInvitationsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInvitations()
-    {
-    }
-    /**
-     * A token to retrieve the next page of results. Pass this value in the
-     * ListClientUserInvitationsRequest.pageToken field in the subsequent call to
-     * the clients.invitations.list method to retrieve the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_AdExchangeBuyerII_ListClientUserInvitationsResponse extends \Google\Service\AdExchangeBuyerII\ListClientUserInvitationsResponse
     {
     }
 }

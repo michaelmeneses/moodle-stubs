@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core;
 
+use Google\Client;
 /**
  * Google API Client integration for Moodle.
  *

@@ -8,6 +8,8 @@
  */
 namespace IMSGlobal\LTI\ToolProvider\MediaType;
 
+use IMSGlobal\LTI\Profile\ServiceDefinition;
+use IMSGlobal\LTI\ToolProvider\ToolProvider;
 /**
  * Class to represent an LTI Tool Proxy media type
  *

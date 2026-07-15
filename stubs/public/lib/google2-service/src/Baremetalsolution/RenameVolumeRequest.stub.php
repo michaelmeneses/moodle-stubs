@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Baremetalsolution;
-
-class RenameVolumeRequest extends \Google\Model
-{
-    /**
-     * Required. The new `id` of the volume.
-     *
-     * @var string
-     */
-    public $newVolumeId;
-    /**
-     * Required. The new `id` of the volume.
-     *
-     * @param string $newVolumeId
-     */
-    public function setNewVolumeId($newVolumeId)
+namespace Google\Service\Baremetalsolution {
+    class RenameVolumeRequest extends \Google\Model
     {
+        /**
+         * Required. The new `id` of the volume.
+         *
+         * @var string
+         */
+        public $newVolumeId;
+        /**
+         * Required. The new `id` of the volume.
+         *
+         * @param string $newVolumeId
+         */
+        public function setNewVolumeId($newVolumeId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNewVolumeId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Baremetalsolution\RenameVolumeRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNewVolumeId()
+    class Google_Service_Baremetalsolution_RenameVolumeRequest extends \Google\Service\Baremetalsolution\RenameVolumeRequest
     {
     }
 }

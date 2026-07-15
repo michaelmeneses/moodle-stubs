@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class HistogramRule extends \Google\Model
-{
+namespace Google\Service\Sheets {
+    class HistogramRule extends \Google\Model
+    {
+        /**
+         * The maximum value at which items are placed into buckets of constant size.
+         * Values above end are lumped into a single bucket. This field is optional.
+         *
+         * @var 
+         */
+        public $end;
+        /**
+         * The size of the buckets that are created. Must be positive.
+         *
+         * @var 
+         */
+        public $interval;
+        /**
+         * The minimum value at which items are placed into buckets of constant size.
+         * Values below start are lumped into a single bucket. This field is optional.
+         *
+         * @var 
+         */
+        public $start;
+        public function setEnd($end)
+        {
+        }
+        public function getEnd()
+        {
+        }
+        public function setInterval($interval)
+        {
+        }
+        public function getInterval()
+        {
+        }
+        public function setStart($start)
+        {
+        }
+        public function getStart()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * The maximum value at which items are placed into buckets of constant size.
-     * Values above end are lumped into a single bucket. This field is optional.
-     *
-     * @var 
+     * Runtime class alias of \Google\Service\Sheets\HistogramRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public $end;
-    /**
-     * The size of the buckets that are created. Must be positive.
-     *
-     * @var 
-     */
-    public $interval;
-    /**
-     * The minimum value at which items are placed into buckets of constant size.
-     * Values below start are lumped into a single bucket. This field is optional.
-     *
-     * @var 
-     */
-    public $start;
-    public function setEnd($end)
-    {
-    }
-    public function getEnd()
-    {
-    }
-    public function setInterval($interval)
-    {
-    }
-    public function getInterval()
-    {
-    }
-    public function setStart($start)
-    {
-    }
-    public function getStart()
+    class Google_Service_Sheets_HistogramRule extends \Google\Service\Sheets\HistogramRule
     {
     }
 }

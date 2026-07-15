@@ -21,60 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Games\Resource;
-
-/**
- * The "accesstokens" collection of methods.
- * Typical usage is:
- *  <code>
- *   $gamesService = new Google\Service\Games(...);
- *   $accesstokens = $gamesService->accesstokens;
- *  </code>
- */
-class Accesstokens extends \Google\Service\Resource
-{
+namespace Google\Service\Games\Resource {
+    use Google\Service\Games\GeneratePlayGroupingApiTokenResponse;
+    use Google\Service\Games\GenerateRecallPlayGroupingApiTokenResponse;
     /**
-     * Generates a Play Grouping API token for the PGS user identified by the
-     * attached credential. (accesstokens.generatePlayGroupingApiToken)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string packageName Required. App package name to generate the
-     * token for (e.g. com.example.mygame).
-     * @opt_param string persona Required. Persona to associate with the token.
-     * Persona is a developer-provided stable identifier of the user. Must be
-     * deterministically generated (e.g. as a one-way hash) from the user account ID
-     * and user profile ID (if the app has the concept), according to the
-     * developer's own user identity system.
-     * @return GeneratePlayGroupingApiTokenResponse
-     * @throws \Google\Service\Exception
+     * The "accesstokens" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $gamesService = new Google\Service\Games(...);
+     *   $accesstokens = $gamesService->accesstokens;
+     *  </code>
      */
-    public function generatePlayGroupingApiToken($optParams = [])
+    class Accesstokens extends \Google\Service\Resource
     {
+        /**
+         * Generates a Play Grouping API token for the PGS user identified by the
+         * attached credential. (accesstokens.generatePlayGroupingApiToken)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string packageName Required. App package name to generate the
+         * token for (e.g. com.example.mygame).
+         * @opt_param string persona Required. Persona to associate with the token.
+         * Persona is a developer-provided stable identifier of the user. Must be
+         * deterministically generated (e.g. as a one-way hash) from the user account ID
+         * and user profile ID (if the app has the concept), according to the
+         * developer's own user identity system.
+         * @return GeneratePlayGroupingApiTokenResponse
+         * @throws \Google\Service\Exception
+         */
+        public function generatePlayGroupingApiToken($optParams = [])
+        {
+        }
+        /**
+         * Generates a Play Grouping API token for the PGS user identified by the Recall
+         * session ID provided in the request.
+         * (accesstokens.generateRecallPlayGroupingApiToken)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string packageName Required. App package name to generate the
+         * token for (e.g. com.example.mygame).
+         * @opt_param string persona Required. Persona to associate with the token.
+         * Persona is a developer-provided stable identifier of the user. Must be
+         * deterministically generated (e.g. as a one-way hash) from the user account ID
+         * and user profile ID (if the app has the concept), according to the
+         * developer's own user identity system.
+         * @opt_param string recallSessionId Required. Opaque server-generated string
+         * that encodes all the necessary information to identify the PGS player /
+         * Google user and application. See
+         * https://developer.android.com/games/pgs/recall/recall-setup on how to
+         * integrate with Recall and get session ID.
+         * @return GenerateRecallPlayGroupingApiTokenResponse
+         * @throws \Google\Service\Exception
+         */
+        public function generateRecallPlayGroupingApiToken($optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Generates a Play Grouping API token for the PGS user identified by the Recall
-     * session ID provided in the request.
-     * (accesstokens.generateRecallPlayGroupingApiToken)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string packageName Required. App package name to generate the
-     * token for (e.g. com.example.mygame).
-     * @opt_param string persona Required. Persona to associate with the token.
-     * Persona is a developer-provided stable identifier of the user. Must be
-     * deterministically generated (e.g. as a one-way hash) from the user account ID
-     * and user profile ID (if the app has the concept), according to the
-     * developer's own user identity system.
-     * @opt_param string recallSessionId Required. Opaque server-generated string
-     * that encodes all the necessary information to identify the PGS player /
-     * Google user and application. See
-     * https://developer.android.com/games/pgs/recall/recall-setup on how to
-     * integrate with Recall and get session ID.
-     * @return GenerateRecallPlayGroupingApiTokenResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Games\Resource\Accesstokens registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function generateRecallPlayGroupingApiToken($optParams = [])
+    class Google_Service_Games_Resource_Accesstokens extends \Google\Service\Games\Resource\Accesstokens
     {
     }
 }

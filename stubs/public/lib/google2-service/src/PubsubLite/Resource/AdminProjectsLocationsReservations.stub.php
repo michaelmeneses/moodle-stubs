@@ -21,97 +21,109 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PubsubLite\Resource;
-
-/**
- * The "reservations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $pubsubliteService = new Google\Service\PubsubLite(...);
- *   $reservations = $pubsubliteService->admin_projects_locations_reservations;
- *  </code>
- */
-class AdminProjectsLocationsReservations extends \Google\Service\Resource
-{
+namespace Google\Service\PubsubLite\Resource {
+    use Google\Service\PubsubLite\ListReservationsResponse;
+    use Google\Service\PubsubLite\PubsubliteEmpty;
+    use Google\Service\PubsubLite\Reservation;
     /**
-     * Creates a new reservation. (reservations.create)
-     *
-     * @param string $parent Required. The parent location in which to create the
-     * reservation. Structured like
-     * `projects/{project_number}/locations/{location}`.
-     * @param Reservation $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string reservationId Required. The ID to use for the reservation,
-     * which will become the final component of the reservation's name. This value
-     * is structured like: `my-reservation-name`.
-     * @return Reservation
-     * @throws \Google\Service\Exception
+     * The "reservations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $pubsubliteService = new Google\Service\PubsubLite(...);
+     *   $reservations = $pubsubliteService->admin_projects_locations_reservations;
+     *  </code>
      */
-    public function create($parent, Reservation $postBody, $optParams = [])
+    class AdminProjectsLocationsReservations extends \Google\Service\Resource
     {
+        /**
+         * Creates a new reservation. (reservations.create)
+         *
+         * @param string $parent Required. The parent location in which to create the
+         * reservation. Structured like
+         * `projects/{project_number}/locations/{location}`.
+         * @param Reservation $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string reservationId Required. The ID to use for the reservation,
+         * which will become the final component of the reservation's name. This value
+         * is structured like: `my-reservation-name`.
+         * @return Reservation
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, Reservation $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes the specified reservation. (reservations.delete)
+         *
+         * @param string $name Required. The name of the reservation to delete.
+         * Structured like:
+         * projects/{project_number}/locations/{location}/reservations/{reservation_id}
+         * @param array $optParams Optional parameters.
+         * @return PubsubliteEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Returns the reservation configuration. (reservations.get)
+         *
+         * @param string $name Required. The name of the reservation whose configuration
+         * to return. Structured like:
+         * projects/{project_number}/locations/{location}/reservations/{reservation_id}
+         * @param array $optParams Optional parameters.
+         * @return Reservation
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Returns the list of reservations for the given project.
+         * (reservations.listAdminProjectsLocationsReservations)
+         *
+         * @param string $parent Required. The parent whose reservations are to be
+         * listed. Structured like `projects/{project_number}/locations/{location}`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The maximum number of reservations to return. The
+         * service may return fewer than this value. If unset or zero, all reservations
+         * for the parent will be returned.
+         * @opt_param string pageToken A page token, received from a previous
+         * `ListReservations` call. Provide this to retrieve the subsequent page. When
+         * paginating, all other parameters provided to `ListReservations` must match
+         * the call that provided the page token.
+         * @return ListReservationsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listAdminProjectsLocationsReservations($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates properties of the specified reservation. (reservations.patch)
+         *
+         * @param string $name The name of the reservation. Structured like:
+         * projects/{project_number}/locations/{location}/reservations/{reservation_id}
+         * @param Reservation $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Required. A mask specifying the reservation
+         * fields to change.
+         * @return Reservation
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, Reservation $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes the specified reservation. (reservations.delete)
-     *
-     * @param string $name Required. The name of the reservation to delete.
-     * Structured like:
-     * projects/{project_number}/locations/{location}/reservations/{reservation_id}
-     * @param array $optParams Optional parameters.
-     * @return PubsubliteEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\PubsubLite\Resource\AdminProjectsLocationsReservations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Returns the reservation configuration. (reservations.get)
-     *
-     * @param string $name Required. The name of the reservation whose configuration
-     * to return. Structured like:
-     * projects/{project_number}/locations/{location}/reservations/{reservation_id}
-     * @param array $optParams Optional parameters.
-     * @return Reservation
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Returns the list of reservations for the given project.
-     * (reservations.listAdminProjectsLocationsReservations)
-     *
-     * @param string $parent Required. The parent whose reservations are to be
-     * listed. Structured like `projects/{project_number}/locations/{location}`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The maximum number of reservations to return. The
-     * service may return fewer than this value. If unset or zero, all reservations
-     * for the parent will be returned.
-     * @opt_param string pageToken A page token, received from a previous
-     * `ListReservations` call. Provide this to retrieve the subsequent page. When
-     * paginating, all other parameters provided to `ListReservations` must match
-     * the call that provided the page token.
-     * @return ListReservationsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listAdminProjectsLocationsReservations($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates properties of the specified reservation. (reservations.patch)
-     *
-     * @param string $name The name of the reservation. Structured like:
-     * projects/{project_number}/locations/{location}/reservations/{reservation_id}
-     * @param Reservation $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Required. A mask specifying the reservation
-     * fields to change.
-     * @return Reservation
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, Reservation $postBody, $optParams = [])
+    class Google_Service_PubsubLite_Resource_AdminProjectsLocationsReservations extends \Google\Service\PubsubLite\Resource\AdminProjectsLocationsReservations
     {
     }
 }

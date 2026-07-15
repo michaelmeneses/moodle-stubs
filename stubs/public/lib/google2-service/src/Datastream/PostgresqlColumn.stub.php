@@ -21,168 +21,177 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class PostgresqlColumn extends \Google\Model
-{
-    /**
-     * Column name.
-     *
-     * @var string
-     */
-    public $column;
-    /**
-     * The PostgreSQL data type.
-     *
-     * @var string
-     */
-    public $dataType;
-    /**
-     * Column length.
-     *
-     * @var int
-     */
-    public $length;
-    /**
-     * Whether or not the column can accept a null value.
-     *
-     * @var bool
-     */
-    public $nullable;
-    /**
-     * The ordinal position of the column in the table.
-     *
-     * @var int
-     */
-    public $ordinalPosition;
-    /**
-     * Column precision.
-     *
-     * @var int
-     */
-    public $precision;
-    /**
-     * Whether or not the column represents a primary key.
-     *
-     * @var bool
-     */
-    public $primaryKey;
-    /**
-     * Column scale.
-     *
-     * @var int
-     */
-    public $scale;
-    /**
-     * Column name.
-     *
-     * @param string $column
-     */
-    public function setColumn($column)
+namespace Google\Service\Datastream {
+    class PostgresqlColumn extends \Google\Model
     {
+        /**
+         * Column name.
+         *
+         * @var string
+         */
+        public $column;
+        /**
+         * The PostgreSQL data type.
+         *
+         * @var string
+         */
+        public $dataType;
+        /**
+         * Column length.
+         *
+         * @var int
+         */
+        public $length;
+        /**
+         * Whether or not the column can accept a null value.
+         *
+         * @var bool
+         */
+        public $nullable;
+        /**
+         * The ordinal position of the column in the table.
+         *
+         * @var int
+         */
+        public $ordinalPosition;
+        /**
+         * Column precision.
+         *
+         * @var int
+         */
+        public $precision;
+        /**
+         * Whether or not the column represents a primary key.
+         *
+         * @var bool
+         */
+        public $primaryKey;
+        /**
+         * Column scale.
+         *
+         * @var int
+         */
+        public $scale;
+        /**
+         * Column name.
+         *
+         * @param string $column
+         */
+        public function setColumn($column)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getColumn()
+        {
+        }
+        /**
+         * The PostgreSQL data type.
+         *
+         * @param string $dataType
+         */
+        public function setDataType($dataType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataType()
+        {
+        }
+        /**
+         * Column length.
+         *
+         * @param int $length
+         */
+        public function setLength($length)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getLength()
+        {
+        }
+        /**
+         * Whether or not the column can accept a null value.
+         *
+         * @param bool $nullable
+         */
+        public function setNullable($nullable)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getNullable()
+        {
+        }
+        /**
+         * The ordinal position of the column in the table.
+         *
+         * @param int $ordinalPosition
+         */
+        public function setOrdinalPosition($ordinalPosition)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getOrdinalPosition()
+        {
+        }
+        /**
+         * Column precision.
+         *
+         * @param int $precision
+         */
+        public function setPrecision($precision)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPrecision()
+        {
+        }
+        /**
+         * Whether or not the column represents a primary key.
+         *
+         * @param bool $primaryKey
+         */
+        public function setPrimaryKey($primaryKey)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPrimaryKey()
+        {
+        }
+        /**
+         * Column scale.
+         *
+         * @param int $scale
+         */
+        public function setScale($scale)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getScale()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Datastream\PostgresqlColumn registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumn()
-    {
-    }
-    /**
-     * The PostgreSQL data type.
-     *
-     * @param string $dataType
-     */
-    public function setDataType($dataType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDataType()
-    {
-    }
-    /**
-     * Column length.
-     *
-     * @param int $length
-     */
-    public function setLength($length)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getLength()
-    {
-    }
-    /**
-     * Whether or not the column can accept a null value.
-     *
-     * @param bool $nullable
-     */
-    public function setNullable($nullable)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getNullable()
-    {
-    }
-    /**
-     * The ordinal position of the column in the table.
-     *
-     * @param int $ordinalPosition
-     */
-    public function setOrdinalPosition($ordinalPosition)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getOrdinalPosition()
-    {
-    }
-    /**
-     * Column precision.
-     *
-     * @param int $precision
-     */
-    public function setPrecision($precision)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPrecision()
-    {
-    }
-    /**
-     * Whether or not the column represents a primary key.
-     *
-     * @param bool $primaryKey
-     */
-    public function setPrimaryKey($primaryKey)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPrimaryKey()
-    {
-    }
-    /**
-     * Column scale.
-     *
-     * @param int $scale
-     */
-    public function setScale($scale)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getScale()
+    class Google_Service_Datastream_PostgresqlColumn extends \Google\Service\Datastream\PostgresqlColumn
     {
     }
 }

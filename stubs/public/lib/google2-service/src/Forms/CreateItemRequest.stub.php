@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Forms;
-
-class CreateItemRequest extends \Google\Model
-{
-    protected $itemType = Item::class;
-    protected $itemDataType = '';
-    protected $locationType = Location::class;
-    protected $locationDataType = '';
-    /**
-     * Required. The item to create.
-     *
-     * @param Item $item
-     */
-    public function setItem(Item $item)
+namespace Google\Service\Forms {
+    class CreateItemRequest extends \Google\Model
     {
+        protected $itemType = Item::class;
+        protected $itemDataType = '';
+        protected $locationType = Location::class;
+        protected $locationDataType = '';
+        /**
+         * Required. The item to create.
+         *
+         * @param Item $item
+         */
+        public function setItem(Item $item)
+        {
+        }
+        /**
+         * @return Item
+         */
+        public function getItem()
+        {
+        }
+        /**
+         * Required. Where to place the new item.
+         *
+         * @param Location $location
+         */
+        public function setLocation(Location $location)
+        {
+        }
+        /**
+         * @return Location
+         */
+        public function getLocation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Item
+     * Runtime class alias of \Google\Service\Forms\CreateItemRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItem()
-    {
-    }
-    /**
-     * Required. Where to place the new item.
-     *
-     * @param Location $location
-     */
-    public function setLocation(Location $location)
-    {
-    }
-    /**
-     * @return Location
-     */
-    public function getLocation()
+    class Google_Service_Forms_CreateItemRequest extends \Google\Service\Forms\CreateItemRequest
     {
     }
 }

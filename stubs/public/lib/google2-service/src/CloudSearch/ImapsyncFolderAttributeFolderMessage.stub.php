@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class ImapsyncFolderAttributeFolderMessage extends \Google\Model
-{
-    protected $flagsType = ImapsyncFolderAttributeFolderMessageFlags::class;
-    protected $flagsDataType = '';
-    /**
-     * @var string
-     */
-    public $uid;
-    /**
-     * @param ImapsyncFolderAttributeFolderMessageFlags
-     */
-    public function setFlags(ImapsyncFolderAttributeFolderMessageFlags $flags)
+namespace Google\Service\CloudSearch {
+    class ImapsyncFolderAttributeFolderMessage extends \Google\Model
     {
+        protected $flagsType = ImapsyncFolderAttributeFolderMessageFlags::class;
+        protected $flagsDataType = '';
+        /**
+         * @var string
+         */
+        public $uid;
+        /**
+         * @param ImapsyncFolderAttributeFolderMessageFlags
+         */
+        public function setFlags(ImapsyncFolderAttributeFolderMessageFlags $flags)
+        {
+        }
+        /**
+         * @return ImapsyncFolderAttributeFolderMessageFlags
+         */
+        public function getFlags()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUid($uid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUid()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ImapsyncFolderAttributeFolderMessageFlags
+     * Runtime class alias of \Google\Service\CloudSearch\ImapsyncFolderAttributeFolderMessage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFlags()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUid($uid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUid()
+    class Google_Service_CloudSearch_ImapsyncFolderAttributeFolderMessage extends \Google\Service\CloudSearch\ImapsyncFolderAttributeFolderMessage
     {
     }
 }

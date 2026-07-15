@@ -21,80 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1CometSpec extends \Google\Model
-{
-    /**
-     * Comet version unspecified.
-     */
-    public const VERSION_COMET_VERSION_UNSPECIFIED = 'COMET_VERSION_UNSPECIFIED';
-    /**
-     * Comet 22 for translation + source + reference (source-reference-combined).
-     */
-    public const VERSION_COMET_22_SRC_REF = 'COMET_22_SRC_REF';
-    /**
-     * Optional. Source language in BCP-47 format.
-     *
-     * @var string
-     */
-    public $sourceLanguage;
-    /**
-     * Optional. Target language in BCP-47 format. Covers both prediction and
-     * reference.
-     *
-     * @var string
-     */
-    public $targetLanguage;
-    /**
-     * Required. Which version to use for evaluation.
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * Optional. Source language in BCP-47 format.
-     *
-     * @param string $sourceLanguage
-     */
-    public function setSourceLanguage($sourceLanguage)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1CometSpec extends \Google\Model
     {
+        /**
+         * Comet version unspecified.
+         */
+        public const VERSION_COMET_VERSION_UNSPECIFIED = 'COMET_VERSION_UNSPECIFIED';
+        /**
+         * Comet 22 for translation + source + reference (source-reference-combined).
+         */
+        public const VERSION_COMET_22_SRC_REF = 'COMET_22_SRC_REF';
+        /**
+         * Optional. Source language in BCP-47 format.
+         *
+         * @var string
+         */
+        public $sourceLanguage;
+        /**
+         * Optional. Target language in BCP-47 format. Covers both prediction and
+         * reference.
+         *
+         * @var string
+         */
+        public $targetLanguage;
+        /**
+         * Required. Which version to use for evaluation.
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * Optional. Source language in BCP-47 format.
+         *
+         * @param string $sourceLanguage
+         */
+        public function setSourceLanguage($sourceLanguage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceLanguage()
+        {
+        }
+        /**
+         * Optional. Target language in BCP-47 format. Covers both prediction and
+         * reference.
+         *
+         * @param string $targetLanguage
+         */
+        public function setTargetLanguage($targetLanguage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetLanguage()
+        {
+        }
+        /**
+         * Required. Which version to use for evaluation.
+         *
+         * Accepted values: COMET_VERSION_UNSPECIFIED, COMET_22_SRC_REF
+         *
+         * @param self::VERSION_* $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return self::VERSION_*
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1CometSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSourceLanguage()
-    {
-    }
-    /**
-     * Optional. Target language in BCP-47 format. Covers both prediction and
-     * reference.
-     *
-     * @param string $targetLanguage
-     */
-    public function setTargetLanguage($targetLanguage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetLanguage()
-    {
-    }
-    /**
-     * Required. Which version to use for evaluation.
-     *
-     * Accepted values: COMET_VERSION_UNSPECIFIED, COMET_22_SRC_REF
-     *
-     * @param self::VERSION_* $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return self::VERSION_*
-     */
-    public function getVersion()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1CometSpec extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1CometSpec
     {
     }
 }

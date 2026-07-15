@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class Action extends \Google\Model
-{
-    /**
-     * [Required] Title of the action.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * [Optional] Url of the action.
-     *
-     * @var string
-     */
-    public $url;
-    /**
-     * [Required] Title of the action.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
+namespace Google\Service\CloudSearch {
+    class Action extends \Google\Model
     {
+        /**
+         * [Required] Title of the action.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * [Optional] Url of the action.
+         *
+         * @var string
+         */
+        public $url;
+        /**
+         * [Required] Title of the action.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * [Optional] Url of the action.
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\Action registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTitle()
-    {
-    }
-    /**
-     * [Optional] Url of the action.
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
+    class Google_Service_CloudSearch_Action extends \Google\Service\CloudSearch\Action
     {
     }
 }

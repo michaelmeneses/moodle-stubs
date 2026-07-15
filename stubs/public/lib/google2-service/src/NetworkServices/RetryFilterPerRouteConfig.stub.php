@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkServices;
-
-class RetryFilterPerRouteConfig extends \Google\Model
-{
-    /**
-     * The name of the crypto key to use for encrypting event data.
-     *
-     * @var string
-     */
-    public $cryptoKeyName;
-    /**
-     * The name of the crypto key to use for encrypting event data.
-     *
-     * @param string $cryptoKeyName
-     */
-    public function setCryptoKeyName($cryptoKeyName)
+namespace Google\Service\NetworkServices {
+    class RetryFilterPerRouteConfig extends \Google\Model
     {
+        /**
+         * The name of the crypto key to use for encrypting event data.
+         *
+         * @var string
+         */
+        public $cryptoKeyName;
+        /**
+         * The name of the crypto key to use for encrypting event data.
+         *
+         * @param string $cryptoKeyName
+         */
+        public function setCryptoKeyName($cryptoKeyName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCryptoKeyName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetworkServices\RetryFilterPerRouteConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCryptoKeyName()
+    class Google_Service_NetworkServices_RetryFilterPerRouteConfig extends \Google\Service\NetworkServices\RetryFilterPerRouteConfig
     {
     }
 }

@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class Review extends \Google\Collection
-{
-    protected $collection_key = 'comments';
-    /**
-     * The name of the user who wrote the review.
-     *
-     * @var string
-     */
-    public $authorName;
-    protected $commentsType = Comment::class;
-    protected $commentsDataType = 'array';
-    /**
-     * Unique identifier for this review.
-     *
-     * @var string
-     */
-    public $reviewId;
-    /**
-     * The name of the user who wrote the review.
-     *
-     * @param string $authorName
-     */
-    public function setAuthorName($authorName)
+namespace Google\Service\AndroidPublisher {
+    class Review extends \Google\Collection
     {
+        protected $collection_key = 'comments';
+        /**
+         * The name of the user who wrote the review.
+         *
+         * @var string
+         */
+        public $authorName;
+        protected $commentsType = Comment::class;
+        protected $commentsDataType = 'array';
+        /**
+         * Unique identifier for this review.
+         *
+         * @var string
+         */
+        public $reviewId;
+        /**
+         * The name of the user who wrote the review.
+         *
+         * @param string $authorName
+         */
+        public function setAuthorName($authorName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAuthorName()
+        {
+        }
+        /**
+         * A repeated field containing comments for the review.
+         *
+         * @param Comment[] $comments
+         */
+        public function setComments($comments)
+        {
+        }
+        /**
+         * @return Comment[]
+         */
+        public function getComments()
+        {
+        }
+        /**
+         * Unique identifier for this review.
+         *
+         * @param string $reviewId
+         */
+        public function setReviewId($reviewId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReviewId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidPublisher\Review registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuthorName()
-    {
-    }
-    /**
-     * A repeated field containing comments for the review.
-     *
-     * @param Comment[] $comments
-     */
-    public function setComments($comments)
-    {
-    }
-    /**
-     * @return Comment[]
-     */
-    public function getComments()
-    {
-    }
-    /**
-     * Unique identifier for this review.
-     *
-     * @param string $reviewId
-     */
-    public function setReviewId($reviewId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReviewId()
+    class Google_Service_AndroidPublisher_Review extends \Google\Service\AndroidPublisher\Review
     {
     }
 }

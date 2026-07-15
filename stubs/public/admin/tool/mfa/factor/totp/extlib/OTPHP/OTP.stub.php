@@ -8,6 +8,15 @@
  */
 namespace OTPHP;
 
+use Exception;
+use InvalidArgumentException;
+use ParagonIE\ConstantTime\Base32;
+use RuntimeException;
+use function assert;
+use function chr;
+use function count;
+use function is_string;
+use const STR_PAD_LEFT;
 abstract class OTP implements OTPInterface
 {
     use ParameterTrait;

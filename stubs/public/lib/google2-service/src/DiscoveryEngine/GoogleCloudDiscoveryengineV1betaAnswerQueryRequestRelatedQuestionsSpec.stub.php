@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaAnswerQueryRequestRelatedQuestionsSpec extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $enable;
-    /**
-     * @param bool
-     */
-    public function setEnable($enable)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaAnswerQueryRequestRelatedQuestionsSpec extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $enable;
+        /**
+         * @param bool
+         */
+        public function setEnable($enable)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaAnswerQueryRequestRelatedQuestionsSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnable()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaAnswerQueryRequestRelatedQuestionsSpec extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaAnswerQueryRequestRelatedQuestionsSpec
     {
     }
 }

@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaGroundingFact extends \Google\Model
-{
-    /**
-     * @var string[]
-     */
-    public $attributes;
-    /**
-     * @var string
-     */
-    public $factText;
-    /**
-     * @param string[]
-     */
-    public function setAttributes($attributes)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaGroundingFact extends \Google\Model
     {
+        /**
+         * @var string[]
+         */
+        public $attributes;
+        /**
+         * @var string
+         */
+        public $factText;
+        /**
+         * @param string[]
+         */
+        public function setAttributes($attributes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAttributes()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setFactText($factText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFactText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaGroundingFact registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttributes()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setFactText($factText)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFactText()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaGroundingFact extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaGroundingFact
     {
     }
 }

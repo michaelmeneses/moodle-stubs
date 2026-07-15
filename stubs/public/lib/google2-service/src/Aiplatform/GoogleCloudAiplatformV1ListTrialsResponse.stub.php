@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ListTrialsResponse extends \Google\Collection
-{
-    protected $collection_key = 'trials';
-    /**
-     * Pass this token as the `page_token` field of the request for a subsequent
-     * call. If this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $trialsType = GoogleCloudAiplatformV1Trial::class;
-    protected $trialsDataType = 'array';
-    /**
-     * Pass this token as the `page_token` field of the request for a subsequent
-     * call. If this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ListTrialsResponse extends \Google\Collection
     {
+        protected $collection_key = 'trials';
+        /**
+         * Pass this token as the `page_token` field of the request for a subsequent
+         * call. If this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $trialsType = GoogleCloudAiplatformV1Trial::class;
+        protected $trialsDataType = 'array';
+        /**
+         * Pass this token as the `page_token` field of the request for a subsequent
+         * call. If this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The Trials associated with the Study.
+         *
+         * @param GoogleCloudAiplatformV1Trial[] $trials
+         */
+        public function setTrials($trials)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1Trial[]
+         */
+        public function getTrials()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListTrialsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The Trials associated with the Study.
-     *
-     * @param GoogleCloudAiplatformV1Trial[] $trials
-     */
-    public function setTrials($trials)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1Trial[]
-     */
-    public function getTrials()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ListTrialsResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListTrialsResponse
     {
     }
 }

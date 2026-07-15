@@ -21,540 +21,549 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1EvaluateInstancesResponse extends \Google\Collection
-{
-    protected $collection_key = 'metricResults';
-    protected $bleuResultsType = GoogleCloudAiplatformV1BleuResults::class;
-    protected $bleuResultsDataType = '';
-    protected $coherenceResultType = GoogleCloudAiplatformV1CoherenceResult::class;
-    protected $coherenceResultDataType = '';
-    protected $cometResultType = GoogleCloudAiplatformV1CometResult::class;
-    protected $cometResultDataType = '';
-    protected $exactMatchResultsType = GoogleCloudAiplatformV1ExactMatchResults::class;
-    protected $exactMatchResultsDataType = '';
-    protected $fluencyResultType = GoogleCloudAiplatformV1FluencyResult::class;
-    protected $fluencyResultDataType = '';
-    protected $fulfillmentResultType = GoogleCloudAiplatformV1FulfillmentResult::class;
-    protected $fulfillmentResultDataType = '';
-    protected $groundednessResultType = GoogleCloudAiplatformV1GroundednessResult::class;
-    protected $groundednessResultDataType = '';
-    protected $metricResultsType = GoogleCloudAiplatformV1MetricResult::class;
-    protected $metricResultsDataType = 'array';
-    protected $metricxResultType = GoogleCloudAiplatformV1MetricxResult::class;
-    protected $metricxResultDataType = '';
-    protected $pairwiseMetricResultType = GoogleCloudAiplatformV1PairwiseMetricResult::class;
-    protected $pairwiseMetricResultDataType = '';
-    protected $pairwiseQuestionAnsweringQualityResultType = GoogleCloudAiplatformV1PairwiseQuestionAnsweringQualityResult::class;
-    protected $pairwiseQuestionAnsweringQualityResultDataType = '';
-    protected $pairwiseSummarizationQualityResultType = GoogleCloudAiplatformV1PairwiseSummarizationQualityResult::class;
-    protected $pairwiseSummarizationQualityResultDataType = '';
-    protected $pointwiseMetricResultType = GoogleCloudAiplatformV1PointwiseMetricResult::class;
-    protected $pointwiseMetricResultDataType = '';
-    protected $questionAnsweringCorrectnessResultType = GoogleCloudAiplatformV1QuestionAnsweringCorrectnessResult::class;
-    protected $questionAnsweringCorrectnessResultDataType = '';
-    protected $questionAnsweringHelpfulnessResultType = GoogleCloudAiplatformV1QuestionAnsweringHelpfulnessResult::class;
-    protected $questionAnsweringHelpfulnessResultDataType = '';
-    protected $questionAnsweringQualityResultType = GoogleCloudAiplatformV1QuestionAnsweringQualityResult::class;
-    protected $questionAnsweringQualityResultDataType = '';
-    protected $questionAnsweringRelevanceResultType = GoogleCloudAiplatformV1QuestionAnsweringRelevanceResult::class;
-    protected $questionAnsweringRelevanceResultDataType = '';
-    protected $rougeResultsType = GoogleCloudAiplatformV1RougeResults::class;
-    protected $rougeResultsDataType = '';
-    protected $rubricBasedInstructionFollowingResultType = GoogleCloudAiplatformV1RubricBasedInstructionFollowingResult::class;
-    protected $rubricBasedInstructionFollowingResultDataType = '';
-    protected $safetyResultType = GoogleCloudAiplatformV1SafetyResult::class;
-    protected $safetyResultDataType = '';
-    protected $summarizationHelpfulnessResultType = GoogleCloudAiplatformV1SummarizationHelpfulnessResult::class;
-    protected $summarizationHelpfulnessResultDataType = '';
-    protected $summarizationQualityResultType = GoogleCloudAiplatformV1SummarizationQualityResult::class;
-    protected $summarizationQualityResultDataType = '';
-    protected $summarizationVerbosityResultType = GoogleCloudAiplatformV1SummarizationVerbosityResult::class;
-    protected $summarizationVerbosityResultDataType = '';
-    protected $toolCallValidResultsType = GoogleCloudAiplatformV1ToolCallValidResults::class;
-    protected $toolCallValidResultsDataType = '';
-    protected $toolNameMatchResultsType = GoogleCloudAiplatformV1ToolNameMatchResults::class;
-    protected $toolNameMatchResultsDataType = '';
-    protected $toolParameterKeyMatchResultsType = GoogleCloudAiplatformV1ToolParameterKeyMatchResults::class;
-    protected $toolParameterKeyMatchResultsDataType = '';
-    protected $toolParameterKvMatchResultsType = GoogleCloudAiplatformV1ToolParameterKVMatchResults::class;
-    protected $toolParameterKvMatchResultsDataType = '';
-    protected $trajectoryAnyOrderMatchResultsType = GoogleCloudAiplatformV1TrajectoryAnyOrderMatchResults::class;
-    protected $trajectoryAnyOrderMatchResultsDataType = '';
-    protected $trajectoryExactMatchResultsType = GoogleCloudAiplatformV1TrajectoryExactMatchResults::class;
-    protected $trajectoryExactMatchResultsDataType = '';
-    protected $trajectoryInOrderMatchResultsType = GoogleCloudAiplatformV1TrajectoryInOrderMatchResults::class;
-    protected $trajectoryInOrderMatchResultsDataType = '';
-    protected $trajectoryPrecisionResultsType = GoogleCloudAiplatformV1TrajectoryPrecisionResults::class;
-    protected $trajectoryPrecisionResultsDataType = '';
-    protected $trajectoryRecallResultsType = GoogleCloudAiplatformV1TrajectoryRecallResults::class;
-    protected $trajectoryRecallResultsDataType = '';
-    protected $trajectorySingleToolUseResultsType = GoogleCloudAiplatformV1TrajectorySingleToolUseResults::class;
-    protected $trajectorySingleToolUseResultsDataType = '';
-    /**
-     * Results for bleu metric.
-     *
-     * @param GoogleCloudAiplatformV1BleuResults $bleuResults
-     */
-    public function setBleuResults(GoogleCloudAiplatformV1BleuResults $bleuResults)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1BleuResults
-     */
-    public function getBleuResults()
-    {
-    }
-    /**
-     * Result for coherence metric.
-     *
-     * @param GoogleCloudAiplatformV1CoherenceResult $coherenceResult
-     */
-    public function setCoherenceResult(GoogleCloudAiplatformV1CoherenceResult $coherenceResult)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1CoherenceResult
-     */
-    public function getCoherenceResult()
-    {
-    }
-    /**
-     * Translation metrics. Result for Comet metric.
-     *
-     * @param GoogleCloudAiplatformV1CometResult $cometResult
-     */
-    public function setCometResult(GoogleCloudAiplatformV1CometResult $cometResult)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1CometResult
-     */
-    public function getCometResult()
-    {
-    }
-    /**
-     * Auto metric evaluation results. Results for exact match metric.
-     *
-     * @param GoogleCloudAiplatformV1ExactMatchResults $exactMatchResults
-     */
-    public function setExactMatchResults(GoogleCloudAiplatformV1ExactMatchResults $exactMatchResults)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1ExactMatchResults
-     */
-    public function getExactMatchResults()
-    {
-    }
-    /**
-     * LLM-based metric evaluation result. General text generation metrics,
-     * applicable to other categories. Result for fluency metric.
-     *
-     * @param GoogleCloudAiplatformV1FluencyResult $fluencyResult
-     */
-    public function setFluencyResult(GoogleCloudAiplatformV1FluencyResult $fluencyResult)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1FluencyResult
-     */
-    public function getFluencyResult()
-    {
-    }
-    /**
-     * Result for fulfillment metric.
-     *
-     * @param GoogleCloudAiplatformV1FulfillmentResult $fulfillmentResult
-     */
-    public function setFulfillmentResult(GoogleCloudAiplatformV1FulfillmentResult $fulfillmentResult)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1FulfillmentResult
-     */
-    public function getFulfillmentResult()
-    {
-    }
-    /**
-     * Result for groundedness metric.
-     *
-     * @param GoogleCloudAiplatformV1GroundednessResult $groundednessResult
-     */
-    public function setGroundednessResult(GoogleCloudAiplatformV1GroundednessResult $groundednessResult)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1GroundednessResult
-     */
-    public function getGroundednessResult()
-    {
-    }
-    /**
-     * Metric results for each instance. The order of the metric results is
-     * guaranteed to be the same as the order of the instances in the request.
-     *
-     * @param GoogleCloudAiplatformV1MetricResult[] $metricResults
-     */
-    public function setMetricResults($metricResults)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1MetricResult[]
-     */
-    public function getMetricResults()
-    {
-    }
-    /**
-     * Result for Metricx metric.
-     *
-     * @param GoogleCloudAiplatformV1MetricxResult $metricxResult
-     */
-    public function setMetricxResult(GoogleCloudAiplatformV1MetricxResult $metricxResult)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1MetricxResult
-     */
-    public function getMetricxResult()
-    {
-    }
-    /**
-     * Result for pairwise metric.
-     *
-     * @param GoogleCloudAiplatformV1PairwiseMetricResult $pairwiseMetricResult
-     */
-    public function setPairwiseMetricResult(GoogleCloudAiplatformV1PairwiseMetricResult $pairwiseMetricResult)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1PairwiseMetricResult
-     */
-    public function getPairwiseMetricResult()
-    {
-    }
-    /**
-     * Result for pairwise question answering quality metric.
-     *
-     * @param GoogleCloudAiplatformV1PairwiseQuestionAnsweringQualityResult $pairwiseQuestionAnsweringQualityResult
-     */
-    public function setPairwiseQuestionAnsweringQualityResult(GoogleCloudAiplatformV1PairwiseQuestionAnsweringQualityResult $pairwiseQuestionAnsweringQualityResult)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1PairwiseQuestionAnsweringQualityResult
-     */
-    public function getPairwiseQuestionAnsweringQualityResult()
-    {
-    }
-    /**
-     * Result for pairwise summarization quality metric.
-     *
-     * @param GoogleCloudAiplatformV1PairwiseSummarizationQualityResult $pairwiseSummarizationQualityResult
-     */
-    public function setPairwiseSummarizationQualityResult(GoogleCloudAiplatformV1PairwiseSummarizationQualityResult $pairwiseSummarizationQualityResult)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1PairwiseSummarizationQualityResult
-     */
-    public function getPairwiseSummarizationQualityResult()
-    {
-    }
-    /**
-     * Generic metrics. Result for pointwise metric.
-     *
-     * @param GoogleCloudAiplatformV1PointwiseMetricResult $pointwiseMetricResult
-     */
-    public function setPointwiseMetricResult(GoogleCloudAiplatformV1PointwiseMetricResult $pointwiseMetricResult)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1PointwiseMetricResult
-     */
-    public function getPointwiseMetricResult()
-    {
-    }
-    /**
-     * Result for question answering correctness metric.
-     *
-     * @param GoogleCloudAiplatformV1QuestionAnsweringCorrectnessResult $questionAnsweringCorrectnessResult
-     */
-    public function setQuestionAnsweringCorrectnessResult(GoogleCloudAiplatformV1QuestionAnsweringCorrectnessResult $questionAnsweringCorrectnessResult)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1QuestionAnsweringCorrectnessResult
-     */
-    public function getQuestionAnsweringCorrectnessResult()
-    {
-    }
-    /**
-     * Result for question answering helpfulness metric.
-     *
-     * @param GoogleCloudAiplatformV1QuestionAnsweringHelpfulnessResult $questionAnsweringHelpfulnessResult
-     */
-    public function setQuestionAnsweringHelpfulnessResult(GoogleCloudAiplatformV1QuestionAnsweringHelpfulnessResult $questionAnsweringHelpfulnessResult)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1QuestionAnsweringHelpfulnessResult
-     */
-    public function getQuestionAnsweringHelpfulnessResult()
-    {
-    }
-    /**
-     * Question answering only metrics. Result for question answering quality
-     * metric.
-     *
-     * @param GoogleCloudAiplatformV1QuestionAnsweringQualityResult $questionAnsweringQualityResult
-     */
-    public function setQuestionAnsweringQualityResult(GoogleCloudAiplatformV1QuestionAnsweringQualityResult $questionAnsweringQualityResult)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1QuestionAnsweringQualityResult
-     */
-    public function getQuestionAnsweringQualityResult()
-    {
-    }
-    /**
-     * Result for question answering relevance metric.
-     *
-     * @param GoogleCloudAiplatformV1QuestionAnsweringRelevanceResult $questionAnsweringRelevanceResult
-     */
-    public function setQuestionAnsweringRelevanceResult(GoogleCloudAiplatformV1QuestionAnsweringRelevanceResult $questionAnsweringRelevanceResult)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1QuestionAnsweringRelevanceResult
-     */
-    public function getQuestionAnsweringRelevanceResult()
-    {
-    }
-    /**
-     * Results for rouge metric.
-     *
-     * @param GoogleCloudAiplatformV1RougeResults $rougeResults
-     */
-    public function setRougeResults(GoogleCloudAiplatformV1RougeResults $rougeResults)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1RougeResults
-     */
-    public function getRougeResults()
-    {
-    }
-    /**
-     * Result for rubric based instruction following metric.
-     *
-     * @param GoogleCloudAiplatformV1RubricBasedInstructionFollowingResult $rubricBasedInstructionFollowingResult
-     */
-    public function setRubricBasedInstructionFollowingResult(GoogleCloudAiplatformV1RubricBasedInstructionFollowingResult $rubricBasedInstructionFollowingResult)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1RubricBasedInstructionFollowingResult
-     */
-    public function getRubricBasedInstructionFollowingResult()
-    {
-    }
-    /**
-     * Result for safety metric.
-     *
-     * @param GoogleCloudAiplatformV1SafetyResult $safetyResult
-     */
-    public function setSafetyResult(GoogleCloudAiplatformV1SafetyResult $safetyResult)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1SafetyResult
-     */
-    public function getSafetyResult()
-    {
-    }
-    /**
-     * Result for summarization helpfulness metric.
-     *
-     * @param GoogleCloudAiplatformV1SummarizationHelpfulnessResult $summarizationHelpfulnessResult
-     */
-    public function setSummarizationHelpfulnessResult(GoogleCloudAiplatformV1SummarizationHelpfulnessResult $summarizationHelpfulnessResult)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1SummarizationHelpfulnessResult
-     */
-    public function getSummarizationHelpfulnessResult()
-    {
-    }
-    /**
-     * Summarization only metrics. Result for summarization quality metric.
-     *
-     * @param GoogleCloudAiplatformV1SummarizationQualityResult $summarizationQualityResult
-     */
-    public function setSummarizationQualityResult(GoogleCloudAiplatformV1SummarizationQualityResult $summarizationQualityResult)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1SummarizationQualityResult
-     */
-    public function getSummarizationQualityResult()
-    {
-    }
-    /**
-     * Result for summarization verbosity metric.
-     *
-     * @param GoogleCloudAiplatformV1SummarizationVerbosityResult $summarizationVerbosityResult
-     */
-    public function setSummarizationVerbosityResult(GoogleCloudAiplatformV1SummarizationVerbosityResult $summarizationVerbosityResult)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1SummarizationVerbosityResult
-     */
-    public function getSummarizationVerbosityResult()
-    {
-    }
-    /**
-     * Tool call metrics. Results for tool call valid metric.
-     *
-     * @param GoogleCloudAiplatformV1ToolCallValidResults $toolCallValidResults
-     */
-    public function setToolCallValidResults(GoogleCloudAiplatformV1ToolCallValidResults $toolCallValidResults)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1ToolCallValidResults
-     */
-    public function getToolCallValidResults()
-    {
-    }
-    /**
-     * Results for tool name match metric.
-     *
-     * @param GoogleCloudAiplatformV1ToolNameMatchResults $toolNameMatchResults
-     */
-    public function setToolNameMatchResults(GoogleCloudAiplatformV1ToolNameMatchResults $toolNameMatchResults)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1ToolNameMatchResults
-     */
-    public function getToolNameMatchResults()
-    {
-    }
-    /**
-     * Results for tool parameter key match metric.
-     *
-     * @param GoogleCloudAiplatformV1ToolParameterKeyMatchResults $toolParameterKeyMatchResults
-     */
-    public function setToolParameterKeyMatchResults(GoogleCloudAiplatformV1ToolParameterKeyMatchResults $toolParameterKeyMatchResults)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1ToolParameterKeyMatchResults
-     */
-    public function getToolParameterKeyMatchResults()
-    {
-    }
-    /**
-     * Results for tool parameter key value match metric.
-     *
-     * @param GoogleCloudAiplatformV1ToolParameterKVMatchResults $toolParameterKvMatchResults
-     */
-    public function setToolParameterKvMatchResults(GoogleCloudAiplatformV1ToolParameterKVMatchResults $toolParameterKvMatchResults)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1ToolParameterKVMatchResults
-     */
-    public function getToolParameterKvMatchResults()
-    {
-    }
-    /**
-     * Result for trajectory any order match metric.
-     *
-     * @param GoogleCloudAiplatformV1TrajectoryAnyOrderMatchResults $trajectoryAnyOrderMatchResults
-     */
-    public function setTrajectoryAnyOrderMatchResults(GoogleCloudAiplatformV1TrajectoryAnyOrderMatchResults $trajectoryAnyOrderMatchResults)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1TrajectoryAnyOrderMatchResults
-     */
-    public function getTrajectoryAnyOrderMatchResults()
-    {
-    }
-    /**
-     * Result for trajectory exact match metric.
-     *
-     * @param GoogleCloudAiplatformV1TrajectoryExactMatchResults $trajectoryExactMatchResults
-     */
-    public function setTrajectoryExactMatchResults(GoogleCloudAiplatformV1TrajectoryExactMatchResults $trajectoryExactMatchResults)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1TrajectoryExactMatchResults
-     */
-    public function getTrajectoryExactMatchResults()
-    {
-    }
-    /**
-     * Result for trajectory in order match metric.
-     *
-     * @param GoogleCloudAiplatformV1TrajectoryInOrderMatchResults $trajectoryInOrderMatchResults
-     */
-    public function setTrajectoryInOrderMatchResults(GoogleCloudAiplatformV1TrajectoryInOrderMatchResults $trajectoryInOrderMatchResults)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1TrajectoryInOrderMatchResults
-     */
-    public function getTrajectoryInOrderMatchResults()
-    {
-    }
-    /**
-     * Result for trajectory precision metric.
-     *
-     * @param GoogleCloudAiplatformV1TrajectoryPrecisionResults $trajectoryPrecisionResults
-     */
-    public function setTrajectoryPrecisionResults(GoogleCloudAiplatformV1TrajectoryPrecisionResults $trajectoryPrecisionResults)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1TrajectoryPrecisionResults
-     */
-    public function getTrajectoryPrecisionResults()
-    {
-    }
-    /**
-     * Results for trajectory recall metric.
-     *
-     * @param GoogleCloudAiplatformV1TrajectoryRecallResults $trajectoryRecallResults
-     */
-    public function setTrajectoryRecallResults(GoogleCloudAiplatformV1TrajectoryRecallResults $trajectoryRecallResults)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1TrajectoryRecallResults
-     */
-    public function getTrajectoryRecallResults()
-    {
-    }
-    /**
-     * Results for trajectory single tool use metric.
-     *
-     * @param GoogleCloudAiplatformV1TrajectorySingleToolUseResults $trajectorySingleToolUseResults
-     */
-    public function setTrajectorySingleToolUseResults(GoogleCloudAiplatformV1TrajectorySingleToolUseResults $trajectorySingleToolUseResults)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1TrajectorySingleToolUseResults
-     */
-    public function getTrajectorySingleToolUseResults()
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1EvaluateInstancesResponse extends \Google\Collection
+    {
+        protected $collection_key = 'metricResults';
+        protected $bleuResultsType = GoogleCloudAiplatformV1BleuResults::class;
+        protected $bleuResultsDataType = '';
+        protected $coherenceResultType = GoogleCloudAiplatformV1CoherenceResult::class;
+        protected $coherenceResultDataType = '';
+        protected $cometResultType = GoogleCloudAiplatformV1CometResult::class;
+        protected $cometResultDataType = '';
+        protected $exactMatchResultsType = GoogleCloudAiplatformV1ExactMatchResults::class;
+        protected $exactMatchResultsDataType = '';
+        protected $fluencyResultType = GoogleCloudAiplatformV1FluencyResult::class;
+        protected $fluencyResultDataType = '';
+        protected $fulfillmentResultType = GoogleCloudAiplatformV1FulfillmentResult::class;
+        protected $fulfillmentResultDataType = '';
+        protected $groundednessResultType = GoogleCloudAiplatformV1GroundednessResult::class;
+        protected $groundednessResultDataType = '';
+        protected $metricResultsType = GoogleCloudAiplatformV1MetricResult::class;
+        protected $metricResultsDataType = 'array';
+        protected $metricxResultType = GoogleCloudAiplatformV1MetricxResult::class;
+        protected $metricxResultDataType = '';
+        protected $pairwiseMetricResultType = GoogleCloudAiplatformV1PairwiseMetricResult::class;
+        protected $pairwiseMetricResultDataType = '';
+        protected $pairwiseQuestionAnsweringQualityResultType = GoogleCloudAiplatformV1PairwiseQuestionAnsweringQualityResult::class;
+        protected $pairwiseQuestionAnsweringQualityResultDataType = '';
+        protected $pairwiseSummarizationQualityResultType = GoogleCloudAiplatformV1PairwiseSummarizationQualityResult::class;
+        protected $pairwiseSummarizationQualityResultDataType = '';
+        protected $pointwiseMetricResultType = GoogleCloudAiplatformV1PointwiseMetricResult::class;
+        protected $pointwiseMetricResultDataType = '';
+        protected $questionAnsweringCorrectnessResultType = GoogleCloudAiplatformV1QuestionAnsweringCorrectnessResult::class;
+        protected $questionAnsweringCorrectnessResultDataType = '';
+        protected $questionAnsweringHelpfulnessResultType = GoogleCloudAiplatformV1QuestionAnsweringHelpfulnessResult::class;
+        protected $questionAnsweringHelpfulnessResultDataType = '';
+        protected $questionAnsweringQualityResultType = GoogleCloudAiplatformV1QuestionAnsweringQualityResult::class;
+        protected $questionAnsweringQualityResultDataType = '';
+        protected $questionAnsweringRelevanceResultType = GoogleCloudAiplatformV1QuestionAnsweringRelevanceResult::class;
+        protected $questionAnsweringRelevanceResultDataType = '';
+        protected $rougeResultsType = GoogleCloudAiplatformV1RougeResults::class;
+        protected $rougeResultsDataType = '';
+        protected $rubricBasedInstructionFollowingResultType = GoogleCloudAiplatformV1RubricBasedInstructionFollowingResult::class;
+        protected $rubricBasedInstructionFollowingResultDataType = '';
+        protected $safetyResultType = GoogleCloudAiplatformV1SafetyResult::class;
+        protected $safetyResultDataType = '';
+        protected $summarizationHelpfulnessResultType = GoogleCloudAiplatformV1SummarizationHelpfulnessResult::class;
+        protected $summarizationHelpfulnessResultDataType = '';
+        protected $summarizationQualityResultType = GoogleCloudAiplatformV1SummarizationQualityResult::class;
+        protected $summarizationQualityResultDataType = '';
+        protected $summarizationVerbosityResultType = GoogleCloudAiplatformV1SummarizationVerbosityResult::class;
+        protected $summarizationVerbosityResultDataType = '';
+        protected $toolCallValidResultsType = GoogleCloudAiplatformV1ToolCallValidResults::class;
+        protected $toolCallValidResultsDataType = '';
+        protected $toolNameMatchResultsType = GoogleCloudAiplatformV1ToolNameMatchResults::class;
+        protected $toolNameMatchResultsDataType = '';
+        protected $toolParameterKeyMatchResultsType = GoogleCloudAiplatformV1ToolParameterKeyMatchResults::class;
+        protected $toolParameterKeyMatchResultsDataType = '';
+        protected $toolParameterKvMatchResultsType = GoogleCloudAiplatformV1ToolParameterKVMatchResults::class;
+        protected $toolParameterKvMatchResultsDataType = '';
+        protected $trajectoryAnyOrderMatchResultsType = GoogleCloudAiplatformV1TrajectoryAnyOrderMatchResults::class;
+        protected $trajectoryAnyOrderMatchResultsDataType = '';
+        protected $trajectoryExactMatchResultsType = GoogleCloudAiplatformV1TrajectoryExactMatchResults::class;
+        protected $trajectoryExactMatchResultsDataType = '';
+        protected $trajectoryInOrderMatchResultsType = GoogleCloudAiplatformV1TrajectoryInOrderMatchResults::class;
+        protected $trajectoryInOrderMatchResultsDataType = '';
+        protected $trajectoryPrecisionResultsType = GoogleCloudAiplatformV1TrajectoryPrecisionResults::class;
+        protected $trajectoryPrecisionResultsDataType = '';
+        protected $trajectoryRecallResultsType = GoogleCloudAiplatformV1TrajectoryRecallResults::class;
+        protected $trajectoryRecallResultsDataType = '';
+        protected $trajectorySingleToolUseResultsType = GoogleCloudAiplatformV1TrajectorySingleToolUseResults::class;
+        protected $trajectorySingleToolUseResultsDataType = '';
+        /**
+         * Results for bleu metric.
+         *
+         * @param GoogleCloudAiplatformV1BleuResults $bleuResults
+         */
+        public function setBleuResults(GoogleCloudAiplatformV1BleuResults $bleuResults)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1BleuResults
+         */
+        public function getBleuResults()
+        {
+        }
+        /**
+         * Result for coherence metric.
+         *
+         * @param GoogleCloudAiplatformV1CoherenceResult $coherenceResult
+         */
+        public function setCoherenceResult(GoogleCloudAiplatformV1CoherenceResult $coherenceResult)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1CoherenceResult
+         */
+        public function getCoherenceResult()
+        {
+        }
+        /**
+         * Translation metrics. Result for Comet metric.
+         *
+         * @param GoogleCloudAiplatformV1CometResult $cometResult
+         */
+        public function setCometResult(GoogleCloudAiplatformV1CometResult $cometResult)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1CometResult
+         */
+        public function getCometResult()
+        {
+        }
+        /**
+         * Auto metric evaluation results. Results for exact match metric.
+         *
+         * @param GoogleCloudAiplatformV1ExactMatchResults $exactMatchResults
+         */
+        public function setExactMatchResults(GoogleCloudAiplatformV1ExactMatchResults $exactMatchResults)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ExactMatchResults
+         */
+        public function getExactMatchResults()
+        {
+        }
+        /**
+         * LLM-based metric evaluation result. General text generation metrics,
+         * applicable to other categories. Result for fluency metric.
+         *
+         * @param GoogleCloudAiplatformV1FluencyResult $fluencyResult
+         */
+        public function setFluencyResult(GoogleCloudAiplatformV1FluencyResult $fluencyResult)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1FluencyResult
+         */
+        public function getFluencyResult()
+        {
+        }
+        /**
+         * Result for fulfillment metric.
+         *
+         * @param GoogleCloudAiplatformV1FulfillmentResult $fulfillmentResult
+         */
+        public function setFulfillmentResult(GoogleCloudAiplatformV1FulfillmentResult $fulfillmentResult)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1FulfillmentResult
+         */
+        public function getFulfillmentResult()
+        {
+        }
+        /**
+         * Result for groundedness metric.
+         *
+         * @param GoogleCloudAiplatformV1GroundednessResult $groundednessResult
+         */
+        public function setGroundednessResult(GoogleCloudAiplatformV1GroundednessResult $groundednessResult)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1GroundednessResult
+         */
+        public function getGroundednessResult()
+        {
+        }
+        /**
+         * Metric results for each instance. The order of the metric results is
+         * guaranteed to be the same as the order of the instances in the request.
+         *
+         * @param GoogleCloudAiplatformV1MetricResult[] $metricResults
+         */
+        public function setMetricResults($metricResults)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1MetricResult[]
+         */
+        public function getMetricResults()
+        {
+        }
+        /**
+         * Result for Metricx metric.
+         *
+         * @param GoogleCloudAiplatformV1MetricxResult $metricxResult
+         */
+        public function setMetricxResult(GoogleCloudAiplatformV1MetricxResult $metricxResult)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1MetricxResult
+         */
+        public function getMetricxResult()
+        {
+        }
+        /**
+         * Result for pairwise metric.
+         *
+         * @param GoogleCloudAiplatformV1PairwiseMetricResult $pairwiseMetricResult
+         */
+        public function setPairwiseMetricResult(GoogleCloudAiplatformV1PairwiseMetricResult $pairwiseMetricResult)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1PairwiseMetricResult
+         */
+        public function getPairwiseMetricResult()
+        {
+        }
+        /**
+         * Result for pairwise question answering quality metric.
+         *
+         * @param GoogleCloudAiplatformV1PairwiseQuestionAnsweringQualityResult $pairwiseQuestionAnsweringQualityResult
+         */
+        public function setPairwiseQuestionAnsweringQualityResult(GoogleCloudAiplatformV1PairwiseQuestionAnsweringQualityResult $pairwiseQuestionAnsweringQualityResult)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1PairwiseQuestionAnsweringQualityResult
+         */
+        public function getPairwiseQuestionAnsweringQualityResult()
+        {
+        }
+        /**
+         * Result for pairwise summarization quality metric.
+         *
+         * @param GoogleCloudAiplatformV1PairwiseSummarizationQualityResult $pairwiseSummarizationQualityResult
+         */
+        public function setPairwiseSummarizationQualityResult(GoogleCloudAiplatformV1PairwiseSummarizationQualityResult $pairwiseSummarizationQualityResult)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1PairwiseSummarizationQualityResult
+         */
+        public function getPairwiseSummarizationQualityResult()
+        {
+        }
+        /**
+         * Generic metrics. Result for pointwise metric.
+         *
+         * @param GoogleCloudAiplatformV1PointwiseMetricResult $pointwiseMetricResult
+         */
+        public function setPointwiseMetricResult(GoogleCloudAiplatformV1PointwiseMetricResult $pointwiseMetricResult)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1PointwiseMetricResult
+         */
+        public function getPointwiseMetricResult()
+        {
+        }
+        /**
+         * Result for question answering correctness metric.
+         *
+         * @param GoogleCloudAiplatformV1QuestionAnsweringCorrectnessResult $questionAnsweringCorrectnessResult
+         */
+        public function setQuestionAnsweringCorrectnessResult(GoogleCloudAiplatformV1QuestionAnsweringCorrectnessResult $questionAnsweringCorrectnessResult)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1QuestionAnsweringCorrectnessResult
+         */
+        public function getQuestionAnsweringCorrectnessResult()
+        {
+        }
+        /**
+         * Result for question answering helpfulness metric.
+         *
+         * @param GoogleCloudAiplatformV1QuestionAnsweringHelpfulnessResult $questionAnsweringHelpfulnessResult
+         */
+        public function setQuestionAnsweringHelpfulnessResult(GoogleCloudAiplatformV1QuestionAnsweringHelpfulnessResult $questionAnsweringHelpfulnessResult)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1QuestionAnsweringHelpfulnessResult
+         */
+        public function getQuestionAnsweringHelpfulnessResult()
+        {
+        }
+        /**
+         * Question answering only metrics. Result for question answering quality
+         * metric.
+         *
+         * @param GoogleCloudAiplatformV1QuestionAnsweringQualityResult $questionAnsweringQualityResult
+         */
+        public function setQuestionAnsweringQualityResult(GoogleCloudAiplatformV1QuestionAnsweringQualityResult $questionAnsweringQualityResult)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1QuestionAnsweringQualityResult
+         */
+        public function getQuestionAnsweringQualityResult()
+        {
+        }
+        /**
+         * Result for question answering relevance metric.
+         *
+         * @param GoogleCloudAiplatformV1QuestionAnsweringRelevanceResult $questionAnsweringRelevanceResult
+         */
+        public function setQuestionAnsweringRelevanceResult(GoogleCloudAiplatformV1QuestionAnsweringRelevanceResult $questionAnsweringRelevanceResult)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1QuestionAnsweringRelevanceResult
+         */
+        public function getQuestionAnsweringRelevanceResult()
+        {
+        }
+        /**
+         * Results for rouge metric.
+         *
+         * @param GoogleCloudAiplatformV1RougeResults $rougeResults
+         */
+        public function setRougeResults(GoogleCloudAiplatformV1RougeResults $rougeResults)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1RougeResults
+         */
+        public function getRougeResults()
+        {
+        }
+        /**
+         * Result for rubric based instruction following metric.
+         *
+         * @param GoogleCloudAiplatformV1RubricBasedInstructionFollowingResult $rubricBasedInstructionFollowingResult
+         */
+        public function setRubricBasedInstructionFollowingResult(GoogleCloudAiplatformV1RubricBasedInstructionFollowingResult $rubricBasedInstructionFollowingResult)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1RubricBasedInstructionFollowingResult
+         */
+        public function getRubricBasedInstructionFollowingResult()
+        {
+        }
+        /**
+         * Result for safety metric.
+         *
+         * @param GoogleCloudAiplatformV1SafetyResult $safetyResult
+         */
+        public function setSafetyResult(GoogleCloudAiplatformV1SafetyResult $safetyResult)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SafetyResult
+         */
+        public function getSafetyResult()
+        {
+        }
+        /**
+         * Result for summarization helpfulness metric.
+         *
+         * @param GoogleCloudAiplatformV1SummarizationHelpfulnessResult $summarizationHelpfulnessResult
+         */
+        public function setSummarizationHelpfulnessResult(GoogleCloudAiplatformV1SummarizationHelpfulnessResult $summarizationHelpfulnessResult)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SummarizationHelpfulnessResult
+         */
+        public function getSummarizationHelpfulnessResult()
+        {
+        }
+        /**
+         * Summarization only metrics. Result for summarization quality metric.
+         *
+         * @param GoogleCloudAiplatformV1SummarizationQualityResult $summarizationQualityResult
+         */
+        public function setSummarizationQualityResult(GoogleCloudAiplatformV1SummarizationQualityResult $summarizationQualityResult)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SummarizationQualityResult
+         */
+        public function getSummarizationQualityResult()
+        {
+        }
+        /**
+         * Result for summarization verbosity metric.
+         *
+         * @param GoogleCloudAiplatformV1SummarizationVerbosityResult $summarizationVerbosityResult
+         */
+        public function setSummarizationVerbosityResult(GoogleCloudAiplatformV1SummarizationVerbosityResult $summarizationVerbosityResult)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SummarizationVerbosityResult
+         */
+        public function getSummarizationVerbosityResult()
+        {
+        }
+        /**
+         * Tool call metrics. Results for tool call valid metric.
+         *
+         * @param GoogleCloudAiplatformV1ToolCallValidResults $toolCallValidResults
+         */
+        public function setToolCallValidResults(GoogleCloudAiplatformV1ToolCallValidResults $toolCallValidResults)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ToolCallValidResults
+         */
+        public function getToolCallValidResults()
+        {
+        }
+        /**
+         * Results for tool name match metric.
+         *
+         * @param GoogleCloudAiplatformV1ToolNameMatchResults $toolNameMatchResults
+         */
+        public function setToolNameMatchResults(GoogleCloudAiplatformV1ToolNameMatchResults $toolNameMatchResults)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ToolNameMatchResults
+         */
+        public function getToolNameMatchResults()
+        {
+        }
+        /**
+         * Results for tool parameter key match metric.
+         *
+         * @param GoogleCloudAiplatformV1ToolParameterKeyMatchResults $toolParameterKeyMatchResults
+         */
+        public function setToolParameterKeyMatchResults(GoogleCloudAiplatformV1ToolParameterKeyMatchResults $toolParameterKeyMatchResults)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ToolParameterKeyMatchResults
+         */
+        public function getToolParameterKeyMatchResults()
+        {
+        }
+        /**
+         * Results for tool parameter key value match metric.
+         *
+         * @param GoogleCloudAiplatformV1ToolParameterKVMatchResults $toolParameterKvMatchResults
+         */
+        public function setToolParameterKvMatchResults(GoogleCloudAiplatformV1ToolParameterKVMatchResults $toolParameterKvMatchResults)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ToolParameterKVMatchResults
+         */
+        public function getToolParameterKvMatchResults()
+        {
+        }
+        /**
+         * Result for trajectory any order match metric.
+         *
+         * @param GoogleCloudAiplatformV1TrajectoryAnyOrderMatchResults $trajectoryAnyOrderMatchResults
+         */
+        public function setTrajectoryAnyOrderMatchResults(GoogleCloudAiplatformV1TrajectoryAnyOrderMatchResults $trajectoryAnyOrderMatchResults)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1TrajectoryAnyOrderMatchResults
+         */
+        public function getTrajectoryAnyOrderMatchResults()
+        {
+        }
+        /**
+         * Result for trajectory exact match metric.
+         *
+         * @param GoogleCloudAiplatformV1TrajectoryExactMatchResults $trajectoryExactMatchResults
+         */
+        public function setTrajectoryExactMatchResults(GoogleCloudAiplatformV1TrajectoryExactMatchResults $trajectoryExactMatchResults)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1TrajectoryExactMatchResults
+         */
+        public function getTrajectoryExactMatchResults()
+        {
+        }
+        /**
+         * Result for trajectory in order match metric.
+         *
+         * @param GoogleCloudAiplatformV1TrajectoryInOrderMatchResults $trajectoryInOrderMatchResults
+         */
+        public function setTrajectoryInOrderMatchResults(GoogleCloudAiplatformV1TrajectoryInOrderMatchResults $trajectoryInOrderMatchResults)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1TrajectoryInOrderMatchResults
+         */
+        public function getTrajectoryInOrderMatchResults()
+        {
+        }
+        /**
+         * Result for trajectory precision metric.
+         *
+         * @param GoogleCloudAiplatformV1TrajectoryPrecisionResults $trajectoryPrecisionResults
+         */
+        public function setTrajectoryPrecisionResults(GoogleCloudAiplatformV1TrajectoryPrecisionResults $trajectoryPrecisionResults)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1TrajectoryPrecisionResults
+         */
+        public function getTrajectoryPrecisionResults()
+        {
+        }
+        /**
+         * Results for trajectory recall metric.
+         *
+         * @param GoogleCloudAiplatformV1TrajectoryRecallResults $trajectoryRecallResults
+         */
+        public function setTrajectoryRecallResults(GoogleCloudAiplatformV1TrajectoryRecallResults $trajectoryRecallResults)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1TrajectoryRecallResults
+         */
+        public function getTrajectoryRecallResults()
+        {
+        }
+        /**
+         * Results for trajectory single tool use metric.
+         *
+         * @param GoogleCloudAiplatformV1TrajectorySingleToolUseResults $trajectorySingleToolUseResults
+         */
+        public function setTrajectorySingleToolUseResults(GoogleCloudAiplatformV1TrajectorySingleToolUseResults $trajectorySingleToolUseResults)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1TrajectorySingleToolUseResults
+         */
+        public function getTrajectorySingleToolUseResults()
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1EvaluateInstancesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1EvaluateInstancesResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1EvaluateInstancesResponse
     {
     }
 }

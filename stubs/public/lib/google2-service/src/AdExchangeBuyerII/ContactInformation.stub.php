@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyerII;
-
-class ContactInformation extends \Google\Model
-{
-    /**
-     * Email address for the contact.
-     *
-     * @var string
-     */
-    public $email;
-    /**
-     * The name of the contact.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Email address for the contact.
-     *
-     * @param string $email
-     */
-    public function setEmail($email)
+namespace Google\Service\AdExchangeBuyerII {
+    class ContactInformation extends \Google\Model
     {
+        /**
+         * Email address for the contact.
+         *
+         * @var string
+         */
+        public $email;
+        /**
+         * The name of the contact.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Email address for the contact.
+         *
+         * @param string $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
+        /**
+         * The name of the contact.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AdExchangeBuyerII\ContactInformation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmail()
-    {
-    }
-    /**
-     * The name of the contact.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_AdExchangeBuyerII_ContactInformation extends \Google\Service\AdExchangeBuyerII\ContactInformation
     {
     }
 }

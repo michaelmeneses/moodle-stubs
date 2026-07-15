@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class CertificateConfig extends \Google\Model
-{
-    /**
-     * The URI configures a secret from [Secret
-     * Manager](https://cloud.google.com/secret-manager) in the format
-     * "projects/$PROJECT_ID/secrets/$SECRET_NAME/versions/$VERSION" for global
-     * secret or "projects/$PROJECT_ID/locations/$REGION/secrets/$SECRET_NAME/vers
-     * ions/$VERSION" for regional secret. Version can be fixed (e.g. "2") or
-     * "latest"
-     *
-     * @var string
-     */
-    public $gcpSecretManagerSecretUri;
-    /**
-     * The URI configures a secret from [Secret
-     * Manager](https://cloud.google.com/secret-manager) in the format
-     * "projects/$PROJECT_ID/secrets/$SECRET_NAME/versions/$VERSION" for global
-     * secret or "projects/$PROJECT_ID/locations/$REGION/secrets/$SECRET_NAME/vers
-     * ions/$VERSION" for regional secret. Version can be fixed (e.g. "2") or
-     * "latest"
-     *
-     * @param string $gcpSecretManagerSecretUri
-     */
-    public function setGcpSecretManagerSecretUri($gcpSecretManagerSecretUri)
+namespace Google\Service\Container {
+    class CertificateConfig extends \Google\Model
     {
+        /**
+         * The URI configures a secret from [Secret
+         * Manager](https://cloud.google.com/secret-manager) in the format
+         * "projects/$PROJECT_ID/secrets/$SECRET_NAME/versions/$VERSION" for global
+         * secret or "projects/$PROJECT_ID/locations/$REGION/secrets/$SECRET_NAME/vers
+         * ions/$VERSION" for regional secret. Version can be fixed (e.g. "2") or
+         * "latest"
+         *
+         * @var string
+         */
+        public $gcpSecretManagerSecretUri;
+        /**
+         * The URI configures a secret from [Secret
+         * Manager](https://cloud.google.com/secret-manager) in the format
+         * "projects/$PROJECT_ID/secrets/$SECRET_NAME/versions/$VERSION" for global
+         * secret or "projects/$PROJECT_ID/locations/$REGION/secrets/$SECRET_NAME/vers
+         * ions/$VERSION" for regional secret. Version can be fixed (e.g. "2") or
+         * "latest"
+         *
+         * @param string $gcpSecretManagerSecretUri
+         */
+        public function setGcpSecretManagerSecretUri($gcpSecretManagerSecretUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGcpSecretManagerSecretUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Container\CertificateConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGcpSecretManagerSecretUri()
+    class Google_Service_Container_CertificateConfig extends \Google\Service\Container\CertificateConfig
     {
     }
 }

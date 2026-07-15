@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1AnswerCitation extends \Google\Collection
-{
-    protected $collection_key = 'sources';
-    /**
-     * End of the attributed segment, exclusive. Measured in bytes (UTF-8
-     * unicode). If there are multi-byte characters,such as non-ASCII characters,
-     * the index measurement is longer than the string length.
-     *
-     * @var string
-     */
-    public $endIndex;
-    protected $sourcesType = GoogleCloudDiscoveryengineV1AnswerCitationSource::class;
-    protected $sourcesDataType = 'array';
-    /**
-     * Index indicates the start of the segment, measured in bytes (UTF-8
-     * unicode). If there are multi-byte characters,such as non-ASCII characters,
-     * the index measurement is longer than the string length.
-     *
-     * @var string
-     */
-    public $startIndex;
-    /**
-     * End of the attributed segment, exclusive. Measured in bytes (UTF-8
-     * unicode). If there are multi-byte characters,such as non-ASCII characters,
-     * the index measurement is longer than the string length.
-     *
-     * @param string $endIndex
-     */
-    public function setEndIndex($endIndex)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1AnswerCitation extends \Google\Collection
     {
+        protected $collection_key = 'sources';
+        /**
+         * End of the attributed segment, exclusive. Measured in bytes (UTF-8
+         * unicode). If there are multi-byte characters,such as non-ASCII characters,
+         * the index measurement is longer than the string length.
+         *
+         * @var string
+         */
+        public $endIndex;
+        protected $sourcesType = GoogleCloudDiscoveryengineV1AnswerCitationSource::class;
+        protected $sourcesDataType = 'array';
+        /**
+         * Index indicates the start of the segment, measured in bytes (UTF-8
+         * unicode). If there are multi-byte characters,such as non-ASCII characters,
+         * the index measurement is longer than the string length.
+         *
+         * @var string
+         */
+        public $startIndex;
+        /**
+         * End of the attributed segment, exclusive. Measured in bytes (UTF-8
+         * unicode). If there are multi-byte characters,such as non-ASCII characters,
+         * the index measurement is longer than the string length.
+         *
+         * @param string $endIndex
+         */
+        public function setEndIndex($endIndex)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndIndex()
+        {
+        }
+        /**
+         * Citation sources for the attributed segment.
+         *
+         * @param GoogleCloudDiscoveryengineV1AnswerCitationSource[] $sources
+         */
+        public function setSources($sources)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1AnswerCitationSource[]
+         */
+        public function getSources()
+        {
+        }
+        /**
+         * Index indicates the start of the segment, measured in bytes (UTF-8
+         * unicode). If there are multi-byte characters,such as non-ASCII characters,
+         * the index measurement is longer than the string length.
+         *
+         * @param string $startIndex
+         */
+        public function setStartIndex($startIndex)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartIndex()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AnswerCitation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndIndex()
-    {
-    }
-    /**
-     * Citation sources for the attributed segment.
-     *
-     * @param GoogleCloudDiscoveryengineV1AnswerCitationSource[] $sources
-     */
-    public function setSources($sources)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1AnswerCitationSource[]
-     */
-    public function getSources()
-    {
-    }
-    /**
-     * Index indicates the start of the segment, measured in bytes (UTF-8
-     * unicode). If there are multi-byte characters,such as non-ASCII characters,
-     * the index measurement is longer than the string length.
-     *
-     * @param string $startIndex
-     */
-    public function setStartIndex($startIndex)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartIndex()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1AnswerCitation extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AnswerCitation
     {
     }
 }

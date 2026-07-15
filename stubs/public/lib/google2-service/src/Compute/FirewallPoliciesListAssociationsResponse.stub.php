@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class FirewallPoliciesListAssociationsResponse extends \Google\Collection
-{
-    protected $collection_key = 'associations';
-    protected $associationsType = FirewallPolicyAssociation::class;
-    protected $associationsDataType = 'array';
-    /**
-     * Output only. [Output Only] Type of firewallPolicy associations.
-     * Alwayscompute#FirewallPoliciesListAssociations for lists of firewallPolicy
-     * associations.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * A list of associations.
-     *
-     * @param FirewallPolicyAssociation[] $associations
-     */
-    public function setAssociations($associations)
+namespace Google\Service\Compute {
+    class FirewallPoliciesListAssociationsResponse extends \Google\Collection
     {
+        protected $collection_key = 'associations';
+        protected $associationsType = FirewallPolicyAssociation::class;
+        protected $associationsDataType = 'array';
+        /**
+         * Output only. [Output Only] Type of firewallPolicy associations.
+         * Alwayscompute#FirewallPoliciesListAssociations for lists of firewallPolicy
+         * associations.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * A list of associations.
+         *
+         * @param FirewallPolicyAssociation[] $associations
+         */
+        public function setAssociations($associations)
+        {
+        }
+        /**
+         * @return FirewallPolicyAssociation[]
+         */
+        public function getAssociations()
+        {
+        }
+        /**
+         * Output only. [Output Only] Type of firewallPolicy associations.
+         * Alwayscompute#FirewallPoliciesListAssociations for lists of firewallPolicy
+         * associations.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FirewallPolicyAssociation[]
+     * Runtime class alias of \Google\Service\Compute\FirewallPoliciesListAssociationsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssociations()
-    {
-    }
-    /**
-     * Output only. [Output Only] Type of firewallPolicy associations.
-     * Alwayscompute#FirewallPoliciesListAssociations for lists of firewallPolicy
-     * associations.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_Compute_FirewallPoliciesListAssociationsResponse extends \Google\Service\Compute\FirewallPoliciesListAssociationsResponse
     {
     }
 }

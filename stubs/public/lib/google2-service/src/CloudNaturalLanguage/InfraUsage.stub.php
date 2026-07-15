@@ -21,89 +21,98 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class InfraUsage extends \Google\Collection
-{
-    protected $collection_key = 'tpuMetrics';
-    protected $cpuMetricsType = CpuMetric::class;
-    protected $cpuMetricsDataType = 'array';
-    protected $diskMetricsType = DiskMetric::class;
-    protected $diskMetricsDataType = 'array';
-    protected $gpuMetricsType = GpuMetric::class;
-    protected $gpuMetricsDataType = 'array';
-    protected $ramMetricsType = RamMetric::class;
-    protected $ramMetricsDataType = 'array';
-    protected $tpuMetricsType = TpuMetric::class;
-    protected $tpuMetricsDataType = 'array';
-    /**
-     * Aggregated core metrics since requested start_time.
-     *
-     * @param CpuMetric[] $cpuMetrics
-     */
-    public function setCpuMetrics($cpuMetrics)
+namespace Google\Service\CloudNaturalLanguage {
+    class InfraUsage extends \Google\Collection
     {
+        protected $collection_key = 'tpuMetrics';
+        protected $cpuMetricsType = CpuMetric::class;
+        protected $cpuMetricsDataType = 'array';
+        protected $diskMetricsType = DiskMetric::class;
+        protected $diskMetricsDataType = 'array';
+        protected $gpuMetricsType = GpuMetric::class;
+        protected $gpuMetricsDataType = 'array';
+        protected $ramMetricsType = RamMetric::class;
+        protected $ramMetricsDataType = 'array';
+        protected $tpuMetricsType = TpuMetric::class;
+        protected $tpuMetricsDataType = 'array';
+        /**
+         * Aggregated core metrics since requested start_time.
+         *
+         * @param CpuMetric[] $cpuMetrics
+         */
+        public function setCpuMetrics($cpuMetrics)
+        {
+        }
+        /**
+         * @return CpuMetric[]
+         */
+        public function getCpuMetrics()
+        {
+        }
+        /**
+         * Aggregated persistent disk metrics since requested start_time.
+         *
+         * @param DiskMetric[] $diskMetrics
+         */
+        public function setDiskMetrics($diskMetrics)
+        {
+        }
+        /**
+         * @return DiskMetric[]
+         */
+        public function getDiskMetrics()
+        {
+        }
+        /**
+         * Aggregated gpu metrics since requested start_time.
+         *
+         * @param GpuMetric[] $gpuMetrics
+         */
+        public function setGpuMetrics($gpuMetrics)
+        {
+        }
+        /**
+         * @return GpuMetric[]
+         */
+        public function getGpuMetrics()
+        {
+        }
+        /**
+         * Aggregated ram metrics since requested start_time.
+         *
+         * @param RamMetric[] $ramMetrics
+         */
+        public function setRamMetrics($ramMetrics)
+        {
+        }
+        /**
+         * @return RamMetric[]
+         */
+        public function getRamMetrics()
+        {
+        }
+        /**
+         * Aggregated tpu metrics since requested start_time.
+         *
+         * @param TpuMetric[] $tpuMetrics
+         */
+        public function setTpuMetrics($tpuMetrics)
+        {
+        }
+        /**
+         * @return TpuMetric[]
+         */
+        public function getTpuMetrics()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CpuMetric[]
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\InfraUsage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCpuMetrics()
-    {
-    }
-    /**
-     * Aggregated persistent disk metrics since requested start_time.
-     *
-     * @param DiskMetric[] $diskMetrics
-     */
-    public function setDiskMetrics($diskMetrics)
-    {
-    }
-    /**
-     * @return DiskMetric[]
-     */
-    public function getDiskMetrics()
-    {
-    }
-    /**
-     * Aggregated gpu metrics since requested start_time.
-     *
-     * @param GpuMetric[] $gpuMetrics
-     */
-    public function setGpuMetrics($gpuMetrics)
-    {
-    }
-    /**
-     * @return GpuMetric[]
-     */
-    public function getGpuMetrics()
-    {
-    }
-    /**
-     * Aggregated ram metrics since requested start_time.
-     *
-     * @param RamMetric[] $ramMetrics
-     */
-    public function setRamMetrics($ramMetrics)
-    {
-    }
-    /**
-     * @return RamMetric[]
-     */
-    public function getRamMetrics()
-    {
-    }
-    /**
-     * Aggregated tpu metrics since requested start_time.
-     *
-     * @param TpuMetric[] $tpuMetrics
-     */
-    public function setTpuMetrics($tpuMetrics)
-    {
-    }
-    /**
-     * @return TpuMetric[]
-     */
-    public function getTpuMetrics()
+    class Google_Service_CloudNaturalLanguage_InfraUsage extends \Google\Service\CloudNaturalLanguage\InfraUsage
     {
     }
 }

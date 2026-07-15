@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastore;
-
-class ExplainMetrics extends \Google\Model
-{
-    protected $executionStatsType = ExecutionStats::class;
-    protected $executionStatsDataType = '';
-    protected $planSummaryType = PlanSummary::class;
-    protected $planSummaryDataType = '';
-    /**
-     * Aggregated stats from the execution of the query. Only present when
-     * ExplainOptions.analyze is set to true.
-     *
-     * @param ExecutionStats $executionStats
-     */
-    public function setExecutionStats(ExecutionStats $executionStats)
+namespace Google\Service\Datastore {
+    class ExplainMetrics extends \Google\Model
     {
+        protected $executionStatsType = ExecutionStats::class;
+        protected $executionStatsDataType = '';
+        protected $planSummaryType = PlanSummary::class;
+        protected $planSummaryDataType = '';
+        /**
+         * Aggregated stats from the execution of the query. Only present when
+         * ExplainOptions.analyze is set to true.
+         *
+         * @param ExecutionStats $executionStats
+         */
+        public function setExecutionStats(ExecutionStats $executionStats)
+        {
+        }
+        /**
+         * @return ExecutionStats
+         */
+        public function getExecutionStats()
+        {
+        }
+        /**
+         * Planning phase information for the query.
+         *
+         * @param PlanSummary $planSummary
+         */
+        public function setPlanSummary(PlanSummary $planSummary)
+        {
+        }
+        /**
+         * @return PlanSummary
+         */
+        public function getPlanSummary()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ExecutionStats
+     * Runtime class alias of \Google\Service\Datastore\ExplainMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExecutionStats()
-    {
-    }
-    /**
-     * Planning phase information for the query.
-     *
-     * @param PlanSummary $planSummary
-     */
-    public function setPlanSummary(PlanSummary $planSummary)
-    {
-    }
-    /**
-     * @return PlanSummary
-     */
-    public function getPlanSummary()
+    class Google_Service_Datastore_ExplainMetrics extends \Google\Service\Datastore\ExplainMetrics
     {
     }
 }

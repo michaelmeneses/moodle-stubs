@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class ListMessagesResponse extends \Google\Collection
-{
-    protected $collection_key = 'messages';
-    protected $messagesType = Message::class;
-    protected $messagesDataType = 'array';
-    /**
-     * You can send a token as `pageToken` to retrieve the next page of results.
-     * If empty, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of messages.
-     *
-     * @param Message[] $messages
-     */
-    public function setMessages($messages)
+namespace Google\Service\HangoutsChat {
+    class ListMessagesResponse extends \Google\Collection
     {
+        protected $collection_key = 'messages';
+        protected $messagesType = Message::class;
+        protected $messagesDataType = 'array';
+        /**
+         * You can send a token as `pageToken` to retrieve the next page of results.
+         * If empty, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of messages.
+         *
+         * @param Message[] $messages
+         */
+        public function setMessages($messages)
+        {
+        }
+        /**
+         * @return Message[]
+         */
+        public function getMessages()
+        {
+        }
+        /**
+         * You can send a token as `pageToken` to retrieve the next page of results.
+         * If empty, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Message[]
+     * Runtime class alias of \Google\Service\HangoutsChat\ListMessagesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMessages()
-    {
-    }
-    /**
-     * You can send a token as `pageToken` to retrieve the next page of results.
-     * If empty, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_HangoutsChat_ListMessagesResponse extends \Google\Service\HangoutsChat\ListMessagesResponse
     {
     }
 }

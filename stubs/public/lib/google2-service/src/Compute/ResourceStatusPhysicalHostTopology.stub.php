@@ -21,98 +21,107 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class ResourceStatusPhysicalHostTopology extends \Google\Model
-{
-    /**
-     * [Output Only] The ID of the block in which the running instance is located.
-     * Instances within the same block experience low network latency.
-     *
-     * @var string
-     */
-    public $block;
-    /**
-     * [Output Only] The global name of the Compute Engine cluster where the
-     * running instance is located.
-     *
-     * @var string
-     */
-    public $cluster;
-    /**
-     * [Output Only] The ID of the host on which the running instance is located.
-     * Instances on the same host experience the lowest possible network latency.
-     *
-     * @var string
-     */
-    public $host;
-    /**
-     * [Output Only] The ID of the sub-block in which the running instance is
-     * located. Instances in the same sub-block experience lower network latency
-     * than instances in the same block.
-     *
-     * @var string
-     */
-    public $subblock;
-    /**
-     * [Output Only] The ID of the block in which the running instance is located.
-     * Instances within the same block experience low network latency.
-     *
-     * @param string $block
-     */
-    public function setBlock($block)
+namespace Google\Service\Compute {
+    class ResourceStatusPhysicalHostTopology extends \Google\Model
     {
+        /**
+         * [Output Only] The ID of the block in which the running instance is located.
+         * Instances within the same block experience low network latency.
+         *
+         * @var string
+         */
+        public $block;
+        /**
+         * [Output Only] The global name of the Compute Engine cluster where the
+         * running instance is located.
+         *
+         * @var string
+         */
+        public $cluster;
+        /**
+         * [Output Only] The ID of the host on which the running instance is located.
+         * Instances on the same host experience the lowest possible network latency.
+         *
+         * @var string
+         */
+        public $host;
+        /**
+         * [Output Only] The ID of the sub-block in which the running instance is
+         * located. Instances in the same sub-block experience lower network latency
+         * than instances in the same block.
+         *
+         * @var string
+         */
+        public $subblock;
+        /**
+         * [Output Only] The ID of the block in which the running instance is located.
+         * Instances within the same block experience low network latency.
+         *
+         * @param string $block
+         */
+        public function setBlock($block)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBlock()
+        {
+        }
+        /**
+         * [Output Only] The global name of the Compute Engine cluster where the
+         * running instance is located.
+         *
+         * @param string $cluster
+         */
+        public function setCluster($cluster)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCluster()
+        {
+        }
+        /**
+         * [Output Only] The ID of the host on which the running instance is located.
+         * Instances on the same host experience the lowest possible network latency.
+         *
+         * @param string $host
+         */
+        public function setHost($host)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHost()
+        {
+        }
+        /**
+         * [Output Only] The ID of the sub-block in which the running instance is
+         * located. Instances in the same sub-block experience lower network latency
+         * than instances in the same block.
+         *
+         * @param string $subblock
+         */
+        public function setSubblock($subblock)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubblock()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\ResourceStatusPhysicalHostTopology registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBlock()
-    {
-    }
-    /**
-     * [Output Only] The global name of the Compute Engine cluster where the
-     * running instance is located.
-     *
-     * @param string $cluster
-     */
-    public function setCluster($cluster)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCluster()
-    {
-    }
-    /**
-     * [Output Only] The ID of the host on which the running instance is located.
-     * Instances on the same host experience the lowest possible network latency.
-     *
-     * @param string $host
-     */
-    public function setHost($host)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHost()
-    {
-    }
-    /**
-     * [Output Only] The ID of the sub-block in which the running instance is
-     * located. Instances in the same sub-block experience lower network latency
-     * than instances in the same block.
-     *
-     * @param string $subblock
-     */
-    public function setSubblock($subblock)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubblock()
+    class Google_Service_Compute_ResourceStatusPhysicalHostTopology extends \Google\Service\Compute\ResourceStatusPhysicalHostTopology
     {
     }
 }

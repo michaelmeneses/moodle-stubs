@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudLifeSciences;
-
-class RunPipelineRequest extends \Google\Model
-{
-    /**
-     * @var string[]
-     */
-    public $labels;
-    protected $pipelineType = Pipeline::class;
-    protected $pipelineDataType = '';
-    /**
-     * @var string
-     */
-    public $pubSubTopic;
-    /**
-     * @param string[]
-     */
-    public function setLabels($labels)
+namespace Google\Service\CloudLifeSciences {
+    class RunPipelineRequest extends \Google\Model
     {
+        /**
+         * @var string[]
+         */
+        public $labels;
+        protected $pipelineType = Pipeline::class;
+        protected $pipelineDataType = '';
+        /**
+         * @var string
+         */
+        public $pubSubTopic;
+        /**
+         * @param string[]
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * @param Pipeline
+         */
+        public function setPipeline(Pipeline $pipeline)
+        {
+        }
+        /**
+         * @return Pipeline
+         */
+        public function getPipeline()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPubSubTopic($pubSubTopic)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPubSubTopic()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudLifeSciences\RunPipelineRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLabels()
-    {
-    }
-    /**
-     * @param Pipeline
-     */
-    public function setPipeline(Pipeline $pipeline)
-    {
-    }
-    /**
-     * @return Pipeline
-     */
-    public function getPipeline()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPubSubTopic($pubSubTopic)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPubSubTopic()
+    class Google_Service_CloudLifeSciences_RunPipelineRequest extends \Google\Service\CloudLifeSciences\RunPipelineRequest
     {
     }
 }

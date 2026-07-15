@@ -21,73 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AIPlatformNotebooks\Resource;
-
-/**
- * The "executions" collection of methods.
- * Typical usage is:
- *  <code>
- *   $notebooksService = new Google\Service\AIPlatformNotebooks(...);
- *   $executions = $notebooksService->projects_locations_executions;
- *  </code>
- */
-class ProjectsLocationsExecutions extends \Google\Service\Resource
-{
+namespace Google\Service\AIPlatformNotebooks\Resource {
+    use Google\Service\AIPlatformNotebooks\Execution;
+    use Google\Service\AIPlatformNotebooks\ListExecutionsResponse;
+    use Google\Service\AIPlatformNotebooks\Operation;
     /**
-     * Creates a new Execution in a given project and location. (executions.create)
-     *
-     * @param string $parent Required. Format:
-     * `parent=projects/{project_id}/locations/{location}`
-     * @param Execution $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string executionId Required. User-defined unique ID of this
-     * execution.
-     * @return Operation
+     * The "executions" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $notebooksService = new Google\Service\AIPlatformNotebooks(...);
+     *   $executions = $notebooksService->projects_locations_executions;
+     *  </code>
      */
-    public function create($parent, Execution $postBody, $optParams = [])
+    class ProjectsLocationsExecutions extends \Google\Service\Resource
     {
+        /**
+         * Creates a new Execution in a given project and location. (executions.create)
+         *
+         * @param string $parent Required. Format:
+         * `parent=projects/{project_id}/locations/{location}`
+         * @param Execution $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string executionId Required. User-defined unique ID of this
+         * execution.
+         * @return Operation
+         */
+        public function create($parent, Execution $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes execution (executions.delete)
+         *
+         * @param string $name Required. Format:
+         * `projects/{project_id}/locations/{location}/executions/{execution_id}`
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets details of executions (executions.get)
+         *
+         * @param string $name Required. Format:
+         * `projects/{project_id}/locations/{location}/executions/{execution_id}`
+         * @param array $optParams Optional parameters.
+         * @return Execution
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists executions in a given project and location
+         * (executions.listProjectsLocationsExecutions)
+         *
+         * @param string $parent Required. Format:
+         * `parent=projects/{project_id}/locations/{location}`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Filter applied to resulting executions. Currently
+         * only supports filtering executions by a specified `schedule_id`. Format:
+         * `schedule_id=`
+         * @opt_param string orderBy Sort by field.
+         * @opt_param int pageSize Maximum return size of the list call.
+         * @opt_param string pageToken A previous returned page token that can be used
+         * to continue listing from the last result.
+         * @return ListExecutionsResponse
+         */
+        public function listProjectsLocationsExecutions($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes execution (executions.delete)
-     *
-     * @param string $name Required. Format:
-     * `projects/{project_id}/locations/{location}/executions/{execution_id}`
-     * @param array $optParams Optional parameters.
-     * @return Operation
+     * Runtime class alias of \Google\Service\AIPlatformNotebooks\Resource\ProjectsLocationsExecutions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets details of executions (executions.get)
-     *
-     * @param string $name Required. Format:
-     * `projects/{project_id}/locations/{location}/executions/{execution_id}`
-     * @param array $optParams Optional parameters.
-     * @return Execution
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists executions in a given project and location
-     * (executions.listProjectsLocationsExecutions)
-     *
-     * @param string $parent Required. Format:
-     * `parent=projects/{project_id}/locations/{location}`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Filter applied to resulting executions. Currently
-     * only supports filtering executions by a specified `schedule_id`. Format:
-     * `schedule_id=`
-     * @opt_param string orderBy Sort by field.
-     * @opt_param int pageSize Maximum return size of the list call.
-     * @opt_param string pageToken A previous returned page token that can be used
-     * to continue listing from the last result.
-     * @return ListExecutionsResponse
-     */
-    public function listProjectsLocationsExecutions($parent, $optParams = [])
+    class Google_Service_AIPlatformNotebooks_Resource_ProjectsLocationsExecutions extends \Google\Service\AIPlatformNotebooks\Resource\ProjectsLocationsExecutions
     {
     }
 }

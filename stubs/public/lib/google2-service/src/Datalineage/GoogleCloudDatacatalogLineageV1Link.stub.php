@@ -21,102 +21,111 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datalineage;
-
-class GoogleCloudDatacatalogLineageV1Link extends \Google\Model
-{
-    /**
-     * The end of the last event establishing this link.
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * Output only. Immutable. The name of the link. Format:
-     * `projects/{project}/locations/{location}/links/{link}`.
-     *
-     * @var string
-     */
-    public $name;
-    protected $sourceType = GoogleCloudDatacatalogLineageV1EntityReference::class;
-    protected $sourceDataType = '';
-    /**
-     * The start of the first event establishing this link.
-     *
-     * @var string
-     */
-    public $startTime;
-    protected $targetType = GoogleCloudDatacatalogLineageV1EntityReference::class;
-    protected $targetDataType = '';
-    /**
-     * The end of the last event establishing this link.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
+namespace Google\Service\Datalineage {
+    class GoogleCloudDatacatalogLineageV1Link extends \Google\Model
     {
+        /**
+         * The end of the last event establishing this link.
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * Output only. Immutable. The name of the link. Format:
+         * `projects/{project}/locations/{location}/links/{link}`.
+         *
+         * @var string
+         */
+        public $name;
+        protected $sourceType = GoogleCloudDatacatalogLineageV1EntityReference::class;
+        protected $sourceDataType = '';
+        /**
+         * The start of the first event establishing this link.
+         *
+         * @var string
+         */
+        public $startTime;
+        protected $targetType = GoogleCloudDatacatalogLineageV1EntityReference::class;
+        protected $targetDataType = '';
+        /**
+         * The end of the last event establishing this link.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * Output only. Immutable. The name of the link. Format:
+         * `projects/{project}/locations/{location}/links/{link}`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The pointer to the entity that is the **source** of this link.
+         *
+         * @param GoogleCloudDatacatalogLineageV1EntityReference $source
+         */
+        public function setSource(GoogleCloudDatacatalogLineageV1EntityReference $source)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogLineageV1EntityReference
+         */
+        public function getSource()
+        {
+        }
+        /**
+         * The start of the first event establishing this link.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
+        /**
+         * The pointer to the entity that is the **target** of this link.
+         *
+         * @param GoogleCloudDatacatalogLineageV1EntityReference $target
+         */
+        public function setTarget(GoogleCloudDatacatalogLineageV1EntityReference $target)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogLineageV1EntityReference
+         */
+        public function getTarget()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Datalineage\GoogleCloudDatacatalogLineageV1Link registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndTime()
-    {
-    }
-    /**
-     * Output only. Immutable. The name of the link. Format:
-     * `projects/{project}/locations/{location}/links/{link}`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The pointer to the entity that is the **source** of this link.
-     *
-     * @param GoogleCloudDatacatalogLineageV1EntityReference $source
-     */
-    public function setSource(GoogleCloudDatacatalogLineageV1EntityReference $source)
-    {
-    }
-    /**
-     * @return GoogleCloudDatacatalogLineageV1EntityReference
-     */
-    public function getSource()
-    {
-    }
-    /**
-     * The start of the first event establishing this link.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
-    {
-    }
-    /**
-     * The pointer to the entity that is the **target** of this link.
-     *
-     * @param GoogleCloudDatacatalogLineageV1EntityReference $target
-     */
-    public function setTarget(GoogleCloudDatacatalogLineageV1EntityReference $target)
-    {
-    }
-    /**
-     * @return GoogleCloudDatacatalogLineageV1EntityReference
-     */
-    public function getTarget()
+    class Google_Service_Datalineage_GoogleCloudDatacatalogLineageV1Link extends \Google\Service\Datalineage\GoogleCloudDatacatalogLineageV1Link
     {
     }
 }

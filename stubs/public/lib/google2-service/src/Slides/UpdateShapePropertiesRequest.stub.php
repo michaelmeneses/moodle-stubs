@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides;
-
-class UpdateShapePropertiesRequest extends \Google\Model
-{
-    /**
-     * The fields that should be updated. At least one field must be specified.
-     * The root `shapeProperties` is implied and should not be specified. A single
-     * `"*"` can be used as short-hand for listing every field. For example to
-     * update the shape background solid fill color, set `fields` to
-     * `"shapeBackgroundFill.solidFill.color"`. To reset a property to its default
-     * value, include its field name in the field mask but leave the field itself
-     * unset.
-     *
-     * @var string
-     */
-    public $fields;
-    /**
-     * The object ID of the shape the updates are applied to.
-     *
-     * @var string
-     */
-    public $objectId;
-    protected $shapePropertiesType = ShapeProperties::class;
-    protected $shapePropertiesDataType = '';
-    /**
-     * The fields that should be updated. At least one field must be specified.
-     * The root `shapeProperties` is implied and should not be specified. A single
-     * `"*"` can be used as short-hand for listing every field. For example to
-     * update the shape background solid fill color, set `fields` to
-     * `"shapeBackgroundFill.solidFill.color"`. To reset a property to its default
-     * value, include its field name in the field mask but leave the field itself
-     * unset.
-     *
-     * @param string $fields
-     */
-    public function setFields($fields)
+namespace Google\Service\Slides {
+    class UpdateShapePropertiesRequest extends \Google\Model
     {
+        /**
+         * The fields that should be updated. At least one field must be specified.
+         * The root `shapeProperties` is implied and should not be specified. A single
+         * `"*"` can be used as short-hand for listing every field. For example to
+         * update the shape background solid fill color, set `fields` to
+         * `"shapeBackgroundFill.solidFill.color"`. To reset a property to its default
+         * value, include its field name in the field mask but leave the field itself
+         * unset.
+         *
+         * @var string
+         */
+        public $fields;
+        /**
+         * The object ID of the shape the updates are applied to.
+         *
+         * @var string
+         */
+        public $objectId;
+        protected $shapePropertiesType = ShapeProperties::class;
+        protected $shapePropertiesDataType = '';
+        /**
+         * The fields that should be updated. At least one field must be specified.
+         * The root `shapeProperties` is implied and should not be specified. A single
+         * `"*"` can be used as short-hand for listing every field. For example to
+         * update the shape background solid fill color, set `fields` to
+         * `"shapeBackgroundFill.solidFill.color"`. To reset a property to its default
+         * value, include its field name in the field mask but leave the field itself
+         * unset.
+         *
+         * @param string $fields
+         */
+        public function setFields($fields)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFields()
+        {
+        }
+        /**
+         * The object ID of the shape the updates are applied to.
+         *
+         * @param string $objectId
+         */
+        public function setObjectId($objectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectId()
+        {
+        }
+        /**
+         * The shape properties to update.
+         *
+         * @param ShapeProperties $shapeProperties
+         */
+        public function setShapeProperties(ShapeProperties $shapeProperties)
+        {
+        }
+        /**
+         * @return ShapeProperties
+         */
+        public function getShapeProperties()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Slides\UpdateShapePropertiesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFields()
-    {
-    }
-    /**
-     * The object ID of the shape the updates are applied to.
-     *
-     * @param string $objectId
-     */
-    public function setObjectId($objectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObjectId()
-    {
-    }
-    /**
-     * The shape properties to update.
-     *
-     * @param ShapeProperties $shapeProperties
-     */
-    public function setShapeProperties(ShapeProperties $shapeProperties)
-    {
-    }
-    /**
-     * @return ShapeProperties
-     */
-    public function getShapeProperties()
+    class Google_Service_Slides_UpdateShapePropertiesRequest extends \Google\Service\Slides\UpdateShapePropertiesRequest
     {
     }
 }

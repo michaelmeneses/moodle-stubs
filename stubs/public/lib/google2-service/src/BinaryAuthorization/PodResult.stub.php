@@ -21,125 +21,134 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BinaryAuthorization;
-
-class PodResult extends \Google\Collection
-{
-    /**
-     * Not specified. This should never be used.
-     */
-    public const VERDICT_POD_VERDICT_UNSPECIFIED = 'POD_VERDICT_UNSPECIFIED';
-    /**
-     * All images conform to the policy.
-     */
-    public const VERDICT_CONFORMANT = 'CONFORMANT';
-    /**
-     * At least one image does not conform to the policy.
-     */
-    public const VERDICT_NON_CONFORMANT = 'NON_CONFORMANT';
-    /**
-     * Encountered at least one error evaluating an image and all other images
-     * with non-error verdicts conform to the policy. Non-conformance has
-     * precedence over errors.
-     */
-    public const VERDICT_ERROR = 'ERROR';
-    protected $collection_key = 'imageResults';
-    protected $imageResultsType = ImageResult::class;
-    protected $imageResultsDataType = 'array';
-    /**
-     * The Kubernetes namespace of the Pod.
-     *
-     * @var string
-     */
-    public $kubernetesNamespace;
-    /**
-     * The Kubernetes service account of the Pod.
-     *
-     * @var string
-     */
-    public $kubernetesServiceAccount;
-    /**
-     * The name of the Pod.
-     *
-     * @var string
-     */
-    public $podName;
-    /**
-     * The result of evaluating this Pod.
-     *
-     * @var string
-     */
-    public $verdict;
-    /**
-     * Per-image details.
-     *
-     * @param ImageResult[] $imageResults
-     */
-    public function setImageResults($imageResults)
+namespace Google\Service\BinaryAuthorization {
+    class PodResult extends \Google\Collection
     {
+        /**
+         * Not specified. This should never be used.
+         */
+        public const VERDICT_POD_VERDICT_UNSPECIFIED = 'POD_VERDICT_UNSPECIFIED';
+        /**
+         * All images conform to the policy.
+         */
+        public const VERDICT_CONFORMANT = 'CONFORMANT';
+        /**
+         * At least one image does not conform to the policy.
+         */
+        public const VERDICT_NON_CONFORMANT = 'NON_CONFORMANT';
+        /**
+         * Encountered at least one error evaluating an image and all other images
+         * with non-error verdicts conform to the policy. Non-conformance has
+         * precedence over errors.
+         */
+        public const VERDICT_ERROR = 'ERROR';
+        protected $collection_key = 'imageResults';
+        protected $imageResultsType = ImageResult::class;
+        protected $imageResultsDataType = 'array';
+        /**
+         * The Kubernetes namespace of the Pod.
+         *
+         * @var string
+         */
+        public $kubernetesNamespace;
+        /**
+         * The Kubernetes service account of the Pod.
+         *
+         * @var string
+         */
+        public $kubernetesServiceAccount;
+        /**
+         * The name of the Pod.
+         *
+         * @var string
+         */
+        public $podName;
+        /**
+         * The result of evaluating this Pod.
+         *
+         * @var string
+         */
+        public $verdict;
+        /**
+         * Per-image details.
+         *
+         * @param ImageResult[] $imageResults
+         */
+        public function setImageResults($imageResults)
+        {
+        }
+        /**
+         * @return ImageResult[]
+         */
+        public function getImageResults()
+        {
+        }
+        /**
+         * The Kubernetes namespace of the Pod.
+         *
+         * @param string $kubernetesNamespace
+         */
+        public function setKubernetesNamespace($kubernetesNamespace)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKubernetesNamespace()
+        {
+        }
+        /**
+         * The Kubernetes service account of the Pod.
+         *
+         * @param string $kubernetesServiceAccount
+         */
+        public function setKubernetesServiceAccount($kubernetesServiceAccount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKubernetesServiceAccount()
+        {
+        }
+        /**
+         * The name of the Pod.
+         *
+         * @param string $podName
+         */
+        public function setPodName($podName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPodName()
+        {
+        }
+        /**
+         * The result of evaluating this Pod.
+         *
+         * Accepted values: POD_VERDICT_UNSPECIFIED, CONFORMANT, NON_CONFORMANT, ERROR
+         *
+         * @param self::VERDICT_* $verdict
+         */
+        public function setVerdict($verdict)
+        {
+        }
+        /**
+         * @return self::VERDICT_*
+         */
+        public function getVerdict()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ImageResult[]
+     * Runtime class alias of \Google\Service\BinaryAuthorization\PodResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getImageResults()
-    {
-    }
-    /**
-     * The Kubernetes namespace of the Pod.
-     *
-     * @param string $kubernetesNamespace
-     */
-    public function setKubernetesNamespace($kubernetesNamespace)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKubernetesNamespace()
-    {
-    }
-    /**
-     * The Kubernetes service account of the Pod.
-     *
-     * @param string $kubernetesServiceAccount
-     */
-    public function setKubernetesServiceAccount($kubernetesServiceAccount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKubernetesServiceAccount()
-    {
-    }
-    /**
-     * The name of the Pod.
-     *
-     * @param string $podName
-     */
-    public function setPodName($podName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPodName()
-    {
-    }
-    /**
-     * The result of evaluating this Pod.
-     *
-     * Accepted values: POD_VERDICT_UNSPECIFIED, CONFORMANT, NON_CONFORMANT, ERROR
-     *
-     * @param self::VERDICT_* $verdict
-     */
-    public function setVerdict($verdict)
-    {
-    }
-    /**
-     * @return self::VERDICT_*
-     */
-    public function getVerdict()
+    class Google_Service_BinaryAuthorization_PodResult extends \Google\Service\BinaryAuthorization\PodResult
     {
     }
 }

@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides;
-
-class ReplaceAllTextRequest extends \Google\Collection
-{
-    protected $collection_key = 'pageObjectIds';
-    protected $containsTextType = SubstringMatchCriteria::class;
-    protected $containsTextDataType = '';
-    /**
-     * If non-empty, limits the matches to page elements only on the given pages.
-     * Returns a 400 bad request error if given the page object ID of a notes
-     * master, or if a page with that object ID doesn't exist in the presentation.
-     *
-     * @var string[]
-     */
-    public $pageObjectIds;
-    /**
-     * The text that will replace the matched text.
-     *
-     * @var string
-     */
-    public $replaceText;
-    /**
-     * Finds text in a shape matching this substring.
-     *
-     * @param SubstringMatchCriteria $containsText
-     */
-    public function setContainsText(SubstringMatchCriteria $containsText)
+namespace Google\Service\Slides {
+    class ReplaceAllTextRequest extends \Google\Collection
     {
+        protected $collection_key = 'pageObjectIds';
+        protected $containsTextType = SubstringMatchCriteria::class;
+        protected $containsTextDataType = '';
+        /**
+         * If non-empty, limits the matches to page elements only on the given pages.
+         * Returns a 400 bad request error if given the page object ID of a notes
+         * master, or if a page with that object ID doesn't exist in the presentation.
+         *
+         * @var string[]
+         */
+        public $pageObjectIds;
+        /**
+         * The text that will replace the matched text.
+         *
+         * @var string
+         */
+        public $replaceText;
+        /**
+         * Finds text in a shape matching this substring.
+         *
+         * @param SubstringMatchCriteria $containsText
+         */
+        public function setContainsText(SubstringMatchCriteria $containsText)
+        {
+        }
+        /**
+         * @return SubstringMatchCriteria
+         */
+        public function getContainsText()
+        {
+        }
+        /**
+         * If non-empty, limits the matches to page elements only on the given pages.
+         * Returns a 400 bad request error if given the page object ID of a notes
+         * master, or if a page with that object ID doesn't exist in the presentation.
+         *
+         * @param string[] $pageObjectIds
+         */
+        public function setPageObjectIds($pageObjectIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPageObjectIds()
+        {
+        }
+        /**
+         * The text that will replace the matched text.
+         *
+         * @param string $replaceText
+         */
+        public function setReplaceText($replaceText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReplaceText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SubstringMatchCriteria
+     * Runtime class alias of \Google\Service\Slides\ReplaceAllTextRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContainsText()
-    {
-    }
-    /**
-     * If non-empty, limits the matches to page elements only on the given pages.
-     * Returns a 400 bad request error if given the page object ID of a notes
-     * master, or if a page with that object ID doesn't exist in the presentation.
-     *
-     * @param string[] $pageObjectIds
-     */
-    public function setPageObjectIds($pageObjectIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPageObjectIds()
-    {
-    }
-    /**
-     * The text that will replace the matched text.
-     *
-     * @param string $replaceText
-     */
-    public function setReplaceText($replaceText)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReplaceText()
+    class Google_Service_Slides_ReplaceAllTextRequest extends \Google\Service\Slides\ReplaceAllTextRequest
     {
     }
 }

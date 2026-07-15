@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AlertCenter;
-
-class DomainId extends \Google\Model
-{
-    /**
-     * The primary domain for the customer.
-     *
-     * @var string
-     */
-    public $customerPrimaryDomain;
-    /**
-     * The primary domain for the customer.
-     *
-     * @param string $customerPrimaryDomain
-     */
-    public function setCustomerPrimaryDomain($customerPrimaryDomain)
+namespace Google\Service\AlertCenter {
+    class DomainId extends \Google\Model
     {
+        /**
+         * The primary domain for the customer.
+         *
+         * @var string
+         */
+        public $customerPrimaryDomain;
+        /**
+         * The primary domain for the customer.
+         *
+         * @param string $customerPrimaryDomain
+         */
+        public function setCustomerPrimaryDomain($customerPrimaryDomain)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomerPrimaryDomain()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AlertCenter\DomainId registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomerPrimaryDomain()
+    class Google_Service_AlertCenter_DomainId extends \Google\Service\AlertCenter\DomainId
     {
     }
 }

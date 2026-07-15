@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaGenerateAgentFlowResponse extends \Google\Model
-{
-    protected $agentFlowType = GoogleCloudIntegrationsV1alphaAgentFlow::class;
-    protected $agentFlowDataType = '';
-    /**
-     * @param GoogleCloudIntegrationsV1alphaAgentFlow
-     */
-    public function setAgentFlow(GoogleCloudIntegrationsV1alphaAgentFlow $agentFlow)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaGenerateAgentFlowResponse extends \Google\Model
     {
+        protected $agentFlowType = GoogleCloudIntegrationsV1alphaAgentFlow::class;
+        protected $agentFlowDataType = '';
+        /**
+         * @param GoogleCloudIntegrationsV1alphaAgentFlow
+         */
+        public function setAgentFlow(GoogleCloudIntegrationsV1alphaAgentFlow $agentFlow)
+        {
+        }
+        /**
+         * @return GoogleCloudIntegrationsV1alphaAgentFlow
+         */
+        public function getAgentFlow()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudIntegrationsV1alphaAgentFlow
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaGenerateAgentFlowResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAgentFlow()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaGenerateAgentFlowResponse extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaGenerateAgentFlowResponse
     {
     }
 }

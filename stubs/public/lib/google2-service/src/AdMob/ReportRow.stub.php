@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdMob;
-
-class ReportRow extends \Google\Model
-{
-    protected $dimensionValuesType = ReportRowDimensionValue::class;
-    protected $dimensionValuesDataType = 'map';
-    protected $metricValuesType = ReportRowMetricValue::class;
-    protected $metricValuesDataType = 'map';
-    /**
-     * Map of dimension values in a row, with keys as enum name of the dimensions.
-     *
-     * @param ReportRowDimensionValue[] $dimensionValues
-     */
-    public function setDimensionValues($dimensionValues)
+namespace Google\Service\AdMob {
+    class ReportRow extends \Google\Model
     {
+        protected $dimensionValuesType = ReportRowDimensionValue::class;
+        protected $dimensionValuesDataType = 'map';
+        protected $metricValuesType = ReportRowMetricValue::class;
+        protected $metricValuesDataType = 'map';
+        /**
+         * Map of dimension values in a row, with keys as enum name of the dimensions.
+         *
+         * @param ReportRowDimensionValue[] $dimensionValues
+         */
+        public function setDimensionValues($dimensionValues)
+        {
+        }
+        /**
+         * @return ReportRowDimensionValue[]
+         */
+        public function getDimensionValues()
+        {
+        }
+        /**
+         * Map of metric values in a row, with keys as enum name of the metrics. If a
+         * metric being requested has no value returned, the map will not include it.
+         *
+         * @param ReportRowMetricValue[] $metricValues
+         */
+        public function setMetricValues($metricValues)
+        {
+        }
+        /**
+         * @return ReportRowMetricValue[]
+         */
+        public function getMetricValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ReportRowDimensionValue[]
+     * Runtime class alias of \Google\Service\AdMob\ReportRow registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDimensionValues()
-    {
-    }
-    /**
-     * Map of metric values in a row, with keys as enum name of the metrics. If a
-     * metric being requested has no value returned, the map will not include it.
-     *
-     * @param ReportRowMetricValue[] $metricValues
-     */
-    public function setMetricValues($metricValues)
-    {
-    }
-    /**
-     * @return ReportRowMetricValue[]
-     */
-    public function getMetricValues()
+    class Google_Service_AdMob_ReportRow extends \Google\Service\AdMob\ReportRow
     {
     }
 }

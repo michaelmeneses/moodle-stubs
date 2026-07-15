@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Genomics;
-
-class Resources extends \Google\Collection
-{
-    protected $collection_key = 'zones';
-    /**
-     * @var string
-     */
-    public $projectId;
-    /**
-     * @var string[]
-     */
-    public $regions;
-    protected $virtualMachineType = VirtualMachine::class;
-    protected $virtualMachineDataType = '';
-    /**
-     * @var string[]
-     */
-    public $zones;
-    /**
-     * @param string
-     */
-    public function setProjectId($projectId)
+namespace Google\Service\Genomics {
+    class Resources extends \Google\Collection
     {
+        protected $collection_key = 'zones';
+        /**
+         * @var string
+         */
+        public $projectId;
+        /**
+         * @var string[]
+         */
+        public $regions;
+        protected $virtualMachineType = VirtualMachine::class;
+        protected $virtualMachineDataType = '';
+        /**
+         * @var string[]
+         */
+        public $zones;
+        /**
+         * @param string
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setRegions($regions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRegions()
+        {
+        }
+        /**
+         * @param VirtualMachine
+         */
+        public function setVirtualMachine(VirtualMachine $virtualMachine)
+        {
+        }
+        /**
+         * @return VirtualMachine
+         */
+        public function getVirtualMachine()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setZones($zones)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getZones()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Genomics\Resources registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProjectId()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setRegions($regions)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRegions()
-    {
-    }
-    /**
-     * @param VirtualMachine
-     */
-    public function setVirtualMachine(VirtualMachine $virtualMachine)
-    {
-    }
-    /**
-     * @return VirtualMachine
-     */
-    public function getVirtualMachine()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setZones($zones)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getZones()
+    class Google_Service_Genomics_Resources extends \Google\Service\Genomics\Resources
     {
     }
 }

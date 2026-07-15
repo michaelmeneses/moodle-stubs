@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1beta3DatasetGCSManagedConfig extends \Google\Model
-{
-    protected $gcsPrefixType = GoogleCloudDocumentaiV1beta3GcsPrefix::class;
-    protected $gcsPrefixDataType = '';
-    /**
-     * Required. The Cloud Storage URI (a directory) where the documents belonging
-     * to the dataset must be stored.
-     *
-     * @param GoogleCloudDocumentaiV1beta3GcsPrefix $gcsPrefix
-     */
-    public function setGcsPrefix(GoogleCloudDocumentaiV1beta3GcsPrefix $gcsPrefix)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1beta3DatasetGCSManagedConfig extends \Google\Model
     {
+        protected $gcsPrefixType = GoogleCloudDocumentaiV1beta3GcsPrefix::class;
+        protected $gcsPrefixDataType = '';
+        /**
+         * Required. The Cloud Storage URI (a directory) where the documents belonging
+         * to the dataset must be stored.
+         *
+         * @param GoogleCloudDocumentaiV1beta3GcsPrefix $gcsPrefix
+         */
+        public function setGcsPrefix(GoogleCloudDocumentaiV1beta3GcsPrefix $gcsPrefix)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta3GcsPrefix
+         */
+        public function getGcsPrefix()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiV1beta3GcsPrefix
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1beta3DatasetGCSManagedConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGcsPrefix()
+    class Google_Service_Document_GoogleCloudDocumentaiV1beta3DatasetGCSManagedConfig extends \Google\Service\Document\GoogleCloudDocumentaiV1beta3DatasetGCSManagedConfig
     {
     }
 }

@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class DataDiskAssignment extends \Google\Collection
-{
-    protected $collection_key = 'dataDisks';
-    /**
-     * Mounted data disks. The order is important a data disk's 0-based index in
-     * this list defines which persistent directory the disk is mounted to, for
-     * example the list of { "myproject-1014-104817-4c2-harness-0-disk-0" }, {
-     * "myproject-1014-104817-4c2-harness-0-disk-1" }.
-     *
-     * @var string[]
-     */
-    public $dataDisks;
-    /**
-     * VM instance name the data disks mounted to, for example
-     * "myproject-1014-104817-4c2-harness-0".
-     *
-     * @var string
-     */
-    public $vmInstance;
-    /**
-     * Mounted data disks. The order is important a data disk's 0-based index in
-     * this list defines which persistent directory the disk is mounted to, for
-     * example the list of { "myproject-1014-104817-4c2-harness-0-disk-0" }, {
-     * "myproject-1014-104817-4c2-harness-0-disk-1" }.
-     *
-     * @param string[] $dataDisks
-     */
-    public function setDataDisks($dataDisks)
+namespace Google\Service\Dataflow {
+    class DataDiskAssignment extends \Google\Collection
     {
+        protected $collection_key = 'dataDisks';
+        /**
+         * Mounted data disks. The order is important a data disk's 0-based index in
+         * this list defines which persistent directory the disk is mounted to, for
+         * example the list of { "myproject-1014-104817-4c2-harness-0-disk-0" }, {
+         * "myproject-1014-104817-4c2-harness-0-disk-1" }.
+         *
+         * @var string[]
+         */
+        public $dataDisks;
+        /**
+         * VM instance name the data disks mounted to, for example
+         * "myproject-1014-104817-4c2-harness-0".
+         *
+         * @var string
+         */
+        public $vmInstance;
+        /**
+         * Mounted data disks. The order is important a data disk's 0-based index in
+         * this list defines which persistent directory the disk is mounted to, for
+         * example the list of { "myproject-1014-104817-4c2-harness-0-disk-0" }, {
+         * "myproject-1014-104817-4c2-harness-0-disk-1" }.
+         *
+         * @param string[] $dataDisks
+         */
+        public function setDataDisks($dataDisks)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDataDisks()
+        {
+        }
+        /**
+         * VM instance name the data disks mounted to, for example
+         * "myproject-1014-104817-4c2-harness-0".
+         *
+         * @param string $vmInstance
+         */
+        public function setVmInstance($vmInstance)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVmInstance()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Dataflow\DataDiskAssignment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataDisks()
-    {
-    }
-    /**
-     * VM instance name the data disks mounted to, for example
-     * "myproject-1014-104817-4c2-harness-0".
-     *
-     * @param string $vmInstance
-     */
-    public function setVmInstance($vmInstance)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVmInstance()
+    class Google_Service_Dataflow_DataDiskAssignment extends \Google\Service\Dataflow\DataDiskAssignment
     {
     }
 }

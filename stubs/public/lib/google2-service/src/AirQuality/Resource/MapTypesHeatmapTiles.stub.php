@@ -21,39 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AirQuality\Resource;
-
-/**
- * The "heatmapTiles" collection of methods.
- * Typical usage is:
- *  <code>
- *   $airqualityService = new Google\Service\AirQuality(...);
- *   $heatmapTiles = $airqualityService->mapTypes_heatmapTiles;
- *  </code>
- */
-class MapTypesHeatmapTiles extends \Google\Service\Resource
-{
+namespace Google\Service\AirQuality\Resource {
+    use Google\Service\AirQuality\HttpBody;
     /**
-     * Returns a bytes array containing the data of the tile PNG image.
-     * (heatmapTiles.lookupHeatmapTile)
-     *
-     * @param string $mapType Required. The type of the air quality heatmap. Defines
-     * the pollutant that the map will graphically represent. Allowed values: -
-     * UAQI_RED_GREEN (UAQI, red-green palette) - UAQI_INDIGO_PERSIAN (UAQI, indigo-
-     * persian palette) - PM25_INDIGO_PERSIAN - GBR_DEFRA - DEU_UBA - CAN_EC -
-     * FRA_ATMO - US_AQI
-     * @param int $zoom Required. The map's zoom level. Defines how large or small
-     * the contents of a map appear in a map view. Zoom level 0 is the entire world
-     * in a single tile. Zoom level 1 is the entire world in 4 tiles. Zoom level 2
-     * is the entire world in 16 tiles. Zoom level 16 is the entire world in 65,536
-     * tiles. Allowed values: 0-16
-     * @param int $x Required. Defines the east-west point in the requested tile.
-     * @param int $y Required. Defines the north-south point in the requested tile.
-     * @param array $optParams Optional parameters.
-     * @return HttpBody
-     * @throws \Google\Service\Exception
+     * The "heatmapTiles" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $airqualityService = new Google\Service\AirQuality(...);
+     *   $heatmapTiles = $airqualityService->mapTypes_heatmapTiles;
+     *  </code>
      */
-    public function lookupHeatmapTile($mapType, $zoom, $x, $y, $optParams = [])
+    class MapTypesHeatmapTiles extends \Google\Service\Resource
+    {
+        /**
+         * Returns a bytes array containing the data of the tile PNG image.
+         * (heatmapTiles.lookupHeatmapTile)
+         *
+         * @param string $mapType Required. The type of the air quality heatmap. Defines
+         * the pollutant that the map will graphically represent. Allowed values: -
+         * UAQI_RED_GREEN (UAQI, red-green palette) - UAQI_INDIGO_PERSIAN (UAQI, indigo-
+         * persian palette) - PM25_INDIGO_PERSIAN - GBR_DEFRA - DEU_UBA - CAN_EC -
+         * FRA_ATMO - US_AQI
+         * @param int $zoom Required. The map's zoom level. Defines how large or small
+         * the contents of a map appear in a map view. Zoom level 0 is the entire world
+         * in a single tile. Zoom level 1 is the entire world in 4 tiles. Zoom level 2
+         * is the entire world in 16 tiles. Zoom level 16 is the entire world in 65,536
+         * tiles. Allowed values: 0-16
+         * @param int $x Required. Defines the east-west point in the requested tile.
+         * @param int $y Required. Defines the north-south point in the requested tile.
+         * @param array $optParams Optional parameters.
+         * @return HttpBody
+         * @throws \Google\Service\Exception
+         */
+        public function lookupHeatmapTile($mapType, $zoom, $x, $y, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AirQuality\Resource\MapTypesHeatmapTiles registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AirQuality_Resource_MapTypesHeatmapTiles extends \Google\Service\AirQuality\Resource\MapTypesHeatmapTiles
     {
     }
 }

@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseDynamicLinks;
-
-class DynamicLinkStats extends \Google\Collection
-{
-    protected $collection_key = 'warnings';
-    protected $linkEventStatsType = DynamicLinkEventStat::class;
-    protected $linkEventStatsDataType = 'array';
-    protected $warningsType = DynamicLinkWarning::class;
-    protected $warningsDataType = 'array';
-    /**
-     * Dynamic Link event stats.
-     *
-     * @param DynamicLinkEventStat[] $linkEventStats
-     */
-    public function setLinkEventStats($linkEventStats)
+namespace Google\Service\FirebaseDynamicLinks {
+    class DynamicLinkStats extends \Google\Collection
     {
+        protected $collection_key = 'warnings';
+        protected $linkEventStatsType = DynamicLinkEventStat::class;
+        protected $linkEventStatsDataType = 'array';
+        protected $warningsType = DynamicLinkWarning::class;
+        protected $warningsDataType = 'array';
+        /**
+         * Dynamic Link event stats.
+         *
+         * @param DynamicLinkEventStat[] $linkEventStats
+         */
+        public function setLinkEventStats($linkEventStats)
+        {
+        }
+        /**
+         * @return DynamicLinkEventStat[]
+         */
+        public function getLinkEventStats()
+        {
+        }
+        /**
+         * Optional warnings associated this API request.
+         *
+         * @param DynamicLinkWarning[] $warnings
+         */
+        public function setWarnings($warnings)
+        {
+        }
+        /**
+         * @return DynamicLinkWarning[]
+         */
+        public function getWarnings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DynamicLinkEventStat[]
+     * Runtime class alias of \Google\Service\FirebaseDynamicLinks\DynamicLinkStats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLinkEventStats()
-    {
-    }
-    /**
-     * Optional warnings associated this API request.
-     *
-     * @param DynamicLinkWarning[] $warnings
-     */
-    public function setWarnings($warnings)
-    {
-    }
-    /**
-     * @return DynamicLinkWarning[]
-     */
-    public function getWarnings()
+    class Google_Service_FirebaseDynamicLinks_DynamicLinkStats extends \Google\Service\FirebaseDynamicLinks\DynamicLinkStats
     {
     }
 }

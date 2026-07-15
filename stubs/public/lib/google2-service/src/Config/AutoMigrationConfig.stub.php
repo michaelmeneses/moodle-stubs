@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Config;
-
-class AutoMigrationConfig extends \Google\Model
-{
-    /**
-     * Optional. Whether the auto migration is enabled for the project.
-     *
-     * @var bool
-     */
-    public $autoMigrationEnabled;
-    /**
-     * Identifier. The name of the AutoMigrationConfig. Format:
-     * 'projects/{project_id}/locations/{location}/AutoMigrationConfig'.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. Time the AutoMigrationConfig was last updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Optional. Whether the auto migration is enabled for the project.
-     *
-     * @param bool $autoMigrationEnabled
-     */
-    public function setAutoMigrationEnabled($autoMigrationEnabled)
+namespace Google\Service\Config {
+    class AutoMigrationConfig extends \Google\Model
     {
+        /**
+         * Optional. Whether the auto migration is enabled for the project.
+         *
+         * @var bool
+         */
+        public $autoMigrationEnabled;
+        /**
+         * Identifier. The name of the AutoMigrationConfig. Format:
+         * 'projects/{project_id}/locations/{location}/AutoMigrationConfig'.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. Time the AutoMigrationConfig was last updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Optional. Whether the auto migration is enabled for the project.
+         *
+         * @param bool $autoMigrationEnabled
+         */
+        public function setAutoMigrationEnabled($autoMigrationEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAutoMigrationEnabled()
+        {
+        }
+        /**
+         * Identifier. The name of the AutoMigrationConfig. Format:
+         * 'projects/{project_id}/locations/{location}/AutoMigrationConfig'.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. Time the AutoMigrationConfig was last updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Config\AutoMigrationConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAutoMigrationEnabled()
-    {
-    }
-    /**
-     * Identifier. The name of the AutoMigrationConfig. Format:
-     * 'projects/{project_id}/locations/{location}/AutoMigrationConfig'.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. Time the AutoMigrationConfig was last updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_Config_AutoMigrationConfig extends \Google\Service\Config\AutoMigrationConfig
     {
     }
 }

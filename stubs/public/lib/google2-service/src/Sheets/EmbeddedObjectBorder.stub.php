@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class EmbeddedObjectBorder extends \Google\Model
-{
-    protected $colorType = Color::class;
-    protected $colorDataType = '';
-    protected $colorStyleType = ColorStyle::class;
-    protected $colorStyleDataType = '';
-    /**
-     * The color of the border. Deprecated: Use color_style.
-     *
-     * @deprecated
-     * @param Color $color
-     */
-    public function setColor(Color $color)
+namespace Google\Service\Sheets {
+    class EmbeddedObjectBorder extends \Google\Model
     {
+        protected $colorType = Color::class;
+        protected $colorDataType = '';
+        protected $colorStyleType = ColorStyle::class;
+        protected $colorStyleDataType = '';
+        /**
+         * The color of the border. Deprecated: Use color_style.
+         *
+         * @deprecated
+         * @param Color $color
+         */
+        public function setColor(Color $color)
+        {
+        }
+        /**
+         * @deprecated
+         * @return Color
+         */
+        public function getColor()
+        {
+        }
+        /**
+         * The color of the border. If color is also set, this field takes precedence.
+         *
+         * @param ColorStyle $colorStyle
+         */
+        public function setColorStyle(ColorStyle $colorStyle)
+        {
+        }
+        /**
+         * @return ColorStyle
+         */
+        public function getColorStyle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return Color
+     * Runtime class alias of \Google\Service\Sheets\EmbeddedObjectBorder registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColor()
-    {
-    }
-    /**
-     * The color of the border. If color is also set, this field takes precedence.
-     *
-     * @param ColorStyle $colorStyle
-     */
-    public function setColorStyle(ColorStyle $colorStyle)
-    {
-    }
-    /**
-     * @return ColorStyle
-     */
-    public function getColorStyle()
+    class Google_Service_Sheets_EmbeddedObjectBorder extends \Google\Service\Sheets\EmbeddedObjectBorder
     {
     }
 }

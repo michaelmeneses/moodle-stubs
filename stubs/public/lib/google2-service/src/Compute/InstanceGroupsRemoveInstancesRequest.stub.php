@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InstanceGroupsRemoveInstancesRequest extends \Google\Collection
-{
-    protected $collection_key = 'instances';
-    protected $instancesType = InstanceReference::class;
-    protected $instancesDataType = 'array';
-    /**
-     * The list of instances to remove from the instance group.
-     *
-     * @param InstanceReference[] $instances
-     */
-    public function setInstances($instances)
+namespace Google\Service\Compute {
+    class InstanceGroupsRemoveInstancesRequest extends \Google\Collection
     {
+        protected $collection_key = 'instances';
+        protected $instancesType = InstanceReference::class;
+        protected $instancesDataType = 'array';
+        /**
+         * The list of instances to remove from the instance group.
+         *
+         * @param InstanceReference[] $instances
+         */
+        public function setInstances($instances)
+        {
+        }
+        /**
+         * @return InstanceReference[]
+         */
+        public function getInstances()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InstanceReference[]
+     * Runtime class alias of \Google\Service\Compute\InstanceGroupsRemoveInstancesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstances()
+    class Google_Service_Compute_InstanceGroupsRemoveInstancesRequest extends \Google\Service\Compute\InstanceGroupsRemoveInstancesRequest
     {
     }
 }

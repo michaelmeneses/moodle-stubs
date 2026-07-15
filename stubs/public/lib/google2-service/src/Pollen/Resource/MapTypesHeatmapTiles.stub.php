@@ -21,36 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Pollen\Resource;
-
-/**
- * The "heatmapTiles" collection of methods.
- * Typical usage is:
- *  <code>
- *   $pollenService = new Google\Service\Pollen(...);
- *   $heatmapTiles = $pollenService->mapTypes_heatmapTiles;
- *  </code>
- */
-class MapTypesHeatmapTiles extends \Google\Service\Resource
-{
+namespace Google\Service\Pollen\Resource {
+    use Google\Service\Pollen\HttpBody;
     /**
-     * Returns a byte array containing the data of the tile PNG image.
-     * (heatmapTiles.lookupHeatmapTile)
-     *
-     * @param string $mapType Required. The type of the pollen heatmap. Defines the
-     * combination of pollen type and index that the map will graphically represent.
-     * @param int $zoom Required. The map's zoom level. Defines how large or small
-     * the contents of a map appear in a map view. * Zoom level 0 is the entire
-     * world in a single tile. * Zoom level 1 is the entire world in 4 tiles. * Zoom
-     * level 2 is the entire world in 16 tiles. * Zoom level 16 is the entire world
-     * in 65,536 tiles. Allowed values: 0-16
-     * @param int $x Required. Defines the east-west point in the requested tile.
-     * @param int $y Required. Defines the north-south point in the requested tile.
-     * @param array $optParams Optional parameters.
-     * @return HttpBody
-     * @throws \Google\Service\Exception
+     * The "heatmapTiles" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $pollenService = new Google\Service\Pollen(...);
+     *   $heatmapTiles = $pollenService->mapTypes_heatmapTiles;
+     *  </code>
      */
-    public function lookupHeatmapTile($mapType, $zoom, $x, $y, $optParams = [])
+    class MapTypesHeatmapTiles extends \Google\Service\Resource
+    {
+        /**
+         * Returns a byte array containing the data of the tile PNG image.
+         * (heatmapTiles.lookupHeatmapTile)
+         *
+         * @param string $mapType Required. The type of the pollen heatmap. Defines the
+         * combination of pollen type and index that the map will graphically represent.
+         * @param int $zoom Required. The map's zoom level. Defines how large or small
+         * the contents of a map appear in a map view. * Zoom level 0 is the entire
+         * world in a single tile. * Zoom level 1 is the entire world in 4 tiles. * Zoom
+         * level 2 is the entire world in 16 tiles. * Zoom level 16 is the entire world
+         * in 65,536 tiles. Allowed values: 0-16
+         * @param int $x Required. Defines the east-west point in the requested tile.
+         * @param int $y Required. Defines the north-south point in the requested tile.
+         * @param array $optParams Optional parameters.
+         * @return HttpBody
+         * @throws \Google\Service\Exception
+         */
+        public function lookupHeatmapTile($mapType, $zoom, $x, $y, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Pollen\Resource\MapTypesHeatmapTiles registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Pollen_Resource_MapTypesHeatmapTiles extends \Google\Service\Pollen\Resource\MapTypesHeatmapTiles
     {
     }
 }

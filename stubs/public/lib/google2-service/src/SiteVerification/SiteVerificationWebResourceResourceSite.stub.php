@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SiteVerification;
-
-class SiteVerificationWebResourceResourceSite extends \Google\Model
-{
-    /**
-     * The site identifier. If the type is set to SITE, the identifier is a URL.
-     * If the type is set to INET_DOMAIN, the site identifier is a domain name.
-     *
-     * @var string
-     */
-    public $identifier;
-    /**
-     * The site type. Can be SITE or INET_DOMAIN (domain name).
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The site identifier. If the type is set to SITE, the identifier is a URL.
-     * If the type is set to INET_DOMAIN, the site identifier is a domain name.
-     *
-     * @param string $identifier
-     */
-    public function setIdentifier($identifier)
+namespace Google\Service\SiteVerification {
+    class SiteVerificationWebResourceResourceSite extends \Google\Model
     {
+        /**
+         * The site identifier. If the type is set to SITE, the identifier is a URL.
+         * If the type is set to INET_DOMAIN, the site identifier is a domain name.
+         *
+         * @var string
+         */
+        public $identifier;
+        /**
+         * The site type. Can be SITE or INET_DOMAIN (domain name).
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The site identifier. If the type is set to SITE, the identifier is a URL.
+         * If the type is set to INET_DOMAIN, the site identifier is a domain name.
+         *
+         * @param string $identifier
+         */
+        public function setIdentifier($identifier)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIdentifier()
+        {
+        }
+        /**
+         * The site type. Can be SITE or INET_DOMAIN (domain name).
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SiteVerification\SiteVerificationWebResourceResourceSite registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIdentifier()
-    {
-    }
-    /**
-     * The site type. Can be SITE or INET_DOMAIN (domain name).
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_SiteVerification_SiteVerificationWebResourceResourceSite extends \Google\Service\SiteVerification\SiteVerificationWebResourceResourceSite
     {
     }
 }

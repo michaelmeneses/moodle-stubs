@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vault;
-
-class AddMatterPermissionsRequest extends \Google\Model
-{
-    /**
-     * Only relevant if **sendEmails** is **true**. To CC the requestor in the
-     * email message, set to **true**. To not CC requestor, set to **false**.
-     *
-     * @var bool
-     */
-    public $ccMe;
-    protected $matterPermissionType = MatterPermission::class;
-    protected $matterPermissionDataType = '';
-    /**
-     * To send a notification email to the added account, set to **true**. To not
-     * send a notification email, set to **false**.
-     *
-     * @var bool
-     */
-    public $sendEmails;
-    /**
-     * Only relevant if **sendEmails** is **true**. To CC the requestor in the
-     * email message, set to **true**. To not CC requestor, set to **false**.
-     *
-     * @param bool $ccMe
-     */
-    public function setCcMe($ccMe)
+namespace Google\Service\Vault {
+    class AddMatterPermissionsRequest extends \Google\Model
     {
+        /**
+         * Only relevant if **sendEmails** is **true**. To CC the requestor in the
+         * email message, set to **true**. To not CC requestor, set to **false**.
+         *
+         * @var bool
+         */
+        public $ccMe;
+        protected $matterPermissionType = MatterPermission::class;
+        protected $matterPermissionDataType = '';
+        /**
+         * To send a notification email to the added account, set to **true**. To not
+         * send a notification email, set to **false**.
+         *
+         * @var bool
+         */
+        public $sendEmails;
+        /**
+         * Only relevant if **sendEmails** is **true**. To CC the requestor in the
+         * email message, set to **true**. To not CC requestor, set to **false**.
+         *
+         * @param bool $ccMe
+         */
+        public function setCcMe($ccMe)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCcMe()
+        {
+        }
+        /**
+         * The account and its role to add.
+         *
+         * @param MatterPermission $matterPermission
+         */
+        public function setMatterPermission(MatterPermission $matterPermission)
+        {
+        }
+        /**
+         * @return MatterPermission
+         */
+        public function getMatterPermission()
+        {
+        }
+        /**
+         * To send a notification email to the added account, set to **true**. To not
+         * send a notification email, set to **false**.
+         *
+         * @param bool $sendEmails
+         */
+        public function setSendEmails($sendEmails)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSendEmails()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Vault\AddMatterPermissionsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCcMe()
-    {
-    }
-    /**
-     * The account and its role to add.
-     *
-     * @param MatterPermission $matterPermission
-     */
-    public function setMatterPermission(MatterPermission $matterPermission)
-    {
-    }
-    /**
-     * @return MatterPermission
-     */
-    public function getMatterPermission()
-    {
-    }
-    /**
-     * To send a notification email to the added account, set to **true**. To not
-     * send a notification email, set to **false**.
-     *
-     * @param bool $sendEmails
-     */
-    public function setSendEmails($sendEmails)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSendEmails()
+    class Google_Service_Vault_AddMatterPermissionsRequest extends \Google\Service\Vault\AddMatterPermissionsRequest
     {
     }
 }

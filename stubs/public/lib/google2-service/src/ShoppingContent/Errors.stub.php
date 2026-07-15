@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class Errors extends \Google\Collection
-{
-    protected $collection_key = 'errors';
-    /**
-     * The HTTP status of the first error in `errors`.
-     *
-     * @var string
-     */
-    public $code;
-    protected $errorsType = Error::class;
-    protected $errorsDataType = 'array';
-    /**
-     * The message of the first error in `errors`.
-     *
-     * @var string
-     */
-    public $message;
-    /**
-     * The HTTP status of the first error in `errors`.
-     *
-     * @param string $code
-     */
-    public function setCode($code)
+namespace Google\Service\ShoppingContent {
+    class Errors extends \Google\Collection
     {
+        protected $collection_key = 'errors';
+        /**
+         * The HTTP status of the first error in `errors`.
+         *
+         * @var string
+         */
+        public $code;
+        protected $errorsType = Error::class;
+        protected $errorsDataType = 'array';
+        /**
+         * The message of the first error in `errors`.
+         *
+         * @var string
+         */
+        public $message;
+        /**
+         * The HTTP status of the first error in `errors`.
+         *
+         * @param string $code
+         */
+        public function setCode($code)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCode()
+        {
+        }
+        /**
+         * A list of errors.
+         *
+         * @param Error[] $errors
+         */
+        public function setErrors($errors)
+        {
+        }
+        /**
+         * @return Error[]
+         */
+        public function getErrors()
+        {
+        }
+        /**
+         * The message of the first error in `errors`.
+         *
+         * @param string $message
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\Errors registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCode()
-    {
-    }
-    /**
-     * A list of errors.
-     *
-     * @param Error[] $errors
-     */
-    public function setErrors($errors)
-    {
-    }
-    /**
-     * @return Error[]
-     */
-    public function getErrors()
-    {
-    }
-    /**
-     * The message of the first error in `errors`.
-     *
-     * @param string $message
-     */
-    public function setMessage($message)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMessage()
+    class Google_Service_ShoppingContent_Errors extends \Google\Service\ShoppingContent\Errors
     {
     }
 }

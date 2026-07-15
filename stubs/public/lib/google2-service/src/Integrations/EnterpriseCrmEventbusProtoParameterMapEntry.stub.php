@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmEventbusProtoParameterMapEntry extends \Google\Model
-{
-    protected $keyType = EnterpriseCrmEventbusProtoParameterMapField::class;
-    protected $keyDataType = '';
-    protected $valueType = EnterpriseCrmEventbusProtoParameterMapField::class;
-    protected $valueDataType = '';
-    /**
-     * @param EnterpriseCrmEventbusProtoParameterMapField $key
-     */
-    public function setKey(EnterpriseCrmEventbusProtoParameterMapField $key)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmEventbusProtoParameterMapEntry extends \Google\Model
     {
+        protected $keyType = EnterpriseCrmEventbusProtoParameterMapField::class;
+        protected $keyDataType = '';
+        protected $valueType = EnterpriseCrmEventbusProtoParameterMapField::class;
+        protected $valueDataType = '';
+        /**
+         * @param EnterpriseCrmEventbusProtoParameterMapField $key
+         */
+        public function setKey(EnterpriseCrmEventbusProtoParameterMapField $key)
+        {
+        }
+        /**
+         * @return EnterpriseCrmEventbusProtoParameterMapField
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * @param EnterpriseCrmEventbusProtoParameterMapField $value
+         */
+        public function setValue(EnterpriseCrmEventbusProtoParameterMapField $value)
+        {
+        }
+        /**
+         * @return EnterpriseCrmEventbusProtoParameterMapField
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EnterpriseCrmEventbusProtoParameterMapField
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmEventbusProtoParameterMapEntry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKey()
-    {
-    }
-    /**
-     * @param EnterpriseCrmEventbusProtoParameterMapField $value
-     */
-    public function setValue(EnterpriseCrmEventbusProtoParameterMapField $value)
-    {
-    }
-    /**
-     * @return EnterpriseCrmEventbusProtoParameterMapField
-     */
-    public function getValue()
+    class Google_Service_Integrations_EnterpriseCrmEventbusProtoParameterMapEntry extends \Google\Service\Integrations\EnterpriseCrmEventbusProtoParameterMapEntry
     {
     }
 }

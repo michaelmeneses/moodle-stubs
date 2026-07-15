@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkspaceEvents;
-
-class Security extends \Google\Model
-{
-    protected $schemesType = StringList::class;
-    protected $schemesDataType = 'map';
-    /**
-     * @param StringList[] $schemes
-     */
-    public function setSchemes($schemes)
+namespace Google\Service\WorkspaceEvents {
+    class Security extends \Google\Model
     {
+        protected $schemesType = StringList::class;
+        protected $schemesDataType = 'map';
+        /**
+         * @param StringList[] $schemes
+         */
+        public function setSchemes($schemes)
+        {
+        }
+        /**
+         * @return StringList[]
+         */
+        public function getSchemes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return StringList[]
+     * Runtime class alias of \Google\Service\WorkspaceEvents\Security registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSchemes()
+    class Google_Service_WorkspaceEvents_Security extends \Google\Service\WorkspaceEvents\Security
     {
     }
 }

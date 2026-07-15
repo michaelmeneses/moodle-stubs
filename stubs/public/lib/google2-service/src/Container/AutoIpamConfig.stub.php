@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class AutoIpamConfig extends \Google\Model
-{
-    /**
-     * The flag that enables Auto IPAM on this cluster
-     *
-     * @var bool
-     */
-    public $enabled;
-    /**
-     * The flag that enables Auto IPAM on this cluster
-     *
-     * @param bool $enabled
-     */
-    public function setEnabled($enabled)
+namespace Google\Service\Container {
+    class AutoIpamConfig extends \Google\Model
     {
+        /**
+         * The flag that enables Auto IPAM on this cluster
+         *
+         * @var bool
+         */
+        public $enabled;
+        /**
+         * The flag that enables Auto IPAM on this cluster
+         *
+         * @param bool $enabled
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Container\AutoIpamConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnabled()
+    class Google_Service_Container_AutoIpamConfig extends \Google\Service\Container\AutoIpamConfig
     {
     }
 }

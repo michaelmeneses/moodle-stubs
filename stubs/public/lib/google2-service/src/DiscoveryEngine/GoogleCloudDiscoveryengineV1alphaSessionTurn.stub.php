@@ -21,109 +21,118 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaSessionTurn extends \Google\Model
-{
-    /**
-     * Optional. The resource name of the answer to the user query. Only set if
-     * the answer generation (/answer API call) happened in this turn.
-     *
-     * @var string
-     */
-    public $answer;
-    protected $detailedAnswerType = GoogleCloudDiscoveryengineV1alphaAnswer::class;
-    protected $detailedAnswerDataType = '';
-    protected $detailedAssistAnswerType = GoogleCloudDiscoveryengineV1alphaAssistAnswer::class;
-    protected $detailedAssistAnswerDataType = '';
-    protected $queryType = GoogleCloudDiscoveryengineV1alphaQuery::class;
-    protected $queryDataType = '';
-    /**
-     * Optional. Represents metadata related to the query config, for example LLM
-     * model and version used, model parameters (temperature, grounding
-     * parameters, etc.). The prefix "google." is reserved for Google-developed
-     * functionality.
-     *
-     * @var string[]
-     */
-    public $queryConfig;
-    /**
-     * Optional. The resource name of the answer to the user query. Only set if
-     * the answer generation (/answer API call) happened in this turn.
-     *
-     * @param string $answer
-     */
-    public function setAnswer($answer)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaSessionTurn extends \Google\Model
     {
+        /**
+         * Optional. The resource name of the answer to the user query. Only set if
+         * the answer generation (/answer API call) happened in this turn.
+         *
+         * @var string
+         */
+        public $answer;
+        protected $detailedAnswerType = GoogleCloudDiscoveryengineV1alphaAnswer::class;
+        protected $detailedAnswerDataType = '';
+        protected $detailedAssistAnswerType = GoogleCloudDiscoveryengineV1alphaAssistAnswer::class;
+        protected $detailedAssistAnswerDataType = '';
+        protected $queryType = GoogleCloudDiscoveryengineV1alphaQuery::class;
+        protected $queryDataType = '';
+        /**
+         * Optional. Represents metadata related to the query config, for example LLM
+         * model and version used, model parameters (temperature, grounding
+         * parameters, etc.). The prefix "google." is reserved for Google-developed
+         * functionality.
+         *
+         * @var string[]
+         */
+        public $queryConfig;
+        /**
+         * Optional. The resource name of the answer to the user query. Only set if
+         * the answer generation (/answer API call) happened in this turn.
+         *
+         * @param string $answer
+         */
+        public function setAnswer($answer)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnswer()
+        {
+        }
+        /**
+         * Output only. In ConversationalSearchService.GetSession API, if
+         * GetSessionRequest.include_answer_details is set to true, this field will be
+         * populated when getting answer query session.
+         *
+         * @param GoogleCloudDiscoveryengineV1alphaAnswer $detailedAnswer
+         */
+        public function setDetailedAnswer(GoogleCloudDiscoveryengineV1alphaAnswer $detailedAnswer)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1alphaAnswer
+         */
+        public function getDetailedAnswer()
+        {
+        }
+        /**
+         * Output only. In ConversationalSearchService.GetSession API, if
+         * GetSessionRequest.include_answer_details is set to true, this field will be
+         * populated when getting assistant session.
+         *
+         * @param GoogleCloudDiscoveryengineV1alphaAssistAnswer $detailedAssistAnswer
+         */
+        public function setDetailedAssistAnswer(GoogleCloudDiscoveryengineV1alphaAssistAnswer $detailedAssistAnswer)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1alphaAssistAnswer
+         */
+        public function getDetailedAssistAnswer()
+        {
+        }
+        /**
+         * Optional. The user query. May not be set if this turn is merely
+         * regenerating an answer to a different turn
+         *
+         * @param GoogleCloudDiscoveryengineV1alphaQuery $query
+         */
+        public function setQuery(GoogleCloudDiscoveryengineV1alphaQuery $query)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1alphaQuery
+         */
+        public function getQuery()
+        {
+        }
+        /**
+         * Optional. Represents metadata related to the query config, for example LLM
+         * model and version used, model parameters (temperature, grounding
+         * parameters, etc.). The prefix "google." is reserved for Google-developed
+         * functionality.
+         *
+         * @param string[] $queryConfig
+         */
+        public function setQueryConfig($queryConfig)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getQueryConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaSessionTurn registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnswer()
-    {
-    }
-    /**
-     * Output only. In ConversationalSearchService.GetSession API, if
-     * GetSessionRequest.include_answer_details is set to true, this field will be
-     * populated when getting answer query session.
-     *
-     * @param GoogleCloudDiscoveryengineV1alphaAnswer $detailedAnswer
-     */
-    public function setDetailedAnswer(GoogleCloudDiscoveryengineV1alphaAnswer $detailedAnswer)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1alphaAnswer
-     */
-    public function getDetailedAnswer()
-    {
-    }
-    /**
-     * Output only. In ConversationalSearchService.GetSession API, if
-     * GetSessionRequest.include_answer_details is set to true, this field will be
-     * populated when getting assistant session.
-     *
-     * @param GoogleCloudDiscoveryengineV1alphaAssistAnswer $detailedAssistAnswer
-     */
-    public function setDetailedAssistAnswer(GoogleCloudDiscoveryengineV1alphaAssistAnswer $detailedAssistAnswer)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1alphaAssistAnswer
-     */
-    public function getDetailedAssistAnswer()
-    {
-    }
-    /**
-     * Optional. The user query. May not be set if this turn is merely
-     * regenerating an answer to a different turn
-     *
-     * @param GoogleCloudDiscoveryengineV1alphaQuery $query
-     */
-    public function setQuery(GoogleCloudDiscoveryengineV1alphaQuery $query)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1alphaQuery
-     */
-    public function getQuery()
-    {
-    }
-    /**
-     * Optional. Represents metadata related to the query config, for example LLM
-     * model and version used, model parameters (temperature, grounding
-     * parameters, etc.). The prefix "google." is reserved for Google-developed
-     * functionality.
-     *
-     * @param string[] $queryConfig
-     */
-    public function setQueryConfig($queryConfig)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getQueryConfig()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaSessionTurn extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaSessionTurn
     {
     }
 }

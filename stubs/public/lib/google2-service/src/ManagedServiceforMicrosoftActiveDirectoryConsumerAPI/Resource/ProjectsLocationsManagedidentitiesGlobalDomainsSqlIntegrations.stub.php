@@ -21,55 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\Resource;
-
-/**
- * The "sqlIntegrations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $managedidentitiesService = new Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI(...);
- *   $sqlIntegrations = $managedidentitiesService->projects_locations_global_domains_sqlIntegrations;
- *  </code>
- */
-class ProjectsLocationsManagedidentitiesGlobalDomainsSqlIntegrations extends \Google\Service\Resource
-{
+namespace Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\Resource {
+    use Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\ListSqlIntegrationsResponse;
+    use Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\SqlIntegration;
     /**
-     * Gets details of a single sqlIntegration. (sqlIntegrations.get)
-     *
-     * @param string $name Required. SQLIntegration resource name using the form: `p
-     * rojects/{project_id}/locations/global/domains/{domain}/sqlIntegrations/{name}
-     * `
-     * @param array $optParams Optional parameters.
-     * @return SqlIntegration
-     * @throws \Google\Service\Exception
+     * The "sqlIntegrations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $managedidentitiesService = new Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI(...);
+     *   $sqlIntegrations = $managedidentitiesService->projects_locations_global_domains_sqlIntegrations;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class ProjectsLocationsManagedidentitiesGlobalDomainsSqlIntegrations extends \Google\Service\Resource
     {
+        /**
+         * Gets details of a single sqlIntegration. (sqlIntegrations.get)
+         *
+         * @param string $name Required. SQLIntegration resource name using the form: `p
+         * rojects/{project_id}/locations/global/domains/{domain}/sqlIntegrations/{name}
+         * `
+         * @param array $optParams Optional parameters.
+         * @return SqlIntegration
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists SqlIntegrations in a given domain. (sqlIntegrations.listProjectsLocatio
+         * nsManagedidentitiesGlobalDomainsSqlIntegrations)
+         *
+         * @param string $parent Required. The resource name of the SqlIntegrations
+         * using the form: `projects/{project_id}/locations/global/domains`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Optional. Filter specifying constraints of a list
+         * operation. For example, `SqlIntegration.name="sql"`.
+         * @opt_param string orderBy Optional. Specifies the ordering of results
+         * following syntax at
+         * https://cloud.google.com/apis/design/design_patterns#sorting_order.
+         * @opt_param int pageSize Optional. The maximum number of items to return. If
+         * not specified, a default value of 1000 will be used by the service.
+         * Regardless of the page_size value, the response may include a partial list
+         * and a caller should only rely on response'ANIZATIONs next_page_token to
+         * determine if there are more instances left to be queried.
+         * @opt_param string pageToken Optional. The next_page_token value returned from
+         * a previous List request, if any.
+         * @return ListSqlIntegrationsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsManagedidentitiesGlobalDomainsSqlIntegrations($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists SqlIntegrations in a given domain. (sqlIntegrations.listProjectsLocatio
-     * nsManagedidentitiesGlobalDomainsSqlIntegrations)
-     *
-     * @param string $parent Required. The resource name of the SqlIntegrations
-     * using the form: `projects/{project_id}/locations/global/domains`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Optional. Filter specifying constraints of a list
-     * operation. For example, `SqlIntegration.name="sql"`.
-     * @opt_param string orderBy Optional. Specifies the ordering of results
-     * following syntax at
-     * https://cloud.google.com/apis/design/design_patterns#sorting_order.
-     * @opt_param int pageSize Optional. The maximum number of items to return. If
-     * not specified, a default value of 1000 will be used by the service.
-     * Regardless of the page_size value, the response may include a partial list
-     * and a caller should only rely on response'ANIZATIONs next_page_token to
-     * determine if there are more instances left to be queried.
-     * @opt_param string pageToken Optional. The next_page_token value returned from
-     * a previous List request, if any.
-     * @return ListSqlIntegrationsResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\Resource\ProjectsLocationsManagedidentitiesGlobalDomainsSqlIntegrations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listProjectsLocationsManagedidentitiesGlobalDomainsSqlIntegrations($parent, $optParams = [])
+    class Google_Service_ManagedServiceforMicrosoftActiveDirectoryConsumerAPI_Resource_ProjectsLocationsManagedidentitiesGlobalDomainsSqlIntegrations extends \Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\Resource\ProjectsLocationsManagedidentitiesGlobalDomainsSqlIntegrations
     {
     }
 }

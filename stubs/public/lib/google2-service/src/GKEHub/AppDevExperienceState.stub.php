@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class AppDevExperienceState extends \Google\Model
-{
-    protected $networkingInstallSucceededType = AppDevExperienceStatus::class;
-    protected $networkingInstallSucceededDataType = '';
-    /**
-     * Status of subcomponent that detects configured Service Mesh resources.
-     *
-     * @param AppDevExperienceStatus $networkingInstallSucceeded
-     */
-    public function setNetworkingInstallSucceeded(AppDevExperienceStatus $networkingInstallSucceeded)
+namespace Google\Service\GKEHub {
+    class AppDevExperienceState extends \Google\Model
     {
+        protected $networkingInstallSucceededType = AppDevExperienceStatus::class;
+        protected $networkingInstallSucceededDataType = '';
+        /**
+         * Status of subcomponent that detects configured Service Mesh resources.
+         *
+         * @param AppDevExperienceStatus $networkingInstallSucceeded
+         */
+        public function setNetworkingInstallSucceeded(AppDevExperienceStatus $networkingInstallSucceeded)
+        {
+        }
+        /**
+         * @return AppDevExperienceStatus
+         */
+        public function getNetworkingInstallSucceeded()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppDevExperienceStatus
+     * Runtime class alias of \Google\Service\GKEHub\AppDevExperienceState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNetworkingInstallSucceeded()
+    class Google_Service_GKEHub_AppDevExperienceState extends \Google\Service\GKEHub\AppDevExperienceState
     {
     }
 }

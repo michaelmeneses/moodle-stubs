@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChecksService;
-
-class GoogleChecksReportV1alphaDataMonitoring extends \Google\Collection
-{
-    protected $collection_key = 'sdks';
-    protected $dataTypesType = GoogleChecksReportV1alphaDataMonitoringDataTypeResult::class;
-    protected $dataTypesDataType = 'array';
-    protected $endpointsType = GoogleChecksReportV1alphaDataMonitoringEndpointResult::class;
-    protected $endpointsDataType = 'array';
-    protected $permissionsType = GoogleChecksReportV1alphaDataMonitoringPermissionResult::class;
-    protected $permissionsDataType = 'array';
-    protected $sdksType = GoogleChecksReportV1alphaDataMonitoringSdkResult::class;
-    protected $sdksDataType = 'array';
-    /**
-     * Data types that your app shares or collects.
-     *
-     * @param GoogleChecksReportV1alphaDataMonitoringDataTypeResult[] $dataTypes
-     */
-    public function setDataTypes($dataTypes)
+namespace Google\Service\ChecksService {
+    class GoogleChecksReportV1alphaDataMonitoring extends \Google\Collection
     {
+        protected $collection_key = 'sdks';
+        protected $dataTypesType = GoogleChecksReportV1alphaDataMonitoringDataTypeResult::class;
+        protected $dataTypesDataType = 'array';
+        protected $endpointsType = GoogleChecksReportV1alphaDataMonitoringEndpointResult::class;
+        protected $endpointsDataType = 'array';
+        protected $permissionsType = GoogleChecksReportV1alphaDataMonitoringPermissionResult::class;
+        protected $permissionsDataType = 'array';
+        protected $sdksType = GoogleChecksReportV1alphaDataMonitoringSdkResult::class;
+        protected $sdksDataType = 'array';
+        /**
+         * Data types that your app shares or collects.
+         *
+         * @param GoogleChecksReportV1alphaDataMonitoringDataTypeResult[] $dataTypes
+         */
+        public function setDataTypes($dataTypes)
+        {
+        }
+        /**
+         * @return GoogleChecksReportV1alphaDataMonitoringDataTypeResult[]
+         */
+        public function getDataTypes()
+        {
+        }
+        /**
+         * Endpoints that were found by dynamic analysis of your app.
+         *
+         * @param GoogleChecksReportV1alphaDataMonitoringEndpointResult[] $endpoints
+         */
+        public function setEndpoints($endpoints)
+        {
+        }
+        /**
+         * @return GoogleChecksReportV1alphaDataMonitoringEndpointResult[]
+         */
+        public function getEndpoints()
+        {
+        }
+        /**
+         * Permissions that your app uses.
+         *
+         * @param GoogleChecksReportV1alphaDataMonitoringPermissionResult[] $permissions
+         */
+        public function setPermissions($permissions)
+        {
+        }
+        /**
+         * @return GoogleChecksReportV1alphaDataMonitoringPermissionResult[]
+         */
+        public function getPermissions()
+        {
+        }
+        /**
+         * SDKs that your app uses.
+         *
+         * @param GoogleChecksReportV1alphaDataMonitoringSdkResult[] $sdks
+         */
+        public function setSdks($sdks)
+        {
+        }
+        /**
+         * @return GoogleChecksReportV1alphaDataMonitoringSdkResult[]
+         */
+        public function getSdks()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleChecksReportV1alphaDataMonitoringDataTypeResult[]
+     * Runtime class alias of \Google\Service\ChecksService\GoogleChecksReportV1alphaDataMonitoring registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataTypes()
-    {
-    }
-    /**
-     * Endpoints that were found by dynamic analysis of your app.
-     *
-     * @param GoogleChecksReportV1alphaDataMonitoringEndpointResult[] $endpoints
-     */
-    public function setEndpoints($endpoints)
-    {
-    }
-    /**
-     * @return GoogleChecksReportV1alphaDataMonitoringEndpointResult[]
-     */
-    public function getEndpoints()
-    {
-    }
-    /**
-     * Permissions that your app uses.
-     *
-     * @param GoogleChecksReportV1alphaDataMonitoringPermissionResult[] $permissions
-     */
-    public function setPermissions($permissions)
-    {
-    }
-    /**
-     * @return GoogleChecksReportV1alphaDataMonitoringPermissionResult[]
-     */
-    public function getPermissions()
-    {
-    }
-    /**
-     * SDKs that your app uses.
-     *
-     * @param GoogleChecksReportV1alphaDataMonitoringSdkResult[] $sdks
-     */
-    public function setSdks($sdks)
-    {
-    }
-    /**
-     * @return GoogleChecksReportV1alphaDataMonitoringSdkResult[]
-     */
-    public function getSdks()
+    class Google_Service_ChecksService_GoogleChecksReportV1alphaDataMonitoring extends \Google\Service\ChecksService\GoogleChecksReportV1alphaDataMonitoring
     {
     }
 }

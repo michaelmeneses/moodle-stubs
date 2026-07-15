@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class SlackDelivery extends \Google\Model
-{
-    protected $webhookUriType = NotifierSecretRef::class;
-    protected $webhookUriDataType = '';
-    public $webhookUri;
-    /**
-     * @param NotifierSecretRef
-     */
-    public function setWebhookUri(NotifierSecretRef $webhookUri)
+namespace Google\Service\CloudBuild {
+    class SlackDelivery extends \Google\Model
     {
+        protected $webhookUriType = NotifierSecretRef::class;
+        protected $webhookUriDataType = '';
+        public $webhookUri;
+        /**
+         * @param NotifierSecretRef
+         */
+        public function setWebhookUri(NotifierSecretRef $webhookUri)
+        {
+        }
+        /**
+         * @return NotifierSecretRef
+         */
+        public function getWebhookUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return NotifierSecretRef
+     * Runtime class alias of \Google\Service\CloudBuild\SlackDelivery registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getWebhookUri()
+    class Google_Service_CloudBuild_SlackDelivery extends \Google\Service\CloudBuild\SlackDelivery
     {
     }
 }

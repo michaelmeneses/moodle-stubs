@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataprocMetastore;
-
-class GoogleCloudMetastoreV2ScalingConfig extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $scalingFactor;
-    /**
-     * @param int
-     */
-    public function setScalingFactor($scalingFactor)
+namespace Google\Service\DataprocMetastore {
+    class GoogleCloudMetastoreV2ScalingConfig extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $scalingFactor;
+        /**
+         * @param int
+         */
+        public function setScalingFactor($scalingFactor)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getScalingFactor()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\DataprocMetastore\GoogleCloudMetastoreV2ScalingConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getScalingFactor()
+    class Google_Service_DataprocMetastore_GoogleCloudMetastoreV2ScalingConfig extends \Google\Service\DataprocMetastore\GoogleCloudMetastoreV2ScalingConfig
     {
     }
 }

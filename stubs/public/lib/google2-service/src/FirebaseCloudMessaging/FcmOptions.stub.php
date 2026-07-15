@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseCloudMessaging;
-
-class FcmOptions extends \Google\Model
-{
-    /**
-     * Label associated with the message's analytics data.
-     *
-     * @var string
-     */
-    public $analyticsLabel;
-    /**
-     * Label associated with the message's analytics data.
-     *
-     * @param string $analyticsLabel
-     */
-    public function setAnalyticsLabel($analyticsLabel)
+namespace Google\Service\FirebaseCloudMessaging {
+    class FcmOptions extends \Google\Model
     {
+        /**
+         * Label associated with the message's analytics data.
+         *
+         * @var string
+         */
+        public $analyticsLabel;
+        /**
+         * Label associated with the message's analytics data.
+         *
+         * @param string $analyticsLabel
+         */
+        public function setAnalyticsLabel($analyticsLabel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnalyticsLabel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\FirebaseCloudMessaging\FcmOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnalyticsLabel()
+    class Google_Service_FirebaseCloudMessaging_FcmOptions extends \Google\Service\FirebaseCloudMessaging\FcmOptions
     {
     }
 }

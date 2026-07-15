@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1AnswerGenerationSpec extends \Google\Model
-{
-    protected $userDefinedClassifierSpecType = GoogleCloudDiscoveryengineV1AnswerGenerationSpecUserDefinedClassifierSpec::class;
-    protected $userDefinedClassifierSpecDataType = '';
-    /**
-     * Optional. The specification for user specified classifier spec.
-     *
-     * @param GoogleCloudDiscoveryengineV1AnswerGenerationSpecUserDefinedClassifierSpec $userDefinedClassifierSpec
-     */
-    public function setUserDefinedClassifierSpec(GoogleCloudDiscoveryengineV1AnswerGenerationSpecUserDefinedClassifierSpec $userDefinedClassifierSpec)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1AnswerGenerationSpec extends \Google\Model
     {
+        protected $userDefinedClassifierSpecType = GoogleCloudDiscoveryengineV1AnswerGenerationSpecUserDefinedClassifierSpec::class;
+        protected $userDefinedClassifierSpecDataType = '';
+        /**
+         * Optional. The specification for user specified classifier spec.
+         *
+         * @param GoogleCloudDiscoveryengineV1AnswerGenerationSpecUserDefinedClassifierSpec $userDefinedClassifierSpec
+         */
+        public function setUserDefinedClassifierSpec(GoogleCloudDiscoveryengineV1AnswerGenerationSpecUserDefinedClassifierSpec $userDefinedClassifierSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1AnswerGenerationSpecUserDefinedClassifierSpec
+         */
+        public function getUserDefinedClassifierSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1AnswerGenerationSpecUserDefinedClassifierSpec
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AnswerGenerationSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUserDefinedClassifierSpec()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1AnswerGenerationSpec extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AnswerGenerationSpec
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PubsubLite;
-
-class TopicPartitions extends \Google\Model
-{
-    /**
-     * The number of partitions in the topic.
-     *
-     * @var string
-     */
-    public $partitionCount;
-    /**
-     * The number of partitions in the topic.
-     *
-     * @param string $partitionCount
-     */
-    public function setPartitionCount($partitionCount)
+namespace Google\Service\PubsubLite {
+    class TopicPartitions extends \Google\Model
     {
+        /**
+         * The number of partitions in the topic.
+         *
+         * @var string
+         */
+        public $partitionCount;
+        /**
+         * The number of partitions in the topic.
+         *
+         * @param string $partitionCount
+         */
+        public function setPartitionCount($partitionCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPartitionCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PubsubLite\TopicPartitions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPartitionCount()
+    class Google_Service_PubsubLite_TopicPartitions extends \Google\Service\PubsubLite\TopicPartitions
     {
     }
 }

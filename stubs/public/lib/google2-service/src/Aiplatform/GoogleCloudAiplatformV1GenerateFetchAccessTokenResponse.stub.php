@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1GenerateFetchAccessTokenResponse extends \Google\Model
-{
-    /**
-     * The OAuth 2.0 access token.
-     *
-     * @var string
-     */
-    public $accessToken;
-    /**
-     * Token expiration time. This is always set
-     *
-     * @var string
-     */
-    public $expireTime;
-    /**
-     * The OAuth 2.0 access token.
-     *
-     * @param string $accessToken
-     */
-    public function setAccessToken($accessToken)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1GenerateFetchAccessTokenResponse extends \Google\Model
     {
+        /**
+         * The OAuth 2.0 access token.
+         *
+         * @var string
+         */
+        public $accessToken;
+        /**
+         * Token expiration time. This is always set
+         *
+         * @var string
+         */
+        public $expireTime;
+        /**
+         * The OAuth 2.0 access token.
+         *
+         * @param string $accessToken
+         */
+        public function setAccessToken($accessToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccessToken()
+        {
+        }
+        /**
+         * Token expiration time. This is always set
+         *
+         * @param string $expireTime
+         */
+        public function setExpireTime($expireTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpireTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1GenerateFetchAccessTokenResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccessToken()
-    {
-    }
-    /**
-     * Token expiration time. This is always set
-     *
-     * @param string $expireTime
-     */
-    public function setExpireTime($expireTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExpireTime()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1GenerateFetchAccessTokenResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1GenerateFetchAccessTokenResponse
     {
     }
 }

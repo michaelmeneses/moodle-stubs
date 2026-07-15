@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CCAIPlatform;
-
-class DateList extends \Google\Collection
-{
-    protected $collection_key = 'values';
-    protected $valuesType = Date::class;
-    protected $valuesDataType = 'array';
-    /**
-     * Optional. Values in the list.
-     *
-     * @param Date[] $values
-     */
-    public function setValues($values)
+namespace Google\Service\CCAIPlatform {
+    class DateList extends \Google\Collection
     {
+        protected $collection_key = 'values';
+        protected $valuesType = Date::class;
+        protected $valuesDataType = 'array';
+        /**
+         * Optional. Values in the list.
+         *
+         * @param Date[] $values
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return Date[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Date[]
+     * Runtime class alias of \Google\Service\CCAIPlatform\DateList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getValues()
+    class Google_Service_CCAIPlatform_DateList extends \Google\Service\CCAIPlatform\DateList
     {
     }
 }

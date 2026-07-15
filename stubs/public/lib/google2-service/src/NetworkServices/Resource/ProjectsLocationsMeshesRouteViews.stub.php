@@ -21,47 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkServices\Resource;
-
-/**
- * The "routeViews" collection of methods.
- * Typical usage is:
- *  <code>
- *   $networkservicesService = new Google\Service\NetworkServices(...);
- *   $routeViews = $networkservicesService->projects_locations_meshes_routeViews;
- *  </code>
- */
-class ProjectsLocationsMeshesRouteViews extends \Google\Service\Resource
-{
+namespace Google\Service\NetworkServices\Resource {
+    use Google\Service\NetworkServices\ListMeshRouteViewsResponse;
+    use Google\Service\NetworkServices\MeshRouteView;
     /**
-     * Get a single RouteView of a Mesh. (routeViews.get)
-     *
-     * @param string $name Required. Name of the MeshRouteView resource. Format: pro
-     * jects/{project_number}/locations/{location}/meshes/{mesh}/routeViews/{route_v
-     * iew}
-     * @param array $optParams Optional parameters.
-     * @return MeshRouteView
-     * @throws \Google\Service\Exception
+     * The "routeViews" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $networkservicesService = new Google\Service\NetworkServices(...);
+     *   $routeViews = $networkservicesService->projects_locations_meshes_routeViews;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class ProjectsLocationsMeshesRouteViews extends \Google\Service\Resource
     {
+        /**
+         * Get a single RouteView of a Mesh. (routeViews.get)
+         *
+         * @param string $name Required. Name of the MeshRouteView resource. Format: pro
+         * jects/{project_number}/locations/{location}/meshes/{mesh}/routeViews/{route_v
+         * iew}
+         * @param array $optParams Optional parameters.
+         * @return MeshRouteView
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists RouteViews (routeViews.listProjectsLocationsMeshesRouteViews)
+         *
+         * @param string $parent Required. The Mesh to which a Route is associated.
+         * Format: projects/{project_number}/locations/{location}/meshes/{mesh}
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Maximum number of MeshRouteViews to return per call.
+         * @opt_param string pageToken The value returned by the last
+         * `ListMeshRouteViewsResponse` Indicates that this is a continuation of a prior
+         * `ListMeshRouteViews` call, and that the system should return the next page of
+         * data.
+         * @return ListMeshRouteViewsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsMeshesRouteViews($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists RouteViews (routeViews.listProjectsLocationsMeshesRouteViews)
-     *
-     * @param string $parent Required. The Mesh to which a Route is associated.
-     * Format: projects/{project_number}/locations/{location}/meshes/{mesh}
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Maximum number of MeshRouteViews to return per call.
-     * @opt_param string pageToken The value returned by the last
-     * `ListMeshRouteViewsResponse` Indicates that this is a continuation of a prior
-     * `ListMeshRouteViews` call, and that the system should return the next page of
-     * data.
-     * @return ListMeshRouteViewsResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\NetworkServices\Resource\ProjectsLocationsMeshesRouteViews registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listProjectsLocationsMeshesRouteViews($parent, $optParams = [])
+    class Google_Service_NetworkServices_Resource_ProjectsLocationsMeshesRouteViews extends \Google\Service\NetworkServices\Resource\ProjectsLocationsMeshesRouteViews
     {
     }
 }

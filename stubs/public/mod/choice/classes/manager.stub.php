@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_choice;
 
+use cm_info;
+use context_module;
+use stdClass;
 /**
  * Class manager for choice activity
  *

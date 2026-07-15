@@ -21,110 +21,119 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveLabels;
-
-class GoogleAppsDriveLabelsV2UserCapabilities extends \Google\Model
-{
-    /**
-     * Output only. Whether the user is allowed access to the label manager.
-     *
-     * @var bool
-     */
-    public $canAccessLabelManager;
-    /**
-     * Output only. Whether the user is an administrator for the shared labels
-     * feature.
-     *
-     * @var bool
-     */
-    public $canAdministrateLabels;
-    /**
-     * Output only. Whether the user is allowed to create admin labels.
-     *
-     * @var bool
-     */
-    public $canCreateAdminLabels;
-    /**
-     * Output only. Whether the user is allowed to create shared labels.
-     *
-     * @var bool
-     */
-    public $canCreateSharedLabels;
-    /**
-     * Output only. Resource name for the user capabilities.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. Whether the user is allowed access to the label manager.
-     *
-     * @param bool $canAccessLabelManager
-     */
-    public function setCanAccessLabelManager($canAccessLabelManager)
+namespace Google\Service\DriveLabels {
+    class GoogleAppsDriveLabelsV2UserCapabilities extends \Google\Model
     {
+        /**
+         * Output only. Whether the user is allowed access to the label manager.
+         *
+         * @var bool
+         */
+        public $canAccessLabelManager;
+        /**
+         * Output only. Whether the user is an administrator for the shared labels
+         * feature.
+         *
+         * @var bool
+         */
+        public $canAdministrateLabels;
+        /**
+         * Output only. Whether the user is allowed to create admin labels.
+         *
+         * @var bool
+         */
+        public $canCreateAdminLabels;
+        /**
+         * Output only. Whether the user is allowed to create shared labels.
+         *
+         * @var bool
+         */
+        public $canCreateSharedLabels;
+        /**
+         * Output only. Resource name for the user capabilities.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. Whether the user is allowed access to the label manager.
+         *
+         * @param bool $canAccessLabelManager
+         */
+        public function setCanAccessLabelManager($canAccessLabelManager)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanAccessLabelManager()
+        {
+        }
+        /**
+         * Output only. Whether the user is an administrator for the shared labels
+         * feature.
+         *
+         * @param bool $canAdministrateLabels
+         */
+        public function setCanAdministrateLabels($canAdministrateLabels)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanAdministrateLabels()
+        {
+        }
+        /**
+         * Output only. Whether the user is allowed to create admin labels.
+         *
+         * @param bool $canCreateAdminLabels
+         */
+        public function setCanCreateAdminLabels($canCreateAdminLabels)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanCreateAdminLabels()
+        {
+        }
+        /**
+         * Output only. Whether the user is allowed to create shared labels.
+         *
+         * @param bool $canCreateSharedLabels
+         */
+        public function setCanCreateSharedLabels($canCreateSharedLabels)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanCreateSharedLabels()
+        {
+        }
+        /**
+         * Output only. Resource name for the user capabilities.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2UserCapabilities registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCanAccessLabelManager()
-    {
-    }
-    /**
-     * Output only. Whether the user is an administrator for the shared labels
-     * feature.
-     *
-     * @param bool $canAdministrateLabels
-     */
-    public function setCanAdministrateLabels($canAdministrateLabels)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanAdministrateLabels()
-    {
-    }
-    /**
-     * Output only. Whether the user is allowed to create admin labels.
-     *
-     * @param bool $canCreateAdminLabels
-     */
-    public function setCanCreateAdminLabels($canCreateAdminLabels)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanCreateAdminLabels()
-    {
-    }
-    /**
-     * Output only. Whether the user is allowed to create shared labels.
-     *
-     * @param bool $canCreateSharedLabels
-     */
-    public function setCanCreateSharedLabels($canCreateSharedLabels)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanCreateSharedLabels()
-    {
-    }
-    /**
-     * Output only. Resource name for the user capabilities.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_DriveLabels_GoogleAppsDriveLabelsV2UserCapabilities extends \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2UserCapabilities
     {
     }
 }

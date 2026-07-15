@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1ApiDebugSession extends \Google\Model
-{
-    /**
-     * The revision ID of the deployed API proxy.
-     *
-     * @var string
-     */
-    public $apiProxyRevisionId;
-    /**
-     * The first transaction creation timestamp in millisecond, recorded by UAP.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * The environment ID of the deployed API proxy.
-     *
-     * @var string
-     */
-    public $environmentId;
-    /**
-     * The debug session ID.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * The revision ID of the deployed API proxy.
-     *
-     * @param string $apiProxyRevisionId
-     */
-    public function setApiProxyRevisionId($apiProxyRevisionId)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1ApiDebugSession extends \Google\Model
     {
+        /**
+         * The revision ID of the deployed API proxy.
+         *
+         * @var string
+         */
+        public $apiProxyRevisionId;
+        /**
+         * The first transaction creation timestamp in millisecond, recorded by UAP.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * The environment ID of the deployed API proxy.
+         *
+         * @var string
+         */
+        public $environmentId;
+        /**
+         * The debug session ID.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * The revision ID of the deployed API proxy.
+         *
+         * @param string $apiProxyRevisionId
+         */
+        public function setApiProxyRevisionId($apiProxyRevisionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApiProxyRevisionId()
+        {
+        }
+        /**
+         * The first transaction creation timestamp in millisecond, recorded by UAP.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * The environment ID of the deployed API proxy.
+         *
+         * @param string $environmentId
+         */
+        public function setEnvironmentId($environmentId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEnvironmentId()
+        {
+        }
+        /**
+         * The debug session ID.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1ApiDebugSession registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiProxyRevisionId()
-    {
-    }
-    /**
-     * The first transaction creation timestamp in millisecond, recorded by UAP.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * The environment ID of the deployed API proxy.
-     *
-     * @param string $environmentId
-     */
-    public function setEnvironmentId($environmentId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEnvironmentId()
-    {
-    }
-    /**
-     * The debug session ID.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
+    class Google_Service_Apigee_GoogleCloudApigeeV1ApiDebugSession extends \Google\Service\Apigee\GoogleCloudApigeeV1ApiDebugSession
     {
     }
 }

@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiUiv1beta3SchemaEditabilityMetadata extends \Google\Collection
-{
-    protected $collection_key = 'processorVersions';
-    /**
-     * Explicit flag that controls whether the label is editable.
-     *
-     * @var bool
-     */
-    public $editable;
-    /**
-     * Full resource name of processor versions that contain this label. e.g. `pro
-     * jects/{project}/locations/{location}/processors/{processor}/processorVersio
-     * ns/{processorVersion}`
-     *
-     * @var string[]
-     */
-    public $processorVersions;
-    /**
-     * Explicit flag that controls whether the label is editable.
-     *
-     * @param bool $editable
-     */
-    public function setEditable($editable)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiUiv1beta3SchemaEditabilityMetadata extends \Google\Collection
     {
+        protected $collection_key = 'processorVersions';
+        /**
+         * Explicit flag that controls whether the label is editable.
+         *
+         * @var bool
+         */
+        public $editable;
+        /**
+         * Full resource name of processor versions that contain this label. e.g. `pro
+         * jects/{project}/locations/{location}/processors/{processor}/processorVersio
+         * ns/{processorVersion}`
+         *
+         * @var string[]
+         */
+        public $processorVersions;
+        /**
+         * Explicit flag that controls whether the label is editable.
+         *
+         * @param bool $editable
+         */
+        public function setEditable($editable)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEditable()
+        {
+        }
+        /**
+         * Full resource name of processor versions that contain this label. e.g. `pro
+         * jects/{project}/locations/{location}/processors/{processor}/processorVersio
+         * ns/{processorVersion}`
+         *
+         * @param string[] $processorVersions
+         */
+        public function setProcessorVersions($processorVersions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getProcessorVersions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiUiv1beta3SchemaEditabilityMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEditable()
-    {
-    }
-    /**
-     * Full resource name of processor versions that contain this label. e.g. `pro
-     * jects/{project}/locations/{location}/processors/{processor}/processorVersio
-     * ns/{processorVersion}`
-     *
-     * @param string[] $processorVersions
-     */
-    public function setProcessorVersions($processorVersions)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getProcessorVersions()
+    class Google_Service_Document_GoogleCloudDocumentaiUiv1beta3SchemaEditabilityMetadata extends \Google\Service\Document\GoogleCloudDocumentaiUiv1beta3SchemaEditabilityMetadata
     {
     }
 }

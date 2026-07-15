@@ -21,309 +21,318 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class Asset extends \Google\Collection
-{
-    protected $collection_key = 'sources';
-    /**
-     * Output only. The list of groups that the asset is assigned to.
-     *
-     * @var string[]
-     */
-    public $assignedGroups;
-    /**
-     * Generic asset attributes.
-     *
-     * @var string[]
-     */
-    public $attributes;
-    /**
-     * Output only. The timestamp when the asset was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    protected $databaseDeploymentDetailsType = DatabaseDeploymentDetails::class;
-    protected $databaseDeploymentDetailsDataType = '';
-    protected $databaseDetailsType = DatabaseDetails::class;
-    protected $databaseDetailsDataType = '';
-    /**
-     * Optional. Indicates if the asset is hidden.
-     *
-     * @var bool
-     */
-    public $hidden;
-    /**
-     * Optional. An optional reason for marking this asset as hidden.
-     *
-     * @var string
-     */
-    public $hideReason;
-    /**
-     * Output only. The timestamp when the asset was marked as hidden.
-     *
-     * @var string
-     */
-    public $hideTime;
-    protected $insightListType = InsightList::class;
-    protected $insightListDataType = '';
-    /**
-     * Labels as key value pairs.
-     *
-     * @var string[]
-     */
-    public $labels;
-    protected $machineDetailsType = MachineDetails::class;
-    protected $machineDetailsDataType = '';
-    /**
-     * Output only. The full name of the asset.
-     *
-     * @var string
-     */
-    public $name;
-    protected $performanceDataType = AssetPerformanceData::class;
-    protected $performanceDataDataType = '';
-    /**
-     * Output only. The list of sources contributing to the asset.
-     *
-     * @var string[]
-     */
-    public $sources;
-    /**
-     * Output only. Server generated human readable name of the asset.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * Output only. The timestamp when the asset was last updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. The list of groups that the asset is assigned to.
-     *
-     * @param string[] $assignedGroups
-     */
-    public function setAssignedGroups($assignedGroups)
+namespace Google\Service\MigrationCenterAPI {
+    class Asset extends \Google\Collection
     {
+        protected $collection_key = 'sources';
+        /**
+         * Output only. The list of groups that the asset is assigned to.
+         *
+         * @var string[]
+         */
+        public $assignedGroups;
+        /**
+         * Generic asset attributes.
+         *
+         * @var string[]
+         */
+        public $attributes;
+        /**
+         * Output only. The timestamp when the asset was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        protected $databaseDeploymentDetailsType = DatabaseDeploymentDetails::class;
+        protected $databaseDeploymentDetailsDataType = '';
+        protected $databaseDetailsType = DatabaseDetails::class;
+        protected $databaseDetailsDataType = '';
+        /**
+         * Optional. Indicates if the asset is hidden.
+         *
+         * @var bool
+         */
+        public $hidden;
+        /**
+         * Optional. An optional reason for marking this asset as hidden.
+         *
+         * @var string
+         */
+        public $hideReason;
+        /**
+         * Output only. The timestamp when the asset was marked as hidden.
+         *
+         * @var string
+         */
+        public $hideTime;
+        protected $insightListType = InsightList::class;
+        protected $insightListDataType = '';
+        /**
+         * Labels as key value pairs.
+         *
+         * @var string[]
+         */
+        public $labels;
+        protected $machineDetailsType = MachineDetails::class;
+        protected $machineDetailsDataType = '';
+        /**
+         * Output only. The full name of the asset.
+         *
+         * @var string
+         */
+        public $name;
+        protected $performanceDataType = AssetPerformanceData::class;
+        protected $performanceDataDataType = '';
+        /**
+         * Output only. The list of sources contributing to the asset.
+         *
+         * @var string[]
+         */
+        public $sources;
+        /**
+         * Output only. Server generated human readable name of the asset.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * Output only. The timestamp when the asset was last updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. The list of groups that the asset is assigned to.
+         *
+         * @param string[] $assignedGroups
+         */
+        public function setAssignedGroups($assignedGroups)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAssignedGroups()
+        {
+        }
+        /**
+         * Generic asset attributes.
+         *
+         * @param string[] $attributes
+         */
+        public function setAttributes($attributes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAttributes()
+        {
+        }
+        /**
+         * Output only. The timestamp when the asset was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. Asset information specific for database deployments.
+         *
+         * @param DatabaseDeploymentDetails $databaseDeploymentDetails
+         */
+        public function setDatabaseDeploymentDetails(DatabaseDeploymentDetails $databaseDeploymentDetails)
+        {
+        }
+        /**
+         * @return DatabaseDeploymentDetails
+         */
+        public function getDatabaseDeploymentDetails()
+        {
+        }
+        /**
+         * Output only. Asset information specific for logical databases.
+         *
+         * @param DatabaseDetails $databaseDetails
+         */
+        public function setDatabaseDetails(DatabaseDetails $databaseDetails)
+        {
+        }
+        /**
+         * @return DatabaseDetails
+         */
+        public function getDatabaseDetails()
+        {
+        }
+        /**
+         * Optional. Indicates if the asset is hidden.
+         *
+         * @param bool $hidden
+         */
+        public function setHidden($hidden)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getHidden()
+        {
+        }
+        /**
+         * Optional. An optional reason for marking this asset as hidden.
+         *
+         * @param string $hideReason
+         */
+        public function setHideReason($hideReason)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHideReason()
+        {
+        }
+        /**
+         * Output only. The timestamp when the asset was marked as hidden.
+         *
+         * @param string $hideTime
+         */
+        public function setHideTime($hideTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHideTime()
+        {
+        }
+        /**
+         * Output only. The list of insights associated with the asset.
+         *
+         * @param InsightList $insightList
+         */
+        public function setInsightList(InsightList $insightList)
+        {
+        }
+        /**
+         * @return InsightList
+         */
+        public function getInsightList()
+        {
+        }
+        /**
+         * Labels as key value pairs.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Output only. Asset information specific for virtual and physical machines.
+         *
+         * @param MachineDetails $machineDetails
+         */
+        public function setMachineDetails(MachineDetails $machineDetails)
+        {
+        }
+        /**
+         * @return MachineDetails
+         */
+        public function getMachineDetails()
+        {
+        }
+        /**
+         * Output only. The full name of the asset.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. Performance data for the asset.
+         *
+         * @param AssetPerformanceData $performanceData
+         */
+        public function setPerformanceData(AssetPerformanceData $performanceData)
+        {
+        }
+        /**
+         * @return AssetPerformanceData
+         */
+        public function getPerformanceData()
+        {
+        }
+        /**
+         * Output only. The list of sources contributing to the asset.
+         *
+         * @param string[] $sources
+         */
+        public function setSources($sources)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSources()
+        {
+        }
+        /**
+         * Output only. Server generated human readable name of the asset.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * Output only. The timestamp when the asset was last updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\Asset registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssignedGroups()
-    {
-    }
-    /**
-     * Generic asset attributes.
-     *
-     * @param string[] $attributes
-     */
-    public function setAttributes($attributes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getAttributes()
-    {
-    }
-    /**
-     * Output only. The timestamp when the asset was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. Asset information specific for database deployments.
-     *
-     * @param DatabaseDeploymentDetails $databaseDeploymentDetails
-     */
-    public function setDatabaseDeploymentDetails(DatabaseDeploymentDetails $databaseDeploymentDetails)
-    {
-    }
-    /**
-     * @return DatabaseDeploymentDetails
-     */
-    public function getDatabaseDeploymentDetails()
-    {
-    }
-    /**
-     * Output only. Asset information specific for logical databases.
-     *
-     * @param DatabaseDetails $databaseDetails
-     */
-    public function setDatabaseDetails(DatabaseDetails $databaseDetails)
-    {
-    }
-    /**
-     * @return DatabaseDetails
-     */
-    public function getDatabaseDetails()
-    {
-    }
-    /**
-     * Optional. Indicates if the asset is hidden.
-     *
-     * @param bool $hidden
-     */
-    public function setHidden($hidden)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getHidden()
-    {
-    }
-    /**
-     * Optional. An optional reason for marking this asset as hidden.
-     *
-     * @param string $hideReason
-     */
-    public function setHideReason($hideReason)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHideReason()
-    {
-    }
-    /**
-     * Output only. The timestamp when the asset was marked as hidden.
-     *
-     * @param string $hideTime
-     */
-    public function setHideTime($hideTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHideTime()
-    {
-    }
-    /**
-     * Output only. The list of insights associated with the asset.
-     *
-     * @param InsightList $insightList
-     */
-    public function setInsightList(InsightList $insightList)
-    {
-    }
-    /**
-     * @return InsightList
-     */
-    public function getInsightList()
-    {
-    }
-    /**
-     * Labels as key value pairs.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Output only. Asset information specific for virtual and physical machines.
-     *
-     * @param MachineDetails $machineDetails
-     */
-    public function setMachineDetails(MachineDetails $machineDetails)
-    {
-    }
-    /**
-     * @return MachineDetails
-     */
-    public function getMachineDetails()
-    {
-    }
-    /**
-     * Output only. The full name of the asset.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. Performance data for the asset.
-     *
-     * @param AssetPerformanceData $performanceData
-     */
-    public function setPerformanceData(AssetPerformanceData $performanceData)
-    {
-    }
-    /**
-     * @return AssetPerformanceData
-     */
-    public function getPerformanceData()
-    {
-    }
-    /**
-     * Output only. The list of sources contributing to the asset.
-     *
-     * @param string[] $sources
-     */
-    public function setSources($sources)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSources()
-    {
-    }
-    /**
-     * Output only. Server generated human readable name of the asset.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
-    {
-    }
-    /**
-     * Output only. The timestamp when the asset was last updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_MigrationCenterAPI_Asset extends \Google\Service\MigrationCenterAPI\Asset
     {
     }
 }

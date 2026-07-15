@@ -21,148 +21,157 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Merchant;
-
-class ReportRow extends \Google\Model
-{
-    protected $bestSellersBrandViewType = BestSellersBrandView::class;
-    protected $bestSellersBrandViewDataType = '';
-    protected $bestSellersProductClusterViewType = BestSellersProductClusterView::class;
-    protected $bestSellersProductClusterViewDataType = '';
-    protected $competitiveVisibilityBenchmarkViewType = CompetitiveVisibilityBenchmarkView::class;
-    protected $competitiveVisibilityBenchmarkViewDataType = '';
-    protected $competitiveVisibilityCompetitorViewType = CompetitiveVisibilityCompetitorView::class;
-    protected $competitiveVisibilityCompetitorViewDataType = '';
-    protected $competitiveVisibilityTopMerchantViewType = CompetitiveVisibilityTopMerchantView::class;
-    protected $competitiveVisibilityTopMerchantViewDataType = '';
-    protected $nonProductPerformanceViewType = NonProductPerformanceView::class;
-    protected $nonProductPerformanceViewDataType = '';
-    protected $priceCompetitivenessProductViewType = PriceCompetitivenessProductView::class;
-    protected $priceCompetitivenessProductViewDataType = '';
-    protected $priceInsightsProductViewType = PriceInsightsProductView::class;
-    protected $priceInsightsProductViewDataType = '';
-    protected $productPerformanceViewType = ProductPerformanceView::class;
-    protected $productPerformanceViewDataType = '';
-    protected $productViewType = ProductView::class;
-    protected $productViewDataType = '';
-    /**
-     * @param BestSellersBrandView
-     */
-    public function setBestSellersBrandView(BestSellersBrandView $bestSellersBrandView)
+namespace Google\Service\Merchant {
+    class ReportRow extends \Google\Model
     {
+        protected $bestSellersBrandViewType = BestSellersBrandView::class;
+        protected $bestSellersBrandViewDataType = '';
+        protected $bestSellersProductClusterViewType = BestSellersProductClusterView::class;
+        protected $bestSellersProductClusterViewDataType = '';
+        protected $competitiveVisibilityBenchmarkViewType = CompetitiveVisibilityBenchmarkView::class;
+        protected $competitiveVisibilityBenchmarkViewDataType = '';
+        protected $competitiveVisibilityCompetitorViewType = CompetitiveVisibilityCompetitorView::class;
+        protected $competitiveVisibilityCompetitorViewDataType = '';
+        protected $competitiveVisibilityTopMerchantViewType = CompetitiveVisibilityTopMerchantView::class;
+        protected $competitiveVisibilityTopMerchantViewDataType = '';
+        protected $nonProductPerformanceViewType = NonProductPerformanceView::class;
+        protected $nonProductPerformanceViewDataType = '';
+        protected $priceCompetitivenessProductViewType = PriceCompetitivenessProductView::class;
+        protected $priceCompetitivenessProductViewDataType = '';
+        protected $priceInsightsProductViewType = PriceInsightsProductView::class;
+        protected $priceInsightsProductViewDataType = '';
+        protected $productPerformanceViewType = ProductPerformanceView::class;
+        protected $productPerformanceViewDataType = '';
+        protected $productViewType = ProductView::class;
+        protected $productViewDataType = '';
+        /**
+         * @param BestSellersBrandView
+         */
+        public function setBestSellersBrandView(BestSellersBrandView $bestSellersBrandView)
+        {
+        }
+        /**
+         * @return BestSellersBrandView
+         */
+        public function getBestSellersBrandView()
+        {
+        }
+        /**
+         * @param BestSellersProductClusterView
+         */
+        public function setBestSellersProductClusterView(BestSellersProductClusterView $bestSellersProductClusterView)
+        {
+        }
+        /**
+         * @return BestSellersProductClusterView
+         */
+        public function getBestSellersProductClusterView()
+        {
+        }
+        /**
+         * @param CompetitiveVisibilityBenchmarkView
+         */
+        public function setCompetitiveVisibilityBenchmarkView(CompetitiveVisibilityBenchmarkView $competitiveVisibilityBenchmarkView)
+        {
+        }
+        /**
+         * @return CompetitiveVisibilityBenchmarkView
+         */
+        public function getCompetitiveVisibilityBenchmarkView()
+        {
+        }
+        /**
+         * @param CompetitiveVisibilityCompetitorView
+         */
+        public function setCompetitiveVisibilityCompetitorView(CompetitiveVisibilityCompetitorView $competitiveVisibilityCompetitorView)
+        {
+        }
+        /**
+         * @return CompetitiveVisibilityCompetitorView
+         */
+        public function getCompetitiveVisibilityCompetitorView()
+        {
+        }
+        /**
+         * @param CompetitiveVisibilityTopMerchantView
+         */
+        public function setCompetitiveVisibilityTopMerchantView(CompetitiveVisibilityTopMerchantView $competitiveVisibilityTopMerchantView)
+        {
+        }
+        /**
+         * @return CompetitiveVisibilityTopMerchantView
+         */
+        public function getCompetitiveVisibilityTopMerchantView()
+        {
+        }
+        /**
+         * @param NonProductPerformanceView
+         */
+        public function setNonProductPerformanceView(NonProductPerformanceView $nonProductPerformanceView)
+        {
+        }
+        /**
+         * @return NonProductPerformanceView
+         */
+        public function getNonProductPerformanceView()
+        {
+        }
+        /**
+         * @param PriceCompetitivenessProductView
+         */
+        public function setPriceCompetitivenessProductView(PriceCompetitivenessProductView $priceCompetitivenessProductView)
+        {
+        }
+        /**
+         * @return PriceCompetitivenessProductView
+         */
+        public function getPriceCompetitivenessProductView()
+        {
+        }
+        /**
+         * @param PriceInsightsProductView
+         */
+        public function setPriceInsightsProductView(PriceInsightsProductView $priceInsightsProductView)
+        {
+        }
+        /**
+         * @return PriceInsightsProductView
+         */
+        public function getPriceInsightsProductView()
+        {
+        }
+        /**
+         * @param ProductPerformanceView
+         */
+        public function setProductPerformanceView(ProductPerformanceView $productPerformanceView)
+        {
+        }
+        /**
+         * @return ProductPerformanceView
+         */
+        public function getProductPerformanceView()
+        {
+        }
+        /**
+         * @param ProductView
+         */
+        public function setProductView(ProductView $productView)
+        {
+        }
+        /**
+         * @return ProductView
+         */
+        public function getProductView()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BestSellersBrandView
+     * Runtime class alias of \Google\Service\Merchant\ReportRow registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBestSellersBrandView()
-    {
-    }
-    /**
-     * @param BestSellersProductClusterView
-     */
-    public function setBestSellersProductClusterView(BestSellersProductClusterView $bestSellersProductClusterView)
-    {
-    }
-    /**
-     * @return BestSellersProductClusterView
-     */
-    public function getBestSellersProductClusterView()
-    {
-    }
-    /**
-     * @param CompetitiveVisibilityBenchmarkView
-     */
-    public function setCompetitiveVisibilityBenchmarkView(CompetitiveVisibilityBenchmarkView $competitiveVisibilityBenchmarkView)
-    {
-    }
-    /**
-     * @return CompetitiveVisibilityBenchmarkView
-     */
-    public function getCompetitiveVisibilityBenchmarkView()
-    {
-    }
-    /**
-     * @param CompetitiveVisibilityCompetitorView
-     */
-    public function setCompetitiveVisibilityCompetitorView(CompetitiveVisibilityCompetitorView $competitiveVisibilityCompetitorView)
-    {
-    }
-    /**
-     * @return CompetitiveVisibilityCompetitorView
-     */
-    public function getCompetitiveVisibilityCompetitorView()
-    {
-    }
-    /**
-     * @param CompetitiveVisibilityTopMerchantView
-     */
-    public function setCompetitiveVisibilityTopMerchantView(CompetitiveVisibilityTopMerchantView $competitiveVisibilityTopMerchantView)
-    {
-    }
-    /**
-     * @return CompetitiveVisibilityTopMerchantView
-     */
-    public function getCompetitiveVisibilityTopMerchantView()
-    {
-    }
-    /**
-     * @param NonProductPerformanceView
-     */
-    public function setNonProductPerformanceView(NonProductPerformanceView $nonProductPerformanceView)
-    {
-    }
-    /**
-     * @return NonProductPerformanceView
-     */
-    public function getNonProductPerformanceView()
-    {
-    }
-    /**
-     * @param PriceCompetitivenessProductView
-     */
-    public function setPriceCompetitivenessProductView(PriceCompetitivenessProductView $priceCompetitivenessProductView)
-    {
-    }
-    /**
-     * @return PriceCompetitivenessProductView
-     */
-    public function getPriceCompetitivenessProductView()
-    {
-    }
-    /**
-     * @param PriceInsightsProductView
-     */
-    public function setPriceInsightsProductView(PriceInsightsProductView $priceInsightsProductView)
-    {
-    }
-    /**
-     * @return PriceInsightsProductView
-     */
-    public function getPriceInsightsProductView()
-    {
-    }
-    /**
-     * @param ProductPerformanceView
-     */
-    public function setProductPerformanceView(ProductPerformanceView $productPerformanceView)
-    {
-    }
-    /**
-     * @return ProductPerformanceView
-     */
-    public function getProductPerformanceView()
-    {
-    }
-    /**
-     * @param ProductView
-     */
-    public function setProductView(ProductView $productView)
-    {
-    }
-    /**
-     * @return ProductView
-     */
-    public function getProductView()
+    class Google_Service_Merchant_ReportRow extends \Google\Service\Merchant\ReportRow
     {
     }
 }

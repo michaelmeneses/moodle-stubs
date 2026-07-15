@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class DailyResourceUsageAggregationDisk extends \Google\Model
-{
-    protected $iopsType = DailyResourceUsageAggregationStats::class;
-    protected $iopsDataType = '';
-    protected $readIopsType = DailyResourceUsageAggregationStats::class;
-    protected $readIopsDataType = '';
-    protected $writeIopsType = DailyResourceUsageAggregationStats::class;
-    protected $writeIopsDataType = '';
-    /**
-     * Optional. Disk I/O operations per second.
-     *
-     * @param DailyResourceUsageAggregationStats $iops
-     */
-    public function setIops(DailyResourceUsageAggregationStats $iops)
+namespace Google\Service\MigrationCenterAPI {
+    class DailyResourceUsageAggregationDisk extends \Google\Model
     {
+        protected $iopsType = DailyResourceUsageAggregationStats::class;
+        protected $iopsDataType = '';
+        protected $readIopsType = DailyResourceUsageAggregationStats::class;
+        protected $readIopsDataType = '';
+        protected $writeIopsType = DailyResourceUsageAggregationStats::class;
+        protected $writeIopsDataType = '';
+        /**
+         * Optional. Disk I/O operations per second.
+         *
+         * @param DailyResourceUsageAggregationStats $iops
+         */
+        public function setIops(DailyResourceUsageAggregationStats $iops)
+        {
+        }
+        /**
+         * @return DailyResourceUsageAggregationStats
+         */
+        public function getIops()
+        {
+        }
+        /**
+         * Optional. Disk read I/O operations per second.
+         *
+         * @param DailyResourceUsageAggregationStats $readIops
+         */
+        public function setReadIops(DailyResourceUsageAggregationStats $readIops)
+        {
+        }
+        /**
+         * @return DailyResourceUsageAggregationStats
+         */
+        public function getReadIops()
+        {
+        }
+        /**
+         * Optional. Disk write I/O operations per second.
+         *
+         * @param DailyResourceUsageAggregationStats $writeIops
+         */
+        public function setWriteIops(DailyResourceUsageAggregationStats $writeIops)
+        {
+        }
+        /**
+         * @return DailyResourceUsageAggregationStats
+         */
+        public function getWriteIops()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DailyResourceUsageAggregationStats
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\DailyResourceUsageAggregationDisk registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIops()
-    {
-    }
-    /**
-     * Optional. Disk read I/O operations per second.
-     *
-     * @param DailyResourceUsageAggregationStats $readIops
-     */
-    public function setReadIops(DailyResourceUsageAggregationStats $readIops)
-    {
-    }
-    /**
-     * @return DailyResourceUsageAggregationStats
-     */
-    public function getReadIops()
-    {
-    }
-    /**
-     * Optional. Disk write I/O operations per second.
-     *
-     * @param DailyResourceUsageAggregationStats $writeIops
-     */
-    public function setWriteIops(DailyResourceUsageAggregationStats $writeIops)
-    {
-    }
-    /**
-     * @return DailyResourceUsageAggregationStats
-     */
-    public function getWriteIops()
+    class Google_Service_MigrationCenterAPI_DailyResourceUsageAggregationDisk extends \Google\Service\MigrationCenterAPI\DailyResourceUsageAggregationDisk
     {
     }
 }

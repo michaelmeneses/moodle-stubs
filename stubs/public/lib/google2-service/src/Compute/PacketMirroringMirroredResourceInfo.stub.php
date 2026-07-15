@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class PacketMirroringMirroredResourceInfo extends \Google\Collection
-{
-    protected $collection_key = 'tags';
-    protected $instancesType = PacketMirroringMirroredResourceInfoInstanceInfo::class;
-    protected $instancesDataType = 'array';
-    protected $subnetworksType = PacketMirroringMirroredResourceInfoSubnetInfo::class;
-    protected $subnetworksDataType = 'array';
-    /**
-     * A set of mirrored tags. Traffic from/to all VM instances that have one or
-     * more of these tags will be mirrored.
-     *
-     * @var string[]
-     */
-    public $tags;
-    /**
-     * A set of virtual machine instances that are being mirrored. They must live
-     * in zones contained in the same region as this packetMirroring.
-     *
-     * Note that this config will apply only to those network interfaces of the
-     * Instances that belong to the network specified in this packetMirroring.
-     *
-     * You may specify a maximum of 50 Instances.
-     *
-     * @param PacketMirroringMirroredResourceInfoInstanceInfo[] $instances
-     */
-    public function setInstances($instances)
+namespace Google\Service\Compute {
+    class PacketMirroringMirroredResourceInfo extends \Google\Collection
     {
+        protected $collection_key = 'tags';
+        protected $instancesType = PacketMirroringMirroredResourceInfoInstanceInfo::class;
+        protected $instancesDataType = 'array';
+        protected $subnetworksType = PacketMirroringMirroredResourceInfoSubnetInfo::class;
+        protected $subnetworksDataType = 'array';
+        /**
+         * A set of mirrored tags. Traffic from/to all VM instances that have one or
+         * more of these tags will be mirrored.
+         *
+         * @var string[]
+         */
+        public $tags;
+        /**
+         * A set of virtual machine instances that are being mirrored. They must live
+         * in zones contained in the same region as this packetMirroring.
+         *
+         * Note that this config will apply only to those network interfaces of the
+         * Instances that belong to the network specified in this packetMirroring.
+         *
+         * You may specify a maximum of 50 Instances.
+         *
+         * @param PacketMirroringMirroredResourceInfoInstanceInfo[] $instances
+         */
+        public function setInstances($instances)
+        {
+        }
+        /**
+         * @return PacketMirroringMirroredResourceInfoInstanceInfo[]
+         */
+        public function getInstances()
+        {
+        }
+        /**
+         * A set of subnetworks for which traffic from/to all VM instances will be
+         * mirrored. They must live in the same region as this packetMirroring.
+         *
+         * You may specify a maximum of 5 subnetworks.
+         *
+         * @param PacketMirroringMirroredResourceInfoSubnetInfo[] $subnetworks
+         */
+        public function setSubnetworks($subnetworks)
+        {
+        }
+        /**
+         * @return PacketMirroringMirroredResourceInfoSubnetInfo[]
+         */
+        public function getSubnetworks()
+        {
+        }
+        /**
+         * A set of mirrored tags. Traffic from/to all VM instances that have one or
+         * more of these tags will be mirrored.
+         *
+         * @param string[] $tags
+         */
+        public function setTags($tags)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTags()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PacketMirroringMirroredResourceInfoInstanceInfo[]
+     * Runtime class alias of \Google\Service\Compute\PacketMirroringMirroredResourceInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstances()
-    {
-    }
-    /**
-     * A set of subnetworks for which traffic from/to all VM instances will be
-     * mirrored. They must live in the same region as this packetMirroring.
-     *
-     * You may specify a maximum of 5 subnetworks.
-     *
-     * @param PacketMirroringMirroredResourceInfoSubnetInfo[] $subnetworks
-     */
-    public function setSubnetworks($subnetworks)
-    {
-    }
-    /**
-     * @return PacketMirroringMirroredResourceInfoSubnetInfo[]
-     */
-    public function getSubnetworks()
-    {
-    }
-    /**
-     * A set of mirrored tags. Traffic from/to all VM instances that have one or
-     * more of these tags will be mirrored.
-     *
-     * @param string[] $tags
-     */
-    public function setTags($tags)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTags()
+    class Google_Service_Compute_PacketMirroringMirroredResourceInfo extends \Google\Service\Compute\PacketMirroringMirroredResourceInfo
     {
     }
 }

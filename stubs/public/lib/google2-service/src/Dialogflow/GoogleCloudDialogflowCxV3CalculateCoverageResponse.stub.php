@@ -21,78 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3CalculateCoverageResponse extends \Google\Model
-{
-    /**
-     * The agent to calculate coverage for. Format:
-     * `projects//locations//agents/`.
-     *
-     * @var string
-     */
-    public $agent;
-    protected $intentCoverageType = GoogleCloudDialogflowCxV3IntentCoverage::class;
-    protected $intentCoverageDataType = '';
-    protected $routeGroupCoverageType = GoogleCloudDialogflowCxV3TransitionRouteGroupCoverage::class;
-    protected $routeGroupCoverageDataType = '';
-    protected $transitionCoverageType = GoogleCloudDialogflowCxV3TransitionCoverage::class;
-    protected $transitionCoverageDataType = '';
-    /**
-     * The agent to calculate coverage for. Format:
-     * `projects//locations//agents/`.
-     *
-     * @param string $agent
-     */
-    public function setAgent($agent)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3CalculateCoverageResponse extends \Google\Model
     {
+        /**
+         * The agent to calculate coverage for. Format:
+         * `projects//locations//agents/`.
+         *
+         * @var string
+         */
+        public $agent;
+        protected $intentCoverageType = GoogleCloudDialogflowCxV3IntentCoverage::class;
+        protected $intentCoverageDataType = '';
+        protected $routeGroupCoverageType = GoogleCloudDialogflowCxV3TransitionRouteGroupCoverage::class;
+        protected $routeGroupCoverageDataType = '';
+        protected $transitionCoverageType = GoogleCloudDialogflowCxV3TransitionCoverage::class;
+        protected $transitionCoverageDataType = '';
+        /**
+         * The agent to calculate coverage for. Format:
+         * `projects//locations//agents/`.
+         *
+         * @param string $agent
+         */
+        public function setAgent($agent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAgent()
+        {
+        }
+        /**
+         * Intent coverage.
+         *
+         * @param GoogleCloudDialogflowCxV3IntentCoverage $intentCoverage
+         */
+        public function setIntentCoverage(GoogleCloudDialogflowCxV3IntentCoverage $intentCoverage)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3IntentCoverage
+         */
+        public function getIntentCoverage()
+        {
+        }
+        /**
+         * Transition route group coverage.
+         *
+         * @param GoogleCloudDialogflowCxV3TransitionRouteGroupCoverage $routeGroupCoverage
+         */
+        public function setRouteGroupCoverage(GoogleCloudDialogflowCxV3TransitionRouteGroupCoverage $routeGroupCoverage)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3TransitionRouteGroupCoverage
+         */
+        public function getRouteGroupCoverage()
+        {
+        }
+        /**
+         * Transition (excluding transition route groups) coverage.
+         *
+         * @param GoogleCloudDialogflowCxV3TransitionCoverage $transitionCoverage
+         */
+        public function setTransitionCoverage(GoogleCloudDialogflowCxV3TransitionCoverage $transitionCoverage)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3TransitionCoverage
+         */
+        public function getTransitionCoverage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3CalculateCoverageResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAgent()
-    {
-    }
-    /**
-     * Intent coverage.
-     *
-     * @param GoogleCloudDialogflowCxV3IntentCoverage $intentCoverage
-     */
-    public function setIntentCoverage(GoogleCloudDialogflowCxV3IntentCoverage $intentCoverage)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3IntentCoverage
-     */
-    public function getIntentCoverage()
-    {
-    }
-    /**
-     * Transition route group coverage.
-     *
-     * @param GoogleCloudDialogflowCxV3TransitionRouteGroupCoverage $routeGroupCoverage
-     */
-    public function setRouteGroupCoverage(GoogleCloudDialogflowCxV3TransitionRouteGroupCoverage $routeGroupCoverage)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3TransitionRouteGroupCoverage
-     */
-    public function getRouteGroupCoverage()
-    {
-    }
-    /**
-     * Transition (excluding transition route groups) coverage.
-     *
-     * @param GoogleCloudDialogflowCxV3TransitionCoverage $transitionCoverage
-     */
-    public function setTransitionCoverage(GoogleCloudDialogflowCxV3TransitionCoverage $transitionCoverage)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3TransitionCoverage
-     */
-    public function getTransitionCoverage()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3CalculateCoverageResponse extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3CalculateCoverageResponse
     {
     }
 }

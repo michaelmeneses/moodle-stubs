@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1AssociationInfo extends \Google\Model
-{
-    /**
-     * The name of the base entitlement, for which this entitlement is an add-on.
-     *
-     * @var string
-     */
-    public $baseEntitlement;
-    /**
-     * The name of the base entitlement, for which this entitlement is an add-on.
-     *
-     * @param string $baseEntitlement
-     */
-    public function setBaseEntitlement($baseEntitlement)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1AssociationInfo extends \Google\Model
     {
+        /**
+         * The name of the base entitlement, for which this entitlement is an add-on.
+         *
+         * @var string
+         */
+        public $baseEntitlement;
+        /**
+         * The name of the base entitlement, for which this entitlement is an add-on.
+         *
+         * @param string $baseEntitlement
+         */
+        public function setBaseEntitlement($baseEntitlement)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBaseEntitlement()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1AssociationInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBaseEntitlement()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1AssociationInfo extends \Google\Service\Cloudchannel\GoogleCloudChannelV1AssociationInfo
     {
     }
 }

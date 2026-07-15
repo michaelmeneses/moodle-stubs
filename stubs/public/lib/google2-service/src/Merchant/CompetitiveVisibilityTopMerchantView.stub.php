@@ -21,139 +21,148 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Merchant;
-
-class CompetitiveVisibilityTopMerchantView extends \Google\Model
-{
-    public $adsOrganicRatio;
-    protected $dateType = Date::class;
-    protected $dateDataType = '';
-    /**
-     * @var string
-     */
-    public $domain;
-    public $higherPositionRate;
-    /**
-     * @var bool
-     */
-    public $isYourDomain;
-    public $pageOverlapRate;
-    /**
-     * @var string
-     */
-    public $rank;
-    /**
-     * @var string
-     */
-    public $reportCategoryId;
-    /**
-     * @var string
-     */
-    public $reportCountryCode;
-    /**
-     * @var string
-     */
-    public $trafficSource;
-    public function setAdsOrganicRatio($adsOrganicRatio)
+namespace Google\Service\Merchant {
+    class CompetitiveVisibilityTopMerchantView extends \Google\Model
     {
+        public $adsOrganicRatio;
+        protected $dateType = Date::class;
+        protected $dateDataType = '';
+        /**
+         * @var string
+         */
+        public $domain;
+        public $higherPositionRate;
+        /**
+         * @var bool
+         */
+        public $isYourDomain;
+        public $pageOverlapRate;
+        /**
+         * @var string
+         */
+        public $rank;
+        /**
+         * @var string
+         */
+        public $reportCategoryId;
+        /**
+         * @var string
+         */
+        public $reportCountryCode;
+        /**
+         * @var string
+         */
+        public $trafficSource;
+        public function setAdsOrganicRatio($adsOrganicRatio)
+        {
+        }
+        public function getAdsOrganicRatio()
+        {
+        }
+        /**
+         * @param Date
+         */
+        public function setDate(Date $date)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getDate()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDomain($domain)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDomain()
+        {
+        }
+        public function setHigherPositionRate($higherPositionRate)
+        {
+        }
+        public function getHigherPositionRate()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setIsYourDomain($isYourDomain)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsYourDomain()
+        {
+        }
+        public function setPageOverlapRate($pageOverlapRate)
+        {
+        }
+        public function getPageOverlapRate()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRank($rank)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRank()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReportCategoryId($reportCategoryId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReportCategoryId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReportCountryCode($reportCountryCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReportCountryCode()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTrafficSource($trafficSource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTrafficSource()
+        {
+        }
     }
-    public function getAdsOrganicRatio()
-    {
-    }
+}
+namespace {
     /**
-     * @param Date
+     * Runtime class alias of \Google\Service\Merchant\CompetitiveVisibilityTopMerchantView registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setDate(Date $date)
-    {
-    }
-    /**
-     * @return Date
-     */
-    public function getDate()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDomain($domain)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDomain()
-    {
-    }
-    public function setHigherPositionRate($higherPositionRate)
-    {
-    }
-    public function getHigherPositionRate()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setIsYourDomain($isYourDomain)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsYourDomain()
-    {
-    }
-    public function setPageOverlapRate($pageOverlapRate)
-    {
-    }
-    public function getPageOverlapRate()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRank($rank)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRank()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReportCategoryId($reportCategoryId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReportCategoryId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReportCountryCode($reportCountryCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReportCountryCode()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTrafficSource($trafficSource)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTrafficSource()
+    class Google_Service_Merchant_CompetitiveVisibilityTopMerchantView extends \Google\Service\Merchant\CompetitiveVisibilityTopMerchantView
     {
     }
 }

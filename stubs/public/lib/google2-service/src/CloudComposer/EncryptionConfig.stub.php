@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudComposer;
-
-class EncryptionConfig extends \Google\Model
-{
-    /**
-     * Optional. Customer-managed Encryption Key available through Google's Key
-     * Management Service. Cannot be updated. If not specified, Google-managed key
-     * will be used.
-     *
-     * @var string
-     */
-    public $kmsKeyName;
-    /**
-     * Optional. Customer-managed Encryption Key available through Google's Key
-     * Management Service. Cannot be updated. If not specified, Google-managed key
-     * will be used.
-     *
-     * @param string $kmsKeyName
-     */
-    public function setKmsKeyName($kmsKeyName)
+namespace Google\Service\CloudComposer {
+    class EncryptionConfig extends \Google\Model
     {
+        /**
+         * Optional. Customer-managed Encryption Key available through Google's Key
+         * Management Service. Cannot be updated. If not specified, Google-managed key
+         * will be used.
+         *
+         * @var string
+         */
+        public $kmsKeyName;
+        /**
+         * Optional. Customer-managed Encryption Key available through Google's Key
+         * Management Service. Cannot be updated. If not specified, Google-managed key
+         * will be used.
+         *
+         * @param string $kmsKeyName
+         */
+        public function setKmsKeyName($kmsKeyName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKmsKeyName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudComposer\EncryptionConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKmsKeyName()
+    class Google_Service_CloudComposer_EncryptionConfig extends \Google\Service\CloudComposer\EncryptionConfig
     {
     }
 }

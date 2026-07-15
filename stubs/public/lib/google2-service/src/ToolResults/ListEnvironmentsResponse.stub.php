@@ -21,107 +21,116 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class ListEnvironmentsResponse extends \Google\Collection
-{
-    protected $collection_key = 'environments';
-    protected $environmentsType = Environment::class;
-    protected $environmentsDataType = 'array';
-    /**
-     * A Execution id Always set.
-     *
-     * @var string
-     */
-    public $executionId;
-    /**
-     * A History id. Always set.
-     *
-     * @var string
-     */
-    public $historyId;
-    /**
-     * A continuation token to resume the query at the next item. Will only be set
-     * if there are more Environments to fetch.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * A Project id. Always set.
-     *
-     * @var string
-     */
-    public $projectId;
-    /**
-     * Environments. Always set.
-     *
-     * @param Environment[] $environments
-     */
-    public function setEnvironments($environments)
+namespace Google\Service\ToolResults {
+    class ListEnvironmentsResponse extends \Google\Collection
     {
+        protected $collection_key = 'environments';
+        protected $environmentsType = Environment::class;
+        protected $environmentsDataType = 'array';
+        /**
+         * A Execution id Always set.
+         *
+         * @var string
+         */
+        public $executionId;
+        /**
+         * A History id. Always set.
+         *
+         * @var string
+         */
+        public $historyId;
+        /**
+         * A continuation token to resume the query at the next item. Will only be set
+         * if there are more Environments to fetch.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * A Project id. Always set.
+         *
+         * @var string
+         */
+        public $projectId;
+        /**
+         * Environments. Always set.
+         *
+         * @param Environment[] $environments
+         */
+        public function setEnvironments($environments)
+        {
+        }
+        /**
+         * @return Environment[]
+         */
+        public function getEnvironments()
+        {
+        }
+        /**
+         * A Execution id Always set.
+         *
+         * @param string $executionId
+         */
+        public function setExecutionId($executionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExecutionId()
+        {
+        }
+        /**
+         * A History id. Always set.
+         *
+         * @param string $historyId
+         */
+        public function setHistoryId($historyId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHistoryId()
+        {
+        }
+        /**
+         * A continuation token to resume the query at the next item. Will only be set
+         * if there are more Environments to fetch.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * A Project id. Always set.
+         *
+         * @param string $projectId
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Environment[]
+     * Runtime class alias of \Google\Service\ToolResults\ListEnvironmentsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnvironments()
-    {
-    }
-    /**
-     * A Execution id Always set.
-     *
-     * @param string $executionId
-     */
-    public function setExecutionId($executionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExecutionId()
-    {
-    }
-    /**
-     * A History id. Always set.
-     *
-     * @param string $historyId
-     */
-    public function setHistoryId($historyId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHistoryId()
-    {
-    }
-    /**
-     * A continuation token to resume the query at the next item. Will only be set
-     * if there are more Environments to fetch.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * A Project id. Always set.
-     *
-     * @param string $projectId
-     */
-    public function setProjectId($projectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProjectId()
+    class Google_Service_ToolResults_ListEnvironmentsResponse extends \Google\Service\ToolResults\ListEnvironmentsResponse
     {
     }
 }

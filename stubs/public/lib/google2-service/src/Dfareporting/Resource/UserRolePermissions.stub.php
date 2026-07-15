@@ -21,42 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting\Resource;
-
-/**
- * The "userRolePermissions" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dfareportingService = new Google\Service\Dfareporting(...);
- *   $userRolePermissions = $dfareportingService->userRolePermissions;
- *  </code>
- */
-class UserRolePermissions extends \Google\Service\Resource
-{
+namespace Google\Service\Dfareporting\Resource {
+    use Google\Service\Dfareporting\UserRolePermission;
+    use Google\Service\Dfareporting\UserRolePermissionsListResponse;
     /**
-     * Gets one user role permission by ID. (userRolePermissions.get)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param string $id User role permission ID.
-     * @param array $optParams Optional parameters.
-     * @return UserRolePermission
-     * @throws \Google\Service\Exception
+     * The "userRolePermissions" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dfareportingService = new Google\Service\Dfareporting(...);
+     *   $userRolePermissions = $dfareportingService->userRolePermissions;
+     *  </code>
      */
-    public function get($profileId, $id, $optParams = [])
+    class UserRolePermissions extends \Google\Service\Resource
     {
+        /**
+         * Gets one user role permission by ID. (userRolePermissions.get)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param string $id User role permission ID.
+         * @param array $optParams Optional parameters.
+         * @return UserRolePermission
+         * @throws \Google\Service\Exception
+         */
+        public function get($profileId, $id, $optParams = [])
+        {
+        }
+        /**
+         * Gets a list of user role permissions, possibly filtered.
+         * (userRolePermissions.listUserRolePermissions)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string ids Select only user role permissions with these IDs.
+         * @return UserRolePermissionsListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listUserRolePermissions($profileId, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets a list of user role permissions, possibly filtered.
-     * (userRolePermissions.listUserRolePermissions)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string ids Select only user role permissions with these IDs.
-     * @return UserRolePermissionsListResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Dfareporting\Resource\UserRolePermissions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listUserRolePermissions($profileId, $optParams = [])
+    class Google_Service_Dfareporting_Resource_UserRolePermissions extends \Google\Service\Dfareporting\Resource\UserRolePermissions
     {
     }
 }

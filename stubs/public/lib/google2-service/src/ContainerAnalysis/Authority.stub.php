@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class Authority extends \Google\Model
-{
-    protected $hintType = Hint::class;
-    protected $hintDataType = '';
-    /**
-     * @param Hint
-     */
-    public function setHint(Hint $hint)
+namespace Google\Service\ContainerAnalysis {
+    class Authority extends \Google\Model
     {
+        protected $hintType = Hint::class;
+        protected $hintDataType = '';
+        /**
+         * @param Hint
+         */
+        public function setHint(Hint $hint)
+        {
+        }
+        /**
+         * @return Hint
+         */
+        public function getHint()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Hint
+     * Runtime class alias of \Google\Service\ContainerAnalysis\Authority registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHint()
+    class Google_Service_ContainerAnalysis_Authority extends \Google\Service\ContainerAnalysis\Authority
     {
     }
 }

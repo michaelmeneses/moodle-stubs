@@ -21,28 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SASPortalTesting\Resource;
-
-/**
- * The "provisioning" collection of methods.
- * Typical usage is:
- *  <code>
- *   $prod_tt_sasportalService = new Google\Service\SASPortalTesting(...);
- *   $provisioning = $prod_tt_sasportalService->provisioning;
- *  </code>
- */
-class Provisioning extends \Google\Service\Resource
-{
+namespace Google\Service\SASPortalTesting\Resource {
+    use Google\Service\SASPortalTesting\SasPortalProvisionDeploymentRequest;
+    use Google\Service\SASPortalTesting\SasPortalProvisionDeploymentResponse;
     /**
-     * Creates a new SAS deployment through the GCP workflow. Creates a SAS
-     * organization if an organization match is not found.
-     * (provisioning.provisionDeployment)
-     *
-     * @param SasPortalProvisionDeploymentRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return SasPortalProvisionDeploymentResponse
+     * The "provisioning" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $prod_tt_sasportalService = new Google\Service\SASPortalTesting(...);
+     *   $provisioning = $prod_tt_sasportalService->provisioning;
+     *  </code>
      */
-    public function provisionDeployment(SasPortalProvisionDeploymentRequest $postBody, $optParams = [])
+    class Provisioning extends \Google\Service\Resource
+    {
+        /**
+         * Creates a new SAS deployment through the GCP workflow. Creates a SAS
+         * organization if an organization match is not found.
+         * (provisioning.provisionDeployment)
+         *
+         * @param SasPortalProvisionDeploymentRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return SasPortalProvisionDeploymentResponse
+         */
+        public function provisionDeployment(SasPortalProvisionDeploymentRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\SASPortalTesting\Resource\Provisioning registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_SASPortalTesting_Resource_Provisioning extends \Google\Service\SASPortalTesting\Resource\Provisioning
     {
     }
 }

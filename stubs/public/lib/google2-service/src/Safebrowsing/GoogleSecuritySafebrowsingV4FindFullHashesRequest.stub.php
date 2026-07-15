@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Safebrowsing;
-
-class GoogleSecuritySafebrowsingV4FindFullHashesRequest extends \Google\Collection
-{
-    protected $collection_key = 'clientStates';
-    protected $apiClientType = GoogleSecuritySafebrowsingV4ClientInfo::class;
-    protected $apiClientDataType = '';
-    protected $clientType = GoogleSecuritySafebrowsingV4ClientInfo::class;
-    protected $clientDataType = '';
-    /**
-     * @var string[]
-     */
-    public $clientStates;
-    protected $threatInfoType = GoogleSecuritySafebrowsingV4ThreatInfo::class;
-    protected $threatInfoDataType = '';
-    /**
-     * @param GoogleSecuritySafebrowsingV4ClientInfo
-     */
-    public function setApiClient(GoogleSecuritySafebrowsingV4ClientInfo $apiClient)
+namespace Google\Service\Safebrowsing {
+    class GoogleSecuritySafebrowsingV4FindFullHashesRequest extends \Google\Collection
     {
+        protected $collection_key = 'clientStates';
+        protected $apiClientType = GoogleSecuritySafebrowsingV4ClientInfo::class;
+        protected $apiClientDataType = '';
+        protected $clientType = GoogleSecuritySafebrowsingV4ClientInfo::class;
+        protected $clientDataType = '';
+        /**
+         * @var string[]
+         */
+        public $clientStates;
+        protected $threatInfoType = GoogleSecuritySafebrowsingV4ThreatInfo::class;
+        protected $threatInfoDataType = '';
+        /**
+         * @param GoogleSecuritySafebrowsingV4ClientInfo
+         */
+        public function setApiClient(GoogleSecuritySafebrowsingV4ClientInfo $apiClient)
+        {
+        }
+        /**
+         * @return GoogleSecuritySafebrowsingV4ClientInfo
+         */
+        public function getApiClient()
+        {
+        }
+        /**
+         * @param GoogleSecuritySafebrowsingV4ClientInfo
+         */
+        public function setClient(GoogleSecuritySafebrowsingV4ClientInfo $client)
+        {
+        }
+        /**
+         * @return GoogleSecuritySafebrowsingV4ClientInfo
+         */
+        public function getClient()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setClientStates($clientStates)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getClientStates()
+        {
+        }
+        /**
+         * @param GoogleSecuritySafebrowsingV4ThreatInfo
+         */
+        public function setThreatInfo(GoogleSecuritySafebrowsingV4ThreatInfo $threatInfo)
+        {
+        }
+        /**
+         * @return GoogleSecuritySafebrowsingV4ThreatInfo
+         */
+        public function getThreatInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleSecuritySafebrowsingV4ClientInfo
+     * Runtime class alias of \Google\Service\Safebrowsing\GoogleSecuritySafebrowsingV4FindFullHashesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiClient()
-    {
-    }
-    /**
-     * @param GoogleSecuritySafebrowsingV4ClientInfo
-     */
-    public function setClient(GoogleSecuritySafebrowsingV4ClientInfo $client)
-    {
-    }
-    /**
-     * @return GoogleSecuritySafebrowsingV4ClientInfo
-     */
-    public function getClient()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setClientStates($clientStates)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getClientStates()
-    {
-    }
-    /**
-     * @param GoogleSecuritySafebrowsingV4ThreatInfo
-     */
-    public function setThreatInfo(GoogleSecuritySafebrowsingV4ThreatInfo $threatInfo)
-    {
-    }
-    /**
-     * @return GoogleSecuritySafebrowsingV4ThreatInfo
-     */
-    public function getThreatInfo()
+    class Google_Service_Safebrowsing_GoogleSecuritySafebrowsingV4FindFullHashesRequest extends \Google\Service\Safebrowsing\GoogleSecuritySafebrowsingV4FindFullHashesRequest
     {
     }
 }

@@ -21,97 +21,106 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1MemoryBankCustomizationConfig extends \Google\Collection
-{
-    protected $collection_key = 'scopeKeys';
-    /**
-     * Optional. If true, then the memories will be generated in the third person
-     * (i.e. "The user generates memories with Memory Bank."). By default, the
-     * memories will be generated in the first person (i.e. "I generate memories
-     * with Memory Bank.")
-     *
-     * @var bool
-     */
-    public $enableThirdPersonMemories;
-    protected $generateMemoriesExamplesType = GoogleCloudAiplatformV1MemoryBankCustomizationConfigGenerateMemoriesExample::class;
-    protected $generateMemoriesExamplesDataType = 'array';
-    protected $memoryTopicsType = GoogleCloudAiplatformV1MemoryBankCustomizationConfigMemoryTopic::class;
-    protected $memoryTopicsDataType = 'array';
-    /**
-     * Optional. The scope keys (i.e. 'user_id') for which to use this config. A
-     * request's scope must include all of the provided keys for the config to be
-     * used (order does not matter). If empty, then the config will be used for
-     * all requests that do not have a more specific config. Only one default
-     * config is allowed per Memory Bank.
-     *
-     * @var string[]
-     */
-    public $scopeKeys;
-    /**
-     * Optional. If true, then the memories will be generated in the third person
-     * (i.e. "The user generates memories with Memory Bank."). By default, the
-     * memories will be generated in the first person (i.e. "I generate memories
-     * with Memory Bank.")
-     *
-     * @param bool $enableThirdPersonMemories
-     */
-    public function setEnableThirdPersonMemories($enableThirdPersonMemories)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1MemoryBankCustomizationConfig extends \Google\Collection
     {
+        protected $collection_key = 'scopeKeys';
+        /**
+         * Optional. If true, then the memories will be generated in the third person
+         * (i.e. "The user generates memories with Memory Bank."). By default, the
+         * memories will be generated in the first person (i.e. "I generate memories
+         * with Memory Bank.")
+         *
+         * @var bool
+         */
+        public $enableThirdPersonMemories;
+        protected $generateMemoriesExamplesType = GoogleCloudAiplatformV1MemoryBankCustomizationConfigGenerateMemoriesExample::class;
+        protected $generateMemoriesExamplesDataType = 'array';
+        protected $memoryTopicsType = GoogleCloudAiplatformV1MemoryBankCustomizationConfigMemoryTopic::class;
+        protected $memoryTopicsDataType = 'array';
+        /**
+         * Optional. The scope keys (i.e. 'user_id') for which to use this config. A
+         * request's scope must include all of the provided keys for the config to be
+         * used (order does not matter). If empty, then the config will be used for
+         * all requests that do not have a more specific config. Only one default
+         * config is allowed per Memory Bank.
+         *
+         * @var string[]
+         */
+        public $scopeKeys;
+        /**
+         * Optional. If true, then the memories will be generated in the third person
+         * (i.e. "The user generates memories with Memory Bank."). By default, the
+         * memories will be generated in the first person (i.e. "I generate memories
+         * with Memory Bank.")
+         *
+         * @param bool $enableThirdPersonMemories
+         */
+        public function setEnableThirdPersonMemories($enableThirdPersonMemories)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableThirdPersonMemories()
+        {
+        }
+        /**
+         * Optional. Examples of how to generate memories for a particular scope.
+         *
+         * @param GoogleCloudAiplatformV1MemoryBankCustomizationConfigGenerateMemoriesExample[] $generateMemoriesExamples
+         */
+        public function setGenerateMemoriesExamples($generateMemoriesExamples)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1MemoryBankCustomizationConfigGenerateMemoriesExample[]
+         */
+        public function getGenerateMemoriesExamples()
+        {
+        }
+        /**
+         * Optional. Topics of information that should be extracted from conversations
+         * and stored as memories. If not set, then Memory Bank's default topics will
+         * be used.
+         *
+         * @param GoogleCloudAiplatformV1MemoryBankCustomizationConfigMemoryTopic[] $memoryTopics
+         */
+        public function setMemoryTopics($memoryTopics)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1MemoryBankCustomizationConfigMemoryTopic[]
+         */
+        public function getMemoryTopics()
+        {
+        }
+        /**
+         * Optional. The scope keys (i.e. 'user_id') for which to use this config. A
+         * request's scope must include all of the provided keys for the config to be
+         * used (order does not matter). If empty, then the config will be used for
+         * all requests that do not have a more specific config. Only one default
+         * config is allowed per Memory Bank.
+         *
+         * @param string[] $scopeKeys
+         */
+        public function setScopeKeys($scopeKeys)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getScopeKeys()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1MemoryBankCustomizationConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnableThirdPersonMemories()
-    {
-    }
-    /**
-     * Optional. Examples of how to generate memories for a particular scope.
-     *
-     * @param GoogleCloudAiplatformV1MemoryBankCustomizationConfigGenerateMemoriesExample[] $generateMemoriesExamples
-     */
-    public function setGenerateMemoriesExamples($generateMemoriesExamples)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1MemoryBankCustomizationConfigGenerateMemoriesExample[]
-     */
-    public function getGenerateMemoriesExamples()
-    {
-    }
-    /**
-     * Optional. Topics of information that should be extracted from conversations
-     * and stored as memories. If not set, then Memory Bank's default topics will
-     * be used.
-     *
-     * @param GoogleCloudAiplatformV1MemoryBankCustomizationConfigMemoryTopic[] $memoryTopics
-     */
-    public function setMemoryTopics($memoryTopics)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1MemoryBankCustomizationConfigMemoryTopic[]
-     */
-    public function getMemoryTopics()
-    {
-    }
-    /**
-     * Optional. The scope keys (i.e. 'user_id') for which to use this config. A
-     * request's scope must include all of the provided keys for the config to be
-     * used (order does not matter). If empty, then the config will be used for
-     * all requests that do not have a more specific config. Only one default
-     * config is allowed per Memory Bank.
-     *
-     * @param string[] $scopeKeys
-     */
-    public function setScopeKeys($scopeKeys)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getScopeKeys()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1MemoryBankCustomizationConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1MemoryBankCustomizationConfig
     {
     }
 }

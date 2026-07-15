@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class QueryInfo extends \Google\Model
-{
-    /**
-     * Output only. Information about query optimizations.
-     *
-     * @var array[]
-     */
-    public $optimizationDetails;
-    /**
-     * Output only. Information about query optimizations.
-     *
-     * @param array[] $optimizationDetails
-     */
-    public function setOptimizationDetails($optimizationDetails)
+namespace Google\Service\Bigquery {
+    class QueryInfo extends \Google\Model
     {
+        /**
+         * Output only. Information about query optimizations.
+         *
+         * @var array[]
+         */
+        public $optimizationDetails;
+        /**
+         * Output only. Information about query optimizations.
+         *
+         * @param array[] $optimizationDetails
+         */
+        public function setOptimizationDetails($optimizationDetails)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getOptimizationDetails()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\Bigquery\QueryInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOptimizationDetails()
+    class Google_Service_Bigquery_QueryInfo extends \Google\Service\Bigquery\QueryInfo
     {
     }
 }

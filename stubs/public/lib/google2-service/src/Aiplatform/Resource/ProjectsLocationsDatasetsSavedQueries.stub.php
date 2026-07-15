@@ -21,50 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform\Resource;
-
-/**
- * The "savedQueries" collection of methods.
- * Typical usage is:
- *  <code>
- *   $aiplatformService = new Google\Service\Aiplatform(...);
- *   $savedQueries = $aiplatformService->projects_locations_datasets_savedQueries;
- *  </code>
- */
-class ProjectsLocationsDatasetsSavedQueries extends \Google\Service\Resource
-{
+namespace Google\Service\Aiplatform\Resource {
+    use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListSavedQueriesResponse;
+    use Google\Service\Aiplatform\GoogleLongrunningOperation;
     /**
-     * Deletes a SavedQuery. (savedQueries.delete)
-     *
-     * @param string $name Required. The resource name of the SavedQuery to delete.
-     * Format: `projects/{project}/locations/{location}/datasets/{dataset}/savedQuer
-     * ies/{saved_query}`
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
+     * The "savedQueries" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $aiplatformService = new Google\Service\Aiplatform(...);
+     *   $savedQueries = $aiplatformService->projects_locations_datasets_savedQueries;
+     *  </code>
      */
-    public function delete($name, $optParams = [])
+    class ProjectsLocationsDatasetsSavedQueries extends \Google\Service\Resource
     {
+        /**
+         * Deletes a SavedQuery. (savedQueries.delete)
+         *
+         * @param string $name Required. The resource name of the SavedQuery to delete.
+         * Format: `projects/{project}/locations/{location}/datasets/{dataset}/savedQuer
+         * ies/{saved_query}`
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists SavedQueries in a Dataset.
+         * (savedQueries.listProjectsLocationsDatasetsSavedQueries)
+         *
+         * @param string $parent Required. The resource name of the Dataset to list
+         * SavedQueries from. Format:
+         * `projects/{project}/locations/{location}/datasets/{dataset}`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter The standard list filter.
+         * @opt_param string orderBy A comma-separated list of fields to order by,
+         * sorted in ascending order. Use "desc" after a field name for descending.
+         * @opt_param int pageSize The standard list page size.
+         * @opt_param string pageToken The standard list page token.
+         * @opt_param string readMask Mask specifying which fields to read.
+         * @return GoogleCloudAiplatformV1ListSavedQueriesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsDatasetsSavedQueries($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists SavedQueries in a Dataset.
-     * (savedQueries.listProjectsLocationsDatasetsSavedQueries)
-     *
-     * @param string $parent Required. The resource name of the Dataset to list
-     * SavedQueries from. Format:
-     * `projects/{project}/locations/{location}/datasets/{dataset}`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter The standard list filter.
-     * @opt_param string orderBy A comma-separated list of fields to order by,
-     * sorted in ascending order. Use "desc" after a field name for descending.
-     * @opt_param int pageSize The standard list page size.
-     * @opt_param string pageToken The standard list page token.
-     * @opt_param string readMask Mask specifying which fields to read.
-     * @return GoogleCloudAiplatformV1ListSavedQueriesResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Aiplatform\Resource\ProjectsLocationsDatasetsSavedQueries registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listProjectsLocationsDatasetsSavedQueries($parent, $optParams = [])
+    class Google_Service_Aiplatform_Resource_ProjectsLocationsDatasetsSavedQueries extends \Google\Service\Aiplatform\Resource\ProjectsLocationsDatasetsSavedQueries
     {
     }
 }

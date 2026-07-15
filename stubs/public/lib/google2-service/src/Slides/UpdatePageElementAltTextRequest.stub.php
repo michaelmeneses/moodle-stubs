@@ -21,80 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides;
-
-class UpdatePageElementAltTextRequest extends \Google\Model
-{
-    /**
-     * The updated alt text description of the page element. If unset the existing
-     * value will be maintained. The description is exposed to screen readers and
-     * other accessibility interfaces. Only use human readable values related to
-     * the content of the page element.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * The object ID of the page element the updates are applied to.
-     *
-     * @var string
-     */
-    public $objectId;
-    /**
-     * The updated alt text title of the page element. If unset the existing value
-     * will be maintained. The title is exposed to screen readers and other
-     * accessibility interfaces. Only use human readable values related to the
-     * content of the page element.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * The updated alt text description of the page element. If unset the existing
-     * value will be maintained. The description is exposed to screen readers and
-     * other accessibility interfaces. Only use human readable values related to
-     * the content of the page element.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\Slides {
+    class UpdatePageElementAltTextRequest extends \Google\Model
     {
+        /**
+         * The updated alt text description of the page element. If unset the existing
+         * value will be maintained. The description is exposed to screen readers and
+         * other accessibility interfaces. Only use human readable values related to
+         * the content of the page element.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * The object ID of the page element the updates are applied to.
+         *
+         * @var string
+         */
+        public $objectId;
+        /**
+         * The updated alt text title of the page element. If unset the existing value
+         * will be maintained. The title is exposed to screen readers and other
+         * accessibility interfaces. Only use human readable values related to the
+         * content of the page element.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * The updated alt text description of the page element. If unset the existing
+         * value will be maintained. The description is exposed to screen readers and
+         * other accessibility interfaces. Only use human readable values related to
+         * the content of the page element.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * The object ID of the page element the updates are applied to.
+         *
+         * @param string $objectId
+         */
+        public function setObjectId($objectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectId()
+        {
+        }
+        /**
+         * The updated alt text title of the page element. If unset the existing value
+         * will be maintained. The title is exposed to screen readers and other
+         * accessibility interfaces. Only use human readable values related to the
+         * content of the page element.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Slides\UpdatePageElementAltTextRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * The object ID of the page element the updates are applied to.
-     *
-     * @param string $objectId
-     */
-    public function setObjectId($objectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObjectId()
-    {
-    }
-    /**
-     * The updated alt text title of the page element. If unset the existing value
-     * will be maintained. The title is exposed to screen readers and other
-     * accessibility interfaces. Only use human readable values related to the
-     * content of the page element.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_Slides_UpdatePageElementAltTextRequest extends \Google\Service\Slides\UpdatePageElementAltTextRequest
     {
     }
 }

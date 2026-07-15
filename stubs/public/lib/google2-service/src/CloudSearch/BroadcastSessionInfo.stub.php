@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class BroadcastSessionInfo extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $broadcastSessionId;
-    protected $broadcastStatsType = BroadcastStats::class;
-    protected $broadcastStatsDataType = '';
-    /**
-     * @var string
-     */
-    public $ingestionId;
-    protected $sessionStateInfoType = SessionStateInfo::class;
-    protected $sessionStateInfoDataType = '';
-    /**
-     * @param string
-     */
-    public function setBroadcastSessionId($broadcastSessionId)
+namespace Google\Service\CloudSearch {
+    class BroadcastSessionInfo extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $broadcastSessionId;
+        protected $broadcastStatsType = BroadcastStats::class;
+        protected $broadcastStatsDataType = '';
+        /**
+         * @var string
+         */
+        public $ingestionId;
+        protected $sessionStateInfoType = SessionStateInfo::class;
+        protected $sessionStateInfoDataType = '';
+        /**
+         * @param string
+         */
+        public function setBroadcastSessionId($broadcastSessionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBroadcastSessionId()
+        {
+        }
+        /**
+         * @param BroadcastStats
+         */
+        public function setBroadcastStats(BroadcastStats $broadcastStats)
+        {
+        }
+        /**
+         * @return BroadcastStats
+         */
+        public function getBroadcastStats()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setIngestionId($ingestionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIngestionId()
+        {
+        }
+        /**
+         * @param SessionStateInfo
+         */
+        public function setSessionStateInfo(SessionStateInfo $sessionStateInfo)
+        {
+        }
+        /**
+         * @return SessionStateInfo
+         */
+        public function getSessionStateInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\BroadcastSessionInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBroadcastSessionId()
-    {
-    }
-    /**
-     * @param BroadcastStats
-     */
-    public function setBroadcastStats(BroadcastStats $broadcastStats)
-    {
-    }
-    /**
-     * @return BroadcastStats
-     */
-    public function getBroadcastStats()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setIngestionId($ingestionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIngestionId()
-    {
-    }
-    /**
-     * @param SessionStateInfo
-     */
-    public function setSessionStateInfo(SessionStateInfo $sessionStateInfo)
-    {
-    }
-    /**
-     * @return SessionStateInfo
-     */
-    public function getSessionStateInfo()
+    class Google_Service_CloudSearch_BroadcastSessionInfo extends \Google\Service\CloudSearch\BroadcastSessionInfo
     {
     }
 }

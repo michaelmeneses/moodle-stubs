@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vault;
-
-class RemoveMatterPermissionsRequest extends \Google\Model
-{
-    /**
-     * The account ID.
-     *
-     * @var string
-     */
-    public $accountId;
-    /**
-     * The account ID.
-     *
-     * @param string $accountId
-     */
-    public function setAccountId($accountId)
+namespace Google\Service\Vault {
+    class RemoveMatterPermissionsRequest extends \Google\Model
     {
+        /**
+         * The account ID.
+         *
+         * @var string
+         */
+        public $accountId;
+        /**
+         * The account ID.
+         *
+         * @param string $accountId
+         */
+        public function setAccountId($accountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccountId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Vault\RemoveMatterPermissionsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountId()
+    class Google_Service_Vault_RemoveMatterPermissionsRequest extends \Google\Service\Vault\RemoveMatterPermissionsRequest
     {
     }
 }

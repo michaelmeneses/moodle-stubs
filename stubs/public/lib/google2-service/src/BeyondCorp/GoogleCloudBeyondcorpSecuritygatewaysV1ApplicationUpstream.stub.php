@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BeyondCorp;
-
-class GoogleCloudBeyondcorpSecuritygatewaysV1ApplicationUpstream extends \Google\Model
-{
-    protected $egressPolicyType = GoogleCloudBeyondcorpSecuritygatewaysV1EgressPolicy::class;
-    protected $egressPolicyDataType = '';
-    protected $externalType = GoogleCloudBeyondcorpSecuritygatewaysV1ApplicationUpstreamExternal::class;
-    protected $externalDataType = '';
-    protected $networkType = GoogleCloudBeyondcorpSecuritygatewaysV1ApplicationUpstreamNetwork::class;
-    protected $networkDataType = '';
-    protected $proxyProtocolType = GoogleCloudBeyondcorpSecuritygatewaysV1ProxyProtocolConfig::class;
-    protected $proxyProtocolDataType = '';
-    /**
-     * Optional. Routing policy information.
-     *
-     * @param GoogleCloudBeyondcorpSecuritygatewaysV1EgressPolicy $egressPolicy
-     */
-    public function setEgressPolicy(GoogleCloudBeyondcorpSecuritygatewaysV1EgressPolicy $egressPolicy)
+namespace Google\Service\BeyondCorp {
+    class GoogleCloudBeyondcorpSecuritygatewaysV1ApplicationUpstream extends \Google\Model
     {
+        protected $egressPolicyType = GoogleCloudBeyondcorpSecuritygatewaysV1EgressPolicy::class;
+        protected $egressPolicyDataType = '';
+        protected $externalType = GoogleCloudBeyondcorpSecuritygatewaysV1ApplicationUpstreamExternal::class;
+        protected $externalDataType = '';
+        protected $networkType = GoogleCloudBeyondcorpSecuritygatewaysV1ApplicationUpstreamNetwork::class;
+        protected $networkDataType = '';
+        protected $proxyProtocolType = GoogleCloudBeyondcorpSecuritygatewaysV1ProxyProtocolConfig::class;
+        protected $proxyProtocolDataType = '';
+        /**
+         * Optional. Routing policy information.
+         *
+         * @param GoogleCloudBeyondcorpSecuritygatewaysV1EgressPolicy $egressPolicy
+         */
+        public function setEgressPolicy(GoogleCloudBeyondcorpSecuritygatewaysV1EgressPolicy $egressPolicy)
+        {
+        }
+        /**
+         * @return GoogleCloudBeyondcorpSecuritygatewaysV1EgressPolicy
+         */
+        public function getEgressPolicy()
+        {
+        }
+        /**
+         * List of the external endpoints to forward traffic to.
+         *
+         * @param GoogleCloudBeyondcorpSecuritygatewaysV1ApplicationUpstreamExternal $external
+         */
+        public function setExternal(GoogleCloudBeyondcorpSecuritygatewaysV1ApplicationUpstreamExternal $external)
+        {
+        }
+        /**
+         * @return GoogleCloudBeyondcorpSecuritygatewaysV1ApplicationUpstreamExternal
+         */
+        public function getExternal()
+        {
+        }
+        /**
+         * Network to forward traffic to.
+         *
+         * @param GoogleCloudBeyondcorpSecuritygatewaysV1ApplicationUpstreamNetwork $network
+         */
+        public function setNetwork(GoogleCloudBeyondcorpSecuritygatewaysV1ApplicationUpstreamNetwork $network)
+        {
+        }
+        /**
+         * @return GoogleCloudBeyondcorpSecuritygatewaysV1ApplicationUpstreamNetwork
+         */
+        public function getNetwork()
+        {
+        }
+        /**
+         * Optional. Enables proxy protocol configuration for the upstream.
+         *
+         * @param GoogleCloudBeyondcorpSecuritygatewaysV1ProxyProtocolConfig $proxyProtocol
+         */
+        public function setProxyProtocol(GoogleCloudBeyondcorpSecuritygatewaysV1ProxyProtocolConfig $proxyProtocol)
+        {
+        }
+        /**
+         * @return GoogleCloudBeyondcorpSecuritygatewaysV1ProxyProtocolConfig
+         */
+        public function getProxyProtocol()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudBeyondcorpSecuritygatewaysV1EgressPolicy
+     * Runtime class alias of \Google\Service\BeyondCorp\GoogleCloudBeyondcorpSecuritygatewaysV1ApplicationUpstream registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEgressPolicy()
-    {
-    }
-    /**
-     * List of the external endpoints to forward traffic to.
-     *
-     * @param GoogleCloudBeyondcorpSecuritygatewaysV1ApplicationUpstreamExternal $external
-     */
-    public function setExternal(GoogleCloudBeyondcorpSecuritygatewaysV1ApplicationUpstreamExternal $external)
-    {
-    }
-    /**
-     * @return GoogleCloudBeyondcorpSecuritygatewaysV1ApplicationUpstreamExternal
-     */
-    public function getExternal()
-    {
-    }
-    /**
-     * Network to forward traffic to.
-     *
-     * @param GoogleCloudBeyondcorpSecuritygatewaysV1ApplicationUpstreamNetwork $network
-     */
-    public function setNetwork(GoogleCloudBeyondcorpSecuritygatewaysV1ApplicationUpstreamNetwork $network)
-    {
-    }
-    /**
-     * @return GoogleCloudBeyondcorpSecuritygatewaysV1ApplicationUpstreamNetwork
-     */
-    public function getNetwork()
-    {
-    }
-    /**
-     * Optional. Enables proxy protocol configuration for the upstream.
-     *
-     * @param GoogleCloudBeyondcorpSecuritygatewaysV1ProxyProtocolConfig $proxyProtocol
-     */
-    public function setProxyProtocol(GoogleCloudBeyondcorpSecuritygatewaysV1ProxyProtocolConfig $proxyProtocol)
-    {
-    }
-    /**
-     * @return GoogleCloudBeyondcorpSecuritygatewaysV1ProxyProtocolConfig
-     */
-    public function getProxyProtocol()
+    class Google_Service_BeyondCorp_GoogleCloudBeyondcorpSecuritygatewaysV1ApplicationUpstream extends \Google\Service\BeyondCorp\GoogleCloudBeyondcorpSecuritygatewaysV1ApplicationUpstream
     {
     }
 }

@@ -21,80 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaPromptSpecAppBuilderDataLinkedResource extends \Google\Model
-{
-    /**
-     * A user-friendly name for the data source shown in the UI.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The unique resource name of the data source. The format is determined by
-     * the 'type' field. For type "SAVED_PROMPT":
-     * projects/{project}/locations/{location}/datasets/{dataset} For type
-     * "AI_AGENT": projects/{project}/locations/{location}/agents/{agent}
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The type of the linked resource. e.g., "SAVED_PROMPT", "AI_AGENT" This
-     * string corresponds to the name of the LinkedResourceType enum member. See:
-     * google3/cloud/console/web/ai/platform/llm/prompts/build/services/specs_repo
-     * sitory_service/linked_resources/linked_resource.ts
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * A user-friendly name for the data source shown in the UI.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaPromptSpecAppBuilderDataLinkedResource extends \Google\Model
     {
+        /**
+         * A user-friendly name for the data source shown in the UI.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The unique resource name of the data source. The format is determined by
+         * the 'type' field. For type "SAVED_PROMPT":
+         * projects/{project}/locations/{location}/datasets/{dataset} For type
+         * "AI_AGENT": projects/{project}/locations/{location}/agents/{agent}
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The type of the linked resource. e.g., "SAVED_PROMPT", "AI_AGENT" This
+         * string corresponds to the name of the LinkedResourceType enum member. See:
+         * google3/cloud/console/web/ai/platform/llm/prompts/build/services/specs_repo
+         * sitory_service/linked_resources/linked_resource.ts
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * A user-friendly name for the data source shown in the UI.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The unique resource name of the data source. The format is determined by
+         * the 'type' field. For type "SAVED_PROMPT":
+         * projects/{project}/locations/{location}/datasets/{dataset} For type
+         * "AI_AGENT": projects/{project}/locations/{location}/agents/{agent}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The type of the linked resource. e.g., "SAVED_PROMPT", "AI_AGENT" This
+         * string corresponds to the name of the LinkedResourceType enum member. See:
+         * google3/cloud/console/web/ai/platform/llm/prompts/build/services/specs_repo
+         * sitory_service/linked_resources/linked_resource.ts
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaPromptSpecAppBuilderDataLinkedResource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The unique resource name of the data source. The format is determined by
-     * the 'type' field. For type "SAVED_PROMPT":
-     * projects/{project}/locations/{location}/datasets/{dataset} For type
-     * "AI_AGENT": projects/{project}/locations/{location}/agents/{agent}
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The type of the linked resource. e.g., "SAVED_PROMPT", "AI_AGENT" This
-     * string corresponds to the name of the LinkedResourceType enum member. See:
-     * google3/cloud/console/web/ai/platform/llm/prompts/build/services/specs_repo
-     * sitory_service/linked_resources/linked_resource.ts
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaPromptSpecAppBuilderDataLinkedResource extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaPromptSpecAppBuilderDataLinkedResource
     {
     }
 }

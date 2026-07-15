@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class Collaboration extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $attachmentId;
-    protected $initiatorType = UserDisplayInfo::class;
-    protected $initiatorDataType = '';
-    /**
-     * @var string
-     */
-    public $uri;
-    /**
-     * @param string
-     */
-    public function setAttachmentId($attachmentId)
+namespace Google\Service\CloudSearch {
+    class Collaboration extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $attachmentId;
+        protected $initiatorType = UserDisplayInfo::class;
+        protected $initiatorDataType = '';
+        /**
+         * @var string
+         */
+        public $uri;
+        /**
+         * @param string
+         */
+        public function setAttachmentId($attachmentId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAttachmentId()
+        {
+        }
+        /**
+         * @param UserDisplayInfo
+         */
+        public function setInitiator(UserDisplayInfo $initiator)
+        {
+        }
+        /**
+         * @return UserDisplayInfo
+         */
+        public function getInitiator()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\Collaboration registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttachmentId()
-    {
-    }
-    /**
-     * @param UserDisplayInfo
-     */
-    public function setInitiator(UserDisplayInfo $initiator)
-    {
-    }
-    /**
-     * @return UserDisplayInfo
-     */
-    public function getInitiator()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_CloudSearch_Collaboration extends \Google\Service\CloudSearch\Collaboration
     {
     }
 }

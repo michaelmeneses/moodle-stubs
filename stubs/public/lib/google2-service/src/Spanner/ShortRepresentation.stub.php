@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class ShortRepresentation extends \Google\Model
-{
-    /**
-     * A string representation of the expression subtree rooted at this node.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * A mapping of (subquery variable name) -> (subquery node id) for cases where
-     * the `description` string of this node references a `SCALAR` subquery
-     * contained in the expression subtree rooted at this node. The referenced
-     * `SCALAR` subquery may not necessarily be a direct child of this node.
-     *
-     * @var int[]
-     */
-    public $subqueries;
-    /**
-     * A string representation of the expression subtree rooted at this node.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\Spanner {
+    class ShortRepresentation extends \Google\Model
     {
+        /**
+         * A string representation of the expression subtree rooted at this node.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * A mapping of (subquery variable name) -> (subquery node id) for cases where
+         * the `description` string of this node references a `SCALAR` subquery
+         * contained in the expression subtree rooted at this node. The referenced
+         * `SCALAR` subquery may not necessarily be a direct child of this node.
+         *
+         * @var int[]
+         */
+        public $subqueries;
+        /**
+         * A string representation of the expression subtree rooted at this node.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * A mapping of (subquery variable name) -> (subquery node id) for cases where
+         * the `description` string of this node references a `SCALAR` subquery
+         * contained in the expression subtree rooted at this node. The referenced
+         * `SCALAR` subquery may not necessarily be a direct child of this node.
+         *
+         * @param int[] $subqueries
+         */
+        public function setSubqueries($subqueries)
+        {
+        }
+        /**
+         * @return int[]
+         */
+        public function getSubqueries()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Spanner\ShortRepresentation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * A mapping of (subquery variable name) -> (subquery node id) for cases where
-     * the `description` string of this node references a `SCALAR` subquery
-     * contained in the expression subtree rooted at this node. The referenced
-     * `SCALAR` subquery may not necessarily be a direct child of this node.
-     *
-     * @param int[] $subqueries
-     */
-    public function setSubqueries($subqueries)
-    {
-    }
-    /**
-     * @return int[]
-     */
-    public function getSubqueries()
+    class Google_Service_Spanner_ShortRepresentation extends \Google\Service\Spanner\ShortRepresentation
     {
     }
 }

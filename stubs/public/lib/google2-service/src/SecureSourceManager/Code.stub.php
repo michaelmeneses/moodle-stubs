@@ -21,128 +21,137 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecureSourceManager;
-
-class Code extends \Google\Model
-{
-    /**
-     * Required. The comment body.
-     *
-     * @var string
-     */
-    public $body;
-    /**
-     * Output only. The effective commit sha this code comment is pointing to.
-     *
-     * @var string
-     */
-    public $effectiveCommitSha;
-    /**
-     * Output only. The root comment of the conversation, derived from the reply
-     * field.
-     *
-     * @var string
-     */
-    public $effectiveRootComment;
-    protected $positionType = Position::class;
-    protected $positionDataType = '';
-    /**
-     * Optional. Input only. The PullRequestComment resource name that this
-     * comment is replying to.
-     *
-     * @var string
-     */
-    public $reply;
-    /**
-     * Output only. Boolean indicator if the comment is resolved.
-     *
-     * @var bool
-     */
-    public $resolved;
-    /**
-     * Required. The comment body.
-     *
-     * @param string $body
-     */
-    public function setBody($body)
+namespace Google\Service\SecureSourceManager {
+    class Code extends \Google\Model
     {
+        /**
+         * Required. The comment body.
+         *
+         * @var string
+         */
+        public $body;
+        /**
+         * Output only. The effective commit sha this code comment is pointing to.
+         *
+         * @var string
+         */
+        public $effectiveCommitSha;
+        /**
+         * Output only. The root comment of the conversation, derived from the reply
+         * field.
+         *
+         * @var string
+         */
+        public $effectiveRootComment;
+        protected $positionType = Position::class;
+        protected $positionDataType = '';
+        /**
+         * Optional. Input only. The PullRequestComment resource name that this
+         * comment is replying to.
+         *
+         * @var string
+         */
+        public $reply;
+        /**
+         * Output only. Boolean indicator if the comment is resolved.
+         *
+         * @var bool
+         */
+        public $resolved;
+        /**
+         * Required. The comment body.
+         *
+         * @param string $body
+         */
+        public function setBody($body)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBody()
+        {
+        }
+        /**
+         * Output only. The effective commit sha this code comment is pointing to.
+         *
+         * @param string $effectiveCommitSha
+         */
+        public function setEffectiveCommitSha($effectiveCommitSha)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEffectiveCommitSha()
+        {
+        }
+        /**
+         * Output only. The root comment of the conversation, derived from the reply
+         * field.
+         *
+         * @param string $effectiveRootComment
+         */
+        public function setEffectiveRootComment($effectiveRootComment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEffectiveRootComment()
+        {
+        }
+        /**
+         * Optional. The position of the comment.
+         *
+         * @param Position $position
+         */
+        public function setPosition(Position $position)
+        {
+        }
+        /**
+         * @return Position
+         */
+        public function getPosition()
+        {
+        }
+        /**
+         * Optional. Input only. The PullRequestComment resource name that this
+         * comment is replying to.
+         *
+         * @param string $reply
+         */
+        public function setReply($reply)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReply()
+        {
+        }
+        /**
+         * Output only. Boolean indicator if the comment is resolved.
+         *
+         * @param bool $resolved
+         */
+        public function setResolved($resolved)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getResolved()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecureSourceManager\Code registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBody()
-    {
-    }
-    /**
-     * Output only. The effective commit sha this code comment is pointing to.
-     *
-     * @param string $effectiveCommitSha
-     */
-    public function setEffectiveCommitSha($effectiveCommitSha)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEffectiveCommitSha()
-    {
-    }
-    /**
-     * Output only. The root comment of the conversation, derived from the reply
-     * field.
-     *
-     * @param string $effectiveRootComment
-     */
-    public function setEffectiveRootComment($effectiveRootComment)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEffectiveRootComment()
-    {
-    }
-    /**
-     * Optional. The position of the comment.
-     *
-     * @param Position $position
-     */
-    public function setPosition(Position $position)
-    {
-    }
-    /**
-     * @return Position
-     */
-    public function getPosition()
-    {
-    }
-    /**
-     * Optional. Input only. The PullRequestComment resource name that this
-     * comment is replying to.
-     *
-     * @param string $reply
-     */
-    public function setReply($reply)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReply()
-    {
-    }
-    /**
-     * Output only. Boolean indicator if the comment is resolved.
-     *
-     * @param bool $resolved
-     */
-    public function setResolved($resolved)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getResolved()
+    class Google_Service_SecureSourceManager_Code extends \Google\Service\SecureSourceManager\Code
     {
     }
 }

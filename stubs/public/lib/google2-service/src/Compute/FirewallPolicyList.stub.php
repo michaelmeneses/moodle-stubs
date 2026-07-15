@@ -21,111 +21,120 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class FirewallPolicyList extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    /**
-     * [Output Only] Unique identifier for the resource; defined by the server.
-     *
-     * @var string
-     */
-    public $id;
-    protected $itemsType = FirewallPolicy::class;
-    protected $itemsDataType = 'array';
-    /**
-     * Output only. [Output Only] Type of resource.
-     * Alwayscompute#firewallPolicyList for listsof FirewallPolicies
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * [Output Only] This token allows you to get the next page of results for
-     * list requests. If the number of results is larger thanmaxResults, use the
-     * nextPageToken as a value for the query parameter pageToken in the next list
-     * request. Subsequent list requests will have their own nextPageToken to
-     * continue paging through the results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $warningType = FirewallPolicyListWarning::class;
-    protected $warningDataType = '';
-    /**
-     * [Output Only] Unique identifier for the resource; defined by the server.
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\Compute {
+    class FirewallPolicyList extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        /**
+         * [Output Only] Unique identifier for the resource; defined by the server.
+         *
+         * @var string
+         */
+        public $id;
+        protected $itemsType = FirewallPolicy::class;
+        protected $itemsDataType = 'array';
+        /**
+         * Output only. [Output Only] Type of resource.
+         * Alwayscompute#firewallPolicyList for listsof FirewallPolicies
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * [Output Only] This token allows you to get the next page of results for
+         * list requests. If the number of results is larger thanmaxResults, use the
+         * nextPageToken as a value for the query parameter pageToken in the next list
+         * request. Subsequent list requests will have their own nextPageToken to
+         * continue paging through the results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $warningType = FirewallPolicyListWarning::class;
+        protected $warningDataType = '';
+        /**
+         * [Output Only] Unique identifier for the resource; defined by the server.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * A list of FirewallPolicy resources.
+         *
+         * @param FirewallPolicy[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return FirewallPolicy[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * Output only. [Output Only] Type of resource.
+         * Alwayscompute#firewallPolicyList for listsof FirewallPolicies
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * [Output Only] This token allows you to get the next page of results for
+         * list requests. If the number of results is larger thanmaxResults, use the
+         * nextPageToken as a value for the query parameter pageToken in the next list
+         * request. Subsequent list requests will have their own nextPageToken to
+         * continue paging through the results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * [Output Only] Informational warning message.
+         *
+         * @param FirewallPolicyListWarning $warning
+         */
+        public function setWarning(FirewallPolicyListWarning $warning)
+        {
+        }
+        /**
+         * @return FirewallPolicyListWarning
+         */
+        public function getWarning()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\FirewallPolicyList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * A list of FirewallPolicy resources.
-     *
-     * @param FirewallPolicy[] $items
-     */
-    public function setItems($items)
-    {
-    }
-    /**
-     * @return FirewallPolicy[]
-     */
-    public function getItems()
-    {
-    }
-    /**
-     * Output only. [Output Only] Type of resource.
-     * Alwayscompute#firewallPolicyList for listsof FirewallPolicies
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * [Output Only] This token allows you to get the next page of results for
-     * list requests. If the number of results is larger thanmaxResults, use the
-     * nextPageToken as a value for the query parameter pageToken in the next list
-     * request. Subsequent list requests will have their own nextPageToken to
-     * continue paging through the results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * [Output Only] Informational warning message.
-     *
-     * @param FirewallPolicyListWarning $warning
-     */
-    public function setWarning(FirewallPolicyListWarning $warning)
-    {
-    }
-    /**
-     * @return FirewallPolicyListWarning
-     */
-    public function getWarning()
+    class Google_Service_Compute_FirewallPolicyList extends \Google\Service\Compute\FirewallPolicyList
     {
     }
 }

@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AccessContextManager;
-
-class ReplaceAccessLevelsResponse extends \Google\Collection
-{
-    protected $collection_key = 'accessLevels';
-    protected $accessLevelsType = AccessLevel::class;
-    protected $accessLevelsDataType = 'array';
-    /**
-     * List of the Access Level instances.
-     *
-     * @param AccessLevel[] $accessLevels
-     */
-    public function setAccessLevels($accessLevels)
+namespace Google\Service\AccessContextManager {
+    class ReplaceAccessLevelsResponse extends \Google\Collection
     {
+        protected $collection_key = 'accessLevels';
+        protected $accessLevelsType = AccessLevel::class;
+        protected $accessLevelsDataType = 'array';
+        /**
+         * List of the Access Level instances.
+         *
+         * @param AccessLevel[] $accessLevels
+         */
+        public function setAccessLevels($accessLevels)
+        {
+        }
+        /**
+         * @return AccessLevel[]
+         */
+        public function getAccessLevels()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AccessLevel[]
+     * Runtime class alias of \Google\Service\AccessContextManager\ReplaceAccessLevelsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccessLevels()
+    class Google_Service_AccessContextManager_ReplaceAccessLevelsResponse extends \Google\Service\AccessContextManager\ReplaceAccessLevelsResponse
     {
     }
 }

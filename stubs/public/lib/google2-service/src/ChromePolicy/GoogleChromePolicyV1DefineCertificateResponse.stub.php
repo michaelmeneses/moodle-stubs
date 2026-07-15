@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromePolicy;
-
-class GoogleChromePolicyV1DefineCertificateResponse extends \Google\Collection
-{
-    protected $collection_key = 'settings';
-    /**
-     * @var string
-     */
-    public $networkId;
-    protected $settingsType = GoogleChromePolicyV1NetworkSetting::class;
-    protected $settingsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $targetResource;
-    /**
-     * @param string
-     */
-    public function setNetworkId($networkId)
+namespace Google\Service\ChromePolicy {
+    class GoogleChromePolicyV1DefineCertificateResponse extends \Google\Collection
     {
+        protected $collection_key = 'settings';
+        /**
+         * @var string
+         */
+        public $networkId;
+        protected $settingsType = GoogleChromePolicyV1NetworkSetting::class;
+        protected $settingsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $targetResource;
+        /**
+         * @param string
+         */
+        public function setNetworkId($networkId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNetworkId()
+        {
+        }
+        /**
+         * @param GoogleChromePolicyV1NetworkSetting[]
+         */
+        public function setSettings($settings)
+        {
+        }
+        /**
+         * @return GoogleChromePolicyV1NetworkSetting[]
+         */
+        public function getSettings()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTargetResource($targetResource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetResource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromePolicy\GoogleChromePolicyV1DefineCertificateResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNetworkId()
-    {
-    }
-    /**
-     * @param GoogleChromePolicyV1NetworkSetting[]
-     */
-    public function setSettings($settings)
-    {
-    }
-    /**
-     * @return GoogleChromePolicyV1NetworkSetting[]
-     */
-    public function getSettings()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTargetResource($targetResource)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetResource()
+    class Google_Service_ChromePolicy_GoogleChromePolicyV1DefineCertificateResponse extends \Google\Service\ChromePolicy\GoogleChromePolicyV1DefineCertificateResponse
     {
     }
 }

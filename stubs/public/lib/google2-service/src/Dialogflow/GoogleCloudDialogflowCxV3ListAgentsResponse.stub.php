@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3ListAgentsResponse extends \Google\Collection
-{
-    protected $collection_key = 'agents';
-    protected $agentsType = GoogleCloudDialogflowCxV3Agent::class;
-    protected $agentsDataType = 'array';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of agents. There will be a maximum number of items returned based
-     * on the page_size field in the request.
-     *
-     * @param GoogleCloudDialogflowCxV3Agent[] $agents
-     */
-    public function setAgents($agents)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3ListAgentsResponse extends \Google\Collection
     {
+        protected $collection_key = 'agents';
+        protected $agentsType = GoogleCloudDialogflowCxV3Agent::class;
+        protected $agentsDataType = 'array';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of agents. There will be a maximum number of items returned based
+         * on the page_size field in the request.
+         *
+         * @param GoogleCloudDialogflowCxV3Agent[] $agents
+         */
+        public function setAgents($agents)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3Agent[]
+         */
+        public function getAgents()
+        {
+        }
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowCxV3Agent[]
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ListAgentsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAgents()
-    {
-    }
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3ListAgentsResponse extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ListAgentsResponse
     {
     }
 }

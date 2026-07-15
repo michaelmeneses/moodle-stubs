@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OSConfig;
-
-class OSPolicyAssignmentRollout extends \Google\Model
-{
-    protected $disruptionBudgetType = FixedOrPercent::class;
-    protected $disruptionBudgetDataType = '';
-    /**
-     * Required. This determines the minimum duration of time to wait after the
-     * configuration changes are applied through the current rollout. A VM
-     * continues to count towards the `disruption_budget` at least until this
-     * duration of time has passed after configuration changes are applied.
-     *
-     * @var string
-     */
-    public $minWaitDuration;
-    /**
-     * Required. The maximum number (or percentage) of VMs per zone to disrupt at
-     * any given moment.
-     *
-     * @param FixedOrPercent $disruptionBudget
-     */
-    public function setDisruptionBudget(FixedOrPercent $disruptionBudget)
+namespace Google\Service\OSConfig {
+    class OSPolicyAssignmentRollout extends \Google\Model
     {
+        protected $disruptionBudgetType = FixedOrPercent::class;
+        protected $disruptionBudgetDataType = '';
+        /**
+         * Required. This determines the minimum duration of time to wait after the
+         * configuration changes are applied through the current rollout. A VM
+         * continues to count towards the `disruption_budget` at least until this
+         * duration of time has passed after configuration changes are applied.
+         *
+         * @var string
+         */
+        public $minWaitDuration;
+        /**
+         * Required. The maximum number (or percentage) of VMs per zone to disrupt at
+         * any given moment.
+         *
+         * @param FixedOrPercent $disruptionBudget
+         */
+        public function setDisruptionBudget(FixedOrPercent $disruptionBudget)
+        {
+        }
+        /**
+         * @return FixedOrPercent
+         */
+        public function getDisruptionBudget()
+        {
+        }
+        /**
+         * Required. This determines the minimum duration of time to wait after the
+         * configuration changes are applied through the current rollout. A VM
+         * continues to count towards the `disruption_budget` at least until this
+         * duration of time has passed after configuration changes are applied.
+         *
+         * @param string $minWaitDuration
+         */
+        public function setMinWaitDuration($minWaitDuration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMinWaitDuration()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FixedOrPercent
+     * Runtime class alias of \Google\Service\OSConfig\OSPolicyAssignmentRollout registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisruptionBudget()
-    {
-    }
-    /**
-     * Required. This determines the minimum duration of time to wait after the
-     * configuration changes are applied through the current rollout. A VM
-     * continues to count towards the `disruption_budget` at least until this
-     * duration of time has passed after configuration changes are applied.
-     *
-     * @param string $minWaitDuration
-     */
-    public function setMinWaitDuration($minWaitDuration)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMinWaitDuration()
+    class Google_Service_OSConfig_OSPolicyAssignmentRollout extends \Google\Service\OSConfig\OSPolicyAssignmentRollout
     {
     }
 }

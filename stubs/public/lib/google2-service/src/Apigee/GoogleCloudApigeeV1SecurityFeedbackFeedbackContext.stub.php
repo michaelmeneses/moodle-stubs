@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1SecurityFeedbackFeedbackContext extends \Google\Collection
-{
-    /**
-     * Unspecified attribute.
-     */
-    public const ATTRIBUTE_ATTRIBUTE_UNSPECIFIED = 'ATTRIBUTE_UNSPECIFIED';
-    /**
-     * Values will be a list of environments.
-     */
-    public const ATTRIBUTE_ATTRIBUTE_ENVIRONMENTS = 'ATTRIBUTE_ENVIRONMENTS';
-    /**
-     * Values will be a list of IP addresses. This could be either IPv4 or IPv6.
-     */
-    public const ATTRIBUTE_ATTRIBUTE_IP_ADDRESS_RANGES = 'ATTRIBUTE_IP_ADDRESS_RANGES';
-    protected $collection_key = 'values';
-    /**
-     * Required. The attribute the user is providing feedback about.
-     *
-     * @var string
-     */
-    public $attribute;
-    /**
-     * Required. The values of the attribute the user is providing feedback about.
-     *
-     * @var string[]
-     */
-    public $values;
-    /**
-     * Required. The attribute the user is providing feedback about.
-     *
-     * Accepted values: ATTRIBUTE_UNSPECIFIED, ATTRIBUTE_ENVIRONMENTS,
-     * ATTRIBUTE_IP_ADDRESS_RANGES
-     *
-     * @param self::ATTRIBUTE_* $attribute
-     */
-    public function setAttribute($attribute)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1SecurityFeedbackFeedbackContext extends \Google\Collection
     {
+        /**
+         * Unspecified attribute.
+         */
+        public const ATTRIBUTE_ATTRIBUTE_UNSPECIFIED = 'ATTRIBUTE_UNSPECIFIED';
+        /**
+         * Values will be a list of environments.
+         */
+        public const ATTRIBUTE_ATTRIBUTE_ENVIRONMENTS = 'ATTRIBUTE_ENVIRONMENTS';
+        /**
+         * Values will be a list of IP addresses. This could be either IPv4 or IPv6.
+         */
+        public const ATTRIBUTE_ATTRIBUTE_IP_ADDRESS_RANGES = 'ATTRIBUTE_IP_ADDRESS_RANGES';
+        protected $collection_key = 'values';
+        /**
+         * Required. The attribute the user is providing feedback about.
+         *
+         * @var string
+         */
+        public $attribute;
+        /**
+         * Required. The values of the attribute the user is providing feedback about.
+         *
+         * @var string[]
+         */
+        public $values;
+        /**
+         * Required. The attribute the user is providing feedback about.
+         *
+         * Accepted values: ATTRIBUTE_UNSPECIFIED, ATTRIBUTE_ENVIRONMENTS,
+         * ATTRIBUTE_IP_ADDRESS_RANGES
+         *
+         * @param self::ATTRIBUTE_* $attribute
+         */
+        public function setAttribute($attribute)
+        {
+        }
+        /**
+         * @return self::ATTRIBUTE_*
+         */
+        public function getAttribute()
+        {
+        }
+        /**
+         * Required. The values of the attribute the user is providing feedback about.
+         *
+         * @param string[] $values
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::ATTRIBUTE_*
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1SecurityFeedbackFeedbackContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttribute()
-    {
-    }
-    /**
-     * Required. The values of the attribute the user is providing feedback about.
-     *
-     * @param string[] $values
-     */
-    public function setValues($values)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getValues()
+    class Google_Service_Apigee_GoogleCloudApigeeV1SecurityFeedbackFeedbackContext extends \Google\Service\Apigee\GoogleCloudApigeeV1SecurityFeedbackFeedbackContext
     {
     }
 }

@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class DebugOptions extends \Google\Model
-{
-    /**
-     * If you are asked by Google to help with debugging, set this field.
-     * Otherwise, ignore this field.
-     *
-     * @var bool
-     */
-    public $enableDebugging;
-    /**
-     * If you are asked by Google to help with debugging, set this field.
-     * Otherwise, ignore this field.
-     *
-     * @param bool $enableDebugging
-     */
-    public function setEnableDebugging($enableDebugging)
+namespace Google\Service\CloudSearch {
+    class DebugOptions extends \Google\Model
     {
+        /**
+         * If you are asked by Google to help with debugging, set this field.
+         * Otherwise, ignore this field.
+         *
+         * @var bool
+         */
+        public $enableDebugging;
+        /**
+         * If you are asked by Google to help with debugging, set this field.
+         * Otherwise, ignore this field.
+         *
+         * @param bool $enableDebugging
+         */
+        public function setEnableDebugging($enableDebugging)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableDebugging()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudSearch\DebugOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnableDebugging()
+    class Google_Service_CloudSearch_DebugOptions extends \Google\Service\CloudSearch\DebugOptions
     {
     }
 }

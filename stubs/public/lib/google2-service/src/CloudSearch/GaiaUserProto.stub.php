@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class GaiaUserProto extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $userId;
-    /**
-     * @param string
-     */
-    public function setUserId($userId)
+namespace Google\Service\CloudSearch {
+    class GaiaUserProto extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $userId;
+        /**
+         * @param string
+         */
+        public function setUserId($userId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\GaiaUserProto registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUserId()
+    class Google_Service_CloudSearch_GaiaUserProto extends \Google\Service\CloudSearch\GaiaUserProto
     {
     }
 }

@@ -21,297 +21,306 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Assuredworkloads;
-
-class GoogleCloudAssuredworkloadsV1beta1Workload extends \Google\Collection
-{
-    protected $collection_key = 'resources';
-    /**
-     * @var string
-     */
-    public $billingAccount;
-    protected $cjisSettingsType = GoogleCloudAssuredworkloadsV1beta1WorkloadCJISSettings::class;
-    protected $cjisSettingsDataType = '';
-    /**
-     * @var string
-     */
-    public $complianceRegime;
-    /**
-     * @var string[]
-     */
-    public $compliantButDisallowedServices;
-    /**
-     * @var string
-     */
-    public $createTime;
-    /**
-     * @var string
-     */
-    public $displayName;
-    /**
-     * @var bool
-     */
-    public $enableSovereignControls;
-    /**
-     * @var string
-     */
-    public $etag;
-    protected $fedrampHighSettingsType = GoogleCloudAssuredworkloadsV1beta1WorkloadFedrampHighSettings::class;
-    protected $fedrampHighSettingsDataType = '';
-    protected $fedrampModerateSettingsType = GoogleCloudAssuredworkloadsV1beta1WorkloadFedrampModerateSettings::class;
-    protected $fedrampModerateSettingsDataType = '';
-    protected $il4SettingsType = GoogleCloudAssuredworkloadsV1beta1WorkloadIL4Settings::class;
-    protected $il4SettingsDataType = '';
-    /**
-     * @var string
-     */
-    public $kajEnrollmentState;
-    protected $kmsSettingsType = GoogleCloudAssuredworkloadsV1beta1WorkloadKMSSettings::class;
-    protected $kmsSettingsDataType = '';
-    /**
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $provisionedResourcesParent;
-    protected $resourceSettingsType = GoogleCloudAssuredworkloadsV1beta1WorkloadResourceSettings::class;
-    protected $resourceSettingsDataType = 'array';
-    protected $resourcesType = GoogleCloudAssuredworkloadsV1beta1WorkloadResourceInfo::class;
-    protected $resourcesDataType = 'array';
-    protected $saaEnrollmentResponseType = GoogleCloudAssuredworkloadsV1beta1WorkloadSaaEnrollmentResponse::class;
-    protected $saaEnrollmentResponseDataType = '';
-    /**
-     * @param string
-     */
-    public function setBillingAccount($billingAccount)
+namespace Google\Service\Assuredworkloads {
+    class GoogleCloudAssuredworkloadsV1beta1Workload extends \Google\Collection
     {
+        protected $collection_key = 'resources';
+        /**
+         * @var string
+         */
+        public $billingAccount;
+        protected $cjisSettingsType = GoogleCloudAssuredworkloadsV1beta1WorkloadCJISSettings::class;
+        protected $cjisSettingsDataType = '';
+        /**
+         * @var string
+         */
+        public $complianceRegime;
+        /**
+         * @var string[]
+         */
+        public $compliantButDisallowedServices;
+        /**
+         * @var string
+         */
+        public $createTime;
+        /**
+         * @var string
+         */
+        public $displayName;
+        /**
+         * @var bool
+         */
+        public $enableSovereignControls;
+        /**
+         * @var string
+         */
+        public $etag;
+        protected $fedrampHighSettingsType = GoogleCloudAssuredworkloadsV1beta1WorkloadFedrampHighSettings::class;
+        protected $fedrampHighSettingsDataType = '';
+        protected $fedrampModerateSettingsType = GoogleCloudAssuredworkloadsV1beta1WorkloadFedrampModerateSettings::class;
+        protected $fedrampModerateSettingsDataType = '';
+        protected $il4SettingsType = GoogleCloudAssuredworkloadsV1beta1WorkloadIL4Settings::class;
+        protected $il4SettingsDataType = '';
+        /**
+         * @var string
+         */
+        public $kajEnrollmentState;
+        protected $kmsSettingsType = GoogleCloudAssuredworkloadsV1beta1WorkloadKMSSettings::class;
+        protected $kmsSettingsDataType = '';
+        /**
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $provisionedResourcesParent;
+        protected $resourceSettingsType = GoogleCloudAssuredworkloadsV1beta1WorkloadResourceSettings::class;
+        protected $resourceSettingsDataType = 'array';
+        protected $resourcesType = GoogleCloudAssuredworkloadsV1beta1WorkloadResourceInfo::class;
+        protected $resourcesDataType = 'array';
+        protected $saaEnrollmentResponseType = GoogleCloudAssuredworkloadsV1beta1WorkloadSaaEnrollmentResponse::class;
+        protected $saaEnrollmentResponseDataType = '';
+        /**
+         * @param string
+         */
+        public function setBillingAccount($billingAccount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBillingAccount()
+        {
+        }
+        /**
+         * @param GoogleCloudAssuredworkloadsV1beta1WorkloadCJISSettings
+         */
+        public function setCjisSettings(GoogleCloudAssuredworkloadsV1beta1WorkloadCJISSettings $cjisSettings)
+        {
+        }
+        /**
+         * @return GoogleCloudAssuredworkloadsV1beta1WorkloadCJISSettings
+         */
+        public function getCjisSettings()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setComplianceRegime($complianceRegime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getComplianceRegime()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setCompliantButDisallowedServices($compliantButDisallowedServices)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCompliantButDisallowedServices()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setEnableSovereignControls($enableSovereignControls)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableSovereignControls()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * @param GoogleCloudAssuredworkloadsV1beta1WorkloadFedrampHighSettings
+         */
+        public function setFedrampHighSettings(GoogleCloudAssuredworkloadsV1beta1WorkloadFedrampHighSettings $fedrampHighSettings)
+        {
+        }
+        /**
+         * @return GoogleCloudAssuredworkloadsV1beta1WorkloadFedrampHighSettings
+         */
+        public function getFedrampHighSettings()
+        {
+        }
+        /**
+         * @param GoogleCloudAssuredworkloadsV1beta1WorkloadFedrampModerateSettings
+         */
+        public function setFedrampModerateSettings(GoogleCloudAssuredworkloadsV1beta1WorkloadFedrampModerateSettings $fedrampModerateSettings)
+        {
+        }
+        /**
+         * @return GoogleCloudAssuredworkloadsV1beta1WorkloadFedrampModerateSettings
+         */
+        public function getFedrampModerateSettings()
+        {
+        }
+        /**
+         * @param GoogleCloudAssuredworkloadsV1beta1WorkloadIL4Settings
+         */
+        public function setIl4Settings(GoogleCloudAssuredworkloadsV1beta1WorkloadIL4Settings $il4Settings)
+        {
+        }
+        /**
+         * @return GoogleCloudAssuredworkloadsV1beta1WorkloadIL4Settings
+         */
+        public function getIl4Settings()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKajEnrollmentState($kajEnrollmentState)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKajEnrollmentState()
+        {
+        }
+        /**
+         * @param GoogleCloudAssuredworkloadsV1beta1WorkloadKMSSettings
+         */
+        public function setKmsSettings(GoogleCloudAssuredworkloadsV1beta1WorkloadKMSSettings $kmsSettings)
+        {
+        }
+        /**
+         * @return GoogleCloudAssuredworkloadsV1beta1WorkloadKMSSettings
+         */
+        public function getKmsSettings()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setProvisionedResourcesParent($provisionedResourcesParent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProvisionedResourcesParent()
+        {
+        }
+        /**
+         * @param GoogleCloudAssuredworkloadsV1beta1WorkloadResourceSettings[]
+         */
+        public function setResourceSettings($resourceSettings)
+        {
+        }
+        /**
+         * @return GoogleCloudAssuredworkloadsV1beta1WorkloadResourceSettings[]
+         */
+        public function getResourceSettings()
+        {
+        }
+        /**
+         * @param GoogleCloudAssuredworkloadsV1beta1WorkloadResourceInfo[]
+         */
+        public function setResources($resources)
+        {
+        }
+        /**
+         * @return GoogleCloudAssuredworkloadsV1beta1WorkloadResourceInfo[]
+         */
+        public function getResources()
+        {
+        }
+        /**
+         * @param GoogleCloudAssuredworkloadsV1beta1WorkloadSaaEnrollmentResponse
+         */
+        public function setSaaEnrollmentResponse(GoogleCloudAssuredworkloadsV1beta1WorkloadSaaEnrollmentResponse $saaEnrollmentResponse)
+        {
+        }
+        /**
+         * @return GoogleCloudAssuredworkloadsV1beta1WorkloadSaaEnrollmentResponse
+         */
+        public function getSaaEnrollmentResponse()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1beta1Workload registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBillingAccount()
-    {
-    }
-    /**
-     * @param GoogleCloudAssuredworkloadsV1beta1WorkloadCJISSettings
-     */
-    public function setCjisSettings(GoogleCloudAssuredworkloadsV1beta1WorkloadCJISSettings $cjisSettings)
-    {
-    }
-    /**
-     * @return GoogleCloudAssuredworkloadsV1beta1WorkloadCJISSettings
-     */
-    public function getCjisSettings()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setComplianceRegime($complianceRegime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getComplianceRegime()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setCompliantButDisallowedServices($compliantButDisallowedServices)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getCompliantButDisallowedServices()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setEnableSovereignControls($enableSovereignControls)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnableSovereignControls()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * @param GoogleCloudAssuredworkloadsV1beta1WorkloadFedrampHighSettings
-     */
-    public function setFedrampHighSettings(GoogleCloudAssuredworkloadsV1beta1WorkloadFedrampHighSettings $fedrampHighSettings)
-    {
-    }
-    /**
-     * @return GoogleCloudAssuredworkloadsV1beta1WorkloadFedrampHighSettings
-     */
-    public function getFedrampHighSettings()
-    {
-    }
-    /**
-     * @param GoogleCloudAssuredworkloadsV1beta1WorkloadFedrampModerateSettings
-     */
-    public function setFedrampModerateSettings(GoogleCloudAssuredworkloadsV1beta1WorkloadFedrampModerateSettings $fedrampModerateSettings)
-    {
-    }
-    /**
-     * @return GoogleCloudAssuredworkloadsV1beta1WorkloadFedrampModerateSettings
-     */
-    public function getFedrampModerateSettings()
-    {
-    }
-    /**
-     * @param GoogleCloudAssuredworkloadsV1beta1WorkloadIL4Settings
-     */
-    public function setIl4Settings(GoogleCloudAssuredworkloadsV1beta1WorkloadIL4Settings $il4Settings)
-    {
-    }
-    /**
-     * @return GoogleCloudAssuredworkloadsV1beta1WorkloadIL4Settings
-     */
-    public function getIl4Settings()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKajEnrollmentState($kajEnrollmentState)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKajEnrollmentState()
-    {
-    }
-    /**
-     * @param GoogleCloudAssuredworkloadsV1beta1WorkloadKMSSettings
-     */
-    public function setKmsSettings(GoogleCloudAssuredworkloadsV1beta1WorkloadKMSSettings $kmsSettings)
-    {
-    }
-    /**
-     * @return GoogleCloudAssuredworkloadsV1beta1WorkloadKMSSettings
-     */
-    public function getKmsSettings()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setProvisionedResourcesParent($provisionedResourcesParent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProvisionedResourcesParent()
-    {
-    }
-    /**
-     * @param GoogleCloudAssuredworkloadsV1beta1WorkloadResourceSettings[]
-     */
-    public function setResourceSettings($resourceSettings)
-    {
-    }
-    /**
-     * @return GoogleCloudAssuredworkloadsV1beta1WorkloadResourceSettings[]
-     */
-    public function getResourceSettings()
-    {
-    }
-    /**
-     * @param GoogleCloudAssuredworkloadsV1beta1WorkloadResourceInfo[]
-     */
-    public function setResources($resources)
-    {
-    }
-    /**
-     * @return GoogleCloudAssuredworkloadsV1beta1WorkloadResourceInfo[]
-     */
-    public function getResources()
-    {
-    }
-    /**
-     * @param GoogleCloudAssuredworkloadsV1beta1WorkloadSaaEnrollmentResponse
-     */
-    public function setSaaEnrollmentResponse(GoogleCloudAssuredworkloadsV1beta1WorkloadSaaEnrollmentResponse $saaEnrollmentResponse)
-    {
-    }
-    /**
-     * @return GoogleCloudAssuredworkloadsV1beta1WorkloadSaaEnrollmentResponse
-     */
-    public function getSaaEnrollmentResponse()
+    class Google_Service_Assuredworkloads_GoogleCloudAssuredworkloadsV1beta1Workload extends \Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1beta1Workload
     {
     }
 }

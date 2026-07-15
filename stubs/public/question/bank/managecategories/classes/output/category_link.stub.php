@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qbank_managecategories\output;
 
+use core\output\renderable;
+use core\output\renderer_base;
+use core\output\templatable;
+use core\url;
 /**
  * Category name and question count link.
  *

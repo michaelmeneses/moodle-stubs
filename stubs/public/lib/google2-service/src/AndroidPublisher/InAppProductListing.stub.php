@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class InAppProductListing extends \Google\Collection
-{
-    protected $collection_key = 'benefits';
-    /**
-     * Localized entitlement benefits for a subscription.
-     *
-     * @var string[]
-     */
-    public $benefits;
-    /**
-     * Description for the store listing.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Title for the store listing.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * Localized entitlement benefits for a subscription.
-     *
-     * @param string[] $benefits
-     */
-    public function setBenefits($benefits)
+namespace Google\Service\AndroidPublisher {
+    class InAppProductListing extends \Google\Collection
     {
+        protected $collection_key = 'benefits';
+        /**
+         * Localized entitlement benefits for a subscription.
+         *
+         * @var string[]
+         */
+        public $benefits;
+        /**
+         * Description for the store listing.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Title for the store listing.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * Localized entitlement benefits for a subscription.
+         *
+         * @param string[] $benefits
+         */
+        public function setBenefits($benefits)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getBenefits()
+        {
+        }
+        /**
+         * Description for the store listing.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Title for the store listing.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\AndroidPublisher\InAppProductListing registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBenefits()
-    {
-    }
-    /**
-     * Description for the store listing.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Title for the store listing.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_AndroidPublisher_InAppProductListing extends \Google\Service\AndroidPublisher\InAppProductListing
     {
     }
 }

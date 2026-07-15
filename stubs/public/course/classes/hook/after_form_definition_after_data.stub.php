@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_course\hook;
 
+use course_edit_form;
+use MoodleQuickForm;
 /**
  * Allows plugins to extend course form after data is set.
  *

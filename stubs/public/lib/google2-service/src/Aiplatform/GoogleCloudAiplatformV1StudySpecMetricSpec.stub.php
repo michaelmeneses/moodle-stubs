@@ -21,81 +21,90 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1StudySpecMetricSpec extends \Google\Model
-{
-    /**
-     * Goal Type will default to maximize.
-     */
-    public const GOAL_GOAL_TYPE_UNSPECIFIED = 'GOAL_TYPE_UNSPECIFIED';
-    /**
-     * Maximize the goal metric.
-     */
-    public const GOAL_MAXIMIZE = 'MAXIMIZE';
-    /**
-     * Minimize the goal metric.
-     */
-    public const GOAL_MINIMIZE = 'MINIMIZE';
-    /**
-     * Required. The optimization goal of the metric.
-     *
-     * @var string
-     */
-    public $goal;
-    /**
-     * Required. The ID of the metric. Must not contain whitespaces and must be
-     * unique amongst all MetricSpecs.
-     *
-     * @var string
-     */
-    public $metricId;
-    protected $safetyConfigType = GoogleCloudAiplatformV1StudySpecMetricSpecSafetyMetricConfig::class;
-    protected $safetyConfigDataType = '';
-    /**
-     * Required. The optimization goal of the metric.
-     *
-     * Accepted values: GOAL_TYPE_UNSPECIFIED, MAXIMIZE, MINIMIZE
-     *
-     * @param self::GOAL_* $goal
-     */
-    public function setGoal($goal)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1StudySpecMetricSpec extends \Google\Model
     {
+        /**
+         * Goal Type will default to maximize.
+         */
+        public const GOAL_GOAL_TYPE_UNSPECIFIED = 'GOAL_TYPE_UNSPECIFIED';
+        /**
+         * Maximize the goal metric.
+         */
+        public const GOAL_MAXIMIZE = 'MAXIMIZE';
+        /**
+         * Minimize the goal metric.
+         */
+        public const GOAL_MINIMIZE = 'MINIMIZE';
+        /**
+         * Required. The optimization goal of the metric.
+         *
+         * @var string
+         */
+        public $goal;
+        /**
+         * Required. The ID of the metric. Must not contain whitespaces and must be
+         * unique amongst all MetricSpecs.
+         *
+         * @var string
+         */
+        public $metricId;
+        protected $safetyConfigType = GoogleCloudAiplatformV1StudySpecMetricSpecSafetyMetricConfig::class;
+        protected $safetyConfigDataType = '';
+        /**
+         * Required. The optimization goal of the metric.
+         *
+         * Accepted values: GOAL_TYPE_UNSPECIFIED, MAXIMIZE, MINIMIZE
+         *
+         * @param self::GOAL_* $goal
+         */
+        public function setGoal($goal)
+        {
+        }
+        /**
+         * @return self::GOAL_*
+         */
+        public function getGoal()
+        {
+        }
+        /**
+         * Required. The ID of the metric. Must not contain whitespaces and must be
+         * unique amongst all MetricSpecs.
+         *
+         * @param string $metricId
+         */
+        public function setMetricId($metricId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMetricId()
+        {
+        }
+        /**
+         * Used for safe search. In the case, the metric will be a safety metric. You
+         * must provide a separate metric for objective metric.
+         *
+         * @param GoogleCloudAiplatformV1StudySpecMetricSpecSafetyMetricConfig $safetyConfig
+         */
+        public function setSafetyConfig(GoogleCloudAiplatformV1StudySpecMetricSpecSafetyMetricConfig $safetyConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1StudySpecMetricSpecSafetyMetricConfig
+         */
+        public function getSafetyConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::GOAL_*
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1StudySpecMetricSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGoal()
-    {
-    }
-    /**
-     * Required. The ID of the metric. Must not contain whitespaces and must be
-     * unique amongst all MetricSpecs.
-     *
-     * @param string $metricId
-     */
-    public function setMetricId($metricId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMetricId()
-    {
-    }
-    /**
-     * Used for safe search. In the case, the metric will be a safety metric. You
-     * must provide a separate metric for objective metric.
-     *
-     * @param GoogleCloudAiplatformV1StudySpecMetricSpecSafetyMetricConfig $safetyConfig
-     */
-    public function setSafetyConfig(GoogleCloudAiplatformV1StudySpecMetricSpecSafetyMetricConfig $safetyConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1StudySpecMetricSpecSafetyMetricConfig
-     */
-    public function getSafetyConfig()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1StudySpecMetricSpec extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1StudySpecMetricSpec
     {
     }
 }

@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class BackendServiceGroupHealth extends \Google\Collection
-{
-    protected $collection_key = 'healthStatus';
-    /**
-     * Metadata defined as annotations on the network endpoint group.
-     *
-     * @var string[]
-     */
-    public $annotations;
-    protected $healthStatusType = HealthStatus::class;
-    protected $healthStatusDataType = 'array';
-    /**
-     * Output only. [Output Only] Type of resource.
-     * Alwayscompute#backendServiceGroupHealth for the health of backend services.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Metadata defined as annotations on the network endpoint group.
-     *
-     * @param string[] $annotations
-     */
-    public function setAnnotations($annotations)
+namespace Google\Service\Compute {
+    class BackendServiceGroupHealth extends \Google\Collection
     {
+        protected $collection_key = 'healthStatus';
+        /**
+         * Metadata defined as annotations on the network endpoint group.
+         *
+         * @var string[]
+         */
+        public $annotations;
+        protected $healthStatusType = HealthStatus::class;
+        protected $healthStatusDataType = 'array';
+        /**
+         * Output only. [Output Only] Type of resource.
+         * Alwayscompute#backendServiceGroupHealth for the health of backend services.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Metadata defined as annotations on the network endpoint group.
+         *
+         * @param string[] $annotations
+         */
+        public function setAnnotations($annotations)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAnnotations()
+        {
+        }
+        /**
+         * Health state of the backend instances or endpoints in requested instance or
+         * network endpoint group, determined based on configured health checks.
+         *
+         * @param HealthStatus[] $healthStatus
+         */
+        public function setHealthStatus($healthStatus)
+        {
+        }
+        /**
+         * @return HealthStatus[]
+         */
+        public function getHealthStatus()
+        {
+        }
+        /**
+         * Output only. [Output Only] Type of resource.
+         * Alwayscompute#backendServiceGroupHealth for the health of backend services.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Compute\BackendServiceGroupHealth registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotations()
-    {
-    }
-    /**
-     * Health state of the backend instances or endpoints in requested instance or
-     * network endpoint group, determined based on configured health checks.
-     *
-     * @param HealthStatus[] $healthStatus
-     */
-    public function setHealthStatus($healthStatus)
-    {
-    }
-    /**
-     * @return HealthStatus[]
-     */
-    public function getHealthStatus()
-    {
-    }
-    /**
-     * Output only. [Output Only] Type of resource.
-     * Alwayscompute#backendServiceGroupHealth for the health of backend services.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_Compute_BackendServiceGroupHealth extends \Google\Service\Compute\BackendServiceGroupHealth
     {
     }
 }

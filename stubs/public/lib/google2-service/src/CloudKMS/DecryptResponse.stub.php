@@ -21,137 +21,146 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudKMS;
-
-class DecryptResponse extends \Google\Model
-{
-    /**
-     * Not specified.
-     */
-    public const PROTECTION_LEVEL_PROTECTION_LEVEL_UNSPECIFIED = 'PROTECTION_LEVEL_UNSPECIFIED';
-    /**
-     * Crypto operations are performed in software.
-     */
-    public const PROTECTION_LEVEL_SOFTWARE = 'SOFTWARE';
-    /**
-     * Crypto operations are performed in a Hardware Security Module.
-     */
-    public const PROTECTION_LEVEL_HSM = 'HSM';
-    /**
-     * Crypto operations are performed by an external key manager.
-     */
-    public const PROTECTION_LEVEL_EXTERNAL = 'EXTERNAL';
-    /**
-     * Crypto operations are performed in an EKM-over-VPC backend.
-     */
-    public const PROTECTION_LEVEL_EXTERNAL_VPC = 'EXTERNAL_VPC';
-    /**
-     * Crypto operations are performed in a single-tenant HSM.
-     */
-    public const PROTECTION_LEVEL_HSM_SINGLE_TENANT = 'HSM_SINGLE_TENANT';
-    /**
-     * The decrypted data originally supplied in EncryptRequest.plaintext.
-     *
-     * @var string
-     */
-    public $plaintext;
-    /**
-     * Integrity verification field. A CRC32C checksum of the returned
-     * DecryptResponse.plaintext. An integrity check of DecryptResponse.plaintext
-     * can be performed by computing the CRC32C checksum of
-     * DecryptResponse.plaintext and comparing your results to this field. Discard
-     * the response in case of non-matching checksum values, and perform a limited
-     * number of retries. A persistent mismatch may indicate an issue in your
-     * computation of the CRC32C checksum. Note: receiving this response message
-     * indicates that KeyManagementService is able to successfully decrypt the
-     * ciphertext. Note: This field is defined as int64 for reasons of
-     * compatibility across different languages. However, it is a non-negative
-     * integer, which will never exceed 2^32-1, and can be safely downconverted to
-     * uint32 in languages that support this type.
-     *
-     * @var string
-     */
-    public $plaintextCrc32c;
-    /**
-     * The ProtectionLevel of the CryptoKeyVersion used in decryption.
-     *
-     * @var string
-     */
-    public $protectionLevel;
-    /**
-     * Whether the Decryption was performed using the primary key version.
-     *
-     * @var bool
-     */
-    public $usedPrimary;
-    /**
-     * The decrypted data originally supplied in EncryptRequest.plaintext.
-     *
-     * @param string $plaintext
-     */
-    public function setPlaintext($plaintext)
+namespace Google\Service\CloudKMS {
+    class DecryptResponse extends \Google\Model
     {
+        /**
+         * Not specified.
+         */
+        public const PROTECTION_LEVEL_PROTECTION_LEVEL_UNSPECIFIED = 'PROTECTION_LEVEL_UNSPECIFIED';
+        /**
+         * Crypto operations are performed in software.
+         */
+        public const PROTECTION_LEVEL_SOFTWARE = 'SOFTWARE';
+        /**
+         * Crypto operations are performed in a Hardware Security Module.
+         */
+        public const PROTECTION_LEVEL_HSM = 'HSM';
+        /**
+         * Crypto operations are performed by an external key manager.
+         */
+        public const PROTECTION_LEVEL_EXTERNAL = 'EXTERNAL';
+        /**
+         * Crypto operations are performed in an EKM-over-VPC backend.
+         */
+        public const PROTECTION_LEVEL_EXTERNAL_VPC = 'EXTERNAL_VPC';
+        /**
+         * Crypto operations are performed in a single-tenant HSM.
+         */
+        public const PROTECTION_LEVEL_HSM_SINGLE_TENANT = 'HSM_SINGLE_TENANT';
+        /**
+         * The decrypted data originally supplied in EncryptRequest.plaintext.
+         *
+         * @var string
+         */
+        public $plaintext;
+        /**
+         * Integrity verification field. A CRC32C checksum of the returned
+         * DecryptResponse.plaintext. An integrity check of DecryptResponse.plaintext
+         * can be performed by computing the CRC32C checksum of
+         * DecryptResponse.plaintext and comparing your results to this field. Discard
+         * the response in case of non-matching checksum values, and perform a limited
+         * number of retries. A persistent mismatch may indicate an issue in your
+         * computation of the CRC32C checksum. Note: receiving this response message
+         * indicates that KeyManagementService is able to successfully decrypt the
+         * ciphertext. Note: This field is defined as int64 for reasons of
+         * compatibility across different languages. However, it is a non-negative
+         * integer, which will never exceed 2^32-1, and can be safely downconverted to
+         * uint32 in languages that support this type.
+         *
+         * @var string
+         */
+        public $plaintextCrc32c;
+        /**
+         * The ProtectionLevel of the CryptoKeyVersion used in decryption.
+         *
+         * @var string
+         */
+        public $protectionLevel;
+        /**
+         * Whether the Decryption was performed using the primary key version.
+         *
+         * @var bool
+         */
+        public $usedPrimary;
+        /**
+         * The decrypted data originally supplied in EncryptRequest.plaintext.
+         *
+         * @param string $plaintext
+         */
+        public function setPlaintext($plaintext)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPlaintext()
+        {
+        }
+        /**
+         * Integrity verification field. A CRC32C checksum of the returned
+         * DecryptResponse.plaintext. An integrity check of DecryptResponse.plaintext
+         * can be performed by computing the CRC32C checksum of
+         * DecryptResponse.plaintext and comparing your results to this field. Discard
+         * the response in case of non-matching checksum values, and perform a limited
+         * number of retries. A persistent mismatch may indicate an issue in your
+         * computation of the CRC32C checksum. Note: receiving this response message
+         * indicates that KeyManagementService is able to successfully decrypt the
+         * ciphertext. Note: This field is defined as int64 for reasons of
+         * compatibility across different languages. However, it is a non-negative
+         * integer, which will never exceed 2^32-1, and can be safely downconverted to
+         * uint32 in languages that support this type.
+         *
+         * @param string $plaintextCrc32c
+         */
+        public function setPlaintextCrc32c($plaintextCrc32c)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPlaintextCrc32c()
+        {
+        }
+        /**
+         * The ProtectionLevel of the CryptoKeyVersion used in decryption.
+         *
+         * Accepted values: PROTECTION_LEVEL_UNSPECIFIED, SOFTWARE, HSM, EXTERNAL,
+         * EXTERNAL_VPC, HSM_SINGLE_TENANT
+         *
+         * @param self::PROTECTION_LEVEL_* $protectionLevel
+         */
+        public function setProtectionLevel($protectionLevel)
+        {
+        }
+        /**
+         * @return self::PROTECTION_LEVEL_*
+         */
+        public function getProtectionLevel()
+        {
+        }
+        /**
+         * Whether the Decryption was performed using the primary key version.
+         *
+         * @param bool $usedPrimary
+         */
+        public function setUsedPrimary($usedPrimary)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUsedPrimary()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudKMS\DecryptResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPlaintext()
-    {
-    }
-    /**
-     * Integrity verification field. A CRC32C checksum of the returned
-     * DecryptResponse.plaintext. An integrity check of DecryptResponse.plaintext
-     * can be performed by computing the CRC32C checksum of
-     * DecryptResponse.plaintext and comparing your results to this field. Discard
-     * the response in case of non-matching checksum values, and perform a limited
-     * number of retries. A persistent mismatch may indicate an issue in your
-     * computation of the CRC32C checksum. Note: receiving this response message
-     * indicates that KeyManagementService is able to successfully decrypt the
-     * ciphertext. Note: This field is defined as int64 for reasons of
-     * compatibility across different languages. However, it is a non-negative
-     * integer, which will never exceed 2^32-1, and can be safely downconverted to
-     * uint32 in languages that support this type.
-     *
-     * @param string $plaintextCrc32c
-     */
-    public function setPlaintextCrc32c($plaintextCrc32c)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPlaintextCrc32c()
-    {
-    }
-    /**
-     * The ProtectionLevel of the CryptoKeyVersion used in decryption.
-     *
-     * Accepted values: PROTECTION_LEVEL_UNSPECIFIED, SOFTWARE, HSM, EXTERNAL,
-     * EXTERNAL_VPC, HSM_SINGLE_TENANT
-     *
-     * @param self::PROTECTION_LEVEL_* $protectionLevel
-     */
-    public function setProtectionLevel($protectionLevel)
-    {
-    }
-    /**
-     * @return self::PROTECTION_LEVEL_*
-     */
-    public function getProtectionLevel()
-    {
-    }
-    /**
-     * Whether the Decryption was performed using the primary key version.
-     *
-     * @param bool $usedPrimary
-     */
-    public function setUsedPrimary($usedPrimary)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUsedPrimary()
+    class Google_Service_CloudKMS_DecryptResponse extends \Google\Service\CloudKMS\DecryptResponse
     {
     }
 }

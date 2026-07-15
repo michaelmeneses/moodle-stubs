@@ -21,132 +21,141 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class Roster extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $avatarUrl;
-    protected $idType = RosterId::class;
-    protected $idDataType = '';
-    /**
-     * @var bool
-     */
-    public $isMembershipVisibleToCaller;
-    /**
-     * @var int
-     */
-    public $membershipCount;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $rosterGaiaKey;
-    /**
-     * @var string
-     */
-    public $rosterState;
-    protected $segmentedMembershipCountsType = AppsDynamiteSharedSegmentedMembershipCounts::class;
-    protected $segmentedMembershipCountsDataType = '';
-    /**
-     * @param string
-     */
-    public function setAvatarUrl($avatarUrl)
+namespace Google\Service\CloudSearch {
+    class Roster extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $avatarUrl;
+        protected $idType = RosterId::class;
+        protected $idDataType = '';
+        /**
+         * @var bool
+         */
+        public $isMembershipVisibleToCaller;
+        /**
+         * @var int
+         */
+        public $membershipCount;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $rosterGaiaKey;
+        /**
+         * @var string
+         */
+        public $rosterState;
+        protected $segmentedMembershipCountsType = AppsDynamiteSharedSegmentedMembershipCounts::class;
+        protected $segmentedMembershipCountsDataType = '';
+        /**
+         * @param string
+         */
+        public function setAvatarUrl($avatarUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAvatarUrl()
+        {
+        }
+        /**
+         * @param RosterId
+         */
+        public function setId(RosterId $id)
+        {
+        }
+        /**
+         * @return RosterId
+         */
+        public function getId()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setIsMembershipVisibleToCaller($isMembershipVisibleToCaller)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsMembershipVisibleToCaller()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setMembershipCount($membershipCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMembershipCount()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRosterGaiaKey($rosterGaiaKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRosterGaiaKey()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRosterState($rosterState)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRosterState()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedSegmentedMembershipCounts
+         */
+        public function setSegmentedMembershipCounts(AppsDynamiteSharedSegmentedMembershipCounts $segmentedMembershipCounts)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedSegmentedMembershipCounts
+         */
+        public function getSegmentedMembershipCounts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\Roster registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAvatarUrl()
-    {
-    }
-    /**
-     * @param RosterId
-     */
-    public function setId(RosterId $id)
-    {
-    }
-    /**
-     * @return RosterId
-     */
-    public function getId()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setIsMembershipVisibleToCaller($isMembershipVisibleToCaller)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsMembershipVisibleToCaller()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setMembershipCount($membershipCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMembershipCount()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRosterGaiaKey($rosterGaiaKey)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRosterGaiaKey()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRosterState($rosterState)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRosterState()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedSegmentedMembershipCounts
-     */
-    public function setSegmentedMembershipCounts(AppsDynamiteSharedSegmentedMembershipCounts $segmentedMembershipCounts)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedSegmentedMembershipCounts
-     */
-    public function getSegmentedMembershipCounts()
+    class Google_Service_CloudSearch_Roster extends \Google\Service\CloudSearch\Roster
     {
     }
 }

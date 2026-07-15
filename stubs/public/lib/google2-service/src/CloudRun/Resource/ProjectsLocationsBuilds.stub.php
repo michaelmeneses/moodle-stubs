@@ -21,30 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun\Resource;
-
-/**
- * The "builds" collection of methods.
- * Typical usage is:
- *  <code>
- *   $runService = new Google\Service\CloudRun(...);
- *   $builds = $runService->projects_locations_builds;
- *  </code>
- */
-class ProjectsLocationsBuilds extends \Google\Service\Resource
-{
+namespace Google\Service\CloudRun\Resource {
+    use Google\Service\CloudRun\GoogleCloudRunV2SubmitBuildRequest;
+    use Google\Service\CloudRun\GoogleCloudRunV2SubmitBuildResponse;
     /**
-     * Submits a build in a given project. (builds.submit)
-     *
-     * @param string $parent Required. The project and location to build in.
-     * Location must be a region, e.g., 'us-central1' or 'global' if the global
-     * builder is to be used. Format: `projects/{project}/locations/{location}`
-     * @param GoogleCloudRunV2SubmitBuildRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudRunV2SubmitBuildResponse
-     * @throws \Google\Service\Exception
+     * The "builds" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $runService = new Google\Service\CloudRun(...);
+     *   $builds = $runService->projects_locations_builds;
+     *  </code>
      */
-    public function submit($parent, GoogleCloudRunV2SubmitBuildRequest $postBody, $optParams = [])
+    class ProjectsLocationsBuilds extends \Google\Service\Resource
+    {
+        /**
+         * Submits a build in a given project. (builds.submit)
+         *
+         * @param string $parent Required. The project and location to build in.
+         * Location must be a region, e.g., 'us-central1' or 'global' if the global
+         * builder is to be used. Format: `projects/{project}/locations/{location}`
+         * @param GoogleCloudRunV2SubmitBuildRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudRunV2SubmitBuildResponse
+         * @throws \Google\Service\Exception
+         */
+        public function submit($parent, GoogleCloudRunV2SubmitBuildRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudRun\Resource\ProjectsLocationsBuilds registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudRun_Resource_ProjectsLocationsBuilds extends \Google\Service\CloudRun\Resource\ProjectsLocationsBuilds
     {
     }
 }

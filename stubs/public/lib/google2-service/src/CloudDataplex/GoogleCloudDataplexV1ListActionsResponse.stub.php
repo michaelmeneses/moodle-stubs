@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1ListActionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'actions';
-    protected $actionsType = GoogleCloudDataplexV1Action::class;
-    protected $actionsDataType = 'array';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Actions under the given parent lake/zone/asset.
-     *
-     * @param GoogleCloudDataplexV1Action[] $actions
-     */
-    public function setActions($actions)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1ListActionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'actions';
+        protected $actionsType = GoogleCloudDataplexV1Action::class;
+        protected $actionsDataType = 'array';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Actions under the given parent lake/zone/asset.
+         *
+         * @param GoogleCloudDataplexV1Action[] $actions
+         */
+        public function setActions($actions)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1Action[]
+         */
+        public function getActions()
+        {
+        }
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDataplexV1Action[]
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1ListActionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActions()
-    {
-    }
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1ListActionsResponse extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1ListActionsResponse
     {
     }
 }

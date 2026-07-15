@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaUploadTemplateResponse extends \Google\Model
-{
-    protected $templateType = GoogleCloudIntegrationsV1alphaTemplate::class;
-    protected $templateDataType = '';
-    /**
-     * The uploaded Template
-     *
-     * @param GoogleCloudIntegrationsV1alphaTemplate $template
-     */
-    public function setTemplate(GoogleCloudIntegrationsV1alphaTemplate $template)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaUploadTemplateResponse extends \Google\Model
     {
+        protected $templateType = GoogleCloudIntegrationsV1alphaTemplate::class;
+        protected $templateDataType = '';
+        /**
+         * The uploaded Template
+         *
+         * @param GoogleCloudIntegrationsV1alphaTemplate $template
+         */
+        public function setTemplate(GoogleCloudIntegrationsV1alphaTemplate $template)
+        {
+        }
+        /**
+         * @return GoogleCloudIntegrationsV1alphaTemplate
+         */
+        public function getTemplate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudIntegrationsV1alphaTemplate
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaUploadTemplateResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTemplate()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaUploadTemplateResponse extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaUploadTemplateResponse
     {
     }
 }

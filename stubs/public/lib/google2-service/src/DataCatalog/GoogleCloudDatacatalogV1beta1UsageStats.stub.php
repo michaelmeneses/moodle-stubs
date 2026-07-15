@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1beta1UsageStats extends \Google\Model
-{
-    public $totalCancellations;
-    public $totalCompletions;
-    public $totalExecutionTimeForCompletionsMillis;
-    public $totalFailures;
-    public function setTotalCancellations($totalCancellations)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1beta1UsageStats extends \Google\Model
     {
+        public $totalCancellations;
+        public $totalCompletions;
+        public $totalExecutionTimeForCompletionsMillis;
+        public $totalFailures;
+        public function setTotalCancellations($totalCancellations)
+        {
+        }
+        public function getTotalCancellations()
+        {
+        }
+        public function setTotalCompletions($totalCompletions)
+        {
+        }
+        public function getTotalCompletions()
+        {
+        }
+        public function setTotalExecutionTimeForCompletionsMillis($totalExecutionTimeForCompletionsMillis)
+        {
+        }
+        public function getTotalExecutionTimeForCompletionsMillis()
+        {
+        }
+        public function setTotalFailures($totalFailures)
+        {
+        }
+        public function getTotalFailures()
+        {
+        }
     }
-    public function getTotalCancellations()
-    {
-    }
-    public function setTotalCompletions($totalCompletions)
-    {
-    }
-    public function getTotalCompletions()
-    {
-    }
-    public function setTotalExecutionTimeForCompletionsMillis($totalExecutionTimeForCompletionsMillis)
-    {
-    }
-    public function getTotalExecutionTimeForCompletionsMillis()
-    {
-    }
-    public function setTotalFailures($totalFailures)
-    {
-    }
-    public function getTotalFailures()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1beta1UsageStats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1beta1UsageStats extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1beta1UsageStats
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class WorkerThreadScalingReport extends \Google\Model
-{
-    /**
-     * Current number of active threads in a worker.
-     *
-     * @var int
-     */
-    public $currentThreadCount;
-    /**
-     * Current number of active threads in a worker.
-     *
-     * @param int $currentThreadCount
-     */
-    public function setCurrentThreadCount($currentThreadCount)
+namespace Google\Service\Dataflow {
+    class WorkerThreadScalingReport extends \Google\Model
     {
+        /**
+         * Current number of active threads in a worker.
+         *
+         * @var int
+         */
+        public $currentThreadCount;
+        /**
+         * Current number of active threads in a worker.
+         *
+         * @param int $currentThreadCount
+         */
+        public function setCurrentThreadCount($currentThreadCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCurrentThreadCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Dataflow\WorkerThreadScalingReport registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCurrentThreadCount()
+    class Google_Service_Dataflow_WorkerThreadScalingReport extends \Google\Service\Dataflow\WorkerThreadScalingReport
     {
     }
 }

@@ -21,112 +21,121 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3GenerativeSettings extends \Google\Model
-{
-    protected $fallbackSettingsType = GoogleCloudDialogflowCxV3GenerativeSettingsFallbackSettings::class;
-    protected $fallbackSettingsDataType = '';
-    protected $generativeSafetySettingsType = GoogleCloudDialogflowCxV3SafetySettings::class;
-    protected $generativeSafetySettingsDataType = '';
-    protected $knowledgeConnectorSettingsType = GoogleCloudDialogflowCxV3GenerativeSettingsKnowledgeConnectorSettings::class;
-    protected $knowledgeConnectorSettingsDataType = '';
-    /**
-     * Language for this settings.
-     *
-     * @var string
-     */
-    public $languageCode;
-    protected $llmModelSettingsType = GoogleCloudDialogflowCxV3LlmModelSettings::class;
-    protected $llmModelSettingsDataType = '';
-    /**
-     * Format: `projects//locations//agents//generativeSettings`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Settings for Generative Fallback.
-     *
-     * @param GoogleCloudDialogflowCxV3GenerativeSettingsFallbackSettings $fallbackSettings
-     */
-    public function setFallbackSettings(GoogleCloudDialogflowCxV3GenerativeSettingsFallbackSettings $fallbackSettings)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3GenerativeSettings extends \Google\Model
     {
+        protected $fallbackSettingsType = GoogleCloudDialogflowCxV3GenerativeSettingsFallbackSettings::class;
+        protected $fallbackSettingsDataType = '';
+        protected $generativeSafetySettingsType = GoogleCloudDialogflowCxV3SafetySettings::class;
+        protected $generativeSafetySettingsDataType = '';
+        protected $knowledgeConnectorSettingsType = GoogleCloudDialogflowCxV3GenerativeSettingsKnowledgeConnectorSettings::class;
+        protected $knowledgeConnectorSettingsDataType = '';
+        /**
+         * Language for this settings.
+         *
+         * @var string
+         */
+        public $languageCode;
+        protected $llmModelSettingsType = GoogleCloudDialogflowCxV3LlmModelSettings::class;
+        protected $llmModelSettingsDataType = '';
+        /**
+         * Format: `projects//locations//agents//generativeSettings`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Settings for Generative Fallback.
+         *
+         * @param GoogleCloudDialogflowCxV3GenerativeSettingsFallbackSettings $fallbackSettings
+         */
+        public function setFallbackSettings(GoogleCloudDialogflowCxV3GenerativeSettingsFallbackSettings $fallbackSettings)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3GenerativeSettingsFallbackSettings
+         */
+        public function getFallbackSettings()
+        {
+        }
+        /**
+         * Settings for Generative Safety.
+         *
+         * @param GoogleCloudDialogflowCxV3SafetySettings $generativeSafetySettings
+         */
+        public function setGenerativeSafetySettings(GoogleCloudDialogflowCxV3SafetySettings $generativeSafetySettings)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3SafetySettings
+         */
+        public function getGenerativeSafetySettings()
+        {
+        }
+        /**
+         * Settings for knowledge connector.
+         *
+         * @param GoogleCloudDialogflowCxV3GenerativeSettingsKnowledgeConnectorSettings $knowledgeConnectorSettings
+         */
+        public function setKnowledgeConnectorSettings(GoogleCloudDialogflowCxV3GenerativeSettingsKnowledgeConnectorSettings $knowledgeConnectorSettings)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3GenerativeSettingsKnowledgeConnectorSettings
+         */
+        public function getKnowledgeConnectorSettings()
+        {
+        }
+        /**
+         * Language for this settings.
+         *
+         * @param string $languageCode
+         */
+        public function setLanguageCode($languageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLanguageCode()
+        {
+        }
+        /**
+         * LLM model settings.
+         *
+         * @param GoogleCloudDialogflowCxV3LlmModelSettings $llmModelSettings
+         */
+        public function setLlmModelSettings(GoogleCloudDialogflowCxV3LlmModelSettings $llmModelSettings)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3LlmModelSettings
+         */
+        public function getLlmModelSettings()
+        {
+        }
+        /**
+         * Format: `projects//locations//agents//generativeSettings`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowCxV3GenerativeSettingsFallbackSettings
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3GenerativeSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFallbackSettings()
-    {
-    }
-    /**
-     * Settings for Generative Safety.
-     *
-     * @param GoogleCloudDialogflowCxV3SafetySettings $generativeSafetySettings
-     */
-    public function setGenerativeSafetySettings(GoogleCloudDialogflowCxV3SafetySettings $generativeSafetySettings)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3SafetySettings
-     */
-    public function getGenerativeSafetySettings()
-    {
-    }
-    /**
-     * Settings for knowledge connector.
-     *
-     * @param GoogleCloudDialogflowCxV3GenerativeSettingsKnowledgeConnectorSettings $knowledgeConnectorSettings
-     */
-    public function setKnowledgeConnectorSettings(GoogleCloudDialogflowCxV3GenerativeSettingsKnowledgeConnectorSettings $knowledgeConnectorSettings)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3GenerativeSettingsKnowledgeConnectorSettings
-     */
-    public function getKnowledgeConnectorSettings()
-    {
-    }
-    /**
-     * Language for this settings.
-     *
-     * @param string $languageCode
-     */
-    public function setLanguageCode($languageCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLanguageCode()
-    {
-    }
-    /**
-     * LLM model settings.
-     *
-     * @param GoogleCloudDialogflowCxV3LlmModelSettings $llmModelSettings
-     */
-    public function setLlmModelSettings(GoogleCloudDialogflowCxV3LlmModelSettings $llmModelSettings)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3LlmModelSettings
-     */
-    public function getLlmModelSettings()
-    {
-    }
-    /**
-     * Format: `projects//locations//agents//generativeSettings`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3GenerativeSettings extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3GenerativeSettings
     {
     }
 }

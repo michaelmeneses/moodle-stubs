@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Speech;
-
-class LongRunningRecognizeRequest extends \Google\Model
-{
-    protected $audioType = RecognitionAudio::class;
-    protected $audioDataType = '';
-    protected $configType = RecognitionConfig::class;
-    protected $configDataType = '';
-    protected $outputConfigType = TranscriptOutputConfig::class;
-    protected $outputConfigDataType = '';
-    /**
-     * Required. The audio data to be recognized.
-     *
-     * @param RecognitionAudio $audio
-     */
-    public function setAudio(RecognitionAudio $audio)
+namespace Google\Service\Speech {
+    class LongRunningRecognizeRequest extends \Google\Model
     {
+        protected $audioType = RecognitionAudio::class;
+        protected $audioDataType = '';
+        protected $configType = RecognitionConfig::class;
+        protected $configDataType = '';
+        protected $outputConfigType = TranscriptOutputConfig::class;
+        protected $outputConfigDataType = '';
+        /**
+         * Required. The audio data to be recognized.
+         *
+         * @param RecognitionAudio $audio
+         */
+        public function setAudio(RecognitionAudio $audio)
+        {
+        }
+        /**
+         * @return RecognitionAudio
+         */
+        public function getAudio()
+        {
+        }
+        /**
+         * Required. Provides information to the recognizer that specifies how to
+         * process the request.
+         *
+         * @param RecognitionConfig $config
+         */
+        public function setConfig(RecognitionConfig $config)
+        {
+        }
+        /**
+         * @return RecognitionConfig
+         */
+        public function getConfig()
+        {
+        }
+        /**
+         * Optional. Specifies an optional destination for the recognition results.
+         *
+         * @param TranscriptOutputConfig $outputConfig
+         */
+        public function setOutputConfig(TranscriptOutputConfig $outputConfig)
+        {
+        }
+        /**
+         * @return TranscriptOutputConfig
+         */
+        public function getOutputConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RecognitionAudio
+     * Runtime class alias of \Google\Service\Speech\LongRunningRecognizeRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAudio()
-    {
-    }
-    /**
-     * Required. Provides information to the recognizer that specifies how to
-     * process the request.
-     *
-     * @param RecognitionConfig $config
-     */
-    public function setConfig(RecognitionConfig $config)
-    {
-    }
-    /**
-     * @return RecognitionConfig
-     */
-    public function getConfig()
-    {
-    }
-    /**
-     * Optional. Specifies an optional destination for the recognition results.
-     *
-     * @param TranscriptOutputConfig $outputConfig
-     */
-    public function setOutputConfig(TranscriptOutputConfig $outputConfig)
-    {
-    }
-    /**
-     * @return TranscriptOutputConfig
-     */
-    public function getOutputConfig()
+    class Google_Service_Speech_LongRunningRecognizeRequest extends \Google\Service\Speech\LongRunningRecognizeRequest
     {
     }
 }

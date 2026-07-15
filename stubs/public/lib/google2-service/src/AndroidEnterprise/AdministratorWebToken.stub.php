@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise;
-
-class AdministratorWebToken extends \Google\Model
-{
-    /**
-     * An opaque token to be passed to the Play front-end to generate an iframe.
-     *
-     * @var string
-     */
-    public $token;
-    /**
-     * An opaque token to be passed to the Play front-end to generate an iframe.
-     *
-     * @param string $token
-     */
-    public function setToken($token)
+namespace Google\Service\AndroidEnterprise {
+    class AdministratorWebToken extends \Google\Model
     {
+        /**
+         * An opaque token to be passed to the Play front-end to generate an iframe.
+         *
+         * @var string
+         */
+        public $token;
+        /**
+         * An opaque token to be passed to the Play front-end to generate an iframe.
+         *
+         * @param string $token
+         */
+        public function setToken($token)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidEnterprise\AdministratorWebToken registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getToken()
+    class Google_Service_AndroidEnterprise_AdministratorWebToken extends \Google\Service\AndroidEnterprise\AdministratorWebToken
     {
     }
 }

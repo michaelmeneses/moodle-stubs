@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiUiv1beta3BatchUpdateDocumentsResponse extends \Google\Model
-{
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiUiv1beta3BatchUpdateDocumentsResponse extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiUiv1beta3BatchUpdateDocumentsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Document_GoogleCloudDocumentaiUiv1beta3BatchUpdateDocumentsResponse extends \Google\Service\Document\GoogleCloudDocumentaiUiv1beta3BatchUpdateDocumentsResponse
+    {
+    }
 }

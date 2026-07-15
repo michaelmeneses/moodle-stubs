@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ErrorAnalysisAnnotation extends \Google\Collection
-{
-    /**
-     * Unspecified query type for model error analysis.
-     */
-    public const QUERY_TYPE_QUERY_TYPE_UNSPECIFIED = 'QUERY_TYPE_UNSPECIFIED';
-    /**
-     * Query similar samples across all classes in the dataset.
-     */
-    public const QUERY_TYPE_ALL_SIMILAR = 'ALL_SIMILAR';
-    /**
-     * Query similar samples from the same class of the input sample.
-     */
-    public const QUERY_TYPE_SAME_CLASS_SIMILAR = 'SAME_CLASS_SIMILAR';
-    /**
-     * Query dissimilar samples from the same class of the input sample.
-     */
-    public const QUERY_TYPE_SAME_CLASS_DISSIMILAR = 'SAME_CLASS_DISSIMILAR';
-    protected $collection_key = 'attributedItems';
-    protected $attributedItemsType = GoogleCloudAiplatformV1ErrorAnalysisAnnotationAttributedItem::class;
-    protected $attributedItemsDataType = 'array';
-    /**
-     * The outlier score of this annotated item. Usually defined as the min of all
-     * distances from attributed items.
-     *
-     * @var 
-     */
-    public $outlierScore;
-    /**
-     * The threshold used to determine if this annotation is an outlier or not.
-     *
-     * @var 
-     */
-    public $outlierThreshold;
-    /**
-     * The query type used for finding the attributed items.
-     *
-     * @var string
-     */
-    public $queryType;
-    /**
-     * Attributed items for a given annotation, typically representing neighbors
-     * from the training sets constrained by the query type.
-     *
-     * @param GoogleCloudAiplatformV1ErrorAnalysisAnnotationAttributedItem[] $attributedItems
-     */
-    public function setAttributedItems($attributedItems)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ErrorAnalysisAnnotation extends \Google\Collection
     {
+        /**
+         * Unspecified query type for model error analysis.
+         */
+        public const QUERY_TYPE_QUERY_TYPE_UNSPECIFIED = 'QUERY_TYPE_UNSPECIFIED';
+        /**
+         * Query similar samples across all classes in the dataset.
+         */
+        public const QUERY_TYPE_ALL_SIMILAR = 'ALL_SIMILAR';
+        /**
+         * Query similar samples from the same class of the input sample.
+         */
+        public const QUERY_TYPE_SAME_CLASS_SIMILAR = 'SAME_CLASS_SIMILAR';
+        /**
+         * Query dissimilar samples from the same class of the input sample.
+         */
+        public const QUERY_TYPE_SAME_CLASS_DISSIMILAR = 'SAME_CLASS_DISSIMILAR';
+        protected $collection_key = 'attributedItems';
+        protected $attributedItemsType = GoogleCloudAiplatformV1ErrorAnalysisAnnotationAttributedItem::class;
+        protected $attributedItemsDataType = 'array';
+        /**
+         * The outlier score of this annotated item. Usually defined as the min of all
+         * distances from attributed items.
+         *
+         * @var 
+         */
+        public $outlierScore;
+        /**
+         * The threshold used to determine if this annotation is an outlier or not.
+         *
+         * @var 
+         */
+        public $outlierThreshold;
+        /**
+         * The query type used for finding the attributed items.
+         *
+         * @var string
+         */
+        public $queryType;
+        /**
+         * Attributed items for a given annotation, typically representing neighbors
+         * from the training sets constrained by the query type.
+         *
+         * @param GoogleCloudAiplatformV1ErrorAnalysisAnnotationAttributedItem[] $attributedItems
+         */
+        public function setAttributedItems($attributedItems)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ErrorAnalysisAnnotationAttributedItem[]
+         */
+        public function getAttributedItems()
+        {
+        }
+        public function setOutlierScore($outlierScore)
+        {
+        }
+        public function getOutlierScore()
+        {
+        }
+        public function setOutlierThreshold($outlierThreshold)
+        {
+        }
+        public function getOutlierThreshold()
+        {
+        }
+        /**
+         * The query type used for finding the attributed items.
+         *
+         * Accepted values: QUERY_TYPE_UNSPECIFIED, ALL_SIMILAR, SAME_CLASS_SIMILAR,
+         * SAME_CLASS_DISSIMILAR
+         *
+         * @param self::QUERY_TYPE_* $queryType
+         */
+        public function setQueryType($queryType)
+        {
+        }
+        /**
+         * @return self::QUERY_TYPE_*
+         */
+        public function getQueryType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1ErrorAnalysisAnnotationAttributedItem[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ErrorAnalysisAnnotation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttributedItems()
-    {
-    }
-    public function setOutlierScore($outlierScore)
-    {
-    }
-    public function getOutlierScore()
-    {
-    }
-    public function setOutlierThreshold($outlierThreshold)
-    {
-    }
-    public function getOutlierThreshold()
-    {
-    }
-    /**
-     * The query type used for finding the attributed items.
-     *
-     * Accepted values: QUERY_TYPE_UNSPECIFIED, ALL_SIMILAR, SAME_CLASS_SIMILAR,
-     * SAME_CLASS_DISSIMILAR
-     *
-     * @param self::QUERY_TYPE_* $queryType
-     */
-    public function setQueryType($queryType)
-    {
-    }
-    /**
-     * @return self::QUERY_TYPE_*
-     */
-    public function getQueryType()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ErrorAnalysisAnnotation extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ErrorAnalysisAnnotation
     {
     }
 }

@@ -21,148 +21,157 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AirQuality;
-
-class HealthRecommendations extends \Google\Model
-{
-    /**
-     * Sports and other strenuous outdoor activities.
-     *
-     * @var string
-     */
-    public $athletes;
-    /**
-     * Younger populations including children, toddlers, and babies.
-     *
-     * @var string
-     */
-    public $children;
-    /**
-     * Retirees and people older than the general population.
-     *
-     * @var string
-     */
-    public $elderly;
-    /**
-     * No specific sensitivities.
-     *
-     * @var string
-     */
-    public $generalPopulation;
-    /**
-     * Heart and circulatory system diseases.
-     *
-     * @var string
-     */
-    public $heartDiseasePopulation;
-    /**
-     * Respiratory related problems and asthma suffers.
-     *
-     * @var string
-     */
-    public $lungDiseasePopulation;
-    /**
-     * Women at all stages of pregnancy.
-     *
-     * @var string
-     */
-    public $pregnantWomen;
-    /**
-     * Sports and other strenuous outdoor activities.
-     *
-     * @param string $athletes
-     */
-    public function setAthletes($athletes)
+namespace Google\Service\AirQuality {
+    class HealthRecommendations extends \Google\Model
     {
+        /**
+         * Sports and other strenuous outdoor activities.
+         *
+         * @var string
+         */
+        public $athletes;
+        /**
+         * Younger populations including children, toddlers, and babies.
+         *
+         * @var string
+         */
+        public $children;
+        /**
+         * Retirees and people older than the general population.
+         *
+         * @var string
+         */
+        public $elderly;
+        /**
+         * No specific sensitivities.
+         *
+         * @var string
+         */
+        public $generalPopulation;
+        /**
+         * Heart and circulatory system diseases.
+         *
+         * @var string
+         */
+        public $heartDiseasePopulation;
+        /**
+         * Respiratory related problems and asthma suffers.
+         *
+         * @var string
+         */
+        public $lungDiseasePopulation;
+        /**
+         * Women at all stages of pregnancy.
+         *
+         * @var string
+         */
+        public $pregnantWomen;
+        /**
+         * Sports and other strenuous outdoor activities.
+         *
+         * @param string $athletes
+         */
+        public function setAthletes($athletes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAthletes()
+        {
+        }
+        /**
+         * Younger populations including children, toddlers, and babies.
+         *
+         * @param string $children
+         */
+        public function setChildren($children)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChildren()
+        {
+        }
+        /**
+         * Retirees and people older than the general population.
+         *
+         * @param string $elderly
+         */
+        public function setElderly($elderly)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getElderly()
+        {
+        }
+        /**
+         * No specific sensitivities.
+         *
+         * @param string $generalPopulation
+         */
+        public function setGeneralPopulation($generalPopulation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGeneralPopulation()
+        {
+        }
+        /**
+         * Heart and circulatory system diseases.
+         *
+         * @param string $heartDiseasePopulation
+         */
+        public function setHeartDiseasePopulation($heartDiseasePopulation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHeartDiseasePopulation()
+        {
+        }
+        /**
+         * Respiratory related problems and asthma suffers.
+         *
+         * @param string $lungDiseasePopulation
+         */
+        public function setLungDiseasePopulation($lungDiseasePopulation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLungDiseasePopulation()
+        {
+        }
+        /**
+         * Women at all stages of pregnancy.
+         *
+         * @param string $pregnantWomen
+         */
+        public function setPregnantWomen($pregnantWomen)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPregnantWomen()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AirQuality\HealthRecommendations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAthletes()
-    {
-    }
-    /**
-     * Younger populations including children, toddlers, and babies.
-     *
-     * @param string $children
-     */
-    public function setChildren($children)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getChildren()
-    {
-    }
-    /**
-     * Retirees and people older than the general population.
-     *
-     * @param string $elderly
-     */
-    public function setElderly($elderly)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getElderly()
-    {
-    }
-    /**
-     * No specific sensitivities.
-     *
-     * @param string $generalPopulation
-     */
-    public function setGeneralPopulation($generalPopulation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGeneralPopulation()
-    {
-    }
-    /**
-     * Heart and circulatory system diseases.
-     *
-     * @param string $heartDiseasePopulation
-     */
-    public function setHeartDiseasePopulation($heartDiseasePopulation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHeartDiseasePopulation()
-    {
-    }
-    /**
-     * Respiratory related problems and asthma suffers.
-     *
-     * @param string $lungDiseasePopulation
-     */
-    public function setLungDiseasePopulation($lungDiseasePopulation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLungDiseasePopulation()
-    {
-    }
-    /**
-     * Women at all stages of pregnancy.
-     *
-     * @param string $pregnantWomen
-     */
-    public function setPregnantWomen($pregnantWomen)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPregnantWomen()
+    class Google_Service_AirQuality_HealthRecommendations extends \Google\Service\AirQuality\HealthRecommendations
     {
     }
 }

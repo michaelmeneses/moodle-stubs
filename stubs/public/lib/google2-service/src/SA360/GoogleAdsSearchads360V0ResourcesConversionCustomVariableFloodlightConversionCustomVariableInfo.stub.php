@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0ResourcesConversionCustomVariableFloodlightConversionCustomVariableInfo extends \Google\Model
-{
-    /**
-     * Not specified.
-     */
-    public const FLOODLIGHT_VARIABLE_DATA_TYPE_UNSPECIFIED = 'UNSPECIFIED';
-    /**
-     * Used for return value only. Represents value unknown in this version.
-     */
-    public const FLOODLIGHT_VARIABLE_DATA_TYPE_UNKNOWN = 'UNKNOWN';
-    /**
-     * Represents a floodlight variable of "Number" type. This variable may be
-     * assigned to floodlight variables of DIMENSION or METRIC types.
-     */
-    public const FLOODLIGHT_VARIABLE_DATA_TYPE_NUMBER = 'NUMBER';
-    /**
-     * Represents a floodlight variable of "String" type. This variable may be
-     * assigned to floodlight variables of DIMENSION type.
-     */
-    public const FLOODLIGHT_VARIABLE_DATA_TYPE_STRING = 'STRING';
-    /**
-     * Not specified.
-     */
-    public const FLOODLIGHT_VARIABLE_TYPE_UNSPECIFIED = 'UNSPECIFIED';
-    /**
-     * Used for return value only. Represents value unknown in this version.
-     */
-    public const FLOODLIGHT_VARIABLE_TYPE_UNKNOWN = 'UNKNOWN';
-    /**
-     * Dimension floodlight variable type.
-     */
-    public const FLOODLIGHT_VARIABLE_TYPE_DIMENSION = 'DIMENSION';
-    /**
-     * Metric floodlight variable type.
-     */
-    public const FLOODLIGHT_VARIABLE_TYPE_METRIC = 'METRIC';
-    /**
-     * Floodlight variable type is unset.
-     */
-    public const FLOODLIGHT_VARIABLE_TYPE_UNSET = 'UNSET';
-    /**
-     * Output only. Floodlight variable data type defined in Search Ads 360.
-     *
-     * @var string
-     */
-    public $floodlightVariableDataType;
-    /**
-     * Output only. Floodlight variable type defined in Search Ads 360.
-     *
-     * @var string
-     */
-    public $floodlightVariableType;
-    /**
-     * Output only. Floodlight variable data type defined in Search Ads 360.
-     *
-     * Accepted values: UNSPECIFIED, UNKNOWN, NUMBER, STRING
-     *
-     * @param self::FLOODLIGHT_VARIABLE_DATA_TYPE_* $floodlightVariableDataType
-     */
-    public function setFloodlightVariableDataType($floodlightVariableDataType)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0ResourcesConversionCustomVariableFloodlightConversionCustomVariableInfo extends \Google\Model
     {
+        /**
+         * Not specified.
+         */
+        public const FLOODLIGHT_VARIABLE_DATA_TYPE_UNSPECIFIED = 'UNSPECIFIED';
+        /**
+         * Used for return value only. Represents value unknown in this version.
+         */
+        public const FLOODLIGHT_VARIABLE_DATA_TYPE_UNKNOWN = 'UNKNOWN';
+        /**
+         * Represents a floodlight variable of "Number" type. This variable may be
+         * assigned to floodlight variables of DIMENSION or METRIC types.
+         */
+        public const FLOODLIGHT_VARIABLE_DATA_TYPE_NUMBER = 'NUMBER';
+        /**
+         * Represents a floodlight variable of "String" type. This variable may be
+         * assigned to floodlight variables of DIMENSION type.
+         */
+        public const FLOODLIGHT_VARIABLE_DATA_TYPE_STRING = 'STRING';
+        /**
+         * Not specified.
+         */
+        public const FLOODLIGHT_VARIABLE_TYPE_UNSPECIFIED = 'UNSPECIFIED';
+        /**
+         * Used for return value only. Represents value unknown in this version.
+         */
+        public const FLOODLIGHT_VARIABLE_TYPE_UNKNOWN = 'UNKNOWN';
+        /**
+         * Dimension floodlight variable type.
+         */
+        public const FLOODLIGHT_VARIABLE_TYPE_DIMENSION = 'DIMENSION';
+        /**
+         * Metric floodlight variable type.
+         */
+        public const FLOODLIGHT_VARIABLE_TYPE_METRIC = 'METRIC';
+        /**
+         * Floodlight variable type is unset.
+         */
+        public const FLOODLIGHT_VARIABLE_TYPE_UNSET = 'UNSET';
+        /**
+         * Output only. Floodlight variable data type defined in Search Ads 360.
+         *
+         * @var string
+         */
+        public $floodlightVariableDataType;
+        /**
+         * Output only. Floodlight variable type defined in Search Ads 360.
+         *
+         * @var string
+         */
+        public $floodlightVariableType;
+        /**
+         * Output only. Floodlight variable data type defined in Search Ads 360.
+         *
+         * Accepted values: UNSPECIFIED, UNKNOWN, NUMBER, STRING
+         *
+         * @param self::FLOODLIGHT_VARIABLE_DATA_TYPE_* $floodlightVariableDataType
+         */
+        public function setFloodlightVariableDataType($floodlightVariableDataType)
+        {
+        }
+        /**
+         * @return self::FLOODLIGHT_VARIABLE_DATA_TYPE_*
+         */
+        public function getFloodlightVariableDataType()
+        {
+        }
+        /**
+         * Output only. Floodlight variable type defined in Search Ads 360.
+         *
+         * Accepted values: UNSPECIFIED, UNKNOWN, DIMENSION, METRIC, UNSET
+         *
+         * @param self::FLOODLIGHT_VARIABLE_TYPE_* $floodlightVariableType
+         */
+        public function setFloodlightVariableType($floodlightVariableType)
+        {
+        }
+        /**
+         * @return self::FLOODLIGHT_VARIABLE_TYPE_*
+         */
+        public function getFloodlightVariableType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::FLOODLIGHT_VARIABLE_DATA_TYPE_*
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0ResourcesConversionCustomVariableFloodlightConversionCustomVariableInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFloodlightVariableDataType()
-    {
-    }
-    /**
-     * Output only. Floodlight variable type defined in Search Ads 360.
-     *
-     * Accepted values: UNSPECIFIED, UNKNOWN, DIMENSION, METRIC, UNSET
-     *
-     * @param self::FLOODLIGHT_VARIABLE_TYPE_* $floodlightVariableType
-     */
-    public function setFloodlightVariableType($floodlightVariableType)
-    {
-    }
-    /**
-     * @return self::FLOODLIGHT_VARIABLE_TYPE_*
-     */
-    public function getFloodlightVariableType()
+    class Google_Service_SA360_GoogleAdsSearchads360V0ResourcesConversionCustomVariableFloodlightConversionCustomVariableInfo extends \Google\Service\SA360\GoogleAdsSearchads360V0ResourcesConversionCustomVariableFloodlightConversionCustomVariableInfo
     {
     }
 }

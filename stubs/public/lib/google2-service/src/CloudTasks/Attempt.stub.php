@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudTasks;
-
-class Attempt extends \Google\Model
-{
-    /**
-     * Output only. The time that this attempt was dispatched. `dispatch_time`
-     * will be truncated to the nearest microsecond.
-     *
-     * @var string
-     */
-    public $dispatchTime;
-    protected $responseStatusType = Status::class;
-    protected $responseStatusDataType = '';
-    /**
-     * Output only. The time that this attempt response was received.
-     * `response_time` will be truncated to the nearest microsecond.
-     *
-     * @var string
-     */
-    public $responseTime;
-    /**
-     * Output only. The time that this attempt was scheduled. `schedule_time` will
-     * be truncated to the nearest microsecond.
-     *
-     * @var string
-     */
-    public $scheduleTime;
-    /**
-     * Output only. The time that this attempt was dispatched. `dispatch_time`
-     * will be truncated to the nearest microsecond.
-     *
-     * @param string $dispatchTime
-     */
-    public function setDispatchTime($dispatchTime)
+namespace Google\Service\CloudTasks {
+    class Attempt extends \Google\Model
     {
+        /**
+         * Output only. The time that this attempt was dispatched. `dispatch_time`
+         * will be truncated to the nearest microsecond.
+         *
+         * @var string
+         */
+        public $dispatchTime;
+        protected $responseStatusType = Status::class;
+        protected $responseStatusDataType = '';
+        /**
+         * Output only. The time that this attempt response was received.
+         * `response_time` will be truncated to the nearest microsecond.
+         *
+         * @var string
+         */
+        public $responseTime;
+        /**
+         * Output only. The time that this attempt was scheduled. `schedule_time` will
+         * be truncated to the nearest microsecond.
+         *
+         * @var string
+         */
+        public $scheduleTime;
+        /**
+         * Output only. The time that this attempt was dispatched. `dispatch_time`
+         * will be truncated to the nearest microsecond.
+         *
+         * @param string $dispatchTime
+         */
+        public function setDispatchTime($dispatchTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDispatchTime()
+        {
+        }
+        /**
+         * Output only. The response from the worker for this attempt. If
+         * `response_time` is unset, then the task has not been attempted or is
+         * currently running and the `response_status` field is meaningless.
+         *
+         * @param Status $responseStatus
+         */
+        public function setResponseStatus(Status $responseStatus)
+        {
+        }
+        /**
+         * @return Status
+         */
+        public function getResponseStatus()
+        {
+        }
+        /**
+         * Output only. The time that this attempt response was received.
+         * `response_time` will be truncated to the nearest microsecond.
+         *
+         * @param string $responseTime
+         */
+        public function setResponseTime($responseTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResponseTime()
+        {
+        }
+        /**
+         * Output only. The time that this attempt was scheduled. `schedule_time` will
+         * be truncated to the nearest microsecond.
+         *
+         * @param string $scheduleTime
+         */
+        public function setScheduleTime($scheduleTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScheduleTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudTasks\Attempt registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDispatchTime()
-    {
-    }
-    /**
-     * Output only. The response from the worker for this attempt. If
-     * `response_time` is unset, then the task has not been attempted or is
-     * currently running and the `response_status` field is meaningless.
-     *
-     * @param Status $responseStatus
-     */
-    public function setResponseStatus(Status $responseStatus)
-    {
-    }
-    /**
-     * @return Status
-     */
-    public function getResponseStatus()
-    {
-    }
-    /**
-     * Output only. The time that this attempt response was received.
-     * `response_time` will be truncated to the nearest microsecond.
-     *
-     * @param string $responseTime
-     */
-    public function setResponseTime($responseTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResponseTime()
-    {
-    }
-    /**
-     * Output only. The time that this attempt was scheduled. `schedule_time` will
-     * be truncated to the nearest microsecond.
-     *
-     * @param string $scheduleTime
-     */
-    public function setScheduleTime($scheduleTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getScheduleTime()
+    class Google_Service_CloudTasks_Attempt extends \Google\Service\CloudTasks\Attempt
     {
     }
 }

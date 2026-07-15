@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsData;
-
-class ActiveMetricRestriction extends \Google\Collection
-{
-    protected $collection_key = 'restrictedMetricTypes';
-    /**
-     * The name of the restricted metric.
-     *
-     * @var string
-     */
-    public $metricName;
-    /**
-     * The reason for this metric's restriction.
-     *
-     * @var string[]
-     */
-    public $restrictedMetricTypes;
-    /**
-     * The name of the restricted metric.
-     *
-     * @param string $metricName
-     */
-    public function setMetricName($metricName)
+namespace Google\Service\AnalyticsData {
+    class ActiveMetricRestriction extends \Google\Collection
     {
+        protected $collection_key = 'restrictedMetricTypes';
+        /**
+         * The name of the restricted metric.
+         *
+         * @var string
+         */
+        public $metricName;
+        /**
+         * The reason for this metric's restriction.
+         *
+         * @var string[]
+         */
+        public $restrictedMetricTypes;
+        /**
+         * The name of the restricted metric.
+         *
+         * @param string $metricName
+         */
+        public function setMetricName($metricName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMetricName()
+        {
+        }
+        /**
+         * The reason for this metric's restriction.
+         *
+         * @param string[] $restrictedMetricTypes
+         */
+        public function setRestrictedMetricTypes($restrictedMetricTypes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRestrictedMetricTypes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AnalyticsData\ActiveMetricRestriction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetricName()
-    {
-    }
-    /**
-     * The reason for this metric's restriction.
-     *
-     * @param string[] $restrictedMetricTypes
-     */
-    public function setRestrictedMetricTypes($restrictedMetricTypes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRestrictedMetricTypes()
+    class Google_Service_AnalyticsData_ActiveMetricRestriction extends \Google\Service\AnalyticsData\ActiveMetricRestriction
     {
     }
 }

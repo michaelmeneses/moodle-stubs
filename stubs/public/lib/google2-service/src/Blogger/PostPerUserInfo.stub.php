@@ -21,108 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Blogger;
-
-class PostPerUserInfo extends \Google\Model
-{
-    /**
-     * ID of the Blog that the post resource belongs to.
-     *
-     * @var string
-     */
-    public $blogId;
-    /**
-     * True if the user has Author level access to the post.
-     *
-     * @var bool
-     */
-    public $hasEditAccess;
-    /**
-     * The kind of this entity. Always blogger#postPerUserInfo.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * ID of the Post resource.
-     *
-     * @var string
-     */
-    public $postId;
-    /**
-     * ID of the User.
-     *
-     * @var string
-     */
-    public $userId;
-    /**
-     * ID of the Blog that the post resource belongs to.
-     *
-     * @param string $blogId
-     */
-    public function setBlogId($blogId)
+namespace Google\Service\Blogger {
+    class PostPerUserInfo extends \Google\Model
     {
+        /**
+         * ID of the Blog that the post resource belongs to.
+         *
+         * @var string
+         */
+        public $blogId;
+        /**
+         * True if the user has Author level access to the post.
+         *
+         * @var bool
+         */
+        public $hasEditAccess;
+        /**
+         * The kind of this entity. Always blogger#postPerUserInfo.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * ID of the Post resource.
+         *
+         * @var string
+         */
+        public $postId;
+        /**
+         * ID of the User.
+         *
+         * @var string
+         */
+        public $userId;
+        /**
+         * ID of the Blog that the post resource belongs to.
+         *
+         * @param string $blogId
+         */
+        public function setBlogId($blogId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBlogId()
+        {
+        }
+        /**
+         * True if the user has Author level access to the post.
+         *
+         * @param bool $hasEditAccess
+         */
+        public function setHasEditAccess($hasEditAccess)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getHasEditAccess()
+        {
+        }
+        /**
+         * The kind of this entity. Always blogger#postPerUserInfo.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * ID of the Post resource.
+         *
+         * @param string $postId
+         */
+        public function setPostId($postId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPostId()
+        {
+        }
+        /**
+         * ID of the User.
+         *
+         * @param string $userId
+         */
+        public function setUserId($userId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Blogger\PostPerUserInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBlogId()
-    {
-    }
-    /**
-     * True if the user has Author level access to the post.
-     *
-     * @param bool $hasEditAccess
-     */
-    public function setHasEditAccess($hasEditAccess)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getHasEditAccess()
-    {
-    }
-    /**
-     * The kind of this entity. Always blogger#postPerUserInfo.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * ID of the Post resource.
-     *
-     * @param string $postId
-     */
-    public function setPostId($postId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPostId()
-    {
-    }
-    /**
-     * ID of the User.
-     *
-     * @param string $userId
-     */
-    public function setUserId($userId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserId()
+    class Google_Service_Blogger_PostPerUserInfo extends \Google\Service\Blogger\PostPerUserInfo
     {
     }
 }

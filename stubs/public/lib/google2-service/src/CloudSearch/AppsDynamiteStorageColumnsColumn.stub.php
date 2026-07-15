@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteStorageColumnsColumn extends \Google\Collection
-{
-    protected $collection_key = 'widgets';
-    /**
-     * @var string
-     */
-    public $horizontalAlignment;
-    /**
-     * @var string
-     */
-    public $horizontalSizeStyle;
-    /**
-     * @var string
-     */
-    public $verticalAlignment;
-    protected $widgetsType = AppsDynamiteStorageColumnsColumnWidgets::class;
-    protected $widgetsDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setHorizontalAlignment($horizontalAlignment)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteStorageColumnsColumn extends \Google\Collection
     {
+        protected $collection_key = 'widgets';
+        /**
+         * @var string
+         */
+        public $horizontalAlignment;
+        /**
+         * @var string
+         */
+        public $horizontalSizeStyle;
+        /**
+         * @var string
+         */
+        public $verticalAlignment;
+        protected $widgetsType = AppsDynamiteStorageColumnsColumnWidgets::class;
+        protected $widgetsDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setHorizontalAlignment($horizontalAlignment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHorizontalAlignment()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setHorizontalSizeStyle($horizontalSizeStyle)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHorizontalSizeStyle()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setVerticalAlignment($verticalAlignment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVerticalAlignment()
+        {
+        }
+        /**
+         * @param AppsDynamiteStorageColumnsColumnWidgets[]
+         */
+        public function setWidgets($widgets)
+        {
+        }
+        /**
+         * @return AppsDynamiteStorageColumnsColumnWidgets[]
+         */
+        public function getWidgets()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteStorageColumnsColumn registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHorizontalAlignment()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setHorizontalSizeStyle($horizontalSizeStyle)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHorizontalSizeStyle()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setVerticalAlignment($verticalAlignment)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVerticalAlignment()
-    {
-    }
-    /**
-     * @param AppsDynamiteStorageColumnsColumnWidgets[]
-     */
-    public function setWidgets($widgets)
-    {
-    }
-    /**
-     * @return AppsDynamiteStorageColumnsColumnWidgets[]
-     */
-    public function getWidgets()
+    class Google_Service_CloudSearch_AppsDynamiteStorageColumnsColumn extends \Google\Service\CloudSearch\AppsDynamiteStorageColumnsColumn
     {
     }
 }

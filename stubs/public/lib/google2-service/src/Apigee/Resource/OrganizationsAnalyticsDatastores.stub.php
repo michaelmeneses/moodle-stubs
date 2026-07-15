@@ -21,96 +21,109 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee\Resource;
-
-/**
- * The "datastores" collection of methods.
- * Typical usage is:
- *  <code>
- *   $apigeeService = new Google\Service\Apigee(...);
- *   $datastores = $apigeeService->organizations_analytics_datastores;
- *  </code>
- */
-class OrganizationsAnalyticsDatastores extends \Google\Service\Resource
-{
+namespace Google\Service\Apigee\Resource {
+    use Google\Service\Apigee\GoogleCloudApigeeV1Datastore;
+    use Google\Service\Apigee\GoogleCloudApigeeV1ListDatastoresResponse;
+    use Google\Service\Apigee\GoogleCloudApigeeV1TestDatastoreResponse;
+    use Google\Service\Apigee\GoogleProtobufEmpty;
     /**
-     * Create a Datastore for an org (datastores.create)
-     *
-     * @param string $parent Required. The parent organization name. Must be of the
-     * form `organizations/{org}`.
-     * @param GoogleCloudApigeeV1Datastore $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudApigeeV1Datastore
-     * @throws \Google\Service\Exception
+     * The "datastores" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $apigeeService = new Google\Service\Apigee(...);
+     *   $datastores = $apigeeService->organizations_analytics_datastores;
+     *  </code>
      */
-    public function create($parent, GoogleCloudApigeeV1Datastore $postBody, $optParams = [])
+    class OrganizationsAnalyticsDatastores extends \Google\Service\Resource
     {
+        /**
+         * Create a Datastore for an org (datastores.create)
+         *
+         * @param string $parent Required. The parent organization name. Must be of the
+         * form `organizations/{org}`.
+         * @param GoogleCloudApigeeV1Datastore $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudApigeeV1Datastore
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, GoogleCloudApigeeV1Datastore $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Delete a Datastore from an org. (datastores.delete)
+         *
+         * @param string $name Required. Resource name of the Datastore to be deleted.
+         * Must be of the form `organizations/{org}/analytics/datastores/{datastoreId}`
+         * @param array $optParams Optional parameters.
+         * @return GoogleProtobufEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Get a Datastore (datastores.get)
+         *
+         * @param string $name Required. Resource name of the Datastore to be get. Must
+         * be of the form `organizations/{org}/analytics/datastores/{datastoreId}`
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudApigeeV1Datastore
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * List Datastores (datastores.listOrganizationsAnalyticsDatastores)
+         *
+         * @param string $parent Required. The parent organization name. Must be of the
+         * form `organizations/{org}`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string targetType Optional. TargetType is used to fetch all
+         * Datastores that match the type
+         * @return GoogleCloudApigeeV1ListDatastoresResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listOrganizationsAnalyticsDatastores($parent, $optParams = [])
+        {
+        }
+        /**
+         * Test if Datastore configuration is correct. This includes checking if
+         * credentials provided by customer have required permissions in target
+         * destination storage (datastores.test)
+         *
+         * @param string $parent Required. The parent organization name Must be of the
+         * form `organizations/{org}`
+         * @param GoogleCloudApigeeV1Datastore $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudApigeeV1TestDatastoreResponse
+         * @throws \Google\Service\Exception
+         */
+        public function test($parent, GoogleCloudApigeeV1Datastore $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Update a Datastore (datastores.update)
+         *
+         * @param string $name Required. The resource name of datastore to be updated.
+         * Must be of the form `organizations/{org}/analytics/datastores/{datastoreId}`
+         * @param GoogleCloudApigeeV1Datastore $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudApigeeV1Datastore
+         * @throws \Google\Service\Exception
+         */
+        public function update($name, GoogleCloudApigeeV1Datastore $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Delete a Datastore from an org. (datastores.delete)
-     *
-     * @param string $name Required. Resource name of the Datastore to be deleted.
-     * Must be of the form `organizations/{org}/analytics/datastores/{datastoreId}`
-     * @param array $optParams Optional parameters.
-     * @return GoogleProtobufEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Apigee\Resource\OrganizationsAnalyticsDatastores registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Get a Datastore (datastores.get)
-     *
-     * @param string $name Required. Resource name of the Datastore to be get. Must
-     * be of the form `organizations/{org}/analytics/datastores/{datastoreId}`
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudApigeeV1Datastore
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * List Datastores (datastores.listOrganizationsAnalyticsDatastores)
-     *
-     * @param string $parent Required. The parent organization name. Must be of the
-     * form `organizations/{org}`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string targetType Optional. TargetType is used to fetch all
-     * Datastores that match the type
-     * @return GoogleCloudApigeeV1ListDatastoresResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listOrganizationsAnalyticsDatastores($parent, $optParams = [])
-    {
-    }
-    /**
-     * Test if Datastore configuration is correct. This includes checking if
-     * credentials provided by customer have required permissions in target
-     * destination storage (datastores.test)
-     *
-     * @param string $parent Required. The parent organization name Must be of the
-     * form `organizations/{org}`
-     * @param GoogleCloudApigeeV1Datastore $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudApigeeV1TestDatastoreResponse
-     * @throws \Google\Service\Exception
-     */
-    public function test($parent, GoogleCloudApigeeV1Datastore $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Update a Datastore (datastores.update)
-     *
-     * @param string $name Required. The resource name of datastore to be updated.
-     * Must be of the form `organizations/{org}/analytics/datastores/{datastoreId}`
-     * @param GoogleCloudApigeeV1Datastore $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudApigeeV1Datastore
-     * @throws \Google\Service\Exception
-     */
-    public function update($name, GoogleCloudApigeeV1Datastore $postBody, $optParams = [])
+    class Google_Service_Apigee_Resource_OrganizationsAnalyticsDatastores extends \Google\Service\Apigee\Resource\OrganizationsAnalyticsDatastores
     {
     }
 }

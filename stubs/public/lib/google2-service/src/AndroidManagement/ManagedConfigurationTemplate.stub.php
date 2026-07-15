@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class ManagedConfigurationTemplate extends \Google\Model
-{
-    /**
-     * Optional, a map containing configuration variables defined for the
-     * configuration.
-     *
-     * @var string[]
-     */
-    public $configurationVariables;
-    /**
-     * The ID of the managed configurations template.
-     *
-     * @var string
-     */
-    public $templateId;
-    /**
-     * Optional, a map containing configuration variables defined for the
-     * configuration.
-     *
-     * @param string[] $configurationVariables
-     */
-    public function setConfigurationVariables($configurationVariables)
+namespace Google\Service\AndroidManagement {
+    class ManagedConfigurationTemplate extends \Google\Model
     {
+        /**
+         * Optional, a map containing configuration variables defined for the
+         * configuration.
+         *
+         * @var string[]
+         */
+        public $configurationVariables;
+        /**
+         * The ID of the managed configurations template.
+         *
+         * @var string
+         */
+        public $templateId;
+        /**
+         * Optional, a map containing configuration variables defined for the
+         * configuration.
+         *
+         * @param string[] $configurationVariables
+         */
+        public function setConfigurationVariables($configurationVariables)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getConfigurationVariables()
+        {
+        }
+        /**
+         * The ID of the managed configurations template.
+         *
+         * @param string $templateId
+         */
+        public function setTemplateId($templateId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTemplateId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\AndroidManagement\ManagedConfigurationTemplate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfigurationVariables()
-    {
-    }
-    /**
-     * The ID of the managed configurations template.
-     *
-     * @param string $templateId
-     */
-    public function setTemplateId($templateId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTemplateId()
+    class Google_Service_AndroidManagement_ManagedConfigurationTemplate extends \Google\Service\AndroidManagement\ManagedConfigurationTemplate
     {
     }
 }

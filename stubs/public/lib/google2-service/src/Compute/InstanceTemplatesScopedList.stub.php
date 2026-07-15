@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InstanceTemplatesScopedList extends \Google\Collection
-{
-    protected $collection_key = 'instanceTemplates';
-    protected $instanceTemplatesType = InstanceTemplate::class;
-    protected $instanceTemplatesDataType = 'array';
-    protected $warningType = InstanceTemplatesScopedListWarning::class;
-    protected $warningDataType = '';
-    /**
-     * [Output Only] A list of instance templates that are contained within the
-     * specified project and zone.
-     *
-     * @param InstanceTemplate[] $instanceTemplates
-     */
-    public function setInstanceTemplates($instanceTemplates)
+namespace Google\Service\Compute {
+    class InstanceTemplatesScopedList extends \Google\Collection
     {
+        protected $collection_key = 'instanceTemplates';
+        protected $instanceTemplatesType = InstanceTemplate::class;
+        protected $instanceTemplatesDataType = 'array';
+        protected $warningType = InstanceTemplatesScopedListWarning::class;
+        protected $warningDataType = '';
+        /**
+         * [Output Only] A list of instance templates that are contained within the
+         * specified project and zone.
+         *
+         * @param InstanceTemplate[] $instanceTemplates
+         */
+        public function setInstanceTemplates($instanceTemplates)
+        {
+        }
+        /**
+         * @return InstanceTemplate[]
+         */
+        public function getInstanceTemplates()
+        {
+        }
+        /**
+         * [Output Only] An informational warning that replaces the list of instance
+         * templates when the list is empty.
+         *
+         * @param InstanceTemplatesScopedListWarning $warning
+         */
+        public function setWarning(InstanceTemplatesScopedListWarning $warning)
+        {
+        }
+        /**
+         * @return InstanceTemplatesScopedListWarning
+         */
+        public function getWarning()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InstanceTemplate[]
+     * Runtime class alias of \Google\Service\Compute\InstanceTemplatesScopedList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstanceTemplates()
-    {
-    }
-    /**
-     * [Output Only] An informational warning that replaces the list of instance
-     * templates when the list is empty.
-     *
-     * @param InstanceTemplatesScopedListWarning $warning
-     */
-    public function setWarning(InstanceTemplatesScopedListWarning $warning)
-    {
-    }
-    /**
-     * @return InstanceTemplatesScopedListWarning
-     */
-    public function getWarning()
+    class Google_Service_Compute_InstanceTemplatesScopedList extends \Google\Service\Compute\InstanceTemplatesScopedList
     {
     }
 }

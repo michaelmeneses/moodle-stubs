@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sasportal;
-
-class SasPortalMigrateOrganizationResponse extends \Google\Collection
-{
-    protected $collection_key = 'deploymentAssociation';
-    protected $deploymentAssociationType = SasPortalDeploymentAssociation::class;
-    protected $deploymentAssociationDataType = 'array';
-    /**
-     * Optional. A list of deployment association that were created for the
-     * migration, or current associations if they already exist.
-     *
-     * @param SasPortalDeploymentAssociation[] $deploymentAssociation
-     */
-    public function setDeploymentAssociation($deploymentAssociation)
+namespace Google\Service\Sasportal {
+    class SasPortalMigrateOrganizationResponse extends \Google\Collection
     {
+        protected $collection_key = 'deploymentAssociation';
+        protected $deploymentAssociationType = SasPortalDeploymentAssociation::class;
+        protected $deploymentAssociationDataType = 'array';
+        /**
+         * Optional. A list of deployment association that were created for the
+         * migration, or current associations if they already exist.
+         *
+         * @param SasPortalDeploymentAssociation[] $deploymentAssociation
+         */
+        public function setDeploymentAssociation($deploymentAssociation)
+        {
+        }
+        /**
+         * @return SasPortalDeploymentAssociation[]
+         */
+        public function getDeploymentAssociation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SasPortalDeploymentAssociation[]
+     * Runtime class alias of \Google\Service\Sasportal\SasPortalMigrateOrganizationResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeploymentAssociation()
+    class Google_Service_Sasportal_SasPortalMigrateOrganizationResponse extends \Google\Service\Sasportal\SasPortalMigrateOrganizationResponse
     {
     }
 }

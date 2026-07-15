@@ -21,63 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CertificateManager;
-
-class Troubleshooting extends \Google\Collection
-{
-    protected $collection_key = 'issues';
-    protected $cnameType = CNAME::class;
-    protected $cnameDataType = '';
-    protected $ipsType = IPs::class;
-    protected $ipsDataType = '';
-    /**
-     * Output only. The list of issues discovered during the authorization
-     * attempt.
-     *
-     * @var string[]
-     */
-    public $issues;
-    /**
-     * Output only. CNAME troubleshooting information.
-     *
-     * @param CNAME $cname
-     */
-    public function setCname(CNAME $cname)
+namespace Google\Service\CertificateManager {
+    class Troubleshooting extends \Google\Collection
     {
+        protected $collection_key = 'issues';
+        protected $cnameType = CNAME::class;
+        protected $cnameDataType = '';
+        protected $ipsType = IPs::class;
+        protected $ipsDataType = '';
+        /**
+         * Output only. The list of issues discovered during the authorization
+         * attempt.
+         *
+         * @var string[]
+         */
+        public $issues;
+        /**
+         * Output only. CNAME troubleshooting information.
+         *
+         * @param CNAME $cname
+         */
+        public function setCname(CNAME $cname)
+        {
+        }
+        /**
+         * @return CNAME
+         */
+        public function getCname()
+        {
+        }
+        /**
+         * Output only. IPs troubleshooting information.
+         *
+         * @param IPs $ips
+         */
+        public function setIps(IPs $ips)
+        {
+        }
+        /**
+         * @return IPs
+         */
+        public function getIps()
+        {
+        }
+        /**
+         * Output only. The list of issues discovered during the authorization
+         * attempt.
+         *
+         * @param string[] $issues
+         */
+        public function setIssues($issues)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getIssues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CNAME
+     * Runtime class alias of \Google\Service\CertificateManager\Troubleshooting registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCname()
-    {
-    }
-    /**
-     * Output only. IPs troubleshooting information.
-     *
-     * @param IPs $ips
-     */
-    public function setIps(IPs $ips)
-    {
-    }
-    /**
-     * @return IPs
-     */
-    public function getIps()
-    {
-    }
-    /**
-     * Output only. The list of issues discovered during the authorization
-     * attempt.
-     *
-     * @param string[] $issues
-     */
-    public function setIssues($issues)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getIssues()
+    class Google_Service_CertificateManager_Troubleshooting extends \Google\Service\CertificateManager\Troubleshooting
     {
     }
 }

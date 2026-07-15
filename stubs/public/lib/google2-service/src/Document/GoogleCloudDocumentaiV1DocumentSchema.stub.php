@@ -21,81 +21,90 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1DocumentSchema extends \Google\Collection
-{
-    protected $collection_key = 'entityTypes';
-    /**
-     * Description of the schema.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Display name to show to users.
-     *
-     * @var string
-     */
-    public $displayName;
-    protected $entityTypesType = GoogleCloudDocumentaiV1DocumentSchemaEntityType::class;
-    protected $entityTypesDataType = 'array';
-    protected $metadataType = GoogleCloudDocumentaiV1DocumentSchemaMetadata::class;
-    protected $metadataDataType = '';
-    /**
-     * Description of the schema.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1DocumentSchema extends \Google\Collection
     {
+        protected $collection_key = 'entityTypes';
+        /**
+         * Description of the schema.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Display name to show to users.
+         *
+         * @var string
+         */
+        public $displayName;
+        protected $entityTypesType = GoogleCloudDocumentaiV1DocumentSchemaEntityType::class;
+        protected $entityTypesDataType = 'array';
+        protected $metadataType = GoogleCloudDocumentaiV1DocumentSchemaMetadata::class;
+        protected $metadataDataType = '';
+        /**
+         * Description of the schema.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Display name to show to users.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Entity types of the schema.
+         *
+         * @param GoogleCloudDocumentaiV1DocumentSchemaEntityType[] $entityTypes
+         */
+        public function setEntityTypes($entityTypes)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1DocumentSchemaEntityType[]
+         */
+        public function getEntityTypes()
+        {
+        }
+        /**
+         * Metadata of the schema.
+         *
+         * @param GoogleCloudDocumentaiV1DocumentSchemaMetadata $metadata
+         */
+        public function setMetadata(GoogleCloudDocumentaiV1DocumentSchemaMetadata $metadata)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1DocumentSchemaMetadata
+         */
+        public function getMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1DocumentSchema registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * Display name to show to users.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Entity types of the schema.
-     *
-     * @param GoogleCloudDocumentaiV1DocumentSchemaEntityType[] $entityTypes
-     */
-    public function setEntityTypes($entityTypes)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1DocumentSchemaEntityType[]
-     */
-    public function getEntityTypes()
-    {
-    }
-    /**
-     * Metadata of the schema.
-     *
-     * @param GoogleCloudDocumentaiV1DocumentSchemaMetadata $metadata
-     */
-    public function setMetadata(GoogleCloudDocumentaiV1DocumentSchemaMetadata $metadata)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1DocumentSchemaMetadata
-     */
-    public function getMetadata()
+    class Google_Service_Document_GoogleCloudDocumentaiV1DocumentSchema extends \Google\Service\Document\GoogleCloudDocumentaiV1DocumentSchema
     {
     }
 }

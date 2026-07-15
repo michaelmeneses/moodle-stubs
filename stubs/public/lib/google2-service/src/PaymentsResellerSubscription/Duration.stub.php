@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PaymentsResellerSubscription;
-
-class Duration extends \Google\Model
-{
-    /**
-     * Default value, reserved as an invalid or an unexpected value.
-     */
-    public const UNIT_UNIT_UNSPECIFIED = 'UNIT_UNSPECIFIED';
-    /**
-     * Unit of a calendar month.
-     */
-    public const UNIT_MONTH = 'MONTH';
-    /**
-     * Unit of a day.
-     */
-    public const UNIT_DAY = 'DAY';
-    /**
-     * Unit of an hour. It is used for testing.
-     */
-    public const UNIT_HOUR = 'HOUR';
-    /**
-     * number of duration units to be included.
-     *
-     * @var int
-     */
-    public $count;
-    /**
-     * The unit used for the duration
-     *
-     * @var string
-     */
-    public $unit;
-    /**
-     * number of duration units to be included.
-     *
-     * @param int $count
-     */
-    public function setCount($count)
+namespace Google\Service\PaymentsResellerSubscription {
+    class Duration extends \Google\Model
     {
+        /**
+         * Default value, reserved as an invalid or an unexpected value.
+         */
+        public const UNIT_UNIT_UNSPECIFIED = 'UNIT_UNSPECIFIED';
+        /**
+         * Unit of a calendar month.
+         */
+        public const UNIT_MONTH = 'MONTH';
+        /**
+         * Unit of a day.
+         */
+        public const UNIT_DAY = 'DAY';
+        /**
+         * Unit of an hour. It is used for testing.
+         */
+        public const UNIT_HOUR = 'HOUR';
+        /**
+         * number of duration units to be included.
+         *
+         * @var int
+         */
+        public $count;
+        /**
+         * The unit used for the duration
+         *
+         * @var string
+         */
+        public $unit;
+        /**
+         * number of duration units to be included.
+         *
+         * @param int $count
+         */
+        public function setCount($count)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCount()
+        {
+        }
+        /**
+         * The unit used for the duration
+         *
+         * Accepted values: UNIT_UNSPECIFIED, MONTH, DAY, HOUR
+         *
+         * @param self::UNIT_* $unit
+         */
+        public function setUnit($unit)
+        {
+        }
+        /**
+         * @return self::UNIT_*
+         */
+        public function getUnit()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\PaymentsResellerSubscription\Duration registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCount()
-    {
-    }
-    /**
-     * The unit used for the duration
-     *
-     * Accepted values: UNIT_UNSPECIFIED, MONTH, DAY, HOUR
-     *
-     * @param self::UNIT_* $unit
-     */
-    public function setUnit($unit)
-    {
-    }
-    /**
-     * @return self::UNIT_*
-     */
-    public function getUnit()
+    class Google_Service_PaymentsResellerSubscription_Duration extends \Google\Service\PaymentsResellerSubscription\Duration
     {
     }
 }

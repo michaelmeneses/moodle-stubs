@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class StageOutputMetrics extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $bytesWritten;
-    /**
-     * @var string
-     */
-    public $recordsWritten;
-    /**
-     * @param string $bytesWritten
-     */
-    public function setBytesWritten($bytesWritten)
+namespace Google\Service\Dataproc {
+    class StageOutputMetrics extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $bytesWritten;
+        /**
+         * @var string
+         */
+        public $recordsWritten;
+        /**
+         * @param string $bytesWritten
+         */
+        public function setBytesWritten($bytesWritten)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBytesWritten()
+        {
+        }
+        /**
+         * @param string $recordsWritten
+         */
+        public function setRecordsWritten($recordsWritten)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRecordsWritten()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\StageOutputMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBytesWritten()
-    {
-    }
-    /**
-     * @param string $recordsWritten
-     */
-    public function setRecordsWritten($recordsWritten)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRecordsWritten()
+    class Google_Service_Dataproc_StageOutputMetrics extends \Google\Service\Dataproc\StageOutputMetrics
     {
     }
 }

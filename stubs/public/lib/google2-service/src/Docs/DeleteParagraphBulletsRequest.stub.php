@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class DeleteParagraphBulletsRequest extends \Google\Model
-{
-    protected $rangeType = Range::class;
-    protected $rangeDataType = '';
-    /**
-     * The range to delete bullets from.
-     *
-     * @param Range $range
-     */
-    public function setRange(Range $range)
+namespace Google\Service\Docs {
+    class DeleteParagraphBulletsRequest extends \Google\Model
     {
+        protected $rangeType = Range::class;
+        protected $rangeDataType = '';
+        /**
+         * The range to delete bullets from.
+         *
+         * @param Range $range
+         */
+        public function setRange(Range $range)
+        {
+        }
+        /**
+         * @return Range
+         */
+        public function getRange()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Range
+     * Runtime class alias of \Google\Service\Docs\DeleteParagraphBulletsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRange()
+    class Google_Service_Docs_DeleteParagraphBulletsRequest extends \Google\Service\Docs\DeleteParagraphBulletsRequest
     {
     }
 }

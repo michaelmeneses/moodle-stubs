@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseManagement;
-
-class ListAndroidAppsResponse extends \Google\Collection
-{
-    protected $collection_key = 'apps';
-    protected $appsType = AndroidApp::class;
-    protected $appsDataType = 'array';
-    /**
-     * If the result list is too large to fit in a single response, then a token
-     * is returned. If the string is empty, then this response is the last page of
-     * results. This token can be used in a subsequent call to `ListAndroidApps`
-     * to find the next group of Apps. Page tokens are short-lived and should not
-     * be persisted.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of each `AndroidApp` associated with the specified `FirebaseProject`.
-     *
-     * @param AndroidApp[] $apps
-     */
-    public function setApps($apps)
+namespace Google\Service\FirebaseManagement {
+    class ListAndroidAppsResponse extends \Google\Collection
     {
+        protected $collection_key = 'apps';
+        protected $appsType = AndroidApp::class;
+        protected $appsDataType = 'array';
+        /**
+         * If the result list is too large to fit in a single response, then a token
+         * is returned. If the string is empty, then this response is the last page of
+         * results. This token can be used in a subsequent call to `ListAndroidApps`
+         * to find the next group of Apps. Page tokens are short-lived and should not
+         * be persisted.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of each `AndroidApp` associated with the specified `FirebaseProject`.
+         *
+         * @param AndroidApp[] $apps
+         */
+        public function setApps($apps)
+        {
+        }
+        /**
+         * @return AndroidApp[]
+         */
+        public function getApps()
+        {
+        }
+        /**
+         * If the result list is too large to fit in a single response, then a token
+         * is returned. If the string is empty, then this response is the last page of
+         * results. This token can be used in a subsequent call to `ListAndroidApps`
+         * to find the next group of Apps. Page tokens are short-lived and should not
+         * be persisted.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AndroidApp[]
+     * Runtime class alias of \Google\Service\FirebaseManagement\ListAndroidAppsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApps()
-    {
-    }
-    /**
-     * If the result list is too large to fit in a single response, then a token
-     * is returned. If the string is empty, then this response is the last page of
-     * results. This token can be used in a subsequent call to `ListAndroidApps`
-     * to find the next group of Apps. Page tokens are short-lived and should not
-     * be persisted.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_FirebaseManagement_ListAndroidAppsResponse extends \Google\Service\FirebaseManagement\ListAndroidAppsResponse
     {
     }
 }

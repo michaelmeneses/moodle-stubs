@@ -21,29 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine\Resource;
-
-/**
- * The "licenseConfigsUsageStats" collection of methods.
- * Typical usage is:
- *  <code>
- *   $discoveryengineService = new Google\Service\DiscoveryEngine(...);
- *   $licenseConfigsUsageStats = $discoveryengineService->projects_locations_userStores_licenseConfigsUsageStats;
- *  </code>
- */
-class ProjectsLocationsUserStoresLicenseConfigsUsageStats extends \Google\Service\Resource
-{
+namespace Google\Service\DiscoveryEngine\Resource {
+    use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ListLicenseConfigsUsageStatsResponse;
     /**
-     * Lists all the LicenseConfigUsageStatss associated with the project. (licenseC
-     * onfigsUsageStats.listProjectsLocationsUserStoresLicenseConfigsUsageStats)
-     *
-     * @param string $parent Required. The parent branch resource name, such as
-     * `projects/{project}/locations/{location}/userStores/{user_store_id}`.
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudDiscoveryengineV1ListLicenseConfigsUsageStatsResponse
-     * @throws \Google\Service\Exception
+     * The "licenseConfigsUsageStats" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $discoveryengineService = new Google\Service\DiscoveryEngine(...);
+     *   $licenseConfigsUsageStats = $discoveryengineService->projects_locations_userStores_licenseConfigsUsageStats;
+     *  </code>
      */
-    public function listProjectsLocationsUserStoresLicenseConfigsUsageStats($parent, $optParams = [])
+    class ProjectsLocationsUserStoresLicenseConfigsUsageStats extends \Google\Service\Resource
+    {
+        /**
+         * Lists all the LicenseConfigUsageStatss associated with the project. (licenseC
+         * onfigsUsageStats.listProjectsLocationsUserStoresLicenseConfigsUsageStats)
+         *
+         * @param string $parent Required. The parent branch resource name, such as
+         * `projects/{project}/locations/{location}/userStores/{user_store_id}`.
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudDiscoveryengineV1ListLicenseConfigsUsageStatsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsUserStoresLicenseConfigsUsageStats($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\DiscoveryEngine\Resource\ProjectsLocationsUserStoresLicenseConfigsUsageStats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_DiscoveryEngine_Resource_ProjectsLocationsUserStoresLicenseConfigsUsageStats extends \Google\Service\DiscoveryEngine\Resource\ProjectsLocationsUserStoresLicenseConfigsUsageStats
     {
     }
 }

@@ -21,92 +21,103 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting\Resource;
-
-/**
- * The "subaccounts" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dfareportingService = new Google\Service\Dfareporting(...);
- *   $subaccounts = $dfareportingService->subaccounts;
- *  </code>
- */
-class Subaccounts extends \Google\Service\Resource
-{
+namespace Google\Service\Dfareporting\Resource {
+    use Google\Service\Dfareporting\Subaccount;
+    use Google\Service\Dfareporting\SubaccountsListResponse;
     /**
-     * Gets one subaccount by ID. (subaccounts.get)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param string $id Subaccount ID.
-     * @param array $optParams Optional parameters.
-     * @return Subaccount
-     * @throws \Google\Service\Exception
+     * The "subaccounts" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dfareportingService = new Google\Service\Dfareporting(...);
+     *   $subaccounts = $dfareportingService->subaccounts;
+     *  </code>
      */
-    public function get($profileId, $id, $optParams = [])
+    class Subaccounts extends \Google\Service\Resource
     {
+        /**
+         * Gets one subaccount by ID. (subaccounts.get)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param string $id Subaccount ID.
+         * @param array $optParams Optional parameters.
+         * @return Subaccount
+         * @throws \Google\Service\Exception
+         */
+        public function get($profileId, $id, $optParams = [])
+        {
+        }
+        /**
+         * Inserts a new subaccount. (subaccounts.insert)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param Subaccount $postBody
+         * @param array $optParams Optional parameters.
+         * @return Subaccount
+         * @throws \Google\Service\Exception
+         */
+        public function insert($profileId, Subaccount $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Gets a list of subaccounts, possibly filtered. This method supports paging.
+         * (subaccounts.listSubaccounts)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string ids Select only subaccounts with these IDs.
+         * @opt_param int maxResults Maximum number of results to return.
+         * @opt_param string pageToken Value of the nextPageToken from the previous
+         * result page.
+         * @opt_param string searchString Allows searching for objects by name or ID.
+         * Wildcards (*) are allowed. For example, "subaccount*2015" will return objects
+         * with names like "subaccount June 2015", "subaccount April 2015", or simply
+         * "subaccount 2015". Most of the searches also add wildcards implicitly at the
+         * start and the end of the search string. For example, a search string of
+         * "subaccount" will match objects with name "my subaccount", "subaccount 2015",
+         * or simply "subaccount" .
+         * @opt_param string sortField Field by which to sort the list.
+         * @opt_param string sortOrder Order of sorted results.
+         * @return SubaccountsListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listSubaccounts($profileId, $optParams = [])
+        {
+        }
+        /**
+         * Updates an existing subaccount. This method supports patch semantics.
+         * (subaccounts.patch)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param string $id Required. Subaccount ID.
+         * @param Subaccount $postBody
+         * @param array $optParams Optional parameters.
+         * @return Subaccount
+         * @throws \Google\Service\Exception
+         */
+        public function patch($profileId, $id, Subaccount $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Updates an existing subaccount. (subaccounts.update)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param Subaccount $postBody
+         * @param array $optParams Optional parameters.
+         * @return Subaccount
+         * @throws \Google\Service\Exception
+         */
+        public function update($profileId, Subaccount $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Inserts a new subaccount. (subaccounts.insert)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param Subaccount $postBody
-     * @param array $optParams Optional parameters.
-     * @return Subaccount
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Dfareporting\Resource\Subaccounts registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function insert($profileId, Subaccount $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Gets a list of subaccounts, possibly filtered. This method supports paging.
-     * (subaccounts.listSubaccounts)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string ids Select only subaccounts with these IDs.
-     * @opt_param int maxResults Maximum number of results to return.
-     * @opt_param string pageToken Value of the nextPageToken from the previous
-     * result page.
-     * @opt_param string searchString Allows searching for objects by name or ID.
-     * Wildcards (*) are allowed. For example, "subaccount*2015" will return objects
-     * with names like "subaccount June 2015", "subaccount April 2015", or simply
-     * "subaccount 2015". Most of the searches also add wildcards implicitly at the
-     * start and the end of the search string. For example, a search string of
-     * "subaccount" will match objects with name "my subaccount", "subaccount 2015",
-     * or simply "subaccount" .
-     * @opt_param string sortField Field by which to sort the list.
-     * @opt_param string sortOrder Order of sorted results.
-     * @return SubaccountsListResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listSubaccounts($profileId, $optParams = [])
-    {
-    }
-    /**
-     * Updates an existing subaccount. This method supports patch semantics.
-     * (subaccounts.patch)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param string $id Required. Subaccount ID.
-     * @param Subaccount $postBody
-     * @param array $optParams Optional parameters.
-     * @return Subaccount
-     * @throws \Google\Service\Exception
-     */
-    public function patch($profileId, $id, Subaccount $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Updates an existing subaccount. (subaccounts.update)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param Subaccount $postBody
-     * @param array $optParams Optional parameters.
-     * @return Subaccount
-     * @throws \Google\Service\Exception
-     */
-    public function update($profileId, Subaccount $postBody, $optParams = [])
+    class Google_Service_Dfareporting_Resource_Subaccounts extends \Google\Service\Dfareporting\Resource\Subaccounts
     {
     }
 }

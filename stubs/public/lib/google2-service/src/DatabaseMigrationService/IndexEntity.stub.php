@@ -21,139 +21,148 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class IndexEntity extends \Google\Collection
-{
-    protected $collection_key = 'tableColumnsDescending';
-    /**
-     * Custom engine specific features.
-     *
-     * @var array[]
-     */
-    public $customFeatures;
-    /**
-     * The name of the index.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Table columns used as part of the Index, for example B-TREE index should
-     * list the columns which constitutes the index.
-     *
-     * @var string[]
-     */
-    public $tableColumns;
-    /**
-     * For each table_column, mark whether it's sorting order is ascending (false)
-     * or descending (true). If no value is defined, assume all columns are sorted
-     * in ascending order. Otherwise, the number of items must match that of
-     * table_columns with each value specifying the direction of the matched
-     * column by its index.
-     *
-     * @var bool[]
-     */
-    public $tableColumnsDescending;
-    /**
-     * Type of index, for example B-TREE.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Boolean value indicating whether the index is unique.
-     *
-     * @var bool
-     */
-    public $unique;
-    /**
-     * Custom engine specific features.
-     *
-     * @param array[] $customFeatures
-     */
-    public function setCustomFeatures($customFeatures)
+namespace Google\Service\DatabaseMigrationService {
+    class IndexEntity extends \Google\Collection
     {
+        protected $collection_key = 'tableColumnsDescending';
+        /**
+         * Custom engine specific features.
+         *
+         * @var array[]
+         */
+        public $customFeatures;
+        /**
+         * The name of the index.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Table columns used as part of the Index, for example B-TREE index should
+         * list the columns which constitutes the index.
+         *
+         * @var string[]
+         */
+        public $tableColumns;
+        /**
+         * For each table_column, mark whether it's sorting order is ascending (false)
+         * or descending (true). If no value is defined, assume all columns are sorted
+         * in ascending order. Otherwise, the number of items must match that of
+         * table_columns with each value specifying the direction of the matched
+         * column by its index.
+         *
+         * @var bool[]
+         */
+        public $tableColumnsDescending;
+        /**
+         * Type of index, for example B-TREE.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Boolean value indicating whether the index is unique.
+         *
+         * @var bool
+         */
+        public $unique;
+        /**
+         * Custom engine specific features.
+         *
+         * @param array[] $customFeatures
+         */
+        public function setCustomFeatures($customFeatures)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getCustomFeatures()
+        {
+        }
+        /**
+         * The name of the index.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Table columns used as part of the Index, for example B-TREE index should
+         * list the columns which constitutes the index.
+         *
+         * @param string[] $tableColumns
+         */
+        public function setTableColumns($tableColumns)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTableColumns()
+        {
+        }
+        /**
+         * For each table_column, mark whether it's sorting order is ascending (false)
+         * or descending (true). If no value is defined, assume all columns are sorted
+         * in ascending order. Otherwise, the number of items must match that of
+         * table_columns with each value specifying the direction of the matched
+         * column by its index.
+         *
+         * @param bool[] $tableColumnsDescending
+         */
+        public function setTableColumnsDescending($tableColumnsDescending)
+        {
+        }
+        /**
+         * @return bool[]
+         */
+        public function getTableColumnsDescending()
+        {
+        }
+        /**
+         * Type of index, for example B-TREE.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
+        /**
+         * Boolean value indicating whether the index is unique.
+         *
+         * @param bool $unique
+         */
+        public function setUnique($unique)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUnique()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\IndexEntity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomFeatures()
-    {
-    }
-    /**
-     * The name of the index.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Table columns used as part of the Index, for example B-TREE index should
-     * list the columns which constitutes the index.
-     *
-     * @param string[] $tableColumns
-     */
-    public function setTableColumns($tableColumns)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTableColumns()
-    {
-    }
-    /**
-     * For each table_column, mark whether it's sorting order is ascending (false)
-     * or descending (true). If no value is defined, assume all columns are sorted
-     * in ascending order. Otherwise, the number of items must match that of
-     * table_columns with each value specifying the direction of the matched
-     * column by its index.
-     *
-     * @param bool[] $tableColumnsDescending
-     */
-    public function setTableColumnsDescending($tableColumnsDescending)
-    {
-    }
-    /**
-     * @return bool[]
-     */
-    public function getTableColumnsDescending()
-    {
-    }
-    /**
-     * Type of index, for example B-TREE.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
-    {
-    }
-    /**
-     * Boolean value indicating whether the index is unique.
-     *
-     * @param bool $unique
-     */
-    public function setUnique($unique)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUnique()
+    class Google_Service_DatabaseMigrationService_IndexEntity extends \Google\Service\DatabaseMigrationService\IndexEntity
     {
     }
 }

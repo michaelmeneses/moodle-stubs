@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class ScanData extends \Google\Model
-{
-    protected $dataType = VisualizationData::class;
-    protected $dataDataType = '';
-    /**
-     * The upper bound for when the contained data is defined.
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * A range of time (inclusive) for when the contained data is defined. The
-     * lower bound for when the contained data is defined.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * Cloud Key Visualizer scan data. The range of time this information covers
-     * is captured via the above time range fields. Note, this field is not
-     * available to the ListScans method.
-     *
-     * @param VisualizationData $data
-     */
-    public function setData(VisualizationData $data)
+namespace Google\Service\Spanner {
+    class ScanData extends \Google\Model
     {
+        protected $dataType = VisualizationData::class;
+        protected $dataDataType = '';
+        /**
+         * The upper bound for when the contained data is defined.
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * A range of time (inclusive) for when the contained data is defined. The
+         * lower bound for when the contained data is defined.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * Cloud Key Visualizer scan data. The range of time this information covers
+         * is captured via the above time range fields. Note, this field is not
+         * available to the ListScans method.
+         *
+         * @param VisualizationData $data
+         */
+        public function setData(VisualizationData $data)
+        {
+        }
+        /**
+         * @return VisualizationData
+         */
+        public function getData()
+        {
+        }
+        /**
+         * The upper bound for when the contained data is defined.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * A range of time (inclusive) for when the contained data is defined. The
+         * lower bound for when the contained data is defined.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return VisualizationData
+     * Runtime class alias of \Google\Service\Spanner\ScanData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getData()
-    {
-    }
-    /**
-     * The upper bound for when the contained data is defined.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndTime()
-    {
-    }
-    /**
-     * A range of time (inclusive) for when the contained data is defined. The
-     * lower bound for when the contained data is defined.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
+    class Google_Service_Spanner_ScanData extends \Google\Service\Spanner\ScanData
     {
     }
 }

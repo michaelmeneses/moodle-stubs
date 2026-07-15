@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0ResourcesCampaignOptimizationGoalSetting extends \Google\Collection
-{
-    protected $collection_key = 'optimizationGoalTypes';
-    /**
-     * The list of optimization goal types.
-     *
-     * @var string[]
-     */
-    public $optimizationGoalTypes;
-    /**
-     * The list of optimization goal types.
-     *
-     * @param string[] $optimizationGoalTypes
-     */
-    public function setOptimizationGoalTypes($optimizationGoalTypes)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0ResourcesCampaignOptimizationGoalSetting extends \Google\Collection
     {
+        protected $collection_key = 'optimizationGoalTypes';
+        /**
+         * The list of optimization goal types.
+         *
+         * @var string[]
+         */
+        public $optimizationGoalTypes;
+        /**
+         * The list of optimization goal types.
+         *
+         * @param string[] $optimizationGoalTypes
+         */
+        public function setOptimizationGoalTypes($optimizationGoalTypes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getOptimizationGoalTypes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0ResourcesCampaignOptimizationGoalSetting registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOptimizationGoalTypes()
+    class Google_Service_SA360_GoogleAdsSearchads360V0ResourcesCampaignOptimizationGoalSetting extends \Google\Service\SA360\GoogleAdsSearchads360V0ResourcesCampaignOptimizationGoalSetting
     {
     }
 }

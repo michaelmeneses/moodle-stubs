@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class AnalyzeSyntaxResponse extends \Google\Collection
-{
-    protected $collection_key = 'tokens';
-    /**
-     * @var string
-     */
-    public $language;
-    protected $sentencesType = Sentence::class;
-    protected $sentencesDataType = 'array';
-    protected $tokensType = Token::class;
-    protected $tokensDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setLanguage($language)
+namespace Google\Service\CloudNaturalLanguage {
+    class AnalyzeSyntaxResponse extends \Google\Collection
     {
+        protected $collection_key = 'tokens';
+        /**
+         * @var string
+         */
+        public $language;
+        protected $sentencesType = Sentence::class;
+        protected $sentencesDataType = 'array';
+        protected $tokensType = Token::class;
+        protected $tokensDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setLanguage($language)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLanguage()
+        {
+        }
+        /**
+         * @param Sentence[]
+         */
+        public function setSentences($sentences)
+        {
+        }
+        /**
+         * @return Sentence[]
+         */
+        public function getSentences()
+        {
+        }
+        /**
+         * @param Token[]
+         */
+        public function setTokens($tokens)
+        {
+        }
+        /**
+         * @return Token[]
+         */
+        public function getTokens()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\AnalyzeSyntaxResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLanguage()
-    {
-    }
-    /**
-     * @param Sentence[]
-     */
-    public function setSentences($sentences)
-    {
-    }
-    /**
-     * @return Sentence[]
-     */
-    public function getSentences()
-    {
-    }
-    /**
-     * @param Token[]
-     */
-    public function setTokens($tokens)
-    {
-    }
-    /**
-     * @return Token[]
-     */
-    public function getTokens()
+    class Google_Service_CloudNaturalLanguage_AnalyzeSyntaxResponse extends \Google\Service\CloudNaturalLanguage\AnalyzeSyntaxResponse
     {
     }
 }

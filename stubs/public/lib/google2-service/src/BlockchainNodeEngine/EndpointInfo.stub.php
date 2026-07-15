@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BlockchainNodeEngine;
-
-class EndpointInfo extends \Google\Model
-{
-    /**
-     * Output only. The assigned URL for the node JSON-RPC API endpoint.
-     *
-     * @var string
-     */
-    public $jsonRpcApiEndpoint;
-    /**
-     * Output only. The assigned URL for the node WebSockets API endpoint.
-     *
-     * @var string
-     */
-    public $websocketsApiEndpoint;
-    /**
-     * Output only. The assigned URL for the node JSON-RPC API endpoint.
-     *
-     * @param string $jsonRpcApiEndpoint
-     */
-    public function setJsonRpcApiEndpoint($jsonRpcApiEndpoint)
+namespace Google\Service\BlockchainNodeEngine {
+    class EndpointInfo extends \Google\Model
     {
+        /**
+         * Output only. The assigned URL for the node JSON-RPC API endpoint.
+         *
+         * @var string
+         */
+        public $jsonRpcApiEndpoint;
+        /**
+         * Output only. The assigned URL for the node WebSockets API endpoint.
+         *
+         * @var string
+         */
+        public $websocketsApiEndpoint;
+        /**
+         * Output only. The assigned URL for the node JSON-RPC API endpoint.
+         *
+         * @param string $jsonRpcApiEndpoint
+         */
+        public function setJsonRpcApiEndpoint($jsonRpcApiEndpoint)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getJsonRpcApiEndpoint()
+        {
+        }
+        /**
+         * Output only. The assigned URL for the node WebSockets API endpoint.
+         *
+         * @param string $websocketsApiEndpoint
+         */
+        public function setWebsocketsApiEndpoint($websocketsApiEndpoint)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWebsocketsApiEndpoint()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BlockchainNodeEngine\EndpointInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getJsonRpcApiEndpoint()
-    {
-    }
-    /**
-     * Output only. The assigned URL for the node WebSockets API endpoint.
-     *
-     * @param string $websocketsApiEndpoint
-     */
-    public function setWebsocketsApiEndpoint($websocketsApiEndpoint)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWebsocketsApiEndpoint()
+    class Google_Service_BlockchainNodeEngine_EndpointInfo extends \Google\Service\BlockchainNodeEngine\EndpointInfo
     {
     }
 }

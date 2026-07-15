@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaCloudLoggingConfig extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $bucket;
-    /**
-     * @var bool
-     */
-    public $enableCloudLogging;
-    /**
-     * @param string
-     */
-    public function setBucket($bucket)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaCloudLoggingConfig extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $bucket;
+        /**
+         * @var bool
+         */
+        public $enableCloudLogging;
+        /**
+         * @param string
+         */
+        public function setBucket($bucket)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBucket()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setEnableCloudLogging($enableCloudLogging)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableCloudLogging()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaCloudLoggingConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBucket()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setEnableCloudLogging($enableCloudLogging)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnableCloudLogging()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaCloudLoggingConfig extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaCloudLoggingConfig
     {
     }
 }

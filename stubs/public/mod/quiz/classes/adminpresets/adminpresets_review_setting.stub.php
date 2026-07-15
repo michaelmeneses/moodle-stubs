@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_quiz\adminpresets;
 
+use ReflectionMethod;
+use core_adminpresets\local\setting\adminpresets_setting;
 /**
  * Admin settings class for the quiz review options.
  *

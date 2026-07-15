@@ -21,115 +21,124 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudObservability;
-
-class TraceScope extends \Google\Collection
-{
-    protected $collection_key = 'resourceNames';
-    /**
-     * Output only. The creation timestamp of the trace scope.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Optional. Describes this trace scope. The maximum length of the description
-     * is 8000 characters.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Identifier. The resource name of the trace scope. For example: projects/my-
-     * project/locations/global/traceScopes/my-trace-scope
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. Names of the projects that are included in this trace scope. *
-     * `projects/[PROJECT_ID]` A trace scope can include a maximum of 20 projects.
-     *
-     * @var string[]
-     */
-    public $resourceNames;
-    /**
-     * Output only. The last update timestamp of the trace scope.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. The creation timestamp of the trace scope.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\CloudObservability {
+    class TraceScope extends \Google\Collection
     {
+        protected $collection_key = 'resourceNames';
+        /**
+         * Output only. The creation timestamp of the trace scope.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Optional. Describes this trace scope. The maximum length of the description
+         * is 8000 characters.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Identifier. The resource name of the trace scope. For example: projects/my-
+         * project/locations/global/traceScopes/my-trace-scope
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. Names of the projects that are included in this trace scope. *
+         * `projects/[PROJECT_ID]` A trace scope can include a maximum of 20 projects.
+         *
+         * @var string[]
+         */
+        public $resourceNames;
+        /**
+         * Output only. The last update timestamp of the trace scope.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. The creation timestamp of the trace scope.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Optional. Describes this trace scope. The maximum length of the description
+         * is 8000 characters.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Identifier. The resource name of the trace scope. For example: projects/my-
+         * project/locations/global/traceScopes/my-trace-scope
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Required. Names of the projects that are included in this trace scope. *
+         * `projects/[PROJECT_ID]` A trace scope can include a maximum of 20 projects.
+         *
+         * @param string[] $resourceNames
+         */
+        public function setResourceNames($resourceNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getResourceNames()
+        {
+        }
+        /**
+         * Output only. The last update timestamp of the trace scope.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudObservability\TraceScope registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Optional. Describes this trace scope. The maximum length of the description
-     * is 8000 characters.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Identifier. The resource name of the trace scope. For example: projects/my-
-     * project/locations/global/traceScopes/my-trace-scope
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Required. Names of the projects that are included in this trace scope. *
-     * `projects/[PROJECT_ID]` A trace scope can include a maximum of 20 projects.
-     *
-     * @param string[] $resourceNames
-     */
-    public function setResourceNames($resourceNames)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getResourceNames()
-    {
-    }
-    /**
-     * Output only. The last update timestamp of the trace scope.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_CloudObservability_TraceScope extends \Google\Service\CloudObservability\TraceScope
     {
     }
 }

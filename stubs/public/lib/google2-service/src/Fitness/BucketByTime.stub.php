@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Fitness;
-
-class BucketByTime extends \Google\Model
-{
-    /**
-     * Specifies that result buckets aggregate data by exactly durationMillis time
-     * frames. Time frames that contain no data will be included in the response
-     * with an empty dataset.
-     *
-     * @var string
-     */
-    public $durationMillis;
-    protected $periodType = BucketByTimePeriod::class;
-    protected $periodDataType = '';
-    /**
-     * Specifies that result buckets aggregate data by exactly durationMillis time
-     * frames. Time frames that contain no data will be included in the response
-     * with an empty dataset.
-     *
-     * @param string $durationMillis
-     */
-    public function setDurationMillis($durationMillis)
+namespace Google\Service\Fitness {
+    class BucketByTime extends \Google\Model
     {
+        /**
+         * Specifies that result buckets aggregate data by exactly durationMillis time
+         * frames. Time frames that contain no data will be included in the response
+         * with an empty dataset.
+         *
+         * @var string
+         */
+        public $durationMillis;
+        protected $periodType = BucketByTimePeriod::class;
+        protected $periodDataType = '';
+        /**
+         * Specifies that result buckets aggregate data by exactly durationMillis time
+         * frames. Time frames that contain no data will be included in the response
+         * with an empty dataset.
+         *
+         * @param string $durationMillis
+         */
+        public function setDurationMillis($durationMillis)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDurationMillis()
+        {
+        }
+        /**
+         * @param BucketByTimePeriod $period
+         */
+        public function setPeriod(BucketByTimePeriod $period)
+        {
+        }
+        /**
+         * @return BucketByTimePeriod
+         */
+        public function getPeriod()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Fitness\BucketByTime registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDurationMillis()
-    {
-    }
-    /**
-     * @param BucketByTimePeriod $period
-     */
-    public function setPeriod(BucketByTimePeriod $period)
-    {
-    }
-    /**
-     * @return BucketByTimePeriod
-     */
-    public function getPeriod()
+    class Google_Service_Fitness_BucketByTime extends \Google\Service\Fitness\BucketByTime
     {
     }
 }

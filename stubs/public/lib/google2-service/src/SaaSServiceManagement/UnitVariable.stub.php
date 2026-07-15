@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SaaSServiceManagement;
-
-class UnitVariable extends \Google\Model
-{
-    /**
-     * Variable type is unspecified.
-     */
-    public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
-    /**
-     * Variable type is string.
-     */
-    public const TYPE_STRING = 'STRING';
-    /**
-     * Variable type is int.
-     */
-    public const TYPE_INT = 'INT';
-    /**
-     * Variable type is bool.
-     */
-    public const TYPE_BOOL = 'BOOL';
-    /**
-     * Optional. Immutable. Name of a supported variable type. Supported types are
-     * string, int, bool.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Optional. String encoded value for the variable.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Required. Immutable. Name of the variable from actuation configs.
-     *
-     * @var string
-     */
-    public $variable;
-    /**
-     * Optional. Immutable. Name of a supported variable type. Supported types are
-     * string, int, bool.
-     *
-     * Accepted values: TYPE_UNSPECIFIED, STRING, INT, BOOL
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
+namespace Google\Service\SaaSServiceManagement {
+    class UnitVariable extends \Google\Model
     {
+        /**
+         * Variable type is unspecified.
+         */
+        public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
+        /**
+         * Variable type is string.
+         */
+        public const TYPE_STRING = 'STRING';
+        /**
+         * Variable type is int.
+         */
+        public const TYPE_INT = 'INT';
+        /**
+         * Variable type is bool.
+         */
+        public const TYPE_BOOL = 'BOOL';
+        /**
+         * Optional. Immutable. Name of a supported variable type. Supported types are
+         * string, int, bool.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Optional. String encoded value for the variable.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Required. Immutable. Name of the variable from actuation configs.
+         *
+         * @var string
+         */
+        public $variable;
+        /**
+         * Optional. Immutable. Name of a supported variable type. Supported types are
+         * string, int, bool.
+         *
+         * Accepted values: TYPE_UNSPECIFIED, STRING, INT, BOOL
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
+        /**
+         * Optional. String encoded value for the variable.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
+        /**
+         * Required. Immutable. Name of the variable from actuation configs.
+         *
+         * @param string $variable
+         */
+        public function setVariable($variable)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVariable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::TYPE_*
+     * Runtime class alias of \Google\Service\SaaSServiceManagement\UnitVariable registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getType()
-    {
-    }
-    /**
-     * Optional. String encoded value for the variable.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
-    {
-    }
-    /**
-     * Required. Immutable. Name of the variable from actuation configs.
-     *
-     * @param string $variable
-     */
-    public function setVariable($variable)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVariable()
+    class Google_Service_SaaSServiceManagement_UnitVariable extends \Google\Service\SaaSServiceManagement\UnitVariable
     {
     }
 }

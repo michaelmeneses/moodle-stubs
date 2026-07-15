@@ -21,219 +21,228 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataform;
-
-class WorkflowConfig extends \Google\Collection
-{
-    protected $collection_key = 'recentScheduledExecutionRecords';
-    /**
-     * Output only. The timestamp of when the WorkflowConfig was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Optional. Optional schedule (in cron format) for automatic execution of
-     * this workflow config.
-     *
-     * @var string
-     */
-    public $cronSchedule;
-    /**
-     * Optional. Disables automatic creation of workflow invocations.
-     *
-     * @var bool
-     */
-    public $disabled;
-    /**
-     * Output only. All the metadata information that is used internally to serve
-     * the resource. For example: timestamps, flags, status fields, etc. The
-     * format of this field is a JSON string.
-     *
-     * @var string
-     */
-    public $internalMetadata;
-    protected $invocationConfigType = InvocationConfig::class;
-    protected $invocationConfigDataType = '';
-    /**
-     * Identifier. The workflow config's name.
-     *
-     * @var string
-     */
-    public $name;
-    protected $recentScheduledExecutionRecordsType = ScheduledExecutionRecord::class;
-    protected $recentScheduledExecutionRecordsDataType = 'array';
-    /**
-     * Required. The name of the release config whose release_compilation_result
-     * should be executed. Must be in the format
-     * `projects/locations/repositories/releaseConfigs`.
-     *
-     * @var string
-     */
-    public $releaseConfig;
-    /**
-     * Optional. Specifies the time zone to be used when interpreting
-     * cron_schedule. Must be a time zone name from the time zone database
-     * (https://en.wikipedia.org/wiki/List_of_tz_database_time_zones). If left
-     * unspecified, the default is UTC.
-     *
-     * @var string
-     */
-    public $timeZone;
-    /**
-     * Output only. The timestamp of when the WorkflowConfig was last updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. The timestamp of when the WorkflowConfig was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\Dataform {
+    class WorkflowConfig extends \Google\Collection
     {
+        protected $collection_key = 'recentScheduledExecutionRecords';
+        /**
+         * Output only. The timestamp of when the WorkflowConfig was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Optional. Optional schedule (in cron format) for automatic execution of
+         * this workflow config.
+         *
+         * @var string
+         */
+        public $cronSchedule;
+        /**
+         * Optional. Disables automatic creation of workflow invocations.
+         *
+         * @var bool
+         */
+        public $disabled;
+        /**
+         * Output only. All the metadata information that is used internally to serve
+         * the resource. For example: timestamps, flags, status fields, etc. The
+         * format of this field is a JSON string.
+         *
+         * @var string
+         */
+        public $internalMetadata;
+        protected $invocationConfigType = InvocationConfig::class;
+        protected $invocationConfigDataType = '';
+        /**
+         * Identifier. The workflow config's name.
+         *
+         * @var string
+         */
+        public $name;
+        protected $recentScheduledExecutionRecordsType = ScheduledExecutionRecord::class;
+        protected $recentScheduledExecutionRecordsDataType = 'array';
+        /**
+         * Required. The name of the release config whose release_compilation_result
+         * should be executed. Must be in the format
+         * `projects/locations/repositories/releaseConfigs`.
+         *
+         * @var string
+         */
+        public $releaseConfig;
+        /**
+         * Optional. Specifies the time zone to be used when interpreting
+         * cron_schedule. Must be a time zone name from the time zone database
+         * (https://en.wikipedia.org/wiki/List_of_tz_database_time_zones). If left
+         * unspecified, the default is UTC.
+         *
+         * @var string
+         */
+        public $timeZone;
+        /**
+         * Output only. The timestamp of when the WorkflowConfig was last updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. The timestamp of when the WorkflowConfig was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Optional. Optional schedule (in cron format) for automatic execution of
+         * this workflow config.
+         *
+         * @param string $cronSchedule
+         */
+        public function setCronSchedule($cronSchedule)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCronSchedule()
+        {
+        }
+        /**
+         * Optional. Disables automatic creation of workflow invocations.
+         *
+         * @param bool $disabled
+         */
+        public function setDisabled($disabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisabled()
+        {
+        }
+        /**
+         * Output only. All the metadata information that is used internally to serve
+         * the resource. For example: timestamps, flags, status fields, etc. The
+         * format of this field is a JSON string.
+         *
+         * @param string $internalMetadata
+         */
+        public function setInternalMetadata($internalMetadata)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInternalMetadata()
+        {
+        }
+        /**
+         * Optional. If left unset, a default InvocationConfig will be used.
+         *
+         * @param InvocationConfig $invocationConfig
+         */
+        public function setInvocationConfig(InvocationConfig $invocationConfig)
+        {
+        }
+        /**
+         * @return InvocationConfig
+         */
+        public function getInvocationConfig()
+        {
+        }
+        /**
+         * Identifier. The workflow config's name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. Records of the 10 most recent scheduled execution attempts,
+         * ordered in descending order of `execution_time`. Updated whenever automatic
+         * creation of a workflow invocation is triggered by cron_schedule.
+         *
+         * @param ScheduledExecutionRecord[] $recentScheduledExecutionRecords
+         */
+        public function setRecentScheduledExecutionRecords($recentScheduledExecutionRecords)
+        {
+        }
+        /**
+         * @return ScheduledExecutionRecord[]
+         */
+        public function getRecentScheduledExecutionRecords()
+        {
+        }
+        /**
+         * Required. The name of the release config whose release_compilation_result
+         * should be executed. Must be in the format
+         * `projects/locations/repositories/releaseConfigs`.
+         *
+         * @param string $releaseConfig
+         */
+        public function setReleaseConfig($releaseConfig)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReleaseConfig()
+        {
+        }
+        /**
+         * Optional. Specifies the time zone to be used when interpreting
+         * cron_schedule. Must be a time zone name from the time zone database
+         * (https://en.wikipedia.org/wiki/List_of_tz_database_time_zones). If left
+         * unspecified, the default is UTC.
+         *
+         * @param string $timeZone
+         */
+        public function setTimeZone($timeZone)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimeZone()
+        {
+        }
+        /**
+         * Output only. The timestamp of when the WorkflowConfig was last updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataform\WorkflowConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Optional. Optional schedule (in cron format) for automatic execution of
-     * this workflow config.
-     *
-     * @param string $cronSchedule
-     */
-    public function setCronSchedule($cronSchedule)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCronSchedule()
-    {
-    }
-    /**
-     * Optional. Disables automatic creation of workflow invocations.
-     *
-     * @param bool $disabled
-     */
-    public function setDisabled($disabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDisabled()
-    {
-    }
-    /**
-     * Output only. All the metadata information that is used internally to serve
-     * the resource. For example: timestamps, flags, status fields, etc. The
-     * format of this field is a JSON string.
-     *
-     * @param string $internalMetadata
-     */
-    public function setInternalMetadata($internalMetadata)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInternalMetadata()
-    {
-    }
-    /**
-     * Optional. If left unset, a default InvocationConfig will be used.
-     *
-     * @param InvocationConfig $invocationConfig
-     */
-    public function setInvocationConfig(InvocationConfig $invocationConfig)
-    {
-    }
-    /**
-     * @return InvocationConfig
-     */
-    public function getInvocationConfig()
-    {
-    }
-    /**
-     * Identifier. The workflow config's name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. Records of the 10 most recent scheduled execution attempts,
-     * ordered in descending order of `execution_time`. Updated whenever automatic
-     * creation of a workflow invocation is triggered by cron_schedule.
-     *
-     * @param ScheduledExecutionRecord[] $recentScheduledExecutionRecords
-     */
-    public function setRecentScheduledExecutionRecords($recentScheduledExecutionRecords)
-    {
-    }
-    /**
-     * @return ScheduledExecutionRecord[]
-     */
-    public function getRecentScheduledExecutionRecords()
-    {
-    }
-    /**
-     * Required. The name of the release config whose release_compilation_result
-     * should be executed. Must be in the format
-     * `projects/locations/repositories/releaseConfigs`.
-     *
-     * @param string $releaseConfig
-     */
-    public function setReleaseConfig($releaseConfig)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReleaseConfig()
-    {
-    }
-    /**
-     * Optional. Specifies the time zone to be used when interpreting
-     * cron_schedule. Must be a time zone name from the time zone database
-     * (https://en.wikipedia.org/wiki/List_of_tz_database_time_zones). If left
-     * unspecified, the default is UTC.
-     *
-     * @param string $timeZone
-     */
-    public function setTimeZone($timeZone)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimeZone()
-    {
-    }
-    /**
-     * Output only. The timestamp of when the WorkflowConfig was last updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_Dataform_WorkflowConfig extends \Google\Service\Dataform\WorkflowConfig
     {
     }
 }

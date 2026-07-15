@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1Query extends \Google\Model
-{
-    /**
-     * Output only. Unique Id for the query.
-     *
-     * @var string
-     */
-    public $queryId;
-    /**
-     * Plain text.
-     *
-     * @var string
-     */
-    public $text;
-    /**
-     * Output only. Unique Id for the query.
-     *
-     * @param string $queryId
-     */
-    public function setQueryId($queryId)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1Query extends \Google\Model
     {
+        /**
+         * Output only. Unique Id for the query.
+         *
+         * @var string
+         */
+        public $queryId;
+        /**
+         * Plain text.
+         *
+         * @var string
+         */
+        public $text;
+        /**
+         * Output only. Unique Id for the query.
+         *
+         * @param string $queryId
+         */
+        public function setQueryId($queryId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQueryId()
+        {
+        }
+        /**
+         * Plain text.
+         *
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1Query registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getQueryId()
-    {
-    }
-    /**
-     * Plain text.
-     *
-     * @param string $text
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1Query extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1Query
     {
     }
 }

@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteTopicId extends \Google\Model
-{
-    protected $groupIdType = AppsDynamiteGroupId::class;
-    protected $groupIdDataType = '';
-    /**
-     * @var string
-     */
-    public $topicId;
-    /**
-     * @param AppsDynamiteGroupId
-     */
-    public function setGroupId(AppsDynamiteGroupId $groupId)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteTopicId extends \Google\Model
     {
+        protected $groupIdType = AppsDynamiteGroupId::class;
+        protected $groupIdDataType = '';
+        /**
+         * @var string
+         */
+        public $topicId;
+        /**
+         * @param AppsDynamiteGroupId
+         */
+        public function setGroupId(AppsDynamiteGroupId $groupId)
+        {
+        }
+        /**
+         * @return AppsDynamiteGroupId
+         */
+        public function getGroupId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTopicId($topicId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTopicId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppsDynamiteGroupId
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteTopicId registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGroupId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTopicId($topicId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTopicId()
+    class Google_Service_CloudSearch_AppsDynamiteTopicId extends \Google\Service\CloudSearch\AppsDynamiteTopicId
     {
     }
 }

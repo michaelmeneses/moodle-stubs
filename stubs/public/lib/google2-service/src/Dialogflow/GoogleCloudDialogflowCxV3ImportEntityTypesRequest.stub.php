@@ -21,136 +21,145 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3ImportEntityTypesRequest extends \Google\Model
-{
-    /**
-     * Unspecified. If used, system uses REPORT_CONFLICT as default.
-     */
-    public const MERGE_OPTION_MERGE_OPTION_UNSPECIFIED = 'MERGE_OPTION_UNSPECIFIED';
-    /**
-     * Replace the original entity type in the agent with the new entity type when
-     * display name conflicts exist.
-     */
-    public const MERGE_OPTION_REPLACE = 'REPLACE';
-    /**
-     * Merge the original entity type with the new entity type when display name
-     * conflicts exist.
-     */
-    public const MERGE_OPTION_MERGE = 'MERGE';
-    /**
-     * Create new entity types with new display names to differentiate them from
-     * the existing entity types when display name conflicts exist.
-     */
-    public const MERGE_OPTION_RENAME = 'RENAME';
-    /**
-     * Report conflict information if display names conflict is detected.
-     * Otherwise, import entity types.
-     */
-    public const MERGE_OPTION_REPORT_CONFLICT = 'REPORT_CONFLICT';
-    /**
-     * Keep the original entity type and discard the conflicting new entity type
-     * when display name conflicts exist.
-     */
-    public const MERGE_OPTION_KEEP = 'KEEP';
-    protected $entityTypesContentType = GoogleCloudDialogflowCxV3InlineSource::class;
-    protected $entityTypesContentDataType = '';
-    /**
-     * The [Google Cloud Storage](https://cloud.google.com/storage/docs/) URI to
-     * import entity types from. The format of this URI must be `gs:`. Dialogflow
-     * performs a read operation for the Cloud Storage object on the caller's
-     * behalf, so your request authentication must have read permissions for the
-     * object. For more information, see [Dialogflow access
-     * control](https://cloud.google.com/dialogflow/cx/docs/concept/access-
-     * control#storage).
-     *
-     * @var string
-     */
-    public $entityTypesUri;
-    /**
-     * Required. Merge option for importing entity types.
-     *
-     * @var string
-     */
-    public $mergeOption;
-    /**
-     * Optional. The target entity type to import into. Format:
-     * `projects//locations//agents//entity_types/`. If set, there should be only
-     * one entity type included in entity_types, of which the type should match
-     * the type of the target entity type. All entities in the imported entity
-     * type will be added to the target entity type.
-     *
-     * @var string
-     */
-    public $targetEntityType;
-    /**
-     * Uncompressed byte content of entity types.
-     *
-     * @param GoogleCloudDialogflowCxV3InlineSource $entityTypesContent
-     */
-    public function setEntityTypesContent(GoogleCloudDialogflowCxV3InlineSource $entityTypesContent)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3ImportEntityTypesRequest extends \Google\Model
     {
+        /**
+         * Unspecified. If used, system uses REPORT_CONFLICT as default.
+         */
+        public const MERGE_OPTION_MERGE_OPTION_UNSPECIFIED = 'MERGE_OPTION_UNSPECIFIED';
+        /**
+         * Replace the original entity type in the agent with the new entity type when
+         * display name conflicts exist.
+         */
+        public const MERGE_OPTION_REPLACE = 'REPLACE';
+        /**
+         * Merge the original entity type with the new entity type when display name
+         * conflicts exist.
+         */
+        public const MERGE_OPTION_MERGE = 'MERGE';
+        /**
+         * Create new entity types with new display names to differentiate them from
+         * the existing entity types when display name conflicts exist.
+         */
+        public const MERGE_OPTION_RENAME = 'RENAME';
+        /**
+         * Report conflict information if display names conflict is detected.
+         * Otherwise, import entity types.
+         */
+        public const MERGE_OPTION_REPORT_CONFLICT = 'REPORT_CONFLICT';
+        /**
+         * Keep the original entity type and discard the conflicting new entity type
+         * when display name conflicts exist.
+         */
+        public const MERGE_OPTION_KEEP = 'KEEP';
+        protected $entityTypesContentType = GoogleCloudDialogflowCxV3InlineSource::class;
+        protected $entityTypesContentDataType = '';
+        /**
+         * The [Google Cloud Storage](https://cloud.google.com/storage/docs/) URI to
+         * import entity types from. The format of this URI must be `gs:`. Dialogflow
+         * performs a read operation for the Cloud Storage object on the caller's
+         * behalf, so your request authentication must have read permissions for the
+         * object. For more information, see [Dialogflow access
+         * control](https://cloud.google.com/dialogflow/cx/docs/concept/access-
+         * control#storage).
+         *
+         * @var string
+         */
+        public $entityTypesUri;
+        /**
+         * Required. Merge option for importing entity types.
+         *
+         * @var string
+         */
+        public $mergeOption;
+        /**
+         * Optional. The target entity type to import into. Format:
+         * `projects//locations//agents//entity_types/`. If set, there should be only
+         * one entity type included in entity_types, of which the type should match
+         * the type of the target entity type. All entities in the imported entity
+         * type will be added to the target entity type.
+         *
+         * @var string
+         */
+        public $targetEntityType;
+        /**
+         * Uncompressed byte content of entity types.
+         *
+         * @param GoogleCloudDialogflowCxV3InlineSource $entityTypesContent
+         */
+        public function setEntityTypesContent(GoogleCloudDialogflowCxV3InlineSource $entityTypesContent)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3InlineSource
+         */
+        public function getEntityTypesContent()
+        {
+        }
+        /**
+         * The [Google Cloud Storage](https://cloud.google.com/storage/docs/) URI to
+         * import entity types from. The format of this URI must be `gs:`. Dialogflow
+         * performs a read operation for the Cloud Storage object on the caller's
+         * behalf, so your request authentication must have read permissions for the
+         * object. For more information, see [Dialogflow access
+         * control](https://cloud.google.com/dialogflow/cx/docs/concept/access-
+         * control#storage).
+         *
+         * @param string $entityTypesUri
+         */
+        public function setEntityTypesUri($entityTypesUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEntityTypesUri()
+        {
+        }
+        /**
+         * Required. Merge option for importing entity types.
+         *
+         * Accepted values: MERGE_OPTION_UNSPECIFIED, REPLACE, MERGE, RENAME,
+         * REPORT_CONFLICT, KEEP
+         *
+         * @param self::MERGE_OPTION_* $mergeOption
+         */
+        public function setMergeOption($mergeOption)
+        {
+        }
+        /**
+         * @return self::MERGE_OPTION_*
+         */
+        public function getMergeOption()
+        {
+        }
+        /**
+         * Optional. The target entity type to import into. Format:
+         * `projects//locations//agents//entity_types/`. If set, there should be only
+         * one entity type included in entity_types, of which the type should match
+         * the type of the target entity type. All entities in the imported entity
+         * type will be added to the target entity type.
+         *
+         * @param string $targetEntityType
+         */
+        public function setTargetEntityType($targetEntityType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetEntityType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowCxV3InlineSource
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ImportEntityTypesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntityTypesContent()
-    {
-    }
-    /**
-     * The [Google Cloud Storage](https://cloud.google.com/storage/docs/) URI to
-     * import entity types from. The format of this URI must be `gs:`. Dialogflow
-     * performs a read operation for the Cloud Storage object on the caller's
-     * behalf, so your request authentication must have read permissions for the
-     * object. For more information, see [Dialogflow access
-     * control](https://cloud.google.com/dialogflow/cx/docs/concept/access-
-     * control#storage).
-     *
-     * @param string $entityTypesUri
-     */
-    public function setEntityTypesUri($entityTypesUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEntityTypesUri()
-    {
-    }
-    /**
-     * Required. Merge option for importing entity types.
-     *
-     * Accepted values: MERGE_OPTION_UNSPECIFIED, REPLACE, MERGE, RENAME,
-     * REPORT_CONFLICT, KEEP
-     *
-     * @param self::MERGE_OPTION_* $mergeOption
-     */
-    public function setMergeOption($mergeOption)
-    {
-    }
-    /**
-     * @return self::MERGE_OPTION_*
-     */
-    public function getMergeOption()
-    {
-    }
-    /**
-     * Optional. The target entity type to import into. Format:
-     * `projects//locations//agents//entity_types/`. If set, there should be only
-     * one entity type included in entity_types, of which the type should match
-     * the type of the target entity type. All entities in the imported entity
-     * type will be added to the target entity type.
-     *
-     * @param string $targetEntityType
-     */
-    public function setTargetEntityType($targetEntityType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetEntityType()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3ImportEntityTypesRequest extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ImportEntityTypesRequest
     {
     }
 }

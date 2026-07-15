@@ -21,95 +21,104 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteMembershipChangedMetadata extends \Google\Collection
-{
-    protected $collection_key = 'affectedMemberships';
-    protected $affectedMemberProfilesType = AppsDynamiteFrontendMember::class;
-    protected $affectedMemberProfilesDataType = 'array';
-    protected $affectedMembersType = AppsDynamiteMemberId::class;
-    protected $affectedMembersDataType = 'array';
-    protected $affectedMembershipsType = AppsDynamiteMembershipChangedMetadataAffectedMembership::class;
-    protected $affectedMembershipsDataType = 'array';
-    protected $initiatorType = AppsDynamiteUserId::class;
-    protected $initiatorDataType = '';
-    protected $initiatorProfileType = AppsDynamiteFrontendUser::class;
-    protected $initiatorProfileDataType = '';
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @param AppsDynamiteFrontendMember[]
-     */
-    public function setAffectedMemberProfiles($affectedMemberProfiles)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteMembershipChangedMetadata extends \Google\Collection
     {
+        protected $collection_key = 'affectedMemberships';
+        protected $affectedMemberProfilesType = AppsDynamiteFrontendMember::class;
+        protected $affectedMemberProfilesDataType = 'array';
+        protected $affectedMembersType = AppsDynamiteMemberId::class;
+        protected $affectedMembersDataType = 'array';
+        protected $affectedMembershipsType = AppsDynamiteMembershipChangedMetadataAffectedMembership::class;
+        protected $affectedMembershipsDataType = 'array';
+        protected $initiatorType = AppsDynamiteUserId::class;
+        protected $initiatorDataType = '';
+        protected $initiatorProfileType = AppsDynamiteFrontendUser::class;
+        protected $initiatorProfileDataType = '';
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @param AppsDynamiteFrontendMember[]
+         */
+        public function setAffectedMemberProfiles($affectedMemberProfiles)
+        {
+        }
+        /**
+         * @return AppsDynamiteFrontendMember[]
+         */
+        public function getAffectedMemberProfiles()
+        {
+        }
+        /**
+         * @param AppsDynamiteMemberId[]
+         */
+        public function setAffectedMembers($affectedMembers)
+        {
+        }
+        /**
+         * @return AppsDynamiteMemberId[]
+         */
+        public function getAffectedMembers()
+        {
+        }
+        /**
+         * @param AppsDynamiteMembershipChangedMetadataAffectedMembership[]
+         */
+        public function setAffectedMemberships($affectedMemberships)
+        {
+        }
+        /**
+         * @return AppsDynamiteMembershipChangedMetadataAffectedMembership[]
+         */
+        public function getAffectedMemberships()
+        {
+        }
+        /**
+         * @param AppsDynamiteUserId
+         */
+        public function setInitiator(AppsDynamiteUserId $initiator)
+        {
+        }
+        /**
+         * @return AppsDynamiteUserId
+         */
+        public function getInitiator()
+        {
+        }
+        /**
+         * @param AppsDynamiteFrontendUser
+         */
+        public function setInitiatorProfile(AppsDynamiteFrontendUser $initiatorProfile)
+        {
+        }
+        /**
+         * @return AppsDynamiteFrontendUser
+         */
+        public function getInitiatorProfile()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppsDynamiteFrontendMember[]
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteMembershipChangedMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAffectedMemberProfiles()
-    {
-    }
-    /**
-     * @param AppsDynamiteMemberId[]
-     */
-    public function setAffectedMembers($affectedMembers)
-    {
-    }
-    /**
-     * @return AppsDynamiteMemberId[]
-     */
-    public function getAffectedMembers()
-    {
-    }
-    /**
-     * @param AppsDynamiteMembershipChangedMetadataAffectedMembership[]
-     */
-    public function setAffectedMemberships($affectedMemberships)
-    {
-    }
-    /**
-     * @return AppsDynamiteMembershipChangedMetadataAffectedMembership[]
-     */
-    public function getAffectedMemberships()
-    {
-    }
-    /**
-     * @param AppsDynamiteUserId
-     */
-    public function setInitiator(AppsDynamiteUserId $initiator)
-    {
-    }
-    /**
-     * @return AppsDynamiteUserId
-     */
-    public function getInitiator()
-    {
-    }
-    /**
-     * @param AppsDynamiteFrontendUser
-     */
-    public function setInitiatorProfile(AppsDynamiteFrontendUser $initiatorProfile)
-    {
-    }
-    /**
-     * @return AppsDynamiteFrontendUser
-     */
-    public function getInitiatorProfile()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_CloudSearch_AppsDynamiteMembershipChangedMetadata extends \Google\Service\CloudSearch\AppsDynamiteMembershipChangedMetadata
     {
     }
 }

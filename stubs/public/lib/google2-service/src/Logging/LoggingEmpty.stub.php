@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Logging;
-
-class LoggingEmpty extends \Google\Model
-{
+namespace Google\Service\Logging {
+    class LoggingEmpty extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Logging\LoggingEmpty registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Logging_LoggingEmpty extends \Google\Service\Logging\LoggingEmpty
+    {
+    }
 }

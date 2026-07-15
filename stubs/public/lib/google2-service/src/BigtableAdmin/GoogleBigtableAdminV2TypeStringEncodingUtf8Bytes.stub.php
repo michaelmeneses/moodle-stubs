@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class GoogleBigtableAdminV2TypeStringEncodingUtf8Bytes extends \Google\Model
-{
-    /**
-     * Single-character escape sequence used to support NULL values. If set,
-     * allows NULL values to be encoded as the empty string "". The actual empty
-     * string, or any value where every character equals `null_escape_char`, has
-     * one more `null_escape_char` appended. If `null_escape_char` is set and does
-     * not equal the ASCII null character `0x00`, then the encoding will not
-     * support sorted mode. .
-     *
-     * @var string
-     */
-    public $nullEscapeChar;
-    /**
-     * Single-character escape sequence used to support NULL values. If set,
-     * allows NULL values to be encoded as the empty string "". The actual empty
-     * string, or any value where every character equals `null_escape_char`, has
-     * one more `null_escape_char` appended. If `null_escape_char` is set and does
-     * not equal the ASCII null character `0x00`, then the encoding will not
-     * support sorted mode. .
-     *
-     * @param string $nullEscapeChar
-     */
-    public function setNullEscapeChar($nullEscapeChar)
+namespace Google\Service\BigtableAdmin {
+    class GoogleBigtableAdminV2TypeStringEncodingUtf8Bytes extends \Google\Model
     {
+        /**
+         * Single-character escape sequence used to support NULL values. If set,
+         * allows NULL values to be encoded as the empty string "". The actual empty
+         * string, or any value where every character equals `null_escape_char`, has
+         * one more `null_escape_char` appended. If `null_escape_char` is set and does
+         * not equal the ASCII null character `0x00`, then the encoding will not
+         * support sorted mode. .
+         *
+         * @var string
+         */
+        public $nullEscapeChar;
+        /**
+         * Single-character escape sequence used to support NULL values. If set,
+         * allows NULL values to be encoded as the empty string "". The actual empty
+         * string, or any value where every character equals `null_escape_char`, has
+         * one more `null_escape_char` appended. If `null_escape_char` is set and does
+         * not equal the ASCII null character `0x00`, then the encoding will not
+         * support sorted mode. .
+         *
+         * @param string $nullEscapeChar
+         */
+        public function setNullEscapeChar($nullEscapeChar)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNullEscapeChar()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BigtableAdmin\GoogleBigtableAdminV2TypeStringEncodingUtf8Bytes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNullEscapeChar()
+    class Google_Service_BigtableAdmin_GoogleBigtableAdminV2TypeStringEncodingUtf8Bytes extends \Google\Service\BigtableAdmin\GoogleBigtableAdminV2TypeStringEncodingUtf8Bytes
     {
     }
 }

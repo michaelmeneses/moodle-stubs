@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigQueryConnectionService;
-
-class SparkProperties extends \Google\Model
-{
-    protected $metastoreServiceConfigType = MetastoreServiceConfig::class;
-    protected $metastoreServiceConfigDataType = '';
-    /**
-     * Output only. The account ID of the service created for the purpose of this
-     * connection. The service account does not have any permissions associated
-     * with it when it is created. After creation, customers delegate permissions
-     * to the service account. When the connection is used in the context of a
-     * stored procedure for Apache Spark in BigQuery, the service account is used
-     * to connect to the desired resources in Google Cloud. The account ID is in
-     * the form of: bqcx--@gcp-sa-bigquery-consp.iam.gserviceaccount.com
-     *
-     * @var string
-     */
-    public $serviceAccountId;
-    protected $sparkHistoryServerConfigType = SparkHistoryServerConfig::class;
-    protected $sparkHistoryServerConfigDataType = '';
-    /**
-     * Optional. Dataproc Metastore Service configuration for the connection.
-     *
-     * @param MetastoreServiceConfig $metastoreServiceConfig
-     */
-    public function setMetastoreServiceConfig(MetastoreServiceConfig $metastoreServiceConfig)
+namespace Google\Service\BigQueryConnectionService {
+    class SparkProperties extends \Google\Model
     {
+        protected $metastoreServiceConfigType = MetastoreServiceConfig::class;
+        protected $metastoreServiceConfigDataType = '';
+        /**
+         * Output only. The account ID of the service created for the purpose of this
+         * connection. The service account does not have any permissions associated
+         * with it when it is created. After creation, customers delegate permissions
+         * to the service account. When the connection is used in the context of a
+         * stored procedure for Apache Spark in BigQuery, the service account is used
+         * to connect to the desired resources in Google Cloud. The account ID is in
+         * the form of: bqcx--@gcp-sa-bigquery-consp.iam.gserviceaccount.com
+         *
+         * @var string
+         */
+        public $serviceAccountId;
+        protected $sparkHistoryServerConfigType = SparkHistoryServerConfig::class;
+        protected $sparkHistoryServerConfigDataType = '';
+        /**
+         * Optional. Dataproc Metastore Service configuration for the connection.
+         *
+         * @param MetastoreServiceConfig $metastoreServiceConfig
+         */
+        public function setMetastoreServiceConfig(MetastoreServiceConfig $metastoreServiceConfig)
+        {
+        }
+        /**
+         * @return MetastoreServiceConfig
+         */
+        public function getMetastoreServiceConfig()
+        {
+        }
+        /**
+         * Output only. The account ID of the service created for the purpose of this
+         * connection. The service account does not have any permissions associated
+         * with it when it is created. After creation, customers delegate permissions
+         * to the service account. When the connection is used in the context of a
+         * stored procedure for Apache Spark in BigQuery, the service account is used
+         * to connect to the desired resources in Google Cloud. The account ID is in
+         * the form of: bqcx--@gcp-sa-bigquery-consp.iam.gserviceaccount.com
+         *
+         * @param string $serviceAccountId
+         */
+        public function setServiceAccountId($serviceAccountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceAccountId()
+        {
+        }
+        /**
+         * Optional. Spark History Server configuration for the connection.
+         *
+         * @param SparkHistoryServerConfig $sparkHistoryServerConfig
+         */
+        public function setSparkHistoryServerConfig(SparkHistoryServerConfig $sparkHistoryServerConfig)
+        {
+        }
+        /**
+         * @return SparkHistoryServerConfig
+         */
+        public function getSparkHistoryServerConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MetastoreServiceConfig
+     * Runtime class alias of \Google\Service\BigQueryConnectionService\SparkProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetastoreServiceConfig()
-    {
-    }
-    /**
-     * Output only. The account ID of the service created for the purpose of this
-     * connection. The service account does not have any permissions associated
-     * with it when it is created. After creation, customers delegate permissions
-     * to the service account. When the connection is used in the context of a
-     * stored procedure for Apache Spark in BigQuery, the service account is used
-     * to connect to the desired resources in Google Cloud. The account ID is in
-     * the form of: bqcx--@gcp-sa-bigquery-consp.iam.gserviceaccount.com
-     *
-     * @param string $serviceAccountId
-     */
-    public function setServiceAccountId($serviceAccountId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceAccountId()
-    {
-    }
-    /**
-     * Optional. Spark History Server configuration for the connection.
-     *
-     * @param SparkHistoryServerConfig $sparkHistoryServerConfig
-     */
-    public function setSparkHistoryServerConfig(SparkHistoryServerConfig $sparkHistoryServerConfig)
-    {
-    }
-    /**
-     * @return SparkHistoryServerConfig
-     */
-    public function getSparkHistoryServerConfig()
+    class Google_Service_BigQueryConnectionService_SparkProperties extends \Google\Service\BigQueryConnectionService\SparkProperties
     {
     }
 }

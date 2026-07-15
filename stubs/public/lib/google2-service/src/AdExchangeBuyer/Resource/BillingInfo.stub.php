@@ -21,37 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer\Resource;
-
-/**
- * The "billingInfo" collection of methods.
- * Typical usage is:
- *  <code>
- *   $adexchangebuyerService = new Google\Service\AdExchangeBuyer(...);
- *   $billingInfo = $adexchangebuyerService->billingInfo;
- *  </code>
- */
-class BillingInfo extends \Google\Service\Resource
-{
+namespace Google\Service\AdExchangeBuyer\Resource {
+    use Google\Service\AdExchangeBuyer\BillingInfo as BillingInfoModel;
+    use Google\Service\AdExchangeBuyer\BillingInfoList;
     /**
-     * Returns the billing information for one account specified by account ID.
-     * (billingInfo.get)
-     *
-     * @param int $accountId The account id.
-     * @param array $optParams Optional parameters.
-     * @return BillingInfoModel
+     * The "billingInfo" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $adexchangebuyerService = new Google\Service\AdExchangeBuyer(...);
+     *   $billingInfo = $adexchangebuyerService->billingInfo;
+     *  </code>
      */
-    public function get($accountId, $optParams = [])
+    class BillingInfo extends \Google\Service\Resource
     {
+        /**
+         * Returns the billing information for one account specified by account ID.
+         * (billingInfo.get)
+         *
+         * @param int $accountId The account id.
+         * @param array $optParams Optional parameters.
+         * @return BillingInfoModel
+         */
+        public function get($accountId, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves a list of billing information for all accounts of the authenticated
+         * user. (billingInfo.listBillingInfo)
+         *
+         * @param array $optParams Optional parameters.
+         * @return BillingInfoList
+         */
+        public function listBillingInfo($optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Retrieves a list of billing information for all accounts of the authenticated
-     * user. (billingInfo.listBillingInfo)
-     *
-     * @param array $optParams Optional parameters.
-     * @return BillingInfoList
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\Resource\BillingInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listBillingInfo($optParams = [])
+    class Google_Service_AdExchangeBuyer_Resource_BillingInfo extends \Google\Service\AdExchangeBuyer\Resource\BillingInfo
     {
     }
 }

@@ -21,120 +21,129 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRedis;
-
-class Location extends \Google\Model
-{
-    /**
-     * The friendly name for this location, typically a nearby city name. For
-     * example, "Tokyo".
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Cross-service attributes for the location. For example
-     * {"cloud.googleapis.com/region": "us-east1"}
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Resource ID for the region. For example: "us-east1".
-     *
-     * @var string
-     */
-    public $locationId;
-    /**
-     * Output only. The set of available zones in the location. The map is keyed
-     * by the lowercase ID of each zone, as defined by Compute Engine. These keys
-     * can be specified in `location_id` or `alternative_location_id` fields when
-     * creating a Redis instance.
-     *
-     * @var array[]
-     */
-    public $metadata;
-    /**
-     * Full resource name for the region. For example: "projects/example-
-     * project/locations/us-east1".
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The friendly name for this location, typically a nearby city name. For
-     * example, "Tokyo".
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\CloudRedis {
+    class Location extends \Google\Model
     {
+        /**
+         * The friendly name for this location, typically a nearby city name. For
+         * example, "Tokyo".
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Cross-service attributes for the location. For example
+         * {"cloud.googleapis.com/region": "us-east1"}
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Resource ID for the region. For example: "us-east1".
+         *
+         * @var string
+         */
+        public $locationId;
+        /**
+         * Output only. The set of available zones in the location. The map is keyed
+         * by the lowercase ID of each zone, as defined by Compute Engine. These keys
+         * can be specified in `location_id` or `alternative_location_id` fields when
+         * creating a Redis instance.
+         *
+         * @var array[]
+         */
+        public $metadata;
+        /**
+         * Full resource name for the region. For example: "projects/example-
+         * project/locations/us-east1".
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The friendly name for this location, typically a nearby city name. For
+         * example, "Tokyo".
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Cross-service attributes for the location. For example
+         * {"cloud.googleapis.com/region": "us-east1"}
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Resource ID for the region. For example: "us-east1".
+         *
+         * @param string $locationId
+         */
+        public function setLocationId($locationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocationId()
+        {
+        }
+        /**
+         * Output only. The set of available zones in the location. The map is keyed
+         * by the lowercase ID of each zone, as defined by Compute Engine. These keys
+         * can be specified in `location_id` or `alternative_location_id` fields when
+         * creating a Redis instance.
+         *
+         * @param array[] $metadata
+         */
+        public function setMetadata($metadata)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * Full resource name for the region. For example: "projects/example-
+         * project/locations/us-east1".
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRedis\Location registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Cross-service attributes for the location. For example
-     * {"cloud.googleapis.com/region": "us-east1"}
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Resource ID for the region. For example: "us-east1".
-     *
-     * @param string $locationId
-     */
-    public function setLocationId($locationId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocationId()
-    {
-    }
-    /**
-     * Output only. The set of available zones in the location. The map is keyed
-     * by the lowercase ID of each zone, as defined by Compute Engine. These keys
-     * can be specified in `location_id` or `alternative_location_id` fields when
-     * creating a Redis instance.
-     *
-     * @param array[] $metadata
-     */
-    public function setMetadata($metadata)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * Full resource name for the region. For example: "projects/example-
-     * project/locations/us-east1".
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_CloudRedis_Location extends \Google\Service\CloudRedis\Location
     {
     }
 }

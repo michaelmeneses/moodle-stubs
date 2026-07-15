@@ -8,6 +8,10 @@
  */
 namespace Kevinrob\GuzzleCache;
 
+use GuzzleHttp\Psr7\PumpStream;
+use Psr\Http\Message\MessageInterface;
+use Psr\Http\Message\RequestInterface;
+use Psr\Http\Message\ResponseInterface;
 class CacheEntry implements \Serializable
 {
     /**

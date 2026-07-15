@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeUXReport;
-
-class Metric extends \Google\Collection
-{
-    protected $collection_key = 'histogram';
-    /**
-     * For enum metrics, provides fractions which add up to approximately 1.0.
-     *
-     * @var []
-     */
-    public $fractions;
-    protected $histogramType = Bin::class;
-    protected $histogramDataType = 'array';
-    protected $percentilesType = Percentiles::class;
-    protected $percentilesDataType = '';
-    public function setFractions($fractions)
+namespace Google\Service\ChromeUXReport {
+    class Metric extends \Google\Collection
     {
+        protected $collection_key = 'histogram';
+        /**
+         * For enum metrics, provides fractions which add up to approximately 1.0.
+         *
+         * @var []
+         */
+        public $fractions;
+        protected $histogramType = Bin::class;
+        protected $histogramDataType = 'array';
+        protected $percentilesType = Percentiles::class;
+        protected $percentilesDataType = '';
+        public function setFractions($fractions)
+        {
+        }
+        public function getFractions()
+        {
+        }
+        /**
+         * The histogram of user experiences for a metric. The histogram will have at
+         * least one bin and the densities of all bins will add up to ~1.
+         *
+         * @param Bin[] $histogram
+         */
+        public function setHistogram($histogram)
+        {
+        }
+        /**
+         * @return Bin[]
+         */
+        public function getHistogram()
+        {
+        }
+        /**
+         * Commonly useful percentiles of the Metric. The value type for the
+         * percentiles will be the same as the value types given for the Histogram
+         * bins.
+         *
+         * @param Percentiles $percentiles
+         */
+        public function setPercentiles(Percentiles $percentiles)
+        {
+        }
+        /**
+         * @return Percentiles
+         */
+        public function getPercentiles()
+        {
+        }
     }
-    public function getFractions()
-    {
-    }
+}
+namespace {
     /**
-     * The histogram of user experiences for a metric. The histogram will have at
-     * least one bin and the densities of all bins will add up to ~1.
-     *
-     * @param Bin[] $histogram
+     * Runtime class alias of \Google\Service\ChromeUXReport\Metric registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setHistogram($histogram)
-    {
-    }
-    /**
-     * @return Bin[]
-     */
-    public function getHistogram()
-    {
-    }
-    /**
-     * Commonly useful percentiles of the Metric. The value type for the
-     * percentiles will be the same as the value types given for the Histogram
-     * bins.
-     *
-     * @param Percentiles $percentiles
-     */
-    public function setPercentiles(Percentiles $percentiles)
-    {
-    }
-    /**
-     * @return Percentiles
-     */
-    public function getPercentiles()
+    class Google_Service_ChromeUXReport_Metric extends \Google\Service\ChromeUXReport\Metric
     {
     }
 }

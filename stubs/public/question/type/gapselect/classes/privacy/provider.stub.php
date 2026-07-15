@@ -29,6 +29,9 @@
  */
 namespace qtype_gapselect\privacy;
 
+use core_privacy\local\metadata\collection;
+use core_privacy\local\request\transform;
+use core_privacy\local\request\writer;
 /**
  * Privacy Subsystem for qtype_gapselect implementing user_preference_provider.
  *

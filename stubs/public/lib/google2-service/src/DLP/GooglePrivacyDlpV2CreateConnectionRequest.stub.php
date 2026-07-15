@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2CreateConnectionRequest extends \Google\Model
-{
-    protected $connectionType = GooglePrivacyDlpV2Connection::class;
-    protected $connectionDataType = '';
-    /**
-     * Required. The connection resource.
-     *
-     * @param GooglePrivacyDlpV2Connection $connection
-     */
-    public function setConnection(GooglePrivacyDlpV2Connection $connection)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2CreateConnectionRequest extends \Google\Model
     {
+        protected $connectionType = GooglePrivacyDlpV2Connection::class;
+        protected $connectionDataType = '';
+        /**
+         * Required. The connection resource.
+         *
+         * @param GooglePrivacyDlpV2Connection $connection
+         */
+        public function setConnection(GooglePrivacyDlpV2Connection $connection)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2Connection
+         */
+        public function getConnection()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2Connection
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2CreateConnectionRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConnection()
+    class Google_Service_DLP_GooglePrivacyDlpV2CreateConnectionRequest extends \Google\Service\DLP\GooglePrivacyDlpV2CreateConnectionRequest
     {
     }
 }

@@ -21,217 +21,226 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2CustomInfoType extends \Google\Collection
-{
-    /**
-     * A finding of this custom info type will not be excluded from results.
-     */
-    public const EXCLUSION_TYPE_EXCLUSION_TYPE_UNSPECIFIED = 'EXCLUSION_TYPE_UNSPECIFIED';
-    /**
-     * A finding of this custom info type will be excluded from final results, but
-     * can still affect rule execution.
-     */
-    public const EXCLUSION_TYPE_EXCLUSION_TYPE_EXCLUDE = 'EXCLUSION_TYPE_EXCLUDE';
-    /**
-     * Default value; same as POSSIBLE.
-     */
-    public const LIKELIHOOD_LIKELIHOOD_UNSPECIFIED = 'LIKELIHOOD_UNSPECIFIED';
-    /**
-     * Highest chance of a false positive.
-     */
-    public const LIKELIHOOD_VERY_UNLIKELY = 'VERY_UNLIKELY';
-    /**
-     * High chance of a false positive.
-     */
-    public const LIKELIHOOD_UNLIKELY = 'UNLIKELY';
-    /**
-     * Some matching signals. The default value.
-     */
-    public const LIKELIHOOD_POSSIBLE = 'POSSIBLE';
-    /**
-     * Low chance of a false positive.
-     */
-    public const LIKELIHOOD_LIKELY = 'LIKELY';
-    /**
-     * Confidence level is high. Lowest chance of a false positive.
-     */
-    public const LIKELIHOOD_VERY_LIKELY = 'VERY_LIKELY';
-    protected $collection_key = 'detectionRules';
-    protected $detectionRulesType = GooglePrivacyDlpV2DetectionRule::class;
-    protected $detectionRulesDataType = 'array';
-    protected $dictionaryType = GooglePrivacyDlpV2Dictionary::class;
-    protected $dictionaryDataType = '';
-    /**
-     * If set to EXCLUSION_TYPE_EXCLUDE this infoType will not cause a finding to
-     * be returned. It still can be used for rules matching.
-     *
-     * @var string
-     */
-    public $exclusionType;
-    protected $infoTypeType = GooglePrivacyDlpV2InfoType::class;
-    protected $infoTypeDataType = '';
-    /**
-     * Likelihood to return for this CustomInfoType. This base value can be
-     * altered by a detection rule if the finding meets the criteria specified by
-     * the rule. Defaults to `VERY_LIKELY` if not specified.
-     *
-     * @var string
-     */
-    public $likelihood;
-    protected $regexType = GooglePrivacyDlpV2Regex::class;
-    protected $regexDataType = '';
-    protected $sensitivityScoreType = GooglePrivacyDlpV2SensitivityScore::class;
-    protected $sensitivityScoreDataType = '';
-    protected $storedTypeType = GooglePrivacyDlpV2StoredType::class;
-    protected $storedTypeDataType = '';
-    protected $surrogateTypeType = GooglePrivacyDlpV2SurrogateType::class;
-    protected $surrogateTypeDataType = '';
-    /**
-     * Set of detection rules to apply to all findings of this CustomInfoType.
-     * Rules are applied in order that they are specified. Not supported for the
-     * `surrogate_type` CustomInfoType.
-     *
-     * @param GooglePrivacyDlpV2DetectionRule[] $detectionRules
-     */
-    public function setDetectionRules($detectionRules)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2CustomInfoType extends \Google\Collection
     {
+        /**
+         * A finding of this custom info type will not be excluded from results.
+         */
+        public const EXCLUSION_TYPE_EXCLUSION_TYPE_UNSPECIFIED = 'EXCLUSION_TYPE_UNSPECIFIED';
+        /**
+         * A finding of this custom info type will be excluded from final results, but
+         * can still affect rule execution.
+         */
+        public const EXCLUSION_TYPE_EXCLUSION_TYPE_EXCLUDE = 'EXCLUSION_TYPE_EXCLUDE';
+        /**
+         * Default value; same as POSSIBLE.
+         */
+        public const LIKELIHOOD_LIKELIHOOD_UNSPECIFIED = 'LIKELIHOOD_UNSPECIFIED';
+        /**
+         * Highest chance of a false positive.
+         */
+        public const LIKELIHOOD_VERY_UNLIKELY = 'VERY_UNLIKELY';
+        /**
+         * High chance of a false positive.
+         */
+        public const LIKELIHOOD_UNLIKELY = 'UNLIKELY';
+        /**
+         * Some matching signals. The default value.
+         */
+        public const LIKELIHOOD_POSSIBLE = 'POSSIBLE';
+        /**
+         * Low chance of a false positive.
+         */
+        public const LIKELIHOOD_LIKELY = 'LIKELY';
+        /**
+         * Confidence level is high. Lowest chance of a false positive.
+         */
+        public const LIKELIHOOD_VERY_LIKELY = 'VERY_LIKELY';
+        protected $collection_key = 'detectionRules';
+        protected $detectionRulesType = GooglePrivacyDlpV2DetectionRule::class;
+        protected $detectionRulesDataType = 'array';
+        protected $dictionaryType = GooglePrivacyDlpV2Dictionary::class;
+        protected $dictionaryDataType = '';
+        /**
+         * If set to EXCLUSION_TYPE_EXCLUDE this infoType will not cause a finding to
+         * be returned. It still can be used for rules matching.
+         *
+         * @var string
+         */
+        public $exclusionType;
+        protected $infoTypeType = GooglePrivacyDlpV2InfoType::class;
+        protected $infoTypeDataType = '';
+        /**
+         * Likelihood to return for this CustomInfoType. This base value can be
+         * altered by a detection rule if the finding meets the criteria specified by
+         * the rule. Defaults to `VERY_LIKELY` if not specified.
+         *
+         * @var string
+         */
+        public $likelihood;
+        protected $regexType = GooglePrivacyDlpV2Regex::class;
+        protected $regexDataType = '';
+        protected $sensitivityScoreType = GooglePrivacyDlpV2SensitivityScore::class;
+        protected $sensitivityScoreDataType = '';
+        protected $storedTypeType = GooglePrivacyDlpV2StoredType::class;
+        protected $storedTypeDataType = '';
+        protected $surrogateTypeType = GooglePrivacyDlpV2SurrogateType::class;
+        protected $surrogateTypeDataType = '';
+        /**
+         * Set of detection rules to apply to all findings of this CustomInfoType.
+         * Rules are applied in order that they are specified. Not supported for the
+         * `surrogate_type` CustomInfoType.
+         *
+         * @param GooglePrivacyDlpV2DetectionRule[] $detectionRules
+         */
+        public function setDetectionRules($detectionRules)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2DetectionRule[]
+         */
+        public function getDetectionRules()
+        {
+        }
+        /**
+         * A list of phrases to detect as a CustomInfoType.
+         *
+         * @param GooglePrivacyDlpV2Dictionary $dictionary
+         */
+        public function setDictionary(GooglePrivacyDlpV2Dictionary $dictionary)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2Dictionary
+         */
+        public function getDictionary()
+        {
+        }
+        /**
+         * If set to EXCLUSION_TYPE_EXCLUDE this infoType will not cause a finding to
+         * be returned. It still can be used for rules matching.
+         *
+         * Accepted values: EXCLUSION_TYPE_UNSPECIFIED, EXCLUSION_TYPE_EXCLUDE
+         *
+         * @param self::EXCLUSION_TYPE_* $exclusionType
+         */
+        public function setExclusionType($exclusionType)
+        {
+        }
+        /**
+         * @return self::EXCLUSION_TYPE_*
+         */
+        public function getExclusionType()
+        {
+        }
+        /**
+         * CustomInfoType can either be a new infoType, or an extension of built-in
+         * infoType, when the name matches one of existing infoTypes and that infoType
+         * is specified in `InspectContent.info_types` field. Specifying the latter
+         * adds findings to the one detected by the system. If built-in info type is
+         * not specified in `InspectContent.info_types` list then the name is treated
+         * as a custom info type.
+         *
+         * @param GooglePrivacyDlpV2InfoType $infoType
+         */
+        public function setInfoType(GooglePrivacyDlpV2InfoType $infoType)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2InfoType
+         */
+        public function getInfoType()
+        {
+        }
+        /**
+         * Likelihood to return for this CustomInfoType. This base value can be
+         * altered by a detection rule if the finding meets the criteria specified by
+         * the rule. Defaults to `VERY_LIKELY` if not specified.
+         *
+         * Accepted values: LIKELIHOOD_UNSPECIFIED, VERY_UNLIKELY, UNLIKELY, POSSIBLE,
+         * LIKELY, VERY_LIKELY
+         *
+         * @param self::LIKELIHOOD_* $likelihood
+         */
+        public function setLikelihood($likelihood)
+        {
+        }
+        /**
+         * @return self::LIKELIHOOD_*
+         */
+        public function getLikelihood()
+        {
+        }
+        /**
+         * Regular expression based CustomInfoType.
+         *
+         * @param GooglePrivacyDlpV2Regex $regex
+         */
+        public function setRegex(GooglePrivacyDlpV2Regex $regex)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2Regex
+         */
+        public function getRegex()
+        {
+        }
+        /**
+         * Sensitivity for this CustomInfoType. If this CustomInfoType extends an
+         * existing InfoType, the sensitivity here will take precedence over that of
+         * the original InfoType. If unset for a CustomInfoType, it will default to
+         * HIGH. This only applies to data profiling.
+         *
+         * @param GooglePrivacyDlpV2SensitivityScore $sensitivityScore
+         */
+        public function setSensitivityScore(GooglePrivacyDlpV2SensitivityScore $sensitivityScore)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2SensitivityScore
+         */
+        public function getSensitivityScore()
+        {
+        }
+        /**
+         * Load an existing `StoredInfoType` resource for use in `InspectDataSource`.
+         * Not currently supported in `InspectContent`.
+         *
+         * @param GooglePrivacyDlpV2StoredType $storedType
+         */
+        public function setStoredType(GooglePrivacyDlpV2StoredType $storedType)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2StoredType
+         */
+        public function getStoredType()
+        {
+        }
+        /**
+         * Message for detecting output from deidentification transformations that
+         * support reversing.
+         *
+         * @param GooglePrivacyDlpV2SurrogateType $surrogateType
+         */
+        public function setSurrogateType(GooglePrivacyDlpV2SurrogateType $surrogateType)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2SurrogateType
+         */
+        public function getSurrogateType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2DetectionRule[]
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2CustomInfoType registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDetectionRules()
-    {
-    }
-    /**
-     * A list of phrases to detect as a CustomInfoType.
-     *
-     * @param GooglePrivacyDlpV2Dictionary $dictionary
-     */
-    public function setDictionary(GooglePrivacyDlpV2Dictionary $dictionary)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2Dictionary
-     */
-    public function getDictionary()
-    {
-    }
-    /**
-     * If set to EXCLUSION_TYPE_EXCLUDE this infoType will not cause a finding to
-     * be returned. It still can be used for rules matching.
-     *
-     * Accepted values: EXCLUSION_TYPE_UNSPECIFIED, EXCLUSION_TYPE_EXCLUDE
-     *
-     * @param self::EXCLUSION_TYPE_* $exclusionType
-     */
-    public function setExclusionType($exclusionType)
-    {
-    }
-    /**
-     * @return self::EXCLUSION_TYPE_*
-     */
-    public function getExclusionType()
-    {
-    }
-    /**
-     * CustomInfoType can either be a new infoType, or an extension of built-in
-     * infoType, when the name matches one of existing infoTypes and that infoType
-     * is specified in `InspectContent.info_types` field. Specifying the latter
-     * adds findings to the one detected by the system. If built-in info type is
-     * not specified in `InspectContent.info_types` list then the name is treated
-     * as a custom info type.
-     *
-     * @param GooglePrivacyDlpV2InfoType $infoType
-     */
-    public function setInfoType(GooglePrivacyDlpV2InfoType $infoType)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2InfoType
-     */
-    public function getInfoType()
-    {
-    }
-    /**
-     * Likelihood to return for this CustomInfoType. This base value can be
-     * altered by a detection rule if the finding meets the criteria specified by
-     * the rule. Defaults to `VERY_LIKELY` if not specified.
-     *
-     * Accepted values: LIKELIHOOD_UNSPECIFIED, VERY_UNLIKELY, UNLIKELY, POSSIBLE,
-     * LIKELY, VERY_LIKELY
-     *
-     * @param self::LIKELIHOOD_* $likelihood
-     */
-    public function setLikelihood($likelihood)
-    {
-    }
-    /**
-     * @return self::LIKELIHOOD_*
-     */
-    public function getLikelihood()
-    {
-    }
-    /**
-     * Regular expression based CustomInfoType.
-     *
-     * @param GooglePrivacyDlpV2Regex $regex
-     */
-    public function setRegex(GooglePrivacyDlpV2Regex $regex)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2Regex
-     */
-    public function getRegex()
-    {
-    }
-    /**
-     * Sensitivity for this CustomInfoType. If this CustomInfoType extends an
-     * existing InfoType, the sensitivity here will take precedence over that of
-     * the original InfoType. If unset for a CustomInfoType, it will default to
-     * HIGH. This only applies to data profiling.
-     *
-     * @param GooglePrivacyDlpV2SensitivityScore $sensitivityScore
-     */
-    public function setSensitivityScore(GooglePrivacyDlpV2SensitivityScore $sensitivityScore)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2SensitivityScore
-     */
-    public function getSensitivityScore()
-    {
-    }
-    /**
-     * Load an existing `StoredInfoType` resource for use in `InspectDataSource`.
-     * Not currently supported in `InspectContent`.
-     *
-     * @param GooglePrivacyDlpV2StoredType $storedType
-     */
-    public function setStoredType(GooglePrivacyDlpV2StoredType $storedType)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2StoredType
-     */
-    public function getStoredType()
-    {
-    }
-    /**
-     * Message for detecting output from deidentification transformations that
-     * support reversing.
-     *
-     * @param GooglePrivacyDlpV2SurrogateType $surrogateType
-     */
-    public function setSurrogateType(GooglePrivacyDlpV2SurrogateType $surrogateType)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2SurrogateType
-     */
-    public function getSurrogateType()
+    class Google_Service_DLP_GooglePrivacyDlpV2CustomInfoType extends \Google\Service\DLP\GooglePrivacyDlpV2CustomInfoType
     {
     }
 }

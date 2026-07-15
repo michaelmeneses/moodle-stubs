@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AccessContextManager;
-
-class AccessScope extends \Google\Model
-{
-    protected $clientScopeType = ClientScope::class;
-    protected $clientScopeDataType = '';
-    /**
-     * Optional. Client scope for this access scope.
-     *
-     * @param ClientScope $clientScope
-     */
-    public function setClientScope(ClientScope $clientScope)
+namespace Google\Service\AccessContextManager {
+    class AccessScope extends \Google\Model
     {
+        protected $clientScopeType = ClientScope::class;
+        protected $clientScopeDataType = '';
+        /**
+         * Optional. Client scope for this access scope.
+         *
+         * @param ClientScope $clientScope
+         */
+        public function setClientScope(ClientScope $clientScope)
+        {
+        }
+        /**
+         * @return ClientScope
+         */
+        public function getClientScope()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ClientScope
+     * Runtime class alias of \Google\Service\AccessContextManager\AccessScope registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClientScope()
+    class Google_Service_AccessContextManager_AccessScope extends \Google\Service\AccessContextManager\AccessScope
     {
     }
 }

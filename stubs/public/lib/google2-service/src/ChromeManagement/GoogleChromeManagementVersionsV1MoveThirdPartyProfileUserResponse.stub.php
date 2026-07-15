@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementVersionsV1MoveThirdPartyProfileUserResponse extends \Google\Model
-{
-    protected $thirdPartyProfileUserType = GoogleChromeManagementVersionsV1ThirdPartyProfileUser::class;
-    protected $thirdPartyProfileUserDataType = '';
-    /**
-     * Output only. The moved third party profile user.
-     *
-     * @param GoogleChromeManagementVersionsV1ThirdPartyProfileUser $thirdPartyProfileUser
-     */
-    public function setThirdPartyProfileUser(GoogleChromeManagementVersionsV1ThirdPartyProfileUser $thirdPartyProfileUser)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementVersionsV1MoveThirdPartyProfileUserResponse extends \Google\Model
     {
+        protected $thirdPartyProfileUserType = GoogleChromeManagementVersionsV1ThirdPartyProfileUser::class;
+        protected $thirdPartyProfileUserDataType = '';
+        /**
+         * Output only. The moved third party profile user.
+         *
+         * @param GoogleChromeManagementVersionsV1ThirdPartyProfileUser $thirdPartyProfileUser
+         */
+        public function setThirdPartyProfileUser(GoogleChromeManagementVersionsV1ThirdPartyProfileUser $thirdPartyProfileUser)
+        {
+        }
+        /**
+         * @return GoogleChromeManagementVersionsV1ThirdPartyProfileUser
+         */
+        public function getThirdPartyProfileUser()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleChromeManagementVersionsV1ThirdPartyProfileUser
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1MoveThirdPartyProfileUserResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getThirdPartyProfileUser()
+    class Google_Service_ChromeManagement_GoogleChromeManagementVersionsV1MoveThirdPartyProfileUserResponse extends \Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1MoveThirdPartyProfileUserResponse
     {
     }
 }

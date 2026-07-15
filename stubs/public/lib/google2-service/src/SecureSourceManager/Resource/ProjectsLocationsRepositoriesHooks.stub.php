@@ -21,99 +21,111 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecureSourceManager\Resource;
-
-/**
- * The "hooks" collection of methods.
- * Typical usage is:
- *  <code>
- *   $securesourcemanagerService = new Google\Service\SecureSourceManager(...);
- *   $hooks = $securesourcemanagerService->projects_locations_repositories_hooks;
- *  </code>
- */
-class ProjectsLocationsRepositoriesHooks extends \Google\Service\Resource
-{
+namespace Google\Service\SecureSourceManager\Resource {
+    use Google\Service\SecureSourceManager\Hook;
+    use Google\Service\SecureSourceManager\ListHooksResponse;
+    use Google\Service\SecureSourceManager\Operation;
     /**
-     * Creates a new hook in a given repository. (hooks.create)
-     *
-     * @param string $parent Required. The repository in which to create the hook.
-     * Values are of the form `projects/{project_number}/locations/{location_id}/rep
-     * ositories/{repository_id}`
-     * @param Hook $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string hookId Required. The ID to use for the hook, which will
-     * become the final component of the hook's resource name. This value restricts
-     * to lower-case letters, numbers, and hyphen, with the first character a
-     * letter, the last a letter or a number, and a 63 character maximum.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * The "hooks" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $securesourcemanagerService = new Google\Service\SecureSourceManager(...);
+     *   $hooks = $securesourcemanagerService->projects_locations_repositories_hooks;
+     *  </code>
      */
-    public function create($parent, Hook $postBody, $optParams = [])
+    class ProjectsLocationsRepositoriesHooks extends \Google\Service\Resource
     {
+        /**
+         * Creates a new hook in a given repository. (hooks.create)
+         *
+         * @param string $parent Required. The repository in which to create the hook.
+         * Values are of the form `projects/{project_number}/locations/{location_id}/rep
+         * ositories/{repository_id}`
+         * @param Hook $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string hookId Required. The ID to use for the hook, which will
+         * become the final component of the hook's resource name. This value restricts
+         * to lower-case letters, numbers, and hyphen, with the first character a
+         * letter, the last a letter or a number, and a 63 character maximum.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, Hook $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a Hook. (hooks.delete)
+         *
+         * @param string $name Required. Name of the hook to delete. The format is `proj
+         * ects/{project_number}/locations/{location_id}/repositories/{repository_id}/ho
+         * oks/{hook_id}`.
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets metadata of a hook. (hooks.get)
+         *
+         * @param string $name Required. Name of the hook to retrieve. The format is `pr
+         * ojects/{project_number}/locations/{location_id}/repositories/{repository_id}/
+         * hooks/{hook_id}`.
+         * @param array $optParams Optional parameters.
+         * @return Hook
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists hooks in a given repository.
+         * (hooks.listProjectsLocationsRepositoriesHooks)
+         *
+         * @param string $parent Required. Parent value for ListHooksRequest.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Optional. Requested page size. Server may return
+         * fewer items than requested. If unspecified, server will pick an appropriate
+         * default.
+         * @opt_param string pageToken Optional. A token identifying a page of results
+         * the server should return.
+         * @return ListHooksResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsRepositoriesHooks($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates the metadata of a hook. (hooks.patch)
+         *
+         * @param string $name Identifier. A unique identifier for a Hook. The name
+         * should be of the format: `projects/{project}/locations/{location_id}/reposito
+         * ries/{repository_id}/hooks/{hook_id}`
+         * @param Hook $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Required. Field mask is used to specify the
+         * fields to be overwritten in the hook resource by the update. The fields
+         * specified in the update_mask are relative to the resource, not the full
+         * request. A field will be overwritten if it is in the mask. The special value
+         * "*" means full replacement.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, Hook $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a Hook. (hooks.delete)
-     *
-     * @param string $name Required. Name of the hook to delete. The format is `proj
-     * ects/{project_number}/locations/{location_id}/repositories/{repository_id}/ho
-     * oks/{hook_id}`.
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\SecureSourceManager\Resource\ProjectsLocationsRepositoriesHooks registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets metadata of a hook. (hooks.get)
-     *
-     * @param string $name Required. Name of the hook to retrieve. The format is `pr
-     * ojects/{project_number}/locations/{location_id}/repositories/{repository_id}/
-     * hooks/{hook_id}`.
-     * @param array $optParams Optional parameters.
-     * @return Hook
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists hooks in a given repository.
-     * (hooks.listProjectsLocationsRepositoriesHooks)
-     *
-     * @param string $parent Required. Parent value for ListHooksRequest.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Optional. Requested page size. Server may return
-     * fewer items than requested. If unspecified, server will pick an appropriate
-     * default.
-     * @opt_param string pageToken Optional. A token identifying a page of results
-     * the server should return.
-     * @return ListHooksResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsRepositoriesHooks($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates the metadata of a hook. (hooks.patch)
-     *
-     * @param string $name Identifier. A unique identifier for a Hook. The name
-     * should be of the format: `projects/{project}/locations/{location_id}/reposito
-     * ries/{repository_id}/hooks/{hook_id}`
-     * @param Hook $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Required. Field mask is used to specify the
-     * fields to be overwritten in the hook resource by the update. The fields
-     * specified in the update_mask are relative to the resource, not the full
-     * request. A field will be overwritten if it is in the mask. The special value
-     * "*" means full replacement.
-     * @return Operation
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, Hook $postBody, $optParams = [])
+    class Google_Service_SecureSourceManager_Resource_ProjectsLocationsRepositoriesHooks extends \Google\Service\SecureSourceManager\Resource\ProjectsLocationsRepositoriesHooks
     {
     }
 }

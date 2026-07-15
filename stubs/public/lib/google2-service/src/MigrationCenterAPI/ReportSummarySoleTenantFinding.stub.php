@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class ReportSummarySoleTenantFinding extends \Google\Collection
-{
-    protected $collection_key = 'nodeAllocations';
-    /**
-     * Count of assets which are allocated
-     *
-     * @var string
-     */
-    public $allocatedAssetCount;
-    /**
-     * Set of regions in which the assets are allocated
-     *
-     * @var string[]
-     */
-    public $allocatedRegions;
-    protected $nodeAllocationsType = ReportSummarySoleTenantNodeAllocation::class;
-    protected $nodeAllocationsDataType = 'array';
-    /**
-     * Count of assets which are allocated
-     *
-     * @param string $allocatedAssetCount
-     */
-    public function setAllocatedAssetCount($allocatedAssetCount)
+namespace Google\Service\MigrationCenterAPI {
+    class ReportSummarySoleTenantFinding extends \Google\Collection
     {
+        protected $collection_key = 'nodeAllocations';
+        /**
+         * Count of assets which are allocated
+         *
+         * @var string
+         */
+        public $allocatedAssetCount;
+        /**
+         * Set of regions in which the assets are allocated
+         *
+         * @var string[]
+         */
+        public $allocatedRegions;
+        protected $nodeAllocationsType = ReportSummarySoleTenantNodeAllocation::class;
+        protected $nodeAllocationsDataType = 'array';
+        /**
+         * Count of assets which are allocated
+         *
+         * @param string $allocatedAssetCount
+         */
+        public function setAllocatedAssetCount($allocatedAssetCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAllocatedAssetCount()
+        {
+        }
+        /**
+         * Set of regions in which the assets are allocated
+         *
+         * @param string[] $allocatedRegions
+         */
+        public function setAllocatedRegions($allocatedRegions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAllocatedRegions()
+        {
+        }
+        /**
+         * Set of per-nodetype allocation records
+         *
+         * @param ReportSummarySoleTenantNodeAllocation[] $nodeAllocations
+         */
+        public function setNodeAllocations($nodeAllocations)
+        {
+        }
+        /**
+         * @return ReportSummarySoleTenantNodeAllocation[]
+         */
+        public function getNodeAllocations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\ReportSummarySoleTenantFinding registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllocatedAssetCount()
-    {
-    }
-    /**
-     * Set of regions in which the assets are allocated
-     *
-     * @param string[] $allocatedRegions
-     */
-    public function setAllocatedRegions($allocatedRegions)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getAllocatedRegions()
-    {
-    }
-    /**
-     * Set of per-nodetype allocation records
-     *
-     * @param ReportSummarySoleTenantNodeAllocation[] $nodeAllocations
-     */
-    public function setNodeAllocations($nodeAllocations)
-    {
-    }
-    /**
-     * @return ReportSummarySoleTenantNodeAllocation[]
-     */
-    public function getNodeAllocations()
+    class Google_Service_MigrationCenterAPI_ReportSummarySoleTenantFinding extends \Google\Service\MigrationCenterAPI\ReportSummarySoleTenantFinding
     {
     }
 }

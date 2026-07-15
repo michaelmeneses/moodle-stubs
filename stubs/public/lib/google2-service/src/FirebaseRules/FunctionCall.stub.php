@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseRules;
-
-class FunctionCall extends \Google\Collection
-{
-    protected $collection_key = 'args';
-    /**
-     * The arguments that were provided to the function.
-     *
-     * @var array[]
-     */
-    public $args;
-    /**
-     * Name of the function invoked.
-     *
-     * @var string
-     */
-    public $function;
-    /**
-     * The arguments that were provided to the function.
-     *
-     * @param array[] $args
-     */
-    public function setArgs($args)
+namespace Google\Service\FirebaseRules {
+    class FunctionCall extends \Google\Collection
     {
+        protected $collection_key = 'args';
+        /**
+         * The arguments that were provided to the function.
+         *
+         * @var array[]
+         */
+        public $args;
+        /**
+         * Name of the function invoked.
+         *
+         * @var string
+         */
+        public $function;
+        /**
+         * The arguments that were provided to the function.
+         *
+         * @param array[] $args
+         */
+        public function setArgs($args)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getArgs()
+        {
+        }
+        /**
+         * Name of the function invoked.
+         *
+         * @param string $function
+         */
+        public function setFunction($function)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFunction()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\FirebaseRules\FunctionCall registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArgs()
-    {
-    }
-    /**
-     * Name of the function invoked.
-     *
-     * @param string $function
-     */
-    public function setFunction($function)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFunction()
+    class Google_Service_FirebaseRules_FunctionCall extends \Google\Service\FirebaseRules\FunctionCall
     {
     }
 }

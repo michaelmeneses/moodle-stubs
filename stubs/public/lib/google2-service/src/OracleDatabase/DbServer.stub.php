@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OracleDatabase;
-
-class DbServer extends \Google\Model
-{
-    /**
-     * Optional. User friendly name for this resource.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Identifier. The name of the database server resource with the format: proje
-     * cts/{project}/locations/{location}/cloudExadataInfrastructures/{cloud_exada
-     * ta_infrastructure}/dbServers/{db_server}
-     *
-     * @var string
-     */
-    public $name;
-    protected $propertiesType = DbServerProperties::class;
-    protected $propertiesDataType = '';
-    /**
-     * Optional. User friendly name for this resource.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\OracleDatabase {
+    class DbServer extends \Google\Model
     {
+        /**
+         * Optional. User friendly name for this resource.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Identifier. The name of the database server resource with the format: proje
+         * cts/{project}/locations/{location}/cloudExadataInfrastructures/{cloud_exada
+         * ta_infrastructure}/dbServers/{db_server}
+         *
+         * @var string
+         */
+        public $name;
+        protected $propertiesType = DbServerProperties::class;
+        protected $propertiesDataType = '';
+        /**
+         * Optional. User friendly name for this resource.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Identifier. The name of the database server resource with the format: proje
+         * cts/{project}/locations/{location}/cloudExadataInfrastructures/{cloud_exada
+         * ta_infrastructure}/dbServers/{db_server}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. Various properties of the database server.
+         *
+         * @param DbServerProperties $properties
+         */
+        public function setProperties(DbServerProperties $properties)
+        {
+        }
+        /**
+         * @return DbServerProperties
+         */
+        public function getProperties()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OracleDatabase\DbServer registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Identifier. The name of the database server resource with the format: proje
-     * cts/{project}/locations/{location}/cloudExadataInfrastructures/{cloud_exada
-     * ta_infrastructure}/dbServers/{db_server}
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. Various properties of the database server.
-     *
-     * @param DbServerProperties $properties
-     */
-    public function setProperties(DbServerProperties $properties)
-    {
-    }
-    /**
-     * @return DbServerProperties
-     */
-    public function getProperties()
+    class Google_Service_OracleDatabase_DbServer extends \Google\Service\OracleDatabase\DbServer
     {
     }
 }

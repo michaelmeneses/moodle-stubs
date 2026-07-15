@@ -21,257 +21,266 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class StoragePoolDisk extends \Google\Collection
-{
-    /**
-     * Disk is provisioning
-     */
-    public const STATUS_CREATING = 'CREATING';
-    /**
-     * Disk is deleting.
-     */
-    public const STATUS_DELETING = 'DELETING';
-    /**
-     * Disk creation failed.
-     */
-    public const STATUS_FAILED = 'FAILED';
-    /**
-     * Disk is ready for use.
-     */
-    public const STATUS_READY = 'READY';
-    /**
-     * Source data is being copied into the disk.
-     */
-    public const STATUS_RESTORING = 'RESTORING';
-    /**
-     * Disk is currently unavailable and cannot be accessed, attached or detached.
-     */
-    public const STATUS_UNAVAILABLE = 'UNAVAILABLE';
-    protected $collection_key = 'resourcePolicies';
-    /**
-     * Output only. [Output Only] Instances this disk is attached to.
-     *
-     * @var string[]
-     */
-    public $attachedInstances;
-    /**
-     * Output only. [Output Only] Creation timestamp inRFC3339 text format.
-     *
-     * @var string
-     */
-    public $creationTimestamp;
-    /**
-     * Output only. [Output Only] The URL of the disk.
-     *
-     * @var string
-     */
-    public $disk;
-    /**
-     * Output only. [Output Only] The name of the disk.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. [Output Only] The number of IOPS provisioned for the disk.
-     *
-     * @var string
-     */
-    public $provisionedIops;
-    /**
-     * Output only. [Output Only] The throughput provisioned for the disk.
-     *
-     * @var string
-     */
-    public $provisionedThroughput;
-    /**
-     * Output only. [Output Only] Resource policies applied to disk for automatic
-     * snapshot creations.
-     *
-     * @var string[]
-     */
-    public $resourcePolicies;
-    /**
-     * Output only. [Output Only] The disk size, in GB.
-     *
-     * @var string
-     */
-    public $sizeGb;
-    /**
-     * Output only. [Output Only] The disk status.
-     *
-     * @var string
-     */
-    public $status;
-    /**
-     * Output only. [Output Only] The disk type.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Output only. [Output Only] Amount of disk space used.
-     *
-     * @var string
-     */
-    public $usedBytes;
-    /**
-     * Output only. [Output Only] Instances this disk is attached to.
-     *
-     * @param string[] $attachedInstances
-     */
-    public function setAttachedInstances($attachedInstances)
+namespace Google\Service\Compute {
+    class StoragePoolDisk extends \Google\Collection
     {
+        /**
+         * Disk is provisioning
+         */
+        public const STATUS_CREATING = 'CREATING';
+        /**
+         * Disk is deleting.
+         */
+        public const STATUS_DELETING = 'DELETING';
+        /**
+         * Disk creation failed.
+         */
+        public const STATUS_FAILED = 'FAILED';
+        /**
+         * Disk is ready for use.
+         */
+        public const STATUS_READY = 'READY';
+        /**
+         * Source data is being copied into the disk.
+         */
+        public const STATUS_RESTORING = 'RESTORING';
+        /**
+         * Disk is currently unavailable and cannot be accessed, attached or detached.
+         */
+        public const STATUS_UNAVAILABLE = 'UNAVAILABLE';
+        protected $collection_key = 'resourcePolicies';
+        /**
+         * Output only. [Output Only] Instances this disk is attached to.
+         *
+         * @var string[]
+         */
+        public $attachedInstances;
+        /**
+         * Output only. [Output Only] Creation timestamp inRFC3339 text format.
+         *
+         * @var string
+         */
+        public $creationTimestamp;
+        /**
+         * Output only. [Output Only] The URL of the disk.
+         *
+         * @var string
+         */
+        public $disk;
+        /**
+         * Output only. [Output Only] The name of the disk.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. [Output Only] The number of IOPS provisioned for the disk.
+         *
+         * @var string
+         */
+        public $provisionedIops;
+        /**
+         * Output only. [Output Only] The throughput provisioned for the disk.
+         *
+         * @var string
+         */
+        public $provisionedThroughput;
+        /**
+         * Output only. [Output Only] Resource policies applied to disk for automatic
+         * snapshot creations.
+         *
+         * @var string[]
+         */
+        public $resourcePolicies;
+        /**
+         * Output only. [Output Only] The disk size, in GB.
+         *
+         * @var string
+         */
+        public $sizeGb;
+        /**
+         * Output only. [Output Only] The disk status.
+         *
+         * @var string
+         */
+        public $status;
+        /**
+         * Output only. [Output Only] The disk type.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Output only. [Output Only] Amount of disk space used.
+         *
+         * @var string
+         */
+        public $usedBytes;
+        /**
+         * Output only. [Output Only] Instances this disk is attached to.
+         *
+         * @param string[] $attachedInstances
+         */
+        public function setAttachedInstances($attachedInstances)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAttachedInstances()
+        {
+        }
+        /**
+         * Output only. [Output Only] Creation timestamp inRFC3339 text format.
+         *
+         * @param string $creationTimestamp
+         */
+        public function setCreationTimestamp($creationTimestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreationTimestamp()
+        {
+        }
+        /**
+         * Output only. [Output Only] The URL of the disk.
+         *
+         * @param string $disk
+         */
+        public function setDisk($disk)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisk()
+        {
+        }
+        /**
+         * Output only. [Output Only] The name of the disk.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. [Output Only] The number of IOPS provisioned for the disk.
+         *
+         * @param string $provisionedIops
+         */
+        public function setProvisionedIops($provisionedIops)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProvisionedIops()
+        {
+        }
+        /**
+         * Output only. [Output Only] The throughput provisioned for the disk.
+         *
+         * @param string $provisionedThroughput
+         */
+        public function setProvisionedThroughput($provisionedThroughput)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProvisionedThroughput()
+        {
+        }
+        /**
+         * Output only. [Output Only] Resource policies applied to disk for automatic
+         * snapshot creations.
+         *
+         * @param string[] $resourcePolicies
+         */
+        public function setResourcePolicies($resourcePolicies)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getResourcePolicies()
+        {
+        }
+        /**
+         * Output only. [Output Only] The disk size, in GB.
+         *
+         * @param string $sizeGb
+         */
+        public function setSizeGb($sizeGb)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSizeGb()
+        {
+        }
+        /**
+         * Output only. [Output Only] The disk status.
+         *
+         * Accepted values: CREATING, DELETING, FAILED, READY, RESTORING, UNAVAILABLE
+         *
+         * @param self::STATUS_* $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return self::STATUS_*
+         */
+        public function getStatus()
+        {
+        }
+        /**
+         * Output only. [Output Only] The disk type.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
+        /**
+         * Output only. [Output Only] Amount of disk space used.
+         *
+         * @param string $usedBytes
+         */
+        public function setUsedBytes($usedBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUsedBytes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Compute\StoragePoolDisk registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttachedInstances()
-    {
-    }
-    /**
-     * Output only. [Output Only] Creation timestamp inRFC3339 text format.
-     *
-     * @param string $creationTimestamp
-     */
-    public function setCreationTimestamp($creationTimestamp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreationTimestamp()
-    {
-    }
-    /**
-     * Output only. [Output Only] The URL of the disk.
-     *
-     * @param string $disk
-     */
-    public function setDisk($disk)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisk()
-    {
-    }
-    /**
-     * Output only. [Output Only] The name of the disk.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. [Output Only] The number of IOPS provisioned for the disk.
-     *
-     * @param string $provisionedIops
-     */
-    public function setProvisionedIops($provisionedIops)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProvisionedIops()
-    {
-    }
-    /**
-     * Output only. [Output Only] The throughput provisioned for the disk.
-     *
-     * @param string $provisionedThroughput
-     */
-    public function setProvisionedThroughput($provisionedThroughput)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProvisionedThroughput()
-    {
-    }
-    /**
-     * Output only. [Output Only] Resource policies applied to disk for automatic
-     * snapshot creations.
-     *
-     * @param string[] $resourcePolicies
-     */
-    public function setResourcePolicies($resourcePolicies)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getResourcePolicies()
-    {
-    }
-    /**
-     * Output only. [Output Only] The disk size, in GB.
-     *
-     * @param string $sizeGb
-     */
-    public function setSizeGb($sizeGb)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSizeGb()
-    {
-    }
-    /**
-     * Output only. [Output Only] The disk status.
-     *
-     * Accepted values: CREATING, DELETING, FAILED, READY, RESTORING, UNAVAILABLE
-     *
-     * @param self::STATUS_* $status
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return self::STATUS_*
-     */
-    public function getStatus()
-    {
-    }
-    /**
-     * Output only. [Output Only] The disk type.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
-    {
-    }
-    /**
-     * Output only. [Output Only] Amount of disk space used.
-     *
-     * @param string $usedBytes
-     */
-    public function setUsedBytes($usedBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUsedBytes()
+    class Google_Service_Compute_StoragePoolDisk extends \Google\Service\Compute\StoragePoolDisk
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1ConditionTimeRange extends \Google\Model
-{
-    /**
-     * End of time range. Range is inclusive. Must be in the future.
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * Start of time range. Range is inclusive.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * End of time range. Range is inclusive. Must be in the future.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1ConditionTimeRange extends \Google\Model
     {
+        /**
+         * End of time range. Range is inclusive. Must be in the future.
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * Start of time range. Range is inclusive.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * End of time range. Range is inclusive. Must be in the future.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * Start of time range. Range is inclusive.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ConditionTimeRange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndTime()
-    {
-    }
-    /**
-     * Start of time range. Range is inclusive.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1ConditionTimeRange extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ConditionTimeRange
     {
     }
 }

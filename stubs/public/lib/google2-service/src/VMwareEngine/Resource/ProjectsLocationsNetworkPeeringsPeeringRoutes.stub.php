@@ -21,46 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMwareEngine\Resource;
-
-/**
- * The "peeringRoutes" collection of methods.
- * Typical usage is:
- *  <code>
- *   $vmwareengineService = new Google\Service\VMwareEngine(...);
- *   $peeringRoutes = $vmwareengineService->projects_locations_networkPeerings_peeringRoutes;
- *  </code>
- */
-class ProjectsLocationsNetworkPeeringsPeeringRoutes extends \Google\Service\Resource
-{
+namespace Google\Service\VMwareEngine\Resource {
+    use Google\Service\VMwareEngine\ListPeeringRoutesResponse;
     /**
-     * Lists the network peering routes exchanged over a peering connection.
-     * NetworkPeering is a global resource and location can only be global.
-     * (peeringRoutes.listProjectsLocationsNetworkPeeringsPeeringRoutes)
-     *
-     * @param string $parent Required. The resource name of the network peering to
-     * retrieve peering routes from. Resource names are schemeless URIs that follow
-     * the conventions in https://cloud.google.com/apis/design/resource_names. For
-     * example: `projects/my-project/locations/global/networkPeerings/my-peering`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter A filter expression that matches resources returned
-     * in the response. Currently, only filtering on the `direction` field is
-     * supported. To return routes imported from the peer network, provide
-     * "direction=INCOMING". To return routes exported from the VMware Engine
-     * network, provide "direction=OUTGOING". Other filter expressions return an
-     * error.
-     * @opt_param int pageSize The maximum number of peering routes to return in one
-     * page. The service may return fewer than this value. The maximum value is
-     * coerced to 1000. The default value of this field is 500.
-     * @opt_param string pageToken A page token, received from a previous
-     * `ListPeeringRoutes` call. Provide this to retrieve the subsequent page. When
-     * paginating, all other parameters provided to `ListPeeringRoutes` must match
-     * the call that provided the page token.
-     * @return ListPeeringRoutesResponse
-     * @throws \Google\Service\Exception
+     * The "peeringRoutes" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $vmwareengineService = new Google\Service\VMwareEngine(...);
+     *   $peeringRoutes = $vmwareengineService->projects_locations_networkPeerings_peeringRoutes;
+     *  </code>
      */
-    public function listProjectsLocationsNetworkPeeringsPeeringRoutes($parent, $optParams = [])
+    class ProjectsLocationsNetworkPeeringsPeeringRoutes extends \Google\Service\Resource
+    {
+        /**
+         * Lists the network peering routes exchanged over a peering connection.
+         * NetworkPeering is a global resource and location can only be global.
+         * (peeringRoutes.listProjectsLocationsNetworkPeeringsPeeringRoutes)
+         *
+         * @param string $parent Required. The resource name of the network peering to
+         * retrieve peering routes from. Resource names are schemeless URIs that follow
+         * the conventions in https://cloud.google.com/apis/design/resource_names. For
+         * example: `projects/my-project/locations/global/networkPeerings/my-peering`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter A filter expression that matches resources returned
+         * in the response. Currently, only filtering on the `direction` field is
+         * supported. To return routes imported from the peer network, provide
+         * "direction=INCOMING". To return routes exported from the VMware Engine
+         * network, provide "direction=OUTGOING". Other filter expressions return an
+         * error.
+         * @opt_param int pageSize The maximum number of peering routes to return in one
+         * page. The service may return fewer than this value. The maximum value is
+         * coerced to 1000. The default value of this field is 500.
+         * @opt_param string pageToken A page token, received from a previous
+         * `ListPeeringRoutes` call. Provide this to retrieve the subsequent page. When
+         * paginating, all other parameters provided to `ListPeeringRoutes` must match
+         * the call that provided the page token.
+         * @return ListPeeringRoutesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsNetworkPeeringsPeeringRoutes($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\VMwareEngine\Resource\ProjectsLocationsNetworkPeeringsPeeringRoutes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_VMwareEngine_Resource_ProjectsLocationsNetworkPeeringsPeeringRoutes extends \Google\Service\VMwareEngine\Resource\ProjectsLocationsNetworkPeeringsPeeringRoutes
     {
     }
 }

@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class IngestionErrorRecord extends \Google\Collection
-{
-    protected $collection_key = 'errors';
-    protected $errorsType = FieldError::class;
-    protected $errorsDataType = 'array';
-    /**
-     * Output only. The record ID of the ingestion error record.
-     *
-     * @var string
-     */
-    public $recordId;
-    /**
-     * Output only. The list of field errors of the ingestion error record.
-     *
-     * @param FieldError[] $errors
-     */
-    public function setErrors($errors)
+namespace Google\Service\Dfareporting {
+    class IngestionErrorRecord extends \Google\Collection
     {
+        protected $collection_key = 'errors';
+        protected $errorsType = FieldError::class;
+        protected $errorsDataType = 'array';
+        /**
+         * Output only. The record ID of the ingestion error record.
+         *
+         * @var string
+         */
+        public $recordId;
+        /**
+         * Output only. The list of field errors of the ingestion error record.
+         *
+         * @param FieldError[] $errors
+         */
+        public function setErrors($errors)
+        {
+        }
+        /**
+         * @return FieldError[]
+         */
+        public function getErrors()
+        {
+        }
+        /**
+         * Output only. The record ID of the ingestion error record.
+         *
+         * @param string $recordId
+         */
+        public function setRecordId($recordId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRecordId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FieldError[]
+     * Runtime class alias of \Google\Service\Dfareporting\IngestionErrorRecord registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrors()
-    {
-    }
-    /**
-     * Output only. The record ID of the ingestion error record.
-     *
-     * @param string $recordId
-     */
-    public function setRecordId($recordId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRecordId()
+    class Google_Service_Dfareporting_IngestionErrorRecord extends \Google\Service\Dfareporting\IngestionErrorRecord
     {
     }
 }

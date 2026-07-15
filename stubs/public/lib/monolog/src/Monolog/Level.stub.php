@@ -16,6 +16,7 @@
  */
 namespace Monolog;
 
+use Psr\Log\LogLevel;
 /**
  * Represents the log levels
  *

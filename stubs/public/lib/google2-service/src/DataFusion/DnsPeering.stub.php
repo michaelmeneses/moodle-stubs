@@ -21,110 +21,119 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataFusion;
-
-class DnsPeering extends \Google\Model
-{
-    /**
-     * Optional. Optional description of the dns zone.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Required. The dns name suffix of the zone.
-     *
-     * @var string
-     */
-    public $domain;
-    /**
-     * Identifier. The resource name of the dns peering zone. Format: projects/{pr
-     * oject}/locations/{location}/instances/{instance}/dnsPeerings/{dns_peering}
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optional. Optional target network to which dns peering should happen.
-     *
-     * @var string
-     */
-    public $targetNetwork;
-    /**
-     * Optional. Optional target project to which dns peering should happen.
-     *
-     * @var string
-     */
-    public $targetProject;
-    /**
-     * Optional. Optional description of the dns zone.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\DataFusion {
+    class DnsPeering extends \Google\Model
     {
+        /**
+         * Optional. Optional description of the dns zone.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Required. The dns name suffix of the zone.
+         *
+         * @var string
+         */
+        public $domain;
+        /**
+         * Identifier. The resource name of the dns peering zone. Format: projects/{pr
+         * oject}/locations/{location}/instances/{instance}/dnsPeerings/{dns_peering}
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optional. Optional target network to which dns peering should happen.
+         *
+         * @var string
+         */
+        public $targetNetwork;
+        /**
+         * Optional. Optional target project to which dns peering should happen.
+         *
+         * @var string
+         */
+        public $targetProject;
+        /**
+         * Optional. Optional description of the dns zone.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Required. The dns name suffix of the zone.
+         *
+         * @param string $domain
+         */
+        public function setDomain($domain)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDomain()
+        {
+        }
+        /**
+         * Identifier. The resource name of the dns peering zone. Format: projects/{pr
+         * oject}/locations/{location}/instances/{instance}/dnsPeerings/{dns_peering}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. Optional target network to which dns peering should happen.
+         *
+         * @param string $targetNetwork
+         */
+        public function setTargetNetwork($targetNetwork)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetNetwork()
+        {
+        }
+        /**
+         * Optional. Optional target project to which dns peering should happen.
+         *
+         * @param string $targetProject
+         */
+        public function setTargetProject($targetProject)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetProject()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataFusion\DnsPeering registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * Required. The dns name suffix of the zone.
-     *
-     * @param string $domain
-     */
-    public function setDomain($domain)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDomain()
-    {
-    }
-    /**
-     * Identifier. The resource name of the dns peering zone. Format: projects/{pr
-     * oject}/locations/{location}/instances/{instance}/dnsPeerings/{dns_peering}
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. Optional target network to which dns peering should happen.
-     *
-     * @param string $targetNetwork
-     */
-    public function setTargetNetwork($targetNetwork)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetNetwork()
-    {
-    }
-    /**
-     * Optional. Optional target project to which dns peering should happen.
-     *
-     * @param string $targetProject
-     */
-    public function setTargetProject($targetProject)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetProject()
+    class Google_Service_DataFusion_DnsPeering extends \Google\Service\DataFusion\DnsPeering
     {
     }
 }

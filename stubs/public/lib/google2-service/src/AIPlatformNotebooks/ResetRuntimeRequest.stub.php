@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AIPlatformNotebooks;
-
-class ResetRuntimeRequest extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $requestId;
-    /**
-     * @param string
-     */
-    public function setRequestId($requestId)
+namespace Google\Service\AIPlatformNotebooks {
+    class ResetRuntimeRequest extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $requestId;
+        /**
+         * @param string
+         */
+        public function setRequestId($requestId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AIPlatformNotebooks\ResetRuntimeRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequestId()
+    class Google_Service_AIPlatformNotebooks_ResetRuntimeRequest extends \Google\Service\AIPlatformNotebooks\ResetRuntimeRequest
     {
     }
 }

@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CertificateAuthorityService;
-
-class AllowedKeyType extends \Google\Model
-{
-    protected $ellipticCurveType = EcKeyType::class;
-    protected $ellipticCurveDataType = '';
-    protected $rsaType = RsaKeyType::class;
-    protected $rsaDataType = '';
-    /**
-     * Represents an allowed Elliptic Curve key type.
-     *
-     * @param EcKeyType $ellipticCurve
-     */
-    public function setEllipticCurve(EcKeyType $ellipticCurve)
+namespace Google\Service\CertificateAuthorityService {
+    class AllowedKeyType extends \Google\Model
     {
+        protected $ellipticCurveType = EcKeyType::class;
+        protected $ellipticCurveDataType = '';
+        protected $rsaType = RsaKeyType::class;
+        protected $rsaDataType = '';
+        /**
+         * Represents an allowed Elliptic Curve key type.
+         *
+         * @param EcKeyType $ellipticCurve
+         */
+        public function setEllipticCurve(EcKeyType $ellipticCurve)
+        {
+        }
+        /**
+         * @return EcKeyType
+         */
+        public function getEllipticCurve()
+        {
+        }
+        /**
+         * Represents an allowed RSA key type.
+         *
+         * @param RsaKeyType $rsa
+         */
+        public function setRsa(RsaKeyType $rsa)
+        {
+        }
+        /**
+         * @return RsaKeyType
+         */
+        public function getRsa()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EcKeyType
+     * Runtime class alias of \Google\Service\CertificateAuthorityService\AllowedKeyType registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEllipticCurve()
-    {
-    }
-    /**
-     * Represents an allowed RSA key type.
-     *
-     * @param RsaKeyType $rsa
-     */
-    public function setRsa(RsaKeyType $rsa)
-    {
-    }
-    /**
-     * @return RsaKeyType
-     */
-    public function getRsa()
+    class Google_Service_CertificateAuthorityService_AllowedKeyType extends \Google\Service\CertificateAuthorityService\AllowedKeyType
     {
     }
 }

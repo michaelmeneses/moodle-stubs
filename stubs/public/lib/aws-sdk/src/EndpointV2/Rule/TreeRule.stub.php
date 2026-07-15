@@ -8,6 +8,7 @@
  */
 namespace Aws\EndpointV2\Rule;
 
+use Aws\EndpointV2\Ruleset\RulesetStandardLibrary;
 class TreeRule extends AbstractRule
 {
     /** @var array */

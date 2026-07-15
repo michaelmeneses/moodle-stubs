@@ -21,148 +21,157 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class OracleSourceConfig extends \Google\Model
-{
-    protected $binaryLogParserType = BinaryLogParser::class;
-    protected $binaryLogParserDataType = '';
-    protected $dropLargeObjectsType = DropLargeObjects::class;
-    protected $dropLargeObjectsDataType = '';
-    protected $excludeObjectsType = OracleRdbms::class;
-    protected $excludeObjectsDataType = '';
-    protected $includeObjectsType = OracleRdbms::class;
-    protected $includeObjectsDataType = '';
-    protected $logMinerType = LogMiner::class;
-    protected $logMinerDataType = '';
-    /**
-     * Maximum number of concurrent backfill tasks. The number should be non-
-     * negative. If not set (or set to 0), the system's default value is used.
-     *
-     * @var int
-     */
-    public $maxConcurrentBackfillTasks;
-    /**
-     * Maximum number of concurrent CDC tasks. The number should be non-negative.
-     * If not set (or set to 0), the system's default value is used.
-     *
-     * @var int
-     */
-    public $maxConcurrentCdcTasks;
-    protected $streamLargeObjectsType = StreamLargeObjects::class;
-    protected $streamLargeObjectsDataType = '';
-    /**
-     * Use Binary Log Parser.
-     *
-     * @param BinaryLogParser $binaryLogParser
-     */
-    public function setBinaryLogParser(BinaryLogParser $binaryLogParser)
+namespace Google\Service\Datastream {
+    class OracleSourceConfig extends \Google\Model
     {
+        protected $binaryLogParserType = BinaryLogParser::class;
+        protected $binaryLogParserDataType = '';
+        protected $dropLargeObjectsType = DropLargeObjects::class;
+        protected $dropLargeObjectsDataType = '';
+        protected $excludeObjectsType = OracleRdbms::class;
+        protected $excludeObjectsDataType = '';
+        protected $includeObjectsType = OracleRdbms::class;
+        protected $includeObjectsDataType = '';
+        protected $logMinerType = LogMiner::class;
+        protected $logMinerDataType = '';
+        /**
+         * Maximum number of concurrent backfill tasks. The number should be non-
+         * negative. If not set (or set to 0), the system's default value is used.
+         *
+         * @var int
+         */
+        public $maxConcurrentBackfillTasks;
+        /**
+         * Maximum number of concurrent CDC tasks. The number should be non-negative.
+         * If not set (or set to 0), the system's default value is used.
+         *
+         * @var int
+         */
+        public $maxConcurrentCdcTasks;
+        protected $streamLargeObjectsType = StreamLargeObjects::class;
+        protected $streamLargeObjectsDataType = '';
+        /**
+         * Use Binary Log Parser.
+         *
+         * @param BinaryLogParser $binaryLogParser
+         */
+        public function setBinaryLogParser(BinaryLogParser $binaryLogParser)
+        {
+        }
+        /**
+         * @return BinaryLogParser
+         */
+        public function getBinaryLogParser()
+        {
+        }
+        /**
+         * Drop large object values.
+         *
+         * @param DropLargeObjects $dropLargeObjects
+         */
+        public function setDropLargeObjects(DropLargeObjects $dropLargeObjects)
+        {
+        }
+        /**
+         * @return DropLargeObjects
+         */
+        public function getDropLargeObjects()
+        {
+        }
+        /**
+         * Oracle objects to exclude from the stream.
+         *
+         * @param OracleRdbms $excludeObjects
+         */
+        public function setExcludeObjects(OracleRdbms $excludeObjects)
+        {
+        }
+        /**
+         * @return OracleRdbms
+         */
+        public function getExcludeObjects()
+        {
+        }
+        /**
+         * Oracle objects to include in the stream.
+         *
+         * @param OracleRdbms $includeObjects
+         */
+        public function setIncludeObjects(OracleRdbms $includeObjects)
+        {
+        }
+        /**
+         * @return OracleRdbms
+         */
+        public function getIncludeObjects()
+        {
+        }
+        /**
+         * Use LogMiner.
+         *
+         * @param LogMiner $logMiner
+         */
+        public function setLogMiner(LogMiner $logMiner)
+        {
+        }
+        /**
+         * @return LogMiner
+         */
+        public function getLogMiner()
+        {
+        }
+        /**
+         * Maximum number of concurrent backfill tasks. The number should be non-
+         * negative. If not set (or set to 0), the system's default value is used.
+         *
+         * @param int $maxConcurrentBackfillTasks
+         */
+        public function setMaxConcurrentBackfillTasks($maxConcurrentBackfillTasks)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxConcurrentBackfillTasks()
+        {
+        }
+        /**
+         * Maximum number of concurrent CDC tasks. The number should be non-negative.
+         * If not set (or set to 0), the system's default value is used.
+         *
+         * @param int $maxConcurrentCdcTasks
+         */
+        public function setMaxConcurrentCdcTasks($maxConcurrentCdcTasks)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxConcurrentCdcTasks()
+        {
+        }
+        /**
+         * Stream large object values.
+         *
+         * @param StreamLargeObjects $streamLargeObjects
+         */
+        public function setStreamLargeObjects(StreamLargeObjects $streamLargeObjects)
+        {
+        }
+        /**
+         * @return StreamLargeObjects
+         */
+        public function getStreamLargeObjects()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BinaryLogParser
+     * Runtime class alias of \Google\Service\Datastream\OracleSourceConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBinaryLogParser()
-    {
-    }
-    /**
-     * Drop large object values.
-     *
-     * @param DropLargeObjects $dropLargeObjects
-     */
-    public function setDropLargeObjects(DropLargeObjects $dropLargeObjects)
-    {
-    }
-    /**
-     * @return DropLargeObjects
-     */
-    public function getDropLargeObjects()
-    {
-    }
-    /**
-     * Oracle objects to exclude from the stream.
-     *
-     * @param OracleRdbms $excludeObjects
-     */
-    public function setExcludeObjects(OracleRdbms $excludeObjects)
-    {
-    }
-    /**
-     * @return OracleRdbms
-     */
-    public function getExcludeObjects()
-    {
-    }
-    /**
-     * Oracle objects to include in the stream.
-     *
-     * @param OracleRdbms $includeObjects
-     */
-    public function setIncludeObjects(OracleRdbms $includeObjects)
-    {
-    }
-    /**
-     * @return OracleRdbms
-     */
-    public function getIncludeObjects()
-    {
-    }
-    /**
-     * Use LogMiner.
-     *
-     * @param LogMiner $logMiner
-     */
-    public function setLogMiner(LogMiner $logMiner)
-    {
-    }
-    /**
-     * @return LogMiner
-     */
-    public function getLogMiner()
-    {
-    }
-    /**
-     * Maximum number of concurrent backfill tasks. The number should be non-
-     * negative. If not set (or set to 0), the system's default value is used.
-     *
-     * @param int $maxConcurrentBackfillTasks
-     */
-    public function setMaxConcurrentBackfillTasks($maxConcurrentBackfillTasks)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxConcurrentBackfillTasks()
-    {
-    }
-    /**
-     * Maximum number of concurrent CDC tasks. The number should be non-negative.
-     * If not set (or set to 0), the system's default value is used.
-     *
-     * @param int $maxConcurrentCdcTasks
-     */
-    public function setMaxConcurrentCdcTasks($maxConcurrentCdcTasks)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxConcurrentCdcTasks()
-    {
-    }
-    /**
-     * Stream large object values.
-     *
-     * @param StreamLargeObjects $streamLargeObjects
-     */
-    public function setStreamLargeObjects(StreamLargeObjects $streamLargeObjects)
-    {
-    }
-    /**
-     * @return StreamLargeObjects
-     */
-    public function getStreamLargeObjects()
+    class Google_Service_Datastream_OracleSourceConfig extends \Google\Service\Datastream\OracleSourceConfig
     {
     }
 }

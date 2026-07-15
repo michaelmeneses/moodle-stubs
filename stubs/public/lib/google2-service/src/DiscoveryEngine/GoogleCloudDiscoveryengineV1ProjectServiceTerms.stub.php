@@ -21,139 +21,148 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1ProjectServiceTerms extends \Google\Model
-{
-    /**
-     * The default value of the enum. This value is not actually used.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * The project has given consent to the terms of service.
-     */
-    public const STATE_TERMS_ACCEPTED = 'TERMS_ACCEPTED';
-    /**
-     * The project is pending to review and accept the terms of service.
-     */
-    public const STATE_TERMS_PENDING = 'TERMS_PENDING';
-    /**
-     * The project has declined or revoked the agreement to terms of service.
-     */
-    public const STATE_TERMS_DECLINED = 'TERMS_DECLINED';
-    /**
-     * The last time when the project agreed to the terms of service.
-     *
-     * @var string
-     */
-    public $acceptTime;
-    /**
-     * The last time when the project declined or revoked the agreement to terms
-     * of service.
-     *
-     * @var string
-     */
-    public $declineTime;
-    /**
-     * The unique identifier of this terms of service. Available terms: *
-     * `GA_DATA_USE_TERMS`: [Terms for data
-     * use](https://cloud.google.com/retail/data-use-terms). When using this as
-     * `id`, the acceptable version to provide is `2022-11-23`.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Whether the project has accepted/rejected the service terms or it is still
-     * pending.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * The version string of the terms of service. For acceptable values, see the
-     * comments for id above.
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * The last time when the project agreed to the terms of service.
-     *
-     * @param string $acceptTime
-     */
-    public function setAcceptTime($acceptTime)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1ProjectServiceTerms extends \Google\Model
     {
+        /**
+         * The default value of the enum. This value is not actually used.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * The project has given consent to the terms of service.
+         */
+        public const STATE_TERMS_ACCEPTED = 'TERMS_ACCEPTED';
+        /**
+         * The project is pending to review and accept the terms of service.
+         */
+        public const STATE_TERMS_PENDING = 'TERMS_PENDING';
+        /**
+         * The project has declined or revoked the agreement to terms of service.
+         */
+        public const STATE_TERMS_DECLINED = 'TERMS_DECLINED';
+        /**
+         * The last time when the project agreed to the terms of service.
+         *
+         * @var string
+         */
+        public $acceptTime;
+        /**
+         * The last time when the project declined or revoked the agreement to terms
+         * of service.
+         *
+         * @var string
+         */
+        public $declineTime;
+        /**
+         * The unique identifier of this terms of service. Available terms: *
+         * `GA_DATA_USE_TERMS`: [Terms for data
+         * use](https://cloud.google.com/retail/data-use-terms). When using this as
+         * `id`, the acceptable version to provide is `2022-11-23`.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Whether the project has accepted/rejected the service terms or it is still
+         * pending.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * The version string of the terms of service. For acceptable values, see the
+         * comments for id above.
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * The last time when the project agreed to the terms of service.
+         *
+         * @param string $acceptTime
+         */
+        public function setAcceptTime($acceptTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAcceptTime()
+        {
+        }
+        /**
+         * The last time when the project declined or revoked the agreement to terms
+         * of service.
+         *
+         * @param string $declineTime
+         */
+        public function setDeclineTime($declineTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeclineTime()
+        {
+        }
+        /**
+         * The unique identifier of this terms of service. Available terms: *
+         * `GA_DATA_USE_TERMS`: [Terms for data
+         * use](https://cloud.google.com/retail/data-use-terms). When using this as
+         * `id`, the acceptable version to provide is `2022-11-23`.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Whether the project has accepted/rejected the service terms or it is still
+         * pending.
+         *
+         * Accepted values: STATE_UNSPECIFIED, TERMS_ACCEPTED, TERMS_PENDING,
+         * TERMS_DECLINED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * The version string of the terms of service. For acceptable values, see the
+         * comments for id above.
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ProjectServiceTerms registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAcceptTime()
-    {
-    }
-    /**
-     * The last time when the project declined or revoked the agreement to terms
-     * of service.
-     *
-     * @param string $declineTime
-     */
-    public function setDeclineTime($declineTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeclineTime()
-    {
-    }
-    /**
-     * The unique identifier of this terms of service. Available terms: *
-     * `GA_DATA_USE_TERMS`: [Terms for data
-     * use](https://cloud.google.com/retail/data-use-terms). When using this as
-     * `id`, the acceptable version to provide is `2022-11-23`.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Whether the project has accepted/rejected the service terms or it is still
-     * pending.
-     *
-     * Accepted values: STATE_UNSPECIFIED, TERMS_ACCEPTED, TERMS_PENDING,
-     * TERMS_DECLINED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * The version string of the terms of service. For acceptable values, see the
-     * comments for id above.
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1ProjectServiceTerms extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ProjectServiceTerms
     {
     }
 }

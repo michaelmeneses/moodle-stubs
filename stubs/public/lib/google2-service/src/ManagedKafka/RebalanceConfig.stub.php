@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManagedKafka;
-
-class RebalanceConfig extends \Google\Model
-{
-    /**
-     * A mode was not specified. Do not use.
-     */
-    public const MODE_MODE_UNSPECIFIED = 'MODE_UNSPECIFIED';
-    /**
-     * Do not rebalance automatically.
-     */
-    public const MODE_NO_REBALANCE = 'NO_REBALANCE';
-    /**
-     * Automatically rebalance topic partitions among brokers when the cluster is
-     * scaled up.
-     */
-    public const MODE_AUTO_REBALANCE_ON_SCALE_UP = 'AUTO_REBALANCE_ON_SCALE_UP';
-    /**
-     * Optional. The rebalance behavior for the cluster. When not specified,
-     * defaults to `NO_REBALANCE`.
-     *
-     * @var string
-     */
-    public $mode;
-    /**
-     * Optional. The rebalance behavior for the cluster. When not specified,
-     * defaults to `NO_REBALANCE`.
-     *
-     * Accepted values: MODE_UNSPECIFIED, NO_REBALANCE, AUTO_REBALANCE_ON_SCALE_UP
-     *
-     * @param self::MODE_* $mode
-     */
-    public function setMode($mode)
+namespace Google\Service\ManagedKafka {
+    class RebalanceConfig extends \Google\Model
     {
+        /**
+         * A mode was not specified. Do not use.
+         */
+        public const MODE_MODE_UNSPECIFIED = 'MODE_UNSPECIFIED';
+        /**
+         * Do not rebalance automatically.
+         */
+        public const MODE_NO_REBALANCE = 'NO_REBALANCE';
+        /**
+         * Automatically rebalance topic partitions among brokers when the cluster is
+         * scaled up.
+         */
+        public const MODE_AUTO_REBALANCE_ON_SCALE_UP = 'AUTO_REBALANCE_ON_SCALE_UP';
+        /**
+         * Optional. The rebalance behavior for the cluster. When not specified,
+         * defaults to `NO_REBALANCE`.
+         *
+         * @var string
+         */
+        public $mode;
+        /**
+         * Optional. The rebalance behavior for the cluster. When not specified,
+         * defaults to `NO_REBALANCE`.
+         *
+         * Accepted values: MODE_UNSPECIFIED, NO_REBALANCE, AUTO_REBALANCE_ON_SCALE_UP
+         *
+         * @param self::MODE_* $mode
+         */
+        public function setMode($mode)
+        {
+        }
+        /**
+         * @return self::MODE_*
+         */
+        public function getMode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::MODE_*
+     * Runtime class alias of \Google\Service\ManagedKafka\RebalanceConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMode()
+    class Google_Service_ManagedKafka_RebalanceConfig extends \Google\Service\ManagedKafka\RebalanceConfig
     {
     }
 }

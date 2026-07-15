@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeUXReport;
-
-class Percentiles extends \Google\Model
-{
-    /**
-     * 75% of users experienced the given metric at or below this value.
-     *
-     * @var array
-     */
-    public $p75;
-    /**
-     * 75% of users experienced the given metric at or below this value.
-     *
-     * @param array $p75
-     */
-    public function setP75($p75)
+namespace Google\Service\ChromeUXReport {
+    class Percentiles extends \Google\Model
     {
+        /**
+         * 75% of users experienced the given metric at or below this value.
+         *
+         * @var array
+         */
+        public $p75;
+        /**
+         * 75% of users experienced the given metric at or below this value.
+         *
+         * @param array $p75
+         */
+        public function setP75($p75)
+        {
+        }
+        /**
+         * @return array
+         */
+        public function getP75()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array
+     * Runtime class alias of \Google\Service\ChromeUXReport\Percentiles registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getP75()
+    class Google_Service_ChromeUXReport_Percentiles extends \Google\Service\ChromeUXReport\Percentiles
     {
     }
 }

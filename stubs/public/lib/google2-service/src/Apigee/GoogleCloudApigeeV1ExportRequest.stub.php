@@ -21,132 +21,141 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1ExportRequest extends \Google\Model
-{
-    /**
-     * Optional. Delimiter used in the CSV file, if `outputFormat` is set to
-     * `csv`. Defaults to the `,` (comma) character. Supported delimiter
-     * characters include comma (`,`), pipe (`|`), and tab (`\t`).
-     *
-     * @var string
-     */
-    public $csvDelimiter;
-    /**
-     * Required. Name of the preconfigured datastore.
-     *
-     * @var string
-     */
-    public $datastoreName;
-    protected $dateRangeType = GoogleCloudApigeeV1DateRange::class;
-    protected $dateRangeDataType = '';
-    /**
-     * Optional. Description of the export job.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Required. Display name of the export job.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optional. Output format of the export. Valid values include: `csv` or
-     * `json`. Defaults to `json`. Note: Configure the delimiter for CSV output
-     * using the `csvDelimiter` property.
-     *
-     * @var string
-     */
-    public $outputFormat;
-    /**
-     * Optional. Delimiter used in the CSV file, if `outputFormat` is set to
-     * `csv`. Defaults to the `,` (comma) character. Supported delimiter
-     * characters include comma (`,`), pipe (`|`), and tab (`\t`).
-     *
-     * @param string $csvDelimiter
-     */
-    public function setCsvDelimiter($csvDelimiter)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1ExportRequest extends \Google\Model
     {
+        /**
+         * Optional. Delimiter used in the CSV file, if `outputFormat` is set to
+         * `csv`. Defaults to the `,` (comma) character. Supported delimiter
+         * characters include comma (`,`), pipe (`|`), and tab (`\t`).
+         *
+         * @var string
+         */
+        public $csvDelimiter;
+        /**
+         * Required. Name of the preconfigured datastore.
+         *
+         * @var string
+         */
+        public $datastoreName;
+        protected $dateRangeType = GoogleCloudApigeeV1DateRange::class;
+        protected $dateRangeDataType = '';
+        /**
+         * Optional. Description of the export job.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Required. Display name of the export job.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optional. Output format of the export. Valid values include: `csv` or
+         * `json`. Defaults to `json`. Note: Configure the delimiter for CSV output
+         * using the `csvDelimiter` property.
+         *
+         * @var string
+         */
+        public $outputFormat;
+        /**
+         * Optional. Delimiter used in the CSV file, if `outputFormat` is set to
+         * `csv`. Defaults to the `,` (comma) character. Supported delimiter
+         * characters include comma (`,`), pipe (`|`), and tab (`\t`).
+         *
+         * @param string $csvDelimiter
+         */
+        public function setCsvDelimiter($csvDelimiter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCsvDelimiter()
+        {
+        }
+        /**
+         * Required. Name of the preconfigured datastore.
+         *
+         * @param string $datastoreName
+         */
+        public function setDatastoreName($datastoreName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatastoreName()
+        {
+        }
+        /**
+         * Required. Date range of the data to export.
+         *
+         * @param GoogleCloudApigeeV1DateRange $dateRange
+         */
+        public function setDateRange(GoogleCloudApigeeV1DateRange $dateRange)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1DateRange
+         */
+        public function getDateRange()
+        {
+        }
+        /**
+         * Optional. Description of the export job.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Required. Display name of the export job.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. Output format of the export. Valid values include: `csv` or
+         * `json`. Defaults to `json`. Note: Configure the delimiter for CSV output
+         * using the `csvDelimiter` property.
+         *
+         * @param string $outputFormat
+         */
+        public function setOutputFormat($outputFormat)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOutputFormat()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1ExportRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCsvDelimiter()
-    {
-    }
-    /**
-     * Required. Name of the preconfigured datastore.
-     *
-     * @param string $datastoreName
-     */
-    public function setDatastoreName($datastoreName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDatastoreName()
-    {
-    }
-    /**
-     * Required. Date range of the data to export.
-     *
-     * @param GoogleCloudApigeeV1DateRange $dateRange
-     */
-    public function setDateRange(GoogleCloudApigeeV1DateRange $dateRange)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1DateRange
-     */
-    public function getDateRange()
-    {
-    }
-    /**
-     * Optional. Description of the export job.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Required. Display name of the export job.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. Output format of the export. Valid values include: `csv` or
-     * `json`. Defaults to `json`. Note: Configure the delimiter for CSV output
-     * using the `csvDelimiter` property.
-     *
-     * @param string $outputFormat
-     */
-    public function setOutputFormat($outputFormat)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOutputFormat()
+    class Google_Service_Apigee_GoogleCloudApigeeV1ExportRequest extends \Google\Service\Apigee\GoogleCloudApigeeV1ExportRequest
     {
     }
 }

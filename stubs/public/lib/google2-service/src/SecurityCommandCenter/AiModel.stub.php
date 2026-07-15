@@ -21,191 +21,200 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class AiModel extends \Google\Model
-{
-    /**
-     * Unspecified deployment platform.
-     */
-    public const DEPLOYMENT_PLATFORM_DEPLOYMENT_PLATFORM_UNSPECIFIED = 'DEPLOYMENT_PLATFORM_UNSPECIFIED';
-    /**
-     * Vertex AI.
-     */
-    public const DEPLOYMENT_PLATFORM_VERTEX_AI = 'VERTEX_AI';
-    /**
-     * Google Kubernetes Engine.
-     */
-    public const DEPLOYMENT_PLATFORM_GKE = 'GKE';
-    /**
-     * Google Compute Engine.
-     */
-    public const DEPLOYMENT_PLATFORM_GCE = 'GCE';
-    /**
-     * Fine tuned model.
-     */
-    public const DEPLOYMENT_PLATFORM_FINE_TUNED_MODEL = 'FINE_TUNED_MODEL';
-    /**
-     * The platform on which the model is deployed.
-     *
-     * @var string
-     */
-    public $deploymentPlatform;
-    /**
-     * The user defined display name of model. Ex. baseline-classification-model
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The domain of the model, for example, “image-classification”.
-     *
-     * @var string
-     */
-    public $domain;
-    /**
-     * The name of the model library, for example, “transformers”.
-     *
-     * @var string
-     */
-    public $library;
-    /**
-     * The region in which the model is used, for example, “us-central1”.
-     *
-     * @var string
-     */
-    public $location;
-    /**
-     * The name of the AI model, for example, "gemini:1.0.0".
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The publisher of the model, for example, “google” or “nvidia”.
-     *
-     * @var string
-     */
-    public $publisher;
-    /**
-     * The purpose of the model, for example, "Inteference" or "Training".
-     *
-     * @var string
-     */
-    public $usageCategory;
-    /**
-     * The platform on which the model is deployed.
-     *
-     * Accepted values: DEPLOYMENT_PLATFORM_UNSPECIFIED, VERTEX_AI, GKE, GCE,
-     * FINE_TUNED_MODEL
-     *
-     * @param self::DEPLOYMENT_PLATFORM_* $deploymentPlatform
-     */
-    public function setDeploymentPlatform($deploymentPlatform)
+namespace Google\Service\SecurityCommandCenter {
+    class AiModel extends \Google\Model
     {
+        /**
+         * Unspecified deployment platform.
+         */
+        public const DEPLOYMENT_PLATFORM_DEPLOYMENT_PLATFORM_UNSPECIFIED = 'DEPLOYMENT_PLATFORM_UNSPECIFIED';
+        /**
+         * Vertex AI.
+         */
+        public const DEPLOYMENT_PLATFORM_VERTEX_AI = 'VERTEX_AI';
+        /**
+         * Google Kubernetes Engine.
+         */
+        public const DEPLOYMENT_PLATFORM_GKE = 'GKE';
+        /**
+         * Google Compute Engine.
+         */
+        public const DEPLOYMENT_PLATFORM_GCE = 'GCE';
+        /**
+         * Fine tuned model.
+         */
+        public const DEPLOYMENT_PLATFORM_FINE_TUNED_MODEL = 'FINE_TUNED_MODEL';
+        /**
+         * The platform on which the model is deployed.
+         *
+         * @var string
+         */
+        public $deploymentPlatform;
+        /**
+         * The user defined display name of model. Ex. baseline-classification-model
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The domain of the model, for example, “image-classification”.
+         *
+         * @var string
+         */
+        public $domain;
+        /**
+         * The name of the model library, for example, “transformers”.
+         *
+         * @var string
+         */
+        public $library;
+        /**
+         * The region in which the model is used, for example, “us-central1”.
+         *
+         * @var string
+         */
+        public $location;
+        /**
+         * The name of the AI model, for example, "gemini:1.0.0".
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The publisher of the model, for example, “google” or “nvidia”.
+         *
+         * @var string
+         */
+        public $publisher;
+        /**
+         * The purpose of the model, for example, "Inteference" or "Training".
+         *
+         * @var string
+         */
+        public $usageCategory;
+        /**
+         * The platform on which the model is deployed.
+         *
+         * Accepted values: DEPLOYMENT_PLATFORM_UNSPECIFIED, VERTEX_AI, GKE, GCE,
+         * FINE_TUNED_MODEL
+         *
+         * @param self::DEPLOYMENT_PLATFORM_* $deploymentPlatform
+         */
+        public function setDeploymentPlatform($deploymentPlatform)
+        {
+        }
+        /**
+         * @return self::DEPLOYMENT_PLATFORM_*
+         */
+        public function getDeploymentPlatform()
+        {
+        }
+        /**
+         * The user defined display name of model. Ex. baseline-classification-model
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The domain of the model, for example, “image-classification”.
+         *
+         * @param string $domain
+         */
+        public function setDomain($domain)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDomain()
+        {
+        }
+        /**
+         * The name of the model library, for example, “transformers”.
+         *
+         * @param string $library
+         */
+        public function setLibrary($library)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLibrary()
+        {
+        }
+        /**
+         * The region in which the model is used, for example, “us-central1”.
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * The name of the AI model, for example, "gemini:1.0.0".
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The publisher of the model, for example, “google” or “nvidia”.
+         *
+         * @param string $publisher
+         */
+        public function setPublisher($publisher)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPublisher()
+        {
+        }
+        /**
+         * The purpose of the model, for example, "Inteference" or "Training".
+         *
+         * @param string $usageCategory
+         */
+        public function setUsageCategory($usageCategory)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUsageCategory()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::DEPLOYMENT_PLATFORM_*
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\AiModel registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeploymentPlatform()
-    {
-    }
-    /**
-     * The user defined display name of model. Ex. baseline-classification-model
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The domain of the model, for example, “image-classification”.
-     *
-     * @param string $domain
-     */
-    public function setDomain($domain)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDomain()
-    {
-    }
-    /**
-     * The name of the model library, for example, “transformers”.
-     *
-     * @param string $library
-     */
-    public function setLibrary($library)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLibrary()
-    {
-    }
-    /**
-     * The region in which the model is used, for example, “us-central1”.
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocation()
-    {
-    }
-    /**
-     * The name of the AI model, for example, "gemini:1.0.0".
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The publisher of the model, for example, “google” or “nvidia”.
-     *
-     * @param string $publisher
-     */
-    public function setPublisher($publisher)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPublisher()
-    {
-    }
-    /**
-     * The purpose of the model, for example, "Inteference" or "Training".
-     *
-     * @param string $usageCategory
-     */
-    public function setUsageCategory($usageCategory)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUsageCategory()
+    class Google_Service_SecurityCommandCenter_AiModel extends \Google\Service\SecurityCommandCenter\AiModel
     {
     }
 }

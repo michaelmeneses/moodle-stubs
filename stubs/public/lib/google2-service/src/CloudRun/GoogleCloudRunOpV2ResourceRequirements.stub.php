@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleCloudRunOpV2ResourceRequirements extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $cpuIdle;
-    /**
-     * @var string[]
-     */
-    public $limits;
-    /**
-     * @param bool
-     */
-    public function setCpuIdle($cpuIdle)
+namespace Google\Service\CloudRun {
+    class GoogleCloudRunOpV2ResourceRequirements extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $cpuIdle;
+        /**
+         * @var string[]
+         */
+        public $limits;
+        /**
+         * @param bool
+         */
+        public function setCpuIdle($cpuIdle)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCpuIdle()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setLimits($limits)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLimits()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudRun\GoogleCloudRunOpV2ResourceRequirements registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCpuIdle()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setLimits($limits)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLimits()
+    class Google_Service_CloudRun_GoogleCloudRunOpV2ResourceRequirements extends \Google\Service\CloudRun\GoogleCloudRunOpV2ResourceRequirements
     {
     }
 }

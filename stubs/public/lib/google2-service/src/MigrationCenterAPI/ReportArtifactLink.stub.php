@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class ReportArtifactLink extends \Google\Model
-{
-    /**
-     * Output only. URI of the artifact.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * Output only. Expiration time of the URI.
-     *
-     * @var string
-     */
-    public $uriExpirationTime;
-    /**
-     * Output only. URI of the artifact.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
+namespace Google\Service\MigrationCenterAPI {
+    class ReportArtifactLink extends \Google\Model
     {
+        /**
+         * Output only. URI of the artifact.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * Output only. Expiration time of the URI.
+         *
+         * @var string
+         */
+        public $uriExpirationTime;
+        /**
+         * Output only. URI of the artifact.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
+        /**
+         * Output only. Expiration time of the URI.
+         *
+         * @param string $uriExpirationTime
+         */
+        public function setUriExpirationTime($uriExpirationTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUriExpirationTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\ReportArtifactLink registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUri()
-    {
-    }
-    /**
-     * Output only. Expiration time of the URI.
-     *
-     * @param string $uriExpirationTime
-     */
-    public function setUriExpirationTime($uriExpirationTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUriExpirationTime()
+    class Google_Service_MigrationCenterAPI_ReportArtifactLink extends \Google\Service\MigrationCenterAPI\ReportArtifactLink
     {
     }
 }

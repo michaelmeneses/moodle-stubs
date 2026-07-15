@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise;
-
-class WebAppsListResponse extends \Google\Collection
-{
-    protected $collection_key = 'webApp';
-    protected $webAppType = WebApp::class;
-    protected $webAppDataType = 'array';
-    /**
-     * The manifest describing a web app.
-     *
-     * @param WebApp[] $webApp
-     */
-    public function setWebApp($webApp)
+namespace Google\Service\AndroidEnterprise {
+    class WebAppsListResponse extends \Google\Collection
     {
+        protected $collection_key = 'webApp';
+        protected $webAppType = WebApp::class;
+        protected $webAppDataType = 'array';
+        /**
+         * The manifest describing a web app.
+         *
+         * @param WebApp[] $webApp
+         */
+        public function setWebApp($webApp)
+        {
+        }
+        /**
+         * @return WebApp[]
+         */
+        public function getWebApp()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return WebApp[]
+     * Runtime class alias of \Google\Service\AndroidEnterprise\WebAppsListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getWebApp()
+    class Google_Service_AndroidEnterprise_WebAppsListResponse extends \Google\Service\AndroidEnterprise\WebAppsListResponse
     {
     }
 }

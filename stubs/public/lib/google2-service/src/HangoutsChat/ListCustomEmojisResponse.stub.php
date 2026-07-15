@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class ListCustomEmojisResponse extends \Google\Collection
-{
-    protected $collection_key = 'customEmojis';
-    protected $customEmojisType = CustomEmoji::class;
-    protected $customEmojisDataType = 'array';
-    /**
-     * A token that you can send as `pageToken` to retrieve the next page of
-     * results. If empty, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Unordered list. List of custom emojis.
-     *
-     * @param CustomEmoji[] $customEmojis
-     */
-    public function setCustomEmojis($customEmojis)
+namespace Google\Service\HangoutsChat {
+    class ListCustomEmojisResponse extends \Google\Collection
     {
+        protected $collection_key = 'customEmojis';
+        protected $customEmojisType = CustomEmoji::class;
+        protected $customEmojisDataType = 'array';
+        /**
+         * A token that you can send as `pageToken` to retrieve the next page of
+         * results. If empty, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Unordered list. List of custom emojis.
+         *
+         * @param CustomEmoji[] $customEmojis
+         */
+        public function setCustomEmojis($customEmojis)
+        {
+        }
+        /**
+         * @return CustomEmoji[]
+         */
+        public function getCustomEmojis()
+        {
+        }
+        /**
+         * A token that you can send as `pageToken` to retrieve the next page of
+         * results. If empty, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CustomEmoji[]
+     * Runtime class alias of \Google\Service\HangoutsChat\ListCustomEmojisResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomEmojis()
-    {
-    }
-    /**
-     * A token that you can send as `pageToken` to retrieve the next page of
-     * results. If empty, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_HangoutsChat_ListCustomEmojisResponse extends \Google\Service\HangoutsChat\ListCustomEmojisResponse
     {
     }
 }

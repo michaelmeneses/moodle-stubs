@@ -21,59 +21,68 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Pollen;
-
-class DayInfo extends \Google\Collection
-{
-    protected $collection_key = 'pollenTypeInfo';
-    protected $dateType = Date::class;
-    protected $dateDataType = '';
-    protected $plantInfoType = PlantInfo::class;
-    protected $plantInfoDataType = 'array';
-    protected $pollenTypeInfoType = PollenTypeInfo::class;
-    protected $pollenTypeInfoDataType = 'array';
-    /**
-     * The date in UTC at which the pollen forecast data is represented.
-     *
-     * @param Date $date
-     */
-    public function setDate(Date $date)
+namespace Google\Service\Pollen {
+    class DayInfo extends \Google\Collection
     {
+        protected $collection_key = 'pollenTypeInfo';
+        protected $dateType = Date::class;
+        protected $dateDataType = '';
+        protected $plantInfoType = PlantInfo::class;
+        protected $plantInfoDataType = 'array';
+        protected $pollenTypeInfoType = PollenTypeInfo::class;
+        protected $pollenTypeInfoDataType = 'array';
+        /**
+         * The date in UTC at which the pollen forecast data is represented.
+         *
+         * @param Date $date
+         */
+        public function setDate(Date $date)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getDate()
+        {
+        }
+        /**
+         * This list will include up to 15 pollen species affecting the location
+         * specified in the request.
+         *
+         * @param PlantInfo[] $plantInfo
+         */
+        public function setPlantInfo($plantInfo)
+        {
+        }
+        /**
+         * @return PlantInfo[]
+         */
+        public function getPlantInfo()
+        {
+        }
+        /**
+         * This list will include up to three pollen types (GRASS, WEED, TREE)
+         * affecting the location specified in the request.
+         *
+         * @param PollenTypeInfo[] $pollenTypeInfo
+         */
+        public function setPollenTypeInfo($pollenTypeInfo)
+        {
+        }
+        /**
+         * @return PollenTypeInfo[]
+         */
+        public function getPollenTypeInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Date
+     * Runtime class alias of \Google\Service\Pollen\DayInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDate()
-    {
-    }
-    /**
-     * This list will include up to 15 pollen species affecting the location
-     * specified in the request.
-     *
-     * @param PlantInfo[] $plantInfo
-     */
-    public function setPlantInfo($plantInfo)
-    {
-    }
-    /**
-     * @return PlantInfo[]
-     */
-    public function getPlantInfo()
-    {
-    }
-    /**
-     * This list will include up to three pollen types (GRASS, WEED, TREE)
-     * affecting the location specified in the request.
-     *
-     * @param PollenTypeInfo[] $pollenTypeInfo
-     */
-    public function setPollenTypeInfo($pollenTypeInfo)
-    {
-    }
-    /**
-     * @return PollenTypeInfo[]
-     */
-    public function getPollenTypeInfo()
+    class Google_Service_Pollen_DayInfo extends \Google\Service\Pollen\DayInfo
     {
     }
 }

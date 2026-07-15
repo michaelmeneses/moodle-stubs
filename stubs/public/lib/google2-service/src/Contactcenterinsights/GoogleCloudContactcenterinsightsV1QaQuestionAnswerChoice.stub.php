@@ -21,117 +21,126 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1QaQuestionAnswerChoice extends \Google\Model
-{
-    /**
-     * Boolean value.
-     *
-     * @var bool
-     */
-    public $boolValue;
-    /**
-     * A short string used as an identifier.
-     *
-     * @var string
-     */
-    public $key;
-    /**
-     * A value of "Not Applicable (N/A)". If provided, this field may only be set
-     * to `true`. If a question receives this answer, it will be excluded from any
-     * score calculations.
-     *
-     * @var bool
-     */
-    public $naValue;
-    /**
-     * Numerical value.
-     *
-     * @var 
-     */
-    public $numValue;
-    /**
-     * Numerical score of the answer, used for generating the overall score of a
-     * QaScorecardResult. If the answer uses na_value, this field is unused.
-     *
-     * @var 
-     */
-    public $score;
-    /**
-     * String value.
-     *
-     * @var string
-     */
-    public $strValue;
-    /**
-     * Boolean value.
-     *
-     * @param bool $boolValue
-     */
-    public function setBoolValue($boolValue)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1QaQuestionAnswerChoice extends \Google\Model
     {
+        /**
+         * Boolean value.
+         *
+         * @var bool
+         */
+        public $boolValue;
+        /**
+         * A short string used as an identifier.
+         *
+         * @var string
+         */
+        public $key;
+        /**
+         * A value of "Not Applicable (N/A)". If provided, this field may only be set
+         * to `true`. If a question receives this answer, it will be excluded from any
+         * score calculations.
+         *
+         * @var bool
+         */
+        public $naValue;
+        /**
+         * Numerical value.
+         *
+         * @var 
+         */
+        public $numValue;
+        /**
+         * Numerical score of the answer, used for generating the overall score of a
+         * QaScorecardResult. If the answer uses na_value, this field is unused.
+         *
+         * @var 
+         */
+        public $score;
+        /**
+         * String value.
+         *
+         * @var string
+         */
+        public $strValue;
+        /**
+         * Boolean value.
+         *
+         * @param bool $boolValue
+         */
+        public function setBoolValue($boolValue)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getBoolValue()
+        {
+        }
+        /**
+         * A short string used as an identifier.
+         *
+         * @param string $key
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * A value of "Not Applicable (N/A)". If provided, this field may only be set
+         * to `true`. If a question receives this answer, it will be excluded from any
+         * score calculations.
+         *
+         * @param bool $naValue
+         */
+        public function setNaValue($naValue)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getNaValue()
+        {
+        }
+        public function setNumValue($numValue)
+        {
+        }
+        public function getNumValue()
+        {
+        }
+        public function setScore($score)
+        {
+        }
+        public function getScore()
+        {
+        }
+        /**
+         * String value.
+         *
+         * @param string $strValue
+         */
+        public function setStrValue($strValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStrValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1QaQuestionAnswerChoice registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBoolValue()
-    {
-    }
-    /**
-     * A short string used as an identifier.
-     *
-     * @param string $key
-     */
-    public function setKey($key)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKey()
-    {
-    }
-    /**
-     * A value of "Not Applicable (N/A)". If provided, this field may only be set
-     * to `true`. If a question receives this answer, it will be excluded from any
-     * score calculations.
-     *
-     * @param bool $naValue
-     */
-    public function setNaValue($naValue)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getNaValue()
-    {
-    }
-    public function setNumValue($numValue)
-    {
-    }
-    public function getNumValue()
-    {
-    }
-    public function setScore($score)
-    {
-    }
-    public function getScore()
-    {
-    }
-    /**
-     * String value.
-     *
-     * @param string $strValue
-     */
-    public function setStrValue($strValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStrValue()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1QaQuestionAnswerChoice extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1QaQuestionAnswerChoice
     {
     }
 }

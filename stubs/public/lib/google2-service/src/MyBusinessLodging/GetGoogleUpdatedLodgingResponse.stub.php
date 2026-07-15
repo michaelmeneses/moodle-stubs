@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessLodging;
-
-class GetGoogleUpdatedLodgingResponse extends \Google\Model
-{
-    /**
-     * Required. The fields in the Lodging that have been updated by Google.
-     * Repeated field items are not individually specified.
-     *
-     * @var string
-     */
-    public $diffMask;
-    protected $lodgingType = Lodging::class;
-    protected $lodgingDataType = '';
-    /**
-     * Required. The fields in the Lodging that have been updated by Google.
-     * Repeated field items are not individually specified.
-     *
-     * @param string $diffMask
-     */
-    public function setDiffMask($diffMask)
+namespace Google\Service\MyBusinessLodging {
+    class GetGoogleUpdatedLodgingResponse extends \Google\Model
     {
+        /**
+         * Required. The fields in the Lodging that have been updated by Google.
+         * Repeated field items are not individually specified.
+         *
+         * @var string
+         */
+        public $diffMask;
+        protected $lodgingType = Lodging::class;
+        protected $lodgingDataType = '';
+        /**
+         * Required. The fields in the Lodging that have been updated by Google.
+         * Repeated field items are not individually specified.
+         *
+         * @param string $diffMask
+         */
+        public function setDiffMask($diffMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDiffMask()
+        {
+        }
+        /**
+         * Required. The Google updated Lodging.
+         *
+         * @param Lodging $lodging
+         */
+        public function setLodging(Lodging $lodging)
+        {
+        }
+        /**
+         * @return Lodging
+         */
+        public function getLodging()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MyBusinessLodging\GetGoogleUpdatedLodgingResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDiffMask()
-    {
-    }
-    /**
-     * Required. The Google updated Lodging.
-     *
-     * @param Lodging $lodging
-     */
-    public function setLodging(Lodging $lodging)
-    {
-    }
-    /**
-     * @return Lodging
-     */
-    public function getLodging()
+    class Google_Service_MyBusinessLodging_GetGoogleUpdatedLodgingResponse extends \Google\Service\MyBusinessLodging\GetGoogleUpdatedLodgingResponse
     {
     }
 }

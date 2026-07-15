@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1ListCustomerRepricingConfigsResponse extends \Google\Collection
-{
-    protected $collection_key = 'customerRepricingConfigs';
-    protected $customerRepricingConfigsType = GoogleCloudChannelV1CustomerRepricingConfig::class;
-    protected $customerRepricingConfigsDataType = 'array';
-    /**
-     * A token to retrieve the next page of results. Pass to
-     * ListCustomerRepricingConfigsRequest.page_token to obtain that page.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The repricing configs for this channel partner.
-     *
-     * @param GoogleCloudChannelV1CustomerRepricingConfig[] $customerRepricingConfigs
-     */
-    public function setCustomerRepricingConfigs($customerRepricingConfigs)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1ListCustomerRepricingConfigsResponse extends \Google\Collection
     {
+        protected $collection_key = 'customerRepricingConfigs';
+        protected $customerRepricingConfigsType = GoogleCloudChannelV1CustomerRepricingConfig::class;
+        protected $customerRepricingConfigsDataType = 'array';
+        /**
+         * A token to retrieve the next page of results. Pass to
+         * ListCustomerRepricingConfigsRequest.page_token to obtain that page.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The repricing configs for this channel partner.
+         *
+         * @param GoogleCloudChannelV1CustomerRepricingConfig[] $customerRepricingConfigs
+         */
+        public function setCustomerRepricingConfigs($customerRepricingConfigs)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1CustomerRepricingConfig[]
+         */
+        public function getCustomerRepricingConfigs()
+        {
+        }
+        /**
+         * A token to retrieve the next page of results. Pass to
+         * ListCustomerRepricingConfigsRequest.page_token to obtain that page.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudChannelV1CustomerRepricingConfig[]
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1ListCustomerRepricingConfigsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomerRepricingConfigs()
-    {
-    }
-    /**
-     * A token to retrieve the next page of results. Pass to
-     * ListCustomerRepricingConfigsRequest.page_token to obtain that page.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1ListCustomerRepricingConfigsResponse extends \Google\Service\Cloudchannel\GoogleCloudChannelV1ListCustomerRepricingConfigsResponse
     {
     }
 }

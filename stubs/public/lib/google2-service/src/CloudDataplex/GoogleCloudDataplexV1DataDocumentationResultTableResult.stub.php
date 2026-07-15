@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1DataDocumentationResultTableResult extends \Google\Collection
-{
-    protected $collection_key = 'queries';
-    /**
-     * Output only. The service-qualified full resource name of the cloud
-     * resource. Ex: //bigquery.googleapis.com/projects/PROJECT_ID/datasets/DATASE
-     * T_ID/tables/TABLE_ID
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. Generated description of the table.
-     *
-     * @var string
-     */
-    public $overview;
-    protected $queriesType = GoogleCloudDataplexV1DataDocumentationResultQuery::class;
-    protected $queriesDataType = 'array';
-    protected $schemaType = GoogleCloudDataplexV1DataDocumentationResultSchema::class;
-    protected $schemaDataType = '';
-    /**
-     * Output only. The service-qualified full resource name of the cloud
-     * resource. Ex: //bigquery.googleapis.com/projects/PROJECT_ID/datasets/DATASE
-     * T_ID/tables/TABLE_ID
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1DataDocumentationResultTableResult extends \Google\Collection
     {
+        protected $collection_key = 'queries';
+        /**
+         * Output only. The service-qualified full resource name of the cloud
+         * resource. Ex: //bigquery.googleapis.com/projects/PROJECT_ID/datasets/DATASE
+         * T_ID/tables/TABLE_ID
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. Generated description of the table.
+         *
+         * @var string
+         */
+        public $overview;
+        protected $queriesType = GoogleCloudDataplexV1DataDocumentationResultQuery::class;
+        protected $queriesDataType = 'array';
+        protected $schemaType = GoogleCloudDataplexV1DataDocumentationResultSchema::class;
+        protected $schemaDataType = '';
+        /**
+         * Output only. The service-qualified full resource name of the cloud
+         * resource. Ex: //bigquery.googleapis.com/projects/PROJECT_ID/datasets/DATASE
+         * T_ID/tables/TABLE_ID
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. Generated description of the table.
+         *
+         * @param string $overview
+         */
+        public function setOverview($overview)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOverview()
+        {
+        }
+        /**
+         * Output only. Sample SQL queries for the table.
+         *
+         * @param GoogleCloudDataplexV1DataDocumentationResultQuery[] $queries
+         */
+        public function setQueries($queries)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1DataDocumentationResultQuery[]
+         */
+        public function getQueries()
+        {
+        }
+        /**
+         * Output only. Schema of the table with generated metadata of the columns in
+         * the schema.
+         *
+         * @param GoogleCloudDataplexV1DataDocumentationResultSchema $schema
+         */
+        public function setSchema(GoogleCloudDataplexV1DataDocumentationResultSchema $schema)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1DataDocumentationResultSchema
+         */
+        public function getSchema()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataDocumentationResultTableResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. Generated description of the table.
-     *
-     * @param string $overview
-     */
-    public function setOverview($overview)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOverview()
-    {
-    }
-    /**
-     * Output only. Sample SQL queries for the table.
-     *
-     * @param GoogleCloudDataplexV1DataDocumentationResultQuery[] $queries
-     */
-    public function setQueries($queries)
-    {
-    }
-    /**
-     * @return GoogleCloudDataplexV1DataDocumentationResultQuery[]
-     */
-    public function getQueries()
-    {
-    }
-    /**
-     * Output only. Schema of the table with generated metadata of the columns in
-     * the schema.
-     *
-     * @param GoogleCloudDataplexV1DataDocumentationResultSchema $schema
-     */
-    public function setSchema(GoogleCloudDataplexV1DataDocumentationResultSchema $schema)
-    {
-    }
-    /**
-     * @return GoogleCloudDataplexV1DataDocumentationResultSchema
-     */
-    public function getSchema()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1DataDocumentationResultTableResult extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataDocumentationResultTableResult
     {
     }
 }

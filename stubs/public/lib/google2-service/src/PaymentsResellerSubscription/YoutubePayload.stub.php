@@ -21,91 +21,100 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PaymentsResellerSubscription;
-
-class YoutubePayload extends \Google\Collection
-{
-    /**
-     * Unspecified. Should not use, reserved as an invalid value.
-     */
-    public const PARTNER_PLAN_TYPE_PARTNER_PLAN_TYPE_UNSPECIFIED = 'PARTNER_PLAN_TYPE_UNSPECIFIED';
-    /**
-     * This item is offered as a standalone product to the user.
-     */
-    public const PARTNER_PLAN_TYPE_PARTNER_PLAN_TYPE_STANDALONE = 'PARTNER_PLAN_TYPE_STANDALONE';
-    /**
-     * This item is bundled with another partner offering, the item is provisioned
-     * at purchase time.
-     */
-    public const PARTNER_PLAN_TYPE_PARTNER_PLAN_TYPE_HARD_BUNDLE = 'PARTNER_PLAN_TYPE_HARD_BUNDLE';
-    /**
-     * This item is bundled with another partner offering, the item is provisioned
-     * after puchase, when the user opts in this Google service.
-     */
-    public const PARTNER_PLAN_TYPE_PARTNER_PLAN_TYPE_SOFT_BUNDLE = 'PARTNER_PLAN_TYPE_SOFT_BUNDLE';
-    protected $collection_key = 'partnerEligibilityIds';
-    /**
-     * Output only. The access expiration time for this line item.
-     *
-     * @var string
-     */
-    public $accessEndTime;
-    /**
-     * The list of eligibility_ids which are applicable for the line item.
-     *
-     * @var string[]
-     */
-    public $partnerEligibilityIds;
-    /**
-     * Optional. Specifies the plan type offered to the end user by the partner.
-     *
-     * @var string
-     */
-    public $partnerPlanType;
-    /**
-     * Output only. The access expiration time for this line item.
-     *
-     * @param string $accessEndTime
-     */
-    public function setAccessEndTime($accessEndTime)
+namespace Google\Service\PaymentsResellerSubscription {
+    class YoutubePayload extends \Google\Collection
     {
+        /**
+         * Unspecified. Should not use, reserved as an invalid value.
+         */
+        public const PARTNER_PLAN_TYPE_PARTNER_PLAN_TYPE_UNSPECIFIED = 'PARTNER_PLAN_TYPE_UNSPECIFIED';
+        /**
+         * This item is offered as a standalone product to the user.
+         */
+        public const PARTNER_PLAN_TYPE_PARTNER_PLAN_TYPE_STANDALONE = 'PARTNER_PLAN_TYPE_STANDALONE';
+        /**
+         * This item is bundled with another partner offering, the item is provisioned
+         * at purchase time.
+         */
+        public const PARTNER_PLAN_TYPE_PARTNER_PLAN_TYPE_HARD_BUNDLE = 'PARTNER_PLAN_TYPE_HARD_BUNDLE';
+        /**
+         * This item is bundled with another partner offering, the item is provisioned
+         * after puchase, when the user opts in this Google service.
+         */
+        public const PARTNER_PLAN_TYPE_PARTNER_PLAN_TYPE_SOFT_BUNDLE = 'PARTNER_PLAN_TYPE_SOFT_BUNDLE';
+        protected $collection_key = 'partnerEligibilityIds';
+        /**
+         * Output only. The access expiration time for this line item.
+         *
+         * @var string
+         */
+        public $accessEndTime;
+        /**
+         * The list of eligibility_ids which are applicable for the line item.
+         *
+         * @var string[]
+         */
+        public $partnerEligibilityIds;
+        /**
+         * Optional. Specifies the plan type offered to the end user by the partner.
+         *
+         * @var string
+         */
+        public $partnerPlanType;
+        /**
+         * Output only. The access expiration time for this line item.
+         *
+         * @param string $accessEndTime
+         */
+        public function setAccessEndTime($accessEndTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccessEndTime()
+        {
+        }
+        /**
+         * The list of eligibility_ids which are applicable for the line item.
+         *
+         * @param string[] $partnerEligibilityIds
+         */
+        public function setPartnerEligibilityIds($partnerEligibilityIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPartnerEligibilityIds()
+        {
+        }
+        /**
+         * Optional. Specifies the plan type offered to the end user by the partner.
+         *
+         * Accepted values: PARTNER_PLAN_TYPE_UNSPECIFIED,
+         * PARTNER_PLAN_TYPE_STANDALONE, PARTNER_PLAN_TYPE_HARD_BUNDLE,
+         * PARTNER_PLAN_TYPE_SOFT_BUNDLE
+         *
+         * @param self::PARTNER_PLAN_TYPE_* $partnerPlanType
+         */
+        public function setPartnerPlanType($partnerPlanType)
+        {
+        }
+        /**
+         * @return self::PARTNER_PLAN_TYPE_*
+         */
+        public function getPartnerPlanType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PaymentsResellerSubscription\YoutubePayload registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccessEndTime()
-    {
-    }
-    /**
-     * The list of eligibility_ids which are applicable for the line item.
-     *
-     * @param string[] $partnerEligibilityIds
-     */
-    public function setPartnerEligibilityIds($partnerEligibilityIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPartnerEligibilityIds()
-    {
-    }
-    /**
-     * Optional. Specifies the plan type offered to the end user by the partner.
-     *
-     * Accepted values: PARTNER_PLAN_TYPE_UNSPECIFIED,
-     * PARTNER_PLAN_TYPE_STANDALONE, PARTNER_PLAN_TYPE_HARD_BUNDLE,
-     * PARTNER_PLAN_TYPE_SOFT_BUNDLE
-     *
-     * @param self::PARTNER_PLAN_TYPE_* $partnerPlanType
-     */
-    public function setPartnerPlanType($partnerPlanType)
-    {
-    }
-    /**
-     * @return self::PARTNER_PLAN_TYPE_*
-     */
-    public function getPartnerPlanType()
+    class Google_Service_PaymentsResellerSubscription_YoutubePayload extends \Google\Service\PaymentsResellerSubscription\YoutubePayload
     {
     }
 }

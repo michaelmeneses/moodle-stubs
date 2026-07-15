@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Logging;
-
-class RecentQuery extends \Google\Model
-{
-    /**
-     * Output only. The timestamp when this query was last run.
-     *
-     * @var string
-     */
-    public $lastRunTime;
-    protected $loggingQueryType = LoggingQuery::class;
-    protected $loggingQueryDataType = '';
-    /**
-     * Output only. Resource name of the recent query.In the format:
-     * "projects/[PROJECT_ID]/locations/[LOCATION_ID]/recentQueries/[QUERY_ID]"
-     * For a list of supported locations, see Supported Regions
-     * (https://cloud.google.com/logging/docs/region-support)The QUERY_ID is a
-     * system generated alphanumeric ID.
-     *
-     * @var string
-     */
-    public $name;
-    protected $opsAnalyticsQueryType = OpsAnalyticsQuery::class;
-    protected $opsAnalyticsQueryDataType = '';
-    /**
-     * Output only. The timestamp when this query was last run.
-     *
-     * @param string $lastRunTime
-     */
-    public function setLastRunTime($lastRunTime)
+namespace Google\Service\Logging {
+    class RecentQuery extends \Google\Model
     {
+        /**
+         * Output only. The timestamp when this query was last run.
+         *
+         * @var string
+         */
+        public $lastRunTime;
+        protected $loggingQueryType = LoggingQuery::class;
+        protected $loggingQueryDataType = '';
+        /**
+         * Output only. Resource name of the recent query.In the format:
+         * "projects/[PROJECT_ID]/locations/[LOCATION_ID]/recentQueries/[QUERY_ID]"
+         * For a list of supported locations, see Supported Regions
+         * (https://cloud.google.com/logging/docs/region-support)The QUERY_ID is a
+         * system generated alphanumeric ID.
+         *
+         * @var string
+         */
+        public $name;
+        protected $opsAnalyticsQueryType = OpsAnalyticsQuery::class;
+        protected $opsAnalyticsQueryDataType = '';
+        /**
+         * Output only. The timestamp when this query was last run.
+         *
+         * @param string $lastRunTime
+         */
+        public function setLastRunTime($lastRunTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastRunTime()
+        {
+        }
+        /**
+         * Logging query that can be executed in Logs Explorer or via Logging API.
+         *
+         * @param LoggingQuery $loggingQuery
+         */
+        public function setLoggingQuery(LoggingQuery $loggingQuery)
+        {
+        }
+        /**
+         * @return LoggingQuery
+         */
+        public function getLoggingQuery()
+        {
+        }
+        /**
+         * Output only. Resource name of the recent query.In the format:
+         * "projects/[PROJECT_ID]/locations/[LOCATION_ID]/recentQueries/[QUERY_ID]"
+         * For a list of supported locations, see Supported Regions
+         * (https://cloud.google.com/logging/docs/region-support)The QUERY_ID is a
+         * system generated alphanumeric ID.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Analytics query that can be executed in Log Analytics.
+         *
+         * @param OpsAnalyticsQuery $opsAnalyticsQuery
+         */
+        public function setOpsAnalyticsQuery(OpsAnalyticsQuery $opsAnalyticsQuery)
+        {
+        }
+        /**
+         * @return OpsAnalyticsQuery
+         */
+        public function getOpsAnalyticsQuery()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Logging\RecentQuery registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLastRunTime()
-    {
-    }
-    /**
-     * Logging query that can be executed in Logs Explorer or via Logging API.
-     *
-     * @param LoggingQuery $loggingQuery
-     */
-    public function setLoggingQuery(LoggingQuery $loggingQuery)
-    {
-    }
-    /**
-     * @return LoggingQuery
-     */
-    public function getLoggingQuery()
-    {
-    }
-    /**
-     * Output only. Resource name of the recent query.In the format:
-     * "projects/[PROJECT_ID]/locations/[LOCATION_ID]/recentQueries/[QUERY_ID]"
-     * For a list of supported locations, see Supported Regions
-     * (https://cloud.google.com/logging/docs/region-support)The QUERY_ID is a
-     * system generated alphanumeric ID.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Analytics query that can be executed in Log Analytics.
-     *
-     * @param OpsAnalyticsQuery $opsAnalyticsQuery
-     */
-    public function setOpsAnalyticsQuery(OpsAnalyticsQuery $opsAnalyticsQuery)
-    {
-    }
-    /**
-     * @return OpsAnalyticsQuery
-     */
-    public function getOpsAnalyticsQuery()
+    class Google_Service_Logging_RecentQuery extends \Google\Service\Logging\RecentQuery
     {
     }
 }

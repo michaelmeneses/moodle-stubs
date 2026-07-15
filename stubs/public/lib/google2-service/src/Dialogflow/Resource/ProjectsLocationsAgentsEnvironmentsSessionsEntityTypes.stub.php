@@ -21,96 +21,108 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow\Resource;
-
-/**
- * The "entityTypes" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dialogflowService = new Google\Service\Dialogflow(...);
- *   $entityTypes = $dialogflowService->projects_locations_agents_environments_sessions_entityTypes;
- *  </code>
- */
-class ProjectsLocationsAgentsEnvironmentsSessionsEntityTypes extends \Google\Service\Resource
-{
+namespace Google\Service\Dialogflow\Resource {
+    use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ListSessionEntityTypesResponse;
+    use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3SessionEntityType;
+    use Google\Service\Dialogflow\GoogleProtobufEmpty;
     /**
-     * Creates a session entity type. (entityTypes.create)
-     *
-     * @param string $parent Required. The session to create a session entity type
-     * for. Format: `projects//locations//agents//sessions/` or
-     * `projects//locations//agents//environments//sessions/`. If `Environment ID`
-     * is not specified, we assume default 'draft' environment.
-     * @param GoogleCloudDialogflowCxV3SessionEntityType $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudDialogflowCxV3SessionEntityType
-     * @throws \Google\Service\Exception
+     * The "entityTypes" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dialogflowService = new Google\Service\Dialogflow(...);
+     *   $entityTypes = $dialogflowService->projects_locations_agents_environments_sessions_entityTypes;
+     *  </code>
      */
-    public function create($parent, GoogleCloudDialogflowCxV3SessionEntityType $postBody, $optParams = [])
+    class ProjectsLocationsAgentsEnvironmentsSessionsEntityTypes extends \Google\Service\Resource
     {
+        /**
+         * Creates a session entity type. (entityTypes.create)
+         *
+         * @param string $parent Required. The session to create a session entity type
+         * for. Format: `projects//locations//agents//sessions/` or
+         * `projects//locations//agents//environments//sessions/`. If `Environment ID`
+         * is not specified, we assume default 'draft' environment.
+         * @param GoogleCloudDialogflowCxV3SessionEntityType $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudDialogflowCxV3SessionEntityType
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, GoogleCloudDialogflowCxV3SessionEntityType $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes the specified session entity type. (entityTypes.delete)
+         *
+         * @param string $name Required. The name of the session entity type to delete.
+         * Format: `projects//locations//agents//sessions//entityTypes/` or
+         * `projects//locations//agents//environments//sessions//entityTypes/`. If
+         * `Environment ID` is not specified, we assume default 'draft' environment.
+         * @param array $optParams Optional parameters.
+         * @return GoogleProtobufEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves the specified session entity type. (entityTypes.get)
+         *
+         * @param string $name Required. The name of the session entity type. Format:
+         * `projects//locations//agents//sessions//entityTypes/` or
+         * `projects//locations//agents//environments//sessions//entityTypes/`. If
+         * `Environment ID` is not specified, we assume default 'draft' environment.
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudDialogflowCxV3SessionEntityType
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Returns the list of all session entity types in the specified session.
+         * (entityTypes.listProjectsLocationsAgentsEnvironmentsSessionsEntityTypes)
+         *
+         * @param string $parent Required. The session to list all session entity types
+         * from. Format: `projects//locations//agents//sessions/` or
+         * `projects//locations//agents//environments//sessions/`. If `Environment ID`
+         * is not specified, we assume default 'draft' environment.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The maximum number of items to return in a single
+         * page. By default 100 and at most 1000.
+         * @opt_param string pageToken The next_page_token value returned from a
+         * previous list request.
+         * @return GoogleCloudDialogflowCxV3ListSessionEntityTypesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsAgentsEnvironmentsSessionsEntityTypes($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates the specified session entity type. (entityTypes.patch)
+         *
+         * @param string $name Required. The unique identifier of the session entity
+         * type. Format: `projects//locations//agents//sessions//entityTypes/` or
+         * `projects//locations//agents//environments//sessions//entityTypes/`. If
+         * `Environment ID` is not specified, we assume default 'draft' environment.
+         * @param GoogleCloudDialogflowCxV3SessionEntityType $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask The mask to control which fields get updated.
+         * @return GoogleCloudDialogflowCxV3SessionEntityType
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, GoogleCloudDialogflowCxV3SessionEntityType $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes the specified session entity type. (entityTypes.delete)
-     *
-     * @param string $name Required. The name of the session entity type to delete.
-     * Format: `projects//locations//agents//sessions//entityTypes/` or
-     * `projects//locations//agents//environments//sessions//entityTypes/`. If
-     * `Environment ID` is not specified, we assume default 'draft' environment.
-     * @param array $optParams Optional parameters.
-     * @return GoogleProtobufEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Dialogflow\Resource\ProjectsLocationsAgentsEnvironmentsSessionsEntityTypes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Retrieves the specified session entity type. (entityTypes.get)
-     *
-     * @param string $name Required. The name of the session entity type. Format:
-     * `projects//locations//agents//sessions//entityTypes/` or
-     * `projects//locations//agents//environments//sessions//entityTypes/`. If
-     * `Environment ID` is not specified, we assume default 'draft' environment.
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudDialogflowCxV3SessionEntityType
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Returns the list of all session entity types in the specified session.
-     * (entityTypes.listProjectsLocationsAgentsEnvironmentsSessionsEntityTypes)
-     *
-     * @param string $parent Required. The session to list all session entity types
-     * from. Format: `projects//locations//agents//sessions/` or
-     * `projects//locations//agents//environments//sessions/`. If `Environment ID`
-     * is not specified, we assume default 'draft' environment.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The maximum number of items to return in a single
-     * page. By default 100 and at most 1000.
-     * @opt_param string pageToken The next_page_token value returned from a
-     * previous list request.
-     * @return GoogleCloudDialogflowCxV3ListSessionEntityTypesResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsAgentsEnvironmentsSessionsEntityTypes($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates the specified session entity type. (entityTypes.patch)
-     *
-     * @param string $name Required. The unique identifier of the session entity
-     * type. Format: `projects//locations//agents//sessions//entityTypes/` or
-     * `projects//locations//agents//environments//sessions//entityTypes/`. If
-     * `Environment ID` is not specified, we assume default 'draft' environment.
-     * @param GoogleCloudDialogflowCxV3SessionEntityType $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask The mask to control which fields get updated.
-     * @return GoogleCloudDialogflowCxV3SessionEntityType
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, GoogleCloudDialogflowCxV3SessionEntityType $postBody, $optParams = [])
+    class Google_Service_Dialogflow_Resource_ProjectsLocationsAgentsEnvironmentsSessionsEntityTypes extends \Google\Service\Dialogflow\Resource\ProjectsLocationsAgentsEnvironmentsSessionsEntityTypes
     {
     }
 }

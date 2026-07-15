@@ -21,196 +21,205 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class SslCert extends \Google\Model
-{
-    /**
-     * PEM representation.
-     *
-     * @var string
-     */
-    public $cert;
-    /**
-     * Serial number, as extracted from the certificate.
-     *
-     * @var string
-     */
-    public $certSerialNumber;
-    /**
-     * User supplied name. Constrained to [a-zA-Z.-_ ]+.
-     *
-     * @var string
-     */
-    public $commonName;
-    /**
-     * The time when the certificate was created in [RFC
-     * 3339](https://tools.ietf.org/html/rfc3339) format, for example
-     * `2012-11-15T16:19:00.094Z`
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * The time when the certificate expires in [RFC
-     * 3339](https://tools.ietf.org/html/rfc3339) format, for example
-     * `2012-11-15T16:19:00.094Z`.
-     *
-     * @var string
-     */
-    public $expirationTime;
-    /**
-     * Name of the database instance.
-     *
-     * @var string
-     */
-    public $instance;
-    /**
-     * This is always `sql#sslCert`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The URI of this resource.
-     *
-     * @var string
-     */
-    public $selfLink;
-    /**
-     * Sha1 Fingerprint.
-     *
-     * @var string
-     */
-    public $sha1Fingerprint;
-    /**
-     * PEM representation.
-     *
-     * @param string $cert
-     */
-    public function setCert($cert)
+namespace Google\Service\SQLAdmin {
+    class SslCert extends \Google\Model
     {
+        /**
+         * PEM representation.
+         *
+         * @var string
+         */
+        public $cert;
+        /**
+         * Serial number, as extracted from the certificate.
+         *
+         * @var string
+         */
+        public $certSerialNumber;
+        /**
+         * User supplied name. Constrained to [a-zA-Z.-_ ]+.
+         *
+         * @var string
+         */
+        public $commonName;
+        /**
+         * The time when the certificate was created in [RFC
+         * 3339](https://tools.ietf.org/html/rfc3339) format, for example
+         * `2012-11-15T16:19:00.094Z`
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * The time when the certificate expires in [RFC
+         * 3339](https://tools.ietf.org/html/rfc3339) format, for example
+         * `2012-11-15T16:19:00.094Z`.
+         *
+         * @var string
+         */
+        public $expirationTime;
+        /**
+         * Name of the database instance.
+         *
+         * @var string
+         */
+        public $instance;
+        /**
+         * This is always `sql#sslCert`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The URI of this resource.
+         *
+         * @var string
+         */
+        public $selfLink;
+        /**
+         * Sha1 Fingerprint.
+         *
+         * @var string
+         */
+        public $sha1Fingerprint;
+        /**
+         * PEM representation.
+         *
+         * @param string $cert
+         */
+        public function setCert($cert)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCert()
+        {
+        }
+        /**
+         * Serial number, as extracted from the certificate.
+         *
+         * @param string $certSerialNumber
+         */
+        public function setCertSerialNumber($certSerialNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCertSerialNumber()
+        {
+        }
+        /**
+         * User supplied name. Constrained to [a-zA-Z.-_ ]+.
+         *
+         * @param string $commonName
+         */
+        public function setCommonName($commonName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCommonName()
+        {
+        }
+        /**
+         * The time when the certificate was created in [RFC
+         * 3339](https://tools.ietf.org/html/rfc3339) format, for example
+         * `2012-11-15T16:19:00.094Z`
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * The time when the certificate expires in [RFC
+         * 3339](https://tools.ietf.org/html/rfc3339) format, for example
+         * `2012-11-15T16:19:00.094Z`.
+         *
+         * @param string $expirationTime
+         */
+        public function setExpirationTime($expirationTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpirationTime()
+        {
+        }
+        /**
+         * Name of the database instance.
+         *
+         * @param string $instance
+         */
+        public function setInstance($instance)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstance()
+        {
+        }
+        /**
+         * This is always `sql#sslCert`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The URI of this resource.
+         *
+         * @param string $selfLink
+         */
+        public function setSelfLink($selfLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelfLink()
+        {
+        }
+        /**
+         * Sha1 Fingerprint.
+         *
+         * @param string $sha1Fingerprint
+         */
+        public function setSha1Fingerprint($sha1Fingerprint)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSha1Fingerprint()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SQLAdmin\SslCert registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCert()
-    {
-    }
-    /**
-     * Serial number, as extracted from the certificate.
-     *
-     * @param string $certSerialNumber
-     */
-    public function setCertSerialNumber($certSerialNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCertSerialNumber()
-    {
-    }
-    /**
-     * User supplied name. Constrained to [a-zA-Z.-_ ]+.
-     *
-     * @param string $commonName
-     */
-    public function setCommonName($commonName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCommonName()
-    {
-    }
-    /**
-     * The time when the certificate was created in [RFC
-     * 3339](https://tools.ietf.org/html/rfc3339) format, for example
-     * `2012-11-15T16:19:00.094Z`
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * The time when the certificate expires in [RFC
-     * 3339](https://tools.ietf.org/html/rfc3339) format, for example
-     * `2012-11-15T16:19:00.094Z`.
-     *
-     * @param string $expirationTime
-     */
-    public function setExpirationTime($expirationTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExpirationTime()
-    {
-    }
-    /**
-     * Name of the database instance.
-     *
-     * @param string $instance
-     */
-    public function setInstance($instance)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInstance()
-    {
-    }
-    /**
-     * This is always `sql#sslCert`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The URI of this resource.
-     *
-     * @param string $selfLink
-     */
-    public function setSelfLink($selfLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelfLink()
-    {
-    }
-    /**
-     * Sha1 Fingerprint.
-     *
-     * @param string $sha1Fingerprint
-     */
-    public function setSha1Fingerprint($sha1Fingerprint)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSha1Fingerprint()
+    class Google_Service_SQLAdmin_SslCert extends \Google\Service\SQLAdmin\SslCert
     {
     }
 }

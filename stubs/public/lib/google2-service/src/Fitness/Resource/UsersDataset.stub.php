@@ -21,32 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Fitness\Resource;
-
-/**
- * The "dataset" collection of methods.
- * Typical usage is:
- *  <code>
- *   $fitnessService = new Google\Service\Fitness(...);
- *   $dataset = $fitnessService->users_dataset;
- *  </code>
- */
-class UsersDataset extends \Google\Service\Resource
-{
+namespace Google\Service\Fitness\Resource {
+    use Google\Service\Fitness\AggregateRequest;
+    use Google\Service\Fitness\AggregateResponse;
     /**
-     * Aggregates data of a certain type or stream into buckets divided by a given
-     * type of boundary. Multiple data sets of multiple types and from multiple
-     * sources can be aggregated into exactly one bucket type per request.
-     * (dataset.aggregate)
-     *
-     * @param string $userId Aggregate data for the person identified. Use me to
-     * indicate the authenticated user. Only me is supported at this time.
-     * @param AggregateRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return AggregateResponse
-     * @throws \Google\Service\Exception
+     * The "dataset" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $fitnessService = new Google\Service\Fitness(...);
+     *   $dataset = $fitnessService->users_dataset;
+     *  </code>
      */
-    public function aggregate($userId, AggregateRequest $postBody, $optParams = [])
+    class UsersDataset extends \Google\Service\Resource
+    {
+        /**
+         * Aggregates data of a certain type or stream into buckets divided by a given
+         * type of boundary. Multiple data sets of multiple types and from multiple
+         * sources can be aggregated into exactly one bucket type per request.
+         * (dataset.aggregate)
+         *
+         * @param string $userId Aggregate data for the person identified. Use me to
+         * indicate the authenticated user. Only me is supported at this time.
+         * @param AggregateRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return AggregateResponse
+         * @throws \Google\Service\Exception
+         */
+        public function aggregate($userId, AggregateRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Fitness\Resource\UsersDataset registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Fitness_Resource_UsersDataset extends \Google\Service\Fitness\Resource\UsersDataset
     {
     }
 }

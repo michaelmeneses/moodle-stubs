@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class RepairPhase extends \Google\Model
-{
-    protected $retryType = RetryPhase::class;
-    protected $retryDataType = '';
-    protected $rollbackType = RollbackAttempt::class;
-    protected $rollbackDataType = '';
-    /**
-     * Output only. Records of the retry attempts for retry repair mode.
-     *
-     * @param RetryPhase $retry
-     */
-    public function setRetry(RetryPhase $retry)
+namespace Google\Service\CloudDeploy {
+    class RepairPhase extends \Google\Model
     {
+        protected $retryType = RetryPhase::class;
+        protected $retryDataType = '';
+        protected $rollbackType = RollbackAttempt::class;
+        protected $rollbackDataType = '';
+        /**
+         * Output only. Records of the retry attempts for retry repair mode.
+         *
+         * @param RetryPhase $retry
+         */
+        public function setRetry(RetryPhase $retry)
+        {
+        }
+        /**
+         * @return RetryPhase
+         */
+        public function getRetry()
+        {
+        }
+        /**
+         * Output only. Rollback attempt for rollback repair mode .
+         *
+         * @param RollbackAttempt $rollback
+         */
+        public function setRollback(RollbackAttempt $rollback)
+        {
+        }
+        /**
+         * @return RollbackAttempt
+         */
+        public function getRollback()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RetryPhase
+     * Runtime class alias of \Google\Service\CloudDeploy\RepairPhase registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRetry()
-    {
-    }
-    /**
-     * Output only. Rollback attempt for rollback repair mode .
-     *
-     * @param RollbackAttempt $rollback
-     */
-    public function setRollback(RollbackAttempt $rollback)
-    {
-    }
-    /**
-     * @return RollbackAttempt
-     */
-    public function getRollback()
+    class Google_Service_CloudDeploy_RepairPhase extends \Google\Service\CloudDeploy\RepairPhase
     {
     }
 }

@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class MongodbCollection extends \Google\Collection
-{
-    protected $collection_key = 'fields';
-    /**
-     * Collection name.
-     *
-     * @var string
-     */
-    public $collection;
-    protected $fieldsType = MongodbField::class;
-    protected $fieldsDataType = 'array';
-    /**
-     * Collection name.
-     *
-     * @param string $collection
-     */
-    public function setCollection($collection)
+namespace Google\Service\Datastream {
+    class MongodbCollection extends \Google\Collection
     {
+        protected $collection_key = 'fields';
+        /**
+         * Collection name.
+         *
+         * @var string
+         */
+        public $collection;
+        protected $fieldsType = MongodbField::class;
+        protected $fieldsDataType = 'array';
+        /**
+         * Collection name.
+         *
+         * @param string $collection
+         */
+        public function setCollection($collection)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCollection()
+        {
+        }
+        /**
+         * Fields in the collection.
+         *
+         * @param MongodbField[] $fields
+         */
+        public function setFields($fields)
+        {
+        }
+        /**
+         * @return MongodbField[]
+         */
+        public function getFields()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Datastream\MongodbCollection registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCollection()
-    {
-    }
-    /**
-     * Fields in the collection.
-     *
-     * @param MongodbField[] $fields
-     */
-    public function setFields($fields)
-    {
-    }
-    /**
-     * @return MongodbField[]
-     */
-    public function getFields()
+    class Google_Service_Datastream_MongodbCollection extends \Google\Service\Datastream\MongodbCollection
     {
     }
 }

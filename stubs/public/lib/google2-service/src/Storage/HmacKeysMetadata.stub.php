@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storage;
-
-class HmacKeysMetadata extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    protected $itemsType = HmacKeyMetadata::class;
-    protected $itemsDataType = 'array';
-    /**
-     * The kind of item this is. For lists of hmacKeys, this is always
-     * storage#hmacKeysMetadata.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The continuation token, used to page through large result sets. Provide
-     * this value in a subsequent request to return the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of items.
-     *
-     * @param HmacKeyMetadata[] $items
-     */
-    public function setItems($items)
+namespace Google\Service\Storage {
+    class HmacKeysMetadata extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        protected $itemsType = HmacKeyMetadata::class;
+        protected $itemsDataType = 'array';
+        /**
+         * The kind of item this is. For lists of hmacKeys, this is always
+         * storage#hmacKeysMetadata.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The continuation token, used to page through large result sets. Provide
+         * this value in a subsequent request to return the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of items.
+         *
+         * @param HmacKeyMetadata[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return HmacKeyMetadata[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * The kind of item this is. For lists of hmacKeys, this is always
+         * storage#hmacKeysMetadata.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The continuation token, used to page through large result sets. Provide
+         * this value in a subsequent request to return the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return HmacKeyMetadata[]
+     * Runtime class alias of \Google\Service\Storage\HmacKeysMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItems()
-    {
-    }
-    /**
-     * The kind of item this is. For lists of hmacKeys, this is always
-     * storage#hmacKeysMetadata.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The continuation token, used to page through large result sets. Provide
-     * this value in a subsequent request to return the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Storage_HmacKeysMetadata extends \Google\Service\Storage\HmacKeysMetadata
     {
     }
 }

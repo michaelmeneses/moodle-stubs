@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiUiv1beta3DeployProcessorVersionMetadata extends \Google\Model
-{
-    protected $commonMetadataType = GoogleCloudDocumentaiUiv1beta3CommonOperationMetadata::class;
-    protected $commonMetadataDataType = '';
-    /**
-     * The basic metadata of the long-running operation.
-     *
-     * @param GoogleCloudDocumentaiUiv1beta3CommonOperationMetadata $commonMetadata
-     */
-    public function setCommonMetadata(GoogleCloudDocumentaiUiv1beta3CommonOperationMetadata $commonMetadata)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiUiv1beta3DeployProcessorVersionMetadata extends \Google\Model
     {
+        protected $commonMetadataType = GoogleCloudDocumentaiUiv1beta3CommonOperationMetadata::class;
+        protected $commonMetadataDataType = '';
+        /**
+         * The basic metadata of the long-running operation.
+         *
+         * @param GoogleCloudDocumentaiUiv1beta3CommonOperationMetadata $commonMetadata
+         */
+        public function setCommonMetadata(GoogleCloudDocumentaiUiv1beta3CommonOperationMetadata $commonMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiUiv1beta3CommonOperationMetadata
+         */
+        public function getCommonMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiUiv1beta3CommonOperationMetadata
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiUiv1beta3DeployProcessorVersionMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCommonMetadata()
+    class Google_Service_Document_GoogleCloudDocumentaiUiv1beta3DeployProcessorVersionMetadata extends \Google\Service\Document\GoogleCloudDocumentaiUiv1beta3DeployProcessorVersionMetadata
     {
     }
 }

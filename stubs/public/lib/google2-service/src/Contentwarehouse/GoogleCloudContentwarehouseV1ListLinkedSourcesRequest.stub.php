@@ -21,77 +21,86 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudContentwarehouseV1ListLinkedSourcesRequest extends \Google\Model
-{
-    /**
-     * The maximum number of document-links to return. The service may return
-     * fewer than this value. If unspecified, at most 50 document-links will be
-     * returned. The maximum value is 1000; values above 1000 will be coerced to
-     * 1000.
-     *
-     * @var int
-     */
-    public $pageSize;
-    /**
-     * A page token, received from a previous `ListLinkedSources` call. Provide
-     * this to retrieve the subsequent page. When paginating, all other parameters
-     * provided to `ListLinkedSources` must match the call that provided the page
-     * token.
-     *
-     * @var string
-     */
-    public $pageToken;
-    protected $requestMetadataType = GoogleCloudContentwarehouseV1RequestMetadata::class;
-    protected $requestMetadataDataType = '';
-    /**
-     * The maximum number of document-links to return. The service may return
-     * fewer than this value. If unspecified, at most 50 document-links will be
-     * returned. The maximum value is 1000; values above 1000 will be coerced to
-     * 1000.
-     *
-     * @param int $pageSize
-     */
-    public function setPageSize($pageSize)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudContentwarehouseV1ListLinkedSourcesRequest extends \Google\Model
     {
+        /**
+         * The maximum number of document-links to return. The service may return
+         * fewer than this value. If unspecified, at most 50 document-links will be
+         * returned. The maximum value is 1000; values above 1000 will be coerced to
+         * 1000.
+         *
+         * @var int
+         */
+        public $pageSize;
+        /**
+         * A page token, received from a previous `ListLinkedSources` call. Provide
+         * this to retrieve the subsequent page. When paginating, all other parameters
+         * provided to `ListLinkedSources` must match the call that provided the page
+         * token.
+         *
+         * @var string
+         */
+        public $pageToken;
+        protected $requestMetadataType = GoogleCloudContentwarehouseV1RequestMetadata::class;
+        protected $requestMetadataDataType = '';
+        /**
+         * The maximum number of document-links to return. The service may return
+         * fewer than this value. If unspecified, at most 50 document-links will be
+         * returned. The maximum value is 1000; values above 1000 will be coerced to
+         * 1000.
+         *
+         * @param int $pageSize
+         */
+        public function setPageSize($pageSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPageSize()
+        {
+        }
+        /**
+         * A page token, received from a previous `ListLinkedSources` call. Provide
+         * this to retrieve the subsequent page. When paginating, all other parameters
+         * provided to `ListLinkedSources` must match the call that provided the page
+         * token.
+         *
+         * @param string $pageToken
+         */
+        public function setPageToken($pageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPageToken()
+        {
+        }
+        /**
+         * The meta information collected about the document creator, used to enforce
+         * access control for the service.
+         *
+         * @param GoogleCloudContentwarehouseV1RequestMetadata $requestMetadata
+         */
+        public function setRequestMetadata(GoogleCloudContentwarehouseV1RequestMetadata $requestMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudContentwarehouseV1RequestMetadata
+         */
+        public function getRequestMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1ListLinkedSourcesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPageSize()
-    {
-    }
-    /**
-     * A page token, received from a previous `ListLinkedSources` call. Provide
-     * this to retrieve the subsequent page. When paginating, all other parameters
-     * provided to `ListLinkedSources` must match the call that provided the page
-     * token.
-     *
-     * @param string $pageToken
-     */
-    public function setPageToken($pageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPageToken()
-    {
-    }
-    /**
-     * The meta information collected about the document creator, used to enforce
-     * access control for the service.
-     *
-     * @param GoogleCloudContentwarehouseV1RequestMetadata $requestMetadata
-     */
-    public function setRequestMetadata(GoogleCloudContentwarehouseV1RequestMetadata $requestMetadata)
-    {
-    }
-    /**
-     * @return GoogleCloudContentwarehouseV1RequestMetadata
-     */
-    public function getRequestMetadata()
+    class Google_Service_Contentwarehouse_GoogleCloudContentwarehouseV1ListLinkedSourcesRequest extends \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1ListLinkedSourcesRequest
     {
     }
 }

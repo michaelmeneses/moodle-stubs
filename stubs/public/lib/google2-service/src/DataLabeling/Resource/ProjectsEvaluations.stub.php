@@ -21,51 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling\Resource;
-
-/**
- * The "evaluations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $datalabelingService = new Google\Service\DataLabeling(...);
- *   $evaluations = $datalabelingService->projects_evaluations;
- *  </code>
- */
-class ProjectsEvaluations extends \Google\Service\Resource
-{
+namespace Google\Service\DataLabeling\Resource {
+    use Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1SearchEvaluationsResponse;
     /**
-     * Searches evaluations within a project. (evaluations.search)
-     *
-     * @param string $parent Required. Evaluation search parent (project ID).
-     * Format: "projects/ {project_id}"
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Optional. To search evaluations, you can filter by
-     * the following: * evaluation_job.evaluation_job_id (the last part of
-     * EvaluationJob.name) * evaluation_job.model_id (the {model_name} portion of
-     * EvaluationJob.modelVersion) * evaluation_job.evaluation_job_run_time_start
-     * (Minimum threshold for the evaluationJobRunTime that created the evaluation)
-     * * evaluation_job.evaluation_job_run_time_end (Maximum threshold for the
-     * evaluationJobRunTime that created the evaluation) * evaluation_job.job_state
-     * (EvaluationJob.state) * annotation_spec.display_name (the Evaluation contains
-     * a metric for the annotation spec with this displayName) To filter by multiple
-     * critiera, use the `AND` operator or the `OR` operator. The following examples
-     * shows a string that filters by several critiera:
-     * "evaluation_job.evaluation_job_id = {evaluation_job_id} AND
-     * evaluation_job.model_id = {model_name} AND
-     * evaluation_job.evaluation_job_run_time_start = {timestamp_1} AND
-     * evaluation_job.evaluation_job_run_time_end = {timestamp_2} AND
-     * annotation_spec.display_name = {display_name}"
-     * @opt_param int pageSize Optional. Requested page size. Server may return
-     * fewer results than requested. Default value is 100.
-     * @opt_param string pageToken Optional. A token identifying a page of results
-     * for the server to return. Typically obtained by the nextPageToken of the
-     * response to a previous search request. If you don't specify this field, the
-     * API call requests the first page of the search.
-     * @return GoogleCloudDatalabelingV1beta1SearchEvaluationsResponse
-     * @throws \Google\Service\Exception
+     * The "evaluations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $datalabelingService = new Google\Service\DataLabeling(...);
+     *   $evaluations = $datalabelingService->projects_evaluations;
+     *  </code>
      */
-    public function search($parent, $optParams = [])
+    class ProjectsEvaluations extends \Google\Service\Resource
+    {
+        /**
+         * Searches evaluations within a project. (evaluations.search)
+         *
+         * @param string $parent Required. Evaluation search parent (project ID).
+         * Format: "projects/ {project_id}"
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Optional. To search evaluations, you can filter by
+         * the following: * evaluation_job.evaluation_job_id (the last part of
+         * EvaluationJob.name) * evaluation_job.model_id (the {model_name} portion of
+         * EvaluationJob.modelVersion) * evaluation_job.evaluation_job_run_time_start
+         * (Minimum threshold for the evaluationJobRunTime that created the evaluation)
+         * * evaluation_job.evaluation_job_run_time_end (Maximum threshold for the
+         * evaluationJobRunTime that created the evaluation) * evaluation_job.job_state
+         * (EvaluationJob.state) * annotation_spec.display_name (the Evaluation contains
+         * a metric for the annotation spec with this displayName) To filter by multiple
+         * critiera, use the `AND` operator or the `OR` operator. The following examples
+         * shows a string that filters by several critiera:
+         * "evaluation_job.evaluation_job_id = {evaluation_job_id} AND
+         * evaluation_job.model_id = {model_name} AND
+         * evaluation_job.evaluation_job_run_time_start = {timestamp_1} AND
+         * evaluation_job.evaluation_job_run_time_end = {timestamp_2} AND
+         * annotation_spec.display_name = {display_name}"
+         * @opt_param int pageSize Optional. Requested page size. Server may return
+         * fewer results than requested. Default value is 100.
+         * @opt_param string pageToken Optional. A token identifying a page of results
+         * for the server to return. Typically obtained by the nextPageToken of the
+         * response to a previous search request. If you don't specify this field, the
+         * API call requests the first page of the search.
+         * @return GoogleCloudDatalabelingV1beta1SearchEvaluationsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function search($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\DataLabeling\Resource\ProjectsEvaluations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_DataLabeling_Resource_ProjectsEvaluations extends \Google\Service\DataLabeling\Resource\ProjectsEvaluations
     {
     }
 }

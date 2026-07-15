@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2KAnonymityResult extends \Google\Collection
-{
-    protected $collection_key = 'equivalenceClassHistogramBuckets';
-    protected $equivalenceClassHistogramBucketsType = GooglePrivacyDlpV2KAnonymityHistogramBucket::class;
-    protected $equivalenceClassHistogramBucketsDataType = 'array';
-    /**
-     * Histogram of k-anonymity equivalence classes.
-     *
-     * @param GooglePrivacyDlpV2KAnonymityHistogramBucket[] $equivalenceClassHistogramBuckets
-     */
-    public function setEquivalenceClassHistogramBuckets($equivalenceClassHistogramBuckets)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2KAnonymityResult extends \Google\Collection
     {
+        protected $collection_key = 'equivalenceClassHistogramBuckets';
+        protected $equivalenceClassHistogramBucketsType = GooglePrivacyDlpV2KAnonymityHistogramBucket::class;
+        protected $equivalenceClassHistogramBucketsDataType = 'array';
+        /**
+         * Histogram of k-anonymity equivalence classes.
+         *
+         * @param GooglePrivacyDlpV2KAnonymityHistogramBucket[] $equivalenceClassHistogramBuckets
+         */
+        public function setEquivalenceClassHistogramBuckets($equivalenceClassHistogramBuckets)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2KAnonymityHistogramBucket[]
+         */
+        public function getEquivalenceClassHistogramBuckets()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2KAnonymityHistogramBucket[]
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2KAnonymityResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEquivalenceClassHistogramBuckets()
+    class Google_Service_DLP_GooglePrivacyDlpV2KAnonymityResult extends \Google\Service\DLP\GooglePrivacyDlpV2KAnonymityResult
     {
     }
 }

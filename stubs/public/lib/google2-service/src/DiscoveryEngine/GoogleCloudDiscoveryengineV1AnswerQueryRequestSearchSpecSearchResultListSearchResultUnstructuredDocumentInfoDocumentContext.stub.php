@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResultUnstructuredDocumentInfoDocumentContext extends \Google\Model
-{
-    /**
-     * Document content to be used for answer generation.
-     *
-     * @var string
-     */
-    public $content;
-    /**
-     * Page identifier.
-     *
-     * @var string
-     */
-    public $pageIdentifier;
-    /**
-     * Document content to be used for answer generation.
-     *
-     * @param string $content
-     */
-    public function setContent($content)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResultUnstructuredDocumentInfoDocumentContext extends \Google\Model
     {
+        /**
+         * Document content to be used for answer generation.
+         *
+         * @var string
+         */
+        public $content;
+        /**
+         * Page identifier.
+         *
+         * @var string
+         */
+        public $pageIdentifier;
+        /**
+         * Document content to be used for answer generation.
+         *
+         * @param string $content
+         */
+        public function setContent($content)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContent()
+        {
+        }
+        /**
+         * Page identifier.
+         *
+         * @param string $pageIdentifier
+         */
+        public function setPageIdentifier($pageIdentifier)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPageIdentifier()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResultUnstructuredDocumentInfoDocumentContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContent()
-    {
-    }
-    /**
-     * Page identifier.
-     *
-     * @param string $pageIdentifier
-     */
-    public function setPageIdentifier($pageIdentifier)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPageIdentifier()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResultUnstructuredDocumentInfoDocumentContext extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResultUnstructuredDocumentInfoDocumentContext
     {
     }
 }

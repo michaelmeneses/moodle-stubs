@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class ChangeStreamConfig extends \Google\Model
-{
-    /**
-     * How long the change stream should be retained. Change stream data older
-     * than the retention period will not be returned when reading the change
-     * stream from the table. Values must be at least 1 day and at most 7 days,
-     * and will be truncated to microsecond granularity.
-     *
-     * @var string
-     */
-    public $retentionPeriod;
-    /**
-     * How long the change stream should be retained. Change stream data older
-     * than the retention period will not be returned when reading the change
-     * stream from the table. Values must be at least 1 day and at most 7 days,
-     * and will be truncated to microsecond granularity.
-     *
-     * @param string $retentionPeriod
-     */
-    public function setRetentionPeriod($retentionPeriod)
+namespace Google\Service\BigtableAdmin {
+    class ChangeStreamConfig extends \Google\Model
     {
+        /**
+         * How long the change stream should be retained. Change stream data older
+         * than the retention period will not be returned when reading the change
+         * stream from the table. Values must be at least 1 day and at most 7 days,
+         * and will be truncated to microsecond granularity.
+         *
+         * @var string
+         */
+        public $retentionPeriod;
+        /**
+         * How long the change stream should be retained. Change stream data older
+         * than the retention period will not be returned when reading the change
+         * stream from the table. Values must be at least 1 day and at most 7 days,
+         * and will be truncated to microsecond granularity.
+         *
+         * @param string $retentionPeriod
+         */
+        public function setRetentionPeriod($retentionPeriod)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRetentionPeriod()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BigtableAdmin\ChangeStreamConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRetentionPeriod()
+    class Google_Service_BigtableAdmin_ChangeStreamConfig extends \Google\Service\BigtableAdmin\ChangeStreamConfig
     {
     }
 }

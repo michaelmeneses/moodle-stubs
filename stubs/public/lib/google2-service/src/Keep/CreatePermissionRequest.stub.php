@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Keep;
-
-class CreatePermissionRequest extends \Google\Model
-{
-    /**
-     * Required. The parent note where this permission will be created. Format:
-     * `notes/{note}`
-     *
-     * @var string
-     */
-    public $parent;
-    protected $permissionType = Permission::class;
-    protected $permissionDataType = '';
-    /**
-     * Required. The parent note where this permission will be created. Format:
-     * `notes/{note}`
-     *
-     * @param string $parent
-     */
-    public function setParent($parent)
+namespace Google\Service\Keep {
+    class CreatePermissionRequest extends \Google\Model
     {
+        /**
+         * Required. The parent note where this permission will be created. Format:
+         * `notes/{note}`
+         *
+         * @var string
+         */
+        public $parent;
+        protected $permissionType = Permission::class;
+        protected $permissionDataType = '';
+        /**
+         * Required. The parent note where this permission will be created. Format:
+         * `notes/{note}`
+         *
+         * @param string $parent
+         */
+        public function setParent($parent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParent()
+        {
+        }
+        /**
+         * Required. The permission to create. One of Permission.email, User.email or
+         * Group.email must be supplied.
+         *
+         * @param Permission $permission
+         */
+        public function setPermission(Permission $permission)
+        {
+        }
+        /**
+         * @return Permission
+         */
+        public function getPermission()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Keep\CreatePermissionRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getParent()
-    {
-    }
-    /**
-     * Required. The permission to create. One of Permission.email, User.email or
-     * Group.email must be supplied.
-     *
-     * @param Permission $permission
-     */
-    public function setPermission(Permission $permission)
-    {
-    }
-    /**
-     * @return Permission
-     */
-    public function getPermission()
+    class Google_Service_Keep_CreatePermissionRequest extends \Google\Service\Keep\CreatePermissionRequest
     {
     }
 }

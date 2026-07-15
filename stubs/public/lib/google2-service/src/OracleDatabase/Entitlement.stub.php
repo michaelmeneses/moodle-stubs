@@ -21,113 +21,122 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OracleDatabase;
-
-class Entitlement extends \Google\Model
-{
-    /**
-     * Default unspecified value.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * Account not linked.
-     */
-    public const STATE_ACCOUNT_NOT_LINKED = 'ACCOUNT_NOT_LINKED';
-    /**
-     * Account is linked but not active.
-     */
-    public const STATE_ACCOUNT_NOT_ACTIVE = 'ACCOUNT_NOT_ACTIVE';
-    /**
-     * Entitlement and Account are active.
-     */
-    public const STATE_ACTIVE = 'ACTIVE';
-    /**
-     * Account is suspended.
-     */
-    public const STATE_ACCOUNT_SUSPENDED = 'ACCOUNT_SUSPENDED';
-    /**
-     * Entitlement is not approved in private marketplace.
-     */
-    public const STATE_NOT_APPROVED_IN_PRIVATE_MARKETPLACE = 'NOT_APPROVED_IN_PRIVATE_MARKETPLACE';
-    protected $cloudAccountDetailsType = CloudAccountDetails::class;
-    protected $cloudAccountDetailsDataType = '';
-    /**
-     * Output only. Google Cloud Marketplace order ID (aka entitlement ID)
-     *
-     * @var string
-     */
-    public $entitlementId;
-    /**
-     * Identifier. The name of the Entitlement resource with the format:
-     * projects/{project}/locations/{region}/entitlements/{entitlement}
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. Entitlement State.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Details of the OCI Cloud Account.
-     *
-     * @param CloudAccountDetails $cloudAccountDetails
-     */
-    public function setCloudAccountDetails(CloudAccountDetails $cloudAccountDetails)
+namespace Google\Service\OracleDatabase {
+    class Entitlement extends \Google\Model
     {
+        /**
+         * Default unspecified value.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * Account not linked.
+         */
+        public const STATE_ACCOUNT_NOT_LINKED = 'ACCOUNT_NOT_LINKED';
+        /**
+         * Account is linked but not active.
+         */
+        public const STATE_ACCOUNT_NOT_ACTIVE = 'ACCOUNT_NOT_ACTIVE';
+        /**
+         * Entitlement and Account are active.
+         */
+        public const STATE_ACTIVE = 'ACTIVE';
+        /**
+         * Account is suspended.
+         */
+        public const STATE_ACCOUNT_SUSPENDED = 'ACCOUNT_SUSPENDED';
+        /**
+         * Entitlement is not approved in private marketplace.
+         */
+        public const STATE_NOT_APPROVED_IN_PRIVATE_MARKETPLACE = 'NOT_APPROVED_IN_PRIVATE_MARKETPLACE';
+        protected $cloudAccountDetailsType = CloudAccountDetails::class;
+        protected $cloudAccountDetailsDataType = '';
+        /**
+         * Output only. Google Cloud Marketplace order ID (aka entitlement ID)
+         *
+         * @var string
+         */
+        public $entitlementId;
+        /**
+         * Identifier. The name of the Entitlement resource with the format:
+         * projects/{project}/locations/{region}/entitlements/{entitlement}
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. Entitlement State.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Details of the OCI Cloud Account.
+         *
+         * @param CloudAccountDetails $cloudAccountDetails
+         */
+        public function setCloudAccountDetails(CloudAccountDetails $cloudAccountDetails)
+        {
+        }
+        /**
+         * @return CloudAccountDetails
+         */
+        public function getCloudAccountDetails()
+        {
+        }
+        /**
+         * Output only. Google Cloud Marketplace order ID (aka entitlement ID)
+         *
+         * @param string $entitlementId
+         */
+        public function setEntitlementId($entitlementId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEntitlementId()
+        {
+        }
+        /**
+         * Identifier. The name of the Entitlement resource with the format:
+         * projects/{project}/locations/{region}/entitlements/{entitlement}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. Entitlement State.
+         *
+         * Accepted values: STATE_UNSPECIFIED, ACCOUNT_NOT_LINKED, ACCOUNT_NOT_ACTIVE,
+         * ACTIVE, ACCOUNT_SUSPENDED, NOT_APPROVED_IN_PRIVATE_MARKETPLACE
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CloudAccountDetails
+     * Runtime class alias of \Google\Service\OracleDatabase\Entitlement registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCloudAccountDetails()
-    {
-    }
-    /**
-     * Output only. Google Cloud Marketplace order ID (aka entitlement ID)
-     *
-     * @param string $entitlementId
-     */
-    public function setEntitlementId($entitlementId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEntitlementId()
-    {
-    }
-    /**
-     * Identifier. The name of the Entitlement resource with the format:
-     * projects/{project}/locations/{region}/entitlements/{entitlement}
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. Entitlement State.
-     *
-     * Accepted values: STATE_UNSPECIFIED, ACCOUNT_NOT_LINKED, ACCOUNT_NOT_ACTIVE,
-     * ACTIVE, ACCOUNT_SUSPENDED, NOT_APPROVED_IN_PRIVATE_MARKETPLACE
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
+    class Google_Service_OracleDatabase_Entitlement extends \Google\Service\OracleDatabase\Entitlement
     {
     }
 }

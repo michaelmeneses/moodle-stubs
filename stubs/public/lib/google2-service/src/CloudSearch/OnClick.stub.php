@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class OnClick extends \Google\Model
-{
-    protected $actionType = FormAction::class;
-    protected $actionDataType = '';
-    /**
-     * @var string
-     */
-    public $link;
-    protected $openLinkType = OpenLink::class;
-    protected $openLinkDataType = '';
-    protected $openLinkActionType = FormAction::class;
-    protected $openLinkActionDataType = '';
-    /**
-     * @param FormAction
-     */
-    public function setAction(FormAction $action)
+namespace Google\Service\CloudSearch {
+    class OnClick extends \Google\Model
     {
+        protected $actionType = FormAction::class;
+        protected $actionDataType = '';
+        /**
+         * @var string
+         */
+        public $link;
+        protected $openLinkType = OpenLink::class;
+        protected $openLinkDataType = '';
+        protected $openLinkActionType = FormAction::class;
+        protected $openLinkActionDataType = '';
+        /**
+         * @param FormAction
+         */
+        public function setAction(FormAction $action)
+        {
+        }
+        /**
+         * @return FormAction
+         */
+        public function getAction()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLink($link)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLink()
+        {
+        }
+        /**
+         * @param OpenLink
+         */
+        public function setOpenLink(OpenLink $openLink)
+        {
+        }
+        /**
+         * @return OpenLink
+         */
+        public function getOpenLink()
+        {
+        }
+        /**
+         * @param FormAction
+         */
+        public function setOpenLinkAction(FormAction $openLinkAction)
+        {
+        }
+        /**
+         * @return FormAction
+         */
+        public function getOpenLinkAction()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FormAction
+     * Runtime class alias of \Google\Service\CloudSearch\OnClick registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAction()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLink($link)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLink()
-    {
-    }
-    /**
-     * @param OpenLink
-     */
-    public function setOpenLink(OpenLink $openLink)
-    {
-    }
-    /**
-     * @return OpenLink
-     */
-    public function getOpenLink()
-    {
-    }
-    /**
-     * @param FormAction
-     */
-    public function setOpenLinkAction(FormAction $openLinkAction)
-    {
-    }
-    /**
-     * @return FormAction
-     */
-    public function getOpenLinkAction()
+    class Google_Service_CloudSearch_OnClick extends \Google\Service\CloudSearch\OnClick
     {
     }
 }

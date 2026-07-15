@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class ResourcePolicyHourlyCycle extends \Google\Model
-{
-    /**
-     * Output only. [Output only] Duration of the time window, automatically
-     * chosen to be smallest possible in the given scenario.
-     *
-     * @var string
-     */
-    public $duration;
-    /**
-     * Defines a schedule with units measured in hours. The value determines how
-     * many hours pass between the start of each cycle.
-     *
-     * @var int
-     */
-    public $hoursInCycle;
-    /**
-     * Time within the window to start the operations. It must be in format
-     * "HH:MM", where HH : [00-23] and MM : [00-00] GMT.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * Output only. [Output only] Duration of the time window, automatically
-     * chosen to be smallest possible in the given scenario.
-     *
-     * @param string $duration
-     */
-    public function setDuration($duration)
+namespace Google\Service\Compute {
+    class ResourcePolicyHourlyCycle extends \Google\Model
     {
+        /**
+         * Output only. [Output only] Duration of the time window, automatically
+         * chosen to be smallest possible in the given scenario.
+         *
+         * @var string
+         */
+        public $duration;
+        /**
+         * Defines a schedule with units measured in hours. The value determines how
+         * many hours pass between the start of each cycle.
+         *
+         * @var int
+         */
+        public $hoursInCycle;
+        /**
+         * Time within the window to start the operations. It must be in format
+         * "HH:MM", where HH : [00-23] and MM : [00-00] GMT.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * Output only. [Output only] Duration of the time window, automatically
+         * chosen to be smallest possible in the given scenario.
+         *
+         * @param string $duration
+         */
+        public function setDuration($duration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDuration()
+        {
+        }
+        /**
+         * Defines a schedule with units measured in hours. The value determines how
+         * many hours pass between the start of each cycle.
+         *
+         * @param int $hoursInCycle
+         */
+        public function setHoursInCycle($hoursInCycle)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getHoursInCycle()
+        {
+        }
+        /**
+         * Time within the window to start the operations. It must be in format
+         * "HH:MM", where HH : [00-23] and MM : [00-00] GMT.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\ResourcePolicyHourlyCycle registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDuration()
-    {
-    }
-    /**
-     * Defines a schedule with units measured in hours. The value determines how
-     * many hours pass between the start of each cycle.
-     *
-     * @param int $hoursInCycle
-     */
-    public function setHoursInCycle($hoursInCycle)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getHoursInCycle()
-    {
-    }
-    /**
-     * Time within the window to start the operations. It must be in format
-     * "HH:MM", where HH : [00-23] and MM : [00-00] GMT.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
+    class Google_Service_Compute_ResourcePolicyHourlyCycle extends \Google\Service\Compute\ResourcePolicyHourlyCycle
     {
     }
 }

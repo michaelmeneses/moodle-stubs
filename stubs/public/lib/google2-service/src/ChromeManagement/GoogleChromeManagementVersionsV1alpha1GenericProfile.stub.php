@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementVersionsV1alpha1GenericProfile extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $profileAdapterConfigReference;
-    /**
-     * @param string
-     */
-    public function setProfileAdapterConfigReference($profileAdapterConfigReference)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementVersionsV1alpha1GenericProfile extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $profileAdapterConfigReference;
+        /**
+         * @param string
+         */
+        public function setProfileAdapterConfigReference($profileAdapterConfigReference)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProfileAdapterConfigReference()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1alpha1GenericProfile registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProfileAdapterConfigReference()
+    class Google_Service_ChromeManagement_GoogleChromeManagementVersionsV1alpha1GenericProfile extends \Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1alpha1GenericProfile
     {
     }
 }

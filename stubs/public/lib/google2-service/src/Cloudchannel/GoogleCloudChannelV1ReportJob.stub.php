@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1ReportJob extends \Google\Model
-{
-    /**
-     * Required. The resource name of a report job. Name uses the format:
-     * `accounts/{account_id}/reportJobs/{report_job_id}`
-     *
-     * @var string
-     */
-    public $name;
-    protected $reportStatusType = GoogleCloudChannelV1ReportStatus::class;
-    protected $reportStatusDataType = '';
-    /**
-     * Required. The resource name of a report job. Name uses the format:
-     * `accounts/{account_id}/reportJobs/{report_job_id}`
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1ReportJob extends \Google\Model
     {
+        /**
+         * Required. The resource name of a report job. Name uses the format:
+         * `accounts/{account_id}/reportJobs/{report_job_id}`
+         *
+         * @var string
+         */
+        public $name;
+        protected $reportStatusType = GoogleCloudChannelV1ReportStatus::class;
+        protected $reportStatusDataType = '';
+        /**
+         * Required. The resource name of a report job. Name uses the format:
+         * `accounts/{account_id}/reportJobs/{report_job_id}`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The current status of report generation.
+         *
+         * @param GoogleCloudChannelV1ReportStatus $reportStatus
+         */
+        public function setReportStatus(GoogleCloudChannelV1ReportStatus $reportStatus)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1ReportStatus
+         */
+        public function getReportStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1ReportJob registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * The current status of report generation.
-     *
-     * @param GoogleCloudChannelV1ReportStatus $reportStatus
-     */
-    public function setReportStatus(GoogleCloudChannelV1ReportStatus $reportStatus)
-    {
-    }
-    /**
-     * @return GoogleCloudChannelV1ReportStatus
-     */
-    public function getReportStatus()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1ReportJob extends \Google\Service\Cloudchannel\GoogleCloudChannelV1ReportJob
     {
     }
 }

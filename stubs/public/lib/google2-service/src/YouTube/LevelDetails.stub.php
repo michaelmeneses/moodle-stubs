@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class LevelDetails extends \Google\Model
-{
-    /**
-     * The name that should be used when referring to this level.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The name that should be used when referring to this level.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\YouTube {
+    class LevelDetails extends \Google\Model
     {
+        /**
+         * The name that should be used when referring to this level.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The name that should be used when referring to this level.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\LevelDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
+    class Google_Service_YouTube_LevelDetails extends \Google\Service\YouTube\LevelDetails
     {
     }
 }

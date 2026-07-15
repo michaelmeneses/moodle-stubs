@@ -21,41 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Playdeveloperreporting\Resource;
-
-/**
- * The "slowstartrate" collection of methods.
- * Typical usage is:
- *  <code>
- *   $playdeveloperreportingService = new Google\Service\Playdeveloperreporting(...);
- *   $slowstartrate = $playdeveloperreportingService->vitals_slowstartrate;
- *  </code>
- */
-class VitalsSlowstartrate extends \Google\Service\Resource
-{
+namespace Google\Service\Playdeveloperreporting\Resource {
+    use Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1QuerySlowStartRateMetricSetRequest;
+    use Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1QuerySlowStartRateMetricSetResponse;
+    use Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1SlowStartRateMetricSet;
     /**
-     * Describes the properties of the metric set. (slowstartrate.get)
-     *
-     * @param string $name Required. The resource name. Format:
-     * apps/{app}/slowStartRateMetricSet
-     * @param array $optParams Optional parameters.
-     * @return GooglePlayDeveloperReportingV1beta1SlowStartRateMetricSet
-     * @throws \Google\Service\Exception
+     * The "slowstartrate" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $playdeveloperreportingService = new Google\Service\Playdeveloperreporting(...);
+     *   $slowstartrate = $playdeveloperreportingService->vitals_slowstartrate;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class VitalsSlowstartrate extends \Google\Service\Resource
     {
+        /**
+         * Describes the properties of the metric set. (slowstartrate.get)
+         *
+         * @param string $name Required. The resource name. Format:
+         * apps/{app}/slowStartRateMetricSet
+         * @param array $optParams Optional parameters.
+         * @return GooglePlayDeveloperReportingV1beta1SlowStartRateMetricSet
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Queries the metrics in the metric set. (slowstartrate.query)
+         *
+         * @param string $name Required. The resource name. Format:
+         * apps/{app}/slowStartRateMetricSet
+         * @param GooglePlayDeveloperReportingV1beta1QuerySlowStartRateMetricSetRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GooglePlayDeveloperReportingV1beta1QuerySlowStartRateMetricSetResponse
+         * @throws \Google\Service\Exception
+         */
+        public function query($name, GooglePlayDeveloperReportingV1beta1QuerySlowStartRateMetricSetRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Queries the metrics in the metric set. (slowstartrate.query)
-     *
-     * @param string $name Required. The resource name. Format:
-     * apps/{app}/slowStartRateMetricSet
-     * @param GooglePlayDeveloperReportingV1beta1QuerySlowStartRateMetricSetRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GooglePlayDeveloperReportingV1beta1QuerySlowStartRateMetricSetResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Playdeveloperreporting\Resource\VitalsSlowstartrate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function query($name, GooglePlayDeveloperReportingV1beta1QuerySlowStartRateMetricSetRequest $postBody, $optParams = [])
+    class Google_Service_Playdeveloperreporting_Resource_VitalsSlowstartrate extends \Google\Service\Playdeveloperreporting\Resource\VitalsSlowstartrate
     {
     }
 }

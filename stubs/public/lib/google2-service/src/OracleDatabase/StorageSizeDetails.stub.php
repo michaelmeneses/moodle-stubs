@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OracleDatabase;
-
-class StorageSizeDetails extends \Google\Model
-{
-    /**
-     * Output only. The data storage size, in gigabytes, that is applicable for
-     * virtual machine DBSystem.
-     *
-     * @var int
-     */
-    public $dataStorageSizeInGbs;
-    /**
-     * Output only. The RECO/REDO storage size, in gigabytes, that is applicable
-     * for virtual machine DBSystem.
-     *
-     * @var int
-     */
-    public $recoStorageSizeInGbs;
-    /**
-     * Output only. The data storage size, in gigabytes, that is applicable for
-     * virtual machine DBSystem.
-     *
-     * @param int $dataStorageSizeInGbs
-     */
-    public function setDataStorageSizeInGbs($dataStorageSizeInGbs)
+namespace Google\Service\OracleDatabase {
+    class StorageSizeDetails extends \Google\Model
     {
+        /**
+         * Output only. The data storage size, in gigabytes, that is applicable for
+         * virtual machine DBSystem.
+         *
+         * @var int
+         */
+        public $dataStorageSizeInGbs;
+        /**
+         * Output only. The RECO/REDO storage size, in gigabytes, that is applicable
+         * for virtual machine DBSystem.
+         *
+         * @var int
+         */
+        public $recoStorageSizeInGbs;
+        /**
+         * Output only. The data storage size, in gigabytes, that is applicable for
+         * virtual machine DBSystem.
+         *
+         * @param int $dataStorageSizeInGbs
+         */
+        public function setDataStorageSizeInGbs($dataStorageSizeInGbs)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getDataStorageSizeInGbs()
+        {
+        }
+        /**
+         * Output only. The RECO/REDO storage size, in gigabytes, that is applicable
+         * for virtual machine DBSystem.
+         *
+         * @param int $recoStorageSizeInGbs
+         */
+        public function setRecoStorageSizeInGbs($recoStorageSizeInGbs)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRecoStorageSizeInGbs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\OracleDatabase\StorageSizeDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataStorageSizeInGbs()
-    {
-    }
-    /**
-     * Output only. The RECO/REDO storage size, in gigabytes, that is applicable
-     * for virtual machine DBSystem.
-     *
-     * @param int $recoStorageSizeInGbs
-     */
-    public function setRecoStorageSizeInGbs($recoStorageSizeInGbs)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getRecoStorageSizeInGbs()
+    class Google_Service_OracleDatabase_StorageSizeDetails extends \Google\Service\OracleDatabase\StorageSizeDetails
     {
     }
 }

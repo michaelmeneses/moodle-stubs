@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1StudySpecParameterSpecCategoricalValueSpec extends \Google\Collection
-{
-    protected $collection_key = 'values';
-    /**
-     * A default value for a `CATEGORICAL` parameter that is assumed to be a
-     * relatively good starting point. Unset value signals that there is no
-     * offered starting point. Currently only supported by the Vertex AI Vizier
-     * service. Not supported by HyperparameterTuningJob or TrainingPipeline.
-     *
-     * @var string
-     */
-    public $defaultValue;
-    /**
-     * Required. The list of possible categories.
-     *
-     * @var string[]
-     */
-    public $values;
-    /**
-     * A default value for a `CATEGORICAL` parameter that is assumed to be a
-     * relatively good starting point. Unset value signals that there is no
-     * offered starting point. Currently only supported by the Vertex AI Vizier
-     * service. Not supported by HyperparameterTuningJob or TrainingPipeline.
-     *
-     * @param string $defaultValue
-     */
-    public function setDefaultValue($defaultValue)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1StudySpecParameterSpecCategoricalValueSpec extends \Google\Collection
     {
+        protected $collection_key = 'values';
+        /**
+         * A default value for a `CATEGORICAL` parameter that is assumed to be a
+         * relatively good starting point. Unset value signals that there is no
+         * offered starting point. Currently only supported by the Vertex AI Vizier
+         * service. Not supported by HyperparameterTuningJob or TrainingPipeline.
+         *
+         * @var string
+         */
+        public $defaultValue;
+        /**
+         * Required. The list of possible categories.
+         *
+         * @var string[]
+         */
+        public $values;
+        /**
+         * A default value for a `CATEGORICAL` parameter that is assumed to be a
+         * relatively good starting point. Unset value signals that there is no
+         * offered starting point. Currently only supported by the Vertex AI Vizier
+         * service. Not supported by HyperparameterTuningJob or TrainingPipeline.
+         *
+         * @param string $defaultValue
+         */
+        public function setDefaultValue($defaultValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDefaultValue()
+        {
+        }
+        /**
+         * Required. The list of possible categories.
+         *
+         * @param string[] $values
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1StudySpecParameterSpecCategoricalValueSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDefaultValue()
-    {
-    }
-    /**
-     * Required. The list of possible categories.
-     *
-     * @param string[] $values
-     */
-    public function setValues($values)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getValues()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1StudySpecParameterSpecCategoricalValueSpec extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1StudySpecParameterSpecCategoricalValueSpec
     {
     }
 }

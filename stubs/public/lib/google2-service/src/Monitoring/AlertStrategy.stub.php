@@ -21,89 +21,98 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class AlertStrategy extends \Google\Collection
-{
-    protected $collection_key = 'notificationPrompts';
-    /**
-     * If an alerting policy that was active has no data for this long, any open
-     * incidents will close
-     *
-     * @var string
-     */
-    public $autoClose;
-    protected $notificationChannelStrategyType = NotificationChannelStrategy::class;
-    protected $notificationChannelStrategyDataType = 'array';
-    /**
-     * For log-based alert policies, the notification prompts is always OPENED.
-     * For non log-based alert policies, the notification prompts can be OPENED or
-     * OPENED, CLOSED.
-     *
-     * @var string[]
-     */
-    public $notificationPrompts;
-    protected $notificationRateLimitType = NotificationRateLimit::class;
-    protected $notificationRateLimitDataType = '';
-    /**
-     * If an alerting policy that was active has no data for this long, any open
-     * incidents will close
-     *
-     * @param string $autoClose
-     */
-    public function setAutoClose($autoClose)
+namespace Google\Service\Monitoring {
+    class AlertStrategy extends \Google\Collection
     {
+        protected $collection_key = 'notificationPrompts';
+        /**
+         * If an alerting policy that was active has no data for this long, any open
+         * incidents will close
+         *
+         * @var string
+         */
+        public $autoClose;
+        protected $notificationChannelStrategyType = NotificationChannelStrategy::class;
+        protected $notificationChannelStrategyDataType = 'array';
+        /**
+         * For log-based alert policies, the notification prompts is always OPENED.
+         * For non log-based alert policies, the notification prompts can be OPENED or
+         * OPENED, CLOSED.
+         *
+         * @var string[]
+         */
+        public $notificationPrompts;
+        protected $notificationRateLimitType = NotificationRateLimit::class;
+        protected $notificationRateLimitDataType = '';
+        /**
+         * If an alerting policy that was active has no data for this long, any open
+         * incidents will close
+         *
+         * @param string $autoClose
+         */
+        public function setAutoClose($autoClose)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAutoClose()
+        {
+        }
+        /**
+         * Control how notifications will be sent out, on a per-channel basis.
+         *
+         * @param NotificationChannelStrategy[] $notificationChannelStrategy
+         */
+        public function setNotificationChannelStrategy($notificationChannelStrategy)
+        {
+        }
+        /**
+         * @return NotificationChannelStrategy[]
+         */
+        public function getNotificationChannelStrategy()
+        {
+        }
+        /**
+         * For log-based alert policies, the notification prompts is always OPENED.
+         * For non log-based alert policies, the notification prompts can be OPENED or
+         * OPENED, CLOSED.
+         *
+         * @param string[] $notificationPrompts
+         */
+        public function setNotificationPrompts($notificationPrompts)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getNotificationPrompts()
+        {
+        }
+        /**
+         * Required for log-based alerting policies, i.e. policies with a LogMatch
+         * condition.This limit is not implemented for alerting policies that do not
+         * have a LogMatch condition.
+         *
+         * @param NotificationRateLimit $notificationRateLimit
+         */
+        public function setNotificationRateLimit(NotificationRateLimit $notificationRateLimit)
+        {
+        }
+        /**
+         * @return NotificationRateLimit
+         */
+        public function getNotificationRateLimit()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Monitoring\AlertStrategy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAutoClose()
-    {
-    }
-    /**
-     * Control how notifications will be sent out, on a per-channel basis.
-     *
-     * @param NotificationChannelStrategy[] $notificationChannelStrategy
-     */
-    public function setNotificationChannelStrategy($notificationChannelStrategy)
-    {
-    }
-    /**
-     * @return NotificationChannelStrategy[]
-     */
-    public function getNotificationChannelStrategy()
-    {
-    }
-    /**
-     * For log-based alert policies, the notification prompts is always OPENED.
-     * For non log-based alert policies, the notification prompts can be OPENED or
-     * OPENED, CLOSED.
-     *
-     * @param string[] $notificationPrompts
-     */
-    public function setNotificationPrompts($notificationPrompts)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getNotificationPrompts()
-    {
-    }
-    /**
-     * Required for log-based alerting policies, i.e. policies with a LogMatch
-     * condition.This limit is not implemented for alerting policies that do not
-     * have a LogMatch condition.
-     *
-     * @param NotificationRateLimit $notificationRateLimit
-     */
-    public function setNotificationRateLimit(NotificationRateLimit $notificationRateLimit)
-    {
-    }
-    /**
-     * @return NotificationRateLimit
-     */
-    public function getNotificationRateLimit()
+    class Google_Service_Monitoring_AlertStrategy extends \Google\Service\Monitoring\AlertStrategy
     {
     }
 }

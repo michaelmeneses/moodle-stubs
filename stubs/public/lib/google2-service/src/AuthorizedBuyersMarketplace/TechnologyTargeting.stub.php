@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AuthorizedBuyersMarketplace;
-
-class TechnologyTargeting extends \Google\Model
-{
-    protected $deviceCapabilityTargetingType = CriteriaTargeting::class;
-    protected $deviceCapabilityTargetingDataType = '';
-    protected $deviceCategoryTargetingType = CriteriaTargeting::class;
-    protected $deviceCategoryTargetingDataType = '';
-    protected $operatingSystemTargetingType = OperatingSystemTargeting::class;
-    protected $operatingSystemTargetingDataType = '';
-    /**
-     * IDs of device capabilities to be included/excluded.
-     *
-     * @param CriteriaTargeting $deviceCapabilityTargeting
-     */
-    public function setDeviceCapabilityTargeting(CriteriaTargeting $deviceCapabilityTargeting)
+namespace Google\Service\AuthorizedBuyersMarketplace {
+    class TechnologyTargeting extends \Google\Model
     {
+        protected $deviceCapabilityTargetingType = CriteriaTargeting::class;
+        protected $deviceCapabilityTargetingDataType = '';
+        protected $deviceCategoryTargetingType = CriteriaTargeting::class;
+        protected $deviceCategoryTargetingDataType = '';
+        protected $operatingSystemTargetingType = OperatingSystemTargeting::class;
+        protected $operatingSystemTargetingDataType = '';
+        /**
+         * IDs of device capabilities to be included/excluded.
+         *
+         * @param CriteriaTargeting $deviceCapabilityTargeting
+         */
+        public function setDeviceCapabilityTargeting(CriteriaTargeting $deviceCapabilityTargeting)
+        {
+        }
+        /**
+         * @return CriteriaTargeting
+         */
+        public function getDeviceCapabilityTargeting()
+        {
+        }
+        /**
+         * IDs of device categories to be included/excluded.
+         *
+         * @param CriteriaTargeting $deviceCategoryTargeting
+         */
+        public function setDeviceCategoryTargeting(CriteriaTargeting $deviceCategoryTargeting)
+        {
+        }
+        /**
+         * @return CriteriaTargeting
+         */
+        public function getDeviceCategoryTargeting()
+        {
+        }
+        /**
+         * Operating system related targeting information.
+         *
+         * @param OperatingSystemTargeting $operatingSystemTargeting
+         */
+        public function setOperatingSystemTargeting(OperatingSystemTargeting $operatingSystemTargeting)
+        {
+        }
+        /**
+         * @return OperatingSystemTargeting
+         */
+        public function getOperatingSystemTargeting()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CriteriaTargeting
+     * Runtime class alias of \Google\Service\AuthorizedBuyersMarketplace\TechnologyTargeting registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeviceCapabilityTargeting()
-    {
-    }
-    /**
-     * IDs of device categories to be included/excluded.
-     *
-     * @param CriteriaTargeting $deviceCategoryTargeting
-     */
-    public function setDeviceCategoryTargeting(CriteriaTargeting $deviceCategoryTargeting)
-    {
-    }
-    /**
-     * @return CriteriaTargeting
-     */
-    public function getDeviceCategoryTargeting()
-    {
-    }
-    /**
-     * Operating system related targeting information.
-     *
-     * @param OperatingSystemTargeting $operatingSystemTargeting
-     */
-    public function setOperatingSystemTargeting(OperatingSystemTargeting $operatingSystemTargeting)
-    {
-    }
-    /**
-     * @return OperatingSystemTargeting
-     */
-    public function getOperatingSystemTargeting()
+    class Google_Service_AuthorizedBuyersMarketplace_TechnologyTargeting extends \Google\Service\AuthorizedBuyersMarketplace\TechnologyTargeting
     {
     }
 }

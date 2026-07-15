@@ -21,39 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting\Resource;
-
-/**
- * The "mobileCarriers" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dfareportingService = new Google\Service\Dfareporting(...);
- *   $mobileCarriers = $dfareportingService->mobileCarriers;
- *  </code>
- */
-class MobileCarriers extends \Google\Service\Resource
-{
+namespace Google\Service\Dfareporting\Resource {
+    use Google\Service\Dfareporting\MobileCarrier;
+    use Google\Service\Dfareporting\MobileCarriersListResponse;
     /**
-     * Gets one mobile carrier by ID. (mobileCarriers.get)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param string $id Mobile carrier ID.
-     * @param array $optParams Optional parameters.
-     * @return MobileCarrier
-     * @throws \Google\Service\Exception
+     * The "mobileCarriers" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dfareportingService = new Google\Service\Dfareporting(...);
+     *   $mobileCarriers = $dfareportingService->mobileCarriers;
+     *  </code>
      */
-    public function get($profileId, $id, $optParams = [])
+    class MobileCarriers extends \Google\Service\Resource
     {
+        /**
+         * Gets one mobile carrier by ID. (mobileCarriers.get)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param string $id Mobile carrier ID.
+         * @param array $optParams Optional parameters.
+         * @return MobileCarrier
+         * @throws \Google\Service\Exception
+         */
+        public function get($profileId, $id, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves a list of mobile carriers. (mobileCarriers.listMobileCarriers)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param array $optParams Optional parameters.
+         * @return MobileCarriersListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listMobileCarriers($profileId, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Retrieves a list of mobile carriers. (mobileCarriers.listMobileCarriers)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param array $optParams Optional parameters.
-     * @return MobileCarriersListResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Dfareporting\Resource\MobileCarriers registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listMobileCarriers($profileId, $optParams = [])
+    class Google_Service_Dfareporting_Resource_MobileCarriers extends \Google\Service\Dfareporting\Resource\MobileCarriers
     {
     }
 }

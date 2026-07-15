@@ -21,30 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee\Resource;
-
-/**
- * The "issuers" collection of methods.
- * Typical usage is:
- *  <code>
- *   $apigeeService = new Google\Service\Apigee(...);
- *   $issuers = $apigeeService->hybrid_issuers;
- *  </code>
- */
-class HybridIssuers extends \Google\Service\Resource
-{
+namespace Google\Service\Apigee\Resource {
+    use Google\Service\Apigee\GoogleCloudApigeeV1ListHybridIssuersResponse;
     /**
-     * Lists hybrid services and its trusted issuers service account ids. This api
-     * is authenticated and unauthorized(allow all the users) and used by runtime
-     * authn-authz service to query control plane's issuer service account ids.
-     * (issuers.listHybridIssuers)
-     *
-     * @param string $name Required. Must be of the form `hybrid/issuers`.
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudApigeeV1ListHybridIssuersResponse
-     * @throws \Google\Service\Exception
+     * The "issuers" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $apigeeService = new Google\Service\Apigee(...);
+     *   $issuers = $apigeeService->hybrid_issuers;
+     *  </code>
      */
-    public function listHybridIssuers($name, $optParams = [])
+    class HybridIssuers extends \Google\Service\Resource
+    {
+        /**
+         * Lists hybrid services and its trusted issuers service account ids. This api
+         * is authenticated and unauthorized(allow all the users) and used by runtime
+         * authn-authz service to query control plane's issuer service account ids.
+         * (issuers.listHybridIssuers)
+         *
+         * @param string $name Required. Must be of the form `hybrid/issuers`.
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudApigeeV1ListHybridIssuersResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listHybridIssuers($name, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Apigee\Resource\HybridIssuers registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Apigee_Resource_HybridIssuers extends \Google\Service\Apigee\Resource\HybridIssuers
     {
     }
 }

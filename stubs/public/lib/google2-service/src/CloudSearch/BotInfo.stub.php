@@ -21,197 +21,206 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class BotInfo extends \Google\Collection
-{
-    protected $collection_key = 'supportedUses';
-    /**
-     * @var string
-     */
-    public $appAllowlistStatus;
-    protected $appIdType = AppId::class;
-    protected $appIdDataType = '';
-    /**
-     * @var string
-     */
-    public $botAvatarUrl;
-    /**
-     * @var string
-     */
-    public $botName;
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var string
-     */
-    public $developerName;
-    /**
-     * @var string
-     */
-    public $marketPlaceBannerUrl;
-    /**
-     * @var string
-     */
-    public $status;
-    /**
-     * @var bool
-     */
-    public $supportHomeScreen;
-    protected $supportUrlsType = SupportUrls::class;
-    protected $supportUrlsDataType = '';
-    /**
-     * @var string[]
-     */
-    public $supportedUses;
-    /**
-     * @var string
-     */
-    public $uninstallCapability;
-    /**
-     * @param string
-     */
-    public function setAppAllowlistStatus($appAllowlistStatus)
+namespace Google\Service\CloudSearch {
+    class BotInfo extends \Google\Collection
     {
+        protected $collection_key = 'supportedUses';
+        /**
+         * @var string
+         */
+        public $appAllowlistStatus;
+        protected $appIdType = AppId::class;
+        protected $appIdDataType = '';
+        /**
+         * @var string
+         */
+        public $botAvatarUrl;
+        /**
+         * @var string
+         */
+        public $botName;
+        /**
+         * @var string
+         */
+        public $description;
+        /**
+         * @var string
+         */
+        public $developerName;
+        /**
+         * @var string
+         */
+        public $marketPlaceBannerUrl;
+        /**
+         * @var string
+         */
+        public $status;
+        /**
+         * @var bool
+         */
+        public $supportHomeScreen;
+        protected $supportUrlsType = SupportUrls::class;
+        protected $supportUrlsDataType = '';
+        /**
+         * @var string[]
+         */
+        public $supportedUses;
+        /**
+         * @var string
+         */
+        public $uninstallCapability;
+        /**
+         * @param string
+         */
+        public function setAppAllowlistStatus($appAllowlistStatus)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAppAllowlistStatus()
+        {
+        }
+        /**
+         * @param AppId
+         */
+        public function setAppId(AppId $appId)
+        {
+        }
+        /**
+         * @return AppId
+         */
+        public function getAppId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setBotAvatarUrl($botAvatarUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBotAvatarUrl()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setBotName($botName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBotName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDeveloperName($developerName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeveloperName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMarketPlaceBannerUrl($marketPlaceBannerUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMarketPlaceBannerUrl()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStatus()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setSupportHomeScreen($supportHomeScreen)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSupportHomeScreen()
+        {
+        }
+        /**
+         * @param SupportUrls
+         */
+        public function setSupportUrls(SupportUrls $supportUrls)
+        {
+        }
+        /**
+         * @return SupportUrls
+         */
+        public function getSupportUrls()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setSupportedUses($supportedUses)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSupportedUses()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUninstallCapability($uninstallCapability)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUninstallCapability()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\BotInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAppAllowlistStatus()
-    {
-    }
-    /**
-     * @param AppId
-     */
-    public function setAppId(AppId $appId)
-    {
-    }
-    /**
-     * @return AppId
-     */
-    public function getAppId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setBotAvatarUrl($botAvatarUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBotAvatarUrl()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setBotName($botName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBotName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDeveloperName($developerName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeveloperName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMarketPlaceBannerUrl($marketPlaceBannerUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMarketPlaceBannerUrl()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStatus()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setSupportHomeScreen($supportHomeScreen)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSupportHomeScreen()
-    {
-    }
-    /**
-     * @param SupportUrls
-     */
-    public function setSupportUrls(SupportUrls $supportUrls)
-    {
-    }
-    /**
-     * @return SupportUrls
-     */
-    public function getSupportUrls()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setSupportedUses($supportedUses)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSupportedUses()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUninstallCapability($uninstallCapability)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUninstallCapability()
+    class Google_Service_CloudSearch_BotInfo extends \Google\Service\CloudSearch\BotInfo
     {
     }
 }

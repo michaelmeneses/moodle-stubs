@@ -21,164 +21,173 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaValueType extends \Google\Model
-{
-    protected $booleanArrayType = GoogleCloudIntegrationsV1alphaBooleanParameterArray::class;
-    protected $booleanArrayDataType = '';
-    /**
-     * Boolean.
-     *
-     * @var bool
-     */
-    public $booleanValue;
-    protected $doubleArrayType = GoogleCloudIntegrationsV1alphaDoubleParameterArray::class;
-    protected $doubleArrayDataType = '';
-    /**
-     * Double Number.
-     *
-     * @var 
-     */
-    public $doubleValue;
-    protected $intArrayType = GoogleCloudIntegrationsV1alphaIntParameterArray::class;
-    protected $intArrayDataType = '';
-    /**
-     * Integer.
-     *
-     * @var string
-     */
-    public $intValue;
-    /**
-     * Json.
-     *
-     * @var string
-     */
-    public $jsonValue;
-    protected $stringArrayType = GoogleCloudIntegrationsV1alphaStringParameterArray::class;
-    protected $stringArrayDataType = '';
-    /**
-     * String.
-     *
-     * @var string
-     */
-    public $stringValue;
-    /**
-     * Boolean Array.
-     *
-     * @param GoogleCloudIntegrationsV1alphaBooleanParameterArray $booleanArray
-     */
-    public function setBooleanArray(GoogleCloudIntegrationsV1alphaBooleanParameterArray $booleanArray)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaValueType extends \Google\Model
     {
+        protected $booleanArrayType = GoogleCloudIntegrationsV1alphaBooleanParameterArray::class;
+        protected $booleanArrayDataType = '';
+        /**
+         * Boolean.
+         *
+         * @var bool
+         */
+        public $booleanValue;
+        protected $doubleArrayType = GoogleCloudIntegrationsV1alphaDoubleParameterArray::class;
+        protected $doubleArrayDataType = '';
+        /**
+         * Double Number.
+         *
+         * @var 
+         */
+        public $doubleValue;
+        protected $intArrayType = GoogleCloudIntegrationsV1alphaIntParameterArray::class;
+        protected $intArrayDataType = '';
+        /**
+         * Integer.
+         *
+         * @var string
+         */
+        public $intValue;
+        /**
+         * Json.
+         *
+         * @var string
+         */
+        public $jsonValue;
+        protected $stringArrayType = GoogleCloudIntegrationsV1alphaStringParameterArray::class;
+        protected $stringArrayDataType = '';
+        /**
+         * String.
+         *
+         * @var string
+         */
+        public $stringValue;
+        /**
+         * Boolean Array.
+         *
+         * @param GoogleCloudIntegrationsV1alphaBooleanParameterArray $booleanArray
+         */
+        public function setBooleanArray(GoogleCloudIntegrationsV1alphaBooleanParameterArray $booleanArray)
+        {
+        }
+        /**
+         * @return GoogleCloudIntegrationsV1alphaBooleanParameterArray
+         */
+        public function getBooleanArray()
+        {
+        }
+        /**
+         * Boolean.
+         *
+         * @param bool $booleanValue
+         */
+        public function setBooleanValue($booleanValue)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getBooleanValue()
+        {
+        }
+        /**
+         * Double Number Array.
+         *
+         * @param GoogleCloudIntegrationsV1alphaDoubleParameterArray $doubleArray
+         */
+        public function setDoubleArray(GoogleCloudIntegrationsV1alphaDoubleParameterArray $doubleArray)
+        {
+        }
+        /**
+         * @return GoogleCloudIntegrationsV1alphaDoubleParameterArray
+         */
+        public function getDoubleArray()
+        {
+        }
+        public function setDoubleValue($doubleValue)
+        {
+        }
+        public function getDoubleValue()
+        {
+        }
+        /**
+         * Integer Array.
+         *
+         * @param GoogleCloudIntegrationsV1alphaIntParameterArray $intArray
+         */
+        public function setIntArray(GoogleCloudIntegrationsV1alphaIntParameterArray $intArray)
+        {
+        }
+        /**
+         * @return GoogleCloudIntegrationsV1alphaIntParameterArray
+         */
+        public function getIntArray()
+        {
+        }
+        /**
+         * Integer.
+         *
+         * @param string $intValue
+         */
+        public function setIntValue($intValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIntValue()
+        {
+        }
+        /**
+         * Json.
+         *
+         * @param string $jsonValue
+         */
+        public function setJsonValue($jsonValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getJsonValue()
+        {
+        }
+        /**
+         * String Array.
+         *
+         * @param GoogleCloudIntegrationsV1alphaStringParameterArray $stringArray
+         */
+        public function setStringArray(GoogleCloudIntegrationsV1alphaStringParameterArray $stringArray)
+        {
+        }
+        /**
+         * @return GoogleCloudIntegrationsV1alphaStringParameterArray
+         */
+        public function getStringArray()
+        {
+        }
+        /**
+         * String.
+         *
+         * @param string $stringValue
+         */
+        public function setStringValue($stringValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStringValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudIntegrationsV1alphaBooleanParameterArray
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaValueType registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBooleanArray()
-    {
-    }
-    /**
-     * Boolean.
-     *
-     * @param bool $booleanValue
-     */
-    public function setBooleanValue($booleanValue)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getBooleanValue()
-    {
-    }
-    /**
-     * Double Number Array.
-     *
-     * @param GoogleCloudIntegrationsV1alphaDoubleParameterArray $doubleArray
-     */
-    public function setDoubleArray(GoogleCloudIntegrationsV1alphaDoubleParameterArray $doubleArray)
-    {
-    }
-    /**
-     * @return GoogleCloudIntegrationsV1alphaDoubleParameterArray
-     */
-    public function getDoubleArray()
-    {
-    }
-    public function setDoubleValue($doubleValue)
-    {
-    }
-    public function getDoubleValue()
-    {
-    }
-    /**
-     * Integer Array.
-     *
-     * @param GoogleCloudIntegrationsV1alphaIntParameterArray $intArray
-     */
-    public function setIntArray(GoogleCloudIntegrationsV1alphaIntParameterArray $intArray)
-    {
-    }
-    /**
-     * @return GoogleCloudIntegrationsV1alphaIntParameterArray
-     */
-    public function getIntArray()
-    {
-    }
-    /**
-     * Integer.
-     *
-     * @param string $intValue
-     */
-    public function setIntValue($intValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIntValue()
-    {
-    }
-    /**
-     * Json.
-     *
-     * @param string $jsonValue
-     */
-    public function setJsonValue($jsonValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getJsonValue()
-    {
-    }
-    /**
-     * String Array.
-     *
-     * @param GoogleCloudIntegrationsV1alphaStringParameterArray $stringArray
-     */
-    public function setStringArray(GoogleCloudIntegrationsV1alphaStringParameterArray $stringArray)
-    {
-    }
-    /**
-     * @return GoogleCloudIntegrationsV1alphaStringParameterArray
-     */
-    public function getStringArray()
-    {
-    }
-    /**
-     * String.
-     *
-     * @param string $stringValue
-     */
-    public function setStringValue($stringValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStringValue()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaValueType extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaValueType
     {
     }
 }

@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager;
-
-class RunEvaluationRequest extends \Google\Model
-{
-    protected $executionType = Execution::class;
-    protected $executionDataType = '';
-    /**
-     * Required. Id of the requesting object If auto-generating Id server-side,
-     * remove this field and execution_id from the method_signature of Create RPC
-     *
-     * @var string
-     */
-    public $executionId;
-    /**
-     * Optional. An optional request ID to identify requests. Specify a unique
-     * request ID so that if you must retry your request, the server will know to
-     * ignore the request if it has already been completed. The server will
-     * guarantee that for at least 60 minutes since the first request. For
-     * example, consider a situation where you make an initial request and the
-     * request times out. If you make the request again with the same request ID,
-     * the server can check if original operation with the same request ID was
-     * received, and if so, will ignore the second request. This prevents clients
-     * from accidentally creating duplicate commitments. The request ID must be a
-     * valid UUID with the exception that zero UUID is not supported
-     * (00000000-0000-0000-0000-000000000000).
-     *
-     * @var string
-     */
-    public $requestId;
-    /**
-     * Required. The resource being created
-     *
-     * @param Execution $execution
-     */
-    public function setExecution(Execution $execution)
+namespace Google\Service\WorkloadManager {
+    class RunEvaluationRequest extends \Google\Model
     {
+        protected $executionType = Execution::class;
+        protected $executionDataType = '';
+        /**
+         * Required. Id of the requesting object If auto-generating Id server-side,
+         * remove this field and execution_id from the method_signature of Create RPC
+         *
+         * @var string
+         */
+        public $executionId;
+        /**
+         * Optional. An optional request ID to identify requests. Specify a unique
+         * request ID so that if you must retry your request, the server will know to
+         * ignore the request if it has already been completed. The server will
+         * guarantee that for at least 60 minutes since the first request. For
+         * example, consider a situation where you make an initial request and the
+         * request times out. If you make the request again with the same request ID,
+         * the server can check if original operation with the same request ID was
+         * received, and if so, will ignore the second request. This prevents clients
+         * from accidentally creating duplicate commitments. The request ID must be a
+         * valid UUID with the exception that zero UUID is not supported
+         * (00000000-0000-0000-0000-000000000000).
+         *
+         * @var string
+         */
+        public $requestId;
+        /**
+         * Required. The resource being created
+         *
+         * @param Execution $execution
+         */
+        public function setExecution(Execution $execution)
+        {
+        }
+        /**
+         * @return Execution
+         */
+        public function getExecution()
+        {
+        }
+        /**
+         * Required. Id of the requesting object If auto-generating Id server-side,
+         * remove this field and execution_id from the method_signature of Create RPC
+         *
+         * @param string $executionId
+         */
+        public function setExecutionId($executionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExecutionId()
+        {
+        }
+        /**
+         * Optional. An optional request ID to identify requests. Specify a unique
+         * request ID so that if you must retry your request, the server will know to
+         * ignore the request if it has already been completed. The server will
+         * guarantee that for at least 60 minutes since the first request. For
+         * example, consider a situation where you make an initial request and the
+         * request times out. If you make the request again with the same request ID,
+         * the server can check if original operation with the same request ID was
+         * received, and if so, will ignore the second request. This prevents clients
+         * from accidentally creating duplicate commitments. The request ID must be a
+         * valid UUID with the exception that zero UUID is not supported
+         * (00000000-0000-0000-0000-000000000000).
+         *
+         * @param string $requestId
+         */
+        public function setRequestId($requestId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Execution
+     * Runtime class alias of \Google\Service\WorkloadManager\RunEvaluationRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExecution()
-    {
-    }
-    /**
-     * Required. Id of the requesting object If auto-generating Id server-side,
-     * remove this field and execution_id from the method_signature of Create RPC
-     *
-     * @param string $executionId
-     */
-    public function setExecutionId($executionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExecutionId()
-    {
-    }
-    /**
-     * Optional. An optional request ID to identify requests. Specify a unique
-     * request ID so that if you must retry your request, the server will know to
-     * ignore the request if it has already been completed. The server will
-     * guarantee that for at least 60 minutes since the first request. For
-     * example, consider a situation where you make an initial request and the
-     * request times out. If you make the request again with the same request ID,
-     * the server can check if original operation with the same request ID was
-     * received, and if so, will ignore the second request. This prevents clients
-     * from accidentally creating duplicate commitments. The request ID must be a
-     * valid UUID with the exception that zero UUID is not supported
-     * (00000000-0000-0000-0000-000000000000).
-     *
-     * @param string $requestId
-     */
-    public function setRequestId($requestId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestId()
+    class Google_Service_WorkloadManager_RunEvaluationRequest extends \Google\Service\WorkloadManager\RunEvaluationRequest
     {
     }
 }

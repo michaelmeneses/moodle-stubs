@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InterconnectMacsecConfigPreSharedKey extends \Google\Model
-{
-    /**
-     * An auto-generated Connectivity Association Key (CAK) for this key.
-     *
-     * @var string
-     */
-    public $cak;
-    /**
-     * An auto-generated Connectivity Association Key Name (CKN) for this key.
-     *
-     * @var string
-     */
-    public $ckn;
-    /**
-     * User provided name for this pre-shared key.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * User provided timestamp on or after which this key is valid.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * An auto-generated Connectivity Association Key (CAK) for this key.
-     *
-     * @param string $cak
-     */
-    public function setCak($cak)
+namespace Google\Service\Compute {
+    class InterconnectMacsecConfigPreSharedKey extends \Google\Model
     {
+        /**
+         * An auto-generated Connectivity Association Key (CAK) for this key.
+         *
+         * @var string
+         */
+        public $cak;
+        /**
+         * An auto-generated Connectivity Association Key Name (CKN) for this key.
+         *
+         * @var string
+         */
+        public $ckn;
+        /**
+         * User provided name for this pre-shared key.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * User provided timestamp on or after which this key is valid.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * An auto-generated Connectivity Association Key (CAK) for this key.
+         *
+         * @param string $cak
+         */
+        public function setCak($cak)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCak()
+        {
+        }
+        /**
+         * An auto-generated Connectivity Association Key Name (CKN) for this key.
+         *
+         * @param string $ckn
+         */
+        public function setCkn($ckn)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCkn()
+        {
+        }
+        /**
+         * User provided name for this pre-shared key.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * User provided timestamp on or after which this key is valid.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\InterconnectMacsecConfigPreSharedKey registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCak()
-    {
-    }
-    /**
-     * An auto-generated Connectivity Association Key Name (CKN) for this key.
-     *
-     * @param string $ckn
-     */
-    public function setCkn($ckn)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCkn()
-    {
-    }
-    /**
-     * User provided name for this pre-shared key.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * User provided timestamp on or after which this key is valid.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
+    class Google_Service_Compute_InterconnectMacsecConfigPreSharedKey extends \Google\Service\Compute\InterconnectMacsecConfigPreSharedKey
     {
     }
 }

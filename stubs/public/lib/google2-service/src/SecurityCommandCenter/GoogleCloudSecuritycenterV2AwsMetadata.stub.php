@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GoogleCloudSecuritycenterV2AwsMetadata extends \Google\Collection
-{
-    protected $collection_key = 'organizationalUnits';
-    protected $accountType = GoogleCloudSecuritycenterV2AwsAccount::class;
-    protected $accountDataType = '';
-    protected $organizationType = GoogleCloudSecuritycenterV2AwsOrganization::class;
-    protected $organizationDataType = '';
-    protected $organizationalUnitsType = GoogleCloudSecuritycenterV2AwsOrganizationalUnit::class;
-    protected $organizationalUnitsDataType = 'array';
-    /**
-     * The AWS account associated with the resource.
-     *
-     * @param GoogleCloudSecuritycenterV2AwsAccount $account
-     */
-    public function setAccount(GoogleCloudSecuritycenterV2AwsAccount $account)
+namespace Google\Service\SecurityCommandCenter {
+    class GoogleCloudSecuritycenterV2AwsMetadata extends \Google\Collection
     {
+        protected $collection_key = 'organizationalUnits';
+        protected $accountType = GoogleCloudSecuritycenterV2AwsAccount::class;
+        protected $accountDataType = '';
+        protected $organizationType = GoogleCloudSecuritycenterV2AwsOrganization::class;
+        protected $organizationDataType = '';
+        protected $organizationalUnitsType = GoogleCloudSecuritycenterV2AwsOrganizationalUnit::class;
+        protected $organizationalUnitsDataType = 'array';
+        /**
+         * The AWS account associated with the resource.
+         *
+         * @param GoogleCloudSecuritycenterV2AwsAccount $account
+         */
+        public function setAccount(GoogleCloudSecuritycenterV2AwsAccount $account)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV2AwsAccount
+         */
+        public function getAccount()
+        {
+        }
+        /**
+         * The AWS organization associated with the resource.
+         *
+         * @param GoogleCloudSecuritycenterV2AwsOrganization $organization
+         */
+        public function setOrganization(GoogleCloudSecuritycenterV2AwsOrganization $organization)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV2AwsOrganization
+         */
+        public function getOrganization()
+        {
+        }
+        /**
+         * A list of AWS organizational units associated with the resource, ordered
+         * from lowest level (closest to the account) to highest level.
+         *
+         * @param GoogleCloudSecuritycenterV2AwsOrganizationalUnit[] $organizationalUnits
+         */
+        public function setOrganizationalUnits($organizationalUnits)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV2AwsOrganizationalUnit[]
+         */
+        public function getOrganizationalUnits()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudSecuritycenterV2AwsAccount
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2AwsMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccount()
-    {
-    }
-    /**
-     * The AWS organization associated with the resource.
-     *
-     * @param GoogleCloudSecuritycenterV2AwsOrganization $organization
-     */
-    public function setOrganization(GoogleCloudSecuritycenterV2AwsOrganization $organization)
-    {
-    }
-    /**
-     * @return GoogleCloudSecuritycenterV2AwsOrganization
-     */
-    public function getOrganization()
-    {
-    }
-    /**
-     * A list of AWS organizational units associated with the resource, ordered
-     * from lowest level (closest to the account) to highest level.
-     *
-     * @param GoogleCloudSecuritycenterV2AwsOrganizationalUnit[] $organizationalUnits
-     */
-    public function setOrganizationalUnits($organizationalUnits)
-    {
-    }
-    /**
-     * @return GoogleCloudSecuritycenterV2AwsOrganizationalUnit[]
-     */
-    public function getOrganizationalUnits()
+    class Google_Service_SecurityCommandCenter_GoogleCloudSecuritycenterV2AwsMetadata extends \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2AwsMetadata
     {
     }
 }

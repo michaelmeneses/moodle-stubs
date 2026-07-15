@@ -21,77 +21,86 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class SystemUpdateInfo extends \Google\Model
-{
-    /**
-     * It is unknown whether there is a pending system update. This happens when,
-     * for example, the device API level is less than 26, or if the version of
-     * Android Device Policy is outdated.
-     */
-    public const UPDATE_STATUS_UPDATE_STATUS_UNKNOWN = 'UPDATE_STATUS_UNKNOWN';
-    /**
-     * There is no pending system update available on the device.
-     */
-    public const UPDATE_STATUS_UP_TO_DATE = 'UP_TO_DATE';
-    /**
-     * There is a pending system update available, but its type is not known.
-     */
-    public const UPDATE_STATUS_UNKNOWN_UPDATE_AVAILABLE = 'UNKNOWN_UPDATE_AVAILABLE';
-    /**
-     * There is a pending security update available.
-     */
-    public const UPDATE_STATUS_SECURITY_UPDATE_AVAILABLE = 'SECURITY_UPDATE_AVAILABLE';
-    /**
-     * There is a pending OS update available.
-     */
-    public const UPDATE_STATUS_OS_UPDATE_AVAILABLE = 'OS_UPDATE_AVAILABLE';
-    /**
-     * The time when the update was first available. A zero value indicates that
-     * this field is not set. This field is set only if an update is available
-     * (that is, updateStatus is neither UPDATE_STATUS_UNKNOWN nor UP_TO_DATE).
-     *
-     * @var string
-     */
-    public $updateReceivedTime;
-    /**
-     * The status of an update: whether an update exists and what type it is.
-     *
-     * @var string
-     */
-    public $updateStatus;
-    /**
-     * The time when the update was first available. A zero value indicates that
-     * this field is not set. This field is set only if an update is available
-     * (that is, updateStatus is neither UPDATE_STATUS_UNKNOWN nor UP_TO_DATE).
-     *
-     * @param string $updateReceivedTime
-     */
-    public function setUpdateReceivedTime($updateReceivedTime)
+namespace Google\Service\AndroidManagement {
+    class SystemUpdateInfo extends \Google\Model
     {
+        /**
+         * It is unknown whether there is a pending system update. This happens when,
+         * for example, the device API level is less than 26, or if the version of
+         * Android Device Policy is outdated.
+         */
+        public const UPDATE_STATUS_UPDATE_STATUS_UNKNOWN = 'UPDATE_STATUS_UNKNOWN';
+        /**
+         * There is no pending system update available on the device.
+         */
+        public const UPDATE_STATUS_UP_TO_DATE = 'UP_TO_DATE';
+        /**
+         * There is a pending system update available, but its type is not known.
+         */
+        public const UPDATE_STATUS_UNKNOWN_UPDATE_AVAILABLE = 'UNKNOWN_UPDATE_AVAILABLE';
+        /**
+         * There is a pending security update available.
+         */
+        public const UPDATE_STATUS_SECURITY_UPDATE_AVAILABLE = 'SECURITY_UPDATE_AVAILABLE';
+        /**
+         * There is a pending OS update available.
+         */
+        public const UPDATE_STATUS_OS_UPDATE_AVAILABLE = 'OS_UPDATE_AVAILABLE';
+        /**
+         * The time when the update was first available. A zero value indicates that
+         * this field is not set. This field is set only if an update is available
+         * (that is, updateStatus is neither UPDATE_STATUS_UNKNOWN nor UP_TO_DATE).
+         *
+         * @var string
+         */
+        public $updateReceivedTime;
+        /**
+         * The status of an update: whether an update exists and what type it is.
+         *
+         * @var string
+         */
+        public $updateStatus;
+        /**
+         * The time when the update was first available. A zero value indicates that
+         * this field is not set. This field is set only if an update is available
+         * (that is, updateStatus is neither UPDATE_STATUS_UNKNOWN nor UP_TO_DATE).
+         *
+         * @param string $updateReceivedTime
+         */
+        public function setUpdateReceivedTime($updateReceivedTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateReceivedTime()
+        {
+        }
+        /**
+         * The status of an update: whether an update exists and what type it is.
+         *
+         * Accepted values: UPDATE_STATUS_UNKNOWN, UP_TO_DATE,
+         * UNKNOWN_UPDATE_AVAILABLE, SECURITY_UPDATE_AVAILABLE, OS_UPDATE_AVAILABLE
+         *
+         * @param self::UPDATE_STATUS_* $updateStatus
+         */
+        public function setUpdateStatus($updateStatus)
+        {
+        }
+        /**
+         * @return self::UPDATE_STATUS_*
+         */
+        public function getUpdateStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidManagement\SystemUpdateInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUpdateReceivedTime()
-    {
-    }
-    /**
-     * The status of an update: whether an update exists and what type it is.
-     *
-     * Accepted values: UPDATE_STATUS_UNKNOWN, UP_TO_DATE,
-     * UNKNOWN_UPDATE_AVAILABLE, SECURITY_UPDATE_AVAILABLE, OS_UPDATE_AVAILABLE
-     *
-     * @param self::UPDATE_STATUS_* $updateStatus
-     */
-    public function setUpdateStatus($updateStatus)
-    {
-    }
-    /**
-     * @return self::UPDATE_STATUS_*
-     */
-    public function getUpdateStatus()
+    class Google_Service_AndroidManagement_SystemUpdateInfo extends \Google\Service\AndroidManagement\SystemUpdateInfo
     {
     }
 }

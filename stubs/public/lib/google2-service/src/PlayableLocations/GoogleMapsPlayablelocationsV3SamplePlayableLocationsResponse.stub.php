@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PlayableLocations;
-
-class GoogleMapsPlayablelocationsV3SamplePlayableLocationsResponse extends \Google\Model
-{
-    protected $locationsPerGameObjectTypeType = GoogleMapsPlayablelocationsV3SamplePlayableLocationList::class;
-    protected $locationsPerGameObjectTypeDataType = 'map';
-    public $ttl;
+namespace Google\Service\PlayableLocations {
+    class GoogleMapsPlayablelocationsV3SamplePlayableLocationsResponse extends \Google\Model
+    {
+        protected $locationsPerGameObjectTypeType = GoogleMapsPlayablelocationsV3SamplePlayableLocationList::class;
+        protected $locationsPerGameObjectTypeDataType = 'map';
+        public $ttl;
+        /**
+         * @param GoogleMapsPlayablelocationsV3SamplePlayableLocationList[]
+         */
+        public function setLocationsPerGameObjectType($locationsPerGameObjectType)
+        {
+        }
+        /**
+         * @return GoogleMapsPlayablelocationsV3SamplePlayableLocationList[]
+         */
+        public function getLocationsPerGameObjectType()
+        {
+        }
+        public function setTtl($ttl)
+        {
+        }
+        public function getTtl()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @param GoogleMapsPlayablelocationsV3SamplePlayableLocationList[]
+     * Runtime class alias of \Google\Service\PlayableLocations\GoogleMapsPlayablelocationsV3SamplePlayableLocationsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setLocationsPerGameObjectType($locationsPerGameObjectType)
-    {
-    }
-    /**
-     * @return GoogleMapsPlayablelocationsV3SamplePlayableLocationList[]
-     */
-    public function getLocationsPerGameObjectType()
-    {
-    }
-    public function setTtl($ttl)
-    {
-    }
-    public function getTtl()
+    class Google_Service_PlayableLocations_GoogleMapsPlayablelocationsV3SamplePlayableLocationsResponse extends \Google\Service\PlayableLocations\GoogleMapsPlayablelocationsV3SamplePlayableLocationsResponse
     {
     }
 }

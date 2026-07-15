@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InterconnectDiagnosticsARPEntry extends \Google\Model
-{
-    /**
-     * The IP address of this ARP neighbor.
-     *
-     * @var string
-     */
-    public $ipAddress;
-    /**
-     * The MAC address of this ARP neighbor.
-     *
-     * @var string
-     */
-    public $macAddress;
-    /**
-     * The IP address of this ARP neighbor.
-     *
-     * @param string $ipAddress
-     */
-    public function setIpAddress($ipAddress)
+namespace Google\Service\Compute {
+    class InterconnectDiagnosticsARPEntry extends \Google\Model
     {
+        /**
+         * The IP address of this ARP neighbor.
+         *
+         * @var string
+         */
+        public $ipAddress;
+        /**
+         * The MAC address of this ARP neighbor.
+         *
+         * @var string
+         */
+        public $macAddress;
+        /**
+         * The IP address of this ARP neighbor.
+         *
+         * @param string $ipAddress
+         */
+        public function setIpAddress($ipAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIpAddress()
+        {
+        }
+        /**
+         * The MAC address of this ARP neighbor.
+         *
+         * @param string $macAddress
+         */
+        public function setMacAddress($macAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMacAddress()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\InterconnectDiagnosticsARPEntry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIpAddress()
-    {
-    }
-    /**
-     * The MAC address of this ARP neighbor.
-     *
-     * @param string $macAddress
-     */
-    public function setMacAddress($macAddress)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMacAddress()
+    class Google_Service_Compute_InterconnectDiagnosticsARPEntry extends \Google\Service\Compute\InterconnectDiagnosticsARPEntry
     {
     }
 }

@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise;
-
-class ManagedConfiguration extends \Google\Collection
-{
-    protected $collection_key = 'managedProperty';
-    protected $configurationVariablesType = ConfigurationVariables::class;
-    protected $configurationVariablesDataType = '';
-    /**
-     * Deprecated.
-     *
-     * @var string
-     */
-    public $kind;
-    protected $managedPropertyType = ManagedProperty::class;
-    protected $managedPropertyDataType = 'array';
-    /**
-     * The ID of the product that the managed configuration is for, e.g.
-     * "app:com.google.android.gm".
-     *
-     * @var string
-     */
-    public $productId;
-    /**
-     * Contains the ID of the managed configuration profile and the set of
-     * configuration variables (if any) defined for the user.
-     *
-     * @param ConfigurationVariables $configurationVariables
-     */
-    public function setConfigurationVariables(ConfigurationVariables $configurationVariables)
+namespace Google\Service\AndroidEnterprise {
+    class ManagedConfiguration extends \Google\Collection
     {
+        protected $collection_key = 'managedProperty';
+        protected $configurationVariablesType = ConfigurationVariables::class;
+        protected $configurationVariablesDataType = '';
+        /**
+         * Deprecated.
+         *
+         * @var string
+         */
+        public $kind;
+        protected $managedPropertyType = ManagedProperty::class;
+        protected $managedPropertyDataType = 'array';
+        /**
+         * The ID of the product that the managed configuration is for, e.g.
+         * "app:com.google.android.gm".
+         *
+         * @var string
+         */
+        public $productId;
+        /**
+         * Contains the ID of the managed configuration profile and the set of
+         * configuration variables (if any) defined for the user.
+         *
+         * @param ConfigurationVariables $configurationVariables
+         */
+        public function setConfigurationVariables(ConfigurationVariables $configurationVariables)
+        {
+        }
+        /**
+         * @return ConfigurationVariables
+         */
+        public function getConfigurationVariables()
+        {
+        }
+        /**
+         * Deprecated.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The set of managed properties for this configuration.
+         *
+         * @param ManagedProperty[] $managedProperty
+         */
+        public function setManagedProperty($managedProperty)
+        {
+        }
+        /**
+         * @return ManagedProperty[]
+         */
+        public function getManagedProperty()
+        {
+        }
+        /**
+         * The ID of the product that the managed configuration is for, e.g.
+         * "app:com.google.android.gm".
+         *
+         * @param string $productId
+         */
+        public function setProductId($productId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProductId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ConfigurationVariables
+     * Runtime class alias of \Google\Service\AndroidEnterprise\ManagedConfiguration registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfigurationVariables()
-    {
-    }
-    /**
-     * Deprecated.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The set of managed properties for this configuration.
-     *
-     * @param ManagedProperty[] $managedProperty
-     */
-    public function setManagedProperty($managedProperty)
-    {
-    }
-    /**
-     * @return ManagedProperty[]
-     */
-    public function getManagedProperty()
-    {
-    }
-    /**
-     * The ID of the product that the managed configuration is for, e.g.
-     * "app:com.google.android.gm".
-     *
-     * @param string $productId
-     */
-    public function setProductId($productId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProductId()
+    class Google_Service_AndroidEnterprise_ManagedConfiguration extends \Google\Service\AndroidEnterprise\ManagedConfiguration
     {
     }
 }

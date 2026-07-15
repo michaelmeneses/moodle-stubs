@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaAnswerStep extends \Google\Collection
-{
-    protected $collection_key = 'actions';
-    protected $actionsType = GoogleCloudDiscoveryengineV1betaAnswerStepAction::class;
-    protected $actionsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var string
-     */
-    public $state;
-    /**
-     * @var string
-     */
-    public $thought;
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaAnswerStepAction[]
-     */
-    public function setActions($actions)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaAnswerStep extends \Google\Collection
     {
+        protected $collection_key = 'actions';
+        protected $actionsType = GoogleCloudDiscoveryengineV1betaAnswerStepAction::class;
+        protected $actionsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $description;
+        /**
+         * @var string
+         */
+        public $state;
+        /**
+         * @var string
+         */
+        public $thought;
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaAnswerStepAction[]
+         */
+        public function setActions($actions)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaAnswerStepAction[]
+         */
+        public function getActions()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getState()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setThought($thought)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getThought()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1betaAnswerStepAction[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaAnswerStep registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActions()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getState()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setThought($thought)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getThought()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaAnswerStep extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaAnswerStep
     {
     }
 }

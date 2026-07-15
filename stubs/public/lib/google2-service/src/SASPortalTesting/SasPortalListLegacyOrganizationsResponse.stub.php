@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SASPortalTesting;
-
-class SasPortalListLegacyOrganizationsResponse extends \Google\Collection
-{
-    protected $collection_key = 'organizations';
-    protected $organizationsType = SasPortalOrganization::class;
-    protected $organizationsDataType = 'array';
-    /**
-     * Optional. Legacy SAS organizations.
-     *
-     * @param SasPortalOrganization[] $organizations
-     */
-    public function setOrganizations($organizations)
+namespace Google\Service\SASPortalTesting {
+    class SasPortalListLegacyOrganizationsResponse extends \Google\Collection
     {
+        protected $collection_key = 'organizations';
+        protected $organizationsType = SasPortalOrganization::class;
+        protected $organizationsDataType = 'array';
+        /**
+         * Optional. Legacy SAS organizations.
+         *
+         * @param SasPortalOrganization[] $organizations
+         */
+        public function setOrganizations($organizations)
+        {
+        }
+        /**
+         * @return SasPortalOrganization[]
+         */
+        public function getOrganizations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SasPortalOrganization[]
+     * Runtime class alias of \Google\Service\SASPortalTesting\SasPortalListLegacyOrganizationsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOrganizations()
+    class Google_Service_SASPortalTesting_SasPortalListLegacyOrganizationsResponse extends \Google\Service\SASPortalTesting\SasPortalListLegacyOrganizationsResponse
     {
     }
 }

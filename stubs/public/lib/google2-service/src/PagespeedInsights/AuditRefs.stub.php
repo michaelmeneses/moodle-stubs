@@ -21,101 +21,110 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PagespeedInsights;
-
-class AuditRefs extends \Google\Collection
-{
-    protected $collection_key = 'relevantAudits';
-    /**
-     * The conventional acronym for the audit/metric.
-     *
-     * @var string
-     */
-    public $acronym;
-    /**
-     * The category group that the audit belongs to (optional).
-     *
-     * @var string
-     */
-    public $group;
-    /**
-     * The audit ref id.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Any audit IDs closely relevant to this one.
-     *
-     * @var string[]
-     */
-    public $relevantAudits;
-    /**
-     * The weight this audit's score has on the overall category score.
-     *
-     * @var 
-     */
-    public $weight;
-    /**
-     * The conventional acronym for the audit/metric.
-     *
-     * @param string $acronym
-     */
-    public function setAcronym($acronym)
+namespace Google\Service\PagespeedInsights {
+    class AuditRefs extends \Google\Collection
     {
+        protected $collection_key = 'relevantAudits';
+        /**
+         * The conventional acronym for the audit/metric.
+         *
+         * @var string
+         */
+        public $acronym;
+        /**
+         * The category group that the audit belongs to (optional).
+         *
+         * @var string
+         */
+        public $group;
+        /**
+         * The audit ref id.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Any audit IDs closely relevant to this one.
+         *
+         * @var string[]
+         */
+        public $relevantAudits;
+        /**
+         * The weight this audit's score has on the overall category score.
+         *
+         * @var 
+         */
+        public $weight;
+        /**
+         * The conventional acronym for the audit/metric.
+         *
+         * @param string $acronym
+         */
+        public function setAcronym($acronym)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAcronym()
+        {
+        }
+        /**
+         * The category group that the audit belongs to (optional).
+         *
+         * @param string $group
+         */
+        public function setGroup($group)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGroup()
+        {
+        }
+        /**
+         * The audit ref id.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Any audit IDs closely relevant to this one.
+         *
+         * @param string[] $relevantAudits
+         */
+        public function setRelevantAudits($relevantAudits)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRelevantAudits()
+        {
+        }
+        public function setWeight($weight)
+        {
+        }
+        public function getWeight()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PagespeedInsights\AuditRefs registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAcronym()
-    {
-    }
-    /**
-     * The category group that the audit belongs to (optional).
-     *
-     * @param string $group
-     */
-    public function setGroup($group)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGroup()
-    {
-    }
-    /**
-     * The audit ref id.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Any audit IDs closely relevant to this one.
-     *
-     * @param string[] $relevantAudits
-     */
-    public function setRelevantAudits($relevantAudits)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRelevantAudits()
-    {
-    }
-    public function setWeight($weight)
-    {
-    }
-    public function getWeight()
+    class Google_Service_PagespeedInsights_AuditRefs extends \Google\Service\PagespeedInsights\AuditRefs
     {
     }
 }

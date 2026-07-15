@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkspaceEvents;
-
-class StringList extends \Google\Collection
-{
-    protected $collection_key = 'list';
-    /**
-     * @var string[]
-     */
-    public $list;
-    /**
-     * @param string[] $list
-     */
-    public function setList($list)
+namespace Google\Service\WorkspaceEvents {
+    class StringList extends \Google\Collection
     {
+        protected $collection_key = 'list';
+        /**
+         * @var string[]
+         */
+        public $list;
+        /**
+         * @param string[] $list
+         */
+        public function setList($list)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getList()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\WorkspaceEvents\StringList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getList()
+    class Google_Service_WorkspaceEvents_StringList extends \Google\Service\WorkspaceEvents\StringList
     {
     }
 }

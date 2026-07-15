@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GamesConfiguration;
-
-class LocalizedString extends \Google\Model
-{
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `gamesConfiguration#localizedString`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The locale string.
-     *
-     * @var string
-     */
-    public $locale;
-    /**
-     * The string value.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `gamesConfiguration#localizedString`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\GamesConfiguration {
+    class LocalizedString extends \Google\Model
     {
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `gamesConfiguration#localizedString`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The locale string.
+         *
+         * @var string
+         */
+        public $locale;
+        /**
+         * The string value.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `gamesConfiguration#localizedString`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The locale string.
+         *
+         * @param string $locale
+         */
+        public function setLocale($locale)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocale()
+        {
+        }
+        /**
+         * The string value.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GamesConfiguration\LocalizedString registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * The locale string.
-     *
-     * @param string $locale
-     */
-    public function setLocale($locale)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocale()
-    {
-    }
-    /**
-     * The string value.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_GamesConfiguration_LocalizedString extends \Google\Service\GamesConfiguration\LocalizedString
     {
     }
 }

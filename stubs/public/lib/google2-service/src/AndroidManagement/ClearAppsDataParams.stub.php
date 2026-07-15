@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class ClearAppsDataParams extends \Google\Collection
-{
-    protected $collection_key = 'packageNames';
-    /**
-     * The package names of the apps whose data will be cleared when the command
-     * is executed.
-     *
-     * @var string[]
-     */
-    public $packageNames;
-    /**
-     * The package names of the apps whose data will be cleared when the command
-     * is executed.
-     *
-     * @param string[] $packageNames
-     */
-    public function setPackageNames($packageNames)
+namespace Google\Service\AndroidManagement {
+    class ClearAppsDataParams extends \Google\Collection
     {
+        protected $collection_key = 'packageNames';
+        /**
+         * The package names of the apps whose data will be cleared when the command
+         * is executed.
+         *
+         * @var string[]
+         */
+        public $packageNames;
+        /**
+         * The package names of the apps whose data will be cleared when the command
+         * is executed.
+         *
+         * @param string[] $packageNames
+         */
+        public function setPackageNames($packageNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPackageNames()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\AndroidManagement\ClearAppsDataParams registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPackageNames()
+    class Google_Service_AndroidManagement_ClearAppsDataParams extends \Google\Service\AndroidManagement\ClearAppsDataParams
     {
     }
 }

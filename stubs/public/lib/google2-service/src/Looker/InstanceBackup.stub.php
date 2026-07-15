@@ -21,130 +21,139 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Looker;
-
-class InstanceBackup extends \Google\Model
-{
-    /**
-     * The state of the backup is unknown.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * The backup is being created.
-     */
-    public const STATE_CREATING = 'CREATING';
-    /**
-     * The backup is being deleted.
-     */
-    public const STATE_DELETING = 'DELETING';
-    /**
-     * The backup is active and ready to use.
-     */
-    public const STATE_ACTIVE = 'ACTIVE';
-    /**
-     * The backup failed.
-     */
-    public const STATE_FAILED = 'FAILED';
-    /**
-     * Output only. The time when the backup was started.
-     *
-     * @var string
-     */
-    public $createTime;
-    protected $encryptionConfigType = EncryptionConfig::class;
-    protected $encryptionConfigDataType = '';
-    /**
-     * Output only. The time when the backup will be deleted.
-     *
-     * @var string
-     */
-    public $expireTime;
-    /**
-     * Immutable. The relative resource name of the backup, in the following form:
-     * `projects/{project_number}/locations/{location_id}/instances/{instance_id}/
-     * backups/{backup}`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The current state of the backup.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Output only. The time when the backup was started.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\Looker {
+    class InstanceBackup extends \Google\Model
     {
+        /**
+         * The state of the backup is unknown.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * The backup is being created.
+         */
+        public const STATE_CREATING = 'CREATING';
+        /**
+         * The backup is being deleted.
+         */
+        public const STATE_DELETING = 'DELETING';
+        /**
+         * The backup is active and ready to use.
+         */
+        public const STATE_ACTIVE = 'ACTIVE';
+        /**
+         * The backup failed.
+         */
+        public const STATE_FAILED = 'FAILED';
+        /**
+         * Output only. The time when the backup was started.
+         *
+         * @var string
+         */
+        public $createTime;
+        protected $encryptionConfigType = EncryptionConfig::class;
+        protected $encryptionConfigDataType = '';
+        /**
+         * Output only. The time when the backup will be deleted.
+         *
+         * @var string
+         */
+        public $expireTime;
+        /**
+         * Immutable. The relative resource name of the backup, in the following form:
+         * `projects/{project_number}/locations/{location_id}/instances/{instance_id}/
+         * backups/{backup}`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The current state of the backup.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Output only. The time when the backup was started.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. Current status of the CMEK encryption
+         *
+         * @param EncryptionConfig $encryptionConfig
+         */
+        public function setEncryptionConfig(EncryptionConfig $encryptionConfig)
+        {
+        }
+        /**
+         * @return EncryptionConfig
+         */
+        public function getEncryptionConfig()
+        {
+        }
+        /**
+         * Output only. The time when the backup will be deleted.
+         *
+         * @param string $expireTime
+         */
+        public function setExpireTime($expireTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpireTime()
+        {
+        }
+        /**
+         * Immutable. The relative resource name of the backup, in the following form:
+         * `projects/{project_number}/locations/{location_id}/instances/{instance_id}/
+         * backups/{backup}`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The current state of the backup.
+         *
+         * Accepted values: STATE_UNSPECIFIED, CREATING, DELETING, ACTIVE, FAILED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Looker\InstanceBackup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. Current status of the CMEK encryption
-     *
-     * @param EncryptionConfig $encryptionConfig
-     */
-    public function setEncryptionConfig(EncryptionConfig $encryptionConfig)
-    {
-    }
-    /**
-     * @return EncryptionConfig
-     */
-    public function getEncryptionConfig()
-    {
-    }
-    /**
-     * Output only. The time when the backup will be deleted.
-     *
-     * @param string $expireTime
-     */
-    public function setExpireTime($expireTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExpireTime()
-    {
-    }
-    /**
-     * Immutable. The relative resource name of the backup, in the following form:
-     * `projects/{project_number}/locations/{location_id}/instances/{instance_id}/
-     * backups/{backup}`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The current state of the backup.
-     *
-     * Accepted values: STATE_UNSPECIFIED, CREATING, DELETING, ACTIVE, FAILED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
+    class Google_Service_Looker_InstanceBackup extends \Google\Service\Looker\InstanceBackup
     {
     }
 }

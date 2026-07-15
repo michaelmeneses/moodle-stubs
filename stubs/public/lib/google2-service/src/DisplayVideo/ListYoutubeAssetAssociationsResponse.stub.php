@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class ListYoutubeAssetAssociationsResponse extends \Google\Collection
-{
-    protected $collection_key = 'youtubeAssetAssociations';
-    /**
-     * A token to retrieve the next page of results. Pass this value in the
-     * page_token field in the subsequent call to `ListYoutubeAssetAssociations`
-     * method to retrieve the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $youtubeAssetAssociationsType = YoutubeAssetAssociation::class;
-    protected $youtubeAssetAssociationsDataType = 'array';
-    /**
-     * A token to retrieve the next page of results. Pass this value in the
-     * page_token field in the subsequent call to `ListYoutubeAssetAssociations`
-     * method to retrieve the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\DisplayVideo {
+    class ListYoutubeAssetAssociationsResponse extends \Google\Collection
     {
+        protected $collection_key = 'youtubeAssetAssociations';
+        /**
+         * A token to retrieve the next page of results. Pass this value in the
+         * page_token field in the subsequent call to `ListYoutubeAssetAssociations`
+         * method to retrieve the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $youtubeAssetAssociationsType = YoutubeAssetAssociation::class;
+        protected $youtubeAssetAssociationsDataType = 'array';
+        /**
+         * A token to retrieve the next page of results. Pass this value in the
+         * page_token field in the subsequent call to `ListYoutubeAssetAssociations`
+         * method to retrieve the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of asset associations. This list will be absent if empty.
+         *
+         * @param YoutubeAssetAssociation[] $youtubeAssetAssociations
+         */
+        public function setYoutubeAssetAssociations($youtubeAssetAssociations)
+        {
+        }
+        /**
+         * @return YoutubeAssetAssociation[]
+         */
+        public function getYoutubeAssetAssociations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\ListYoutubeAssetAssociationsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of asset associations. This list will be absent if empty.
-     *
-     * @param YoutubeAssetAssociation[] $youtubeAssetAssociations
-     */
-    public function setYoutubeAssetAssociations($youtubeAssetAssociations)
-    {
-    }
-    /**
-     * @return YoutubeAssetAssociation[]
-     */
-    public function getYoutubeAssetAssociations()
+    class Google_Service_DisplayVideo_ListYoutubeAssetAssociationsResponse extends \Google\Service\DisplayVideo\ListYoutubeAssetAssociationsResponse
     {
     }
 }

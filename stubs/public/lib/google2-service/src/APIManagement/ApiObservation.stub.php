@@ -21,233 +21,242 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIManagement;
-
-class ApiObservation extends \Google\Collection
-{
-    /**
-     * Unknown style
-     */
-    public const STYLE_STYLE_UNSPECIFIED = 'STYLE_UNSPECIFIED';
-    /**
-     * Style is Rest API
-     */
-    public const STYLE_REST = 'REST';
-    /**
-     * Style is Grpc API
-     */
-    public const STYLE_GRPC = 'GRPC';
-    /**
-     * Style is GraphQL API
-     */
-    public const STYLE_GRAPHQL = 'GRAPHQL';
-    protected $collection_key = 'tags';
-    /**
-     * The number of observed API Operations.
-     *
-     * @var string
-     */
-    public $apiOperationCount;
-    /**
-     * Create time stamp
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * The hostname of requests processed for this Observation.
-     *
-     * @var string
-     */
-    public $hostname;
-    /**
-     * Last event detected time stamp
-     *
-     * @var string
-     */
-    public $lastEventDetectedTime;
-    /**
-     * Identifier. Name of resource
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The IP address (IPv4 or IPv6) of the origin server that the request was
-     * sent to. This field can include port information. Examples:
-     * `"192.168.1.1"`, `"10.0.0.1:80"`, `"FE80::0202:B3FF:FE1E:8329"`.
-     *
-     * @var string[]
-     */
-    public $serverIps;
-    /**
-     * Location of the Observation Source, for example "us-central1" or "europe-
-     * west1."
-     *
-     * @var string[]
-     */
-    public $sourceLocations;
-    /**
-     * Style of ApiObservation
-     *
-     * @var string
-     */
-    public $style;
-    /**
-     * User-defined tags to organize and sort
-     *
-     * @var string[]
-     */
-    public $tags;
-    /**
-     * Update time stamp
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * The number of observed API Operations.
-     *
-     * @param string $apiOperationCount
-     */
-    public function setApiOperationCount($apiOperationCount)
+namespace Google\Service\APIManagement {
+    class ApiObservation extends \Google\Collection
     {
+        /**
+         * Unknown style
+         */
+        public const STYLE_STYLE_UNSPECIFIED = 'STYLE_UNSPECIFIED';
+        /**
+         * Style is Rest API
+         */
+        public const STYLE_REST = 'REST';
+        /**
+         * Style is Grpc API
+         */
+        public const STYLE_GRPC = 'GRPC';
+        /**
+         * Style is GraphQL API
+         */
+        public const STYLE_GRAPHQL = 'GRAPHQL';
+        protected $collection_key = 'tags';
+        /**
+         * The number of observed API Operations.
+         *
+         * @var string
+         */
+        public $apiOperationCount;
+        /**
+         * Create time stamp
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * The hostname of requests processed for this Observation.
+         *
+         * @var string
+         */
+        public $hostname;
+        /**
+         * Last event detected time stamp
+         *
+         * @var string
+         */
+        public $lastEventDetectedTime;
+        /**
+         * Identifier. Name of resource
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The IP address (IPv4 or IPv6) of the origin server that the request was
+         * sent to. This field can include port information. Examples:
+         * `"192.168.1.1"`, `"10.0.0.1:80"`, `"FE80::0202:B3FF:FE1E:8329"`.
+         *
+         * @var string[]
+         */
+        public $serverIps;
+        /**
+         * Location of the Observation Source, for example "us-central1" or "europe-
+         * west1."
+         *
+         * @var string[]
+         */
+        public $sourceLocations;
+        /**
+         * Style of ApiObservation
+         *
+         * @var string
+         */
+        public $style;
+        /**
+         * User-defined tags to organize and sort
+         *
+         * @var string[]
+         */
+        public $tags;
+        /**
+         * Update time stamp
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * The number of observed API Operations.
+         *
+         * @param string $apiOperationCount
+         */
+        public function setApiOperationCount($apiOperationCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApiOperationCount()
+        {
+        }
+        /**
+         * Create time stamp
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * The hostname of requests processed for this Observation.
+         *
+         * @param string $hostname
+         */
+        public function setHostname($hostname)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHostname()
+        {
+        }
+        /**
+         * Last event detected time stamp
+         *
+         * @param string $lastEventDetectedTime
+         */
+        public function setLastEventDetectedTime($lastEventDetectedTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastEventDetectedTime()
+        {
+        }
+        /**
+         * Identifier. Name of resource
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The IP address (IPv4 or IPv6) of the origin server that the request was
+         * sent to. This field can include port information. Examples:
+         * `"192.168.1.1"`, `"10.0.0.1:80"`, `"FE80::0202:B3FF:FE1E:8329"`.
+         *
+         * @param string[] $serverIps
+         */
+        public function setServerIps($serverIps)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getServerIps()
+        {
+        }
+        /**
+         * Location of the Observation Source, for example "us-central1" or "europe-
+         * west1."
+         *
+         * @param string[] $sourceLocations
+         */
+        public function setSourceLocations($sourceLocations)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSourceLocations()
+        {
+        }
+        /**
+         * Style of ApiObservation
+         *
+         * Accepted values: STYLE_UNSPECIFIED, REST, GRPC, GRAPHQL
+         *
+         * @param self::STYLE_* $style
+         */
+        public function setStyle($style)
+        {
+        }
+        /**
+         * @return self::STYLE_*
+         */
+        public function getStyle()
+        {
+        }
+        /**
+         * User-defined tags to organize and sort
+         *
+         * @param string[] $tags
+         */
+        public function setTags($tags)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTags()
+        {
+        }
+        /**
+         * Update time stamp
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\APIManagement\ApiObservation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiOperationCount()
-    {
-    }
-    /**
-     * Create time stamp
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * The hostname of requests processed for this Observation.
-     *
-     * @param string $hostname
-     */
-    public function setHostname($hostname)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHostname()
-    {
-    }
-    /**
-     * Last event detected time stamp
-     *
-     * @param string $lastEventDetectedTime
-     */
-    public function setLastEventDetectedTime($lastEventDetectedTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastEventDetectedTime()
-    {
-    }
-    /**
-     * Identifier. Name of resource
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The IP address (IPv4 or IPv6) of the origin server that the request was
-     * sent to. This field can include port information. Examples:
-     * `"192.168.1.1"`, `"10.0.0.1:80"`, `"FE80::0202:B3FF:FE1E:8329"`.
-     *
-     * @param string[] $serverIps
-     */
-    public function setServerIps($serverIps)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getServerIps()
-    {
-    }
-    /**
-     * Location of the Observation Source, for example "us-central1" or "europe-
-     * west1."
-     *
-     * @param string[] $sourceLocations
-     */
-    public function setSourceLocations($sourceLocations)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSourceLocations()
-    {
-    }
-    /**
-     * Style of ApiObservation
-     *
-     * Accepted values: STYLE_UNSPECIFIED, REST, GRPC, GRAPHQL
-     *
-     * @param self::STYLE_* $style
-     */
-    public function setStyle($style)
-    {
-    }
-    /**
-     * @return self::STYLE_*
-     */
-    public function getStyle()
-    {
-    }
-    /**
-     * User-defined tags to organize and sort
-     *
-     * @param string[] $tags
-     */
-    public function setTags($tags)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTags()
-    {
-    }
-    /**
-     * Update time stamp
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_APIManagement_ApiObservation extends \Google\Service\APIManagement\ApiObservation
     {
     }
 }

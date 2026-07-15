@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Genomics;
-
-class PersistentDisk extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $sizeGb;
-    /**
-     * @var string
-     */
-    public $sourceImage;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @param int
-     */
-    public function setSizeGb($sizeGb)
+namespace Google\Service\Genomics {
+    class PersistentDisk extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $sizeGb;
+        /**
+         * @var string
+         */
+        public $sourceImage;
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @param int
+         */
+        public function setSizeGb($sizeGb)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSizeGb()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSourceImage($sourceImage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceImage()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Genomics\PersistentDisk registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSizeGb()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSourceImage($sourceImage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourceImage()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_Genomics_PersistentDisk extends \Google\Service\Genomics\PersistentDisk
     {
     }
 }

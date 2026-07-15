@@ -21,374 +21,383 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GoogleCloudSecuritycenterV2Issue extends \Google\Collection
-{
-    /**
-     * Unspecified issue type.
-     */
-    public const ISSUE_TYPE_ISSUE_TYPE_UNSPECIFIED = 'ISSUE_TYPE_UNSPECIFIED';
-    /**
-     * Chokepoint issue type.
-     */
-    public const ISSUE_TYPE_CHOKEPOINT = 'CHOKEPOINT';
-    /**
-     * Toxic combination issue type.
-     */
-    public const ISSUE_TYPE_TOXIC_COMBINATION = 'TOXIC_COMBINATION';
-    /**
-     * Insight issue type.
-     */
-    public const ISSUE_TYPE_INSIGHT = 'INSIGHT';
-    /**
-     * Unspecified severity.
-     */
-    public const SEVERITY_SEVERITY_UNSPECIFIED = 'SEVERITY_UNSPECIFIED';
-    /**
-     * Critical severity.
-     */
-    public const SEVERITY_CRITICAL = 'CRITICAL';
-    /**
-     * High severity.
-     */
-    public const SEVERITY_HIGH = 'HIGH';
-    /**
-     * Medium severity.
-     */
-    public const SEVERITY_MEDIUM = 'MEDIUM';
-    /**
-     * Low severity.
-     */
-    public const SEVERITY_LOW = 'LOW';
-    /**
-     * Unspecified state.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * Active state.
-     */
-    public const STATE_ACTIVE = 'ACTIVE';
-    /**
-     * Inactive state.
-     */
-    public const STATE_INACTIVE = 'INACTIVE';
-    protected $collection_key = 'securityContexts';
-    /**
-     * Output only. The time the issue was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * The description of the issue in Markdown format.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * The finding category or rule name that generated the issue.
-     *
-     * @var string
-     */
-    public $detection;
-    protected $domainsType = GoogleCloudSecuritycenterV2IssueDomain::class;
-    protected $domainsDataType = 'array';
-    /**
-     * The exposure score of the issue.
-     *
-     * @var 
-     */
-    public $exposureScore;
-    /**
-     * The type of the issue.
-     *
-     * @var string
-     */
-    public $issueType;
-    /**
-     * The time the issue was last observed.
-     *
-     * @var string
-     */
-    public $lastObservationTime;
-    protected $muteType = GoogleCloudSecuritycenterV2IssueMute::class;
-    protected $muteDataType = '';
-    /**
-     * Identifier. The name of the issue. Format:
-     * organizations/{organization}/locations/{location}/issues/{issue}
-     *
-     * @var string
-     */
-    public $name;
-    protected $primaryResourceType = GoogleCloudSecuritycenterV2IssueResource::class;
-    protected $primaryResourceDataType = '';
-    protected $relatedFindingsType = GoogleCloudSecuritycenterV2IssueFinding::class;
-    protected $relatedFindingsDataType = 'array';
-    /**
-     * Approaches to remediate the issue in Markdown format.
-     *
-     * @var string[]
-     */
-    public $remediations;
-    protected $secondaryResourcesType = GoogleCloudSecuritycenterV2IssueResource::class;
-    protected $secondaryResourcesDataType = 'array';
-    protected $securityContextsType = GoogleCloudSecuritycenterV2IssueSecurityContext::class;
-    protected $securityContextsDataType = 'array';
-    /**
-     * The severity of the issue.
-     *
-     * @var string
-     */
-    public $severity;
-    /**
-     * Output only. The state of the issue.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Output only. The time the issue was last updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. The time the issue was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\SecurityCommandCenter {
+    class GoogleCloudSecuritycenterV2Issue extends \Google\Collection
     {
+        /**
+         * Unspecified issue type.
+         */
+        public const ISSUE_TYPE_ISSUE_TYPE_UNSPECIFIED = 'ISSUE_TYPE_UNSPECIFIED';
+        /**
+         * Chokepoint issue type.
+         */
+        public const ISSUE_TYPE_CHOKEPOINT = 'CHOKEPOINT';
+        /**
+         * Toxic combination issue type.
+         */
+        public const ISSUE_TYPE_TOXIC_COMBINATION = 'TOXIC_COMBINATION';
+        /**
+         * Insight issue type.
+         */
+        public const ISSUE_TYPE_INSIGHT = 'INSIGHT';
+        /**
+         * Unspecified severity.
+         */
+        public const SEVERITY_SEVERITY_UNSPECIFIED = 'SEVERITY_UNSPECIFIED';
+        /**
+         * Critical severity.
+         */
+        public const SEVERITY_CRITICAL = 'CRITICAL';
+        /**
+         * High severity.
+         */
+        public const SEVERITY_HIGH = 'HIGH';
+        /**
+         * Medium severity.
+         */
+        public const SEVERITY_MEDIUM = 'MEDIUM';
+        /**
+         * Low severity.
+         */
+        public const SEVERITY_LOW = 'LOW';
+        /**
+         * Unspecified state.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * Active state.
+         */
+        public const STATE_ACTIVE = 'ACTIVE';
+        /**
+         * Inactive state.
+         */
+        public const STATE_INACTIVE = 'INACTIVE';
+        protected $collection_key = 'securityContexts';
+        /**
+         * Output only. The time the issue was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * The description of the issue in Markdown format.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * The finding category or rule name that generated the issue.
+         *
+         * @var string
+         */
+        public $detection;
+        protected $domainsType = GoogleCloudSecuritycenterV2IssueDomain::class;
+        protected $domainsDataType = 'array';
+        /**
+         * The exposure score of the issue.
+         *
+         * @var 
+         */
+        public $exposureScore;
+        /**
+         * The type of the issue.
+         *
+         * @var string
+         */
+        public $issueType;
+        /**
+         * The time the issue was last observed.
+         *
+         * @var string
+         */
+        public $lastObservationTime;
+        protected $muteType = GoogleCloudSecuritycenterV2IssueMute::class;
+        protected $muteDataType = '';
+        /**
+         * Identifier. The name of the issue. Format:
+         * organizations/{organization}/locations/{location}/issues/{issue}
+         *
+         * @var string
+         */
+        public $name;
+        protected $primaryResourceType = GoogleCloudSecuritycenterV2IssueResource::class;
+        protected $primaryResourceDataType = '';
+        protected $relatedFindingsType = GoogleCloudSecuritycenterV2IssueFinding::class;
+        protected $relatedFindingsDataType = 'array';
+        /**
+         * Approaches to remediate the issue in Markdown format.
+         *
+         * @var string[]
+         */
+        public $remediations;
+        protected $secondaryResourcesType = GoogleCloudSecuritycenterV2IssueResource::class;
+        protected $secondaryResourcesDataType = 'array';
+        protected $securityContextsType = GoogleCloudSecuritycenterV2IssueSecurityContext::class;
+        protected $securityContextsDataType = 'array';
+        /**
+         * The severity of the issue.
+         *
+         * @var string
+         */
+        public $severity;
+        /**
+         * Output only. The state of the issue.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Output only. The time the issue was last updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. The time the issue was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * The description of the issue in Markdown format.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * The finding category or rule name that generated the issue.
+         *
+         * @param string $detection
+         */
+        public function setDetection($detection)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDetection()
+        {
+        }
+        /**
+         * The domains of the issue.
+         *
+         * @param GoogleCloudSecuritycenterV2IssueDomain[] $domains
+         */
+        public function setDomains($domains)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV2IssueDomain[]
+         */
+        public function getDomains()
+        {
+        }
+        public function setExposureScore($exposureScore)
+        {
+        }
+        public function getExposureScore()
+        {
+        }
+        /**
+         * The type of the issue.
+         *
+         * Accepted values: ISSUE_TYPE_UNSPECIFIED, CHOKEPOINT, TOXIC_COMBINATION,
+         * INSIGHT
+         *
+         * @param self::ISSUE_TYPE_* $issueType
+         */
+        public function setIssueType($issueType)
+        {
+        }
+        /**
+         * @return self::ISSUE_TYPE_*
+         */
+        public function getIssueType()
+        {
+        }
+        /**
+         * The time the issue was last observed.
+         *
+         * @param string $lastObservationTime
+         */
+        public function setLastObservationTime($lastObservationTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastObservationTime()
+        {
+        }
+        /**
+         * The mute information of the issue.
+         *
+         * @param GoogleCloudSecuritycenterV2IssueMute $mute
+         */
+        public function setMute(GoogleCloudSecuritycenterV2IssueMute $mute)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV2IssueMute
+         */
+        public function getMute()
+        {
+        }
+        /**
+         * Identifier. The name of the issue. Format:
+         * organizations/{organization}/locations/{location}/issues/{issue}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The primary resource associated with the issue.
+         *
+         * @param GoogleCloudSecuritycenterV2IssueResource $primaryResource
+         */
+        public function setPrimaryResource(GoogleCloudSecuritycenterV2IssueResource $primaryResource)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV2IssueResource
+         */
+        public function getPrimaryResource()
+        {
+        }
+        /**
+         * The findings related to the issue.
+         *
+         * @param GoogleCloudSecuritycenterV2IssueFinding[] $relatedFindings
+         */
+        public function setRelatedFindings($relatedFindings)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV2IssueFinding[]
+         */
+        public function getRelatedFindings()
+        {
+        }
+        /**
+         * Approaches to remediate the issue in Markdown format.
+         *
+         * @param string[] $remediations
+         */
+        public function setRemediations($remediations)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRemediations()
+        {
+        }
+        /**
+         * Additional resources associated with the issue.
+         *
+         * @param GoogleCloudSecuritycenterV2IssueResource[] $secondaryResources
+         */
+        public function setSecondaryResources($secondaryResources)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV2IssueResource[]
+         */
+        public function getSecondaryResources()
+        {
+        }
+        /**
+         * The security context of the issue.
+         *
+         * @param GoogleCloudSecuritycenterV2IssueSecurityContext[] $securityContexts
+         */
+        public function setSecurityContexts($securityContexts)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV2IssueSecurityContext[]
+         */
+        public function getSecurityContexts()
+        {
+        }
+        /**
+         * The severity of the issue.
+         *
+         * Accepted values: SEVERITY_UNSPECIFIED, CRITICAL, HIGH, MEDIUM, LOW
+         *
+         * @param self::SEVERITY_* $severity
+         */
+        public function setSeverity($severity)
+        {
+        }
+        /**
+         * @return self::SEVERITY_*
+         */
+        public function getSeverity()
+        {
+        }
+        /**
+         * Output only. The state of the issue.
+         *
+         * Accepted values: STATE_UNSPECIFIED, ACTIVE, INACTIVE
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Output only. The time the issue was last updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2Issue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * The description of the issue in Markdown format.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * The finding category or rule name that generated the issue.
-     *
-     * @param string $detection
-     */
-    public function setDetection($detection)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDetection()
-    {
-    }
-    /**
-     * The domains of the issue.
-     *
-     * @param GoogleCloudSecuritycenterV2IssueDomain[] $domains
-     */
-    public function setDomains($domains)
-    {
-    }
-    /**
-     * @return GoogleCloudSecuritycenterV2IssueDomain[]
-     */
-    public function getDomains()
-    {
-    }
-    public function setExposureScore($exposureScore)
-    {
-    }
-    public function getExposureScore()
-    {
-    }
-    /**
-     * The type of the issue.
-     *
-     * Accepted values: ISSUE_TYPE_UNSPECIFIED, CHOKEPOINT, TOXIC_COMBINATION,
-     * INSIGHT
-     *
-     * @param self::ISSUE_TYPE_* $issueType
-     */
-    public function setIssueType($issueType)
-    {
-    }
-    /**
-     * @return self::ISSUE_TYPE_*
-     */
-    public function getIssueType()
-    {
-    }
-    /**
-     * The time the issue was last observed.
-     *
-     * @param string $lastObservationTime
-     */
-    public function setLastObservationTime($lastObservationTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastObservationTime()
-    {
-    }
-    /**
-     * The mute information of the issue.
-     *
-     * @param GoogleCloudSecuritycenterV2IssueMute $mute
-     */
-    public function setMute(GoogleCloudSecuritycenterV2IssueMute $mute)
-    {
-    }
-    /**
-     * @return GoogleCloudSecuritycenterV2IssueMute
-     */
-    public function getMute()
-    {
-    }
-    /**
-     * Identifier. The name of the issue. Format:
-     * organizations/{organization}/locations/{location}/issues/{issue}
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The primary resource associated with the issue.
-     *
-     * @param GoogleCloudSecuritycenterV2IssueResource $primaryResource
-     */
-    public function setPrimaryResource(GoogleCloudSecuritycenterV2IssueResource $primaryResource)
-    {
-    }
-    /**
-     * @return GoogleCloudSecuritycenterV2IssueResource
-     */
-    public function getPrimaryResource()
-    {
-    }
-    /**
-     * The findings related to the issue.
-     *
-     * @param GoogleCloudSecuritycenterV2IssueFinding[] $relatedFindings
-     */
-    public function setRelatedFindings($relatedFindings)
-    {
-    }
-    /**
-     * @return GoogleCloudSecuritycenterV2IssueFinding[]
-     */
-    public function getRelatedFindings()
-    {
-    }
-    /**
-     * Approaches to remediate the issue in Markdown format.
-     *
-     * @param string[] $remediations
-     */
-    public function setRemediations($remediations)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRemediations()
-    {
-    }
-    /**
-     * Additional resources associated with the issue.
-     *
-     * @param GoogleCloudSecuritycenterV2IssueResource[] $secondaryResources
-     */
-    public function setSecondaryResources($secondaryResources)
-    {
-    }
-    /**
-     * @return GoogleCloudSecuritycenterV2IssueResource[]
-     */
-    public function getSecondaryResources()
-    {
-    }
-    /**
-     * The security context of the issue.
-     *
-     * @param GoogleCloudSecuritycenterV2IssueSecurityContext[] $securityContexts
-     */
-    public function setSecurityContexts($securityContexts)
-    {
-    }
-    /**
-     * @return GoogleCloudSecuritycenterV2IssueSecurityContext[]
-     */
-    public function getSecurityContexts()
-    {
-    }
-    /**
-     * The severity of the issue.
-     *
-     * Accepted values: SEVERITY_UNSPECIFIED, CRITICAL, HIGH, MEDIUM, LOW
-     *
-     * @param self::SEVERITY_* $severity
-     */
-    public function setSeverity($severity)
-    {
-    }
-    /**
-     * @return self::SEVERITY_*
-     */
-    public function getSeverity()
-    {
-    }
-    /**
-     * Output only. The state of the issue.
-     *
-     * Accepted values: STATE_UNSPECIFIED, ACTIVE, INACTIVE
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Output only. The time the issue was last updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_SecurityCommandCenter_GoogleCloudSecuritycenterV2Issue extends \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2Issue
     {
     }
 }

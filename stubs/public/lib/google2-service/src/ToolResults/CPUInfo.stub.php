@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class CPUInfo extends \Google\Model
-{
-    /**
-     * description of the device processor ie '1.8 GHz hexa core 64-bit ARMv8-A'
-     *
-     * @var string
-     */
-    public $cpuProcessor;
-    /**
-     * the CPU clock speed in GHz
-     *
-     * @var float
-     */
-    public $cpuSpeedInGhz;
-    /**
-     * the number of CPU cores
-     *
-     * @var int
-     */
-    public $numberOfCores;
-    /**
-     * description of the device processor ie '1.8 GHz hexa core 64-bit ARMv8-A'
-     *
-     * @param string $cpuProcessor
-     */
-    public function setCpuProcessor($cpuProcessor)
+namespace Google\Service\ToolResults {
+    class CPUInfo extends \Google\Model
     {
+        /**
+         * description of the device processor ie '1.8 GHz hexa core 64-bit ARMv8-A'
+         *
+         * @var string
+         */
+        public $cpuProcessor;
+        /**
+         * the CPU clock speed in GHz
+         *
+         * @var float
+         */
+        public $cpuSpeedInGhz;
+        /**
+         * the number of CPU cores
+         *
+         * @var int
+         */
+        public $numberOfCores;
+        /**
+         * description of the device processor ie '1.8 GHz hexa core 64-bit ARMv8-A'
+         *
+         * @param string $cpuProcessor
+         */
+        public function setCpuProcessor($cpuProcessor)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCpuProcessor()
+        {
+        }
+        /**
+         * the CPU clock speed in GHz
+         *
+         * @param float $cpuSpeedInGhz
+         */
+        public function setCpuSpeedInGhz($cpuSpeedInGhz)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getCpuSpeedInGhz()
+        {
+        }
+        /**
+         * the number of CPU cores
+         *
+         * @param int $numberOfCores
+         */
+        public function setNumberOfCores($numberOfCores)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumberOfCores()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ToolResults\CPUInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCpuProcessor()
-    {
-    }
-    /**
-     * the CPU clock speed in GHz
-     *
-     * @param float $cpuSpeedInGhz
-     */
-    public function setCpuSpeedInGhz($cpuSpeedInGhz)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getCpuSpeedInGhz()
-    {
-    }
-    /**
-     * the number of CPU cores
-     *
-     * @param int $numberOfCores
-     */
-    public function setNumberOfCores($numberOfCores)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNumberOfCores()
+    class Google_Service_ToolResults_CPUInfo extends \Google\Service\ToolResults\CPUInfo
     {
     }
 }

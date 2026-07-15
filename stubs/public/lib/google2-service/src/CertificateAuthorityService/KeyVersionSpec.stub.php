@@ -21,97 +21,106 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CertificateAuthorityService;
-
-class KeyVersionSpec extends \Google\Model
-{
-    /**
-     * Not specified.
-     */
-    public const ALGORITHM_SIGN_HASH_ALGORITHM_UNSPECIFIED = 'SIGN_HASH_ALGORITHM_UNSPECIFIED';
-    /**
-     * maps to CryptoKeyVersionAlgorithm.RSA_SIGN_PSS_2048_SHA256
-     */
-    public const ALGORITHM_RSA_PSS_2048_SHA256 = 'RSA_PSS_2048_SHA256';
-    /**
-     * maps to CryptoKeyVersionAlgorithm. RSA_SIGN_PSS_3072_SHA256
-     */
-    public const ALGORITHM_RSA_PSS_3072_SHA256 = 'RSA_PSS_3072_SHA256';
-    /**
-     * maps to CryptoKeyVersionAlgorithm.RSA_SIGN_PSS_4096_SHA256
-     */
-    public const ALGORITHM_RSA_PSS_4096_SHA256 = 'RSA_PSS_4096_SHA256';
-    /**
-     * maps to CryptoKeyVersionAlgorithm.RSA_SIGN_PKCS1_2048_SHA256
-     */
-    public const ALGORITHM_RSA_PKCS1_2048_SHA256 = 'RSA_PKCS1_2048_SHA256';
-    /**
-     * maps to CryptoKeyVersionAlgorithm.RSA_SIGN_PKCS1_3072_SHA256
-     */
-    public const ALGORITHM_RSA_PKCS1_3072_SHA256 = 'RSA_PKCS1_3072_SHA256';
-    /**
-     * maps to CryptoKeyVersionAlgorithm.RSA_SIGN_PKCS1_4096_SHA256
-     */
-    public const ALGORITHM_RSA_PKCS1_4096_SHA256 = 'RSA_PKCS1_4096_SHA256';
-    /**
-     * maps to CryptoKeyVersionAlgorithm.EC_SIGN_P256_SHA256
-     */
-    public const ALGORITHM_EC_P256_SHA256 = 'EC_P256_SHA256';
-    /**
-     * maps to CryptoKeyVersionAlgorithm.EC_SIGN_P384_SHA384
-     */
-    public const ALGORITHM_EC_P384_SHA384 = 'EC_P384_SHA384';
-    /**
-     * The algorithm to use for creating a managed Cloud KMS key for a for a
-     * simplified experience. All managed keys will be have their ProtectionLevel
-     * as `HSM`.
-     *
-     * @var string
-     */
-    public $algorithm;
-    /**
-     * The resource name for an existing Cloud KMS CryptoKeyVersion in the format
-     * `projects/locations/keyRings/cryptoKeys/cryptoKeyVersions`. This option
-     * enables full flexibility in the key's capabilities and properties.
-     *
-     * @var string
-     */
-    public $cloudKmsKeyVersion;
-    /**
-     * The algorithm to use for creating a managed Cloud KMS key for a for a
-     * simplified experience. All managed keys will be have their ProtectionLevel
-     * as `HSM`.
-     *
-     * Accepted values: SIGN_HASH_ALGORITHM_UNSPECIFIED, RSA_PSS_2048_SHA256,
-     * RSA_PSS_3072_SHA256, RSA_PSS_4096_SHA256, RSA_PKCS1_2048_SHA256,
-     * RSA_PKCS1_3072_SHA256, RSA_PKCS1_4096_SHA256, EC_P256_SHA256,
-     * EC_P384_SHA384
-     *
-     * @param self::ALGORITHM_* $algorithm
-     */
-    public function setAlgorithm($algorithm)
+namespace Google\Service\CertificateAuthorityService {
+    class KeyVersionSpec extends \Google\Model
     {
+        /**
+         * Not specified.
+         */
+        public const ALGORITHM_SIGN_HASH_ALGORITHM_UNSPECIFIED = 'SIGN_HASH_ALGORITHM_UNSPECIFIED';
+        /**
+         * maps to CryptoKeyVersionAlgorithm.RSA_SIGN_PSS_2048_SHA256
+         */
+        public const ALGORITHM_RSA_PSS_2048_SHA256 = 'RSA_PSS_2048_SHA256';
+        /**
+         * maps to CryptoKeyVersionAlgorithm. RSA_SIGN_PSS_3072_SHA256
+         */
+        public const ALGORITHM_RSA_PSS_3072_SHA256 = 'RSA_PSS_3072_SHA256';
+        /**
+         * maps to CryptoKeyVersionAlgorithm.RSA_SIGN_PSS_4096_SHA256
+         */
+        public const ALGORITHM_RSA_PSS_4096_SHA256 = 'RSA_PSS_4096_SHA256';
+        /**
+         * maps to CryptoKeyVersionAlgorithm.RSA_SIGN_PKCS1_2048_SHA256
+         */
+        public const ALGORITHM_RSA_PKCS1_2048_SHA256 = 'RSA_PKCS1_2048_SHA256';
+        /**
+         * maps to CryptoKeyVersionAlgorithm.RSA_SIGN_PKCS1_3072_SHA256
+         */
+        public const ALGORITHM_RSA_PKCS1_3072_SHA256 = 'RSA_PKCS1_3072_SHA256';
+        /**
+         * maps to CryptoKeyVersionAlgorithm.RSA_SIGN_PKCS1_4096_SHA256
+         */
+        public const ALGORITHM_RSA_PKCS1_4096_SHA256 = 'RSA_PKCS1_4096_SHA256';
+        /**
+         * maps to CryptoKeyVersionAlgorithm.EC_SIGN_P256_SHA256
+         */
+        public const ALGORITHM_EC_P256_SHA256 = 'EC_P256_SHA256';
+        /**
+         * maps to CryptoKeyVersionAlgorithm.EC_SIGN_P384_SHA384
+         */
+        public const ALGORITHM_EC_P384_SHA384 = 'EC_P384_SHA384';
+        /**
+         * The algorithm to use for creating a managed Cloud KMS key for a for a
+         * simplified experience. All managed keys will be have their ProtectionLevel
+         * as `HSM`.
+         *
+         * @var string
+         */
+        public $algorithm;
+        /**
+         * The resource name for an existing Cloud KMS CryptoKeyVersion in the format
+         * `projects/locations/keyRings/cryptoKeys/cryptoKeyVersions`. This option
+         * enables full flexibility in the key's capabilities and properties.
+         *
+         * @var string
+         */
+        public $cloudKmsKeyVersion;
+        /**
+         * The algorithm to use for creating a managed Cloud KMS key for a for a
+         * simplified experience. All managed keys will be have their ProtectionLevel
+         * as `HSM`.
+         *
+         * Accepted values: SIGN_HASH_ALGORITHM_UNSPECIFIED, RSA_PSS_2048_SHA256,
+         * RSA_PSS_3072_SHA256, RSA_PSS_4096_SHA256, RSA_PKCS1_2048_SHA256,
+         * RSA_PKCS1_3072_SHA256, RSA_PKCS1_4096_SHA256, EC_P256_SHA256,
+         * EC_P384_SHA384
+         *
+         * @param self::ALGORITHM_* $algorithm
+         */
+        public function setAlgorithm($algorithm)
+        {
+        }
+        /**
+         * @return self::ALGORITHM_*
+         */
+        public function getAlgorithm()
+        {
+        }
+        /**
+         * The resource name for an existing Cloud KMS CryptoKeyVersion in the format
+         * `projects/locations/keyRings/cryptoKeys/cryptoKeyVersions`. This option
+         * enables full flexibility in the key's capabilities and properties.
+         *
+         * @param string $cloudKmsKeyVersion
+         */
+        public function setCloudKmsKeyVersion($cloudKmsKeyVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCloudKmsKeyVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::ALGORITHM_*
+     * Runtime class alias of \Google\Service\CertificateAuthorityService\KeyVersionSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAlgorithm()
-    {
-    }
-    /**
-     * The resource name for an existing Cloud KMS CryptoKeyVersion in the format
-     * `projects/locations/keyRings/cryptoKeys/cryptoKeyVersions`. This option
-     * enables full flexibility in the key's capabilities and properties.
-     *
-     * @param string $cloudKmsKeyVersion
-     */
-    public function setCloudKmsKeyVersion($cloudKmsKeyVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCloudKmsKeyVersion()
+    class Google_Service_CertificateAuthorityService_KeyVersionSpec extends \Google\Service\CertificateAuthorityService\KeyVersionSpec
     {
     }
 }

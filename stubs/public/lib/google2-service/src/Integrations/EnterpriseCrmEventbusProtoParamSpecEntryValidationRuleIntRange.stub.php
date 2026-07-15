@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmEventbusProtoParamSpecEntryValidationRuleIntRange extends \Google\Model
-{
-    /**
-     * The inclusive maximum of the acceptable range.
-     *
-     * @var string
-     */
-    public $max;
-    /**
-     * The inclusive minimum of the acceptable range.
-     *
-     * @var string
-     */
-    public $min;
-    /**
-     * The inclusive maximum of the acceptable range.
-     *
-     * @param string $max
-     */
-    public function setMax($max)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmEventbusProtoParamSpecEntryValidationRuleIntRange extends \Google\Model
     {
+        /**
+         * The inclusive maximum of the acceptable range.
+         *
+         * @var string
+         */
+        public $max;
+        /**
+         * The inclusive minimum of the acceptable range.
+         *
+         * @var string
+         */
+        public $min;
+        /**
+         * The inclusive maximum of the acceptable range.
+         *
+         * @param string $max
+         */
+        public function setMax($max)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMax()
+        {
+        }
+        /**
+         * The inclusive minimum of the acceptable range.
+         *
+         * @param string $min
+         */
+        public function setMin($min)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMin()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmEventbusProtoParamSpecEntryValidationRuleIntRange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMax()
-    {
-    }
-    /**
-     * The inclusive minimum of the acceptable range.
-     *
-     * @param string $min
-     */
-    public function setMin($min)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMin()
+    class Google_Service_Integrations_EnterpriseCrmEventbusProtoParamSpecEntryValidationRuleIntRange extends \Google\Service\Integrations\EnterpriseCrmEventbusProtoParamSpecEntryValidationRuleIntRange
     {
     }
 }

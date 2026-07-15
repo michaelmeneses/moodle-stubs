@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudTasks;
-
-class ListQueuesResponse extends \Google\Collection
-{
-    protected $collection_key = 'queues';
-    /**
-     * A token to retrieve next page of results. To return the next page of
-     * results, call ListQueues with this value as the page_token. If the
-     * next_page_token is empty, there are no more results. The page token is
-     * valid for only 2 hours.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $queuesType = Queue::class;
-    protected $queuesDataType = 'array';
-    /**
-     * A token to retrieve next page of results. To return the next page of
-     * results, call ListQueues with this value as the page_token. If the
-     * next_page_token is empty, there are no more results. The page token is
-     * valid for only 2 hours.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\CloudTasks {
+    class ListQueuesResponse extends \Google\Collection
     {
+        protected $collection_key = 'queues';
+        /**
+         * A token to retrieve next page of results. To return the next page of
+         * results, call ListQueues with this value as the page_token. If the
+         * next_page_token is empty, there are no more results. The page token is
+         * valid for only 2 hours.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $queuesType = Queue::class;
+        protected $queuesDataType = 'array';
+        /**
+         * A token to retrieve next page of results. To return the next page of
+         * results, call ListQueues with this value as the page_token. If the
+         * next_page_token is empty, there are no more results. The page token is
+         * valid for only 2 hours.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of queues.
+         *
+         * @param Queue[] $queues
+         */
+        public function setQueues($queues)
+        {
+        }
+        /**
+         * @return Queue[]
+         */
+        public function getQueues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudTasks\ListQueuesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of queues.
-     *
-     * @param Queue[] $queues
-     */
-    public function setQueues($queues)
-    {
-    }
-    /**
-     * @return Queue[]
-     */
-    public function getQueues()
+    class Google_Service_CloudTasks_ListQueuesResponse extends \Google\Service\CloudTasks\ListQueuesResponse
     {
     }
 }

@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class MySqlSyncConfig extends \Google\Collection
-{
-    protected $collection_key = 'initialSyncFlags';
-    protected $initialSyncFlagsType = SyncFlags::class;
-    protected $initialSyncFlagsDataType = 'array';
-    /**
-     * Flags to use for the initial dump.
-     *
-     * @param SyncFlags[] $initialSyncFlags
-     */
-    public function setInitialSyncFlags($initialSyncFlags)
+namespace Google\Service\SQLAdmin {
+    class MySqlSyncConfig extends \Google\Collection
     {
+        protected $collection_key = 'initialSyncFlags';
+        protected $initialSyncFlagsType = SyncFlags::class;
+        protected $initialSyncFlagsDataType = 'array';
+        /**
+         * Flags to use for the initial dump.
+         *
+         * @param SyncFlags[] $initialSyncFlags
+         */
+        public function setInitialSyncFlags($initialSyncFlags)
+        {
+        }
+        /**
+         * @return SyncFlags[]
+         */
+        public function getInitialSyncFlags()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SyncFlags[]
+     * Runtime class alias of \Google\Service\SQLAdmin\MySqlSyncConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInitialSyncFlags()
+    class Google_Service_SQLAdmin_MySqlSyncConfig extends \Google\Service\SQLAdmin\MySqlSyncConfig
     {
     }
 }

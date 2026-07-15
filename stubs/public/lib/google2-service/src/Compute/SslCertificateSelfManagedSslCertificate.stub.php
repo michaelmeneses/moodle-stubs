@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class SslCertificateSelfManagedSslCertificate extends \Google\Model
-{
-    /**
-     * A local certificate file. The certificate must be in PEM format. The
-     * certificate chain must be no greater than 5 certs long. The chain must
-     * include at least one intermediate cert.
-     *
-     * @var string
-     */
-    public $certificate;
-    /**
-     * A write-only private key in PEM format. Only insert requests will include
-     * this field.
-     *
-     * @var string
-     */
-    public $privateKey;
-    /**
-     * A local certificate file. The certificate must be in PEM format. The
-     * certificate chain must be no greater than 5 certs long. The chain must
-     * include at least one intermediate cert.
-     *
-     * @param string $certificate
-     */
-    public function setCertificate($certificate)
+namespace Google\Service\Compute {
+    class SslCertificateSelfManagedSslCertificate extends \Google\Model
     {
+        /**
+         * A local certificate file. The certificate must be in PEM format. The
+         * certificate chain must be no greater than 5 certs long. The chain must
+         * include at least one intermediate cert.
+         *
+         * @var string
+         */
+        public $certificate;
+        /**
+         * A write-only private key in PEM format. Only insert requests will include
+         * this field.
+         *
+         * @var string
+         */
+        public $privateKey;
+        /**
+         * A local certificate file. The certificate must be in PEM format. The
+         * certificate chain must be no greater than 5 certs long. The chain must
+         * include at least one intermediate cert.
+         *
+         * @param string $certificate
+         */
+        public function setCertificate($certificate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCertificate()
+        {
+        }
+        /**
+         * A write-only private key in PEM format. Only insert requests will include
+         * this field.
+         *
+         * @param string $privateKey
+         */
+        public function setPrivateKey($privateKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrivateKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\SslCertificateSelfManagedSslCertificate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCertificate()
-    {
-    }
-    /**
-     * A write-only private key in PEM format. Only insert requests will include
-     * this field.
-     *
-     * @param string $privateKey
-     */
-    public function setPrivateKey($privateKey)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrivateKey()
+    class Google_Service_Compute_SslCertificateSelfManagedSslCertificate extends \Google\Service\Compute\SslCertificateSelfManagedSslCertificate
     {
     }
 }

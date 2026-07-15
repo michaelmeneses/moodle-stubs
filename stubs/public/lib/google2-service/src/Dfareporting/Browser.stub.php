@@ -21,160 +21,169 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class Browser extends \Google\Model
-{
-    /**
-     * ID referring to this grouping of browser and version numbers. This is the
-     * ID used for targeting.
-     *
-     * @var string
-     */
-    public $browserVersionId;
-    /**
-     * DART ID of this browser. This is the ID used when generating reports.
-     *
-     * @var string
-     */
-    public $dartId;
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#browser".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Major version number (leftmost number) of this browser. For example, for
-     * Chrome 5.0.376.86 beta, this field should be set to 5. An asterisk (*) may
-     * be used to target any version number, and a question mark (?) may be used
-     * to target cases where the version number cannot be identified. For example,
-     * Chrome *.* targets any version of Chrome: 1.2, 2.5, 3.5, and so on. Chrome
-     * 3.* targets Chrome 3.1, 3.5, but not 4.0. Firefox ?.? targets cases where
-     * the ad server knows the browser is Firefox but can't tell which version it
-     * is.
-     *
-     * @var string
-     */
-    public $majorVersion;
-    /**
-     * Minor version number (number after first dot on left) of this browser. For
-     * example, for Chrome 5.0.375.86 beta, this field should be set to 0. An
-     * asterisk (*) may be used to target any version number, and a question mark
-     * (?) may be used to target cases where the version number cannot be
-     * identified. For example, Chrome *.* targets any version of Chrome: 1.2,
-     * 2.5, 3.5, and so on. Chrome 3.* targets Chrome 3.1, 3.5, but not 4.0.
-     * Firefox ?.? targets cases where the ad server knows the browser is Firefox
-     * but can't tell which version it is.
-     *
-     * @var string
-     */
-    public $minorVersion;
-    /**
-     * Name of this browser.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * ID referring to this grouping of browser and version numbers. This is the
-     * ID used for targeting.
-     *
-     * @param string $browserVersionId
-     */
-    public function setBrowserVersionId($browserVersionId)
+namespace Google\Service\Dfareporting {
+    class Browser extends \Google\Model
     {
+        /**
+         * ID referring to this grouping of browser and version numbers. This is the
+         * ID used for targeting.
+         *
+         * @var string
+         */
+        public $browserVersionId;
+        /**
+         * DART ID of this browser. This is the ID used when generating reports.
+         *
+         * @var string
+         */
+        public $dartId;
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#browser".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Major version number (leftmost number) of this browser. For example, for
+         * Chrome 5.0.376.86 beta, this field should be set to 5. An asterisk (*) may
+         * be used to target any version number, and a question mark (?) may be used
+         * to target cases where the version number cannot be identified. For example,
+         * Chrome *.* targets any version of Chrome: 1.2, 2.5, 3.5, and so on. Chrome
+         * 3.* targets Chrome 3.1, 3.5, but not 4.0. Firefox ?.? targets cases where
+         * the ad server knows the browser is Firefox but can't tell which version it
+         * is.
+         *
+         * @var string
+         */
+        public $majorVersion;
+        /**
+         * Minor version number (number after first dot on left) of this browser. For
+         * example, for Chrome 5.0.375.86 beta, this field should be set to 0. An
+         * asterisk (*) may be used to target any version number, and a question mark
+         * (?) may be used to target cases where the version number cannot be
+         * identified. For example, Chrome *.* targets any version of Chrome: 1.2,
+         * 2.5, 3.5, and so on. Chrome 3.* targets Chrome 3.1, 3.5, but not 4.0.
+         * Firefox ?.? targets cases where the ad server knows the browser is Firefox
+         * but can't tell which version it is.
+         *
+         * @var string
+         */
+        public $minorVersion;
+        /**
+         * Name of this browser.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * ID referring to this grouping of browser and version numbers. This is the
+         * ID used for targeting.
+         *
+         * @param string $browserVersionId
+         */
+        public function setBrowserVersionId($browserVersionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBrowserVersionId()
+        {
+        }
+        /**
+         * DART ID of this browser. This is the ID used when generating reports.
+         *
+         * @param string $dartId
+         */
+        public function setDartId($dartId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDartId()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#browser".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Major version number (leftmost number) of this browser. For example, for
+         * Chrome 5.0.376.86 beta, this field should be set to 5. An asterisk (*) may
+         * be used to target any version number, and a question mark (?) may be used
+         * to target cases where the version number cannot be identified. For example,
+         * Chrome *.* targets any version of Chrome: 1.2, 2.5, 3.5, and so on. Chrome
+         * 3.* targets Chrome 3.1, 3.5, but not 4.0. Firefox ?.? targets cases where
+         * the ad server knows the browser is Firefox but can't tell which version it
+         * is.
+         *
+         * @param string $majorVersion
+         */
+        public function setMajorVersion($majorVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMajorVersion()
+        {
+        }
+        /**
+         * Minor version number (number after first dot on left) of this browser. For
+         * example, for Chrome 5.0.375.86 beta, this field should be set to 0. An
+         * asterisk (*) may be used to target any version number, and a question mark
+         * (?) may be used to target cases where the version number cannot be
+         * identified. For example, Chrome *.* targets any version of Chrome: 1.2,
+         * 2.5, 3.5, and so on. Chrome 3.* targets Chrome 3.1, 3.5, but not 4.0.
+         * Firefox ?.? targets cases where the ad server knows the browser is Firefox
+         * but can't tell which version it is.
+         *
+         * @param string $minorVersion
+         */
+        public function setMinorVersion($minorVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMinorVersion()
+        {
+        }
+        /**
+         * Name of this browser.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\Browser registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBrowserVersionId()
-    {
-    }
-    /**
-     * DART ID of this browser. This is the ID used when generating reports.
-     *
-     * @param string $dartId
-     */
-    public function setDartId($dartId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDartId()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#browser".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Major version number (leftmost number) of this browser. For example, for
-     * Chrome 5.0.376.86 beta, this field should be set to 5. An asterisk (*) may
-     * be used to target any version number, and a question mark (?) may be used
-     * to target cases where the version number cannot be identified. For example,
-     * Chrome *.* targets any version of Chrome: 1.2, 2.5, 3.5, and so on. Chrome
-     * 3.* targets Chrome 3.1, 3.5, but not 4.0. Firefox ?.? targets cases where
-     * the ad server knows the browser is Firefox but can't tell which version it
-     * is.
-     *
-     * @param string $majorVersion
-     */
-    public function setMajorVersion($majorVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMajorVersion()
-    {
-    }
-    /**
-     * Minor version number (number after first dot on left) of this browser. For
-     * example, for Chrome 5.0.375.86 beta, this field should be set to 0. An
-     * asterisk (*) may be used to target any version number, and a question mark
-     * (?) may be used to target cases where the version number cannot be
-     * identified. For example, Chrome *.* targets any version of Chrome: 1.2,
-     * 2.5, 3.5, and so on. Chrome 3.* targets Chrome 3.1, 3.5, but not 4.0.
-     * Firefox ?.? targets cases where the ad server knows the browser is Firefox
-     * but can't tell which version it is.
-     *
-     * @param string $minorVersion
-     */
-    public function setMinorVersion($minorVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMinorVersion()
-    {
-    }
-    /**
-     * Name of this browser.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Dfareporting_Browser extends \Google\Service\Dfareporting\Browser
     {
     }
 }

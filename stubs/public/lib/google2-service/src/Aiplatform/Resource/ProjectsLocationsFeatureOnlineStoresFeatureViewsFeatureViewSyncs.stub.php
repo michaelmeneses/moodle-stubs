@@ -21,62 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform\Resource;
-
-/**
- * The "featureViewSyncs" collection of methods.
- * Typical usage is:
- *  <code>
- *   $aiplatformService = new Google\Service\Aiplatform(...);
- *   $featureViewSyncs = $aiplatformService->projects_locations_featureOnlineStores_featureViews_featureViewSyncs;
- *  </code>
- */
-class ProjectsLocationsFeatureOnlineStoresFeatureViewsFeatureViewSyncs extends \Google\Service\Resource
-{
+namespace Google\Service\Aiplatform\Resource {
+    use Google\Service\Aiplatform\GoogleCloudAiplatformV1FeatureViewSync;
+    use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListFeatureViewSyncsResponse;
     /**
-     * Gets details of a single FeatureViewSync. (featureViewSyncs.get)
-     *
-     * @param string $name Required. The name of the FeatureViewSync resource.
-     * Format: `projects/{project}/locations/{location}/featureOnlineStores/{feature
-     * _online_store}/featureViews/{feature_view}/featureViewSyncs/{feature_view_syn
-     * c}`
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudAiplatformV1FeatureViewSync
-     * @throws \Google\Service\Exception
+     * The "featureViewSyncs" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $aiplatformService = new Google\Service\Aiplatform(...);
+     *   $featureViewSyncs = $aiplatformService->projects_locations_featureOnlineStores_featureViews_featureViewSyncs;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class ProjectsLocationsFeatureOnlineStoresFeatureViewsFeatureViewSyncs extends \Google\Service\Resource
     {
+        /**
+         * Gets details of a single FeatureViewSync. (featureViewSyncs.get)
+         *
+         * @param string $name Required. The name of the FeatureViewSync resource.
+         * Format: `projects/{project}/locations/{location}/featureOnlineStores/{feature
+         * _online_store}/featureViews/{feature_view}/featureViewSyncs/{feature_view_syn
+         * c}`
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudAiplatformV1FeatureViewSync
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists FeatureViewSyncs in a given FeatureView. (featureViewSyncs.listProjects
+         * LocationsFeatureOnlineStoresFeatureViewsFeatureViewSyncs)
+         *
+         * @param string $parent Required. The resource name of the FeatureView to list
+         * FeatureViewSyncs. Format: `projects/{project}/locations/{location}/featureOnl
+         * ineStores/{feature_online_store}/featureViews/{feature_view}`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Lists the FeatureViewSyncs that match the filter
+         * expression. The following filters are supported: * `create_time`: Supports
+         * `=`, `!=`, `<`, `>`, `>=`, and `<=` comparisons. Values must be in RFC 3339
+         * format. Examples: * `create_time > \"2020-01-31T15:30:00.000000Z\"` -->
+         * FeatureViewSyncs created after 2020-01-31T15:30:00.000000Z.
+         * @opt_param string orderBy A comma-separated list of fields to order by,
+         * sorted in ascending order. Use "desc" after a field name for descending.
+         * Supported fields: * `create_time`
+         * @opt_param int pageSize The maximum number of FeatureViewSyncs to return. The
+         * service may return fewer than this value. If unspecified, at most 1000
+         * FeatureViewSyncs will be returned. The maximum value is 1000; any value
+         * greater than 1000 will be coerced to 1000.
+         * @opt_param string pageToken A page token, received from a previous
+         * FeatureOnlineStoreAdminService.ListFeatureViewSyncs call. Provide this to
+         * retrieve the subsequent page. When paginating, all other parameters provided
+         * to FeatureOnlineStoreAdminService.ListFeatureViewSyncs must match the call
+         * that provided the page token.
+         * @return GoogleCloudAiplatformV1ListFeatureViewSyncsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsFeatureOnlineStoresFeatureViewsFeatureViewSyncs($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists FeatureViewSyncs in a given FeatureView. (featureViewSyncs.listProjects
-     * LocationsFeatureOnlineStoresFeatureViewsFeatureViewSyncs)
-     *
-     * @param string $parent Required. The resource name of the FeatureView to list
-     * FeatureViewSyncs. Format: `projects/{project}/locations/{location}/featureOnl
-     * ineStores/{feature_online_store}/featureViews/{feature_view}`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Lists the FeatureViewSyncs that match the filter
-     * expression. The following filters are supported: * `create_time`: Supports
-     * `=`, `!=`, `<`, `>`, `>=`, and `<=` comparisons. Values must be in RFC 3339
-     * format. Examples: * `create_time > \"2020-01-31T15:30:00.000000Z\"` -->
-     * FeatureViewSyncs created after 2020-01-31T15:30:00.000000Z.
-     * @opt_param string orderBy A comma-separated list of fields to order by,
-     * sorted in ascending order. Use "desc" after a field name for descending.
-     * Supported fields: * `create_time`
-     * @opt_param int pageSize The maximum number of FeatureViewSyncs to return. The
-     * service may return fewer than this value. If unspecified, at most 1000
-     * FeatureViewSyncs will be returned. The maximum value is 1000; any value
-     * greater than 1000 will be coerced to 1000.
-     * @opt_param string pageToken A page token, received from a previous
-     * FeatureOnlineStoreAdminService.ListFeatureViewSyncs call. Provide this to
-     * retrieve the subsequent page. When paginating, all other parameters provided
-     * to FeatureOnlineStoreAdminService.ListFeatureViewSyncs must match the call
-     * that provided the page token.
-     * @return GoogleCloudAiplatformV1ListFeatureViewSyncsResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Aiplatform\Resource\ProjectsLocationsFeatureOnlineStoresFeatureViewsFeatureViewSyncs registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listProjectsLocationsFeatureOnlineStoresFeatureViewsFeatureViewSyncs($parent, $optParams = [])
+    class Google_Service_Aiplatform_Resource_ProjectsLocationsFeatureOnlineStoresFeatureViewsFeatureViewSyncs extends \Google\Service\Aiplatform\Resource\ProjectsLocationsFeatureOnlineStoresFeatureViewsFeatureViewSyncs
     {
     }
 }

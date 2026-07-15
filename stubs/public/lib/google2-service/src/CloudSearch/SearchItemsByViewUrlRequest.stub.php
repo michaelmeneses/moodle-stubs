@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class SearchItemsByViewUrlRequest extends \Google\Model
-{
-    protected $debugOptionsType = DebugOptions::class;
-    protected $debugOptionsDataType = '';
-    /**
-     * The next_page_token value returned from a previous request, if any.
-     *
-     * @var string
-     */
-    public $pageToken;
-    /**
-     * Specify the full view URL to find the corresponding item. The maximum
-     * length is 2048 characters.
-     *
-     * @var string
-     */
-    public $viewUrl;
-    /**
-     * Common debug options.
-     *
-     * @param DebugOptions $debugOptions
-     */
-    public function setDebugOptions(DebugOptions $debugOptions)
+namespace Google\Service\CloudSearch {
+    class SearchItemsByViewUrlRequest extends \Google\Model
     {
+        protected $debugOptionsType = DebugOptions::class;
+        protected $debugOptionsDataType = '';
+        /**
+         * The next_page_token value returned from a previous request, if any.
+         *
+         * @var string
+         */
+        public $pageToken;
+        /**
+         * Specify the full view URL to find the corresponding item. The maximum
+         * length is 2048 characters.
+         *
+         * @var string
+         */
+        public $viewUrl;
+        /**
+         * Common debug options.
+         *
+         * @param DebugOptions $debugOptions
+         */
+        public function setDebugOptions(DebugOptions $debugOptions)
+        {
+        }
+        /**
+         * @return DebugOptions
+         */
+        public function getDebugOptions()
+        {
+        }
+        /**
+         * The next_page_token value returned from a previous request, if any.
+         *
+         * @param string $pageToken
+         */
+        public function setPageToken($pageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPageToken()
+        {
+        }
+        /**
+         * Specify the full view URL to find the corresponding item. The maximum
+         * length is 2048 characters.
+         *
+         * @param string $viewUrl
+         */
+        public function setViewUrl($viewUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getViewUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DebugOptions
+     * Runtime class alias of \Google\Service\CloudSearch\SearchItemsByViewUrlRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDebugOptions()
-    {
-    }
-    /**
-     * The next_page_token value returned from a previous request, if any.
-     *
-     * @param string $pageToken
-     */
-    public function setPageToken($pageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPageToken()
-    {
-    }
-    /**
-     * Specify the full view URL to find the corresponding item. The maximum
-     * length is 2048 characters.
-     *
-     * @param string $viewUrl
-     */
-    public function setViewUrl($viewUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getViewUrl()
+    class Google_Service_CloudSearch_SearchItemsByViewUrlRequest extends \Google\Service\CloudSearch\SearchItemsByViewUrlRequest
     {
     }
 }

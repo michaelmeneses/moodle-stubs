@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class GoogleCloudVisionV1p2beta1ProductSearchResultsObjectAnnotation extends \Google\Model
-{
-    /**
-     * The BCP-47 language code, such as "en-US" or "sr-Latn". For more
-     * information, see
-     * http://www.unicode.org/reports/tr35/#Unicode_locale_identifier.
-     *
-     * @var string
-     */
-    public $languageCode;
-    /**
-     * Object ID that should align with EntityAnnotation mid.
-     *
-     * @var string
-     */
-    public $mid;
-    /**
-     * Object name, expressed in its `language_code` language.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Score of the result. Range [0, 1].
-     *
-     * @var float
-     */
-    public $score;
-    /**
-     * The BCP-47 language code, such as "en-US" or "sr-Latn". For more
-     * information, see
-     * http://www.unicode.org/reports/tr35/#Unicode_locale_identifier.
-     *
-     * @param string $languageCode
-     */
-    public function setLanguageCode($languageCode)
+namespace Google\Service\Vision {
+    class GoogleCloudVisionV1p2beta1ProductSearchResultsObjectAnnotation extends \Google\Model
     {
+        /**
+         * The BCP-47 language code, such as "en-US" or "sr-Latn". For more
+         * information, see
+         * http://www.unicode.org/reports/tr35/#Unicode_locale_identifier.
+         *
+         * @var string
+         */
+        public $languageCode;
+        /**
+         * Object ID that should align with EntityAnnotation mid.
+         *
+         * @var string
+         */
+        public $mid;
+        /**
+         * Object name, expressed in its `language_code` language.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Score of the result. Range [0, 1].
+         *
+         * @var float
+         */
+        public $score;
+        /**
+         * The BCP-47 language code, such as "en-US" or "sr-Latn". For more
+         * information, see
+         * http://www.unicode.org/reports/tr35/#Unicode_locale_identifier.
+         *
+         * @param string $languageCode
+         */
+        public function setLanguageCode($languageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLanguageCode()
+        {
+        }
+        /**
+         * Object ID that should align with EntityAnnotation mid.
+         *
+         * @param string $mid
+         */
+        public function setMid($mid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMid()
+        {
+        }
+        /**
+         * Object name, expressed in its `language_code` language.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Score of the result. Range [0, 1].
+         *
+         * @param float $score
+         */
+        public function setScore($score)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getScore()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Vision\GoogleCloudVisionV1p2beta1ProductSearchResultsObjectAnnotation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLanguageCode()
-    {
-    }
-    /**
-     * Object ID that should align with EntityAnnotation mid.
-     *
-     * @param string $mid
-     */
-    public function setMid($mid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMid()
-    {
-    }
-    /**
-     * Object name, expressed in its `language_code` language.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Score of the result. Range [0, 1].
-     *
-     * @param float $score
-     */
-    public function setScore($score)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getScore()
+    class Google_Service_Vision_GoogleCloudVisionV1p2beta1ProductSearchResultsObjectAnnotation extends \Google\Service\Vision\GoogleCloudVisionV1p2beta1ProductSearchResultsObjectAnnotation
     {
     }
 }

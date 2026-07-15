@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class HostsEntryList extends \Google\Collection
-{
-    protected $collection_key = 'entries';
-    protected $entriesType = HostsEntry::class;
-    protected $entriesDataType = 'array';
-    /**
-     * Hosts entries.
-     *
-     * @param HostsEntry[] $entries
-     */
-    public function setEntries($entries)
+namespace Google\Service\MigrationCenterAPI {
+    class HostsEntryList extends \Google\Collection
     {
+        protected $collection_key = 'entries';
+        protected $entriesType = HostsEntry::class;
+        protected $entriesDataType = 'array';
+        /**
+         * Hosts entries.
+         *
+         * @param HostsEntry[] $entries
+         */
+        public function setEntries($entries)
+        {
+        }
+        /**
+         * @return HostsEntry[]
+         */
+        public function getEntries()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return HostsEntry[]
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\HostsEntryList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntries()
+    class Google_Service_MigrationCenterAPI_HostsEntryList extends \Google\Service\MigrationCenterAPI\HostsEntryList
     {
     }
 }

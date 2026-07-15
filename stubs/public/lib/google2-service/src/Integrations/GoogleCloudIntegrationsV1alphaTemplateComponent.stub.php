@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaTemplateComponent extends \Google\Model
-{
-    /**
-     * Component type is unspecified
-     */
-    public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
-    /**
-     * Trigger component
-     */
-    public const TYPE_TRIGGER = 'TRIGGER';
-    /**
-     * Task component
-     */
-    public const TYPE_TASK = 'TASK';
-    /**
-     * Connector component
-     */
-    public const TYPE_CONNECTOR = 'CONNECTOR';
-    /**
-     * Optional. Name of the component.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optional. Type of the component.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Optional. Name of the component.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaTemplateComponent extends \Google\Model
     {
+        /**
+         * Component type is unspecified
+         */
+        public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
+        /**
+         * Trigger component
+         */
+        public const TYPE_TRIGGER = 'TRIGGER';
+        /**
+         * Task component
+         */
+        public const TYPE_TASK = 'TASK';
+        /**
+         * Connector component
+         */
+        public const TYPE_CONNECTOR = 'CONNECTOR';
+        /**
+         * Optional. Name of the component.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optional. Type of the component.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Optional. Name of the component.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. Type of the component.
+         *
+         * Accepted values: TYPE_UNSPECIFIED, TRIGGER, TASK, CONNECTOR
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaTemplateComponent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. Type of the component.
-     *
-     * Accepted values: TYPE_UNSPECIFIED, TRIGGER, TASK, CONNECTOR
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaTemplateComponent extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaTemplateComponent
     {
     }
 }

@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastore;
-
-class RunAggregationQueryResponse extends \Google\Model
-{
-    protected $batchType = AggregationResultBatch::class;
-    protected $batchDataType = '';
-    protected $explainMetricsType = ExplainMetrics::class;
-    protected $explainMetricsDataType = '';
-    protected $queryType = AggregationQuery::class;
-    protected $queryDataType = '';
-    /**
-     * The identifier of the transaction that was started as part of this
-     * RunAggregationQuery request. Set only when ReadOptions.new_transaction was
-     * set in RunAggregationQueryRequest.read_options.
-     *
-     * @var string
-     */
-    public $transaction;
-    /**
-     * A batch of aggregation results. Always present.
-     *
-     * @param AggregationResultBatch $batch
-     */
-    public function setBatch(AggregationResultBatch $batch)
+namespace Google\Service\Datastore {
+    class RunAggregationQueryResponse extends \Google\Model
     {
+        protected $batchType = AggregationResultBatch::class;
+        protected $batchDataType = '';
+        protected $explainMetricsType = ExplainMetrics::class;
+        protected $explainMetricsDataType = '';
+        protected $queryType = AggregationQuery::class;
+        protected $queryDataType = '';
+        /**
+         * The identifier of the transaction that was started as part of this
+         * RunAggregationQuery request. Set only when ReadOptions.new_transaction was
+         * set in RunAggregationQueryRequest.read_options.
+         *
+         * @var string
+         */
+        public $transaction;
+        /**
+         * A batch of aggregation results. Always present.
+         *
+         * @param AggregationResultBatch $batch
+         */
+        public function setBatch(AggregationResultBatch $batch)
+        {
+        }
+        /**
+         * @return AggregationResultBatch
+         */
+        public function getBatch()
+        {
+        }
+        /**
+         * Query explain metrics. This is only present when the
+         * RunAggregationQueryRequest.explain_options is provided, and it is sent only
+         * once with the last response in the stream.
+         *
+         * @param ExplainMetrics $explainMetrics
+         */
+        public function setExplainMetrics(ExplainMetrics $explainMetrics)
+        {
+        }
+        /**
+         * @return ExplainMetrics
+         */
+        public function getExplainMetrics()
+        {
+        }
+        /**
+         * The parsed form of the `GqlQuery` from the request, if it was set.
+         *
+         * @param AggregationQuery $query
+         */
+        public function setQuery(AggregationQuery $query)
+        {
+        }
+        /**
+         * @return AggregationQuery
+         */
+        public function getQuery()
+        {
+        }
+        /**
+         * The identifier of the transaction that was started as part of this
+         * RunAggregationQuery request. Set only when ReadOptions.new_transaction was
+         * set in RunAggregationQueryRequest.read_options.
+         *
+         * @param string $transaction
+         */
+        public function setTransaction($transaction)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTransaction()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AggregationResultBatch
+     * Runtime class alias of \Google\Service\Datastore\RunAggregationQueryResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBatch()
-    {
-    }
-    /**
-     * Query explain metrics. This is only present when the
-     * RunAggregationQueryRequest.explain_options is provided, and it is sent only
-     * once with the last response in the stream.
-     *
-     * @param ExplainMetrics $explainMetrics
-     */
-    public function setExplainMetrics(ExplainMetrics $explainMetrics)
-    {
-    }
-    /**
-     * @return ExplainMetrics
-     */
-    public function getExplainMetrics()
-    {
-    }
-    /**
-     * The parsed form of the `GqlQuery` from the request, if it was set.
-     *
-     * @param AggregationQuery $query
-     */
-    public function setQuery(AggregationQuery $query)
-    {
-    }
-    /**
-     * @return AggregationQuery
-     */
-    public function getQuery()
-    {
-    }
-    /**
-     * The identifier of the transaction that was started as part of this
-     * RunAggregationQuery request. Set only when ReadOptions.new_transaction was
-     * set in RunAggregationQueryRequest.read_options.
-     *
-     * @param string $transaction
-     */
-    public function setTransaction($transaction)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTransaction()
+    class Google_Service_Datastore_RunAggregationQueryResponse extends \Google\Service\Datastore\RunAggregationQueryResponse
     {
     }
 }

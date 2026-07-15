@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vault;
-
-class DriveDocumentIds extends \Google\Collection
-{
-    protected $collection_key = 'ids';
-    /**
-     * Required. A list of Drive document IDs.
-     *
-     * @var string[]
-     */
-    public $ids;
-    /**
-     * Required. A list of Drive document IDs.
-     *
-     * @param string[] $ids
-     */
-    public function setIds($ids)
+namespace Google\Service\Vault {
+    class DriveDocumentIds extends \Google\Collection
     {
+        protected $collection_key = 'ids';
+        /**
+         * Required. A list of Drive document IDs.
+         *
+         * @var string[]
+         */
+        public $ids;
+        /**
+         * Required. A list of Drive document IDs.
+         *
+         * @param string[] $ids
+         */
+        public function setIds($ids)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Vault\DriveDocumentIds registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIds()
+    class Google_Service_Vault_DriveDocumentIds extends \Google\Service\Vault\DriveDocumentIds
     {
     }
 }

@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class GetDebugConfigRequest extends \Google\Model
-{
-    /**
-     * The internal component id for which debug configuration is requested.
-     *
-     * @var string
-     */
-    public $componentId;
-    /**
-     * The [regional endpoint]
-     * (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that
-     * contains the job specified by job_id.
-     *
-     * @var string
-     */
-    public $location;
-    /**
-     * The worker id, i.e., VM hostname.
-     *
-     * @var string
-     */
-    public $workerId;
-    /**
-     * The internal component id for which debug configuration is requested.
-     *
-     * @param string $componentId
-     */
-    public function setComponentId($componentId)
+namespace Google\Service\Dataflow {
+    class GetDebugConfigRequest extends \Google\Model
     {
+        /**
+         * The internal component id for which debug configuration is requested.
+         *
+         * @var string
+         */
+        public $componentId;
+        /**
+         * The [regional endpoint]
+         * (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that
+         * contains the job specified by job_id.
+         *
+         * @var string
+         */
+        public $location;
+        /**
+         * The worker id, i.e., VM hostname.
+         *
+         * @var string
+         */
+        public $workerId;
+        /**
+         * The internal component id for which debug configuration is requested.
+         *
+         * @param string $componentId
+         */
+        public function setComponentId($componentId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getComponentId()
+        {
+        }
+        /**
+         * The [regional endpoint]
+         * (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that
+         * contains the job specified by job_id.
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * The worker id, i.e., VM hostname.
+         *
+         * @param string $workerId
+         */
+        public function setWorkerId($workerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWorkerId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataflow\GetDebugConfigRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getComponentId()
-    {
-    }
-    /**
-     * The [regional endpoint]
-     * (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that
-     * contains the job specified by job_id.
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocation()
-    {
-    }
-    /**
-     * The worker id, i.e., VM hostname.
-     *
-     * @param string $workerId
-     */
-    public function setWorkerId($workerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWorkerId()
+    class Google_Service_Dataflow_GetDebugConfigRequest extends \Google\Service\Dataflow\GetDebugConfigRequest
     {
     }
 }

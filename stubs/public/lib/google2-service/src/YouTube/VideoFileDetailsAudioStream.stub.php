@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class VideoFileDetailsAudioStream extends \Google\Model
-{
-    /**
-     * The audio stream's bitrate, in bits per second.
-     *
-     * @var string
-     */
-    public $bitrateBps;
-    /**
-     * The number of audio channels that the stream contains.
-     *
-     * @var string
-     */
-    public $channelCount;
-    /**
-     * The audio codec that the stream uses.
-     *
-     * @var string
-     */
-    public $codec;
-    /**
-     * A value that uniquely identifies a video vendor. Typically, the value is a
-     * four-letter vendor code.
-     *
-     * @var string
-     */
-    public $vendor;
-    /**
-     * The audio stream's bitrate, in bits per second.
-     *
-     * @param string $bitrateBps
-     */
-    public function setBitrateBps($bitrateBps)
+namespace Google\Service\YouTube {
+    class VideoFileDetailsAudioStream extends \Google\Model
     {
+        /**
+         * The audio stream's bitrate, in bits per second.
+         *
+         * @var string
+         */
+        public $bitrateBps;
+        /**
+         * The number of audio channels that the stream contains.
+         *
+         * @var string
+         */
+        public $channelCount;
+        /**
+         * The audio codec that the stream uses.
+         *
+         * @var string
+         */
+        public $codec;
+        /**
+         * A value that uniquely identifies a video vendor. Typically, the value is a
+         * four-letter vendor code.
+         *
+         * @var string
+         */
+        public $vendor;
+        /**
+         * The audio stream's bitrate, in bits per second.
+         *
+         * @param string $bitrateBps
+         */
+        public function setBitrateBps($bitrateBps)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBitrateBps()
+        {
+        }
+        /**
+         * The number of audio channels that the stream contains.
+         *
+         * @param string $channelCount
+         */
+        public function setChannelCount($channelCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChannelCount()
+        {
+        }
+        /**
+         * The audio codec that the stream uses.
+         *
+         * @param string $codec
+         */
+        public function setCodec($codec)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCodec()
+        {
+        }
+        /**
+         * A value that uniquely identifies a video vendor. Typically, the value is a
+         * four-letter vendor code.
+         *
+         * @param string $vendor
+         */
+        public function setVendor($vendor)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVendor()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\VideoFileDetailsAudioStream registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBitrateBps()
-    {
-    }
-    /**
-     * The number of audio channels that the stream contains.
-     *
-     * @param string $channelCount
-     */
-    public function setChannelCount($channelCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getChannelCount()
-    {
-    }
-    /**
-     * The audio codec that the stream uses.
-     *
-     * @param string $codec
-     */
-    public function setCodec($codec)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCodec()
-    {
-    }
-    /**
-     * A value that uniquely identifies a video vendor. Typically, the value is a
-     * four-letter vendor code.
-     *
-     * @param string $vendor
-     */
-    public function setVendor($vendor)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVendor()
+    class Google_Service_YouTube_VideoFileDetailsAudioStream extends \Google\Service\YouTube\VideoFileDetailsAudioStream
     {
     }
 }

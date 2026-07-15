@@ -8,6 +8,7 @@
  */
 namespace Aws\S3\Crypto;
 
+use Aws\Crypto\MaterialsProviderInterfaceV2;
 trait CryptoParamsTraitV2
 {
     use CryptoParamsTrait;

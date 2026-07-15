@@ -21,118 +21,132 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent\Resource;
-
-/**
- * The "datafeeds" collection of methods.
- * Typical usage is:
- *  <code>
- *   $contentService = new Google\Service\ShoppingContent(...);
- *   $datafeeds = $contentService->datafeeds;
- *  </code>
- */
-class Datafeeds extends \Google\Service\Resource
-{
+namespace Google\Service\ShoppingContent\Resource {
+    use Google\Service\ShoppingContent\Datafeed;
+    use Google\Service\ShoppingContent\DatafeedsCustomBatchRequest;
+    use Google\Service\ShoppingContent\DatafeedsCustomBatchResponse;
+    use Google\Service\ShoppingContent\DatafeedsFetchNowResponse;
+    use Google\Service\ShoppingContent\DatafeedsListResponse;
     /**
-     * Deletes, fetches, gets, inserts and updates multiple datafeeds in a single
-     * request. (datafeeds.custombatch)
-     *
-     * @param DatafeedsCustomBatchRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return DatafeedsCustomBatchResponse
-     * @throws \Google\Service\Exception
+     * The "datafeeds" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $contentService = new Google\Service\ShoppingContent(...);
+     *   $datafeeds = $contentService->datafeeds;
+     *  </code>
      */
-    public function custombatch(DatafeedsCustomBatchRequest $postBody, $optParams = [])
+    class Datafeeds extends \Google\Service\Resource
     {
+        /**
+         * Deletes, fetches, gets, inserts and updates multiple datafeeds in a single
+         * request. (datafeeds.custombatch)
+         *
+         * @param DatafeedsCustomBatchRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return DatafeedsCustomBatchResponse
+         * @throws \Google\Service\Exception
+         */
+        public function custombatch(DatafeedsCustomBatchRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a datafeed configuration from your Merchant Center account.
+         * (datafeeds.delete)
+         *
+         * @param string $merchantId The ID of the account that manages the datafeed.
+         * This account cannot be a multi-client account.
+         * @param string $datafeedId The ID of the datafeed.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($merchantId, $datafeedId, $optParams = [])
+        {
+        }
+        /**
+         * Invokes a fetch for the datafeed in your Merchant Center account. If you need
+         * to call this method more than once per day, we recommend you use the
+         * [Products service](https://developers.google.com/shopping-
+         * content/reference/rest/v2.1/products) to update your product data.
+         * (datafeeds.fetchnow)
+         *
+         * @param string $merchantId The ID of the account that manages the datafeed.
+         * This account cannot be a multi-client account.
+         * @param string $datafeedId The ID of the datafeed to be fetched.
+         * @param array $optParams Optional parameters.
+         * @return DatafeedsFetchNowResponse
+         * @throws \Google\Service\Exception
+         */
+        public function fetchnow($merchantId, $datafeedId, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves a datafeed configuration from your Merchant Center account.
+         * (datafeeds.get)
+         *
+         * @param string $merchantId The ID of the account that manages the datafeed.
+         * This account cannot be a multi-client account.
+         * @param string $datafeedId The ID of the datafeed.
+         * @param array $optParams Optional parameters.
+         * @return Datafeed
+         * @throws \Google\Service\Exception
+         */
+        public function get($merchantId, $datafeedId, $optParams = [])
+        {
+        }
+        /**
+         * Registers a datafeed configuration with your Merchant Center account.
+         * (datafeeds.insert)
+         *
+         * @param string $merchantId The ID of the account that manages the datafeed.
+         * This account cannot be a multi-client account.
+         * @param Datafeed $postBody
+         * @param array $optParams Optional parameters.
+         * @return Datafeed
+         * @throws \Google\Service\Exception
+         */
+        public function insert($merchantId, Datafeed $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Lists the configurations for datafeeds in your Merchant Center account.
+         * (datafeeds.listDatafeeds)
+         *
+         * @param string $merchantId The ID of the account that manages the datafeeds.
+         * This account cannot be a multi-client account.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string maxResults The maximum number of products to return in the
+         * response, used for paging.
+         * @opt_param string pageToken The token returned by the previous request.
+         * @return DatafeedsListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listDatafeeds($merchantId, $optParams = [])
+        {
+        }
+        /**
+         * Updates a datafeed configuration of your Merchant Center account. Any fields
+         * that are not provided are deleted from the resource. (datafeeds.update)
+         *
+         * @param string $merchantId The ID of the account that manages the datafeed.
+         * This account cannot be a multi-client account.
+         * @param string $datafeedId The ID of the datafeed.
+         * @param Datafeed $postBody
+         * @param array $optParams Optional parameters.
+         * @return Datafeed
+         * @throws \Google\Service\Exception
+         */
+        public function update($merchantId, $datafeedId, Datafeed $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a datafeed configuration from your Merchant Center account.
-     * (datafeeds.delete)
-     *
-     * @param string $merchantId The ID of the account that manages the datafeed.
-     * This account cannot be a multi-client account.
-     * @param string $datafeedId The ID of the datafeed.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\ShoppingContent\Resource\Datafeeds registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($merchantId, $datafeedId, $optParams = [])
-    {
-    }
-    /**
-     * Invokes a fetch for the datafeed in your Merchant Center account. If you need
-     * to call this method more than once per day, we recommend you use the
-     * [Products service](https://developers.google.com/shopping-
-     * content/reference/rest/v2.1/products) to update your product data.
-     * (datafeeds.fetchnow)
-     *
-     * @param string $merchantId The ID of the account that manages the datafeed.
-     * This account cannot be a multi-client account.
-     * @param string $datafeedId The ID of the datafeed to be fetched.
-     * @param array $optParams Optional parameters.
-     * @return DatafeedsFetchNowResponse
-     * @throws \Google\Service\Exception
-     */
-    public function fetchnow($merchantId, $datafeedId, $optParams = [])
-    {
-    }
-    /**
-     * Retrieves a datafeed configuration from your Merchant Center account.
-     * (datafeeds.get)
-     *
-     * @param string $merchantId The ID of the account that manages the datafeed.
-     * This account cannot be a multi-client account.
-     * @param string $datafeedId The ID of the datafeed.
-     * @param array $optParams Optional parameters.
-     * @return Datafeed
-     * @throws \Google\Service\Exception
-     */
-    public function get($merchantId, $datafeedId, $optParams = [])
-    {
-    }
-    /**
-     * Registers a datafeed configuration with your Merchant Center account.
-     * (datafeeds.insert)
-     *
-     * @param string $merchantId The ID of the account that manages the datafeed.
-     * This account cannot be a multi-client account.
-     * @param Datafeed $postBody
-     * @param array $optParams Optional parameters.
-     * @return Datafeed
-     * @throws \Google\Service\Exception
-     */
-    public function insert($merchantId, Datafeed $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Lists the configurations for datafeeds in your Merchant Center account.
-     * (datafeeds.listDatafeeds)
-     *
-     * @param string $merchantId The ID of the account that manages the datafeeds.
-     * This account cannot be a multi-client account.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string maxResults The maximum number of products to return in the
-     * response, used for paging.
-     * @opt_param string pageToken The token returned by the previous request.
-     * @return DatafeedsListResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listDatafeeds($merchantId, $optParams = [])
-    {
-    }
-    /**
-     * Updates a datafeed configuration of your Merchant Center account. Any fields
-     * that are not provided are deleted from the resource. (datafeeds.update)
-     *
-     * @param string $merchantId The ID of the account that manages the datafeed.
-     * This account cannot be a multi-client account.
-     * @param string $datafeedId The ID of the datafeed.
-     * @param Datafeed $postBody
-     * @param array $optParams Optional parameters.
-     * @return Datafeed
-     * @throws \Google\Service\Exception
-     */
-    public function update($merchantId, $datafeedId, Datafeed $postBody, $optParams = [])
+    class Google_Service_ShoppingContent_Resource_Datafeeds extends \Google\Service\ShoppingContent\Resource\Datafeeds
     {
     }
 }

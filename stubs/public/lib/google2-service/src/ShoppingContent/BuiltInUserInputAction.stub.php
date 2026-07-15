@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class BuiltInUserInputAction extends \Google\Collection
-{
-    protected $collection_key = 'flows';
-    /**
-     * Internal details. Not for display but need to be sent back when triggering
-     * the action.
-     *
-     * @var string
-     */
-    public $actionContext;
-    protected $flowsType = ActionFlow::class;
-    protected $flowsDataType = 'array';
-    /**
-     * Internal details. Not for display but need to be sent back when triggering
-     * the action.
-     *
-     * @param string $actionContext
-     */
-    public function setActionContext($actionContext)
+namespace Google\Service\ShoppingContent {
+    class BuiltInUserInputAction extends \Google\Collection
     {
+        protected $collection_key = 'flows';
+        /**
+         * Internal details. Not for display but need to be sent back when triggering
+         * the action.
+         *
+         * @var string
+         */
+        public $actionContext;
+        protected $flowsType = ActionFlow::class;
+        protected $flowsDataType = 'array';
+        /**
+         * Internal details. Not for display but need to be sent back when triggering
+         * the action.
+         *
+         * @param string $actionContext
+         */
+        public function setActionContext($actionContext)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getActionContext()
+        {
+        }
+        /**
+         * Actions may provide multiple different flows. Merchant selects one that
+         * fits best to their intent. Selecting the flow is the first step in user's
+         * interaction with the action. It affects what input fields will be available
+         * and required and also how the request will be processed.
+         *
+         * @param ActionFlow[] $flows
+         */
+        public function setFlows($flows)
+        {
+        }
+        /**
+         * @return ActionFlow[]
+         */
+        public function getFlows()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\BuiltInUserInputAction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActionContext()
-    {
-    }
-    /**
-     * Actions may provide multiple different flows. Merchant selects one that
-     * fits best to their intent. Selecting the flow is the first step in user's
-     * interaction with the action. It affects what input fields will be available
-     * and required and also how the request will be processed.
-     *
-     * @param ActionFlow[] $flows
-     */
-    public function setFlows($flows)
-    {
-    }
-    /**
-     * @return ActionFlow[]
-     */
-    public function getFlows()
+    class Google_Service_ShoppingContent_BuiltInUserInputAction extends \Google\Service\ShoppingContent\BuiltInUserInputAction
     {
     }
 }

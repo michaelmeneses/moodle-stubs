@@ -21,279 +21,288 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMMigrationService;
-
-class MachineImageTargetDetails extends \Google\Collection
-{
-    protected $collection_key = 'tags';
-    /**
-     * Optional. Additional licenses to assign to the instance created by the
-     * machine image. Format: https://www.googleapis.com/compute/v1/projects/PROJE
-     * CT_ID/global/licenses/LICENSE_NAME Or https://www.googleapis.com/compute/be
-     * ta/projects/PROJECT_ID/global/licenses/LICENSE_NAME
-     *
-     * @var string[]
-     */
-    public $additionalLicenses;
-    /**
-     * Optional. An optional description of the machine image.
-     *
-     * @var string
-     */
-    public $description;
-    protected $encryptionType = Encryption::class;
-    protected $encryptionDataType = '';
-    /**
-     * Optional. The labels to apply to the instance created by the machine image.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Required. The name of the machine image to be created.
-     *
-     * @var string
-     */
-    public $machineImageName;
-    protected $machineImageParametersOverridesType = MachineImageParametersOverrides::class;
-    protected $machineImageParametersOverridesDataType = '';
-    protected $networkInterfacesType = NetworkInterface::class;
-    protected $networkInterfacesDataType = 'array';
-    protected $osAdaptationParametersType = ImageImportOsAdaptationParameters::class;
-    protected $osAdaptationParametersDataType = '';
-    protected $serviceAccountType = ServiceAccount::class;
-    protected $serviceAccountDataType = '';
-    protected $shieldedInstanceConfigType = ShieldedInstanceConfig::class;
-    protected $shieldedInstanceConfigDataType = '';
-    /**
-     * Optional. Set to true to set the machine image storageLocations to the
-     * single region of the import job. When false, the closest multi-region is
-     * selected.
-     *
-     * @var bool
-     */
-    public $singleRegionStorage;
-    protected $skipOsAdaptationType = SkipOsAdaptation::class;
-    protected $skipOsAdaptationDataType = '';
-    /**
-     * Optional. The tags to apply to the instance created by the machine image.
-     *
-     * @var string[]
-     */
-    public $tags;
-    /**
-     * Required. Reference to the TargetProject resource that represents the
-     * target project in which the imported machine image will be created.
-     *
-     * @var string
-     */
-    public $targetProject;
-    /**
-     * Optional. Additional licenses to assign to the instance created by the
-     * machine image. Format: https://www.googleapis.com/compute/v1/projects/PROJE
-     * CT_ID/global/licenses/LICENSE_NAME Or https://www.googleapis.com/compute/be
-     * ta/projects/PROJECT_ID/global/licenses/LICENSE_NAME
-     *
-     * @param string[] $additionalLicenses
-     */
-    public function setAdditionalLicenses($additionalLicenses)
+namespace Google\Service\VMMigrationService {
+    class MachineImageTargetDetails extends \Google\Collection
     {
+        protected $collection_key = 'tags';
+        /**
+         * Optional. Additional licenses to assign to the instance created by the
+         * machine image. Format: https://www.googleapis.com/compute/v1/projects/PROJE
+         * CT_ID/global/licenses/LICENSE_NAME Or https://www.googleapis.com/compute/be
+         * ta/projects/PROJECT_ID/global/licenses/LICENSE_NAME
+         *
+         * @var string[]
+         */
+        public $additionalLicenses;
+        /**
+         * Optional. An optional description of the machine image.
+         *
+         * @var string
+         */
+        public $description;
+        protected $encryptionType = Encryption::class;
+        protected $encryptionDataType = '';
+        /**
+         * Optional. The labels to apply to the instance created by the machine image.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Required. The name of the machine image to be created.
+         *
+         * @var string
+         */
+        public $machineImageName;
+        protected $machineImageParametersOverridesType = MachineImageParametersOverrides::class;
+        protected $machineImageParametersOverridesDataType = '';
+        protected $networkInterfacesType = NetworkInterface::class;
+        protected $networkInterfacesDataType = 'array';
+        protected $osAdaptationParametersType = ImageImportOsAdaptationParameters::class;
+        protected $osAdaptationParametersDataType = '';
+        protected $serviceAccountType = ServiceAccount::class;
+        protected $serviceAccountDataType = '';
+        protected $shieldedInstanceConfigType = ShieldedInstanceConfig::class;
+        protected $shieldedInstanceConfigDataType = '';
+        /**
+         * Optional. Set to true to set the machine image storageLocations to the
+         * single region of the import job. When false, the closest multi-region is
+         * selected.
+         *
+         * @var bool
+         */
+        public $singleRegionStorage;
+        protected $skipOsAdaptationType = SkipOsAdaptation::class;
+        protected $skipOsAdaptationDataType = '';
+        /**
+         * Optional. The tags to apply to the instance created by the machine image.
+         *
+         * @var string[]
+         */
+        public $tags;
+        /**
+         * Required. Reference to the TargetProject resource that represents the
+         * target project in which the imported machine image will be created.
+         *
+         * @var string
+         */
+        public $targetProject;
+        /**
+         * Optional. Additional licenses to assign to the instance created by the
+         * machine image. Format: https://www.googleapis.com/compute/v1/projects/PROJE
+         * CT_ID/global/licenses/LICENSE_NAME Or https://www.googleapis.com/compute/be
+         * ta/projects/PROJECT_ID/global/licenses/LICENSE_NAME
+         *
+         * @param string[] $additionalLicenses
+         */
+        public function setAdditionalLicenses($additionalLicenses)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAdditionalLicenses()
+        {
+        }
+        /**
+         * Optional. An optional description of the machine image.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Immutable. The encryption to apply to the machine image. If the Image
+         * Import resource has an encryption, this field must be set to the same
+         * encryption key.
+         *
+         * @param Encryption $encryption
+         */
+        public function setEncryption(Encryption $encryption)
+        {
+        }
+        /**
+         * @return Encryption
+         */
+        public function getEncryption()
+        {
+        }
+        /**
+         * Optional. The labels to apply to the instance created by the machine image.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Required. The name of the machine image to be created.
+         *
+         * @param string $machineImageName
+         */
+        public function setMachineImageName($machineImageName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMachineImageName()
+        {
+        }
+        /**
+         * Optional. Parameters overriding decisions based on the source machine image
+         * configurations.
+         *
+         * @param MachineImageParametersOverrides $machineImageParametersOverrides
+         */
+        public function setMachineImageParametersOverrides(MachineImageParametersOverrides $machineImageParametersOverrides)
+        {
+        }
+        /**
+         * @return MachineImageParametersOverrides
+         */
+        public function getMachineImageParametersOverrides()
+        {
+        }
+        /**
+         * Optional. The network interfaces to create with the instance created by the
+         * machine image. Internal and external IP addresses, and network tiers are
+         * ignored for machine image import.
+         *
+         * @param NetworkInterface[] $networkInterfaces
+         */
+        public function setNetworkInterfaces($networkInterfaces)
+        {
+        }
+        /**
+         * @return NetworkInterface[]
+         */
+        public function getNetworkInterfaces()
+        {
+        }
+        /**
+         * Optional. Use to set the parameters relevant for the OS adaptation process.
+         *
+         * @param ImageImportOsAdaptationParameters $osAdaptationParameters
+         */
+        public function setOsAdaptationParameters(ImageImportOsAdaptationParameters $osAdaptationParameters)
+        {
+        }
+        /**
+         * @return ImageImportOsAdaptationParameters
+         */
+        public function getOsAdaptationParameters()
+        {
+        }
+        /**
+         * Optional. The service account to assign to the instance created by the
+         * machine image.
+         *
+         * @param ServiceAccount $serviceAccount
+         */
+        public function setServiceAccount(ServiceAccount $serviceAccount)
+        {
+        }
+        /**
+         * @return ServiceAccount
+         */
+        public function getServiceAccount()
+        {
+        }
+        /**
+         * Optional. Shielded instance configuration.
+         *
+         * @param ShieldedInstanceConfig $shieldedInstanceConfig
+         */
+        public function setShieldedInstanceConfig(ShieldedInstanceConfig $shieldedInstanceConfig)
+        {
+        }
+        /**
+         * @return ShieldedInstanceConfig
+         */
+        public function getShieldedInstanceConfig()
+        {
+        }
+        /**
+         * Optional. Set to true to set the machine image storageLocations to the
+         * single region of the import job. When false, the closest multi-region is
+         * selected.
+         *
+         * @param bool $singleRegionStorage
+         */
+        public function setSingleRegionStorage($singleRegionStorage)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSingleRegionStorage()
+        {
+        }
+        /**
+         * Optional. Use to skip OS adaptation process.
+         *
+         * @param SkipOsAdaptation $skipOsAdaptation
+         */
+        public function setSkipOsAdaptation(SkipOsAdaptation $skipOsAdaptation)
+        {
+        }
+        /**
+         * @return SkipOsAdaptation
+         */
+        public function getSkipOsAdaptation()
+        {
+        }
+        /**
+         * Optional. The tags to apply to the instance created by the machine image.
+         *
+         * @param string[] $tags
+         */
+        public function setTags($tags)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTags()
+        {
+        }
+        /**
+         * Required. Reference to the TargetProject resource that represents the
+         * target project in which the imported machine image will be created.
+         *
+         * @param string $targetProject
+         */
+        public function setTargetProject($targetProject)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetProject()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\VMMigrationService\MachineImageTargetDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdditionalLicenses()
-    {
-    }
-    /**
-     * Optional. An optional description of the machine image.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Immutable. The encryption to apply to the machine image. If the Image
-     * Import resource has an encryption, this field must be set to the same
-     * encryption key.
-     *
-     * @param Encryption $encryption
-     */
-    public function setEncryption(Encryption $encryption)
-    {
-    }
-    /**
-     * @return Encryption
-     */
-    public function getEncryption()
-    {
-    }
-    /**
-     * Optional. The labels to apply to the instance created by the machine image.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Required. The name of the machine image to be created.
-     *
-     * @param string $machineImageName
-     */
-    public function setMachineImageName($machineImageName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMachineImageName()
-    {
-    }
-    /**
-     * Optional. Parameters overriding decisions based on the source machine image
-     * configurations.
-     *
-     * @param MachineImageParametersOverrides $machineImageParametersOverrides
-     */
-    public function setMachineImageParametersOverrides(MachineImageParametersOverrides $machineImageParametersOverrides)
-    {
-    }
-    /**
-     * @return MachineImageParametersOverrides
-     */
-    public function getMachineImageParametersOverrides()
-    {
-    }
-    /**
-     * Optional. The network interfaces to create with the instance created by the
-     * machine image. Internal and external IP addresses, and network tiers are
-     * ignored for machine image import.
-     *
-     * @param NetworkInterface[] $networkInterfaces
-     */
-    public function setNetworkInterfaces($networkInterfaces)
-    {
-    }
-    /**
-     * @return NetworkInterface[]
-     */
-    public function getNetworkInterfaces()
-    {
-    }
-    /**
-     * Optional. Use to set the parameters relevant for the OS adaptation process.
-     *
-     * @param ImageImportOsAdaptationParameters $osAdaptationParameters
-     */
-    public function setOsAdaptationParameters(ImageImportOsAdaptationParameters $osAdaptationParameters)
-    {
-    }
-    /**
-     * @return ImageImportOsAdaptationParameters
-     */
-    public function getOsAdaptationParameters()
-    {
-    }
-    /**
-     * Optional. The service account to assign to the instance created by the
-     * machine image.
-     *
-     * @param ServiceAccount $serviceAccount
-     */
-    public function setServiceAccount(ServiceAccount $serviceAccount)
-    {
-    }
-    /**
-     * @return ServiceAccount
-     */
-    public function getServiceAccount()
-    {
-    }
-    /**
-     * Optional. Shielded instance configuration.
-     *
-     * @param ShieldedInstanceConfig $shieldedInstanceConfig
-     */
-    public function setShieldedInstanceConfig(ShieldedInstanceConfig $shieldedInstanceConfig)
-    {
-    }
-    /**
-     * @return ShieldedInstanceConfig
-     */
-    public function getShieldedInstanceConfig()
-    {
-    }
-    /**
-     * Optional. Set to true to set the machine image storageLocations to the
-     * single region of the import job. When false, the closest multi-region is
-     * selected.
-     *
-     * @param bool $singleRegionStorage
-     */
-    public function setSingleRegionStorage($singleRegionStorage)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSingleRegionStorage()
-    {
-    }
-    /**
-     * Optional. Use to skip OS adaptation process.
-     *
-     * @param SkipOsAdaptation $skipOsAdaptation
-     */
-    public function setSkipOsAdaptation(SkipOsAdaptation $skipOsAdaptation)
-    {
-    }
-    /**
-     * @return SkipOsAdaptation
-     */
-    public function getSkipOsAdaptation()
-    {
-    }
-    /**
-     * Optional. The tags to apply to the instance created by the machine image.
-     *
-     * @param string[] $tags
-     */
-    public function setTags($tags)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTags()
-    {
-    }
-    /**
-     * Required. Reference to the TargetProject resource that represents the
-     * target project in which the imported machine image will be created.
-     *
-     * @param string $targetProject
-     */
-    public function setTargetProject($targetProject)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetProject()
+    class Google_Service_VMMigrationService_MachineImageTargetDetails extends \Google\Service\VMMigrationService\MachineImageTargetDetails
     {
     }
 }

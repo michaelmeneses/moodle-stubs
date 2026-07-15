@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Baremetalsolution;
-
-class ResizeVolumeRequest extends \Google\Model
-{
-    /**
-     * New Volume size, in GiB.
-     *
-     * @var string
-     */
-    public $sizeGib;
-    /**
-     * New Volume size, in GiB.
-     *
-     * @param string $sizeGib
-     */
-    public function setSizeGib($sizeGib)
+namespace Google\Service\Baremetalsolution {
+    class ResizeVolumeRequest extends \Google\Model
     {
+        /**
+         * New Volume size, in GiB.
+         *
+         * @var string
+         */
+        public $sizeGib;
+        /**
+         * New Volume size, in GiB.
+         *
+         * @param string $sizeGib
+         */
+        public function setSizeGib($sizeGib)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSizeGib()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Baremetalsolution\ResizeVolumeRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSizeGib()
+    class Google_Service_Baremetalsolution_ResizeVolumeRequest extends \Google\Service\Baremetalsolution\ResizeVolumeRequest
     {
     }
 }

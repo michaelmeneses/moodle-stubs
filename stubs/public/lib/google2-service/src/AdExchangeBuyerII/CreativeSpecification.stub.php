@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyerII;
-
-class CreativeSpecification extends \Google\Collection
-{
-    protected $collection_key = 'creativeCompanionSizes';
-    protected $creativeCompanionSizesType = AdSize::class;
-    protected $creativeCompanionSizesDataType = 'array';
-    protected $creativeSizeType = AdSize::class;
-    protected $creativeSizeDataType = '';
-    /**
-     * Companion sizes may be filled in only when this is a video creative.
-     *
-     * @param AdSize[] $creativeCompanionSizes
-     */
-    public function setCreativeCompanionSizes($creativeCompanionSizes)
+namespace Google\Service\AdExchangeBuyerII {
+    class CreativeSpecification extends \Google\Collection
     {
+        protected $collection_key = 'creativeCompanionSizes';
+        protected $creativeCompanionSizesType = AdSize::class;
+        protected $creativeCompanionSizesDataType = 'array';
+        protected $creativeSizeType = AdSize::class;
+        protected $creativeSizeDataType = '';
+        /**
+         * Companion sizes may be filled in only when this is a video creative.
+         *
+         * @param AdSize[] $creativeCompanionSizes
+         */
+        public function setCreativeCompanionSizes($creativeCompanionSizes)
+        {
+        }
+        /**
+         * @return AdSize[]
+         */
+        public function getCreativeCompanionSizes()
+        {
+        }
+        /**
+         * The size of the creative.
+         *
+         * @param AdSize $creativeSize
+         */
+        public function setCreativeSize(AdSize $creativeSize)
+        {
+        }
+        /**
+         * @return AdSize
+         */
+        public function getCreativeSize()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AdSize[]
+     * Runtime class alias of \Google\Service\AdExchangeBuyerII\CreativeSpecification registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreativeCompanionSizes()
-    {
-    }
-    /**
-     * The size of the creative.
-     *
-     * @param AdSize $creativeSize
-     */
-    public function setCreativeSize(AdSize $creativeSize)
-    {
-    }
-    /**
-     * @return AdSize
-     */
-    public function getCreativeSize()
+    class Google_Service_AdExchangeBuyerII_CreativeSpecification extends \Google\Service\AdExchangeBuyerII\CreativeSpecification
     {
     }
 }

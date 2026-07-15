@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TrafficDirectorService;
-
-class Address extends \Google\Model
-{
-    protected $envoyInternalAddressType = EnvoyInternalAddress::class;
-    protected $envoyInternalAddressDataType = '';
-    protected $pipeType = Pipe::class;
-    protected $pipeDataType = '';
-    protected $socketAddressType = SocketAddress::class;
-    protected $socketAddressDataType = '';
-    /**
-     * Specifies a user-space address handled by :ref:`internal listeners `.
-     *
-     * @param EnvoyInternalAddress $envoyInternalAddress
-     */
-    public function setEnvoyInternalAddress(EnvoyInternalAddress $envoyInternalAddress)
+namespace Google\Service\TrafficDirectorService {
+    class Address extends \Google\Model
     {
+        protected $envoyInternalAddressType = EnvoyInternalAddress::class;
+        protected $envoyInternalAddressDataType = '';
+        protected $pipeType = Pipe::class;
+        protected $pipeDataType = '';
+        protected $socketAddressType = SocketAddress::class;
+        protected $socketAddressDataType = '';
+        /**
+         * Specifies a user-space address handled by :ref:`internal listeners `.
+         *
+         * @param EnvoyInternalAddress $envoyInternalAddress
+         */
+        public function setEnvoyInternalAddress(EnvoyInternalAddress $envoyInternalAddress)
+        {
+        }
+        /**
+         * @return EnvoyInternalAddress
+         */
+        public function getEnvoyInternalAddress()
+        {
+        }
+        /**
+         * @param Pipe $pipe
+         */
+        public function setPipe(Pipe $pipe)
+        {
+        }
+        /**
+         * @return Pipe
+         */
+        public function getPipe()
+        {
+        }
+        /**
+         * @param SocketAddress $socketAddress
+         */
+        public function setSocketAddress(SocketAddress $socketAddress)
+        {
+        }
+        /**
+         * @return SocketAddress
+         */
+        public function getSocketAddress()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EnvoyInternalAddress
+     * Runtime class alias of \Google\Service\TrafficDirectorService\Address registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnvoyInternalAddress()
-    {
-    }
-    /**
-     * @param Pipe $pipe
-     */
-    public function setPipe(Pipe $pipe)
-    {
-    }
-    /**
-     * @return Pipe
-     */
-    public function getPipe()
-    {
-    }
-    /**
-     * @param SocketAddress $socketAddress
-     */
-    public function setSocketAddress(SocketAddress $socketAddress)
-    {
-    }
-    /**
-     * @return SocketAddress
-     */
-    public function getSocketAddress()
+    class Google_Service_TrafficDirectorService_Address extends \Google\Service\TrafficDirectorService\Address
     {
     }
 }

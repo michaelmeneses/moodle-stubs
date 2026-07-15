@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3WebhookServiceDirectoryConfig extends \Google\Model
-{
-    protected $genericWebServiceType = GoogleCloudDialogflowCxV3WebhookGenericWebService::class;
-    protected $genericWebServiceDataType = '';
-    /**
-     * Required. The name of [Service Directory](https://cloud.google.com/service-
-     * directory) service. Format: `projects//locations//namespaces//services/`.
-     * `Location ID` of the service directory must be the same as the location of
-     * the agent.
-     *
-     * @var string
-     */
-    public $service;
-    /**
-     * Generic Service configuration of this webhook.
-     *
-     * @param GoogleCloudDialogflowCxV3WebhookGenericWebService $genericWebService
-     */
-    public function setGenericWebService(GoogleCloudDialogflowCxV3WebhookGenericWebService $genericWebService)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3WebhookServiceDirectoryConfig extends \Google\Model
     {
+        protected $genericWebServiceType = GoogleCloudDialogflowCxV3WebhookGenericWebService::class;
+        protected $genericWebServiceDataType = '';
+        /**
+         * Required. The name of [Service Directory](https://cloud.google.com/service-
+         * directory) service. Format: `projects//locations//namespaces//services/`.
+         * `Location ID` of the service directory must be the same as the location of
+         * the agent.
+         *
+         * @var string
+         */
+        public $service;
+        /**
+         * Generic Service configuration of this webhook.
+         *
+         * @param GoogleCloudDialogflowCxV3WebhookGenericWebService $genericWebService
+         */
+        public function setGenericWebService(GoogleCloudDialogflowCxV3WebhookGenericWebService $genericWebService)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3WebhookGenericWebService
+         */
+        public function getGenericWebService()
+        {
+        }
+        /**
+         * Required. The name of [Service Directory](https://cloud.google.com/service-
+         * directory) service. Format: `projects//locations//namespaces//services/`.
+         * `Location ID` of the service directory must be the same as the location of
+         * the agent.
+         *
+         * @param string $service
+         */
+        public function setService($service)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getService()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowCxV3WebhookGenericWebService
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3WebhookServiceDirectoryConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGenericWebService()
-    {
-    }
-    /**
-     * Required. The name of [Service Directory](https://cloud.google.com/service-
-     * directory) service. Format: `projects//locations//namespaces//services/`.
-     * `Location ID` of the service directory must be the same as the location of
-     * the agent.
-     *
-     * @param string $service
-     */
-    public function setService($service)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getService()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3WebhookServiceDirectoryConfig extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3WebhookServiceDirectoryConfig
     {
     }
 }

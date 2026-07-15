@@ -21,254 +21,263 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class TargetGrpcProxy extends \Google\Model
-{
-    /**
-     * Output only. [Output Only] Creation timestamp inRFC3339 text format.
-     *
-     * @var string
-     */
-    public $creationTimestamp;
-    /**
-     * An optional description of this resource. Provide this property when you
-     * create the resource.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Fingerprint of this resource. A hash of the contents stored in this object.
-     * This field is used in optimistic locking. This field will be ignored when
-     * inserting a TargetGrpcProxy. An up-to-date fingerprint must be provided in
-     * order to patch/update the TargetGrpcProxy; otherwise, the request will fail
-     * with error 412 conditionNotMet. To see the latest fingerprint, make a get()
-     * request to retrieve the TargetGrpcProxy.
-     *
-     * @var string
-     */
-    public $fingerprint;
-    /**
-     * Output only. [Output Only] The unique identifier for the resource type. The
-     * server generates this identifier.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Output only. [Output Only] Type of the resource.
-     * Alwayscompute#targetGrpcProxy for target grpc proxies.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Name of the resource. Provided by the client when the resource is created.
-     * The name must be 1-63 characters long, and comply withRFC1035.
-     * Specifically, the name must be 1-63 characters long and match the regular
-     * expression `[a-z]([-a-z0-9]*[a-z0-9])?` which means the first character
-     * must be a lowercase letter, and all following characters must be a dash,
-     * lowercase letter, or digit, except the last character, which cannot be a
-     * dash.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. [Output Only] Server-defined URL for the resource.
-     *
-     * @var string
-     */
-    public $selfLink;
-    /**
-     * Output only. [Output Only] Server-defined URL with id for the resource.
-     *
-     * @var string
-     */
-    public $selfLinkWithId;
-    /**
-     * URL to the UrlMap resource that defines the mapping from URL to the
-     * BackendService. The protocol field in the BackendService must be set to
-     * GRPC.
-     *
-     * @var string
-     */
-    public $urlMap;
-    /**
-     * If true, indicates that the BackendServices referenced by the urlMap may be
-     * accessed by gRPC applications without using a sidecar proxy. This will
-     * enable configuration checks on urlMap and its referenced BackendServices to
-     * not allow unsupported features. A gRPC application must use "xds:" scheme
-     * in the target URI of the service it is connecting to. If false, indicates
-     * that the BackendServices referenced by the urlMap will be accessed by gRPC
-     * applications via a sidecar proxy. In this case, a gRPC application must not
-     * use "xds:" scheme in the target URI of the service it is connecting to
-     *
-     * @var bool
-     */
-    public $validateForProxyless;
-    /**
-     * Output only. [Output Only] Creation timestamp inRFC3339 text format.
-     *
-     * @param string $creationTimestamp
-     */
-    public function setCreationTimestamp($creationTimestamp)
+namespace Google\Service\Compute {
+    class TargetGrpcProxy extends \Google\Model
     {
+        /**
+         * Output only. [Output Only] Creation timestamp inRFC3339 text format.
+         *
+         * @var string
+         */
+        public $creationTimestamp;
+        /**
+         * An optional description of this resource. Provide this property when you
+         * create the resource.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Fingerprint of this resource. A hash of the contents stored in this object.
+         * This field is used in optimistic locking. This field will be ignored when
+         * inserting a TargetGrpcProxy. An up-to-date fingerprint must be provided in
+         * order to patch/update the TargetGrpcProxy; otherwise, the request will fail
+         * with error 412 conditionNotMet. To see the latest fingerprint, make a get()
+         * request to retrieve the TargetGrpcProxy.
+         *
+         * @var string
+         */
+        public $fingerprint;
+        /**
+         * Output only. [Output Only] The unique identifier for the resource type. The
+         * server generates this identifier.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Output only. [Output Only] Type of the resource.
+         * Alwayscompute#targetGrpcProxy for target grpc proxies.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Name of the resource. Provided by the client when the resource is created.
+         * The name must be 1-63 characters long, and comply withRFC1035.
+         * Specifically, the name must be 1-63 characters long and match the regular
+         * expression `[a-z]([-a-z0-9]*[a-z0-9])?` which means the first character
+         * must be a lowercase letter, and all following characters must be a dash,
+         * lowercase letter, or digit, except the last character, which cannot be a
+         * dash.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. [Output Only] Server-defined URL for the resource.
+         *
+         * @var string
+         */
+        public $selfLink;
+        /**
+         * Output only. [Output Only] Server-defined URL with id for the resource.
+         *
+         * @var string
+         */
+        public $selfLinkWithId;
+        /**
+         * URL to the UrlMap resource that defines the mapping from URL to the
+         * BackendService. The protocol field in the BackendService must be set to
+         * GRPC.
+         *
+         * @var string
+         */
+        public $urlMap;
+        /**
+         * If true, indicates that the BackendServices referenced by the urlMap may be
+         * accessed by gRPC applications without using a sidecar proxy. This will
+         * enable configuration checks on urlMap and its referenced BackendServices to
+         * not allow unsupported features. A gRPC application must use "xds:" scheme
+         * in the target URI of the service it is connecting to. If false, indicates
+         * that the BackendServices referenced by the urlMap will be accessed by gRPC
+         * applications via a sidecar proxy. In this case, a gRPC application must not
+         * use "xds:" scheme in the target URI of the service it is connecting to
+         *
+         * @var bool
+         */
+        public $validateForProxyless;
+        /**
+         * Output only. [Output Only] Creation timestamp inRFC3339 text format.
+         *
+         * @param string $creationTimestamp
+         */
+        public function setCreationTimestamp($creationTimestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreationTimestamp()
+        {
+        }
+        /**
+         * An optional description of this resource. Provide this property when you
+         * create the resource.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Fingerprint of this resource. A hash of the contents stored in this object.
+         * This field is used in optimistic locking. This field will be ignored when
+         * inserting a TargetGrpcProxy. An up-to-date fingerprint must be provided in
+         * order to patch/update the TargetGrpcProxy; otherwise, the request will fail
+         * with error 412 conditionNotMet. To see the latest fingerprint, make a get()
+         * request to retrieve the TargetGrpcProxy.
+         *
+         * @param string $fingerprint
+         */
+        public function setFingerprint($fingerprint)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFingerprint()
+        {
+        }
+        /**
+         * Output only. [Output Only] The unique identifier for the resource type. The
+         * server generates this identifier.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Output only. [Output Only] Type of the resource.
+         * Alwayscompute#targetGrpcProxy for target grpc proxies.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Name of the resource. Provided by the client when the resource is created.
+         * The name must be 1-63 characters long, and comply withRFC1035.
+         * Specifically, the name must be 1-63 characters long and match the regular
+         * expression `[a-z]([-a-z0-9]*[a-z0-9])?` which means the first character
+         * must be a lowercase letter, and all following characters must be a dash,
+         * lowercase letter, or digit, except the last character, which cannot be a
+         * dash.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. [Output Only] Server-defined URL for the resource.
+         *
+         * @param string $selfLink
+         */
+        public function setSelfLink($selfLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelfLink()
+        {
+        }
+        /**
+         * Output only. [Output Only] Server-defined URL with id for the resource.
+         *
+         * @param string $selfLinkWithId
+         */
+        public function setSelfLinkWithId($selfLinkWithId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelfLinkWithId()
+        {
+        }
+        /**
+         * URL to the UrlMap resource that defines the mapping from URL to the
+         * BackendService. The protocol field in the BackendService must be set to
+         * GRPC.
+         *
+         * @param string $urlMap
+         */
+        public function setUrlMap($urlMap)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrlMap()
+        {
+        }
+        /**
+         * If true, indicates that the BackendServices referenced by the urlMap may be
+         * accessed by gRPC applications without using a sidecar proxy. This will
+         * enable configuration checks on urlMap and its referenced BackendServices to
+         * not allow unsupported features. A gRPC application must use "xds:" scheme
+         * in the target URI of the service it is connecting to. If false, indicates
+         * that the BackendServices referenced by the urlMap will be accessed by gRPC
+         * applications via a sidecar proxy. In this case, a gRPC application must not
+         * use "xds:" scheme in the target URI of the service it is connecting to
+         *
+         * @param bool $validateForProxyless
+         */
+        public function setValidateForProxyless($validateForProxyless)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getValidateForProxyless()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\TargetGrpcProxy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreationTimestamp()
-    {
-    }
-    /**
-     * An optional description of this resource. Provide this property when you
-     * create the resource.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Fingerprint of this resource. A hash of the contents stored in this object.
-     * This field is used in optimistic locking. This field will be ignored when
-     * inserting a TargetGrpcProxy. An up-to-date fingerprint must be provided in
-     * order to patch/update the TargetGrpcProxy; otherwise, the request will fail
-     * with error 412 conditionNotMet. To see the latest fingerprint, make a get()
-     * request to retrieve the TargetGrpcProxy.
-     *
-     * @param string $fingerprint
-     */
-    public function setFingerprint($fingerprint)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFingerprint()
-    {
-    }
-    /**
-     * Output only. [Output Only] The unique identifier for the resource type. The
-     * server generates this identifier.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Output only. [Output Only] Type of the resource.
-     * Alwayscompute#targetGrpcProxy for target grpc proxies.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Name of the resource. Provided by the client when the resource is created.
-     * The name must be 1-63 characters long, and comply withRFC1035.
-     * Specifically, the name must be 1-63 characters long and match the regular
-     * expression `[a-z]([-a-z0-9]*[a-z0-9])?` which means the first character
-     * must be a lowercase letter, and all following characters must be a dash,
-     * lowercase letter, or digit, except the last character, which cannot be a
-     * dash.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. [Output Only] Server-defined URL for the resource.
-     *
-     * @param string $selfLink
-     */
-    public function setSelfLink($selfLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelfLink()
-    {
-    }
-    /**
-     * Output only. [Output Only] Server-defined URL with id for the resource.
-     *
-     * @param string $selfLinkWithId
-     */
-    public function setSelfLinkWithId($selfLinkWithId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelfLinkWithId()
-    {
-    }
-    /**
-     * URL to the UrlMap resource that defines the mapping from URL to the
-     * BackendService. The protocol field in the BackendService must be set to
-     * GRPC.
-     *
-     * @param string $urlMap
-     */
-    public function setUrlMap($urlMap)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrlMap()
-    {
-    }
-    /**
-     * If true, indicates that the BackendServices referenced by the urlMap may be
-     * accessed by gRPC applications without using a sidecar proxy. This will
-     * enable configuration checks on urlMap and its referenced BackendServices to
-     * not allow unsupported features. A gRPC application must use "xds:" scheme
-     * in the target URI of the service it is connecting to. If false, indicates
-     * that the BackendServices referenced by the urlMap will be accessed by gRPC
-     * applications via a sidecar proxy. In this case, a gRPC application must not
-     * use "xds:" scheme in the target URI of the service it is connecting to
-     *
-     * @param bool $validateForProxyless
-     */
-    public function setValidateForProxyless($validateForProxyless)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getValidateForProxyless()
+    class Google_Service_Compute_TargetGrpcProxy extends \Google\Service\Compute\TargetGrpcProxy
     {
     }
 }

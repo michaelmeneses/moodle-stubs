@@ -21,89 +21,98 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class ContentSourceMetaData extends \Google\Collection
-{
-    protected $collection_key = 'fieldNames';
-    /**
-     * Output only. The charset of the content source.
-     *
-     * @var string
-     */
-    public $charset;
-    /**
-     * Output only. The list of column names in the content source.
-     *
-     * @var string[]
-     */
-    public $fieldNames;
-    /**
-     * Output only. The number of rows in the content source.
-     *
-     * @var int
-     */
-    public $rowNumber;
-    /**
-     * Output only. The separator of the content source.
-     *
-     * @var string
-     */
-    public $separator;
-    /**
-     * Output only. The charset of the content source.
-     *
-     * @param string $charset
-     */
-    public function setCharset($charset)
+namespace Google\Service\Dfareporting {
+    class ContentSourceMetaData extends \Google\Collection
     {
+        protected $collection_key = 'fieldNames';
+        /**
+         * Output only. The charset of the content source.
+         *
+         * @var string
+         */
+        public $charset;
+        /**
+         * Output only. The list of column names in the content source.
+         *
+         * @var string[]
+         */
+        public $fieldNames;
+        /**
+         * Output only. The number of rows in the content source.
+         *
+         * @var int
+         */
+        public $rowNumber;
+        /**
+         * Output only. The separator of the content source.
+         *
+         * @var string
+         */
+        public $separator;
+        /**
+         * Output only. The charset of the content source.
+         *
+         * @param string $charset
+         */
+        public function setCharset($charset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCharset()
+        {
+        }
+        /**
+         * Output only. The list of column names in the content source.
+         *
+         * @param string[] $fieldNames
+         */
+        public function setFieldNames($fieldNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getFieldNames()
+        {
+        }
+        /**
+         * Output only. The number of rows in the content source.
+         *
+         * @param int $rowNumber
+         */
+        public function setRowNumber($rowNumber)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRowNumber()
+        {
+        }
+        /**
+         * Output only. The separator of the content source.
+         *
+         * @param string $separator
+         */
+        public function setSeparator($separator)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSeparator()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\ContentSourceMetaData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCharset()
-    {
-    }
-    /**
-     * Output only. The list of column names in the content source.
-     *
-     * @param string[] $fieldNames
-     */
-    public function setFieldNames($fieldNames)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getFieldNames()
-    {
-    }
-    /**
-     * Output only. The number of rows in the content source.
-     *
-     * @param int $rowNumber
-     */
-    public function setRowNumber($rowNumber)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getRowNumber()
-    {
-    }
-    /**
-     * Output only. The separator of the content source.
-     *
-     * @param string $separator
-     */
-    public function setSeparator($separator)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSeparator()
+    class Google_Service_Dfareporting_ContentSourceMetaData extends \Google\Service\Dfareporting\ContentSourceMetaData
     {
     }
 }

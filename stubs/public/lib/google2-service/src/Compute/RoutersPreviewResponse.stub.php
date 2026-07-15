@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class RoutersPreviewResponse extends \Google\Model
-{
-    protected $resourceType = Router::class;
-    protected $resourceDataType = '';
-    /**
-     * Preview of given router.
-     *
-     * @param Router $resource
-     */
-    public function setResource(Router $resource)
+namespace Google\Service\Compute {
+    class RoutersPreviewResponse extends \Google\Model
     {
+        protected $resourceType = Router::class;
+        protected $resourceDataType = '';
+        /**
+         * Preview of given router.
+         *
+         * @param Router $resource
+         */
+        public function setResource(Router $resource)
+        {
+        }
+        /**
+         * @return Router
+         */
+        public function getResource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Router
+     * Runtime class alias of \Google\Service\Compute\RoutersPreviewResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResource()
+    class Google_Service_Compute_RoutersPreviewResponse extends \Google\Service\Compute\RoutersPreviewResponse
     {
     }
 }

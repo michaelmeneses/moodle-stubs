@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OnDemandScanning;
-
-class RelatedUrl extends \Google\Model
-{
-    /**
-     * Label to describe usage of the URL.
-     *
-     * @var string
-     */
-    public $label;
-    /**
-     * Specific URL associated with the resource.
-     *
-     * @var string
-     */
-    public $url;
-    /**
-     * Label to describe usage of the URL.
-     *
-     * @param string $label
-     */
-    public function setLabel($label)
+namespace Google\Service\OnDemandScanning {
+    class RelatedUrl extends \Google\Model
     {
+        /**
+         * Label to describe usage of the URL.
+         *
+         * @var string
+         */
+        public $label;
+        /**
+         * Specific URL associated with the resource.
+         *
+         * @var string
+         */
+        public $url;
+        /**
+         * Label to describe usage of the URL.
+         *
+         * @param string $label
+         */
+        public function setLabel($label)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLabel()
+        {
+        }
+        /**
+         * Specific URL associated with the resource.
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OnDemandScanning\RelatedUrl registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLabel()
-    {
-    }
-    /**
-     * Specific URL associated with the resource.
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
+    class Google_Service_OnDemandScanning_RelatedUrl extends \Google\Service\OnDemandScanning\RelatedUrl
     {
     }
 }

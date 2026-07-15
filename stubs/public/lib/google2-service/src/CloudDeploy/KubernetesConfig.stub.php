@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class KubernetesConfig extends \Google\Model
-{
-    protected $gatewayServiceMeshType = GatewayServiceMesh::class;
-    protected $gatewayServiceMeshDataType = '';
-    protected $serviceNetworkingType = ServiceNetworking::class;
-    protected $serviceNetworkingDataType = '';
-    /**
-     * Optional. Kubernetes Gateway API service mesh configuration.
-     *
-     * @param GatewayServiceMesh $gatewayServiceMesh
-     */
-    public function setGatewayServiceMesh(GatewayServiceMesh $gatewayServiceMesh)
+namespace Google\Service\CloudDeploy {
+    class KubernetesConfig extends \Google\Model
     {
+        protected $gatewayServiceMeshType = GatewayServiceMesh::class;
+        protected $gatewayServiceMeshDataType = '';
+        protected $serviceNetworkingType = ServiceNetworking::class;
+        protected $serviceNetworkingDataType = '';
+        /**
+         * Optional. Kubernetes Gateway API service mesh configuration.
+         *
+         * @param GatewayServiceMesh $gatewayServiceMesh
+         */
+        public function setGatewayServiceMesh(GatewayServiceMesh $gatewayServiceMesh)
+        {
+        }
+        /**
+         * @return GatewayServiceMesh
+         */
+        public function getGatewayServiceMesh()
+        {
+        }
+        /**
+         * Optional. Kubernetes Service networking configuration.
+         *
+         * @param ServiceNetworking $serviceNetworking
+         */
+        public function setServiceNetworking(ServiceNetworking $serviceNetworking)
+        {
+        }
+        /**
+         * @return ServiceNetworking
+         */
+        public function getServiceNetworking()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GatewayServiceMesh
+     * Runtime class alias of \Google\Service\CloudDeploy\KubernetesConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGatewayServiceMesh()
-    {
-    }
-    /**
-     * Optional. Kubernetes Service networking configuration.
-     *
-     * @param ServiceNetworking $serviceNetworking
-     */
-    public function setServiceNetworking(ServiceNetworking $serviceNetworking)
-    {
-    }
-    /**
-     * @return ServiceNetworking
-     */
-    public function getServiceNetworking()
+    class Google_Service_CloudDeploy_KubernetesConfig extends \Google\Service\CloudDeploy\KubernetesConfig
     {
     }
 }

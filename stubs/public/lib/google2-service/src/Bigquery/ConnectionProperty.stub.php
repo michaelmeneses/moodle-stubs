@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class ConnectionProperty extends \Google\Model
-{
-    /**
-     * The key of the property to set.
-     *
-     * @var string
-     */
-    public $key;
-    /**
-     * The value of the property to set.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * The key of the property to set.
-     *
-     * @param string $key
-     */
-    public function setKey($key)
+namespace Google\Service\Bigquery {
+    class ConnectionProperty extends \Google\Model
     {
+        /**
+         * The key of the property to set.
+         *
+         * @var string
+         */
+        public $key;
+        /**
+         * The value of the property to set.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * The key of the property to set.
+         *
+         * @param string $key
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * The value of the property to set.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Bigquery\ConnectionProperty registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKey()
-    {
-    }
-    /**
-     * The value of the property to set.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_Bigquery_ConnectionProperty extends \Google\Service\Bigquery\ConnectionProperty
     {
     }
 }

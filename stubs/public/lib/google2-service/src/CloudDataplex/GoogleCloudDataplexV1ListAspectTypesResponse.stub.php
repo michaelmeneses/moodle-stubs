@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1ListAspectTypesResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachableLocations';
-    protected $aspectTypesType = GoogleCloudDataplexV1AspectType::class;
-    protected $aspectTypesDataType = 'array';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Locations that the service couldn't reach.
-     *
-     * @var string[]
-     */
-    public $unreachableLocations;
-    /**
-     * AspectTypes under the given parent location.
-     *
-     * @param GoogleCloudDataplexV1AspectType[] $aspectTypes
-     */
-    public function setAspectTypes($aspectTypes)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1ListAspectTypesResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachableLocations';
+        protected $aspectTypesType = GoogleCloudDataplexV1AspectType::class;
+        protected $aspectTypesDataType = 'array';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Locations that the service couldn't reach.
+         *
+         * @var string[]
+         */
+        public $unreachableLocations;
+        /**
+         * AspectTypes under the given parent location.
+         *
+         * @param GoogleCloudDataplexV1AspectType[] $aspectTypes
+         */
+        public function setAspectTypes($aspectTypes)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1AspectType[]
+         */
+        public function getAspectTypes()
+        {
+        }
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Locations that the service couldn't reach.
+         *
+         * @param string[] $unreachableLocations
+         */
+        public function setUnreachableLocations($unreachableLocations)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachableLocations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDataplexV1AspectType[]
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1ListAspectTypesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAspectTypes()
-    {
-    }
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Locations that the service couldn't reach.
-     *
-     * @param string[] $unreachableLocations
-     */
-    public function setUnreachableLocations($unreachableLocations)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachableLocations()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1ListAspectTypesResponse extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1ListAspectTypesResponse
     {
     }
 }

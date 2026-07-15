@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class GoogleFirestoreAdminV1Progress extends \Google\Model
-{
-    /**
-     * The amount of work completed.
-     *
-     * @var string
-     */
-    public $completedWork;
-    /**
-     * The amount of work estimated.
-     *
-     * @var string
-     */
-    public $estimatedWork;
-    /**
-     * The amount of work completed.
-     *
-     * @param string $completedWork
-     */
-    public function setCompletedWork($completedWork)
+namespace Google\Service\Firestore {
+    class GoogleFirestoreAdminV1Progress extends \Google\Model
     {
+        /**
+         * The amount of work completed.
+         *
+         * @var string
+         */
+        public $completedWork;
+        /**
+         * The amount of work estimated.
+         *
+         * @var string
+         */
+        public $estimatedWork;
+        /**
+         * The amount of work completed.
+         *
+         * @param string $completedWork
+         */
+        public function setCompletedWork($completedWork)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCompletedWork()
+        {
+        }
+        /**
+         * The amount of work estimated.
+         *
+         * @param string $estimatedWork
+         */
+        public function setEstimatedWork($estimatedWork)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEstimatedWork()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Firestore\GoogleFirestoreAdminV1Progress registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCompletedWork()
-    {
-    }
-    /**
-     * The amount of work estimated.
-     *
-     * @param string $estimatedWork
-     */
-    public function setEstimatedWork($estimatedWork)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEstimatedWork()
+    class Google_Service_Firestore_GoogleFirestoreAdminV1Progress extends \Google\Service\Firestore\GoogleFirestoreAdminV1Progress
     {
     }
 }

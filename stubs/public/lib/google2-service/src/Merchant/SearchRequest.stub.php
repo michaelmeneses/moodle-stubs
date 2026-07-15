@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Merchant;
-
-class SearchRequest extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $pageSize;
-    /**
-     * @var string
-     */
-    public $pageToken;
-    /**
-     * @var string
-     */
-    public $query;
-    /**
-     * @param int
-     */
-    public function setPageSize($pageSize)
+namespace Google\Service\Merchant {
+    class SearchRequest extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $pageSize;
+        /**
+         * @var string
+         */
+        public $pageToken;
+        /**
+         * @var string
+         */
+        public $query;
+        /**
+         * @param int
+         */
+        public function setPageSize($pageSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPageSize()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPageToken($pageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPageToken()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setQuery($query)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQuery()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Merchant\SearchRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPageSize()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPageToken($pageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPageToken()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setQuery($query)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQuery()
+    class Google_Service_Merchant_SearchRequest extends \Google\Service\Merchant\SearchRequest
     {
     }
 }

@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ApiKeysService;
-
-class V2IosKeyRestrictions extends \Google\Collection
-{
-    protected $collection_key = 'allowedBundleIds';
-    /**
-     * A list of bundle IDs that are allowed when making API calls with this key.
-     *
-     * @var string[]
-     */
-    public $allowedBundleIds;
-    /**
-     * A list of bundle IDs that are allowed when making API calls with this key.
-     *
-     * @param string[] $allowedBundleIds
-     */
-    public function setAllowedBundleIds($allowedBundleIds)
+namespace Google\Service\ApiKeysService {
+    class V2IosKeyRestrictions extends \Google\Collection
     {
+        protected $collection_key = 'allowedBundleIds';
+        /**
+         * A list of bundle IDs that are allowed when making API calls with this key.
+         *
+         * @var string[]
+         */
+        public $allowedBundleIds;
+        /**
+         * A list of bundle IDs that are allowed when making API calls with this key.
+         *
+         * @param string[] $allowedBundleIds
+         */
+        public function setAllowedBundleIds($allowedBundleIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAllowedBundleIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\ApiKeysService\V2IosKeyRestrictions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowedBundleIds()
+    class Google_Service_ApiKeysService_V2IosKeyRestrictions extends \Google\Service\ApiKeysService\V2IosKeyRestrictions
     {
     }
 }

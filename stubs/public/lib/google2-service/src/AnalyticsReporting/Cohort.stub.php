@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsReporting;
-
-class Cohort extends \Google\Model
-{
-    protected $dateRangeType = DateRange::class;
-    protected $dateRangeDataType = '';
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @param DateRange
-     */
-    public function setDateRange(DateRange $dateRange)
+namespace Google\Service\AnalyticsReporting {
+    class Cohort extends \Google\Model
     {
+        protected $dateRangeType = DateRange::class;
+        protected $dateRangeDataType = '';
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @param DateRange
+         */
+        public function setDateRange(DateRange $dateRange)
+        {
+        }
+        /**
+         * @return DateRange
+         */
+        public function getDateRange()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DateRange
+     * Runtime class alias of \Google\Service\AnalyticsReporting\Cohort registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDateRange()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_AnalyticsReporting_Cohort extends \Google\Service\AnalyticsReporting\Cohort
     {
     }
 }

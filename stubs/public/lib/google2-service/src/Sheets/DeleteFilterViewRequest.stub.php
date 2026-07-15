@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class DeleteFilterViewRequest extends \Google\Model
-{
-    /**
-     * The ID of the filter to delete.
-     *
-     * @var int
-     */
-    public $filterId;
-    /**
-     * The ID of the filter to delete.
-     *
-     * @param int $filterId
-     */
-    public function setFilterId($filterId)
+namespace Google\Service\Sheets {
+    class DeleteFilterViewRequest extends \Google\Model
     {
+        /**
+         * The ID of the filter to delete.
+         *
+         * @var int
+         */
+        public $filterId;
+        /**
+         * The ID of the filter to delete.
+         *
+         * @param int $filterId
+         */
+        public function setFilterId($filterId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getFilterId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Sheets\DeleteFilterViewRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFilterId()
+    class Google_Service_Sheets_DeleteFilterViewRequest extends \Google\Service\Sheets\DeleteFilterViewRequest
     {
     }
 }

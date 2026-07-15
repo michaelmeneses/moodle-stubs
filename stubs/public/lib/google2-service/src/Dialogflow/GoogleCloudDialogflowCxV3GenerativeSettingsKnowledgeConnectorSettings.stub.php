@@ -21,138 +21,147 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3GenerativeSettingsKnowledgeConnectorSettings extends \Google\Model
-{
-    /**
-     * Name of the virtual agent. Used for LLM prompt. Can be left empty.
-     *
-     * @var string
-     */
-    public $agent;
-    /**
-     * Identity of the agent, e.g. "virtual agent", "AI assistant".
-     *
-     * @var string
-     */
-    public $agentIdentity;
-    /**
-     * Agent scope, e.g. "Example company website", "internal Example company
-     * website for employees", "manual of car owner".
-     *
-     * @var string
-     */
-    public $agentScope;
-    /**
-     * Name of the company, organization or other entity that the agent
-     * represents. Used for knowledge connector LLM prompt and for knowledge
-     * search.
-     *
-     * @var string
-     */
-    public $business;
-    /**
-     * Company description, used for LLM prompt, e.g. "a family company selling
-     * freshly roasted coffee beans".
-     *
-     * @var string
-     */
-    public $businessDescription;
-    /**
-     * Whether to disable fallback to Data Store search results (in case the LLM
-     * couldn't pick a proper answer). Per default the feature is enabled.
-     *
-     * @var bool
-     */
-    public $disableDataStoreFallback;
-    /**
-     * Name of the virtual agent. Used for LLM prompt. Can be left empty.
-     *
-     * @param string $agent
-     */
-    public function setAgent($agent)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3GenerativeSettingsKnowledgeConnectorSettings extends \Google\Model
     {
+        /**
+         * Name of the virtual agent. Used for LLM prompt. Can be left empty.
+         *
+         * @var string
+         */
+        public $agent;
+        /**
+         * Identity of the agent, e.g. "virtual agent", "AI assistant".
+         *
+         * @var string
+         */
+        public $agentIdentity;
+        /**
+         * Agent scope, e.g. "Example company website", "internal Example company
+         * website for employees", "manual of car owner".
+         *
+         * @var string
+         */
+        public $agentScope;
+        /**
+         * Name of the company, organization or other entity that the agent
+         * represents. Used for knowledge connector LLM prompt and for knowledge
+         * search.
+         *
+         * @var string
+         */
+        public $business;
+        /**
+         * Company description, used for LLM prompt, e.g. "a family company selling
+         * freshly roasted coffee beans".
+         *
+         * @var string
+         */
+        public $businessDescription;
+        /**
+         * Whether to disable fallback to Data Store search results (in case the LLM
+         * couldn't pick a proper answer). Per default the feature is enabled.
+         *
+         * @var bool
+         */
+        public $disableDataStoreFallback;
+        /**
+         * Name of the virtual agent. Used for LLM prompt. Can be left empty.
+         *
+         * @param string $agent
+         */
+        public function setAgent($agent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAgent()
+        {
+        }
+        /**
+         * Identity of the agent, e.g. "virtual agent", "AI assistant".
+         *
+         * @param string $agentIdentity
+         */
+        public function setAgentIdentity($agentIdentity)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAgentIdentity()
+        {
+        }
+        /**
+         * Agent scope, e.g. "Example company website", "internal Example company
+         * website for employees", "manual of car owner".
+         *
+         * @param string $agentScope
+         */
+        public function setAgentScope($agentScope)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAgentScope()
+        {
+        }
+        /**
+         * Name of the company, organization or other entity that the agent
+         * represents. Used for knowledge connector LLM prompt and for knowledge
+         * search.
+         *
+         * @param string $business
+         */
+        public function setBusiness($business)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBusiness()
+        {
+        }
+        /**
+         * Company description, used for LLM prompt, e.g. "a family company selling
+         * freshly roasted coffee beans".
+         *
+         * @param string $businessDescription
+         */
+        public function setBusinessDescription($businessDescription)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBusinessDescription()
+        {
+        }
+        /**
+         * Whether to disable fallback to Data Store search results (in case the LLM
+         * couldn't pick a proper answer). Per default the feature is enabled.
+         *
+         * @param bool $disableDataStoreFallback
+         */
+        public function setDisableDataStoreFallback($disableDataStoreFallback)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisableDataStoreFallback()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3GenerativeSettingsKnowledgeConnectorSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAgent()
-    {
-    }
-    /**
-     * Identity of the agent, e.g. "virtual agent", "AI assistant".
-     *
-     * @param string $agentIdentity
-     */
-    public function setAgentIdentity($agentIdentity)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAgentIdentity()
-    {
-    }
-    /**
-     * Agent scope, e.g. "Example company website", "internal Example company
-     * website for employees", "manual of car owner".
-     *
-     * @param string $agentScope
-     */
-    public function setAgentScope($agentScope)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAgentScope()
-    {
-    }
-    /**
-     * Name of the company, organization or other entity that the agent
-     * represents. Used for knowledge connector LLM prompt and for knowledge
-     * search.
-     *
-     * @param string $business
-     */
-    public function setBusiness($business)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBusiness()
-    {
-    }
-    /**
-     * Company description, used for LLM prompt, e.g. "a family company selling
-     * freshly roasted coffee beans".
-     *
-     * @param string $businessDescription
-     */
-    public function setBusinessDescription($businessDescription)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBusinessDescription()
-    {
-    }
-    /**
-     * Whether to disable fallback to Data Store search results (in case the LLM
-     * couldn't pick a proper answer). Per default the feature is enabled.
-     *
-     * @param bool $disableDataStoreFallback
-     */
-    public function setDisableDataStoreFallback($disableDataStoreFallback)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDisableDataStoreFallback()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3GenerativeSettingsKnowledgeConnectorSettings extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3GenerativeSettingsKnowledgeConnectorSettings
     {
     }
 }

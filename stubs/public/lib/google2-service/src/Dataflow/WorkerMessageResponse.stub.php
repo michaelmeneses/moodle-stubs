@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class WorkerMessageResponse extends \Google\Model
-{
-    protected $streamingScalingReportResponseType = StreamingScalingReportResponse::class;
-    protected $streamingScalingReportResponseDataType = '';
-    protected $workerHealthReportResponseType = WorkerHealthReportResponse::class;
-    protected $workerHealthReportResponseDataType = '';
-    protected $workerMetricsResponseType = ResourceUtilizationReportResponse::class;
-    protected $workerMetricsResponseDataType = '';
-    protected $workerShutdownNoticeResponseType = WorkerShutdownNoticeResponse::class;
-    protected $workerShutdownNoticeResponseDataType = '';
-    protected $workerThreadScalingReportResponseType = WorkerThreadScalingReportResponse::class;
-    protected $workerThreadScalingReportResponseDataType = '';
-    /**
-     * Service's streaming scaling response for workers.
-     *
-     * @param StreamingScalingReportResponse $streamingScalingReportResponse
-     */
-    public function setStreamingScalingReportResponse(StreamingScalingReportResponse $streamingScalingReportResponse)
+namespace Google\Service\Dataflow {
+    class WorkerMessageResponse extends \Google\Model
     {
+        protected $streamingScalingReportResponseType = StreamingScalingReportResponse::class;
+        protected $streamingScalingReportResponseDataType = '';
+        protected $workerHealthReportResponseType = WorkerHealthReportResponse::class;
+        protected $workerHealthReportResponseDataType = '';
+        protected $workerMetricsResponseType = ResourceUtilizationReportResponse::class;
+        protected $workerMetricsResponseDataType = '';
+        protected $workerShutdownNoticeResponseType = WorkerShutdownNoticeResponse::class;
+        protected $workerShutdownNoticeResponseDataType = '';
+        protected $workerThreadScalingReportResponseType = WorkerThreadScalingReportResponse::class;
+        protected $workerThreadScalingReportResponseDataType = '';
+        /**
+         * Service's streaming scaling response for workers.
+         *
+         * @param StreamingScalingReportResponse $streamingScalingReportResponse
+         */
+        public function setStreamingScalingReportResponse(StreamingScalingReportResponse $streamingScalingReportResponse)
+        {
+        }
+        /**
+         * @return StreamingScalingReportResponse
+         */
+        public function getStreamingScalingReportResponse()
+        {
+        }
+        /**
+         * The service's response to a worker's health report.
+         *
+         * @param WorkerHealthReportResponse $workerHealthReportResponse
+         */
+        public function setWorkerHealthReportResponse(WorkerHealthReportResponse $workerHealthReportResponse)
+        {
+        }
+        /**
+         * @return WorkerHealthReportResponse
+         */
+        public function getWorkerHealthReportResponse()
+        {
+        }
+        /**
+         * Service's response to reporting worker metrics (currently empty).
+         *
+         * @param ResourceUtilizationReportResponse $workerMetricsResponse
+         */
+        public function setWorkerMetricsResponse(ResourceUtilizationReportResponse $workerMetricsResponse)
+        {
+        }
+        /**
+         * @return ResourceUtilizationReportResponse
+         */
+        public function getWorkerMetricsResponse()
+        {
+        }
+        /**
+         * Service's response to shutdown notice (currently empty).
+         *
+         * @param WorkerShutdownNoticeResponse $workerShutdownNoticeResponse
+         */
+        public function setWorkerShutdownNoticeResponse(WorkerShutdownNoticeResponse $workerShutdownNoticeResponse)
+        {
+        }
+        /**
+         * @return WorkerShutdownNoticeResponse
+         */
+        public function getWorkerShutdownNoticeResponse()
+        {
+        }
+        /**
+         * Service's thread scaling recommendation for workers.
+         *
+         * @param WorkerThreadScalingReportResponse $workerThreadScalingReportResponse
+         */
+        public function setWorkerThreadScalingReportResponse(WorkerThreadScalingReportResponse $workerThreadScalingReportResponse)
+        {
+        }
+        /**
+         * @return WorkerThreadScalingReportResponse
+         */
+        public function getWorkerThreadScalingReportResponse()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return StreamingScalingReportResponse
+     * Runtime class alias of \Google\Service\Dataflow\WorkerMessageResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStreamingScalingReportResponse()
-    {
-    }
-    /**
-     * The service's response to a worker's health report.
-     *
-     * @param WorkerHealthReportResponse $workerHealthReportResponse
-     */
-    public function setWorkerHealthReportResponse(WorkerHealthReportResponse $workerHealthReportResponse)
-    {
-    }
-    /**
-     * @return WorkerHealthReportResponse
-     */
-    public function getWorkerHealthReportResponse()
-    {
-    }
-    /**
-     * Service's response to reporting worker metrics (currently empty).
-     *
-     * @param ResourceUtilizationReportResponse $workerMetricsResponse
-     */
-    public function setWorkerMetricsResponse(ResourceUtilizationReportResponse $workerMetricsResponse)
-    {
-    }
-    /**
-     * @return ResourceUtilizationReportResponse
-     */
-    public function getWorkerMetricsResponse()
-    {
-    }
-    /**
-     * Service's response to shutdown notice (currently empty).
-     *
-     * @param WorkerShutdownNoticeResponse $workerShutdownNoticeResponse
-     */
-    public function setWorkerShutdownNoticeResponse(WorkerShutdownNoticeResponse $workerShutdownNoticeResponse)
-    {
-    }
-    /**
-     * @return WorkerShutdownNoticeResponse
-     */
-    public function getWorkerShutdownNoticeResponse()
-    {
-    }
-    /**
-     * Service's thread scaling recommendation for workers.
-     *
-     * @param WorkerThreadScalingReportResponse $workerThreadScalingReportResponse
-     */
-    public function setWorkerThreadScalingReportResponse(WorkerThreadScalingReportResponse $workerThreadScalingReportResponse)
-    {
-    }
-    /**
-     * @return WorkerThreadScalingReportResponse
-     */
-    public function getWorkerThreadScalingReportResponse()
+    class Google_Service_Dataflow_WorkerMessageResponse extends \Google\Service\Dataflow\WorkerMessageResponse
     {
     }
 }

@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecommendationsAI;
-
-class GoogleCloudRecommendationengineV1beta1ListCatalogItemsResponse extends \Google\Collection
-{
-    protected $collection_key = 'catalogItems';
-    protected $catalogItemsType = GoogleCloudRecommendationengineV1beta1CatalogItem::class;
-    protected $catalogItemsDataType = 'array';
-    /**
-     * If empty, the list is complete. If nonempty, the token to pass to the next
-     * request's ListCatalogItemRequest.page_token.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The catalog items.
-     *
-     * @param GoogleCloudRecommendationengineV1beta1CatalogItem[] $catalogItems
-     */
-    public function setCatalogItems($catalogItems)
+namespace Google\Service\RecommendationsAI {
+    class GoogleCloudRecommendationengineV1beta1ListCatalogItemsResponse extends \Google\Collection
     {
+        protected $collection_key = 'catalogItems';
+        protected $catalogItemsType = GoogleCloudRecommendationengineV1beta1CatalogItem::class;
+        protected $catalogItemsDataType = 'array';
+        /**
+         * If empty, the list is complete. If nonempty, the token to pass to the next
+         * request's ListCatalogItemRequest.page_token.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The catalog items.
+         *
+         * @param GoogleCloudRecommendationengineV1beta1CatalogItem[] $catalogItems
+         */
+        public function setCatalogItems($catalogItems)
+        {
+        }
+        /**
+         * @return GoogleCloudRecommendationengineV1beta1CatalogItem[]
+         */
+        public function getCatalogItems()
+        {
+        }
+        /**
+         * If empty, the list is complete. If nonempty, the token to pass to the next
+         * request's ListCatalogItemRequest.page_token.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRecommendationengineV1beta1CatalogItem[]
+     * Runtime class alias of \Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1ListCatalogItemsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCatalogItems()
-    {
-    }
-    /**
-     * If empty, the list is complete. If nonempty, the token to pass to the next
-     * request's ListCatalogItemRequest.page_token.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_RecommendationsAI_GoogleCloudRecommendationengineV1beta1ListCatalogItemsResponse extends \Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1ListCatalogItemsResponse
     {
     }
 }

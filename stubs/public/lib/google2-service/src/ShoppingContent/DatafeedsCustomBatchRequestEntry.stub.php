@@ -21,106 +21,115 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class DatafeedsCustomBatchRequestEntry extends \Google\Model
-{
-    /**
-     * An entry ID, unique within the batch request.
-     *
-     * @var string
-     */
-    public $batchId;
-    protected $datafeedType = Datafeed::class;
-    protected $datafeedDataType = '';
-    /**
-     * The ID of the data feed to get, delete or fetch.
-     *
-     * @var string
-     */
-    public $datafeedId;
-    /**
-     * The ID of the managing account.
-     *
-     * @var string
-     */
-    public $merchantId;
-    /**
-     * The method of the batch entry. Acceptable values are: - "`delete`" -
-     * "`fetchNow`" - "`get`" - "`insert`" - "`update`"
-     *
-     * @var string
-     */
-    public $method;
-    /**
-     * An entry ID, unique within the batch request.
-     *
-     * @param string $batchId
-     */
-    public function setBatchId($batchId)
+namespace Google\Service\ShoppingContent {
+    class DatafeedsCustomBatchRequestEntry extends \Google\Model
     {
+        /**
+         * An entry ID, unique within the batch request.
+         *
+         * @var string
+         */
+        public $batchId;
+        protected $datafeedType = Datafeed::class;
+        protected $datafeedDataType = '';
+        /**
+         * The ID of the data feed to get, delete or fetch.
+         *
+         * @var string
+         */
+        public $datafeedId;
+        /**
+         * The ID of the managing account.
+         *
+         * @var string
+         */
+        public $merchantId;
+        /**
+         * The method of the batch entry. Acceptable values are: - "`delete`" -
+         * "`fetchNow`" - "`get`" - "`insert`" - "`update`"
+         *
+         * @var string
+         */
+        public $method;
+        /**
+         * An entry ID, unique within the batch request.
+         *
+         * @param string $batchId
+         */
+        public function setBatchId($batchId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBatchId()
+        {
+        }
+        /**
+         * The data feed to insert.
+         *
+         * @param Datafeed $datafeed
+         */
+        public function setDatafeed(Datafeed $datafeed)
+        {
+        }
+        /**
+         * @return Datafeed
+         */
+        public function getDatafeed()
+        {
+        }
+        /**
+         * The ID of the data feed to get, delete or fetch.
+         *
+         * @param string $datafeedId
+         */
+        public function setDatafeedId($datafeedId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatafeedId()
+        {
+        }
+        /**
+         * The ID of the managing account.
+         *
+         * @param string $merchantId
+         */
+        public function setMerchantId($merchantId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMerchantId()
+        {
+        }
+        /**
+         * The method of the batch entry. Acceptable values are: - "`delete`" -
+         * "`fetchNow`" - "`get`" - "`insert`" - "`update`"
+         *
+         * @param string $method
+         */
+        public function setMethod($method)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMethod()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\DatafeedsCustomBatchRequestEntry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBatchId()
-    {
-    }
-    /**
-     * The data feed to insert.
-     *
-     * @param Datafeed $datafeed
-     */
-    public function setDatafeed(Datafeed $datafeed)
-    {
-    }
-    /**
-     * @return Datafeed
-     */
-    public function getDatafeed()
-    {
-    }
-    /**
-     * The ID of the data feed to get, delete or fetch.
-     *
-     * @param string $datafeedId
-     */
-    public function setDatafeedId($datafeedId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDatafeedId()
-    {
-    }
-    /**
-     * The ID of the managing account.
-     *
-     * @param string $merchantId
-     */
-    public function setMerchantId($merchantId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMerchantId()
-    {
-    }
-    /**
-     * The method of the batch entry. Acceptable values are: - "`delete`" -
-     * "`fetchNow`" - "`get`" - "`insert`" - "`update`"
-     *
-     * @param string $method
-     */
-    public function setMethod($method)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMethod()
+    class Google_Service_ShoppingContent_DatafeedsCustomBatchRequestEntry extends \Google\Service\ShoppingContent\DatafeedsCustomBatchRequestEntry
     {
     }
 }

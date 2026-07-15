@@ -21,41 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMwareEngine\Resource;
-
-/**
- * The "peeringRoutes" collection of methods.
- * Typical usage is:
- *  <code>
- *   $vmwareengineService = new Google\Service\VMwareEngine(...);
- *   $peeringRoutes = $vmwareengineService->projects_locations_privateConnections_peeringRoutes;
- *  </code>
- */
-class ProjectsLocationsPrivateConnectionsPeeringRoutes extends \Google\Service\Resource
-{
+namespace Google\Service\VMwareEngine\Resource {
+    use Google\Service\VMwareEngine\ListPrivateConnectionPeeringRoutesResponse;
     /**
-     * Lists the private connection routes exchanged over a peering connection.
-     * (peeringRoutes.listProjectsLocationsPrivateConnectionsPeeringRoutes)
-     *
-     * @param string $parent Required. The resource name of the private connection
-     * to retrieve peering routes from. Resource names are schemeless URIs that
-     * follow the conventions in
-     * https://cloud.google.com/apis/design/resource_names. For example:
-     * `projects/my-project/locations/us-west1/privateConnections/my-connection`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The maximum number of peering routes to return in one
-     * page. The service may return fewer than this value. The maximum value is
-     * coerced to 1000. The default value of this field is 500.
-     * @opt_param string pageToken A page token, received from a previous
-     * `ListPrivateConnectionPeeringRoutes` call. Provide this to retrieve the
-     * subsequent page. When paginating, all other parameters provided to
-     * `ListPrivateConnectionPeeringRoutes` must match the call that provided the
-     * page token.
-     * @return ListPrivateConnectionPeeringRoutesResponse
-     * @throws \Google\Service\Exception
+     * The "peeringRoutes" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $vmwareengineService = new Google\Service\VMwareEngine(...);
+     *   $peeringRoutes = $vmwareengineService->projects_locations_privateConnections_peeringRoutes;
+     *  </code>
      */
-    public function listProjectsLocationsPrivateConnectionsPeeringRoutes($parent, $optParams = [])
+    class ProjectsLocationsPrivateConnectionsPeeringRoutes extends \Google\Service\Resource
+    {
+        /**
+         * Lists the private connection routes exchanged over a peering connection.
+         * (peeringRoutes.listProjectsLocationsPrivateConnectionsPeeringRoutes)
+         *
+         * @param string $parent Required. The resource name of the private connection
+         * to retrieve peering routes from. Resource names are schemeless URIs that
+         * follow the conventions in
+         * https://cloud.google.com/apis/design/resource_names. For example:
+         * `projects/my-project/locations/us-west1/privateConnections/my-connection`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The maximum number of peering routes to return in one
+         * page. The service may return fewer than this value. The maximum value is
+         * coerced to 1000. The default value of this field is 500.
+         * @opt_param string pageToken A page token, received from a previous
+         * `ListPrivateConnectionPeeringRoutes` call. Provide this to retrieve the
+         * subsequent page. When paginating, all other parameters provided to
+         * `ListPrivateConnectionPeeringRoutes` must match the call that provided the
+         * page token.
+         * @return ListPrivateConnectionPeeringRoutesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsPrivateConnectionsPeeringRoutes($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\VMwareEngine\Resource\ProjectsLocationsPrivateConnectionsPeeringRoutes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_VMwareEngine_Resource_ProjectsLocationsPrivateConnectionsPeeringRoutes extends \Google\Service\VMwareEngine\Resource\ProjectsLocationsPrivateConnectionsPeeringRoutes
     {
     }
 }

@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1RunTaskRequest extends \Google\Model
-{
-    /**
-     * Optional. Execution spec arguments. If the map is left empty, the task will
-     * run with existing execution spec args from task definition. If the map
-     * contains an entry with a new key, the same will be added to existing set of
-     * args. If the map contains an entry with an existing arg key in task
-     * definition, the task will run with new arg value for that entry. Clearing
-     * an existing arg will require arg value to be explicitly set to a hyphen
-     * "-". The arg value cannot be empty.
-     *
-     * @var string[]
-     */
-    public $args;
-    /**
-     * Optional. User-defined labels for the task. If the map is left empty, the
-     * task will run with existing labels from task definition. If the map
-     * contains an entry with a new key, the same will be added to existing set of
-     * labels. If the map contains an entry with an existing label key in task
-     * definition, the task will run with new label value for that entry. Clearing
-     * an existing label will require label value to be explicitly set to a hyphen
-     * "-". The label value cannot be empty.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Optional. Execution spec arguments. If the map is left empty, the task will
-     * run with existing execution spec args from task definition. If the map
-     * contains an entry with a new key, the same will be added to existing set of
-     * args. If the map contains an entry with an existing arg key in task
-     * definition, the task will run with new arg value for that entry. Clearing
-     * an existing arg will require arg value to be explicitly set to a hyphen
-     * "-". The arg value cannot be empty.
-     *
-     * @param string[] $args
-     */
-    public function setArgs($args)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1RunTaskRequest extends \Google\Model
     {
+        /**
+         * Optional. Execution spec arguments. If the map is left empty, the task will
+         * run with existing execution spec args from task definition. If the map
+         * contains an entry with a new key, the same will be added to existing set of
+         * args. If the map contains an entry with an existing arg key in task
+         * definition, the task will run with new arg value for that entry. Clearing
+         * an existing arg will require arg value to be explicitly set to a hyphen
+         * "-". The arg value cannot be empty.
+         *
+         * @var string[]
+         */
+        public $args;
+        /**
+         * Optional. User-defined labels for the task. If the map is left empty, the
+         * task will run with existing labels from task definition. If the map
+         * contains an entry with a new key, the same will be added to existing set of
+         * labels. If the map contains an entry with an existing label key in task
+         * definition, the task will run with new label value for that entry. Clearing
+         * an existing label will require label value to be explicitly set to a hyphen
+         * "-". The label value cannot be empty.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Optional. Execution spec arguments. If the map is left empty, the task will
+         * run with existing execution spec args from task definition. If the map
+         * contains an entry with a new key, the same will be added to existing set of
+         * args. If the map contains an entry with an existing arg key in task
+         * definition, the task will run with new arg value for that entry. Clearing
+         * an existing arg will require arg value to be explicitly set to a hyphen
+         * "-". The arg value cannot be empty.
+         *
+         * @param string[] $args
+         */
+        public function setArgs($args)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getArgs()
+        {
+        }
+        /**
+         * Optional. User-defined labels for the task. If the map is left empty, the
+         * task will run with existing labels from task definition. If the map
+         * contains an entry with a new key, the same will be added to existing set of
+         * labels. If the map contains an entry with an existing label key in task
+         * definition, the task will run with new label value for that entry. Clearing
+         * an existing label will require label value to be explicitly set to a hyphen
+         * "-". The label value cannot be empty.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1RunTaskRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArgs()
-    {
-    }
-    /**
-     * Optional. User-defined labels for the task. If the map is left empty, the
-     * task will run with existing labels from task definition. If the map
-     * contains an entry with a new key, the same will be added to existing set of
-     * labels. If the map contains an entry with an existing label key in task
-     * definition, the task will run with new label value for that entry. Clearing
-     * an existing label will require label value to be explicitly set to a hyphen
-     * "-". The label value cannot be empty.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1RunTaskRequest extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1RunTaskRequest
     {
     }
 }

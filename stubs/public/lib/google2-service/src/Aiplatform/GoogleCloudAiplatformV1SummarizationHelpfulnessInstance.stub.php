@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SummarizationHelpfulnessInstance extends \Google\Model
-{
-    /**
-     * Required. Text to be summarized.
-     *
-     * @var string
-     */
-    public $context;
-    /**
-     * Optional. Summarization prompt for LLM.
-     *
-     * @var string
-     */
-    public $instruction;
-    /**
-     * Required. Output of the evaluated model.
-     *
-     * @var string
-     */
-    public $prediction;
-    /**
-     * Optional. Ground truth used to compare against the prediction.
-     *
-     * @var string
-     */
-    public $reference;
-    /**
-     * Required. Text to be summarized.
-     *
-     * @param string $context
-     */
-    public function setContext($context)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SummarizationHelpfulnessInstance extends \Google\Model
     {
+        /**
+         * Required. Text to be summarized.
+         *
+         * @var string
+         */
+        public $context;
+        /**
+         * Optional. Summarization prompt for LLM.
+         *
+         * @var string
+         */
+        public $instruction;
+        /**
+         * Required. Output of the evaluated model.
+         *
+         * @var string
+         */
+        public $prediction;
+        /**
+         * Optional. Ground truth used to compare against the prediction.
+         *
+         * @var string
+         */
+        public $reference;
+        /**
+         * Required. Text to be summarized.
+         *
+         * @param string $context
+         */
+        public function setContext($context)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContext()
+        {
+        }
+        /**
+         * Optional. Summarization prompt for LLM.
+         *
+         * @param string $instruction
+         */
+        public function setInstruction($instruction)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstruction()
+        {
+        }
+        /**
+         * Required. Output of the evaluated model.
+         *
+         * @param string $prediction
+         */
+        public function setPrediction($prediction)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrediction()
+        {
+        }
+        /**
+         * Optional. Ground truth used to compare against the prediction.
+         *
+         * @param string $reference
+         */
+        public function setReference($reference)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReference()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SummarizationHelpfulnessInstance registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContext()
-    {
-    }
-    /**
-     * Optional. Summarization prompt for LLM.
-     *
-     * @param string $instruction
-     */
-    public function setInstruction($instruction)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInstruction()
-    {
-    }
-    /**
-     * Required. Output of the evaluated model.
-     *
-     * @param string $prediction
-     */
-    public function setPrediction($prediction)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrediction()
-    {
-    }
-    /**
-     * Optional. Ground truth used to compare against the prediction.
-     *
-     * @param string $reference
-     */
-    public function setReference($reference)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReference()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SummarizationHelpfulnessInstance extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SummarizationHelpfulnessInstance
     {
     }
 }

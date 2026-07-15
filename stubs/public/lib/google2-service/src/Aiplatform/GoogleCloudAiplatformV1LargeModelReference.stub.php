@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1LargeModelReference extends \Google\Model
-{
-    /**
-     * Required. The unique name of the large Foundation or pre-built model. Like
-     * "chat-bison", "text-bison". Or model name with version ID, like "chat-
-     * bison@001", "text-bison@005", etc.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. The unique name of the large Foundation or pre-built model. Like
-     * "chat-bison", "text-bison". Or model name with version ID, like "chat-
-     * bison@001", "text-bison@005", etc.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1LargeModelReference extends \Google\Model
     {
+        /**
+         * Required. The unique name of the large Foundation or pre-built model. Like
+         * "chat-bison", "text-bison". Or model name with version ID, like "chat-
+         * bison@001", "text-bison@005", etc.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. The unique name of the large Foundation or pre-built model. Like
+         * "chat-bison", "text-bison". Or model name with version ID, like "chat-
+         * bison@001", "text-bison@005", etc.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1LargeModelReference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1LargeModelReference extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1LargeModelReference
     {
     }
 }

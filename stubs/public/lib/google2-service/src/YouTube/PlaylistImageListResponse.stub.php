@@ -21,105 +21,114 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class PlaylistImageListResponse extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    protected $itemsType = PlaylistImage::class;
-    protected $itemsDataType = 'array';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "youtube#playlistImageListResponse".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The token that can be used as the value of the pageToken parameter to
-     * retrieve the next page in the result set.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $pageInfoType = PageInfo::class;
-    protected $pageInfoDataType = '';
-    /**
-     * The token that can be used as the value of the pageToken parameter to
-     * retrieve the previous page in the result set.
-     *
-     * @var string
-     */
-    public $prevPageToken;
-    /**
-     * @param PlaylistImage[] $items
-     */
-    public function setItems($items)
+namespace Google\Service\YouTube {
+    class PlaylistImageListResponse extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        protected $itemsType = PlaylistImage::class;
+        protected $itemsDataType = 'array';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "youtube#playlistImageListResponse".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The token that can be used as the value of the pageToken parameter to
+         * retrieve the next page in the result set.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $pageInfoType = PageInfo::class;
+        protected $pageInfoDataType = '';
+        /**
+         * The token that can be used as the value of the pageToken parameter to
+         * retrieve the previous page in the result set.
+         *
+         * @var string
+         */
+        public $prevPageToken;
+        /**
+         * @param PlaylistImage[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return PlaylistImage[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "youtube#playlistImageListResponse".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The token that can be used as the value of the pageToken parameter to
+         * retrieve the next page in the result set.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * General pagination information.
+         *
+         * @param PageInfo $pageInfo
+         */
+        public function setPageInfo(PageInfo $pageInfo)
+        {
+        }
+        /**
+         * @return PageInfo
+         */
+        public function getPageInfo()
+        {
+        }
+        /**
+         * The token that can be used as the value of the pageToken parameter to
+         * retrieve the previous page in the result set.
+         *
+         * @param string $prevPageToken
+         */
+        public function setPrevPageToken($prevPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrevPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PlaylistImage[]
+     * Runtime class alias of \Google\Service\YouTube\PlaylistImageListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItems()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "youtube#playlistImageListResponse".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The token that can be used as the value of the pageToken parameter to
-     * retrieve the next page in the result set.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * General pagination information.
-     *
-     * @param PageInfo $pageInfo
-     */
-    public function setPageInfo(PageInfo $pageInfo)
-    {
-    }
-    /**
-     * @return PageInfo
-     */
-    public function getPageInfo()
-    {
-    }
-    /**
-     * The token that can be used as the value of the pageToken parameter to
-     * retrieve the previous page in the result set.
-     *
-     * @param string $prevPageToken
-     */
-    public function setPrevPageToken($prevPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrevPageToken()
+    class Google_Service_YouTube_PlaylistImageListResponse extends \Google\Service\YouTube\PlaylistImageListResponse
     {
     }
 }

@@ -21,79 +21,88 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dns;
-
-class ResourceRecordSetsListResponse extends \Google\Collection
-{
-    protected $collection_key = 'rrsets';
-    /**
-     * Type of resource.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * This field indicates that more results are available beyond the last page
-     * displayed. To fetch the results, make another list request and use this
-     * value as your page token. This lets you retrieve the complete contents of a
-     * very large collection one page at a time. However, if the contents of the
-     * collection change between the first and last paginated list request, the
-     * set of all elements returned are an inconsistent view of the collection.
-     * You can't retrieve a consistent snapshot of a collection larger than the
-     * maximum page size.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $rrsetsType = ResourceRecordSet::class;
-    protected $rrsetsDataType = 'array';
-    /**
-     * Type of resource.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Dns {
+    class ResourceRecordSetsListResponse extends \Google\Collection
     {
+        protected $collection_key = 'rrsets';
+        /**
+         * Type of resource.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * This field indicates that more results are available beyond the last page
+         * displayed. To fetch the results, make another list request and use this
+         * value as your page token. This lets you retrieve the complete contents of a
+         * very large collection one page at a time. However, if the contents of the
+         * collection change between the first and last paginated list request, the
+         * set of all elements returned are an inconsistent view of the collection.
+         * You can't retrieve a consistent snapshot of a collection larger than the
+         * maximum page size.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $rrsetsType = ResourceRecordSet::class;
+        protected $rrsetsDataType = 'array';
+        /**
+         * Type of resource.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * This field indicates that more results are available beyond the last page
+         * displayed. To fetch the results, make another list request and use this
+         * value as your page token. This lets you retrieve the complete contents of a
+         * very large collection one page at a time. However, if the contents of the
+         * collection change between the first and last paginated list request, the
+         * set of all elements returned are an inconsistent view of the collection.
+         * You can't retrieve a consistent snapshot of a collection larger than the
+         * maximum page size.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The resource record set resources.
+         *
+         * @param ResourceRecordSet[] $rrsets
+         */
+        public function setRrsets($rrsets)
+        {
+        }
+        /**
+         * @return ResourceRecordSet[]
+         */
+        public function getRrsets()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dns\ResourceRecordSetsListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * This field indicates that more results are available beyond the last page
-     * displayed. To fetch the results, make another list request and use this
-     * value as your page token. This lets you retrieve the complete contents of a
-     * very large collection one page at a time. However, if the contents of the
-     * collection change between the first and last paginated list request, the
-     * set of all elements returned are an inconsistent view of the collection.
-     * You can't retrieve a consistent snapshot of a collection larger than the
-     * maximum page size.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The resource record set resources.
-     *
-     * @param ResourceRecordSet[] $rrsets
-     */
-    public function setRrsets($rrsets)
-    {
-    }
-    /**
-     * @return ResourceRecordSet[]
-     */
-    public function getRrsets()
+    class Google_Service_Dns_ResourceRecordSetsListResponse extends \Google\Service\Dns\ResourceRecordSetsListResponse
     {
     }
 }

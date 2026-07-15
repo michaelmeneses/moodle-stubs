@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkSecurity;
-
-class Rule extends \Google\Collection
-{
-    protected $collection_key = 'sources';
-    protected $destinationsType = Destination::class;
-    protected $destinationsDataType = 'array';
-    protected $sourcesType = Source::class;
-    protected $sourcesDataType = 'array';
-    /**
-     * Optional. List of attributes for the traffic destination. All of the
-     * destinations must match. A destination is a match if a request matches all
-     * the specified hosts, ports, methods and headers. If not set, the action
-     * specified in the 'action' field will be applied without any rule checks for
-     * the destination.
-     *
-     * @param Destination[] $destinations
-     */
-    public function setDestinations($destinations)
+namespace Google\Service\NetworkSecurity {
+    class Rule extends \Google\Collection
     {
+        protected $collection_key = 'sources';
+        protected $destinationsType = Destination::class;
+        protected $destinationsDataType = 'array';
+        protected $sourcesType = Source::class;
+        protected $sourcesDataType = 'array';
+        /**
+         * Optional. List of attributes for the traffic destination. All of the
+         * destinations must match. A destination is a match if a request matches all
+         * the specified hosts, ports, methods and headers. If not set, the action
+         * specified in the 'action' field will be applied without any rule checks for
+         * the destination.
+         *
+         * @param Destination[] $destinations
+         */
+        public function setDestinations($destinations)
+        {
+        }
+        /**
+         * @return Destination[]
+         */
+        public function getDestinations()
+        {
+        }
+        /**
+         * Optional. List of attributes for the traffic source. All of the sources
+         * must match. A source is a match if both principals and ip_blocks match. If
+         * not set, the action specified in the 'action' field will be applied without
+         * any rule checks for the source.
+         *
+         * @param Source[] $sources
+         */
+        public function setSources($sources)
+        {
+        }
+        /**
+         * @return Source[]
+         */
+        public function getSources()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Destination[]
+     * Runtime class alias of \Google\Service\NetworkSecurity\Rule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDestinations()
-    {
-    }
-    /**
-     * Optional. List of attributes for the traffic source. All of the sources
-     * must match. A source is a match if both principals and ip_blocks match. If
-     * not set, the action specified in the 'action' field will be applied without
-     * any rule checks for the source.
-     *
-     * @param Source[] $sources
-     */
-    public function setSources($sources)
-    {
-    }
-    /**
-     * @return Source[]
-     */
-    public function getSources()
+    class Google_Service_NetworkSecurity_Rule extends \Google\Service\NetworkSecurity\Rule
     {
     }
 }

@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GameServices;
-
-class ListRealmsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    protected $realmsType = Realm::class;
-    protected $realmsDataType = 'array';
-    /**
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\GameServices {
+    class ListRealmsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        protected $realmsType = Realm::class;
+        protected $realmsDataType = 'array';
+        /**
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param Realm[]
+         */
+        public function setRealms($realms)
+        {
+        }
+        /**
+         * @return Realm[]
+         */
+        public function getRealms()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GameServices\ListRealmsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param Realm[]
-     */
-    public function setRealms($realms)
-    {
-    }
-    /**
-     * @return Realm[]
-     */
-    public function getRealms()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_GameServices_ListRealmsResponse extends \Google\Service\GameServices\ListRealmsResponse
     {
     }
 }

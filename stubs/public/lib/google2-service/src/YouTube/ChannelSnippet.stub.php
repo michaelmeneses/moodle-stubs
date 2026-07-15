@@ -21,171 +21,180 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class ChannelSnippet extends \Google\Model
-{
-    /**
-     * The country of the channel.
-     *
-     * @var string
-     */
-    public $country;
-    /**
-     * The custom url of the channel.
-     *
-     * @var string
-     */
-    public $customUrl;
-    /**
-     * The language of the channel's default title and description.
-     *
-     * @var string
-     */
-    public $defaultLanguage;
-    /**
-     * The description of the channel.
-     *
-     * @var string
-     */
-    public $description;
-    protected $localizedType = ChannelLocalization::class;
-    protected $localizedDataType = '';
-    /**
-     * The date and time that the channel was created.
-     *
-     * @var string
-     */
-    public $publishedAt;
-    protected $thumbnailsType = ThumbnailDetails::class;
-    protected $thumbnailsDataType = '';
-    /**
-     * The channel's title.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * The country of the channel.
-     *
-     * @param string $country
-     */
-    public function setCountry($country)
+namespace Google\Service\YouTube {
+    class ChannelSnippet extends \Google\Model
     {
+        /**
+         * The country of the channel.
+         *
+         * @var string
+         */
+        public $country;
+        /**
+         * The custom url of the channel.
+         *
+         * @var string
+         */
+        public $customUrl;
+        /**
+         * The language of the channel's default title and description.
+         *
+         * @var string
+         */
+        public $defaultLanguage;
+        /**
+         * The description of the channel.
+         *
+         * @var string
+         */
+        public $description;
+        protected $localizedType = ChannelLocalization::class;
+        protected $localizedDataType = '';
+        /**
+         * The date and time that the channel was created.
+         *
+         * @var string
+         */
+        public $publishedAt;
+        protected $thumbnailsType = ThumbnailDetails::class;
+        protected $thumbnailsDataType = '';
+        /**
+         * The channel's title.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * The country of the channel.
+         *
+         * @param string $country
+         */
+        public function setCountry($country)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCountry()
+        {
+        }
+        /**
+         * The custom url of the channel.
+         *
+         * @param string $customUrl
+         */
+        public function setCustomUrl($customUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomUrl()
+        {
+        }
+        /**
+         * The language of the channel's default title and description.
+         *
+         * @param string $defaultLanguage
+         */
+        public function setDefaultLanguage($defaultLanguage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDefaultLanguage()
+        {
+        }
+        /**
+         * The description of the channel.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Localized title and description, read-only.
+         *
+         * @param ChannelLocalization $localized
+         */
+        public function setLocalized(ChannelLocalization $localized)
+        {
+        }
+        /**
+         * @return ChannelLocalization
+         */
+        public function getLocalized()
+        {
+        }
+        /**
+         * The date and time that the channel was created.
+         *
+         * @param string $publishedAt
+         */
+        public function setPublishedAt($publishedAt)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPublishedAt()
+        {
+        }
+        /**
+         * A map of thumbnail images associated with the channel. For each object in
+         * the map, the key is the name of the thumbnail image, and the value is an
+         * object that contains other information about the thumbnail. When displaying
+         * thumbnails in your application, make sure that your code uses the image
+         * URLs exactly as they are returned in API responses. For example, your
+         * application should not use the http domain instead of the https domain in a
+         * URL returned in an API response. Beginning in July 2018, channel thumbnail
+         * URLs will only be available in the https domain, which is how the URLs
+         * appear in API responses. After that time, you might see broken images in
+         * your application if it tries to load YouTube images from the http domain.
+         * Thumbnail images might be empty for newly created channels and might take
+         * up to one day to populate.
+         *
+         * @param ThumbnailDetails $thumbnails
+         */
+        public function setThumbnails(ThumbnailDetails $thumbnails)
+        {
+        }
+        /**
+         * @return ThumbnailDetails
+         */
+        public function getThumbnails()
+        {
+        }
+        /**
+         * The channel's title.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\ChannelSnippet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCountry()
-    {
-    }
-    /**
-     * The custom url of the channel.
-     *
-     * @param string $customUrl
-     */
-    public function setCustomUrl($customUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCustomUrl()
-    {
-    }
-    /**
-     * The language of the channel's default title and description.
-     *
-     * @param string $defaultLanguage
-     */
-    public function setDefaultLanguage($defaultLanguage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDefaultLanguage()
-    {
-    }
-    /**
-     * The description of the channel.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Localized title and description, read-only.
-     *
-     * @param ChannelLocalization $localized
-     */
-    public function setLocalized(ChannelLocalization $localized)
-    {
-    }
-    /**
-     * @return ChannelLocalization
-     */
-    public function getLocalized()
-    {
-    }
-    /**
-     * The date and time that the channel was created.
-     *
-     * @param string $publishedAt
-     */
-    public function setPublishedAt($publishedAt)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPublishedAt()
-    {
-    }
-    /**
-     * A map of thumbnail images associated with the channel. For each object in
-     * the map, the key is the name of the thumbnail image, and the value is an
-     * object that contains other information about the thumbnail. When displaying
-     * thumbnails in your application, make sure that your code uses the image
-     * URLs exactly as they are returned in API responses. For example, your
-     * application should not use the http domain instead of the https domain in a
-     * URL returned in an API response. Beginning in July 2018, channel thumbnail
-     * URLs will only be available in the https domain, which is how the URLs
-     * appear in API responses. After that time, you might see broken images in
-     * your application if it tries to load YouTube images from the http domain.
-     * Thumbnail images might be empty for newly created channels and might take
-     * up to one day to populate.
-     *
-     * @param ThumbnailDetails $thumbnails
-     */
-    public function setThumbnails(ThumbnailDetails $thumbnails)
-    {
-    }
-    /**
-     * @return ThumbnailDetails
-     */
-    public function getThumbnails()
-    {
-    }
-    /**
-     * The channel's title.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_YouTube_ChannelSnippet extends \Google\Service\YouTube\ChannelSnippet
     {
     }
 }

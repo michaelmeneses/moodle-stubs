@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Games;
-
-class InstanceWebDetails extends \Google\Model
-{
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#instanceWebDetails`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Launch URL for the game.
-     *
-     * @var string
-     */
-    public $launchUrl;
-    /**
-     * Indicates that this instance is the default for new installations.
-     *
-     * @var bool
-     */
-    public $preferred;
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#instanceWebDetails`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Games {
+    class InstanceWebDetails extends \Google\Model
     {
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#instanceWebDetails`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Launch URL for the game.
+         *
+         * @var string
+         */
+        public $launchUrl;
+        /**
+         * Indicates that this instance is the default for new installations.
+         *
+         * @var bool
+         */
+        public $preferred;
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#instanceWebDetails`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Launch URL for the game.
+         *
+         * @param string $launchUrl
+         */
+        public function setLaunchUrl($launchUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLaunchUrl()
+        {
+        }
+        /**
+         * Indicates that this instance is the default for new installations.
+         *
+         * @param bool $preferred
+         */
+        public function setPreferred($preferred)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPreferred()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Games\InstanceWebDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * Launch URL for the game.
-     *
-     * @param string $launchUrl
-     */
-    public function setLaunchUrl($launchUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLaunchUrl()
-    {
-    }
-    /**
-     * Indicates that this instance is the default for new installations.
-     *
-     * @param bool $preferred
-     */
-    public function setPreferred($preferred)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPreferred()
+    class Google_Service_Games_InstanceWebDetails extends \Google\Service\Games\InstanceWebDetails
     {
     }
 }

@@ -21,78 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaAudienceFilterExpression extends \Google\Model
-{
-    protected $andGroupType = GoogleAnalyticsAdminV1alphaAudienceFilterExpressionList::class;
-    protected $andGroupDataType = '';
-    protected $dimensionOrMetricFilterType = GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilter::class;
-    protected $dimensionOrMetricFilterDataType = '';
-    protected $eventFilterType = GoogleAnalyticsAdminV1alphaAudienceEventFilter::class;
-    protected $eventFilterDataType = '';
-    protected $notExpressionType = GoogleAnalyticsAdminV1alphaAudienceFilterExpression::class;
-    protected $notExpressionDataType = '';
-    protected $orGroupType = GoogleAnalyticsAdminV1alphaAudienceFilterExpressionList::class;
-    protected $orGroupDataType = '';
-    /**
-     * @param GoogleAnalyticsAdminV1alphaAudienceFilterExpressionList
-     */
-    public function setAndGroup(GoogleAnalyticsAdminV1alphaAudienceFilterExpressionList $andGroup)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaAudienceFilterExpression extends \Google\Model
     {
+        protected $andGroupType = GoogleAnalyticsAdminV1alphaAudienceFilterExpressionList::class;
+        protected $andGroupDataType = '';
+        protected $dimensionOrMetricFilterType = GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilter::class;
+        protected $dimensionOrMetricFilterDataType = '';
+        protected $eventFilterType = GoogleAnalyticsAdminV1alphaAudienceEventFilter::class;
+        protected $eventFilterDataType = '';
+        protected $notExpressionType = GoogleAnalyticsAdminV1alphaAudienceFilterExpression::class;
+        protected $notExpressionDataType = '';
+        protected $orGroupType = GoogleAnalyticsAdminV1alphaAudienceFilterExpressionList::class;
+        protected $orGroupDataType = '';
+        /**
+         * @param GoogleAnalyticsAdminV1alphaAudienceFilterExpressionList
+         */
+        public function setAndGroup(GoogleAnalyticsAdminV1alphaAudienceFilterExpressionList $andGroup)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaAudienceFilterExpressionList
+         */
+        public function getAndGroup()
+        {
+        }
+        /**
+         * @param GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilter
+         */
+        public function setDimensionOrMetricFilter(GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilter $dimensionOrMetricFilter)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilter
+         */
+        public function getDimensionOrMetricFilter()
+        {
+        }
+        /**
+         * @param GoogleAnalyticsAdminV1alphaAudienceEventFilter
+         */
+        public function setEventFilter(GoogleAnalyticsAdminV1alphaAudienceEventFilter $eventFilter)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaAudienceEventFilter
+         */
+        public function getEventFilter()
+        {
+        }
+        /**
+         * @param GoogleAnalyticsAdminV1alphaAudienceFilterExpression
+         */
+        public function setNotExpression(GoogleAnalyticsAdminV1alphaAudienceFilterExpression $notExpression)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaAudienceFilterExpression
+         */
+        public function getNotExpression()
+        {
+        }
+        /**
+         * @param GoogleAnalyticsAdminV1alphaAudienceFilterExpressionList
+         */
+        public function setOrGroup(GoogleAnalyticsAdminV1alphaAudienceFilterExpressionList $orGroup)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaAudienceFilterExpressionList
+         */
+        public function getOrGroup()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAnalyticsAdminV1alphaAudienceFilterExpressionList
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaAudienceFilterExpression registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAndGroup()
-    {
-    }
-    /**
-     * @param GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilter
-     */
-    public function setDimensionOrMetricFilter(GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilter $dimensionOrMetricFilter)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilter
-     */
-    public function getDimensionOrMetricFilter()
-    {
-    }
-    /**
-     * @param GoogleAnalyticsAdminV1alphaAudienceEventFilter
-     */
-    public function setEventFilter(GoogleAnalyticsAdminV1alphaAudienceEventFilter $eventFilter)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1alphaAudienceEventFilter
-     */
-    public function getEventFilter()
-    {
-    }
-    /**
-     * @param GoogleAnalyticsAdminV1alphaAudienceFilterExpression
-     */
-    public function setNotExpression(GoogleAnalyticsAdminV1alphaAudienceFilterExpression $notExpression)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1alphaAudienceFilterExpression
-     */
-    public function getNotExpression()
-    {
-    }
-    /**
-     * @param GoogleAnalyticsAdminV1alphaAudienceFilterExpressionList
-     */
-    public function setOrGroup(GoogleAnalyticsAdminV1alphaAudienceFilterExpressionList $orGroup)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1alphaAudienceFilterExpressionList
-     */
-    public function getOrGroup()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaAudienceFilterExpression extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaAudienceFilterExpression
     {
     }
 }

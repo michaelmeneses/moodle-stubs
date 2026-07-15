@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Logging;
-
-class LocationMetadata extends \Google\Model
-{
-    /**
-     * Indicates whether or not Log Analytics features are supported in the given
-     * location.
-     *
-     * @var bool
-     */
-    public $logAnalyticsEnabled;
-    /**
-     * Indicates whether or not Log Analytics features are supported in the given
-     * location.
-     *
-     * @param bool $logAnalyticsEnabled
-     */
-    public function setLogAnalyticsEnabled($logAnalyticsEnabled)
+namespace Google\Service\Logging {
+    class LocationMetadata extends \Google\Model
     {
+        /**
+         * Indicates whether or not Log Analytics features are supported in the given
+         * location.
+         *
+         * @var bool
+         */
+        public $logAnalyticsEnabled;
+        /**
+         * Indicates whether or not Log Analytics features are supported in the given
+         * location.
+         *
+         * @param bool $logAnalyticsEnabled
+         */
+        public function setLogAnalyticsEnabled($logAnalyticsEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getLogAnalyticsEnabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Logging\LocationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLogAnalyticsEnabled()
+    class Google_Service_Logging_LocationMetadata extends \Google\Service\Logging\LocationMetadata
     {
     }
 }

@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class BatchCreatePrintersResponse extends \Google\Collection
-{
-    protected $collection_key = 'printers';
-    protected $failuresType = FailureInfo::class;
-    protected $failuresDataType = 'array';
-    protected $printersType = Printer::class;
-    protected $printersDataType = 'array';
-    /**
-     * A list of create failures. Printer IDs are not populated, as printer were
-     * not created.
-     *
-     * @param FailureInfo[] $failures
-     */
-    public function setFailures($failures)
+namespace Google\Service\Directory {
+    class BatchCreatePrintersResponse extends \Google\Collection
     {
+        protected $collection_key = 'printers';
+        protected $failuresType = FailureInfo::class;
+        protected $failuresDataType = 'array';
+        protected $printersType = Printer::class;
+        protected $printersDataType = 'array';
+        /**
+         * A list of create failures. Printer IDs are not populated, as printer were
+         * not created.
+         *
+         * @param FailureInfo[] $failures
+         */
+        public function setFailures($failures)
+        {
+        }
+        /**
+         * @return FailureInfo[]
+         */
+        public function getFailures()
+        {
+        }
+        /**
+         * A list of successfully created printers with their IDs populated.
+         *
+         * @param Printer[] $printers
+         */
+        public function setPrinters($printers)
+        {
+        }
+        /**
+         * @return Printer[]
+         */
+        public function getPrinters()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FailureInfo[]
+     * Runtime class alias of \Google\Service\Directory\BatchCreatePrintersResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFailures()
-    {
-    }
-    /**
-     * A list of successfully created printers with their IDs populated.
-     *
-     * @param Printer[] $printers
-     */
-    public function setPrinters($printers)
-    {
-    }
-    /**
-     * @return Printer[]
-     */
-    public function getPrinters()
+    class Google_Service_Directory_BatchCreatePrintersResponse extends \Google\Service\Directory\BatchCreatePrintersResponse
     {
     }
 }

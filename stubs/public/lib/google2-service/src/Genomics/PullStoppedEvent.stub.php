@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Genomics;
-
-class PullStoppedEvent extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $imageUri;
-    /**
-     * @param string
-     */
-    public function setImageUri($imageUri)
+namespace Google\Service\Genomics {
+    class PullStoppedEvent extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $imageUri;
+        /**
+         * @param string
+         */
+        public function setImageUri($imageUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImageUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Genomics\PullStoppedEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getImageUri()
+    class Google_Service_Genomics_PullStoppedEvent extends \Google\Service\Genomics\PullStoppedEvent
     {
     }
 }

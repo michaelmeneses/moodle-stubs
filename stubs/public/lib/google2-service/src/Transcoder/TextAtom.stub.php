@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Transcoder;
-
-class TextAtom extends \Google\Collection
-{
-    protected $collection_key = 'inputs';
-    protected $inputsType = TextInput::class;
-    protected $inputsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $key;
-    /**
-     * @param TextInput[]
-     */
-    public function setInputs($inputs)
+namespace Google\Service\Transcoder {
+    class TextAtom extends \Google\Collection
     {
+        protected $collection_key = 'inputs';
+        protected $inputsType = TextInput::class;
+        protected $inputsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $key;
+        /**
+         * @param TextInput[]
+         */
+        public function setInputs($inputs)
+        {
+        }
+        /**
+         * @return TextInput[]
+         */
+        public function getInputs()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TextInput[]
+     * Runtime class alias of \Google\Service\Transcoder\TextAtom registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInputs()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKey($key)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKey()
+    class Google_Service_Transcoder_TextAtom extends \Google\Service\Transcoder\TextAtom
     {
     }
 }

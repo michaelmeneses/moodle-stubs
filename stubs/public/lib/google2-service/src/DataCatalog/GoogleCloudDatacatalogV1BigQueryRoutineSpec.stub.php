@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1BigQueryRoutineSpec extends \Google\Collection
-{
-    protected $collection_key = 'importedLibraries';
-    /**
-     * Paths of the imported libraries.
-     *
-     * @var string[]
-     */
-    public $importedLibraries;
-    /**
-     * Paths of the imported libraries.
-     *
-     * @param string[] $importedLibraries
-     */
-    public function setImportedLibraries($importedLibraries)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1BigQueryRoutineSpec extends \Google\Collection
     {
+        protected $collection_key = 'importedLibraries';
+        /**
+         * Paths of the imported libraries.
+         *
+         * @var string[]
+         */
+        public $importedLibraries;
+        /**
+         * Paths of the imported libraries.
+         *
+         * @param string[] $importedLibraries
+         */
+        public function setImportedLibraries($importedLibraries)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getImportedLibraries()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1BigQueryRoutineSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getImportedLibraries()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1BigQueryRoutineSpec extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1BigQueryRoutineSpec
     {
     }
 }

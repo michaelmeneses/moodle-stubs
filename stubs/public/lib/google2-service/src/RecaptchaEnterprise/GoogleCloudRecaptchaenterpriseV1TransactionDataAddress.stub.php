@@ -21,137 +21,146 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecaptchaEnterprise;
-
-class GoogleCloudRecaptchaenterpriseV1TransactionDataAddress extends \Google\Collection
-{
-    protected $collection_key = 'address';
-    /**
-     * Optional. The first lines of the address. The first line generally contains
-     * the street name and number, and further lines may include information such
-     * as an apartment number.
-     *
-     * @var string[]
-     */
-    public $address;
-    /**
-     * Optional. The state, province, or otherwise administrative area of the
-     * address.
-     *
-     * @var string
-     */
-    public $administrativeArea;
-    /**
-     * Optional. The town/city of the address.
-     *
-     * @var string
-     */
-    public $locality;
-    /**
-     * Optional. The postal or ZIP code of the address.
-     *
-     * @var string
-     */
-    public $postalCode;
-    /**
-     * Optional. The recipient name, potentially including information such as
-     * "care of".
-     *
-     * @var string
-     */
-    public $recipient;
-    /**
-     * Optional. The CLDR country/region of the address.
-     *
-     * @var string
-     */
-    public $regionCode;
-    /**
-     * Optional. The first lines of the address. The first line generally contains
-     * the street name and number, and further lines may include information such
-     * as an apartment number.
-     *
-     * @param string[] $address
-     */
-    public function setAddress($address)
+namespace Google\Service\RecaptchaEnterprise {
+    class GoogleCloudRecaptchaenterpriseV1TransactionDataAddress extends \Google\Collection
     {
+        protected $collection_key = 'address';
+        /**
+         * Optional. The first lines of the address. The first line generally contains
+         * the street name and number, and further lines may include information such
+         * as an apartment number.
+         *
+         * @var string[]
+         */
+        public $address;
+        /**
+         * Optional. The state, province, or otherwise administrative area of the
+         * address.
+         *
+         * @var string
+         */
+        public $administrativeArea;
+        /**
+         * Optional. The town/city of the address.
+         *
+         * @var string
+         */
+        public $locality;
+        /**
+         * Optional. The postal or ZIP code of the address.
+         *
+         * @var string
+         */
+        public $postalCode;
+        /**
+         * Optional. The recipient name, potentially including information such as
+         * "care of".
+         *
+         * @var string
+         */
+        public $recipient;
+        /**
+         * Optional. The CLDR country/region of the address.
+         *
+         * @var string
+         */
+        public $regionCode;
+        /**
+         * Optional. The first lines of the address. The first line generally contains
+         * the street name and number, and further lines may include information such
+         * as an apartment number.
+         *
+         * @param string[] $address
+         */
+        public function setAddress($address)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAddress()
+        {
+        }
+        /**
+         * Optional. The state, province, or otherwise administrative area of the
+         * address.
+         *
+         * @param string $administrativeArea
+         */
+        public function setAdministrativeArea($administrativeArea)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdministrativeArea()
+        {
+        }
+        /**
+         * Optional. The town/city of the address.
+         *
+         * @param string $locality
+         */
+        public function setLocality($locality)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocality()
+        {
+        }
+        /**
+         * Optional. The postal or ZIP code of the address.
+         *
+         * @param string $postalCode
+         */
+        public function setPostalCode($postalCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPostalCode()
+        {
+        }
+        /**
+         * Optional. The recipient name, potentially including information such as
+         * "care of".
+         *
+         * @param string $recipient
+         */
+        public function setRecipient($recipient)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRecipient()
+        {
+        }
+        /**
+         * Optional. The CLDR country/region of the address.
+         *
+         * @param string $regionCode
+         */
+        public function setRegionCode($regionCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegionCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1TransactionDataAddress registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddress()
-    {
-    }
-    /**
-     * Optional. The state, province, or otherwise administrative area of the
-     * address.
-     *
-     * @param string $administrativeArea
-     */
-    public function setAdministrativeArea($administrativeArea)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAdministrativeArea()
-    {
-    }
-    /**
-     * Optional. The town/city of the address.
-     *
-     * @param string $locality
-     */
-    public function setLocality($locality)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocality()
-    {
-    }
-    /**
-     * Optional. The postal or ZIP code of the address.
-     *
-     * @param string $postalCode
-     */
-    public function setPostalCode($postalCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPostalCode()
-    {
-    }
-    /**
-     * Optional. The recipient name, potentially including information such as
-     * "care of".
-     *
-     * @param string $recipient
-     */
-    public function setRecipient($recipient)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRecipient()
-    {
-    }
-    /**
-     * Optional. The CLDR country/region of the address.
-     *
-     * @param string $regionCode
-     */
-    public function setRegionCode($regionCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegionCode()
+    class Google_Service_RecaptchaEnterprise_GoogleCloudRecaptchaenterpriseV1TransactionDataAddress extends \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1TransactionDataAddress
     {
     }
 }

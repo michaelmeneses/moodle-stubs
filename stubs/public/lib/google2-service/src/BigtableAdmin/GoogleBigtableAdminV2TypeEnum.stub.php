@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class GoogleBigtableAdminV2TypeEnum extends \Google\Model
-{
-    /**
-     * The fully qualified name of the protobuf enum message, including package.
-     * In the format of "foo.bar.EnumMessage".
-     *
-     * @var string
-     */
-    public $enumName;
-    /**
-     * The ID of the schema bundle that this enum is defined in.
-     *
-     * @var string
-     */
-    public $schemaBundleId;
-    /**
-     * The fully qualified name of the protobuf enum message, including package.
-     * In the format of "foo.bar.EnumMessage".
-     *
-     * @param string $enumName
-     */
-    public function setEnumName($enumName)
+namespace Google\Service\BigtableAdmin {
+    class GoogleBigtableAdminV2TypeEnum extends \Google\Model
     {
+        /**
+         * The fully qualified name of the protobuf enum message, including package.
+         * In the format of "foo.bar.EnumMessage".
+         *
+         * @var string
+         */
+        public $enumName;
+        /**
+         * The ID of the schema bundle that this enum is defined in.
+         *
+         * @var string
+         */
+        public $schemaBundleId;
+        /**
+         * The fully qualified name of the protobuf enum message, including package.
+         * In the format of "foo.bar.EnumMessage".
+         *
+         * @param string $enumName
+         */
+        public function setEnumName($enumName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEnumName()
+        {
+        }
+        /**
+         * The ID of the schema bundle that this enum is defined in.
+         *
+         * @param string $schemaBundleId
+         */
+        public function setSchemaBundleId($schemaBundleId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSchemaBundleId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BigtableAdmin\GoogleBigtableAdminV2TypeEnum registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnumName()
-    {
-    }
-    /**
-     * The ID of the schema bundle that this enum is defined in.
-     *
-     * @param string $schemaBundleId
-     */
-    public function setSchemaBundleId($schemaBundleId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSchemaBundleId()
+    class Google_Service_BigtableAdmin_GoogleBigtableAdminV2TypeEnum extends \Google\Service\BigtableAdmin\GoogleBigtableAdminV2TypeEnum
     {
     }
 }

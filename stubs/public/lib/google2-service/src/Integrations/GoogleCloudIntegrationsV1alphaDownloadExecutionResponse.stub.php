@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaDownloadExecutionResponse extends \Google\Model
-{
-    /**
-     * The content of downloaded execution.
-     *
-     * @var string
-     */
-    public $content;
-    /**
-     * The content of downloaded execution.
-     *
-     * @param string $content
-     */
-    public function setContent($content)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaDownloadExecutionResponse extends \Google\Model
     {
+        /**
+         * The content of downloaded execution.
+         *
+         * @var string
+         */
+        public $content;
+        /**
+         * The content of downloaded execution.
+         *
+         * @param string $content
+         */
+        public function setContent($content)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaDownloadExecutionResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContent()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaDownloadExecutionResponse extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaDownloadExecutionResponse
     {
     }
 }

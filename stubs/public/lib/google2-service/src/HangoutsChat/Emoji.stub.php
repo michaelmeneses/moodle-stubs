@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class Emoji extends \Google\Model
-{
-    protected $customEmojiType = CustomEmoji::class;
-    protected $customEmojiDataType = '';
-    /**
-     * Optional. A basic emoji represented by a unicode string.
-     *
-     * @var string
-     */
-    public $unicode;
-    /**
-     * A custom emoji.
-     *
-     * @param CustomEmoji $customEmoji
-     */
-    public function setCustomEmoji(CustomEmoji $customEmoji)
+namespace Google\Service\HangoutsChat {
+    class Emoji extends \Google\Model
     {
+        protected $customEmojiType = CustomEmoji::class;
+        protected $customEmojiDataType = '';
+        /**
+         * Optional. A basic emoji represented by a unicode string.
+         *
+         * @var string
+         */
+        public $unicode;
+        /**
+         * A custom emoji.
+         *
+         * @param CustomEmoji $customEmoji
+         */
+        public function setCustomEmoji(CustomEmoji $customEmoji)
+        {
+        }
+        /**
+         * @return CustomEmoji
+         */
+        public function getCustomEmoji()
+        {
+        }
+        /**
+         * Optional. A basic emoji represented by a unicode string.
+         *
+         * @param string $unicode
+         */
+        public function setUnicode($unicode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUnicode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CustomEmoji
+     * Runtime class alias of \Google\Service\HangoutsChat\Emoji registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomEmoji()
-    {
-    }
-    /**
-     * Optional. A basic emoji represented by a unicode string.
-     *
-     * @param string $unicode
-     */
-    public function setUnicode($unicode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUnicode()
+    class Google_Service_HangoutsChat_Emoji extends \Google\Service\HangoutsChat\Emoji
     {
     }
 }

@@ -21,99 +21,108 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsExtensionsMarkupCalendarClientActionMarkupConferenceDataMarkup extends \Google\Collection
-{
-    protected $collection_key = 'parameters';
-    /**
-     * @var string
-     */
-    public $conferenceId;
-    /**
-     * @var string
-     */
-    public $conferenceSolutionId;
-    protected $entryPointsType = AppsExtensionsMarkupCalendarClientActionMarkupConferenceDataMarkupEntryPointMarkup::class;
-    protected $entryPointsDataType = 'array';
-    protected $errorType = AppsExtensionsMarkupCalendarClientActionMarkupConferenceDataMarkupError::class;
-    protected $errorDataType = '';
-    /**
-     * @var string
-     */
-    public $note;
-    protected $parametersType = AppsExtensionsMarkupCalendarClientActionMarkupConferenceDataMarkupParameter::class;
-    protected $parametersDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setConferenceId($conferenceId)
+namespace Google\Service\CloudSearch {
+    class AppsExtensionsMarkupCalendarClientActionMarkupConferenceDataMarkup extends \Google\Collection
     {
+        protected $collection_key = 'parameters';
+        /**
+         * @var string
+         */
+        public $conferenceId;
+        /**
+         * @var string
+         */
+        public $conferenceSolutionId;
+        protected $entryPointsType = AppsExtensionsMarkupCalendarClientActionMarkupConferenceDataMarkupEntryPointMarkup::class;
+        protected $entryPointsDataType = 'array';
+        protected $errorType = AppsExtensionsMarkupCalendarClientActionMarkupConferenceDataMarkupError::class;
+        protected $errorDataType = '';
+        /**
+         * @var string
+         */
+        public $note;
+        protected $parametersType = AppsExtensionsMarkupCalendarClientActionMarkupConferenceDataMarkupParameter::class;
+        protected $parametersDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setConferenceId($conferenceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConferenceId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setConferenceSolutionId($conferenceSolutionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConferenceSolutionId()
+        {
+        }
+        /**
+         * @param AppsExtensionsMarkupCalendarClientActionMarkupConferenceDataMarkupEntryPointMarkup[]
+         */
+        public function setEntryPoints($entryPoints)
+        {
+        }
+        /**
+         * @return AppsExtensionsMarkupCalendarClientActionMarkupConferenceDataMarkupEntryPointMarkup[]
+         */
+        public function getEntryPoints()
+        {
+        }
+        /**
+         * @param AppsExtensionsMarkupCalendarClientActionMarkupConferenceDataMarkupError
+         */
+        public function setError(AppsExtensionsMarkupCalendarClientActionMarkupConferenceDataMarkupError $error)
+        {
+        }
+        /**
+         * @return AppsExtensionsMarkupCalendarClientActionMarkupConferenceDataMarkupError
+         */
+        public function getError()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNote($note)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNote()
+        {
+        }
+        /**
+         * @param AppsExtensionsMarkupCalendarClientActionMarkupConferenceDataMarkupParameter[]
+         */
+        public function setParameters($parameters)
+        {
+        }
+        /**
+         * @return AppsExtensionsMarkupCalendarClientActionMarkupConferenceDataMarkupParameter[]
+         */
+        public function getParameters()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\AppsExtensionsMarkupCalendarClientActionMarkupConferenceDataMarkup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConferenceId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setConferenceSolutionId($conferenceSolutionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getConferenceSolutionId()
-    {
-    }
-    /**
-     * @param AppsExtensionsMarkupCalendarClientActionMarkupConferenceDataMarkupEntryPointMarkup[]
-     */
-    public function setEntryPoints($entryPoints)
-    {
-    }
-    /**
-     * @return AppsExtensionsMarkupCalendarClientActionMarkupConferenceDataMarkupEntryPointMarkup[]
-     */
-    public function getEntryPoints()
-    {
-    }
-    /**
-     * @param AppsExtensionsMarkupCalendarClientActionMarkupConferenceDataMarkupError
-     */
-    public function setError(AppsExtensionsMarkupCalendarClientActionMarkupConferenceDataMarkupError $error)
-    {
-    }
-    /**
-     * @return AppsExtensionsMarkupCalendarClientActionMarkupConferenceDataMarkupError
-     */
-    public function getError()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNote($note)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNote()
-    {
-    }
-    /**
-     * @param AppsExtensionsMarkupCalendarClientActionMarkupConferenceDataMarkupParameter[]
-     */
-    public function setParameters($parameters)
-    {
-    }
-    /**
-     * @return AppsExtensionsMarkupCalendarClientActionMarkupConferenceDataMarkupParameter[]
-     */
-    public function getParameters()
+    class Google_Service_CloudSearch_AppsExtensionsMarkupCalendarClientActionMarkupConferenceDataMarkup extends \Google\Service\CloudSearch\AppsExtensionsMarkupCalendarClientActionMarkupConferenceDataMarkup
     {
     }
 }

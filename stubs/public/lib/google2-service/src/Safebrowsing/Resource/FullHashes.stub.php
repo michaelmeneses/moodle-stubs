@@ -21,27 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Safebrowsing\Resource;
-
-/**
- * The "fullHashes" collection of methods.
- * Typical usage is:
- *  <code>
- *   $safebrowsingService = new Google\Service\Safebrowsing(...);
- *   $fullHashes = $safebrowsingService->fullHashes;
- *  </code>
- */
-class FullHashes extends \Google\Service\Resource
-{
+namespace Google\Service\Safebrowsing\Resource {
+    use Google\Service\Safebrowsing\GoogleSecuritySafebrowsingV4FindFullHashesRequest;
+    use Google\Service\Safebrowsing\GoogleSecuritySafebrowsingV4FindFullHashesResponse;
     /**
-     * Finds the full hashes that match the requested hash prefixes.
-     * (fullHashes.find)
-     *
-     * @param GoogleSecuritySafebrowsingV4FindFullHashesRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleSecuritySafebrowsingV4FindFullHashesResponse
+     * The "fullHashes" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $safebrowsingService = new Google\Service\Safebrowsing(...);
+     *   $fullHashes = $safebrowsingService->fullHashes;
+     *  </code>
      */
-    public function find(GoogleSecuritySafebrowsingV4FindFullHashesRequest $postBody, $optParams = [])
+    class FullHashes extends \Google\Service\Resource
+    {
+        /**
+         * Finds the full hashes that match the requested hash prefixes.
+         * (fullHashes.find)
+         *
+         * @param GoogleSecuritySafebrowsingV4FindFullHashesRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleSecuritySafebrowsingV4FindFullHashesResponse
+         */
+        public function find(GoogleSecuritySafebrowsingV4FindFullHashesRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Safebrowsing\Resource\FullHashes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Safebrowsing_Resource_FullHashes extends \Google\Service\Safebrowsing\Resource\FullHashes
     {
     }
 }

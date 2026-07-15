@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datalineage;
-
-class GoogleCloudDatacatalogLineageV1SearchLinksResponse extends \Google\Collection
-{
-    protected $collection_key = 'links';
-    protected $linksType = GoogleCloudDatacatalogLineageV1Link::class;
-    protected $linksDataType = 'array';
-    /**
-     * The token to specify as `page_token` in the subsequent call to get the next
-     * page. Omitted if there are no more pages in the response.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of links for a given asset. Can be empty if the asset has no
-     * relations of requested type (source or target).
-     *
-     * @param GoogleCloudDatacatalogLineageV1Link[] $links
-     */
-    public function setLinks($links)
+namespace Google\Service\Datalineage {
+    class GoogleCloudDatacatalogLineageV1SearchLinksResponse extends \Google\Collection
     {
+        protected $collection_key = 'links';
+        protected $linksType = GoogleCloudDatacatalogLineageV1Link::class;
+        protected $linksDataType = 'array';
+        /**
+         * The token to specify as `page_token` in the subsequent call to get the next
+         * page. Omitted if there are no more pages in the response.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of links for a given asset. Can be empty if the asset has no
+         * relations of requested type (source or target).
+         *
+         * @param GoogleCloudDatacatalogLineageV1Link[] $links
+         */
+        public function setLinks($links)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogLineageV1Link[]
+         */
+        public function getLinks()
+        {
+        }
+        /**
+         * The token to specify as `page_token` in the subsequent call to get the next
+         * page. Omitted if there are no more pages in the response.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatacatalogLineageV1Link[]
+     * Runtime class alias of \Google\Service\Datalineage\GoogleCloudDatacatalogLineageV1SearchLinksResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLinks()
-    {
-    }
-    /**
-     * The token to specify as `page_token` in the subsequent call to get the next
-     * page. Omitted if there are no more pages in the response.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Datalineage_GoogleCloudDatacatalogLineageV1SearchLinksResponse extends \Google\Service\Datalineage\GoogleCloudDatacatalogLineageV1SearchLinksResponse
     {
     }
 }

@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class RegressionMetrics extends \Google\Model
-{
+namespace Google\Service\Bigquery {
+    class RegressionMetrics extends \Google\Model
+    {
+        /**
+         * Mean absolute error.
+         *
+         * @var 
+         */
+        public $meanAbsoluteError;
+        /**
+         * Mean squared error.
+         *
+         * @var 
+         */
+        public $meanSquaredError;
+        /**
+         * Mean squared log error.
+         *
+         * @var 
+         */
+        public $meanSquaredLogError;
+        /**
+         * Median absolute error.
+         *
+         * @var 
+         */
+        public $medianAbsoluteError;
+        /**
+         * R^2 score. This corresponds to r2_score in ML.EVALUATE.
+         *
+         * @var 
+         */
+        public $rSquared;
+        public function setMeanAbsoluteError($meanAbsoluteError)
+        {
+        }
+        public function getMeanAbsoluteError()
+        {
+        }
+        public function setMeanSquaredError($meanSquaredError)
+        {
+        }
+        public function getMeanSquaredError()
+        {
+        }
+        public function setMeanSquaredLogError($meanSquaredLogError)
+        {
+        }
+        public function getMeanSquaredLogError()
+        {
+        }
+        public function setMedianAbsoluteError($medianAbsoluteError)
+        {
+        }
+        public function getMedianAbsoluteError()
+        {
+        }
+        public function setRSquared($rSquared)
+        {
+        }
+        public function getRSquared()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * Mean absolute error.
-     *
-     * @var 
+     * Runtime class alias of \Google\Service\Bigquery\RegressionMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public $meanAbsoluteError;
-    /**
-     * Mean squared error.
-     *
-     * @var 
-     */
-    public $meanSquaredError;
-    /**
-     * Mean squared log error.
-     *
-     * @var 
-     */
-    public $meanSquaredLogError;
-    /**
-     * Median absolute error.
-     *
-     * @var 
-     */
-    public $medianAbsoluteError;
-    /**
-     * R^2 score. This corresponds to r2_score in ML.EVALUATE.
-     *
-     * @var 
-     */
-    public $rSquared;
-    public function setMeanAbsoluteError($meanAbsoluteError)
-    {
-    }
-    public function getMeanAbsoluteError()
-    {
-    }
-    public function setMeanSquaredError($meanSquaredError)
-    {
-    }
-    public function getMeanSquaredError()
-    {
-    }
-    public function setMeanSquaredLogError($meanSquaredLogError)
-    {
-    }
-    public function getMeanSquaredLogError()
-    {
-    }
-    public function setMedianAbsoluteError($medianAbsoluteError)
-    {
-    }
-    public function getMedianAbsoluteError()
-    {
-    }
-    public function setRSquared($rSquared)
-    {
-    }
-    public function getRSquared()
+    class Google_Service_Bigquery_RegressionMetrics extends \Google\Service\Bigquery\RegressionMetrics
     {
     }
 }

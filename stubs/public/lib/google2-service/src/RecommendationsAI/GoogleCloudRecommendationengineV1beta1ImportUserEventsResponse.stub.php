@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecommendationsAI;
-
-class GoogleCloudRecommendationengineV1beta1ImportUserEventsResponse extends \Google\Collection
-{
-    protected $collection_key = 'errorSamples';
-    protected $errorSamplesType = GoogleRpcStatus::class;
-    protected $errorSamplesDataType = 'array';
-    protected $errorsConfigType = GoogleCloudRecommendationengineV1beta1ImportErrorsConfig::class;
-    protected $errorsConfigDataType = '';
-    protected $importSummaryType = GoogleCloudRecommendationengineV1beta1UserEventImportSummary::class;
-    protected $importSummaryDataType = '';
-    /**
-     * A sample of errors encountered while processing the request.
-     *
-     * @param GoogleRpcStatus[] $errorSamples
-     */
-    public function setErrorSamples($errorSamples)
+namespace Google\Service\RecommendationsAI {
+    class GoogleCloudRecommendationengineV1beta1ImportUserEventsResponse extends \Google\Collection
     {
+        protected $collection_key = 'errorSamples';
+        protected $errorSamplesType = GoogleRpcStatus::class;
+        protected $errorSamplesDataType = 'array';
+        protected $errorsConfigType = GoogleCloudRecommendationengineV1beta1ImportErrorsConfig::class;
+        protected $errorsConfigDataType = '';
+        protected $importSummaryType = GoogleCloudRecommendationengineV1beta1UserEventImportSummary::class;
+        protected $importSummaryDataType = '';
+        /**
+         * A sample of errors encountered while processing the request.
+         *
+         * @param GoogleRpcStatus[] $errorSamples
+         */
+        public function setErrorSamples($errorSamples)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus[]
+         */
+        public function getErrorSamples()
+        {
+        }
+        /**
+         * Echoes the destination for the complete errors if this field was set in the
+         * request.
+         *
+         * @param GoogleCloudRecommendationengineV1beta1ImportErrorsConfig $errorsConfig
+         */
+        public function setErrorsConfig(GoogleCloudRecommendationengineV1beta1ImportErrorsConfig $errorsConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudRecommendationengineV1beta1ImportErrorsConfig
+         */
+        public function getErrorsConfig()
+        {
+        }
+        /**
+         * Aggregated statistics of user event import status.
+         *
+         * @param GoogleCloudRecommendationengineV1beta1UserEventImportSummary $importSummary
+         */
+        public function setImportSummary(GoogleCloudRecommendationengineV1beta1UserEventImportSummary $importSummary)
+        {
+        }
+        /**
+         * @return GoogleCloudRecommendationengineV1beta1UserEventImportSummary
+         */
+        public function getImportSummary()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleRpcStatus[]
+     * Runtime class alias of \Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1ImportUserEventsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrorSamples()
-    {
-    }
-    /**
-     * Echoes the destination for the complete errors if this field was set in the
-     * request.
-     *
-     * @param GoogleCloudRecommendationengineV1beta1ImportErrorsConfig $errorsConfig
-     */
-    public function setErrorsConfig(GoogleCloudRecommendationengineV1beta1ImportErrorsConfig $errorsConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudRecommendationengineV1beta1ImportErrorsConfig
-     */
-    public function getErrorsConfig()
-    {
-    }
-    /**
-     * Aggregated statistics of user event import status.
-     *
-     * @param GoogleCloudRecommendationengineV1beta1UserEventImportSummary $importSummary
-     */
-    public function setImportSummary(GoogleCloudRecommendationengineV1beta1UserEventImportSummary $importSummary)
-    {
-    }
-    /**
-     * @return GoogleCloudRecommendationengineV1beta1UserEventImportSummary
-     */
-    public function getImportSummary()
+    class Google_Service_RecommendationsAI_GoogleCloudRecommendationengineV1beta1ImportUserEventsResponse extends \Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1ImportUserEventsResponse
     {
     }
 }

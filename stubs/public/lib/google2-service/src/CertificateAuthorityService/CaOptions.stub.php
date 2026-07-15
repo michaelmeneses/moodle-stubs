@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CertificateAuthorityService;
-
-class CaOptions extends \Google\Model
-{
-    /**
-     * Optional. Refers to the "CA" boolean field in the X.509 extension. When
-     * this value is missing, the basic constraints extension will be omitted from
-     * the certificate.
-     *
-     * @var bool
-     */
-    public $isCa;
-    /**
-     * Optional. Refers to the path length constraint field in the X.509
-     * extension. For a CA certificate, this value describes the depth of
-     * subordinate CA certificates that are allowed. If this value is less than 0,
-     * the request will fail. If this value is missing, the max path length will
-     * be omitted from the certificate.
-     *
-     * @var int
-     */
-    public $maxIssuerPathLength;
-    /**
-     * Optional. Refers to the "CA" boolean field in the X.509 extension. When
-     * this value is missing, the basic constraints extension will be omitted from
-     * the certificate.
-     *
-     * @param bool $isCa
-     */
-    public function setIsCa($isCa)
+namespace Google\Service\CertificateAuthorityService {
+    class CaOptions extends \Google\Model
     {
+        /**
+         * Optional. Refers to the "CA" boolean field in the X.509 extension. When
+         * this value is missing, the basic constraints extension will be omitted from
+         * the certificate.
+         *
+         * @var bool
+         */
+        public $isCa;
+        /**
+         * Optional. Refers to the path length constraint field in the X.509
+         * extension. For a CA certificate, this value describes the depth of
+         * subordinate CA certificates that are allowed. If this value is less than 0,
+         * the request will fail. If this value is missing, the max path length will
+         * be omitted from the certificate.
+         *
+         * @var int
+         */
+        public $maxIssuerPathLength;
+        /**
+         * Optional. Refers to the "CA" boolean field in the X.509 extension. When
+         * this value is missing, the basic constraints extension will be omitted from
+         * the certificate.
+         *
+         * @param bool $isCa
+         */
+        public function setIsCa($isCa)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsCa()
+        {
+        }
+        /**
+         * Optional. Refers to the path length constraint field in the X.509
+         * extension. For a CA certificate, this value describes the depth of
+         * subordinate CA certificates that are allowed. If this value is less than 0,
+         * the request will fail. If this value is missing, the max path length will
+         * be omitted from the certificate.
+         *
+         * @param int $maxIssuerPathLength
+         */
+        public function setMaxIssuerPathLength($maxIssuerPathLength)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxIssuerPathLength()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CertificateAuthorityService\CaOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIsCa()
-    {
-    }
-    /**
-     * Optional. Refers to the path length constraint field in the X.509
-     * extension. For a CA certificate, this value describes the depth of
-     * subordinate CA certificates that are allowed. If this value is less than 0,
-     * the request will fail. If this value is missing, the max path length will
-     * be omitted from the certificate.
-     *
-     * @param int $maxIssuerPathLength
-     */
-    public function setMaxIssuerPathLength($maxIssuerPathLength)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxIssuerPathLength()
+    class Google_Service_CertificateAuthorityService_CaOptions extends \Google\Service\CertificateAuthorityService\CaOptions
     {
     }
 }

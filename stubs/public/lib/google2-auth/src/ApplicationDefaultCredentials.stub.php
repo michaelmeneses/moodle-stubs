@@ -23,6 +23,22 @@
  */
 namespace Google\Auth;
 
+use DomainException;
+use Google\Auth\Credentials\AppIdentityCredentials;
+use Google\Auth\Credentials\GCECredentials;
+use Google\Auth\Credentials\ImpersonatedServiceAccountCredentials;
+use Google\Auth\Credentials\ServiceAccountCredentials;
+use Google\Auth\Credentials\UserRefreshCredentials;
+use Google\Auth\HttpHandler\HttpClientCache;
+use Google\Auth\HttpHandler\HttpHandlerFactory;
+use Google\Auth\Logging\StdOutLogger;
+use Google\Auth\Middleware\AuthTokenMiddleware;
+use Google\Auth\Middleware\ProxyAuthTokenMiddleware;
+use Google\Auth\Subscriber\AuthTokenSubscriber;
+use GuzzleHttp\Client;
+use InvalidArgumentException;
+use Psr\Cache\CacheItemPoolInterface;
+use Psr\Log\LoggerInterface;
 /**
  * ApplicationDefaultCredentials obtains the default credentials for
  * authorizing a request to a Google service.

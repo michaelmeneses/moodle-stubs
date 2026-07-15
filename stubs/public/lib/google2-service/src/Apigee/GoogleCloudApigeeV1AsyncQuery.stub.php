@@ -21,266 +21,275 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1AsyncQuery extends \Google\Model
-{
-    /**
-     * Creation time of the query.
-     *
-     * @var string
-     */
-    public $created;
-    /**
-     * Hostname is available only when query is executed at host level.
-     *
-     * @var string
-     */
-    public $envgroupHostname;
-    /**
-     * Error is set when query fails.
-     *
-     * @var string
-     */
-    public $error;
-    /**
-     * ExecutionTime is available only after the query is completed.
-     *
-     * @var string
-     */
-    public $executionTime;
-    /**
-     * Asynchronous Query Name.
-     *
-     * @var string
-     */
-    public $name;
-    protected $queryParamsType = GoogleCloudApigeeV1QueryMetadata::class;
-    protected $queryParamsDataType = '';
-    /**
-     * Asynchronous Report ID.
-     *
-     * @var string
-     */
-    public $reportDefinitionId;
-    protected $resultType = GoogleCloudApigeeV1AsyncQueryResult::class;
-    protected $resultDataType = '';
-    /**
-     * ResultFileSize is available only after the query is completed.
-     *
-     * @var string
-     */
-    public $resultFileSize;
-    /**
-     * ResultRows is available only after the query is completed.
-     *
-     * @var string
-     */
-    public $resultRows;
-    /**
-     * Self link of the query. Example: `/organizations/myorg/environments/myenv/q
-     * ueries/9cfc0d85-0f30-46d6-ae6f-318d0cb961bd` or following format if query
-     * is running at host level:
-     * `/organizations/myorg/hostQueries/9cfc0d85-0f30-46d6-ae6f-318d0cb961bd`
-     *
-     * @var string
-     */
-    public $self;
-    /**
-     * Query state could be "enqueued", "running", "completed", "failed".
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Last updated timestamp for the query.
-     *
-     * @var string
-     */
-    public $updated;
-    /**
-     * Creation time of the query.
-     *
-     * @param string $created
-     */
-    public function setCreated($created)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1AsyncQuery extends \Google\Model
     {
+        /**
+         * Creation time of the query.
+         *
+         * @var string
+         */
+        public $created;
+        /**
+         * Hostname is available only when query is executed at host level.
+         *
+         * @var string
+         */
+        public $envgroupHostname;
+        /**
+         * Error is set when query fails.
+         *
+         * @var string
+         */
+        public $error;
+        /**
+         * ExecutionTime is available only after the query is completed.
+         *
+         * @var string
+         */
+        public $executionTime;
+        /**
+         * Asynchronous Query Name.
+         *
+         * @var string
+         */
+        public $name;
+        protected $queryParamsType = GoogleCloudApigeeV1QueryMetadata::class;
+        protected $queryParamsDataType = '';
+        /**
+         * Asynchronous Report ID.
+         *
+         * @var string
+         */
+        public $reportDefinitionId;
+        protected $resultType = GoogleCloudApigeeV1AsyncQueryResult::class;
+        protected $resultDataType = '';
+        /**
+         * ResultFileSize is available only after the query is completed.
+         *
+         * @var string
+         */
+        public $resultFileSize;
+        /**
+         * ResultRows is available only after the query is completed.
+         *
+         * @var string
+         */
+        public $resultRows;
+        /**
+         * Self link of the query. Example: `/organizations/myorg/environments/myenv/q
+         * ueries/9cfc0d85-0f30-46d6-ae6f-318d0cb961bd` or following format if query
+         * is running at host level:
+         * `/organizations/myorg/hostQueries/9cfc0d85-0f30-46d6-ae6f-318d0cb961bd`
+         *
+         * @var string
+         */
+        public $self;
+        /**
+         * Query state could be "enqueued", "running", "completed", "failed".
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Last updated timestamp for the query.
+         *
+         * @var string
+         */
+        public $updated;
+        /**
+         * Creation time of the query.
+         *
+         * @param string $created
+         */
+        public function setCreated($created)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreated()
+        {
+        }
+        /**
+         * Hostname is available only when query is executed at host level.
+         *
+         * @param string $envgroupHostname
+         */
+        public function setEnvgroupHostname($envgroupHostname)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEnvgroupHostname()
+        {
+        }
+        /**
+         * Error is set when query fails.
+         *
+         * @param string $error
+         */
+        public function setError($error)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getError()
+        {
+        }
+        /**
+         * ExecutionTime is available only after the query is completed.
+         *
+         * @param string $executionTime
+         */
+        public function setExecutionTime($executionTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExecutionTime()
+        {
+        }
+        /**
+         * Asynchronous Query Name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Contains information like metrics, dimenstions etc of the AsyncQuery.
+         *
+         * @param GoogleCloudApigeeV1QueryMetadata $queryParams
+         */
+        public function setQueryParams(GoogleCloudApigeeV1QueryMetadata $queryParams)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1QueryMetadata
+         */
+        public function getQueryParams()
+        {
+        }
+        /**
+         * Asynchronous Report ID.
+         *
+         * @param string $reportDefinitionId
+         */
+        public function setReportDefinitionId($reportDefinitionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReportDefinitionId()
+        {
+        }
+        /**
+         * Result is available only after the query is completed.
+         *
+         * @param GoogleCloudApigeeV1AsyncQueryResult $result
+         */
+        public function setResult(GoogleCloudApigeeV1AsyncQueryResult $result)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1AsyncQueryResult
+         */
+        public function getResult()
+        {
+        }
+        /**
+         * ResultFileSize is available only after the query is completed.
+         *
+         * @param string $resultFileSize
+         */
+        public function setResultFileSize($resultFileSize)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResultFileSize()
+        {
+        }
+        /**
+         * ResultRows is available only after the query is completed.
+         *
+         * @param string $resultRows
+         */
+        public function setResultRows($resultRows)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResultRows()
+        {
+        }
+        /**
+         * Self link of the query. Example: `/organizations/myorg/environments/myenv/q
+         * ueries/9cfc0d85-0f30-46d6-ae6f-318d0cb961bd` or following format if query
+         * is running at host level:
+         * `/organizations/myorg/hostQueries/9cfc0d85-0f30-46d6-ae6f-318d0cb961bd`
+         *
+         * @param string $self
+         */
+        public function setSelf($self)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelf()
+        {
+        }
+        /**
+         * Query state could be "enqueued", "running", "completed", "failed".
+         *
+         * @param string $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Last updated timestamp for the query.
+         *
+         * @param string $updated
+         */
+        public function setUpdated($updated)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdated()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1AsyncQuery registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreated()
-    {
-    }
-    /**
-     * Hostname is available only when query is executed at host level.
-     *
-     * @param string $envgroupHostname
-     */
-    public function setEnvgroupHostname($envgroupHostname)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEnvgroupHostname()
-    {
-    }
-    /**
-     * Error is set when query fails.
-     *
-     * @param string $error
-     */
-    public function setError($error)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getError()
-    {
-    }
-    /**
-     * ExecutionTime is available only after the query is completed.
-     *
-     * @param string $executionTime
-     */
-    public function setExecutionTime($executionTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExecutionTime()
-    {
-    }
-    /**
-     * Asynchronous Query Name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Contains information like metrics, dimenstions etc of the AsyncQuery.
-     *
-     * @param GoogleCloudApigeeV1QueryMetadata $queryParams
-     */
-    public function setQueryParams(GoogleCloudApigeeV1QueryMetadata $queryParams)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1QueryMetadata
-     */
-    public function getQueryParams()
-    {
-    }
-    /**
-     * Asynchronous Report ID.
-     *
-     * @param string $reportDefinitionId
-     */
-    public function setReportDefinitionId($reportDefinitionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReportDefinitionId()
-    {
-    }
-    /**
-     * Result is available only after the query is completed.
-     *
-     * @param GoogleCloudApigeeV1AsyncQueryResult $result
-     */
-    public function setResult(GoogleCloudApigeeV1AsyncQueryResult $result)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1AsyncQueryResult
-     */
-    public function getResult()
-    {
-    }
-    /**
-     * ResultFileSize is available only after the query is completed.
-     *
-     * @param string $resultFileSize
-     */
-    public function setResultFileSize($resultFileSize)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResultFileSize()
-    {
-    }
-    /**
-     * ResultRows is available only after the query is completed.
-     *
-     * @param string $resultRows
-     */
-    public function setResultRows($resultRows)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResultRows()
-    {
-    }
-    /**
-     * Self link of the query. Example: `/organizations/myorg/environments/myenv/q
-     * ueries/9cfc0d85-0f30-46d6-ae6f-318d0cb961bd` or following format if query
-     * is running at host level:
-     * `/organizations/myorg/hostQueries/9cfc0d85-0f30-46d6-ae6f-318d0cb961bd`
-     *
-     * @param string $self
-     */
-    public function setSelf($self)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelf()
-    {
-    }
-    /**
-     * Query state could be "enqueued", "running", "completed", "failed".
-     *
-     * @param string $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Last updated timestamp for the query.
-     *
-     * @param string $updated
-     */
-    public function setUpdated($updated)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdated()
+    class Google_Service_Apigee_GoogleCloudApigeeV1AsyncQuery extends \Google\Service\Apigee\GoogleCloudApigeeV1AsyncQuery
     {
     }
 }

@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class Filter extends \Google\Collection
-{
-    protected $collection_key = 'eventType';
-    /**
-     * Event types to allowlist.
-     *
-     * @var string[]
-     */
-    public $eventType;
-    /**
-     * Event types to allowlist.
-     *
-     * @param string[] $eventType
-     */
-    public function setEventType($eventType)
+namespace Google\Service\Container {
+    class Filter extends \Google\Collection
     {
+        protected $collection_key = 'eventType';
+        /**
+         * Event types to allowlist.
+         *
+         * @var string[]
+         */
+        public $eventType;
+        /**
+         * Event types to allowlist.
+         *
+         * @param string[] $eventType
+         */
+        public function setEventType($eventType)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getEventType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Container\Filter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEventType()
+    class Google_Service_Container_Filter extends \Google\Service\Container\Filter
     {
     }
 }

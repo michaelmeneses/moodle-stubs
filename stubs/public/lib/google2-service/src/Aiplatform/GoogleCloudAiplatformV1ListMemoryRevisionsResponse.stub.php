@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ListMemoryRevisionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'memoryRevisions';
-    protected $memoryRevisionsType = GoogleCloudAiplatformV1MemoryRevision::class;
-    protected $memoryRevisionsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of Memory Revisions in the request page.
-     *
-     * @param GoogleCloudAiplatformV1MemoryRevision[] $memoryRevisions
-     */
-    public function setMemoryRevisions($memoryRevisions)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ListMemoryRevisionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'memoryRevisions';
+        protected $memoryRevisionsType = GoogleCloudAiplatformV1MemoryRevision::class;
+        protected $memoryRevisionsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of Memory Revisions in the request page.
+         *
+         * @param GoogleCloudAiplatformV1MemoryRevision[] $memoryRevisions
+         */
+        public function setMemoryRevisions($memoryRevisions)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1MemoryRevision[]
+         */
+        public function getMemoryRevisions()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1MemoryRevision[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListMemoryRevisionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMemoryRevisions()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ListMemoryRevisionsResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListMemoryRevisionsResponse
     {
     }
 }

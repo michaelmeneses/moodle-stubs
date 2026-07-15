@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Forms;
-
-class ListWatchesResponse extends \Google\Collection
-{
-    protected $collection_key = 'watches';
-    protected $watchesType = Watch::class;
-    protected $watchesDataType = 'array';
-    /**
-     * The returned watches.
-     *
-     * @param Watch[] $watches
-     */
-    public function setWatches($watches)
+namespace Google\Service\Forms {
+    class ListWatchesResponse extends \Google\Collection
     {
+        protected $collection_key = 'watches';
+        protected $watchesType = Watch::class;
+        protected $watchesDataType = 'array';
+        /**
+         * The returned watches.
+         *
+         * @param Watch[] $watches
+         */
+        public function setWatches($watches)
+        {
+        }
+        /**
+         * @return Watch[]
+         */
+        public function getWatches()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Watch[]
+     * Runtime class alias of \Google\Service\Forms\ListWatchesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getWatches()
+    class Google_Service_Forms_ListWatchesResponse extends \Google\Service\Forms\ListWatchesResponse
     {
     }
 }

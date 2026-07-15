@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1OcrConfigPremiumFeatures extends \Google\Model
-{
-    /**
-     * Turn on font identification model and return font style information.
-     *
-     * @var bool
-     */
-    public $computeStyleInfo;
-    /**
-     * Turn on the model that can extract LaTeX math formulas.
-     *
-     * @var bool
-     */
-    public $enableMathOcr;
-    /**
-     * Turn on selection mark detector in OCR engine. Only available in OCR 2.0
-     * (and later) processors.
-     *
-     * @var bool
-     */
-    public $enableSelectionMarkDetection;
-    /**
-     * Turn on font identification model and return font style information.
-     *
-     * @param bool $computeStyleInfo
-     */
-    public function setComputeStyleInfo($computeStyleInfo)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1OcrConfigPremiumFeatures extends \Google\Model
     {
+        /**
+         * Turn on font identification model and return font style information.
+         *
+         * @var bool
+         */
+        public $computeStyleInfo;
+        /**
+         * Turn on the model that can extract LaTeX math formulas.
+         *
+         * @var bool
+         */
+        public $enableMathOcr;
+        /**
+         * Turn on selection mark detector in OCR engine. Only available in OCR 2.0
+         * (and later) processors.
+         *
+         * @var bool
+         */
+        public $enableSelectionMarkDetection;
+        /**
+         * Turn on font identification model and return font style information.
+         *
+         * @param bool $computeStyleInfo
+         */
+        public function setComputeStyleInfo($computeStyleInfo)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getComputeStyleInfo()
+        {
+        }
+        /**
+         * Turn on the model that can extract LaTeX math formulas.
+         *
+         * @param bool $enableMathOcr
+         */
+        public function setEnableMathOcr($enableMathOcr)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableMathOcr()
+        {
+        }
+        /**
+         * Turn on selection mark detector in OCR engine. Only available in OCR 2.0
+         * (and later) processors.
+         *
+         * @param bool $enableSelectionMarkDetection
+         */
+        public function setEnableSelectionMarkDetection($enableSelectionMarkDetection)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableSelectionMarkDetection()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1OcrConfigPremiumFeatures registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getComputeStyleInfo()
-    {
-    }
-    /**
-     * Turn on the model that can extract LaTeX math formulas.
-     *
-     * @param bool $enableMathOcr
-     */
-    public function setEnableMathOcr($enableMathOcr)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnableMathOcr()
-    {
-    }
-    /**
-     * Turn on selection mark detector in OCR engine. Only available in OCR 2.0
-     * (and later) processors.
-     *
-     * @param bool $enableSelectionMarkDetection
-     */
-    public function setEnableSelectionMarkDetection($enableSelectionMarkDetection)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnableSelectionMarkDetection()
+    class Google_Service_Document_GoogleCloudDocumentaiV1OcrConfigPremiumFeatures extends \Google\Service\Document\GoogleCloudDocumentaiV1OcrConfigPremiumFeatures
     {
     }
 }

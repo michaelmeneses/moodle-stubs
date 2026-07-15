@@ -21,106 +21,115 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class ProjectListProjects extends \Google\Model
-{
-    /**
-     * A descriptive name for this project. A wrapper is used here because
-     * friendlyName can be set to the empty string.
-     *
-     * @var string
-     */
-    public $friendlyName;
-    /**
-     * An opaque ID of this project.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * The resource type.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The numeric ID of this project.
-     *
-     * @var string
-     */
-    public $numericId;
-    protected $projectReferenceType = ProjectReference::class;
-    protected $projectReferenceDataType = '';
-    /**
-     * A descriptive name for this project. A wrapper is used here because
-     * friendlyName can be set to the empty string.
-     *
-     * @param string $friendlyName
-     */
-    public function setFriendlyName($friendlyName)
+namespace Google\Service\Bigquery {
+    class ProjectListProjects extends \Google\Model
     {
+        /**
+         * A descriptive name for this project. A wrapper is used here because
+         * friendlyName can be set to the empty string.
+         *
+         * @var string
+         */
+        public $friendlyName;
+        /**
+         * An opaque ID of this project.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * The resource type.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The numeric ID of this project.
+         *
+         * @var string
+         */
+        public $numericId;
+        protected $projectReferenceType = ProjectReference::class;
+        protected $projectReferenceDataType = '';
+        /**
+         * A descriptive name for this project. A wrapper is used here because
+         * friendlyName can be set to the empty string.
+         *
+         * @param string $friendlyName
+         */
+        public function setFriendlyName($friendlyName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFriendlyName()
+        {
+        }
+        /**
+         * An opaque ID of this project.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * The resource type.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The numeric ID of this project.
+         *
+         * @param string $numericId
+         */
+        public function setNumericId($numericId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNumericId()
+        {
+        }
+        /**
+         * A unique reference to this project.
+         *
+         * @param ProjectReference $projectReference
+         */
+        public function setProjectReference(ProjectReference $projectReference)
+        {
+        }
+        /**
+         * @return ProjectReference
+         */
+        public function getProjectReference()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Bigquery\ProjectListProjects registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFriendlyName()
-    {
-    }
-    /**
-     * An opaque ID of this project.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * The resource type.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The numeric ID of this project.
-     *
-     * @param string $numericId
-     */
-    public function setNumericId($numericId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNumericId()
-    {
-    }
-    /**
-     * A unique reference to this project.
-     *
-     * @param ProjectReference $projectReference
-     */
-    public function setProjectReference(ProjectReference $projectReference)
-    {
-    }
-    /**
-     * @return ProjectReference
-     */
-    public function getProjectReference()
+    class Google_Service_Bigquery_ProjectListProjects extends \Google\Service\Bigquery\ProjectListProjects
     {
     }
 }

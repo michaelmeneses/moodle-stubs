@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1LintSpecRequest extends \Google\Model
-{
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1LintSpecRequest extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1LintSpecRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_APIhub_GoogleCloudApihubV1LintSpecRequest extends \Google\Service\APIhub\GoogleCloudApihubV1LintSpecRequest
+    {
+    }
 }

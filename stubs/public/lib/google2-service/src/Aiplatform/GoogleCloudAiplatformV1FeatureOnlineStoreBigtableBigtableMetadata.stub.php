@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1FeatureOnlineStoreBigtableBigtableMetadata extends \Google\Model
-{
-    /**
-     * The Cloud Bigtable instance id.
-     *
-     * @var string
-     */
-    public $instanceId;
-    /**
-     * The Cloud Bigtable table id.
-     *
-     * @var string
-     */
-    public $tableId;
-    /**
-     * Tenant project ID.
-     *
-     * @var string
-     */
-    public $tenantProjectId;
-    /**
-     * The Cloud Bigtable instance id.
-     *
-     * @param string $instanceId
-     */
-    public function setInstanceId($instanceId)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1FeatureOnlineStoreBigtableBigtableMetadata extends \Google\Model
     {
+        /**
+         * The Cloud Bigtable instance id.
+         *
+         * @var string
+         */
+        public $instanceId;
+        /**
+         * The Cloud Bigtable table id.
+         *
+         * @var string
+         */
+        public $tableId;
+        /**
+         * Tenant project ID.
+         *
+         * @var string
+         */
+        public $tenantProjectId;
+        /**
+         * The Cloud Bigtable instance id.
+         *
+         * @param string $instanceId
+         */
+        public function setInstanceId($instanceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstanceId()
+        {
+        }
+        /**
+         * The Cloud Bigtable table id.
+         *
+         * @param string $tableId
+         */
+        public function setTableId($tableId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTableId()
+        {
+        }
+        /**
+         * Tenant project ID.
+         *
+         * @param string $tenantProjectId
+         */
+        public function setTenantProjectId($tenantProjectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTenantProjectId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1FeatureOnlineStoreBigtableBigtableMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstanceId()
-    {
-    }
-    /**
-     * The Cloud Bigtable table id.
-     *
-     * @param string $tableId
-     */
-    public function setTableId($tableId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTableId()
-    {
-    }
-    /**
-     * Tenant project ID.
-     *
-     * @param string $tenantProjectId
-     */
-    public function setTenantProjectId($tenantProjectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTenantProjectId()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1FeatureOnlineStoreBigtableBigtableMetadata extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1FeatureOnlineStoreBigtableBigtableMetadata
     {
     }
 }

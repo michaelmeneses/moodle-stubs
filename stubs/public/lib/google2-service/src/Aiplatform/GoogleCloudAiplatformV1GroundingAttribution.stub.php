@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1GroundingAttribution extends \Google\Model
-{
-    /**
-     * @var float
-     */
-    public $confidenceScore;
-    protected $segmentType = GoogleCloudAiplatformV1Segment::class;
-    protected $segmentDataType = '';
-    protected $webType = GoogleCloudAiplatformV1GroundingAttributionWeb::class;
-    protected $webDataType = '';
-    /**
-     * @param float
-     */
-    public function setConfidenceScore($confidenceScore)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1GroundingAttribution extends \Google\Model
     {
+        /**
+         * @var float
+         */
+        public $confidenceScore;
+        protected $segmentType = GoogleCloudAiplatformV1Segment::class;
+        protected $segmentDataType = '';
+        protected $webType = GoogleCloudAiplatformV1GroundingAttributionWeb::class;
+        protected $webDataType = '';
+        /**
+         * @param float
+         */
+        public function setConfidenceScore($confidenceScore)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getConfidenceScore()
+        {
+        }
+        /**
+         * @param GoogleCloudAiplatformV1Segment
+         */
+        public function setSegment(GoogleCloudAiplatformV1Segment $segment)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1Segment
+         */
+        public function getSegment()
+        {
+        }
+        /**
+         * @param GoogleCloudAiplatformV1GroundingAttributionWeb
+         */
+        public function setWeb(GoogleCloudAiplatformV1GroundingAttributionWeb $web)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1GroundingAttributionWeb
+         */
+        public function getWeb()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1GroundingAttribution registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfidenceScore()
-    {
-    }
-    /**
-     * @param GoogleCloudAiplatformV1Segment
-     */
-    public function setSegment(GoogleCloudAiplatformV1Segment $segment)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1Segment
-     */
-    public function getSegment()
-    {
-    }
-    /**
-     * @param GoogleCloudAiplatformV1GroundingAttributionWeb
-     */
-    public function setWeb(GoogleCloudAiplatformV1GroundingAttributionWeb $web)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1GroundingAttributionWeb
-     */
-    public function getWeb()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1GroundingAttribution extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1GroundingAttribution
     {
     }
 }

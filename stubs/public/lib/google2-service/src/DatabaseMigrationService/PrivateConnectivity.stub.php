@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class PrivateConnectivity extends \Google\Model
-{
-    /**
-     * Required. The resource name (URI) of the private connection.
-     *
-     * @var string
-     */
-    public $privateConnection;
-    /**
-     * Required. The resource name (URI) of the private connection.
-     *
-     * @param string $privateConnection
-     */
-    public function setPrivateConnection($privateConnection)
+namespace Google\Service\DatabaseMigrationService {
+    class PrivateConnectivity extends \Google\Model
     {
+        /**
+         * Required. The resource name (URI) of the private connection.
+         *
+         * @var string
+         */
+        public $privateConnection;
+        /**
+         * Required. The resource name (URI) of the private connection.
+         *
+         * @param string $privateConnection
+         */
+        public function setPrivateConnection($privateConnection)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrivateConnection()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\PrivateConnectivity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPrivateConnection()
+    class Google_Service_DatabaseMigrationService_PrivateConnectivity extends \Google\Service\DatabaseMigrationService\PrivateConnectivity
     {
     }
 }

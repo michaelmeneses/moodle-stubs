@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BusinessProfilePerformance;
-
-class DailySubEntityType extends \Google\Model
-{
-    /**
-     * The day of the week is unspecified.
-     */
-    public const DAY_OF_WEEK_DAY_OF_WEEK_UNSPECIFIED = 'DAY_OF_WEEK_UNSPECIFIED';
-    /**
-     * Monday
-     */
-    public const DAY_OF_WEEK_MONDAY = 'MONDAY';
-    /**
-     * Tuesday
-     */
-    public const DAY_OF_WEEK_TUESDAY = 'TUESDAY';
-    /**
-     * Wednesday
-     */
-    public const DAY_OF_WEEK_WEDNESDAY = 'WEDNESDAY';
-    /**
-     * Thursday
-     */
-    public const DAY_OF_WEEK_THURSDAY = 'THURSDAY';
-    /**
-     * Friday
-     */
-    public const DAY_OF_WEEK_FRIDAY = 'FRIDAY';
-    /**
-     * Saturday
-     */
-    public const DAY_OF_WEEK_SATURDAY = 'SATURDAY';
-    /**
-     * Sunday
-     */
-    public const DAY_OF_WEEK_SUNDAY = 'SUNDAY';
-    /**
-     * Represents the day of the week. Eg: MONDAY. Currently supported
-     * DailyMetrics = NONE.
-     *
-     * @var string
-     */
-    public $dayOfWeek;
-    protected $timeOfDayType = TimeOfDay::class;
-    protected $timeOfDayDataType = '';
-    /**
-     * Represents the day of the week. Eg: MONDAY. Currently supported
-     * DailyMetrics = NONE.
-     *
-     * Accepted values: DAY_OF_WEEK_UNSPECIFIED, MONDAY, TUESDAY, WEDNESDAY,
-     * THURSDAY, FRIDAY, SATURDAY, SUNDAY
-     *
-     * @param self::DAY_OF_WEEK_* $dayOfWeek
-     */
-    public function setDayOfWeek($dayOfWeek)
+namespace Google\Service\BusinessProfilePerformance {
+    class DailySubEntityType extends \Google\Model
     {
+        /**
+         * The day of the week is unspecified.
+         */
+        public const DAY_OF_WEEK_DAY_OF_WEEK_UNSPECIFIED = 'DAY_OF_WEEK_UNSPECIFIED';
+        /**
+         * Monday
+         */
+        public const DAY_OF_WEEK_MONDAY = 'MONDAY';
+        /**
+         * Tuesday
+         */
+        public const DAY_OF_WEEK_TUESDAY = 'TUESDAY';
+        /**
+         * Wednesday
+         */
+        public const DAY_OF_WEEK_WEDNESDAY = 'WEDNESDAY';
+        /**
+         * Thursday
+         */
+        public const DAY_OF_WEEK_THURSDAY = 'THURSDAY';
+        /**
+         * Friday
+         */
+        public const DAY_OF_WEEK_FRIDAY = 'FRIDAY';
+        /**
+         * Saturday
+         */
+        public const DAY_OF_WEEK_SATURDAY = 'SATURDAY';
+        /**
+         * Sunday
+         */
+        public const DAY_OF_WEEK_SUNDAY = 'SUNDAY';
+        /**
+         * Represents the day of the week. Eg: MONDAY. Currently supported
+         * DailyMetrics = NONE.
+         *
+         * @var string
+         */
+        public $dayOfWeek;
+        protected $timeOfDayType = TimeOfDay::class;
+        protected $timeOfDayDataType = '';
+        /**
+         * Represents the day of the week. Eg: MONDAY. Currently supported
+         * DailyMetrics = NONE.
+         *
+         * Accepted values: DAY_OF_WEEK_UNSPECIFIED, MONDAY, TUESDAY, WEDNESDAY,
+         * THURSDAY, FRIDAY, SATURDAY, SUNDAY
+         *
+         * @param self::DAY_OF_WEEK_* $dayOfWeek
+         */
+        public function setDayOfWeek($dayOfWeek)
+        {
+        }
+        /**
+         * @return self::DAY_OF_WEEK_*
+         */
+        public function getDayOfWeek()
+        {
+        }
+        /**
+         * Represents the time of the day in 24 hour format. Eg: 13:34:20 Currently
+         * supported DailyMetrics = NONE.
+         *
+         * @param TimeOfDay $timeOfDay
+         */
+        public function setTimeOfDay(TimeOfDay $timeOfDay)
+        {
+        }
+        /**
+         * @return TimeOfDay
+         */
+        public function getTimeOfDay()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::DAY_OF_WEEK_*
+     * Runtime class alias of \Google\Service\BusinessProfilePerformance\DailySubEntityType registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDayOfWeek()
-    {
-    }
-    /**
-     * Represents the time of the day in 24 hour format. Eg: 13:34:20 Currently
-     * supported DailyMetrics = NONE.
-     *
-     * @param TimeOfDay $timeOfDay
-     */
-    public function setTimeOfDay(TimeOfDay $timeOfDay)
-    {
-    }
-    /**
-     * @return TimeOfDay
-     */
-    public function getTimeOfDay()
+    class Google_Service_BusinessProfilePerformance_DailySubEntityType extends \Google\Service\BusinessProfilePerformance\DailySubEntityType
     {
     }
 }

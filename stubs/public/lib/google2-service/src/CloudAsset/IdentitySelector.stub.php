@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class IdentitySelector extends \Google\Model
-{
-    /**
-     * Required. The identity appear in the form of principals in [IAM policy
-     * binding](https://cloud.google.com/iam/reference/rest/v1/Binding). The
-     * examples of supported forms are: "user:mike@example.com",
-     * "group:admins@example.com", "domain:google.com", "serviceAccount:my-
-     * project-id@appspot.gserviceaccount.com". Notice that wildcard characters
-     * (such as * and ?) are not supported. You must give a specific identity.
-     *
-     * @var string
-     */
-    public $identity;
-    /**
-     * Required. The identity appear in the form of principals in [IAM policy
-     * binding](https://cloud.google.com/iam/reference/rest/v1/Binding). The
-     * examples of supported forms are: "user:mike@example.com",
-     * "group:admins@example.com", "domain:google.com", "serviceAccount:my-
-     * project-id@appspot.gserviceaccount.com". Notice that wildcard characters
-     * (such as * and ?) are not supported. You must give a specific identity.
-     *
-     * @param string $identity
-     */
-    public function setIdentity($identity)
+namespace Google\Service\CloudAsset {
+    class IdentitySelector extends \Google\Model
     {
+        /**
+         * Required. The identity appear in the form of principals in [IAM policy
+         * binding](https://cloud.google.com/iam/reference/rest/v1/Binding). The
+         * examples of supported forms are: "user:mike@example.com",
+         * "group:admins@example.com", "domain:google.com", "serviceAccount:my-
+         * project-id@appspot.gserviceaccount.com". Notice that wildcard characters
+         * (such as * and ?) are not supported. You must give a specific identity.
+         *
+         * @var string
+         */
+        public $identity;
+        /**
+         * Required. The identity appear in the form of principals in [IAM policy
+         * binding](https://cloud.google.com/iam/reference/rest/v1/Binding). The
+         * examples of supported forms are: "user:mike@example.com",
+         * "group:admins@example.com", "domain:google.com", "serviceAccount:my-
+         * project-id@appspot.gserviceaccount.com". Notice that wildcard characters
+         * (such as * and ?) are not supported. You must give a specific identity.
+         *
+         * @param string $identity
+         */
+        public function setIdentity($identity)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIdentity()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudAsset\IdentitySelector registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIdentity()
+    class Google_Service_CloudAsset_IdentitySelector extends \Google\Service\CloudAsset\IdentitySelector
     {
     }
 }

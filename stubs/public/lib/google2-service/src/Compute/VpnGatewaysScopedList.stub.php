@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class VpnGatewaysScopedList extends \Google\Collection
-{
-    protected $collection_key = 'vpnGateways';
-    protected $vpnGatewaysType = VpnGateway::class;
-    protected $vpnGatewaysDataType = 'array';
-    protected $warningType = VpnGatewaysScopedListWarning::class;
-    protected $warningDataType = '';
-    /**
-     * [Output Only] A list of VPN gateways contained in this scope.
-     *
-     * @param VpnGateway[] $vpnGateways
-     */
-    public function setVpnGateways($vpnGateways)
+namespace Google\Service\Compute {
+    class VpnGatewaysScopedList extends \Google\Collection
     {
+        protected $collection_key = 'vpnGateways';
+        protected $vpnGatewaysType = VpnGateway::class;
+        protected $vpnGatewaysDataType = 'array';
+        protected $warningType = VpnGatewaysScopedListWarning::class;
+        protected $warningDataType = '';
+        /**
+         * [Output Only] A list of VPN gateways contained in this scope.
+         *
+         * @param VpnGateway[] $vpnGateways
+         */
+        public function setVpnGateways($vpnGateways)
+        {
+        }
+        /**
+         * @return VpnGateway[]
+         */
+        public function getVpnGateways()
+        {
+        }
+        /**
+         * [Output Only] Informational warning which replaces the list of addresses
+         * when the list is empty.
+         *
+         * @param VpnGatewaysScopedListWarning $warning
+         */
+        public function setWarning(VpnGatewaysScopedListWarning $warning)
+        {
+        }
+        /**
+         * @return VpnGatewaysScopedListWarning
+         */
+        public function getWarning()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return VpnGateway[]
+     * Runtime class alias of \Google\Service\Compute\VpnGatewaysScopedList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getVpnGateways()
-    {
-    }
-    /**
-     * [Output Only] Informational warning which replaces the list of addresses
-     * when the list is empty.
-     *
-     * @param VpnGatewaysScopedListWarning $warning
-     */
-    public function setWarning(VpnGatewaysScopedListWarning $warning)
-    {
-    }
-    /**
-     * @return VpnGatewaysScopedListWarning
-     */
-    public function getWarning()
+    class Google_Service_Compute_VpnGatewaysScopedList extends \Google\Service\Compute\VpnGatewaysScopedList
     {
     }
 }

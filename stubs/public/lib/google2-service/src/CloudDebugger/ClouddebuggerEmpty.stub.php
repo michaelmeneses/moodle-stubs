@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDebugger;
-
-class ClouddebuggerEmpty extends \Google\Model
-{
+namespace Google\Service\CloudDebugger {
+    class ClouddebuggerEmpty extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudDebugger\ClouddebuggerEmpty registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudDebugger_ClouddebuggerEmpty extends \Google\Service\CloudDebugger\ClouddebuggerEmpty
+    {
+    }
 }

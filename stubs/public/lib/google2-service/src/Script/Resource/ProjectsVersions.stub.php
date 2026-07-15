@@ -21,58 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Script\Resource;
-
-/**
- * The "versions" collection of methods.
- * Typical usage is:
- *  <code>
- *   $scriptService = new Google\Service\Script(...);
- *   $versions = $scriptService->projects_versions;
- *  </code>
- */
-class ProjectsVersions extends \Google\Service\Resource
-{
+namespace Google\Service\Script\Resource {
+    use Google\Service\Script\ListVersionsResponse;
+    use Google\Service\Script\Version;
     /**
-     * Creates a new immutable version using the current code, with a unique version
-     * number. (versions.create)
-     *
-     * @param string $scriptId The script project's Drive ID.
-     * @param Version $postBody
-     * @param array $optParams Optional parameters.
-     * @return Version
-     * @throws \Google\Service\Exception
+     * The "versions" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $scriptService = new Google\Service\Script(...);
+     *   $versions = $scriptService->projects_versions;
+     *  </code>
      */
-    public function create($scriptId, Version $postBody, $optParams = [])
+    class ProjectsVersions extends \Google\Service\Resource
     {
+        /**
+         * Creates a new immutable version using the current code, with a unique version
+         * number. (versions.create)
+         *
+         * @param string $scriptId The script project's Drive ID.
+         * @param Version $postBody
+         * @param array $optParams Optional parameters.
+         * @return Version
+         * @throws \Google\Service\Exception
+         */
+        public function create($scriptId, Version $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Gets a version of a script project. (versions.get)
+         *
+         * @param string $scriptId The script project's Drive ID.
+         * @param int $versionNumber The version number.
+         * @param array $optParams Optional parameters.
+         * @return Version
+         * @throws \Google\Service\Exception
+         */
+        public function get($scriptId, $versionNumber, $optParams = [])
+        {
+        }
+        /**
+         * List the versions of a script project. (versions.listProjectsVersions)
+         *
+         * @param string $scriptId The script project's Drive ID.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The maximum number of versions on each returned page.
+         * Defaults to 50.
+         * @opt_param string pageToken The token for continuing a previous list request
+         * on the next page. This should be set to the value of `nextPageToken` from a
+         * previous response.
+         * @return ListVersionsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsVersions($scriptId, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets a version of a script project. (versions.get)
-     *
-     * @param string $scriptId The script project's Drive ID.
-     * @param int $versionNumber The version number.
-     * @param array $optParams Optional parameters.
-     * @return Version
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Script\Resource\ProjectsVersions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($scriptId, $versionNumber, $optParams = [])
-    {
-    }
-    /**
-     * List the versions of a script project. (versions.listProjectsVersions)
-     *
-     * @param string $scriptId The script project's Drive ID.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The maximum number of versions on each returned page.
-     * Defaults to 50.
-     * @opt_param string pageToken The token for continuing a previous list request
-     * on the next page. This should be set to the value of `nextPageToken` from a
-     * previous response.
-     * @return ListVersionsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsVersions($scriptId, $optParams = [])
+    class Google_Service_Script_Resource_ProjectsVersions extends \Google\Service\Script\Resource\ProjectsVersions
     {
     }
 }

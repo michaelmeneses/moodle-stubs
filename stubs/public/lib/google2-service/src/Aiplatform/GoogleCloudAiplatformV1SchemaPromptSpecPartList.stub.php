@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaPromptSpecPartList extends \Google\Collection
-{
-    protected $collection_key = 'parts';
-    protected $partsType = GoogleCloudAiplatformV1Part::class;
-    protected $partsDataType = 'array';
-    /**
-     * A list of elements that can be part of a prompt.
-     *
-     * @param GoogleCloudAiplatformV1Part[] $parts
-     */
-    public function setParts($parts)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaPromptSpecPartList extends \Google\Collection
     {
+        protected $collection_key = 'parts';
+        protected $partsType = GoogleCloudAiplatformV1Part::class;
+        protected $partsDataType = 'array';
+        /**
+         * A list of elements that can be part of a prompt.
+         *
+         * @param GoogleCloudAiplatformV1Part[] $parts
+         */
+        public function setParts($parts)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1Part[]
+         */
+        public function getParts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1Part[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaPromptSpecPartList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getParts()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaPromptSpecPartList extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaPromptSpecPartList
     {
     }
 }

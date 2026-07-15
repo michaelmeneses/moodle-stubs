@@ -21,165 +21,174 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class Role extends \Google\Collection
-{
-    protected $collection_key = 'rolePrivileges';
-    /**
-     * ETag of the resource.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * Returns `true` if the role is a super admin role.
-     *
-     * @var bool
-     */
-    public $isSuperAdminRole;
-    /**
-     * Returns `true` if this is a pre-defined system role.
-     *
-     * @var bool
-     */
-    public $isSystemRole;
-    /**
-     * The type of the API resource. This is always `admin#directory#role`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * A short description of the role.
-     *
-     * @var string
-     */
-    public $roleDescription;
-    /**
-     * ID of the role.
-     *
-     * @var string
-     */
-    public $roleId;
-    /**
-     * Name of the role.
-     *
-     * @var string
-     */
-    public $roleName;
-    protected $rolePrivilegesType = RoleRolePrivileges::class;
-    protected $rolePrivilegesDataType = 'array';
-    /**
-     * ETag of the resource.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
+namespace Google\Service\Directory {
+    class Role extends \Google\Collection
     {
+        protected $collection_key = 'rolePrivileges';
+        /**
+         * ETag of the resource.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * Returns `true` if the role is a super admin role.
+         *
+         * @var bool
+         */
+        public $isSuperAdminRole;
+        /**
+         * Returns `true` if this is a pre-defined system role.
+         *
+         * @var bool
+         */
+        public $isSystemRole;
+        /**
+         * The type of the API resource. This is always `admin#directory#role`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * A short description of the role.
+         *
+         * @var string
+         */
+        public $roleDescription;
+        /**
+         * ID of the role.
+         *
+         * @var string
+         */
+        public $roleId;
+        /**
+         * Name of the role.
+         *
+         * @var string
+         */
+        public $roleName;
+        protected $rolePrivilegesType = RoleRolePrivileges::class;
+        protected $rolePrivilegesDataType = 'array';
+        /**
+         * ETag of the resource.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * Returns `true` if the role is a super admin role.
+         *
+         * @param bool $isSuperAdminRole
+         */
+        public function setIsSuperAdminRole($isSuperAdminRole)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsSuperAdminRole()
+        {
+        }
+        /**
+         * Returns `true` if this is a pre-defined system role.
+         *
+         * @param bool $isSystemRole
+         */
+        public function setIsSystemRole($isSystemRole)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsSystemRole()
+        {
+        }
+        /**
+         * The type of the API resource. This is always `admin#directory#role`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * A short description of the role.
+         *
+         * @param string $roleDescription
+         */
+        public function setRoleDescription($roleDescription)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRoleDescription()
+        {
+        }
+        /**
+         * ID of the role.
+         *
+         * @param string $roleId
+         */
+        public function setRoleId($roleId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRoleId()
+        {
+        }
+        /**
+         * Name of the role.
+         *
+         * @param string $roleName
+         */
+        public function setRoleName($roleName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRoleName()
+        {
+        }
+        /**
+         * The set of privileges that are granted to this role.
+         *
+         * @param RoleRolePrivileges[] $rolePrivileges
+         */
+        public function setRolePrivileges($rolePrivileges)
+        {
+        }
+        /**
+         * @return RoleRolePrivileges[]
+         */
+        public function getRolePrivileges()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Directory\Role registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
-    {
-    }
-    /**
-     * Returns `true` if the role is a super admin role.
-     *
-     * @param bool $isSuperAdminRole
-     */
-    public function setIsSuperAdminRole($isSuperAdminRole)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsSuperAdminRole()
-    {
-    }
-    /**
-     * Returns `true` if this is a pre-defined system role.
-     *
-     * @param bool $isSystemRole
-     */
-    public function setIsSystemRole($isSystemRole)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsSystemRole()
-    {
-    }
-    /**
-     * The type of the API resource. This is always `admin#directory#role`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * A short description of the role.
-     *
-     * @param string $roleDescription
-     */
-    public function setRoleDescription($roleDescription)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRoleDescription()
-    {
-    }
-    /**
-     * ID of the role.
-     *
-     * @param string $roleId
-     */
-    public function setRoleId($roleId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRoleId()
-    {
-    }
-    /**
-     * Name of the role.
-     *
-     * @param string $roleName
-     */
-    public function setRoleName($roleName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRoleName()
-    {
-    }
-    /**
-     * The set of privileges that are granted to this role.
-     *
-     * @param RoleRolePrivileges[] $rolePrivileges
-     */
-    public function setRolePrivileges($rolePrivileges)
-    {
-    }
-    /**
-     * @return RoleRolePrivileges[]
-     */
-    public function getRolePrivileges()
+    class Google_Service_Directory_Role extends \Google\Service\Directory\Role
     {
     }
 }

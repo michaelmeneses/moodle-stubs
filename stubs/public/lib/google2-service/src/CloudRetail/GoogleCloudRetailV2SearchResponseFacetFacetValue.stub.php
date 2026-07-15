@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2SearchResponseFacetFacetValue extends \Google\Model
-{
-    /**
-     * Number of items that have this facet value.
-     *
-     * @var string
-     */
-    public $count;
-    protected $intervalType = GoogleCloudRetailV2Interval::class;
-    protected $intervalDataType = '';
-    /**
-     * The maximum value in the FacetValue.interval. Only supported on numerical
-     * facets and returned if SearchRequest.FacetSpec.FacetKey.return_min_max is
-     * true.
-     *
-     * @var 
-     */
-    public $maxValue;
-    /**
-     * The minimum value in the FacetValue.interval. Only supported on numerical
-     * facets and returned if SearchRequest.FacetSpec.FacetKey.return_min_max is
-     * true.
-     *
-     * @var 
-     */
-    public $minValue;
-    /**
-     * Text value of a facet, such as "Black" for facet "colorFamilies".
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Number of items that have this facet value.
-     *
-     * @param string $count
-     */
-    public function setCount($count)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2SearchResponseFacetFacetValue extends \Google\Model
     {
+        /**
+         * Number of items that have this facet value.
+         *
+         * @var string
+         */
+        public $count;
+        protected $intervalType = GoogleCloudRetailV2Interval::class;
+        protected $intervalDataType = '';
+        /**
+         * The maximum value in the FacetValue.interval. Only supported on numerical
+         * facets and returned if SearchRequest.FacetSpec.FacetKey.return_min_max is
+         * true.
+         *
+         * @var 
+         */
+        public $maxValue;
+        /**
+         * The minimum value in the FacetValue.interval. Only supported on numerical
+         * facets and returned if SearchRequest.FacetSpec.FacetKey.return_min_max is
+         * true.
+         *
+         * @var 
+         */
+        public $minValue;
+        /**
+         * Text value of a facet, such as "Black" for facet "colorFamilies".
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Number of items that have this facet value.
+         *
+         * @param string $count
+         */
+        public function setCount($count)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCount()
+        {
+        }
+        /**
+         * Interval value for a facet, such as [10, 20) for facet "price".
+         *
+         * @param GoogleCloudRetailV2Interval $interval
+         */
+        public function setInterval(GoogleCloudRetailV2Interval $interval)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2Interval
+         */
+        public function getInterval()
+        {
+        }
+        public function setMaxValue($maxValue)
+        {
+        }
+        public function getMaxValue()
+        {
+        }
+        public function setMinValue($minValue)
+        {
+        }
+        public function getMinValue()
+        {
+        }
+        /**
+         * Text value of a facet, such as "Black" for facet "colorFamilies".
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2SearchResponseFacetFacetValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCount()
-    {
-    }
-    /**
-     * Interval value for a facet, such as [10, 20) for facet "price".
-     *
-     * @param GoogleCloudRetailV2Interval $interval
-     */
-    public function setInterval(GoogleCloudRetailV2Interval $interval)
-    {
-    }
-    /**
-     * @return GoogleCloudRetailV2Interval
-     */
-    public function getInterval()
-    {
-    }
-    public function setMaxValue($maxValue)
-    {
-    }
-    public function getMaxValue()
-    {
-    }
-    public function setMinValue($minValue)
-    {
-    }
-    public function getMinValue()
-    {
-    }
-    /**
-     * Text value of a facet, such as "Black" for facet "colorFamilies".
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2SearchResponseFacetFacetValue extends \Google\Service\CloudRetail\GoogleCloudRetailV2SearchResponseFacetFacetValue
     {
     }
 }

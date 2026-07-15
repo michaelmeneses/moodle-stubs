@@ -21,103 +21,112 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CivicInfo;
-
-class Office extends \Google\Collection
-{
-    protected $collection_key = 'sources';
-    /**
-     * @var string
-     */
-    public $divisionId;
-    /**
-     * @var string[]
-     */
-    public $levels;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string[]
-     */
-    public $officialIndices;
-    /**
-     * @var string[]
-     */
-    public $roles;
-    protected $sourcesType = Source::class;
-    protected $sourcesDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setDivisionId($divisionId)
+namespace Google\Service\CivicInfo {
+    class Office extends \Google\Collection
     {
+        protected $collection_key = 'sources';
+        /**
+         * @var string
+         */
+        public $divisionId;
+        /**
+         * @var string[]
+         */
+        public $levels;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string[]
+         */
+        public $officialIndices;
+        /**
+         * @var string[]
+         */
+        public $roles;
+        protected $sourcesType = Source::class;
+        protected $sourcesDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setDivisionId($divisionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDivisionId()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setLevels($levels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLevels()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setOfficialIndices($officialIndices)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getOfficialIndices()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setRoles($roles)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRoles()
+        {
+        }
+        /**
+         * @param Source[]
+         */
+        public function setSources($sources)
+        {
+        }
+        /**
+         * @return Source[]
+         */
+        public function getSources()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CivicInfo\Office registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDivisionId()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setLevels($levels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLevels()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setOfficialIndices($officialIndices)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getOfficialIndices()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setRoles($roles)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRoles()
-    {
-    }
-    /**
-     * @param Source[]
-     */
-    public function setSources($sources)
-    {
-    }
-    /**
-     * @return Source[]
-     */
-    public function getSources()
+    class Google_Service_CivicInfo_Office extends \Google\Service\CivicInfo\Office
     {
     }
 }

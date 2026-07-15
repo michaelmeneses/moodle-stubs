@@ -21,128 +21,137 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class ResizeNodeGroupRequest extends \Google\Model
-{
-    /**
-     * Optional. Timeout for graceful YARN decommissioning. Graceful
-     * decommissioning
-     * (https://cloud.google.com/dataproc/docs/concepts/configuring-
-     * clusters/scaling-clusters#graceful_decommissioning) allows the removal of
-     * nodes from the Compute Engine node group without interrupting jobs in
-     * progress. This timeout specifies how long to wait for jobs in progress to
-     * finish before forcefully removing nodes (and potentially interrupting
-     * jobs). Default timeout is 0 (for forceful decommission), and the maximum
-     * allowed timeout is 1 day. (see JSON representation of Duration
-     * (https://developers.google.com/protocol-buffers/docs/proto3#json)).Only
-     * supported on Dataproc image versions 1.2 and higher.
-     *
-     * @var string
-     */
-    public $gracefulDecommissionTimeout;
-    /**
-     * Optional. operation id of the parent operation sending the resize request
-     *
-     * @var string
-     */
-    public $parentOperationId;
-    /**
-     * Optional. A unique ID used to identify the request. If the server receives
-     * two ResizeNodeGroupRequest (https://cloud.google.com/dataproc/docs/referenc
-     * e/rpc/google.cloud.dataproc.v1#google.cloud.dataproc.v1.ResizeNodeGroupRequ
-     * ests) with the same ID, the second request is ignored and the first
-     * google.longrunning.Operation created and stored in the backend is
-     * returned.Recommendation: Set this value to a UUID
-     * (https://en.wikipedia.org/wiki/Universally_unique_identifier).The ID must
-     * contain only letters (a-z, A-Z), numbers (0-9), underscores (_), and
-     * hyphens (-). The maximum length is 40 characters.
-     *
-     * @var string
-     */
-    public $requestId;
-    /**
-     * Required. The number of running instances for the node group to maintain.
-     * The group adds or removes instances to maintain the number of instances
-     * specified by this parameter.
-     *
-     * @var int
-     */
-    public $size;
-    /**
-     * Optional. Timeout for graceful YARN decommissioning. Graceful
-     * decommissioning
-     * (https://cloud.google.com/dataproc/docs/concepts/configuring-
-     * clusters/scaling-clusters#graceful_decommissioning) allows the removal of
-     * nodes from the Compute Engine node group without interrupting jobs in
-     * progress. This timeout specifies how long to wait for jobs in progress to
-     * finish before forcefully removing nodes (and potentially interrupting
-     * jobs). Default timeout is 0 (for forceful decommission), and the maximum
-     * allowed timeout is 1 day. (see JSON representation of Duration
-     * (https://developers.google.com/protocol-buffers/docs/proto3#json)).Only
-     * supported on Dataproc image versions 1.2 and higher.
-     *
-     * @param string $gracefulDecommissionTimeout
-     */
-    public function setGracefulDecommissionTimeout($gracefulDecommissionTimeout)
+namespace Google\Service\Dataproc {
+    class ResizeNodeGroupRequest extends \Google\Model
     {
+        /**
+         * Optional. Timeout for graceful YARN decommissioning. Graceful
+         * decommissioning
+         * (https://cloud.google.com/dataproc/docs/concepts/configuring-
+         * clusters/scaling-clusters#graceful_decommissioning) allows the removal of
+         * nodes from the Compute Engine node group without interrupting jobs in
+         * progress. This timeout specifies how long to wait for jobs in progress to
+         * finish before forcefully removing nodes (and potentially interrupting
+         * jobs). Default timeout is 0 (for forceful decommission), and the maximum
+         * allowed timeout is 1 day. (see JSON representation of Duration
+         * (https://developers.google.com/protocol-buffers/docs/proto3#json)).Only
+         * supported on Dataproc image versions 1.2 and higher.
+         *
+         * @var string
+         */
+        public $gracefulDecommissionTimeout;
+        /**
+         * Optional. operation id of the parent operation sending the resize request
+         *
+         * @var string
+         */
+        public $parentOperationId;
+        /**
+         * Optional. A unique ID used to identify the request. If the server receives
+         * two ResizeNodeGroupRequest (https://cloud.google.com/dataproc/docs/referenc
+         * e/rpc/google.cloud.dataproc.v1#google.cloud.dataproc.v1.ResizeNodeGroupRequ
+         * ests) with the same ID, the second request is ignored and the first
+         * google.longrunning.Operation created and stored in the backend is
+         * returned.Recommendation: Set this value to a UUID
+         * (https://en.wikipedia.org/wiki/Universally_unique_identifier).The ID must
+         * contain only letters (a-z, A-Z), numbers (0-9), underscores (_), and
+         * hyphens (-). The maximum length is 40 characters.
+         *
+         * @var string
+         */
+        public $requestId;
+        /**
+         * Required. The number of running instances for the node group to maintain.
+         * The group adds or removes instances to maintain the number of instances
+         * specified by this parameter.
+         *
+         * @var int
+         */
+        public $size;
+        /**
+         * Optional. Timeout for graceful YARN decommissioning. Graceful
+         * decommissioning
+         * (https://cloud.google.com/dataproc/docs/concepts/configuring-
+         * clusters/scaling-clusters#graceful_decommissioning) allows the removal of
+         * nodes from the Compute Engine node group without interrupting jobs in
+         * progress. This timeout specifies how long to wait for jobs in progress to
+         * finish before forcefully removing nodes (and potentially interrupting
+         * jobs). Default timeout is 0 (for forceful decommission), and the maximum
+         * allowed timeout is 1 day. (see JSON representation of Duration
+         * (https://developers.google.com/protocol-buffers/docs/proto3#json)).Only
+         * supported on Dataproc image versions 1.2 and higher.
+         *
+         * @param string $gracefulDecommissionTimeout
+         */
+        public function setGracefulDecommissionTimeout($gracefulDecommissionTimeout)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGracefulDecommissionTimeout()
+        {
+        }
+        /**
+         * Optional. operation id of the parent operation sending the resize request
+         *
+         * @param string $parentOperationId
+         */
+        public function setParentOperationId($parentOperationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParentOperationId()
+        {
+        }
+        /**
+         * Optional. A unique ID used to identify the request. If the server receives
+         * two ResizeNodeGroupRequest (https://cloud.google.com/dataproc/docs/referenc
+         * e/rpc/google.cloud.dataproc.v1#google.cloud.dataproc.v1.ResizeNodeGroupRequ
+         * ests) with the same ID, the second request is ignored and the first
+         * google.longrunning.Operation created and stored in the backend is
+         * returned.Recommendation: Set this value to a UUID
+         * (https://en.wikipedia.org/wiki/Universally_unique_identifier).The ID must
+         * contain only letters (a-z, A-Z), numbers (0-9), underscores (_), and
+         * hyphens (-). The maximum length is 40 characters.
+         *
+         * @param string $requestId
+         */
+        public function setRequestId($requestId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestId()
+        {
+        }
+        /**
+         * Required. The number of running instances for the node group to maintain.
+         * The group adds or removes instances to maintain the number of instances
+         * specified by this parameter.
+         *
+         * @param int $size
+         */
+        public function setSize($size)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSize()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\ResizeNodeGroupRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGracefulDecommissionTimeout()
-    {
-    }
-    /**
-     * Optional. operation id of the parent operation sending the resize request
-     *
-     * @param string $parentOperationId
-     */
-    public function setParentOperationId($parentOperationId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParentOperationId()
-    {
-    }
-    /**
-     * Optional. A unique ID used to identify the request. If the server receives
-     * two ResizeNodeGroupRequest (https://cloud.google.com/dataproc/docs/referenc
-     * e/rpc/google.cloud.dataproc.v1#google.cloud.dataproc.v1.ResizeNodeGroupRequ
-     * ests) with the same ID, the second request is ignored and the first
-     * google.longrunning.Operation created and stored in the backend is
-     * returned.Recommendation: Set this value to a UUID
-     * (https://en.wikipedia.org/wiki/Universally_unique_identifier).The ID must
-     * contain only letters (a-z, A-Z), numbers (0-9), underscores (_), and
-     * hyphens (-). The maximum length is 40 characters.
-     *
-     * @param string $requestId
-     */
-    public function setRequestId($requestId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestId()
-    {
-    }
-    /**
-     * Required. The number of running instances for the node group to maintain.
-     * The group adds or removes instances to maintain the number of instances
-     * specified by this parameter.
-     *
-     * @param int $size
-     */
-    public function setSize($size)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSize()
+    class Google_Service_Dataproc_ResizeNodeGroupRequest extends \Google\Service\Dataproc\ResizeNodeGroupRequest
     {
     }
 }

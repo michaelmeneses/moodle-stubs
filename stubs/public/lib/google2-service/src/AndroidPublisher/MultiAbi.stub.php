@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class MultiAbi extends \Google\Collection
-{
-    protected $collection_key = 'abi';
-    protected $abiType = Abi::class;
-    protected $abiDataType = 'array';
-    /**
-     * A list of targeted ABIs, as represented by the Android Platform
-     *
-     * @param Abi[] $abi
-     */
-    public function setAbi($abi)
+namespace Google\Service\AndroidPublisher {
+    class MultiAbi extends \Google\Collection
     {
+        protected $collection_key = 'abi';
+        protected $abiType = Abi::class;
+        protected $abiDataType = 'array';
+        /**
+         * A list of targeted ABIs, as represented by the Android Platform
+         *
+         * @param Abi[] $abi
+         */
+        public function setAbi($abi)
+        {
+        }
+        /**
+         * @return Abi[]
+         */
+        public function getAbi()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Abi[]
+     * Runtime class alias of \Google\Service\AndroidPublisher\MultiAbi registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAbi()
+    class Google_Service_AndroidPublisher_MultiAbi extends \Google\Service\AndroidPublisher\MultiAbi
     {
     }
 }

@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleCloudRunOpV2VersionToPath extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $mode;
-    /**
-     * @var string
-     */
-    public $path;
-    /**
-     * @var string
-     */
-    public $version;
-    /**
-     * @param int
-     */
-    public function setMode($mode)
+namespace Google\Service\CloudRun {
+    class GoogleCloudRunOpV2VersionToPath extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $mode;
+        /**
+         * @var string
+         */
+        public $path;
+        /**
+         * @var string
+         */
+        public $version;
+        /**
+         * @param int
+         */
+        public function setMode($mode)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMode()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudRun\GoogleCloudRunOpV2VersionToPath registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMode()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPath($path)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPath()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_CloudRun_GoogleCloudRunOpV2VersionToPath extends \Google\Service\CloudRun\GoogleCloudRunOpV2VersionToPath
     {
     }
 }

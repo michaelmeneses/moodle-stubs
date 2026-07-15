@@ -21,116 +21,125 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceControl;
-
-class Peer extends \Google\Model
-{
-    /**
-     * The IP address of the peer.
-     *
-     * @var string
-     */
-    public $ip;
-    /**
-     * The labels associated with the peer.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * The network port of the peer.
-     *
-     * @var string
-     */
-    public $port;
-    /**
-     * The identity of this peer. Similar to `Request.auth.principal`, but
-     * relative to the peer instead of the request. For example, the identity
-     * associated with a load balancer that forwarded the request.
-     *
-     * @var string
-     */
-    public $principal;
-    /**
-     * The CLDR country/region code associated with the above IP address. If the
-     * IP address is private, the `region_code` should reflect the physical
-     * location where this peer is running.
-     *
-     * @var string
-     */
-    public $regionCode;
-    /**
-     * The IP address of the peer.
-     *
-     * @param string $ip
-     */
-    public function setIp($ip)
+namespace Google\Service\ServiceControl {
+    class Peer extends \Google\Model
     {
+        /**
+         * The IP address of the peer.
+         *
+         * @var string
+         */
+        public $ip;
+        /**
+         * The labels associated with the peer.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * The network port of the peer.
+         *
+         * @var string
+         */
+        public $port;
+        /**
+         * The identity of this peer. Similar to `Request.auth.principal`, but
+         * relative to the peer instead of the request. For example, the identity
+         * associated with a load balancer that forwarded the request.
+         *
+         * @var string
+         */
+        public $principal;
+        /**
+         * The CLDR country/region code associated with the above IP address. If the
+         * IP address is private, the `region_code` should reflect the physical
+         * location where this peer is running.
+         *
+         * @var string
+         */
+        public $regionCode;
+        /**
+         * The IP address of the peer.
+         *
+         * @param string $ip
+         */
+        public function setIp($ip)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIp()
+        {
+        }
+        /**
+         * The labels associated with the peer.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * The network port of the peer.
+         *
+         * @param string $port
+         */
+        public function setPort($port)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPort()
+        {
+        }
+        /**
+         * The identity of this peer. Similar to `Request.auth.principal`, but
+         * relative to the peer instead of the request. For example, the identity
+         * associated with a load balancer that forwarded the request.
+         *
+         * @param string $principal
+         */
+        public function setPrincipal($principal)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrincipal()
+        {
+        }
+        /**
+         * The CLDR country/region code associated with the above IP address. If the
+         * IP address is private, the `region_code` should reflect the physical
+         * location where this peer is running.
+         *
+         * @param string $regionCode
+         */
+        public function setRegionCode($regionCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegionCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ServiceControl\Peer registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIp()
-    {
-    }
-    /**
-     * The labels associated with the peer.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * The network port of the peer.
-     *
-     * @param string $port
-     */
-    public function setPort($port)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPort()
-    {
-    }
-    /**
-     * The identity of this peer. Similar to `Request.auth.principal`, but
-     * relative to the peer instead of the request. For example, the identity
-     * associated with a load balancer that forwarded the request.
-     *
-     * @param string $principal
-     */
-    public function setPrincipal($principal)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrincipal()
-    {
-    }
-    /**
-     * The CLDR country/region code associated with the above IP address. If the
-     * IP address is private, the `region_code` should reflect the physical
-     * location where this peer is running.
-     *
-     * @param string $regionCode
-     */
-    public function setRegionCode($regionCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegionCode()
+    class Google_Service_ServiceControl_Peer extends \Google\Service\ServiceControl\Peer
     {
     }
 }

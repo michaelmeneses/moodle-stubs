@@ -8,6 +8,12 @@
  */
 namespace Aws\Sqs;
 
+use Aws\AwsClient;
+use Aws\CommandInterface;
+use Aws\Sqs\Exception\SqsException;
+use GuzzleHttp\Psr7\Uri;
+use GuzzleHttp\Psr7\UriResolver;
+use Psr\Http\Message\RequestInterface;
 /**
  * Client used to interact with **Amazon Simple Queue Service (Amazon SQS)**.
  *

@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleCloudRunV1Condition extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $lastTransitionTime;
-    /**
-     * @var string
-     */
-    public $message;
-    /**
-     * @var string
-     */
-    public $reason;
-    /**
-     * @var string
-     */
-    public $severity;
-    /**
-     * @var string
-     */
-    public $status;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @param string
-     */
-    public function setLastTransitionTime($lastTransitionTime)
+namespace Google\Service\CloudRun {
+    class GoogleCloudRunV1Condition extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $lastTransitionTime;
+        /**
+         * @var string
+         */
+        public $message;
+        /**
+         * @var string
+         */
+        public $reason;
+        /**
+         * @var string
+         */
+        public $severity;
+        /**
+         * @var string
+         */
+        public $status;
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @param string
+         */
+        public function setLastTransitionTime($lastTransitionTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastTransitionTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReason($reason)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReason()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSeverity($severity)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSeverity()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStatus()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRun\GoogleCloudRunV1Condition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLastTransitionTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMessage($message)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMessage()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReason($reason)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReason()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSeverity($severity)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSeverity()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStatus()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_CloudRun_GoogleCloudRunV1Condition extends \Google\Service\CloudRun\GoogleCloudRunV1Condition
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class LiaPosDataProvider extends \Google\Model
-{
-    /**
-     * The ID of the POS data provider.
-     *
-     * @var string
-     */
-    public $posDataProviderId;
-    /**
-     * The account ID by which this merchant is known to the POS data provider.
-     *
-     * @var string
-     */
-    public $posExternalAccountId;
-    /**
-     * The ID of the POS data provider.
-     *
-     * @param string $posDataProviderId
-     */
-    public function setPosDataProviderId($posDataProviderId)
+namespace Google\Service\ShoppingContent {
+    class LiaPosDataProvider extends \Google\Model
     {
+        /**
+         * The ID of the POS data provider.
+         *
+         * @var string
+         */
+        public $posDataProviderId;
+        /**
+         * The account ID by which this merchant is known to the POS data provider.
+         *
+         * @var string
+         */
+        public $posExternalAccountId;
+        /**
+         * The ID of the POS data provider.
+         *
+         * @param string $posDataProviderId
+         */
+        public function setPosDataProviderId($posDataProviderId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPosDataProviderId()
+        {
+        }
+        /**
+         * The account ID by which this merchant is known to the POS data provider.
+         *
+         * @param string $posExternalAccountId
+         */
+        public function setPosExternalAccountId($posExternalAccountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPosExternalAccountId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\LiaPosDataProvider registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPosDataProviderId()
-    {
-    }
-    /**
-     * The account ID by which this merchant is known to the POS data provider.
-     *
-     * @param string $posExternalAccountId
-     */
-    public function setPosExternalAccountId($posExternalAccountId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPosExternalAccountId()
+    class Google_Service_ShoppingContent_LiaPosDataProvider extends \Google\Service\ShoppingContent\LiaPosDataProvider
     {
     }
 }

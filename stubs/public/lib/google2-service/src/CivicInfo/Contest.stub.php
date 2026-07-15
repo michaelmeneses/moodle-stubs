@@ -21,387 +21,396 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CivicInfo;
-
-class Contest extends \Google\Collection
-{
-    protected $collection_key = 'sources';
-    /**
-     * @var string
-     */
-    public $ballotPlacement;
-    /**
-     * @var string
-     */
-    public $ballotTitle;
-    protected $candidatesType = Candidate::class;
-    protected $candidatesDataType = 'array';
-    protected $districtType = ElectoralDistrict::class;
-    protected $districtDataType = '';
-    /**
-     * @var string
-     */
-    public $electorateSpecifications;
-    /**
-     * @var string[]
-     */
-    public $level;
-    /**
-     * @var string
-     */
-    public $numberElected;
-    /**
-     * @var string
-     */
-    public $numberVotingFor;
-    /**
-     * @var string
-     */
-    public $office;
-    /**
-     * @var string[]
-     */
-    public $primaryParties;
-    /**
-     * @var string[]
-     */
-    public $referendumBallotResponses;
-    /**
-     * @var string
-     */
-    public $referendumBrief;
-    /**
-     * @var string
-     */
-    public $referendumConStatement;
-    /**
-     * @var string
-     */
-    public $referendumEffectOfAbstain;
-    /**
-     * @var string
-     */
-    public $referendumPassageThreshold;
-    /**
-     * @var string
-     */
-    public $referendumProStatement;
-    /**
-     * @var string
-     */
-    public $referendumSubtitle;
-    /**
-     * @var string
-     */
-    public $referendumText;
-    /**
-     * @var string
-     */
-    public $referendumTitle;
-    /**
-     * @var string
-     */
-    public $referendumUrl;
-    /**
-     * @var string[]
-     */
-    public $roles;
-    protected $sourcesType = Source::class;
-    protected $sourcesDataType = 'array';
-    /**
-     * @var string
-     */
-    public $special;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @param string
-     */
-    public function setBallotPlacement($ballotPlacement)
+namespace Google\Service\CivicInfo {
+    class Contest extends \Google\Collection
     {
+        protected $collection_key = 'sources';
+        /**
+         * @var string
+         */
+        public $ballotPlacement;
+        /**
+         * @var string
+         */
+        public $ballotTitle;
+        protected $candidatesType = Candidate::class;
+        protected $candidatesDataType = 'array';
+        protected $districtType = ElectoralDistrict::class;
+        protected $districtDataType = '';
+        /**
+         * @var string
+         */
+        public $electorateSpecifications;
+        /**
+         * @var string[]
+         */
+        public $level;
+        /**
+         * @var string
+         */
+        public $numberElected;
+        /**
+         * @var string
+         */
+        public $numberVotingFor;
+        /**
+         * @var string
+         */
+        public $office;
+        /**
+         * @var string[]
+         */
+        public $primaryParties;
+        /**
+         * @var string[]
+         */
+        public $referendumBallotResponses;
+        /**
+         * @var string
+         */
+        public $referendumBrief;
+        /**
+         * @var string
+         */
+        public $referendumConStatement;
+        /**
+         * @var string
+         */
+        public $referendumEffectOfAbstain;
+        /**
+         * @var string
+         */
+        public $referendumPassageThreshold;
+        /**
+         * @var string
+         */
+        public $referendumProStatement;
+        /**
+         * @var string
+         */
+        public $referendumSubtitle;
+        /**
+         * @var string
+         */
+        public $referendumText;
+        /**
+         * @var string
+         */
+        public $referendumTitle;
+        /**
+         * @var string
+         */
+        public $referendumUrl;
+        /**
+         * @var string[]
+         */
+        public $roles;
+        protected $sourcesType = Source::class;
+        protected $sourcesDataType = 'array';
+        /**
+         * @var string
+         */
+        public $special;
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @param string
+         */
+        public function setBallotPlacement($ballotPlacement)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBallotPlacement()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setBallotTitle($ballotTitle)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBallotTitle()
+        {
+        }
+        /**
+         * @param Candidate[]
+         */
+        public function setCandidates($candidates)
+        {
+        }
+        /**
+         * @return Candidate[]
+         */
+        public function getCandidates()
+        {
+        }
+        /**
+         * @param ElectoralDistrict
+         */
+        public function setDistrict(ElectoralDistrict $district)
+        {
+        }
+        /**
+         * @return ElectoralDistrict
+         */
+        public function getDistrict()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setElectorateSpecifications($electorateSpecifications)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getElectorateSpecifications()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setLevel($level)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLevel()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNumberElected($numberElected)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNumberElected()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNumberVotingFor($numberVotingFor)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNumberVotingFor()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOffice($office)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOffice()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setPrimaryParties($primaryParties)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPrimaryParties()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setReferendumBallotResponses($referendumBallotResponses)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getReferendumBallotResponses()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReferendumBrief($referendumBrief)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReferendumBrief()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReferendumConStatement($referendumConStatement)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReferendumConStatement()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReferendumEffectOfAbstain($referendumEffectOfAbstain)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReferendumEffectOfAbstain()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReferendumPassageThreshold($referendumPassageThreshold)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReferendumPassageThreshold()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReferendumProStatement($referendumProStatement)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReferendumProStatement()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReferendumSubtitle($referendumSubtitle)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReferendumSubtitle()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReferendumText($referendumText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReferendumText()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReferendumTitle($referendumTitle)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReferendumTitle()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReferendumUrl($referendumUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReferendumUrl()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setRoles($roles)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRoles()
+        {
+        }
+        /**
+         * @param Source[]
+         */
+        public function setSources($sources)
+        {
+        }
+        /**
+         * @return Source[]
+         */
+        public function getSources()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSpecial($special)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSpecial()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CivicInfo\Contest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBallotPlacement()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setBallotTitle($ballotTitle)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBallotTitle()
-    {
-    }
-    /**
-     * @param Candidate[]
-     */
-    public function setCandidates($candidates)
-    {
-    }
-    /**
-     * @return Candidate[]
-     */
-    public function getCandidates()
-    {
-    }
-    /**
-     * @param ElectoralDistrict
-     */
-    public function setDistrict(ElectoralDistrict $district)
-    {
-    }
-    /**
-     * @return ElectoralDistrict
-     */
-    public function getDistrict()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setElectorateSpecifications($electorateSpecifications)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getElectorateSpecifications()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setLevel($level)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLevel()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNumberElected($numberElected)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNumberElected()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNumberVotingFor($numberVotingFor)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNumberVotingFor()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOffice($office)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOffice()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setPrimaryParties($primaryParties)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPrimaryParties()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setReferendumBallotResponses($referendumBallotResponses)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getReferendumBallotResponses()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReferendumBrief($referendumBrief)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReferendumBrief()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReferendumConStatement($referendumConStatement)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReferendumConStatement()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReferendumEffectOfAbstain($referendumEffectOfAbstain)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReferendumEffectOfAbstain()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReferendumPassageThreshold($referendumPassageThreshold)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReferendumPassageThreshold()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReferendumProStatement($referendumProStatement)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReferendumProStatement()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReferendumSubtitle($referendumSubtitle)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReferendumSubtitle()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReferendumText($referendumText)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReferendumText()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReferendumTitle($referendumTitle)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReferendumTitle()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReferendumUrl($referendumUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReferendumUrl()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setRoles($roles)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRoles()
-    {
-    }
-    /**
-     * @param Source[]
-     */
-    public function setSources($sources)
-    {
-    }
-    /**
-     * @return Source[]
-     */
-    public function getSources()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSpecial($special)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSpecial()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_CivicInfo_Contest extends \Google\Service\CivicInfo\Contest
     {
     }
 }

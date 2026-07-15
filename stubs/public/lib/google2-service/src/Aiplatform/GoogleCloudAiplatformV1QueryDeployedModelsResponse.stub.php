@@ -21,108 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1QueryDeployedModelsResponse extends \Google\Collection
-{
-    protected $collection_key = 'deployedModels';
-    protected $deployedModelRefsType = GoogleCloudAiplatformV1DeployedModelRef::class;
-    protected $deployedModelRefsDataType = 'array';
-    protected $deployedModelsType = GoogleCloudAiplatformV1DeployedModel::class;
-    protected $deployedModelsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The total number of DeployedModels on this DeploymentResourcePool.
-     *
-     * @var int
-     */
-    public $totalDeployedModelCount;
-    /**
-     * The total number of Endpoints that have DeployedModels on this
-     * DeploymentResourcePool.
-     *
-     * @var int
-     */
-    public $totalEndpointCount;
-    /**
-     * References to the DeployedModels that share the specified
-     * deploymentResourcePool.
-     *
-     * @param GoogleCloudAiplatformV1DeployedModelRef[] $deployedModelRefs
-     */
-    public function setDeployedModelRefs($deployedModelRefs)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1QueryDeployedModelsResponse extends \Google\Collection
     {
+        protected $collection_key = 'deployedModels';
+        protected $deployedModelRefsType = GoogleCloudAiplatformV1DeployedModelRef::class;
+        protected $deployedModelRefsDataType = 'array';
+        protected $deployedModelsType = GoogleCloudAiplatformV1DeployedModel::class;
+        protected $deployedModelsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The total number of DeployedModels on this DeploymentResourcePool.
+         *
+         * @var int
+         */
+        public $totalDeployedModelCount;
+        /**
+         * The total number of Endpoints that have DeployedModels on this
+         * DeploymentResourcePool.
+         *
+         * @var int
+         */
+        public $totalEndpointCount;
+        /**
+         * References to the DeployedModels that share the specified
+         * deploymentResourcePool.
+         *
+         * @param GoogleCloudAiplatformV1DeployedModelRef[] $deployedModelRefs
+         */
+        public function setDeployedModelRefs($deployedModelRefs)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1DeployedModelRef[]
+         */
+        public function getDeployedModelRefs()
+        {
+        }
+        /**
+         * DEPRECATED Use deployed_model_refs instead.
+         *
+         * @deprecated
+         * @param GoogleCloudAiplatformV1DeployedModel[] $deployedModels
+         */
+        public function setDeployedModels($deployedModels)
+        {
+        }
+        /**
+         * @deprecated
+         * @return GoogleCloudAiplatformV1DeployedModel[]
+         */
+        public function getDeployedModels()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The total number of DeployedModels on this DeploymentResourcePool.
+         *
+         * @param int $totalDeployedModelCount
+         */
+        public function setTotalDeployedModelCount($totalDeployedModelCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalDeployedModelCount()
+        {
+        }
+        /**
+         * The total number of Endpoints that have DeployedModels on this
+         * DeploymentResourcePool.
+         *
+         * @param int $totalEndpointCount
+         */
+        public function setTotalEndpointCount($totalEndpointCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalEndpointCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1DeployedModelRef[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1QueryDeployedModelsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeployedModelRefs()
-    {
-    }
-    /**
-     * DEPRECATED Use deployed_model_refs instead.
-     *
-     * @deprecated
-     * @param GoogleCloudAiplatformV1DeployedModel[] $deployedModels
-     */
-    public function setDeployedModels($deployedModels)
-    {
-    }
-    /**
-     * @deprecated
-     * @return GoogleCloudAiplatformV1DeployedModel[]
-     */
-    public function getDeployedModels()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The total number of DeployedModels on this DeploymentResourcePool.
-     *
-     * @param int $totalDeployedModelCount
-     */
-    public function setTotalDeployedModelCount($totalDeployedModelCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalDeployedModelCount()
-    {
-    }
-    /**
-     * The total number of Endpoints that have DeployedModels on this
-     * DeploymentResourcePool.
-     *
-     * @param int $totalEndpointCount
-     */
-    public function setTotalEndpointCount($totalEndpointCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalEndpointCount()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1QueryDeployedModelsResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1QueryDeployedModelsResponse
     {
     }
 }

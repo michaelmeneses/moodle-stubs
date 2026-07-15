@@ -21,63 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Clouderrorreporting\Resource;
-
-/**
- * The "groups" collection of methods.
- * Typical usage is:
- *  <code>
- *   $clouderrorreportingService = new Google\Service\Clouderrorreporting(...);
- *   $groups = $clouderrorreportingService->projects_groups;
- *  </code>
- */
-class ProjectsGroups extends \Google\Service\Resource
-{
+namespace Google\Service\Clouderrorreporting\Resource {
+    use Google\Service\Clouderrorreporting\ErrorGroup;
     /**
-     * Get the specified group. (groups.get)
-     *
-     * @param string $groupName Required. The group resource name. Written as either
-     * `projects/{projectID}/groups/{group_id}` or
-     * `projects/{projectID}/locations/{location}/groups/{group_id}`. Call
-     * groupStats.list to return a list of groups belonging to this project.
-     * Examples: `projects/my-project-123/groups/my-group`, `projects/my-
-     * project-123/locations/global/groups/my-group` In the group resource name, the
-     * `group_id` is a unique identifier for a particular error group. The
-     * identifier is derived from key parts of the error-log content and is treated
-     * as Service Data. For information about how Service Data is handled, see
-     * [Google Cloud Privacy Notice](https://cloud.google.com/terms/cloud-privacy-
-     * notice). For a list of supported locations, see [Supported
-     * Regions](https://cloud.google.com/logging/docs/region-support). `global` is
-     * the default when unspecified.
-     * @param array $optParams Optional parameters.
-     * @return ErrorGroup
-     * @throws \Google\Service\Exception
+     * The "groups" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $clouderrorreportingService = new Google\Service\Clouderrorreporting(...);
+     *   $groups = $clouderrorreportingService->projects_groups;
+     *  </code>
      */
-    public function get($groupName, $optParams = [])
+    class ProjectsGroups extends \Google\Service\Resource
     {
+        /**
+         * Get the specified group. (groups.get)
+         *
+         * @param string $groupName Required. The group resource name. Written as either
+         * `projects/{projectID}/groups/{group_id}` or
+         * `projects/{projectID}/locations/{location}/groups/{group_id}`. Call
+         * groupStats.list to return a list of groups belonging to this project.
+         * Examples: `projects/my-project-123/groups/my-group`, `projects/my-
+         * project-123/locations/global/groups/my-group` In the group resource name, the
+         * `group_id` is a unique identifier for a particular error group. The
+         * identifier is derived from key parts of the error-log content and is treated
+         * as Service Data. For information about how Service Data is handled, see
+         * [Google Cloud Privacy Notice](https://cloud.google.com/terms/cloud-privacy-
+         * notice). For a list of supported locations, see [Supported
+         * Regions](https://cloud.google.com/logging/docs/region-support). `global` is
+         * the default when unspecified.
+         * @param array $optParams Optional parameters.
+         * @return ErrorGroup
+         * @throws \Google\Service\Exception
+         */
+        public function get($groupName, $optParams = [])
+        {
+        }
+        /**
+         * Replace the data for the specified group. Fails if the group does not exist.
+         * (groups.update)
+         *
+         * @param string $name The group resource name. Written as
+         * `projects/{projectID}/groups/{group_id}` or
+         * `projects/{projectID}/locations/{location}/groups/{group_id}` Examples:
+         * `projects/my-project-123/groups/my-group`, `projects/my-
+         * project-123/locations/us-central1/groups/my-group` In the group resource
+         * name, the `group_id` is a unique identifier for a particular error group. The
+         * identifier is derived from key parts of the error-log content and is treated
+         * as Service Data. For information about how Service Data is handled, see
+         * [Google Cloud Privacy Notice](https://cloud.google.com/terms/cloud-privacy-
+         * notice). For a list of supported locations, see [Supported
+         * Regions](https://cloud.google.com/logging/docs/region-support). `global` is
+         * the default when unspecified.
+         * @param ErrorGroup $postBody
+         * @param array $optParams Optional parameters.
+         * @return ErrorGroup
+         * @throws \Google\Service\Exception
+         */
+        public function update($name, ErrorGroup $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Replace the data for the specified group. Fails if the group does not exist.
-     * (groups.update)
-     *
-     * @param string $name The group resource name. Written as
-     * `projects/{projectID}/groups/{group_id}` or
-     * `projects/{projectID}/locations/{location}/groups/{group_id}` Examples:
-     * `projects/my-project-123/groups/my-group`, `projects/my-
-     * project-123/locations/us-central1/groups/my-group` In the group resource
-     * name, the `group_id` is a unique identifier for a particular error group. The
-     * identifier is derived from key parts of the error-log content and is treated
-     * as Service Data. For information about how Service Data is handled, see
-     * [Google Cloud Privacy Notice](https://cloud.google.com/terms/cloud-privacy-
-     * notice). For a list of supported locations, see [Supported
-     * Regions](https://cloud.google.com/logging/docs/region-support). `global` is
-     * the default when unspecified.
-     * @param ErrorGroup $postBody
-     * @param array $optParams Optional parameters.
-     * @return ErrorGroup
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Clouderrorreporting\Resource\ProjectsGroups registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function update($name, ErrorGroup $postBody, $optParams = [])
+    class Google_Service_Clouderrorreporting_Resource_ProjectsGroups extends \Google\Service\Clouderrorreporting\Resource\ProjectsGroups
     {
     }
 }

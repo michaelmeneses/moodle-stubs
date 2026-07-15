@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Baremetalsolution;
-
-class DisableInteractiveSerialConsoleResponse extends \Google\Model
-{
+namespace Google\Service\Baremetalsolution {
+    class DisableInteractiveSerialConsoleResponse extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Baremetalsolution\DisableInteractiveSerialConsoleResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Baremetalsolution_DisableInteractiveSerialConsoleResponse extends \Google\Service\Baremetalsolution\DisableInteractiveSerialConsoleResponse
+    {
+    }
 }

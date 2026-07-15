@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class SerialPipeline extends \Google\Collection
-{
-    protected $collection_key = 'stages';
-    protected $stagesType = Stage::class;
-    protected $stagesDataType = 'array';
-    /**
-     * Optional. Each stage specifies configuration for a `Target`. The ordering
-     * of this list defines the promotion flow.
-     *
-     * @param Stage[] $stages
-     */
-    public function setStages($stages)
+namespace Google\Service\CloudDeploy {
+    class SerialPipeline extends \Google\Collection
     {
+        protected $collection_key = 'stages';
+        protected $stagesType = Stage::class;
+        protected $stagesDataType = 'array';
+        /**
+         * Optional. Each stage specifies configuration for a `Target`. The ordering
+         * of this list defines the promotion flow.
+         *
+         * @param Stage[] $stages
+         */
+        public function setStages($stages)
+        {
+        }
+        /**
+         * @return Stage[]
+         */
+        public function getStages()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Stage[]
+     * Runtime class alias of \Google\Service\CloudDeploy\SerialPipeline registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStages()
+    class Google_Service_CloudDeploy_SerialPipeline extends \Google\Service\CloudDeploy\SerialPipeline
     {
     }
 }

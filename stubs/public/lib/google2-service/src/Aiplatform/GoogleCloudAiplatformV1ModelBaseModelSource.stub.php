@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ModelBaseModelSource extends \Google\Model
-{
-    protected $genieSourceType = GoogleCloudAiplatformV1GenieSource::class;
-    protected $genieSourceDataType = '';
-    protected $modelGardenSourceType = GoogleCloudAiplatformV1ModelGardenSource::class;
-    protected $modelGardenSourceDataType = '';
-    /**
-     * Information about the base model of Genie models.
-     *
-     * @param GoogleCloudAiplatformV1GenieSource $genieSource
-     */
-    public function setGenieSource(GoogleCloudAiplatformV1GenieSource $genieSource)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ModelBaseModelSource extends \Google\Model
     {
+        protected $genieSourceType = GoogleCloudAiplatformV1GenieSource::class;
+        protected $genieSourceDataType = '';
+        protected $modelGardenSourceType = GoogleCloudAiplatformV1ModelGardenSource::class;
+        protected $modelGardenSourceDataType = '';
+        /**
+         * Information about the base model of Genie models.
+         *
+         * @param GoogleCloudAiplatformV1GenieSource $genieSource
+         */
+        public function setGenieSource(GoogleCloudAiplatformV1GenieSource $genieSource)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1GenieSource
+         */
+        public function getGenieSource()
+        {
+        }
+        /**
+         * Source information of Model Garden models.
+         *
+         * @param GoogleCloudAiplatformV1ModelGardenSource $modelGardenSource
+         */
+        public function setModelGardenSource(GoogleCloudAiplatformV1ModelGardenSource $modelGardenSource)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ModelGardenSource
+         */
+        public function getModelGardenSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1GenieSource
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ModelBaseModelSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGenieSource()
-    {
-    }
-    /**
-     * Source information of Model Garden models.
-     *
-     * @param GoogleCloudAiplatformV1ModelGardenSource $modelGardenSource
-     */
-    public function setModelGardenSource(GoogleCloudAiplatformV1ModelGardenSource $modelGardenSource)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1ModelGardenSource
-     */
-    public function getModelGardenSource()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ModelBaseModelSource extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ModelBaseModelSource
     {
     }
 }

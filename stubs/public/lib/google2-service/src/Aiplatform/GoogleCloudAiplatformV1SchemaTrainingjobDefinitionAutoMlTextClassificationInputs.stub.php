@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlTextClassificationInputs extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $multiLabel;
-    /**
-     * @param bool $multiLabel
-     */
-    public function setMultiLabel($multiLabel)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlTextClassificationInputs extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $multiLabel;
+        /**
+         * @param bool $multiLabel
+         */
+        public function setMultiLabel($multiLabel)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getMultiLabel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlTextClassificationInputs registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMultiLabel()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlTextClassificationInputs extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlTextClassificationInputs
     {
     }
 }

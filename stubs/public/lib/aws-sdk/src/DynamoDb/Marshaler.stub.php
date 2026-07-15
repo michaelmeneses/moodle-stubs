@@ -8,6 +8,7 @@
  */
 namespace Aws\DynamoDb;
 
+use Psr\Http\Message\StreamInterface;
 /**
  * Marshals and unmarshals JSON documents and PHP arrays into DynamoDB items.
  */

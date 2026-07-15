@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ArtifactRegistry;
-
-class ImportYumArtifactsRequest extends \Google\Model
-{
-    protected $gcsSourceType = ImportYumArtifactsGcsSource::class;
-    protected $gcsSourceDataType = '';
-    /**
-     * Google Cloud Storage location where input content is located.
-     *
-     * @param ImportYumArtifactsGcsSource $gcsSource
-     */
-    public function setGcsSource(ImportYumArtifactsGcsSource $gcsSource)
+namespace Google\Service\ArtifactRegistry {
+    class ImportYumArtifactsRequest extends \Google\Model
     {
+        protected $gcsSourceType = ImportYumArtifactsGcsSource::class;
+        protected $gcsSourceDataType = '';
+        /**
+         * Google Cloud Storage location where input content is located.
+         *
+         * @param ImportYumArtifactsGcsSource $gcsSource
+         */
+        public function setGcsSource(ImportYumArtifactsGcsSource $gcsSource)
+        {
+        }
+        /**
+         * @return ImportYumArtifactsGcsSource
+         */
+        public function getGcsSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ImportYumArtifactsGcsSource
+     * Runtime class alias of \Google\Service\ArtifactRegistry\ImportYumArtifactsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGcsSource()
+    class Google_Service_ArtifactRegistry_ImportYumArtifactsRequest extends \Google\Service\ArtifactRegistry\ImportYumArtifactsRequest
     {
     }
 }

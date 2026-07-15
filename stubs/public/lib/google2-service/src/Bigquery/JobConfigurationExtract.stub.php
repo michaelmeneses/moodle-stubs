@@ -21,227 +21,236 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class JobConfigurationExtract extends \Google\Collection
-{
-    protected $collection_key = 'destinationUris';
-    /**
-     * Optional. The compression type to use for exported files. Possible values
-     * include DEFLATE, GZIP, NONE, SNAPPY, and ZSTD. The default value is NONE.
-     * Not all compression formats are support for all file formats. DEFLATE is
-     * only supported for Avro. ZSTD is only supported for Parquet. Not applicable
-     * when extracting models.
-     *
-     * @var string
-     */
-    public $compression;
-    /**
-     * Optional. The exported file format. Possible values include CSV,
-     * NEWLINE_DELIMITED_JSON, PARQUET, or AVRO for tables and ML_TF_SAVED_MODEL
-     * or ML_XGBOOST_BOOSTER for models. The default value for tables is CSV.
-     * Tables with nested or repeated fields cannot be exported as CSV. The
-     * default value for models is ML_TF_SAVED_MODEL.
-     *
-     * @var string
-     */
-    public $destinationFormat;
-    /**
-     * [Pick one] DEPRECATED: Use destinationUris instead, passing only one URI as
-     * necessary. The fully-qualified Google Cloud Storage URI where the extracted
-     * table should be written.
-     *
-     * @var string
-     */
-    public $destinationUri;
-    /**
-     * [Pick one] A list of fully-qualified Google Cloud Storage URIs where the
-     * extracted table should be written.
-     *
-     * @var string[]
-     */
-    public $destinationUris;
-    /**
-     * Optional. When extracting data in CSV format, this defines the delimiter to
-     * use between fields in the exported data. Default is ','. Not applicable
-     * when extracting models.
-     *
-     * @var string
-     */
-    public $fieldDelimiter;
-    protected $modelExtractOptionsType = ModelExtractOptions::class;
-    protected $modelExtractOptionsDataType = '';
-    /**
-     * Optional. Whether to print out a header row in the results. Default is
-     * true. Not applicable when extracting models.
-     *
-     * @var bool
-     */
-    public $printHeader;
-    protected $sourceModelType = ModelReference::class;
-    protected $sourceModelDataType = '';
-    protected $sourceTableType = TableReference::class;
-    protected $sourceTableDataType = '';
-    /**
-     * Whether to use logical types when extracting to AVRO format. Not applicable
-     * when extracting models.
-     *
-     * @var bool
-     */
-    public $useAvroLogicalTypes;
-    /**
-     * Optional. The compression type to use for exported files. Possible values
-     * include DEFLATE, GZIP, NONE, SNAPPY, and ZSTD. The default value is NONE.
-     * Not all compression formats are support for all file formats. DEFLATE is
-     * only supported for Avro. ZSTD is only supported for Parquet. Not applicable
-     * when extracting models.
-     *
-     * @param string $compression
-     */
-    public function setCompression($compression)
+namespace Google\Service\Bigquery {
+    class JobConfigurationExtract extends \Google\Collection
     {
+        protected $collection_key = 'destinationUris';
+        /**
+         * Optional. The compression type to use for exported files. Possible values
+         * include DEFLATE, GZIP, NONE, SNAPPY, and ZSTD. The default value is NONE.
+         * Not all compression formats are support for all file formats. DEFLATE is
+         * only supported for Avro. ZSTD is only supported for Parquet. Not applicable
+         * when extracting models.
+         *
+         * @var string
+         */
+        public $compression;
+        /**
+         * Optional. The exported file format. Possible values include CSV,
+         * NEWLINE_DELIMITED_JSON, PARQUET, or AVRO for tables and ML_TF_SAVED_MODEL
+         * or ML_XGBOOST_BOOSTER for models. The default value for tables is CSV.
+         * Tables with nested or repeated fields cannot be exported as CSV. The
+         * default value for models is ML_TF_SAVED_MODEL.
+         *
+         * @var string
+         */
+        public $destinationFormat;
+        /**
+         * [Pick one] DEPRECATED: Use destinationUris instead, passing only one URI as
+         * necessary. The fully-qualified Google Cloud Storage URI where the extracted
+         * table should be written.
+         *
+         * @var string
+         */
+        public $destinationUri;
+        /**
+         * [Pick one] A list of fully-qualified Google Cloud Storage URIs where the
+         * extracted table should be written.
+         *
+         * @var string[]
+         */
+        public $destinationUris;
+        /**
+         * Optional. When extracting data in CSV format, this defines the delimiter to
+         * use between fields in the exported data. Default is ','. Not applicable
+         * when extracting models.
+         *
+         * @var string
+         */
+        public $fieldDelimiter;
+        protected $modelExtractOptionsType = ModelExtractOptions::class;
+        protected $modelExtractOptionsDataType = '';
+        /**
+         * Optional. Whether to print out a header row in the results. Default is
+         * true. Not applicable when extracting models.
+         *
+         * @var bool
+         */
+        public $printHeader;
+        protected $sourceModelType = ModelReference::class;
+        protected $sourceModelDataType = '';
+        protected $sourceTableType = TableReference::class;
+        protected $sourceTableDataType = '';
+        /**
+         * Whether to use logical types when extracting to AVRO format. Not applicable
+         * when extracting models.
+         *
+         * @var bool
+         */
+        public $useAvroLogicalTypes;
+        /**
+         * Optional. The compression type to use for exported files. Possible values
+         * include DEFLATE, GZIP, NONE, SNAPPY, and ZSTD. The default value is NONE.
+         * Not all compression formats are support for all file formats. DEFLATE is
+         * only supported for Avro. ZSTD is only supported for Parquet. Not applicable
+         * when extracting models.
+         *
+         * @param string $compression
+         */
+        public function setCompression($compression)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCompression()
+        {
+        }
+        /**
+         * Optional. The exported file format. Possible values include CSV,
+         * NEWLINE_DELIMITED_JSON, PARQUET, or AVRO for tables and ML_TF_SAVED_MODEL
+         * or ML_XGBOOST_BOOSTER for models. The default value for tables is CSV.
+         * Tables with nested or repeated fields cannot be exported as CSV. The
+         * default value for models is ML_TF_SAVED_MODEL.
+         *
+         * @param string $destinationFormat
+         */
+        public function setDestinationFormat($destinationFormat)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDestinationFormat()
+        {
+        }
+        /**
+         * [Pick one] DEPRECATED: Use destinationUris instead, passing only one URI as
+         * necessary. The fully-qualified Google Cloud Storage URI where the extracted
+         * table should be written.
+         *
+         * @param string $destinationUri
+         */
+        public function setDestinationUri($destinationUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDestinationUri()
+        {
+        }
+        /**
+         * [Pick one] A list of fully-qualified Google Cloud Storage URIs where the
+         * extracted table should be written.
+         *
+         * @param string[] $destinationUris
+         */
+        public function setDestinationUris($destinationUris)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDestinationUris()
+        {
+        }
+        /**
+         * Optional. When extracting data in CSV format, this defines the delimiter to
+         * use between fields in the exported data. Default is ','. Not applicable
+         * when extracting models.
+         *
+         * @param string $fieldDelimiter
+         */
+        public function setFieldDelimiter($fieldDelimiter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFieldDelimiter()
+        {
+        }
+        /**
+         * Optional. Model extract options only applicable when extracting models.
+         *
+         * @param ModelExtractOptions $modelExtractOptions
+         */
+        public function setModelExtractOptions(ModelExtractOptions $modelExtractOptions)
+        {
+        }
+        /**
+         * @return ModelExtractOptions
+         */
+        public function getModelExtractOptions()
+        {
+        }
+        /**
+         * Optional. Whether to print out a header row in the results. Default is
+         * true. Not applicable when extracting models.
+         *
+         * @param bool $printHeader
+         */
+        public function setPrintHeader($printHeader)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPrintHeader()
+        {
+        }
+        /**
+         * A reference to the model being exported.
+         *
+         * @param ModelReference $sourceModel
+         */
+        public function setSourceModel(ModelReference $sourceModel)
+        {
+        }
+        /**
+         * @return ModelReference
+         */
+        public function getSourceModel()
+        {
+        }
+        /**
+         * A reference to the table being exported.
+         *
+         * @param TableReference $sourceTable
+         */
+        public function setSourceTable(TableReference $sourceTable)
+        {
+        }
+        /**
+         * @return TableReference
+         */
+        public function getSourceTable()
+        {
+        }
+        /**
+         * Whether to use logical types when extracting to AVRO format. Not applicable
+         * when extracting models.
+         *
+         * @param bool $useAvroLogicalTypes
+         */
+        public function setUseAvroLogicalTypes($useAvroLogicalTypes)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUseAvroLogicalTypes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Bigquery\JobConfigurationExtract registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCompression()
-    {
-    }
-    /**
-     * Optional. The exported file format. Possible values include CSV,
-     * NEWLINE_DELIMITED_JSON, PARQUET, or AVRO for tables and ML_TF_SAVED_MODEL
-     * or ML_XGBOOST_BOOSTER for models. The default value for tables is CSV.
-     * Tables with nested or repeated fields cannot be exported as CSV. The
-     * default value for models is ML_TF_SAVED_MODEL.
-     *
-     * @param string $destinationFormat
-     */
-    public function setDestinationFormat($destinationFormat)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDestinationFormat()
-    {
-    }
-    /**
-     * [Pick one] DEPRECATED: Use destinationUris instead, passing only one URI as
-     * necessary. The fully-qualified Google Cloud Storage URI where the extracted
-     * table should be written.
-     *
-     * @param string $destinationUri
-     */
-    public function setDestinationUri($destinationUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDestinationUri()
-    {
-    }
-    /**
-     * [Pick one] A list of fully-qualified Google Cloud Storage URIs where the
-     * extracted table should be written.
-     *
-     * @param string[] $destinationUris
-     */
-    public function setDestinationUris($destinationUris)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getDestinationUris()
-    {
-    }
-    /**
-     * Optional. When extracting data in CSV format, this defines the delimiter to
-     * use between fields in the exported data. Default is ','. Not applicable
-     * when extracting models.
-     *
-     * @param string $fieldDelimiter
-     */
-    public function setFieldDelimiter($fieldDelimiter)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFieldDelimiter()
-    {
-    }
-    /**
-     * Optional. Model extract options only applicable when extracting models.
-     *
-     * @param ModelExtractOptions $modelExtractOptions
-     */
-    public function setModelExtractOptions(ModelExtractOptions $modelExtractOptions)
-    {
-    }
-    /**
-     * @return ModelExtractOptions
-     */
-    public function getModelExtractOptions()
-    {
-    }
-    /**
-     * Optional. Whether to print out a header row in the results. Default is
-     * true. Not applicable when extracting models.
-     *
-     * @param bool $printHeader
-     */
-    public function setPrintHeader($printHeader)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPrintHeader()
-    {
-    }
-    /**
-     * A reference to the model being exported.
-     *
-     * @param ModelReference $sourceModel
-     */
-    public function setSourceModel(ModelReference $sourceModel)
-    {
-    }
-    /**
-     * @return ModelReference
-     */
-    public function getSourceModel()
-    {
-    }
-    /**
-     * A reference to the table being exported.
-     *
-     * @param TableReference $sourceTable
-     */
-    public function setSourceTable(TableReference $sourceTable)
-    {
-    }
-    /**
-     * @return TableReference
-     */
-    public function getSourceTable()
-    {
-    }
-    /**
-     * Whether to use logical types when extracting to AVRO format. Not applicable
-     * when extracting models.
-     *
-     * @param bool $useAvroLogicalTypes
-     */
-    public function setUseAvroLogicalTypes($useAvroLogicalTypes)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUseAvroLogicalTypes()
+    class Google_Service_Bigquery_JobConfigurationExtract extends \Google\Service\Bigquery\JobConfigurationExtract
     {
     }
 }

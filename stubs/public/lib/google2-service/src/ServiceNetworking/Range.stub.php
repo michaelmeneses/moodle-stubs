@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceNetworking;
-
-class Range extends \Google\Model
-{
-    /**
-     * CIDR range in "10.x.x.x/y" format that is within the allocated ranges and
-     * currently unused.
-     *
-     * @var string
-     */
-    public $ipCidrRange;
-    /**
-     * In the Shared VPC host project, the VPC network that's peered with the
-     * consumer network. For example: `projects/1234321/global/networks/host-
-     * network`
-     *
-     * @var string
-     */
-    public $network;
-    /**
-     * CIDR range in "10.x.x.x/y" format that is within the allocated ranges and
-     * currently unused.
-     *
-     * @param string $ipCidrRange
-     */
-    public function setIpCidrRange($ipCidrRange)
+namespace Google\Service\ServiceNetworking {
+    class Range extends \Google\Model
     {
+        /**
+         * CIDR range in "10.x.x.x/y" format that is within the allocated ranges and
+         * currently unused.
+         *
+         * @var string
+         */
+        public $ipCidrRange;
+        /**
+         * In the Shared VPC host project, the VPC network that's peered with the
+         * consumer network. For example: `projects/1234321/global/networks/host-
+         * network`
+         *
+         * @var string
+         */
+        public $network;
+        /**
+         * CIDR range in "10.x.x.x/y" format that is within the allocated ranges and
+         * currently unused.
+         *
+         * @param string $ipCidrRange
+         */
+        public function setIpCidrRange($ipCidrRange)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIpCidrRange()
+        {
+        }
+        /**
+         * In the Shared VPC host project, the VPC network that's peered with the
+         * consumer network. For example: `projects/1234321/global/networks/host-
+         * network`
+         *
+         * @param string $network
+         */
+        public function setNetwork($network)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNetwork()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ServiceNetworking\Range registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIpCidrRange()
-    {
-    }
-    /**
-     * In the Shared VPC host project, the VPC network that's peered with the
-     * consumer network. For example: `projects/1234321/global/networks/host-
-     * network`
-     *
-     * @param string $network
-     */
-    public function setNetwork($network)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNetwork()
+    class Google_Service_ServiceNetworking_Range extends \Google\Service\ServiceNetworking\Range
     {
     }
 }

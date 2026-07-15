@@ -21,121 +21,130 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2CreateConversationModelEvaluationOperationMetadata extends \Google\Model
-{
-    /**
-     * Operation status not specified.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * The operation is being prepared.
-     */
-    public const STATE_INITIALIZING = 'INITIALIZING';
-    /**
-     * The operation is running.
-     */
-    public const STATE_RUNNING = 'RUNNING';
-    /**
-     * The operation is cancelled.
-     */
-    public const STATE_CANCELLED = 'CANCELLED';
-    /**
-     * The operation has succeeded.
-     */
-    public const STATE_SUCCEEDED = 'SUCCEEDED';
-    /**
-     * The operation has failed.
-     */
-    public const STATE_FAILED = 'FAILED';
-    /**
-     * The resource name of the conversation model. Format:
-     * `projects//locations//conversationModels/`
-     *
-     * @var string
-     */
-    public $conversationModel;
-    /**
-     * The resource name of the conversation model. Format:
-     * `projects//locations//conversationModels//evaluations/`
-     *
-     * @var string
-     */
-    public $conversationModelEvaluation;
-    /**
-     * Timestamp when the request to create conversation model was submitted. The
-     * time is measured on server side.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * State of CreateConversationModel operation.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * The resource name of the conversation model. Format:
-     * `projects//locations//conversationModels/`
-     *
-     * @param string $conversationModel
-     */
-    public function setConversationModel($conversationModel)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2CreateConversationModelEvaluationOperationMetadata extends \Google\Model
     {
+        /**
+         * Operation status not specified.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * The operation is being prepared.
+         */
+        public const STATE_INITIALIZING = 'INITIALIZING';
+        /**
+         * The operation is running.
+         */
+        public const STATE_RUNNING = 'RUNNING';
+        /**
+         * The operation is cancelled.
+         */
+        public const STATE_CANCELLED = 'CANCELLED';
+        /**
+         * The operation has succeeded.
+         */
+        public const STATE_SUCCEEDED = 'SUCCEEDED';
+        /**
+         * The operation has failed.
+         */
+        public const STATE_FAILED = 'FAILED';
+        /**
+         * The resource name of the conversation model. Format:
+         * `projects//locations//conversationModels/`
+         *
+         * @var string
+         */
+        public $conversationModel;
+        /**
+         * The resource name of the conversation model. Format:
+         * `projects//locations//conversationModels//evaluations/`
+         *
+         * @var string
+         */
+        public $conversationModelEvaluation;
+        /**
+         * Timestamp when the request to create conversation model was submitted. The
+         * time is measured on server side.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * State of CreateConversationModel operation.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * The resource name of the conversation model. Format:
+         * `projects//locations//conversationModels/`
+         *
+         * @param string $conversationModel
+         */
+        public function setConversationModel($conversationModel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConversationModel()
+        {
+        }
+        /**
+         * The resource name of the conversation model. Format:
+         * `projects//locations//conversationModels//evaluations/`
+         *
+         * @param string $conversationModelEvaluation
+         */
+        public function setConversationModelEvaluation($conversationModelEvaluation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConversationModelEvaluation()
+        {
+        }
+        /**
+         * Timestamp when the request to create conversation model was submitted. The
+         * time is measured on server side.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * State of CreateConversationModel operation.
+         *
+         * Accepted values: STATE_UNSPECIFIED, INITIALIZING, RUNNING, CANCELLED,
+         * SUCCEEDED, FAILED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2CreateConversationModelEvaluationOperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConversationModel()
-    {
-    }
-    /**
-     * The resource name of the conversation model. Format:
-     * `projects//locations//conversationModels//evaluations/`
-     *
-     * @param string $conversationModelEvaluation
-     */
-    public function setConversationModelEvaluation($conversationModelEvaluation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getConversationModelEvaluation()
-    {
-    }
-    /**
-     * Timestamp when the request to create conversation model was submitted. The
-     * time is measured on server side.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * State of CreateConversationModel operation.
-     *
-     * Accepted values: STATE_UNSPECIFIED, INITIALIZING, RUNNING, CANCELLED,
-     * SUCCEEDED, FAILED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2CreateConversationModelEvaluationOperationMetadata extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2CreateConversationModelEvaluationOperationMetadata
     {
     }
 }

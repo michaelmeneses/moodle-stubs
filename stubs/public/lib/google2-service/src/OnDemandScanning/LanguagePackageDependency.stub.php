@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OnDemandScanning;
-
-class LanguagePackageDependency extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $package;
-    /**
-     * @var string
-     */
-    public $version;
-    /**
-     * @param string $package
-     */
-    public function setPackage($package)
+namespace Google\Service\OnDemandScanning {
+    class LanguagePackageDependency extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $package;
+        /**
+         * @var string
+         */
+        public $version;
+        /**
+         * @param string $package
+         */
+        public function setPackage($package)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPackage()
+        {
+        }
+        /**
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OnDemandScanning\LanguagePackageDependency registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPackage()
-    {
-    }
-    /**
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_OnDemandScanning_LanguagePackageDependency extends \Google\Service\OnDemandScanning\LanguagePackageDependency
     {
     }
 }

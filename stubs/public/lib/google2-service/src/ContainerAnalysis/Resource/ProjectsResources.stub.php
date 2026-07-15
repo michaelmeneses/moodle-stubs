@@ -21,29 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis\Resource;
-
-/**
- * The "resources" collection of methods.
- * Typical usage is:
- *  <code>
- *   $containeranalysisService = new Google\Service\ContainerAnalysis(...);
- *   $resources = $containeranalysisService->projects_resources;
- *  </code>
- */
-class ProjectsResources extends \Google\Service\Resource
-{
+namespace Google\Service\ContainerAnalysis\Resource {
+    use Google\Service\ContainerAnalysis\ExportSBOMRequest;
+    use Google\Service\ContainerAnalysis\ExportSBOMResponse;
     /**
-     * Generates an SBOM for the given resource. (resources.exportSBOM)
-     *
-     * @param string $name Required. The name of the resource in the form of
-     * `projects/[PROJECT_ID]/resources/[RESOURCE_URL]`.
-     * @param ExportSBOMRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return ExportSBOMResponse
-     * @throws \Google\Service\Exception
+     * The "resources" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $containeranalysisService = new Google\Service\ContainerAnalysis(...);
+     *   $resources = $containeranalysisService->projects_resources;
+     *  </code>
      */
-    public function exportSBOM($name, ExportSBOMRequest $postBody, $optParams = [])
+    class ProjectsResources extends \Google\Service\Resource
+    {
+        /**
+         * Generates an SBOM for the given resource. (resources.exportSBOM)
+         *
+         * @param string $name Required. The name of the resource in the form of
+         * `projects/[PROJECT_ID]/resources/[RESOURCE_URL]`.
+         * @param ExportSBOMRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return ExportSBOMResponse
+         * @throws \Google\Service\Exception
+         */
+        public function exportSBOM($name, ExportSBOMRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ContainerAnalysis\Resource\ProjectsResources registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ContainerAnalysis_Resource_ProjectsResources extends \Google\Service\ContainerAnalysis\Resource\ProjectsResources
     {
     }
 }

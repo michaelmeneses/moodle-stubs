@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Batch;
-
-class Barrier extends \Google\Model
-{
-    /**
-     * Barriers are identified by their index in runnable list. Names are not
-     * required, but if present should be an identifier.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Barriers are identified by their index in runnable list. Names are not
-     * required, but if present should be an identifier.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Batch {
+    class Barrier extends \Google\Model
     {
+        /**
+         * Barriers are identified by their index in runnable list. Names are not
+         * required, but if present should be an identifier.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Barriers are identified by their index in runnable list. Names are not
+         * required, but if present should be an identifier.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Batch\Barrier registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
+    class Google_Service_Batch_Barrier extends \Google\Service\Batch\Barrier
     {
     }
 }

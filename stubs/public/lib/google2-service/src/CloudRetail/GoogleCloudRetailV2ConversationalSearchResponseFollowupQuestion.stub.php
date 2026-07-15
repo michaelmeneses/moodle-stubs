@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2ConversationalSearchResponseFollowupQuestion extends \Google\Collection
-{
-    protected $collection_key = 'suggestedAnswers';
-    /**
-     * The conversational followup question generated for Intent refinement.
-     *
-     * @var string
-     */
-    public $followupQuestion;
-    protected $suggestedAnswersType = GoogleCloudRetailV2ConversationalSearchResponseFollowupQuestionSuggestedAnswer::class;
-    protected $suggestedAnswersDataType = 'array';
-    /**
-     * The conversational followup question generated for Intent refinement.
-     *
-     * @param string $followupQuestion
-     */
-    public function setFollowupQuestion($followupQuestion)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2ConversationalSearchResponseFollowupQuestion extends \Google\Collection
     {
+        protected $collection_key = 'suggestedAnswers';
+        /**
+         * The conversational followup question generated for Intent refinement.
+         *
+         * @var string
+         */
+        public $followupQuestion;
+        protected $suggestedAnswersType = GoogleCloudRetailV2ConversationalSearchResponseFollowupQuestionSuggestedAnswer::class;
+        protected $suggestedAnswersDataType = 'array';
+        /**
+         * The conversational followup question generated for Intent refinement.
+         *
+         * @param string $followupQuestion
+         */
+        public function setFollowupQuestion($followupQuestion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFollowupQuestion()
+        {
+        }
+        /**
+         * The answer options provided to client for the follow-up question.
+         *
+         * @param GoogleCloudRetailV2ConversationalSearchResponseFollowupQuestionSuggestedAnswer[] $suggestedAnswers
+         */
+        public function setSuggestedAnswers($suggestedAnswers)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2ConversationalSearchResponseFollowupQuestionSuggestedAnswer[]
+         */
+        public function getSuggestedAnswers()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2ConversationalSearchResponseFollowupQuestion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFollowupQuestion()
-    {
-    }
-    /**
-     * The answer options provided to client for the follow-up question.
-     *
-     * @param GoogleCloudRetailV2ConversationalSearchResponseFollowupQuestionSuggestedAnswer[] $suggestedAnswers
-     */
-    public function setSuggestedAnswers($suggestedAnswers)
-    {
-    }
-    /**
-     * @return GoogleCloudRetailV2ConversationalSearchResponseFollowupQuestionSuggestedAnswer[]
-     */
-    public function getSuggestedAnswers()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2ConversationalSearchResponseFollowupQuestion extends \Google\Service\CloudRetail\GoogleCloudRetailV2ConversationalSearchResponseFollowupQuestion
     {
     }
 }

@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AddressValidation;
-
-class GoogleMapsAddressvalidationV1ProvideValidationFeedbackResponse extends \Google\Model
-{
+namespace Google\Service\AddressValidation {
+    class GoogleMapsAddressvalidationV1ProvideValidationFeedbackResponse extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AddressValidation\GoogleMapsAddressvalidationV1ProvideValidationFeedbackResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AddressValidation_GoogleMapsAddressvalidationV1ProvideValidationFeedbackResponse extends \Google\Service\AddressValidation\GoogleMapsAddressvalidationV1ProvideValidationFeedbackResponse
+    {
+    }
 }

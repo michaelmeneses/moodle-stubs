@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1CanaryEvaluationMetricLabels extends \Google\Model
-{
-    protected $internal_gapi_mappings = ["instanceId" => "instance_id"];
-    /**
-     * The environment ID associated with the metrics.
-     *
-     * @var string
-     */
-    public $env;
-    /**
-     * Required. The instance ID associated with the metrics. In Apigee Hybrid,
-     * the value is configured during installation.
-     *
-     * @var string
-     */
-    public $instanceId;
-    /**
-     * Required. The location associated with the metrics.
-     *
-     * @var string
-     */
-    public $location;
-    /**
-     * The environment ID associated with the metrics.
-     *
-     * @param string $env
-     */
-    public function setEnv($env)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1CanaryEvaluationMetricLabels extends \Google\Model
     {
+        protected $internal_gapi_mappings = ["instanceId" => "instance_id"];
+        /**
+         * The environment ID associated with the metrics.
+         *
+         * @var string
+         */
+        public $env;
+        /**
+         * Required. The instance ID associated with the metrics. In Apigee Hybrid,
+         * the value is configured during installation.
+         *
+         * @var string
+         */
+        public $instanceId;
+        /**
+         * Required. The location associated with the metrics.
+         *
+         * @var string
+         */
+        public $location;
+        /**
+         * The environment ID associated with the metrics.
+         *
+         * @param string $env
+         */
+        public function setEnv($env)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEnv()
+        {
+        }
+        /**
+         * Required. The instance ID associated with the metrics. In Apigee Hybrid,
+         * the value is configured during installation.
+         *
+         * @param string $instanceId
+         */
+        public function setInstanceId($instanceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstanceId()
+        {
+        }
+        /**
+         * Required. The location associated with the metrics.
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1CanaryEvaluationMetricLabels registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnv()
-    {
-    }
-    /**
-     * Required. The instance ID associated with the metrics. In Apigee Hybrid,
-     * the value is configured during installation.
-     *
-     * @param string $instanceId
-     */
-    public function setInstanceId($instanceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInstanceId()
-    {
-    }
-    /**
-     * Required. The location associated with the metrics.
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocation()
+    class Google_Service_Apigee_GoogleCloudApigeeV1CanaryEvaluationMetricLabels extends \Google\Service\Apigee\GoogleCloudApigeeV1CanaryEvaluationMetricLabels
     {
     }
 }

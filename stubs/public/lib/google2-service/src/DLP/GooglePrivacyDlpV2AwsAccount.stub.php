@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2AwsAccount extends \Google\Model
-{
-    /**
-     * Required. AWS account ID.
-     *
-     * @var string
-     */
-    public $accountId;
-    /**
-     * Required. AWS account ID.
-     *
-     * @param string $accountId
-     */
-    public function setAccountId($accountId)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2AwsAccount extends \Google\Model
     {
+        /**
+         * Required. AWS account ID.
+         *
+         * @var string
+         */
+        public $accountId;
+        /**
+         * Required. AWS account ID.
+         *
+         * @param string $accountId
+         */
+        public function setAccountId($accountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccountId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2AwsAccount registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountId()
+    class Google_Service_DLP_GooglePrivacyDlpV2AwsAccount extends \Google\Service\DLP\GooglePrivacyDlpV2AwsAccount
     {
     }
 }

@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_badges\local\backpack\ob;
 
+use core\url;
 /**
  * Class badge_exporter_interface represents the interface for exporting achievement (or badgeclass) data to a backpack.
  *

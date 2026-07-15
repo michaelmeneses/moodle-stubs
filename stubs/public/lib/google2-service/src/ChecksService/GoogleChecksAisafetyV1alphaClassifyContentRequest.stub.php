@@ -21,94 +21,103 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChecksService;
-
-class GoogleChecksAisafetyV1alphaClassifyContentRequest extends \Google\Collection
-{
-    /**
-     * Unspecified version.
-     */
-    public const CLASSIFIER_VERSION_CLASSIFIER_VERSION_UNSPECIFIED = 'CLASSIFIER_VERSION_UNSPECIFIED';
-    /**
-     * Stable version.
-     */
-    public const CLASSIFIER_VERSION_STABLE = 'STABLE';
-    /**
-     * Latest version.
-     */
-    public const CLASSIFIER_VERSION_LATEST = 'LATEST';
-    protected $collection_key = 'policies';
-    /**
-     * Optional. Version of the classifier to use. If not specified, the latest
-     * version will be used.
-     *
-     * @var string
-     */
-    public $classifierVersion;
-    protected $contextType = GoogleChecksAisafetyV1alphaClassifyContentRequestContext::class;
-    protected $contextDataType = '';
-    protected $inputType = GoogleChecksAisafetyV1alphaClassifyContentRequestInputContent::class;
-    protected $inputDataType = '';
-    protected $policiesType = GoogleChecksAisafetyV1alphaClassifyContentRequestPolicyConfig::class;
-    protected $policiesDataType = 'array';
-    /**
-     * Optional. Version of the classifier to use. If not specified, the latest
-     * version will be used.
-     *
-     * Accepted values: CLASSIFIER_VERSION_UNSPECIFIED, STABLE, LATEST
-     *
-     * @param self::CLASSIFIER_VERSION_* $classifierVersion
-     */
-    public function setClassifierVersion($classifierVersion)
+namespace Google\Service\ChecksService {
+    class GoogleChecksAisafetyV1alphaClassifyContentRequest extends \Google\Collection
     {
+        /**
+         * Unspecified version.
+         */
+        public const CLASSIFIER_VERSION_CLASSIFIER_VERSION_UNSPECIFIED = 'CLASSIFIER_VERSION_UNSPECIFIED';
+        /**
+         * Stable version.
+         */
+        public const CLASSIFIER_VERSION_STABLE = 'STABLE';
+        /**
+         * Latest version.
+         */
+        public const CLASSIFIER_VERSION_LATEST = 'LATEST';
+        protected $collection_key = 'policies';
+        /**
+         * Optional. Version of the classifier to use. If not specified, the latest
+         * version will be used.
+         *
+         * @var string
+         */
+        public $classifierVersion;
+        protected $contextType = GoogleChecksAisafetyV1alphaClassifyContentRequestContext::class;
+        protected $contextDataType = '';
+        protected $inputType = GoogleChecksAisafetyV1alphaClassifyContentRequestInputContent::class;
+        protected $inputDataType = '';
+        protected $policiesType = GoogleChecksAisafetyV1alphaClassifyContentRequestPolicyConfig::class;
+        protected $policiesDataType = 'array';
+        /**
+         * Optional. Version of the classifier to use. If not specified, the latest
+         * version will be used.
+         *
+         * Accepted values: CLASSIFIER_VERSION_UNSPECIFIED, STABLE, LATEST
+         *
+         * @param self::CLASSIFIER_VERSION_* $classifierVersion
+         */
+        public function setClassifierVersion($classifierVersion)
+        {
+        }
+        /**
+         * @return self::CLASSIFIER_VERSION_*
+         */
+        public function getClassifierVersion()
+        {
+        }
+        /**
+         * Optional. Context about the input that will be used to help on the
+         * classification.
+         *
+         * @param GoogleChecksAisafetyV1alphaClassifyContentRequestContext $context
+         */
+        public function setContext(GoogleChecksAisafetyV1alphaClassifyContentRequestContext $context)
+        {
+        }
+        /**
+         * @return GoogleChecksAisafetyV1alphaClassifyContentRequestContext
+         */
+        public function getContext()
+        {
+        }
+        /**
+         * Required. Content to be classified.
+         *
+         * @param GoogleChecksAisafetyV1alphaClassifyContentRequestInputContent $input
+         */
+        public function setInput(GoogleChecksAisafetyV1alphaClassifyContentRequestInputContent $input)
+        {
+        }
+        /**
+         * @return GoogleChecksAisafetyV1alphaClassifyContentRequestInputContent
+         */
+        public function getInput()
+        {
+        }
+        /**
+         * Required. List of policies to classify against.
+         *
+         * @param GoogleChecksAisafetyV1alphaClassifyContentRequestPolicyConfig[] $policies
+         */
+        public function setPolicies($policies)
+        {
+        }
+        /**
+         * @return GoogleChecksAisafetyV1alphaClassifyContentRequestPolicyConfig[]
+         */
+        public function getPolicies()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::CLASSIFIER_VERSION_*
+     * Runtime class alias of \Google\Service\ChecksService\GoogleChecksAisafetyV1alphaClassifyContentRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClassifierVersion()
-    {
-    }
-    /**
-     * Optional. Context about the input that will be used to help on the
-     * classification.
-     *
-     * @param GoogleChecksAisafetyV1alphaClassifyContentRequestContext $context
-     */
-    public function setContext(GoogleChecksAisafetyV1alphaClassifyContentRequestContext $context)
-    {
-    }
-    /**
-     * @return GoogleChecksAisafetyV1alphaClassifyContentRequestContext
-     */
-    public function getContext()
-    {
-    }
-    /**
-     * Required. Content to be classified.
-     *
-     * @param GoogleChecksAisafetyV1alphaClassifyContentRequestInputContent $input
-     */
-    public function setInput(GoogleChecksAisafetyV1alphaClassifyContentRequestInputContent $input)
-    {
-    }
-    /**
-     * @return GoogleChecksAisafetyV1alphaClassifyContentRequestInputContent
-     */
-    public function getInput()
-    {
-    }
-    /**
-     * Required. List of policies to classify against.
-     *
-     * @param GoogleChecksAisafetyV1alphaClassifyContentRequestPolicyConfig[] $policies
-     */
-    public function setPolicies($policies)
-    {
-    }
-    /**
-     * @return GoogleChecksAisafetyV1alphaClassifyContentRequestPolicyConfig[]
-     */
-    public function getPolicies()
+    class Google_Service_ChecksService_GoogleChecksAisafetyV1alphaClassifyContentRequest extends \Google\Service\ChecksService\GoogleChecksAisafetyV1alphaClassifyContentRequest
     {
     }
 }

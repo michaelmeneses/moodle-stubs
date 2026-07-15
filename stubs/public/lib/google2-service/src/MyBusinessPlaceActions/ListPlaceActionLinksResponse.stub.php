@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessPlaceActions;
-
-class ListPlaceActionLinksResponse extends \Google\Collection
-{
-    protected $collection_key = 'placeActionLinks';
-    /**
-     * If there are more place action links than the requested page size, then
-     * this field is populated with a token to fetch the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $placeActionLinksType = PlaceActionLink::class;
-    protected $placeActionLinksDataType = 'array';
-    /**
-     * If there are more place action links than the requested page size, then
-     * this field is populated with a token to fetch the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\MyBusinessPlaceActions {
+    class ListPlaceActionLinksResponse extends \Google\Collection
     {
+        protected $collection_key = 'placeActionLinks';
+        /**
+         * If there are more place action links than the requested page size, then
+         * this field is populated with a token to fetch the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $placeActionLinksType = PlaceActionLink::class;
+        protected $placeActionLinksDataType = 'array';
+        /**
+         * If there are more place action links than the requested page size, then
+         * this field is populated with a token to fetch the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The returned list of place action links.
+         *
+         * @param PlaceActionLink[] $placeActionLinks
+         */
+        public function setPlaceActionLinks($placeActionLinks)
+        {
+        }
+        /**
+         * @return PlaceActionLink[]
+         */
+        public function getPlaceActionLinks()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MyBusinessPlaceActions\ListPlaceActionLinksResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The returned list of place action links.
-     *
-     * @param PlaceActionLink[] $placeActionLinks
-     */
-    public function setPlaceActionLinks($placeActionLinks)
-    {
-    }
-    /**
-     * @return PlaceActionLink[]
-     */
-    public function getPlaceActionLinks()
+    class Google_Service_MyBusinessPlaceActions_ListPlaceActionLinksResponse extends \Google\Service\MyBusinessPlaceActions\ListPlaceActionLinksResponse
     {
     }
 }

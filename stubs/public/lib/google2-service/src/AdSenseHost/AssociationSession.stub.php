@@ -21,153 +21,162 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdSenseHost;
-
-class AssociationSession extends \Google\Collection
-{
-    protected $collection_key = 'productCodes';
-    /**
-     * @var string
-     */
-    public $accountId;
-    /**
-     * @var string
-     */
-    public $id;
-    /**
-     * @var string
-     */
-    public $kind;
-    /**
-     * @var string[]
-     */
-    public $productCodes;
-    /**
-     * @var string
-     */
-    public $redirectUrl;
-    /**
-     * @var string
-     */
-    public $status;
-    /**
-     * @var string
-     */
-    public $userLocale;
-    /**
-     * @var string
-     */
-    public $websiteLocale;
-    /**
-     * @var string
-     */
-    public $websiteUrl;
-    /**
-     * @param string
-     */
-    public function setAccountId($accountId)
+namespace Google\Service\AdSenseHost {
+    class AssociationSession extends \Google\Collection
     {
+        protected $collection_key = 'productCodes';
+        /**
+         * @var string
+         */
+        public $accountId;
+        /**
+         * @var string
+         */
+        public $id;
+        /**
+         * @var string
+         */
+        public $kind;
+        /**
+         * @var string[]
+         */
+        public $productCodes;
+        /**
+         * @var string
+         */
+        public $redirectUrl;
+        /**
+         * @var string
+         */
+        public $status;
+        /**
+         * @var string
+         */
+        public $userLocale;
+        /**
+         * @var string
+         */
+        public $websiteLocale;
+        /**
+         * @var string
+         */
+        public $websiteUrl;
+        /**
+         * @param string
+         */
+        public function setAccountId($accountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccountId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setProductCodes($productCodes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getProductCodes()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRedirectUrl($redirectUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRedirectUrl()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStatus()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUserLocale($userLocale)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserLocale()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setWebsiteLocale($websiteLocale)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWebsiteLocale()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setWebsiteUrl($websiteUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWebsiteUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AdSenseHost\AssociationSession registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setProductCodes($productCodes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getProductCodes()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRedirectUrl($redirectUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRedirectUrl()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStatus()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUserLocale($userLocale)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserLocale()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setWebsiteLocale($websiteLocale)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWebsiteLocale()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setWebsiteUrl($websiteUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWebsiteUrl()
+    class Google_Service_AdSenseHost_AssociationSession extends \Google\Service\AdSenseHost\AssociationSession
     {
     }
 }

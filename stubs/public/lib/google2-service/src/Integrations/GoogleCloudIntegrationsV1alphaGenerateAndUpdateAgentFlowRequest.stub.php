@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaGenerateAndUpdateAgentFlowRequest extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $intent;
-    /**
-     * @var string
-     */
-    public $updater;
-    /**
-     * @param string
-     */
-    public function setIntent($intent)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaGenerateAndUpdateAgentFlowRequest extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $intent;
+        /**
+         * @var string
+         */
+        public $updater;
+        /**
+         * @param string
+         */
+        public function setIntent($intent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIntent()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUpdater($updater)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdater()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaGenerateAndUpdateAgentFlowRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIntent()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUpdater($updater)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdater()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaGenerateAndUpdateAgentFlowRequest extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaGenerateAndUpdateAgentFlowRequest
     {
     }
 }

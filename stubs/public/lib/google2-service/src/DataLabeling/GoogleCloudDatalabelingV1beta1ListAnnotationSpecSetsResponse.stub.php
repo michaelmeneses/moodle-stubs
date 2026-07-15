@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1ListAnnotationSpecSetsResponse extends \Google\Collection
-{
-    protected $collection_key = 'annotationSpecSets';
-    protected $annotationSpecSetsType = GoogleCloudDatalabelingV1beta1AnnotationSpecSet::class;
-    protected $annotationSpecSetsDataType = 'array';
-    /**
-     * A token to retrieve next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of annotation spec sets.
-     *
-     * @param GoogleCloudDatalabelingV1beta1AnnotationSpecSet[] $annotationSpecSets
-     */
-    public function setAnnotationSpecSets($annotationSpecSets)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1ListAnnotationSpecSetsResponse extends \Google\Collection
     {
+        protected $collection_key = 'annotationSpecSets';
+        protected $annotationSpecSetsType = GoogleCloudDatalabelingV1beta1AnnotationSpecSet::class;
+        protected $annotationSpecSetsDataType = 'array';
+        /**
+         * A token to retrieve next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of annotation spec sets.
+         *
+         * @param GoogleCloudDatalabelingV1beta1AnnotationSpecSet[] $annotationSpecSets
+         */
+        public function setAnnotationSpecSets($annotationSpecSets)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1AnnotationSpecSet[]
+         */
+        public function getAnnotationSpecSets()
+        {
+        }
+        /**
+         * A token to retrieve next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatalabelingV1beta1AnnotationSpecSet[]
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1ListAnnotationSpecSetsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotationSpecSets()
-    {
-    }
-    /**
-     * A token to retrieve next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1ListAnnotationSpecSetsResponse extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1ListAnnotationSpecSetsResponse
     {
     }
 }

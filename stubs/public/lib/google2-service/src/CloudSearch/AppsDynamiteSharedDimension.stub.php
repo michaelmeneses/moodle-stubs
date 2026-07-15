@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedDimension extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $height;
-    /**
-     * @var int
-     */
-    public $width;
-    /**
-     * @param int
-     */
-    public function setHeight($height)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedDimension extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $height;
+        /**
+         * @var int
+         */
+        public $width;
+        /**
+         * @param int
+         */
+        public function setHeight($height)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getHeight()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setWidth($width)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getWidth()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedDimension registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHeight()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setWidth($width)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getWidth()
+    class Google_Service_CloudSearch_AppsDynamiteSharedDimension extends \Google\Service\CloudSearch\AppsDynamiteSharedDimension
     {
     }
 }

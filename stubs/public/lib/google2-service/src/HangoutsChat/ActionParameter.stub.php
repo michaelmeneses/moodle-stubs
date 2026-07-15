@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class ActionParameter extends \Google\Model
-{
-    /**
-     * The name of the parameter for the action script.
-     *
-     * @var string
-     */
-    public $key;
-    /**
-     * The value of the parameter.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * The name of the parameter for the action script.
-     *
-     * @param string $key
-     */
-    public function setKey($key)
+namespace Google\Service\HangoutsChat {
+    class ActionParameter extends \Google\Model
     {
+        /**
+         * The name of the parameter for the action script.
+         *
+         * @var string
+         */
+        public $key;
+        /**
+         * The value of the parameter.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * The name of the parameter for the action script.
+         *
+         * @param string $key
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * The value of the parameter.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\HangoutsChat\ActionParameter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKey()
-    {
-    }
-    /**
-     * The value of the parameter.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_HangoutsChat_ActionParameter extends \Google\Service\HangoutsChat\ActionParameter
     {
     }
 }

@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PeopleService;
-
-class ModifyContactGroupMembersResponse extends \Google\Collection
-{
-    protected $collection_key = 'notFoundResourceNames';
-    /**
-     * The contact people resource names that cannot be removed from their last
-     * contact group.
-     *
-     * @var string[]
-     */
-    public $canNotRemoveLastContactGroupResourceNames;
-    /**
-     * The contact people resource names that were not found.
-     *
-     * @var string[]
-     */
-    public $notFoundResourceNames;
-    /**
-     * The contact people resource names that cannot be removed from their last
-     * contact group.
-     *
-     * @param string[] $canNotRemoveLastContactGroupResourceNames
-     */
-    public function setCanNotRemoveLastContactGroupResourceNames($canNotRemoveLastContactGroupResourceNames)
+namespace Google\Service\PeopleService {
+    class ModifyContactGroupMembersResponse extends \Google\Collection
     {
+        protected $collection_key = 'notFoundResourceNames';
+        /**
+         * The contact people resource names that cannot be removed from their last
+         * contact group.
+         *
+         * @var string[]
+         */
+        public $canNotRemoveLastContactGroupResourceNames;
+        /**
+         * The contact people resource names that were not found.
+         *
+         * @var string[]
+         */
+        public $notFoundResourceNames;
+        /**
+         * The contact people resource names that cannot be removed from their last
+         * contact group.
+         *
+         * @param string[] $canNotRemoveLastContactGroupResourceNames
+         */
+        public function setCanNotRemoveLastContactGroupResourceNames($canNotRemoveLastContactGroupResourceNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCanNotRemoveLastContactGroupResourceNames()
+        {
+        }
+        /**
+         * The contact people resource names that were not found.
+         *
+         * @param string[] $notFoundResourceNames
+         */
+        public function setNotFoundResourceNames($notFoundResourceNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getNotFoundResourceNames()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\PeopleService\ModifyContactGroupMembersResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCanNotRemoveLastContactGroupResourceNames()
-    {
-    }
-    /**
-     * The contact people resource names that were not found.
-     *
-     * @param string[] $notFoundResourceNames
-     */
-    public function setNotFoundResourceNames($notFoundResourceNames)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getNotFoundResourceNames()
+    class Google_Service_PeopleService_ModifyContactGroupMembersResponse extends \Google\Service\PeopleService\ModifyContactGroupMembersResponse
     {
     }
 }

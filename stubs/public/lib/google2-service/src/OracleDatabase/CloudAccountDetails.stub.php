@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OracleDatabase;
-
-class CloudAccountDetails extends \Google\Model
-{
-    /**
-     * Output only. URL to create a new account and link.
-     *
-     * @var string
-     */
-    public $accountCreationUri;
-    /**
-     * Output only. OCI account name.
-     *
-     * @var string
-     */
-    public $cloudAccount;
-    /**
-     * Output only. OCI account home region.
-     *
-     * @var string
-     */
-    public $cloudAccountHomeRegion;
-    /**
-     * Output only. URL to link an existing account.
-     *
-     * @var string
-     */
-    public $linkExistingAccountUri;
-    /**
-     * Output only. URL to create a new account and link.
-     *
-     * @param string $accountCreationUri
-     */
-    public function setAccountCreationUri($accountCreationUri)
+namespace Google\Service\OracleDatabase {
+    class CloudAccountDetails extends \Google\Model
     {
+        /**
+         * Output only. URL to create a new account and link.
+         *
+         * @var string
+         */
+        public $accountCreationUri;
+        /**
+         * Output only. OCI account name.
+         *
+         * @var string
+         */
+        public $cloudAccount;
+        /**
+         * Output only. OCI account home region.
+         *
+         * @var string
+         */
+        public $cloudAccountHomeRegion;
+        /**
+         * Output only. URL to link an existing account.
+         *
+         * @var string
+         */
+        public $linkExistingAccountUri;
+        /**
+         * Output only. URL to create a new account and link.
+         *
+         * @param string $accountCreationUri
+         */
+        public function setAccountCreationUri($accountCreationUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccountCreationUri()
+        {
+        }
+        /**
+         * Output only. OCI account name.
+         *
+         * @param string $cloudAccount
+         */
+        public function setCloudAccount($cloudAccount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCloudAccount()
+        {
+        }
+        /**
+         * Output only. OCI account home region.
+         *
+         * @param string $cloudAccountHomeRegion
+         */
+        public function setCloudAccountHomeRegion($cloudAccountHomeRegion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCloudAccountHomeRegion()
+        {
+        }
+        /**
+         * Output only. URL to link an existing account.
+         *
+         * @param string $linkExistingAccountUri
+         */
+        public function setLinkExistingAccountUri($linkExistingAccountUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLinkExistingAccountUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OracleDatabase\CloudAccountDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountCreationUri()
-    {
-    }
-    /**
-     * Output only. OCI account name.
-     *
-     * @param string $cloudAccount
-     */
-    public function setCloudAccount($cloudAccount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCloudAccount()
-    {
-    }
-    /**
-     * Output only. OCI account home region.
-     *
-     * @param string $cloudAccountHomeRegion
-     */
-    public function setCloudAccountHomeRegion($cloudAccountHomeRegion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCloudAccountHomeRegion()
-    {
-    }
-    /**
-     * Output only. URL to link an existing account.
-     *
-     * @param string $linkExistingAccountUri
-     */
-    public function setLinkExistingAccountUri($linkExistingAccountUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLinkExistingAccountUri()
+    class Google_Service_OracleDatabase_CloudAccountDetails extends \Google\Service\OracleDatabase\CloudAccountDetails
     {
     }
 }

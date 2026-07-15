@@ -21,69 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory\Resource;
-
-/**
- * The "aliases" collection of methods.
- * Typical usage is:
- *  <code>
- *   $adminService = new Google\Service\Directory(...);
- *   $aliases = $adminService->users_aliases;
- *  </code>
- */
-class UsersAliases extends \Google\Service\Resource
-{
+namespace Google\Service\Directory\Resource {
+    use Google\Service\Directory\Alias;
+    use Google\Service\Directory\Aliases;
+    use Google\Service\Directory\Channel;
     /**
-     * Removes an alias. (aliases.delete)
-     *
-     * @param string $userKey Identifies the user in the API request. The value can
-     * be the user's primary email address, alias email address, or unique user ID.
-     * @param string $alias The alias to be removed.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * The "aliases" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $adminService = new Google\Service\Directory(...);
+     *   $aliases = $adminService->users_aliases;
+     *  </code>
      */
-    public function delete($userKey, $alias, $optParams = [])
+    class UsersAliases extends \Google\Service\Resource
     {
+        /**
+         * Removes an alias. (aliases.delete)
+         *
+         * @param string $userKey Identifies the user in the API request. The value can
+         * be the user's primary email address, alias email address, or unique user ID.
+         * @param string $alias The alias to be removed.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($userKey, $alias, $optParams = [])
+        {
+        }
+        /**
+         * Adds an alias. (aliases.insert)
+         *
+         * @param string $userKey Identifies the user in the API request. The value can
+         * be the user's primary email address, alias email address, or unique user ID.
+         * @param Alias $postBody
+         * @param array $optParams Optional parameters.
+         * @return Alias
+         * @throws \Google\Service\Exception
+         */
+        public function insert($userKey, Alias $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Lists all aliases for a user. (aliases.listUsersAliases)
+         *
+         * @param string $userKey Identifies the user in the API request. The value can
+         * be the user's primary email address, alias email address, or unique user ID.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string event Events to watch for.
+         * @return Aliases
+         * @throws \Google\Service\Exception
+         */
+        public function listUsersAliases($userKey, $optParams = [])
+        {
+        }
+        /**
+         * Watches for changes in users list. (aliases.watch)
+         *
+         * @param string $userKey Email or immutable ID of the user
+         * @param Channel $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string event Events to watch for.
+         * @return Channel
+         * @throws \Google\Service\Exception
+         */
+        public function watch($userKey, Channel $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Adds an alias. (aliases.insert)
-     *
-     * @param string $userKey Identifies the user in the API request. The value can
-     * be the user's primary email address, alias email address, or unique user ID.
-     * @param Alias $postBody
-     * @param array $optParams Optional parameters.
-     * @return Alias
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Directory\Resource\UsersAliases registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function insert($userKey, Alias $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Lists all aliases for a user. (aliases.listUsersAliases)
-     *
-     * @param string $userKey Identifies the user in the API request. The value can
-     * be the user's primary email address, alias email address, or unique user ID.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string event Events to watch for.
-     * @return Aliases
-     * @throws \Google\Service\Exception
-     */
-    public function listUsersAliases($userKey, $optParams = [])
-    {
-    }
-    /**
-     * Watches for changes in users list. (aliases.watch)
-     *
-     * @param string $userKey Email or immutable ID of the user
-     * @param Channel $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string event Events to watch for.
-     * @return Channel
-     * @throws \Google\Service\Exception
-     */
-    public function watch($userKey, Channel $postBody, $optParams = [])
+    class Google_Service_Directory_Resource_UsersAliases extends \Google\Service\Directory\Resource\UsersAliases
     {
     }
 }

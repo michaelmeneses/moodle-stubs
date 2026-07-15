@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class PolicyEnforcementRule extends \Google\Model
-{
-    protected $blockActionType = BlockAction::class;
-    protected $blockActionDataType = '';
-    /**
-     * The top-level policy to enforce. For example, applications or
-     * passwordPolicies.
-     *
-     * @var string
-     */
-    public $settingName;
-    protected $wipeActionType = WipeAction::class;
-    protected $wipeActionDataType = '';
-    /**
-     * An action to block access to apps and data on a company owned device or in
-     * a work profile. This action also triggers a user-facing notification with
-     * information (where possible) on how to correct the compliance issue. Note:
-     * wipeAction must also be specified.
-     *
-     * @param BlockAction $blockAction
-     */
-    public function setBlockAction(BlockAction $blockAction)
+namespace Google\Service\AndroidManagement {
+    class PolicyEnforcementRule extends \Google\Model
     {
+        protected $blockActionType = BlockAction::class;
+        protected $blockActionDataType = '';
+        /**
+         * The top-level policy to enforce. For example, applications or
+         * passwordPolicies.
+         *
+         * @var string
+         */
+        public $settingName;
+        protected $wipeActionType = WipeAction::class;
+        protected $wipeActionDataType = '';
+        /**
+         * An action to block access to apps and data on a company owned device or in
+         * a work profile. This action also triggers a user-facing notification with
+         * information (where possible) on how to correct the compliance issue. Note:
+         * wipeAction must also be specified.
+         *
+         * @param BlockAction $blockAction
+         */
+        public function setBlockAction(BlockAction $blockAction)
+        {
+        }
+        /**
+         * @return BlockAction
+         */
+        public function getBlockAction()
+        {
+        }
+        /**
+         * The top-level policy to enforce. For example, applications or
+         * passwordPolicies.
+         *
+         * @param string $settingName
+         */
+        public function setSettingName($settingName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSettingName()
+        {
+        }
+        /**
+         * An action to reset a company owned device or delete a work profile. Note:
+         * blockAction must also be specified.
+         *
+         * @param WipeAction $wipeAction
+         */
+        public function setWipeAction(WipeAction $wipeAction)
+        {
+        }
+        /**
+         * @return WipeAction
+         */
+        public function getWipeAction()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BlockAction
+     * Runtime class alias of \Google\Service\AndroidManagement\PolicyEnforcementRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBlockAction()
-    {
-    }
-    /**
-     * The top-level policy to enforce. For example, applications or
-     * passwordPolicies.
-     *
-     * @param string $settingName
-     */
-    public function setSettingName($settingName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSettingName()
-    {
-    }
-    /**
-     * An action to reset a company owned device or delete a work profile. Note:
-     * blockAction must also be specified.
-     *
-     * @param WipeAction $wipeAction
-     */
-    public function setWipeAction(WipeAction $wipeAction)
-    {
-    }
-    /**
-     * @return WipeAction
-     */
-    public function getWipeAction()
+    class Google_Service_AndroidManagement_PolicyEnforcementRule extends \Google\Service\AndroidManagement\PolicyEnforcementRule
     {
     }
 }

@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class GoogleCloudAssetV1Identity extends \Google\Model
-{
-    protected $analysisStateType = IamPolicyAnalysisState::class;
-    protected $analysisStateDataType = '';
-    /**
-     * The identity of members, formatted as appear in an [IAM policy
-     * binding](https://cloud.google.com/iam/reference/rest/v1/Binding). For
-     * example, they might be formatted like the following: - user:foo@google.com
-     * - group:group1@google.com - serviceAccount:s1@prj1.iam.gserviceaccount.com
-     * - projectOwner:some_project_id - domain:google.com - allUsers
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The analysis state of this identity.
-     *
-     * @param IamPolicyAnalysisState $analysisState
-     */
-    public function setAnalysisState(IamPolicyAnalysisState $analysisState)
+namespace Google\Service\CloudAsset {
+    class GoogleCloudAssetV1Identity extends \Google\Model
     {
+        protected $analysisStateType = IamPolicyAnalysisState::class;
+        protected $analysisStateDataType = '';
+        /**
+         * The identity of members, formatted as appear in an [IAM policy
+         * binding](https://cloud.google.com/iam/reference/rest/v1/Binding). For
+         * example, they might be formatted like the following: - user:foo@google.com
+         * - group:group1@google.com - serviceAccount:s1@prj1.iam.gserviceaccount.com
+         * - projectOwner:some_project_id - domain:google.com - allUsers
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The analysis state of this identity.
+         *
+         * @param IamPolicyAnalysisState $analysisState
+         */
+        public function setAnalysisState(IamPolicyAnalysisState $analysisState)
+        {
+        }
+        /**
+         * @return IamPolicyAnalysisState
+         */
+        public function getAnalysisState()
+        {
+        }
+        /**
+         * The identity of members, formatted as appear in an [IAM policy
+         * binding](https://cloud.google.com/iam/reference/rest/v1/Binding). For
+         * example, they might be formatted like the following: - user:foo@google.com
+         * - group:group1@google.com - serviceAccount:s1@prj1.iam.gserviceaccount.com
+         * - projectOwner:some_project_id - domain:google.com - allUsers
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return IamPolicyAnalysisState
+     * Runtime class alias of \Google\Service\CloudAsset\GoogleCloudAssetV1Identity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnalysisState()
-    {
-    }
-    /**
-     * The identity of members, formatted as appear in an [IAM policy
-     * binding](https://cloud.google.com/iam/reference/rest/v1/Binding). For
-     * example, they might be formatted like the following: - user:foo@google.com
-     * - group:group1@google.com - serviceAccount:s1@prj1.iam.gserviceaccount.com
-     * - projectOwner:some_project_id - domain:google.com - allUsers
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_CloudAsset_GoogleCloudAssetV1Identity extends \Google\Service\CloudAsset\GoogleCloudAssetV1Identity
     {
     }
 }

@@ -21,120 +21,129 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class SpeculationStageSummary extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $numActiveTasks;
-    /**
-     * @var int
-     */
-    public $numCompletedTasks;
-    /**
-     * @var int
-     */
-    public $numFailedTasks;
-    /**
-     * @var int
-     */
-    public $numKilledTasks;
-    /**
-     * @var int
-     */
-    public $numTasks;
-    /**
-     * @var int
-     */
-    public $stageAttemptId;
-    /**
-     * @var string
-     */
-    public $stageId;
-    /**
-     * @param int $numActiveTasks
-     */
-    public function setNumActiveTasks($numActiveTasks)
+namespace Google\Service\Dataproc {
+    class SpeculationStageSummary extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $numActiveTasks;
+        /**
+         * @var int
+         */
+        public $numCompletedTasks;
+        /**
+         * @var int
+         */
+        public $numFailedTasks;
+        /**
+         * @var int
+         */
+        public $numKilledTasks;
+        /**
+         * @var int
+         */
+        public $numTasks;
+        /**
+         * @var int
+         */
+        public $stageAttemptId;
+        /**
+         * @var string
+         */
+        public $stageId;
+        /**
+         * @param int $numActiveTasks
+         */
+        public function setNumActiveTasks($numActiveTasks)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumActiveTasks()
+        {
+        }
+        /**
+         * @param int $numCompletedTasks
+         */
+        public function setNumCompletedTasks($numCompletedTasks)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumCompletedTasks()
+        {
+        }
+        /**
+         * @param int $numFailedTasks
+         */
+        public function setNumFailedTasks($numFailedTasks)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumFailedTasks()
+        {
+        }
+        /**
+         * @param int $numKilledTasks
+         */
+        public function setNumKilledTasks($numKilledTasks)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumKilledTasks()
+        {
+        }
+        /**
+         * @param int $numTasks
+         */
+        public function setNumTasks($numTasks)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumTasks()
+        {
+        }
+        /**
+         * @param int $stageAttemptId
+         */
+        public function setStageAttemptId($stageAttemptId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getStageAttemptId()
+        {
+        }
+        /**
+         * @param string $stageId
+         */
+        public function setStageId($stageId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStageId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Dataproc\SpeculationStageSummary registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNumActiveTasks()
-    {
-    }
-    /**
-     * @param int $numCompletedTasks
-     */
-    public function setNumCompletedTasks($numCompletedTasks)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNumCompletedTasks()
-    {
-    }
-    /**
-     * @param int $numFailedTasks
-     */
-    public function setNumFailedTasks($numFailedTasks)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNumFailedTasks()
-    {
-    }
-    /**
-     * @param int $numKilledTasks
-     */
-    public function setNumKilledTasks($numKilledTasks)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNumKilledTasks()
-    {
-    }
-    /**
-     * @param int $numTasks
-     */
-    public function setNumTasks($numTasks)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNumTasks()
-    {
-    }
-    /**
-     * @param int $stageAttemptId
-     */
-    public function setStageAttemptId($stageAttemptId)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getStageAttemptId()
-    {
-    }
-    /**
-     * @param string $stageId
-     */
-    public function setStageId($stageId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStageId()
+    class Google_Service_Dataproc_SpeculationStageSummary extends \Google\Service\Dataproc\SpeculationStageSummary
     {
     }
 }

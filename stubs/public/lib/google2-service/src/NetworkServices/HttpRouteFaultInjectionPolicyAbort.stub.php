@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkServices;
-
-class HttpRouteFaultInjectionPolicyAbort extends \Google\Model
-{
-    /**
-     * The HTTP status code used to abort the request. The value must be between
-     * 200 and 599 inclusive.
-     *
-     * @var int
-     */
-    public $httpStatus;
-    /**
-     * The percentage of traffic which will be aborted. The value must be between
-     * [0, 100]
-     *
-     * @var int
-     */
-    public $percentage;
-    /**
-     * The HTTP status code used to abort the request. The value must be between
-     * 200 and 599 inclusive.
-     *
-     * @param int $httpStatus
-     */
-    public function setHttpStatus($httpStatus)
+namespace Google\Service\NetworkServices {
+    class HttpRouteFaultInjectionPolicyAbort extends \Google\Model
     {
+        /**
+         * The HTTP status code used to abort the request. The value must be between
+         * 200 and 599 inclusive.
+         *
+         * @var int
+         */
+        public $httpStatus;
+        /**
+         * The percentage of traffic which will be aborted. The value must be between
+         * [0, 100]
+         *
+         * @var int
+         */
+        public $percentage;
+        /**
+         * The HTTP status code used to abort the request. The value must be between
+         * 200 and 599 inclusive.
+         *
+         * @param int $httpStatus
+         */
+        public function setHttpStatus($httpStatus)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getHttpStatus()
+        {
+        }
+        /**
+         * The percentage of traffic which will be aborted. The value must be between
+         * [0, 100]
+         *
+         * @param int $percentage
+         */
+        public function setPercentage($percentage)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPercentage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\NetworkServices\HttpRouteFaultInjectionPolicyAbort registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHttpStatus()
-    {
-    }
-    /**
-     * The percentage of traffic which will be aborted. The value must be between
-     * [0, 100]
-     *
-     * @param int $percentage
-     */
-    public function setPercentage($percentage)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPercentage()
+    class Google_Service_NetworkServices_HttpRouteFaultInjectionPolicyAbort extends \Google\Service\NetworkServices\HttpRouteFaultInjectionPolicyAbort
     {
     }
 }

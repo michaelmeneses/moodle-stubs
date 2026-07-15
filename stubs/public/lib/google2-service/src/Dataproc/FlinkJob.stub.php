@@ -21,161 +21,170 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class FlinkJob extends \Google\Collection
-{
-    protected $collection_key = 'jarFileUris';
-    /**
-     * Optional. The arguments to pass to the driver. Do not include arguments,
-     * such as --conf, that can be set as job properties, since a collision might
-     * occur that causes an incorrect job submission.
-     *
-     * @var string[]
-     */
-    public $args;
-    /**
-     * Optional. HCFS URIs of jar files to add to the CLASSPATHs of the Flink
-     * driver and tasks.
-     *
-     * @var string[]
-     */
-    public $jarFileUris;
-    protected $loggingConfigType = LoggingConfig::class;
-    protected $loggingConfigDataType = '';
-    /**
-     * The name of the driver's main class. The jar file that contains the class
-     * must be in the default CLASSPATH or specified in jarFileUris.
-     *
-     * @var string
-     */
-    public $mainClass;
-    /**
-     * The HCFS URI of the jar file that contains the main class.
-     *
-     * @var string
-     */
-    public $mainJarFileUri;
-    /**
-     * Optional. A mapping of property names to values, used to configure Flink.
-     * Properties that conflict with values set by the Dataproc API might be
-     * overwritten. Can include properties set in /etc/flink/conf/flink-
-     * defaults.conf and classes in user code.
-     *
-     * @var string[]
-     */
-    public $properties;
-    /**
-     * Optional. HCFS URI of the savepoint, which contains the last saved progress
-     * for starting the current job.
-     *
-     * @var string
-     */
-    public $savepointUri;
-    /**
-     * Optional. The arguments to pass to the driver. Do not include arguments,
-     * such as --conf, that can be set as job properties, since a collision might
-     * occur that causes an incorrect job submission.
-     *
-     * @param string[] $args
-     */
-    public function setArgs($args)
+namespace Google\Service\Dataproc {
+    class FlinkJob extends \Google\Collection
     {
+        protected $collection_key = 'jarFileUris';
+        /**
+         * Optional. The arguments to pass to the driver. Do not include arguments,
+         * such as --conf, that can be set as job properties, since a collision might
+         * occur that causes an incorrect job submission.
+         *
+         * @var string[]
+         */
+        public $args;
+        /**
+         * Optional. HCFS URIs of jar files to add to the CLASSPATHs of the Flink
+         * driver and tasks.
+         *
+         * @var string[]
+         */
+        public $jarFileUris;
+        protected $loggingConfigType = LoggingConfig::class;
+        protected $loggingConfigDataType = '';
+        /**
+         * The name of the driver's main class. The jar file that contains the class
+         * must be in the default CLASSPATH or specified in jarFileUris.
+         *
+         * @var string
+         */
+        public $mainClass;
+        /**
+         * The HCFS URI of the jar file that contains the main class.
+         *
+         * @var string
+         */
+        public $mainJarFileUri;
+        /**
+         * Optional. A mapping of property names to values, used to configure Flink.
+         * Properties that conflict with values set by the Dataproc API might be
+         * overwritten. Can include properties set in /etc/flink/conf/flink-
+         * defaults.conf and classes in user code.
+         *
+         * @var string[]
+         */
+        public $properties;
+        /**
+         * Optional. HCFS URI of the savepoint, which contains the last saved progress
+         * for starting the current job.
+         *
+         * @var string
+         */
+        public $savepointUri;
+        /**
+         * Optional. The arguments to pass to the driver. Do not include arguments,
+         * such as --conf, that can be set as job properties, since a collision might
+         * occur that causes an incorrect job submission.
+         *
+         * @param string[] $args
+         */
+        public function setArgs($args)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getArgs()
+        {
+        }
+        /**
+         * Optional. HCFS URIs of jar files to add to the CLASSPATHs of the Flink
+         * driver and tasks.
+         *
+         * @param string[] $jarFileUris
+         */
+        public function setJarFileUris($jarFileUris)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getJarFileUris()
+        {
+        }
+        /**
+         * Optional. The runtime log config for job execution.
+         *
+         * @param LoggingConfig $loggingConfig
+         */
+        public function setLoggingConfig(LoggingConfig $loggingConfig)
+        {
+        }
+        /**
+         * @return LoggingConfig
+         */
+        public function getLoggingConfig()
+        {
+        }
+        /**
+         * The name of the driver's main class. The jar file that contains the class
+         * must be in the default CLASSPATH or specified in jarFileUris.
+         *
+         * @param string $mainClass
+         */
+        public function setMainClass($mainClass)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMainClass()
+        {
+        }
+        /**
+         * The HCFS URI of the jar file that contains the main class.
+         *
+         * @param string $mainJarFileUri
+         */
+        public function setMainJarFileUri($mainJarFileUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMainJarFileUri()
+        {
+        }
+        /**
+         * Optional. A mapping of property names to values, used to configure Flink.
+         * Properties that conflict with values set by the Dataproc API might be
+         * overwritten. Can include properties set in /etc/flink/conf/flink-
+         * defaults.conf and classes in user code.
+         *
+         * @param string[] $properties
+         */
+        public function setProperties($properties)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getProperties()
+        {
+        }
+        /**
+         * Optional. HCFS URI of the savepoint, which contains the last saved progress
+         * for starting the current job.
+         *
+         * @param string $savepointUri
+         */
+        public function setSavepointUri($savepointUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSavepointUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Dataproc\FlinkJob registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArgs()
-    {
-    }
-    /**
-     * Optional. HCFS URIs of jar files to add to the CLASSPATHs of the Flink
-     * driver and tasks.
-     *
-     * @param string[] $jarFileUris
-     */
-    public function setJarFileUris($jarFileUris)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getJarFileUris()
-    {
-    }
-    /**
-     * Optional. The runtime log config for job execution.
-     *
-     * @param LoggingConfig $loggingConfig
-     */
-    public function setLoggingConfig(LoggingConfig $loggingConfig)
-    {
-    }
-    /**
-     * @return LoggingConfig
-     */
-    public function getLoggingConfig()
-    {
-    }
-    /**
-     * The name of the driver's main class. The jar file that contains the class
-     * must be in the default CLASSPATH or specified in jarFileUris.
-     *
-     * @param string $mainClass
-     */
-    public function setMainClass($mainClass)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMainClass()
-    {
-    }
-    /**
-     * The HCFS URI of the jar file that contains the main class.
-     *
-     * @param string $mainJarFileUri
-     */
-    public function setMainJarFileUri($mainJarFileUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMainJarFileUri()
-    {
-    }
-    /**
-     * Optional. A mapping of property names to values, used to configure Flink.
-     * Properties that conflict with values set by the Dataproc API might be
-     * overwritten. Can include properties set in /etc/flink/conf/flink-
-     * defaults.conf and classes in user code.
-     *
-     * @param string[] $properties
-     */
-    public function setProperties($properties)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getProperties()
-    {
-    }
-    /**
-     * Optional. HCFS URI of the savepoint, which contains the last saved progress
-     * for starting the current job.
-     *
-     * @param string $savepointUri
-     */
-    public function setSavepointUri($savepointUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSavepointUri()
+    class Google_Service_Dataproc_FlinkJob extends \Google\Service\Dataproc\FlinkJob
     {
     }
 }

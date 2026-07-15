@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class RegionDisksRemoveResourcePoliciesRequest extends \Google\Collection
-{
-    protected $collection_key = 'resourcePolicies';
-    /**
-     * Resource policies to be removed from this disk.
-     *
-     * @var string[]
-     */
-    public $resourcePolicies;
-    /**
-     * Resource policies to be removed from this disk.
-     *
-     * @param string[] $resourcePolicies
-     */
-    public function setResourcePolicies($resourcePolicies)
+namespace Google\Service\Compute {
+    class RegionDisksRemoveResourcePoliciesRequest extends \Google\Collection
     {
+        protected $collection_key = 'resourcePolicies';
+        /**
+         * Resource policies to be removed from this disk.
+         *
+         * @var string[]
+         */
+        public $resourcePolicies;
+        /**
+         * Resource policies to be removed from this disk.
+         *
+         * @param string[] $resourcePolicies
+         */
+        public function setResourcePolicies($resourcePolicies)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getResourcePolicies()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Compute\RegionDisksRemoveResourcePoliciesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResourcePolicies()
+    class Google_Service_Compute_RegionDisksRemoveResourcePoliciesRequest extends \Google\Service\Compute\RegionDisksRemoveResourcePoliciesRequest
     {
     }
 }

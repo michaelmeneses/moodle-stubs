@@ -21,53 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee\Resource;
-
-/**
- * The "apiproducts" collection of methods.
- * Typical usage is:
- *  <code>
- *   $apigeeService = new Google\Service\Apigee(...);
- *   $apiproducts = $apigeeService->organizations_developers_apps_keys_apiproducts;
- *  </code>
- */
-class OrganizationsDevelopersAppsKeysApiproducts extends \Google\Service\Resource
-{
+namespace Google\Service\Apigee\Resource {
+    use Google\Service\Apigee\GoogleCloudApigeeV1DeveloperAppKey;
+    use Google\Service\Apigee\GoogleProtobufEmpty;
     /**
-     * Removes an API product from an app's consumer key. After the API product is
-     * removed, the app cannot access the API resources defined in that API product.
-     * **Note**: The consumer key is not removed, only its association with the API
-     * product. (apiproducts.delete)
-     *
-     * @param string $name Name of the API product in the developer app key in the
-     * following format: `organizations/{org}/developers/{developer_email}/apps/{app
-     * }/keys/{key}/apiproducts/{apiproduct}`
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudApigeeV1DeveloperAppKey
-     * @throws \Google\Service\Exception
+     * The "apiproducts" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $apigeeService = new Google\Service\Apigee(...);
+     *   $apiproducts = $apigeeService->organizations_developers_apps_keys_apiproducts;
+     *  </code>
      */
-    public function delete($name, $optParams = [])
+    class OrganizationsDevelopersAppsKeysApiproducts extends \Google\Service\Resource
     {
+        /**
+         * Removes an API product from an app's consumer key. After the API product is
+         * removed, the app cannot access the API resources defined in that API product.
+         * **Note**: The consumer key is not removed, only its association with the API
+         * product. (apiproducts.delete)
+         *
+         * @param string $name Name of the API product in the developer app key in the
+         * following format: `organizations/{org}/developers/{developer_email}/apps/{app
+         * }/keys/{key}/apiproducts/{apiproduct}`
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudApigeeV1DeveloperAppKey
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Approves or revokes the consumer key for an API product. After a consumer key
+         * is approved, the app can use it to access APIs. A consumer key that is
+         * revoked or pending cannot be used to access an API. Any access tokens
+         * associated with a revoked consumer key will remain active. However, Apigee
+         * checks the status of the consumer key and if set to `revoked` will not allow
+         * access to the API. (apiproducts.updateDeveloperAppKeyApiProduct)
+         *
+         * @param string $name Name of the API product in the developer app key in the
+         * following format: `organizations/{org}/developers/{developer_email}/apps/{app
+         * }/keys/{key}/apiproducts/{apiproduct}`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string action Approve or revoke the consumer key by setting this
+         * value to `approve` or `revoke`, respectively.
+         * @return GoogleProtobufEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function updateDeveloperAppKeyApiProduct($name, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Approves or revokes the consumer key for an API product. After a consumer key
-     * is approved, the app can use it to access APIs. A consumer key that is
-     * revoked or pending cannot be used to access an API. Any access tokens
-     * associated with a revoked consumer key will remain active. However, Apigee
-     * checks the status of the consumer key and if set to `revoked` will not allow
-     * access to the API. (apiproducts.updateDeveloperAppKeyApiProduct)
-     *
-     * @param string $name Name of the API product in the developer app key in the
-     * following format: `organizations/{org}/developers/{developer_email}/apps/{app
-     * }/keys/{key}/apiproducts/{apiproduct}`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string action Approve or revoke the consumer key by setting this
-     * value to `approve` or `revoke`, respectively.
-     * @return GoogleProtobufEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Apigee\Resource\OrganizationsDevelopersAppsKeysApiproducts registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function updateDeveloperAppKeyApiProduct($name, $optParams = [])
+    class Google_Service_Apigee_Resource_OrganizationsDevelopersAppsKeysApiproducts extends \Google\Service\Apigee\Resource\OrganizationsDevelopersAppsKeysApiproducts
     {
     }
 }

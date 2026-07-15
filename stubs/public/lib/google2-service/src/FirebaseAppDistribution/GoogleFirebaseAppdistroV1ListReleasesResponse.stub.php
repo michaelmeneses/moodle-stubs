@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseAppDistribution;
-
-class GoogleFirebaseAppdistroV1ListReleasesResponse extends \Google\Collection
-{
-    protected $collection_key = 'releases';
-    /**
-     * A short-lived token, which can be sent as `pageToken` to retrieve the next
-     * page. If this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $releasesType = GoogleFirebaseAppdistroV1Release::class;
-    protected $releasesDataType = 'array';
-    /**
-     * A short-lived token, which can be sent as `pageToken` to retrieve the next
-     * page. If this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\FirebaseAppDistribution {
+    class GoogleFirebaseAppdistroV1ListReleasesResponse extends \Google\Collection
     {
+        protected $collection_key = 'releases';
+        /**
+         * A short-lived token, which can be sent as `pageToken` to retrieve the next
+         * page. If this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $releasesType = GoogleFirebaseAppdistroV1Release::class;
+        protected $releasesDataType = 'array';
+        /**
+         * A short-lived token, which can be sent as `pageToken` to retrieve the next
+         * page. If this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The releases
+         *
+         * @param GoogleFirebaseAppdistroV1Release[] $releases
+         */
+        public function setReleases($releases)
+        {
+        }
+        /**
+         * @return GoogleFirebaseAppdistroV1Release[]
+         */
+        public function getReleases()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\FirebaseAppDistribution\GoogleFirebaseAppdistroV1ListReleasesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The releases
-     *
-     * @param GoogleFirebaseAppdistroV1Release[] $releases
-     */
-    public function setReleases($releases)
-    {
-    }
-    /**
-     * @return GoogleFirebaseAppdistroV1Release[]
-     */
-    public function getReleases()
+    class Google_Service_FirebaseAppDistribution_GoogleFirebaseAppdistroV1ListReleasesResponse extends \Google\Service\FirebaseAppDistribution\GoogleFirebaseAppdistroV1ListReleasesResponse
     {
     }
 }

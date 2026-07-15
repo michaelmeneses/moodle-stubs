@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class PartialUpdateClusterRequest extends \Google\Model
-{
-    protected $clusterType = Cluster::class;
-    protected $clusterDataType = '';
-    /**
-     * Required. The subset of Cluster fields which should be replaced.
-     *
-     * @var string
-     */
-    public $updateMask;
-    /**
-     * Required. The Cluster which contains the partial updates to be applied,
-     * subject to the update_mask.
-     *
-     * @param Cluster $cluster
-     */
-    public function setCluster(Cluster $cluster)
+namespace Google\Service\BigtableAdmin {
+    class PartialUpdateClusterRequest extends \Google\Model
     {
+        protected $clusterType = Cluster::class;
+        protected $clusterDataType = '';
+        /**
+         * Required. The subset of Cluster fields which should be replaced.
+         *
+         * @var string
+         */
+        public $updateMask;
+        /**
+         * Required. The Cluster which contains the partial updates to be applied,
+         * subject to the update_mask.
+         *
+         * @param Cluster $cluster
+         */
+        public function setCluster(Cluster $cluster)
+        {
+        }
+        /**
+         * @return Cluster
+         */
+        public function getCluster()
+        {
+        }
+        /**
+         * Required. The subset of Cluster fields which should be replaced.
+         *
+         * @param string $updateMask
+         */
+        public function setUpdateMask($updateMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateMask()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Cluster
+     * Runtime class alias of \Google\Service\BigtableAdmin\PartialUpdateClusterRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCluster()
-    {
-    }
-    /**
-     * Required. The subset of Cluster fields which should be replaced.
-     *
-     * @param string $updateMask
-     */
-    public function setUpdateMask($updateMask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateMask()
+    class Google_Service_BigtableAdmin_PartialUpdateClusterRequest extends \Google\Service\BigtableAdmin\PartialUpdateClusterRequest
     {
     }
 }

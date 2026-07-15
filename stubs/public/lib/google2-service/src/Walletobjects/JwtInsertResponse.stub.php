@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class JwtInsertResponse extends \Google\Model
-{
-    protected $resourcesType = Resources::class;
-    protected $resourcesDataType = '';
-    /**
-     * A URI that, when opened, will allow the end user to save the object(s)
-     * identified in the JWT to their Google account.
-     *
-     * @var string
-     */
-    public $saveUri;
-    /**
-     * Data that corresponds to the ids of the provided classes and objects in the
-     * JWT. resources will only include the non-empty arrays (i.e. if the JWT only
-     * includes eventTicketObjects, then that is the only field that will be
-     * present in resources).
-     *
-     * @param Resources $resources
-     */
-    public function setResources(Resources $resources)
+namespace Google\Service\Walletobjects {
+    class JwtInsertResponse extends \Google\Model
     {
+        protected $resourcesType = Resources::class;
+        protected $resourcesDataType = '';
+        /**
+         * A URI that, when opened, will allow the end user to save the object(s)
+         * identified in the JWT to their Google account.
+         *
+         * @var string
+         */
+        public $saveUri;
+        /**
+         * Data that corresponds to the ids of the provided classes and objects in the
+         * JWT. resources will only include the non-empty arrays (i.e. if the JWT only
+         * includes eventTicketObjects, then that is the only field that will be
+         * present in resources).
+         *
+         * @param Resources $resources
+         */
+        public function setResources(Resources $resources)
+        {
+        }
+        /**
+         * @return Resources
+         */
+        public function getResources()
+        {
+        }
+        /**
+         * A URI that, when opened, will allow the end user to save the object(s)
+         * identified in the JWT to their Google account.
+         *
+         * @param string $saveUri
+         */
+        public function setSaveUri($saveUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSaveUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Resources
+     * Runtime class alias of \Google\Service\Walletobjects\JwtInsertResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResources()
-    {
-    }
-    /**
-     * A URI that, when opened, will allow the end user to save the object(s)
-     * identified in the JWT to their Google account.
-     *
-     * @param string $saveUri
-     */
-    public function setSaveUri($saveUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSaveUri()
+    class Google_Service_Walletobjects_JwtInsertResponse extends \Google\Service\Walletobjects\JwtInsertResponse
     {
     }
 }

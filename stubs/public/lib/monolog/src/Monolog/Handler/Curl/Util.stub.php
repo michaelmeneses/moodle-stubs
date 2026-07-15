@@ -16,6 +16,7 @@
  */
 namespace Monolog\Handler\Curl;
 
+use CurlHandle;
 /**
  * This class is marked as internal and it is not under the BC promise of the package.
  *

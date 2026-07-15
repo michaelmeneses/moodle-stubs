@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaEngineCommonConfig extends \Google\Model
-{
-    /**
-     * The name of the company, business or entity that is associated with the
-     * engine. Setting this may help improve LLM related features.
-     *
-     * @var string
-     */
-    public $companyName;
-    /**
-     * The name of the company, business or entity that is associated with the
-     * engine. Setting this may help improve LLM related features.
-     *
-     * @param string $companyName
-     */
-    public function setCompanyName($companyName)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaEngineCommonConfig extends \Google\Model
     {
+        /**
+         * The name of the company, business or entity that is associated with the
+         * engine. Setting this may help improve LLM related features.
+         *
+         * @var string
+         */
+        public $companyName;
+        /**
+         * The name of the company, business or entity that is associated with the
+         * engine. Setting this may help improve LLM related features.
+         *
+         * @param string $companyName
+         */
+        public function setCompanyName($companyName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCompanyName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaEngineCommonConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCompanyName()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaEngineCommonConfig extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaEngineCommonConfig
     {
     }
 }

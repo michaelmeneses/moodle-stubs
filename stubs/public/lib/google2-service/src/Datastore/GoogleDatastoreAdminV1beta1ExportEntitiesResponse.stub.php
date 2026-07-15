@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastore;
-
-class GoogleDatastoreAdminV1beta1ExportEntitiesResponse extends \Google\Model
-{
-    /**
-     * Location of the output metadata file. This can be used to begin an import
-     * into Cloud Datastore (this project or another project). See
-     * google.datastore.admin.v1beta1.ImportEntitiesRequest.input_url. Only
-     * present if the operation completed successfully.
-     *
-     * @var string
-     */
-    public $outputUrl;
-    /**
-     * Location of the output metadata file. This can be used to begin an import
-     * into Cloud Datastore (this project or another project). See
-     * google.datastore.admin.v1beta1.ImportEntitiesRequest.input_url. Only
-     * present if the operation completed successfully.
-     *
-     * @param string $outputUrl
-     */
-    public function setOutputUrl($outputUrl)
+namespace Google\Service\Datastore {
+    class GoogleDatastoreAdminV1beta1ExportEntitiesResponse extends \Google\Model
     {
+        /**
+         * Location of the output metadata file. This can be used to begin an import
+         * into Cloud Datastore (this project or another project). See
+         * google.datastore.admin.v1beta1.ImportEntitiesRequest.input_url. Only
+         * present if the operation completed successfully.
+         *
+         * @var string
+         */
+        public $outputUrl;
+        /**
+         * Location of the output metadata file. This can be used to begin an import
+         * into Cloud Datastore (this project or another project). See
+         * google.datastore.admin.v1beta1.ImportEntitiesRequest.input_url. Only
+         * present if the operation completed successfully.
+         *
+         * @param string $outputUrl
+         */
+        public function setOutputUrl($outputUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOutputUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Datastore\GoogleDatastoreAdminV1beta1ExportEntitiesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOutputUrl()
+    class Google_Service_Datastore_GoogleDatastoreAdminV1beta1ExportEntitiesResponse extends \Google\Service\Datastore\GoogleDatastoreAdminV1beta1ExportEntitiesResponse
     {
     }
 }

@@ -16,6 +16,9 @@
  */
 namespace Monolog;
 
+use Closure;
+use Psr\Log\LoggerInterface;
+use Psr\Log\LogLevel;
 /**
  * Monolog error handler
  *

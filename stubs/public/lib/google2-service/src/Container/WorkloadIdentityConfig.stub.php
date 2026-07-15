@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class WorkloadIdentityConfig extends \Google\Model
-{
-    /**
-     * The workload pool to attach all Kubernetes service accounts to.
-     *
-     * @var string
-     */
-    public $workloadPool;
-    /**
-     * The workload pool to attach all Kubernetes service accounts to.
-     *
-     * @param string $workloadPool
-     */
-    public function setWorkloadPool($workloadPool)
+namespace Google\Service\Container {
+    class WorkloadIdentityConfig extends \Google\Model
     {
+        /**
+         * The workload pool to attach all Kubernetes service accounts to.
+         *
+         * @var string
+         */
+        public $workloadPool;
+        /**
+         * The workload pool to attach all Kubernetes service accounts to.
+         *
+         * @param string $workloadPool
+         */
+        public function setWorkloadPool($workloadPool)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWorkloadPool()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Container\WorkloadIdentityConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getWorkloadPool()
+    class Google_Service_Container_WorkloadIdentityConfig extends \Google\Service\Container\WorkloadIdentityConfig
     {
     }
 }

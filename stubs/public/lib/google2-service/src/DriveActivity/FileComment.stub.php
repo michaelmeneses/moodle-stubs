@@ -21,96 +21,105 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveActivity;
-
-class FileComment extends \Google\Model
-{
-    /**
-     * The comment in the discussion thread. This identifier is an opaque string
-     * compatible with the Drive API; see
-     * https://developers.google.com/workspace/drive/v3/reference/comments/get
-     *
-     * @var string
-     */
-    public $legacyCommentId;
-    /**
-     * The discussion thread to which the comment was added. This identifier is an
-     * opaque string compatible with the Drive API and references the first
-     * comment in a discussion; see
-     * https://developers.google.com/workspace/drive/v3/reference/comments/get
-     *
-     * @var string
-     */
-    public $legacyDiscussionId;
-    /**
-     * The link to the discussion thread containing this comment, for example,
-     * `https://docs.google.com/DOCUMENT_ID/edit?disco=THREAD_ID`.
-     *
-     * @var string
-     */
-    public $linkToDiscussion;
-    protected $parentType = DriveItem::class;
-    protected $parentDataType = '';
-    /**
-     * The comment in the discussion thread. This identifier is an opaque string
-     * compatible with the Drive API; see
-     * https://developers.google.com/workspace/drive/v3/reference/comments/get
-     *
-     * @param string $legacyCommentId
-     */
-    public function setLegacyCommentId($legacyCommentId)
+namespace Google\Service\DriveActivity {
+    class FileComment extends \Google\Model
     {
+        /**
+         * The comment in the discussion thread. This identifier is an opaque string
+         * compatible with the Drive API; see
+         * https://developers.google.com/workspace/drive/v3/reference/comments/get
+         *
+         * @var string
+         */
+        public $legacyCommentId;
+        /**
+         * The discussion thread to which the comment was added. This identifier is an
+         * opaque string compatible with the Drive API and references the first
+         * comment in a discussion; see
+         * https://developers.google.com/workspace/drive/v3/reference/comments/get
+         *
+         * @var string
+         */
+        public $legacyDiscussionId;
+        /**
+         * The link to the discussion thread containing this comment, for example,
+         * `https://docs.google.com/DOCUMENT_ID/edit?disco=THREAD_ID`.
+         *
+         * @var string
+         */
+        public $linkToDiscussion;
+        protected $parentType = DriveItem::class;
+        protected $parentDataType = '';
+        /**
+         * The comment in the discussion thread. This identifier is an opaque string
+         * compatible with the Drive API; see
+         * https://developers.google.com/workspace/drive/v3/reference/comments/get
+         *
+         * @param string $legacyCommentId
+         */
+        public function setLegacyCommentId($legacyCommentId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLegacyCommentId()
+        {
+        }
+        /**
+         * The discussion thread to which the comment was added. This identifier is an
+         * opaque string compatible with the Drive API and references the first
+         * comment in a discussion; see
+         * https://developers.google.com/workspace/drive/v3/reference/comments/get
+         *
+         * @param string $legacyDiscussionId
+         */
+        public function setLegacyDiscussionId($legacyDiscussionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLegacyDiscussionId()
+        {
+        }
+        /**
+         * The link to the discussion thread containing this comment, for example,
+         * `https://docs.google.com/DOCUMENT_ID/edit?disco=THREAD_ID`.
+         *
+         * @param string $linkToDiscussion
+         */
+        public function setLinkToDiscussion($linkToDiscussion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLinkToDiscussion()
+        {
+        }
+        /**
+         * The Drive item containing this comment.
+         *
+         * @param DriveItem $parent
+         */
+        public function setParent(DriveItem $parent)
+        {
+        }
+        /**
+         * @return DriveItem
+         */
+        public function getParent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DriveActivity\FileComment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLegacyCommentId()
-    {
-    }
-    /**
-     * The discussion thread to which the comment was added. This identifier is an
-     * opaque string compatible with the Drive API and references the first
-     * comment in a discussion; see
-     * https://developers.google.com/workspace/drive/v3/reference/comments/get
-     *
-     * @param string $legacyDiscussionId
-     */
-    public function setLegacyDiscussionId($legacyDiscussionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLegacyDiscussionId()
-    {
-    }
-    /**
-     * The link to the discussion thread containing this comment, for example,
-     * `https://docs.google.com/DOCUMENT_ID/edit?disco=THREAD_ID`.
-     *
-     * @param string $linkToDiscussion
-     */
-    public function setLinkToDiscussion($linkToDiscussion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLinkToDiscussion()
-    {
-    }
-    /**
-     * The Drive item containing this comment.
-     *
-     * @param DriveItem $parent
-     */
-    public function setParent(DriveItem $parent)
-    {
-    }
-    /**
-     * @return DriveItem
-     */
-    public function getParent()
+    class Google_Service_DriveActivity_FileComment extends \Google\Service\DriveActivity\FileComment
     {
     }
 }

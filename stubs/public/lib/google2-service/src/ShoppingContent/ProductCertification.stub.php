@@ -21,96 +21,105 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class ProductCertification extends \Google\Model
-{
-    /**
-     * The certification authority, for example "European_Commission". Maximum
-     * length is 2000 characters.
-     *
-     * @var string
-     */
-    public $certificationAuthority;
-    /**
-     * The certification code, for eaxample "123456". Maximum length is 2000
-     * characters.
-     *
-     * @var string
-     */
-    public $certificationCode;
-    /**
-     * The name of the certification, for example "EPREL". Maximum length is 2000
-     * characters.
-     *
-     * @var string
-     */
-    public $certificationName;
-    /**
-     * The certification value (also known as class, level or grade), for example
-     * "A+", "C", "gold". Maximum length is 2000 characters.
-     *
-     * @var string
-     */
-    public $certificationValue;
-    /**
-     * The certification authority, for example "European_Commission". Maximum
-     * length is 2000 characters.
-     *
-     * @param string $certificationAuthority
-     */
-    public function setCertificationAuthority($certificationAuthority)
+namespace Google\Service\ShoppingContent {
+    class ProductCertification extends \Google\Model
     {
+        /**
+         * The certification authority, for example "European_Commission". Maximum
+         * length is 2000 characters.
+         *
+         * @var string
+         */
+        public $certificationAuthority;
+        /**
+         * The certification code, for eaxample "123456". Maximum length is 2000
+         * characters.
+         *
+         * @var string
+         */
+        public $certificationCode;
+        /**
+         * The name of the certification, for example "EPREL". Maximum length is 2000
+         * characters.
+         *
+         * @var string
+         */
+        public $certificationName;
+        /**
+         * The certification value (also known as class, level or grade), for example
+         * "A+", "C", "gold". Maximum length is 2000 characters.
+         *
+         * @var string
+         */
+        public $certificationValue;
+        /**
+         * The certification authority, for example "European_Commission". Maximum
+         * length is 2000 characters.
+         *
+         * @param string $certificationAuthority
+         */
+        public function setCertificationAuthority($certificationAuthority)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCertificationAuthority()
+        {
+        }
+        /**
+         * The certification code, for eaxample "123456". Maximum length is 2000
+         * characters.
+         *
+         * @param string $certificationCode
+         */
+        public function setCertificationCode($certificationCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCertificationCode()
+        {
+        }
+        /**
+         * The name of the certification, for example "EPREL". Maximum length is 2000
+         * characters.
+         *
+         * @param string $certificationName
+         */
+        public function setCertificationName($certificationName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCertificationName()
+        {
+        }
+        /**
+         * The certification value (also known as class, level or grade), for example
+         * "A+", "C", "gold". Maximum length is 2000 characters.
+         *
+         * @param string $certificationValue
+         */
+        public function setCertificationValue($certificationValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCertificationValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\ProductCertification registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCertificationAuthority()
-    {
-    }
-    /**
-     * The certification code, for eaxample "123456". Maximum length is 2000
-     * characters.
-     *
-     * @param string $certificationCode
-     */
-    public function setCertificationCode($certificationCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCertificationCode()
-    {
-    }
-    /**
-     * The name of the certification, for example "EPREL". Maximum length is 2000
-     * characters.
-     *
-     * @param string $certificationName
-     */
-    public function setCertificationName($certificationName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCertificationName()
-    {
-    }
-    /**
-     * The certification value (also known as class, level or grade), for example
-     * "A+", "C", "gold". Maximum length is 2000 characters.
-     *
-     * @param string $certificationValue
-     */
-    public function setCertificationValue($certificationValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCertificationValue()
+    class Google_Service_ShoppingContent_ProductCertification extends \Google\Service\ShoppingContent\ProductCertification
     {
     }
 }

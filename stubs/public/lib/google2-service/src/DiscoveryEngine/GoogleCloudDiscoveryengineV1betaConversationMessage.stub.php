@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaConversationMessage extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $createTime;
-    protected $replyType = GoogleCloudDiscoveryengineV1betaReply::class;
-    protected $replyDataType = '';
-    protected $userInputType = GoogleCloudDiscoveryengineV1betaTextInput::class;
-    protected $userInputDataType = '';
-    /**
-     * @param string
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaConversationMessage extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $createTime;
+        protected $replyType = GoogleCloudDiscoveryengineV1betaReply::class;
+        protected $replyDataType = '';
+        protected $userInputType = GoogleCloudDiscoveryengineV1betaTextInput::class;
+        protected $userInputDataType = '';
+        /**
+         * @param string
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaReply
+         */
+        public function setReply(GoogleCloudDiscoveryengineV1betaReply $reply)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaReply
+         */
+        public function getReply()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaTextInput
+         */
+        public function setUserInput(GoogleCloudDiscoveryengineV1betaTextInput $userInput)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaTextInput
+         */
+        public function getUserInput()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaConversationMessage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaReply
-     */
-    public function setReply(GoogleCloudDiscoveryengineV1betaReply $reply)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaReply
-     */
-    public function getReply()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaTextInput
-     */
-    public function setUserInput(GoogleCloudDiscoveryengineV1betaTextInput $userInput)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaTextInput
-     */
-    public function getUserInput()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaConversationMessage extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaConversationMessage
     {
     }
 }

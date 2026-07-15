@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class BigQueryTableSpec extends \Google\Model
-{
-    /**
-     * The BigQuery dataset id.
-     *
-     * @var string
-     */
-    public $datasetId;
-    /**
-     * The BigQuery table id.
-     *
-     * @var string
-     */
-    public $tableId;
-    /**
-     * The ID of a BigQuery project the table belongs to. If not specified, the
-     * project_id is assumed.
-     *
-     * @var string
-     */
-    public $tableProjectId;
-    /**
-     * The BigQuery dataset id.
-     *
-     * @param string $datasetId
-     */
-    public function setDatasetId($datasetId)
+namespace Google\Service\Sheets {
+    class BigQueryTableSpec extends \Google\Model
     {
+        /**
+         * The BigQuery dataset id.
+         *
+         * @var string
+         */
+        public $datasetId;
+        /**
+         * The BigQuery table id.
+         *
+         * @var string
+         */
+        public $tableId;
+        /**
+         * The ID of a BigQuery project the table belongs to. If not specified, the
+         * project_id is assumed.
+         *
+         * @var string
+         */
+        public $tableProjectId;
+        /**
+         * The BigQuery dataset id.
+         *
+         * @param string $datasetId
+         */
+        public function setDatasetId($datasetId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatasetId()
+        {
+        }
+        /**
+         * The BigQuery table id.
+         *
+         * @param string $tableId
+         */
+        public function setTableId($tableId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTableId()
+        {
+        }
+        /**
+         * The ID of a BigQuery project the table belongs to. If not specified, the
+         * project_id is assumed.
+         *
+         * @param string $tableProjectId
+         */
+        public function setTableProjectId($tableProjectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTableProjectId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Sheets\BigQueryTableSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatasetId()
-    {
-    }
-    /**
-     * The BigQuery table id.
-     *
-     * @param string $tableId
-     */
-    public function setTableId($tableId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTableId()
-    {
-    }
-    /**
-     * The ID of a BigQuery project the table belongs to. If not specified, the
-     * project_id is assumed.
-     *
-     * @param string $tableProjectId
-     */
-    public function setTableProjectId($tableProjectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTableProjectId()
+    class Google_Service_Sheets_BigQueryTableSpec extends \Google\Service\Sheets\BigQueryTableSpec
     {
     }
 }

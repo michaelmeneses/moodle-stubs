@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer;
-
-class CreativeServingRestrictionsDisapprovalReasons extends \Google\Collection
-{
-    protected $collection_key = 'details';
-    public $details;
-    public $reason;
-    public function setDetails($details)
+namespace Google\Service\AdExchangeBuyer {
+    class CreativeServingRestrictionsDisapprovalReasons extends \Google\Collection
     {
+        protected $collection_key = 'details';
+        public $details;
+        public $reason;
+        public function setDetails($details)
+        {
+        }
+        public function getDetails()
+        {
+        }
+        public function setReason($reason)
+        {
+        }
+        public function getReason()
+        {
+        }
     }
-    public function getDetails()
-    {
-    }
-    public function setReason($reason)
-    {
-    }
-    public function getReason()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\CreativeServingRestrictionsDisapprovalReasons registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AdExchangeBuyer_CreativeServingRestrictionsDisapprovalReasons extends \Google\Service\AdExchangeBuyer\CreativeServingRestrictionsDisapprovalReasons
     {
     }
 }

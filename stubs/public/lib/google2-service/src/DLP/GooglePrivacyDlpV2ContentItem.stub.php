@@ -21,61 +21,70 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2ContentItem extends \Google\Model
-{
-    protected $byteItemType = GooglePrivacyDlpV2ByteContentItem::class;
-    protected $byteItemDataType = '';
-    protected $tableType = GooglePrivacyDlpV2Table::class;
-    protected $tableDataType = '';
-    /**
-     * String data to inspect or redact.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Content data to inspect or redact. Replaces `type` and `data`.
-     *
-     * @param GooglePrivacyDlpV2ByteContentItem $byteItem
-     */
-    public function setByteItem(GooglePrivacyDlpV2ByteContentItem $byteItem)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2ContentItem extends \Google\Model
     {
+        protected $byteItemType = GooglePrivacyDlpV2ByteContentItem::class;
+        protected $byteItemDataType = '';
+        protected $tableType = GooglePrivacyDlpV2Table::class;
+        protected $tableDataType = '';
+        /**
+         * String data to inspect or redact.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Content data to inspect or redact. Replaces `type` and `data`.
+         *
+         * @param GooglePrivacyDlpV2ByteContentItem $byteItem
+         */
+        public function setByteItem(GooglePrivacyDlpV2ByteContentItem $byteItem)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2ByteContentItem
+         */
+        public function getByteItem()
+        {
+        }
+        /**
+         * Structured content for inspection. See https://cloud.google.com/sensitive-
+         * data-protection/docs/inspecting-text#inspecting_a_table to learn more.
+         *
+         * @param GooglePrivacyDlpV2Table $table
+         */
+        public function setTable(GooglePrivacyDlpV2Table $table)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2Table
+         */
+        public function getTable()
+        {
+        }
+        /**
+         * String data to inspect or redact.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2ByteContentItem
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2ContentItem registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getByteItem()
-    {
-    }
-    /**
-     * Structured content for inspection. See https://cloud.google.com/sensitive-
-     * data-protection/docs/inspecting-text#inspecting_a_table to learn more.
-     *
-     * @param GooglePrivacyDlpV2Table $table
-     */
-    public function setTable(GooglePrivacyDlpV2Table $table)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2Table
-     */
-    public function getTable()
-    {
-    }
-    /**
-     * String data to inspect or redact.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_DLP_GooglePrivacyDlpV2ContentItem extends \Google\Service\DLP\GooglePrivacyDlpV2ContentItem
     {
     }
 }

@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class SqlServerTable extends \Google\Collection
-{
-    protected $collection_key = 'columns';
-    protected $columnsType = SqlServerColumn::class;
-    protected $columnsDataType = 'array';
-    /**
-     * Table name.
-     *
-     * @var string
-     */
-    public $table;
-    /**
-     * SQLServer columns in the schema. When unspecified as part of
-     * include/exclude objects, includes/excludes everything.
-     *
-     * @param SqlServerColumn[] $columns
-     */
-    public function setColumns($columns)
+namespace Google\Service\Datastream {
+    class SqlServerTable extends \Google\Collection
     {
+        protected $collection_key = 'columns';
+        protected $columnsType = SqlServerColumn::class;
+        protected $columnsDataType = 'array';
+        /**
+         * Table name.
+         *
+         * @var string
+         */
+        public $table;
+        /**
+         * SQLServer columns in the schema. When unspecified as part of
+         * include/exclude objects, includes/excludes everything.
+         *
+         * @param SqlServerColumn[] $columns
+         */
+        public function setColumns($columns)
+        {
+        }
+        /**
+         * @return SqlServerColumn[]
+         */
+        public function getColumns()
+        {
+        }
+        /**
+         * Table name.
+         *
+         * @param string $table
+         */
+        public function setTable($table)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SqlServerColumn[]
+     * Runtime class alias of \Google\Service\Datastream\SqlServerTable registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumns()
-    {
-    }
-    /**
-     * Table name.
-     *
-     * @param string $table
-     */
-    public function setTable($table)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTable()
+    class Google_Service_Datastream_SqlServerTable extends \Google\Service\Datastream\SqlServerTable
     {
     }
 }

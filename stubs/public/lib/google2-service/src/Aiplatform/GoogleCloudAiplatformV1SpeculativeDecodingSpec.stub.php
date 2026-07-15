@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SpeculativeDecodingSpec extends \Google\Model
-{
-    protected $draftModelSpeculationType = GoogleCloudAiplatformV1SpeculativeDecodingSpecDraftModelSpeculation::class;
-    protected $draftModelSpeculationDataType = '';
-    protected $ngramSpeculationType = GoogleCloudAiplatformV1SpeculativeDecodingSpecNgramSpeculation::class;
-    protected $ngramSpeculationDataType = '';
-    /**
-     * The number of speculative tokens to generate at each step.
-     *
-     * @var int
-     */
-    public $speculativeTokenCount;
-    /**
-     * draft model speculation.
-     *
-     * @param GoogleCloudAiplatformV1SpeculativeDecodingSpecDraftModelSpeculation $draftModelSpeculation
-     */
-    public function setDraftModelSpeculation(GoogleCloudAiplatformV1SpeculativeDecodingSpecDraftModelSpeculation $draftModelSpeculation)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SpeculativeDecodingSpec extends \Google\Model
     {
+        protected $draftModelSpeculationType = GoogleCloudAiplatformV1SpeculativeDecodingSpecDraftModelSpeculation::class;
+        protected $draftModelSpeculationDataType = '';
+        protected $ngramSpeculationType = GoogleCloudAiplatformV1SpeculativeDecodingSpecNgramSpeculation::class;
+        protected $ngramSpeculationDataType = '';
+        /**
+         * The number of speculative tokens to generate at each step.
+         *
+         * @var int
+         */
+        public $speculativeTokenCount;
+        /**
+         * draft model speculation.
+         *
+         * @param GoogleCloudAiplatformV1SpeculativeDecodingSpecDraftModelSpeculation $draftModelSpeculation
+         */
+        public function setDraftModelSpeculation(GoogleCloudAiplatformV1SpeculativeDecodingSpecDraftModelSpeculation $draftModelSpeculation)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SpeculativeDecodingSpecDraftModelSpeculation
+         */
+        public function getDraftModelSpeculation()
+        {
+        }
+        /**
+         * N-Gram speculation.
+         *
+         * @param GoogleCloudAiplatformV1SpeculativeDecodingSpecNgramSpeculation $ngramSpeculation
+         */
+        public function setNgramSpeculation(GoogleCloudAiplatformV1SpeculativeDecodingSpecNgramSpeculation $ngramSpeculation)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SpeculativeDecodingSpecNgramSpeculation
+         */
+        public function getNgramSpeculation()
+        {
+        }
+        /**
+         * The number of speculative tokens to generate at each step.
+         *
+         * @param int $speculativeTokenCount
+         */
+        public function setSpeculativeTokenCount($speculativeTokenCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSpeculativeTokenCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1SpeculativeDecodingSpecDraftModelSpeculation
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SpeculativeDecodingSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDraftModelSpeculation()
-    {
-    }
-    /**
-     * N-Gram speculation.
-     *
-     * @param GoogleCloudAiplatformV1SpeculativeDecodingSpecNgramSpeculation $ngramSpeculation
-     */
-    public function setNgramSpeculation(GoogleCloudAiplatformV1SpeculativeDecodingSpecNgramSpeculation $ngramSpeculation)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1SpeculativeDecodingSpecNgramSpeculation
-     */
-    public function getNgramSpeculation()
-    {
-    }
-    /**
-     * The number of speculative tokens to generate at each step.
-     *
-     * @param int $speculativeTokenCount
-     */
-    public function setSpeculativeTokenCount($speculativeTokenCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSpeculativeTokenCount()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SpeculativeDecodingSpec extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SpeculativeDecodingSpec
     {
     }
 }

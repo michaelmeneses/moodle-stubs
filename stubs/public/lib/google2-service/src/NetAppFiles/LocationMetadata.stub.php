@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetAppFiles;
-
-class LocationMetadata extends \Google\Collection
-{
-    protected $collection_key = 'supportedServiceLevels';
-    /**
-     * Output only. Indicates if the location has VCP support.
-     *
-     * @var bool
-     */
-    public $hasVcp;
-    /**
-     * Output only. Supported flex performance in a location.
-     *
-     * @var string[]
-     */
-    public $supportedFlexPerformance;
-    /**
-     * Output only. Supported service levels in a location.
-     *
-     * @var string[]
-     */
-    public $supportedServiceLevels;
-    /**
-     * Output only. Indicates if the location has VCP support.
-     *
-     * @param bool $hasVcp
-     */
-    public function setHasVcp($hasVcp)
+namespace Google\Service\NetAppFiles {
+    class LocationMetadata extends \Google\Collection
     {
+        protected $collection_key = 'supportedServiceLevels';
+        /**
+         * Output only. Indicates if the location has VCP support.
+         *
+         * @var bool
+         */
+        public $hasVcp;
+        /**
+         * Output only. Supported flex performance in a location.
+         *
+         * @var string[]
+         */
+        public $supportedFlexPerformance;
+        /**
+         * Output only. Supported service levels in a location.
+         *
+         * @var string[]
+         */
+        public $supportedServiceLevels;
+        /**
+         * Output only. Indicates if the location has VCP support.
+         *
+         * @param bool $hasVcp
+         */
+        public function setHasVcp($hasVcp)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getHasVcp()
+        {
+        }
+        /**
+         * Output only. Supported flex performance in a location.
+         *
+         * @param string[] $supportedFlexPerformance
+         */
+        public function setSupportedFlexPerformance($supportedFlexPerformance)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSupportedFlexPerformance()
+        {
+        }
+        /**
+         * Output only. Supported service levels in a location.
+         *
+         * @param string[] $supportedServiceLevels
+         */
+        public function setSupportedServiceLevels($supportedServiceLevels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSupportedServiceLevels()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\NetAppFiles\LocationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHasVcp()
-    {
-    }
-    /**
-     * Output only. Supported flex performance in a location.
-     *
-     * @param string[] $supportedFlexPerformance
-     */
-    public function setSupportedFlexPerformance($supportedFlexPerformance)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSupportedFlexPerformance()
-    {
-    }
-    /**
-     * Output only. Supported service levels in a location.
-     *
-     * @param string[] $supportedServiceLevels
-     */
-    public function setSupportedServiceLevels($supportedServiceLevels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSupportedServiceLevels()
+    class Google_Service_NetAppFiles_LocationMetadata extends \Google\Service\NetAppFiles\LocationMetadata
     {
     }
 }

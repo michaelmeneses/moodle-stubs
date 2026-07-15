@@ -21,95 +21,107 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkSecurity\Resource;
-
-/**
- * The "dnsThreatDetectors" collection of methods.
- * Typical usage is:
- *  <code>
- *   $networksecurityService = new Google\Service\NetworkSecurity(...);
- *   $dnsThreatDetectors = $networksecurityService->projects_locations_dnsThreatDetectors;
- *  </code>
- */
-class ProjectsLocationsDnsThreatDetectors extends \Google\Service\Resource
-{
+namespace Google\Service\NetworkSecurity\Resource {
+    use Google\Service\NetworkSecurity\DnsThreatDetector;
+    use Google\Service\NetworkSecurity\ListDnsThreatDetectorsResponse;
+    use Google\Service\NetworkSecurity\NetworksecurityEmpty;
     /**
-     * Creates a new DnsThreatDetector in a given project and location.
-     * (dnsThreatDetectors.create)
-     *
-     * @param string $parent Required. The value for the parent of the
-     * DnsThreatDetector resource.
-     * @param DnsThreatDetector $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string dnsThreatDetectorId Optional. The ID of the requesting
-     * DnsThreatDetector object. If this field is not supplied, the service
-     * generates an identifier.
-     * @return DnsThreatDetector
-     * @throws \Google\Service\Exception
+     * The "dnsThreatDetectors" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $networksecurityService = new Google\Service\NetworkSecurity(...);
+     *   $dnsThreatDetectors = $networksecurityService->projects_locations_dnsThreatDetectors;
+     *  </code>
      */
-    public function create($parent, DnsThreatDetector $postBody, $optParams = [])
+    class ProjectsLocationsDnsThreatDetectors extends \Google\Service\Resource
     {
+        /**
+         * Creates a new DnsThreatDetector in a given project and location.
+         * (dnsThreatDetectors.create)
+         *
+         * @param string $parent Required. The value for the parent of the
+         * DnsThreatDetector resource.
+         * @param DnsThreatDetector $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string dnsThreatDetectorId Optional. The ID of the requesting
+         * DnsThreatDetector object. If this field is not supplied, the service
+         * generates an identifier.
+         * @return DnsThreatDetector
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, DnsThreatDetector $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a single DnsThreatDetector. (dnsThreatDetectors.delete)
+         *
+         * @param string $name Required. Name of the DnsThreatDetector resource.
+         * @param array $optParams Optional parameters.
+         * @return NetworksecurityEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets the details of a single DnsThreatDetector. (dnsThreatDetectors.get)
+         *
+         * @param string $name Required. Name of the DnsThreatDetector resource.
+         * @param array $optParams Optional parameters.
+         * @return DnsThreatDetector
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists DnsThreatDetectors in a given project and location.
+         * (dnsThreatDetectors.listProjectsLocationsDnsThreatDetectors)
+         *
+         * @param string $parent Required. The parent value for
+         * `ListDnsThreatDetectorsRequest`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Optional. The requested page size. The server may
+         * return fewer items than requested. If unspecified, the server picks an
+         * appropriate default.
+         * @opt_param string pageToken Optional. A page token received from a previous
+         * `ListDnsThreatDetectorsRequest` call. Provide this to retrieve the subsequent
+         * page.
+         * @return ListDnsThreatDetectorsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsDnsThreatDetectors($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates a single DnsThreatDetector. (dnsThreatDetectors.patch)
+         *
+         * @param string $name Immutable. Identifier. Name of the DnsThreatDetector
+         * resource.
+         * @param DnsThreatDetector $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Optional. The field mask is used to specify the
+         * fields to be overwritten in the DnsThreatDetector resource by the update. The
+         * fields specified in the update_mask are relative to the resource, not the
+         * full request. A field will be overwritten if it is in the mask. If the mask
+         * is not provided then all fields present in the request will be overwritten.
+         * @return DnsThreatDetector
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, DnsThreatDetector $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a single DnsThreatDetector. (dnsThreatDetectors.delete)
-     *
-     * @param string $name Required. Name of the DnsThreatDetector resource.
-     * @param array $optParams Optional parameters.
-     * @return NetworksecurityEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\NetworkSecurity\Resource\ProjectsLocationsDnsThreatDetectors registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets the details of a single DnsThreatDetector. (dnsThreatDetectors.get)
-     *
-     * @param string $name Required. Name of the DnsThreatDetector resource.
-     * @param array $optParams Optional parameters.
-     * @return DnsThreatDetector
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists DnsThreatDetectors in a given project and location.
-     * (dnsThreatDetectors.listProjectsLocationsDnsThreatDetectors)
-     *
-     * @param string $parent Required. The parent value for
-     * `ListDnsThreatDetectorsRequest`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Optional. The requested page size. The server may
-     * return fewer items than requested. If unspecified, the server picks an
-     * appropriate default.
-     * @opt_param string pageToken Optional. A page token received from a previous
-     * `ListDnsThreatDetectorsRequest` call. Provide this to retrieve the subsequent
-     * page.
-     * @return ListDnsThreatDetectorsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsDnsThreatDetectors($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates a single DnsThreatDetector. (dnsThreatDetectors.patch)
-     *
-     * @param string $name Immutable. Identifier. Name of the DnsThreatDetector
-     * resource.
-     * @param DnsThreatDetector $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Optional. The field mask is used to specify the
-     * fields to be overwritten in the DnsThreatDetector resource by the update. The
-     * fields specified in the update_mask are relative to the resource, not the
-     * full request. A field will be overwritten if it is in the mask. If the mask
-     * is not provided then all fields present in the request will be overwritten.
-     * @return DnsThreatDetector
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, DnsThreatDetector $postBody, $optParams = [])
+    class Google_Service_NetworkSecurity_Resource_ProjectsLocationsDnsThreatDetectors extends \Google\Service\NetworkSecurity\Resource\ProjectsLocationsDnsThreatDetectors
     {
     }
 }

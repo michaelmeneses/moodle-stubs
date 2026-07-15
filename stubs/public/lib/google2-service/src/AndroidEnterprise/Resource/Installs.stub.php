@@ -21,82 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise\Resource;
-
-/**
- * The "installs" collection of methods.
- * Typical usage is:
- *  <code>
- *   $androidenterpriseService = new Google\Service\AndroidEnterprise(...);
- *   $installs = $androidenterpriseService->installs;
- *  </code>
- */
-class Installs extends \Google\Service\Resource
-{
+namespace Google\Service\AndroidEnterprise\Resource {
+    use Google\Service\AndroidEnterprise\Install;
+    use Google\Service\AndroidEnterprise\InstallsListResponse;
     /**
-     * Requests to remove an app from a device. A call to get or list will still
-     * show the app as installed on the device until it is actually removed. A
-     * successful response indicates that a removal request has been sent to the
-     * device. The call will be considered successful even if the app is not present
-     * on the device (e.g. it was never installed, or was removed by the user).
-     * (installs.delete)
-     *
-     * @param string $enterpriseId The ID of the enterprise.
-     * @param string $userId The ID of the user.
-     * @param string $deviceId The Android ID of the device.
-     * @param string $installId The ID of the product represented by the install,
-     * e.g. "app:com.google.android.gm".
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * The "installs" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $androidenterpriseService = new Google\Service\AndroidEnterprise(...);
+     *   $installs = $androidenterpriseService->installs;
+     *  </code>
      */
-    public function delete($enterpriseId, $userId, $deviceId, $installId, $optParams = [])
+    class Installs extends \Google\Service\Resource
     {
+        /**
+         * Requests to remove an app from a device. A call to get or list will still
+         * show the app as installed on the device until it is actually removed. A
+         * successful response indicates that a removal request has been sent to the
+         * device. The call will be considered successful even if the app is not present
+         * on the device (e.g. it was never installed, or was removed by the user).
+         * (installs.delete)
+         *
+         * @param string $enterpriseId The ID of the enterprise.
+         * @param string $userId The ID of the user.
+         * @param string $deviceId The Android ID of the device.
+         * @param string $installId The ID of the product represented by the install,
+         * e.g. "app:com.google.android.gm".
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($enterpriseId, $userId, $deviceId, $installId, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves details of an installation of an app on a device. (installs.get)
+         *
+         * @param string $enterpriseId The ID of the enterprise.
+         * @param string $userId The ID of the user.
+         * @param string $deviceId The Android ID of the device.
+         * @param string $installId The ID of the product represented by the install,
+         * e.g. "app:com.google.android.gm".
+         * @param array $optParams Optional parameters.
+         * @return Install
+         * @throws \Google\Service\Exception
+         */
+        public function get($enterpriseId, $userId, $deviceId, $installId, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves the details of all apps installed on the specified device.
+         * (installs.listInstalls)
+         *
+         * @param string $enterpriseId The ID of the enterprise.
+         * @param string $userId The ID of the user.
+         * @param string $deviceId The Android ID of the device.
+         * @param array $optParams Optional parameters.
+         * @return InstallsListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listInstalls($enterpriseId, $userId, $deviceId, $optParams = [])
+        {
+        }
+        /**
+         * Requests to install the latest version of an app to a device. If the app is
+         * already installed, then it is updated to the latest version if necessary.
+         * (installs.update)
+         *
+         * @param string $enterpriseId The ID of the enterprise.
+         * @param string $userId The ID of the user.
+         * @param string $deviceId The Android ID of the device.
+         * @param string $installId The ID of the product represented by the install,
+         * e.g. "app:com.google.android.gm".
+         * @param Install $postBody
+         * @param array $optParams Optional parameters.
+         * @return Install
+         * @throws \Google\Service\Exception
+         */
+        public function update($enterpriseId, $userId, $deviceId, $installId, Install $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Retrieves details of an installation of an app on a device. (installs.get)
-     *
-     * @param string $enterpriseId The ID of the enterprise.
-     * @param string $userId The ID of the user.
-     * @param string $deviceId The Android ID of the device.
-     * @param string $installId The ID of the product represented by the install,
-     * e.g. "app:com.google.android.gm".
-     * @param array $optParams Optional parameters.
-     * @return Install
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\AndroidEnterprise\Resource\Installs registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($enterpriseId, $userId, $deviceId, $installId, $optParams = [])
-    {
-    }
-    /**
-     * Retrieves the details of all apps installed on the specified device.
-     * (installs.listInstalls)
-     *
-     * @param string $enterpriseId The ID of the enterprise.
-     * @param string $userId The ID of the user.
-     * @param string $deviceId The Android ID of the device.
-     * @param array $optParams Optional parameters.
-     * @return InstallsListResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listInstalls($enterpriseId, $userId, $deviceId, $optParams = [])
-    {
-    }
-    /**
-     * Requests to install the latest version of an app to a device. If the app is
-     * already installed, then it is updated to the latest version if necessary.
-     * (installs.update)
-     *
-     * @param string $enterpriseId The ID of the enterprise.
-     * @param string $userId The ID of the user.
-     * @param string $deviceId The Android ID of the device.
-     * @param string $installId The ID of the product represented by the install,
-     * e.g. "app:com.google.android.gm".
-     * @param Install $postBody
-     * @param array $optParams Optional parameters.
-     * @return Install
-     * @throws \Google\Service\Exception
-     */
-    public function update($enterpriseId, $userId, $deviceId, $installId, Install $postBody, $optParams = [])
+    class Google_Service_AndroidEnterprise_Resource_Installs extends \Google\Service\AndroidEnterprise\Resource\Installs
     {
     }
 }

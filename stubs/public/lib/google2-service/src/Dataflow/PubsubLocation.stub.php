@@ -21,176 +21,185 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class PubsubLocation extends \Google\Model
-{
-    /**
-     * Indicates whether the pipeline allows late-arriving data.
-     *
-     * @var bool
-     */
-    public $dropLateData;
-    /**
-     * If true, then this location represents dynamic topics.
-     *
-     * @var bool
-     */
-    public $dynamicDestinations;
-    /**
-     * If set, contains a pubsub label from which to extract record ids. If left
-     * empty, record deduplication will be strictly best effort.
-     *
-     * @var string
-     */
-    public $idLabel;
-    /**
-     * A pubsub subscription, in the form of
-     * "pubsub.googleapis.com/subscriptions//"
-     *
-     * @var string
-     */
-    public $subscription;
-    /**
-     * If set, contains a pubsub label from which to extract record timestamps. If
-     * left empty, record timestamps will be generated upon arrival.
-     *
-     * @var string
-     */
-    public $timestampLabel;
-    /**
-     * A pubsub topic, in the form of "pubsub.googleapis.com/topics//"
-     *
-     * @var string
-     */
-    public $topic;
-    /**
-     * If set, specifies the pubsub subscription that will be used for tracking
-     * custom time timestamps for watermark estimation.
-     *
-     * @var string
-     */
-    public $trackingSubscription;
-    /**
-     * If true, then the client has requested to get pubsub attributes.
-     *
-     * @var bool
-     */
-    public $withAttributes;
-    /**
-     * Indicates whether the pipeline allows late-arriving data.
-     *
-     * @param bool $dropLateData
-     */
-    public function setDropLateData($dropLateData)
+namespace Google\Service\Dataflow {
+    class PubsubLocation extends \Google\Model
     {
+        /**
+         * Indicates whether the pipeline allows late-arriving data.
+         *
+         * @var bool
+         */
+        public $dropLateData;
+        /**
+         * If true, then this location represents dynamic topics.
+         *
+         * @var bool
+         */
+        public $dynamicDestinations;
+        /**
+         * If set, contains a pubsub label from which to extract record ids. If left
+         * empty, record deduplication will be strictly best effort.
+         *
+         * @var string
+         */
+        public $idLabel;
+        /**
+         * A pubsub subscription, in the form of
+         * "pubsub.googleapis.com/subscriptions//"
+         *
+         * @var string
+         */
+        public $subscription;
+        /**
+         * If set, contains a pubsub label from which to extract record timestamps. If
+         * left empty, record timestamps will be generated upon arrival.
+         *
+         * @var string
+         */
+        public $timestampLabel;
+        /**
+         * A pubsub topic, in the form of "pubsub.googleapis.com/topics//"
+         *
+         * @var string
+         */
+        public $topic;
+        /**
+         * If set, specifies the pubsub subscription that will be used for tracking
+         * custom time timestamps for watermark estimation.
+         *
+         * @var string
+         */
+        public $trackingSubscription;
+        /**
+         * If true, then the client has requested to get pubsub attributes.
+         *
+         * @var bool
+         */
+        public $withAttributes;
+        /**
+         * Indicates whether the pipeline allows late-arriving data.
+         *
+         * @param bool $dropLateData
+         */
+        public function setDropLateData($dropLateData)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDropLateData()
+        {
+        }
+        /**
+         * If true, then this location represents dynamic topics.
+         *
+         * @param bool $dynamicDestinations
+         */
+        public function setDynamicDestinations($dynamicDestinations)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDynamicDestinations()
+        {
+        }
+        /**
+         * If set, contains a pubsub label from which to extract record ids. If left
+         * empty, record deduplication will be strictly best effort.
+         *
+         * @param string $idLabel
+         */
+        public function setIdLabel($idLabel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIdLabel()
+        {
+        }
+        /**
+         * A pubsub subscription, in the form of
+         * "pubsub.googleapis.com/subscriptions//"
+         *
+         * @param string $subscription
+         */
+        public function setSubscription($subscription)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubscription()
+        {
+        }
+        /**
+         * If set, contains a pubsub label from which to extract record timestamps. If
+         * left empty, record timestamps will be generated upon arrival.
+         *
+         * @param string $timestampLabel
+         */
+        public function setTimestampLabel($timestampLabel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimestampLabel()
+        {
+        }
+        /**
+         * A pubsub topic, in the form of "pubsub.googleapis.com/topics//"
+         *
+         * @param string $topic
+         */
+        public function setTopic($topic)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTopic()
+        {
+        }
+        /**
+         * If set, specifies the pubsub subscription that will be used for tracking
+         * custom time timestamps for watermark estimation.
+         *
+         * @param string $trackingSubscription
+         */
+        public function setTrackingSubscription($trackingSubscription)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTrackingSubscription()
+        {
+        }
+        /**
+         * If true, then the client has requested to get pubsub attributes.
+         *
+         * @param bool $withAttributes
+         */
+        public function setWithAttributes($withAttributes)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getWithAttributes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Dataflow\PubsubLocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDropLateData()
-    {
-    }
-    /**
-     * If true, then this location represents dynamic topics.
-     *
-     * @param bool $dynamicDestinations
-     */
-    public function setDynamicDestinations($dynamicDestinations)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDynamicDestinations()
-    {
-    }
-    /**
-     * If set, contains a pubsub label from which to extract record ids. If left
-     * empty, record deduplication will be strictly best effort.
-     *
-     * @param string $idLabel
-     */
-    public function setIdLabel($idLabel)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIdLabel()
-    {
-    }
-    /**
-     * A pubsub subscription, in the form of
-     * "pubsub.googleapis.com/subscriptions//"
-     *
-     * @param string $subscription
-     */
-    public function setSubscription($subscription)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubscription()
-    {
-    }
-    /**
-     * If set, contains a pubsub label from which to extract record timestamps. If
-     * left empty, record timestamps will be generated upon arrival.
-     *
-     * @param string $timestampLabel
-     */
-    public function setTimestampLabel($timestampLabel)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimestampLabel()
-    {
-    }
-    /**
-     * A pubsub topic, in the form of "pubsub.googleapis.com/topics//"
-     *
-     * @param string $topic
-     */
-    public function setTopic($topic)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTopic()
-    {
-    }
-    /**
-     * If set, specifies the pubsub subscription that will be used for tracking
-     * custom time timestamps for watermark estimation.
-     *
-     * @param string $trackingSubscription
-     */
-    public function setTrackingSubscription($trackingSubscription)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTrackingSubscription()
-    {
-    }
-    /**
-     * If true, then the client has requested to get pubsub attributes.
-     *
-     * @param bool $withAttributes
-     */
-    public function setWithAttributes($withAttributes)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getWithAttributes()
+    class Google_Service_Dataflow_PubsubLocation extends \Google\Service\Dataflow\PubsubLocation
     {
     }
 }

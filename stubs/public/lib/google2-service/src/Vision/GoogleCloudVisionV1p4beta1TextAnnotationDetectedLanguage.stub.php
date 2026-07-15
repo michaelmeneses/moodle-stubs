@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class GoogleCloudVisionV1p4beta1TextAnnotationDetectedLanguage extends \Google\Model
-{
-    /**
-     * Confidence of detected language. Range [0, 1].
-     *
-     * @var float
-     */
-    public $confidence;
-    /**
-     * The BCP-47 language code, such as "en-US" or "sr-Latn". For more
-     * information, see
-     * http://www.unicode.org/reports/tr35/#Unicode_locale_identifier.
-     *
-     * @var string
-     */
-    public $languageCode;
-    /**
-     * Confidence of detected language. Range [0, 1].
-     *
-     * @param float $confidence
-     */
-    public function setConfidence($confidence)
+namespace Google\Service\Vision {
+    class GoogleCloudVisionV1p4beta1TextAnnotationDetectedLanguage extends \Google\Model
     {
+        /**
+         * Confidence of detected language. Range [0, 1].
+         *
+         * @var float
+         */
+        public $confidence;
+        /**
+         * The BCP-47 language code, such as "en-US" or "sr-Latn". For more
+         * information, see
+         * http://www.unicode.org/reports/tr35/#Unicode_locale_identifier.
+         *
+         * @var string
+         */
+        public $languageCode;
+        /**
+         * Confidence of detected language. Range [0, 1].
+         *
+         * @param float $confidence
+         */
+        public function setConfidence($confidence)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getConfidence()
+        {
+        }
+        /**
+         * The BCP-47 language code, such as "en-US" or "sr-Latn". For more
+         * information, see
+         * http://www.unicode.org/reports/tr35/#Unicode_locale_identifier.
+         *
+         * @param string $languageCode
+         */
+        public function setLanguageCode($languageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLanguageCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\Vision\GoogleCloudVisionV1p4beta1TextAnnotationDetectedLanguage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfidence()
-    {
-    }
-    /**
-     * The BCP-47 language code, such as "en-US" or "sr-Latn". For more
-     * information, see
-     * http://www.unicode.org/reports/tr35/#Unicode_locale_identifier.
-     *
-     * @param string $languageCode
-     */
-    public function setLanguageCode($languageCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLanguageCode()
+    class Google_Service_Vision_GoogleCloudVisionV1p4beta1TextAnnotationDetectedLanguage extends \Google\Service\Vision\GoogleCloudVisionV1p4beta1TextAnnotationDetectedLanguage
     {
     }
 }

@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class VideoStatsContentDetails extends \Google\Model
-{
-    /**
-     * Output only. The length of the video. The property value is a
-     * [`google.protobuf.Duration`](https://developers.google.com/protocol-
-     * buffers/docs/reference/google.protobuf#duration) object.
-     *
-     * @var string
-     */
-    public $duration;
-    /**
-     * Output only. The length of the video. The property value is a
-     * [`google.protobuf.Duration`](https://developers.google.com/protocol-
-     * buffers/docs/reference/google.protobuf#duration) object.
-     *
-     * @param string $duration
-     */
-    public function setDuration($duration)
+namespace Google\Service\YouTube {
+    class VideoStatsContentDetails extends \Google\Model
     {
+        /**
+         * Output only. The length of the video. The property value is a
+         * [`google.protobuf.Duration`](https://developers.google.com/protocol-
+         * buffers/docs/reference/google.protobuf#duration) object.
+         *
+         * @var string
+         */
+        public $duration;
+        /**
+         * Output only. The length of the video. The property value is a
+         * [`google.protobuf.Duration`](https://developers.google.com/protocol-
+         * buffers/docs/reference/google.protobuf#duration) object.
+         *
+         * @param string $duration
+         */
+        public function setDuration($duration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDuration()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\VideoStatsContentDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDuration()
+    class Google_Service_YouTube_VideoStatsContentDetails extends \Google\Service\YouTube\VideoStatsContentDetails
     {
     }
 }

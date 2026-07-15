@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmLoggingGwsSanitizeOptions extends \Google\Collection
-{
-    protected $collection_key = 'logType';
-    /**
-     * @var bool
-     */
-    public $isAlreadySanitized;
-    /**
-     * @var string[]
-     */
-    public $logType;
-    /**
-     * @var string
-     */
-    public $privacy;
-    /**
-     * @var string
-     */
-    public $sanitizeType;
-    /**
-     * @param bool
-     */
-    public function setIsAlreadySanitized($isAlreadySanitized)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmLoggingGwsSanitizeOptions extends \Google\Collection
     {
+        protected $collection_key = 'logType';
+        /**
+         * @var bool
+         */
+        public $isAlreadySanitized;
+        /**
+         * @var string[]
+         */
+        public $logType;
+        /**
+         * @var string
+         */
+        public $privacy;
+        /**
+         * @var string
+         */
+        public $sanitizeType;
+        /**
+         * @param bool
+         */
+        public function setIsAlreadySanitized($isAlreadySanitized)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsAlreadySanitized()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setLogType($logType)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLogType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPrivacy($privacy)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrivacy()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSanitizeType($sanitizeType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSanitizeType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmLoggingGwsSanitizeOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIsAlreadySanitized()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setLogType($logType)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLogType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPrivacy($privacy)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrivacy()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSanitizeType($sanitizeType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSanitizeType()
+    class Google_Service_Integrations_EnterpriseCrmLoggingGwsSanitizeOptions extends \Google\Service\Integrations\EnterpriseCrmLoggingGwsSanitizeOptions
     {
     }
 }

@@ -21,137 +21,146 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SupervisedTuningDatasetDistribution extends \Google\Collection
-{
-    protected $collection_key = 'buckets';
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SupervisedTuningDatasetDistribution extends \Google\Collection
+    {
+        protected $collection_key = 'buckets';
+        /**
+         * Output only. Sum of a given population of values that are billable.
+         *
+         * @var string
+         */
+        public $billableSum;
+        protected $bucketsType = GoogleCloudAiplatformV1SupervisedTuningDatasetDistributionDatasetBucket::class;
+        protected $bucketsDataType = 'array';
+        /**
+         * Output only. The maximum of the population values.
+         *
+         * @var 
+         */
+        public $max;
+        /**
+         * Output only. The arithmetic mean of the values in the population.
+         *
+         * @var 
+         */
+        public $mean;
+        /**
+         * Output only. The median of the values in the population.
+         *
+         * @var 
+         */
+        public $median;
+        /**
+         * Output only. The minimum of the population values.
+         *
+         * @var 
+         */
+        public $min;
+        /**
+         * Output only. The 5th percentile of the values in the population.
+         *
+         * @var 
+         */
+        public $p5;
+        /**
+         * Output only. The 95th percentile of the values in the population.
+         *
+         * @var 
+         */
+        public $p95;
+        /**
+         * Output only. Sum of a given population of values.
+         *
+         * @var string
+         */
+        public $sum;
+        /**
+         * Output only. Sum of a given population of values that are billable.
+         *
+         * @param string $billableSum
+         */
+        public function setBillableSum($billableSum)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBillableSum()
+        {
+        }
+        /**
+         * Output only. Defines the histogram bucket.
+         *
+         * @param GoogleCloudAiplatformV1SupervisedTuningDatasetDistributionDatasetBucket[] $buckets
+         */
+        public function setBuckets($buckets)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SupervisedTuningDatasetDistributionDatasetBucket[]
+         */
+        public function getBuckets()
+        {
+        }
+        public function setMax($max)
+        {
+        }
+        public function getMax()
+        {
+        }
+        public function setMean($mean)
+        {
+        }
+        public function getMean()
+        {
+        }
+        public function setMedian($median)
+        {
+        }
+        public function getMedian()
+        {
+        }
+        public function setMin($min)
+        {
+        }
+        public function getMin()
+        {
+        }
+        public function setP5($p5)
+        {
+        }
+        public function getP5()
+        {
+        }
+        public function setP95($p95)
+        {
+        }
+        public function getP95()
+        {
+        }
+        /**
+         * Output only. Sum of a given population of values.
+         *
+         * @param string $sum
+         */
+        public function setSum($sum)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSum()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * Output only. Sum of a given population of values that are billable.
-     *
-     * @var string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SupervisedTuningDatasetDistribution registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public $billableSum;
-    protected $bucketsType = GoogleCloudAiplatformV1SupervisedTuningDatasetDistributionDatasetBucket::class;
-    protected $bucketsDataType = 'array';
-    /**
-     * Output only. The maximum of the population values.
-     *
-     * @var 
-     */
-    public $max;
-    /**
-     * Output only. The arithmetic mean of the values in the population.
-     *
-     * @var 
-     */
-    public $mean;
-    /**
-     * Output only. The median of the values in the population.
-     *
-     * @var 
-     */
-    public $median;
-    /**
-     * Output only. The minimum of the population values.
-     *
-     * @var 
-     */
-    public $min;
-    /**
-     * Output only. The 5th percentile of the values in the population.
-     *
-     * @var 
-     */
-    public $p5;
-    /**
-     * Output only. The 95th percentile of the values in the population.
-     *
-     * @var 
-     */
-    public $p95;
-    /**
-     * Output only. Sum of a given population of values.
-     *
-     * @var string
-     */
-    public $sum;
-    /**
-     * Output only. Sum of a given population of values that are billable.
-     *
-     * @param string $billableSum
-     */
-    public function setBillableSum($billableSum)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBillableSum()
-    {
-    }
-    /**
-     * Output only. Defines the histogram bucket.
-     *
-     * @param GoogleCloudAiplatformV1SupervisedTuningDatasetDistributionDatasetBucket[] $buckets
-     */
-    public function setBuckets($buckets)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1SupervisedTuningDatasetDistributionDatasetBucket[]
-     */
-    public function getBuckets()
-    {
-    }
-    public function setMax($max)
-    {
-    }
-    public function getMax()
-    {
-    }
-    public function setMean($mean)
-    {
-    }
-    public function getMean()
-    {
-    }
-    public function setMedian($median)
-    {
-    }
-    public function getMedian()
-    {
-    }
-    public function setMin($min)
-    {
-    }
-    public function getMin()
-    {
-    }
-    public function setP5($p5)
-    {
-    }
-    public function getP5()
-    {
-    }
-    public function setP95($p95)
-    {
-    }
-    public function getP95()
-    {
-    }
-    /**
-     * Output only. Sum of a given population of values.
-     *
-     * @param string $sum
-     */
-    public function setSum($sum)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSum()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SupervisedTuningDatasetDistribution extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SupervisedTuningDatasetDistribution
     {
     }
 }

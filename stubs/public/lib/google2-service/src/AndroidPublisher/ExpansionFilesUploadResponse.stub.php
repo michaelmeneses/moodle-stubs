@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class ExpansionFilesUploadResponse extends \Google\Model
-{
-    protected $expansionFileType = ExpansionFile::class;
-    protected $expansionFileDataType = '';
-    /**
-     * The uploaded expansion file configuration.
-     *
-     * @param ExpansionFile $expansionFile
-     */
-    public function setExpansionFile(ExpansionFile $expansionFile)
+namespace Google\Service\AndroidPublisher {
+    class ExpansionFilesUploadResponse extends \Google\Model
     {
+        protected $expansionFileType = ExpansionFile::class;
+        protected $expansionFileDataType = '';
+        /**
+         * The uploaded expansion file configuration.
+         *
+         * @param ExpansionFile $expansionFile
+         */
+        public function setExpansionFile(ExpansionFile $expansionFile)
+        {
+        }
+        /**
+         * @return ExpansionFile
+         */
+        public function getExpansionFile()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ExpansionFile
+     * Runtime class alias of \Google\Service\AndroidPublisher\ExpansionFilesUploadResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExpansionFile()
+    class Google_Service_AndroidPublisher_ExpansionFilesUploadResponse extends \Google\Service\AndroidPublisher\ExpansionFilesUploadResponse
     {
     }
 }

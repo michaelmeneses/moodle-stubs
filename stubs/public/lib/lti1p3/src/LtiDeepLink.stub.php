@@ -8,6 +8,8 @@
  */
 namespace Packback\Lti1p3;
 
+use Firebase\JWT\JWT;
+use Packback\Lti1p3\Interfaces\ILtiRegistration;
 class LtiDeepLink
 {
     public function __construct(private ILtiRegistration $registration, private string $deployment_id, private array $deep_link_settings)

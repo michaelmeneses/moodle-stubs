@@ -21,129 +21,138 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PagespeedInsights;
-
-class LhrEntity extends \Google\Collection
-{
-    protected $collection_key = 'origins';
-    /**
-     * Optional. An optional category name for the entity.
-     *
-     * @var string
-     */
-    public $category;
-    /**
-     * Optional. An optional homepage URL of the entity.
-     *
-     * @var string
-     */
-    public $homepage;
-    /**
-     * Optional. An optional flag indicating if the entity is the first party.
-     *
-     * @var bool
-     */
-    public $isFirstParty;
-    /**
-     * Optional. An optional flag indicating if the entity is not recognized.
-     *
-     * @var bool
-     */
-    public $isUnrecognized;
-    /**
-     * Required. Name of the entity.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. A list of URL origin strings that belong to this entity.
-     *
-     * @var string[]
-     */
-    public $origins;
-    /**
-     * Optional. An optional category name for the entity.
-     *
-     * @param string $category
-     */
-    public function setCategory($category)
+namespace Google\Service\PagespeedInsights {
+    class LhrEntity extends \Google\Collection
     {
+        protected $collection_key = 'origins';
+        /**
+         * Optional. An optional category name for the entity.
+         *
+         * @var string
+         */
+        public $category;
+        /**
+         * Optional. An optional homepage URL of the entity.
+         *
+         * @var string
+         */
+        public $homepage;
+        /**
+         * Optional. An optional flag indicating if the entity is the first party.
+         *
+         * @var bool
+         */
+        public $isFirstParty;
+        /**
+         * Optional. An optional flag indicating if the entity is not recognized.
+         *
+         * @var bool
+         */
+        public $isUnrecognized;
+        /**
+         * Required. Name of the entity.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. A list of URL origin strings that belong to this entity.
+         *
+         * @var string[]
+         */
+        public $origins;
+        /**
+         * Optional. An optional category name for the entity.
+         *
+         * @param string $category
+         */
+        public function setCategory($category)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCategory()
+        {
+        }
+        /**
+         * Optional. An optional homepage URL of the entity.
+         *
+         * @param string $homepage
+         */
+        public function setHomepage($homepage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHomepage()
+        {
+        }
+        /**
+         * Optional. An optional flag indicating if the entity is the first party.
+         *
+         * @param bool $isFirstParty
+         */
+        public function setIsFirstParty($isFirstParty)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsFirstParty()
+        {
+        }
+        /**
+         * Optional. An optional flag indicating if the entity is not recognized.
+         *
+         * @param bool $isUnrecognized
+         */
+        public function setIsUnrecognized($isUnrecognized)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsUnrecognized()
+        {
+        }
+        /**
+         * Required. Name of the entity.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Required. A list of URL origin strings that belong to this entity.
+         *
+         * @param string[] $origins
+         */
+        public function setOrigins($origins)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getOrigins()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PagespeedInsights\LhrEntity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCategory()
-    {
-    }
-    /**
-     * Optional. An optional homepage URL of the entity.
-     *
-     * @param string $homepage
-     */
-    public function setHomepage($homepage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHomepage()
-    {
-    }
-    /**
-     * Optional. An optional flag indicating if the entity is the first party.
-     *
-     * @param bool $isFirstParty
-     */
-    public function setIsFirstParty($isFirstParty)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsFirstParty()
-    {
-    }
-    /**
-     * Optional. An optional flag indicating if the entity is not recognized.
-     *
-     * @param bool $isUnrecognized
-     */
-    public function setIsUnrecognized($isUnrecognized)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsUnrecognized()
-    {
-    }
-    /**
-     * Required. Name of the entity.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Required. A list of URL origin strings that belong to this entity.
-     *
-     * @param string[] $origins
-     */
-    public function setOrigins($origins)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getOrigins()
+    class Google_Service_PagespeedInsights_LhrEntity extends \Google\Service\PagespeedInsights\LhrEntity
     {
     }
 }

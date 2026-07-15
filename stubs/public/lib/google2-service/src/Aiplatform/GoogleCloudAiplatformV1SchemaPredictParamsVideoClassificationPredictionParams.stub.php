@@ -21,142 +21,151 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaPredictParamsVideoClassificationPredictionParams extends \Google\Model
-{
-    /**
-     * The Model only returns predictions with at least this confidence score.
-     * Default value is 0.0
-     *
-     * @var float
-     */
-    public $confidenceThreshold;
-    /**
-     * The Model only returns up to that many top, by confidence score,
-     * predictions per instance. If this number is very high, the Model may return
-     * fewer predictions. Default value is 10,000.
-     *
-     * @var int
-     */
-    public $maxPredictions;
-    /**
-     * Set to true to request classification for a video at one-second intervals.
-     * Vertex AI returns labels and their confidence scores for each second of the
-     * entire time segment of the video that user specified in the input WARNING:
-     * Model evaluation is not done for this classification type, the quality of
-     * it depends on the training data, but there are no metrics provided to
-     * describe that quality. Default value is false
-     *
-     * @var bool
-     */
-    public $oneSecIntervalClassification;
-    /**
-     * Set to true to request segment-level classification. Vertex AI returns
-     * labels and their confidence scores for the entire time segment of the video
-     * that user specified in the input instance. Default value is true
-     *
-     * @var bool
-     */
-    public $segmentClassification;
-    /**
-     * Set to true to request shot-level classification. Vertex AI determines the
-     * boundaries for each camera shot in the entire time segment of the video
-     * that user specified in the input instance. Vertex AI then returns labels
-     * and their confidence scores for each detected shot, along with the start
-     * and end time of the shot. WARNING: Model evaluation is not done for this
-     * classification type, the quality of it depends on the training data, but
-     * there are no metrics provided to describe that quality. Default value is
-     * false
-     *
-     * @var bool
-     */
-    public $shotClassification;
-    /**
-     * The Model only returns predictions with at least this confidence score.
-     * Default value is 0.0
-     *
-     * @param float $confidenceThreshold
-     */
-    public function setConfidenceThreshold($confidenceThreshold)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaPredictParamsVideoClassificationPredictionParams extends \Google\Model
     {
+        /**
+         * The Model only returns predictions with at least this confidence score.
+         * Default value is 0.0
+         *
+         * @var float
+         */
+        public $confidenceThreshold;
+        /**
+         * The Model only returns up to that many top, by confidence score,
+         * predictions per instance. If this number is very high, the Model may return
+         * fewer predictions. Default value is 10,000.
+         *
+         * @var int
+         */
+        public $maxPredictions;
+        /**
+         * Set to true to request classification for a video at one-second intervals.
+         * Vertex AI returns labels and their confidence scores for each second of the
+         * entire time segment of the video that user specified in the input WARNING:
+         * Model evaluation is not done for this classification type, the quality of
+         * it depends on the training data, but there are no metrics provided to
+         * describe that quality. Default value is false
+         *
+         * @var bool
+         */
+        public $oneSecIntervalClassification;
+        /**
+         * Set to true to request segment-level classification. Vertex AI returns
+         * labels and their confidence scores for the entire time segment of the video
+         * that user specified in the input instance. Default value is true
+         *
+         * @var bool
+         */
+        public $segmentClassification;
+        /**
+         * Set to true to request shot-level classification. Vertex AI determines the
+         * boundaries for each camera shot in the entire time segment of the video
+         * that user specified in the input instance. Vertex AI then returns labels
+         * and their confidence scores for each detected shot, along with the start
+         * and end time of the shot. WARNING: Model evaluation is not done for this
+         * classification type, the quality of it depends on the training data, but
+         * there are no metrics provided to describe that quality. Default value is
+         * false
+         *
+         * @var bool
+         */
+        public $shotClassification;
+        /**
+         * The Model only returns predictions with at least this confidence score.
+         * Default value is 0.0
+         *
+         * @param float $confidenceThreshold
+         */
+        public function setConfidenceThreshold($confidenceThreshold)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getConfidenceThreshold()
+        {
+        }
+        /**
+         * The Model only returns up to that many top, by confidence score,
+         * predictions per instance. If this number is very high, the Model may return
+         * fewer predictions. Default value is 10,000.
+         *
+         * @param int $maxPredictions
+         */
+        public function setMaxPredictions($maxPredictions)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxPredictions()
+        {
+        }
+        /**
+         * Set to true to request classification for a video at one-second intervals.
+         * Vertex AI returns labels and their confidence scores for each second of the
+         * entire time segment of the video that user specified in the input WARNING:
+         * Model evaluation is not done for this classification type, the quality of
+         * it depends on the training data, but there are no metrics provided to
+         * describe that quality. Default value is false
+         *
+         * @param bool $oneSecIntervalClassification
+         */
+        public function setOneSecIntervalClassification($oneSecIntervalClassification)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getOneSecIntervalClassification()
+        {
+        }
+        /**
+         * Set to true to request segment-level classification. Vertex AI returns
+         * labels and their confidence scores for the entire time segment of the video
+         * that user specified in the input instance. Default value is true
+         *
+         * @param bool $segmentClassification
+         */
+        public function setSegmentClassification($segmentClassification)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSegmentClassification()
+        {
+        }
+        /**
+         * Set to true to request shot-level classification. Vertex AI determines the
+         * boundaries for each camera shot in the entire time segment of the video
+         * that user specified in the input instance. Vertex AI then returns labels
+         * and their confidence scores for each detected shot, along with the start
+         * and end time of the shot. WARNING: Model evaluation is not done for this
+         * classification type, the quality of it depends on the training data, but
+         * there are no metrics provided to describe that quality. Default value is
+         * false
+         *
+         * @param bool $shotClassification
+         */
+        public function setShotClassification($shotClassification)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getShotClassification()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaPredictParamsVideoClassificationPredictionParams registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfidenceThreshold()
-    {
-    }
-    /**
-     * The Model only returns up to that many top, by confidence score,
-     * predictions per instance. If this number is very high, the Model may return
-     * fewer predictions. Default value is 10,000.
-     *
-     * @param int $maxPredictions
-     */
-    public function setMaxPredictions($maxPredictions)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxPredictions()
-    {
-    }
-    /**
-     * Set to true to request classification for a video at one-second intervals.
-     * Vertex AI returns labels and their confidence scores for each second of the
-     * entire time segment of the video that user specified in the input WARNING:
-     * Model evaluation is not done for this classification type, the quality of
-     * it depends on the training data, but there are no metrics provided to
-     * describe that quality. Default value is false
-     *
-     * @param bool $oneSecIntervalClassification
-     */
-    public function setOneSecIntervalClassification($oneSecIntervalClassification)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getOneSecIntervalClassification()
-    {
-    }
-    /**
-     * Set to true to request segment-level classification. Vertex AI returns
-     * labels and their confidence scores for the entire time segment of the video
-     * that user specified in the input instance. Default value is true
-     *
-     * @param bool $segmentClassification
-     */
-    public function setSegmentClassification($segmentClassification)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSegmentClassification()
-    {
-    }
-    /**
-     * Set to true to request shot-level classification. Vertex AI determines the
-     * boundaries for each camera shot in the entire time segment of the video
-     * that user specified in the input instance. Vertex AI then returns labels
-     * and their confidence scores for each detected shot, along with the start
-     * and end time of the shot. WARNING: Model evaluation is not done for this
-     * classification type, the quality of it depends on the training data, but
-     * there are no metrics provided to describe that quality. Default value is
-     * false
-     *
-     * @param bool $shotClassification
-     */
-    public function setShotClassification($shotClassification)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getShotClassification()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaPredictParamsVideoClassificationPredictionParams extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaPredictParamsVideoClassificationPredictionParams
     {
     }
 }

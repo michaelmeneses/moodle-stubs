@@ -21,93 +21,102 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1DataProfileResult extends \Google\Model
-{
-    protected $catalogPublishingStatusType = GoogleCloudDataplexV1DataScanCatalogPublishingStatus::class;
-    protected $catalogPublishingStatusDataType = '';
-    protected $postScanActionsResultType = GoogleCloudDataplexV1DataProfileResultPostScanActionsResult::class;
-    protected $postScanActionsResultDataType = '';
-    protected $profileType = GoogleCloudDataplexV1DataProfileResultProfile::class;
-    protected $profileDataType = '';
-    /**
-     * Output only. The count of rows scanned.
-     *
-     * @var string
-     */
-    public $rowCount;
-    protected $scannedDataType = GoogleCloudDataplexV1ScannedData::class;
-    protected $scannedDataDataType = '';
-    /**
-     * Output only. The status of publishing the data scan as Dataplex Universal
-     * Catalog metadata.
-     *
-     * @param GoogleCloudDataplexV1DataScanCatalogPublishingStatus $catalogPublishingStatus
-     */
-    public function setCatalogPublishingStatus(GoogleCloudDataplexV1DataScanCatalogPublishingStatus $catalogPublishingStatus)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1DataProfileResult extends \Google\Model
     {
+        protected $catalogPublishingStatusType = GoogleCloudDataplexV1DataScanCatalogPublishingStatus::class;
+        protected $catalogPublishingStatusDataType = '';
+        protected $postScanActionsResultType = GoogleCloudDataplexV1DataProfileResultPostScanActionsResult::class;
+        protected $postScanActionsResultDataType = '';
+        protected $profileType = GoogleCloudDataplexV1DataProfileResultProfile::class;
+        protected $profileDataType = '';
+        /**
+         * Output only. The count of rows scanned.
+         *
+         * @var string
+         */
+        public $rowCount;
+        protected $scannedDataType = GoogleCloudDataplexV1ScannedData::class;
+        protected $scannedDataDataType = '';
+        /**
+         * Output only. The status of publishing the data scan as Dataplex Universal
+         * Catalog metadata.
+         *
+         * @param GoogleCloudDataplexV1DataScanCatalogPublishingStatus $catalogPublishingStatus
+         */
+        public function setCatalogPublishingStatus(GoogleCloudDataplexV1DataScanCatalogPublishingStatus $catalogPublishingStatus)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1DataScanCatalogPublishingStatus
+         */
+        public function getCatalogPublishingStatus()
+        {
+        }
+        /**
+         * Output only. The result of post scan actions.
+         *
+         * @param GoogleCloudDataplexV1DataProfileResultPostScanActionsResult $postScanActionsResult
+         */
+        public function setPostScanActionsResult(GoogleCloudDataplexV1DataProfileResultPostScanActionsResult $postScanActionsResult)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1DataProfileResultPostScanActionsResult
+         */
+        public function getPostScanActionsResult()
+        {
+        }
+        /**
+         * Output only. The profile information per field.
+         *
+         * @param GoogleCloudDataplexV1DataProfileResultProfile $profile
+         */
+        public function setProfile(GoogleCloudDataplexV1DataProfileResultProfile $profile)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1DataProfileResultProfile
+         */
+        public function getProfile()
+        {
+        }
+        /**
+         * Output only. The count of rows scanned.
+         *
+         * @param string $rowCount
+         */
+        public function setRowCount($rowCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRowCount()
+        {
+        }
+        /**
+         * Output only. The data scanned for this result.
+         *
+         * @param GoogleCloudDataplexV1ScannedData $scannedData
+         */
+        public function setScannedData(GoogleCloudDataplexV1ScannedData $scannedData)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1ScannedData
+         */
+        public function getScannedData()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDataplexV1DataScanCatalogPublishingStatus
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataProfileResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCatalogPublishingStatus()
-    {
-    }
-    /**
-     * Output only. The result of post scan actions.
-     *
-     * @param GoogleCloudDataplexV1DataProfileResultPostScanActionsResult $postScanActionsResult
-     */
-    public function setPostScanActionsResult(GoogleCloudDataplexV1DataProfileResultPostScanActionsResult $postScanActionsResult)
-    {
-    }
-    /**
-     * @return GoogleCloudDataplexV1DataProfileResultPostScanActionsResult
-     */
-    public function getPostScanActionsResult()
-    {
-    }
-    /**
-     * Output only. The profile information per field.
-     *
-     * @param GoogleCloudDataplexV1DataProfileResultProfile $profile
-     */
-    public function setProfile(GoogleCloudDataplexV1DataProfileResultProfile $profile)
-    {
-    }
-    /**
-     * @return GoogleCloudDataplexV1DataProfileResultProfile
-     */
-    public function getProfile()
-    {
-    }
-    /**
-     * Output only. The count of rows scanned.
-     *
-     * @param string $rowCount
-     */
-    public function setRowCount($rowCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRowCount()
-    {
-    }
-    /**
-     * Output only. The data scanned for this result.
-     *
-     * @param GoogleCloudDataplexV1ScannedData $scannedData
-     */
-    public function setScannedData(GoogleCloudDataplexV1ScannedData $scannedData)
-    {
-    }
-    /**
-     * @return GoogleCloudDataplexV1ScannedData
-     */
-    public function getScannedData()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1DataProfileResult extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataProfileResult
     {
     }
 }

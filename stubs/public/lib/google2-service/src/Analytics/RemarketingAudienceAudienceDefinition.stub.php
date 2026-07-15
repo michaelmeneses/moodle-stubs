@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics;
-
-class RemarketingAudienceAudienceDefinition extends \Google\Model
-{
-    protected $includeConditionsType = IncludeConditions::class;
-    protected $includeConditionsDataType = '';
-    /**
-     * Defines the conditions to include users to the audience.
-     *
-     * @param IncludeConditions $includeConditions
-     */
-    public function setIncludeConditions(IncludeConditions $includeConditions)
+namespace Google\Service\Analytics {
+    class RemarketingAudienceAudienceDefinition extends \Google\Model
     {
+        protected $includeConditionsType = IncludeConditions::class;
+        protected $includeConditionsDataType = '';
+        /**
+         * Defines the conditions to include users to the audience.
+         *
+         * @param IncludeConditions $includeConditions
+         */
+        public function setIncludeConditions(IncludeConditions $includeConditions)
+        {
+        }
+        /**
+         * @return IncludeConditions
+         */
+        public function getIncludeConditions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return IncludeConditions
+     * Runtime class alias of \Google\Service\Analytics\RemarketingAudienceAudienceDefinition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIncludeConditions()
+    class Google_Service_Analytics_RemarketingAudienceAudienceDefinition extends \Google\Service\Analytics\RemarketingAudienceAudienceDefinition
     {
     }
 }

@@ -21,98 +21,110 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin\Resource;
-
-/**
- * The "Backups" collection of methods.
- * Typical usage is:
- *  <code>
- *   $sqladminService = new Google\Service\SQLAdmin(...);
- *   $Backups = $sqladminService->Backups;
- *  </code>
- */
-class Backups extends \Google\Service\Resource
-{
+namespace Google\Service\SQLAdmin\Resource {
+    use Google\Service\SQLAdmin\Backup;
+    use Google\Service\SQLAdmin\ListBackupsResponse;
+    use Google\Service\SQLAdmin\Operation;
     /**
-     * Creates a backup for a Cloud SQL instance. This API can be used only to
-     * create on-demand backups. (Backups.CreateBackup)
-     *
-     * @param string $parent Required. The parent resource where this backup is
-     * created. Format: projects/{project}
-     * @param Backup $postBody
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * The "Backups" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $sqladminService = new Google\Service\SQLAdmin(...);
+     *   $Backups = $sqladminService->Backups;
+     *  </code>
      */
-    public function CreateBackup($parent, Backup $postBody, $optParams = [])
+    class Backups extends \Google\Service\Resource
     {
+        /**
+         * Creates a backup for a Cloud SQL instance. This API can be used only to
+         * create on-demand backups. (Backups.CreateBackup)
+         *
+         * @param string $parent Required. The parent resource where this backup is
+         * created. Format: projects/{project}
+         * @param Backup $postBody
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function CreateBackup($parent, Backup $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes the backup. (Backups.DeleteBackup)
+         *
+         * @param string $name Required. The name of the backup to delete. Format:
+         * projects/{project}/backups/{backup}
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function DeleteBackup($name, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves a resource containing information about a backup.
+         * (Backups.GetBackup)
+         *
+         * @param string $name Required. The name of the backup to retrieve. Format:
+         * projects/{project}/backups/{backup}
+         * @param array $optParams Optional parameters.
+         * @return Backup
+         * @throws \Google\Service\Exception
+         */
+        public function GetBackup($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists all backups associated with the project. (Backups.ListBackups)
+         *
+         * @param string $parent Required. The parent that owns this collection of
+         * backups. Format: projects/{project}
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Multiple filter queries are separated by spaces. For
+         * example, 'instance:abc AND type:FINAL, 'location:us',
+         * 'backupInterval.startTime>=1950-01-01T01:01:25.771Z'. You can filter by type,
+         * instance, backupInterval.startTime (creation time), or location.
+         * @opt_param int pageSize The maximum number of backups to return per response.
+         * The service might return fewer backups than this value. If a value for this
+         * parameter isn't specified, then, at most, 500 backups are returned. The
+         * maximum value is 2,000. Any values that you set, which are greater than
+         * 2,000, are changed to 2,000.
+         * @opt_param string pageToken A page token, received from a previous
+         * `ListBackups` call. Provide this to retrieve the subsequent page. When
+         * paginating, all other parameters provided to `ListBackups` must match the
+         * call that provided the page token.
+         * @return ListBackupsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function ListBackups($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates the retention period and description of the backup. You can use this
+         * API to update final backups only. (Backups.UpdateBackup)
+         *
+         * @param string $name Output only. The resource name of the backup. Format:
+         * projects/{project}/backups/{backup}.
+         * @param Backup $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask The list of fields that you can update. You can
+         * update only the description and retention period of the final backup.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function UpdateBackup($name, Backup $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes the backup. (Backups.DeleteBackup)
-     *
-     * @param string $name Required. The name of the backup to delete. Format:
-     * projects/{project}/backups/{backup}
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\SQLAdmin\Resource\Backups registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function DeleteBackup($name, $optParams = [])
-    {
-    }
-    /**
-     * Retrieves a resource containing information about a backup.
-     * (Backups.GetBackup)
-     *
-     * @param string $name Required. The name of the backup to retrieve. Format:
-     * projects/{project}/backups/{backup}
-     * @param array $optParams Optional parameters.
-     * @return Backup
-     * @throws \Google\Service\Exception
-     */
-    public function GetBackup($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists all backups associated with the project. (Backups.ListBackups)
-     *
-     * @param string $parent Required. The parent that owns this collection of
-     * backups. Format: projects/{project}
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Multiple filter queries are separated by spaces. For
-     * example, 'instance:abc AND type:FINAL, 'location:us',
-     * 'backupInterval.startTime>=1950-01-01T01:01:25.771Z'. You can filter by type,
-     * instance, backupInterval.startTime (creation time), or location.
-     * @opt_param int pageSize The maximum number of backups to return per response.
-     * The service might return fewer backups than this value. If a value for this
-     * parameter isn't specified, then, at most, 500 backups are returned. The
-     * maximum value is 2,000. Any values that you set, which are greater than
-     * 2,000, are changed to 2,000.
-     * @opt_param string pageToken A page token, received from a previous
-     * `ListBackups` call. Provide this to retrieve the subsequent page. When
-     * paginating, all other parameters provided to `ListBackups` must match the
-     * call that provided the page token.
-     * @return ListBackupsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function ListBackups($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates the retention period and description of the backup. You can use this
-     * API to update final backups only. (Backups.UpdateBackup)
-     *
-     * @param string $name Output only. The resource name of the backup. Format:
-     * projects/{project}/backups/{backup}.
-     * @param Backup $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask The list of fields that you can update. You can
-     * update only the description and retention period of the final backup.
-     * @return Operation
-     * @throws \Google\Service\Exception
-     */
-    public function UpdateBackup($name, Backup $postBody, $optParams = [])
+    class Google_Service_SQLAdmin_Resource_Backups extends \Google\Service\SQLAdmin\Resource\Backups
     {
     }
 }

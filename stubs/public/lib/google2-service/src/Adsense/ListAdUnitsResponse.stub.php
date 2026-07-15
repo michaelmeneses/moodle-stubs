@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Adsense;
-
-class ListAdUnitsResponse extends \Google\Collection
-{
-    protected $collection_key = 'adUnits';
-    protected $adUnitsType = AdUnit::class;
-    protected $adUnitsDataType = 'array';
-    /**
-     * Continuation token used to page through ad units. To retrieve the next page
-     * of the results, set the next request's "page_token" value to this.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The ad units returned in the list response.
-     *
-     * @param AdUnit[] $adUnits
-     */
-    public function setAdUnits($adUnits)
+namespace Google\Service\Adsense {
+    class ListAdUnitsResponse extends \Google\Collection
     {
+        protected $collection_key = 'adUnits';
+        protected $adUnitsType = AdUnit::class;
+        protected $adUnitsDataType = 'array';
+        /**
+         * Continuation token used to page through ad units. To retrieve the next page
+         * of the results, set the next request's "page_token" value to this.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The ad units returned in the list response.
+         *
+         * @param AdUnit[] $adUnits
+         */
+        public function setAdUnits($adUnits)
+        {
+        }
+        /**
+         * @return AdUnit[]
+         */
+        public function getAdUnits()
+        {
+        }
+        /**
+         * Continuation token used to page through ad units. To retrieve the next page
+         * of the results, set the next request's "page_token" value to this.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AdUnit[]
+     * Runtime class alias of \Google\Service\Adsense\ListAdUnitsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdUnits()
-    {
-    }
-    /**
-     * Continuation token used to page through ad units. To retrieve the next page
-     * of the results, set the next request's "page_token" value to this.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Adsense_ListAdUnitsResponse extends \Google\Service\Adsense\ListAdUnitsResponse
     {
     }
 }

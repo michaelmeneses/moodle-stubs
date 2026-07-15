@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sasportal;
-
-class SasPortalListCustomersResponse extends \Google\Collection
-{
-    protected $collection_key = 'customers';
-    protected $customersType = SasPortalCustomer::class;
-    protected $customersDataType = 'array';
-    /**
-     * A pagination token returned from a previous call to ListCustomers that
-     * indicates from where listing should continue. If the field is missing or
-     * empty, it means there are no more customers.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of customers that match the request.
-     *
-     * @param SasPortalCustomer[] $customers
-     */
-    public function setCustomers($customers)
+namespace Google\Service\Sasportal {
+    class SasPortalListCustomersResponse extends \Google\Collection
     {
+        protected $collection_key = 'customers';
+        protected $customersType = SasPortalCustomer::class;
+        protected $customersDataType = 'array';
+        /**
+         * A pagination token returned from a previous call to ListCustomers that
+         * indicates from where listing should continue. If the field is missing or
+         * empty, it means there are no more customers.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of customers that match the request.
+         *
+         * @param SasPortalCustomer[] $customers
+         */
+        public function setCustomers($customers)
+        {
+        }
+        /**
+         * @return SasPortalCustomer[]
+         */
+        public function getCustomers()
+        {
+        }
+        /**
+         * A pagination token returned from a previous call to ListCustomers that
+         * indicates from where listing should continue. If the field is missing or
+         * empty, it means there are no more customers.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SasPortalCustomer[]
+     * Runtime class alias of \Google\Service\Sasportal\SasPortalListCustomersResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomers()
-    {
-    }
-    /**
-     * A pagination token returned from a previous call to ListCustomers that
-     * indicates from where listing should continue. If the field is missing or
-     * empty, it means there are no more customers.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Sasportal_SasPortalListCustomersResponse extends \Google\Service\Sasportal\SasPortalListCustomersResponse
     {
     }
 }

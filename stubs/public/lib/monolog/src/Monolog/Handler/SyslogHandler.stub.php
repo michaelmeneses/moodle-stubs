@@ -16,6 +16,8 @@
  */
 namespace Monolog\Handler;
 
+use Monolog\Level;
+use Monolog\LogRecord;
 /**
  * Logs to syslog service.
  *

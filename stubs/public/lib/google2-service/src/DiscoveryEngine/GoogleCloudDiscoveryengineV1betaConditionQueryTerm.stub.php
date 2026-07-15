@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaConditionQueryTerm extends \Google\Model
-{
-    /**
-     * Whether the search query needs to exactly match the query term.
-     *
-     * @var bool
-     */
-    public $fullMatch;
-    /**
-     * The specific query value to match against Must be lowercase, must be UTF-8.
-     * Can have at most 3 space separated terms if full_match is true. Cannot be
-     * an empty string. Maximum length of 5000 characters.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Whether the search query needs to exactly match the query term.
-     *
-     * @param bool $fullMatch
-     */
-    public function setFullMatch($fullMatch)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaConditionQueryTerm extends \Google\Model
     {
+        /**
+         * Whether the search query needs to exactly match the query term.
+         *
+         * @var bool
+         */
+        public $fullMatch;
+        /**
+         * The specific query value to match against Must be lowercase, must be UTF-8.
+         * Can have at most 3 space separated terms if full_match is true. Cannot be
+         * an empty string. Maximum length of 5000 characters.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Whether the search query needs to exactly match the query term.
+         *
+         * @param bool $fullMatch
+         */
+        public function setFullMatch($fullMatch)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getFullMatch()
+        {
+        }
+        /**
+         * The specific query value to match against Must be lowercase, must be UTF-8.
+         * Can have at most 3 space separated terms if full_match is true. Cannot be
+         * an empty string. Maximum length of 5000 characters.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaConditionQueryTerm registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFullMatch()
-    {
-    }
-    /**
-     * The specific query value to match against Must be lowercase, must be UTF-8.
-     * Can have at most 3 space separated terms if full_match is true. Cannot be
-     * an empty string. Maximum length of 5000 characters.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaConditionQueryTerm extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaConditionQueryTerm
     {
     }
 }

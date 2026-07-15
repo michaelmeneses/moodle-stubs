@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vault;
-
-class ListHeldAccountsResponse extends \Google\Collection
-{
-    protected $collection_key = 'accounts';
-    protected $accountsType = HeldAccount::class;
-    protected $accountsDataType = 'array';
-    /**
-     * The held accounts on a hold.
-     *
-     * @param HeldAccount[] $accounts
-     */
-    public function setAccounts($accounts)
+namespace Google\Service\Vault {
+    class ListHeldAccountsResponse extends \Google\Collection
     {
+        protected $collection_key = 'accounts';
+        protected $accountsType = HeldAccount::class;
+        protected $accountsDataType = 'array';
+        /**
+         * The held accounts on a hold.
+         *
+         * @param HeldAccount[] $accounts
+         */
+        public function setAccounts($accounts)
+        {
+        }
+        /**
+         * @return HeldAccount[]
+         */
+        public function getAccounts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return HeldAccount[]
+     * Runtime class alias of \Google\Service\Vault\ListHeldAccountsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccounts()
+    class Google_Service_Vault_ListHeldAccountsResponse extends \Google\Service\Vault\ListHeldAccountsResponse
     {
     }
 }

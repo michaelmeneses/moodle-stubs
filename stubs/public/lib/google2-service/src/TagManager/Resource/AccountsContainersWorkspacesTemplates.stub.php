@@ -21,113 +21,125 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager\Resource;
-
-/**
- * The "templates" collection of methods.
- * Typical usage is:
- *  <code>
- *   $tagmanagerService = new Google\Service\TagManager(...);
- *   $templates = $tagmanagerService->accounts_containers_workspaces_templates;
- *  </code>
- */
-class AccountsContainersWorkspacesTemplates extends \Google\Service\Resource
-{
+namespace Google\Service\TagManager\Resource {
+    use Google\Service\TagManager\CustomTemplate;
+    use Google\Service\TagManager\ListTemplatesResponse;
+    use Google\Service\TagManager\RevertTemplateResponse;
     /**
-     * Creates a GTM Custom Template. (templates.create)
-     *
-     * @param string $parent GTM Workspace's API relative path.
-     * @param CustomTemplate $postBody
-     * @param array $optParams Optional parameters.
-     * @return CustomTemplate
-     * @throws \Google\Service\Exception
+     * The "templates" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $tagmanagerService = new Google\Service\TagManager(...);
+     *   $templates = $tagmanagerService->accounts_containers_workspaces_templates;
+     *  </code>
      */
-    public function create($parent, CustomTemplate $postBody, $optParams = [])
+    class AccountsContainersWorkspacesTemplates extends \Google\Service\Resource
     {
+        /**
+         * Creates a GTM Custom Template. (templates.create)
+         *
+         * @param string $parent GTM Workspace's API relative path.
+         * @param CustomTemplate $postBody
+         * @param array $optParams Optional parameters.
+         * @return CustomTemplate
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, CustomTemplate $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a GTM Template. (templates.delete)
+         *
+         * @param string $path GTM Custom Template's API relative path.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($path, $optParams = [])
+        {
+        }
+        /**
+         * Gets a GTM Template. (templates.get)
+         *
+         * @param string $path GTM Custom Template's API relative path.
+         * @param array $optParams Optional parameters.
+         * @return CustomTemplate
+         * @throws \Google\Service\Exception
+         */
+        public function get($path, $optParams = [])
+        {
+        }
+        /**
+         * Imports a GTM Custom Template from Gallery. (templates.import_from_gallery)
+         *
+         * @param string $parent GTM Workspace's API relative path.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool acknowledgePermissions Must be set to true to allow Gallery
+         * template to be imported into the workspace. If this bit is false, the import
+         * operation will fail.
+         * @opt_param string galleryOwner Owner of the Gallery template to import
+         * @opt_param string galleryRepository Repository of the Gallery template to
+         * import
+         * @opt_param string gallerySha SHA version of the Gallery template to import.
+         * Defaulted to the latest SHA version if not provided.
+         * @return CustomTemplate
+         * @throws \Google\Service\Exception
+         */
+        public function import_from_gallery($parent, $optParams = [])
+        {
+        }
+        /**
+         * Lists all GTM Templates of a GTM container workspace.
+         * (templates.listAccountsContainersWorkspacesTemplates)
+         *
+         * @param string $parent GTM Workspace's API relative path.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string pageToken Continuation token for fetching the next page of
+         * results.
+         * @return ListTemplatesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listAccountsContainersWorkspacesTemplates($parent, $optParams = [])
+        {
+        }
+        /**
+         * Reverts changes to a GTM Template in a GTM Workspace. (templates.revert)
+         *
+         * @param string $path GTM Custom Template's API relative path.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string fingerprint When provided, this fingerprint must match the
+         * fingerprint of the template in storage.
+         * @return RevertTemplateResponse
+         * @throws \Google\Service\Exception
+         */
+        public function revert($path, $optParams = [])
+        {
+        }
+        /**
+         * Updates a GTM Template. (templates.update)
+         *
+         * @param string $path GTM Custom Template's API relative path.
+         * @param CustomTemplate $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string fingerprint When provided, this fingerprint must match the
+         * fingerprint of the templates in storage.
+         * @return CustomTemplate
+         * @throws \Google\Service\Exception
+         */
+        public function update($path, CustomTemplate $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a GTM Template. (templates.delete)
-     *
-     * @param string $path GTM Custom Template's API relative path.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\TagManager\Resource\AccountsContainersWorkspacesTemplates registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($path, $optParams = [])
-    {
-    }
-    /**
-     * Gets a GTM Template. (templates.get)
-     *
-     * @param string $path GTM Custom Template's API relative path.
-     * @param array $optParams Optional parameters.
-     * @return CustomTemplate
-     * @throws \Google\Service\Exception
-     */
-    public function get($path, $optParams = [])
-    {
-    }
-    /**
-     * Imports a GTM Custom Template from Gallery. (templates.import_from_gallery)
-     *
-     * @param string $parent GTM Workspace's API relative path.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool acknowledgePermissions Must be set to true to allow Gallery
-     * template to be imported into the workspace. If this bit is false, the import
-     * operation will fail.
-     * @opt_param string galleryOwner Owner of the Gallery template to import
-     * @opt_param string galleryRepository Repository of the Gallery template to
-     * import
-     * @opt_param string gallerySha SHA version of the Gallery template to import.
-     * Defaulted to the latest SHA version if not provided.
-     * @return CustomTemplate
-     * @throws \Google\Service\Exception
-     */
-    public function import_from_gallery($parent, $optParams = [])
-    {
-    }
-    /**
-     * Lists all GTM Templates of a GTM container workspace.
-     * (templates.listAccountsContainersWorkspacesTemplates)
-     *
-     * @param string $parent GTM Workspace's API relative path.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string pageToken Continuation token for fetching the next page of
-     * results.
-     * @return ListTemplatesResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listAccountsContainersWorkspacesTemplates($parent, $optParams = [])
-    {
-    }
-    /**
-     * Reverts changes to a GTM Template in a GTM Workspace. (templates.revert)
-     *
-     * @param string $path GTM Custom Template's API relative path.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string fingerprint When provided, this fingerprint must match the
-     * fingerprint of the template in storage.
-     * @return RevertTemplateResponse
-     * @throws \Google\Service\Exception
-     */
-    public function revert($path, $optParams = [])
-    {
-    }
-    /**
-     * Updates a GTM Template. (templates.update)
-     *
-     * @param string $path GTM Custom Template's API relative path.
-     * @param CustomTemplate $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string fingerprint When provided, this fingerprint must match the
-     * fingerprint of the templates in storage.
-     * @return CustomTemplate
-     * @throws \Google\Service\Exception
-     */
-    public function update($path, CustomTemplate $postBody, $optParams = [])
+    class Google_Service_TagManager_Resource_AccountsContainersWorkspacesTemplates extends \Google\Service\TagManager\Resource\AccountsContainersWorkspacesTemplates
     {
     }
 }

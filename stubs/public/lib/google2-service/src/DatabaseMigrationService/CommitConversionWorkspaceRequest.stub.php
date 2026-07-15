@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class CommitConversionWorkspaceRequest extends \Google\Model
-{
-    /**
-     * Optional. Optional name of the commit.
-     *
-     * @var string
-     */
-    public $commitName;
-    /**
-     * Optional. Optional name of the commit.
-     *
-     * @param string $commitName
-     */
-    public function setCommitName($commitName)
+namespace Google\Service\DatabaseMigrationService {
+    class CommitConversionWorkspaceRequest extends \Google\Model
     {
+        /**
+         * Optional. Optional name of the commit.
+         *
+         * @var string
+         */
+        public $commitName;
+        /**
+         * Optional. Optional name of the commit.
+         *
+         * @param string $commitName
+         */
+        public function setCommitName($commitName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCommitName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\CommitConversionWorkspaceRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCommitName()
+    class Google_Service_DatabaseMigrationService_CommitConversionWorkspaceRequest extends \Google\Service\DatabaseMigrationService\CommitConversionWorkspaceRequest
     {
     }
 }

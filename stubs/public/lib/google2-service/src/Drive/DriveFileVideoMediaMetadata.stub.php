@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Drive;
-
-class DriveFileVideoMediaMetadata extends \Google\Model
-{
-    /**
-     * Output only. The duration of the video in milliseconds.
-     *
-     * @var string
-     */
-    public $durationMillis;
-    /**
-     * Output only. The height of the video in pixels.
-     *
-     * @var int
-     */
-    public $height;
-    /**
-     * Output only. The width of the video in pixels.
-     *
-     * @var int
-     */
-    public $width;
-    /**
-     * Output only. The duration of the video in milliseconds.
-     *
-     * @param string $durationMillis
-     */
-    public function setDurationMillis($durationMillis)
+namespace Google\Service\Drive {
+    class DriveFileVideoMediaMetadata extends \Google\Model
     {
+        /**
+         * Output only. The duration of the video in milliseconds.
+         *
+         * @var string
+         */
+        public $durationMillis;
+        /**
+         * Output only. The height of the video in pixels.
+         *
+         * @var int
+         */
+        public $height;
+        /**
+         * Output only. The width of the video in pixels.
+         *
+         * @var int
+         */
+        public $width;
+        /**
+         * Output only. The duration of the video in milliseconds.
+         *
+         * @param string $durationMillis
+         */
+        public function setDurationMillis($durationMillis)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDurationMillis()
+        {
+        }
+        /**
+         * Output only. The height of the video in pixels.
+         *
+         * @param int $height
+         */
+        public function setHeight($height)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getHeight()
+        {
+        }
+        /**
+         * Output only. The width of the video in pixels.
+         *
+         * @param int $width
+         */
+        public function setWidth($width)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getWidth()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Drive\DriveFileVideoMediaMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDurationMillis()
-    {
-    }
-    /**
-     * Output only. The height of the video in pixels.
-     *
-     * @param int $height
-     */
-    public function setHeight($height)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getHeight()
-    {
-    }
-    /**
-     * Output only. The width of the video in pixels.
-     *
-     * @param int $width
-     */
-    public function setWidth($width)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getWidth()
+    class Google_Service_Drive_DriveFileVideoMediaMetadata extends \Google\Service\Drive\DriveFileVideoMediaMetadata
     {
     }
 }

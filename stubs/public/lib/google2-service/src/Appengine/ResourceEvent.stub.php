@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Appengine;
-
-class ResourceEvent extends \Google\Model
-{
-    /**
-     * The unique ID for this per-resource event. CLHs can use this value to dedup
-     * repeated calls. required
-     *
-     * @var string
-     */
-    public $eventId;
-    /**
-     * The name of the resource for which this event is. required
-     *
-     * @var string
-     */
-    public $name;
-    protected $stateType = ContainerState::class;
-    protected $stateDataType = '';
-    /**
-     * The unique ID for this per-resource event. CLHs can use this value to dedup
-     * repeated calls. required
-     *
-     * @param string $eventId
-     */
-    public function setEventId($eventId)
+namespace Google\Service\Appengine {
+    class ResourceEvent extends \Google\Model
     {
+        /**
+         * The unique ID for this per-resource event. CLHs can use this value to dedup
+         * repeated calls. required
+         *
+         * @var string
+         */
+        public $eventId;
+        /**
+         * The name of the resource for which this event is. required
+         *
+         * @var string
+         */
+        public $name;
+        protected $stateType = ContainerState::class;
+        protected $stateDataType = '';
+        /**
+         * The unique ID for this per-resource event. CLHs can use this value to dedup
+         * repeated calls. required
+         *
+         * @param string $eventId
+         */
+        public function setEventId($eventId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEventId()
+        {
+        }
+        /**
+         * The name of the resource for which this event is. required
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The state of the project that led to this event.
+         *
+         * @param ContainerState $state
+         */
+        public function setState(ContainerState $state)
+        {
+        }
+        /**
+         * @return ContainerState
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Appengine\ResourceEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEventId()
-    {
-    }
-    /**
-     * The name of the resource for which this event is. required
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The state of the project that led to this event.
-     *
-     * @param ContainerState $state
-     */
-    public function setState(ContainerState $state)
-    {
-    }
-    /**
-     * @return ContainerState
-     */
-    public function getState()
+    class Google_Service_Appengine_ResourceEvent extends \Google\Service\Appengine\ResourceEvent
     {
     }
 }

@@ -21,116 +21,125 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class StructuralElement extends \Google\Model
-{
-    /**
-     * The zero-based end index of this structural element, exclusive, in UTF-16
-     * code units.
-     *
-     * @var int
-     */
-    public $endIndex;
-    protected $paragraphType = Paragraph::class;
-    protected $paragraphDataType = '';
-    protected $sectionBreakType = SectionBreak::class;
-    protected $sectionBreakDataType = '';
-    /**
-     * The zero-based start index of this structural element, in UTF-16 code
-     * units.
-     *
-     * @var int
-     */
-    public $startIndex;
-    protected $tableType = Table::class;
-    protected $tableDataType = '';
-    protected $tableOfContentsType = TableOfContents::class;
-    protected $tableOfContentsDataType = '';
-    /**
-     * The zero-based end index of this structural element, exclusive, in UTF-16
-     * code units.
-     *
-     * @param int $endIndex
-     */
-    public function setEndIndex($endIndex)
+namespace Google\Service\Docs {
+    class StructuralElement extends \Google\Model
     {
+        /**
+         * The zero-based end index of this structural element, exclusive, in UTF-16
+         * code units.
+         *
+         * @var int
+         */
+        public $endIndex;
+        protected $paragraphType = Paragraph::class;
+        protected $paragraphDataType = '';
+        protected $sectionBreakType = SectionBreak::class;
+        protected $sectionBreakDataType = '';
+        /**
+         * The zero-based start index of this structural element, in UTF-16 code
+         * units.
+         *
+         * @var int
+         */
+        public $startIndex;
+        protected $tableType = Table::class;
+        protected $tableDataType = '';
+        protected $tableOfContentsType = TableOfContents::class;
+        protected $tableOfContentsDataType = '';
+        /**
+         * The zero-based end index of this structural element, exclusive, in UTF-16
+         * code units.
+         *
+         * @param int $endIndex
+         */
+        public function setEndIndex($endIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getEndIndex()
+        {
+        }
+        /**
+         * A paragraph type of structural element.
+         *
+         * @param Paragraph $paragraph
+         */
+        public function setParagraph(Paragraph $paragraph)
+        {
+        }
+        /**
+         * @return Paragraph
+         */
+        public function getParagraph()
+        {
+        }
+        /**
+         * A section break type of structural element.
+         *
+         * @param SectionBreak $sectionBreak
+         */
+        public function setSectionBreak(SectionBreak $sectionBreak)
+        {
+        }
+        /**
+         * @return SectionBreak
+         */
+        public function getSectionBreak()
+        {
+        }
+        /**
+         * The zero-based start index of this structural element, in UTF-16 code
+         * units.
+         *
+         * @param int $startIndex
+         */
+        public function setStartIndex($startIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getStartIndex()
+        {
+        }
+        /**
+         * A table type of structural element.
+         *
+         * @param Table $table
+         */
+        public function setTable(Table $table)
+        {
+        }
+        /**
+         * @return Table
+         */
+        public function getTable()
+        {
+        }
+        /**
+         * A table of contents type of structural element.
+         *
+         * @param TableOfContents $tableOfContents
+         */
+        public function setTableOfContents(TableOfContents $tableOfContents)
+        {
+        }
+        /**
+         * @return TableOfContents
+         */
+        public function getTableOfContents()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Docs\StructuralElement registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndIndex()
-    {
-    }
-    /**
-     * A paragraph type of structural element.
-     *
-     * @param Paragraph $paragraph
-     */
-    public function setParagraph(Paragraph $paragraph)
-    {
-    }
-    /**
-     * @return Paragraph
-     */
-    public function getParagraph()
-    {
-    }
-    /**
-     * A section break type of structural element.
-     *
-     * @param SectionBreak $sectionBreak
-     */
-    public function setSectionBreak(SectionBreak $sectionBreak)
-    {
-    }
-    /**
-     * @return SectionBreak
-     */
-    public function getSectionBreak()
-    {
-    }
-    /**
-     * The zero-based start index of this structural element, in UTF-16 code
-     * units.
-     *
-     * @param int $startIndex
-     */
-    public function setStartIndex($startIndex)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getStartIndex()
-    {
-    }
-    /**
-     * A table type of structural element.
-     *
-     * @param Table $table
-     */
-    public function setTable(Table $table)
-    {
-    }
-    /**
-     * @return Table
-     */
-    public function getTable()
-    {
-    }
-    /**
-     * A table of contents type of structural element.
-     *
-     * @param TableOfContents $tableOfContents
-     */
-    public function setTableOfContents(TableOfContents $tableOfContents)
-    {
-    }
-    /**
-     * @return TableOfContents
-     */
-    public function getTableOfContents()
+    class Google_Service_Docs_StructuralElement extends \Google\Service\Docs\StructuralElement
     {
     }
 }

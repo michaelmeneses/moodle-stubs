@@ -21,37 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DoubleClickBidManager;
-
-class PathQueryOptions extends \Google\Collection
-{
-    protected $collection_key = 'pathFilters';
-    protected $channelGroupingType = ChannelGrouping::class;
-    protected $channelGroupingDataType = '';
-    protected $pathFiltersType = PathFilter::class;
-    protected $pathFiltersDataType = 'array';
-    /**
-     * @param ChannelGrouping
-     */
-    public function setChannelGrouping(ChannelGrouping $channelGrouping)
+namespace Google\Service\DoubleClickBidManager {
+    class PathQueryOptions extends \Google\Collection
     {
+        protected $collection_key = 'pathFilters';
+        protected $channelGroupingType = ChannelGrouping::class;
+        protected $channelGroupingDataType = '';
+        protected $pathFiltersType = PathFilter::class;
+        protected $pathFiltersDataType = 'array';
+        /**
+         * @param ChannelGrouping
+         */
+        public function setChannelGrouping(ChannelGrouping $channelGrouping)
+        {
+        }
+        /**
+         * @return ChannelGrouping
+         */
+        public function getChannelGrouping()
+        {
+        }
+        /**
+         * @param PathFilter[]
+         */
+        public function setPathFilters($pathFilters)
+        {
+        }
+        /**
+         * @return PathFilter[]
+         */
+        public function getPathFilters()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ChannelGrouping
+     * Runtime class alias of \Google\Service\DoubleClickBidManager\PathQueryOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChannelGrouping()
-    {
-    }
-    /**
-     * @param PathFilter[]
-     */
-    public function setPathFilters($pathFilters)
-    {
-    }
-    /**
-     * @return PathFilter[]
-     */
-    public function getPathFilters()
+    class Google_Service_DoubleClickBidManager_PathQueryOptions extends \Google\Service\DoubleClickBidManager\PathQueryOptions
     {
     }
 }

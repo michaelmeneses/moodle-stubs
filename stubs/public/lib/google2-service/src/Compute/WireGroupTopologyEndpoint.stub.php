@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class WireGroupTopologyEndpoint extends \Google\Model
-{
-    /**
-     * Output only. The InterconnectLocation.city (metropolitan area designator)
-     * that all interconnects are located in.
-     *
-     * @var string
-     */
-    public $city;
-    /**
-     * Output only. Endpoint label from the wire group.
-     *
-     * @var string
-     */
-    public $label;
-    /**
-     * Output only. The InterconnectLocation.city (metropolitan area designator)
-     * that all interconnects are located in.
-     *
-     * @param string $city
-     */
-    public function setCity($city)
+namespace Google\Service\Compute {
+    class WireGroupTopologyEndpoint extends \Google\Model
     {
+        /**
+         * Output only. The InterconnectLocation.city (metropolitan area designator)
+         * that all interconnects are located in.
+         *
+         * @var string
+         */
+        public $city;
+        /**
+         * Output only. Endpoint label from the wire group.
+         *
+         * @var string
+         */
+        public $label;
+        /**
+         * Output only. The InterconnectLocation.city (metropolitan area designator)
+         * that all interconnects are located in.
+         *
+         * @param string $city
+         */
+        public function setCity($city)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCity()
+        {
+        }
+        /**
+         * Output only. Endpoint label from the wire group.
+         *
+         * @param string $label
+         */
+        public function setLabel($label)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLabel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\WireGroupTopologyEndpoint registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCity()
-    {
-    }
-    /**
-     * Output only. Endpoint label from the wire group.
-     *
-     * @param string $label
-     */
-    public function setLabel($label)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLabel()
+    class Google_Service_Compute_WireGroupTopologyEndpoint extends \Google\Service\Compute\WireGroupTopologyEndpoint
     {
     }
 }

@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class TargetPoolsAddHealthCheckRequest extends \Google\Collection
-{
-    protected $collection_key = 'healthChecks';
-    protected $healthChecksType = HealthCheckReference::class;
-    protected $healthChecksDataType = 'array';
-    /**
-     * The HttpHealthCheck to add to the target pool.
-     *
-     * @param HealthCheckReference[] $healthChecks
-     */
-    public function setHealthChecks($healthChecks)
+namespace Google\Service\Compute {
+    class TargetPoolsAddHealthCheckRequest extends \Google\Collection
     {
+        protected $collection_key = 'healthChecks';
+        protected $healthChecksType = HealthCheckReference::class;
+        protected $healthChecksDataType = 'array';
+        /**
+         * The HttpHealthCheck to add to the target pool.
+         *
+         * @param HealthCheckReference[] $healthChecks
+         */
+        public function setHealthChecks($healthChecks)
+        {
+        }
+        /**
+         * @return HealthCheckReference[]
+         */
+        public function getHealthChecks()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return HealthCheckReference[]
+     * Runtime class alias of \Google\Service\Compute\TargetPoolsAddHealthCheckRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHealthChecks()
+    class Google_Service_Compute_TargetPoolsAddHealthCheckRequest extends \Google\Service\Compute\TargetPoolsAddHealthCheckRequest
     {
     }
 }

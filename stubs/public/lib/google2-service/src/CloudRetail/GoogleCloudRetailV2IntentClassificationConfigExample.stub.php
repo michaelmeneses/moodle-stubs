@@ -21,94 +21,103 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2IntentClassificationConfigExample extends \Google\Model
-{
-    /**
-     * Required. Whether the example is classified positively.
-     *
-     * @var bool
-     */
-    public $classifiedPositive;
-    /**
-     * Optional. The intent_type must match one of the predefined intent types
-     * defined at https://cloud.google.com/retail/docs/reference/rpc/google.cloud.
-     * retail.v2alpha#querytype
-     *
-     * @var string
-     */
-    public $intentType;
-    /**
-     * Required. Example query.
-     *
-     * @var string
-     */
-    public $query;
-    /**
-     * Optional. The reason for the intent classification. This is used to explain
-     * the intent classification decision.
-     *
-     * @var string
-     */
-    public $reason;
-    /**
-     * Required. Whether the example is classified positively.
-     *
-     * @param bool $classifiedPositive
-     */
-    public function setClassifiedPositive($classifiedPositive)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2IntentClassificationConfigExample extends \Google\Model
     {
+        /**
+         * Required. Whether the example is classified positively.
+         *
+         * @var bool
+         */
+        public $classifiedPositive;
+        /**
+         * Optional. The intent_type must match one of the predefined intent types
+         * defined at https://cloud.google.com/retail/docs/reference/rpc/google.cloud.
+         * retail.v2alpha#querytype
+         *
+         * @var string
+         */
+        public $intentType;
+        /**
+         * Required. Example query.
+         *
+         * @var string
+         */
+        public $query;
+        /**
+         * Optional. The reason for the intent classification. This is used to explain
+         * the intent classification decision.
+         *
+         * @var string
+         */
+        public $reason;
+        /**
+         * Required. Whether the example is classified positively.
+         *
+         * @param bool $classifiedPositive
+         */
+        public function setClassifiedPositive($classifiedPositive)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getClassifiedPositive()
+        {
+        }
+        /**
+         * Optional. The intent_type must match one of the predefined intent types
+         * defined at https://cloud.google.com/retail/docs/reference/rpc/google.cloud.
+         * retail.v2alpha#querytype
+         *
+         * @param string $intentType
+         */
+        public function setIntentType($intentType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIntentType()
+        {
+        }
+        /**
+         * Required. Example query.
+         *
+         * @param string $query
+         */
+        public function setQuery($query)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQuery()
+        {
+        }
+        /**
+         * Optional. The reason for the intent classification. This is used to explain
+         * the intent classification decision.
+         *
+         * @param string $reason
+         */
+        public function setReason($reason)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReason()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2IntentClassificationConfigExample registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClassifiedPositive()
-    {
-    }
-    /**
-     * Optional. The intent_type must match one of the predefined intent types
-     * defined at https://cloud.google.com/retail/docs/reference/rpc/google.cloud.
-     * retail.v2alpha#querytype
-     *
-     * @param string $intentType
-     */
-    public function setIntentType($intentType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIntentType()
-    {
-    }
-    /**
-     * Required. Example query.
-     *
-     * @param string $query
-     */
-    public function setQuery($query)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQuery()
-    {
-    }
-    /**
-     * Optional. The reason for the intent classification. This is used to explain
-     * the intent classification decision.
-     *
-     * @param string $reason
-     */
-    public function setReason($reason)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReason()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2IntentClassificationConfigExample extends \Google\Service\CloudRetail\GoogleCloudRetailV2IntentClassificationConfigExample
     {
     }
 }

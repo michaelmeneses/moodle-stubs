@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaIntegrationAlertConfigThresholdValue extends \Google\Model
-{
-    /**
-     * Absolute value threshold.
-     *
-     * @var string
-     */
-    public $absolute;
-    /**
-     * Percentage threshold.
-     *
-     * @var int
-     */
-    public $percentage;
-    /**
-     * Absolute value threshold.
-     *
-     * @param string $absolute
-     */
-    public function setAbsolute($absolute)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaIntegrationAlertConfigThresholdValue extends \Google\Model
     {
+        /**
+         * Absolute value threshold.
+         *
+         * @var string
+         */
+        public $absolute;
+        /**
+         * Percentage threshold.
+         *
+         * @var int
+         */
+        public $percentage;
+        /**
+         * Absolute value threshold.
+         *
+         * @param string $absolute
+         */
+        public function setAbsolute($absolute)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAbsolute()
+        {
+        }
+        /**
+         * Percentage threshold.
+         *
+         * @param int $percentage
+         */
+        public function setPercentage($percentage)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPercentage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaIntegrationAlertConfigThresholdValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAbsolute()
-    {
-    }
-    /**
-     * Percentage threshold.
-     *
-     * @param int $percentage
-     */
-    public function setPercentage($percentage)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPercentage()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaIntegrationAlertConfigThresholdValue extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaIntegrationAlertConfigThresholdValue
     {
     }
 }

@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementV1CountPrintJobsByUserResponse extends \Google\Collection
-{
-    protected $collection_key = 'userPrintReports';
-    /**
-     * Pagination token for requesting the next page.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Total number of users matching request.
-     *
-     * @var string
-     */
-    public $totalSize;
-    protected $userPrintReportsType = GoogleChromeManagementV1UserPrintReport::class;
-    protected $userPrintReportsDataType = 'array';
-    /**
-     * Pagination token for requesting the next page.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementV1CountPrintJobsByUserResponse extends \Google\Collection
     {
+        protected $collection_key = 'userPrintReports';
+        /**
+         * Pagination token for requesting the next page.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Total number of users matching request.
+         *
+         * @var string
+         */
+        public $totalSize;
+        protected $userPrintReportsType = GoogleChromeManagementV1UserPrintReport::class;
+        protected $userPrintReportsDataType = 'array';
+        /**
+         * Pagination token for requesting the next page.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Total number of users matching request.
+         *
+         * @param string $totalSize
+         */
+        public function setTotalSize($totalSize)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalSize()
+        {
+        }
+        /**
+         * List of UserPrintReports matching request.
+         *
+         * @param GoogleChromeManagementV1UserPrintReport[] $userPrintReports
+         */
+        public function setUserPrintReports($userPrintReports)
+        {
+        }
+        /**
+         * @return GoogleChromeManagementV1UserPrintReport[]
+         */
+        public function getUserPrintReports()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementV1CountPrintJobsByUserResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Total number of users matching request.
-     *
-     * @param string $totalSize
-     */
-    public function setTotalSize($totalSize)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalSize()
-    {
-    }
-    /**
-     * List of UserPrintReports matching request.
-     *
-     * @param GoogleChromeManagementV1UserPrintReport[] $userPrintReports
-     */
-    public function setUserPrintReports($userPrintReports)
-    {
-    }
-    /**
-     * @return GoogleChromeManagementV1UserPrintReport[]
-     */
-    public function getUserPrintReports()
+    class Google_Service_ChromeManagement_GoogleChromeManagementV1CountPrintJobsByUserResponse extends \Google\Service\ChromeManagement\GoogleChromeManagementV1CountPrintJobsByUserResponse
     {
     }
 }

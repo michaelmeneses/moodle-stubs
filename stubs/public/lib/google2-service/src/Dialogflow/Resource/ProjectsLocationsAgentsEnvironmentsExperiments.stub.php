@@ -21,115 +21,129 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow\Resource;
-
-/**
- * The "experiments" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dialogflowService = new Google\Service\Dialogflow(...);
- *   $experiments = $dialogflowService->projects_locations_agents_environments_experiments;
- *  </code>
- */
-class ProjectsLocationsAgentsEnvironmentsExperiments extends \Google\Service\Resource
-{
+namespace Google\Service\Dialogflow\Resource {
+    use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3Experiment;
+    use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ListExperimentsResponse;
+    use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3StartExperimentRequest;
+    use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3StopExperimentRequest;
+    use Google\Service\Dialogflow\GoogleProtobufEmpty;
     /**
-     * Creates an Experiment in the specified Environment. (experiments.create)
-     *
-     * @param string $parent Required. The Agent to create an Environment for.
-     * Format: `projects//locations//agents//environments/`.
-     * @param GoogleCloudDialogflowCxV3Experiment $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudDialogflowCxV3Experiment
-     * @throws \Google\Service\Exception
+     * The "experiments" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dialogflowService = new Google\Service\Dialogflow(...);
+     *   $experiments = $dialogflowService->projects_locations_agents_environments_experiments;
+     *  </code>
      */
-    public function create($parent, GoogleCloudDialogflowCxV3Experiment $postBody, $optParams = [])
+    class ProjectsLocationsAgentsEnvironmentsExperiments extends \Google\Service\Resource
     {
+        /**
+         * Creates an Experiment in the specified Environment. (experiments.create)
+         *
+         * @param string $parent Required. The Agent to create an Environment for.
+         * Format: `projects//locations//agents//environments/`.
+         * @param GoogleCloudDialogflowCxV3Experiment $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudDialogflowCxV3Experiment
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, GoogleCloudDialogflowCxV3Experiment $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes the specified Experiment. (experiments.delete)
+         *
+         * @param string $name Required. The name of the Environment to delete. Format:
+         * `projects//locations//agents//environments//experiments/`.
+         * @param array $optParams Optional parameters.
+         * @return GoogleProtobufEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves the specified Experiment. (experiments.get)
+         *
+         * @param string $name Required. The name of the Environment. Format:
+         * `projects//locations//agents//environments//experiments/`.
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudDialogflowCxV3Experiment
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Returns the list of all experiments in the specified Environment.
+         * (experiments.listProjectsLocationsAgentsEnvironmentsExperiments)
+         *
+         * @param string $parent Required. The Environment to list all environments for.
+         * Format: `projects//locations//agents//environments/`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The maximum number of items to return in a single
+         * page. By default 20 and at most 100.
+         * @opt_param string pageToken The next_page_token value returned from a
+         * previous list request.
+         * @return GoogleCloudDialogflowCxV3ListExperimentsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsAgentsEnvironmentsExperiments($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates the specified Experiment. (experiments.patch)
+         *
+         * @param string $name The name of the experiment. Format:
+         * projects//locations//agents//environments//experiments/.
+         * @param GoogleCloudDialogflowCxV3Experiment $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Required. The mask to control which fields get
+         * updated.
+         * @return GoogleCloudDialogflowCxV3Experiment
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, GoogleCloudDialogflowCxV3Experiment $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Starts the specified Experiment. This rpc only changes the state of
+         * experiment from PENDING to RUNNING. (experiments.start)
+         *
+         * @param string $name Required. Resource name of the experiment to start.
+         * Format: `projects//locations//agents//environments//experiments/`.
+         * @param GoogleCloudDialogflowCxV3StartExperimentRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudDialogflowCxV3Experiment
+         * @throws \Google\Service\Exception
+         */
+        public function start($name, GoogleCloudDialogflowCxV3StartExperimentRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Stops the specified Experiment. This rpc only changes the state of experiment
+         * from RUNNING to DONE. (experiments.stop)
+         *
+         * @param string $name Required. Resource name of the experiment to stop.
+         * Format: `projects//locations//agents//environments//experiments/`.
+         * @param GoogleCloudDialogflowCxV3StopExperimentRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudDialogflowCxV3Experiment
+         * @throws \Google\Service\Exception
+         */
+        public function stop($name, GoogleCloudDialogflowCxV3StopExperimentRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes the specified Experiment. (experiments.delete)
-     *
-     * @param string $name Required. The name of the Environment to delete. Format:
-     * `projects//locations//agents//environments//experiments/`.
-     * @param array $optParams Optional parameters.
-     * @return GoogleProtobufEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Dialogflow\Resource\ProjectsLocationsAgentsEnvironmentsExperiments registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Retrieves the specified Experiment. (experiments.get)
-     *
-     * @param string $name Required. The name of the Environment. Format:
-     * `projects//locations//agents//environments//experiments/`.
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudDialogflowCxV3Experiment
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Returns the list of all experiments in the specified Environment.
-     * (experiments.listProjectsLocationsAgentsEnvironmentsExperiments)
-     *
-     * @param string $parent Required. The Environment to list all environments for.
-     * Format: `projects//locations//agents//environments/`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The maximum number of items to return in a single
-     * page. By default 20 and at most 100.
-     * @opt_param string pageToken The next_page_token value returned from a
-     * previous list request.
-     * @return GoogleCloudDialogflowCxV3ListExperimentsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsAgentsEnvironmentsExperiments($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates the specified Experiment. (experiments.patch)
-     *
-     * @param string $name The name of the experiment. Format:
-     * projects//locations//agents//environments//experiments/.
-     * @param GoogleCloudDialogflowCxV3Experiment $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Required. The mask to control which fields get
-     * updated.
-     * @return GoogleCloudDialogflowCxV3Experiment
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, GoogleCloudDialogflowCxV3Experiment $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Starts the specified Experiment. This rpc only changes the state of
-     * experiment from PENDING to RUNNING. (experiments.start)
-     *
-     * @param string $name Required. Resource name of the experiment to start.
-     * Format: `projects//locations//agents//environments//experiments/`.
-     * @param GoogleCloudDialogflowCxV3StartExperimentRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudDialogflowCxV3Experiment
-     * @throws \Google\Service\Exception
-     */
-    public function start($name, GoogleCloudDialogflowCxV3StartExperimentRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Stops the specified Experiment. This rpc only changes the state of experiment
-     * from RUNNING to DONE. (experiments.stop)
-     *
-     * @param string $name Required. Resource name of the experiment to stop.
-     * Format: `projects//locations//agents//environments//experiments/`.
-     * @param GoogleCloudDialogflowCxV3StopExperimentRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudDialogflowCxV3Experiment
-     * @throws \Google\Service\Exception
-     */
-    public function stop($name, GoogleCloudDialogflowCxV3StopExperimentRequest $postBody, $optParams = [])
+    class Google_Service_Dialogflow_Resource_ProjectsLocationsAgentsEnvironmentsExperiments extends \Google\Service\Dialogflow\Resource\ProjectsLocationsAgentsEnvironmentsExperiments
     {
     }
 }

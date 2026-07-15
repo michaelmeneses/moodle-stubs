@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Games;
-
-class ApplicationCategory extends \Google\Model
-{
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#applicationCategory`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The primary category.
-     *
-     * @var string
-     */
-    public $primary;
-    /**
-     * The secondary category.
-     *
-     * @var string
-     */
-    public $secondary;
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#applicationCategory`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Games {
+    class ApplicationCategory extends \Google\Model
     {
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#applicationCategory`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The primary category.
+         *
+         * @var string
+         */
+        public $primary;
+        /**
+         * The secondary category.
+         *
+         * @var string
+         */
+        public $secondary;
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#applicationCategory`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The primary category.
+         *
+         * @param string $primary
+         */
+        public function setPrimary($primary)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrimary()
+        {
+        }
+        /**
+         * The secondary category.
+         *
+         * @param string $secondary
+         */
+        public function setSecondary($secondary)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSecondary()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Games\ApplicationCategory registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * The primary category.
-     *
-     * @param string $primary
-     */
-    public function setPrimary($primary)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrimary()
-    {
-    }
-    /**
-     * The secondary category.
-     *
-     * @param string $secondary
-     */
-    public function setSecondary($secondary)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSecondary()
+    class Google_Service_Games_ApplicationCategory extends \Google\Service\Games\ApplicationCategory
     {
     }
 }

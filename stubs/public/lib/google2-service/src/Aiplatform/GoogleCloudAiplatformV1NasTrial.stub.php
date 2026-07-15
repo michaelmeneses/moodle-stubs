@@ -21,136 +21,145 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1NasTrial extends \Google\Model
-{
-    /**
-     * The NasTrial state is unspecified.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * Indicates that a specific NasTrial has been requested, but it has not yet
-     * been suggested by the service.
-     */
-    public const STATE_REQUESTED = 'REQUESTED';
-    /**
-     * Indicates that the NasTrial has been suggested.
-     */
-    public const STATE_ACTIVE = 'ACTIVE';
-    /**
-     * Indicates that the NasTrial should stop according to the service.
-     */
-    public const STATE_STOPPING = 'STOPPING';
-    /**
-     * Indicates that the NasTrial is completed successfully.
-     */
-    public const STATE_SUCCEEDED = 'SUCCEEDED';
-    /**
-     * Indicates that the NasTrial should not be attempted again. The service will
-     * set a NasTrial to INFEASIBLE when it's done but missing the
-     * final_measurement.
-     */
-    public const STATE_INFEASIBLE = 'INFEASIBLE';
-    /**
-     * Output only. Time when the NasTrial's status changed to `SUCCEEDED` or
-     * `INFEASIBLE`.
-     *
-     * @var string
-     */
-    public $endTime;
-    protected $finalMeasurementType = GoogleCloudAiplatformV1Measurement::class;
-    protected $finalMeasurementDataType = '';
-    /**
-     * Output only. The identifier of the NasTrial assigned by the service.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Output only. Time when the NasTrial was started.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * Output only. The detailed state of the NasTrial.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Output only. Time when the NasTrial's status changed to `SUCCEEDED` or
-     * `INFEASIBLE`.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1NasTrial extends \Google\Model
     {
+        /**
+         * The NasTrial state is unspecified.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * Indicates that a specific NasTrial has been requested, but it has not yet
+         * been suggested by the service.
+         */
+        public const STATE_REQUESTED = 'REQUESTED';
+        /**
+         * Indicates that the NasTrial has been suggested.
+         */
+        public const STATE_ACTIVE = 'ACTIVE';
+        /**
+         * Indicates that the NasTrial should stop according to the service.
+         */
+        public const STATE_STOPPING = 'STOPPING';
+        /**
+         * Indicates that the NasTrial is completed successfully.
+         */
+        public const STATE_SUCCEEDED = 'SUCCEEDED';
+        /**
+         * Indicates that the NasTrial should not be attempted again. The service will
+         * set a NasTrial to INFEASIBLE when it's done but missing the
+         * final_measurement.
+         */
+        public const STATE_INFEASIBLE = 'INFEASIBLE';
+        /**
+         * Output only. Time when the NasTrial's status changed to `SUCCEEDED` or
+         * `INFEASIBLE`.
+         *
+         * @var string
+         */
+        public $endTime;
+        protected $finalMeasurementType = GoogleCloudAiplatformV1Measurement::class;
+        protected $finalMeasurementDataType = '';
+        /**
+         * Output only. The identifier of the NasTrial assigned by the service.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Output only. Time when the NasTrial was started.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * Output only. The detailed state of the NasTrial.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Output only. Time when the NasTrial's status changed to `SUCCEEDED` or
+         * `INFEASIBLE`.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * Output only. The final measurement containing the objective value.
+         *
+         * @param GoogleCloudAiplatformV1Measurement $finalMeasurement
+         */
+        public function setFinalMeasurement(GoogleCloudAiplatformV1Measurement $finalMeasurement)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1Measurement
+         */
+        public function getFinalMeasurement()
+        {
+        }
+        /**
+         * Output only. The identifier of the NasTrial assigned by the service.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Output only. Time when the NasTrial was started.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
+        /**
+         * Output only. The detailed state of the NasTrial.
+         *
+         * Accepted values: STATE_UNSPECIFIED, REQUESTED, ACTIVE, STOPPING, SUCCEEDED,
+         * INFEASIBLE
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1NasTrial registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndTime()
-    {
-    }
-    /**
-     * Output only. The final measurement containing the objective value.
-     *
-     * @param GoogleCloudAiplatformV1Measurement $finalMeasurement
-     */
-    public function setFinalMeasurement(GoogleCloudAiplatformV1Measurement $finalMeasurement)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1Measurement
-     */
-    public function getFinalMeasurement()
-    {
-    }
-    /**
-     * Output only. The identifier of the NasTrial assigned by the service.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Output only. Time when the NasTrial was started.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
-    {
-    }
-    /**
-     * Output only. The detailed state of the NasTrial.
-     *
-     * Accepted values: STATE_UNSPECIFIED, REQUESTED, ACTIVE, STOPPING, SUCCEEDED,
-     * INFEASIBLE
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1NasTrial extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1NasTrial
     {
     }
 }

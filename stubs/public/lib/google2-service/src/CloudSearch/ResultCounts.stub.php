@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class ResultCounts extends \Google\Collection
-{
-    protected $collection_key = 'sourceResultCounts';
-    protected $sourceResultCountsType = SourceResultCount::class;
-    protected $sourceResultCountsDataType = 'array';
-    /**
-     * Result count information for each source with results.
-     *
-     * @param SourceResultCount[] $sourceResultCounts
-     */
-    public function setSourceResultCounts($sourceResultCounts)
+namespace Google\Service\CloudSearch {
+    class ResultCounts extends \Google\Collection
     {
+        protected $collection_key = 'sourceResultCounts';
+        protected $sourceResultCountsType = SourceResultCount::class;
+        protected $sourceResultCountsDataType = 'array';
+        /**
+         * Result count information for each source with results.
+         *
+         * @param SourceResultCount[] $sourceResultCounts
+         */
+        public function setSourceResultCounts($sourceResultCounts)
+        {
+        }
+        /**
+         * @return SourceResultCount[]
+         */
+        public function getSourceResultCounts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SourceResultCount[]
+     * Runtime class alias of \Google\Service\CloudSearch\ResultCounts registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSourceResultCounts()
+    class Google_Service_CloudSearch_ResultCounts extends \Google\Service\CloudSearch\ResultCounts
     {
     }
 }

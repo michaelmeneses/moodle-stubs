@@ -21,110 +21,119 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1LakeMetastoreStatus extends \Google\Model
-{
-    /**
-     * Unspecified.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * A Metastore service instance is not associated with the lake.
-     */
-    public const STATE_NONE = 'NONE';
-    /**
-     * A Metastore service instance is attached to the lake.
-     */
-    public const STATE_READY = 'READY';
-    /**
-     * Attach/detach is in progress.
-     */
-    public const STATE_UPDATING = 'UPDATING';
-    /**
-     * Attach/detach could not be done due to errors.
-     */
-    public const STATE_ERROR = 'ERROR';
-    /**
-     * The URI of the endpoint used to access the Metastore service.
-     *
-     * @var string
-     */
-    public $endpoint;
-    /**
-     * Additional information about the current status.
-     *
-     * @var string
-     */
-    public $message;
-    /**
-     * Current state of association.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Last update time of the metastore status of the lake.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * The URI of the endpoint used to access the Metastore service.
-     *
-     * @param string $endpoint
-     */
-    public function setEndpoint($endpoint)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1LakeMetastoreStatus extends \Google\Model
     {
+        /**
+         * Unspecified.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * A Metastore service instance is not associated with the lake.
+         */
+        public const STATE_NONE = 'NONE';
+        /**
+         * A Metastore service instance is attached to the lake.
+         */
+        public const STATE_READY = 'READY';
+        /**
+         * Attach/detach is in progress.
+         */
+        public const STATE_UPDATING = 'UPDATING';
+        /**
+         * Attach/detach could not be done due to errors.
+         */
+        public const STATE_ERROR = 'ERROR';
+        /**
+         * The URI of the endpoint used to access the Metastore service.
+         *
+         * @var string
+         */
+        public $endpoint;
+        /**
+         * Additional information about the current status.
+         *
+         * @var string
+         */
+        public $message;
+        /**
+         * Current state of association.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Last update time of the metastore status of the lake.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * The URI of the endpoint used to access the Metastore service.
+         *
+         * @param string $endpoint
+         */
+        public function setEndpoint($endpoint)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndpoint()
+        {
+        }
+        /**
+         * Additional information about the current status.
+         *
+         * @param string $message
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
+        /**
+         * Current state of association.
+         *
+         * Accepted values: STATE_UNSPECIFIED, NONE, READY, UPDATING, ERROR
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Last update time of the metastore status of the lake.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1LakeMetastoreStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndpoint()
-    {
-    }
-    /**
-     * Additional information about the current status.
-     *
-     * @param string $message
-     */
-    public function setMessage($message)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMessage()
-    {
-    }
-    /**
-     * Current state of association.
-     *
-     * Accepted values: STATE_UNSPECIFIED, NONE, READY, UPDATING, ERROR
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Last update time of the metastore status of the lake.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1LakeMetastoreStatus extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1LakeMetastoreStatus
     {
     }
 }

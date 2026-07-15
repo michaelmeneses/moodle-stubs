@@ -16,6 +16,9 @@
  */
 namespace Monolog\Handler;
 
+use Monolog\Level;
+use Monolog\Utils;
+use Monolog\LogRecord;
 /**
  * IFTTTHandler uses cURL to trigger IFTTT Maker actions
  *

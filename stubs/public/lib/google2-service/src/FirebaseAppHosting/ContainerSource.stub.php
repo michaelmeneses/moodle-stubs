@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseAppHosting;
-
-class ContainerSource extends \Google\Model
-{
-    /**
-     * Required. A URI representing a container for the backend to use.
-     *
-     * @var string
-     */
-    public $image;
-    /**
-     * Required. A URI representing a container for the backend to use.
-     *
-     * @param string $image
-     */
-    public function setImage($image)
+namespace Google\Service\FirebaseAppHosting {
+    class ContainerSource extends \Google\Model
     {
+        /**
+         * Required. A URI representing a container for the backend to use.
+         *
+         * @var string
+         */
+        public $image;
+        /**
+         * Required. A URI representing a container for the backend to use.
+         *
+         * @param string $image
+         */
+        public function setImage($image)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\FirebaseAppHosting\ContainerSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getImage()
+    class Google_Service_FirebaseAppHosting_ContainerSource extends \Google\Service\FirebaseAppHosting\ContainerSource
     {
     }
 }

@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Safebrowsing;
-
-class FindThreatMatchesRequest extends \Google\Model
-{
-    protected $clientType = ClientInfo::class;
-    protected $clientDataType = '';
-    public $client;
-    protected $threatInfoType = ThreatInfo::class;
-    protected $threatInfoDataType = '';
-    public $threatInfo;
-    /**
-     * @param ClientInfo
-     */
-    public function setClient(ClientInfo $client)
+namespace Google\Service\Safebrowsing {
+    class FindThreatMatchesRequest extends \Google\Model
     {
+        protected $clientType = ClientInfo::class;
+        protected $clientDataType = '';
+        public $client;
+        protected $threatInfoType = ThreatInfo::class;
+        protected $threatInfoDataType = '';
+        public $threatInfo;
+        /**
+         * @param ClientInfo
+         */
+        public function setClient(ClientInfo $client)
+        {
+        }
+        /**
+         * @return ClientInfo
+         */
+        public function getClient()
+        {
+        }
+        /**
+         * @param ThreatInfo
+         */
+        public function setThreatInfo(ThreatInfo $threatInfo)
+        {
+        }
+        /**
+         * @return ThreatInfo
+         */
+        public function getThreatInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ClientInfo
+     * Runtime class alias of \Google\Service\Safebrowsing\FindThreatMatchesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClient()
-    {
-    }
-    /**
-     * @param ThreatInfo
-     */
-    public function setThreatInfo(ThreatInfo $threatInfo)
-    {
-    }
-    /**
-     * @return ThreatInfo
-     */
-    public function getThreatInfo()
+    class Google_Service_Safebrowsing_FindThreatMatchesRequest extends \Google\Service\Safebrowsing\FindThreatMatchesRequest
     {
     }
 }

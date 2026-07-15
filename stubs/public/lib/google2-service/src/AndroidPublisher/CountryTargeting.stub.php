@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class CountryTargeting extends \Google\Collection
-{
-    protected $collection_key = 'countries';
-    /**
-     * Countries to target, specified as two letter [CLDR codes](https://unicode.o
-     * rg/cldr/charts/latest/supplemental/territory_containment_un_m_49.html).
-     *
-     * @var string[]
-     */
-    public $countries;
-    /**
-     * Include "rest of world" as well as explicitly targeted countries.
-     *
-     * @var bool
-     */
-    public $includeRestOfWorld;
-    /**
-     * Countries to target, specified as two letter [CLDR codes](https://unicode.o
-     * rg/cldr/charts/latest/supplemental/territory_containment_un_m_49.html).
-     *
-     * @param string[] $countries
-     */
-    public function setCountries($countries)
+namespace Google\Service\AndroidPublisher {
+    class CountryTargeting extends \Google\Collection
     {
+        protected $collection_key = 'countries';
+        /**
+         * Countries to target, specified as two letter [CLDR codes](https://unicode.o
+         * rg/cldr/charts/latest/supplemental/territory_containment_un_m_49.html).
+         *
+         * @var string[]
+         */
+        public $countries;
+        /**
+         * Include "rest of world" as well as explicitly targeted countries.
+         *
+         * @var bool
+         */
+        public $includeRestOfWorld;
+        /**
+         * Countries to target, specified as two letter [CLDR codes](https://unicode.o
+         * rg/cldr/charts/latest/supplemental/territory_containment_un_m_49.html).
+         *
+         * @param string[] $countries
+         */
+        public function setCountries($countries)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCountries()
+        {
+        }
+        /**
+         * Include "rest of world" as well as explicitly targeted countries.
+         *
+         * @param bool $includeRestOfWorld
+         */
+        public function setIncludeRestOfWorld($includeRestOfWorld)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIncludeRestOfWorld()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\AndroidPublisher\CountryTargeting registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCountries()
-    {
-    }
-    /**
-     * Include "rest of world" as well as explicitly targeted countries.
-     *
-     * @param bool $includeRestOfWorld
-     */
-    public function setIncludeRestOfWorld($includeRestOfWorld)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIncludeRestOfWorld()
+    class Google_Service_AndroidPublisher_CountryTargeting extends \Google\Service\AndroidPublisher\CountryTargeting
     {
     }
 }

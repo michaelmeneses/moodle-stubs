@@ -21,134 +21,143 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Backupdr;
-
-class CloudSqlInstanceBackupProperties extends \Google\Model
-{
-    /**
-     * Output only. The installed database version of the Cloud SQL instance when
-     * the backup was taken.
-     *
-     * @var string
-     */
-    public $databaseInstalledVersion;
-    /**
-     * Output only. Whether the backup is a final backup.
-     *
-     * @var bool
-     */
-    public $finalBackup;
-    /**
-     * Output only. The instance creation timestamp.
-     *
-     * @var string
-     */
-    public $instanceCreateTime;
-    /**
-     * Output only. The instance delete timestamp.
-     *
-     * @var string
-     */
-    public $instanceDeleteTime;
-    /**
-     * Output only. The tier (or machine type) for this instance. Example: `db-
-     * custom-1-3840`
-     *
-     * @var string
-     */
-    public $instanceTier;
-    /**
-     * Output only. The source instance of the backup. Format:
-     * projects/{project}/instances/{instance}
-     *
-     * @var string
-     */
-    public $sourceInstance;
-    /**
-     * Output only. The installed database version of the Cloud SQL instance when
-     * the backup was taken.
-     *
-     * @param string $databaseInstalledVersion
-     */
-    public function setDatabaseInstalledVersion($databaseInstalledVersion)
+namespace Google\Service\Backupdr {
+    class CloudSqlInstanceBackupProperties extends \Google\Model
     {
+        /**
+         * Output only. The installed database version of the Cloud SQL instance when
+         * the backup was taken.
+         *
+         * @var string
+         */
+        public $databaseInstalledVersion;
+        /**
+         * Output only. Whether the backup is a final backup.
+         *
+         * @var bool
+         */
+        public $finalBackup;
+        /**
+         * Output only. The instance creation timestamp.
+         *
+         * @var string
+         */
+        public $instanceCreateTime;
+        /**
+         * Output only. The instance delete timestamp.
+         *
+         * @var string
+         */
+        public $instanceDeleteTime;
+        /**
+         * Output only. The tier (or machine type) for this instance. Example: `db-
+         * custom-1-3840`
+         *
+         * @var string
+         */
+        public $instanceTier;
+        /**
+         * Output only. The source instance of the backup. Format:
+         * projects/{project}/instances/{instance}
+         *
+         * @var string
+         */
+        public $sourceInstance;
+        /**
+         * Output only. The installed database version of the Cloud SQL instance when
+         * the backup was taken.
+         *
+         * @param string $databaseInstalledVersion
+         */
+        public function setDatabaseInstalledVersion($databaseInstalledVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatabaseInstalledVersion()
+        {
+        }
+        /**
+         * Output only. Whether the backup is a final backup.
+         *
+         * @param bool $finalBackup
+         */
+        public function setFinalBackup($finalBackup)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getFinalBackup()
+        {
+        }
+        /**
+         * Output only. The instance creation timestamp.
+         *
+         * @param string $instanceCreateTime
+         */
+        public function setInstanceCreateTime($instanceCreateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstanceCreateTime()
+        {
+        }
+        /**
+         * Output only. The instance delete timestamp.
+         *
+         * @param string $instanceDeleteTime
+         */
+        public function setInstanceDeleteTime($instanceDeleteTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstanceDeleteTime()
+        {
+        }
+        /**
+         * Output only. The tier (or machine type) for this instance. Example: `db-
+         * custom-1-3840`
+         *
+         * @param string $instanceTier
+         */
+        public function setInstanceTier($instanceTier)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstanceTier()
+        {
+        }
+        /**
+         * Output only. The source instance of the backup. Format:
+         * projects/{project}/instances/{instance}
+         *
+         * @param string $sourceInstance
+         */
+        public function setSourceInstance($sourceInstance)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceInstance()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Backupdr\CloudSqlInstanceBackupProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatabaseInstalledVersion()
-    {
-    }
-    /**
-     * Output only. Whether the backup is a final backup.
-     *
-     * @param bool $finalBackup
-     */
-    public function setFinalBackup($finalBackup)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getFinalBackup()
-    {
-    }
-    /**
-     * Output only. The instance creation timestamp.
-     *
-     * @param string $instanceCreateTime
-     */
-    public function setInstanceCreateTime($instanceCreateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInstanceCreateTime()
-    {
-    }
-    /**
-     * Output only. The instance delete timestamp.
-     *
-     * @param string $instanceDeleteTime
-     */
-    public function setInstanceDeleteTime($instanceDeleteTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInstanceDeleteTime()
-    {
-    }
-    /**
-     * Output only. The tier (or machine type) for this instance. Example: `db-
-     * custom-1-3840`
-     *
-     * @param string $instanceTier
-     */
-    public function setInstanceTier($instanceTier)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInstanceTier()
-    {
-    }
-    /**
-     * Output only. The source instance of the backup. Format:
-     * projects/{project}/instances/{instance}
-     *
-     * @param string $sourceInstance
-     */
-    public function setSourceInstance($sourceInstance)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourceInstance()
+    class Google_Service_Backupdr_CloudSqlInstanceBackupProperties extends \Google\Service\Backupdr\CloudSqlInstanceBackupProperties
     {
     }
 }

@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class UpdateChartSpecRequest extends \Google\Model
-{
-    /**
-     * The ID of the chart to update.
-     *
-     * @var int
-     */
-    public $chartId;
-    protected $specType = ChartSpec::class;
-    protected $specDataType = '';
-    /**
-     * The ID of the chart to update.
-     *
-     * @param int $chartId
-     */
-    public function setChartId($chartId)
+namespace Google\Service\Sheets {
+    class UpdateChartSpecRequest extends \Google\Model
     {
+        /**
+         * The ID of the chart to update.
+         *
+         * @var int
+         */
+        public $chartId;
+        protected $specType = ChartSpec::class;
+        protected $specDataType = '';
+        /**
+         * The ID of the chart to update.
+         *
+         * @param int $chartId
+         */
+        public function setChartId($chartId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getChartId()
+        {
+        }
+        /**
+         * The specification to apply to the chart.
+         *
+         * @param ChartSpec $spec
+         */
+        public function setSpec(ChartSpec $spec)
+        {
+        }
+        /**
+         * @return ChartSpec
+         */
+        public function getSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Sheets\UpdateChartSpecRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChartId()
-    {
-    }
-    /**
-     * The specification to apply to the chart.
-     *
-     * @param ChartSpec $spec
-     */
-    public function setSpec(ChartSpec $spec)
-    {
-    }
-    /**
-     * @return ChartSpec
-     */
-    public function getSpec()
+    class Google_Service_Sheets_UpdateChartSpecRequest extends \Google\Service\Sheets\UpdateChartSpecRequest
     {
     }
 }

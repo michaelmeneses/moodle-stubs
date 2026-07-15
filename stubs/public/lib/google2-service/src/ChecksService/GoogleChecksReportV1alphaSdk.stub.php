@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChecksService;
-
-class GoogleChecksReportV1alphaSdk extends \Google\Model
-{
-    /**
-     * SDK identifier.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * SDK identifier.
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\ChecksService {
+    class GoogleChecksReportV1alphaSdk extends \Google\Model
     {
+        /**
+         * SDK identifier.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * SDK identifier.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChecksService\GoogleChecksReportV1alphaSdk registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
+    class Google_Service_ChecksService_GoogleChecksReportV1alphaSdk extends \Google\Service\ChecksService\GoogleChecksReportV1alphaSdk
     {
     }
 }

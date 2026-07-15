@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1HttpResponse extends \Google\Model
-{
-    protected $headersType = GoogleCloudApihubV1Header::class;
-    protected $headersDataType = 'map';
-    /**
-     * Optional. Map of status code to observed count
-     *
-     * @var string[]
-     */
-    public $responseCodes;
-    /**
-     * Optional. Unordered map from header name to header metadata
-     *
-     * @param GoogleCloudApihubV1Header[] $headers
-     */
-    public function setHeaders($headers)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1HttpResponse extends \Google\Model
     {
+        protected $headersType = GoogleCloudApihubV1Header::class;
+        protected $headersDataType = 'map';
+        /**
+         * Optional. Map of status code to observed count
+         *
+         * @var string[]
+         */
+        public $responseCodes;
+        /**
+         * Optional. Unordered map from header name to header metadata
+         *
+         * @param GoogleCloudApihubV1Header[] $headers
+         */
+        public function setHeaders($headers)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1Header[]
+         */
+        public function getHeaders()
+        {
+        }
+        /**
+         * Optional. Map of status code to observed count
+         *
+         * @param string[] $responseCodes
+         */
+        public function setResponseCodes($responseCodes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getResponseCodes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApihubV1Header[]
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1HttpResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHeaders()
-    {
-    }
-    /**
-     * Optional. Map of status code to observed count
-     *
-     * @param string[] $responseCodes
-     */
-    public function setResponseCodes($responseCodes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getResponseCodes()
+    class Google_Service_APIhub_GoogleCloudApihubV1HttpResponse extends \Google\Service\APIhub\GoogleCloudApihubV1HttpResponse
     {
     }
 }

@@ -21,216 +21,225 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaProperty extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $account;
-    /**
-     * @var string
-     */
-    public $createTime;
-    /**
-     * @var string
-     */
-    public $currencyCode;
-    /**
-     * @var string
-     */
-    public $deleteTime;
-    /**
-     * @var string
-     */
-    public $displayName;
-    /**
-     * @var string
-     */
-    public $expireTime;
-    /**
-     * @var string
-     */
-    public $industryCategory;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $parent;
-    /**
-     * @var string
-     */
-    public $propertyType;
-    /**
-     * @var string
-     */
-    public $serviceLevel;
-    /**
-     * @var string
-     */
-    public $timeZone;
-    /**
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * @param string
-     */
-    public function setAccount($account)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaProperty extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $account;
+        /**
+         * @var string
+         */
+        public $createTime;
+        /**
+         * @var string
+         */
+        public $currencyCode;
+        /**
+         * @var string
+         */
+        public $deleteTime;
+        /**
+         * @var string
+         */
+        public $displayName;
+        /**
+         * @var string
+         */
+        public $expireTime;
+        /**
+         * @var string
+         */
+        public $industryCategory;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $parent;
+        /**
+         * @var string
+         */
+        public $propertyType;
+        /**
+         * @var string
+         */
+        public $serviceLevel;
+        /**
+         * @var string
+         */
+        public $timeZone;
+        /**
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * @param string
+         */
+        public function setAccount($account)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccount()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCurrencyCode($currencyCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCurrencyCode()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDeleteTime($deleteTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeleteTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setExpireTime($expireTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpireTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setIndustryCategory($industryCategory)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIndustryCategory()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setParent($parent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParent()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPropertyType($propertyType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPropertyType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setServiceLevel($serviceLevel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceLevel()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTimeZone($timeZone)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimeZone()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaProperty registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccount()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCurrencyCode($currencyCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCurrencyCode()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDeleteTime($deleteTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeleteTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setExpireTime($expireTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExpireTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setIndustryCategory($industryCategory)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIndustryCategory()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setParent($parent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParent()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPropertyType($propertyType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPropertyType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setServiceLevel($serviceLevel)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceLevel()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTimeZone($timeZone)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimeZone()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaProperty extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaProperty
     {
     }
 }

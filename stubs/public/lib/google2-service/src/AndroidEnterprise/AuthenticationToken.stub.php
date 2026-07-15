@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise;
-
-class AuthenticationToken extends \Google\Model
-{
-    /**
-     * The authentication token to be passed to the device policy client on the
-     * device where it can be used to provision the account for which this token
-     * was generated.
-     *
-     * @var string
-     */
-    public $token;
-    /**
-     * The authentication token to be passed to the device policy client on the
-     * device where it can be used to provision the account for which this token
-     * was generated.
-     *
-     * @param string $token
-     */
-    public function setToken($token)
+namespace Google\Service\AndroidEnterprise {
+    class AuthenticationToken extends \Google\Model
     {
+        /**
+         * The authentication token to be passed to the device policy client on the
+         * device where it can be used to provision the account for which this token
+         * was generated.
+         *
+         * @var string
+         */
+        public $token;
+        /**
+         * The authentication token to be passed to the device policy client on the
+         * device where it can be used to provision the account for which this token
+         * was generated.
+         *
+         * @param string $token
+         */
+        public function setToken($token)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidEnterprise\AuthenticationToken registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getToken()
+    class Google_Service_AndroidEnterprise_AuthenticationToken extends \Google\Service\AndroidEnterprise\AuthenticationToken
     {
     }
 }

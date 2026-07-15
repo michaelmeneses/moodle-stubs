@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InstanceGroupManagerInstanceFlexibilityPolicy extends \Google\Model
-{
-    protected $instanceSelectionsType = InstanceGroupManagerInstanceFlexibilityPolicyInstanceSelection::class;
-    protected $instanceSelectionsDataType = 'map';
-    /**
-     * Named instance selections configuring properties that the group will use
-     * when creating new VMs.
-     *
-     * @param InstanceGroupManagerInstanceFlexibilityPolicyInstanceSelection[] $instanceSelections
-     */
-    public function setInstanceSelections($instanceSelections)
+namespace Google\Service\Compute {
+    class InstanceGroupManagerInstanceFlexibilityPolicy extends \Google\Model
     {
+        protected $instanceSelectionsType = InstanceGroupManagerInstanceFlexibilityPolicyInstanceSelection::class;
+        protected $instanceSelectionsDataType = 'map';
+        /**
+         * Named instance selections configuring properties that the group will use
+         * when creating new VMs.
+         *
+         * @param InstanceGroupManagerInstanceFlexibilityPolicyInstanceSelection[] $instanceSelections
+         */
+        public function setInstanceSelections($instanceSelections)
+        {
+        }
+        /**
+         * @return InstanceGroupManagerInstanceFlexibilityPolicyInstanceSelection[]
+         */
+        public function getInstanceSelections()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InstanceGroupManagerInstanceFlexibilityPolicyInstanceSelection[]
+     * Runtime class alias of \Google\Service\Compute\InstanceGroupManagerInstanceFlexibilityPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstanceSelections()
+    class Google_Service_Compute_InstanceGroupManagerInstanceFlexibilityPolicy extends \Google\Service\Compute\InstanceGroupManagerInstanceFlexibilityPolicy
     {
     }
 }

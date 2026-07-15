@@ -21,93 +21,102 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class NodeTaint extends \Google\Model
-{
-    /**
-     * Not set.
-     */
-    public const EFFECT_EFFECT_UNSPECIFIED = 'EFFECT_UNSPECIFIED';
-    /**
-     * Do not allow new pods to schedule onto the node unless they tolerate the
-     * taint, but allow all pods submitted to Kubelet without going through the
-     * scheduler to start, and allow all already-running pods to continue running.
-     * Enforced by the scheduler.
-     */
-    public const EFFECT_NO_SCHEDULE = 'NO_SCHEDULE';
-    /**
-     * Like TaintEffectNoSchedule, but the scheduler tries not to schedule new
-     * pods onto the node, rather than prohibiting new pods from scheduling onto
-     * the node entirely. Enforced by the scheduler.
-     */
-    public const EFFECT_PREFER_NO_SCHEDULE = 'PREFER_NO_SCHEDULE';
-    /**
-     * Evict any already-running pods that do not tolerate the taint. Currently
-     * enforced by NodeController.
-     */
-    public const EFFECT_NO_EXECUTE = 'NO_EXECUTE';
-    /**
-     * The taint effect.
-     *
-     * @var string
-     */
-    public $effect;
-    /**
-     * Key associated with the effect.
-     *
-     * @var string
-     */
-    public $key;
-    /**
-     * Value associated with the effect.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * The taint effect.
-     *
-     * Accepted values: EFFECT_UNSPECIFIED, NO_SCHEDULE, PREFER_NO_SCHEDULE,
-     * NO_EXECUTE
-     *
-     * @param self::EFFECT_* $effect
-     */
-    public function setEffect($effect)
+namespace Google\Service\GKEOnPrem {
+    class NodeTaint extends \Google\Model
     {
+        /**
+         * Not set.
+         */
+        public const EFFECT_EFFECT_UNSPECIFIED = 'EFFECT_UNSPECIFIED';
+        /**
+         * Do not allow new pods to schedule onto the node unless they tolerate the
+         * taint, but allow all pods submitted to Kubelet without going through the
+         * scheduler to start, and allow all already-running pods to continue running.
+         * Enforced by the scheduler.
+         */
+        public const EFFECT_NO_SCHEDULE = 'NO_SCHEDULE';
+        /**
+         * Like TaintEffectNoSchedule, but the scheduler tries not to schedule new
+         * pods onto the node, rather than prohibiting new pods from scheduling onto
+         * the node entirely. Enforced by the scheduler.
+         */
+        public const EFFECT_PREFER_NO_SCHEDULE = 'PREFER_NO_SCHEDULE';
+        /**
+         * Evict any already-running pods that do not tolerate the taint. Currently
+         * enforced by NodeController.
+         */
+        public const EFFECT_NO_EXECUTE = 'NO_EXECUTE';
+        /**
+         * The taint effect.
+         *
+         * @var string
+         */
+        public $effect;
+        /**
+         * Key associated with the effect.
+         *
+         * @var string
+         */
+        public $key;
+        /**
+         * Value associated with the effect.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * The taint effect.
+         *
+         * Accepted values: EFFECT_UNSPECIFIED, NO_SCHEDULE, PREFER_NO_SCHEDULE,
+         * NO_EXECUTE
+         *
+         * @param self::EFFECT_* $effect
+         */
+        public function setEffect($effect)
+        {
+        }
+        /**
+         * @return self::EFFECT_*
+         */
+        public function getEffect()
+        {
+        }
+        /**
+         * Key associated with the effect.
+         *
+         * @param string $key
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * Value associated with the effect.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::EFFECT_*
+     * Runtime class alias of \Google\Service\GKEOnPrem\NodeTaint registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEffect()
-    {
-    }
-    /**
-     * Key associated with the effect.
-     *
-     * @param string $key
-     */
-    public function setKey($key)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKey()
-    {
-    }
-    /**
-     * Value associated with the effect.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_GKEOnPrem_NodeTaint extends \Google\Service\GKEOnPrem\NodeTaint
     {
     }
 }

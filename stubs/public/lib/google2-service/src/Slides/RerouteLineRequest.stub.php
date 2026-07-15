@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides;
-
-class RerouteLineRequest extends \Google\Model
-{
-    /**
-     * The object ID of the line to reroute. Only a line with a category
-     * indicating it is a "connector" can be rerouted. The start and end
-     * connections of the line must be on different page elements.
-     *
-     * @var string
-     */
-    public $objectId;
-    /**
-     * The object ID of the line to reroute. Only a line with a category
-     * indicating it is a "connector" can be rerouted. The start and end
-     * connections of the line must be on different page elements.
-     *
-     * @param string $objectId
-     */
-    public function setObjectId($objectId)
+namespace Google\Service\Slides {
+    class RerouteLineRequest extends \Google\Model
     {
+        /**
+         * The object ID of the line to reroute. Only a line with a category
+         * indicating it is a "connector" can be rerouted. The start and end
+         * connections of the line must be on different page elements.
+         *
+         * @var string
+         */
+        public $objectId;
+        /**
+         * The object ID of the line to reroute. Only a line with a category
+         * indicating it is a "connector" can be rerouted. The start and end
+         * connections of the line must be on different page elements.
+         *
+         * @param string $objectId
+         */
+        public function setObjectId($objectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Slides\RerouteLineRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getObjectId()
+    class Google_Service_Slides_RerouteLineRequest extends \Google\Service\Slides\RerouteLineRequest
     {
     }
 }

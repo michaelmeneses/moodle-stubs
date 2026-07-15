@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaAccessOrderBy extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $desc;
-    protected $dimensionType = GoogleAnalyticsAdminV1alphaAccessOrderByDimensionOrderBy::class;
-    protected $dimensionDataType = '';
-    protected $metricType = GoogleAnalyticsAdminV1alphaAccessOrderByMetricOrderBy::class;
-    protected $metricDataType = '';
-    /**
-     * @param bool
-     */
-    public function setDesc($desc)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaAccessOrderBy extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $desc;
+        protected $dimensionType = GoogleAnalyticsAdminV1alphaAccessOrderByDimensionOrderBy::class;
+        protected $dimensionDataType = '';
+        protected $metricType = GoogleAnalyticsAdminV1alphaAccessOrderByMetricOrderBy::class;
+        protected $metricDataType = '';
+        /**
+         * @param bool
+         */
+        public function setDesc($desc)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDesc()
+        {
+        }
+        /**
+         * @param GoogleAnalyticsAdminV1alphaAccessOrderByDimensionOrderBy
+         */
+        public function setDimension(GoogleAnalyticsAdminV1alphaAccessOrderByDimensionOrderBy $dimension)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaAccessOrderByDimensionOrderBy
+         */
+        public function getDimension()
+        {
+        }
+        /**
+         * @param GoogleAnalyticsAdminV1alphaAccessOrderByMetricOrderBy
+         */
+        public function setMetric(GoogleAnalyticsAdminV1alphaAccessOrderByMetricOrderBy $metric)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaAccessOrderByMetricOrderBy
+         */
+        public function getMetric()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaAccessOrderBy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDesc()
-    {
-    }
-    /**
-     * @param GoogleAnalyticsAdminV1alphaAccessOrderByDimensionOrderBy
-     */
-    public function setDimension(GoogleAnalyticsAdminV1alphaAccessOrderByDimensionOrderBy $dimension)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1alphaAccessOrderByDimensionOrderBy
-     */
-    public function getDimension()
-    {
-    }
-    /**
-     * @param GoogleAnalyticsAdminV1alphaAccessOrderByMetricOrderBy
-     */
-    public function setMetric(GoogleAnalyticsAdminV1alphaAccessOrderByMetricOrderBy $metric)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1alphaAccessOrderByMetricOrderBy
-     */
-    public function getMetric()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaAccessOrderBy extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaAccessOrderBy
     {
     }
 }

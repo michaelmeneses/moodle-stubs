@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkManagement;
-
-class CloudFunctionInfo extends \Google\Model
-{
-    /**
-     * Name of a Cloud Function.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Location in which the Cloud Function is deployed.
-     *
-     * @var string
-     */
-    public $location;
-    /**
-     * URI of a Cloud Function.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * Latest successfully deployed version id of the Cloud Function.
-     *
-     * @var string
-     */
-    public $versionId;
-    /**
-     * Name of a Cloud Function.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\NetworkManagement {
+    class CloudFunctionInfo extends \Google\Model
     {
+        /**
+         * Name of a Cloud Function.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Location in which the Cloud Function is deployed.
+         *
+         * @var string
+         */
+        public $location;
+        /**
+         * URI of a Cloud Function.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * Latest successfully deployed version id of the Cloud Function.
+         *
+         * @var string
+         */
+        public $versionId;
+        /**
+         * Name of a Cloud Function.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Location in which the Cloud Function is deployed.
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * URI of a Cloud Function.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
+        /**
+         * Latest successfully deployed version id of the Cloud Function.
+         *
+         * @param string $versionId
+         */
+        public function setVersionId($versionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersionId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetworkManagement\CloudFunctionInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Location in which the Cloud Function is deployed.
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocation()
-    {
-    }
-    /**
-     * URI of a Cloud Function.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
-    {
-    }
-    /**
-     * Latest successfully deployed version id of the Cloud Function.
-     *
-     * @param string $versionId
-     */
-    public function setVersionId($versionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersionId()
+    class Google_Service_NetworkManagement_CloudFunctionInfo extends \Google\Service\NetworkManagement\CloudFunctionInfo
     {
     }
 }

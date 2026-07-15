@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1alpha1ImportIssueModelRequestGcsSource extends \Google\Model
-{
-    /**
-     * Required. Format: `gs:`
-     *
-     * @var string
-     */
-    public $objectUri;
-    /**
-     * Required. Format: `gs:`
-     *
-     * @param string $objectUri
-     */
-    public function setObjectUri($objectUri)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1alpha1ImportIssueModelRequestGcsSource extends \Google\Model
     {
+        /**
+         * Required. Format: `gs:`
+         *
+         * @var string
+         */
+        public $objectUri;
+        /**
+         * Required. Format: `gs:`
+         *
+         * @param string $objectUri
+         */
+        public function setObjectUri($objectUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1ImportIssueModelRequestGcsSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getObjectUri()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1alpha1ImportIssueModelRequestGcsSource extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1ImportIssueModelRequestGcsSource
     {
     }
 }

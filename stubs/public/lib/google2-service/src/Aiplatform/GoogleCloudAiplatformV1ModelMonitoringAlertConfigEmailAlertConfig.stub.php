@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ModelMonitoringAlertConfigEmailAlertConfig extends \Google\Collection
-{
-    protected $collection_key = 'userEmails';
-    /**
-     * The email addresses to send the alert.
-     *
-     * @var string[]
-     */
-    public $userEmails;
-    /**
-     * The email addresses to send the alert.
-     *
-     * @param string[] $userEmails
-     */
-    public function setUserEmails($userEmails)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ModelMonitoringAlertConfigEmailAlertConfig extends \Google\Collection
     {
+        protected $collection_key = 'userEmails';
+        /**
+         * The email addresses to send the alert.
+         *
+         * @var string[]
+         */
+        public $userEmails;
+        /**
+         * The email addresses to send the alert.
+         *
+         * @param string[] $userEmails
+         */
+        public function setUserEmails($userEmails)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUserEmails()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ModelMonitoringAlertConfigEmailAlertConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUserEmails()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ModelMonitoringAlertConfigEmailAlertConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ModelMonitoringAlertConfigEmailAlertConfig
     {
     }
 }

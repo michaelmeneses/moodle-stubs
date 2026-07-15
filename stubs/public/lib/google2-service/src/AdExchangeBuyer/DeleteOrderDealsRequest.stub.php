@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer;
-
-class DeleteOrderDealsRequest extends \Google\Collection
-{
-    protected $collection_key = 'dealIds';
-    public $dealIds;
-    public $proposalRevisionNumber;
-    public $updateAction;
-    public function setDealIds($dealIds)
+namespace Google\Service\AdExchangeBuyer {
+    class DeleteOrderDealsRequest extends \Google\Collection
     {
+        protected $collection_key = 'dealIds';
+        public $dealIds;
+        public $proposalRevisionNumber;
+        public $updateAction;
+        public function setDealIds($dealIds)
+        {
+        }
+        public function getDealIds()
+        {
+        }
+        public function setProposalRevisionNumber($proposalRevisionNumber)
+        {
+        }
+        public function getProposalRevisionNumber()
+        {
+        }
+        public function setUpdateAction($updateAction)
+        {
+        }
+        public function getUpdateAction()
+        {
+        }
     }
-    public function getDealIds()
-    {
-    }
-    public function setProposalRevisionNumber($proposalRevisionNumber)
-    {
-    }
-    public function getProposalRevisionNumber()
-    {
-    }
-    public function setUpdateAction($updateAction)
-    {
-    }
-    public function getUpdateAction()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\DeleteOrderDealsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AdExchangeBuyer_DeleteOrderDealsRequest extends \Google\Service\AdExchangeBuyer\DeleteOrderDealsRequest
     {
     }
 }

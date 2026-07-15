@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkServices;
-
-class ServiceLbPolicyAutoCapacityDrain extends \Google\Model
-{
-    /**
-     * Optional. If set to 'True', an unhealthy IG/NEG will be set as drained. -
-     * An IG/NEG is considered unhealthy if less than 25% of the
-     * instances/endpoints in the IG/NEG are healthy. - This option will never
-     * result in draining more than 50% of the configured IGs/NEGs for the Backend
-     * Service.
-     *
-     * @var bool
-     */
-    public $enable;
-    /**
-     * Optional. If set to 'True', an unhealthy IG/NEG will be set as drained. -
-     * An IG/NEG is considered unhealthy if less than 25% of the
-     * instances/endpoints in the IG/NEG are healthy. - This option will never
-     * result in draining more than 50% of the configured IGs/NEGs for the Backend
-     * Service.
-     *
-     * @param bool $enable
-     */
-    public function setEnable($enable)
+namespace Google\Service\NetworkServices {
+    class ServiceLbPolicyAutoCapacityDrain extends \Google\Model
     {
+        /**
+         * Optional. If set to 'True', an unhealthy IG/NEG will be set as drained. -
+         * An IG/NEG is considered unhealthy if less than 25% of the
+         * instances/endpoints in the IG/NEG are healthy. - This option will never
+         * result in draining more than 50% of the configured IGs/NEGs for the Backend
+         * Service.
+         *
+         * @var bool
+         */
+        public $enable;
+        /**
+         * Optional. If set to 'True', an unhealthy IG/NEG will be set as drained. -
+         * An IG/NEG is considered unhealthy if less than 25% of the
+         * instances/endpoints in the IG/NEG are healthy. - This option will never
+         * result in draining more than 50% of the configured IGs/NEGs for the Backend
+         * Service.
+         *
+         * @param bool $enable
+         */
+        public function setEnable($enable)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\NetworkServices\ServiceLbPolicyAutoCapacityDrain registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnable()
+    class Google_Service_NetworkServices_ServiceLbPolicyAutoCapacityDrain extends \Google\Service\NetworkServices\ServiceLbPolicyAutoCapacityDrain
     {
     }
 }

@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vault;
-
-class MatterPermission extends \Google\Model
-{
-    /**
-     * No role assigned.
-     */
-    public const ROLE_ROLE_UNSPECIFIED = 'ROLE_UNSPECIFIED';
-    /**
-     * A collaborator on the matter.
-     */
-    public const ROLE_COLLABORATOR = 'COLLABORATOR';
-    /**
-     * The owner of the matter.
-     */
-    public const ROLE_OWNER = 'OWNER';
-    /**
-     * The account ID, as provided by the [Admin
-     * SDK](https://developers.google.com/admin-sdk/).
-     *
-     * @var string
-     */
-    public $accountId;
-    /**
-     * The user's role for the matter.
-     *
-     * @var string
-     */
-    public $role;
-    /**
-     * The account ID, as provided by the [Admin
-     * SDK](https://developers.google.com/admin-sdk/).
-     *
-     * @param string $accountId
-     */
-    public function setAccountId($accountId)
+namespace Google\Service\Vault {
+    class MatterPermission extends \Google\Model
     {
+        /**
+         * No role assigned.
+         */
+        public const ROLE_ROLE_UNSPECIFIED = 'ROLE_UNSPECIFIED';
+        /**
+         * A collaborator on the matter.
+         */
+        public const ROLE_COLLABORATOR = 'COLLABORATOR';
+        /**
+         * The owner of the matter.
+         */
+        public const ROLE_OWNER = 'OWNER';
+        /**
+         * The account ID, as provided by the [Admin
+         * SDK](https://developers.google.com/admin-sdk/).
+         *
+         * @var string
+         */
+        public $accountId;
+        /**
+         * The user's role for the matter.
+         *
+         * @var string
+         */
+        public $role;
+        /**
+         * The account ID, as provided by the [Admin
+         * SDK](https://developers.google.com/admin-sdk/).
+         *
+         * @param string $accountId
+         */
+        public function setAccountId($accountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccountId()
+        {
+        }
+        /**
+         * The user's role for the matter.
+         *
+         * Accepted values: ROLE_UNSPECIFIED, COLLABORATOR, OWNER
+         *
+         * @param self::ROLE_* $role
+         */
+        public function setRole($role)
+        {
+        }
+        /**
+         * @return self::ROLE_*
+         */
+        public function getRole()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Vault\MatterPermission registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountId()
-    {
-    }
-    /**
-     * The user's role for the matter.
-     *
-     * Accepted values: ROLE_UNSPECIFIED, COLLABORATOR, OWNER
-     *
-     * @param self::ROLE_* $role
-     */
-    public function setRole($role)
-    {
-    }
-    /**
-     * @return self::ROLE_*
-     */
-    public function getRole()
+    class Google_Service_Vault_MatterPermission extends \Google\Service\Vault\MatterPermission
     {
     }
 }

@@ -21,108 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AccessContextManager;
-
-class AccessLevel extends \Google\Model
-{
-    protected $basicType = BasicLevel::class;
-    protected $basicDataType = '';
-    protected $customType = CustomLevel::class;
-    protected $customDataType = '';
-    /**
-     * Description of the `AccessLevel` and its use. Does not affect behavior.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Identifier. Resource name for the `AccessLevel`. Format:
-     * `accessPolicies/{access_policy}/accessLevels/{access_level}`. The
-     * `access_level` component must begin with a letter, followed by alphanumeric
-     * characters or `_`. Its maximum length is 50 characters. After you create an
-     * `AccessLevel`, you cannot change its `name`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Human readable title. Must be unique within the Policy.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * A `BasicLevel` composed of `Conditions`.
-     *
-     * @param BasicLevel $basic
-     */
-    public function setBasic(BasicLevel $basic)
+namespace Google\Service\AccessContextManager {
+    class AccessLevel extends \Google\Model
     {
+        protected $basicType = BasicLevel::class;
+        protected $basicDataType = '';
+        protected $customType = CustomLevel::class;
+        protected $customDataType = '';
+        /**
+         * Description of the `AccessLevel` and its use. Does not affect behavior.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Identifier. Resource name for the `AccessLevel`. Format:
+         * `accessPolicies/{access_policy}/accessLevels/{access_level}`. The
+         * `access_level` component must begin with a letter, followed by alphanumeric
+         * characters or `_`. Its maximum length is 50 characters. After you create an
+         * `AccessLevel`, you cannot change its `name`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Human readable title. Must be unique within the Policy.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * A `BasicLevel` composed of `Conditions`.
+         *
+         * @param BasicLevel $basic
+         */
+        public function setBasic(BasicLevel $basic)
+        {
+        }
+        /**
+         * @return BasicLevel
+         */
+        public function getBasic()
+        {
+        }
+        /**
+         * A `CustomLevel` written in the Common Expression Language.
+         *
+         * @param CustomLevel $custom
+         */
+        public function setCustom(CustomLevel $custom)
+        {
+        }
+        /**
+         * @return CustomLevel
+         */
+        public function getCustom()
+        {
+        }
+        /**
+         * Description of the `AccessLevel` and its use. Does not affect behavior.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Identifier. Resource name for the `AccessLevel`. Format:
+         * `accessPolicies/{access_policy}/accessLevels/{access_level}`. The
+         * `access_level` component must begin with a letter, followed by alphanumeric
+         * characters or `_`. Its maximum length is 50 characters. After you create an
+         * `AccessLevel`, you cannot change its `name`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Human readable title. Must be unique within the Policy.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BasicLevel
+     * Runtime class alias of \Google\Service\AccessContextManager\AccessLevel registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBasic()
-    {
-    }
-    /**
-     * A `CustomLevel` written in the Common Expression Language.
-     *
-     * @param CustomLevel $custom
-     */
-    public function setCustom(CustomLevel $custom)
-    {
-    }
-    /**
-     * @return CustomLevel
-     */
-    public function getCustom()
-    {
-    }
-    /**
-     * Description of the `AccessLevel` and its use. Does not affect behavior.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Identifier. Resource name for the `AccessLevel`. Format:
-     * `accessPolicies/{access_policy}/accessLevels/{access_level}`. The
-     * `access_level` component must begin with a letter, followed by alphanumeric
-     * characters or `_`. Its maximum length is 50 characters. After you create an
-     * `AccessLevel`, you cannot change its `name`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Human readable title. Must be unique within the Policy.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_AccessContextManager_AccessLevel extends \Google\Service\AccessContextManager\AccessLevel
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1EnvironmentConfigClientIPResolutionConfigHeaderIndexAlgorithm extends \Google\Model
-{
-    /**
-     * The index of the ip in the header. (By default, value is 0 if missing)
-     *
-     * @var int
-     */
-    public $ipHeaderIndex;
-    /**
-     * The name of the header to extract the client ip from.
-     *
-     * @var string
-     */
-    public $ipHeaderName;
-    /**
-     * The index of the ip in the header. (By default, value is 0 if missing)
-     *
-     * @param int $ipHeaderIndex
-     */
-    public function setIpHeaderIndex($ipHeaderIndex)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1EnvironmentConfigClientIPResolutionConfigHeaderIndexAlgorithm extends \Google\Model
     {
+        /**
+         * The index of the ip in the header. (By default, value is 0 if missing)
+         *
+         * @var int
+         */
+        public $ipHeaderIndex;
+        /**
+         * The name of the header to extract the client ip from.
+         *
+         * @var string
+         */
+        public $ipHeaderName;
+        /**
+         * The index of the ip in the header. (By default, value is 0 if missing)
+         *
+         * @param int $ipHeaderIndex
+         */
+        public function setIpHeaderIndex($ipHeaderIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getIpHeaderIndex()
+        {
+        }
+        /**
+         * The name of the header to extract the client ip from.
+         *
+         * @param string $ipHeaderName
+         */
+        public function setIpHeaderName($ipHeaderName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIpHeaderName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1EnvironmentConfigClientIPResolutionConfigHeaderIndexAlgorithm registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIpHeaderIndex()
-    {
-    }
-    /**
-     * The name of the header to extract the client ip from.
-     *
-     * @param string $ipHeaderName
-     */
-    public function setIpHeaderName($ipHeaderName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIpHeaderName()
+    class Google_Service_Apigee_GoogleCloudApigeeV1EnvironmentConfigClientIPResolutionConfigHeaderIndexAlgorithm extends \Google\Service\Apigee\GoogleCloudApigeeV1EnvironmentConfigClientIPResolutionConfigHeaderIndexAlgorithm
     {
     }
 }

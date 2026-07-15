@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class ListReactionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'reactions';
-    /**
-     * Continuation token to retrieve the next page of results. It's empty for the
-     * last page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $reactionsType = Reaction::class;
-    protected $reactionsDataType = 'array';
-    /**
-     * Continuation token to retrieve the next page of results. It's empty for the
-     * last page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\HangoutsChat {
+    class ListReactionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'reactions';
+        /**
+         * Continuation token to retrieve the next page of results. It's empty for the
+         * last page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $reactionsType = Reaction::class;
+        protected $reactionsDataType = 'array';
+        /**
+         * Continuation token to retrieve the next page of results. It's empty for the
+         * last page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * List of reactions in the requested (or first) page.
+         *
+         * @param Reaction[] $reactions
+         */
+        public function setReactions($reactions)
+        {
+        }
+        /**
+         * @return Reaction[]
+         */
+        public function getReactions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\HangoutsChat\ListReactionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * List of reactions in the requested (or first) page.
-     *
-     * @param Reaction[] $reactions
-     */
-    public function setReactions($reactions)
-    {
-    }
-    /**
-     * @return Reaction[]
-     */
-    public function getReactions()
+    class Google_Service_HangoutsChat_ListReactionsResponse extends \Google\Service\HangoutsChat\ListReactionsResponse
     {
     }
 }

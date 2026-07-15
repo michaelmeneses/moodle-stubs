@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Testing\Resource;
-
-/**
- * The "projects" collection of methods.
- * Typical usage is:
- *  <code>
- *   $testingService = new Google\Service\Testing(...);
- *   $projects = $testingService->projects;
- *  </code>
- */
-class Projects extends \Google\Service\Resource
-{
+namespace Google\Service\Testing\Resource {
+    /**
+     * The "projects" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $testingService = new Google\Service\Testing(...);
+     *   $projects = $testingService->projects;
+     *  </code>
+     */
+    class Projects extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Testing\Resource\Projects registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Testing_Resource_Projects extends \Google\Service\Testing\Resource\Projects
+    {
+    }
 }

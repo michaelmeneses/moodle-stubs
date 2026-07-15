@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1IngestConversationsRequestTranscriptObjectConfig extends \Google\Model
-{
-    /**
-     * Default value, if unspecified will default to PHONE_CALL.
-     */
-    public const MEDIUM_MEDIUM_UNSPECIFIED = 'MEDIUM_UNSPECIFIED';
-    /**
-     * The format for conversations that took place over the phone.
-     */
-    public const MEDIUM_PHONE_CALL = 'PHONE_CALL';
-    /**
-     * The format for conversations that took place over chat.
-     */
-    public const MEDIUM_CHAT = 'CHAT';
-    /**
-     * Required. The medium transcript objects represent.
-     *
-     * @var string
-     */
-    public $medium;
-    /**
-     * Required. The medium transcript objects represent.
-     *
-     * Accepted values: MEDIUM_UNSPECIFIED, PHONE_CALL, CHAT
-     *
-     * @param self::MEDIUM_* $medium
-     */
-    public function setMedium($medium)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1IngestConversationsRequestTranscriptObjectConfig extends \Google\Model
     {
+        /**
+         * Default value, if unspecified will default to PHONE_CALL.
+         */
+        public const MEDIUM_MEDIUM_UNSPECIFIED = 'MEDIUM_UNSPECIFIED';
+        /**
+         * The format for conversations that took place over the phone.
+         */
+        public const MEDIUM_PHONE_CALL = 'PHONE_CALL';
+        /**
+         * The format for conversations that took place over chat.
+         */
+        public const MEDIUM_CHAT = 'CHAT';
+        /**
+         * Required. The medium transcript objects represent.
+         *
+         * @var string
+         */
+        public $medium;
+        /**
+         * Required. The medium transcript objects represent.
+         *
+         * Accepted values: MEDIUM_UNSPECIFIED, PHONE_CALL, CHAT
+         *
+         * @param self::MEDIUM_* $medium
+         */
+        public function setMedium($medium)
+        {
+        }
+        /**
+         * @return self::MEDIUM_*
+         */
+        public function getMedium()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::MEDIUM_*
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1IngestConversationsRequestTranscriptObjectConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMedium()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1IngestConversationsRequestTranscriptObjectConfig extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1IngestConversationsRequestTranscriptObjectConfig
     {
     }
 }

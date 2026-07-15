@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class CustomList extends \Google\Model
-{
-    /**
-     * Output only. The unique ID of the custom list. Assigned by the system.
-     *
-     * @var string
-     */
-    public $customListId;
-    /**
-     * Output only. The display name of the custom list. .
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Output only. The resource name of the custom list.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The unique ID of the custom list. Assigned by the system.
-     *
-     * @param string $customListId
-     */
-    public function setCustomListId($customListId)
+namespace Google\Service\DisplayVideo {
+    class CustomList extends \Google\Model
     {
+        /**
+         * Output only. The unique ID of the custom list. Assigned by the system.
+         *
+         * @var string
+         */
+        public $customListId;
+        /**
+         * Output only. The display name of the custom list. .
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Output only. The resource name of the custom list.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The unique ID of the custom list. Assigned by the system.
+         *
+         * @param string $customListId
+         */
+        public function setCustomListId($customListId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomListId()
+        {
+        }
+        /**
+         * Output only. The display name of the custom list. .
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Output only. The resource name of the custom list.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\CustomList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomListId()
-    {
-    }
-    /**
-     * Output only. The display name of the custom list. .
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Output only. The resource name of the custom list.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_DisplayVideo_CustomList extends \Google\Service\DisplayVideo\CustomList
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1AnswerQueryRequestAnswerGenerationSpecPromptSpec extends \Google\Model
-{
-    /**
-     * Customized preamble.
-     *
-     * @var string
-     */
-    public $preamble;
-    /**
-     * Customized preamble.
-     *
-     * @param string $preamble
-     */
-    public function setPreamble($preamble)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1AnswerQueryRequestAnswerGenerationSpecPromptSpec extends \Google\Model
     {
+        /**
+         * Customized preamble.
+         *
+         * @var string
+         */
+        public $preamble;
+        /**
+         * Customized preamble.
+         *
+         * @param string $preamble
+         */
+        public function setPreamble($preamble)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPreamble()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AnswerQueryRequestAnswerGenerationSpecPromptSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPreamble()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1AnswerQueryRequestAnswerGenerationSpecPromptSpec extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AnswerQueryRequestAnswerGenerationSpecPromptSpec
     {
     }
 }

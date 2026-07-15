@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class PrivateUri extends \Google\Model
-{
-    protected $descriptionType = LocalizedString::class;
-    protected $descriptionDataType = '';
-    /**
-     * @var string
-     */
-    public $uri;
-    /**
-     * @param LocalizedString
-     */
-    public function setDescription(LocalizedString $description)
+namespace Google\Service\Walletobjects {
+    class PrivateUri extends \Google\Model
     {
+        protected $descriptionType = LocalizedString::class;
+        protected $descriptionDataType = '';
+        /**
+         * @var string
+         */
+        public $uri;
+        /**
+         * @param LocalizedString
+         */
+        public function setDescription(LocalizedString $description)
+        {
+        }
+        /**
+         * @return LocalizedString
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LocalizedString
+     * Runtime class alias of \Google\Service\Walletobjects\PrivateUri registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_Walletobjects_PrivateUri extends \Google\Service\Walletobjects\PrivateUri
     {
     }
 }

@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1CacheConfig extends \Google\Model
-{
-    /**
-     * If set to true, disables GenAI caching. Otherwise caching is enabled.
-     *
-     * @var bool
-     */
-    public $disableCache;
-    /**
-     * Identifier. Name of the cache config. Format: -
-     * `projects/{project}/cacheConfig`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * If set to true, disables GenAI caching. Otherwise caching is enabled.
-     *
-     * @param bool $disableCache
-     */
-    public function setDisableCache($disableCache)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1CacheConfig extends \Google\Model
     {
+        /**
+         * If set to true, disables GenAI caching. Otherwise caching is enabled.
+         *
+         * @var bool
+         */
+        public $disableCache;
+        /**
+         * Identifier. Name of the cache config. Format: -
+         * `projects/{project}/cacheConfig`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * If set to true, disables GenAI caching. Otherwise caching is enabled.
+         *
+         * @param bool $disableCache
+         */
+        public function setDisableCache($disableCache)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisableCache()
+        {
+        }
+        /**
+         * Identifier. Name of the cache config. Format: -
+         * `projects/{project}/cacheConfig`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1CacheConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisableCache()
-    {
-    }
-    /**
-     * Identifier. Name of the cache config. Format: -
-     * `projects/{project}/cacheConfig`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1CacheConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1CacheConfig
     {
     }
 }

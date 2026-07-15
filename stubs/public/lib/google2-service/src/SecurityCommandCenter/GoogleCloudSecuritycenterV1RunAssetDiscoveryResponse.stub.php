@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GoogleCloudSecuritycenterV1RunAssetDiscoveryResponse extends \Google\Model
-{
-    /**
-     * Asset discovery run state was unspecified.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * Asset discovery run completed successfully.
-     */
-    public const STATE_COMPLETED = 'COMPLETED';
-    /**
-     * Asset discovery run was cancelled with tasks still pending, as another run
-     * for the same organization was started with a higher priority.
-     */
-    public const STATE_SUPERSEDED = 'SUPERSEDED';
-    /**
-     * Asset discovery run was killed and terminated.
-     */
-    public const STATE_TERMINATED = 'TERMINATED';
-    /**
-     * The duration between asset discovery run start and end
-     *
-     * @var string
-     */
-    public $duration;
-    /**
-     * The state of an asset discovery run.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * The duration between asset discovery run start and end
-     *
-     * @param string $duration
-     */
-    public function setDuration($duration)
+namespace Google\Service\SecurityCommandCenter {
+    class GoogleCloudSecuritycenterV1RunAssetDiscoveryResponse extends \Google\Model
     {
+        /**
+         * Asset discovery run state was unspecified.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * Asset discovery run completed successfully.
+         */
+        public const STATE_COMPLETED = 'COMPLETED';
+        /**
+         * Asset discovery run was cancelled with tasks still pending, as another run
+         * for the same organization was started with a higher priority.
+         */
+        public const STATE_SUPERSEDED = 'SUPERSEDED';
+        /**
+         * Asset discovery run was killed and terminated.
+         */
+        public const STATE_TERMINATED = 'TERMINATED';
+        /**
+         * The duration between asset discovery run start and end
+         *
+         * @var string
+         */
+        public $duration;
+        /**
+         * The state of an asset discovery run.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * The duration between asset discovery run start and end
+         *
+         * @param string $duration
+         */
+        public function setDuration($duration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDuration()
+        {
+        }
+        /**
+         * The state of an asset discovery run.
+         *
+         * Accepted values: STATE_UNSPECIFIED, COMPLETED, SUPERSEDED, TERMINATED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV1RunAssetDiscoveryResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDuration()
-    {
-    }
-    /**
-     * The state of an asset discovery run.
-     *
-     * Accepted values: STATE_UNSPECIFIED, COMPLETED, SUPERSEDED, TERMINATED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
+    class Google_Service_SecurityCommandCenter_GoogleCloudSecuritycenterV1RunAssetDiscoveryResponse extends \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV1RunAssetDiscoveryResponse
     {
     }
 }

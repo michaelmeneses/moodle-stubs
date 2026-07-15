@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class SearchAllResourcesResponse extends \Google\Collection
-{
-    protected $collection_key = 'results';
-    /**
-     * If there are more results than those appearing in this response, then
-     * `next_page_token` is included. To get the next set of results, call this
-     * method again using the value of `next_page_token` as `page_token`.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $resultsType = ResourceSearchResult::class;
-    protected $resultsDataType = 'array';
-    /**
-     * If there are more results than those appearing in this response, then
-     * `next_page_token` is included. To get the next set of results, call this
-     * method again using the value of `next_page_token` as `page_token`.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\CloudAsset {
+    class SearchAllResourcesResponse extends \Google\Collection
     {
+        protected $collection_key = 'results';
+        /**
+         * If there are more results than those appearing in this response, then
+         * `next_page_token` is included. To get the next set of results, call this
+         * method again using the value of `next_page_token` as `page_token`.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $resultsType = ResourceSearchResult::class;
+        protected $resultsDataType = 'array';
+        /**
+         * If there are more results than those appearing in this response, then
+         * `next_page_token` is included. To get the next set of results, call this
+         * method again using the value of `next_page_token` as `page_token`.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * A list of Resources that match the search query. It contains the resource
+         * standard metadata information.
+         *
+         * @param ResourceSearchResult[] $results
+         */
+        public function setResults($results)
+        {
+        }
+        /**
+         * @return ResourceSearchResult[]
+         */
+        public function getResults()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudAsset\SearchAllResourcesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * A list of Resources that match the search query. It contains the resource
-     * standard metadata information.
-     *
-     * @param ResourceSearchResult[] $results
-     */
-    public function setResults($results)
-    {
-    }
-    /**
-     * @return ResourceSearchResult[]
-     */
-    public function getResults()
+    class Google_Service_CloudAsset_SearchAllResourcesResponse extends \Google\Service\CloudAsset\SearchAllResourcesResponse
     {
     }
 }

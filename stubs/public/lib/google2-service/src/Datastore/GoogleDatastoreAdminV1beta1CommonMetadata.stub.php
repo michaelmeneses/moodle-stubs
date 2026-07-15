@@ -21,164 +21,173 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastore;
-
-class GoogleDatastoreAdminV1beta1CommonMetadata extends \Google\Model
-{
-    /**
-     * Unspecified.
-     */
-    public const OPERATION_TYPE_OPERATION_TYPE_UNSPECIFIED = 'OPERATION_TYPE_UNSPECIFIED';
-    /**
-     * ExportEntities.
-     */
-    public const OPERATION_TYPE_EXPORT_ENTITIES = 'EXPORT_ENTITIES';
-    /**
-     * ImportEntities.
-     */
-    public const OPERATION_TYPE_IMPORT_ENTITIES = 'IMPORT_ENTITIES';
-    /**
-     * Unspecified.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * Request is being prepared for processing.
-     */
-    public const STATE_INITIALIZING = 'INITIALIZING';
-    /**
-     * Request is actively being processed.
-     */
-    public const STATE_PROCESSING = 'PROCESSING';
-    /**
-     * Request is in the process of being cancelled after user called
-     * google.longrunning.Operations.CancelOperation on the operation.
-     */
-    public const STATE_CANCELLING = 'CANCELLING';
-    /**
-     * Request has been processed and is in its finalization stage.
-     */
-    public const STATE_FINALIZING = 'FINALIZING';
-    /**
-     * Request has completed successfully.
-     */
-    public const STATE_SUCCESSFUL = 'SUCCESSFUL';
-    /**
-     * Request has finished being processed, but encountered an error.
-     */
-    public const STATE_FAILED = 'FAILED';
-    /**
-     * Request has finished being cancelled after user called
-     * google.longrunning.Operations.CancelOperation.
-     */
-    public const STATE_CANCELLED = 'CANCELLED';
-    /**
-     * The time the operation ended, either successfully or otherwise.
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * The client-assigned labels which were provided when the operation was
-     * created. May also include additional labels.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * The type of the operation. Can be used as a filter in
-     * ListOperationsRequest.
-     *
-     * @var string
-     */
-    public $operationType;
-    /**
-     * The time that work began on the operation.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * The current state of the Operation.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * The time the operation ended, either successfully or otherwise.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
+namespace Google\Service\Datastore {
+    class GoogleDatastoreAdminV1beta1CommonMetadata extends \Google\Model
     {
+        /**
+         * Unspecified.
+         */
+        public const OPERATION_TYPE_OPERATION_TYPE_UNSPECIFIED = 'OPERATION_TYPE_UNSPECIFIED';
+        /**
+         * ExportEntities.
+         */
+        public const OPERATION_TYPE_EXPORT_ENTITIES = 'EXPORT_ENTITIES';
+        /**
+         * ImportEntities.
+         */
+        public const OPERATION_TYPE_IMPORT_ENTITIES = 'IMPORT_ENTITIES';
+        /**
+         * Unspecified.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * Request is being prepared for processing.
+         */
+        public const STATE_INITIALIZING = 'INITIALIZING';
+        /**
+         * Request is actively being processed.
+         */
+        public const STATE_PROCESSING = 'PROCESSING';
+        /**
+         * Request is in the process of being cancelled after user called
+         * google.longrunning.Operations.CancelOperation on the operation.
+         */
+        public const STATE_CANCELLING = 'CANCELLING';
+        /**
+         * Request has been processed and is in its finalization stage.
+         */
+        public const STATE_FINALIZING = 'FINALIZING';
+        /**
+         * Request has completed successfully.
+         */
+        public const STATE_SUCCESSFUL = 'SUCCESSFUL';
+        /**
+         * Request has finished being processed, but encountered an error.
+         */
+        public const STATE_FAILED = 'FAILED';
+        /**
+         * Request has finished being cancelled after user called
+         * google.longrunning.Operations.CancelOperation.
+         */
+        public const STATE_CANCELLED = 'CANCELLED';
+        /**
+         * The time the operation ended, either successfully or otherwise.
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * The client-assigned labels which were provided when the operation was
+         * created. May also include additional labels.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * The type of the operation. Can be used as a filter in
+         * ListOperationsRequest.
+         *
+         * @var string
+         */
+        public $operationType;
+        /**
+         * The time that work began on the operation.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * The current state of the Operation.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * The time the operation ended, either successfully or otherwise.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * The client-assigned labels which were provided when the operation was
+         * created. May also include additional labels.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * The type of the operation. Can be used as a filter in
+         * ListOperationsRequest.
+         *
+         * Accepted values: OPERATION_TYPE_UNSPECIFIED, EXPORT_ENTITIES,
+         * IMPORT_ENTITIES
+         *
+         * @param self::OPERATION_TYPE_* $operationType
+         */
+        public function setOperationType($operationType)
+        {
+        }
+        /**
+         * @return self::OPERATION_TYPE_*
+         */
+        public function getOperationType()
+        {
+        }
+        /**
+         * The time that work began on the operation.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
+        /**
+         * The current state of the Operation.
+         *
+         * Accepted values: STATE_UNSPECIFIED, INITIALIZING, PROCESSING, CANCELLING,
+         * FINALIZING, SUCCESSFUL, FAILED, CANCELLED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Datastore\GoogleDatastoreAdminV1beta1CommonMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndTime()
-    {
-    }
-    /**
-     * The client-assigned labels which were provided when the operation was
-     * created. May also include additional labels.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * The type of the operation. Can be used as a filter in
-     * ListOperationsRequest.
-     *
-     * Accepted values: OPERATION_TYPE_UNSPECIFIED, EXPORT_ENTITIES,
-     * IMPORT_ENTITIES
-     *
-     * @param self::OPERATION_TYPE_* $operationType
-     */
-    public function setOperationType($operationType)
-    {
-    }
-    /**
-     * @return self::OPERATION_TYPE_*
-     */
-    public function getOperationType()
-    {
-    }
-    /**
-     * The time that work began on the operation.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
-    {
-    }
-    /**
-     * The current state of the Operation.
-     *
-     * Accepted values: STATE_UNSPECIFIED, INITIALIZING, PROCESSING, CANCELLING,
-     * FINALIZING, SUCCESSFUL, FAILED, CANCELLED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
+    class Google_Service_Datastore_GoogleDatastoreAdminV1beta1CommonMetadata extends \Google\Service\Datastore\GoogleDatastoreAdminV1beta1CommonMetadata
     {
     }
 }

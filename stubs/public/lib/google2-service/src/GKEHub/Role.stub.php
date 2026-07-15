@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class Role extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $predefinedRole;
-    /**
-     * @param string
-     */
-    public function setPredefinedRole($predefinedRole)
+namespace Google\Service\GKEHub {
+    class Role extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $predefinedRole;
+        /**
+         * @param string
+         */
+        public function setPredefinedRole($predefinedRole)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPredefinedRole()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEHub\Role registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPredefinedRole()
+    class Google_Service_GKEHub_Role extends \Google\Service\GKEHub\Role
     {
     }
 }

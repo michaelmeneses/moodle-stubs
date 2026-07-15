@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class LoggingComponentConfig extends \Google\Collection
-{
-    protected $collection_key = 'enableComponents';
-    /**
-     * Select components to collect logs. An empty set would disable all logging.
-     *
-     * @var string[]
-     */
-    public $enableComponents;
-    /**
-     * Select components to collect logs. An empty set would disable all logging.
-     *
-     * @param string[] $enableComponents
-     */
-    public function setEnableComponents($enableComponents)
+namespace Google\Service\Container {
+    class LoggingComponentConfig extends \Google\Collection
     {
+        protected $collection_key = 'enableComponents';
+        /**
+         * Select components to collect logs. An empty set would disable all logging.
+         *
+         * @var string[]
+         */
+        public $enableComponents;
+        /**
+         * Select components to collect logs. An empty set would disable all logging.
+         *
+         * @param string[] $enableComponents
+         */
+        public function setEnableComponents($enableComponents)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getEnableComponents()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Container\LoggingComponentConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnableComponents()
+    class Google_Service_Container_LoggingComponentConfig extends \Google\Service\Container\LoggingComponentConfig
     {
     }
 }

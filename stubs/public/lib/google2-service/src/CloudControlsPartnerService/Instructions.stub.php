@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudControlsPartnerService;
-
-class Instructions extends \Google\Model
-{
-    protected $consoleInstructionsType = Console::class;
-    protected $consoleInstructionsDataType = '';
-    protected $gcloudInstructionsType = Gcloud::class;
-    protected $gcloudInstructionsDataType = '';
-    /**
-     * Remediation instructions to resolve violation via cloud console
-     *
-     * @param Console $consoleInstructions
-     */
-    public function setConsoleInstructions(Console $consoleInstructions)
+namespace Google\Service\CloudControlsPartnerService {
+    class Instructions extends \Google\Model
     {
+        protected $consoleInstructionsType = Console::class;
+        protected $consoleInstructionsDataType = '';
+        protected $gcloudInstructionsType = Gcloud::class;
+        protected $gcloudInstructionsDataType = '';
+        /**
+         * Remediation instructions to resolve violation via cloud console
+         *
+         * @param Console $consoleInstructions
+         */
+        public function setConsoleInstructions(Console $consoleInstructions)
+        {
+        }
+        /**
+         * @return Console
+         */
+        public function getConsoleInstructions()
+        {
+        }
+        /**
+         * Remediation instructions to resolve violation via gcloud cli
+         *
+         * @param Gcloud $gcloudInstructions
+         */
+        public function setGcloudInstructions(Gcloud $gcloudInstructions)
+        {
+        }
+        /**
+         * @return Gcloud
+         */
+        public function getGcloudInstructions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Console
+     * Runtime class alias of \Google\Service\CloudControlsPartnerService\Instructions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConsoleInstructions()
-    {
-    }
-    /**
-     * Remediation instructions to resolve violation via gcloud cli
-     *
-     * @param Gcloud $gcloudInstructions
-     */
-    public function setGcloudInstructions(Gcloud $gcloudInstructions)
-    {
-    }
-    /**
-     * @return Gcloud
-     */
-    public function getGcloudInstructions()
+    class Google_Service_CloudControlsPartnerService_Instructions extends \Google\Service\CloudControlsPartnerService\Instructions
     {
     }
 }

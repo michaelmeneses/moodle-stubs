@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRedis;
-
-class DirectLocationAssignment extends \Google\Collection
-{
-    protected $collection_key = 'location';
-    protected $locationType = LocationAssignment::class;
-    protected $locationDataType = 'array';
-    /**
-     * @param LocationAssignment[]
-     */
-    public function setLocation($location)
+namespace Google\Service\CloudRedis {
+    class DirectLocationAssignment extends \Google\Collection
     {
+        protected $collection_key = 'location';
+        protected $locationType = LocationAssignment::class;
+        protected $locationDataType = 'array';
+        /**
+         * @param LocationAssignment[]
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return LocationAssignment[]
+         */
+        public function getLocation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LocationAssignment[]
+     * Runtime class alias of \Google\Service\CloudRedis\DirectLocationAssignment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLocation()
+    class Google_Service_CloudRedis_DirectLocationAssignment extends \Google\Service\CloudRedis\DirectLocationAssignment
     {
     }
 }

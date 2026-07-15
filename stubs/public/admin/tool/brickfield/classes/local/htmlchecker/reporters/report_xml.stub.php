@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_brickfield\local\htmlchecker\reporters;
 
+use tool_brickfield\local\htmlchecker\brickfield_accessibility_reporter;
 /**
  * Returns an ATOM feed of all the issues - useful to run this as a web service
  *

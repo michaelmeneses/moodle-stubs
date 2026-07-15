@@ -21,143 +21,152 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class RegionalInventory extends \Google\Collection
-{
-    protected $collection_key = 'customAttributes';
-    /**
-     * The availability of the product.
-     *
-     * @var string
-     */
-    public $availability;
-    protected $customAttributesType = CustomAttribute::class;
-    protected $customAttributesDataType = 'array';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "`content#regionalInventory`".
-     *
-     * @var string
-     */
-    public $kind;
-    protected $priceType = Price::class;
-    protected $priceDataType = '';
-    /**
-     * The ID uniquely identifying each region.
-     *
-     * @var string
-     */
-    public $regionId;
-    protected $salePriceType = Price::class;
-    protected $salePriceDataType = '';
-    /**
-     * A date range represented by a pair of ISO 8601 dates separated by a space,
-     * comma, or slash. Both dates might be specified as 'null' if undecided.
-     *
-     * @var string
-     */
-    public $salePriceEffectiveDate;
-    /**
-     * The availability of the product.
-     *
-     * @param string $availability
-     */
-    public function setAvailability($availability)
+namespace Google\Service\ShoppingContent {
+    class RegionalInventory extends \Google\Collection
     {
+        protected $collection_key = 'customAttributes';
+        /**
+         * The availability of the product.
+         *
+         * @var string
+         */
+        public $availability;
+        protected $customAttributesType = CustomAttribute::class;
+        protected $customAttributesDataType = 'array';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "`content#regionalInventory`".
+         *
+         * @var string
+         */
+        public $kind;
+        protected $priceType = Price::class;
+        protected $priceDataType = '';
+        /**
+         * The ID uniquely identifying each region.
+         *
+         * @var string
+         */
+        public $regionId;
+        protected $salePriceType = Price::class;
+        protected $salePriceDataType = '';
+        /**
+         * A date range represented by a pair of ISO 8601 dates separated by a space,
+         * comma, or slash. Both dates might be specified as 'null' if undecided.
+         *
+         * @var string
+         */
+        public $salePriceEffectiveDate;
+        /**
+         * The availability of the product.
+         *
+         * @param string $availability
+         */
+        public function setAvailability($availability)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAvailability()
+        {
+        }
+        /**
+         * A list of custom (merchant-provided) attributes. It can also be used for
+         * submitting any attribute of the feed specification in its generic form.
+         *
+         * @param CustomAttribute[] $customAttributes
+         */
+        public function setCustomAttributes($customAttributes)
+        {
+        }
+        /**
+         * @return CustomAttribute[]
+         */
+        public function getCustomAttributes()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "`content#regionalInventory`".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The price of the product.
+         *
+         * @param Price $price
+         */
+        public function setPrice(Price $price)
+        {
+        }
+        /**
+         * @return Price
+         */
+        public function getPrice()
+        {
+        }
+        /**
+         * The ID uniquely identifying each region.
+         *
+         * @param string $regionId
+         */
+        public function setRegionId($regionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegionId()
+        {
+        }
+        /**
+         * The sale price of the product. Mandatory if `sale_price_effective_date` is
+         * defined.
+         *
+         * @param Price $salePrice
+         */
+        public function setSalePrice(Price $salePrice)
+        {
+        }
+        /**
+         * @return Price
+         */
+        public function getSalePrice()
+        {
+        }
+        /**
+         * A date range represented by a pair of ISO 8601 dates separated by a space,
+         * comma, or slash. Both dates might be specified as 'null' if undecided.
+         *
+         * @param string $salePriceEffectiveDate
+         */
+        public function setSalePriceEffectiveDate($salePriceEffectiveDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSalePriceEffectiveDate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\RegionalInventory registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAvailability()
-    {
-    }
-    /**
-     * A list of custom (merchant-provided) attributes. It can also be used for
-     * submitting any attribute of the feed specification in its generic form.
-     *
-     * @param CustomAttribute[] $customAttributes
-     */
-    public function setCustomAttributes($customAttributes)
-    {
-    }
-    /**
-     * @return CustomAttribute[]
-     */
-    public function getCustomAttributes()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "`content#regionalInventory`".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The price of the product.
-     *
-     * @param Price $price
-     */
-    public function setPrice(Price $price)
-    {
-    }
-    /**
-     * @return Price
-     */
-    public function getPrice()
-    {
-    }
-    /**
-     * The ID uniquely identifying each region.
-     *
-     * @param string $regionId
-     */
-    public function setRegionId($regionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegionId()
-    {
-    }
-    /**
-     * The sale price of the product. Mandatory if `sale_price_effective_date` is
-     * defined.
-     *
-     * @param Price $salePrice
-     */
-    public function setSalePrice(Price $salePrice)
-    {
-    }
-    /**
-     * @return Price
-     */
-    public function getSalePrice()
-    {
-    }
-    /**
-     * A date range represented by a pair of ISO 8601 dates separated by a space,
-     * comma, or slash. Both dates might be specified as 'null' if undecided.
-     *
-     * @param string $salePriceEffectiveDate
-     */
-    public function setSalePriceEffectiveDate($salePriceEffectiveDate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSalePriceEffectiveDate()
+    class Google_Service_ShoppingContent_RegionalInventory extends \Google\Service\ShoppingContent\RegionalInventory
     {
     }
 }

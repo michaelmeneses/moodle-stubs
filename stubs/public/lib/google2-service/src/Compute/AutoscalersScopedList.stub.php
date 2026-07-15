@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class AutoscalersScopedList extends \Google\Collection
-{
-    protected $collection_key = 'autoscalers';
-    protected $autoscalersType = Autoscaler::class;
-    protected $autoscalersDataType = 'array';
-    protected $warningType = AutoscalersScopedListWarning::class;
-    protected $warningDataType = '';
-    /**
-     * [Output Only] A list of autoscalers contained in this scope.
-     *
-     * @param Autoscaler[] $autoscalers
-     */
-    public function setAutoscalers($autoscalers)
+namespace Google\Service\Compute {
+    class AutoscalersScopedList extends \Google\Collection
     {
+        protected $collection_key = 'autoscalers';
+        protected $autoscalersType = Autoscaler::class;
+        protected $autoscalersDataType = 'array';
+        protected $warningType = AutoscalersScopedListWarning::class;
+        protected $warningDataType = '';
+        /**
+         * [Output Only] A list of autoscalers contained in this scope.
+         *
+         * @param Autoscaler[] $autoscalers
+         */
+        public function setAutoscalers($autoscalers)
+        {
+        }
+        /**
+         * @return Autoscaler[]
+         */
+        public function getAutoscalers()
+        {
+        }
+        /**
+         * [Output Only] Informational warning which replaces the list of autoscalers
+         * when the list is empty.
+         *
+         * @param AutoscalersScopedListWarning $warning
+         */
+        public function setWarning(AutoscalersScopedListWarning $warning)
+        {
+        }
+        /**
+         * @return AutoscalersScopedListWarning
+         */
+        public function getWarning()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Autoscaler[]
+     * Runtime class alias of \Google\Service\Compute\AutoscalersScopedList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAutoscalers()
-    {
-    }
-    /**
-     * [Output Only] Informational warning which replaces the list of autoscalers
-     * when the list is empty.
-     *
-     * @param AutoscalersScopedListWarning $warning
-     */
-    public function setWarning(AutoscalersScopedListWarning $warning)
-    {
-    }
-    /**
-     * @return AutoscalersScopedListWarning
-     */
-    public function getWarning()
+    class Google_Service_Compute_AutoscalersScopedList extends \Google\Service\Compute\AutoscalersScopedList
     {
     }
 }

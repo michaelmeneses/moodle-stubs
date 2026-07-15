@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaTextExtractionAnnotation extends \Google\Model
-{
-    /**
-     * The resource Id of the AnnotationSpec that this Annotation pertains to.
-     *
-     * @var string
-     */
-    public $annotationSpecId;
-    /**
-     * The display name of the AnnotationSpec that this Annotation pertains to.
-     *
-     * @var string
-     */
-    public $displayName;
-    protected $textSegmentType = GoogleCloudAiplatformV1SchemaTextSegment::class;
-    protected $textSegmentDataType = '';
-    /**
-     * The resource Id of the AnnotationSpec that this Annotation pertains to.
-     *
-     * @param string $annotationSpecId
-     */
-    public function setAnnotationSpecId($annotationSpecId)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaTextExtractionAnnotation extends \Google\Model
     {
+        /**
+         * The resource Id of the AnnotationSpec that this Annotation pertains to.
+         *
+         * @var string
+         */
+        public $annotationSpecId;
+        /**
+         * The display name of the AnnotationSpec that this Annotation pertains to.
+         *
+         * @var string
+         */
+        public $displayName;
+        protected $textSegmentType = GoogleCloudAiplatformV1SchemaTextSegment::class;
+        protected $textSegmentDataType = '';
+        /**
+         * The resource Id of the AnnotationSpec that this Annotation pertains to.
+         *
+         * @param string $annotationSpecId
+         */
+        public function setAnnotationSpecId($annotationSpecId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnnotationSpecId()
+        {
+        }
+        /**
+         * The display name of the AnnotationSpec that this Annotation pertains to.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The segment of the text content.
+         *
+         * @param GoogleCloudAiplatformV1SchemaTextSegment $textSegment
+         */
+        public function setTextSegment(GoogleCloudAiplatformV1SchemaTextSegment $textSegment)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SchemaTextSegment
+         */
+        public function getTextSegment()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaTextExtractionAnnotation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotationSpecId()
-    {
-    }
-    /**
-     * The display name of the AnnotationSpec that this Annotation pertains to.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The segment of the text content.
-     *
-     * @param GoogleCloudAiplatformV1SchemaTextSegment $textSegment
-     */
-    public function setTextSegment(GoogleCloudAiplatformV1SchemaTextSegment $textSegment)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1SchemaTextSegment
-     */
-    public function getTextSegment()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaTextExtractionAnnotation extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaTextExtractionAnnotation
     {
     }
 }

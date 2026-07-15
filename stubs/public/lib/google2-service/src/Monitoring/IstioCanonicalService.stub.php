@@ -21,80 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class IstioCanonicalService extends \Google\Model
-{
-    /**
-     * The name of the canonical service underlying this service. Corresponds to
-     * the destination_canonical_service_name metric label in label in Istio
-     * metrics (https://cloud.google.com/monitoring/api/metrics_istio).
-     *
-     * @var string
-     */
-    public $canonicalService;
-    /**
-     * The namespace of the canonical service underlying this service. Corresponds
-     * to the destination_canonical_service_namespace metric label in Istio
-     * metrics (https://cloud.google.com/monitoring/api/metrics_istio).
-     *
-     * @var string
-     */
-    public $canonicalServiceNamespace;
-    /**
-     * Identifier for the Istio mesh in which this canonical service is defined.
-     * Corresponds to the mesh_uid metric label in Istio metrics
-     * (https://cloud.google.com/monitoring/api/metrics_istio).
-     *
-     * @var string
-     */
-    public $meshUid;
-    /**
-     * The name of the canonical service underlying this service. Corresponds to
-     * the destination_canonical_service_name metric label in label in Istio
-     * metrics (https://cloud.google.com/monitoring/api/metrics_istio).
-     *
-     * @param string $canonicalService
-     */
-    public function setCanonicalService($canonicalService)
+namespace Google\Service\Monitoring {
+    class IstioCanonicalService extends \Google\Model
     {
+        /**
+         * The name of the canonical service underlying this service. Corresponds to
+         * the destination_canonical_service_name metric label in label in Istio
+         * metrics (https://cloud.google.com/monitoring/api/metrics_istio).
+         *
+         * @var string
+         */
+        public $canonicalService;
+        /**
+         * The namespace of the canonical service underlying this service. Corresponds
+         * to the destination_canonical_service_namespace metric label in Istio
+         * metrics (https://cloud.google.com/monitoring/api/metrics_istio).
+         *
+         * @var string
+         */
+        public $canonicalServiceNamespace;
+        /**
+         * Identifier for the Istio mesh in which this canonical service is defined.
+         * Corresponds to the mesh_uid metric label in Istio metrics
+         * (https://cloud.google.com/monitoring/api/metrics_istio).
+         *
+         * @var string
+         */
+        public $meshUid;
+        /**
+         * The name of the canonical service underlying this service. Corresponds to
+         * the destination_canonical_service_name metric label in label in Istio
+         * metrics (https://cloud.google.com/monitoring/api/metrics_istio).
+         *
+         * @param string $canonicalService
+         */
+        public function setCanonicalService($canonicalService)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCanonicalService()
+        {
+        }
+        /**
+         * The namespace of the canonical service underlying this service. Corresponds
+         * to the destination_canonical_service_namespace metric label in Istio
+         * metrics (https://cloud.google.com/monitoring/api/metrics_istio).
+         *
+         * @param string $canonicalServiceNamespace
+         */
+        public function setCanonicalServiceNamespace($canonicalServiceNamespace)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCanonicalServiceNamespace()
+        {
+        }
+        /**
+         * Identifier for the Istio mesh in which this canonical service is defined.
+         * Corresponds to the mesh_uid metric label in Istio metrics
+         * (https://cloud.google.com/monitoring/api/metrics_istio).
+         *
+         * @param string $meshUid
+         */
+        public function setMeshUid($meshUid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMeshUid()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Monitoring\IstioCanonicalService registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCanonicalService()
-    {
-    }
-    /**
-     * The namespace of the canonical service underlying this service. Corresponds
-     * to the destination_canonical_service_namespace metric label in Istio
-     * metrics (https://cloud.google.com/monitoring/api/metrics_istio).
-     *
-     * @param string $canonicalServiceNamespace
-     */
-    public function setCanonicalServiceNamespace($canonicalServiceNamespace)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCanonicalServiceNamespace()
-    {
-    }
-    /**
-     * Identifier for the Istio mesh in which this canonical service is defined.
-     * Corresponds to the mesh_uid metric label in Istio metrics
-     * (https://cloud.google.com/monitoring/api/metrics_istio).
-     *
-     * @param string $meshUid
-     */
-    public function setMeshUid($meshUid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMeshUid()
+    class Google_Service_Monitoring_IstioCanonicalService extends \Google\Service\Monitoring\IstioCanonicalService
     {
     }
 }

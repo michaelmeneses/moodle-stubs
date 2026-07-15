@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1ListEntryGroupsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachableLocations';
-    protected $entryGroupsType = GoogleCloudDataplexV1EntryGroup::class;
-    protected $entryGroupsDataType = 'array';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Locations that the service couldn't reach.
-     *
-     * @var string[]
-     */
-    public $unreachableLocations;
-    /**
-     * Entry groups under the given parent location.
-     *
-     * @param GoogleCloudDataplexV1EntryGroup[] $entryGroups
-     */
-    public function setEntryGroups($entryGroups)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1ListEntryGroupsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachableLocations';
+        protected $entryGroupsType = GoogleCloudDataplexV1EntryGroup::class;
+        protected $entryGroupsDataType = 'array';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Locations that the service couldn't reach.
+         *
+         * @var string[]
+         */
+        public $unreachableLocations;
+        /**
+         * Entry groups under the given parent location.
+         *
+         * @param GoogleCloudDataplexV1EntryGroup[] $entryGroups
+         */
+        public function setEntryGroups($entryGroups)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1EntryGroup[]
+         */
+        public function getEntryGroups()
+        {
+        }
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Locations that the service couldn't reach.
+         *
+         * @param string[] $unreachableLocations
+         */
+        public function setUnreachableLocations($unreachableLocations)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachableLocations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDataplexV1EntryGroup[]
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1ListEntryGroupsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntryGroups()
-    {
-    }
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Locations that the service couldn't reach.
-     *
-     * @param string[] $unreachableLocations
-     */
-    public function setUnreachableLocations($unreachableLocations)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachableLocations()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1ListEntryGroupsResponse extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1ListEntryGroupsResponse
     {
     }
 }

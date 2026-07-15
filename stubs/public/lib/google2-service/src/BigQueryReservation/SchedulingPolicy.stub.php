@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigQueryReservation;
-
-class SchedulingPolicy extends \Google\Model
-{
-    /**
-     * Optional. If present and > 0, the reservation will attempt to limit the
-     * concurrency of jobs running for any particular project within it to the
-     * given value. This feature is not yet generally available.
-     *
-     * @var string
-     */
-    public $concurrency;
-    /**
-     * Optional. If present and > 0, the reservation will attempt to limit the
-     * slot consumption of queries running for any particular project within it to
-     * the given value. This feature is not yet generally available.
-     *
-     * @var string
-     */
-    public $maxSlots;
-    /**
-     * Optional. If present and > 0, the reservation will attempt to limit the
-     * concurrency of jobs running for any particular project within it to the
-     * given value. This feature is not yet generally available.
-     *
-     * @param string $concurrency
-     */
-    public function setConcurrency($concurrency)
+namespace Google\Service\BigQueryReservation {
+    class SchedulingPolicy extends \Google\Model
     {
+        /**
+         * Optional. If present and > 0, the reservation will attempt to limit the
+         * concurrency of jobs running for any particular project within it to the
+         * given value. This feature is not yet generally available.
+         *
+         * @var string
+         */
+        public $concurrency;
+        /**
+         * Optional. If present and > 0, the reservation will attempt to limit the
+         * slot consumption of queries running for any particular project within it to
+         * the given value. This feature is not yet generally available.
+         *
+         * @var string
+         */
+        public $maxSlots;
+        /**
+         * Optional. If present and > 0, the reservation will attempt to limit the
+         * concurrency of jobs running for any particular project within it to the
+         * given value. This feature is not yet generally available.
+         *
+         * @param string $concurrency
+         */
+        public function setConcurrency($concurrency)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConcurrency()
+        {
+        }
+        /**
+         * Optional. If present and > 0, the reservation will attempt to limit the
+         * slot consumption of queries running for any particular project within it to
+         * the given value. This feature is not yet generally available.
+         *
+         * @param string $maxSlots
+         */
+        public function setMaxSlots($maxSlots)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaxSlots()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BigQueryReservation\SchedulingPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConcurrency()
-    {
-    }
-    /**
-     * Optional. If present and > 0, the reservation will attempt to limit the
-     * slot consumption of queries running for any particular project within it to
-     * the given value. This feature is not yet generally available.
-     *
-     * @param string $maxSlots
-     */
-    public function setMaxSlots($maxSlots)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMaxSlots()
+    class Google_Service_BigQueryReservation_SchedulingPolicy extends \Google\Service\BigQueryReservation\SchedulingPolicy
     {
     }
 }

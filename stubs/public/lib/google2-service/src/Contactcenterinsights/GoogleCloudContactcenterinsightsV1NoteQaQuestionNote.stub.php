@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1NoteQaQuestionNote extends \Google\Model
-{
-    /**
-     * The question resource that the note is associated with.
-     *
-     * @var string
-     */
-    public $qaQuestion;
-    /**
-     * The question resource that the note is associated with.
-     *
-     * @param string $qaQuestion
-     */
-    public function setQaQuestion($qaQuestion)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1NoteQaQuestionNote extends \Google\Model
     {
+        /**
+         * The question resource that the note is associated with.
+         *
+         * @var string
+         */
+        public $qaQuestion;
+        /**
+         * The question resource that the note is associated with.
+         *
+         * @param string $qaQuestion
+         */
+        public function setQaQuestion($qaQuestion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQaQuestion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1NoteQaQuestionNote registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getQaQuestion()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1NoteQaQuestionNote extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1NoteQaQuestionNote
     {
     }
 }

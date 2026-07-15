@@ -21,158 +21,167 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class OneTimeProduct extends \Google\Collection
-{
-    protected $collection_key = 'purchaseOptions';
-    protected $listingsType = OneTimeProductListing::class;
-    protected $listingsDataType = 'array';
-    protected $offerTagsType = OfferTag::class;
-    protected $offerTagsDataType = 'array';
-    /**
-     * Required. Immutable. Package name of the parent app.
-     *
-     * @var string
-     */
-    public $packageName;
-    /**
-     * Required. Immutable. Unique product ID of the product. Unique within the
-     * parent app. Product IDs must start with a number or lowercase letter, and
-     * can contain numbers (0-9), lowercase letters (a-z), underscores (_), and
-     * periods (.).
-     *
-     * @var string
-     */
-    public $productId;
-    protected $purchaseOptionsType = OneTimeProductPurchaseOption::class;
-    protected $purchaseOptionsDataType = 'array';
-    protected $regionsVersionType = RegionsVersion::class;
-    protected $regionsVersionDataType = '';
-    protected $restrictedPaymentCountriesType = RestrictedPaymentCountries::class;
-    protected $restrictedPaymentCountriesDataType = '';
-    protected $taxAndComplianceSettingsType = OneTimeProductTaxAndComplianceSettings::class;
-    protected $taxAndComplianceSettingsDataType = '';
-    /**
-     * Required. Set of localized title and description data. Must not have
-     * duplicate entries with the same language_code.
-     *
-     * @param OneTimeProductListing[] $listings
-     */
-    public function setListings($listings)
+namespace Google\Service\AndroidPublisher {
+    class OneTimeProduct extends \Google\Collection
     {
+        protected $collection_key = 'purchaseOptions';
+        protected $listingsType = OneTimeProductListing::class;
+        protected $listingsDataType = 'array';
+        protected $offerTagsType = OfferTag::class;
+        protected $offerTagsDataType = 'array';
+        /**
+         * Required. Immutable. Package name of the parent app.
+         *
+         * @var string
+         */
+        public $packageName;
+        /**
+         * Required. Immutable. Unique product ID of the product. Unique within the
+         * parent app. Product IDs must start with a number or lowercase letter, and
+         * can contain numbers (0-9), lowercase letters (a-z), underscores (_), and
+         * periods (.).
+         *
+         * @var string
+         */
+        public $productId;
+        protected $purchaseOptionsType = OneTimeProductPurchaseOption::class;
+        protected $purchaseOptionsDataType = 'array';
+        protected $regionsVersionType = RegionsVersion::class;
+        protected $regionsVersionDataType = '';
+        protected $restrictedPaymentCountriesType = RestrictedPaymentCountries::class;
+        protected $restrictedPaymentCountriesDataType = '';
+        protected $taxAndComplianceSettingsType = OneTimeProductTaxAndComplianceSettings::class;
+        protected $taxAndComplianceSettingsDataType = '';
+        /**
+         * Required. Set of localized title and description data. Must not have
+         * duplicate entries with the same language_code.
+         *
+         * @param OneTimeProductListing[] $listings
+         */
+        public function setListings($listings)
+        {
+        }
+        /**
+         * @return OneTimeProductListing[]
+         */
+        public function getListings()
+        {
+        }
+        /**
+         * Optional. List of up to 20 custom tags specified for this one-time product,
+         * and returned to the app through the billing library. Purchase options and
+         * offers for this product will also receive these tags in the billing
+         * library.
+         *
+         * @param OfferTag[] $offerTags
+         */
+        public function setOfferTags($offerTags)
+        {
+        }
+        /**
+         * @return OfferTag[]
+         */
+        public function getOfferTags()
+        {
+        }
+        /**
+         * Required. Immutable. Package name of the parent app.
+         *
+         * @param string $packageName
+         */
+        public function setPackageName($packageName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPackageName()
+        {
+        }
+        /**
+         * Required. Immutable. Unique product ID of the product. Unique within the
+         * parent app. Product IDs must start with a number or lowercase letter, and
+         * can contain numbers (0-9), lowercase letters (a-z), underscores (_), and
+         * periods (.).
+         *
+         * @param string $productId
+         */
+        public function setProductId($productId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProductId()
+        {
+        }
+        /**
+         * Required. The set of purchase options for this one-time product.
+         *
+         * @param OneTimeProductPurchaseOption[] $purchaseOptions
+         */
+        public function setPurchaseOptions($purchaseOptions)
+        {
+        }
+        /**
+         * @return OneTimeProductPurchaseOption[]
+         */
+        public function getPurchaseOptions()
+        {
+        }
+        /**
+         * Output only. The version of the regions configuration that was used to
+         * generate the one-time product.
+         *
+         * @param RegionsVersion $regionsVersion
+         */
+        public function setRegionsVersion(RegionsVersion $regionsVersion)
+        {
+        }
+        /**
+         * @return RegionsVersion
+         */
+        public function getRegionsVersion()
+        {
+        }
+        /**
+         * Optional. Countries where the purchase of this one-time product is
+         * restricted to payment methods registered in the same country. If empty, no
+         * payment location restrictions are imposed.
+         *
+         * @param RestrictedPaymentCountries $restrictedPaymentCountries
+         */
+        public function setRestrictedPaymentCountries(RestrictedPaymentCountries $restrictedPaymentCountries)
+        {
+        }
+        /**
+         * @return RestrictedPaymentCountries
+         */
+        public function getRestrictedPaymentCountries()
+        {
+        }
+        /**
+         * Details about taxes and legal compliance.
+         *
+         * @param OneTimeProductTaxAndComplianceSettings $taxAndComplianceSettings
+         */
+        public function setTaxAndComplianceSettings(OneTimeProductTaxAndComplianceSettings $taxAndComplianceSettings)
+        {
+        }
+        /**
+         * @return OneTimeProductTaxAndComplianceSettings
+         */
+        public function getTaxAndComplianceSettings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return OneTimeProductListing[]
+     * Runtime class alias of \Google\Service\AndroidPublisher\OneTimeProduct registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getListings()
-    {
-    }
-    /**
-     * Optional. List of up to 20 custom tags specified for this one-time product,
-     * and returned to the app through the billing library. Purchase options and
-     * offers for this product will also receive these tags in the billing
-     * library.
-     *
-     * @param OfferTag[] $offerTags
-     */
-    public function setOfferTags($offerTags)
-    {
-    }
-    /**
-     * @return OfferTag[]
-     */
-    public function getOfferTags()
-    {
-    }
-    /**
-     * Required. Immutable. Package name of the parent app.
-     *
-     * @param string $packageName
-     */
-    public function setPackageName($packageName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPackageName()
-    {
-    }
-    /**
-     * Required. Immutable. Unique product ID of the product. Unique within the
-     * parent app. Product IDs must start with a number or lowercase letter, and
-     * can contain numbers (0-9), lowercase letters (a-z), underscores (_), and
-     * periods (.).
-     *
-     * @param string $productId
-     */
-    public function setProductId($productId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProductId()
-    {
-    }
-    /**
-     * Required. The set of purchase options for this one-time product.
-     *
-     * @param OneTimeProductPurchaseOption[] $purchaseOptions
-     */
-    public function setPurchaseOptions($purchaseOptions)
-    {
-    }
-    /**
-     * @return OneTimeProductPurchaseOption[]
-     */
-    public function getPurchaseOptions()
-    {
-    }
-    /**
-     * Output only. The version of the regions configuration that was used to
-     * generate the one-time product.
-     *
-     * @param RegionsVersion $regionsVersion
-     */
-    public function setRegionsVersion(RegionsVersion $regionsVersion)
-    {
-    }
-    /**
-     * @return RegionsVersion
-     */
-    public function getRegionsVersion()
-    {
-    }
-    /**
-     * Optional. Countries where the purchase of this one-time product is
-     * restricted to payment methods registered in the same country. If empty, no
-     * payment location restrictions are imposed.
-     *
-     * @param RestrictedPaymentCountries $restrictedPaymentCountries
-     */
-    public function setRestrictedPaymentCountries(RestrictedPaymentCountries $restrictedPaymentCountries)
-    {
-    }
-    /**
-     * @return RestrictedPaymentCountries
-     */
-    public function getRestrictedPaymentCountries()
-    {
-    }
-    /**
-     * Details about taxes and legal compliance.
-     *
-     * @param OneTimeProductTaxAndComplianceSettings $taxAndComplianceSettings
-     */
-    public function setTaxAndComplianceSettings(OneTimeProductTaxAndComplianceSettings $taxAndComplianceSettings)
-    {
-    }
-    /**
-     * @return OneTimeProductTaxAndComplianceSettings
-     */
-    public function getTaxAndComplianceSettings()
+    class Google_Service_AndroidPublisher_OneTimeProduct extends \Google\Service\AndroidPublisher\OneTimeProduct
     {
     }
 }

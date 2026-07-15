@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class EnterpriseTopazSidekickAgendaGroupCardProto extends \Google\Collection
-{
-    protected $collection_key = 'agendaItem';
-    protected $agendaItemType = EnterpriseTopazSidekickAgendaItem::class;
-    protected $agendaItemDataType = 'array';
-    protected $contextType = EnterpriseTopazSidekickAgendaGroupCardProtoContext::class;
-    protected $contextDataType = '';
-    protected $currentAgendaItemType = EnterpriseTopazSidekickAgendaItem::class;
-    protected $currentAgendaItemDataType = '';
-    /**
-     * @param EnterpriseTopazSidekickAgendaItem[] $agendaItem
-     */
-    public function setAgendaItem($agendaItem)
+namespace Google\Service\CloudSearch {
+    class EnterpriseTopazSidekickAgendaGroupCardProto extends \Google\Collection
     {
+        protected $collection_key = 'agendaItem';
+        protected $agendaItemType = EnterpriseTopazSidekickAgendaItem::class;
+        protected $agendaItemDataType = 'array';
+        protected $contextType = EnterpriseTopazSidekickAgendaGroupCardProtoContext::class;
+        protected $contextDataType = '';
+        protected $currentAgendaItemType = EnterpriseTopazSidekickAgendaItem::class;
+        protected $currentAgendaItemDataType = '';
+        /**
+         * @param EnterpriseTopazSidekickAgendaItem[] $agendaItem
+         */
+        public function setAgendaItem($agendaItem)
+        {
+        }
+        /**
+         * @return EnterpriseTopazSidekickAgendaItem[]
+         */
+        public function getAgendaItem()
+        {
+        }
+        /**
+         * @param EnterpriseTopazSidekickAgendaGroupCardProtoContext $context
+         */
+        public function setContext(EnterpriseTopazSidekickAgendaGroupCardProtoContext $context)
+        {
+        }
+        /**
+         * @return EnterpriseTopazSidekickAgendaGroupCardProtoContext
+         */
+        public function getContext()
+        {
+        }
+        /**
+         * @param EnterpriseTopazSidekickAgendaItem $currentAgendaItem
+         */
+        public function setCurrentAgendaItem(EnterpriseTopazSidekickAgendaItem $currentAgendaItem)
+        {
+        }
+        /**
+         * @return EnterpriseTopazSidekickAgendaItem
+         */
+        public function getCurrentAgendaItem()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EnterpriseTopazSidekickAgendaItem[]
+     * Runtime class alias of \Google\Service\CloudSearch\EnterpriseTopazSidekickAgendaGroupCardProto registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAgendaItem()
-    {
-    }
-    /**
-     * @param EnterpriseTopazSidekickAgendaGroupCardProtoContext $context
-     */
-    public function setContext(EnterpriseTopazSidekickAgendaGroupCardProtoContext $context)
-    {
-    }
-    /**
-     * @return EnterpriseTopazSidekickAgendaGroupCardProtoContext
-     */
-    public function getContext()
-    {
-    }
-    /**
-     * @param EnterpriseTopazSidekickAgendaItem $currentAgendaItem
-     */
-    public function setCurrentAgendaItem(EnterpriseTopazSidekickAgendaItem $currentAgendaItem)
-    {
-    }
-    /**
-     * @return EnterpriseTopazSidekickAgendaItem
-     */
-    public function getCurrentAgendaItem()
+    class Google_Service_CloudSearch_EnterpriseTopazSidekickAgendaGroupCardProto extends \Google\Service\CloudSearch\EnterpriseTopazSidekickAgendaGroupCardProto
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailLoggingHttpRequestContext extends \Google\Model
-{
-    /**
-     * The HTTP response status code for the request.
-     *
-     * @var int
-     */
-    public $responseStatusCode;
-    /**
-     * The HTTP response status code for the request.
-     *
-     * @param int $responseStatusCode
-     */
-    public function setResponseStatusCode($responseStatusCode)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailLoggingHttpRequestContext extends \Google\Model
     {
+        /**
+         * The HTTP response status code for the request.
+         *
+         * @var int
+         */
+        public $responseStatusCode;
+        /**
+         * The HTTP response status code for the request.
+         *
+         * @param int $responseStatusCode
+         */
+        public function setResponseStatusCode($responseStatusCode)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getResponseStatusCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailLoggingHttpRequestContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResponseStatusCode()
+    class Google_Service_CloudRetail_GoogleCloudRetailLoggingHttpRequestContext extends \Google\Service\CloudRetail\GoogleCloudRetailLoggingHttpRequestContext
     {
     }
 }

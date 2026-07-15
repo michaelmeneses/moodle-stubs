@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1ListProductsResponse extends \Google\Collection
-{
-    protected $collection_key = 'products';
-    /**
-     * A token to retrieve the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $productsType = GoogleCloudChannelV1Product::class;
-    protected $productsDataType = 'array';
-    /**
-     * A token to retrieve the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1ListProductsResponse extends \Google\Collection
     {
+        protected $collection_key = 'products';
+        /**
+         * A token to retrieve the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $productsType = GoogleCloudChannelV1Product::class;
+        protected $productsDataType = 'array';
+        /**
+         * A token to retrieve the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * List of Products requested.
+         *
+         * @param GoogleCloudChannelV1Product[] $products
+         */
+        public function setProducts($products)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1Product[]
+         */
+        public function getProducts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1ListProductsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * List of Products requested.
-     *
-     * @param GoogleCloudChannelV1Product[] $products
-     */
-    public function setProducts($products)
-    {
-    }
-    /**
-     * @return GoogleCloudChannelV1Product[]
-     */
-    public function getProducts()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1ListProductsResponse extends \Google\Service\Cloudchannel\GoogleCloudChannelV1ListProductsResponse
     {
     }
 }

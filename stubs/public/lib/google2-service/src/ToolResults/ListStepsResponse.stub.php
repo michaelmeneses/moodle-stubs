@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class ListStepsResponse extends \Google\Collection
-{
-    protected $collection_key = 'steps';
-    /**
-     * A continuation token to resume the query at the next item. If set,
-     * indicates that there are more steps to read, by calling list again with
-     * this value in the page_token field.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $stepsType = Step::class;
-    protected $stepsDataType = 'array';
-    /**
-     * A continuation token to resume the query at the next item. If set,
-     * indicates that there are more steps to read, by calling list again with
-     * this value in the page_token field.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\ToolResults {
+    class ListStepsResponse extends \Google\Collection
     {
+        protected $collection_key = 'steps';
+        /**
+         * A continuation token to resume the query at the next item. If set,
+         * indicates that there are more steps to read, by calling list again with
+         * this value in the page_token field.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $stepsType = Step::class;
+        protected $stepsDataType = 'array';
+        /**
+         * A continuation token to resume the query at the next item. If set,
+         * indicates that there are more steps to read, by calling list again with
+         * this value in the page_token field.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Steps.
+         *
+         * @param Step[] $steps
+         */
+        public function setSteps($steps)
+        {
+        }
+        /**
+         * @return Step[]
+         */
+        public function getSteps()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ToolResults\ListStepsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Steps.
-     *
-     * @param Step[] $steps
-     */
-    public function setSteps($steps)
-    {
-    }
-    /**
-     * @return Step[]
-     */
-    public function getSteps()
+    class Google_Service_ToolResults_ListStepsResponse extends \Google\Service\ToolResults\ListStepsResponse
     {
     }
 }

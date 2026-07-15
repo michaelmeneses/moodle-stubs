@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datapipelines;
-
-class GoogleCloudDatapipelinesV1LogicalTypeEnumerationType extends \Google\Collection
-{
-    protected $collection_key = 'values';
-    /**
-     * @var string[]
-     */
-    public $values;
-    /**
-     * @param string[]
-     */
-    public function setValues($values)
+namespace Google\Service\Datapipelines {
+    class GoogleCloudDatapipelinesV1LogicalTypeEnumerationType extends \Google\Collection
     {
+        protected $collection_key = 'values';
+        /**
+         * @var string[]
+         */
+        public $values;
+        /**
+         * @param string[]
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Datapipelines\GoogleCloudDatapipelinesV1LogicalTypeEnumerationType registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getValues()
+    class Google_Service_Datapipelines_GoogleCloudDatapipelinesV1LogicalTypeEnumerationType extends \Google\Service\Datapipelines\GoogleCloudDatapipelinesV1LogicalTypeEnumerationType
     {
     }
 }

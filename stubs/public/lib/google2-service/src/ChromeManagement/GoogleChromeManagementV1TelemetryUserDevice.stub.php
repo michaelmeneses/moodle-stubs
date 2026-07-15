@@ -21,116 +21,125 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementV1TelemetryUserDevice extends \Google\Collection
-{
-    protected $collection_key = 'peripheralsReport';
-    protected $appReportType = GoogleChromeManagementV1AppReport::class;
-    protected $appReportDataType = 'array';
-    protected $audioStatusReportType = GoogleChromeManagementV1AudioStatusReport::class;
-    protected $audioStatusReportDataType = 'array';
-    protected $deviceActivityReportType = GoogleChromeManagementV1DeviceActivityReport::class;
-    protected $deviceActivityReportDataType = 'array';
-    /**
-     * The unique Directory API ID of the device. This value is the same as the
-     * Admin Console's Directory API ID in the ChromeOS Devices tab.
-     *
-     * @var string
-     */
-    public $deviceId;
-    protected $networkBandwidthReportType = GoogleChromeManagementV1NetworkBandwidthReport::class;
-    protected $networkBandwidthReportDataType = 'array';
-    protected $peripheralsReportType = GoogleChromeManagementV1PeripheralsReport::class;
-    protected $peripheralsReportDataType = 'array';
-    /**
-     * Output only. App reports collected periodically sorted in a decreasing
-     * order of report_time.
-     *
-     * @param GoogleChromeManagementV1AppReport[] $appReport
-     */
-    public function setAppReport($appReport)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementV1TelemetryUserDevice extends \Google\Collection
     {
+        protected $collection_key = 'peripheralsReport';
+        protected $appReportType = GoogleChromeManagementV1AppReport::class;
+        protected $appReportDataType = 'array';
+        protected $audioStatusReportType = GoogleChromeManagementV1AudioStatusReport::class;
+        protected $audioStatusReportDataType = 'array';
+        protected $deviceActivityReportType = GoogleChromeManagementV1DeviceActivityReport::class;
+        protected $deviceActivityReportDataType = 'array';
+        /**
+         * The unique Directory API ID of the device. This value is the same as the
+         * Admin Console's Directory API ID in the ChromeOS Devices tab.
+         *
+         * @var string
+         */
+        public $deviceId;
+        protected $networkBandwidthReportType = GoogleChromeManagementV1NetworkBandwidthReport::class;
+        protected $networkBandwidthReportDataType = 'array';
+        protected $peripheralsReportType = GoogleChromeManagementV1PeripheralsReport::class;
+        protected $peripheralsReportDataType = 'array';
+        /**
+         * Output only. App reports collected periodically sorted in a decreasing
+         * order of report_time.
+         *
+         * @param GoogleChromeManagementV1AppReport[] $appReport
+         */
+        public function setAppReport($appReport)
+        {
+        }
+        /**
+         * @return GoogleChromeManagementV1AppReport[]
+         */
+        public function getAppReport()
+        {
+        }
+        /**
+         * Output only. Audio reports collected periodically sorted in a decreasing
+         * order of report_time.
+         *
+         * @param GoogleChromeManagementV1AudioStatusReport[] $audioStatusReport
+         */
+        public function setAudioStatusReport($audioStatusReport)
+        {
+        }
+        /**
+         * @return GoogleChromeManagementV1AudioStatusReport[]
+         */
+        public function getAudioStatusReport()
+        {
+        }
+        /**
+         * Output only. Device activity reports collected periodically sorted in a
+         * decreasing order of report_time.
+         *
+         * @param GoogleChromeManagementV1DeviceActivityReport[] $deviceActivityReport
+         */
+        public function setDeviceActivityReport($deviceActivityReport)
+        {
+        }
+        /**
+         * @return GoogleChromeManagementV1DeviceActivityReport[]
+         */
+        public function getDeviceActivityReport()
+        {
+        }
+        /**
+         * The unique Directory API ID of the device. This value is the same as the
+         * Admin Console's Directory API ID in the ChromeOS Devices tab.
+         *
+         * @param string $deviceId
+         */
+        public function setDeviceId($deviceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeviceId()
+        {
+        }
+        /**
+         * Output only. Network bandwidth reports collected periodically sorted in a
+         * decreasing order of report_time.
+         *
+         * @param GoogleChromeManagementV1NetworkBandwidthReport[] $networkBandwidthReport
+         */
+        public function setNetworkBandwidthReport($networkBandwidthReport)
+        {
+        }
+        /**
+         * @return GoogleChromeManagementV1NetworkBandwidthReport[]
+         */
+        public function getNetworkBandwidthReport()
+        {
+        }
+        /**
+         * Output only. Peripherals reports collected periodically sorted in a
+         * decreasing order of report_time.
+         *
+         * @param GoogleChromeManagementV1PeripheralsReport[] $peripheralsReport
+         */
+        public function setPeripheralsReport($peripheralsReport)
+        {
+        }
+        /**
+         * @return GoogleChromeManagementV1PeripheralsReport[]
+         */
+        public function getPeripheralsReport()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleChromeManagementV1AppReport[]
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementV1TelemetryUserDevice registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAppReport()
-    {
-    }
-    /**
-     * Output only. Audio reports collected periodically sorted in a decreasing
-     * order of report_time.
-     *
-     * @param GoogleChromeManagementV1AudioStatusReport[] $audioStatusReport
-     */
-    public function setAudioStatusReport($audioStatusReport)
-    {
-    }
-    /**
-     * @return GoogleChromeManagementV1AudioStatusReport[]
-     */
-    public function getAudioStatusReport()
-    {
-    }
-    /**
-     * Output only. Device activity reports collected periodically sorted in a
-     * decreasing order of report_time.
-     *
-     * @param GoogleChromeManagementV1DeviceActivityReport[] $deviceActivityReport
-     */
-    public function setDeviceActivityReport($deviceActivityReport)
-    {
-    }
-    /**
-     * @return GoogleChromeManagementV1DeviceActivityReport[]
-     */
-    public function getDeviceActivityReport()
-    {
-    }
-    /**
-     * The unique Directory API ID of the device. This value is the same as the
-     * Admin Console's Directory API ID in the ChromeOS Devices tab.
-     *
-     * @param string $deviceId
-     */
-    public function setDeviceId($deviceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeviceId()
-    {
-    }
-    /**
-     * Output only. Network bandwidth reports collected periodically sorted in a
-     * decreasing order of report_time.
-     *
-     * @param GoogleChromeManagementV1NetworkBandwidthReport[] $networkBandwidthReport
-     */
-    public function setNetworkBandwidthReport($networkBandwidthReport)
-    {
-    }
-    /**
-     * @return GoogleChromeManagementV1NetworkBandwidthReport[]
-     */
-    public function getNetworkBandwidthReport()
-    {
-    }
-    /**
-     * Output only. Peripherals reports collected periodically sorted in a
-     * decreasing order of report_time.
-     *
-     * @param GoogleChromeManagementV1PeripheralsReport[] $peripheralsReport
-     */
-    public function setPeripheralsReport($peripheralsReport)
-    {
-    }
-    /**
-     * @return GoogleChromeManagementV1PeripheralsReport[]
-     */
-    public function getPeripheralsReport()
+    class Google_Service_ChromeManagement_GoogleChromeManagementV1TelemetryUserDevice extends \Google\Service\ChromeManagement\GoogleChromeManagementV1TelemetryUserDevice
     {
     }
 }

@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class EnrollBareMetalStandaloneNodePoolRequest extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $bareMetalStandaloneNodePoolId;
-    /**
-     * @var bool
-     */
-    public $validateOnly;
-    /**
-     * @param string
-     */
-    public function setBareMetalStandaloneNodePoolId($bareMetalStandaloneNodePoolId)
+namespace Google\Service\GKEOnPrem {
+    class EnrollBareMetalStandaloneNodePoolRequest extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $bareMetalStandaloneNodePoolId;
+        /**
+         * @var bool
+         */
+        public $validateOnly;
+        /**
+         * @param string
+         */
+        public function setBareMetalStandaloneNodePoolId($bareMetalStandaloneNodePoolId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBareMetalStandaloneNodePoolId()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setValidateOnly($validateOnly)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getValidateOnly()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEOnPrem\EnrollBareMetalStandaloneNodePoolRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBareMetalStandaloneNodePoolId()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setValidateOnly($validateOnly)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getValidateOnly()
+    class Google_Service_GKEOnPrem_EnrollBareMetalStandaloneNodePoolRequest extends \Google\Service\GKEOnPrem\EnrollBareMetalStandaloneNodePoolRequest
     {
     }
 }

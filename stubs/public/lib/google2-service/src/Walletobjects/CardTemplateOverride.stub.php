@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class CardTemplateOverride extends \Google\Collection
-{
-    protected $collection_key = 'cardRowTemplateInfos';
-    protected $cardRowTemplateInfosType = CardRowTemplateInfo::class;
-    protected $cardRowTemplateInfosDataType = 'array';
-    /**
-     * Template information for rows in the card view. At most three rows are
-     * allowed to be specified.
-     *
-     * @param CardRowTemplateInfo[] $cardRowTemplateInfos
-     */
-    public function setCardRowTemplateInfos($cardRowTemplateInfos)
+namespace Google\Service\Walletobjects {
+    class CardTemplateOverride extends \Google\Collection
     {
+        protected $collection_key = 'cardRowTemplateInfos';
+        protected $cardRowTemplateInfosType = CardRowTemplateInfo::class;
+        protected $cardRowTemplateInfosDataType = 'array';
+        /**
+         * Template information for rows in the card view. At most three rows are
+         * allowed to be specified.
+         *
+         * @param CardRowTemplateInfo[] $cardRowTemplateInfos
+         */
+        public function setCardRowTemplateInfos($cardRowTemplateInfos)
+        {
+        }
+        /**
+         * @return CardRowTemplateInfo[]
+         */
+        public function getCardRowTemplateInfos()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CardRowTemplateInfo[]
+     * Runtime class alias of \Google\Service\Walletobjects\CardTemplateOverride registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCardRowTemplateInfos()
+    class Google_Service_Walletobjects_CardTemplateOverride extends \Google\Service\Walletobjects\CardTemplateOverride
     {
     }
 }

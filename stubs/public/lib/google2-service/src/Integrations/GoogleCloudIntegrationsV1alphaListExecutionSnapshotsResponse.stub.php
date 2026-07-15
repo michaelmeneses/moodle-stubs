@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaListExecutionSnapshotsResponse extends \Google\Collection
-{
-    protected $collection_key = 'executionSnapshots';
-    protected $executionSnapshotsType = EnterpriseCrmEventbusProtoEventExecutionSnapshot::class;
-    protected $executionSnapshotsDataType = 'array';
-    public $executionSnapshots;
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * @param EnterpriseCrmEventbusProtoEventExecutionSnapshot[]
-     */
-    public function setExecutionSnapshots($executionSnapshots)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaListExecutionSnapshotsResponse extends \Google\Collection
     {
+        protected $collection_key = 'executionSnapshots';
+        protected $executionSnapshotsType = EnterpriseCrmEventbusProtoEventExecutionSnapshot::class;
+        protected $executionSnapshotsDataType = 'array';
+        public $executionSnapshots;
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * @param EnterpriseCrmEventbusProtoEventExecutionSnapshot[]
+         */
+        public function setExecutionSnapshots($executionSnapshots)
+        {
+        }
+        /**
+         * @return EnterpriseCrmEventbusProtoEventExecutionSnapshot[]
+         */
+        public function getExecutionSnapshots()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EnterpriseCrmEventbusProtoEventExecutionSnapshot[]
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaListExecutionSnapshotsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExecutionSnapshots()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaListExecutionSnapshotsResponse extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaListExecutionSnapshotsResponse
     {
     }
 }

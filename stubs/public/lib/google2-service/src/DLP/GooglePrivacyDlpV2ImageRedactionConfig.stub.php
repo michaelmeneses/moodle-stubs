@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2ImageRedactionConfig extends \Google\Model
-{
-    protected $infoTypeType = GooglePrivacyDlpV2InfoType::class;
-    protected $infoTypeDataType = '';
-    /**
-     * If true, all text found in the image, regardless whether it matches an
-     * info_type, is redacted. Only one should be provided.
-     *
-     * @var bool
-     */
-    public $redactAllText;
-    protected $redactionColorType = GooglePrivacyDlpV2Color::class;
-    protected $redactionColorDataType = '';
-    /**
-     * Only one per info_type should be provided per request. If not specified,
-     * and redact_all_text is false, the DLP API will redact all text that it
-     * matches against all info_types that are found, but not specified in another
-     * ImageRedactionConfig.
-     *
-     * @param GooglePrivacyDlpV2InfoType $infoType
-     */
-    public function setInfoType(GooglePrivacyDlpV2InfoType $infoType)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2ImageRedactionConfig extends \Google\Model
     {
+        protected $infoTypeType = GooglePrivacyDlpV2InfoType::class;
+        protected $infoTypeDataType = '';
+        /**
+         * If true, all text found in the image, regardless whether it matches an
+         * info_type, is redacted. Only one should be provided.
+         *
+         * @var bool
+         */
+        public $redactAllText;
+        protected $redactionColorType = GooglePrivacyDlpV2Color::class;
+        protected $redactionColorDataType = '';
+        /**
+         * Only one per info_type should be provided per request. If not specified,
+         * and redact_all_text is false, the DLP API will redact all text that it
+         * matches against all info_types that are found, but not specified in another
+         * ImageRedactionConfig.
+         *
+         * @param GooglePrivacyDlpV2InfoType $infoType
+         */
+        public function setInfoType(GooglePrivacyDlpV2InfoType $infoType)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2InfoType
+         */
+        public function getInfoType()
+        {
+        }
+        /**
+         * If true, all text found in the image, regardless whether it matches an
+         * info_type, is redacted. Only one should be provided.
+         *
+         * @param bool $redactAllText
+         */
+        public function setRedactAllText($redactAllText)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getRedactAllText()
+        {
+        }
+        /**
+         * The color to use when redacting content from an image. If not specified,
+         * the default is black.
+         *
+         * @param GooglePrivacyDlpV2Color $redactionColor
+         */
+        public function setRedactionColor(GooglePrivacyDlpV2Color $redactionColor)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2Color
+         */
+        public function getRedactionColor()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2InfoType
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2ImageRedactionConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInfoType()
-    {
-    }
-    /**
-     * If true, all text found in the image, regardless whether it matches an
-     * info_type, is redacted. Only one should be provided.
-     *
-     * @param bool $redactAllText
-     */
-    public function setRedactAllText($redactAllText)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getRedactAllText()
-    {
-    }
-    /**
-     * The color to use when redacting content from an image. If not specified,
-     * the default is black.
-     *
-     * @param GooglePrivacyDlpV2Color $redactionColor
-     */
-    public function setRedactionColor(GooglePrivacyDlpV2Color $redactionColor)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2Color
-     */
-    public function getRedactionColor()
+    class Google_Service_DLP_GooglePrivacyDlpV2ImageRedactionConfig extends \Google\Service\DLP\GooglePrivacyDlpV2ImageRedactionConfig
     {
     }
 }

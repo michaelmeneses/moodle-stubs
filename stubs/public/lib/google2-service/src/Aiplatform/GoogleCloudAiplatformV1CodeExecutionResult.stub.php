@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1CodeExecutionResult extends \Google\Model
-{
-    /**
-     * Unspecified status. This value should not be used.
-     */
-    public const OUTCOME_OUTCOME_UNSPECIFIED = 'OUTCOME_UNSPECIFIED';
-    /**
-     * Code execution completed successfully.
-     */
-    public const OUTCOME_OUTCOME_OK = 'OUTCOME_OK';
-    /**
-     * Code execution finished but with a failure. `stderr` should contain the
-     * reason.
-     */
-    public const OUTCOME_OUTCOME_FAILED = 'OUTCOME_FAILED';
-    /**
-     * Code execution ran for too long, and was cancelled. There may or may not be
-     * a partial output present.
-     */
-    public const OUTCOME_OUTCOME_DEADLINE_EXCEEDED = 'OUTCOME_DEADLINE_EXCEEDED';
-    /**
-     * Required. Outcome of the code execution.
-     *
-     * @var string
-     */
-    public $outcome;
-    /**
-     * Optional. Contains stdout when code execution is successful, stderr or
-     * other description otherwise.
-     *
-     * @var string
-     */
-    public $output;
-    /**
-     * Required. Outcome of the code execution.
-     *
-     * Accepted values: OUTCOME_UNSPECIFIED, OUTCOME_OK, OUTCOME_FAILED,
-     * OUTCOME_DEADLINE_EXCEEDED
-     *
-     * @param self::OUTCOME_* $outcome
-     */
-    public function setOutcome($outcome)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1CodeExecutionResult extends \Google\Model
     {
+        /**
+         * Unspecified status. This value should not be used.
+         */
+        public const OUTCOME_OUTCOME_UNSPECIFIED = 'OUTCOME_UNSPECIFIED';
+        /**
+         * Code execution completed successfully.
+         */
+        public const OUTCOME_OUTCOME_OK = 'OUTCOME_OK';
+        /**
+         * Code execution finished but with a failure. `stderr` should contain the
+         * reason.
+         */
+        public const OUTCOME_OUTCOME_FAILED = 'OUTCOME_FAILED';
+        /**
+         * Code execution ran for too long, and was cancelled. There may or may not be
+         * a partial output present.
+         */
+        public const OUTCOME_OUTCOME_DEADLINE_EXCEEDED = 'OUTCOME_DEADLINE_EXCEEDED';
+        /**
+         * Required. Outcome of the code execution.
+         *
+         * @var string
+         */
+        public $outcome;
+        /**
+         * Optional. Contains stdout when code execution is successful, stderr or
+         * other description otherwise.
+         *
+         * @var string
+         */
+        public $output;
+        /**
+         * Required. Outcome of the code execution.
+         *
+         * Accepted values: OUTCOME_UNSPECIFIED, OUTCOME_OK, OUTCOME_FAILED,
+         * OUTCOME_DEADLINE_EXCEEDED
+         *
+         * @param self::OUTCOME_* $outcome
+         */
+        public function setOutcome($outcome)
+        {
+        }
+        /**
+         * @return self::OUTCOME_*
+         */
+        public function getOutcome()
+        {
+        }
+        /**
+         * Optional. Contains stdout when code execution is successful, stderr or
+         * other description otherwise.
+         *
+         * @param string $output
+         */
+        public function setOutput($output)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOutput()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::OUTCOME_*
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1CodeExecutionResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOutcome()
-    {
-    }
-    /**
-     * Optional. Contains stdout when code execution is successful, stderr or
-     * other description otherwise.
-     *
-     * @param string $output
-     */
-    public function setOutput($output)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOutput()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1CodeExecutionResult extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1CodeExecutionResult
     {
     }
 }

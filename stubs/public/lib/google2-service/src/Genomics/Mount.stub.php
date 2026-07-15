@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Genomics;
-
-class Mount extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $disk;
-    /**
-     * @var string
-     */
-    public $path;
-    /**
-     * @var bool
-     */
-    public $readOnly;
-    /**
-     * @param string
-     */
-    public function setDisk($disk)
+namespace Google\Service\Genomics {
+    class Mount extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $disk;
+        /**
+         * @var string
+         */
+        public $path;
+        /**
+         * @var bool
+         */
+        public $readOnly;
+        /**
+         * @param string
+         */
+        public function setDisk($disk)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisk()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setReadOnly($readOnly)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getReadOnly()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Genomics\Mount registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisk()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPath($path)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPath()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setReadOnly($readOnly)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getReadOnly()
+    class Google_Service_Genomics_Mount extends \Google\Service\Genomics\Mount
     {
     }
 }

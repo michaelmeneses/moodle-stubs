@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class SecurityPoliciesWafConfig extends \Google\Model
-{
-    protected $wafRulesType = PreconfiguredWafSet::class;
-    protected $wafRulesDataType = '';
-    /**
-     * @param PreconfiguredWafSet $wafRules
-     */
-    public function setWafRules(PreconfiguredWafSet $wafRules)
+namespace Google\Service\Compute {
+    class SecurityPoliciesWafConfig extends \Google\Model
     {
+        protected $wafRulesType = PreconfiguredWafSet::class;
+        protected $wafRulesDataType = '';
+        /**
+         * @param PreconfiguredWafSet $wafRules
+         */
+        public function setWafRules(PreconfiguredWafSet $wafRules)
+        {
+        }
+        /**
+         * @return PreconfiguredWafSet
+         */
+        public function getWafRules()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PreconfiguredWafSet
+     * Runtime class alias of \Google\Service\Compute\SecurityPoliciesWafConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getWafRules()
+    class Google_Service_Compute_SecurityPoliciesWafConfig extends \Google\Service\Compute\SecurityPoliciesWafConfig
     {
     }
 }

@@ -21,244 +21,253 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CivicInfo;
-
-class AdministrativeBody extends \Google\Collection
-{
-    protected $collection_key = 'voter_services';
-    protected $internal_gapi_mappings = ["voterServices" => "voter_services"];
-    /**
-     * @var string
-     */
-    public $absenteeVotingInfoUrl;
-    /**
-     * @var string
-     */
-    public $ballotInfoUrl;
-    protected $correspondenceAddressType = SimpleAddressType::class;
-    protected $correspondenceAddressDataType = '';
-    /**
-     * @var string
-     */
-    public $electionInfoUrl;
-    /**
-     * @var string
-     */
-    public $electionNoticeText;
-    /**
-     * @var string
-     */
-    public $electionNoticeUrl;
-    protected $electionOfficialsType = ElectionOfficial::class;
-    protected $electionOfficialsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $electionRegistrationConfirmationUrl;
-    /**
-     * @var string
-     */
-    public $electionRegistrationUrl;
-    /**
-     * @var string
-     */
-    public $electionRulesUrl;
-    /**
-     * @var string
-     */
-    public $hoursOfOperation;
-    /**
-     * @var string
-     */
-    public $name;
-    protected $physicalAddressType = SimpleAddressType::class;
-    protected $physicalAddressDataType = '';
-    /**
-     * @var string[]
-     */
-    public $voterServices;
-    /**
-     * @var string
-     */
-    public $votingLocationFinderUrl;
-    /**
-     * @param string
-     */
-    public function setAbsenteeVotingInfoUrl($absenteeVotingInfoUrl)
+namespace Google\Service\CivicInfo {
+    class AdministrativeBody extends \Google\Collection
     {
+        protected $collection_key = 'voter_services';
+        protected $internal_gapi_mappings = ["voterServices" => "voter_services"];
+        /**
+         * @var string
+         */
+        public $absenteeVotingInfoUrl;
+        /**
+         * @var string
+         */
+        public $ballotInfoUrl;
+        protected $correspondenceAddressType = SimpleAddressType::class;
+        protected $correspondenceAddressDataType = '';
+        /**
+         * @var string
+         */
+        public $electionInfoUrl;
+        /**
+         * @var string
+         */
+        public $electionNoticeText;
+        /**
+         * @var string
+         */
+        public $electionNoticeUrl;
+        protected $electionOfficialsType = ElectionOfficial::class;
+        protected $electionOfficialsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $electionRegistrationConfirmationUrl;
+        /**
+         * @var string
+         */
+        public $electionRegistrationUrl;
+        /**
+         * @var string
+         */
+        public $electionRulesUrl;
+        /**
+         * @var string
+         */
+        public $hoursOfOperation;
+        /**
+         * @var string
+         */
+        public $name;
+        protected $physicalAddressType = SimpleAddressType::class;
+        protected $physicalAddressDataType = '';
+        /**
+         * @var string[]
+         */
+        public $voterServices;
+        /**
+         * @var string
+         */
+        public $votingLocationFinderUrl;
+        /**
+         * @param string
+         */
+        public function setAbsenteeVotingInfoUrl($absenteeVotingInfoUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAbsenteeVotingInfoUrl()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setBallotInfoUrl($ballotInfoUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBallotInfoUrl()
+        {
+        }
+        /**
+         * @param SimpleAddressType
+         */
+        public function setCorrespondenceAddress(SimpleAddressType $correspondenceAddress)
+        {
+        }
+        /**
+         * @return SimpleAddressType
+         */
+        public function getCorrespondenceAddress()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setElectionInfoUrl($electionInfoUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getElectionInfoUrl()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setElectionNoticeText($electionNoticeText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getElectionNoticeText()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setElectionNoticeUrl($electionNoticeUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getElectionNoticeUrl()
+        {
+        }
+        /**
+         * @param ElectionOfficial[]
+         */
+        public function setElectionOfficials($electionOfficials)
+        {
+        }
+        /**
+         * @return ElectionOfficial[]
+         */
+        public function getElectionOfficials()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setElectionRegistrationConfirmationUrl($electionRegistrationConfirmationUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getElectionRegistrationConfirmationUrl()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setElectionRegistrationUrl($electionRegistrationUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getElectionRegistrationUrl()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setElectionRulesUrl($electionRulesUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getElectionRulesUrl()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setHoursOfOperation($hoursOfOperation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHoursOfOperation()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param SimpleAddressType
+         */
+        public function setPhysicalAddress(SimpleAddressType $physicalAddress)
+        {
+        }
+        /**
+         * @return SimpleAddressType
+         */
+        public function getPhysicalAddress()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setVoterServices($voterServices)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getVoterServices()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setVotingLocationFinderUrl($votingLocationFinderUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVotingLocationFinderUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CivicInfo\AdministrativeBody registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAbsenteeVotingInfoUrl()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setBallotInfoUrl($ballotInfoUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBallotInfoUrl()
-    {
-    }
-    /**
-     * @param SimpleAddressType
-     */
-    public function setCorrespondenceAddress(SimpleAddressType $correspondenceAddress)
-    {
-    }
-    /**
-     * @return SimpleAddressType
-     */
-    public function getCorrespondenceAddress()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setElectionInfoUrl($electionInfoUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getElectionInfoUrl()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setElectionNoticeText($electionNoticeText)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getElectionNoticeText()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setElectionNoticeUrl($electionNoticeUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getElectionNoticeUrl()
-    {
-    }
-    /**
-     * @param ElectionOfficial[]
-     */
-    public function setElectionOfficials($electionOfficials)
-    {
-    }
-    /**
-     * @return ElectionOfficial[]
-     */
-    public function getElectionOfficials()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setElectionRegistrationConfirmationUrl($electionRegistrationConfirmationUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getElectionRegistrationConfirmationUrl()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setElectionRegistrationUrl($electionRegistrationUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getElectionRegistrationUrl()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setElectionRulesUrl($electionRulesUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getElectionRulesUrl()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setHoursOfOperation($hoursOfOperation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHoursOfOperation()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param SimpleAddressType
-     */
-    public function setPhysicalAddress(SimpleAddressType $physicalAddress)
-    {
-    }
-    /**
-     * @return SimpleAddressType
-     */
-    public function getPhysicalAddress()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setVoterServices($voterServices)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getVoterServices()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setVotingLocationFinderUrl($votingLocationFinderUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVotingLocationFinderUrl()
+    class Google_Service_CivicInfo_AdministrativeBody extends \Google\Service\CivicInfo\AdministrativeBody
     {
     }
 }

@@ -21,64 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch\Resource;
-
-/**
- * The "datasources" collection of methods.
- * Typical usage is:
- *  <code>
- *   $cloudsearchService = new Google\Service\CloudSearch(...);
- *   $datasources = $cloudsearchService->indexing_datasources;
- *  </code>
- */
-class IndexingDatasources extends \Google\Service\Resource
-{
+namespace Google\Service\CloudSearch\Resource {
+    use Google\Service\CloudSearch\Operation;
+    use Google\Service\CloudSearch\Schema;
+    use Google\Service\CloudSearch\UpdateSchemaRequest;
     /**
-     * Deletes the schema of a data source. **Note:** This API requires an admin or
-     * service account to execute. (datasources.deleteSchema)
-     *
-     * @param string $name The name of the data source to delete Schema. Format:
-     * datasources/{source_id}
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool debugOptions.enableDebugging If you are asked by Google to
-     * help with debugging, set this field. Otherwise, ignore this field.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * The "datasources" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $cloudsearchService = new Google\Service\CloudSearch(...);
+     *   $datasources = $cloudsearchService->indexing_datasources;
+     *  </code>
      */
-    public function deleteSchema($name, $optParams = [])
+    class IndexingDatasources extends \Google\Service\Resource
     {
+        /**
+         * Deletes the schema of a data source. **Note:** This API requires an admin or
+         * service account to execute. (datasources.deleteSchema)
+         *
+         * @param string $name The name of the data source to delete Schema. Format:
+         * datasources/{source_id}
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool debugOptions.enableDebugging If you are asked by Google to
+         * help with debugging, set this field. Otherwise, ignore this field.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function deleteSchema($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets the schema of a data source. **Note:** This API requires an admin or
+         * service account to execute. (datasources.getSchema)
+         *
+         * @param string $name The name of the data source to get Schema. Format:
+         * datasources/{source_id}
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool debugOptions.enableDebugging If you are asked by Google to
+         * help with debugging, set this field. Otherwise, ignore this field.
+         * @return Schema
+         * @throws \Google\Service\Exception
+         */
+        public function getSchema($name, $optParams = [])
+        {
+        }
+        /**
+         * Updates the schema of a data source. This method does not perform incremental
+         * updates to the schema. Instead, this method updates the schema by overwriting
+         * the entire schema. **Note:** This API requires an admin or service account to
+         * execute. (datasources.updateSchema)
+         *
+         * @param string $name The name of the data source to update Schema. Format:
+         * datasources/{source_id}
+         * @param UpdateSchemaRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function updateSchema($name, UpdateSchemaRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets the schema of a data source. **Note:** This API requires an admin or
-     * service account to execute. (datasources.getSchema)
-     *
-     * @param string $name The name of the data source to get Schema. Format:
-     * datasources/{source_id}
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool debugOptions.enableDebugging If you are asked by Google to
-     * help with debugging, set this field. Otherwise, ignore this field.
-     * @return Schema
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\CloudSearch\Resource\IndexingDatasources registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSchema($name, $optParams = [])
-    {
-    }
-    /**
-     * Updates the schema of a data source. This method does not perform incremental
-     * updates to the schema. Instead, this method updates the schema by overwriting
-     * the entire schema. **Note:** This API requires an admin or service account to
-     * execute. (datasources.updateSchema)
-     *
-     * @param string $name The name of the data source to update Schema. Format:
-     * datasources/{source_id}
-     * @param UpdateSchemaRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
-     */
-    public function updateSchema($name, UpdateSchemaRequest $postBody, $optParams = [])
+    class Google_Service_CloudSearch_Resource_IndexingDatasources extends \Google\Service\CloudSearch\Resource\IndexingDatasources
     {
     }
 }

@@ -21,179 +21,200 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher\Resource;
-
-/**
- * The "offers" collection of methods.
- * Typical usage is:
- *  <code>
- *   $androidpublisherService = new Google\Service\AndroidPublisher(...);
- *   $offers = $androidpublisherService->monetization_onetimeproducts_purchaseOptions_offers;
- *  </code>
- */
-class MonetizationOnetimeproductsPurchaseOptionsOffers extends \Google\Service\Resource
-{
+namespace Google\Service\AndroidPublisher\Resource {
+    use Google\Service\AndroidPublisher\ActivateOneTimeProductOfferRequest;
+    use Google\Service\AndroidPublisher\BatchDeleteOneTimeProductOffersRequest;
+    use Google\Service\AndroidPublisher\BatchGetOneTimeProductOffersRequest;
+    use Google\Service\AndroidPublisher\BatchGetOneTimeProductOffersResponse;
+    use Google\Service\AndroidPublisher\BatchUpdateOneTimeProductOfferStatesRequest;
+    use Google\Service\AndroidPublisher\BatchUpdateOneTimeProductOfferStatesResponse;
+    use Google\Service\AndroidPublisher\BatchUpdateOneTimeProductOffersRequest;
+    use Google\Service\AndroidPublisher\BatchUpdateOneTimeProductOffersResponse;
+    use Google\Service\AndroidPublisher\CancelOneTimeProductOfferRequest;
+    use Google\Service\AndroidPublisher\DeactivateOneTimeProductOfferRequest;
+    use Google\Service\AndroidPublisher\ListOneTimeProductOffersResponse;
+    use Google\Service\AndroidPublisher\OneTimeProductOffer;
     /**
-     * Activates a one-time product offer. (offers.activate)
-     *
-     * @param string $packageName Required. The parent app (package name) of the
-     * offer to activate.
-     * @param string $productId Required. The parent one-time product (ID) of the
-     * offer to activate.
-     * @param string $purchaseOptionId Required. The parent purchase option (ID) of
-     * the offer to activate.
-     * @param string $offerId Required. The offer ID of the offer to activate.
-     * @param ActivateOneTimeProductOfferRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return OneTimeProductOffer
-     * @throws \Google\Service\Exception
+     * The "offers" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $androidpublisherService = new Google\Service\AndroidPublisher(...);
+     *   $offers = $androidpublisherService->monetization_onetimeproducts_purchaseOptions_offers;
+     *  </code>
      */
-    public function activate($packageName, $productId, $purchaseOptionId, $offerId, ActivateOneTimeProductOfferRequest $postBody, $optParams = [])
+    class MonetizationOnetimeproductsPurchaseOptionsOffers extends \Google\Service\Resource
     {
+        /**
+         * Activates a one-time product offer. (offers.activate)
+         *
+         * @param string $packageName Required. The parent app (package name) of the
+         * offer to activate.
+         * @param string $productId Required. The parent one-time product (ID) of the
+         * offer to activate.
+         * @param string $purchaseOptionId Required. The parent purchase option (ID) of
+         * the offer to activate.
+         * @param string $offerId Required. The offer ID of the offer to activate.
+         * @param ActivateOneTimeProductOfferRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return OneTimeProductOffer
+         * @throws \Google\Service\Exception
+         */
+        public function activate($packageName, $productId, $purchaseOptionId, $offerId, ActivateOneTimeProductOfferRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes one or more one-time product offers. (offers.batchDelete)
+         *
+         * @param string $packageName Required. The parent app (package name) of the
+         * offers to delete. Must be equal to the package_name field on all the
+         * OneTimeProductOffer resources.
+         * @param string $productId Required. The product ID of the parent one-time
+         * product, if all offers to delete belong to the same product. If this request
+         * spans multiple one-time products, set this field to "-".
+         * @param string $purchaseOptionId Required. The parent purchase option (ID) for
+         * which the offers should be deleted. May be specified as '-' to update offers
+         * from multiple purchase options.
+         * @param BatchDeleteOneTimeProductOffersRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function batchDelete($packageName, $productId, $purchaseOptionId, BatchDeleteOneTimeProductOffersRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Reads one or more one-time product offers. (offers.batchGet)
+         *
+         * @param string $packageName Required. The parent app (package name) of the
+         * updated offers. Must be equal to the package_name field on all the updated
+         * OneTimeProductOffer resources.
+         * @param string $productId Required. The product ID of the parent one-time
+         * product, if all updated offers belong to the same product. If this request
+         * spans multiple one-time products, set this field to "-".
+         * @param string $purchaseOptionId Required. The parent purchase option (ID) for
+         * which the offers should be updated. May be specified as '-' to update offers
+         * from multiple purchase options.
+         * @param BatchGetOneTimeProductOffersRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return BatchGetOneTimeProductOffersResponse
+         * @throws \Google\Service\Exception
+         */
+        public function batchGet($packageName, $productId, $purchaseOptionId, BatchGetOneTimeProductOffersRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Creates or updates one or more one-time product offers. (offers.batchUpdate)
+         *
+         * @param string $packageName Required. The parent app (package name) of the
+         * updated offers. Must be equal to the package_name field on all the updated
+         * OneTimeProductOffer resources.
+         * @param string $productId Required. The product ID of the parent one-time
+         * product, if all updated offers belong to the same product. If this request
+         * spans multiple one-time products, set this field to "-".
+         * @param string $purchaseOptionId Required. The parent purchase option (ID) for
+         * which the offers should be updated. May be specified as '-' to update offers
+         * from multiple purchase options.
+         * @param BatchUpdateOneTimeProductOffersRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return BatchUpdateOneTimeProductOffersResponse
+         * @throws \Google\Service\Exception
+         */
+        public function batchUpdate($packageName, $productId, $purchaseOptionId, BatchUpdateOneTimeProductOffersRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Updates a batch of one-time product offer states. (offers.batchUpdateStates)
+         *
+         * @param string $packageName Required. The parent app (package name) of the
+         * updated one-time product offers.
+         * @param string $productId Required. The product ID of the parent one-time
+         * product, if all updated offers belong to the same one-time product. If this
+         * batch update spans multiple one-time products, set this field to "-".
+         * @param string $purchaseOptionId Required. The purchase option ID of the
+         * parent purchase option, if all updated offers belong to the same purchase
+         * option. If this batch update spans multiple purchase options, set this field
+         * to "-".
+         * @param BatchUpdateOneTimeProductOfferStatesRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return BatchUpdateOneTimeProductOfferStatesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function batchUpdateStates($packageName, $productId, $purchaseOptionId, BatchUpdateOneTimeProductOfferStatesRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Cancels a one-time product offer. (offers.cancel)
+         *
+         * @param string $packageName Required. The parent app (package name) of the
+         * offer to cancel.
+         * @param string $productId Required. The parent one-time product (ID) of the
+         * offer to cancel.
+         * @param string $purchaseOptionId Required. The parent purchase option (ID) of
+         * the offer to cancel.
+         * @param string $offerId Required. The offer ID of the offer to cancel.
+         * @param CancelOneTimeProductOfferRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return OneTimeProductOffer
+         * @throws \Google\Service\Exception
+         */
+        public function cancel($packageName, $productId, $purchaseOptionId, $offerId, CancelOneTimeProductOfferRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deactivates a one-time product offer. (offers.deactivate)
+         *
+         * @param string $packageName Required. The parent app (package name) of the
+         * offer to deactivate.
+         * @param string $productId Required. The parent one-time product (ID) of the
+         * offer to deactivate.
+         * @param string $purchaseOptionId Required. The parent purchase option (ID) of
+         * the offer to deactivate.
+         * @param string $offerId Required. The offer ID of the offer to deactivate.
+         * @param DeactivateOneTimeProductOfferRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return OneTimeProductOffer
+         * @throws \Google\Service\Exception
+         */
+        public function deactivate($packageName, $productId, $purchaseOptionId, $offerId, DeactivateOneTimeProductOfferRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Lists all offers under a given app, product, or purchase option.
+         * (offers.listMonetizationOnetimeproductsPurchaseOptionsOffers)
+         *
+         * @param string $packageName Required. The parent app (package name) for which
+         * the offers should be read.
+         * @param string $productId Required. The parent one-time product (ID) for which
+         * the offers should be read. May be specified as '-' to read all offers under
+         * an app.
+         * @param string $purchaseOptionId Required. The parent purchase option (ID) for
+         * which the offers should be read. May be specified as '-' to read all offers
+         * under a one-time product or an app. Must be specified as '-' if product_id is
+         * specified as '-'.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Optional. The maximum number of offers to return. The
+         * service may return fewer than this value. If unspecified, at most 50 offers
+         * will be returned. The maximum value is 1000; values above 1000 will be
+         * coerced to 1000.
+         * @opt_param string pageToken Optional. A page token, received from a previous
+         * `ListOneTimeProductsOffers` call. Provide this to retrieve the subsequent
+         * page. When paginating, product_id, package_name and purchase_option_id
+         * provided to `ListOneTimeProductsOffersRequest` must match the call that
+         * provided the page token.
+         * @return ListOneTimeProductOffersResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listMonetizationOnetimeproductsPurchaseOptionsOffers($packageName, $productId, $purchaseOptionId, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes one or more one-time product offers. (offers.batchDelete)
-     *
-     * @param string $packageName Required. The parent app (package name) of the
-     * offers to delete. Must be equal to the package_name field on all the
-     * OneTimeProductOffer resources.
-     * @param string $productId Required. The product ID of the parent one-time
-     * product, if all offers to delete belong to the same product. If this request
-     * spans multiple one-time products, set this field to "-".
-     * @param string $purchaseOptionId Required. The parent purchase option (ID) for
-     * which the offers should be deleted. May be specified as '-' to update offers
-     * from multiple purchase options.
-     * @param BatchDeleteOneTimeProductOffersRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\AndroidPublisher\Resource\MonetizationOnetimeproductsPurchaseOptionsOffers registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function batchDelete($packageName, $productId, $purchaseOptionId, BatchDeleteOneTimeProductOffersRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Reads one or more one-time product offers. (offers.batchGet)
-     *
-     * @param string $packageName Required. The parent app (package name) of the
-     * updated offers. Must be equal to the package_name field on all the updated
-     * OneTimeProductOffer resources.
-     * @param string $productId Required. The product ID of the parent one-time
-     * product, if all updated offers belong to the same product. If this request
-     * spans multiple one-time products, set this field to "-".
-     * @param string $purchaseOptionId Required. The parent purchase option (ID) for
-     * which the offers should be updated. May be specified as '-' to update offers
-     * from multiple purchase options.
-     * @param BatchGetOneTimeProductOffersRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return BatchGetOneTimeProductOffersResponse
-     * @throws \Google\Service\Exception
-     */
-    public function batchGet($packageName, $productId, $purchaseOptionId, BatchGetOneTimeProductOffersRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Creates or updates one or more one-time product offers. (offers.batchUpdate)
-     *
-     * @param string $packageName Required. The parent app (package name) of the
-     * updated offers. Must be equal to the package_name field on all the updated
-     * OneTimeProductOffer resources.
-     * @param string $productId Required. The product ID of the parent one-time
-     * product, if all updated offers belong to the same product. If this request
-     * spans multiple one-time products, set this field to "-".
-     * @param string $purchaseOptionId Required. The parent purchase option (ID) for
-     * which the offers should be updated. May be specified as '-' to update offers
-     * from multiple purchase options.
-     * @param BatchUpdateOneTimeProductOffersRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return BatchUpdateOneTimeProductOffersResponse
-     * @throws \Google\Service\Exception
-     */
-    public function batchUpdate($packageName, $productId, $purchaseOptionId, BatchUpdateOneTimeProductOffersRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Updates a batch of one-time product offer states. (offers.batchUpdateStates)
-     *
-     * @param string $packageName Required. The parent app (package name) of the
-     * updated one-time product offers.
-     * @param string $productId Required. The product ID of the parent one-time
-     * product, if all updated offers belong to the same one-time product. If this
-     * batch update spans multiple one-time products, set this field to "-".
-     * @param string $purchaseOptionId Required. The purchase option ID of the
-     * parent purchase option, if all updated offers belong to the same purchase
-     * option. If this batch update spans multiple purchase options, set this field
-     * to "-".
-     * @param BatchUpdateOneTimeProductOfferStatesRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return BatchUpdateOneTimeProductOfferStatesResponse
-     * @throws \Google\Service\Exception
-     */
-    public function batchUpdateStates($packageName, $productId, $purchaseOptionId, BatchUpdateOneTimeProductOfferStatesRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Cancels a one-time product offer. (offers.cancel)
-     *
-     * @param string $packageName Required. The parent app (package name) of the
-     * offer to cancel.
-     * @param string $productId Required. The parent one-time product (ID) of the
-     * offer to cancel.
-     * @param string $purchaseOptionId Required. The parent purchase option (ID) of
-     * the offer to cancel.
-     * @param string $offerId Required. The offer ID of the offer to cancel.
-     * @param CancelOneTimeProductOfferRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return OneTimeProductOffer
-     * @throws \Google\Service\Exception
-     */
-    public function cancel($packageName, $productId, $purchaseOptionId, $offerId, CancelOneTimeProductOfferRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Deactivates a one-time product offer. (offers.deactivate)
-     *
-     * @param string $packageName Required. The parent app (package name) of the
-     * offer to deactivate.
-     * @param string $productId Required. The parent one-time product (ID) of the
-     * offer to deactivate.
-     * @param string $purchaseOptionId Required. The parent purchase option (ID) of
-     * the offer to deactivate.
-     * @param string $offerId Required. The offer ID of the offer to deactivate.
-     * @param DeactivateOneTimeProductOfferRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return OneTimeProductOffer
-     * @throws \Google\Service\Exception
-     */
-    public function deactivate($packageName, $productId, $purchaseOptionId, $offerId, DeactivateOneTimeProductOfferRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Lists all offers under a given app, product, or purchase option.
-     * (offers.listMonetizationOnetimeproductsPurchaseOptionsOffers)
-     *
-     * @param string $packageName Required. The parent app (package name) for which
-     * the offers should be read.
-     * @param string $productId Required. The parent one-time product (ID) for which
-     * the offers should be read. May be specified as '-' to read all offers under
-     * an app.
-     * @param string $purchaseOptionId Required. The parent purchase option (ID) for
-     * which the offers should be read. May be specified as '-' to read all offers
-     * under a one-time product or an app. Must be specified as '-' if product_id is
-     * specified as '-'.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Optional. The maximum number of offers to return. The
-     * service may return fewer than this value. If unspecified, at most 50 offers
-     * will be returned. The maximum value is 1000; values above 1000 will be
-     * coerced to 1000.
-     * @opt_param string pageToken Optional. A page token, received from a previous
-     * `ListOneTimeProductsOffers` call. Provide this to retrieve the subsequent
-     * page. When paginating, product_id, package_name and purchase_option_id
-     * provided to `ListOneTimeProductsOffersRequest` must match the call that
-     * provided the page token.
-     * @return ListOneTimeProductOffersResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listMonetizationOnetimeproductsPurchaseOptionsOffers($packageName, $productId, $purchaseOptionId, $optParams = [])
+    class Google_Service_AndroidPublisher_Resource_MonetizationOnetimeproductsPurchaseOptionsOffers extends \Google\Service\AndroidPublisher\Resource\MonetizationOnetimeproductsPurchaseOptionsOffers
     {
     }
 }

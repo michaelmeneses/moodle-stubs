@@ -21,87 +21,96 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class NonSdkApiInsight extends \Google\Collection
-{
-    protected $collection_key = 'exampleTraceMessages';
-    /**
-     * Optional sample stack traces, for which this insight applies (there should
-     * be at least one).
-     *
-     * @var string[]
-     */
-    public $exampleTraceMessages;
-    /**
-     * A unique ID, to be used for determining the effectiveness of this
-     * particular insight in the context of a matcher. (required)
-     *
-     * @var string
-     */
-    public $matcherId;
-    protected $pendingGoogleUpdateInsightType = PendingGoogleUpdateInsight::class;
-    protected $pendingGoogleUpdateInsightDataType = '';
-    protected $upgradeInsightType = UpgradeInsight::class;
-    protected $upgradeInsightDataType = '';
-    /**
-     * Optional sample stack traces, for which this insight applies (there should
-     * be at least one).
-     *
-     * @param string[] $exampleTraceMessages
-     */
-    public function setExampleTraceMessages($exampleTraceMessages)
+namespace Google\Service\ToolResults {
+    class NonSdkApiInsight extends \Google\Collection
     {
+        protected $collection_key = 'exampleTraceMessages';
+        /**
+         * Optional sample stack traces, for which this insight applies (there should
+         * be at least one).
+         *
+         * @var string[]
+         */
+        public $exampleTraceMessages;
+        /**
+         * A unique ID, to be used for determining the effectiveness of this
+         * particular insight in the context of a matcher. (required)
+         *
+         * @var string
+         */
+        public $matcherId;
+        protected $pendingGoogleUpdateInsightType = PendingGoogleUpdateInsight::class;
+        protected $pendingGoogleUpdateInsightDataType = '';
+        protected $upgradeInsightType = UpgradeInsight::class;
+        protected $upgradeInsightDataType = '';
+        /**
+         * Optional sample stack traces, for which this insight applies (there should
+         * be at least one).
+         *
+         * @param string[] $exampleTraceMessages
+         */
+        public function setExampleTraceMessages($exampleTraceMessages)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getExampleTraceMessages()
+        {
+        }
+        /**
+         * A unique ID, to be used for determining the effectiveness of this
+         * particular insight in the context of a matcher. (required)
+         *
+         * @param string $matcherId
+         */
+        public function setMatcherId($matcherId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMatcherId()
+        {
+        }
+        /**
+         * An insight indicating that the hidden API usage originates from a Google-
+         * provided library.
+         *
+         * @param PendingGoogleUpdateInsight $pendingGoogleUpdateInsight
+         */
+        public function setPendingGoogleUpdateInsight(PendingGoogleUpdateInsight $pendingGoogleUpdateInsight)
+        {
+        }
+        /**
+         * @return PendingGoogleUpdateInsight
+         */
+        public function getPendingGoogleUpdateInsight()
+        {
+        }
+        /**
+         * An insight indicating that the hidden API usage originates from the use of
+         * a library that needs to be upgraded.
+         *
+         * @param UpgradeInsight $upgradeInsight
+         */
+        public function setUpgradeInsight(UpgradeInsight $upgradeInsight)
+        {
+        }
+        /**
+         * @return UpgradeInsight
+         */
+        public function getUpgradeInsight()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\ToolResults\NonSdkApiInsight registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExampleTraceMessages()
-    {
-    }
-    /**
-     * A unique ID, to be used for determining the effectiveness of this
-     * particular insight in the context of a matcher. (required)
-     *
-     * @param string $matcherId
-     */
-    public function setMatcherId($matcherId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMatcherId()
-    {
-    }
-    /**
-     * An insight indicating that the hidden API usage originates from a Google-
-     * provided library.
-     *
-     * @param PendingGoogleUpdateInsight $pendingGoogleUpdateInsight
-     */
-    public function setPendingGoogleUpdateInsight(PendingGoogleUpdateInsight $pendingGoogleUpdateInsight)
-    {
-    }
-    /**
-     * @return PendingGoogleUpdateInsight
-     */
-    public function getPendingGoogleUpdateInsight()
-    {
-    }
-    /**
-     * An insight indicating that the hidden API usage originates from the use of
-     * a library that needs to be upgraded.
-     *
-     * @param UpgradeInsight $upgradeInsight
-     */
-    public function setUpgradeInsight(UpgradeInsight $upgradeInsight)
-    {
-    }
-    /**
-     * @return UpgradeInsight
-     */
-    public function getUpgradeInsight()
+    class Google_Service_ToolResults_NonSdkApiInsight extends \Google\Service\ToolResults\NonSdkApiInsight
     {
     }
 }

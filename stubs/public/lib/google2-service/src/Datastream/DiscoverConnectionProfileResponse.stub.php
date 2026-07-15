@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class DiscoverConnectionProfileResponse extends \Google\Model
-{
-    protected $mongodbClusterType = MongodbCluster::class;
-    protected $mongodbClusterDataType = '';
-    protected $mysqlRdbmsType = MysqlRdbms::class;
-    protected $mysqlRdbmsDataType = '';
-    protected $oracleRdbmsType = OracleRdbms::class;
-    protected $oracleRdbmsDataType = '';
-    protected $postgresqlRdbmsType = PostgresqlRdbms::class;
-    protected $postgresqlRdbmsDataType = '';
-    protected $salesforceOrgType = SalesforceOrg::class;
-    protected $salesforceOrgDataType = '';
-    protected $sqlServerRdbmsType = SqlServerRdbms::class;
-    protected $sqlServerRdbmsDataType = '';
-    /**
-     * Enriched MongoDB cluster.
-     *
-     * @param MongodbCluster $mongodbCluster
-     */
-    public function setMongodbCluster(MongodbCluster $mongodbCluster)
+namespace Google\Service\Datastream {
+    class DiscoverConnectionProfileResponse extends \Google\Model
     {
+        protected $mongodbClusterType = MongodbCluster::class;
+        protected $mongodbClusterDataType = '';
+        protected $mysqlRdbmsType = MysqlRdbms::class;
+        protected $mysqlRdbmsDataType = '';
+        protected $oracleRdbmsType = OracleRdbms::class;
+        protected $oracleRdbmsDataType = '';
+        protected $postgresqlRdbmsType = PostgresqlRdbms::class;
+        protected $postgresqlRdbmsDataType = '';
+        protected $salesforceOrgType = SalesforceOrg::class;
+        protected $salesforceOrgDataType = '';
+        protected $sqlServerRdbmsType = SqlServerRdbms::class;
+        protected $sqlServerRdbmsDataType = '';
+        /**
+         * Enriched MongoDB cluster.
+         *
+         * @param MongodbCluster $mongodbCluster
+         */
+        public function setMongodbCluster(MongodbCluster $mongodbCluster)
+        {
+        }
+        /**
+         * @return MongodbCluster
+         */
+        public function getMongodbCluster()
+        {
+        }
+        /**
+         * Enriched MySQL RDBMS object.
+         *
+         * @param MysqlRdbms $mysqlRdbms
+         */
+        public function setMysqlRdbms(MysqlRdbms $mysqlRdbms)
+        {
+        }
+        /**
+         * @return MysqlRdbms
+         */
+        public function getMysqlRdbms()
+        {
+        }
+        /**
+         * Enriched Oracle RDBMS object.
+         *
+         * @param OracleRdbms $oracleRdbms
+         */
+        public function setOracleRdbms(OracleRdbms $oracleRdbms)
+        {
+        }
+        /**
+         * @return OracleRdbms
+         */
+        public function getOracleRdbms()
+        {
+        }
+        /**
+         * Enriched PostgreSQL RDBMS object.
+         *
+         * @param PostgresqlRdbms $postgresqlRdbms
+         */
+        public function setPostgresqlRdbms(PostgresqlRdbms $postgresqlRdbms)
+        {
+        }
+        /**
+         * @return PostgresqlRdbms
+         */
+        public function getPostgresqlRdbms()
+        {
+        }
+        /**
+         * Enriched Salesforce organization.
+         *
+         * @param SalesforceOrg $salesforceOrg
+         */
+        public function setSalesforceOrg(SalesforceOrg $salesforceOrg)
+        {
+        }
+        /**
+         * @return SalesforceOrg
+         */
+        public function getSalesforceOrg()
+        {
+        }
+        /**
+         * Enriched SQLServer RDBMS object.
+         *
+         * @param SqlServerRdbms $sqlServerRdbms
+         */
+        public function setSqlServerRdbms(SqlServerRdbms $sqlServerRdbms)
+        {
+        }
+        /**
+         * @return SqlServerRdbms
+         */
+        public function getSqlServerRdbms()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MongodbCluster
+     * Runtime class alias of \Google\Service\Datastream\DiscoverConnectionProfileResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMongodbCluster()
-    {
-    }
-    /**
-     * Enriched MySQL RDBMS object.
-     *
-     * @param MysqlRdbms $mysqlRdbms
-     */
-    public function setMysqlRdbms(MysqlRdbms $mysqlRdbms)
-    {
-    }
-    /**
-     * @return MysqlRdbms
-     */
-    public function getMysqlRdbms()
-    {
-    }
-    /**
-     * Enriched Oracle RDBMS object.
-     *
-     * @param OracleRdbms $oracleRdbms
-     */
-    public function setOracleRdbms(OracleRdbms $oracleRdbms)
-    {
-    }
-    /**
-     * @return OracleRdbms
-     */
-    public function getOracleRdbms()
-    {
-    }
-    /**
-     * Enriched PostgreSQL RDBMS object.
-     *
-     * @param PostgresqlRdbms $postgresqlRdbms
-     */
-    public function setPostgresqlRdbms(PostgresqlRdbms $postgresqlRdbms)
-    {
-    }
-    /**
-     * @return PostgresqlRdbms
-     */
-    public function getPostgresqlRdbms()
-    {
-    }
-    /**
-     * Enriched Salesforce organization.
-     *
-     * @param SalesforceOrg $salesforceOrg
-     */
-    public function setSalesforceOrg(SalesforceOrg $salesforceOrg)
-    {
-    }
-    /**
-     * @return SalesforceOrg
-     */
-    public function getSalesforceOrg()
-    {
-    }
-    /**
-     * Enriched SQLServer RDBMS object.
-     *
-     * @param SqlServerRdbms $sqlServerRdbms
-     */
-    public function setSqlServerRdbms(SqlServerRdbms $sqlServerRdbms)
-    {
-    }
-    /**
-     * @return SqlServerRdbms
-     */
-    public function getSqlServerRdbms()
+    class Google_Service_Datastream_DiscoverConnectionProfileResponse extends \Google\Service\Datastream\DiscoverConnectionProfileResponse
     {
     }
 }

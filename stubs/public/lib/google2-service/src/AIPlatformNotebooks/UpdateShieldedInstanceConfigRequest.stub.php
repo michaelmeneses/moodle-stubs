@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AIPlatformNotebooks;
-
-class UpdateShieldedInstanceConfigRequest extends \Google\Model
-{
-    protected $shieldedInstanceConfigType = ShieldedInstanceConfig::class;
-    protected $shieldedInstanceConfigDataType = '';
-    public $shieldedInstanceConfig;
-    /**
-     * @param ShieldedInstanceConfig
-     */
-    public function setShieldedInstanceConfig(ShieldedInstanceConfig $shieldedInstanceConfig)
+namespace Google\Service\AIPlatformNotebooks {
+    class UpdateShieldedInstanceConfigRequest extends \Google\Model
     {
+        protected $shieldedInstanceConfigType = ShieldedInstanceConfig::class;
+        protected $shieldedInstanceConfigDataType = '';
+        public $shieldedInstanceConfig;
+        /**
+         * @param ShieldedInstanceConfig
+         */
+        public function setShieldedInstanceConfig(ShieldedInstanceConfig $shieldedInstanceConfig)
+        {
+        }
+        /**
+         * @return ShieldedInstanceConfig
+         */
+        public function getShieldedInstanceConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ShieldedInstanceConfig
+     * Runtime class alias of \Google\Service\AIPlatformNotebooks\UpdateShieldedInstanceConfigRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getShieldedInstanceConfig()
+    class Google_Service_AIPlatformNotebooks_UpdateShieldedInstanceConfigRequest extends \Google\Service\AIPlatformNotebooks\UpdateShieldedInstanceConfigRequest
     {
     }
 }

@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceUsage;
-
-class Http extends \Google\Collection
-{
-    protected $collection_key = 'rules';
-    /**
-     * When set to true, URL path parameters will be fully URI-decoded except in
-     * cases of single segment matches in reserved expansion, where "%2F" will be
-     * left encoded. The default behavior is to not decode RFC 6570 reserved
-     * characters in multi segment matches.
-     *
-     * @var bool
-     */
-    public $fullyDecodeReservedExpansion;
-    protected $rulesType = HttpRule::class;
-    protected $rulesDataType = 'array';
-    /**
-     * When set to true, URL path parameters will be fully URI-decoded except in
-     * cases of single segment matches in reserved expansion, where "%2F" will be
-     * left encoded. The default behavior is to not decode RFC 6570 reserved
-     * characters in multi segment matches.
-     *
-     * @param bool $fullyDecodeReservedExpansion
-     */
-    public function setFullyDecodeReservedExpansion($fullyDecodeReservedExpansion)
+namespace Google\Service\ServiceUsage {
+    class Http extends \Google\Collection
     {
+        protected $collection_key = 'rules';
+        /**
+         * When set to true, URL path parameters will be fully URI-decoded except in
+         * cases of single segment matches in reserved expansion, where "%2F" will be
+         * left encoded. The default behavior is to not decode RFC 6570 reserved
+         * characters in multi segment matches.
+         *
+         * @var bool
+         */
+        public $fullyDecodeReservedExpansion;
+        protected $rulesType = HttpRule::class;
+        protected $rulesDataType = 'array';
+        /**
+         * When set to true, URL path parameters will be fully URI-decoded except in
+         * cases of single segment matches in reserved expansion, where "%2F" will be
+         * left encoded. The default behavior is to not decode RFC 6570 reserved
+         * characters in multi segment matches.
+         *
+         * @param bool $fullyDecodeReservedExpansion
+         */
+        public function setFullyDecodeReservedExpansion($fullyDecodeReservedExpansion)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getFullyDecodeReservedExpansion()
+        {
+        }
+        /**
+         * A list of HTTP configuration rules that apply to individual API methods.
+         * **NOTE:** All service configuration rules follow "last one wins" order.
+         *
+         * @param HttpRule[] $rules
+         */
+        public function setRules($rules)
+        {
+        }
+        /**
+         * @return HttpRule[]
+         */
+        public function getRules()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\ServiceUsage\Http registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFullyDecodeReservedExpansion()
-    {
-    }
-    /**
-     * A list of HTTP configuration rules that apply to individual API methods.
-     * **NOTE:** All service configuration rules follow "last one wins" order.
-     *
-     * @param HttpRule[] $rules
-     */
-    public function setRules($rules)
-    {
-    }
-    /**
-     * @return HttpRule[]
-     */
-    public function getRules()
+    class Google_Service_ServiceUsage_Http extends \Google\Service\ServiceUsage\Http
     {
     }
 }

@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1AddonConfig extends \Google\Model
-{
-    protected $allDataAddonConfigType = GoogleCloudApihubV1AllDataAddonConfig::class;
-    protected $allDataAddonConfigDataType = '';
-    protected $gatewayPluginAddonConfigType = GoogleCloudApihubV1GatewayPluginAddonConfig::class;
-    protected $gatewayPluginAddonConfigDataType = '';
-    /**
-     * Configuration for addons which act on all data in the API hub.
-     *
-     * @param GoogleCloudApihubV1AllDataAddonConfig $allDataAddonConfig
-     */
-    public function setAllDataAddonConfig(GoogleCloudApihubV1AllDataAddonConfig $allDataAddonConfig)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1AddonConfig extends \Google\Model
     {
+        protected $allDataAddonConfigType = GoogleCloudApihubV1AllDataAddonConfig::class;
+        protected $allDataAddonConfigDataType = '';
+        protected $gatewayPluginAddonConfigType = GoogleCloudApihubV1GatewayPluginAddonConfig::class;
+        protected $gatewayPluginAddonConfigDataType = '';
+        /**
+         * Configuration for addons which act on all data in the API hub.
+         *
+         * @param GoogleCloudApihubV1AllDataAddonConfig $allDataAddonConfig
+         */
+        public function setAllDataAddonConfig(GoogleCloudApihubV1AllDataAddonConfig $allDataAddonConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1AllDataAddonConfig
+         */
+        public function getAllDataAddonConfig()
+        {
+        }
+        /**
+         * Configuration for gateway plugin addons.
+         *
+         * @param GoogleCloudApihubV1GatewayPluginAddonConfig $gatewayPluginAddonConfig
+         */
+        public function setGatewayPluginAddonConfig(GoogleCloudApihubV1GatewayPluginAddonConfig $gatewayPluginAddonConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1GatewayPluginAddonConfig
+         */
+        public function getGatewayPluginAddonConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApihubV1AllDataAddonConfig
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1AddonConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllDataAddonConfig()
-    {
-    }
-    /**
-     * Configuration for gateway plugin addons.
-     *
-     * @param GoogleCloudApihubV1GatewayPluginAddonConfig $gatewayPluginAddonConfig
-     */
-    public function setGatewayPluginAddonConfig(GoogleCloudApihubV1GatewayPluginAddonConfig $gatewayPluginAddonConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudApihubV1GatewayPluginAddonConfig
-     */
-    public function getGatewayPluginAddonConfig()
+    class Google_Service_APIhub_GoogleCloudApihubV1AddonConfig extends \Google\Service\APIhub\GoogleCloudApihubV1AddonConfig
     {
     }
 }

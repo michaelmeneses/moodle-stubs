@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Classroom;
-
-class ModifyAttachmentsRequest extends \Google\Collection
-{
-    protected $collection_key = 'addAttachments';
-    protected $addAttachmentsType = Attachment::class;
-    protected $addAttachmentsDataType = 'array';
-    /**
-     * Attachments to add. A student submission may not have more than 20
-     * attachments. Form attachments are not supported.
-     *
-     * @param Attachment[] $addAttachments
-     */
-    public function setAddAttachments($addAttachments)
+namespace Google\Service\Classroom {
+    class ModifyAttachmentsRequest extends \Google\Collection
     {
+        protected $collection_key = 'addAttachments';
+        protected $addAttachmentsType = Attachment::class;
+        protected $addAttachmentsDataType = 'array';
+        /**
+         * Attachments to add. A student submission may not have more than 20
+         * attachments. Form attachments are not supported.
+         *
+         * @param Attachment[] $addAttachments
+         */
+        public function setAddAttachments($addAttachments)
+        {
+        }
+        /**
+         * @return Attachment[]
+         */
+        public function getAddAttachments()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Attachment[]
+     * Runtime class alias of \Google\Service\Classroom\ModifyAttachmentsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddAttachments()
+    class Google_Service_Classroom_ModifyAttachmentsRequest extends \Google\Service\Classroom\ModifyAttachmentsRequest
     {
     }
 }

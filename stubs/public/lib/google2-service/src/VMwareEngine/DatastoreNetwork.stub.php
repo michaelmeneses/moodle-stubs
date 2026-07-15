@@ -21,110 +21,119 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMwareEngine;
-
-class DatastoreNetwork extends \Google\Model
-{
-    /**
-     * Optional. The number of connections of the NFS volume. Spported from
-     * vsphere 8.0u1
-     *
-     * @var int
-     */
-    public $connectionCount;
-    /**
-     * Optional. The Maximal Transmission Unit (MTU) of the datastore. System sets
-     * default MTU size. It prefers the VPC peering MTU, falling back to the VEN
-     * MTU if no peering MTU is found. when detected, and falling back to the VEN
-     * MTU otherwise.
-     *
-     * @var int
-     */
-    public $mtu;
-    /**
-     * Output only. The resource name of the network peering, used to access the
-     * file share by clients on private cloud. Resource names are schemeless URIs
-     * that follow the conventions in
-     * https://cloud.google.com/apis/design/resource_names. e.g. projects/my-
-     * project/locations/us-central1/networkPeerings/my-network-peering
-     *
-     * @var string
-     */
-    public $networkPeering;
-    /**
-     * Required. The resource name of the subnet Resource names are schemeless
-     * URIs that follow the conventions in
-     * https://cloud.google.com/apis/design/resource_names. e.g. projects/my-
-     * project/locations/us-central1/subnets/my-subnet
-     *
-     * @var string
-     */
-    public $subnet;
-    /**
-     * Optional. The number of connections of the NFS volume. Spported from
-     * vsphere 8.0u1
-     *
-     * @param int $connectionCount
-     */
-    public function setConnectionCount($connectionCount)
+namespace Google\Service\VMwareEngine {
+    class DatastoreNetwork extends \Google\Model
     {
+        /**
+         * Optional. The number of connections of the NFS volume. Spported from
+         * vsphere 8.0u1
+         *
+         * @var int
+         */
+        public $connectionCount;
+        /**
+         * Optional. The Maximal Transmission Unit (MTU) of the datastore. System sets
+         * default MTU size. It prefers the VPC peering MTU, falling back to the VEN
+         * MTU if no peering MTU is found. when detected, and falling back to the VEN
+         * MTU otherwise.
+         *
+         * @var int
+         */
+        public $mtu;
+        /**
+         * Output only. The resource name of the network peering, used to access the
+         * file share by clients on private cloud. Resource names are schemeless URIs
+         * that follow the conventions in
+         * https://cloud.google.com/apis/design/resource_names. e.g. projects/my-
+         * project/locations/us-central1/networkPeerings/my-network-peering
+         *
+         * @var string
+         */
+        public $networkPeering;
+        /**
+         * Required. The resource name of the subnet Resource names are schemeless
+         * URIs that follow the conventions in
+         * https://cloud.google.com/apis/design/resource_names. e.g. projects/my-
+         * project/locations/us-central1/subnets/my-subnet
+         *
+         * @var string
+         */
+        public $subnet;
+        /**
+         * Optional. The number of connections of the NFS volume. Spported from
+         * vsphere 8.0u1
+         *
+         * @param int $connectionCount
+         */
+        public function setConnectionCount($connectionCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getConnectionCount()
+        {
+        }
+        /**
+         * Optional. The Maximal Transmission Unit (MTU) of the datastore. System sets
+         * default MTU size. It prefers the VPC peering MTU, falling back to the VEN
+         * MTU if no peering MTU is found. when detected, and falling back to the VEN
+         * MTU otherwise.
+         *
+         * @param int $mtu
+         */
+        public function setMtu($mtu)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMtu()
+        {
+        }
+        /**
+         * Output only. The resource name of the network peering, used to access the
+         * file share by clients on private cloud. Resource names are schemeless URIs
+         * that follow the conventions in
+         * https://cloud.google.com/apis/design/resource_names. e.g. projects/my-
+         * project/locations/us-central1/networkPeerings/my-network-peering
+         *
+         * @param string $networkPeering
+         */
+        public function setNetworkPeering($networkPeering)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNetworkPeering()
+        {
+        }
+        /**
+         * Required. The resource name of the subnet Resource names are schemeless
+         * URIs that follow the conventions in
+         * https://cloud.google.com/apis/design/resource_names. e.g. projects/my-
+         * project/locations/us-central1/subnets/my-subnet
+         *
+         * @param string $subnet
+         */
+        public function setSubnet($subnet)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubnet()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\VMwareEngine\DatastoreNetwork registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConnectionCount()
-    {
-    }
-    /**
-     * Optional. The Maximal Transmission Unit (MTU) of the datastore. System sets
-     * default MTU size. It prefers the VPC peering MTU, falling back to the VEN
-     * MTU if no peering MTU is found. when detected, and falling back to the VEN
-     * MTU otherwise.
-     *
-     * @param int $mtu
-     */
-    public function setMtu($mtu)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMtu()
-    {
-    }
-    /**
-     * Output only. The resource name of the network peering, used to access the
-     * file share by clients on private cloud. Resource names are schemeless URIs
-     * that follow the conventions in
-     * https://cloud.google.com/apis/design/resource_names. e.g. projects/my-
-     * project/locations/us-central1/networkPeerings/my-network-peering
-     *
-     * @param string $networkPeering
-     */
-    public function setNetworkPeering($networkPeering)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNetworkPeering()
-    {
-    }
-    /**
-     * Required. The resource name of the subnet Resource names are schemeless
-     * URIs that follow the conventions in
-     * https://cloud.google.com/apis/design/resource_names. e.g. projects/my-
-     * project/locations/us-central1/subnets/my-subnet
-     *
-     * @param string $subnet
-     */
-    public function setSubnet($subnet)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubnet()
+    class Google_Service_VMwareEngine_DatastoreNetwork extends \Google\Service\VMwareEngine\DatastoreNetwork
     {
     }
 }

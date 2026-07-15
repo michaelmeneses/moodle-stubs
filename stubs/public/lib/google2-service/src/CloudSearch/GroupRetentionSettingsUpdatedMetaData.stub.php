@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class GroupRetentionSettingsUpdatedMetaData extends \Google\Model
-{
-    protected $initiatorType = UserId::class;
-    protected $initiatorDataType = '';
-    protected $retentionSettingsType = AppsDynamiteSharedRetentionSettings::class;
-    protected $retentionSettingsDataType = '';
-    /**
-     * @param UserId
-     */
-    public function setInitiator(UserId $initiator)
+namespace Google\Service\CloudSearch {
+    class GroupRetentionSettingsUpdatedMetaData extends \Google\Model
     {
+        protected $initiatorType = UserId::class;
+        protected $initiatorDataType = '';
+        protected $retentionSettingsType = AppsDynamiteSharedRetentionSettings::class;
+        protected $retentionSettingsDataType = '';
+        /**
+         * @param UserId
+         */
+        public function setInitiator(UserId $initiator)
+        {
+        }
+        /**
+         * @return UserId
+         */
+        public function getInitiator()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedRetentionSettings
+         */
+        public function setRetentionSettings(AppsDynamiteSharedRetentionSettings $retentionSettings)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedRetentionSettings
+         */
+        public function getRetentionSettings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return UserId
+     * Runtime class alias of \Google\Service\CloudSearch\GroupRetentionSettingsUpdatedMetaData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInitiator()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedRetentionSettings
-     */
-    public function setRetentionSettings(AppsDynamiteSharedRetentionSettings $retentionSettings)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedRetentionSettings
-     */
-    public function getRetentionSettings()
+    class Google_Service_CloudSearch_GroupRetentionSettingsUpdatedMetaData extends \Google\Service\CloudSearch\GroupRetentionSettingsUpdatedMetaData
     {
     }
 }

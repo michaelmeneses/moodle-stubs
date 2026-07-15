@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class ClusterOperation extends \Google\Model
-{
-    /**
-     * Output only. Indicates the operation is done.
-     *
-     * @var bool
-     */
-    public $done;
-    /**
-     * Output only. Error, if operation failed.
-     *
-     * @var string
-     */
-    public $error;
-    /**
-     * Output only. The id of the cluster operation.
-     *
-     * @var string
-     */
-    public $operationId;
-    /**
-     * Output only. Indicates the operation is done.
-     *
-     * @param bool $done
-     */
-    public function setDone($done)
+namespace Google\Service\Dataproc {
+    class ClusterOperation extends \Google\Model
     {
+        /**
+         * Output only. Indicates the operation is done.
+         *
+         * @var bool
+         */
+        public $done;
+        /**
+         * Output only. Error, if operation failed.
+         *
+         * @var string
+         */
+        public $error;
+        /**
+         * Output only. The id of the cluster operation.
+         *
+         * @var string
+         */
+        public $operationId;
+        /**
+         * Output only. Indicates the operation is done.
+         *
+         * @param bool $done
+         */
+        public function setDone($done)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDone()
+        {
+        }
+        /**
+         * Output only. Error, if operation failed.
+         *
+         * @param string $error
+         */
+        public function setError($error)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getError()
+        {
+        }
+        /**
+         * Output only. The id of the cluster operation.
+         *
+         * @param string $operationId
+         */
+        public function setOperationId($operationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOperationId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Dataproc\ClusterOperation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDone()
-    {
-    }
-    /**
-     * Output only. Error, if operation failed.
-     *
-     * @param string $error
-     */
-    public function setError($error)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getError()
-    {
-    }
-    /**
-     * Output only. The id of the cluster operation.
-     *
-     * @param string $operationId
-     */
-    public function setOperationId($operationId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOperationId()
+    class Google_Service_Dataproc_ClusterOperation extends \Google\Service\Dataproc\ClusterOperation
     {
     }
 }

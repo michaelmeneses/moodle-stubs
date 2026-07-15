@@ -22,6 +22,15 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_question\external;
 
+use core\context;
+use core\exception\moodle_exception;
+use core\notification;
+use core_external\external_api;
+use core_external\external_function_parameters;
+use core_external\external_value;
+use core_external\restricted_context_exception;
+use core_question\local\bank\filter_condition_manager;
+use moodle_url;
 /**
  * API for moving questions from one question bank category to another.
  *

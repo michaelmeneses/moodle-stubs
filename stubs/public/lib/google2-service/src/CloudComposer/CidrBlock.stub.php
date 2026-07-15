@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudComposer;
-
-class CidrBlock extends \Google\Model
-{
-    /**
-     * CIDR block that must be specified in CIDR notation.
-     *
-     * @var string
-     */
-    public $cidrBlock;
-    /**
-     * User-defined name that identifies the CIDR block.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * CIDR block that must be specified in CIDR notation.
-     *
-     * @param string $cidrBlock
-     */
-    public function setCidrBlock($cidrBlock)
+namespace Google\Service\CloudComposer {
+    class CidrBlock extends \Google\Model
     {
+        /**
+         * CIDR block that must be specified in CIDR notation.
+         *
+         * @var string
+         */
+        public $cidrBlock;
+        /**
+         * User-defined name that identifies the CIDR block.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * CIDR block that must be specified in CIDR notation.
+         *
+         * @param string $cidrBlock
+         */
+        public function setCidrBlock($cidrBlock)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCidrBlock()
+        {
+        }
+        /**
+         * User-defined name that identifies the CIDR block.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudComposer\CidrBlock registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCidrBlock()
-    {
-    }
-    /**
-     * User-defined name that identifies the CIDR block.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
+    class Google_Service_CloudComposer_CidrBlock extends \Google\Service\CloudComposer\CidrBlock
     {
     }
 }

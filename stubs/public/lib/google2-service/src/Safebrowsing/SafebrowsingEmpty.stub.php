@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Safebrowsing;
-
-class SafebrowsingEmpty extends \Google\Model
-{
+namespace Google\Service\Safebrowsing {
+    class SafebrowsingEmpty extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Safebrowsing\SafebrowsingEmpty registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Safebrowsing_SafebrowsingEmpty extends \Google\Service\Safebrowsing\SafebrowsingEmpty
+    {
+    }
 }

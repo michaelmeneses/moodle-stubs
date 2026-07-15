@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1SecurityAssessmentResultScoringResultAssessmentRecommendationRecommendationLink extends \Google\Model
-{
-    /**
-     * The text of the url. (ie: "Learn more")
-     *
-     * @var string
-     */
-    public $text;
-    /**
-     * The link itself.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * The text of the url. (ie: "Learn more")
-     *
-     * @param string $text
-     */
-    public function setText($text)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1SecurityAssessmentResultScoringResultAssessmentRecommendationRecommendationLink extends \Google\Model
     {
+        /**
+         * The text of the url. (ie: "Learn more")
+         *
+         * @var string
+         */
+        public $text;
+        /**
+         * The link itself.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * The text of the url. (ie: "Learn more")
+         *
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
+        /**
+         * The link itself.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1SecurityAssessmentResultScoringResultAssessmentRecommendationRecommendationLink registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getText()
-    {
-    }
-    /**
-     * The link itself.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_Apigee_GoogleCloudApigeeV1SecurityAssessmentResultScoringResultAssessmentRecommendationRecommendationLink extends \Google\Service\Apigee\GoogleCloudApigeeV1SecurityAssessmentResultScoringResultAssessmentRecommendationRecommendationLink
     {
     }
 }

@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PubsubLite;
-
-class RetentionConfig extends \Google\Model
-{
-    /**
-     * The provisioned storage, in bytes, per partition. If the number of bytes
-     * stored in any of the topic's partitions grows beyond this value, older
-     * messages will be dropped to make room for newer ones, regardless of the
-     * value of `period`.
-     *
-     * @var string
-     */
-    public $perPartitionBytes;
-    /**
-     * How long a published message is retained. If unset, messages will be
-     * retained as long as the bytes retained for each partition is below
-     * `per_partition_bytes`.
-     *
-     * @var string
-     */
-    public $period;
-    /**
-     * The provisioned storage, in bytes, per partition. If the number of bytes
-     * stored in any of the topic's partitions grows beyond this value, older
-     * messages will be dropped to make room for newer ones, regardless of the
-     * value of `period`.
-     *
-     * @param string $perPartitionBytes
-     */
-    public function setPerPartitionBytes($perPartitionBytes)
+namespace Google\Service\PubsubLite {
+    class RetentionConfig extends \Google\Model
     {
+        /**
+         * The provisioned storage, in bytes, per partition. If the number of bytes
+         * stored in any of the topic's partitions grows beyond this value, older
+         * messages will be dropped to make room for newer ones, regardless of the
+         * value of `period`.
+         *
+         * @var string
+         */
+        public $perPartitionBytes;
+        /**
+         * How long a published message is retained. If unset, messages will be
+         * retained as long as the bytes retained for each partition is below
+         * `per_partition_bytes`.
+         *
+         * @var string
+         */
+        public $period;
+        /**
+         * The provisioned storage, in bytes, per partition. If the number of bytes
+         * stored in any of the topic's partitions grows beyond this value, older
+         * messages will be dropped to make room for newer ones, regardless of the
+         * value of `period`.
+         *
+         * @param string $perPartitionBytes
+         */
+        public function setPerPartitionBytes($perPartitionBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPerPartitionBytes()
+        {
+        }
+        /**
+         * How long a published message is retained. If unset, messages will be
+         * retained as long as the bytes retained for each partition is below
+         * `per_partition_bytes`.
+         *
+         * @param string $period
+         */
+        public function setPeriod($period)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPeriod()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PubsubLite\RetentionConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPerPartitionBytes()
-    {
-    }
-    /**
-     * How long a published message is retained. If unset, messages will be
-     * retained as long as the bytes retained for each partition is below
-     * `per_partition_bytes`.
-     *
-     * @param string $period
-     */
-    public function setPeriod($period)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPeriod()
+    class Google_Service_PubsubLite_RetentionConfig extends \Google\Service\PubsubLite\RetentionConfig
     {
     }
 }

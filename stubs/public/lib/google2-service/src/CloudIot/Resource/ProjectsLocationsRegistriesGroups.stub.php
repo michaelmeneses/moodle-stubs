@@ -21,62 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIot\Resource;
-
-/**
- * The "groups" collection of methods.
- * Typical usage is:
- *  <code>
- *   $cloudiotService = new Google\Service\CloudIot(...);
- *   $groups = $cloudiotService->projects_locations_registries_groups;
- *  </code>
- */
-class ProjectsLocationsRegistriesGroups extends \Google\Service\Resource
-{
+namespace Google\Service\CloudIot\Resource {
+    use Google\Service\CloudIot\GetIamPolicyRequest;
+    use Google\Service\CloudIot\Policy;
+    use Google\Service\CloudIot\SetIamPolicyRequest;
+    use Google\Service\CloudIot\TestIamPermissionsRequest;
+    use Google\Service\CloudIot\TestIamPermissionsResponse;
     /**
-     * Gets the access control policy for a resource. Returns an empty policy if the
-     * resource exists and does not have a policy set. (groups.getIamPolicy)
-     *
-     * @param string $resource REQUIRED: The resource for which the policy is being
-     * requested. See [Resource
-     * names](https://cloud.google.com/apis/design/resource_names) for the
-     * appropriate value for this field.
-     * @param GetIamPolicyRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Policy
+     * The "groups" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $cloudiotService = new Google\Service\CloudIot(...);
+     *   $groups = $cloudiotService->projects_locations_registries_groups;
+     *  </code>
      */
-    public function getIamPolicy($resource, GetIamPolicyRequest $postBody, $optParams = [])
+    class ProjectsLocationsRegistriesGroups extends \Google\Service\Resource
     {
+        /**
+         * Gets the access control policy for a resource. Returns an empty policy if the
+         * resource exists and does not have a policy set. (groups.getIamPolicy)
+         *
+         * @param string $resource REQUIRED: The resource for which the policy is being
+         * requested. See [Resource
+         * names](https://cloud.google.com/apis/design/resource_names) for the
+         * appropriate value for this field.
+         * @param GetIamPolicyRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Policy
+         */
+        public function getIamPolicy($resource, GetIamPolicyRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Sets the access control policy on the specified resource. Replaces any
+         * existing policy. (groups.setIamPolicy)
+         *
+         * @param string $resource REQUIRED: The resource for which the policy is being
+         * specified. See [Resource
+         * names](https://cloud.google.com/apis/design/resource_names) for the
+         * appropriate value for this field.
+         * @param SetIamPolicyRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Policy
+         */
+        public function setIamPolicy($resource, SetIamPolicyRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Returns permissions that a caller has on the specified resource. If the
+         * resource does not exist, this will return an empty set of permissions, not a
+         * NOT_FOUND error. (groups.testIamPermissions)
+         *
+         * @param string $resource REQUIRED: The resource for which the policy detail is
+         * being requested. See [Resource
+         * names](https://cloud.google.com/apis/design/resource_names) for the
+         * appropriate value for this field.
+         * @param TestIamPermissionsRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return TestIamPermissionsResponse
+         */
+        public function testIamPermissions($resource, TestIamPermissionsRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Sets the access control policy on the specified resource. Replaces any
-     * existing policy. (groups.setIamPolicy)
-     *
-     * @param string $resource REQUIRED: The resource for which the policy is being
-     * specified. See [Resource
-     * names](https://cloud.google.com/apis/design/resource_names) for the
-     * appropriate value for this field.
-     * @param SetIamPolicyRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Policy
+     * Runtime class alias of \Google\Service\CloudIot\Resource\ProjectsLocationsRegistriesGroups registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setIamPolicy($resource, SetIamPolicyRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Returns permissions that a caller has on the specified resource. If the
-     * resource does not exist, this will return an empty set of permissions, not a
-     * NOT_FOUND error. (groups.testIamPermissions)
-     *
-     * @param string $resource REQUIRED: The resource for which the policy detail is
-     * being requested. See [Resource
-     * names](https://cloud.google.com/apis/design/resource_names) for the
-     * appropriate value for this field.
-     * @param TestIamPermissionsRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return TestIamPermissionsResponse
-     */
-    public function testIamPermissions($resource, TestIamPermissionsRequest $postBody, $optParams = [])
+    class Google_Service_CloudIot_Resource_ProjectsLocationsRegistriesGroups extends \Google\Service\CloudIot\Resource\ProjectsLocationsRegistriesGroups
     {
     }
 }

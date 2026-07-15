@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class PullRequestFilter extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $branch;
-    /**
-     * @var string
-     */
-    public $commentControl;
-    /**
-     * @var bool
-     */
-    public $invertRegex;
-    /**
-     * @param string
-     */
-    public function setBranch($branch)
+namespace Google\Service\CloudBuild {
+    class PullRequestFilter extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $branch;
+        /**
+         * @var string
+         */
+        public $commentControl;
+        /**
+         * @var bool
+         */
+        public $invertRegex;
+        /**
+         * @param string
+         */
+        public function setBranch($branch)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBranch()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCommentControl($commentControl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCommentControl()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setInvertRegex($invertRegex)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getInvertRegex()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudBuild\PullRequestFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBranch()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCommentControl($commentControl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCommentControl()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setInvertRegex($invertRegex)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getInvertRegex()
+    class Google_Service_CloudBuild_PullRequestFilter extends \Google\Service\CloudBuild\PullRequestFilter
     {
     }
 }

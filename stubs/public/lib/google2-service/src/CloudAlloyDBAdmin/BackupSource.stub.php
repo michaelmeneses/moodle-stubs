@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAlloyDBAdmin;
-
-class BackupSource extends \Google\Model
-{
-    /**
-     * Required. The name of the backup resource with the format: *
-     * projects/{project}/locations/{region}/backups/{backup_id}
-     *
-     * @var string
-     */
-    public $backupName;
-    /**
-     * Output only. The system-generated UID of the backup which was used to
-     * create this resource. The UID is generated when the backup is created, and
-     * it is retained until the backup is deleted.
-     *
-     * @var string
-     */
-    public $backupUid;
-    /**
-     * Required. The name of the backup resource with the format: *
-     * projects/{project}/locations/{region}/backups/{backup_id}
-     *
-     * @param string $backupName
-     */
-    public function setBackupName($backupName)
+namespace Google\Service\CloudAlloyDBAdmin {
+    class BackupSource extends \Google\Model
     {
+        /**
+         * Required. The name of the backup resource with the format: *
+         * projects/{project}/locations/{region}/backups/{backup_id}
+         *
+         * @var string
+         */
+        public $backupName;
+        /**
+         * Output only. The system-generated UID of the backup which was used to
+         * create this resource. The UID is generated when the backup is created, and
+         * it is retained until the backup is deleted.
+         *
+         * @var string
+         */
+        public $backupUid;
+        /**
+         * Required. The name of the backup resource with the format: *
+         * projects/{project}/locations/{region}/backups/{backup_id}
+         *
+         * @param string $backupName
+         */
+        public function setBackupName($backupName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBackupName()
+        {
+        }
+        /**
+         * Output only. The system-generated UID of the backup which was used to
+         * create this resource. The UID is generated when the backup is created, and
+         * it is retained until the backup is deleted.
+         *
+         * @param string $backupUid
+         */
+        public function setBackupUid($backupUid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBackupUid()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudAlloyDBAdmin\BackupSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackupName()
-    {
-    }
-    /**
-     * Output only. The system-generated UID of the backup which was used to
-     * create this resource. The UID is generated when the backup is created, and
-     * it is retained until the backup is deleted.
-     *
-     * @param string $backupUid
-     */
-    public function setBackupUid($backupUid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBackupUid()
+    class Google_Service_CloudAlloyDBAdmin_BackupSource extends \Google\Service\CloudAlloyDBAdmin\BackupSource
     {
     }
 }

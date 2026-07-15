@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class ProductDimension extends \Google\Model
-{
-    /**
-     * Required. The length units. Acceptable values are: - "`in`" - "`cm`"
-     *
-     * @var string
-     */
-    public $unit;
-    /**
-     * Required. The length value represented as a number. The value can have a
-     * maximum precision of four decimal places.
-     *
-     * @var 
-     */
-    public $value;
-    /**
-     * Required. The length units. Acceptable values are: - "`in`" - "`cm`"
-     *
-     * @param string $unit
-     */
-    public function setUnit($unit)
+namespace Google\Service\ShoppingContent {
+    class ProductDimension extends \Google\Model
     {
+        /**
+         * Required. The length units. Acceptable values are: - "`in`" - "`cm`"
+         *
+         * @var string
+         */
+        public $unit;
+        /**
+         * Required. The length value represented as a number. The value can have a
+         * maximum precision of four decimal places.
+         *
+         * @var 
+         */
+        public $value;
+        /**
+         * Required. The length units. Acceptable values are: - "`in`" - "`cm`"
+         *
+         * @param string $unit
+         */
+        public function setUnit($unit)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUnit()
+        {
+        }
+        public function setValue($value)
+        {
+        }
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\ProductDimension registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUnit()
-    {
-    }
-    public function setValue($value)
-    {
-    }
-    public function getValue()
+    class Google_Service_ShoppingContent_ProductDimension extends \Google\Service\ShoppingContent\ProductDimension
     {
     }
 }

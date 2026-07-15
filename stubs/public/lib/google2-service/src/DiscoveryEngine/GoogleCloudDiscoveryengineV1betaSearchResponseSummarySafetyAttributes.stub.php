@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaSearchResponseSummarySafetyAttributes extends \Google\Collection
-{
-    protected $collection_key = 'scores';
-    /**
-     * @var string[]
-     */
-    public $categories;
-    /**
-     * @var float[]
-     */
-    public $scores;
-    /**
-     * @param string[]
-     */
-    public function setCategories($categories)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaSearchResponseSummarySafetyAttributes extends \Google\Collection
     {
+        protected $collection_key = 'scores';
+        /**
+         * @var string[]
+         */
+        public $categories;
+        /**
+         * @var float[]
+         */
+        public $scores;
+        /**
+         * @param string[]
+         */
+        public function setCategories($categories)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCategories()
+        {
+        }
+        /**
+         * @param float[]
+         */
+        public function setScores($scores)
+        {
+        }
+        /**
+         * @return float[]
+         */
+        public function getScores()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaSearchResponseSummarySafetyAttributes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCategories()
-    {
-    }
-    /**
-     * @param float[]
-     */
-    public function setScores($scores)
-    {
-    }
-    /**
-     * @return float[]
-     */
-    public function getScores()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaSearchResponseSummarySafetyAttributes extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaSearchResponseSummarySafetyAttributes
     {
     }
 }

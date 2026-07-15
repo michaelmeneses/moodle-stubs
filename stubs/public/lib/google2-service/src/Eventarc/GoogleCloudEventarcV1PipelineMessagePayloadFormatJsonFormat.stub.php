@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Eventarc;
-
-class GoogleCloudEventarcV1PipelineMessagePayloadFormatJsonFormat extends \Google\Model
-{
+namespace Google\Service\Eventarc {
+    class GoogleCloudEventarcV1PipelineMessagePayloadFormatJsonFormat extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Eventarc\GoogleCloudEventarcV1PipelineMessagePayloadFormatJsonFormat registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Eventarc_GoogleCloudEventarcV1PipelineMessagePayloadFormatJsonFormat extends \Google\Service\Eventarc\GoogleCloudEventarcV1PipelineMessagePayloadFormatJsonFormat
+    {
+    }
 }

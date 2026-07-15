@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firebaseappcheck;
-
-class GoogleFirebaseAppcheckV1GenerateAppAttestChallengeRequest extends \Google\Model
-{
+namespace Google\Service\Firebaseappcheck {
+    class GoogleFirebaseAppcheckV1GenerateAppAttestChallengeRequest extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1GenerateAppAttestChallengeRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Firebaseappcheck_GoogleFirebaseAppcheckV1GenerateAppAttestChallengeRequest extends \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1GenerateAppAttestChallengeRequest
+    {
+    }
 }

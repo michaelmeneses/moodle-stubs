@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class JobsettedServerSpec extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $portName;
-    /**
-     * @var string
-     */
-    public $serverName;
-    /**
-     * @param string
-     */
-    public function setPortName($portName)
+namespace Google\Service\CloudSearch {
+    class JobsettedServerSpec extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $portName;
+        /**
+         * @var string
+         */
+        public $serverName;
+        /**
+         * @param string
+         */
+        public function setPortName($portName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPortName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setServerName($serverName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServerName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\JobsettedServerSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPortName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setServerName($serverName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServerName()
+    class Google_Service_CloudSearch_JobsettedServerSpec extends \Google\Service\CloudSearch\JobsettedServerSpec
     {
     }
 }

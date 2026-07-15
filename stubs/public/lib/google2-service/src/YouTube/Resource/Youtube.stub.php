@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube\Resource;
-
-/**
- * The "youtube" collection of methods.
- * Typical usage is:
- *  <code>
- *   $youtubeService = new Google\Service\YouTube(...);
- *   $youtube = $youtubeService->youtube;
- *  </code>
- */
-class Youtube extends \Google\Service\Resource
-{
+namespace Google\Service\YouTube\Resource {
+    /**
+     * The "youtube" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $youtubeService = new Google\Service\YouTube(...);
+     *   $youtube = $youtubeService->youtube;
+     *  </code>
+     */
+    class Youtube extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\YouTube\Resource\Youtube registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_YouTube_Resource_Youtube extends \Google\Service\YouTube\Resource\Youtube
+    {
+    }
 }

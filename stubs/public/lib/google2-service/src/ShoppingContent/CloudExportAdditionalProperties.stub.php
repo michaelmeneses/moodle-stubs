@@ -21,193 +21,202 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class CloudExportAdditionalProperties extends \Google\Collection
-{
-    protected $collection_key = 'textValue';
-    /**
-     * Boolean value of the given property. For example for a TV product, "True"
-     * or "False" if the screen is UHD.
-     *
-     * @var bool
-     */
-    public $boolValue;
-    /**
-     * Float values of the given property. For example for a TV product 1.2345.
-     * Maximum number of specified values for this field is 400. Values are stored
-     * in an arbitrary but consistent order.
-     *
-     * @var float[]
-     */
-    public $floatValue;
-    /**
-     * Integer values of the given property. For example, 1080 for a screen
-     * resolution of a TV product. Maximum number of specified values for this
-     * field is 400. Values are stored in an arbitrary but consistent order.
-     *
-     * @var string[]
-     */
-    public $intValue;
-    /**
-     * Maximum float value of the given property. For example for a TV product
-     * 100.00.
-     *
-     * @var float
-     */
-    public $maxValue;
-    /**
-     * Minimum float value of the given property. For example for a TV product
-     * 1.00.
-     *
-     * @var float
-     */
-    public $minValue;
-    /**
-     * Name of the given property. For example, "Screen-Resolution" for a TV
-     * product. Maximum string size is 256 characters.
-     *
-     * @var string
-     */
-    public $propertyName;
-    /**
-     * Text value of the given property. For example, "8K(UHD)" could be a text
-     * value for a TV product. Maximum number of specified values for this field
-     * is 400. Values are stored in an arbitrary but consistent order. Maximum
-     * string size is 256 characters.
-     *
-     * @var string[]
-     */
-    public $textValue;
-    /**
-     * Unit of the given property. For example, "Pixels" for a TV product. Maximum
-     * string size is 256 bytes.
-     *
-     * @var string
-     */
-    public $unitCode;
-    /**
-     * Boolean value of the given property. For example for a TV product, "True"
-     * or "False" if the screen is UHD.
-     *
-     * @param bool $boolValue
-     */
-    public function setBoolValue($boolValue)
+namespace Google\Service\ShoppingContent {
+    class CloudExportAdditionalProperties extends \Google\Collection
     {
+        protected $collection_key = 'textValue';
+        /**
+         * Boolean value of the given property. For example for a TV product, "True"
+         * or "False" if the screen is UHD.
+         *
+         * @var bool
+         */
+        public $boolValue;
+        /**
+         * Float values of the given property. For example for a TV product 1.2345.
+         * Maximum number of specified values for this field is 400. Values are stored
+         * in an arbitrary but consistent order.
+         *
+         * @var float[]
+         */
+        public $floatValue;
+        /**
+         * Integer values of the given property. For example, 1080 for a screen
+         * resolution of a TV product. Maximum number of specified values for this
+         * field is 400. Values are stored in an arbitrary but consistent order.
+         *
+         * @var string[]
+         */
+        public $intValue;
+        /**
+         * Maximum float value of the given property. For example for a TV product
+         * 100.00.
+         *
+         * @var float
+         */
+        public $maxValue;
+        /**
+         * Minimum float value of the given property. For example for a TV product
+         * 1.00.
+         *
+         * @var float
+         */
+        public $minValue;
+        /**
+         * Name of the given property. For example, "Screen-Resolution" for a TV
+         * product. Maximum string size is 256 characters.
+         *
+         * @var string
+         */
+        public $propertyName;
+        /**
+         * Text value of the given property. For example, "8K(UHD)" could be a text
+         * value for a TV product. Maximum number of specified values for this field
+         * is 400. Values are stored in an arbitrary but consistent order. Maximum
+         * string size is 256 characters.
+         *
+         * @var string[]
+         */
+        public $textValue;
+        /**
+         * Unit of the given property. For example, "Pixels" for a TV product. Maximum
+         * string size is 256 bytes.
+         *
+         * @var string
+         */
+        public $unitCode;
+        /**
+         * Boolean value of the given property. For example for a TV product, "True"
+         * or "False" if the screen is UHD.
+         *
+         * @param bool $boolValue
+         */
+        public function setBoolValue($boolValue)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getBoolValue()
+        {
+        }
+        /**
+         * Float values of the given property. For example for a TV product 1.2345.
+         * Maximum number of specified values for this field is 400. Values are stored
+         * in an arbitrary but consistent order.
+         *
+         * @param float[] $floatValue
+         */
+        public function setFloatValue($floatValue)
+        {
+        }
+        /**
+         * @return float[]
+         */
+        public function getFloatValue()
+        {
+        }
+        /**
+         * Integer values of the given property. For example, 1080 for a screen
+         * resolution of a TV product. Maximum number of specified values for this
+         * field is 400. Values are stored in an arbitrary but consistent order.
+         *
+         * @param string[] $intValue
+         */
+        public function setIntValue($intValue)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getIntValue()
+        {
+        }
+        /**
+         * Maximum float value of the given property. For example for a TV product
+         * 100.00.
+         *
+         * @param float $maxValue
+         */
+        public function setMaxValue($maxValue)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getMaxValue()
+        {
+        }
+        /**
+         * Minimum float value of the given property. For example for a TV product
+         * 1.00.
+         *
+         * @param float $minValue
+         */
+        public function setMinValue($minValue)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getMinValue()
+        {
+        }
+        /**
+         * Name of the given property. For example, "Screen-Resolution" for a TV
+         * product. Maximum string size is 256 characters.
+         *
+         * @param string $propertyName
+         */
+        public function setPropertyName($propertyName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPropertyName()
+        {
+        }
+        /**
+         * Text value of the given property. For example, "8K(UHD)" could be a text
+         * value for a TV product. Maximum number of specified values for this field
+         * is 400. Values are stored in an arbitrary but consistent order. Maximum
+         * string size is 256 characters.
+         *
+         * @param string[] $textValue
+         */
+        public function setTextValue($textValue)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTextValue()
+        {
+        }
+        /**
+         * Unit of the given property. For example, "Pixels" for a TV product. Maximum
+         * string size is 256 bytes.
+         *
+         * @param string $unitCode
+         */
+        public function setUnitCode($unitCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUnitCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\ShoppingContent\CloudExportAdditionalProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBoolValue()
-    {
-    }
-    /**
-     * Float values of the given property. For example for a TV product 1.2345.
-     * Maximum number of specified values for this field is 400. Values are stored
-     * in an arbitrary but consistent order.
-     *
-     * @param float[] $floatValue
-     */
-    public function setFloatValue($floatValue)
-    {
-    }
-    /**
-     * @return float[]
-     */
-    public function getFloatValue()
-    {
-    }
-    /**
-     * Integer values of the given property. For example, 1080 for a screen
-     * resolution of a TV product. Maximum number of specified values for this
-     * field is 400. Values are stored in an arbitrary but consistent order.
-     *
-     * @param string[] $intValue
-     */
-    public function setIntValue($intValue)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getIntValue()
-    {
-    }
-    /**
-     * Maximum float value of the given property. For example for a TV product
-     * 100.00.
-     *
-     * @param float $maxValue
-     */
-    public function setMaxValue($maxValue)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getMaxValue()
-    {
-    }
-    /**
-     * Minimum float value of the given property. For example for a TV product
-     * 1.00.
-     *
-     * @param float $minValue
-     */
-    public function setMinValue($minValue)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getMinValue()
-    {
-    }
-    /**
-     * Name of the given property. For example, "Screen-Resolution" for a TV
-     * product. Maximum string size is 256 characters.
-     *
-     * @param string $propertyName
-     */
-    public function setPropertyName($propertyName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPropertyName()
-    {
-    }
-    /**
-     * Text value of the given property. For example, "8K(UHD)" could be a text
-     * value for a TV product. Maximum number of specified values for this field
-     * is 400. Values are stored in an arbitrary but consistent order. Maximum
-     * string size is 256 characters.
-     *
-     * @param string[] $textValue
-     */
-    public function setTextValue($textValue)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTextValue()
-    {
-    }
-    /**
-     * Unit of the given property. For example, "Pixels" for a TV product. Maximum
-     * string size is 256 bytes.
-     *
-     * @param string $unitCode
-     */
-    public function setUnitCode($unitCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUnitCode()
+    class Google_Service_ShoppingContent_CloudExportAdditionalProperties extends \Google\Service\ShoppingContent\CloudExportAdditionalProperties
     {
     }
 }

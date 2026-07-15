@@ -21,128 +21,137 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class Product extends \Google\Collection
-{
-    protected $collection_key = 'productLabels';
-    /**
-     * User-provided metadata to be stored with this product. Must be at most 4096
-     * characters long.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * The user-provided name for this Product. Must not be empty. Must be at most
-     * 4096 characters long.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The resource name of the product. Format is:
-     * `projects/PROJECT_ID/locations/LOC_ID/products/PRODUCT_ID`. This field is
-     * ignored when creating a product.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Immutable. The category for the product identified by the reference image.
-     * This should be one of "homegoods-v2", "apparel-v2", "toys-v2",
-     * "packagedgoods-v1" or "general-v1". The legacy categories "homegoods",
-     * "apparel", and "toys" are still supported, but these should not be used for
-     * new products.
-     *
-     * @var string
-     */
-    public $productCategory;
-    protected $productLabelsType = KeyValue::class;
-    protected $productLabelsDataType = 'array';
-    /**
-     * User-provided metadata to be stored with this product. Must be at most 4096
-     * characters long.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\Vision {
+    class Product extends \Google\Collection
     {
+        protected $collection_key = 'productLabels';
+        /**
+         * User-provided metadata to be stored with this product. Must be at most 4096
+         * characters long.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * The user-provided name for this Product. Must not be empty. Must be at most
+         * 4096 characters long.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The resource name of the product. Format is:
+         * `projects/PROJECT_ID/locations/LOC_ID/products/PRODUCT_ID`. This field is
+         * ignored when creating a product.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Immutable. The category for the product identified by the reference image.
+         * This should be one of "homegoods-v2", "apparel-v2", "toys-v2",
+         * "packagedgoods-v1" or "general-v1". The legacy categories "homegoods",
+         * "apparel", and "toys" are still supported, but these should not be used for
+         * new products.
+         *
+         * @var string
+         */
+        public $productCategory;
+        protected $productLabelsType = KeyValue::class;
+        protected $productLabelsDataType = 'array';
+        /**
+         * User-provided metadata to be stored with this product. Must be at most 4096
+         * characters long.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * The user-provided name for this Product. Must not be empty. Must be at most
+         * 4096 characters long.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The resource name of the product. Format is:
+         * `projects/PROJECT_ID/locations/LOC_ID/products/PRODUCT_ID`. This field is
+         * ignored when creating a product.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Immutable. The category for the product identified by the reference image.
+         * This should be one of "homegoods-v2", "apparel-v2", "toys-v2",
+         * "packagedgoods-v1" or "general-v1". The legacy categories "homegoods",
+         * "apparel", and "toys" are still supported, but these should not be used for
+         * new products.
+         *
+         * @param string $productCategory
+         */
+        public function setProductCategory($productCategory)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProductCategory()
+        {
+        }
+        /**
+         * Key-value pairs that can be attached to a product. At query time,
+         * constraints can be specified based on the product_labels. Note that integer
+         * values can be provided as strings, e.g. "1199". Only strings with integer
+         * values can match a range-based restriction which is to be supported soon.
+         * Multiple values can be assigned to the same key. One product may have up to
+         * 500 product_labels. Notice that the total number of distinct product_labels
+         * over all products in one ProductSet cannot exceed 1M, otherwise the product
+         * search pipeline will refuse to work for that ProductSet.
+         *
+         * @param KeyValue[] $productLabels
+         */
+        public function setProductLabels($productLabels)
+        {
+        }
+        /**
+         * @return KeyValue[]
+         */
+        public function getProductLabels()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Vision\Product registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * The user-provided name for this Product. Must not be empty. Must be at most
-     * 4096 characters long.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The resource name of the product. Format is:
-     * `projects/PROJECT_ID/locations/LOC_ID/products/PRODUCT_ID`. This field is
-     * ignored when creating a product.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Immutable. The category for the product identified by the reference image.
-     * This should be one of "homegoods-v2", "apparel-v2", "toys-v2",
-     * "packagedgoods-v1" or "general-v1". The legacy categories "homegoods",
-     * "apparel", and "toys" are still supported, but these should not be used for
-     * new products.
-     *
-     * @param string $productCategory
-     */
-    public function setProductCategory($productCategory)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProductCategory()
-    {
-    }
-    /**
-     * Key-value pairs that can be attached to a product. At query time,
-     * constraints can be specified based on the product_labels. Note that integer
-     * values can be provided as strings, e.g. "1199". Only strings with integer
-     * values can match a range-based restriction which is to be supported soon.
-     * Multiple values can be assigned to the same key. One product may have up to
-     * 500 product_labels. Notice that the total number of distinct product_labels
-     * over all products in one ProductSet cannot exceed 1M, otherwise the product
-     * search pipeline will refuse to work for that ProductSet.
-     *
-     * @param KeyValue[] $productLabels
-     */
-    public function setProductLabels($productLabels)
-    {
-    }
-    /**
-     * @return KeyValue[]
-     */
-    public function getProductLabels()
+    class Google_Service_Vision_Product extends \Google\Service\Vision\Product
     {
     }
 }

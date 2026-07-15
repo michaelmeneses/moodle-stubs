@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class BulkEditAssignedInventorySourcesRequest extends \Google\Collection
-{
-    protected $collection_key = 'deletedAssignedInventorySources';
-    /**
-     * The ID of the advertiser that owns the parent inventory source group. The
-     * parent partner does not have access to these assigned inventory sources.
-     *
-     * @var string
-     */
-    public $advertiserId;
-    protected $createdAssignedInventorySourcesType = AssignedInventorySource::class;
-    protected $createdAssignedInventorySourcesDataType = 'array';
-    /**
-     * The IDs of the assigned inventory sources to delete in bulk, specified as a
-     * list of assigned_inventory_source_ids.
-     *
-     * @var string[]
-     */
-    public $deletedAssignedInventorySources;
-    /**
-     * The ID of the partner that owns the inventory source group. Only this
-     * partner has write access to these assigned inventory sources.
-     *
-     * @var string
-     */
-    public $partnerId;
-    /**
-     * The ID of the advertiser that owns the parent inventory source group. The
-     * parent partner does not have access to these assigned inventory sources.
-     *
-     * @param string $advertiserId
-     */
-    public function setAdvertiserId($advertiserId)
+namespace Google\Service\DisplayVideo {
+    class BulkEditAssignedInventorySourcesRequest extends \Google\Collection
     {
+        protected $collection_key = 'deletedAssignedInventorySources';
+        /**
+         * The ID of the advertiser that owns the parent inventory source group. The
+         * parent partner does not have access to these assigned inventory sources.
+         *
+         * @var string
+         */
+        public $advertiserId;
+        protected $createdAssignedInventorySourcesType = AssignedInventorySource::class;
+        protected $createdAssignedInventorySourcesDataType = 'array';
+        /**
+         * The IDs of the assigned inventory sources to delete in bulk, specified as a
+         * list of assigned_inventory_source_ids.
+         *
+         * @var string[]
+         */
+        public $deletedAssignedInventorySources;
+        /**
+         * The ID of the partner that owns the inventory source group. Only this
+         * partner has write access to these assigned inventory sources.
+         *
+         * @var string
+         */
+        public $partnerId;
+        /**
+         * The ID of the advertiser that owns the parent inventory source group. The
+         * parent partner does not have access to these assigned inventory sources.
+         *
+         * @param string $advertiserId
+         */
+        public function setAdvertiserId($advertiserId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdvertiserId()
+        {
+        }
+        /**
+         * The assigned inventory sources to create in bulk, specified as a list of
+         * AssignedInventorySources.
+         *
+         * @param AssignedInventorySource[] $createdAssignedInventorySources
+         */
+        public function setCreatedAssignedInventorySources($createdAssignedInventorySources)
+        {
+        }
+        /**
+         * @return AssignedInventorySource[]
+         */
+        public function getCreatedAssignedInventorySources()
+        {
+        }
+        /**
+         * The IDs of the assigned inventory sources to delete in bulk, specified as a
+         * list of assigned_inventory_source_ids.
+         *
+         * @param string[] $deletedAssignedInventorySources
+         */
+        public function setDeletedAssignedInventorySources($deletedAssignedInventorySources)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDeletedAssignedInventorySources()
+        {
+        }
+        /**
+         * The ID of the partner that owns the inventory source group. Only this
+         * partner has write access to these assigned inventory sources.
+         *
+         * @param string $partnerId
+         */
+        public function setPartnerId($partnerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPartnerId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\BulkEditAssignedInventorySourcesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdvertiserId()
-    {
-    }
-    /**
-     * The assigned inventory sources to create in bulk, specified as a list of
-     * AssignedInventorySources.
-     *
-     * @param AssignedInventorySource[] $createdAssignedInventorySources
-     */
-    public function setCreatedAssignedInventorySources($createdAssignedInventorySources)
-    {
-    }
-    /**
-     * @return AssignedInventorySource[]
-     */
-    public function getCreatedAssignedInventorySources()
-    {
-    }
-    /**
-     * The IDs of the assigned inventory sources to delete in bulk, specified as a
-     * list of assigned_inventory_source_ids.
-     *
-     * @param string[] $deletedAssignedInventorySources
-     */
-    public function setDeletedAssignedInventorySources($deletedAssignedInventorySources)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getDeletedAssignedInventorySources()
-    {
-    }
-    /**
-     * The ID of the partner that owns the inventory source group. Only this
-     * partner has write access to these assigned inventory sources.
-     *
-     * @param string $partnerId
-     */
-    public function setPartnerId($partnerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPartnerId()
+    class Google_Service_DisplayVideo_BulkEditAssignedInventorySourcesRequest extends \Google\Service\DisplayVideo\BulkEditAssignedInventorySourcesRequest
     {
     }
 }

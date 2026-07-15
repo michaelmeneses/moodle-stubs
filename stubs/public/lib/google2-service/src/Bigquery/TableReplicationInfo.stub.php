@@ -21,130 +21,139 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class TableReplicationInfo extends \Google\Model
-{
-    /**
-     * Default value.
-     */
-    public const REPLICATION_STATUS_REPLICATION_STATUS_UNSPECIFIED = 'REPLICATION_STATUS_UNSPECIFIED';
-    /**
-     * Replication is Active with no errors.
-     */
-    public const REPLICATION_STATUS_ACTIVE = 'ACTIVE';
-    /**
-     * Source object is deleted.
-     */
-    public const REPLICATION_STATUS_SOURCE_DELETED = 'SOURCE_DELETED';
-    /**
-     * Source revoked replication permissions.
-     */
-    public const REPLICATION_STATUS_PERMISSION_DENIED = 'PERMISSION_DENIED';
-    /**
-     * Source configuration doesn’t allow replication.
-     */
-    public const REPLICATION_STATUS_UNSUPPORTED_CONFIGURATION = 'UNSUPPORTED_CONFIGURATION';
-    /**
-     * Optional. Output only. If source is a materialized view, this field
-     * signifies the last refresh time of the source.
-     *
-     * @var string
-     */
-    public $replicatedSourceLastRefreshTime;
-    protected $replicationErrorType = ErrorProto::class;
-    protected $replicationErrorDataType = '';
-    /**
-     * Optional. Specifies the interval at which the source table is polled for
-     * updates. It's Optional. If not specified, default replication interval
-     * would be applied.
-     *
-     * @var string
-     */
-    public $replicationIntervalMs;
-    /**
-     * Optional. Output only. Replication status of configured replication.
-     *
-     * @var string
-     */
-    public $replicationStatus;
-    protected $sourceTableType = TableReference::class;
-    protected $sourceTableDataType = '';
-    /**
-     * Optional. Output only. If source is a materialized view, this field
-     * signifies the last refresh time of the source.
-     *
-     * @param string $replicatedSourceLastRefreshTime
-     */
-    public function setReplicatedSourceLastRefreshTime($replicatedSourceLastRefreshTime)
+namespace Google\Service\Bigquery {
+    class TableReplicationInfo extends \Google\Model
     {
+        /**
+         * Default value.
+         */
+        public const REPLICATION_STATUS_REPLICATION_STATUS_UNSPECIFIED = 'REPLICATION_STATUS_UNSPECIFIED';
+        /**
+         * Replication is Active with no errors.
+         */
+        public const REPLICATION_STATUS_ACTIVE = 'ACTIVE';
+        /**
+         * Source object is deleted.
+         */
+        public const REPLICATION_STATUS_SOURCE_DELETED = 'SOURCE_DELETED';
+        /**
+         * Source revoked replication permissions.
+         */
+        public const REPLICATION_STATUS_PERMISSION_DENIED = 'PERMISSION_DENIED';
+        /**
+         * Source configuration doesn’t allow replication.
+         */
+        public const REPLICATION_STATUS_UNSUPPORTED_CONFIGURATION = 'UNSUPPORTED_CONFIGURATION';
+        /**
+         * Optional. Output only. If source is a materialized view, this field
+         * signifies the last refresh time of the source.
+         *
+         * @var string
+         */
+        public $replicatedSourceLastRefreshTime;
+        protected $replicationErrorType = ErrorProto::class;
+        protected $replicationErrorDataType = '';
+        /**
+         * Optional. Specifies the interval at which the source table is polled for
+         * updates. It's Optional. If not specified, default replication interval
+         * would be applied.
+         *
+         * @var string
+         */
+        public $replicationIntervalMs;
+        /**
+         * Optional. Output only. Replication status of configured replication.
+         *
+         * @var string
+         */
+        public $replicationStatus;
+        protected $sourceTableType = TableReference::class;
+        protected $sourceTableDataType = '';
+        /**
+         * Optional. Output only. If source is a materialized view, this field
+         * signifies the last refresh time of the source.
+         *
+         * @param string $replicatedSourceLastRefreshTime
+         */
+        public function setReplicatedSourceLastRefreshTime($replicatedSourceLastRefreshTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReplicatedSourceLastRefreshTime()
+        {
+        }
+        /**
+         * Optional. Output only. Replication error that will permanently stopped
+         * table replication.
+         *
+         * @param ErrorProto $replicationError
+         */
+        public function setReplicationError(ErrorProto $replicationError)
+        {
+        }
+        /**
+         * @return ErrorProto
+         */
+        public function getReplicationError()
+        {
+        }
+        /**
+         * Optional. Specifies the interval at which the source table is polled for
+         * updates. It's Optional. If not specified, default replication interval
+         * would be applied.
+         *
+         * @param string $replicationIntervalMs
+         */
+        public function setReplicationIntervalMs($replicationIntervalMs)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReplicationIntervalMs()
+        {
+        }
+        /**
+         * Optional. Output only. Replication status of configured replication.
+         *
+         * Accepted values: REPLICATION_STATUS_UNSPECIFIED, ACTIVE, SOURCE_DELETED,
+         * PERMISSION_DENIED, UNSUPPORTED_CONFIGURATION
+         *
+         * @param self::REPLICATION_STATUS_* $replicationStatus
+         */
+        public function setReplicationStatus($replicationStatus)
+        {
+        }
+        /**
+         * @return self::REPLICATION_STATUS_*
+         */
+        public function getReplicationStatus()
+        {
+        }
+        /**
+         * Required. Source table reference that is replicated.
+         *
+         * @param TableReference $sourceTable
+         */
+        public function setSourceTable(TableReference $sourceTable)
+        {
+        }
+        /**
+         * @return TableReference
+         */
+        public function getSourceTable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Bigquery\TableReplicationInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReplicatedSourceLastRefreshTime()
-    {
-    }
-    /**
-     * Optional. Output only. Replication error that will permanently stopped
-     * table replication.
-     *
-     * @param ErrorProto $replicationError
-     */
-    public function setReplicationError(ErrorProto $replicationError)
-    {
-    }
-    /**
-     * @return ErrorProto
-     */
-    public function getReplicationError()
-    {
-    }
-    /**
-     * Optional. Specifies the interval at which the source table is polled for
-     * updates. It's Optional. If not specified, default replication interval
-     * would be applied.
-     *
-     * @param string $replicationIntervalMs
-     */
-    public function setReplicationIntervalMs($replicationIntervalMs)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReplicationIntervalMs()
-    {
-    }
-    /**
-     * Optional. Output only. Replication status of configured replication.
-     *
-     * Accepted values: REPLICATION_STATUS_UNSPECIFIED, ACTIVE, SOURCE_DELETED,
-     * PERMISSION_DENIED, UNSUPPORTED_CONFIGURATION
-     *
-     * @param self::REPLICATION_STATUS_* $replicationStatus
-     */
-    public function setReplicationStatus($replicationStatus)
-    {
-    }
-    /**
-     * @return self::REPLICATION_STATUS_*
-     */
-    public function getReplicationStatus()
-    {
-    }
-    /**
-     * Required. Source table reference that is replicated.
-     *
-     * @param TableReference $sourceTable
-     */
-    public function setSourceTable(TableReference $sourceTable)
-    {
-    }
-    /**
-     * @return TableReference
-     */
-    public function getSourceTable()
+    class Google_Service_Bigquery_TableReplicationInfo extends \Google\Service\Bigquery\TableReplicationInfo
     {
     }
 }

@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class VmEndpointNatMappings extends \Google\Collection
-{
-    protected $collection_key = 'interfaceNatMappings';
-    /**
-     * Output only. Name of the VM instance which the endpoint belongs to
-     *
-     * @var string
-     */
-    public $instanceName;
-    protected $interfaceNatMappingsType = VmEndpointNatMappingsInterfaceNatMappings::class;
-    protected $interfaceNatMappingsDataType = 'array';
-    /**
-     * Output only. Name of the VM instance which the endpoint belongs to
-     *
-     * @param string $instanceName
-     */
-    public function setInstanceName($instanceName)
+namespace Google\Service\Compute {
+    class VmEndpointNatMappings extends \Google\Collection
     {
+        protected $collection_key = 'interfaceNatMappings';
+        /**
+         * Output only. Name of the VM instance which the endpoint belongs to
+         *
+         * @var string
+         */
+        public $instanceName;
+        protected $interfaceNatMappingsType = VmEndpointNatMappingsInterfaceNatMappings::class;
+        protected $interfaceNatMappingsDataType = 'array';
+        /**
+         * Output only. Name of the VM instance which the endpoint belongs to
+         *
+         * @param string $instanceName
+         */
+        public function setInstanceName($instanceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstanceName()
+        {
+        }
+        /**
+         * @param VmEndpointNatMappingsInterfaceNatMappings[] $interfaceNatMappings
+         */
+        public function setInterfaceNatMappings($interfaceNatMappings)
+        {
+        }
+        /**
+         * @return VmEndpointNatMappingsInterfaceNatMappings[]
+         */
+        public function getInterfaceNatMappings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\VmEndpointNatMappings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstanceName()
-    {
-    }
-    /**
-     * @param VmEndpointNatMappingsInterfaceNatMappings[] $interfaceNatMappings
-     */
-    public function setInterfaceNatMappings($interfaceNatMappings)
-    {
-    }
-    /**
-     * @return VmEndpointNatMappingsInterfaceNatMappings[]
-     */
-    public function getInterfaceNatMappings()
+    class Google_Service_Compute_VmEndpointNatMappings extends \Google\Service\Compute\VmEndpointNatMappings
     {
     }
 }

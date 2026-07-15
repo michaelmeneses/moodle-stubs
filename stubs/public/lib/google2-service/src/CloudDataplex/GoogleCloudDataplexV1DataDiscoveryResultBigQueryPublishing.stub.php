@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1DataDiscoveryResultBigQueryPublishing extends \Google\Model
-{
-    /**
-     * Output only. The BigQuery dataset the discovered tables are published to.
-     *
-     * @var string
-     */
-    public $dataset;
-    /**
-     * Output only. The location of the BigQuery publishing dataset.
-     *
-     * @var string
-     */
-    public $location;
-    /**
-     * Output only. The BigQuery dataset the discovered tables are published to.
-     *
-     * @param string $dataset
-     */
-    public function setDataset($dataset)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1DataDiscoveryResultBigQueryPublishing extends \Google\Model
     {
+        /**
+         * Output only. The BigQuery dataset the discovered tables are published to.
+         *
+         * @var string
+         */
+        public $dataset;
+        /**
+         * Output only. The location of the BigQuery publishing dataset.
+         *
+         * @var string
+         */
+        public $location;
+        /**
+         * Output only. The BigQuery dataset the discovered tables are published to.
+         *
+         * @param string $dataset
+         */
+        public function setDataset($dataset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataset()
+        {
+        }
+        /**
+         * Output only. The location of the BigQuery publishing dataset.
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataDiscoveryResultBigQueryPublishing registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataset()
-    {
-    }
-    /**
-     * Output only. The location of the BigQuery publishing dataset.
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocation()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1DataDiscoveryResultBigQueryPublishing extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataDiscoveryResultBigQueryPublishing
     {
     }
 }

@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkspaceEvents;
-
-class PushNotificationConfig extends \Google\Model
-{
-    protected $authenticationType = AuthenticationInfo::class;
-    protected $authenticationDataType = '';
-    /**
-     * A unique identifier (e.g. UUID) for this push notification.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Token unique for this task/session
-     *
-     * @var string
-     */
-    public $token;
-    /**
-     * Url to send the notification too
-     *
-     * @var string
-     */
-    public $url;
-    /**
-     * Information about the authentication to sent with the notification
-     *
-     * @param AuthenticationInfo $authentication
-     */
-    public function setAuthentication(AuthenticationInfo $authentication)
+namespace Google\Service\WorkspaceEvents {
+    class PushNotificationConfig extends \Google\Model
     {
+        protected $authenticationType = AuthenticationInfo::class;
+        protected $authenticationDataType = '';
+        /**
+         * A unique identifier (e.g. UUID) for this push notification.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Token unique for this task/session
+         *
+         * @var string
+         */
+        public $token;
+        /**
+         * Url to send the notification too
+         *
+         * @var string
+         */
+        public $url;
+        /**
+         * Information about the authentication to sent with the notification
+         *
+         * @param AuthenticationInfo $authentication
+         */
+        public function setAuthentication(AuthenticationInfo $authentication)
+        {
+        }
+        /**
+         * @return AuthenticationInfo
+         */
+        public function getAuthentication()
+        {
+        }
+        /**
+         * A unique identifier (e.g. UUID) for this push notification.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Token unique for this task/session
+         *
+         * @param string $token
+         */
+        public function setToken($token)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getToken()
+        {
+        }
+        /**
+         * Url to send the notification too
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AuthenticationInfo
+     * Runtime class alias of \Google\Service\WorkspaceEvents\PushNotificationConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuthentication()
-    {
-    }
-    /**
-     * A unique identifier (e.g. UUID) for this push notification.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Token unique for this task/session
-     *
-     * @param string $token
-     */
-    public function setToken($token)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getToken()
-    {
-    }
-    /**
-     * Url to send the notification too
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
+    class Google_Service_WorkspaceEvents_PushNotificationConfig extends \Google\Service\WorkspaceEvents\PushNotificationConfig
     {
     }
 }

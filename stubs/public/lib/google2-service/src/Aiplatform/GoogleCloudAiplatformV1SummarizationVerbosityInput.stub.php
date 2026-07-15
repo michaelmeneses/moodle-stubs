@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SummarizationVerbosityInput extends \Google\Model
-{
-    protected $instanceType = GoogleCloudAiplatformV1SummarizationVerbosityInstance::class;
-    protected $instanceDataType = '';
-    protected $metricSpecType = GoogleCloudAiplatformV1SummarizationVerbositySpec::class;
-    protected $metricSpecDataType = '';
-    /**
-     * Required. Summarization verbosity instance.
-     *
-     * @param GoogleCloudAiplatformV1SummarizationVerbosityInstance $instance
-     */
-    public function setInstance(GoogleCloudAiplatformV1SummarizationVerbosityInstance $instance)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SummarizationVerbosityInput extends \Google\Model
     {
+        protected $instanceType = GoogleCloudAiplatformV1SummarizationVerbosityInstance::class;
+        protected $instanceDataType = '';
+        protected $metricSpecType = GoogleCloudAiplatformV1SummarizationVerbositySpec::class;
+        protected $metricSpecDataType = '';
+        /**
+         * Required. Summarization verbosity instance.
+         *
+         * @param GoogleCloudAiplatformV1SummarizationVerbosityInstance $instance
+         */
+        public function setInstance(GoogleCloudAiplatformV1SummarizationVerbosityInstance $instance)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SummarizationVerbosityInstance
+         */
+        public function getInstance()
+        {
+        }
+        /**
+         * Required. Spec for summarization verbosity score metric.
+         *
+         * @param GoogleCloudAiplatformV1SummarizationVerbositySpec $metricSpec
+         */
+        public function setMetricSpec(GoogleCloudAiplatformV1SummarizationVerbositySpec $metricSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SummarizationVerbositySpec
+         */
+        public function getMetricSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1SummarizationVerbosityInstance
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SummarizationVerbosityInput registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstance()
-    {
-    }
-    /**
-     * Required. Spec for summarization verbosity score metric.
-     *
-     * @param GoogleCloudAiplatformV1SummarizationVerbositySpec $metricSpec
-     */
-    public function setMetricSpec(GoogleCloudAiplatformV1SummarizationVerbositySpec $metricSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1SummarizationVerbositySpec
-     */
-    public function getMetricSpec()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SummarizationVerbosityInput extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SummarizationVerbosityInput
     {
     }
 }

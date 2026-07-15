@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class CloudRun extends \Google\Model
-{
-    /**
-     * The location the service is run. Corresponds to the location resource label
-     * in the cloud_run_revision monitored resource
-     * (https://cloud.google.com/monitoring/api/resources#tag_cloud_run_revision).
-     *
-     * @var string
-     */
-    public $location;
-    /**
-     * The name of the Cloud Run service. Corresponds to the service_name resource
-     * label in the cloud_run_revision monitored resource
-     * (https://cloud.google.com/monitoring/api/resources#tag_cloud_run_revision).
-     *
-     * @var string
-     */
-    public $serviceName;
-    /**
-     * The location the service is run. Corresponds to the location resource label
-     * in the cloud_run_revision monitored resource
-     * (https://cloud.google.com/monitoring/api/resources#tag_cloud_run_revision).
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
+namespace Google\Service\Monitoring {
+    class CloudRun extends \Google\Model
     {
+        /**
+         * The location the service is run. Corresponds to the location resource label
+         * in the cloud_run_revision monitored resource
+         * (https://cloud.google.com/monitoring/api/resources#tag_cloud_run_revision).
+         *
+         * @var string
+         */
+        public $location;
+        /**
+         * The name of the Cloud Run service. Corresponds to the service_name resource
+         * label in the cloud_run_revision monitored resource
+         * (https://cloud.google.com/monitoring/api/resources#tag_cloud_run_revision).
+         *
+         * @var string
+         */
+        public $serviceName;
+        /**
+         * The location the service is run. Corresponds to the location resource label
+         * in the cloud_run_revision monitored resource
+         * (https://cloud.google.com/monitoring/api/resources#tag_cloud_run_revision).
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * The name of the Cloud Run service. Corresponds to the service_name resource
+         * label in the cloud_run_revision monitored resource
+         * (https://cloud.google.com/monitoring/api/resources#tag_cloud_run_revision).
+         *
+         * @param string $serviceName
+         */
+        public function setServiceName($serviceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Monitoring\CloudRun registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLocation()
-    {
-    }
-    /**
-     * The name of the Cloud Run service. Corresponds to the service_name resource
-     * label in the cloud_run_revision monitored resource
-     * (https://cloud.google.com/monitoring/api/resources#tag_cloud_run_revision).
-     *
-     * @param string $serviceName
-     */
-    public function setServiceName($serviceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceName()
+    class Google_Service_Monitoring_CloudRun extends \Google\Service\Monitoring\CloudRun
     {
     }
 }

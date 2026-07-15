@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataFusion;
-
-class LoggingConfig extends \Google\Model
-{
-    /**
-     * Optional. Option to determine whether instance logs should be written to
-     * Cloud Logging. By default, instance logs are written to Cloud Logging.
-     *
-     * @var bool
-     */
-    public $instanceCloudLoggingDisabled;
-    /**
-     * Optional. Option to determine whether instance logs should be written to
-     * Cloud Logging. By default, instance logs are written to Cloud Logging.
-     *
-     * @param bool $instanceCloudLoggingDisabled
-     */
-    public function setInstanceCloudLoggingDisabled($instanceCloudLoggingDisabled)
+namespace Google\Service\DataFusion {
+    class LoggingConfig extends \Google\Model
     {
+        /**
+         * Optional. Option to determine whether instance logs should be written to
+         * Cloud Logging. By default, instance logs are written to Cloud Logging.
+         *
+         * @var bool
+         */
+        public $instanceCloudLoggingDisabled;
+        /**
+         * Optional. Option to determine whether instance logs should be written to
+         * Cloud Logging. By default, instance logs are written to Cloud Logging.
+         *
+         * @param bool $instanceCloudLoggingDisabled
+         */
+        public function setInstanceCloudLoggingDisabled($instanceCloudLoggingDisabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getInstanceCloudLoggingDisabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DataFusion\LoggingConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstanceCloudLoggingDisabled()
+    class Google_Service_DataFusion_LoggingConfig extends \Google\Service\DataFusion\LoggingConfig
     {
     }
 }

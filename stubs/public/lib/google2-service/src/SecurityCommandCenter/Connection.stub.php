@@ -21,138 +21,147 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class Connection extends \Google\Model
-{
-    /**
-     * Unspecified protocol (not HOPOPT).
-     */
-    public const PROTOCOL_PROTOCOL_UNSPECIFIED = 'PROTOCOL_UNSPECIFIED';
-    /**
-     * Internet Control Message Protocol.
-     */
-    public const PROTOCOL_ICMP = 'ICMP';
-    /**
-     * Transmission Control Protocol.
-     */
-    public const PROTOCOL_TCP = 'TCP';
-    /**
-     * User Datagram Protocol.
-     */
-    public const PROTOCOL_UDP = 'UDP';
-    /**
-     * Generic Routing Encapsulation.
-     */
-    public const PROTOCOL_GRE = 'GRE';
-    /**
-     * Encap Security Payload.
-     */
-    public const PROTOCOL_ESP = 'ESP';
-    /**
-     * Destination IP address. Not present for sockets that are listening and not
-     * connected.
-     *
-     * @var string
-     */
-    public $destinationIp;
-    /**
-     * Destination port. Not present for sockets that are listening and not
-     * connected.
-     *
-     * @var int
-     */
-    public $destinationPort;
-    /**
-     * IANA Internet Protocol Number such as TCP(6) and UDP(17).
-     *
-     * @var string
-     */
-    public $protocol;
-    /**
-     * Source IP address.
-     *
-     * @var string
-     */
-    public $sourceIp;
-    /**
-     * Source port.
-     *
-     * @var int
-     */
-    public $sourcePort;
-    /**
-     * Destination IP address. Not present for sockets that are listening and not
-     * connected.
-     *
-     * @param string $destinationIp
-     */
-    public function setDestinationIp($destinationIp)
+namespace Google\Service\SecurityCommandCenter {
+    class Connection extends \Google\Model
     {
+        /**
+         * Unspecified protocol (not HOPOPT).
+         */
+        public const PROTOCOL_PROTOCOL_UNSPECIFIED = 'PROTOCOL_UNSPECIFIED';
+        /**
+         * Internet Control Message Protocol.
+         */
+        public const PROTOCOL_ICMP = 'ICMP';
+        /**
+         * Transmission Control Protocol.
+         */
+        public const PROTOCOL_TCP = 'TCP';
+        /**
+         * User Datagram Protocol.
+         */
+        public const PROTOCOL_UDP = 'UDP';
+        /**
+         * Generic Routing Encapsulation.
+         */
+        public const PROTOCOL_GRE = 'GRE';
+        /**
+         * Encap Security Payload.
+         */
+        public const PROTOCOL_ESP = 'ESP';
+        /**
+         * Destination IP address. Not present for sockets that are listening and not
+         * connected.
+         *
+         * @var string
+         */
+        public $destinationIp;
+        /**
+         * Destination port. Not present for sockets that are listening and not
+         * connected.
+         *
+         * @var int
+         */
+        public $destinationPort;
+        /**
+         * IANA Internet Protocol Number such as TCP(6) and UDP(17).
+         *
+         * @var string
+         */
+        public $protocol;
+        /**
+         * Source IP address.
+         *
+         * @var string
+         */
+        public $sourceIp;
+        /**
+         * Source port.
+         *
+         * @var int
+         */
+        public $sourcePort;
+        /**
+         * Destination IP address. Not present for sockets that are listening and not
+         * connected.
+         *
+         * @param string $destinationIp
+         */
+        public function setDestinationIp($destinationIp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDestinationIp()
+        {
+        }
+        /**
+         * Destination port. Not present for sockets that are listening and not
+         * connected.
+         *
+         * @param int $destinationPort
+         */
+        public function setDestinationPort($destinationPort)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getDestinationPort()
+        {
+        }
+        /**
+         * IANA Internet Protocol Number such as TCP(6) and UDP(17).
+         *
+         * Accepted values: PROTOCOL_UNSPECIFIED, ICMP, TCP, UDP, GRE, ESP
+         *
+         * @param self::PROTOCOL_* $protocol
+         */
+        public function setProtocol($protocol)
+        {
+        }
+        /**
+         * @return self::PROTOCOL_*
+         */
+        public function getProtocol()
+        {
+        }
+        /**
+         * Source IP address.
+         *
+         * @param string $sourceIp
+         */
+        public function setSourceIp($sourceIp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceIp()
+        {
+        }
+        /**
+         * Source port.
+         *
+         * @param int $sourcePort
+         */
+        public function setSourcePort($sourcePort)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSourcePort()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\Connection registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDestinationIp()
-    {
-    }
-    /**
-     * Destination port. Not present for sockets that are listening and not
-     * connected.
-     *
-     * @param int $destinationPort
-     */
-    public function setDestinationPort($destinationPort)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getDestinationPort()
-    {
-    }
-    /**
-     * IANA Internet Protocol Number such as TCP(6) and UDP(17).
-     *
-     * Accepted values: PROTOCOL_UNSPECIFIED, ICMP, TCP, UDP, GRE, ESP
-     *
-     * @param self::PROTOCOL_* $protocol
-     */
-    public function setProtocol($protocol)
-    {
-    }
-    /**
-     * @return self::PROTOCOL_*
-     */
-    public function getProtocol()
-    {
-    }
-    /**
-     * Source IP address.
-     *
-     * @param string $sourceIp
-     */
-    public function setSourceIp($sourceIp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourceIp()
-    {
-    }
-    /**
-     * Source port.
-     *
-     * @param int $sourcePort
-     */
-    public function setSourcePort($sourcePort)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSourcePort()
+    class Google_Service_SecurityCommandCenter_Connection extends \Google\Service\SecurityCommandCenter\Connection
     {
     }
 }

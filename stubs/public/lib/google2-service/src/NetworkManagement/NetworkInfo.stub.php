@@ -21,108 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkManagement;
-
-class NetworkInfo extends \Google\Model
-{
-    /**
-     * Name of a Compute Engine network.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The IP range of the subnet matching the source IP address of the test.
-     *
-     * @var string
-     */
-    public $matchedIpRange;
-    /**
-     * URI of the subnet matching the source IP address of the test.
-     *
-     * @var string
-     */
-    public $matchedSubnetUri;
-    /**
-     * The region of the subnet matching the source IP address of the test.
-     *
-     * @var string
-     */
-    public $region;
-    /**
-     * URI of a Compute Engine network.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * Name of a Compute Engine network.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\NetworkManagement {
+    class NetworkInfo extends \Google\Model
     {
+        /**
+         * Name of a Compute Engine network.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The IP range of the subnet matching the source IP address of the test.
+         *
+         * @var string
+         */
+        public $matchedIpRange;
+        /**
+         * URI of the subnet matching the source IP address of the test.
+         *
+         * @var string
+         */
+        public $matchedSubnetUri;
+        /**
+         * The region of the subnet matching the source IP address of the test.
+         *
+         * @var string
+         */
+        public $region;
+        /**
+         * URI of a Compute Engine network.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * Name of a Compute Engine network.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The IP range of the subnet matching the source IP address of the test.
+         *
+         * @param string $matchedIpRange
+         */
+        public function setMatchedIpRange($matchedIpRange)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMatchedIpRange()
+        {
+        }
+        /**
+         * URI of the subnet matching the source IP address of the test.
+         *
+         * @param string $matchedSubnetUri
+         */
+        public function setMatchedSubnetUri($matchedSubnetUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMatchedSubnetUri()
+        {
+        }
+        /**
+         * The region of the subnet matching the source IP address of the test.
+         *
+         * @param string $region
+         */
+        public function setRegion($region)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegion()
+        {
+        }
+        /**
+         * URI of a Compute Engine network.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetworkManagement\NetworkInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The IP range of the subnet matching the source IP address of the test.
-     *
-     * @param string $matchedIpRange
-     */
-    public function setMatchedIpRange($matchedIpRange)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMatchedIpRange()
-    {
-    }
-    /**
-     * URI of the subnet matching the source IP address of the test.
-     *
-     * @param string $matchedSubnetUri
-     */
-    public function setMatchedSubnetUri($matchedSubnetUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMatchedSubnetUri()
-    {
-    }
-    /**
-     * The region of the subnet matching the source IP address of the test.
-     *
-     * @param string $region
-     */
-    public function setRegion($region)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegion()
-    {
-    }
-    /**
-     * URI of a Compute Engine network.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_NetworkManagement_NetworkInfo extends \Google\Service\NetworkManagement\NetworkInfo
     {
     }
 }

@@ -21,48 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BusinessProfilePerformance\Resource;
-
-/**
- * The "monthly" collection of methods.
- * Typical usage is:
- *  <code>
- *   $businessprofileperformanceService = new Google\Service\BusinessProfilePerformance(...);
- *   $monthly = $businessprofileperformanceService->locations_searchkeywords_impressions_monthly;
- *  </code>
- */
-class LocationsSearchkeywordsImpressionsMonthly extends \Google\Service\Resource
-{
+namespace Google\Service\BusinessProfilePerformance\Resource {
+    use Google\Service\BusinessProfilePerformance\ListSearchKeywordImpressionsMonthlyResponse;
     /**
-     * (monthly.listLocationsSearchkeywordsImpressionsMonthly)
-     *
-     * @param string $parent Required. The location for which the time series should
-     * be fetched. Format: locations/{location_id} where location_id is an
-     * unobfuscated listing id.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int monthlyRange.endMonth.day Day of a month. Must be from 1 to 31
-     * and valid for the year and month, or 0 to specify a year by itself or a year
-     * and month where the day isn't significant.
-     * @opt_param int monthlyRange.endMonth.month Month of a year. Must be from 1 to
-     * 12, or 0 to specify a year without a month and day.
-     * @opt_param int monthlyRange.endMonth.year Year of the date. Must be from 1 to
-     * 9999, or 0 to specify a date without a year.
-     * @opt_param int monthlyRange.startMonth.day Day of a month. Must be from 1 to
-     * 31 and valid for the year and month, or 0 to specify a year by itself or a
-     * year and month where the day isn't significant.
-     * @opt_param int monthlyRange.startMonth.month Month of a year. Must be from 1
-     * to 12, or 0 to specify a year without a month and day.
-     * @opt_param int monthlyRange.startMonth.year Year of the date. Must be from 1
-     * to 9999, or 0 to specify a date without a year.
-     * @opt_param int pageSize Optional. The number of results requested. The
-     * default page size is 100. Page size can be set to a maximum of 100.
-     * @opt_param string pageToken Optional. A token indicating the next paginated
-     * result to be returned.
-     * @return ListSearchKeywordImpressionsMonthlyResponse
-     * @throws \Google\Service\Exception
+     * The "monthly" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $businessprofileperformanceService = new Google\Service\BusinessProfilePerformance(...);
+     *   $monthly = $businessprofileperformanceService->locations_searchkeywords_impressions_monthly;
+     *  </code>
      */
-    public function listLocationsSearchkeywordsImpressionsMonthly($parent, $optParams = [])
+    class LocationsSearchkeywordsImpressionsMonthly extends \Google\Service\Resource
+    {
+        /**
+         * (monthly.listLocationsSearchkeywordsImpressionsMonthly)
+         *
+         * @param string $parent Required. The location for which the time series should
+         * be fetched. Format: locations/{location_id} where location_id is an
+         * unobfuscated listing id.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int monthlyRange.endMonth.day Day of a month. Must be from 1 to 31
+         * and valid for the year and month, or 0 to specify a year by itself or a year
+         * and month where the day isn't significant.
+         * @opt_param int monthlyRange.endMonth.month Month of a year. Must be from 1 to
+         * 12, or 0 to specify a year without a month and day.
+         * @opt_param int monthlyRange.endMonth.year Year of the date. Must be from 1 to
+         * 9999, or 0 to specify a date without a year.
+         * @opt_param int monthlyRange.startMonth.day Day of a month. Must be from 1 to
+         * 31 and valid for the year and month, or 0 to specify a year by itself or a
+         * year and month where the day isn't significant.
+         * @opt_param int monthlyRange.startMonth.month Month of a year. Must be from 1
+         * to 12, or 0 to specify a year without a month and day.
+         * @opt_param int monthlyRange.startMonth.year Year of the date. Must be from 1
+         * to 9999, or 0 to specify a date without a year.
+         * @opt_param int pageSize Optional. The number of results requested. The
+         * default page size is 100. Page size can be set to a maximum of 100.
+         * @opt_param string pageToken Optional. A token indicating the next paginated
+         * result to be returned.
+         * @return ListSearchKeywordImpressionsMonthlyResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listLocationsSearchkeywordsImpressionsMonthly($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\BusinessProfilePerformance\Resource\LocationsSearchkeywordsImpressionsMonthly registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_BusinessProfilePerformance_Resource_LocationsSearchkeywordsImpressionsMonthly extends \Google\Service\BusinessProfilePerformance\Resource\LocationsSearchkeywordsImpressionsMonthly
     {
     }
 }

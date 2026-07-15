@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1RubricBasedInstructionFollowingInput extends \Google\Model
-{
-    protected $instanceType = GoogleCloudAiplatformV1RubricBasedInstructionFollowingInstance::class;
-    protected $instanceDataType = '';
-    protected $metricSpecType = GoogleCloudAiplatformV1RubricBasedInstructionFollowingSpec::class;
-    protected $metricSpecDataType = '';
-    /**
-     * Required. Instance for RubricBasedInstructionFollowing metric.
-     *
-     * @param GoogleCloudAiplatformV1RubricBasedInstructionFollowingInstance $instance
-     */
-    public function setInstance(GoogleCloudAiplatformV1RubricBasedInstructionFollowingInstance $instance)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1RubricBasedInstructionFollowingInput extends \Google\Model
     {
+        protected $instanceType = GoogleCloudAiplatformV1RubricBasedInstructionFollowingInstance::class;
+        protected $instanceDataType = '';
+        protected $metricSpecType = GoogleCloudAiplatformV1RubricBasedInstructionFollowingSpec::class;
+        protected $metricSpecDataType = '';
+        /**
+         * Required. Instance for RubricBasedInstructionFollowing metric.
+         *
+         * @param GoogleCloudAiplatformV1RubricBasedInstructionFollowingInstance $instance
+         */
+        public function setInstance(GoogleCloudAiplatformV1RubricBasedInstructionFollowingInstance $instance)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1RubricBasedInstructionFollowingInstance
+         */
+        public function getInstance()
+        {
+        }
+        /**
+         * Required. Spec for RubricBasedInstructionFollowing metric.
+         *
+         * @param GoogleCloudAiplatformV1RubricBasedInstructionFollowingSpec $metricSpec
+         */
+        public function setMetricSpec(GoogleCloudAiplatformV1RubricBasedInstructionFollowingSpec $metricSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1RubricBasedInstructionFollowingSpec
+         */
+        public function getMetricSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1RubricBasedInstructionFollowingInstance
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1RubricBasedInstructionFollowingInput registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstance()
-    {
-    }
-    /**
-     * Required. Spec for RubricBasedInstructionFollowing metric.
-     *
-     * @param GoogleCloudAiplatformV1RubricBasedInstructionFollowingSpec $metricSpec
-     */
-    public function setMetricSpec(GoogleCloudAiplatformV1RubricBasedInstructionFollowingSpec $metricSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1RubricBasedInstructionFollowingSpec
-     */
-    public function getMetricSpec()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1RubricBasedInstructionFollowingInput extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1RubricBasedInstructionFollowingInput
     {
     }
 }

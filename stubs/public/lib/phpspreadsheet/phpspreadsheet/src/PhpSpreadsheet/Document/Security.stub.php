@@ -8,6 +8,7 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Document;
 
+use PhpOffice\PhpSpreadsheet\Shared\PasswordHasher;
 class Security
 {
     /**

@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PlayIntegrity;
-
-class GuidanceDetails extends \Google\Collection
-{
-    protected $collection_key = 'userRemediationDetails';
-    protected $userRemediationDetailsType = UserRemediationDetails::class;
-    protected $userRemediationDetailsDataType = 'array';
-    /**
-     * @param UserRemediationDetails[]
-     */
-    public function setUserRemediationDetails($userRemediationDetails)
+namespace Google\Service\PlayIntegrity {
+    class GuidanceDetails extends \Google\Collection
     {
+        protected $collection_key = 'userRemediationDetails';
+        protected $userRemediationDetailsType = UserRemediationDetails::class;
+        protected $userRemediationDetailsDataType = 'array';
+        /**
+         * @param UserRemediationDetails[]
+         */
+        public function setUserRemediationDetails($userRemediationDetails)
+        {
+        }
+        /**
+         * @return UserRemediationDetails[]
+         */
+        public function getUserRemediationDetails()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return UserRemediationDetails[]
+     * Runtime class alias of \Google\Service\PlayIntegrity\GuidanceDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUserRemediationDetails()
+    class Google_Service_PlayIntegrity_GuidanceDetails extends \Google\Service\PlayIntegrity\GuidanceDetails
     {
     }
 }

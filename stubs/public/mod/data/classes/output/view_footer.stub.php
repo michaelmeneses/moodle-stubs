@@ -22,6 +22,13 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_data\output;
 
+use core\output\renderable;
+use core\output\templatable;
+use html_writer;
+use mod_data\manager;
+use mod_data\template;
+use moodle_url;
+use renderer_base;
 /**
  * Renderable class for footer in the view pages of the database activity.
  *

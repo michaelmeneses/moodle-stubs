@@ -8,6 +8,7 @@
  */
 namespace Aws\Health;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Health APIs and Notifications** service.
  * @method \Aws\Result describeAffectedAccountsForOrganization(array $args = [])

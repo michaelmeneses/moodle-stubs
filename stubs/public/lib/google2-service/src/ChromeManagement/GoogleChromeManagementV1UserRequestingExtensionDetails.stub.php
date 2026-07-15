@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementV1UserRequestingExtensionDetails extends \Google\Model
-{
-    /**
-     * The e-mail address of a user that has requested the extension.
-     *
-     * @var string
-     */
-    public $email;
-    /**
-     * Request justification as entered by the user.
-     *
-     * @var string
-     */
-    public $justification;
-    /**
-     * The e-mail address of a user that has requested the extension.
-     *
-     * @param string $email
-     */
-    public function setEmail($email)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementV1UserRequestingExtensionDetails extends \Google\Model
     {
+        /**
+         * The e-mail address of a user that has requested the extension.
+         *
+         * @var string
+         */
+        public $email;
+        /**
+         * Request justification as entered by the user.
+         *
+         * @var string
+         */
+        public $justification;
+        /**
+         * The e-mail address of a user that has requested the extension.
+         *
+         * @param string $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
+        /**
+         * Request justification as entered by the user.
+         *
+         * @param string $justification
+         */
+        public function setJustification($justification)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getJustification()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementV1UserRequestingExtensionDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmail()
-    {
-    }
-    /**
-     * Request justification as entered by the user.
-     *
-     * @param string $justification
-     */
-    public function setJustification($justification)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getJustification()
+    class Google_Service_ChromeManagement_GoogleChromeManagementV1UserRequestingExtensionDetails extends \Google\Service\ChromeManagement\GoogleChromeManagementV1UserRequestingExtensionDetails
     {
     }
 }

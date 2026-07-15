@@ -21,106 +21,115 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1mainUploadConversationRequest extends \Google\Model
-{
-    protected $conversationType = GoogleCloudContactcenterinsightsV1mainConversation::class;
-    protected $conversationDataType = '';
-    /**
-     * Optional. A unique ID for the new conversation. This ID will become the
-     * final component of the conversation's resource name. If no ID is specified,
-     * a server-generated ID will be used. This value should be 4-64 characters
-     * and must match the regular expression `^[a-z0-9-]{4,64}$`. Valid characters
-     * are `a-z-`
-     *
-     * @var string
-     */
-    public $conversationId;
-    /**
-     * Required. The parent resource of the conversation.
-     *
-     * @var string
-     */
-    public $parent;
-    protected $redactionConfigType = GoogleCloudContactcenterinsightsV1mainRedactionConfig::class;
-    protected $redactionConfigDataType = '';
-    protected $speechConfigType = GoogleCloudContactcenterinsightsV1mainSpeechConfig::class;
-    protected $speechConfigDataType = '';
-    /**
-     * Required. The conversation resource to create.
-     *
-     * @param GoogleCloudContactcenterinsightsV1mainConversation $conversation
-     */
-    public function setConversation(GoogleCloudContactcenterinsightsV1mainConversation $conversation)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1mainUploadConversationRequest extends \Google\Model
     {
+        protected $conversationType = GoogleCloudContactcenterinsightsV1mainConversation::class;
+        protected $conversationDataType = '';
+        /**
+         * Optional. A unique ID for the new conversation. This ID will become the
+         * final component of the conversation's resource name. If no ID is specified,
+         * a server-generated ID will be used. This value should be 4-64 characters
+         * and must match the regular expression `^[a-z0-9-]{4,64}$`. Valid characters
+         * are `a-z-`
+         *
+         * @var string
+         */
+        public $conversationId;
+        /**
+         * Required. The parent resource of the conversation.
+         *
+         * @var string
+         */
+        public $parent;
+        protected $redactionConfigType = GoogleCloudContactcenterinsightsV1mainRedactionConfig::class;
+        protected $redactionConfigDataType = '';
+        protected $speechConfigType = GoogleCloudContactcenterinsightsV1mainSpeechConfig::class;
+        protected $speechConfigDataType = '';
+        /**
+         * Required. The conversation resource to create.
+         *
+         * @param GoogleCloudContactcenterinsightsV1mainConversation $conversation
+         */
+        public function setConversation(GoogleCloudContactcenterinsightsV1mainConversation $conversation)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1mainConversation
+         */
+        public function getConversation()
+        {
+        }
+        /**
+         * Optional. A unique ID for the new conversation. This ID will become the
+         * final component of the conversation's resource name. If no ID is specified,
+         * a server-generated ID will be used. This value should be 4-64 characters
+         * and must match the regular expression `^[a-z0-9-]{4,64}$`. Valid characters
+         * are `a-z-`
+         *
+         * @param string $conversationId
+         */
+        public function setConversationId($conversationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConversationId()
+        {
+        }
+        /**
+         * Required. The parent resource of the conversation.
+         *
+         * @param string $parent
+         */
+        public function setParent($parent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParent()
+        {
+        }
+        /**
+         * Optional. DLP settings for transcript redaction. Will default to the config
+         * specified in Settings.
+         *
+         * @param GoogleCloudContactcenterinsightsV1mainRedactionConfig $redactionConfig
+         */
+        public function setRedactionConfig(GoogleCloudContactcenterinsightsV1mainRedactionConfig $redactionConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1mainRedactionConfig
+         */
+        public function getRedactionConfig()
+        {
+        }
+        /**
+         * Optional. Speech-to-Text configuration. Will default to the config
+         * specified in Settings.
+         *
+         * @param GoogleCloudContactcenterinsightsV1mainSpeechConfig $speechConfig
+         */
+        public function setSpeechConfig(GoogleCloudContactcenterinsightsV1mainSpeechConfig $speechConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1mainSpeechConfig
+         */
+        public function getSpeechConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudContactcenterinsightsV1mainConversation
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainUploadConversationRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConversation()
-    {
-    }
-    /**
-     * Optional. A unique ID for the new conversation. This ID will become the
-     * final component of the conversation's resource name. If no ID is specified,
-     * a server-generated ID will be used. This value should be 4-64 characters
-     * and must match the regular expression `^[a-z0-9-]{4,64}$`. Valid characters
-     * are `a-z-`
-     *
-     * @param string $conversationId
-     */
-    public function setConversationId($conversationId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getConversationId()
-    {
-    }
-    /**
-     * Required. The parent resource of the conversation.
-     *
-     * @param string $parent
-     */
-    public function setParent($parent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParent()
-    {
-    }
-    /**
-     * Optional. DLP settings for transcript redaction. Will default to the config
-     * specified in Settings.
-     *
-     * @param GoogleCloudContactcenterinsightsV1mainRedactionConfig $redactionConfig
-     */
-    public function setRedactionConfig(GoogleCloudContactcenterinsightsV1mainRedactionConfig $redactionConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudContactcenterinsightsV1mainRedactionConfig
-     */
-    public function getRedactionConfig()
-    {
-    }
-    /**
-     * Optional. Speech-to-Text configuration. Will default to the config
-     * specified in Settings.
-     *
-     * @param GoogleCloudContactcenterinsightsV1mainSpeechConfig $speechConfig
-     */
-    public function setSpeechConfig(GoogleCloudContactcenterinsightsV1mainSpeechConfig $speechConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudContactcenterinsightsV1mainSpeechConfig
-     */
-    public function getSpeechConfig()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1mainUploadConversationRequest extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainUploadConversationRequest
     {
     }
 }

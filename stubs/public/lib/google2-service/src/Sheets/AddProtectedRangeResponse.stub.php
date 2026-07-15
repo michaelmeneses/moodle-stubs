@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class AddProtectedRangeResponse extends \Google\Model
-{
-    protected $protectedRangeType = ProtectedRange::class;
-    protected $protectedRangeDataType = '';
-    /**
-     * The newly added protected range.
-     *
-     * @param ProtectedRange $protectedRange
-     */
-    public function setProtectedRange(ProtectedRange $protectedRange)
+namespace Google\Service\Sheets {
+    class AddProtectedRangeResponse extends \Google\Model
     {
+        protected $protectedRangeType = ProtectedRange::class;
+        protected $protectedRangeDataType = '';
+        /**
+         * The newly added protected range.
+         *
+         * @param ProtectedRange $protectedRange
+         */
+        public function setProtectedRange(ProtectedRange $protectedRange)
+        {
+        }
+        /**
+         * @return ProtectedRange
+         */
+        public function getProtectedRange()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ProtectedRange
+     * Runtime class alias of \Google\Service\Sheets\AddProtectedRangeResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProtectedRange()
+    class Google_Service_Sheets_AddProtectedRangeResponse extends \Google\Service\Sheets\AddProtectedRangeResponse
     {
     }
 }

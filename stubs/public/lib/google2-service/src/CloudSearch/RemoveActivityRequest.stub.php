@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class RemoveActivityRequest extends \Google\Model
-{
-    protected $requestOptionsType = RequestOptions::class;
-    protected $requestOptionsDataType = '';
-    protected $userActivityType = UserActivity::class;
-    protected $userActivityDataType = '';
-    /**
-     * Request options, such as the search application and clientId.
-     *
-     * @param RequestOptions $requestOptions
-     */
-    public function setRequestOptions(RequestOptions $requestOptions)
+namespace Google\Service\CloudSearch {
+    class RemoveActivityRequest extends \Google\Model
     {
+        protected $requestOptionsType = RequestOptions::class;
+        protected $requestOptionsDataType = '';
+        protected $userActivityType = UserActivity::class;
+        protected $userActivityDataType = '';
+        /**
+         * Request options, such as the search application and clientId.
+         *
+         * @param RequestOptions $requestOptions
+         */
+        public function setRequestOptions(RequestOptions $requestOptions)
+        {
+        }
+        /**
+         * @return RequestOptions
+         */
+        public function getRequestOptions()
+        {
+        }
+        /**
+         * User Activity containing the data to be deleted.
+         *
+         * @param UserActivity $userActivity
+         */
+        public function setUserActivity(UserActivity $userActivity)
+        {
+        }
+        /**
+         * @return UserActivity
+         */
+        public function getUserActivity()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RequestOptions
+     * Runtime class alias of \Google\Service\CloudSearch\RemoveActivityRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequestOptions()
-    {
-    }
-    /**
-     * User Activity containing the data to be deleted.
-     *
-     * @param UserActivity $userActivity
-     */
-    public function setUserActivity(UserActivity $userActivity)
-    {
-    }
-    /**
-     * @return UserActivity
-     */
-    public function getUserActivity()
+    class Google_Service_CloudSearch_RemoveActivityRequest extends \Google\Service\CloudSearch\RemoveActivityRequest
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMMigrationService;
-
-class CutoverForecast extends \Google\Model
-{
-    /**
-     * Output only. Estimation of the CutoverJob duration.
-     *
-     * @var string
-     */
-    public $estimatedCutoverJobDuration;
-    /**
-     * Output only. Estimation of the CutoverJob duration.
-     *
-     * @param string $estimatedCutoverJobDuration
-     */
-    public function setEstimatedCutoverJobDuration($estimatedCutoverJobDuration)
+namespace Google\Service\VMMigrationService {
+    class CutoverForecast extends \Google\Model
     {
+        /**
+         * Output only. Estimation of the CutoverJob duration.
+         *
+         * @var string
+         */
+        public $estimatedCutoverJobDuration;
+        /**
+         * Output only. Estimation of the CutoverJob duration.
+         *
+         * @param string $estimatedCutoverJobDuration
+         */
+        public function setEstimatedCutoverJobDuration($estimatedCutoverJobDuration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEstimatedCutoverJobDuration()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\VMMigrationService\CutoverForecast registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEstimatedCutoverJobDuration()
+    class Google_Service_VMMigrationService_CutoverForecast extends \Google\Service\VMMigrationService\CutoverForecast
     {
     }
 }

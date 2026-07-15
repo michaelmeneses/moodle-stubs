@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManagedKafka;
-
-class SchemaReference extends \Google\Model
-{
-    /**
-     * Required. The name of the reference.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. The subject of the reference.
-     *
-     * @var string
-     */
-    public $subject;
-    /**
-     * Required. The version of the reference.
-     *
-     * @var int
-     */
-    public $version;
-    /**
-     * Required. The name of the reference.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\ManagedKafka {
+    class SchemaReference extends \Google\Model
     {
+        /**
+         * Required. The name of the reference.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. The subject of the reference.
+         *
+         * @var string
+         */
+        public $subject;
+        /**
+         * Required. The version of the reference.
+         *
+         * @var int
+         */
+        public $version;
+        /**
+         * Required. The name of the reference.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Required. The subject of the reference.
+         *
+         * @param string $subject
+         */
+        public function setSubject($subject)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubject()
+        {
+        }
+        /**
+         * Required. The version of the reference.
+         *
+         * @param int $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ManagedKafka\SchemaReference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Required. The subject of the reference.
-     *
-     * @param string $subject
-     */
-    public function setSubject($subject)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubject()
-    {
-    }
-    /**
-     * Required. The version of the reference.
-     *
-     * @param int $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getVersion()
+    class Google_Service_ManagedKafka_SchemaReference extends \Google\Service\ManagedKafka\SchemaReference
     {
     }
 }

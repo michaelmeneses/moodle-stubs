@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Appengine;
-
-class NetworkSettings extends \Google\Model
-{
-    /**
-     * Unspecified
-     */
-    public const INGRESS_TRAFFIC_ALLOWED_INGRESS_TRAFFIC_ALLOWED_UNSPECIFIED = 'INGRESS_TRAFFIC_ALLOWED_UNSPECIFIED';
-    /**
-     * Allow HTTP traffic from public and private sources.
-     */
-    public const INGRESS_TRAFFIC_ALLOWED_INGRESS_TRAFFIC_ALLOWED_ALL = 'INGRESS_TRAFFIC_ALLOWED_ALL';
-    /**
-     * Allow HTTP traffic from only private VPC sources.
-     */
-    public const INGRESS_TRAFFIC_ALLOWED_INGRESS_TRAFFIC_ALLOWED_INTERNAL_ONLY = 'INGRESS_TRAFFIC_ALLOWED_INTERNAL_ONLY';
-    /**
-     * Allow HTTP traffic from private VPC sources and through load balancers.
-     */
-    public const INGRESS_TRAFFIC_ALLOWED_INGRESS_TRAFFIC_ALLOWED_INTERNAL_AND_LB = 'INGRESS_TRAFFIC_ALLOWED_INTERNAL_AND_LB';
-    /**
-     * The ingress settings for version or service.
-     *
-     * @var string
-     */
-    public $ingressTrafficAllowed;
-    /**
-     * The ingress settings for version or service.
-     *
-     * Accepted values: INGRESS_TRAFFIC_ALLOWED_UNSPECIFIED,
-     * INGRESS_TRAFFIC_ALLOWED_ALL, INGRESS_TRAFFIC_ALLOWED_INTERNAL_ONLY,
-     * INGRESS_TRAFFIC_ALLOWED_INTERNAL_AND_LB
-     *
-     * @param self::INGRESS_TRAFFIC_ALLOWED_* $ingressTrafficAllowed
-     */
-    public function setIngressTrafficAllowed($ingressTrafficAllowed)
+namespace Google\Service\Appengine {
+    class NetworkSettings extends \Google\Model
     {
+        /**
+         * Unspecified
+         */
+        public const INGRESS_TRAFFIC_ALLOWED_INGRESS_TRAFFIC_ALLOWED_UNSPECIFIED = 'INGRESS_TRAFFIC_ALLOWED_UNSPECIFIED';
+        /**
+         * Allow HTTP traffic from public and private sources.
+         */
+        public const INGRESS_TRAFFIC_ALLOWED_INGRESS_TRAFFIC_ALLOWED_ALL = 'INGRESS_TRAFFIC_ALLOWED_ALL';
+        /**
+         * Allow HTTP traffic from only private VPC sources.
+         */
+        public const INGRESS_TRAFFIC_ALLOWED_INGRESS_TRAFFIC_ALLOWED_INTERNAL_ONLY = 'INGRESS_TRAFFIC_ALLOWED_INTERNAL_ONLY';
+        /**
+         * Allow HTTP traffic from private VPC sources and through load balancers.
+         */
+        public const INGRESS_TRAFFIC_ALLOWED_INGRESS_TRAFFIC_ALLOWED_INTERNAL_AND_LB = 'INGRESS_TRAFFIC_ALLOWED_INTERNAL_AND_LB';
+        /**
+         * The ingress settings for version or service.
+         *
+         * @var string
+         */
+        public $ingressTrafficAllowed;
+        /**
+         * The ingress settings for version or service.
+         *
+         * Accepted values: INGRESS_TRAFFIC_ALLOWED_UNSPECIFIED,
+         * INGRESS_TRAFFIC_ALLOWED_ALL, INGRESS_TRAFFIC_ALLOWED_INTERNAL_ONLY,
+         * INGRESS_TRAFFIC_ALLOWED_INTERNAL_AND_LB
+         *
+         * @param self::INGRESS_TRAFFIC_ALLOWED_* $ingressTrafficAllowed
+         */
+        public function setIngressTrafficAllowed($ingressTrafficAllowed)
+        {
+        }
+        /**
+         * @return self::INGRESS_TRAFFIC_ALLOWED_*
+         */
+        public function getIngressTrafficAllowed()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::INGRESS_TRAFFIC_ALLOWED_*
+     * Runtime class alias of \Google\Service\Appengine\NetworkSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIngressTrafficAllowed()
+    class Google_Service_Appengine_NetworkSettings extends \Google\Service\Appengine\NetworkSettings
     {
     }
 }

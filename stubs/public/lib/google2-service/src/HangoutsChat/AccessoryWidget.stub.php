@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class AccessoryWidget extends \Google\Model
-{
-    protected $buttonListType = GoogleAppsCardV1ButtonList::class;
-    protected $buttonListDataType = '';
-    /**
-     * A list of buttons.
-     *
-     * @param GoogleAppsCardV1ButtonList $buttonList
-     */
-    public function setButtonList(GoogleAppsCardV1ButtonList $buttonList)
+namespace Google\Service\HangoutsChat {
+    class AccessoryWidget extends \Google\Model
     {
+        protected $buttonListType = GoogleAppsCardV1ButtonList::class;
+        protected $buttonListDataType = '';
+        /**
+         * A list of buttons.
+         *
+         * @param GoogleAppsCardV1ButtonList $buttonList
+         */
+        public function setButtonList(GoogleAppsCardV1ButtonList $buttonList)
+        {
+        }
+        /**
+         * @return GoogleAppsCardV1ButtonList
+         */
+        public function getButtonList()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAppsCardV1ButtonList
+     * Runtime class alias of \Google\Service\HangoutsChat\AccessoryWidget registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getButtonList()
+    class Google_Service_HangoutsChat_AccessoryWidget extends \Google\Service\HangoutsChat\AccessoryWidget
     {
     }
 }

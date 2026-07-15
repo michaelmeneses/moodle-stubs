@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3ExperimentResultVersionMetrics extends \Google\Collection
-{
-    protected $collection_key = 'metrics';
-    protected $metricsType = GoogleCloudDialogflowCxV3ExperimentResultMetric::class;
-    protected $metricsDataType = 'array';
-    /**
-     * Number of sessions that were allocated to this version.
-     *
-     * @var int
-     */
-    public $sessionCount;
-    /**
-     * The name of the flow Version. Format:
-     * `projects//locations//agents//flows//versions/`.
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * The metrics and corresponding confidence intervals in the inference result.
-     *
-     * @param GoogleCloudDialogflowCxV3ExperimentResultMetric[] $metrics
-     */
-    public function setMetrics($metrics)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3ExperimentResultVersionMetrics extends \Google\Collection
     {
+        protected $collection_key = 'metrics';
+        protected $metricsType = GoogleCloudDialogflowCxV3ExperimentResultMetric::class;
+        protected $metricsDataType = 'array';
+        /**
+         * Number of sessions that were allocated to this version.
+         *
+         * @var int
+         */
+        public $sessionCount;
+        /**
+         * The name of the flow Version. Format:
+         * `projects//locations//agents//flows//versions/`.
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * The metrics and corresponding confidence intervals in the inference result.
+         *
+         * @param GoogleCloudDialogflowCxV3ExperimentResultMetric[] $metrics
+         */
+        public function setMetrics($metrics)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3ExperimentResultMetric[]
+         */
+        public function getMetrics()
+        {
+        }
+        /**
+         * Number of sessions that were allocated to this version.
+         *
+         * @param int $sessionCount
+         */
+        public function setSessionCount($sessionCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSessionCount()
+        {
+        }
+        /**
+         * The name of the flow Version. Format:
+         * `projects//locations//agents//flows//versions/`.
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowCxV3ExperimentResultMetric[]
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ExperimentResultVersionMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetrics()
-    {
-    }
-    /**
-     * Number of sessions that were allocated to this version.
-     *
-     * @param int $sessionCount
-     */
-    public function setSessionCount($sessionCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSessionCount()
-    {
-    }
-    /**
-     * The name of the flow Version. Format:
-     * `projects//locations//agents//flows//versions/`.
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3ExperimentResultVersionMetrics extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ExperimentResultVersionMetrics
     {
     }
 }

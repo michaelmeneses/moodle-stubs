@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaPurgeCompletionSuggestionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'errorSamples';
-    protected $errorSamplesType = GoogleRpcStatus::class;
-    protected $errorSamplesDataType = 'array';
-    /**
-     * Whether the completion suggestions were successfully purged.
-     *
-     * @var bool
-     */
-    public $purgeSucceeded;
-    /**
-     * A sample of errors encountered while processing the request.
-     *
-     * @param GoogleRpcStatus[] $errorSamples
-     */
-    public function setErrorSamples($errorSamples)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaPurgeCompletionSuggestionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'errorSamples';
+        protected $errorSamplesType = GoogleRpcStatus::class;
+        protected $errorSamplesDataType = 'array';
+        /**
+         * Whether the completion suggestions were successfully purged.
+         *
+         * @var bool
+         */
+        public $purgeSucceeded;
+        /**
+         * A sample of errors encountered while processing the request.
+         *
+         * @param GoogleRpcStatus[] $errorSamples
+         */
+        public function setErrorSamples($errorSamples)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus[]
+         */
+        public function getErrorSamples()
+        {
+        }
+        /**
+         * Whether the completion suggestions were successfully purged.
+         *
+         * @param bool $purgeSucceeded
+         */
+        public function setPurgeSucceeded($purgeSucceeded)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPurgeSucceeded()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleRpcStatus[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaPurgeCompletionSuggestionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrorSamples()
-    {
-    }
-    /**
-     * Whether the completion suggestions were successfully purged.
-     *
-     * @param bool $purgeSucceeded
-     */
-    public function setPurgeSucceeded($purgeSucceeded)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPurgeSucceeded()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaPurgeCompletionSuggestionsResponse extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaPurgeCompletionSuggestionsResponse
     {
     }
 }

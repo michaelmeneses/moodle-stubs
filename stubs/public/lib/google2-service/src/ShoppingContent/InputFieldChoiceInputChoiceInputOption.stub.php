@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class InputFieldChoiceInputChoiceInputOption extends \Google\Model
-{
-    protected $additionalInputType = InputField::class;
-    protected $additionalInputDataType = '';
-    /**
-     * Not for display but need to be sent back for the selected choice option.
-     *
-     * @var string
-     */
-    public $id;
-    protected $labelType = TextWithTooltip::class;
-    protected $labelDataType = '';
-    /**
-     * Input that should be displayed when this option is selected. The additional
-     * input will not contain a `ChoiceInput`.
-     *
-     * @param InputField $additionalInput
-     */
-    public function setAdditionalInput(InputField $additionalInput)
+namespace Google\Service\ShoppingContent {
+    class InputFieldChoiceInputChoiceInputOption extends \Google\Model
     {
+        protected $additionalInputType = InputField::class;
+        protected $additionalInputDataType = '';
+        /**
+         * Not for display but need to be sent back for the selected choice option.
+         *
+         * @var string
+         */
+        public $id;
+        protected $labelType = TextWithTooltip::class;
+        protected $labelDataType = '';
+        /**
+         * Input that should be displayed when this option is selected. The additional
+         * input will not contain a `ChoiceInput`.
+         *
+         * @param InputField $additionalInput
+         */
+        public function setAdditionalInput(InputField $additionalInput)
+        {
+        }
+        /**
+         * @return InputField
+         */
+        public function getAdditionalInput()
+        {
+        }
+        /**
+         * Not for display but need to be sent back for the selected choice option.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Short description of the choice option. There may be more information to be
+         * shown as a tooltip.
+         *
+         * @param TextWithTooltip $label
+         */
+        public function setLabel(TextWithTooltip $label)
+        {
+        }
+        /**
+         * @return TextWithTooltip
+         */
+        public function getLabel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InputField
+     * Runtime class alias of \Google\Service\ShoppingContent\InputFieldChoiceInputChoiceInputOption registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdditionalInput()
-    {
-    }
-    /**
-     * Not for display but need to be sent back for the selected choice option.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Short description of the choice option. There may be more information to be
-     * shown as a tooltip.
-     *
-     * @param TextWithTooltip $label
-     */
-    public function setLabel(TextWithTooltip $label)
-    {
-    }
-    /**
-     * @return TextWithTooltip
-     */
-    public function getLabel()
+    class Google_Service_ShoppingContent_InputFieldChoiceInputChoiceInputOption extends \Google\Service\ShoppingContent\InputFieldChoiceInputChoiceInputOption
     {
     }
 }

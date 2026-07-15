@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class ShellTask extends \Google\Model
-{
-    /**
-     * The shell command to run.
-     *
-     * @var string
-     */
-    public $command;
-    /**
-     * Exit code for the task.
-     *
-     * @var int
-     */
-    public $exitCode;
-    /**
-     * The shell command to run.
-     *
-     * @param string $command
-     */
-    public function setCommand($command)
+namespace Google\Service\Dataflow {
+    class ShellTask extends \Google\Model
     {
+        /**
+         * The shell command to run.
+         *
+         * @var string
+         */
+        public $command;
+        /**
+         * Exit code for the task.
+         *
+         * @var int
+         */
+        public $exitCode;
+        /**
+         * The shell command to run.
+         *
+         * @param string $command
+         */
+        public function setCommand($command)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCommand()
+        {
+        }
+        /**
+         * Exit code for the task.
+         *
+         * @param int $exitCode
+         */
+        public function setExitCode($exitCode)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getExitCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataflow\ShellTask registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCommand()
-    {
-    }
-    /**
-     * Exit code for the task.
-     *
-     * @param int $exitCode
-     */
-    public function setExitCode($exitCode)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getExitCode()
+    class Google_Service_Dataflow_ShellTask extends \Google\Service\Dataflow\ShellTask
     {
     }
 }

@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GameServices;
-
-class DeployedFleetAutoscaler extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $autoscaler;
-    /**
-     * @var string
-     */
-    public $fleetAutoscalerSpec;
-    protected $specSourceType = SpecSource::class;
-    protected $specSourceDataType = '';
-    /**
-     * @param string
-     */
-    public function setAutoscaler($autoscaler)
+namespace Google\Service\GameServices {
+    class DeployedFleetAutoscaler extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $autoscaler;
+        /**
+         * @var string
+         */
+        public $fleetAutoscalerSpec;
+        protected $specSourceType = SpecSource::class;
+        protected $specSourceDataType = '';
+        /**
+         * @param string
+         */
+        public function setAutoscaler($autoscaler)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAutoscaler()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setFleetAutoscalerSpec($fleetAutoscalerSpec)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFleetAutoscalerSpec()
+        {
+        }
+        /**
+         * @param SpecSource
+         */
+        public function setSpecSource(SpecSource $specSource)
+        {
+        }
+        /**
+         * @return SpecSource
+         */
+        public function getSpecSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GameServices\DeployedFleetAutoscaler registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAutoscaler()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setFleetAutoscalerSpec($fleetAutoscalerSpec)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFleetAutoscalerSpec()
-    {
-    }
-    /**
-     * @param SpecSource
-     */
-    public function setSpecSource(SpecSource $specSource)
-    {
-    }
-    /**
-     * @return SpecSource
-     */
-    public function getSpecSource()
+    class Google_Service_GameServices_DeployedFleetAutoscaler extends \Google\Service\GameServices\DeployedFleetAutoscaler
     {
     }
 }

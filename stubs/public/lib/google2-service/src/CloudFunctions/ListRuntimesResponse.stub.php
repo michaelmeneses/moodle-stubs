@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudFunctions;
-
-class ListRuntimesResponse extends \Google\Collection
-{
-    protected $collection_key = 'runtimes';
-    protected $runtimesType = Runtime::class;
-    protected $runtimesDataType = 'array';
-    /**
-     * The runtimes that match the request.
-     *
-     * @param Runtime[] $runtimes
-     */
-    public function setRuntimes($runtimes)
+namespace Google\Service\CloudFunctions {
+    class ListRuntimesResponse extends \Google\Collection
     {
+        protected $collection_key = 'runtimes';
+        protected $runtimesType = Runtime::class;
+        protected $runtimesDataType = 'array';
+        /**
+         * The runtimes that match the request.
+         *
+         * @param Runtime[] $runtimes
+         */
+        public function setRuntimes($runtimes)
+        {
+        }
+        /**
+         * @return Runtime[]
+         */
+        public function getRuntimes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Runtime[]
+     * Runtime class alias of \Google\Service\CloudFunctions\ListRuntimesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRuntimes()
+    class Google_Service_CloudFunctions_ListRuntimesResponse extends \Google\Service\CloudFunctions\ListRuntimesResponse
     {
     }
 }

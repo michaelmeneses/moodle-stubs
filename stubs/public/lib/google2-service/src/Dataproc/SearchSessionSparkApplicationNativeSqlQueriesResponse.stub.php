@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class SearchSessionSparkApplicationNativeSqlQueriesResponse extends \Google\Collection
-{
-    protected $collection_key = 'sparkApplicationNativeSqlQueries';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    protected $sparkApplicationNativeSqlQueriesType = NativeSqlExecutionUiData::class;
-    protected $sparkApplicationNativeSqlQueriesDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Dataproc {
+    class SearchSessionSparkApplicationNativeSqlQueriesResponse extends \Google\Collection
     {
+        protected $collection_key = 'sparkApplicationNativeSqlQueries';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        protected $sparkApplicationNativeSqlQueriesType = NativeSqlExecutionUiData::class;
+        protected $sparkApplicationNativeSqlQueriesDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param NativeSqlExecutionUiData[]
+         */
+        public function setSparkApplicationNativeSqlQueries($sparkApplicationNativeSqlQueries)
+        {
+        }
+        /**
+         * @return NativeSqlExecutionUiData[]
+         */
+        public function getSparkApplicationNativeSqlQueries()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\SearchSessionSparkApplicationNativeSqlQueriesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param NativeSqlExecutionUiData[]
-     */
-    public function setSparkApplicationNativeSqlQueries($sparkApplicationNativeSqlQueries)
-    {
-    }
-    /**
-     * @return NativeSqlExecutionUiData[]
-     */
-    public function getSparkApplicationNativeSqlQueries()
+    class Google_Service_Dataproc_SearchSessionSparkApplicationNativeSqlQueriesResponse extends \Google\Service\Dataproc\SearchSessionSparkApplicationNativeSqlQueriesResponse
     {
     }
 }

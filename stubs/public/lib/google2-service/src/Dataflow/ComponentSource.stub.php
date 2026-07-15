@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class ComponentSource extends \Google\Model
-{
-    /**
-     * Dataflow service generated name for this source.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * User name for the original user transform or collection with which this
-     * source is most closely associated.
-     *
-     * @var string
-     */
-    public $originalTransformOrCollection;
-    /**
-     * Human-readable name for this transform; may be user or system generated.
-     *
-     * @var string
-     */
-    public $userName;
-    /**
-     * Dataflow service generated name for this source.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Dataflow {
+    class ComponentSource extends \Google\Model
     {
+        /**
+         * Dataflow service generated name for this source.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * User name for the original user transform or collection with which this
+         * source is most closely associated.
+         *
+         * @var string
+         */
+        public $originalTransformOrCollection;
+        /**
+         * Human-readable name for this transform; may be user or system generated.
+         *
+         * @var string
+         */
+        public $userName;
+        /**
+         * Dataflow service generated name for this source.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * User name for the original user transform or collection with which this
+         * source is most closely associated.
+         *
+         * @param string $originalTransformOrCollection
+         */
+        public function setOriginalTransformOrCollection($originalTransformOrCollection)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOriginalTransformOrCollection()
+        {
+        }
+        /**
+         * Human-readable name for this transform; may be user or system generated.
+         *
+         * @param string $userName
+         */
+        public function setUserName($userName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataflow\ComponentSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * User name for the original user transform or collection with which this
-     * source is most closely associated.
-     *
-     * @param string $originalTransformOrCollection
-     */
-    public function setOriginalTransformOrCollection($originalTransformOrCollection)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOriginalTransformOrCollection()
-    {
-    }
-    /**
-     * Human-readable name for this transform; may be user or system generated.
-     *
-     * @param string $userName
-     */
-    public function setUserName($userName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserName()
+    class Google_Service_Dataflow_ComponentSource extends \Google\Service\Dataflow\ComponentSource
     {
     }
 }

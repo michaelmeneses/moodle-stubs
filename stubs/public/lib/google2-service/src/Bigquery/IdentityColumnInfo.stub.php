@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class IdentityColumnInfo extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $generatedMode;
-    /**
-     * @var string
-     */
-    public $increment;
-    /**
-     * @var string
-     */
-    public $start;
-    /**
-     * @param string
-     */
-    public function setGeneratedMode($generatedMode)
+namespace Google\Service\Bigquery {
+    class IdentityColumnInfo extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $generatedMode;
+        /**
+         * @var string
+         */
+        public $increment;
+        /**
+         * @var string
+         */
+        public $start;
+        /**
+         * @param string
+         */
+        public function setGeneratedMode($generatedMode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGeneratedMode()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setIncrement($increment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIncrement()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setStart($start)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStart()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Bigquery\IdentityColumnInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGeneratedMode()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setIncrement($increment)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIncrement()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setStart($start)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStart()
+    class Google_Service_Bigquery_IdentityColumnInfo extends \Google\Service\Bigquery\IdentityColumnInfo
     {
     }
 }

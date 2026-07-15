@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIdentity;
-
-class AddIdpCredentialRequest extends \Google\Model
-{
-    /**
-     * PEM encoded x509 certificate containing the public key for verifying IdP
-     * signatures.
-     *
-     * @var string
-     */
-    public $pemData;
-    /**
-     * PEM encoded x509 certificate containing the public key for verifying IdP
-     * signatures.
-     *
-     * @param string $pemData
-     */
-    public function setPemData($pemData)
+namespace Google\Service\CloudIdentity {
+    class AddIdpCredentialRequest extends \Google\Model
     {
+        /**
+         * PEM encoded x509 certificate containing the public key for verifying IdP
+         * signatures.
+         *
+         * @var string
+         */
+        public $pemData;
+        /**
+         * PEM encoded x509 certificate containing the public key for verifying IdP
+         * signatures.
+         *
+         * @param string $pemData
+         */
+        public function setPemData($pemData)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPemData()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudIdentity\AddIdpCredentialRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPemData()
+    class Google_Service_CloudIdentity_AddIdpCredentialRequest extends \Google\Service\CloudIdentity\AddIdpCredentialRequest
     {
     }
 }

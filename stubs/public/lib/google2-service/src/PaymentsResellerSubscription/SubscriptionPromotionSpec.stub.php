@@ -21,99 +21,108 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PaymentsResellerSubscription;
-
-class SubscriptionPromotionSpec extends \Google\Model
-{
-    /**
-     * The promotion type is unspecified.
-     */
-    public const TYPE_PROMOTION_TYPE_UNSPECIFIED = 'PROMOTION_TYPE_UNSPECIFIED';
-    /**
-     * The promotion is a free trial.
-     */
-    public const TYPE_PROMOTION_TYPE_FREE_TRIAL = 'PROMOTION_TYPE_FREE_TRIAL';
-    /**
-     * The promotion is a reduced introductory pricing.
-     */
-    public const TYPE_PROMOTION_TYPE_INTRODUCTORY_PRICING = 'PROMOTION_TYPE_INTRODUCTORY_PRICING';
-    protected $freeTrialDurationType = Duration::class;
-    protected $freeTrialDurationDataType = '';
-    protected $introductoryPricingDetailsType = PromotionIntroductoryPricingDetails::class;
-    protected $introductoryPricingDetailsDataType = '';
-    /**
-     * Required. Promotion resource name that identifies a promotion. The format
-     * is 'partners/{partner_id}/promotions/{promotion_id}'.
-     *
-     * @var string
-     */
-    public $promotion;
-    /**
-     * Output only. The type of the promotion for the spec.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Output only. The duration of the free trial if the promotion is of type
-     * FREE_TRIAL.
-     *
-     * @param Duration $freeTrialDuration
-     */
-    public function setFreeTrialDuration(Duration $freeTrialDuration)
+namespace Google\Service\PaymentsResellerSubscription {
+    class SubscriptionPromotionSpec extends \Google\Model
     {
+        /**
+         * The promotion type is unspecified.
+         */
+        public const TYPE_PROMOTION_TYPE_UNSPECIFIED = 'PROMOTION_TYPE_UNSPECIFIED';
+        /**
+         * The promotion is a free trial.
+         */
+        public const TYPE_PROMOTION_TYPE_FREE_TRIAL = 'PROMOTION_TYPE_FREE_TRIAL';
+        /**
+         * The promotion is a reduced introductory pricing.
+         */
+        public const TYPE_PROMOTION_TYPE_INTRODUCTORY_PRICING = 'PROMOTION_TYPE_INTRODUCTORY_PRICING';
+        protected $freeTrialDurationType = Duration::class;
+        protected $freeTrialDurationDataType = '';
+        protected $introductoryPricingDetailsType = PromotionIntroductoryPricingDetails::class;
+        protected $introductoryPricingDetailsDataType = '';
+        /**
+         * Required. Promotion resource name that identifies a promotion. The format
+         * is 'partners/{partner_id}/promotions/{promotion_id}'.
+         *
+         * @var string
+         */
+        public $promotion;
+        /**
+         * Output only. The type of the promotion for the spec.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Output only. The duration of the free trial if the promotion is of type
+         * FREE_TRIAL.
+         *
+         * @param Duration $freeTrialDuration
+         */
+        public function setFreeTrialDuration(Duration $freeTrialDuration)
+        {
+        }
+        /**
+         * @return Duration
+         */
+        public function getFreeTrialDuration()
+        {
+        }
+        /**
+         * Output only. The details of the introductory pricing spec if the promotion
+         * is of type INTRODUCTORY_PRICING.
+         *
+         * @param PromotionIntroductoryPricingDetails $introductoryPricingDetails
+         */
+        public function setIntroductoryPricingDetails(PromotionIntroductoryPricingDetails $introductoryPricingDetails)
+        {
+        }
+        /**
+         * @return PromotionIntroductoryPricingDetails
+         */
+        public function getIntroductoryPricingDetails()
+        {
+        }
+        /**
+         * Required. Promotion resource name that identifies a promotion. The format
+         * is 'partners/{partner_id}/promotions/{promotion_id}'.
+         *
+         * @param string $promotion
+         */
+        public function setPromotion($promotion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPromotion()
+        {
+        }
+        /**
+         * Output only. The type of the promotion for the spec.
+         *
+         * Accepted values: PROMOTION_TYPE_UNSPECIFIED, PROMOTION_TYPE_FREE_TRIAL,
+         * PROMOTION_TYPE_INTRODUCTORY_PRICING
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Duration
+     * Runtime class alias of \Google\Service\PaymentsResellerSubscription\SubscriptionPromotionSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFreeTrialDuration()
-    {
-    }
-    /**
-     * Output only. The details of the introductory pricing spec if the promotion
-     * is of type INTRODUCTORY_PRICING.
-     *
-     * @param PromotionIntroductoryPricingDetails $introductoryPricingDetails
-     */
-    public function setIntroductoryPricingDetails(PromotionIntroductoryPricingDetails $introductoryPricingDetails)
-    {
-    }
-    /**
-     * @return PromotionIntroductoryPricingDetails
-     */
-    public function getIntroductoryPricingDetails()
-    {
-    }
-    /**
-     * Required. Promotion resource name that identifies a promotion. The format
-     * is 'partners/{partner_id}/promotions/{promotion_id}'.
-     *
-     * @param string $promotion
-     */
-    public function setPromotion($promotion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPromotion()
-    {
-    }
-    /**
-     * Output only. The type of the promotion for the spec.
-     *
-     * Accepted values: PROMOTION_TYPE_UNSPECIFIED, PROMOTION_TYPE_FREE_TRIAL,
-     * PROMOTION_TYPE_INTRODUCTORY_PRICING
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_PaymentsResellerSubscription_SubscriptionPromotionSpec extends \Google\Service\PaymentsResellerSubscription\SubscriptionPromotionSpec
     {
     }
 }

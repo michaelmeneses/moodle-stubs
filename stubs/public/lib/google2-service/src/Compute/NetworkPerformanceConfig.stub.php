@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class NetworkPerformanceConfig extends \Google\Model
-{
-    public const TOTAL_EGRESS_BANDWIDTH_TIER_DEFAULT = 'DEFAULT';
-    public const TOTAL_EGRESS_BANDWIDTH_TIER_TIER_1 = 'TIER_1';
-    /**
-     * @var string
-     */
-    public $totalEgressBandwidthTier;
-    /**
-     * @param self::TOTAL_EGRESS_BANDWIDTH_TIER_* $totalEgressBandwidthTier
-     */
-    public function setTotalEgressBandwidthTier($totalEgressBandwidthTier)
+namespace Google\Service\Compute {
+    class NetworkPerformanceConfig extends \Google\Model
     {
+        public const TOTAL_EGRESS_BANDWIDTH_TIER_DEFAULT = 'DEFAULT';
+        public const TOTAL_EGRESS_BANDWIDTH_TIER_TIER_1 = 'TIER_1';
+        /**
+         * @var string
+         */
+        public $totalEgressBandwidthTier;
+        /**
+         * @param self::TOTAL_EGRESS_BANDWIDTH_TIER_* $totalEgressBandwidthTier
+         */
+        public function setTotalEgressBandwidthTier($totalEgressBandwidthTier)
+        {
+        }
+        /**
+         * @return self::TOTAL_EGRESS_BANDWIDTH_TIER_*
+         */
+        public function getTotalEgressBandwidthTier()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::TOTAL_EGRESS_BANDWIDTH_TIER_*
+     * Runtime class alias of \Google\Service\Compute\NetworkPerformanceConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTotalEgressBandwidthTier()
+    class Google_Service_Compute_NetworkPerformanceConfig extends \Google\Service\Compute\NetworkPerformanceConfig
     {
     }
 }

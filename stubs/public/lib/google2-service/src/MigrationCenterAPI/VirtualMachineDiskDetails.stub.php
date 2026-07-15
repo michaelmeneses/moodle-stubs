@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class VirtualMachineDiskDetails extends \Google\Model
-{
-    protected $disksType = DiskEntryList::class;
-    protected $disksDataType = '';
-    /**
-     * @var string
-     */
-    public $hddTotalCapacityBytes;
-    /**
-     * @var string
-     */
-    public $hddTotalFreeBytes;
-    /**
-     * @var string
-     */
-    public $lsblkJson;
-    /**
-     * @param DiskEntryList
-     */
-    public function setDisks(DiskEntryList $disks)
+namespace Google\Service\MigrationCenterAPI {
+    class VirtualMachineDiskDetails extends \Google\Model
     {
+        protected $disksType = DiskEntryList::class;
+        protected $disksDataType = '';
+        /**
+         * @var string
+         */
+        public $hddTotalCapacityBytes;
+        /**
+         * @var string
+         */
+        public $hddTotalFreeBytes;
+        /**
+         * @var string
+         */
+        public $lsblkJson;
+        /**
+         * @param DiskEntryList
+         */
+        public function setDisks(DiskEntryList $disks)
+        {
+        }
+        /**
+         * @return DiskEntryList
+         */
+        public function getDisks()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setHddTotalCapacityBytes($hddTotalCapacityBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHddTotalCapacityBytes()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setHddTotalFreeBytes($hddTotalFreeBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHddTotalFreeBytes()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLsblkJson($lsblkJson)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLsblkJson()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DiskEntryList
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\VirtualMachineDiskDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisks()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setHddTotalCapacityBytes($hddTotalCapacityBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHddTotalCapacityBytes()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setHddTotalFreeBytes($hddTotalFreeBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHddTotalFreeBytes()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLsblkJson($lsblkJson)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLsblkJson()
+    class Google_Service_MigrationCenterAPI_VirtualMachineDiskDetails extends \Google\Service\MigrationCenterAPI\VirtualMachineDiskDetails
     {
     }
 }

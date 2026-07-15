@@ -21,27 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting\Resource;
-
-/**
- * The "studioCreativeAssets" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dfareportingService = new Google\Service\Dfareporting(...);
- *   $studioCreativeAssets = $dfareportingService->studioCreativeAssets;
- *  </code>
- */
-class StudioCreativeAssets extends \Google\Service\Resource
-{
+namespace Google\Service\Dfareporting\Resource {
+    use Google\Service\Dfareporting\DfareportingStudioCreativeAssetsInsertRequest;
+    use Google\Service\Dfareporting\StudioCreativeAssetsResponse;
     /**
-     * Inserts a new studio creative asset. (studioCreativeAssets.insert)
-     *
-     * @param DfareportingStudioCreativeAssetsInsertRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return StudioCreativeAssetsResponse
-     * @throws \Google\Service\Exception
+     * The "studioCreativeAssets" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dfareportingService = new Google\Service\Dfareporting(...);
+     *   $studioCreativeAssets = $dfareportingService->studioCreativeAssets;
+     *  </code>
      */
-    public function insert(DfareportingStudioCreativeAssetsInsertRequest $postBody, $optParams = [])
+    class StudioCreativeAssets extends \Google\Service\Resource
+    {
+        /**
+         * Inserts a new studio creative asset. (studioCreativeAssets.insert)
+         *
+         * @param DfareportingStudioCreativeAssetsInsertRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return StudioCreativeAssetsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function insert(DfareportingStudioCreativeAssetsInsertRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Dfareporting\Resource\StudioCreativeAssets registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Dfareporting_Resource_StudioCreativeAssets extends \Google\Service\Dfareporting\Resource\StudioCreativeAssets
     {
     }
 }

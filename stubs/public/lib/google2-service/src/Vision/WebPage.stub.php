@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class WebPage extends \Google\Collection
-{
-    protected $collection_key = 'partialMatchingImages';
-    protected $fullMatchingImagesType = WebImage::class;
-    protected $fullMatchingImagesDataType = 'array';
-    /**
-     * Title for the web page, may contain HTML markups.
-     *
-     * @var string
-     */
-    public $pageTitle;
-    protected $partialMatchingImagesType = WebImage::class;
-    protected $partialMatchingImagesDataType = 'array';
-    /**
-     * (Deprecated) Overall relevancy score for the web page.
-     *
-     * @var float
-     */
-    public $score;
-    /**
-     * The result web page URL.
-     *
-     * @var string
-     */
-    public $url;
-    /**
-     * Fully matching images on the page. Can include resized copies of the query
-     * image.
-     *
-     * @param WebImage[] $fullMatchingImages
-     */
-    public function setFullMatchingImages($fullMatchingImages)
+namespace Google\Service\Vision {
+    class WebPage extends \Google\Collection
     {
+        protected $collection_key = 'partialMatchingImages';
+        protected $fullMatchingImagesType = WebImage::class;
+        protected $fullMatchingImagesDataType = 'array';
+        /**
+         * Title for the web page, may contain HTML markups.
+         *
+         * @var string
+         */
+        public $pageTitle;
+        protected $partialMatchingImagesType = WebImage::class;
+        protected $partialMatchingImagesDataType = 'array';
+        /**
+         * (Deprecated) Overall relevancy score for the web page.
+         *
+         * @var float
+         */
+        public $score;
+        /**
+         * The result web page URL.
+         *
+         * @var string
+         */
+        public $url;
+        /**
+         * Fully matching images on the page. Can include resized copies of the query
+         * image.
+         *
+         * @param WebImage[] $fullMatchingImages
+         */
+        public function setFullMatchingImages($fullMatchingImages)
+        {
+        }
+        /**
+         * @return WebImage[]
+         */
+        public function getFullMatchingImages()
+        {
+        }
+        /**
+         * Title for the web page, may contain HTML markups.
+         *
+         * @param string $pageTitle
+         */
+        public function setPageTitle($pageTitle)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPageTitle()
+        {
+        }
+        /**
+         * Partial matching images on the page. Those images are similar enough to
+         * share some key-point features. For example an original image will likely
+         * have partial matching for its crops.
+         *
+         * @param WebImage[] $partialMatchingImages
+         */
+        public function setPartialMatchingImages($partialMatchingImages)
+        {
+        }
+        /**
+         * @return WebImage[]
+         */
+        public function getPartialMatchingImages()
+        {
+        }
+        /**
+         * (Deprecated) Overall relevancy score for the web page.
+         *
+         * @param float $score
+         */
+        public function setScore($score)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getScore()
+        {
+        }
+        /**
+         * The result web page URL.
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return WebImage[]
+     * Runtime class alias of \Google\Service\Vision\WebPage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFullMatchingImages()
-    {
-    }
-    /**
-     * Title for the web page, may contain HTML markups.
-     *
-     * @param string $pageTitle
-     */
-    public function setPageTitle($pageTitle)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPageTitle()
-    {
-    }
-    /**
-     * Partial matching images on the page. Those images are similar enough to
-     * share some key-point features. For example an original image will likely
-     * have partial matching for its crops.
-     *
-     * @param WebImage[] $partialMatchingImages
-     */
-    public function setPartialMatchingImages($partialMatchingImages)
-    {
-    }
-    /**
-     * @return WebImage[]
-     */
-    public function getPartialMatchingImages()
-    {
-    }
-    /**
-     * (Deprecated) Overall relevancy score for the web page.
-     *
-     * @param float $score
-     */
-    public function setScore($score)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getScore()
-    {
-    }
-    /**
-     * The result web page URL.
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
+    class Google_Service_Vision_WebPage extends \Google\Service\Vision\WebPage
     {
     }
 }

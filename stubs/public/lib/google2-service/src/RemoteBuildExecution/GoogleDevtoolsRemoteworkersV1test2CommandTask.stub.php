@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution;
-
-class GoogleDevtoolsRemoteworkersV1test2CommandTask extends \Google\Model
-{
-    protected $expectedOutputsType = GoogleDevtoolsRemoteworkersV1test2CommandTaskOutputs::class;
-    protected $expectedOutputsDataType = '';
-    protected $inputsType = GoogleDevtoolsRemoteworkersV1test2CommandTaskInputs::class;
-    protected $inputsDataType = '';
-    protected $timeoutsType = GoogleDevtoolsRemoteworkersV1test2CommandTaskTimeouts::class;
-    protected $timeoutsDataType = '';
-    /**
-     * @param GoogleDevtoolsRemoteworkersV1test2CommandTaskOutputs
-     */
-    public function setExpectedOutputs(GoogleDevtoolsRemoteworkersV1test2CommandTaskOutputs $expectedOutputs)
+namespace Google\Service\RemoteBuildExecution {
+    class GoogleDevtoolsRemoteworkersV1test2CommandTask extends \Google\Model
     {
+        protected $expectedOutputsType = GoogleDevtoolsRemoteworkersV1test2CommandTaskOutputs::class;
+        protected $expectedOutputsDataType = '';
+        protected $inputsType = GoogleDevtoolsRemoteworkersV1test2CommandTaskInputs::class;
+        protected $inputsDataType = '';
+        protected $timeoutsType = GoogleDevtoolsRemoteworkersV1test2CommandTaskTimeouts::class;
+        protected $timeoutsDataType = '';
+        /**
+         * @param GoogleDevtoolsRemoteworkersV1test2CommandTaskOutputs
+         */
+        public function setExpectedOutputs(GoogleDevtoolsRemoteworkersV1test2CommandTaskOutputs $expectedOutputs)
+        {
+        }
+        /**
+         * @return GoogleDevtoolsRemoteworkersV1test2CommandTaskOutputs
+         */
+        public function getExpectedOutputs()
+        {
+        }
+        /**
+         * @param GoogleDevtoolsRemoteworkersV1test2CommandTaskInputs
+         */
+        public function setInputs(GoogleDevtoolsRemoteworkersV1test2CommandTaskInputs $inputs)
+        {
+        }
+        /**
+         * @return GoogleDevtoolsRemoteworkersV1test2CommandTaskInputs
+         */
+        public function getInputs()
+        {
+        }
+        /**
+         * @param GoogleDevtoolsRemoteworkersV1test2CommandTaskTimeouts
+         */
+        public function setTimeouts(GoogleDevtoolsRemoteworkersV1test2CommandTaskTimeouts $timeouts)
+        {
+        }
+        /**
+         * @return GoogleDevtoolsRemoteworkersV1test2CommandTaskTimeouts
+         */
+        public function getTimeouts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleDevtoolsRemoteworkersV1test2CommandTaskOutputs
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\GoogleDevtoolsRemoteworkersV1test2CommandTask registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExpectedOutputs()
-    {
-    }
-    /**
-     * @param GoogleDevtoolsRemoteworkersV1test2CommandTaskInputs
-     */
-    public function setInputs(GoogleDevtoolsRemoteworkersV1test2CommandTaskInputs $inputs)
-    {
-    }
-    /**
-     * @return GoogleDevtoolsRemoteworkersV1test2CommandTaskInputs
-     */
-    public function getInputs()
-    {
-    }
-    /**
-     * @param GoogleDevtoolsRemoteworkersV1test2CommandTaskTimeouts
-     */
-    public function setTimeouts(GoogleDevtoolsRemoteworkersV1test2CommandTaskTimeouts $timeouts)
-    {
-    }
-    /**
-     * @return GoogleDevtoolsRemoteworkersV1test2CommandTaskTimeouts
-     */
-    public function getTimeouts()
+    class Google_Service_RemoteBuildExecution_GoogleDevtoolsRemoteworkersV1test2CommandTask extends \Google\Service\RemoteBuildExecution\GoogleDevtoolsRemoteworkersV1test2CommandTask
     {
     }
 }

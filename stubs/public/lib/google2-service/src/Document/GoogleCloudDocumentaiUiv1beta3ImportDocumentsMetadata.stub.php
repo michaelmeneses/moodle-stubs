@@ -21,77 +21,86 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiUiv1beta3ImportDocumentsMetadata extends \Google\Collection
-{
-    protected $collection_key = 'individualImportStatuses';
-    protected $commonMetadataType = GoogleCloudDocumentaiUiv1beta3CommonOperationMetadata::class;
-    protected $commonMetadataDataType = '';
-    protected $importConfigValidationResultsType = GoogleCloudDocumentaiUiv1beta3ImportDocumentsMetadataImportConfigValidationResult::class;
-    protected $importConfigValidationResultsDataType = 'array';
-    protected $individualImportStatusesType = GoogleCloudDocumentaiUiv1beta3ImportDocumentsMetadataIndividualImportStatus::class;
-    protected $individualImportStatusesDataType = 'array';
-    /**
-     * Total number of the documents that are qualified for importing.
-     *
-     * @var int
-     */
-    public $totalDocumentCount;
-    /**
-     * The basic metadata of the long-running operation.
-     *
-     * @param GoogleCloudDocumentaiUiv1beta3CommonOperationMetadata $commonMetadata
-     */
-    public function setCommonMetadata(GoogleCloudDocumentaiUiv1beta3CommonOperationMetadata $commonMetadata)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiUiv1beta3ImportDocumentsMetadata extends \Google\Collection
     {
+        protected $collection_key = 'individualImportStatuses';
+        protected $commonMetadataType = GoogleCloudDocumentaiUiv1beta3CommonOperationMetadata::class;
+        protected $commonMetadataDataType = '';
+        protected $importConfigValidationResultsType = GoogleCloudDocumentaiUiv1beta3ImportDocumentsMetadataImportConfigValidationResult::class;
+        protected $importConfigValidationResultsDataType = 'array';
+        protected $individualImportStatusesType = GoogleCloudDocumentaiUiv1beta3ImportDocumentsMetadataIndividualImportStatus::class;
+        protected $individualImportStatusesDataType = 'array';
+        /**
+         * Total number of the documents that are qualified for importing.
+         *
+         * @var int
+         */
+        public $totalDocumentCount;
+        /**
+         * The basic metadata of the long-running operation.
+         *
+         * @param GoogleCloudDocumentaiUiv1beta3CommonOperationMetadata $commonMetadata
+         */
+        public function setCommonMetadata(GoogleCloudDocumentaiUiv1beta3CommonOperationMetadata $commonMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiUiv1beta3CommonOperationMetadata
+         */
+        public function getCommonMetadata()
+        {
+        }
+        /**
+         * Validation statuses of the batch documents import config.
+         *
+         * @param GoogleCloudDocumentaiUiv1beta3ImportDocumentsMetadataImportConfigValidationResult[] $importConfigValidationResults
+         */
+        public function setImportConfigValidationResults($importConfigValidationResults)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiUiv1beta3ImportDocumentsMetadataImportConfigValidationResult[]
+         */
+        public function getImportConfigValidationResults()
+        {
+        }
+        /**
+         * The list of response details of each document.
+         *
+         * @param GoogleCloudDocumentaiUiv1beta3ImportDocumentsMetadataIndividualImportStatus[] $individualImportStatuses
+         */
+        public function setIndividualImportStatuses($individualImportStatuses)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiUiv1beta3ImportDocumentsMetadataIndividualImportStatus[]
+         */
+        public function getIndividualImportStatuses()
+        {
+        }
+        /**
+         * Total number of the documents that are qualified for importing.
+         *
+         * @param int $totalDocumentCount
+         */
+        public function setTotalDocumentCount($totalDocumentCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalDocumentCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiUiv1beta3CommonOperationMetadata
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiUiv1beta3ImportDocumentsMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCommonMetadata()
-    {
-    }
-    /**
-     * Validation statuses of the batch documents import config.
-     *
-     * @param GoogleCloudDocumentaiUiv1beta3ImportDocumentsMetadataImportConfigValidationResult[] $importConfigValidationResults
-     */
-    public function setImportConfigValidationResults($importConfigValidationResults)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiUiv1beta3ImportDocumentsMetadataImportConfigValidationResult[]
-     */
-    public function getImportConfigValidationResults()
-    {
-    }
-    /**
-     * The list of response details of each document.
-     *
-     * @param GoogleCloudDocumentaiUiv1beta3ImportDocumentsMetadataIndividualImportStatus[] $individualImportStatuses
-     */
-    public function setIndividualImportStatuses($individualImportStatuses)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiUiv1beta3ImportDocumentsMetadataIndividualImportStatus[]
-     */
-    public function getIndividualImportStatuses()
-    {
-    }
-    /**
-     * Total number of the documents that are qualified for importing.
-     *
-     * @param int $totalDocumentCount
-     */
-    public function setTotalDocumentCount($totalDocumentCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalDocumentCount()
+    class Google_Service_Document_GoogleCloudDocumentaiUiv1beta3ImportDocumentsMetadata extends \Google\Service\Document\GoogleCloudDocumentaiUiv1beta3ImportDocumentsMetadata
     {
     }
 }

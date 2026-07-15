@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ArtifactRegistry;
-
-class UpstreamCredentials extends \Google\Model
-{
-    protected $usernamePasswordCredentialsType = UsernamePasswordCredentials::class;
-    protected $usernamePasswordCredentialsDataType = '';
-    /**
-     * Use username and password to access the remote repository.
-     *
-     * @param UsernamePasswordCredentials $usernamePasswordCredentials
-     */
-    public function setUsernamePasswordCredentials(UsernamePasswordCredentials $usernamePasswordCredentials)
+namespace Google\Service\ArtifactRegistry {
+    class UpstreamCredentials extends \Google\Model
     {
+        protected $usernamePasswordCredentialsType = UsernamePasswordCredentials::class;
+        protected $usernamePasswordCredentialsDataType = '';
+        /**
+         * Use username and password to access the remote repository.
+         *
+         * @param UsernamePasswordCredentials $usernamePasswordCredentials
+         */
+        public function setUsernamePasswordCredentials(UsernamePasswordCredentials $usernamePasswordCredentials)
+        {
+        }
+        /**
+         * @return UsernamePasswordCredentials
+         */
+        public function getUsernamePasswordCredentials()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return UsernamePasswordCredentials
+     * Runtime class alias of \Google\Service\ArtifactRegistry\UpstreamCredentials registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUsernamePasswordCredentials()
+    class Google_Service_ArtifactRegistry_UpstreamCredentials extends \Google\Service\ArtifactRegistry\UpstreamCredentials
     {
     }
 }

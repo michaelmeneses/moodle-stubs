@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaCheckGroundingResponse extends \Google\Collection
-{
-    protected $collection_key = 'claims';
-    protected $citedChunksType = GoogleCloudDiscoveryengineV1betaFactChunk::class;
-    protected $citedChunksDataType = 'array';
-    protected $claimsType = GoogleCloudDiscoveryengineV1betaCheckGroundingResponseClaim::class;
-    protected $claimsDataType = 'array';
-    /**
-     * @var float
-     */
-    public $supportScore;
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaFactChunk[]
-     */
-    public function setCitedChunks($citedChunks)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaCheckGroundingResponse extends \Google\Collection
     {
+        protected $collection_key = 'claims';
+        protected $citedChunksType = GoogleCloudDiscoveryengineV1betaFactChunk::class;
+        protected $citedChunksDataType = 'array';
+        protected $claimsType = GoogleCloudDiscoveryengineV1betaCheckGroundingResponseClaim::class;
+        protected $claimsDataType = 'array';
+        /**
+         * @var float
+         */
+        public $supportScore;
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaFactChunk[]
+         */
+        public function setCitedChunks($citedChunks)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaFactChunk[]
+         */
+        public function getCitedChunks()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaCheckGroundingResponseClaim[]
+         */
+        public function setClaims($claims)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaCheckGroundingResponseClaim[]
+         */
+        public function getClaims()
+        {
+        }
+        /**
+         * @param float
+         */
+        public function setSupportScore($supportScore)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getSupportScore()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1betaFactChunk[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaCheckGroundingResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCitedChunks()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaCheckGroundingResponseClaim[]
-     */
-    public function setClaims($claims)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaCheckGroundingResponseClaim[]
-     */
-    public function getClaims()
-    {
-    }
-    /**
-     * @param float
-     */
-    public function setSupportScore($supportScore)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getSupportScore()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaCheckGroundingResponse extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaCheckGroundingResponse
     {
     }
 }

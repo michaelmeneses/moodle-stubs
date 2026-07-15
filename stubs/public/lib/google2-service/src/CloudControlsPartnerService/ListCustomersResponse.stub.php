@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudControlsPartnerService;
-
-class ListCustomersResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $customersType = Customer::class;
-    protected $customersDataType = 'array';
-    /**
-     * A token that can be sent as `page_token` to retrieve the next page. If this
-     * field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * List of customers
-     *
-     * @param Customer[] $customers
-     */
-    public function setCustomers($customers)
+namespace Google\Service\CloudControlsPartnerService {
+    class ListCustomersResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $customersType = Customer::class;
+        protected $customersDataType = 'array';
+        /**
+         * A token that can be sent as `page_token` to retrieve the next page. If this
+         * field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * List of customers
+         *
+         * @param Customer[] $customers
+         */
+        public function setCustomers($customers)
+        {
+        }
+        /**
+         * @return Customer[]
+         */
+        public function getCustomers()
+        {
+        }
+        /**
+         * A token that can be sent as `page_token` to retrieve the next page. If this
+         * field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Customer[]
+     * Runtime class alias of \Google\Service\CloudControlsPartnerService\ListCustomersResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomers()
-    {
-    }
-    /**
-     * A token that can be sent as `page_token` to retrieve the next page. If this
-     * field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_CloudControlsPartnerService_ListCustomersResponse extends \Google\Service\CloudControlsPartnerService\ListCustomersResponse
     {
     }
 }

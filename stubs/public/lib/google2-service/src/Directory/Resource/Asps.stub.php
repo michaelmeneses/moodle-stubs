@@ -21,53 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory\Resource;
-
-/**
- * The "asps" collection of methods.
- * Typical usage is:
- *  <code>
- *   $adminService = new Google\Service\Directory(...);
- *   $asps = $adminService->asps;
- *  </code>
- */
-class Asps extends \Google\Service\Resource
-{
+namespace Google\Service\Directory\Resource {
+    use Google\Service\Directory\Asp;
+    use Google\Service\Directory\Asps as AspsModel;
     /**
-     * Deletes an ASP issued by a user. (asps.delete)
-     *
-     * @param string $userKey Identifies the user in the API request. The value can
-     * be the user's primary email address, alias email address, or unique user ID.
-     * @param int $codeId The unique ID of the ASP to be deleted.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * The "asps" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $adminService = new Google\Service\Directory(...);
+     *   $asps = $adminService->asps;
+     *  </code>
      */
-    public function delete($userKey, $codeId, $optParams = [])
+    class Asps extends \Google\Service\Resource
     {
+        /**
+         * Deletes an ASP issued by a user. (asps.delete)
+         *
+         * @param string $userKey Identifies the user in the API request. The value can
+         * be the user's primary email address, alias email address, or unique user ID.
+         * @param int $codeId The unique ID of the ASP to be deleted.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($userKey, $codeId, $optParams = [])
+        {
+        }
+        /**
+         * Gets information about an ASP issued by a user. (asps.get)
+         *
+         * @param string $userKey Identifies the user in the API request. The value can
+         * be the user's primary email address, alias email address, or unique user ID.
+         * @param int $codeId The unique ID of the ASP.
+         * @param array $optParams Optional parameters.
+         * @return Asp
+         * @throws \Google\Service\Exception
+         */
+        public function get($userKey, $codeId, $optParams = [])
+        {
+        }
+        /**
+         * Lists the ASPs issued by a user. (asps.listAsps)
+         *
+         * @param string $userKey Identifies the user in the API request. The value can
+         * be the user's primary email address, alias email address, or unique user ID.
+         * @param array $optParams Optional parameters.
+         * @return AspsModel
+         * @throws \Google\Service\Exception
+         */
+        public function listAsps($userKey, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets information about an ASP issued by a user. (asps.get)
-     *
-     * @param string $userKey Identifies the user in the API request. The value can
-     * be the user's primary email address, alias email address, or unique user ID.
-     * @param int $codeId The unique ID of the ASP.
-     * @param array $optParams Optional parameters.
-     * @return Asp
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Directory\Resource\Asps registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($userKey, $codeId, $optParams = [])
-    {
-    }
-    /**
-     * Lists the ASPs issued by a user. (asps.listAsps)
-     *
-     * @param string $userKey Identifies the user in the API request. The value can
-     * be the user's primary email address, alias email address, or unique user ID.
-     * @param array $optParams Optional parameters.
-     * @return AspsModel
-     * @throws \Google\Service\Exception
-     */
-    public function listAsps($userKey, $optParams = [])
+    class Google_Service_Directory_Resource_Asps extends \Google\Service\Directory\Resource\Asps
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RealTimeBidding;
-
-class DestinationUrlEvidence extends \Google\Model
-{
-    /**
-     * The full landing page URL of the destination.
-     *
-     * @var string
-     */
-    public $destinationUrl;
-    /**
-     * The full landing page URL of the destination.
-     *
-     * @param string $destinationUrl
-     */
-    public function setDestinationUrl($destinationUrl)
+namespace Google\Service\RealTimeBidding {
+    class DestinationUrlEvidence extends \Google\Model
     {
+        /**
+         * The full landing page URL of the destination.
+         *
+         * @var string
+         */
+        public $destinationUrl;
+        /**
+         * The full landing page URL of the destination.
+         *
+         * @param string $destinationUrl
+         */
+        public function setDestinationUrl($destinationUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDestinationUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\RealTimeBidding\DestinationUrlEvidence registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDestinationUrl()
+    class Google_Service_RealTimeBidding_DestinationUrlEvidence extends \Google\Service\RealTimeBidding\DestinationUrlEvidence
     {
     }
 }

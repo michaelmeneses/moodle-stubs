@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity;
-
-class ListRemoteTransportProfilesResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    protected $remoteTransportProfilesType = RemoteTransportProfile::class;
-    protected $remoteTransportProfilesDataType = 'array';
-    /**
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Networkconnectivity {
+    class ListRemoteTransportProfilesResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        protected $remoteTransportProfilesType = RemoteTransportProfile::class;
+        protected $remoteTransportProfilesDataType = 'array';
+        /**
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param RemoteTransportProfile[]
+         */
+        public function setRemoteTransportProfiles($remoteTransportProfiles)
+        {
+        }
+        /**
+         * @return RemoteTransportProfile[]
+         */
+        public function getRemoteTransportProfiles()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Networkconnectivity\ListRemoteTransportProfilesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param RemoteTransportProfile[]
-     */
-    public function setRemoteTransportProfiles($remoteTransportProfiles)
-    {
-    }
-    /**
-     * @return RemoteTransportProfile[]
-     */
-    public function getRemoteTransportProfiles()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_Networkconnectivity_ListRemoteTransportProfilesResponse extends \Google\Service\Networkconnectivity\ListRemoteTransportProfilesResponse
     {
     }
 }

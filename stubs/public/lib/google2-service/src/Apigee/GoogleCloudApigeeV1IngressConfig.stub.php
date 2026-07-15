@@ -21,111 +21,120 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1IngressConfig extends \Google\Collection
-{
-    protected $collection_key = 'environmentGroups';
-    protected $environmentGroupsType = GoogleCloudApigeeV1EnvironmentGroupConfig::class;
-    protected $environmentGroupsDataType = 'array';
-    /**
-     * Name of the resource in the following format:
-     * `organizations/{org}/deployedIngressConfig`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Time at which the IngressConfig revision was created.
-     *
-     * @var string
-     */
-    public $revisionCreateTime;
-    /**
-     * Revision id that defines the ordering on IngressConfig resources. The
-     * higher the revision, the more recently the configuration was deployed.
-     *
-     * @var string
-     */
-    public $revisionId;
-    /**
-     * A unique id for the ingress config that will only change if the
-     * organization is deleted and recreated.
-     *
-     * @var string
-     */
-    public $uid;
-    /**
-     * List of environment groups in the organization.
-     *
-     * @param GoogleCloudApigeeV1EnvironmentGroupConfig[] $environmentGroups
-     */
-    public function setEnvironmentGroups($environmentGroups)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1IngressConfig extends \Google\Collection
     {
+        protected $collection_key = 'environmentGroups';
+        protected $environmentGroupsType = GoogleCloudApigeeV1EnvironmentGroupConfig::class;
+        protected $environmentGroupsDataType = 'array';
+        /**
+         * Name of the resource in the following format:
+         * `organizations/{org}/deployedIngressConfig`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Time at which the IngressConfig revision was created.
+         *
+         * @var string
+         */
+        public $revisionCreateTime;
+        /**
+         * Revision id that defines the ordering on IngressConfig resources. The
+         * higher the revision, the more recently the configuration was deployed.
+         *
+         * @var string
+         */
+        public $revisionId;
+        /**
+         * A unique id for the ingress config that will only change if the
+         * organization is deleted and recreated.
+         *
+         * @var string
+         */
+        public $uid;
+        /**
+         * List of environment groups in the organization.
+         *
+         * @param GoogleCloudApigeeV1EnvironmentGroupConfig[] $environmentGroups
+         */
+        public function setEnvironmentGroups($environmentGroups)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1EnvironmentGroupConfig[]
+         */
+        public function getEnvironmentGroups()
+        {
+        }
+        /**
+         * Name of the resource in the following format:
+         * `organizations/{org}/deployedIngressConfig`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Time at which the IngressConfig revision was created.
+         *
+         * @param string $revisionCreateTime
+         */
+        public function setRevisionCreateTime($revisionCreateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRevisionCreateTime()
+        {
+        }
+        /**
+         * Revision id that defines the ordering on IngressConfig resources. The
+         * higher the revision, the more recently the configuration was deployed.
+         *
+         * @param string $revisionId
+         */
+        public function setRevisionId($revisionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRevisionId()
+        {
+        }
+        /**
+         * A unique id for the ingress config that will only change if the
+         * organization is deleted and recreated.
+         *
+         * @param string $uid
+         */
+        public function setUid($uid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUid()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApigeeV1EnvironmentGroupConfig[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1IngressConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnvironmentGroups()
-    {
-    }
-    /**
-     * Name of the resource in the following format:
-     * `organizations/{org}/deployedIngressConfig`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Time at which the IngressConfig revision was created.
-     *
-     * @param string $revisionCreateTime
-     */
-    public function setRevisionCreateTime($revisionCreateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRevisionCreateTime()
-    {
-    }
-    /**
-     * Revision id that defines the ordering on IngressConfig resources. The
-     * higher the revision, the more recently the configuration was deployed.
-     *
-     * @param string $revisionId
-     */
-    public function setRevisionId($revisionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRevisionId()
-    {
-    }
-    /**
-     * A unique id for the ingress config that will only change if the
-     * organization is deleted and recreated.
-     *
-     * @param string $uid
-     */
-    public function setUid($uid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUid()
+    class Google_Service_Apigee_GoogleCloudApigeeV1IngressConfig extends \Google\Service\Apigee\GoogleCloudApigeeV1IngressConfig
     {
     }
 }

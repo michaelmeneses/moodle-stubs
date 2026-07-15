@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer;
-
-class PrivateData extends \Google\Model
-{
-    public $referenceId;
-    public $referencePayload;
-    public function setReferenceId($referenceId)
+namespace Google\Service\AdExchangeBuyer {
+    class PrivateData extends \Google\Model
     {
+        public $referenceId;
+        public $referencePayload;
+        public function setReferenceId($referenceId)
+        {
+        }
+        public function getReferenceId()
+        {
+        }
+        public function setReferencePayload($referencePayload)
+        {
+        }
+        public function getReferencePayload()
+        {
+        }
     }
-    public function getReferenceId()
-    {
-    }
-    public function setReferencePayload($referencePayload)
-    {
-    }
-    public function getReferencePayload()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\PrivateData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AdExchangeBuyer_PrivateData extends \Google\Service\AdExchangeBuyer\PrivateData
     {
     }
 }

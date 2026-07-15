@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class BareMetalClusterUpgradePolicy extends \Google\Model
-{
-    /**
-     * No upgrade policy selected.
-     */
-    public const POLICY_NODE_POOL_POLICY_UNSPECIFIED = 'NODE_POOL_POLICY_UNSPECIFIED';
-    /**
-     * Upgrade worker node pools sequentially.
-     */
-    public const POLICY_SERIAL = 'SERIAL';
-    /**
-     * Upgrade all worker node pools in parallel.
-     */
-    public const POLICY_CONCURRENT = 'CONCURRENT';
-    /**
-     * Output only. Pause is used to show the upgrade pause status. It's view only
-     * for now.
-     *
-     * @var bool
-     */
-    public $pause;
-    /**
-     * Specifies which upgrade policy to use.
-     *
-     * @var string
-     */
-    public $policy;
-    /**
-     * Output only. Pause is used to show the upgrade pause status. It's view only
-     * for now.
-     *
-     * @param bool $pause
-     */
-    public function setPause($pause)
+namespace Google\Service\GKEOnPrem {
+    class BareMetalClusterUpgradePolicy extends \Google\Model
     {
+        /**
+         * No upgrade policy selected.
+         */
+        public const POLICY_NODE_POOL_POLICY_UNSPECIFIED = 'NODE_POOL_POLICY_UNSPECIFIED';
+        /**
+         * Upgrade worker node pools sequentially.
+         */
+        public const POLICY_SERIAL = 'SERIAL';
+        /**
+         * Upgrade all worker node pools in parallel.
+         */
+        public const POLICY_CONCURRENT = 'CONCURRENT';
+        /**
+         * Output only. Pause is used to show the upgrade pause status. It's view only
+         * for now.
+         *
+         * @var bool
+         */
+        public $pause;
+        /**
+         * Specifies which upgrade policy to use.
+         *
+         * @var string
+         */
+        public $policy;
+        /**
+         * Output only. Pause is used to show the upgrade pause status. It's view only
+         * for now.
+         *
+         * @param bool $pause
+         */
+        public function setPause($pause)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPause()
+        {
+        }
+        /**
+         * Specifies which upgrade policy to use.
+         *
+         * Accepted values: NODE_POOL_POLICY_UNSPECIFIED, SERIAL, CONCURRENT
+         *
+         * @param self::POLICY_* $policy
+         */
+        public function setPolicy($policy)
+        {
+        }
+        /**
+         * @return self::POLICY_*
+         */
+        public function getPolicy()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\GKEOnPrem\BareMetalClusterUpgradePolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPause()
-    {
-    }
-    /**
-     * Specifies which upgrade policy to use.
-     *
-     * Accepted values: NODE_POOL_POLICY_UNSPECIFIED, SERIAL, CONCURRENT
-     *
-     * @param self::POLICY_* $policy
-     */
-    public function setPolicy($policy)
-    {
-    }
-    /**
-     * @return self::POLICY_*
-     */
-    public function getPolicy()
+    class Google_Service_GKEOnPrem_BareMetalClusterUpgradePolicy extends \Google\Service\GKEOnPrem\BareMetalClusterUpgradePolicy
     {
     }
 }

@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class ProductDeliveryTimeAreaDeliveryTime extends \Google\Model
-{
-    protected $deliveryAreaType = DeliveryArea::class;
-    protected $deliveryAreaDataType = '';
-    protected $deliveryTimeType = ProductDeliveryTimeAreaDeliveryTimeDeliveryTime::class;
-    protected $deliveryTimeDataType = '';
-    /**
-     * Required. The delivery area associated with `deliveryTime` for this
-     * product.
-     *
-     * @param DeliveryArea $deliveryArea
-     */
-    public function setDeliveryArea(DeliveryArea $deliveryArea)
+namespace Google\Service\ShoppingContent {
+    class ProductDeliveryTimeAreaDeliveryTime extends \Google\Model
     {
+        protected $deliveryAreaType = DeliveryArea::class;
+        protected $deliveryAreaDataType = '';
+        protected $deliveryTimeType = ProductDeliveryTimeAreaDeliveryTimeDeliveryTime::class;
+        protected $deliveryTimeDataType = '';
+        /**
+         * Required. The delivery area associated with `deliveryTime` for this
+         * product.
+         *
+         * @param DeliveryArea $deliveryArea
+         */
+        public function setDeliveryArea(DeliveryArea $deliveryArea)
+        {
+        }
+        /**
+         * @return DeliveryArea
+         */
+        public function getDeliveryArea()
+        {
+        }
+        /**
+         * Required. The delivery time associated with `deliveryArea` for this
+         * product.
+         *
+         * @param ProductDeliveryTimeAreaDeliveryTimeDeliveryTime $deliveryTime
+         */
+        public function setDeliveryTime(ProductDeliveryTimeAreaDeliveryTimeDeliveryTime $deliveryTime)
+        {
+        }
+        /**
+         * @return ProductDeliveryTimeAreaDeliveryTimeDeliveryTime
+         */
+        public function getDeliveryTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DeliveryArea
+     * Runtime class alias of \Google\Service\ShoppingContent\ProductDeliveryTimeAreaDeliveryTime registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeliveryArea()
-    {
-    }
-    /**
-     * Required. The delivery time associated with `deliveryArea` for this
-     * product.
-     *
-     * @param ProductDeliveryTimeAreaDeliveryTimeDeliveryTime $deliveryTime
-     */
-    public function setDeliveryTime(ProductDeliveryTimeAreaDeliveryTimeDeliveryTime $deliveryTime)
-    {
-    }
-    /**
-     * @return ProductDeliveryTimeAreaDeliveryTimeDeliveryTime
-     */
-    public function getDeliveryTime()
+    class Google_Service_ShoppingContent_ProductDeliveryTimeAreaDeliveryTime extends \Google\Service\ShoppingContent\ProductDeliveryTimeAreaDeliveryTime
     {
     }
 }

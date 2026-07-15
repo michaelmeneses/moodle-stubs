@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1betaListAccountsResponse extends \Google\Collection
-{
-    protected $collection_key = 'accounts';
-    protected $accountsType = GoogleAnalyticsAdminV1betaAccount::class;
-    protected $accountsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Results that were accessible to the caller.
-     *
-     * @param GoogleAnalyticsAdminV1betaAccount[] $accounts
-     */
-    public function setAccounts($accounts)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1betaListAccountsResponse extends \Google\Collection
     {
+        protected $collection_key = 'accounts';
+        protected $accountsType = GoogleAnalyticsAdminV1betaAccount::class;
+        protected $accountsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Results that were accessible to the caller.
+         *
+         * @param GoogleAnalyticsAdminV1betaAccount[] $accounts
+         */
+        public function setAccounts($accounts)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1betaAccount[]
+         */
+        public function getAccounts()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAnalyticsAdminV1betaAccount[]
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaListAccountsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccounts()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1betaListAccountsResponse extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaListAccountsResponse
     {
     }
 }

@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PaymentsResellerSubscription;
-
-class IntentPayloadIntentOptions extends \Google\Model
-{
-    /**
-     * Optional. If true, Google may use a different product and promotion id from
-     * the ones in the `create_intent` based on the user's eligibility. Only
-     * applicable for certain YouTube free trial offers.
-     *
-     * @var bool
-     */
-    public $enableOfferOverride;
-    /**
-     * Optional. If true, Google may use a different product and promotion id from
-     * the ones in the `create_intent` based on the user's eligibility. Only
-     * applicable for certain YouTube free trial offers.
-     *
-     * @param bool $enableOfferOverride
-     */
-    public function setEnableOfferOverride($enableOfferOverride)
+namespace Google\Service\PaymentsResellerSubscription {
+    class IntentPayloadIntentOptions extends \Google\Model
     {
+        /**
+         * Optional. If true, Google may use a different product and promotion id from
+         * the ones in the `create_intent` based on the user's eligibility. Only
+         * applicable for certain YouTube free trial offers.
+         *
+         * @var bool
+         */
+        public $enableOfferOverride;
+        /**
+         * Optional. If true, Google may use a different product and promotion id from
+         * the ones in the `create_intent` based on the user's eligibility. Only
+         * applicable for certain YouTube free trial offers.
+         *
+         * @param bool $enableOfferOverride
+         */
+        public function setEnableOfferOverride($enableOfferOverride)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableOfferOverride()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\PaymentsResellerSubscription\IntentPayloadIntentOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnableOfferOverride()
+    class Google_Service_PaymentsResellerSubscription_IntentPayloadIntentOptions extends \Google\Service\PaymentsResellerSubscription\IntentPayloadIntentOptions
     {
     }
 }

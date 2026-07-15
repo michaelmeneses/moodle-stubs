@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1ImagePayload extends \Google\Model
-{
-    /**
-     * A byte string of a thumbnail image.
-     *
-     * @var string
-     */
-    public $imageThumbnail;
-    /**
-     * Image uri from the user bucket.
-     *
-     * @var string
-     */
-    public $imageUri;
-    /**
-     * Image format.
-     *
-     * @var string
-     */
-    public $mimeType;
-    /**
-     * Signed uri of the image file in the service bucket.
-     *
-     * @var string
-     */
-    public $signedUri;
-    /**
-     * A byte string of a thumbnail image.
-     *
-     * @param string $imageThumbnail
-     */
-    public function setImageThumbnail($imageThumbnail)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1ImagePayload extends \Google\Model
     {
+        /**
+         * A byte string of a thumbnail image.
+         *
+         * @var string
+         */
+        public $imageThumbnail;
+        /**
+         * Image uri from the user bucket.
+         *
+         * @var string
+         */
+        public $imageUri;
+        /**
+         * Image format.
+         *
+         * @var string
+         */
+        public $mimeType;
+        /**
+         * Signed uri of the image file in the service bucket.
+         *
+         * @var string
+         */
+        public $signedUri;
+        /**
+         * A byte string of a thumbnail image.
+         *
+         * @param string $imageThumbnail
+         */
+        public function setImageThumbnail($imageThumbnail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImageThumbnail()
+        {
+        }
+        /**
+         * Image uri from the user bucket.
+         *
+         * @param string $imageUri
+         */
+        public function setImageUri($imageUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImageUri()
+        {
+        }
+        /**
+         * Image format.
+         *
+         * @param string $mimeType
+         */
+        public function setMimeType($mimeType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMimeType()
+        {
+        }
+        /**
+         * Signed uri of the image file in the service bucket.
+         *
+         * @param string $signedUri
+         */
+        public function setSignedUri($signedUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSignedUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1ImagePayload registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getImageThumbnail()
-    {
-    }
-    /**
-     * Image uri from the user bucket.
-     *
-     * @param string $imageUri
-     */
-    public function setImageUri($imageUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImageUri()
-    {
-    }
-    /**
-     * Image format.
-     *
-     * @param string $mimeType
-     */
-    public function setMimeType($mimeType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMimeType()
-    {
-    }
-    /**
-     * Signed uri of the image file in the service bucket.
-     *
-     * @param string $signedUri
-     */
-    public function setSignedUri($signedUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSignedUri()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1ImagePayload extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1ImagePayload
     {
     }
 }

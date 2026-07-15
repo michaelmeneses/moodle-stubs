@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class MongodbObjectIdentifier extends \Google\Model
-{
-    /**
-     * Required. The collection name.
-     *
-     * @var string
-     */
-    public $collection;
-    /**
-     * Required. The database name.
-     *
-     * @var string
-     */
-    public $database;
-    /**
-     * Required. The collection name.
-     *
-     * @param string $collection
-     */
-    public function setCollection($collection)
+namespace Google\Service\Datastream {
+    class MongodbObjectIdentifier extends \Google\Model
     {
+        /**
+         * Required. The collection name.
+         *
+         * @var string
+         */
+        public $collection;
+        /**
+         * Required. The database name.
+         *
+         * @var string
+         */
+        public $database;
+        /**
+         * Required. The collection name.
+         *
+         * @param string $collection
+         */
+        public function setCollection($collection)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCollection()
+        {
+        }
+        /**
+         * Required. The database name.
+         *
+         * @param string $database
+         */
+        public function setDatabase($database)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatabase()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Datastream\MongodbObjectIdentifier registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCollection()
-    {
-    }
-    /**
-     * Required. The database name.
-     *
-     * @param string $database
-     */
-    public function setDatabase($database)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDatabase()
+    class Google_Service_Datastream_MongodbObjectIdentifier extends \Google\Service\Datastream\MongodbObjectIdentifier
     {
     }
 }

@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AccessContextManager;
-
-class ApiOperation extends \Google\Collection
-{
-    protected $collection_key = 'methodSelectors';
-    protected $methodSelectorsType = MethodSelector::class;
-    protected $methodSelectorsDataType = 'array';
-    /**
-     * The name of the API whose methods or permissions the IngressPolicy or
-     * EgressPolicy want to allow. A single ApiOperation with `service_name` field
-     * set to `*` will allow all methods AND permissions for all services.
-     *
-     * @var string
-     */
-    public $serviceName;
-    /**
-     * API methods or permissions to allow. Method or permission must belong to
-     * the service specified by `service_name` field. A single MethodSelector
-     * entry with `*` specified for the `method` field will allow all methods AND
-     * permissions for the service specified in `service_name`.
-     *
-     * @param MethodSelector[] $methodSelectors
-     */
-    public function setMethodSelectors($methodSelectors)
+namespace Google\Service\AccessContextManager {
+    class ApiOperation extends \Google\Collection
     {
+        protected $collection_key = 'methodSelectors';
+        protected $methodSelectorsType = MethodSelector::class;
+        protected $methodSelectorsDataType = 'array';
+        /**
+         * The name of the API whose methods or permissions the IngressPolicy or
+         * EgressPolicy want to allow. A single ApiOperation with `service_name` field
+         * set to `*` will allow all methods AND permissions for all services.
+         *
+         * @var string
+         */
+        public $serviceName;
+        /**
+         * API methods or permissions to allow. Method or permission must belong to
+         * the service specified by `service_name` field. A single MethodSelector
+         * entry with `*` specified for the `method` field will allow all methods AND
+         * permissions for the service specified in `service_name`.
+         *
+         * @param MethodSelector[] $methodSelectors
+         */
+        public function setMethodSelectors($methodSelectors)
+        {
+        }
+        /**
+         * @return MethodSelector[]
+         */
+        public function getMethodSelectors()
+        {
+        }
+        /**
+         * The name of the API whose methods or permissions the IngressPolicy or
+         * EgressPolicy want to allow. A single ApiOperation with `service_name` field
+         * set to `*` will allow all methods AND permissions for all services.
+         *
+         * @param string $serviceName
+         */
+        public function setServiceName($serviceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MethodSelector[]
+     * Runtime class alias of \Google\Service\AccessContextManager\ApiOperation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMethodSelectors()
-    {
-    }
-    /**
-     * The name of the API whose methods or permissions the IngressPolicy or
-     * EgressPolicy want to allow. A single ApiOperation with `service_name` field
-     * set to `*` will allow all methods AND permissions for all services.
-     *
-     * @param string $serviceName
-     */
-    public function setServiceName($serviceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceName()
+    class Google_Service_AccessContextManager_ApiOperation extends \Google\Service\AccessContextManager\ApiOperation
     {
     }
 }

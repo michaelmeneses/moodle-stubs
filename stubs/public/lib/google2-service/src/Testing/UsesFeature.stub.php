@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Testing;
-
-class UsesFeature extends \Google\Model
-{
-    /**
-     * The android:required value
-     *
-     * @var bool
-     */
-    public $isRequired;
-    /**
-     * The android:name value
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The android:required value
-     *
-     * @param bool $isRequired
-     */
-    public function setIsRequired($isRequired)
+namespace Google\Service\Testing {
+    class UsesFeature extends \Google\Model
     {
+        /**
+         * The android:required value
+         *
+         * @var bool
+         */
+        public $isRequired;
+        /**
+         * The android:name value
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The android:required value
+         *
+         * @param bool $isRequired
+         */
+        public function setIsRequired($isRequired)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsRequired()
+        {
+        }
+        /**
+         * The android:name value
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Testing\UsesFeature registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIsRequired()
-    {
-    }
-    /**
-     * The android:name value
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Testing_UsesFeature extends \Google\Service\Testing\UsesFeature
     {
     }
 }

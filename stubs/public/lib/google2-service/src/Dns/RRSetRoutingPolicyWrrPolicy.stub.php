@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dns;
-
-class RRSetRoutingPolicyWrrPolicy extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    protected $itemsType = RRSetRoutingPolicyWrrPolicyWrrPolicyItem::class;
-    protected $itemsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $kind;
-    /**
-     * @param RRSetRoutingPolicyWrrPolicyWrrPolicyItem[] $items
-     */
-    public function setItems($items)
+namespace Google\Service\Dns {
+    class RRSetRoutingPolicyWrrPolicy extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        protected $itemsType = RRSetRoutingPolicyWrrPolicyWrrPolicyItem::class;
+        protected $itemsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $kind;
+        /**
+         * @param RRSetRoutingPolicyWrrPolicyWrrPolicyItem[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return RRSetRoutingPolicyWrrPolicyWrrPolicyItem[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RRSetRoutingPolicyWrrPolicyWrrPolicyItem[]
+     * Runtime class alias of \Google\Service\Dns\RRSetRoutingPolicyWrrPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItems()
-    {
-    }
-    /**
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_Dns_RRSetRoutingPolicyWrrPolicy extends \Google\Service\Dns\RRSetRoutingPolicyWrrPolicy
     {
     }
 }

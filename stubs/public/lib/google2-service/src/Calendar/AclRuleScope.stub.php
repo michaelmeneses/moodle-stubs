@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Calendar;
-
-class AclRuleScope extends \Google\Model
-{
-    /**
-     * The type of the scope. Possible values are: - "default" - The public scope.
-     * This is the default value.  - "user" - Limits the scope to a single user.
-     * - "group" - Limits the scope to a group.  - "domain" - Limits the scope to
-     * a domain.  Note: The permissions granted to the "default", or public, scope
-     * apply to any user, authenticated or not.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The email address of a user or group, or the name of a domain, depending on
-     * the scope type. Omitted for type "default".
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * The type of the scope. Possible values are: - "default" - The public scope.
-     * This is the default value.  - "user" - Limits the scope to a single user.
-     * - "group" - Limits the scope to a group.  - "domain" - Limits the scope to
-     * a domain.  Note: The permissions granted to the "default", or public, scope
-     * apply to any user, authenticated or not.
-     *
-     * @param string $type
-     */
-    public function setType($type)
+namespace Google\Service\Calendar {
+    class AclRuleScope extends \Google\Model
     {
+        /**
+         * The type of the scope. Possible values are: - "default" - The public scope.
+         * This is the default value.  - "user" - Limits the scope to a single user.
+         * - "group" - Limits the scope to a group.  - "domain" - Limits the scope to
+         * a domain.  Note: The permissions granted to the "default", or public, scope
+         * apply to any user, authenticated or not.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The email address of a user or group, or the name of a domain, depending on
+         * the scope type. Omitted for type "default".
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * The type of the scope. Possible values are: - "default" - The public scope.
+         * This is the default value.  - "user" - Limits the scope to a single user.
+         * - "group" - Limits the scope to a group.  - "domain" - Limits the scope to
+         * a domain.  Note: The permissions granted to the "default", or public, scope
+         * apply to any user, authenticated or not.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
+        /**
+         * The email address of a user or group, or the name of a domain, depending on
+         * the scope type. Omitted for type "default".
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Calendar\AclRuleScope registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getType()
-    {
-    }
-    /**
-     * The email address of a user or group, or the name of a domain, depending on
-     * the scope type. Omitted for type "default".
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_Calendar_AclRuleScope extends \Google\Service\Calendar\AclRuleScope
     {
     }
 }

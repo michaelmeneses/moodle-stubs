@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BeyondCorp;
-
-class GoogleCloudBeyondcorpAppconnectorsV1AppConnectorPrincipalInfo extends \Google\Model
-{
-    protected $serviceAccountType = GoogleCloudBeyondcorpAppconnectorsV1AppConnectorPrincipalInfoServiceAccount::class;
-    protected $serviceAccountDataType = '';
-    /**
-     * A GCP service account.
-     *
-     * @param GoogleCloudBeyondcorpAppconnectorsV1AppConnectorPrincipalInfoServiceAccount $serviceAccount
-     */
-    public function setServiceAccount(GoogleCloudBeyondcorpAppconnectorsV1AppConnectorPrincipalInfoServiceAccount $serviceAccount)
+namespace Google\Service\BeyondCorp {
+    class GoogleCloudBeyondcorpAppconnectorsV1AppConnectorPrincipalInfo extends \Google\Model
     {
+        protected $serviceAccountType = GoogleCloudBeyondcorpAppconnectorsV1AppConnectorPrincipalInfoServiceAccount::class;
+        protected $serviceAccountDataType = '';
+        /**
+         * A GCP service account.
+         *
+         * @param GoogleCloudBeyondcorpAppconnectorsV1AppConnectorPrincipalInfoServiceAccount $serviceAccount
+         */
+        public function setServiceAccount(GoogleCloudBeyondcorpAppconnectorsV1AppConnectorPrincipalInfoServiceAccount $serviceAccount)
+        {
+        }
+        /**
+         * @return GoogleCloudBeyondcorpAppconnectorsV1AppConnectorPrincipalInfoServiceAccount
+         */
+        public function getServiceAccount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudBeyondcorpAppconnectorsV1AppConnectorPrincipalInfoServiceAccount
+     * Runtime class alias of \Google\Service\BeyondCorp\GoogleCloudBeyondcorpAppconnectorsV1AppConnectorPrincipalInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getServiceAccount()
+    class Google_Service_BeyondCorp_GoogleCloudBeyondcorpAppconnectorsV1AppConnectorPrincipalInfo extends \Google\Service\BeyondCorp\GoogleCloudBeyondcorpAppconnectorsV1AppConnectorPrincipalInfo
     {
     }
 }

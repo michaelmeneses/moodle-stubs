@@ -21,60 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkspaceEvents\Resource;
-
-/**
- * The "tasks" collection of methods.
- * Typical usage is:
- *  <code>
- *   $workspaceeventsService = new Google\Service\WorkspaceEvents(...);
- *   $tasks = $workspaceeventsService->tasks;
- *  </code>
- */
-class Tasks extends \Google\Service\Resource
-{
+namespace Google\Service\WorkspaceEvents\Resource {
+    use Google\Service\WorkspaceEvents\CancelTaskRequest;
+    use Google\Service\WorkspaceEvents\StreamResponse;
+    use Google\Service\WorkspaceEvents\Task;
     /**
-     * Cancel a task from the agent. If supported one should expect no more task
-     * updates for the task. (tasks.cancel)
-     *
-     * @param string $name The resource name of the task to cancel. Format:
-     * tasks/{task_id}
-     * @param CancelTaskRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Task
-     * @throws \Google\Service\Exception
+     * The "tasks" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $workspaceeventsService = new Google\Service\WorkspaceEvents(...);
+     *   $tasks = $workspaceeventsService->tasks;
+     *  </code>
      */
-    public function cancel($name, CancelTaskRequest $postBody, $optParams = [])
+    class Tasks extends \Google\Service\Resource
     {
+        /**
+         * Cancel a task from the agent. If supported one should expect no more task
+         * updates for the task. (tasks.cancel)
+         *
+         * @param string $name The resource name of the task to cancel. Format:
+         * tasks/{task_id}
+         * @param CancelTaskRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Task
+         * @throws \Google\Service\Exception
+         */
+        public function cancel($name, CancelTaskRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Get the current state of a task from the agent. (tasks.get)
+         *
+         * @param string $name Required. The resource name of the task. Format:
+         * tasks/{task_id}
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int historyLength The number of most recent messages from the
+         * task's history to retrieve.
+         * @return Task
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * TaskSubscription is a streaming call that will return a stream of task update
+         * events. This attaches the stream to an existing in process task. If the task
+         * is complete the stream will return the completed task (like GetTask) and
+         * close the stream. (tasks.subscribe)
+         *
+         * @param string $name The resource name of the task to subscribe to. Format:
+         * tasks/{task_id}
+         * @param array $optParams Optional parameters.
+         * @return StreamResponse
+         * @throws \Google\Service\Exception
+         */
+        public function subscribe($name, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Get the current state of a task from the agent. (tasks.get)
-     *
-     * @param string $name Required. The resource name of the task. Format:
-     * tasks/{task_id}
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int historyLength The number of most recent messages from the
-     * task's history to retrieve.
-     * @return Task
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\WorkspaceEvents\Resource\Tasks registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * TaskSubscription is a streaming call that will return a stream of task update
-     * events. This attaches the stream to an existing in process task. If the task
-     * is complete the stream will return the completed task (like GetTask) and
-     * close the stream. (tasks.subscribe)
-     *
-     * @param string $name The resource name of the task to subscribe to. Format:
-     * tasks/{task_id}
-     * @param array $optParams Optional parameters.
-     * @return StreamResponse
-     * @throws \Google\Service\Exception
-     */
-    public function subscribe($name, $optParams = [])
+    class Google_Service_WorkspaceEvents_Resource_Tasks extends \Google\Service\WorkspaceEvents\Resource\Tasks
     {
     }
 }

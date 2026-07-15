@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution;
-
-class BuildBazelRemoteExecutionV2RequestMetadata extends \Google\Model
-{
-    public $actionId;
-    public $actionMnemonic;
-    public $configurationId;
-    public $correlatedInvocationsId;
-    public $targetId;
-    protected $toolDetailsType = BuildBazelRemoteExecutionV2ToolDetails::class;
-    protected $toolDetailsDataType = '';
-    public $toolInvocationId;
-    public function setActionId($actionId)
+namespace Google\Service\RemoteBuildExecution {
+    class BuildBazelRemoteExecutionV2RequestMetadata extends \Google\Model
     {
+        public $actionId;
+        public $actionMnemonic;
+        public $configurationId;
+        public $correlatedInvocationsId;
+        public $targetId;
+        protected $toolDetailsType = BuildBazelRemoteExecutionV2ToolDetails::class;
+        protected $toolDetailsDataType = '';
+        public $toolInvocationId;
+        public function setActionId($actionId)
+        {
+        }
+        public function getActionId()
+        {
+        }
+        public function setActionMnemonic($actionMnemonic)
+        {
+        }
+        public function getActionMnemonic()
+        {
+        }
+        public function setConfigurationId($configurationId)
+        {
+        }
+        public function getConfigurationId()
+        {
+        }
+        public function setCorrelatedInvocationsId($correlatedInvocationsId)
+        {
+        }
+        public function getCorrelatedInvocationsId()
+        {
+        }
+        public function setTargetId($targetId)
+        {
+        }
+        public function getTargetId()
+        {
+        }
+        /**
+         * @param BuildBazelRemoteExecutionV2ToolDetails
+         */
+        public function setToolDetails(BuildBazelRemoteExecutionV2ToolDetails $toolDetails)
+        {
+        }
+        /**
+         * @return BuildBazelRemoteExecutionV2ToolDetails
+         */
+        public function getToolDetails()
+        {
+        }
+        public function setToolInvocationId($toolInvocationId)
+        {
+        }
+        public function getToolInvocationId()
+        {
+        }
     }
-    public function getActionId()
-    {
-    }
-    public function setActionMnemonic($actionMnemonic)
-    {
-    }
-    public function getActionMnemonic()
-    {
-    }
-    public function setConfigurationId($configurationId)
-    {
-    }
-    public function getConfigurationId()
-    {
-    }
-    public function setCorrelatedInvocationsId($correlatedInvocationsId)
-    {
-    }
-    public function getCorrelatedInvocationsId()
-    {
-    }
-    public function setTargetId($targetId)
-    {
-    }
-    public function getTargetId()
-    {
-    }
+}
+namespace {
     /**
-     * @param BuildBazelRemoteExecutionV2ToolDetails
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2RequestMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setToolDetails(BuildBazelRemoteExecutionV2ToolDetails $toolDetails)
-    {
-    }
-    /**
-     * @return BuildBazelRemoteExecutionV2ToolDetails
-     */
-    public function getToolDetails()
-    {
-    }
-    public function setToolInvocationId($toolInvocationId)
-    {
-    }
-    public function getToolInvocationId()
+    class Google_Service_RemoteBuildExecution_BuildBazelRemoteExecutionV2RequestMetadata extends \Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2RequestMetadata
     {
     }
 }

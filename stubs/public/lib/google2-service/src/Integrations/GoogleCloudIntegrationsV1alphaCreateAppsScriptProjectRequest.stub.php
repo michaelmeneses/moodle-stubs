@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaCreateAppsScriptProjectRequest extends \Google\Model
-{
-    /**
-     * The name of the Apps Script project to be created.
-     *
-     * @var string
-     */
-    public $appsScriptProject;
-    /**
-     * The auth config id necessary to fetch the necessary credentials to create
-     * the project for external clients
-     *
-     * @var string
-     */
-    public $authConfigId;
-    /**
-     * The name of the Apps Script project to be created.
-     *
-     * @param string $appsScriptProject
-     */
-    public function setAppsScriptProject($appsScriptProject)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaCreateAppsScriptProjectRequest extends \Google\Model
     {
+        /**
+         * The name of the Apps Script project to be created.
+         *
+         * @var string
+         */
+        public $appsScriptProject;
+        /**
+         * The auth config id necessary to fetch the necessary credentials to create
+         * the project for external clients
+         *
+         * @var string
+         */
+        public $authConfigId;
+        /**
+         * The name of the Apps Script project to be created.
+         *
+         * @param string $appsScriptProject
+         */
+        public function setAppsScriptProject($appsScriptProject)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAppsScriptProject()
+        {
+        }
+        /**
+         * The auth config id necessary to fetch the necessary credentials to create
+         * the project for external clients
+         *
+         * @param string $authConfigId
+         */
+        public function setAuthConfigId($authConfigId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAuthConfigId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaCreateAppsScriptProjectRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAppsScriptProject()
-    {
-    }
-    /**
-     * The auth config id necessary to fetch the necessary credentials to create
-     * the project for external clients
-     *
-     * @param string $authConfigId
-     */
-    public function setAuthConfigId($authConfigId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAuthConfigId()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaCreateAppsScriptProjectRequest extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaCreateAppsScriptProjectRequest
     {
     }
 }

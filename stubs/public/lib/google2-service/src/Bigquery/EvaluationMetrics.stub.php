@@ -21,122 +21,131 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class EvaluationMetrics extends \Google\Model
-{
-    protected $arimaForecastingMetricsType = ArimaForecastingMetrics::class;
-    protected $arimaForecastingMetricsDataType = '';
-    protected $binaryClassificationMetricsType = BinaryClassificationMetrics::class;
-    protected $binaryClassificationMetricsDataType = '';
-    protected $clusteringMetricsType = ClusteringMetrics::class;
-    protected $clusteringMetricsDataType = '';
-    protected $dimensionalityReductionMetricsType = DimensionalityReductionMetrics::class;
-    protected $dimensionalityReductionMetricsDataType = '';
-    protected $multiClassClassificationMetricsType = MultiClassClassificationMetrics::class;
-    protected $multiClassClassificationMetricsDataType = '';
-    protected $rankingMetricsType = RankingMetrics::class;
-    protected $rankingMetricsDataType = '';
-    protected $regressionMetricsType = RegressionMetrics::class;
-    protected $regressionMetricsDataType = '';
-    /**
-     * Populated for ARIMA models.
-     *
-     * @param ArimaForecastingMetrics $arimaForecastingMetrics
-     */
-    public function setArimaForecastingMetrics(ArimaForecastingMetrics $arimaForecastingMetrics)
+namespace Google\Service\Bigquery {
+    class EvaluationMetrics extends \Google\Model
     {
+        protected $arimaForecastingMetricsType = ArimaForecastingMetrics::class;
+        protected $arimaForecastingMetricsDataType = '';
+        protected $binaryClassificationMetricsType = BinaryClassificationMetrics::class;
+        protected $binaryClassificationMetricsDataType = '';
+        protected $clusteringMetricsType = ClusteringMetrics::class;
+        protected $clusteringMetricsDataType = '';
+        protected $dimensionalityReductionMetricsType = DimensionalityReductionMetrics::class;
+        protected $dimensionalityReductionMetricsDataType = '';
+        protected $multiClassClassificationMetricsType = MultiClassClassificationMetrics::class;
+        protected $multiClassClassificationMetricsDataType = '';
+        protected $rankingMetricsType = RankingMetrics::class;
+        protected $rankingMetricsDataType = '';
+        protected $regressionMetricsType = RegressionMetrics::class;
+        protected $regressionMetricsDataType = '';
+        /**
+         * Populated for ARIMA models.
+         *
+         * @param ArimaForecastingMetrics $arimaForecastingMetrics
+         */
+        public function setArimaForecastingMetrics(ArimaForecastingMetrics $arimaForecastingMetrics)
+        {
+        }
+        /**
+         * @return ArimaForecastingMetrics
+         */
+        public function getArimaForecastingMetrics()
+        {
+        }
+        /**
+         * Populated for binary classification/classifier models.
+         *
+         * @param BinaryClassificationMetrics $binaryClassificationMetrics
+         */
+        public function setBinaryClassificationMetrics(BinaryClassificationMetrics $binaryClassificationMetrics)
+        {
+        }
+        /**
+         * @return BinaryClassificationMetrics
+         */
+        public function getBinaryClassificationMetrics()
+        {
+        }
+        /**
+         * Populated for clustering models.
+         *
+         * @param ClusteringMetrics $clusteringMetrics
+         */
+        public function setClusteringMetrics(ClusteringMetrics $clusteringMetrics)
+        {
+        }
+        /**
+         * @return ClusteringMetrics
+         */
+        public function getClusteringMetrics()
+        {
+        }
+        /**
+         * Evaluation metrics when the model is a dimensionality reduction model,
+         * which currently includes PCA.
+         *
+         * @param DimensionalityReductionMetrics $dimensionalityReductionMetrics
+         */
+        public function setDimensionalityReductionMetrics(DimensionalityReductionMetrics $dimensionalityReductionMetrics)
+        {
+        }
+        /**
+         * @return DimensionalityReductionMetrics
+         */
+        public function getDimensionalityReductionMetrics()
+        {
+        }
+        /**
+         * Populated for multi-class classification/classifier models.
+         *
+         * @param MultiClassClassificationMetrics $multiClassClassificationMetrics
+         */
+        public function setMultiClassClassificationMetrics(MultiClassClassificationMetrics $multiClassClassificationMetrics)
+        {
+        }
+        /**
+         * @return MultiClassClassificationMetrics
+         */
+        public function getMultiClassClassificationMetrics()
+        {
+        }
+        /**
+         * Populated for implicit feedback type matrix factorization models.
+         *
+         * @param RankingMetrics $rankingMetrics
+         */
+        public function setRankingMetrics(RankingMetrics $rankingMetrics)
+        {
+        }
+        /**
+         * @return RankingMetrics
+         */
+        public function getRankingMetrics()
+        {
+        }
+        /**
+         * Populated for regression models and explicit feedback type matrix
+         * factorization models.
+         *
+         * @param RegressionMetrics $regressionMetrics
+         */
+        public function setRegressionMetrics(RegressionMetrics $regressionMetrics)
+        {
+        }
+        /**
+         * @return RegressionMetrics
+         */
+        public function getRegressionMetrics()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ArimaForecastingMetrics
+     * Runtime class alias of \Google\Service\Bigquery\EvaluationMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArimaForecastingMetrics()
-    {
-    }
-    /**
-     * Populated for binary classification/classifier models.
-     *
-     * @param BinaryClassificationMetrics $binaryClassificationMetrics
-     */
-    public function setBinaryClassificationMetrics(BinaryClassificationMetrics $binaryClassificationMetrics)
-    {
-    }
-    /**
-     * @return BinaryClassificationMetrics
-     */
-    public function getBinaryClassificationMetrics()
-    {
-    }
-    /**
-     * Populated for clustering models.
-     *
-     * @param ClusteringMetrics $clusteringMetrics
-     */
-    public function setClusteringMetrics(ClusteringMetrics $clusteringMetrics)
-    {
-    }
-    /**
-     * @return ClusteringMetrics
-     */
-    public function getClusteringMetrics()
-    {
-    }
-    /**
-     * Evaluation metrics when the model is a dimensionality reduction model,
-     * which currently includes PCA.
-     *
-     * @param DimensionalityReductionMetrics $dimensionalityReductionMetrics
-     */
-    public function setDimensionalityReductionMetrics(DimensionalityReductionMetrics $dimensionalityReductionMetrics)
-    {
-    }
-    /**
-     * @return DimensionalityReductionMetrics
-     */
-    public function getDimensionalityReductionMetrics()
-    {
-    }
-    /**
-     * Populated for multi-class classification/classifier models.
-     *
-     * @param MultiClassClassificationMetrics $multiClassClassificationMetrics
-     */
-    public function setMultiClassClassificationMetrics(MultiClassClassificationMetrics $multiClassClassificationMetrics)
-    {
-    }
-    /**
-     * @return MultiClassClassificationMetrics
-     */
-    public function getMultiClassClassificationMetrics()
-    {
-    }
-    /**
-     * Populated for implicit feedback type matrix factorization models.
-     *
-     * @param RankingMetrics $rankingMetrics
-     */
-    public function setRankingMetrics(RankingMetrics $rankingMetrics)
-    {
-    }
-    /**
-     * @return RankingMetrics
-     */
-    public function getRankingMetrics()
-    {
-    }
-    /**
-     * Populated for regression models and explicit feedback type matrix
-     * factorization models.
-     *
-     * @param RegressionMetrics $regressionMetrics
-     */
-    public function setRegressionMetrics(RegressionMetrics $regressionMetrics)
-    {
-    }
-    /**
-     * @return RegressionMetrics
-     */
-    public function getRegressionMetrics()
+    class Google_Service_Bigquery_EvaluationMetrics extends \Google\Service\Bigquery\EvaluationMetrics
     {
     }
 }

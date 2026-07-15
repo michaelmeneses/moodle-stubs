@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1AuthConfigHttpBasicAuthConfig extends \Google\Model
-{
-    /**
-     * Required. The name of the SecretManager secret version resource storing the
-     * base64 encoded credentials. Format:
-     * `projects/{project}/secrets/{secrete}/versions/{version}` - If specified,
-     * the `secretmanager.versions.access` permission should be granted to Vertex
-     * AI Extension Service Agent (https://cloud.google.com/vertex-
-     * ai/docs/general/access-control#service-agents) on the specified resource.
-     *
-     * @var string
-     */
-    public $credentialSecret;
-    /**
-     * Required. The name of the SecretManager secret version resource storing the
-     * base64 encoded credentials. Format:
-     * `projects/{project}/secrets/{secrete}/versions/{version}` - If specified,
-     * the `secretmanager.versions.access` permission should be granted to Vertex
-     * AI Extension Service Agent (https://cloud.google.com/vertex-
-     * ai/docs/general/access-control#service-agents) on the specified resource.
-     *
-     * @param string $credentialSecret
-     */
-    public function setCredentialSecret($credentialSecret)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1AuthConfigHttpBasicAuthConfig extends \Google\Model
     {
+        /**
+         * Required. The name of the SecretManager secret version resource storing the
+         * base64 encoded credentials. Format:
+         * `projects/{project}/secrets/{secrete}/versions/{version}` - If specified,
+         * the `secretmanager.versions.access` permission should be granted to Vertex
+         * AI Extension Service Agent (https://cloud.google.com/vertex-
+         * ai/docs/general/access-control#service-agents) on the specified resource.
+         *
+         * @var string
+         */
+        public $credentialSecret;
+        /**
+         * Required. The name of the SecretManager secret version resource storing the
+         * base64 encoded credentials. Format:
+         * `projects/{project}/secrets/{secrete}/versions/{version}` - If specified,
+         * the `secretmanager.versions.access` permission should be granted to Vertex
+         * AI Extension Service Agent (https://cloud.google.com/vertex-
+         * ai/docs/general/access-control#service-agents) on the specified resource.
+         *
+         * @param string $credentialSecret
+         */
+        public function setCredentialSecret($credentialSecret)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCredentialSecret()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1AuthConfigHttpBasicAuthConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCredentialSecret()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1AuthConfigHttpBasicAuthConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1AuthConfigHttpBasicAuthConfig
     {
     }
 }

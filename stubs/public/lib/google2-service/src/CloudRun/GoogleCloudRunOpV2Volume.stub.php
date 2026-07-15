@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleCloudRunOpV2Volume extends \Google\Model
-{
-    protected $cloudSqlInstanceType = GoogleCloudRunOpV2CloudSqlInstance::class;
-    protected $cloudSqlInstanceDataType = '';
-    /**
-     * @var string
-     */
-    public $name;
-    protected $secretType = GoogleCloudRunOpV2SecretVolumeSource::class;
-    protected $secretDataType = '';
-    /**
-     * @param GoogleCloudRunOpV2CloudSqlInstance
-     */
-    public function setCloudSqlInstance(GoogleCloudRunOpV2CloudSqlInstance $cloudSqlInstance)
+namespace Google\Service\CloudRun {
+    class GoogleCloudRunOpV2Volume extends \Google\Model
     {
+        protected $cloudSqlInstanceType = GoogleCloudRunOpV2CloudSqlInstance::class;
+        protected $cloudSqlInstanceDataType = '';
+        /**
+         * @var string
+         */
+        public $name;
+        protected $secretType = GoogleCloudRunOpV2SecretVolumeSource::class;
+        protected $secretDataType = '';
+        /**
+         * @param GoogleCloudRunOpV2CloudSqlInstance
+         */
+        public function setCloudSqlInstance(GoogleCloudRunOpV2CloudSqlInstance $cloudSqlInstance)
+        {
+        }
+        /**
+         * @return GoogleCloudRunOpV2CloudSqlInstance
+         */
+        public function getCloudSqlInstance()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param GoogleCloudRunOpV2SecretVolumeSource
+         */
+        public function setSecret(GoogleCloudRunOpV2SecretVolumeSource $secret)
+        {
+        }
+        /**
+         * @return GoogleCloudRunOpV2SecretVolumeSource
+         */
+        public function getSecret()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRunOpV2CloudSqlInstance
+     * Runtime class alias of \Google\Service\CloudRun\GoogleCloudRunOpV2Volume registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCloudSqlInstance()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param GoogleCloudRunOpV2SecretVolumeSource
-     */
-    public function setSecret(GoogleCloudRunOpV2SecretVolumeSource $secret)
-    {
-    }
-    /**
-     * @return GoogleCloudRunOpV2SecretVolumeSource
-     */
-    public function getSecret()
+    class Google_Service_CloudRun_GoogleCloudRunOpV2Volume extends \Google\Service\CloudRun\GoogleCloudRunOpV2Volume
     {
     }
 }

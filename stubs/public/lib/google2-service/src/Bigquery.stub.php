@@ -21,54 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for Bigquery (v2).
- *
- * <p>
- * A data platform for customers to create, manage, share and query data.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://cloud.google.com/bigquery/" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class Bigquery extends \Google\Service
-{
-    /** View and manage your data in Google BigQuery and see the email address for your Google Account. */
-    const BIGQUERY = "https://www.googleapis.com/auth/bigquery";
-    /** Insert data into Google BigQuery. */
-    const BIGQUERY_INSERTDATA = "https://www.googleapis.com/auth/bigquery.insertdata";
-    /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
-    const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
-    /** View your data across Google Cloud services and see the email address of your Google Account. */
-    const CLOUD_PLATFORM_READ_ONLY = "https://www.googleapis.com/auth/cloud-platform.read-only";
-    /** Manage your data and permissions in Cloud Storage and see the email address for your Google Account. */
-    const DEVSTORAGE_FULL_CONTROL = "https://www.googleapis.com/auth/devstorage.full_control";
-    /** View your data in Google Cloud Storage. */
-    const DEVSTORAGE_READ_ONLY = "https://www.googleapis.com/auth/devstorage.read_only";
-    /** Manage your data in Cloud Storage and see the email address of your Google Account. */
-    const DEVSTORAGE_READ_WRITE = "https://www.googleapis.com/auth/devstorage.read_write";
-    public $datasets;
-    public $jobs;
-    public $models;
-    public $projects;
-    public $routines;
-    public $rowAccessPolicies;
-    public $tabledata;
-    public $tables;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the Bigquery service.
+     * Service definition for Bigquery (v2).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * A data platform for customers to create, manage, share and query data.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://cloud.google.com/bigquery/" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class Bigquery extends \Google\Service
+    {
+        /** View and manage your data in Google BigQuery and see the email address for your Google Account. */
+        const BIGQUERY = "https://www.googleapis.com/auth/bigquery";
+        /** Insert data into Google BigQuery. */
+        const BIGQUERY_INSERTDATA = "https://www.googleapis.com/auth/bigquery.insertdata";
+        /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
+        const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
+        /** View your data across Google Cloud services and see the email address of your Google Account. */
+        const CLOUD_PLATFORM_READ_ONLY = "https://www.googleapis.com/auth/cloud-platform.read-only";
+        /** Manage your data and permissions in Cloud Storage and see the email address for your Google Account. */
+        const DEVSTORAGE_FULL_CONTROL = "https://www.googleapis.com/auth/devstorage.full_control";
+        /** View your data in Google Cloud Storage. */
+        const DEVSTORAGE_READ_ONLY = "https://www.googleapis.com/auth/devstorage.read_only";
+        /** Manage your data in Cloud Storage and see the email address of your Google Account. */
+        const DEVSTORAGE_READ_WRITE = "https://www.googleapis.com/auth/devstorage.read_write";
+        public $datasets;
+        public $jobs;
+        public $models;
+        public $projects;
+        public $routines;
+        public $rowAccessPolicies;
+        public $tabledata;
+        public $tables;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the Bigquery service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Bigquery registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Bigquery extends \Google\Service\Bigquery
     {
     }
 }

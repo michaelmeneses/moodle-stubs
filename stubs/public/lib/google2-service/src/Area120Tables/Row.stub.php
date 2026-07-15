@@ -21,94 +21,103 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Area120Tables;
-
-class Row extends \Google\Model
-{
-    /**
-     * Time when the row was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * The resource name of the row. Row names have the form
-     * `tables/{table}/rows/{row}`. The name is ignored when creating a row.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Time when the row was last updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * The values of the row. This is a map of column key to value. Key is user
-     * entered name(default) or the internal column id based on the view in the
-     * request.
-     *
-     * @var array[]
-     */
-    public $values;
-    /**
-     * Time when the row was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\Area120Tables {
+    class Row extends \Google\Model
     {
+        /**
+         * Time when the row was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * The resource name of the row. Row names have the form
+         * `tables/{table}/rows/{row}`. The name is ignored when creating a row.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Time when the row was last updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * The values of the row. This is a map of column key to value. Key is user
+         * entered name(default) or the internal column id based on the view in the
+         * request.
+         *
+         * @var array[]
+         */
+        public $values;
+        /**
+         * Time when the row was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * The resource name of the row. Row names have the form
+         * `tables/{table}/rows/{row}`. The name is ignored when creating a row.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Time when the row was last updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
+        /**
+         * The values of the row. This is a map of column key to value. Key is user
+         * entered name(default) or the internal column id based on the view in the
+         * request.
+         *
+         * @param array[] $values
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Area120Tables\Row registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * The resource name of the row. Row names have the form
-     * `tables/{table}/rows/{row}`. The name is ignored when creating a row.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Time when the row was last updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
-    {
-    }
-    /**
-     * The values of the row. This is a map of column key to value. Key is user
-     * entered name(default) or the internal column id based on the view in the
-     * request.
-     *
-     * @param array[] $values
-     */
-    public function setValues($values)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getValues()
+    class Google_Service_Area120Tables_Row extends \Google\Service\Area120Tables\Row
     {
     }
 }

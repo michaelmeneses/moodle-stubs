@@ -21,154 +21,163 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Doubleclicksearch;
-
-class Availability extends \Google\Model
-{
-    /**
-     * DS advertiser ID.
-     *
-     * @var string
-     */
-    public $advertiserId;
-    /**
-     * DS agency ID.
-     *
-     * @var string
-     */
-    public $agencyId;
-    /**
-     * The time by which all conversions have been uploaded, in epoch millis UTC.
-     *
-     * @var string
-     */
-    public $availabilityTimestamp;
-    /**
-     * Customer ID of a client account in the new Search Ads 360 experience.
-     *
-     * @var string
-     */
-    public $customerId;
-    /**
-     * The numeric segmentation identifier (for example, DoubleClick Search
-     * Floodlight activity ID).
-     *
-     * @var string
-     */
-    public $segmentationId;
-    /**
-     * The friendly segmentation identifier (for example, DoubleClick Search
-     * Floodlight activity name).
-     *
-     * @var string
-     */
-    public $segmentationName;
-    /**
-     * The segmentation type that this availability is for (its default value is
-     * `FLOODLIGHT`).
-     *
-     * @var string
-     */
-    public $segmentationType;
-    /**
-     * DS advertiser ID.
-     *
-     * @param string $advertiserId
-     */
-    public function setAdvertiserId($advertiserId)
+namespace Google\Service\Doubleclicksearch {
+    class Availability extends \Google\Model
     {
+        /**
+         * DS advertiser ID.
+         *
+         * @var string
+         */
+        public $advertiserId;
+        /**
+         * DS agency ID.
+         *
+         * @var string
+         */
+        public $agencyId;
+        /**
+         * The time by which all conversions have been uploaded, in epoch millis UTC.
+         *
+         * @var string
+         */
+        public $availabilityTimestamp;
+        /**
+         * Customer ID of a client account in the new Search Ads 360 experience.
+         *
+         * @var string
+         */
+        public $customerId;
+        /**
+         * The numeric segmentation identifier (for example, DoubleClick Search
+         * Floodlight activity ID).
+         *
+         * @var string
+         */
+        public $segmentationId;
+        /**
+         * The friendly segmentation identifier (for example, DoubleClick Search
+         * Floodlight activity name).
+         *
+         * @var string
+         */
+        public $segmentationName;
+        /**
+         * The segmentation type that this availability is for (its default value is
+         * `FLOODLIGHT`).
+         *
+         * @var string
+         */
+        public $segmentationType;
+        /**
+         * DS advertiser ID.
+         *
+         * @param string $advertiserId
+         */
+        public function setAdvertiserId($advertiserId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdvertiserId()
+        {
+        }
+        /**
+         * DS agency ID.
+         *
+         * @param string $agencyId
+         */
+        public function setAgencyId($agencyId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAgencyId()
+        {
+        }
+        /**
+         * The time by which all conversions have been uploaded, in epoch millis UTC.
+         *
+         * @param string $availabilityTimestamp
+         */
+        public function setAvailabilityTimestamp($availabilityTimestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAvailabilityTimestamp()
+        {
+        }
+        /**
+         * Customer ID of a client account in the new Search Ads 360 experience.
+         *
+         * @param string $customerId
+         */
+        public function setCustomerId($customerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomerId()
+        {
+        }
+        /**
+         * The numeric segmentation identifier (for example, DoubleClick Search
+         * Floodlight activity ID).
+         *
+         * @param string $segmentationId
+         */
+        public function setSegmentationId($segmentationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSegmentationId()
+        {
+        }
+        /**
+         * The friendly segmentation identifier (for example, DoubleClick Search
+         * Floodlight activity name).
+         *
+         * @param string $segmentationName
+         */
+        public function setSegmentationName($segmentationName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSegmentationName()
+        {
+        }
+        /**
+         * The segmentation type that this availability is for (its default value is
+         * `FLOODLIGHT`).
+         *
+         * @param string $segmentationType
+         */
+        public function setSegmentationType($segmentationType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSegmentationType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Doubleclicksearch\Availability registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdvertiserId()
-    {
-    }
-    /**
-     * DS agency ID.
-     *
-     * @param string $agencyId
-     */
-    public function setAgencyId($agencyId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAgencyId()
-    {
-    }
-    /**
-     * The time by which all conversions have been uploaded, in epoch millis UTC.
-     *
-     * @param string $availabilityTimestamp
-     */
-    public function setAvailabilityTimestamp($availabilityTimestamp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAvailabilityTimestamp()
-    {
-    }
-    /**
-     * Customer ID of a client account in the new Search Ads 360 experience.
-     *
-     * @param string $customerId
-     */
-    public function setCustomerId($customerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCustomerId()
-    {
-    }
-    /**
-     * The numeric segmentation identifier (for example, DoubleClick Search
-     * Floodlight activity ID).
-     *
-     * @param string $segmentationId
-     */
-    public function setSegmentationId($segmentationId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSegmentationId()
-    {
-    }
-    /**
-     * The friendly segmentation identifier (for example, DoubleClick Search
-     * Floodlight activity name).
-     *
-     * @param string $segmentationName
-     */
-    public function setSegmentationName($segmentationName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSegmentationName()
-    {
-    }
-    /**
-     * The segmentation type that this availability is for (its default value is
-     * `FLOODLIGHT`).
-     *
-     * @param string $segmentationType
-     */
-    public function setSegmentationType($segmentationType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSegmentationType()
+    class Google_Service_Doubleclicksearch_Availability extends \Google\Service\Doubleclicksearch\Availability
     {
     }
 }

@@ -16,6 +16,8 @@
  */
 namespace Monolog\Handler;
 
+use Monolog\Level;
+use Monolog\Formatter\LineFormatter;
 /**
  * NativeMailerHandler uses the mail() function to send the emails
  *

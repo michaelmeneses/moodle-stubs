@@ -21,183 +21,192 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataform;
-
-class CompilationResultAction extends \Google\Model
-{
-    protected $assertionType = Assertion::class;
-    protected $assertionDataType = '';
-    protected $canonicalTargetType = Target::class;
-    protected $canonicalTargetDataType = '';
-    protected $dataPreparationType = DataPreparation::class;
-    protected $dataPreparationDataType = '';
-    protected $declarationType = Declaration::class;
-    protected $declarationDataType = '';
-    /**
-     * The full path including filename in which this action is located, relative
-     * to the workspace root.
-     *
-     * @var string
-     */
-    public $filePath;
-    /**
-     * Output only. All the metadata information that is used internally to serve
-     * the resource. For example: timestamps, flags, status fields, etc. The
-     * format of this field is a JSON string.
-     *
-     * @var string
-     */
-    public $internalMetadata;
-    protected $notebookType = Notebook::class;
-    protected $notebookDataType = '';
-    protected $operationsType = Operations::class;
-    protected $operationsDataType = '';
-    protected $relationType = Relation::class;
-    protected $relationDataType = '';
-    protected $targetType = Target::class;
-    protected $targetDataType = '';
-    /**
-     * The assertion executed by this action.
-     *
-     * @param Assertion $assertion
-     */
-    public function setAssertion(Assertion $assertion)
+namespace Google\Service\Dataform {
+    class CompilationResultAction extends \Google\Model
     {
+        protected $assertionType = Assertion::class;
+        protected $assertionDataType = '';
+        protected $canonicalTargetType = Target::class;
+        protected $canonicalTargetDataType = '';
+        protected $dataPreparationType = DataPreparation::class;
+        protected $dataPreparationDataType = '';
+        protected $declarationType = Declaration::class;
+        protected $declarationDataType = '';
+        /**
+         * The full path including filename in which this action is located, relative
+         * to the workspace root.
+         *
+         * @var string
+         */
+        public $filePath;
+        /**
+         * Output only. All the metadata information that is used internally to serve
+         * the resource. For example: timestamps, flags, status fields, etc. The
+         * format of this field is a JSON string.
+         *
+         * @var string
+         */
+        public $internalMetadata;
+        protected $notebookType = Notebook::class;
+        protected $notebookDataType = '';
+        protected $operationsType = Operations::class;
+        protected $operationsDataType = '';
+        protected $relationType = Relation::class;
+        protected $relationDataType = '';
+        protected $targetType = Target::class;
+        protected $targetDataType = '';
+        /**
+         * The assertion executed by this action.
+         *
+         * @param Assertion $assertion
+         */
+        public function setAssertion(Assertion $assertion)
+        {
+        }
+        /**
+         * @return Assertion
+         */
+        public function getAssertion()
+        {
+        }
+        /**
+         * The action's identifier if the project had been compiled without any
+         * overrides configured. Unique within the compilation result.
+         *
+         * @param Target $canonicalTarget
+         */
+        public function setCanonicalTarget(Target $canonicalTarget)
+        {
+        }
+        /**
+         * @return Target
+         */
+        public function getCanonicalTarget()
+        {
+        }
+        /**
+         * The data preparation executed by this action.
+         *
+         * @param DataPreparation $dataPreparation
+         */
+        public function setDataPreparation(DataPreparation $dataPreparation)
+        {
+        }
+        /**
+         * @return DataPreparation
+         */
+        public function getDataPreparation()
+        {
+        }
+        /**
+         * The declaration declared by this action.
+         *
+         * @param Declaration $declaration
+         */
+        public function setDeclaration(Declaration $declaration)
+        {
+        }
+        /**
+         * @return Declaration
+         */
+        public function getDeclaration()
+        {
+        }
+        /**
+         * The full path including filename in which this action is located, relative
+         * to the workspace root.
+         *
+         * @param string $filePath
+         */
+        public function setFilePath($filePath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilePath()
+        {
+        }
+        /**
+         * Output only. All the metadata information that is used internally to serve
+         * the resource. For example: timestamps, flags, status fields, etc. The
+         * format of this field is a JSON string.
+         *
+         * @param string $internalMetadata
+         */
+        public function setInternalMetadata($internalMetadata)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInternalMetadata()
+        {
+        }
+        /**
+         * The notebook executed by this action.
+         *
+         * @param Notebook $notebook
+         */
+        public function setNotebook(Notebook $notebook)
+        {
+        }
+        /**
+         * @return Notebook
+         */
+        public function getNotebook()
+        {
+        }
+        /**
+         * The database operations executed by this action.
+         *
+         * @param Operations $operations
+         */
+        public function setOperations(Operations $operations)
+        {
+        }
+        /**
+         * @return Operations
+         */
+        public function getOperations()
+        {
+        }
+        /**
+         * The database relation created/updated by this action.
+         *
+         * @param Relation $relation
+         */
+        public function setRelation(Relation $relation)
+        {
+        }
+        /**
+         * @return Relation
+         */
+        public function getRelation()
+        {
+        }
+        /**
+         * This action's identifier. Unique within the compilation result.
+         *
+         * @param Target $target
+         */
+        public function setTarget(Target $target)
+        {
+        }
+        /**
+         * @return Target
+         */
+        public function getTarget()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Assertion
+     * Runtime class alias of \Google\Service\Dataform\CompilationResultAction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssertion()
-    {
-    }
-    /**
-     * The action's identifier if the project had been compiled without any
-     * overrides configured. Unique within the compilation result.
-     *
-     * @param Target $canonicalTarget
-     */
-    public function setCanonicalTarget(Target $canonicalTarget)
-    {
-    }
-    /**
-     * @return Target
-     */
-    public function getCanonicalTarget()
-    {
-    }
-    /**
-     * The data preparation executed by this action.
-     *
-     * @param DataPreparation $dataPreparation
-     */
-    public function setDataPreparation(DataPreparation $dataPreparation)
-    {
-    }
-    /**
-     * @return DataPreparation
-     */
-    public function getDataPreparation()
-    {
-    }
-    /**
-     * The declaration declared by this action.
-     *
-     * @param Declaration $declaration
-     */
-    public function setDeclaration(Declaration $declaration)
-    {
-    }
-    /**
-     * @return Declaration
-     */
-    public function getDeclaration()
-    {
-    }
-    /**
-     * The full path including filename in which this action is located, relative
-     * to the workspace root.
-     *
-     * @param string $filePath
-     */
-    public function setFilePath($filePath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFilePath()
-    {
-    }
-    /**
-     * Output only. All the metadata information that is used internally to serve
-     * the resource. For example: timestamps, flags, status fields, etc. The
-     * format of this field is a JSON string.
-     *
-     * @param string $internalMetadata
-     */
-    public function setInternalMetadata($internalMetadata)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInternalMetadata()
-    {
-    }
-    /**
-     * The notebook executed by this action.
-     *
-     * @param Notebook $notebook
-     */
-    public function setNotebook(Notebook $notebook)
-    {
-    }
-    /**
-     * @return Notebook
-     */
-    public function getNotebook()
-    {
-    }
-    /**
-     * The database operations executed by this action.
-     *
-     * @param Operations $operations
-     */
-    public function setOperations(Operations $operations)
-    {
-    }
-    /**
-     * @return Operations
-     */
-    public function getOperations()
-    {
-    }
-    /**
-     * The database relation created/updated by this action.
-     *
-     * @param Relation $relation
-     */
-    public function setRelation(Relation $relation)
-    {
-    }
-    /**
-     * @return Relation
-     */
-    public function getRelation()
-    {
-    }
-    /**
-     * This action's identifier. Unique within the compilation result.
-     *
-     * @param Target $target
-     */
-    public function setTarget(Target $target)
-    {
-    }
-    /**
-     * @return Target
-     */
-    public function getTarget()
+    class Google_Service_Dataform_CompilationResultAction extends \Google\Service\Dataform\CompilationResultAction
     {
     }
 }

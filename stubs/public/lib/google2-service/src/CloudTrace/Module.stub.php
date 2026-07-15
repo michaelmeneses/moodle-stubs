@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudTrace;
-
-class Module extends \Google\Model
-{
-    protected $buildIdType = TruncatableString::class;
-    protected $buildIdDataType = '';
-    protected $moduleType = TruncatableString::class;
-    protected $moduleDataType = '';
-    /**
-     * A unique identifier for the module, usually a hash of its contents (up to
-     * 128 bytes).
-     *
-     * @param TruncatableString $buildId
-     */
-    public function setBuildId(TruncatableString $buildId)
+namespace Google\Service\CloudTrace {
+    class Module extends \Google\Model
     {
+        protected $buildIdType = TruncatableString::class;
+        protected $buildIdDataType = '';
+        protected $moduleType = TruncatableString::class;
+        protected $moduleDataType = '';
+        /**
+         * A unique identifier for the module, usually a hash of its contents (up to
+         * 128 bytes).
+         *
+         * @param TruncatableString $buildId
+         */
+        public function setBuildId(TruncatableString $buildId)
+        {
+        }
+        /**
+         * @return TruncatableString
+         */
+        public function getBuildId()
+        {
+        }
+        /**
+         * For example: main binary, kernel modules, and dynamic libraries such as
+         * libc.so, sharedlib.so (up to 256 bytes).
+         *
+         * @param TruncatableString $module
+         */
+        public function setModule(TruncatableString $module)
+        {
+        }
+        /**
+         * @return TruncatableString
+         */
+        public function getModule()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TruncatableString
+     * Runtime class alias of \Google\Service\CloudTrace\Module registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBuildId()
-    {
-    }
-    /**
-     * For example: main binary, kernel modules, and dynamic libraries such as
-     * libc.so, sharedlib.so (up to 256 bytes).
-     *
-     * @param TruncatableString $module
-     */
-    public function setModule(TruncatableString $module)
-    {
-    }
-    /**
-     * @return TruncatableString
-     */
-    public function getModule()
+    class Google_Service_CloudTrace_Module extends \Google\Service\CloudTrace\Module
     {
     }
 }

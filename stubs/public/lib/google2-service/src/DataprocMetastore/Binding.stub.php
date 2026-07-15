@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataprocMetastore;
-
-class Binding extends \Google\Collection
-{
-    protected $collection_key = 'members';
-    protected $conditionType = Expr::class;
-    protected $conditionDataType = '';
-    /**
-     * @var string[]
-     */
-    public $members;
-    /**
-     * @var string
-     */
-    public $role;
-    /**
-     * @param Expr
-     */
-    public function setCondition(Expr $condition)
+namespace Google\Service\DataprocMetastore {
+    class Binding extends \Google\Collection
     {
+        protected $collection_key = 'members';
+        protected $conditionType = Expr::class;
+        protected $conditionDataType = '';
+        /**
+         * @var string[]
+         */
+        public $members;
+        /**
+         * @var string
+         */
+        public $role;
+        /**
+         * @param Expr
+         */
+        public function setCondition(Expr $condition)
+        {
+        }
+        /**
+         * @return Expr
+         */
+        public function getCondition()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setMembers($members)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMembers()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRole($role)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRole()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Expr
+     * Runtime class alias of \Google\Service\DataprocMetastore\Binding registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCondition()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setMembers($members)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getMembers()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRole($role)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRole()
+    class Google_Service_DataprocMetastore_Binding extends \Google\Service\DataprocMetastore\Binding
     {
     }
 }

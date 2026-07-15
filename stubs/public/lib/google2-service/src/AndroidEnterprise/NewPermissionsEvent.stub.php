@@ -21,77 +21,86 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise;
-
-class NewPermissionsEvent extends \Google\Collection
-{
-    protected $collection_key = 'requestedPermissions';
-    /**
-     * The set of permissions that the enterprise admin has already approved for
-     * this application. Use Permissions.Get on the EMM API to retrieve details
-     * about these permissions.
-     *
-     * @var string[]
-     */
-    public $approvedPermissions;
-    /**
-     * The id of the product (e.g. "app:com.google.android.gm") for which new
-     * permissions were added. This field will always be present.
-     *
-     * @var string
-     */
-    public $productId;
-    /**
-     * The set of permissions that the app is currently requesting. Use
-     * Permissions.Get on the EMM API to retrieve details about these permissions.
-     *
-     * @var string[]
-     */
-    public $requestedPermissions;
-    /**
-     * The set of permissions that the enterprise admin has already approved for
-     * this application. Use Permissions.Get on the EMM API to retrieve details
-     * about these permissions.
-     *
-     * @param string[] $approvedPermissions
-     */
-    public function setApprovedPermissions($approvedPermissions)
+namespace Google\Service\AndroidEnterprise {
+    class NewPermissionsEvent extends \Google\Collection
     {
+        protected $collection_key = 'requestedPermissions';
+        /**
+         * The set of permissions that the enterprise admin has already approved for
+         * this application. Use Permissions.Get on the EMM API to retrieve details
+         * about these permissions.
+         *
+         * @var string[]
+         */
+        public $approvedPermissions;
+        /**
+         * The id of the product (e.g. "app:com.google.android.gm") for which new
+         * permissions were added. This field will always be present.
+         *
+         * @var string
+         */
+        public $productId;
+        /**
+         * The set of permissions that the app is currently requesting. Use
+         * Permissions.Get on the EMM API to retrieve details about these permissions.
+         *
+         * @var string[]
+         */
+        public $requestedPermissions;
+        /**
+         * The set of permissions that the enterprise admin has already approved for
+         * this application. Use Permissions.Get on the EMM API to retrieve details
+         * about these permissions.
+         *
+         * @param string[] $approvedPermissions
+         */
+        public function setApprovedPermissions($approvedPermissions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getApprovedPermissions()
+        {
+        }
+        /**
+         * The id of the product (e.g. "app:com.google.android.gm") for which new
+         * permissions were added. This field will always be present.
+         *
+         * @param string $productId
+         */
+        public function setProductId($productId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProductId()
+        {
+        }
+        /**
+         * The set of permissions that the app is currently requesting. Use
+         * Permissions.Get on the EMM API to retrieve details about these permissions.
+         *
+         * @param string[] $requestedPermissions
+         */
+        public function setRequestedPermissions($requestedPermissions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRequestedPermissions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\AndroidEnterprise\NewPermissionsEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApprovedPermissions()
-    {
-    }
-    /**
-     * The id of the product (e.g. "app:com.google.android.gm") for which new
-     * permissions were added. This field will always be present.
-     *
-     * @param string $productId
-     */
-    public function setProductId($productId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProductId()
-    {
-    }
-    /**
-     * The set of permissions that the app is currently requesting. Use
-     * Permissions.Get on the EMM API to retrieve details about these permissions.
-     *
-     * @param string[] $requestedPermissions
-     */
-    public function setRequestedPermissions($requestedPermissions)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRequestedPermissions()
+    class Google_Service_AndroidEnterprise_NewPermissionsEvent extends \Google\Service\AndroidEnterprise\NewPermissionsEvent
     {
     }
 }

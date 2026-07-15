@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class DatabasesListResponse extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    protected $itemsType = Database::class;
-    protected $itemsDataType = 'array';
-    /**
-     * This is always `sql#databasesList`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * List of database resources in the instance.
-     *
-     * @param Database[] $items
-     */
-    public function setItems($items)
+namespace Google\Service\SQLAdmin {
+    class DatabasesListResponse extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        protected $itemsType = Database::class;
+        protected $itemsDataType = 'array';
+        /**
+         * This is always `sql#databasesList`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * List of database resources in the instance.
+         *
+         * @param Database[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return Database[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * This is always `sql#databasesList`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Database[]
+     * Runtime class alias of \Google\Service\SQLAdmin\DatabasesListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItems()
-    {
-    }
-    /**
-     * This is always `sql#databasesList`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_SQLAdmin_DatabasesListResponse extends \Google\Service\SQLAdmin\DatabasesListResponse
     {
     }
 }

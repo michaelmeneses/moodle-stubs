@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseRules;
-
-class FirebaserulesFile extends \Google\Model
-{
-    /**
-     * Required. Textual Content.
-     *
-     * @var string
-     */
-    public $content;
-    /**
-     * Fingerprint (e.g. github sha) associated with the `File`.
-     *
-     * @var string
-     */
-    public $fingerprint;
-    /**
-     * Required. File name.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. Textual Content.
-     *
-     * @param string $content
-     */
-    public function setContent($content)
+namespace Google\Service\FirebaseRules {
+    class FirebaserulesFile extends \Google\Model
     {
+        /**
+         * Required. Textual Content.
+         *
+         * @var string
+         */
+        public $content;
+        /**
+         * Fingerprint (e.g. github sha) associated with the `File`.
+         *
+         * @var string
+         */
+        public $fingerprint;
+        /**
+         * Required. File name.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. Textual Content.
+         *
+         * @param string $content
+         */
+        public function setContent($content)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContent()
+        {
+        }
+        /**
+         * Fingerprint (e.g. github sha) associated with the `File`.
+         *
+         * @param string $fingerprint
+         */
+        public function setFingerprint($fingerprint)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFingerprint()
+        {
+        }
+        /**
+         * Required. File name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\FirebaseRules\FirebaserulesFile registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContent()
-    {
-    }
-    /**
-     * Fingerprint (e.g. github sha) associated with the `File`.
-     *
-     * @param string $fingerprint
-     */
-    public function setFingerprint($fingerprint)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFingerprint()
-    {
-    }
-    /**
-     * Required. File name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_FirebaseRules_FirebaserulesFile extends \Google\Service\FirebaseRules\FirebaserulesFile
     {
     }
 }

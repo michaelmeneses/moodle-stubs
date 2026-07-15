@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class PushFilter extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $branch;
-    /**
-     * @var bool
-     */
-    public $invertRegex;
-    /**
-     * @var string
-     */
-    public $tag;
-    /**
-     * @param string
-     */
-    public function setBranch($branch)
+namespace Google\Service\CloudBuild {
+    class PushFilter extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $branch;
+        /**
+         * @var bool
+         */
+        public $invertRegex;
+        /**
+         * @var string
+         */
+        public $tag;
+        /**
+         * @param string
+         */
+        public function setBranch($branch)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBranch()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setInvertRegex($invertRegex)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getInvertRegex()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTag($tag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTag()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudBuild\PushFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBranch()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setInvertRegex($invertRegex)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getInvertRegex()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTag($tag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTag()
+    class Google_Service_CloudBuild_PushFilter extends \Google\Service\CloudBuild\PushFilter
     {
     }
 }

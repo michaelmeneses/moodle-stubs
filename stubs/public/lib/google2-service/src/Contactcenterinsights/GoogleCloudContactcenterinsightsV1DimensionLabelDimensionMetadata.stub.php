@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1DimensionLabelDimensionMetadata extends \Google\Model
-{
-    /**
-     * Optional. The label key.
-     *
-     * @var string
-     */
-    public $labelKey;
-    /**
-     * Optional. The label value.
-     *
-     * @var string
-     */
-    public $labelValue;
-    /**
-     * Optional. The label key.
-     *
-     * @param string $labelKey
-     */
-    public function setLabelKey($labelKey)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1DimensionLabelDimensionMetadata extends \Google\Model
     {
+        /**
+         * Optional. The label key.
+         *
+         * @var string
+         */
+        public $labelKey;
+        /**
+         * Optional. The label value.
+         *
+         * @var string
+         */
+        public $labelValue;
+        /**
+         * Optional. The label key.
+         *
+         * @param string $labelKey
+         */
+        public function setLabelKey($labelKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLabelKey()
+        {
+        }
+        /**
+         * Optional. The label value.
+         *
+         * @param string $labelValue
+         */
+        public function setLabelValue($labelValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLabelValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1DimensionLabelDimensionMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLabelKey()
-    {
-    }
-    /**
-     * Optional. The label value.
-     *
-     * @param string $labelValue
-     */
-    public function setLabelValue($labelValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLabelValue()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1DimensionLabelDimensionMetadata extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1DimensionLabelDimensionMetadata
     {
     }
 }

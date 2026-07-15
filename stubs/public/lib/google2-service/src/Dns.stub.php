@@ -21,49 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
-* Service definition for Dns (v1).
-*
-* <p>
-</p>
-*
-* <p>
-* For more information about this service, see the API
-* <a href="https://cloud.google.com/dns/docs" target="_blank">Documentation</a>
-* </p>
-*
-* @author Google, Inc.
-*/
-class Dns extends \Google\Service
-{
-    /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
-    const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
-    /** View your data across Google Cloud services and see the email address of your Google Account. */
-    const CLOUD_PLATFORM_READ_ONLY = "https://www.googleapis.com/auth/cloud-platform.read-only";
-    /** View your DNS records hosted by Google Cloud DNS. */
-    const NDEV_CLOUDDNS_READONLY = "https://www.googleapis.com/auth/ndev.clouddns.readonly";
-    /** View and manage your DNS records hosted by Google Cloud DNS. */
-    const NDEV_CLOUDDNS_READWRITE = "https://www.googleapis.com/auth/ndev.clouddns.readwrite";
-    public $changes;
-    public $dnsKeys;
-    public $managedZoneOperations;
-    public $managedZones;
-    public $policies;
-    public $projects;
-    public $resourceRecordSets;
-    public $responsePolicies;
-    public $responsePolicyRules;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the Dns service.
-     *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+    * Service definition for Dns (v1).
+    *
+    * <p>
+    </p>
+    *
+    * <p>
+    * For more information about this service, see the API
+    * <a href="https://cloud.google.com/dns/docs" target="_blank">Documentation</a>
+    * </p>
+    *
+    * @author Google, Inc.
+    */
+    class Dns extends \Google\Service
+    {
+        /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
+        const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
+        /** View your data across Google Cloud services and see the email address of your Google Account. */
+        const CLOUD_PLATFORM_READ_ONLY = "https://www.googleapis.com/auth/cloud-platform.read-only";
+        /** View your DNS records hosted by Google Cloud DNS. */
+        const NDEV_CLOUDDNS_READONLY = "https://www.googleapis.com/auth/ndev.clouddns.readonly";
+        /** View and manage your DNS records hosted by Google Cloud DNS. */
+        const NDEV_CLOUDDNS_READWRITE = "https://www.googleapis.com/auth/ndev.clouddns.readwrite";
+        public $changes;
+        public $dnsKeys;
+        public $managedZoneOperations;
+        public $managedZones;
+        public $policies;
+        public $projects;
+        public $resourceRecordSets;
+        public $responsePolicies;
+        public $responsePolicyRules;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the Dns service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Dns registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class Google_Service_Dns extends \Google\Service\Dns
     {
     }
 }

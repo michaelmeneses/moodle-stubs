@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedCard extends \Google\Collection
-{
-    protected $collection_key = 'sections';
-    protected $cardActionsType = AppsDynamiteSharedCardCardAction::class;
-    protected $cardActionsDataType = 'array';
-    public $cardActions;
-    protected $headerType = AppsDynamiteSharedCardCardHeader::class;
-    protected $headerDataType = '';
-    public $header;
-    /**
-     * @var string
-     */
-    public $name;
-    protected $sectionsType = AppsDynamiteSharedCardSection::class;
-    protected $sectionsDataType = 'array';
-    public $sections;
-    /**
-     * @param AppsDynamiteSharedCardCardAction[]
-     */
-    public function setCardActions($cardActions)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedCard extends \Google\Collection
     {
+        protected $collection_key = 'sections';
+        protected $cardActionsType = AppsDynamiteSharedCardCardAction::class;
+        protected $cardActionsDataType = 'array';
+        public $cardActions;
+        protected $headerType = AppsDynamiteSharedCardCardHeader::class;
+        protected $headerDataType = '';
+        public $header;
+        /**
+         * @var string
+         */
+        public $name;
+        protected $sectionsType = AppsDynamiteSharedCardSection::class;
+        protected $sectionsDataType = 'array';
+        public $sections;
+        /**
+         * @param AppsDynamiteSharedCardCardAction[]
+         */
+        public function setCardActions($cardActions)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedCardCardAction[]
+         */
+        public function getCardActions()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedCardCardHeader
+         */
+        public function setHeader(AppsDynamiteSharedCardCardHeader $header)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedCardCardHeader
+         */
+        public function getHeader()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedCardSection[]
+         */
+        public function setSections($sections)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedCardSection[]
+         */
+        public function getSections()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppsDynamiteSharedCardCardAction[]
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedCard registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCardActions()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedCardCardHeader
-     */
-    public function setHeader(AppsDynamiteSharedCardCardHeader $header)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedCardCardHeader
-     */
-    public function getHeader()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedCardSection[]
-     */
-    public function setSections($sections)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedCardSection[]
-     */
-    public function getSections()
+    class Google_Service_CloudSearch_AppsDynamiteSharedCard extends \Google\Service\CloudSearch\AppsDynamiteSharedCard
     {
     }
 }

@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class GoogleBigtableAdminV2TypeBytesEncodingRaw extends \Google\Model
-{
-    /**
-     * If set, allows NULL values to be encoded as the empty string "". The actual
-     * empty string, or any value which only contains the null byte `0x00`, has
-     * one more null byte appended.
-     *
-     * @var bool
-     */
-    public $escapeNulls;
-    /**
-     * If set, allows NULL values to be encoded as the empty string "". The actual
-     * empty string, or any value which only contains the null byte `0x00`, has
-     * one more null byte appended.
-     *
-     * @param bool $escapeNulls
-     */
-    public function setEscapeNulls($escapeNulls)
+namespace Google\Service\BigtableAdmin {
+    class GoogleBigtableAdminV2TypeBytesEncodingRaw extends \Google\Model
     {
+        /**
+         * If set, allows NULL values to be encoded as the empty string "". The actual
+         * empty string, or any value which only contains the null byte `0x00`, has
+         * one more null byte appended.
+         *
+         * @var bool
+         */
+        public $escapeNulls;
+        /**
+         * If set, allows NULL values to be encoded as the empty string "". The actual
+         * empty string, or any value which only contains the null byte `0x00`, has
+         * one more null byte appended.
+         *
+         * @param bool $escapeNulls
+         */
+        public function setEscapeNulls($escapeNulls)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEscapeNulls()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\BigtableAdmin\GoogleBigtableAdminV2TypeBytesEncodingRaw registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEscapeNulls()
+    class Google_Service_BigtableAdmin_GoogleBigtableAdminV2TypeBytesEncodingRaw extends \Google\Service\BigtableAdmin\GoogleBigtableAdminV2TypeBytesEncodingRaw
     {
     }
 }

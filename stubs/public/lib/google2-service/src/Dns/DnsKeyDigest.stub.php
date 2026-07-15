@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dns;
-
-class DnsKeyDigest extends \Google\Model
-{
-    public const TYPE_sha1 = 'sha1';
-    public const TYPE_sha256 = 'sha256';
-    public const TYPE_sha384 = 'sha384';
-    /**
-     * The base-16 encoded bytes of this digest. Suitable for use in a DS resource
-     * record.
-     *
-     * @var string
-     */
-    public $digest;
-    /**
-     * Specifies the algorithm used to calculate this digest.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The base-16 encoded bytes of this digest. Suitable for use in a DS resource
-     * record.
-     *
-     * @param string $digest
-     */
-    public function setDigest($digest)
+namespace Google\Service\Dns {
+    class DnsKeyDigest extends \Google\Model
     {
+        public const TYPE_sha1 = 'sha1';
+        public const TYPE_sha256 = 'sha256';
+        public const TYPE_sha384 = 'sha384';
+        /**
+         * The base-16 encoded bytes of this digest. Suitable for use in a DS resource
+         * record.
+         *
+         * @var string
+         */
+        public $digest;
+        /**
+         * Specifies the algorithm used to calculate this digest.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The base-16 encoded bytes of this digest. Suitable for use in a DS resource
+         * record.
+         *
+         * @param string $digest
+         */
+        public function setDigest($digest)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDigest()
+        {
+        }
+        /**
+         * Specifies the algorithm used to calculate this digest.
+         *
+         * Accepted values: sha1, sha256, sha384
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dns\DnsKeyDigest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDigest()
-    {
-    }
-    /**
-     * Specifies the algorithm used to calculate this digest.
-     *
-     * Accepted values: sha1, sha256, sha384
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_Dns_DnsKeyDigest extends \Google\Service\Dns\DnsKeyDigest
     {
     }
 }

@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudTalentSolution;
-
-class JobDerivedInfo extends \Google\Collection
-{
-    protected $collection_key = 'locations';
-    /**
-     * Job categories derived from Job.title and Job.description.
-     *
-     * @var string[]
-     */
-    public $jobCategories;
-    protected $locationsType = Location::class;
-    protected $locationsDataType = 'array';
-    /**
-     * Job categories derived from Job.title and Job.description.
-     *
-     * @param string[] $jobCategories
-     */
-    public function setJobCategories($jobCategories)
+namespace Google\Service\CloudTalentSolution {
+    class JobDerivedInfo extends \Google\Collection
     {
+        protected $collection_key = 'locations';
+        /**
+         * Job categories derived from Job.title and Job.description.
+         *
+         * @var string[]
+         */
+        public $jobCategories;
+        protected $locationsType = Location::class;
+        protected $locationsDataType = 'array';
+        /**
+         * Job categories derived from Job.title and Job.description.
+         *
+         * @param string[] $jobCategories
+         */
+        public function setJobCategories($jobCategories)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getJobCategories()
+        {
+        }
+        /**
+         * Structured locations of the job, resolved from Job.addresses. locations are
+         * exactly matched to Job.addresses in the same order.
+         *
+         * @param Location[] $locations
+         */
+        public function setLocations($locations)
+        {
+        }
+        /**
+         * @return Location[]
+         */
+        public function getLocations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudTalentSolution\JobDerivedInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getJobCategories()
-    {
-    }
-    /**
-     * Structured locations of the job, resolved from Job.addresses. locations are
-     * exactly matched to Job.addresses in the same order.
-     *
-     * @param Location[] $locations
-     */
-    public function setLocations($locations)
-    {
-    }
-    /**
-     * @return Location[]
-     */
-    public function getLocations()
+    class Google_Service_CloudTalentSolution_JobDerivedInfo extends \Google\Service\CloudTalentSolution\JobDerivedInfo
     {
     }
 }

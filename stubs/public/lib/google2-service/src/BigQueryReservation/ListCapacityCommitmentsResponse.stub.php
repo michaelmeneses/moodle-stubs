@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigQueryReservation;
-
-class ListCapacityCommitmentsResponse extends \Google\Collection
-{
-    protected $collection_key = 'capacityCommitments';
-    protected $capacityCommitmentsType = CapacityCommitment::class;
-    protected $capacityCommitmentsDataType = 'array';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of capacity commitments visible to the user.
-     *
-     * @param CapacityCommitment[] $capacityCommitments
-     */
-    public function setCapacityCommitments($capacityCommitments)
+namespace Google\Service\BigQueryReservation {
+    class ListCapacityCommitmentsResponse extends \Google\Collection
     {
+        protected $collection_key = 'capacityCommitments';
+        protected $capacityCommitmentsType = CapacityCommitment::class;
+        protected $capacityCommitmentsDataType = 'array';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of capacity commitments visible to the user.
+         *
+         * @param CapacityCommitment[] $capacityCommitments
+         */
+        public function setCapacityCommitments($capacityCommitments)
+        {
+        }
+        /**
+         * @return CapacityCommitment[]
+         */
+        public function getCapacityCommitments()
+        {
+        }
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CapacityCommitment[]
+     * Runtime class alias of \Google\Service\BigQueryReservation\ListCapacityCommitmentsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCapacityCommitments()
-    {
-    }
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_BigQueryReservation_ListCapacityCommitmentsResponse extends \Google\Service\BigQueryReservation\ListCapacityCommitmentsResponse
     {
     }
 }

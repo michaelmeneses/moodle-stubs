@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Appengine;
-
-class RequestUtilization extends \Google\Model
-{
-    /**
-     * Target number of concurrent requests.
-     *
-     * @var int
-     */
-    public $targetConcurrentRequests;
-    /**
-     * Target requests per second.
-     *
-     * @var int
-     */
-    public $targetRequestCountPerSecond;
-    /**
-     * Target number of concurrent requests.
-     *
-     * @param int $targetConcurrentRequests
-     */
-    public function setTargetConcurrentRequests($targetConcurrentRequests)
+namespace Google\Service\Appengine {
+    class RequestUtilization extends \Google\Model
     {
+        /**
+         * Target number of concurrent requests.
+         *
+         * @var int
+         */
+        public $targetConcurrentRequests;
+        /**
+         * Target requests per second.
+         *
+         * @var int
+         */
+        public $targetRequestCountPerSecond;
+        /**
+         * Target number of concurrent requests.
+         *
+         * @param int $targetConcurrentRequests
+         */
+        public function setTargetConcurrentRequests($targetConcurrentRequests)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTargetConcurrentRequests()
+        {
+        }
+        /**
+         * Target requests per second.
+         *
+         * @param int $targetRequestCountPerSecond
+         */
+        public function setTargetRequestCountPerSecond($targetRequestCountPerSecond)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTargetRequestCountPerSecond()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Appengine\RequestUtilization registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTargetConcurrentRequests()
-    {
-    }
-    /**
-     * Target requests per second.
-     *
-     * @param int $targetRequestCountPerSecond
-     */
-    public function setTargetRequestCountPerSecond($targetRequestCountPerSecond)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTargetRequestCountPerSecond()
+    class Google_Service_Appengine_RequestUtilization extends \Google\Service\Appengine\RequestUtilization
     {
     }
 }

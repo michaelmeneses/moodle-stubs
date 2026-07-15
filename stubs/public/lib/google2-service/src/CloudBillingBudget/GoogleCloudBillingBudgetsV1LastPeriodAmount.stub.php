@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBillingBudget;
-
-class GoogleCloudBillingBudgetsV1LastPeriodAmount extends \Google\Model
-{
+namespace Google\Service\CloudBillingBudget {
+    class GoogleCloudBillingBudgetsV1LastPeriodAmount extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudBillingBudget\GoogleCloudBillingBudgetsV1LastPeriodAmount registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudBillingBudget_GoogleCloudBillingBudgetsV1LastPeriodAmount extends \Google\Service\CloudBillingBudget\GoogleCloudBillingBudgetsV1LastPeriodAmount
+    {
+    }
 }

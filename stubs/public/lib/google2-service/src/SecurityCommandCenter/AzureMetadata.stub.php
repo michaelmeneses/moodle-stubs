@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class AzureMetadata extends \Google\Collection
-{
-    protected $collection_key = 'managementGroups';
-    protected $managementGroupsType = AzureManagementGroup::class;
-    protected $managementGroupsDataType = 'array';
-    protected $resourceGroupType = AzureResourceGroup::class;
-    protected $resourceGroupDataType = '';
-    protected $subscriptionType = AzureSubscription::class;
-    protected $subscriptionDataType = '';
-    protected $tenantType = AzureTenant::class;
-    protected $tenantDataType = '';
-    /**
-     * A list of Azure management groups associated with the resource, ordered
-     * from lowest level (closest to the subscription) to highest level.
-     *
-     * @param AzureManagementGroup[] $managementGroups
-     */
-    public function setManagementGroups($managementGroups)
+namespace Google\Service\SecurityCommandCenter {
+    class AzureMetadata extends \Google\Collection
     {
+        protected $collection_key = 'managementGroups';
+        protected $managementGroupsType = AzureManagementGroup::class;
+        protected $managementGroupsDataType = 'array';
+        protected $resourceGroupType = AzureResourceGroup::class;
+        protected $resourceGroupDataType = '';
+        protected $subscriptionType = AzureSubscription::class;
+        protected $subscriptionDataType = '';
+        protected $tenantType = AzureTenant::class;
+        protected $tenantDataType = '';
+        /**
+         * A list of Azure management groups associated with the resource, ordered
+         * from lowest level (closest to the subscription) to highest level.
+         *
+         * @param AzureManagementGroup[] $managementGroups
+         */
+        public function setManagementGroups($managementGroups)
+        {
+        }
+        /**
+         * @return AzureManagementGroup[]
+         */
+        public function getManagementGroups()
+        {
+        }
+        /**
+         * The Azure resource group associated with the resource.
+         *
+         * @param AzureResourceGroup $resourceGroup
+         */
+        public function setResourceGroup(AzureResourceGroup $resourceGroup)
+        {
+        }
+        /**
+         * @return AzureResourceGroup
+         */
+        public function getResourceGroup()
+        {
+        }
+        /**
+         * The Azure subscription associated with the resource.
+         *
+         * @param AzureSubscription $subscription
+         */
+        public function setSubscription(AzureSubscription $subscription)
+        {
+        }
+        /**
+         * @return AzureSubscription
+         */
+        public function getSubscription()
+        {
+        }
+        /**
+         * The Azure Entra tenant associated with the resource.
+         *
+         * @param AzureTenant $tenant
+         */
+        public function setTenant(AzureTenant $tenant)
+        {
+        }
+        /**
+         * @return AzureTenant
+         */
+        public function getTenant()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AzureManagementGroup[]
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\AzureMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getManagementGroups()
-    {
-    }
-    /**
-     * The Azure resource group associated with the resource.
-     *
-     * @param AzureResourceGroup $resourceGroup
-     */
-    public function setResourceGroup(AzureResourceGroup $resourceGroup)
-    {
-    }
-    /**
-     * @return AzureResourceGroup
-     */
-    public function getResourceGroup()
-    {
-    }
-    /**
-     * The Azure subscription associated with the resource.
-     *
-     * @param AzureSubscription $subscription
-     */
-    public function setSubscription(AzureSubscription $subscription)
-    {
-    }
-    /**
-     * @return AzureSubscription
-     */
-    public function getSubscription()
-    {
-    }
-    /**
-     * The Azure Entra tenant associated with the resource.
-     *
-     * @param AzureTenant $tenant
-     */
-    public function setTenant(AzureTenant $tenant)
-    {
-    }
-    /**
-     * @return AzureTenant
-     */
-    public function getTenant()
+    class Google_Service_SecurityCommandCenter_AzureMetadata extends \Google\Service\SecurityCommandCenter\AzureMetadata
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ListEventsResponse extends \Google\Collection
-{
-    protected $collection_key = 'sessionEvents';
-    /**
-     * A token, which can be sent as ListEventsRequest.page_token to retrieve the
-     * next page. Absence of this field indicates there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $sessionEventsType = GoogleCloudAiplatformV1SessionEvent::class;
-    protected $sessionEventsDataType = 'array';
-    /**
-     * A token, which can be sent as ListEventsRequest.page_token to retrieve the
-     * next page. Absence of this field indicates there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ListEventsResponse extends \Google\Collection
     {
+        protected $collection_key = 'sessionEvents';
+        /**
+         * A token, which can be sent as ListEventsRequest.page_token to retrieve the
+         * next page. Absence of this field indicates there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $sessionEventsType = GoogleCloudAiplatformV1SessionEvent::class;
+        protected $sessionEventsDataType = 'array';
+        /**
+         * A token, which can be sent as ListEventsRequest.page_token to retrieve the
+         * next page. Absence of this field indicates there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * A list of events matching the request. Ordered by timestamp in ascending
+         * order.
+         *
+         * @param GoogleCloudAiplatformV1SessionEvent[] $sessionEvents
+         */
+        public function setSessionEvents($sessionEvents)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SessionEvent[]
+         */
+        public function getSessionEvents()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListEventsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * A list of events matching the request. Ordered by timestamp in ascending
-     * order.
-     *
-     * @param GoogleCloudAiplatformV1SessionEvent[] $sessionEvents
-     */
-    public function setSessionEvents($sessionEvents)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1SessionEvent[]
-     */
-    public function getSessionEvents()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ListEventsResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListEventsResponse
     {
     }
 }

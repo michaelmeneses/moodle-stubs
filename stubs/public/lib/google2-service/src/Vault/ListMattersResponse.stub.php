@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vault;
-
-class ListMattersResponse extends \Google\Collection
-{
-    protected $collection_key = 'matters';
-    protected $mattersType = Matter::class;
-    protected $mattersDataType = 'array';
-    /**
-     * Page token to retrieve the next page of results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of matters.
-     *
-     * @param Matter[] $matters
-     */
-    public function setMatters($matters)
+namespace Google\Service\Vault {
+    class ListMattersResponse extends \Google\Collection
     {
+        protected $collection_key = 'matters';
+        protected $mattersType = Matter::class;
+        protected $mattersDataType = 'array';
+        /**
+         * Page token to retrieve the next page of results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of matters.
+         *
+         * @param Matter[] $matters
+         */
+        public function setMatters($matters)
+        {
+        }
+        /**
+         * @return Matter[]
+         */
+        public function getMatters()
+        {
+        }
+        /**
+         * Page token to retrieve the next page of results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Matter[]
+     * Runtime class alias of \Google\Service\Vault\ListMattersResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMatters()
-    {
-    }
-    /**
-     * Page token to retrieve the next page of results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Vault_ListMattersResponse extends \Google\Service\Vault\ListMattersResponse
     {
     }
 }

@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class Series extends \Google\Collection
-{
-    protected $collection_key = 'series';
-    /**
-     * Resource type.
-     *
-     * @var string
-     */
-    public $kind;
-    protected $seriesType = SeriesSeries::class;
-    protected $seriesDataType = 'array';
-    /**
-     * Resource type.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Books {
+    class Series extends \Google\Collection
     {
+        protected $collection_key = 'series';
+        /**
+         * Resource type.
+         *
+         * @var string
+         */
+        public $kind;
+        protected $seriesType = SeriesSeries::class;
+        protected $seriesDataType = 'array';
+        /**
+         * Resource type.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * @param SeriesSeries[] $series
+         */
+        public function setSeries($series)
+        {
+        }
+        /**
+         * @return SeriesSeries[]
+         */
+        public function getSeries()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Books\Series registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * @param SeriesSeries[] $series
-     */
-    public function setSeries($series)
-    {
-    }
-    /**
-     * @return SeriesSeries[]
-     */
-    public function getSeries()
+    class Google_Service_Books_Series extends \Google\Service\Books\Series
     {
     }
 }

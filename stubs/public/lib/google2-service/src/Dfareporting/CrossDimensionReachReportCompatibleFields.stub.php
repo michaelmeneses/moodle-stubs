@@ -21,99 +21,108 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class CrossDimensionReachReportCompatibleFields extends \Google\Collection
-{
-    protected $collection_key = 'overlapMetrics';
-    protected $breakdownType = Dimension::class;
-    protected $breakdownDataType = 'array';
-    protected $dimensionFiltersType = Dimension::class;
-    protected $dimensionFiltersDataType = 'array';
-    /**
-     * The kind of resource this is, in this case
-     * dfareporting#crossDimensionReachReportCompatibleFields.
-     *
-     * @var string
-     */
-    public $kind;
-    protected $metricsType = Metric::class;
-    protected $metricsDataType = 'array';
-    protected $overlapMetricsType = Metric::class;
-    protected $overlapMetricsDataType = 'array';
-    /**
-     * Dimensions which are compatible to be selected in the "breakdown" section
-     * of the report.
-     *
-     * @param Dimension[] $breakdown
-     */
-    public function setBreakdown($breakdown)
+namespace Google\Service\Dfareporting {
+    class CrossDimensionReachReportCompatibleFields extends \Google\Collection
     {
+        protected $collection_key = 'overlapMetrics';
+        protected $breakdownType = Dimension::class;
+        protected $breakdownDataType = 'array';
+        protected $dimensionFiltersType = Dimension::class;
+        protected $dimensionFiltersDataType = 'array';
+        /**
+         * The kind of resource this is, in this case
+         * dfareporting#crossDimensionReachReportCompatibleFields.
+         *
+         * @var string
+         */
+        public $kind;
+        protected $metricsType = Metric::class;
+        protected $metricsDataType = 'array';
+        protected $overlapMetricsType = Metric::class;
+        protected $overlapMetricsDataType = 'array';
+        /**
+         * Dimensions which are compatible to be selected in the "breakdown" section
+         * of the report.
+         *
+         * @param Dimension[] $breakdown
+         */
+        public function setBreakdown($breakdown)
+        {
+        }
+        /**
+         * @return Dimension[]
+         */
+        public function getBreakdown()
+        {
+        }
+        /**
+         * Dimensions which are compatible to be selected in the "dimensionFilters"
+         * section of the report.
+         *
+         * @param Dimension[] $dimensionFilters
+         */
+        public function setDimensionFilters($dimensionFilters)
+        {
+        }
+        /**
+         * @return Dimension[]
+         */
+        public function getDimensionFilters()
+        {
+        }
+        /**
+         * The kind of resource this is, in this case
+         * dfareporting#crossDimensionReachReportCompatibleFields.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Metrics which are compatible to be selected in the "metricNames" section of
+         * the report.
+         *
+         * @param Metric[] $metrics
+         */
+        public function setMetrics($metrics)
+        {
+        }
+        /**
+         * @return Metric[]
+         */
+        public function getMetrics()
+        {
+        }
+        /**
+         * Metrics which are compatible to be selected in the "overlapMetricNames"
+         * section of the report.
+         *
+         * @param Metric[] $overlapMetrics
+         */
+        public function setOverlapMetrics($overlapMetrics)
+        {
+        }
+        /**
+         * @return Metric[]
+         */
+        public function getOverlapMetrics()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Dimension[]
+     * Runtime class alias of \Google\Service\Dfareporting\CrossDimensionReachReportCompatibleFields registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBreakdown()
-    {
-    }
-    /**
-     * Dimensions which are compatible to be selected in the "dimensionFilters"
-     * section of the report.
-     *
-     * @param Dimension[] $dimensionFilters
-     */
-    public function setDimensionFilters($dimensionFilters)
-    {
-    }
-    /**
-     * @return Dimension[]
-     */
-    public function getDimensionFilters()
-    {
-    }
-    /**
-     * The kind of resource this is, in this case
-     * dfareporting#crossDimensionReachReportCompatibleFields.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Metrics which are compatible to be selected in the "metricNames" section of
-     * the report.
-     *
-     * @param Metric[] $metrics
-     */
-    public function setMetrics($metrics)
-    {
-    }
-    /**
-     * @return Metric[]
-     */
-    public function getMetrics()
-    {
-    }
-    /**
-     * Metrics which are compatible to be selected in the "overlapMetricNames"
-     * section of the report.
-     *
-     * @param Metric[] $overlapMetrics
-     */
-    public function setOverlapMetrics($overlapMetrics)
-    {
-    }
-    /**
-     * @return Metric[]
-     */
-    public function getOverlapMetrics()
+    class Google_Service_Dfareporting_CrossDimensionReachReportCompatibleFields extends \Google\Service\Dfareporting\CrossDimensionReachReportCompatibleFields
     {
     }
 }

@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class ArimaFittingMetrics extends \Google\Model
-{
+namespace Google\Service\Bigquery {
+    class ArimaFittingMetrics extends \Google\Model
+    {
+        /**
+         * AIC.
+         *
+         * @var 
+         */
+        public $aic;
+        /**
+         * Log-likelihood.
+         *
+         * @var 
+         */
+        public $logLikelihood;
+        /**
+         * Variance.
+         *
+         * @var 
+         */
+        public $variance;
+        public function setAic($aic)
+        {
+        }
+        public function getAic()
+        {
+        }
+        public function setLogLikelihood($logLikelihood)
+        {
+        }
+        public function getLogLikelihood()
+        {
+        }
+        public function setVariance($variance)
+        {
+        }
+        public function getVariance()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * AIC.
-     *
-     * @var 
+     * Runtime class alias of \Google\Service\Bigquery\ArimaFittingMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public $aic;
-    /**
-     * Log-likelihood.
-     *
-     * @var 
-     */
-    public $logLikelihood;
-    /**
-     * Variance.
-     *
-     * @var 
-     */
-    public $variance;
-    public function setAic($aic)
-    {
-    }
-    public function getAic()
-    {
-    }
-    public function setLogLikelihood($logLikelihood)
-    {
-    }
-    public function getLogLikelihood()
-    {
-    }
-    public function setVariance($variance)
-    {
-    }
-    public function getVariance()
+    class Google_Service_Bigquery_ArimaFittingMetrics extends \Google\Service\Bigquery\ArimaFittingMetrics
     {
     }
 }

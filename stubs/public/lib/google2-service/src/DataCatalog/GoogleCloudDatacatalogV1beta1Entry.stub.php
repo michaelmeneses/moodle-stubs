@@ -21,148 +21,157 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1beta1Entry extends \Google\Model
-{
-    protected $bigqueryDateShardedSpecType = GoogleCloudDatacatalogV1beta1BigQueryDateShardedSpec::class;
-    protected $bigqueryDateShardedSpecDataType = '';
-    protected $bigqueryTableSpecType = GoogleCloudDatacatalogV1beta1BigQueryTableSpec::class;
-    protected $bigqueryTableSpecDataType = '';
-    public $description;
-    public $displayName;
-    protected $gcsFilesetSpecType = GoogleCloudDatacatalogV1beta1GcsFilesetSpec::class;
-    protected $gcsFilesetSpecDataType = '';
-    public $integratedSystem;
-    public $linkedResource;
-    public $name;
-    protected $schemaType = GoogleCloudDatacatalogV1beta1Schema::class;
-    protected $schemaDataType = '';
-    protected $sourceSystemTimestampsType = GoogleCloudDatacatalogV1beta1SystemTimestamps::class;
-    protected $sourceSystemTimestampsDataType = '';
-    public $type;
-    protected $usageSignalType = GoogleCloudDatacatalogV1beta1UsageSignal::class;
-    protected $usageSignalDataType = '';
-    public $userSpecifiedSystem;
-    public $userSpecifiedType;
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1beta1Entry extends \Google\Model
+    {
+        protected $bigqueryDateShardedSpecType = GoogleCloudDatacatalogV1beta1BigQueryDateShardedSpec::class;
+        protected $bigqueryDateShardedSpecDataType = '';
+        protected $bigqueryTableSpecType = GoogleCloudDatacatalogV1beta1BigQueryTableSpec::class;
+        protected $bigqueryTableSpecDataType = '';
+        public $description;
+        public $displayName;
+        protected $gcsFilesetSpecType = GoogleCloudDatacatalogV1beta1GcsFilesetSpec::class;
+        protected $gcsFilesetSpecDataType = '';
+        public $integratedSystem;
+        public $linkedResource;
+        public $name;
+        protected $schemaType = GoogleCloudDatacatalogV1beta1Schema::class;
+        protected $schemaDataType = '';
+        protected $sourceSystemTimestampsType = GoogleCloudDatacatalogV1beta1SystemTimestamps::class;
+        protected $sourceSystemTimestampsDataType = '';
+        public $type;
+        protected $usageSignalType = GoogleCloudDatacatalogV1beta1UsageSignal::class;
+        protected $usageSignalDataType = '';
+        public $userSpecifiedSystem;
+        public $userSpecifiedType;
+        /**
+         * @param GoogleCloudDatacatalogV1beta1BigQueryDateShardedSpec
+         */
+        public function setBigqueryDateShardedSpec(GoogleCloudDatacatalogV1beta1BigQueryDateShardedSpec $bigqueryDateShardedSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1beta1BigQueryDateShardedSpec
+         */
+        public function getBigqueryDateShardedSpec()
+        {
+        }
+        /**
+         * @param GoogleCloudDatacatalogV1beta1BigQueryTableSpec
+         */
+        public function setBigqueryTableSpec(GoogleCloudDatacatalogV1beta1BigQueryTableSpec $bigqueryTableSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1beta1BigQueryTableSpec
+         */
+        public function getBigqueryTableSpec()
+        {
+        }
+        public function setDescription($description)
+        {
+        }
+        public function getDescription()
+        {
+        }
+        public function setDisplayName($displayName)
+        {
+        }
+        public function getDisplayName()
+        {
+        }
+        /**
+         * @param GoogleCloudDatacatalogV1beta1GcsFilesetSpec
+         */
+        public function setGcsFilesetSpec(GoogleCloudDatacatalogV1beta1GcsFilesetSpec $gcsFilesetSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1beta1GcsFilesetSpec
+         */
+        public function getGcsFilesetSpec()
+        {
+        }
+        public function setIntegratedSystem($integratedSystem)
+        {
+        }
+        public function getIntegratedSystem()
+        {
+        }
+        public function setLinkedResource($linkedResource)
+        {
+        }
+        public function getLinkedResource()
+        {
+        }
+        public function setName($name)
+        {
+        }
+        public function getName()
+        {
+        }
+        /**
+         * @param GoogleCloudDatacatalogV1beta1Schema
+         */
+        public function setSchema(GoogleCloudDatacatalogV1beta1Schema $schema)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1beta1Schema
+         */
+        public function getSchema()
+        {
+        }
+        /**
+         * @param GoogleCloudDatacatalogV1beta1SystemTimestamps
+         */
+        public function setSourceSystemTimestamps(GoogleCloudDatacatalogV1beta1SystemTimestamps $sourceSystemTimestamps)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1beta1SystemTimestamps
+         */
+        public function getSourceSystemTimestamps()
+        {
+        }
+        public function setType($type)
+        {
+        }
+        public function getType()
+        {
+        }
+        /**
+         * @param GoogleCloudDatacatalogV1beta1UsageSignal
+         */
+        public function setUsageSignal(GoogleCloudDatacatalogV1beta1UsageSignal $usageSignal)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1beta1UsageSignal
+         */
+        public function getUsageSignal()
+        {
+        }
+        public function setUserSpecifiedSystem($userSpecifiedSystem)
+        {
+        }
+        public function getUserSpecifiedSystem()
+        {
+        }
+        public function setUserSpecifiedType($userSpecifiedType)
+        {
+        }
+        public function getUserSpecifiedType()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @param GoogleCloudDatacatalogV1beta1BigQueryDateShardedSpec
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1beta1Entry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setBigqueryDateShardedSpec(GoogleCloudDatacatalogV1beta1BigQueryDateShardedSpec $bigqueryDateShardedSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudDatacatalogV1beta1BigQueryDateShardedSpec
-     */
-    public function getBigqueryDateShardedSpec()
-    {
-    }
-    /**
-     * @param GoogleCloudDatacatalogV1beta1BigQueryTableSpec
-     */
-    public function setBigqueryTableSpec(GoogleCloudDatacatalogV1beta1BigQueryTableSpec $bigqueryTableSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudDatacatalogV1beta1BigQueryTableSpec
-     */
-    public function getBigqueryTableSpec()
-    {
-    }
-    public function setDescription($description)
-    {
-    }
-    public function getDescription()
-    {
-    }
-    public function setDisplayName($displayName)
-    {
-    }
-    public function getDisplayName()
-    {
-    }
-    /**
-     * @param GoogleCloudDatacatalogV1beta1GcsFilesetSpec
-     */
-    public function setGcsFilesetSpec(GoogleCloudDatacatalogV1beta1GcsFilesetSpec $gcsFilesetSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudDatacatalogV1beta1GcsFilesetSpec
-     */
-    public function getGcsFilesetSpec()
-    {
-    }
-    public function setIntegratedSystem($integratedSystem)
-    {
-    }
-    public function getIntegratedSystem()
-    {
-    }
-    public function setLinkedResource($linkedResource)
-    {
-    }
-    public function getLinkedResource()
-    {
-    }
-    public function setName($name)
-    {
-    }
-    public function getName()
-    {
-    }
-    /**
-     * @param GoogleCloudDatacatalogV1beta1Schema
-     */
-    public function setSchema(GoogleCloudDatacatalogV1beta1Schema $schema)
-    {
-    }
-    /**
-     * @return GoogleCloudDatacatalogV1beta1Schema
-     */
-    public function getSchema()
-    {
-    }
-    /**
-     * @param GoogleCloudDatacatalogV1beta1SystemTimestamps
-     */
-    public function setSourceSystemTimestamps(GoogleCloudDatacatalogV1beta1SystemTimestamps $sourceSystemTimestamps)
-    {
-    }
-    /**
-     * @return GoogleCloudDatacatalogV1beta1SystemTimestamps
-     */
-    public function getSourceSystemTimestamps()
-    {
-    }
-    public function setType($type)
-    {
-    }
-    public function getType()
-    {
-    }
-    /**
-     * @param GoogleCloudDatacatalogV1beta1UsageSignal
-     */
-    public function setUsageSignal(GoogleCloudDatacatalogV1beta1UsageSignal $usageSignal)
-    {
-    }
-    /**
-     * @return GoogleCloudDatacatalogV1beta1UsageSignal
-     */
-    public function getUsageSignal()
-    {
-    }
-    public function setUserSpecifiedSystem($userSpecifiedSystem)
-    {
-    }
-    public function getUserSpecifiedSystem()
-    {
-    }
-    public function setUserSpecifiedType($userSpecifiedType)
-    {
-    }
-    public function getUserSpecifiedType()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1beta1Entry extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1beta1Entry
     {
     }
 }

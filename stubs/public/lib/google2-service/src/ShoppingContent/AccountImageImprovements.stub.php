@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class AccountImageImprovements extends \Google\Model
-{
-    protected $accountImageImprovementsSettingsType = AccountImageImprovementsSettings::class;
-    protected $accountImageImprovementsSettingsDataType = '';
-    /**
-     * Output only. The effective value of allow_automatic_image_improvements. If
-     * account_image_improvements_settings is present, then this value is the
-     * same. Otherwise, it represents the inherited value of the parent account.
-     * Read-only.
-     *
-     * @var bool
-     */
-    public $effectiveAllowAutomaticImageImprovements;
-    /**
-     * Determines how the images should be automatically updated. If this field is
-     * not present, then the settings will be deleted. If there are no settings
-     * for subaccount, they are inherited from aggregator.
-     *
-     * @param AccountImageImprovementsSettings $accountImageImprovementsSettings
-     */
-    public function setAccountImageImprovementsSettings(AccountImageImprovementsSettings $accountImageImprovementsSettings)
+namespace Google\Service\ShoppingContent {
+    class AccountImageImprovements extends \Google\Model
     {
+        protected $accountImageImprovementsSettingsType = AccountImageImprovementsSettings::class;
+        protected $accountImageImprovementsSettingsDataType = '';
+        /**
+         * Output only. The effective value of allow_automatic_image_improvements. If
+         * account_image_improvements_settings is present, then this value is the
+         * same. Otherwise, it represents the inherited value of the parent account.
+         * Read-only.
+         *
+         * @var bool
+         */
+        public $effectiveAllowAutomaticImageImprovements;
+        /**
+         * Determines how the images should be automatically updated. If this field is
+         * not present, then the settings will be deleted. If there are no settings
+         * for subaccount, they are inherited from aggregator.
+         *
+         * @param AccountImageImprovementsSettings $accountImageImprovementsSettings
+         */
+        public function setAccountImageImprovementsSettings(AccountImageImprovementsSettings $accountImageImprovementsSettings)
+        {
+        }
+        /**
+         * @return AccountImageImprovementsSettings
+         */
+        public function getAccountImageImprovementsSettings()
+        {
+        }
+        /**
+         * Output only. The effective value of allow_automatic_image_improvements. If
+         * account_image_improvements_settings is present, then this value is the
+         * same. Otherwise, it represents the inherited value of the parent account.
+         * Read-only.
+         *
+         * @param bool $effectiveAllowAutomaticImageImprovements
+         */
+        public function setEffectiveAllowAutomaticImageImprovements($effectiveAllowAutomaticImageImprovements)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEffectiveAllowAutomaticImageImprovements()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AccountImageImprovementsSettings
+     * Runtime class alias of \Google\Service\ShoppingContent\AccountImageImprovements registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountImageImprovementsSettings()
-    {
-    }
-    /**
-     * Output only. The effective value of allow_automatic_image_improvements. If
-     * account_image_improvements_settings is present, then this value is the
-     * same. Otherwise, it represents the inherited value of the parent account.
-     * Read-only.
-     *
-     * @param bool $effectiveAllowAutomaticImageImprovements
-     */
-    public function setEffectiveAllowAutomaticImageImprovements($effectiveAllowAutomaticImageImprovements)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEffectiveAllowAutomaticImageImprovements()
+    class Google_Service_ShoppingContent_AccountImageImprovements extends \Google\Service\ShoppingContent\AccountImageImprovements
     {
     }
 }

@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleApiMetric extends \Google\Model
-{
-    /**
-     * The set of label values that uniquely identify this metric. All labels
-     * listed in the `MetricDescriptor` must be assigned values.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * An existing metric type, see google.api.MetricDescriptor. For example,
-     * `custom.googleapis.com/invoice/paid/amount`.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The set of label values that uniquely identify this metric. All labels
-     * listed in the `MetricDescriptor` must be assigned values.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleApiMetric extends \Google\Model
     {
+        /**
+         * The set of label values that uniquely identify this metric. All labels
+         * listed in the `MetricDescriptor` must be assigned values.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * An existing metric type, see google.api.MetricDescriptor. For example,
+         * `custom.googleapis.com/invoice/paid/amount`.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The set of label values that uniquely identify this metric. All labels
+         * listed in the `MetricDescriptor` must be assigned values.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * An existing metric type, see google.api.MetricDescriptor. For example,
+         * `custom.googleapis.com/invoice/paid/amount`.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleApiMetric registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLabels()
-    {
-    }
-    /**
-     * An existing metric type, see google.api.MetricDescriptor. For example,
-     * `custom.googleapis.com/invoice/paid/amount`.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_DiscoveryEngine_GoogleApiMetric extends \Google\Service\DiscoveryEngine\GoogleApiMetric
     {
     }
 }

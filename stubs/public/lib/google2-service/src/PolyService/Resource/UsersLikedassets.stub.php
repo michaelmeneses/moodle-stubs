@@ -21,41 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PolyService\Resource;
-
-/**
- * The "likedassets" collection of methods.
- * Typical usage is:
- *  <code>
- *   $polyService = new Google\Service\PolyService(...);
- *   $likedassets = $polyService->users_likedassets;
- *  </code>
- */
-class UsersLikedassets extends \Google\Service\Resource
-{
+namespace Google\Service\PolyService\Resource {
+    use Google\Service\PolyService\ListLikedAssetsResponse;
     /**
-     * Lists assets that the user has liked. Only the value 'me', representing the
-     * currently-authenticated user, is supported. May include assets with an access
-     * level of UNLISTED. (likedassets.listUsersLikedassets)
-     *
-     * @param string $name A valid user id. Currently, only the special value 'me',
-     * representing the currently-authenticated user is supported. To use 'me', you
-     * must pass an OAuth token with the request.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string format Return only assets with the matching format.
-     * Acceptable values are: `BLOCKS`, `FBX`, `GLTF`, `GLTF2`, `OBJ`, `TILT`.
-     * @opt_param string orderBy Specifies an ordering for assets. Acceptable values
-     * are: `BEST`, `NEWEST`, `OLDEST`, 'LIKED_TIME'. Defaults to `LIKED_TIME`,
-     * which ranks assets based on how recently they were liked.
-     * @opt_param int pageSize The maximum number of assets to be returned. This
-     * value must be between `1` and `100`. Defaults to `20`.
-     * @opt_param string pageToken Specifies a continuation token from a previous
-     * search whose results were split into multiple pages. To get the next page,
-     * submit the same request specifying the value from next_page_token.
-     * @return ListLikedAssetsResponse
+     * The "likedassets" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $polyService = new Google\Service\PolyService(...);
+     *   $likedassets = $polyService->users_likedassets;
+     *  </code>
      */
-    public function listUsersLikedassets($name, $optParams = [])
+    class UsersLikedassets extends \Google\Service\Resource
+    {
+        /**
+         * Lists assets that the user has liked. Only the value 'me', representing the
+         * currently-authenticated user, is supported. May include assets with an access
+         * level of UNLISTED. (likedassets.listUsersLikedassets)
+         *
+         * @param string $name A valid user id. Currently, only the special value 'me',
+         * representing the currently-authenticated user is supported. To use 'me', you
+         * must pass an OAuth token with the request.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string format Return only assets with the matching format.
+         * Acceptable values are: `BLOCKS`, `FBX`, `GLTF`, `GLTF2`, `OBJ`, `TILT`.
+         * @opt_param string orderBy Specifies an ordering for assets. Acceptable values
+         * are: `BEST`, `NEWEST`, `OLDEST`, 'LIKED_TIME'. Defaults to `LIKED_TIME`,
+         * which ranks assets based on how recently they were liked.
+         * @opt_param int pageSize The maximum number of assets to be returned. This
+         * value must be between `1` and `100`. Defaults to `20`.
+         * @opt_param string pageToken Specifies a continuation token from a previous
+         * search whose results were split into multiple pages. To get the next page,
+         * submit the same request specifying the value from next_page_token.
+         * @return ListLikedAssetsResponse
+         */
+        public function listUsersLikedassets($name, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\PolyService\Resource\UsersLikedassets registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_PolyService_Resource_UsersLikedassets extends \Google\Service\PolyService\Resource\UsersLikedassets
     {
     }
 }

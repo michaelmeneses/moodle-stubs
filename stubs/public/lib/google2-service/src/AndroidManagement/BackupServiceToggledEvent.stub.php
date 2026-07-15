@@ -21,83 +21,92 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class BackupServiceToggledEvent extends \Google\Model
-{
-    /**
-     * No value is set
-     */
-    public const BACKUP_SERVICE_STATE_BACKUP_SERVICE_STATE_UNSPECIFIED = 'BACKUP_SERVICE_STATE_UNSPECIFIED';
-    /**
-     * Backup service is enabled
-     */
-    public const BACKUP_SERVICE_STATE_BACKUP_SERVICE_DISABLED = 'BACKUP_SERVICE_DISABLED';
-    /**
-     * Backup service is disabled
-     */
-    public const BACKUP_SERVICE_STATE_BACKUP_SERVICE_ENABLED = 'BACKUP_SERVICE_ENABLED';
-    /**
-     * Package name of the admin app requesting the change.
-     *
-     * @var string
-     */
-    public $adminPackageName;
-    /**
-     * User ID of the admin app from the which the change was requested.
-     *
-     * @var int
-     */
-    public $adminUserId;
-    /**
-     * Whether the backup service is enabled
-     *
-     * @var string
-     */
-    public $backupServiceState;
-    /**
-     * Package name of the admin app requesting the change.
-     *
-     * @param string $adminPackageName
-     */
-    public function setAdminPackageName($adminPackageName)
+namespace Google\Service\AndroidManagement {
+    class BackupServiceToggledEvent extends \Google\Model
     {
+        /**
+         * No value is set
+         */
+        public const BACKUP_SERVICE_STATE_BACKUP_SERVICE_STATE_UNSPECIFIED = 'BACKUP_SERVICE_STATE_UNSPECIFIED';
+        /**
+         * Backup service is enabled
+         */
+        public const BACKUP_SERVICE_STATE_BACKUP_SERVICE_DISABLED = 'BACKUP_SERVICE_DISABLED';
+        /**
+         * Backup service is disabled
+         */
+        public const BACKUP_SERVICE_STATE_BACKUP_SERVICE_ENABLED = 'BACKUP_SERVICE_ENABLED';
+        /**
+         * Package name of the admin app requesting the change.
+         *
+         * @var string
+         */
+        public $adminPackageName;
+        /**
+         * User ID of the admin app from the which the change was requested.
+         *
+         * @var int
+         */
+        public $adminUserId;
+        /**
+         * Whether the backup service is enabled
+         *
+         * @var string
+         */
+        public $backupServiceState;
+        /**
+         * Package name of the admin app requesting the change.
+         *
+         * @param string $adminPackageName
+         */
+        public function setAdminPackageName($adminPackageName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdminPackageName()
+        {
+        }
+        /**
+         * User ID of the admin app from the which the change was requested.
+         *
+         * @param int $adminUserId
+         */
+        public function setAdminUserId($adminUserId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getAdminUserId()
+        {
+        }
+        /**
+         * Whether the backup service is enabled
+         *
+         * Accepted values: BACKUP_SERVICE_STATE_UNSPECIFIED, BACKUP_SERVICE_DISABLED,
+         * BACKUP_SERVICE_ENABLED
+         *
+         * @param self::BACKUP_SERVICE_STATE_* $backupServiceState
+         */
+        public function setBackupServiceState($backupServiceState)
+        {
+        }
+        /**
+         * @return self::BACKUP_SERVICE_STATE_*
+         */
+        public function getBackupServiceState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidManagement\BackupServiceToggledEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdminPackageName()
-    {
-    }
-    /**
-     * User ID of the admin app from the which the change was requested.
-     *
-     * @param int $adminUserId
-     */
-    public function setAdminUserId($adminUserId)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getAdminUserId()
-    {
-    }
-    /**
-     * Whether the backup service is enabled
-     *
-     * Accepted values: BACKUP_SERVICE_STATE_UNSPECIFIED, BACKUP_SERVICE_DISABLED,
-     * BACKUP_SERVICE_ENABLED
-     *
-     * @param self::BACKUP_SERVICE_STATE_* $backupServiceState
-     */
-    public function setBackupServiceState($backupServiceState)
-    {
-    }
-    /**
-     * @return self::BACKUP_SERVICE_STATE_*
-     */
-    public function getBackupServiceState()
+    class Google_Service_AndroidManagement_BackupServiceToggledEvent extends \Google\Service\AndroidManagement\BackupServiceToggledEvent
     {
     }
 }

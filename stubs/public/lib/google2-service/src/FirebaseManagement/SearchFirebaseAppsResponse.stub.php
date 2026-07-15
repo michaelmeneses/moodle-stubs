@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseManagement;
-
-class SearchFirebaseAppsResponse extends \Google\Collection
-{
-    protected $collection_key = 'apps';
-    protected $appsType = FirebaseAppInfo::class;
-    protected $appsDataType = 'array';
-    /**
-     * If the result list is too large to fit in a single response, then a token
-     * is returned. This token can be used in a subsequent calls to
-     * `SearchFirebaseApps` to find the next group of Apps. Page tokens are short-
-     * lived and should not be persisted.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * One page of results from a call to `SearchFirebaseApps`.
-     *
-     * @param FirebaseAppInfo[] $apps
-     */
-    public function setApps($apps)
+namespace Google\Service\FirebaseManagement {
+    class SearchFirebaseAppsResponse extends \Google\Collection
     {
+        protected $collection_key = 'apps';
+        protected $appsType = FirebaseAppInfo::class;
+        protected $appsDataType = 'array';
+        /**
+         * If the result list is too large to fit in a single response, then a token
+         * is returned. This token can be used in a subsequent calls to
+         * `SearchFirebaseApps` to find the next group of Apps. Page tokens are short-
+         * lived and should not be persisted.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * One page of results from a call to `SearchFirebaseApps`.
+         *
+         * @param FirebaseAppInfo[] $apps
+         */
+        public function setApps($apps)
+        {
+        }
+        /**
+         * @return FirebaseAppInfo[]
+         */
+        public function getApps()
+        {
+        }
+        /**
+         * If the result list is too large to fit in a single response, then a token
+         * is returned. This token can be used in a subsequent calls to
+         * `SearchFirebaseApps` to find the next group of Apps. Page tokens are short-
+         * lived and should not be persisted.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FirebaseAppInfo[]
+     * Runtime class alias of \Google\Service\FirebaseManagement\SearchFirebaseAppsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApps()
-    {
-    }
-    /**
-     * If the result list is too large to fit in a single response, then a token
-     * is returned. This token can be used in a subsequent calls to
-     * `SearchFirebaseApps` to find the next group of Apps. Page tokens are short-
-     * lived and should not be persisted.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_FirebaseManagement_SearchFirebaseAppsResponse extends \Google\Service\FirebaseManagement\SearchFirebaseAppsResponse
     {
     }
 }

@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RealTimeBidding;
-
-class VideoContent extends \Google\Model
-{
-    protected $videoMetadataType = VideoMetadata::class;
-    protected $videoMetadataDataType = '';
-    /**
-     * The URL to fetch a video ad. The URL should return an XML response that
-     * conforms to the VAST 2.0, 3.0 or 4.x standard.
-     *
-     * @var string
-     */
-    public $videoUrl;
-    /**
-     * The contents of a VAST document for a video ad. This document should
-     * conform to the VAST 2.0, 3.0, or 4.x standard.
-     *
-     * @var string
-     */
-    public $videoVastXml;
-    /**
-     * Output only. Video metadata.
-     *
-     * @param VideoMetadata $videoMetadata
-     */
-    public function setVideoMetadata(VideoMetadata $videoMetadata)
+namespace Google\Service\RealTimeBidding {
+    class VideoContent extends \Google\Model
     {
+        protected $videoMetadataType = VideoMetadata::class;
+        protected $videoMetadataDataType = '';
+        /**
+         * The URL to fetch a video ad. The URL should return an XML response that
+         * conforms to the VAST 2.0, 3.0 or 4.x standard.
+         *
+         * @var string
+         */
+        public $videoUrl;
+        /**
+         * The contents of a VAST document for a video ad. This document should
+         * conform to the VAST 2.0, 3.0, or 4.x standard.
+         *
+         * @var string
+         */
+        public $videoVastXml;
+        /**
+         * Output only. Video metadata.
+         *
+         * @param VideoMetadata $videoMetadata
+         */
+        public function setVideoMetadata(VideoMetadata $videoMetadata)
+        {
+        }
+        /**
+         * @return VideoMetadata
+         */
+        public function getVideoMetadata()
+        {
+        }
+        /**
+         * The URL to fetch a video ad. The URL should return an XML response that
+         * conforms to the VAST 2.0, 3.0 or 4.x standard.
+         *
+         * @param string $videoUrl
+         */
+        public function setVideoUrl($videoUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVideoUrl()
+        {
+        }
+        /**
+         * The contents of a VAST document for a video ad. This document should
+         * conform to the VAST 2.0, 3.0, or 4.x standard.
+         *
+         * @param string $videoVastXml
+         */
+        public function setVideoVastXml($videoVastXml)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVideoVastXml()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return VideoMetadata
+     * Runtime class alias of \Google\Service\RealTimeBidding\VideoContent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getVideoMetadata()
-    {
-    }
-    /**
-     * The URL to fetch a video ad. The URL should return an XML response that
-     * conforms to the VAST 2.0, 3.0 or 4.x standard.
-     *
-     * @param string $videoUrl
-     */
-    public function setVideoUrl($videoUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVideoUrl()
-    {
-    }
-    /**
-     * The contents of a VAST document for a video ad. This document should
-     * conform to the VAST 2.0, 3.0, or 4.x standard.
-     *
-     * @param string $videoVastXml
-     */
-    public function setVideoVastXml($videoVastXml)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVideoVastXml()
+    class Google_Service_RealTimeBidding_VideoContent extends \Google\Service\RealTimeBidding\VideoContent
     {
     }
 }

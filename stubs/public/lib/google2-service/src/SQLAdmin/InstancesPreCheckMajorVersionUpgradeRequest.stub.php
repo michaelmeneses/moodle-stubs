@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class InstancesPreCheckMajorVersionUpgradeRequest extends \Google\Model
-{
-    protected $preCheckMajorVersionUpgradeContextType = PreCheckMajorVersionUpgradeContext::class;
-    protected $preCheckMajorVersionUpgradeContextDataType = '';
-    /**
-     * Required. Contains details about the pre-check major version upgrade
-     * operation.
-     *
-     * @param PreCheckMajorVersionUpgradeContext $preCheckMajorVersionUpgradeContext
-     */
-    public function setPreCheckMajorVersionUpgradeContext(PreCheckMajorVersionUpgradeContext $preCheckMajorVersionUpgradeContext)
+namespace Google\Service\SQLAdmin {
+    class InstancesPreCheckMajorVersionUpgradeRequest extends \Google\Model
     {
+        protected $preCheckMajorVersionUpgradeContextType = PreCheckMajorVersionUpgradeContext::class;
+        protected $preCheckMajorVersionUpgradeContextDataType = '';
+        /**
+         * Required. Contains details about the pre-check major version upgrade
+         * operation.
+         *
+         * @param PreCheckMajorVersionUpgradeContext $preCheckMajorVersionUpgradeContext
+         */
+        public function setPreCheckMajorVersionUpgradeContext(PreCheckMajorVersionUpgradeContext $preCheckMajorVersionUpgradeContext)
+        {
+        }
+        /**
+         * @return PreCheckMajorVersionUpgradeContext
+         */
+        public function getPreCheckMajorVersionUpgradeContext()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PreCheckMajorVersionUpgradeContext
+     * Runtime class alias of \Google\Service\SQLAdmin\InstancesPreCheckMajorVersionUpgradeRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPreCheckMajorVersionUpgradeContext()
+    class Google_Service_SQLAdmin_InstancesPreCheckMajorVersionUpgradeRequest extends \Google\Service\SQLAdmin\InstancesPreCheckMajorVersionUpgradeRequest
     {
     }
 }

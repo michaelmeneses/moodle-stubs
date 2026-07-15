@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution;
-
-class GoogleRpcStatus extends \Google\Collection
-{
-    protected $collection_key = 'details';
-    public $code;
-    public $details;
-    public $message;
-    public function setCode($code)
+namespace Google\Service\RemoteBuildExecution {
+    class GoogleRpcStatus extends \Google\Collection
     {
+        protected $collection_key = 'details';
+        public $code;
+        public $details;
+        public $message;
+        public function setCode($code)
+        {
+        }
+        public function getCode()
+        {
+        }
+        public function setDetails($details)
+        {
+        }
+        public function getDetails()
+        {
+        }
+        public function setMessage($message)
+        {
+        }
+        public function getMessage()
+        {
+        }
     }
-    public function getCode()
-    {
-    }
-    public function setDetails($details)
-    {
-    }
-    public function getDetails()
-    {
-    }
-    public function setMessage($message)
-    {
-    }
-    public function getMessage()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\GoogleRpcStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_RemoteBuildExecution_GoogleRpcStatus extends \Google\Service\RemoteBuildExecution\GoogleRpcStatus
     {
     }
 }

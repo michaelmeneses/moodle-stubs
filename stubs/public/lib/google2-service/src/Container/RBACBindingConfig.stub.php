@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class RBACBindingConfig extends \Google\Model
-{
-    /**
-     * Setting this to true will allow any ClusterRoleBinding and RoleBinding with
-     * subjects system:authenticated.
-     *
-     * @var bool
-     */
-    public $enableInsecureBindingSystemAuthenticated;
-    /**
-     * Setting this to true will allow any ClusterRoleBinding and RoleBinding with
-     * subjets system:anonymous or system:unauthenticated.
-     *
-     * @var bool
-     */
-    public $enableInsecureBindingSystemUnauthenticated;
-    /**
-     * Setting this to true will allow any ClusterRoleBinding and RoleBinding with
-     * subjects system:authenticated.
-     *
-     * @param bool $enableInsecureBindingSystemAuthenticated
-     */
-    public function setEnableInsecureBindingSystemAuthenticated($enableInsecureBindingSystemAuthenticated)
+namespace Google\Service\Container {
+    class RBACBindingConfig extends \Google\Model
     {
+        /**
+         * Setting this to true will allow any ClusterRoleBinding and RoleBinding with
+         * subjects system:authenticated.
+         *
+         * @var bool
+         */
+        public $enableInsecureBindingSystemAuthenticated;
+        /**
+         * Setting this to true will allow any ClusterRoleBinding and RoleBinding with
+         * subjets system:anonymous or system:unauthenticated.
+         *
+         * @var bool
+         */
+        public $enableInsecureBindingSystemUnauthenticated;
+        /**
+         * Setting this to true will allow any ClusterRoleBinding and RoleBinding with
+         * subjects system:authenticated.
+         *
+         * @param bool $enableInsecureBindingSystemAuthenticated
+         */
+        public function setEnableInsecureBindingSystemAuthenticated($enableInsecureBindingSystemAuthenticated)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableInsecureBindingSystemAuthenticated()
+        {
+        }
+        /**
+         * Setting this to true will allow any ClusterRoleBinding and RoleBinding with
+         * subjets system:anonymous or system:unauthenticated.
+         *
+         * @param bool $enableInsecureBindingSystemUnauthenticated
+         */
+        public function setEnableInsecureBindingSystemUnauthenticated($enableInsecureBindingSystemUnauthenticated)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableInsecureBindingSystemUnauthenticated()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Container\RBACBindingConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnableInsecureBindingSystemAuthenticated()
-    {
-    }
-    /**
-     * Setting this to true will allow any ClusterRoleBinding and RoleBinding with
-     * subjets system:anonymous or system:unauthenticated.
-     *
-     * @param bool $enableInsecureBindingSystemUnauthenticated
-     */
-    public function setEnableInsecureBindingSystemUnauthenticated($enableInsecureBindingSystemUnauthenticated)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnableInsecureBindingSystemUnauthenticated()
+    class Google_Service_Container_RBACBindingConfig extends \Google\Service\Container\RBACBindingConfig
     {
     }
 }

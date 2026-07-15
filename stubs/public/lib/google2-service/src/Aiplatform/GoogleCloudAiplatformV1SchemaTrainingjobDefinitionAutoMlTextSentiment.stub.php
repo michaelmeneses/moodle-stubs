@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlTextSentiment extends \Google\Model
-{
-    protected $inputsType = GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlTextSentimentInputs::class;
-    protected $inputsDataType = '';
-    /**
-     * The input parameters of this TrainingJob.
-     *
-     * @param GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlTextSentimentInputs $inputs
-     */
-    public function setInputs(GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlTextSentimentInputs $inputs)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlTextSentiment extends \Google\Model
     {
+        protected $inputsType = GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlTextSentimentInputs::class;
+        protected $inputsDataType = '';
+        /**
+         * The input parameters of this TrainingJob.
+         *
+         * @param GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlTextSentimentInputs $inputs
+         */
+        public function setInputs(GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlTextSentimentInputs $inputs)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlTextSentimentInputs
+         */
+        public function getInputs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlTextSentimentInputs
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlTextSentiment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInputs()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlTextSentiment extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlTextSentiment
     {
     }
 }

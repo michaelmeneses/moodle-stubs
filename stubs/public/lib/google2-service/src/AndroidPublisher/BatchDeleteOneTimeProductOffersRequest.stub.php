@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class BatchDeleteOneTimeProductOffersRequest extends \Google\Collection
-{
-    protected $collection_key = 'requests';
-    protected $requestsType = DeleteOneTimeProductOfferRequest::class;
-    protected $requestsDataType = 'array';
-    /**
-     * Required. A list of update requests of up to 100 elements. All requests
-     * must correspond to different offers.
-     *
-     * @param DeleteOneTimeProductOfferRequest[] $requests
-     */
-    public function setRequests($requests)
+namespace Google\Service\AndroidPublisher {
+    class BatchDeleteOneTimeProductOffersRequest extends \Google\Collection
     {
+        protected $collection_key = 'requests';
+        protected $requestsType = DeleteOneTimeProductOfferRequest::class;
+        protected $requestsDataType = 'array';
+        /**
+         * Required. A list of update requests of up to 100 elements. All requests
+         * must correspond to different offers.
+         *
+         * @param DeleteOneTimeProductOfferRequest[] $requests
+         */
+        public function setRequests($requests)
+        {
+        }
+        /**
+         * @return DeleteOneTimeProductOfferRequest[]
+         */
+        public function getRequests()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DeleteOneTimeProductOfferRequest[]
+     * Runtime class alias of \Google\Service\AndroidPublisher\BatchDeleteOneTimeProductOffersRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequests()
+    class Google_Service_AndroidPublisher_BatchDeleteOneTimeProductOffersRequest extends \Google\Service\AndroidPublisher\BatchDeleteOneTimeProductOffersRequest
     {
     }
 }

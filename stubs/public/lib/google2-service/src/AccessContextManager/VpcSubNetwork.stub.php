@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AccessContextManager;
-
-class VpcSubNetwork extends \Google\Collection
-{
-    protected $collection_key = 'vpcIpSubnetworks';
-    /**
-     * Required. Network name. If the network is not part of the organization, the
-     * `compute.network.get` permission must be granted to the caller. Format: `//
-     * compute.googleapis.com/projects/{PROJECT_ID}/global/networks/{NETWORK_NAME}
-     * ` Example: `//compute.googleapis.com/projects/my-
-     * project/global/networks/network-1`
-     *
-     * @var string
-     */
-    public $network;
-    /**
-     * CIDR block IP subnetwork specification. The IP address must be an IPv4
-     * address and can be a public or private IP address. Note that for a CIDR IP
-     * address block, the specified IP address portion must be properly truncated
-     * (i.e. all the host bits must be zero) or the input is considered malformed.
-     * For example, "192.0.2.0/24" is accepted but "192.0.2.1/24" is not. If
-     * empty, all IP addresses are allowed.
-     *
-     * @var string[]
-     */
-    public $vpcIpSubnetworks;
-    /**
-     * Required. Network name. If the network is not part of the organization, the
-     * `compute.network.get` permission must be granted to the caller. Format: `//
-     * compute.googleapis.com/projects/{PROJECT_ID}/global/networks/{NETWORK_NAME}
-     * ` Example: `//compute.googleapis.com/projects/my-
-     * project/global/networks/network-1`
-     *
-     * @param string $network
-     */
-    public function setNetwork($network)
+namespace Google\Service\AccessContextManager {
+    class VpcSubNetwork extends \Google\Collection
     {
+        protected $collection_key = 'vpcIpSubnetworks';
+        /**
+         * Required. Network name. If the network is not part of the organization, the
+         * `compute.network.get` permission must be granted to the caller. Format: `//
+         * compute.googleapis.com/projects/{PROJECT_ID}/global/networks/{NETWORK_NAME}
+         * ` Example: `//compute.googleapis.com/projects/my-
+         * project/global/networks/network-1`
+         *
+         * @var string
+         */
+        public $network;
+        /**
+         * CIDR block IP subnetwork specification. The IP address must be an IPv4
+         * address and can be a public or private IP address. Note that for a CIDR IP
+         * address block, the specified IP address portion must be properly truncated
+         * (i.e. all the host bits must be zero) or the input is considered malformed.
+         * For example, "192.0.2.0/24" is accepted but "192.0.2.1/24" is not. If
+         * empty, all IP addresses are allowed.
+         *
+         * @var string[]
+         */
+        public $vpcIpSubnetworks;
+        /**
+         * Required. Network name. If the network is not part of the organization, the
+         * `compute.network.get` permission must be granted to the caller. Format: `//
+         * compute.googleapis.com/projects/{PROJECT_ID}/global/networks/{NETWORK_NAME}
+         * ` Example: `//compute.googleapis.com/projects/my-
+         * project/global/networks/network-1`
+         *
+         * @param string $network
+         */
+        public function setNetwork($network)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNetwork()
+        {
+        }
+        /**
+         * CIDR block IP subnetwork specification. The IP address must be an IPv4
+         * address and can be a public or private IP address. Note that for a CIDR IP
+         * address block, the specified IP address portion must be properly truncated
+         * (i.e. all the host bits must be zero) or the input is considered malformed.
+         * For example, "192.0.2.0/24" is accepted but "192.0.2.1/24" is not. If
+         * empty, all IP addresses are allowed.
+         *
+         * @param string[] $vpcIpSubnetworks
+         */
+        public function setVpcIpSubnetworks($vpcIpSubnetworks)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getVpcIpSubnetworks()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AccessContextManager\VpcSubNetwork registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNetwork()
-    {
-    }
-    /**
-     * CIDR block IP subnetwork specification. The IP address must be an IPv4
-     * address and can be a public or private IP address. Note that for a CIDR IP
-     * address block, the specified IP address portion must be properly truncated
-     * (i.e. all the host bits must be zero) or the input is considered malformed.
-     * For example, "192.0.2.0/24" is accepted but "192.0.2.1/24" is not. If
-     * empty, all IP addresses are allowed.
-     *
-     * @param string[] $vpcIpSubnetworks
-     */
-    public function setVpcIpSubnetworks($vpcIpSubnetworks)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getVpcIpSubnetworks()
+    class Google_Service_AccessContextManager_VpcSubNetwork extends \Google\Service\AccessContextManager\VpcSubNetwork
     {
     }
 }

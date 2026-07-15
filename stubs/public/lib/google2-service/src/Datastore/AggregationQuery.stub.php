@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastore;
-
-class AggregationQuery extends \Google\Collection
-{
-    protected $collection_key = 'aggregations';
-    protected $aggregationsType = Aggregation::class;
-    protected $aggregationsDataType = 'array';
-    protected $nestedQueryType = Query::class;
-    protected $nestedQueryDataType = '';
-    /**
-     * Optional. Series of aggregations to apply over the results of the
-     * `nested_query`. Requires: * A minimum of one and maximum of five
-     * aggregations per query.
-     *
-     * @param Aggregation[] $aggregations
-     */
-    public function setAggregations($aggregations)
+namespace Google\Service\Datastore {
+    class AggregationQuery extends \Google\Collection
     {
+        protected $collection_key = 'aggregations';
+        protected $aggregationsType = Aggregation::class;
+        protected $aggregationsDataType = 'array';
+        protected $nestedQueryType = Query::class;
+        protected $nestedQueryDataType = '';
+        /**
+         * Optional. Series of aggregations to apply over the results of the
+         * `nested_query`. Requires: * A minimum of one and maximum of five
+         * aggregations per query.
+         *
+         * @param Aggregation[] $aggregations
+         */
+        public function setAggregations($aggregations)
+        {
+        }
+        /**
+         * @return Aggregation[]
+         */
+        public function getAggregations()
+        {
+        }
+        /**
+         * Nested query for aggregation
+         *
+         * @param Query $nestedQuery
+         */
+        public function setNestedQuery(Query $nestedQuery)
+        {
+        }
+        /**
+         * @return Query
+         */
+        public function getNestedQuery()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Aggregation[]
+     * Runtime class alias of \Google\Service\Datastore\AggregationQuery registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAggregations()
-    {
-    }
-    /**
-     * Nested query for aggregation
-     *
-     * @param Query $nestedQuery
-     */
-    public function setNestedQuery(Query $nestedQuery)
-    {
-    }
-    /**
-     * @return Query
-     */
-    public function getNestedQuery()
+    class Google_Service_Datastore_AggregationQuery extends \Google\Service\Datastore\AggregationQuery
     {
     }
 }

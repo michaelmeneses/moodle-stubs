@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class BiEngineReason extends \Google\Model
-{
-    /**
-     * BiEngineReason not specified.
-     */
-    public const CODE_CODE_UNSPECIFIED = 'CODE_UNSPECIFIED';
-    /**
-     * No reservation available for BI Engine acceleration.
-     */
-    public const CODE_NO_RESERVATION = 'NO_RESERVATION';
-    /**
-     * Not enough memory available for BI Engine acceleration.
-     */
-    public const CODE_INSUFFICIENT_RESERVATION = 'INSUFFICIENT_RESERVATION';
-    /**
-     * This particular SQL text is not supported for acceleration by BI Engine.
-     */
-    public const CODE_UNSUPPORTED_SQL_TEXT = 'UNSUPPORTED_SQL_TEXT';
-    /**
-     * Input too large for acceleration by BI Engine.
-     */
-    public const CODE_INPUT_TOO_LARGE = 'INPUT_TOO_LARGE';
-    /**
-     * Catch-all code for all other cases for partial or disabled acceleration.
-     */
-    public const CODE_OTHER_REASON = 'OTHER_REASON';
-    /**
-     * One or more tables were not eligible for BI Engine acceleration.
-     */
-    public const CODE_TABLE_EXCLUDED = 'TABLE_EXCLUDED';
-    /**
-     * Output only. High-level BI Engine reason for partial or disabled
-     * acceleration
-     *
-     * @var string
-     */
-    public $code;
-    /**
-     * Output only. Free form human-readable reason for partial or disabled
-     * acceleration.
-     *
-     * @var string
-     */
-    public $message;
-    /**
-     * Output only. High-level BI Engine reason for partial or disabled
-     * acceleration
-     *
-     * Accepted values: CODE_UNSPECIFIED, NO_RESERVATION,
-     * INSUFFICIENT_RESERVATION, UNSUPPORTED_SQL_TEXT, INPUT_TOO_LARGE,
-     * OTHER_REASON, TABLE_EXCLUDED
-     *
-     * @param self::CODE_* $code
-     */
-    public function setCode($code)
+namespace Google\Service\Bigquery {
+    class BiEngineReason extends \Google\Model
     {
+        /**
+         * BiEngineReason not specified.
+         */
+        public const CODE_CODE_UNSPECIFIED = 'CODE_UNSPECIFIED';
+        /**
+         * No reservation available for BI Engine acceleration.
+         */
+        public const CODE_NO_RESERVATION = 'NO_RESERVATION';
+        /**
+         * Not enough memory available for BI Engine acceleration.
+         */
+        public const CODE_INSUFFICIENT_RESERVATION = 'INSUFFICIENT_RESERVATION';
+        /**
+         * This particular SQL text is not supported for acceleration by BI Engine.
+         */
+        public const CODE_UNSUPPORTED_SQL_TEXT = 'UNSUPPORTED_SQL_TEXT';
+        /**
+         * Input too large for acceleration by BI Engine.
+         */
+        public const CODE_INPUT_TOO_LARGE = 'INPUT_TOO_LARGE';
+        /**
+         * Catch-all code for all other cases for partial or disabled acceleration.
+         */
+        public const CODE_OTHER_REASON = 'OTHER_REASON';
+        /**
+         * One or more tables were not eligible for BI Engine acceleration.
+         */
+        public const CODE_TABLE_EXCLUDED = 'TABLE_EXCLUDED';
+        /**
+         * Output only. High-level BI Engine reason for partial or disabled
+         * acceleration
+         *
+         * @var string
+         */
+        public $code;
+        /**
+         * Output only. Free form human-readable reason for partial or disabled
+         * acceleration.
+         *
+         * @var string
+         */
+        public $message;
+        /**
+         * Output only. High-level BI Engine reason for partial or disabled
+         * acceleration
+         *
+         * Accepted values: CODE_UNSPECIFIED, NO_RESERVATION,
+         * INSUFFICIENT_RESERVATION, UNSUPPORTED_SQL_TEXT, INPUT_TOO_LARGE,
+         * OTHER_REASON, TABLE_EXCLUDED
+         *
+         * @param self::CODE_* $code
+         */
+        public function setCode($code)
+        {
+        }
+        /**
+         * @return self::CODE_*
+         */
+        public function getCode()
+        {
+        }
+        /**
+         * Output only. Free form human-readable reason for partial or disabled
+         * acceleration.
+         *
+         * @param string $message
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::CODE_*
+     * Runtime class alias of \Google\Service\Bigquery\BiEngineReason registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCode()
-    {
-    }
-    /**
-     * Output only. Free form human-readable reason for partial or disabled
-     * acceleration.
-     *
-     * @param string $message
-     */
-    public function setMessage($message)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMessage()
+    class Google_Service_Bigquery_BiEngineReason extends \Google\Service\Bigquery\BiEngineReason
     {
     }
 }

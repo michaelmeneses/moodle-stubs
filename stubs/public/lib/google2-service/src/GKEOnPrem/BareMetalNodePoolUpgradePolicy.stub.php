@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class BareMetalNodePoolUpgradePolicy extends \Google\Model
-{
-    protected $parallelUpgradeConfigType = BareMetalParallelUpgradeConfig::class;
-    protected $parallelUpgradeConfigDataType = '';
-    /**
-     * The parallel upgrade settings for worker node pools.
-     *
-     * @param BareMetalParallelUpgradeConfig $parallelUpgradeConfig
-     */
-    public function setParallelUpgradeConfig(BareMetalParallelUpgradeConfig $parallelUpgradeConfig)
+namespace Google\Service\GKEOnPrem {
+    class BareMetalNodePoolUpgradePolicy extends \Google\Model
     {
+        protected $parallelUpgradeConfigType = BareMetalParallelUpgradeConfig::class;
+        protected $parallelUpgradeConfigDataType = '';
+        /**
+         * The parallel upgrade settings for worker node pools.
+         *
+         * @param BareMetalParallelUpgradeConfig $parallelUpgradeConfig
+         */
+        public function setParallelUpgradeConfig(BareMetalParallelUpgradeConfig $parallelUpgradeConfig)
+        {
+        }
+        /**
+         * @return BareMetalParallelUpgradeConfig
+         */
+        public function getParallelUpgradeConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BareMetalParallelUpgradeConfig
+     * Runtime class alias of \Google\Service\GKEOnPrem\BareMetalNodePoolUpgradePolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getParallelUpgradeConfig()
+    class Google_Service_GKEOnPrem_BareMetalNodePoolUpgradePolicy extends \Google\Service\GKEOnPrem\BareMetalNodePoolUpgradePolicy
     {
     }
 }

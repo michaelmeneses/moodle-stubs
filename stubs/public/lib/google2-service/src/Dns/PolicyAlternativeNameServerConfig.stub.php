@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dns;
-
-class PolicyAlternativeNameServerConfig extends \Google\Collection
-{
-    protected $collection_key = 'targetNameServers';
-    /**
-     * @var string
-     */
-    public $kind;
-    protected $targetNameServersType = PolicyAlternativeNameServerConfigTargetNameServer::class;
-    protected $targetNameServersDataType = 'array';
-    /**
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Dns {
+    class PolicyAlternativeNameServerConfig extends \Google\Collection
     {
+        protected $collection_key = 'targetNameServers';
+        /**
+         * @var string
+         */
+        public $kind;
+        protected $targetNameServersType = PolicyAlternativeNameServerConfigTargetNameServer::class;
+        protected $targetNameServersDataType = 'array';
+        /**
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Sets an alternative name server for the associated networks. When
+         * specified, all DNS queries are forwarded to a name server that you choose.
+         * Names such as .internal are not available when an alternative name server
+         * is specified.
+         *
+         * @param PolicyAlternativeNameServerConfigTargetNameServer[] $targetNameServers
+         */
+        public function setTargetNameServers($targetNameServers)
+        {
+        }
+        /**
+         * @return PolicyAlternativeNameServerConfigTargetNameServer[]
+         */
+        public function getTargetNameServers()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dns\PolicyAlternativeNameServerConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * Sets an alternative name server for the associated networks. When
-     * specified, all DNS queries are forwarded to a name server that you choose.
-     * Names such as .internal are not available when an alternative name server
-     * is specified.
-     *
-     * @param PolicyAlternativeNameServerConfigTargetNameServer[] $targetNameServers
-     */
-    public function setTargetNameServers($targetNameServers)
-    {
-    }
-    /**
-     * @return PolicyAlternativeNameServerConfigTargetNameServer[]
-     */
-    public function getTargetNameServers()
+    class Google_Service_Dns_PolicyAlternativeNameServerConfig extends \Google\Service\Dns\PolicyAlternativeNameServerConfig
     {
     }
 }

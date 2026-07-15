@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1ListSecurityReportsResponse extends \Google\Collection
-{
-    protected $collection_key = 'securityReports';
-    /**
-     * If the number of security reports exceeded the page size requested, the
-     * token can be used to fetch the next page in a subsequent call. If the
-     * response is the last page and there are no more reports to return this
-     * field is left empty.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $securityReportsType = GoogleCloudApigeeV1SecurityReport::class;
-    protected $securityReportsDataType = 'array';
-    /**
-     * If the number of security reports exceeded the page size requested, the
-     * token can be used to fetch the next page in a subsequent call. If the
-     * response is the last page and there are no more reports to return this
-     * field is left empty.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1ListSecurityReportsResponse extends \Google\Collection
     {
+        protected $collection_key = 'securityReports';
+        /**
+         * If the number of security reports exceeded the page size requested, the
+         * token can be used to fetch the next page in a subsequent call. If the
+         * response is the last page and there are no more reports to return this
+         * field is left empty.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $securityReportsType = GoogleCloudApigeeV1SecurityReport::class;
+        protected $securityReportsDataType = 'array';
+        /**
+         * If the number of security reports exceeded the page size requested, the
+         * token can be used to fetch the next page in a subsequent call. If the
+         * response is the last page and there are no more reports to return this
+         * field is left empty.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The security reports belong to requested resource name.
+         *
+         * @param GoogleCloudApigeeV1SecurityReport[] $securityReports
+         */
+        public function setSecurityReports($securityReports)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1SecurityReport[]
+         */
+        public function getSecurityReports()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1ListSecurityReportsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The security reports belong to requested resource name.
-     *
-     * @param GoogleCloudApigeeV1SecurityReport[] $securityReports
-     */
-    public function setSecurityReports($securityReports)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1SecurityReport[]
-     */
-    public function getSecurityReports()
+    class Google_Service_Apigee_GoogleCloudApigeeV1ListSecurityReportsResponse extends \Google\Service\Apigee\GoogleCloudApigeeV1ListSecurityReportsResponse
     {
     }
 }

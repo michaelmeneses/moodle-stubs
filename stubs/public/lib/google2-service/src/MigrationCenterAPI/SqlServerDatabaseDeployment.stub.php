@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class SqlServerDatabaseDeployment extends \Google\Collection
-{
-    protected $collection_key = 'traceFlags';
-    protected $featuresType = SqlServerFeature::class;
-    protected $featuresDataType = 'array';
-    protected $serverFlagsType = SqlServerServerFlag::class;
-    protected $serverFlagsDataType = 'array';
-    protected $traceFlagsType = SqlServerTraceFlag::class;
-    protected $traceFlagsDataType = 'array';
-    /**
-     * Optional. List of SQL Server features.
-     *
-     * @param SqlServerFeature[] $features
-     */
-    public function setFeatures($features)
+namespace Google\Service\MigrationCenterAPI {
+    class SqlServerDatabaseDeployment extends \Google\Collection
     {
+        protected $collection_key = 'traceFlags';
+        protected $featuresType = SqlServerFeature::class;
+        protected $featuresDataType = 'array';
+        protected $serverFlagsType = SqlServerServerFlag::class;
+        protected $serverFlagsDataType = 'array';
+        protected $traceFlagsType = SqlServerTraceFlag::class;
+        protected $traceFlagsDataType = 'array';
+        /**
+         * Optional. List of SQL Server features.
+         *
+         * @param SqlServerFeature[] $features
+         */
+        public function setFeatures($features)
+        {
+        }
+        /**
+         * @return SqlServerFeature[]
+         */
+        public function getFeatures()
+        {
+        }
+        /**
+         * Optional. List of SQL Server server flags.
+         *
+         * @param SqlServerServerFlag[] $serverFlags
+         */
+        public function setServerFlags($serverFlags)
+        {
+        }
+        /**
+         * @return SqlServerServerFlag[]
+         */
+        public function getServerFlags()
+        {
+        }
+        /**
+         * Optional. List of SQL Server trace flags.
+         *
+         * @param SqlServerTraceFlag[] $traceFlags
+         */
+        public function setTraceFlags($traceFlags)
+        {
+        }
+        /**
+         * @return SqlServerTraceFlag[]
+         */
+        public function getTraceFlags()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SqlServerFeature[]
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\SqlServerDatabaseDeployment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFeatures()
-    {
-    }
-    /**
-     * Optional. List of SQL Server server flags.
-     *
-     * @param SqlServerServerFlag[] $serverFlags
-     */
-    public function setServerFlags($serverFlags)
-    {
-    }
-    /**
-     * @return SqlServerServerFlag[]
-     */
-    public function getServerFlags()
-    {
-    }
-    /**
-     * Optional. List of SQL Server trace flags.
-     *
-     * @param SqlServerTraceFlag[] $traceFlags
-     */
-    public function setTraceFlags($traceFlags)
-    {
-    }
-    /**
-     * @return SqlServerTraceFlag[]
-     */
-    public function getTraceFlags()
+    class Google_Service_MigrationCenterAPI_SqlServerDatabaseDeployment extends \Google\Service\MigrationCenterAPI\SqlServerDatabaseDeployment
     {
     }
 }

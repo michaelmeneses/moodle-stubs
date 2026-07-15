@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class ReservationBlocksGetResponse extends \Google\Model
-{
-    protected $resourceType = ReservationBlock::class;
-    protected $resourceDataType = '';
-    /**
-     * @param ReservationBlock $resource
-     */
-    public function setResource(ReservationBlock $resource)
+namespace Google\Service\Compute {
+    class ReservationBlocksGetResponse extends \Google\Model
     {
+        protected $resourceType = ReservationBlock::class;
+        protected $resourceDataType = '';
+        /**
+         * @param ReservationBlock $resource
+         */
+        public function setResource(ReservationBlock $resource)
+        {
+        }
+        /**
+         * @return ReservationBlock
+         */
+        public function getResource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ReservationBlock
+     * Runtime class alias of \Google\Service\Compute\ReservationBlocksGetResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResource()
+    class Google_Service_Compute_ReservationBlocksGetResponse extends \Google\Service\Compute\ReservationBlocksGetResponse
     {
     }
 }

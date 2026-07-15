@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class VideoInfo extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $duration;
-    /**
-     * @param int
-     */
-    public function setDuration($duration)
+namespace Google\Service\CloudSearch {
+    class VideoInfo extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $duration;
+        /**
+         * @param int
+         */
+        public function setDuration($duration)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getDuration()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudSearch\VideoInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDuration()
+    class Google_Service_CloudSearch_VideoInfo extends \Google\Service\CloudSearch\VideoInfo
     {
     }
 }

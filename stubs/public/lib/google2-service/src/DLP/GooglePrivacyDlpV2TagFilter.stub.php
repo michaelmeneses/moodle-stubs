@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2TagFilter extends \Google\Model
-{
-    /**
-     * The namespaced name for the tag key. Must be in the format
-     * `{parent_id}/{tag_key_short_name}`, for example, "123456/sensitive" for an
-     * organization parent, or "my-project/sensitive" for a project parent.
-     *
-     * @var string
-     */
-    public $namespacedTagKey;
-    /**
-     * The namespaced name for the tag value. Must be in the format
-     * `{parent_id}/{tag_key_short_name}/{short_name}`, for example,
-     * "123456/environment/prod" for an organization parent, or "my-
-     * project/environment/prod" for a project parent.
-     *
-     * @var string
-     */
-    public $namespacedTagValue;
-    /**
-     * The namespaced name for the tag key. Must be in the format
-     * `{parent_id}/{tag_key_short_name}`, for example, "123456/sensitive" for an
-     * organization parent, or "my-project/sensitive" for a project parent.
-     *
-     * @param string $namespacedTagKey
-     */
-    public function setNamespacedTagKey($namespacedTagKey)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2TagFilter extends \Google\Model
     {
+        /**
+         * The namespaced name for the tag key. Must be in the format
+         * `{parent_id}/{tag_key_short_name}`, for example, "123456/sensitive" for an
+         * organization parent, or "my-project/sensitive" for a project parent.
+         *
+         * @var string
+         */
+        public $namespacedTagKey;
+        /**
+         * The namespaced name for the tag value. Must be in the format
+         * `{parent_id}/{tag_key_short_name}/{short_name}`, for example,
+         * "123456/environment/prod" for an organization parent, or "my-
+         * project/environment/prod" for a project parent.
+         *
+         * @var string
+         */
+        public $namespacedTagValue;
+        /**
+         * The namespaced name for the tag key. Must be in the format
+         * `{parent_id}/{tag_key_short_name}`, for example, "123456/sensitive" for an
+         * organization parent, or "my-project/sensitive" for a project parent.
+         *
+         * @param string $namespacedTagKey
+         */
+        public function setNamespacedTagKey($namespacedTagKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNamespacedTagKey()
+        {
+        }
+        /**
+         * The namespaced name for the tag value. Must be in the format
+         * `{parent_id}/{tag_key_short_name}/{short_name}`, for example,
+         * "123456/environment/prod" for an organization parent, or "my-
+         * project/environment/prod" for a project parent.
+         *
+         * @param string $namespacedTagValue
+         */
+        public function setNamespacedTagValue($namespacedTagValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNamespacedTagValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2TagFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNamespacedTagKey()
-    {
-    }
-    /**
-     * The namespaced name for the tag value. Must be in the format
-     * `{parent_id}/{tag_key_short_name}/{short_name}`, for example,
-     * "123456/environment/prod" for an organization parent, or "my-
-     * project/environment/prod" for a project parent.
-     *
-     * @param string $namespacedTagValue
-     */
-    public function setNamespacedTagValue($namespacedTagValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNamespacedTagValue()
+    class Google_Service_DLP_GooglePrivacyDlpV2TagFilter extends \Google\Service\DLP\GooglePrivacyDlpV2TagFilter
     {
     }
 }

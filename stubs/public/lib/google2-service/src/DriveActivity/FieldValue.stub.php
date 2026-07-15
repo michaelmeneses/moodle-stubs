@@ -21,136 +21,145 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveActivity;
-
-class FieldValue extends \Google\Model
-{
-    protected $dateType = Date::class;
-    protected $dateDataType = '';
-    protected $integerType = DriveactivityInteger::class;
-    protected $integerDataType = '';
-    protected $selectionType = Selection::class;
-    protected $selectionDataType = '';
-    protected $selectionListType = SelectionList::class;
-    protected $selectionListDataType = '';
-    protected $textType = Text::class;
-    protected $textDataType = '';
-    protected $textListType = TextList::class;
-    protected $textListDataType = '';
-    protected $userType = SingleUser::class;
-    protected $userDataType = '';
-    protected $userListType = UserList::class;
-    protected $userListDataType = '';
-    /**
-     * Date Field value.
-     *
-     * @param Date $date
-     */
-    public function setDate(Date $date)
+namespace Google\Service\DriveActivity {
+    class FieldValue extends \Google\Model
     {
+        protected $dateType = Date::class;
+        protected $dateDataType = '';
+        protected $integerType = DriveactivityInteger::class;
+        protected $integerDataType = '';
+        protected $selectionType = Selection::class;
+        protected $selectionDataType = '';
+        protected $selectionListType = SelectionList::class;
+        protected $selectionListDataType = '';
+        protected $textType = Text::class;
+        protected $textDataType = '';
+        protected $textListType = TextList::class;
+        protected $textListDataType = '';
+        protected $userType = SingleUser::class;
+        protected $userDataType = '';
+        protected $userListType = UserList::class;
+        protected $userListDataType = '';
+        /**
+         * Date Field value.
+         *
+         * @param Date $date
+         */
+        public function setDate(Date $date)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getDate()
+        {
+        }
+        /**
+         * Integer Field value.
+         *
+         * @param DriveactivityInteger $integer
+         */
+        public function setInteger(DriveactivityInteger $integer)
+        {
+        }
+        /**
+         * @return DriveactivityInteger
+         */
+        public function getInteger()
+        {
+        }
+        /**
+         * Selection Field value.
+         *
+         * @param Selection $selection
+         */
+        public function setSelection(Selection $selection)
+        {
+        }
+        /**
+         * @return Selection
+         */
+        public function getSelection()
+        {
+        }
+        /**
+         * Selection List Field value.
+         *
+         * @param SelectionList $selectionList
+         */
+        public function setSelectionList(SelectionList $selectionList)
+        {
+        }
+        /**
+         * @return SelectionList
+         */
+        public function getSelectionList()
+        {
+        }
+        /**
+         * Text Field value.
+         *
+         * @param Text $text
+         */
+        public function setText(Text $text)
+        {
+        }
+        /**
+         * @return Text
+         */
+        public function getText()
+        {
+        }
+        /**
+         * Text List Field value.
+         *
+         * @param TextList $textList
+         */
+        public function setTextList(TextList $textList)
+        {
+        }
+        /**
+         * @return TextList
+         */
+        public function getTextList()
+        {
+        }
+        /**
+         * User Field value.
+         *
+         * @param SingleUser $user
+         */
+        public function setUser(SingleUser $user)
+        {
+        }
+        /**
+         * @return SingleUser
+         */
+        public function getUser()
+        {
+        }
+        /**
+         * User List Field value.
+         *
+         * @param UserList $userList
+         */
+        public function setUserList(UserList $userList)
+        {
+        }
+        /**
+         * @return UserList
+         */
+        public function getUserList()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Date
+     * Runtime class alias of \Google\Service\DriveActivity\FieldValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDate()
-    {
-    }
-    /**
-     * Integer Field value.
-     *
-     * @param DriveactivityInteger $integer
-     */
-    public function setInteger(DriveactivityInteger $integer)
-    {
-    }
-    /**
-     * @return DriveactivityInteger
-     */
-    public function getInteger()
-    {
-    }
-    /**
-     * Selection Field value.
-     *
-     * @param Selection $selection
-     */
-    public function setSelection(Selection $selection)
-    {
-    }
-    /**
-     * @return Selection
-     */
-    public function getSelection()
-    {
-    }
-    /**
-     * Selection List Field value.
-     *
-     * @param SelectionList $selectionList
-     */
-    public function setSelectionList(SelectionList $selectionList)
-    {
-    }
-    /**
-     * @return SelectionList
-     */
-    public function getSelectionList()
-    {
-    }
-    /**
-     * Text Field value.
-     *
-     * @param Text $text
-     */
-    public function setText(Text $text)
-    {
-    }
-    /**
-     * @return Text
-     */
-    public function getText()
-    {
-    }
-    /**
-     * Text List Field value.
-     *
-     * @param TextList $textList
-     */
-    public function setTextList(TextList $textList)
-    {
-    }
-    /**
-     * @return TextList
-     */
-    public function getTextList()
-    {
-    }
-    /**
-     * User Field value.
-     *
-     * @param SingleUser $user
-     */
-    public function setUser(SingleUser $user)
-    {
-    }
-    /**
-     * @return SingleUser
-     */
-    public function getUser()
-    {
-    }
-    /**
-     * User List Field value.
-     *
-     * @param UserList $userList
-     */
-    public function setUserList(UserList $userList)
-    {
-    }
-    /**
-     * @return UserList
-     */
-    public function getUserList()
+    class Google_Service_DriveActivity_FieldValue extends \Google\Service\DriveActivity\FieldValue
     {
     }
 }

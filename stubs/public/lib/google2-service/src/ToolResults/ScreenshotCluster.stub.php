@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class ScreenshotCluster extends \Google\Collection
-{
-    protected $collection_key = 'screens';
-    /**
-     * A string that describes the activity of every screen in the cluster.
-     *
-     * @var string
-     */
-    public $activity;
-    /**
-     * A unique identifier for the cluster. @OutputOnly
-     *
-     * @var string
-     */
-    public $clusterId;
-    protected $keyScreenType = Screen::class;
-    protected $keyScreenDataType = '';
-    protected $screensType = Screen::class;
-    protected $screensDataType = 'array';
-    /**
-     * A string that describes the activity of every screen in the cluster.
-     *
-     * @param string $activity
-     */
-    public function setActivity($activity)
+namespace Google\Service\ToolResults {
+    class ScreenshotCluster extends \Google\Collection
     {
+        protected $collection_key = 'screens';
+        /**
+         * A string that describes the activity of every screen in the cluster.
+         *
+         * @var string
+         */
+        public $activity;
+        /**
+         * A unique identifier for the cluster. @OutputOnly
+         *
+         * @var string
+         */
+        public $clusterId;
+        protected $keyScreenType = Screen::class;
+        protected $keyScreenDataType = '';
+        protected $screensType = Screen::class;
+        protected $screensDataType = 'array';
+        /**
+         * A string that describes the activity of every screen in the cluster.
+         *
+         * @param string $activity
+         */
+        public function setActivity($activity)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getActivity()
+        {
+        }
+        /**
+         * A unique identifier for the cluster. @OutputOnly
+         *
+         * @param string $clusterId
+         */
+        public function setClusterId($clusterId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClusterId()
+        {
+        }
+        /**
+         * A singular screen that represents the cluster as a whole. This screen will
+         * act as the "cover" of the entire cluster. When users look at the clusters,
+         * only the key screen from each cluster will be shown. Which screen is the
+         * key screen is determined by the ClusteringAlgorithm
+         *
+         * @param Screen $keyScreen
+         */
+        public function setKeyScreen(Screen $keyScreen)
+        {
+        }
+        /**
+         * @return Screen
+         */
+        public function getKeyScreen()
+        {
+        }
+        /**
+         * Full list of screens.
+         *
+         * @param Screen[] $screens
+         */
+        public function setScreens($screens)
+        {
+        }
+        /**
+         * @return Screen[]
+         */
+        public function getScreens()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ToolResults\ScreenshotCluster registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActivity()
-    {
-    }
-    /**
-     * A unique identifier for the cluster. @OutputOnly
-     *
-     * @param string $clusterId
-     */
-    public function setClusterId($clusterId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getClusterId()
-    {
-    }
-    /**
-     * A singular screen that represents the cluster as a whole. This screen will
-     * act as the "cover" of the entire cluster. When users look at the clusters,
-     * only the key screen from each cluster will be shown. Which screen is the
-     * key screen is determined by the ClusteringAlgorithm
-     *
-     * @param Screen $keyScreen
-     */
-    public function setKeyScreen(Screen $keyScreen)
-    {
-    }
-    /**
-     * @return Screen
-     */
-    public function getKeyScreen()
-    {
-    }
-    /**
-     * Full list of screens.
-     *
-     * @param Screen[] $screens
-     */
-    public function setScreens($screens)
-    {
-    }
-    /**
-     * @return Screen[]
-     */
-    public function getScreens()
+    class Google_Service_ToolResults_ScreenshotCluster extends \Google\Service\ToolResults\ScreenshotCluster
     {
     }
 }

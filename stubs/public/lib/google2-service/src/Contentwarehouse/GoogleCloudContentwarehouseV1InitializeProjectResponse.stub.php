@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudContentwarehouseV1InitializeProjectResponse extends \Google\Model
-{
-    /**
-     * Clients should never see this.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * Finished project initialization without error.
-     */
-    public const STATE_SUCCEEDED = 'SUCCEEDED';
-    /**
-     * Finished project initialization with an error.
-     */
-    public const STATE_FAILED = 'FAILED';
-    /**
-     * Client canceled the LRO.
-     */
-    public const STATE_CANCELLED = 'CANCELLED';
-    /**
-     * Ask the customer to check the operation for results.
-     */
-    public const STATE_RUNNING = 'RUNNING';
-    /**
-     * The message of the project initialization process.
-     *
-     * @var string
-     */
-    public $message;
-    /**
-     * The state of the project initialization process.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * The message of the project initialization process.
-     *
-     * @param string $message
-     */
-    public function setMessage($message)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudContentwarehouseV1InitializeProjectResponse extends \Google\Model
     {
+        /**
+         * Clients should never see this.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * Finished project initialization without error.
+         */
+        public const STATE_SUCCEEDED = 'SUCCEEDED';
+        /**
+         * Finished project initialization with an error.
+         */
+        public const STATE_FAILED = 'FAILED';
+        /**
+         * Client canceled the LRO.
+         */
+        public const STATE_CANCELLED = 'CANCELLED';
+        /**
+         * Ask the customer to check the operation for results.
+         */
+        public const STATE_RUNNING = 'RUNNING';
+        /**
+         * The message of the project initialization process.
+         *
+         * @var string
+         */
+        public $message;
+        /**
+         * The state of the project initialization process.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * The message of the project initialization process.
+         *
+         * @param string $message
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
+        /**
+         * The state of the project initialization process.
+         *
+         * Accepted values: STATE_UNSPECIFIED, SUCCEEDED, FAILED, CANCELLED, RUNNING
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1InitializeProjectResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMessage()
-    {
-    }
-    /**
-     * The state of the project initialization process.
-     *
-     * Accepted values: STATE_UNSPECIFIED, SUCCEEDED, FAILED, CANCELLED, RUNNING
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
+    class Google_Service_Contentwarehouse_GoogleCloudContentwarehouseV1InitializeProjectResponse extends \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1InitializeProjectResponse
     {
     }
 }

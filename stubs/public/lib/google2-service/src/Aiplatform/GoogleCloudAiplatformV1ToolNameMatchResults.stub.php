@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ToolNameMatchResults extends \Google\Collection
-{
-    protected $collection_key = 'toolNameMatchMetricValues';
-    protected $toolNameMatchMetricValuesType = GoogleCloudAiplatformV1ToolNameMatchMetricValue::class;
-    protected $toolNameMatchMetricValuesDataType = 'array';
-    /**
-     * Output only. Tool name match metric values.
-     *
-     * @param GoogleCloudAiplatformV1ToolNameMatchMetricValue[] $toolNameMatchMetricValues
-     */
-    public function setToolNameMatchMetricValues($toolNameMatchMetricValues)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ToolNameMatchResults extends \Google\Collection
     {
+        protected $collection_key = 'toolNameMatchMetricValues';
+        protected $toolNameMatchMetricValuesType = GoogleCloudAiplatformV1ToolNameMatchMetricValue::class;
+        protected $toolNameMatchMetricValuesDataType = 'array';
+        /**
+         * Output only. Tool name match metric values.
+         *
+         * @param GoogleCloudAiplatformV1ToolNameMatchMetricValue[] $toolNameMatchMetricValues
+         */
+        public function setToolNameMatchMetricValues($toolNameMatchMetricValues)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ToolNameMatchMetricValue[]
+         */
+        public function getToolNameMatchMetricValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1ToolNameMatchMetricValue[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ToolNameMatchResults registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getToolNameMatchMetricValues()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ToolNameMatchResults extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ToolNameMatchResults
     {
     }
 }

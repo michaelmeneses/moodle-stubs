@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class ReportSummary extends \Google\Collection
-{
-    protected $collection_key = 'groupFindings';
-    protected $allAssetsStatsType = ReportSummaryAssetAggregateStats::class;
-    protected $allAssetsStatsDataType = '';
-    protected $groupFindingsType = ReportSummaryGroupFinding::class;
-    protected $groupFindingsDataType = 'array';
-    /**
-     * Aggregate statistics for all the assets across all the groups.
-     *
-     * @param ReportSummaryAssetAggregateStats $allAssetsStats
-     */
-    public function setAllAssetsStats(ReportSummaryAssetAggregateStats $allAssetsStats)
+namespace Google\Service\MigrationCenterAPI {
+    class ReportSummary extends \Google\Collection
     {
+        protected $collection_key = 'groupFindings';
+        protected $allAssetsStatsType = ReportSummaryAssetAggregateStats::class;
+        protected $allAssetsStatsDataType = '';
+        protected $groupFindingsType = ReportSummaryGroupFinding::class;
+        protected $groupFindingsDataType = 'array';
+        /**
+         * Aggregate statistics for all the assets across all the groups.
+         *
+         * @param ReportSummaryAssetAggregateStats $allAssetsStats
+         */
+        public function setAllAssetsStats(ReportSummaryAssetAggregateStats $allAssetsStats)
+        {
+        }
+        /**
+         * @return ReportSummaryAssetAggregateStats
+         */
+        public function getAllAssetsStats()
+        {
+        }
+        /**
+         * Findings for each Group included in this report.
+         *
+         * @param ReportSummaryGroupFinding[] $groupFindings
+         */
+        public function setGroupFindings($groupFindings)
+        {
+        }
+        /**
+         * @return ReportSummaryGroupFinding[]
+         */
+        public function getGroupFindings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ReportSummaryAssetAggregateStats
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\ReportSummary registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllAssetsStats()
-    {
-    }
-    /**
-     * Findings for each Group included in this report.
-     *
-     * @param ReportSummaryGroupFinding[] $groupFindings
-     */
-    public function setGroupFindings($groupFindings)
-    {
-    }
-    /**
-     * @return ReportSummaryGroupFinding[]
-     */
-    public function getGroupFindings()
+    class Google_Service_MigrationCenterAPI_ReportSummary extends \Google\Service\MigrationCenterAPI\ReportSummary
     {
     }
 }

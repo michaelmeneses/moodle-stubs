@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleConstant extends \Google\Model
-{
-    /**
-     * @var float
-     */
-    public $floatValue;
-    /**
-     * @param float $floatValue
-     */
-    public function setFloatValue($floatValue)
+namespace Google\Service\Document {
+    class CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleConstant extends \Google\Model
     {
+        /**
+         * @var float
+         */
+        public $floatValue;
+        /**
+         * @param float $floatValue
+         */
+        public function setFloatValue($floatValue)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getFloatValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\Document\CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleConstant registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFloatValue()
+    class Google_Service_Document_CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleConstant extends \Google\Service\Document\CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleConstant
     {
     }
 }

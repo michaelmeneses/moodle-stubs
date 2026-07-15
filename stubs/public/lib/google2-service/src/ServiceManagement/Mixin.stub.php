@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceManagement;
-
-class Mixin extends \Google\Model
-{
-    /**
-     * The fully qualified name of the interface which is included.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * If non-empty specifies a path under which inherited HTTP paths are rooted.
-     *
-     * @var string
-     */
-    public $root;
-    /**
-     * The fully qualified name of the interface which is included.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\ServiceManagement {
+    class Mixin extends \Google\Model
     {
+        /**
+         * The fully qualified name of the interface which is included.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * If non-empty specifies a path under which inherited HTTP paths are rooted.
+         *
+         * @var string
+         */
+        public $root;
+        /**
+         * The fully qualified name of the interface which is included.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * If non-empty specifies a path under which inherited HTTP paths are rooted.
+         *
+         * @param string $root
+         */
+        public function setRoot($root)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRoot()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ServiceManagement\Mixin registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * If non-empty specifies a path under which inherited HTTP paths are rooted.
-     *
-     * @param string $root
-     */
-    public function setRoot($root)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRoot()
+    class Google_Service_ServiceManagement_Mixin extends \Google\Service\ServiceManagement\Mixin
     {
     }
 }

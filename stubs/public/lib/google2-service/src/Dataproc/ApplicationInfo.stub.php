@@ -21,156 +21,165 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class ApplicationInfo extends \Google\Collection
-{
-    public const APPLICATION_CONTEXT_INGESTION_STATUS_APPLICATION_CONTEXT_INGESTION_STATUS_UNSPECIFIED = 'APPLICATION_CONTEXT_INGESTION_STATUS_UNSPECIFIED';
-    public const APPLICATION_CONTEXT_INGESTION_STATUS_APPLICATION_CONTEXT_INGESTION_STATUS_COMPLETED = 'APPLICATION_CONTEXT_INGESTION_STATUS_COMPLETED';
-    public const QUANTILE_DATA_STATUS_QUANTILE_DATA_STATUS_UNSPECIFIED = 'QUANTILE_DATA_STATUS_UNSPECIFIED';
-    public const QUANTILE_DATA_STATUS_QUANTILE_DATA_STATUS_COMPLETED = 'QUANTILE_DATA_STATUS_COMPLETED';
-    public const QUANTILE_DATA_STATUS_QUANTILE_DATA_STATUS_FAILED = 'QUANTILE_DATA_STATUS_FAILED';
-    protected $collection_key = 'attempts';
-    /**
-     * @var string
-     */
-    public $applicationContextIngestionStatus;
-    /**
-     * @var string
-     */
-    public $applicationId;
-    protected $attemptsType = ApplicationAttemptInfo::class;
-    protected $attemptsDataType = 'array';
-    /**
-     * @var int
-     */
-    public $coresGranted;
-    /**
-     * @var int
-     */
-    public $coresPerExecutor;
-    /**
-     * @var int
-     */
-    public $maxCores;
-    /**
-     * @var int
-     */
-    public $memoryPerExecutorMb;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $quantileDataStatus;
-    /**
-     * @param self::APPLICATION_CONTEXT_INGESTION_STATUS_* $applicationContextIngestionStatus
-     */
-    public function setApplicationContextIngestionStatus($applicationContextIngestionStatus)
+namespace Google\Service\Dataproc {
+    class ApplicationInfo extends \Google\Collection
     {
+        public const APPLICATION_CONTEXT_INGESTION_STATUS_APPLICATION_CONTEXT_INGESTION_STATUS_UNSPECIFIED = 'APPLICATION_CONTEXT_INGESTION_STATUS_UNSPECIFIED';
+        public const APPLICATION_CONTEXT_INGESTION_STATUS_APPLICATION_CONTEXT_INGESTION_STATUS_COMPLETED = 'APPLICATION_CONTEXT_INGESTION_STATUS_COMPLETED';
+        public const QUANTILE_DATA_STATUS_QUANTILE_DATA_STATUS_UNSPECIFIED = 'QUANTILE_DATA_STATUS_UNSPECIFIED';
+        public const QUANTILE_DATA_STATUS_QUANTILE_DATA_STATUS_COMPLETED = 'QUANTILE_DATA_STATUS_COMPLETED';
+        public const QUANTILE_DATA_STATUS_QUANTILE_DATA_STATUS_FAILED = 'QUANTILE_DATA_STATUS_FAILED';
+        protected $collection_key = 'attempts';
+        /**
+         * @var string
+         */
+        public $applicationContextIngestionStatus;
+        /**
+         * @var string
+         */
+        public $applicationId;
+        protected $attemptsType = ApplicationAttemptInfo::class;
+        protected $attemptsDataType = 'array';
+        /**
+         * @var int
+         */
+        public $coresGranted;
+        /**
+         * @var int
+         */
+        public $coresPerExecutor;
+        /**
+         * @var int
+         */
+        public $maxCores;
+        /**
+         * @var int
+         */
+        public $memoryPerExecutorMb;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $quantileDataStatus;
+        /**
+         * @param self::APPLICATION_CONTEXT_INGESTION_STATUS_* $applicationContextIngestionStatus
+         */
+        public function setApplicationContextIngestionStatus($applicationContextIngestionStatus)
+        {
+        }
+        /**
+         * @return self::APPLICATION_CONTEXT_INGESTION_STATUS_*
+         */
+        public function getApplicationContextIngestionStatus()
+        {
+        }
+        /**
+         * @param string $applicationId
+         */
+        public function setApplicationId($applicationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApplicationId()
+        {
+        }
+        /**
+         * @param ApplicationAttemptInfo[] $attempts
+         */
+        public function setAttempts($attempts)
+        {
+        }
+        /**
+         * @return ApplicationAttemptInfo[]
+         */
+        public function getAttempts()
+        {
+        }
+        /**
+         * @param int $coresGranted
+         */
+        public function setCoresGranted($coresGranted)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCoresGranted()
+        {
+        }
+        /**
+         * @param int $coresPerExecutor
+         */
+        public function setCoresPerExecutor($coresPerExecutor)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCoresPerExecutor()
+        {
+        }
+        /**
+         * @param int $maxCores
+         */
+        public function setMaxCores($maxCores)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxCores()
+        {
+        }
+        /**
+         * @param int $memoryPerExecutorMb
+         */
+        public function setMemoryPerExecutorMb($memoryPerExecutorMb)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMemoryPerExecutorMb()
+        {
+        }
+        /**
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param self::QUANTILE_DATA_STATUS_* $quantileDataStatus
+         */
+        public function setQuantileDataStatus($quantileDataStatus)
+        {
+        }
+        /**
+         * @return self::QUANTILE_DATA_STATUS_*
+         */
+        public function getQuantileDataStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::APPLICATION_CONTEXT_INGESTION_STATUS_*
+     * Runtime class alias of \Google\Service\Dataproc\ApplicationInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApplicationContextIngestionStatus()
-    {
-    }
-    /**
-     * @param string $applicationId
-     */
-    public function setApplicationId($applicationId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getApplicationId()
-    {
-    }
-    /**
-     * @param ApplicationAttemptInfo[] $attempts
-     */
-    public function setAttempts($attempts)
-    {
-    }
-    /**
-     * @return ApplicationAttemptInfo[]
-     */
-    public function getAttempts()
-    {
-    }
-    /**
-     * @param int $coresGranted
-     */
-    public function setCoresGranted($coresGranted)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getCoresGranted()
-    {
-    }
-    /**
-     * @param int $coresPerExecutor
-     */
-    public function setCoresPerExecutor($coresPerExecutor)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getCoresPerExecutor()
-    {
-    }
-    /**
-     * @param int $maxCores
-     */
-    public function setMaxCores($maxCores)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxCores()
-    {
-    }
-    /**
-     * @param int $memoryPerExecutorMb
-     */
-    public function setMemoryPerExecutorMb($memoryPerExecutorMb)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMemoryPerExecutorMb()
-    {
-    }
-    /**
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param self::QUANTILE_DATA_STATUS_* $quantileDataStatus
-     */
-    public function setQuantileDataStatus($quantileDataStatus)
-    {
-    }
-    /**
-     * @return self::QUANTILE_DATA_STATUS_*
-     */
-    public function getQuantileDataStatus()
+    class Google_Service_Dataproc_ApplicationInfo extends \Google\Service\Dataproc\ApplicationInfo
     {
     }
 }

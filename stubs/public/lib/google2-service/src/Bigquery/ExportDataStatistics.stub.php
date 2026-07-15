@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class ExportDataStatistics extends \Google\Model
-{
-    /**
-     * Number of destination files generated in case of EXPORT DATA statement
-     * only.
-     *
-     * @var string
-     */
-    public $fileCount;
-    /**
-     * [Alpha] Number of destination rows generated in case of EXPORT DATA
-     * statement only.
-     *
-     * @var string
-     */
-    public $rowCount;
-    /**
-     * Number of destination files generated in case of EXPORT DATA statement
-     * only.
-     *
-     * @param string $fileCount
-     */
-    public function setFileCount($fileCount)
+namespace Google\Service\Bigquery {
+    class ExportDataStatistics extends \Google\Model
     {
+        /**
+         * Number of destination files generated in case of EXPORT DATA statement
+         * only.
+         *
+         * @var string
+         */
+        public $fileCount;
+        /**
+         * [Alpha] Number of destination rows generated in case of EXPORT DATA
+         * statement only.
+         *
+         * @var string
+         */
+        public $rowCount;
+        /**
+         * Number of destination files generated in case of EXPORT DATA statement
+         * only.
+         *
+         * @param string $fileCount
+         */
+        public function setFileCount($fileCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFileCount()
+        {
+        }
+        /**
+         * [Alpha] Number of destination rows generated in case of EXPORT DATA
+         * statement only.
+         *
+         * @param string $rowCount
+         */
+        public function setRowCount($rowCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRowCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Bigquery\ExportDataStatistics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFileCount()
-    {
-    }
-    /**
-     * [Alpha] Number of destination rows generated in case of EXPORT DATA
-     * statement only.
-     *
-     * @param string $rowCount
-     */
-    public function setRowCount($rowCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRowCount()
+    class Google_Service_Bigquery_ExportDataStatistics extends \Google\Service\Bigquery\ExportDataStatistics
     {
     }
 }

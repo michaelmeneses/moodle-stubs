@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class SubscriptionCancelSurveyResult extends \Google\Model
-{
-    /**
-     * The cancellation reason the user chose in the survey. Possible values are:
-     * 0. Other 1. I don't use this service enough 2. Technical issues 3. Cost-
-     * related reasons 4. I found a better app
-     *
-     * @var int
-     */
-    public $cancelSurveyReason;
-    /**
-     * The customized input cancel reason from the user. Only present when
-     * cancelReason is 0.
-     *
-     * @var string
-     */
-    public $userInputCancelReason;
-    /**
-     * The cancellation reason the user chose in the survey. Possible values are:
-     * 0. Other 1. I don't use this service enough 2. Technical issues 3. Cost-
-     * related reasons 4. I found a better app
-     *
-     * @param int $cancelSurveyReason
-     */
-    public function setCancelSurveyReason($cancelSurveyReason)
+namespace Google\Service\AndroidPublisher {
+    class SubscriptionCancelSurveyResult extends \Google\Model
     {
+        /**
+         * The cancellation reason the user chose in the survey. Possible values are:
+         * 0. Other 1. I don't use this service enough 2. Technical issues 3. Cost-
+         * related reasons 4. I found a better app
+         *
+         * @var int
+         */
+        public $cancelSurveyReason;
+        /**
+         * The customized input cancel reason from the user. Only present when
+         * cancelReason is 0.
+         *
+         * @var string
+         */
+        public $userInputCancelReason;
+        /**
+         * The cancellation reason the user chose in the survey. Possible values are:
+         * 0. Other 1. I don't use this service enough 2. Technical issues 3. Cost-
+         * related reasons 4. I found a better app
+         *
+         * @param int $cancelSurveyReason
+         */
+        public function setCancelSurveyReason($cancelSurveyReason)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCancelSurveyReason()
+        {
+        }
+        /**
+         * The customized input cancel reason from the user. Only present when
+         * cancelReason is 0.
+         *
+         * @param string $userInputCancelReason
+         */
+        public function setUserInputCancelReason($userInputCancelReason)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserInputCancelReason()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\AndroidPublisher\SubscriptionCancelSurveyResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCancelSurveyReason()
-    {
-    }
-    /**
-     * The customized input cancel reason from the user. Only present when
-     * cancelReason is 0.
-     *
-     * @param string $userInputCancelReason
-     */
-    public function setUserInputCancelReason($userInputCancelReason)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserInputCancelReason()
+    class Google_Service_AndroidPublisher_SubscriptionCancelSurveyResult extends \Google\Service\AndroidPublisher\SubscriptionCancelSurveyResult
     {
     }
 }

@@ -16,6 +16,8 @@
  */
 namespace Monolog\Handler;
 
+use Throwable;
+use Monolog\LogRecord;
 /**
  * Forwards records to at most one handler
  *

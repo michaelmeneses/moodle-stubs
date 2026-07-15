@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1beta2DocumentPageImageQualityScoresDetectedDefect extends \Google\Model
-{
-    /**
-     * @var float
-     */
-    public $confidence;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @param float
-     */
-    public function setConfidence($confidence)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1beta2DocumentPageImageQualityScoresDetectedDefect extends \Google\Model
     {
+        /**
+         * @var float
+         */
+        public $confidence;
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @param float
+         */
+        public function setConfidence($confidence)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getConfidence()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1beta2DocumentPageImageQualityScoresDetectedDefect registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfidence()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_Document_GoogleCloudDocumentaiV1beta2DocumentPageImageQualityScoresDetectedDefect extends \Google\Service\Document\GoogleCloudDocumentaiV1beta2DocumentPageImageQualityScoresDetectedDefect
     {
     }
 }

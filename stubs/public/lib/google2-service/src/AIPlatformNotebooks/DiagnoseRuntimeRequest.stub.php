@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AIPlatformNotebooks;
-
-class DiagnoseRuntimeRequest extends \Google\Model
-{
-    protected $diagnosticConfigType = DiagnosticConfig::class;
-    protected $diagnosticConfigDataType = '';
-    public $diagnosticConfig;
-    /**
-     * @param DiagnosticConfig
-     */
-    public function setDiagnosticConfig(DiagnosticConfig $diagnosticConfig)
+namespace Google\Service\AIPlatformNotebooks {
+    class DiagnoseRuntimeRequest extends \Google\Model
     {
+        protected $diagnosticConfigType = DiagnosticConfig::class;
+        protected $diagnosticConfigDataType = '';
+        public $diagnosticConfig;
+        /**
+         * @param DiagnosticConfig
+         */
+        public function setDiagnosticConfig(DiagnosticConfig $diagnosticConfig)
+        {
+        }
+        /**
+         * @return DiagnosticConfig
+         */
+        public function getDiagnosticConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DiagnosticConfig
+     * Runtime class alias of \Google\Service\AIPlatformNotebooks\DiagnoseRuntimeRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDiagnosticConfig()
+    class Google_Service_AIPlatformNotebooks_DiagnoseRuntimeRequest extends \Google\Service\AIPlatformNotebooks\DiagnoseRuntimeRequest
     {
     }
 }

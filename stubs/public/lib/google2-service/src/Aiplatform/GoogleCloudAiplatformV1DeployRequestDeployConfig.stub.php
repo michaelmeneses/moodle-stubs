@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1DeployRequestDeployConfig extends \Google\Model
-{
-    protected $dedicatedResourcesType = GoogleCloudAiplatformV1DedicatedResources::class;
-    protected $dedicatedResourcesDataType = '';
-    /**
-     * Optional. If true, enable the QMT fast tryout feature for this model if
-     * possible.
-     *
-     * @var bool
-     */
-    public $fastTryoutEnabled;
-    /**
-     * Optional. System labels for Model Garden deployments. These labels are
-     * managed by Google and for tracking purposes only.
-     *
-     * @var string[]
-     */
-    public $systemLabels;
-    /**
-     * Optional. The dedicated resources to use for the endpoint. If not set, the
-     * default resources will be used.
-     *
-     * @param GoogleCloudAiplatformV1DedicatedResources $dedicatedResources
-     */
-    public function setDedicatedResources(GoogleCloudAiplatformV1DedicatedResources $dedicatedResources)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1DeployRequestDeployConfig extends \Google\Model
     {
+        protected $dedicatedResourcesType = GoogleCloudAiplatformV1DedicatedResources::class;
+        protected $dedicatedResourcesDataType = '';
+        /**
+         * Optional. If true, enable the QMT fast tryout feature for this model if
+         * possible.
+         *
+         * @var bool
+         */
+        public $fastTryoutEnabled;
+        /**
+         * Optional. System labels for Model Garden deployments. These labels are
+         * managed by Google and for tracking purposes only.
+         *
+         * @var string[]
+         */
+        public $systemLabels;
+        /**
+         * Optional. The dedicated resources to use for the endpoint. If not set, the
+         * default resources will be used.
+         *
+         * @param GoogleCloudAiplatformV1DedicatedResources $dedicatedResources
+         */
+        public function setDedicatedResources(GoogleCloudAiplatformV1DedicatedResources $dedicatedResources)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1DedicatedResources
+         */
+        public function getDedicatedResources()
+        {
+        }
+        /**
+         * Optional. If true, enable the QMT fast tryout feature for this model if
+         * possible.
+         *
+         * @param bool $fastTryoutEnabled
+         */
+        public function setFastTryoutEnabled($fastTryoutEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getFastTryoutEnabled()
+        {
+        }
+        /**
+         * Optional. System labels for Model Garden deployments. These labels are
+         * managed by Google and for tracking purposes only.
+         *
+         * @param string[] $systemLabels
+         */
+        public function setSystemLabels($systemLabels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSystemLabels()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1DedicatedResources
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1DeployRequestDeployConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDedicatedResources()
-    {
-    }
-    /**
-     * Optional. If true, enable the QMT fast tryout feature for this model if
-     * possible.
-     *
-     * @param bool $fastTryoutEnabled
-     */
-    public function setFastTryoutEnabled($fastTryoutEnabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getFastTryoutEnabled()
-    {
-    }
-    /**
-     * Optional. System labels for Model Garden deployments. These labels are
-     * managed by Google and for tracking purposes only.
-     *
-     * @param string[] $systemLabels
-     */
-    public function setSystemLabels($systemLabels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSystemLabels()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1DeployRequestDeployConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1DeployRequestDeployConfig
     {
     }
 }

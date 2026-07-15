@@ -21,27 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsReporting\Resource;
-
-/**
- * The "userActivity" collection of methods.
- * Typical usage is:
- *  <code>
- *   $analyticsreportingService = new Google\Service\AnalyticsReporting(...);
- *   $userActivity = $analyticsreportingService->userActivity;
- *  </code>
- */
-class UserActivity extends \Google\Service\Resource
-{
+namespace Google\Service\AnalyticsReporting\Resource {
+    use Google\Service\AnalyticsReporting\SearchUserActivityRequest;
+    use Google\Service\AnalyticsReporting\SearchUserActivityResponse;
     /**
-     * Returns User Activity data. (userActivity.search)
-     *
-     * @param SearchUserActivityRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return SearchUserActivityResponse
-     * @throws \Google\Service\Exception
+     * The "userActivity" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $analyticsreportingService = new Google\Service\AnalyticsReporting(...);
+     *   $userActivity = $analyticsreportingService->userActivity;
+     *  </code>
      */
-    public function search(SearchUserActivityRequest $postBody, $optParams = [])
+    class UserActivity extends \Google\Service\Resource
+    {
+        /**
+         * Returns User Activity data. (userActivity.search)
+         *
+         * @param SearchUserActivityRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return SearchUserActivityResponse
+         * @throws \Google\Service\Exception
+         */
+        public function search(SearchUserActivityRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AnalyticsReporting\Resource\UserActivity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AnalyticsReporting_Resource_UserActivity extends \Google\Service\AnalyticsReporting\Resource\UserActivity
     {
     }
 }

@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class ComputeStorageDescriptor extends \Google\Model
-{
-    /**
-     * Unspecified. Fallback to default value based on context.
-     */
-    public const TYPE_PERSISTENT_DISK_TYPE_UNSPECIFIED = 'PERSISTENT_DISK_TYPE_UNSPECIFIED';
-    /**
-     * Standard HDD Persistent Disk.
-     */
-    public const TYPE_PERSISTENT_DISK_TYPE_STANDARD = 'PERSISTENT_DISK_TYPE_STANDARD';
-    /**
-     * Balanced Persistent Disk.
-     */
-    public const TYPE_PERSISTENT_DISK_TYPE_BALANCED = 'PERSISTENT_DISK_TYPE_BALANCED';
-    /**
-     * SSD Persistent Disk.
-     */
-    public const TYPE_PERSISTENT_DISK_TYPE_SSD = 'PERSISTENT_DISK_TYPE_SSD';
-    /**
-     * Output only. Disk size in GiB.
-     *
-     * @var int
-     */
-    public $sizeGb;
-    /**
-     * Output only. Disk type backing the storage.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Output only. Disk size in GiB.
-     *
-     * @param int $sizeGb
-     */
-    public function setSizeGb($sizeGb)
+namespace Google\Service\MigrationCenterAPI {
+    class ComputeStorageDescriptor extends \Google\Model
     {
+        /**
+         * Unspecified. Fallback to default value based on context.
+         */
+        public const TYPE_PERSISTENT_DISK_TYPE_UNSPECIFIED = 'PERSISTENT_DISK_TYPE_UNSPECIFIED';
+        /**
+         * Standard HDD Persistent Disk.
+         */
+        public const TYPE_PERSISTENT_DISK_TYPE_STANDARD = 'PERSISTENT_DISK_TYPE_STANDARD';
+        /**
+         * Balanced Persistent Disk.
+         */
+        public const TYPE_PERSISTENT_DISK_TYPE_BALANCED = 'PERSISTENT_DISK_TYPE_BALANCED';
+        /**
+         * SSD Persistent Disk.
+         */
+        public const TYPE_PERSISTENT_DISK_TYPE_SSD = 'PERSISTENT_DISK_TYPE_SSD';
+        /**
+         * Output only. Disk size in GiB.
+         *
+         * @var int
+         */
+        public $sizeGb;
+        /**
+         * Output only. Disk type backing the storage.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Output only. Disk size in GiB.
+         *
+         * @param int $sizeGb
+         */
+        public function setSizeGb($sizeGb)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSizeGb()
+        {
+        }
+        /**
+         * Output only. Disk type backing the storage.
+         *
+         * Accepted values: PERSISTENT_DISK_TYPE_UNSPECIFIED,
+         * PERSISTENT_DISK_TYPE_STANDARD, PERSISTENT_DISK_TYPE_BALANCED,
+         * PERSISTENT_DISK_TYPE_SSD
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\ComputeStorageDescriptor registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSizeGb()
-    {
-    }
-    /**
-     * Output only. Disk type backing the storage.
-     *
-     * Accepted values: PERSISTENT_DISK_TYPE_UNSPECIFIED,
-     * PERSISTENT_DISK_TYPE_STANDARD, PERSISTENT_DISK_TYPE_BALANCED,
-     * PERSISTENT_DISK_TYPE_SSD
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_MigrationCenterAPI_ComputeStorageDescriptor extends \Google\Service\MigrationCenterAPI\ComputeStorageDescriptor
     {
     }
 }

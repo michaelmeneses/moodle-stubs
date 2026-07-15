@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class ListDevicesResponse extends \Google\Collection
-{
-    protected $collection_key = 'devices';
-    protected $devicesType = Device::class;
-    protected $devicesDataType = 'array';
-    /**
-     * If there are more results, a token to retrieve next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of devices.
-     *
-     * @param Device[] $devices
-     */
-    public function setDevices($devices)
+namespace Google\Service\AndroidManagement {
+    class ListDevicesResponse extends \Google\Collection
     {
+        protected $collection_key = 'devices';
+        protected $devicesType = Device::class;
+        protected $devicesDataType = 'array';
+        /**
+         * If there are more results, a token to retrieve next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of devices.
+         *
+         * @param Device[] $devices
+         */
+        public function setDevices($devices)
+        {
+        }
+        /**
+         * @return Device[]
+         */
+        public function getDevices()
+        {
+        }
+        /**
+         * If there are more results, a token to retrieve next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Device[]
+     * Runtime class alias of \Google\Service\AndroidManagement\ListDevicesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDevices()
-    {
-    }
-    /**
-     * If there are more results, a token to retrieve next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_AndroidManagement_ListDevicesResponse extends \Google\Service\AndroidManagement\ListDevicesResponse
     {
     }
 }

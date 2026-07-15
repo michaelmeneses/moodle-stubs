@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Transcoder;
-
-class FailureDetail extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @param string
-     */
-    public function setDescription($description)
+namespace Google\Service\Transcoder {
+    class FailureDetail extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $description;
+        /**
+         * @param string
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Transcoder\FailureDetail registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
+    class Google_Service_Transcoder_FailureDetail extends \Google\Service\Transcoder\FailureDetail
     {
     }
 }

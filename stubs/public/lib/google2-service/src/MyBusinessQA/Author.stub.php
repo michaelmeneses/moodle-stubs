@@ -21,87 +21,96 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessQA;
-
-class Author extends \Google\Model
-{
-    /**
-     * This should not be used.
-     */
-    public const TYPE_AUTHOR_TYPE_UNSPECIFIED = 'AUTHOR_TYPE_UNSPECIFIED';
-    /**
-     * A regular user.
-     */
-    public const TYPE_REGULAR_USER = 'REGULAR_USER';
-    /**
-     * A Local Guide
-     */
-    public const TYPE_LOCAL_GUIDE = 'LOCAL_GUIDE';
-    /**
-     * The owner/manager of the location
-     */
-    public const TYPE_MERCHANT = 'MERCHANT';
-    /**
-     * The display name of the user
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The profile photo URI of the user.
-     *
-     * @var string
-     */
-    public $profilePhotoUri;
-    /**
-     * The type of user the author is.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The display name of the user
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\MyBusinessQA {
+    class Author extends \Google\Model
     {
+        /**
+         * This should not be used.
+         */
+        public const TYPE_AUTHOR_TYPE_UNSPECIFIED = 'AUTHOR_TYPE_UNSPECIFIED';
+        /**
+         * A regular user.
+         */
+        public const TYPE_REGULAR_USER = 'REGULAR_USER';
+        /**
+         * A Local Guide
+         */
+        public const TYPE_LOCAL_GUIDE = 'LOCAL_GUIDE';
+        /**
+         * The owner/manager of the location
+         */
+        public const TYPE_MERCHANT = 'MERCHANT';
+        /**
+         * The display name of the user
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The profile photo URI of the user.
+         *
+         * @var string
+         */
+        public $profilePhotoUri;
+        /**
+         * The type of user the author is.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The display name of the user
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The profile photo URI of the user.
+         *
+         * @param string $profilePhotoUri
+         */
+        public function setProfilePhotoUri($profilePhotoUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProfilePhotoUri()
+        {
+        }
+        /**
+         * The type of user the author is.
+         *
+         * Accepted values: AUTHOR_TYPE_UNSPECIFIED, REGULAR_USER, LOCAL_GUIDE,
+         * MERCHANT
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MyBusinessQA\Author registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The profile photo URI of the user.
-     *
-     * @param string $profilePhotoUri
-     */
-    public function setProfilePhotoUri($profilePhotoUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProfilePhotoUri()
-    {
-    }
-    /**
-     * The type of user the author is.
-     *
-     * Accepted values: AUTHOR_TYPE_UNSPECIFIED, REGULAR_USER, LOCAL_GUIDE,
-     * MERCHANT
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_MyBusinessQA_Author extends \Google\Service\MyBusinessQA\Author
     {
     }
 }

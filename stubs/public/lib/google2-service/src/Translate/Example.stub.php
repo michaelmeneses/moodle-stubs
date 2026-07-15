@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Translate;
-
-class Example extends \Google\Model
-{
-    /**
-     * Output only. The resource name of the example, in form of
-     * `projects/{project-number-or-
-     * id}/locations/{location_id}/datasets/{dataset_id}/examples/{example_id}`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Sentence in source language.
-     *
-     * @var string
-     */
-    public $sourceText;
-    /**
-     * Sentence in target language.
-     *
-     * @var string
-     */
-    public $targetText;
-    /**
-     * Output only. Usage of the sentence pair. Options are TRAIN|VALIDATION|TEST.
-     *
-     * @var string
-     */
-    public $usage;
-    /**
-     * Output only. The resource name of the example, in form of
-     * `projects/{project-number-or-
-     * id}/locations/{location_id}/datasets/{dataset_id}/examples/{example_id}`
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Translate {
+    class Example extends \Google\Model
     {
+        /**
+         * Output only. The resource name of the example, in form of
+         * `projects/{project-number-or-
+         * id}/locations/{location_id}/datasets/{dataset_id}/examples/{example_id}`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Sentence in source language.
+         *
+         * @var string
+         */
+        public $sourceText;
+        /**
+         * Sentence in target language.
+         *
+         * @var string
+         */
+        public $targetText;
+        /**
+         * Output only. Usage of the sentence pair. Options are TRAIN|VALIDATION|TEST.
+         *
+         * @var string
+         */
+        public $usage;
+        /**
+         * Output only. The resource name of the example, in form of
+         * `projects/{project-number-or-
+         * id}/locations/{location_id}/datasets/{dataset_id}/examples/{example_id}`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Sentence in source language.
+         *
+         * @param string $sourceText
+         */
+        public function setSourceText($sourceText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceText()
+        {
+        }
+        /**
+         * Sentence in target language.
+         *
+         * @param string $targetText
+         */
+        public function setTargetText($targetText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetText()
+        {
+        }
+        /**
+         * Output only. Usage of the sentence pair. Options are TRAIN|VALIDATION|TEST.
+         *
+         * @param string $usage
+         */
+        public function setUsage($usage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUsage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Translate\Example registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Sentence in source language.
-     *
-     * @param string $sourceText
-     */
-    public function setSourceText($sourceText)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourceText()
-    {
-    }
-    /**
-     * Sentence in target language.
-     *
-     * @param string $targetText
-     */
-    public function setTargetText($targetText)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetText()
-    {
-    }
-    /**
-     * Output only. Usage of the sentence pair. Options are TRAIN|VALIDATION|TEST.
-     *
-     * @param string $usage
-     */
-    public function setUsage($usage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUsage()
+    class Google_Service_Translate_Example extends \Google\Service\Translate\Example
     {
     }
 }

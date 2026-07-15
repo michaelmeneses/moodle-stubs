@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAlloyDBAdmin;
-
-class MaintenanceSchedule extends \Google\Model
-{
-    /**
-     * Output only. The scheduled start time for the maintenance.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * Output only. The scheduled start time for the maintenance.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
+namespace Google\Service\CloudAlloyDBAdmin {
+    class MaintenanceSchedule extends \Google\Model
     {
+        /**
+         * Output only. The scheduled start time for the maintenance.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * Output only. The scheduled start time for the maintenance.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudAlloyDBAdmin\MaintenanceSchedule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStartTime()
+    class Google_Service_CloudAlloyDBAdmin_MaintenanceSchedule extends \Google\Service\CloudAlloyDBAdmin\MaintenanceSchedule
     {
     }
 }

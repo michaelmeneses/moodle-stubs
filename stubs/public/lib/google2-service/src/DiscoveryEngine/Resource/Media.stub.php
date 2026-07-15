@@ -21,32 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine\Resource;
-
-/**
- * The "media" collection of methods.
- * Typical usage is:
- *  <code>
- *   $discoveryengineService = new Google\Service\DiscoveryEngine(...);
- *   $media = $discoveryengineService->media;
- *  </code>
- */
-class Media extends \Google\Service\Resource
-{
+namespace Google\Service\DiscoveryEngine\Resource {
+    use Google\Service\DiscoveryEngine\GdataMedia;
     /**
-     * Downloads a file from the session. (media.download)
-     *
-     * @param string $name Required. The resource name of the Session. Format: `proj
-     * ects/{project}/locations/{location}/collections/{collection}/engines/{engine}
-     * /sessions/{session}`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string fileId Required. The ID of the file to be downloaded.
-     * @opt_param string viewId Optional. The ID of the view to be downloaded.
-     * @return GdataMedia
-     * @throws \Google\Service\Exception
+     * The "media" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $discoveryengineService = new Google\Service\DiscoveryEngine(...);
+     *   $media = $discoveryengineService->media;
+     *  </code>
      */
-    public function download($name, $optParams = [])
+    class Media extends \Google\Service\Resource
+    {
+        /**
+         * Downloads a file from the session. (media.download)
+         *
+         * @param string $name Required. The resource name of the Session. Format: `proj
+         * ects/{project}/locations/{location}/collections/{collection}/engines/{engine}
+         * /sessions/{session}`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string fileId Required. The ID of the file to be downloaded.
+         * @opt_param string viewId Optional. The ID of the view to be downloaded.
+         * @return GdataMedia
+         * @throws \Google\Service\Exception
+         */
+        public function download($name, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\DiscoveryEngine\Resource\Media registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_DiscoveryEngine_Resource_Media extends \Google\Service\DiscoveryEngine\Resource\Media
     {
     }
 }

@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class OrderLineItemAdjustment extends \Google\Model
-{
-    protected $priceAdjustmentType = Price::class;
-    protected $priceAdjustmentDataType = '';
-    protected $taxAdjustmentType = Price::class;
-    protected $taxAdjustmentDataType = '';
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @param Price
-     */
-    public function setPriceAdjustment(Price $priceAdjustment)
+namespace Google\Service\ShoppingContent {
+    class OrderLineItemAdjustment extends \Google\Model
     {
+        protected $priceAdjustmentType = Price::class;
+        protected $priceAdjustmentDataType = '';
+        protected $taxAdjustmentType = Price::class;
+        protected $taxAdjustmentDataType = '';
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @param Price
+         */
+        public function setPriceAdjustment(Price $priceAdjustment)
+        {
+        }
+        /**
+         * @return Price
+         */
+        public function getPriceAdjustment()
+        {
+        }
+        /**
+         * @param Price
+         */
+        public function setTaxAdjustment(Price $taxAdjustment)
+        {
+        }
+        /**
+         * @return Price
+         */
+        public function getTaxAdjustment()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Price
+     * Runtime class alias of \Google\Service\ShoppingContent\OrderLineItemAdjustment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPriceAdjustment()
-    {
-    }
-    /**
-     * @param Price
-     */
-    public function setTaxAdjustment(Price $taxAdjustment)
-    {
-    }
-    /**
-     * @return Price
-     */
-    public function getTaxAdjustment()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_ShoppingContent_OrderLineItemAdjustment extends \Google\Service\ShoppingContent\OrderLineItemAdjustment
     {
     }
 }

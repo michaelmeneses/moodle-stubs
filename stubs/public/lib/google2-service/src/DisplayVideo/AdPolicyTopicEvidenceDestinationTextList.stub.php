@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class AdPolicyTopicEvidenceDestinationTextList extends \Google\Collection
-{
-    protected $collection_key = 'destinationTexts';
-    /**
-     * Destination text that caused the policy finding.
-     *
-     * @var string[]
-     */
-    public $destinationTexts;
-    /**
-     * Destination text that caused the policy finding.
-     *
-     * @param string[] $destinationTexts
-     */
-    public function setDestinationTexts($destinationTexts)
+namespace Google\Service\DisplayVideo {
+    class AdPolicyTopicEvidenceDestinationTextList extends \Google\Collection
     {
+        protected $collection_key = 'destinationTexts';
+        /**
+         * Destination text that caused the policy finding.
+         *
+         * @var string[]
+         */
+        public $destinationTexts;
+        /**
+         * Destination text that caused the policy finding.
+         *
+         * @param string[] $destinationTexts
+         */
+        public function setDestinationTexts($destinationTexts)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDestinationTexts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\DisplayVideo\AdPolicyTopicEvidenceDestinationTextList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDestinationTexts()
+    class Google_Service_DisplayVideo_AdPolicyTopicEvidenceDestinationTextList extends \Google\Service\DisplayVideo\AdPolicyTopicEvidenceDestinationTextList
     {
     }
 }

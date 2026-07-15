@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class Name extends \Google\Model
-{
-    /**
-     * The read-only display name formatted according to the locale specified by
-     * the viewer's account or the `Accept-Language` HTTP header.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The read-only display name formatted according to the locale specified by
-     * the viewer's account or the `Accept-Language` HTTP header.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\CloudSearch {
+    class Name extends \Google\Model
     {
+        /**
+         * The read-only display name formatted according to the locale specified by
+         * the viewer's account or the `Accept-Language` HTTP header.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The read-only display name formatted according to the locale specified by
+         * the viewer's account or the `Accept-Language` HTTP header.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\Name registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
+    class Google_Service_CloudSearch_Name extends \Google\Service\CloudSearch\Name
     {
     }
 }

@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMwareEngine;
-
-class GoogleFileService extends \Google\Model
-{
-    /**
-     * Google filestore instance resource name e.g. projects/my-
-     * project/locations/me-west1-b/instances/my-instance
-     *
-     * @var string
-     */
-    public $filestoreInstance;
-    /**
-     * Google netapp volume resource name e.g. projects/my-project/locations/me-
-     * west1-b/volumes/my-volume
-     *
-     * @var string
-     */
-    public $netappVolume;
-    /**
-     * Google filestore instance resource name e.g. projects/my-
-     * project/locations/me-west1-b/instances/my-instance
-     *
-     * @param string $filestoreInstance
-     */
-    public function setFilestoreInstance($filestoreInstance)
+namespace Google\Service\VMwareEngine {
+    class GoogleFileService extends \Google\Model
     {
+        /**
+         * Google filestore instance resource name e.g. projects/my-
+         * project/locations/me-west1-b/instances/my-instance
+         *
+         * @var string
+         */
+        public $filestoreInstance;
+        /**
+         * Google netapp volume resource name e.g. projects/my-project/locations/me-
+         * west1-b/volumes/my-volume
+         *
+         * @var string
+         */
+        public $netappVolume;
+        /**
+         * Google filestore instance resource name e.g. projects/my-
+         * project/locations/me-west1-b/instances/my-instance
+         *
+         * @param string $filestoreInstance
+         */
+        public function setFilestoreInstance($filestoreInstance)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilestoreInstance()
+        {
+        }
+        /**
+         * Google netapp volume resource name e.g. projects/my-project/locations/me-
+         * west1-b/volumes/my-volume
+         *
+         * @param string $netappVolume
+         */
+        public function setNetappVolume($netappVolume)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNetappVolume()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\VMwareEngine\GoogleFileService registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFilestoreInstance()
-    {
-    }
-    /**
-     * Google netapp volume resource name e.g. projects/my-project/locations/me-
-     * west1-b/volumes/my-volume
-     *
-     * @param string $netappVolume
-     */
-    public function setNetappVolume($netappVolume)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNetappVolume()
+    class Google_Service_VMwareEngine_GoogleFileService extends \Google\Service\VMwareEngine\GoogleFileService
     {
     }
 }

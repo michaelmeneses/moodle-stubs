@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BeyondCorp;
-
-class GoogleCloudBeyondcorpAppconnectorsV1ListAppConnectorsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $appConnectorsType = GoogleCloudBeyondcorpAppconnectorsV1AppConnector::class;
-    protected $appConnectorsDataType = 'array';
-    /**
-     * A token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * A list of locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * A list of BeyondCorp AppConnectors in the project.
-     *
-     * @param GoogleCloudBeyondcorpAppconnectorsV1AppConnector[] $appConnectors
-     */
-    public function setAppConnectors($appConnectors)
+namespace Google\Service\BeyondCorp {
+    class GoogleCloudBeyondcorpAppconnectorsV1ListAppConnectorsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $appConnectorsType = GoogleCloudBeyondcorpAppconnectorsV1AppConnector::class;
+        protected $appConnectorsDataType = 'array';
+        /**
+         * A token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * A list of locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * A list of BeyondCorp AppConnectors in the project.
+         *
+         * @param GoogleCloudBeyondcorpAppconnectorsV1AppConnector[] $appConnectors
+         */
+        public function setAppConnectors($appConnectors)
+        {
+        }
+        /**
+         * @return GoogleCloudBeyondcorpAppconnectorsV1AppConnector[]
+         */
+        public function getAppConnectors()
+        {
+        }
+        /**
+         * A token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * A list of locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudBeyondcorpAppconnectorsV1AppConnector[]
+     * Runtime class alias of \Google\Service\BeyondCorp\GoogleCloudBeyondcorpAppconnectorsV1ListAppConnectorsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAppConnectors()
-    {
-    }
-    /**
-     * A token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * A list of locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_BeyondCorp_GoogleCloudBeyondcorpAppconnectorsV1ListAppConnectorsResponse extends \Google\Service\BeyondCorp\GoogleCloudBeyondcorpAppconnectorsV1ListAppConnectorsResponse
     {
     }
 }

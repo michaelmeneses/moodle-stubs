@@ -21,63 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ModelExportFormat extends \Google\Collection
-{
-    protected $collection_key = 'exportableContents';
-    /**
-     * Output only. The content of this Model that may be exported.
-     *
-     * @var string[]
-     */
-    public $exportableContents;
-    /**
-     * Output only. The ID of the export format. The possible format IDs are: *
-     * `tflite` Used for Android mobile devices. * `edgetpu-tflite` Used for [Edge
-     * TPU](https://cloud.google.com/edge-tpu/) devices. * `tf-saved-model` A
-     * tensorflow model in SavedModel format. * `tf-js` A
-     * [TensorFlow.js](https://www.tensorflow.org/js) model that can be used in
-     * the browser and in Node.js using JavaScript. * `core-ml` Used for iOS
-     * mobile devices. * `custom-trained` A Model that was uploaded or trained by
-     * custom code. * `genie` A tuned Model Garden model.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Output only. The content of this Model that may be exported.
-     *
-     * @param string[] $exportableContents
-     */
-    public function setExportableContents($exportableContents)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ModelExportFormat extends \Google\Collection
     {
+        protected $collection_key = 'exportableContents';
+        /**
+         * Output only. The content of this Model that may be exported.
+         *
+         * @var string[]
+         */
+        public $exportableContents;
+        /**
+         * Output only. The ID of the export format. The possible format IDs are: *
+         * `tflite` Used for Android mobile devices. * `edgetpu-tflite` Used for [Edge
+         * TPU](https://cloud.google.com/edge-tpu/) devices. * `tf-saved-model` A
+         * tensorflow model in SavedModel format. * `tf-js` A
+         * [TensorFlow.js](https://www.tensorflow.org/js) model that can be used in
+         * the browser and in Node.js using JavaScript. * `core-ml` Used for iOS
+         * mobile devices. * `custom-trained` A Model that was uploaded or trained by
+         * custom code. * `genie` A tuned Model Garden model.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Output only. The content of this Model that may be exported.
+         *
+         * @param string[] $exportableContents
+         */
+        public function setExportableContents($exportableContents)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getExportableContents()
+        {
+        }
+        /**
+         * Output only. The ID of the export format. The possible format IDs are: *
+         * `tflite` Used for Android mobile devices. * `edgetpu-tflite` Used for [Edge
+         * TPU](https://cloud.google.com/edge-tpu/) devices. * `tf-saved-model` A
+         * tensorflow model in SavedModel format. * `tf-js` A
+         * [TensorFlow.js](https://www.tensorflow.org/js) model that can be used in
+         * the browser and in Node.js using JavaScript. * `core-ml` Used for iOS
+         * mobile devices. * `custom-trained` A Model that was uploaded or trained by
+         * custom code. * `genie` A tuned Model Garden model.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ModelExportFormat registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExportableContents()
-    {
-    }
-    /**
-     * Output only. The ID of the export format. The possible format IDs are: *
-     * `tflite` Used for Android mobile devices. * `edgetpu-tflite` Used for [Edge
-     * TPU](https://cloud.google.com/edge-tpu/) devices. * `tf-saved-model` A
-     * tensorflow model in SavedModel format. * `tf-js` A
-     * [TensorFlow.js](https://www.tensorflow.org/js) model that can be used in
-     * the browser and in Node.js using JavaScript. * `core-ml` Used for iOS
-     * mobile devices. * `custom-trained` A Model that was uploaded or trained by
-     * custom code. * `genie` A tuned Model Garden model.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ModelExportFormat extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ModelExportFormat
     {
     }
 }

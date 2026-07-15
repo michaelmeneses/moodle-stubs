@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Playdeveloperreporting;
-
-class GooglePlayDeveloperReportingV1beta1SearchErrorIssuesResponse extends \Google\Collection
-{
-    protected $collection_key = 'errorIssues';
-    protected $errorIssuesType = GooglePlayDeveloperReportingV1beta1ErrorIssue::class;
-    protected $errorIssuesDataType = 'array';
-    /**
-     * Continuation token to fetch the next page of data.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * ErrorIssues that were found.
-     *
-     * @param GooglePlayDeveloperReportingV1beta1ErrorIssue[] $errorIssues
-     */
-    public function setErrorIssues($errorIssues)
+namespace Google\Service\Playdeveloperreporting {
+    class GooglePlayDeveloperReportingV1beta1SearchErrorIssuesResponse extends \Google\Collection
     {
+        protected $collection_key = 'errorIssues';
+        protected $errorIssuesType = GooglePlayDeveloperReportingV1beta1ErrorIssue::class;
+        protected $errorIssuesDataType = 'array';
+        /**
+         * Continuation token to fetch the next page of data.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * ErrorIssues that were found.
+         *
+         * @param GooglePlayDeveloperReportingV1beta1ErrorIssue[] $errorIssues
+         */
+        public function setErrorIssues($errorIssues)
+        {
+        }
+        /**
+         * @return GooglePlayDeveloperReportingV1beta1ErrorIssue[]
+         */
+        public function getErrorIssues()
+        {
+        }
+        /**
+         * Continuation token to fetch the next page of data.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePlayDeveloperReportingV1beta1ErrorIssue[]
+     * Runtime class alias of \Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1SearchErrorIssuesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrorIssues()
-    {
-    }
-    /**
-     * Continuation token to fetch the next page of data.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Playdeveloperreporting_GooglePlayDeveloperReportingV1beta1SearchErrorIssuesResponse extends \Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1SearchErrorIssuesResponse
     {
     }
 }

@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Genomics;
-
-class Status extends \Google\Collection
-{
-    protected $collection_key = 'details';
-    /**
-     * @var int
-     */
-    public $code;
-    /**
-     * @var array[]
-     */
-    public $details;
-    /**
-     * @var string
-     */
-    public $message;
-    /**
-     * @param int
-     */
-    public function setCode($code)
+namespace Google\Service\Genomics {
+    class Status extends \Google\Collection
     {
+        protected $collection_key = 'details';
+        /**
+         * @var int
+         */
+        public $code;
+        /**
+         * @var array[]
+         */
+        public $details;
+        /**
+         * @var string
+         */
+        public $message;
+        /**
+         * @param int
+         */
+        public function setCode($code)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCode()
+        {
+        }
+        /**
+         * @param array[]
+         */
+        public function setDetails($details)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getDetails()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Genomics\Status registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCode()
-    {
-    }
-    /**
-     * @param array[]
-     */
-    public function setDetails($details)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getDetails()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMessage($message)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMessage()
+    class Google_Service_Genomics_Status extends \Google\Service\Genomics\Status
     {
     }
 }

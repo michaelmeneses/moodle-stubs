@@ -8,6 +8,10 @@
  */
 namespace core_comment\reportbuilder\datasource;
 
+use core\reportbuilder\local\entities\context;
+use core_reportbuilder\datasource;
+use core_reportbuilder\local\entities\user;
+use core_comment\reportbuilder\local\entities\comment;
 /**
  * Comments datasource
  *

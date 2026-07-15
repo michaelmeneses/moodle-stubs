@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class BigQueryDestination extends \Google\Model
-{
-    /**
-     * Required. The relative resource name of the destination dataset, in the
-     * form projects/{projectId}/datasets/{datasetId}.
-     *
-     * @var string
-     */
-    public $dataset;
-    /**
-     * Required. The relative resource name of the destination dataset, in the
-     * form projects/{projectId}/datasets/{datasetId}.
-     *
-     * @param string $dataset
-     */
-    public function setDataset($dataset)
+namespace Google\Service\SecurityCommandCenter {
+    class BigQueryDestination extends \Google\Model
     {
+        /**
+         * Required. The relative resource name of the destination dataset, in the
+         * form projects/{projectId}/datasets/{datasetId}.
+         *
+         * @var string
+         */
+        public $dataset;
+        /**
+         * Required. The relative resource name of the destination dataset, in the
+         * form projects/{projectId}/datasets/{datasetId}.
+         *
+         * @param string $dataset
+         */
+        public function setDataset($dataset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataset()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\BigQueryDestination registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataset()
+    class Google_Service_SecurityCommandCenter_BigQueryDestination extends \Google\Service\SecurityCommandCenter\BigQueryDestination
     {
     }
 }

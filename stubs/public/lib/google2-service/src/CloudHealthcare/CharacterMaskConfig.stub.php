@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class CharacterMaskConfig extends \Google\Model
-{
-    /**
-     * Optional. Character to mask the sensitive values. If not supplied, defaults
-     * to "*".
-     *
-     * @var string
-     */
-    public $maskingCharacter;
-    /**
-     * Optional. Character to mask the sensitive values. If not supplied, defaults
-     * to "*".
-     *
-     * @param string $maskingCharacter
-     */
-    public function setMaskingCharacter($maskingCharacter)
+namespace Google\Service\CloudHealthcare {
+    class CharacterMaskConfig extends \Google\Model
     {
+        /**
+         * Optional. Character to mask the sensitive values. If not supplied, defaults
+         * to "*".
+         *
+         * @var string
+         */
+        public $maskingCharacter;
+        /**
+         * Optional. Character to mask the sensitive values. If not supplied, defaults
+         * to "*".
+         *
+         * @param string $maskingCharacter
+         */
+        public function setMaskingCharacter($maskingCharacter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaskingCharacter()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudHealthcare\CharacterMaskConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaskingCharacter()
+    class Google_Service_CloudHealthcare_CharacterMaskConfig extends \Google\Service\CloudHealthcare\CharacterMaskConfig
     {
     }
 }

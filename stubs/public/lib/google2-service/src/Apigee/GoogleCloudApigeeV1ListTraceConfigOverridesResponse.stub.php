@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1ListTraceConfigOverridesResponse extends \Google\Collection
-{
-    protected $collection_key = 'traceConfigOverrides';
-    /**
-     * Token value that can be passed as `page_token` to retrieve the next page of
-     * content.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $traceConfigOverridesType = GoogleCloudApigeeV1TraceConfigOverride::class;
-    protected $traceConfigOverridesDataType = 'array';
-    /**
-     * Token value that can be passed as `page_token` to retrieve the next page of
-     * content.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1ListTraceConfigOverridesResponse extends \Google\Collection
     {
+        protected $collection_key = 'traceConfigOverrides';
+        /**
+         * Token value that can be passed as `page_token` to retrieve the next page of
+         * content.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $traceConfigOverridesType = GoogleCloudApigeeV1TraceConfigOverride::class;
+        protected $traceConfigOverridesDataType = 'array';
+        /**
+         * Token value that can be passed as `page_token` to retrieve the next page of
+         * content.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * List all trace configuration overrides in an environment.
+         *
+         * @param GoogleCloudApigeeV1TraceConfigOverride[] $traceConfigOverrides
+         */
+        public function setTraceConfigOverrides($traceConfigOverrides)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1TraceConfigOverride[]
+         */
+        public function getTraceConfigOverrides()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1ListTraceConfigOverridesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * List all trace configuration overrides in an environment.
-     *
-     * @param GoogleCloudApigeeV1TraceConfigOverride[] $traceConfigOverrides
-     */
-    public function setTraceConfigOverrides($traceConfigOverrides)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1TraceConfigOverride[]
-     */
-    public function getTraceConfigOverrides()
+    class Google_Service_Apigee_GoogleCloudApigeeV1ListTraceConfigOverridesResponse extends \Google\Service\Apigee\GoogleCloudApigeeV1ListTraceConfigOverridesResponse
     {
     }
 }

@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1PipelineTaskExecutorDetailCustomJobDetail extends \Google\Collection
-{
-    protected $collection_key = 'failedJobs';
-    /**
-     * Output only. The names of the previously failed CustomJob. The list
-     * includes the all attempts in chronological order.
-     *
-     * @var string[]
-     */
-    public $failedJobs;
-    /**
-     * Output only. The name of the CustomJob.
-     *
-     * @var string
-     */
-    public $job;
-    /**
-     * Output only. The names of the previously failed CustomJob. The list
-     * includes the all attempts in chronological order.
-     *
-     * @param string[] $failedJobs
-     */
-    public function setFailedJobs($failedJobs)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1PipelineTaskExecutorDetailCustomJobDetail extends \Google\Collection
     {
+        protected $collection_key = 'failedJobs';
+        /**
+         * Output only. The names of the previously failed CustomJob. The list
+         * includes the all attempts in chronological order.
+         *
+         * @var string[]
+         */
+        public $failedJobs;
+        /**
+         * Output only. The name of the CustomJob.
+         *
+         * @var string
+         */
+        public $job;
+        /**
+         * Output only. The names of the previously failed CustomJob. The list
+         * includes the all attempts in chronological order.
+         *
+         * @param string[] $failedJobs
+         */
+        public function setFailedJobs($failedJobs)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getFailedJobs()
+        {
+        }
+        /**
+         * Output only. The name of the CustomJob.
+         *
+         * @param string $job
+         */
+        public function setJob($job)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getJob()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1PipelineTaskExecutorDetailCustomJobDetail registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFailedJobs()
-    {
-    }
-    /**
-     * Output only. The name of the CustomJob.
-     *
-     * @param string $job
-     */
-    public function setJob($job)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getJob()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1PipelineTaskExecutorDetailCustomJobDetail extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1PipelineTaskExecutorDetailCustomJobDetail
     {
     }
 }

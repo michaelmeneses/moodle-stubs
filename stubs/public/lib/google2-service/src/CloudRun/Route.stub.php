@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class Route extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $apiVersion;
-    /**
-     * @var string
-     */
-    public $kind;
-    protected $metadataType = ObjectMeta::class;
-    protected $metadataDataType = '';
-    protected $specType = RouteSpec::class;
-    protected $specDataType = '';
-    protected $statusType = RouteStatus::class;
-    protected $statusDataType = '';
-    /**
-     * @param string
-     */
-    public function setApiVersion($apiVersion)
+namespace Google\Service\CloudRun {
+    class Route extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $apiVersion;
+        /**
+         * @var string
+         */
+        public $kind;
+        protected $metadataType = ObjectMeta::class;
+        protected $metadataDataType = '';
+        protected $specType = RouteSpec::class;
+        protected $specDataType = '';
+        protected $statusType = RouteStatus::class;
+        protected $statusDataType = '';
+        /**
+         * @param string
+         */
+        public function setApiVersion($apiVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApiVersion()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * @param ObjectMeta
+         */
+        public function setMetadata(ObjectMeta $metadata)
+        {
+        }
+        /**
+         * @return ObjectMeta
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * @param RouteSpec
+         */
+        public function setSpec(RouteSpec $spec)
+        {
+        }
+        /**
+         * @return RouteSpec
+         */
+        public function getSpec()
+        {
+        }
+        /**
+         * @param RouteStatus
+         */
+        public function setStatus(RouteStatus $status)
+        {
+        }
+        /**
+         * @return RouteStatus
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRun\Route registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiVersion()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * @param ObjectMeta
-     */
-    public function setMetadata(ObjectMeta $metadata)
-    {
-    }
-    /**
-     * @return ObjectMeta
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * @param RouteSpec
-     */
-    public function setSpec(RouteSpec $spec)
-    {
-    }
-    /**
-     * @return RouteSpec
-     */
-    public function getSpec()
-    {
-    }
-    /**
-     * @param RouteStatus
-     */
-    public function setStatus(RouteStatus $status)
-    {
-    }
-    /**
-     * @return RouteStatus
-     */
-    public function getStatus()
+    class Google_Service_CloudRun_Route extends \Google\Service\CloudRun\Route
     {
     }
 }

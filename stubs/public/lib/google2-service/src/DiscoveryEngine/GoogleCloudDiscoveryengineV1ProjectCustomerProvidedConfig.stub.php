@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1ProjectCustomerProvidedConfig extends \Google\Model
-{
-    protected $notebooklmConfigType = GoogleCloudDiscoveryengineV1ProjectCustomerProvidedConfigNotebooklmConfig::class;
-    protected $notebooklmConfigDataType = '';
-    /**
-     * Optional. Configuration for NotebookLM settings.
-     *
-     * @param GoogleCloudDiscoveryengineV1ProjectCustomerProvidedConfigNotebooklmConfig $notebooklmConfig
-     */
-    public function setNotebooklmConfig(GoogleCloudDiscoveryengineV1ProjectCustomerProvidedConfigNotebooklmConfig $notebooklmConfig)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1ProjectCustomerProvidedConfig extends \Google\Model
     {
+        protected $notebooklmConfigType = GoogleCloudDiscoveryengineV1ProjectCustomerProvidedConfigNotebooklmConfig::class;
+        protected $notebooklmConfigDataType = '';
+        /**
+         * Optional. Configuration for NotebookLM settings.
+         *
+         * @param GoogleCloudDiscoveryengineV1ProjectCustomerProvidedConfigNotebooklmConfig $notebooklmConfig
+         */
+        public function setNotebooklmConfig(GoogleCloudDiscoveryengineV1ProjectCustomerProvidedConfigNotebooklmConfig $notebooklmConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1ProjectCustomerProvidedConfigNotebooklmConfig
+         */
+        public function getNotebooklmConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1ProjectCustomerProvidedConfigNotebooklmConfig
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ProjectCustomerProvidedConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNotebooklmConfig()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1ProjectCustomerProvidedConfig extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ProjectCustomerProvidedConfig
     {
     }
 }

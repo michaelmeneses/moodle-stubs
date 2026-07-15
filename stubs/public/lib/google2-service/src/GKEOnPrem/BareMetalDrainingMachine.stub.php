@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class BareMetalDrainingMachine extends \Google\Model
-{
-    /**
-     * Draining machine IP address.
-     *
-     * @var string
-     */
-    public $nodeIp;
-    /**
-     * The count of pods yet to drain.
-     *
-     * @var int
-     */
-    public $podCount;
-    /**
-     * Draining machine IP address.
-     *
-     * @param string $nodeIp
-     */
-    public function setNodeIp($nodeIp)
+namespace Google\Service\GKEOnPrem {
+    class BareMetalDrainingMachine extends \Google\Model
     {
+        /**
+         * Draining machine IP address.
+         *
+         * @var string
+         */
+        public $nodeIp;
+        /**
+         * The count of pods yet to drain.
+         *
+         * @var int
+         */
+        public $podCount;
+        /**
+         * Draining machine IP address.
+         *
+         * @param string $nodeIp
+         */
+        public function setNodeIp($nodeIp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNodeIp()
+        {
+        }
+        /**
+         * The count of pods yet to drain.
+         *
+         * @param int $podCount
+         */
+        public function setPodCount($podCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPodCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEOnPrem\BareMetalDrainingMachine registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNodeIp()
-    {
-    }
-    /**
-     * The count of pods yet to drain.
-     *
-     * @param int $podCount
-     */
-    public function setPodCount($podCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPodCount()
+    class Google_Service_GKEOnPrem_BareMetalDrainingMachine extends \Google\Service\GKEOnPrem\BareMetalDrainingMachine
     {
     }
 }

@@ -21,94 +21,103 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1IngestConversationsMetadataIngestConversationsStats extends \Google\Model
-{
-    /**
-     * Output only. The number of objects skipped because another conversation
-     * with the same transcript uri had already been ingested.
-     *
-     * @var int
-     */
-    public $duplicatesSkippedCount;
-    /**
-     * Output only. The number of objects which were unable to be ingested due to
-     * errors. The errors are populated in the partial_errors field.
-     *
-     * @var int
-     */
-    public $failedIngestCount;
-    /**
-     * Output only. The number of objects processed during the ingest operation.
-     *
-     * @var int
-     */
-    public $processedObjectCount;
-    /**
-     * Output only. The number of new conversations added during this ingest
-     * operation.
-     *
-     * @var int
-     */
-    public $successfulIngestCount;
-    /**
-     * Output only. The number of objects skipped because another conversation
-     * with the same transcript uri had already been ingested.
-     *
-     * @param int $duplicatesSkippedCount
-     */
-    public function setDuplicatesSkippedCount($duplicatesSkippedCount)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1IngestConversationsMetadataIngestConversationsStats extends \Google\Model
     {
+        /**
+         * Output only. The number of objects skipped because another conversation
+         * with the same transcript uri had already been ingested.
+         *
+         * @var int
+         */
+        public $duplicatesSkippedCount;
+        /**
+         * Output only. The number of objects which were unable to be ingested due to
+         * errors. The errors are populated in the partial_errors field.
+         *
+         * @var int
+         */
+        public $failedIngestCount;
+        /**
+         * Output only. The number of objects processed during the ingest operation.
+         *
+         * @var int
+         */
+        public $processedObjectCount;
+        /**
+         * Output only. The number of new conversations added during this ingest
+         * operation.
+         *
+         * @var int
+         */
+        public $successfulIngestCount;
+        /**
+         * Output only. The number of objects skipped because another conversation
+         * with the same transcript uri had already been ingested.
+         *
+         * @param int $duplicatesSkippedCount
+         */
+        public function setDuplicatesSkippedCount($duplicatesSkippedCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getDuplicatesSkippedCount()
+        {
+        }
+        /**
+         * Output only. The number of objects which were unable to be ingested due to
+         * errors. The errors are populated in the partial_errors field.
+         *
+         * @param int $failedIngestCount
+         */
+        public function setFailedIngestCount($failedIngestCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getFailedIngestCount()
+        {
+        }
+        /**
+         * Output only. The number of objects processed during the ingest operation.
+         *
+         * @param int $processedObjectCount
+         */
+        public function setProcessedObjectCount($processedObjectCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getProcessedObjectCount()
+        {
+        }
+        /**
+         * Output only. The number of new conversations added during this ingest
+         * operation.
+         *
+         * @param int $successfulIngestCount
+         */
+        public function setSuccessfulIngestCount($successfulIngestCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSuccessfulIngestCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1IngestConversationsMetadataIngestConversationsStats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDuplicatesSkippedCount()
-    {
-    }
-    /**
-     * Output only. The number of objects which were unable to be ingested due to
-     * errors. The errors are populated in the partial_errors field.
-     *
-     * @param int $failedIngestCount
-     */
-    public function setFailedIngestCount($failedIngestCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getFailedIngestCount()
-    {
-    }
-    /**
-     * Output only. The number of objects processed during the ingest operation.
-     *
-     * @param int $processedObjectCount
-     */
-    public function setProcessedObjectCount($processedObjectCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getProcessedObjectCount()
-    {
-    }
-    /**
-     * Output only. The number of new conversations added during this ingest
-     * operation.
-     *
-     * @param int $successfulIngestCount
-     */
-    public function setSuccessfulIngestCount($successfulIngestCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSuccessfulIngestCount()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1IngestConversationsMetadataIngestConversationsStats extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1IngestConversationsMetadataIngestConversationsStats
     {
     }
 }

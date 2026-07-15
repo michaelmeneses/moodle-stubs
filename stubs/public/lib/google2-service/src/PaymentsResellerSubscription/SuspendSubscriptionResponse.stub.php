@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PaymentsResellerSubscription;
-
-class SuspendSubscriptionResponse extends \Google\Model
-{
-    protected $subscriptionType = Subscription::class;
-    protected $subscriptionDataType = '';
-    /**
-     * The suspended subscription resource.
-     *
-     * @param Subscription $subscription
-     */
-    public function setSubscription(Subscription $subscription)
+namespace Google\Service\PaymentsResellerSubscription {
+    class SuspendSubscriptionResponse extends \Google\Model
     {
+        protected $subscriptionType = Subscription::class;
+        protected $subscriptionDataType = '';
+        /**
+         * The suspended subscription resource.
+         *
+         * @param Subscription $subscription
+         */
+        public function setSubscription(Subscription $subscription)
+        {
+        }
+        /**
+         * @return Subscription
+         */
+        public function getSubscription()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Subscription
+     * Runtime class alias of \Google\Service\PaymentsResellerSubscription\SuspendSubscriptionResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSubscription()
+    class Google_Service_PaymentsResellerSubscription_SuspendSubscriptionResponse extends \Google\Service\PaymentsResellerSubscription\SuspendSubscriptionResponse
     {
     }
 }

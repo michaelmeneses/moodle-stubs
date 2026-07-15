@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics;
-
-class WebpropertyParentLink extends \Google\Model
-{
-    /**
-     * Link to the account for this web property.
-     *
-     * @var string
-     */
-    public $href;
-    /**
-     * Type of the parent link. Its value is "analytics#account".
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Link to the account for this web property.
-     *
-     * @param string $href
-     */
-    public function setHref($href)
+namespace Google\Service\Analytics {
+    class WebpropertyParentLink extends \Google\Model
     {
+        /**
+         * Link to the account for this web property.
+         *
+         * @var string
+         */
+        public $href;
+        /**
+         * Type of the parent link. Its value is "analytics#account".
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Link to the account for this web property.
+         *
+         * @param string $href
+         */
+        public function setHref($href)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHref()
+        {
+        }
+        /**
+         * Type of the parent link. Its value is "analytics#account".
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Analytics\WebpropertyParentLink registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHref()
-    {
-    }
-    /**
-     * Type of the parent link. Its value is "analytics#account".
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_Analytics_WebpropertyParentLink extends \Google\Service\Analytics\WebpropertyParentLink
     {
     }
 }

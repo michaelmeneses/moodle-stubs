@@ -21,59 +21,68 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PolyService;
-
-class ListAssetsResponse extends \Google\Collection
-{
-    protected $collection_key = 'assets';
-    /**
-     * @var Asset[]
-     */
-    public $assets;
-    protected $assetsType = Asset::class;
-    protected $assetsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * @var int
-     */
-    public $totalSize;
-    /**
-     * @param Asset[]
-     */
-    public function setAssets($assets)
+namespace Google\Service\PolyService {
+    class ListAssetsResponse extends \Google\Collection
     {
+        protected $collection_key = 'assets';
+        /**
+         * @var Asset[]
+         */
+        public $assets;
+        protected $assetsType = Asset::class;
+        protected $assetsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * @var int
+         */
+        public $totalSize;
+        /**
+         * @param Asset[]
+         */
+        public function setAssets($assets)
+        {
+        }
+        /**
+         * @return Asset[]
+         */
+        public function getAssets()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setTotalSize($totalSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalSize()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Asset[]
+     * Runtime class alias of \Google\Service\PolyService\ListAssetsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssets()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setTotalSize($totalSize)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalSize()
+    class Google_Service_PolyService_ListAssetsResponse extends \Google\Service\PolyService\ListAssetsResponse
     {
     }
 }

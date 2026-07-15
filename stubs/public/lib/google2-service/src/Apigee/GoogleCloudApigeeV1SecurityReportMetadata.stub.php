@@ -21,131 +21,140 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1SecurityReportMetadata extends \Google\Collection
-{
-    protected $collection_key = 'metrics';
-    /**
-     * Dimensions of the SecurityReport.
-     *
-     * @var string[]
-     */
-    public $dimensions;
-    /**
-     * End timestamp of the query range.
-     *
-     * @var string
-     */
-    public $endTimestamp;
-    /**
-     * Metrics of the SecurityReport. Example:
-     * ["name:bot_count,func:sum,alias:sum_bot_count"]
-     *
-     * @var string[]
-     */
-    public $metrics;
-    /**
-     * MIME type / Output format.
-     *
-     * @var string
-     */
-    public $mimeType;
-    /**
-     * Start timestamp of the query range.
-     *
-     * @var string
-     */
-    public $startTimestamp;
-    /**
-     * Query GroupBy time unit. Example: "seconds", "minute", "hour"
-     *
-     * @var string
-     */
-    public $timeUnit;
-    /**
-     * Dimensions of the SecurityReport.
-     *
-     * @param string[] $dimensions
-     */
-    public function setDimensions($dimensions)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1SecurityReportMetadata extends \Google\Collection
     {
+        protected $collection_key = 'metrics';
+        /**
+         * Dimensions of the SecurityReport.
+         *
+         * @var string[]
+         */
+        public $dimensions;
+        /**
+         * End timestamp of the query range.
+         *
+         * @var string
+         */
+        public $endTimestamp;
+        /**
+         * Metrics of the SecurityReport. Example:
+         * ["name:bot_count,func:sum,alias:sum_bot_count"]
+         *
+         * @var string[]
+         */
+        public $metrics;
+        /**
+         * MIME type / Output format.
+         *
+         * @var string
+         */
+        public $mimeType;
+        /**
+         * Start timestamp of the query range.
+         *
+         * @var string
+         */
+        public $startTimestamp;
+        /**
+         * Query GroupBy time unit. Example: "seconds", "minute", "hour"
+         *
+         * @var string
+         */
+        public $timeUnit;
+        /**
+         * Dimensions of the SecurityReport.
+         *
+         * @param string[] $dimensions
+         */
+        public function setDimensions($dimensions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDimensions()
+        {
+        }
+        /**
+         * End timestamp of the query range.
+         *
+         * @param string $endTimestamp
+         */
+        public function setEndTimestamp($endTimestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTimestamp()
+        {
+        }
+        /**
+         * Metrics of the SecurityReport. Example:
+         * ["name:bot_count,func:sum,alias:sum_bot_count"]
+         *
+         * @param string[] $metrics
+         */
+        public function setMetrics($metrics)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMetrics()
+        {
+        }
+        /**
+         * MIME type / Output format.
+         *
+         * @param string $mimeType
+         */
+        public function setMimeType($mimeType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMimeType()
+        {
+        }
+        /**
+         * Start timestamp of the query range.
+         *
+         * @param string $startTimestamp
+         */
+        public function setStartTimestamp($startTimestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTimestamp()
+        {
+        }
+        /**
+         * Query GroupBy time unit. Example: "seconds", "minute", "hour"
+         *
+         * @param string $timeUnit
+         */
+        public function setTimeUnit($timeUnit)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimeUnit()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1SecurityReportMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDimensions()
-    {
-    }
-    /**
-     * End timestamp of the query range.
-     *
-     * @param string $endTimestamp
-     */
-    public function setEndTimestamp($endTimestamp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndTimestamp()
-    {
-    }
-    /**
-     * Metrics of the SecurityReport. Example:
-     * ["name:bot_count,func:sum,alias:sum_bot_count"]
-     *
-     * @param string[] $metrics
-     */
-    public function setMetrics($metrics)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getMetrics()
-    {
-    }
-    /**
-     * MIME type / Output format.
-     *
-     * @param string $mimeType
-     */
-    public function setMimeType($mimeType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMimeType()
-    {
-    }
-    /**
-     * Start timestamp of the query range.
-     *
-     * @param string $startTimestamp
-     */
-    public function setStartTimestamp($startTimestamp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTimestamp()
-    {
-    }
-    /**
-     * Query GroupBy time unit. Example: "seconds", "minute", "hour"
-     *
-     * @param string $timeUnit
-     */
-    public function setTimeUnit($timeUnit)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimeUnit()
+    class Google_Service_Apigee_GoogleCloudApigeeV1SecurityReportMetadata extends \Google\Service\Apigee\GoogleCloudApigeeV1SecurityReportMetadata
     {
     }
 }

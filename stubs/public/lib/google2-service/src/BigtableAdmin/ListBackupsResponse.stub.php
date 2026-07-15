@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class ListBackupsResponse extends \Google\Collection
-{
-    protected $collection_key = 'backups';
-    protected $backupsType = Backup::class;
-    protected $backupsDataType = 'array';
-    /**
-     * `next_page_token` can be sent in a subsequent ListBackups call to fetch
-     * more of the matching backups.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of matching backups.
-     *
-     * @param Backup[] $backups
-     */
-    public function setBackups($backups)
+namespace Google\Service\BigtableAdmin {
+    class ListBackupsResponse extends \Google\Collection
     {
+        protected $collection_key = 'backups';
+        protected $backupsType = Backup::class;
+        protected $backupsDataType = 'array';
+        /**
+         * `next_page_token` can be sent in a subsequent ListBackups call to fetch
+         * more of the matching backups.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of matching backups.
+         *
+         * @param Backup[] $backups
+         */
+        public function setBackups($backups)
+        {
+        }
+        /**
+         * @return Backup[]
+         */
+        public function getBackups()
+        {
+        }
+        /**
+         * `next_page_token` can be sent in a subsequent ListBackups call to fetch
+         * more of the matching backups.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Backup[]
+     * Runtime class alias of \Google\Service\BigtableAdmin\ListBackupsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackups()
-    {
-    }
-    /**
-     * `next_page_token` can be sent in a subsequent ListBackups call to fetch
-     * more of the matching backups.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_BigtableAdmin_ListBackupsResponse extends \Google\Service\BigtableAdmin\ListBackupsResponse
     {
     }
 }

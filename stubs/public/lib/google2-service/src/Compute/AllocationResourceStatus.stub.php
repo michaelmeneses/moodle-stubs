@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class AllocationResourceStatus extends \Google\Model
-{
-    protected $healthInfoType = AllocationResourceStatusHealthInfo::class;
-    protected $healthInfoDataType = '';
-    /**
-     * The number of reservation blocks associated with this reservation.
-     *
-     * @var int
-     */
-    public $reservationBlockCount;
-    protected $reservationMaintenanceType = GroupMaintenanceInfo::class;
-    protected $reservationMaintenanceDataType = '';
-    protected $specificSkuAllocationType = AllocationResourceStatusSpecificSKUAllocation::class;
-    protected $specificSkuAllocationDataType = '';
-    /**
-     * [Output only] Health information for the reservation.
-     *
-     * @param AllocationResourceStatusHealthInfo $healthInfo
-     */
-    public function setHealthInfo(AllocationResourceStatusHealthInfo $healthInfo)
+namespace Google\Service\Compute {
+    class AllocationResourceStatus extends \Google\Model
     {
+        protected $healthInfoType = AllocationResourceStatusHealthInfo::class;
+        protected $healthInfoDataType = '';
+        /**
+         * The number of reservation blocks associated with this reservation.
+         *
+         * @var int
+         */
+        public $reservationBlockCount;
+        protected $reservationMaintenanceType = GroupMaintenanceInfo::class;
+        protected $reservationMaintenanceDataType = '';
+        protected $specificSkuAllocationType = AllocationResourceStatusSpecificSKUAllocation::class;
+        protected $specificSkuAllocationDataType = '';
+        /**
+         * [Output only] Health information for the reservation.
+         *
+         * @param AllocationResourceStatusHealthInfo $healthInfo
+         */
+        public function setHealthInfo(AllocationResourceStatusHealthInfo $healthInfo)
+        {
+        }
+        /**
+         * @return AllocationResourceStatusHealthInfo
+         */
+        public function getHealthInfo()
+        {
+        }
+        /**
+         * The number of reservation blocks associated with this reservation.
+         *
+         * @param int $reservationBlockCount
+         */
+        public function setReservationBlockCount($reservationBlockCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getReservationBlockCount()
+        {
+        }
+        /**
+         * Maintenance information for this reservation
+         *
+         * @param GroupMaintenanceInfo $reservationMaintenance
+         */
+        public function setReservationMaintenance(GroupMaintenanceInfo $reservationMaintenance)
+        {
+        }
+        /**
+         * @return GroupMaintenanceInfo
+         */
+        public function getReservationMaintenance()
+        {
+        }
+        /**
+         * Allocation Properties of this reservation.
+         *
+         * @param AllocationResourceStatusSpecificSKUAllocation $specificSkuAllocation
+         */
+        public function setSpecificSkuAllocation(AllocationResourceStatusSpecificSKUAllocation $specificSkuAllocation)
+        {
+        }
+        /**
+         * @return AllocationResourceStatusSpecificSKUAllocation
+         */
+        public function getSpecificSkuAllocation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AllocationResourceStatusHealthInfo
+     * Runtime class alias of \Google\Service\Compute\AllocationResourceStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHealthInfo()
-    {
-    }
-    /**
-     * The number of reservation blocks associated with this reservation.
-     *
-     * @param int $reservationBlockCount
-     */
-    public function setReservationBlockCount($reservationBlockCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getReservationBlockCount()
-    {
-    }
-    /**
-     * Maintenance information for this reservation
-     *
-     * @param GroupMaintenanceInfo $reservationMaintenance
-     */
-    public function setReservationMaintenance(GroupMaintenanceInfo $reservationMaintenance)
-    {
-    }
-    /**
-     * @return GroupMaintenanceInfo
-     */
-    public function getReservationMaintenance()
-    {
-    }
-    /**
-     * Allocation Properties of this reservation.
-     *
-     * @param AllocationResourceStatusSpecificSKUAllocation $specificSkuAllocation
-     */
-    public function setSpecificSkuAllocation(AllocationResourceStatusSpecificSKUAllocation $specificSkuAllocation)
-    {
-    }
-    /**
-     * @return AllocationResourceStatusSpecificSKUAllocation
-     */
-    public function getSpecificSkuAllocation()
+    class Google_Service_Compute_AllocationResourceStatus extends \Google\Service\Compute\AllocationResourceStatus
     {
     }
 }

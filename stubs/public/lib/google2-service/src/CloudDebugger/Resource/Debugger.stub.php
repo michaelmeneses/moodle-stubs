@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDebugger\Resource;
-
-/**
- * The "debugger" collection of methods.
- * Typical usage is:
- *  <code>
- *   $clouddebuggerService = new Google\Service\CloudDebugger(...);
- *   $debugger = $clouddebuggerService->debugger;
- *  </code>
- */
-class Debugger extends \Google\Service\Resource
-{
+namespace Google\Service\CloudDebugger\Resource {
+    /**
+     * The "debugger" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $clouddebuggerService = new Google\Service\CloudDebugger(...);
+     *   $debugger = $clouddebuggerService->debugger;
+     *  </code>
+     */
+    class Debugger extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudDebugger\Resource\Debugger registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudDebugger_Resource_Debugger extends \Google\Service\CloudDebugger\Resource\Debugger
+    {
+    }
 }

@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class MergeTableCellsRequest extends \Google\Model
-{
-    protected $tableRangeType = TableRange::class;
-    protected $tableRangeDataType = '';
-    /**
-     * The table range specifying which cells of the table to merge. Any text in
-     * the cells being merged will be concatenated and stored in the "head" cell
-     * of the range. This is the upper-left cell of the range when the content
-     * direction is left to right, and the upper-right cell of the range
-     * otherwise. If the range is non-rectangular (which can occur in some cases
-     * where the range covers cells that are already merged or where the table is
-     * non-rectangular), a 400 bad request error is returned.
-     *
-     * @param TableRange $tableRange
-     */
-    public function setTableRange(TableRange $tableRange)
+namespace Google\Service\Docs {
+    class MergeTableCellsRequest extends \Google\Model
     {
+        protected $tableRangeType = TableRange::class;
+        protected $tableRangeDataType = '';
+        /**
+         * The table range specifying which cells of the table to merge. Any text in
+         * the cells being merged will be concatenated and stored in the "head" cell
+         * of the range. This is the upper-left cell of the range when the content
+         * direction is left to right, and the upper-right cell of the range
+         * otherwise. If the range is non-rectangular (which can occur in some cases
+         * where the range covers cells that are already merged or where the table is
+         * non-rectangular), a 400 bad request error is returned.
+         *
+         * @param TableRange $tableRange
+         */
+        public function setTableRange(TableRange $tableRange)
+        {
+        }
+        /**
+         * @return TableRange
+         */
+        public function getTableRange()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TableRange
+     * Runtime class alias of \Google\Service\Docs\MergeTableCellsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTableRange()
+    class Google_Service_Docs_MergeTableCellsRequest extends \Google\Service\Docs\MergeTableCellsRequest
     {
     }
 }

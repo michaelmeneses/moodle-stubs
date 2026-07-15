@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_customfield;
 
+use backup_nested_element;
+use core\exception\coding_exception;
+use core_customfield\output\field_data;
+use stdClass;
 /**
  * The abstract custom fields handler
  *

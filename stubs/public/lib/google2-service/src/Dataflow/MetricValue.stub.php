@@ -21,100 +21,109 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class MetricValue extends \Google\Model
-{
-    /**
-     * Base name for this metric.
-     *
-     * @var string
-     */
-    public $metric;
-    /**
-     * Optional. Set of metric labels for this metric.
-     *
-     * @var string[]
-     */
-    public $metricLabels;
-    protected $valueGauge64Type = DataflowGaugeValue::class;
-    protected $valueGauge64DataType = '';
-    protected $valueHistogramType = DataflowHistogramValue::class;
-    protected $valueHistogramDataType = '';
-    /**
-     * Integer value of this metric.
-     *
-     * @var string
-     */
-    public $valueInt64;
-    /**
-     * Base name for this metric.
-     *
-     * @param string $metric
-     */
-    public function setMetric($metric)
+namespace Google\Service\Dataflow {
+    class MetricValue extends \Google\Model
     {
+        /**
+         * Base name for this metric.
+         *
+         * @var string
+         */
+        public $metric;
+        /**
+         * Optional. Set of metric labels for this metric.
+         *
+         * @var string[]
+         */
+        public $metricLabels;
+        protected $valueGauge64Type = DataflowGaugeValue::class;
+        protected $valueGauge64DataType = '';
+        protected $valueHistogramType = DataflowHistogramValue::class;
+        protected $valueHistogramDataType = '';
+        /**
+         * Integer value of this metric.
+         *
+         * @var string
+         */
+        public $valueInt64;
+        /**
+         * Base name for this metric.
+         *
+         * @param string $metric
+         */
+        public function setMetric($metric)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMetric()
+        {
+        }
+        /**
+         * Optional. Set of metric labels for this metric.
+         *
+         * @param string[] $metricLabels
+         */
+        public function setMetricLabels($metricLabels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMetricLabels()
+        {
+        }
+        /**
+         * Non-cumulative int64 value of this metric.
+         *
+         * @param DataflowGaugeValue $valueGauge64
+         */
+        public function setValueGauge64(DataflowGaugeValue $valueGauge64)
+        {
+        }
+        /**
+         * @return DataflowGaugeValue
+         */
+        public function getValueGauge64()
+        {
+        }
+        /**
+         * Histogram value of this metric.
+         *
+         * @param DataflowHistogramValue $valueHistogram
+         */
+        public function setValueHistogram(DataflowHistogramValue $valueHistogram)
+        {
+        }
+        /**
+         * @return DataflowHistogramValue
+         */
+        public function getValueHistogram()
+        {
+        }
+        /**
+         * Integer value of this metric.
+         *
+         * @param string $valueInt64
+         */
+        public function setValueInt64($valueInt64)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValueInt64()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataflow\MetricValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetric()
-    {
-    }
-    /**
-     * Optional. Set of metric labels for this metric.
-     *
-     * @param string[] $metricLabels
-     */
-    public function setMetricLabels($metricLabels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getMetricLabels()
-    {
-    }
-    /**
-     * Non-cumulative int64 value of this metric.
-     *
-     * @param DataflowGaugeValue $valueGauge64
-     */
-    public function setValueGauge64(DataflowGaugeValue $valueGauge64)
-    {
-    }
-    /**
-     * @return DataflowGaugeValue
-     */
-    public function getValueGauge64()
-    {
-    }
-    /**
-     * Histogram value of this metric.
-     *
-     * @param DataflowHistogramValue $valueHistogram
-     */
-    public function setValueHistogram(DataflowHistogramValue $valueHistogram)
-    {
-    }
-    /**
-     * @return DataflowHistogramValue
-     */
-    public function getValueHistogram()
-    {
-    }
-    /**
-     * Integer value of this metric.
-     *
-     * @param string $valueInt64
-     */
-    public function setValueInt64($valueInt64)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValueInt64()
+    class Google_Service_Dataflow_MetricValue extends \Google\Service\Dataflow\MetricValue
     {
     }
 }

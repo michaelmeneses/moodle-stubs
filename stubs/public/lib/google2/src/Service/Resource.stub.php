@@ -23,6 +23,11 @@
  */
 namespace Google\Service;
 
+use Google\Exception as GoogleException;
+use Google\Http\MediaFileUpload;
+use Google\Model;
+use Google\Utils\UriTemplate;
+use GuzzleHttp\Psr7\Request;
 /**
  * Implements the actual methods/resources of the discovered Google API using magic function
  * calling overloading (__call()), which on call will see if the method name (plus.activities.list)

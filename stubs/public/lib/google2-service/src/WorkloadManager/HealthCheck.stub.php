@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager;
-
-class HealthCheck extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $message;
-    /**
-     * @var string
-     */
-    public $metric;
-    protected $resourceType = CloudResource::class;
-    protected $resourceDataType = '';
-    /**
-     * @var string
-     */
-    public $source;
-    /**
-     * @var string
-     */
-    public $state;
-    /**
-     * @param string
-     */
-    public function setMessage($message)
+namespace Google\Service\WorkloadManager {
+    class HealthCheck extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $message;
+        /**
+         * @var string
+         */
+        public $metric;
+        protected $resourceType = CloudResource::class;
+        protected $resourceDataType = '';
+        /**
+         * @var string
+         */
+        public $source;
+        /**
+         * @var string
+         */
+        public $state;
+        /**
+         * @param string
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMetric($metric)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMetric()
+        {
+        }
+        /**
+         * @param CloudResource
+         */
+        public function setResource(CloudResource $resource)
+        {
+        }
+        /**
+         * @return CloudResource
+         */
+        public function getResource()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSource($source)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSource()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\WorkloadManager\HealthCheck registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMessage()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMetric($metric)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMetric()
-    {
-    }
-    /**
-     * @param CloudResource
-     */
-    public function setResource(CloudResource $resource)
-    {
-    }
-    /**
-     * @return CloudResource
-     */
-    public function getResource()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSource($source)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSource()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getState()
+    class Google_Service_WorkloadManager_HealthCheck extends \Google\Service\WorkloadManager\HealthCheck
     {
     }
 }

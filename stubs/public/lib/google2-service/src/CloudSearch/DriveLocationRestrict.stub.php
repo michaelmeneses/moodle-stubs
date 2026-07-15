@@ -21,27 +21,36 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class DriveLocationRestrict extends \Google\Model
-{
-    public const TYPE_UNSPECIFIED = 'UNSPECIFIED';
-    public const TYPE_TRASHED = 'TRASHED';
-    public const TYPE_STARRED = 'STARRED';
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
+namespace Google\Service\CloudSearch {
+    class DriveLocationRestrict extends \Google\Model
     {
+        public const TYPE_UNSPECIFIED = 'UNSPECIFIED';
+        public const TYPE_TRASHED = 'TRASHED';
+        public const TYPE_STARRED = 'STARRED';
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::TYPE_*
+     * Runtime class alias of \Google\Service\CloudSearch\DriveLocationRestrict registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getType()
+    class Google_Service_CloudSearch_DriveLocationRestrict extends \Google\Service\CloudSearch\DriveLocationRestrict
     {
     }
 }

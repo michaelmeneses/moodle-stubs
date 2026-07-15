@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSupport;
-
-class SearchCaseClassificationsResponse extends \Google\Collection
-{
-    protected $collection_key = 'caseClassifications';
-    protected $caseClassificationsType = CaseClassification::class;
-    protected $caseClassificationsDataType = 'array';
-    /**
-     * A token to retrieve the next page of results. Set this in the `page_token`
-     * field of subsequent `caseClassifications.list` requests. If unspecified,
-     * there are no more results to retrieve.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The classifications retrieved.
-     *
-     * @param CaseClassification[] $caseClassifications
-     */
-    public function setCaseClassifications($caseClassifications)
+namespace Google\Service\CloudSupport {
+    class SearchCaseClassificationsResponse extends \Google\Collection
     {
+        protected $collection_key = 'caseClassifications';
+        protected $caseClassificationsType = CaseClassification::class;
+        protected $caseClassificationsDataType = 'array';
+        /**
+         * A token to retrieve the next page of results. Set this in the `page_token`
+         * field of subsequent `caseClassifications.list` requests. If unspecified,
+         * there are no more results to retrieve.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The classifications retrieved.
+         *
+         * @param CaseClassification[] $caseClassifications
+         */
+        public function setCaseClassifications($caseClassifications)
+        {
+        }
+        /**
+         * @return CaseClassification[]
+         */
+        public function getCaseClassifications()
+        {
+        }
+        /**
+         * A token to retrieve the next page of results. Set this in the `page_token`
+         * field of subsequent `caseClassifications.list` requests. If unspecified,
+         * there are no more results to retrieve.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CaseClassification[]
+     * Runtime class alias of \Google\Service\CloudSupport\SearchCaseClassificationsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCaseClassifications()
-    {
-    }
-    /**
-     * A token to retrieve the next page of results. Set this in the `page_token`
-     * field of subsequent `caseClassifications.list` requests. If unspecified,
-     * there are no more results to retrieve.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_CloudSupport_SearchCaseClassificationsResponse extends \Google\Service\CloudSupport\SearchCaseClassificationsResponse
     {
     }
 }

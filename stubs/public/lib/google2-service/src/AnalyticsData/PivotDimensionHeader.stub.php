@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsData;
-
-class PivotDimensionHeader extends \Google\Collection
-{
-    protected $collection_key = 'dimensionValues';
-    protected $dimensionValuesType = DimensionValue::class;
-    protected $dimensionValuesDataType = 'array';
-    /**
-     * Values of multiple dimensions in a pivot.
-     *
-     * @param DimensionValue[] $dimensionValues
-     */
-    public function setDimensionValues($dimensionValues)
+namespace Google\Service\AnalyticsData {
+    class PivotDimensionHeader extends \Google\Collection
     {
+        protected $collection_key = 'dimensionValues';
+        protected $dimensionValuesType = DimensionValue::class;
+        protected $dimensionValuesDataType = 'array';
+        /**
+         * Values of multiple dimensions in a pivot.
+         *
+         * @param DimensionValue[] $dimensionValues
+         */
+        public function setDimensionValues($dimensionValues)
+        {
+        }
+        /**
+         * @return DimensionValue[]
+         */
+        public function getDimensionValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DimensionValue[]
+     * Runtime class alias of \Google\Service\AnalyticsData\PivotDimensionHeader registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDimensionValues()
+    class Google_Service_AnalyticsData_PivotDimensionHeader extends \Google\Service\AnalyticsData\PivotDimensionHeader
     {
     }
 }

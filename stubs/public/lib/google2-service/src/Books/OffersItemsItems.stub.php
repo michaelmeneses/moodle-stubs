@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class OffersItemsItems extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $author;
-    /**
-     * @var string
-     */
-    public $canonicalVolumeLink;
-    /**
-     * @var string
-     */
-    public $coverUrl;
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var string
-     */
-    public $title;
-    /**
-     * @var string
-     */
-    public $volumeId;
-    /**
-     * @param string $author
-     */
-    public function setAuthor($author)
+namespace Google\Service\Books {
+    class OffersItemsItems extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $author;
+        /**
+         * @var string
+         */
+        public $canonicalVolumeLink;
+        /**
+         * @var string
+         */
+        public $coverUrl;
+        /**
+         * @var string
+         */
+        public $description;
+        /**
+         * @var string
+         */
+        public $title;
+        /**
+         * @var string
+         */
+        public $volumeId;
+        /**
+         * @param string $author
+         */
+        public function setAuthor($author)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAuthor()
+        {
+        }
+        /**
+         * @param string $canonicalVolumeLink
+         */
+        public function setCanonicalVolumeLink($canonicalVolumeLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCanonicalVolumeLink()
+        {
+        }
+        /**
+         * @param string $coverUrl
+         */
+        public function setCoverUrl($coverUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCoverUrl()
+        {
+        }
+        /**
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * @param string $volumeId
+         */
+        public function setVolumeId($volumeId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVolumeId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Books\OffersItemsItems registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuthor()
-    {
-    }
-    /**
-     * @param string $canonicalVolumeLink
-     */
-    public function setCanonicalVolumeLink($canonicalVolumeLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCanonicalVolumeLink()
-    {
-    }
-    /**
-     * @param string $coverUrl
-     */
-    public function setCoverUrl($coverUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCoverUrl()
-    {
-    }
-    /**
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
-    {
-    }
-    /**
-     * @param string $volumeId
-     */
-    public function setVolumeId($volumeId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVolumeId()
+    class Google_Service_Books_OffersItemsItems extends \Google\Service\Books\OffersItemsItems
     {
     }
 }

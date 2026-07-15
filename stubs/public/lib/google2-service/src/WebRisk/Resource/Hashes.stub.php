@@ -21,37 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WebRisk\Resource;
-
-/**
- * The "hashes" collection of methods.
- * Typical usage is:
- *  <code>
- *   $webriskService = new Google\Service\WebRisk(...);
- *   $hashes = $webriskService->hashes;
- *  </code>
- */
-class Hashes extends \Google\Service\Resource
-{
+namespace Google\Service\WebRisk\Resource {
+    use Google\Service\WebRisk\GoogleCloudWebriskV1SearchHashesResponse;
     /**
-     * Gets the full hashes that match the requested hash prefix. This is used after
-     * a hash prefix is looked up in a threatList and there is a match. The client
-     * side threatList only holds partial hashes so the client must query this
-     * method to determine if there is a full hash match of a threat.
-     * (hashes.search)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string hashPrefix A hash prefix, consisting of the most
-     * significant 4-32 bytes of a SHA256 hash. For JSON requests, this field is
-     * base64-encoded. Note that if this parameter is provided by a URI, it must be
-     * encoded using the web safe base64 variant (RFC 4648).
-     * @opt_param string threatTypes Required. The ThreatLists to search in.
-     * Multiple ThreatLists may be specified.
-     * @return GoogleCloudWebriskV1SearchHashesResponse
-     * @throws \Google\Service\Exception
+     * The "hashes" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $webriskService = new Google\Service\WebRisk(...);
+     *   $hashes = $webriskService->hashes;
+     *  </code>
      */
-    public function search($optParams = [])
+    class Hashes extends \Google\Service\Resource
+    {
+        /**
+         * Gets the full hashes that match the requested hash prefix. This is used after
+         * a hash prefix is looked up in a threatList and there is a match. The client
+         * side threatList only holds partial hashes so the client must query this
+         * method to determine if there is a full hash match of a threat.
+         * (hashes.search)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string hashPrefix A hash prefix, consisting of the most
+         * significant 4-32 bytes of a SHA256 hash. For JSON requests, this field is
+         * base64-encoded. Note that if this parameter is provided by a URI, it must be
+         * encoded using the web safe base64 variant (RFC 4648).
+         * @opt_param string threatTypes Required. The ThreatLists to search in.
+         * Multiple ThreatLists may be specified.
+         * @return GoogleCloudWebriskV1SearchHashesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function search($optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\WebRisk\Resource\Hashes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_WebRisk_Resource_Hashes extends \Google\Service\WebRisk\Resource\Hashes
     {
     }
 }

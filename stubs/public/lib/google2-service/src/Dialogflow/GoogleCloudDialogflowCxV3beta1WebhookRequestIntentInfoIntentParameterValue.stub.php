@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3beta1WebhookRequestIntentInfoIntentParameterValue extends \Google\Model
-{
-    /**
-     * Always present. Original text value extracted from user utterance.
-     *
-     * @var string
-     */
-    public $originalValue;
-    /**
-     * Always present. Structured value for the parameter extracted from user
-     * utterance.
-     *
-     * @var array
-     */
-    public $resolvedValue;
-    /**
-     * Always present. Original text value extracted from user utterance.
-     *
-     * @param string $originalValue
-     */
-    public function setOriginalValue($originalValue)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3beta1WebhookRequestIntentInfoIntentParameterValue extends \Google\Model
     {
+        /**
+         * Always present. Original text value extracted from user utterance.
+         *
+         * @var string
+         */
+        public $originalValue;
+        /**
+         * Always present. Structured value for the parameter extracted from user
+         * utterance.
+         *
+         * @var array
+         */
+        public $resolvedValue;
+        /**
+         * Always present. Original text value extracted from user utterance.
+         *
+         * @param string $originalValue
+         */
+        public function setOriginalValue($originalValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOriginalValue()
+        {
+        }
+        /**
+         * Always present. Structured value for the parameter extracted from user
+         * utterance.
+         *
+         * @param array $resolvedValue
+         */
+        public function setResolvedValue($resolvedValue)
+        {
+        }
+        /**
+         * @return array
+         */
+        public function getResolvedValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3beta1WebhookRequestIntentInfoIntentParameterValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOriginalValue()
-    {
-    }
-    /**
-     * Always present. Structured value for the parameter extracted from user
-     * utterance.
-     *
-     * @param array $resolvedValue
-     */
-    public function setResolvedValue($resolvedValue)
-    {
-    }
-    /**
-     * @return array
-     */
-    public function getResolvedValue()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3beta1WebhookRequestIntentInfoIntentParameterValue extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3beta1WebhookRequestIntentInfoIntentParameterValue
     {
     }
 }

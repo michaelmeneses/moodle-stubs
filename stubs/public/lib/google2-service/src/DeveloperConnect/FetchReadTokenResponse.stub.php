@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DeveloperConnect;
-
-class FetchReadTokenResponse extends \Google\Model
-{
-    /**
-     * Expiration timestamp. Can be empty if unknown or non-expiring.
-     *
-     * @var string
-     */
-    public $expirationTime;
-    /**
-     * The git_username to specify when making a git clone with the token. For
-     * example, for GitHub GitRepositoryLinks, this would be "x-access-token"
-     *
-     * @var string
-     */
-    public $gitUsername;
-    /**
-     * The token content.
-     *
-     * @var string
-     */
-    public $token;
-    /**
-     * Expiration timestamp. Can be empty if unknown or non-expiring.
-     *
-     * @param string $expirationTime
-     */
-    public function setExpirationTime($expirationTime)
+namespace Google\Service\DeveloperConnect {
+    class FetchReadTokenResponse extends \Google\Model
     {
+        /**
+         * Expiration timestamp. Can be empty if unknown or non-expiring.
+         *
+         * @var string
+         */
+        public $expirationTime;
+        /**
+         * The git_username to specify when making a git clone with the token. For
+         * example, for GitHub GitRepositoryLinks, this would be "x-access-token"
+         *
+         * @var string
+         */
+        public $gitUsername;
+        /**
+         * The token content.
+         *
+         * @var string
+         */
+        public $token;
+        /**
+         * Expiration timestamp. Can be empty if unknown or non-expiring.
+         *
+         * @param string $expirationTime
+         */
+        public function setExpirationTime($expirationTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpirationTime()
+        {
+        }
+        /**
+         * The git_username to specify when making a git clone with the token. For
+         * example, for GitHub GitRepositoryLinks, this would be "x-access-token"
+         *
+         * @param string $gitUsername
+         */
+        public function setGitUsername($gitUsername)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGitUsername()
+        {
+        }
+        /**
+         * The token content.
+         *
+         * @param string $token
+         */
+        public function setToken($token)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DeveloperConnect\FetchReadTokenResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExpirationTime()
-    {
-    }
-    /**
-     * The git_username to specify when making a git clone with the token. For
-     * example, for GitHub GitRepositoryLinks, this would be "x-access-token"
-     *
-     * @param string $gitUsername
-     */
-    public function setGitUsername($gitUsername)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGitUsername()
-    {
-    }
-    /**
-     * The token content.
-     *
-     * @param string $token
-     */
-    public function setToken($token)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getToken()
+    class Google_Service_DeveloperConnect_FetchReadTokenResponse extends \Google\Service\DeveloperConnect\FetchReadTokenResponse
     {
     }
 }

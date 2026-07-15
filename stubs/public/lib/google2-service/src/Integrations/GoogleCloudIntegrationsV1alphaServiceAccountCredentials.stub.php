@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaServiceAccountCredentials extends \Google\Model
-{
-    /**
-     * A space-delimited list of requested scope permissions.
-     *
-     * @var string
-     */
-    public $scope;
-    /**
-     * Name of the service account that has the permission to make the request.
-     *
-     * @var string
-     */
-    public $serviceAccount;
-    /**
-     * A space-delimited list of requested scope permissions.
-     *
-     * @param string $scope
-     */
-    public function setScope($scope)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaServiceAccountCredentials extends \Google\Model
     {
+        /**
+         * A space-delimited list of requested scope permissions.
+         *
+         * @var string
+         */
+        public $scope;
+        /**
+         * Name of the service account that has the permission to make the request.
+         *
+         * @var string
+         */
+        public $serviceAccount;
+        /**
+         * A space-delimited list of requested scope permissions.
+         *
+         * @param string $scope
+         */
+        public function setScope($scope)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScope()
+        {
+        }
+        /**
+         * Name of the service account that has the permission to make the request.
+         *
+         * @param string $serviceAccount
+         */
+        public function setServiceAccount($serviceAccount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceAccount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaServiceAccountCredentials registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getScope()
-    {
-    }
-    /**
-     * Name of the service account that has the permission to make the request.
-     *
-     * @param string $serviceAccount
-     */
-    public function setServiceAccount($serviceAccount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceAccount()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaServiceAccountCredentials extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaServiceAccountCredentials
     {
     }
 }

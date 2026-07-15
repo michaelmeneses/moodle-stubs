@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0CommonTargetingSetting extends \Google\Collection
-{
-    protected $collection_key = 'targetRestrictions';
-    protected $targetRestrictionsType = GoogleAdsSearchads360V0CommonTargetRestriction::class;
-    protected $targetRestrictionsDataType = 'array';
-    /**
-     * The per-targeting-dimension setting to restrict the reach of your campaign
-     * or ad group.
-     *
-     * @param GoogleAdsSearchads360V0CommonTargetRestriction[] $targetRestrictions
-     */
-    public function setTargetRestrictions($targetRestrictions)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0CommonTargetingSetting extends \Google\Collection
     {
+        protected $collection_key = 'targetRestrictions';
+        protected $targetRestrictionsType = GoogleAdsSearchads360V0CommonTargetRestriction::class;
+        protected $targetRestrictionsDataType = 'array';
+        /**
+         * The per-targeting-dimension setting to restrict the reach of your campaign
+         * or ad group.
+         *
+         * @param GoogleAdsSearchads360V0CommonTargetRestriction[] $targetRestrictions
+         */
+        public function setTargetRestrictions($targetRestrictions)
+        {
+        }
+        /**
+         * @return GoogleAdsSearchads360V0CommonTargetRestriction[]
+         */
+        public function getTargetRestrictions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAdsSearchads360V0CommonTargetRestriction[]
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0CommonTargetingSetting registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTargetRestrictions()
+    class Google_Service_SA360_GoogleAdsSearchads360V0CommonTargetingSetting extends \Google\Service\SA360\GoogleAdsSearchads360V0CommonTargetingSetting
     {
     }
 }

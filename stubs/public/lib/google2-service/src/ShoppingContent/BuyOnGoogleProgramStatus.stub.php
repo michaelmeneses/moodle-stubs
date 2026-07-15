@@ -21,153 +21,162 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class BuyOnGoogleProgramStatus extends \Google\Collection
-{
-    protected $collection_key = 'businessModel';
-    /**
-     * @var string[]
-     */
-    public $businessModel;
-    /**
-     * @var string
-     */
-    public $customerServicePendingEmail;
-    /**
-     * @var string
-     */
-    public $customerServicePendingPhoneNumber;
-    /**
-     * @var string
-     */
-    public $customerServicePendingPhoneRegionCode;
-    /**
-     * @var string
-     */
-    public $customerServiceVerifiedEmail;
-    /**
-     * @var string
-     */
-    public $customerServiceVerifiedPhoneNumber;
-    /**
-     * @var string
-     */
-    public $customerServiceVerifiedPhoneRegionCode;
-    /**
-     * @var string
-     */
-    public $onlineSalesChannel;
-    /**
-     * @var string
-     */
-    public $participationStage;
-    /**
-     * @param string[]
-     */
-    public function setBusinessModel($businessModel)
+namespace Google\Service\ShoppingContent {
+    class BuyOnGoogleProgramStatus extends \Google\Collection
     {
+        protected $collection_key = 'businessModel';
+        /**
+         * @var string[]
+         */
+        public $businessModel;
+        /**
+         * @var string
+         */
+        public $customerServicePendingEmail;
+        /**
+         * @var string
+         */
+        public $customerServicePendingPhoneNumber;
+        /**
+         * @var string
+         */
+        public $customerServicePendingPhoneRegionCode;
+        /**
+         * @var string
+         */
+        public $customerServiceVerifiedEmail;
+        /**
+         * @var string
+         */
+        public $customerServiceVerifiedPhoneNumber;
+        /**
+         * @var string
+         */
+        public $customerServiceVerifiedPhoneRegionCode;
+        /**
+         * @var string
+         */
+        public $onlineSalesChannel;
+        /**
+         * @var string
+         */
+        public $participationStage;
+        /**
+         * @param string[]
+         */
+        public function setBusinessModel($businessModel)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getBusinessModel()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCustomerServicePendingEmail($customerServicePendingEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomerServicePendingEmail()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCustomerServicePendingPhoneNumber($customerServicePendingPhoneNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomerServicePendingPhoneNumber()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCustomerServicePendingPhoneRegionCode($customerServicePendingPhoneRegionCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomerServicePendingPhoneRegionCode()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCustomerServiceVerifiedEmail($customerServiceVerifiedEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomerServiceVerifiedEmail()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCustomerServiceVerifiedPhoneNumber($customerServiceVerifiedPhoneNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomerServiceVerifiedPhoneNumber()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCustomerServiceVerifiedPhoneRegionCode($customerServiceVerifiedPhoneRegionCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomerServiceVerifiedPhoneRegionCode()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOnlineSalesChannel($onlineSalesChannel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOnlineSalesChannel()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setParticipationStage($participationStage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParticipationStage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\ShoppingContent\BuyOnGoogleProgramStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBusinessModel()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCustomerServicePendingEmail($customerServicePendingEmail)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCustomerServicePendingEmail()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCustomerServicePendingPhoneNumber($customerServicePendingPhoneNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCustomerServicePendingPhoneNumber()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCustomerServicePendingPhoneRegionCode($customerServicePendingPhoneRegionCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCustomerServicePendingPhoneRegionCode()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCustomerServiceVerifiedEmail($customerServiceVerifiedEmail)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCustomerServiceVerifiedEmail()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCustomerServiceVerifiedPhoneNumber($customerServiceVerifiedPhoneNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCustomerServiceVerifiedPhoneNumber()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCustomerServiceVerifiedPhoneRegionCode($customerServiceVerifiedPhoneRegionCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCustomerServiceVerifiedPhoneRegionCode()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOnlineSalesChannel($onlineSalesChannel)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOnlineSalesChannel()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setParticipationStage($participationStage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParticipationStage()
+    class Google_Service_ShoppingContent_BuyOnGoogleProgramStatus extends \Google\Service\ShoppingContent\BuyOnGoogleProgramStatus
     {
     }
 }

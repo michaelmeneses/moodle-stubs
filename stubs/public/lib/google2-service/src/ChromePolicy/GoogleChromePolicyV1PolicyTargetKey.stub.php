@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromePolicy;
-
-class GoogleChromePolicyV1PolicyTargetKey extends \Google\Model
-{
-    /**
-     * @var string[]
-     */
-    public $additionalTargetKeys;
-    /**
-     * @var string
-     */
-    public $targetResource;
-    /**
-     * @param string[]
-     */
-    public function setAdditionalTargetKeys($additionalTargetKeys)
+namespace Google\Service\ChromePolicy {
+    class GoogleChromePolicyV1PolicyTargetKey extends \Google\Model
     {
+        /**
+         * @var string[]
+         */
+        public $additionalTargetKeys;
+        /**
+         * @var string
+         */
+        public $targetResource;
+        /**
+         * @param string[]
+         */
+        public function setAdditionalTargetKeys($additionalTargetKeys)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAdditionalTargetKeys()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTargetResource($targetResource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetResource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\ChromePolicy\GoogleChromePolicyV1PolicyTargetKey registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdditionalTargetKeys()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTargetResource($targetResource)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetResource()
+    class Google_Service_ChromePolicy_GoogleChromePolicyV1PolicyTargetKey extends \Google\Service\ChromePolicy\GoogleChromePolicyV1PolicyTargetKey
     {
     }
 }

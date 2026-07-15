@@ -21,231 +21,240 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OSConfig;
-
-class PatchJob extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $createTime;
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var string
-     */
-    public $displayName;
-    /**
-     * @var bool
-     */
-    public $dryRun;
-    /**
-     * @var string
-     */
-    public $duration;
-    /**
-     * @var string
-     */
-    public $errorMessage;
-    protected $instanceDetailsSummaryType = PatchJobInstanceDetailsSummary::class;
-    protected $instanceDetailsSummaryDataType = '';
-    protected $instanceFilterType = PatchInstanceFilter::class;
-    protected $instanceFilterDataType = '';
-    /**
-     * @var string
-     */
-    public $name;
-    protected $patchConfigType = PatchConfig::class;
-    protected $patchConfigDataType = '';
-    /**
-     * @var string
-     */
-    public $patchDeployment;
-    public $percentComplete;
-    protected $rolloutType = PatchRollout::class;
-    protected $rolloutDataType = '';
-    /**
-     * @var string
-     */
-    public $state;
-    /**
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * @param string
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\OSConfig {
+    class PatchJob extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $createTime;
+        /**
+         * @var string
+         */
+        public $description;
+        /**
+         * @var string
+         */
+        public $displayName;
+        /**
+         * @var bool
+         */
+        public $dryRun;
+        /**
+         * @var string
+         */
+        public $duration;
+        /**
+         * @var string
+         */
+        public $errorMessage;
+        protected $instanceDetailsSummaryType = PatchJobInstanceDetailsSummary::class;
+        protected $instanceDetailsSummaryDataType = '';
+        protected $instanceFilterType = PatchInstanceFilter::class;
+        protected $instanceFilterDataType = '';
+        /**
+         * @var string
+         */
+        public $name;
+        protected $patchConfigType = PatchConfig::class;
+        protected $patchConfigDataType = '';
+        /**
+         * @var string
+         */
+        public $patchDeployment;
+        public $percentComplete;
+        protected $rolloutType = PatchRollout::class;
+        protected $rolloutDataType = '';
+        /**
+         * @var string
+         */
+        public $state;
+        /**
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * @param string
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setDryRun($dryRun)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDryRun()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDuration($duration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDuration()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setErrorMessage($errorMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getErrorMessage()
+        {
+        }
+        /**
+         * @param PatchJobInstanceDetailsSummary
+         */
+        public function setInstanceDetailsSummary(PatchJobInstanceDetailsSummary $instanceDetailsSummary)
+        {
+        }
+        /**
+         * @return PatchJobInstanceDetailsSummary
+         */
+        public function getInstanceDetailsSummary()
+        {
+        }
+        /**
+         * @param PatchInstanceFilter
+         */
+        public function setInstanceFilter(PatchInstanceFilter $instanceFilter)
+        {
+        }
+        /**
+         * @return PatchInstanceFilter
+         */
+        public function getInstanceFilter()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param PatchConfig
+         */
+        public function setPatchConfig(PatchConfig $patchConfig)
+        {
+        }
+        /**
+         * @return PatchConfig
+         */
+        public function getPatchConfig()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPatchDeployment($patchDeployment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPatchDeployment()
+        {
+        }
+        public function setPercentComplete($percentComplete)
+        {
+        }
+        public function getPercentComplete()
+        {
+        }
+        /**
+         * @param PatchRollout
+         */
+        public function setRollout(PatchRollout $rollout)
+        {
+        }
+        /**
+         * @return PatchRollout
+         */
+        public function getRollout()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getState()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OSConfig\PatchJob registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setDryRun($dryRun)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDryRun()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDuration($duration)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDuration()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setErrorMessage($errorMessage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getErrorMessage()
-    {
-    }
-    /**
-     * @param PatchJobInstanceDetailsSummary
-     */
-    public function setInstanceDetailsSummary(PatchJobInstanceDetailsSummary $instanceDetailsSummary)
-    {
-    }
-    /**
-     * @return PatchJobInstanceDetailsSummary
-     */
-    public function getInstanceDetailsSummary()
-    {
-    }
-    /**
-     * @param PatchInstanceFilter
-     */
-    public function setInstanceFilter(PatchInstanceFilter $instanceFilter)
-    {
-    }
-    /**
-     * @return PatchInstanceFilter
-     */
-    public function getInstanceFilter()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param PatchConfig
-     */
-    public function setPatchConfig(PatchConfig $patchConfig)
-    {
-    }
-    /**
-     * @return PatchConfig
-     */
-    public function getPatchConfig()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPatchDeployment($patchDeployment)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPatchDeployment()
-    {
-    }
-    public function setPercentComplete($percentComplete)
-    {
-    }
-    public function getPercentComplete()
-    {
-    }
-    /**
-     * @param PatchRollout
-     */
-    public function setRollout(PatchRollout $rollout)
-    {
-    }
-    /**
-     * @return PatchRollout
-     */
-    public function getRollout()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getState()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_OSConfig_PatchJob extends \Google\Service\OSConfig\PatchJob
     {
     }
 }

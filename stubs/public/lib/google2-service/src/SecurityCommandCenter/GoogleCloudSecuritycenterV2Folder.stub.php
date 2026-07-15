@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GoogleCloudSecuritycenterV2Folder extends \Google\Model
-{
-    /**
-     * Full resource name of this folder. See:
-     * https://cloud.google.com/apis/design/resource_names#full_resource_name
-     *
-     * @var string
-     */
-    public $resourceFolder;
-    /**
-     * The user defined display name for this folder.
-     *
-     * @var string
-     */
-    public $resourceFolderDisplayName;
-    /**
-     * Full resource name of this folder. See:
-     * https://cloud.google.com/apis/design/resource_names#full_resource_name
-     *
-     * @param string $resourceFolder
-     */
-    public function setResourceFolder($resourceFolder)
+namespace Google\Service\SecurityCommandCenter {
+    class GoogleCloudSecuritycenterV2Folder extends \Google\Model
     {
+        /**
+         * Full resource name of this folder. See:
+         * https://cloud.google.com/apis/design/resource_names#full_resource_name
+         *
+         * @var string
+         */
+        public $resourceFolder;
+        /**
+         * The user defined display name for this folder.
+         *
+         * @var string
+         */
+        public $resourceFolderDisplayName;
+        /**
+         * Full resource name of this folder. See:
+         * https://cloud.google.com/apis/design/resource_names#full_resource_name
+         *
+         * @param string $resourceFolder
+         */
+        public function setResourceFolder($resourceFolder)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceFolder()
+        {
+        }
+        /**
+         * The user defined display name for this folder.
+         *
+         * @param string $resourceFolderDisplayName
+         */
+        public function setResourceFolderDisplayName($resourceFolderDisplayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceFolderDisplayName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2Folder registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResourceFolder()
-    {
-    }
-    /**
-     * The user defined display name for this folder.
-     *
-     * @param string $resourceFolderDisplayName
-     */
-    public function setResourceFolderDisplayName($resourceFolderDisplayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceFolderDisplayName()
+    class Google_Service_SecurityCommandCenter_GoogleCloudSecuritycenterV2Folder extends \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2Folder
     {
     }
 }

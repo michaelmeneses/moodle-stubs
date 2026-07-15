@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Baremetalsolution;
-
-class UserAccount extends \Google\Model
-{
-    /**
-     * Encrypted initial password value.
-     *
-     * @var string
-     */
-    public $encryptedPassword;
-    /**
-     * KMS CryptoKey Version used to encrypt the password.
-     *
-     * @var string
-     */
-    public $kmsKeyVersion;
-    /**
-     * Encrypted initial password value.
-     *
-     * @param string $encryptedPassword
-     */
-    public function setEncryptedPassword($encryptedPassword)
+namespace Google\Service\Baremetalsolution {
+    class UserAccount extends \Google\Model
     {
+        /**
+         * Encrypted initial password value.
+         *
+         * @var string
+         */
+        public $encryptedPassword;
+        /**
+         * KMS CryptoKey Version used to encrypt the password.
+         *
+         * @var string
+         */
+        public $kmsKeyVersion;
+        /**
+         * Encrypted initial password value.
+         *
+         * @param string $encryptedPassword
+         */
+        public function setEncryptedPassword($encryptedPassword)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEncryptedPassword()
+        {
+        }
+        /**
+         * KMS CryptoKey Version used to encrypt the password.
+         *
+         * @param string $kmsKeyVersion
+         */
+        public function setKmsKeyVersion($kmsKeyVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKmsKeyVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Baremetalsolution\UserAccount registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEncryptedPassword()
-    {
-    }
-    /**
-     * KMS CryptoKey Version used to encrypt the password.
-     *
-     * @param string $kmsKeyVersion
-     */
-    public function setKmsKeyVersion($kmsKeyVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKmsKeyVersion()
+    class Google_Service_Baremetalsolution_UserAccount extends \Google\Service\Baremetalsolution\UserAccount
     {
     }
 }

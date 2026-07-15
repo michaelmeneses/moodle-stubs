@@ -21,109 +21,121 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare\Resource;
-
-/**
- * The "attributeDefinitions" collection of methods.
- * Typical usage is:
- *  <code>
- *   $healthcareService = new Google\Service\CloudHealthcare(...);
- *   $attributeDefinitions = $healthcareService->projects_locations_datasets_consentStores_attributeDefinitions;
- *  </code>
- */
-class ProjectsLocationsDatasetsConsentStoresAttributeDefinitions extends \Google\Service\Resource
-{
+namespace Google\Service\CloudHealthcare\Resource {
+    use Google\Service\CloudHealthcare\AttributeDefinition;
+    use Google\Service\CloudHealthcare\HealthcareEmpty;
+    use Google\Service\CloudHealthcare\ListAttributeDefinitionsResponse;
     /**
-     * Creates a new Attribute definition in the parent consent store.
-     * (attributeDefinitions.create)
-     *
-     * @param string $parent Required. The name of the consent store that this
-     * Attribute definition belongs to.
-     * @param AttributeDefinition $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string attributeDefinitionId Required. The ID of the Attribute
-     * definition to create. The string must match the following regex: `_a-
-     * zA-Z{0,255}` and must not be a reserved keyword within the Common Expression
-     * Language as listed on https://github.com/google/cel-
-     * spec/blob/master/doc/langdef.md.
-     * @return AttributeDefinition
-     * @throws \Google\Service\Exception
+     * The "attributeDefinitions" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $healthcareService = new Google\Service\CloudHealthcare(...);
+     *   $attributeDefinitions = $healthcareService->projects_locations_datasets_consentStores_attributeDefinitions;
+     *  </code>
      */
-    public function create($parent, AttributeDefinition $postBody, $optParams = [])
+    class ProjectsLocationsDatasetsConsentStoresAttributeDefinitions extends \Google\Service\Resource
     {
+        /**
+         * Creates a new Attribute definition in the parent consent store.
+         * (attributeDefinitions.create)
+         *
+         * @param string $parent Required. The name of the consent store that this
+         * Attribute definition belongs to.
+         * @param AttributeDefinition $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string attributeDefinitionId Required. The ID of the Attribute
+         * definition to create. The string must match the following regex: `_a-
+         * zA-Z{0,255}` and must not be a reserved keyword within the Common Expression
+         * Language as listed on https://github.com/google/cel-
+         * spec/blob/master/doc/langdef.md.
+         * @return AttributeDefinition
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, AttributeDefinition $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes the specified Attribute definition. Fails if the Attribute definition
+         * is referenced by any User data mapping, or the latest revision of any
+         * Consent. (attributeDefinitions.delete)
+         *
+         * @param string $name Required. The resource name of the Attribute definition
+         * to delete. To preserve referential integrity, Attribute definitions
+         * referenced by a User data mapping or the latest revision of a Consent cannot
+         * be deleted.
+         * @param array $optParams Optional parameters.
+         * @return HealthcareEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets the specified Attribute definition. (attributeDefinitions.get)
+         *
+         * @param string $name Required. The resource name of the Attribute definition
+         * to get.
+         * @param array $optParams Optional parameters.
+         * @return AttributeDefinition
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists the Attribute definitions in the specified consent store. (attributeDef
+         * initions.listProjectsLocationsDatasetsConsentStoresAttributeDefinitions)
+         *
+         * @param string $parent Required. Name of the consent store to retrieve
+         * Attribute definitions from.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Optional. Restricts the attributes returned to those
+         * matching a filter. The only field available for filtering is `category`. For
+         * example, `filter=category=\"REQUEST\"`.
+         * @opt_param int pageSize Optional. Limit on the number of Attribute
+         * definitions to return in a single response. If not specified, 100 is used.
+         * May not be larger than 1000.
+         * @opt_param string pageToken Optional. Token to retrieve the next page of
+         * results or empty to get the first page.
+         * @return ListAttributeDefinitionsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsDatasetsConsentStoresAttributeDefinitions($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates the specified Attribute definition. (attributeDefinitions.patch)
+         *
+         * @param string $name Identifier. Resource name of the Attribute definition, of
+         * the form `projects/{project_id}/locations/{location_id}/datasets/{dataset_id}
+         * /consentStores/{consent_store_id}/attributeDefinitions/{attribute_definition_
+         * id}`. Cannot be changed after creation.
+         * @param AttributeDefinition $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Required. The update mask that applies to the
+         * resource. For the `FieldMask` definition, see
+         * https://developers.google.com/protocol-
+         * buffers/docs/reference/google.protobuf#fieldmask. Only the `description`,
+         * `allowed_values`, `consent_default_values` and `data_mapping_default_value`
+         * fields can be updated. The updated `allowed_values` must contain all values
+         * from the previous `allowed_values`.
+         * @return AttributeDefinition
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, AttributeDefinition $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes the specified Attribute definition. Fails if the Attribute definition
-     * is referenced by any User data mapping, or the latest revision of any
-     * Consent. (attributeDefinitions.delete)
-     *
-     * @param string $name Required. The resource name of the Attribute definition
-     * to delete. To preserve referential integrity, Attribute definitions
-     * referenced by a User data mapping or the latest revision of a Consent cannot
-     * be deleted.
-     * @param array $optParams Optional parameters.
-     * @return HealthcareEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\CloudHealthcare\Resource\ProjectsLocationsDatasetsConsentStoresAttributeDefinitions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets the specified Attribute definition. (attributeDefinitions.get)
-     *
-     * @param string $name Required. The resource name of the Attribute definition
-     * to get.
-     * @param array $optParams Optional parameters.
-     * @return AttributeDefinition
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists the Attribute definitions in the specified consent store. (attributeDef
-     * initions.listProjectsLocationsDatasetsConsentStoresAttributeDefinitions)
-     *
-     * @param string $parent Required. Name of the consent store to retrieve
-     * Attribute definitions from.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Optional. Restricts the attributes returned to those
-     * matching a filter. The only field available for filtering is `category`. For
-     * example, `filter=category=\"REQUEST\"`.
-     * @opt_param int pageSize Optional. Limit on the number of Attribute
-     * definitions to return in a single response. If not specified, 100 is used.
-     * May not be larger than 1000.
-     * @opt_param string pageToken Optional. Token to retrieve the next page of
-     * results or empty to get the first page.
-     * @return ListAttributeDefinitionsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsDatasetsConsentStoresAttributeDefinitions($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates the specified Attribute definition. (attributeDefinitions.patch)
-     *
-     * @param string $name Identifier. Resource name of the Attribute definition, of
-     * the form `projects/{project_id}/locations/{location_id}/datasets/{dataset_id}
-     * /consentStores/{consent_store_id}/attributeDefinitions/{attribute_definition_
-     * id}`. Cannot be changed after creation.
-     * @param AttributeDefinition $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Required. The update mask that applies to the
-     * resource. For the `FieldMask` definition, see
-     * https://developers.google.com/protocol-
-     * buffers/docs/reference/google.protobuf#fieldmask. Only the `description`,
-     * `allowed_values`, `consent_default_values` and `data_mapping_default_value`
-     * fields can be updated. The updated `allowed_values` must contain all values
-     * from the previous `allowed_values`.
-     * @return AttributeDefinition
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, AttributeDefinition $postBody, $optParams = [])
+    class Google_Service_CloudHealthcare_Resource_ProjectsLocationsDatasetsConsentStoresAttributeDefinitions extends \Google\Service\CloudHealthcare\Resource\ProjectsLocationsDatasetsConsentStoresAttributeDefinitions
     {
     }
 }

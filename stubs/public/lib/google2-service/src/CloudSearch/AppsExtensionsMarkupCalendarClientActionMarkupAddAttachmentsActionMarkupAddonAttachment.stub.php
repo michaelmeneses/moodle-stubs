@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsExtensionsMarkupCalendarClientActionMarkupAddAttachmentsActionMarkupAddonAttachment extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $iconUrl;
-    /**
-     * @var string
-     */
-    public $mimeType;
-    /**
-     * @var string
-     */
-    public $resourceUrl;
-    /**
-     * @var string
-     */
-    public $title;
-    /**
-     * @param string
-     */
-    public function setIconUrl($iconUrl)
+namespace Google\Service\CloudSearch {
+    class AppsExtensionsMarkupCalendarClientActionMarkupAddAttachmentsActionMarkupAddonAttachment extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $iconUrl;
+        /**
+         * @var string
+         */
+        public $mimeType;
+        /**
+         * @var string
+         */
+        public $resourceUrl;
+        /**
+         * @var string
+         */
+        public $title;
+        /**
+         * @param string
+         */
+        public function setIconUrl($iconUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIconUrl()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMimeType($mimeType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMimeType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setResourceUrl($resourceUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceUrl()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\AppsExtensionsMarkupCalendarClientActionMarkupAddAttachmentsActionMarkupAddonAttachment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIconUrl()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMimeType($mimeType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMimeType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setResourceUrl($resourceUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceUrl()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_CloudSearch_AppsExtensionsMarkupCalendarClientActionMarkupAddAttachmentsActionMarkupAddonAttachment extends \Google\Service\CloudSearch\AppsExtensionsMarkupCalendarClientActionMarkupAddAttachmentsActionMarkupAddonAttachment
     {
     }
 }

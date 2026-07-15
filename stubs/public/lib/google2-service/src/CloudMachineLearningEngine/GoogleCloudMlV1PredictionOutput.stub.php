@@ -21,80 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudMachineLearningEngine;
-
-class GoogleCloudMlV1PredictionOutput extends \Google\Model
-{
-    /**
-     * The number of data instances which resulted in errors.
-     *
-     * @var string
-     */
-    public $errorCount;
-    /**
-     * Node hours used by the batch prediction job.
-     *
-     * @var 
-     */
-    public $nodeHours;
-    /**
-     * The output Google Cloud Storage location provided at the job creation time.
-     *
-     * @var string
-     */
-    public $outputPath;
-    /**
-     * The number of generated predictions.
-     *
-     * @var string
-     */
-    public $predictionCount;
-    /**
-     * The number of data instances which resulted in errors.
-     *
-     * @param string $errorCount
-     */
-    public function setErrorCount($errorCount)
+namespace Google\Service\CloudMachineLearningEngine {
+    class GoogleCloudMlV1PredictionOutput extends \Google\Model
     {
+        /**
+         * The number of data instances which resulted in errors.
+         *
+         * @var string
+         */
+        public $errorCount;
+        /**
+         * Node hours used by the batch prediction job.
+         *
+         * @var 
+         */
+        public $nodeHours;
+        /**
+         * The output Google Cloud Storage location provided at the job creation time.
+         *
+         * @var string
+         */
+        public $outputPath;
+        /**
+         * The number of generated predictions.
+         *
+         * @var string
+         */
+        public $predictionCount;
+        /**
+         * The number of data instances which resulted in errors.
+         *
+         * @param string $errorCount
+         */
+        public function setErrorCount($errorCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getErrorCount()
+        {
+        }
+        public function setNodeHours($nodeHours)
+        {
+        }
+        public function getNodeHours()
+        {
+        }
+        /**
+         * The output Google Cloud Storage location provided at the job creation time.
+         *
+         * @param string $outputPath
+         */
+        public function setOutputPath($outputPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOutputPath()
+        {
+        }
+        /**
+         * The number of generated predictions.
+         *
+         * @param string $predictionCount
+         */
+        public function setPredictionCount($predictionCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPredictionCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1PredictionOutput registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrorCount()
-    {
-    }
-    public function setNodeHours($nodeHours)
-    {
-    }
-    public function getNodeHours()
-    {
-    }
-    /**
-     * The output Google Cloud Storage location provided at the job creation time.
-     *
-     * @param string $outputPath
-     */
-    public function setOutputPath($outputPath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOutputPath()
-    {
-    }
-    /**
-     * The number of generated predictions.
-     *
-     * @param string $predictionCount
-     */
-    public function setPredictionCount($predictionCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPredictionCount()
+    class Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1PredictionOutput extends \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1PredictionOutput
     {
     }
 }

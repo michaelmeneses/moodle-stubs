@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataform;
-
-class QueryWorkflowInvocationActionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'workflowInvocationActions';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $workflowInvocationActionsType = WorkflowInvocationAction::class;
-    protected $workflowInvocationActionsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Dataform {
+    class QueryWorkflowInvocationActionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'workflowInvocationActions';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $workflowInvocationActionsType = WorkflowInvocationAction::class;
+        protected $workflowInvocationActionsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * List of workflow invocation actions.
+         *
+         * @param WorkflowInvocationAction[] $workflowInvocationActions
+         */
+        public function setWorkflowInvocationActions($workflowInvocationActions)
+        {
+        }
+        /**
+         * @return WorkflowInvocationAction[]
+         */
+        public function getWorkflowInvocationActions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataform\QueryWorkflowInvocationActionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * List of workflow invocation actions.
-     *
-     * @param WorkflowInvocationAction[] $workflowInvocationActions
-     */
-    public function setWorkflowInvocationActions($workflowInvocationActions)
-    {
-    }
-    /**
-     * @return WorkflowInvocationAction[]
-     */
-    public function getWorkflowInvocationActions()
+    class Google_Service_Dataform_QueryWorkflowInvocationActionsResponse extends \Google\Service\Dataform\QueryWorkflowInvocationActionsResponse
     {
     }
 }

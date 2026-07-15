@@ -21,61 +21,70 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Forms;
-
-class BatchUpdateFormRequest extends \Google\Collection
-{
-    protected $collection_key = 'requests';
-    /**
-     * Whether to return an updated version of the model in the response.
-     *
-     * @var bool
-     */
-    public $includeFormInResponse;
-    protected $requestsType = Request::class;
-    protected $requestsDataType = 'array';
-    protected $writeControlType = WriteControl::class;
-    protected $writeControlDataType = '';
-    /**
-     * Whether to return an updated version of the model in the response.
-     *
-     * @param bool $includeFormInResponse
-     */
-    public function setIncludeFormInResponse($includeFormInResponse)
+namespace Google\Service\Forms {
+    class BatchUpdateFormRequest extends \Google\Collection
     {
+        protected $collection_key = 'requests';
+        /**
+         * Whether to return an updated version of the model in the response.
+         *
+         * @var bool
+         */
+        public $includeFormInResponse;
+        protected $requestsType = Request::class;
+        protected $requestsDataType = 'array';
+        protected $writeControlType = WriteControl::class;
+        protected $writeControlDataType = '';
+        /**
+         * Whether to return an updated version of the model in the response.
+         *
+         * @param bool $includeFormInResponse
+         */
+        public function setIncludeFormInResponse($includeFormInResponse)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIncludeFormInResponse()
+        {
+        }
+        /**
+         * Required. The update requests of this batch.
+         *
+         * @param Request[] $requests
+         */
+        public function setRequests($requests)
+        {
+        }
+        /**
+         * @return Request[]
+         */
+        public function getRequests()
+        {
+        }
+        /**
+         * Provides control over how write requests are executed.
+         *
+         * @param WriteControl $writeControl
+         */
+        public function setWriteControl(WriteControl $writeControl)
+        {
+        }
+        /**
+         * @return WriteControl
+         */
+        public function getWriteControl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Forms\BatchUpdateFormRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIncludeFormInResponse()
-    {
-    }
-    /**
-     * Required. The update requests of this batch.
-     *
-     * @param Request[] $requests
-     */
-    public function setRequests($requests)
-    {
-    }
-    /**
-     * @return Request[]
-     */
-    public function getRequests()
-    {
-    }
-    /**
-     * Provides control over how write requests are executed.
-     *
-     * @param WriteControl $writeControl
-     */
-    public function setWriteControl(WriteControl $writeControl)
-    {
-    }
-    /**
-     * @return WriteControl
-     */
-    public function getWriteControl()
+    class Google_Service_Forms_BatchUpdateFormRequest extends \Google\Service\Forms\BatchUpdateFormRequest
     {
     }
 }

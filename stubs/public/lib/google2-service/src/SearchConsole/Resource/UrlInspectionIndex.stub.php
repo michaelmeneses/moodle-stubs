@@ -21,27 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SearchConsole\Resource;
-
-/**
- * The "index" collection of methods.
- * Typical usage is:
- *  <code>
- *   $searchconsoleService = new Google\Service\SearchConsole(...);
- *   $index = $searchconsoleService->urlInspection_index;
- *  </code>
- */
-class UrlInspectionIndex extends \Google\Service\Resource
-{
+namespace Google\Service\SearchConsole\Resource {
+    use Google\Service\SearchConsole\InspectUrlIndexRequest;
+    use Google\Service\SearchConsole\InspectUrlIndexResponse;
     /**
-     * Index inspection. (index.inspect)
-     *
-     * @param InspectUrlIndexRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return InspectUrlIndexResponse
-     * @throws \Google\Service\Exception
+     * The "index" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $searchconsoleService = new Google\Service\SearchConsole(...);
+     *   $index = $searchconsoleService->urlInspection_index;
+     *  </code>
      */
-    public function inspect(InspectUrlIndexRequest $postBody, $optParams = [])
+    class UrlInspectionIndex extends \Google\Service\Resource
+    {
+        /**
+         * Index inspection. (index.inspect)
+         *
+         * @param InspectUrlIndexRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return InspectUrlIndexResponse
+         * @throws \Google\Service\Exception
+         */
+        public function inspect(InspectUrlIndexRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\SearchConsole\Resource\UrlInspectionIndex registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_SearchConsole_Resource_UrlInspectionIndex extends \Google\Service\SearchConsole\Resource\UrlInspectionIndex
     {
     }
 }

@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseML;
-
-class ModelOperationMetadata extends \Google\Model
-{
-    /**
-     * The status is unspecified
-     */
-    public const BASIC_OPERATION_STATUS_BASIC_OPERATION_STATUS_UNSPECIFIED = 'BASIC_OPERATION_STATUS_UNSPECIFIED';
-    /**
-     * The model file is being uploaded
-     */
-    public const BASIC_OPERATION_STATUS_BASIC_OPERATION_STATUS_UPLOADING = 'BASIC_OPERATION_STATUS_UPLOADING';
-    /**
-     * The model file is being verified
-     */
-    public const BASIC_OPERATION_STATUS_BASIC_OPERATION_STATUS_VERIFYING = 'BASIC_OPERATION_STATUS_VERIFYING';
-    /**
-     * @var string
-     */
-    public $basicOperationStatus;
-    /**
-     * The name of the model we are creating/updating The name must have the form
-     * `projects/{project_id}/models/{model_id}`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * @param self::BASIC_OPERATION_STATUS_* $basicOperationStatus
-     */
-    public function setBasicOperationStatus($basicOperationStatus)
+namespace Google\Service\FirebaseML {
+    class ModelOperationMetadata extends \Google\Model
     {
+        /**
+         * The status is unspecified
+         */
+        public const BASIC_OPERATION_STATUS_BASIC_OPERATION_STATUS_UNSPECIFIED = 'BASIC_OPERATION_STATUS_UNSPECIFIED';
+        /**
+         * The model file is being uploaded
+         */
+        public const BASIC_OPERATION_STATUS_BASIC_OPERATION_STATUS_UPLOADING = 'BASIC_OPERATION_STATUS_UPLOADING';
+        /**
+         * The model file is being verified
+         */
+        public const BASIC_OPERATION_STATUS_BASIC_OPERATION_STATUS_VERIFYING = 'BASIC_OPERATION_STATUS_VERIFYING';
+        /**
+         * @var string
+         */
+        public $basicOperationStatus;
+        /**
+         * The name of the model we are creating/updating The name must have the form
+         * `projects/{project_id}/models/{model_id}`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * @param self::BASIC_OPERATION_STATUS_* $basicOperationStatus
+         */
+        public function setBasicOperationStatus($basicOperationStatus)
+        {
+        }
+        /**
+         * @return self::BASIC_OPERATION_STATUS_*
+         */
+        public function getBasicOperationStatus()
+        {
+        }
+        /**
+         * The name of the model we are creating/updating The name must have the form
+         * `projects/{project_id}/models/{model_id}`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::BASIC_OPERATION_STATUS_*
+     * Runtime class alias of \Google\Service\FirebaseML\ModelOperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBasicOperationStatus()
-    {
-    }
-    /**
-     * The name of the model we are creating/updating The name must have the form
-     * `projects/{project_id}/models/{model_id}`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_FirebaseML_ModelOperationMetadata extends \Google\Service\FirebaseML\ModelOperationMetadata
     {
     }
 }

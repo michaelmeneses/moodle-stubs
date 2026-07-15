@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Webmasters;
-
-class SitesListResponse extends \Google\Collection
-{
-    protected $collection_key = 'siteEntry';
-    protected $siteEntryType = WmxSite::class;
-    protected $siteEntryDataType = 'array';
-    /**
-     * @param WmxSite[]
-     */
-    public function setSiteEntry($siteEntry)
+namespace Google\Service\Webmasters {
+    class SitesListResponse extends \Google\Collection
     {
+        protected $collection_key = 'siteEntry';
+        protected $siteEntryType = WmxSite::class;
+        protected $siteEntryDataType = 'array';
+        /**
+         * @param WmxSite[]
+         */
+        public function setSiteEntry($siteEntry)
+        {
+        }
+        /**
+         * @return WmxSite[]
+         */
+        public function getSiteEntry()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return WmxSite[]
+     * Runtime class alias of \Google\Service\Webmasters\SitesListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSiteEntry()
+    class Google_Service_Webmasters_SitesListResponse extends \Google\Service\Webmasters\SitesListResponse
     {
     }
 }

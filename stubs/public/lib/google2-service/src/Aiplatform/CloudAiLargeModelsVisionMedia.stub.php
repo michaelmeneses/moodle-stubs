@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class CloudAiLargeModelsVisionMedia extends \Google\Model
-{
-    protected $imageType = CloudAiLargeModelsVisionImage::class;
-    protected $imageDataType = '';
-    protected $videoType = CloudAiLargeModelsVisionVideo::class;
-    protected $videoDataType = '';
-    /**
-     * Image.
-     *
-     * @param CloudAiLargeModelsVisionImage $image
-     */
-    public function setImage(CloudAiLargeModelsVisionImage $image)
+namespace Google\Service\Aiplatform {
+    class CloudAiLargeModelsVisionMedia extends \Google\Model
     {
+        protected $imageType = CloudAiLargeModelsVisionImage::class;
+        protected $imageDataType = '';
+        protected $videoType = CloudAiLargeModelsVisionVideo::class;
+        protected $videoDataType = '';
+        /**
+         * Image.
+         *
+         * @param CloudAiLargeModelsVisionImage $image
+         */
+        public function setImage(CloudAiLargeModelsVisionImage $image)
+        {
+        }
+        /**
+         * @return CloudAiLargeModelsVisionImage
+         */
+        public function getImage()
+        {
+        }
+        /**
+         * Video
+         *
+         * @param CloudAiLargeModelsVisionVideo $video
+         */
+        public function setVideo(CloudAiLargeModelsVisionVideo $video)
+        {
+        }
+        /**
+         * @return CloudAiLargeModelsVisionVideo
+         */
+        public function getVideo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CloudAiLargeModelsVisionImage
+     * Runtime class alias of \Google\Service\Aiplatform\CloudAiLargeModelsVisionMedia registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getImage()
-    {
-    }
-    /**
-     * Video
-     *
-     * @param CloudAiLargeModelsVisionVideo $video
-     */
-    public function setVideo(CloudAiLargeModelsVisionVideo $video)
-    {
-    }
-    /**
-     * @return CloudAiLargeModelsVisionVideo
-     */
-    public function getVideo()
+    class Google_Service_Aiplatform_CloudAiLargeModelsVisionMedia extends \Google\Service\Aiplatform\CloudAiLargeModelsVisionMedia
     {
     }
 }

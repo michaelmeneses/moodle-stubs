@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1SearchResult extends \Google\Model
-{
-    protected $resourceType = GoogleCloudApihubV1ApiHubResource::class;
-    protected $resourceDataType = '';
-    /**
-     * This represents the ApiHubResource. Note: Only selected fields of the
-     * resources are populated in response.
-     *
-     * @param GoogleCloudApihubV1ApiHubResource $resource
-     */
-    public function setResource(GoogleCloudApihubV1ApiHubResource $resource)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1SearchResult extends \Google\Model
     {
+        protected $resourceType = GoogleCloudApihubV1ApiHubResource::class;
+        protected $resourceDataType = '';
+        /**
+         * This represents the ApiHubResource. Note: Only selected fields of the
+         * resources are populated in response.
+         *
+         * @param GoogleCloudApihubV1ApiHubResource $resource
+         */
+        public function setResource(GoogleCloudApihubV1ApiHubResource $resource)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1ApiHubResource
+         */
+        public function getResource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApihubV1ApiHubResource
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1SearchResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResource()
+    class Google_Service_APIhub_GoogleCloudApihubV1SearchResult extends \Google\Service\APIhub\GoogleCloudApihubV1SearchResult
     {
     }
 }

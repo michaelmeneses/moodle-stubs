@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class ServiceAttachmentsScopedList extends \Google\Collection
-{
-    protected $collection_key = 'serviceAttachments';
-    protected $serviceAttachmentsType = ServiceAttachment::class;
-    protected $serviceAttachmentsDataType = 'array';
-    protected $warningType = ServiceAttachmentsScopedListWarning::class;
-    protected $warningDataType = '';
-    /**
-     * A list of ServiceAttachments contained in this scope.
-     *
-     * @param ServiceAttachment[] $serviceAttachments
-     */
-    public function setServiceAttachments($serviceAttachments)
+namespace Google\Service\Compute {
+    class ServiceAttachmentsScopedList extends \Google\Collection
     {
+        protected $collection_key = 'serviceAttachments';
+        protected $serviceAttachmentsType = ServiceAttachment::class;
+        protected $serviceAttachmentsDataType = 'array';
+        protected $warningType = ServiceAttachmentsScopedListWarning::class;
+        protected $warningDataType = '';
+        /**
+         * A list of ServiceAttachments contained in this scope.
+         *
+         * @param ServiceAttachment[] $serviceAttachments
+         */
+        public function setServiceAttachments($serviceAttachments)
+        {
+        }
+        /**
+         * @return ServiceAttachment[]
+         */
+        public function getServiceAttachments()
+        {
+        }
+        /**
+         * Informational warning which replaces the list of service attachments when
+         * the list is empty.
+         *
+         * @param ServiceAttachmentsScopedListWarning $warning
+         */
+        public function setWarning(ServiceAttachmentsScopedListWarning $warning)
+        {
+        }
+        /**
+         * @return ServiceAttachmentsScopedListWarning
+         */
+        public function getWarning()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ServiceAttachment[]
+     * Runtime class alias of \Google\Service\Compute\ServiceAttachmentsScopedList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getServiceAttachments()
-    {
-    }
-    /**
-     * Informational warning which replaces the list of service attachments when
-     * the list is empty.
-     *
-     * @param ServiceAttachmentsScopedListWarning $warning
-     */
-    public function setWarning(ServiceAttachmentsScopedListWarning $warning)
-    {
-    }
-    /**
-     * @return ServiceAttachmentsScopedListWarning
-     */
-    public function getWarning()
+    class Google_Service_Compute_ServiceAttachmentsScopedList extends \Google\Service\Compute\ServiceAttachmentsScopedList
     {
     }
 }

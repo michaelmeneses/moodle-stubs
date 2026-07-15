@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1DataDocumentationResult extends \Google\Model
-{
-    protected $tableResultType = GoogleCloudDataplexV1DataDocumentationResultTableResult::class;
-    protected $tableResultDataType = '';
-    /**
-     * Output only. Table result for insights.
-     *
-     * @param GoogleCloudDataplexV1DataDocumentationResultTableResult $tableResult
-     */
-    public function setTableResult(GoogleCloudDataplexV1DataDocumentationResultTableResult $tableResult)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1DataDocumentationResult extends \Google\Model
     {
+        protected $tableResultType = GoogleCloudDataplexV1DataDocumentationResultTableResult::class;
+        protected $tableResultDataType = '';
+        /**
+         * Output only. Table result for insights.
+         *
+         * @param GoogleCloudDataplexV1DataDocumentationResultTableResult $tableResult
+         */
+        public function setTableResult(GoogleCloudDataplexV1DataDocumentationResultTableResult $tableResult)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1DataDocumentationResultTableResult
+         */
+        public function getTableResult()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDataplexV1DataDocumentationResultTableResult
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataDocumentationResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTableResult()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1DataDocumentationResult extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataDocumentationResult
     {
     }
 }

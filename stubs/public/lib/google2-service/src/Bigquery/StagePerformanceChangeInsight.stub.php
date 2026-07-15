@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class StagePerformanceChangeInsight extends \Google\Model
-{
-    protected $inputDataChangeType = InputDataChange::class;
-    protected $inputDataChangeDataType = '';
-    /**
-     * Output only. The stage id that the insight mapped to.
-     *
-     * @var string
-     */
-    public $stageId;
-    /**
-     * Output only. Input data change insight of the query stage.
-     *
-     * @param InputDataChange $inputDataChange
-     */
-    public function setInputDataChange(InputDataChange $inputDataChange)
+namespace Google\Service\Bigquery {
+    class StagePerformanceChangeInsight extends \Google\Model
     {
+        protected $inputDataChangeType = InputDataChange::class;
+        protected $inputDataChangeDataType = '';
+        /**
+         * Output only. The stage id that the insight mapped to.
+         *
+         * @var string
+         */
+        public $stageId;
+        /**
+         * Output only. Input data change insight of the query stage.
+         *
+         * @param InputDataChange $inputDataChange
+         */
+        public function setInputDataChange(InputDataChange $inputDataChange)
+        {
+        }
+        /**
+         * @return InputDataChange
+         */
+        public function getInputDataChange()
+        {
+        }
+        /**
+         * Output only. The stage id that the insight mapped to.
+         *
+         * @param string $stageId
+         */
+        public function setStageId($stageId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStageId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InputDataChange
+     * Runtime class alias of \Google\Service\Bigquery\StagePerformanceChangeInsight registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInputDataChange()
-    {
-    }
-    /**
-     * Output only. The stage id that the insight mapped to.
-     *
-     * @param string $stageId
-     */
-    public function setStageId($stageId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStageId()
+    class Google_Service_Bigquery_StagePerformanceChangeInsight extends \Google\Service\Bigquery\StagePerformanceChangeInsight
     {
     }
 }

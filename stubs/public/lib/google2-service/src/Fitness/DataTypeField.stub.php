@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Fitness;
-
-class DataTypeField extends \Google\Model
-{
-    public const FORMAT_integer = 'integer';
-    public const FORMAT_floatPoint = 'floatPoint';
-    public const FORMAT_string = 'string';
-    public const FORMAT_map = 'map';
-    public const FORMAT_integerList = 'integerList';
-    public const FORMAT_floatList = 'floatList';
-    public const FORMAT_blob = 'blob';
-    /**
-     * The different supported formats for each field in a data type.
-     *
-     * @var string
-     */
-    public $format;
-    /**
-     * Defines the name and format of data. Unlike data type names, field names
-     * are not namespaced, and only need to be unique within the data type.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * @var bool
-     */
-    public $optional;
-    /**
-     * The different supported formats for each field in a data type.
-     *
-     * Accepted values: integer, floatPoint, string, map, integerList, floatList,
-     * blob
-     *
-     * @param self::FORMAT_* $format
-     */
-    public function setFormat($format)
+namespace Google\Service\Fitness {
+    class DataTypeField extends \Google\Model
     {
+        public const FORMAT_integer = 'integer';
+        public const FORMAT_floatPoint = 'floatPoint';
+        public const FORMAT_string = 'string';
+        public const FORMAT_map = 'map';
+        public const FORMAT_integerList = 'integerList';
+        public const FORMAT_floatList = 'floatList';
+        public const FORMAT_blob = 'blob';
+        /**
+         * The different supported formats for each field in a data type.
+         *
+         * @var string
+         */
+        public $format;
+        /**
+         * Defines the name and format of data. Unlike data type names, field names
+         * are not namespaced, and only need to be unique within the data type.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * @var bool
+         */
+        public $optional;
+        /**
+         * The different supported formats for each field in a data type.
+         *
+         * Accepted values: integer, floatPoint, string, map, integerList, floatList,
+         * blob
+         *
+         * @param self::FORMAT_* $format
+         */
+        public function setFormat($format)
+        {
+        }
+        /**
+         * @return self::FORMAT_*
+         */
+        public function getFormat()
+        {
+        }
+        /**
+         * Defines the name and format of data. Unlike data type names, field names
+         * are not namespaced, and only need to be unique within the data type.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param bool $optional
+         */
+        public function setOptional($optional)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getOptional()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::FORMAT_*
+     * Runtime class alias of \Google\Service\Fitness\DataTypeField registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFormat()
-    {
-    }
-    /**
-     * Defines the name and format of data. Unlike data type names, field names
-     * are not namespaced, and only need to be unique within the data type.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param bool $optional
-     */
-    public function setOptional($optional)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getOptional()
+    class Google_Service_Fitness_DataTypeField extends \Google\Service\Fitness\DataTypeField
     {
     }
 }

@@ -21,145 +21,154 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class SetLoggingServiceRequest extends \Google\Model
-{
-    /**
-     * Deprecated. The name of the cluster to upgrade. This field has been
-     * deprecated and replaced by the name field.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $clusterId;
-    /**
-     * Required. The logging service the cluster should use to write logs.
-     * Currently available options: * `logging.googleapis.com/kubernetes` - The
-     * Cloud Logging service with a Kubernetes-native resource model *
-     * `logging.googleapis.com` - The legacy Cloud Logging service (no longer
-     * available as of GKE 1.15). * `none` - no logs will be exported from the
-     * cluster. If left as an empty string,`logging.googleapis.com/kubernetes`
-     * will be used for GKE 1.14+ or `logging.googleapis.com` for earlier
-     * versions.
-     *
-     * @var string
-     */
-    public $loggingService;
-    /**
-     * The name (project, location, cluster) of the cluster to set logging.
-     * Specified in the format `projects/locations/clusters`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Deprecated. The Google Developers Console [project ID or project
-     * number](https://cloud.google.com/resource-manager/docs/creating-managing-
-     * projects). This field has been deprecated and replaced by the name field.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $projectId;
-    /**
-     * Deprecated. The name of the Google Compute Engine
-     * [zone](https://cloud.google.com/compute/docs/zones#available) in which the
-     * cluster resides. This field has been deprecated and replaced by the name
-     * field.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $zone;
-    /**
-     * Deprecated. The name of the cluster to upgrade. This field has been
-     * deprecated and replaced by the name field.
-     *
-     * @deprecated
-     * @param string $clusterId
-     */
-    public function setClusterId($clusterId)
+namespace Google\Service\Container {
+    class SetLoggingServiceRequest extends \Google\Model
     {
+        /**
+         * Deprecated. The name of the cluster to upgrade. This field has been
+         * deprecated and replaced by the name field.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $clusterId;
+        /**
+         * Required. The logging service the cluster should use to write logs.
+         * Currently available options: * `logging.googleapis.com/kubernetes` - The
+         * Cloud Logging service with a Kubernetes-native resource model *
+         * `logging.googleapis.com` - The legacy Cloud Logging service (no longer
+         * available as of GKE 1.15). * `none` - no logs will be exported from the
+         * cluster. If left as an empty string,`logging.googleapis.com/kubernetes`
+         * will be used for GKE 1.14+ or `logging.googleapis.com` for earlier
+         * versions.
+         *
+         * @var string
+         */
+        public $loggingService;
+        /**
+         * The name (project, location, cluster) of the cluster to set logging.
+         * Specified in the format `projects/locations/clusters`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Deprecated. The Google Developers Console [project ID or project
+         * number](https://cloud.google.com/resource-manager/docs/creating-managing-
+         * projects). This field has been deprecated and replaced by the name field.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $projectId;
+        /**
+         * Deprecated. The name of the Google Compute Engine
+         * [zone](https://cloud.google.com/compute/docs/zones#available) in which the
+         * cluster resides. This field has been deprecated and replaced by the name
+         * field.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $zone;
+        /**
+         * Deprecated. The name of the cluster to upgrade. This field has been
+         * deprecated and replaced by the name field.
+         *
+         * @deprecated
+         * @param string $clusterId
+         */
+        public function setClusterId($clusterId)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getClusterId()
+        {
+        }
+        /**
+         * Required. The logging service the cluster should use to write logs.
+         * Currently available options: * `logging.googleapis.com/kubernetes` - The
+         * Cloud Logging service with a Kubernetes-native resource model *
+         * `logging.googleapis.com` - The legacy Cloud Logging service (no longer
+         * available as of GKE 1.15). * `none` - no logs will be exported from the
+         * cluster. If left as an empty string,`logging.googleapis.com/kubernetes`
+         * will be used for GKE 1.14+ or `logging.googleapis.com` for earlier
+         * versions.
+         *
+         * @param string $loggingService
+         */
+        public function setLoggingService($loggingService)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLoggingService()
+        {
+        }
+        /**
+         * The name (project, location, cluster) of the cluster to set logging.
+         * Specified in the format `projects/locations/clusters`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Deprecated. The Google Developers Console [project ID or project
+         * number](https://cloud.google.com/resource-manager/docs/creating-managing-
+         * projects). This field has been deprecated and replaced by the name field.
+         *
+         * @deprecated
+         * @param string $projectId
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
+        /**
+         * Deprecated. The name of the Google Compute Engine
+         * [zone](https://cloud.google.com/compute/docs/zones#available) in which the
+         * cluster resides. This field has been deprecated and replaced by the name
+         * field.
+         *
+         * @deprecated
+         * @param string $zone
+         */
+        public function setZone($zone)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getZone()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return string
+     * Runtime class alias of \Google\Service\Container\SetLoggingServiceRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClusterId()
-    {
-    }
-    /**
-     * Required. The logging service the cluster should use to write logs.
-     * Currently available options: * `logging.googleapis.com/kubernetes` - The
-     * Cloud Logging service with a Kubernetes-native resource model *
-     * `logging.googleapis.com` - The legacy Cloud Logging service (no longer
-     * available as of GKE 1.15). * `none` - no logs will be exported from the
-     * cluster. If left as an empty string,`logging.googleapis.com/kubernetes`
-     * will be used for GKE 1.14+ or `logging.googleapis.com` for earlier
-     * versions.
-     *
-     * @param string $loggingService
-     */
-    public function setLoggingService($loggingService)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLoggingService()
-    {
-    }
-    /**
-     * The name (project, location, cluster) of the cluster to set logging.
-     * Specified in the format `projects/locations/clusters`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Deprecated. The Google Developers Console [project ID or project
-     * number](https://cloud.google.com/resource-manager/docs/creating-managing-
-     * projects). This field has been deprecated and replaced by the name field.
-     *
-     * @deprecated
-     * @param string $projectId
-     */
-    public function setProjectId($projectId)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getProjectId()
-    {
-    }
-    /**
-     * Deprecated. The name of the Google Compute Engine
-     * [zone](https://cloud.google.com/compute/docs/zones#available) in which the
-     * cluster resides. This field has been deprecated and replaced by the name
-     * field.
-     *
-     * @deprecated
-     * @param string $zone
-     */
-    public function setZone($zone)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getZone()
+    class Google_Service_Container_SetLoggingServiceRequest extends \Google\Service\Container\SetLoggingServiceRequest
     {
     }
 }

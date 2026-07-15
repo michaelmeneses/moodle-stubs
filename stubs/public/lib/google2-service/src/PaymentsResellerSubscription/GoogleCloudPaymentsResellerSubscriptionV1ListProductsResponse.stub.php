@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PaymentsResellerSubscription;
-
-class GoogleCloudPaymentsResellerSubscriptionV1ListProductsResponse extends \Google\Collection
-{
-    protected $collection_key = 'products';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    protected $productsType = GoogleCloudPaymentsResellerSubscriptionV1Product::class;
-    protected $productsDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\PaymentsResellerSubscription {
+    class GoogleCloudPaymentsResellerSubscriptionV1ListProductsResponse extends \Google\Collection
     {
+        protected $collection_key = 'products';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        protected $productsType = GoogleCloudPaymentsResellerSubscriptionV1Product::class;
+        protected $productsDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param GoogleCloudPaymentsResellerSubscriptionV1Product[]
+         */
+        public function setProducts($products)
+        {
+        }
+        /**
+         * @return GoogleCloudPaymentsResellerSubscriptionV1Product[]
+         */
+        public function getProducts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1ListProductsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param GoogleCloudPaymentsResellerSubscriptionV1Product[]
-     */
-    public function setProducts($products)
-    {
-    }
-    /**
-     * @return GoogleCloudPaymentsResellerSubscriptionV1Product[]
-     */
-    public function getProducts()
+    class Google_Service_PaymentsResellerSubscription_GoogleCloudPaymentsResellerSubscriptionV1ListProductsResponse extends \Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1ListProductsResponse
     {
     }
 }

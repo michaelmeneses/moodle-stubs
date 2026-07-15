@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class RewrittenQuery extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $rewrittenQuery;
-    public $score;
-    /**
-     * @var string
-     */
-    public $sortBy;
-    /**
-     * @param string
-     */
-    public function setRewrittenQuery($rewrittenQuery)
+namespace Google\Service\CloudSearch {
+    class RewrittenQuery extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $rewrittenQuery;
+        public $score;
+        /**
+         * @var string
+         */
+        public $sortBy;
+        /**
+         * @param string
+         */
+        public function setRewrittenQuery($rewrittenQuery)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRewrittenQuery()
+        {
+        }
+        public function setScore($score)
+        {
+        }
+        public function getScore()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSortBy($sortBy)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSortBy()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\RewrittenQuery registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRewrittenQuery()
-    {
-    }
-    public function setScore($score)
-    {
-    }
-    public function getScore()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSortBy($sortBy)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSortBy()
+    class Google_Service_CloudSearch_RewrittenQuery extends \Google\Service\CloudSearch\RewrittenQuery
     {
     }
 }

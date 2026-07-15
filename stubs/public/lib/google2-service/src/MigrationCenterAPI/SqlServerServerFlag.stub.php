@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class SqlServerServerFlag extends \Google\Model
-{
-    /**
-     * Required. The server flag name.
-     *
-     * @var string
-     */
-    public $serverFlagName;
-    /**
-     * Required. The server flag value set by the user.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Required. The server flag actual value. If `value_in_use` is different from
-     * `value` it means that either the configuration change was not applied or it
-     * is an expected behavior. See SQL Server documentation for more details.
-     *
-     * @var string
-     */
-    public $valueInUse;
-    /**
-     * Required. The server flag name.
-     *
-     * @param string $serverFlagName
-     */
-    public function setServerFlagName($serverFlagName)
+namespace Google\Service\MigrationCenterAPI {
+    class SqlServerServerFlag extends \Google\Model
     {
+        /**
+         * Required. The server flag name.
+         *
+         * @var string
+         */
+        public $serverFlagName;
+        /**
+         * Required. The server flag value set by the user.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Required. The server flag actual value. If `value_in_use` is different from
+         * `value` it means that either the configuration change was not applied or it
+         * is an expected behavior. See SQL Server documentation for more details.
+         *
+         * @var string
+         */
+        public $valueInUse;
+        /**
+         * Required. The server flag name.
+         *
+         * @param string $serverFlagName
+         */
+        public function setServerFlagName($serverFlagName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServerFlagName()
+        {
+        }
+        /**
+         * Required. The server flag value set by the user.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
+        /**
+         * Required. The server flag actual value. If `value_in_use` is different from
+         * `value` it means that either the configuration change was not applied or it
+         * is an expected behavior. See SQL Server documentation for more details.
+         *
+         * @param string $valueInUse
+         */
+        public function setValueInUse($valueInUse)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValueInUse()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\SqlServerServerFlag registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getServerFlagName()
-    {
-    }
-    /**
-     * Required. The server flag value set by the user.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
-    {
-    }
-    /**
-     * Required. The server flag actual value. If `value_in_use` is different from
-     * `value` it means that either the configuration change was not applied or it
-     * is an expected behavior. See SQL Server documentation for more details.
-     *
-     * @param string $valueInUse
-     */
-    public function setValueInUse($valueInUse)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValueInUse()
+    class Google_Service_MigrationCenterAPI_SqlServerServerFlag extends \Google\Service\MigrationCenterAPI\SqlServerServerFlag
     {
     }
 }

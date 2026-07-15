@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class NodeGroupsSetNodeTemplateRequest extends \Google\Model
-{
-    /**
-     * Full or partial URL of the node template resource to be updated for this
-     * node group.
-     *
-     * @var string
-     */
-    public $nodeTemplate;
-    /**
-     * Full or partial URL of the node template resource to be updated for this
-     * node group.
-     *
-     * @param string $nodeTemplate
-     */
-    public function setNodeTemplate($nodeTemplate)
+namespace Google\Service\Compute {
+    class NodeGroupsSetNodeTemplateRequest extends \Google\Model
     {
+        /**
+         * Full or partial URL of the node template resource to be updated for this
+         * node group.
+         *
+         * @var string
+         */
+        public $nodeTemplate;
+        /**
+         * Full or partial URL of the node template resource to be updated for this
+         * node group.
+         *
+         * @param string $nodeTemplate
+         */
+        public function setNodeTemplate($nodeTemplate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNodeTemplate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\NodeGroupsSetNodeTemplateRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNodeTemplate()
+    class Google_Service_Compute_NodeGroupsSetNodeTemplateRequest extends \Google\Service\Compute\NodeGroupsSetNodeTemplateRequest
     {
     }
 }

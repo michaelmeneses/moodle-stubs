@@ -21,63 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Appengine;
-
-class VpcAccessConnector extends \Google\Model
-{
-    public const EGRESS_SETTING_EGRESS_SETTING_UNSPECIFIED = 'EGRESS_SETTING_UNSPECIFIED';
-    /**
-     * Force the use of VPC Access for all egress traffic from the function.
-     */
-    public const EGRESS_SETTING_ALL_TRAFFIC = 'ALL_TRAFFIC';
-    /**
-     * Use the VPC Access Connector for private IP space from RFC1918.
-     */
-    public const EGRESS_SETTING_PRIVATE_IP_RANGES = 'PRIVATE_IP_RANGES';
-    /**
-     * The egress setting for the connector, controlling what traffic is diverted
-     * through it.
-     *
-     * @var string
-     */
-    public $egressSetting;
-    /**
-     * Full Serverless VPC Access Connector name e.g. projects/my-
-     * project/locations/us-central1/connectors/c1.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The egress setting for the connector, controlling what traffic is diverted
-     * through it.
-     *
-     * Accepted values: EGRESS_SETTING_UNSPECIFIED, ALL_TRAFFIC, PRIVATE_IP_RANGES
-     *
-     * @param self::EGRESS_SETTING_* $egressSetting
-     */
-    public function setEgressSetting($egressSetting)
+namespace Google\Service\Appengine {
+    class VpcAccessConnector extends \Google\Model
     {
+        public const EGRESS_SETTING_EGRESS_SETTING_UNSPECIFIED = 'EGRESS_SETTING_UNSPECIFIED';
+        /**
+         * Force the use of VPC Access for all egress traffic from the function.
+         */
+        public const EGRESS_SETTING_ALL_TRAFFIC = 'ALL_TRAFFIC';
+        /**
+         * Use the VPC Access Connector for private IP space from RFC1918.
+         */
+        public const EGRESS_SETTING_PRIVATE_IP_RANGES = 'PRIVATE_IP_RANGES';
+        /**
+         * The egress setting for the connector, controlling what traffic is diverted
+         * through it.
+         *
+         * @var string
+         */
+        public $egressSetting;
+        /**
+         * Full Serverless VPC Access Connector name e.g. projects/my-
+         * project/locations/us-central1/connectors/c1.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The egress setting for the connector, controlling what traffic is diverted
+         * through it.
+         *
+         * Accepted values: EGRESS_SETTING_UNSPECIFIED, ALL_TRAFFIC, PRIVATE_IP_RANGES
+         *
+         * @param self::EGRESS_SETTING_* $egressSetting
+         */
+        public function setEgressSetting($egressSetting)
+        {
+        }
+        /**
+         * @return self::EGRESS_SETTING_*
+         */
+        public function getEgressSetting()
+        {
+        }
+        /**
+         * Full Serverless VPC Access Connector name e.g. projects/my-
+         * project/locations/us-central1/connectors/c1.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::EGRESS_SETTING_*
+     * Runtime class alias of \Google\Service\Appengine\VpcAccessConnector registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEgressSetting()
-    {
-    }
-    /**
-     * Full Serverless VPC Access Connector name e.g. projects/my-
-     * project/locations/us-central1/connectors/c1.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Appengine_VpcAccessConnector extends \Google\Service\Appengine\VpcAccessConnector
     {
     }
 }

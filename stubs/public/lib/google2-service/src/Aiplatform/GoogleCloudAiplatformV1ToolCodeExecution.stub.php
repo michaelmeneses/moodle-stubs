@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ToolCodeExecution extends \Google\Model
-{
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ToolCodeExecution extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ToolCodeExecution registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ToolCodeExecution extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ToolCodeExecution
+    {
+    }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TrafficDirectorService;
-
-class StaticListener extends \Google\Model
-{
-    /**
-     * The timestamp when the Listener was last successfully updated.
-     *
-     * @var string
-     */
-    public $lastUpdated;
-    /**
-     * The listener config.
-     *
-     * @var array[]
-     */
-    public $listener;
-    /**
-     * The timestamp when the Listener was last successfully updated.
-     *
-     * @param string $lastUpdated
-     */
-    public function setLastUpdated($lastUpdated)
+namespace Google\Service\TrafficDirectorService {
+    class StaticListener extends \Google\Model
     {
+        /**
+         * The timestamp when the Listener was last successfully updated.
+         *
+         * @var string
+         */
+        public $lastUpdated;
+        /**
+         * The listener config.
+         *
+         * @var array[]
+         */
+        public $listener;
+        /**
+         * The timestamp when the Listener was last successfully updated.
+         *
+         * @param string $lastUpdated
+         */
+        public function setLastUpdated($lastUpdated)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastUpdated()
+        {
+        }
+        /**
+         * The listener config.
+         *
+         * @param array[] $listener
+         */
+        public function setListener($listener)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getListener()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\TrafficDirectorService\StaticListener registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLastUpdated()
-    {
-    }
-    /**
-     * The listener config.
-     *
-     * @param array[] $listener
-     */
-    public function setListener($listener)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getListener()
+    class Google_Service_TrafficDirectorService_StaticListener extends \Google\Service\TrafficDirectorService\StaticListener
     {
     }
 }

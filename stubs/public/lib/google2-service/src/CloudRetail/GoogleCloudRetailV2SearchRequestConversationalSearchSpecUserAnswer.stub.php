@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2SearchRequestConversationalSearchSpecUserAnswer extends \Google\Model
-{
-    protected $selectedAnswerType = GoogleCloudRetailV2SearchRequestConversationalSearchSpecUserAnswerSelectedAnswer::class;
-    protected $selectedAnswerDataType = '';
-    /**
-     * This field specifies the incremental input text from the user during the
-     * conversational search.
-     *
-     * @var string
-     */
-    public $textAnswer;
-    /**
-     * This field specifies the selected attributes during the conversational
-     * search. This should be a subset of
-     * ConversationalSearchResult.suggested_answers.
-     *
-     * @param GoogleCloudRetailV2SearchRequestConversationalSearchSpecUserAnswerSelectedAnswer $selectedAnswer
-     */
-    public function setSelectedAnswer(GoogleCloudRetailV2SearchRequestConversationalSearchSpecUserAnswerSelectedAnswer $selectedAnswer)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2SearchRequestConversationalSearchSpecUserAnswer extends \Google\Model
     {
+        protected $selectedAnswerType = GoogleCloudRetailV2SearchRequestConversationalSearchSpecUserAnswerSelectedAnswer::class;
+        protected $selectedAnswerDataType = '';
+        /**
+         * This field specifies the incremental input text from the user during the
+         * conversational search.
+         *
+         * @var string
+         */
+        public $textAnswer;
+        /**
+         * This field specifies the selected attributes during the conversational
+         * search. This should be a subset of
+         * ConversationalSearchResult.suggested_answers.
+         *
+         * @param GoogleCloudRetailV2SearchRequestConversationalSearchSpecUserAnswerSelectedAnswer $selectedAnswer
+         */
+        public function setSelectedAnswer(GoogleCloudRetailV2SearchRequestConversationalSearchSpecUserAnswerSelectedAnswer $selectedAnswer)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2SearchRequestConversationalSearchSpecUserAnswerSelectedAnswer
+         */
+        public function getSelectedAnswer()
+        {
+        }
+        /**
+         * This field specifies the incremental input text from the user during the
+         * conversational search.
+         *
+         * @param string $textAnswer
+         */
+        public function setTextAnswer($textAnswer)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTextAnswer()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRetailV2SearchRequestConversationalSearchSpecUserAnswerSelectedAnswer
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2SearchRequestConversationalSearchSpecUserAnswer registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSelectedAnswer()
-    {
-    }
-    /**
-     * This field specifies the incremental input text from the user during the
-     * conversational search.
-     *
-     * @param string $textAnswer
-     */
-    public function setTextAnswer($textAnswer)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTextAnswer()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2SearchRequestConversationalSearchSpecUserAnswer extends \Google\Service\CloudRetail\GoogleCloudRetailV2SearchRequestConversationalSearchSpecUserAnswer
     {
     }
 }

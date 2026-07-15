@@ -21,124 +21,133 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BackupforGKE;
-
-class BackupConfigDetails extends \Google\Model
-{
-    /**
-     * Output only. If True, include all namespaced resources
-     *
-     * @var bool
-     */
-    public $allNamespaces;
-    protected $encryptionKeyType = EncryptionKey::class;
-    protected $encryptionKeyDataType = '';
-    /**
-     * Output only. This flag specifies whether Kubernetes Secret resources should
-     * be included when they fall into the scope of Backups. Default: False
-     *
-     * @var bool
-     */
-    public $includeSecrets;
-    /**
-     * Output only. This flag specifies whether volume data should be backed up
-     * when PVCs are included in the scope of a Backup. Default: False
-     *
-     * @var bool
-     */
-    public $includeVolumeData;
-    protected $selectedApplicationsType = NamespacedNames::class;
-    protected $selectedApplicationsDataType = '';
-    protected $selectedNamespacesType = Namespaces::class;
-    protected $selectedNamespacesDataType = '';
-    /**
-     * Output only. If True, include all namespaced resources
-     *
-     * @param bool $allNamespaces
-     */
-    public function setAllNamespaces($allNamespaces)
+namespace Google\Service\BackupforGKE {
+    class BackupConfigDetails extends \Google\Model
     {
+        /**
+         * Output only. If True, include all namespaced resources
+         *
+         * @var bool
+         */
+        public $allNamespaces;
+        protected $encryptionKeyType = EncryptionKey::class;
+        protected $encryptionKeyDataType = '';
+        /**
+         * Output only. This flag specifies whether Kubernetes Secret resources should
+         * be included when they fall into the scope of Backups. Default: False
+         *
+         * @var bool
+         */
+        public $includeSecrets;
+        /**
+         * Output only. This flag specifies whether volume data should be backed up
+         * when PVCs are included in the scope of a Backup. Default: False
+         *
+         * @var bool
+         */
+        public $includeVolumeData;
+        protected $selectedApplicationsType = NamespacedNames::class;
+        protected $selectedApplicationsDataType = '';
+        protected $selectedNamespacesType = Namespaces::class;
+        protected $selectedNamespacesDataType = '';
+        /**
+         * Output only. If True, include all namespaced resources
+         *
+         * @param bool $allNamespaces
+         */
+        public function setAllNamespaces($allNamespaces)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAllNamespaces()
+        {
+        }
+        /**
+         * Output only. This defines a customer managed encryption key that will be
+         * used to encrypt the "config" portion (the Kubernetes resources) of Backups
+         * created via this plan. Default (empty): Config backup artifacts will not be
+         * encrypted.
+         *
+         * @param EncryptionKey $encryptionKey
+         */
+        public function setEncryptionKey(EncryptionKey $encryptionKey)
+        {
+        }
+        /**
+         * @return EncryptionKey
+         */
+        public function getEncryptionKey()
+        {
+        }
+        /**
+         * Output only. This flag specifies whether Kubernetes Secret resources should
+         * be included when they fall into the scope of Backups. Default: False
+         *
+         * @param bool $includeSecrets
+         */
+        public function setIncludeSecrets($includeSecrets)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIncludeSecrets()
+        {
+        }
+        /**
+         * Output only. This flag specifies whether volume data should be backed up
+         * when PVCs are included in the scope of a Backup. Default: False
+         *
+         * @param bool $includeVolumeData
+         */
+        public function setIncludeVolumeData($includeVolumeData)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIncludeVolumeData()
+        {
+        }
+        /**
+         * Output only. If set, include just the resources referenced by the listed
+         * ProtectedApplications.
+         *
+         * @param NamespacedNames $selectedApplications
+         */
+        public function setSelectedApplications(NamespacedNames $selectedApplications)
+        {
+        }
+        /**
+         * @return NamespacedNames
+         */
+        public function getSelectedApplications()
+        {
+        }
+        /**
+         * Output only. If set, include just the resources in the listed namespaces.
+         *
+         * @param Namespaces $selectedNamespaces
+         */
+        public function setSelectedNamespaces(Namespaces $selectedNamespaces)
+        {
+        }
+        /**
+         * @return Namespaces
+         */
+        public function getSelectedNamespaces()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\BackupforGKE\BackupConfigDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllNamespaces()
-    {
-    }
-    /**
-     * Output only. This defines a customer managed encryption key that will be
-     * used to encrypt the "config" portion (the Kubernetes resources) of Backups
-     * created via this plan. Default (empty): Config backup artifacts will not be
-     * encrypted.
-     *
-     * @param EncryptionKey $encryptionKey
-     */
-    public function setEncryptionKey(EncryptionKey $encryptionKey)
-    {
-    }
-    /**
-     * @return EncryptionKey
-     */
-    public function getEncryptionKey()
-    {
-    }
-    /**
-     * Output only. This flag specifies whether Kubernetes Secret resources should
-     * be included when they fall into the scope of Backups. Default: False
-     *
-     * @param bool $includeSecrets
-     */
-    public function setIncludeSecrets($includeSecrets)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIncludeSecrets()
-    {
-    }
-    /**
-     * Output only. This flag specifies whether volume data should be backed up
-     * when PVCs are included in the scope of a Backup. Default: False
-     *
-     * @param bool $includeVolumeData
-     */
-    public function setIncludeVolumeData($includeVolumeData)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIncludeVolumeData()
-    {
-    }
-    /**
-     * Output only. If set, include just the resources referenced by the listed
-     * ProtectedApplications.
-     *
-     * @param NamespacedNames $selectedApplications
-     */
-    public function setSelectedApplications(NamespacedNames $selectedApplications)
-    {
-    }
-    /**
-     * @return NamespacedNames
-     */
-    public function getSelectedApplications()
-    {
-    }
-    /**
-     * Output only. If set, include just the resources in the listed namespaces.
-     *
-     * @param Namespaces $selectedNamespaces
-     */
-    public function setSelectedNamespaces(Namespaces $selectedNamespaces)
-    {
-    }
-    /**
-     * @return Namespaces
-     */
-    public function getSelectedNamespaces()
+    class Google_Service_BackupforGKE_BackupConfigDetails extends \Google\Service\BackupforGKE\BackupConfigDetails
     {
     }
 }

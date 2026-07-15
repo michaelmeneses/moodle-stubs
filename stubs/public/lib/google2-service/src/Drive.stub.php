@@ -21,66 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for Drive (v3).
- *
- * <p>
- * The Google Drive API allows clients to access resources from Google Drive.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://developers.google.com/workspace/drive/" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class Drive extends \Google\Service
-{
-    /** See, edit, create, and delete all of your Google Drive files. */
-    const DRIVE = "https://www.googleapis.com/auth/drive";
-    /** See, create, and delete its own configuration data in your Google Drive. */
-    const DRIVE_APPDATA = "https://www.googleapis.com/auth/drive.appdata";
-    /** View your Google Drive apps. */
-    const DRIVE_APPS_READONLY = "https://www.googleapis.com/auth/drive.apps.readonly";
-    /** See, edit, create, and delete only the specific Google Drive files you use with this app. */
-    const DRIVE_FILE = "https://www.googleapis.com/auth/drive.file";
-    /** See and download your Google Drive files that were created or edited by Google Meet.. */
-    const DRIVE_MEET_READONLY = "https://www.googleapis.com/auth/drive.meet.readonly";
-    /** View and manage metadata of files in your Google Drive. */
-    const DRIVE_METADATA = "https://www.googleapis.com/auth/drive.metadata";
-    /** See information about your Google Drive files. */
-    const DRIVE_METADATA_READONLY = "https://www.googleapis.com/auth/drive.metadata.readonly";
-    /** View the photos, videos and albums in your Google Photos. */
-    const DRIVE_PHOTOS_READONLY = "https://www.googleapis.com/auth/drive.photos.readonly";
-    /** See and download all your Google Drive files. */
-    const DRIVE_READONLY = "https://www.googleapis.com/auth/drive.readonly";
-    /** Modify your Google Apps Script scripts' behavior. */
-    const DRIVE_SCRIPTS = "https://www.googleapis.com/auth/drive.scripts";
-    public $about;
-    public $accessproposals;
-    public $approvals;
-    public $apps;
-    public $changes;
-    public $channels;
-    public $comments;
-    public $drives;
-    public $files;
-    public $operations;
-    public $permissions;
-    public $replies;
-    public $revisions;
-    public $teamdrives;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the Drive service.
+     * Service definition for Drive (v3).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * The Google Drive API allows clients to access resources from Google Drive.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://developers.google.com/workspace/drive/" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class Drive extends \Google\Service
+    {
+        /** See, edit, create, and delete all of your Google Drive files. */
+        const DRIVE = "https://www.googleapis.com/auth/drive";
+        /** See, create, and delete its own configuration data in your Google Drive. */
+        const DRIVE_APPDATA = "https://www.googleapis.com/auth/drive.appdata";
+        /** View your Google Drive apps. */
+        const DRIVE_APPS_READONLY = "https://www.googleapis.com/auth/drive.apps.readonly";
+        /** See, edit, create, and delete only the specific Google Drive files you use with this app. */
+        const DRIVE_FILE = "https://www.googleapis.com/auth/drive.file";
+        /** See and download your Google Drive files that were created or edited by Google Meet.. */
+        const DRIVE_MEET_READONLY = "https://www.googleapis.com/auth/drive.meet.readonly";
+        /** View and manage metadata of files in your Google Drive. */
+        const DRIVE_METADATA = "https://www.googleapis.com/auth/drive.metadata";
+        /** See information about your Google Drive files. */
+        const DRIVE_METADATA_READONLY = "https://www.googleapis.com/auth/drive.metadata.readonly";
+        /** View the photos, videos and albums in your Google Photos. */
+        const DRIVE_PHOTOS_READONLY = "https://www.googleapis.com/auth/drive.photos.readonly";
+        /** See and download all your Google Drive files. */
+        const DRIVE_READONLY = "https://www.googleapis.com/auth/drive.readonly";
+        /** Modify your Google Apps Script scripts' behavior. */
+        const DRIVE_SCRIPTS = "https://www.googleapis.com/auth/drive.scripts";
+        public $about;
+        public $accessproposals;
+        public $approvals;
+        public $apps;
+        public $changes;
+        public $channels;
+        public $comments;
+        public $drives;
+        public $files;
+        public $operations;
+        public $permissions;
+        public $replies;
+        public $revisions;
+        public $teamdrives;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the Drive service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Drive registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Drive extends \Google\Service\Drive
     {
     }
 }

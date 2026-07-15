@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GdataObjectId extends \Google\Model
-{
-    /**
-     * The name of the bucket to which this object belongs.
-     *
-     * @var string
-     */
-    public $bucketName;
-    /**
-     * Generation of the object. Generations are monotonically increasing across
-     * writes, allowing them to be be compared to determine which generation is
-     * newer. If this is omitted in a request, then you are requesting the live
-     * object. See http://go/bigstore-versions
-     *
-     * @var string
-     */
-    public $generation;
-    /**
-     * The name of the object.
-     *
-     * @var string
-     */
-    public $objectName;
-    /**
-     * The name of the bucket to which this object belongs.
-     *
-     * @param string $bucketName
-     */
-    public function setBucketName($bucketName)
+namespace Google\Service\DiscoveryEngine {
+    class GdataObjectId extends \Google\Model
     {
+        /**
+         * The name of the bucket to which this object belongs.
+         *
+         * @var string
+         */
+        public $bucketName;
+        /**
+         * Generation of the object. Generations are monotonically increasing across
+         * writes, allowing them to be be compared to determine which generation is
+         * newer. If this is omitted in a request, then you are requesting the live
+         * object. See http://go/bigstore-versions
+         *
+         * @var string
+         */
+        public $generation;
+        /**
+         * The name of the object.
+         *
+         * @var string
+         */
+        public $objectName;
+        /**
+         * The name of the bucket to which this object belongs.
+         *
+         * @param string $bucketName
+         */
+        public function setBucketName($bucketName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBucketName()
+        {
+        }
+        /**
+         * Generation of the object. Generations are monotonically increasing across
+         * writes, allowing them to be be compared to determine which generation is
+         * newer. If this is omitted in a request, then you are requesting the live
+         * object. See http://go/bigstore-versions
+         *
+         * @param string $generation
+         */
+        public function setGeneration($generation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGeneration()
+        {
+        }
+        /**
+         * The name of the object.
+         *
+         * @param string $objectName
+         */
+        public function setObjectName($objectName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GdataObjectId registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBucketName()
-    {
-    }
-    /**
-     * Generation of the object. Generations are monotonically increasing across
-     * writes, allowing them to be be compared to determine which generation is
-     * newer. If this is omitted in a request, then you are requesting the live
-     * object. See http://go/bigstore-versions
-     *
-     * @param string $generation
-     */
-    public function setGeneration($generation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGeneration()
-    {
-    }
-    /**
-     * The name of the object.
-     *
-     * @param string $objectName
-     */
-    public function setObjectName($objectName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObjectName()
+    class Google_Service_DiscoveryEngine_GdataObjectId extends \Google\Service\DiscoveryEngine\GdataObjectId
     {
     }
 }

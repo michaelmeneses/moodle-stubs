@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class CloudAiLargeModelsVisionRaiInfoDetectedLabelsEntity extends \Google\Model
-{
-    protected $boundingBoxType = CloudAiLargeModelsVisionRaiInfoDetectedLabelsBoundingBox::class;
-    protected $boundingBoxDataType = '';
-    /**
-     * Description of the label
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * The intersection ratio between the detection bounding box and the mask.
-     *
-     * @var float
-     */
-    public $iouScore;
-    /**
-     * MID of the label
-     *
-     * @var string
-     */
-    public $mid;
-    /**
-     * Confidence score of the label
-     *
-     * @var float
-     */
-    public $score;
-    /**
-     * Bounding box of the label
-     *
-     * @param CloudAiLargeModelsVisionRaiInfoDetectedLabelsBoundingBox $boundingBox
-     */
-    public function setBoundingBox(CloudAiLargeModelsVisionRaiInfoDetectedLabelsBoundingBox $boundingBox)
+namespace Google\Service\Aiplatform {
+    class CloudAiLargeModelsVisionRaiInfoDetectedLabelsEntity extends \Google\Model
     {
+        protected $boundingBoxType = CloudAiLargeModelsVisionRaiInfoDetectedLabelsBoundingBox::class;
+        protected $boundingBoxDataType = '';
+        /**
+         * Description of the label
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * The intersection ratio between the detection bounding box and the mask.
+         *
+         * @var float
+         */
+        public $iouScore;
+        /**
+         * MID of the label
+         *
+         * @var string
+         */
+        public $mid;
+        /**
+         * Confidence score of the label
+         *
+         * @var float
+         */
+        public $score;
+        /**
+         * Bounding box of the label
+         *
+         * @param CloudAiLargeModelsVisionRaiInfoDetectedLabelsBoundingBox $boundingBox
+         */
+        public function setBoundingBox(CloudAiLargeModelsVisionRaiInfoDetectedLabelsBoundingBox $boundingBox)
+        {
+        }
+        /**
+         * @return CloudAiLargeModelsVisionRaiInfoDetectedLabelsBoundingBox
+         */
+        public function getBoundingBox()
+        {
+        }
+        /**
+         * Description of the label
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * The intersection ratio between the detection bounding box and the mask.
+         *
+         * @param float $iouScore
+         */
+        public function setIouScore($iouScore)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getIouScore()
+        {
+        }
+        /**
+         * MID of the label
+         *
+         * @param string $mid
+         */
+        public function setMid($mid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMid()
+        {
+        }
+        /**
+         * Confidence score of the label
+         *
+         * @param float $score
+         */
+        public function setScore($score)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getScore()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CloudAiLargeModelsVisionRaiInfoDetectedLabelsBoundingBox
+     * Runtime class alias of \Google\Service\Aiplatform\CloudAiLargeModelsVisionRaiInfoDetectedLabelsEntity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBoundingBox()
-    {
-    }
-    /**
-     * Description of the label
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * The intersection ratio between the detection bounding box and the mask.
-     *
-     * @param float $iouScore
-     */
-    public function setIouScore($iouScore)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getIouScore()
-    {
-    }
-    /**
-     * MID of the label
-     *
-     * @param string $mid
-     */
-    public function setMid($mid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMid()
-    {
-    }
-    /**
-     * Confidence score of the label
-     *
-     * @param float $score
-     */
-    public function setScore($score)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getScore()
+    class Google_Service_Aiplatform_CloudAiLargeModelsVisionRaiInfoDetectedLabelsEntity extends \Google\Service\Aiplatform\CloudAiLargeModelsVisionRaiInfoDetectedLabelsEntity
     {
     }
 }

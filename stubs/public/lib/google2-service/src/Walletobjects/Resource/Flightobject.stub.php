@@ -21,115 +21,128 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects\Resource;
-
-/**
- * The "flightobject" collection of methods.
- * Typical usage is:
- *  <code>
- *   $walletobjectsService = new Google\Service\Walletobjects(...);
- *   $flightobject = $walletobjectsService->flightobject;
- *  </code>
- */
-class Flightobject extends \Google\Service\Resource
-{
+namespace Google\Service\Walletobjects\Resource {
+    use Google\Service\Walletobjects\AddMessageRequest;
+    use Google\Service\Walletobjects\FlightObject as FlightObjectModel;
+    use Google\Service\Walletobjects\FlightObjectAddMessageResponse;
+    use Google\Service\Walletobjects\FlightObjectListResponse;
     /**
-     * Adds a message to the flight object referenced by the given object ID.
-     * (flightobject.addmessage)
-     *
-     * @param string $resourceId The unique identifier for an object. This ID must
-     * be unique across all objects from an issuer. This value should follow the
-     * format issuer ID. identifier where the former is issued by Google and latter
-     * is chosen by you. Your unique identifier should only include alphanumeric
-     * characters, '.', '_', or '-'.
-     * @param AddMessageRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return FlightObjectAddMessageResponse
-     * @throws \Google\Service\Exception
+     * The "flightobject" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $walletobjectsService = new Google\Service\Walletobjects(...);
+     *   $flightobject = $walletobjectsService->flightobject;
+     *  </code>
      */
-    public function addmessage($resourceId, AddMessageRequest $postBody, $optParams = [])
+    class Flightobject extends \Google\Service\Resource
     {
+        /**
+         * Adds a message to the flight object referenced by the given object ID.
+         * (flightobject.addmessage)
+         *
+         * @param string $resourceId The unique identifier for an object. This ID must
+         * be unique across all objects from an issuer. This value should follow the
+         * format issuer ID. identifier where the former is issued by Google and latter
+         * is chosen by you. Your unique identifier should only include alphanumeric
+         * characters, '.', '_', or '-'.
+         * @param AddMessageRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return FlightObjectAddMessageResponse
+         * @throws \Google\Service\Exception
+         */
+        public function addmessage($resourceId, AddMessageRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Returns the flight object with the given object ID. (flightobject.get)
+         *
+         * @param string $resourceId The unique identifier for an object. This ID must
+         * be unique across all objects from an issuer. This value should follow the
+         * format issuer ID. identifier where the former is issued by Google and latter
+         * is chosen by you. Your unique identifier should only include alphanumeric
+         * characters, '.', '_', or '-'.
+         * @param array $optParams Optional parameters.
+         * @return FlightObjectModel
+         * @throws \Google\Service\Exception
+         */
+        public function get($resourceId, $optParams = [])
+        {
+        }
+        /**
+         * Inserts an flight object with the given ID and properties.
+         * (flightobject.insert)
+         *
+         * @param FlightObjectModel $postBody
+         * @param array $optParams Optional parameters.
+         * @return FlightObjectModel
+         * @throws \Google\Service\Exception
+         */
+        public function insert(FlightObjectModel $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Returns a list of all flight objects for a given issuer ID.
+         * (flightobject.listFlightobject)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string classId The ID of the class whose objects will be listed.
+         * @opt_param int maxResults Identifies the max number of results returned by a
+         * list. All results are returned if `maxResults` isn't defined.
+         * @opt_param string token Used to get the next set of results if `maxResults`
+         * is specified, but more than `maxResults` objects are available in a list. For
+         * example, if you have a list of 200 objects and you call list with
+         * `maxResults` set to 20, list will return the first 20 objects and a token.
+         * Call list again with `maxResults` set to 20 and the token to get the next 20
+         * objects.
+         * @return FlightObjectListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listFlightobject($optParams = [])
+        {
+        }
+        /**
+         * Updates the flight object referenced by the given object ID. This method
+         * supports patch semantics. (flightobject.patch)
+         *
+         * @param string $resourceId The unique identifier for an object. This ID must
+         * be unique across all objects from an issuer. This value should follow the
+         * format issuer ID. identifier where the former is issued by Google and latter
+         * is chosen by you. Your unique identifier should only include alphanumeric
+         * characters, '.', '_', or '-'.
+         * @param FlightObjectModel $postBody
+         * @param array $optParams Optional parameters.
+         * @return FlightObjectModel
+         * @throws \Google\Service\Exception
+         */
+        public function patch($resourceId, FlightObjectModel $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Updates the flight object referenced by the given object ID.
+         * (flightobject.update)
+         *
+         * @param string $resourceId The unique identifier for an object. This ID must
+         * be unique across all objects from an issuer. This value should follow the
+         * format issuer ID. identifier where the former is issued by Google and latter
+         * is chosen by you. Your unique identifier should only include alphanumeric
+         * characters, '.', '_', or '-'.
+         * @param FlightObjectModel $postBody
+         * @param array $optParams Optional parameters.
+         * @return FlightObjectModel
+         * @throws \Google\Service\Exception
+         */
+        public function update($resourceId, FlightObjectModel $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Returns the flight object with the given object ID. (flightobject.get)
-     *
-     * @param string $resourceId The unique identifier for an object. This ID must
-     * be unique across all objects from an issuer. This value should follow the
-     * format issuer ID. identifier where the former is issued by Google and latter
-     * is chosen by you. Your unique identifier should only include alphanumeric
-     * characters, '.', '_', or '-'.
-     * @param array $optParams Optional parameters.
-     * @return FlightObjectModel
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Walletobjects\Resource\Flightobject registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($resourceId, $optParams = [])
-    {
-    }
-    /**
-     * Inserts an flight object with the given ID and properties.
-     * (flightobject.insert)
-     *
-     * @param FlightObjectModel $postBody
-     * @param array $optParams Optional parameters.
-     * @return FlightObjectModel
-     * @throws \Google\Service\Exception
-     */
-    public function insert(FlightObjectModel $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Returns a list of all flight objects for a given issuer ID.
-     * (flightobject.listFlightobject)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string classId The ID of the class whose objects will be listed.
-     * @opt_param int maxResults Identifies the max number of results returned by a
-     * list. All results are returned if `maxResults` isn't defined.
-     * @opt_param string token Used to get the next set of results if `maxResults`
-     * is specified, but more than `maxResults` objects are available in a list. For
-     * example, if you have a list of 200 objects and you call list with
-     * `maxResults` set to 20, list will return the first 20 objects and a token.
-     * Call list again with `maxResults` set to 20 and the token to get the next 20
-     * objects.
-     * @return FlightObjectListResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listFlightobject($optParams = [])
-    {
-    }
-    /**
-     * Updates the flight object referenced by the given object ID. This method
-     * supports patch semantics. (flightobject.patch)
-     *
-     * @param string $resourceId The unique identifier for an object. This ID must
-     * be unique across all objects from an issuer. This value should follow the
-     * format issuer ID. identifier where the former is issued by Google and latter
-     * is chosen by you. Your unique identifier should only include alphanumeric
-     * characters, '.', '_', or '-'.
-     * @param FlightObjectModel $postBody
-     * @param array $optParams Optional parameters.
-     * @return FlightObjectModel
-     * @throws \Google\Service\Exception
-     */
-    public function patch($resourceId, FlightObjectModel $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Updates the flight object referenced by the given object ID.
-     * (flightobject.update)
-     *
-     * @param string $resourceId The unique identifier for an object. This ID must
-     * be unique across all objects from an issuer. This value should follow the
-     * format issuer ID. identifier where the former is issued by Google and latter
-     * is chosen by you. Your unique identifier should only include alphanumeric
-     * characters, '.', '_', or '-'.
-     * @param FlightObjectModel $postBody
-     * @param array $optParams Optional parameters.
-     * @return FlightObjectModel
-     * @throws \Google\Service\Exception
-     */
-    public function update($resourceId, FlightObjectModel $postBody, $optParams = [])
+    class Google_Service_Walletobjects_Resource_Flightobject extends \Google\Service\Walletobjects\Resource\Flightobject
     {
     }
 }

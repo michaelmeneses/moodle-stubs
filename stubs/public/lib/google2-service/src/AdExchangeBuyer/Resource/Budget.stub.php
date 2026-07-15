@@ -21,60 +21,70 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer\Resource;
-
-/**
- * The "budget" collection of methods.
- * Typical usage is:
- *  <code>
- *   $adexchangebuyerService = new Google\Service\AdExchangeBuyer(...);
- *   $budget = $adexchangebuyerService->budget;
- *  </code>
- */
-class Budget extends \Google\Service\Resource
-{
+namespace Google\Service\AdExchangeBuyer\Resource {
+    use Google\Service\AdExchangeBuyer\Budget as BudgetModel;
     /**
-     * Returns the budget information for the adgroup specified by the accountId and
-     * billingId. (budget.get)
-     *
-     * @param string $accountId The account id to get the budget information for.
-     * @param string $billingId The billing id to get the budget information for.
-     * @param array $optParams Optional parameters.
-     * @return BudgetModel
+     * The "budget" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $adexchangebuyerService = new Google\Service\AdExchangeBuyer(...);
+     *   $budget = $adexchangebuyerService->budget;
+     *  </code>
      */
-    public function get($accountId, $billingId, $optParams = [])
+    class Budget extends \Google\Service\Resource
     {
+        /**
+         * Returns the budget information for the adgroup specified by the accountId and
+         * billingId. (budget.get)
+         *
+         * @param string $accountId The account id to get the budget information for.
+         * @param string $billingId The billing id to get the budget information for.
+         * @param array $optParams Optional parameters.
+         * @return BudgetModel
+         */
+        public function get($accountId, $billingId, $optParams = [])
+        {
+        }
+        /**
+         * Updates the budget amount for the budget of the adgroup specified by the
+         * accountId and billingId, with the budget amount in the request. This method
+         * supports patch semantics. (budget.patch)
+         *
+         * @param string $accountId The account id associated with the budget being
+         * updated.
+         * @param string $billingId The billing id associated with the budget being
+         * updated.
+         * @param BudgetModel $postBody
+         * @param array $optParams Optional parameters.
+         * @return BudgetModel
+         */
+        public function patch($accountId, $billingId, BudgetModel $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Updates the budget amount for the budget of the adgroup specified by the
+         * accountId and billingId, with the budget amount in the request.
+         * (budget.update)
+         *
+         * @param string $accountId The account id associated with the budget being
+         * updated.
+         * @param string $billingId The billing id associated with the budget being
+         * updated.
+         * @param BudgetModel $postBody
+         * @param array $optParams Optional parameters.
+         * @return BudgetModel
+         */
+        public function update($accountId, $billingId, BudgetModel $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Updates the budget amount for the budget of the adgroup specified by the
-     * accountId and billingId, with the budget amount in the request. This method
-     * supports patch semantics. (budget.patch)
-     *
-     * @param string $accountId The account id associated with the budget being
-     * updated.
-     * @param string $billingId The billing id associated with the budget being
-     * updated.
-     * @param BudgetModel $postBody
-     * @param array $optParams Optional parameters.
-     * @return BudgetModel
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\Resource\Budget registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function patch($accountId, $billingId, BudgetModel $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Updates the budget amount for the budget of the adgroup specified by the
-     * accountId and billingId, with the budget amount in the request.
-     * (budget.update)
-     *
-     * @param string $accountId The account id associated with the budget being
-     * updated.
-     * @param string $billingId The billing id associated with the budget being
-     * updated.
-     * @param BudgetModel $postBody
-     * @param array $optParams Optional parameters.
-     * @return BudgetModel
-     */
-    public function update($accountId, $billingId, BudgetModel $postBody, $optParams = [])
+    class Google_Service_AdExchangeBuyer_Resource_Budget extends \Google\Service\AdExchangeBuyer\Resource\Budget
     {
     }
 }

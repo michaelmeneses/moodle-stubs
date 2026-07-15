@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1SecurityProfileV2ProfileAssessmentConfigApiHubGatewayTypeArray extends \Google\Collection
-{
-    protected $collection_key = 'gatewayTypes';
-    /**
-     * Required. The array of API Hub Gateway Types.
-     *
-     * @var string[]
-     */
-    public $gatewayTypes;
-    /**
-     * Required. The array of API Hub Gateway Types.
-     *
-     * @param string[] $gatewayTypes
-     */
-    public function setGatewayTypes($gatewayTypes)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1SecurityProfileV2ProfileAssessmentConfigApiHubGatewayTypeArray extends \Google\Collection
     {
+        protected $collection_key = 'gatewayTypes';
+        /**
+         * Required. The array of API Hub Gateway Types.
+         *
+         * @var string[]
+         */
+        public $gatewayTypes;
+        /**
+         * Required. The array of API Hub Gateway Types.
+         *
+         * @param string[] $gatewayTypes
+         */
+        public function setGatewayTypes($gatewayTypes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getGatewayTypes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1SecurityProfileV2ProfileAssessmentConfigApiHubGatewayTypeArray registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGatewayTypes()
+    class Google_Service_Apigee_GoogleCloudApigeeV1SecurityProfileV2ProfileAssessmentConfigApiHubGatewayTypeArray extends \Google\Service\Apigee\GoogleCloudApigeeV1SecurityProfileV2ProfileAssessmentConfigApiHubGatewayTypeArray
     {
     }
 }

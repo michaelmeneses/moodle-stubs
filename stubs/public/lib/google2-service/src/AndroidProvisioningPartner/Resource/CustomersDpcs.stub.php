@@ -21,29 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidProvisioningPartner\Resource;
-
-/**
- * The "dpcs" collection of methods.
- * Typical usage is:
- *  <code>
- *   $androiddeviceprovisioningService = new Google\Service\AndroidProvisioningPartner(...);
- *   $dpcs = $androiddeviceprovisioningService->customers_dpcs;
- *  </code>
- */
-class CustomersDpcs extends \Google\Service\Resource
-{
+namespace Google\Service\AndroidProvisioningPartner\Resource {
+    use Google\Service\AndroidProvisioningPartner\CustomerListDpcsResponse;
     /**
-     * Lists the DPCs (device policy controllers) that support zero-touch
-     * enrollment. (dpcs.listCustomersDpcs)
-     *
-     * @param string $parent Required. The customer that can use the DPCs in
-     * configurations. An API resource name in the format `customers/[CUSTOMER_ID]`.
-     * @param array $optParams Optional parameters.
-     * @return CustomerListDpcsResponse
-     * @throws \Google\Service\Exception
+     * The "dpcs" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $androiddeviceprovisioningService = new Google\Service\AndroidProvisioningPartner(...);
+     *   $dpcs = $androiddeviceprovisioningService->customers_dpcs;
+     *  </code>
      */
-    public function listCustomersDpcs($parent, $optParams = [])
+    class CustomersDpcs extends \Google\Service\Resource
+    {
+        /**
+         * Lists the DPCs (device policy controllers) that support zero-touch
+         * enrollment. (dpcs.listCustomersDpcs)
+         *
+         * @param string $parent Required. The customer that can use the DPCs in
+         * configurations. An API resource name in the format `customers/[CUSTOMER_ID]`.
+         * @param array $optParams Optional parameters.
+         * @return CustomerListDpcsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listCustomersDpcs($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AndroidProvisioningPartner\Resource\CustomersDpcs registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AndroidProvisioningPartner_Resource_CustomersDpcs extends \Google\Service\AndroidProvisioningPartner\Resource\CustomersDpcs
     {
     }
 }

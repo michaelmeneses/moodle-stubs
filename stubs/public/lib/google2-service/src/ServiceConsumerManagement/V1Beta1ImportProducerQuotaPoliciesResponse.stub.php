@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceConsumerManagement;
-
-class V1Beta1ImportProducerQuotaPoliciesResponse extends \Google\Collection
-{
-    protected $collection_key = 'policies';
-    protected $policiesType = V1Beta1ProducerQuotaPolicy::class;
-    protected $policiesDataType = 'array';
-    /**
-     * The policies that were created from the imported data.
-     *
-     * @param V1Beta1ProducerQuotaPolicy[] $policies
-     */
-    public function setPolicies($policies)
+namespace Google\Service\ServiceConsumerManagement {
+    class V1Beta1ImportProducerQuotaPoliciesResponse extends \Google\Collection
     {
+        protected $collection_key = 'policies';
+        protected $policiesType = V1Beta1ProducerQuotaPolicy::class;
+        protected $policiesDataType = 'array';
+        /**
+         * The policies that were created from the imported data.
+         *
+         * @param V1Beta1ProducerQuotaPolicy[] $policies
+         */
+        public function setPolicies($policies)
+        {
+        }
+        /**
+         * @return V1Beta1ProducerQuotaPolicy[]
+         */
+        public function getPolicies()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return V1Beta1ProducerQuotaPolicy[]
+     * Runtime class alias of \Google\Service\ServiceConsumerManagement\V1Beta1ImportProducerQuotaPoliciesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPolicies()
+    class Google_Service_ServiceConsumerManagement_V1Beta1ImportProducerQuotaPoliciesResponse extends \Google\Service\ServiceConsumerManagement\V1Beta1ImportProducerQuotaPoliciesResponse
     {
     }
 }

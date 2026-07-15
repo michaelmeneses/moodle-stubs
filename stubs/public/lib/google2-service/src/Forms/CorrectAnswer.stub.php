@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Forms;
-
-class CorrectAnswer extends \Google\Model
-{
-    /**
-     * Required. The correct answer value. See the documentation for
-     * TextAnswer.value for details on how various value types are formatted.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Required. The correct answer value. See the documentation for
-     * TextAnswer.value for details on how various value types are formatted.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
+namespace Google\Service\Forms {
+    class CorrectAnswer extends \Google\Model
     {
+        /**
+         * Required. The correct answer value. See the documentation for
+         * TextAnswer.value for details on how various value types are formatted.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Required. The correct answer value. See the documentation for
+         * TextAnswer.value for details on how various value types are formatted.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Forms\CorrectAnswer registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getValue()
+    class Google_Service_Forms_CorrectAnswer extends \Google\Service\Forms\CorrectAnswer
     {
     }
 }

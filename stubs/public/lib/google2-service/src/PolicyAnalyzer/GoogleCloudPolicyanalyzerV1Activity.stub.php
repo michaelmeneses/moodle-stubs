@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PolicyAnalyzer;
-
-class GoogleCloudPolicyanalyzerV1Activity extends \Google\Model
-{
-    /**
-     * A struct of custom fields to explain the activity.
-     *
-     * @var array[]
-     */
-    public $activity;
-    /**
-     * The type of the activity.
-     *
-     * @var string
-     */
-    public $activityType;
-    /**
-     * The full resource name that identifies the resource. For examples of full
-     * resource names for Google Cloud services, see
-     * https://cloud.google.com/iam/help/troubleshooter/full-resource-names.
-     *
-     * @var string
-     */
-    public $fullResourceName;
-    protected $observationPeriodType = GoogleCloudPolicyanalyzerV1ObservationPeriod::class;
-    protected $observationPeriodDataType = '';
-    /**
-     * A struct of custom fields to explain the activity.
-     *
-     * @param array[] $activity
-     */
-    public function setActivity($activity)
+namespace Google\Service\PolicyAnalyzer {
+    class GoogleCloudPolicyanalyzerV1Activity extends \Google\Model
     {
+        /**
+         * A struct of custom fields to explain the activity.
+         *
+         * @var array[]
+         */
+        public $activity;
+        /**
+         * The type of the activity.
+         *
+         * @var string
+         */
+        public $activityType;
+        /**
+         * The full resource name that identifies the resource. For examples of full
+         * resource names for Google Cloud services, see
+         * https://cloud.google.com/iam/help/troubleshooter/full-resource-names.
+         *
+         * @var string
+         */
+        public $fullResourceName;
+        protected $observationPeriodType = GoogleCloudPolicyanalyzerV1ObservationPeriod::class;
+        protected $observationPeriodDataType = '';
+        /**
+         * A struct of custom fields to explain the activity.
+         *
+         * @param array[] $activity
+         */
+        public function setActivity($activity)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getActivity()
+        {
+        }
+        /**
+         * The type of the activity.
+         *
+         * @param string $activityType
+         */
+        public function setActivityType($activityType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getActivityType()
+        {
+        }
+        /**
+         * The full resource name that identifies the resource. For examples of full
+         * resource names for Google Cloud services, see
+         * https://cloud.google.com/iam/help/troubleshooter/full-resource-names.
+         *
+         * @param string $fullResourceName
+         */
+        public function setFullResourceName($fullResourceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFullResourceName()
+        {
+        }
+        /**
+         * The data observation period to build the activity.
+         *
+         * @param GoogleCloudPolicyanalyzerV1ObservationPeriod $observationPeriod
+         */
+        public function setObservationPeriod(GoogleCloudPolicyanalyzerV1ObservationPeriod $observationPeriod)
+        {
+        }
+        /**
+         * @return GoogleCloudPolicyanalyzerV1ObservationPeriod
+         */
+        public function getObservationPeriod()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\PolicyAnalyzer\GoogleCloudPolicyanalyzerV1Activity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActivity()
-    {
-    }
-    /**
-     * The type of the activity.
-     *
-     * @param string $activityType
-     */
-    public function setActivityType($activityType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getActivityType()
-    {
-    }
-    /**
-     * The full resource name that identifies the resource. For examples of full
-     * resource names for Google Cloud services, see
-     * https://cloud.google.com/iam/help/troubleshooter/full-resource-names.
-     *
-     * @param string $fullResourceName
-     */
-    public function setFullResourceName($fullResourceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFullResourceName()
-    {
-    }
-    /**
-     * The data observation period to build the activity.
-     *
-     * @param GoogleCloudPolicyanalyzerV1ObservationPeriod $observationPeriod
-     */
-    public function setObservationPeriod(GoogleCloudPolicyanalyzerV1ObservationPeriod $observationPeriod)
-    {
-    }
-    /**
-     * @return GoogleCloudPolicyanalyzerV1ObservationPeriod
-     */
-    public function getObservationPeriod()
+    class Google_Service_PolicyAnalyzer_GoogleCloudPolicyanalyzerV1Activity extends \Google\Service\PolicyAnalyzer\GoogleCloudPolicyanalyzerV1Activity
     {
     }
 }

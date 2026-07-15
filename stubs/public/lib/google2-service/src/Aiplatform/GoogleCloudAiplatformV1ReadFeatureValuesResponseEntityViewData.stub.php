@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ReadFeatureValuesResponseEntityViewData extends \Google\Model
-{
-    protected $valueType = GoogleCloudAiplatformV1FeatureValue::class;
-    protected $valueDataType = '';
-    protected $valuesType = GoogleCloudAiplatformV1FeatureValueList::class;
-    protected $valuesDataType = '';
-    /**
-     * Feature value if a single value is requested.
-     *
-     * @param GoogleCloudAiplatformV1FeatureValue $value
-     */
-    public function setValue(GoogleCloudAiplatformV1FeatureValue $value)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ReadFeatureValuesResponseEntityViewData extends \Google\Model
     {
+        protected $valueType = GoogleCloudAiplatformV1FeatureValue::class;
+        protected $valueDataType = '';
+        protected $valuesType = GoogleCloudAiplatformV1FeatureValueList::class;
+        protected $valuesDataType = '';
+        /**
+         * Feature value if a single value is requested.
+         *
+         * @param GoogleCloudAiplatformV1FeatureValue $value
+         */
+        public function setValue(GoogleCloudAiplatformV1FeatureValue $value)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1FeatureValue
+         */
+        public function getValue()
+        {
+        }
+        /**
+         * Feature values list if values, successive in time, are requested. If the
+         * requested number of values is greater than the number of existing Feature
+         * values, nonexistent values are omitted instead of being returned as empty.
+         *
+         * @param GoogleCloudAiplatformV1FeatureValueList $values
+         */
+        public function setValues(GoogleCloudAiplatformV1FeatureValueList $values)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1FeatureValueList
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1FeatureValue
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ReadFeatureValuesResponseEntityViewData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getValue()
-    {
-    }
-    /**
-     * Feature values list if values, successive in time, are requested. If the
-     * requested number of values is greater than the number of existing Feature
-     * values, nonexistent values are omitted instead of being returned as empty.
-     *
-     * @param GoogleCloudAiplatformV1FeatureValueList $values
-     */
-    public function setValues(GoogleCloudAiplatformV1FeatureValueList $values)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1FeatureValueList
-     */
-    public function getValues()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ReadFeatureValuesResponseEntityViewData extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ReadFeatureValuesResponseEntityViewData
     {
     }
 }

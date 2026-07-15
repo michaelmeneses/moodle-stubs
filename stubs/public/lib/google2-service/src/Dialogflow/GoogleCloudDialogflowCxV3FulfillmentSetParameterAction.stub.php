@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3FulfillmentSetParameterAction extends \Google\Model
-{
-    /**
-     * Display name of the parameter.
-     *
-     * @var string
-     */
-    public $parameter;
-    /**
-     * The new value of the parameter. A null value clears the parameter.
-     *
-     * @var array
-     */
-    public $value;
-    /**
-     * Display name of the parameter.
-     *
-     * @param string $parameter
-     */
-    public function setParameter($parameter)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3FulfillmentSetParameterAction extends \Google\Model
     {
+        /**
+         * Display name of the parameter.
+         *
+         * @var string
+         */
+        public $parameter;
+        /**
+         * The new value of the parameter. A null value clears the parameter.
+         *
+         * @var array
+         */
+        public $value;
+        /**
+         * Display name of the parameter.
+         *
+         * @param string $parameter
+         */
+        public function setParameter($parameter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParameter()
+        {
+        }
+        /**
+         * The new value of the parameter. A null value clears the parameter.
+         *
+         * @param array $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return array
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3FulfillmentSetParameterAction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getParameter()
-    {
-    }
-    /**
-     * The new value of the parameter. A null value clears the parameter.
-     *
-     * @param array $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return array
-     */
-    public function getValue()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3FulfillmentSetParameterAction extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3FulfillmentSetParameterAction
     {
     }
 }

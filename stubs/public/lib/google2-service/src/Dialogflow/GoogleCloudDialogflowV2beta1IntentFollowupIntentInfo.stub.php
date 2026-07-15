@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2beta1IntentFollowupIntentInfo extends \Google\Model
-{
-    /**
-     * The unique identifier of the followup intent. Format:
-     * `projects//agent/intents/`.
-     *
-     * @var string
-     */
-    public $followupIntentName;
-    /**
-     * The unique identifier of the followup intent's parent. Format:
-     * `projects//agent/intents/`.
-     *
-     * @var string
-     */
-    public $parentFollowupIntentName;
-    /**
-     * The unique identifier of the followup intent. Format:
-     * `projects//agent/intents/`.
-     *
-     * @param string $followupIntentName
-     */
-    public function setFollowupIntentName($followupIntentName)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2beta1IntentFollowupIntentInfo extends \Google\Model
     {
+        /**
+         * The unique identifier of the followup intent. Format:
+         * `projects//agent/intents/`.
+         *
+         * @var string
+         */
+        public $followupIntentName;
+        /**
+         * The unique identifier of the followup intent's parent. Format:
+         * `projects//agent/intents/`.
+         *
+         * @var string
+         */
+        public $parentFollowupIntentName;
+        /**
+         * The unique identifier of the followup intent. Format:
+         * `projects//agent/intents/`.
+         *
+         * @param string $followupIntentName
+         */
+        public function setFollowupIntentName($followupIntentName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFollowupIntentName()
+        {
+        }
+        /**
+         * The unique identifier of the followup intent's parent. Format:
+         * `projects//agent/intents/`.
+         *
+         * @param string $parentFollowupIntentName
+         */
+        public function setParentFollowupIntentName($parentFollowupIntentName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParentFollowupIntentName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1IntentFollowupIntentInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFollowupIntentName()
-    {
-    }
-    /**
-     * The unique identifier of the followup intent's parent. Format:
-     * `projects//agent/intents/`.
-     *
-     * @param string $parentFollowupIntentName
-     */
-    public function setParentFollowupIntentName($parentFollowupIntentName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParentFollowupIntentName()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1IntentFollowupIntentInfo extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1IntentFollowupIntentInfo
     {
     }
 }

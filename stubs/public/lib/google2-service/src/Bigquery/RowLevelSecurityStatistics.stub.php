@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class RowLevelSecurityStatistics extends \Google\Model
-{
-    /**
-     * Whether any accessed data was protected by row access policies.
-     *
-     * @var bool
-     */
-    public $rowLevelSecurityApplied;
-    /**
-     * Whether any accessed data was protected by row access policies.
-     *
-     * @param bool $rowLevelSecurityApplied
-     */
-    public function setRowLevelSecurityApplied($rowLevelSecurityApplied)
+namespace Google\Service\Bigquery {
+    class RowLevelSecurityStatistics extends \Google\Model
     {
+        /**
+         * Whether any accessed data was protected by row access policies.
+         *
+         * @var bool
+         */
+        public $rowLevelSecurityApplied;
+        /**
+         * Whether any accessed data was protected by row access policies.
+         *
+         * @param bool $rowLevelSecurityApplied
+         */
+        public function setRowLevelSecurityApplied($rowLevelSecurityApplied)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getRowLevelSecurityApplied()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Bigquery\RowLevelSecurityStatistics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRowLevelSecurityApplied()
+    class Google_Service_Bigquery_RowLevelSecurityStatistics extends \Google\Service\Bigquery\RowLevelSecurityStatistics
     {
     }
 }

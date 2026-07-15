@@ -21,96 +21,105 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class VmwareManualLbConfig extends \Google\Model
-{
-    /**
-     * NodePort for control plane service. The Kubernetes API server in the admin
-     * cluster is implemented as a Service of type NodePort (ex. 30968).
-     *
-     * @var int
-     */
-    public $controlPlaneNodePort;
-    /**
-     * NodePort for ingress service's http. The ingress service in the admin
-     * cluster is implemented as a Service of type NodePort (ex. 32527).
-     *
-     * @var int
-     */
-    public $ingressHttpNodePort;
-    /**
-     * NodePort for ingress service's https. The ingress service in the admin
-     * cluster is implemented as a Service of type NodePort (ex. 30139).
-     *
-     * @var int
-     */
-    public $ingressHttpsNodePort;
-    /**
-     * NodePort for konnectivity server service running as a sidecar in each kube-
-     * apiserver pod (ex. 30564).
-     *
-     * @var int
-     */
-    public $konnectivityServerNodePort;
-    /**
-     * NodePort for control plane service. The Kubernetes API server in the admin
-     * cluster is implemented as a Service of type NodePort (ex. 30968).
-     *
-     * @param int $controlPlaneNodePort
-     */
-    public function setControlPlaneNodePort($controlPlaneNodePort)
+namespace Google\Service\GKEOnPrem {
+    class VmwareManualLbConfig extends \Google\Model
     {
+        /**
+         * NodePort for control plane service. The Kubernetes API server in the admin
+         * cluster is implemented as a Service of type NodePort (ex. 30968).
+         *
+         * @var int
+         */
+        public $controlPlaneNodePort;
+        /**
+         * NodePort for ingress service's http. The ingress service in the admin
+         * cluster is implemented as a Service of type NodePort (ex. 32527).
+         *
+         * @var int
+         */
+        public $ingressHttpNodePort;
+        /**
+         * NodePort for ingress service's https. The ingress service in the admin
+         * cluster is implemented as a Service of type NodePort (ex. 30139).
+         *
+         * @var int
+         */
+        public $ingressHttpsNodePort;
+        /**
+         * NodePort for konnectivity server service running as a sidecar in each kube-
+         * apiserver pod (ex. 30564).
+         *
+         * @var int
+         */
+        public $konnectivityServerNodePort;
+        /**
+         * NodePort for control plane service. The Kubernetes API server in the admin
+         * cluster is implemented as a Service of type NodePort (ex. 30968).
+         *
+         * @param int $controlPlaneNodePort
+         */
+        public function setControlPlaneNodePort($controlPlaneNodePort)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getControlPlaneNodePort()
+        {
+        }
+        /**
+         * NodePort for ingress service's http. The ingress service in the admin
+         * cluster is implemented as a Service of type NodePort (ex. 32527).
+         *
+         * @param int $ingressHttpNodePort
+         */
+        public function setIngressHttpNodePort($ingressHttpNodePort)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getIngressHttpNodePort()
+        {
+        }
+        /**
+         * NodePort for ingress service's https. The ingress service in the admin
+         * cluster is implemented as a Service of type NodePort (ex. 30139).
+         *
+         * @param int $ingressHttpsNodePort
+         */
+        public function setIngressHttpsNodePort($ingressHttpsNodePort)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getIngressHttpsNodePort()
+        {
+        }
+        /**
+         * NodePort for konnectivity server service running as a sidecar in each kube-
+         * apiserver pod (ex. 30564).
+         *
+         * @param int $konnectivityServerNodePort
+         */
+        public function setKonnectivityServerNodePort($konnectivityServerNodePort)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getKonnectivityServerNodePort()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\GKEOnPrem\VmwareManualLbConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getControlPlaneNodePort()
-    {
-    }
-    /**
-     * NodePort for ingress service's http. The ingress service in the admin
-     * cluster is implemented as a Service of type NodePort (ex. 32527).
-     *
-     * @param int $ingressHttpNodePort
-     */
-    public function setIngressHttpNodePort($ingressHttpNodePort)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getIngressHttpNodePort()
-    {
-    }
-    /**
-     * NodePort for ingress service's https. The ingress service in the admin
-     * cluster is implemented as a Service of type NodePort (ex. 30139).
-     *
-     * @param int $ingressHttpsNodePort
-     */
-    public function setIngressHttpsNodePort($ingressHttpsNodePort)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getIngressHttpsNodePort()
-    {
-    }
-    /**
-     * NodePort for konnectivity server service running as a sidecar in each kube-
-     * apiserver pod (ex. 30564).
-     *
-     * @param int $konnectivityServerNodePort
-     */
-    public function setKonnectivityServerNodePort($konnectivityServerNodePort)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getKonnectivityServerNodePort()
+    class Google_Service_GKEOnPrem_VmwareManualLbConfig extends \Google\Service\GKEOnPrem\VmwareManualLbConfig
     {
     }
 }

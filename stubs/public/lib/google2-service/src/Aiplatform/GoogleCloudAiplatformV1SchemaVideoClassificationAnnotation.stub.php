@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaVideoClassificationAnnotation extends \Google\Model
-{
-    /**
-     * The resource Id of the AnnotationSpec that this Annotation pertains to.
-     *
-     * @var string
-     */
-    public $annotationSpecId;
-    /**
-     * The display name of the AnnotationSpec that this Annotation pertains to.
-     *
-     * @var string
-     */
-    public $displayName;
-    protected $timeSegmentType = GoogleCloudAiplatformV1SchemaTimeSegment::class;
-    protected $timeSegmentDataType = '';
-    /**
-     * The resource Id of the AnnotationSpec that this Annotation pertains to.
-     *
-     * @param string $annotationSpecId
-     */
-    public function setAnnotationSpecId($annotationSpecId)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaVideoClassificationAnnotation extends \Google\Model
     {
+        /**
+         * The resource Id of the AnnotationSpec that this Annotation pertains to.
+         *
+         * @var string
+         */
+        public $annotationSpecId;
+        /**
+         * The display name of the AnnotationSpec that this Annotation pertains to.
+         *
+         * @var string
+         */
+        public $displayName;
+        protected $timeSegmentType = GoogleCloudAiplatformV1SchemaTimeSegment::class;
+        protected $timeSegmentDataType = '';
+        /**
+         * The resource Id of the AnnotationSpec that this Annotation pertains to.
+         *
+         * @param string $annotationSpecId
+         */
+        public function setAnnotationSpecId($annotationSpecId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnnotationSpecId()
+        {
+        }
+        /**
+         * The display name of the AnnotationSpec that this Annotation pertains to.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * This Annotation applies to the time period represented by the TimeSegment.
+         * If it's not set, the Annotation applies to the whole video.
+         *
+         * @param GoogleCloudAiplatformV1SchemaTimeSegment $timeSegment
+         */
+        public function setTimeSegment(GoogleCloudAiplatformV1SchemaTimeSegment $timeSegment)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SchemaTimeSegment
+         */
+        public function getTimeSegment()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaVideoClassificationAnnotation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotationSpecId()
-    {
-    }
-    /**
-     * The display name of the AnnotationSpec that this Annotation pertains to.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * This Annotation applies to the time period represented by the TimeSegment.
-     * If it's not set, the Annotation applies to the whole video.
-     *
-     * @param GoogleCloudAiplatformV1SchemaTimeSegment $timeSegment
-     */
-    public function setTimeSegment(GoogleCloudAiplatformV1SchemaTimeSegment $timeSegment)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1SchemaTimeSegment
-     */
-    public function getTimeSegment()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaVideoClassificationAnnotation extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaVideoClassificationAnnotation
     {
     }
 }

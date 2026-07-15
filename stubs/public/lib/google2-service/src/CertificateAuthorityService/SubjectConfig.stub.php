@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CertificateAuthorityService;
-
-class SubjectConfig extends \Google\Model
-{
-    protected $subjectType = Subject::class;
-    protected $subjectDataType = '';
-    protected $subjectAltNameType = SubjectAltNames::class;
-    protected $subjectAltNameDataType = '';
-    /**
-     * Optional. Contains distinguished name fields such as the common name,
-     * location and organization.
-     *
-     * @param Subject $subject
-     */
-    public function setSubject(Subject $subject)
+namespace Google\Service\CertificateAuthorityService {
+    class SubjectConfig extends \Google\Model
     {
+        protected $subjectType = Subject::class;
+        protected $subjectDataType = '';
+        protected $subjectAltNameType = SubjectAltNames::class;
+        protected $subjectAltNameDataType = '';
+        /**
+         * Optional. Contains distinguished name fields such as the common name,
+         * location and organization.
+         *
+         * @param Subject $subject
+         */
+        public function setSubject(Subject $subject)
+        {
+        }
+        /**
+         * @return Subject
+         */
+        public function getSubject()
+        {
+        }
+        /**
+         * Optional. The subject alternative name fields.
+         *
+         * @param SubjectAltNames $subjectAltName
+         */
+        public function setSubjectAltName(SubjectAltNames $subjectAltName)
+        {
+        }
+        /**
+         * @return SubjectAltNames
+         */
+        public function getSubjectAltName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Subject
+     * Runtime class alias of \Google\Service\CertificateAuthorityService\SubjectConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSubject()
-    {
-    }
-    /**
-     * Optional. The subject alternative name fields.
-     *
-     * @param SubjectAltNames $subjectAltName
-     */
-    public function setSubjectAltName(SubjectAltNames $subjectAltName)
-    {
-    }
-    /**
-     * @return SubjectAltNames
-     */
-    public function getSubjectAltName()
+    class Google_Service_CertificateAuthorityService_SubjectConfig extends \Google\Service\CertificateAuthorityService\SubjectConfig
     {
     }
 }

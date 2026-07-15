@@ -21,29 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher\Resource;
-
-/**
- * The "countryavailability" collection of methods.
- * Typical usage is:
- *  <code>
- *   $androidpublisherService = new Google\Service\AndroidPublisher(...);
- *   $countryavailability = $androidpublisherService->edits_countryavailability;
- *  </code>
- */
-class EditsCountryavailability extends \Google\Service\Resource
-{
+namespace Google\Service\AndroidPublisher\Resource {
+    use Google\Service\AndroidPublisher\TrackCountryAvailability;
     /**
-     * Gets country availability. (countryavailability.get)
-     *
-     * @param string $packageName Package name of the app.
-     * @param string $editId Identifier of the edit.
-     * @param string $track The track to read from.
-     * @param array $optParams Optional parameters.
-     * @return TrackCountryAvailability
-     * @throws \Google\Service\Exception
+     * The "countryavailability" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $androidpublisherService = new Google\Service\AndroidPublisher(...);
+     *   $countryavailability = $androidpublisherService->edits_countryavailability;
+     *  </code>
      */
-    public function get($packageName, $editId, $track, $optParams = [])
+    class EditsCountryavailability extends \Google\Service\Resource
+    {
+        /**
+         * Gets country availability. (countryavailability.get)
+         *
+         * @param string $packageName Package name of the app.
+         * @param string $editId Identifier of the edit.
+         * @param string $track The track to read from.
+         * @param array $optParams Optional parameters.
+         * @return TrackCountryAvailability
+         * @throws \Google\Service\Exception
+         */
+        public function get($packageName, $editId, $track, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AndroidPublisher\Resource\EditsCountryavailability registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AndroidPublisher_Resource_EditsCountryavailability extends \Google\Service\AndroidPublisher\Resource\EditsCountryavailability
     {
     }
 }

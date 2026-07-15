@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseDataConnect;
-
-class Workaround extends \Google\Model
-{
-    /**
-     * Description of this workaround.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Why would this workaround address the error and warning.
-     *
-     * @var string
-     */
-    public $reason;
-    /**
-     * A suggested code snippet to fix the error and warning.
-     *
-     * @var string
-     */
-    public $replace;
-    /**
-     * Description of this workaround.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\FirebaseDataConnect {
+    class Workaround extends \Google\Model
     {
+        /**
+         * Description of this workaround.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Why would this workaround address the error and warning.
+         *
+         * @var string
+         */
+        public $reason;
+        /**
+         * A suggested code snippet to fix the error and warning.
+         *
+         * @var string
+         */
+        public $replace;
+        /**
+         * Description of this workaround.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Why would this workaround address the error and warning.
+         *
+         * @param string $reason
+         */
+        public function setReason($reason)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReason()
+        {
+        }
+        /**
+         * A suggested code snippet to fix the error and warning.
+         *
+         * @param string $replace
+         */
+        public function setReplace($replace)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReplace()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\FirebaseDataConnect\Workaround registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * Why would this workaround address the error and warning.
-     *
-     * @param string $reason
-     */
-    public function setReason($reason)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReason()
-    {
-    }
-    /**
-     * A suggested code snippet to fix the error and warning.
-     *
-     * @param string $replace
-     */
-    public function setReplace($replace)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReplace()
+    class Google_Service_FirebaseDataConnect_Workaround extends \Google\Service\FirebaseDataConnect\Workaround
     {
     }
 }

@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Kmsinventory;
-
-class GoogleCloudKmsInventoryV1ListCryptoKeysResponse extends \Google\Collection
-{
-    protected $collection_key = 'cryptoKeys';
-    protected $cryptoKeysType = GoogleCloudKmsV1CryptoKey::class;
-    protected $cryptoKeysDataType = 'array';
-    /**
-     * The page token returned from the previous response if the next page is
-     * desired.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of CryptoKeys.
-     *
-     * @param GoogleCloudKmsV1CryptoKey[] $cryptoKeys
-     */
-    public function setCryptoKeys($cryptoKeys)
+namespace Google\Service\Kmsinventory {
+    class GoogleCloudKmsInventoryV1ListCryptoKeysResponse extends \Google\Collection
     {
+        protected $collection_key = 'cryptoKeys';
+        protected $cryptoKeysType = GoogleCloudKmsV1CryptoKey::class;
+        protected $cryptoKeysDataType = 'array';
+        /**
+         * The page token returned from the previous response if the next page is
+         * desired.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of CryptoKeys.
+         *
+         * @param GoogleCloudKmsV1CryptoKey[] $cryptoKeys
+         */
+        public function setCryptoKeys($cryptoKeys)
+        {
+        }
+        /**
+         * @return GoogleCloudKmsV1CryptoKey[]
+         */
+        public function getCryptoKeys()
+        {
+        }
+        /**
+         * The page token returned from the previous response if the next page is
+         * desired.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudKmsV1CryptoKey[]
+     * Runtime class alias of \Google\Service\Kmsinventory\GoogleCloudKmsInventoryV1ListCryptoKeysResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCryptoKeys()
-    {
-    }
-    /**
-     * The page token returned from the previous response if the next page is
-     * desired.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Kmsinventory_GoogleCloudKmsInventoryV1ListCryptoKeysResponse extends \Google\Service\Kmsinventory\GoogleCloudKmsInventoryV1ListCryptoKeysResponse
     {
     }
 }

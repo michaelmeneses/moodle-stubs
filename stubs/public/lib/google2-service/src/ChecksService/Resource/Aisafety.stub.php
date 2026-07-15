@@ -21,28 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChecksService\Resource;
-
-/**
- * The "aisafety" collection of methods.
- * Typical usage is:
- *  <code>
- *   $checksService = new Google\Service\ChecksService(...);
- *   $aisafety = $checksService->aisafety;
- *  </code>
- */
-class Aisafety extends \Google\Service\Resource
-{
+namespace Google\Service\ChecksService\Resource {
+    use Google\Service\ChecksService\GoogleChecksAisafetyV1alphaClassifyContentRequest;
+    use Google\Service\ChecksService\GoogleChecksAisafetyV1alphaClassifyContentResponse;
     /**
-     * Analyze a piece of content with the provided set of policies.
-     * (aisafety.classifyContent)
-     *
-     * @param GoogleChecksAisafetyV1alphaClassifyContentRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleChecksAisafetyV1alphaClassifyContentResponse
-     * @throws \Google\Service\Exception
+     * The "aisafety" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $checksService = new Google\Service\ChecksService(...);
+     *   $aisafety = $checksService->aisafety;
+     *  </code>
      */
-    public function classifyContent(GoogleChecksAisafetyV1alphaClassifyContentRequest $postBody, $optParams = [])
+    class Aisafety extends \Google\Service\Resource
+    {
+        /**
+         * Analyze a piece of content with the provided set of policies.
+         * (aisafety.classifyContent)
+         *
+         * @param GoogleChecksAisafetyV1alphaClassifyContentRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleChecksAisafetyV1alphaClassifyContentResponse
+         * @throws \Google\Service\Exception
+         */
+        public function classifyContent(GoogleChecksAisafetyV1alphaClassifyContentRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ChecksService\Resource\Aisafety registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ChecksService_Resource_Aisafety extends \Google\Service\ChecksService\Resource\Aisafety
     {
     }
 }

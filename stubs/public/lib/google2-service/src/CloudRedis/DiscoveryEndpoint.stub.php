@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRedis;
-
-class DiscoveryEndpoint extends \Google\Model
-{
-    /**
-     * Output only. Address of the exposed Redis endpoint used by clients to
-     * connect to the service. The address could be either IP or hostname.
-     *
-     * @var string
-     */
-    public $address;
-    /**
-     * Output only. The port number of the exposed Redis endpoint.
-     *
-     * @var int
-     */
-    public $port;
-    protected $pscConfigType = PscConfig::class;
-    protected $pscConfigDataType = '';
-    /**
-     * Output only. Address of the exposed Redis endpoint used by clients to
-     * connect to the service. The address could be either IP or hostname.
-     *
-     * @param string $address
-     */
-    public function setAddress($address)
+namespace Google\Service\CloudRedis {
+    class DiscoveryEndpoint extends \Google\Model
     {
+        /**
+         * Output only. Address of the exposed Redis endpoint used by clients to
+         * connect to the service. The address could be either IP or hostname.
+         *
+         * @var string
+         */
+        public $address;
+        /**
+         * Output only. The port number of the exposed Redis endpoint.
+         *
+         * @var int
+         */
+        public $port;
+        protected $pscConfigType = PscConfig::class;
+        protected $pscConfigDataType = '';
+        /**
+         * Output only. Address of the exposed Redis endpoint used by clients to
+         * connect to the service. The address could be either IP or hostname.
+         *
+         * @param string $address
+         */
+        public function setAddress($address)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAddress()
+        {
+        }
+        /**
+         * Output only. The port number of the exposed Redis endpoint.
+         *
+         * @param int $port
+         */
+        public function setPort($port)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPort()
+        {
+        }
+        /**
+         * Output only. Customer configuration for where the endpoint is created and
+         * accessed from.
+         *
+         * @param PscConfig $pscConfig
+         */
+        public function setPscConfig(PscConfig $pscConfig)
+        {
+        }
+        /**
+         * @return PscConfig
+         */
+        public function getPscConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRedis\DiscoveryEndpoint registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddress()
-    {
-    }
-    /**
-     * Output only. The port number of the exposed Redis endpoint.
-     *
-     * @param int $port
-     */
-    public function setPort($port)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPort()
-    {
-    }
-    /**
-     * Output only. Customer configuration for where the endpoint is created and
-     * accessed from.
-     *
-     * @param PscConfig $pscConfig
-     */
-    public function setPscConfig(PscConfig $pscConfig)
-    {
-    }
-    /**
-     * @return PscConfig
-     */
-    public function getPscConfig()
+    class Google_Service_CloudRedis_DiscoveryEndpoint extends \Google\Service\CloudRedis\DiscoveryEndpoint
     {
     }
 }

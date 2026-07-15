@@ -21,106 +21,115 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OracleDatabase;
-
-class DbSystemInitialStorageSizeProperties extends \Google\Collection
-{
-    /**
-     * Unspecified shape type.
-     */
-    public const SHAPE_TYPE_SHAPE_TYPE_UNSPECIFIED = 'SHAPE_TYPE_UNSPECIFIED';
-    /**
-     * Standard X86.
-     */
-    public const SHAPE_TYPE_STANDARD_X86 = 'STANDARD_X86';
-    /**
-     * Unspecified storage management.
-     */
-    public const STORAGE_MANAGEMENT_STORAGE_MANAGEMENT_UNSPECIFIED = 'STORAGE_MANAGEMENT_UNSPECIFIED';
-    /**
-     * Automatic Storage Management.
-     */
-    public const STORAGE_MANAGEMENT_ASM = 'ASM';
-    /**
-     * Logical Volume Management.
-     */
-    public const STORAGE_MANAGEMENT_LVM = 'LVM';
-    protected $collection_key = 'storageSizeDetails';
-    protected $launchFromBackupStorageSizeDetailsType = StorageSizeDetails::class;
-    protected $launchFromBackupStorageSizeDetailsDataType = 'array';
-    /**
-     * Output only. VM shape platform type
-     *
-     * @var string
-     */
-    public $shapeType;
-    /**
-     * Output only. The storage option used in DB system.
-     *
-     * @var string
-     */
-    public $storageManagement;
-    protected $storageSizeDetailsType = StorageSizeDetails::class;
-    protected $storageSizeDetailsDataType = 'array';
-    /**
-     * Output only. List of storage disk details available for launches from
-     * backup.
-     *
-     * @param StorageSizeDetails[] $launchFromBackupStorageSizeDetails
-     */
-    public function setLaunchFromBackupStorageSizeDetails($launchFromBackupStorageSizeDetails)
+namespace Google\Service\OracleDatabase {
+    class DbSystemInitialStorageSizeProperties extends \Google\Collection
     {
+        /**
+         * Unspecified shape type.
+         */
+        public const SHAPE_TYPE_SHAPE_TYPE_UNSPECIFIED = 'SHAPE_TYPE_UNSPECIFIED';
+        /**
+         * Standard X86.
+         */
+        public const SHAPE_TYPE_STANDARD_X86 = 'STANDARD_X86';
+        /**
+         * Unspecified storage management.
+         */
+        public const STORAGE_MANAGEMENT_STORAGE_MANAGEMENT_UNSPECIFIED = 'STORAGE_MANAGEMENT_UNSPECIFIED';
+        /**
+         * Automatic Storage Management.
+         */
+        public const STORAGE_MANAGEMENT_ASM = 'ASM';
+        /**
+         * Logical Volume Management.
+         */
+        public const STORAGE_MANAGEMENT_LVM = 'LVM';
+        protected $collection_key = 'storageSizeDetails';
+        protected $launchFromBackupStorageSizeDetailsType = StorageSizeDetails::class;
+        protected $launchFromBackupStorageSizeDetailsDataType = 'array';
+        /**
+         * Output only. VM shape platform type
+         *
+         * @var string
+         */
+        public $shapeType;
+        /**
+         * Output only. The storage option used in DB system.
+         *
+         * @var string
+         */
+        public $storageManagement;
+        protected $storageSizeDetailsType = StorageSizeDetails::class;
+        protected $storageSizeDetailsDataType = 'array';
+        /**
+         * Output only. List of storage disk details available for launches from
+         * backup.
+         *
+         * @param StorageSizeDetails[] $launchFromBackupStorageSizeDetails
+         */
+        public function setLaunchFromBackupStorageSizeDetails($launchFromBackupStorageSizeDetails)
+        {
+        }
+        /**
+         * @return StorageSizeDetails[]
+         */
+        public function getLaunchFromBackupStorageSizeDetails()
+        {
+        }
+        /**
+         * Output only. VM shape platform type
+         *
+         * Accepted values: SHAPE_TYPE_UNSPECIFIED, STANDARD_X86
+         *
+         * @param self::SHAPE_TYPE_* $shapeType
+         */
+        public function setShapeType($shapeType)
+        {
+        }
+        /**
+         * @return self::SHAPE_TYPE_*
+         */
+        public function getShapeType()
+        {
+        }
+        /**
+         * Output only. The storage option used in DB system.
+         *
+         * Accepted values: STORAGE_MANAGEMENT_UNSPECIFIED, ASM, LVM
+         *
+         * @param self::STORAGE_MANAGEMENT_* $storageManagement
+         */
+        public function setStorageManagement($storageManagement)
+        {
+        }
+        /**
+         * @return self::STORAGE_MANAGEMENT_*
+         */
+        public function getStorageManagement()
+        {
+        }
+        /**
+         * Output only. List of storage disk details.
+         *
+         * @param StorageSizeDetails[] $storageSizeDetails
+         */
+        public function setStorageSizeDetails($storageSizeDetails)
+        {
+        }
+        /**
+         * @return StorageSizeDetails[]
+         */
+        public function getStorageSizeDetails()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return StorageSizeDetails[]
+     * Runtime class alias of \Google\Service\OracleDatabase\DbSystemInitialStorageSizeProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLaunchFromBackupStorageSizeDetails()
-    {
-    }
-    /**
-     * Output only. VM shape platform type
-     *
-     * Accepted values: SHAPE_TYPE_UNSPECIFIED, STANDARD_X86
-     *
-     * @param self::SHAPE_TYPE_* $shapeType
-     */
-    public function setShapeType($shapeType)
-    {
-    }
-    /**
-     * @return self::SHAPE_TYPE_*
-     */
-    public function getShapeType()
-    {
-    }
-    /**
-     * Output only. The storage option used in DB system.
-     *
-     * Accepted values: STORAGE_MANAGEMENT_UNSPECIFIED, ASM, LVM
-     *
-     * @param self::STORAGE_MANAGEMENT_* $storageManagement
-     */
-    public function setStorageManagement($storageManagement)
-    {
-    }
-    /**
-     * @return self::STORAGE_MANAGEMENT_*
-     */
-    public function getStorageManagement()
-    {
-    }
-    /**
-     * Output only. List of storage disk details.
-     *
-     * @param StorageSizeDetails[] $storageSizeDetails
-     */
-    public function setStorageSizeDetails($storageSizeDetails)
-    {
-    }
-    /**
-     * @return StorageSizeDetails[]
-     */
-    public function getStorageSizeDetails()
+    class Google_Service_OracleDatabase_DbSystemInitialStorageSizeProperties extends \Google\Service\OracleDatabase\DbSystemInitialStorageSizeProperties
     {
     }
 }

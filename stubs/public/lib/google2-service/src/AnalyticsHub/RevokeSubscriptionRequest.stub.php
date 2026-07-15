@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsHub;
-
-class RevokeSubscriptionRequest extends \Google\Model
-{
-    /**
-     * Optional. If the subscription is commercial then this field must be set to
-     * true, otherwise a failure is thrown. This acts as a safety guard to avoid
-     * revoking commercial subscriptions accidentally.
-     *
-     * @var bool
-     */
-    public $revokeCommercial;
-    /**
-     * Optional. If the subscription is commercial then this field must be set to
-     * true, otherwise a failure is thrown. This acts as a safety guard to avoid
-     * revoking commercial subscriptions accidentally.
-     *
-     * @param bool $revokeCommercial
-     */
-    public function setRevokeCommercial($revokeCommercial)
+namespace Google\Service\AnalyticsHub {
+    class RevokeSubscriptionRequest extends \Google\Model
     {
+        /**
+         * Optional. If the subscription is commercial then this field must be set to
+         * true, otherwise a failure is thrown. This acts as a safety guard to avoid
+         * revoking commercial subscriptions accidentally.
+         *
+         * @var bool
+         */
+        public $revokeCommercial;
+        /**
+         * Optional. If the subscription is commercial then this field must be set to
+         * true, otherwise a failure is thrown. This acts as a safety guard to avoid
+         * revoking commercial subscriptions accidentally.
+         *
+         * @param bool $revokeCommercial
+         */
+        public function setRevokeCommercial($revokeCommercial)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getRevokeCommercial()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\AnalyticsHub\RevokeSubscriptionRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRevokeCommercial()
+    class Google_Service_AnalyticsHub_RevokeSubscriptionRequest extends \Google\Service\AnalyticsHub\RevokeSubscriptionRequest
     {
     }
 }

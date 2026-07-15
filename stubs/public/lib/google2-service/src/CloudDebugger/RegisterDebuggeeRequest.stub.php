@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDebugger;
-
-class RegisterDebuggeeRequest extends \Google\Model
-{
-    protected $debuggeeType = Debuggee::class;
-    protected $debuggeeDataType = '';
-    /**
-     * @param Debuggee
-     */
-    public function setDebuggee(Debuggee $debuggee)
+namespace Google\Service\CloudDebugger {
+    class RegisterDebuggeeRequest extends \Google\Model
     {
+        protected $debuggeeType = Debuggee::class;
+        protected $debuggeeDataType = '';
+        /**
+         * @param Debuggee
+         */
+        public function setDebuggee(Debuggee $debuggee)
+        {
+        }
+        /**
+         * @return Debuggee
+         */
+        public function getDebuggee()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Debuggee
+     * Runtime class alias of \Google\Service\CloudDebugger\RegisterDebuggeeRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDebuggee()
+    class Google_Service_CloudDebugger_RegisterDebuggeeRequest extends \Google\Service\CloudDebugger\RegisterDebuggeeRequest
     {
     }
 }

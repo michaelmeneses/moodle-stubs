@@ -21,87 +21,96 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class Buildings extends \Google\Collection
-{
-    protected $collection_key = 'buildings';
-    protected $buildingsType = Building::class;
-    protected $buildingsDataType = 'array';
-    /**
-     * ETag of the resource.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * Kind of resource this is.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The continuation token, used to page through large result sets. Provide
-     * this value in a subsequent request to return the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The Buildings in this page of results.
-     *
-     * @param Building[] $buildings
-     */
-    public function setBuildings($buildings)
+namespace Google\Service\Directory {
+    class Buildings extends \Google\Collection
     {
+        protected $collection_key = 'buildings';
+        protected $buildingsType = Building::class;
+        protected $buildingsDataType = 'array';
+        /**
+         * ETag of the resource.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * Kind of resource this is.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The continuation token, used to page through large result sets. Provide
+         * this value in a subsequent request to return the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The Buildings in this page of results.
+         *
+         * @param Building[] $buildings
+         */
+        public function setBuildings($buildings)
+        {
+        }
+        /**
+         * @return Building[]
+         */
+        public function getBuildings()
+        {
+        }
+        /**
+         * ETag of the resource.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * Kind of resource this is.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The continuation token, used to page through large result sets. Provide
+         * this value in a subsequent request to return the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Building[]
+     * Runtime class alias of \Google\Service\Directory\Buildings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBuildings()
-    {
-    }
-    /**
-     * ETag of the resource.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * Kind of resource this is.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The continuation token, used to page through large result sets. Provide
-     * this value in a subsequent request to return the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Directory_Buildings extends \Google\Service\Directory\Buildings
     {
     }
 }

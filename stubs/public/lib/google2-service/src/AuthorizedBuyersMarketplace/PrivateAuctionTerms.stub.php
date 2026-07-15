@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AuthorizedBuyersMarketplace;
-
-class PrivateAuctionTerms extends \Google\Model
-{
-    protected $floorPriceType = Price::class;
-    protected $floorPriceDataType = '';
-    /**
-     * Output only. True if open auction buyers are allowed to compete with
-     * invited buyers in this private auction.
-     *
-     * @var bool
-     */
-    public $openAuctionAllowed;
-    /**
-     * The minimum price buyer has to bid to compete in the private auction.
-     *
-     * @param Price $floorPrice
-     */
-    public function setFloorPrice(Price $floorPrice)
+namespace Google\Service\AuthorizedBuyersMarketplace {
+    class PrivateAuctionTerms extends \Google\Model
     {
+        protected $floorPriceType = Price::class;
+        protected $floorPriceDataType = '';
+        /**
+         * Output only. True if open auction buyers are allowed to compete with
+         * invited buyers in this private auction.
+         *
+         * @var bool
+         */
+        public $openAuctionAllowed;
+        /**
+         * The minimum price buyer has to bid to compete in the private auction.
+         *
+         * @param Price $floorPrice
+         */
+        public function setFloorPrice(Price $floorPrice)
+        {
+        }
+        /**
+         * @return Price
+         */
+        public function getFloorPrice()
+        {
+        }
+        /**
+         * Output only. True if open auction buyers are allowed to compete with
+         * invited buyers in this private auction.
+         *
+         * @param bool $openAuctionAllowed
+         */
+        public function setOpenAuctionAllowed($openAuctionAllowed)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getOpenAuctionAllowed()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Price
+     * Runtime class alias of \Google\Service\AuthorizedBuyersMarketplace\PrivateAuctionTerms registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFloorPrice()
-    {
-    }
-    /**
-     * Output only. True if open auction buyers are allowed to compete with
-     * invited buyers in this private auction.
-     *
-     * @param bool $openAuctionAllowed
-     */
-    public function setOpenAuctionAllowed($openAuctionAllowed)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getOpenAuctionAllowed()
+    class Google_Service_AuthorizedBuyersMarketplace_PrivateAuctionTerms extends \Google\Service\AuthorizedBuyersMarketplace\PrivateAuctionTerms
     {
     }
 }

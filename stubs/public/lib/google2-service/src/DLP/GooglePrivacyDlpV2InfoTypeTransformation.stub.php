@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2InfoTypeTransformation extends \Google\Collection
-{
-    protected $collection_key = 'infoTypes';
-    protected $infoTypesType = GooglePrivacyDlpV2InfoType::class;
-    protected $infoTypesDataType = 'array';
-    protected $primitiveTransformationType = GooglePrivacyDlpV2PrimitiveTransformation::class;
-    protected $primitiveTransformationDataType = '';
-    /**
-     * InfoTypes to apply the transformation to. An empty list will cause this
-     * transformation to apply to all findings that correspond to infoTypes that
-     * were requested in `InspectConfig`.
-     *
-     * @param GooglePrivacyDlpV2InfoType[] $infoTypes
-     */
-    public function setInfoTypes($infoTypes)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2InfoTypeTransformation extends \Google\Collection
     {
+        protected $collection_key = 'infoTypes';
+        protected $infoTypesType = GooglePrivacyDlpV2InfoType::class;
+        protected $infoTypesDataType = 'array';
+        protected $primitiveTransformationType = GooglePrivacyDlpV2PrimitiveTransformation::class;
+        protected $primitiveTransformationDataType = '';
+        /**
+         * InfoTypes to apply the transformation to. An empty list will cause this
+         * transformation to apply to all findings that correspond to infoTypes that
+         * were requested in `InspectConfig`.
+         *
+         * @param GooglePrivacyDlpV2InfoType[] $infoTypes
+         */
+        public function setInfoTypes($infoTypes)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2InfoType[]
+         */
+        public function getInfoTypes()
+        {
+        }
+        /**
+         * Required. Primitive transformation to apply to the infoType.
+         *
+         * @param GooglePrivacyDlpV2PrimitiveTransformation $primitiveTransformation
+         */
+        public function setPrimitiveTransformation(GooglePrivacyDlpV2PrimitiveTransformation $primitiveTransformation)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2PrimitiveTransformation
+         */
+        public function getPrimitiveTransformation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2InfoType[]
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2InfoTypeTransformation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInfoTypes()
-    {
-    }
-    /**
-     * Required. Primitive transformation to apply to the infoType.
-     *
-     * @param GooglePrivacyDlpV2PrimitiveTransformation $primitiveTransformation
-     */
-    public function setPrimitiveTransformation(GooglePrivacyDlpV2PrimitiveTransformation $primitiveTransformation)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2PrimitiveTransformation
-     */
-    public function getPrimitiveTransformation()
+    class Google_Service_DLP_GooglePrivacyDlpV2InfoTypeTransformation extends \Google\Service\DLP\GooglePrivacyDlpV2InfoTypeTransformation
     {
     }
 }

@@ -21,128 +21,137 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics;
-
-class McfDataProfileInfo extends \Google\Model
-{
-    /**
-     * Account ID to which this view (profile) belongs.
-     *
-     * @var string
-     */
-    public $accountId;
-    /**
-     * Internal ID for the web property to which this view (profile) belongs.
-     *
-     * @var string
-     */
-    public $internalWebPropertyId;
-    /**
-     * View (Profile) ID.
-     *
-     * @var string
-     */
-    public $profileId;
-    /**
-     * View (Profile) name.
-     *
-     * @var string
-     */
-    public $profileName;
-    /**
-     * Table ID for view (profile).
-     *
-     * @var string
-     */
-    public $tableId;
-    /**
-     * Web Property ID to which this view (profile) belongs.
-     *
-     * @var string
-     */
-    public $webPropertyId;
-    /**
-     * Account ID to which this view (profile) belongs.
-     *
-     * @param string $accountId
-     */
-    public function setAccountId($accountId)
+namespace Google\Service\Analytics {
+    class McfDataProfileInfo extends \Google\Model
     {
+        /**
+         * Account ID to which this view (profile) belongs.
+         *
+         * @var string
+         */
+        public $accountId;
+        /**
+         * Internal ID for the web property to which this view (profile) belongs.
+         *
+         * @var string
+         */
+        public $internalWebPropertyId;
+        /**
+         * View (Profile) ID.
+         *
+         * @var string
+         */
+        public $profileId;
+        /**
+         * View (Profile) name.
+         *
+         * @var string
+         */
+        public $profileName;
+        /**
+         * Table ID for view (profile).
+         *
+         * @var string
+         */
+        public $tableId;
+        /**
+         * Web Property ID to which this view (profile) belongs.
+         *
+         * @var string
+         */
+        public $webPropertyId;
+        /**
+         * Account ID to which this view (profile) belongs.
+         *
+         * @param string $accountId
+         */
+        public function setAccountId($accountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccountId()
+        {
+        }
+        /**
+         * Internal ID for the web property to which this view (profile) belongs.
+         *
+         * @param string $internalWebPropertyId
+         */
+        public function setInternalWebPropertyId($internalWebPropertyId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInternalWebPropertyId()
+        {
+        }
+        /**
+         * View (Profile) ID.
+         *
+         * @param string $profileId
+         */
+        public function setProfileId($profileId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProfileId()
+        {
+        }
+        /**
+         * View (Profile) name.
+         *
+         * @param string $profileName
+         */
+        public function setProfileName($profileName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProfileName()
+        {
+        }
+        /**
+         * Table ID for view (profile).
+         *
+         * @param string $tableId
+         */
+        public function setTableId($tableId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTableId()
+        {
+        }
+        /**
+         * Web Property ID to which this view (profile) belongs.
+         *
+         * @param string $webPropertyId
+         */
+        public function setWebPropertyId($webPropertyId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWebPropertyId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Analytics\McfDataProfileInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountId()
-    {
-    }
-    /**
-     * Internal ID for the web property to which this view (profile) belongs.
-     *
-     * @param string $internalWebPropertyId
-     */
-    public function setInternalWebPropertyId($internalWebPropertyId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInternalWebPropertyId()
-    {
-    }
-    /**
-     * View (Profile) ID.
-     *
-     * @param string $profileId
-     */
-    public function setProfileId($profileId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProfileId()
-    {
-    }
-    /**
-     * View (Profile) name.
-     *
-     * @param string $profileName
-     */
-    public function setProfileName($profileName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProfileName()
-    {
-    }
-    /**
-     * Table ID for view (profile).
-     *
-     * @param string $tableId
-     */
-    public function setTableId($tableId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTableId()
-    {
-    }
-    /**
-     * Web Property ID to which this view (profile) belongs.
-     *
-     * @param string $webPropertyId
-     */
-    public function setWebPropertyId($webPropertyId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWebPropertyId()
+    class Google_Service_Analytics_McfDataProfileInfo extends \Google\Service\Analytics\McfDataProfileInfo
     {
     }
 }

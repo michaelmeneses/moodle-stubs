@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceUsage;
-
-class GoogleApiServiceusageV2betaAnalysisResult extends \Google\Collection
-{
-    protected $collection_key = 'warnings';
-    protected $blockersType = GoogleApiServiceusageV2betaImpact::class;
-    protected $blockersDataType = 'array';
-    protected $warningsType = GoogleApiServiceusageV2betaImpact::class;
-    protected $warningsDataType = 'array';
-    /**
-     * Blocking information that would prevent the policy changes at runtime.
-     *
-     * @param GoogleApiServiceusageV2betaImpact[] $blockers
-     */
-    public function setBlockers($blockers)
+namespace Google\Service\ServiceUsage {
+    class GoogleApiServiceusageV2betaAnalysisResult extends \Google\Collection
     {
+        protected $collection_key = 'warnings';
+        protected $blockersType = GoogleApiServiceusageV2betaImpact::class;
+        protected $blockersDataType = 'array';
+        protected $warningsType = GoogleApiServiceusageV2betaImpact::class;
+        protected $warningsDataType = 'array';
+        /**
+         * Blocking information that would prevent the policy changes at runtime.
+         *
+         * @param GoogleApiServiceusageV2betaImpact[] $blockers
+         */
+        public function setBlockers($blockers)
+        {
+        }
+        /**
+         * @return GoogleApiServiceusageV2betaImpact[]
+         */
+        public function getBlockers()
+        {
+        }
+        /**
+         * Warning information indicating that the policy changes might be unsafe, but
+         * will not block the changes at runtime.
+         *
+         * @param GoogleApiServiceusageV2betaImpact[] $warnings
+         */
+        public function setWarnings($warnings)
+        {
+        }
+        /**
+         * @return GoogleApiServiceusageV2betaImpact[]
+         */
+        public function getWarnings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleApiServiceusageV2betaImpact[]
+     * Runtime class alias of \Google\Service\ServiceUsage\GoogleApiServiceusageV2betaAnalysisResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBlockers()
-    {
-    }
-    /**
-     * Warning information indicating that the policy changes might be unsafe, but
-     * will not block the changes at runtime.
-     *
-     * @param GoogleApiServiceusageV2betaImpact[] $warnings
-     */
-    public function setWarnings($warnings)
-    {
-    }
-    /**
-     * @return GoogleApiServiceusageV2betaImpact[]
-     */
-    public function getWarnings()
+    class Google_Service_ServiceUsage_GoogleApiServiceusageV2betaAnalysisResult extends \Google\Service\ServiceUsage\GoogleApiServiceusageV2betaAnalysisResult
     {
     }
 }

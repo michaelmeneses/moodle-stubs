@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class Geolocation extends \Google\Model
-{
-    /**
-     * A CLDR.
-     *
-     * @var string
-     */
-    public $regionCode;
-    /**
-     * A CLDR.
-     *
-     * @param string $regionCode
-     */
-    public function setRegionCode($regionCode)
+namespace Google\Service\SecurityCommandCenter {
+    class Geolocation extends \Google\Model
     {
+        /**
+         * A CLDR.
+         *
+         * @var string
+         */
+        public $regionCode;
+        /**
+         * A CLDR.
+         *
+         * @param string $regionCode
+         */
+        public function setRegionCode($regionCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegionCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\Geolocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRegionCode()
+    class Google_Service_SecurityCommandCenter_Geolocation extends \Google\Service\SecurityCommandCenter\Geolocation
     {
     }
 }

@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vault;
-
-class ListSavedQueriesResponse extends \Google\Collection
-{
-    protected $collection_key = 'savedQueries';
-    /**
-     * Page token to retrieve the next page of results in the list. If this is
-     * empty, then there are no more saved queries to list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $savedQueriesType = SavedQuery::class;
-    protected $savedQueriesDataType = 'array';
-    /**
-     * Page token to retrieve the next page of results in the list. If this is
-     * empty, then there are no more saved queries to list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Vault {
+    class ListSavedQueriesResponse extends \Google\Collection
     {
+        protected $collection_key = 'savedQueries';
+        /**
+         * Page token to retrieve the next page of results in the list. If this is
+         * empty, then there are no more saved queries to list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $savedQueriesType = SavedQuery::class;
+        protected $savedQueriesDataType = 'array';
+        /**
+         * Page token to retrieve the next page of results in the list. If this is
+         * empty, then there are no more saved queries to list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * List of saved queries.
+         *
+         * @param SavedQuery[] $savedQueries
+         */
+        public function setSavedQueries($savedQueries)
+        {
+        }
+        /**
+         * @return SavedQuery[]
+         */
+        public function getSavedQueries()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Vault\ListSavedQueriesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * List of saved queries.
-     *
-     * @param SavedQuery[] $savedQueries
-     */
-    public function setSavedQueries($savedQueries)
-    {
-    }
-    /**
-     * @return SavedQuery[]
-     */
-    public function getSavedQueries()
+    class Google_Service_Vault_ListSavedQueriesResponse extends \Google\Service\Vault\ListSavedQueriesResponse
     {
     }
 }

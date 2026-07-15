@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class UserMentionMetadata extends \Google\Model
-{
-    /**
-     * Default value for the enum. Don't use.
-     */
-    public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
-    /**
-     * Add user to space.
-     */
-    public const TYPE_ADD = 'ADD';
-    /**
-     * Mention user in space.
-     */
-    public const TYPE_MENTION = 'MENTION';
-    /**
-     * The type of user mention.
-     *
-     * @var string
-     */
-    public $type;
-    protected $userType = User::class;
-    protected $userDataType = '';
-    /**
-     * The type of user mention.
-     *
-     * Accepted values: TYPE_UNSPECIFIED, ADD, MENTION
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
+namespace Google\Service\HangoutsChat {
+    class UserMentionMetadata extends \Google\Model
     {
+        /**
+         * Default value for the enum. Don't use.
+         */
+        public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
+        /**
+         * Add user to space.
+         */
+        public const TYPE_ADD = 'ADD';
+        /**
+         * Mention user in space.
+         */
+        public const TYPE_MENTION = 'MENTION';
+        /**
+         * The type of user mention.
+         *
+         * @var string
+         */
+        public $type;
+        protected $userType = User::class;
+        protected $userDataType = '';
+        /**
+         * The type of user mention.
+         *
+         * Accepted values: TYPE_UNSPECIFIED, ADD, MENTION
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
+        /**
+         * The user mentioned.
+         *
+         * @param User $user
+         */
+        public function setUser(User $user)
+        {
+        }
+        /**
+         * @return User
+         */
+        public function getUser()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::TYPE_*
+     * Runtime class alias of \Google\Service\HangoutsChat\UserMentionMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getType()
-    {
-    }
-    /**
-     * The user mentioned.
-     *
-     * @param User $user
-     */
-    public function setUser(User $user)
-    {
-    }
-    /**
-     * @return User
-     */
-    public function getUser()
+    class Google_Service_HangoutsChat_UserMentionMetadata extends \Google\Service\HangoutsChat\UserMentionMetadata
     {
     }
 }

@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1ListDocumentsResponse extends \Google\Collection
-{
-    protected $collection_key = 'documents';
-    protected $documentsType = GoogleCloudDiscoveryengineV1Document::class;
-    protected $documentsDataType = 'array';
-    /**
-     * A token that can be sent as ListDocumentsRequest.page_token to retrieve the
-     * next page. If this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The Documents.
-     *
-     * @param GoogleCloudDiscoveryengineV1Document[] $documents
-     */
-    public function setDocuments($documents)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1ListDocumentsResponse extends \Google\Collection
     {
+        protected $collection_key = 'documents';
+        protected $documentsType = GoogleCloudDiscoveryengineV1Document::class;
+        protected $documentsDataType = 'array';
+        /**
+         * A token that can be sent as ListDocumentsRequest.page_token to retrieve the
+         * next page. If this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The Documents.
+         *
+         * @param GoogleCloudDiscoveryengineV1Document[] $documents
+         */
+        public function setDocuments($documents)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1Document[]
+         */
+        public function getDocuments()
+        {
+        }
+        /**
+         * A token that can be sent as ListDocumentsRequest.page_token to retrieve the
+         * next page. If this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1Document[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ListDocumentsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDocuments()
-    {
-    }
-    /**
-     * A token that can be sent as ListDocumentsRequest.page_token to retrieve the
-     * next page. If this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1ListDocumentsResponse extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ListDocumentsResponse
     {
     }
 }

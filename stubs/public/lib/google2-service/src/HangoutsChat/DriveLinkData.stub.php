@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class DriveLinkData extends \Google\Model
-{
-    protected $driveDataRefType = DriveDataRef::class;
-    protected $driveDataRefDataType = '';
-    /**
-     * The mime type of the linked Google Drive resource.
-     *
-     * @var string
-     */
-    public $mimeType;
-    /**
-     * A [DriveDataRef](https://developers.google.com/workspace/chat/api/reference
-     * /rest/v1/spaces.messages.attachments#drivedataref) which references a
-     * Google Drive file.
-     *
-     * @param DriveDataRef $driveDataRef
-     */
-    public function setDriveDataRef(DriveDataRef $driveDataRef)
+namespace Google\Service\HangoutsChat {
+    class DriveLinkData extends \Google\Model
     {
+        protected $driveDataRefType = DriveDataRef::class;
+        protected $driveDataRefDataType = '';
+        /**
+         * The mime type of the linked Google Drive resource.
+         *
+         * @var string
+         */
+        public $mimeType;
+        /**
+         * A [DriveDataRef](https://developers.google.com/workspace/chat/api/reference
+         * /rest/v1/spaces.messages.attachments#drivedataref) which references a
+         * Google Drive file.
+         *
+         * @param DriveDataRef $driveDataRef
+         */
+        public function setDriveDataRef(DriveDataRef $driveDataRef)
+        {
+        }
+        /**
+         * @return DriveDataRef
+         */
+        public function getDriveDataRef()
+        {
+        }
+        /**
+         * The mime type of the linked Google Drive resource.
+         *
+         * @param string $mimeType
+         */
+        public function setMimeType($mimeType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMimeType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DriveDataRef
+     * Runtime class alias of \Google\Service\HangoutsChat\DriveLinkData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDriveDataRef()
-    {
-    }
-    /**
-     * The mime type of the linked Google Drive resource.
-     *
-     * @param string $mimeType
-     */
-    public function setMimeType($mimeType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMimeType()
+    class Google_Service_HangoutsChat_DriveLinkData extends \Google\Service\HangoutsChat\DriveLinkData
     {
     }
 }

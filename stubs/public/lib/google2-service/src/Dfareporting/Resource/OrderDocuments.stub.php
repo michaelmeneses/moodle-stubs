@@ -21,60 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting\Resource;
-
-/**
- * The "orderDocuments" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dfareportingService = new Google\Service\Dfareporting(...);
- *   $orderDocuments = $dfareportingService->orderDocuments;
- *  </code>
- */
-class OrderDocuments extends \Google\Service\Resource
-{
+namespace Google\Service\Dfareporting\Resource {
+    use Google\Service\Dfareporting\OrderDocument;
+    use Google\Service\Dfareporting\OrderDocumentsListResponse;
     /**
-     * Gets one order document by ID. (orderDocuments.get)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param string $projectId Project ID for order documents.
-     * @param string $id Order document ID.
-     * @param array $optParams Optional parameters.
-     * @return OrderDocument
+     * The "orderDocuments" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dfareportingService = new Google\Service\Dfareporting(...);
+     *   $orderDocuments = $dfareportingService->orderDocuments;
+     *  </code>
      */
-    public function get($profileId, $projectId, $id, $optParams = [])
+    class OrderDocuments extends \Google\Service\Resource
     {
+        /**
+         * Gets one order document by ID. (orderDocuments.get)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param string $projectId Project ID for order documents.
+         * @param string $id Order document ID.
+         * @param array $optParams Optional parameters.
+         * @return OrderDocument
+         */
+        public function get($profileId, $projectId, $id, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves a list of order documents, possibly filtered. This method supports
+         * paging. (orderDocuments.listOrderDocuments)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param string $projectId Project ID for order documents.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool approved Select only order documents that have been approved
+         * by at least one user.
+         * @opt_param string ids Select only order documents with these IDs.
+         * @opt_param int maxResults Maximum number of results to return.
+         * @opt_param string orderId Select only order documents for specified orders.
+         * @opt_param string pageToken Value of the nextPageToken from the previous
+         * result page.
+         * @opt_param string searchString Allows searching for order documents by name
+         * or ID. Wildcards (*) are allowed. For example, "orderdocument*2015" will
+         * return order documents with names like "orderdocument June 2015",
+         * "orderdocument April 2015", or simply "orderdocument 2015". Most of the
+         * searches also add wildcards implicitly at the start and the end of the search
+         * string. For example, a search string of "orderdocument" will match order
+         * documents with name "my orderdocument", "orderdocument 2015", or simply
+         * "orderdocument".
+         * @opt_param string siteId Select only order documents that are associated with
+         * these sites.
+         * @opt_param string sortField Field by which to sort the list.
+         * @opt_param string sortOrder Order of sorted results.
+         * @return OrderDocumentsListResponse
+         */
+        public function listOrderDocuments($profileId, $projectId, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Retrieves a list of order documents, possibly filtered. This method supports
-     * paging. (orderDocuments.listOrderDocuments)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param string $projectId Project ID for order documents.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool approved Select only order documents that have been approved
-     * by at least one user.
-     * @opt_param string ids Select only order documents with these IDs.
-     * @opt_param int maxResults Maximum number of results to return.
-     * @opt_param string orderId Select only order documents for specified orders.
-     * @opt_param string pageToken Value of the nextPageToken from the previous
-     * result page.
-     * @opt_param string searchString Allows searching for order documents by name
-     * or ID. Wildcards (*) are allowed. For example, "orderdocument*2015" will
-     * return order documents with names like "orderdocument June 2015",
-     * "orderdocument April 2015", or simply "orderdocument 2015". Most of the
-     * searches also add wildcards implicitly at the start and the end of the search
-     * string. For example, a search string of "orderdocument" will match order
-     * documents with name "my orderdocument", "orderdocument 2015", or simply
-     * "orderdocument".
-     * @opt_param string siteId Select only order documents that are associated with
-     * these sites.
-     * @opt_param string sortField Field by which to sort the list.
-     * @opt_param string sortOrder Order of sorted results.
-     * @return OrderDocumentsListResponse
+     * Runtime class alias of \Google\Service\Dfareporting\Resource\OrderDocuments registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listOrderDocuments($profileId, $projectId, $optParams = [])
+    class Google_Service_Dfareporting_Resource_OrderDocuments extends \Google\Service\Dfareporting\Resource\OrderDocuments
     {
     }
 }

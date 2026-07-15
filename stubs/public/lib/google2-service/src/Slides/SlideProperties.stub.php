@@ -21,94 +21,103 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides;
-
-class SlideProperties extends \Google\Model
-{
-    /**
-     * Whether the slide is skipped in the presentation mode. Defaults to false.
-     *
-     * @var bool
-     */
-    public $isSkipped;
-    /**
-     * The object ID of the layout that this slide is based on. This property is
-     * read-only.
-     *
-     * @var string
-     */
-    public $layoutObjectId;
-    /**
-     * The object ID of the master that this slide is based on. This property is
-     * read-only.
-     *
-     * @var string
-     */
-    public $masterObjectId;
-    protected $notesPageType = Page::class;
-    protected $notesPageDataType = '';
-    /**
-     * Whether the slide is skipped in the presentation mode. Defaults to false.
-     *
-     * @param bool $isSkipped
-     */
-    public function setIsSkipped($isSkipped)
+namespace Google\Service\Slides {
+    class SlideProperties extends \Google\Model
     {
+        /**
+         * Whether the slide is skipped in the presentation mode. Defaults to false.
+         *
+         * @var bool
+         */
+        public $isSkipped;
+        /**
+         * The object ID of the layout that this slide is based on. This property is
+         * read-only.
+         *
+         * @var string
+         */
+        public $layoutObjectId;
+        /**
+         * The object ID of the master that this slide is based on. This property is
+         * read-only.
+         *
+         * @var string
+         */
+        public $masterObjectId;
+        protected $notesPageType = Page::class;
+        protected $notesPageDataType = '';
+        /**
+         * Whether the slide is skipped in the presentation mode. Defaults to false.
+         *
+         * @param bool $isSkipped
+         */
+        public function setIsSkipped($isSkipped)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsSkipped()
+        {
+        }
+        /**
+         * The object ID of the layout that this slide is based on. This property is
+         * read-only.
+         *
+         * @param string $layoutObjectId
+         */
+        public function setLayoutObjectId($layoutObjectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLayoutObjectId()
+        {
+        }
+        /**
+         * The object ID of the master that this slide is based on. This property is
+         * read-only.
+         *
+         * @param string $masterObjectId
+         */
+        public function setMasterObjectId($masterObjectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMasterObjectId()
+        {
+        }
+        /**
+         * The notes page that this slide is associated with. It defines the visual
+         * appearance of a notes page when printing or exporting slides with speaker
+         * notes. A notes page inherits properties from the notes master. The
+         * placeholder shape with type BODY on the notes page contains the speaker
+         * notes for this slide. The ID of this shape is identified by the
+         * speakerNotesObjectId field. The notes page is read-only except for the text
+         * content and styles of the speaker notes shape. This property is read-only.
+         *
+         * @param Page $notesPage
+         */
+        public function setNotesPage(Page $notesPage)
+        {
+        }
+        /**
+         * @return Page
+         */
+        public function getNotesPage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Slides\SlideProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIsSkipped()
-    {
-    }
-    /**
-     * The object ID of the layout that this slide is based on. This property is
-     * read-only.
-     *
-     * @param string $layoutObjectId
-     */
-    public function setLayoutObjectId($layoutObjectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLayoutObjectId()
-    {
-    }
-    /**
-     * The object ID of the master that this slide is based on. This property is
-     * read-only.
-     *
-     * @param string $masterObjectId
-     */
-    public function setMasterObjectId($masterObjectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMasterObjectId()
-    {
-    }
-    /**
-     * The notes page that this slide is associated with. It defines the visual
-     * appearance of a notes page when printing or exporting slides with speaker
-     * notes. A notes page inherits properties from the notes master. The
-     * placeholder shape with type BODY on the notes page contains the speaker
-     * notes for this slide. The ID of this shape is identified by the
-     * speakerNotesObjectId field. The notes page is read-only except for the text
-     * content and styles of the speaker notes shape. This property is read-only.
-     *
-     * @param Page $notesPage
-     */
-    public function setNotesPage(Page $notesPage)
-    {
-    }
-    /**
-     * @return Page
-     */
-    public function getNotesPage()
+    class Google_Service_Slides_SlideProperties extends \Google\Service\Slides\SlideProperties
     {
     }
 }

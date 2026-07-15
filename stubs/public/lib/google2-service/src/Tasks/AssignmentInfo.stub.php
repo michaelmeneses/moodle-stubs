@@ -21,105 +21,114 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Tasks;
-
-class AssignmentInfo extends \Google\Model
-{
-    /**
-     * Unknown value for this task's context.
-     */
-    public const SURFACE_TYPE_CONTEXT_TYPE_UNSPECIFIED = 'CONTEXT_TYPE_UNSPECIFIED';
-    /**
-     * The task is created from Gmail.
-     */
-    public const SURFACE_TYPE_GMAIL = 'GMAIL';
-    /**
-     * The task is assigned from a document.
-     */
-    public const SURFACE_TYPE_DOCUMENT = 'DOCUMENT';
-    /**
-     * The task is assigned from a Chat Space.
-     */
-    public const SURFACE_TYPE_SPACE = 'SPACE';
-    protected $driveResourceInfoType = DriveResourceInfo::class;
-    protected $driveResourceInfoDataType = '';
-    /**
-     * Output only. An absolute link to the original task in the surface of
-     * assignment (Docs, Chat spaces, etc.).
-     *
-     * @var string
-     */
-    public $linkToTask;
-    protected $spaceInfoType = SpaceInfo::class;
-    protected $spaceInfoDataType = '';
-    /**
-     * Output only. The type of surface this assigned task originates from.
-     * Currently limited to DOCUMENT or SPACE.
-     *
-     * @var string
-     */
-    public $surfaceType;
-    /**
-     * Output only. Information about the Drive file where this task originates
-     * from. Currently, the Drive file can only be a document. This field is read-
-     * only.
-     *
-     * @param DriveResourceInfo $driveResourceInfo
-     */
-    public function setDriveResourceInfo(DriveResourceInfo $driveResourceInfo)
+namespace Google\Service\Tasks {
+    class AssignmentInfo extends \Google\Model
     {
+        /**
+         * Unknown value for this task's context.
+         */
+        public const SURFACE_TYPE_CONTEXT_TYPE_UNSPECIFIED = 'CONTEXT_TYPE_UNSPECIFIED';
+        /**
+         * The task is created from Gmail.
+         */
+        public const SURFACE_TYPE_GMAIL = 'GMAIL';
+        /**
+         * The task is assigned from a document.
+         */
+        public const SURFACE_TYPE_DOCUMENT = 'DOCUMENT';
+        /**
+         * The task is assigned from a Chat Space.
+         */
+        public const SURFACE_TYPE_SPACE = 'SPACE';
+        protected $driveResourceInfoType = DriveResourceInfo::class;
+        protected $driveResourceInfoDataType = '';
+        /**
+         * Output only. An absolute link to the original task in the surface of
+         * assignment (Docs, Chat spaces, etc.).
+         *
+         * @var string
+         */
+        public $linkToTask;
+        protected $spaceInfoType = SpaceInfo::class;
+        protected $spaceInfoDataType = '';
+        /**
+         * Output only. The type of surface this assigned task originates from.
+         * Currently limited to DOCUMENT or SPACE.
+         *
+         * @var string
+         */
+        public $surfaceType;
+        /**
+         * Output only. Information about the Drive file where this task originates
+         * from. Currently, the Drive file can only be a document. This field is read-
+         * only.
+         *
+         * @param DriveResourceInfo $driveResourceInfo
+         */
+        public function setDriveResourceInfo(DriveResourceInfo $driveResourceInfo)
+        {
+        }
+        /**
+         * @return DriveResourceInfo
+         */
+        public function getDriveResourceInfo()
+        {
+        }
+        /**
+         * Output only. An absolute link to the original task in the surface of
+         * assignment (Docs, Chat spaces, etc.).
+         *
+         * @param string $linkToTask
+         */
+        public function setLinkToTask($linkToTask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLinkToTask()
+        {
+        }
+        /**
+         * Output only. Information about the Chat Space where this task originates
+         * from. This field is read-only.
+         *
+         * @param SpaceInfo $spaceInfo
+         */
+        public function setSpaceInfo(SpaceInfo $spaceInfo)
+        {
+        }
+        /**
+         * @return SpaceInfo
+         */
+        public function getSpaceInfo()
+        {
+        }
+        /**
+         * Output only. The type of surface this assigned task originates from.
+         * Currently limited to DOCUMENT or SPACE.
+         *
+         * Accepted values: CONTEXT_TYPE_UNSPECIFIED, GMAIL, DOCUMENT, SPACE
+         *
+         * @param self::SURFACE_TYPE_* $surfaceType
+         */
+        public function setSurfaceType($surfaceType)
+        {
+        }
+        /**
+         * @return self::SURFACE_TYPE_*
+         */
+        public function getSurfaceType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DriveResourceInfo
+     * Runtime class alias of \Google\Service\Tasks\AssignmentInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDriveResourceInfo()
-    {
-    }
-    /**
-     * Output only. An absolute link to the original task in the surface of
-     * assignment (Docs, Chat spaces, etc.).
-     *
-     * @param string $linkToTask
-     */
-    public function setLinkToTask($linkToTask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLinkToTask()
-    {
-    }
-    /**
-     * Output only. Information about the Chat Space where this task originates
-     * from. This field is read-only.
-     *
-     * @param SpaceInfo $spaceInfo
-     */
-    public function setSpaceInfo(SpaceInfo $spaceInfo)
-    {
-    }
-    /**
-     * @return SpaceInfo
-     */
-    public function getSpaceInfo()
-    {
-    }
-    /**
-     * Output only. The type of surface this assigned task originates from.
-     * Currently limited to DOCUMENT or SPACE.
-     *
-     * Accepted values: CONTEXT_TYPE_UNSPECIFIED, GMAIL, DOCUMENT, SPACE
-     *
-     * @param self::SURFACE_TYPE_* $surfaceType
-     */
-    public function setSurfaceType($surfaceType)
-    {
-    }
-    /**
-     * @return self::SURFACE_TYPE_*
-     */
-    public function getSurfaceType()
+    class Google_Service_Tasks_AssignmentInfo extends \Google\Service\Tasks\AssignmentInfo
     {
     }
 }

@@ -21,143 +21,160 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigQueryConnectionService\Resource;
-
-/**
- * The "connections" collection of methods.
- * Typical usage is:
- *  <code>
- *   $bigqueryconnectionService = new Google\Service\BigQueryConnectionService(...);
- *   $connections = $bigqueryconnectionService->projects_locations_connections;
- *  </code>
- */
-class ProjectsLocationsConnections extends \Google\Service\Resource
-{
+namespace Google\Service\BigQueryConnectionService\Resource {
+    use Google\Service\BigQueryConnectionService\BigqueryconnectionEmpty;
+    use Google\Service\BigQueryConnectionService\Connection;
+    use Google\Service\BigQueryConnectionService\GetIamPolicyRequest;
+    use Google\Service\BigQueryConnectionService\ListConnectionsResponse;
+    use Google\Service\BigQueryConnectionService\Policy;
+    use Google\Service\BigQueryConnectionService\SetIamPolicyRequest;
+    use Google\Service\BigQueryConnectionService\TestIamPermissionsRequest;
+    use Google\Service\BigQueryConnectionService\TestIamPermissionsResponse;
     /**
-     * Creates a new connection. (connections.create)
-     *
-     * @param string $parent Required. Parent resource name. Must be in the format
-     * `projects/{project_id}/locations/{location_id}`
-     * @param Connection $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string connectionId Optional. Connection id that should be
-     * assigned to the created connection.
-     * @return Connection
-     * @throws \Google\Service\Exception
+     * The "connections" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $bigqueryconnectionService = new Google\Service\BigQueryConnectionService(...);
+     *   $connections = $bigqueryconnectionService->projects_locations_connections;
+     *  </code>
      */
-    public function create($parent, Connection $postBody, $optParams = [])
+    class ProjectsLocationsConnections extends \Google\Service\Resource
     {
+        /**
+         * Creates a new connection. (connections.create)
+         *
+         * @param string $parent Required. Parent resource name. Must be in the format
+         * `projects/{project_id}/locations/{location_id}`
+         * @param Connection $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string connectionId Optional. Connection id that should be
+         * assigned to the created connection.
+         * @return Connection
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, Connection $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes connection and associated credential. (connections.delete)
+         *
+         * @param string $name Required. Name of the deleted connection, for example:
+         * `projects/{project_id}/locations/{location_id}/connections/{connection_id}`
+         * @param array $optParams Optional parameters.
+         * @return BigqueryconnectionEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Returns specified connection. (connections.get)
+         *
+         * @param string $name Required. Name of the requested connection, for example:
+         * `projects/{project_id}/locations/{location_id}/connections/{connection_id}`
+         * @param array $optParams Optional parameters.
+         * @return Connection
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets the access control policy for a resource. Returns an empty policy if the
+         * resource exists and does not have a policy set. (connections.getIamPolicy)
+         *
+         * @param string $resource REQUIRED: The resource for which the policy is being
+         * requested. See [Resource
+         * names](https://cloud.google.com/apis/design/resource_names) for the
+         * appropriate value for this field.
+         * @param GetIamPolicyRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Policy
+         * @throws \Google\Service\Exception
+         */
+        public function getIamPolicy($resource, GetIamPolicyRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Returns a list of connections in the given project.
+         * (connections.listProjectsLocationsConnections)
+         *
+         * @param string $parent Required. Parent resource name. Must be in the form:
+         * `projects/{project_id}/locations/{location_id}`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Required. Page size.
+         * @opt_param string pageToken Page token.
+         * @return ListConnectionsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsConnections($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates the specified connection. For security reasons, also resets
+         * credential if connection properties are in the update field mask.
+         * (connections.patch)
+         *
+         * @param string $name Required. Name of the connection to update, for example:
+         * `projects/{project_id}/locations/{location_id}/connections/{connection_id}`
+         * @param Connection $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Required. Update mask for the connection fields
+         * to be updated.
+         * @return Connection
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, Connection $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Sets the access control policy on the specified resource. Replaces any
+         * existing policy. Can return `NOT_FOUND`, `INVALID_ARGUMENT`, and
+         * `PERMISSION_DENIED` errors. (connections.setIamPolicy)
+         *
+         * @param string $resource REQUIRED: The resource for which the policy is being
+         * specified. See [Resource
+         * names](https://cloud.google.com/apis/design/resource_names) for the
+         * appropriate value for this field.
+         * @param SetIamPolicyRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Policy
+         * @throws \Google\Service\Exception
+         */
+        public function setIamPolicy($resource, SetIamPolicyRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Returns permissions that a caller has on the specified resource. If the
+         * resource does not exist, this will return an empty set of permissions, not a
+         * `NOT_FOUND` error. Note: This operation is designed to be used for building
+         * permission-aware UIs and command-line tools, not for authorization checking.
+         * This operation may "fail open" without warning.
+         * (connections.testIamPermissions)
+         *
+         * @param string $resource REQUIRED: The resource for which the policy detail is
+         * being requested. See [Resource
+         * names](https://cloud.google.com/apis/design/resource_names) for the
+         * appropriate value for this field.
+         * @param TestIamPermissionsRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return TestIamPermissionsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function testIamPermissions($resource, TestIamPermissionsRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes connection and associated credential. (connections.delete)
-     *
-     * @param string $name Required. Name of the deleted connection, for example:
-     * `projects/{project_id}/locations/{location_id}/connections/{connection_id}`
-     * @param array $optParams Optional parameters.
-     * @return BigqueryconnectionEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\BigQueryConnectionService\Resource\ProjectsLocationsConnections registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Returns specified connection. (connections.get)
-     *
-     * @param string $name Required. Name of the requested connection, for example:
-     * `projects/{project_id}/locations/{location_id}/connections/{connection_id}`
-     * @param array $optParams Optional parameters.
-     * @return Connection
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets the access control policy for a resource. Returns an empty policy if the
-     * resource exists and does not have a policy set. (connections.getIamPolicy)
-     *
-     * @param string $resource REQUIRED: The resource for which the policy is being
-     * requested. See [Resource
-     * names](https://cloud.google.com/apis/design/resource_names) for the
-     * appropriate value for this field.
-     * @param GetIamPolicyRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Policy
-     * @throws \Google\Service\Exception
-     */
-    public function getIamPolicy($resource, GetIamPolicyRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Returns a list of connections in the given project.
-     * (connections.listProjectsLocationsConnections)
-     *
-     * @param string $parent Required. Parent resource name. Must be in the form:
-     * `projects/{project_id}/locations/{location_id}`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Required. Page size.
-     * @opt_param string pageToken Page token.
-     * @return ListConnectionsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsConnections($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates the specified connection. For security reasons, also resets
-     * credential if connection properties are in the update field mask.
-     * (connections.patch)
-     *
-     * @param string $name Required. Name of the connection to update, for example:
-     * `projects/{project_id}/locations/{location_id}/connections/{connection_id}`
-     * @param Connection $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Required. Update mask for the connection fields
-     * to be updated.
-     * @return Connection
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, Connection $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Sets the access control policy on the specified resource. Replaces any
-     * existing policy. Can return `NOT_FOUND`, `INVALID_ARGUMENT`, and
-     * `PERMISSION_DENIED` errors. (connections.setIamPolicy)
-     *
-     * @param string $resource REQUIRED: The resource for which the policy is being
-     * specified. See [Resource
-     * names](https://cloud.google.com/apis/design/resource_names) for the
-     * appropriate value for this field.
-     * @param SetIamPolicyRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Policy
-     * @throws \Google\Service\Exception
-     */
-    public function setIamPolicy($resource, SetIamPolicyRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Returns permissions that a caller has on the specified resource. If the
-     * resource does not exist, this will return an empty set of permissions, not a
-     * `NOT_FOUND` error. Note: This operation is designed to be used for building
-     * permission-aware UIs and command-line tools, not for authorization checking.
-     * This operation may "fail open" without warning.
-     * (connections.testIamPermissions)
-     *
-     * @param string $resource REQUIRED: The resource for which the policy detail is
-     * being requested. See [Resource
-     * names](https://cloud.google.com/apis/design/resource_names) for the
-     * appropriate value for this field.
-     * @param TestIamPermissionsRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return TestIamPermissionsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function testIamPermissions($resource, TestIamPermissionsRequest $postBody, $optParams = [])
+    class Google_Service_BigQueryConnectionService_Resource_ProjectsLocationsConnections extends \Google\Service\BigQueryConnectionService\Resource\ProjectsLocationsConnections
     {
     }
 }

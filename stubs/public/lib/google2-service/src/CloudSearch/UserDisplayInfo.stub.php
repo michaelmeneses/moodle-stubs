@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class UserDisplayInfo extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $avatarUrl;
-    /**
-     * @var string
-     */
-    public $displayName;
-    /**
-     * @param string
-     */
-    public function setAvatarUrl($avatarUrl)
+namespace Google\Service\CloudSearch {
+    class UserDisplayInfo extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $avatarUrl;
+        /**
+         * @var string
+         */
+        public $displayName;
+        /**
+         * @param string
+         */
+        public function setAvatarUrl($avatarUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAvatarUrl()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\UserDisplayInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAvatarUrl()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
+    class Google_Service_CloudSearch_UserDisplayInfo extends \Google\Service\CloudSearch\UserDisplayInfo
     {
     }
 }

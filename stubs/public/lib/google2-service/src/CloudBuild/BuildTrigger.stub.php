@@ -21,419 +21,428 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class BuildTrigger extends \Google\Collection
-{
-    protected $collection_key = 'tags';
-    protected $approvalConfigType = ApprovalConfig::class;
-    protected $approvalConfigDataType = '';
-    /**
-     * @var bool
-     */
-    public $autodetect;
-    protected $bitbucketServerTriggerConfigType = BitbucketServerTriggerConfig::class;
-    protected $bitbucketServerTriggerConfigDataType = '';
-    protected $buildType = Build::class;
-    protected $buildDataType = '';
-    /**
-     * @var string
-     */
-    public $createTime;
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var bool
-     */
-    public $disabled;
-    /**
-     * @var string
-     */
-    public $eventType;
-    /**
-     * @var string
-     */
-    public $filename;
-    /**
-     * @var string
-     */
-    public $filter;
-    protected $gitFileSourceType = GitFileSource::class;
-    protected $gitFileSourceDataType = '';
-    protected $githubType = GitHubEventsConfig::class;
-    protected $githubDataType = '';
-    protected $gitlabEnterpriseEventsConfigType = GitLabEventsConfig::class;
-    protected $gitlabEnterpriseEventsConfigDataType = '';
-    /**
-     * @var string
-     */
-    public $id;
-    /**
-     * @var string[]
-     */
-    public $ignoredFiles;
-    /**
-     * @var string
-     */
-    public $includeBuildLogs;
-    /**
-     * @var string[]
-     */
-    public $includedFiles;
-    /**
-     * @var string
-     */
-    public $name;
-    protected $pubsubConfigType = PubsubConfig::class;
-    protected $pubsubConfigDataType = '';
-    protected $repositoryEventConfigType = RepositoryEventConfig::class;
-    protected $repositoryEventConfigDataType = '';
-    /**
-     * @var string
-     */
-    public $resourceName;
-    /**
-     * @var string
-     */
-    public $serviceAccount;
-    protected $sourceToBuildType = GitRepoSource::class;
-    protected $sourceToBuildDataType = '';
-    /**
-     * @var string[]
-     */
-    public $substitutions;
-    /**
-     * @var string[]
-     */
-    public $tags;
-    protected $triggerTemplateType = RepoSource::class;
-    protected $triggerTemplateDataType = '';
-    protected $webhookConfigType = WebhookConfig::class;
-    protected $webhookConfigDataType = '';
-    /**
-     * @param ApprovalConfig
-     */
-    public function setApprovalConfig(ApprovalConfig $approvalConfig)
+namespace Google\Service\CloudBuild {
+    class BuildTrigger extends \Google\Collection
     {
+        protected $collection_key = 'tags';
+        protected $approvalConfigType = ApprovalConfig::class;
+        protected $approvalConfigDataType = '';
+        /**
+         * @var bool
+         */
+        public $autodetect;
+        protected $bitbucketServerTriggerConfigType = BitbucketServerTriggerConfig::class;
+        protected $bitbucketServerTriggerConfigDataType = '';
+        protected $buildType = Build::class;
+        protected $buildDataType = '';
+        /**
+         * @var string
+         */
+        public $createTime;
+        /**
+         * @var string
+         */
+        public $description;
+        /**
+         * @var bool
+         */
+        public $disabled;
+        /**
+         * @var string
+         */
+        public $eventType;
+        /**
+         * @var string
+         */
+        public $filename;
+        /**
+         * @var string
+         */
+        public $filter;
+        protected $gitFileSourceType = GitFileSource::class;
+        protected $gitFileSourceDataType = '';
+        protected $githubType = GitHubEventsConfig::class;
+        protected $githubDataType = '';
+        protected $gitlabEnterpriseEventsConfigType = GitLabEventsConfig::class;
+        protected $gitlabEnterpriseEventsConfigDataType = '';
+        /**
+         * @var string
+         */
+        public $id;
+        /**
+         * @var string[]
+         */
+        public $ignoredFiles;
+        /**
+         * @var string
+         */
+        public $includeBuildLogs;
+        /**
+         * @var string[]
+         */
+        public $includedFiles;
+        /**
+         * @var string
+         */
+        public $name;
+        protected $pubsubConfigType = PubsubConfig::class;
+        protected $pubsubConfigDataType = '';
+        protected $repositoryEventConfigType = RepositoryEventConfig::class;
+        protected $repositoryEventConfigDataType = '';
+        /**
+         * @var string
+         */
+        public $resourceName;
+        /**
+         * @var string
+         */
+        public $serviceAccount;
+        protected $sourceToBuildType = GitRepoSource::class;
+        protected $sourceToBuildDataType = '';
+        /**
+         * @var string[]
+         */
+        public $substitutions;
+        /**
+         * @var string[]
+         */
+        public $tags;
+        protected $triggerTemplateType = RepoSource::class;
+        protected $triggerTemplateDataType = '';
+        protected $webhookConfigType = WebhookConfig::class;
+        protected $webhookConfigDataType = '';
+        /**
+         * @param ApprovalConfig
+         */
+        public function setApprovalConfig(ApprovalConfig $approvalConfig)
+        {
+        }
+        /**
+         * @return ApprovalConfig
+         */
+        public function getApprovalConfig()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setAutodetect($autodetect)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAutodetect()
+        {
+        }
+        /**
+         * @param BitbucketServerTriggerConfig
+         */
+        public function setBitbucketServerTriggerConfig(BitbucketServerTriggerConfig $bitbucketServerTriggerConfig)
+        {
+        }
+        /**
+         * @return BitbucketServerTriggerConfig
+         */
+        public function getBitbucketServerTriggerConfig()
+        {
+        }
+        /**
+         * @param Build
+         */
+        public function setBuild(Build $build)
+        {
+        }
+        /**
+         * @return Build
+         */
+        public function getBuild()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setDisabled($disabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisabled()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEventType($eventType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEventType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setFilename($filename)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilename()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setFilter($filter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilter()
+        {
+        }
+        /**
+         * @param GitFileSource
+         */
+        public function setGitFileSource(GitFileSource $gitFileSource)
+        {
+        }
+        /**
+         * @return GitFileSource
+         */
+        public function getGitFileSource()
+        {
+        }
+        /**
+         * @param GitHubEventsConfig
+         */
+        public function setGithub(GitHubEventsConfig $github)
+        {
+        }
+        /**
+         * @return GitHubEventsConfig
+         */
+        public function getGithub()
+        {
+        }
+        /**
+         * @param GitLabEventsConfig
+         */
+        public function setGitlabEnterpriseEventsConfig(GitLabEventsConfig $gitlabEnterpriseEventsConfig)
+        {
+        }
+        /**
+         * @return GitLabEventsConfig
+         */
+        public function getGitlabEnterpriseEventsConfig()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setIgnoredFiles($ignoredFiles)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getIgnoredFiles()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setIncludeBuildLogs($includeBuildLogs)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIncludeBuildLogs()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setIncludedFiles($includedFiles)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getIncludedFiles()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param PubsubConfig
+         */
+        public function setPubsubConfig(PubsubConfig $pubsubConfig)
+        {
+        }
+        /**
+         * @return PubsubConfig
+         */
+        public function getPubsubConfig()
+        {
+        }
+        /**
+         * @param RepositoryEventConfig
+         */
+        public function setRepositoryEventConfig(RepositoryEventConfig $repositoryEventConfig)
+        {
+        }
+        /**
+         * @return RepositoryEventConfig
+         */
+        public function getRepositoryEventConfig()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setResourceName($resourceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setServiceAccount($serviceAccount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceAccount()
+        {
+        }
+        /**
+         * @param GitRepoSource
+         */
+        public function setSourceToBuild(GitRepoSource $sourceToBuild)
+        {
+        }
+        /**
+         * @return GitRepoSource
+         */
+        public function getSourceToBuild()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setSubstitutions($substitutions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSubstitutions()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setTags($tags)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTags()
+        {
+        }
+        /**
+         * @param RepoSource
+         */
+        public function setTriggerTemplate(RepoSource $triggerTemplate)
+        {
+        }
+        /**
+         * @return RepoSource
+         */
+        public function getTriggerTemplate()
+        {
+        }
+        /**
+         * @param WebhookConfig
+         */
+        public function setWebhookConfig(WebhookConfig $webhookConfig)
+        {
+        }
+        /**
+         * @return WebhookConfig
+         */
+        public function getWebhookConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ApprovalConfig
+     * Runtime class alias of \Google\Service\CloudBuild\BuildTrigger registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApprovalConfig()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setAutodetect($autodetect)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getAutodetect()
-    {
-    }
-    /**
-     * @param BitbucketServerTriggerConfig
-     */
-    public function setBitbucketServerTriggerConfig(BitbucketServerTriggerConfig $bitbucketServerTriggerConfig)
-    {
-    }
-    /**
-     * @return BitbucketServerTriggerConfig
-     */
-    public function getBitbucketServerTriggerConfig()
-    {
-    }
-    /**
-     * @param Build
-     */
-    public function setBuild(Build $build)
-    {
-    }
-    /**
-     * @return Build
-     */
-    public function getBuild()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setDisabled($disabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDisabled()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEventType($eventType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEventType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setFilename($filename)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFilename()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setFilter($filter)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFilter()
-    {
-    }
-    /**
-     * @param GitFileSource
-     */
-    public function setGitFileSource(GitFileSource $gitFileSource)
-    {
-    }
-    /**
-     * @return GitFileSource
-     */
-    public function getGitFileSource()
-    {
-    }
-    /**
-     * @param GitHubEventsConfig
-     */
-    public function setGithub(GitHubEventsConfig $github)
-    {
-    }
-    /**
-     * @return GitHubEventsConfig
-     */
-    public function getGithub()
-    {
-    }
-    /**
-     * @param GitLabEventsConfig
-     */
-    public function setGitlabEnterpriseEventsConfig(GitLabEventsConfig $gitlabEnterpriseEventsConfig)
-    {
-    }
-    /**
-     * @return GitLabEventsConfig
-     */
-    public function getGitlabEnterpriseEventsConfig()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setIgnoredFiles($ignoredFiles)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getIgnoredFiles()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setIncludeBuildLogs($includeBuildLogs)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIncludeBuildLogs()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setIncludedFiles($includedFiles)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getIncludedFiles()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param PubsubConfig
-     */
-    public function setPubsubConfig(PubsubConfig $pubsubConfig)
-    {
-    }
-    /**
-     * @return PubsubConfig
-     */
-    public function getPubsubConfig()
-    {
-    }
-    /**
-     * @param RepositoryEventConfig
-     */
-    public function setRepositoryEventConfig(RepositoryEventConfig $repositoryEventConfig)
-    {
-    }
-    /**
-     * @return RepositoryEventConfig
-     */
-    public function getRepositoryEventConfig()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setResourceName($resourceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setServiceAccount($serviceAccount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceAccount()
-    {
-    }
-    /**
-     * @param GitRepoSource
-     */
-    public function setSourceToBuild(GitRepoSource $sourceToBuild)
-    {
-    }
-    /**
-     * @return GitRepoSource
-     */
-    public function getSourceToBuild()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setSubstitutions($substitutions)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSubstitutions()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setTags($tags)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTags()
-    {
-    }
-    /**
-     * @param RepoSource
-     */
-    public function setTriggerTemplate(RepoSource $triggerTemplate)
-    {
-    }
-    /**
-     * @return RepoSource
-     */
-    public function getTriggerTemplate()
-    {
-    }
-    /**
-     * @param WebhookConfig
-     */
-    public function setWebhookConfig(WebhookConfig $webhookConfig)
-    {
-    }
-    /**
-     * @return WebhookConfig
-     */
-    public function getWebhookConfig()
+    class Google_Service_CloudBuild_BuildTrigger extends \Google\Service\CloudBuild\BuildTrigger
     {
     }
 }

@@ -21,108 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SearchConsole;
-
-class RunMobileFriendlyTestResponse extends \Google\Collection
-{
-    /**
-     * Internal error when running this test. Please try running the test again.
-     */
-    public const MOBILE_FRIENDLINESS_MOBILE_FRIENDLY_TEST_RESULT_UNSPECIFIED = 'MOBILE_FRIENDLY_TEST_RESULT_UNSPECIFIED';
-    /**
-     * The page is mobile friendly.
-     */
-    public const MOBILE_FRIENDLINESS_MOBILE_FRIENDLY = 'MOBILE_FRIENDLY';
-    /**
-     * The page is not mobile friendly.
-     */
-    public const MOBILE_FRIENDLINESS_NOT_MOBILE_FRIENDLY = 'NOT_MOBILE_FRIENDLY';
-    protected $collection_key = 'resourceIssues';
-    /**
-     * Test verdict, whether the page is mobile friendly or not.
-     *
-     * @var string
-     */
-    public $mobileFriendliness;
-    protected $mobileFriendlyIssuesType = MobileFriendlyIssue::class;
-    protected $mobileFriendlyIssuesDataType = 'array';
-    protected $resourceIssuesType = ResourceIssue::class;
-    protected $resourceIssuesDataType = 'array';
-    protected $screenshotType = Image::class;
-    protected $screenshotDataType = '';
-    protected $testStatusType = TestStatus::class;
-    protected $testStatusDataType = '';
-    /**
-     * Test verdict, whether the page is mobile friendly or not.
-     *
-     * Accepted values: MOBILE_FRIENDLY_TEST_RESULT_UNSPECIFIED, MOBILE_FRIENDLY,
-     * NOT_MOBILE_FRIENDLY
-     *
-     * @param self::MOBILE_FRIENDLINESS_* $mobileFriendliness
-     */
-    public function setMobileFriendliness($mobileFriendliness)
+namespace Google\Service\SearchConsole {
+    class RunMobileFriendlyTestResponse extends \Google\Collection
     {
+        /**
+         * Internal error when running this test. Please try running the test again.
+         */
+        public const MOBILE_FRIENDLINESS_MOBILE_FRIENDLY_TEST_RESULT_UNSPECIFIED = 'MOBILE_FRIENDLY_TEST_RESULT_UNSPECIFIED';
+        /**
+         * The page is mobile friendly.
+         */
+        public const MOBILE_FRIENDLINESS_MOBILE_FRIENDLY = 'MOBILE_FRIENDLY';
+        /**
+         * The page is not mobile friendly.
+         */
+        public const MOBILE_FRIENDLINESS_NOT_MOBILE_FRIENDLY = 'NOT_MOBILE_FRIENDLY';
+        protected $collection_key = 'resourceIssues';
+        /**
+         * Test verdict, whether the page is mobile friendly or not.
+         *
+         * @var string
+         */
+        public $mobileFriendliness;
+        protected $mobileFriendlyIssuesType = MobileFriendlyIssue::class;
+        protected $mobileFriendlyIssuesDataType = 'array';
+        protected $resourceIssuesType = ResourceIssue::class;
+        protected $resourceIssuesDataType = 'array';
+        protected $screenshotType = Image::class;
+        protected $screenshotDataType = '';
+        protected $testStatusType = TestStatus::class;
+        protected $testStatusDataType = '';
+        /**
+         * Test verdict, whether the page is mobile friendly or not.
+         *
+         * Accepted values: MOBILE_FRIENDLY_TEST_RESULT_UNSPECIFIED, MOBILE_FRIENDLY,
+         * NOT_MOBILE_FRIENDLY
+         *
+         * @param self::MOBILE_FRIENDLINESS_* $mobileFriendliness
+         */
+        public function setMobileFriendliness($mobileFriendliness)
+        {
+        }
+        /**
+         * @return self::MOBILE_FRIENDLINESS_*
+         */
+        public function getMobileFriendliness()
+        {
+        }
+        /**
+         * List of mobile-usability issues.
+         *
+         * @param MobileFriendlyIssue[] $mobileFriendlyIssues
+         */
+        public function setMobileFriendlyIssues($mobileFriendlyIssues)
+        {
+        }
+        /**
+         * @return MobileFriendlyIssue[]
+         */
+        public function getMobileFriendlyIssues()
+        {
+        }
+        /**
+         * Information about embedded resources issues.
+         *
+         * @param ResourceIssue[] $resourceIssues
+         */
+        public function setResourceIssues($resourceIssues)
+        {
+        }
+        /**
+         * @return ResourceIssue[]
+         */
+        public function getResourceIssues()
+        {
+        }
+        /**
+         * Screenshot of the requested URL.
+         *
+         * @param Image $screenshot
+         */
+        public function setScreenshot(Image $screenshot)
+        {
+        }
+        /**
+         * @return Image
+         */
+        public function getScreenshot()
+        {
+        }
+        /**
+         * Final state of the test, can be either complete or an error.
+         *
+         * @param TestStatus $testStatus
+         */
+        public function setTestStatus(TestStatus $testStatus)
+        {
+        }
+        /**
+         * @return TestStatus
+         */
+        public function getTestStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::MOBILE_FRIENDLINESS_*
+     * Runtime class alias of \Google\Service\SearchConsole\RunMobileFriendlyTestResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMobileFriendliness()
-    {
-    }
-    /**
-     * List of mobile-usability issues.
-     *
-     * @param MobileFriendlyIssue[] $mobileFriendlyIssues
-     */
-    public function setMobileFriendlyIssues($mobileFriendlyIssues)
-    {
-    }
-    /**
-     * @return MobileFriendlyIssue[]
-     */
-    public function getMobileFriendlyIssues()
-    {
-    }
-    /**
-     * Information about embedded resources issues.
-     *
-     * @param ResourceIssue[] $resourceIssues
-     */
-    public function setResourceIssues($resourceIssues)
-    {
-    }
-    /**
-     * @return ResourceIssue[]
-     */
-    public function getResourceIssues()
-    {
-    }
-    /**
-     * Screenshot of the requested URL.
-     *
-     * @param Image $screenshot
-     */
-    public function setScreenshot(Image $screenshot)
-    {
-    }
-    /**
-     * @return Image
-     */
-    public function getScreenshot()
-    {
-    }
-    /**
-     * Final state of the test, can be either complete or an error.
-     *
-     * @param TestStatus $testStatus
-     */
-    public function setTestStatus(TestStatus $testStatus)
-    {
-    }
-    /**
-     * @return TestStatus
-     */
-    public function getTestStatus()
+    class Google_Service_SearchConsole_RunMobileFriendlyTestResponse extends \Google\Service\SearchConsole\RunMobileFriendlyTestResponse
     {
     }
 }

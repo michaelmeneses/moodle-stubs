@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firebaseappcheck;
-
-class GoogleFirebaseAppcheckV1betaAppAttestChallengeResponse extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $challenge;
-    /**
-     * @var string
-     */
-    public $ttl;
-    /**
-     * @param string
-     */
-    public function setChallenge($challenge)
+namespace Google\Service\Firebaseappcheck {
+    class GoogleFirebaseAppcheckV1betaAppAttestChallengeResponse extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $challenge;
+        /**
+         * @var string
+         */
+        public $ttl;
+        /**
+         * @param string
+         */
+        public function setChallenge($challenge)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChallenge()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTtl($ttl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTtl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1betaAppAttestChallengeResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChallenge()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTtl($ttl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTtl()
+    class Google_Service_Firebaseappcheck_GoogleFirebaseAppcheckV1betaAppAttestChallengeResponse extends \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1betaAppAttestChallengeResponse
     {
     }
 }

@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PaymentsResellerSubscription;
-
-class GoogleCloudPaymentsResellerSubscriptionV1GoogleHomePayload extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $attachedToGoogleStructure;
-    /**
-     * @var string
-     */
-    public $partnerStructureId;
-    /**
-     * @param bool
-     */
-    public function setAttachedToGoogleStructure($attachedToGoogleStructure)
+namespace Google\Service\PaymentsResellerSubscription {
+    class GoogleCloudPaymentsResellerSubscriptionV1GoogleHomePayload extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $attachedToGoogleStructure;
+        /**
+         * @var string
+         */
+        public $partnerStructureId;
+        /**
+         * @param bool
+         */
+        public function setAttachedToGoogleStructure($attachedToGoogleStructure)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAttachedToGoogleStructure()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPartnerStructureId($partnerStructureId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPartnerStructureId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1GoogleHomePayload registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttachedToGoogleStructure()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPartnerStructureId($partnerStructureId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPartnerStructureId()
+    class Google_Service_PaymentsResellerSubscription_GoogleCloudPaymentsResellerSubscriptionV1GoogleHomePayload extends \Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1GoogleHomePayload
     {
     }
 }

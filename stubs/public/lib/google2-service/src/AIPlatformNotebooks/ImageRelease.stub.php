@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AIPlatformNotebooks;
-
-class ImageRelease extends \Google\Model
-{
-    /**
-     * Output only. The name of the image of the form workbench-instances-
-     * vYYYYmmdd--
-     *
-     * @var string
-     */
-    public $imageName;
-    /**
-     * Output only. The release of the image of the form m123
-     *
-     * @var string
-     */
-    public $releaseName;
-    /**
-     * Output only. The name of the image of the form workbench-instances-
-     * vYYYYmmdd--
-     *
-     * @param string $imageName
-     */
-    public function setImageName($imageName)
+namespace Google\Service\AIPlatformNotebooks {
+    class ImageRelease extends \Google\Model
     {
+        /**
+         * Output only. The name of the image of the form workbench-instances-
+         * vYYYYmmdd--
+         *
+         * @var string
+         */
+        public $imageName;
+        /**
+         * Output only. The release of the image of the form m123
+         *
+         * @var string
+         */
+        public $releaseName;
+        /**
+         * Output only. The name of the image of the form workbench-instances-
+         * vYYYYmmdd--
+         *
+         * @param string $imageName
+         */
+        public function setImageName($imageName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImageName()
+        {
+        }
+        /**
+         * Output only. The release of the image of the form m123
+         *
+         * @param string $releaseName
+         */
+        public function setReleaseName($releaseName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReleaseName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AIPlatformNotebooks\ImageRelease registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getImageName()
-    {
-    }
-    /**
-     * Output only. The release of the image of the form m123
-     *
-     * @param string $releaseName
-     */
-    public function setReleaseName($releaseName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReleaseName()
+    class Google_Service_AIPlatformNotebooks_ImageRelease extends \Google\Service\AIPlatformNotebooks\ImageRelease
     {
     }
 }

@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class CreateFeedRequest extends \Google\Model
-{
-    protected $feedType = Feed::class;
-    protected $feedDataType = '';
-    /**
-     * Required. This is the client-assigned asset feed identifier and it needs to
-     * be unique under a specific parent project/folder/organization.
-     *
-     * @var string
-     */
-    public $feedId;
-    /**
-     * Required. The feed details. The field `name` must be empty and it will be
-     * generated in the format of: projects/project_number/feeds/feed_id
-     * folders/folder_number/feeds/feed_id
-     * organizations/organization_number/feeds/feed_id
-     *
-     * @param Feed $feed
-     */
-    public function setFeed(Feed $feed)
+namespace Google\Service\CloudAsset {
+    class CreateFeedRequest extends \Google\Model
     {
+        protected $feedType = Feed::class;
+        protected $feedDataType = '';
+        /**
+         * Required. This is the client-assigned asset feed identifier and it needs to
+         * be unique under a specific parent project/folder/organization.
+         *
+         * @var string
+         */
+        public $feedId;
+        /**
+         * Required. The feed details. The field `name` must be empty and it will be
+         * generated in the format of: projects/project_number/feeds/feed_id
+         * folders/folder_number/feeds/feed_id
+         * organizations/organization_number/feeds/feed_id
+         *
+         * @param Feed $feed
+         */
+        public function setFeed(Feed $feed)
+        {
+        }
+        /**
+         * @return Feed
+         */
+        public function getFeed()
+        {
+        }
+        /**
+         * Required. This is the client-assigned asset feed identifier and it needs to
+         * be unique under a specific parent project/folder/organization.
+         *
+         * @param string $feedId
+         */
+        public function setFeedId($feedId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFeedId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Feed
+     * Runtime class alias of \Google\Service\CloudAsset\CreateFeedRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFeed()
-    {
-    }
-    /**
-     * Required. This is the client-assigned asset feed identifier and it needs to
-     * be unique under a specific parent project/folder/organization.
-     *
-     * @param string $feedId
-     */
-    public function setFeedId($feedId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFeedId()
+    class Google_Service_CloudAsset_CreateFeedRequest extends \Google\Service\CloudAsset\CreateFeedRequest
     {
     }
 }

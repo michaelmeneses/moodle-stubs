@@ -21,97 +21,106 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class AdvanceRolloutRule extends \Google\Collection
-{
-    protected $collection_key = 'sourcePhases';
-    protected $conditionType = AutomationRuleCondition::class;
-    protected $conditionDataType = '';
-    /**
-     * Required. ID of the rule. This id must be unique in the `Automation`
-     * resource to which this rule belongs. The format is
-     * `[a-z]([a-z0-9-]{0,61}[a-z0-9])?`.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Optional. Proceeds only after phase name matched any one in the list. This
-     * value must consist of lower-case letters, numbers, and hyphens, start with
-     * a letter and end with a letter or a number, and have a max length of 63
-     * characters. In other words, it must match the following regex:
-     * `^[a-z]([a-z0-9-]{0,61}[a-z0-9])?$`.
-     *
-     * @var string[]
-     */
-    public $sourcePhases;
-    /**
-     * Optional. How long to wait after a rollout is finished.
-     *
-     * @var string
-     */
-    public $wait;
-    /**
-     * Output only. Information around the state of the Automation rule.
-     *
-     * @param AutomationRuleCondition $condition
-     */
-    public function setCondition(AutomationRuleCondition $condition)
+namespace Google\Service\CloudDeploy {
+    class AdvanceRolloutRule extends \Google\Collection
     {
+        protected $collection_key = 'sourcePhases';
+        protected $conditionType = AutomationRuleCondition::class;
+        protected $conditionDataType = '';
+        /**
+         * Required. ID of the rule. This id must be unique in the `Automation`
+         * resource to which this rule belongs. The format is
+         * `[a-z]([a-z0-9-]{0,61}[a-z0-9])?`.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Optional. Proceeds only after phase name matched any one in the list. This
+         * value must consist of lower-case letters, numbers, and hyphens, start with
+         * a letter and end with a letter or a number, and have a max length of 63
+         * characters. In other words, it must match the following regex:
+         * `^[a-z]([a-z0-9-]{0,61}[a-z0-9])?$`.
+         *
+         * @var string[]
+         */
+        public $sourcePhases;
+        /**
+         * Optional. How long to wait after a rollout is finished.
+         *
+         * @var string
+         */
+        public $wait;
+        /**
+         * Output only. Information around the state of the Automation rule.
+         *
+         * @param AutomationRuleCondition $condition
+         */
+        public function setCondition(AutomationRuleCondition $condition)
+        {
+        }
+        /**
+         * @return AutomationRuleCondition
+         */
+        public function getCondition()
+        {
+        }
+        /**
+         * Required. ID of the rule. This id must be unique in the `Automation`
+         * resource to which this rule belongs. The format is
+         * `[a-z]([a-z0-9-]{0,61}[a-z0-9])?`.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Optional. Proceeds only after phase name matched any one in the list. This
+         * value must consist of lower-case letters, numbers, and hyphens, start with
+         * a letter and end with a letter or a number, and have a max length of 63
+         * characters. In other words, it must match the following regex:
+         * `^[a-z]([a-z0-9-]{0,61}[a-z0-9])?$`.
+         *
+         * @param string[] $sourcePhases
+         */
+        public function setSourcePhases($sourcePhases)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSourcePhases()
+        {
+        }
+        /**
+         * Optional. How long to wait after a rollout is finished.
+         *
+         * @param string $wait
+         */
+        public function setWait($wait)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWait()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AutomationRuleCondition
+     * Runtime class alias of \Google\Service\CloudDeploy\AdvanceRolloutRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCondition()
-    {
-    }
-    /**
-     * Required. ID of the rule. This id must be unique in the `Automation`
-     * resource to which this rule belongs. The format is
-     * `[a-z]([a-z0-9-]{0,61}[a-z0-9])?`.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Optional. Proceeds only after phase name matched any one in the list. This
-     * value must consist of lower-case letters, numbers, and hyphens, start with
-     * a letter and end with a letter or a number, and have a max length of 63
-     * characters. In other words, it must match the following regex:
-     * `^[a-z]([a-z0-9-]{0,61}[a-z0-9])?$`.
-     *
-     * @param string[] $sourcePhases
-     */
-    public function setSourcePhases($sourcePhases)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSourcePhases()
-    {
-    }
-    /**
-     * Optional. How long to wait after a rollout is finished.
-     *
-     * @param string $wait
-     */
-    public function setWait($wait)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWait()
+    class Google_Service_CloudDeploy_AdvanceRolloutRule extends \Google\Service\CloudDeploy\AdvanceRolloutRule
     {
     }
 }

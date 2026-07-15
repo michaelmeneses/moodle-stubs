@@ -47,65 +47,74 @@
  * @link http://simplepie.org/ SimplePie
  * @license http://www.opensource.org/licenses/bsd-license.php BSD License
  */
-namespace SimplePie;
-
-/**
- * Handles `<media:rating>` or `<itunes:explicit>` tags as defined in Media RSS and iTunes RSS respectively
- *
- * Used by {@see \SimplePie\Enclosure::get_rating()} and {@see \SimplePie\Enclosure::get_ratings()}
- *
- * This class can be overloaded with {@see \SimplePie\SimplePie::set_rating_class()}
- *
- * @package SimplePie
- * @subpackage API
- */
-class Rating
-{
+namespace SimplePie {
     /**
-     * Rating scheme
+     * Handles `<media:rating>` or `<itunes:explicit>` tags as defined in Media RSS and iTunes RSS respectively
      *
-     * @var string
-     * @see get_scheme()
-     */
-    public $scheme;
-    /**
-     * Rating value
+     * Used by {@see \SimplePie\Enclosure::get_rating()} and {@see \SimplePie\Enclosure::get_ratings()}
      *
-     * @var string
-     * @see get_value()
-     */
-    public $value;
-    /**
-     * Constructor, used to input the data
+     * This class can be overloaded with {@see \SimplePie\SimplePie::set_rating_class()}
      *
-     * For documentation on all the parameters, see the corresponding
-     * properties and their accessors
+     * @package SimplePie
+     * @subpackage API
      */
-    public function __construct($scheme = null, $value = null)
+    class Rating
     {
+        /**
+         * Rating scheme
+         *
+         * @var string
+         * @see get_scheme()
+         */
+        public $scheme;
+        /**
+         * Rating value
+         *
+         * @var string
+         * @see get_value()
+         */
+        public $value;
+        /**
+         * Constructor, used to input the data
+         *
+         * For documentation on all the parameters, see the corresponding
+         * properties and their accessors
+         */
+        public function __construct($scheme = null, $value = null)
+        {
+        }
+        /**
+         * String-ified version
+         *
+         * @return string
+         */
+        public function __toString()
+        {
+        }
+        /**
+         * Get the organizational scheme for the rating
+         *
+         * @return string|null
+         */
+        public function get_scheme()
+        {
+        }
+        /**
+         * Get the value of the rating
+         *
+         * @return string|null
+         */
+        public function get_value()
+        {
+        }
     }
+}
+namespace {
     /**
-     * String-ified version
-     *
-     * @return string
+     * Runtime class alias of \SimplePie\Rating registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function __toString()
-    {
-    }
-    /**
-     * Get the organizational scheme for the rating
-     *
-     * @return string|null
-     */
-    public function get_scheme()
-    {
-    }
-    /**
-     * Get the value of the rating
-     *
-     * @return string|null
-     */
-    public function get_value()
+    class SimplePie_Rating extends \SimplePie\Rating
     {
     }
 }

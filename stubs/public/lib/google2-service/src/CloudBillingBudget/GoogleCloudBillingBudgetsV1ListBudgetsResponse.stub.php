@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBillingBudget;
-
-class GoogleCloudBillingBudgetsV1ListBudgetsResponse extends \Google\Collection
-{
-    protected $collection_key = 'budgets';
-    protected $budgetsType = GoogleCloudBillingBudgetsV1Budget::class;
-    protected $budgetsDataType = 'array';
-    /**
-     * If not empty, indicates that there may be more budgets that match the
-     * request; this value should be passed in a new `ListBudgetsRequest`.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of the budgets owned by the requested billing account.
-     *
-     * @param GoogleCloudBillingBudgetsV1Budget[] $budgets
-     */
-    public function setBudgets($budgets)
+namespace Google\Service\CloudBillingBudget {
+    class GoogleCloudBillingBudgetsV1ListBudgetsResponse extends \Google\Collection
     {
+        protected $collection_key = 'budgets';
+        protected $budgetsType = GoogleCloudBillingBudgetsV1Budget::class;
+        protected $budgetsDataType = 'array';
+        /**
+         * If not empty, indicates that there may be more budgets that match the
+         * request; this value should be passed in a new `ListBudgetsRequest`.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of the budgets owned by the requested billing account.
+         *
+         * @param GoogleCloudBillingBudgetsV1Budget[] $budgets
+         */
+        public function setBudgets($budgets)
+        {
+        }
+        /**
+         * @return GoogleCloudBillingBudgetsV1Budget[]
+         */
+        public function getBudgets()
+        {
+        }
+        /**
+         * If not empty, indicates that there may be more budgets that match the
+         * request; this value should be passed in a new `ListBudgetsRequest`.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudBillingBudgetsV1Budget[]
+     * Runtime class alias of \Google\Service\CloudBillingBudget\GoogleCloudBillingBudgetsV1ListBudgetsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBudgets()
-    {
-    }
-    /**
-     * If not empty, indicates that there may be more budgets that match the
-     * request; this value should be passed in a new `ListBudgetsRequest`.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_CloudBillingBudget_GoogleCloudBillingBudgetsV1ListBudgetsResponse extends \Google\Service\CloudBillingBudget\GoogleCloudBillingBudgetsV1ListBudgetsResponse
     {
     }
 }

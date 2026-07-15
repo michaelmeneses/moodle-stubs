@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors;
-
-class LockConfig extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $locked;
-    /**
-     * @var string
-     */
-    public $reason;
-    /**
-     * @param bool
-     */
-    public function setLocked($locked)
+namespace Google\Service\Connectors {
+    class LockConfig extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $locked;
+        /**
+         * @var string
+         */
+        public $reason;
+        /**
+         * @param bool
+         */
+        public function setLocked($locked)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getLocked()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReason($reason)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReason()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Connectors\LockConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLocked()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReason($reason)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReason()
+    class Google_Service_Connectors_LockConfig extends \Google\Service\Connectors\LockConfig
     {
     }
 }

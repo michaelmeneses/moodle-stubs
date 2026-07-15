@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BeyondCorp\Resource;
-
-/**
- * The "organizations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $beyondcorpService = new Google\Service\BeyondCorp(...);
- *   $organizations = $beyondcorpService->organizations;
- *  </code>
- */
-class Organizations extends \Google\Service\Resource
-{
+namespace Google\Service\BeyondCorp\Resource {
+    /**
+     * The "organizations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $beyondcorpService = new Google\Service\BeyondCorp(...);
+     *   $organizations = $beyondcorpService->organizations;
+     *  </code>
+     */
+    class Organizations extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\BeyondCorp\Resource\Organizations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_BeyondCorp_Resource_Organizations extends \Google\Service\BeyondCorp\Resource\Organizations
+    {
+    }
 }

@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Transcoder;
-
-class ListJobsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $jobsType = Job::class;
-    protected $jobsDataType = 'array';
-    /**
-     * The pagination token.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of regions that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * List of jobs in the specified region.
-     *
-     * @param Job[] $jobs
-     */
-    public function setJobs($jobs)
+namespace Google\Service\Transcoder {
+    class ListJobsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $jobsType = Job::class;
+        protected $jobsDataType = 'array';
+        /**
+         * The pagination token.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of regions that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * List of jobs in the specified region.
+         *
+         * @param Job[] $jobs
+         */
+        public function setJobs($jobs)
+        {
+        }
+        /**
+         * @return Job[]
+         */
+        public function getJobs()
+        {
+        }
+        /**
+         * The pagination token.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * List of regions that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Job[]
+     * Runtime class alias of \Google\Service\Transcoder\ListJobsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getJobs()
-    {
-    }
-    /**
-     * The pagination token.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * List of regions that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_Transcoder_ListJobsResponse extends \Google\Service\Transcoder\ListJobsResponse
     {
     }
 }

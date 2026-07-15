@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class UserRolePermissionsListResponse extends \Google\Collection
-{
-    protected $collection_key = 'userRolePermissions';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#userRolePermissionsListResponse".
-     *
-     * @var string
-     */
-    public $kind;
-    protected $userRolePermissionsType = UserRolePermission::class;
-    protected $userRolePermissionsDataType = 'array';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#userRolePermissionsListResponse".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Dfareporting {
+    class UserRolePermissionsListResponse extends \Google\Collection
     {
+        protected $collection_key = 'userRolePermissions';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#userRolePermissionsListResponse".
+         *
+         * @var string
+         */
+        public $kind;
+        protected $userRolePermissionsType = UserRolePermission::class;
+        protected $userRolePermissionsDataType = 'array';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#userRolePermissionsListResponse".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * User role permission collection.
+         *
+         * @param UserRolePermission[] $userRolePermissions
+         */
+        public function setUserRolePermissions($userRolePermissions)
+        {
+        }
+        /**
+         * @return UserRolePermission[]
+         */
+        public function getUserRolePermissions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\UserRolePermissionsListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * User role permission collection.
-     *
-     * @param UserRolePermission[] $userRolePermissions
-     */
-    public function setUserRolePermissions($userRolePermissions)
-    {
-    }
-    /**
-     * @return UserRolePermission[]
-     */
-    public function getUserRolePermissions()
+    class Google_Service_Dfareporting_UserRolePermissionsListResponse extends \Google\Service\Dfareporting\UserRolePermissionsListResponse
     {
     }
 }

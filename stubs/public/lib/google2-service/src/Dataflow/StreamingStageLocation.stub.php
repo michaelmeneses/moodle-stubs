@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class StreamingStageLocation extends \Google\Model
-{
-    /**
-     * Identifies the particular stream within the streaming Dataflow job.
-     *
-     * @var string
-     */
-    public $streamId;
-    /**
-     * Identifies the particular stream within the streaming Dataflow job.
-     *
-     * @param string $streamId
-     */
-    public function setStreamId($streamId)
+namespace Google\Service\Dataflow {
+    class StreamingStageLocation extends \Google\Model
     {
+        /**
+         * Identifies the particular stream within the streaming Dataflow job.
+         *
+         * @var string
+         */
+        public $streamId;
+        /**
+         * Identifies the particular stream within the streaming Dataflow job.
+         *
+         * @param string $streamId
+         */
+        public function setStreamId($streamId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStreamId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataflow\StreamingStageLocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStreamId()
+    class Google_Service_Dataflow_StreamingStageLocation extends \Google\Service\Dataflow\StreamingStageLocation
     {
     }
 }

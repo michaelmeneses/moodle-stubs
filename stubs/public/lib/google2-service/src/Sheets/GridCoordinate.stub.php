@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class GridCoordinate extends \Google\Model
-{
-    /**
-     * The column index of the coordinate.
-     *
-     * @var int
-     */
-    public $columnIndex;
-    /**
-     * The row index of the coordinate.
-     *
-     * @var int
-     */
-    public $rowIndex;
-    /**
-     * The sheet this coordinate is on.
-     *
-     * @var int
-     */
-    public $sheetId;
-    /**
-     * The column index of the coordinate.
-     *
-     * @param int $columnIndex
-     */
-    public function setColumnIndex($columnIndex)
+namespace Google\Service\Sheets {
+    class GridCoordinate extends \Google\Model
     {
+        /**
+         * The column index of the coordinate.
+         *
+         * @var int
+         */
+        public $columnIndex;
+        /**
+         * The row index of the coordinate.
+         *
+         * @var int
+         */
+        public $rowIndex;
+        /**
+         * The sheet this coordinate is on.
+         *
+         * @var int
+         */
+        public $sheetId;
+        /**
+         * The column index of the coordinate.
+         *
+         * @param int $columnIndex
+         */
+        public function setColumnIndex($columnIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getColumnIndex()
+        {
+        }
+        /**
+         * The row index of the coordinate.
+         *
+         * @param int $rowIndex
+         */
+        public function setRowIndex($rowIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRowIndex()
+        {
+        }
+        /**
+         * The sheet this coordinate is on.
+         *
+         * @param int $sheetId
+         */
+        public function setSheetId($sheetId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSheetId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Sheets\GridCoordinate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumnIndex()
-    {
-    }
-    /**
-     * The row index of the coordinate.
-     *
-     * @param int $rowIndex
-     */
-    public function setRowIndex($rowIndex)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getRowIndex()
-    {
-    }
-    /**
-     * The sheet this coordinate is on.
-     *
-     * @param int $sheetId
-     */
-    public function setSheetId($sheetId)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSheetId()
+    class Google_Service_Sheets_GridCoordinate extends \Google\Service\Sheets\GridCoordinate
     {
     }
 }

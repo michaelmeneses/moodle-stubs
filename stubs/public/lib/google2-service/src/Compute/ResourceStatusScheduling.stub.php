@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class ResourceStatusScheduling extends \Google\Model
-{
-    /**
-     * Specifies the availability domain to place the instance in. The value must
-     * be a number between 1 and the number of availability domains specified in
-     * the spread placement policy attached to the instance.
-     *
-     * @var int
-     */
-    public $availabilityDomain;
-    /**
-     * Specifies the availability domain to place the instance in. The value must
-     * be a number between 1 and the number of availability domains specified in
-     * the spread placement policy attached to the instance.
-     *
-     * @param int $availabilityDomain
-     */
-    public function setAvailabilityDomain($availabilityDomain)
+namespace Google\Service\Compute {
+    class ResourceStatusScheduling extends \Google\Model
     {
+        /**
+         * Specifies the availability domain to place the instance in. The value must
+         * be a number between 1 and the number of availability domains specified in
+         * the spread placement policy attached to the instance.
+         *
+         * @var int
+         */
+        public $availabilityDomain;
+        /**
+         * Specifies the availability domain to place the instance in. The value must
+         * be a number between 1 and the number of availability domains specified in
+         * the spread placement policy attached to the instance.
+         *
+         * @param int $availabilityDomain
+         */
+        public function setAvailabilityDomain($availabilityDomain)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getAvailabilityDomain()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Compute\ResourceStatusScheduling registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAvailabilityDomain()
+    class Google_Service_Compute_ResourceStatusScheduling extends \Google\Service\Compute\ResourceStatusScheduling
     {
     }
 }

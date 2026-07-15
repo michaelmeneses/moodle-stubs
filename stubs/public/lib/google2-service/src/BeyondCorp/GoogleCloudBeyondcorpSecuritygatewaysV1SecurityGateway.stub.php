@@ -21,235 +21,244 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BeyondCorp;
-
-class GoogleCloudBeyondcorpSecuritygatewaysV1SecurityGateway extends \Google\Collection
-{
-    /**
-     * Default value. This value is unused.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * SecurityGateway is being created.
-     */
-    public const STATE_CREATING = 'CREATING';
-    /**
-     * SecurityGateway is being updated.
-     */
-    public const STATE_UPDATING = 'UPDATING';
-    /**
-     * SecurityGateway is being deleted.
-     */
-    public const STATE_DELETING = 'DELETING';
-    /**
-     * SecurityGateway is running.
-     */
-    public const STATE_RUNNING = 'RUNNING';
-    /**
-     * SecurityGateway is down and may be restored in the future.
-     */
-    public const STATE_DOWN = 'DOWN';
-    /**
-     * SecurityGateway encountered an error and is in an indeterministic state.
-     */
-    public const STATE_ERROR = 'ERROR';
-    protected $collection_key = 'externalIps';
-    /**
-     * Output only. Timestamp when the resource was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Output only. Service account used for operations that involve resources in
-     * consumer projects.
-     *
-     * @var string
-     */
-    public $delegatingServiceAccount;
-    /**
-     * Optional. An arbitrary user-provided name for the SecurityGateway. Cannot
-     * exceed 64 characters.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Output only. IP addresses that will be used for establishing connection to
-     * the endpoints.
-     *
-     * @var string[]
-     */
-    public $externalIps;
-    protected $hubsType = GoogleCloudBeyondcorpSecuritygatewaysV1Hub::class;
-    protected $hubsDataType = 'map';
-    /**
-     * Identifier. Name of the resource.
-     *
-     * @var string
-     */
-    public $name;
-    protected $proxyProtocolConfigType = GoogleCloudBeyondcorpSecuritygatewaysV1ProxyProtocolConfig::class;
-    protected $proxyProtocolConfigDataType = '';
-    protected $serviceDiscoveryType = GoogleCloudBeyondcorpSecuritygatewaysV1ServiceDiscovery::class;
-    protected $serviceDiscoveryDataType = '';
-    /**
-     * Output only. The operational state of the SecurityGateway.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Output only. Timestamp when the resource was last modified.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. Timestamp when the resource was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\BeyondCorp {
+    class GoogleCloudBeyondcorpSecuritygatewaysV1SecurityGateway extends \Google\Collection
     {
+        /**
+         * Default value. This value is unused.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * SecurityGateway is being created.
+         */
+        public const STATE_CREATING = 'CREATING';
+        /**
+         * SecurityGateway is being updated.
+         */
+        public const STATE_UPDATING = 'UPDATING';
+        /**
+         * SecurityGateway is being deleted.
+         */
+        public const STATE_DELETING = 'DELETING';
+        /**
+         * SecurityGateway is running.
+         */
+        public const STATE_RUNNING = 'RUNNING';
+        /**
+         * SecurityGateway is down and may be restored in the future.
+         */
+        public const STATE_DOWN = 'DOWN';
+        /**
+         * SecurityGateway encountered an error and is in an indeterministic state.
+         */
+        public const STATE_ERROR = 'ERROR';
+        protected $collection_key = 'externalIps';
+        /**
+         * Output only. Timestamp when the resource was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Output only. Service account used for operations that involve resources in
+         * consumer projects.
+         *
+         * @var string
+         */
+        public $delegatingServiceAccount;
+        /**
+         * Optional. An arbitrary user-provided name for the SecurityGateway. Cannot
+         * exceed 64 characters.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Output only. IP addresses that will be used for establishing connection to
+         * the endpoints.
+         *
+         * @var string[]
+         */
+        public $externalIps;
+        protected $hubsType = GoogleCloudBeyondcorpSecuritygatewaysV1Hub::class;
+        protected $hubsDataType = 'map';
+        /**
+         * Identifier. Name of the resource.
+         *
+         * @var string
+         */
+        public $name;
+        protected $proxyProtocolConfigType = GoogleCloudBeyondcorpSecuritygatewaysV1ProxyProtocolConfig::class;
+        protected $proxyProtocolConfigDataType = '';
+        protected $serviceDiscoveryType = GoogleCloudBeyondcorpSecuritygatewaysV1ServiceDiscovery::class;
+        protected $serviceDiscoveryDataType = '';
+        /**
+         * Output only. The operational state of the SecurityGateway.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Output only. Timestamp when the resource was last modified.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. Timestamp when the resource was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. Service account used for operations that involve resources in
+         * consumer projects.
+         *
+         * @param string $delegatingServiceAccount
+         */
+        public function setDelegatingServiceAccount($delegatingServiceAccount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDelegatingServiceAccount()
+        {
+        }
+        /**
+         * Optional. An arbitrary user-provided name for the SecurityGateway. Cannot
+         * exceed 64 characters.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Output only. IP addresses that will be used for establishing connection to
+         * the endpoints.
+         *
+         * @param string[] $externalIps
+         */
+        public function setExternalIps($externalIps)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getExternalIps()
+        {
+        }
+        /**
+         * Optional. Map of Hubs that represents regional data path deployment with
+         * GCP region as a key.
+         *
+         * @param GoogleCloudBeyondcorpSecuritygatewaysV1Hub[] $hubs
+         */
+        public function setHubs($hubs)
+        {
+        }
+        /**
+         * @return GoogleCloudBeyondcorpSecuritygatewaysV1Hub[]
+         */
+        public function getHubs()
+        {
+        }
+        /**
+         * Identifier. Name of the resource.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. Shared proxy configuration for all apps.
+         *
+         * @param GoogleCloudBeyondcorpSecuritygatewaysV1ProxyProtocolConfig $proxyProtocolConfig
+         */
+        public function setProxyProtocolConfig(GoogleCloudBeyondcorpSecuritygatewaysV1ProxyProtocolConfig $proxyProtocolConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudBeyondcorpSecuritygatewaysV1ProxyProtocolConfig
+         */
+        public function getProxyProtocolConfig()
+        {
+        }
+        /**
+         * Optional. Settings related to the Service Discovery.
+         *
+         * @param GoogleCloudBeyondcorpSecuritygatewaysV1ServiceDiscovery $serviceDiscovery
+         */
+        public function setServiceDiscovery(GoogleCloudBeyondcorpSecuritygatewaysV1ServiceDiscovery $serviceDiscovery)
+        {
+        }
+        /**
+         * @return GoogleCloudBeyondcorpSecuritygatewaysV1ServiceDiscovery
+         */
+        public function getServiceDiscovery()
+        {
+        }
+        /**
+         * Output only. The operational state of the SecurityGateway.
+         *
+         * Accepted values: STATE_UNSPECIFIED, CREATING, UPDATING, DELETING, RUNNING,
+         * DOWN, ERROR
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Output only. Timestamp when the resource was last modified.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BeyondCorp\GoogleCloudBeyondcorpSecuritygatewaysV1SecurityGateway registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. Service account used for operations that involve resources in
-     * consumer projects.
-     *
-     * @param string $delegatingServiceAccount
-     */
-    public function setDelegatingServiceAccount($delegatingServiceAccount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDelegatingServiceAccount()
-    {
-    }
-    /**
-     * Optional. An arbitrary user-provided name for the SecurityGateway. Cannot
-     * exceed 64 characters.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Output only. IP addresses that will be used for establishing connection to
-     * the endpoints.
-     *
-     * @param string[] $externalIps
-     */
-    public function setExternalIps($externalIps)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getExternalIps()
-    {
-    }
-    /**
-     * Optional. Map of Hubs that represents regional data path deployment with
-     * GCP region as a key.
-     *
-     * @param GoogleCloudBeyondcorpSecuritygatewaysV1Hub[] $hubs
-     */
-    public function setHubs($hubs)
-    {
-    }
-    /**
-     * @return GoogleCloudBeyondcorpSecuritygatewaysV1Hub[]
-     */
-    public function getHubs()
-    {
-    }
-    /**
-     * Identifier. Name of the resource.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. Shared proxy configuration for all apps.
-     *
-     * @param GoogleCloudBeyondcorpSecuritygatewaysV1ProxyProtocolConfig $proxyProtocolConfig
-     */
-    public function setProxyProtocolConfig(GoogleCloudBeyondcorpSecuritygatewaysV1ProxyProtocolConfig $proxyProtocolConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudBeyondcorpSecuritygatewaysV1ProxyProtocolConfig
-     */
-    public function getProxyProtocolConfig()
-    {
-    }
-    /**
-     * Optional. Settings related to the Service Discovery.
-     *
-     * @param GoogleCloudBeyondcorpSecuritygatewaysV1ServiceDiscovery $serviceDiscovery
-     */
-    public function setServiceDiscovery(GoogleCloudBeyondcorpSecuritygatewaysV1ServiceDiscovery $serviceDiscovery)
-    {
-    }
-    /**
-     * @return GoogleCloudBeyondcorpSecuritygatewaysV1ServiceDiscovery
-     */
-    public function getServiceDiscovery()
-    {
-    }
-    /**
-     * Output only. The operational state of the SecurityGateway.
-     *
-     * Accepted values: STATE_UNSPECIFIED, CREATING, UPDATING, DELETING, RUNNING,
-     * DOWN, ERROR
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Output only. Timestamp when the resource was last modified.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_BeyondCorp_GoogleCloudBeyondcorpSecuritygatewaysV1SecurityGateway extends \Google\Service\BeyondCorp\GoogleCloudBeyondcorpSecuritygatewaysV1SecurityGateway
     {
     }
 }

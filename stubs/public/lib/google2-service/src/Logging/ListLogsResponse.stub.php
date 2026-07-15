@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Logging;
-
-class ListLogsResponse extends \Google\Collection
-{
-    protected $collection_key = 'logNames';
-    /**
-     * A list of log names. For example, "projects/my-project/logs/syslog" or
-     * "organizations/123/logs/cloudresourcemanager.googleapis.com%2Factivity".
-     *
-     * @var string[]
-     */
-    public $logNames;
-    /**
-     * If there might be more results than those appearing in this response, then
-     * nextPageToken is included. To get the next set of results, call this method
-     * again using the value of nextPageToken as pageToken.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * A list of log names. For example, "projects/my-project/logs/syslog" or
-     * "organizations/123/logs/cloudresourcemanager.googleapis.com%2Factivity".
-     *
-     * @param string[] $logNames
-     */
-    public function setLogNames($logNames)
+namespace Google\Service\Logging {
+    class ListLogsResponse extends \Google\Collection
     {
+        protected $collection_key = 'logNames';
+        /**
+         * A list of log names. For example, "projects/my-project/logs/syslog" or
+         * "organizations/123/logs/cloudresourcemanager.googleapis.com%2Factivity".
+         *
+         * @var string[]
+         */
+        public $logNames;
+        /**
+         * If there might be more results than those appearing in this response, then
+         * nextPageToken is included. To get the next set of results, call this method
+         * again using the value of nextPageToken as pageToken.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * A list of log names. For example, "projects/my-project/logs/syslog" or
+         * "organizations/123/logs/cloudresourcemanager.googleapis.com%2Factivity".
+         *
+         * @param string[] $logNames
+         */
+        public function setLogNames($logNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLogNames()
+        {
+        }
+        /**
+         * If there might be more results than those appearing in this response, then
+         * nextPageToken is included. To get the next set of results, call this method
+         * again using the value of nextPageToken as pageToken.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Logging\ListLogsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLogNames()
-    {
-    }
-    /**
-     * If there might be more results than those appearing in this response, then
-     * nextPageToken is included. To get the next set of results, call this method
-     * again using the value of nextPageToken as pageToken.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Logging_ListLogsResponse extends \Google\Service\Logging\ListLogsResponse
     {
     }
 }

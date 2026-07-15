@@ -21,226 +21,235 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkSecurity;
-
-class SecurityProfileGroup extends \Google\Model
-{
-    /**
-     * Output only. Resource creation timestamp.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Optional. Reference to a SecurityProfile with the CustomIntercept
-     * configuration.
-     *
-     * @var string
-     */
-    public $customInterceptProfile;
-    /**
-     * Optional. Reference to a SecurityProfile with the CustomMirroring
-     * configuration.
-     *
-     * @var string
-     */
-    public $customMirroringProfile;
-    /**
-     * Output only. Identifier used by the data-path. Unique within {container,
-     * location}.
-     *
-     * @var string
-     */
-    public $dataPathId;
-    /**
-     * Optional. An optional description of the profile group. Max length 2048
-     * characters.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Output only. This checksum is computed by the server based on the value of
-     * other fields, and may be sent on update and delete requests to ensure the
-     * client has an up-to-date value before proceeding.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * Optional. Labels as key value pairs.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Immutable. Identifier. Name of the SecurityProfileGroup resource. It
-     * matches pattern `projects|organizations/locations/{location}/securityProfil
-     * eGroups/{security_profile_group}`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optional. Reference to a SecurityProfile with the ThreatPrevention
-     * configuration.
-     *
-     * @var string
-     */
-    public $threatPreventionProfile;
-    /**
-     * Output only. Last resource update timestamp.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. Resource creation timestamp.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\NetworkSecurity {
+    class SecurityProfileGroup extends \Google\Model
     {
+        /**
+         * Output only. Resource creation timestamp.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Optional. Reference to a SecurityProfile with the CustomIntercept
+         * configuration.
+         *
+         * @var string
+         */
+        public $customInterceptProfile;
+        /**
+         * Optional. Reference to a SecurityProfile with the CustomMirroring
+         * configuration.
+         *
+         * @var string
+         */
+        public $customMirroringProfile;
+        /**
+         * Output only. Identifier used by the data-path. Unique within {container,
+         * location}.
+         *
+         * @var string
+         */
+        public $dataPathId;
+        /**
+         * Optional. An optional description of the profile group. Max length 2048
+         * characters.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Output only. This checksum is computed by the server based on the value of
+         * other fields, and may be sent on update and delete requests to ensure the
+         * client has an up-to-date value before proceeding.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * Optional. Labels as key value pairs.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Immutable. Identifier. Name of the SecurityProfileGroup resource. It
+         * matches pattern `projects|organizations/locations/{location}/securityProfil
+         * eGroups/{security_profile_group}`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optional. Reference to a SecurityProfile with the ThreatPrevention
+         * configuration.
+         *
+         * @var string
+         */
+        public $threatPreventionProfile;
+        /**
+         * Output only. Last resource update timestamp.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. Resource creation timestamp.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Optional. Reference to a SecurityProfile with the CustomIntercept
+         * configuration.
+         *
+         * @param string $customInterceptProfile
+         */
+        public function setCustomInterceptProfile($customInterceptProfile)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomInterceptProfile()
+        {
+        }
+        /**
+         * Optional. Reference to a SecurityProfile with the CustomMirroring
+         * configuration.
+         *
+         * @param string $customMirroringProfile
+         */
+        public function setCustomMirroringProfile($customMirroringProfile)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomMirroringProfile()
+        {
+        }
+        /**
+         * Output only. Identifier used by the data-path. Unique within {container,
+         * location}.
+         *
+         * @param string $dataPathId
+         */
+        public function setDataPathId($dataPathId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataPathId()
+        {
+        }
+        /**
+         * Optional. An optional description of the profile group. Max length 2048
+         * characters.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Output only. This checksum is computed by the server based on the value of
+         * other fields, and may be sent on update and delete requests to ensure the
+         * client has an up-to-date value before proceeding.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * Optional. Labels as key value pairs.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Immutable. Identifier. Name of the SecurityProfileGroup resource. It
+         * matches pattern `projects|organizations/locations/{location}/securityProfil
+         * eGroups/{security_profile_group}`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. Reference to a SecurityProfile with the ThreatPrevention
+         * configuration.
+         *
+         * @param string $threatPreventionProfile
+         */
+        public function setThreatPreventionProfile($threatPreventionProfile)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getThreatPreventionProfile()
+        {
+        }
+        /**
+         * Output only. Last resource update timestamp.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetworkSecurity\SecurityProfileGroup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Optional. Reference to a SecurityProfile with the CustomIntercept
-     * configuration.
-     *
-     * @param string $customInterceptProfile
-     */
-    public function setCustomInterceptProfile($customInterceptProfile)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCustomInterceptProfile()
-    {
-    }
-    /**
-     * Optional. Reference to a SecurityProfile with the CustomMirroring
-     * configuration.
-     *
-     * @param string $customMirroringProfile
-     */
-    public function setCustomMirroringProfile($customMirroringProfile)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCustomMirroringProfile()
-    {
-    }
-    /**
-     * Output only. Identifier used by the data-path. Unique within {container,
-     * location}.
-     *
-     * @param string $dataPathId
-     */
-    public function setDataPathId($dataPathId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDataPathId()
-    {
-    }
-    /**
-     * Optional. An optional description of the profile group. Max length 2048
-     * characters.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Output only. This checksum is computed by the server based on the value of
-     * other fields, and may be sent on update and delete requests to ensure the
-     * client has an up-to-date value before proceeding.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * Optional. Labels as key value pairs.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Immutable. Identifier. Name of the SecurityProfileGroup resource. It
-     * matches pattern `projects|organizations/locations/{location}/securityProfil
-     * eGroups/{security_profile_group}`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. Reference to a SecurityProfile with the ThreatPrevention
-     * configuration.
-     *
-     * @param string $threatPreventionProfile
-     */
-    public function setThreatPreventionProfile($threatPreventionProfile)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getThreatPreventionProfile()
-    {
-    }
-    /**
-     * Output only. Last resource update timestamp.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_NetworkSecurity_SecurityProfileGroup extends \Google\Service\NetworkSecurity\SecurityProfileGroup
     {
     }
 }

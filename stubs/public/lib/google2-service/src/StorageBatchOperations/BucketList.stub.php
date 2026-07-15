@@ -21,27 +21,36 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\StorageBatchOperations;
-
-class BucketList extends \Google\Collection
-{
-    protected $collection_key = 'buckets';
-    protected $bucketsType = Bucket::class;
-    protected $bucketsDataType = 'array';
-    /**
-     * Required. List of buckets and their objects to be transformed. Currently,
-     * only one bucket configuration is supported. If multiple buckets are
-     * specified, an error will be returned.
-     *
-     * @param Bucket[] $buckets
-     */
-    public function setBuckets($buckets)
+namespace Google\Service\StorageBatchOperations {
+    class BucketList extends \Google\Collection
     {
+        protected $collection_key = 'buckets';
+        protected $bucketsType = Bucket::class;
+        protected $bucketsDataType = 'array';
+        /**
+         * Required. List of buckets and their objects to be transformed. Currently,
+         * only one bucket configuration is supported. If multiple buckets are
+         * specified, an error will be returned.
+         *
+         * @param Bucket[] $buckets
+         */
+        public function setBuckets($buckets)
+        {
+        }
+        /**
+         * @return Bucket[]
+         */
+        public function getBuckets()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Bucket[]
+     * Runtime class alias of \Google\Service\StorageBatchOperations\BucketList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBuckets()
+    class Google_Service_StorageBatchOperations_BucketList extends \Google\Service\StorageBatchOperations\BucketList
     {
     }
 }

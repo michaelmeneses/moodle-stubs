@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class ListClustersResponse extends \Google\Collection
-{
-    protected $collection_key = 'clusters';
-    protected $clustersType = Cluster::class;
-    protected $clustersDataType = 'array';
-    /**
-     * Output only. This token is included in the response if there are more
-     * results to fetch. To fetch additional results, provide this value as the
-     * page_token in a subsequent ListClustersRequest.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Output only. The clusters in the project.
-     *
-     * @param Cluster[] $clusters
-     */
-    public function setClusters($clusters)
+namespace Google\Service\Dataproc {
+    class ListClustersResponse extends \Google\Collection
     {
+        protected $collection_key = 'clusters';
+        protected $clustersType = Cluster::class;
+        protected $clustersDataType = 'array';
+        /**
+         * Output only. This token is included in the response if there are more
+         * results to fetch. To fetch additional results, provide this value as the
+         * page_token in a subsequent ListClustersRequest.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Output only. The clusters in the project.
+         *
+         * @param Cluster[] $clusters
+         */
+        public function setClusters($clusters)
+        {
+        }
+        /**
+         * @return Cluster[]
+         */
+        public function getClusters()
+        {
+        }
+        /**
+         * Output only. This token is included in the response if there are more
+         * results to fetch. To fetch additional results, provide this value as the
+         * page_token in a subsequent ListClustersRequest.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Cluster[]
+     * Runtime class alias of \Google\Service\Dataproc\ListClustersResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClusters()
-    {
-    }
-    /**
-     * Output only. This token is included in the response if there are more
-     * results to fetch. To fetch additional results, provide this value as the
-     * page_token in a subsequent ListClustersRequest.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Dataproc_ListClustersResponse extends \Google\Service\Dataproc\ListClustersResponse
     {
     }
 }

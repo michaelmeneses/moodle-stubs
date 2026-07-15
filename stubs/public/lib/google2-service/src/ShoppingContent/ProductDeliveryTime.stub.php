@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class ProductDeliveryTime extends \Google\Collection
-{
-    protected $collection_key = 'areaDeliveryTimes';
-    protected $areaDeliveryTimesType = ProductDeliveryTimeAreaDeliveryTime::class;
-    protected $areaDeliveryTimesDataType = 'array';
-    protected $productIdType = ProductId::class;
-    protected $productIdDataType = '';
-    /**
-     * Required. A set of associations between `DeliveryArea` and `DeliveryTime`
-     * entries. The total number of `areaDeliveryTimes` can be at most 100.
-     *
-     * @param ProductDeliveryTimeAreaDeliveryTime[] $areaDeliveryTimes
-     */
-    public function setAreaDeliveryTimes($areaDeliveryTimes)
+namespace Google\Service\ShoppingContent {
+    class ProductDeliveryTime extends \Google\Collection
     {
+        protected $collection_key = 'areaDeliveryTimes';
+        protected $areaDeliveryTimesType = ProductDeliveryTimeAreaDeliveryTime::class;
+        protected $areaDeliveryTimesDataType = 'array';
+        protected $productIdType = ProductId::class;
+        protected $productIdDataType = '';
+        /**
+         * Required. A set of associations between `DeliveryArea` and `DeliveryTime`
+         * entries. The total number of `areaDeliveryTimes` can be at most 100.
+         *
+         * @param ProductDeliveryTimeAreaDeliveryTime[] $areaDeliveryTimes
+         */
+        public function setAreaDeliveryTimes($areaDeliveryTimes)
+        {
+        }
+        /**
+         * @return ProductDeliveryTimeAreaDeliveryTime[]
+         */
+        public function getAreaDeliveryTimes()
+        {
+        }
+        /**
+         * Required. The `id` of the product.
+         *
+         * @param ProductId $productId
+         */
+        public function setProductId(ProductId $productId)
+        {
+        }
+        /**
+         * @return ProductId
+         */
+        public function getProductId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ProductDeliveryTimeAreaDeliveryTime[]
+     * Runtime class alias of \Google\Service\ShoppingContent\ProductDeliveryTime registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAreaDeliveryTimes()
-    {
-    }
-    /**
-     * Required. The `id` of the product.
-     *
-     * @param ProductId $productId
-     */
-    public function setProductId(ProductId $productId)
-    {
-    }
-    /**
-     * @return ProductId
-     */
-    public function getProductId()
+    class Google_Service_ShoppingContent_ProductDeliveryTime extends \Google\Service\ShoppingContent\ProductDeliveryTime
     {
     }
 }

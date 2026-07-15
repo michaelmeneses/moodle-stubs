@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataform;
-
-class ErrorTable extends \Google\Model
-{
-    /**
-     * Error table partition expiration in days. Only positive values are allowed.
-     *
-     * @var int
-     */
-    public $retentionDays;
-    protected $targetType = Target::class;
-    protected $targetDataType = '';
-    /**
-     * Error table partition expiration in days. Only positive values are allowed.
-     *
-     * @param int $retentionDays
-     */
-    public function setRetentionDays($retentionDays)
+namespace Google\Service\Dataform {
+    class ErrorTable extends \Google\Model
     {
+        /**
+         * Error table partition expiration in days. Only positive values are allowed.
+         *
+         * @var int
+         */
+        public $retentionDays;
+        protected $targetType = Target::class;
+        protected $targetDataType = '';
+        /**
+         * Error table partition expiration in days. Only positive values are allowed.
+         *
+         * @param int $retentionDays
+         */
+        public function setRetentionDays($retentionDays)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRetentionDays()
+        {
+        }
+        /**
+         * Error Table target.
+         *
+         * @param Target $target
+         */
+        public function setTarget(Target $target)
+        {
+        }
+        /**
+         * @return Target
+         */
+        public function getTarget()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Dataform\ErrorTable registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRetentionDays()
-    {
-    }
-    /**
-     * Error Table target.
-     *
-     * @param Target $target
-     */
-    public function setTarget(Target $target)
-    {
-    }
-    /**
-     * @return Target
-     */
-    public function getTarget()
+    class Google_Service_Dataform_ErrorTable extends \Google\Service\Dataform\ErrorTable
     {
     }
 }

@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class Signature extends \Google\Model
-{
-    protected $imageType = Image::class;
-    protected $imageDataType = '';
-    /**
-     * Optional. Metadata associated with the user's signature. For example, the
-     * user's name or the user's title.
-     *
-     * @var string[]
-     */
-    public $metadata;
-    /**
-     * Optional. Timestamp of the signature.
-     *
-     * @var string
-     */
-    public $signatureTime;
-    /**
-     * Required. User's UUID provided by the client.
-     *
-     * @var string
-     */
-    public $userId;
-    /**
-     * Optional. An image of the user's signature.
-     *
-     * @param Image $image
-     */
-    public function setImage(Image $image)
+namespace Google\Service\CloudHealthcare {
+    class Signature extends \Google\Model
     {
+        protected $imageType = Image::class;
+        protected $imageDataType = '';
+        /**
+         * Optional. Metadata associated with the user's signature. For example, the
+         * user's name or the user's title.
+         *
+         * @var string[]
+         */
+        public $metadata;
+        /**
+         * Optional. Timestamp of the signature.
+         *
+         * @var string
+         */
+        public $signatureTime;
+        /**
+         * Required. User's UUID provided by the client.
+         *
+         * @var string
+         */
+        public $userId;
+        /**
+         * Optional. An image of the user's signature.
+         *
+         * @param Image $image
+         */
+        public function setImage(Image $image)
+        {
+        }
+        /**
+         * @return Image
+         */
+        public function getImage()
+        {
+        }
+        /**
+         * Optional. Metadata associated with the user's signature. For example, the
+         * user's name or the user's title.
+         *
+         * @param string[] $metadata
+         */
+        public function setMetadata($metadata)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * Optional. Timestamp of the signature.
+         *
+         * @param string $signatureTime
+         */
+        public function setSignatureTime($signatureTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSignatureTime()
+        {
+        }
+        /**
+         * Required. User's UUID provided by the client.
+         *
+         * @param string $userId
+         */
+        public function setUserId($userId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Image
+     * Runtime class alias of \Google\Service\CloudHealthcare\Signature registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getImage()
-    {
-    }
-    /**
-     * Optional. Metadata associated with the user's signature. For example, the
-     * user's name or the user's title.
-     *
-     * @param string[] $metadata
-     */
-    public function setMetadata($metadata)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * Optional. Timestamp of the signature.
-     *
-     * @param string $signatureTime
-     */
-    public function setSignatureTime($signatureTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSignatureTime()
-    {
-    }
-    /**
-     * Required. User's UUID provided by the client.
-     *
-     * @param string $userId
-     */
-    public function setUserId($userId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserId()
+    class Google_Service_CloudHealthcare_Signature extends \Google\Service\CloudHealthcare\Signature
     {
     }
 }

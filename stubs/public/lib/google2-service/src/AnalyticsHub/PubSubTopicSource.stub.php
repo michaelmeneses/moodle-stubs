@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsHub;
-
-class PubSubTopicSource extends \Google\Collection
-{
-    protected $collection_key = 'dataAffinityRegions';
-    /**
-     * Optional. Region hint on where the data might be published. Data affinity
-     * regions are modifiable. See https://cloud.google.com/about/locations for
-     * full listing of possible Cloud regions.
-     *
-     * @var string[]
-     */
-    public $dataAffinityRegions;
-    /**
-     * Required. Resource name of the Pub/Sub topic source for this listing. e.g.
-     * projects/myproject/topics/topicId
-     *
-     * @var string
-     */
-    public $topic;
-    /**
-     * Optional. Region hint on where the data might be published. Data affinity
-     * regions are modifiable. See https://cloud.google.com/about/locations for
-     * full listing of possible Cloud regions.
-     *
-     * @param string[] $dataAffinityRegions
-     */
-    public function setDataAffinityRegions($dataAffinityRegions)
+namespace Google\Service\AnalyticsHub {
+    class PubSubTopicSource extends \Google\Collection
     {
+        protected $collection_key = 'dataAffinityRegions';
+        /**
+         * Optional. Region hint on where the data might be published. Data affinity
+         * regions are modifiable. See https://cloud.google.com/about/locations for
+         * full listing of possible Cloud regions.
+         *
+         * @var string[]
+         */
+        public $dataAffinityRegions;
+        /**
+         * Required. Resource name of the Pub/Sub topic source for this listing. e.g.
+         * projects/myproject/topics/topicId
+         *
+         * @var string
+         */
+        public $topic;
+        /**
+         * Optional. Region hint on where the data might be published. Data affinity
+         * regions are modifiable. See https://cloud.google.com/about/locations for
+         * full listing of possible Cloud regions.
+         *
+         * @param string[] $dataAffinityRegions
+         */
+        public function setDataAffinityRegions($dataAffinityRegions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDataAffinityRegions()
+        {
+        }
+        /**
+         * Required. Resource name of the Pub/Sub topic source for this listing. e.g.
+         * projects/myproject/topics/topicId
+         *
+         * @param string $topic
+         */
+        public function setTopic($topic)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTopic()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\AnalyticsHub\PubSubTopicSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataAffinityRegions()
-    {
-    }
-    /**
-     * Required. Resource name of the Pub/Sub topic source for this listing. e.g.
-     * projects/myproject/topics/topicId
-     *
-     * @param string $topic
-     */
-    public function setTopic($topic)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTopic()
+    class Google_Service_AnalyticsHub_PubSubTopicSource extends \Google\Service\AnalyticsHub\PubSubTopicSource
     {
     }
 }

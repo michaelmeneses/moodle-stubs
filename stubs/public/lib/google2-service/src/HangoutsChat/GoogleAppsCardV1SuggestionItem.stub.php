@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class GoogleAppsCardV1SuggestionItem extends \Google\Model
-{
-    /**
-     * The value of a suggested input to a text input field. This is equivalent to
-     * what users enter themselves.
-     *
-     * @var string
-     */
-    public $text;
-    /**
-     * The value of a suggested input to a text input field. This is equivalent to
-     * what users enter themselves.
-     *
-     * @param string $text
-     */
-    public function setText($text)
+namespace Google\Service\HangoutsChat {
+    class GoogleAppsCardV1SuggestionItem extends \Google\Model
     {
+        /**
+         * The value of a suggested input to a text input field. This is equivalent to
+         * what users enter themselves.
+         *
+         * @var string
+         */
+        public $text;
+        /**
+         * The value of a suggested input to a text input field. This is equivalent to
+         * what users enter themselves.
+         *
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\HangoutsChat\GoogleAppsCardV1SuggestionItem registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getText()
+    class Google_Service_HangoutsChat_GoogleAppsCardV1SuggestionItem extends \Google\Service\HangoutsChat\GoogleAppsCardV1SuggestionItem
     {
     }
 }

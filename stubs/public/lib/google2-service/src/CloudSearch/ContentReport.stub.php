@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class ContentReport extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $reportCreateTimestamp;
-    protected $reportJustificationType = ContentReportJustification::class;
-    protected $reportJustificationDataType = '';
-    protected $reportTypeType = AppsDynamiteSharedContentReportType::class;
-    protected $reportTypeDataType = '';
-    protected $reporterUserIdType = UserId::class;
-    protected $reporterUserIdDataType = '';
-    /**
-     * @var string
-     */
-    public $revisionCreateTimestamp;
-    /**
-     * @param string
-     */
-    public function setReportCreateTimestamp($reportCreateTimestamp)
+namespace Google\Service\CloudSearch {
+    class ContentReport extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $reportCreateTimestamp;
+        protected $reportJustificationType = ContentReportJustification::class;
+        protected $reportJustificationDataType = '';
+        protected $reportTypeType = AppsDynamiteSharedContentReportType::class;
+        protected $reportTypeDataType = '';
+        protected $reporterUserIdType = UserId::class;
+        protected $reporterUserIdDataType = '';
+        /**
+         * @var string
+         */
+        public $revisionCreateTimestamp;
+        /**
+         * @param string
+         */
+        public function setReportCreateTimestamp($reportCreateTimestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReportCreateTimestamp()
+        {
+        }
+        /**
+         * @param ContentReportJustification
+         */
+        public function setReportJustification(ContentReportJustification $reportJustification)
+        {
+        }
+        /**
+         * @return ContentReportJustification
+         */
+        public function getReportJustification()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedContentReportType
+         */
+        public function setReportType(AppsDynamiteSharedContentReportType $reportType)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedContentReportType
+         */
+        public function getReportType()
+        {
+        }
+        /**
+         * @param UserId
+         */
+        public function setReporterUserId(UserId $reporterUserId)
+        {
+        }
+        /**
+         * @return UserId
+         */
+        public function getReporterUserId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRevisionCreateTimestamp($revisionCreateTimestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRevisionCreateTimestamp()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\ContentReport registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReportCreateTimestamp()
-    {
-    }
-    /**
-     * @param ContentReportJustification
-     */
-    public function setReportJustification(ContentReportJustification $reportJustification)
-    {
-    }
-    /**
-     * @return ContentReportJustification
-     */
-    public function getReportJustification()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedContentReportType
-     */
-    public function setReportType(AppsDynamiteSharedContentReportType $reportType)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedContentReportType
-     */
-    public function getReportType()
-    {
-    }
-    /**
-     * @param UserId
-     */
-    public function setReporterUserId(UserId $reporterUserId)
-    {
-    }
-    /**
-     * @return UserId
-     */
-    public function getReporterUserId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRevisionCreateTimestamp($revisionCreateTimestamp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRevisionCreateTimestamp()
+    class Google_Service_CloudSearch_ContentReport extends \Google\Service\CloudSearch\ContentReport
     {
     }
 }

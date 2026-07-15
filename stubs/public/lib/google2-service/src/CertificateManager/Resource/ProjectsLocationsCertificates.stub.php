@@ -21,101 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CertificateManager\Resource;
-
-/**
- * The "certificates" collection of methods.
- * Typical usage is:
- *  <code>
- *   $certificatemanagerService = new Google\Service\CertificateManager(...);
- *   $certificates = $certificatemanagerService->projects_locations_certificates;
- *  </code>
- */
-class ProjectsLocationsCertificates extends \Google\Service\Resource
-{
+namespace Google\Service\CertificateManager\Resource {
+    use Google\Service\CertificateManager\Certificate;
+    use Google\Service\CertificateManager\ListCertificatesResponse;
+    use Google\Service\CertificateManager\Operation;
     /**
-     * Creates a new Certificate in a given project and location.
-     * (certificates.create)
-     *
-     * @param string $parent Required. The parent resource of the certificate. Must
-     * be in the format `projects/locations`.
-     * @param Certificate $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string certificateId Required. A user-provided name of the
-     * certificate.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * The "certificates" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $certificatemanagerService = new Google\Service\CertificateManager(...);
+     *   $certificates = $certificatemanagerService->projects_locations_certificates;
+     *  </code>
      */
-    public function create($parent, Certificate $postBody, $optParams = [])
+    class ProjectsLocationsCertificates extends \Google\Service\Resource
     {
+        /**
+         * Creates a new Certificate in a given project and location.
+         * (certificates.create)
+         *
+         * @param string $parent Required. The parent resource of the certificate. Must
+         * be in the format `projects/locations`.
+         * @param Certificate $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string certificateId Required. A user-provided name of the
+         * certificate.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, Certificate $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a single Certificate. (certificates.delete)
+         *
+         * @param string $name Required. A name of the certificate to delete. Must be in
+         * the format `projects/locations/certificates`.
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets details of a single Certificate. (certificates.get)
+         *
+         * @param string $name Required. A name of the certificate to describe. Must be
+         * in the format `projects/locations/certificates`.
+         * @param array $optParams Optional parameters.
+         * @return Certificate
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists Certificates in a given project and location.
+         * (certificates.listProjectsLocationsCertificates)
+         *
+         * @param string $parent Required. The project and location from which the
+         * certificate should be listed, specified in the format `projects/locations`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Optional. Filter expression to restrict the
+         * Certificates returned.
+         * @opt_param string orderBy Optional. A list of Certificate field names used to
+         * specify the order of the returned results. The default sorting order is
+         * ascending. To specify descending order for a field, add a suffix `" desc"`.
+         * @opt_param int pageSize Optional. Maximum number of certificates to return
+         * per call.
+         * @opt_param string pageToken Optional. The value returned by the last
+         * `ListCertificatesResponse`. Indicates that this is a continuation of a prior
+         * `ListCertificates` call, and that the system should return the next page of
+         * data.
+         * @return ListCertificatesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsCertificates($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates a Certificate. (certificates.patch)
+         *
+         * @param string $name Identifier. A user-defined name of the certificate.
+         * Certificate names must be unique globally and match pattern
+         * `projects/locations/certificates`.
+         * @param Certificate $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Required. The update mask applies to the
+         * resource. For the `FieldMask` definition, see
+         * https://developers.google.com/protocol-
+         * buffers/docs/reference/google.protobuf#fieldmask.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, Certificate $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a single Certificate. (certificates.delete)
-     *
-     * @param string $name Required. A name of the certificate to delete. Must be in
-     * the format `projects/locations/certificates`.
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\CertificateManager\Resource\ProjectsLocationsCertificates registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets details of a single Certificate. (certificates.get)
-     *
-     * @param string $name Required. A name of the certificate to describe. Must be
-     * in the format `projects/locations/certificates`.
-     * @param array $optParams Optional parameters.
-     * @return Certificate
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists Certificates in a given project and location.
-     * (certificates.listProjectsLocationsCertificates)
-     *
-     * @param string $parent Required. The project and location from which the
-     * certificate should be listed, specified in the format `projects/locations`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Optional. Filter expression to restrict the
-     * Certificates returned.
-     * @opt_param string orderBy Optional. A list of Certificate field names used to
-     * specify the order of the returned results. The default sorting order is
-     * ascending. To specify descending order for a field, add a suffix `" desc"`.
-     * @opt_param int pageSize Optional. Maximum number of certificates to return
-     * per call.
-     * @opt_param string pageToken Optional. The value returned by the last
-     * `ListCertificatesResponse`. Indicates that this is a continuation of a prior
-     * `ListCertificates` call, and that the system should return the next page of
-     * data.
-     * @return ListCertificatesResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsCertificates($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates a Certificate. (certificates.patch)
-     *
-     * @param string $name Identifier. A user-defined name of the certificate.
-     * Certificate names must be unique globally and match pattern
-     * `projects/locations/certificates`.
-     * @param Certificate $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Required. The update mask applies to the
-     * resource. For the `FieldMask` definition, see
-     * https://developers.google.com/protocol-
-     * buffers/docs/reference/google.protobuf#fieldmask.
-     * @return Operation
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, Certificate $postBody, $optParams = [])
+    class Google_Service_CertificateManager_Resource_ProjectsLocationsCertificates extends \Google\Service\CertificateManager\Resource\ProjectsLocationsCertificates
     {
     }
 }

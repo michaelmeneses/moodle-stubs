@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class InstancesCloneRequest extends \Google\Model
-{
-    protected $cloneContextType = CloneContext::class;
-    protected $cloneContextDataType = '';
-    /**
-     * Required. Contains details about the clone operation.
-     *
-     * @param CloneContext $cloneContext
-     */
-    public function setCloneContext(CloneContext $cloneContext)
+namespace Google\Service\SQLAdmin {
+    class InstancesCloneRequest extends \Google\Model
     {
+        protected $cloneContextType = CloneContext::class;
+        protected $cloneContextDataType = '';
+        /**
+         * Required. Contains details about the clone operation.
+         *
+         * @param CloneContext $cloneContext
+         */
+        public function setCloneContext(CloneContext $cloneContext)
+        {
+        }
+        /**
+         * @return CloneContext
+         */
+        public function getCloneContext()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CloneContext
+     * Runtime class alias of \Google\Service\SQLAdmin\InstancesCloneRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCloneContext()
+    class Google_Service_SQLAdmin_InstancesCloneRequest extends \Google\Service\SQLAdmin\InstancesCloneRequest
     {
     }
 }

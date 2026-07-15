@@ -21,107 +21,116 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Area120Tables;
-
-class Workspace extends \Google\Collection
-{
-    protected $collection_key = 'tables';
-    /**
-     * Time when the workspace was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * The human readable title of the workspace.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The resource name of the workspace. Workspace names have the form
-     * `workspaces/{workspace}`.
-     *
-     * @var string
-     */
-    public $name;
-    protected $tablesType = Table::class;
-    protected $tablesDataType = 'array';
-    /**
-     * Time when the workspace was last updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Time when the workspace was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\Area120Tables {
+    class Workspace extends \Google\Collection
     {
+        protected $collection_key = 'tables';
+        /**
+         * Time when the workspace was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * The human readable title of the workspace.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The resource name of the workspace. Workspace names have the form
+         * `workspaces/{workspace}`.
+         *
+         * @var string
+         */
+        public $name;
+        protected $tablesType = Table::class;
+        protected $tablesDataType = 'array';
+        /**
+         * Time when the workspace was last updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Time when the workspace was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * The human readable title of the workspace.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The resource name of the workspace. Workspace names have the form
+         * `workspaces/{workspace}`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The list of tables in the workspace.
+         *
+         * @param Table[] $tables
+         */
+        public function setTables($tables)
+        {
+        }
+        /**
+         * @return Table[]
+         */
+        public function getTables()
+        {
+        }
+        /**
+         * Time when the workspace was last updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Area120Tables\Workspace registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * The human readable title of the workspace.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The resource name of the workspace. Workspace names have the form
-     * `workspaces/{workspace}`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The list of tables in the workspace.
-     *
-     * @param Table[] $tables
-     */
-    public function setTables($tables)
-    {
-    }
-    /**
-     * @return Table[]
-     */
-    public function getTables()
-    {
-    }
-    /**
-     * Time when the workspace was last updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_Area120Tables_Workspace extends \Google\Service\Area120Tables\Workspace
     {
     }
 }

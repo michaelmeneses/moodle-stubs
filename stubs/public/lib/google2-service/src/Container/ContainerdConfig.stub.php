@@ -21,61 +21,70 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class ContainerdConfig extends \Google\Collection
-{
-    protected $collection_key = 'registryHosts';
-    protected $privateRegistryAccessConfigType = PrivateRegistryAccessConfig::class;
-    protected $privateRegistryAccessConfigDataType = '';
-    protected $registryHostsType = RegistryHostConfig::class;
-    protected $registryHostsDataType = 'array';
-    protected $writableCgroupsType = WritableCgroups::class;
-    protected $writableCgroupsDataType = '';
-    /**
-     * PrivateRegistryAccessConfig is used to configure access configuration for
-     * private container registries.
-     *
-     * @param PrivateRegistryAccessConfig $privateRegistryAccessConfig
-     */
-    public function setPrivateRegistryAccessConfig(PrivateRegistryAccessConfig $privateRegistryAccessConfig)
+namespace Google\Service\Container {
+    class ContainerdConfig extends \Google\Collection
     {
+        protected $collection_key = 'registryHosts';
+        protected $privateRegistryAccessConfigType = PrivateRegistryAccessConfig::class;
+        protected $privateRegistryAccessConfigDataType = '';
+        protected $registryHostsType = RegistryHostConfig::class;
+        protected $registryHostsDataType = 'array';
+        protected $writableCgroupsType = WritableCgroups::class;
+        protected $writableCgroupsDataType = '';
+        /**
+         * PrivateRegistryAccessConfig is used to configure access configuration for
+         * private container registries.
+         *
+         * @param PrivateRegistryAccessConfig $privateRegistryAccessConfig
+         */
+        public function setPrivateRegistryAccessConfig(PrivateRegistryAccessConfig $privateRegistryAccessConfig)
+        {
+        }
+        /**
+         * @return PrivateRegistryAccessConfig
+         */
+        public function getPrivateRegistryAccessConfig()
+        {
+        }
+        /**
+         * RegistryHostConfig configures containerd registry host configuration. Each
+         * registry_hosts represents a hosts.toml file. At most 25 registry_hosts are
+         * allowed.
+         *
+         * @param RegistryHostConfig[] $registryHosts
+         */
+        public function setRegistryHosts($registryHosts)
+        {
+        }
+        /**
+         * @return RegistryHostConfig[]
+         */
+        public function getRegistryHosts()
+        {
+        }
+        /**
+         * Optional. WritableCgroups defines writable cgroups configuration for the
+         * node pool.
+         *
+         * @param WritableCgroups $writableCgroups
+         */
+        public function setWritableCgroups(WritableCgroups $writableCgroups)
+        {
+        }
+        /**
+         * @return WritableCgroups
+         */
+        public function getWritableCgroups()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PrivateRegistryAccessConfig
+     * Runtime class alias of \Google\Service\Container\ContainerdConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPrivateRegistryAccessConfig()
-    {
-    }
-    /**
-     * RegistryHostConfig configures containerd registry host configuration. Each
-     * registry_hosts represents a hosts.toml file. At most 25 registry_hosts are
-     * allowed.
-     *
-     * @param RegistryHostConfig[] $registryHosts
-     */
-    public function setRegistryHosts($registryHosts)
-    {
-    }
-    /**
-     * @return RegistryHostConfig[]
-     */
-    public function getRegistryHosts()
-    {
-    }
-    /**
-     * Optional. WritableCgroups defines writable cgroups configuration for the
-     * node pool.
-     *
-     * @param WritableCgroups $writableCgroups
-     */
-    public function setWritableCgroups(WritableCgroups $writableCgroups)
-    {
-    }
-    /**
-     * @return WritableCgroups
-     */
-    public function getWritableCgroups()
+    class Google_Service_Container_ContainerdConfig extends \Google\Service\Container\ContainerdConfig
     {
     }
 }

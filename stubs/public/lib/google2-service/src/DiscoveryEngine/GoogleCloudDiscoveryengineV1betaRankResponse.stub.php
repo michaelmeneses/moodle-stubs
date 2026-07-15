@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaRankResponse extends \Google\Collection
-{
-    protected $collection_key = 'records';
-    protected $recordsType = GoogleCloudDiscoveryengineV1betaRankingRecord::class;
-    protected $recordsDataType = 'array';
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaRankingRecord[]
-     */
-    public function setRecords($records)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaRankResponse extends \Google\Collection
     {
+        protected $collection_key = 'records';
+        protected $recordsType = GoogleCloudDiscoveryengineV1betaRankingRecord::class;
+        protected $recordsDataType = 'array';
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaRankingRecord[]
+         */
+        public function setRecords($records)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaRankingRecord[]
+         */
+        public function getRecords()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1betaRankingRecord[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaRankResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRecords()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaRankResponse extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaRankResponse
     {
     }
 }

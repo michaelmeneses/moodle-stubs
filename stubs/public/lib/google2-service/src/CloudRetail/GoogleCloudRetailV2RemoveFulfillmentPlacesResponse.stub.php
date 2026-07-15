@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2RemoveFulfillmentPlacesResponse extends \Google\Model
-{
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2RemoveFulfillmentPlacesResponse extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2RemoveFulfillmentPlacesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudRetail_GoogleCloudRetailV2RemoveFulfillmentPlacesResponse extends \Google\Service\CloudRetail\GoogleCloudRetailV2RemoveFulfillmentPlacesResponse
+    {
+    }
 }

@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1Presets extends \Google\Model
-{
-    /**
-     * Should not be set. Added as a recommended best practice for enums
-     */
-    public const MODALITY_MODALITY_UNSPECIFIED = 'MODALITY_UNSPECIFIED';
-    /**
-     * IMAGE modality
-     */
-    public const MODALITY_IMAGE = 'IMAGE';
-    /**
-     * TEXT modality
-     */
-    public const MODALITY_TEXT = 'TEXT';
-    /**
-     * TABULAR modality
-     */
-    public const MODALITY_TABULAR = 'TABULAR';
-    /**
-     * More precise neighbors as a trade-off against slower response.
-     */
-    public const QUERY_PRECISE = 'PRECISE';
-    /**
-     * Faster response as a trade-off against less precise neighbors.
-     */
-    public const QUERY_FAST = 'FAST';
-    /**
-     * The modality of the uploaded model, which automatically configures the
-     * distance measurement and feature normalization for the underlying example
-     * index and queries. If your model does not precisely fit one of these types,
-     * it is okay to choose the closest type.
-     *
-     * @var string
-     */
-    public $modality;
-    /**
-     * Preset option controlling parameters for speed-precision trade-off when
-     * querying for examples. If omitted, defaults to `PRECISE`.
-     *
-     * @var string
-     */
-    public $query;
-    /**
-     * The modality of the uploaded model, which automatically configures the
-     * distance measurement and feature normalization for the underlying example
-     * index and queries. If your model does not precisely fit one of these types,
-     * it is okay to choose the closest type.
-     *
-     * Accepted values: MODALITY_UNSPECIFIED, IMAGE, TEXT, TABULAR
-     *
-     * @param self::MODALITY_* $modality
-     */
-    public function setModality($modality)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1Presets extends \Google\Model
     {
+        /**
+         * Should not be set. Added as a recommended best practice for enums
+         */
+        public const MODALITY_MODALITY_UNSPECIFIED = 'MODALITY_UNSPECIFIED';
+        /**
+         * IMAGE modality
+         */
+        public const MODALITY_IMAGE = 'IMAGE';
+        /**
+         * TEXT modality
+         */
+        public const MODALITY_TEXT = 'TEXT';
+        /**
+         * TABULAR modality
+         */
+        public const MODALITY_TABULAR = 'TABULAR';
+        /**
+         * More precise neighbors as a trade-off against slower response.
+         */
+        public const QUERY_PRECISE = 'PRECISE';
+        /**
+         * Faster response as a trade-off against less precise neighbors.
+         */
+        public const QUERY_FAST = 'FAST';
+        /**
+         * The modality of the uploaded model, which automatically configures the
+         * distance measurement and feature normalization for the underlying example
+         * index and queries. If your model does not precisely fit one of these types,
+         * it is okay to choose the closest type.
+         *
+         * @var string
+         */
+        public $modality;
+        /**
+         * Preset option controlling parameters for speed-precision trade-off when
+         * querying for examples. If omitted, defaults to `PRECISE`.
+         *
+         * @var string
+         */
+        public $query;
+        /**
+         * The modality of the uploaded model, which automatically configures the
+         * distance measurement and feature normalization for the underlying example
+         * index and queries. If your model does not precisely fit one of these types,
+         * it is okay to choose the closest type.
+         *
+         * Accepted values: MODALITY_UNSPECIFIED, IMAGE, TEXT, TABULAR
+         *
+         * @param self::MODALITY_* $modality
+         */
+        public function setModality($modality)
+        {
+        }
+        /**
+         * @return self::MODALITY_*
+         */
+        public function getModality()
+        {
+        }
+        /**
+         * Preset option controlling parameters for speed-precision trade-off when
+         * querying for examples. If omitted, defaults to `PRECISE`.
+         *
+         * Accepted values: PRECISE, FAST
+         *
+         * @param self::QUERY_* $query
+         */
+        public function setQuery($query)
+        {
+        }
+        /**
+         * @return self::QUERY_*
+         */
+        public function getQuery()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::MODALITY_*
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1Presets registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getModality()
-    {
-    }
-    /**
-     * Preset option controlling parameters for speed-precision trade-off when
-     * querying for examples. If omitted, defaults to `PRECISE`.
-     *
-     * Accepted values: PRECISE, FAST
-     *
-     * @param self::QUERY_* $query
-     */
-    public function setQuery($query)
-    {
-    }
-    /**
-     * @return self::QUERY_*
-     */
-    public function getQuery()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1Presets extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1Presets
     {
     }
 }

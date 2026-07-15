@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceUsage;
-
-class Logging extends \Google\Collection
-{
-    protected $collection_key = 'producerDestinations';
-    protected $consumerDestinationsType = LoggingDestination::class;
-    protected $consumerDestinationsDataType = 'array';
-    protected $producerDestinationsType = LoggingDestination::class;
-    protected $producerDestinationsDataType = 'array';
-    /**
-     * Logging configurations for sending logs to the consumer project. There can
-     * be multiple consumer destinations, each one must have a different monitored
-     * resource type. A log can be used in at most one consumer destination.
-     *
-     * @param LoggingDestination[] $consumerDestinations
-     */
-    public function setConsumerDestinations($consumerDestinations)
+namespace Google\Service\ServiceUsage {
+    class Logging extends \Google\Collection
     {
+        protected $collection_key = 'producerDestinations';
+        protected $consumerDestinationsType = LoggingDestination::class;
+        protected $consumerDestinationsDataType = 'array';
+        protected $producerDestinationsType = LoggingDestination::class;
+        protected $producerDestinationsDataType = 'array';
+        /**
+         * Logging configurations for sending logs to the consumer project. There can
+         * be multiple consumer destinations, each one must have a different monitored
+         * resource type. A log can be used in at most one consumer destination.
+         *
+         * @param LoggingDestination[] $consumerDestinations
+         */
+        public function setConsumerDestinations($consumerDestinations)
+        {
+        }
+        /**
+         * @return LoggingDestination[]
+         */
+        public function getConsumerDestinations()
+        {
+        }
+        /**
+         * Logging configurations for sending logs to the producer project. There can
+         * be multiple producer destinations, each one must have a different monitored
+         * resource type. A log can be used in at most one producer destination.
+         *
+         * @param LoggingDestination[] $producerDestinations
+         */
+        public function setProducerDestinations($producerDestinations)
+        {
+        }
+        /**
+         * @return LoggingDestination[]
+         */
+        public function getProducerDestinations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LoggingDestination[]
+     * Runtime class alias of \Google\Service\ServiceUsage\Logging registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConsumerDestinations()
-    {
-    }
-    /**
-     * Logging configurations for sending logs to the producer project. There can
-     * be multiple producer destinations, each one must have a different monitored
-     * resource type. A log can be used in at most one producer destination.
-     *
-     * @param LoggingDestination[] $producerDestinations
-     */
-    public function setProducerDestinations($producerDestinations)
-    {
-    }
-    /**
-     * @return LoggingDestination[]
-     */
-    public function getProducerDestinations()
+    class Google_Service_ServiceUsage_Logging extends \Google\Service\ServiceUsage\Logging
     {
     }
 }

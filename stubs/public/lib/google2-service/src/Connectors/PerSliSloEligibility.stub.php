@@ -21,35 +21,44 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors;
-
-class PerSliSloEligibility extends \Google\Model
-{
-    protected $eligibilitiesType = SloEligibility::class;
-    protected $eligibilitiesDataType = 'map';
-    /**
-     * An entry in the eligibilities map specifies an eligibility for a particular
-     * SLI for the given instance. The SLI key in the name must be a valid SLI
-     * name specified in the Eligibility Exporter binary flags otherwise an error
-     * will be emitted by Eligibility Exporter and the oncaller will be alerted.
-     * If an SLI has been defined in the binary flags but the eligibilities map
-     * does not contain it, the corresponding SLI time series will not be emitted
-     * by the Eligibility Exporter. This ensures a smooth rollout and
-     * compatibility between the data produced by different versions of the
-     * Eligibility Exporters. If eligibilities map contains a key for an SLI which
-     * has not been declared in the binary flags, there will be an error message
-     * emitted in the Eligibility Exporter log and the metric for the SLI in
-     * question will not be emitted.
-     *
-     * @param SloEligibility[] $eligibilities
-     */
-    public function setEligibilities($eligibilities)
+namespace Google\Service\Connectors {
+    class PerSliSloEligibility extends \Google\Model
     {
+        protected $eligibilitiesType = SloEligibility::class;
+        protected $eligibilitiesDataType = 'map';
+        /**
+         * An entry in the eligibilities map specifies an eligibility for a particular
+         * SLI for the given instance. The SLI key in the name must be a valid SLI
+         * name specified in the Eligibility Exporter binary flags otherwise an error
+         * will be emitted by Eligibility Exporter and the oncaller will be alerted.
+         * If an SLI has been defined in the binary flags but the eligibilities map
+         * does not contain it, the corresponding SLI time series will not be emitted
+         * by the Eligibility Exporter. This ensures a smooth rollout and
+         * compatibility between the data produced by different versions of the
+         * Eligibility Exporters. If eligibilities map contains a key for an SLI which
+         * has not been declared in the binary flags, there will be an error message
+         * emitted in the Eligibility Exporter log and the metric for the SLI in
+         * question will not be emitted.
+         *
+         * @param SloEligibility[] $eligibilities
+         */
+        public function setEligibilities($eligibilities)
+        {
+        }
+        /**
+         * @return SloEligibility[]
+         */
+        public function getEligibilities()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SloEligibility[]
+     * Runtime class alias of \Google\Service\Connectors\PerSliSloEligibility registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEligibilities()
+    class Google_Service_Connectors_PerSliSloEligibility extends \Google\Service\Connectors\PerSliSloEligibility
     {
     }
 }

@@ -21,97 +21,109 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudComposer\Resource;
-
-/**
- * The "userWorkloadsConfigMaps" collection of methods.
- * Typical usage is:
- *  <code>
- *   $composerService = new Google\Service\CloudComposer(...);
- *   $userWorkloadsConfigMaps = $composerService->projects_locations_environments_userWorkloadsConfigMaps;
- *  </code>
- */
-class ProjectsLocationsEnvironmentsUserWorkloadsConfigMaps extends \Google\Service\Resource
-{
+namespace Google\Service\CloudComposer\Resource {
+    use Google\Service\CloudComposer\ComposerEmpty;
+    use Google\Service\CloudComposer\ListUserWorkloadsConfigMapsResponse;
+    use Google\Service\CloudComposer\UserWorkloadsConfigMap;
     /**
-     * Creates a user workloads ConfigMap. This method is supported for Cloud
-     * Composer environments in versions composer-3-airflow-*.*.*-build.* and newer.
-     * (userWorkloadsConfigMaps.create)
-     *
-     * @param string $parent Required. The environment name to create a ConfigMap
-     * for, in the form:
-     * "projects/{projectId}/locations/{locationId}/environments/{environmentId}"
-     * @param UserWorkloadsConfigMap $postBody
-     * @param array $optParams Optional parameters.
-     * @return UserWorkloadsConfigMap
-     * @throws \Google\Service\Exception
+     * The "userWorkloadsConfigMaps" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $composerService = new Google\Service\CloudComposer(...);
+     *   $userWorkloadsConfigMaps = $composerService->projects_locations_environments_userWorkloadsConfigMaps;
+     *  </code>
      */
-    public function create($parent, UserWorkloadsConfigMap $postBody, $optParams = [])
+    class ProjectsLocationsEnvironmentsUserWorkloadsConfigMaps extends \Google\Service\Resource
     {
+        /**
+         * Creates a user workloads ConfigMap. This method is supported for Cloud
+         * Composer environments in versions composer-3-airflow-*.*.*-build.* and newer.
+         * (userWorkloadsConfigMaps.create)
+         *
+         * @param string $parent Required. The environment name to create a ConfigMap
+         * for, in the form:
+         * "projects/{projectId}/locations/{locationId}/environments/{environmentId}"
+         * @param UserWorkloadsConfigMap $postBody
+         * @param array $optParams Optional parameters.
+         * @return UserWorkloadsConfigMap
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, UserWorkloadsConfigMap $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a user workloads ConfigMap. This method is supported for Cloud
+         * Composer environments in versions composer-3-airflow-*.*.*-build.* and newer.
+         * (userWorkloadsConfigMaps.delete)
+         *
+         * @param string $name Required. The ConfigMap to delete, in the form: "projects
+         * /{projectId}/locations/{locationId}/environments/{environmentId}/userWorkload
+         * sConfigMaps/{userWorkloadsConfigMapId}"
+         * @param array $optParams Optional parameters.
+         * @return ComposerEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets an existing user workloads ConfigMap. This method is supported for Cloud
+         * Composer environments in versions composer-3-airflow-*.*.*-build.* and newer.
+         * (userWorkloadsConfigMaps.get)
+         *
+         * @param string $name Required. The resource name of the ConfigMap to get, in
+         * the form: "projects/{projectId}/locations/{locationId}/environments/{environm
+         * entId}/userWorkloadsConfigMaps/{userWorkloadsConfigMapId}"
+         * @param array $optParams Optional parameters.
+         * @return UserWorkloadsConfigMap
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists user workloads ConfigMaps. This method is supported for Cloud Composer
+         * environments in versions composer-3-airflow-*.*.*-build.* and newer. (userWor
+         * kloadsConfigMaps.listProjectsLocationsEnvironmentsUserWorkloadsConfigMaps)
+         *
+         * @param string $parent Required. List ConfigMaps in the given environment, in
+         * the form:
+         * "projects/{projectId}/locations/{locationId}/environments/{environmentId}"
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Optional. The maximum number of ConfigMaps to return.
+         * @opt_param string pageToken Optional. The next_page_token value returned from
+         * a previous List request, if any.
+         * @return ListUserWorkloadsConfigMapsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsEnvironmentsUserWorkloadsConfigMaps($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates a user workloads ConfigMap. This method is supported for Cloud
+         * Composer environments in versions composer-3-airflow-*.*.*-build.* and newer.
+         * (userWorkloadsConfigMaps.update)
+         *
+         * @param string $name Identifier. The resource name of the ConfigMap, in the
+         * form: "projects/{projectId}/locations/{locationId}/environments/{environmentI
+         * d}/userWorkloadsConfigMaps/{userWorkloadsConfigMapId}"
+         * @param UserWorkloadsConfigMap $postBody
+         * @param array $optParams Optional parameters.
+         * @return UserWorkloadsConfigMap
+         * @throws \Google\Service\Exception
+         */
+        public function update($name, UserWorkloadsConfigMap $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a user workloads ConfigMap. This method is supported for Cloud
-     * Composer environments in versions composer-3-airflow-*.*.*-build.* and newer.
-     * (userWorkloadsConfigMaps.delete)
-     *
-     * @param string $name Required. The ConfigMap to delete, in the form: "projects
-     * /{projectId}/locations/{locationId}/environments/{environmentId}/userWorkload
-     * sConfigMaps/{userWorkloadsConfigMapId}"
-     * @param array $optParams Optional parameters.
-     * @return ComposerEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\CloudComposer\Resource\ProjectsLocationsEnvironmentsUserWorkloadsConfigMaps registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets an existing user workloads ConfigMap. This method is supported for Cloud
-     * Composer environments in versions composer-3-airflow-*.*.*-build.* and newer.
-     * (userWorkloadsConfigMaps.get)
-     *
-     * @param string $name Required. The resource name of the ConfigMap to get, in
-     * the form: "projects/{projectId}/locations/{locationId}/environments/{environm
-     * entId}/userWorkloadsConfigMaps/{userWorkloadsConfigMapId}"
-     * @param array $optParams Optional parameters.
-     * @return UserWorkloadsConfigMap
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists user workloads ConfigMaps. This method is supported for Cloud Composer
-     * environments in versions composer-3-airflow-*.*.*-build.* and newer. (userWor
-     * kloadsConfigMaps.listProjectsLocationsEnvironmentsUserWorkloadsConfigMaps)
-     *
-     * @param string $parent Required. List ConfigMaps in the given environment, in
-     * the form:
-     * "projects/{projectId}/locations/{locationId}/environments/{environmentId}"
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Optional. The maximum number of ConfigMaps to return.
-     * @opt_param string pageToken Optional. The next_page_token value returned from
-     * a previous List request, if any.
-     * @return ListUserWorkloadsConfigMapsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsEnvironmentsUserWorkloadsConfigMaps($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates a user workloads ConfigMap. This method is supported for Cloud
-     * Composer environments in versions composer-3-airflow-*.*.*-build.* and newer.
-     * (userWorkloadsConfigMaps.update)
-     *
-     * @param string $name Identifier. The resource name of the ConfigMap, in the
-     * form: "projects/{projectId}/locations/{locationId}/environments/{environmentI
-     * d}/userWorkloadsConfigMaps/{userWorkloadsConfigMapId}"
-     * @param UserWorkloadsConfigMap $postBody
-     * @param array $optParams Optional parameters.
-     * @return UserWorkloadsConfigMap
-     * @throws \Google\Service\Exception
-     */
-    public function update($name, UserWorkloadsConfigMap $postBody, $optParams = [])
+    class Google_Service_CloudComposer_Resource_ProjectsLocationsEnvironmentsUserWorkloadsConfigMaps extends \Google\Service\CloudComposer\Resource\ProjectsLocationsEnvironmentsUserWorkloadsConfigMaps
     {
     }
 }

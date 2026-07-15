@@ -21,117 +21,126 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors;
-
-class Tool extends \Google\Collection
-{
-    protected $collection_key = 'dependsOn';
-    protected $annotationsType = ToolAnnotations::class;
-    protected $annotationsDataType = '';
-    /**
-     * List of tool names that this tool depends on.
-     *
-     * @var string[]
-     */
-    public $dependsOn;
-    /**
-     * Description of the tool.
-     *
-     * @var string
-     */
-    public $description;
-    protected $inputSchemaType = JsonSchema::class;
-    protected $inputSchemaDataType = '';
-    /**
-     * Name of the tool.
-     *
-     * @var string
-     */
-    public $name;
-    protected $outputSchemaType = JsonSchema::class;
-    protected $outputSchemaDataType = '';
-    /**
-     * Annotations for the tool.
-     *
-     * @param ToolAnnotations $annotations
-     */
-    public function setAnnotations(ToolAnnotations $annotations)
+namespace Google\Service\Connectors {
+    class Tool extends \Google\Collection
     {
+        protected $collection_key = 'dependsOn';
+        protected $annotationsType = ToolAnnotations::class;
+        protected $annotationsDataType = '';
+        /**
+         * List of tool names that this tool depends on.
+         *
+         * @var string[]
+         */
+        public $dependsOn;
+        /**
+         * Description of the tool.
+         *
+         * @var string
+         */
+        public $description;
+        protected $inputSchemaType = JsonSchema::class;
+        protected $inputSchemaDataType = '';
+        /**
+         * Name of the tool.
+         *
+         * @var string
+         */
+        public $name;
+        protected $outputSchemaType = JsonSchema::class;
+        protected $outputSchemaDataType = '';
+        /**
+         * Annotations for the tool.
+         *
+         * @param ToolAnnotations $annotations
+         */
+        public function setAnnotations(ToolAnnotations $annotations)
+        {
+        }
+        /**
+         * @return ToolAnnotations
+         */
+        public function getAnnotations()
+        {
+        }
+        /**
+         * List of tool names that this tool depends on.
+         *
+         * @param string[] $dependsOn
+         */
+        public function setDependsOn($dependsOn)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDependsOn()
+        {
+        }
+        /**
+         * Description of the tool.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * JSON schema for the input parameters of the tool.
+         *
+         * @param JsonSchema $inputSchema
+         */
+        public function setInputSchema(JsonSchema $inputSchema)
+        {
+        }
+        /**
+         * @return JsonSchema
+         */
+        public function getInputSchema()
+        {
+        }
+        /**
+         * Name of the tool.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * JSON schema for the output of the tool.
+         *
+         * @param JsonSchema $outputSchema
+         */
+        public function setOutputSchema(JsonSchema $outputSchema)
+        {
+        }
+        /**
+         * @return JsonSchema
+         */
+        public function getOutputSchema()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ToolAnnotations
+     * Runtime class alias of \Google\Service\Connectors\Tool registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotations()
-    {
-    }
-    /**
-     * List of tool names that this tool depends on.
-     *
-     * @param string[] $dependsOn
-     */
-    public function setDependsOn($dependsOn)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getDependsOn()
-    {
-    }
-    /**
-     * Description of the tool.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * JSON schema for the input parameters of the tool.
-     *
-     * @param JsonSchema $inputSchema
-     */
-    public function setInputSchema(JsonSchema $inputSchema)
-    {
-    }
-    /**
-     * @return JsonSchema
-     */
-    public function getInputSchema()
-    {
-    }
-    /**
-     * Name of the tool.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * JSON schema for the output of the tool.
-     *
-     * @param JsonSchema $outputSchema
-     */
-    public function setOutputSchema(JsonSchema $outputSchema)
-    {
-    }
-    /**
-     * @return JsonSchema
-     */
-    public function getOutputSchema()
+    class Google_Service_Connectors_Tool extends \Google\Service\Connectors\Tool
     {
     }
 }

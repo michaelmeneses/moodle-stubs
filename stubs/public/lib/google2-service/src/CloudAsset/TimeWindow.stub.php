@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class TimeWindow extends \Google\Model
-{
-    /**
-     * End time of the time window (inclusive). If not specified, the current
-     * timestamp is used instead.
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * Start time of the time window (exclusive).
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * End time of the time window (inclusive). If not specified, the current
-     * timestamp is used instead.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
+namespace Google\Service\CloudAsset {
+    class TimeWindow extends \Google\Model
     {
+        /**
+         * End time of the time window (inclusive). If not specified, the current
+         * timestamp is used instead.
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * Start time of the time window (exclusive).
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * End time of the time window (inclusive). If not specified, the current
+         * timestamp is used instead.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * Start time of the time window (exclusive).
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudAsset\TimeWindow registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndTime()
-    {
-    }
-    /**
-     * Start time of the time window (exclusive).
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
+    class Google_Service_CloudAsset_TimeWindow extends \Google\Service\CloudAsset\TimeWindow
     {
     }
 }

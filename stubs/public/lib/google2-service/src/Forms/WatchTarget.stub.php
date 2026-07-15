@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Forms;
-
-class WatchTarget extends \Google\Model
-{
-    protected $topicType = CloudPubsubTopic::class;
-    protected $topicDataType = '';
-    /**
-     * A Pub/Sub topic. To receive notifications, the topic must grant publish
-     * privileges to the Forms service account `serviceAccount:forms-
-     * notifications@system.gserviceaccount.com`. Only the project that owns a
-     * topic may create a watch with it. Pub/Sub delivery guarantees should be
-     * considered.
-     *
-     * @param CloudPubsubTopic $topic
-     */
-    public function setTopic(CloudPubsubTopic $topic)
+namespace Google\Service\Forms {
+    class WatchTarget extends \Google\Model
     {
+        protected $topicType = CloudPubsubTopic::class;
+        protected $topicDataType = '';
+        /**
+         * A Pub/Sub topic. To receive notifications, the topic must grant publish
+         * privileges to the Forms service account `serviceAccount:forms-
+         * notifications@system.gserviceaccount.com`. Only the project that owns a
+         * topic may create a watch with it. Pub/Sub delivery guarantees should be
+         * considered.
+         *
+         * @param CloudPubsubTopic $topic
+         */
+        public function setTopic(CloudPubsubTopic $topic)
+        {
+        }
+        /**
+         * @return CloudPubsubTopic
+         */
+        public function getTopic()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CloudPubsubTopic
+     * Runtime class alias of \Google\Service\Forms\WatchTarget registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTopic()
+    class Google_Service_Forms_WatchTarget extends \Google\Service\Forms\WatchTarget
     {
     }
 }

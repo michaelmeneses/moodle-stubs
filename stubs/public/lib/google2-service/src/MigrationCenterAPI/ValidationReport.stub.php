@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class ValidationReport extends \Google\Collection
-{
-    protected $collection_key = 'jobErrors';
-    protected $fileValidationsType = FileValidationReport::class;
-    protected $fileValidationsDataType = 'array';
-    protected $jobErrorsType = ImportError::class;
-    protected $jobErrorsDataType = 'array';
-    /**
-     * List of errors found in files.
-     *
-     * @param FileValidationReport[] $fileValidations
-     */
-    public function setFileValidations($fileValidations)
+namespace Google\Service\MigrationCenterAPI {
+    class ValidationReport extends \Google\Collection
     {
+        protected $collection_key = 'jobErrors';
+        protected $fileValidationsType = FileValidationReport::class;
+        protected $fileValidationsDataType = 'array';
+        protected $jobErrorsType = ImportError::class;
+        protected $jobErrorsDataType = 'array';
+        /**
+         * List of errors found in files.
+         *
+         * @param FileValidationReport[] $fileValidations
+         */
+        public function setFileValidations($fileValidations)
+        {
+        }
+        /**
+         * @return FileValidationReport[]
+         */
+        public function getFileValidations()
+        {
+        }
+        /**
+         * List of job level errors.
+         *
+         * @param ImportError[] $jobErrors
+         */
+        public function setJobErrors($jobErrors)
+        {
+        }
+        /**
+         * @return ImportError[]
+         */
+        public function getJobErrors()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FileValidationReport[]
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\ValidationReport registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFileValidations()
-    {
-    }
-    /**
-     * List of job level errors.
-     *
-     * @param ImportError[] $jobErrors
-     */
-    public function setJobErrors($jobErrors)
-    {
-    }
-    /**
-     * @return ImportError[]
-     */
-    public function getJobErrors()
+    class Google_Service_MigrationCenterAPI_ValidationReport extends \Google\Service\MigrationCenterAPI\ValidationReport
     {
     }
 }

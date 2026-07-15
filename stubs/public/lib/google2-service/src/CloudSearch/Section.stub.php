@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class Section extends \Google\Collection
-{
-    protected $collection_key = 'widgets';
-    /**
-     * @var bool
-     */
-    public $collapsable;
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var int
-     */
-    public $numUncollapsableWidgets;
-    protected $widgetsType = WidgetMarkup::class;
-    protected $widgetsDataType = 'array';
-    /**
-     * @param bool
-     */
-    public function setCollapsable($collapsable)
+namespace Google\Service\CloudSearch {
+    class Section extends \Google\Collection
     {
+        protected $collection_key = 'widgets';
+        /**
+         * @var bool
+         */
+        public $collapsable;
+        /**
+         * @var string
+         */
+        public $description;
+        /**
+         * @var int
+         */
+        public $numUncollapsableWidgets;
+        protected $widgetsType = WidgetMarkup::class;
+        protected $widgetsDataType = 'array';
+        /**
+         * @param bool
+         */
+        public function setCollapsable($collapsable)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCollapsable()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setNumUncollapsableWidgets($numUncollapsableWidgets)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumUncollapsableWidgets()
+        {
+        }
+        /**
+         * @param WidgetMarkup[]
+         */
+        public function setWidgets($widgets)
+        {
+        }
+        /**
+         * @return WidgetMarkup[]
+         */
+        public function getWidgets()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudSearch\Section registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCollapsable()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setNumUncollapsableWidgets($numUncollapsableWidgets)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNumUncollapsableWidgets()
-    {
-    }
-    /**
-     * @param WidgetMarkup[]
-     */
-    public function setWidgets($widgets)
-    {
-    }
-    /**
-     * @return WidgetMarkup[]
-     */
-    public function getWidgets()
+    class Google_Service_CloudSearch_Section extends \Google\Service\CloudSearch\Section
     {
     }
 }

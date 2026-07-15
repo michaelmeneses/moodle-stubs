@@ -21,141 +21,150 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class VmwareAdminNetworkConfig extends \Google\Collection
-{
-    protected $collection_key = 'serviceAddressCidrBlocks';
-    protected $dhcpIpConfigType = VmwareDhcpIpConfig::class;
-    protected $dhcpIpConfigDataType = '';
-    protected $haControlPlaneConfigType = VmwareAdminHAControlPlaneConfig::class;
-    protected $haControlPlaneConfigDataType = '';
-    protected $hostConfigType = VmwareHostConfig::class;
-    protected $hostConfigDataType = '';
-    /**
-     * Required. All pods in the cluster are assigned an RFC1918 IPv4 address from
-     * these ranges. Only a single range is supported. This field cannot be
-     * changed after creation.
-     *
-     * @var string[]
-     */
-    public $podAddressCidrBlocks;
-    /**
-     * Required. All services in the cluster are assigned an RFC1918 IPv4 address
-     * from these ranges. Only a single range is supported. This field cannot be
-     * changed after creation.
-     *
-     * @var string[]
-     */
-    public $serviceAddressCidrBlocks;
-    protected $staticIpConfigType = VmwareStaticIpConfig::class;
-    protected $staticIpConfigDataType = '';
-    /**
-     * vcenter_network specifies vCenter network name.
-     *
-     * @var string
-     */
-    public $vcenterNetwork;
-    /**
-     * Configuration settings for a DHCP IP configuration.
-     *
-     * @param VmwareDhcpIpConfig $dhcpIpConfig
-     */
-    public function setDhcpIpConfig(VmwareDhcpIpConfig $dhcpIpConfig)
+namespace Google\Service\GKEOnPrem {
+    class VmwareAdminNetworkConfig extends \Google\Collection
     {
+        protected $collection_key = 'serviceAddressCidrBlocks';
+        protected $dhcpIpConfigType = VmwareDhcpIpConfig::class;
+        protected $dhcpIpConfigDataType = '';
+        protected $haControlPlaneConfigType = VmwareAdminHAControlPlaneConfig::class;
+        protected $haControlPlaneConfigDataType = '';
+        protected $hostConfigType = VmwareHostConfig::class;
+        protected $hostConfigDataType = '';
+        /**
+         * Required. All pods in the cluster are assigned an RFC1918 IPv4 address from
+         * these ranges. Only a single range is supported. This field cannot be
+         * changed after creation.
+         *
+         * @var string[]
+         */
+        public $podAddressCidrBlocks;
+        /**
+         * Required. All services in the cluster are assigned an RFC1918 IPv4 address
+         * from these ranges. Only a single range is supported. This field cannot be
+         * changed after creation.
+         *
+         * @var string[]
+         */
+        public $serviceAddressCidrBlocks;
+        protected $staticIpConfigType = VmwareStaticIpConfig::class;
+        protected $staticIpConfigDataType = '';
+        /**
+         * vcenter_network specifies vCenter network name.
+         *
+         * @var string
+         */
+        public $vcenterNetwork;
+        /**
+         * Configuration settings for a DHCP IP configuration.
+         *
+         * @param VmwareDhcpIpConfig $dhcpIpConfig
+         */
+        public function setDhcpIpConfig(VmwareDhcpIpConfig $dhcpIpConfig)
+        {
+        }
+        /**
+         * @return VmwareDhcpIpConfig
+         */
+        public function getDhcpIpConfig()
+        {
+        }
+        /**
+         * Configuration for HA admin cluster control plane.
+         *
+         * @param VmwareAdminHAControlPlaneConfig $haControlPlaneConfig
+         */
+        public function setHaControlPlaneConfig(VmwareAdminHAControlPlaneConfig $haControlPlaneConfig)
+        {
+        }
+        /**
+         * @return VmwareAdminHAControlPlaneConfig
+         */
+        public function getHaControlPlaneConfig()
+        {
+        }
+        /**
+         * Represents common network settings irrespective of the host's IP address.
+         *
+         * @param VmwareHostConfig $hostConfig
+         */
+        public function setHostConfig(VmwareHostConfig $hostConfig)
+        {
+        }
+        /**
+         * @return VmwareHostConfig
+         */
+        public function getHostConfig()
+        {
+        }
+        /**
+         * Required. All pods in the cluster are assigned an RFC1918 IPv4 address from
+         * these ranges. Only a single range is supported. This field cannot be
+         * changed after creation.
+         *
+         * @param string[] $podAddressCidrBlocks
+         */
+        public function setPodAddressCidrBlocks($podAddressCidrBlocks)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPodAddressCidrBlocks()
+        {
+        }
+        /**
+         * Required. All services in the cluster are assigned an RFC1918 IPv4 address
+         * from these ranges. Only a single range is supported. This field cannot be
+         * changed after creation.
+         *
+         * @param string[] $serviceAddressCidrBlocks
+         */
+        public function setServiceAddressCidrBlocks($serviceAddressCidrBlocks)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getServiceAddressCidrBlocks()
+        {
+        }
+        /**
+         * Configuration settings for a static IP configuration.
+         *
+         * @param VmwareStaticIpConfig $staticIpConfig
+         */
+        public function setStaticIpConfig(VmwareStaticIpConfig $staticIpConfig)
+        {
+        }
+        /**
+         * @return VmwareStaticIpConfig
+         */
+        public function getStaticIpConfig()
+        {
+        }
+        /**
+         * vcenter_network specifies vCenter network name.
+         *
+         * @param string $vcenterNetwork
+         */
+        public function setVcenterNetwork($vcenterNetwork)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVcenterNetwork()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return VmwareDhcpIpConfig
+     * Runtime class alias of \Google\Service\GKEOnPrem\VmwareAdminNetworkConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDhcpIpConfig()
-    {
-    }
-    /**
-     * Configuration for HA admin cluster control plane.
-     *
-     * @param VmwareAdminHAControlPlaneConfig $haControlPlaneConfig
-     */
-    public function setHaControlPlaneConfig(VmwareAdminHAControlPlaneConfig $haControlPlaneConfig)
-    {
-    }
-    /**
-     * @return VmwareAdminHAControlPlaneConfig
-     */
-    public function getHaControlPlaneConfig()
-    {
-    }
-    /**
-     * Represents common network settings irrespective of the host's IP address.
-     *
-     * @param VmwareHostConfig $hostConfig
-     */
-    public function setHostConfig(VmwareHostConfig $hostConfig)
-    {
-    }
-    /**
-     * @return VmwareHostConfig
-     */
-    public function getHostConfig()
-    {
-    }
-    /**
-     * Required. All pods in the cluster are assigned an RFC1918 IPv4 address from
-     * these ranges. Only a single range is supported. This field cannot be
-     * changed after creation.
-     *
-     * @param string[] $podAddressCidrBlocks
-     */
-    public function setPodAddressCidrBlocks($podAddressCidrBlocks)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPodAddressCidrBlocks()
-    {
-    }
-    /**
-     * Required. All services in the cluster are assigned an RFC1918 IPv4 address
-     * from these ranges. Only a single range is supported. This field cannot be
-     * changed after creation.
-     *
-     * @param string[] $serviceAddressCidrBlocks
-     */
-    public function setServiceAddressCidrBlocks($serviceAddressCidrBlocks)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getServiceAddressCidrBlocks()
-    {
-    }
-    /**
-     * Configuration settings for a static IP configuration.
-     *
-     * @param VmwareStaticIpConfig $staticIpConfig
-     */
-    public function setStaticIpConfig(VmwareStaticIpConfig $staticIpConfig)
-    {
-    }
-    /**
-     * @return VmwareStaticIpConfig
-     */
-    public function getStaticIpConfig()
-    {
-    }
-    /**
-     * vcenter_network specifies vCenter network name.
-     *
-     * @param string $vcenterNetwork
-     */
-    public function setVcenterNetwork($vcenterNetwork)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVcenterNetwork()
+    class Google_Service_GKEOnPrem_VmwareAdminNetworkConfig extends \Google\Service\GKEOnPrem\VmwareAdminNetworkConfig
     {
     }
 }

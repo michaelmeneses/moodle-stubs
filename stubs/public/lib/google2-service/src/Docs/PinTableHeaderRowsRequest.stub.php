@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class PinTableHeaderRowsRequest extends \Google\Model
-{
-    /**
-     * The number of table rows to pin, where 0 implies that all rows are
-     * unpinned.
-     *
-     * @var int
-     */
-    public $pinnedHeaderRowsCount;
-    protected $tableStartLocationType = Location::class;
-    protected $tableStartLocationDataType = '';
-    /**
-     * The number of table rows to pin, where 0 implies that all rows are
-     * unpinned.
-     *
-     * @param int $pinnedHeaderRowsCount
-     */
-    public function setPinnedHeaderRowsCount($pinnedHeaderRowsCount)
+namespace Google\Service\Docs {
+    class PinTableHeaderRowsRequest extends \Google\Model
     {
+        /**
+         * The number of table rows to pin, where 0 implies that all rows are
+         * unpinned.
+         *
+         * @var int
+         */
+        public $pinnedHeaderRowsCount;
+        protected $tableStartLocationType = Location::class;
+        protected $tableStartLocationDataType = '';
+        /**
+         * The number of table rows to pin, where 0 implies that all rows are
+         * unpinned.
+         *
+         * @param int $pinnedHeaderRowsCount
+         */
+        public function setPinnedHeaderRowsCount($pinnedHeaderRowsCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPinnedHeaderRowsCount()
+        {
+        }
+        /**
+         * The location where the table starts in the document.
+         *
+         * @param Location $tableStartLocation
+         */
+        public function setTableStartLocation(Location $tableStartLocation)
+        {
+        }
+        /**
+         * @return Location
+         */
+        public function getTableStartLocation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Docs\PinTableHeaderRowsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPinnedHeaderRowsCount()
-    {
-    }
-    /**
-     * The location where the table starts in the document.
-     *
-     * @param Location $tableStartLocation
-     */
-    public function setTableStartLocation(Location $tableStartLocation)
-    {
-    }
-    /**
-     * @return Location
-     */
-    public function getTableStartLocation()
+    class Google_Service_Docs_PinTableHeaderRowsRequest extends \Google\Service\Docs\PinTableHeaderRowsRequest
     {
     }
 }

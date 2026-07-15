@@ -21,34 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo\Resource;
-
-/**
- * The "sdfdownloadtasks" collection of methods.
- * Typical usage is:
- *  <code>
- *   $displayvideoService = new Google\Service\DisplayVideo(...);
- *   $sdfdownloadtasks = $displayvideoService->sdfdownloadtasks;
- *  </code>
- */
-class Sdfdownloadtasks extends \Google\Service\Resource
-{
+namespace Google\Service\DisplayVideo\Resource {
+    use Google\Service\DisplayVideo\CreateSdfDownloadTaskRequest;
+    use Google\Service\DisplayVideo\Operation;
     /**
-     * Creates an SDF Download Task. Returns an Operation. An SDF Download Task is a
-     * long-running, asynchronous operation. The metadata type of this operation is
-     * SdfDownloadTaskMetadata. If the request is successful, the response type of
-     * the operation is SdfDownloadTask. The response will not include the download
-     * files, which must be retrieved with media.download. The state of operation
-     * can be retrieved with `sdfdownloadtasks.operations.get`. Any errors can be
-     * found in the error.message. Note that error.details is expected to be empty.
-     * (sdfdownloadtasks.create)
-     *
-     * @param CreateSdfDownloadTaskRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * The "sdfdownloadtasks" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $displayvideoService = new Google\Service\DisplayVideo(...);
+     *   $sdfdownloadtasks = $displayvideoService->sdfdownloadtasks;
+     *  </code>
      */
-    public function create(CreateSdfDownloadTaskRequest $postBody, $optParams = [])
+    class Sdfdownloadtasks extends \Google\Service\Resource
+    {
+        /**
+         * Creates an SDF Download Task. Returns an Operation. An SDF Download Task is a
+         * long-running, asynchronous operation. The metadata type of this operation is
+         * SdfDownloadTaskMetadata. If the request is successful, the response type of
+         * the operation is SdfDownloadTask. The response will not include the download
+         * files, which must be retrieved with media.download. The state of operation
+         * can be retrieved with `sdfdownloadtasks.operations.get`. Any errors can be
+         * found in the error.message. Note that error.details is expected to be empty.
+         * (sdfdownloadtasks.create)
+         *
+         * @param CreateSdfDownloadTaskRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function create(CreateSdfDownloadTaskRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\DisplayVideo\Resource\Sdfdownloadtasks registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_DisplayVideo_Resource_Sdfdownloadtasks extends \Google\Service\DisplayVideo\Resource\Sdfdownloadtasks
     {
     }
 }

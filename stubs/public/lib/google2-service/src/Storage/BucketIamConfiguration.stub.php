@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storage;
-
-class BucketIamConfiguration extends \Google\Model
-{
-    protected $bucketPolicyOnlyType = BucketIamConfigurationBucketPolicyOnly::class;
-    protected $bucketPolicyOnlyDataType = '';
-    /**
-     * The bucket's Public Access Prevention configuration. Currently, 'inherited'
-     * and 'enforced' are supported.
-     *
-     * @var string
-     */
-    public $publicAccessPrevention;
-    protected $uniformBucketLevelAccessType = BucketIamConfigurationUniformBucketLevelAccess::class;
-    protected $uniformBucketLevelAccessDataType = '';
-    /**
-     * The bucket's uniform bucket-level access configuration. The feature was
-     * formerly known as Bucket Policy Only. For backward compatibility, this
-     * field will be populated with identical information as the
-     * uniformBucketLevelAccess field. We recommend using the
-     * uniformBucketLevelAccess field to enable and disable the feature.
-     *
-     * @param BucketIamConfigurationBucketPolicyOnly $bucketPolicyOnly
-     */
-    public function setBucketPolicyOnly(BucketIamConfigurationBucketPolicyOnly $bucketPolicyOnly)
+namespace Google\Service\Storage {
+    class BucketIamConfiguration extends \Google\Model
     {
+        protected $bucketPolicyOnlyType = BucketIamConfigurationBucketPolicyOnly::class;
+        protected $bucketPolicyOnlyDataType = '';
+        /**
+         * The bucket's Public Access Prevention configuration. Currently, 'inherited'
+         * and 'enforced' are supported.
+         *
+         * @var string
+         */
+        public $publicAccessPrevention;
+        protected $uniformBucketLevelAccessType = BucketIamConfigurationUniformBucketLevelAccess::class;
+        protected $uniformBucketLevelAccessDataType = '';
+        /**
+         * The bucket's uniform bucket-level access configuration. The feature was
+         * formerly known as Bucket Policy Only. For backward compatibility, this
+         * field will be populated with identical information as the
+         * uniformBucketLevelAccess field. We recommend using the
+         * uniformBucketLevelAccess field to enable and disable the feature.
+         *
+         * @param BucketIamConfigurationBucketPolicyOnly $bucketPolicyOnly
+         */
+        public function setBucketPolicyOnly(BucketIamConfigurationBucketPolicyOnly $bucketPolicyOnly)
+        {
+        }
+        /**
+         * @return BucketIamConfigurationBucketPolicyOnly
+         */
+        public function getBucketPolicyOnly()
+        {
+        }
+        /**
+         * The bucket's Public Access Prevention configuration. Currently, 'inherited'
+         * and 'enforced' are supported.
+         *
+         * @param string $publicAccessPrevention
+         */
+        public function setPublicAccessPrevention($publicAccessPrevention)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPublicAccessPrevention()
+        {
+        }
+        /**
+         * The bucket's uniform bucket-level access configuration.
+         *
+         * @param BucketIamConfigurationUniformBucketLevelAccess $uniformBucketLevelAccess
+         */
+        public function setUniformBucketLevelAccess(BucketIamConfigurationUniformBucketLevelAccess $uniformBucketLevelAccess)
+        {
+        }
+        /**
+         * @return BucketIamConfigurationUniformBucketLevelAccess
+         */
+        public function getUniformBucketLevelAccess()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BucketIamConfigurationBucketPolicyOnly
+     * Runtime class alias of \Google\Service\Storage\BucketIamConfiguration registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBucketPolicyOnly()
-    {
-    }
-    /**
-     * The bucket's Public Access Prevention configuration. Currently, 'inherited'
-     * and 'enforced' are supported.
-     *
-     * @param string $publicAccessPrevention
-     */
-    public function setPublicAccessPrevention($publicAccessPrevention)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPublicAccessPrevention()
-    {
-    }
-    /**
-     * The bucket's uniform bucket-level access configuration.
-     *
-     * @param BucketIamConfigurationUniformBucketLevelAccess $uniformBucketLevelAccess
-     */
-    public function setUniformBucketLevelAccess(BucketIamConfigurationUniformBucketLevelAccess $uniformBucketLevelAccess)
-    {
-    }
-    /**
-     * @return BucketIamConfigurationUniformBucketLevelAccess
-     */
-    public function getUniformBucketLevelAccess()
+    class Google_Service_Storage_BucketIamConfiguration extends \Google\Service\Storage\BucketIamConfiguration
     {
     }
 }

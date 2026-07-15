@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors;
-
-class ListRuntimeEntitySchemasResponse extends \Google\Collection
-{
-    protected $collection_key = 'runtimeEntitySchemas';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    protected $runtimeEntitySchemasType = RuntimeEntitySchema::class;
-    protected $runtimeEntitySchemasDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Connectors {
+    class ListRuntimeEntitySchemasResponse extends \Google\Collection
     {
+        protected $collection_key = 'runtimeEntitySchemas';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        protected $runtimeEntitySchemasType = RuntimeEntitySchema::class;
+        protected $runtimeEntitySchemasDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param RuntimeEntitySchema[]
+         */
+        public function setRuntimeEntitySchemas($runtimeEntitySchemas)
+        {
+        }
+        /**
+         * @return RuntimeEntitySchema[]
+         */
+        public function getRuntimeEntitySchemas()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Connectors\ListRuntimeEntitySchemasResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param RuntimeEntitySchema[]
-     */
-    public function setRuntimeEntitySchemas($runtimeEntitySchemas)
-    {
-    }
-    /**
-     * @return RuntimeEntitySchema[]
-     */
-    public function getRuntimeEntitySchemas()
+    class Google_Service_Connectors_ListRuntimeEntitySchemasResponse extends \Google\Service\Connectors\ListRuntimeEntitySchemasResponse
     {
     }
 }

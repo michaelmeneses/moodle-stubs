@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors;
-
-class ListProvidersResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    protected $providersType = Provider::class;
-    protected $providersDataType = 'array';
-    /**
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Connectors {
+    class ListProvidersResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        protected $providersType = Provider::class;
+        protected $providersDataType = 'array';
+        /**
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param Provider[]
+         */
+        public function setProviders($providers)
+        {
+        }
+        /**
+         * @return Provider[]
+         */
+        public function getProviders()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Connectors\ListProvidersResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param Provider[]
-     */
-    public function setProviders($providers)
-    {
-    }
-    /**
-     * @return Provider[]
-     */
-    public function getProviders()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_Connectors_ListProvidersResponse extends \Google\Service\Connectors\ListProvidersResponse
     {
     }
 }

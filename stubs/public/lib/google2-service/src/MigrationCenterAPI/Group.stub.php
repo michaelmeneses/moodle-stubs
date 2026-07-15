@@ -21,128 +21,137 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class Group extends \Google\Model
-{
-    /**
-     * Output only. The timestamp when the group was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Optional. The description of the group.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Optional. User-friendly display name.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Labels as key value pairs.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Output only. The name of the group.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The timestamp when the group was last updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. The timestamp when the group was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\MigrationCenterAPI {
+    class Group extends \Google\Model
     {
+        /**
+         * Output only. The timestamp when the group was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Optional. The description of the group.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Optional. User-friendly display name.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Labels as key value pairs.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Output only. The name of the group.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The timestamp when the group was last updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. The timestamp when the group was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Optional. The description of the group.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Optional. User-friendly display name.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Labels as key value pairs.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Output only. The name of the group.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The timestamp when the group was last updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\Group registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Optional. The description of the group.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Optional. User-friendly display name.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Labels as key value pairs.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Output only. The name of the group.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The timestamp when the group was last updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_MigrationCenterAPI_Group extends \Google\Service\MigrationCenterAPI\Group
     {
     }
 }

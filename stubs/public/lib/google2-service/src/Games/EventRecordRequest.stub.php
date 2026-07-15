@@ -21,89 +21,98 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Games;
-
-class EventRecordRequest extends \Google\Collection
-{
-    protected $collection_key = 'timePeriods';
-    /**
-     * The current time when this update was sent, in milliseconds, since 1970 UTC
-     * (Unix Epoch).
-     *
-     * @var string
-     */
-    public $currentTimeMillis;
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#eventRecordRequest`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The request ID used to identify this attempt to record events.
-     *
-     * @var string
-     */
-    public $requestId;
-    protected $timePeriodsType = EventPeriodUpdate::class;
-    protected $timePeriodsDataType = 'array';
-    /**
-     * The current time when this update was sent, in milliseconds, since 1970 UTC
-     * (Unix Epoch).
-     *
-     * @param string $currentTimeMillis
-     */
-    public function setCurrentTimeMillis($currentTimeMillis)
+namespace Google\Service\Games {
+    class EventRecordRequest extends \Google\Collection
     {
+        protected $collection_key = 'timePeriods';
+        /**
+         * The current time when this update was sent, in milliseconds, since 1970 UTC
+         * (Unix Epoch).
+         *
+         * @var string
+         */
+        public $currentTimeMillis;
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#eventRecordRequest`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The request ID used to identify this attempt to record events.
+         *
+         * @var string
+         */
+        public $requestId;
+        protected $timePeriodsType = EventPeriodUpdate::class;
+        protected $timePeriodsDataType = 'array';
+        /**
+         * The current time when this update was sent, in milliseconds, since 1970 UTC
+         * (Unix Epoch).
+         *
+         * @param string $currentTimeMillis
+         */
+        public function setCurrentTimeMillis($currentTimeMillis)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCurrentTimeMillis()
+        {
+        }
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#eventRecordRequest`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The request ID used to identify this attempt to record events.
+         *
+         * @param string $requestId
+         */
+        public function setRequestId($requestId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestId()
+        {
+        }
+        /**
+         * A list of the time period updates being made in this request.
+         *
+         * @param EventPeriodUpdate[] $timePeriods
+         */
+        public function setTimePeriods($timePeriods)
+        {
+        }
+        /**
+         * @return EventPeriodUpdate[]
+         */
+        public function getTimePeriods()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Games\EventRecordRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCurrentTimeMillis()
-    {
-    }
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#eventRecordRequest`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The request ID used to identify this attempt to record events.
-     *
-     * @param string $requestId
-     */
-    public function setRequestId($requestId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestId()
-    {
-    }
-    /**
-     * A list of the time period updates being made in this request.
-     *
-     * @param EventPeriodUpdate[] $timePeriods
-     */
-    public function setTimePeriods($timePeriods)
-    {
-    }
-    /**
-     * @return EventPeriodUpdate[]
-     */
-    public function getTimePeriods()
+    class Google_Service_Games_EventRecordRequest extends \Google\Service\Games\EventRecordRequest
     {
     }
 }

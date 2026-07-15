@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudTalentSolution;
-
-class CompleteQueryResponse extends \Google\Collection
-{
-    protected $collection_key = 'completionResults';
-    protected $completionResultsType = CompletionResult::class;
-    protected $completionResultsDataType = 'array';
-    protected $metadataType = ResponseMetadata::class;
-    protected $metadataDataType = '';
-    /**
-     * Results of the matching job/company candidates.
-     *
-     * @param CompletionResult[] $completionResults
-     */
-    public function setCompletionResults($completionResults)
+namespace Google\Service\CloudTalentSolution {
+    class CompleteQueryResponse extends \Google\Collection
     {
+        protected $collection_key = 'completionResults';
+        protected $completionResultsType = CompletionResult::class;
+        protected $completionResultsDataType = 'array';
+        protected $metadataType = ResponseMetadata::class;
+        protected $metadataDataType = '';
+        /**
+         * Results of the matching job/company candidates.
+         *
+         * @param CompletionResult[] $completionResults
+         */
+        public function setCompletionResults($completionResults)
+        {
+        }
+        /**
+         * @return CompletionResult[]
+         */
+        public function getCompletionResults()
+        {
+        }
+        /**
+         * Additional information for the API invocation, such as the request tracking
+         * id.
+         *
+         * @param ResponseMetadata $metadata
+         */
+        public function setMetadata(ResponseMetadata $metadata)
+        {
+        }
+        /**
+         * @return ResponseMetadata
+         */
+        public function getMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CompletionResult[]
+     * Runtime class alias of \Google\Service\CloudTalentSolution\CompleteQueryResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCompletionResults()
-    {
-    }
-    /**
-     * Additional information for the API invocation, such as the request tracking
-     * id.
-     *
-     * @param ResponseMetadata $metadata
-     */
-    public function setMetadata(ResponseMetadata $metadata)
-    {
-    }
-    /**
-     * @return ResponseMetadata
-     */
-    public function getMetadata()
+    class Google_Service_CloudTalentSolution_CompleteQueryResponse extends \Google\Service\CloudTalentSolution\CompleteQueryResponse
     {
     }
 }

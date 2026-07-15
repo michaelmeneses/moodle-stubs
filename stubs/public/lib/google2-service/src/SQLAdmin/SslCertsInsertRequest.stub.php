@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class SslCertsInsertRequest extends \Google\Model
-{
-    /**
-     * User supplied name. Must be a distinct name from the other certificates for
-     * this instance.
-     *
-     * @var string
-     */
-    public $commonName;
-    /**
-     * User supplied name. Must be a distinct name from the other certificates for
-     * this instance.
-     *
-     * @param string $commonName
-     */
-    public function setCommonName($commonName)
+namespace Google\Service\SQLAdmin {
+    class SslCertsInsertRequest extends \Google\Model
     {
+        /**
+         * User supplied name. Must be a distinct name from the other certificates for
+         * this instance.
+         *
+         * @var string
+         */
+        public $commonName;
+        /**
+         * User supplied name. Must be a distinct name from the other certificates for
+         * this instance.
+         *
+         * @param string $commonName
+         */
+        public function setCommonName($commonName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCommonName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SQLAdmin\SslCertsInsertRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCommonName()
+    class Google_Service_SQLAdmin_SslCertsInsertRequest extends \Google\Service\SQLAdmin\SslCertsInsertRequest
     {
     }
 }

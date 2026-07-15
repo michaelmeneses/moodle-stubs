@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaPredictPredictionClassificationPredictionResult extends \Google\Collection
-{
-    protected $collection_key = 'ids';
-    /**
-     * The Model's confidences in correctness of the predicted IDs, higher value
-     * means higher confidence. Order matches the Ids.
-     *
-     * @var float[]
-     */
-    public $confidences;
-    /**
-     * The display names of the AnnotationSpecs that had been identified, order
-     * matches the IDs.
-     *
-     * @var string[]
-     */
-    public $displayNames;
-    /**
-     * The resource IDs of the AnnotationSpecs that had been identified.
-     *
-     * @var string[]
-     */
-    public $ids;
-    /**
-     * The Model's confidences in correctness of the predicted IDs, higher value
-     * means higher confidence. Order matches the Ids.
-     *
-     * @param float[] $confidences
-     */
-    public function setConfidences($confidences)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaPredictPredictionClassificationPredictionResult extends \Google\Collection
     {
+        protected $collection_key = 'ids';
+        /**
+         * The Model's confidences in correctness of the predicted IDs, higher value
+         * means higher confidence. Order matches the Ids.
+         *
+         * @var float[]
+         */
+        public $confidences;
+        /**
+         * The display names of the AnnotationSpecs that had been identified, order
+         * matches the IDs.
+         *
+         * @var string[]
+         */
+        public $displayNames;
+        /**
+         * The resource IDs of the AnnotationSpecs that had been identified.
+         *
+         * @var string[]
+         */
+        public $ids;
+        /**
+         * The Model's confidences in correctness of the predicted IDs, higher value
+         * means higher confidence. Order matches the Ids.
+         *
+         * @param float[] $confidences
+         */
+        public function setConfidences($confidences)
+        {
+        }
+        /**
+         * @return float[]
+         */
+        public function getConfidences()
+        {
+        }
+        /**
+         * The display names of the AnnotationSpecs that had been identified, order
+         * matches the IDs.
+         *
+         * @param string[] $displayNames
+         */
+        public function setDisplayNames($displayNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDisplayNames()
+        {
+        }
+        /**
+         * The resource IDs of the AnnotationSpecs that had been identified.
+         *
+         * @param string[] $ids
+         */
+        public function setIds($ids)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaPredictPredictionClassificationPredictionResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfidences()
-    {
-    }
-    /**
-     * The display names of the AnnotationSpecs that had been identified, order
-     * matches the IDs.
-     *
-     * @param string[] $displayNames
-     */
-    public function setDisplayNames($displayNames)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getDisplayNames()
-    {
-    }
-    /**
-     * The resource IDs of the AnnotationSpecs that had been identified.
-     *
-     * @param string[] $ids
-     */
-    public function setIds($ids)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getIds()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaPredictPredictionClassificationPredictionResult extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaPredictPredictionClassificationPredictionResult
     {
     }
 }

@@ -21,31 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Backupdr\Resource;
-
-/**
- * The "serviceConfig" collection of methods.
- * Typical usage is:
- *  <code>
- *   $backupdrService = new Google\Service\Backupdr(...);
- *   $serviceConfig = $backupdrService->projects_locations_serviceConfig;
- *  </code>
- */
-class ProjectsLocationsServiceConfig extends \Google\Service\Resource
-{
+namespace Google\Service\Backupdr\Resource {
+    use Google\Service\Backupdr\InitializeServiceRequest;
+    use Google\Service\Backupdr\Operation;
     /**
-     * Initializes the service related config for a project.
-     * (serviceConfig.initialize)
-     *
-     * @param string $name Required. The resource name of the serviceConfig used to
-     * initialize the service. Format:
-     * `projects/{project_id}/locations/{location}/serviceConfig`.
-     * @param InitializeServiceRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * The "serviceConfig" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $backupdrService = new Google\Service\Backupdr(...);
+     *   $serviceConfig = $backupdrService->projects_locations_serviceConfig;
+     *  </code>
      */
-    public function initialize($name, InitializeServiceRequest $postBody, $optParams = [])
+    class ProjectsLocationsServiceConfig extends \Google\Service\Resource
+    {
+        /**
+         * Initializes the service related config for a project.
+         * (serviceConfig.initialize)
+         *
+         * @param string $name Required. The resource name of the serviceConfig used to
+         * initialize the service. Format:
+         * `projects/{project_id}/locations/{location}/serviceConfig`.
+         * @param InitializeServiceRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function initialize($name, InitializeServiceRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Backupdr\Resource\ProjectsLocationsServiceConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Backupdr_Resource_ProjectsLocationsServiceConfig extends \Google\Service\Backupdr\Resource\ProjectsLocationsServiceConfig
     {
     }
 }

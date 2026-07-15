@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class AndroidAppInfo extends \Google\Model
-{
-    /**
-     * The name of the app. Optional
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The package name of the app. Required.
-     *
-     * @var string
-     */
-    public $packageName;
-    /**
-     * The internal version code of the app. Optional.
-     *
-     * @var string
-     */
-    public $versionCode;
-    /**
-     * The version name of the app. Optional.
-     *
-     * @var string
-     */
-    public $versionName;
-    /**
-     * The name of the app. Optional
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\ToolResults {
+    class AndroidAppInfo extends \Google\Model
     {
+        /**
+         * The name of the app. Optional
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The package name of the app. Required.
+         *
+         * @var string
+         */
+        public $packageName;
+        /**
+         * The internal version code of the app. Optional.
+         *
+         * @var string
+         */
+        public $versionCode;
+        /**
+         * The version name of the app. Optional.
+         *
+         * @var string
+         */
+        public $versionName;
+        /**
+         * The name of the app. Optional
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The package name of the app. Required.
+         *
+         * @param string $packageName
+         */
+        public function setPackageName($packageName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPackageName()
+        {
+        }
+        /**
+         * The internal version code of the app. Optional.
+         *
+         * @param string $versionCode
+         */
+        public function setVersionCode($versionCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersionCode()
+        {
+        }
+        /**
+         * The version name of the app. Optional.
+         *
+         * @param string $versionName
+         */
+        public function setVersionName($versionName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersionName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ToolResults\AndroidAppInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * The package name of the app. Required.
-     *
-     * @param string $packageName
-     */
-    public function setPackageName($packageName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPackageName()
-    {
-    }
-    /**
-     * The internal version code of the app. Optional.
-     *
-     * @param string $versionCode
-     */
-    public function setVersionCode($versionCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersionCode()
-    {
-    }
-    /**
-     * The version name of the app. Optional.
-     *
-     * @param string $versionName
-     */
-    public function setVersionName($versionName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersionName()
+    class Google_Service_ToolResults_AndroidAppInfo extends \Google\Service\ToolResults\AndroidAppInfo
     {
     }
 }

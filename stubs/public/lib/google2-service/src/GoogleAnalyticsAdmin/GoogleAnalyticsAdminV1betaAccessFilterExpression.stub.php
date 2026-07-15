@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1betaAccessFilterExpression extends \Google\Model
-{
-    protected $accessFilterType = GoogleAnalyticsAdminV1betaAccessFilter::class;
-    protected $accessFilterDataType = '';
-    protected $andGroupType = GoogleAnalyticsAdminV1betaAccessFilterExpressionList::class;
-    protected $andGroupDataType = '';
-    protected $notExpressionType = GoogleAnalyticsAdminV1betaAccessFilterExpression::class;
-    protected $notExpressionDataType = '';
-    protected $orGroupType = GoogleAnalyticsAdminV1betaAccessFilterExpressionList::class;
-    protected $orGroupDataType = '';
-    /**
-     * A primitive filter. In the same FilterExpression, all of the filter's field
-     * names need to be either all dimensions or all metrics.
-     *
-     * @param GoogleAnalyticsAdminV1betaAccessFilter $accessFilter
-     */
-    public function setAccessFilter(GoogleAnalyticsAdminV1betaAccessFilter $accessFilter)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1betaAccessFilterExpression extends \Google\Model
     {
+        protected $accessFilterType = GoogleAnalyticsAdminV1betaAccessFilter::class;
+        protected $accessFilterDataType = '';
+        protected $andGroupType = GoogleAnalyticsAdminV1betaAccessFilterExpressionList::class;
+        protected $andGroupDataType = '';
+        protected $notExpressionType = GoogleAnalyticsAdminV1betaAccessFilterExpression::class;
+        protected $notExpressionDataType = '';
+        protected $orGroupType = GoogleAnalyticsAdminV1betaAccessFilterExpressionList::class;
+        protected $orGroupDataType = '';
+        /**
+         * A primitive filter. In the same FilterExpression, all of the filter's field
+         * names need to be either all dimensions or all metrics.
+         *
+         * @param GoogleAnalyticsAdminV1betaAccessFilter $accessFilter
+         */
+        public function setAccessFilter(GoogleAnalyticsAdminV1betaAccessFilter $accessFilter)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1betaAccessFilter
+         */
+        public function getAccessFilter()
+        {
+        }
+        /**
+         * Each of the FilterExpressions in the and_group has an AND relationship.
+         *
+         * @param GoogleAnalyticsAdminV1betaAccessFilterExpressionList $andGroup
+         */
+        public function setAndGroup(GoogleAnalyticsAdminV1betaAccessFilterExpressionList $andGroup)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1betaAccessFilterExpressionList
+         */
+        public function getAndGroup()
+        {
+        }
+        /**
+         * The FilterExpression is NOT of not_expression.
+         *
+         * @param GoogleAnalyticsAdminV1betaAccessFilterExpression $notExpression
+         */
+        public function setNotExpression(GoogleAnalyticsAdminV1betaAccessFilterExpression $notExpression)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1betaAccessFilterExpression
+         */
+        public function getNotExpression()
+        {
+        }
+        /**
+         * Each of the FilterExpressions in the or_group has an OR relationship.
+         *
+         * @param GoogleAnalyticsAdminV1betaAccessFilterExpressionList $orGroup
+         */
+        public function setOrGroup(GoogleAnalyticsAdminV1betaAccessFilterExpressionList $orGroup)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1betaAccessFilterExpressionList
+         */
+        public function getOrGroup()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAnalyticsAdminV1betaAccessFilter
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaAccessFilterExpression registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccessFilter()
-    {
-    }
-    /**
-     * Each of the FilterExpressions in the and_group has an AND relationship.
-     *
-     * @param GoogleAnalyticsAdminV1betaAccessFilterExpressionList $andGroup
-     */
-    public function setAndGroup(GoogleAnalyticsAdminV1betaAccessFilterExpressionList $andGroup)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1betaAccessFilterExpressionList
-     */
-    public function getAndGroup()
-    {
-    }
-    /**
-     * The FilterExpression is NOT of not_expression.
-     *
-     * @param GoogleAnalyticsAdminV1betaAccessFilterExpression $notExpression
-     */
-    public function setNotExpression(GoogleAnalyticsAdminV1betaAccessFilterExpression $notExpression)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1betaAccessFilterExpression
-     */
-    public function getNotExpression()
-    {
-    }
-    /**
-     * Each of the FilterExpressions in the or_group has an OR relationship.
-     *
-     * @param GoogleAnalyticsAdminV1betaAccessFilterExpressionList $orGroup
-     */
-    public function setOrGroup(GoogleAnalyticsAdminV1betaAccessFilterExpressionList $orGroup)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1betaAccessFilterExpressionList
-     */
-    public function getOrGroup()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1betaAccessFilterExpression extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaAccessFilterExpression
     {
     }
 }

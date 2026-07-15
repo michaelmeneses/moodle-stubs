@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveLabels;
-
-class GoogleAppsDriveLabelsV2LabelEnabledAppSettings extends \Google\Collection
-{
-    protected $collection_key = 'enabledApps';
-    protected $enabledAppsType = GoogleAppsDriveLabelsV2LabelEnabledAppSettingsEnabledApp::class;
-    protected $enabledAppsDataType = 'array';
-    /**
-     * Optional. The list of apps where the label can be used.
-     *
-     * @param GoogleAppsDriveLabelsV2LabelEnabledAppSettingsEnabledApp[] $enabledApps
-     */
-    public function setEnabledApps($enabledApps)
+namespace Google\Service\DriveLabels {
+    class GoogleAppsDriveLabelsV2LabelEnabledAppSettings extends \Google\Collection
     {
+        protected $collection_key = 'enabledApps';
+        protected $enabledAppsType = GoogleAppsDriveLabelsV2LabelEnabledAppSettingsEnabledApp::class;
+        protected $enabledAppsDataType = 'array';
+        /**
+         * Optional. The list of apps where the label can be used.
+         *
+         * @param GoogleAppsDriveLabelsV2LabelEnabledAppSettingsEnabledApp[] $enabledApps
+         */
+        public function setEnabledApps($enabledApps)
+        {
+        }
+        /**
+         * @return GoogleAppsDriveLabelsV2LabelEnabledAppSettingsEnabledApp[]
+         */
+        public function getEnabledApps()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAppsDriveLabelsV2LabelEnabledAppSettingsEnabledApp[]
+     * Runtime class alias of \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2LabelEnabledAppSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnabledApps()
+    class Google_Service_DriveLabels_GoogleAppsDriveLabelsV2LabelEnabledAppSettings extends \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2LabelEnabledAppSettings
     {
     }
 }

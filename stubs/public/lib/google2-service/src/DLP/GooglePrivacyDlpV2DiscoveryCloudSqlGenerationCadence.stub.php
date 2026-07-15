@@ -21,87 +21,96 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2DiscoveryCloudSqlGenerationCadence extends \Google\Model
-{
-    /**
-     * Unspecified.
-     */
-    public const REFRESH_FREQUENCY_UPDATE_FREQUENCY_UNSPECIFIED = 'UPDATE_FREQUENCY_UNSPECIFIED';
-    /**
-     * After the data profile is created, it will never be updated.
-     */
-    public const REFRESH_FREQUENCY_UPDATE_FREQUENCY_NEVER = 'UPDATE_FREQUENCY_NEVER';
-    /**
-     * The data profile can be updated up to once every 24 hours.
-     */
-    public const REFRESH_FREQUENCY_UPDATE_FREQUENCY_DAILY = 'UPDATE_FREQUENCY_DAILY';
-    /**
-     * The data profile can be updated up to once every 30 days. Default.
-     */
-    public const REFRESH_FREQUENCY_UPDATE_FREQUENCY_MONTHLY = 'UPDATE_FREQUENCY_MONTHLY';
-    protected $inspectTemplateModifiedCadenceType = GooglePrivacyDlpV2DiscoveryInspectTemplateModifiedCadence::class;
-    protected $inspectTemplateModifiedCadenceDataType = '';
-    /**
-     * Data changes (non-schema changes) in Cloud SQL tables can't trigger
-     * reprofiling. If you set this field, profiles are refreshed at this
-     * frequency regardless of whether the underlying tables have changed.
-     * Defaults to never.
-     *
-     * @var string
-     */
-    public $refreshFrequency;
-    protected $schemaModifiedCadenceType = GooglePrivacyDlpV2SchemaModifiedCadence::class;
-    protected $schemaModifiedCadenceDataType = '';
-    /**
-     * Governs when to update data profiles when the inspection rules defined by
-     * the `InspectTemplate` change. If not set, changing the template will not
-     * cause a data profile to update.
-     *
-     * @param GooglePrivacyDlpV2DiscoveryInspectTemplateModifiedCadence $inspectTemplateModifiedCadence
-     */
-    public function setInspectTemplateModifiedCadence(GooglePrivacyDlpV2DiscoveryInspectTemplateModifiedCadence $inspectTemplateModifiedCadence)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2DiscoveryCloudSqlGenerationCadence extends \Google\Model
     {
+        /**
+         * Unspecified.
+         */
+        public const REFRESH_FREQUENCY_UPDATE_FREQUENCY_UNSPECIFIED = 'UPDATE_FREQUENCY_UNSPECIFIED';
+        /**
+         * After the data profile is created, it will never be updated.
+         */
+        public const REFRESH_FREQUENCY_UPDATE_FREQUENCY_NEVER = 'UPDATE_FREQUENCY_NEVER';
+        /**
+         * The data profile can be updated up to once every 24 hours.
+         */
+        public const REFRESH_FREQUENCY_UPDATE_FREQUENCY_DAILY = 'UPDATE_FREQUENCY_DAILY';
+        /**
+         * The data profile can be updated up to once every 30 days. Default.
+         */
+        public const REFRESH_FREQUENCY_UPDATE_FREQUENCY_MONTHLY = 'UPDATE_FREQUENCY_MONTHLY';
+        protected $inspectTemplateModifiedCadenceType = GooglePrivacyDlpV2DiscoveryInspectTemplateModifiedCadence::class;
+        protected $inspectTemplateModifiedCadenceDataType = '';
+        /**
+         * Data changes (non-schema changes) in Cloud SQL tables can't trigger
+         * reprofiling. If you set this field, profiles are refreshed at this
+         * frequency regardless of whether the underlying tables have changed.
+         * Defaults to never.
+         *
+         * @var string
+         */
+        public $refreshFrequency;
+        protected $schemaModifiedCadenceType = GooglePrivacyDlpV2SchemaModifiedCadence::class;
+        protected $schemaModifiedCadenceDataType = '';
+        /**
+         * Governs when to update data profiles when the inspection rules defined by
+         * the `InspectTemplate` change. If not set, changing the template will not
+         * cause a data profile to update.
+         *
+         * @param GooglePrivacyDlpV2DiscoveryInspectTemplateModifiedCadence $inspectTemplateModifiedCadence
+         */
+        public function setInspectTemplateModifiedCadence(GooglePrivacyDlpV2DiscoveryInspectTemplateModifiedCadence $inspectTemplateModifiedCadence)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2DiscoveryInspectTemplateModifiedCadence
+         */
+        public function getInspectTemplateModifiedCadence()
+        {
+        }
+        /**
+         * Data changes (non-schema changes) in Cloud SQL tables can't trigger
+         * reprofiling. If you set this field, profiles are refreshed at this
+         * frequency regardless of whether the underlying tables have changed.
+         * Defaults to never.
+         *
+         * Accepted values: UPDATE_FREQUENCY_UNSPECIFIED, UPDATE_FREQUENCY_NEVER,
+         * UPDATE_FREQUENCY_DAILY, UPDATE_FREQUENCY_MONTHLY
+         *
+         * @param self::REFRESH_FREQUENCY_* $refreshFrequency
+         */
+        public function setRefreshFrequency($refreshFrequency)
+        {
+        }
+        /**
+         * @return self::REFRESH_FREQUENCY_*
+         */
+        public function getRefreshFrequency()
+        {
+        }
+        /**
+         * When to reprofile if the schema has changed.
+         *
+         * @param GooglePrivacyDlpV2SchemaModifiedCadence $schemaModifiedCadence
+         */
+        public function setSchemaModifiedCadence(GooglePrivacyDlpV2SchemaModifiedCadence $schemaModifiedCadence)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2SchemaModifiedCadence
+         */
+        public function getSchemaModifiedCadence()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2DiscoveryInspectTemplateModifiedCadence
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2DiscoveryCloudSqlGenerationCadence registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInspectTemplateModifiedCadence()
-    {
-    }
-    /**
-     * Data changes (non-schema changes) in Cloud SQL tables can't trigger
-     * reprofiling. If you set this field, profiles are refreshed at this
-     * frequency regardless of whether the underlying tables have changed.
-     * Defaults to never.
-     *
-     * Accepted values: UPDATE_FREQUENCY_UNSPECIFIED, UPDATE_FREQUENCY_NEVER,
-     * UPDATE_FREQUENCY_DAILY, UPDATE_FREQUENCY_MONTHLY
-     *
-     * @param self::REFRESH_FREQUENCY_* $refreshFrequency
-     */
-    public function setRefreshFrequency($refreshFrequency)
-    {
-    }
-    /**
-     * @return self::REFRESH_FREQUENCY_*
-     */
-    public function getRefreshFrequency()
-    {
-    }
-    /**
-     * When to reprofile if the schema has changed.
-     *
-     * @param GooglePrivacyDlpV2SchemaModifiedCadence $schemaModifiedCadence
-     */
-    public function setSchemaModifiedCadence(GooglePrivacyDlpV2SchemaModifiedCadence $schemaModifiedCadence)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2SchemaModifiedCadence
-     */
-    public function getSchemaModifiedCadence()
+    class Google_Service_DLP_GooglePrivacyDlpV2DiscoveryCloudSqlGenerationCadence extends \Google\Service\DLP\GooglePrivacyDlpV2DiscoveryCloudSqlGenerationCadence
     {
     }
 }

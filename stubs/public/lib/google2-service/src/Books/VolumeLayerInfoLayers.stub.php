@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class VolumeLayerInfoLayers extends \Google\Model
-{
-    /**
-     * The layer id of this layer (e.g. "geo").
-     *
-     * @var string
-     */
-    public $layerId;
-    /**
-     * The current version of this layer's volume annotations. Note that this
-     * version applies only to the data in the books.layers.volumeAnnotations.*
-     * responses. The actual annotation data is versioned separately.
-     *
-     * @var string
-     */
-    public $volumeAnnotationsVersion;
-    /**
-     * The layer id of this layer (e.g. "geo").
-     *
-     * @param string $layerId
-     */
-    public function setLayerId($layerId)
+namespace Google\Service\Books {
+    class VolumeLayerInfoLayers extends \Google\Model
     {
+        /**
+         * The layer id of this layer (e.g. "geo").
+         *
+         * @var string
+         */
+        public $layerId;
+        /**
+         * The current version of this layer's volume annotations. Note that this
+         * version applies only to the data in the books.layers.volumeAnnotations.*
+         * responses. The actual annotation data is versioned separately.
+         *
+         * @var string
+         */
+        public $volumeAnnotationsVersion;
+        /**
+         * The layer id of this layer (e.g. "geo").
+         *
+         * @param string $layerId
+         */
+        public function setLayerId($layerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLayerId()
+        {
+        }
+        /**
+         * The current version of this layer's volume annotations. Note that this
+         * version applies only to the data in the books.layers.volumeAnnotations.*
+         * responses. The actual annotation data is versioned separately.
+         *
+         * @param string $volumeAnnotationsVersion
+         */
+        public function setVolumeAnnotationsVersion($volumeAnnotationsVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVolumeAnnotationsVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Books\VolumeLayerInfoLayers registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLayerId()
-    {
-    }
-    /**
-     * The current version of this layer's volume annotations. Note that this
-     * version applies only to the data in the books.layers.volumeAnnotations.*
-     * responses. The actual annotation data is versioned separately.
-     *
-     * @param string $volumeAnnotationsVersion
-     */
-    public function setVolumeAnnotationsVersion($volumeAnnotationsVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVolumeAnnotationsVersion()
+    class Google_Service_Books_VolumeLayerInfoLayers extends \Google\Service\Books\VolumeLayerInfoLayers
     {
     }
 }

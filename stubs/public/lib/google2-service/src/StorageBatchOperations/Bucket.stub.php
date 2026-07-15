@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\StorageBatchOperations;
-
-class Bucket extends \Google\Model
-{
-    /**
-     * Required. Bucket name for the objects to be transformed.
-     *
-     * @var string
-     */
-    public $bucket;
-    protected $manifestType = Manifest::class;
-    protected $manifestDataType = '';
-    protected $prefixListType = PrefixList::class;
-    protected $prefixListDataType = '';
-    /**
-     * Required. Bucket name for the objects to be transformed.
-     *
-     * @param string $bucket
-     */
-    public function setBucket($bucket)
+namespace Google\Service\StorageBatchOperations {
+    class Bucket extends \Google\Model
     {
+        /**
+         * Required. Bucket name for the objects to be transformed.
+         *
+         * @var string
+         */
+        public $bucket;
+        protected $manifestType = Manifest::class;
+        protected $manifestDataType = '';
+        protected $prefixListType = PrefixList::class;
+        protected $prefixListDataType = '';
+        /**
+         * Required. Bucket name for the objects to be transformed.
+         *
+         * @param string $bucket
+         */
+        public function setBucket($bucket)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBucket()
+        {
+        }
+        /**
+         * Specifies objects in a manifest file.
+         *
+         * @param Manifest $manifest
+         */
+        public function setManifest(Manifest $manifest)
+        {
+        }
+        /**
+         * @return Manifest
+         */
+        public function getManifest()
+        {
+        }
+        /**
+         * Specifies objects matching a prefix set.
+         *
+         * @param PrefixList $prefixList
+         */
+        public function setPrefixList(PrefixList $prefixList)
+        {
+        }
+        /**
+         * @return PrefixList
+         */
+        public function getPrefixList()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\StorageBatchOperations\Bucket registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBucket()
-    {
-    }
-    /**
-     * Specifies objects in a manifest file.
-     *
-     * @param Manifest $manifest
-     */
-    public function setManifest(Manifest $manifest)
-    {
-    }
-    /**
-     * @return Manifest
-     */
-    public function getManifest()
-    {
-    }
-    /**
-     * Specifies objects matching a prefix set.
-     *
-     * @param PrefixList $prefixList
-     */
-    public function setPrefixList(PrefixList $prefixList)
-    {
-    }
-    /**
-     * @return PrefixList
-     */
-    public function getPrefixList()
+    class Google_Service_StorageBatchOperations_Bucket extends \Google\Service\StorageBatchOperations\Bucket
     {
     }
 }

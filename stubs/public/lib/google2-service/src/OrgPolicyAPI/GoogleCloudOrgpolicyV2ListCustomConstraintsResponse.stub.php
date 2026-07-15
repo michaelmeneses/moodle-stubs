@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OrgPolicyAPI;
-
-class GoogleCloudOrgpolicyV2ListCustomConstraintsResponse extends \Google\Collection
-{
-    protected $collection_key = 'customConstraints';
-    protected $customConstraintsType = GoogleCloudOrgpolicyV2CustomConstraint::class;
-    protected $customConstraintsDataType = 'array';
-    /**
-     * Page token used to retrieve the next page. This is currently not used, but
-     * the server may at any point start supplying a valid token.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * All custom and managed constraints that exist on the organization resource.
-     * It will be empty if no custom constraints are set.
-     *
-     * @param GoogleCloudOrgpolicyV2CustomConstraint[] $customConstraints
-     */
-    public function setCustomConstraints($customConstraints)
+namespace Google\Service\OrgPolicyAPI {
+    class GoogleCloudOrgpolicyV2ListCustomConstraintsResponse extends \Google\Collection
     {
+        protected $collection_key = 'customConstraints';
+        protected $customConstraintsType = GoogleCloudOrgpolicyV2CustomConstraint::class;
+        protected $customConstraintsDataType = 'array';
+        /**
+         * Page token used to retrieve the next page. This is currently not used, but
+         * the server may at any point start supplying a valid token.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * All custom and managed constraints that exist on the organization resource.
+         * It will be empty if no custom constraints are set.
+         *
+         * @param GoogleCloudOrgpolicyV2CustomConstraint[] $customConstraints
+         */
+        public function setCustomConstraints($customConstraints)
+        {
+        }
+        /**
+         * @return GoogleCloudOrgpolicyV2CustomConstraint[]
+         */
+        public function getCustomConstraints()
+        {
+        }
+        /**
+         * Page token used to retrieve the next page. This is currently not used, but
+         * the server may at any point start supplying a valid token.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudOrgpolicyV2CustomConstraint[]
+     * Runtime class alias of \Google\Service\OrgPolicyAPI\GoogleCloudOrgpolicyV2ListCustomConstraintsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomConstraints()
-    {
-    }
-    /**
-     * Page token used to retrieve the next page. This is currently not used, but
-     * the server may at any point start supplying a valid token.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_OrgPolicyAPI_GoogleCloudOrgpolicyV2ListCustomConstraintsResponse extends \Google\Service\OrgPolicyAPI\GoogleCloudOrgpolicyV2ListCustomConstraintsResponse
     {
     }
 }

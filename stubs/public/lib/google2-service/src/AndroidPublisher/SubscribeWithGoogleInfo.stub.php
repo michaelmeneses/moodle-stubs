@@ -21,108 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class SubscribeWithGoogleInfo extends \Google\Model
-{
-    /**
-     * The email address of the user when the subscription was purchased.
-     *
-     * @var string
-     */
-    public $emailAddress;
-    /**
-     * The family name of the user when the subscription was purchased.
-     *
-     * @var string
-     */
-    public $familyName;
-    /**
-     * The given name of the user when the subscription was purchased.
-     *
-     * @var string
-     */
-    public $givenName;
-    /**
-     * The Google profile id of the user when the subscription was purchased.
-     *
-     * @var string
-     */
-    public $profileId;
-    /**
-     * The profile name of the user when the subscription was purchased.
-     *
-     * @var string
-     */
-    public $profileName;
-    /**
-     * The email address of the user when the subscription was purchased.
-     *
-     * @param string $emailAddress
-     */
-    public function setEmailAddress($emailAddress)
+namespace Google\Service\AndroidPublisher {
+    class SubscribeWithGoogleInfo extends \Google\Model
     {
+        /**
+         * The email address of the user when the subscription was purchased.
+         *
+         * @var string
+         */
+        public $emailAddress;
+        /**
+         * The family name of the user when the subscription was purchased.
+         *
+         * @var string
+         */
+        public $familyName;
+        /**
+         * The given name of the user when the subscription was purchased.
+         *
+         * @var string
+         */
+        public $givenName;
+        /**
+         * The Google profile id of the user when the subscription was purchased.
+         *
+         * @var string
+         */
+        public $profileId;
+        /**
+         * The profile name of the user when the subscription was purchased.
+         *
+         * @var string
+         */
+        public $profileName;
+        /**
+         * The email address of the user when the subscription was purchased.
+         *
+         * @param string $emailAddress
+         */
+        public function setEmailAddress($emailAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmailAddress()
+        {
+        }
+        /**
+         * The family name of the user when the subscription was purchased.
+         *
+         * @param string $familyName
+         */
+        public function setFamilyName($familyName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFamilyName()
+        {
+        }
+        /**
+         * The given name of the user when the subscription was purchased.
+         *
+         * @param string $givenName
+         */
+        public function setGivenName($givenName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGivenName()
+        {
+        }
+        /**
+         * The Google profile id of the user when the subscription was purchased.
+         *
+         * @param string $profileId
+         */
+        public function setProfileId($profileId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProfileId()
+        {
+        }
+        /**
+         * The profile name of the user when the subscription was purchased.
+         *
+         * @param string $profileName
+         */
+        public function setProfileName($profileName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProfileName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidPublisher\SubscribeWithGoogleInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmailAddress()
-    {
-    }
-    /**
-     * The family name of the user when the subscription was purchased.
-     *
-     * @param string $familyName
-     */
-    public function setFamilyName($familyName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFamilyName()
-    {
-    }
-    /**
-     * The given name of the user when the subscription was purchased.
-     *
-     * @param string $givenName
-     */
-    public function setGivenName($givenName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGivenName()
-    {
-    }
-    /**
-     * The Google profile id of the user when the subscription was purchased.
-     *
-     * @param string $profileId
-     */
-    public function setProfileId($profileId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProfileId()
-    {
-    }
-    /**
-     * The profile name of the user when the subscription was purchased.
-     *
-     * @param string $profileName
-     */
-    public function setProfileName($profileName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProfileName()
+    class Google_Service_AndroidPublisher_SubscribeWithGoogleInfo extends \Google\Service\AndroidPublisher\SubscribeWithGoogleInfo
     {
     }
 }

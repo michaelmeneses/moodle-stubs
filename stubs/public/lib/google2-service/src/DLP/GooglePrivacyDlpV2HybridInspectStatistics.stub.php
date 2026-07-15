@@ -21,78 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2HybridInspectStatistics extends \Google\Model
-{
-    /**
-     * The number of hybrid inspection requests aborted because the job ran out of
-     * quota or was ended before they could be processed.
-     *
-     * @var string
-     */
-    public $abortedCount;
-    /**
-     * The number of hybrid requests currently being processed. Only populated
-     * when called via method `getDlpJob`. A burst of traffic may cause hybrid
-     * inspect requests to be enqueued. Processing will take place as quickly as
-     * possible, but resource limitations may impact how long a request is
-     * enqueued for.
-     *
-     * @var string
-     */
-    public $pendingCount;
-    /**
-     * The number of hybrid inspection requests processed within this job.
-     *
-     * @var string
-     */
-    public $processedCount;
-    /**
-     * The number of hybrid inspection requests aborted because the job ran out of
-     * quota or was ended before they could be processed.
-     *
-     * @param string $abortedCount
-     */
-    public function setAbortedCount($abortedCount)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2HybridInspectStatistics extends \Google\Model
     {
+        /**
+         * The number of hybrid inspection requests aborted because the job ran out of
+         * quota or was ended before they could be processed.
+         *
+         * @var string
+         */
+        public $abortedCount;
+        /**
+         * The number of hybrid requests currently being processed. Only populated
+         * when called via method `getDlpJob`. A burst of traffic may cause hybrid
+         * inspect requests to be enqueued. Processing will take place as quickly as
+         * possible, but resource limitations may impact how long a request is
+         * enqueued for.
+         *
+         * @var string
+         */
+        public $pendingCount;
+        /**
+         * The number of hybrid inspection requests processed within this job.
+         *
+         * @var string
+         */
+        public $processedCount;
+        /**
+         * The number of hybrid inspection requests aborted because the job ran out of
+         * quota or was ended before they could be processed.
+         *
+         * @param string $abortedCount
+         */
+        public function setAbortedCount($abortedCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAbortedCount()
+        {
+        }
+        /**
+         * The number of hybrid requests currently being processed. Only populated
+         * when called via method `getDlpJob`. A burst of traffic may cause hybrid
+         * inspect requests to be enqueued. Processing will take place as quickly as
+         * possible, but resource limitations may impact how long a request is
+         * enqueued for.
+         *
+         * @param string $pendingCount
+         */
+        public function setPendingCount($pendingCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPendingCount()
+        {
+        }
+        /**
+         * The number of hybrid inspection requests processed within this job.
+         *
+         * @param string $processedCount
+         */
+        public function setProcessedCount($processedCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProcessedCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2HybridInspectStatistics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAbortedCount()
-    {
-    }
-    /**
-     * The number of hybrid requests currently being processed. Only populated
-     * when called via method `getDlpJob`. A burst of traffic may cause hybrid
-     * inspect requests to be enqueued. Processing will take place as quickly as
-     * possible, but resource limitations may impact how long a request is
-     * enqueued for.
-     *
-     * @param string $pendingCount
-     */
-    public function setPendingCount($pendingCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPendingCount()
-    {
-    }
-    /**
-     * The number of hybrid inspection requests processed within this job.
-     *
-     * @param string $processedCount
-     */
-    public function setProcessedCount($processedCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProcessedCount()
+    class Google_Service_DLP_GooglePrivacyDlpV2HybridInspectStatistics extends \Google\Service\DLP\GooglePrivacyDlpV2HybridInspectStatistics
     {
     }
 }

@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class Usersettings extends \Google\Model
-{
-    /**
-     * Resource type.
-     *
-     * @var string
-     */
-    public $kind;
-    protected $notesExportType = UsersettingsNotesExport::class;
-    protected $notesExportDataType = '';
-    protected $notificationType = UsersettingsNotification::class;
-    protected $notificationDataType = '';
-    /**
-     * Resource type.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Books {
+    class Usersettings extends \Google\Model
     {
+        /**
+         * Resource type.
+         *
+         * @var string
+         */
+        public $kind;
+        protected $notesExportType = UsersettingsNotesExport::class;
+        protected $notesExportDataType = '';
+        protected $notificationType = UsersettingsNotification::class;
+        protected $notificationDataType = '';
+        /**
+         * Resource type.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * User settings in sub-objects, each for different purposes.
+         *
+         * @param UsersettingsNotesExport $notesExport
+         */
+        public function setNotesExport(UsersettingsNotesExport $notesExport)
+        {
+        }
+        /**
+         * @return UsersettingsNotesExport
+         */
+        public function getNotesExport()
+        {
+        }
+        /**
+         * @param UsersettingsNotification $notification
+         */
+        public function setNotification(UsersettingsNotification $notification)
+        {
+        }
+        /**
+         * @return UsersettingsNotification
+         */
+        public function getNotification()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Books\Usersettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * User settings in sub-objects, each for different purposes.
-     *
-     * @param UsersettingsNotesExport $notesExport
-     */
-    public function setNotesExport(UsersettingsNotesExport $notesExport)
-    {
-    }
-    /**
-     * @return UsersettingsNotesExport
-     */
-    public function getNotesExport()
-    {
-    }
-    /**
-     * @param UsersettingsNotification $notification
-     */
-    public function setNotification(UsersettingsNotification $notification)
-    {
-    }
-    /**
-     * @return UsersettingsNotification
-     */
-    public function getNotification()
+    class Google_Service_Books_Usersettings extends \Google\Service\Books\Usersettings
     {
     }
 }

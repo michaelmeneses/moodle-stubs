@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class KeyValueTargetingExpression extends \Google\Model
-{
-    /**
-     * Keyword expression being targeted by the ad.
-     *
-     * @var string
-     */
-    public $expression;
-    /**
-     * Keyword expression being targeted by the ad.
-     *
-     * @param string $expression
-     */
-    public function setExpression($expression)
+namespace Google\Service\Dfareporting {
+    class KeyValueTargetingExpression extends \Google\Model
     {
+        /**
+         * Keyword expression being targeted by the ad.
+         *
+         * @var string
+         */
+        public $expression;
+        /**
+         * Keyword expression being targeted by the ad.
+         *
+         * @param string $expression
+         */
+        public function setExpression($expression)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpression()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\KeyValueTargetingExpression registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExpression()
+    class Google_Service_Dfareporting_KeyValueTargetingExpression extends \Google\Service\Dfareporting\KeyValueTargetingExpression
     {
     }
 }

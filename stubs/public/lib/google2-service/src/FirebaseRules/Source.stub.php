@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseRules;
-
-class Source extends \Google\Collection
-{
-    protected $collection_key = 'files';
-    protected $filesType = FirebaserulesFile::class;
-    protected $filesDataType = 'array';
-    /**
-     * Required. `File` set constituting the `Source` bundle.
-     *
-     * @param FirebaserulesFile[] $files
-     */
-    public function setFiles($files)
+namespace Google\Service\FirebaseRules {
+    class Source extends \Google\Collection
     {
+        protected $collection_key = 'files';
+        protected $filesType = FirebaserulesFile::class;
+        protected $filesDataType = 'array';
+        /**
+         * Required. `File` set constituting the `Source` bundle.
+         *
+         * @param FirebaserulesFile[] $files
+         */
+        public function setFiles($files)
+        {
+        }
+        /**
+         * @return FirebaserulesFile[]
+         */
+        public function getFiles()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FirebaserulesFile[]
+     * Runtime class alias of \Google\Service\FirebaseRules\Source registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFiles()
+    class Google_Service_FirebaseRules_Source extends \Google\Service\FirebaseRules\Source
     {
     }
 }

@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkServices;
-
-class WasmPluginUsedBy extends \Google\Model
-{
-    /**
-     * Output only. Full name of the resource https://google.aip.dev/122#full-
-     * resource-names, for example `//networkservices.googleapis.com/projects/{pro
-     * ject}/locations/{location}/lbRouteExtensions/{extension}`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. Full name of the resource https://google.aip.dev/122#full-
-     * resource-names, for example `//networkservices.googleapis.com/projects/{pro
-     * ject}/locations/{location}/lbRouteExtensions/{extension}`
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\NetworkServices {
+    class WasmPluginUsedBy extends \Google\Model
     {
+        /**
+         * Output only. Full name of the resource https://google.aip.dev/122#full-
+         * resource-names, for example `//networkservices.googleapis.com/projects/{pro
+         * ject}/locations/{location}/lbRouteExtensions/{extension}`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. Full name of the resource https://google.aip.dev/122#full-
+         * resource-names, for example `//networkservices.googleapis.com/projects/{pro
+         * ject}/locations/{location}/lbRouteExtensions/{extension}`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetworkServices\WasmPluginUsedBy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
+    class Google_Service_NetworkServices_WasmPluginUsedBy extends \Google\Service\NetworkServices\WasmPluginUsedBy
     {
     }
 }

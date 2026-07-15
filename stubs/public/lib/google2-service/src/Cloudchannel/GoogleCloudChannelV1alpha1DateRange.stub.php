@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1alpha1DateRange extends \Google\Model
-{
-    protected $invoiceEndDateType = GoogleTypeDate::class;
-    protected $invoiceEndDateDataType = '';
-    protected $invoiceStartDateType = GoogleTypeDate::class;
-    protected $invoiceStartDateDataType = '';
-    protected $usageEndDateTimeType = GoogleTypeDateTime::class;
-    protected $usageEndDateTimeDataType = '';
-    protected $usageStartDateTimeType = GoogleTypeDateTime::class;
-    protected $usageStartDateTimeDataType = '';
-    /**
-     * The latest invoice date (inclusive). If this value is not the last day of a
-     * month, this will move it forward to the last day of the given month.
-     *
-     * @param GoogleTypeDate $invoiceEndDate
-     */
-    public function setInvoiceEndDate(GoogleTypeDate $invoiceEndDate)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1alpha1DateRange extends \Google\Model
     {
+        protected $invoiceEndDateType = GoogleTypeDate::class;
+        protected $invoiceEndDateDataType = '';
+        protected $invoiceStartDateType = GoogleTypeDate::class;
+        protected $invoiceStartDateDataType = '';
+        protected $usageEndDateTimeType = GoogleTypeDateTime::class;
+        protected $usageEndDateTimeDataType = '';
+        protected $usageStartDateTimeType = GoogleTypeDateTime::class;
+        protected $usageStartDateTimeDataType = '';
+        /**
+         * The latest invoice date (inclusive). If this value is not the last day of a
+         * month, this will move it forward to the last day of the given month.
+         *
+         * @param GoogleTypeDate $invoiceEndDate
+         */
+        public function setInvoiceEndDate(GoogleTypeDate $invoiceEndDate)
+        {
+        }
+        /**
+         * @return GoogleTypeDate
+         */
+        public function getInvoiceEndDate()
+        {
+        }
+        /**
+         * The earliest invoice date (inclusive). If this value is not the first day
+         * of a month, this will move it back to the first day of the given month.
+         *
+         * @param GoogleTypeDate $invoiceStartDate
+         */
+        public function setInvoiceStartDate(GoogleTypeDate $invoiceStartDate)
+        {
+        }
+        /**
+         * @return GoogleTypeDate
+         */
+        public function getInvoiceStartDate()
+        {
+        }
+        /**
+         * The latest usage date time (exclusive). If you use time groupings (daily,
+         * weekly, etc), each group uses midnight to midnight (Pacific time). The
+         * usage end date is rounded down to include all usage from the specified
+         * date. We recommend that clients pass `usage_start_date_time` in Pacific
+         * time.
+         *
+         * @param GoogleTypeDateTime $usageEndDateTime
+         */
+        public function setUsageEndDateTime(GoogleTypeDateTime $usageEndDateTime)
+        {
+        }
+        /**
+         * @return GoogleTypeDateTime
+         */
+        public function getUsageEndDateTime()
+        {
+        }
+        /**
+         * The earliest usage date time (inclusive). If you use time groupings (daily,
+         * weekly, etc), each group uses midnight to midnight (Pacific time). The
+         * usage start date is rounded down to include all usage from the specified
+         * date. We recommend that clients pass `usage_start_date_time` in Pacific
+         * time.
+         *
+         * @param GoogleTypeDateTime $usageStartDateTime
+         */
+        public function setUsageStartDateTime(GoogleTypeDateTime $usageStartDateTime)
+        {
+        }
+        /**
+         * @return GoogleTypeDateTime
+         */
+        public function getUsageStartDateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleTypeDate
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1alpha1DateRange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInvoiceEndDate()
-    {
-    }
-    /**
-     * The earliest invoice date (inclusive). If this value is not the first day
-     * of a month, this will move it back to the first day of the given month.
-     *
-     * @param GoogleTypeDate $invoiceStartDate
-     */
-    public function setInvoiceStartDate(GoogleTypeDate $invoiceStartDate)
-    {
-    }
-    /**
-     * @return GoogleTypeDate
-     */
-    public function getInvoiceStartDate()
-    {
-    }
-    /**
-     * The latest usage date time (exclusive). If you use time groupings (daily,
-     * weekly, etc), each group uses midnight to midnight (Pacific time). The
-     * usage end date is rounded down to include all usage from the specified
-     * date. We recommend that clients pass `usage_start_date_time` in Pacific
-     * time.
-     *
-     * @param GoogleTypeDateTime $usageEndDateTime
-     */
-    public function setUsageEndDateTime(GoogleTypeDateTime $usageEndDateTime)
-    {
-    }
-    /**
-     * @return GoogleTypeDateTime
-     */
-    public function getUsageEndDateTime()
-    {
-    }
-    /**
-     * The earliest usage date time (inclusive). If you use time groupings (daily,
-     * weekly, etc), each group uses midnight to midnight (Pacific time). The
-     * usage start date is rounded down to include all usage from the specified
-     * date. We recommend that clients pass `usage_start_date_time` in Pacific
-     * time.
-     *
-     * @param GoogleTypeDateTime $usageStartDateTime
-     */
-    public function setUsageStartDateTime(GoogleTypeDateTime $usageStartDateTime)
-    {
-    }
-    /**
-     * @return GoogleTypeDateTime
-     */
-    public function getUsageStartDateTime()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1alpha1DateRange extends \Google\Service\Cloudchannel\GoogleCloudChannelV1alpha1DateRange
     {
     }
 }

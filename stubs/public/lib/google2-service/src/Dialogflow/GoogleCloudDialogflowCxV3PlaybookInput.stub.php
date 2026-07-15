@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3PlaybookInput extends \Google\Model
-{
-    /**
-     * Optional. Summary string of the preceding conversation for the child
-     * playbook invocation.
-     *
-     * @var string
-     */
-    public $precedingConversationSummary;
-    /**
-     * Optional. Summary string of the preceding conversation for the child
-     * playbook invocation.
-     *
-     * @param string $precedingConversationSummary
-     */
-    public function setPrecedingConversationSummary($precedingConversationSummary)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3PlaybookInput extends \Google\Model
     {
+        /**
+         * Optional. Summary string of the preceding conversation for the child
+         * playbook invocation.
+         *
+         * @var string
+         */
+        public $precedingConversationSummary;
+        /**
+         * Optional. Summary string of the preceding conversation for the child
+         * playbook invocation.
+         *
+         * @param string $precedingConversationSummary
+         */
+        public function setPrecedingConversationSummary($precedingConversationSummary)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrecedingConversationSummary()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3PlaybookInput registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPrecedingConversationSummary()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3PlaybookInput extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3PlaybookInput
     {
     }
 }

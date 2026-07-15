@@ -8,6 +8,16 @@
  */
 namespace GuzzleHttp\Handler;
 
+use GuzzleHttp\Exception\ConnectException;
+use GuzzleHttp\Exception\RequestException;
+use GuzzleHttp\Promise as P;
+use GuzzleHttp\Promise\FulfilledPromise;
+use GuzzleHttp\Promise\PromiseInterface;
+use GuzzleHttp\Psr7\LazyOpenStream;
+use GuzzleHttp\TransferStats;
+use GuzzleHttp\Utils;
+use Psr\Http\Message\RequestInterface;
+use Psr\Http\Message\UriInterface;
 /**
  * Creates curl resources from a request
  *

@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class ListLogicalViewsResponse extends \Google\Collection
-{
-    protected $collection_key = 'logicalViews';
-    protected $logicalViewsType = LogicalView::class;
-    protected $logicalViewsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of requested logical views.
-     *
-     * @param LogicalView[] $logicalViews
-     */
-    public function setLogicalViews($logicalViews)
+namespace Google\Service\BigtableAdmin {
+    class ListLogicalViewsResponse extends \Google\Collection
     {
+        protected $collection_key = 'logicalViews';
+        protected $logicalViewsType = LogicalView::class;
+        protected $logicalViewsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of requested logical views.
+         *
+         * @param LogicalView[] $logicalViews
+         */
+        public function setLogicalViews($logicalViews)
+        {
+        }
+        /**
+         * @return LogicalView[]
+         */
+        public function getLogicalViews()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LogicalView[]
+     * Runtime class alias of \Google\Service\BigtableAdmin\ListLogicalViewsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLogicalViews()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_BigtableAdmin_ListLogicalViewsResponse extends \Google\Service\BigtableAdmin\ListLogicalViewsResponse
     {
     }
 }

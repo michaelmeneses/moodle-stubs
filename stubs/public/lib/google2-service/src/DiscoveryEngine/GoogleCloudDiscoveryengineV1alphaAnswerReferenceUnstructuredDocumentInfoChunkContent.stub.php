@@ -21,95 +21,104 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaAnswerReferenceUnstructuredDocumentInfoChunkContent extends \Google\Collection
-{
-    protected $collection_key = 'blobAttachmentIndexes';
-    /**
-     * Output only. Stores indexes of blobattachments linked to this chunk.
-     *
-     * @var string[]
-     */
-    public $blobAttachmentIndexes;
-    /**
-     * Chunk textual content.
-     *
-     * @var string
-     */
-    public $content;
-    /**
-     * Page identifier.
-     *
-     * @var string
-     */
-    public $pageIdentifier;
-    /**
-     * The relevance of the chunk for a given query. Values range from 0.0
-     * (completely irrelevant) to 1.0 (completely relevant). This value is for
-     * informational purpose only. It may change for the same query and chunk at
-     * any time due to a model retraining or change in implementation.
-     *
-     * @var float
-     */
-    public $relevanceScore;
-    /**
-     * Output only. Stores indexes of blobattachments linked to this chunk.
-     *
-     * @param string[] $blobAttachmentIndexes
-     */
-    public function setBlobAttachmentIndexes($blobAttachmentIndexes)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaAnswerReferenceUnstructuredDocumentInfoChunkContent extends \Google\Collection
     {
+        protected $collection_key = 'blobAttachmentIndexes';
+        /**
+         * Output only. Stores indexes of blobattachments linked to this chunk.
+         *
+         * @var string[]
+         */
+        public $blobAttachmentIndexes;
+        /**
+         * Chunk textual content.
+         *
+         * @var string
+         */
+        public $content;
+        /**
+         * Page identifier.
+         *
+         * @var string
+         */
+        public $pageIdentifier;
+        /**
+         * The relevance of the chunk for a given query. Values range from 0.0
+         * (completely irrelevant) to 1.0 (completely relevant). This value is for
+         * informational purpose only. It may change for the same query and chunk at
+         * any time due to a model retraining or change in implementation.
+         *
+         * @var float
+         */
+        public $relevanceScore;
+        /**
+         * Output only. Stores indexes of blobattachments linked to this chunk.
+         *
+         * @param string[] $blobAttachmentIndexes
+         */
+        public function setBlobAttachmentIndexes($blobAttachmentIndexes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getBlobAttachmentIndexes()
+        {
+        }
+        /**
+         * Chunk textual content.
+         *
+         * @param string $content
+         */
+        public function setContent($content)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContent()
+        {
+        }
+        /**
+         * Page identifier.
+         *
+         * @param string $pageIdentifier
+         */
+        public function setPageIdentifier($pageIdentifier)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPageIdentifier()
+        {
+        }
+        /**
+         * The relevance of the chunk for a given query. Values range from 0.0
+         * (completely irrelevant) to 1.0 (completely relevant). This value is for
+         * informational purpose only. It may change for the same query and chunk at
+         * any time due to a model retraining or change in implementation.
+         *
+         * @param float $relevanceScore
+         */
+        public function setRelevanceScore($relevanceScore)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getRelevanceScore()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaAnswerReferenceUnstructuredDocumentInfoChunkContent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBlobAttachmentIndexes()
-    {
-    }
-    /**
-     * Chunk textual content.
-     *
-     * @param string $content
-     */
-    public function setContent($content)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContent()
-    {
-    }
-    /**
-     * Page identifier.
-     *
-     * @param string $pageIdentifier
-     */
-    public function setPageIdentifier($pageIdentifier)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPageIdentifier()
-    {
-    }
-    /**
-     * The relevance of the chunk for a given query. Values range from 0.0
-     * (completely irrelevant) to 1.0 (completely relevant). This value is for
-     * informational purpose only. It may change for the same query and chunk at
-     * any time due to a model retraining or change in implementation.
-     *
-     * @param float $relevanceScore
-     */
-    public function setRelevanceScore($relevanceScore)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getRelevanceScore()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaAnswerReferenceUnstructuredDocumentInfoChunkContent extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaAnswerReferenceUnstructuredDocumentInfoChunkContent
     {
     }
 }

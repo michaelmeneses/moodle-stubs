@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkflowExecutions;
-
-class StackTraceElement extends \Google\Model
-{
-    protected $positionType = Position::class;
-    protected $positionDataType = '';
-    /**
-     * The routine where the error occurred.
-     *
-     * @var string
-     */
-    public $routine;
-    /**
-     * The step the error occurred at.
-     *
-     * @var string
-     */
-    public $step;
-    /**
-     * The source position information of the stack trace element.
-     *
-     * @param Position $position
-     */
-    public function setPosition(Position $position)
+namespace Google\Service\WorkflowExecutions {
+    class StackTraceElement extends \Google\Model
     {
+        protected $positionType = Position::class;
+        protected $positionDataType = '';
+        /**
+         * The routine where the error occurred.
+         *
+         * @var string
+         */
+        public $routine;
+        /**
+         * The step the error occurred at.
+         *
+         * @var string
+         */
+        public $step;
+        /**
+         * The source position information of the stack trace element.
+         *
+         * @param Position $position
+         */
+        public function setPosition(Position $position)
+        {
+        }
+        /**
+         * @return Position
+         */
+        public function getPosition()
+        {
+        }
+        /**
+         * The routine where the error occurred.
+         *
+         * @param string $routine
+         */
+        public function setRoutine($routine)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRoutine()
+        {
+        }
+        /**
+         * The step the error occurred at.
+         *
+         * @param string $step
+         */
+        public function setStep($step)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStep()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Position
+     * Runtime class alias of \Google\Service\WorkflowExecutions\StackTraceElement registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPosition()
-    {
-    }
-    /**
-     * The routine where the error occurred.
-     *
-     * @param string $routine
-     */
-    public function setRoutine($routine)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRoutine()
-    {
-    }
-    /**
-     * The step the error occurred at.
-     *
-     * @param string $step
-     */
-    public function setStep($step)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStep()
+    class Google_Service_WorkflowExecutions_StackTraceElement extends \Google\Service\WorkflowExecutions\StackTraceElement
     {
     }
 }

@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Translate;
-
-class ReferenceSentenceConfig extends \Google\Collection
-{
-    protected $collection_key = 'referenceSentencePairLists';
-    protected $referenceSentencePairListsType = ReferenceSentencePairList::class;
-    protected $referenceSentencePairListsDataType = 'array';
-    /**
-     * Source language code.
-     *
-     * @var string
-     */
-    public $sourceLanguageCode;
-    /**
-     * Target language code.
-     *
-     * @var string
-     */
-    public $targetLanguageCode;
-    /**
-     * Reference sentences pair lists. Each list will be used as the references to
-     * translate the sentence under "content" field at the corresponding index.
-     * Length of the list is required to be equal to the length of "content"
-     * field.
-     *
-     * @param ReferenceSentencePairList[] $referenceSentencePairLists
-     */
-    public function setReferenceSentencePairLists($referenceSentencePairLists)
+namespace Google\Service\Translate {
+    class ReferenceSentenceConfig extends \Google\Collection
     {
+        protected $collection_key = 'referenceSentencePairLists';
+        protected $referenceSentencePairListsType = ReferenceSentencePairList::class;
+        protected $referenceSentencePairListsDataType = 'array';
+        /**
+         * Source language code.
+         *
+         * @var string
+         */
+        public $sourceLanguageCode;
+        /**
+         * Target language code.
+         *
+         * @var string
+         */
+        public $targetLanguageCode;
+        /**
+         * Reference sentences pair lists. Each list will be used as the references to
+         * translate the sentence under "content" field at the corresponding index.
+         * Length of the list is required to be equal to the length of "content"
+         * field.
+         *
+         * @param ReferenceSentencePairList[] $referenceSentencePairLists
+         */
+        public function setReferenceSentencePairLists($referenceSentencePairLists)
+        {
+        }
+        /**
+         * @return ReferenceSentencePairList[]
+         */
+        public function getReferenceSentencePairLists()
+        {
+        }
+        /**
+         * Source language code.
+         *
+         * @param string $sourceLanguageCode
+         */
+        public function setSourceLanguageCode($sourceLanguageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceLanguageCode()
+        {
+        }
+        /**
+         * Target language code.
+         *
+         * @param string $targetLanguageCode
+         */
+        public function setTargetLanguageCode($targetLanguageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetLanguageCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ReferenceSentencePairList[]
+     * Runtime class alias of \Google\Service\Translate\ReferenceSentenceConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReferenceSentencePairLists()
-    {
-    }
-    /**
-     * Source language code.
-     *
-     * @param string $sourceLanguageCode
-     */
-    public function setSourceLanguageCode($sourceLanguageCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourceLanguageCode()
-    {
-    }
-    /**
-     * Target language code.
-     *
-     * @param string $targetLanguageCode
-     */
-    public function setTargetLanguageCode($targetLanguageCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetLanguageCode()
+    class Google_Service_Translate_ReferenceSentenceConfig extends \Google\Service\Translate\ReferenceSentenceConfig
     {
     }
 }

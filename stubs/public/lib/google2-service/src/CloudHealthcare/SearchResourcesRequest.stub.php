@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class SearchResourcesRequest extends \Google\Model
-{
-    /**
-     * Optional. The FHIR resource type to search, such as Patient or Observation.
-     * For a complete list, see the FHIR Resource Index
-     * ([DSTU2](https://hl7.org/fhir/DSTU2/resourcelist.html),
-     * [STU3](https://hl7.org/fhir/STU3/resourcelist.html),
-     * [R4](https://hl7.org/fhir/R4/resourcelist.html)),
-     * [R5](https://hl7.org/fhir/R5/resourcelist.html)).
-     *
-     * @var string
-     */
-    public $resourceType;
-    /**
-     * Optional. The FHIR resource type to search, such as Patient or Observation.
-     * For a complete list, see the FHIR Resource Index
-     * ([DSTU2](https://hl7.org/fhir/DSTU2/resourcelist.html),
-     * [STU3](https://hl7.org/fhir/STU3/resourcelist.html),
-     * [R4](https://hl7.org/fhir/R4/resourcelist.html)),
-     * [R5](https://hl7.org/fhir/R5/resourcelist.html)).
-     *
-     * @param string $resourceType
-     */
-    public function setResourceType($resourceType)
+namespace Google\Service\CloudHealthcare {
+    class SearchResourcesRequest extends \Google\Model
     {
+        /**
+         * Optional. The FHIR resource type to search, such as Patient or Observation.
+         * For a complete list, see the FHIR Resource Index
+         * ([DSTU2](https://hl7.org/fhir/DSTU2/resourcelist.html),
+         * [STU3](https://hl7.org/fhir/STU3/resourcelist.html),
+         * [R4](https://hl7.org/fhir/R4/resourcelist.html)),
+         * [R5](https://hl7.org/fhir/R5/resourcelist.html)).
+         *
+         * @var string
+         */
+        public $resourceType;
+        /**
+         * Optional. The FHIR resource type to search, such as Patient or Observation.
+         * For a complete list, see the FHIR Resource Index
+         * ([DSTU2](https://hl7.org/fhir/DSTU2/resourcelist.html),
+         * [STU3](https://hl7.org/fhir/STU3/resourcelist.html),
+         * [R4](https://hl7.org/fhir/R4/resourcelist.html)),
+         * [R5](https://hl7.org/fhir/R5/resourcelist.html)).
+         *
+         * @param string $resourceType
+         */
+        public function setResourceType($resourceType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudHealthcare\SearchResourcesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResourceType()
+    class Google_Service_CloudHealthcare_SearchResourcesRequest extends \Google\Service\CloudHealthcare\SearchResourcesRequest
     {
     }
 }

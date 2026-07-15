@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SearchConsole\Resource;
-
-/**
- * The "urlInspection" collection of methods.
- * Typical usage is:
- *  <code>
- *   $searchconsoleService = new Google\Service\SearchConsole(...);
- *   $urlInspection = $searchconsoleService->urlInspection;
- *  </code>
- */
-class UrlInspection extends \Google\Service\Resource
-{
+namespace Google\Service\SearchConsole\Resource {
+    /**
+     * The "urlInspection" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $searchconsoleService = new Google\Service\SearchConsole(...);
+     *   $urlInspection = $searchconsoleService->urlInspection;
+     *  </code>
+     */
+    class UrlInspection extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\SearchConsole\Resource\UrlInspection registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_SearchConsole_Resource_UrlInspection extends \Google\Service\SearchConsole\Resource\UrlInspection
+    {
+    }
 }

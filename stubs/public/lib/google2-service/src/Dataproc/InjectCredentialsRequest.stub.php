@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class InjectCredentialsRequest extends \Google\Model
-{
-    /**
-     * Required. The cluster UUID.
-     *
-     * @var string
-     */
-    public $clusterUuid;
-    /**
-     * Required. The encrypted credentials being injected in to the cluster.The
-     * client is responsible for encrypting the credentials in a way that is
-     * supported by the cluster.A wrapped value is used here so that the actual
-     * contents of the encrypted credentials are not written to audit logs.
-     *
-     * @var string
-     */
-    public $credentialsCiphertext;
-    /**
-     * Required. The cluster UUID.
-     *
-     * @param string $clusterUuid
-     */
-    public function setClusterUuid($clusterUuid)
+namespace Google\Service\Dataproc {
+    class InjectCredentialsRequest extends \Google\Model
     {
+        /**
+         * Required. The cluster UUID.
+         *
+         * @var string
+         */
+        public $clusterUuid;
+        /**
+         * Required. The encrypted credentials being injected in to the cluster.The
+         * client is responsible for encrypting the credentials in a way that is
+         * supported by the cluster.A wrapped value is used here so that the actual
+         * contents of the encrypted credentials are not written to audit logs.
+         *
+         * @var string
+         */
+        public $credentialsCiphertext;
+        /**
+         * Required. The cluster UUID.
+         *
+         * @param string $clusterUuid
+         */
+        public function setClusterUuid($clusterUuid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClusterUuid()
+        {
+        }
+        /**
+         * Required. The encrypted credentials being injected in to the cluster.The
+         * client is responsible for encrypting the credentials in a way that is
+         * supported by the cluster.A wrapped value is used here so that the actual
+         * contents of the encrypted credentials are not written to audit logs.
+         *
+         * @param string $credentialsCiphertext
+         */
+        public function setCredentialsCiphertext($credentialsCiphertext)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCredentialsCiphertext()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\InjectCredentialsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClusterUuid()
-    {
-    }
-    /**
-     * Required. The encrypted credentials being injected in to the cluster.The
-     * client is responsible for encrypting the credentials in a way that is
-     * supported by the cluster.A wrapped value is used here so that the actual
-     * contents of the encrypted credentials are not written to audit logs.
-     *
-     * @param string $credentialsCiphertext
-     */
-    public function setCredentialsCiphertext($credentialsCiphertext)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCredentialsCiphertext()
+    class Google_Service_Dataproc_InjectCredentialsRequest extends \Google\Service\Dataproc\InjectCredentialsRequest
     {
     }
 }

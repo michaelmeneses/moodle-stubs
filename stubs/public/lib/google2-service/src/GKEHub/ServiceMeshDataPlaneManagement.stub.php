@@ -21,89 +21,98 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class ServiceMeshDataPlaneManagement extends \Google\Collection
-{
-    /**
-     * Unspecified
-     */
-    public const STATE_LIFECYCLE_STATE_UNSPECIFIED = 'LIFECYCLE_STATE_UNSPECIFIED';
-    /**
-     * DISABLED means that the component is not enabled.
-     */
-    public const STATE_DISABLED = 'DISABLED';
-    /**
-     * FAILED_PRECONDITION means that provisioning cannot proceed because of some
-     * characteristic of the member cluster.
-     */
-    public const STATE_FAILED_PRECONDITION = 'FAILED_PRECONDITION';
-    /**
-     * PROVISIONING means that provisioning is in progress.
-     */
-    public const STATE_PROVISIONING = 'PROVISIONING';
-    /**
-     * ACTIVE means that the component is ready for use.
-     */
-    public const STATE_ACTIVE = 'ACTIVE';
-    /**
-     * STALLED means that provisioning could not be done.
-     */
-    public const STATE_STALLED = 'STALLED';
-    /**
-     * NEEDS_ATTENTION means that the component is ready, but some user
-     * intervention is required. (For example that the user should migrate
-     * workloads to a new control plane revision.)
-     */
-    public const STATE_NEEDS_ATTENTION = 'NEEDS_ATTENTION';
-    /**
-     * DEGRADED means that the component is ready, but operating in a degraded
-     * state.
-     */
-    public const STATE_DEGRADED = 'DEGRADED';
-    /**
-     * DEPROVISIONING means that deprovisioning is in progress.
-     */
-    public const STATE_DEPROVISIONING = 'DEPROVISIONING';
-    protected $collection_key = 'details';
-    protected $detailsType = ServiceMeshStatusDetails::class;
-    protected $detailsDataType = 'array';
-    /**
-     * Lifecycle status of data plane management.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Explanation of the status.
-     *
-     * @param ServiceMeshStatusDetails[] $details
-     */
-    public function setDetails($details)
+namespace Google\Service\GKEHub {
+    class ServiceMeshDataPlaneManagement extends \Google\Collection
     {
+        /**
+         * Unspecified
+         */
+        public const STATE_LIFECYCLE_STATE_UNSPECIFIED = 'LIFECYCLE_STATE_UNSPECIFIED';
+        /**
+         * DISABLED means that the component is not enabled.
+         */
+        public const STATE_DISABLED = 'DISABLED';
+        /**
+         * FAILED_PRECONDITION means that provisioning cannot proceed because of some
+         * characteristic of the member cluster.
+         */
+        public const STATE_FAILED_PRECONDITION = 'FAILED_PRECONDITION';
+        /**
+         * PROVISIONING means that provisioning is in progress.
+         */
+        public const STATE_PROVISIONING = 'PROVISIONING';
+        /**
+         * ACTIVE means that the component is ready for use.
+         */
+        public const STATE_ACTIVE = 'ACTIVE';
+        /**
+         * STALLED means that provisioning could not be done.
+         */
+        public const STATE_STALLED = 'STALLED';
+        /**
+         * NEEDS_ATTENTION means that the component is ready, but some user
+         * intervention is required. (For example that the user should migrate
+         * workloads to a new control plane revision.)
+         */
+        public const STATE_NEEDS_ATTENTION = 'NEEDS_ATTENTION';
+        /**
+         * DEGRADED means that the component is ready, but operating in a degraded
+         * state.
+         */
+        public const STATE_DEGRADED = 'DEGRADED';
+        /**
+         * DEPROVISIONING means that deprovisioning is in progress.
+         */
+        public const STATE_DEPROVISIONING = 'DEPROVISIONING';
+        protected $collection_key = 'details';
+        protected $detailsType = ServiceMeshStatusDetails::class;
+        protected $detailsDataType = 'array';
+        /**
+         * Lifecycle status of data plane management.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Explanation of the status.
+         *
+         * @param ServiceMeshStatusDetails[] $details
+         */
+        public function setDetails($details)
+        {
+        }
+        /**
+         * @return ServiceMeshStatusDetails[]
+         */
+        public function getDetails()
+        {
+        }
+        /**
+         * Lifecycle status of data plane management.
+         *
+         * Accepted values: LIFECYCLE_STATE_UNSPECIFIED, DISABLED,
+         * FAILED_PRECONDITION, PROVISIONING, ACTIVE, STALLED, NEEDS_ATTENTION,
+         * DEGRADED, DEPROVISIONING
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ServiceMeshStatusDetails[]
+     * Runtime class alias of \Google\Service\GKEHub\ServiceMeshDataPlaneManagement registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDetails()
-    {
-    }
-    /**
-     * Lifecycle status of data plane management.
-     *
-     * Accepted values: LIFECYCLE_STATE_UNSPECIFIED, DISABLED,
-     * FAILED_PRECONDITION, PROVISIONING, ACTIVE, STALLED, NEEDS_ATTENTION,
-     * DEGRADED, DEPROVISIONING
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
+    class Google_Service_GKEHub_ServiceMeshDataPlaneManagement extends \Google\Service\GKEHub\ServiceMeshDataPlaneManagement
     {
     }
 }

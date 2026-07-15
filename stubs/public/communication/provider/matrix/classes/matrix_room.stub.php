@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace communication_matrix;
 
+use stdClass;
 /**
  * Class to manage the updates to the room information in db.
  *

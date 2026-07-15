@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1betaProvisionAccountTicketRequest extends \Google\Model
-{
-    protected $accountType = GoogleAnalyticsAdminV1betaAccount::class;
-    protected $accountDataType = '';
-    /**
-     * Redirect URI where the user will be sent after accepting Terms of Service.
-     * Must be configured in Cloud Console as a Redirect URI.
-     *
-     * @var string
-     */
-    public $redirectUri;
-    /**
-     * The account to create.
-     *
-     * @param GoogleAnalyticsAdminV1betaAccount $account
-     */
-    public function setAccount(GoogleAnalyticsAdminV1betaAccount $account)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1betaProvisionAccountTicketRequest extends \Google\Model
     {
+        protected $accountType = GoogleAnalyticsAdminV1betaAccount::class;
+        protected $accountDataType = '';
+        /**
+         * Redirect URI where the user will be sent after accepting Terms of Service.
+         * Must be configured in Cloud Console as a Redirect URI.
+         *
+         * @var string
+         */
+        public $redirectUri;
+        /**
+         * The account to create.
+         *
+         * @param GoogleAnalyticsAdminV1betaAccount $account
+         */
+        public function setAccount(GoogleAnalyticsAdminV1betaAccount $account)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1betaAccount
+         */
+        public function getAccount()
+        {
+        }
+        /**
+         * Redirect URI where the user will be sent after accepting Terms of Service.
+         * Must be configured in Cloud Console as a Redirect URI.
+         *
+         * @param string $redirectUri
+         */
+        public function setRedirectUri($redirectUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRedirectUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAnalyticsAdminV1betaAccount
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaProvisionAccountTicketRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccount()
-    {
-    }
-    /**
-     * Redirect URI where the user will be sent after accepting Terms of Service.
-     * Must be configured in Cloud Console as a Redirect URI.
-     *
-     * @param string $redirectUri
-     */
-    public function setRedirectUri($redirectUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRedirectUri()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1betaProvisionAccountTicketRequest extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaProvisionAccountTicketRequest
     {
     }
 }

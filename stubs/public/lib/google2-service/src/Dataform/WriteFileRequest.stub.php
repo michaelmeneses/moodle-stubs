@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataform;
-
-class WriteFileRequest extends \Google\Model
-{
-    /**
-     * Required. The file's contents.
-     *
-     * @var string
-     */
-    public $contents;
-    /**
-     * Required. The file.
-     *
-     * @var string
-     */
-    public $path;
-    /**
-     * Required. The file's contents.
-     *
-     * @param string $contents
-     */
-    public function setContents($contents)
+namespace Google\Service\Dataform {
+    class WriteFileRequest extends \Google\Model
     {
+        /**
+         * Required. The file's contents.
+         *
+         * @var string
+         */
+        public $contents;
+        /**
+         * Required. The file.
+         *
+         * @var string
+         */
+        public $path;
+        /**
+         * Required. The file's contents.
+         *
+         * @param string $contents
+         */
+        public function setContents($contents)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContents()
+        {
+        }
+        /**
+         * Required. The file.
+         *
+         * @param string $path
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataform\WriteFileRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContents()
-    {
-    }
-    /**
-     * Required. The file.
-     *
-     * @param string $path
-     */
-    public function setPath($path)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPath()
+    class Google_Service_Dataform_WriteFileRequest extends \Google\Service\Dataform\WriteFileRequest
     {
     }
 }

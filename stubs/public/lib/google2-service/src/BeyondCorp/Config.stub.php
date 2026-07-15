@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BeyondCorp;
-
-class Config extends \Google\Collection
-{
-    protected $collection_key = 'destinationRoutes';
-    protected $destinationRoutesType = DestinationRoute::class;
-    protected $destinationRoutesDataType = 'array';
-    /**
-     * @var string
-     */
-    public $transportProtocol;
-    /**
-     * @param DestinationRoute[]
-     */
-    public function setDestinationRoutes($destinationRoutes)
+namespace Google\Service\BeyondCorp {
+    class Config extends \Google\Collection
     {
+        protected $collection_key = 'destinationRoutes';
+        protected $destinationRoutesType = DestinationRoute::class;
+        protected $destinationRoutesDataType = 'array';
+        /**
+         * @var string
+         */
+        public $transportProtocol;
+        /**
+         * @param DestinationRoute[]
+         */
+        public function setDestinationRoutes($destinationRoutes)
+        {
+        }
+        /**
+         * @return DestinationRoute[]
+         */
+        public function getDestinationRoutes()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTransportProtocol($transportProtocol)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTransportProtocol()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DestinationRoute[]
+     * Runtime class alias of \Google\Service\BeyondCorp\Config registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDestinationRoutes()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTransportProtocol($transportProtocol)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTransportProtocol()
+    class Google_Service_BeyondCorp_Config extends \Google\Service\BeyondCorp\Config
     {
     }
 }

@@ -21,154 +21,163 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class IdentityServiceAzureADConfig extends \Google\Model
-{
-    /**
-     * ID for the registered client application that makes authentication requests
-     * to the Azure AD identity provider.
-     *
-     * @var string
-     */
-    public $clientId;
-    /**
-     * Input only. Unencrypted AzureAD client secret will be passed to the GKE Hub
-     * CLH.
-     *
-     * @var string
-     */
-    public $clientSecret;
-    /**
-     * Output only. Encrypted AzureAD client secret.
-     *
-     * @var string
-     */
-    public $encryptedClientSecret;
-    /**
-     * Optional. Format of the AzureAD groups that the client wants for auth.
-     *
-     * @var string
-     */
-    public $groupFormat;
-    /**
-     * The redirect URL that kubectl uses for authorization.
-     *
-     * @var string
-     */
-    public $kubectlRedirectUri;
-    /**
-     * Kind of Azure AD account to be authenticated. Supported values are or for
-     * accounts belonging to a specific tenant.
-     *
-     * @var string
-     */
-    public $tenant;
-    /**
-     * Optional. Claim in the AzureAD ID Token that holds the user details.
-     *
-     * @var string
-     */
-    public $userClaim;
-    /**
-     * ID for the registered client application that makes authentication requests
-     * to the Azure AD identity provider.
-     *
-     * @param string $clientId
-     */
-    public function setClientId($clientId)
+namespace Google\Service\GKEHub {
+    class IdentityServiceAzureADConfig extends \Google\Model
     {
+        /**
+         * ID for the registered client application that makes authentication requests
+         * to the Azure AD identity provider.
+         *
+         * @var string
+         */
+        public $clientId;
+        /**
+         * Input only. Unencrypted AzureAD client secret will be passed to the GKE Hub
+         * CLH.
+         *
+         * @var string
+         */
+        public $clientSecret;
+        /**
+         * Output only. Encrypted AzureAD client secret.
+         *
+         * @var string
+         */
+        public $encryptedClientSecret;
+        /**
+         * Optional. Format of the AzureAD groups that the client wants for auth.
+         *
+         * @var string
+         */
+        public $groupFormat;
+        /**
+         * The redirect URL that kubectl uses for authorization.
+         *
+         * @var string
+         */
+        public $kubectlRedirectUri;
+        /**
+         * Kind of Azure AD account to be authenticated. Supported values are or for
+         * accounts belonging to a specific tenant.
+         *
+         * @var string
+         */
+        public $tenant;
+        /**
+         * Optional. Claim in the AzureAD ID Token that holds the user details.
+         *
+         * @var string
+         */
+        public $userClaim;
+        /**
+         * ID for the registered client application that makes authentication requests
+         * to the Azure AD identity provider.
+         *
+         * @param string $clientId
+         */
+        public function setClientId($clientId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClientId()
+        {
+        }
+        /**
+         * Input only. Unencrypted AzureAD client secret will be passed to the GKE Hub
+         * CLH.
+         *
+         * @param string $clientSecret
+         */
+        public function setClientSecret($clientSecret)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClientSecret()
+        {
+        }
+        /**
+         * Output only. Encrypted AzureAD client secret.
+         *
+         * @param string $encryptedClientSecret
+         */
+        public function setEncryptedClientSecret($encryptedClientSecret)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEncryptedClientSecret()
+        {
+        }
+        /**
+         * Optional. Format of the AzureAD groups that the client wants for auth.
+         *
+         * @param string $groupFormat
+         */
+        public function setGroupFormat($groupFormat)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGroupFormat()
+        {
+        }
+        /**
+         * The redirect URL that kubectl uses for authorization.
+         *
+         * @param string $kubectlRedirectUri
+         */
+        public function setKubectlRedirectUri($kubectlRedirectUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKubectlRedirectUri()
+        {
+        }
+        /**
+         * Kind of Azure AD account to be authenticated. Supported values are or for
+         * accounts belonging to a specific tenant.
+         *
+         * @param string $tenant
+         */
+        public function setTenant($tenant)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTenant()
+        {
+        }
+        /**
+         * Optional. Claim in the AzureAD ID Token that holds the user details.
+         *
+         * @param string $userClaim
+         */
+        public function setUserClaim($userClaim)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserClaim()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEHub\IdentityServiceAzureADConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClientId()
-    {
-    }
-    /**
-     * Input only. Unencrypted AzureAD client secret will be passed to the GKE Hub
-     * CLH.
-     *
-     * @param string $clientSecret
-     */
-    public function setClientSecret($clientSecret)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getClientSecret()
-    {
-    }
-    /**
-     * Output only. Encrypted AzureAD client secret.
-     *
-     * @param string $encryptedClientSecret
-     */
-    public function setEncryptedClientSecret($encryptedClientSecret)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEncryptedClientSecret()
-    {
-    }
-    /**
-     * Optional. Format of the AzureAD groups that the client wants for auth.
-     *
-     * @param string $groupFormat
-     */
-    public function setGroupFormat($groupFormat)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGroupFormat()
-    {
-    }
-    /**
-     * The redirect URL that kubectl uses for authorization.
-     *
-     * @param string $kubectlRedirectUri
-     */
-    public function setKubectlRedirectUri($kubectlRedirectUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKubectlRedirectUri()
-    {
-    }
-    /**
-     * Kind of Azure AD account to be authenticated. Supported values are or for
-     * accounts belonging to a specific tenant.
-     *
-     * @param string $tenant
-     */
-    public function setTenant($tenant)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTenant()
-    {
-    }
-    /**
-     * Optional. Claim in the AzureAD ID Token that holds the user details.
-     *
-     * @param string $userClaim
-     */
-    public function setUserClaim($userClaim)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserClaim()
+    class Google_Service_GKEHub_IdentityServiceAzureADConfig extends \Google\Service\GKEHub\IdentityServiceAzureADConfig
     {
     }
 }

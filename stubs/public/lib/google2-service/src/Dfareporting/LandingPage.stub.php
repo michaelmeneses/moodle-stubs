@@ -21,149 +21,158 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class LandingPage extends \Google\Collection
-{
-    protected $collection_key = 'deepLinks';
-    /**
-     * Advertiser ID of this landing page. This is a required field.
-     *
-     * @var string
-     */
-    public $advertiserId;
-    /**
-     * Whether this landing page has been archived.
-     *
-     * @var bool
-     */
-    public $archived;
-    protected $deepLinksType = DeepLink::class;
-    protected $deepLinksDataType = 'array';
-    /**
-     * ID of this landing page. This is a read-only, auto-generated field.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#landingPage".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Name of this landing page. This is a required field. It must be less than
-     * 256 characters long.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * URL of this landing page. This is a required field.
-     *
-     * @var string
-     */
-    public $url;
-    /**
-     * Advertiser ID of this landing page. This is a required field.
-     *
-     * @param string $advertiserId
-     */
-    public function setAdvertiserId($advertiserId)
+namespace Google\Service\Dfareporting {
+    class LandingPage extends \Google\Collection
     {
+        protected $collection_key = 'deepLinks';
+        /**
+         * Advertiser ID of this landing page. This is a required field.
+         *
+         * @var string
+         */
+        public $advertiserId;
+        /**
+         * Whether this landing page has been archived.
+         *
+         * @var bool
+         */
+        public $archived;
+        protected $deepLinksType = DeepLink::class;
+        protected $deepLinksDataType = 'array';
+        /**
+         * ID of this landing page. This is a read-only, auto-generated field.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#landingPage".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Name of this landing page. This is a required field. It must be less than
+         * 256 characters long.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * URL of this landing page. This is a required field.
+         *
+         * @var string
+         */
+        public $url;
+        /**
+         * Advertiser ID of this landing page. This is a required field.
+         *
+         * @param string $advertiserId
+         */
+        public function setAdvertiserId($advertiserId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdvertiserId()
+        {
+        }
+        /**
+         * Whether this landing page has been archived.
+         *
+         * @param bool $archived
+         */
+        public function setArchived($archived)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getArchived()
+        {
+        }
+        /**
+         * Links that will direct the user to a mobile app, if installed.
+         *
+         * @param DeepLink[] $deepLinks
+         */
+        public function setDeepLinks($deepLinks)
+        {
+        }
+        /**
+         * @return DeepLink[]
+         */
+        public function getDeepLinks()
+        {
+        }
+        /**
+         * ID of this landing page. This is a read-only, auto-generated field.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#landingPage".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Name of this landing page. This is a required field. It must be less than
+         * 256 characters long.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * URL of this landing page. This is a required field.
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\LandingPage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdvertiserId()
-    {
-    }
-    /**
-     * Whether this landing page has been archived.
-     *
-     * @param bool $archived
-     */
-    public function setArchived($archived)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getArchived()
-    {
-    }
-    /**
-     * Links that will direct the user to a mobile app, if installed.
-     *
-     * @param DeepLink[] $deepLinks
-     */
-    public function setDeepLinks($deepLinks)
-    {
-    }
-    /**
-     * @return DeepLink[]
-     */
-    public function getDeepLinks()
-    {
-    }
-    /**
-     * ID of this landing page. This is a read-only, auto-generated field.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#landingPage".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Name of this landing page. This is a required field. It must be less than
-     * 256 characters long.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * URL of this landing page. This is a required field.
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
+    class Google_Service_Dfareporting_LandingPage extends \Google\Service\Dfareporting\LandingPage
     {
     }
 }

@@ -21,149 +21,158 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class OrderShipment extends \Google\Collection
-{
-    protected $collection_key = 'lineItems';
-    /**
-     * @var string
-     */
-    public $carrier;
-    /**
-     * @var string
-     */
-    public $creationDate;
-    /**
-     * @var string
-     */
-    public $deliveryDate;
-    /**
-     * @var string
-     */
-    public $id;
-    protected $lineItemsType = OrderShipmentLineItemShipment::class;
-    protected $lineItemsDataType = 'array';
-    protected $scheduledDeliveryDetailsType = OrderShipmentScheduledDeliveryDetails::class;
-    protected $scheduledDeliveryDetailsDataType = '';
-    /**
-     * @var string
-     */
-    public $shipmentGroupId;
-    /**
-     * @var string
-     */
-    public $status;
-    /**
-     * @var string
-     */
-    public $trackingId;
-    /**
-     * @param string
-     */
-    public function setCarrier($carrier)
+namespace Google\Service\ShoppingContent {
+    class OrderShipment extends \Google\Collection
     {
+        protected $collection_key = 'lineItems';
+        /**
+         * @var string
+         */
+        public $carrier;
+        /**
+         * @var string
+         */
+        public $creationDate;
+        /**
+         * @var string
+         */
+        public $deliveryDate;
+        /**
+         * @var string
+         */
+        public $id;
+        protected $lineItemsType = OrderShipmentLineItemShipment::class;
+        protected $lineItemsDataType = 'array';
+        protected $scheduledDeliveryDetailsType = OrderShipmentScheduledDeliveryDetails::class;
+        protected $scheduledDeliveryDetailsDataType = '';
+        /**
+         * @var string
+         */
+        public $shipmentGroupId;
+        /**
+         * @var string
+         */
+        public $status;
+        /**
+         * @var string
+         */
+        public $trackingId;
+        /**
+         * @param string
+         */
+        public function setCarrier($carrier)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCarrier()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCreationDate($creationDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreationDate()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDeliveryDate($deliveryDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeliveryDate()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * @param OrderShipmentLineItemShipment[]
+         */
+        public function setLineItems($lineItems)
+        {
+        }
+        /**
+         * @return OrderShipmentLineItemShipment[]
+         */
+        public function getLineItems()
+        {
+        }
+        /**
+         * @param OrderShipmentScheduledDeliveryDetails
+         */
+        public function setScheduledDeliveryDetails(OrderShipmentScheduledDeliveryDetails $scheduledDeliveryDetails)
+        {
+        }
+        /**
+         * @return OrderShipmentScheduledDeliveryDetails
+         */
+        public function getScheduledDeliveryDetails()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setShipmentGroupId($shipmentGroupId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getShipmentGroupId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStatus()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTrackingId($trackingId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTrackingId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\OrderShipment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCarrier()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCreationDate($creationDate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreationDate()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDeliveryDate($deliveryDate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeliveryDate()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * @param OrderShipmentLineItemShipment[]
-     */
-    public function setLineItems($lineItems)
-    {
-    }
-    /**
-     * @return OrderShipmentLineItemShipment[]
-     */
-    public function getLineItems()
-    {
-    }
-    /**
-     * @param OrderShipmentScheduledDeliveryDetails
-     */
-    public function setScheduledDeliveryDetails(OrderShipmentScheduledDeliveryDetails $scheduledDeliveryDetails)
-    {
-    }
-    /**
-     * @return OrderShipmentScheduledDeliveryDetails
-     */
-    public function getScheduledDeliveryDetails()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setShipmentGroupId($shipmentGroupId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getShipmentGroupId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStatus()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTrackingId($trackingId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTrackingId()
+    class Google_Service_ShoppingContent_OrderShipment extends \Google\Service\ShoppingContent\OrderShipment
     {
     }
 }

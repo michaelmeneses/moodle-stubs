@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManagedKafka;
-
-class ConsumerTopicMetadata extends \Google\Model
-{
-    protected $partitionsType = ConsumerPartitionMetadata::class;
-    protected $partitionsDataType = 'map';
-    /**
-     * Optional. Metadata for this consumer group and topic for all partition
-     * indexes it has metadata for.
-     *
-     * @param ConsumerPartitionMetadata[] $partitions
-     */
-    public function setPartitions($partitions)
+namespace Google\Service\ManagedKafka {
+    class ConsumerTopicMetadata extends \Google\Model
     {
+        protected $partitionsType = ConsumerPartitionMetadata::class;
+        protected $partitionsDataType = 'map';
+        /**
+         * Optional. Metadata for this consumer group and topic for all partition
+         * indexes it has metadata for.
+         *
+         * @param ConsumerPartitionMetadata[] $partitions
+         */
+        public function setPartitions($partitions)
+        {
+        }
+        /**
+         * @return ConsumerPartitionMetadata[]
+         */
+        public function getPartitions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ConsumerPartitionMetadata[]
+     * Runtime class alias of \Google\Service\ManagedKafka\ConsumerTopicMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPartitions()
+    class Google_Service_ManagedKafka_ConsumerTopicMetadata extends \Google\Service\ManagedKafka\ConsumerTopicMetadata
     {
     }
 }

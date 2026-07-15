@@ -21,183 +21,192 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class AppProfile extends \Google\Model
-{
-    /**
-     * Default value. Mapped to PRIORITY_HIGH (the legacy behavior) on creation.
-     */
-    public const PRIORITY_PRIORITY_UNSPECIFIED = 'PRIORITY_UNSPECIFIED';
-    public const PRIORITY_PRIORITY_LOW = 'PRIORITY_LOW';
-    public const PRIORITY_PRIORITY_MEDIUM = 'PRIORITY_MEDIUM';
-    public const PRIORITY_PRIORITY_HIGH = 'PRIORITY_HIGH';
-    protected $dataBoostIsolationReadOnlyType = DataBoostIsolationReadOnly::class;
-    protected $dataBoostIsolationReadOnlyDataType = '';
-    /**
-     * Long form description of the use case for this AppProfile.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Strongly validated etag for optimistic concurrency control. Preserve the
-     * value returned from `GetAppProfile` when calling `UpdateAppProfile` to fail
-     * the request if there has been a modification in the mean time. The
-     * `update_mask` of the request need not include `etag` for this protection to
-     * apply. See [Wikipedia](https://en.wikipedia.org/wiki/HTTP_ETag) and [RFC
-     * 7232](https://tools.ietf.org/html/rfc7232#section-2.3) for more details.
-     *
-     * @var string
-     */
-    public $etag;
-    protected $multiClusterRoutingUseAnyType = MultiClusterRoutingUseAny::class;
-    protected $multiClusterRoutingUseAnyDataType = '';
-    /**
-     * The unique name of the app profile, up to 50 characters long. Values are of
-     * the form `projects/{project}/instances/{instance}/appProfiles/_a-zA-Z0-9*`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * This field has been deprecated in favor of `standard_isolation.priority`.
-     * If you set this field, `standard_isolation.priority` will be set instead.
-     * The priority of requests sent using this app profile.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $priority;
-    protected $singleClusterRoutingType = SingleClusterRouting::class;
-    protected $singleClusterRoutingDataType = '';
-    protected $standardIsolationType = StandardIsolation::class;
-    protected $standardIsolationDataType = '';
-    /**
-     * Specifies that this app profile is intended for read-only usage via the
-     * Data Boost feature.
-     *
-     * @param DataBoostIsolationReadOnly $dataBoostIsolationReadOnly
-     */
-    public function setDataBoostIsolationReadOnly(DataBoostIsolationReadOnly $dataBoostIsolationReadOnly)
+namespace Google\Service\BigtableAdmin {
+    class AppProfile extends \Google\Model
     {
+        /**
+         * Default value. Mapped to PRIORITY_HIGH (the legacy behavior) on creation.
+         */
+        public const PRIORITY_PRIORITY_UNSPECIFIED = 'PRIORITY_UNSPECIFIED';
+        public const PRIORITY_PRIORITY_LOW = 'PRIORITY_LOW';
+        public const PRIORITY_PRIORITY_MEDIUM = 'PRIORITY_MEDIUM';
+        public const PRIORITY_PRIORITY_HIGH = 'PRIORITY_HIGH';
+        protected $dataBoostIsolationReadOnlyType = DataBoostIsolationReadOnly::class;
+        protected $dataBoostIsolationReadOnlyDataType = '';
+        /**
+         * Long form description of the use case for this AppProfile.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Strongly validated etag for optimistic concurrency control. Preserve the
+         * value returned from `GetAppProfile` when calling `UpdateAppProfile` to fail
+         * the request if there has been a modification in the mean time. The
+         * `update_mask` of the request need not include `etag` for this protection to
+         * apply. See [Wikipedia](https://en.wikipedia.org/wiki/HTTP_ETag) and [RFC
+         * 7232](https://tools.ietf.org/html/rfc7232#section-2.3) for more details.
+         *
+         * @var string
+         */
+        public $etag;
+        protected $multiClusterRoutingUseAnyType = MultiClusterRoutingUseAny::class;
+        protected $multiClusterRoutingUseAnyDataType = '';
+        /**
+         * The unique name of the app profile, up to 50 characters long. Values are of
+         * the form `projects/{project}/instances/{instance}/appProfiles/_a-zA-Z0-9*`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * This field has been deprecated in favor of `standard_isolation.priority`.
+         * If you set this field, `standard_isolation.priority` will be set instead.
+         * The priority of requests sent using this app profile.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $priority;
+        protected $singleClusterRoutingType = SingleClusterRouting::class;
+        protected $singleClusterRoutingDataType = '';
+        protected $standardIsolationType = StandardIsolation::class;
+        protected $standardIsolationDataType = '';
+        /**
+         * Specifies that this app profile is intended for read-only usage via the
+         * Data Boost feature.
+         *
+         * @param DataBoostIsolationReadOnly $dataBoostIsolationReadOnly
+         */
+        public function setDataBoostIsolationReadOnly(DataBoostIsolationReadOnly $dataBoostIsolationReadOnly)
+        {
+        }
+        /**
+         * @return DataBoostIsolationReadOnly
+         */
+        public function getDataBoostIsolationReadOnly()
+        {
+        }
+        /**
+         * Long form description of the use case for this AppProfile.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Strongly validated etag for optimistic concurrency control. Preserve the
+         * value returned from `GetAppProfile` when calling `UpdateAppProfile` to fail
+         * the request if there has been a modification in the mean time. The
+         * `update_mask` of the request need not include `etag` for this protection to
+         * apply. See [Wikipedia](https://en.wikipedia.org/wiki/HTTP_ETag) and [RFC
+         * 7232](https://tools.ietf.org/html/rfc7232#section-2.3) for more details.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * Use a multi-cluster routing policy.
+         *
+         * @param MultiClusterRoutingUseAny $multiClusterRoutingUseAny
+         */
+        public function setMultiClusterRoutingUseAny(MultiClusterRoutingUseAny $multiClusterRoutingUseAny)
+        {
+        }
+        /**
+         * @return MultiClusterRoutingUseAny
+         */
+        public function getMultiClusterRoutingUseAny()
+        {
+        }
+        /**
+         * The unique name of the app profile, up to 50 characters long. Values are of
+         * the form `projects/{project}/instances/{instance}/appProfiles/_a-zA-Z0-9*`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * This field has been deprecated in favor of `standard_isolation.priority`.
+         * If you set this field, `standard_isolation.priority` will be set instead.
+         * The priority of requests sent using this app profile.
+         *
+         * Accepted values: PRIORITY_UNSPECIFIED, PRIORITY_LOW, PRIORITY_MEDIUM,
+         * PRIORITY_HIGH
+         *
+         * @deprecated
+         * @param self::PRIORITY_* $priority
+         */
+        public function setPriority($priority)
+        {
+        }
+        /**
+         * @deprecated
+         * @return self::PRIORITY_*
+         */
+        public function getPriority()
+        {
+        }
+        /**
+         * Use a single-cluster routing policy.
+         *
+         * @param SingleClusterRouting $singleClusterRouting
+         */
+        public function setSingleClusterRouting(SingleClusterRouting $singleClusterRouting)
+        {
+        }
+        /**
+         * @return SingleClusterRouting
+         */
+        public function getSingleClusterRouting()
+        {
+        }
+        /**
+         * The standard options used for isolating this app profile's traffic from
+         * other use cases.
+         *
+         * @param StandardIsolation $standardIsolation
+         */
+        public function setStandardIsolation(StandardIsolation $standardIsolation)
+        {
+        }
+        /**
+         * @return StandardIsolation
+         */
+        public function getStandardIsolation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DataBoostIsolationReadOnly
+     * Runtime class alias of \Google\Service\BigtableAdmin\AppProfile registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataBoostIsolationReadOnly()
-    {
-    }
-    /**
-     * Long form description of the use case for this AppProfile.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Strongly validated etag for optimistic concurrency control. Preserve the
-     * value returned from `GetAppProfile` when calling `UpdateAppProfile` to fail
-     * the request if there has been a modification in the mean time. The
-     * `update_mask` of the request need not include `etag` for this protection to
-     * apply. See [Wikipedia](https://en.wikipedia.org/wiki/HTTP_ETag) and [RFC
-     * 7232](https://tools.ietf.org/html/rfc7232#section-2.3) for more details.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * Use a multi-cluster routing policy.
-     *
-     * @param MultiClusterRoutingUseAny $multiClusterRoutingUseAny
-     */
-    public function setMultiClusterRoutingUseAny(MultiClusterRoutingUseAny $multiClusterRoutingUseAny)
-    {
-    }
-    /**
-     * @return MultiClusterRoutingUseAny
-     */
-    public function getMultiClusterRoutingUseAny()
-    {
-    }
-    /**
-     * The unique name of the app profile, up to 50 characters long. Values are of
-     * the form `projects/{project}/instances/{instance}/appProfiles/_a-zA-Z0-9*`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * This field has been deprecated in favor of `standard_isolation.priority`.
-     * If you set this field, `standard_isolation.priority` will be set instead.
-     * The priority of requests sent using this app profile.
-     *
-     * Accepted values: PRIORITY_UNSPECIFIED, PRIORITY_LOW, PRIORITY_MEDIUM,
-     * PRIORITY_HIGH
-     *
-     * @deprecated
-     * @param self::PRIORITY_* $priority
-     */
-    public function setPriority($priority)
-    {
-    }
-    /**
-     * @deprecated
-     * @return self::PRIORITY_*
-     */
-    public function getPriority()
-    {
-    }
-    /**
-     * Use a single-cluster routing policy.
-     *
-     * @param SingleClusterRouting $singleClusterRouting
-     */
-    public function setSingleClusterRouting(SingleClusterRouting $singleClusterRouting)
-    {
-    }
-    /**
-     * @return SingleClusterRouting
-     */
-    public function getSingleClusterRouting()
-    {
-    }
-    /**
-     * The standard options used for isolating this app profile's traffic from
-     * other use cases.
-     *
-     * @param StandardIsolation $standardIsolation
-     */
-    public function setStandardIsolation(StandardIsolation $standardIsolation)
-    {
-    }
-    /**
-     * @return StandardIsolation
-     */
-    public function getStandardIsolation()
+    class Google_Service_BigtableAdmin_AppProfile extends \Google\Service\BigtableAdmin\AppProfile
     {
     }
 }

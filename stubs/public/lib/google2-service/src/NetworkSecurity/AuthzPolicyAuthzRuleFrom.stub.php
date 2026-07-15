@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkSecurity;
-
-class AuthzPolicyAuthzRuleFrom extends \Google\Collection
-{
-    protected $collection_key = 'sources';
-    protected $notSourcesType = AuthzPolicyAuthzRuleFromRequestSource::class;
-    protected $notSourcesDataType = 'array';
-    protected $sourcesType = AuthzPolicyAuthzRuleFromRequestSource::class;
-    protected $sourcesDataType = 'array';
-    /**
-     * Optional. Describes the negated properties of request sources. Matches
-     * requests from sources that do not match the criteria specified in this
-     * field. At least one of sources or notSources must be specified.
-     *
-     * @param AuthzPolicyAuthzRuleFromRequestSource[] $notSources
-     */
-    public function setNotSources($notSources)
+namespace Google\Service\NetworkSecurity {
+    class AuthzPolicyAuthzRuleFrom extends \Google\Collection
     {
+        protected $collection_key = 'sources';
+        protected $notSourcesType = AuthzPolicyAuthzRuleFromRequestSource::class;
+        protected $notSourcesDataType = 'array';
+        protected $sourcesType = AuthzPolicyAuthzRuleFromRequestSource::class;
+        protected $sourcesDataType = 'array';
+        /**
+         * Optional. Describes the negated properties of request sources. Matches
+         * requests from sources that do not match the criteria specified in this
+         * field. At least one of sources or notSources must be specified.
+         *
+         * @param AuthzPolicyAuthzRuleFromRequestSource[] $notSources
+         */
+        public function setNotSources($notSources)
+        {
+        }
+        /**
+         * @return AuthzPolicyAuthzRuleFromRequestSource[]
+         */
+        public function getNotSources()
+        {
+        }
+        /**
+         * Optional. Describes the properties of a request's sources. At least one of
+         * sources or notSources must be specified. Limited to 1 source. A match
+         * occurs when ANY source (in sources or notSources) matches the request.
+         * Within a single source, the match follows AND semantics across fields and
+         * OR semantics within a single field, i.e. a match occurs when ANY principal
+         * matches AND ANY ipBlocks match.
+         *
+         * @param AuthzPolicyAuthzRuleFromRequestSource[] $sources
+         */
+        public function setSources($sources)
+        {
+        }
+        /**
+         * @return AuthzPolicyAuthzRuleFromRequestSource[]
+         */
+        public function getSources()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AuthzPolicyAuthzRuleFromRequestSource[]
+     * Runtime class alias of \Google\Service\NetworkSecurity\AuthzPolicyAuthzRuleFrom registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNotSources()
-    {
-    }
-    /**
-     * Optional. Describes the properties of a request's sources. At least one of
-     * sources or notSources must be specified. Limited to 1 source. A match
-     * occurs when ANY source (in sources or notSources) matches the request.
-     * Within a single source, the match follows AND semantics across fields and
-     * OR semantics within a single field, i.e. a match occurs when ANY principal
-     * matches AND ANY ipBlocks match.
-     *
-     * @param AuthzPolicyAuthzRuleFromRequestSource[] $sources
-     */
-    public function setSources($sources)
-    {
-    }
-    /**
-     * @return AuthzPolicyAuthzRuleFromRequestSource[]
-     */
-    public function getSources()
+    class Google_Service_NetworkSecurity_AuthzPolicyAuthzRuleFrom extends \Google\Service\NetworkSecurity\AuthzPolicyAuthzRuleFrom
     {
     }
 }

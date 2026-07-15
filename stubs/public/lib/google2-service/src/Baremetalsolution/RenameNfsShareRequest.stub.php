@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Baremetalsolution;
-
-class RenameNfsShareRequest extends \Google\Model
-{
-    /**
-     * Required. The new `id` of the nfsshare.
-     *
-     * @var string
-     */
-    public $newNfsshareId;
-    /**
-     * Required. The new `id` of the nfsshare.
-     *
-     * @param string $newNfsshareId
-     */
-    public function setNewNfsshareId($newNfsshareId)
+namespace Google\Service\Baremetalsolution {
+    class RenameNfsShareRequest extends \Google\Model
     {
+        /**
+         * Required. The new `id` of the nfsshare.
+         *
+         * @var string
+         */
+        public $newNfsshareId;
+        /**
+         * Required. The new `id` of the nfsshare.
+         *
+         * @param string $newNfsshareId
+         */
+        public function setNewNfsshareId($newNfsshareId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNewNfsshareId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Baremetalsolution\RenameNfsShareRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNewNfsshareId()
+    class Google_Service_Baremetalsolution_RenameNfsShareRequest extends \Google\Service\Baremetalsolution\RenameNfsShareRequest
     {
     }
 }

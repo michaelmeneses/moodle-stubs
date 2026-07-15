@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudMachineLearningEngine;
-
-class GoogleCloudMlV1PredictRequest extends \Google\Model
-{
-    protected $httpBodyType = GoogleApiHttpBody::class;
-    protected $httpBodyDataType = '';
-    /**
-     * Required. The prediction request body. Refer to the [request body details
-     * section](#request-body-details) for more information on how to structure
-     * your request.
-     *
-     * @param GoogleApiHttpBody $httpBody
-     */
-    public function setHttpBody(GoogleApiHttpBody $httpBody)
+namespace Google\Service\CloudMachineLearningEngine {
+    class GoogleCloudMlV1PredictRequest extends \Google\Model
     {
+        protected $httpBodyType = GoogleApiHttpBody::class;
+        protected $httpBodyDataType = '';
+        /**
+         * Required. The prediction request body. Refer to the [request body details
+         * section](#request-body-details) for more information on how to structure
+         * your request.
+         *
+         * @param GoogleApiHttpBody $httpBody
+         */
+        public function setHttpBody(GoogleApiHttpBody $httpBody)
+        {
+        }
+        /**
+         * @return GoogleApiHttpBody
+         */
+        public function getHttpBody()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleApiHttpBody
+     * Runtime class alias of \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1PredictRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHttpBody()
+    class Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1PredictRequest extends \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1PredictRequest
     {
     }
 }

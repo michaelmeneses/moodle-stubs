@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class BiddingStrategy extends \Google\Model
-{
-    protected $fixedBidType = FixedBidStrategy::class;
-    protected $fixedBidDataType = '';
-    protected $maximizeSpendAutoBidType = MaximizeSpendBidStrategy::class;
-    protected $maximizeSpendAutoBidDataType = '';
-    protected $performanceGoalAutoBidType = PerformanceGoalBidStrategy::class;
-    protected $performanceGoalAutoBidDataType = '';
-    protected $youtubeAndPartnersBidType = YoutubeAndPartnersBiddingStrategy::class;
-    protected $youtubeAndPartnersBidDataType = '';
-    /**
-     * A strategy that uses a fixed bid price.
-     *
-     * @param FixedBidStrategy $fixedBid
-     */
-    public function setFixedBid(FixedBidStrategy $fixedBid)
+namespace Google\Service\DisplayVideo {
+    class BiddingStrategy extends \Google\Model
     {
+        protected $fixedBidType = FixedBidStrategy::class;
+        protected $fixedBidDataType = '';
+        protected $maximizeSpendAutoBidType = MaximizeSpendBidStrategy::class;
+        protected $maximizeSpendAutoBidDataType = '';
+        protected $performanceGoalAutoBidType = PerformanceGoalBidStrategy::class;
+        protected $performanceGoalAutoBidDataType = '';
+        protected $youtubeAndPartnersBidType = YoutubeAndPartnersBiddingStrategy::class;
+        protected $youtubeAndPartnersBidDataType = '';
+        /**
+         * A strategy that uses a fixed bid price.
+         *
+         * @param FixedBidStrategy $fixedBid
+         */
+        public function setFixedBid(FixedBidStrategy $fixedBid)
+        {
+        }
+        /**
+         * @return FixedBidStrategy
+         */
+        public function getFixedBid()
+        {
+        }
+        /**
+         * * `BIDDING_STRATEGY_PERFORMANCE_GOAL_TYPE_CPA`,
+         * `BIDDING_STRATEGY_PERFORMANCE_GOAL_TYPE_CPC`, and
+         * `BIDDING_STRATEGY_PERFORMANCE_GOAL_TYPE_AV_VIEWED` only allow for
+         * `LINE_ITEM_TYPE_DISPLAY_DEFAULT` or `LINE_ITEM_TYPE_VIDEO_DEFAULT` line
+         * items. * `BIDDING_STRATEGY_PERFORMANCE_GOAL_TYPE_CIVA` and
+         * `BIDDING_STRATEGY_PERFORMANCE_GOAL_TYPE_IVO_TEN` only allow for
+         * `LINE_ITEM_TYPE_VIDEO_DEFAULT` line items. *
+         * `BIDDING_STRATEGY_PERFORMANCE_GOAL_TYPE_REACH` only allows for
+         * `LINE_ITEM_TYPE_VIDEO_OVER_THE_TOP` line items.
+         *
+         * @param MaximizeSpendBidStrategy $maximizeSpendAutoBid
+         */
+        public function setMaximizeSpendAutoBid(MaximizeSpendBidStrategy $maximizeSpendAutoBid)
+        {
+        }
+        /**
+         * @return MaximizeSpendBidStrategy
+         */
+        public function getMaximizeSpendAutoBid()
+        {
+        }
+        /**
+         * A strategy that automatically adjusts the bid to meet or beat a specified
+         * performance goal. It is to be used only for a line item entity.
+         *
+         * @param PerformanceGoalBidStrategy $performanceGoalAutoBid
+         */
+        public function setPerformanceGoalAutoBid(PerformanceGoalBidStrategy $performanceGoalAutoBid)
+        {
+        }
+        /**
+         * @return PerformanceGoalBidStrategy
+         */
+        public function getPerformanceGoalAutoBid()
+        {
+        }
+        /**
+         * A bid strategy used by YouTube and Partners resources. It can only be used
+         * for a YouTube and Partners line item or ad group entity.
+         *
+         * @param YoutubeAndPartnersBiddingStrategy $youtubeAndPartnersBid
+         */
+        public function setYoutubeAndPartnersBid(YoutubeAndPartnersBiddingStrategy $youtubeAndPartnersBid)
+        {
+        }
+        /**
+         * @return YoutubeAndPartnersBiddingStrategy
+         */
+        public function getYoutubeAndPartnersBid()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FixedBidStrategy
+     * Runtime class alias of \Google\Service\DisplayVideo\BiddingStrategy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFixedBid()
-    {
-    }
-    /**
-     * * `BIDDING_STRATEGY_PERFORMANCE_GOAL_TYPE_CPA`,
-     * `BIDDING_STRATEGY_PERFORMANCE_GOAL_TYPE_CPC`, and
-     * `BIDDING_STRATEGY_PERFORMANCE_GOAL_TYPE_AV_VIEWED` only allow for
-     * `LINE_ITEM_TYPE_DISPLAY_DEFAULT` or `LINE_ITEM_TYPE_VIDEO_DEFAULT` line
-     * items. * `BIDDING_STRATEGY_PERFORMANCE_GOAL_TYPE_CIVA` and
-     * `BIDDING_STRATEGY_PERFORMANCE_GOAL_TYPE_IVO_TEN` only allow for
-     * `LINE_ITEM_TYPE_VIDEO_DEFAULT` line items. *
-     * `BIDDING_STRATEGY_PERFORMANCE_GOAL_TYPE_REACH` only allows for
-     * `LINE_ITEM_TYPE_VIDEO_OVER_THE_TOP` line items.
-     *
-     * @param MaximizeSpendBidStrategy $maximizeSpendAutoBid
-     */
-    public function setMaximizeSpendAutoBid(MaximizeSpendBidStrategy $maximizeSpendAutoBid)
-    {
-    }
-    /**
-     * @return MaximizeSpendBidStrategy
-     */
-    public function getMaximizeSpendAutoBid()
-    {
-    }
-    /**
-     * A strategy that automatically adjusts the bid to meet or beat a specified
-     * performance goal. It is to be used only for a line item entity.
-     *
-     * @param PerformanceGoalBidStrategy $performanceGoalAutoBid
-     */
-    public function setPerformanceGoalAutoBid(PerformanceGoalBidStrategy $performanceGoalAutoBid)
-    {
-    }
-    /**
-     * @return PerformanceGoalBidStrategy
-     */
-    public function getPerformanceGoalAutoBid()
-    {
-    }
-    /**
-     * A bid strategy used by YouTube and Partners resources. It can only be used
-     * for a YouTube and Partners line item or ad group entity.
-     *
-     * @param YoutubeAndPartnersBiddingStrategy $youtubeAndPartnersBid
-     */
-    public function setYoutubeAndPartnersBid(YoutubeAndPartnersBiddingStrategy $youtubeAndPartnersBid)
-    {
-    }
-    /**
-     * @return YoutubeAndPartnersBiddingStrategy
-     */
-    public function getYoutubeAndPartnersBid()
+    class Google_Service_DisplayVideo_BiddingStrategy extends \Google\Service\DisplayVideo\BiddingStrategy
     {
     }
 }

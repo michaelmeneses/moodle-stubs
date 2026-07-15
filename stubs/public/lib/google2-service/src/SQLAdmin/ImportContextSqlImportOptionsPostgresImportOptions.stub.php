@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class ImportContextSqlImportOptionsPostgresImportOptions extends \Google\Model
-{
-    /**
-     * Optional. The --clean flag for the pg_restore utility. This flag applies
-     * only if you enabled Cloud SQL to import files in parallel.
-     *
-     * @var bool
-     */
-    public $clean;
-    /**
-     * Optional. The --if-exists flag for the pg_restore utility. This flag
-     * applies only if you enabled Cloud SQL to import files in parallel.
-     *
-     * @var bool
-     */
-    public $ifExists;
-    /**
-     * Optional. The --clean flag for the pg_restore utility. This flag applies
-     * only if you enabled Cloud SQL to import files in parallel.
-     *
-     * @param bool $clean
-     */
-    public function setClean($clean)
+namespace Google\Service\SQLAdmin {
+    class ImportContextSqlImportOptionsPostgresImportOptions extends \Google\Model
     {
+        /**
+         * Optional. The --clean flag for the pg_restore utility. This flag applies
+         * only if you enabled Cloud SQL to import files in parallel.
+         *
+         * @var bool
+         */
+        public $clean;
+        /**
+         * Optional. The --if-exists flag for the pg_restore utility. This flag
+         * applies only if you enabled Cloud SQL to import files in parallel.
+         *
+         * @var bool
+         */
+        public $ifExists;
+        /**
+         * Optional. The --clean flag for the pg_restore utility. This flag applies
+         * only if you enabled Cloud SQL to import files in parallel.
+         *
+         * @param bool $clean
+         */
+        public function setClean($clean)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getClean()
+        {
+        }
+        /**
+         * Optional. The --if-exists flag for the pg_restore utility. This flag
+         * applies only if you enabled Cloud SQL to import files in parallel.
+         *
+         * @param bool $ifExists
+         */
+        public function setIfExists($ifExists)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIfExists()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\SQLAdmin\ImportContextSqlImportOptionsPostgresImportOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClean()
-    {
-    }
-    /**
-     * Optional. The --if-exists flag for the pg_restore utility. This flag
-     * applies only if you enabled Cloud SQL to import files in parallel.
-     *
-     * @param bool $ifExists
-     */
-    public function setIfExists($ifExists)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIfExists()
+    class Google_Service_SQLAdmin_ImportContextSqlImportOptionsPostgresImportOptions extends \Google\Service\SQLAdmin\ImportContextSqlImportOptionsPostgresImportOptions
     {
     }
 }

@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Transcoder;
-
-class PubsubDestination extends \Google\Model
-{
-    /**
-     * The name of the Pub/Sub topic to publish job completion notification to.
-     * For example: `projects/{project}/topics/{topic}`.
-     *
-     * @var string
-     */
-    public $topic;
-    /**
-     * The name of the Pub/Sub topic to publish job completion notification to.
-     * For example: `projects/{project}/topics/{topic}`.
-     *
-     * @param string $topic
-     */
-    public function setTopic($topic)
+namespace Google\Service\Transcoder {
+    class PubsubDestination extends \Google\Model
     {
+        /**
+         * The name of the Pub/Sub topic to publish job completion notification to.
+         * For example: `projects/{project}/topics/{topic}`.
+         *
+         * @var string
+         */
+        public $topic;
+        /**
+         * The name of the Pub/Sub topic to publish job completion notification to.
+         * For example: `projects/{project}/topics/{topic}`.
+         *
+         * @param string $topic
+         */
+        public function setTopic($topic)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTopic()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Transcoder\PubsubDestination registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTopic()
+    class Google_Service_Transcoder_PubsubDestination extends \Google\Service\Transcoder\PubsubDestination
     {
     }
 }

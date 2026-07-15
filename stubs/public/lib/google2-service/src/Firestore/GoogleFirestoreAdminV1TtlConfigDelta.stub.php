@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class GoogleFirestoreAdminV1TtlConfigDelta extends \Google\Model
-{
-    /**
-     * The type of change is not specified or known.
-     */
-    public const CHANGE_TYPE_CHANGE_TYPE_UNSPECIFIED = 'CHANGE_TYPE_UNSPECIFIED';
-    /**
-     * The TTL config is being added.
-     */
-    public const CHANGE_TYPE_ADD = 'ADD';
-    /**
-     * The TTL config is being removed.
-     */
-    public const CHANGE_TYPE_REMOVE = 'REMOVE';
-    /**
-     * Specifies how the TTL configuration is changing.
-     *
-     * @var string
-     */
-    public $changeType;
-    /**
-     * Specifies how the TTL configuration is changing.
-     *
-     * Accepted values: CHANGE_TYPE_UNSPECIFIED, ADD, REMOVE
-     *
-     * @param self::CHANGE_TYPE_* $changeType
-     */
-    public function setChangeType($changeType)
+namespace Google\Service\Firestore {
+    class GoogleFirestoreAdminV1TtlConfigDelta extends \Google\Model
     {
+        /**
+         * The type of change is not specified or known.
+         */
+        public const CHANGE_TYPE_CHANGE_TYPE_UNSPECIFIED = 'CHANGE_TYPE_UNSPECIFIED';
+        /**
+         * The TTL config is being added.
+         */
+        public const CHANGE_TYPE_ADD = 'ADD';
+        /**
+         * The TTL config is being removed.
+         */
+        public const CHANGE_TYPE_REMOVE = 'REMOVE';
+        /**
+         * Specifies how the TTL configuration is changing.
+         *
+         * @var string
+         */
+        public $changeType;
+        /**
+         * Specifies how the TTL configuration is changing.
+         *
+         * Accepted values: CHANGE_TYPE_UNSPECIFIED, ADD, REMOVE
+         *
+         * @param self::CHANGE_TYPE_* $changeType
+         */
+        public function setChangeType($changeType)
+        {
+        }
+        /**
+         * @return self::CHANGE_TYPE_*
+         */
+        public function getChangeType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::CHANGE_TYPE_*
+     * Runtime class alias of \Google\Service\Firestore\GoogleFirestoreAdminV1TtlConfigDelta registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChangeType()
+    class Google_Service_Firestore_GoogleFirestoreAdminV1TtlConfigDelta extends \Google\Service\Firestore\GoogleFirestoreAdminV1TtlConfigDelta
     {
     }
 }

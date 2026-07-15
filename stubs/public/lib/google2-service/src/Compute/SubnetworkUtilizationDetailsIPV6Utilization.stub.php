@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class SubnetworkUtilizationDetailsIPV6Utilization extends \Google\Model
-{
-    protected $totalAllocatedIpType = Uint128::class;
-    protected $totalAllocatedIpDataType = '';
-    protected $totalFreeIpType = Uint128::class;
-    protected $totalFreeIpDataType = '';
-    /**
-     * @param Uint128 $totalAllocatedIp
-     */
-    public function setTotalAllocatedIp(Uint128 $totalAllocatedIp)
+namespace Google\Service\Compute {
+    class SubnetworkUtilizationDetailsIPV6Utilization extends \Google\Model
     {
+        protected $totalAllocatedIpType = Uint128::class;
+        protected $totalAllocatedIpDataType = '';
+        protected $totalFreeIpType = Uint128::class;
+        protected $totalFreeIpDataType = '';
+        /**
+         * @param Uint128 $totalAllocatedIp
+         */
+        public function setTotalAllocatedIp(Uint128 $totalAllocatedIp)
+        {
+        }
+        /**
+         * @return Uint128
+         */
+        public function getTotalAllocatedIp()
+        {
+        }
+        /**
+         * @param Uint128 $totalFreeIp
+         */
+        public function setTotalFreeIp(Uint128 $totalFreeIp)
+        {
+        }
+        /**
+         * @return Uint128
+         */
+        public function getTotalFreeIp()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Uint128
+     * Runtime class alias of \Google\Service\Compute\SubnetworkUtilizationDetailsIPV6Utilization registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTotalAllocatedIp()
-    {
-    }
-    /**
-     * @param Uint128 $totalFreeIp
-     */
-    public function setTotalFreeIp(Uint128 $totalFreeIp)
-    {
-    }
-    /**
-     * @return Uint128
-     */
-    public function getTotalFreeIp()
+    class Google_Service_Compute_SubnetworkUtilizationDetailsIPV6Utilization extends \Google\Service\Compute\SubnetworkUtilizationDetailsIPV6Utilization
     {
     }
 }

@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudComposer;
-
-class PollAirflowCommandRequest extends \Google\Model
-{
-    /**
-     * The unique ID of the command execution.
-     *
-     * @var string
-     */
-    public $executionId;
-    /**
-     * Line number from which new logs should be fetched.
-     *
-     * @var int
-     */
-    public $nextLineNumber;
-    /**
-     * The name of the pod where the command is executed.
-     *
-     * @var string
-     */
-    public $pod;
-    /**
-     * The namespace of the pod where the command is executed.
-     *
-     * @var string
-     */
-    public $podNamespace;
-    /**
-     * The unique ID of the command execution.
-     *
-     * @param string $executionId
-     */
-    public function setExecutionId($executionId)
+namespace Google\Service\CloudComposer {
+    class PollAirflowCommandRequest extends \Google\Model
     {
+        /**
+         * The unique ID of the command execution.
+         *
+         * @var string
+         */
+        public $executionId;
+        /**
+         * Line number from which new logs should be fetched.
+         *
+         * @var int
+         */
+        public $nextLineNumber;
+        /**
+         * The name of the pod where the command is executed.
+         *
+         * @var string
+         */
+        public $pod;
+        /**
+         * The namespace of the pod where the command is executed.
+         *
+         * @var string
+         */
+        public $podNamespace;
+        /**
+         * The unique ID of the command execution.
+         *
+         * @param string $executionId
+         */
+        public function setExecutionId($executionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExecutionId()
+        {
+        }
+        /**
+         * Line number from which new logs should be fetched.
+         *
+         * @param int $nextLineNumber
+         */
+        public function setNextLineNumber($nextLineNumber)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNextLineNumber()
+        {
+        }
+        /**
+         * The name of the pod where the command is executed.
+         *
+         * @param string $pod
+         */
+        public function setPod($pod)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPod()
+        {
+        }
+        /**
+         * The namespace of the pod where the command is executed.
+         *
+         * @param string $podNamespace
+         */
+        public function setPodNamespace($podNamespace)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPodNamespace()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudComposer\PollAirflowCommandRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExecutionId()
-    {
-    }
-    /**
-     * Line number from which new logs should be fetched.
-     *
-     * @param int $nextLineNumber
-     */
-    public function setNextLineNumber($nextLineNumber)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNextLineNumber()
-    {
-    }
-    /**
-     * The name of the pod where the command is executed.
-     *
-     * @param string $pod
-     */
-    public function setPod($pod)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPod()
-    {
-    }
-    /**
-     * The namespace of the pod where the command is executed.
-     *
-     * @param string $podNamespace
-     */
-    public function setPodNamespace($podNamespace)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPodNamespace()
+    class Google_Service_CloudComposer_PollAirflowCommandRequest extends \Google\Service\CloudComposer\PollAirflowCommandRequest
     {
     }
 }

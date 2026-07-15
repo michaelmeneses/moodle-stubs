@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\router\schema\objects;
 
+use core\param;
+use core\router\schema\referenced_object;
 /**
  * A schema to describe an array of strings.
  *

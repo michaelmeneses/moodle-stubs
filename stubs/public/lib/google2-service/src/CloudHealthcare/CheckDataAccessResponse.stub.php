@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class CheckDataAccessResponse extends \Google\Model
-{
-    protected $consentDetailsType = ConsentEvaluation::class;
-    protected $consentDetailsDataType = 'map';
-    /**
-     * Whether the requested resource is consented for the given use.
-     *
-     * @var bool
-     */
-    public $consented;
-    /**
-     * The resource names of all evaluated Consents mapped to their evaluation.
-     *
-     * @param ConsentEvaluation[] $consentDetails
-     */
-    public function setConsentDetails($consentDetails)
+namespace Google\Service\CloudHealthcare {
+    class CheckDataAccessResponse extends \Google\Model
     {
+        protected $consentDetailsType = ConsentEvaluation::class;
+        protected $consentDetailsDataType = 'map';
+        /**
+         * Whether the requested resource is consented for the given use.
+         *
+         * @var bool
+         */
+        public $consented;
+        /**
+         * The resource names of all evaluated Consents mapped to their evaluation.
+         *
+         * @param ConsentEvaluation[] $consentDetails
+         */
+        public function setConsentDetails($consentDetails)
+        {
+        }
+        /**
+         * @return ConsentEvaluation[]
+         */
+        public function getConsentDetails()
+        {
+        }
+        /**
+         * Whether the requested resource is consented for the given use.
+         *
+         * @param bool $consented
+         */
+        public function setConsented($consented)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getConsented()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ConsentEvaluation[]
+     * Runtime class alias of \Google\Service\CloudHealthcare\CheckDataAccessResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConsentDetails()
-    {
-    }
-    /**
-     * Whether the requested resource is consented for the given use.
-     *
-     * @param bool $consented
-     */
-    public function setConsented($consented)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getConsented()
+    class Google_Service_CloudHealthcare_CheckDataAccessResponse extends \Google\Service\CloudHealthcare\CheckDataAccessResponse
     {
     }
 }

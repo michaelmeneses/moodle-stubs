@@ -21,102 +21,111 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Drive;
-
-class PermissionPermissionDetails extends \Google\Model
-{
-    /**
-     * Output only. Whether this permission is inherited. This field is always
-     * populated. This is an output-only field.
-     *
-     * @var bool
-     */
-    public $inherited;
-    /**
-     * Output only. The ID of the item from which this permission is inherited.
-     * This is only populated for items in shared drives.
-     *
-     * @var string
-     */
-    public $inheritedFrom;
-    /**
-     * Output only. The permission type for this user. Supported values include: *
-     * `file` * `member`
-     *
-     * @var string
-     */
-    public $permissionType;
-    /**
-     * Output only. The primary role for this user. Supported values include: *
-     * `owner` * `organizer` * `fileOrganizer` * `writer` * `commenter` * `reader`
-     * For more information, see [Roles and
-     * permissions](https://developers.google.com/workspace/drive/api/guides/ref-
-     * roles).
-     *
-     * @var string
-     */
-    public $role;
-    /**
-     * Output only. Whether this permission is inherited. This field is always
-     * populated. This is an output-only field.
-     *
-     * @param bool $inherited
-     */
-    public function setInherited($inherited)
+namespace Google\Service\Drive {
+    class PermissionPermissionDetails extends \Google\Model
     {
+        /**
+         * Output only. Whether this permission is inherited. This field is always
+         * populated. This is an output-only field.
+         *
+         * @var bool
+         */
+        public $inherited;
+        /**
+         * Output only. The ID of the item from which this permission is inherited.
+         * This is only populated for items in shared drives.
+         *
+         * @var string
+         */
+        public $inheritedFrom;
+        /**
+         * Output only. The permission type for this user. Supported values include: *
+         * `file` * `member`
+         *
+         * @var string
+         */
+        public $permissionType;
+        /**
+         * Output only. The primary role for this user. Supported values include: *
+         * `owner` * `organizer` * `fileOrganizer` * `writer` * `commenter` * `reader`
+         * For more information, see [Roles and
+         * permissions](https://developers.google.com/workspace/drive/api/guides/ref-
+         * roles).
+         *
+         * @var string
+         */
+        public $role;
+        /**
+         * Output only. Whether this permission is inherited. This field is always
+         * populated. This is an output-only field.
+         *
+         * @param bool $inherited
+         */
+        public function setInherited($inherited)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getInherited()
+        {
+        }
+        /**
+         * Output only. The ID of the item from which this permission is inherited.
+         * This is only populated for items in shared drives.
+         *
+         * @param string $inheritedFrom
+         */
+        public function setInheritedFrom($inheritedFrom)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInheritedFrom()
+        {
+        }
+        /**
+         * Output only. The permission type for this user. Supported values include: *
+         * `file` * `member`
+         *
+         * @param string $permissionType
+         */
+        public function setPermissionType($permissionType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPermissionType()
+        {
+        }
+        /**
+         * Output only. The primary role for this user. Supported values include: *
+         * `owner` * `organizer` * `fileOrganizer` * `writer` * `commenter` * `reader`
+         * For more information, see [Roles and
+         * permissions](https://developers.google.com/workspace/drive/api/guides/ref-
+         * roles).
+         *
+         * @param string $role
+         */
+        public function setRole($role)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRole()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Drive\PermissionPermissionDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInherited()
-    {
-    }
-    /**
-     * Output only. The ID of the item from which this permission is inherited.
-     * This is only populated for items in shared drives.
-     *
-     * @param string $inheritedFrom
-     */
-    public function setInheritedFrom($inheritedFrom)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInheritedFrom()
-    {
-    }
-    /**
-     * Output only. The permission type for this user. Supported values include: *
-     * `file` * `member`
-     *
-     * @param string $permissionType
-     */
-    public function setPermissionType($permissionType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPermissionType()
-    {
-    }
-    /**
-     * Output only. The primary role for this user. Supported values include: *
-     * `owner` * `organizer` * `fileOrganizer` * `writer` * `commenter` * `reader`
-     * For more information, see [Roles and
-     * permissions](https://developers.google.com/workspace/drive/api/guides/ref-
-     * roles).
-     *
-     * @param string $role
-     */
-    public function setRole($role)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRole()
+    class Google_Service_Drive_PermissionPermissionDetails extends \Google\Service\Drive\PermissionPermissionDetails
     {
     }
 }

@@ -21,47 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
-* Service definition for Playdeveloperreporting (v1beta1).
-*
-* <p>
-</p>
-*
-* <p>
-* For more information about this service, see the API
-* <a href="https://developers.google.com/play/developer/reporting" target="_blank">Documentation</a>
-* </p>
-*
-* @author Google, Inc.
-*/
-class Playdeveloperreporting extends \Google\Service
-{
-    /** See metrics and data about the apps in your Google Play Developer account. */
-    const PLAYDEVELOPERREPORTING = "https://www.googleapis.com/auth/playdeveloperreporting";
-    public $anomalies;
-    public $apps;
-    public $vitals_anrrate;
-    public $vitals_crashrate;
-    public $vitals_errors_counts;
-    public $vitals_errors_issues;
-    public $vitals_errors_reports;
-    public $vitals_excessivewakeuprate;
-    public $vitals_lmkrate;
-    public $vitals_slowrenderingrate;
-    public $vitals_slowstartrate;
-    public $vitals_stuckbackgroundwakelockrate;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the Playdeveloperreporting
-     * service.
-     *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+    * Service definition for Playdeveloperreporting (v1beta1).
+    *
+    * <p>
+    </p>
+    *
+    * <p>
+    * For more information about this service, see the API
+    * <a href="https://developers.google.com/play/developer/reporting" target="_blank">Documentation</a>
+    * </p>
+    *
+    * @author Google, Inc.
+    */
+    class Playdeveloperreporting extends \Google\Service
+    {
+        /** See metrics and data about the apps in your Google Play Developer account. */
+        const PLAYDEVELOPERREPORTING = "https://www.googleapis.com/auth/playdeveloperreporting";
+        public $anomalies;
+        public $apps;
+        public $vitals_anrrate;
+        public $vitals_crashrate;
+        public $vitals_errors_counts;
+        public $vitals_errors_issues;
+        public $vitals_errors_reports;
+        public $vitals_excessivewakeuprate;
+        public $vitals_lmkrate;
+        public $vitals_slowrenderingrate;
+        public $vitals_slowstartrate;
+        public $vitals_stuckbackgroundwakelockrate;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the Playdeveloperreporting
+         * service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Playdeveloperreporting registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class Google_Service_Playdeveloperreporting extends \Google\Service\Playdeveloperreporting
     {
     }
 }

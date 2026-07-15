@@ -16,6 +16,8 @@
  */
 namespace Monolog\Processor;
 
+use Monolog\Utils;
+use Monolog\LogRecord;
 /**
  * Processes a record's message according to PSR-3 rules
  *

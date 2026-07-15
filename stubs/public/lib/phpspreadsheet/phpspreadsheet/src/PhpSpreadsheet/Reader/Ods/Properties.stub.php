@@ -8,6 +8,9 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Reader\Ods;
 
+use PhpOffice\PhpSpreadsheet\Document\Properties as DocumentProperties;
+use PhpOffice\PhpSpreadsheet\Spreadsheet;
+use SimpleXMLElement;
 class Properties
 {
     private Spreadsheet $spreadsheet;

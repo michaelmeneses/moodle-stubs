@@ -21,142 +21,151 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Script;
-
-class GoogleAppsScriptTypeAddOnEntryPoint extends \Google\Model
-{
-    /**
-     * Default value, unknown add-on type.
-     */
-    public const ADD_ON_TYPE_UNKNOWN_ADDON_TYPE = 'UNKNOWN_ADDON_TYPE';
-    /**
-     * Add-on type for Gmail.
-     */
-    public const ADD_ON_TYPE_GMAIL = 'GMAIL';
-    /**
-     * Add-on type for Data Studio.
-     */
-    public const ADD_ON_TYPE_DATA_STUDIO = 'DATA_STUDIO';
-    /**
-     * The add-on's required list of supported container types.
-     *
-     * @var string
-     */
-    public $addOnType;
-    /**
-     * The add-on's optional description.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * The add-on's optional help URL.
-     *
-     * @var string
-     */
-    public $helpUrl;
-    /**
-     * The add-on's required post install tip URL.
-     *
-     * @var string
-     */
-    public $postInstallTipUrl;
-    /**
-     * The add-on's optional report issue URL.
-     *
-     * @var string
-     */
-    public $reportIssueUrl;
-    /**
-     * The add-on's required title.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * The add-on's required list of supported container types.
-     *
-     * Accepted values: UNKNOWN_ADDON_TYPE, GMAIL, DATA_STUDIO
-     *
-     * @param self::ADD_ON_TYPE_* $addOnType
-     */
-    public function setAddOnType($addOnType)
+namespace Google\Service\Script {
+    class GoogleAppsScriptTypeAddOnEntryPoint extends \Google\Model
     {
+        /**
+         * Default value, unknown add-on type.
+         */
+        public const ADD_ON_TYPE_UNKNOWN_ADDON_TYPE = 'UNKNOWN_ADDON_TYPE';
+        /**
+         * Add-on type for Gmail.
+         */
+        public const ADD_ON_TYPE_GMAIL = 'GMAIL';
+        /**
+         * Add-on type for Data Studio.
+         */
+        public const ADD_ON_TYPE_DATA_STUDIO = 'DATA_STUDIO';
+        /**
+         * The add-on's required list of supported container types.
+         *
+         * @var string
+         */
+        public $addOnType;
+        /**
+         * The add-on's optional description.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * The add-on's optional help URL.
+         *
+         * @var string
+         */
+        public $helpUrl;
+        /**
+         * The add-on's required post install tip URL.
+         *
+         * @var string
+         */
+        public $postInstallTipUrl;
+        /**
+         * The add-on's optional report issue URL.
+         *
+         * @var string
+         */
+        public $reportIssueUrl;
+        /**
+         * The add-on's required title.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * The add-on's required list of supported container types.
+         *
+         * Accepted values: UNKNOWN_ADDON_TYPE, GMAIL, DATA_STUDIO
+         *
+         * @param self::ADD_ON_TYPE_* $addOnType
+         */
+        public function setAddOnType($addOnType)
+        {
+        }
+        /**
+         * @return self::ADD_ON_TYPE_*
+         */
+        public function getAddOnType()
+        {
+        }
+        /**
+         * The add-on's optional description.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * The add-on's optional help URL.
+         *
+         * @param string $helpUrl
+         */
+        public function setHelpUrl($helpUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHelpUrl()
+        {
+        }
+        /**
+         * The add-on's required post install tip URL.
+         *
+         * @param string $postInstallTipUrl
+         */
+        public function setPostInstallTipUrl($postInstallTipUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPostInstallTipUrl()
+        {
+        }
+        /**
+         * The add-on's optional report issue URL.
+         *
+         * @param string $reportIssueUrl
+         */
+        public function setReportIssueUrl($reportIssueUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReportIssueUrl()
+        {
+        }
+        /**
+         * The add-on's required title.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::ADD_ON_TYPE_*
+     * Runtime class alias of \Google\Service\Script\GoogleAppsScriptTypeAddOnEntryPoint registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddOnType()
-    {
-    }
-    /**
-     * The add-on's optional description.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * The add-on's optional help URL.
-     *
-     * @param string $helpUrl
-     */
-    public function setHelpUrl($helpUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHelpUrl()
-    {
-    }
-    /**
-     * The add-on's required post install tip URL.
-     *
-     * @param string $postInstallTipUrl
-     */
-    public function setPostInstallTipUrl($postInstallTipUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPostInstallTipUrl()
-    {
-    }
-    /**
-     * The add-on's optional report issue URL.
-     *
-     * @param string $reportIssueUrl
-     */
-    public function setReportIssueUrl($reportIssueUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReportIssueUrl()
-    {
-    }
-    /**
-     * The add-on's required title.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_Script_GoogleAppsScriptTypeAddOnEntryPoint extends \Google\Service\Script\GoogleAppsScriptTypeAddOnEntryPoint
     {
     }
 }

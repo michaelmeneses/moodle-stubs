@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AlertCenter;
-
-class EntityList extends \Google\Collection
-{
-    protected $collection_key = 'headers';
-    protected $entitiesType = Entity::class;
-    protected $entitiesDataType = 'array';
-    /**
-     * Headers of the values in entities. If no value is defined in Entity, this
-     * field should be empty.
-     *
-     * @var string[]
-     */
-    public $headers;
-    /**
-     * Name of the key detail used to display this entity list.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * List of entities affected by the alert.
-     *
-     * @param Entity[] $entities
-     */
-    public function setEntities($entities)
+namespace Google\Service\AlertCenter {
+    class EntityList extends \Google\Collection
     {
+        protected $collection_key = 'headers';
+        protected $entitiesType = Entity::class;
+        protected $entitiesDataType = 'array';
+        /**
+         * Headers of the values in entities. If no value is defined in Entity, this
+         * field should be empty.
+         *
+         * @var string[]
+         */
+        public $headers;
+        /**
+         * Name of the key detail used to display this entity list.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * List of entities affected by the alert.
+         *
+         * @param Entity[] $entities
+         */
+        public function setEntities($entities)
+        {
+        }
+        /**
+         * @return Entity[]
+         */
+        public function getEntities()
+        {
+        }
+        /**
+         * Headers of the values in entities. If no value is defined in Entity, this
+         * field should be empty.
+         *
+         * @param string[] $headers
+         */
+        public function setHeaders($headers)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getHeaders()
+        {
+        }
+        /**
+         * Name of the key detail used to display this entity list.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Entity[]
+     * Runtime class alias of \Google\Service\AlertCenter\EntityList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntities()
-    {
-    }
-    /**
-     * Headers of the values in entities. If no value is defined in Entity, this
-     * field should be empty.
-     *
-     * @param string[] $headers
-     */
-    public function setHeaders($headers)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getHeaders()
-    {
-    }
-    /**
-     * Name of the key detail used to display this entity list.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_AlertCenter_EntityList extends \Google\Service\AlertCenter\EntityList
     {
     }
 }

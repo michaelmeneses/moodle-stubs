@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1DataScanEventDataQualityAppliedConfigs extends \Google\Model
-{
-    /**
-     * Boolean indicating whether a row filter was applied in the DataScan job.
-     *
-     * @var bool
-     */
-    public $rowFilterApplied;
-    /**
-     * The percentage of the records selected from the dataset for DataScan. Value
-     * ranges between 0.0 and 100.0. Value 0.0 or 100.0 imply that sampling was
-     * not applied.
-     *
-     * @var float
-     */
-    public $samplingPercent;
-    /**
-     * Boolean indicating whether a row filter was applied in the DataScan job.
-     *
-     * @param bool $rowFilterApplied
-     */
-    public function setRowFilterApplied($rowFilterApplied)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1DataScanEventDataQualityAppliedConfigs extends \Google\Model
     {
+        /**
+         * Boolean indicating whether a row filter was applied in the DataScan job.
+         *
+         * @var bool
+         */
+        public $rowFilterApplied;
+        /**
+         * The percentage of the records selected from the dataset for DataScan. Value
+         * ranges between 0.0 and 100.0. Value 0.0 or 100.0 imply that sampling was
+         * not applied.
+         *
+         * @var float
+         */
+        public $samplingPercent;
+        /**
+         * Boolean indicating whether a row filter was applied in the DataScan job.
+         *
+         * @param bool $rowFilterApplied
+         */
+        public function setRowFilterApplied($rowFilterApplied)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getRowFilterApplied()
+        {
+        }
+        /**
+         * The percentage of the records selected from the dataset for DataScan. Value
+         * ranges between 0.0 and 100.0. Value 0.0 or 100.0 imply that sampling was
+         * not applied.
+         *
+         * @param float $samplingPercent
+         */
+        public function setSamplingPercent($samplingPercent)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getSamplingPercent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataScanEventDataQualityAppliedConfigs registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRowFilterApplied()
-    {
-    }
-    /**
-     * The percentage of the records selected from the dataset for DataScan. Value
-     * ranges between 0.0 and 100.0. Value 0.0 or 100.0 imply that sampling was
-     * not applied.
-     *
-     * @param float $samplingPercent
-     */
-    public function setSamplingPercent($samplingPercent)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getSamplingPercent()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1DataScanEventDataQualityAppliedConfigs extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataScanEventDataQualityAppliedConfigs
     {
     }
 }

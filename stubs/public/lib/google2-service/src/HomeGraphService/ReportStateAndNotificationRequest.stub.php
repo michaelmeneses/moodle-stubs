@@ -21,107 +21,116 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HomeGraphService;
-
-class ReportStateAndNotificationRequest extends \Google\Model
-{
-    /**
-     * Required. Third-party user ID.
-     *
-     * @var string
-     */
-    public $agentUserId;
-    /**
-     * Unique identifier per event (for example, a doorbell press).
-     *
-     * @var string
-     */
-    public $eventId;
-    /**
-     * Deprecated.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $followUpToken;
-    protected $payloadType = StateAndNotificationPayload::class;
-    protected $payloadDataType = '';
-    /**
-     * Request ID used for debugging.
-     *
-     * @var string
-     */
-    public $requestId;
-    /**
-     * Required. Third-party user ID.
-     *
-     * @param string $agentUserId
-     */
-    public function setAgentUserId($agentUserId)
+namespace Google\Service\HomeGraphService {
+    class ReportStateAndNotificationRequest extends \Google\Model
     {
+        /**
+         * Required. Third-party user ID.
+         *
+         * @var string
+         */
+        public $agentUserId;
+        /**
+         * Unique identifier per event (for example, a doorbell press).
+         *
+         * @var string
+         */
+        public $eventId;
+        /**
+         * Deprecated.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $followUpToken;
+        protected $payloadType = StateAndNotificationPayload::class;
+        protected $payloadDataType = '';
+        /**
+         * Request ID used for debugging.
+         *
+         * @var string
+         */
+        public $requestId;
+        /**
+         * Required. Third-party user ID.
+         *
+         * @param string $agentUserId
+         */
+        public function setAgentUserId($agentUserId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAgentUserId()
+        {
+        }
+        /**
+         * Unique identifier per event (for example, a doorbell press).
+         *
+         * @param string $eventId
+         */
+        public function setEventId($eventId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEventId()
+        {
+        }
+        /**
+         * Deprecated.
+         *
+         * @deprecated
+         * @param string $followUpToken
+         */
+        public function setFollowUpToken($followUpToken)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getFollowUpToken()
+        {
+        }
+        /**
+         * Required. State of devices to update and notification metadata for devices.
+         *
+         * @param StateAndNotificationPayload $payload
+         */
+        public function setPayload(StateAndNotificationPayload $payload)
+        {
+        }
+        /**
+         * @return StateAndNotificationPayload
+         */
+        public function getPayload()
+        {
+        }
+        /**
+         * Request ID used for debugging.
+         *
+         * @param string $requestId
+         */
+        public function setRequestId($requestId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\HomeGraphService\ReportStateAndNotificationRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAgentUserId()
-    {
-    }
-    /**
-     * Unique identifier per event (for example, a doorbell press).
-     *
-     * @param string $eventId
-     */
-    public function setEventId($eventId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEventId()
-    {
-    }
-    /**
-     * Deprecated.
-     *
-     * @deprecated
-     * @param string $followUpToken
-     */
-    public function setFollowUpToken($followUpToken)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getFollowUpToken()
-    {
-    }
-    /**
-     * Required. State of devices to update and notification metadata for devices.
-     *
-     * @param StateAndNotificationPayload $payload
-     */
-    public function setPayload(StateAndNotificationPayload $payload)
-    {
-    }
-    /**
-     * @return StateAndNotificationPayload
-     */
-    public function getPayload()
-    {
-    }
-    /**
-     * Request ID used for debugging.
-     *
-     * @param string $requestId
-     */
-    public function setRequestId($requestId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestId()
+    class Google_Service_HomeGraphService_ReportStateAndNotificationRequest extends \Google\Service\HomeGraphService\ReportStateAndNotificationRequest
     {
     }
 }

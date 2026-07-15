@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Indexing;
-
-class UrlNotificationMetadata extends \Google\Model
-{
-    protected $latestRemoveType = UrlNotification::class;
-    protected $latestRemoveDataType = '';
-    protected $latestUpdateType = UrlNotification::class;
-    protected $latestUpdateDataType = '';
-    /**
-     * URL to which this metadata refers.
-     *
-     * @var string
-     */
-    public $url;
-    /**
-     * Latest notification received with type `URL_REMOVED`.
-     *
-     * @param UrlNotification $latestRemove
-     */
-    public function setLatestRemove(UrlNotification $latestRemove)
+namespace Google\Service\Indexing {
+    class UrlNotificationMetadata extends \Google\Model
     {
+        protected $latestRemoveType = UrlNotification::class;
+        protected $latestRemoveDataType = '';
+        protected $latestUpdateType = UrlNotification::class;
+        protected $latestUpdateDataType = '';
+        /**
+         * URL to which this metadata refers.
+         *
+         * @var string
+         */
+        public $url;
+        /**
+         * Latest notification received with type `URL_REMOVED`.
+         *
+         * @param UrlNotification $latestRemove
+         */
+        public function setLatestRemove(UrlNotification $latestRemove)
+        {
+        }
+        /**
+         * @return UrlNotification
+         */
+        public function getLatestRemove()
+        {
+        }
+        /**
+         * Latest notification received with type `URL_UPDATED`.
+         *
+         * @param UrlNotification $latestUpdate
+         */
+        public function setLatestUpdate(UrlNotification $latestUpdate)
+        {
+        }
+        /**
+         * @return UrlNotification
+         */
+        public function getLatestUpdate()
+        {
+        }
+        /**
+         * URL to which this metadata refers.
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return UrlNotification
+     * Runtime class alias of \Google\Service\Indexing\UrlNotificationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLatestRemove()
-    {
-    }
-    /**
-     * Latest notification received with type `URL_UPDATED`.
-     *
-     * @param UrlNotification $latestUpdate
-     */
-    public function setLatestUpdate(UrlNotification $latestUpdate)
-    {
-    }
-    /**
-     * @return UrlNotification
-     */
-    public function getLatestUpdate()
-    {
-    }
-    /**
-     * URL to which this metadata refers.
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
+    class Google_Service_Indexing_UrlNotificationMetadata extends \Google\Service\Indexing\UrlNotificationMetadata
     {
     }
 }

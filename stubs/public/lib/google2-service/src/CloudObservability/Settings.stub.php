@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudObservability;
-
-class Settings extends \Google\Model
-{
-    /**
-     * Optional. The location which should be used when any regional resources are
-     * provisioned by GCP.
-     *
-     * @var string
-     */
-    public $defaultStorageLocation;
-    /**
-     * Optional. The resource name for the configured Cloud KMS key. KMS key name
-     * format: "projects/[PROJECT_ID]/locations/[LOCATION]/keyRings/[KEYRING]/cryp
-     * toKeys/[KEY]" For example: `"projects/my-project/locations/us-
-     * central1/keyRings/my-ring/cryptoKeys/my-key"`
-     *
-     * @var string
-     */
-    public $kmsKeyName;
-    /**
-     * Identifier. The resource name of the settings.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The service account for the given resource container, such as
-     * project or folder. This will be used by Cloud Observability to perform
-     * actions in the container's project like access KMS keys or create Links.
-     * Always the same service account per resource container regardless of
-     * region.
-     *
-     * @var string
-     */
-    public $serviceAccountId;
-    /**
-     * Optional. The location which should be used when any regional resources are
-     * provisioned by GCP.
-     *
-     * @param string $defaultStorageLocation
-     */
-    public function setDefaultStorageLocation($defaultStorageLocation)
+namespace Google\Service\CloudObservability {
+    class Settings extends \Google\Model
     {
+        /**
+         * Optional. The location which should be used when any regional resources are
+         * provisioned by GCP.
+         *
+         * @var string
+         */
+        public $defaultStorageLocation;
+        /**
+         * Optional. The resource name for the configured Cloud KMS key. KMS key name
+         * format: "projects/[PROJECT_ID]/locations/[LOCATION]/keyRings/[KEYRING]/cryp
+         * toKeys/[KEY]" For example: `"projects/my-project/locations/us-
+         * central1/keyRings/my-ring/cryptoKeys/my-key"`
+         *
+         * @var string
+         */
+        public $kmsKeyName;
+        /**
+         * Identifier. The resource name of the settings.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The service account for the given resource container, such as
+         * project or folder. This will be used by Cloud Observability to perform
+         * actions in the container's project like access KMS keys or create Links.
+         * Always the same service account per resource container regardless of
+         * region.
+         *
+         * @var string
+         */
+        public $serviceAccountId;
+        /**
+         * Optional. The location which should be used when any regional resources are
+         * provisioned by GCP.
+         *
+         * @param string $defaultStorageLocation
+         */
+        public function setDefaultStorageLocation($defaultStorageLocation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDefaultStorageLocation()
+        {
+        }
+        /**
+         * Optional. The resource name for the configured Cloud KMS key. KMS key name
+         * format: "projects/[PROJECT_ID]/locations/[LOCATION]/keyRings/[KEYRING]/cryp
+         * toKeys/[KEY]" For example: `"projects/my-project/locations/us-
+         * central1/keyRings/my-ring/cryptoKeys/my-key"`
+         *
+         * @param string $kmsKeyName
+         */
+        public function setKmsKeyName($kmsKeyName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKmsKeyName()
+        {
+        }
+        /**
+         * Identifier. The resource name of the settings.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The service account for the given resource container, such as
+         * project or folder. This will be used by Cloud Observability to perform
+         * actions in the container's project like access KMS keys or create Links.
+         * Always the same service account per resource container regardless of
+         * region.
+         *
+         * @param string $serviceAccountId
+         */
+        public function setServiceAccountId($serviceAccountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceAccountId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudObservability\Settings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDefaultStorageLocation()
-    {
-    }
-    /**
-     * Optional. The resource name for the configured Cloud KMS key. KMS key name
-     * format: "projects/[PROJECT_ID]/locations/[LOCATION]/keyRings/[KEYRING]/cryp
-     * toKeys/[KEY]" For example: `"projects/my-project/locations/us-
-     * central1/keyRings/my-ring/cryptoKeys/my-key"`
-     *
-     * @param string $kmsKeyName
-     */
-    public function setKmsKeyName($kmsKeyName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKmsKeyName()
-    {
-    }
-    /**
-     * Identifier. The resource name of the settings.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The service account for the given resource container, such as
-     * project or folder. This will be used by Cloud Observability to perform
-     * actions in the container's project like access KMS keys or create Links.
-     * Always the same service account per resource container regardless of
-     * region.
-     *
-     * @param string $serviceAccountId
-     */
-    public function setServiceAccountId($serviceAccountId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceAccountId()
+    class Google_Service_CloudObservability_Settings extends \Google\Service\CloudObservability\Settings
     {
     }
 }

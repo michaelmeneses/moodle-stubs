@@ -21,47 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PolicyAnalyzer\Resource;
-
-/**
- * The "activities" collection of methods.
- * Typical usage is:
- *  <code>
- *   $policyanalyzerService = new Google\Service\PolicyAnalyzer(...);
- *   $activities = $policyanalyzerService->folders_locations_activityTypes_activities;
- *  </code>
- */
-class FoldersLocationsActivityTypesActivities extends \Google\Service\Resource
-{
+namespace Google\Service\PolicyAnalyzer\Resource {
+    use Google\Service\PolicyAnalyzer\GoogleCloudPolicyanalyzerV1QueryActivityResponse;
     /**
-     * Queries policy activities on Google Cloud resources. (activities.query)
-     *
-     * @param string $parent Required. The container resource on which to execute
-     * the request. Acceptable formats: `projects/[PROJECT_ID|PROJECT_NUMBER]/locati
-     * ons/[LOCATION]/activityTypes/[ACTIVITY_TYPE]` LOCATION here refers to Google
-     * Cloud Locations: https://cloud.google.com/about/locations/
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Optional. Filter expression to restrict the
-     * activities returned. For serviceAccountLastAuthentication activities,
-     * supported filters are: - `activities.full_resource_name {=} [STRING]` -
-     * `activities.fullResourceName {=} [STRING]` where `[STRING]` is the full
-     * resource name of the service account. For serviceAccountKeyLastAuthentication
-     * activities, supported filters are: - `activities.full_resource_name {=}
-     * [STRING]` - `activities.fullResourceName {=} [STRING]` where `[STRING]` is
-     * the full resource name of the service account key.
-     * @opt_param int pageSize Optional. The maximum number of results to return
-     * from this request. Max limit is 1000. Non-positive values are ignored. The
-     * presence of `nextPageToken` in the response indicates that more results might
-     * be available.
-     * @opt_param string pageToken Optional. If present, then retrieve the next
-     * batch of results from the preceding call to this method. `pageToken` must be
-     * the value of `nextPageToken` from the previous response. The values of other
-     * method parameters should be identical to those in the previous call.
-     * @return GoogleCloudPolicyanalyzerV1QueryActivityResponse
-     * @throws \Google\Service\Exception
+     * The "activities" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $policyanalyzerService = new Google\Service\PolicyAnalyzer(...);
+     *   $activities = $policyanalyzerService->folders_locations_activityTypes_activities;
+     *  </code>
      */
-    public function query($parent, $optParams = [])
+    class FoldersLocationsActivityTypesActivities extends \Google\Service\Resource
+    {
+        /**
+         * Queries policy activities on Google Cloud resources. (activities.query)
+         *
+         * @param string $parent Required. The container resource on which to execute
+         * the request. Acceptable formats: `projects/[PROJECT_ID|PROJECT_NUMBER]/locati
+         * ons/[LOCATION]/activityTypes/[ACTIVITY_TYPE]` LOCATION here refers to Google
+         * Cloud Locations: https://cloud.google.com/about/locations/
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Optional. Filter expression to restrict the
+         * activities returned. For serviceAccountLastAuthentication activities,
+         * supported filters are: - `activities.full_resource_name {=} [STRING]` -
+         * `activities.fullResourceName {=} [STRING]` where `[STRING]` is the full
+         * resource name of the service account. For serviceAccountKeyLastAuthentication
+         * activities, supported filters are: - `activities.full_resource_name {=}
+         * [STRING]` - `activities.fullResourceName {=} [STRING]` where `[STRING]` is
+         * the full resource name of the service account key.
+         * @opt_param int pageSize Optional. The maximum number of results to return
+         * from this request. Max limit is 1000. Non-positive values are ignored. The
+         * presence of `nextPageToken` in the response indicates that more results might
+         * be available.
+         * @opt_param string pageToken Optional. If present, then retrieve the next
+         * batch of results from the preceding call to this method. `pageToken` must be
+         * the value of `nextPageToken` from the previous response. The values of other
+         * method parameters should be identical to those in the previous call.
+         * @return GoogleCloudPolicyanalyzerV1QueryActivityResponse
+         * @throws \Google\Service\Exception
+         */
+        public function query($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\PolicyAnalyzer\Resource\FoldersLocationsActivityTypesActivities registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_PolicyAnalyzer_Resource_FoldersLocationsActivityTypesActivities extends \Google\Service\PolicyAnalyzer\Resource\FoldersLocationsActivityTypesActivities
     {
     }
 }

@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMMigrationService;
-
-class Expiration extends \Google\Model
-{
-    /**
-     * Output only. Timestamp of when this resource is considered expired.
-     *
-     * @var string
-     */
-    public $expireTime;
-    /**
-     * Output only. Describes whether the expiration can be extended.
-     *
-     * @var bool
-     */
-    public $extendable;
-    /**
-     * Output only. The number of times expiration was extended.
-     *
-     * @var int
-     */
-    public $extensionCount;
-    /**
-     * Output only. Timestamp of when this resource is considered expired.
-     *
-     * @param string $expireTime
-     */
-    public function setExpireTime($expireTime)
+namespace Google\Service\VMMigrationService {
+    class Expiration extends \Google\Model
     {
+        /**
+         * Output only. Timestamp of when this resource is considered expired.
+         *
+         * @var string
+         */
+        public $expireTime;
+        /**
+         * Output only. Describes whether the expiration can be extended.
+         *
+         * @var bool
+         */
+        public $extendable;
+        /**
+         * Output only. The number of times expiration was extended.
+         *
+         * @var int
+         */
+        public $extensionCount;
+        /**
+         * Output only. Timestamp of when this resource is considered expired.
+         *
+         * @param string $expireTime
+         */
+        public function setExpireTime($expireTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpireTime()
+        {
+        }
+        /**
+         * Output only. Describes whether the expiration can be extended.
+         *
+         * @param bool $extendable
+         */
+        public function setExtendable($extendable)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getExtendable()
+        {
+        }
+        /**
+         * Output only. The number of times expiration was extended.
+         *
+         * @param int $extensionCount
+         */
+        public function setExtensionCount($extensionCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getExtensionCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\VMMigrationService\Expiration registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExpireTime()
-    {
-    }
-    /**
-     * Output only. Describes whether the expiration can be extended.
-     *
-     * @param bool $extendable
-     */
-    public function setExtendable($extendable)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getExtendable()
-    {
-    }
-    /**
-     * Output only. The number of times expiration was extended.
-     *
-     * @param int $extensionCount
-     */
-    public function setExtensionCount($extensionCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getExtensionCount()
+    class Google_Service_VMMigrationService_Expiration extends \Google\Service\VMMigrationService\Expiration
     {
     }
 }

@@ -21,40 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for DataTransfer (datatransfer_v1).
- *
- * <p>
- * Admin SDK lets administrators of enterprise domains to view and manage
- * resources like user, groups etc. It also provides audit and usage reports of
- * domain.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://developers.google.com/workspace/admin/" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class DataTransfer extends \Google\Service
-{
-    /** View and manage data transfers between users in your organization. */
-    const ADMIN_DATATRANSFER = "https://www.googleapis.com/auth/admin.datatransfer";
-    /** View data transfers between users in your organization. */
-    const ADMIN_DATATRANSFER_READONLY = "https://www.googleapis.com/auth/admin.datatransfer.readonly";
-    public $applications;
-    public $transfers;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the DataTransfer service.
+     * Service definition for DataTransfer (datatransfer_v1).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * Admin SDK lets administrators of enterprise domains to view and manage
+     * resources like user, groups etc. It also provides audit and usage reports of
+     * domain.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://developers.google.com/workspace/admin/" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class DataTransfer extends \Google\Service
+    {
+        /** View and manage data transfers between users in your organization. */
+        const ADMIN_DATATRANSFER = "https://www.googleapis.com/auth/admin.datatransfer";
+        /** View data transfers between users in your organization. */
+        const ADMIN_DATATRANSFER_READONLY = "https://www.googleapis.com/auth/admin.datatransfer.readonly";
+        public $applications;
+        public $transfers;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the DataTransfer service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\DataTransfer registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_DataTransfer extends \Google\Service\DataTransfer
     {
     }
 }

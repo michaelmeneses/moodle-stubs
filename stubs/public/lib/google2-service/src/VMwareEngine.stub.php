@@ -21,57 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for VMwareEngine (v1).
- *
- * <p>
- * The Google VMware Engine API lets you programmatically manage VMware
- * environments.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://cloud.google.com/solutions/vmware-as-a-service" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class VMwareEngine extends \Google\Service
-{
-    /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
-    const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
-    public $projects_locations;
-    public $projects_locations_announcements;
-    public $projects_locations_datastores;
-    public $projects_locations_dnsBindPermission;
-    public $projects_locations_networkPeerings;
-    public $projects_locations_networkPeerings_peeringRoutes;
-    public $projects_locations_networkPolicies;
-    public $projects_locations_networkPolicies_externalAccessRules;
-    public $projects_locations_nodeTypes;
-    public $projects_locations_operations;
-    public $projects_locations_privateClouds;
-    public $projects_locations_privateClouds_clusters;
-    public $projects_locations_privateClouds_clusters_nodes;
-    public $projects_locations_privateClouds_externalAddresses;
-    public $projects_locations_privateClouds_hcxActivationKeys;
-    public $projects_locations_privateClouds_loggingServers;
-    public $projects_locations_privateClouds_managementDnsZoneBindings;
-    public $projects_locations_privateClouds_subnets;
-    public $projects_locations_privateClouds_upgrades;
-    public $projects_locations_privateConnections;
-    public $projects_locations_privateConnections_peeringRoutes;
-    public $projects_locations_vmwareEngineNetworks;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the VMwareEngine service.
+     * Service definition for VMwareEngine (v1).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * The Google VMware Engine API lets you programmatically manage VMware
+     * environments.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://cloud.google.com/solutions/vmware-as-a-service" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class VMwareEngine extends \Google\Service
+    {
+        /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
+        const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
+        public $projects_locations;
+        public $projects_locations_announcements;
+        public $projects_locations_datastores;
+        public $projects_locations_dnsBindPermission;
+        public $projects_locations_networkPeerings;
+        public $projects_locations_networkPeerings_peeringRoutes;
+        public $projects_locations_networkPolicies;
+        public $projects_locations_networkPolicies_externalAccessRules;
+        public $projects_locations_nodeTypes;
+        public $projects_locations_operations;
+        public $projects_locations_privateClouds;
+        public $projects_locations_privateClouds_clusters;
+        public $projects_locations_privateClouds_clusters_nodes;
+        public $projects_locations_privateClouds_externalAddresses;
+        public $projects_locations_privateClouds_hcxActivationKeys;
+        public $projects_locations_privateClouds_loggingServers;
+        public $projects_locations_privateClouds_managementDnsZoneBindings;
+        public $projects_locations_privateClouds_subnets;
+        public $projects_locations_privateClouds_upgrades;
+        public $projects_locations_privateConnections;
+        public $projects_locations_privateConnections_peeringRoutes;
+        public $projects_locations_vmwareEngineNetworks;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the VMwareEngine service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\VMwareEngine registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_VMwareEngine extends \Google\Service\VMwareEngine
     {
     }
 }

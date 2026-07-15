@@ -21,95 +21,104 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamitePrivateMessageInfo extends \Google\Collection
-{
-    protected $collection_key = 'gsuiteIntegrationMetadata';
-    protected $annotationsType = AppsDynamiteAnnotation::class;
-    protected $annotationsDataType = 'array';
-    protected $attachmentsType = AppsDynamiteAttachment::class;
-    protected $attachmentsDataType = 'array';
-    protected $contextualAddOnMarkupType = GoogleChatV1ContextualAddOnMarkup::class;
-    protected $contextualAddOnMarkupDataType = 'array';
-    protected $gsuiteIntegrationMetadataType = AppsDynamiteGsuiteIntegrationMetadata::class;
-    protected $gsuiteIntegrationMetadataDataType = 'array';
-    /**
-     * @var string
-     */
-    public $text;
-    protected $userIdType = AppsDynamiteUserId::class;
-    protected $userIdDataType = '';
-    /**
-     * @param AppsDynamiteAnnotation[]
-     */
-    public function setAnnotations($annotations)
+namespace Google\Service\CloudSearch {
+    class AppsDynamitePrivateMessageInfo extends \Google\Collection
     {
+        protected $collection_key = 'gsuiteIntegrationMetadata';
+        protected $annotationsType = AppsDynamiteAnnotation::class;
+        protected $annotationsDataType = 'array';
+        protected $attachmentsType = AppsDynamiteAttachment::class;
+        protected $attachmentsDataType = 'array';
+        protected $contextualAddOnMarkupType = GoogleChatV1ContextualAddOnMarkup::class;
+        protected $contextualAddOnMarkupDataType = 'array';
+        protected $gsuiteIntegrationMetadataType = AppsDynamiteGsuiteIntegrationMetadata::class;
+        protected $gsuiteIntegrationMetadataDataType = 'array';
+        /**
+         * @var string
+         */
+        public $text;
+        protected $userIdType = AppsDynamiteUserId::class;
+        protected $userIdDataType = '';
+        /**
+         * @param AppsDynamiteAnnotation[]
+         */
+        public function setAnnotations($annotations)
+        {
+        }
+        /**
+         * @return AppsDynamiteAnnotation[]
+         */
+        public function getAnnotations()
+        {
+        }
+        /**
+         * @param AppsDynamiteAttachment[]
+         */
+        public function setAttachments($attachments)
+        {
+        }
+        /**
+         * @return AppsDynamiteAttachment[]
+         */
+        public function getAttachments()
+        {
+        }
+        /**
+         * @param GoogleChatV1ContextualAddOnMarkup[]
+         */
+        public function setContextualAddOnMarkup($contextualAddOnMarkup)
+        {
+        }
+        /**
+         * @return GoogleChatV1ContextualAddOnMarkup[]
+         */
+        public function getContextualAddOnMarkup()
+        {
+        }
+        /**
+         * @param AppsDynamiteGsuiteIntegrationMetadata[]
+         */
+        public function setGsuiteIntegrationMetadata($gsuiteIntegrationMetadata)
+        {
+        }
+        /**
+         * @return AppsDynamiteGsuiteIntegrationMetadata[]
+         */
+        public function getGsuiteIntegrationMetadata()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
+        /**
+         * @param AppsDynamiteUserId
+         */
+        public function setUserId(AppsDynamiteUserId $userId)
+        {
+        }
+        /**
+         * @return AppsDynamiteUserId
+         */
+        public function getUserId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppsDynamiteAnnotation[]
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamitePrivateMessageInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotations()
-    {
-    }
-    /**
-     * @param AppsDynamiteAttachment[]
-     */
-    public function setAttachments($attachments)
-    {
-    }
-    /**
-     * @return AppsDynamiteAttachment[]
-     */
-    public function getAttachments()
-    {
-    }
-    /**
-     * @param GoogleChatV1ContextualAddOnMarkup[]
-     */
-    public function setContextualAddOnMarkup($contextualAddOnMarkup)
-    {
-    }
-    /**
-     * @return GoogleChatV1ContextualAddOnMarkup[]
-     */
-    public function getContextualAddOnMarkup()
-    {
-    }
-    /**
-     * @param AppsDynamiteGsuiteIntegrationMetadata[]
-     */
-    public function setGsuiteIntegrationMetadata($gsuiteIntegrationMetadata)
-    {
-    }
-    /**
-     * @return AppsDynamiteGsuiteIntegrationMetadata[]
-     */
-    public function getGsuiteIntegrationMetadata()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
-    {
-    }
-    /**
-     * @param AppsDynamiteUserId
-     */
-    public function setUserId(AppsDynamiteUserId $userId)
-    {
-    }
-    /**
-     * @return AppsDynamiteUserId
-     */
-    public function getUserId()
+    class Google_Service_CloudSearch_AppsDynamitePrivateMessageInfo extends \Google\Service\CloudSearch\AppsDynamitePrivateMessageInfo
     {
     }
 }

@@ -21,33 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2WordList extends \Google\Collection
-{
-    protected $collection_key = 'words';
-    /**
-     * Words or phrases defining the dictionary. The dictionary must contain at
-     * least one phrase and every phrase must contain at least 2 characters that
-     * are letters or digits. [required]
-     *
-     * @var string[]
-     */
-    public $words;
-    /**
-     * Words or phrases defining the dictionary. The dictionary must contain at
-     * least one phrase and every phrase must contain at least 2 characters that
-     * are letters or digits. [required]
-     *
-     * @param string[] $words
-     */
-    public function setWords($words)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2WordList extends \Google\Collection
     {
+        protected $collection_key = 'words';
+        /**
+         * Words or phrases defining the dictionary. The dictionary must contain at
+         * least one phrase and every phrase must contain at least 2 characters that
+         * are letters or digits. [required]
+         *
+         * @var string[]
+         */
+        public $words;
+        /**
+         * Words or phrases defining the dictionary. The dictionary must contain at
+         * least one phrase and every phrase must contain at least 2 characters that
+         * are letters or digits. [required]
+         *
+         * @param string[] $words
+         */
+        public function setWords($words)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getWords()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2WordList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getWords()
+    class Google_Service_DLP_GooglePrivacyDlpV2WordList extends \Google\Service\DLP\GooglePrivacyDlpV2WordList
     {
     }
 }

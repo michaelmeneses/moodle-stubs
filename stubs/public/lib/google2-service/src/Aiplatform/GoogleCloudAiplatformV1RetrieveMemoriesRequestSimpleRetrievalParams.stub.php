@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1RetrieveMemoriesRequestSimpleRetrievalParams extends \Google\Model
-{
-    /**
-     * Optional. The maximum number of memories to return. The service may return
-     * fewer than this value. If unspecified, at most 3 memories will be returned.
-     * The maximum value is 100; values above 100 will be coerced to 100.
-     *
-     * @var int
-     */
-    public $pageSize;
-    /**
-     * Optional. A page token, received from a previous `RetrieveMemories` call.
-     * Provide this to retrieve the subsequent page.
-     *
-     * @var string
-     */
-    public $pageToken;
-    /**
-     * Optional. The maximum number of memories to return. The service may return
-     * fewer than this value. If unspecified, at most 3 memories will be returned.
-     * The maximum value is 100; values above 100 will be coerced to 100.
-     *
-     * @param int $pageSize
-     */
-    public function setPageSize($pageSize)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1RetrieveMemoriesRequestSimpleRetrievalParams extends \Google\Model
     {
+        /**
+         * Optional. The maximum number of memories to return. The service may return
+         * fewer than this value. If unspecified, at most 3 memories will be returned.
+         * The maximum value is 100; values above 100 will be coerced to 100.
+         *
+         * @var int
+         */
+        public $pageSize;
+        /**
+         * Optional. A page token, received from a previous `RetrieveMemories` call.
+         * Provide this to retrieve the subsequent page.
+         *
+         * @var string
+         */
+        public $pageToken;
+        /**
+         * Optional. The maximum number of memories to return. The service may return
+         * fewer than this value. If unspecified, at most 3 memories will be returned.
+         * The maximum value is 100; values above 100 will be coerced to 100.
+         *
+         * @param int $pageSize
+         */
+        public function setPageSize($pageSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPageSize()
+        {
+        }
+        /**
+         * Optional. A page token, received from a previous `RetrieveMemories` call.
+         * Provide this to retrieve the subsequent page.
+         *
+         * @param string $pageToken
+         */
+        public function setPageToken($pageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1RetrieveMemoriesRequestSimpleRetrievalParams registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPageSize()
-    {
-    }
-    /**
-     * Optional. A page token, received from a previous `RetrieveMemories` call.
-     * Provide this to retrieve the subsequent page.
-     *
-     * @param string $pageToken
-     */
-    public function setPageToken($pageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPageToken()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1RetrieveMemoriesRequestSimpleRetrievalParams extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1RetrieveMemoriesRequestSimpleRetrievalParams
     {
     }
 }

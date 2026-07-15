@@ -21,247 +21,256 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics;
-
-class CustomDimension extends \Google\Model
-{
-    /**
-     * Account ID.
-     *
-     * @var string
-     */
-    public $accountId;
-    /**
-     * Boolean indicating whether the custom dimension is active.
-     *
-     * @var bool
-     */
-    public $active;
-    /**
-     * Time the custom dimension was created.
-     *
-     * @var string
-     */
-    public $created;
-    /**
-     * Custom dimension ID.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Index of the custom dimension.
-     *
-     * @var int
-     */
-    public $index;
-    /**
-     * Kind value for a custom dimension. Set to "analytics#customDimension". It
-     * is a read-only field.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Name of the custom dimension.
-     *
-     * @var string
-     */
-    public $name;
-    protected $parentLinkType = CustomDimensionParentLink::class;
-    protected $parentLinkDataType = '';
-    /**
-     * Scope of the custom dimension: HIT, SESSION, USER or PRODUCT.
-     *
-     * @var string
-     */
-    public $scope;
-    /**
-     * Link for the custom dimension
-     *
-     * @var string
-     */
-    public $selfLink;
-    /**
-     * Time the custom dimension was last modified.
-     *
-     * @var string
-     */
-    public $updated;
-    /**
-     * Property ID.
-     *
-     * @var string
-     */
-    public $webPropertyId;
-    /**
-     * Account ID.
-     *
-     * @param string $accountId
-     */
-    public function setAccountId($accountId)
+namespace Google\Service\Analytics {
+    class CustomDimension extends \Google\Model
     {
+        /**
+         * Account ID.
+         *
+         * @var string
+         */
+        public $accountId;
+        /**
+         * Boolean indicating whether the custom dimension is active.
+         *
+         * @var bool
+         */
+        public $active;
+        /**
+         * Time the custom dimension was created.
+         *
+         * @var string
+         */
+        public $created;
+        /**
+         * Custom dimension ID.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Index of the custom dimension.
+         *
+         * @var int
+         */
+        public $index;
+        /**
+         * Kind value for a custom dimension. Set to "analytics#customDimension". It
+         * is a read-only field.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Name of the custom dimension.
+         *
+         * @var string
+         */
+        public $name;
+        protected $parentLinkType = CustomDimensionParentLink::class;
+        protected $parentLinkDataType = '';
+        /**
+         * Scope of the custom dimension: HIT, SESSION, USER or PRODUCT.
+         *
+         * @var string
+         */
+        public $scope;
+        /**
+         * Link for the custom dimension
+         *
+         * @var string
+         */
+        public $selfLink;
+        /**
+         * Time the custom dimension was last modified.
+         *
+         * @var string
+         */
+        public $updated;
+        /**
+         * Property ID.
+         *
+         * @var string
+         */
+        public $webPropertyId;
+        /**
+         * Account ID.
+         *
+         * @param string $accountId
+         */
+        public function setAccountId($accountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccountId()
+        {
+        }
+        /**
+         * Boolean indicating whether the custom dimension is active.
+         *
+         * @param bool $active
+         */
+        public function setActive($active)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getActive()
+        {
+        }
+        /**
+         * Time the custom dimension was created.
+         *
+         * @param string $created
+         */
+        public function setCreated($created)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreated()
+        {
+        }
+        /**
+         * Custom dimension ID.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Index of the custom dimension.
+         *
+         * @param int $index
+         */
+        public function setIndex($index)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getIndex()
+        {
+        }
+        /**
+         * Kind value for a custom dimension. Set to "analytics#customDimension". It
+         * is a read-only field.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Name of the custom dimension.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Parent link for the custom dimension. Points to the property to which the
+         * custom dimension belongs.
+         *
+         * @param CustomDimensionParentLink $parentLink
+         */
+        public function setParentLink(CustomDimensionParentLink $parentLink)
+        {
+        }
+        /**
+         * @return CustomDimensionParentLink
+         */
+        public function getParentLink()
+        {
+        }
+        /**
+         * Scope of the custom dimension: HIT, SESSION, USER or PRODUCT.
+         *
+         * @param string $scope
+         */
+        public function setScope($scope)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScope()
+        {
+        }
+        /**
+         * Link for the custom dimension
+         *
+         * @param string $selfLink
+         */
+        public function setSelfLink($selfLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelfLink()
+        {
+        }
+        /**
+         * Time the custom dimension was last modified.
+         *
+         * @param string $updated
+         */
+        public function setUpdated($updated)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdated()
+        {
+        }
+        /**
+         * Property ID.
+         *
+         * @param string $webPropertyId
+         */
+        public function setWebPropertyId($webPropertyId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWebPropertyId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Analytics\CustomDimension registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountId()
-    {
-    }
-    /**
-     * Boolean indicating whether the custom dimension is active.
-     *
-     * @param bool $active
-     */
-    public function setActive($active)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getActive()
-    {
-    }
-    /**
-     * Time the custom dimension was created.
-     *
-     * @param string $created
-     */
-    public function setCreated($created)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreated()
-    {
-    }
-    /**
-     * Custom dimension ID.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Index of the custom dimension.
-     *
-     * @param int $index
-     */
-    public function setIndex($index)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getIndex()
-    {
-    }
-    /**
-     * Kind value for a custom dimension. Set to "analytics#customDimension". It
-     * is a read-only field.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Name of the custom dimension.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Parent link for the custom dimension. Points to the property to which the
-     * custom dimension belongs.
-     *
-     * @param CustomDimensionParentLink $parentLink
-     */
-    public function setParentLink(CustomDimensionParentLink $parentLink)
-    {
-    }
-    /**
-     * @return CustomDimensionParentLink
-     */
-    public function getParentLink()
-    {
-    }
-    /**
-     * Scope of the custom dimension: HIT, SESSION, USER or PRODUCT.
-     *
-     * @param string $scope
-     */
-    public function setScope($scope)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getScope()
-    {
-    }
-    /**
-     * Link for the custom dimension
-     *
-     * @param string $selfLink
-     */
-    public function setSelfLink($selfLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelfLink()
-    {
-    }
-    /**
-     * Time the custom dimension was last modified.
-     *
-     * @param string $updated
-     */
-    public function setUpdated($updated)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdated()
-    {
-    }
-    /**
-     * Property ID.
-     *
-     * @param string $webPropertyId
-     */
-    public function setWebPropertyId($webPropertyId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWebPropertyId()
+    class Google_Service_Analytics_CustomDimension extends \Google\Service\Analytics\CustomDimension
     {
     }
 }

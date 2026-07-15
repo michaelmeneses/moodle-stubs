@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class GrafeasV1SlsaProvenanceZeroTwoSlsaBuilder extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $id;
-    /**
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\ContainerAnalysis {
+    class GrafeasV1SlsaProvenanceZeroTwoSlsaBuilder extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $id;
+        /**
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ContainerAnalysis\GrafeasV1SlsaProvenanceZeroTwoSlsaBuilder registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
+    class Google_Service_ContainerAnalysis_GrafeasV1SlsaProvenanceZeroTwoSlsaBuilder extends \Google\Service\ContainerAnalysis\GrafeasV1SlsaProvenanceZeroTwoSlsaBuilder
     {
     }
 }

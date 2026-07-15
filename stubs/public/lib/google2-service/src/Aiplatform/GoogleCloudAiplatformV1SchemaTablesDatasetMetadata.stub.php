@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaTablesDatasetMetadata extends \Google\Model
-{
-    protected $inputConfigType = GoogleCloudAiplatformV1SchemaTablesDatasetMetadataInputConfig::class;
-    protected $inputConfigDataType = '';
-    /**
-     * @param GoogleCloudAiplatformV1SchemaTablesDatasetMetadataInputConfig $inputConfig
-     */
-    public function setInputConfig(GoogleCloudAiplatformV1SchemaTablesDatasetMetadataInputConfig $inputConfig)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaTablesDatasetMetadata extends \Google\Model
     {
+        protected $inputConfigType = GoogleCloudAiplatformV1SchemaTablesDatasetMetadataInputConfig::class;
+        protected $inputConfigDataType = '';
+        /**
+         * @param GoogleCloudAiplatformV1SchemaTablesDatasetMetadataInputConfig $inputConfig
+         */
+        public function setInputConfig(GoogleCloudAiplatformV1SchemaTablesDatasetMetadataInputConfig $inputConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SchemaTablesDatasetMetadataInputConfig
+         */
+        public function getInputConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1SchemaTablesDatasetMetadataInputConfig
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaTablesDatasetMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInputConfig()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaTablesDatasetMetadata extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaTablesDatasetMetadata
     {
     }
 }

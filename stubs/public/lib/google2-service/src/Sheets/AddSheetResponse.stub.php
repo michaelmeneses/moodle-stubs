@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class AddSheetResponse extends \Google\Model
-{
-    protected $propertiesType = SheetProperties::class;
-    protected $propertiesDataType = '';
-    /**
-     * The properties of the newly added sheet.
-     *
-     * @param SheetProperties $properties
-     */
-    public function setProperties(SheetProperties $properties)
+namespace Google\Service\Sheets {
+    class AddSheetResponse extends \Google\Model
     {
+        protected $propertiesType = SheetProperties::class;
+        protected $propertiesDataType = '';
+        /**
+         * The properties of the newly added sheet.
+         *
+         * @param SheetProperties $properties
+         */
+        public function setProperties(SheetProperties $properties)
+        {
+        }
+        /**
+         * @return SheetProperties
+         */
+        public function getProperties()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SheetProperties
+     * Runtime class alias of \Google\Service\Sheets\AddSheetResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProperties()
+    class Google_Service_Sheets_AddSheetResponse extends \Google\Service\Sheets\AddSheetResponse
     {
     }
 }

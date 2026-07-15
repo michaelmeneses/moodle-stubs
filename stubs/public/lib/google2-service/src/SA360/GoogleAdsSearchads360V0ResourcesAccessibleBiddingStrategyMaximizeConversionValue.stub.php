@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0ResourcesAccessibleBiddingStrategyMaximizeConversionValue extends \Google\Model
-{
-    /**
-     * Output only. The target return on ad spend (ROAS) option. If set, the bid
-     * strategy will maximize revenue while averaging the target return on ad
-     * spend. If the target ROAS is high, the bid strategy may not be able to
-     * spend the full budget. If the target ROAS is not set, the bid strategy will
-     * aim to achieve the highest possible ROAS for the budget.
-     *
-     * @var 
-     */
-    public $targetRoas;
-    public function setTargetRoas($targetRoas)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0ResourcesAccessibleBiddingStrategyMaximizeConversionValue extends \Google\Model
     {
+        /**
+         * Output only. The target return on ad spend (ROAS) option. If set, the bid
+         * strategy will maximize revenue while averaging the target return on ad
+         * spend. If the target ROAS is high, the bid strategy may not be able to
+         * spend the full budget. If the target ROAS is not set, the bid strategy will
+         * aim to achieve the highest possible ROAS for the budget.
+         *
+         * @var 
+         */
+        public $targetRoas;
+        public function setTargetRoas($targetRoas)
+        {
+        }
+        public function getTargetRoas()
+        {
+        }
     }
-    public function getTargetRoas()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0ResourcesAccessibleBiddingStrategyMaximizeConversionValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_SA360_GoogleAdsSearchads360V0ResourcesAccessibleBiddingStrategyMaximizeConversionValue extends \Google\Service\SA360\GoogleAdsSearchads360V0ResourcesAccessibleBiddingStrategyMaximizeConversionValue
     {
     }
 }

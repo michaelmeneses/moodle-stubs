@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIdentity;
-
-class IdpCredential extends \Google\Model
-{
-    protected $dsaKeyInfoType = DsaPublicKeyInfo::class;
-    protected $dsaKeyInfoDataType = '';
-    /**
-     * Output only. [Resource
-     * name](https://cloud.google.com/apis/design/resource_names) of the
-     * credential.
-     *
-     * @var string
-     */
-    public $name;
-    protected $rsaKeyInfoType = RsaPublicKeyInfo::class;
-    protected $rsaKeyInfoDataType = '';
-    /**
-     * Output only. Time when the `IdpCredential` was last updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. Information of a DSA public key.
-     *
-     * @param DsaPublicKeyInfo $dsaKeyInfo
-     */
-    public function setDsaKeyInfo(DsaPublicKeyInfo $dsaKeyInfo)
+namespace Google\Service\CloudIdentity {
+    class IdpCredential extends \Google\Model
     {
+        protected $dsaKeyInfoType = DsaPublicKeyInfo::class;
+        protected $dsaKeyInfoDataType = '';
+        /**
+         * Output only. [Resource
+         * name](https://cloud.google.com/apis/design/resource_names) of the
+         * credential.
+         *
+         * @var string
+         */
+        public $name;
+        protected $rsaKeyInfoType = RsaPublicKeyInfo::class;
+        protected $rsaKeyInfoDataType = '';
+        /**
+         * Output only. Time when the `IdpCredential` was last updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. Information of a DSA public key.
+         *
+         * @param DsaPublicKeyInfo $dsaKeyInfo
+         */
+        public function setDsaKeyInfo(DsaPublicKeyInfo $dsaKeyInfo)
+        {
+        }
+        /**
+         * @return DsaPublicKeyInfo
+         */
+        public function getDsaKeyInfo()
+        {
+        }
+        /**
+         * Output only. [Resource
+         * name](https://cloud.google.com/apis/design/resource_names) of the
+         * credential.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. Information of a RSA public key.
+         *
+         * @param RsaPublicKeyInfo $rsaKeyInfo
+         */
+        public function setRsaKeyInfo(RsaPublicKeyInfo $rsaKeyInfo)
+        {
+        }
+        /**
+         * @return RsaPublicKeyInfo
+         */
+        public function getRsaKeyInfo()
+        {
+        }
+        /**
+         * Output only. Time when the `IdpCredential` was last updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DsaPublicKeyInfo
+     * Runtime class alias of \Google\Service\CloudIdentity\IdpCredential registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDsaKeyInfo()
-    {
-    }
-    /**
-     * Output only. [Resource
-     * name](https://cloud.google.com/apis/design/resource_names) of the
-     * credential.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. Information of a RSA public key.
-     *
-     * @param RsaPublicKeyInfo $rsaKeyInfo
-     */
-    public function setRsaKeyInfo(RsaPublicKeyInfo $rsaKeyInfo)
-    {
-    }
-    /**
-     * @return RsaPublicKeyInfo
-     */
-    public function getRsaKeyInfo()
-    {
-    }
-    /**
-     * Output only. Time when the `IdpCredential` was last updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_CloudIdentity_IdpCredential extends \Google\Service\CloudIdentity\IdpCredential
     {
     }
 }

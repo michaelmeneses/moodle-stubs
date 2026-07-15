@@ -21,208 +21,217 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class Membership extends \Google\Model
-{
-    protected $authorityType = Authority::class;
-    protected $authorityDataType = '';
-    /**
-     * @var string
-     */
-    public $createTime;
-    /**
-     * @var string
-     */
-    public $deleteTime;
-    /**
-     * @var string
-     */
-    public $description;
-    protected $endpointType = MembershipEndpoint::class;
-    protected $endpointDataType = '';
-    /**
-     * @var string
-     */
-    public $externalId;
-    /**
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * @var string
-     */
-    public $lastConnectionTime;
-    protected $monitoringConfigType = MonitoringConfig::class;
-    protected $monitoringConfigDataType = '';
-    /**
-     * @var string
-     */
-    public $name;
-    protected $stateType = MembershipState::class;
-    protected $stateDataType = '';
-    /**
-     * @var string
-     */
-    public $uniqueId;
-    /**
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * @param Authority
-     */
-    public function setAuthority(Authority $authority)
+namespace Google\Service\GKEHub {
+    class Membership extends \Google\Model
     {
+        protected $authorityType = Authority::class;
+        protected $authorityDataType = '';
+        /**
+         * @var string
+         */
+        public $createTime;
+        /**
+         * @var string
+         */
+        public $deleteTime;
+        /**
+         * @var string
+         */
+        public $description;
+        protected $endpointType = MembershipEndpoint::class;
+        protected $endpointDataType = '';
+        /**
+         * @var string
+         */
+        public $externalId;
+        /**
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * @var string
+         */
+        public $lastConnectionTime;
+        protected $monitoringConfigType = MonitoringConfig::class;
+        protected $monitoringConfigDataType = '';
+        /**
+         * @var string
+         */
+        public $name;
+        protected $stateType = MembershipState::class;
+        protected $stateDataType = '';
+        /**
+         * @var string
+         */
+        public $uniqueId;
+        /**
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * @param Authority
+         */
+        public function setAuthority(Authority $authority)
+        {
+        }
+        /**
+         * @return Authority
+         */
+        public function getAuthority()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDeleteTime($deleteTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeleteTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * @param MembershipEndpoint
+         */
+        public function setEndpoint(MembershipEndpoint $endpoint)
+        {
+        }
+        /**
+         * @return MembershipEndpoint
+         */
+        public function getEndpoint()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setExternalId($externalId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExternalId()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLastConnectionTime($lastConnectionTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastConnectionTime()
+        {
+        }
+        /**
+         * @param MonitoringConfig
+         */
+        public function setMonitoringConfig(MonitoringConfig $monitoringConfig)
+        {
+        }
+        /**
+         * @return MonitoringConfig
+         */
+        public function getMonitoringConfig()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param MembershipState
+         */
+        public function setState(MembershipState $state)
+        {
+        }
+        /**
+         * @return MembershipState
+         */
+        public function getState()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUniqueId($uniqueId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUniqueId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Authority
+     * Runtime class alias of \Google\Service\GKEHub\Membership registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuthority()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDeleteTime($deleteTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeleteTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * @param MembershipEndpoint
-     */
-    public function setEndpoint(MembershipEndpoint $endpoint)
-    {
-    }
-    /**
-     * @return MembershipEndpoint
-     */
-    public function getEndpoint()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setExternalId($externalId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExternalId()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLastConnectionTime($lastConnectionTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastConnectionTime()
-    {
-    }
-    /**
-     * @param MonitoringConfig
-     */
-    public function setMonitoringConfig(MonitoringConfig $monitoringConfig)
-    {
-    }
-    /**
-     * @return MonitoringConfig
-     */
-    public function getMonitoringConfig()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param MembershipState
-     */
-    public function setState(MembershipState $state)
-    {
-    }
-    /**
-     * @return MembershipState
-     */
-    public function getState()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUniqueId($uniqueId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUniqueId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_GKEHub_Membership extends \Google\Service\GKEHub\Membership
     {
     }
 }

@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Localservices;
-
-class GoogleAdsHomeservicesLocalservicesV1PhoneLead extends \Google\Model
-{
-    /**
-     * Timestamp of the phone call which resulted in a charged phone lead.
-     *
-     * @var string
-     */
-    public $chargedCallTimestamp;
-    /**
-     * Duration of the charged phone call in seconds.
-     *
-     * @var string
-     */
-    public $chargedConnectedCallDurationSeconds;
-    /**
-     * Consumer phone number associated with the phone lead.
-     *
-     * @var string
-     */
-    public $consumerPhoneNumber;
-    /**
-     * Timestamp of the phone call which resulted in a charged phone lead.
-     *
-     * @param string $chargedCallTimestamp
-     */
-    public function setChargedCallTimestamp($chargedCallTimestamp)
+namespace Google\Service\Localservices {
+    class GoogleAdsHomeservicesLocalservicesV1PhoneLead extends \Google\Model
     {
+        /**
+         * Timestamp of the phone call which resulted in a charged phone lead.
+         *
+         * @var string
+         */
+        public $chargedCallTimestamp;
+        /**
+         * Duration of the charged phone call in seconds.
+         *
+         * @var string
+         */
+        public $chargedConnectedCallDurationSeconds;
+        /**
+         * Consumer phone number associated with the phone lead.
+         *
+         * @var string
+         */
+        public $consumerPhoneNumber;
+        /**
+         * Timestamp of the phone call which resulted in a charged phone lead.
+         *
+         * @param string $chargedCallTimestamp
+         */
+        public function setChargedCallTimestamp($chargedCallTimestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChargedCallTimestamp()
+        {
+        }
+        /**
+         * Duration of the charged phone call in seconds.
+         *
+         * @param string $chargedConnectedCallDurationSeconds
+         */
+        public function setChargedConnectedCallDurationSeconds($chargedConnectedCallDurationSeconds)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChargedConnectedCallDurationSeconds()
+        {
+        }
+        /**
+         * Consumer phone number associated with the phone lead.
+         *
+         * @param string $consumerPhoneNumber
+         */
+        public function setConsumerPhoneNumber($consumerPhoneNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConsumerPhoneNumber()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Localservices\GoogleAdsHomeservicesLocalservicesV1PhoneLead registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChargedCallTimestamp()
-    {
-    }
-    /**
-     * Duration of the charged phone call in seconds.
-     *
-     * @param string $chargedConnectedCallDurationSeconds
-     */
-    public function setChargedConnectedCallDurationSeconds($chargedConnectedCallDurationSeconds)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getChargedConnectedCallDurationSeconds()
-    {
-    }
-    /**
-     * Consumer phone number associated with the phone lead.
-     *
-     * @param string $consumerPhoneNumber
-     */
-    public function setConsumerPhoneNumber($consumerPhoneNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getConsumerPhoneNumber()
+    class Google_Service_Localservices_GoogleAdsHomeservicesLocalservicesV1PhoneLead extends \Google\Service\Localservices\GoogleAdsHomeservicesLocalservicesV1PhoneLead
     {
     }
 }

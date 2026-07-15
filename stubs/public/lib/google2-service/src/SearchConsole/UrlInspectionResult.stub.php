@@ -21,95 +21,104 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SearchConsole;
-
-class UrlInspectionResult extends \Google\Model
-{
-    protected $ampResultType = AmpInspectionResult::class;
-    protected $ampResultDataType = '';
-    protected $indexStatusResultType = IndexStatusInspectionResult::class;
-    protected $indexStatusResultDataType = '';
-    /**
-     * Link to Search Console URL inspection.
-     *
-     * @var string
-     */
-    public $inspectionResultLink;
-    protected $mobileUsabilityResultType = MobileUsabilityInspectionResult::class;
-    protected $mobileUsabilityResultDataType = '';
-    protected $richResultsResultType = RichResultsInspectionResult::class;
-    protected $richResultsResultDataType = '';
-    /**
-     * Result of the AMP analysis. Absent if the page is not an AMP page.
-     *
-     * @param AmpInspectionResult $ampResult
-     */
-    public function setAmpResult(AmpInspectionResult $ampResult)
+namespace Google\Service\SearchConsole {
+    class UrlInspectionResult extends \Google\Model
     {
+        protected $ampResultType = AmpInspectionResult::class;
+        protected $ampResultDataType = '';
+        protected $indexStatusResultType = IndexStatusInspectionResult::class;
+        protected $indexStatusResultDataType = '';
+        /**
+         * Link to Search Console URL inspection.
+         *
+         * @var string
+         */
+        public $inspectionResultLink;
+        protected $mobileUsabilityResultType = MobileUsabilityInspectionResult::class;
+        protected $mobileUsabilityResultDataType = '';
+        protected $richResultsResultType = RichResultsInspectionResult::class;
+        protected $richResultsResultDataType = '';
+        /**
+         * Result of the AMP analysis. Absent if the page is not an AMP page.
+         *
+         * @param AmpInspectionResult $ampResult
+         */
+        public function setAmpResult(AmpInspectionResult $ampResult)
+        {
+        }
+        /**
+         * @return AmpInspectionResult
+         */
+        public function getAmpResult()
+        {
+        }
+        /**
+         * Result of the index status analysis.
+         *
+         * @param IndexStatusInspectionResult $indexStatusResult
+         */
+        public function setIndexStatusResult(IndexStatusInspectionResult $indexStatusResult)
+        {
+        }
+        /**
+         * @return IndexStatusInspectionResult
+         */
+        public function getIndexStatusResult()
+        {
+        }
+        /**
+         * Link to Search Console URL inspection.
+         *
+         * @param string $inspectionResultLink
+         */
+        public function setInspectionResultLink($inspectionResultLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInspectionResultLink()
+        {
+        }
+        /**
+         * Result of the Mobile usability analysis.
+         *
+         * @deprecated
+         * @param MobileUsabilityInspectionResult $mobileUsabilityResult
+         */
+        public function setMobileUsabilityResult(MobileUsabilityInspectionResult $mobileUsabilityResult)
+        {
+        }
+        /**
+         * @deprecated
+         * @return MobileUsabilityInspectionResult
+         */
+        public function getMobileUsabilityResult()
+        {
+        }
+        /**
+         * Result of the Rich Results analysis. Absent if there are no rich results
+         * found.
+         *
+         * @param RichResultsInspectionResult $richResultsResult
+         */
+        public function setRichResultsResult(RichResultsInspectionResult $richResultsResult)
+        {
+        }
+        /**
+         * @return RichResultsInspectionResult
+         */
+        public function getRichResultsResult()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AmpInspectionResult
+     * Runtime class alias of \Google\Service\SearchConsole\UrlInspectionResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAmpResult()
-    {
-    }
-    /**
-     * Result of the index status analysis.
-     *
-     * @param IndexStatusInspectionResult $indexStatusResult
-     */
-    public function setIndexStatusResult(IndexStatusInspectionResult $indexStatusResult)
-    {
-    }
-    /**
-     * @return IndexStatusInspectionResult
-     */
-    public function getIndexStatusResult()
-    {
-    }
-    /**
-     * Link to Search Console URL inspection.
-     *
-     * @param string $inspectionResultLink
-     */
-    public function setInspectionResultLink($inspectionResultLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInspectionResultLink()
-    {
-    }
-    /**
-     * Result of the Mobile usability analysis.
-     *
-     * @deprecated
-     * @param MobileUsabilityInspectionResult $mobileUsabilityResult
-     */
-    public function setMobileUsabilityResult(MobileUsabilityInspectionResult $mobileUsabilityResult)
-    {
-    }
-    /**
-     * @deprecated
-     * @return MobileUsabilityInspectionResult
-     */
-    public function getMobileUsabilityResult()
-    {
-    }
-    /**
-     * Result of the Rich Results analysis. Absent if there are no rich results
-     * found.
-     *
-     * @param RichResultsInspectionResult $richResultsResult
-     */
-    public function setRichResultsResult(RichResultsInspectionResult $richResultsResult)
-    {
-    }
-    /**
-     * @return RichResultsInspectionResult
-     */
-    public function getRichResultsResult()
+    class Google_Service_SearchConsole_UrlInspectionResult extends \Google\Service\SearchConsole\UrlInspectionResult
     {
     }
 }

@@ -21,99 +21,110 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent\Resource;
-
-/**
- * The "repricingrules" collection of methods.
- * Typical usage is:
- *  <code>
- *   $contentService = new Google\Service\ShoppingContent(...);
- *   $repricingrules = $contentService->repricingrules;
- *  </code>
- */
-class Repricingrules extends \Google\Service\Resource
-{
+namespace Google\Service\ShoppingContent\Resource {
+    use Google\Service\ShoppingContent\ListRepricingRulesResponse;
+    use Google\Service\ShoppingContent\RepricingRule;
     /**
-     * Creates a repricing rule for your Merchant Center account.
-     * (repricingrules.create)
-     *
-     * @param string $merchantId Required. The id of the merchant who owns the
-     * repricing rule.
-     * @param RepricingRule $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string ruleId Required. The id of the rule to create.
-     * @return RepricingRule
+     * The "repricingrules" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $contentService = new Google\Service\ShoppingContent(...);
+     *   $repricingrules = $contentService->repricingrules;
+     *  </code>
      */
-    public function create($merchantId, RepricingRule $postBody, $optParams = [])
+    class Repricingrules extends \Google\Service\Resource
     {
+        /**
+         * Creates a repricing rule for your Merchant Center account.
+         * (repricingrules.create)
+         *
+         * @param string $merchantId Required. The id of the merchant who owns the
+         * repricing rule.
+         * @param RepricingRule $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string ruleId Required. The id of the rule to create.
+         * @return RepricingRule
+         */
+        public function create($merchantId, RepricingRule $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a repricing rule in your Merchant Center account.
+         * (repricingrules.delete)
+         *
+         * @param string $merchantId Required. The id of the merchant who owns the
+         * repricing rule.
+         * @param string $ruleId Required. The id of the rule to Delete.
+         * @param array $optParams Optional parameters.
+         */
+        public function delete($merchantId, $ruleId, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves a repricing rule from your Merchant Center account.
+         * (repricingrules.get)
+         *
+         * @param string $merchantId Required. The id of the merchant who owns the
+         * repricing rule.
+         * @param string $ruleId Required. The id of the rule to retrieve.
+         * @param array $optParams Optional parameters.
+         * @return RepricingRule
+         */
+        public function get($merchantId, $ruleId, $optParams = [])
+        {
+        }
+        /**
+         * Lists the repricing rules in your Merchant Center account.
+         * (repricingrules.listRepricingrules)
+         *
+         * @param string $merchantId Required. The id of the merchant who owns the
+         * repricing rule.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string countryCode [CLDR country
+         * code](http://www.unicode.org/repos/cldr/tags/latest/common/main/en.xml) (for
+         * example, "US"), used as a filter on repricing rules.
+         * @opt_param string languageCode The two-letter ISO 639-1 language code
+         * associated with the repricing rule, used as a filter.
+         * @opt_param int pageSize The maximum number of repricing rules to return. The
+         * service may return fewer than this value. If unspecified, at most 50 rules
+         * will be returned. The maximum value is 1000; values above 1000 will be
+         * coerced to 1000.
+         * @opt_param string pageToken A page token, received from a previous
+         * `ListRepricingRules` call. Provide this to retrieve the subsequent page. When
+         * paginating, all other parameters provided to `ListRepricingRules` must match
+         * the call that provided the page token.
+         * @return ListRepricingRulesResponse
+         */
+        public function listRepricingrules($merchantId, $optParams = [])
+        {
+        }
+        /**
+         * Updates a repricing rule in your Merchant Center account. All mutable fields
+         * will be overwritten in each update request. In each update, you must provide
+         * all required mutable fields, or an error will be thrown. If you do not
+         * provide an optional field in the update request, if that field currently
+         * exists, it will be deleted from the rule. (repricingrules.patch)
+         *
+         * @param string $merchantId Required. The id of the merchant who owns the
+         * repricing rule.
+         * @param string $ruleId Required. The id of the rule to update.
+         * @param RepricingRule $postBody
+         * @param array $optParams Optional parameters.
+         * @return RepricingRule
+         */
+        public function patch($merchantId, $ruleId, RepricingRule $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a repricing rule in your Merchant Center account.
-     * (repricingrules.delete)
-     *
-     * @param string $merchantId Required. The id of the merchant who owns the
-     * repricing rule.
-     * @param string $ruleId Required. The id of the rule to Delete.
-     * @param array $optParams Optional parameters.
+     * Runtime class alias of \Google\Service\ShoppingContent\Resource\Repricingrules registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($merchantId, $ruleId, $optParams = [])
-    {
-    }
-    /**
-     * Retrieves a repricing rule from your Merchant Center account.
-     * (repricingrules.get)
-     *
-     * @param string $merchantId Required. The id of the merchant who owns the
-     * repricing rule.
-     * @param string $ruleId Required. The id of the rule to retrieve.
-     * @param array $optParams Optional parameters.
-     * @return RepricingRule
-     */
-    public function get($merchantId, $ruleId, $optParams = [])
-    {
-    }
-    /**
-     * Lists the repricing rules in your Merchant Center account.
-     * (repricingrules.listRepricingrules)
-     *
-     * @param string $merchantId Required. The id of the merchant who owns the
-     * repricing rule.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string countryCode [CLDR country
-     * code](http://www.unicode.org/repos/cldr/tags/latest/common/main/en.xml) (for
-     * example, "US"), used as a filter on repricing rules.
-     * @opt_param string languageCode The two-letter ISO 639-1 language code
-     * associated with the repricing rule, used as a filter.
-     * @opt_param int pageSize The maximum number of repricing rules to return. The
-     * service may return fewer than this value. If unspecified, at most 50 rules
-     * will be returned. The maximum value is 1000; values above 1000 will be
-     * coerced to 1000.
-     * @opt_param string pageToken A page token, received from a previous
-     * `ListRepricingRules` call. Provide this to retrieve the subsequent page. When
-     * paginating, all other parameters provided to `ListRepricingRules` must match
-     * the call that provided the page token.
-     * @return ListRepricingRulesResponse
-     */
-    public function listRepricingrules($merchantId, $optParams = [])
-    {
-    }
-    /**
-     * Updates a repricing rule in your Merchant Center account. All mutable fields
-     * will be overwritten in each update request. In each update, you must provide
-     * all required mutable fields, or an error will be thrown. If you do not
-     * provide an optional field in the update request, if that field currently
-     * exists, it will be deleted from the rule. (repricingrules.patch)
-     *
-     * @param string $merchantId Required. The id of the merchant who owns the
-     * repricing rule.
-     * @param string $ruleId Required. The id of the rule to update.
-     * @param RepricingRule $postBody
-     * @param array $optParams Optional parameters.
-     * @return RepricingRule
-     */
-    public function patch($merchantId, $ruleId, RepricingRule $postBody, $optParams = [])
+    class Google_Service_ShoppingContent_Resource_Repricingrules extends \Google\Service\ShoppingContent\Resource\Repricingrules
     {
     }
 }

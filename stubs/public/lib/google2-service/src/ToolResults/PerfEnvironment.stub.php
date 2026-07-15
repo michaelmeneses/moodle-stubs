@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class PerfEnvironment extends \Google\Model
-{
-    protected $cpuInfoType = CPUInfo::class;
-    protected $cpuInfoDataType = '';
-    protected $memoryInfoType = MemoryInfo::class;
-    protected $memoryInfoDataType = '';
-    /**
-     * CPU related environment info
-     *
-     * @param CPUInfo $cpuInfo
-     */
-    public function setCpuInfo(CPUInfo $cpuInfo)
+namespace Google\Service\ToolResults {
+    class PerfEnvironment extends \Google\Model
     {
+        protected $cpuInfoType = CPUInfo::class;
+        protected $cpuInfoDataType = '';
+        protected $memoryInfoType = MemoryInfo::class;
+        protected $memoryInfoDataType = '';
+        /**
+         * CPU related environment info
+         *
+         * @param CPUInfo $cpuInfo
+         */
+        public function setCpuInfo(CPUInfo $cpuInfo)
+        {
+        }
+        /**
+         * @return CPUInfo
+         */
+        public function getCpuInfo()
+        {
+        }
+        /**
+         * Memory related environment info
+         *
+         * @param MemoryInfo $memoryInfo
+         */
+        public function setMemoryInfo(MemoryInfo $memoryInfo)
+        {
+        }
+        /**
+         * @return MemoryInfo
+         */
+        public function getMemoryInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CPUInfo
+     * Runtime class alias of \Google\Service\ToolResults\PerfEnvironment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCpuInfo()
-    {
-    }
-    /**
-     * Memory related environment info
-     *
-     * @param MemoryInfo $memoryInfo
-     */
-    public function setMemoryInfo(MemoryInfo $memoryInfo)
-    {
-    }
-    /**
-     * @return MemoryInfo
-     */
-    public function getMemoryInfo()
+    class Google_Service_ToolResults_PerfEnvironment extends \Google\Service\ToolResults\PerfEnvironment
     {
     }
 }

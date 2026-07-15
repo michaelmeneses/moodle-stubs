@@ -21,27 +21,36 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class SecurityPolicyDdosProtectionConfig extends \Google\Model
-{
-    public const DDOS_PROTECTION_ADVANCED = 'ADVANCED';
-    public const DDOS_PROTECTION_ADVANCED_PREVIEW = 'ADVANCED_PREVIEW';
-    public const DDOS_PROTECTION_STANDARD = 'STANDARD';
-    /**
-     * @var string
-     */
-    public $ddosProtection;
-    /**
-     * @param self::DDOS_PROTECTION_* $ddosProtection
-     */
-    public function setDdosProtection($ddosProtection)
+namespace Google\Service\Compute {
+    class SecurityPolicyDdosProtectionConfig extends \Google\Model
     {
+        public const DDOS_PROTECTION_ADVANCED = 'ADVANCED';
+        public const DDOS_PROTECTION_ADVANCED_PREVIEW = 'ADVANCED_PREVIEW';
+        public const DDOS_PROTECTION_STANDARD = 'STANDARD';
+        /**
+         * @var string
+         */
+        public $ddosProtection;
+        /**
+         * @param self::DDOS_PROTECTION_* $ddosProtection
+         */
+        public function setDdosProtection($ddosProtection)
+        {
+        }
+        /**
+         * @return self::DDOS_PROTECTION_*
+         */
+        public function getDdosProtection()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::DDOS_PROTECTION_*
+     * Runtime class alias of \Google\Service\Compute\SecurityPolicyDdosProtectionConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDdosProtection()
+    class Google_Service_Compute_SecurityPolicyDdosProtectionConfig extends \Google\Service\Compute\SecurityPolicyDdosProtectionConfig
     {
     }
 }

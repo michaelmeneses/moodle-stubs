@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ArtifactRegistry;
-
-class ImportAptArtifactsErrorInfo extends \Google\Model
-{
-    protected $errorType = Status::class;
-    protected $errorDataType = '';
-    protected $gcsSourceType = ImportAptArtifactsGcsSource::class;
-    protected $gcsSourceDataType = '';
-    /**
-     * The detailed error status.
-     *
-     * @param Status $error
-     */
-    public function setError(Status $error)
+namespace Google\Service\ArtifactRegistry {
+    class ImportAptArtifactsErrorInfo extends \Google\Model
     {
+        protected $errorType = Status::class;
+        protected $errorDataType = '';
+        protected $gcsSourceType = ImportAptArtifactsGcsSource::class;
+        protected $gcsSourceDataType = '';
+        /**
+         * The detailed error status.
+         *
+         * @param Status $error
+         */
+        public function setError(Status $error)
+        {
+        }
+        /**
+         * @return Status
+         */
+        public function getError()
+        {
+        }
+        /**
+         * Google Cloud Storage location requested.
+         *
+         * @param ImportAptArtifactsGcsSource $gcsSource
+         */
+        public function setGcsSource(ImportAptArtifactsGcsSource $gcsSource)
+        {
+        }
+        /**
+         * @return ImportAptArtifactsGcsSource
+         */
+        public function getGcsSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Status
+     * Runtime class alias of \Google\Service\ArtifactRegistry\ImportAptArtifactsErrorInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getError()
-    {
-    }
-    /**
-     * Google Cloud Storage location requested.
-     *
-     * @param ImportAptArtifactsGcsSource $gcsSource
-     */
-    public function setGcsSource(ImportAptArtifactsGcsSource $gcsSource)
-    {
-    }
-    /**
-     * @return ImportAptArtifactsGcsSource
-     */
-    public function getGcsSource()
+    class Google_Service_ArtifactRegistry_ImportAptArtifactsErrorInfo extends \Google\Service\ArtifactRegistry\ImportAptArtifactsErrorInfo
     {
     }
 }

@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OnDemandScanning;
-
-class SourceContext extends \Google\Model
-{
-    protected $cloudRepoType = CloudRepoSourceContext::class;
-    protected $cloudRepoDataType = '';
-    protected $gerritType = GerritSourceContext::class;
-    protected $gerritDataType = '';
-    protected $gitType = GitSourceContext::class;
-    protected $gitDataType = '';
-    /**
-     * Labels with user defined metadata.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * A SourceContext referring to a revision in a Google Cloud Source Repo.
-     *
-     * @param CloudRepoSourceContext $cloudRepo
-     */
-    public function setCloudRepo(CloudRepoSourceContext $cloudRepo)
+namespace Google\Service\OnDemandScanning {
+    class SourceContext extends \Google\Model
     {
+        protected $cloudRepoType = CloudRepoSourceContext::class;
+        protected $cloudRepoDataType = '';
+        protected $gerritType = GerritSourceContext::class;
+        protected $gerritDataType = '';
+        protected $gitType = GitSourceContext::class;
+        protected $gitDataType = '';
+        /**
+         * Labels with user defined metadata.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * A SourceContext referring to a revision in a Google Cloud Source Repo.
+         *
+         * @param CloudRepoSourceContext $cloudRepo
+         */
+        public function setCloudRepo(CloudRepoSourceContext $cloudRepo)
+        {
+        }
+        /**
+         * @return CloudRepoSourceContext
+         */
+        public function getCloudRepo()
+        {
+        }
+        /**
+         * A SourceContext referring to a Gerrit project.
+         *
+         * @param GerritSourceContext $gerrit
+         */
+        public function setGerrit(GerritSourceContext $gerrit)
+        {
+        }
+        /**
+         * @return GerritSourceContext
+         */
+        public function getGerrit()
+        {
+        }
+        /**
+         * A SourceContext referring to any third party Git repo (e.g., GitHub).
+         *
+         * @param GitSourceContext $git
+         */
+        public function setGit(GitSourceContext $git)
+        {
+        }
+        /**
+         * @return GitSourceContext
+         */
+        public function getGit()
+        {
+        }
+        /**
+         * Labels with user defined metadata.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CloudRepoSourceContext
+     * Runtime class alias of \Google\Service\OnDemandScanning\SourceContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCloudRepo()
-    {
-    }
-    /**
-     * A SourceContext referring to a Gerrit project.
-     *
-     * @param GerritSourceContext $gerrit
-     */
-    public function setGerrit(GerritSourceContext $gerrit)
-    {
-    }
-    /**
-     * @return GerritSourceContext
-     */
-    public function getGerrit()
-    {
-    }
-    /**
-     * A SourceContext referring to any third party Git repo (e.g., GitHub).
-     *
-     * @param GitSourceContext $git
-     */
-    public function setGit(GitSourceContext $git)
-    {
-    }
-    /**
-     * @return GitSourceContext
-     */
-    public function getGit()
-    {
-    }
-    /**
-     * Labels with user defined metadata.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
+    class Google_Service_OnDemandScanning_SourceContext extends \Google\Service\OnDemandScanning\SourceContext
     {
     }
 }

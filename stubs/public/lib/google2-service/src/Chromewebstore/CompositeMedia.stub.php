@@ -21,180 +21,189 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Chromewebstore;
-
-class CompositeMedia extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $blobRef;
-    protected $blobstore2InfoType = Blobstore2Info::class;
-    protected $blobstore2InfoDataType = '';
-    /**
-     * @var string
-     */
-    public $cosmoBinaryReference;
-    /**
-     * @var string
-     */
-    public $crc32cHash;
-    /**
-     * @var string
-     */
-    public $inline;
-    /**
-     * @var string
-     */
-    public $length;
-    /**
-     * @var string
-     */
-    public $md5Hash;
-    protected $objectIdType = ObjectId::class;
-    protected $objectIdDataType = '';
-    /**
-     * @var string
-     */
-    public $path;
-    /**
-     * @var string
-     */
-    public $referenceType;
-    /**
-     * @var string
-     */
-    public $sha1Hash;
-    /**
-     * @param string
-     */
-    public function setBlobRef($blobRef)
+namespace Google\Service\Chromewebstore {
+    class CompositeMedia extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $blobRef;
+        protected $blobstore2InfoType = Blobstore2Info::class;
+        protected $blobstore2InfoDataType = '';
+        /**
+         * @var string
+         */
+        public $cosmoBinaryReference;
+        /**
+         * @var string
+         */
+        public $crc32cHash;
+        /**
+         * @var string
+         */
+        public $inline;
+        /**
+         * @var string
+         */
+        public $length;
+        /**
+         * @var string
+         */
+        public $md5Hash;
+        protected $objectIdType = ObjectId::class;
+        protected $objectIdDataType = '';
+        /**
+         * @var string
+         */
+        public $path;
+        /**
+         * @var string
+         */
+        public $referenceType;
+        /**
+         * @var string
+         */
+        public $sha1Hash;
+        /**
+         * @param string
+         */
+        public function setBlobRef($blobRef)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBlobRef()
+        {
+        }
+        /**
+         * @param Blobstore2Info
+         */
+        public function setBlobstore2Info(Blobstore2Info $blobstore2Info)
+        {
+        }
+        /**
+         * @return Blobstore2Info
+         */
+        public function getBlobstore2Info()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCosmoBinaryReference($cosmoBinaryReference)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCosmoBinaryReference()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCrc32cHash($crc32cHash)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCrc32cHash()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setInline($inline)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInline()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLength($length)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLength()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMd5Hash($md5Hash)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMd5Hash()
+        {
+        }
+        /**
+         * @param ObjectId
+         */
+        public function setObjectId(ObjectId $objectId)
+        {
+        }
+        /**
+         * @return ObjectId
+         */
+        public function getObjectId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReferenceType($referenceType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReferenceType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSha1Hash($sha1Hash)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSha1Hash()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Chromewebstore\CompositeMedia registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBlobRef()
-    {
-    }
-    /**
-     * @param Blobstore2Info
-     */
-    public function setBlobstore2Info(Blobstore2Info $blobstore2Info)
-    {
-    }
-    /**
-     * @return Blobstore2Info
-     */
-    public function getBlobstore2Info()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCosmoBinaryReference($cosmoBinaryReference)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCosmoBinaryReference()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCrc32cHash($crc32cHash)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCrc32cHash()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setInline($inline)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInline()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLength($length)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLength()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMd5Hash($md5Hash)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMd5Hash()
-    {
-    }
-    /**
-     * @param ObjectId
-     */
-    public function setObjectId(ObjectId $objectId)
-    {
-    }
-    /**
-     * @return ObjectId
-     */
-    public function getObjectId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPath($path)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPath()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReferenceType($referenceType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReferenceType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSha1Hash($sha1Hash)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSha1Hash()
+    class Google_Service_Chromewebstore_CompositeMedia extends \Google\Service\Chromewebstore\CompositeMedia
     {
     }
 }

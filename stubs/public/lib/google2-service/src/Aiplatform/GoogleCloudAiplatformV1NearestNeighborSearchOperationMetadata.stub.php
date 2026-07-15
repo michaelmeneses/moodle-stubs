@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1NearestNeighborSearchOperationMetadata extends \Google\Collection
-{
-    protected $collection_key = 'contentValidationStats';
-    protected $contentValidationStatsType = GoogleCloudAiplatformV1NearestNeighborSearchOperationMetadataContentValidationStats::class;
-    protected $contentValidationStatsDataType = 'array';
-    /**
-     * The ingested data size in bytes.
-     *
-     * @var string
-     */
-    public $dataBytesCount;
-    /**
-     * The validation stats of the content (per file) to be inserted or updated on
-     * the Matching Engine Index resource. Populated if contentsDeltaUri is
-     * provided as part of Index.metadata. Please note that, currently for those
-     * files that are broken or has unsupported file format, we will not have the
-     * stats for those files.
-     *
-     * @param GoogleCloudAiplatformV1NearestNeighborSearchOperationMetadataContentValidationStats[] $contentValidationStats
-     */
-    public function setContentValidationStats($contentValidationStats)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1NearestNeighborSearchOperationMetadata extends \Google\Collection
     {
+        protected $collection_key = 'contentValidationStats';
+        protected $contentValidationStatsType = GoogleCloudAiplatformV1NearestNeighborSearchOperationMetadataContentValidationStats::class;
+        protected $contentValidationStatsDataType = 'array';
+        /**
+         * The ingested data size in bytes.
+         *
+         * @var string
+         */
+        public $dataBytesCount;
+        /**
+         * The validation stats of the content (per file) to be inserted or updated on
+         * the Matching Engine Index resource. Populated if contentsDeltaUri is
+         * provided as part of Index.metadata. Please note that, currently for those
+         * files that are broken or has unsupported file format, we will not have the
+         * stats for those files.
+         *
+         * @param GoogleCloudAiplatformV1NearestNeighborSearchOperationMetadataContentValidationStats[] $contentValidationStats
+         */
+        public function setContentValidationStats($contentValidationStats)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1NearestNeighborSearchOperationMetadataContentValidationStats[]
+         */
+        public function getContentValidationStats()
+        {
+        }
+        /**
+         * The ingested data size in bytes.
+         *
+         * @param string $dataBytesCount
+         */
+        public function setDataBytesCount($dataBytesCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataBytesCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1NearestNeighborSearchOperationMetadataContentValidationStats[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1NearestNeighborSearchOperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContentValidationStats()
-    {
-    }
-    /**
-     * The ingested data size in bytes.
-     *
-     * @param string $dataBytesCount
-     */
-    public function setDataBytesCount($dataBytesCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDataBytesCount()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1NearestNeighborSearchOperationMetadata extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1NearestNeighborSearchOperationMetadata
     {
     }
 }

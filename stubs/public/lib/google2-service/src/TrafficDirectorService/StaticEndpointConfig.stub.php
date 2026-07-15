@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TrafficDirectorService;
-
-class StaticEndpointConfig extends \Google\Model
-{
-    /**
-     * The endpoint config.
-     *
-     * @var array[]
-     */
-    public $endpointConfig;
-    /**
-     * [#not-implemented-hide:] The timestamp when the Endpoint was last updated.
-     *
-     * @var string
-     */
-    public $lastUpdated;
-    /**
-     * The endpoint config.
-     *
-     * @param array[] $endpointConfig
-     */
-    public function setEndpointConfig($endpointConfig)
+namespace Google\Service\TrafficDirectorService {
+    class StaticEndpointConfig extends \Google\Model
     {
+        /**
+         * The endpoint config.
+         *
+         * @var array[]
+         */
+        public $endpointConfig;
+        /**
+         * [#not-implemented-hide:] The timestamp when the Endpoint was last updated.
+         *
+         * @var string
+         */
+        public $lastUpdated;
+        /**
+         * The endpoint config.
+         *
+         * @param array[] $endpointConfig
+         */
+        public function setEndpointConfig($endpointConfig)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getEndpointConfig()
+        {
+        }
+        /**
+         * [#not-implemented-hide:] The timestamp when the Endpoint was last updated.
+         *
+         * @param string $lastUpdated
+         */
+        public function setLastUpdated($lastUpdated)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastUpdated()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\TrafficDirectorService\StaticEndpointConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndpointConfig()
-    {
-    }
-    /**
-     * [#not-implemented-hide:] The timestamp when the Endpoint was last updated.
-     *
-     * @param string $lastUpdated
-     */
-    public function setLastUpdated($lastUpdated)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastUpdated()
+    class Google_Service_TrafficDirectorService_StaticEndpointConfig extends \Google\Service\TrafficDirectorService\StaticEndpointConfig
     {
     }
 }

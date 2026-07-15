@@ -21,148 +21,157 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class Route extends \Google\Model
-{
-    /**
-     * Output only. The create time of the resource.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Required. Destination address for connection
-     *
-     * @var string
-     */
-    public $destinationAddress;
-    /**
-     * Destination port for connection
-     *
-     * @var int
-     */
-    public $destinationPort;
-    /**
-     * Required. Display name.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Labels.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Output only. Identifier. The resource's name.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The update time of the resource.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. The create time of the resource.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\Datastream {
+    class Route extends \Google\Model
     {
+        /**
+         * Output only. The create time of the resource.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Required. Destination address for connection
+         *
+         * @var string
+         */
+        public $destinationAddress;
+        /**
+         * Destination port for connection
+         *
+         * @var int
+         */
+        public $destinationPort;
+        /**
+         * Required. Display name.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Labels.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Output only. Identifier. The resource's name.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The update time of the resource.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. The create time of the resource.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Required. Destination address for connection
+         *
+         * @param string $destinationAddress
+         */
+        public function setDestinationAddress($destinationAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDestinationAddress()
+        {
+        }
+        /**
+         * Destination port for connection
+         *
+         * @param int $destinationPort
+         */
+        public function setDestinationPort($destinationPort)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getDestinationPort()
+        {
+        }
+        /**
+         * Required. Display name.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Labels.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Output only. Identifier. The resource's name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The update time of the resource.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Datastream\Route registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Required. Destination address for connection
-     *
-     * @param string $destinationAddress
-     */
-    public function setDestinationAddress($destinationAddress)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDestinationAddress()
-    {
-    }
-    /**
-     * Destination port for connection
-     *
-     * @param int $destinationPort
-     */
-    public function setDestinationPort($destinationPort)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getDestinationPort()
-    {
-    }
-    /**
-     * Required. Display name.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Labels.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Output only. Identifier. The resource's name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The update time of the resource.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_Datastream_Route extends \Google\Service\Datastream\Route
     {
     }
 }

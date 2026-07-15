@@ -21,102 +21,111 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataprocMetastore;
-
-class GoogleCloudMetastoreV2ScheduledBackup extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $backupLocation;
-    /**
-     * @var string
-     */
-    public $cronSchedule;
-    /**
-     * @var bool
-     */
-    public $enabled;
-    protected $latestBackupType = GoogleCloudMetastoreV2LatestBackup::class;
-    protected $latestBackupDataType = '';
-    /**
-     * @var string
-     */
-    public $nextScheduledTime;
-    /**
-     * @var string
-     */
-    public $timeZone;
-    /**
-     * @param string
-     */
-    public function setBackupLocation($backupLocation)
+namespace Google\Service\DataprocMetastore {
+    class GoogleCloudMetastoreV2ScheduledBackup extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $backupLocation;
+        /**
+         * @var string
+         */
+        public $cronSchedule;
+        /**
+         * @var bool
+         */
+        public $enabled;
+        protected $latestBackupType = GoogleCloudMetastoreV2LatestBackup::class;
+        protected $latestBackupDataType = '';
+        /**
+         * @var string
+         */
+        public $nextScheduledTime;
+        /**
+         * @var string
+         */
+        public $timeZone;
+        /**
+         * @param string
+         */
+        public function setBackupLocation($backupLocation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBackupLocation()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCronSchedule($cronSchedule)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCronSchedule()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
+        /**
+         * @param GoogleCloudMetastoreV2LatestBackup
+         */
+        public function setLatestBackup(GoogleCloudMetastoreV2LatestBackup $latestBackup)
+        {
+        }
+        /**
+         * @return GoogleCloudMetastoreV2LatestBackup
+         */
+        public function getLatestBackup()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNextScheduledTime($nextScheduledTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextScheduledTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTimeZone($timeZone)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimeZone()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataprocMetastore\GoogleCloudMetastoreV2ScheduledBackup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackupLocation()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCronSchedule($cronSchedule)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCronSchedule()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setEnabled($enabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnabled()
-    {
-    }
-    /**
-     * @param GoogleCloudMetastoreV2LatestBackup
-     */
-    public function setLatestBackup(GoogleCloudMetastoreV2LatestBackup $latestBackup)
-    {
-    }
-    /**
-     * @return GoogleCloudMetastoreV2LatestBackup
-     */
-    public function getLatestBackup()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNextScheduledTime($nextScheduledTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextScheduledTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTimeZone($timeZone)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimeZone()
+    class Google_Service_DataprocMetastore_GoogleCloudMetastoreV2ScheduledBackup extends \Google\Service\DataprocMetastore\GoogleCloudMetastoreV2ScheduledBackup
     {
     }
 }

@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class SpecificStartPosition extends \Google\Model
-{
-    protected $mongodbChangeStreamPositionType = MongodbChangeStreamPosition::class;
-    protected $mongodbChangeStreamPositionDataType = '';
-    protected $mysqlGtidPositionType = MysqlGtidPosition::class;
-    protected $mysqlGtidPositionDataType = '';
-    protected $mysqlLogPositionType = MysqlLogPosition::class;
-    protected $mysqlLogPositionDataType = '';
-    protected $oracleScnPositionType = OracleScnPosition::class;
-    protected $oracleScnPositionDataType = '';
-    protected $sqlServerLsnPositionType = SqlServerLsnPosition::class;
-    protected $sqlServerLsnPositionDataType = '';
-    /**
-     * MongoDB change stream position to start replicating from.
-     *
-     * @param MongodbChangeStreamPosition $mongodbChangeStreamPosition
-     */
-    public function setMongodbChangeStreamPosition(MongodbChangeStreamPosition $mongodbChangeStreamPosition)
+namespace Google\Service\Datastream {
+    class SpecificStartPosition extends \Google\Model
     {
+        protected $mongodbChangeStreamPositionType = MongodbChangeStreamPosition::class;
+        protected $mongodbChangeStreamPositionDataType = '';
+        protected $mysqlGtidPositionType = MysqlGtidPosition::class;
+        protected $mysqlGtidPositionDataType = '';
+        protected $mysqlLogPositionType = MysqlLogPosition::class;
+        protected $mysqlLogPositionDataType = '';
+        protected $oracleScnPositionType = OracleScnPosition::class;
+        protected $oracleScnPositionDataType = '';
+        protected $sqlServerLsnPositionType = SqlServerLsnPosition::class;
+        protected $sqlServerLsnPositionDataType = '';
+        /**
+         * MongoDB change stream position to start replicating from.
+         *
+         * @param MongodbChangeStreamPosition $mongodbChangeStreamPosition
+         */
+        public function setMongodbChangeStreamPosition(MongodbChangeStreamPosition $mongodbChangeStreamPosition)
+        {
+        }
+        /**
+         * @return MongodbChangeStreamPosition
+         */
+        public function getMongodbChangeStreamPosition()
+        {
+        }
+        /**
+         * MySQL GTID set to start replicating from.
+         *
+         * @param MysqlGtidPosition $mysqlGtidPosition
+         */
+        public function setMysqlGtidPosition(MysqlGtidPosition $mysqlGtidPosition)
+        {
+        }
+        /**
+         * @return MysqlGtidPosition
+         */
+        public function getMysqlGtidPosition()
+        {
+        }
+        /**
+         * MySQL specific log position to start replicating from.
+         *
+         * @param MysqlLogPosition $mysqlLogPosition
+         */
+        public function setMysqlLogPosition(MysqlLogPosition $mysqlLogPosition)
+        {
+        }
+        /**
+         * @return MysqlLogPosition
+         */
+        public function getMysqlLogPosition()
+        {
+        }
+        /**
+         * Oracle SCN to start replicating from.
+         *
+         * @param OracleScnPosition $oracleScnPosition
+         */
+        public function setOracleScnPosition(OracleScnPosition $oracleScnPosition)
+        {
+        }
+        /**
+         * @return OracleScnPosition
+         */
+        public function getOracleScnPosition()
+        {
+        }
+        /**
+         * SqlServer LSN to start replicating from.
+         *
+         * @param SqlServerLsnPosition $sqlServerLsnPosition
+         */
+        public function setSqlServerLsnPosition(SqlServerLsnPosition $sqlServerLsnPosition)
+        {
+        }
+        /**
+         * @return SqlServerLsnPosition
+         */
+        public function getSqlServerLsnPosition()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MongodbChangeStreamPosition
+     * Runtime class alias of \Google\Service\Datastream\SpecificStartPosition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMongodbChangeStreamPosition()
-    {
-    }
-    /**
-     * MySQL GTID set to start replicating from.
-     *
-     * @param MysqlGtidPosition $mysqlGtidPosition
-     */
-    public function setMysqlGtidPosition(MysqlGtidPosition $mysqlGtidPosition)
-    {
-    }
-    /**
-     * @return MysqlGtidPosition
-     */
-    public function getMysqlGtidPosition()
-    {
-    }
-    /**
-     * MySQL specific log position to start replicating from.
-     *
-     * @param MysqlLogPosition $mysqlLogPosition
-     */
-    public function setMysqlLogPosition(MysqlLogPosition $mysqlLogPosition)
-    {
-    }
-    /**
-     * @return MysqlLogPosition
-     */
-    public function getMysqlLogPosition()
-    {
-    }
-    /**
-     * Oracle SCN to start replicating from.
-     *
-     * @param OracleScnPosition $oracleScnPosition
-     */
-    public function setOracleScnPosition(OracleScnPosition $oracleScnPosition)
-    {
-    }
-    /**
-     * @return OracleScnPosition
-     */
-    public function getOracleScnPosition()
-    {
-    }
-    /**
-     * SqlServer LSN to start replicating from.
-     *
-     * @param SqlServerLsnPosition $sqlServerLsnPosition
-     */
-    public function setSqlServerLsnPosition(SqlServerLsnPosition $sqlServerLsnPosition)
-    {
-    }
-    /**
-     * @return SqlServerLsnPosition
-     */
-    public function getSqlServerLsnPosition()
+    class Google_Service_Datastream_SpecificStartPosition extends \Google\Service\Datastream\SpecificStartPosition
     {
     }
 }

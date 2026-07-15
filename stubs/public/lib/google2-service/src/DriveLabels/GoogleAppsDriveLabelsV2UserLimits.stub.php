@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveLabels;
-
-class GoogleAppsDriveLabelsV2UserLimits extends \Google\Model
-{
-    protected $listLimitsType = GoogleAppsDriveLabelsV2ListLimits::class;
-    protected $listLimitsDataType = '';
-    /**
-     * Limits for list-variant of a field type.
-     *
-     * @param GoogleAppsDriveLabelsV2ListLimits $listLimits
-     */
-    public function setListLimits(GoogleAppsDriveLabelsV2ListLimits $listLimits)
+namespace Google\Service\DriveLabels {
+    class GoogleAppsDriveLabelsV2UserLimits extends \Google\Model
     {
+        protected $listLimitsType = GoogleAppsDriveLabelsV2ListLimits::class;
+        protected $listLimitsDataType = '';
+        /**
+         * Limits for list-variant of a field type.
+         *
+         * @param GoogleAppsDriveLabelsV2ListLimits $listLimits
+         */
+        public function setListLimits(GoogleAppsDriveLabelsV2ListLimits $listLimits)
+        {
+        }
+        /**
+         * @return GoogleAppsDriveLabelsV2ListLimits
+         */
+        public function getListLimits()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAppsDriveLabelsV2ListLimits
+     * Runtime class alias of \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2UserLimits registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getListLimits()
+    class Google_Service_DriveLabels_GoogleAppsDriveLabelsV2UserLimits extends \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2UserLimits
     {
     }
 }

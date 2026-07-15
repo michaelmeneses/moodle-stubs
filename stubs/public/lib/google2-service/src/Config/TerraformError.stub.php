@@ -21,91 +21,100 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Config;
-
-class TerraformError extends \Google\Model
-{
-    protected $errorType = Status::class;
-    protected $errorDataType = '';
-    /**
-     * A human-readable error description.
-     *
-     * @var string
-     */
-    public $errorDescription;
-    /**
-     * HTTP response code returned from Google Cloud Platform APIs when Terraform
-     * fails to provision the resource. If unset or 0, no HTTP response code was
-     * returned by Terraform.
-     *
-     * @var int
-     */
-    public $httpResponseCode;
-    /**
-     * Address of the resource associated with the error, e.g.
-     * `google_compute_network.vpc_network`.
-     *
-     * @var string
-     */
-    public $resourceAddress;
-    /**
-     * Output only. Original error response from underlying Google API, if
-     * available.
-     *
-     * @param Status $error
-     */
-    public function setError(Status $error)
+namespace Google\Service\Config {
+    class TerraformError extends \Google\Model
     {
+        protected $errorType = Status::class;
+        protected $errorDataType = '';
+        /**
+         * A human-readable error description.
+         *
+         * @var string
+         */
+        public $errorDescription;
+        /**
+         * HTTP response code returned from Google Cloud Platform APIs when Terraform
+         * fails to provision the resource. If unset or 0, no HTTP response code was
+         * returned by Terraform.
+         *
+         * @var int
+         */
+        public $httpResponseCode;
+        /**
+         * Address of the resource associated with the error, e.g.
+         * `google_compute_network.vpc_network`.
+         *
+         * @var string
+         */
+        public $resourceAddress;
+        /**
+         * Output only. Original error response from underlying Google API, if
+         * available.
+         *
+         * @param Status $error
+         */
+        public function setError(Status $error)
+        {
+        }
+        /**
+         * @return Status
+         */
+        public function getError()
+        {
+        }
+        /**
+         * A human-readable error description.
+         *
+         * @param string $errorDescription
+         */
+        public function setErrorDescription($errorDescription)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getErrorDescription()
+        {
+        }
+        /**
+         * HTTP response code returned from Google Cloud Platform APIs when Terraform
+         * fails to provision the resource. If unset or 0, no HTTP response code was
+         * returned by Terraform.
+         *
+         * @param int $httpResponseCode
+         */
+        public function setHttpResponseCode($httpResponseCode)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getHttpResponseCode()
+        {
+        }
+        /**
+         * Address of the resource associated with the error, e.g.
+         * `google_compute_network.vpc_network`.
+         *
+         * @param string $resourceAddress
+         */
+        public function setResourceAddress($resourceAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceAddress()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Status
+     * Runtime class alias of \Google\Service\Config\TerraformError registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getError()
-    {
-    }
-    /**
-     * A human-readable error description.
-     *
-     * @param string $errorDescription
-     */
-    public function setErrorDescription($errorDescription)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getErrorDescription()
-    {
-    }
-    /**
-     * HTTP response code returned from Google Cloud Platform APIs when Terraform
-     * fails to provision the resource. If unset or 0, no HTTP response code was
-     * returned by Terraform.
-     *
-     * @param int $httpResponseCode
-     */
-    public function setHttpResponseCode($httpResponseCode)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getHttpResponseCode()
-    {
-    }
-    /**
-     * Address of the resource associated with the error, e.g.
-     * `google_compute_network.vpc_network`.
-     *
-     * @param string $resourceAddress
-     */
-    public function setResourceAddress($resourceAddress)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceAddress()
+    class Google_Service_Config_TerraformError extends \Google\Service\Config\TerraformError
     {
     }
 }

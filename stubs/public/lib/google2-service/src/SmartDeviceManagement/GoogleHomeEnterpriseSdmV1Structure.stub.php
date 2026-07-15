@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SmartDeviceManagement;
-
-class GoogleHomeEnterpriseSdmV1Structure extends \Google\Model
-{
-    /**
-     * Output only. The resource name of the structure. For example:
-     * "enterprises/XYZ/structures/ABC".
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Structure traits.
-     *
-     * @var array[]
-     */
-    public $traits;
-    /**
-     * Output only. The resource name of the structure. For example:
-     * "enterprises/XYZ/structures/ABC".
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\SmartDeviceManagement {
+    class GoogleHomeEnterpriseSdmV1Structure extends \Google\Model
     {
+        /**
+         * Output only. The resource name of the structure. For example:
+         * "enterprises/XYZ/structures/ABC".
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Structure traits.
+         *
+         * @var array[]
+         */
+        public $traits;
+        /**
+         * Output only. The resource name of the structure. For example:
+         * "enterprises/XYZ/structures/ABC".
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Structure traits.
+         *
+         * @param array[] $traits
+         */
+        public function setTraits($traits)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getTraits()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SmartDeviceManagement\GoogleHomeEnterpriseSdmV1Structure registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Structure traits.
-     *
-     * @param array[] $traits
-     */
-    public function setTraits($traits)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getTraits()
+    class Google_Service_SmartDeviceManagement_GoogleHomeEnterpriseSdmV1Structure extends \Google\Service\SmartDeviceManagement\GoogleHomeEnterpriseSdmV1Structure
     {
     }
 }

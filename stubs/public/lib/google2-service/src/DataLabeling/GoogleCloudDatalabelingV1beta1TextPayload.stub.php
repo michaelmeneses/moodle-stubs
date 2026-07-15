@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1TextPayload extends \Google\Model
-{
-    /**
-     * Text content.
-     *
-     * @var string
-     */
-    public $textContent;
-    /**
-     * Text content.
-     *
-     * @param string $textContent
-     */
-    public function setTextContent($textContent)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1TextPayload extends \Google\Model
     {
+        /**
+         * Text content.
+         *
+         * @var string
+         */
+        public $textContent;
+        /**
+         * Text content.
+         *
+         * @param string $textContent
+         */
+        public function setTextContent($textContent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTextContent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1TextPayload registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTextContent()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1TextPayload extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1TextPayload
     {
     }
 }

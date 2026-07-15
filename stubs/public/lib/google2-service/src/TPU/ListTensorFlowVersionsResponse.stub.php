@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TPU;
-
-class ListTensorFlowVersionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    protected $tensorflowVersionsType = TensorFlowVersion::class;
-    protected $tensorflowVersionsDataType = 'array';
-    /**
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\TPU {
+    class ListTensorFlowVersionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        protected $tensorflowVersionsType = TensorFlowVersion::class;
+        protected $tensorflowVersionsDataType = 'array';
+        /**
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param TensorFlowVersion[]
+         */
+        public function setTensorflowVersions($tensorflowVersions)
+        {
+        }
+        /**
+         * @return TensorFlowVersion[]
+         */
+        public function getTensorflowVersions()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\TPU\ListTensorFlowVersionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param TensorFlowVersion[]
-     */
-    public function setTensorflowVersions($tensorflowVersions)
-    {
-    }
-    /**
-     * @return TensorFlowVersion[]
-     */
-    public function getTensorflowVersions()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_TPU_ListTensorFlowVersionsResponse extends \Google\Service\TPU\ListTensorFlowVersionsResponse
     {
     }
 }

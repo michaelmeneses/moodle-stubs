@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmEventbusProtoSuspensionAuthPermissionsGaiaIdentity extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $emailAddress;
-    /**
-     * @var string
-     */
-    public $gaiaId;
-    /**
-     * @param string $emailAddress
-     */
-    public function setEmailAddress($emailAddress)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmEventbusProtoSuspensionAuthPermissionsGaiaIdentity extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $emailAddress;
+        /**
+         * @var string
+         */
+        public $gaiaId;
+        /**
+         * @param string $emailAddress
+         */
+        public function setEmailAddress($emailAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmailAddress()
+        {
+        }
+        /**
+         * @param string $gaiaId
+         */
+        public function setGaiaId($gaiaId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGaiaId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmEventbusProtoSuspensionAuthPermissionsGaiaIdentity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmailAddress()
-    {
-    }
-    /**
-     * @param string $gaiaId
-     */
-    public function setGaiaId($gaiaId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGaiaId()
+    class Google_Service_Integrations_EnterpriseCrmEventbusProtoSuspensionAuthPermissionsGaiaIdentity extends \Google\Service\Integrations\EnterpriseCrmEventbusProtoSuspensionAuthPermissionsGaiaIdentity
     {
     }
 }

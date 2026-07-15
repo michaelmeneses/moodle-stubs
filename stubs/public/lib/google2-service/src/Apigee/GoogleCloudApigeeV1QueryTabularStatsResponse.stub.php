@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1QueryTabularStatsResponse extends \Google\Collection
-{
-    protected $collection_key = 'values';
-    /**
-     * Column names corresponding to the same order as the inner values in the
-     * stats field.
-     *
-     * @var string[]
-     */
-    public $columns;
-    /**
-     * Next page token.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Resultant rows from the executed query.
-     *
-     * @var array[]
-     */
-    public $values;
-    /**
-     * Column names corresponding to the same order as the inner values in the
-     * stats field.
-     *
-     * @param string[] $columns
-     */
-    public function setColumns($columns)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1QueryTabularStatsResponse extends \Google\Collection
     {
+        protected $collection_key = 'values';
+        /**
+         * Column names corresponding to the same order as the inner values in the
+         * stats field.
+         *
+         * @var string[]
+         */
+        public $columns;
+        /**
+         * Next page token.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Resultant rows from the executed query.
+         *
+         * @var array[]
+         */
+        public $values;
+        /**
+         * Column names corresponding to the same order as the inner values in the
+         * stats field.
+         *
+         * @param string[] $columns
+         */
+        public function setColumns($columns)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getColumns()
+        {
+        }
+        /**
+         * Next page token.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Resultant rows from the executed query.
+         *
+         * @param array[] $values
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1QueryTabularStatsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumns()
-    {
-    }
-    /**
-     * Next page token.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Resultant rows from the executed query.
-     *
-     * @param array[] $values
-     */
-    public function setValues($values)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getValues()
+    class Google_Service_Apigee_GoogleCloudApigeeV1QueryTabularStatsResponse extends \Google\Service\Apigee\GoogleCloudApigeeV1QueryTabularStatsResponse
     {
     }
 }

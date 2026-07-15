@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class LiveChatMembershipGiftingDetails extends \Google\Model
-{
-    /**
-     * The number of gift memberships purchased by the user.
-     *
-     * @var int
-     */
-    public $giftMembershipsCount;
-    /**
-     * The name of the level of the gift memberships purchased by the user. The
-     * Level names are defined by the YouTube channel offering the Membership. In
-     * some situations this field isn't filled.
-     *
-     * @var string
-     */
-    public $giftMembershipsLevelName;
-    /**
-     * The number of gift memberships purchased by the user.
-     *
-     * @param int $giftMembershipsCount
-     */
-    public function setGiftMembershipsCount($giftMembershipsCount)
+namespace Google\Service\YouTube {
+    class LiveChatMembershipGiftingDetails extends \Google\Model
     {
+        /**
+         * The number of gift memberships purchased by the user.
+         *
+         * @var int
+         */
+        public $giftMembershipsCount;
+        /**
+         * The name of the level of the gift memberships purchased by the user. The
+         * Level names are defined by the YouTube channel offering the Membership. In
+         * some situations this field isn't filled.
+         *
+         * @var string
+         */
+        public $giftMembershipsLevelName;
+        /**
+         * The number of gift memberships purchased by the user.
+         *
+         * @param int $giftMembershipsCount
+         */
+        public function setGiftMembershipsCount($giftMembershipsCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getGiftMembershipsCount()
+        {
+        }
+        /**
+         * The name of the level of the gift memberships purchased by the user. The
+         * Level names are defined by the YouTube channel offering the Membership. In
+         * some situations this field isn't filled.
+         *
+         * @param string $giftMembershipsLevelName
+         */
+        public function setGiftMembershipsLevelName($giftMembershipsLevelName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGiftMembershipsLevelName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\YouTube\LiveChatMembershipGiftingDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGiftMembershipsCount()
-    {
-    }
-    /**
-     * The name of the level of the gift memberships purchased by the user. The
-     * Level names are defined by the YouTube channel offering the Membership. In
-     * some situations this field isn't filled.
-     *
-     * @param string $giftMembershipsLevelName
-     */
-    public function setGiftMembershipsLevelName($giftMembershipsLevelName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGiftMembershipsLevelName()
+    class Google_Service_YouTube_LiveChatMembershipGiftingDetails extends \Google\Service\YouTube\LiveChatMembershipGiftingDetails
     {
     }
 }

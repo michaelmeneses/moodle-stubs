@@ -21,83 +21,92 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class ProductstatusesCustomBatchResponseEntry extends \Google\Model
-{
-    /**
-     * The ID of the request entry this entry responds to.
-     *
-     * @var string
-     */
-    public $batchId;
-    protected $errorsType = Errors::class;
-    protected $errorsDataType = '';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "`content#productstatusesCustomBatchResponseEntry`"
-     *
-     * @var string
-     */
-    public $kind;
-    protected $productStatusType = ProductStatus::class;
-    protected $productStatusDataType = '';
-    /**
-     * The ID of the request entry this entry responds to.
-     *
-     * @param string $batchId
-     */
-    public function setBatchId($batchId)
+namespace Google\Service\ShoppingContent {
+    class ProductstatusesCustomBatchResponseEntry extends \Google\Model
     {
+        /**
+         * The ID of the request entry this entry responds to.
+         *
+         * @var string
+         */
+        public $batchId;
+        protected $errorsType = Errors::class;
+        protected $errorsDataType = '';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "`content#productstatusesCustomBatchResponseEntry`"
+         *
+         * @var string
+         */
+        public $kind;
+        protected $productStatusType = ProductStatus::class;
+        protected $productStatusDataType = '';
+        /**
+         * The ID of the request entry this entry responds to.
+         *
+         * @param string $batchId
+         */
+        public function setBatchId($batchId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBatchId()
+        {
+        }
+        /**
+         * A list of errors for failed custombatch entries. *Note:* Schema errors fail
+         * the whole request.
+         *
+         * @param Errors $errors
+         */
+        public function setErrors(Errors $errors)
+        {
+        }
+        /**
+         * @return Errors
+         */
+        public function getErrors()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "`content#productstatusesCustomBatchResponseEntry`"
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The requested product status. Only defined if the request was successful.
+         *
+         * @param ProductStatus $productStatus
+         */
+        public function setProductStatus(ProductStatus $productStatus)
+        {
+        }
+        /**
+         * @return ProductStatus
+         */
+        public function getProductStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\ProductstatusesCustomBatchResponseEntry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBatchId()
-    {
-    }
-    /**
-     * A list of errors for failed custombatch entries. *Note:* Schema errors fail
-     * the whole request.
-     *
-     * @param Errors $errors
-     */
-    public function setErrors(Errors $errors)
-    {
-    }
-    /**
-     * @return Errors
-     */
-    public function getErrors()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "`content#productstatusesCustomBatchResponseEntry`"
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The requested product status. Only defined if the request was successful.
-     *
-     * @param ProductStatus $productStatus
-     */
-    public function setProductStatus(ProductStatus $productStatus)
-    {
-    }
-    /**
-     * @return ProductStatus
-     */
-    public function getProductStatus()
+    class Google_Service_ShoppingContent_ProductstatusesCustomBatchResponseEntry extends \Google\Service\ShoppingContent\ProductstatusesCustomBatchResponseEntry
     {
     }
 }

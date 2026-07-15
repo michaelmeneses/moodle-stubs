@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class GoogleBigtableAdminV2TypeStructEncodingDelimitedBytes extends \Google\Model
-{
-    /**
-     * Byte sequence used to delimit concatenated fields. The delimiter must
-     * contain at least 1 character and at most 50 characters.
-     *
-     * @var string
-     */
-    public $delimiter;
-    /**
-     * Byte sequence used to delimit concatenated fields. The delimiter must
-     * contain at least 1 character and at most 50 characters.
-     *
-     * @param string $delimiter
-     */
-    public function setDelimiter($delimiter)
+namespace Google\Service\BigtableAdmin {
+    class GoogleBigtableAdminV2TypeStructEncodingDelimitedBytes extends \Google\Model
     {
+        /**
+         * Byte sequence used to delimit concatenated fields. The delimiter must
+         * contain at least 1 character and at most 50 characters.
+         *
+         * @var string
+         */
+        public $delimiter;
+        /**
+         * Byte sequence used to delimit concatenated fields. The delimiter must
+         * contain at least 1 character and at most 50 characters.
+         *
+         * @param string $delimiter
+         */
+        public function setDelimiter($delimiter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDelimiter()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BigtableAdmin\GoogleBigtableAdminV2TypeStructEncodingDelimitedBytes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDelimiter()
+    class Google_Service_BigtableAdmin_GoogleBigtableAdminV2TypeStructEncodingDelimitedBytes extends \Google\Service\BigtableAdmin\GoogleBigtableAdminV2TypeStructEncodingDelimitedBytes
     {
     }
 }

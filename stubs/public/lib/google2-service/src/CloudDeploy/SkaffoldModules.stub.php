@@ -21,77 +21,86 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class SkaffoldModules extends \Google\Collection
-{
-    protected $collection_key = 'configs';
-    /**
-     * Optional. The Skaffold Config modules to use from the specified source.
-     *
-     * @var string[]
-     */
-    public $configs;
-    protected $gitType = SkaffoldGitSource::class;
-    protected $gitDataType = '';
-    protected $googleCloudBuildRepoType = SkaffoldGCBRepoSource::class;
-    protected $googleCloudBuildRepoDataType = '';
-    protected $googleCloudStorageType = SkaffoldGCSSource::class;
-    protected $googleCloudStorageDataType = '';
-    /**
-     * Optional. The Skaffold Config modules to use from the specified source.
-     *
-     * @param string[] $configs
-     */
-    public function setConfigs($configs)
+namespace Google\Service\CloudDeploy {
+    class SkaffoldModules extends \Google\Collection
     {
+        protected $collection_key = 'configs';
+        /**
+         * Optional. The Skaffold Config modules to use from the specified source.
+         *
+         * @var string[]
+         */
+        public $configs;
+        protected $gitType = SkaffoldGitSource::class;
+        protected $gitDataType = '';
+        protected $googleCloudBuildRepoType = SkaffoldGCBRepoSource::class;
+        protected $googleCloudBuildRepoDataType = '';
+        protected $googleCloudStorageType = SkaffoldGCSSource::class;
+        protected $googleCloudStorageDataType = '';
+        /**
+         * Optional. The Skaffold Config modules to use from the specified source.
+         *
+         * @param string[] $configs
+         */
+        public function setConfigs($configs)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getConfigs()
+        {
+        }
+        /**
+         * Optional. Remote git repository containing the Skaffold Config modules.
+         *
+         * @param SkaffoldGitSource $git
+         */
+        public function setGit(SkaffoldGitSource $git)
+        {
+        }
+        /**
+         * @return SkaffoldGitSource
+         */
+        public function getGit()
+        {
+        }
+        /**
+         * Optional. Cloud Build V2 repository containing the Skaffold Config modules.
+         *
+         * @param SkaffoldGCBRepoSource $googleCloudBuildRepo
+         */
+        public function setGoogleCloudBuildRepo(SkaffoldGCBRepoSource $googleCloudBuildRepo)
+        {
+        }
+        /**
+         * @return SkaffoldGCBRepoSource
+         */
+        public function getGoogleCloudBuildRepo()
+        {
+        }
+        /**
+         * Optional. Cloud Storage bucket containing the Skaffold Config modules.
+         *
+         * @param SkaffoldGCSSource $googleCloudStorage
+         */
+        public function setGoogleCloudStorage(SkaffoldGCSSource $googleCloudStorage)
+        {
+        }
+        /**
+         * @return SkaffoldGCSSource
+         */
+        public function getGoogleCloudStorage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudDeploy\SkaffoldModules registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfigs()
-    {
-    }
-    /**
-     * Optional. Remote git repository containing the Skaffold Config modules.
-     *
-     * @param SkaffoldGitSource $git
-     */
-    public function setGit(SkaffoldGitSource $git)
-    {
-    }
-    /**
-     * @return SkaffoldGitSource
-     */
-    public function getGit()
-    {
-    }
-    /**
-     * Optional. Cloud Build V2 repository containing the Skaffold Config modules.
-     *
-     * @param SkaffoldGCBRepoSource $googleCloudBuildRepo
-     */
-    public function setGoogleCloudBuildRepo(SkaffoldGCBRepoSource $googleCloudBuildRepo)
-    {
-    }
-    /**
-     * @return SkaffoldGCBRepoSource
-     */
-    public function getGoogleCloudBuildRepo()
-    {
-    }
-    /**
-     * Optional. Cloud Storage bucket containing the Skaffold Config modules.
-     *
-     * @param SkaffoldGCSSource $googleCloudStorage
-     */
-    public function setGoogleCloudStorage(SkaffoldGCSSource $googleCloudStorage)
-    {
-    }
-    /**
-     * @return SkaffoldGCSSource
-     */
-    public function getGoogleCloudStorage()
+    class Google_Service_CloudDeploy_SkaffoldModules extends \Google\Service\CloudDeploy\SkaffoldModules
     {
     }
 }

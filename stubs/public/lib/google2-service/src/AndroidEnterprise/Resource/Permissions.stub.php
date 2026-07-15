@@ -21,31 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise\Resource;
-
-/**
- * The "permissions" collection of methods.
- * Typical usage is:
- *  <code>
- *   $androidenterpriseService = new Google\Service\AndroidEnterprise(...);
- *   $permissions = $androidenterpriseService->permissions;
- *  </code>
- */
-class Permissions extends \Google\Service\Resource
-{
+namespace Google\Service\AndroidEnterprise\Resource {
+    use Google\Service\AndroidEnterprise\Permission;
     /**
-     * Retrieves details of an Android app permission for display to an enterprise
-     * admin. (permissions.get)
-     *
-     * @param string $permissionId The ID of the permission.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string language The BCP47 tag for the user's preferred language
-     * (e.g. "en-US", "de")
-     * @return Permission
-     * @throws \Google\Service\Exception
+     * The "permissions" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $androidenterpriseService = new Google\Service\AndroidEnterprise(...);
+     *   $permissions = $androidenterpriseService->permissions;
+     *  </code>
      */
-    public function get($permissionId, $optParams = [])
+    class Permissions extends \Google\Service\Resource
+    {
+        /**
+         * Retrieves details of an Android app permission for display to an enterprise
+         * admin. (permissions.get)
+         *
+         * @param string $permissionId The ID of the permission.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string language The BCP47 tag for the user's preferred language
+         * (e.g. "en-US", "de")
+         * @return Permission
+         * @throws \Google\Service\Exception
+         */
+        public function get($permissionId, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AndroidEnterprise\Resource\Permissions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AndroidEnterprise_Resource_Permissions extends \Google\Service\AndroidEnterprise\Resource\Permissions
     {
     }
 }

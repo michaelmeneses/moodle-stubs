@@ -21,38 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch\Resource;
-
-/**
- * The "items" collection of methods.
- * Typical usage is:
- *  <code>
- *   $cloudsearchService = new Google\Service\CloudSearch(...);
- *   $items = $cloudsearchService->debug_identitysources_items;
- *  </code>
- */
-class DebugIdentitysourcesItems extends \Google\Service\Resource
-{
+namespace Google\Service\CloudSearch\Resource {
+    use Google\Service\CloudSearch\ListItemNamesForUnmappedIdentityResponse;
     /**
-     * Lists names of items associated with an unmapped identity. **Note:** This API
-     * requires an admin account to execute. (items.listForunmappedidentity)
-     *
-     * @param string $parent The name of the identity source, in the following
-     * format: identitysources/{source_id}}
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool debugOptions.enableDebugging If you are asked by Google to
-     * help with debugging, set this field. Otherwise, ignore this field.
-     * @opt_param string groupResourceName
-     * @opt_param int pageSize Maximum number of items to fetch in a request.
-     * Defaults to 100.
-     * @opt_param string pageToken The next_page_token value returned from a
-     * previous List request, if any.
-     * @opt_param string userResourceName
-     * @return ListItemNamesForUnmappedIdentityResponse
-     * @throws \Google\Service\Exception
+     * The "items" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $cloudsearchService = new Google\Service\CloudSearch(...);
+     *   $items = $cloudsearchService->debug_identitysources_items;
+     *  </code>
      */
-    public function listForunmappedidentity($parent, $optParams = [])
+    class DebugIdentitysourcesItems extends \Google\Service\Resource
+    {
+        /**
+         * Lists names of items associated with an unmapped identity. **Note:** This API
+         * requires an admin account to execute. (items.listForunmappedidentity)
+         *
+         * @param string $parent The name of the identity source, in the following
+         * format: identitysources/{source_id}}
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool debugOptions.enableDebugging If you are asked by Google to
+         * help with debugging, set this field. Otherwise, ignore this field.
+         * @opt_param string groupResourceName
+         * @opt_param int pageSize Maximum number of items to fetch in a request.
+         * Defaults to 100.
+         * @opt_param string pageToken The next_page_token value returned from a
+         * previous List request, if any.
+         * @opt_param string userResourceName
+         * @return ListItemNamesForUnmappedIdentityResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listForunmappedidentity($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudSearch\Resource\DebugIdentitysourcesItems registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudSearch_Resource_DebugIdentitysourcesItems extends \Google\Service\CloudSearch\Resource\DebugIdentitysourcesItems
     {
     }
 }

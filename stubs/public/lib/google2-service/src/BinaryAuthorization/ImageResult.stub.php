@@ -21,123 +21,132 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BinaryAuthorization;
-
-class ImageResult extends \Google\Model
-{
-    /**
-     * Not specified. This should never be used.
-     */
-    public const VERDICT_IMAGE_VERDICT_UNSPECIFIED = 'IMAGE_VERDICT_UNSPECIFIED';
-    /**
-     * Image conforms to the policy.
-     */
-    public const VERDICT_CONFORMANT = 'CONFORMANT';
-    /**
-     * Image does not conform to the policy.
-     */
-    public const VERDICT_NON_CONFORMANT = 'NON_CONFORMANT';
-    /**
-     * Error evaluating the image. Non-conformance has precedence over errors.
-     */
-    public const VERDICT_ERROR = 'ERROR';
-    protected $allowlistResultType = AllowlistResult::class;
-    protected $allowlistResultDataType = '';
-    protected $checkSetResultType = CheckSetResult::class;
-    protected $checkSetResultDataType = '';
-    /**
-     * Explanation of this image result. Only populated if no check sets were
-     * evaluated.
-     *
-     * @var string
-     */
-    public $explanation;
-    /**
-     * Image URI from the request.
-     *
-     * @var string
-     */
-    public $imageUri;
-    /**
-     * The result of evaluating this image.
-     *
-     * @var string
-     */
-    public $verdict;
-    /**
-     * If the image was exempted by a top-level allow_pattern, contains the
-     * allowlist pattern that the image name matched.
-     *
-     * @param AllowlistResult $allowlistResult
-     */
-    public function setAllowlistResult(AllowlistResult $allowlistResult)
+namespace Google\Service\BinaryAuthorization {
+    class ImageResult extends \Google\Model
     {
+        /**
+         * Not specified. This should never be used.
+         */
+        public const VERDICT_IMAGE_VERDICT_UNSPECIFIED = 'IMAGE_VERDICT_UNSPECIFIED';
+        /**
+         * Image conforms to the policy.
+         */
+        public const VERDICT_CONFORMANT = 'CONFORMANT';
+        /**
+         * Image does not conform to the policy.
+         */
+        public const VERDICT_NON_CONFORMANT = 'NON_CONFORMANT';
+        /**
+         * Error evaluating the image. Non-conformance has precedence over errors.
+         */
+        public const VERDICT_ERROR = 'ERROR';
+        protected $allowlistResultType = AllowlistResult::class;
+        protected $allowlistResultDataType = '';
+        protected $checkSetResultType = CheckSetResult::class;
+        protected $checkSetResultDataType = '';
+        /**
+         * Explanation of this image result. Only populated if no check sets were
+         * evaluated.
+         *
+         * @var string
+         */
+        public $explanation;
+        /**
+         * Image URI from the request.
+         *
+         * @var string
+         */
+        public $imageUri;
+        /**
+         * The result of evaluating this image.
+         *
+         * @var string
+         */
+        public $verdict;
+        /**
+         * If the image was exempted by a top-level allow_pattern, contains the
+         * allowlist pattern that the image name matched.
+         *
+         * @param AllowlistResult $allowlistResult
+         */
+        public function setAllowlistResult(AllowlistResult $allowlistResult)
+        {
+        }
+        /**
+         * @return AllowlistResult
+         */
+        public function getAllowlistResult()
+        {
+        }
+        /**
+         * If a check set was evaluated, contains the result of the check set. Empty
+         * if there were no check sets.
+         *
+         * @param CheckSetResult $checkSetResult
+         */
+        public function setCheckSetResult(CheckSetResult $checkSetResult)
+        {
+        }
+        /**
+         * @return CheckSetResult
+         */
+        public function getCheckSetResult()
+        {
+        }
+        /**
+         * Explanation of this image result. Only populated if no check sets were
+         * evaluated.
+         *
+         * @param string $explanation
+         */
+        public function setExplanation($explanation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExplanation()
+        {
+        }
+        /**
+         * Image URI from the request.
+         *
+         * @param string $imageUri
+         */
+        public function setImageUri($imageUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImageUri()
+        {
+        }
+        /**
+         * The result of evaluating this image.
+         *
+         * Accepted values: IMAGE_VERDICT_UNSPECIFIED, CONFORMANT, NON_CONFORMANT,
+         * ERROR
+         *
+         * @param self::VERDICT_* $verdict
+         */
+        public function setVerdict($verdict)
+        {
+        }
+        /**
+         * @return self::VERDICT_*
+         */
+        public function getVerdict()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AllowlistResult
+     * Runtime class alias of \Google\Service\BinaryAuthorization\ImageResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowlistResult()
-    {
-    }
-    /**
-     * If a check set was evaluated, contains the result of the check set. Empty
-     * if there were no check sets.
-     *
-     * @param CheckSetResult $checkSetResult
-     */
-    public function setCheckSetResult(CheckSetResult $checkSetResult)
-    {
-    }
-    /**
-     * @return CheckSetResult
-     */
-    public function getCheckSetResult()
-    {
-    }
-    /**
-     * Explanation of this image result. Only populated if no check sets were
-     * evaluated.
-     *
-     * @param string $explanation
-     */
-    public function setExplanation($explanation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExplanation()
-    {
-    }
-    /**
-     * Image URI from the request.
-     *
-     * @param string $imageUri
-     */
-    public function setImageUri($imageUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImageUri()
-    {
-    }
-    /**
-     * The result of evaluating this image.
-     *
-     * Accepted values: IMAGE_VERDICT_UNSPECIFIED, CONFORMANT, NON_CONFORMANT,
-     * ERROR
-     *
-     * @param self::VERDICT_* $verdict
-     */
-    public function setVerdict($verdict)
-    {
-    }
-    /**
-     * @return self::VERDICT_*
-     */
-    public function getVerdict()
+    class Google_Service_BinaryAuthorization_ImageResult extends \Google\Service\BinaryAuthorization\ImageResult
     {
     }
 }

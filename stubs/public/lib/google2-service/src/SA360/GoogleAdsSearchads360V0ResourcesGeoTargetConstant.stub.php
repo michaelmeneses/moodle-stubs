@@ -21,199 +21,208 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0ResourcesGeoTargetConstant extends \Google\Model
-{
-    /**
-     * No value has been specified.
-     */
-    public const STATUS_UNSPECIFIED = 'UNSPECIFIED';
-    /**
-     * The received value is not known in this version. This is a response-only
-     * value.
-     */
-    public const STATUS_UNKNOWN = 'UNKNOWN';
-    /**
-     * The geo target constant is valid.
-     */
-    public const STATUS_ENABLED = 'ENABLED';
-    /**
-     * The geo target constant is obsolete and will be removed.
-     */
-    public const STATUS_REMOVAL_PLANNED = 'REMOVAL_PLANNED';
-    /**
-     * Output only. The fully qualified English name, consisting of the target's
-     * name and that of its parent and country.
-     *
-     * @var string
-     */
-    public $canonicalName;
-    /**
-     * Output only. The ISO-3166-1 alpha-2 country code that is associated with
-     * the target.
-     *
-     * @var string
-     */
-    public $countryCode;
-    /**
-     * Output only. The ID of the geo target constant.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Output only. Geo target constant English name.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The resource name of the parent geo target constant. Geo
-     * target constant resource names have the form:
-     * `geoTargetConstants/{parent_geo_target_constant_id}`
-     *
-     * @var string
-     */
-    public $parentGeoTarget;
-    /**
-     * Output only. The resource name of the geo target constant. Geo target
-     * constant resource names have the form:
-     * `geoTargetConstants/{geo_target_constant_id}`
-     *
-     * @var string
-     */
-    public $resourceName;
-    /**
-     * Output only. Geo target constant status.
-     *
-     * @var string
-     */
-    public $status;
-    /**
-     * Output only. Geo target constant target type.
-     *
-     * @var string
-     */
-    public $targetType;
-    /**
-     * Output only. The fully qualified English name, consisting of the target's
-     * name and that of its parent and country.
-     *
-     * @param string $canonicalName
-     */
-    public function setCanonicalName($canonicalName)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0ResourcesGeoTargetConstant extends \Google\Model
     {
+        /**
+         * No value has been specified.
+         */
+        public const STATUS_UNSPECIFIED = 'UNSPECIFIED';
+        /**
+         * The received value is not known in this version. This is a response-only
+         * value.
+         */
+        public const STATUS_UNKNOWN = 'UNKNOWN';
+        /**
+         * The geo target constant is valid.
+         */
+        public const STATUS_ENABLED = 'ENABLED';
+        /**
+         * The geo target constant is obsolete and will be removed.
+         */
+        public const STATUS_REMOVAL_PLANNED = 'REMOVAL_PLANNED';
+        /**
+         * Output only. The fully qualified English name, consisting of the target's
+         * name and that of its parent and country.
+         *
+         * @var string
+         */
+        public $canonicalName;
+        /**
+         * Output only. The ISO-3166-1 alpha-2 country code that is associated with
+         * the target.
+         *
+         * @var string
+         */
+        public $countryCode;
+        /**
+         * Output only. The ID of the geo target constant.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Output only. Geo target constant English name.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The resource name of the parent geo target constant. Geo
+         * target constant resource names have the form:
+         * `geoTargetConstants/{parent_geo_target_constant_id}`
+         *
+         * @var string
+         */
+        public $parentGeoTarget;
+        /**
+         * Output only. The resource name of the geo target constant. Geo target
+         * constant resource names have the form:
+         * `geoTargetConstants/{geo_target_constant_id}`
+         *
+         * @var string
+         */
+        public $resourceName;
+        /**
+         * Output only. Geo target constant status.
+         *
+         * @var string
+         */
+        public $status;
+        /**
+         * Output only. Geo target constant target type.
+         *
+         * @var string
+         */
+        public $targetType;
+        /**
+         * Output only. The fully qualified English name, consisting of the target's
+         * name and that of its parent and country.
+         *
+         * @param string $canonicalName
+         */
+        public function setCanonicalName($canonicalName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCanonicalName()
+        {
+        }
+        /**
+         * Output only. The ISO-3166-1 alpha-2 country code that is associated with
+         * the target.
+         *
+         * @param string $countryCode
+         */
+        public function setCountryCode($countryCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCountryCode()
+        {
+        }
+        /**
+         * Output only. The ID of the geo target constant.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Output only. Geo target constant English name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The resource name of the parent geo target constant. Geo
+         * target constant resource names have the form:
+         * `geoTargetConstants/{parent_geo_target_constant_id}`
+         *
+         * @param string $parentGeoTarget
+         */
+        public function setParentGeoTarget($parentGeoTarget)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParentGeoTarget()
+        {
+        }
+        /**
+         * Output only. The resource name of the geo target constant. Geo target
+         * constant resource names have the form:
+         * `geoTargetConstants/{geo_target_constant_id}`
+         *
+         * @param string $resourceName
+         */
+        public function setResourceName($resourceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceName()
+        {
+        }
+        /**
+         * Output only. Geo target constant status.
+         *
+         * Accepted values: UNSPECIFIED, UNKNOWN, ENABLED, REMOVAL_PLANNED
+         *
+         * @param self::STATUS_* $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return self::STATUS_*
+         */
+        public function getStatus()
+        {
+        }
+        /**
+         * Output only. Geo target constant target type.
+         *
+         * @param string $targetType
+         */
+        public function setTargetType($targetType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0ResourcesGeoTargetConstant registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCanonicalName()
-    {
-    }
-    /**
-     * Output only. The ISO-3166-1 alpha-2 country code that is associated with
-     * the target.
-     *
-     * @param string $countryCode
-     */
-    public function setCountryCode($countryCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCountryCode()
-    {
-    }
-    /**
-     * Output only. The ID of the geo target constant.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Output only. Geo target constant English name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The resource name of the parent geo target constant. Geo
-     * target constant resource names have the form:
-     * `geoTargetConstants/{parent_geo_target_constant_id}`
-     *
-     * @param string $parentGeoTarget
-     */
-    public function setParentGeoTarget($parentGeoTarget)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParentGeoTarget()
-    {
-    }
-    /**
-     * Output only. The resource name of the geo target constant. Geo target
-     * constant resource names have the form:
-     * `geoTargetConstants/{geo_target_constant_id}`
-     *
-     * @param string $resourceName
-     */
-    public function setResourceName($resourceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceName()
-    {
-    }
-    /**
-     * Output only. Geo target constant status.
-     *
-     * Accepted values: UNSPECIFIED, UNKNOWN, ENABLED, REMOVAL_PLANNED
-     *
-     * @param self::STATUS_* $status
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return self::STATUS_*
-     */
-    public function getStatus()
-    {
-    }
-    /**
-     * Output only. Geo target constant target type.
-     *
-     * @param string $targetType
-     */
-    public function setTargetType($targetType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetType()
+    class Google_Service_SA360_GoogleAdsSearchads360V0ResourcesGeoTargetConstant extends \Google\Service\SA360\GoogleAdsSearchads360V0ResourcesGeoTargetConstant
     {
     }
 }

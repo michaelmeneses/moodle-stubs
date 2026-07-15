@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PaymentsResellerSubscription;
-
-class ListPromotionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'promotions';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is empty, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $promotionsType = Promotion::class;
-    protected $promotionsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is empty, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\PaymentsResellerSubscription {
+    class ListPromotionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'promotions';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is empty, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $promotionsType = Promotion::class;
+        protected $promotionsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is empty, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The promotions for the specified partner.
+         *
+         * @param Promotion[] $promotions
+         */
+        public function setPromotions($promotions)
+        {
+        }
+        /**
+         * @return Promotion[]
+         */
+        public function getPromotions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PaymentsResellerSubscription\ListPromotionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The promotions for the specified partner.
-     *
-     * @param Promotion[] $promotions
-     */
-    public function setPromotions($promotions)
-    {
-    }
-    /**
-     * @return Promotion[]
-     */
-    public function getPromotions()
+    class Google_Service_PaymentsResellerSubscription_ListPromotionsResponse extends \Google\Service\PaymentsResellerSubscription\ListPromotionsResponse
     {
     }
 }

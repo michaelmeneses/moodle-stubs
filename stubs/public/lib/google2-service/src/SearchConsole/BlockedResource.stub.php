@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SearchConsole;
-
-class BlockedResource extends \Google\Model
-{
-    /**
-     * URL of the blocked resource.
-     *
-     * @var string
-     */
-    public $url;
-    /**
-     * URL of the blocked resource.
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
+namespace Google\Service\SearchConsole {
+    class BlockedResource extends \Google\Model
     {
+        /**
+         * URL of the blocked resource.
+         *
+         * @var string
+         */
+        public $url;
+        /**
+         * URL of the blocked resource.
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SearchConsole\BlockedResource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUrl()
+    class Google_Service_SearchConsole_BlockedResource extends \Google\Service\SearchConsole\BlockedResource
     {
     }
 }

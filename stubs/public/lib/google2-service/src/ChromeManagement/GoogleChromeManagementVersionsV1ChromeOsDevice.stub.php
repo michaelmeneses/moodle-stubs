@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementVersionsV1ChromeOsDevice extends \Google\Model
-{
-    /**
-     * Output only. The unique Directory API ID of the device. This value is the
-     * same as the Admin Console's Directory API ID in the ChromeOS Devices tab.
-     *
-     * @var string
-     */
-    public $deviceDirectoryApiId;
-    /**
-     * Output only. Device serial number. This value is the same as the Admin
-     * Console's Serial Number in the ChromeOS Devices tab.
-     *
-     * @var string
-     */
-    public $serialNumber;
-    /**
-     * Output only. The unique Directory API ID of the device. This value is the
-     * same as the Admin Console's Directory API ID in the ChromeOS Devices tab.
-     *
-     * @param string $deviceDirectoryApiId
-     */
-    public function setDeviceDirectoryApiId($deviceDirectoryApiId)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementVersionsV1ChromeOsDevice extends \Google\Model
     {
+        /**
+         * Output only. The unique Directory API ID of the device. This value is the
+         * same as the Admin Console's Directory API ID in the ChromeOS Devices tab.
+         *
+         * @var string
+         */
+        public $deviceDirectoryApiId;
+        /**
+         * Output only. Device serial number. This value is the same as the Admin
+         * Console's Serial Number in the ChromeOS Devices tab.
+         *
+         * @var string
+         */
+        public $serialNumber;
+        /**
+         * Output only. The unique Directory API ID of the device. This value is the
+         * same as the Admin Console's Directory API ID in the ChromeOS Devices tab.
+         *
+         * @param string $deviceDirectoryApiId
+         */
+        public function setDeviceDirectoryApiId($deviceDirectoryApiId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeviceDirectoryApiId()
+        {
+        }
+        /**
+         * Output only. Device serial number. This value is the same as the Admin
+         * Console's Serial Number in the ChromeOS Devices tab.
+         *
+         * @param string $serialNumber
+         */
+        public function setSerialNumber($serialNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSerialNumber()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1ChromeOsDevice registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeviceDirectoryApiId()
-    {
-    }
-    /**
-     * Output only. Device serial number. This value is the same as the Admin
-     * Console's Serial Number in the ChromeOS Devices tab.
-     *
-     * @param string $serialNumber
-     */
-    public function setSerialNumber($serialNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSerialNumber()
+    class Google_Service_ChromeManagement_GoogleChromeManagementVersionsV1ChromeOsDevice extends \Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1ChromeOsDevice
     {
     }
 }

@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class Screen extends \Google\Model
-{
-    /**
-     * File reference of the png file. Required.
-     *
-     * @var string
-     */
-    public $fileReference;
-    /**
-     * Locale of the device that the screenshot was taken on. Required.
-     *
-     * @var string
-     */
-    public $locale;
-    /**
-     * Model of the device that the screenshot was taken on. Required.
-     *
-     * @var string
-     */
-    public $model;
-    /**
-     * OS version of the device that the screenshot was taken on. Required.
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * File reference of the png file. Required.
-     *
-     * @param string $fileReference
-     */
-    public function setFileReference($fileReference)
+namespace Google\Service\ToolResults {
+    class Screen extends \Google\Model
     {
+        /**
+         * File reference of the png file. Required.
+         *
+         * @var string
+         */
+        public $fileReference;
+        /**
+         * Locale of the device that the screenshot was taken on. Required.
+         *
+         * @var string
+         */
+        public $locale;
+        /**
+         * Model of the device that the screenshot was taken on. Required.
+         *
+         * @var string
+         */
+        public $model;
+        /**
+         * OS version of the device that the screenshot was taken on. Required.
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * File reference of the png file. Required.
+         *
+         * @param string $fileReference
+         */
+        public function setFileReference($fileReference)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFileReference()
+        {
+        }
+        /**
+         * Locale of the device that the screenshot was taken on. Required.
+         *
+         * @param string $locale
+         */
+        public function setLocale($locale)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocale()
+        {
+        }
+        /**
+         * Model of the device that the screenshot was taken on. Required.
+         *
+         * @param string $model
+         */
+        public function setModel($model)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getModel()
+        {
+        }
+        /**
+         * OS version of the device that the screenshot was taken on. Required.
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ToolResults\Screen registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFileReference()
-    {
-    }
-    /**
-     * Locale of the device that the screenshot was taken on. Required.
-     *
-     * @param string $locale
-     */
-    public function setLocale($locale)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocale()
-    {
-    }
-    /**
-     * Model of the device that the screenshot was taken on. Required.
-     *
-     * @param string $model
-     */
-    public function setModel($model)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getModel()
-    {
-    }
-    /**
-     * OS version of the device that the screenshot was taken on. Required.
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_ToolResults_Screen extends \Google\Service\ToolResults\Screen
     {
     }
 }

@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class DmlStatistics extends \Google\Model
-{
-    /**
-     * Output only. Number of deleted Rows. populated by DML DELETE, MERGE and
-     * TRUNCATE statements.
-     *
-     * @var string
-     */
-    public $deletedRowCount;
-    /**
-     * Output only. Number of inserted Rows. Populated by DML INSERT and MERGE
-     * statements
-     *
-     * @var string
-     */
-    public $insertedRowCount;
-    /**
-     * Output only. Number of updated Rows. Populated by DML UPDATE and MERGE
-     * statements.
-     *
-     * @var string
-     */
-    public $updatedRowCount;
-    /**
-     * Output only. Number of deleted Rows. populated by DML DELETE, MERGE and
-     * TRUNCATE statements.
-     *
-     * @param string $deletedRowCount
-     */
-    public function setDeletedRowCount($deletedRowCount)
+namespace Google\Service\Bigquery {
+    class DmlStatistics extends \Google\Model
     {
+        /**
+         * Output only. Number of deleted Rows. populated by DML DELETE, MERGE and
+         * TRUNCATE statements.
+         *
+         * @var string
+         */
+        public $deletedRowCount;
+        /**
+         * Output only. Number of inserted Rows. Populated by DML INSERT and MERGE
+         * statements
+         *
+         * @var string
+         */
+        public $insertedRowCount;
+        /**
+         * Output only. Number of updated Rows. Populated by DML UPDATE and MERGE
+         * statements.
+         *
+         * @var string
+         */
+        public $updatedRowCount;
+        /**
+         * Output only. Number of deleted Rows. populated by DML DELETE, MERGE and
+         * TRUNCATE statements.
+         *
+         * @param string $deletedRowCount
+         */
+        public function setDeletedRowCount($deletedRowCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeletedRowCount()
+        {
+        }
+        /**
+         * Output only. Number of inserted Rows. Populated by DML INSERT and MERGE
+         * statements
+         *
+         * @param string $insertedRowCount
+         */
+        public function setInsertedRowCount($insertedRowCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInsertedRowCount()
+        {
+        }
+        /**
+         * Output only. Number of updated Rows. Populated by DML UPDATE and MERGE
+         * statements.
+         *
+         * @param string $updatedRowCount
+         */
+        public function setUpdatedRowCount($updatedRowCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdatedRowCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Bigquery\DmlStatistics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeletedRowCount()
-    {
-    }
-    /**
-     * Output only. Number of inserted Rows. Populated by DML INSERT and MERGE
-     * statements
-     *
-     * @param string $insertedRowCount
-     */
-    public function setInsertedRowCount($insertedRowCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInsertedRowCount()
-    {
-    }
-    /**
-     * Output only. Number of updated Rows. Populated by DML UPDATE and MERGE
-     * statements.
-     *
-     * @param string $updatedRowCount
-     */
-    public function setUpdatedRowCount($updatedRowCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdatedRowCount()
+    class Google_Service_Bigquery_DmlStatistics extends \Google\Service\Bigquery\DmlStatistics
     {
     }
 }

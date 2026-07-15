@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Playdeveloperreporting;
-
-class GooglePlayDeveloperReportingV1beta1ReleaseFilterOptions extends \Google\Collection
-{
-    protected $collection_key = 'tracks';
-    protected $tracksType = GooglePlayDeveloperReportingV1beta1Track::class;
-    protected $tracksDataType = 'array';
-    /**
-     * List of tracks to filter releases over. Provides the grouping of version
-     * codes under releases and tracks.
-     *
-     * @param GooglePlayDeveloperReportingV1beta1Track[] $tracks
-     */
-    public function setTracks($tracks)
+namespace Google\Service\Playdeveloperreporting {
+    class GooglePlayDeveloperReportingV1beta1ReleaseFilterOptions extends \Google\Collection
     {
+        protected $collection_key = 'tracks';
+        protected $tracksType = GooglePlayDeveloperReportingV1beta1Track::class;
+        protected $tracksDataType = 'array';
+        /**
+         * List of tracks to filter releases over. Provides the grouping of version
+         * codes under releases and tracks.
+         *
+         * @param GooglePlayDeveloperReportingV1beta1Track[] $tracks
+         */
+        public function setTracks($tracks)
+        {
+        }
+        /**
+         * @return GooglePlayDeveloperReportingV1beta1Track[]
+         */
+        public function getTracks()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePlayDeveloperReportingV1beta1Track[]
+     * Runtime class alias of \Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1ReleaseFilterOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTracks()
+    class Google_Service_Playdeveloperreporting_GooglePlayDeveloperReportingV1beta1ReleaseFilterOptions extends \Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1ReleaseFilterOptions
     {
     }
 }

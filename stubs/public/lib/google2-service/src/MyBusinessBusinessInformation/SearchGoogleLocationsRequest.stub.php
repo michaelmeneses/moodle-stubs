@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessBusinessInformation;
-
-class SearchGoogleLocationsRequest extends \Google\Model
-{
-    protected $locationType = Location::class;
-    protected $locationDataType = '';
-    /**
-     * The number of matches to return. The default value is 3, with a maximum of
-     * 10. Note that latency may increase if more are requested. There is no
-     * pagination.
-     *
-     * @var int
-     */
-    public $pageSize;
-    /**
-     * Text query to search for. The search results from a query string will be
-     * less accurate than if providing an exact location, but can provide more
-     * inexact matches.
-     *
-     * @var string
-     */
-    public $query;
-    /**
-     * Location to search for. If provided, will find locations which match the
-     * provided location details, which must include a value for the title.
-     *
-     * @param Location $location
-     */
-    public function setLocation(Location $location)
+namespace Google\Service\MyBusinessBusinessInformation {
+    class SearchGoogleLocationsRequest extends \Google\Model
     {
+        protected $locationType = Location::class;
+        protected $locationDataType = '';
+        /**
+         * The number of matches to return. The default value is 3, with a maximum of
+         * 10. Note that latency may increase if more are requested. There is no
+         * pagination.
+         *
+         * @var int
+         */
+        public $pageSize;
+        /**
+         * Text query to search for. The search results from a query string will be
+         * less accurate than if providing an exact location, but can provide more
+         * inexact matches.
+         *
+         * @var string
+         */
+        public $query;
+        /**
+         * Location to search for. If provided, will find locations which match the
+         * provided location details, which must include a value for the title.
+         *
+         * @param Location $location
+         */
+        public function setLocation(Location $location)
+        {
+        }
+        /**
+         * @return Location
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * The number of matches to return. The default value is 3, with a maximum of
+         * 10. Note that latency may increase if more are requested. There is no
+         * pagination.
+         *
+         * @param int $pageSize
+         */
+        public function setPageSize($pageSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPageSize()
+        {
+        }
+        /**
+         * Text query to search for. The search results from a query string will be
+         * less accurate than if providing an exact location, but can provide more
+         * inexact matches.
+         *
+         * @param string $query
+         */
+        public function setQuery($query)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQuery()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Location
+     * Runtime class alias of \Google\Service\MyBusinessBusinessInformation\SearchGoogleLocationsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLocation()
-    {
-    }
-    /**
-     * The number of matches to return. The default value is 3, with a maximum of
-     * 10. Note that latency may increase if more are requested. There is no
-     * pagination.
-     *
-     * @param int $pageSize
-     */
-    public function setPageSize($pageSize)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPageSize()
-    {
-    }
-    /**
-     * Text query to search for. The search results from a query string will be
-     * less accurate than if providing an exact location, but can provide more
-     * inexact matches.
-     *
-     * @param string $query
-     */
-    public function setQuery($query)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQuery()
+    class Google_Service_MyBusinessBusinessInformation_SearchGoogleLocationsRequest extends \Google\Service\MyBusinessBusinessInformation\SearchGoogleLocationsRequest
     {
     }
 }

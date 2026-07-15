@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataform;
-
-class CommitRepositoryChangesResponse extends \Google\Model
-{
-    /**
-     * The commit SHA of the current commit.
-     *
-     * @var string
-     */
-    public $commitSha;
-    /**
-     * The commit SHA of the current commit.
-     *
-     * @param string $commitSha
-     */
-    public function setCommitSha($commitSha)
+namespace Google\Service\Dataform {
+    class CommitRepositoryChangesResponse extends \Google\Model
     {
+        /**
+         * The commit SHA of the current commit.
+         *
+         * @var string
+         */
+        public $commitSha;
+        /**
+         * The commit SHA of the current commit.
+         *
+         * @param string $commitSha
+         */
+        public function setCommitSha($commitSha)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCommitSha()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataform\CommitRepositoryChangesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCommitSha()
+    class Google_Service_Dataform_CommitRepositoryChangesResponse extends \Google\Service\Dataform\CommitRepositoryChangesResponse
     {
     }
 }

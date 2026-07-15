@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Logging;
-
-class Linear extends \Google\Model
-{
-    /**
-     * Must be greater than 0.
-     *
-     * @var int
-     */
-    public $numFiniteBuckets;
-    /**
-     * Lower bound of the first bucket.
-     *
-     * @var 
-     */
-    public $offset;
-    /**
-     * Must be greater than 0.
-     *
-     * @var 
-     */
-    public $width;
-    /**
-     * Must be greater than 0.
-     *
-     * @param int $numFiniteBuckets
-     */
-    public function setNumFiniteBuckets($numFiniteBuckets)
+namespace Google\Service\Logging {
+    class Linear extends \Google\Model
     {
+        /**
+         * Must be greater than 0.
+         *
+         * @var int
+         */
+        public $numFiniteBuckets;
+        /**
+         * Lower bound of the first bucket.
+         *
+         * @var 
+         */
+        public $offset;
+        /**
+         * Must be greater than 0.
+         *
+         * @var 
+         */
+        public $width;
+        /**
+         * Must be greater than 0.
+         *
+         * @param int $numFiniteBuckets
+         */
+        public function setNumFiniteBuckets($numFiniteBuckets)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumFiniteBuckets()
+        {
+        }
+        public function setOffset($offset)
+        {
+        }
+        public function getOffset()
+        {
+        }
+        public function setWidth($width)
+        {
+        }
+        public function getWidth()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Logging\Linear registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNumFiniteBuckets()
-    {
-    }
-    public function setOffset($offset)
-    {
-    }
-    public function getOffset()
-    {
-    }
-    public function setWidth($width)
-    {
-    }
-    public function getWidth()
+    class Google_Service_Logging_Linear extends \Google\Service\Logging\Linear
     {
     }
 }

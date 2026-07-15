@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class ResourceSelector extends \Google\Model
-{
-    /**
-     * Required. The [full resource name] (https://cloud.google.com/asset-
-     * inventory/docs/resource-name-format) of a resource of [supported resource
-     * types](https://cloud.google.com/asset-inventory/docs/supported-asset-
-     * types#analyzable_asset_types).
-     *
-     * @var string
-     */
-    public $fullResourceName;
-    /**
-     * Required. The [full resource name] (https://cloud.google.com/asset-
-     * inventory/docs/resource-name-format) of a resource of [supported resource
-     * types](https://cloud.google.com/asset-inventory/docs/supported-asset-
-     * types#analyzable_asset_types).
-     *
-     * @param string $fullResourceName
-     */
-    public function setFullResourceName($fullResourceName)
+namespace Google\Service\CloudAsset {
+    class ResourceSelector extends \Google\Model
     {
+        /**
+         * Required. The [full resource name] (https://cloud.google.com/asset-
+         * inventory/docs/resource-name-format) of a resource of [supported resource
+         * types](https://cloud.google.com/asset-inventory/docs/supported-asset-
+         * types#analyzable_asset_types).
+         *
+         * @var string
+         */
+        public $fullResourceName;
+        /**
+         * Required. The [full resource name] (https://cloud.google.com/asset-
+         * inventory/docs/resource-name-format) of a resource of [supported resource
+         * types](https://cloud.google.com/asset-inventory/docs/supported-asset-
+         * types#analyzable_asset_types).
+         *
+         * @param string $fullResourceName
+         */
+        public function setFullResourceName($fullResourceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFullResourceName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudAsset\ResourceSelector registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFullResourceName()
+    class Google_Service_CloudAsset_ResourceSelector extends \Google\Service\CloudAsset\ResourceSelector
     {
     }
 }

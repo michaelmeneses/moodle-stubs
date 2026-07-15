@@ -21,27 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics\Resource;
-
-/**
- * The "clientId" collection of methods.
- * Typical usage is:
- *  <code>
- *   $analyticsService = new Google\Service\Analytics(...);
- *   $clientId = $analyticsService->management_clientId;
- *  </code>
- */
-class ManagementClientId extends \Google\Service\Resource
-{
+namespace Google\Service\Analytics\Resource {
+    use Google\Service\Analytics\HashClientIdRequest;
+    use Google\Service\Analytics\HashClientIdResponse;
     /**
-     * Hashes the given Client ID. (clientId.hashClientId)
-     *
-     * @param HashClientIdRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return HashClientIdResponse
-     * @throws \Google\Service\Exception
+     * The "clientId" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $analyticsService = new Google\Service\Analytics(...);
+     *   $clientId = $analyticsService->management_clientId;
+     *  </code>
      */
-    public function hashClientId(HashClientIdRequest $postBody, $optParams = [])
+    class ManagementClientId extends \Google\Service\Resource
+    {
+        /**
+         * Hashes the given Client ID. (clientId.hashClientId)
+         *
+         * @param HashClientIdRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return HashClientIdResponse
+         * @throws \Google\Service\Exception
+         */
+        public function hashClientId(HashClientIdRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Analytics\Resource\ManagementClientId registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Analytics_Resource_ManagementClientId extends \Google\Service\Analytics\Resource\ManagementClientId
     {
     }
 }

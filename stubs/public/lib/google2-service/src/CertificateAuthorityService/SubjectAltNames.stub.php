@@ -21,106 +21,115 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CertificateAuthorityService;
-
-class SubjectAltNames extends \Google\Collection
-{
-    protected $collection_key = 'uris';
-    protected $customSansType = X509Extension::class;
-    protected $customSansDataType = 'array';
-    /**
-     * Contains only valid, fully-qualified host names.
-     *
-     * @var string[]
-     */
-    public $dnsNames;
-    /**
-     * Contains only valid RFC 2822 E-mail addresses.
-     *
-     * @var string[]
-     */
-    public $emailAddresses;
-    /**
-     * Contains only valid 32-bit IPv4 addresses or RFC 4291 IPv6 addresses.
-     *
-     * @var string[]
-     */
-    public $ipAddresses;
-    /**
-     * Contains only valid RFC 3986 URIs.
-     *
-     * @var string[]
-     */
-    public $uris;
-    /**
-     * Contains additional subject alternative name values. For each custom_san,
-     * the `value` field must contain an ASN.1 encoded UTF8String.
-     *
-     * @param X509Extension[] $customSans
-     */
-    public function setCustomSans($customSans)
+namespace Google\Service\CertificateAuthorityService {
+    class SubjectAltNames extends \Google\Collection
     {
+        protected $collection_key = 'uris';
+        protected $customSansType = X509Extension::class;
+        protected $customSansDataType = 'array';
+        /**
+         * Contains only valid, fully-qualified host names.
+         *
+         * @var string[]
+         */
+        public $dnsNames;
+        /**
+         * Contains only valid RFC 2822 E-mail addresses.
+         *
+         * @var string[]
+         */
+        public $emailAddresses;
+        /**
+         * Contains only valid 32-bit IPv4 addresses or RFC 4291 IPv6 addresses.
+         *
+         * @var string[]
+         */
+        public $ipAddresses;
+        /**
+         * Contains only valid RFC 3986 URIs.
+         *
+         * @var string[]
+         */
+        public $uris;
+        /**
+         * Contains additional subject alternative name values. For each custom_san,
+         * the `value` field must contain an ASN.1 encoded UTF8String.
+         *
+         * @param X509Extension[] $customSans
+         */
+        public function setCustomSans($customSans)
+        {
+        }
+        /**
+         * @return X509Extension[]
+         */
+        public function getCustomSans()
+        {
+        }
+        /**
+         * Contains only valid, fully-qualified host names.
+         *
+         * @param string[] $dnsNames
+         */
+        public function setDnsNames($dnsNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDnsNames()
+        {
+        }
+        /**
+         * Contains only valid RFC 2822 E-mail addresses.
+         *
+         * @param string[] $emailAddresses
+         */
+        public function setEmailAddresses($emailAddresses)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getEmailAddresses()
+        {
+        }
+        /**
+         * Contains only valid 32-bit IPv4 addresses or RFC 4291 IPv6 addresses.
+         *
+         * @param string[] $ipAddresses
+         */
+        public function setIpAddresses($ipAddresses)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getIpAddresses()
+        {
+        }
+        /**
+         * Contains only valid RFC 3986 URIs.
+         *
+         * @param string[] $uris
+         */
+        public function setUris($uris)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUris()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return X509Extension[]
+     * Runtime class alias of \Google\Service\CertificateAuthorityService\SubjectAltNames registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomSans()
-    {
-    }
-    /**
-     * Contains only valid, fully-qualified host names.
-     *
-     * @param string[] $dnsNames
-     */
-    public function setDnsNames($dnsNames)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getDnsNames()
-    {
-    }
-    /**
-     * Contains only valid RFC 2822 E-mail addresses.
-     *
-     * @param string[] $emailAddresses
-     */
-    public function setEmailAddresses($emailAddresses)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getEmailAddresses()
-    {
-    }
-    /**
-     * Contains only valid 32-bit IPv4 addresses or RFC 4291 IPv6 addresses.
-     *
-     * @param string[] $ipAddresses
-     */
-    public function setIpAddresses($ipAddresses)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getIpAddresses()
-    {
-    }
-    /**
-     * Contains only valid RFC 3986 URIs.
-     *
-     * @param string[] $uris
-     */
-    public function setUris($uris)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUris()
+    class Google_Service_CertificateAuthorityService_SubjectAltNames extends \Google\Service\CertificateAuthorityService\SubjectAltNames
     {
     }
 }

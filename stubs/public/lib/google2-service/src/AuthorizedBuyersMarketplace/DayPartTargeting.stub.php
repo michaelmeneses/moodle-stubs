@@ -21,59 +21,68 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AuthorizedBuyersMarketplace;
-
-class DayPartTargeting extends \Google\Collection
-{
-    /**
-     * Default value. This field is unused.
-     */
-    public const TIME_ZONE_TYPE_TIME_ZONE_TYPE_UNSPECIFIED = 'TIME_ZONE_TYPE_UNSPECIFIED';
-    /**
-     * The publisher's time zone
-     */
-    public const TIME_ZONE_TYPE_SELLER = 'SELLER';
-    /**
-     * The user's time zone
-     */
-    public const TIME_ZONE_TYPE_USER = 'USER';
-    protected $collection_key = 'dayParts';
-    protected $dayPartsType = DayPart::class;
-    protected $dayPartsDataType = 'array';
-    /**
-     * The time zone type of the day parts
-     *
-     * @var string
-     */
-    public $timeZoneType;
-    /**
-     * The targeted weekdays and times
-     *
-     * @param DayPart[] $dayParts
-     */
-    public function setDayParts($dayParts)
+namespace Google\Service\AuthorizedBuyersMarketplace {
+    class DayPartTargeting extends \Google\Collection
     {
+        /**
+         * Default value. This field is unused.
+         */
+        public const TIME_ZONE_TYPE_TIME_ZONE_TYPE_UNSPECIFIED = 'TIME_ZONE_TYPE_UNSPECIFIED';
+        /**
+         * The publisher's time zone
+         */
+        public const TIME_ZONE_TYPE_SELLER = 'SELLER';
+        /**
+         * The user's time zone
+         */
+        public const TIME_ZONE_TYPE_USER = 'USER';
+        protected $collection_key = 'dayParts';
+        protected $dayPartsType = DayPart::class;
+        protected $dayPartsDataType = 'array';
+        /**
+         * The time zone type of the day parts
+         *
+         * @var string
+         */
+        public $timeZoneType;
+        /**
+         * The targeted weekdays and times
+         *
+         * @param DayPart[] $dayParts
+         */
+        public function setDayParts($dayParts)
+        {
+        }
+        /**
+         * @return DayPart[]
+         */
+        public function getDayParts()
+        {
+        }
+        /**
+         * The time zone type of the day parts
+         *
+         * Accepted values: TIME_ZONE_TYPE_UNSPECIFIED, SELLER, USER
+         *
+         * @param self::TIME_ZONE_TYPE_* $timeZoneType
+         */
+        public function setTimeZoneType($timeZoneType)
+        {
+        }
+        /**
+         * @return self::TIME_ZONE_TYPE_*
+         */
+        public function getTimeZoneType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DayPart[]
+     * Runtime class alias of \Google\Service\AuthorizedBuyersMarketplace\DayPartTargeting registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDayParts()
-    {
-    }
-    /**
-     * The time zone type of the day parts
-     *
-     * Accepted values: TIME_ZONE_TYPE_UNSPECIFIED, SELLER, USER
-     *
-     * @param self::TIME_ZONE_TYPE_* $timeZoneType
-     */
-    public function setTimeZoneType($timeZoneType)
-    {
-    }
-    /**
-     * @return self::TIME_ZONE_TYPE_*
-     */
-    public function getTimeZoneType()
+    class Google_Service_AuthorizedBuyersMarketplace_DayPartTargeting extends \Google\Service\AuthorizedBuyersMarketplace\DayPartTargeting
     {
     }
 }

@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceControl;
-
-class ReportRequest extends \Google\Collection
-{
-    protected $collection_key = 'operations';
-    protected $operationsType = AttributeContext::class;
-    protected $operationsDataType = 'array';
-    /**
-     * Specifies the version of the service configuration that should be used to
-     * process the request. Must not be empty. Set this field to 'latest' to
-     * specify using the latest configuration.
-     *
-     * @var string
-     */
-    public $serviceConfigId;
-    /**
-     * Describes the list of operations to be reported. Each operation is
-     * represented as an AttributeContext, and contains all attributes around an
-     * API access.
-     *
-     * @param AttributeContext[] $operations
-     */
-    public function setOperations($operations)
+namespace Google\Service\ServiceControl {
+    class ReportRequest extends \Google\Collection
     {
+        protected $collection_key = 'operations';
+        protected $operationsType = AttributeContext::class;
+        protected $operationsDataType = 'array';
+        /**
+         * Specifies the version of the service configuration that should be used to
+         * process the request. Must not be empty. Set this field to 'latest' to
+         * specify using the latest configuration.
+         *
+         * @var string
+         */
+        public $serviceConfigId;
+        /**
+         * Describes the list of operations to be reported. Each operation is
+         * represented as an AttributeContext, and contains all attributes around an
+         * API access.
+         *
+         * @param AttributeContext[] $operations
+         */
+        public function setOperations($operations)
+        {
+        }
+        /**
+         * @return AttributeContext[]
+         */
+        public function getOperations()
+        {
+        }
+        /**
+         * Specifies the version of the service configuration that should be used to
+         * process the request. Must not be empty. Set this field to 'latest' to
+         * specify using the latest configuration.
+         *
+         * @param string $serviceConfigId
+         */
+        public function setServiceConfigId($serviceConfigId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceConfigId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AttributeContext[]
+     * Runtime class alias of \Google\Service\ServiceControl\ReportRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOperations()
-    {
-    }
-    /**
-     * Specifies the version of the service configuration that should be used to
-     * process the request. Must not be empty. Set this field to 'latest' to
-     * specify using the latest configuration.
-     *
-     * @param string $serviceConfigId
-     */
-    public function setServiceConfigId($serviceConfigId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceConfigId()
+    class Google_Service_ServiceControl_ReportRequest extends \Google\Service\ServiceControl\ReportRequest
     {
     }
 }

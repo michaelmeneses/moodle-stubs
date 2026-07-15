@@ -21,342 +21,351 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsHub;
-
-class Subscription extends \Google\Collection
-{
-    /**
-     * Not specified.
-     */
-    public const RESOURCE_TYPE_SHARED_RESOURCE_TYPE_UNSPECIFIED = 'SHARED_RESOURCE_TYPE_UNSPECIFIED';
-    /**
-     * BigQuery Dataset Asset.
-     */
-    public const RESOURCE_TYPE_BIGQUERY_DATASET = 'BIGQUERY_DATASET';
-    /**
-     * Pub/Sub Topic Asset.
-     */
-    public const RESOURCE_TYPE_PUBSUB_TOPIC = 'PUBSUB_TOPIC';
-    /**
-     * Default value. This value is unused.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * This subscription is active and the data is accessible.
-     */
-    public const STATE_STATE_ACTIVE = 'STATE_ACTIVE';
-    /**
-     * The data referenced by this subscription is out of date and should be
-     * refreshed. This can happen when a data provider adds or removes datasets.
-     */
-    public const STATE_STATE_STALE = 'STATE_STALE';
-    /**
-     * This subscription has been cancelled or revoked and the data is no longer
-     * accessible.
-     */
-    public const STATE_STATE_INACTIVE = 'STATE_INACTIVE';
-    protected $collection_key = 'linkedResources';
-    protected $commercialInfoType = GoogleCloudBigqueryAnalyticshubV1SubscriptionCommercialInfo::class;
-    protected $commercialInfoDataType = '';
-    /**
-     * Output only. Timestamp when the subscription was created.
-     *
-     * @var string
-     */
-    public $creationTime;
-    /**
-     * Output only. Resource name of the source Data Exchange. e.g.
-     * projects/123/locations/us/dataExchanges/456
-     *
-     * @var string
-     */
-    public $dataExchange;
-    protected $destinationDatasetType = DestinationDataset::class;
-    protected $destinationDatasetDataType = '';
-    /**
-     * Output only. Timestamp when the subscription was last modified.
-     *
-     * @var string
-     */
-    public $lastModifyTime;
-    protected $linkedDatasetMapType = LinkedResource::class;
-    protected $linkedDatasetMapDataType = 'map';
-    protected $linkedResourcesType = LinkedResource::class;
-    protected $linkedResourcesDataType = 'array';
-    /**
-     * Output only. Resource name of the source Listing. e.g.
-     * projects/123/locations/us/dataExchanges/456/listings/789
-     *
-     * @var string
-     */
-    public $listing;
-    /**
-     * Output only. By default, false. If true, the Subscriber agreed to the email
-     * sharing mandate that is enabled for DataExchange/Listing.
-     *
-     * @var bool
-     */
-    public $logLinkedDatasetQueryUserEmail;
-    /**
-     * Output only. The resource name of the subscription. e.g.
-     * `projects/myproject/locations/us/subscriptions/123`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. Display name of the project of this subscription.
-     *
-     * @var string
-     */
-    public $organizationDisplayName;
-    /**
-     * Output only. Organization of the project this subscription belongs to.
-     *
-     * @var string
-     */
-    public $organizationId;
-    /**
-     * Output only. Listing shared asset type.
-     *
-     * @var string
-     */
-    public $resourceType;
-    /**
-     * Output only. Current state of the subscription.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Output only. Email of the subscriber.
-     *
-     * @var string
-     */
-    public $subscriberContact;
-    /**
-     * Output only. This is set if this is a commercial subscription i.e. if this
-     * subscription was created from subscribing to a commercial listing.
-     *
-     * @param GoogleCloudBigqueryAnalyticshubV1SubscriptionCommercialInfo $commercialInfo
-     */
-    public function setCommercialInfo(GoogleCloudBigqueryAnalyticshubV1SubscriptionCommercialInfo $commercialInfo)
+namespace Google\Service\AnalyticsHub {
+    class Subscription extends \Google\Collection
     {
+        /**
+         * Not specified.
+         */
+        public const RESOURCE_TYPE_SHARED_RESOURCE_TYPE_UNSPECIFIED = 'SHARED_RESOURCE_TYPE_UNSPECIFIED';
+        /**
+         * BigQuery Dataset Asset.
+         */
+        public const RESOURCE_TYPE_BIGQUERY_DATASET = 'BIGQUERY_DATASET';
+        /**
+         * Pub/Sub Topic Asset.
+         */
+        public const RESOURCE_TYPE_PUBSUB_TOPIC = 'PUBSUB_TOPIC';
+        /**
+         * Default value. This value is unused.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * This subscription is active and the data is accessible.
+         */
+        public const STATE_STATE_ACTIVE = 'STATE_ACTIVE';
+        /**
+         * The data referenced by this subscription is out of date and should be
+         * refreshed. This can happen when a data provider adds or removes datasets.
+         */
+        public const STATE_STATE_STALE = 'STATE_STALE';
+        /**
+         * This subscription has been cancelled or revoked and the data is no longer
+         * accessible.
+         */
+        public const STATE_STATE_INACTIVE = 'STATE_INACTIVE';
+        protected $collection_key = 'linkedResources';
+        protected $commercialInfoType = GoogleCloudBigqueryAnalyticshubV1SubscriptionCommercialInfo::class;
+        protected $commercialInfoDataType = '';
+        /**
+         * Output only. Timestamp when the subscription was created.
+         *
+         * @var string
+         */
+        public $creationTime;
+        /**
+         * Output only. Resource name of the source Data Exchange. e.g.
+         * projects/123/locations/us/dataExchanges/456
+         *
+         * @var string
+         */
+        public $dataExchange;
+        protected $destinationDatasetType = DestinationDataset::class;
+        protected $destinationDatasetDataType = '';
+        /**
+         * Output only. Timestamp when the subscription was last modified.
+         *
+         * @var string
+         */
+        public $lastModifyTime;
+        protected $linkedDatasetMapType = LinkedResource::class;
+        protected $linkedDatasetMapDataType = 'map';
+        protected $linkedResourcesType = LinkedResource::class;
+        protected $linkedResourcesDataType = 'array';
+        /**
+         * Output only. Resource name of the source Listing. e.g.
+         * projects/123/locations/us/dataExchanges/456/listings/789
+         *
+         * @var string
+         */
+        public $listing;
+        /**
+         * Output only. By default, false. If true, the Subscriber agreed to the email
+         * sharing mandate that is enabled for DataExchange/Listing.
+         *
+         * @var bool
+         */
+        public $logLinkedDatasetQueryUserEmail;
+        /**
+         * Output only. The resource name of the subscription. e.g.
+         * `projects/myproject/locations/us/subscriptions/123`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. Display name of the project of this subscription.
+         *
+         * @var string
+         */
+        public $organizationDisplayName;
+        /**
+         * Output only. Organization of the project this subscription belongs to.
+         *
+         * @var string
+         */
+        public $organizationId;
+        /**
+         * Output only. Listing shared asset type.
+         *
+         * @var string
+         */
+        public $resourceType;
+        /**
+         * Output only. Current state of the subscription.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Output only. Email of the subscriber.
+         *
+         * @var string
+         */
+        public $subscriberContact;
+        /**
+         * Output only. This is set if this is a commercial subscription i.e. if this
+         * subscription was created from subscribing to a commercial listing.
+         *
+         * @param GoogleCloudBigqueryAnalyticshubV1SubscriptionCommercialInfo $commercialInfo
+         */
+        public function setCommercialInfo(GoogleCloudBigqueryAnalyticshubV1SubscriptionCommercialInfo $commercialInfo)
+        {
+        }
+        /**
+         * @return GoogleCloudBigqueryAnalyticshubV1SubscriptionCommercialInfo
+         */
+        public function getCommercialInfo()
+        {
+        }
+        /**
+         * Output only. Timestamp when the subscription was created.
+         *
+         * @param string $creationTime
+         */
+        public function setCreationTime($creationTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreationTime()
+        {
+        }
+        /**
+         * Output only. Resource name of the source Data Exchange. e.g.
+         * projects/123/locations/us/dataExchanges/456
+         *
+         * @param string $dataExchange
+         */
+        public function setDataExchange($dataExchange)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataExchange()
+        {
+        }
+        /**
+         * Optional. BigQuery destination dataset to create for the subscriber.
+         *
+         * @param DestinationDataset $destinationDataset
+         */
+        public function setDestinationDataset(DestinationDataset $destinationDataset)
+        {
+        }
+        /**
+         * @return DestinationDataset
+         */
+        public function getDestinationDataset()
+        {
+        }
+        /**
+         * Output only. Timestamp when the subscription was last modified.
+         *
+         * @param string $lastModifyTime
+         */
+        public function setLastModifyTime($lastModifyTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastModifyTime()
+        {
+        }
+        /**
+         * Output only. Map of listing resource names to associated linked resource,
+         * e.g. projects/123/locations/us/dataExchanges/456/listings/789 ->
+         * projects/123/datasets/my_dataset For listing-level subscriptions, this is a
+         * map of size 1. Only contains values if state == STATE_ACTIVE.
+         *
+         * @param LinkedResource[] $linkedDatasetMap
+         */
+        public function setLinkedDatasetMap($linkedDatasetMap)
+        {
+        }
+        /**
+         * @return LinkedResource[]
+         */
+        public function getLinkedDatasetMap()
+        {
+        }
+        /**
+         * Output only. Linked resources created in the subscription. Only contains
+         * values if state = STATE_ACTIVE.
+         *
+         * @param LinkedResource[] $linkedResources
+         */
+        public function setLinkedResources($linkedResources)
+        {
+        }
+        /**
+         * @return LinkedResource[]
+         */
+        public function getLinkedResources()
+        {
+        }
+        /**
+         * Output only. Resource name of the source Listing. e.g.
+         * projects/123/locations/us/dataExchanges/456/listings/789
+         *
+         * @param string $listing
+         */
+        public function setListing($listing)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getListing()
+        {
+        }
+        /**
+         * Output only. By default, false. If true, the Subscriber agreed to the email
+         * sharing mandate that is enabled for DataExchange/Listing.
+         *
+         * @param bool $logLinkedDatasetQueryUserEmail
+         */
+        public function setLogLinkedDatasetQueryUserEmail($logLinkedDatasetQueryUserEmail)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getLogLinkedDatasetQueryUserEmail()
+        {
+        }
+        /**
+         * Output only. The resource name of the subscription. e.g.
+         * `projects/myproject/locations/us/subscriptions/123`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. Display name of the project of this subscription.
+         *
+         * @param string $organizationDisplayName
+         */
+        public function setOrganizationDisplayName($organizationDisplayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOrganizationDisplayName()
+        {
+        }
+        /**
+         * Output only. Organization of the project this subscription belongs to.
+         *
+         * @param string $organizationId
+         */
+        public function setOrganizationId($organizationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOrganizationId()
+        {
+        }
+        /**
+         * Output only. Listing shared asset type.
+         *
+         * Accepted values: SHARED_RESOURCE_TYPE_UNSPECIFIED, BIGQUERY_DATASET,
+         * PUBSUB_TOPIC
+         *
+         * @param self::RESOURCE_TYPE_* $resourceType
+         */
+        public function setResourceType($resourceType)
+        {
+        }
+        /**
+         * @return self::RESOURCE_TYPE_*
+         */
+        public function getResourceType()
+        {
+        }
+        /**
+         * Output only. Current state of the subscription.
+         *
+         * Accepted values: STATE_UNSPECIFIED, STATE_ACTIVE, STATE_STALE,
+         * STATE_INACTIVE
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Output only. Email of the subscriber.
+         *
+         * @param string $subscriberContact
+         */
+        public function setSubscriberContact($subscriberContact)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubscriberContact()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudBigqueryAnalyticshubV1SubscriptionCommercialInfo
+     * Runtime class alias of \Google\Service\AnalyticsHub\Subscription registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCommercialInfo()
-    {
-    }
-    /**
-     * Output only. Timestamp when the subscription was created.
-     *
-     * @param string $creationTime
-     */
-    public function setCreationTime($creationTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreationTime()
-    {
-    }
-    /**
-     * Output only. Resource name of the source Data Exchange. e.g.
-     * projects/123/locations/us/dataExchanges/456
-     *
-     * @param string $dataExchange
-     */
-    public function setDataExchange($dataExchange)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDataExchange()
-    {
-    }
-    /**
-     * Optional. BigQuery destination dataset to create for the subscriber.
-     *
-     * @param DestinationDataset $destinationDataset
-     */
-    public function setDestinationDataset(DestinationDataset $destinationDataset)
-    {
-    }
-    /**
-     * @return DestinationDataset
-     */
-    public function getDestinationDataset()
-    {
-    }
-    /**
-     * Output only. Timestamp when the subscription was last modified.
-     *
-     * @param string $lastModifyTime
-     */
-    public function setLastModifyTime($lastModifyTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastModifyTime()
-    {
-    }
-    /**
-     * Output only. Map of listing resource names to associated linked resource,
-     * e.g. projects/123/locations/us/dataExchanges/456/listings/789 ->
-     * projects/123/datasets/my_dataset For listing-level subscriptions, this is a
-     * map of size 1. Only contains values if state == STATE_ACTIVE.
-     *
-     * @param LinkedResource[] $linkedDatasetMap
-     */
-    public function setLinkedDatasetMap($linkedDatasetMap)
-    {
-    }
-    /**
-     * @return LinkedResource[]
-     */
-    public function getLinkedDatasetMap()
-    {
-    }
-    /**
-     * Output only. Linked resources created in the subscription. Only contains
-     * values if state = STATE_ACTIVE.
-     *
-     * @param LinkedResource[] $linkedResources
-     */
-    public function setLinkedResources($linkedResources)
-    {
-    }
-    /**
-     * @return LinkedResource[]
-     */
-    public function getLinkedResources()
-    {
-    }
-    /**
-     * Output only. Resource name of the source Listing. e.g.
-     * projects/123/locations/us/dataExchanges/456/listings/789
-     *
-     * @param string $listing
-     */
-    public function setListing($listing)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getListing()
-    {
-    }
-    /**
-     * Output only. By default, false. If true, the Subscriber agreed to the email
-     * sharing mandate that is enabled for DataExchange/Listing.
-     *
-     * @param bool $logLinkedDatasetQueryUserEmail
-     */
-    public function setLogLinkedDatasetQueryUserEmail($logLinkedDatasetQueryUserEmail)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getLogLinkedDatasetQueryUserEmail()
-    {
-    }
-    /**
-     * Output only. The resource name of the subscription. e.g.
-     * `projects/myproject/locations/us/subscriptions/123`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. Display name of the project of this subscription.
-     *
-     * @param string $organizationDisplayName
-     */
-    public function setOrganizationDisplayName($organizationDisplayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOrganizationDisplayName()
-    {
-    }
-    /**
-     * Output only. Organization of the project this subscription belongs to.
-     *
-     * @param string $organizationId
-     */
-    public function setOrganizationId($organizationId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOrganizationId()
-    {
-    }
-    /**
-     * Output only. Listing shared asset type.
-     *
-     * Accepted values: SHARED_RESOURCE_TYPE_UNSPECIFIED, BIGQUERY_DATASET,
-     * PUBSUB_TOPIC
-     *
-     * @param self::RESOURCE_TYPE_* $resourceType
-     */
-    public function setResourceType($resourceType)
-    {
-    }
-    /**
-     * @return self::RESOURCE_TYPE_*
-     */
-    public function getResourceType()
-    {
-    }
-    /**
-     * Output only. Current state of the subscription.
-     *
-     * Accepted values: STATE_UNSPECIFIED, STATE_ACTIVE, STATE_STALE,
-     * STATE_INACTIVE
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Output only. Email of the subscriber.
-     *
-     * @param string $subscriberContact
-     */
-    public function setSubscriberContact($subscriberContact)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubscriberContact()
+    class Google_Service_AnalyticsHub_Subscription extends \Google\Service\AnalyticsHub\Subscription
     {
     }
 }

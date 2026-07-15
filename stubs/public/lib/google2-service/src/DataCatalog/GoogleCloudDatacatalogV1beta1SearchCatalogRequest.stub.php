@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1beta1SearchCatalogRequest extends \Google\Model
-{
-    public $orderBy;
-    public $pageSize;
-    public $pageToken;
-    public $query;
-    protected $scopeType = GoogleCloudDatacatalogV1beta1SearchCatalogRequestScope::class;
-    protected $scopeDataType = '';
-    public function setOrderBy($orderBy)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1beta1SearchCatalogRequest extends \Google\Model
     {
+        public $orderBy;
+        public $pageSize;
+        public $pageToken;
+        public $query;
+        protected $scopeType = GoogleCloudDatacatalogV1beta1SearchCatalogRequestScope::class;
+        protected $scopeDataType = '';
+        public function setOrderBy($orderBy)
+        {
+        }
+        public function getOrderBy()
+        {
+        }
+        public function setPageSize($pageSize)
+        {
+        }
+        public function getPageSize()
+        {
+        }
+        public function setPageToken($pageToken)
+        {
+        }
+        public function getPageToken()
+        {
+        }
+        public function setQuery($query)
+        {
+        }
+        public function getQuery()
+        {
+        }
+        /**
+         * @param GoogleCloudDatacatalogV1beta1SearchCatalogRequestScope
+         */
+        public function setScope(GoogleCloudDatacatalogV1beta1SearchCatalogRequestScope $scope)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1beta1SearchCatalogRequestScope
+         */
+        public function getScope()
+        {
+        }
     }
-    public function getOrderBy()
-    {
-    }
-    public function setPageSize($pageSize)
-    {
-    }
-    public function getPageSize()
-    {
-    }
-    public function setPageToken($pageToken)
-    {
-    }
-    public function getPageToken()
-    {
-    }
-    public function setQuery($query)
-    {
-    }
-    public function getQuery()
-    {
-    }
+}
+namespace {
     /**
-     * @param GoogleCloudDatacatalogV1beta1SearchCatalogRequestScope
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1beta1SearchCatalogRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setScope(GoogleCloudDatacatalogV1beta1SearchCatalogRequestScope $scope)
-    {
-    }
-    /**
-     * @return GoogleCloudDatacatalogV1beta1SearchCatalogRequestScope
-     */
-    public function getScope()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1beta1SearchCatalogRequest extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1beta1SearchCatalogRequest
     {
     }
 }

@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceNetworking;
-
-class Authentication extends \Google\Collection
-{
-    protected $collection_key = 'rules';
-    protected $providersType = AuthProvider::class;
-    protected $providersDataType = 'array';
-    protected $rulesType = AuthenticationRule::class;
-    protected $rulesDataType = 'array';
-    /**
-     * Defines a set of authentication providers that a service supports.
-     *
-     * @param AuthProvider[] $providers
-     */
-    public function setProviders($providers)
+namespace Google\Service\ServiceNetworking {
+    class Authentication extends \Google\Collection
     {
+        protected $collection_key = 'rules';
+        protected $providersType = AuthProvider::class;
+        protected $providersDataType = 'array';
+        protected $rulesType = AuthenticationRule::class;
+        protected $rulesDataType = 'array';
+        /**
+         * Defines a set of authentication providers that a service supports.
+         *
+         * @param AuthProvider[] $providers
+         */
+        public function setProviders($providers)
+        {
+        }
+        /**
+         * @return AuthProvider[]
+         */
+        public function getProviders()
+        {
+        }
+        /**
+         * A list of authentication rules that apply to individual API methods.
+         * **NOTE:** All service configuration rules follow "last one wins" order.
+         *
+         * @param AuthenticationRule[] $rules
+         */
+        public function setRules($rules)
+        {
+        }
+        /**
+         * @return AuthenticationRule[]
+         */
+        public function getRules()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AuthProvider[]
+     * Runtime class alias of \Google\Service\ServiceNetworking\Authentication registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProviders()
-    {
-    }
-    /**
-     * A list of authentication rules that apply to individual API methods.
-     * **NOTE:** All service configuration rules follow "last one wins" order.
-     *
-     * @param AuthenticationRule[] $rules
-     */
-    public function setRules($rules)
-    {
-    }
-    /**
-     * @return AuthenticationRule[]
-     */
-    public function getRules()
+    class Google_Service_ServiceNetworking_Authentication extends \Google\Service\ServiceNetworking\Authentication
     {
     }
 }

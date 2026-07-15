@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1MetricxResult extends \Google\Model
-{
-    /**
-     * Output only. MetricX score. Range depends on version.
-     *
-     * @var float
-     */
-    public $score;
-    /**
-     * Output only. MetricX score. Range depends on version.
-     *
-     * @param float $score
-     */
-    public function setScore($score)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1MetricxResult extends \Google\Model
     {
+        /**
+         * Output only. MetricX score. Range depends on version.
+         *
+         * @var float
+         */
+        public $score;
+        /**
+         * Output only. MetricX score. Range depends on version.
+         *
+         * @param float $score
+         */
+        public function setScore($score)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getScore()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1MetricxResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getScore()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1MetricxResult extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1MetricxResult
     {
     }
 }

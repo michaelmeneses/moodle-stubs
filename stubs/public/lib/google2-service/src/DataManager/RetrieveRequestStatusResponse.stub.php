@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataManager;
-
-class RetrieveRequestStatusResponse extends \Google\Collection
-{
-    protected $collection_key = 'requestStatusPerDestination';
-    protected $requestStatusPerDestinationType = RequestStatusPerDestination::class;
-    protected $requestStatusPerDestinationDataType = 'array';
-    /**
-     * A list of request statuses per destination. The order of the statuses
-     * matches the order of the destinations in the original request.
-     *
-     * @param RequestStatusPerDestination[] $requestStatusPerDestination
-     */
-    public function setRequestStatusPerDestination($requestStatusPerDestination)
+namespace Google\Service\DataManager {
+    class RetrieveRequestStatusResponse extends \Google\Collection
     {
+        protected $collection_key = 'requestStatusPerDestination';
+        protected $requestStatusPerDestinationType = RequestStatusPerDestination::class;
+        protected $requestStatusPerDestinationDataType = 'array';
+        /**
+         * A list of request statuses per destination. The order of the statuses
+         * matches the order of the destinations in the original request.
+         *
+         * @param RequestStatusPerDestination[] $requestStatusPerDestination
+         */
+        public function setRequestStatusPerDestination($requestStatusPerDestination)
+        {
+        }
+        /**
+         * @return RequestStatusPerDestination[]
+         */
+        public function getRequestStatusPerDestination()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RequestStatusPerDestination[]
+     * Runtime class alias of \Google\Service\DataManager\RetrieveRequestStatusResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequestStatusPerDestination()
+    class Google_Service_DataManager_RetrieveRequestStatusResponse extends \Google\Service\DataManager\RetrieveRequestStatusResponse
     {
     }
 }

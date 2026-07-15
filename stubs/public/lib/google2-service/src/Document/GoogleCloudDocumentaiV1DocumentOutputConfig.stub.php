@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1DocumentOutputConfig extends \Google\Model
-{
-    protected $gcsOutputConfigType = GoogleCloudDocumentaiV1DocumentOutputConfigGcsOutputConfig::class;
-    protected $gcsOutputConfigDataType = '';
-    /**
-     * Output config to write the results to Cloud Storage.
-     *
-     * @param GoogleCloudDocumentaiV1DocumentOutputConfigGcsOutputConfig $gcsOutputConfig
-     */
-    public function setGcsOutputConfig(GoogleCloudDocumentaiV1DocumentOutputConfigGcsOutputConfig $gcsOutputConfig)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1DocumentOutputConfig extends \Google\Model
     {
+        protected $gcsOutputConfigType = GoogleCloudDocumentaiV1DocumentOutputConfigGcsOutputConfig::class;
+        protected $gcsOutputConfigDataType = '';
+        /**
+         * Output config to write the results to Cloud Storage.
+         *
+         * @param GoogleCloudDocumentaiV1DocumentOutputConfigGcsOutputConfig $gcsOutputConfig
+         */
+        public function setGcsOutputConfig(GoogleCloudDocumentaiV1DocumentOutputConfigGcsOutputConfig $gcsOutputConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1DocumentOutputConfigGcsOutputConfig
+         */
+        public function getGcsOutputConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiV1DocumentOutputConfigGcsOutputConfig
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1DocumentOutputConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGcsOutputConfig()
+    class Google_Service_Document_GoogleCloudDocumentaiV1DocumentOutputConfig extends \Google\Service\Document\GoogleCloudDocumentaiV1DocumentOutputConfig
     {
     }
 }

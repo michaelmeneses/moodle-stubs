@@ -21,81 +21,90 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CivicInfo;
-
-class RepresentativeInfoResponse extends \Google\Collection
-{
-    protected $collection_key = 'officials';
-    protected $divisionsType = GeographicDivision::class;
-    protected $divisionsDataType = 'map';
-    /**
-     * @var string
-     */
-    public $kind;
-    protected $normalizedInputType = SimpleAddressType::class;
-    protected $normalizedInputDataType = '';
-    protected $officesType = Office::class;
-    protected $officesDataType = 'array';
-    protected $officialsType = Official::class;
-    protected $officialsDataType = 'array';
-    /**
-     * @param GeographicDivision[]
-     */
-    public function setDivisions($divisions)
+namespace Google\Service\CivicInfo {
+    class RepresentativeInfoResponse extends \Google\Collection
     {
+        protected $collection_key = 'officials';
+        protected $divisionsType = GeographicDivision::class;
+        protected $divisionsDataType = 'map';
+        /**
+         * @var string
+         */
+        public $kind;
+        protected $normalizedInputType = SimpleAddressType::class;
+        protected $normalizedInputDataType = '';
+        protected $officesType = Office::class;
+        protected $officesDataType = 'array';
+        protected $officialsType = Official::class;
+        protected $officialsDataType = 'array';
+        /**
+         * @param GeographicDivision[]
+         */
+        public function setDivisions($divisions)
+        {
+        }
+        /**
+         * @return GeographicDivision[]
+         */
+        public function getDivisions()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * @param SimpleAddressType
+         */
+        public function setNormalizedInput(SimpleAddressType $normalizedInput)
+        {
+        }
+        /**
+         * @return SimpleAddressType
+         */
+        public function getNormalizedInput()
+        {
+        }
+        /**
+         * @param Office[]
+         */
+        public function setOffices($offices)
+        {
+        }
+        /**
+         * @return Office[]
+         */
+        public function getOffices()
+        {
+        }
+        /**
+         * @param Official[]
+         */
+        public function setOfficials($officials)
+        {
+        }
+        /**
+         * @return Official[]
+         */
+        public function getOfficials()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GeographicDivision[]
+     * Runtime class alias of \Google\Service\CivicInfo\RepresentativeInfoResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDivisions()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * @param SimpleAddressType
-     */
-    public function setNormalizedInput(SimpleAddressType $normalizedInput)
-    {
-    }
-    /**
-     * @return SimpleAddressType
-     */
-    public function getNormalizedInput()
-    {
-    }
-    /**
-     * @param Office[]
-     */
-    public function setOffices($offices)
-    {
-    }
-    /**
-     * @return Office[]
-     */
-    public function getOffices()
-    {
-    }
-    /**
-     * @param Official[]
-     */
-    public function setOfficials($officials)
-    {
-    }
-    /**
-     * @return Official[]
-     */
-    public function getOfficials()
+    class Google_Service_CivicInfo_RepresentativeInfoResponse extends \Google\Service\CivicInfo\RepresentativeInfoResponse
     {
     }
 }

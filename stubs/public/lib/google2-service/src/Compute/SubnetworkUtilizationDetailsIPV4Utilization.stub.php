@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class SubnetworkUtilizationDetailsIPV4Utilization extends \Google\Model
-{
-    /**
-     * Will be set for secondary range. Empty for primary IPv4 range.
-     *
-     * @var string
-     */
-    public $rangeName;
-    /**
-     * @var string
-     */
-    public $totalAllocatedIp;
-    /**
-     * @var string
-     */
-    public $totalFreeIp;
-    /**
-     * Will be set for secondary range. Empty for primary IPv4 range.
-     *
-     * @param string $rangeName
-     */
-    public function setRangeName($rangeName)
+namespace Google\Service\Compute {
+    class SubnetworkUtilizationDetailsIPV4Utilization extends \Google\Model
     {
+        /**
+         * Will be set for secondary range. Empty for primary IPv4 range.
+         *
+         * @var string
+         */
+        public $rangeName;
+        /**
+         * @var string
+         */
+        public $totalAllocatedIp;
+        /**
+         * @var string
+         */
+        public $totalFreeIp;
+        /**
+         * Will be set for secondary range. Empty for primary IPv4 range.
+         *
+         * @param string $rangeName
+         */
+        public function setRangeName($rangeName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRangeName()
+        {
+        }
+        /**
+         * @param string $totalAllocatedIp
+         */
+        public function setTotalAllocatedIp($totalAllocatedIp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalAllocatedIp()
+        {
+        }
+        /**
+         * @param string $totalFreeIp
+         */
+        public function setTotalFreeIp($totalFreeIp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalFreeIp()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\SubnetworkUtilizationDetailsIPV4Utilization registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRangeName()
-    {
-    }
-    /**
-     * @param string $totalAllocatedIp
-     */
-    public function setTotalAllocatedIp($totalAllocatedIp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalAllocatedIp()
-    {
-    }
-    /**
-     * @param string $totalFreeIp
-     */
-    public function setTotalFreeIp($totalFreeIp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalFreeIp()
+    class Google_Service_Compute_SubnetworkUtilizationDetailsIPV4Utilization extends \Google\Service\Compute\SubnetworkUtilizationDetailsIPV4Utilization
     {
     }
 }

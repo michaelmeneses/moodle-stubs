@@ -21,299 +21,308 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1beta3Processor extends \Google\Collection
-{
-    /**
-     * The processor is in an unspecified state.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * The processor is enabled, i.e., has an enabled version which can currently
-     * serve processing requests and all the feature dependencies have been
-     * successfully initialized.
-     */
-    public const STATE_ENABLED = 'ENABLED';
-    /**
-     * The processor is disabled.
-     */
-    public const STATE_DISABLED = 'DISABLED';
-    /**
-     * The processor is being enabled, will become `ENABLED` if successful.
-     */
-    public const STATE_ENABLING = 'ENABLING';
-    /**
-     * The processor is being disabled, will become `DISABLED` if successful.
-     */
-    public const STATE_DISABLING = 'DISABLING';
-    /**
-     * The processor is being created, will become either `ENABLED` (for
-     * successful creation) or `FAILED` (for failed ones). Once a processor is in
-     * this state, it can then be used for document processing, but the feature
-     * dependencies of the processor might not be fully created yet.
-     */
-    public const STATE_CREATING = 'CREATING';
-    /**
-     * The processor failed during creation or initialization of feature
-     * dependencies. The user should delete the processor and recreate one as all
-     * the functionalities of the processor are disabled.
-     */
-    public const STATE_FAILED = 'FAILED';
-    /**
-     * The processor is being deleted, will be removed if successful.
-     */
-    public const STATE_DELETING = 'DELETING';
-    protected $collection_key = 'processorVersionAliases';
-    /**
-     * Optional. SchemaVersion used by the Processor. It is the same as
-     * Processor's DatasetSchema.schema_version Format is `projects/{project}/loca
-     * tions/{location}/schemas/{schema}/schemaVersions/{schema_version}
-     *
-     * @var string
-     */
-    public $activeSchemaVersion;
-    /**
-     * Output only. The time the processor was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * The default processor version.
-     *
-     * @var string
-     */
-    public $defaultProcessorVersion;
-    /**
-     * The display name of the processor.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The [KMS key](https://cloud.google.com/security-key-management) used for
-     * encryption and decryption in CMEK scenarios.
-     *
-     * @var string
-     */
-    public $kmsKeyName;
-    /**
-     * Output only. Immutable. The resource name of the processor. Format:
-     * `projects/{project}/locations/{location}/processors/{processor}`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. Immutable. The http endpoint that can be called to invoke
-     * processing.
-     *
-     * @var string
-     */
-    public $processEndpoint;
-    protected $processorVersionAliasesType = GoogleCloudDocumentaiV1beta3ProcessorVersionAlias::class;
-    protected $processorVersionAliasesDataType = 'array';
-    /**
-     * Output only. Reserved for future use.
-     *
-     * @var bool
-     */
-    public $satisfiesPzi;
-    /**
-     * Output only. Reserved for future use.
-     *
-     * @var bool
-     */
-    public $satisfiesPzs;
-    /**
-     * Output only. The state of the processor.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * The processor type, such as: `OCR_PROCESSOR`, `INVOICE_PROCESSOR`. To get a
-     * list of processor types, see FetchProcessorTypes.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Optional. SchemaVersion used by the Processor. It is the same as
-     * Processor's DatasetSchema.schema_version Format is `projects/{project}/loca
-     * tions/{location}/schemas/{schema}/schemaVersions/{schema_version}
-     *
-     * @param string $activeSchemaVersion
-     */
-    public function setActiveSchemaVersion($activeSchemaVersion)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1beta3Processor extends \Google\Collection
     {
+        /**
+         * The processor is in an unspecified state.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * The processor is enabled, i.e., has an enabled version which can currently
+         * serve processing requests and all the feature dependencies have been
+         * successfully initialized.
+         */
+        public const STATE_ENABLED = 'ENABLED';
+        /**
+         * The processor is disabled.
+         */
+        public const STATE_DISABLED = 'DISABLED';
+        /**
+         * The processor is being enabled, will become `ENABLED` if successful.
+         */
+        public const STATE_ENABLING = 'ENABLING';
+        /**
+         * The processor is being disabled, will become `DISABLED` if successful.
+         */
+        public const STATE_DISABLING = 'DISABLING';
+        /**
+         * The processor is being created, will become either `ENABLED` (for
+         * successful creation) or `FAILED` (for failed ones). Once a processor is in
+         * this state, it can then be used for document processing, but the feature
+         * dependencies of the processor might not be fully created yet.
+         */
+        public const STATE_CREATING = 'CREATING';
+        /**
+         * The processor failed during creation or initialization of feature
+         * dependencies. The user should delete the processor and recreate one as all
+         * the functionalities of the processor are disabled.
+         */
+        public const STATE_FAILED = 'FAILED';
+        /**
+         * The processor is being deleted, will be removed if successful.
+         */
+        public const STATE_DELETING = 'DELETING';
+        protected $collection_key = 'processorVersionAliases';
+        /**
+         * Optional. SchemaVersion used by the Processor. It is the same as
+         * Processor's DatasetSchema.schema_version Format is `projects/{project}/loca
+         * tions/{location}/schemas/{schema}/schemaVersions/{schema_version}
+         *
+         * @var string
+         */
+        public $activeSchemaVersion;
+        /**
+         * Output only. The time the processor was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * The default processor version.
+         *
+         * @var string
+         */
+        public $defaultProcessorVersion;
+        /**
+         * The display name of the processor.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The [KMS key](https://cloud.google.com/security-key-management) used for
+         * encryption and decryption in CMEK scenarios.
+         *
+         * @var string
+         */
+        public $kmsKeyName;
+        /**
+         * Output only. Immutable. The resource name of the processor. Format:
+         * `projects/{project}/locations/{location}/processors/{processor}`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. Immutable. The http endpoint that can be called to invoke
+         * processing.
+         *
+         * @var string
+         */
+        public $processEndpoint;
+        protected $processorVersionAliasesType = GoogleCloudDocumentaiV1beta3ProcessorVersionAlias::class;
+        protected $processorVersionAliasesDataType = 'array';
+        /**
+         * Output only. Reserved for future use.
+         *
+         * @var bool
+         */
+        public $satisfiesPzi;
+        /**
+         * Output only. Reserved for future use.
+         *
+         * @var bool
+         */
+        public $satisfiesPzs;
+        /**
+         * Output only. The state of the processor.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * The processor type, such as: `OCR_PROCESSOR`, `INVOICE_PROCESSOR`. To get a
+         * list of processor types, see FetchProcessorTypes.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Optional. SchemaVersion used by the Processor. It is the same as
+         * Processor's DatasetSchema.schema_version Format is `projects/{project}/loca
+         * tions/{location}/schemas/{schema}/schemaVersions/{schema_version}
+         *
+         * @param string $activeSchemaVersion
+         */
+        public function setActiveSchemaVersion($activeSchemaVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getActiveSchemaVersion()
+        {
+        }
+        /**
+         * Output only. The time the processor was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * The default processor version.
+         *
+         * @param string $defaultProcessorVersion
+         */
+        public function setDefaultProcessorVersion($defaultProcessorVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDefaultProcessorVersion()
+        {
+        }
+        /**
+         * The display name of the processor.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The [KMS key](https://cloud.google.com/security-key-management) used for
+         * encryption and decryption in CMEK scenarios.
+         *
+         * @param string $kmsKeyName
+         */
+        public function setKmsKeyName($kmsKeyName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKmsKeyName()
+        {
+        }
+        /**
+         * Output only. Immutable. The resource name of the processor. Format:
+         * `projects/{project}/locations/{location}/processors/{processor}`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. Immutable. The http endpoint that can be called to invoke
+         * processing.
+         *
+         * @param string $processEndpoint
+         */
+        public function setProcessEndpoint($processEndpoint)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProcessEndpoint()
+        {
+        }
+        /**
+         * Output only. The processor version aliases.
+         *
+         * @param GoogleCloudDocumentaiV1beta3ProcessorVersionAlias[] $processorVersionAliases
+         */
+        public function setProcessorVersionAliases($processorVersionAliases)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta3ProcessorVersionAlias[]
+         */
+        public function getProcessorVersionAliases()
+        {
+        }
+        /**
+         * Output only. Reserved for future use.
+         *
+         * @param bool $satisfiesPzi
+         */
+        public function setSatisfiesPzi($satisfiesPzi)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSatisfiesPzi()
+        {
+        }
+        /**
+         * Output only. Reserved for future use.
+         *
+         * @param bool $satisfiesPzs
+         */
+        public function setSatisfiesPzs($satisfiesPzs)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSatisfiesPzs()
+        {
+        }
+        /**
+         * Output only. The state of the processor.
+         *
+         * Accepted values: STATE_UNSPECIFIED, ENABLED, DISABLED, ENABLING, DISABLING,
+         * CREATING, FAILED, DELETING
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * The processor type, such as: `OCR_PROCESSOR`, `INVOICE_PROCESSOR`. To get a
+         * list of processor types, see FetchProcessorTypes.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1beta3Processor registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActiveSchemaVersion()
-    {
-    }
-    /**
-     * Output only. The time the processor was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * The default processor version.
-     *
-     * @param string $defaultProcessorVersion
-     */
-    public function setDefaultProcessorVersion($defaultProcessorVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDefaultProcessorVersion()
-    {
-    }
-    /**
-     * The display name of the processor.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The [KMS key](https://cloud.google.com/security-key-management) used for
-     * encryption and decryption in CMEK scenarios.
-     *
-     * @param string $kmsKeyName
-     */
-    public function setKmsKeyName($kmsKeyName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKmsKeyName()
-    {
-    }
-    /**
-     * Output only. Immutable. The resource name of the processor. Format:
-     * `projects/{project}/locations/{location}/processors/{processor}`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. Immutable. The http endpoint that can be called to invoke
-     * processing.
-     *
-     * @param string $processEndpoint
-     */
-    public function setProcessEndpoint($processEndpoint)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProcessEndpoint()
-    {
-    }
-    /**
-     * Output only. The processor version aliases.
-     *
-     * @param GoogleCloudDocumentaiV1beta3ProcessorVersionAlias[] $processorVersionAliases
-     */
-    public function setProcessorVersionAliases($processorVersionAliases)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1beta3ProcessorVersionAlias[]
-     */
-    public function getProcessorVersionAliases()
-    {
-    }
-    /**
-     * Output only. Reserved for future use.
-     *
-     * @param bool $satisfiesPzi
-     */
-    public function setSatisfiesPzi($satisfiesPzi)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSatisfiesPzi()
-    {
-    }
-    /**
-     * Output only. Reserved for future use.
-     *
-     * @param bool $satisfiesPzs
-     */
-    public function setSatisfiesPzs($satisfiesPzs)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSatisfiesPzs()
-    {
-    }
-    /**
-     * Output only. The state of the processor.
-     *
-     * Accepted values: STATE_UNSPECIFIED, ENABLED, DISABLED, ENABLING, DISABLING,
-     * CREATING, FAILED, DELETING
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * The processor type, such as: `OCR_PROCESSOR`, `INVOICE_PROCESSOR`. To get a
-     * list of processor types, see FetchProcessorTypes.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_Document_GoogleCloudDocumentaiV1beta3Processor extends \Google\Service\Document\GoogleCloudDocumentaiV1beta3Processor
     {
     }
 }

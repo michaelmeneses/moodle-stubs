@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class AvroOptions extends \Google\Model
-{
-    /**
-     * Optional. If sourceFormat is set to "AVRO", indicates whether to interpret
-     * logical types as the corresponding BigQuery data type (for example,
-     * TIMESTAMP), instead of using the raw type (for example, INTEGER).
-     *
-     * @var bool
-     */
-    public $useAvroLogicalTypes;
-    /**
-     * Optional. If sourceFormat is set to "AVRO", indicates whether to interpret
-     * logical types as the corresponding BigQuery data type (for example,
-     * TIMESTAMP), instead of using the raw type (for example, INTEGER).
-     *
-     * @param bool $useAvroLogicalTypes
-     */
-    public function setUseAvroLogicalTypes($useAvroLogicalTypes)
+namespace Google\Service\Bigquery {
+    class AvroOptions extends \Google\Model
     {
+        /**
+         * Optional. If sourceFormat is set to "AVRO", indicates whether to interpret
+         * logical types as the corresponding BigQuery data type (for example,
+         * TIMESTAMP), instead of using the raw type (for example, INTEGER).
+         *
+         * @var bool
+         */
+        public $useAvroLogicalTypes;
+        /**
+         * Optional. If sourceFormat is set to "AVRO", indicates whether to interpret
+         * logical types as the corresponding BigQuery data type (for example,
+         * TIMESTAMP), instead of using the raw type (for example, INTEGER).
+         *
+         * @param bool $useAvroLogicalTypes
+         */
+        public function setUseAvroLogicalTypes($useAvroLogicalTypes)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUseAvroLogicalTypes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Bigquery\AvroOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUseAvroLogicalTypes()
+    class Google_Service_Bigquery_AvroOptions extends \Google\Service\Bigquery\AvroOptions
     {
     }
 }

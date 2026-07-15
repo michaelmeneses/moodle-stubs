@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIdentity;
-
-class GoogleAppsCloudidentityDevicesV1CertificateTemplate extends \Google\Model
-{
-    /**
-     * The template id of the template. Example: "1.3.6.1.4.1.311.21.8.15608621.11
-     * 768144.5720724.16068415.6889630.81.2472537.7784047".
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * The Major version of the template. Example: 100.
-     *
-     * @var int
-     */
-    public $majorVersion;
-    /**
-     * The minor version of the template. Example: 12.
-     *
-     * @var int
-     */
-    public $minorVersion;
-    /**
-     * The template id of the template. Example: "1.3.6.1.4.1.311.21.8.15608621.11
-     * 768144.5720724.16068415.6889630.81.2472537.7784047".
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\CloudIdentity {
+    class GoogleAppsCloudidentityDevicesV1CertificateTemplate extends \Google\Model
     {
+        /**
+         * The template id of the template. Example: "1.3.6.1.4.1.311.21.8.15608621.11
+         * 768144.5720724.16068415.6889630.81.2472537.7784047".
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * The Major version of the template. Example: 100.
+         *
+         * @var int
+         */
+        public $majorVersion;
+        /**
+         * The minor version of the template. Example: 12.
+         *
+         * @var int
+         */
+        public $minorVersion;
+        /**
+         * The template id of the template. Example: "1.3.6.1.4.1.311.21.8.15608621.11
+         * 768144.5720724.16068415.6889630.81.2472537.7784047".
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * The Major version of the template. Example: 100.
+         *
+         * @param int $majorVersion
+         */
+        public function setMajorVersion($majorVersion)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMajorVersion()
+        {
+        }
+        /**
+         * The minor version of the template. Example: 12.
+         *
+         * @param int $minorVersion
+         */
+        public function setMinorVersion($minorVersion)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMinorVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudIdentity\GoogleAppsCloudidentityDevicesV1CertificateTemplate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * The Major version of the template. Example: 100.
-     *
-     * @param int $majorVersion
-     */
-    public function setMajorVersion($majorVersion)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMajorVersion()
-    {
-    }
-    /**
-     * The minor version of the template. Example: 12.
-     *
-     * @param int $minorVersion
-     */
-    public function setMinorVersion($minorVersion)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMinorVersion()
+    class Google_Service_CloudIdentity_GoogleAppsCloudidentityDevicesV1CertificateTemplate extends \Google\Service\CloudIdentity\GoogleAppsCloudidentityDevicesV1CertificateTemplate
     {
     }
 }

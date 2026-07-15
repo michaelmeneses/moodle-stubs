@@ -21,30 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Ideahub\Resource;
-
-/**
- * The "topicStates" collection of methods.
- * Typical usage is:
- *  <code>
- *   $ideahubService = new Google\Service\Ideahub(...);
- *   $topicStates = $ideahubService->platforms_properties_topicStates;
- *  </code>
- */
-class PlatformsPropertiesTopicStates extends \Google\Service\Resource
-{
+namespace Google\Service\Ideahub\Resource {
+    use Google\Service\Ideahub\GoogleSearchIdeahubV1betaTopicState;
     /**
-     * Update a topic state resource. (topicStates.patch)
-     *
-     * @param string $name Unique identifier for the topic state. Format:
-     * platforms/{platform}/properties/{property}/topicStates/{topic_state}
-     * @param GoogleSearchIdeahubV1betaTopicState $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask The list of fields to be updated.
-     * @return GoogleSearchIdeahubV1betaTopicState
+     * The "topicStates" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $ideahubService = new Google\Service\Ideahub(...);
+     *   $topicStates = $ideahubService->platforms_properties_topicStates;
+     *  </code>
      */
-    public function patch($name, GoogleSearchIdeahubV1betaTopicState $postBody, $optParams = [])
+    class PlatformsPropertiesTopicStates extends \Google\Service\Resource
+    {
+        /**
+         * Update a topic state resource. (topicStates.patch)
+         *
+         * @param string $name Unique identifier for the topic state. Format:
+         * platforms/{platform}/properties/{property}/topicStates/{topic_state}
+         * @param GoogleSearchIdeahubV1betaTopicState $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask The list of fields to be updated.
+         * @return GoogleSearchIdeahubV1betaTopicState
+         */
+        public function patch($name, GoogleSearchIdeahubV1betaTopicState $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Ideahub\Resource\PlatformsPropertiesTopicStates registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Ideahub_Resource_PlatformsPropertiesTopicStates extends \Google\Service\Ideahub\Resource\PlatformsPropertiesTopicStates
     {
     }
 }

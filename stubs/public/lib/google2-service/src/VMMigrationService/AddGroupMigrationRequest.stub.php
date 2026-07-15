@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMMigrationService;
-
-class AddGroupMigrationRequest extends \Google\Model
-{
-    /**
-     * The full path name of the MigratingVm to add.
-     *
-     * @var string
-     */
-    public $migratingVm;
-    /**
-     * The full path name of the MigratingVm to add.
-     *
-     * @param string $migratingVm
-     */
-    public function setMigratingVm($migratingVm)
+namespace Google\Service\VMMigrationService {
+    class AddGroupMigrationRequest extends \Google\Model
     {
+        /**
+         * The full path name of the MigratingVm to add.
+         *
+         * @var string
+         */
+        public $migratingVm;
+        /**
+         * The full path name of the MigratingVm to add.
+         *
+         * @param string $migratingVm
+         */
+        public function setMigratingVm($migratingVm)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMigratingVm()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\VMMigrationService\AddGroupMigrationRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMigratingVm()
+    class Google_Service_VMMigrationService_AddGroupMigrationRequest extends \Google\Service\VMMigrationService\AddGroupMigrationRequest
     {
     }
 }

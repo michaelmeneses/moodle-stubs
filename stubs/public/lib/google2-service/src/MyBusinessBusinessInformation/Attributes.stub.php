@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessBusinessInformation;
-
-class Attributes extends \Google\Collection
-{
-    protected $collection_key = 'attributes';
-    protected $attributesType = Attribute::class;
-    protected $attributesDataType = 'array';
-    /**
-     * Required. Google identifier for this location in the form of
-     * `locations/{location_id}/attributes`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * A collection of attributes that need to be updated.
-     *
-     * @param Attribute[] $attributes
-     */
-    public function setAttributes($attributes)
+namespace Google\Service\MyBusinessBusinessInformation {
+    class Attributes extends \Google\Collection
     {
+        protected $collection_key = 'attributes';
+        protected $attributesType = Attribute::class;
+        protected $attributesDataType = 'array';
+        /**
+         * Required. Google identifier for this location in the form of
+         * `locations/{location_id}/attributes`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * A collection of attributes that need to be updated.
+         *
+         * @param Attribute[] $attributes
+         */
+        public function setAttributes($attributes)
+        {
+        }
+        /**
+         * @return Attribute[]
+         */
+        public function getAttributes()
+        {
+        }
+        /**
+         * Required. Google identifier for this location in the form of
+         * `locations/{location_id}/attributes`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Attribute[]
+     * Runtime class alias of \Google\Service\MyBusinessBusinessInformation\Attributes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttributes()
-    {
-    }
-    /**
-     * Required. Google identifier for this location in the form of
-     * `locations/{location_id}/attributes`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_MyBusinessBusinessInformation_Attributes extends \Google\Service\MyBusinessBusinessInformation\Attributes
     {
     }
 }

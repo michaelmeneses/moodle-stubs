@@ -21,49 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for Firebaseappcheck (v1).
- *
- * <p>
- * Firebase App Check works alongside other Firebase services to help protect
- * your backend resources from abuse, such as billing fraud or phishing.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://firebase.google.com/docs/app-check" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class Firebaseappcheck extends \Google\Service
-{
-    /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
-    const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
-    /** View and administer all your Firebase data and settings. */
-    const FIREBASE = "https://www.googleapis.com/auth/firebase";
-    public $jwks;
-    public $oauthClients;
-    public $projects_apps;
-    public $projects_apps_appAttestConfig;
-    public $projects_apps_debugTokens;
-    public $projects_apps_deviceCheckConfig;
-    public $projects_apps_playIntegrityConfig;
-    public $projects_apps_recaptchaEnterpriseConfig;
-    public $projects_apps_recaptchaV3Config;
-    public $projects_apps_safetyNetConfig;
-    public $projects_services;
-    public $projects_services_resourcePolicies;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the Firebaseappcheck service.
+     * Service definition for Firebaseappcheck (v1).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * Firebase App Check works alongside other Firebase services to help protect
+     * your backend resources from abuse, such as billing fraud or phishing.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://firebase.google.com/docs/app-check" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class Firebaseappcheck extends \Google\Service
+    {
+        /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
+        const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
+        /** View and administer all your Firebase data and settings. */
+        const FIREBASE = "https://www.googleapis.com/auth/firebase";
+        public $jwks;
+        public $oauthClients;
+        public $projects_apps;
+        public $projects_apps_appAttestConfig;
+        public $projects_apps_debugTokens;
+        public $projects_apps_deviceCheckConfig;
+        public $projects_apps_playIntegrityConfig;
+        public $projects_apps_recaptchaEnterpriseConfig;
+        public $projects_apps_recaptchaV3Config;
+        public $projects_apps_safetyNetConfig;
+        public $projects_services;
+        public $projects_services_resourcePolicies;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the Firebaseappcheck service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Firebaseappcheck registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Firebaseappcheck extends \Google\Service\Firebaseappcheck
     {
     }
 }

@@ -21,106 +21,115 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class ContaineranalysisGoogleDevtoolsCloudbuildV1DependencyGitSourceDependency extends \Google\Model
-{
-    /**
-     * Optional. How much history should be fetched for the build (default 1, -1
-     * for all history).
-     *
-     * @var string
-     */
-    public $depth;
-    /**
-     * Required. Where should the files be placed on the worker.
-     *
-     * @var string
-     */
-    public $destPath;
-    /**
-     * Optional. True if submodules should be fetched too (default false).
-     *
-     * @var bool
-     */
-    public $recurseSubmodules;
-    protected $repositoryType = ContaineranalysisGoogleDevtoolsCloudbuildV1DependencyGitSourceRepository::class;
-    protected $repositoryDataType = '';
-    /**
-     * Required. The revision that we will fetch the repo at.
-     *
-     * @var string
-     */
-    public $revision;
-    /**
-     * Optional. How much history should be fetched for the build (default 1, -1
-     * for all history).
-     *
-     * @param string $depth
-     */
-    public function setDepth($depth)
+namespace Google\Service\ContainerAnalysis {
+    class ContaineranalysisGoogleDevtoolsCloudbuildV1DependencyGitSourceDependency extends \Google\Model
     {
+        /**
+         * Optional. How much history should be fetched for the build (default 1, -1
+         * for all history).
+         *
+         * @var string
+         */
+        public $depth;
+        /**
+         * Required. Where should the files be placed on the worker.
+         *
+         * @var string
+         */
+        public $destPath;
+        /**
+         * Optional. True if submodules should be fetched too (default false).
+         *
+         * @var bool
+         */
+        public $recurseSubmodules;
+        protected $repositoryType = ContaineranalysisGoogleDevtoolsCloudbuildV1DependencyGitSourceRepository::class;
+        protected $repositoryDataType = '';
+        /**
+         * Required. The revision that we will fetch the repo at.
+         *
+         * @var string
+         */
+        public $revision;
+        /**
+         * Optional. How much history should be fetched for the build (default 1, -1
+         * for all history).
+         *
+         * @param string $depth
+         */
+        public function setDepth($depth)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDepth()
+        {
+        }
+        /**
+         * Required. Where should the files be placed on the worker.
+         *
+         * @param string $destPath
+         */
+        public function setDestPath($destPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDestPath()
+        {
+        }
+        /**
+         * Optional. True if submodules should be fetched too (default false).
+         *
+         * @param bool $recurseSubmodules
+         */
+        public function setRecurseSubmodules($recurseSubmodules)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getRecurseSubmodules()
+        {
+        }
+        /**
+         * Required. The kind of repo (url or dev connect).
+         *
+         * @param ContaineranalysisGoogleDevtoolsCloudbuildV1DependencyGitSourceRepository $repository
+         */
+        public function setRepository(ContaineranalysisGoogleDevtoolsCloudbuildV1DependencyGitSourceRepository $repository)
+        {
+        }
+        /**
+         * @return ContaineranalysisGoogleDevtoolsCloudbuildV1DependencyGitSourceRepository
+         */
+        public function getRepository()
+        {
+        }
+        /**
+         * Required. The revision that we will fetch the repo at.
+         *
+         * @param string $revision
+         */
+        public function setRevision($revision)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRevision()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ContainerAnalysis\ContaineranalysisGoogleDevtoolsCloudbuildV1DependencyGitSourceDependency registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDepth()
-    {
-    }
-    /**
-     * Required. Where should the files be placed on the worker.
-     *
-     * @param string $destPath
-     */
-    public function setDestPath($destPath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDestPath()
-    {
-    }
-    /**
-     * Optional. True if submodules should be fetched too (default false).
-     *
-     * @param bool $recurseSubmodules
-     */
-    public function setRecurseSubmodules($recurseSubmodules)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getRecurseSubmodules()
-    {
-    }
-    /**
-     * Required. The kind of repo (url or dev connect).
-     *
-     * @param ContaineranalysisGoogleDevtoolsCloudbuildV1DependencyGitSourceRepository $repository
-     */
-    public function setRepository(ContaineranalysisGoogleDevtoolsCloudbuildV1DependencyGitSourceRepository $repository)
-    {
-    }
-    /**
-     * @return ContaineranalysisGoogleDevtoolsCloudbuildV1DependencyGitSourceRepository
-     */
-    public function getRepository()
-    {
-    }
-    /**
-     * Required. The revision that we will fetch the repo at.
-     *
-     * @param string $revision
-     */
-    public function setRevision($revision)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRevision()
+    class Google_Service_ContainerAnalysis_ContaineranalysisGoogleDevtoolsCloudbuildV1DependencyGitSourceDependency extends \Google\Service\ContainerAnalysis\ContaineranalysisGoogleDevtoolsCloudbuildV1DependencyGitSourceDependency
     {
     }
 }

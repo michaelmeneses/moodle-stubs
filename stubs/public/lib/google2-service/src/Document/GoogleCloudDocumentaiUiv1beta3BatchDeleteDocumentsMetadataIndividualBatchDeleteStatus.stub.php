@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiUiv1beta3BatchDeleteDocumentsMetadataIndividualBatchDeleteStatus extends \Google\Model
-{
-    protected $documentIdType = GoogleCloudDocumentaiUiv1beta3DocumentId::class;
-    protected $documentIdDataType = '';
-    protected $statusType = GoogleRpcStatus::class;
-    protected $statusDataType = '';
-    /**
-     * The document id of the document.
-     *
-     * @param GoogleCloudDocumentaiUiv1beta3DocumentId $documentId
-     */
-    public function setDocumentId(GoogleCloudDocumentaiUiv1beta3DocumentId $documentId)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiUiv1beta3BatchDeleteDocumentsMetadataIndividualBatchDeleteStatus extends \Google\Model
     {
+        protected $documentIdType = GoogleCloudDocumentaiUiv1beta3DocumentId::class;
+        protected $documentIdDataType = '';
+        protected $statusType = GoogleRpcStatus::class;
+        protected $statusDataType = '';
+        /**
+         * The document id of the document.
+         *
+         * @param GoogleCloudDocumentaiUiv1beta3DocumentId $documentId
+         */
+        public function setDocumentId(GoogleCloudDocumentaiUiv1beta3DocumentId $documentId)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiUiv1beta3DocumentId
+         */
+        public function getDocumentId()
+        {
+        }
+        /**
+         * The status of deleting the document in storage.
+         *
+         * @param GoogleRpcStatus $status
+         */
+        public function setStatus(GoogleRpcStatus $status)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiUiv1beta3DocumentId
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiUiv1beta3BatchDeleteDocumentsMetadataIndividualBatchDeleteStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDocumentId()
-    {
-    }
-    /**
-     * The status of deleting the document in storage.
-     *
-     * @param GoogleRpcStatus $status
-     */
-    public function setStatus(GoogleRpcStatus $status)
-    {
-    }
-    /**
-     * @return GoogleRpcStatus
-     */
-    public function getStatus()
+    class Google_Service_Document_GoogleCloudDocumentaiUiv1beta3BatchDeleteDocumentsMetadataIndividualBatchDeleteStatus extends \Google\Service\Document\GoogleCloudDocumentaiUiv1beta3BatchDeleteDocumentsMetadataIndividualBatchDeleteStatus
     {
     }
 }

@@ -21,127 +21,136 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class VideoSuggestions extends \Google\Collection
-{
-    protected $collection_key = 'tagSuggestions';
-    /**
-     * A list of video editing operations that might improve the video quality or
-     * playback experience of the uploaded video.
-     *
-     * @var string[]
-     */
-    public $editorSuggestions;
-    /**
-     * A list of errors that will prevent YouTube from successfully processing the
-     * uploaded video video. These errors indicate that, regardless of the video's
-     * current processing status, eventually, that status will almost certainly be
-     * failed.
-     *
-     * @var string[]
-     */
-    public $processingErrors;
-    /**
-     * A list of suggestions that may improve YouTube's ability to process the
-     * video.
-     *
-     * @var string[]
-     */
-    public $processingHints;
-    /**
-     * A list of reasons why YouTube may have difficulty transcoding the uploaded
-     * video or that might result in an erroneous transcoding. These warnings are
-     * generated before YouTube actually processes the uploaded video file. In
-     * addition, they identify issues that are unlikely to cause the video
-     * processing to fail but that might cause problems such as sync issues, video
-     * artifacts, or a missing audio track.
-     *
-     * @var string[]
-     */
-    public $processingWarnings;
-    protected $tagSuggestionsType = VideoSuggestionsTagSuggestion::class;
-    protected $tagSuggestionsDataType = 'array';
-    /**
-     * A list of video editing operations that might improve the video quality or
-     * playback experience of the uploaded video.
-     *
-     * @param string[] $editorSuggestions
-     */
-    public function setEditorSuggestions($editorSuggestions)
+namespace Google\Service\YouTube {
+    class VideoSuggestions extends \Google\Collection
     {
+        protected $collection_key = 'tagSuggestions';
+        /**
+         * A list of video editing operations that might improve the video quality or
+         * playback experience of the uploaded video.
+         *
+         * @var string[]
+         */
+        public $editorSuggestions;
+        /**
+         * A list of errors that will prevent YouTube from successfully processing the
+         * uploaded video video. These errors indicate that, regardless of the video's
+         * current processing status, eventually, that status will almost certainly be
+         * failed.
+         *
+         * @var string[]
+         */
+        public $processingErrors;
+        /**
+         * A list of suggestions that may improve YouTube's ability to process the
+         * video.
+         *
+         * @var string[]
+         */
+        public $processingHints;
+        /**
+         * A list of reasons why YouTube may have difficulty transcoding the uploaded
+         * video or that might result in an erroneous transcoding. These warnings are
+         * generated before YouTube actually processes the uploaded video file. In
+         * addition, they identify issues that are unlikely to cause the video
+         * processing to fail but that might cause problems such as sync issues, video
+         * artifacts, or a missing audio track.
+         *
+         * @var string[]
+         */
+        public $processingWarnings;
+        protected $tagSuggestionsType = VideoSuggestionsTagSuggestion::class;
+        protected $tagSuggestionsDataType = 'array';
+        /**
+         * A list of video editing operations that might improve the video quality or
+         * playback experience of the uploaded video.
+         *
+         * @param string[] $editorSuggestions
+         */
+        public function setEditorSuggestions($editorSuggestions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getEditorSuggestions()
+        {
+        }
+        /**
+         * A list of errors that will prevent YouTube from successfully processing the
+         * uploaded video video. These errors indicate that, regardless of the video's
+         * current processing status, eventually, that status will almost certainly be
+         * failed.
+         *
+         * @param string[] $processingErrors
+         */
+        public function setProcessingErrors($processingErrors)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getProcessingErrors()
+        {
+        }
+        /**
+         * A list of suggestions that may improve YouTube's ability to process the
+         * video.
+         *
+         * @param string[] $processingHints
+         */
+        public function setProcessingHints($processingHints)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getProcessingHints()
+        {
+        }
+        /**
+         * A list of reasons why YouTube may have difficulty transcoding the uploaded
+         * video or that might result in an erroneous transcoding. These warnings are
+         * generated before YouTube actually processes the uploaded video file. In
+         * addition, they identify issues that are unlikely to cause the video
+         * processing to fail but that might cause problems such as sync issues, video
+         * artifacts, or a missing audio track.
+         *
+         * @param string[] $processingWarnings
+         */
+        public function setProcessingWarnings($processingWarnings)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getProcessingWarnings()
+        {
+        }
+        /**
+         * A list of keyword tags that could be added to the video's metadata to
+         * increase the likelihood that users will locate your video when searching or
+         * browsing on YouTube.
+         *
+         * @param VideoSuggestionsTagSuggestion[] $tagSuggestions
+         */
+        public function setTagSuggestions($tagSuggestions)
+        {
+        }
+        /**
+         * @return VideoSuggestionsTagSuggestion[]
+         */
+        public function getTagSuggestions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\YouTube\VideoSuggestions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEditorSuggestions()
-    {
-    }
-    /**
-     * A list of errors that will prevent YouTube from successfully processing the
-     * uploaded video video. These errors indicate that, regardless of the video's
-     * current processing status, eventually, that status will almost certainly be
-     * failed.
-     *
-     * @param string[] $processingErrors
-     */
-    public function setProcessingErrors($processingErrors)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getProcessingErrors()
-    {
-    }
-    /**
-     * A list of suggestions that may improve YouTube's ability to process the
-     * video.
-     *
-     * @param string[] $processingHints
-     */
-    public function setProcessingHints($processingHints)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getProcessingHints()
-    {
-    }
-    /**
-     * A list of reasons why YouTube may have difficulty transcoding the uploaded
-     * video or that might result in an erroneous transcoding. These warnings are
-     * generated before YouTube actually processes the uploaded video file. In
-     * addition, they identify issues that are unlikely to cause the video
-     * processing to fail but that might cause problems such as sync issues, video
-     * artifacts, or a missing audio track.
-     *
-     * @param string[] $processingWarnings
-     */
-    public function setProcessingWarnings($processingWarnings)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getProcessingWarnings()
-    {
-    }
-    /**
-     * A list of keyword tags that could be added to the video's metadata to
-     * increase the likelihood that users will locate your video when searching or
-     * browsing on YouTube.
-     *
-     * @param VideoSuggestionsTagSuggestion[] $tagSuggestions
-     */
-    public function setTagSuggestions($tagSuggestions)
-    {
-    }
-    /**
-     * @return VideoSuggestionsTagSuggestion[]
-     */
-    public function getTagSuggestions()
+    class Google_Service_YouTube_VideoSuggestions extends \Google\Service\YouTube\VideoSuggestions
     {
     }
 }

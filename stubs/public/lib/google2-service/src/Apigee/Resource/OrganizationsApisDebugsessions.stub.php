@@ -21,35 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee\Resource;
-
-/**
- * The "debugsessions" collection of methods.
- * Typical usage is:
- *  <code>
- *   $apigeeService = new Google\Service\Apigee(...);
- *   $debugsessions = $apigeeService->organizations_apis_debugsessions;
- *  </code>
- */
-class OrganizationsApisDebugsessions extends \Google\Service\Resource
-{
+namespace Google\Service\Apigee\Resource {
+    use Google\Service\Apigee\GoogleCloudApigeeV1ListApiDebugSessionsResponse;
     /**
-     * Lists debug sessions that are currently active in the given API Proxy.
-     * (debugsessions.listOrganizationsApisDebugsessions)
-     *
-     * @param string $parent Required. The name of the API Proxy for which to list
-     * debug sessions. Must be of the form:
-     * `organizations/{organization}/apis/{api}`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Optional. Maximum number of debug sessions to return.
-     * The page size defaults to 25.
-     * @opt_param string pageToken Optional. Page token, returned from a previous
-     * ListApiDebugSessions call, that you can use to retrieve the next page.
-     * @return GoogleCloudApigeeV1ListApiDebugSessionsResponse
-     * @throws \Google\Service\Exception
+     * The "debugsessions" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $apigeeService = new Google\Service\Apigee(...);
+     *   $debugsessions = $apigeeService->organizations_apis_debugsessions;
+     *  </code>
      */
-    public function listOrganizationsApisDebugsessions($parent, $optParams = [])
+    class OrganizationsApisDebugsessions extends \Google\Service\Resource
+    {
+        /**
+         * Lists debug sessions that are currently active in the given API Proxy.
+         * (debugsessions.listOrganizationsApisDebugsessions)
+         *
+         * @param string $parent Required. The name of the API Proxy for which to list
+         * debug sessions. Must be of the form:
+         * `organizations/{organization}/apis/{api}`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Optional. Maximum number of debug sessions to return.
+         * The page size defaults to 25.
+         * @opt_param string pageToken Optional. Page token, returned from a previous
+         * ListApiDebugSessions call, that you can use to retrieve the next page.
+         * @return GoogleCloudApigeeV1ListApiDebugSessionsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listOrganizationsApisDebugsessions($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Apigee\Resource\OrganizationsApisDebugsessions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Apigee_Resource_OrganizationsApisDebugsessions extends \Google\Service\Apigee\Resource\OrganizationsApisDebugsessions
     {
     }
 }

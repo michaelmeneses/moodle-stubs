@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class CreateAuthorizedViewMetadata extends \Google\Model
-{
-    /**
-     * The time at which the operation failed or was completed successfully.
-     *
-     * @var string
-     */
-    public $finishTime;
-    protected $originalRequestType = CreateAuthorizedViewRequest::class;
-    protected $originalRequestDataType = '';
-    /**
-     * The time at which the original request was received.
-     *
-     * @var string
-     */
-    public $requestTime;
-    /**
-     * The time at which the operation failed or was completed successfully.
-     *
-     * @param string $finishTime
-     */
-    public function setFinishTime($finishTime)
+namespace Google\Service\BigtableAdmin {
+    class CreateAuthorizedViewMetadata extends \Google\Model
     {
+        /**
+         * The time at which the operation failed or was completed successfully.
+         *
+         * @var string
+         */
+        public $finishTime;
+        protected $originalRequestType = CreateAuthorizedViewRequest::class;
+        protected $originalRequestDataType = '';
+        /**
+         * The time at which the original request was received.
+         *
+         * @var string
+         */
+        public $requestTime;
+        /**
+         * The time at which the operation failed or was completed successfully.
+         *
+         * @param string $finishTime
+         */
+        public function setFinishTime($finishTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFinishTime()
+        {
+        }
+        /**
+         * The request that prompted the initiation of this CreateAuthorizedView
+         * operation.
+         *
+         * @param CreateAuthorizedViewRequest $originalRequest
+         */
+        public function setOriginalRequest(CreateAuthorizedViewRequest $originalRequest)
+        {
+        }
+        /**
+         * @return CreateAuthorizedViewRequest
+         */
+        public function getOriginalRequest()
+        {
+        }
+        /**
+         * The time at which the original request was received.
+         *
+         * @param string $requestTime
+         */
+        public function setRequestTime($requestTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BigtableAdmin\CreateAuthorizedViewMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFinishTime()
-    {
-    }
-    /**
-     * The request that prompted the initiation of this CreateAuthorizedView
-     * operation.
-     *
-     * @param CreateAuthorizedViewRequest $originalRequest
-     */
-    public function setOriginalRequest(CreateAuthorizedViewRequest $originalRequest)
-    {
-    }
-    /**
-     * @return CreateAuthorizedViewRequest
-     */
-    public function getOriginalRequest()
-    {
-    }
-    /**
-     * The time at which the original request was received.
-     *
-     * @param string $requestTime
-     */
-    public function setRequestTime($requestTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestTime()
+    class Google_Service_BigtableAdmin_CreateAuthorizedViewMetadata extends \Google\Service\BigtableAdmin\CreateAuthorizedViewMetadata
     {
     }
 }

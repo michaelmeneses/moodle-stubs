@@ -21,94 +21,103 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class WriteResponse extends \Google\Collection
-{
-    protected $collection_key = 'writeResults';
-    /**
-     * The time at which the commit occurred. Any read with an equal or greater
-     * `read_time` is guaranteed to see the effects of the write.
-     *
-     * @var string
-     */
-    public $commitTime;
-    /**
-     * The ID of the stream. Only set on the first message, when a new stream was
-     * created.
-     *
-     * @var string
-     */
-    public $streamId;
-    /**
-     * A token that represents the position of this response in the stream. This
-     * can be used by a client to resume the stream at this point. This field is
-     * always set.
-     *
-     * @var string
-     */
-    public $streamToken;
-    protected $writeResultsType = WriteResult::class;
-    protected $writeResultsDataType = 'array';
-    /**
-     * The time at which the commit occurred. Any read with an equal or greater
-     * `read_time` is guaranteed to see the effects of the write.
-     *
-     * @param string $commitTime
-     */
-    public function setCommitTime($commitTime)
+namespace Google\Service\Firestore {
+    class WriteResponse extends \Google\Collection
     {
+        protected $collection_key = 'writeResults';
+        /**
+         * The time at which the commit occurred. Any read with an equal or greater
+         * `read_time` is guaranteed to see the effects of the write.
+         *
+         * @var string
+         */
+        public $commitTime;
+        /**
+         * The ID of the stream. Only set on the first message, when a new stream was
+         * created.
+         *
+         * @var string
+         */
+        public $streamId;
+        /**
+         * A token that represents the position of this response in the stream. This
+         * can be used by a client to resume the stream at this point. This field is
+         * always set.
+         *
+         * @var string
+         */
+        public $streamToken;
+        protected $writeResultsType = WriteResult::class;
+        protected $writeResultsDataType = 'array';
+        /**
+         * The time at which the commit occurred. Any read with an equal or greater
+         * `read_time` is guaranteed to see the effects of the write.
+         *
+         * @param string $commitTime
+         */
+        public function setCommitTime($commitTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCommitTime()
+        {
+        }
+        /**
+         * The ID of the stream. Only set on the first message, when a new stream was
+         * created.
+         *
+         * @param string $streamId
+         */
+        public function setStreamId($streamId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStreamId()
+        {
+        }
+        /**
+         * A token that represents the position of this response in the stream. This
+         * can be used by a client to resume the stream at this point. This field is
+         * always set.
+         *
+         * @param string $streamToken
+         */
+        public function setStreamToken($streamToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStreamToken()
+        {
+        }
+        /**
+         * The result of applying the writes. This i-th write result corresponds to
+         * the i-th write in the request.
+         *
+         * @param WriteResult[] $writeResults
+         */
+        public function setWriteResults($writeResults)
+        {
+        }
+        /**
+         * @return WriteResult[]
+         */
+        public function getWriteResults()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Firestore\WriteResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCommitTime()
-    {
-    }
-    /**
-     * The ID of the stream. Only set on the first message, when a new stream was
-     * created.
-     *
-     * @param string $streamId
-     */
-    public function setStreamId($streamId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStreamId()
-    {
-    }
-    /**
-     * A token that represents the position of this response in the stream. This
-     * can be used by a client to resume the stream at this point. This field is
-     * always set.
-     *
-     * @param string $streamToken
-     */
-    public function setStreamToken($streamToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStreamToken()
-    {
-    }
-    /**
-     * The result of applying the writes. This i-th write result corresponds to
-     * the i-th write in the request.
-     *
-     * @param WriteResult[] $writeResults
-     */
-    public function setWriteResults($writeResults)
-    {
-    }
-    /**
-     * @return WriteResult[]
-     */
-    public function getWriteResults()
+    class Google_Service_Firestore_WriteResponse extends \Google\Service\Firestore\WriteResponse
     {
     }
 }

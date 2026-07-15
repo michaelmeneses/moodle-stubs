@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIManagement;
-
-class TagAction extends \Google\Model
-{
-    /**
-     * Unspecified.
-     */
-    public const ACTION_ACTION_UNSPECIFIED = 'ACTION_UNSPECIFIED';
-    /**
-     * Addition of a Tag.
-     */
-    public const ACTION_ADD = 'ADD';
-    /**
-     * Removal of a Tag.
-     */
-    public const ACTION_REMOVE = 'REMOVE';
-    /**
-     * Required. Action to be applied
-     *
-     * @var string
-     */
-    public $action;
-    /**
-     * Required. Tag to be added or removed
-     *
-     * @var string
-     */
-    public $tag;
-    /**
-     * Required. Action to be applied
-     *
-     * Accepted values: ACTION_UNSPECIFIED, ADD, REMOVE
-     *
-     * @param self::ACTION_* $action
-     */
-    public function setAction($action)
+namespace Google\Service\APIManagement {
+    class TagAction extends \Google\Model
     {
+        /**
+         * Unspecified.
+         */
+        public const ACTION_ACTION_UNSPECIFIED = 'ACTION_UNSPECIFIED';
+        /**
+         * Addition of a Tag.
+         */
+        public const ACTION_ADD = 'ADD';
+        /**
+         * Removal of a Tag.
+         */
+        public const ACTION_REMOVE = 'REMOVE';
+        /**
+         * Required. Action to be applied
+         *
+         * @var string
+         */
+        public $action;
+        /**
+         * Required. Tag to be added or removed
+         *
+         * @var string
+         */
+        public $tag;
+        /**
+         * Required. Action to be applied
+         *
+         * Accepted values: ACTION_UNSPECIFIED, ADD, REMOVE
+         *
+         * @param self::ACTION_* $action
+         */
+        public function setAction($action)
+        {
+        }
+        /**
+         * @return self::ACTION_*
+         */
+        public function getAction()
+        {
+        }
+        /**
+         * Required. Tag to be added or removed
+         *
+         * @param string $tag
+         */
+        public function setTag($tag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTag()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::ACTION_*
+     * Runtime class alias of \Google\Service\APIManagement\TagAction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAction()
-    {
-    }
-    /**
-     * Required. Tag to be added or removed
-     *
-     * @param string $tag
-     */
-    public function setTag($tag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTag()
+    class Google_Service_APIManagement_TagAction extends \Google\Service\APIManagement\TagAction
     {
     }
 }

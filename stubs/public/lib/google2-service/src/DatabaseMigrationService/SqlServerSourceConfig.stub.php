@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class SqlServerSourceConfig extends \Google\Model
-{
-    /**
-     * Optional. The log sequence number (LSN) to start CDC data migration from.
-     *
-     * @var string
-     */
-    public $cdcStartPosition;
-    /**
-     * Optional. Maximum number of connections Database Migration Service will
-     * open to the source for CDC phase.
-     *
-     * @var int
-     */
-    public $maxConcurrentCdcConnections;
-    /**
-     * Optional. Maximum number of connections Database Migration Service will
-     * open to the source for full dump phase.
-     *
-     * @var int
-     */
-    public $maxConcurrentFullDumpConnections;
-    /**
-     * Optional. Whether to skip full dump or not.
-     *
-     * @var bool
-     */
-    public $skipFullDump;
-    /**
-     * Optional. The log sequence number (LSN) to start CDC data migration from.
-     *
-     * @param string $cdcStartPosition
-     */
-    public function setCdcStartPosition($cdcStartPosition)
+namespace Google\Service\DatabaseMigrationService {
+    class SqlServerSourceConfig extends \Google\Model
     {
+        /**
+         * Optional. The log sequence number (LSN) to start CDC data migration from.
+         *
+         * @var string
+         */
+        public $cdcStartPosition;
+        /**
+         * Optional. Maximum number of connections Database Migration Service will
+         * open to the source for CDC phase.
+         *
+         * @var int
+         */
+        public $maxConcurrentCdcConnections;
+        /**
+         * Optional. Maximum number of connections Database Migration Service will
+         * open to the source for full dump phase.
+         *
+         * @var int
+         */
+        public $maxConcurrentFullDumpConnections;
+        /**
+         * Optional. Whether to skip full dump or not.
+         *
+         * @var bool
+         */
+        public $skipFullDump;
+        /**
+         * Optional. The log sequence number (LSN) to start CDC data migration from.
+         *
+         * @param string $cdcStartPosition
+         */
+        public function setCdcStartPosition($cdcStartPosition)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCdcStartPosition()
+        {
+        }
+        /**
+         * Optional. Maximum number of connections Database Migration Service will
+         * open to the source for CDC phase.
+         *
+         * @param int $maxConcurrentCdcConnections
+         */
+        public function setMaxConcurrentCdcConnections($maxConcurrentCdcConnections)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxConcurrentCdcConnections()
+        {
+        }
+        /**
+         * Optional. Maximum number of connections Database Migration Service will
+         * open to the source for full dump phase.
+         *
+         * @param int $maxConcurrentFullDumpConnections
+         */
+        public function setMaxConcurrentFullDumpConnections($maxConcurrentFullDumpConnections)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxConcurrentFullDumpConnections()
+        {
+        }
+        /**
+         * Optional. Whether to skip full dump or not.
+         *
+         * @param bool $skipFullDump
+         */
+        public function setSkipFullDump($skipFullDump)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSkipFullDump()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\SqlServerSourceConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCdcStartPosition()
-    {
-    }
-    /**
-     * Optional. Maximum number of connections Database Migration Service will
-     * open to the source for CDC phase.
-     *
-     * @param int $maxConcurrentCdcConnections
-     */
-    public function setMaxConcurrentCdcConnections($maxConcurrentCdcConnections)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxConcurrentCdcConnections()
-    {
-    }
-    /**
-     * Optional. Maximum number of connections Database Migration Service will
-     * open to the source for full dump phase.
-     *
-     * @param int $maxConcurrentFullDumpConnections
-     */
-    public function setMaxConcurrentFullDumpConnections($maxConcurrentFullDumpConnections)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxConcurrentFullDumpConnections()
-    {
-    }
-    /**
-     * Optional. Whether to skip full dump or not.
-     *
-     * @param bool $skipFullDump
-     */
-    public function setSkipFullDump($skipFullDump)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSkipFullDump()
+    class Google_Service_DatabaseMigrationService_SqlServerSourceConfig extends \Google\Service\DatabaseMigrationService\SqlServerSourceConfig
     {
     }
 }

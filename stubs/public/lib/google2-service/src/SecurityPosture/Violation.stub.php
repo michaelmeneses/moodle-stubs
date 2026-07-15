@@ -21,165 +21,174 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityPosture;
-
-class Violation extends \Google\Model
-{
-    /**
-     * Default value. This value is unused.
-     */
-    public const SEVERITY_SEVERITY_UNSPECIFIED = 'SEVERITY_UNSPECIFIED';
-    /**
-     * Critical severity.
-     */
-    public const SEVERITY_CRITICAL = 'CRITICAL';
-    /**
-     * High severity.
-     */
-    public const SEVERITY_HIGH = 'HIGH';
-    /**
-     * Medium severity.
-     */
-    public const SEVERITY_MEDIUM = 'MEDIUM';
-    /**
-     * Low severity.
-     */
-    public const SEVERITY_LOW = 'LOW';
-    /**
-     * The full resource name of the asset that caused the violation. For details
-     * about the format of the full resource name for each asset type, see
-     * [Resource name format](https://cloud.google.com/asset-
-     * inventory/docs/resource-name-format).
-     *
-     * @var string
-     */
-    public $assetId;
-    /**
-     * A description of the steps that you can take to fix the violation.
-     *
-     * @var string
-     */
-    public $nextSteps;
-    /**
-     * The policy that was violated.
-     *
-     * @var string
-     */
-    public $policyId;
-    /**
-     * The severity of the violation.
-     *
-     * @var string
-     */
-    public $severity;
-    protected $violatedAssetType = AssetDetails::class;
-    protected $violatedAssetDataType = '';
-    protected $violatedPolicyType = PolicyDetails::class;
-    protected $violatedPolicyDataType = '';
-    protected $violatedPostureType = PostureDetails::class;
-    protected $violatedPostureDataType = '';
-    /**
-     * The full resource name of the asset that caused the violation. For details
-     * about the format of the full resource name for each asset type, see
-     * [Resource name format](https://cloud.google.com/asset-
-     * inventory/docs/resource-name-format).
-     *
-     * @param string $assetId
-     */
-    public function setAssetId($assetId)
+namespace Google\Service\SecurityPosture {
+    class Violation extends \Google\Model
     {
+        /**
+         * Default value. This value is unused.
+         */
+        public const SEVERITY_SEVERITY_UNSPECIFIED = 'SEVERITY_UNSPECIFIED';
+        /**
+         * Critical severity.
+         */
+        public const SEVERITY_CRITICAL = 'CRITICAL';
+        /**
+         * High severity.
+         */
+        public const SEVERITY_HIGH = 'HIGH';
+        /**
+         * Medium severity.
+         */
+        public const SEVERITY_MEDIUM = 'MEDIUM';
+        /**
+         * Low severity.
+         */
+        public const SEVERITY_LOW = 'LOW';
+        /**
+         * The full resource name of the asset that caused the violation. For details
+         * about the format of the full resource name for each asset type, see
+         * [Resource name format](https://cloud.google.com/asset-
+         * inventory/docs/resource-name-format).
+         *
+         * @var string
+         */
+        public $assetId;
+        /**
+         * A description of the steps that you can take to fix the violation.
+         *
+         * @var string
+         */
+        public $nextSteps;
+        /**
+         * The policy that was violated.
+         *
+         * @var string
+         */
+        public $policyId;
+        /**
+         * The severity of the violation.
+         *
+         * @var string
+         */
+        public $severity;
+        protected $violatedAssetType = AssetDetails::class;
+        protected $violatedAssetDataType = '';
+        protected $violatedPolicyType = PolicyDetails::class;
+        protected $violatedPolicyDataType = '';
+        protected $violatedPostureType = PostureDetails::class;
+        protected $violatedPostureDataType = '';
+        /**
+         * The full resource name of the asset that caused the violation. For details
+         * about the format of the full resource name for each asset type, see
+         * [Resource name format](https://cloud.google.com/asset-
+         * inventory/docs/resource-name-format).
+         *
+         * @param string $assetId
+         */
+        public function setAssetId($assetId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAssetId()
+        {
+        }
+        /**
+         * A description of the steps that you can take to fix the violation.
+         *
+         * @param string $nextSteps
+         */
+        public function setNextSteps($nextSteps)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextSteps()
+        {
+        }
+        /**
+         * The policy that was violated.
+         *
+         * @param string $policyId
+         */
+        public function setPolicyId($policyId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPolicyId()
+        {
+        }
+        /**
+         * The severity of the violation.
+         *
+         * Accepted values: SEVERITY_UNSPECIFIED, CRITICAL, HIGH, MEDIUM, LOW
+         *
+         * @param self::SEVERITY_* $severity
+         */
+        public function setSeverity($severity)
+        {
+        }
+        /**
+         * @return self::SEVERITY_*
+         */
+        public function getSeverity()
+        {
+        }
+        /**
+         * Details of the Cloud Asset Inventory asset that caused the violation.
+         *
+         * @param AssetDetails $violatedAsset
+         */
+        public function setViolatedAsset(AssetDetails $violatedAsset)
+        {
+        }
+        /**
+         * @return AssetDetails
+         */
+        public function getViolatedAsset()
+        {
+        }
+        /**
+         * Details of the policy that was violated.
+         *
+         * @param PolicyDetails $violatedPolicy
+         */
+        public function setViolatedPolicy(PolicyDetails $violatedPolicy)
+        {
+        }
+        /**
+         * @return PolicyDetails
+         */
+        public function getViolatedPolicy()
+        {
+        }
+        /**
+         * Details for the posture that was violated. This field is present only if
+         * the violated policy belongs to a deployed posture.
+         *
+         * @param PostureDetails $violatedPosture
+         */
+        public function setViolatedPosture(PostureDetails $violatedPosture)
+        {
+        }
+        /**
+         * @return PostureDetails
+         */
+        public function getViolatedPosture()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityPosture\Violation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssetId()
-    {
-    }
-    /**
-     * A description of the steps that you can take to fix the violation.
-     *
-     * @param string $nextSteps
-     */
-    public function setNextSteps($nextSteps)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextSteps()
-    {
-    }
-    /**
-     * The policy that was violated.
-     *
-     * @param string $policyId
-     */
-    public function setPolicyId($policyId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPolicyId()
-    {
-    }
-    /**
-     * The severity of the violation.
-     *
-     * Accepted values: SEVERITY_UNSPECIFIED, CRITICAL, HIGH, MEDIUM, LOW
-     *
-     * @param self::SEVERITY_* $severity
-     */
-    public function setSeverity($severity)
-    {
-    }
-    /**
-     * @return self::SEVERITY_*
-     */
-    public function getSeverity()
-    {
-    }
-    /**
-     * Details of the Cloud Asset Inventory asset that caused the violation.
-     *
-     * @param AssetDetails $violatedAsset
-     */
-    public function setViolatedAsset(AssetDetails $violatedAsset)
-    {
-    }
-    /**
-     * @return AssetDetails
-     */
-    public function getViolatedAsset()
-    {
-    }
-    /**
-     * Details of the policy that was violated.
-     *
-     * @param PolicyDetails $violatedPolicy
-     */
-    public function setViolatedPolicy(PolicyDetails $violatedPolicy)
-    {
-    }
-    /**
-     * @return PolicyDetails
-     */
-    public function getViolatedPolicy()
-    {
-    }
-    /**
-     * Details for the posture that was violated. This field is present only if
-     * the violated policy belongs to a deployed posture.
-     *
-     * @param PostureDetails $violatedPosture
-     */
-    public function setViolatedPosture(PostureDetails $violatedPosture)
-    {
-    }
-    /**
-     * @return PostureDetails
-     */
-    public function getViolatedPosture()
+    class Google_Service_SecurityPosture_Violation extends \Google\Service\SecurityPosture\Violation
     {
     }
 }

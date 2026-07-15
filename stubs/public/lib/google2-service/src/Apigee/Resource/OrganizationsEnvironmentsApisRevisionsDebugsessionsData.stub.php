@@ -21,33 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee\Resource;
-
-/**
- * The "data" collection of methods.
- * Typical usage is:
- *  <code>
- *   $apigeeService = new Google\Service\Apigee(...);
- *   $data = $apigeeService->organizations_environments_apis_revisions_debugsessions_data;
- *  </code>
- */
-class OrganizationsEnvironmentsApisRevisionsDebugsessionsData extends \Google\Service\Resource
-{
+namespace Google\Service\Apigee\Resource {
+    use Google\Service\Apigee\GoogleCloudApigeeV1DebugSessionTransaction;
     /**
-     * Gets the debug data from a transaction. (data.get)
-     *
-     * @param string $name Required. The name of the debug session transaction. Must
-     * be of the form: `organizations/{organization}/environments/{environment}/apis
-     * /{api}/revisions/{revision}/debugsessions/{debug_session}/data/{transaction}`
-     * . If the API proxy resource has the `space` attribute set, IAM permissions
-     * are checked differently . To learn more, read the [Apigee Spaces
-     * Overview](https://cloud.google.com/apigee/docs/api-platform/system-
-     * administration/spaces/apigee-spaces-overview).
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudApigeeV1DebugSessionTransaction
-     * @throws \Google\Service\Exception
+     * The "data" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $apigeeService = new Google\Service\Apigee(...);
+     *   $data = $apigeeService->organizations_environments_apis_revisions_debugsessions_data;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class OrganizationsEnvironmentsApisRevisionsDebugsessionsData extends \Google\Service\Resource
+    {
+        /**
+         * Gets the debug data from a transaction. (data.get)
+         *
+         * @param string $name Required. The name of the debug session transaction. Must
+         * be of the form: `organizations/{organization}/environments/{environment}/apis
+         * /{api}/revisions/{revision}/debugsessions/{debug_session}/data/{transaction}`
+         * . If the API proxy resource has the `space` attribute set, IAM permissions
+         * are checked differently . To learn more, read the [Apigee Spaces
+         * Overview](https://cloud.google.com/apigee/docs/api-platform/system-
+         * administration/spaces/apigee-spaces-overview).
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudApigeeV1DebugSessionTransaction
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Apigee\Resource\OrganizationsEnvironmentsApisRevisionsDebugsessionsData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Apigee_Resource_OrganizationsEnvironmentsApisRevisionsDebugsessionsData extends \Google\Service\Apigee\Resource\OrganizationsEnvironmentsApisRevisionsDebugsessionsData
     {
     }
 }

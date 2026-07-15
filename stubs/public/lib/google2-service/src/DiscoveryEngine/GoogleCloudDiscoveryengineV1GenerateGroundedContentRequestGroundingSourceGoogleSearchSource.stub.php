@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGroundingSourceGoogleSearchSource extends \Google\Model
-{
-    protected $dynamicRetrievalConfigType = GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestDynamicRetrievalConfiguration::class;
-    protected $dynamicRetrievalConfigDataType = '';
-    /**
-     * @param GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestDynamicRetrievalConfiguration
-     */
-    public function setDynamicRetrievalConfig(GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestDynamicRetrievalConfiguration $dynamicRetrievalConfig)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGroundingSourceGoogleSearchSource extends \Google\Model
     {
+        protected $dynamicRetrievalConfigType = GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestDynamicRetrievalConfiguration::class;
+        protected $dynamicRetrievalConfigDataType = '';
+        /**
+         * @param GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestDynamicRetrievalConfiguration
+         */
+        public function setDynamicRetrievalConfig(GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestDynamicRetrievalConfiguration $dynamicRetrievalConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestDynamicRetrievalConfiguration
+         */
+        public function getDynamicRetrievalConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestDynamicRetrievalConfiguration
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGroundingSourceGoogleSearchSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDynamicRetrievalConfig()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGroundingSourceGoogleSearchSource extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGroundingSourceGoogleSearchSource
     {
     }
 }

@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseCloudMessaging;
-
-class ApnsFcmOptions extends \Google\Model
-{
-    /**
-     * Label associated with the message's analytics data.
-     *
-     * @var string
-     */
-    public $analyticsLabel;
-    /**
-     * Contains the URL of an image that is going to be displayed in a
-     * notification. If present, it will override
-     * google.firebase.fcm.v1.Notification.image.
-     *
-     * @var string
-     */
-    public $image;
-    /**
-     * Label associated with the message's analytics data.
-     *
-     * @param string $analyticsLabel
-     */
-    public function setAnalyticsLabel($analyticsLabel)
+namespace Google\Service\FirebaseCloudMessaging {
+    class ApnsFcmOptions extends \Google\Model
     {
+        /**
+         * Label associated with the message's analytics data.
+         *
+         * @var string
+         */
+        public $analyticsLabel;
+        /**
+         * Contains the URL of an image that is going to be displayed in a
+         * notification. If present, it will override
+         * google.firebase.fcm.v1.Notification.image.
+         *
+         * @var string
+         */
+        public $image;
+        /**
+         * Label associated with the message's analytics data.
+         *
+         * @param string $analyticsLabel
+         */
+        public function setAnalyticsLabel($analyticsLabel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnalyticsLabel()
+        {
+        }
+        /**
+         * Contains the URL of an image that is going to be displayed in a
+         * notification. If present, it will override
+         * google.firebase.fcm.v1.Notification.image.
+         *
+         * @param string $image
+         */
+        public function setImage($image)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\FirebaseCloudMessaging\ApnsFcmOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnalyticsLabel()
-    {
-    }
-    /**
-     * Contains the URL of an image that is going to be displayed in a
-     * notification. If present, it will override
-     * google.firebase.fcm.v1.Notification.image.
-     *
-     * @param string $image
-     */
-    public function setImage($image)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImage()
+    class Google_Service_FirebaseCloudMessaging_ApnsFcmOptions extends \Google\Service\FirebaseCloudMessaging\ApnsFcmOptions
     {
     }
 }

@@ -21,148 +21,157 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRedis;
-
-class GoogleCloudRedisV1OperationMetadata extends \Google\Model
-{
-    /**
-     * API version.
-     *
-     * @var string
-     */
-    public $apiVersion;
-    /**
-     * Specifies if cancellation was requested for the operation.
-     *
-     * @var bool
-     */
-    public $cancelRequested;
-    /**
-     * Creation timestamp.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * End timestamp.
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * Operation status details.
-     *
-     * @var string
-     */
-    public $statusDetail;
-    /**
-     * Operation target.
-     *
-     * @var string
-     */
-    public $target;
-    /**
-     * Operation verb.
-     *
-     * @var string
-     */
-    public $verb;
-    /**
-     * API version.
-     *
-     * @param string $apiVersion
-     */
-    public function setApiVersion($apiVersion)
+namespace Google\Service\CloudRedis {
+    class GoogleCloudRedisV1OperationMetadata extends \Google\Model
     {
+        /**
+         * API version.
+         *
+         * @var string
+         */
+        public $apiVersion;
+        /**
+         * Specifies if cancellation was requested for the operation.
+         *
+         * @var bool
+         */
+        public $cancelRequested;
+        /**
+         * Creation timestamp.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * End timestamp.
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * Operation status details.
+         *
+         * @var string
+         */
+        public $statusDetail;
+        /**
+         * Operation target.
+         *
+         * @var string
+         */
+        public $target;
+        /**
+         * Operation verb.
+         *
+         * @var string
+         */
+        public $verb;
+        /**
+         * API version.
+         *
+         * @param string $apiVersion
+         */
+        public function setApiVersion($apiVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApiVersion()
+        {
+        }
+        /**
+         * Specifies if cancellation was requested for the operation.
+         *
+         * @param bool $cancelRequested
+         */
+        public function setCancelRequested($cancelRequested)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCancelRequested()
+        {
+        }
+        /**
+         * Creation timestamp.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * End timestamp.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * Operation status details.
+         *
+         * @param string $statusDetail
+         */
+        public function setStatusDetail($statusDetail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStatusDetail()
+        {
+        }
+        /**
+         * Operation target.
+         *
+         * @param string $target
+         */
+        public function setTarget($target)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTarget()
+        {
+        }
+        /**
+         * Operation verb.
+         *
+         * @param string $verb
+         */
+        public function setVerb($verb)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVerb()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRedis\GoogleCloudRedisV1OperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiVersion()
-    {
-    }
-    /**
-     * Specifies if cancellation was requested for the operation.
-     *
-     * @param bool $cancelRequested
-     */
-    public function setCancelRequested($cancelRequested)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCancelRequested()
-    {
-    }
-    /**
-     * Creation timestamp.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * End timestamp.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndTime()
-    {
-    }
-    /**
-     * Operation status details.
-     *
-     * @param string $statusDetail
-     */
-    public function setStatusDetail($statusDetail)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStatusDetail()
-    {
-    }
-    /**
-     * Operation target.
-     *
-     * @param string $target
-     */
-    public function setTarget($target)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTarget()
-    {
-    }
-    /**
-     * Operation verb.
-     *
-     * @param string $verb
-     */
-    public function setVerb($verb)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVerb()
+    class Google_Service_CloudRedis_GoogleCloudRedisV1OperationMetadata extends \Google\Service\CloudRedis\GoogleCloudRedisV1OperationMetadata
     {
     }
 }

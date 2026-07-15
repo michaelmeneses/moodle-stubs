@@ -21,113 +21,122 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Config;
-
-class PropertyChange extends \Google\Collection
-{
-    protected $collection_key = 'beforeSensitivePaths';
-    /**
-     * Output only. Representations of the object value after the actions.
-     *
-     * @var array
-     */
-    public $after;
-    /**
-     * Output only. The paths of sensitive fields in `after`. Paths are relative
-     * to `path`.
-     *
-     * @var string[]
-     */
-    public $afterSensitivePaths;
-    /**
-     * Output only. Representations of the object value before the actions.
-     *
-     * @var array
-     */
-    public $before;
-    /**
-     * Output only. The paths of sensitive fields in `before`. Paths are relative
-     * to `path`.
-     *
-     * @var string[]
-     */
-    public $beforeSensitivePaths;
-    /**
-     * Output only. The path of the property change.
-     *
-     * @var string
-     */
-    public $path;
-    /**
-     * Output only. Representations of the object value after the actions.
-     *
-     * @param array $after
-     */
-    public function setAfter($after)
+namespace Google\Service\Config {
+    class PropertyChange extends \Google\Collection
     {
+        protected $collection_key = 'beforeSensitivePaths';
+        /**
+         * Output only. Representations of the object value after the actions.
+         *
+         * @var array
+         */
+        public $after;
+        /**
+         * Output only. The paths of sensitive fields in `after`. Paths are relative
+         * to `path`.
+         *
+         * @var string[]
+         */
+        public $afterSensitivePaths;
+        /**
+         * Output only. Representations of the object value before the actions.
+         *
+         * @var array
+         */
+        public $before;
+        /**
+         * Output only. The paths of sensitive fields in `before`. Paths are relative
+         * to `path`.
+         *
+         * @var string[]
+         */
+        public $beforeSensitivePaths;
+        /**
+         * Output only. The path of the property change.
+         *
+         * @var string
+         */
+        public $path;
+        /**
+         * Output only. Representations of the object value after the actions.
+         *
+         * @param array $after
+         */
+        public function setAfter($after)
+        {
+        }
+        /**
+         * @return array
+         */
+        public function getAfter()
+        {
+        }
+        /**
+         * Output only. The paths of sensitive fields in `after`. Paths are relative
+         * to `path`.
+         *
+         * @param string[] $afterSensitivePaths
+         */
+        public function setAfterSensitivePaths($afterSensitivePaths)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAfterSensitivePaths()
+        {
+        }
+        /**
+         * Output only. Representations of the object value before the actions.
+         *
+         * @param array $before
+         */
+        public function setBefore($before)
+        {
+        }
+        /**
+         * @return array
+         */
+        public function getBefore()
+        {
+        }
+        /**
+         * Output only. The paths of sensitive fields in `before`. Paths are relative
+         * to `path`.
+         *
+         * @param string[] $beforeSensitivePaths
+         */
+        public function setBeforeSensitivePaths($beforeSensitivePaths)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getBeforeSensitivePaths()
+        {
+        }
+        /**
+         * Output only. The path of the property change.
+         *
+         * @param string $path
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array
+     * Runtime class alias of \Google\Service\Config\PropertyChange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAfter()
-    {
-    }
-    /**
-     * Output only. The paths of sensitive fields in `after`. Paths are relative
-     * to `path`.
-     *
-     * @param string[] $afterSensitivePaths
-     */
-    public function setAfterSensitivePaths($afterSensitivePaths)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getAfterSensitivePaths()
-    {
-    }
-    /**
-     * Output only. Representations of the object value before the actions.
-     *
-     * @param array $before
-     */
-    public function setBefore($before)
-    {
-    }
-    /**
-     * @return array
-     */
-    public function getBefore()
-    {
-    }
-    /**
-     * Output only. The paths of sensitive fields in `before`. Paths are relative
-     * to `path`.
-     *
-     * @param string[] $beforeSensitivePaths
-     */
-    public function setBeforeSensitivePaths($beforeSensitivePaths)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getBeforeSensitivePaths()
-    {
-    }
-    /**
-     * Output only. The path of the property change.
-     *
-     * @param string $path
-     */
-    public function setPath($path)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPath()
+    class Google_Service_Config_PropertyChange extends \Google\Service\Config\PropertyChange
     {
     }
 }

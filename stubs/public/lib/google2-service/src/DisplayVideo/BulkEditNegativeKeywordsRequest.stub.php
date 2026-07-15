@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class BulkEditNegativeKeywordsRequest extends \Google\Collection
-{
-    protected $collection_key = 'deletedNegativeKeywords';
-    protected $createdNegativeKeywordsType = NegativeKeyword::class;
-    protected $createdNegativeKeywordsDataType = 'array';
-    /**
-     * The negative keywords to delete in batch, specified as a list of
-     * keyword_values.
-     *
-     * @var string[]
-     */
-    public $deletedNegativeKeywords;
-    /**
-     * The negative keywords to create in batch, specified as a list of
-     * NegativeKeywords.
-     *
-     * @param NegativeKeyword[] $createdNegativeKeywords
-     */
-    public function setCreatedNegativeKeywords($createdNegativeKeywords)
+namespace Google\Service\DisplayVideo {
+    class BulkEditNegativeKeywordsRequest extends \Google\Collection
     {
+        protected $collection_key = 'deletedNegativeKeywords';
+        protected $createdNegativeKeywordsType = NegativeKeyword::class;
+        protected $createdNegativeKeywordsDataType = 'array';
+        /**
+         * The negative keywords to delete in batch, specified as a list of
+         * keyword_values.
+         *
+         * @var string[]
+         */
+        public $deletedNegativeKeywords;
+        /**
+         * The negative keywords to create in batch, specified as a list of
+         * NegativeKeywords.
+         *
+         * @param NegativeKeyword[] $createdNegativeKeywords
+         */
+        public function setCreatedNegativeKeywords($createdNegativeKeywords)
+        {
+        }
+        /**
+         * @return NegativeKeyword[]
+         */
+        public function getCreatedNegativeKeywords()
+        {
+        }
+        /**
+         * The negative keywords to delete in batch, specified as a list of
+         * keyword_values.
+         *
+         * @param string[] $deletedNegativeKeywords
+         */
+        public function setDeletedNegativeKeywords($deletedNegativeKeywords)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDeletedNegativeKeywords()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return NegativeKeyword[]
+     * Runtime class alias of \Google\Service\DisplayVideo\BulkEditNegativeKeywordsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreatedNegativeKeywords()
-    {
-    }
-    /**
-     * The negative keywords to delete in batch, specified as a list of
-     * keyword_values.
-     *
-     * @param string[] $deletedNegativeKeywords
-     */
-    public function setDeletedNegativeKeywords($deletedNegativeKeywords)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getDeletedNegativeKeywords()
+    class Google_Service_DisplayVideo_BulkEditNegativeKeywordsRequest extends \Google\Service\DisplayVideo\BulkEditNegativeKeywordsRequest
     {
     }
 }

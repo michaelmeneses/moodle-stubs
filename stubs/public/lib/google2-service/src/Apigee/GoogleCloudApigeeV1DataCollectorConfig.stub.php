@@ -21,77 +21,86 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1DataCollectorConfig extends \Google\Model
-{
-    /**
-     * For future compatibility.
-     */
-    public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
-    /**
-     * For integer values.
-     */
-    public const TYPE_INTEGER = 'INTEGER';
-    /**
-     * For float values.
-     */
-    public const TYPE_FLOAT = 'FLOAT';
-    /**
-     * For string values.
-     */
-    public const TYPE_STRING = 'STRING';
-    /**
-     * For boolean values.
-     */
-    public const TYPE_BOOLEAN = 'BOOLEAN';
-    /**
-     * For datetime values.
-     */
-    public const TYPE_DATETIME = 'DATETIME';
-    /**
-     * Name of the data collector in the following format:
-     * `organizations/{org}/datacollectors/{datacollector}`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Data type accepted by the data collector.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Name of the data collector in the following format:
-     * `organizations/{org}/datacollectors/{datacollector}`
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1DataCollectorConfig extends \Google\Model
     {
+        /**
+         * For future compatibility.
+         */
+        public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
+        /**
+         * For integer values.
+         */
+        public const TYPE_INTEGER = 'INTEGER';
+        /**
+         * For float values.
+         */
+        public const TYPE_FLOAT = 'FLOAT';
+        /**
+         * For string values.
+         */
+        public const TYPE_STRING = 'STRING';
+        /**
+         * For boolean values.
+         */
+        public const TYPE_BOOLEAN = 'BOOLEAN';
+        /**
+         * For datetime values.
+         */
+        public const TYPE_DATETIME = 'DATETIME';
+        /**
+         * Name of the data collector in the following format:
+         * `organizations/{org}/datacollectors/{datacollector}`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Data type accepted by the data collector.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Name of the data collector in the following format:
+         * `organizations/{org}/datacollectors/{datacollector}`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Data type accepted by the data collector.
+         *
+         * Accepted values: TYPE_UNSPECIFIED, INTEGER, FLOAT, STRING, BOOLEAN,
+         * DATETIME
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1DataCollectorConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Data type accepted by the data collector.
-     *
-     * Accepted values: TYPE_UNSPECIFIED, INTEGER, FLOAT, STRING, BOOLEAN,
-     * DATETIME
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_Apigee_GoogleCloudApigeeV1DataCollectorConfig extends \Google\Service\Apigee\GoogleCloudApigeeV1DataCollectorConfig
     {
     }
 }

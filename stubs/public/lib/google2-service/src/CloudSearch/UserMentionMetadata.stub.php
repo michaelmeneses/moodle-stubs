@@ -21,100 +21,109 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class UserMentionMetadata extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $displayName;
-    /**
-     * @var string
-     */
-    public $gender;
-    protected $idType = UserId::class;
-    protected $idDataType = '';
-    protected $inviteeInfoType = InviteeInfo::class;
-    protected $inviteeInfoDataType = '';
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @var string
-     */
-    public $userMentionError;
-    /**
-     * @param string
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\CloudSearch {
+    class UserMentionMetadata extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $displayName;
+        /**
+         * @var string
+         */
+        public $gender;
+        protected $idType = UserId::class;
+        protected $idDataType = '';
+        protected $inviteeInfoType = InviteeInfo::class;
+        protected $inviteeInfoDataType = '';
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @var string
+         */
+        public $userMentionError;
+        /**
+         * @param string
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setGender($gender)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGender()
+        {
+        }
+        /**
+         * @param UserId
+         */
+        public function setId(UserId $id)
+        {
+        }
+        /**
+         * @return UserId
+         */
+        public function getId()
+        {
+        }
+        /**
+         * @param InviteeInfo
+         */
+        public function setInviteeInfo(InviteeInfo $inviteeInfo)
+        {
+        }
+        /**
+         * @return InviteeInfo
+         */
+        public function getInviteeInfo()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUserMentionError($userMentionError)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserMentionError()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\UserMentionMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setGender($gender)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGender()
-    {
-    }
-    /**
-     * @param UserId
-     */
-    public function setId(UserId $id)
-    {
-    }
-    /**
-     * @return UserId
-     */
-    public function getId()
-    {
-    }
-    /**
-     * @param InviteeInfo
-     */
-    public function setInviteeInfo(InviteeInfo $inviteeInfo)
-    {
-    }
-    /**
-     * @return InviteeInfo
-     */
-    public function getInviteeInfo()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUserMentionError($userMentionError)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserMentionError()
+    class Google_Service_CloudSearch_UserMentionMetadata extends \Google\Service\CloudSearch\UserMentionMetadata
     {
     }
 }

@@ -21,85 +21,94 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class OrdersRefundItemRequest extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    protected $itemsType = OrdersCustomBatchRequestEntryRefundItemItem::class;
-    protected $itemsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $operationId;
-    /**
-     * @var string
-     */
-    public $reason;
-    /**
-     * @var string
-     */
-    public $reasonText;
-    protected $shippingType = OrdersCustomBatchRequestEntryRefundItemShipping::class;
-    protected $shippingDataType = '';
-    /**
-     * @param OrdersCustomBatchRequestEntryRefundItemItem[]
-     */
-    public function setItems($items)
+namespace Google\Service\ShoppingContent {
+    class OrdersRefundItemRequest extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        protected $itemsType = OrdersCustomBatchRequestEntryRefundItemItem::class;
+        protected $itemsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $operationId;
+        /**
+         * @var string
+         */
+        public $reason;
+        /**
+         * @var string
+         */
+        public $reasonText;
+        protected $shippingType = OrdersCustomBatchRequestEntryRefundItemShipping::class;
+        protected $shippingDataType = '';
+        /**
+         * @param OrdersCustomBatchRequestEntryRefundItemItem[]
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return OrdersCustomBatchRequestEntryRefundItemItem[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOperationId($operationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOperationId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReason($reason)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReason()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReasonText($reasonText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReasonText()
+        {
+        }
+        /**
+         * @param OrdersCustomBatchRequestEntryRefundItemShipping
+         */
+        public function setShipping(OrdersCustomBatchRequestEntryRefundItemShipping $shipping)
+        {
+        }
+        /**
+         * @return OrdersCustomBatchRequestEntryRefundItemShipping
+         */
+        public function getShipping()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return OrdersCustomBatchRequestEntryRefundItemItem[]
+     * Runtime class alias of \Google\Service\ShoppingContent\OrdersRefundItemRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItems()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOperationId($operationId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOperationId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReason($reason)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReason()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReasonText($reasonText)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReasonText()
-    {
-    }
-    /**
-     * @param OrdersCustomBatchRequestEntryRefundItemShipping
-     */
-    public function setShipping(OrdersCustomBatchRequestEntryRefundItemShipping $shipping)
-    {
-    }
-    /**
-     * @return OrdersCustomBatchRequestEntryRefundItemShipping
-     */
-    public function getShipping()
+    class Google_Service_ShoppingContent_OrdersRefundItemRequest extends \Google\Service\ShoppingContent\OrdersRefundItemRequest
     {
     }
 }

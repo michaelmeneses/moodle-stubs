@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class CheckAccessResponse extends \Google\Model
-{
-    /**
-     * Returns true if principal has access. Returns false otherwise.
-     *
-     * @var bool
-     */
-    public $hasAccess;
-    /**
-     * Returns true if principal has access. Returns false otherwise.
-     *
-     * @param bool $hasAccess
-     */
-    public function setHasAccess($hasAccess)
+namespace Google\Service\CloudSearch {
+    class CheckAccessResponse extends \Google\Model
     {
+        /**
+         * Returns true if principal has access. Returns false otherwise.
+         *
+         * @var bool
+         */
+        public $hasAccess;
+        /**
+         * Returns true if principal has access. Returns false otherwise.
+         *
+         * @param bool $hasAccess
+         */
+        public function setHasAccess($hasAccess)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getHasAccess()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudSearch\CheckAccessResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHasAccess()
+    class Google_Service_CloudSearch_CheckAccessResponse extends \Google\Service\CloudSearch\CheckAccessResponse
     {
     }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1MemoryBankCustomizationConfigGenerateMemoriesExampleConversationSourceEvent extends \Google\Model
-{
-    protected $contentType = GoogleCloudAiplatformV1Content::class;
-    protected $contentDataType = '';
-    /**
-     * Required. The content of the event.
-     *
-     * @param GoogleCloudAiplatformV1Content $content
-     */
-    public function setContent(GoogleCloudAiplatformV1Content $content)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1MemoryBankCustomizationConfigGenerateMemoriesExampleConversationSourceEvent extends \Google\Model
     {
+        protected $contentType = GoogleCloudAiplatformV1Content::class;
+        protected $contentDataType = '';
+        /**
+         * Required. The content of the event.
+         *
+         * @param GoogleCloudAiplatformV1Content $content
+         */
+        public function setContent(GoogleCloudAiplatformV1Content $content)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1Content
+         */
+        public function getContent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1Content
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1MemoryBankCustomizationConfigGenerateMemoriesExampleConversationSourceEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContent()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1MemoryBankCustomizationConfigGenerateMemoriesExampleConversationSourceEvent extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1MemoryBankCustomizationConfigGenerateMemoriesExampleConversationSourceEvent
     {
     }
 }

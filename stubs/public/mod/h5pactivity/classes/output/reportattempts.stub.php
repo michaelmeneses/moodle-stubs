@@ -29,6 +29,13 @@
  */
 namespace mod_h5pactivity\output;
 
+use mod_h5pactivity\local\attempt;
+use mod_h5pactivity\output\attempt as output_attempt;
+use renderable;
+use templatable;
+use renderer_base;
+use user_picture;
+use stdClass;
 /**
  * Class to output an attempts report on mod_h5pactivity.
  *

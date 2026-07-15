@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Calendar;
-
-class EventSource extends \Google\Model
-{
-    /**
-     * Title of the source; for example a title of a web page or an email subject.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * URL of the source pointing to a resource. The URL scheme must be HTTP or
-     * HTTPS.
-     *
-     * @var string
-     */
-    public $url;
-    /**
-     * Title of the source; for example a title of a web page or an email subject.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
+namespace Google\Service\Calendar {
+    class EventSource extends \Google\Model
     {
+        /**
+         * Title of the source; for example a title of a web page or an email subject.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * URL of the source pointing to a resource. The URL scheme must be HTTP or
+         * HTTPS.
+         *
+         * @var string
+         */
+        public $url;
+        /**
+         * Title of the source; for example a title of a web page or an email subject.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * URL of the source pointing to a resource. The URL scheme must be HTTP or
+         * HTTPS.
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Calendar\EventSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTitle()
-    {
-    }
-    /**
-     * URL of the source pointing to a resource. The URL scheme must be HTTP or
-     * HTTPS.
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
+    class Google_Service_Calendar_EventSource extends \Google\Service\Calendar\EventSource
     {
     }
 }

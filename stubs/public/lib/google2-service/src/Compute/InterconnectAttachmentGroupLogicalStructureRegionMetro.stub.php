@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InterconnectAttachmentGroupLogicalStructureRegionMetro extends \Google\Collection
-{
-    protected $collection_key = 'facilities';
-    protected $facilitiesType = InterconnectAttachmentGroupLogicalStructureRegionMetroFacility::class;
-    protected $facilitiesDataType = 'array';
-    /**
-     * Output only. [Output Only] The name of the metro, as a three-letter
-     * lowercase string like "iad". This is the first component of the location of
-     * an Interconnect.
-     *
-     * @var string
-     */
-    public $metro;
-    /**
-     * @param InterconnectAttachmentGroupLogicalStructureRegionMetroFacility[] $facilities
-     */
-    public function setFacilities($facilities)
+namespace Google\Service\Compute {
+    class InterconnectAttachmentGroupLogicalStructureRegionMetro extends \Google\Collection
     {
+        protected $collection_key = 'facilities';
+        protected $facilitiesType = InterconnectAttachmentGroupLogicalStructureRegionMetroFacility::class;
+        protected $facilitiesDataType = 'array';
+        /**
+         * Output only. [Output Only] The name of the metro, as a three-letter
+         * lowercase string like "iad". This is the first component of the location of
+         * an Interconnect.
+         *
+         * @var string
+         */
+        public $metro;
+        /**
+         * @param InterconnectAttachmentGroupLogicalStructureRegionMetroFacility[] $facilities
+         */
+        public function setFacilities($facilities)
+        {
+        }
+        /**
+         * @return InterconnectAttachmentGroupLogicalStructureRegionMetroFacility[]
+         */
+        public function getFacilities()
+        {
+        }
+        /**
+         * Output only. [Output Only] The name of the metro, as a three-letter
+         * lowercase string like "iad". This is the first component of the location of
+         * an Interconnect.
+         *
+         * @param string $metro
+         */
+        public function setMetro($metro)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMetro()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InterconnectAttachmentGroupLogicalStructureRegionMetroFacility[]
+     * Runtime class alias of \Google\Service\Compute\InterconnectAttachmentGroupLogicalStructureRegionMetro registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFacilities()
-    {
-    }
-    /**
-     * Output only. [Output Only] The name of the metro, as a three-letter
-     * lowercase string like "iad". This is the first component of the location of
-     * an Interconnect.
-     *
-     * @param string $metro
-     */
-    public function setMetro($metro)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMetro()
+    class Google_Service_Compute_InterconnectAttachmentGroupLogicalStructureRegionMetro extends \Google\Service\Compute\InterconnectAttachmentGroupLogicalStructureRegionMetro
     {
     }
 }

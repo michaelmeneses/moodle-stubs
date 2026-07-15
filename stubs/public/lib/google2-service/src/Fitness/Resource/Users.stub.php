@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Fitness\Resource;
-
-/**
- * The "users" collection of methods.
- * Typical usage is:
- *  <code>
- *   $fitnessService = new Google\Service\Fitness(...);
- *   $users = $fitnessService->users;
- *  </code>
- */
-class Users extends \Google\Service\Resource
-{
+namespace Google\Service\Fitness\Resource {
+    /**
+     * The "users" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $fitnessService = new Google\Service\Fitness(...);
+     *   $users = $fitnessService->users;
+     *  </code>
+     */
+    class Users extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Fitness\Resource\Users registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Fitness_Resource_Users extends \Google\Service\Fitness\Resource\Users
+    {
+    }
 }

@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1TaskInfrastructureSpec extends \Google\Model
-{
-    protected $batchType = GoogleCloudDataplexV1TaskInfrastructureSpecBatchComputeResources::class;
-    protected $batchDataType = '';
-    protected $containerImageType = GoogleCloudDataplexV1TaskInfrastructureSpecContainerImageRuntime::class;
-    protected $containerImageDataType = '';
-    protected $vpcNetworkType = GoogleCloudDataplexV1TaskInfrastructureSpecVpcNetwork::class;
-    protected $vpcNetworkDataType = '';
-    /**
-     * Compute resources needed for a Task when using Dataproc Serverless.
-     *
-     * @param GoogleCloudDataplexV1TaskInfrastructureSpecBatchComputeResources $batch
-     */
-    public function setBatch(GoogleCloudDataplexV1TaskInfrastructureSpecBatchComputeResources $batch)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1TaskInfrastructureSpec extends \Google\Model
     {
+        protected $batchType = GoogleCloudDataplexV1TaskInfrastructureSpecBatchComputeResources::class;
+        protected $batchDataType = '';
+        protected $containerImageType = GoogleCloudDataplexV1TaskInfrastructureSpecContainerImageRuntime::class;
+        protected $containerImageDataType = '';
+        protected $vpcNetworkType = GoogleCloudDataplexV1TaskInfrastructureSpecVpcNetwork::class;
+        protected $vpcNetworkDataType = '';
+        /**
+         * Compute resources needed for a Task when using Dataproc Serverless.
+         *
+         * @param GoogleCloudDataplexV1TaskInfrastructureSpecBatchComputeResources $batch
+         */
+        public function setBatch(GoogleCloudDataplexV1TaskInfrastructureSpecBatchComputeResources $batch)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1TaskInfrastructureSpecBatchComputeResources
+         */
+        public function getBatch()
+        {
+        }
+        /**
+         * Container Image Runtime Configuration.
+         *
+         * @param GoogleCloudDataplexV1TaskInfrastructureSpecContainerImageRuntime $containerImage
+         */
+        public function setContainerImage(GoogleCloudDataplexV1TaskInfrastructureSpecContainerImageRuntime $containerImage)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1TaskInfrastructureSpecContainerImageRuntime
+         */
+        public function getContainerImage()
+        {
+        }
+        /**
+         * Vpc network.
+         *
+         * @param GoogleCloudDataplexV1TaskInfrastructureSpecVpcNetwork $vpcNetwork
+         */
+        public function setVpcNetwork(GoogleCloudDataplexV1TaskInfrastructureSpecVpcNetwork $vpcNetwork)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1TaskInfrastructureSpecVpcNetwork
+         */
+        public function getVpcNetwork()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDataplexV1TaskInfrastructureSpecBatchComputeResources
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1TaskInfrastructureSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBatch()
-    {
-    }
-    /**
-     * Container Image Runtime Configuration.
-     *
-     * @param GoogleCloudDataplexV1TaskInfrastructureSpecContainerImageRuntime $containerImage
-     */
-    public function setContainerImage(GoogleCloudDataplexV1TaskInfrastructureSpecContainerImageRuntime $containerImage)
-    {
-    }
-    /**
-     * @return GoogleCloudDataplexV1TaskInfrastructureSpecContainerImageRuntime
-     */
-    public function getContainerImage()
-    {
-    }
-    /**
-     * Vpc network.
-     *
-     * @param GoogleCloudDataplexV1TaskInfrastructureSpecVpcNetwork $vpcNetwork
-     */
-    public function setVpcNetwork(GoogleCloudDataplexV1TaskInfrastructureSpecVpcNetwork $vpcNetwork)
-    {
-    }
-    /**
-     * @return GoogleCloudDataplexV1TaskInfrastructureSpecVpcNetwork
-     */
-    public function getVpcNetwork()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1TaskInfrastructureSpec extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1TaskInfrastructureSpec
     {
     }
 }

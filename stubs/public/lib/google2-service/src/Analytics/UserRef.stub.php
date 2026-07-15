@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics;
-
-class UserRef extends \Google\Model
-{
-    /**
-     * Email ID of this user.
-     *
-     * @var string
-     */
-    public $email;
-    /**
-     * User ID.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * @var string
-     */
-    public $kind;
-    /**
-     * Email ID of this user.
-     *
-     * @param string $email
-     */
-    public function setEmail($email)
+namespace Google\Service\Analytics {
+    class UserRef extends \Google\Model
     {
+        /**
+         * Email ID of this user.
+         *
+         * @var string
+         */
+        public $email;
+        /**
+         * User ID.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * @var string
+         */
+        public $kind;
+        /**
+         * Email ID of this user.
+         *
+         * @param string $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
+        /**
+         * User ID.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Analytics\UserRef registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmail()
-    {
-    }
-    /**
-     * User ID.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_Analytics_UserRef extends \Google\Service\Analytics\UserRef
     {
     }
 }

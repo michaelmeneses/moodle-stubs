@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class GuestAttributesEntry extends \Google\Model
-{
-    /**
-     * Key for the guest attribute entry.
-     *
-     * @var string
-     */
-    public $key;
-    /**
-     * Namespace for the guest attribute entry.
-     *
-     * @var string
-     */
-    public $namespace;
-    /**
-     * Value for the guest attribute entry.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Key for the guest attribute entry.
-     *
-     * @param string $key
-     */
-    public function setKey($key)
+namespace Google\Service\Compute {
+    class GuestAttributesEntry extends \Google\Model
     {
+        /**
+         * Key for the guest attribute entry.
+         *
+         * @var string
+         */
+        public $key;
+        /**
+         * Namespace for the guest attribute entry.
+         *
+         * @var string
+         */
+        public $namespace;
+        /**
+         * Value for the guest attribute entry.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Key for the guest attribute entry.
+         *
+         * @param string $key
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * Namespace for the guest attribute entry.
+         *
+         * @param string $namespace
+         */
+        public function setNamespace($namespace)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNamespace()
+        {
+        }
+        /**
+         * Value for the guest attribute entry.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\GuestAttributesEntry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKey()
-    {
-    }
-    /**
-     * Namespace for the guest attribute entry.
-     *
-     * @param string $namespace
-     */
-    public function setNamespace($namespace)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNamespace()
-    {
-    }
-    /**
-     * Value for the guest attribute entry.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_Compute_GuestAttributesEntry extends \Google\Service\Compute\GuestAttributesEntry
     {
     }
 }

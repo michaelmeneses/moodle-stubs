@@ -21,88 +21,105 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors\Resource;
-
-/**
- * The "connections" collection of methods.
- * Typical usage is:
- *  <code>
- *   $connectorsService = new Google\Service\Connectors(...);
- *   $connections = $connectorsService->projects_locations_connections;
- *  </code>
- */
-class ProjectsLocationsConnections extends \Google\Service\Resource
-{
+namespace Google\Service\Connectors\Resource {
+    use Google\Service\Connectors\CheckReadinessResponse;
+    use Google\Service\Connectors\CheckStatusResponse;
+    use Google\Service\Connectors\ExchangeAuthCodeRequest;
+    use Google\Service\Connectors\ExchangeAuthCodeResponse;
+    use Google\Service\Connectors\ExecuteSqlQueryRequest;
+    use Google\Service\Connectors\ExecuteSqlQueryResponse;
+    use Google\Service\Connectors\RefreshAccessTokenRequest;
+    use Google\Service\Connectors\RefreshAccessTokenResponse;
     /**
-     * Reports readiness status of the connector. Similar logic to GetStatus but
-     * modified for kubernetes health check to understand.
-     * (connections.checkReadiness)
-     *
-     * @param string $name
-     * @param array $optParams Optional parameters.
-     * @return CheckReadinessResponse
-     * @throws \Google\Service\Exception
+     * The "connections" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $connectorsService = new Google\Service\Connectors(...);
+     *   $connections = $connectorsService->projects_locations_connections;
+     *  </code>
      */
-    public function checkReadiness($name, $optParams = [])
+    class ProjectsLocationsConnections extends \Google\Service\Resource
     {
+        /**
+         * Reports readiness status of the connector. Similar logic to GetStatus but
+         * modified for kubernetes health check to understand.
+         * (connections.checkReadiness)
+         *
+         * @param string $name
+         * @param array $optParams Optional parameters.
+         * @return CheckReadinessResponse
+         * @throws \Google\Service\Exception
+         */
+        public function checkReadiness($name, $optParams = [])
+        {
+        }
+        /**
+         * Reports the status of the connection. Note that when the connection is in a
+         * state that is not ACTIVE, the implementation of this RPC method must return a
+         * Status with the corresponding State instead of returning a gRPC status code
+         * that is not "OK", which indicates that ConnectionStatus itself, not the
+         * connection, failed. (connections.checkStatus)
+         *
+         * @param string $name
+         * @param array $optParams Optional parameters.
+         * @return CheckStatusResponse
+         * @throws \Google\Service\Exception
+         */
+        public function checkStatus($name, $optParams = [])
+        {
+        }
+        /**
+         * ExchangeAuthCode exchanges the OAuth authorization code (and other necessary
+         * data) for an access token (and associated credentials).
+         * (connections.exchangeAuthCode)
+         *
+         * @param string $name
+         * @param ExchangeAuthCodeRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return ExchangeAuthCodeResponse
+         * @throws \Google\Service\Exception
+         */
+        public function exchangeAuthCode($name, ExchangeAuthCodeRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Executes a SQL statement specified in the body of the request. An example of
+         * this SQL statement in the case of Salesforce connector would be 'select *
+         * from Account a, Order o where a.Id = o.AccountId'.
+         * (connections.executeSqlQuery)
+         *
+         * @param string $connection Required. Resource name of the Connection. Format:
+         * projects/{project}/locations/{location}/connections/{connection}
+         * @param ExecuteSqlQueryRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return ExecuteSqlQueryResponse
+         * @throws \Google\Service\Exception
+         */
+        public function executeSqlQuery($connection, ExecuteSqlQueryRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * RefreshAccessToken exchanges the OAuth refresh token (and other necessary
+         * data) for a new access token (and new associated credentials).
+         * (connections.refreshAccessToken)
+         *
+         * @param string $name
+         * @param RefreshAccessTokenRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return RefreshAccessTokenResponse
+         * @throws \Google\Service\Exception
+         */
+        public function refreshAccessToken($name, RefreshAccessTokenRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Reports the status of the connection. Note that when the connection is in a
-     * state that is not ACTIVE, the implementation of this RPC method must return a
-     * Status with the corresponding State instead of returning a gRPC status code
-     * that is not "OK", which indicates that ConnectionStatus itself, not the
-     * connection, failed. (connections.checkStatus)
-     *
-     * @param string $name
-     * @param array $optParams Optional parameters.
-     * @return CheckStatusResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Connectors\Resource\ProjectsLocationsConnections registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function checkStatus($name, $optParams = [])
-    {
-    }
-    /**
-     * ExchangeAuthCode exchanges the OAuth authorization code (and other necessary
-     * data) for an access token (and associated credentials).
-     * (connections.exchangeAuthCode)
-     *
-     * @param string $name
-     * @param ExchangeAuthCodeRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return ExchangeAuthCodeResponse
-     * @throws \Google\Service\Exception
-     */
-    public function exchangeAuthCode($name, ExchangeAuthCodeRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Executes a SQL statement specified in the body of the request. An example of
-     * this SQL statement in the case of Salesforce connector would be 'select *
-     * from Account a, Order o where a.Id = o.AccountId'.
-     * (connections.executeSqlQuery)
-     *
-     * @param string $connection Required. Resource name of the Connection. Format:
-     * projects/{project}/locations/{location}/connections/{connection}
-     * @param ExecuteSqlQueryRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return ExecuteSqlQueryResponse
-     * @throws \Google\Service\Exception
-     */
-    public function executeSqlQuery($connection, ExecuteSqlQueryRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * RefreshAccessToken exchanges the OAuth refresh token (and other necessary
-     * data) for a new access token (and new associated credentials).
-     * (connections.refreshAccessToken)
-     *
-     * @param string $name
-     * @param RefreshAccessTokenRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return RefreshAccessTokenResponse
-     * @throws \Google\Service\Exception
-     */
-    public function refreshAccessToken($name, RefreshAccessTokenRequest $postBody, $optParams = [])
+    class Google_Service_Connectors_Resource_ProjectsLocationsConnections extends \Google\Service\Connectors\Resource\ProjectsLocationsConnections
     {
     }
 }

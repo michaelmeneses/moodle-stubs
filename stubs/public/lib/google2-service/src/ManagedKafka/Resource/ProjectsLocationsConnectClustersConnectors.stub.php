@@ -21,160 +21,180 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManagedKafka\Resource;
-
-/**
- * The "connectors" collection of methods.
- * Typical usage is:
- *  <code>
- *   $managedkafkaService = new Google\Service\ManagedKafka(...);
- *   $connectors = $managedkafkaService->projects_locations_connectClusters_connectors;
- *  </code>
- */
-class ProjectsLocationsConnectClustersConnectors extends \Google\Service\Resource
-{
+namespace Google\Service\ManagedKafka\Resource {
+    use Google\Service\ManagedKafka\Connector;
+    use Google\Service\ManagedKafka\ListConnectorsResponse;
+    use Google\Service\ManagedKafka\ManagedkafkaEmpty;
+    use Google\Service\ManagedKafka\PauseConnectorRequest;
+    use Google\Service\ManagedKafka\PauseConnectorResponse;
+    use Google\Service\ManagedKafka\RestartConnectorRequest;
+    use Google\Service\ManagedKafka\RestartConnectorResponse;
+    use Google\Service\ManagedKafka\ResumeConnectorRequest;
+    use Google\Service\ManagedKafka\ResumeConnectorResponse;
+    use Google\Service\ManagedKafka\StopConnectorRequest;
+    use Google\Service\ManagedKafka\StopConnectorResponse;
     /**
-     * Creates a new connector in a given Connect cluster. (connectors.create)
-     *
-     * @param string $parent Required. The parent Connect cluster in which to create
-     * the connector. Structured like `projects/{project}/locations/{location}/conne
-     * ctClusters/{connect_cluster_id}`.
-     * @param Connector $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string connectorId Required. The ID to use for the connector,
-     * which will become the final component of the connector's name. The ID must be
-     * 1-63 characters long, and match the regular expression
-     * `[a-z]([-a-z0-9]*[a-z0-9])?` to comply with RFC 1035. This value is
-     * structured like: `my-connector-id`.
-     * @return Connector
-     * @throws \Google\Service\Exception
+     * The "connectors" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $managedkafkaService = new Google\Service\ManagedKafka(...);
+     *   $connectors = $managedkafkaService->projects_locations_connectClusters_connectors;
+     *  </code>
      */
-    public function create($parent, Connector $postBody, $optParams = [])
+    class ProjectsLocationsConnectClustersConnectors extends \Google\Service\Resource
     {
+        /**
+         * Creates a new connector in a given Connect cluster. (connectors.create)
+         *
+         * @param string $parent Required. The parent Connect cluster in which to create
+         * the connector. Structured like `projects/{project}/locations/{location}/conne
+         * ctClusters/{connect_cluster_id}`.
+         * @param Connector $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string connectorId Required. The ID to use for the connector,
+         * which will become the final component of the connector's name. The ID must be
+         * 1-63 characters long, and match the regular expression
+         * `[a-z]([-a-z0-9]*[a-z0-9])?` to comply with RFC 1035. This value is
+         * structured like: `my-connector-id`.
+         * @return Connector
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, Connector $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a connector. (connectors.delete)
+         *
+         * @param string $name Required. The name of the connector to delete. Structured
+         * like: projects/{project}/locations/{location}/connectClusters/{connectCluster
+         * }/connectors/{connector}
+         * @param array $optParams Optional parameters.
+         * @return ManagedkafkaEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Returns the properties of a single connector. (connectors.get)
+         *
+         * @param string $name Required. The name of the connector whose configuration
+         * to return. Structured like: projects/{project}/locations/{location}/connectCl
+         * usters/{connectCluster}/connectors/{connector}
+         * @param array $optParams Optional parameters.
+         * @return Connector
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists the connectors in a given Connect cluster.
+         * (connectors.listProjectsLocationsConnectClustersConnectors)
+         *
+         * @param string $parent Required. The parent Connect cluster whose connectors
+         * are to be listed. Structured like `projects/{project}/locations/{location}/co
+         * nnectClusters/{connect_cluster_id}`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Optional. The maximum number of connectors to return.
+         * The service may return fewer than this value. If unspecified, server will
+         * pick an appropriate default.
+         * @opt_param string pageToken Optional. A page token, received from a previous
+         * `ListConnectors` call. Provide this to retrieve the subsequent page. When
+         * paginating, all other parameters provided to `ListConnectors` must match the
+         * call that provided the page token.
+         * @return ListConnectorsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsConnectClustersConnectors($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates the properties of a connector. (connectors.patch)
+         *
+         * @param string $name Identifier. The name of the connector. Structured like: p
+         * rojects/{project}/locations/{location}/connectClusters/{connect_cluster}/conn
+         * ectors/{connector}
+         * @param Connector $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Required. Field mask is used to specify the
+         * fields to be overwritten in the cluster resource by the update. The fields
+         * specified in the update_mask are relative to the resource, not the full
+         * request. A field will be overwritten if it is in the mask. The mask is
+         * required and a value of * will update all fields.
+         * @return Connector
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, Connector $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Pauses the connector and its tasks. (connectors.pause)
+         *
+         * @param string $name Required. The name of the connector to pause. Structured
+         * like: projects/{project}/locations/{location}/connectClusters/{connectCluster
+         * }/connectors/{connector}
+         * @param PauseConnectorRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return PauseConnectorResponse
+         * @throws \Google\Service\Exception
+         */
+        public function pause($name, PauseConnectorRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Restarts the connector. (connectors.restart)
+         *
+         * @param string $name Required. The name of the connector to restart.
+         * Structured like: projects/{project}/locations/{location}/connectClusters/{con
+         * nectCluster}/connectors/{connector}
+         * @param RestartConnectorRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return RestartConnectorResponse
+         * @throws \Google\Service\Exception
+         */
+        public function restart($name, RestartConnectorRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Resumes the connector and its tasks. (connectors.resume)
+         *
+         * @param string $name Required. The name of the connector to pause. Structured
+         * like: projects/{project}/locations/{location}/connectClusters/{connectCluster
+         * }/connectors/{connector}
+         * @param ResumeConnectorRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return ResumeConnectorResponse
+         * @throws \Google\Service\Exception
+         */
+        public function resume($name, ResumeConnectorRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Stops the connector. (connectors.stop)
+         *
+         * @param string $name Required. The name of the connector to stop. Structured
+         * like: projects/{project}/locations/{location}/connectClusters/{connectCluster
+         * }/connectors/{connector}
+         * @param StopConnectorRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return StopConnectorResponse
+         * @throws \Google\Service\Exception
+         */
+        public function stop($name, StopConnectorRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a connector. (connectors.delete)
-     *
-     * @param string $name Required. The name of the connector to delete. Structured
-     * like: projects/{project}/locations/{location}/connectClusters/{connectCluster
-     * }/connectors/{connector}
-     * @param array $optParams Optional parameters.
-     * @return ManagedkafkaEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\ManagedKafka\Resource\ProjectsLocationsConnectClustersConnectors registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Returns the properties of a single connector. (connectors.get)
-     *
-     * @param string $name Required. The name of the connector whose configuration
-     * to return. Structured like: projects/{project}/locations/{location}/connectCl
-     * usters/{connectCluster}/connectors/{connector}
-     * @param array $optParams Optional parameters.
-     * @return Connector
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists the connectors in a given Connect cluster.
-     * (connectors.listProjectsLocationsConnectClustersConnectors)
-     *
-     * @param string $parent Required. The parent Connect cluster whose connectors
-     * are to be listed. Structured like `projects/{project}/locations/{location}/co
-     * nnectClusters/{connect_cluster_id}`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Optional. The maximum number of connectors to return.
-     * The service may return fewer than this value. If unspecified, server will
-     * pick an appropriate default.
-     * @opt_param string pageToken Optional. A page token, received from a previous
-     * `ListConnectors` call. Provide this to retrieve the subsequent page. When
-     * paginating, all other parameters provided to `ListConnectors` must match the
-     * call that provided the page token.
-     * @return ListConnectorsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsConnectClustersConnectors($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates the properties of a connector. (connectors.patch)
-     *
-     * @param string $name Identifier. The name of the connector. Structured like: p
-     * rojects/{project}/locations/{location}/connectClusters/{connect_cluster}/conn
-     * ectors/{connector}
-     * @param Connector $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Required. Field mask is used to specify the
-     * fields to be overwritten in the cluster resource by the update. The fields
-     * specified in the update_mask are relative to the resource, not the full
-     * request. A field will be overwritten if it is in the mask. The mask is
-     * required and a value of * will update all fields.
-     * @return Connector
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, Connector $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Pauses the connector and its tasks. (connectors.pause)
-     *
-     * @param string $name Required. The name of the connector to pause. Structured
-     * like: projects/{project}/locations/{location}/connectClusters/{connectCluster
-     * }/connectors/{connector}
-     * @param PauseConnectorRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return PauseConnectorResponse
-     * @throws \Google\Service\Exception
-     */
-    public function pause($name, PauseConnectorRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Restarts the connector. (connectors.restart)
-     *
-     * @param string $name Required. The name of the connector to restart.
-     * Structured like: projects/{project}/locations/{location}/connectClusters/{con
-     * nectCluster}/connectors/{connector}
-     * @param RestartConnectorRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return RestartConnectorResponse
-     * @throws \Google\Service\Exception
-     */
-    public function restart($name, RestartConnectorRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Resumes the connector and its tasks. (connectors.resume)
-     *
-     * @param string $name Required. The name of the connector to pause. Structured
-     * like: projects/{project}/locations/{location}/connectClusters/{connectCluster
-     * }/connectors/{connector}
-     * @param ResumeConnectorRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return ResumeConnectorResponse
-     * @throws \Google\Service\Exception
-     */
-    public function resume($name, ResumeConnectorRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Stops the connector. (connectors.stop)
-     *
-     * @param string $name Required. The name of the connector to stop. Structured
-     * like: projects/{project}/locations/{location}/connectClusters/{connectCluster
-     * }/connectors/{connector}
-     * @param StopConnectorRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return StopConnectorResponse
-     * @throws \Google\Service\Exception
-     */
-    public function stop($name, StopConnectorRequest $postBody, $optParams = [])
+    class Google_Service_ManagedKafka_Resource_ProjectsLocationsConnectClustersConnectors extends \Google\Service\ManagedKafka\Resource\ProjectsLocationsConnectClustersConnectors
     {
     }
 }

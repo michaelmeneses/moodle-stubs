@@ -21,102 +21,111 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudControlsPartnerService;
-
-class Remediation extends \Google\Collection
-{
-    /**
-     * Unspecified remediation type
-     */
-    public const REMEDIATION_TYPE_REMEDIATION_TYPE_UNSPECIFIED = 'REMEDIATION_TYPE_UNSPECIFIED';
-    /**
-     * Remediation type for boolean org policy
-     */
-    public const REMEDIATION_TYPE_REMEDIATION_BOOLEAN_ORG_POLICY_VIOLATION = 'REMEDIATION_BOOLEAN_ORG_POLICY_VIOLATION';
-    /**
-     * Remediation type for list org policy which have allowed values in the
-     * monitoring rule
-     */
-    public const REMEDIATION_TYPE_REMEDIATION_LIST_ALLOWED_VALUES_ORG_POLICY_VIOLATION = 'REMEDIATION_LIST_ALLOWED_VALUES_ORG_POLICY_VIOLATION';
-    /**
-     * Remediation type for list org policy which have denied values in the
-     * monitoring rule
-     */
-    public const REMEDIATION_TYPE_REMEDIATION_LIST_DENIED_VALUES_ORG_POLICY_VIOLATION = 'REMEDIATION_LIST_DENIED_VALUES_ORG_POLICY_VIOLATION';
-    /**
-     * Remediation type for gcp.restrictCmekCryptoKeyProjects
-     */
-    public const REMEDIATION_TYPE_REMEDIATION_RESTRICT_CMEK_CRYPTO_KEY_PROJECTS_ORG_POLICY_VIOLATION = 'REMEDIATION_RESTRICT_CMEK_CRYPTO_KEY_PROJECTS_ORG_POLICY_VIOLATION';
-    /**
-     * Remediation type for resource violation.
-     */
-    public const REMEDIATION_TYPE_REMEDIATION_RESOURCE_VIOLATION = 'REMEDIATION_RESOURCE_VIOLATION';
-    protected $collection_key = 'compliantValues';
-    /**
-     * Values that can resolve the violation For example: for list org policy
-     * violations, this will either be the list of allowed or denied values
-     *
-     * @var string[]
-     */
-    public $compliantValues;
-    protected $instructionsType = Instructions::class;
-    protected $instructionsDataType = '';
-    /**
-     * Output only. Remediation type based on the type of org policy values
-     * violated
-     *
-     * @var string
-     */
-    public $remediationType;
-    /**
-     * Values that can resolve the violation For example: for list org policy
-     * violations, this will either be the list of allowed or denied values
-     *
-     * @param string[] $compliantValues
-     */
-    public function setCompliantValues($compliantValues)
+namespace Google\Service\CloudControlsPartnerService {
+    class Remediation extends \Google\Collection
     {
+        /**
+         * Unspecified remediation type
+         */
+        public const REMEDIATION_TYPE_REMEDIATION_TYPE_UNSPECIFIED = 'REMEDIATION_TYPE_UNSPECIFIED';
+        /**
+         * Remediation type for boolean org policy
+         */
+        public const REMEDIATION_TYPE_REMEDIATION_BOOLEAN_ORG_POLICY_VIOLATION = 'REMEDIATION_BOOLEAN_ORG_POLICY_VIOLATION';
+        /**
+         * Remediation type for list org policy which have allowed values in the
+         * monitoring rule
+         */
+        public const REMEDIATION_TYPE_REMEDIATION_LIST_ALLOWED_VALUES_ORG_POLICY_VIOLATION = 'REMEDIATION_LIST_ALLOWED_VALUES_ORG_POLICY_VIOLATION';
+        /**
+         * Remediation type for list org policy which have denied values in the
+         * monitoring rule
+         */
+        public const REMEDIATION_TYPE_REMEDIATION_LIST_DENIED_VALUES_ORG_POLICY_VIOLATION = 'REMEDIATION_LIST_DENIED_VALUES_ORG_POLICY_VIOLATION';
+        /**
+         * Remediation type for gcp.restrictCmekCryptoKeyProjects
+         */
+        public const REMEDIATION_TYPE_REMEDIATION_RESTRICT_CMEK_CRYPTO_KEY_PROJECTS_ORG_POLICY_VIOLATION = 'REMEDIATION_RESTRICT_CMEK_CRYPTO_KEY_PROJECTS_ORG_POLICY_VIOLATION';
+        /**
+         * Remediation type for resource violation.
+         */
+        public const REMEDIATION_TYPE_REMEDIATION_RESOURCE_VIOLATION = 'REMEDIATION_RESOURCE_VIOLATION';
+        protected $collection_key = 'compliantValues';
+        /**
+         * Values that can resolve the violation For example: for list org policy
+         * violations, this will either be the list of allowed or denied values
+         *
+         * @var string[]
+         */
+        public $compliantValues;
+        protected $instructionsType = Instructions::class;
+        protected $instructionsDataType = '';
+        /**
+         * Output only. Remediation type based on the type of org policy values
+         * violated
+         *
+         * @var string
+         */
+        public $remediationType;
+        /**
+         * Values that can resolve the violation For example: for list org policy
+         * violations, this will either be the list of allowed or denied values
+         *
+         * @param string[] $compliantValues
+         */
+        public function setCompliantValues($compliantValues)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCompliantValues()
+        {
+        }
+        /**
+         * Required. Remediation instructions to resolve violations
+         *
+         * @param Instructions $instructions
+         */
+        public function setInstructions(Instructions $instructions)
+        {
+        }
+        /**
+         * @return Instructions
+         */
+        public function getInstructions()
+        {
+        }
+        /**
+         * Output only. Remediation type based on the type of org policy values
+         * violated
+         *
+         * Accepted values: REMEDIATION_TYPE_UNSPECIFIED,
+         * REMEDIATION_BOOLEAN_ORG_POLICY_VIOLATION,
+         * REMEDIATION_LIST_ALLOWED_VALUES_ORG_POLICY_VIOLATION,
+         * REMEDIATION_LIST_DENIED_VALUES_ORG_POLICY_VIOLATION,
+         * REMEDIATION_RESTRICT_CMEK_CRYPTO_KEY_PROJECTS_ORG_POLICY_VIOLATION,
+         * REMEDIATION_RESOURCE_VIOLATION
+         *
+         * @param self::REMEDIATION_TYPE_* $remediationType
+         */
+        public function setRemediationType($remediationType)
+        {
+        }
+        /**
+         * @return self::REMEDIATION_TYPE_*
+         */
+        public function getRemediationType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudControlsPartnerService\Remediation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCompliantValues()
-    {
-    }
-    /**
-     * Required. Remediation instructions to resolve violations
-     *
-     * @param Instructions $instructions
-     */
-    public function setInstructions(Instructions $instructions)
-    {
-    }
-    /**
-     * @return Instructions
-     */
-    public function getInstructions()
-    {
-    }
-    /**
-     * Output only. Remediation type based on the type of org policy values
-     * violated
-     *
-     * Accepted values: REMEDIATION_TYPE_UNSPECIFIED,
-     * REMEDIATION_BOOLEAN_ORG_POLICY_VIOLATION,
-     * REMEDIATION_LIST_ALLOWED_VALUES_ORG_POLICY_VIOLATION,
-     * REMEDIATION_LIST_DENIED_VALUES_ORG_POLICY_VIOLATION,
-     * REMEDIATION_RESTRICT_CMEK_CRYPTO_KEY_PROJECTS_ORG_POLICY_VIOLATION,
-     * REMEDIATION_RESOURCE_VIOLATION
-     *
-     * @param self::REMEDIATION_TYPE_* $remediationType
-     */
-    public function setRemediationType($remediationType)
-    {
-    }
-    /**
-     * @return self::REMEDIATION_TYPE_*
-     */
-    public function getRemediationType()
+    class Google_Service_CloudControlsPartnerService_Remediation extends \Google\Service\CloudControlsPartnerService\Remediation
     {
     }
 }

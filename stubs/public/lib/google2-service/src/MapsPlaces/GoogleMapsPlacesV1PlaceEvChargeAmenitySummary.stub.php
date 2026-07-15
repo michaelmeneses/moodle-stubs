@@ -21,110 +21,119 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MapsPlaces;
-
-class GoogleMapsPlacesV1PlaceEvChargeAmenitySummary extends \Google\Model
-{
-    protected $coffeeType = GoogleMapsPlacesV1ContentBlock::class;
-    protected $coffeeDataType = '';
-    protected $disclosureTextType = GoogleTypeLocalizedText::class;
-    protected $disclosureTextDataType = '';
-    /**
-     * A link where users can flag a problem with the summary.
-     *
-     * @var string
-     */
-    public $flagContentUri;
-    protected $overviewType = GoogleMapsPlacesV1ContentBlock::class;
-    protected $overviewDataType = '';
-    protected $restaurantType = GoogleMapsPlacesV1ContentBlock::class;
-    protected $restaurantDataType = '';
-    protected $storeType = GoogleMapsPlacesV1ContentBlock::class;
-    protected $storeDataType = '';
-    /**
-     * A summary of the nearby coffee options.
-     *
-     * @param GoogleMapsPlacesV1ContentBlock $coffee
-     */
-    public function setCoffee(GoogleMapsPlacesV1ContentBlock $coffee)
+namespace Google\Service\MapsPlaces {
+    class GoogleMapsPlacesV1PlaceEvChargeAmenitySummary extends \Google\Model
     {
+        protected $coffeeType = GoogleMapsPlacesV1ContentBlock::class;
+        protected $coffeeDataType = '';
+        protected $disclosureTextType = GoogleTypeLocalizedText::class;
+        protected $disclosureTextDataType = '';
+        /**
+         * A link where users can flag a problem with the summary.
+         *
+         * @var string
+         */
+        public $flagContentUri;
+        protected $overviewType = GoogleMapsPlacesV1ContentBlock::class;
+        protected $overviewDataType = '';
+        protected $restaurantType = GoogleMapsPlacesV1ContentBlock::class;
+        protected $restaurantDataType = '';
+        protected $storeType = GoogleMapsPlacesV1ContentBlock::class;
+        protected $storeDataType = '';
+        /**
+         * A summary of the nearby coffee options.
+         *
+         * @param GoogleMapsPlacesV1ContentBlock $coffee
+         */
+        public function setCoffee(GoogleMapsPlacesV1ContentBlock $coffee)
+        {
+        }
+        /**
+         * @return GoogleMapsPlacesV1ContentBlock
+         */
+        public function getCoffee()
+        {
+        }
+        /**
+         * The AI disclosure message "Summarized with Gemini" (and its localized
+         * variants). This will be in the language specified in the request if
+         * available.
+         *
+         * @param GoogleTypeLocalizedText $disclosureText
+         */
+        public function setDisclosureText(GoogleTypeLocalizedText $disclosureText)
+        {
+        }
+        /**
+         * @return GoogleTypeLocalizedText
+         */
+        public function getDisclosureText()
+        {
+        }
+        /**
+         * A link where users can flag a problem with the summary.
+         *
+         * @param string $flagContentUri
+         */
+        public function setFlagContentUri($flagContentUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFlagContentUri()
+        {
+        }
+        /**
+         * An overview of the available amenities. This is guaranteed to be provided.
+         *
+         * @param GoogleMapsPlacesV1ContentBlock $overview
+         */
+        public function setOverview(GoogleMapsPlacesV1ContentBlock $overview)
+        {
+        }
+        /**
+         * @return GoogleMapsPlacesV1ContentBlock
+         */
+        public function getOverview()
+        {
+        }
+        /**
+         * A summary of the nearby restaurants.
+         *
+         * @param GoogleMapsPlacesV1ContentBlock $restaurant
+         */
+        public function setRestaurant(GoogleMapsPlacesV1ContentBlock $restaurant)
+        {
+        }
+        /**
+         * @return GoogleMapsPlacesV1ContentBlock
+         */
+        public function getRestaurant()
+        {
+        }
+        /**
+         * A summary of the nearby stores.
+         *
+         * @param GoogleMapsPlacesV1ContentBlock $store
+         */
+        public function setStore(GoogleMapsPlacesV1ContentBlock $store)
+        {
+        }
+        /**
+         * @return GoogleMapsPlacesV1ContentBlock
+         */
+        public function getStore()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleMapsPlacesV1ContentBlock
+     * Runtime class alias of \Google\Service\MapsPlaces\GoogleMapsPlacesV1PlaceEvChargeAmenitySummary registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCoffee()
-    {
-    }
-    /**
-     * The AI disclosure message "Summarized with Gemini" (and its localized
-     * variants). This will be in the language specified in the request if
-     * available.
-     *
-     * @param GoogleTypeLocalizedText $disclosureText
-     */
-    public function setDisclosureText(GoogleTypeLocalizedText $disclosureText)
-    {
-    }
-    /**
-     * @return GoogleTypeLocalizedText
-     */
-    public function getDisclosureText()
-    {
-    }
-    /**
-     * A link where users can flag a problem with the summary.
-     *
-     * @param string $flagContentUri
-     */
-    public function setFlagContentUri($flagContentUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFlagContentUri()
-    {
-    }
-    /**
-     * An overview of the available amenities. This is guaranteed to be provided.
-     *
-     * @param GoogleMapsPlacesV1ContentBlock $overview
-     */
-    public function setOverview(GoogleMapsPlacesV1ContentBlock $overview)
-    {
-    }
-    /**
-     * @return GoogleMapsPlacesV1ContentBlock
-     */
-    public function getOverview()
-    {
-    }
-    /**
-     * A summary of the nearby restaurants.
-     *
-     * @param GoogleMapsPlacesV1ContentBlock $restaurant
-     */
-    public function setRestaurant(GoogleMapsPlacesV1ContentBlock $restaurant)
-    {
-    }
-    /**
-     * @return GoogleMapsPlacesV1ContentBlock
-     */
-    public function getRestaurant()
-    {
-    }
-    /**
-     * A summary of the nearby stores.
-     *
-     * @param GoogleMapsPlacesV1ContentBlock $store
-     */
-    public function setStore(GoogleMapsPlacesV1ContentBlock $store)
-    {
-    }
-    /**
-     * @return GoogleMapsPlacesV1ContentBlock
-     */
-    public function getStore()
+    class Google_Service_MapsPlaces_GoogleMapsPlacesV1PlaceEvChargeAmenitySummary extends \Google\Service\MapsPlaces\GoogleMapsPlacesV1PlaceEvChargeAmenitySummary
     {
     }
 }

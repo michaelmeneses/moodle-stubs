@@ -21,83 +21,92 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecaptchaEnterprise;
-
-class GoogleCloudRecaptchaenterpriseV1AndroidKeySettings extends \Google\Collection
-{
-    protected $collection_key = 'allowedPackageNames';
-    /**
-     * Optional. If set to true, allowed_package_names are not enforced.
-     *
-     * @var bool
-     */
-    public $allowAllPackageNames;
-    /**
-     * Optional. Android package names of apps allowed to use the key. Example:
-     * 'com.companyname.appname' Each key supports a maximum of 250 package names.
-     * To use a key on more apps, set `allow_all_package_names` to true. When this
-     * is set, you are responsible for validating the package name by checking the
-     * `token_properties.android_package_name` field in each assessment response
-     * against your list of allowed package names.
-     *
-     * @var string[]
-     */
-    public $allowedPackageNames;
-    /**
-     * Optional. Set to true for keys that are used in an Android application that
-     * is available for download in app stores in addition to the Google Play
-     * Store.
-     *
-     * @var bool
-     */
-    public $supportNonGoogleAppStoreDistribution;
-    /**
-     * Optional. If set to true, allowed_package_names are not enforced.
-     *
-     * @param bool $allowAllPackageNames
-     */
-    public function setAllowAllPackageNames($allowAllPackageNames)
+namespace Google\Service\RecaptchaEnterprise {
+    class GoogleCloudRecaptchaenterpriseV1AndroidKeySettings extends \Google\Collection
     {
+        protected $collection_key = 'allowedPackageNames';
+        /**
+         * Optional. If set to true, allowed_package_names are not enforced.
+         *
+         * @var bool
+         */
+        public $allowAllPackageNames;
+        /**
+         * Optional. Android package names of apps allowed to use the key. Example:
+         * 'com.companyname.appname' Each key supports a maximum of 250 package names.
+         * To use a key on more apps, set `allow_all_package_names` to true. When this
+         * is set, you are responsible for validating the package name by checking the
+         * `token_properties.android_package_name` field in each assessment response
+         * against your list of allowed package names.
+         *
+         * @var string[]
+         */
+        public $allowedPackageNames;
+        /**
+         * Optional. Set to true for keys that are used in an Android application that
+         * is available for download in app stores in addition to the Google Play
+         * Store.
+         *
+         * @var bool
+         */
+        public $supportNonGoogleAppStoreDistribution;
+        /**
+         * Optional. If set to true, allowed_package_names are not enforced.
+         *
+         * @param bool $allowAllPackageNames
+         */
+        public function setAllowAllPackageNames($allowAllPackageNames)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAllowAllPackageNames()
+        {
+        }
+        /**
+         * Optional. Android package names of apps allowed to use the key. Example:
+         * 'com.companyname.appname' Each key supports a maximum of 250 package names.
+         * To use a key on more apps, set `allow_all_package_names` to true. When this
+         * is set, you are responsible for validating the package name by checking the
+         * `token_properties.android_package_name` field in each assessment response
+         * against your list of allowed package names.
+         *
+         * @param string[] $allowedPackageNames
+         */
+        public function setAllowedPackageNames($allowedPackageNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAllowedPackageNames()
+        {
+        }
+        /**
+         * Optional. Set to true for keys that are used in an Android application that
+         * is available for download in app stores in addition to the Google Play
+         * Store.
+         *
+         * @param bool $supportNonGoogleAppStoreDistribution
+         */
+        public function setSupportNonGoogleAppStoreDistribution($supportNonGoogleAppStoreDistribution)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSupportNonGoogleAppStoreDistribution()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1AndroidKeySettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowAllPackageNames()
-    {
-    }
-    /**
-     * Optional. Android package names of apps allowed to use the key. Example:
-     * 'com.companyname.appname' Each key supports a maximum of 250 package names.
-     * To use a key on more apps, set `allow_all_package_names` to true. When this
-     * is set, you are responsible for validating the package name by checking the
-     * `token_properties.android_package_name` field in each assessment response
-     * against your list of allowed package names.
-     *
-     * @param string[] $allowedPackageNames
-     */
-    public function setAllowedPackageNames($allowedPackageNames)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getAllowedPackageNames()
-    {
-    }
-    /**
-     * Optional. Set to true for keys that are used in an Android application that
-     * is available for download in app stores in addition to the Google Play
-     * Store.
-     *
-     * @param bool $supportNonGoogleAppStoreDistribution
-     */
-    public function setSupportNonGoogleAppStoreDistribution($supportNonGoogleAppStoreDistribution)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSupportNonGoogleAppStoreDistribution()
+    class Google_Service_RecaptchaEnterprise_GoogleCloudRecaptchaenterpriseV1AndroidKeySettings extends \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1AndroidKeySettings
     {
     }
 }

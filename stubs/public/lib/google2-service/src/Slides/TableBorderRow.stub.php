@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides;
-
-class TableBorderRow extends \Google\Collection
-{
-    protected $collection_key = 'tableBorderCells';
-    protected $tableBorderCellsType = TableBorderCell::class;
-    protected $tableBorderCellsDataType = 'array';
-    /**
-     * Properties of each border cell. When a border's adjacent table cells are
-     * merged, it is not included in the response.
-     *
-     * @param TableBorderCell[] $tableBorderCells
-     */
-    public function setTableBorderCells($tableBorderCells)
+namespace Google\Service\Slides {
+    class TableBorderRow extends \Google\Collection
     {
+        protected $collection_key = 'tableBorderCells';
+        protected $tableBorderCellsType = TableBorderCell::class;
+        protected $tableBorderCellsDataType = 'array';
+        /**
+         * Properties of each border cell. When a border's adjacent table cells are
+         * merged, it is not included in the response.
+         *
+         * @param TableBorderCell[] $tableBorderCells
+         */
+        public function setTableBorderCells($tableBorderCells)
+        {
+        }
+        /**
+         * @return TableBorderCell[]
+         */
+        public function getTableBorderCells()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TableBorderCell[]
+     * Runtime class alias of \Google\Service\Slides\TableBorderRow registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTableBorderCells()
+    class Google_Service_Slides_TableBorderRow extends \Google\Service\Slides\TableBorderRow
     {
     }
 }

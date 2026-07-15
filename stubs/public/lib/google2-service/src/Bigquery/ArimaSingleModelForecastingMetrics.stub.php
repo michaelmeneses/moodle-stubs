@@ -21,197 +21,206 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class ArimaSingleModelForecastingMetrics extends \Google\Collection
-{
-    protected $collection_key = 'timeSeriesIds';
-    protected $arimaFittingMetricsType = ArimaFittingMetrics::class;
-    protected $arimaFittingMetricsDataType = '';
-    /**
-     * Is arima model fitted with drift or not. It is always false when d is not
-     * 1.
-     *
-     * @var bool
-     */
-    public $hasDrift;
-    /**
-     * If true, holiday_effect is a part of time series decomposition result.
-     *
-     * @var bool
-     */
-    public $hasHolidayEffect;
-    /**
-     * If true, spikes_and_dips is a part of time series decomposition result.
-     *
-     * @var bool
-     */
-    public $hasSpikesAndDips;
-    /**
-     * If true, step_changes is a part of time series decomposition result.
-     *
-     * @var bool
-     */
-    public $hasStepChanges;
-    protected $nonSeasonalOrderType = ArimaOrder::class;
-    protected $nonSeasonalOrderDataType = '';
-    /**
-     * Seasonal periods. Repeated because multiple periods are supported for one
-     * time series.
-     *
-     * @var string[]
-     */
-    public $seasonalPeriods;
-    /**
-     * The time_series_id value for this time series. It will be one of the unique
-     * values from the time_series_id_column specified during ARIMA model
-     * training. Only present when time_series_id_column training option was used.
-     *
-     * @var string
-     */
-    public $timeSeriesId;
-    /**
-     * The tuple of time_series_ids identifying this time series. It will be one
-     * of the unique tuples of values present in the time_series_id_columns
-     * specified during ARIMA model training. Only present when
-     * time_series_id_columns training option was used and the order of values
-     * here are same as the order of time_series_id_columns.
-     *
-     * @var string[]
-     */
-    public $timeSeriesIds;
-    /**
-     * Arima fitting metrics.
-     *
-     * @param ArimaFittingMetrics $arimaFittingMetrics
-     */
-    public function setArimaFittingMetrics(ArimaFittingMetrics $arimaFittingMetrics)
+namespace Google\Service\Bigquery {
+    class ArimaSingleModelForecastingMetrics extends \Google\Collection
     {
+        protected $collection_key = 'timeSeriesIds';
+        protected $arimaFittingMetricsType = ArimaFittingMetrics::class;
+        protected $arimaFittingMetricsDataType = '';
+        /**
+         * Is arima model fitted with drift or not. It is always false when d is not
+         * 1.
+         *
+         * @var bool
+         */
+        public $hasDrift;
+        /**
+         * If true, holiday_effect is a part of time series decomposition result.
+         *
+         * @var bool
+         */
+        public $hasHolidayEffect;
+        /**
+         * If true, spikes_and_dips is a part of time series decomposition result.
+         *
+         * @var bool
+         */
+        public $hasSpikesAndDips;
+        /**
+         * If true, step_changes is a part of time series decomposition result.
+         *
+         * @var bool
+         */
+        public $hasStepChanges;
+        protected $nonSeasonalOrderType = ArimaOrder::class;
+        protected $nonSeasonalOrderDataType = '';
+        /**
+         * Seasonal periods. Repeated because multiple periods are supported for one
+         * time series.
+         *
+         * @var string[]
+         */
+        public $seasonalPeriods;
+        /**
+         * The time_series_id value for this time series. It will be one of the unique
+         * values from the time_series_id_column specified during ARIMA model
+         * training. Only present when time_series_id_column training option was used.
+         *
+         * @var string
+         */
+        public $timeSeriesId;
+        /**
+         * The tuple of time_series_ids identifying this time series. It will be one
+         * of the unique tuples of values present in the time_series_id_columns
+         * specified during ARIMA model training. Only present when
+         * time_series_id_columns training option was used and the order of values
+         * here are same as the order of time_series_id_columns.
+         *
+         * @var string[]
+         */
+        public $timeSeriesIds;
+        /**
+         * Arima fitting metrics.
+         *
+         * @param ArimaFittingMetrics $arimaFittingMetrics
+         */
+        public function setArimaFittingMetrics(ArimaFittingMetrics $arimaFittingMetrics)
+        {
+        }
+        /**
+         * @return ArimaFittingMetrics
+         */
+        public function getArimaFittingMetrics()
+        {
+        }
+        /**
+         * Is arima model fitted with drift or not. It is always false when d is not
+         * 1.
+         *
+         * @param bool $hasDrift
+         */
+        public function setHasDrift($hasDrift)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getHasDrift()
+        {
+        }
+        /**
+         * If true, holiday_effect is a part of time series decomposition result.
+         *
+         * @param bool $hasHolidayEffect
+         */
+        public function setHasHolidayEffect($hasHolidayEffect)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getHasHolidayEffect()
+        {
+        }
+        /**
+         * If true, spikes_and_dips is a part of time series decomposition result.
+         *
+         * @param bool $hasSpikesAndDips
+         */
+        public function setHasSpikesAndDips($hasSpikesAndDips)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getHasSpikesAndDips()
+        {
+        }
+        /**
+         * If true, step_changes is a part of time series decomposition result.
+         *
+         * @param bool $hasStepChanges
+         */
+        public function setHasStepChanges($hasStepChanges)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getHasStepChanges()
+        {
+        }
+        /**
+         * Non-seasonal order.
+         *
+         * @param ArimaOrder $nonSeasonalOrder
+         */
+        public function setNonSeasonalOrder(ArimaOrder $nonSeasonalOrder)
+        {
+        }
+        /**
+         * @return ArimaOrder
+         */
+        public function getNonSeasonalOrder()
+        {
+        }
+        /**
+         * Seasonal periods. Repeated because multiple periods are supported for one
+         * time series.
+         *
+         * @param string[] $seasonalPeriods
+         */
+        public function setSeasonalPeriods($seasonalPeriods)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSeasonalPeriods()
+        {
+        }
+        /**
+         * The time_series_id value for this time series. It will be one of the unique
+         * values from the time_series_id_column specified during ARIMA model
+         * training. Only present when time_series_id_column training option was used.
+         *
+         * @param string $timeSeriesId
+         */
+        public function setTimeSeriesId($timeSeriesId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimeSeriesId()
+        {
+        }
+        /**
+         * The tuple of time_series_ids identifying this time series. It will be one
+         * of the unique tuples of values present in the time_series_id_columns
+         * specified during ARIMA model training. Only present when
+         * time_series_id_columns training option was used and the order of values
+         * here are same as the order of time_series_id_columns.
+         *
+         * @param string[] $timeSeriesIds
+         */
+        public function setTimeSeriesIds($timeSeriesIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTimeSeriesIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ArimaFittingMetrics
+     * Runtime class alias of \Google\Service\Bigquery\ArimaSingleModelForecastingMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArimaFittingMetrics()
-    {
-    }
-    /**
-     * Is arima model fitted with drift or not. It is always false when d is not
-     * 1.
-     *
-     * @param bool $hasDrift
-     */
-    public function setHasDrift($hasDrift)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getHasDrift()
-    {
-    }
-    /**
-     * If true, holiday_effect is a part of time series decomposition result.
-     *
-     * @param bool $hasHolidayEffect
-     */
-    public function setHasHolidayEffect($hasHolidayEffect)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getHasHolidayEffect()
-    {
-    }
-    /**
-     * If true, spikes_and_dips is a part of time series decomposition result.
-     *
-     * @param bool $hasSpikesAndDips
-     */
-    public function setHasSpikesAndDips($hasSpikesAndDips)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getHasSpikesAndDips()
-    {
-    }
-    /**
-     * If true, step_changes is a part of time series decomposition result.
-     *
-     * @param bool $hasStepChanges
-     */
-    public function setHasStepChanges($hasStepChanges)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getHasStepChanges()
-    {
-    }
-    /**
-     * Non-seasonal order.
-     *
-     * @param ArimaOrder $nonSeasonalOrder
-     */
-    public function setNonSeasonalOrder(ArimaOrder $nonSeasonalOrder)
-    {
-    }
-    /**
-     * @return ArimaOrder
-     */
-    public function getNonSeasonalOrder()
-    {
-    }
-    /**
-     * Seasonal periods. Repeated because multiple periods are supported for one
-     * time series.
-     *
-     * @param string[] $seasonalPeriods
-     */
-    public function setSeasonalPeriods($seasonalPeriods)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSeasonalPeriods()
-    {
-    }
-    /**
-     * The time_series_id value for this time series. It will be one of the unique
-     * values from the time_series_id_column specified during ARIMA model
-     * training. Only present when time_series_id_column training option was used.
-     *
-     * @param string $timeSeriesId
-     */
-    public function setTimeSeriesId($timeSeriesId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimeSeriesId()
-    {
-    }
-    /**
-     * The tuple of time_series_ids identifying this time series. It will be one
-     * of the unique tuples of values present in the time_series_id_columns
-     * specified during ARIMA model training. Only present when
-     * time_series_id_columns training option was used and the order of values
-     * here are same as the order of time_series_id_columns.
-     *
-     * @param string[] $timeSeriesIds
-     */
-    public function setTimeSeriesIds($timeSeriesIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTimeSeriesIds()
+    class Google_Service_Bigquery_ArimaSingleModelForecastingMetrics extends \Google\Service\Bigquery\ArimaSingleModelForecastingMetrics
     {
     }
 }

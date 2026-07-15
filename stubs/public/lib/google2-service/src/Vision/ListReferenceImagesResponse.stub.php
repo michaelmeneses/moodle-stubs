@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class ListReferenceImagesResponse extends \Google\Collection
-{
-    protected $collection_key = 'referenceImages';
-    /**
-     * The next_page_token returned from a previous List request, if any.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The maximum number of items to return. Default 10, maximum 100.
-     *
-     * @var int
-     */
-    public $pageSize;
-    protected $referenceImagesType = ReferenceImage::class;
-    protected $referenceImagesDataType = 'array';
-    /**
-     * The next_page_token returned from a previous List request, if any.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Vision {
+    class ListReferenceImagesResponse extends \Google\Collection
     {
+        protected $collection_key = 'referenceImages';
+        /**
+         * The next_page_token returned from a previous List request, if any.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The maximum number of items to return. Default 10, maximum 100.
+         *
+         * @var int
+         */
+        public $pageSize;
+        protected $referenceImagesType = ReferenceImage::class;
+        protected $referenceImagesDataType = 'array';
+        /**
+         * The next_page_token returned from a previous List request, if any.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The maximum number of items to return. Default 10, maximum 100.
+         *
+         * @param int $pageSize
+         */
+        public function setPageSize($pageSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPageSize()
+        {
+        }
+        /**
+         * The list of reference images.
+         *
+         * @param ReferenceImage[] $referenceImages
+         */
+        public function setReferenceImages($referenceImages)
+        {
+        }
+        /**
+         * @return ReferenceImage[]
+         */
+        public function getReferenceImages()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Vision\ListReferenceImagesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The maximum number of items to return. Default 10, maximum 100.
-     *
-     * @param int $pageSize
-     */
-    public function setPageSize($pageSize)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPageSize()
-    {
-    }
-    /**
-     * The list of reference images.
-     *
-     * @param ReferenceImage[] $referenceImages
-     */
-    public function setReferenceImages($referenceImages)
-    {
-    }
-    /**
-     * @return ReferenceImage[]
-     */
-    public function getReferenceImages()
+    class Google_Service_Vision_ListReferenceImagesResponse extends \Google\Service\Vision\ListReferenceImagesResponse
     {
     }
 }

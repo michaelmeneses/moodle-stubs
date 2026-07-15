@@ -21,111 +21,120 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Calendar;
-
-class Settings extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    /**
-     * Etag of the collection.
-     *
-     * @var string
-     */
-    public $etag;
-    protected $itemsType = Setting::class;
-    protected $itemsDataType = 'array';
-    /**
-     * Type of the collection ("calendar#settings").
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Token used to access the next page of this result. Omitted if no further
-     * results are available, in which case nextSyncToken is provided.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Token used at a later point in time to retrieve only the entries that have
-     * changed since this result was returned. Omitted if further results are
-     * available, in which case nextPageToken is provided.
-     *
-     * @var string
-     */
-    public $nextSyncToken;
-    /**
-     * Etag of the collection.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
+namespace Google\Service\Calendar {
+    class Settings extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        /**
+         * Etag of the collection.
+         *
+         * @var string
+         */
+        public $etag;
+        protected $itemsType = Setting::class;
+        protected $itemsDataType = 'array';
+        /**
+         * Type of the collection ("calendar#settings").
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Token used to access the next page of this result. Omitted if no further
+         * results are available, in which case nextSyncToken is provided.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Token used at a later point in time to retrieve only the entries that have
+         * changed since this result was returned. Omitted if further results are
+         * available, in which case nextPageToken is provided.
+         *
+         * @var string
+         */
+        public $nextSyncToken;
+        /**
+         * Etag of the collection.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * List of user settings.
+         *
+         * @param Setting[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return Setting[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * Type of the collection ("calendar#settings").
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Token used to access the next page of this result. Omitted if no further
+         * results are available, in which case nextSyncToken is provided.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Token used at a later point in time to retrieve only the entries that have
+         * changed since this result was returned. Omitted if further results are
+         * available, in which case nextPageToken is provided.
+         *
+         * @param string $nextSyncToken
+         */
+        public function setNextSyncToken($nextSyncToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextSyncToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Calendar\Settings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
-    {
-    }
-    /**
-     * List of user settings.
-     *
-     * @param Setting[] $items
-     */
-    public function setItems($items)
-    {
-    }
-    /**
-     * @return Setting[]
-     */
-    public function getItems()
-    {
-    }
-    /**
-     * Type of the collection ("calendar#settings").
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Token used to access the next page of this result. Omitted if no further
-     * results are available, in which case nextSyncToken is provided.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Token used at a later point in time to retrieve only the entries that have
-     * changed since this result was returned. Omitted if further results are
-     * available, in which case nextPageToken is provided.
-     *
-     * @param string $nextSyncToken
-     */
-    public function setNextSyncToken($nextSyncToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextSyncToken()
+    class Google_Service_Calendar_Settings extends \Google\Service\Calendar\Settings
     {
     }
 }

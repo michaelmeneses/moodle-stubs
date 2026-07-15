@@ -21,80 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class GoogleAppsCardV1ImageComponent extends \Google\Model
-{
-    /**
-     * The accessibility label for the image.
-     *
-     * @var string
-     */
-    public $altText;
-    protected $borderStyleType = GoogleAppsCardV1BorderStyle::class;
-    protected $borderStyleDataType = '';
-    protected $cropStyleType = GoogleAppsCardV1ImageCropStyle::class;
-    protected $cropStyleDataType = '';
-    /**
-     * The image URL.
-     *
-     * @var string
-     */
-    public $imageUri;
-    /**
-     * The accessibility label for the image.
-     *
-     * @param string $altText
-     */
-    public function setAltText($altText)
+namespace Google\Service\HangoutsChat {
+    class GoogleAppsCardV1ImageComponent extends \Google\Model
     {
+        /**
+         * The accessibility label for the image.
+         *
+         * @var string
+         */
+        public $altText;
+        protected $borderStyleType = GoogleAppsCardV1BorderStyle::class;
+        protected $borderStyleDataType = '';
+        protected $cropStyleType = GoogleAppsCardV1ImageCropStyle::class;
+        protected $cropStyleDataType = '';
+        /**
+         * The image URL.
+         *
+         * @var string
+         */
+        public $imageUri;
+        /**
+         * The accessibility label for the image.
+         *
+         * @param string $altText
+         */
+        public function setAltText($altText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAltText()
+        {
+        }
+        /**
+         * The border style to apply to the image.
+         *
+         * @param GoogleAppsCardV1BorderStyle $borderStyle
+         */
+        public function setBorderStyle(GoogleAppsCardV1BorderStyle $borderStyle)
+        {
+        }
+        /**
+         * @return GoogleAppsCardV1BorderStyle
+         */
+        public function getBorderStyle()
+        {
+        }
+        /**
+         * The crop style to apply to the image.
+         *
+         * @param GoogleAppsCardV1ImageCropStyle $cropStyle
+         */
+        public function setCropStyle(GoogleAppsCardV1ImageCropStyle $cropStyle)
+        {
+        }
+        /**
+         * @return GoogleAppsCardV1ImageCropStyle
+         */
+        public function getCropStyle()
+        {
+        }
+        /**
+         * The image URL.
+         *
+         * @param string $imageUri
+         */
+        public function setImageUri($imageUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImageUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\HangoutsChat\GoogleAppsCardV1ImageComponent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAltText()
-    {
-    }
-    /**
-     * The border style to apply to the image.
-     *
-     * @param GoogleAppsCardV1BorderStyle $borderStyle
-     */
-    public function setBorderStyle(GoogleAppsCardV1BorderStyle $borderStyle)
-    {
-    }
-    /**
-     * @return GoogleAppsCardV1BorderStyle
-     */
-    public function getBorderStyle()
-    {
-    }
-    /**
-     * The crop style to apply to the image.
-     *
-     * @param GoogleAppsCardV1ImageCropStyle $cropStyle
-     */
-    public function setCropStyle(GoogleAppsCardV1ImageCropStyle $cropStyle)
-    {
-    }
-    /**
-     * @return GoogleAppsCardV1ImageCropStyle
-     */
-    public function getCropStyle()
-    {
-    }
-    /**
-     * The image URL.
-     *
-     * @param string $imageUri
-     */
-    public function setImageUri($imageUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImageUri()
+    class Google_Service_HangoutsChat_GoogleAppsCardV1ImageComponent extends \Google\Service\HangoutsChat\GoogleAppsCardV1ImageComponent
     {
     }
 }

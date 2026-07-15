@@ -21,61 +21,70 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3beta1WebhookResponseFulfillmentResponse extends \Google\Collection
-{
-    /**
-     * Not specified. `APPEND` will be used.
-     */
-    public const MERGE_BEHAVIOR_MERGE_BEHAVIOR_UNSPECIFIED = 'MERGE_BEHAVIOR_UNSPECIFIED';
-    /**
-     * `messages` will be appended to the list of messages waiting to be sent to
-     * the user.
-     */
-    public const MERGE_BEHAVIOR_APPEND = 'APPEND';
-    /**
-     * `messages` will replace the list of messages waiting to be sent to the
-     * user.
-     */
-    public const MERGE_BEHAVIOR_REPLACE = 'REPLACE';
-    protected $collection_key = 'messages';
-    /**
-     * Merge behavior for `messages`.
-     *
-     * @var string
-     */
-    public $mergeBehavior;
-    protected $messagesType = GoogleCloudDialogflowCxV3beta1ResponseMessage::class;
-    protected $messagesDataType = 'array';
-    /**
-     * Merge behavior for `messages`.
-     *
-     * Accepted values: MERGE_BEHAVIOR_UNSPECIFIED, APPEND, REPLACE
-     *
-     * @param self::MERGE_BEHAVIOR_* $mergeBehavior
-     */
-    public function setMergeBehavior($mergeBehavior)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3beta1WebhookResponseFulfillmentResponse extends \Google\Collection
     {
+        /**
+         * Not specified. `APPEND` will be used.
+         */
+        public const MERGE_BEHAVIOR_MERGE_BEHAVIOR_UNSPECIFIED = 'MERGE_BEHAVIOR_UNSPECIFIED';
+        /**
+         * `messages` will be appended to the list of messages waiting to be sent to
+         * the user.
+         */
+        public const MERGE_BEHAVIOR_APPEND = 'APPEND';
+        /**
+         * `messages` will replace the list of messages waiting to be sent to the
+         * user.
+         */
+        public const MERGE_BEHAVIOR_REPLACE = 'REPLACE';
+        protected $collection_key = 'messages';
+        /**
+         * Merge behavior for `messages`.
+         *
+         * @var string
+         */
+        public $mergeBehavior;
+        protected $messagesType = GoogleCloudDialogflowCxV3beta1ResponseMessage::class;
+        protected $messagesDataType = 'array';
+        /**
+         * Merge behavior for `messages`.
+         *
+         * Accepted values: MERGE_BEHAVIOR_UNSPECIFIED, APPEND, REPLACE
+         *
+         * @param self::MERGE_BEHAVIOR_* $mergeBehavior
+         */
+        public function setMergeBehavior($mergeBehavior)
+        {
+        }
+        /**
+         * @return self::MERGE_BEHAVIOR_*
+         */
+        public function getMergeBehavior()
+        {
+        }
+        /**
+         * The list of rich message responses to present to the user.
+         *
+         * @param GoogleCloudDialogflowCxV3beta1ResponseMessage[] $messages
+         */
+        public function setMessages($messages)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3beta1ResponseMessage[]
+         */
+        public function getMessages()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::MERGE_BEHAVIOR_*
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3beta1WebhookResponseFulfillmentResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMergeBehavior()
-    {
-    }
-    /**
-     * The list of rich message responses to present to the user.
-     *
-     * @param GoogleCloudDialogflowCxV3beta1ResponseMessage[] $messages
-     */
-    public function setMessages($messages)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3beta1ResponseMessage[]
-     */
-    public function getMessages()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3beta1WebhookResponseFulfillmentResponse extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3beta1WebhookResponseFulfillmentResponse
     {
     }
 }

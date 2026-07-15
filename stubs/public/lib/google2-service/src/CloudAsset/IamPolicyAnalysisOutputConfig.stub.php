@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class IamPolicyAnalysisOutputConfig extends \Google\Model
-{
-    protected $bigqueryDestinationType = GoogleCloudAssetV1BigQueryDestination::class;
-    protected $bigqueryDestinationDataType = '';
-    protected $gcsDestinationType = GoogleCloudAssetV1GcsDestination::class;
-    protected $gcsDestinationDataType = '';
-    /**
-     * Destination on BigQuery.
-     *
-     * @param GoogleCloudAssetV1BigQueryDestination $bigqueryDestination
-     */
-    public function setBigqueryDestination(GoogleCloudAssetV1BigQueryDestination $bigqueryDestination)
+namespace Google\Service\CloudAsset {
+    class IamPolicyAnalysisOutputConfig extends \Google\Model
     {
+        protected $bigqueryDestinationType = GoogleCloudAssetV1BigQueryDestination::class;
+        protected $bigqueryDestinationDataType = '';
+        protected $gcsDestinationType = GoogleCloudAssetV1GcsDestination::class;
+        protected $gcsDestinationDataType = '';
+        /**
+         * Destination on BigQuery.
+         *
+         * @param GoogleCloudAssetV1BigQueryDestination $bigqueryDestination
+         */
+        public function setBigqueryDestination(GoogleCloudAssetV1BigQueryDestination $bigqueryDestination)
+        {
+        }
+        /**
+         * @return GoogleCloudAssetV1BigQueryDestination
+         */
+        public function getBigqueryDestination()
+        {
+        }
+        /**
+         * Destination on Cloud Storage.
+         *
+         * @param GoogleCloudAssetV1GcsDestination $gcsDestination
+         */
+        public function setGcsDestination(GoogleCloudAssetV1GcsDestination $gcsDestination)
+        {
+        }
+        /**
+         * @return GoogleCloudAssetV1GcsDestination
+         */
+        public function getGcsDestination()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAssetV1BigQueryDestination
+     * Runtime class alias of \Google\Service\CloudAsset\IamPolicyAnalysisOutputConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBigqueryDestination()
-    {
-    }
-    /**
-     * Destination on Cloud Storage.
-     *
-     * @param GoogleCloudAssetV1GcsDestination $gcsDestination
-     */
-    public function setGcsDestination(GoogleCloudAssetV1GcsDestination $gcsDestination)
-    {
-    }
-    /**
-     * @return GoogleCloudAssetV1GcsDestination
-     */
-    public function getGcsDestination()
+    class Google_Service_CloudAsset_IamPolicyAnalysisOutputConfig extends \Google\Service\CloudAsset\IamPolicyAnalysisOutputConfig
     {
     }
 }

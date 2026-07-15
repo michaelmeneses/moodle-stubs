@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyerII;
-
-class PlacementTargeting extends \Google\Model
-{
-    protected $mobileApplicationTargetingType = MobileApplicationTargeting::class;
-    protected $mobileApplicationTargetingDataType = '';
-    protected $urlTargetingType = UrlTargeting::class;
-    protected $urlTargetingDataType = '';
-    /**
-     * Mobile application targeting information in a deal. This doesn't apply to
-     * Auction Packages.
-     *
-     * @param MobileApplicationTargeting $mobileApplicationTargeting
-     */
-    public function setMobileApplicationTargeting(MobileApplicationTargeting $mobileApplicationTargeting)
+namespace Google\Service\AdExchangeBuyerII {
+    class PlacementTargeting extends \Google\Model
     {
+        protected $mobileApplicationTargetingType = MobileApplicationTargeting::class;
+        protected $mobileApplicationTargetingDataType = '';
+        protected $urlTargetingType = UrlTargeting::class;
+        protected $urlTargetingDataType = '';
+        /**
+         * Mobile application targeting information in a deal. This doesn't apply to
+         * Auction Packages.
+         *
+         * @param MobileApplicationTargeting $mobileApplicationTargeting
+         */
+        public function setMobileApplicationTargeting(MobileApplicationTargeting $mobileApplicationTargeting)
+        {
+        }
+        /**
+         * @return MobileApplicationTargeting
+         */
+        public function getMobileApplicationTargeting()
+        {
+        }
+        /**
+         * URLs to be included/excluded.
+         *
+         * @param UrlTargeting $urlTargeting
+         */
+        public function setUrlTargeting(UrlTargeting $urlTargeting)
+        {
+        }
+        /**
+         * @return UrlTargeting
+         */
+        public function getUrlTargeting()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MobileApplicationTargeting
+     * Runtime class alias of \Google\Service\AdExchangeBuyerII\PlacementTargeting registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMobileApplicationTargeting()
-    {
-    }
-    /**
-     * URLs to be included/excluded.
-     *
-     * @param UrlTargeting $urlTargeting
-     */
-    public function setUrlTargeting(UrlTargeting $urlTargeting)
-    {
-    }
-    /**
-     * @return UrlTargeting
-     */
-    public function getUrlTargeting()
+    class Google_Service_AdExchangeBuyerII_PlacementTargeting extends \Google\Service\AdExchangeBuyerII\PlacementTargeting
     {
     }
 }

@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1DocumentPageDimension extends \Google\Model
-{
-    /**
-     * Page height.
-     *
-     * @var float
-     */
-    public $height;
-    /**
-     * Dimension unit.
-     *
-     * @var string
-     */
-    public $unit;
-    /**
-     * Page width.
-     *
-     * @var float
-     */
-    public $width;
-    /**
-     * Page height.
-     *
-     * @param float $height
-     */
-    public function setHeight($height)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1DocumentPageDimension extends \Google\Model
     {
+        /**
+         * Page height.
+         *
+         * @var float
+         */
+        public $height;
+        /**
+         * Dimension unit.
+         *
+         * @var string
+         */
+        public $unit;
+        /**
+         * Page width.
+         *
+         * @var float
+         */
+        public $width;
+        /**
+         * Page height.
+         *
+         * @param float $height
+         */
+        public function setHeight($height)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getHeight()
+        {
+        }
+        /**
+         * Dimension unit.
+         *
+         * @param string $unit
+         */
+        public function setUnit($unit)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUnit()
+        {
+        }
+        /**
+         * Page width.
+         *
+         * @param float $width
+         */
+        public function setWidth($width)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getWidth()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1DocumentPageDimension registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHeight()
-    {
-    }
-    /**
-     * Dimension unit.
-     *
-     * @param string $unit
-     */
-    public function setUnit($unit)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUnit()
-    {
-    }
-    /**
-     * Page width.
-     *
-     * @param float $width
-     */
-    public function setWidth($width)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getWidth()
+    class Google_Service_Document_GoogleCloudDocumentaiV1DocumentPageDimension extends \Google\Service\Document\GoogleCloudDocumentaiV1DocumentPageDimension
     {
     }
 }

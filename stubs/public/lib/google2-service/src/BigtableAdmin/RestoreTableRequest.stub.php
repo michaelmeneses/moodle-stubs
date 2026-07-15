@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class RestoreTableRequest extends \Google\Model
-{
-    /**
-     * Name of the backup from which to restore. Values are of the form
-     * `projects//instances//clusters//backups/`.
-     *
-     * @var string
-     */
-    public $backup;
-    /**
-     * Required. The id of the table to create and restore to. This table must not
-     * already exist. The `table_id` appended to `parent` forms the full table
-     * name of the form `projects//instances//tables/`.
-     *
-     * @var string
-     */
-    public $tableId;
-    /**
-     * Name of the backup from which to restore. Values are of the form
-     * `projects//instances//clusters//backups/`.
-     *
-     * @param string $backup
-     */
-    public function setBackup($backup)
+namespace Google\Service\BigtableAdmin {
+    class RestoreTableRequest extends \Google\Model
     {
+        /**
+         * Name of the backup from which to restore. Values are of the form
+         * `projects//instances//clusters//backups/`.
+         *
+         * @var string
+         */
+        public $backup;
+        /**
+         * Required. The id of the table to create and restore to. This table must not
+         * already exist. The `table_id` appended to `parent` forms the full table
+         * name of the form `projects//instances//tables/`.
+         *
+         * @var string
+         */
+        public $tableId;
+        /**
+         * Name of the backup from which to restore. Values are of the form
+         * `projects//instances//clusters//backups/`.
+         *
+         * @param string $backup
+         */
+        public function setBackup($backup)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBackup()
+        {
+        }
+        /**
+         * Required. The id of the table to create and restore to. This table must not
+         * already exist. The `table_id` appended to `parent` forms the full table
+         * name of the form `projects//instances//tables/`.
+         *
+         * @param string $tableId
+         */
+        public function setTableId($tableId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTableId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BigtableAdmin\RestoreTableRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackup()
-    {
-    }
-    /**
-     * Required. The id of the table to create and restore to. This table must not
-     * already exist. The `table_id` appended to `parent` forms the full table
-     * name of the form `projects//instances//tables/`.
-     *
-     * @param string $tableId
-     */
-    public function setTableId($tableId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTableId()
+    class Google_Service_BigtableAdmin_RestoreTableRequest extends \Google\Service\BigtableAdmin\RestoreTableRequest
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Webfonts;
-
-class Tag extends \Google\Model
-{
-    /**
-     * The name of the tag.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The weight of the tag.
-     *
-     * @var float
-     */
-    public $weight;
-    /**
-     * The name of the tag.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Webfonts {
+    class Tag extends \Google\Model
     {
+        /**
+         * The name of the tag.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The weight of the tag.
+         *
+         * @var float
+         */
+        public $weight;
+        /**
+         * The name of the tag.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The weight of the tag.
+         *
+         * @param float $weight
+         */
+        public function setWeight($weight)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getWeight()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Webfonts\Tag registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * The weight of the tag.
-     *
-     * @param float $weight
-     */
-    public function setWeight($weight)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getWeight()
+    class Google_Service_Webfonts_Tag extends \Google\Service\Webfonts\Tag
     {
     }
 }

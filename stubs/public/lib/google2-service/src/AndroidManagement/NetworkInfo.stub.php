@@ -21,109 +21,118 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class NetworkInfo extends \Google\Collection
-{
-    protected $collection_key = 'telephonyInfos';
-    /**
-     * IMEI number of the GSM device. For example, A1000031212.
-     *
-     * @var string
-     */
-    public $imei;
-    /**
-     * MEID number of the CDMA device. For example, A00000292788E1.
-     *
-     * @var string
-     */
-    public $meid;
-    /**
-     * Alphabetic name of current registered operator. For example, Vodafone.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $networkOperatorName;
-    protected $telephonyInfosType = TelephonyInfo::class;
-    protected $telephonyInfosDataType = 'array';
-    /**
-     * Wi-Fi MAC address of the device. For example, 7c:11:11:11:11:11.
-     *
-     * @var string
-     */
-    public $wifiMacAddress;
-    /**
-     * IMEI number of the GSM device. For example, A1000031212.
-     *
-     * @param string $imei
-     */
-    public function setImei($imei)
+namespace Google\Service\AndroidManagement {
+    class NetworkInfo extends \Google\Collection
     {
+        protected $collection_key = 'telephonyInfos';
+        /**
+         * IMEI number of the GSM device. For example, A1000031212.
+         *
+         * @var string
+         */
+        public $imei;
+        /**
+         * MEID number of the CDMA device. For example, A00000292788E1.
+         *
+         * @var string
+         */
+        public $meid;
+        /**
+         * Alphabetic name of current registered operator. For example, Vodafone.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $networkOperatorName;
+        protected $telephonyInfosType = TelephonyInfo::class;
+        protected $telephonyInfosDataType = 'array';
+        /**
+         * Wi-Fi MAC address of the device. For example, 7c:11:11:11:11:11.
+         *
+         * @var string
+         */
+        public $wifiMacAddress;
+        /**
+         * IMEI number of the GSM device. For example, A1000031212.
+         *
+         * @param string $imei
+         */
+        public function setImei($imei)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImei()
+        {
+        }
+        /**
+         * MEID number of the CDMA device. For example, A00000292788E1.
+         *
+         * @param string $meid
+         */
+        public function setMeid($meid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMeid()
+        {
+        }
+        /**
+         * Alphabetic name of current registered operator. For example, Vodafone.
+         *
+         * @deprecated
+         * @param string $networkOperatorName
+         */
+        public function setNetworkOperatorName($networkOperatorName)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getNetworkOperatorName()
+        {
+        }
+        /**
+         * Provides telephony information associated with each SIM card on the device.
+         * Only supported on fully managed devices starting from Android API level 23.
+         *
+         * @param TelephonyInfo[] $telephonyInfos
+         */
+        public function setTelephonyInfos($telephonyInfos)
+        {
+        }
+        /**
+         * @return TelephonyInfo[]
+         */
+        public function getTelephonyInfos()
+        {
+        }
+        /**
+         * Wi-Fi MAC address of the device. For example, 7c:11:11:11:11:11.
+         *
+         * @param string $wifiMacAddress
+         */
+        public function setWifiMacAddress($wifiMacAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWifiMacAddress()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidManagement\NetworkInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getImei()
-    {
-    }
-    /**
-     * MEID number of the CDMA device. For example, A00000292788E1.
-     *
-     * @param string $meid
-     */
-    public function setMeid($meid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMeid()
-    {
-    }
-    /**
-     * Alphabetic name of current registered operator. For example, Vodafone.
-     *
-     * @deprecated
-     * @param string $networkOperatorName
-     */
-    public function setNetworkOperatorName($networkOperatorName)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getNetworkOperatorName()
-    {
-    }
-    /**
-     * Provides telephony information associated with each SIM card on the device.
-     * Only supported on fully managed devices starting from Android API level 23.
-     *
-     * @param TelephonyInfo[] $telephonyInfos
-     */
-    public function setTelephonyInfos($telephonyInfos)
-    {
-    }
-    /**
-     * @return TelephonyInfo[]
-     */
-    public function getTelephonyInfos()
-    {
-    }
-    /**
-     * Wi-Fi MAC address of the device. For example, 7c:11:11:11:11:11.
-     *
-     * @param string $wifiMacAddress
-     */
-    public function setWifiMacAddress($wifiMacAddress)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWifiMacAddress()
+    class Google_Service_AndroidManagement_NetworkInfo extends \Google\Service\AndroidManagement\NetworkInfo
     {
     }
 }

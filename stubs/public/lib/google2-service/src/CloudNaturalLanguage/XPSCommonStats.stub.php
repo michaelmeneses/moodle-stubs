@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSCommonStats extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $distinctValueCount;
-    /**
-     * @var string
-     */
-    public $nullValueCount;
-    /**
-     * @var string
-     */
-    public $validValueCount;
-    /**
-     * @param string $distinctValueCount
-     */
-    public function setDistinctValueCount($distinctValueCount)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSCommonStats extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $distinctValueCount;
+        /**
+         * @var string
+         */
+        public $nullValueCount;
+        /**
+         * @var string
+         */
+        public $validValueCount;
+        /**
+         * @param string $distinctValueCount
+         */
+        public function setDistinctValueCount($distinctValueCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDistinctValueCount()
+        {
+        }
+        /**
+         * @param string $nullValueCount
+         */
+        public function setNullValueCount($nullValueCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNullValueCount()
+        {
+        }
+        /**
+         * @param string $validValueCount
+         */
+        public function setValidValueCount($validValueCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValidValueCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSCommonStats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDistinctValueCount()
-    {
-    }
-    /**
-     * @param string $nullValueCount
-     */
-    public function setNullValueCount($nullValueCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNullValueCount()
-    {
-    }
-    /**
-     * @param string $validValueCount
-     */
-    public function setValidValueCount($validValueCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValidValueCount()
+    class Google_Service_CloudNaturalLanguage_XPSCommonStats extends \Google\Service\CloudNaturalLanguage\XPSCommonStats
     {
     }
 }

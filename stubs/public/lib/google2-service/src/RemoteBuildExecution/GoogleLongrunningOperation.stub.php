@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution;
-
-class GoogleLongrunningOperation extends \Google\Model
-{
-    public $done;
-    protected $errorType = GoogleRpcStatus::class;
-    protected $errorDataType = '';
-    public $metadata;
-    public $name;
-    public $response;
-    public function setDone($done)
+namespace Google\Service\RemoteBuildExecution {
+    class GoogleLongrunningOperation extends \Google\Model
     {
+        public $done;
+        protected $errorType = GoogleRpcStatus::class;
+        protected $errorDataType = '';
+        public $metadata;
+        public $name;
+        public $response;
+        public function setDone($done)
+        {
+        }
+        public function getDone()
+        {
+        }
+        /**
+         * @param GoogleRpcStatus
+         */
+        public function setError(GoogleRpcStatus $error)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus
+         */
+        public function getError()
+        {
+        }
+        public function setMetadata($metadata)
+        {
+        }
+        public function getMetadata()
+        {
+        }
+        public function setName($name)
+        {
+        }
+        public function getName()
+        {
+        }
+        public function setResponse($response)
+        {
+        }
+        public function getResponse()
+        {
+        }
     }
-    public function getDone()
-    {
-    }
+}
+namespace {
     /**
-     * @param GoogleRpcStatus
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\GoogleLongrunningOperation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setError(GoogleRpcStatus $error)
-    {
-    }
-    /**
-     * @return GoogleRpcStatus
-     */
-    public function getError()
-    {
-    }
-    public function setMetadata($metadata)
-    {
-    }
-    public function getMetadata()
-    {
-    }
-    public function setName($name)
-    {
-    }
-    public function getName()
-    {
-    }
-    public function setResponse($response)
-    {
-    }
-    public function getResponse()
+    class Google_Service_RemoteBuildExecution_GoogleLongrunningOperation extends \Google\Service\RemoteBuildExecution\GoogleLongrunningOperation
     {
     }
 }

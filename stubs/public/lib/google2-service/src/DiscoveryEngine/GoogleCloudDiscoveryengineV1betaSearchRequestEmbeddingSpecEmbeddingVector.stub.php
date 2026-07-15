@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaSearchRequestEmbeddingSpecEmbeddingVector extends \Google\Collection
-{
-    protected $collection_key = 'vector';
-    /**
-     * Embedding field path in schema.
-     *
-     * @var string
-     */
-    public $fieldPath;
-    /**
-     * Query embedding vector.
-     *
-     * @var float[]
-     */
-    public $vector;
-    /**
-     * Embedding field path in schema.
-     *
-     * @param string $fieldPath
-     */
-    public function setFieldPath($fieldPath)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaSearchRequestEmbeddingSpecEmbeddingVector extends \Google\Collection
     {
+        protected $collection_key = 'vector';
+        /**
+         * Embedding field path in schema.
+         *
+         * @var string
+         */
+        public $fieldPath;
+        /**
+         * Query embedding vector.
+         *
+         * @var float[]
+         */
+        public $vector;
+        /**
+         * Embedding field path in schema.
+         *
+         * @param string $fieldPath
+         */
+        public function setFieldPath($fieldPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFieldPath()
+        {
+        }
+        /**
+         * Query embedding vector.
+         *
+         * @param float[] $vector
+         */
+        public function setVector($vector)
+        {
+        }
+        /**
+         * @return float[]
+         */
+        public function getVector()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaSearchRequestEmbeddingSpecEmbeddingVector registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFieldPath()
-    {
-    }
-    /**
-     * Query embedding vector.
-     *
-     * @param float[] $vector
-     */
-    public function setVector($vector)
-    {
-    }
-    /**
-     * @return float[]
-     */
-    public function getVector()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaSearchRequestEmbeddingSpecEmbeddingVector extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaSearchRequestEmbeddingSpecEmbeddingVector
     {
     }
 }

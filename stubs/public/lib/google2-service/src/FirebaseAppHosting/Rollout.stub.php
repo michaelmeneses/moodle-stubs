@@ -21,319 +21,328 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseAppHosting;
-
-class Rollout extends \Google\Model
-{
-    /**
-     * The rollout is in an unknown state.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * The rollout is waiting for actuation to begin. This may be because it is
-     * waiting on another rollout to complete.
-     */
-    public const STATE_QUEUED = 'QUEUED';
-    /**
-     * The rollout is waiting for the build process to complete, which builds the
-     * code and sets up the underlying infrastructure.
-     */
-    public const STATE_PENDING_BUILD = 'PENDING_BUILD';
-    /**
-     * The rollout has started and is actively modifying traffic.
-     */
-    public const STATE_PROGRESSING = 'PROGRESSING';
-    /**
-     * The rollout has been paused due to either being manually paused or a PAUSED
-     * stage. This should be set while `paused = true`.
-     */
-    public const STATE_PAUSED = 'PAUSED';
-    /**
-     * The rollout has completed.
-     */
-    public const STATE_SUCCEEDED = 'SUCCEEDED';
-    /**
-     * The rollout has failed. See error for more information.
-     */
-    public const STATE_FAILED = 'FAILED';
-    /**
-     * The rollout has been cancelled.
-     */
-    public const STATE_CANCELLED = 'CANCELLED';
-    /**
-     * Optional. Unstructured key value map that may be set by external tools to
-     * store and arbitrary metadata. They are not queryable and should be
-     * preserved when modifying objects.
-     *
-     * @var string[]
-     */
-    public $annotations;
-    /**
-     * Required. Immutable. The name of a build that already exists. It doesn't
-     * have to be built; a rollout will wait for a build to be ready before
-     * updating traffic.
-     *
-     * @var string
-     */
-    public $build;
-    /**
-     * Output only. Time at which the rollout was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Output only. Time at which the rollout was deleted.
-     *
-     * @var string
-     */
-    public $deleteTime;
-    /**
-     * Optional. Human-readable name. 63 character limit.
-     *
-     * @var string
-     */
-    public $displayName;
-    protected $errorType = Status::class;
-    protected $errorDataType = '';
-    /**
-     * Output only. Server-computed checksum based on other values; may be sent on
-     * update or delete to ensure operation is done on expected resource.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * Optional. Unstructured key value map that can be used to organize and
-     * categorize objects.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Identifier. The resource name of the rollout. Format: `projects/{project}/l
-     * ocations/{locationId}/backends/{backendId}/rollouts/{rolloutId}`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. A field that, if true, indicates that the Rollout currently
-     * has an LRO.
-     *
-     * @var bool
-     */
-    public $reconciling;
-    /**
-     * Output only. The state of the rollout.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Output only. System-assigned, unique identifier.
-     *
-     * @var string
-     */
-    public $uid;
-    /**
-     * Output only. Time at which the rollout was last updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Optional. Unstructured key value map that may be set by external tools to
-     * store and arbitrary metadata. They are not queryable and should be
-     * preserved when modifying objects.
-     *
-     * @param string[] $annotations
-     */
-    public function setAnnotations($annotations)
+namespace Google\Service\FirebaseAppHosting {
+    class Rollout extends \Google\Model
     {
+        /**
+         * The rollout is in an unknown state.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * The rollout is waiting for actuation to begin. This may be because it is
+         * waiting on another rollout to complete.
+         */
+        public const STATE_QUEUED = 'QUEUED';
+        /**
+         * The rollout is waiting for the build process to complete, which builds the
+         * code and sets up the underlying infrastructure.
+         */
+        public const STATE_PENDING_BUILD = 'PENDING_BUILD';
+        /**
+         * The rollout has started and is actively modifying traffic.
+         */
+        public const STATE_PROGRESSING = 'PROGRESSING';
+        /**
+         * The rollout has been paused due to either being manually paused or a PAUSED
+         * stage. This should be set while `paused = true`.
+         */
+        public const STATE_PAUSED = 'PAUSED';
+        /**
+         * The rollout has completed.
+         */
+        public const STATE_SUCCEEDED = 'SUCCEEDED';
+        /**
+         * The rollout has failed. See error for more information.
+         */
+        public const STATE_FAILED = 'FAILED';
+        /**
+         * The rollout has been cancelled.
+         */
+        public const STATE_CANCELLED = 'CANCELLED';
+        /**
+         * Optional. Unstructured key value map that may be set by external tools to
+         * store and arbitrary metadata. They are not queryable and should be
+         * preserved when modifying objects.
+         *
+         * @var string[]
+         */
+        public $annotations;
+        /**
+         * Required. Immutable. The name of a build that already exists. It doesn't
+         * have to be built; a rollout will wait for a build to be ready before
+         * updating traffic.
+         *
+         * @var string
+         */
+        public $build;
+        /**
+         * Output only. Time at which the rollout was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Output only. Time at which the rollout was deleted.
+         *
+         * @var string
+         */
+        public $deleteTime;
+        /**
+         * Optional. Human-readable name. 63 character limit.
+         *
+         * @var string
+         */
+        public $displayName;
+        protected $errorType = Status::class;
+        protected $errorDataType = '';
+        /**
+         * Output only. Server-computed checksum based on other values; may be sent on
+         * update or delete to ensure operation is done on expected resource.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * Optional. Unstructured key value map that can be used to organize and
+         * categorize objects.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Identifier. The resource name of the rollout. Format: `projects/{project}/l
+         * ocations/{locationId}/backends/{backendId}/rollouts/{rolloutId}`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. A field that, if true, indicates that the Rollout currently
+         * has an LRO.
+         *
+         * @var bool
+         */
+        public $reconciling;
+        /**
+         * Output only. The state of the rollout.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Output only. System-assigned, unique identifier.
+         *
+         * @var string
+         */
+        public $uid;
+        /**
+         * Output only. Time at which the rollout was last updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Optional. Unstructured key value map that may be set by external tools to
+         * store and arbitrary metadata. They are not queryable and should be
+         * preserved when modifying objects.
+         *
+         * @param string[] $annotations
+         */
+        public function setAnnotations($annotations)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAnnotations()
+        {
+        }
+        /**
+         * Required. Immutable. The name of a build that already exists. It doesn't
+         * have to be built; a rollout will wait for a build to be ready before
+         * updating traffic.
+         *
+         * @param string $build
+         */
+        public function setBuild($build)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBuild()
+        {
+        }
+        /**
+         * Output only. Time at which the rollout was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. Time at which the rollout was deleted.
+         *
+         * @param string $deleteTime
+         */
+        public function setDeleteTime($deleteTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeleteTime()
+        {
+        }
+        /**
+         * Optional. Human-readable name. 63 character limit.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Output only. A status and (human readable) error message for the rollout,
+         * if in a `FAILED` state.
+         *
+         * @param Status $error
+         */
+        public function setError(Status $error)
+        {
+        }
+        /**
+         * @return Status
+         */
+        public function getError()
+        {
+        }
+        /**
+         * Output only. Server-computed checksum based on other values; may be sent on
+         * update or delete to ensure operation is done on expected resource.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * Optional. Unstructured key value map that can be used to organize and
+         * categorize objects.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Identifier. The resource name of the rollout. Format: `projects/{project}/l
+         * ocations/{locationId}/backends/{backendId}/rollouts/{rolloutId}`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. A field that, if true, indicates that the Rollout currently
+         * has an LRO.
+         *
+         * @param bool $reconciling
+         */
+        public function setReconciling($reconciling)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getReconciling()
+        {
+        }
+        /**
+         * Output only. The state of the rollout.
+         *
+         * Accepted values: STATE_UNSPECIFIED, QUEUED, PENDING_BUILD, PROGRESSING,
+         * PAUSED, SUCCEEDED, FAILED, CANCELLED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Output only. System-assigned, unique identifier.
+         *
+         * @param string $uid
+         */
+        public function setUid($uid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUid()
+        {
+        }
+        /**
+         * Output only. Time at which the rollout was last updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\FirebaseAppHosting\Rollout registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotations()
-    {
-    }
-    /**
-     * Required. Immutable. The name of a build that already exists. It doesn't
-     * have to be built; a rollout will wait for a build to be ready before
-     * updating traffic.
-     *
-     * @param string $build
-     */
-    public function setBuild($build)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBuild()
-    {
-    }
-    /**
-     * Output only. Time at which the rollout was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. Time at which the rollout was deleted.
-     *
-     * @param string $deleteTime
-     */
-    public function setDeleteTime($deleteTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeleteTime()
-    {
-    }
-    /**
-     * Optional. Human-readable name. 63 character limit.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Output only. A status and (human readable) error message for the rollout,
-     * if in a `FAILED` state.
-     *
-     * @param Status $error
-     */
-    public function setError(Status $error)
-    {
-    }
-    /**
-     * @return Status
-     */
-    public function getError()
-    {
-    }
-    /**
-     * Output only. Server-computed checksum based on other values; may be sent on
-     * update or delete to ensure operation is done on expected resource.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * Optional. Unstructured key value map that can be used to organize and
-     * categorize objects.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Identifier. The resource name of the rollout. Format: `projects/{project}/l
-     * ocations/{locationId}/backends/{backendId}/rollouts/{rolloutId}`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. A field that, if true, indicates that the Rollout currently
-     * has an LRO.
-     *
-     * @param bool $reconciling
-     */
-    public function setReconciling($reconciling)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getReconciling()
-    {
-    }
-    /**
-     * Output only. The state of the rollout.
-     *
-     * Accepted values: STATE_UNSPECIFIED, QUEUED, PENDING_BUILD, PROGRESSING,
-     * PAUSED, SUCCEEDED, FAILED, CANCELLED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Output only. System-assigned, unique identifier.
-     *
-     * @param string $uid
-     */
-    public function setUid($uid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUid()
-    {
-    }
-    /**
-     * Output only. Time at which the rollout was last updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_FirebaseAppHosting_Rollout extends \Google\Service\FirebaseAppHosting\Rollout
     {
     }
 }

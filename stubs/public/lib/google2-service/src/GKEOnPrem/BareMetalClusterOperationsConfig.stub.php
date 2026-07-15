@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class BareMetalClusterOperationsConfig extends \Google\Model
-{
-    /**
-     * Whether collection of application logs/metrics should be enabled (in
-     * addition to system logs/metrics).
-     *
-     * @var bool
-     */
-    public $enableApplicationLogs;
-    /**
-     * Whether collection of application logs/metrics should be enabled (in
-     * addition to system logs/metrics).
-     *
-     * @param bool $enableApplicationLogs
-     */
-    public function setEnableApplicationLogs($enableApplicationLogs)
+namespace Google\Service\GKEOnPrem {
+    class BareMetalClusterOperationsConfig extends \Google\Model
     {
+        /**
+         * Whether collection of application logs/metrics should be enabled (in
+         * addition to system logs/metrics).
+         *
+         * @var bool
+         */
+        public $enableApplicationLogs;
+        /**
+         * Whether collection of application logs/metrics should be enabled (in
+         * addition to system logs/metrics).
+         *
+         * @param bool $enableApplicationLogs
+         */
+        public function setEnableApplicationLogs($enableApplicationLogs)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableApplicationLogs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\GKEOnPrem\BareMetalClusterOperationsConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnableApplicationLogs()
+    class Google_Service_GKEOnPrem_BareMetalClusterOperationsConfig extends \Google\Service\GKEOnPrem\BareMetalClusterOperationsConfig
     {
     }
 }

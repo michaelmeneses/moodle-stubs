@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BusinessProfilePerformance;
-
-class MultiDailyMetricTimeSeries extends \Google\Collection
-{
-    protected $collection_key = 'dailyMetricTimeSeries';
-    protected $dailyMetricTimeSeriesType = DailyMetricTimeSeries::class;
-    protected $dailyMetricTimeSeriesDataType = 'array';
-    /**
-     * List of DailyMetric-TimeSeries pairs.
-     *
-     * @param DailyMetricTimeSeries[] $dailyMetricTimeSeries
-     */
-    public function setDailyMetricTimeSeries($dailyMetricTimeSeries)
+namespace Google\Service\BusinessProfilePerformance {
+    class MultiDailyMetricTimeSeries extends \Google\Collection
     {
+        protected $collection_key = 'dailyMetricTimeSeries';
+        protected $dailyMetricTimeSeriesType = DailyMetricTimeSeries::class;
+        protected $dailyMetricTimeSeriesDataType = 'array';
+        /**
+         * List of DailyMetric-TimeSeries pairs.
+         *
+         * @param DailyMetricTimeSeries[] $dailyMetricTimeSeries
+         */
+        public function setDailyMetricTimeSeries($dailyMetricTimeSeries)
+        {
+        }
+        /**
+         * @return DailyMetricTimeSeries[]
+         */
+        public function getDailyMetricTimeSeries()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DailyMetricTimeSeries[]
+     * Runtime class alias of \Google\Service\BusinessProfilePerformance\MultiDailyMetricTimeSeries registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDailyMetricTimeSeries()
+    class Google_Service_BusinessProfilePerformance_MultiDailyMetricTimeSeries extends \Google\Service\BusinessProfilePerformance\MultiDailyMetricTimeSeries
     {
     }
 }

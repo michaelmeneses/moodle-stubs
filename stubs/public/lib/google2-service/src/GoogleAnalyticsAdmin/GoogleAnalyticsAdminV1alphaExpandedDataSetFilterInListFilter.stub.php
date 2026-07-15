@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaExpandedDataSetFilterInListFilter extends \Google\Collection
-{
-    protected $collection_key = 'values';
-    /**
-     * @var bool
-     */
-    public $caseSensitive;
-    /**
-     * @var string[]
-     */
-    public $values;
-    /**
-     * @param bool
-     */
-    public function setCaseSensitive($caseSensitive)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaExpandedDataSetFilterInListFilter extends \Google\Collection
     {
+        protected $collection_key = 'values';
+        /**
+         * @var bool
+         */
+        public $caseSensitive;
+        /**
+         * @var string[]
+         */
+        public $values;
+        /**
+         * @param bool
+         */
+        public function setCaseSensitive($caseSensitive)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCaseSensitive()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaExpandedDataSetFilterInListFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCaseSensitive()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setValues($values)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getValues()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaExpandedDataSetFilterInListFilter extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaExpandedDataSetFilterInListFilter
     {
     }
 }

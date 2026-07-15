@@ -21,160 +21,176 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigateway\Resource;
-
-/**
- * The "configs" collection of methods.
- * Typical usage is:
- *  <code>
- *   $apigatewayService = new Google\Service\Apigateway(...);
- *   $configs = $apigatewayService->projects_locations_apis_configs;
- *  </code>
- */
-class ProjectsLocationsApisConfigs extends \Google\Service\Resource
-{
+namespace Google\Service\Apigateway\Resource {
+    use Google\Service\Apigateway\ApigatewayApiConfig;
+    use Google\Service\Apigateway\ApigatewayListApiConfigsResponse;
+    use Google\Service\Apigateway\ApigatewayOperation;
+    use Google\Service\Apigateway\ApigatewayPolicy;
+    use Google\Service\Apigateway\ApigatewaySetIamPolicyRequest;
+    use Google\Service\Apigateway\ApigatewayTestIamPermissionsRequest;
+    use Google\Service\Apigateway\ApigatewayTestIamPermissionsResponse;
     /**
-     * Creates a new ApiConfig in a given project and location. (configs.create)
-     *
-     * @param string $parent Required. Parent resource of the API Config, of the
-     * form: `projects/locations/global/apis`
-     * @param ApigatewayApiConfig $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string apiConfigId Required. Identifier to assign to the API
-     * Config. Must be unique within scope of the parent resource.
-     * @return ApigatewayOperation
-     * @throws \Google\Service\Exception
+     * The "configs" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $apigatewayService = new Google\Service\Apigateway(...);
+     *   $configs = $apigatewayService->projects_locations_apis_configs;
+     *  </code>
      */
-    public function create($parent, ApigatewayApiConfig $postBody, $optParams = [])
+    class ProjectsLocationsApisConfigs extends \Google\Service\Resource
     {
+        /**
+         * Creates a new ApiConfig in a given project and location. (configs.create)
+         *
+         * @param string $parent Required. Parent resource of the API Config, of the
+         * form: `projects/locations/global/apis`
+         * @param ApigatewayApiConfig $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string apiConfigId Required. Identifier to assign to the API
+         * Config. Must be unique within scope of the parent resource.
+         * @return ApigatewayOperation
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, ApigatewayApiConfig $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a single ApiConfig. (configs.delete)
+         *
+         * @param string $name Required. Resource name of the form:
+         * `projects/locations/global/apis/configs`
+         * @param array $optParams Optional parameters.
+         * @return ApigatewayOperation
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets details of a single ApiConfig. (configs.get)
+         *
+         * @param string $name Required. Resource name of the form:
+         * `projects/locations/global/apis/configs`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string view Specifies which fields of the API Config are returned
+         * in the response. Defaults to `BASIC` view.
+         * @return ApigatewayApiConfig
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets the access control policy for a resource. Returns an empty policy if the
+         * resource exists and does not have a policy set. (configs.getIamPolicy)
+         *
+         * @param string $resource REQUIRED: The resource for which the policy is being
+         * requested. See [Resource
+         * names](https://cloud.google.com/apis/design/resource_names) for the
+         * appropriate value for this field.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int options.requestedPolicyVersion Optional. The maximum policy
+         * version that will be used to format the policy. Valid values are 0, 1, and 3.
+         * Requests specifying an invalid value will be rejected. Requests for policies
+         * with any conditional role bindings must specify version 3. Policies with no
+         * conditional role bindings may specify any valid value or leave the field
+         * unset. The policy in the response might use the policy version that you
+         * specified, or it might use a lower policy version. For example, if you
+         * specify version 3, but the policy has no conditional role bindings, the
+         * response uses version 1. To learn which resources support conditions in their
+         * IAM policies, see the [IAM
+         * documentation](https://cloud.google.com/iam/help/conditions/resource-
+         * policies).
+         * @return ApigatewayPolicy
+         * @throws \Google\Service\Exception
+         */
+        public function getIamPolicy($resource, $optParams = [])
+        {
+        }
+        /**
+         * Lists ApiConfigs in a given project and location.
+         * (configs.listProjectsLocationsApisConfigs)
+         *
+         * @param string $parent Required. Parent resource of the API Config, of the
+         * form: `projects/locations/global/apis`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Filter.
+         * @opt_param string orderBy Order by parameters.
+         * @opt_param int pageSize Page size.
+         * @opt_param string pageToken Page token.
+         * @return ApigatewayListApiConfigsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsApisConfigs($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates the parameters of a single ApiConfig. (configs.patch)
+         *
+         * @param string $name Output only. Resource name of the API Config. Format:
+         * projects/{project}/locations/global/apis/{api}/configs/{api_config}
+         * @param ApigatewayApiConfig $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Field mask is used to specify the fields to be
+         * overwritten in the ApiConfig resource by the update. The fields specified in
+         * the update_mask are relative to the resource, not the full request. A field
+         * will be overwritten if it is in the mask. If the user does not provide a mask
+         * then all fields will be overwritten.
+         * @return ApigatewayOperation
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, ApigatewayApiConfig $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Sets the access control policy on the specified resource. Replaces any
+         * existing policy. Can return `NOT_FOUND`, `INVALID_ARGUMENT`, and
+         * `PERMISSION_DENIED` errors. (configs.setIamPolicy)
+         *
+         * @param string $resource REQUIRED: The resource for which the policy is being
+         * specified. See [Resource
+         * names](https://cloud.google.com/apis/design/resource_names) for the
+         * appropriate value for this field.
+         * @param ApigatewaySetIamPolicyRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return ApigatewayPolicy
+         * @throws \Google\Service\Exception
+         */
+        public function setIamPolicy($resource, ApigatewaySetIamPolicyRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Returns permissions that a caller has on the specified resource. If the
+         * resource does not exist, this will return an empty set of permissions, not a
+         * `NOT_FOUND` error. Note: This operation is designed to be used for building
+         * permission-aware UIs and command-line tools, not for authorization checking.
+         * This operation may "fail open" without warning. (configs.testIamPermissions)
+         *
+         * @param string $resource REQUIRED: The resource for which the policy detail is
+         * being requested. See [Resource
+         * names](https://cloud.google.com/apis/design/resource_names) for the
+         * appropriate value for this field.
+         * @param ApigatewayTestIamPermissionsRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return ApigatewayTestIamPermissionsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function testIamPermissions($resource, ApigatewayTestIamPermissionsRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a single ApiConfig. (configs.delete)
-     *
-     * @param string $name Required. Resource name of the form:
-     * `projects/locations/global/apis/configs`
-     * @param array $optParams Optional parameters.
-     * @return ApigatewayOperation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Apigateway\Resource\ProjectsLocationsApisConfigs registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets details of a single ApiConfig. (configs.get)
-     *
-     * @param string $name Required. Resource name of the form:
-     * `projects/locations/global/apis/configs`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string view Specifies which fields of the API Config are returned
-     * in the response. Defaults to `BASIC` view.
-     * @return ApigatewayApiConfig
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets the access control policy for a resource. Returns an empty policy if the
-     * resource exists and does not have a policy set. (configs.getIamPolicy)
-     *
-     * @param string $resource REQUIRED: The resource for which the policy is being
-     * requested. See [Resource
-     * names](https://cloud.google.com/apis/design/resource_names) for the
-     * appropriate value for this field.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int options.requestedPolicyVersion Optional. The maximum policy
-     * version that will be used to format the policy. Valid values are 0, 1, and 3.
-     * Requests specifying an invalid value will be rejected. Requests for policies
-     * with any conditional role bindings must specify version 3. Policies with no
-     * conditional role bindings may specify any valid value or leave the field
-     * unset. The policy in the response might use the policy version that you
-     * specified, or it might use a lower policy version. For example, if you
-     * specify version 3, but the policy has no conditional role bindings, the
-     * response uses version 1. To learn which resources support conditions in their
-     * IAM policies, see the [IAM
-     * documentation](https://cloud.google.com/iam/help/conditions/resource-
-     * policies).
-     * @return ApigatewayPolicy
-     * @throws \Google\Service\Exception
-     */
-    public function getIamPolicy($resource, $optParams = [])
-    {
-    }
-    /**
-     * Lists ApiConfigs in a given project and location.
-     * (configs.listProjectsLocationsApisConfigs)
-     *
-     * @param string $parent Required. Parent resource of the API Config, of the
-     * form: `projects/locations/global/apis`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Filter.
-     * @opt_param string orderBy Order by parameters.
-     * @opt_param int pageSize Page size.
-     * @opt_param string pageToken Page token.
-     * @return ApigatewayListApiConfigsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsApisConfigs($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates the parameters of a single ApiConfig. (configs.patch)
-     *
-     * @param string $name Output only. Resource name of the API Config. Format:
-     * projects/{project}/locations/global/apis/{api}/configs/{api_config}
-     * @param ApigatewayApiConfig $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Field mask is used to specify the fields to be
-     * overwritten in the ApiConfig resource by the update. The fields specified in
-     * the update_mask are relative to the resource, not the full request. A field
-     * will be overwritten if it is in the mask. If the user does not provide a mask
-     * then all fields will be overwritten.
-     * @return ApigatewayOperation
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, ApigatewayApiConfig $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Sets the access control policy on the specified resource. Replaces any
-     * existing policy. Can return `NOT_FOUND`, `INVALID_ARGUMENT`, and
-     * `PERMISSION_DENIED` errors. (configs.setIamPolicy)
-     *
-     * @param string $resource REQUIRED: The resource for which the policy is being
-     * specified. See [Resource
-     * names](https://cloud.google.com/apis/design/resource_names) for the
-     * appropriate value for this field.
-     * @param ApigatewaySetIamPolicyRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return ApigatewayPolicy
-     * @throws \Google\Service\Exception
-     */
-    public function setIamPolicy($resource, ApigatewaySetIamPolicyRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Returns permissions that a caller has on the specified resource. If the
-     * resource does not exist, this will return an empty set of permissions, not a
-     * `NOT_FOUND` error. Note: This operation is designed to be used for building
-     * permission-aware UIs and command-line tools, not for authorization checking.
-     * This operation may "fail open" without warning. (configs.testIamPermissions)
-     *
-     * @param string $resource REQUIRED: The resource for which the policy detail is
-     * being requested. See [Resource
-     * names](https://cloud.google.com/apis/design/resource_names) for the
-     * appropriate value for this field.
-     * @param ApigatewayTestIamPermissionsRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return ApigatewayTestIamPermissionsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function testIamPermissions($resource, ApigatewayTestIamPermissionsRequest $postBody, $optParams = [])
+    class Google_Service_Apigateway_Resource_ProjectsLocationsApisConfigs extends \Google\Service\Apigateway\Resource\ProjectsLocationsApisConfigs
     {
     }
 }

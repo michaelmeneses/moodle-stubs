@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class AddBitbucketServerConnectedRepositoryRequest extends \Google\Model
-{
-    protected $connectedRepositoryType = BitbucketServerRepositoryId::class;
-    protected $connectedRepositoryDataType = '';
-    /**
-     * @param BitbucketServerRepositoryId
-     */
-    public function setConnectedRepository(BitbucketServerRepositoryId $connectedRepository)
+namespace Google\Service\CloudBuild {
+    class AddBitbucketServerConnectedRepositoryRequest extends \Google\Model
     {
+        protected $connectedRepositoryType = BitbucketServerRepositoryId::class;
+        protected $connectedRepositoryDataType = '';
+        /**
+         * @param BitbucketServerRepositoryId
+         */
+        public function setConnectedRepository(BitbucketServerRepositoryId $connectedRepository)
+        {
+        }
+        /**
+         * @return BitbucketServerRepositoryId
+         */
+        public function getConnectedRepository()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BitbucketServerRepositoryId
+     * Runtime class alias of \Google\Service\CloudBuild\AddBitbucketServerConnectedRepositoryRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConnectedRepository()
+    class Google_Service_CloudBuild_AddBitbucketServerConnectedRepositoryRequest extends \Google\Service\CloudBuild\AddBitbucketServerConnectedRepositoryRequest
     {
     }
 }

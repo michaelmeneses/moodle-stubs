@@ -8,6 +8,7 @@
  */
 namespace Aws\RedshiftServerless;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Redshift Serverless** service.
  * @method \Aws\Result convertRecoveryPointToSnapshot(array $args = [])

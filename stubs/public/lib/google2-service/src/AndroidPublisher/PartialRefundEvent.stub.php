@@ -21,98 +21,107 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class PartialRefundEvent extends \Google\Model
-{
-    /**
-     * State unspecified. This value is not used.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * The partial refund has been created, but not yet processed.
-     */
-    public const STATE_PENDING = 'PENDING';
-    /**
-     * The partial refund was processed successfully.
-     */
-    public const STATE_PROCESSED_SUCCESSFULLY = 'PROCESSED_SUCCESSFULLY';
-    /**
-     * The time when the partial refund was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * The time when the partial refund was processed.
-     *
-     * @var string
-     */
-    public $processTime;
-    protected $refundDetailsType = RefundDetails::class;
-    protected $refundDetailsDataType = '';
-    /**
-     * The state of the partial refund.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * The time when the partial refund was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\AndroidPublisher {
+    class PartialRefundEvent extends \Google\Model
     {
+        /**
+         * State unspecified. This value is not used.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * The partial refund has been created, but not yet processed.
+         */
+        public const STATE_PENDING = 'PENDING';
+        /**
+         * The partial refund was processed successfully.
+         */
+        public const STATE_PROCESSED_SUCCESSFULLY = 'PROCESSED_SUCCESSFULLY';
+        /**
+         * The time when the partial refund was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * The time when the partial refund was processed.
+         *
+         * @var string
+         */
+        public $processTime;
+        protected $refundDetailsType = RefundDetails::class;
+        protected $refundDetailsDataType = '';
+        /**
+         * The state of the partial refund.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * The time when the partial refund was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * The time when the partial refund was processed.
+         *
+         * @param string $processTime
+         */
+        public function setProcessTime($processTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProcessTime()
+        {
+        }
+        /**
+         * Details for the partial refund.
+         *
+         * @param RefundDetails $refundDetails
+         */
+        public function setRefundDetails(RefundDetails $refundDetails)
+        {
+        }
+        /**
+         * @return RefundDetails
+         */
+        public function getRefundDetails()
+        {
+        }
+        /**
+         * The state of the partial refund.
+         *
+         * Accepted values: STATE_UNSPECIFIED, PENDING, PROCESSED_SUCCESSFULLY
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidPublisher\PartialRefundEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * The time when the partial refund was processed.
-     *
-     * @param string $processTime
-     */
-    public function setProcessTime($processTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProcessTime()
-    {
-    }
-    /**
-     * Details for the partial refund.
-     *
-     * @param RefundDetails $refundDetails
-     */
-    public function setRefundDetails(RefundDetails $refundDetails)
-    {
-    }
-    /**
-     * @return RefundDetails
-     */
-    public function getRefundDetails()
-    {
-    }
-    /**
-     * The state of the partial refund.
-     *
-     * Accepted values: STATE_UNSPECIFIED, PENDING, PROCESSED_SUCCESSFULLY
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
+    class Google_Service_AndroidPublisher_PartialRefundEvent extends \Google\Service\AndroidPublisher\PartialRefundEvent
     {
     }
 }

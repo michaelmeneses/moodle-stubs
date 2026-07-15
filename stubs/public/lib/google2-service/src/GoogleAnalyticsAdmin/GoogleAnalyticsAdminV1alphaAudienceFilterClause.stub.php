@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaAudienceFilterClause extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $clauseType;
-    protected $sequenceFilterType = GoogleAnalyticsAdminV1alphaAudienceSequenceFilter::class;
-    protected $sequenceFilterDataType = '';
-    protected $simpleFilterType = GoogleAnalyticsAdminV1alphaAudienceSimpleFilter::class;
-    protected $simpleFilterDataType = '';
-    /**
-     * @param string
-     */
-    public function setClauseType($clauseType)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaAudienceFilterClause extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $clauseType;
+        protected $sequenceFilterType = GoogleAnalyticsAdminV1alphaAudienceSequenceFilter::class;
+        protected $sequenceFilterDataType = '';
+        protected $simpleFilterType = GoogleAnalyticsAdminV1alphaAudienceSimpleFilter::class;
+        protected $simpleFilterDataType = '';
+        /**
+         * @param string
+         */
+        public function setClauseType($clauseType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClauseType()
+        {
+        }
+        /**
+         * @param GoogleAnalyticsAdminV1alphaAudienceSequenceFilter
+         */
+        public function setSequenceFilter(GoogleAnalyticsAdminV1alphaAudienceSequenceFilter $sequenceFilter)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaAudienceSequenceFilter
+         */
+        public function getSequenceFilter()
+        {
+        }
+        /**
+         * @param GoogleAnalyticsAdminV1alphaAudienceSimpleFilter
+         */
+        public function setSimpleFilter(GoogleAnalyticsAdminV1alphaAudienceSimpleFilter $simpleFilter)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaAudienceSimpleFilter
+         */
+        public function getSimpleFilter()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaAudienceFilterClause registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClauseType()
-    {
-    }
-    /**
-     * @param GoogleAnalyticsAdminV1alphaAudienceSequenceFilter
-     */
-    public function setSequenceFilter(GoogleAnalyticsAdminV1alphaAudienceSequenceFilter $sequenceFilter)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1alphaAudienceSequenceFilter
-     */
-    public function getSequenceFilter()
-    {
-    }
-    /**
-     * @param GoogleAnalyticsAdminV1alphaAudienceSimpleFilter
-     */
-    public function setSimpleFilter(GoogleAnalyticsAdminV1alphaAudienceSimpleFilter $simpleFilter)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1alphaAudienceSimpleFilter
-     */
-    public function getSimpleFilter()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaAudienceFilterClause extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaAudienceFilterClause
     {
     }
 }

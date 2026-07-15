@@ -21,107 +21,119 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin\Resource;
-
-/**
- * The "databases" collection of methods.
- * Typical usage is:
- *  <code>
- *   $sqladminService = new Google\Service\SQLAdmin(...);
- *   $databases = $sqladminService->databases;
- *  </code>
- */
-class Databases extends \Google\Service\Resource
-{
+namespace Google\Service\SQLAdmin\Resource {
+    use Google\Service\SQLAdmin\Database;
+    use Google\Service\SQLAdmin\DatabasesListResponse;
+    use Google\Service\SQLAdmin\Operation;
     /**
-     * Deletes a database from a Cloud SQL instance. (databases.delete)
-     *
-     * @param string $project Project ID of the project that contains the instance.
-     * @param string $instance Database instance ID. This does not include the
-     * project ID.
-     * @param string $database Name of the database to be deleted in the instance.
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * The "databases" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $sqladminService = new Google\Service\SQLAdmin(...);
+     *   $databases = $sqladminService->databases;
+     *  </code>
      */
-    public function delete($project, $instance, $database, $optParams = [])
+    class Databases extends \Google\Service\Resource
     {
+        /**
+         * Deletes a database from a Cloud SQL instance. (databases.delete)
+         *
+         * @param string $project Project ID of the project that contains the instance.
+         * @param string $instance Database instance ID. This does not include the
+         * project ID.
+         * @param string $database Name of the database to be deleted in the instance.
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function delete($project, $instance, $database, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves a resource containing information about a database inside a Cloud
+         * SQL instance. (databases.get)
+         *
+         * @param string $project Project ID of the project that contains the instance.
+         * @param string $instance Database instance ID. This does not include the
+         * project ID.
+         * @param string $database Name of the database in the instance.
+         * @param array $optParams Optional parameters.
+         * @return Database
+         * @throws \Google\Service\Exception
+         */
+        public function get($project, $instance, $database, $optParams = [])
+        {
+        }
+        /**
+         * Inserts a resource containing information about a database inside a Cloud SQL
+         * instance. **Note:** You can't modify the default character set and collation.
+         * (databases.insert)
+         *
+         * @param string $project Project ID of the project that contains the instance.
+         * @param string $instance Database instance ID. This does not include the
+         * project ID.
+         * @param Database $postBody
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function insert($project, $instance, Database $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Lists databases in the specified Cloud SQL instance.
+         * (databases.listDatabases)
+         *
+         * @param string $project Project ID of the project that contains the instance.
+         * @param string $instance Cloud SQL instance ID. This does not include the
+         * project ID.
+         * @param array $optParams Optional parameters.
+         * @return DatabasesListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listDatabases($project, $instance, $optParams = [])
+        {
+        }
+        /**
+         * Partially updates a resource containing information about a database inside a
+         * Cloud SQL instance. This method supports patch semantics. (databases.patch)
+         *
+         * @param string $project Project ID of the project that contains the instance.
+         * @param string $instance Database instance ID. This does not include the
+         * project ID.
+         * @param string $database Name of the database to be updated in the instance.
+         * @param Database $postBody
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function patch($project, $instance, $database, Database $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Updates a resource containing information about a database inside a Cloud SQL
+         * instance. (databases.update)
+         *
+         * @param string $project Project ID of the project that contains the instance.
+         * @param string $instance Database instance ID. This does not include the
+         * project ID.
+         * @param string $database Name of the database to be updated in the instance.
+         * @param Database $postBody
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function update($project, $instance, $database, Database $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Retrieves a resource containing information about a database inside a Cloud
-     * SQL instance. (databases.get)
-     *
-     * @param string $project Project ID of the project that contains the instance.
-     * @param string $instance Database instance ID. This does not include the
-     * project ID.
-     * @param string $database Name of the database in the instance.
-     * @param array $optParams Optional parameters.
-     * @return Database
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\SQLAdmin\Resource\Databases registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($project, $instance, $database, $optParams = [])
-    {
-    }
-    /**
-     * Inserts a resource containing information about a database inside a Cloud SQL
-     * instance. **Note:** You can't modify the default character set and collation.
-     * (databases.insert)
-     *
-     * @param string $project Project ID of the project that contains the instance.
-     * @param string $instance Database instance ID. This does not include the
-     * project ID.
-     * @param Database $postBody
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
-     */
-    public function insert($project, $instance, Database $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Lists databases in the specified Cloud SQL instance.
-     * (databases.listDatabases)
-     *
-     * @param string $project Project ID of the project that contains the instance.
-     * @param string $instance Cloud SQL instance ID. This does not include the
-     * project ID.
-     * @param array $optParams Optional parameters.
-     * @return DatabasesListResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listDatabases($project, $instance, $optParams = [])
-    {
-    }
-    /**
-     * Partially updates a resource containing information about a database inside a
-     * Cloud SQL instance. This method supports patch semantics. (databases.patch)
-     *
-     * @param string $project Project ID of the project that contains the instance.
-     * @param string $instance Database instance ID. This does not include the
-     * project ID.
-     * @param string $database Name of the database to be updated in the instance.
-     * @param Database $postBody
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
-     */
-    public function patch($project, $instance, $database, Database $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Updates a resource containing information about a database inside a Cloud SQL
-     * instance. (databases.update)
-     *
-     * @param string $project Project ID of the project that contains the instance.
-     * @param string $instance Database instance ID. This does not include the
-     * project ID.
-     * @param string $database Name of the database to be updated in the instance.
-     * @param Database $postBody
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
-     */
-    public function update($project, $instance, $database, Database $postBody, $optParams = [])
+    class Google_Service_SQLAdmin_Resource_Databases extends \Google\Service\SQLAdmin\Resource\Databases
     {
     }
 }

@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1beta1GcsFilesetSpec extends \Google\Collection
-{
-    protected $collection_key = 'sampleGcsFileSpecs';
-    public $filePatterns;
-    protected $sampleGcsFileSpecsType = GoogleCloudDatacatalogV1beta1GcsFileSpec::class;
-    protected $sampleGcsFileSpecsDataType = 'array';
-    public function setFilePatterns($filePatterns)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1beta1GcsFilesetSpec extends \Google\Collection
     {
+        protected $collection_key = 'sampleGcsFileSpecs';
+        public $filePatterns;
+        protected $sampleGcsFileSpecsType = GoogleCloudDatacatalogV1beta1GcsFileSpec::class;
+        protected $sampleGcsFileSpecsDataType = 'array';
+        public function setFilePatterns($filePatterns)
+        {
+        }
+        public function getFilePatterns()
+        {
+        }
+        /**
+         * @param GoogleCloudDatacatalogV1beta1GcsFileSpec[]
+         */
+        public function setSampleGcsFileSpecs($sampleGcsFileSpecs)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1beta1GcsFileSpec[]
+         */
+        public function getSampleGcsFileSpecs()
+        {
+        }
     }
-    public function getFilePatterns()
-    {
-    }
+}
+namespace {
     /**
-     * @param GoogleCloudDatacatalogV1beta1GcsFileSpec[]
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1beta1GcsFilesetSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setSampleGcsFileSpecs($sampleGcsFileSpecs)
-    {
-    }
-    /**
-     * @return GoogleCloudDatacatalogV1beta1GcsFileSpec[]
-     */
-    public function getSampleGcsFileSpecs()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1beta1GcsFilesetSpec extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1beta1GcsFilesetSpec
     {
     }
 }

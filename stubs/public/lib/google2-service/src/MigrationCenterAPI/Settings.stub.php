@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class Settings extends \Google\Model
-{
-    /**
-     * Disable Cloud Logging for the Migration Center API. Users are billed for
-     * the logs.
-     *
-     * @var bool
-     */
-    public $disableCloudLogging;
-    /**
-     * Output only. The name of the resource.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The preference set used by default for a project.
-     *
-     * @var string
-     */
-    public $preferenceSet;
-    /**
-     * Disable Cloud Logging for the Migration Center API. Users are billed for
-     * the logs.
-     *
-     * @param bool $disableCloudLogging
-     */
-    public function setDisableCloudLogging($disableCloudLogging)
+namespace Google\Service\MigrationCenterAPI {
+    class Settings extends \Google\Model
     {
+        /**
+         * Disable Cloud Logging for the Migration Center API. Users are billed for
+         * the logs.
+         *
+         * @var bool
+         */
+        public $disableCloudLogging;
+        /**
+         * Output only. The name of the resource.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The preference set used by default for a project.
+         *
+         * @var string
+         */
+        public $preferenceSet;
+        /**
+         * Disable Cloud Logging for the Migration Center API. Users are billed for
+         * the logs.
+         *
+         * @param bool $disableCloudLogging
+         */
+        public function setDisableCloudLogging($disableCloudLogging)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisableCloudLogging()
+        {
+        }
+        /**
+         * Output only. The name of the resource.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The preference set used by default for a project.
+         *
+         * @param string $preferenceSet
+         */
+        public function setPreferenceSet($preferenceSet)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPreferenceSet()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\Settings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisableCloudLogging()
-    {
-    }
-    /**
-     * Output only. The name of the resource.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The preference set used by default for a project.
-     *
-     * @param string $preferenceSet
-     */
-    public function setPreferenceSet($preferenceSet)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPreferenceSet()
+    class Google_Service_MigrationCenterAPI_Settings extends \Google\Service\MigrationCenterAPI\Settings
     {
     }
 }

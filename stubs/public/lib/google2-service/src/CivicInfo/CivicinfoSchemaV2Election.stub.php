@@ -21,115 +21,124 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CivicInfo;
-
-class CivicinfoSchemaV2Election extends \Google\Model
-{
-    public const SHAPE_LOOKUP_BEHAVIOR_shapeLookupDefault = 'shapeLookupDefault';
-    public const SHAPE_LOOKUP_BEHAVIOR_shapeLookupDisabled = 'shapeLookupDisabled';
-    public const SHAPE_LOOKUP_BEHAVIOR_shapeLookupEnabled = 'shapeLookupEnabled';
-    /**
-     * Day of the election in YYYY-MM-DD format.
-     *
-     * @var string
-     */
-    public $electionDay;
-    /**
-     * The unique ID of this election.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * A displayable name for the election.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The political division of the election. Represented as an OCD Division ID.
-     * Voters within these political jurisdictions are covered by this election.
-     * This is typically a state such as ocd-division/country:us/state:ca or for
-     * the midterms or general election the entire US (i.e. ocd-
-     * division/country:us).
-     *
-     * @var string
-     */
-    public $ocdDivisionId;
-    /**
-     * @var string
-     */
-    public $shapeLookupBehavior;
-    /**
-     * Day of the election in YYYY-MM-DD format.
-     *
-     * @param string $electionDay
-     */
-    public function setElectionDay($electionDay)
+namespace Google\Service\CivicInfo {
+    class CivicinfoSchemaV2Election extends \Google\Model
     {
+        public const SHAPE_LOOKUP_BEHAVIOR_shapeLookupDefault = 'shapeLookupDefault';
+        public const SHAPE_LOOKUP_BEHAVIOR_shapeLookupDisabled = 'shapeLookupDisabled';
+        public const SHAPE_LOOKUP_BEHAVIOR_shapeLookupEnabled = 'shapeLookupEnabled';
+        /**
+         * Day of the election in YYYY-MM-DD format.
+         *
+         * @var string
+         */
+        public $electionDay;
+        /**
+         * The unique ID of this election.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * A displayable name for the election.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The political division of the election. Represented as an OCD Division ID.
+         * Voters within these political jurisdictions are covered by this election.
+         * This is typically a state such as ocd-division/country:us/state:ca or for
+         * the midterms or general election the entire US (i.e. ocd-
+         * division/country:us).
+         *
+         * @var string
+         */
+        public $ocdDivisionId;
+        /**
+         * @var string
+         */
+        public $shapeLookupBehavior;
+        /**
+         * Day of the election in YYYY-MM-DD format.
+         *
+         * @param string $electionDay
+         */
+        public function setElectionDay($electionDay)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getElectionDay()
+        {
+        }
+        /**
+         * The unique ID of this election.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * A displayable name for the election.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The political division of the election. Represented as an OCD Division ID.
+         * Voters within these political jurisdictions are covered by this election.
+         * This is typically a state such as ocd-division/country:us/state:ca or for
+         * the midterms or general election the entire US (i.e. ocd-
+         * division/country:us).
+         *
+         * @param string $ocdDivisionId
+         */
+        public function setOcdDivisionId($ocdDivisionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOcdDivisionId()
+        {
+        }
+        /**
+         * @param self::SHAPE_LOOKUP_BEHAVIOR_* $shapeLookupBehavior
+         */
+        public function setShapeLookupBehavior($shapeLookupBehavior)
+        {
+        }
+        /**
+         * @return self::SHAPE_LOOKUP_BEHAVIOR_*
+         */
+        public function getShapeLookupBehavior()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CivicInfo\CivicinfoSchemaV2Election registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getElectionDay()
-    {
-    }
-    /**
-     * The unique ID of this election.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * A displayable name for the election.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The political division of the election. Represented as an OCD Division ID.
-     * Voters within these political jurisdictions are covered by this election.
-     * This is typically a state such as ocd-division/country:us/state:ca or for
-     * the midterms or general election the entire US (i.e. ocd-
-     * division/country:us).
-     *
-     * @param string $ocdDivisionId
-     */
-    public function setOcdDivisionId($ocdDivisionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOcdDivisionId()
-    {
-    }
-    /**
-     * @param self::SHAPE_LOOKUP_BEHAVIOR_* $shapeLookupBehavior
-     */
-    public function setShapeLookupBehavior($shapeLookupBehavior)
-    {
-    }
-    /**
-     * @return self::SHAPE_LOOKUP_BEHAVIOR_*
-     */
-    public function getShapeLookupBehavior()
+    class Google_Service_CivicInfo_CivicinfoSchemaV2Election extends \Google\Service\CivicInfo\CivicinfoSchemaV2Election
     {
     }
 }

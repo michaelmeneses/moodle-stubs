@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1RagVectorDbConfigRagManagedDbANN extends \Google\Model
-{
-    /**
-     * Number of leaf nodes in the tree-based structure. Each leaf node contains
-     * groups of closely related vectors along with their corresponding centroid.
-     * Recommended value is 10 * sqrt(num of RagFiles in your RagCorpus). Default
-     * value is 500.
-     *
-     * @var int
-     */
-    public $leafCount;
-    /**
-     * The depth of the tree-based structure. Only depth values of 2 and 3 are
-     * supported. Recommended value is 2 if you have if you have O(10K) files in
-     * the RagCorpus and set this to 3 if more than that. Default value is 2.
-     *
-     * @var int
-     */
-    public $treeDepth;
-    /**
-     * Number of leaf nodes in the tree-based structure. Each leaf node contains
-     * groups of closely related vectors along with their corresponding centroid.
-     * Recommended value is 10 * sqrt(num of RagFiles in your RagCorpus). Default
-     * value is 500.
-     *
-     * @param int $leafCount
-     */
-    public function setLeafCount($leafCount)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1RagVectorDbConfigRagManagedDbANN extends \Google\Model
     {
+        /**
+         * Number of leaf nodes in the tree-based structure. Each leaf node contains
+         * groups of closely related vectors along with their corresponding centroid.
+         * Recommended value is 10 * sqrt(num of RagFiles in your RagCorpus). Default
+         * value is 500.
+         *
+         * @var int
+         */
+        public $leafCount;
+        /**
+         * The depth of the tree-based structure. Only depth values of 2 and 3 are
+         * supported. Recommended value is 2 if you have if you have O(10K) files in
+         * the RagCorpus and set this to 3 if more than that. Default value is 2.
+         *
+         * @var int
+         */
+        public $treeDepth;
+        /**
+         * Number of leaf nodes in the tree-based structure. Each leaf node contains
+         * groups of closely related vectors along with their corresponding centroid.
+         * Recommended value is 10 * sqrt(num of RagFiles in your RagCorpus). Default
+         * value is 500.
+         *
+         * @param int $leafCount
+         */
+        public function setLeafCount($leafCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getLeafCount()
+        {
+        }
+        /**
+         * The depth of the tree-based structure. Only depth values of 2 and 3 are
+         * supported. Recommended value is 2 if you have if you have O(10K) files in
+         * the RagCorpus and set this to 3 if more than that. Default value is 2.
+         *
+         * @param int $treeDepth
+         */
+        public function setTreeDepth($treeDepth)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTreeDepth()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1RagVectorDbConfigRagManagedDbANN registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLeafCount()
-    {
-    }
-    /**
-     * The depth of the tree-based structure. Only depth values of 2 and 3 are
-     * supported. Recommended value is 2 if you have if you have O(10K) files in
-     * the RagCorpus and set this to 3 if more than that. Default value is 2.
-     *
-     * @param int $treeDepth
-     */
-    public function setTreeDepth($treeDepth)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTreeDepth()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1RagVectorDbConfigRagManagedDbANN extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1RagVectorDbConfigRagManagedDbANN
     {
     }
 }

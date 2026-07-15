@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class QuotedMessageMetadata extends \Google\Model
-{
-    /**
-     * Required. The timestamp when the quoted message was created or when the
-     * quoted message was last updated. If the message was edited, use this field,
-     * `last_update_time`. If the message was never edited, use `create_time`. If
-     * `last_update_time` doesn't match the latest version of the quoted message,
-     * the request fails.
-     *
-     * @var string
-     */
-    public $lastUpdateTime;
-    /**
-     * Required. Resource name of the message that is quoted. Format:
-     * `spaces/{space}/messages/{message}`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. The timestamp when the quoted message was created or when the
-     * quoted message was last updated. If the message was edited, use this field,
-     * `last_update_time`. If the message was never edited, use `create_time`. If
-     * `last_update_time` doesn't match the latest version of the quoted message,
-     * the request fails.
-     *
-     * @param string $lastUpdateTime
-     */
-    public function setLastUpdateTime($lastUpdateTime)
+namespace Google\Service\HangoutsChat {
+    class QuotedMessageMetadata extends \Google\Model
     {
+        /**
+         * Required. The timestamp when the quoted message was created or when the
+         * quoted message was last updated. If the message was edited, use this field,
+         * `last_update_time`. If the message was never edited, use `create_time`. If
+         * `last_update_time` doesn't match the latest version of the quoted message,
+         * the request fails.
+         *
+         * @var string
+         */
+        public $lastUpdateTime;
+        /**
+         * Required. Resource name of the message that is quoted. Format:
+         * `spaces/{space}/messages/{message}`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. The timestamp when the quoted message was created or when the
+         * quoted message was last updated. If the message was edited, use this field,
+         * `last_update_time`. If the message was never edited, use `create_time`. If
+         * `last_update_time` doesn't match the latest version of the quoted message,
+         * the request fails.
+         *
+         * @param string $lastUpdateTime
+         */
+        public function setLastUpdateTime($lastUpdateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastUpdateTime()
+        {
+        }
+        /**
+         * Required. Resource name of the message that is quoted. Format:
+         * `spaces/{space}/messages/{message}`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\HangoutsChat\QuotedMessageMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLastUpdateTime()
-    {
-    }
-    /**
-     * Required. Resource name of the message that is quoted. Format:
-     * `spaces/{space}/messages/{message}`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_HangoutsChat_QuotedMessageMetadata extends \Google\Service\HangoutsChat\QuotedMessageMetadata
     {
     }
 }

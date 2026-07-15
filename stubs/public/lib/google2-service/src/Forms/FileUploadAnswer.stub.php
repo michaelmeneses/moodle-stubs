@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Forms;
-
-class FileUploadAnswer extends \Google\Model
-{
-    /**
-     * Output only. The ID of the Google Drive file.
-     *
-     * @var string
-     */
-    public $fileId;
-    /**
-     * Output only. The file name, as stored in Google Drive on upload.
-     *
-     * @var string
-     */
-    public $fileName;
-    /**
-     * Output only. The MIME type of the file, as stored in Google Drive on
-     * upload.
-     *
-     * @var string
-     */
-    public $mimeType;
-    /**
-     * Output only. The ID of the Google Drive file.
-     *
-     * @param string $fileId
-     */
-    public function setFileId($fileId)
+namespace Google\Service\Forms {
+    class FileUploadAnswer extends \Google\Model
     {
+        /**
+         * Output only. The ID of the Google Drive file.
+         *
+         * @var string
+         */
+        public $fileId;
+        /**
+         * Output only. The file name, as stored in Google Drive on upload.
+         *
+         * @var string
+         */
+        public $fileName;
+        /**
+         * Output only. The MIME type of the file, as stored in Google Drive on
+         * upload.
+         *
+         * @var string
+         */
+        public $mimeType;
+        /**
+         * Output only. The ID of the Google Drive file.
+         *
+         * @param string $fileId
+         */
+        public function setFileId($fileId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFileId()
+        {
+        }
+        /**
+         * Output only. The file name, as stored in Google Drive on upload.
+         *
+         * @param string $fileName
+         */
+        public function setFileName($fileName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFileName()
+        {
+        }
+        /**
+         * Output only. The MIME type of the file, as stored in Google Drive on
+         * upload.
+         *
+         * @param string $mimeType
+         */
+        public function setMimeType($mimeType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMimeType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Forms\FileUploadAnswer registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFileId()
-    {
-    }
-    /**
-     * Output only. The file name, as stored in Google Drive on upload.
-     *
-     * @param string $fileName
-     */
-    public function setFileName($fileName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFileName()
-    {
-    }
-    /**
-     * Output only. The MIME type of the file, as stored in Google Drive on
-     * upload.
-     *
-     * @param string $mimeType
-     */
-    public function setMimeType($mimeType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMimeType()
+    class Google_Service_Forms_FileUploadAnswer extends \Google\Service\Forms\FileUploadAnswer
     {
     }
 }

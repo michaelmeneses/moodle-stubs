@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vault;
-
-class ExportStats extends \Google\Model
-{
-    /**
-     * The number of messages or files already processed for export.
-     *
-     * @var string
-     */
-    public $exportedArtifactCount;
-    /**
-     * The size of export in bytes.
-     *
-     * @var string
-     */
-    public $sizeInBytes;
-    /**
-     * The number of messages or files to be exported.
-     *
-     * @var string
-     */
-    public $totalArtifactCount;
-    /**
-     * The number of messages or files already processed for export.
-     *
-     * @param string $exportedArtifactCount
-     */
-    public function setExportedArtifactCount($exportedArtifactCount)
+namespace Google\Service\Vault {
+    class ExportStats extends \Google\Model
     {
+        /**
+         * The number of messages or files already processed for export.
+         *
+         * @var string
+         */
+        public $exportedArtifactCount;
+        /**
+         * The size of export in bytes.
+         *
+         * @var string
+         */
+        public $sizeInBytes;
+        /**
+         * The number of messages or files to be exported.
+         *
+         * @var string
+         */
+        public $totalArtifactCount;
+        /**
+         * The number of messages or files already processed for export.
+         *
+         * @param string $exportedArtifactCount
+         */
+        public function setExportedArtifactCount($exportedArtifactCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExportedArtifactCount()
+        {
+        }
+        /**
+         * The size of export in bytes.
+         *
+         * @param string $sizeInBytes
+         */
+        public function setSizeInBytes($sizeInBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSizeInBytes()
+        {
+        }
+        /**
+         * The number of messages or files to be exported.
+         *
+         * @param string $totalArtifactCount
+         */
+        public function setTotalArtifactCount($totalArtifactCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalArtifactCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Vault\ExportStats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExportedArtifactCount()
-    {
-    }
-    /**
-     * The size of export in bytes.
-     *
-     * @param string $sizeInBytes
-     */
-    public function setSizeInBytes($sizeInBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSizeInBytes()
-    {
-    }
-    /**
-     * The number of messages or files to be exported.
-     *
-     * @param string $totalArtifactCount
-     */
-    public function setTotalArtifactCount($totalArtifactCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalArtifactCount()
+    class Google_Service_Vault_ExportStats extends \Google\Service\Vault\ExportStats
     {
     }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteTombstoneMetadata extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $tombstoneType;
-    /**
-     * @param string
-     */
-    public function setTombstoneType($tombstoneType)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteTombstoneMetadata extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $tombstoneType;
+        /**
+         * @param string
+         */
+        public function setTombstoneType($tombstoneType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTombstoneType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteTombstoneMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTombstoneType()
+    class Google_Service_CloudSearch_AppsDynamiteTombstoneMetadata extends \Google\Service\CloudSearch\AppsDynamiteTombstoneMetadata
     {
     }
 }

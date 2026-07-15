@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessBusinessCalls;
-
-class BusinessCallsInsights extends \Google\Model
-{
-    protected $aggregateMetricsType = AggregateMetrics::class;
-    protected $aggregateMetricsDataType = '';
-    /**
-     * @var string
-     */
-    public $metricType;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @param AggregateMetrics
-     */
-    public function setAggregateMetrics(AggregateMetrics $aggregateMetrics)
+namespace Google\Service\MyBusinessBusinessCalls {
+    class BusinessCallsInsights extends \Google\Model
     {
+        protected $aggregateMetricsType = AggregateMetrics::class;
+        protected $aggregateMetricsDataType = '';
+        /**
+         * @var string
+         */
+        public $metricType;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @param AggregateMetrics
+         */
+        public function setAggregateMetrics(AggregateMetrics $aggregateMetrics)
+        {
+        }
+        /**
+         * @return AggregateMetrics
+         */
+        public function getAggregateMetrics()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMetricType($metricType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMetricType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AggregateMetrics
+     * Runtime class alias of \Google\Service\MyBusinessBusinessCalls\BusinessCallsInsights registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAggregateMetrics()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMetricType($metricType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMetricType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_MyBusinessBusinessCalls_BusinessCallsInsights extends \Google\Service\MyBusinessBusinessCalls\BusinessCallsInsights
     {
     }
 }

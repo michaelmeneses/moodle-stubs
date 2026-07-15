@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class BulkListAssignedTargetingOptionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'lineItemAssignedTargetingOptions';
-    protected $lineItemAssignedTargetingOptionsType = LineItemAssignedTargetingOption::class;
-    protected $lineItemAssignedTargetingOptionsDataType = 'array';
-    /**
-     * A token identifying the next page of results. This value should be
-     * specified as the pageToken in a subsequent call to
-     * `BulkListAssignedTargetingOptions` to fetch the next page of results. This
-     * token will be absent if there are no more
-     * line_item_assigned_targeting_options to return.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of wrapper objects, each providing an assigned targeting option
-     * and the line item it is assigned to. This list will be absent if empty.
-     *
-     * @param LineItemAssignedTargetingOption[] $lineItemAssignedTargetingOptions
-     */
-    public function setLineItemAssignedTargetingOptions($lineItemAssignedTargetingOptions)
+namespace Google\Service\DisplayVideo {
+    class BulkListAssignedTargetingOptionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'lineItemAssignedTargetingOptions';
+        protected $lineItemAssignedTargetingOptionsType = LineItemAssignedTargetingOption::class;
+        protected $lineItemAssignedTargetingOptionsDataType = 'array';
+        /**
+         * A token identifying the next page of results. This value should be
+         * specified as the pageToken in a subsequent call to
+         * `BulkListAssignedTargetingOptions` to fetch the next page of results. This
+         * token will be absent if there are no more
+         * line_item_assigned_targeting_options to return.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of wrapper objects, each providing an assigned targeting option
+         * and the line item it is assigned to. This list will be absent if empty.
+         *
+         * @param LineItemAssignedTargetingOption[] $lineItemAssignedTargetingOptions
+         */
+        public function setLineItemAssignedTargetingOptions($lineItemAssignedTargetingOptions)
+        {
+        }
+        /**
+         * @return LineItemAssignedTargetingOption[]
+         */
+        public function getLineItemAssignedTargetingOptions()
+        {
+        }
+        /**
+         * A token identifying the next page of results. This value should be
+         * specified as the pageToken in a subsequent call to
+         * `BulkListAssignedTargetingOptions` to fetch the next page of results. This
+         * token will be absent if there are no more
+         * line_item_assigned_targeting_options to return.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LineItemAssignedTargetingOption[]
+     * Runtime class alias of \Google\Service\DisplayVideo\BulkListAssignedTargetingOptionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLineItemAssignedTargetingOptions()
-    {
-    }
-    /**
-     * A token identifying the next page of results. This value should be
-     * specified as the pageToken in a subsequent call to
-     * `BulkListAssignedTargetingOptions` to fetch the next page of results. This
-     * token will be absent if there are no more
-     * line_item_assigned_targeting_options to return.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_DisplayVideo_BulkListAssignedTargetingOptionsResponse extends \Google\Service\DisplayVideo\BulkListAssignedTargetingOptionsResponse
     {
     }
 }

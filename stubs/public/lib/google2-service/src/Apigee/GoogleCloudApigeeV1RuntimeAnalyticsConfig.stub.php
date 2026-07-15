@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1RuntimeAnalyticsConfig extends \Google\Model
-{
-    /**
-     * If Runtime should send billing data to AX or not.
-     *
-     * @var bool
-     */
-    public $billingPipelineEnabled;
-    /**
-     * If the Analytics is enabled or not.
-     *
-     * @var bool
-     */
-    public $enabled;
-    /**
-     * If Runtime should send billing data to AX or not.
-     *
-     * @param bool $billingPipelineEnabled
-     */
-    public function setBillingPipelineEnabled($billingPipelineEnabled)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1RuntimeAnalyticsConfig extends \Google\Model
     {
+        /**
+         * If Runtime should send billing data to AX or not.
+         *
+         * @var bool
+         */
+        public $billingPipelineEnabled;
+        /**
+         * If the Analytics is enabled or not.
+         *
+         * @var bool
+         */
+        public $enabled;
+        /**
+         * If Runtime should send billing data to AX or not.
+         *
+         * @param bool $billingPipelineEnabled
+         */
+        public function setBillingPipelineEnabled($billingPipelineEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getBillingPipelineEnabled()
+        {
+        }
+        /**
+         * If the Analytics is enabled or not.
+         *
+         * @param bool $enabled
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1RuntimeAnalyticsConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBillingPipelineEnabled()
-    {
-    }
-    /**
-     * If the Analytics is enabled or not.
-     *
-     * @param bool $enabled
-     */
-    public function setEnabled($enabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnabled()
+    class Google_Service_Apigee_GoogleCloudApigeeV1RuntimeAnalyticsConfig extends \Google\Service\Apigee\GoogleCloudApigeeV1RuntimeAnalyticsConfig
     {
     }
 }

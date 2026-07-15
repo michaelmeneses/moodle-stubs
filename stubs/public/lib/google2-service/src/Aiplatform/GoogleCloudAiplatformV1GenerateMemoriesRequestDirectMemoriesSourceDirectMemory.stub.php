@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1GenerateMemoriesRequestDirectMemoriesSourceDirectMemory extends \Google\Collection
-{
-    protected $collection_key = 'topics';
-    /**
-     * Required. The fact to consolidate with existing memories.
-     *
-     * @var string
-     */
-    public $fact;
-    protected $topicsType = GoogleCloudAiplatformV1MemoryTopicId::class;
-    protected $topicsDataType = 'array';
-    /**
-     * Required. The fact to consolidate with existing memories.
-     *
-     * @param string $fact
-     */
-    public function setFact($fact)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1GenerateMemoriesRequestDirectMemoriesSourceDirectMemory extends \Google\Collection
     {
+        protected $collection_key = 'topics';
+        /**
+         * Required. The fact to consolidate with existing memories.
+         *
+         * @var string
+         */
+        public $fact;
+        protected $topicsType = GoogleCloudAiplatformV1MemoryTopicId::class;
+        protected $topicsDataType = 'array';
+        /**
+         * Required. The fact to consolidate with existing memories.
+         *
+         * @param string $fact
+         */
+        public function setFact($fact)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFact()
+        {
+        }
+        /**
+         * Optional. The topics that the consolidated memories should be associated
+         * with.
+         *
+         * @param GoogleCloudAiplatformV1MemoryTopicId[] $topics
+         */
+        public function setTopics($topics)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1MemoryTopicId[]
+         */
+        public function getTopics()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1GenerateMemoriesRequestDirectMemoriesSourceDirectMemory registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFact()
-    {
-    }
-    /**
-     * Optional. The topics that the consolidated memories should be associated
-     * with.
-     *
-     * @param GoogleCloudAiplatformV1MemoryTopicId[] $topics
-     */
-    public function setTopics($topics)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1MemoryTopicId[]
-     */
-    public function getTopics()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1GenerateMemoriesRequestDirectMemoriesSourceDirectMemory extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1GenerateMemoriesRequestDirectMemoriesSourceDirectMemory
     {
     }
 }

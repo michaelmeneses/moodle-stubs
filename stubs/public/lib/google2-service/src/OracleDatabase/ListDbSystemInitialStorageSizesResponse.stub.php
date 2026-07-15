@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OracleDatabase;
-
-class ListDbSystemInitialStorageSizesResponse extends \Google\Collection
-{
-    protected $collection_key = 'dbSystemInitialStorageSizes';
-    protected $dbSystemInitialStorageSizesType = DbSystemInitialStorageSize::class;
-    protected $dbSystemInitialStorageSizesDataType = 'array';
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of DbSystemInitialStorageSizes.
-     *
-     * @param DbSystemInitialStorageSize[] $dbSystemInitialStorageSizes
-     */
-    public function setDbSystemInitialStorageSizes($dbSystemInitialStorageSizes)
+namespace Google\Service\OracleDatabase {
+    class ListDbSystemInitialStorageSizesResponse extends \Google\Collection
     {
+        protected $collection_key = 'dbSystemInitialStorageSizes';
+        protected $dbSystemInitialStorageSizesType = DbSystemInitialStorageSize::class;
+        protected $dbSystemInitialStorageSizesDataType = 'array';
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of DbSystemInitialStorageSizes.
+         *
+         * @param DbSystemInitialStorageSize[] $dbSystemInitialStorageSizes
+         */
+        public function setDbSystemInitialStorageSizes($dbSystemInitialStorageSizes)
+        {
+        }
+        /**
+         * @return DbSystemInitialStorageSize[]
+         */
+        public function getDbSystemInitialStorageSizes()
+        {
+        }
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DbSystemInitialStorageSize[]
+     * Runtime class alias of \Google\Service\OracleDatabase\ListDbSystemInitialStorageSizesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDbSystemInitialStorageSizes()
-    {
-    }
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_OracleDatabase_ListDbSystemInitialStorageSizesResponse extends \Google\Service\OracleDatabase\ListDbSystemInitialStorageSizesResponse
     {
     }
 }

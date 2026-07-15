@@ -21,37 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer;
-
-class BillingInfo extends \Google\Collection
-{
-    protected $collection_key = 'billingId';
-    public $accountId;
-    public $accountName;
-    public $billingId;
-    public $kind;
-    public function setAccountId($accountId)
+namespace Google\Service\AdExchangeBuyer {
+    class BillingInfo extends \Google\Collection
     {
+        protected $collection_key = 'billingId';
+        public $accountId;
+        public $accountName;
+        public $billingId;
+        public $kind;
+        public function setAccountId($accountId)
+        {
+        }
+        public function getAccountId()
+        {
+        }
+        public function setAccountName($accountName)
+        {
+        }
+        public function getAccountName()
+        {
+        }
+        public function setBillingId($billingId)
+        {
+        }
+        public function getBillingId()
+        {
+        }
+        public function setKind($kind)
+        {
+        }
+        public function getKind()
+        {
+        }
     }
-    public function getAccountId()
-    {
-    }
-    public function setAccountName($accountName)
-    {
-    }
-    public function getAccountName()
-    {
-    }
-    public function setBillingId($billingId)
-    {
-    }
-    public function getBillingId()
-    {
-    }
-    public function setKind($kind)
-    {
-    }
-    public function getKind()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\BillingInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AdExchangeBuyer_BillingInfo extends \Google\Service\AdExchangeBuyer\BillingInfo
     {
     }
 }

@@ -22,6 +22,12 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_xapi\local\helper;
 
+use core_component;
+use core_xapi\local\state;
+use core_xapi\local\statement\item_agent;
+use core_xapi\xapi_exception;
+use JsonException;
+use stdClass;
 /**
  * State trait helper, with common methods.
  *

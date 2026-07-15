@@ -21,52 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher\Resource;
-
-/**
- * The "purchaseOptions" collection of methods.
- * Typical usage is:
- *  <code>
- *   $androidpublisherService = new Google\Service\AndroidPublisher(...);
- *   $purchaseOptions = $androidpublisherService->monetization_onetimeproducts_purchaseOptions;
- *  </code>
- */
-class MonetizationOnetimeproductsPurchaseOptions extends \Google\Service\Resource
-{
+namespace Google\Service\AndroidPublisher\Resource {
+    use Google\Service\AndroidPublisher\BatchDeletePurchaseOptionsRequest;
+    use Google\Service\AndroidPublisher\BatchUpdatePurchaseOptionStatesRequest;
+    use Google\Service\AndroidPublisher\BatchUpdatePurchaseOptionStatesResponse;
     /**
-     * Deletes purchase options across one or multiple one-time products. By default
-     * this operation will fail if there are any existing offers under the deleted
-     * purchase options. Use the force parameter to override the default behavior.
-     * (purchaseOptions.batchDelete)
-     *
-     * @param string $packageName Required. The parent app (package name) of the
-     * purchase options to delete.
-     * @param string $productId Required. The product ID of the parent one-time
-     * product, if all purchase options to delete belong to the same one-time
-     * product. If this batch delete spans multiple one-time products, set this
-     * field to "-".
-     * @param BatchDeletePurchaseOptionsRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * The "purchaseOptions" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $androidpublisherService = new Google\Service\AndroidPublisher(...);
+     *   $purchaseOptions = $androidpublisherService->monetization_onetimeproducts_purchaseOptions;
+     *  </code>
      */
-    public function batchDelete($packageName, $productId, BatchDeletePurchaseOptionsRequest $postBody, $optParams = [])
+    class MonetizationOnetimeproductsPurchaseOptions extends \Google\Service\Resource
     {
+        /**
+         * Deletes purchase options across one or multiple one-time products. By default
+         * this operation will fail if there are any existing offers under the deleted
+         * purchase options. Use the force parameter to override the default behavior.
+         * (purchaseOptions.batchDelete)
+         *
+         * @param string $packageName Required. The parent app (package name) of the
+         * purchase options to delete.
+         * @param string $productId Required. The product ID of the parent one-time
+         * product, if all purchase options to delete belong to the same one-time
+         * product. If this batch delete spans multiple one-time products, set this
+         * field to "-".
+         * @param BatchDeletePurchaseOptionsRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function batchDelete($packageName, $productId, BatchDeletePurchaseOptionsRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Activates or deactivates purchase options across one or multiple one-time
+         * products. (purchaseOptions.batchUpdateStates)
+         *
+         * @param string $packageName Required. The parent app (package name) of the
+         * updated purchase options.
+         * @param string $productId Required. The product ID of the parent one-time
+         * product, if all updated purchase options belong to the same one-time product.
+         * If this batch update spans multiple one-time products, set this field to "-".
+         * @param BatchUpdatePurchaseOptionStatesRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return BatchUpdatePurchaseOptionStatesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function batchUpdateStates($packageName, $productId, BatchUpdatePurchaseOptionStatesRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Activates or deactivates purchase options across one or multiple one-time
-     * products. (purchaseOptions.batchUpdateStates)
-     *
-     * @param string $packageName Required. The parent app (package name) of the
-     * updated purchase options.
-     * @param string $productId Required. The product ID of the parent one-time
-     * product, if all updated purchase options belong to the same one-time product.
-     * If this batch update spans multiple one-time products, set this field to "-".
-     * @param BatchUpdatePurchaseOptionStatesRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return BatchUpdatePurchaseOptionStatesResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\AndroidPublisher\Resource\MonetizationOnetimeproductsPurchaseOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function batchUpdateStates($packageName, $productId, BatchUpdatePurchaseOptionStatesRequest $postBody, $optParams = [])
+    class Google_Service_AndroidPublisher_Resource_MonetizationOnetimeproductsPurchaseOptions extends \Google\Service\AndroidPublisher\Resource\MonetizationOnetimeproductsPurchaseOptions
     {
     }
 }

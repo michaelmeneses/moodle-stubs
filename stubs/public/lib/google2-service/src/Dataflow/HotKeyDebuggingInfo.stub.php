@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class HotKeyDebuggingInfo extends \Google\Model
-{
-    protected $detectedHotKeysType = HotKeyInfo::class;
-    protected $detectedHotKeysDataType = 'map';
-    /**
-     * Debugging information for each detected hot key. Keyed by a hash of the
-     * key.
-     *
-     * @param HotKeyInfo[] $detectedHotKeys
-     */
-    public function setDetectedHotKeys($detectedHotKeys)
+namespace Google\Service\Dataflow {
+    class HotKeyDebuggingInfo extends \Google\Model
     {
+        protected $detectedHotKeysType = HotKeyInfo::class;
+        protected $detectedHotKeysDataType = 'map';
+        /**
+         * Debugging information for each detected hot key. Keyed by a hash of the
+         * key.
+         *
+         * @param HotKeyInfo[] $detectedHotKeys
+         */
+        public function setDetectedHotKeys($detectedHotKeys)
+        {
+        }
+        /**
+         * @return HotKeyInfo[]
+         */
+        public function getDetectedHotKeys()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return HotKeyInfo[]
+     * Runtime class alias of \Google\Service\Dataflow\HotKeyDebuggingInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDetectedHotKeys()
+    class Google_Service_Dataflow_HotKeyDebuggingInfo extends \Google\Service\Dataflow\HotKeyDebuggingInfo
     {
     }
 }

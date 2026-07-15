@@ -21,29 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights\Resource;
-
-/**
- * The "insightsdata" collection of methods.
- * Typical usage is:
- *  <code>
- *   $contactcenterinsightsService = new Google\Service\Contactcenterinsights(...);
- *   $insightsdata = $contactcenterinsightsService->projects_locations_insightsdata;
- *  </code>
- */
-class ProjectsLocationsInsightsdata extends \Google\Service\Resource
-{
+namespace Google\Service\Contactcenterinsights\Resource {
+    use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1ExportInsightsDataRequest;
+    use Google\Service\Contactcenterinsights\GoogleLongrunningOperation;
     /**
-     * Export insights data to a destination defined in the request body.
-     * (insightsdata.export)
-     *
-     * @param string $parent Required. The parent resource to export data from.
-     * @param GoogleCloudContactcenterinsightsV1ExportInsightsDataRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
+     * The "insightsdata" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $contactcenterinsightsService = new Google\Service\Contactcenterinsights(...);
+     *   $insightsdata = $contactcenterinsightsService->projects_locations_insightsdata;
+     *  </code>
      */
-    public function export($parent, GoogleCloudContactcenterinsightsV1ExportInsightsDataRequest $postBody, $optParams = [])
+    class ProjectsLocationsInsightsdata extends \Google\Service\Resource
+    {
+        /**
+         * Export insights data to a destination defined in the request body.
+         * (insightsdata.export)
+         *
+         * @param string $parent Required. The parent resource to export data from.
+         * @param GoogleCloudContactcenterinsightsV1ExportInsightsDataRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function export($parent, GoogleCloudContactcenterinsightsV1ExportInsightsDataRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Contactcenterinsights\Resource\ProjectsLocationsInsightsdata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Contactcenterinsights_Resource_ProjectsLocationsInsightsdata extends \Google\Service\Contactcenterinsights\Resource\ProjectsLocationsInsightsdata
     {
     }
 }

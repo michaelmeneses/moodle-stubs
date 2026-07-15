@@ -21,49 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Games\Resource;
-
-/**
- * The "leaderboards" collection of methods.
- * Typical usage is:
- *  <code>
- *   $gamesService = new Google\Service\Games(...);
- *   $leaderboards = $gamesService->leaderboards;
- *  </code>
- */
-class Leaderboards extends \Google\Service\Resource
-{
+namespace Google\Service\Games\Resource {
+    use Google\Service\Games\Leaderboard;
+    use Google\Service\Games\LeaderboardListResponse;
     /**
-     * Retrieves the metadata of the leaderboard with the given ID.
-     * (leaderboards.get)
-     *
-     * @param string $leaderboardId The ID of the leaderboard.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string language The preferred language to use for strings returned
-     * by this method.
-     * @return Leaderboard
-     * @throws \Google\Service\Exception
+     * The "leaderboards" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $gamesService = new Google\Service\Games(...);
+     *   $leaderboards = $gamesService->leaderboards;
+     *  </code>
      */
-    public function get($leaderboardId, $optParams = [])
+    class Leaderboards extends \Google\Service\Resource
     {
+        /**
+         * Retrieves the metadata of the leaderboard with the given ID.
+         * (leaderboards.get)
+         *
+         * @param string $leaderboardId The ID of the leaderboard.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string language The preferred language to use for strings returned
+         * by this method.
+         * @return Leaderboard
+         * @throws \Google\Service\Exception
+         */
+        public function get($leaderboardId, $optParams = [])
+        {
+        }
+        /**
+         * Lists all the leaderboard metadata for your application.
+         * (leaderboards.listLeaderboards)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string language The preferred language to use for strings returned
+         * by this method.
+         * @opt_param int maxResults The maximum number of leaderboards to return in the
+         * response. For any response, the actual number of leaderboards returned may be
+         * less than the specified `maxResults`.
+         * @opt_param string pageToken The token returned by the previous request.
+         * @return LeaderboardListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listLeaderboards($optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists all the leaderboard metadata for your application.
-     * (leaderboards.listLeaderboards)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string language The preferred language to use for strings returned
-     * by this method.
-     * @opt_param int maxResults The maximum number of leaderboards to return in the
-     * response. For any response, the actual number of leaderboards returned may be
-     * less than the specified `maxResults`.
-     * @opt_param string pageToken The token returned by the previous request.
-     * @return LeaderboardListResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Games\Resource\Leaderboards registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listLeaderboards($optParams = [])
+    class Google_Service_Games_Resource_Leaderboards extends \Google\Service\Games\Resource\Leaderboards
     {
     }
 }

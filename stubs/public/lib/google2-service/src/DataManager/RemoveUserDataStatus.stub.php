@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataManager;
-
-class RemoveUserDataStatus extends \Google\Model
-{
-    /**
-     * The total count of audience members sent in the removal request. Includes
-     * all audience members in the request, regardless of whether they were
-     * successfully removed or not.
-     *
-     * @var string
-     */
-    public $recordCount;
-    /**
-     * The total count of user identifiers sent in the removal request. Includes
-     * all user identifiers in the request, regardless of whether they were
-     * successfully removed or not.
-     *
-     * @var string
-     */
-    public $userIdentifierCount;
-    /**
-     * The total count of audience members sent in the removal request. Includes
-     * all audience members in the request, regardless of whether they were
-     * successfully removed or not.
-     *
-     * @param string $recordCount
-     */
-    public function setRecordCount($recordCount)
+namespace Google\Service\DataManager {
+    class RemoveUserDataStatus extends \Google\Model
     {
+        /**
+         * The total count of audience members sent in the removal request. Includes
+         * all audience members in the request, regardless of whether they were
+         * successfully removed or not.
+         *
+         * @var string
+         */
+        public $recordCount;
+        /**
+         * The total count of user identifiers sent in the removal request. Includes
+         * all user identifiers in the request, regardless of whether they were
+         * successfully removed or not.
+         *
+         * @var string
+         */
+        public $userIdentifierCount;
+        /**
+         * The total count of audience members sent in the removal request. Includes
+         * all audience members in the request, regardless of whether they were
+         * successfully removed or not.
+         *
+         * @param string $recordCount
+         */
+        public function setRecordCount($recordCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRecordCount()
+        {
+        }
+        /**
+         * The total count of user identifiers sent in the removal request. Includes
+         * all user identifiers in the request, regardless of whether they were
+         * successfully removed or not.
+         *
+         * @param string $userIdentifierCount
+         */
+        public function setUserIdentifierCount($userIdentifierCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserIdentifierCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataManager\RemoveUserDataStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRecordCount()
-    {
-    }
-    /**
-     * The total count of user identifiers sent in the removal request. Includes
-     * all user identifiers in the request, regardless of whether they were
-     * successfully removed or not.
-     *
-     * @param string $userIdentifierCount
-     */
-    public function setUserIdentifierCount($userIdentifierCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserIdentifierCount()
+    class Google_Service_DataManager_RemoveUserDataStatus extends \Google\Service\DataManager\RemoveUserDataStatus
     {
     }
 }

@@ -21,98 +21,107 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1FlowHook extends \Google\Model
-{
-    /**
-     * Optional. Flag that specifies whether execution should continue if the flow
-     * hook throws an exception. Set to `true` to continue execution. Set to
-     * `false` to stop execution if the flow hook throws an exception. Defaults to
-     * `true`.
-     *
-     * @var bool
-     */
-    public $continueOnError;
-    /**
-     * Description of the flow hook.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Output only. Where in the API call flow the flow hook is invoked. Must be
-     * one of `PreProxyFlowHook`, `PostProxyFlowHook`, `PreTargetFlowHook`, or
-     * `PostTargetFlowHook`.
-     *
-     * @var string
-     */
-    public $flowHookPoint;
-    /**
-     * Shared flow attached to this flow hook, or empty if there is none attached.
-     *
-     * @var string
-     */
-    public $sharedFlow;
-    /**
-     * Optional. Flag that specifies whether execution should continue if the flow
-     * hook throws an exception. Set to `true` to continue execution. Set to
-     * `false` to stop execution if the flow hook throws an exception. Defaults to
-     * `true`.
-     *
-     * @param bool $continueOnError
-     */
-    public function setContinueOnError($continueOnError)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1FlowHook extends \Google\Model
     {
+        /**
+         * Optional. Flag that specifies whether execution should continue if the flow
+         * hook throws an exception. Set to `true` to continue execution. Set to
+         * `false` to stop execution if the flow hook throws an exception. Defaults to
+         * `true`.
+         *
+         * @var bool
+         */
+        public $continueOnError;
+        /**
+         * Description of the flow hook.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Output only. Where in the API call flow the flow hook is invoked. Must be
+         * one of `PreProxyFlowHook`, `PostProxyFlowHook`, `PreTargetFlowHook`, or
+         * `PostTargetFlowHook`.
+         *
+         * @var string
+         */
+        public $flowHookPoint;
+        /**
+         * Shared flow attached to this flow hook, or empty if there is none attached.
+         *
+         * @var string
+         */
+        public $sharedFlow;
+        /**
+         * Optional. Flag that specifies whether execution should continue if the flow
+         * hook throws an exception. Set to `true` to continue execution. Set to
+         * `false` to stop execution if the flow hook throws an exception. Defaults to
+         * `true`.
+         *
+         * @param bool $continueOnError
+         */
+        public function setContinueOnError($continueOnError)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getContinueOnError()
+        {
+        }
+        /**
+         * Description of the flow hook.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Output only. Where in the API call flow the flow hook is invoked. Must be
+         * one of `PreProxyFlowHook`, `PostProxyFlowHook`, `PreTargetFlowHook`, or
+         * `PostTargetFlowHook`.
+         *
+         * @param string $flowHookPoint
+         */
+        public function setFlowHookPoint($flowHookPoint)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFlowHookPoint()
+        {
+        }
+        /**
+         * Shared flow attached to this flow hook, or empty if there is none attached.
+         *
+         * @param string $sharedFlow
+         */
+        public function setSharedFlow($sharedFlow)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSharedFlow()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1FlowHook registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContinueOnError()
-    {
-    }
-    /**
-     * Description of the flow hook.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Output only. Where in the API call flow the flow hook is invoked. Must be
-     * one of `PreProxyFlowHook`, `PostProxyFlowHook`, `PreTargetFlowHook`, or
-     * `PostTargetFlowHook`.
-     *
-     * @param string $flowHookPoint
-     */
-    public function setFlowHookPoint($flowHookPoint)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFlowHookPoint()
-    {
-    }
-    /**
-     * Shared flow attached to this flow hook, or empty if there is none attached.
-     *
-     * @param string $sharedFlow
-     */
-    public function setSharedFlow($sharedFlow)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSharedFlow()
+    class Google_Service_Apigee_GoogleCloudApigeeV1FlowHook extends \Google\Service\Apigee\GoogleCloudApigeeV1FlowHook
     {
     }
 }

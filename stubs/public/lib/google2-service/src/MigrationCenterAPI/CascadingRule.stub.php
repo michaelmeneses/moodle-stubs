@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class CascadingRule extends \Google\Model
-{
-    protected $cascadeLogicalDbsType = CascadeLogicalDBsRule::class;
-    protected $cascadeLogicalDbsDataType = '';
-    /**
-     * Cascading rule for related logical DBs.
-     *
-     * @param CascadeLogicalDBsRule $cascadeLogicalDbs
-     */
-    public function setCascadeLogicalDbs(CascadeLogicalDBsRule $cascadeLogicalDbs)
+namespace Google\Service\MigrationCenterAPI {
+    class CascadingRule extends \Google\Model
     {
+        protected $cascadeLogicalDbsType = CascadeLogicalDBsRule::class;
+        protected $cascadeLogicalDbsDataType = '';
+        /**
+         * Cascading rule for related logical DBs.
+         *
+         * @param CascadeLogicalDBsRule $cascadeLogicalDbs
+         */
+        public function setCascadeLogicalDbs(CascadeLogicalDBsRule $cascadeLogicalDbs)
+        {
+        }
+        /**
+         * @return CascadeLogicalDBsRule
+         */
+        public function getCascadeLogicalDbs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CascadeLogicalDBsRule
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\CascadingRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCascadeLogicalDbs()
+    class Google_Service_MigrationCenterAPI_CascadingRule extends \Google\Service\MigrationCenterAPI\CascadingRule
     {
     }
 }

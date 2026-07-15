@@ -21,89 +21,98 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Indexing;
-
-class UrlNotification extends \Google\Model
-{
-    /**
-     * Unspecified.
-     */
-    public const TYPE_URL_NOTIFICATION_TYPE_UNSPECIFIED = 'URL_NOTIFICATION_TYPE_UNSPECIFIED';
-    /**
-     * The given URL (Web document) has been updated.
-     */
-    public const TYPE_URL_UPDATED = 'URL_UPDATED';
-    /**
-     * The given URL (Web document) has been deleted.
-     */
-    public const TYPE_URL_DELETED = 'URL_DELETED';
-    /**
-     * Creation timestamp for this notification. Users should _not_ specify it,
-     * the field is ignored at the request time.
-     *
-     * @var string
-     */
-    public $notifyTime;
-    /**
-     * The URL life cycle event that Google is being notified about.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The object of this notification. The URL must be owned by the publisher of
-     * this notification and, in case of `URL_UPDATED` notifications, it _must_ be
-     * crawlable by Google.
-     *
-     * @var string
-     */
-    public $url;
-    /**
-     * Creation timestamp for this notification. Users should _not_ specify it,
-     * the field is ignored at the request time.
-     *
-     * @param string $notifyTime
-     */
-    public function setNotifyTime($notifyTime)
+namespace Google\Service\Indexing {
+    class UrlNotification extends \Google\Model
     {
+        /**
+         * Unspecified.
+         */
+        public const TYPE_URL_NOTIFICATION_TYPE_UNSPECIFIED = 'URL_NOTIFICATION_TYPE_UNSPECIFIED';
+        /**
+         * The given URL (Web document) has been updated.
+         */
+        public const TYPE_URL_UPDATED = 'URL_UPDATED';
+        /**
+         * The given URL (Web document) has been deleted.
+         */
+        public const TYPE_URL_DELETED = 'URL_DELETED';
+        /**
+         * Creation timestamp for this notification. Users should _not_ specify it,
+         * the field is ignored at the request time.
+         *
+         * @var string
+         */
+        public $notifyTime;
+        /**
+         * The URL life cycle event that Google is being notified about.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The object of this notification. The URL must be owned by the publisher of
+         * this notification and, in case of `URL_UPDATED` notifications, it _must_ be
+         * crawlable by Google.
+         *
+         * @var string
+         */
+        public $url;
+        /**
+         * Creation timestamp for this notification. Users should _not_ specify it,
+         * the field is ignored at the request time.
+         *
+         * @param string $notifyTime
+         */
+        public function setNotifyTime($notifyTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNotifyTime()
+        {
+        }
+        /**
+         * The URL life cycle event that Google is being notified about.
+         *
+         * Accepted values: URL_NOTIFICATION_TYPE_UNSPECIFIED, URL_UPDATED,
+         * URL_DELETED
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
+        /**
+         * The object of this notification. The URL must be owned by the publisher of
+         * this notification and, in case of `URL_UPDATED` notifications, it _must_ be
+         * crawlable by Google.
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Indexing\UrlNotification registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNotifyTime()
-    {
-    }
-    /**
-     * The URL life cycle event that Google is being notified about.
-     *
-     * Accepted values: URL_NOTIFICATION_TYPE_UNSPECIFIED, URL_UPDATED,
-     * URL_DELETED
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
-    {
-    }
-    /**
-     * The object of this notification. The URL must be owned by the publisher of
-     * this notification and, in case of `URL_UPDATED` notifications, it _must_ be
-     * crawlable by Google.
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
+    class Google_Service_Indexing_UrlNotification extends \Google\Service\Indexing\UrlNotification
     {
     }
 }

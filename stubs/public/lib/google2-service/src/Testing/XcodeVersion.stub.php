@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Testing;
-
-class XcodeVersion extends \Google\Collection
-{
-    protected $collection_key = 'tags';
-    /**
-     * Tags for this Xcode version. Example: "default".
-     *
-     * @var string[]
-     */
-    public $tags;
-    /**
-     * The id for this version. Example: "9.2".
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * Tags for this Xcode version. Example: "default".
-     *
-     * @param string[] $tags
-     */
-    public function setTags($tags)
+namespace Google\Service\Testing {
+    class XcodeVersion extends \Google\Collection
     {
+        protected $collection_key = 'tags';
+        /**
+         * Tags for this Xcode version. Example: "default".
+         *
+         * @var string[]
+         */
+        public $tags;
+        /**
+         * The id for this version. Example: "9.2".
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * Tags for this Xcode version. Example: "default".
+         *
+         * @param string[] $tags
+         */
+        public function setTags($tags)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTags()
+        {
+        }
+        /**
+         * The id for this version. Example: "9.2".
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Testing\XcodeVersion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTags()
-    {
-    }
-    /**
-     * The id for this version. Example: "9.2".
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_Testing_XcodeVersion extends \Google\Service\Testing\XcodeVersion
     {
     }
 }

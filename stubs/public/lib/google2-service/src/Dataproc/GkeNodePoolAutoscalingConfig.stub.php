@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class GkeNodePoolAutoscalingConfig extends \Google\Model
-{
-    /**
-     * The maximum number of nodes in the node pool. Must be >= min_node_count,
-     * and must be > 0. Note: Quota must be sufficient to scale up the cluster.
-     *
-     * @var int
-     */
-    public $maxNodeCount;
-    /**
-     * The minimum number of nodes in the node pool. Must be >= 0 and <=
-     * max_node_count.
-     *
-     * @var int
-     */
-    public $minNodeCount;
-    /**
-     * The maximum number of nodes in the node pool. Must be >= min_node_count,
-     * and must be > 0. Note: Quota must be sufficient to scale up the cluster.
-     *
-     * @param int $maxNodeCount
-     */
-    public function setMaxNodeCount($maxNodeCount)
+namespace Google\Service\Dataproc {
+    class GkeNodePoolAutoscalingConfig extends \Google\Model
     {
+        /**
+         * The maximum number of nodes in the node pool. Must be >= min_node_count,
+         * and must be > 0. Note: Quota must be sufficient to scale up the cluster.
+         *
+         * @var int
+         */
+        public $maxNodeCount;
+        /**
+         * The minimum number of nodes in the node pool. Must be >= 0 and <=
+         * max_node_count.
+         *
+         * @var int
+         */
+        public $minNodeCount;
+        /**
+         * The maximum number of nodes in the node pool. Must be >= min_node_count,
+         * and must be > 0. Note: Quota must be sufficient to scale up the cluster.
+         *
+         * @param int $maxNodeCount
+         */
+        public function setMaxNodeCount($maxNodeCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxNodeCount()
+        {
+        }
+        /**
+         * The minimum number of nodes in the node pool. Must be >= 0 and <=
+         * max_node_count.
+         *
+         * @param int $minNodeCount
+         */
+        public function setMinNodeCount($minNodeCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMinNodeCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Dataproc\GkeNodePoolAutoscalingConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaxNodeCount()
-    {
-    }
-    /**
-     * The minimum number of nodes in the node pool. Must be >= 0 and <=
-     * max_node_count.
-     *
-     * @param int $minNodeCount
-     */
-    public function setMinNodeCount($minNodeCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMinNodeCount()
+    class Google_Service_Dataproc_GkeNodePoolAutoscalingConfig extends \Google\Service\Dataproc\GkeNodePoolAutoscalingConfig
     {
     }
 }

@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BeyondCorp;
-
-class GoogleCloudBeyondcorpAppconnectorsV1ImageConfig extends \Google\Model
-{
-    /**
-     * The stable image that the remote agent will fallback to if the target image
-     * fails. Format would be a gcr image path, e.g.: gcr.io/PROJECT-ID/my-
-     * image:tag1
-     *
-     * @var string
-     */
-    public $stableImage;
-    /**
-     * The initial image the remote agent will attempt to run for the control
-     * plane. Format would be a gcr image path, e.g.: gcr.io/PROJECT-ID/my-
-     * image:tag1
-     *
-     * @var string
-     */
-    public $targetImage;
-    /**
-     * The stable image that the remote agent will fallback to if the target image
-     * fails. Format would be a gcr image path, e.g.: gcr.io/PROJECT-ID/my-
-     * image:tag1
-     *
-     * @param string $stableImage
-     */
-    public function setStableImage($stableImage)
+namespace Google\Service\BeyondCorp {
+    class GoogleCloudBeyondcorpAppconnectorsV1ImageConfig extends \Google\Model
     {
+        /**
+         * The stable image that the remote agent will fallback to if the target image
+         * fails. Format would be a gcr image path, e.g.: gcr.io/PROJECT-ID/my-
+         * image:tag1
+         *
+         * @var string
+         */
+        public $stableImage;
+        /**
+         * The initial image the remote agent will attempt to run for the control
+         * plane. Format would be a gcr image path, e.g.: gcr.io/PROJECT-ID/my-
+         * image:tag1
+         *
+         * @var string
+         */
+        public $targetImage;
+        /**
+         * The stable image that the remote agent will fallback to if the target image
+         * fails. Format would be a gcr image path, e.g.: gcr.io/PROJECT-ID/my-
+         * image:tag1
+         *
+         * @param string $stableImage
+         */
+        public function setStableImage($stableImage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStableImage()
+        {
+        }
+        /**
+         * The initial image the remote agent will attempt to run for the control
+         * plane. Format would be a gcr image path, e.g.: gcr.io/PROJECT-ID/my-
+         * image:tag1
+         *
+         * @param string $targetImage
+         */
+        public function setTargetImage($targetImage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetImage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BeyondCorp\GoogleCloudBeyondcorpAppconnectorsV1ImageConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStableImage()
-    {
-    }
-    /**
-     * The initial image the remote agent will attempt to run for the control
-     * plane. Format would be a gcr image path, e.g.: gcr.io/PROJECT-ID/my-
-     * image:tag1
-     *
-     * @param string $targetImage
-     */
-    public function setTargetImage($targetImage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetImage()
+    class Google_Service_BeyondCorp_GoogleCloudBeyondcorpAppconnectorsV1ImageConfig extends \Google\Service\BeyondCorp\GoogleCloudBeyondcorpAppconnectorsV1ImageConfig
     {
     }
 }

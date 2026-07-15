@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1CountTokensResponse extends \Google\Collection
-{
-    protected $collection_key = 'promptTokensDetails';
-    protected $promptTokensDetailsType = GoogleCloudAiplatformV1ModalityTokenCount::class;
-    protected $promptTokensDetailsDataType = 'array';
-    /**
-     * The total number of billable characters counted across all instances from
-     * the request.
-     *
-     * @var int
-     */
-    public $totalBillableCharacters;
-    /**
-     * The total number of tokens counted across all instances from the request.
-     *
-     * @var int
-     */
-    public $totalTokens;
-    /**
-     * Output only. List of modalities that were processed in the request input.
-     *
-     * @param GoogleCloudAiplatformV1ModalityTokenCount[] $promptTokensDetails
-     */
-    public function setPromptTokensDetails($promptTokensDetails)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1CountTokensResponse extends \Google\Collection
     {
+        protected $collection_key = 'promptTokensDetails';
+        protected $promptTokensDetailsType = GoogleCloudAiplatformV1ModalityTokenCount::class;
+        protected $promptTokensDetailsDataType = 'array';
+        /**
+         * The total number of billable characters counted across all instances from
+         * the request.
+         *
+         * @var int
+         */
+        public $totalBillableCharacters;
+        /**
+         * The total number of tokens counted across all instances from the request.
+         *
+         * @var int
+         */
+        public $totalTokens;
+        /**
+         * Output only. List of modalities that were processed in the request input.
+         *
+         * @param GoogleCloudAiplatformV1ModalityTokenCount[] $promptTokensDetails
+         */
+        public function setPromptTokensDetails($promptTokensDetails)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ModalityTokenCount[]
+         */
+        public function getPromptTokensDetails()
+        {
+        }
+        /**
+         * The total number of billable characters counted across all instances from
+         * the request.
+         *
+         * @param int $totalBillableCharacters
+         */
+        public function setTotalBillableCharacters($totalBillableCharacters)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalBillableCharacters()
+        {
+        }
+        /**
+         * The total number of tokens counted across all instances from the request.
+         *
+         * @param int $totalTokens
+         */
+        public function setTotalTokens($totalTokens)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalTokens()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1ModalityTokenCount[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1CountTokensResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPromptTokensDetails()
-    {
-    }
-    /**
-     * The total number of billable characters counted across all instances from
-     * the request.
-     *
-     * @param int $totalBillableCharacters
-     */
-    public function setTotalBillableCharacters($totalBillableCharacters)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalBillableCharacters()
-    {
-    }
-    /**
-     * The total number of tokens counted across all instances from the request.
-     *
-     * @param int $totalTokens
-     */
-    public function setTotalTokens($totalTokens)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalTokens()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1CountTokensResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1CountTokensResponse
     {
     }
 }

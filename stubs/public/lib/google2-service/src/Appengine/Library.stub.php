@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Appengine;
-
-class Library extends \Google\Model
-{
-    /**
-     * Name of the library. Example: "django".
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Version of the library to select, or "latest".
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * Name of the library. Example: "django".
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Appengine {
+    class Library extends \Google\Model
     {
+        /**
+         * Name of the library. Example: "django".
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Version of the library to select, or "latest".
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * Name of the library. Example: "django".
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Version of the library to select, or "latest".
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Appengine\Library registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Version of the library to select, or "latest".
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_Appengine_Library extends \Google\Service\Appengine\Library
     {
     }
 }

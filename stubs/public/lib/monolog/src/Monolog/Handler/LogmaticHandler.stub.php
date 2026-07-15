@@ -16,6 +16,10 @@
  */
 namespace Monolog\Handler;
 
+use Monolog\Level;
+use Monolog\Formatter\FormatterInterface;
+use Monolog\Formatter\LogmaticFormatter;
+use Monolog\LogRecord;
 /**
  * @author Julien Breux <julien.breux@gmail.com>
  */

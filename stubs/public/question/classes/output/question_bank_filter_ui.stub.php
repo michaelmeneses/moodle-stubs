@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_question\output;
 
+use core\output\datafilter;
+use renderer_base;
+use stdClass;
 /**
  * Class for rendering filters on the base view.
  *

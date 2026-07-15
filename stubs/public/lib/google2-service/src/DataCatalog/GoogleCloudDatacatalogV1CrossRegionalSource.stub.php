@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1CrossRegionalSource extends \Google\Model
-{
-    /**
-     * Required. The resource name of the source taxonomy to import.
-     *
-     * @var string
-     */
-    public $taxonomy;
-    /**
-     * Required. The resource name of the source taxonomy to import.
-     *
-     * @param string $taxonomy
-     */
-    public function setTaxonomy($taxonomy)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1CrossRegionalSource extends \Google\Model
     {
+        /**
+         * Required. The resource name of the source taxonomy to import.
+         *
+         * @var string
+         */
+        public $taxonomy;
+        /**
+         * Required. The resource name of the source taxonomy to import.
+         *
+         * @param string $taxonomy
+         */
+        public function setTaxonomy($taxonomy)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTaxonomy()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1CrossRegionalSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTaxonomy()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1CrossRegionalSource extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1CrossRegionalSource
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class DeleteConditionalFormatRuleRequest extends \Google\Model
-{
-    /**
-     * The zero-based index of the rule to be deleted.
-     *
-     * @var int
-     */
-    public $index;
-    /**
-     * The sheet the rule is being deleted from.
-     *
-     * @var int
-     */
-    public $sheetId;
-    /**
-     * The zero-based index of the rule to be deleted.
-     *
-     * @param int $index
-     */
-    public function setIndex($index)
+namespace Google\Service\Sheets {
+    class DeleteConditionalFormatRuleRequest extends \Google\Model
     {
+        /**
+         * The zero-based index of the rule to be deleted.
+         *
+         * @var int
+         */
+        public $index;
+        /**
+         * The sheet the rule is being deleted from.
+         *
+         * @var int
+         */
+        public $sheetId;
+        /**
+         * The zero-based index of the rule to be deleted.
+         *
+         * @param int $index
+         */
+        public function setIndex($index)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getIndex()
+        {
+        }
+        /**
+         * The sheet the rule is being deleted from.
+         *
+         * @param int $sheetId
+         */
+        public function setSheetId($sheetId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSheetId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Sheets\DeleteConditionalFormatRuleRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIndex()
-    {
-    }
-    /**
-     * The sheet the rule is being deleted from.
-     *
-     * @param int $sheetId
-     */
-    public function setSheetId($sheetId)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSheetId()
+    class Google_Service_Sheets_DeleteConditionalFormatRuleRequest extends \Google\Service\Sheets\DeleteConditionalFormatRuleRequest
     {
     }
 }

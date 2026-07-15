@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ExplanationSpecOverride extends \Google\Model
-{
-    protected $examplesOverrideType = GoogleCloudAiplatformV1ExamplesOverride::class;
-    protected $examplesOverrideDataType = '';
-    protected $metadataType = GoogleCloudAiplatformV1ExplanationMetadataOverride::class;
-    protected $metadataDataType = '';
-    protected $parametersType = GoogleCloudAiplatformV1ExplanationParameters::class;
-    protected $parametersDataType = '';
-    /**
-     * The example-based explanations parameter overrides.
-     *
-     * @param GoogleCloudAiplatformV1ExamplesOverride $examplesOverride
-     */
-    public function setExamplesOverride(GoogleCloudAiplatformV1ExamplesOverride $examplesOverride)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ExplanationSpecOverride extends \Google\Model
     {
+        protected $examplesOverrideType = GoogleCloudAiplatformV1ExamplesOverride::class;
+        protected $examplesOverrideDataType = '';
+        protected $metadataType = GoogleCloudAiplatformV1ExplanationMetadataOverride::class;
+        protected $metadataDataType = '';
+        protected $parametersType = GoogleCloudAiplatformV1ExplanationParameters::class;
+        protected $parametersDataType = '';
+        /**
+         * The example-based explanations parameter overrides.
+         *
+         * @param GoogleCloudAiplatformV1ExamplesOverride $examplesOverride
+         */
+        public function setExamplesOverride(GoogleCloudAiplatformV1ExamplesOverride $examplesOverride)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ExamplesOverride
+         */
+        public function getExamplesOverride()
+        {
+        }
+        /**
+         * The metadata to be overridden. If not specified, no metadata is overridden.
+         *
+         * @param GoogleCloudAiplatformV1ExplanationMetadataOverride $metadata
+         */
+        public function setMetadata(GoogleCloudAiplatformV1ExplanationMetadataOverride $metadata)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ExplanationMetadataOverride
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * The parameters to be overridden. Note that the attribution method cannot be
+         * changed. If not specified, no parameter is overridden.
+         *
+         * @param GoogleCloudAiplatformV1ExplanationParameters $parameters
+         */
+        public function setParameters(GoogleCloudAiplatformV1ExplanationParameters $parameters)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ExplanationParameters
+         */
+        public function getParameters()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1ExamplesOverride
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ExplanationSpecOverride registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExamplesOverride()
-    {
-    }
-    /**
-     * The metadata to be overridden. If not specified, no metadata is overridden.
-     *
-     * @param GoogleCloudAiplatformV1ExplanationMetadataOverride $metadata
-     */
-    public function setMetadata(GoogleCloudAiplatformV1ExplanationMetadataOverride $metadata)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1ExplanationMetadataOverride
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * The parameters to be overridden. Note that the attribution method cannot be
-     * changed. If not specified, no parameter is overridden.
-     *
-     * @param GoogleCloudAiplatformV1ExplanationParameters $parameters
-     */
-    public function setParameters(GoogleCloudAiplatformV1ExplanationParameters $parameters)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1ExplanationParameters
-     */
-    public function getParameters()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ExplanationSpecOverride extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ExplanationSpecOverride
     {
     }
 }

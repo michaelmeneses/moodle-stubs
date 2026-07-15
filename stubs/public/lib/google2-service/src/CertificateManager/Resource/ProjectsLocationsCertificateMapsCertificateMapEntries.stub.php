@@ -21,107 +21,119 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CertificateManager\Resource;
-
-/**
- * The "certificateMapEntries" collection of methods.
- * Typical usage is:
- *  <code>
- *   $certificatemanagerService = new Google\Service\CertificateManager(...);
- *   $certificateMapEntries = $certificatemanagerService->projects_locations_certificateMaps_certificateMapEntries;
- *  </code>
- */
-class ProjectsLocationsCertificateMapsCertificateMapEntries extends \Google\Service\Resource
-{
+namespace Google\Service\CertificateManager\Resource {
+    use Google\Service\CertificateManager\CertificateMapEntry;
+    use Google\Service\CertificateManager\ListCertificateMapEntriesResponse;
+    use Google\Service\CertificateManager\Operation;
     /**
-     * Creates a new CertificateMapEntry in a given project and location.
-     * (certificateMapEntries.create)
-     *
-     * @param string $parent Required. The parent resource of the certificate map
-     * entry. Must be in the format `projects/locations/certificateMaps`.
-     * @param CertificateMapEntry $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string certificateMapEntryId Required. A user-provided name of the
-     * certificate map entry.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * The "certificateMapEntries" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $certificatemanagerService = new Google\Service\CertificateManager(...);
+     *   $certificateMapEntries = $certificatemanagerService->projects_locations_certificateMaps_certificateMapEntries;
+     *  </code>
      */
-    public function create($parent, CertificateMapEntry $postBody, $optParams = [])
+    class ProjectsLocationsCertificateMapsCertificateMapEntries extends \Google\Service\Resource
     {
+        /**
+         * Creates a new CertificateMapEntry in a given project and location.
+         * (certificateMapEntries.create)
+         *
+         * @param string $parent Required. The parent resource of the certificate map
+         * entry. Must be in the format `projects/locations/certificateMaps`.
+         * @param CertificateMapEntry $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string certificateMapEntryId Required. A user-provided name of the
+         * certificate map entry.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, CertificateMapEntry $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a single CertificateMapEntry. (certificateMapEntries.delete)
+         *
+         * @param string $name Required. A name of the certificate map entry to delete.
+         * Must be in the format
+         * `projects/locations/certificateMaps/certificateMapEntries`.
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets details of a single CertificateMapEntry. (certificateMapEntries.get)
+         *
+         * @param string $name Required. A name of the certificate map entry to
+         * describe. Must be in the format
+         * `projects/locations/certificateMaps/certificateMapEntries`.
+         * @param array $optParams Optional parameters.
+         * @return CertificateMapEntry
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists CertificateMapEntries in a given project and location. (certificateMapE
+         * ntries.listProjectsLocationsCertificateMapsCertificateMapEntries)
+         *
+         * @param string $parent Required. The project, location and certificate map
+         * from which the certificate map entries should be listed, specified in the
+         * format `projects/locations/certificateMaps`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Optional. Filter expression to restrict the returned
+         * Certificate Map Entries.
+         * @opt_param string orderBy Optional. A list of Certificate Map Entry field
+         * names used to specify the order of the returned results. The default sorting
+         * order is ascending. To specify descending order for a field, add a suffix `"
+         * desc"`.
+         * @opt_param int pageSize Optional. Maximum number of certificate map entries
+         * to return. The service may return fewer than this value. If unspecified, at
+         * most 50 certificate map entries will be returned. The maximum value is 1000;
+         * values above 1000 will be coerced to 1000.
+         * @opt_param string pageToken Optional. The value returned by the last
+         * `ListCertificateMapEntriesResponse`. Indicates that this is a continuation of
+         * a prior `ListCertificateMapEntries` call, and that the system should return
+         * the next page of data.
+         * @return ListCertificateMapEntriesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsCertificateMapsCertificateMapEntries($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates a CertificateMapEntry. (certificateMapEntries.patch)
+         *
+         * @param string $name Identifier. A user-defined name of the Certificate Map
+         * Entry. Certificate Map Entry names must be unique globally and match pattern
+         * `projects/locations/certificateMaps/certificateMapEntries`.
+         * @param CertificateMapEntry $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Required. The update mask applies to the
+         * resource. For the `FieldMask` definition, see
+         * https://developers.google.com/protocol-
+         * buffers/docs/reference/google.protobuf#fieldmask.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, CertificateMapEntry $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a single CertificateMapEntry. (certificateMapEntries.delete)
-     *
-     * @param string $name Required. A name of the certificate map entry to delete.
-     * Must be in the format
-     * `projects/locations/certificateMaps/certificateMapEntries`.
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\CertificateManager\Resource\ProjectsLocationsCertificateMapsCertificateMapEntries registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets details of a single CertificateMapEntry. (certificateMapEntries.get)
-     *
-     * @param string $name Required. A name of the certificate map entry to
-     * describe. Must be in the format
-     * `projects/locations/certificateMaps/certificateMapEntries`.
-     * @param array $optParams Optional parameters.
-     * @return CertificateMapEntry
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists CertificateMapEntries in a given project and location. (certificateMapE
-     * ntries.listProjectsLocationsCertificateMapsCertificateMapEntries)
-     *
-     * @param string $parent Required. The project, location and certificate map
-     * from which the certificate map entries should be listed, specified in the
-     * format `projects/locations/certificateMaps`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Optional. Filter expression to restrict the returned
-     * Certificate Map Entries.
-     * @opt_param string orderBy Optional. A list of Certificate Map Entry field
-     * names used to specify the order of the returned results. The default sorting
-     * order is ascending. To specify descending order for a field, add a suffix `"
-     * desc"`.
-     * @opt_param int pageSize Optional. Maximum number of certificate map entries
-     * to return. The service may return fewer than this value. If unspecified, at
-     * most 50 certificate map entries will be returned. The maximum value is 1000;
-     * values above 1000 will be coerced to 1000.
-     * @opt_param string pageToken Optional. The value returned by the last
-     * `ListCertificateMapEntriesResponse`. Indicates that this is a continuation of
-     * a prior `ListCertificateMapEntries` call, and that the system should return
-     * the next page of data.
-     * @return ListCertificateMapEntriesResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsCertificateMapsCertificateMapEntries($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates a CertificateMapEntry. (certificateMapEntries.patch)
-     *
-     * @param string $name Identifier. A user-defined name of the Certificate Map
-     * Entry. Certificate Map Entry names must be unique globally and match pattern
-     * `projects/locations/certificateMaps/certificateMapEntries`.
-     * @param CertificateMapEntry $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Required. The update mask applies to the
-     * resource. For the `FieldMask` definition, see
-     * https://developers.google.com/protocol-
-     * buffers/docs/reference/google.protobuf#fieldmask.
-     * @return Operation
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, CertificateMapEntry $postBody, $optParams = [])
+    class Google_Service_CertificateManager_Resource_ProjectsLocationsCertificateMapsCertificateMapEntries extends \Google\Service\CertificateManager\Resource\ProjectsLocationsCertificateMapsCertificateMapEntries
     {
     }
 }

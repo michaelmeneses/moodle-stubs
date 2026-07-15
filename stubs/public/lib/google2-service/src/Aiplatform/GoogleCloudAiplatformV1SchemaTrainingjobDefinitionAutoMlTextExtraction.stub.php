@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlTextExtraction extends \Google\Model
-{
-    protected $inputsType = GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlTextExtractionInputs::class;
-    protected $inputsDataType = '';
-    /**
-     * The input parameters of this TrainingJob.
-     *
-     * @param GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlTextExtractionInputs $inputs
-     */
-    public function setInputs(GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlTextExtractionInputs $inputs)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlTextExtraction extends \Google\Model
     {
+        protected $inputsType = GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlTextExtractionInputs::class;
+        protected $inputsDataType = '';
+        /**
+         * The input parameters of this TrainingJob.
+         *
+         * @param GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlTextExtractionInputs $inputs
+         */
+        public function setInputs(GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlTextExtractionInputs $inputs)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlTextExtractionInputs
+         */
+        public function getInputs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlTextExtractionInputs
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlTextExtraction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInputs()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlTextExtraction extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlTextExtraction
     {
     }
 }

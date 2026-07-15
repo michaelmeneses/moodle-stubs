@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class GoogleBigtableAdminV2TypeStringEncoding extends \Google\Model
-{
-    protected $utf8BytesType = GoogleBigtableAdminV2TypeStringEncodingUtf8Bytes::class;
-    protected $utf8BytesDataType = '';
-    protected $utf8RawType = GoogleBigtableAdminV2TypeStringEncodingUtf8Raw::class;
-    protected $utf8RawDataType = '';
-    /**
-     * Use `Utf8Bytes` encoding.
-     *
-     * @param GoogleBigtableAdminV2TypeStringEncodingUtf8Bytes $utf8Bytes
-     */
-    public function setUtf8Bytes(GoogleBigtableAdminV2TypeStringEncodingUtf8Bytes $utf8Bytes)
+namespace Google\Service\BigtableAdmin {
+    class GoogleBigtableAdminV2TypeStringEncoding extends \Google\Model
     {
+        protected $utf8BytesType = GoogleBigtableAdminV2TypeStringEncodingUtf8Bytes::class;
+        protected $utf8BytesDataType = '';
+        protected $utf8RawType = GoogleBigtableAdminV2TypeStringEncodingUtf8Raw::class;
+        protected $utf8RawDataType = '';
+        /**
+         * Use `Utf8Bytes` encoding.
+         *
+         * @param GoogleBigtableAdminV2TypeStringEncodingUtf8Bytes $utf8Bytes
+         */
+        public function setUtf8Bytes(GoogleBigtableAdminV2TypeStringEncodingUtf8Bytes $utf8Bytes)
+        {
+        }
+        /**
+         * @return GoogleBigtableAdminV2TypeStringEncodingUtf8Bytes
+         */
+        public function getUtf8Bytes()
+        {
+        }
+        /**
+         * Deprecated: if set, converts to an empty `utf8_bytes`.
+         *
+         * @deprecated
+         * @param GoogleBigtableAdminV2TypeStringEncodingUtf8Raw $utf8Raw
+         */
+        public function setUtf8Raw(GoogleBigtableAdminV2TypeStringEncodingUtf8Raw $utf8Raw)
+        {
+        }
+        /**
+         * @deprecated
+         * @return GoogleBigtableAdminV2TypeStringEncodingUtf8Raw
+         */
+        public function getUtf8Raw()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleBigtableAdminV2TypeStringEncodingUtf8Bytes
+     * Runtime class alias of \Google\Service\BigtableAdmin\GoogleBigtableAdminV2TypeStringEncoding registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUtf8Bytes()
-    {
-    }
-    /**
-     * Deprecated: if set, converts to an empty `utf8_bytes`.
-     *
-     * @deprecated
-     * @param GoogleBigtableAdminV2TypeStringEncodingUtf8Raw $utf8Raw
-     */
-    public function setUtf8Raw(GoogleBigtableAdminV2TypeStringEncodingUtf8Raw $utf8Raw)
-    {
-    }
-    /**
-     * @deprecated
-     * @return GoogleBigtableAdminV2TypeStringEncodingUtf8Raw
-     */
-    public function getUtf8Raw()
+    class Google_Service_BigtableAdmin_GoogleBigtableAdminV2TypeStringEncoding extends \Google\Service\BigtableAdmin\GoogleBigtableAdminV2TypeStringEncoding
     {
     }
 }

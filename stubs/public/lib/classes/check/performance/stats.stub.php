@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\check\performance;
 
+use core\check\check;
+use core\check\result;
 /**
  * Stats check
  *

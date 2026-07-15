@@ -21,124 +21,138 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsHub\Resource;
-
-/**
- * The "queryTemplates" collection of methods.
- * Typical usage is:
- *  <code>
- *   $analyticshubService = new Google\Service\AnalyticsHub(...);
- *   $queryTemplates = $analyticshubService->projects_locations_dataExchanges_queryTemplates;
- *  </code>
- */
-class ProjectsLocationsDataExchangesQueryTemplates extends \Google\Service\Resource
-{
+namespace Google\Service\AnalyticsHub\Resource {
+    use Google\Service\AnalyticsHub\AnalyticshubEmpty;
+    use Google\Service\AnalyticsHub\ApproveQueryTemplateRequest;
+    use Google\Service\AnalyticsHub\ListQueryTemplatesResponse;
+    use Google\Service\AnalyticsHub\QueryTemplate;
+    use Google\Service\AnalyticsHub\SubmitQueryTemplateRequest;
     /**
-     * Approves a query template. (queryTemplates.approve)
-     *
-     * @param string $name Required. The resource path of the QueryTemplate. e.g. `p
-     * rojects/myproject/locations/us/dataExchanges/123/queryTemplates/myqueryTempla
-     * te`.
-     * @param ApproveQueryTemplateRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return QueryTemplate
-     * @throws \Google\Service\Exception
+     * The "queryTemplates" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $analyticshubService = new Google\Service\AnalyticsHub(...);
+     *   $queryTemplates = $analyticshubService->projects_locations_dataExchanges_queryTemplates;
+     *  </code>
      */
-    public function approve($name, ApproveQueryTemplateRequest $postBody, $optParams = [])
+    class ProjectsLocationsDataExchangesQueryTemplates extends \Google\Service\Resource
     {
+        /**
+         * Approves a query template. (queryTemplates.approve)
+         *
+         * @param string $name Required. The resource path of the QueryTemplate. e.g. `p
+         * rojects/myproject/locations/us/dataExchanges/123/queryTemplates/myqueryTempla
+         * te`.
+         * @param ApproveQueryTemplateRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return QueryTemplate
+         * @throws \Google\Service\Exception
+         */
+        public function approve($name, ApproveQueryTemplateRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Creates a new QueryTemplate (queryTemplates.create)
+         *
+         * @param string $parent Required. The parent resource path of the
+         * QueryTemplate. e.g. `projects/myproject/locations/us/dataExchanges/123/queryT
+         * emplates/myQueryTemplate`.
+         * @param QueryTemplate $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string queryTemplateId Required. The ID of the QueryTemplate to
+         * create. Must contain only Unicode letters, numbers (0-9), underscores (_).
+         * Max length: 100 bytes.
+         * @return QueryTemplate
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, QueryTemplate $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a query template. (queryTemplates.delete)
+         *
+         * @param string $name Required. The resource path of the QueryTemplate. e.g. `p
+         * rojects/myproject/locations/us/dataExchanges/123/queryTemplates/myqueryTempla
+         * te`.
+         * @param array $optParams Optional parameters.
+         * @return AnalyticshubEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets a QueryTemplate (queryTemplates.get)
+         *
+         * @param string $name Required. The parent resource path of the QueryTemplate.
+         * e.g. `projects/myproject/locations/us/dataExchanges/123/queryTemplates/myquer
+         * yTemplate`.
+         * @param array $optParams Optional parameters.
+         * @return QueryTemplate
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists all QueryTemplates in a given project and location.
+         * (queryTemplates.listProjectsLocationsDataExchangesQueryTemplates)
+         *
+         * @param string $parent Required. The parent resource path of the
+         * QueryTemplates. e.g. `projects/myproject/locations/us/dataExchanges/123`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Optional. The maximum number of results to return in
+         * a single response page. Leverage the page tokens to iterate through the
+         * entire collection.
+         * @opt_param string pageToken Optional. Page token, returned by a previous
+         * call, to request the next page of results.
+         * @return ListQueryTemplatesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsDataExchangesQueryTemplates($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates an existing QueryTemplate (queryTemplates.patch)
+         *
+         * @param string $name Output only. The resource name of the QueryTemplate. e.g.
+         * `projects/myproject/locations/us/dataExchanges/123/queryTemplates/456`
+         * @param QueryTemplate $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Optional. Field mask specifies the fields to
+         * update in the query template resource. The fields specified in the
+         * `updateMask` are relative to the resource and are not a full request.
+         * @return QueryTemplate
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, QueryTemplate $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Submits a query template for approval. (queryTemplates.submit)
+         *
+         * @param string $name Required. The resource path of the QueryTemplate. e.g. `p
+         * rojects/myproject/locations/us/dataExchanges/123/queryTemplates/myqueryTempla
+         * te`.
+         * @param SubmitQueryTemplateRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return QueryTemplate
+         * @throws \Google\Service\Exception
+         */
+        public function submit($name, SubmitQueryTemplateRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Creates a new QueryTemplate (queryTemplates.create)
-     *
-     * @param string $parent Required. The parent resource path of the
-     * QueryTemplate. e.g. `projects/myproject/locations/us/dataExchanges/123/queryT
-     * emplates/myQueryTemplate`.
-     * @param QueryTemplate $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string queryTemplateId Required. The ID of the QueryTemplate to
-     * create. Must contain only Unicode letters, numbers (0-9), underscores (_).
-     * Max length: 100 bytes.
-     * @return QueryTemplate
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\AnalyticsHub\Resource\ProjectsLocationsDataExchangesQueryTemplates registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function create($parent, QueryTemplate $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Deletes a query template. (queryTemplates.delete)
-     *
-     * @param string $name Required. The resource path of the QueryTemplate. e.g. `p
-     * rojects/myproject/locations/us/dataExchanges/123/queryTemplates/myqueryTempla
-     * te`.
-     * @param array $optParams Optional parameters.
-     * @return AnalyticshubEmpty
-     * @throws \Google\Service\Exception
-     */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets a QueryTemplate (queryTemplates.get)
-     *
-     * @param string $name Required. The parent resource path of the QueryTemplate.
-     * e.g. `projects/myproject/locations/us/dataExchanges/123/queryTemplates/myquer
-     * yTemplate`.
-     * @param array $optParams Optional parameters.
-     * @return QueryTemplate
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists all QueryTemplates in a given project and location.
-     * (queryTemplates.listProjectsLocationsDataExchangesQueryTemplates)
-     *
-     * @param string $parent Required. The parent resource path of the
-     * QueryTemplates. e.g. `projects/myproject/locations/us/dataExchanges/123`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Optional. The maximum number of results to return in
-     * a single response page. Leverage the page tokens to iterate through the
-     * entire collection.
-     * @opt_param string pageToken Optional. Page token, returned by a previous
-     * call, to request the next page of results.
-     * @return ListQueryTemplatesResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsDataExchangesQueryTemplates($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates an existing QueryTemplate (queryTemplates.patch)
-     *
-     * @param string $name Output only. The resource name of the QueryTemplate. e.g.
-     * `projects/myproject/locations/us/dataExchanges/123/queryTemplates/456`
-     * @param QueryTemplate $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Optional. Field mask specifies the fields to
-     * update in the query template resource. The fields specified in the
-     * `updateMask` are relative to the resource and are not a full request.
-     * @return QueryTemplate
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, QueryTemplate $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Submits a query template for approval. (queryTemplates.submit)
-     *
-     * @param string $name Required. The resource path of the QueryTemplate. e.g. `p
-     * rojects/myproject/locations/us/dataExchanges/123/queryTemplates/myqueryTempla
-     * te`.
-     * @param SubmitQueryTemplateRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return QueryTemplate
-     * @throws \Google\Service\Exception
-     */
-    public function submit($name, SubmitQueryTemplateRequest $postBody, $optParams = [])
+    class Google_Service_AnalyticsHub_Resource_ProjectsLocationsDataExchangesQueryTemplates extends \Google\Service\AnalyticsHub\Resource\ProjectsLocationsDataExchangesQueryTemplates
     {
     }
 }

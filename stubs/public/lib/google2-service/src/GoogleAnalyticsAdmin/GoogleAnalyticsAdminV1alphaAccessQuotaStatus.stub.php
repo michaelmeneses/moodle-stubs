@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaAccessQuotaStatus extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $consumed;
-    /**
-     * @var int
-     */
-    public $remaining;
-    /**
-     * @param int
-     */
-    public function setConsumed($consumed)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaAccessQuotaStatus extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $consumed;
+        /**
+         * @var int
+         */
+        public $remaining;
+        /**
+         * @param int
+         */
+        public function setConsumed($consumed)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getConsumed()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setRemaining($remaining)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRemaining()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaAccessQuotaStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConsumed()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setRemaining($remaining)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getRemaining()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaAccessQuotaStatus extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaAccessQuotaStatus
     {
     }
 }

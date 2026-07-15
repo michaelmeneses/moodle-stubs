@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2betaRemoveLocalInventoriesMetadata extends \Google\Model
-{
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2betaRemoveLocalInventoriesMetadata extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2betaRemoveLocalInventoriesMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudRetail_GoogleCloudRetailV2betaRemoveLocalInventoriesMetadata extends \Google\Service\CloudRetail\GoogleCloudRetailV2betaRemoveLocalInventoriesMetadata
+    {
+    }
 }

@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveLabels;
-
-class GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseUpdateSelectionChoicePropertiesResponse extends \Google\Model
-{
-    /**
-     * The priority of the updated choice. The priority may change from what was
-     * specified to assure contiguous priorities between choices (1-n).
-     *
-     * @var int
-     */
-    public $priority;
-    /**
-     * The priority of the updated choice. The priority may change from what was
-     * specified to assure contiguous priorities between choices (1-n).
-     *
-     * @param int $priority
-     */
-    public function setPriority($priority)
+namespace Google\Service\DriveLabels {
+    class GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseUpdateSelectionChoicePropertiesResponse extends \Google\Model
     {
+        /**
+         * The priority of the updated choice. The priority may change from what was
+         * specified to assure contiguous priorities between choices (1-n).
+         *
+         * @var int
+         */
+        public $priority;
+        /**
+         * The priority of the updated choice. The priority may change from what was
+         * specified to assure contiguous priorities between choices (1-n).
+         *
+         * @param int $priority
+         */
+        public function setPriority($priority)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPriority()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseUpdateSelectionChoicePropertiesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPriority()
+    class Google_Service_DriveLabels_GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseUpdateSelectionChoicePropertiesResponse extends \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseUpdateSelectionChoicePropertiesResponse
     {
     }
 }

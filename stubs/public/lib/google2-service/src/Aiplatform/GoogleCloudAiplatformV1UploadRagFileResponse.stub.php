@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1UploadRagFileResponse extends \Google\Model
-{
-    protected $errorType = GoogleRpcStatus::class;
-    protected $errorDataType = '';
-    protected $ragFileType = GoogleCloudAiplatformV1RagFile::class;
-    protected $ragFileDataType = '';
-    /**
-     * The error that occurred while processing the RagFile.
-     *
-     * @param GoogleRpcStatus $error
-     */
-    public function setError(GoogleRpcStatus $error)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1UploadRagFileResponse extends \Google\Model
     {
+        protected $errorType = GoogleRpcStatus::class;
+        protected $errorDataType = '';
+        protected $ragFileType = GoogleCloudAiplatformV1RagFile::class;
+        protected $ragFileDataType = '';
+        /**
+         * The error that occurred while processing the RagFile.
+         *
+         * @param GoogleRpcStatus $error
+         */
+        public function setError(GoogleRpcStatus $error)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus
+         */
+        public function getError()
+        {
+        }
+        /**
+         * The RagFile that had been uploaded into the RagCorpus.
+         *
+         * @param GoogleCloudAiplatformV1RagFile $ragFile
+         */
+        public function setRagFile(GoogleCloudAiplatformV1RagFile $ragFile)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1RagFile
+         */
+        public function getRagFile()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleRpcStatus
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1UploadRagFileResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getError()
-    {
-    }
-    /**
-     * The RagFile that had been uploaded into the RagCorpus.
-     *
-     * @param GoogleCloudAiplatformV1RagFile $ragFile
-     */
-    public function setRagFile(GoogleCloudAiplatformV1RagFile $ragFile)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1RagFile
-     */
-    public function getRagFile()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1UploadRagFileResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1UploadRagFileResponse
     {
     }
 }

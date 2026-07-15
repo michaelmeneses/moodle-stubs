@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AlertCenter;
-
-class OutOfDomainForwarding extends \Google\Model
-{
-    public $actorEmail;
-    public $enableTime;
-    public $forwardeeEmail;
-    public $ipAddress;
-    public function setActorEmail($actorEmail)
+namespace Google\Service\AlertCenter {
+    class OutOfDomainForwarding extends \Google\Model
     {
+        public $actorEmail;
+        public $enableTime;
+        public $forwardeeEmail;
+        public $ipAddress;
+        public function setActorEmail($actorEmail)
+        {
+        }
+        public function getActorEmail()
+        {
+        }
+        public function setEnableTime($enableTime)
+        {
+        }
+        public function getEnableTime()
+        {
+        }
+        public function setForwardeeEmail($forwardeeEmail)
+        {
+        }
+        public function getForwardeeEmail()
+        {
+        }
+        public function setIpAddress($ipAddress)
+        {
+        }
+        public function getIpAddress()
+        {
+        }
     }
-    public function getActorEmail()
-    {
-    }
-    public function setEnableTime($enableTime)
-    {
-    }
-    public function getEnableTime()
-    {
-    }
-    public function setForwardeeEmail($forwardeeEmail)
-    {
-    }
-    public function getForwardeeEmail()
-    {
-    }
-    public function setIpAddress($ipAddress)
-    {
-    }
-    public function getIpAddress()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AlertCenter\OutOfDomainForwarding registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AlertCenter_OutOfDomainForwarding extends \Google\Service\AlertCenter\OutOfDomainForwarding
     {
     }
 }

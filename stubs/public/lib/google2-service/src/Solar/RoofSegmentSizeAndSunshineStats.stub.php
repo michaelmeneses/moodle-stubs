@@ -21,128 +21,137 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Solar;
-
-class RoofSegmentSizeAndSunshineStats extends \Google\Model
-{
-    /**
-     * Compass direction the roof segment is pointing in. 0 = North, 90 = East,
-     * 180 = South. For a "flat" roof segment (`pitch_degrees` very near 0),
-     * azimuth is not well defined, so for consistency, we define it arbitrarily
-     * to be 0 (North).
-     *
-     * @var float
-     */
-    public $azimuthDegrees;
-    protected $boundingBoxType = LatLngBox::class;
-    protected $boundingBoxDataType = '';
-    protected $centerType = LatLng::class;
-    protected $centerDataType = '';
-    /**
-     * Angle of the roof segment relative to the theoretical ground plane. 0 =
-     * parallel to the ground, 90 = perpendicular to the ground.
-     *
-     * @var float
-     */
-    public $pitchDegrees;
-    /**
-     * The height of the roof segment plane, in meters above sea level, at the
-     * point designated by `center`. Together with the pitch, azimuth, and center
-     * location, this fully defines the roof segment plane.
-     *
-     * @var float
-     */
-    public $planeHeightAtCenterMeters;
-    protected $statsType = SizeAndSunshineStats::class;
-    protected $statsDataType = '';
-    /**
-     * Compass direction the roof segment is pointing in. 0 = North, 90 = East,
-     * 180 = South. For a "flat" roof segment (`pitch_degrees` very near 0),
-     * azimuth is not well defined, so for consistency, we define it arbitrarily
-     * to be 0 (North).
-     *
-     * @param float $azimuthDegrees
-     */
-    public function setAzimuthDegrees($azimuthDegrees)
+namespace Google\Service\Solar {
+    class RoofSegmentSizeAndSunshineStats extends \Google\Model
     {
+        /**
+         * Compass direction the roof segment is pointing in. 0 = North, 90 = East,
+         * 180 = South. For a "flat" roof segment (`pitch_degrees` very near 0),
+         * azimuth is not well defined, so for consistency, we define it arbitrarily
+         * to be 0 (North).
+         *
+         * @var float
+         */
+        public $azimuthDegrees;
+        protected $boundingBoxType = LatLngBox::class;
+        protected $boundingBoxDataType = '';
+        protected $centerType = LatLng::class;
+        protected $centerDataType = '';
+        /**
+         * Angle of the roof segment relative to the theoretical ground plane. 0 =
+         * parallel to the ground, 90 = perpendicular to the ground.
+         *
+         * @var float
+         */
+        public $pitchDegrees;
+        /**
+         * The height of the roof segment plane, in meters above sea level, at the
+         * point designated by `center`. Together with the pitch, azimuth, and center
+         * location, this fully defines the roof segment plane.
+         *
+         * @var float
+         */
+        public $planeHeightAtCenterMeters;
+        protected $statsType = SizeAndSunshineStats::class;
+        protected $statsDataType = '';
+        /**
+         * Compass direction the roof segment is pointing in. 0 = North, 90 = East,
+         * 180 = South. For a "flat" roof segment (`pitch_degrees` very near 0),
+         * azimuth is not well defined, so for consistency, we define it arbitrarily
+         * to be 0 (North).
+         *
+         * @param float $azimuthDegrees
+         */
+        public function setAzimuthDegrees($azimuthDegrees)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getAzimuthDegrees()
+        {
+        }
+        /**
+         * The bounding box of the roof segment.
+         *
+         * @param LatLngBox $boundingBox
+         */
+        public function setBoundingBox(LatLngBox $boundingBox)
+        {
+        }
+        /**
+         * @return LatLngBox
+         */
+        public function getBoundingBox()
+        {
+        }
+        /**
+         * A point near the center of the roof segment.
+         *
+         * @param LatLng $center
+         */
+        public function setCenter(LatLng $center)
+        {
+        }
+        /**
+         * @return LatLng
+         */
+        public function getCenter()
+        {
+        }
+        /**
+         * Angle of the roof segment relative to the theoretical ground plane. 0 =
+         * parallel to the ground, 90 = perpendicular to the ground.
+         *
+         * @param float $pitchDegrees
+         */
+        public function setPitchDegrees($pitchDegrees)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getPitchDegrees()
+        {
+        }
+        /**
+         * The height of the roof segment plane, in meters above sea level, at the
+         * point designated by `center`. Together with the pitch, azimuth, and center
+         * location, this fully defines the roof segment plane.
+         *
+         * @param float $planeHeightAtCenterMeters
+         */
+        public function setPlaneHeightAtCenterMeters($planeHeightAtCenterMeters)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getPlaneHeightAtCenterMeters()
+        {
+        }
+        /**
+         * Total size and sunlight quantiles for the roof segment.
+         *
+         * @param SizeAndSunshineStats $stats
+         */
+        public function setStats(SizeAndSunshineStats $stats)
+        {
+        }
+        /**
+         * @return SizeAndSunshineStats
+         */
+        public function getStats()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\Solar\RoofSegmentSizeAndSunshineStats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAzimuthDegrees()
-    {
-    }
-    /**
-     * The bounding box of the roof segment.
-     *
-     * @param LatLngBox $boundingBox
-     */
-    public function setBoundingBox(LatLngBox $boundingBox)
-    {
-    }
-    /**
-     * @return LatLngBox
-     */
-    public function getBoundingBox()
-    {
-    }
-    /**
-     * A point near the center of the roof segment.
-     *
-     * @param LatLng $center
-     */
-    public function setCenter(LatLng $center)
-    {
-    }
-    /**
-     * @return LatLng
-     */
-    public function getCenter()
-    {
-    }
-    /**
-     * Angle of the roof segment relative to the theoretical ground plane. 0 =
-     * parallel to the ground, 90 = perpendicular to the ground.
-     *
-     * @param float $pitchDegrees
-     */
-    public function setPitchDegrees($pitchDegrees)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getPitchDegrees()
-    {
-    }
-    /**
-     * The height of the roof segment plane, in meters above sea level, at the
-     * point designated by `center`. Together with the pitch, azimuth, and center
-     * location, this fully defines the roof segment plane.
-     *
-     * @param float $planeHeightAtCenterMeters
-     */
-    public function setPlaneHeightAtCenterMeters($planeHeightAtCenterMeters)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getPlaneHeightAtCenterMeters()
-    {
-    }
-    /**
-     * Total size and sunlight quantiles for the roof segment.
-     *
-     * @param SizeAndSunshineStats $stats
-     */
-    public function setStats(SizeAndSunshineStats $stats)
-    {
-    }
-    /**
-     * @return SizeAndSunshineStats
-     */
-    public function getStats()
+    class Google_Service_Solar_RoofSegmentSizeAndSunshineStats extends \Google\Service\Solar\RoofSegmentSizeAndSunshineStats
     {
     }
 }

@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudbilling;
-
-class ListProjectBillingInfoResponse extends \Google\Collection
-{
-    protected $collection_key = 'projectBillingInfo';
-    /**
-     * A token to retrieve the next page of results. To retrieve the next page,
-     * call `ListProjectBillingInfo` again with the `page_token` field set to this
-     * value. This field is empty if there are no more results to retrieve.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $projectBillingInfoType = ProjectBillingInfo::class;
-    protected $projectBillingInfoDataType = 'array';
-    /**
-     * A token to retrieve the next page of results. To retrieve the next page,
-     * call `ListProjectBillingInfo` again with the `page_token` field set to this
-     * value. This field is empty if there are no more results to retrieve.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Cloudbilling {
+    class ListProjectBillingInfoResponse extends \Google\Collection
     {
+        protected $collection_key = 'projectBillingInfo';
+        /**
+         * A token to retrieve the next page of results. To retrieve the next page,
+         * call `ListProjectBillingInfo` again with the `page_token` field set to this
+         * value. This field is empty if there are no more results to retrieve.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $projectBillingInfoType = ProjectBillingInfo::class;
+        protected $projectBillingInfoDataType = 'array';
+        /**
+         * A token to retrieve the next page of results. To retrieve the next page,
+         * call `ListProjectBillingInfo` again with the `page_token` field set to this
+         * value. This field is empty if there are no more results to retrieve.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * A list of `ProjectBillingInfo` resources representing the projects
+         * associated with the billing account.
+         *
+         * @param ProjectBillingInfo[] $projectBillingInfo
+         */
+        public function setProjectBillingInfo($projectBillingInfo)
+        {
+        }
+        /**
+         * @return ProjectBillingInfo[]
+         */
+        public function getProjectBillingInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Cloudbilling\ListProjectBillingInfoResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * A list of `ProjectBillingInfo` resources representing the projects
-     * associated with the billing account.
-     *
-     * @param ProjectBillingInfo[] $projectBillingInfo
-     */
-    public function setProjectBillingInfo($projectBillingInfo)
-    {
-    }
-    /**
-     * @return ProjectBillingInfo[]
-     */
-    public function getProjectBillingInfo()
+    class Google_Service_Cloudbilling_ListProjectBillingInfoResponse extends \Google\Service\Cloudbilling\ListProjectBillingInfoResponse
     {
     }
 }

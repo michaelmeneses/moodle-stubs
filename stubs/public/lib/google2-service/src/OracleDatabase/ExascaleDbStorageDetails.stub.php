@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OracleDatabase;
-
-class ExascaleDbStorageDetails extends \Google\Model
-{
-    /**
-     * Output only. The available storage capacity for the ExascaleDbStorageVault,
-     * in gigabytes (GB).
-     *
-     * @var int
-     */
-    public $availableSizeGbs;
-    /**
-     * Required. The total storage allocation for the ExascaleDbStorageVault, in
-     * gigabytes (GB).
-     *
-     * @var int
-     */
-    public $totalSizeGbs;
-    /**
-     * Output only. The available storage capacity for the ExascaleDbStorageVault,
-     * in gigabytes (GB).
-     *
-     * @param int $availableSizeGbs
-     */
-    public function setAvailableSizeGbs($availableSizeGbs)
+namespace Google\Service\OracleDatabase {
+    class ExascaleDbStorageDetails extends \Google\Model
     {
+        /**
+         * Output only. The available storage capacity for the ExascaleDbStorageVault,
+         * in gigabytes (GB).
+         *
+         * @var int
+         */
+        public $availableSizeGbs;
+        /**
+         * Required. The total storage allocation for the ExascaleDbStorageVault, in
+         * gigabytes (GB).
+         *
+         * @var int
+         */
+        public $totalSizeGbs;
+        /**
+         * Output only. The available storage capacity for the ExascaleDbStorageVault,
+         * in gigabytes (GB).
+         *
+         * @param int $availableSizeGbs
+         */
+        public function setAvailableSizeGbs($availableSizeGbs)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getAvailableSizeGbs()
+        {
+        }
+        /**
+         * Required. The total storage allocation for the ExascaleDbStorageVault, in
+         * gigabytes (GB).
+         *
+         * @param int $totalSizeGbs
+         */
+        public function setTotalSizeGbs($totalSizeGbs)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalSizeGbs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\OracleDatabase\ExascaleDbStorageDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAvailableSizeGbs()
-    {
-    }
-    /**
-     * Required. The total storage allocation for the ExascaleDbStorageVault, in
-     * gigabytes (GB).
-     *
-     * @param int $totalSizeGbs
-     */
-    public function setTotalSizeGbs($totalSizeGbs)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalSizeGbs()
+    class Google_Service_OracleDatabase_ExascaleDbStorageDetails extends \Google\Service\OracleDatabase\ExascaleDbStorageDetails
     {
     }
 }

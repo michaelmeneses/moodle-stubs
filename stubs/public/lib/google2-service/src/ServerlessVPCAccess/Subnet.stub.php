@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServerlessVPCAccess;
-
-class Subnet extends \Google\Model
-{
-    /**
-     * Optional. Subnet name (relative, not fully qualified). E.g. if the full
-     * subnet selfLink is https://compute.googleapis.com/compute/v1/projects/{proj
-     * ect}/regions/{region}/subnetworks/{subnetName} the correct input for this
-     * field would be {subnetName}
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optional. Project in which the subnet exists. If not set, this project is
-     * assumed to be the project for which the connector create request was
-     * issued.
-     *
-     * @var string
-     */
-    public $projectId;
-    /**
-     * Optional. Subnet name (relative, not fully qualified). E.g. if the full
-     * subnet selfLink is https://compute.googleapis.com/compute/v1/projects/{proj
-     * ect}/regions/{region}/subnetworks/{subnetName} the correct input for this
-     * field would be {subnetName}
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\ServerlessVPCAccess {
+    class Subnet extends \Google\Model
     {
+        /**
+         * Optional. Subnet name (relative, not fully qualified). E.g. if the full
+         * subnet selfLink is https://compute.googleapis.com/compute/v1/projects/{proj
+         * ect}/regions/{region}/subnetworks/{subnetName} the correct input for this
+         * field would be {subnetName}
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optional. Project in which the subnet exists. If not set, this project is
+         * assumed to be the project for which the connector create request was
+         * issued.
+         *
+         * @var string
+         */
+        public $projectId;
+        /**
+         * Optional. Subnet name (relative, not fully qualified). E.g. if the full
+         * subnet selfLink is https://compute.googleapis.com/compute/v1/projects/{proj
+         * ect}/regions/{region}/subnetworks/{subnetName} the correct input for this
+         * field would be {subnetName}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. Project in which the subnet exists. If not set, this project is
+         * assumed to be the project for which the connector create request was
+         * issued.
+         *
+         * @param string $projectId
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ServerlessVPCAccess\Subnet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. Project in which the subnet exists. If not set, this project is
-     * assumed to be the project for which the connector create request was
-     * issued.
-     *
-     * @param string $projectId
-     */
-    public function setProjectId($projectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProjectId()
+    class Google_Service_ServerlessVPCAccess_Subnet extends \Google\Service\ServerlessVPCAccess\Subnet
     {
     }
 }

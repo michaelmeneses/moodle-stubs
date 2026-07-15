@@ -21,31 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dns\Resource;
-
-/**
- * The "projects" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dnsService = new Google\Service\Dns(...);
- *   $projects = $dnsService->projects;
- *  </code>
- */
-class Projects extends \Google\Service\Resource
-{
+namespace Google\Service\Dns\Resource {
+    use Google\Service\Dns\Project;
     /**
-     * Fetches the representation of an existing Project. (projects.get)
-     *
-     * @param string $project Identifies the project addressed by this request.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string clientOperationId For mutating operation requests only. An
-     * optional identifier specified by the client. Must be unique for operation
-     * resources in the Operations collection.
-     * @return Project
-     * @throws \Google\Service\Exception
+     * The "projects" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dnsService = new Google\Service\Dns(...);
+     *   $projects = $dnsService->projects;
+     *  </code>
      */
-    public function get($project, $optParams = [])
+    class Projects extends \Google\Service\Resource
+    {
+        /**
+         * Fetches the representation of an existing Project. (projects.get)
+         *
+         * @param string $project Identifies the project addressed by this request.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string clientOperationId For mutating operation requests only. An
+         * optional identifier specified by the client. Must be unique for operation
+         * resources in the Operations collection.
+         * @return Project
+         * @throws \Google\Service\Exception
+         */
+        public function get($project, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Dns\Resource\Projects registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Dns_Resource_Projects extends \Google\Service\Dns\Resource\Projects
     {
     }
 }

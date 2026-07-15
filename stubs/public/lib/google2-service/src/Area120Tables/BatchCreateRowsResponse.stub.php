@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Area120Tables;
-
-class BatchCreateRowsResponse extends \Google\Collection
-{
-    protected $collection_key = 'rows';
-    protected $rowsType = Row::class;
-    protected $rowsDataType = 'array';
-    /**
-     * The created rows.
-     *
-     * @param Row[] $rows
-     */
-    public function setRows($rows)
+namespace Google\Service\Area120Tables {
+    class BatchCreateRowsResponse extends \Google\Collection
     {
+        protected $collection_key = 'rows';
+        protected $rowsType = Row::class;
+        protected $rowsDataType = 'array';
+        /**
+         * The created rows.
+         *
+         * @param Row[] $rows
+         */
+        public function setRows($rows)
+        {
+        }
+        /**
+         * @return Row[]
+         */
+        public function getRows()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Row[]
+     * Runtime class alias of \Google\Service\Area120Tables\BatchCreateRowsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRows()
+    class Google_Service_Area120Tables_BatchCreateRowsResponse extends \Google\Service\Area120Tables\BatchCreateRowsResponse
     {
     }
 }

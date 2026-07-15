@@ -21,20 +21,29 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSCorrelationStats extends \Google\Model
-{
-    /**
-     * The correlation value using the Cramer's V measure.
-     *
-     * @var 
-     */
-    public $cramersV;
-    public function setCramersV($cramersV)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSCorrelationStats extends \Google\Model
     {
+        /**
+         * The correlation value using the Cramer's V measure.
+         *
+         * @var 
+         */
+        public $cramersV;
+        public function setCramersV($cramersV)
+        {
+        }
+        public function getCramersV()
+        {
+        }
     }
-    public function getCramersV()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSCorrelationStats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudNaturalLanguage_XPSCorrelationStats extends \Google\Service\CloudNaturalLanguage\XPSCorrelationStats
     {
     }
 }

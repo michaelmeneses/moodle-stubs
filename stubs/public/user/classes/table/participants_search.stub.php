@@ -29,6 +29,13 @@
  */
 namespace core_user\table;
 
+use context;
+use context_helper;
+use core_table\local\filter\filterset;
+use core_user;
+use moodle_recordset;
+use stdClass;
+use core_user\fields;
 /**
  * Class used to fetch participants based on a filterset.
  *

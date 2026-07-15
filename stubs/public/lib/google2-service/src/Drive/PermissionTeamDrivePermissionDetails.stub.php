@@ -21,100 +21,109 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Drive;
-
-class PermissionTeamDrivePermissionDetails extends \Google\Model
-{
-    /**
-     * Deprecated: Output only. Use `permissionDetails/inherited` instead.
-     *
-     * @deprecated
-     * @var bool
-     */
-    public $inherited;
-    /**
-     * Deprecated: Output only. Use `permissionDetails/inheritedFrom` instead.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $inheritedFrom;
-    /**
-     * Deprecated: Output only. Use `permissionDetails/role` instead.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $role;
-    /**
-     * Deprecated: Output only. Use `permissionDetails/permissionType` instead.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $teamDrivePermissionType;
-    /**
-     * Deprecated: Output only. Use `permissionDetails/inherited` instead.
-     *
-     * @deprecated
-     * @param bool $inherited
-     */
-    public function setInherited($inherited)
+namespace Google\Service\Drive {
+    class PermissionTeamDrivePermissionDetails extends \Google\Model
     {
+        /**
+         * Deprecated: Output only. Use `permissionDetails/inherited` instead.
+         *
+         * @deprecated
+         * @var bool
+         */
+        public $inherited;
+        /**
+         * Deprecated: Output only. Use `permissionDetails/inheritedFrom` instead.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $inheritedFrom;
+        /**
+         * Deprecated: Output only. Use `permissionDetails/role` instead.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $role;
+        /**
+         * Deprecated: Output only. Use `permissionDetails/permissionType` instead.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $teamDrivePermissionType;
+        /**
+         * Deprecated: Output only. Use `permissionDetails/inherited` instead.
+         *
+         * @deprecated
+         * @param bool $inherited
+         */
+        public function setInherited($inherited)
+        {
+        }
+        /**
+         * @deprecated
+         * @return bool
+         */
+        public function getInherited()
+        {
+        }
+        /**
+         * Deprecated: Output only. Use `permissionDetails/inheritedFrom` instead.
+         *
+         * @deprecated
+         * @param string $inheritedFrom
+         */
+        public function setInheritedFrom($inheritedFrom)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getInheritedFrom()
+        {
+        }
+        /**
+         * Deprecated: Output only. Use `permissionDetails/role` instead.
+         *
+         * @deprecated
+         * @param string $role
+         */
+        public function setRole($role)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getRole()
+        {
+        }
+        /**
+         * Deprecated: Output only. Use `permissionDetails/permissionType` instead.
+         *
+         * @deprecated
+         * @param string $teamDrivePermissionType
+         */
+        public function setTeamDrivePermissionType($teamDrivePermissionType)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getTeamDrivePermissionType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return bool
+     * Runtime class alias of \Google\Service\Drive\PermissionTeamDrivePermissionDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInherited()
-    {
-    }
-    /**
-     * Deprecated: Output only. Use `permissionDetails/inheritedFrom` instead.
-     *
-     * @deprecated
-     * @param string $inheritedFrom
-     */
-    public function setInheritedFrom($inheritedFrom)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getInheritedFrom()
-    {
-    }
-    /**
-     * Deprecated: Output only. Use `permissionDetails/role` instead.
-     *
-     * @deprecated
-     * @param string $role
-     */
-    public function setRole($role)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getRole()
-    {
-    }
-    /**
-     * Deprecated: Output only. Use `permissionDetails/permissionType` instead.
-     *
-     * @deprecated
-     * @param string $teamDrivePermissionType
-     */
-    public function setTeamDrivePermissionType($teamDrivePermissionType)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getTeamDrivePermissionType()
+    class Google_Service_Drive_PermissionTeamDrivePermissionDetails extends \Google\Service\Drive\PermissionTeamDrivePermissionDetails
     {
     }
 }

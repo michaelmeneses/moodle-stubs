@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataform;
-
-class SqlDefinition extends \Google\Model
-{
-    protected $errorTableType = ErrorTable::class;
-    protected $errorTableDataType = '';
-    protected $loadType = LoadConfig::class;
-    protected $loadDataType = '';
-    /**
-     * The SQL query representing the data preparation steps. Formatted as a Pipe
-     * SQL query statement.
-     *
-     * @var string
-     */
-    public $query;
-    /**
-     * Error table configuration,
-     *
-     * @param ErrorTable $errorTable
-     */
-    public function setErrorTable(ErrorTable $errorTable)
+namespace Google\Service\Dataform {
+    class SqlDefinition extends \Google\Model
     {
+        protected $errorTableType = ErrorTable::class;
+        protected $errorTableDataType = '';
+        protected $loadType = LoadConfig::class;
+        protected $loadDataType = '';
+        /**
+         * The SQL query representing the data preparation steps. Formatted as a Pipe
+         * SQL query statement.
+         *
+         * @var string
+         */
+        public $query;
+        /**
+         * Error table configuration,
+         *
+         * @param ErrorTable $errorTable
+         */
+        public function setErrorTable(ErrorTable $errorTable)
+        {
+        }
+        /**
+         * @return ErrorTable
+         */
+        public function getErrorTable()
+        {
+        }
+        /**
+         * Load configuration.
+         *
+         * @param LoadConfig $load
+         */
+        public function setLoad(LoadConfig $load)
+        {
+        }
+        /**
+         * @return LoadConfig
+         */
+        public function getLoad()
+        {
+        }
+        /**
+         * The SQL query representing the data preparation steps. Formatted as a Pipe
+         * SQL query statement.
+         *
+         * @param string $query
+         */
+        public function setQuery($query)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQuery()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ErrorTable
+     * Runtime class alias of \Google\Service\Dataform\SqlDefinition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrorTable()
-    {
-    }
-    /**
-     * Load configuration.
-     *
-     * @param LoadConfig $load
-     */
-    public function setLoad(LoadConfig $load)
-    {
-    }
-    /**
-     * @return LoadConfig
-     */
-    public function getLoad()
-    {
-    }
-    /**
-     * The SQL query representing the data preparation steps. Formatted as a Pipe
-     * SQL query statement.
-     *
-     * @param string $query
-     */
-    public function setQuery($query)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQuery()
+    class Google_Service_Dataform_SqlDefinition extends \Google\Service\Dataform\SqlDefinition
     {
     }
 }

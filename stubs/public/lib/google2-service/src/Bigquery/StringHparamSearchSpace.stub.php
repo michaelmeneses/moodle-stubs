@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class StringHparamSearchSpace extends \Google\Collection
-{
-    protected $collection_key = 'candidates';
-    /**
-     * Canididates for the string or enum parameter in lower case.
-     *
-     * @var string[]
-     */
-    public $candidates;
-    /**
-     * Canididates for the string or enum parameter in lower case.
-     *
-     * @param string[] $candidates
-     */
-    public function setCandidates($candidates)
+namespace Google\Service\Bigquery {
+    class StringHparamSearchSpace extends \Google\Collection
     {
+        protected $collection_key = 'candidates';
+        /**
+         * Canididates for the string or enum parameter in lower case.
+         *
+         * @var string[]
+         */
+        public $candidates;
+        /**
+         * Canididates for the string or enum parameter in lower case.
+         *
+         * @param string[] $candidates
+         */
+        public function setCandidates($candidates)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCandidates()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Bigquery\StringHparamSearchSpace registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCandidates()
+    class Google_Service_Bigquery_StringHparamSearchSpace extends \Google\Service\Bigquery\StringHparamSearchSpace
     {
     }
 }

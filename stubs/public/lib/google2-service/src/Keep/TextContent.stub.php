@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Keep;
-
-class TextContent extends \Google\Model
-{
-    /**
-     * The text of the note. The limits on this vary with the specific field using
-     * this type.
-     *
-     * @var string
-     */
-    public $text;
-    /**
-     * The text of the note. The limits on this vary with the specific field using
-     * this type.
-     *
-     * @param string $text
-     */
-    public function setText($text)
+namespace Google\Service\Keep {
+    class TextContent extends \Google\Model
     {
+        /**
+         * The text of the note. The limits on this vary with the specific field using
+         * this type.
+         *
+         * @var string
+         */
+        public $text;
+        /**
+         * The text of the note. The limits on this vary with the specific field using
+         * this type.
+         *
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Keep\TextContent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getText()
+    class Google_Service_Keep_TextContent extends \Google\Service\Keep\TextContent
     {
     }
 }

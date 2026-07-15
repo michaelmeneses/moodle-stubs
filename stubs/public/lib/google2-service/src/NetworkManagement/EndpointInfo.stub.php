@@ -21,168 +21,177 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkManagement;
-
-class EndpointInfo extends \Google\Model
-{
-    /**
-     * Destination IP address.
-     *
-     * @var string
-     */
-    public $destinationIp;
-    /**
-     * URI of the network where this packet is sent to.
-     *
-     * @var string
-     */
-    public $destinationNetworkUri;
-    /**
-     * Destination port. Only valid when protocol is TCP or UDP.
-     *
-     * @var int
-     */
-    public $destinationPort;
-    /**
-     * IP protocol in string format, for example: "TCP", "UDP", "ICMP".
-     *
-     * @var string
-     */
-    public $protocol;
-    /**
-     * URI of the source telemetry agent this packet originates from.
-     *
-     * @var string
-     */
-    public $sourceAgentUri;
-    /**
-     * Source IP address.
-     *
-     * @var string
-     */
-    public $sourceIp;
-    /**
-     * URI of the network where this packet originates from.
-     *
-     * @var string
-     */
-    public $sourceNetworkUri;
-    /**
-     * Source port. Only valid when protocol is TCP or UDP.
-     *
-     * @var int
-     */
-    public $sourcePort;
-    /**
-     * Destination IP address.
-     *
-     * @param string $destinationIp
-     */
-    public function setDestinationIp($destinationIp)
+namespace Google\Service\NetworkManagement {
+    class EndpointInfo extends \Google\Model
     {
+        /**
+         * Destination IP address.
+         *
+         * @var string
+         */
+        public $destinationIp;
+        /**
+         * URI of the network where this packet is sent to.
+         *
+         * @var string
+         */
+        public $destinationNetworkUri;
+        /**
+         * Destination port. Only valid when protocol is TCP or UDP.
+         *
+         * @var int
+         */
+        public $destinationPort;
+        /**
+         * IP protocol in string format, for example: "TCP", "UDP", "ICMP".
+         *
+         * @var string
+         */
+        public $protocol;
+        /**
+         * URI of the source telemetry agent this packet originates from.
+         *
+         * @var string
+         */
+        public $sourceAgentUri;
+        /**
+         * Source IP address.
+         *
+         * @var string
+         */
+        public $sourceIp;
+        /**
+         * URI of the network where this packet originates from.
+         *
+         * @var string
+         */
+        public $sourceNetworkUri;
+        /**
+         * Source port. Only valid when protocol is TCP or UDP.
+         *
+         * @var int
+         */
+        public $sourcePort;
+        /**
+         * Destination IP address.
+         *
+         * @param string $destinationIp
+         */
+        public function setDestinationIp($destinationIp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDestinationIp()
+        {
+        }
+        /**
+         * URI of the network where this packet is sent to.
+         *
+         * @param string $destinationNetworkUri
+         */
+        public function setDestinationNetworkUri($destinationNetworkUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDestinationNetworkUri()
+        {
+        }
+        /**
+         * Destination port. Only valid when protocol is TCP or UDP.
+         *
+         * @param int $destinationPort
+         */
+        public function setDestinationPort($destinationPort)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getDestinationPort()
+        {
+        }
+        /**
+         * IP protocol in string format, for example: "TCP", "UDP", "ICMP".
+         *
+         * @param string $protocol
+         */
+        public function setProtocol($protocol)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProtocol()
+        {
+        }
+        /**
+         * URI of the source telemetry agent this packet originates from.
+         *
+         * @param string $sourceAgentUri
+         */
+        public function setSourceAgentUri($sourceAgentUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceAgentUri()
+        {
+        }
+        /**
+         * Source IP address.
+         *
+         * @param string $sourceIp
+         */
+        public function setSourceIp($sourceIp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceIp()
+        {
+        }
+        /**
+         * URI of the network where this packet originates from.
+         *
+         * @param string $sourceNetworkUri
+         */
+        public function setSourceNetworkUri($sourceNetworkUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceNetworkUri()
+        {
+        }
+        /**
+         * Source port. Only valid when protocol is TCP or UDP.
+         *
+         * @param int $sourcePort
+         */
+        public function setSourcePort($sourcePort)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSourcePort()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetworkManagement\EndpointInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDestinationIp()
-    {
-    }
-    /**
-     * URI of the network where this packet is sent to.
-     *
-     * @param string $destinationNetworkUri
-     */
-    public function setDestinationNetworkUri($destinationNetworkUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDestinationNetworkUri()
-    {
-    }
-    /**
-     * Destination port. Only valid when protocol is TCP or UDP.
-     *
-     * @param int $destinationPort
-     */
-    public function setDestinationPort($destinationPort)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getDestinationPort()
-    {
-    }
-    /**
-     * IP protocol in string format, for example: "TCP", "UDP", "ICMP".
-     *
-     * @param string $protocol
-     */
-    public function setProtocol($protocol)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProtocol()
-    {
-    }
-    /**
-     * URI of the source telemetry agent this packet originates from.
-     *
-     * @param string $sourceAgentUri
-     */
-    public function setSourceAgentUri($sourceAgentUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourceAgentUri()
-    {
-    }
-    /**
-     * Source IP address.
-     *
-     * @param string $sourceIp
-     */
-    public function setSourceIp($sourceIp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourceIp()
-    {
-    }
-    /**
-     * URI of the network where this packet originates from.
-     *
-     * @param string $sourceNetworkUri
-     */
-    public function setSourceNetworkUri($sourceNetworkUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourceNetworkUri()
-    {
-    }
-    /**
-     * Source port. Only valid when protocol is TCP or UDP.
-     *
-     * @param int $sourcePort
-     */
-    public function setSourcePort($sourcePort)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSourcePort()
+    class Google_Service_NetworkManagement_EndpointInfo extends \Google\Service\NetworkManagement\EndpointInfo
     {
     }
 }

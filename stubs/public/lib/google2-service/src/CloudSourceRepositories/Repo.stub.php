@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSourceRepositories;
-
-class Repo extends \Google\Model
-{
-    protected $mirrorConfigType = MirrorConfig::class;
-    protected $mirrorConfigDataType = '';
-    /**
-     * @var string
-     */
-    public $name;
-    protected $pubsubConfigsType = PubsubConfig::class;
-    protected $pubsubConfigsDataType = 'map';
-    /**
-     * @var string
-     */
-    public $size;
-    /**
-     * @var string
-     */
-    public $url;
-    /**
-     * @param MirrorConfig
-     */
-    public function setMirrorConfig(MirrorConfig $mirrorConfig)
+namespace Google\Service\CloudSourceRepositories {
+    class Repo extends \Google\Model
     {
+        protected $mirrorConfigType = MirrorConfig::class;
+        protected $mirrorConfigDataType = '';
+        /**
+         * @var string
+         */
+        public $name;
+        protected $pubsubConfigsType = PubsubConfig::class;
+        protected $pubsubConfigsDataType = 'map';
+        /**
+         * @var string
+         */
+        public $size;
+        /**
+         * @var string
+         */
+        public $url;
+        /**
+         * @param MirrorConfig
+         */
+        public function setMirrorConfig(MirrorConfig $mirrorConfig)
+        {
+        }
+        /**
+         * @return MirrorConfig
+         */
+        public function getMirrorConfig()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param PubsubConfig[]
+         */
+        public function setPubsubConfigs($pubsubConfigs)
+        {
+        }
+        /**
+         * @return PubsubConfig[]
+         */
+        public function getPubsubConfigs()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSize($size)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSize()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MirrorConfig
+     * Runtime class alias of \Google\Service\CloudSourceRepositories\Repo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMirrorConfig()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param PubsubConfig[]
-     */
-    public function setPubsubConfigs($pubsubConfigs)
-    {
-    }
-    /**
-     * @return PubsubConfig[]
-     */
-    public function getPubsubConfigs()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSize($size)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSize()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
+    class Google_Service_CloudSourceRepositories_Repo extends \Google\Service\CloudSourceRepositories\Repo
     {
     }
 }

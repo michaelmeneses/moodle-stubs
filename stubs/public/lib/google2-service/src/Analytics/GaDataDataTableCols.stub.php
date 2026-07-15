@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics;
-
-class GaDataDataTableCols extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $id;
-    /**
-     * @var string
-     */
-    public $label;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\Analytics {
+    class GaDataDataTableCols extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $id;
+        /**
+         * @var string
+         */
+        public $label;
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * @param string $label
+         */
+        public function setLabel($label)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLabel()
+        {
+        }
+        /**
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Analytics\GaDataDataTableCols registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * @param string $label
-     */
-    public function setLabel($label)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLabel()
-    {
-    }
-    /**
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_Analytics_GaDataDataTableCols extends \Google\Service\Analytics\GaDataDataTableCols
     {
     }
 }

@@ -21,102 +21,111 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1mainUploadConversationMetadata extends \Google\Model
-{
-    /**
-     * Output only. The operation name for a successfully created analysis
-     * operation, if any.
-     *
-     * @var string
-     */
-    public $analysisOperation;
-    protected $appliedRedactionConfigType = GoogleCloudContactcenterinsightsV1mainRedactionConfig::class;
-    protected $appliedRedactionConfigDataType = '';
-    /**
-     * Output only. The time the operation was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Output only. The time the operation finished running.
-     *
-     * @var string
-     */
-    public $endTime;
-    protected $requestType = GoogleCloudContactcenterinsightsV1mainUploadConversationRequest::class;
-    protected $requestDataType = '';
-    /**
-     * Output only. The operation name for a successfully created analysis
-     * operation, if any.
-     *
-     * @param string $analysisOperation
-     */
-    public function setAnalysisOperation($analysisOperation)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1mainUploadConversationMetadata extends \Google\Model
     {
+        /**
+         * Output only. The operation name for a successfully created analysis
+         * operation, if any.
+         *
+         * @var string
+         */
+        public $analysisOperation;
+        protected $appliedRedactionConfigType = GoogleCloudContactcenterinsightsV1mainRedactionConfig::class;
+        protected $appliedRedactionConfigDataType = '';
+        /**
+         * Output only. The time the operation was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Output only. The time the operation finished running.
+         *
+         * @var string
+         */
+        public $endTime;
+        protected $requestType = GoogleCloudContactcenterinsightsV1mainUploadConversationRequest::class;
+        protected $requestDataType = '';
+        /**
+         * Output only. The operation name for a successfully created analysis
+         * operation, if any.
+         *
+         * @param string $analysisOperation
+         */
+        public function setAnalysisOperation($analysisOperation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnalysisOperation()
+        {
+        }
+        /**
+         * Output only. The redaction config applied to the uploaded conversation.
+         *
+         * @param GoogleCloudContactcenterinsightsV1mainRedactionConfig $appliedRedactionConfig
+         */
+        public function setAppliedRedactionConfig(GoogleCloudContactcenterinsightsV1mainRedactionConfig $appliedRedactionConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1mainRedactionConfig
+         */
+        public function getAppliedRedactionConfig()
+        {
+        }
+        /**
+         * Output only. The time the operation was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. The time the operation finished running.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * Output only. The original request.
+         *
+         * @param GoogleCloudContactcenterinsightsV1mainUploadConversationRequest $request
+         */
+        public function setRequest(GoogleCloudContactcenterinsightsV1mainUploadConversationRequest $request)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1mainUploadConversationRequest
+         */
+        public function getRequest()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainUploadConversationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnalysisOperation()
-    {
-    }
-    /**
-     * Output only. The redaction config applied to the uploaded conversation.
-     *
-     * @param GoogleCloudContactcenterinsightsV1mainRedactionConfig $appliedRedactionConfig
-     */
-    public function setAppliedRedactionConfig(GoogleCloudContactcenterinsightsV1mainRedactionConfig $appliedRedactionConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudContactcenterinsightsV1mainRedactionConfig
-     */
-    public function getAppliedRedactionConfig()
-    {
-    }
-    /**
-     * Output only. The time the operation was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. The time the operation finished running.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndTime()
-    {
-    }
-    /**
-     * Output only. The original request.
-     *
-     * @param GoogleCloudContactcenterinsightsV1mainUploadConversationRequest $request
-     */
-    public function setRequest(GoogleCloudContactcenterinsightsV1mainUploadConversationRequest $request)
-    {
-    }
-    /**
-     * @return GoogleCloudContactcenterinsightsV1mainUploadConversationRequest
-     */
-    public function getRequest()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1mainUploadConversationMetadata extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainUploadConversationMetadata
     {
     }
 }

@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Transcoder;
-
-class JobTemplate extends \Google\Model
-{
-    protected $configType = JobConfig::class;
-    protected $configDataType = '';
-    /**
-     * The labels associated with this job template. You can use these to organize
-     * and group your job templates.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * The resource name of the job template. Format: `projects/{project_number}/l
-     * ocations/{location}/jobTemplates/{job_template}`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The configuration for this template.
-     *
-     * @param JobConfig $config
-     */
-    public function setConfig(JobConfig $config)
+namespace Google\Service\Transcoder {
+    class JobTemplate extends \Google\Model
     {
+        protected $configType = JobConfig::class;
+        protected $configDataType = '';
+        /**
+         * The labels associated with this job template. You can use these to organize
+         * and group your job templates.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * The resource name of the job template. Format: `projects/{project_number}/l
+         * ocations/{location}/jobTemplates/{job_template}`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The configuration for this template.
+         *
+         * @param JobConfig $config
+         */
+        public function setConfig(JobConfig $config)
+        {
+        }
+        /**
+         * @return JobConfig
+         */
+        public function getConfig()
+        {
+        }
+        /**
+         * The labels associated with this job template. You can use these to organize
+         * and group your job templates.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * The resource name of the job template. Format: `projects/{project_number}/l
+         * ocations/{location}/jobTemplates/{job_template}`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return JobConfig
+     * Runtime class alias of \Google\Service\Transcoder\JobTemplate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfig()
-    {
-    }
-    /**
-     * The labels associated with this job template. You can use these to organize
-     * and group your job templates.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * The resource name of the job template. Format: `projects/{project_number}/l
-     * ocations/{location}/jobTemplates/{job_template}`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Transcoder_JobTemplate extends \Google\Service\Transcoder\JobTemplate
     {
     }
 }

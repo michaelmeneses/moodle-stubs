@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1NearestNeighbors extends \Google\Collection
-{
-    protected $collection_key = 'neighbors';
-    protected $neighborsType = GoogleCloudAiplatformV1NearestNeighborsNeighbor::class;
-    protected $neighborsDataType = 'array';
-    /**
-     * All its neighbors.
-     *
-     * @param GoogleCloudAiplatformV1NearestNeighborsNeighbor[] $neighbors
-     */
-    public function setNeighbors($neighbors)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1NearestNeighbors extends \Google\Collection
     {
+        protected $collection_key = 'neighbors';
+        protected $neighborsType = GoogleCloudAiplatformV1NearestNeighborsNeighbor::class;
+        protected $neighborsDataType = 'array';
+        /**
+         * All its neighbors.
+         *
+         * @param GoogleCloudAiplatformV1NearestNeighborsNeighbor[] $neighbors
+         */
+        public function setNeighbors($neighbors)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1NearestNeighborsNeighbor[]
+         */
+        public function getNeighbors()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1NearestNeighborsNeighbor[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1NearestNeighbors registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNeighbors()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1NearestNeighbors extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1NearestNeighbors
     {
     }
 }

@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaTrainingjobDefinitionSeq2SeqPlusForecasting extends \Google\Model
-{
-    protected $inputsType = GoogleCloudAiplatformV1SchemaTrainingjobDefinitionSeq2SeqPlusForecastingInputs::class;
-    protected $inputsDataType = '';
-    protected $metadataType = GoogleCloudAiplatformV1SchemaTrainingjobDefinitionSeq2SeqPlusForecastingMetadata::class;
-    protected $metadataDataType = '';
-    /**
-     * The input parameters of this TrainingJob.
-     *
-     * @param GoogleCloudAiplatformV1SchemaTrainingjobDefinitionSeq2SeqPlusForecastingInputs $inputs
-     */
-    public function setInputs(GoogleCloudAiplatformV1SchemaTrainingjobDefinitionSeq2SeqPlusForecastingInputs $inputs)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaTrainingjobDefinitionSeq2SeqPlusForecasting extends \Google\Model
     {
+        protected $inputsType = GoogleCloudAiplatformV1SchemaTrainingjobDefinitionSeq2SeqPlusForecastingInputs::class;
+        protected $inputsDataType = '';
+        protected $metadataType = GoogleCloudAiplatformV1SchemaTrainingjobDefinitionSeq2SeqPlusForecastingMetadata::class;
+        protected $metadataDataType = '';
+        /**
+         * The input parameters of this TrainingJob.
+         *
+         * @param GoogleCloudAiplatformV1SchemaTrainingjobDefinitionSeq2SeqPlusForecastingInputs $inputs
+         */
+        public function setInputs(GoogleCloudAiplatformV1SchemaTrainingjobDefinitionSeq2SeqPlusForecastingInputs $inputs)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SchemaTrainingjobDefinitionSeq2SeqPlusForecastingInputs
+         */
+        public function getInputs()
+        {
+        }
+        /**
+         * The metadata information.
+         *
+         * @param GoogleCloudAiplatformV1SchemaTrainingjobDefinitionSeq2SeqPlusForecastingMetadata $metadata
+         */
+        public function setMetadata(GoogleCloudAiplatformV1SchemaTrainingjobDefinitionSeq2SeqPlusForecastingMetadata $metadata)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SchemaTrainingjobDefinitionSeq2SeqPlusForecastingMetadata
+         */
+        public function getMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1SchemaTrainingjobDefinitionSeq2SeqPlusForecastingInputs
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaTrainingjobDefinitionSeq2SeqPlusForecasting registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInputs()
-    {
-    }
-    /**
-     * The metadata information.
-     *
-     * @param GoogleCloudAiplatformV1SchemaTrainingjobDefinitionSeq2SeqPlusForecastingMetadata $metadata
-     */
-    public function setMetadata(GoogleCloudAiplatformV1SchemaTrainingjobDefinitionSeq2SeqPlusForecastingMetadata $metadata)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1SchemaTrainingjobDefinitionSeq2SeqPlusForecastingMetadata
-     */
-    public function getMetadata()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaTrainingjobDefinitionSeq2SeqPlusForecasting extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaTrainingjobDefinitionSeq2SeqPlusForecasting
     {
     }
 }

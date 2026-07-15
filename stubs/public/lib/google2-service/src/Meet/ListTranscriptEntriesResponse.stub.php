@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Meet;
-
-class ListTranscriptEntriesResponse extends \Google\Collection
-{
-    protected $collection_key = 'transcriptEntries';
-    /**
-     * Token to be circulated back for further List call if current List doesn't
-     * include all the transcript entries. Unset if all entries are returned.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $transcriptEntriesType = TranscriptEntry::class;
-    protected $transcriptEntriesDataType = 'array';
-    /**
-     * Token to be circulated back for further List call if current List doesn't
-     * include all the transcript entries. Unset if all entries are returned.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Meet {
+    class ListTranscriptEntriesResponse extends \Google\Collection
     {
+        protected $collection_key = 'transcriptEntries';
+        /**
+         * Token to be circulated back for further List call if current List doesn't
+         * include all the transcript entries. Unset if all entries are returned.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $transcriptEntriesType = TranscriptEntry::class;
+        protected $transcriptEntriesDataType = 'array';
+        /**
+         * Token to be circulated back for further List call if current List doesn't
+         * include all the transcript entries. Unset if all entries are returned.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * List of TranscriptEntries in one page.
+         *
+         * @param TranscriptEntry[] $transcriptEntries
+         */
+        public function setTranscriptEntries($transcriptEntries)
+        {
+        }
+        /**
+         * @return TranscriptEntry[]
+         */
+        public function getTranscriptEntries()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Meet\ListTranscriptEntriesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * List of TranscriptEntries in one page.
-     *
-     * @param TranscriptEntry[] $transcriptEntries
-     */
-    public function setTranscriptEntries($transcriptEntries)
-    {
-    }
-    /**
-     * @return TranscriptEntry[]
-     */
-    public function getTranscriptEntries()
+    class Google_Service_Meet_ListTranscriptEntriesResponse extends \Google\Service\Meet\ListTranscriptEntriesResponse
     {
     }
 }

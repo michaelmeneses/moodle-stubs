@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution;
-
-class BuildBazelRemoteExecutionV2Platform extends \Google\Collection
-{
-    protected $collection_key = 'properties';
-    protected $propertiesType = BuildBazelRemoteExecutionV2PlatformProperty::class;
-    protected $propertiesDataType = 'array';
-    /**
-     * @param BuildBazelRemoteExecutionV2PlatformProperty[]
-     */
-    public function setProperties($properties)
+namespace Google\Service\RemoteBuildExecution {
+    class BuildBazelRemoteExecutionV2Platform extends \Google\Collection
     {
+        protected $collection_key = 'properties';
+        protected $propertiesType = BuildBazelRemoteExecutionV2PlatformProperty::class;
+        protected $propertiesDataType = 'array';
+        /**
+         * @param BuildBazelRemoteExecutionV2PlatformProperty[]
+         */
+        public function setProperties($properties)
+        {
+        }
+        /**
+         * @return BuildBazelRemoteExecutionV2PlatformProperty[]
+         */
+        public function getProperties()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BuildBazelRemoteExecutionV2PlatformProperty[]
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2Platform registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProperties()
+    class Google_Service_RemoteBuildExecution_BuildBazelRemoteExecutionV2Platform extends \Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2Platform
     {
     }
 }

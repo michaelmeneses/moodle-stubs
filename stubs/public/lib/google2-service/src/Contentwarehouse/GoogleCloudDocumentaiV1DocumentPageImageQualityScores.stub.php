@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudDocumentaiV1DocumentPageImageQualityScores extends \Google\Collection
-{
-    protected $collection_key = 'detectedDefects';
-    protected $detectedDefectsType = GoogleCloudDocumentaiV1DocumentPageImageQualityScoresDetectedDefect::class;
-    protected $detectedDefectsDataType = 'array';
-    /**
-     * The overall quality score. Range `[0, 1]` where `1` is perfect quality.
-     *
-     * @var float
-     */
-    public $qualityScore;
-    /**
-     * A list of detected defects.
-     *
-     * @param GoogleCloudDocumentaiV1DocumentPageImageQualityScoresDetectedDefect[] $detectedDefects
-     */
-    public function setDetectedDefects($detectedDefects)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudDocumentaiV1DocumentPageImageQualityScores extends \Google\Collection
     {
+        protected $collection_key = 'detectedDefects';
+        protected $detectedDefectsType = GoogleCloudDocumentaiV1DocumentPageImageQualityScoresDetectedDefect::class;
+        protected $detectedDefectsDataType = 'array';
+        /**
+         * The overall quality score. Range `[0, 1]` where `1` is perfect quality.
+         *
+         * @var float
+         */
+        public $qualityScore;
+        /**
+         * A list of detected defects.
+         *
+         * @param GoogleCloudDocumentaiV1DocumentPageImageQualityScoresDetectedDefect[] $detectedDefects
+         */
+        public function setDetectedDefects($detectedDefects)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1DocumentPageImageQualityScoresDetectedDefect[]
+         */
+        public function getDetectedDefects()
+        {
+        }
+        /**
+         * The overall quality score. Range `[0, 1]` where `1` is perfect quality.
+         *
+         * @param float $qualityScore
+         */
+        public function setQualityScore($qualityScore)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getQualityScore()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiV1DocumentPageImageQualityScoresDetectedDefect[]
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudDocumentaiV1DocumentPageImageQualityScores registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDetectedDefects()
-    {
-    }
-    /**
-     * The overall quality score. Range `[0, 1]` where `1` is perfect quality.
-     *
-     * @param float $qualityScore
-     */
-    public function setQualityScore($qualityScore)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getQualityScore()
+    class Google_Service_Contentwarehouse_GoogleCloudDocumentaiV1DocumentPageImageQualityScores extends \Google\Service\Contentwarehouse\GoogleCloudDocumentaiV1DocumentPageImageQualityScores
     {
     }
 }

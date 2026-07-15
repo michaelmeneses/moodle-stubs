@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaFetchDomainVerificationStatusResponse extends \Google\Collection
-{
-    protected $collection_key = 'targetSites';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    protected $targetSitesType = GoogleCloudDiscoveryengineV1betaTargetSite::class;
-    protected $targetSitesDataType = 'array';
-    /**
-     * @var int
-     */
-    public $totalSize;
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaFetchDomainVerificationStatusResponse extends \Google\Collection
     {
+        protected $collection_key = 'targetSites';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        protected $targetSitesType = GoogleCloudDiscoveryengineV1betaTargetSite::class;
+        protected $targetSitesDataType = 'array';
+        /**
+         * @var int
+         */
+        public $totalSize;
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaTargetSite[]
+         */
+        public function setTargetSites($targetSites)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaTargetSite[]
+         */
+        public function getTargetSites()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setTotalSize($totalSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalSize()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaFetchDomainVerificationStatusResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaTargetSite[]
-     */
-    public function setTargetSites($targetSites)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaTargetSite[]
-     */
-    public function getTargetSites()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setTotalSize($totalSize)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalSize()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaFetchDomainVerificationStatusResponse extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaFetchDomainVerificationStatusResponse
     {
     }
 }

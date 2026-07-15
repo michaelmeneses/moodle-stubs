@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1CommonUsageStats extends \Google\Model
-{
-    /**
-     * View count in source system.
-     *
-     * @var string
-     */
-    public $viewCount;
-    /**
-     * View count in source system.
-     *
-     * @param string $viewCount
-     */
-    public function setViewCount($viewCount)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1CommonUsageStats extends \Google\Model
     {
+        /**
+         * View count in source system.
+         *
+         * @var string
+         */
+        public $viewCount;
+        /**
+         * View count in source system.
+         *
+         * @param string $viewCount
+         */
+        public function setViewCount($viewCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getViewCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1CommonUsageStats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getViewCount()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1CommonUsageStats extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1CommonUsageStats
     {
     }
 }

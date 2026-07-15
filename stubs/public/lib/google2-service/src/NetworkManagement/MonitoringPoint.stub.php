@@ -21,273 +21,282 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkManagement;
-
-class MonitoringPoint extends \Google\Collection
-{
-    protected $collection_key = 'providerTags';
-    /**
-     * @var bool
-     */
-    public $autoGeoLocationEnabled;
-    /**
-     * @var string
-     */
-    public $connectionStatus;
-    /**
-     * @var string
-     */
-    public $createTime;
-    /**
-     * @var string
-     */
-    public $displayName;
-    /**
-     * @var string[]
-     */
-    public $errors;
-    protected $geoLocationType = GeoLocation::class;
-    protected $geoLocationDataType = '';
-    protected $hostType = Host::class;
-    protected $hostDataType = '';
-    /**
-     * @var string
-     */
-    public $hostname;
-    /**
-     * @var string
-     */
-    public $name;
-    protected $networkInterfacesType = NetworkInterface::class;
-    protected $networkInterfacesDataType = 'array';
-    /**
-     * @var string
-     */
-    public $originatingIp;
-    protected $providerTagsType = ProviderTag::class;
-    protected $providerTagsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * @var bool
-     */
-    public $upgradeAvailable;
-    /**
-     * @var string
-     */
-    public $upgradeType;
-    /**
-     * @var string
-     */
-    public $version;
-    /**
-     * @param bool
-     */
-    public function setAutoGeoLocationEnabled($autoGeoLocationEnabled)
+namespace Google\Service\NetworkManagement {
+    class MonitoringPoint extends \Google\Collection
     {
+        protected $collection_key = 'providerTags';
+        /**
+         * @var bool
+         */
+        public $autoGeoLocationEnabled;
+        /**
+         * @var string
+         */
+        public $connectionStatus;
+        /**
+         * @var string
+         */
+        public $createTime;
+        /**
+         * @var string
+         */
+        public $displayName;
+        /**
+         * @var string[]
+         */
+        public $errors;
+        protected $geoLocationType = GeoLocation::class;
+        protected $geoLocationDataType = '';
+        protected $hostType = Host::class;
+        protected $hostDataType = '';
+        /**
+         * @var string
+         */
+        public $hostname;
+        /**
+         * @var string
+         */
+        public $name;
+        protected $networkInterfacesType = NetworkInterface::class;
+        protected $networkInterfacesDataType = 'array';
+        /**
+         * @var string
+         */
+        public $originatingIp;
+        protected $providerTagsType = ProviderTag::class;
+        protected $providerTagsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * @var bool
+         */
+        public $upgradeAvailable;
+        /**
+         * @var string
+         */
+        public $upgradeType;
+        /**
+         * @var string
+         */
+        public $version;
+        /**
+         * @param bool
+         */
+        public function setAutoGeoLocationEnabled($autoGeoLocationEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAutoGeoLocationEnabled()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setConnectionStatus($connectionStatus)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConnectionStatus()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setErrors($errors)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getErrors()
+        {
+        }
+        /**
+         * @param GeoLocation
+         */
+        public function setGeoLocation(GeoLocation $geoLocation)
+        {
+        }
+        /**
+         * @return GeoLocation
+         */
+        public function getGeoLocation()
+        {
+        }
+        /**
+         * @param Host
+         */
+        public function setHost(Host $host)
+        {
+        }
+        /**
+         * @return Host
+         */
+        public function getHost()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setHostname($hostname)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHostname()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param NetworkInterface[]
+         */
+        public function setNetworkInterfaces($networkInterfaces)
+        {
+        }
+        /**
+         * @return NetworkInterface[]
+         */
+        public function getNetworkInterfaces()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOriginatingIp($originatingIp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOriginatingIp()
+        {
+        }
+        /**
+         * @param ProviderTag[]
+         */
+        public function setProviderTags($providerTags)
+        {
+        }
+        /**
+         * @return ProviderTag[]
+         */
+        public function getProviderTags()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setUpgradeAvailable($upgradeAvailable)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUpgradeAvailable()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUpgradeType($upgradeType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpgradeType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\NetworkManagement\MonitoringPoint registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAutoGeoLocationEnabled()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setConnectionStatus($connectionStatus)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getConnectionStatus()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setErrors($errors)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getErrors()
-    {
-    }
-    /**
-     * @param GeoLocation
-     */
-    public function setGeoLocation(GeoLocation $geoLocation)
-    {
-    }
-    /**
-     * @return GeoLocation
-     */
-    public function getGeoLocation()
-    {
-    }
-    /**
-     * @param Host
-     */
-    public function setHost(Host $host)
-    {
-    }
-    /**
-     * @return Host
-     */
-    public function getHost()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setHostname($hostname)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHostname()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param NetworkInterface[]
-     */
-    public function setNetworkInterfaces($networkInterfaces)
-    {
-    }
-    /**
-     * @return NetworkInterface[]
-     */
-    public function getNetworkInterfaces()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOriginatingIp($originatingIp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOriginatingIp()
-    {
-    }
-    /**
-     * @param ProviderTag[]
-     */
-    public function setProviderTags($providerTags)
-    {
-    }
-    /**
-     * @return ProviderTag[]
-     */
-    public function getProviderTags()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setUpgradeAvailable($upgradeAvailable)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUpgradeAvailable()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUpgradeType($upgradeType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpgradeType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_NetworkManagement_MonitoringPoint extends \Google\Service\NetworkManagement\MonitoringPoint
     {
     }
 }

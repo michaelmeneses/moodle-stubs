@@ -21,167 +21,176 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class GetOpenIDConfigResponse extends \Google\Collection
-{
-    protected $collection_key = 'subject_types_supported';
-    protected $internal_gapi_mappings = ["claimsSupported" => "claims_supported", "grantTypes" => "grant_types", "idTokenSigningAlgValuesSupported" => "id_token_signing_alg_values_supported", "jwksUri" => "jwks_uri", "responseTypesSupported" => "response_types_supported", "subjectTypesSupported" => "subject_types_supported"];
-    protected $cacheHeaderType = HttpCacheControlResponseHeader::class;
-    protected $cacheHeaderDataType = '';
-    /**
-     * Supported claims.
-     *
-     * @var string[]
-     */
-    public $claimsSupported;
-    /**
-     * Supported grant types.
-     *
-     * @var string[]
-     */
-    public $grantTypes;
-    /**
-     * supported ID Token signing Algorithms.
-     *
-     * @var string[]
-     */
-    public $idTokenSigningAlgValuesSupported;
-    /**
-     * OIDC Issuer.
-     *
-     * @var string
-     */
-    public $issuer;
-    /**
-     * JSON Web Key uri.
-     *
-     * @var string
-     */
-    public $jwksUri;
-    /**
-     * Supported response types.
-     *
-     * @var string[]
-     */
-    public $responseTypesSupported;
-    /**
-     * Supported subject types.
-     *
-     * @var string[]
-     */
-    public $subjectTypesSupported;
-    /**
-     * For HTTP requests, this field is automatically extracted into the Cache-
-     * Control HTTP header.
-     *
-     * @param HttpCacheControlResponseHeader $cacheHeader
-     */
-    public function setCacheHeader(HttpCacheControlResponseHeader $cacheHeader)
+namespace Google\Service\Container {
+    class GetOpenIDConfigResponse extends \Google\Collection
     {
+        protected $collection_key = 'subject_types_supported';
+        protected $internal_gapi_mappings = ["claimsSupported" => "claims_supported", "grantTypes" => "grant_types", "idTokenSigningAlgValuesSupported" => "id_token_signing_alg_values_supported", "jwksUri" => "jwks_uri", "responseTypesSupported" => "response_types_supported", "subjectTypesSupported" => "subject_types_supported"];
+        protected $cacheHeaderType = HttpCacheControlResponseHeader::class;
+        protected $cacheHeaderDataType = '';
+        /**
+         * Supported claims.
+         *
+         * @var string[]
+         */
+        public $claimsSupported;
+        /**
+         * Supported grant types.
+         *
+         * @var string[]
+         */
+        public $grantTypes;
+        /**
+         * supported ID Token signing Algorithms.
+         *
+         * @var string[]
+         */
+        public $idTokenSigningAlgValuesSupported;
+        /**
+         * OIDC Issuer.
+         *
+         * @var string
+         */
+        public $issuer;
+        /**
+         * JSON Web Key uri.
+         *
+         * @var string
+         */
+        public $jwksUri;
+        /**
+         * Supported response types.
+         *
+         * @var string[]
+         */
+        public $responseTypesSupported;
+        /**
+         * Supported subject types.
+         *
+         * @var string[]
+         */
+        public $subjectTypesSupported;
+        /**
+         * For HTTP requests, this field is automatically extracted into the Cache-
+         * Control HTTP header.
+         *
+         * @param HttpCacheControlResponseHeader $cacheHeader
+         */
+        public function setCacheHeader(HttpCacheControlResponseHeader $cacheHeader)
+        {
+        }
+        /**
+         * @return HttpCacheControlResponseHeader
+         */
+        public function getCacheHeader()
+        {
+        }
+        /**
+         * Supported claims.
+         *
+         * @param string[] $claimsSupported
+         */
+        public function setClaimsSupported($claimsSupported)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getClaimsSupported()
+        {
+        }
+        /**
+         * Supported grant types.
+         *
+         * @param string[] $grantTypes
+         */
+        public function setGrantTypes($grantTypes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getGrantTypes()
+        {
+        }
+        /**
+         * supported ID Token signing Algorithms.
+         *
+         * @param string[] $idTokenSigningAlgValuesSupported
+         */
+        public function setIdTokenSigningAlgValuesSupported($idTokenSigningAlgValuesSupported)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getIdTokenSigningAlgValuesSupported()
+        {
+        }
+        /**
+         * OIDC Issuer.
+         *
+         * @param string $issuer
+         */
+        public function setIssuer($issuer)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIssuer()
+        {
+        }
+        /**
+         * JSON Web Key uri.
+         *
+         * @param string $jwksUri
+         */
+        public function setJwksUri($jwksUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getJwksUri()
+        {
+        }
+        /**
+         * Supported response types.
+         *
+         * @param string[] $responseTypesSupported
+         */
+        public function setResponseTypesSupported($responseTypesSupported)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getResponseTypesSupported()
+        {
+        }
+        /**
+         * Supported subject types.
+         *
+         * @param string[] $subjectTypesSupported
+         */
+        public function setSubjectTypesSupported($subjectTypesSupported)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSubjectTypesSupported()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return HttpCacheControlResponseHeader
+     * Runtime class alias of \Google\Service\Container\GetOpenIDConfigResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCacheHeader()
-    {
-    }
-    /**
-     * Supported claims.
-     *
-     * @param string[] $claimsSupported
-     */
-    public function setClaimsSupported($claimsSupported)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getClaimsSupported()
-    {
-    }
-    /**
-     * Supported grant types.
-     *
-     * @param string[] $grantTypes
-     */
-    public function setGrantTypes($grantTypes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getGrantTypes()
-    {
-    }
-    /**
-     * supported ID Token signing Algorithms.
-     *
-     * @param string[] $idTokenSigningAlgValuesSupported
-     */
-    public function setIdTokenSigningAlgValuesSupported($idTokenSigningAlgValuesSupported)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getIdTokenSigningAlgValuesSupported()
-    {
-    }
-    /**
-     * OIDC Issuer.
-     *
-     * @param string $issuer
-     */
-    public function setIssuer($issuer)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIssuer()
-    {
-    }
-    /**
-     * JSON Web Key uri.
-     *
-     * @param string $jwksUri
-     */
-    public function setJwksUri($jwksUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getJwksUri()
-    {
-    }
-    /**
-     * Supported response types.
-     *
-     * @param string[] $responseTypesSupported
-     */
-    public function setResponseTypesSupported($responseTypesSupported)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getResponseTypesSupported()
-    {
-    }
-    /**
-     * Supported subject types.
-     *
-     * @param string[] $subjectTypesSupported
-     */
-    public function setSubjectTypesSupported($subjectTypesSupported)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSubjectTypesSupported()
+    class Google_Service_Container_GetOpenIDConfigResponse extends \Google\Service\Container\GetOpenIDConfigResponse
     {
     }
 }

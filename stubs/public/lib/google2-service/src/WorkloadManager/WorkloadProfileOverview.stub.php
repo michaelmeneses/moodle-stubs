@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager;
-
-class WorkloadProfileOverview extends \Google\Model
-{
-    protected $sapWorkloadOverviewType = SapWorkloadOverview::class;
-    protected $sapWorkloadOverviewDataType = '';
-    protected $sqlserverWorkloadOverviewType = SqlserverWorkloadOverview::class;
-    protected $sqlserverWorkloadOverviewDataType = '';
-    protected $threeTierWorkloadOverviewType = ThreeTierWorkloadOverview::class;
-    protected $threeTierWorkloadOverviewDataType = '';
-    /**
-     * @param SapWorkloadOverview
-     */
-    public function setSapWorkloadOverview(SapWorkloadOverview $sapWorkloadOverview)
+namespace Google\Service\WorkloadManager {
+    class WorkloadProfileOverview extends \Google\Model
     {
+        protected $sapWorkloadOverviewType = SapWorkloadOverview::class;
+        protected $sapWorkloadOverviewDataType = '';
+        protected $sqlserverWorkloadOverviewType = SqlserverWorkloadOverview::class;
+        protected $sqlserverWorkloadOverviewDataType = '';
+        protected $threeTierWorkloadOverviewType = ThreeTierWorkloadOverview::class;
+        protected $threeTierWorkloadOverviewDataType = '';
+        /**
+         * @param SapWorkloadOverview
+         */
+        public function setSapWorkloadOverview(SapWorkloadOverview $sapWorkloadOverview)
+        {
+        }
+        /**
+         * @return SapWorkloadOverview
+         */
+        public function getSapWorkloadOverview()
+        {
+        }
+        /**
+         * @param SqlserverWorkloadOverview
+         */
+        public function setSqlserverWorkloadOverview(SqlserverWorkloadOverview $sqlserverWorkloadOverview)
+        {
+        }
+        /**
+         * @return SqlserverWorkloadOverview
+         */
+        public function getSqlserverWorkloadOverview()
+        {
+        }
+        /**
+         * @param ThreeTierWorkloadOverview
+         */
+        public function setThreeTierWorkloadOverview(ThreeTierWorkloadOverview $threeTierWorkloadOverview)
+        {
+        }
+        /**
+         * @return ThreeTierWorkloadOverview
+         */
+        public function getThreeTierWorkloadOverview()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SapWorkloadOverview
+     * Runtime class alias of \Google\Service\WorkloadManager\WorkloadProfileOverview registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSapWorkloadOverview()
-    {
-    }
-    /**
-     * @param SqlserverWorkloadOverview
-     */
-    public function setSqlserverWorkloadOverview(SqlserverWorkloadOverview $sqlserverWorkloadOverview)
-    {
-    }
-    /**
-     * @return SqlserverWorkloadOverview
-     */
-    public function getSqlserverWorkloadOverview()
-    {
-    }
-    /**
-     * @param ThreeTierWorkloadOverview
-     */
-    public function setThreeTierWorkloadOverview(ThreeTierWorkloadOverview $threeTierWorkloadOverview)
-    {
-    }
-    /**
-     * @return ThreeTierWorkloadOverview
-     */
-    public function getThreeTierWorkloadOverview()
+    class Google_Service_WorkloadManager_WorkloadProfileOverview extends \Google\Service\WorkloadManager\WorkloadProfileOverview
     {
     }
 }

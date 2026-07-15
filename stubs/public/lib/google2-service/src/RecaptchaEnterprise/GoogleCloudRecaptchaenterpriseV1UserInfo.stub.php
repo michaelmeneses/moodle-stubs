@@ -21,77 +21,86 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecaptchaEnterprise;
-
-class GoogleCloudRecaptchaenterpriseV1UserInfo extends \Google\Collection
-{
-    protected $collection_key = 'userIds';
-    /**
-     * Optional. For logged-in requests or login/registration requests, the unique
-     * account identifier associated with this user. You can use the username if
-     * it is stable (meaning it is the same for every request associated with the
-     * same user), or any stable user ID of your choice. Leave blank for non
-     * logged-in actions or guest checkout.
-     *
-     * @var string
-     */
-    public $accountId;
-    /**
-     * Optional. Creation time for this account associated with this user. Leave
-     * blank for non logged-in actions, guest checkout, or when there is no
-     * account associated with the current user.
-     *
-     * @var string
-     */
-    public $createAccountTime;
-    protected $userIdsType = GoogleCloudRecaptchaenterpriseV1UserId::class;
-    protected $userIdsDataType = 'array';
-    /**
-     * Optional. For logged-in requests or login/registration requests, the unique
-     * account identifier associated with this user. You can use the username if
-     * it is stable (meaning it is the same for every request associated with the
-     * same user), or any stable user ID of your choice. Leave blank for non
-     * logged-in actions or guest checkout.
-     *
-     * @param string $accountId
-     */
-    public function setAccountId($accountId)
+namespace Google\Service\RecaptchaEnterprise {
+    class GoogleCloudRecaptchaenterpriseV1UserInfo extends \Google\Collection
     {
+        protected $collection_key = 'userIds';
+        /**
+         * Optional. For logged-in requests or login/registration requests, the unique
+         * account identifier associated with this user. You can use the username if
+         * it is stable (meaning it is the same for every request associated with the
+         * same user), or any stable user ID of your choice. Leave blank for non
+         * logged-in actions or guest checkout.
+         *
+         * @var string
+         */
+        public $accountId;
+        /**
+         * Optional. Creation time for this account associated with this user. Leave
+         * blank for non logged-in actions, guest checkout, or when there is no
+         * account associated with the current user.
+         *
+         * @var string
+         */
+        public $createAccountTime;
+        protected $userIdsType = GoogleCloudRecaptchaenterpriseV1UserId::class;
+        protected $userIdsDataType = 'array';
+        /**
+         * Optional. For logged-in requests or login/registration requests, the unique
+         * account identifier associated with this user. You can use the username if
+         * it is stable (meaning it is the same for every request associated with the
+         * same user), or any stable user ID of your choice. Leave blank for non
+         * logged-in actions or guest checkout.
+         *
+         * @param string $accountId
+         */
+        public function setAccountId($accountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccountId()
+        {
+        }
+        /**
+         * Optional. Creation time for this account associated with this user. Leave
+         * blank for non logged-in actions, guest checkout, or when there is no
+         * account associated with the current user.
+         *
+         * @param string $createAccountTime
+         */
+        public function setCreateAccountTime($createAccountTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateAccountTime()
+        {
+        }
+        /**
+         * Optional. Identifiers associated with this user or request.
+         *
+         * @param GoogleCloudRecaptchaenterpriseV1UserId[] $userIds
+         */
+        public function setUserIds($userIds)
+        {
+        }
+        /**
+         * @return GoogleCloudRecaptchaenterpriseV1UserId[]
+         */
+        public function getUserIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1UserInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountId()
-    {
-    }
-    /**
-     * Optional. Creation time for this account associated with this user. Leave
-     * blank for non logged-in actions, guest checkout, or when there is no
-     * account associated with the current user.
-     *
-     * @param string $createAccountTime
-     */
-    public function setCreateAccountTime($createAccountTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateAccountTime()
-    {
-    }
-    /**
-     * Optional. Identifiers associated with this user or request.
-     *
-     * @param GoogleCloudRecaptchaenterpriseV1UserId[] $userIds
-     */
-    public function setUserIds($userIds)
-    {
-    }
-    /**
-     * @return GoogleCloudRecaptchaenterpriseV1UserId[]
-     */
-    public function getUserIds()
+    class Google_Service_RecaptchaEnterprise_GoogleCloudRecaptchaenterpriseV1UserInfo extends \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1UserInfo
     {
     }
 }

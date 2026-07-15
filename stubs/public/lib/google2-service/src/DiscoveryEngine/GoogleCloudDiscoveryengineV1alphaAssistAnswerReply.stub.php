@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaAssistAnswerReply extends \Google\Model
-{
-    protected $groundedContentType = GoogleCloudDiscoveryengineV1alphaAssistantGroundedContent::class;
-    protected $groundedContentDataType = '';
-    /**
-     * Output only. When set, uniquely identifies a reply within the
-     * `AssistAnswer` resource. During an AssistantService.StreamAssist call,
-     * multiple `Reply` messages with the same ID can occur within the response
-     * stream (across multiple AssistantService.StreamAssistResponse messages).
-     * These represent parts of a single `Reply` message in the final
-     * `AssistAnswer` resource.
-     *
-     * @var string
-     */
-    public $replyId;
-    /**
-     * Possibly grounded response text or media from the assistant.
-     *
-     * @param GoogleCloudDiscoveryengineV1alphaAssistantGroundedContent $groundedContent
-     */
-    public function setGroundedContent(GoogleCloudDiscoveryengineV1alphaAssistantGroundedContent $groundedContent)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaAssistAnswerReply extends \Google\Model
     {
+        protected $groundedContentType = GoogleCloudDiscoveryengineV1alphaAssistantGroundedContent::class;
+        protected $groundedContentDataType = '';
+        /**
+         * Output only. When set, uniquely identifies a reply within the
+         * `AssistAnswer` resource. During an AssistantService.StreamAssist call,
+         * multiple `Reply` messages with the same ID can occur within the response
+         * stream (across multiple AssistantService.StreamAssistResponse messages).
+         * These represent parts of a single `Reply` message in the final
+         * `AssistAnswer` resource.
+         *
+         * @var string
+         */
+        public $replyId;
+        /**
+         * Possibly grounded response text or media from the assistant.
+         *
+         * @param GoogleCloudDiscoveryengineV1alphaAssistantGroundedContent $groundedContent
+         */
+        public function setGroundedContent(GoogleCloudDiscoveryengineV1alphaAssistantGroundedContent $groundedContent)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1alphaAssistantGroundedContent
+         */
+        public function getGroundedContent()
+        {
+        }
+        /**
+         * Output only. When set, uniquely identifies a reply within the
+         * `AssistAnswer` resource. During an AssistantService.StreamAssist call,
+         * multiple `Reply` messages with the same ID can occur within the response
+         * stream (across multiple AssistantService.StreamAssistResponse messages).
+         * These represent parts of a single `Reply` message in the final
+         * `AssistAnswer` resource.
+         *
+         * @param string $replyId
+         */
+        public function setReplyId($replyId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReplyId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1alphaAssistantGroundedContent
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaAssistAnswerReply registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGroundedContent()
-    {
-    }
-    /**
-     * Output only. When set, uniquely identifies a reply within the
-     * `AssistAnswer` resource. During an AssistantService.StreamAssist call,
-     * multiple `Reply` messages with the same ID can occur within the response
-     * stream (across multiple AssistantService.StreamAssistResponse messages).
-     * These represent parts of a single `Reply` message in the final
-     * `AssistAnswer` resource.
-     *
-     * @param string $replyId
-     */
-    public function setReplyId($replyId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReplyId()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaAssistAnswerReply extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaAssistAnswerReply
     {
     }
 }

@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyerII;
-
-class PricePerBuyer extends \Google\Collection
-{
-    protected $collection_key = 'advertiserIds';
-    /**
-     * The list of advertisers for this price when associated with this buyer. If
-     * empty, all advertisers with this buyer pay this price.
-     *
-     * @var string[]
-     */
-    public $advertiserIds;
-    protected $buyerType = Buyer::class;
-    protected $buyerDataType = '';
-    protected $priceType = Price::class;
-    protected $priceDataType = '';
-    /**
-     * The list of advertisers for this price when associated with this buyer. If
-     * empty, all advertisers with this buyer pay this price.
-     *
-     * @param string[] $advertiserIds
-     */
-    public function setAdvertiserIds($advertiserIds)
+namespace Google\Service\AdExchangeBuyerII {
+    class PricePerBuyer extends \Google\Collection
     {
+        protected $collection_key = 'advertiserIds';
+        /**
+         * The list of advertisers for this price when associated with this buyer. If
+         * empty, all advertisers with this buyer pay this price.
+         *
+         * @var string[]
+         */
+        public $advertiserIds;
+        protected $buyerType = Buyer::class;
+        protected $buyerDataType = '';
+        protected $priceType = Price::class;
+        protected $priceDataType = '';
+        /**
+         * The list of advertisers for this price when associated with this buyer. If
+         * empty, all advertisers with this buyer pay this price.
+         *
+         * @param string[] $advertiserIds
+         */
+        public function setAdvertiserIds($advertiserIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAdvertiserIds()
+        {
+        }
+        /**
+         * The buyer who will pay this price. If unset, all buyers can pay this price
+         * (if the advertisers match, and there's no more specific rule matching the
+         * buyer).
+         *
+         * @param Buyer $buyer
+         */
+        public function setBuyer(Buyer $buyer)
+        {
+        }
+        /**
+         * @return Buyer
+         */
+        public function getBuyer()
+        {
+        }
+        /**
+         * The specified price.
+         *
+         * @param Price $price
+         */
+        public function setPrice(Price $price)
+        {
+        }
+        /**
+         * @return Price
+         */
+        public function getPrice()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\AdExchangeBuyerII\PricePerBuyer registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdvertiserIds()
-    {
-    }
-    /**
-     * The buyer who will pay this price. If unset, all buyers can pay this price
-     * (if the advertisers match, and there's no more specific rule matching the
-     * buyer).
-     *
-     * @param Buyer $buyer
-     */
-    public function setBuyer(Buyer $buyer)
-    {
-    }
-    /**
-     * @return Buyer
-     */
-    public function getBuyer()
-    {
-    }
-    /**
-     * The specified price.
-     *
-     * @param Price $price
-     */
-    public function setPrice(Price $price)
-    {
-    }
-    /**
-     * @return Price
-     */
-    public function getPrice()
+    class Google_Service_AdExchangeBuyerII_PricePerBuyer extends \Google\Service\AdExchangeBuyerII\PricePerBuyer
     {
     }
 }

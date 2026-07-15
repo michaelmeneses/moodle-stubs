@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class CopySheetToAnotherSpreadsheetRequest extends \Google\Model
-{
-    /**
-     * The ID of the spreadsheet to copy the sheet to.
-     *
-     * @var string
-     */
-    public $destinationSpreadsheetId;
-    /**
-     * The ID of the spreadsheet to copy the sheet to.
-     *
-     * @param string $destinationSpreadsheetId
-     */
-    public function setDestinationSpreadsheetId($destinationSpreadsheetId)
+namespace Google\Service\Sheets {
+    class CopySheetToAnotherSpreadsheetRequest extends \Google\Model
     {
+        /**
+         * The ID of the spreadsheet to copy the sheet to.
+         *
+         * @var string
+         */
+        public $destinationSpreadsheetId;
+        /**
+         * The ID of the spreadsheet to copy the sheet to.
+         *
+         * @param string $destinationSpreadsheetId
+         */
+        public function setDestinationSpreadsheetId($destinationSpreadsheetId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDestinationSpreadsheetId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Sheets\CopySheetToAnotherSpreadsheetRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDestinationSpreadsheetId()
+    class Google_Service_Sheets_CopySheetToAnotherSpreadsheetRequest extends \Google\Service\Sheets\CopySheetToAnotherSpreadsheetRequest
     {
     }
 }

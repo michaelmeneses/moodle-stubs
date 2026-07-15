@@ -21,106 +21,115 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class VmwareControlPlaneNodeConfig extends \Google\Model
-{
-    protected $autoResizeConfigType = VmwareAutoResizeConfig::class;
-    protected $autoResizeConfigDataType = '';
-    /**
-     * The number of CPUs for each admin cluster node that serve as control planes
-     * for this VMware user cluster. (default: 4 CPUs)
-     *
-     * @var string
-     */
-    public $cpus;
-    /**
-     * The megabytes of memory for each admin cluster node that serves as a
-     * control plane for this VMware user cluster (default: 8192 MB memory).
-     *
-     * @var string
-     */
-    public $memory;
-    /**
-     * The number of control plane nodes for this VMware user cluster. (default: 1
-     * replica).
-     *
-     * @var string
-     */
-    public $replicas;
-    protected $vsphereConfigType = VmwareControlPlaneVsphereConfig::class;
-    protected $vsphereConfigDataType = '';
-    /**
-     * AutoResizeConfig provides auto resizing configurations.
-     *
-     * @param VmwareAutoResizeConfig $autoResizeConfig
-     */
-    public function setAutoResizeConfig(VmwareAutoResizeConfig $autoResizeConfig)
+namespace Google\Service\GKEOnPrem {
+    class VmwareControlPlaneNodeConfig extends \Google\Model
     {
+        protected $autoResizeConfigType = VmwareAutoResizeConfig::class;
+        protected $autoResizeConfigDataType = '';
+        /**
+         * The number of CPUs for each admin cluster node that serve as control planes
+         * for this VMware user cluster. (default: 4 CPUs)
+         *
+         * @var string
+         */
+        public $cpus;
+        /**
+         * The megabytes of memory for each admin cluster node that serves as a
+         * control plane for this VMware user cluster (default: 8192 MB memory).
+         *
+         * @var string
+         */
+        public $memory;
+        /**
+         * The number of control plane nodes for this VMware user cluster. (default: 1
+         * replica).
+         *
+         * @var string
+         */
+        public $replicas;
+        protected $vsphereConfigType = VmwareControlPlaneVsphereConfig::class;
+        protected $vsphereConfigDataType = '';
+        /**
+         * AutoResizeConfig provides auto resizing configurations.
+         *
+         * @param VmwareAutoResizeConfig $autoResizeConfig
+         */
+        public function setAutoResizeConfig(VmwareAutoResizeConfig $autoResizeConfig)
+        {
+        }
+        /**
+         * @return VmwareAutoResizeConfig
+         */
+        public function getAutoResizeConfig()
+        {
+        }
+        /**
+         * The number of CPUs for each admin cluster node that serve as control planes
+         * for this VMware user cluster. (default: 4 CPUs)
+         *
+         * @param string $cpus
+         */
+        public function setCpus($cpus)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCpus()
+        {
+        }
+        /**
+         * The megabytes of memory for each admin cluster node that serves as a
+         * control plane for this VMware user cluster (default: 8192 MB memory).
+         *
+         * @param string $memory
+         */
+        public function setMemory($memory)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMemory()
+        {
+        }
+        /**
+         * The number of control plane nodes for this VMware user cluster. (default: 1
+         * replica).
+         *
+         * @param string $replicas
+         */
+        public function setReplicas($replicas)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReplicas()
+        {
+        }
+        /**
+         * Vsphere-specific config.
+         *
+         * @param VmwareControlPlaneVsphereConfig $vsphereConfig
+         */
+        public function setVsphereConfig(VmwareControlPlaneVsphereConfig $vsphereConfig)
+        {
+        }
+        /**
+         * @return VmwareControlPlaneVsphereConfig
+         */
+        public function getVsphereConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return VmwareAutoResizeConfig
+     * Runtime class alias of \Google\Service\GKEOnPrem\VmwareControlPlaneNodeConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAutoResizeConfig()
-    {
-    }
-    /**
-     * The number of CPUs for each admin cluster node that serve as control planes
-     * for this VMware user cluster. (default: 4 CPUs)
-     *
-     * @param string $cpus
-     */
-    public function setCpus($cpus)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCpus()
-    {
-    }
-    /**
-     * The megabytes of memory for each admin cluster node that serves as a
-     * control plane for this VMware user cluster (default: 8192 MB memory).
-     *
-     * @param string $memory
-     */
-    public function setMemory($memory)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMemory()
-    {
-    }
-    /**
-     * The number of control plane nodes for this VMware user cluster. (default: 1
-     * replica).
-     *
-     * @param string $replicas
-     */
-    public function setReplicas($replicas)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReplicas()
-    {
-    }
-    /**
-     * Vsphere-specific config.
-     *
-     * @param VmwareControlPlaneVsphereConfig $vsphereConfig
-     */
-    public function setVsphereConfig(VmwareControlPlaneVsphereConfig $vsphereConfig)
-    {
-    }
-    /**
-     * @return VmwareControlPlaneVsphereConfig
-     */
-    public function getVsphereConfig()
+    class Google_Service_GKEOnPrem_VmwareControlPlaneNodeConfig extends \Google\Service\GKEOnPrem\VmwareControlPlaneNodeConfig
     {
     }
 }

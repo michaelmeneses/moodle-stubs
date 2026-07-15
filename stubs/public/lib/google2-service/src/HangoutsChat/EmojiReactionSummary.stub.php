@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class EmojiReactionSummary extends \Google\Model
-{
-    protected $emojiType = Emoji::class;
-    protected $emojiDataType = '';
-    /**
-     * Output only. The total number of reactions using the associated emoji.
-     *
-     * @var int
-     */
-    public $reactionCount;
-    /**
-     * Output only. Emoji associated with the reactions.
-     *
-     * @param Emoji $emoji
-     */
-    public function setEmoji(Emoji $emoji)
+namespace Google\Service\HangoutsChat {
+    class EmojiReactionSummary extends \Google\Model
     {
+        protected $emojiType = Emoji::class;
+        protected $emojiDataType = '';
+        /**
+         * Output only. The total number of reactions using the associated emoji.
+         *
+         * @var int
+         */
+        public $reactionCount;
+        /**
+         * Output only. Emoji associated with the reactions.
+         *
+         * @param Emoji $emoji
+         */
+        public function setEmoji(Emoji $emoji)
+        {
+        }
+        /**
+         * @return Emoji
+         */
+        public function getEmoji()
+        {
+        }
+        /**
+         * Output only. The total number of reactions using the associated emoji.
+         *
+         * @param int $reactionCount
+         */
+        public function setReactionCount($reactionCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getReactionCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Emoji
+     * Runtime class alias of \Google\Service\HangoutsChat\EmojiReactionSummary registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmoji()
-    {
-    }
-    /**
-     * Output only. The total number of reactions using the associated emoji.
-     *
-     * @param int $reactionCount
-     */
-    public function setReactionCount($reactionCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getReactionCount()
+    class Google_Service_HangoutsChat_EmojiReactionSummary extends \Google\Service\HangoutsChat\EmojiReactionSummary
     {
     }
 }

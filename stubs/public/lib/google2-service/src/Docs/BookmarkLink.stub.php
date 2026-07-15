@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class BookmarkLink extends \Google\Model
-{
-    /**
-     * The ID of a bookmark in this document.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * The ID of the tab containing this bookmark.
-     *
-     * @var string
-     */
-    public $tabId;
-    /**
-     * The ID of a bookmark in this document.
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\Docs {
+    class BookmarkLink extends \Google\Model
     {
+        /**
+         * The ID of a bookmark in this document.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * The ID of the tab containing this bookmark.
+         *
+         * @var string
+         */
+        public $tabId;
+        /**
+         * The ID of a bookmark in this document.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * The ID of the tab containing this bookmark.
+         *
+         * @param string $tabId
+         */
+        public function setTabId($tabId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTabId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Docs\BookmarkLink registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * The ID of the tab containing this bookmark.
-     *
-     * @param string $tabId
-     */
-    public function setTabId($tabId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTabId()
+    class Google_Service_Docs_BookmarkLink extends \Google\Service\Docs\BookmarkLink
     {
     }
 }

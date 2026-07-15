@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1MemoryBankCustomizationConfigMemoryTopicManagedMemoryTopic extends \Google\Model
-{
-    /**
-     * Unspecified topic. This value should not be used.
-     */
-    public const MANAGED_TOPIC_ENUM_MANAGED_TOPIC_ENUM_UNSPECIFIED = 'MANAGED_TOPIC_ENUM_UNSPECIFIED';
-    /**
-     * Significant personal information about the User like first names,
-     * relationships, hobbies, important dates.
-     */
-    public const MANAGED_TOPIC_ENUM_USER_PERSONAL_INFO = 'USER_PERSONAL_INFO';
-    /**
-     * Stated or implied likes, dislikes, preferred styles, or patterns.
-     */
-    public const MANAGED_TOPIC_ENUM_USER_PREFERENCES = 'USER_PREFERENCES';
-    /**
-     * Important milestones or conclusions within the dialogue.
-     */
-    public const MANAGED_TOPIC_ENUM_KEY_CONVERSATION_DETAILS = 'KEY_CONVERSATION_DETAILS';
-    /**
-     * Information that the user explicitly requested to remember or forget.
-     */
-    public const MANAGED_TOPIC_ENUM_EXPLICIT_INSTRUCTIONS = 'EXPLICIT_INSTRUCTIONS';
-    /**
-     * Required. The managed topic.
-     *
-     * @var string
-     */
-    public $managedTopicEnum;
-    /**
-     * Required. The managed topic.
-     *
-     * Accepted values: MANAGED_TOPIC_ENUM_UNSPECIFIED, USER_PERSONAL_INFO,
-     * USER_PREFERENCES, KEY_CONVERSATION_DETAILS, EXPLICIT_INSTRUCTIONS
-     *
-     * @param self::MANAGED_TOPIC_ENUM_* $managedTopicEnum
-     */
-    public function setManagedTopicEnum($managedTopicEnum)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1MemoryBankCustomizationConfigMemoryTopicManagedMemoryTopic extends \Google\Model
     {
+        /**
+         * Unspecified topic. This value should not be used.
+         */
+        public const MANAGED_TOPIC_ENUM_MANAGED_TOPIC_ENUM_UNSPECIFIED = 'MANAGED_TOPIC_ENUM_UNSPECIFIED';
+        /**
+         * Significant personal information about the User like first names,
+         * relationships, hobbies, important dates.
+         */
+        public const MANAGED_TOPIC_ENUM_USER_PERSONAL_INFO = 'USER_PERSONAL_INFO';
+        /**
+         * Stated or implied likes, dislikes, preferred styles, or patterns.
+         */
+        public const MANAGED_TOPIC_ENUM_USER_PREFERENCES = 'USER_PREFERENCES';
+        /**
+         * Important milestones or conclusions within the dialogue.
+         */
+        public const MANAGED_TOPIC_ENUM_KEY_CONVERSATION_DETAILS = 'KEY_CONVERSATION_DETAILS';
+        /**
+         * Information that the user explicitly requested to remember or forget.
+         */
+        public const MANAGED_TOPIC_ENUM_EXPLICIT_INSTRUCTIONS = 'EXPLICIT_INSTRUCTIONS';
+        /**
+         * Required. The managed topic.
+         *
+         * @var string
+         */
+        public $managedTopicEnum;
+        /**
+         * Required. The managed topic.
+         *
+         * Accepted values: MANAGED_TOPIC_ENUM_UNSPECIFIED, USER_PERSONAL_INFO,
+         * USER_PREFERENCES, KEY_CONVERSATION_DETAILS, EXPLICIT_INSTRUCTIONS
+         *
+         * @param self::MANAGED_TOPIC_ENUM_* $managedTopicEnum
+         */
+        public function setManagedTopicEnum($managedTopicEnum)
+        {
+        }
+        /**
+         * @return self::MANAGED_TOPIC_ENUM_*
+         */
+        public function getManagedTopicEnum()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::MANAGED_TOPIC_ENUM_*
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1MemoryBankCustomizationConfigMemoryTopicManagedMemoryTopic registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getManagedTopicEnum()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1MemoryBankCustomizationConfigMemoryTopicManagedMemoryTopic extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1MemoryBankCustomizationConfigMemoryTopicManagedMemoryTopic
     {
     }
 }

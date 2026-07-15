@@ -21,98 +21,107 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceConsumerManagement;
-
-class V1DefaultIdentity extends \Google\Model
-{
-    /**
-     * The email address of the default identity. Calling GenerateDefaultIdentity
-     * with a deleted or purged default identity should expect
-     * does_not_exist@invalid-project.iam.gserviceaccount.com placeholder email.
-     *
-     * @var string
-     */
-    public $email;
-    /**
-     * Default identity resource name. An example name would be: `services/service
-     * consumermanagement.googleapis.com/projects/123/defaultIdentity`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The Default Identity tag. If specified when creating the account, the tag
-     * must be present in activation_grants. If not specified when creating the
-     * account, the tag is set to the tag specified in activation_grants.
-     *
-     * @var string
-     */
-    public $tag;
-    /**
-     * The unique and stable id of the default identity.
-     *
-     * @var string
-     */
-    public $uniqueId;
-    /**
-     * The email address of the default identity. Calling GenerateDefaultIdentity
-     * with a deleted or purged default identity should expect
-     * does_not_exist@invalid-project.iam.gserviceaccount.com placeholder email.
-     *
-     * @param string $email
-     */
-    public function setEmail($email)
+namespace Google\Service\ServiceConsumerManagement {
+    class V1DefaultIdentity extends \Google\Model
     {
+        /**
+         * The email address of the default identity. Calling GenerateDefaultIdentity
+         * with a deleted or purged default identity should expect
+         * does_not_exist@invalid-project.iam.gserviceaccount.com placeholder email.
+         *
+         * @var string
+         */
+        public $email;
+        /**
+         * Default identity resource name. An example name would be: `services/service
+         * consumermanagement.googleapis.com/projects/123/defaultIdentity`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The Default Identity tag. If specified when creating the account, the tag
+         * must be present in activation_grants. If not specified when creating the
+         * account, the tag is set to the tag specified in activation_grants.
+         *
+         * @var string
+         */
+        public $tag;
+        /**
+         * The unique and stable id of the default identity.
+         *
+         * @var string
+         */
+        public $uniqueId;
+        /**
+         * The email address of the default identity. Calling GenerateDefaultIdentity
+         * with a deleted or purged default identity should expect
+         * does_not_exist@invalid-project.iam.gserviceaccount.com placeholder email.
+         *
+         * @param string $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
+        /**
+         * Default identity resource name. An example name would be: `services/service
+         * consumermanagement.googleapis.com/projects/123/defaultIdentity`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The Default Identity tag. If specified when creating the account, the tag
+         * must be present in activation_grants. If not specified when creating the
+         * account, the tag is set to the tag specified in activation_grants.
+         *
+         * @param string $tag
+         */
+        public function setTag($tag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTag()
+        {
+        }
+        /**
+         * The unique and stable id of the default identity.
+         *
+         * @param string $uniqueId
+         */
+        public function setUniqueId($uniqueId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUniqueId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ServiceConsumerManagement\V1DefaultIdentity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmail()
-    {
-    }
-    /**
-     * Default identity resource name. An example name would be: `services/service
-     * consumermanagement.googleapis.com/projects/123/defaultIdentity`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The Default Identity tag. If specified when creating the account, the tag
-     * must be present in activation_grants. If not specified when creating the
-     * account, the tag is set to the tag specified in activation_grants.
-     *
-     * @param string $tag
-     */
-    public function setTag($tag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTag()
-    {
-    }
-    /**
-     * The unique and stable id of the default identity.
-     *
-     * @param string $uniqueId
-     */
-    public function setUniqueId($uniqueId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUniqueId()
+    class Google_Service_ServiceConsumerManagement_V1DefaultIdentity extends \Google\Service\ServiceConsumerManagement\V1DefaultIdentity
     {
     }
 }

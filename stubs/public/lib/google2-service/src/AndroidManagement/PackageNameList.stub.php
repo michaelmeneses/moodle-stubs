@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class PackageNameList extends \Google\Collection
-{
-    protected $collection_key = 'packageNames';
-    /**
-     * A list of package names.
-     *
-     * @var string[]
-     */
-    public $packageNames;
-    /**
-     * A list of package names.
-     *
-     * @param string[] $packageNames
-     */
-    public function setPackageNames($packageNames)
+namespace Google\Service\AndroidManagement {
+    class PackageNameList extends \Google\Collection
     {
+        protected $collection_key = 'packageNames';
+        /**
+         * A list of package names.
+         *
+         * @var string[]
+         */
+        public $packageNames;
+        /**
+         * A list of package names.
+         *
+         * @param string[] $packageNames
+         */
+        public function setPackageNames($packageNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPackageNames()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\AndroidManagement\PackageNameList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPackageNames()
+    class Google_Service_AndroidManagement_PackageNameList extends \Google\Service\AndroidManagement\PackageNameList
     {
     }
 }

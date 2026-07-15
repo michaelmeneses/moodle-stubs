@@ -21,120 +21,129 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Meet;
-
-class Participant extends \Google\Model
-{
-    protected $anonymousUserType = AnonymousUser::class;
-    protected $anonymousUserDataType = '';
-    /**
-     * Output only. Time when the participant first joined the meeting.
-     *
-     * @var string
-     */
-    public $earliestStartTime;
-    /**
-     * Output only. Time when the participant left the meeting for the last time.
-     * This can be null if it's an active meeting.
-     *
-     * @var string
-     */
-    public $latestEndTime;
-    /**
-     * Output only. Resource name of the participant. Format:
-     * `conferenceRecords/{conference_record}/participants/{participant}`
-     *
-     * @var string
-     */
-    public $name;
-    protected $phoneUserType = PhoneUser::class;
-    protected $phoneUserDataType = '';
-    protected $signedinUserType = SignedinUser::class;
-    protected $signedinUserDataType = '';
-    /**
-     * Anonymous user.
-     *
-     * @param AnonymousUser $anonymousUser
-     */
-    public function setAnonymousUser(AnonymousUser $anonymousUser)
+namespace Google\Service\Meet {
+    class Participant extends \Google\Model
     {
+        protected $anonymousUserType = AnonymousUser::class;
+        protected $anonymousUserDataType = '';
+        /**
+         * Output only. Time when the participant first joined the meeting.
+         *
+         * @var string
+         */
+        public $earliestStartTime;
+        /**
+         * Output only. Time when the participant left the meeting for the last time.
+         * This can be null if it's an active meeting.
+         *
+         * @var string
+         */
+        public $latestEndTime;
+        /**
+         * Output only. Resource name of the participant. Format:
+         * `conferenceRecords/{conference_record}/participants/{participant}`
+         *
+         * @var string
+         */
+        public $name;
+        protected $phoneUserType = PhoneUser::class;
+        protected $phoneUserDataType = '';
+        protected $signedinUserType = SignedinUser::class;
+        protected $signedinUserDataType = '';
+        /**
+         * Anonymous user.
+         *
+         * @param AnonymousUser $anonymousUser
+         */
+        public function setAnonymousUser(AnonymousUser $anonymousUser)
+        {
+        }
+        /**
+         * @return AnonymousUser
+         */
+        public function getAnonymousUser()
+        {
+        }
+        /**
+         * Output only. Time when the participant first joined the meeting.
+         *
+         * @param string $earliestStartTime
+         */
+        public function setEarliestStartTime($earliestStartTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEarliestStartTime()
+        {
+        }
+        /**
+         * Output only. Time when the participant left the meeting for the last time.
+         * This can be null if it's an active meeting.
+         *
+         * @param string $latestEndTime
+         */
+        public function setLatestEndTime($latestEndTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLatestEndTime()
+        {
+        }
+        /**
+         * Output only. Resource name of the participant. Format:
+         * `conferenceRecords/{conference_record}/participants/{participant}`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * User calling from their phone.
+         *
+         * @param PhoneUser $phoneUser
+         */
+        public function setPhoneUser(PhoneUser $phoneUser)
+        {
+        }
+        /**
+         * @return PhoneUser
+         */
+        public function getPhoneUser()
+        {
+        }
+        /**
+         * Signed-in user.
+         *
+         * @param SignedinUser $signedinUser
+         */
+        public function setSignedinUser(SignedinUser $signedinUser)
+        {
+        }
+        /**
+         * @return SignedinUser
+         */
+        public function getSignedinUser()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AnonymousUser
+     * Runtime class alias of \Google\Service\Meet\Participant registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnonymousUser()
-    {
-    }
-    /**
-     * Output only. Time when the participant first joined the meeting.
-     *
-     * @param string $earliestStartTime
-     */
-    public function setEarliestStartTime($earliestStartTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEarliestStartTime()
-    {
-    }
-    /**
-     * Output only. Time when the participant left the meeting for the last time.
-     * This can be null if it's an active meeting.
-     *
-     * @param string $latestEndTime
-     */
-    public function setLatestEndTime($latestEndTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLatestEndTime()
-    {
-    }
-    /**
-     * Output only. Resource name of the participant. Format:
-     * `conferenceRecords/{conference_record}/participants/{participant}`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * User calling from their phone.
-     *
-     * @param PhoneUser $phoneUser
-     */
-    public function setPhoneUser(PhoneUser $phoneUser)
-    {
-    }
-    /**
-     * @return PhoneUser
-     */
-    public function getPhoneUser()
-    {
-    }
-    /**
-     * Signed-in user.
-     *
-     * @param SignedinUser $signedinUser
-     */
-    public function setSignedinUser(SignedinUser $signedinUser)
-    {
-    }
-    /**
-     * @return SignedinUser
-     */
-    public function getSignedinUser()
+    class Google_Service_Meet_Participant extends \Google\Service\Meet\Participant
     {
     }
 }

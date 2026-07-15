@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaCustomFineTuningSpec extends \Google\Model
-{
-    /**
-     * Whether or not to enable and include custom fine tuned search adaptor
-     * model.
-     *
-     * @var bool
-     */
-    public $enableSearchAdaptor;
-    /**
-     * Whether or not to enable and include custom fine tuned search adaptor
-     * model.
-     *
-     * @param bool $enableSearchAdaptor
-     */
-    public function setEnableSearchAdaptor($enableSearchAdaptor)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaCustomFineTuningSpec extends \Google\Model
     {
+        /**
+         * Whether or not to enable and include custom fine tuned search adaptor
+         * model.
+         *
+         * @var bool
+         */
+        public $enableSearchAdaptor;
+        /**
+         * Whether or not to enable and include custom fine tuned search adaptor
+         * model.
+         *
+         * @param bool $enableSearchAdaptor
+         */
+        public function setEnableSearchAdaptor($enableSearchAdaptor)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableSearchAdaptor()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaCustomFineTuningSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnableSearchAdaptor()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaCustomFineTuningSpec extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaCustomFineTuningSpec
     {
     }
 }

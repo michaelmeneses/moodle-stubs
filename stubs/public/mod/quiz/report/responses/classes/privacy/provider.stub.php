@@ -29,6 +29,9 @@
  */
 namespace quiz_responses\privacy;
 
+use core_privacy\local\metadata\collection;
+use core_privacy\local\request\writer;
+use core_privacy\local\request\transform;
 /**
  * Privacy Subsystem for quiz_responses with user preferences.
  *

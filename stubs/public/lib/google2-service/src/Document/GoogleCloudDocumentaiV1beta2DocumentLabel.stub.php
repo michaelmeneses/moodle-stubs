@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1beta2DocumentLabel extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $automlModel;
-    /**
-     * @var float
-     */
-    public $confidence;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @param string
-     */
-    public function setAutomlModel($automlModel)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1beta2DocumentLabel extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $automlModel;
+        /**
+         * @var float
+         */
+        public $confidence;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @param string
+         */
+        public function setAutomlModel($automlModel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAutomlModel()
+        {
+        }
+        /**
+         * @param float
+         */
+        public function setConfidence($confidence)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getConfidence()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1beta2DocumentLabel registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAutomlModel()
-    {
-    }
-    /**
-     * @param float
-     */
-    public function setConfidence($confidence)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getConfidence()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Document_GoogleCloudDocumentaiV1beta2DocumentLabel extends \Google\Service\Document\GoogleCloudDocumentaiV1beta2DocumentLabel
     {
     }
 }

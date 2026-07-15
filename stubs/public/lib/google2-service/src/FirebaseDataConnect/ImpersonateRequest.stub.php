@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseDataConnect;
-
-class ImpersonateRequest extends \Google\Model
-{
-    protected $extensionsType = GraphqlRequestExtensions::class;
-    protected $extensionsDataType = '';
-    /**
-     * Required. The name of the GraphQL operation name. Required because all
-     * Connector operations must be named. See
-     * https://graphql.org/learn/queries/#operation-name.
-     *
-     * @var string
-     */
-    public $operationName;
-    /**
-     * Optional. Values for GraphQL variables provided in this request.
-     *
-     * @var array[]
-     */
-    public $variables;
-    /**
-     * Optional. Additional GraphQL request information.
-     *
-     * @param GraphqlRequestExtensions $extensions
-     */
-    public function setExtensions(GraphqlRequestExtensions $extensions)
+namespace Google\Service\FirebaseDataConnect {
+    class ImpersonateRequest extends \Google\Model
     {
+        protected $extensionsType = GraphqlRequestExtensions::class;
+        protected $extensionsDataType = '';
+        /**
+         * Required. The name of the GraphQL operation name. Required because all
+         * Connector operations must be named. See
+         * https://graphql.org/learn/queries/#operation-name.
+         *
+         * @var string
+         */
+        public $operationName;
+        /**
+         * Optional. Values for GraphQL variables provided in this request.
+         *
+         * @var array[]
+         */
+        public $variables;
+        /**
+         * Optional. Additional GraphQL request information.
+         *
+         * @param GraphqlRequestExtensions $extensions
+         */
+        public function setExtensions(GraphqlRequestExtensions $extensions)
+        {
+        }
+        /**
+         * @return GraphqlRequestExtensions
+         */
+        public function getExtensions()
+        {
+        }
+        /**
+         * Required. The name of the GraphQL operation name. Required because all
+         * Connector operations must be named. See
+         * https://graphql.org/learn/queries/#operation-name.
+         *
+         * @param string $operationName
+         */
+        public function setOperationName($operationName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOperationName()
+        {
+        }
+        /**
+         * Optional. Values for GraphQL variables provided in this request.
+         *
+         * @param array[] $variables
+         */
+        public function setVariables($variables)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getVariables()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GraphqlRequestExtensions
+     * Runtime class alias of \Google\Service\FirebaseDataConnect\ImpersonateRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExtensions()
-    {
-    }
-    /**
-     * Required. The name of the GraphQL operation name. Required because all
-     * Connector operations must be named. See
-     * https://graphql.org/learn/queries/#operation-name.
-     *
-     * @param string $operationName
-     */
-    public function setOperationName($operationName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOperationName()
-    {
-    }
-    /**
-     * Optional. Values for GraphQL variables provided in this request.
-     *
-     * @param array[] $variables
-     */
-    public function setVariables($variables)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getVariables()
+    class Google_Service_FirebaseDataConnect_ImpersonateRequest extends \Google\Service\FirebaseDataConnect\ImpersonateRequest
     {
     }
 }

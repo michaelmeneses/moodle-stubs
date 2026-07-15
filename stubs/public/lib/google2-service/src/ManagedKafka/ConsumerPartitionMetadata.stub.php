@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManagedKafka;
-
-class ConsumerPartitionMetadata extends \Google\Model
-{
-    /**
-     * Optional. The associated metadata for this partition, or empty if it does
-     * not exist.
-     *
-     * @var string
-     */
-    public $metadata;
-    /**
-     * Required. The current offset for this partition, or 0 if no offset has been
-     * committed.
-     *
-     * @var string
-     */
-    public $offset;
-    /**
-     * Optional. The associated metadata for this partition, or empty if it does
-     * not exist.
-     *
-     * @param string $metadata
-     */
-    public function setMetadata($metadata)
+namespace Google\Service\ManagedKafka {
+    class ConsumerPartitionMetadata extends \Google\Model
     {
+        /**
+         * Optional. The associated metadata for this partition, or empty if it does
+         * not exist.
+         *
+         * @var string
+         */
+        public $metadata;
+        /**
+         * Required. The current offset for this partition, or 0 if no offset has been
+         * committed.
+         *
+         * @var string
+         */
+        public $offset;
+        /**
+         * Optional. The associated metadata for this partition, or empty if it does
+         * not exist.
+         *
+         * @param string $metadata
+         */
+        public function setMetadata($metadata)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * Required. The current offset for this partition, or 0 if no offset has been
+         * committed.
+         *
+         * @param string $offset
+         */
+        public function setOffset($offset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOffset()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ManagedKafka\ConsumerPartitionMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetadata()
-    {
-    }
-    /**
-     * Required. The current offset for this partition, or 0 if no offset has been
-     * committed.
-     *
-     * @param string $offset
-     */
-    public function setOffset($offset)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOffset()
+    class Google_Service_ManagedKafka_ConsumerPartitionMetadata extends \Google\Service\ManagedKafka\ConsumerPartitionMetadata
     {
     }
 }

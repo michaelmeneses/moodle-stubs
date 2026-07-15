@@ -21,31 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild\Resource;
-
-/**
- * The "githubDotComWebhook" collection of methods.
- * Typical usage is:
- *  <code>
- *   $cloudbuildService = new Google\Service\CloudBuild(...);
- *   $githubDotComWebhook = $cloudbuildService->githubDotComWebhook;
- *  </code>
- */
-class GithubDotComWebhook extends \Google\Service\Resource
-{
+namespace Google\Service\CloudBuild\Resource {
+    use Google\Service\CloudBuild\CloudbuildEmpty;
+    use Google\Service\CloudBuild\HttpBody;
     /**
-     * ReceiveGitHubDotComWebhook is called when the API receives a github.com
-     * webhook. (githubDotComWebhook.receive)
-     *
-     * @param HttpBody $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string webhookKey For GitHub Enterprise webhooks, this key is used
-     * to associate the webhook request with the GitHubEnterpriseConfig to use for
-     * validation.
-     * @return CloudbuildEmpty
+     * The "githubDotComWebhook" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $cloudbuildService = new Google\Service\CloudBuild(...);
+     *   $githubDotComWebhook = $cloudbuildService->githubDotComWebhook;
+     *  </code>
      */
-    public function receive(HttpBody $postBody, $optParams = [])
+    class GithubDotComWebhook extends \Google\Service\Resource
+    {
+        /**
+         * ReceiveGitHubDotComWebhook is called when the API receives a github.com
+         * webhook. (githubDotComWebhook.receive)
+         *
+         * @param HttpBody $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string webhookKey For GitHub Enterprise webhooks, this key is used
+         * to associate the webhook request with the GitHubEnterpriseConfig to use for
+         * validation.
+         * @return CloudbuildEmpty
+         */
+        public function receive(HttpBody $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudBuild\Resource\GithubDotComWebhook registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudBuild_Resource_GithubDotComWebhook extends \Google\Service\CloudBuild\Resource\GithubDotComWebhook
     {
     }
 }

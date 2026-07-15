@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager;
-
-class AgentStatusReference extends \Google\Model
-{
-    /**
-     * Output only. The name of the reference.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The URL of the reference.
-     *
-     * @var string
-     */
-    public $url;
-    /**
-     * Output only. The name of the reference.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\WorkloadManager {
+    class AgentStatusReference extends \Google\Model
     {
+        /**
+         * Output only. The name of the reference.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The URL of the reference.
+         *
+         * @var string
+         */
+        public $url;
+        /**
+         * Output only. The name of the reference.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The URL of the reference.
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\WorkloadManager\AgentStatusReference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The URL of the reference.
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
+    class Google_Service_WorkloadManager_AgentStatusReference extends \Google\Service\WorkloadManager\AgentStatusReference
     {
     }
 }

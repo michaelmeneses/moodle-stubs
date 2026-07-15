@@ -21,75 +21,84 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager;
-
-class DatabaseProperties extends \Google\Model
-{
-    /**
-     * unspecified
-     */
-    public const DATABASE_TYPE_DATABASE_TYPE_UNSPECIFIED = 'DATABASE_TYPE_UNSPECIFIED';
-    /**
-     * SAP HANA
-     */
-    public const DATABASE_TYPE_HANA = 'HANA';
-    /**
-     * SAP MAX_DB
-     */
-    public const DATABASE_TYPE_MAX_DB = 'MAX_DB';
-    /**
-     * IBM DB2
-     */
-    public const DATABASE_TYPE_DB2 = 'DB2';
-    /**
-     * Oracle Database
-     */
-    public const DATABASE_TYPE_ORACLE = 'ORACLE';
-    /**
-     * Microsoft SQL Server
-     */
-    public const DATABASE_TYPE_SQLSERVER = 'SQLSERVER';
-    /**
-     * SAP Sybase ASE
-     */
-    public const DATABASE_TYPE_ASE = 'ASE';
-    protected $backupPropertiesType = BackupProperties::class;
-    protected $backupPropertiesDataType = '';
-    /**
-     * Output only. Type of the database. HANA, DB2, etc.
-     *
-     * @var string
-     */
-    public $databaseType;
-    /**
-     * Output only. Backup properties.
-     *
-     * @param BackupProperties $backupProperties
-     */
-    public function setBackupProperties(BackupProperties $backupProperties)
+namespace Google\Service\WorkloadManager {
+    class DatabaseProperties extends \Google\Model
     {
+        /**
+         * unspecified
+         */
+        public const DATABASE_TYPE_DATABASE_TYPE_UNSPECIFIED = 'DATABASE_TYPE_UNSPECIFIED';
+        /**
+         * SAP HANA
+         */
+        public const DATABASE_TYPE_HANA = 'HANA';
+        /**
+         * SAP MAX_DB
+         */
+        public const DATABASE_TYPE_MAX_DB = 'MAX_DB';
+        /**
+         * IBM DB2
+         */
+        public const DATABASE_TYPE_DB2 = 'DB2';
+        /**
+         * Oracle Database
+         */
+        public const DATABASE_TYPE_ORACLE = 'ORACLE';
+        /**
+         * Microsoft SQL Server
+         */
+        public const DATABASE_TYPE_SQLSERVER = 'SQLSERVER';
+        /**
+         * SAP Sybase ASE
+         */
+        public const DATABASE_TYPE_ASE = 'ASE';
+        protected $backupPropertiesType = BackupProperties::class;
+        protected $backupPropertiesDataType = '';
+        /**
+         * Output only. Type of the database. HANA, DB2, etc.
+         *
+         * @var string
+         */
+        public $databaseType;
+        /**
+         * Output only. Backup properties.
+         *
+         * @param BackupProperties $backupProperties
+         */
+        public function setBackupProperties(BackupProperties $backupProperties)
+        {
+        }
+        /**
+         * @return BackupProperties
+         */
+        public function getBackupProperties()
+        {
+        }
+        /**
+         * Output only. Type of the database. HANA, DB2, etc.
+         *
+         * Accepted values: DATABASE_TYPE_UNSPECIFIED, HANA, MAX_DB, DB2, ORACLE,
+         * SQLSERVER, ASE
+         *
+         * @param self::DATABASE_TYPE_* $databaseType
+         */
+        public function setDatabaseType($databaseType)
+        {
+        }
+        /**
+         * @return self::DATABASE_TYPE_*
+         */
+        public function getDatabaseType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BackupProperties
+     * Runtime class alias of \Google\Service\WorkloadManager\DatabaseProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackupProperties()
-    {
-    }
-    /**
-     * Output only. Type of the database. HANA, DB2, etc.
-     *
-     * Accepted values: DATABASE_TYPE_UNSPECIFIED, HANA, MAX_DB, DB2, ORACLE,
-     * SQLSERVER, ASE
-     *
-     * @param self::DATABASE_TYPE_* $databaseType
-     */
-    public function setDatabaseType($databaseType)
-    {
-    }
-    /**
-     * @return self::DATABASE_TYPE_*
-     */
-    public function getDatabaseType()
+    class Google_Service_WorkloadManager_DatabaseProperties extends \Google\Service\WorkloadManager\DatabaseProperties
     {
     }
 }

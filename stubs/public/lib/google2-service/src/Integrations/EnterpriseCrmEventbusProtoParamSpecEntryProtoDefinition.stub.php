@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmEventbusProtoParamSpecEntryProtoDefinition extends \Google\Model
-{
-    /**
-     * The fully-qualified proto name. This message, for example, would be
-     * "enterprise.crm.eventbus.proto.ParamSpecEntry.ProtoDefinition".
-     *
-     * @var string
-     */
-    public $fullName;
-    /**
-     * Path to the proto file that contains the message type's definition.
-     *
-     * @var string
-     */
-    public $path;
-    /**
-     * The fully-qualified proto name. This message, for example, would be
-     * "enterprise.crm.eventbus.proto.ParamSpecEntry.ProtoDefinition".
-     *
-     * @param string $fullName
-     */
-    public function setFullName($fullName)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmEventbusProtoParamSpecEntryProtoDefinition extends \Google\Model
     {
+        /**
+         * The fully-qualified proto name. This message, for example, would be
+         * "enterprise.crm.eventbus.proto.ParamSpecEntry.ProtoDefinition".
+         *
+         * @var string
+         */
+        public $fullName;
+        /**
+         * Path to the proto file that contains the message type's definition.
+         *
+         * @var string
+         */
+        public $path;
+        /**
+         * The fully-qualified proto name. This message, for example, would be
+         * "enterprise.crm.eventbus.proto.ParamSpecEntry.ProtoDefinition".
+         *
+         * @param string $fullName
+         */
+        public function setFullName($fullName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFullName()
+        {
+        }
+        /**
+         * Path to the proto file that contains the message type's definition.
+         *
+         * @param string $path
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmEventbusProtoParamSpecEntryProtoDefinition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFullName()
-    {
-    }
-    /**
-     * Path to the proto file that contains the message type's definition.
-     *
-     * @param string $path
-     */
-    public function setPath($path)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPath()
+    class Google_Service_Integrations_EnterpriseCrmEventbusProtoParamSpecEntryProtoDefinition extends \Google\Service\Integrations\EnterpriseCrmEventbusProtoParamSpecEntryProtoDefinition
     {
     }
 }

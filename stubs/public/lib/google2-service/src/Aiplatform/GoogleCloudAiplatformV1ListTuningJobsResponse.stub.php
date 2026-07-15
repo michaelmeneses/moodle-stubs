@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ListTuningJobsResponse extends \Google\Collection
-{
-    protected $collection_key = 'tuningJobs';
-    /**
-     * A token to retrieve the next page of results. Pass to
-     * ListTuningJobsRequest.page_token to obtain that page.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $tuningJobsType = GoogleCloudAiplatformV1TuningJob::class;
-    protected $tuningJobsDataType = 'array';
-    /**
-     * A token to retrieve the next page of results. Pass to
-     * ListTuningJobsRequest.page_token to obtain that page.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ListTuningJobsResponse extends \Google\Collection
     {
+        protected $collection_key = 'tuningJobs';
+        /**
+         * A token to retrieve the next page of results. Pass to
+         * ListTuningJobsRequest.page_token to obtain that page.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $tuningJobsType = GoogleCloudAiplatformV1TuningJob::class;
+        protected $tuningJobsDataType = 'array';
+        /**
+         * A token to retrieve the next page of results. Pass to
+         * ListTuningJobsRequest.page_token to obtain that page.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * List of TuningJobs in the requested page.
+         *
+         * @param GoogleCloudAiplatformV1TuningJob[] $tuningJobs
+         */
+        public function setTuningJobs($tuningJobs)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1TuningJob[]
+         */
+        public function getTuningJobs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListTuningJobsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * List of TuningJobs in the requested page.
-     *
-     * @param GoogleCloudAiplatformV1TuningJob[] $tuningJobs
-     */
-    public function setTuningJobs($tuningJobs)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1TuningJob[]
-     */
-    public function getTuningJobs()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ListTuningJobsResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListTuningJobsResponse
     {
     }
 }

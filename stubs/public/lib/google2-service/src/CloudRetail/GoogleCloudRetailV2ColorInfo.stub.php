@@ -21,87 +21,96 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2ColorInfo extends \Google\Collection
-{
-    protected $collection_key = 'colors';
-    /**
-     * The standard color families. Strongly recommended to use the following
-     * standard color groups: "Red", "Pink", "Orange", "Yellow", "Purple",
-     * "Green", "Cyan", "Blue", "Brown", "White", "Gray", "Black" and "Mixed".
-     * Normally it is expected to have only 1 color family. May consider using
-     * single "Mixed" instead of multiple values. A maximum of 5 values are
-     * allowed. Each value must be a UTF-8 encoded string with a length limit of
-     * 128 characters. Otherwise, an INVALID_ARGUMENT error is returned. Google
-     * Merchant Center property
-     * [color](https://support.google.com/merchants/answer/6324487). Schema.org
-     * property [Product.color](https://schema.org/color). The colorFamilies field
-     * as a system attribute is not a required field but strongly recommended to
-     * be specified. Google Search models treat this field as more important than
-     * a custom product attribute when specified.
-     *
-     * @var string[]
-     */
-    public $colorFamilies;
-    /**
-     * The color display names, which may be different from standard color family
-     * names, such as the color aliases used in the website frontend. Normally it
-     * is expected to have only 1 color. May consider using single "Mixed" instead
-     * of multiple values. A maximum of 75 colors are allowed. Each value must be
-     * a UTF-8 encoded string with a length limit of 128 characters. Otherwise, an
-     * INVALID_ARGUMENT error is returned. Google Merchant Center property
-     * [color](https://support.google.com/merchants/answer/6324487). Schema.org
-     * property [Product.color](https://schema.org/color).
-     *
-     * @var string[]
-     */
-    public $colors;
-    /**
-     * The standard color families. Strongly recommended to use the following
-     * standard color groups: "Red", "Pink", "Orange", "Yellow", "Purple",
-     * "Green", "Cyan", "Blue", "Brown", "White", "Gray", "Black" and "Mixed".
-     * Normally it is expected to have only 1 color family. May consider using
-     * single "Mixed" instead of multiple values. A maximum of 5 values are
-     * allowed. Each value must be a UTF-8 encoded string with a length limit of
-     * 128 characters. Otherwise, an INVALID_ARGUMENT error is returned. Google
-     * Merchant Center property
-     * [color](https://support.google.com/merchants/answer/6324487). Schema.org
-     * property [Product.color](https://schema.org/color). The colorFamilies field
-     * as a system attribute is not a required field but strongly recommended to
-     * be specified. Google Search models treat this field as more important than
-     * a custom product attribute when specified.
-     *
-     * @param string[] $colorFamilies
-     */
-    public function setColorFamilies($colorFamilies)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2ColorInfo extends \Google\Collection
     {
+        protected $collection_key = 'colors';
+        /**
+         * The standard color families. Strongly recommended to use the following
+         * standard color groups: "Red", "Pink", "Orange", "Yellow", "Purple",
+         * "Green", "Cyan", "Blue", "Brown", "White", "Gray", "Black" and "Mixed".
+         * Normally it is expected to have only 1 color family. May consider using
+         * single "Mixed" instead of multiple values. A maximum of 5 values are
+         * allowed. Each value must be a UTF-8 encoded string with a length limit of
+         * 128 characters. Otherwise, an INVALID_ARGUMENT error is returned. Google
+         * Merchant Center property
+         * [color](https://support.google.com/merchants/answer/6324487). Schema.org
+         * property [Product.color](https://schema.org/color). The colorFamilies field
+         * as a system attribute is not a required field but strongly recommended to
+         * be specified. Google Search models treat this field as more important than
+         * a custom product attribute when specified.
+         *
+         * @var string[]
+         */
+        public $colorFamilies;
+        /**
+         * The color display names, which may be different from standard color family
+         * names, such as the color aliases used in the website frontend. Normally it
+         * is expected to have only 1 color. May consider using single "Mixed" instead
+         * of multiple values. A maximum of 75 colors are allowed. Each value must be
+         * a UTF-8 encoded string with a length limit of 128 characters. Otherwise, an
+         * INVALID_ARGUMENT error is returned. Google Merchant Center property
+         * [color](https://support.google.com/merchants/answer/6324487). Schema.org
+         * property [Product.color](https://schema.org/color).
+         *
+         * @var string[]
+         */
+        public $colors;
+        /**
+         * The standard color families. Strongly recommended to use the following
+         * standard color groups: "Red", "Pink", "Orange", "Yellow", "Purple",
+         * "Green", "Cyan", "Blue", "Brown", "White", "Gray", "Black" and "Mixed".
+         * Normally it is expected to have only 1 color family. May consider using
+         * single "Mixed" instead of multiple values. A maximum of 5 values are
+         * allowed. Each value must be a UTF-8 encoded string with a length limit of
+         * 128 characters. Otherwise, an INVALID_ARGUMENT error is returned. Google
+         * Merchant Center property
+         * [color](https://support.google.com/merchants/answer/6324487). Schema.org
+         * property [Product.color](https://schema.org/color). The colorFamilies field
+         * as a system attribute is not a required field but strongly recommended to
+         * be specified. Google Search models treat this field as more important than
+         * a custom product attribute when specified.
+         *
+         * @param string[] $colorFamilies
+         */
+        public function setColorFamilies($colorFamilies)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getColorFamilies()
+        {
+        }
+        /**
+         * The color display names, which may be different from standard color family
+         * names, such as the color aliases used in the website frontend. Normally it
+         * is expected to have only 1 color. May consider using single "Mixed" instead
+         * of multiple values. A maximum of 75 colors are allowed. Each value must be
+         * a UTF-8 encoded string with a length limit of 128 characters. Otherwise, an
+         * INVALID_ARGUMENT error is returned. Google Merchant Center property
+         * [color](https://support.google.com/merchants/answer/6324487). Schema.org
+         * property [Product.color](https://schema.org/color).
+         *
+         * @param string[] $colors
+         */
+        public function setColors($colors)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getColors()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2ColorInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColorFamilies()
-    {
-    }
-    /**
-     * The color display names, which may be different from standard color family
-     * names, such as the color aliases used in the website frontend. Normally it
-     * is expected to have only 1 color. May consider using single "Mixed" instead
-     * of multiple values. A maximum of 75 colors are allowed. Each value must be
-     * a UTF-8 encoded string with a length limit of 128 characters. Otherwise, an
-     * INVALID_ARGUMENT error is returned. Google Merchant Center property
-     * [color](https://support.google.com/merchants/answer/6324487). Schema.org
-     * property [Product.color](https://schema.org/color).
-     *
-     * @param string[] $colors
-     */
-    public function setColors($colors)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getColors()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2ColorInfo extends \Google\Service\CloudRetail\GoogleCloudRetailV2ColorInfo
     {
     }
 }

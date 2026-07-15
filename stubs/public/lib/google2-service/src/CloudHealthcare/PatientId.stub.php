@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class PatientId extends \Google\Model
-{
-    /**
-     * ID type. For example, MRN or NHS.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The patient's unique identifier.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * ID type. For example, MRN or NHS.
-     *
-     * @param string $type
-     */
-    public function setType($type)
+namespace Google\Service\CloudHealthcare {
+    class PatientId extends \Google\Model
     {
+        /**
+         * ID type. For example, MRN or NHS.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The patient's unique identifier.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * ID type. For example, MRN or NHS.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
+        /**
+         * The patient's unique identifier.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudHealthcare\PatientId registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getType()
-    {
-    }
-    /**
-     * The patient's unique identifier.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_CloudHealthcare_PatientId extends \Google\Service\CloudHealthcare\PatientId
     {
     }
 }

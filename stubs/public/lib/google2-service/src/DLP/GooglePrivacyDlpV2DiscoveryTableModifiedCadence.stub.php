@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2DiscoveryTableModifiedCadence extends \Google\Collection
-{
-    /**
-     * Unspecified.
-     */
-    public const FREQUENCY_UPDATE_FREQUENCY_UNSPECIFIED = 'UPDATE_FREQUENCY_UNSPECIFIED';
-    /**
-     * After the data profile is created, it will never be updated.
-     */
-    public const FREQUENCY_UPDATE_FREQUENCY_NEVER = 'UPDATE_FREQUENCY_NEVER';
-    /**
-     * The data profile can be updated up to once every 24 hours.
-     */
-    public const FREQUENCY_UPDATE_FREQUENCY_DAILY = 'UPDATE_FREQUENCY_DAILY';
-    /**
-     * The data profile can be updated up to once every 30 days. Default.
-     */
-    public const FREQUENCY_UPDATE_FREQUENCY_MONTHLY = 'UPDATE_FREQUENCY_MONTHLY';
-    protected $collection_key = 'types';
-    /**
-     * How frequently data profiles can be updated when tables are modified.
-     * Defaults to never.
-     *
-     * @var string
-     */
-    public $frequency;
-    /**
-     * The type of events to consider when deciding if the table has been modified
-     * and should have the profile updated. Defaults to MODIFIED_TIMESTAMP.
-     *
-     * @var string[]
-     */
-    public $types;
-    /**
-     * How frequently data profiles can be updated when tables are modified.
-     * Defaults to never.
-     *
-     * Accepted values: UPDATE_FREQUENCY_UNSPECIFIED, UPDATE_FREQUENCY_NEVER,
-     * UPDATE_FREQUENCY_DAILY, UPDATE_FREQUENCY_MONTHLY
-     *
-     * @param self::FREQUENCY_* $frequency
-     */
-    public function setFrequency($frequency)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2DiscoveryTableModifiedCadence extends \Google\Collection
     {
+        /**
+         * Unspecified.
+         */
+        public const FREQUENCY_UPDATE_FREQUENCY_UNSPECIFIED = 'UPDATE_FREQUENCY_UNSPECIFIED';
+        /**
+         * After the data profile is created, it will never be updated.
+         */
+        public const FREQUENCY_UPDATE_FREQUENCY_NEVER = 'UPDATE_FREQUENCY_NEVER';
+        /**
+         * The data profile can be updated up to once every 24 hours.
+         */
+        public const FREQUENCY_UPDATE_FREQUENCY_DAILY = 'UPDATE_FREQUENCY_DAILY';
+        /**
+         * The data profile can be updated up to once every 30 days. Default.
+         */
+        public const FREQUENCY_UPDATE_FREQUENCY_MONTHLY = 'UPDATE_FREQUENCY_MONTHLY';
+        protected $collection_key = 'types';
+        /**
+         * How frequently data profiles can be updated when tables are modified.
+         * Defaults to never.
+         *
+         * @var string
+         */
+        public $frequency;
+        /**
+         * The type of events to consider when deciding if the table has been modified
+         * and should have the profile updated. Defaults to MODIFIED_TIMESTAMP.
+         *
+         * @var string[]
+         */
+        public $types;
+        /**
+         * How frequently data profiles can be updated when tables are modified.
+         * Defaults to never.
+         *
+         * Accepted values: UPDATE_FREQUENCY_UNSPECIFIED, UPDATE_FREQUENCY_NEVER,
+         * UPDATE_FREQUENCY_DAILY, UPDATE_FREQUENCY_MONTHLY
+         *
+         * @param self::FREQUENCY_* $frequency
+         */
+        public function setFrequency($frequency)
+        {
+        }
+        /**
+         * @return self::FREQUENCY_*
+         */
+        public function getFrequency()
+        {
+        }
+        /**
+         * The type of events to consider when deciding if the table has been modified
+         * and should have the profile updated. Defaults to MODIFIED_TIMESTAMP.
+         *
+         * @param string[] $types
+         */
+        public function setTypes($types)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTypes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::FREQUENCY_*
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2DiscoveryTableModifiedCadence registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFrequency()
-    {
-    }
-    /**
-     * The type of events to consider when deciding if the table has been modified
-     * and should have the profile updated. Defaults to MODIFIED_TIMESTAMP.
-     *
-     * @param string[] $types
-     */
-    public function setTypes($types)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTypes()
+    class Google_Service_DLP_GooglePrivacyDlpV2DiscoveryTableModifiedCadence extends \Google\Service\DLP\GooglePrivacyDlpV2DiscoveryTableModifiedCadence
     {
     }
 }

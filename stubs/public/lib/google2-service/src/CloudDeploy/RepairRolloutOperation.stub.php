@@ -21,108 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class RepairRolloutOperation extends \Google\Collection
-{
-    protected $collection_key = 'repairPhases';
-    /**
-     * Output only. The index of the current repair action in the repair sequence.
-     *
-     * @var string
-     */
-    public $currentRepairPhaseIndex;
-    /**
-     * Output only. The job ID for the Job to repair.
-     *
-     * @var string
-     */
-    public $jobId;
-    /**
-     * Output only. The phase ID of the phase that includes the job being
-     * repaired.
-     *
-     * @var string
-     */
-    public $phaseId;
-    protected $repairPhasesType = RepairPhase::class;
-    protected $repairPhasesDataType = 'array';
-    /**
-     * Output only. The name of the rollout that initiates the `AutomationRun`.
-     *
-     * @var string
-     */
-    public $rollout;
-    /**
-     * Output only. The index of the current repair action in the repair sequence.
-     *
-     * @param string $currentRepairPhaseIndex
-     */
-    public function setCurrentRepairPhaseIndex($currentRepairPhaseIndex)
+namespace Google\Service\CloudDeploy {
+    class RepairRolloutOperation extends \Google\Collection
     {
+        protected $collection_key = 'repairPhases';
+        /**
+         * Output only. The index of the current repair action in the repair sequence.
+         *
+         * @var string
+         */
+        public $currentRepairPhaseIndex;
+        /**
+         * Output only. The job ID for the Job to repair.
+         *
+         * @var string
+         */
+        public $jobId;
+        /**
+         * Output only. The phase ID of the phase that includes the job being
+         * repaired.
+         *
+         * @var string
+         */
+        public $phaseId;
+        protected $repairPhasesType = RepairPhase::class;
+        protected $repairPhasesDataType = 'array';
+        /**
+         * Output only. The name of the rollout that initiates the `AutomationRun`.
+         *
+         * @var string
+         */
+        public $rollout;
+        /**
+         * Output only. The index of the current repair action in the repair sequence.
+         *
+         * @param string $currentRepairPhaseIndex
+         */
+        public function setCurrentRepairPhaseIndex($currentRepairPhaseIndex)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCurrentRepairPhaseIndex()
+        {
+        }
+        /**
+         * Output only. The job ID for the Job to repair.
+         *
+         * @param string $jobId
+         */
+        public function setJobId($jobId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getJobId()
+        {
+        }
+        /**
+         * Output only. The phase ID of the phase that includes the job being
+         * repaired.
+         *
+         * @param string $phaseId
+         */
+        public function setPhaseId($phaseId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPhaseId()
+        {
+        }
+        /**
+         * Output only. Records of the repair attempts. Each repair phase may have
+         * multiple retry attempts or single rollback attempt.
+         *
+         * @param RepairPhase[] $repairPhases
+         */
+        public function setRepairPhases($repairPhases)
+        {
+        }
+        /**
+         * @return RepairPhase[]
+         */
+        public function getRepairPhases()
+        {
+        }
+        /**
+         * Output only. The name of the rollout that initiates the `AutomationRun`.
+         *
+         * @param string $rollout
+         */
+        public function setRollout($rollout)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRollout()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDeploy\RepairRolloutOperation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCurrentRepairPhaseIndex()
-    {
-    }
-    /**
-     * Output only. The job ID for the Job to repair.
-     *
-     * @param string $jobId
-     */
-    public function setJobId($jobId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getJobId()
-    {
-    }
-    /**
-     * Output only. The phase ID of the phase that includes the job being
-     * repaired.
-     *
-     * @param string $phaseId
-     */
-    public function setPhaseId($phaseId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPhaseId()
-    {
-    }
-    /**
-     * Output only. Records of the repair attempts. Each repair phase may have
-     * multiple retry attempts or single rollback attempt.
-     *
-     * @param RepairPhase[] $repairPhases
-     */
-    public function setRepairPhases($repairPhases)
-    {
-    }
-    /**
-     * @return RepairPhase[]
-     */
-    public function getRepairPhases()
-    {
-    }
-    /**
-     * Output only. The name of the rollout that initiates the `AutomationRun`.
-     *
-     * @param string $rollout
-     */
-    public function setRollout($rollout)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRollout()
+    class Google_Service_CloudDeploy_RepairRolloutOperation extends \Google\Service\CloudDeploy\RepairRolloutOperation
     {
     }
 }

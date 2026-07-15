@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Ideahub;
-
-class GoogleSearchIdeahubV1betaTopic extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $displayName;
-    /**
-     * @var string
-     */
-    public $mid;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @param string
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\Ideahub {
+    class GoogleSearchIdeahubV1betaTopic extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $displayName;
+        /**
+         * @var string
+         */
+        public $mid;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @param string
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMid($mid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMid()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Ideahub\GoogleSearchIdeahubV1betaTopic registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMid($mid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMid()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Ideahub_GoogleSearchIdeahubV1betaTopic extends \Google\Service\Ideahub\GoogleSearchIdeahubV1betaTopic
     {
     }
 }

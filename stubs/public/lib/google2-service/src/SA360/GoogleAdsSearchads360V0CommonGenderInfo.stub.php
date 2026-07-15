@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0CommonGenderInfo extends \Google\Model
-{
-    /**
-     * Not specified.
-     */
-    public const TYPE_UNSPECIFIED = 'UNSPECIFIED';
-    /**
-     * Used for return value only. Represents value unknown in this version.
-     */
-    public const TYPE_UNKNOWN = 'UNKNOWN';
-    /**
-     * Male.
-     */
-    public const TYPE_MALE = 'MALE';
-    /**
-     * Female.
-     */
-    public const TYPE_FEMALE = 'FEMALE';
-    /**
-     * Undetermined gender.
-     */
-    public const TYPE_UNDETERMINED = 'UNDETERMINED';
-    /**
-     * Type of the gender.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Type of the gender.
-     *
-     * Accepted values: UNSPECIFIED, UNKNOWN, MALE, FEMALE, UNDETERMINED
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0CommonGenderInfo extends \Google\Model
     {
+        /**
+         * Not specified.
+         */
+        public const TYPE_UNSPECIFIED = 'UNSPECIFIED';
+        /**
+         * Used for return value only. Represents value unknown in this version.
+         */
+        public const TYPE_UNKNOWN = 'UNKNOWN';
+        /**
+         * Male.
+         */
+        public const TYPE_MALE = 'MALE';
+        /**
+         * Female.
+         */
+        public const TYPE_FEMALE = 'FEMALE';
+        /**
+         * Undetermined gender.
+         */
+        public const TYPE_UNDETERMINED = 'UNDETERMINED';
+        /**
+         * Type of the gender.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Type of the gender.
+         *
+         * Accepted values: UNSPECIFIED, UNKNOWN, MALE, FEMALE, UNDETERMINED
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::TYPE_*
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0CommonGenderInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getType()
+    class Google_Service_SA360_GoogleAdsSearchads360V0CommonGenderInfo extends \Google\Service\SA360\GoogleAdsSearchads360V0CommonGenderInfo
     {
     }
 }

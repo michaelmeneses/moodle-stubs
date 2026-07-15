@@ -21,85 +21,94 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class TableProgress extends \Google\Model
-{
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * The table has not yet begun copying to the new cluster.
-     */
-    public const STATE_PENDING = 'PENDING';
-    /**
-     * The table is actively being copied to the new cluster.
-     */
-    public const STATE_COPYING = 'COPYING';
-    /**
-     * The table has been fully copied to the new cluster.
-     */
-    public const STATE_COMPLETED = 'COMPLETED';
-    /**
-     * The table was deleted before it finished copying to the new cluster. Note
-     * that tables deleted after completion will stay marked as COMPLETED, not
-     * CANCELLED.
-     */
-    public const STATE_CANCELLED = 'CANCELLED';
-    /**
-     * Estimate of the number of bytes copied so far for this table. This will
-     * eventually reach 'estimated_size_bytes' unless the table copy is CANCELLED.
-     *
-     * @var string
-     */
-    public $estimatedCopiedBytes;
-    /**
-     * Estimate of the size of the table to be copied.
-     *
-     * @var string
-     */
-    public $estimatedSizeBytes;
-    /**
-     * @var string
-     */
-    public $state;
-    /**
-     * Estimate of the number of bytes copied so far for this table. This will
-     * eventually reach 'estimated_size_bytes' unless the table copy is CANCELLED.
-     *
-     * @param string $estimatedCopiedBytes
-     */
-    public function setEstimatedCopiedBytes($estimatedCopiedBytes)
+namespace Google\Service\BigtableAdmin {
+    class TableProgress extends \Google\Model
     {
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * The table has not yet begun copying to the new cluster.
+         */
+        public const STATE_PENDING = 'PENDING';
+        /**
+         * The table is actively being copied to the new cluster.
+         */
+        public const STATE_COPYING = 'COPYING';
+        /**
+         * The table has been fully copied to the new cluster.
+         */
+        public const STATE_COMPLETED = 'COMPLETED';
+        /**
+         * The table was deleted before it finished copying to the new cluster. Note
+         * that tables deleted after completion will stay marked as COMPLETED, not
+         * CANCELLED.
+         */
+        public const STATE_CANCELLED = 'CANCELLED';
+        /**
+         * Estimate of the number of bytes copied so far for this table. This will
+         * eventually reach 'estimated_size_bytes' unless the table copy is CANCELLED.
+         *
+         * @var string
+         */
+        public $estimatedCopiedBytes;
+        /**
+         * Estimate of the size of the table to be copied.
+         *
+         * @var string
+         */
+        public $estimatedSizeBytes;
+        /**
+         * @var string
+         */
+        public $state;
+        /**
+         * Estimate of the number of bytes copied so far for this table. This will
+         * eventually reach 'estimated_size_bytes' unless the table copy is CANCELLED.
+         *
+         * @param string $estimatedCopiedBytes
+         */
+        public function setEstimatedCopiedBytes($estimatedCopiedBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEstimatedCopiedBytes()
+        {
+        }
+        /**
+         * Estimate of the size of the table to be copied.
+         *
+         * @param string $estimatedSizeBytes
+         */
+        public function setEstimatedSizeBytes($estimatedSizeBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEstimatedSizeBytes()
+        {
+        }
+        /**
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BigtableAdmin\TableProgress registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEstimatedCopiedBytes()
-    {
-    }
-    /**
-     * Estimate of the size of the table to be copied.
-     *
-     * @param string $estimatedSizeBytes
-     */
-    public function setEstimatedSizeBytes($estimatedSizeBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEstimatedSizeBytes()
-    {
-    }
-    /**
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
+    class Google_Service_BigtableAdmin_TableProgress extends \Google\Service\BigtableAdmin\TableProgress
     {
     }
 }

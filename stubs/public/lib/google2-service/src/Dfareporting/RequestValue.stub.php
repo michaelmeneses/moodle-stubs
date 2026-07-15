@@ -21,75 +21,84 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class RequestValue extends \Google\Collection
-{
-    protected $collection_key = 'userAttributeIds';
-    /**
-     * Optional. User attribute IDs in the request that should be excluded. Used
-     * only when the field type is REMARKETING_VALUE or USER_ATTRIBUTE_ID.
-     *
-     * @var string[]
-     */
-    public $excludeFromUserAttributeIds;
-    /**
-     * Optional. Custom key in the request. Used only when the field type is
-     * CUSTOM_VALUE.
-     *
-     * @var string
-     */
-    public $key;
-    /**
-     * Optional. User attribute IDs in the request. Used only when the field type
-     * is REMARKETING_VALUE or USER_ATTRIBUTE_ID.
-     *
-     * @var string[]
-     */
-    public $userAttributeIds;
-    /**
-     * Optional. User attribute IDs in the request that should be excluded. Used
-     * only when the field type is REMARKETING_VALUE or USER_ATTRIBUTE_ID.
-     *
-     * @param string[] $excludeFromUserAttributeIds
-     */
-    public function setExcludeFromUserAttributeIds($excludeFromUserAttributeIds)
+namespace Google\Service\Dfareporting {
+    class RequestValue extends \Google\Collection
     {
+        protected $collection_key = 'userAttributeIds';
+        /**
+         * Optional. User attribute IDs in the request that should be excluded. Used
+         * only when the field type is REMARKETING_VALUE or USER_ATTRIBUTE_ID.
+         *
+         * @var string[]
+         */
+        public $excludeFromUserAttributeIds;
+        /**
+         * Optional. Custom key in the request. Used only when the field type is
+         * CUSTOM_VALUE.
+         *
+         * @var string
+         */
+        public $key;
+        /**
+         * Optional. User attribute IDs in the request. Used only when the field type
+         * is REMARKETING_VALUE or USER_ATTRIBUTE_ID.
+         *
+         * @var string[]
+         */
+        public $userAttributeIds;
+        /**
+         * Optional. User attribute IDs in the request that should be excluded. Used
+         * only when the field type is REMARKETING_VALUE or USER_ATTRIBUTE_ID.
+         *
+         * @param string[] $excludeFromUserAttributeIds
+         */
+        public function setExcludeFromUserAttributeIds($excludeFromUserAttributeIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getExcludeFromUserAttributeIds()
+        {
+        }
+        /**
+         * Optional. Custom key in the request. Used only when the field type is
+         * CUSTOM_VALUE.
+         *
+         * @param string $key
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * Optional. User attribute IDs in the request. Used only when the field type
+         * is REMARKETING_VALUE or USER_ATTRIBUTE_ID.
+         *
+         * @param string[] $userAttributeIds
+         */
+        public function setUserAttributeIds($userAttributeIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUserAttributeIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Dfareporting\RequestValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExcludeFromUserAttributeIds()
-    {
-    }
-    /**
-     * Optional. Custom key in the request. Used only when the field type is
-     * CUSTOM_VALUE.
-     *
-     * @param string $key
-     */
-    public function setKey($key)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKey()
-    {
-    }
-    /**
-     * Optional. User attribute IDs in the request. Used only when the field type
-     * is REMARKETING_VALUE or USER_ATTRIBUTE_ID.
-     *
-     * @param string[] $userAttributeIds
-     */
-    public function setUserAttributeIds($userAttributeIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUserAttributeIds()
+    class Google_Service_Dfareporting_RequestValue extends \Google\Service\Dfareporting\RequestValue
     {
     }
 }

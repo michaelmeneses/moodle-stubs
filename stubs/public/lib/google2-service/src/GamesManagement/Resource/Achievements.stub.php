@@ -21,76 +21,88 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GamesManagement\Resource;
-
-/**
- * The "achievements" collection of methods.
- * Typical usage is:
- *  <code>
- *   $gamesManagementService = new Google\Service\GamesManagement(...);
- *   $achievements = $gamesManagementService->achievements;
- *  </code>
- */
-class Achievements extends \Google\Service\Resource
-{
+namespace Google\Service\GamesManagement\Resource {
+    use Google\Service\GamesManagement\AchievementResetAllResponse;
+    use Google\Service\GamesManagement\AchievementResetMultipleForAllRequest;
+    use Google\Service\GamesManagement\AchievementResetResponse;
     /**
-     * Resets the achievement with the given ID for the currently authenticated
-     * player. This method is only accessible to whitelisted tester accounts for
-     * your application. (achievements.reset)
-     *
-     * @param string $achievementId The ID of the achievement used by this method.
-     * @param array $optParams Optional parameters.
-     * @return AchievementResetResponse
-     * @throws \Google\Service\Exception
+     * The "achievements" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $gamesManagementService = new Google\Service\GamesManagement(...);
+     *   $achievements = $gamesManagementService->achievements;
+     *  </code>
      */
-    public function reset($achievementId, $optParams = [])
+    class Achievements extends \Google\Service\Resource
     {
+        /**
+         * Resets the achievement with the given ID for the currently authenticated
+         * player. This method is only accessible to whitelisted tester accounts for
+         * your application. (achievements.reset)
+         *
+         * @param string $achievementId The ID of the achievement used by this method.
+         * @param array $optParams Optional parameters.
+         * @return AchievementResetResponse
+         * @throws \Google\Service\Exception
+         */
+        public function reset($achievementId, $optParams = [])
+        {
+        }
+        /**
+         * Resets all achievements for the currently authenticated player for your
+         * application. This method is only accessible to whitelisted tester accounts
+         * for your application. (achievements.resetAll)
+         *
+         * @param array $optParams Optional parameters.
+         * @return AchievementResetAllResponse
+         * @throws \Google\Service\Exception
+         */
+        public function resetAll($optParams = [])
+        {
+        }
+        /**
+         * Resets all draft achievements for all players. This method is only available
+         * to user accounts for your developer console.
+         * (achievements.resetAllForAllPlayers)
+         *
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function resetAllForAllPlayers($optParams = [])
+        {
+        }
+        /**
+         * Resets the achievement with the given ID for all players. This method is only
+         * available to user accounts for your developer console. Only draft
+         * achievements can be reset. (achievements.resetForAllPlayers)
+         *
+         * @param string $achievementId The ID of the achievement used by this method.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function resetForAllPlayers($achievementId, $optParams = [])
+        {
+        }
+        /**
+         * Resets achievements with the given IDs for all players. This method is only
+         * available to user accounts for your developer console. Only draft
+         * achievements may be reset. (achievements.resetMultipleForAllPlayers)
+         *
+         * @param AchievementResetMultipleForAllRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function resetMultipleForAllPlayers(AchievementResetMultipleForAllRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Resets all achievements for the currently authenticated player for your
-     * application. This method is only accessible to whitelisted tester accounts
-     * for your application. (achievements.resetAll)
-     *
-     * @param array $optParams Optional parameters.
-     * @return AchievementResetAllResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\GamesManagement\Resource\Achievements registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function resetAll($optParams = [])
-    {
-    }
-    /**
-     * Resets all draft achievements for all players. This method is only available
-     * to user accounts for your developer console.
-     * (achievements.resetAllForAllPlayers)
-     *
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
-     */
-    public function resetAllForAllPlayers($optParams = [])
-    {
-    }
-    /**
-     * Resets the achievement with the given ID for all players. This method is only
-     * available to user accounts for your developer console. Only draft
-     * achievements can be reset. (achievements.resetForAllPlayers)
-     *
-     * @param string $achievementId The ID of the achievement used by this method.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
-     */
-    public function resetForAllPlayers($achievementId, $optParams = [])
-    {
-    }
-    /**
-     * Resets achievements with the given IDs for all players. This method is only
-     * available to user accounts for your developer console. Only draft
-     * achievements may be reset. (achievements.resetMultipleForAllPlayers)
-     *
-     * @param AchievementResetMultipleForAllRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
-     */
-    public function resetMultipleForAllPlayers(AchievementResetMultipleForAllRequest $postBody, $optParams = [])
+    class Google_Service_GamesManagement_Resource_Achievements extends \Google\Service\GamesManagement\Resource\Achievements
     {
     }
 }

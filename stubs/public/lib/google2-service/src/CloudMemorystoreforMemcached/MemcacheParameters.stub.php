@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudMemorystoreforMemcached;
-
-class MemcacheParameters extends \Google\Model
-{
-    /**
-     * Output only. The unique ID associated with this set of parameters. Users
-     * can use this id to determine if the parameters associated with the instance
-     * differ from the parameters associated with the nodes. A discrepancy between
-     * parameter ids can inform users that they may need to take action to apply
-     * parameters on nodes.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * User defined set of parameters to use in the memcached process.
-     *
-     * @var string[]
-     */
-    public $params;
-    /**
-     * Output only. The unique ID associated with this set of parameters. Users
-     * can use this id to determine if the parameters associated with the instance
-     * differ from the parameters associated with the nodes. A discrepancy between
-     * parameter ids can inform users that they may need to take action to apply
-     * parameters on nodes.
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\CloudMemorystoreforMemcached {
+    class MemcacheParameters extends \Google\Model
     {
+        /**
+         * Output only. The unique ID associated with this set of parameters. Users
+         * can use this id to determine if the parameters associated with the instance
+         * differ from the parameters associated with the nodes. A discrepancy between
+         * parameter ids can inform users that they may need to take action to apply
+         * parameters on nodes.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * User defined set of parameters to use in the memcached process.
+         *
+         * @var string[]
+         */
+        public $params;
+        /**
+         * Output only. The unique ID associated with this set of parameters. Users
+         * can use this id to determine if the parameters associated with the instance
+         * differ from the parameters associated with the nodes. A discrepancy between
+         * parameter ids can inform users that they may need to take action to apply
+         * parameters on nodes.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * User defined set of parameters to use in the memcached process.
+         *
+         * @param string[] $params
+         */
+        public function setParams($params)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getParams()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudMemorystoreforMemcached\MemcacheParameters registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * User defined set of parameters to use in the memcached process.
-     *
-     * @param string[] $params
-     */
-    public function setParams($params)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getParams()
+    class Google_Service_CloudMemorystoreforMemcached_MemcacheParameters extends \Google\Service\CloudMemorystoreforMemcached\MemcacheParameters
     {
     }
 }

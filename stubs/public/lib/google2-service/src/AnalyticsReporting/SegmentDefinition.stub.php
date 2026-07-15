@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsReporting;
-
-class SegmentDefinition extends \Google\Collection
-{
-    protected $collection_key = 'segmentFilters';
-    protected $segmentFiltersType = SegmentFilter::class;
-    protected $segmentFiltersDataType = 'array';
-    /**
-     * @param SegmentFilter[]
-     */
-    public function setSegmentFilters($segmentFilters)
+namespace Google\Service\AnalyticsReporting {
+    class SegmentDefinition extends \Google\Collection
     {
+        protected $collection_key = 'segmentFilters';
+        protected $segmentFiltersType = SegmentFilter::class;
+        protected $segmentFiltersDataType = 'array';
+        /**
+         * @param SegmentFilter[]
+         */
+        public function setSegmentFilters($segmentFilters)
+        {
+        }
+        /**
+         * @return SegmentFilter[]
+         */
+        public function getSegmentFilters()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SegmentFilter[]
+     * Runtime class alias of \Google\Service\AnalyticsReporting\SegmentDefinition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSegmentFilters()
+    class Google_Service_AnalyticsReporting_SegmentDefinition extends \Google\Service\AnalyticsReporting\SegmentDefinition
     {
     }
 }

@@ -21,137 +21,146 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkManagement;
-
-class Host extends \Google\Collection
-{
-    protected $collection_key = 'cloudVirtualNetworkIds';
-    /**
-     * @var string
-     */
-    public $cloudInstanceId;
-    /**
-     * @var string
-     */
-    public $cloudProjectId;
-    /**
-     * @var string
-     */
-    public $cloudProvider;
-    /**
-     * @var string
-     */
-    public $cloudRegion;
-    /**
-     * @var string[]
-     */
-    public $cloudVirtualNetworkIds;
-    /**
-     * @var string
-     */
-    public $cloudVpcId;
-    /**
-     * @var string
-     */
-    public $cloudZone;
-    /**
-     * @var string
-     */
-    public $os;
-    /**
-     * @param string
-     */
-    public function setCloudInstanceId($cloudInstanceId)
+namespace Google\Service\NetworkManagement {
+    class Host extends \Google\Collection
     {
+        protected $collection_key = 'cloudVirtualNetworkIds';
+        /**
+         * @var string
+         */
+        public $cloudInstanceId;
+        /**
+         * @var string
+         */
+        public $cloudProjectId;
+        /**
+         * @var string
+         */
+        public $cloudProvider;
+        /**
+         * @var string
+         */
+        public $cloudRegion;
+        /**
+         * @var string[]
+         */
+        public $cloudVirtualNetworkIds;
+        /**
+         * @var string
+         */
+        public $cloudVpcId;
+        /**
+         * @var string
+         */
+        public $cloudZone;
+        /**
+         * @var string
+         */
+        public $os;
+        /**
+         * @param string
+         */
+        public function setCloudInstanceId($cloudInstanceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCloudInstanceId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCloudProjectId($cloudProjectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCloudProjectId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCloudProvider($cloudProvider)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCloudProvider()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCloudRegion($cloudRegion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCloudRegion()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setCloudVirtualNetworkIds($cloudVirtualNetworkIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCloudVirtualNetworkIds()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCloudVpcId($cloudVpcId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCloudVpcId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCloudZone($cloudZone)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCloudZone()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOs($os)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetworkManagement\Host registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCloudInstanceId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCloudProjectId($cloudProjectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCloudProjectId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCloudProvider($cloudProvider)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCloudProvider()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCloudRegion($cloudRegion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCloudRegion()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setCloudVirtualNetworkIds($cloudVirtualNetworkIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getCloudVirtualNetworkIds()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCloudVpcId($cloudVpcId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCloudVpcId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCloudZone($cloudZone)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCloudZone()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOs($os)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOs()
+    class Google_Service_NetworkManagement_Host extends \Google\Service\NetworkManagement\Host
     {
     }
 }

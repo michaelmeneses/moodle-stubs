@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataFusion;
-
-class CloudAssetComposition extends \Google\Collection
-{
-    protected $collection_key = 'childAsset';
-    protected $childAssetType = CloudAsset::class;
-    protected $childAssetDataType = 'array';
-    /**
-     * @param CloudAsset[]
-     */
-    public function setChildAsset($childAsset)
+namespace Google\Service\DataFusion {
+    class CloudAssetComposition extends \Google\Collection
     {
+        protected $collection_key = 'childAsset';
+        protected $childAssetType = CloudAsset::class;
+        protected $childAssetDataType = 'array';
+        /**
+         * @param CloudAsset[]
+         */
+        public function setChildAsset($childAsset)
+        {
+        }
+        /**
+         * @return CloudAsset[]
+         */
+        public function getChildAsset()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CloudAsset[]
+     * Runtime class alias of \Google\Service\DataFusion\CloudAssetComposition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChildAsset()
+    class Google_Service_DataFusion_CloudAssetComposition extends \Google\Service\DataFusion\CloudAssetComposition
     {
     }
 }

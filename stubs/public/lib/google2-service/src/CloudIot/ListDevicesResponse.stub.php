@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIot;
-
-class ListDevicesResponse extends \Google\Collection
-{
-    protected $collection_key = 'devices';
-    protected $devicesType = Device::class;
-    protected $devicesDataType = 'array';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * @param Device[]
-     */
-    public function setDevices($devices)
+namespace Google\Service\CloudIot {
+    class ListDevicesResponse extends \Google\Collection
     {
+        protected $collection_key = 'devices';
+        protected $devicesType = Device::class;
+        protected $devicesDataType = 'array';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * @param Device[]
+         */
+        public function setDevices($devices)
+        {
+        }
+        /**
+         * @return Device[]
+         */
+        public function getDevices()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Device[]
+     * Runtime class alias of \Google\Service\CloudIot\ListDevicesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDevices()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_CloudIot_ListDevicesResponse extends \Google\Service\CloudIot\ListDevicesResponse
     {
     }
 }

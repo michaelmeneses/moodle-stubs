@@ -21,52 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Groupssettings\Resource;
-
-/**
- * The "groups" collection of methods.
- * Typical usage is:
- *  <code>
- *   $groupssettingsService = new Google\Service\Groupssettings(...);
- *   $groups = $groupssettingsService->groups;
- *  </code>
- */
-class Groups extends \Google\Service\Resource
-{
+namespace Google\Service\Groupssettings\Resource {
+    use Google\Service\Groupssettings\Groups as GroupsModel;
     /**
-     * Gets one resource by id. (groups.get)
-     *
-     * @param string $groupUniqueId The group's email address.
-     * @param array $optParams Optional parameters.
-     * @return GroupsModel
-     * @throws \Google\Service\Exception
+     * The "groups" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $groupssettingsService = new Google\Service\Groupssettings(...);
+     *   $groups = $groupssettingsService->groups;
+     *  </code>
      */
-    public function get($groupUniqueId, $optParams = [])
+    class Groups extends \Google\Service\Resource
     {
+        /**
+         * Gets one resource by id. (groups.get)
+         *
+         * @param string $groupUniqueId The group's email address.
+         * @param array $optParams Optional parameters.
+         * @return GroupsModel
+         * @throws \Google\Service\Exception
+         */
+        public function get($groupUniqueId, $optParams = [])
+        {
+        }
+        /**
+         * Updates an existing resource. This method supports patch semantics.
+         * (groups.patch)
+         *
+         * @param string $groupUniqueId The group's email address.
+         * @param GroupsModel $postBody
+         * @param array $optParams Optional parameters.
+         * @return GroupsModel
+         * @throws \Google\Service\Exception
+         */
+        public function patch($groupUniqueId, GroupsModel $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Updates an existing resource. (groups.update)
+         *
+         * @param string $groupUniqueId The group's email address.
+         * @param GroupsModel $postBody
+         * @param array $optParams Optional parameters.
+         * @return GroupsModel
+         * @throws \Google\Service\Exception
+         */
+        public function update($groupUniqueId, GroupsModel $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Updates an existing resource. This method supports patch semantics.
-     * (groups.patch)
-     *
-     * @param string $groupUniqueId The group's email address.
-     * @param GroupsModel $postBody
-     * @param array $optParams Optional parameters.
-     * @return GroupsModel
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Groupssettings\Resource\Groups registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function patch($groupUniqueId, GroupsModel $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Updates an existing resource. (groups.update)
-     *
-     * @param string $groupUniqueId The group's email address.
-     * @param GroupsModel $postBody
-     * @param array $optParams Optional parameters.
-     * @return GroupsModel
-     * @throws \Google\Service\Exception
-     */
-    public function update($groupUniqueId, GroupsModel $postBody, $optParams = [])
+    class Google_Service_Groupssettings_Resource_Groups extends \Google\Service\Groupssettings\Resource\Groups
     {
     }
 }

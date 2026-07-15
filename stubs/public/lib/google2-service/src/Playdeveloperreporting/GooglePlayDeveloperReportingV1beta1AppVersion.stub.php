@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Playdeveloperreporting;
-
-class GooglePlayDeveloperReportingV1beta1AppVersion extends \Google\Model
-{
-    /**
-     * Numeric version code of the app version (set by the app's developer).
-     *
-     * @var string
-     */
-    public $versionCode;
-    /**
-     * Numeric version code of the app version (set by the app's developer).
-     *
-     * @param string $versionCode
-     */
-    public function setVersionCode($versionCode)
+namespace Google\Service\Playdeveloperreporting {
+    class GooglePlayDeveloperReportingV1beta1AppVersion extends \Google\Model
     {
+        /**
+         * Numeric version code of the app version (set by the app's developer).
+         *
+         * @var string
+         */
+        public $versionCode;
+        /**
+         * Numeric version code of the app version (set by the app's developer).
+         *
+         * @param string $versionCode
+         */
+        public function setVersionCode($versionCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersionCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1AppVersion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getVersionCode()
+    class Google_Service_Playdeveloperreporting_GooglePlayDeveloperReportingV1beta1AppVersion extends \Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1AppVersion
     {
     }
 }

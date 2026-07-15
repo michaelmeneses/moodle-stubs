@@ -21,61 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PubsubLite\Resource;
-
-/**
- * The "topics" collection of methods.
- * Typical usage is:
- *  <code>
- *   $pubsubliteService = new Google\Service\PubsubLite(...);
- *   $topics = $pubsubliteService->topicStats_projects_locations_topics;
- *  </code>
- */
-class TopicStatsProjectsLocationsTopics extends \Google\Service\Resource
-{
+namespace Google\Service\PubsubLite\Resource {
+    use Google\Service\PubsubLite\ComputeHeadCursorRequest;
+    use Google\Service\PubsubLite\ComputeHeadCursorResponse;
+    use Google\Service\PubsubLite\ComputeMessageStatsRequest;
+    use Google\Service\PubsubLite\ComputeMessageStatsResponse;
+    use Google\Service\PubsubLite\ComputeTimeCursorRequest;
+    use Google\Service\PubsubLite\ComputeTimeCursorResponse;
     /**
-     * Compute the head cursor for the partition. The head cursor's offset is
-     * guaranteed to be less than or equal to all messages which have not yet been
-     * acknowledged as published, and greater than the offset of any message whose
-     * publish has already been acknowledged. It is zero if there have never been
-     * messages in the partition. (topics.computeHeadCursor)
-     *
-     * @param string $topic Required. The topic for which we should compute the head
-     * cursor.
-     * @param ComputeHeadCursorRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return ComputeHeadCursorResponse
-     * @throws \Google\Service\Exception
+     * The "topics" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $pubsubliteService = new Google\Service\PubsubLite(...);
+     *   $topics = $pubsubliteService->topicStats_projects_locations_topics;
+     *  </code>
      */
-    public function computeHeadCursor($topic, ComputeHeadCursorRequest $postBody, $optParams = [])
+    class TopicStatsProjectsLocationsTopics extends \Google\Service\Resource
     {
+        /**
+         * Compute the head cursor for the partition. The head cursor's offset is
+         * guaranteed to be less than or equal to all messages which have not yet been
+         * acknowledged as published, and greater than the offset of any message whose
+         * publish has already been acknowledged. It is zero if there have never been
+         * messages in the partition. (topics.computeHeadCursor)
+         *
+         * @param string $topic Required. The topic for which we should compute the head
+         * cursor.
+         * @param ComputeHeadCursorRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return ComputeHeadCursorResponse
+         * @throws \Google\Service\Exception
+         */
+        public function computeHeadCursor($topic, ComputeHeadCursorRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Compute statistics about a range of messages in a given topic and partition.
+         * (topics.computeMessageStats)
+         *
+         * @param string $topic Required. The topic for which we should compute message
+         * stats.
+         * @param ComputeMessageStatsRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return ComputeMessageStatsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function computeMessageStats($topic, ComputeMessageStatsRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Compute the corresponding cursor for a publish or event time in a topic
+         * partition. (topics.computeTimeCursor)
+         *
+         * @param string $topic Required. The topic for which we should compute the
+         * cursor.
+         * @param ComputeTimeCursorRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return ComputeTimeCursorResponse
+         * @throws \Google\Service\Exception
+         */
+        public function computeTimeCursor($topic, ComputeTimeCursorRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Compute statistics about a range of messages in a given topic and partition.
-     * (topics.computeMessageStats)
-     *
-     * @param string $topic Required. The topic for which we should compute message
-     * stats.
-     * @param ComputeMessageStatsRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return ComputeMessageStatsResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\PubsubLite\Resource\TopicStatsProjectsLocationsTopics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function computeMessageStats($topic, ComputeMessageStatsRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Compute the corresponding cursor for a publish or event time in a topic
-     * partition. (topics.computeTimeCursor)
-     *
-     * @param string $topic Required. The topic for which we should compute the
-     * cursor.
-     * @param ComputeTimeCursorRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return ComputeTimeCursorResponse
-     * @throws \Google\Service\Exception
-     */
-    public function computeTimeCursor($topic, ComputeTimeCursorRequest $postBody, $optParams = [])
+    class Google_Service_PubsubLite_Resource_TopicStatsProjectsLocationsTopics extends \Google\Service\PubsubLite\Resource\TopicStatsProjectsLocationsTopics
     {
     }
 }

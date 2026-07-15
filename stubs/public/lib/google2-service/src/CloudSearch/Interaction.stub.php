@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class Interaction extends \Google\Model
-{
-    /**
-     * Invalid value.
-     */
-    public const TYPE_UNSPECIFIED = 'UNSPECIFIED';
-    /**
-     * This interaction indicates the user viewed the item.
-     */
-    public const TYPE_VIEW = 'VIEW';
-    /**
-     * This interaction indicates the user edited the item.
-     */
-    public const TYPE_EDIT = 'EDIT';
-    /**
-     * The time when the user acted on the item. If multiple actions of the same
-     * type exist for a single user, only the most recent action is recorded.
-     *
-     * @var string
-     */
-    public $interactionTime;
-    protected $principalType = Principal::class;
-    protected $principalDataType = '';
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * The time when the user acted on the item. If multiple actions of the same
-     * type exist for a single user, only the most recent action is recorded.
-     *
-     * @param string $interactionTime
-     */
-    public function setInteractionTime($interactionTime)
+namespace Google\Service\CloudSearch {
+    class Interaction extends \Google\Model
     {
+        /**
+         * Invalid value.
+         */
+        public const TYPE_UNSPECIFIED = 'UNSPECIFIED';
+        /**
+         * This interaction indicates the user viewed the item.
+         */
+        public const TYPE_VIEW = 'VIEW';
+        /**
+         * This interaction indicates the user edited the item.
+         */
+        public const TYPE_EDIT = 'EDIT';
+        /**
+         * The time when the user acted on the item. If multiple actions of the same
+         * type exist for a single user, only the most recent action is recorded.
+         *
+         * @var string
+         */
+        public $interactionTime;
+        protected $principalType = Principal::class;
+        protected $principalDataType = '';
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * The time when the user acted on the item. If multiple actions of the same
+         * type exist for a single user, only the most recent action is recorded.
+         *
+         * @param string $interactionTime
+         */
+        public function setInteractionTime($interactionTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInteractionTime()
+        {
+        }
+        /**
+         * The user that acted on the item.
+         *
+         * @param Principal $principal
+         */
+        public function setPrincipal(Principal $principal)
+        {
+        }
+        /**
+         * @return Principal
+         */
+        public function getPrincipal()
+        {
+        }
+        /**
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\Interaction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInteractionTime()
-    {
-    }
-    /**
-     * The user that acted on the item.
-     *
-     * @param Principal $principal
-     */
-    public function setPrincipal(Principal $principal)
-    {
-    }
-    /**
-     * @return Principal
-     */
-    public function getPrincipal()
-    {
-    }
-    /**
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_CloudSearch_Interaction extends \Google\Service\CloudSearch\Interaction
     {
     }
 }

@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace aiprovider_awsbedrock;
 
+use core\output\html_writer;
+use core_ai\hook\after_ai_action_settings_form_hook;
+use core_ai\hook\after_ai_provider_form_hook;
 /**
  * Hook listener for AWS Bedrock Provider.
  *

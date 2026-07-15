@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_ai\reportbuilder\local\systemreports;
 
+use core_ai\reportbuilder\local\entities\ai_policy_register;
+use core_reportbuilder\system_report;
+use core_reportbuilder\local\entities\user;
 /**
  * AI policy acceptance system report.
  *

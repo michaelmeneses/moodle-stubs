@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceUsage;
-
-class CustomHttpPattern extends \Google\Model
-{
-    /**
-     * The name of this custom HTTP verb.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The path matched by this custom verb.
-     *
-     * @var string
-     */
-    public $path;
-    /**
-     * The name of this custom HTTP verb.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\ServiceUsage {
+    class CustomHttpPattern extends \Google\Model
     {
+        /**
+         * The name of this custom HTTP verb.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The path matched by this custom verb.
+         *
+         * @var string
+         */
+        public $path;
+        /**
+         * The name of this custom HTTP verb.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The path matched by this custom verb.
+         *
+         * @param string $path
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ServiceUsage\CustomHttpPattern registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * The path matched by this custom verb.
-     *
-     * @param string $path
-     */
-    public function setPath($path)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPath()
+    class Google_Service_ServiceUsage_CustomHttpPattern extends \Google\Service\ServiceUsage\CustomHttpPattern
     {
     }
 }

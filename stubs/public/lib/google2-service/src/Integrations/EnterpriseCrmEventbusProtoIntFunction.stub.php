@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmEventbusProtoIntFunction extends \Google\Model
-{
-    public const FUNCTION_NAME_UNSPECIFIED = 'UNSPECIFIED';
-    public const FUNCTION_NAME_ADD = 'ADD';
-    public const FUNCTION_NAME_SUBTRACT = 'SUBTRACT';
-    public const FUNCTION_NAME_MULTIPLY = 'MULTIPLY';
-    public const FUNCTION_NAME_DIVIDE = 'DIVIDE';
-    public const FUNCTION_NAME_EXPONENT = 'EXPONENT';
-    public const FUNCTION_NAME_GREATER_THAN_EQUAL_TO = 'GREATER_THAN_EQUAL_TO';
-    public const FUNCTION_NAME_GREATER_THAN = 'GREATER_THAN';
-    public const FUNCTION_NAME_LESS_THAN_EQUAL_TO = 'LESS_THAN_EQUAL_TO';
-    public const FUNCTION_NAME_LESS_THAN = 'LESS_THAN';
-    public const FUNCTION_NAME_TO_DOUBLE = 'TO_DOUBLE';
-    public const FUNCTION_NAME_TO_STRING = 'TO_STRING';
-    public const FUNCTION_NAME_EQUALS = 'EQUALS';
-    public const FUNCTION_NAME_TO_JSON = 'TO_JSON';
-    public const FUNCTION_NAME_MOD = 'MOD';
-    public const FUNCTION_NAME_EPOCH_TO_HUMAN_READABLE_TIME = 'EPOCH_TO_HUMAN_READABLE_TIME';
-    /**
-     * @var string
-     */
-    public $functionName;
-    /**
-     * @param self::FUNCTION_NAME_* $functionName
-     */
-    public function setFunctionName($functionName)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmEventbusProtoIntFunction extends \Google\Model
     {
+        public const FUNCTION_NAME_UNSPECIFIED = 'UNSPECIFIED';
+        public const FUNCTION_NAME_ADD = 'ADD';
+        public const FUNCTION_NAME_SUBTRACT = 'SUBTRACT';
+        public const FUNCTION_NAME_MULTIPLY = 'MULTIPLY';
+        public const FUNCTION_NAME_DIVIDE = 'DIVIDE';
+        public const FUNCTION_NAME_EXPONENT = 'EXPONENT';
+        public const FUNCTION_NAME_GREATER_THAN_EQUAL_TO = 'GREATER_THAN_EQUAL_TO';
+        public const FUNCTION_NAME_GREATER_THAN = 'GREATER_THAN';
+        public const FUNCTION_NAME_LESS_THAN_EQUAL_TO = 'LESS_THAN_EQUAL_TO';
+        public const FUNCTION_NAME_LESS_THAN = 'LESS_THAN';
+        public const FUNCTION_NAME_TO_DOUBLE = 'TO_DOUBLE';
+        public const FUNCTION_NAME_TO_STRING = 'TO_STRING';
+        public const FUNCTION_NAME_EQUALS = 'EQUALS';
+        public const FUNCTION_NAME_TO_JSON = 'TO_JSON';
+        public const FUNCTION_NAME_MOD = 'MOD';
+        public const FUNCTION_NAME_EPOCH_TO_HUMAN_READABLE_TIME = 'EPOCH_TO_HUMAN_READABLE_TIME';
+        /**
+         * @var string
+         */
+        public $functionName;
+        /**
+         * @param self::FUNCTION_NAME_* $functionName
+         */
+        public function setFunctionName($functionName)
+        {
+        }
+        /**
+         * @return self::FUNCTION_NAME_*
+         */
+        public function getFunctionName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::FUNCTION_NAME_*
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmEventbusProtoIntFunction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFunctionName()
+    class Google_Service_Integrations_EnterpriseCrmEventbusProtoIntFunction extends \Google\Service\Integrations\EnterpriseCrmEventbusProtoIntFunction
     {
     }
 }

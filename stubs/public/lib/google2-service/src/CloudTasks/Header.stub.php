@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudTasks;
-
-class Header extends \Google\Model
-{
-    /**
-     * The Key of the header.
-     *
-     * @var string
-     */
-    public $key;
-    /**
-     * The Value of the header.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * The Key of the header.
-     *
-     * @param string $key
-     */
-    public function setKey($key)
+namespace Google\Service\CloudTasks {
+    class Header extends \Google\Model
     {
+        /**
+         * The Key of the header.
+         *
+         * @var string
+         */
+        public $key;
+        /**
+         * The Value of the header.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * The Key of the header.
+         *
+         * @param string $key
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * The Value of the header.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudTasks\Header registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKey()
-    {
-    }
-    /**
-     * The Value of the header.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_CloudTasks_Header extends \Google\Service\CloudTasks\Header
     {
     }
 }

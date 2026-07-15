@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class MapInfo extends \Google\Collection
-{
-    protected $collection_key = 'mapTile';
-    /**
-     * Latitude in degrees
-     *
-     * @var 
-     */
-    public $lat;
-    protected $locationUrlType = SafeUrlProto::class;
-    protected $locationUrlDataType = '';
-    /**
-     * Longitude in degrees
-     *
-     * @var 
-     */
-    public $long;
-    protected $mapTileType = MapTile::class;
-    protected $mapTileDataType = 'array';
-    /**
-     * The zoom level of the map. A constant zoom value of 18 is used for now to
-     * match the zoom of the map shown on a Moma Teams Profile page
-     *
-     * @var int
-     */
-    public $zoom;
-    public function setLat($lat)
+namespace Google\Service\CloudSearch {
+    class MapInfo extends \Google\Collection
     {
+        protected $collection_key = 'mapTile';
+        /**
+         * Latitude in degrees
+         *
+         * @var 
+         */
+        public $lat;
+        protected $locationUrlType = SafeUrlProto::class;
+        protected $locationUrlDataType = '';
+        /**
+         * Longitude in degrees
+         *
+         * @var 
+         */
+        public $long;
+        protected $mapTileType = MapTile::class;
+        protected $mapTileDataType = 'array';
+        /**
+         * The zoom level of the map. A constant zoom value of 18 is used for now to
+         * match the zoom of the map shown on a Moma Teams Profile page
+         *
+         * @var int
+         */
+        public $zoom;
+        public function setLat($lat)
+        {
+        }
+        public function getLat()
+        {
+        }
+        /**
+         * URL to a view of a map centered on the user's work location in Campus Maps
+         * (for google.com) or Google Maps (external).
+         *
+         * @param SafeUrlProto $locationUrl
+         */
+        public function setLocationUrl(SafeUrlProto $locationUrl)
+        {
+        }
+        /**
+         * @return SafeUrlProto
+         */
+        public function getLocationUrl()
+        {
+        }
+        public function setLong($long)
+        {
+        }
+        public function getLong()
+        {
+        }
+        /**
+         * MapTiles for the area around a user's work location
+         *
+         * @param MapTile[] $mapTile
+         */
+        public function setMapTile($mapTile)
+        {
+        }
+        /**
+         * @return MapTile[]
+         */
+        public function getMapTile()
+        {
+        }
+        /**
+         * The zoom level of the map. A constant zoom value of 18 is used for now to
+         * match the zoom of the map shown on a Moma Teams Profile page
+         *
+         * @param int $zoom
+         */
+        public function setZoom($zoom)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getZoom()
+        {
+        }
     }
-    public function getLat()
-    {
-    }
+}
+namespace {
     /**
-     * URL to a view of a map centered on the user's work location in Campus Maps
-     * (for google.com) or Google Maps (external).
-     *
-     * @param SafeUrlProto $locationUrl
+     * Runtime class alias of \Google\Service\CloudSearch\MapInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setLocationUrl(SafeUrlProto $locationUrl)
-    {
-    }
-    /**
-     * @return SafeUrlProto
-     */
-    public function getLocationUrl()
-    {
-    }
-    public function setLong($long)
-    {
-    }
-    public function getLong()
-    {
-    }
-    /**
-     * MapTiles for the area around a user's work location
-     *
-     * @param MapTile[] $mapTile
-     */
-    public function setMapTile($mapTile)
-    {
-    }
-    /**
-     * @return MapTile[]
-     */
-    public function getMapTile()
-    {
-    }
-    /**
-     * The zoom level of the map. A constant zoom value of 18 is used for now to
-     * match the zoom of the map shown on a Moma Teams Profile page
-     *
-     * @param int $zoom
-     */
-    public function setZoom($zoom)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getZoom()
+    class Google_Service_CloudSearch_MapInfo extends \Google\Service\CloudSearch\MapInfo
     {
     }
 }

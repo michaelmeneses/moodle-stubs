@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveActivity;
-
-class SettingsChange extends \Google\Collection
-{
-    protected $collection_key = 'restrictionChanges';
-    protected $restrictionChangesType = RestrictionChange::class;
-    protected $restrictionChangesDataType = 'array';
-    /**
-     * The set of changes made to restrictions.
-     *
-     * @param RestrictionChange[] $restrictionChanges
-     */
-    public function setRestrictionChanges($restrictionChanges)
+namespace Google\Service\DriveActivity {
+    class SettingsChange extends \Google\Collection
     {
+        protected $collection_key = 'restrictionChanges';
+        protected $restrictionChangesType = RestrictionChange::class;
+        protected $restrictionChangesDataType = 'array';
+        /**
+         * The set of changes made to restrictions.
+         *
+         * @param RestrictionChange[] $restrictionChanges
+         */
+        public function setRestrictionChanges($restrictionChanges)
+        {
+        }
+        /**
+         * @return RestrictionChange[]
+         */
+        public function getRestrictionChanges()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RestrictionChange[]
+     * Runtime class alias of \Google\Service\DriveActivity\SettingsChange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRestrictionChanges()
+    class Google_Service_DriveActivity_SettingsChange extends \Google\Service\DriveActivity\SettingsChange
     {
     }
 }

@@ -21,67 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMwareEngine\Resource;
-
-/**
- * The "operations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $vmwareengineService = new Google\Service\VMwareEngine(...);
- *   $operations = $vmwareengineService->projects_locations_operations;
- *  </code>
- */
-class ProjectsLocationsOperations extends \Google\Service\Resource
-{
+namespace Google\Service\VMwareEngine\Resource {
+    use Google\Service\VMwareEngine\ListOperationsResponse;
+    use Google\Service\VMwareEngine\Operation;
+    use Google\Service\VMwareEngine\VmwareengineEmpty;
     /**
-     * Deletes a long-running operation. This method indicates that the client is no
-     * longer interested in the operation result. It does not cancel the operation.
-     * If the server doesn't support this method, it returns
-     * `google.rpc.Code.UNIMPLEMENTED`. (operations.delete)
-     *
-     * @param string $name The name of the operation resource to be deleted.
-     * @param array $optParams Optional parameters.
-     * @return VmwareengineEmpty
-     * @throws \Google\Service\Exception
+     * The "operations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $vmwareengineService = new Google\Service\VMwareEngine(...);
+     *   $operations = $vmwareengineService->projects_locations_operations;
+     *  </code>
      */
-    public function delete($name, $optParams = [])
+    class ProjectsLocationsOperations extends \Google\Service\Resource
     {
+        /**
+         * Deletes a long-running operation. This method indicates that the client is no
+         * longer interested in the operation result. It does not cancel the operation.
+         * If the server doesn't support this method, it returns
+         * `google.rpc.Code.UNIMPLEMENTED`. (operations.delete)
+         *
+         * @param string $name The name of the operation resource to be deleted.
+         * @param array $optParams Optional parameters.
+         * @return VmwareengineEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets the latest state of a long-running operation. Clients can use this
+         * method to poll the operation result at intervals as recommended by the API
+         * service. (operations.get)
+         *
+         * @param string $name The name of the operation resource.
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists operations that match the specified filter in the request. If the
+         * server doesn't support this method, it returns `UNIMPLEMENTED`.
+         * (operations.listProjectsLocationsOperations)
+         *
+         * @param string $name The name of the operation's parent resource.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter The standard list filter.
+         * @opt_param int pageSize The standard list page size.
+         * @opt_param string pageToken The standard list page token.
+         * @opt_param bool returnPartialSuccess When set to `true`, operations that are
+         * reachable are returned as normal, and those that are unreachable are returned
+         * in the ListOperationsResponse.unreachable field. This can only be `true` when
+         * reading across collections. For example, when `parent` is set to
+         * `"projects/example/locations/-"`. This field is not supported by default and
+         * will result in an `UNIMPLEMENTED` error if set unless explicitly documented
+         * otherwise in service or product specific documentation.
+         * @return ListOperationsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsOperations($name, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets the latest state of a long-running operation. Clients can use this
-     * method to poll the operation result at intervals as recommended by the API
-     * service. (operations.get)
-     *
-     * @param string $name The name of the operation resource.
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\VMwareEngine\Resource\ProjectsLocationsOperations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists operations that match the specified filter in the request. If the
-     * server doesn't support this method, it returns `UNIMPLEMENTED`.
-     * (operations.listProjectsLocationsOperations)
-     *
-     * @param string $name The name of the operation's parent resource.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter The standard list filter.
-     * @opt_param int pageSize The standard list page size.
-     * @opt_param string pageToken The standard list page token.
-     * @opt_param bool returnPartialSuccess When set to `true`, operations that are
-     * reachable are returned as normal, and those that are unreachable are returned
-     * in the ListOperationsResponse.unreachable field. This can only be `true` when
-     * reading across collections. For example, when `parent` is set to
-     * `"projects/example/locations/-"`. This field is not supported by default and
-     * will result in an `UNIMPLEMENTED` error if set unless explicitly documented
-     * otherwise in service or product specific documentation.
-     * @return ListOperationsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsOperations($name, $optParams = [])
+    class Google_Service_VMwareEngine_Resource_ProjectsLocationsOperations extends \Google\Service\VMwareEngine\Resource\ProjectsLocationsOperations
     {
     }
 }

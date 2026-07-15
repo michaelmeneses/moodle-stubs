@@ -21,43 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent\Resource;
-
-/**
- * The "shoppingadsprogram" collection of methods.
- * Typical usage is:
- *  <code>
- *   $contentService = new Google\Service\ShoppingContent(...);
- *   $shoppingadsprogram = $contentService->shoppingadsprogram;
- *  </code>
- */
-class Shoppingadsprogram extends \Google\Service\Resource
-{
+namespace Google\Service\ShoppingContent\Resource {
+    use Google\Service\ShoppingContent\RequestReviewShoppingAdsRequest;
+    use Google\Service\ShoppingContent\ShoppingAdsProgramStatus;
     /**
-     * Retrieves the status and review eligibility for the Shopping Ads program.
-     * Returns errors and warnings if they require action to resolve, will become
-     * disapprovals, or impact impressions. Use `accountstatuses` to view all issues
-     * for an account. (shoppingadsprogram.get)
-     *
-     * @param string $merchantId Required. The ID of the account.
-     * @param array $optParams Optional parameters.
-     * @return ShoppingAdsProgramStatus
-     * @throws \Google\Service\Exception
+     * The "shoppingadsprogram" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $contentService = new Google\Service\ShoppingContent(...);
+     *   $shoppingadsprogram = $contentService->shoppingadsprogram;
+     *  </code>
      */
-    public function get($merchantId, $optParams = [])
+    class Shoppingadsprogram extends \Google\Service\Resource
     {
+        /**
+         * Retrieves the status and review eligibility for the Shopping Ads program.
+         * Returns errors and warnings if they require action to resolve, will become
+         * disapprovals, or impact impressions. Use `accountstatuses` to view all issues
+         * for an account. (shoppingadsprogram.get)
+         *
+         * @param string $merchantId Required. The ID of the account.
+         * @param array $optParams Optional parameters.
+         * @return ShoppingAdsProgramStatus
+         * @throws \Google\Service\Exception
+         */
+        public function get($merchantId, $optParams = [])
+        {
+        }
+        /**
+         * Requests a review of Shopping ads in a specific region. This method
+         * deprecated. Use the `MerchantSupportService` to view product and account
+         * issues and request a review. (shoppingadsprogram.requestreview)
+         *
+         * @param string $merchantId Required. The ID of the account.
+         * @param RequestReviewShoppingAdsRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function requestreview($merchantId, RequestReviewShoppingAdsRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Requests a review of Shopping ads in a specific region. This method
-     * deprecated. Use the `MerchantSupportService` to view product and account
-     * issues and request a review. (shoppingadsprogram.requestreview)
-     *
-     * @param string $merchantId Required. The ID of the account.
-     * @param RequestReviewShoppingAdsRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\ShoppingContent\Resource\Shoppingadsprogram registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function requestreview($merchantId, RequestReviewShoppingAdsRequest $postBody, $optParams = [])
+    class Google_Service_ShoppingContent_Resource_Shoppingadsprogram extends \Google\Service\ShoppingContent\Resource\Shoppingadsprogram
     {
     }
 }

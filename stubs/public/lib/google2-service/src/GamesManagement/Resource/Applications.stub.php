@@ -21,35 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GamesManagement\Resource;
-
-/**
- * The "applications" collection of methods.
- * Typical usage is:
- *  <code>
- *   $gamesManagementService = new Google\Service\GamesManagement(...);
- *   $applications = $gamesManagementService->applications;
- *  </code>
- */
-class Applications extends \Google\Service\Resource
-{
+namespace Google\Service\GamesManagement\Resource {
+    use Google\Service\GamesManagement\HiddenPlayerList;
     /**
-     * Get the list of players hidden from the given application. This method is
-     * only available to user accounts for your developer console.
-     * (applications.listHidden)
-     *
-     * @param string $applicationId The application ID from the Google Play
-     * developer console.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int maxResults The maximum number of player resources to return in
-     * the response, used for paging. For any response, the actual number of player
-     * resources returned may be less than the specified `maxResults`.
-     * @opt_param string pageToken The token returned by the previous request.
-     * @return HiddenPlayerList
-     * @throws \Google\Service\Exception
+     * The "applications" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $gamesManagementService = new Google\Service\GamesManagement(...);
+     *   $applications = $gamesManagementService->applications;
+     *  </code>
      */
-    public function listHidden($applicationId, $optParams = [])
+    class Applications extends \Google\Service\Resource
+    {
+        /**
+         * Get the list of players hidden from the given application. This method is
+         * only available to user accounts for your developer console.
+         * (applications.listHidden)
+         *
+         * @param string $applicationId The application ID from the Google Play
+         * developer console.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int maxResults The maximum number of player resources to return in
+         * the response, used for paging. For any response, the actual number of player
+         * resources returned may be less than the specified `maxResults`.
+         * @opt_param string pageToken The token returned by the previous request.
+         * @return HiddenPlayerList
+         * @throws \Google\Service\Exception
+         */
+        public function listHidden($applicationId, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\GamesManagement\Resource\Applications registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_GamesManagement_Resource_Applications extends \Google\Service\GamesManagement\Resource\Applications
     {
     }
 }

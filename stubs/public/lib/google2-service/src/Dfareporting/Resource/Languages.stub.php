@@ -21,27 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting\Resource;
-
-/**
- * The "languages" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dfareportingService = new Google\Service\Dfareporting(...);
- *   $languages = $dfareportingService->languages;
- *  </code>
- */
-class Languages extends \Google\Service\Resource
-{
+namespace Google\Service\Dfareporting\Resource {
+    use Google\Service\Dfareporting\LanguagesListResponse;
     /**
-     * Retrieves a list of languages. (languages.listLanguages)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param array $optParams Optional parameters.
-     * @return LanguagesListResponse
-     * @throws \Google\Service\Exception
+     * The "languages" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dfareportingService = new Google\Service\Dfareporting(...);
+     *   $languages = $dfareportingService->languages;
+     *  </code>
      */
-    public function listLanguages($profileId, $optParams = [])
+    class Languages extends \Google\Service\Resource
+    {
+        /**
+         * Retrieves a list of languages. (languages.listLanguages)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param array $optParams Optional parameters.
+         * @return LanguagesListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listLanguages($profileId, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Dfareporting\Resource\Languages registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Dfareporting_Resource_Languages extends \Google\Service\Dfareporting\Resource\Languages
     {
     }
 }

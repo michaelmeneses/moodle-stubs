@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1AspectTypeMetadataTemplateEnumValue extends \Google\Model
-{
-    /**
-     * Optional. You can set this message if you need to deprecate an enum value.
-     *
-     * @var string
-     */
-    public $deprecated;
-    /**
-     * Required. Index for the enum value. It can't be modified.
-     *
-     * @var int
-     */
-    public $index;
-    /**
-     * Required. Name of the enumvalue. This is the actual value that the aspect
-     * can contain.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optional. You can set this message if you need to deprecate an enum value.
-     *
-     * @param string $deprecated
-     */
-    public function setDeprecated($deprecated)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1AspectTypeMetadataTemplateEnumValue extends \Google\Model
     {
+        /**
+         * Optional. You can set this message if you need to deprecate an enum value.
+         *
+         * @var string
+         */
+        public $deprecated;
+        /**
+         * Required. Index for the enum value. It can't be modified.
+         *
+         * @var int
+         */
+        public $index;
+        /**
+         * Required. Name of the enumvalue. This is the actual value that the aspect
+         * can contain.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optional. You can set this message if you need to deprecate an enum value.
+         *
+         * @param string $deprecated
+         */
+        public function setDeprecated($deprecated)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeprecated()
+        {
+        }
+        /**
+         * Required. Index for the enum value. It can't be modified.
+         *
+         * @param int $index
+         */
+        public function setIndex($index)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getIndex()
+        {
+        }
+        /**
+         * Required. Name of the enumvalue. This is the actual value that the aspect
+         * can contain.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1AspectTypeMetadataTemplateEnumValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeprecated()
-    {
-    }
-    /**
-     * Required. Index for the enum value. It can't be modified.
-     *
-     * @param int $index
-     */
-    public function setIndex($index)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getIndex()
-    {
-    }
-    /**
-     * Required. Name of the enumvalue. This is the actual value that the aspect
-     * can contain.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1AspectTypeMetadataTemplateEnumValue extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1AspectTypeMetadataTemplateEnumValue
     {
     }
 }

@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Appengine;
-
-class ProjectEvent extends \Google\Model
-{
-    public const PHASE_CONTAINER_EVENT_PHASE_UNSPECIFIED = 'CONTAINER_EVENT_PHASE_UNSPECIFIED';
-    public const PHASE_BEFORE_RESOURCE_HANDLING = 'BEFORE_RESOURCE_HANDLING';
-    public const PHASE_AFTER_RESOURCE_HANDLING = 'AFTER_RESOURCE_HANDLING';
-    /**
-     * The unique ID for this project event. CLHs can use this value to dedup
-     * repeated calls. required
-     *
-     * @var string
-     */
-    public $eventId;
-    /**
-     * Phase indicates when in the container event propagation this event is being
-     * communicated. Events are sent before and after the per-resource events are
-     * propagated. required
-     *
-     * @var string
-     */
-    public $phase;
-    protected $projectMetadataType = ProjectsMetadata::class;
-    protected $projectMetadataDataType = '';
-    protected $stateType = ContainerState::class;
-    protected $stateDataType = '';
-    /**
-     * The unique ID for this project event. CLHs can use this value to dedup
-     * repeated calls. required
-     *
-     * @param string $eventId
-     */
-    public function setEventId($eventId)
+namespace Google\Service\Appengine {
+    class ProjectEvent extends \Google\Model
     {
+        public const PHASE_CONTAINER_EVENT_PHASE_UNSPECIFIED = 'CONTAINER_EVENT_PHASE_UNSPECIFIED';
+        public const PHASE_BEFORE_RESOURCE_HANDLING = 'BEFORE_RESOURCE_HANDLING';
+        public const PHASE_AFTER_RESOURCE_HANDLING = 'AFTER_RESOURCE_HANDLING';
+        /**
+         * The unique ID for this project event. CLHs can use this value to dedup
+         * repeated calls. required
+         *
+         * @var string
+         */
+        public $eventId;
+        /**
+         * Phase indicates when in the container event propagation this event is being
+         * communicated. Events are sent before and after the per-resource events are
+         * propagated. required
+         *
+         * @var string
+         */
+        public $phase;
+        protected $projectMetadataType = ProjectsMetadata::class;
+        protected $projectMetadataDataType = '';
+        protected $stateType = ContainerState::class;
+        protected $stateDataType = '';
+        /**
+         * The unique ID for this project event. CLHs can use this value to dedup
+         * repeated calls. required
+         *
+         * @param string $eventId
+         */
+        public function setEventId($eventId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEventId()
+        {
+        }
+        /**
+         * Phase indicates when in the container event propagation this event is being
+         * communicated. Events are sent before and after the per-resource events are
+         * propagated. required
+         *
+         * Accepted values: CONTAINER_EVENT_PHASE_UNSPECIFIED,
+         * BEFORE_RESOURCE_HANDLING, AFTER_RESOURCE_HANDLING
+         *
+         * @param self::PHASE_* $phase
+         */
+        public function setPhase($phase)
+        {
+        }
+        /**
+         * @return self::PHASE_*
+         */
+        public function getPhase()
+        {
+        }
+        /**
+         * The projects metadata for this project. required
+         *
+         * @param ProjectsMetadata $projectMetadata
+         */
+        public function setProjectMetadata(ProjectsMetadata $projectMetadata)
+        {
+        }
+        /**
+         * @return ProjectsMetadata
+         */
+        public function getProjectMetadata()
+        {
+        }
+        /**
+         * The state of the organization that led to this event.
+         *
+         * @param ContainerState $state
+         */
+        public function setState(ContainerState $state)
+        {
+        }
+        /**
+         * @return ContainerState
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Appengine\ProjectEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEventId()
-    {
-    }
-    /**
-     * Phase indicates when in the container event propagation this event is being
-     * communicated. Events are sent before and after the per-resource events are
-     * propagated. required
-     *
-     * Accepted values: CONTAINER_EVENT_PHASE_UNSPECIFIED,
-     * BEFORE_RESOURCE_HANDLING, AFTER_RESOURCE_HANDLING
-     *
-     * @param self::PHASE_* $phase
-     */
-    public function setPhase($phase)
-    {
-    }
-    /**
-     * @return self::PHASE_*
-     */
-    public function getPhase()
-    {
-    }
-    /**
-     * The projects metadata for this project. required
-     *
-     * @param ProjectsMetadata $projectMetadata
-     */
-    public function setProjectMetadata(ProjectsMetadata $projectMetadata)
-    {
-    }
-    /**
-     * @return ProjectsMetadata
-     */
-    public function getProjectMetadata()
-    {
-    }
-    /**
-     * The state of the organization that led to this event.
-     *
-     * @param ContainerState $state
-     */
-    public function setState(ContainerState $state)
-    {
-    }
-    /**
-     * @return ContainerState
-     */
-    public function getState()
+    class Google_Service_Appengine_ProjectEvent extends \Google\Service\Appengine\ProjectEvent
     {
     }
 }

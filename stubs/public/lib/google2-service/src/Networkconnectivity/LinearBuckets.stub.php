@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity;
-
-class LinearBuckets extends \Google\Model
-{
-    public $numFiniteBuckets;
-    public $offset;
-    public $width;
-    public function setNumFiniteBuckets($numFiniteBuckets)
+namespace Google\Service\Networkconnectivity {
+    class LinearBuckets extends \Google\Model
     {
+        public $numFiniteBuckets;
+        public $offset;
+        public $width;
+        public function setNumFiniteBuckets($numFiniteBuckets)
+        {
+        }
+        public function getNumFiniteBuckets()
+        {
+        }
+        public function setOffset($offset)
+        {
+        }
+        public function getOffset()
+        {
+        }
+        public function setWidth($width)
+        {
+        }
+        public function getWidth()
+        {
+        }
     }
-    public function getNumFiniteBuckets()
-    {
-    }
-    public function setOffset($offset)
-    {
-    }
-    public function getOffset()
-    {
-    }
-    public function setWidth($width)
-    {
-    }
-    public function getWidth()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Networkconnectivity\LinearBuckets registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Networkconnectivity_LinearBuckets extends \Google\Service\Networkconnectivity\LinearBuckets
     {
     }
 }

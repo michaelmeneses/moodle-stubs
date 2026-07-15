@@ -21,125 +21,134 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class PreferenceSet extends \Google\Model
-{
-    /**
-     * Output only. The timestamp when the preference set was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * A description of the preference set.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * User-friendly display name. Maximum length is 63 characters.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Output only. Name of the preference set.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The timestamp when the preference set was last updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    protected $virtualMachinePreferencesType = VirtualMachinePreferences::class;
-    protected $virtualMachinePreferencesDataType = '';
-    /**
-     * Output only. The timestamp when the preference set was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\MigrationCenterAPI {
+    class PreferenceSet extends \Google\Model
     {
+        /**
+         * Output only. The timestamp when the preference set was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * A description of the preference set.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * User-friendly display name. Maximum length is 63 characters.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Output only. Name of the preference set.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The timestamp when the preference set was last updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        protected $virtualMachinePreferencesType = VirtualMachinePreferences::class;
+        protected $virtualMachinePreferencesDataType = '';
+        /**
+         * Output only. The timestamp when the preference set was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * A description of the preference set.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * User-friendly display name. Maximum length is 63 characters.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Output only. Name of the preference set.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The timestamp when the preference set was last updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
+        /**
+         * Optional. A set of preferences that applies to all virtual machines in the
+         * context.
+         *
+         * @param VirtualMachinePreferences $virtualMachinePreferences
+         */
+        public function setVirtualMachinePreferences(VirtualMachinePreferences $virtualMachinePreferences)
+        {
+        }
+        /**
+         * @return VirtualMachinePreferences
+         */
+        public function getVirtualMachinePreferences()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\PreferenceSet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * A description of the preference set.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * User-friendly display name. Maximum length is 63 characters.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Output only. Name of the preference set.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The timestamp when the preference set was last updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
-    {
-    }
-    /**
-     * Optional. A set of preferences that applies to all virtual machines in the
-     * context.
-     *
-     * @param VirtualMachinePreferences $virtualMachinePreferences
-     */
-    public function setVirtualMachinePreferences(VirtualMachinePreferences $virtualMachinePreferences)
-    {
-    }
-    /**
-     * @return VirtualMachinePreferences
-     */
-    public function getVirtualMachinePreferences()
+    class Google_Service_MigrationCenterAPI_PreferenceSet extends \Google\Service\MigrationCenterAPI\PreferenceSet
     {
     }
 }

@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datapipelines;
-
-class GoogleCloudDatapipelinesV1TransformDescription extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $name;
-    protected $optionsType = GoogleCloudDatapipelinesV1Schema::class;
-    protected $optionsDataType = '';
-    /**
-     * @var string
-     */
-    public $uniformResourceName;
-    /**
-     * @param string
-     */
-    public function setName($name)
+namespace Google\Service\Datapipelines {
+    class GoogleCloudDatapipelinesV1TransformDescription extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $name;
+        protected $optionsType = GoogleCloudDatapipelinesV1Schema::class;
+        protected $optionsDataType = '';
+        /**
+         * @var string
+         */
+        public $uniformResourceName;
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param GoogleCloudDatapipelinesV1Schema
+         */
+        public function setOptions(GoogleCloudDatapipelinesV1Schema $options)
+        {
+        }
+        /**
+         * @return GoogleCloudDatapipelinesV1Schema
+         */
+        public function getOptions()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUniformResourceName($uniformResourceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUniformResourceName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Datapipelines\GoogleCloudDatapipelinesV1TransformDescription registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * @param GoogleCloudDatapipelinesV1Schema
-     */
-    public function setOptions(GoogleCloudDatapipelinesV1Schema $options)
-    {
-    }
-    /**
-     * @return GoogleCloudDatapipelinesV1Schema
-     */
-    public function getOptions()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUniformResourceName($uniformResourceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUniformResourceName()
+    class Google_Service_Datapipelines_GoogleCloudDatapipelinesV1TransformDescription extends \Google\Service\Datapipelines\GoogleCloudDatapipelinesV1TransformDescription
     {
     }
 }

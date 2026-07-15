@@ -21,171 +21,180 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ParameterManager;
-
-class Parameter extends \Google\Model
-{
-    /**
-     * The default / unset value. The API will default to the UNFORMATTED format.
-     */
-    public const FORMAT_PARAMETER_FORMAT_UNSPECIFIED = 'PARAMETER_FORMAT_UNSPECIFIED';
-    /**
-     * Unformatted.
-     */
-    public const FORMAT_UNFORMATTED = 'UNFORMATTED';
-    /**
-     * YAML format.
-     */
-    public const FORMAT_YAML = 'YAML';
-    /**
-     * JSON format.
-     */
-    public const FORMAT_JSON = 'JSON';
-    /**
-     * Output only. [Output only] Create time stamp
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Optional. Specifies the format of a Parameter.
-     *
-     * @var string
-     */
-    public $format;
-    /**
-     * Optional. Customer managed encryption key (CMEK) to use for encrypting the
-     * Parameter Versions. If not set, the default Google-managed encryption key
-     * will be used. Cloud KMS CryptoKeys must reside in the same location as the
-     * Parameter. The expected format is `projects/locations/keyRings/cryptoKeys`.
-     *
-     * @var string
-     */
-    public $kmsKey;
-    /**
-     * Optional. Labels as key value pairs
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Identifier. [Output only] The resource name of the Parameter in the format
-     * `projects/locations/parameters`.
-     *
-     * @var string
-     */
-    public $name;
-    protected $policyMemberType = ResourcePolicyMember::class;
-    protected $policyMemberDataType = '';
-    /**
-     * Output only. [Output only] Update time stamp
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. [Output only] Create time stamp
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\ParameterManager {
+    class Parameter extends \Google\Model
     {
+        /**
+         * The default / unset value. The API will default to the UNFORMATTED format.
+         */
+        public const FORMAT_PARAMETER_FORMAT_UNSPECIFIED = 'PARAMETER_FORMAT_UNSPECIFIED';
+        /**
+         * Unformatted.
+         */
+        public const FORMAT_UNFORMATTED = 'UNFORMATTED';
+        /**
+         * YAML format.
+         */
+        public const FORMAT_YAML = 'YAML';
+        /**
+         * JSON format.
+         */
+        public const FORMAT_JSON = 'JSON';
+        /**
+         * Output only. [Output only] Create time stamp
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Optional. Specifies the format of a Parameter.
+         *
+         * @var string
+         */
+        public $format;
+        /**
+         * Optional. Customer managed encryption key (CMEK) to use for encrypting the
+         * Parameter Versions. If not set, the default Google-managed encryption key
+         * will be used. Cloud KMS CryptoKeys must reside in the same location as the
+         * Parameter. The expected format is `projects/locations/keyRings/cryptoKeys`.
+         *
+         * @var string
+         */
+        public $kmsKey;
+        /**
+         * Optional. Labels as key value pairs
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Identifier. [Output only] The resource name of the Parameter in the format
+         * `projects/locations/parameters`.
+         *
+         * @var string
+         */
+        public $name;
+        protected $policyMemberType = ResourcePolicyMember::class;
+        protected $policyMemberDataType = '';
+        /**
+         * Output only. [Output only] Update time stamp
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. [Output only] Create time stamp
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Optional. Specifies the format of a Parameter.
+         *
+         * Accepted values: PARAMETER_FORMAT_UNSPECIFIED, UNFORMATTED, YAML, JSON
+         *
+         * @param self::FORMAT_* $format
+         */
+        public function setFormat($format)
+        {
+        }
+        /**
+         * @return self::FORMAT_*
+         */
+        public function getFormat()
+        {
+        }
+        /**
+         * Optional. Customer managed encryption key (CMEK) to use for encrypting the
+         * Parameter Versions. If not set, the default Google-managed encryption key
+         * will be used. Cloud KMS CryptoKeys must reside in the same location as the
+         * Parameter. The expected format is `projects/locations/keyRings/cryptoKeys`.
+         *
+         * @param string $kmsKey
+         */
+        public function setKmsKey($kmsKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKmsKey()
+        {
+        }
+        /**
+         * Optional. Labels as key value pairs
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Identifier. [Output only] The resource name of the Parameter in the format
+         * `projects/locations/parameters`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. [Output-only] policy member strings of a Google Cloud
+         * resource.
+         *
+         * @param ResourcePolicyMember $policyMember
+         */
+        public function setPolicyMember(ResourcePolicyMember $policyMember)
+        {
+        }
+        /**
+         * @return ResourcePolicyMember
+         */
+        public function getPolicyMember()
+        {
+        }
+        /**
+         * Output only. [Output only] Update time stamp
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ParameterManager\Parameter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Optional. Specifies the format of a Parameter.
-     *
-     * Accepted values: PARAMETER_FORMAT_UNSPECIFIED, UNFORMATTED, YAML, JSON
-     *
-     * @param self::FORMAT_* $format
-     */
-    public function setFormat($format)
-    {
-    }
-    /**
-     * @return self::FORMAT_*
-     */
-    public function getFormat()
-    {
-    }
-    /**
-     * Optional. Customer managed encryption key (CMEK) to use for encrypting the
-     * Parameter Versions. If not set, the default Google-managed encryption key
-     * will be used. Cloud KMS CryptoKeys must reside in the same location as the
-     * Parameter. The expected format is `projects/locations/keyRings/cryptoKeys`.
-     *
-     * @param string $kmsKey
-     */
-    public function setKmsKey($kmsKey)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKmsKey()
-    {
-    }
-    /**
-     * Optional. Labels as key value pairs
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Identifier. [Output only] The resource name of the Parameter in the format
-     * `projects/locations/parameters`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. [Output-only] policy member strings of a Google Cloud
-     * resource.
-     *
-     * @param ResourcePolicyMember $policyMember
-     */
-    public function setPolicyMember(ResourcePolicyMember $policyMember)
-    {
-    }
-    /**
-     * @return ResourcePolicyMember
-     */
-    public function getPolicyMember()
-    {
-    }
-    /**
-     * Output only. [Output only] Update time stamp
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_ParameterManager_Parameter extends \Google\Service\ParameterManager\Parameter
     {
     }
 }

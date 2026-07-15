@@ -21,102 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics\Resource;
-
-/**
- * The "customMetrics" collection of methods.
- * Typical usage is:
- *  <code>
- *   $analyticsService = new Google\Service\Analytics(...);
- *   $customMetrics = $analyticsService->management_customMetrics;
- *  </code>
- */
-class ManagementCustomMetrics extends \Google\Service\Resource
-{
+namespace Google\Service\Analytics\Resource {
+    use Google\Service\Analytics\CustomMetric;
+    use Google\Service\Analytics\CustomMetrics;
     /**
-     * Get a custom metric to which the user has access. (customMetrics.get)
-     *
-     * @param string $accountId Account ID for the custom metric to retrieve.
-     * @param string $webPropertyId Web property ID for the custom metric to
-     * retrieve.
-     * @param string $customMetricId The ID of the custom metric to retrieve.
-     * @param array $optParams Optional parameters.
-     * @return CustomMetric
-     * @throws \Google\Service\Exception
+     * The "customMetrics" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $analyticsService = new Google\Service\Analytics(...);
+     *   $customMetrics = $analyticsService->management_customMetrics;
+     *  </code>
      */
-    public function get($accountId, $webPropertyId, $customMetricId, $optParams = [])
+    class ManagementCustomMetrics extends \Google\Service\Resource
     {
+        /**
+         * Get a custom metric to which the user has access. (customMetrics.get)
+         *
+         * @param string $accountId Account ID for the custom metric to retrieve.
+         * @param string $webPropertyId Web property ID for the custom metric to
+         * retrieve.
+         * @param string $customMetricId The ID of the custom metric to retrieve.
+         * @param array $optParams Optional parameters.
+         * @return CustomMetric
+         * @throws \Google\Service\Exception
+         */
+        public function get($accountId, $webPropertyId, $customMetricId, $optParams = [])
+        {
+        }
+        /**
+         * Create a new custom metric. (customMetrics.insert)
+         *
+         * @param string $accountId Account ID for the custom metric to create.
+         * @param string $webPropertyId Web property ID for the custom dimension to
+         * create.
+         * @param CustomMetric $postBody
+         * @param array $optParams Optional parameters.
+         * @return CustomMetric
+         * @throws \Google\Service\Exception
+         */
+        public function insert($accountId, $webPropertyId, CustomMetric $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Lists custom metrics to which the user has access.
+         * (customMetrics.listManagementCustomMetrics)
+         *
+         * @param string $accountId Account ID for the custom metrics to retrieve.
+         * @param string $webPropertyId Web property ID for the custom metrics to
+         * retrieve.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int max-results The maximum number of custom metrics to include in
+         * this response.
+         * @opt_param int start-index An index of the first entity to retrieve. Use this
+         * parameter as a pagination mechanism along with the max-results parameter.
+         * @return CustomMetrics
+         * @throws \Google\Service\Exception
+         */
+        public function listManagementCustomMetrics($accountId, $webPropertyId, $optParams = [])
+        {
+        }
+        /**
+         * Updates an existing custom metric. This method supports patch semantics.
+         * (customMetrics.patch)
+         *
+         * @param string $accountId Account ID for the custom metric to update.
+         * @param string $webPropertyId Web property ID for the custom metric to update.
+         * @param string $customMetricId Custom metric ID for the custom metric to
+         * update.
+         * @param CustomMetric $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool ignoreCustomDataSourceLinks Force the update and ignore any
+         * warnings related to the custom metric being linked to a custom data source /
+         * data set.
+         * @return CustomMetric
+         * @throws \Google\Service\Exception
+         */
+        public function patch($accountId, $webPropertyId, $customMetricId, CustomMetric $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Updates an existing custom metric. (customMetrics.update)
+         *
+         * @param string $accountId Account ID for the custom metric to update.
+         * @param string $webPropertyId Web property ID for the custom metric to update.
+         * @param string $customMetricId Custom metric ID for the custom metric to
+         * update.
+         * @param CustomMetric $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool ignoreCustomDataSourceLinks Force the update and ignore any
+         * warnings related to the custom metric being linked to a custom data source /
+         * data set.
+         * @return CustomMetric
+         * @throws \Google\Service\Exception
+         */
+        public function update($accountId, $webPropertyId, $customMetricId, CustomMetric $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Create a new custom metric. (customMetrics.insert)
-     *
-     * @param string $accountId Account ID for the custom metric to create.
-     * @param string $webPropertyId Web property ID for the custom dimension to
-     * create.
-     * @param CustomMetric $postBody
-     * @param array $optParams Optional parameters.
-     * @return CustomMetric
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Analytics\Resource\ManagementCustomMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function insert($accountId, $webPropertyId, CustomMetric $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Lists custom metrics to which the user has access.
-     * (customMetrics.listManagementCustomMetrics)
-     *
-     * @param string $accountId Account ID for the custom metrics to retrieve.
-     * @param string $webPropertyId Web property ID for the custom metrics to
-     * retrieve.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int max-results The maximum number of custom metrics to include in
-     * this response.
-     * @opt_param int start-index An index of the first entity to retrieve. Use this
-     * parameter as a pagination mechanism along with the max-results parameter.
-     * @return CustomMetrics
-     * @throws \Google\Service\Exception
-     */
-    public function listManagementCustomMetrics($accountId, $webPropertyId, $optParams = [])
-    {
-    }
-    /**
-     * Updates an existing custom metric. This method supports patch semantics.
-     * (customMetrics.patch)
-     *
-     * @param string $accountId Account ID for the custom metric to update.
-     * @param string $webPropertyId Web property ID for the custom metric to update.
-     * @param string $customMetricId Custom metric ID for the custom metric to
-     * update.
-     * @param CustomMetric $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool ignoreCustomDataSourceLinks Force the update and ignore any
-     * warnings related to the custom metric being linked to a custom data source /
-     * data set.
-     * @return CustomMetric
-     * @throws \Google\Service\Exception
-     */
-    public function patch($accountId, $webPropertyId, $customMetricId, CustomMetric $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Updates an existing custom metric. (customMetrics.update)
-     *
-     * @param string $accountId Account ID for the custom metric to update.
-     * @param string $webPropertyId Web property ID for the custom metric to update.
-     * @param string $customMetricId Custom metric ID for the custom metric to
-     * update.
-     * @param CustomMetric $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool ignoreCustomDataSourceLinks Force the update and ignore any
-     * warnings related to the custom metric being linked to a custom data source /
-     * data set.
-     * @return CustomMetric
-     * @throws \Google\Service\Exception
-     */
-    public function update($accountId, $webPropertyId, $customMetricId, CustomMetric $postBody, $optParams = [])
+    class Google_Service_Analytics_Resource_ManagementCustomMetrics extends \Google\Service\Analytics\Resource\ManagementCustomMetrics
     {
     }
 }

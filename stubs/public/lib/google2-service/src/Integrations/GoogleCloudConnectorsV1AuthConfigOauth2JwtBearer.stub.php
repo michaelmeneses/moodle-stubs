@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudConnectorsV1AuthConfigOauth2JwtBearer extends \Google\Model
-{
-    protected $clientKeyType = GoogleCloudConnectorsV1Secret::class;
-    protected $clientKeyDataType = '';
-    protected $jwtClaimsType = GoogleCloudConnectorsV1AuthConfigOauth2JwtBearerJwtClaims::class;
-    protected $jwtClaimsDataType = '';
-    /**
-     * Optional. Secret version reference containing a PKCS#8 PEM-encoded private
-     * key associated with the Client Certificate. This private key will be used
-     * to sign JWTs used for the jwt-bearer authorization grant. Specified in the
-     * form as: `projects/secrets/versions`.
-     *
-     * @param GoogleCloudConnectorsV1Secret $clientKey
-     */
-    public function setClientKey(GoogleCloudConnectorsV1Secret $clientKey)
+namespace Google\Service\Integrations {
+    class GoogleCloudConnectorsV1AuthConfigOauth2JwtBearer extends \Google\Model
     {
+        protected $clientKeyType = GoogleCloudConnectorsV1Secret::class;
+        protected $clientKeyDataType = '';
+        protected $jwtClaimsType = GoogleCloudConnectorsV1AuthConfigOauth2JwtBearerJwtClaims::class;
+        protected $jwtClaimsDataType = '';
+        /**
+         * Optional. Secret version reference containing a PKCS#8 PEM-encoded private
+         * key associated with the Client Certificate. This private key will be used
+         * to sign JWTs used for the jwt-bearer authorization grant. Specified in the
+         * form as: `projects/secrets/versions`.
+         *
+         * @param GoogleCloudConnectorsV1Secret $clientKey
+         */
+        public function setClientKey(GoogleCloudConnectorsV1Secret $clientKey)
+        {
+        }
+        /**
+         * @return GoogleCloudConnectorsV1Secret
+         */
+        public function getClientKey()
+        {
+        }
+        /**
+         * Optional. JwtClaims providers fields to generate the token.
+         *
+         * @param GoogleCloudConnectorsV1AuthConfigOauth2JwtBearerJwtClaims $jwtClaims
+         */
+        public function setJwtClaims(GoogleCloudConnectorsV1AuthConfigOauth2JwtBearerJwtClaims $jwtClaims)
+        {
+        }
+        /**
+         * @return GoogleCloudConnectorsV1AuthConfigOauth2JwtBearerJwtClaims
+         */
+        public function getJwtClaims()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudConnectorsV1Secret
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudConnectorsV1AuthConfigOauth2JwtBearer registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClientKey()
-    {
-    }
-    /**
-     * Optional. JwtClaims providers fields to generate the token.
-     *
-     * @param GoogleCloudConnectorsV1AuthConfigOauth2JwtBearerJwtClaims $jwtClaims
-     */
-    public function setJwtClaims(GoogleCloudConnectorsV1AuthConfigOauth2JwtBearerJwtClaims $jwtClaims)
-    {
-    }
-    /**
-     * @return GoogleCloudConnectorsV1AuthConfigOauth2JwtBearerJwtClaims
-     */
-    public function getJwtClaims()
+    class Google_Service_Integrations_GoogleCloudConnectorsV1AuthConfigOauth2JwtBearer extends \Google\Service\Integrations\GoogleCloudConnectorsV1AuthConfigOauth2JwtBearer
     {
     }
 }

@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaSearchResponseSummaryReference extends \Google\Collection
-{
-    protected $collection_key = 'chunkContents';
-    protected $chunkContentsType = GoogleCloudDiscoveryengineV1betaSearchResponseSummaryReferenceChunkContent::class;
-    protected $chunkContentsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $document;
-    /**
-     * @var string
-     */
-    public $title;
-    /**
-     * @var string
-     */
-    public $uri;
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaSearchResponseSummaryReferenceChunkContent[]
-     */
-    public function setChunkContents($chunkContents)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaSearchResponseSummaryReference extends \Google\Collection
     {
+        protected $collection_key = 'chunkContents';
+        protected $chunkContentsType = GoogleCloudDiscoveryengineV1betaSearchResponseSummaryReferenceChunkContent::class;
+        protected $chunkContentsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $document;
+        /**
+         * @var string
+         */
+        public $title;
+        /**
+         * @var string
+         */
+        public $uri;
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaSearchResponseSummaryReferenceChunkContent[]
+         */
+        public function setChunkContents($chunkContents)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaSearchResponseSummaryReferenceChunkContent[]
+         */
+        public function getChunkContents()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDocument($document)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDocument()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1betaSearchResponseSummaryReferenceChunkContent[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaSearchResponseSummaryReference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChunkContents()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDocument($document)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDocument()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaSearchResponseSummaryReference extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaSearchResponseSummaryReference
     {
     }
 }

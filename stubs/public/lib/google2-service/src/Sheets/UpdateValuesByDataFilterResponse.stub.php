@@ -21,124 +21,133 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class UpdateValuesByDataFilterResponse extends \Google\Model
-{
-    protected $dataFilterType = DataFilter::class;
-    protected $dataFilterDataType = '';
-    /**
-     * The number of cells updated.
-     *
-     * @var int
-     */
-    public $updatedCells;
-    /**
-     * The number of columns where at least one cell in the column was updated.
-     *
-     * @var int
-     */
-    public $updatedColumns;
-    protected $updatedDataType = ValueRange::class;
-    protected $updatedDataDataType = '';
-    /**
-     * The range (in [A1 notation](https://developers.google.com/workspace/sheets/
-     * api/guides/concepts#cell)) that updates were applied to.
-     *
-     * @var string
-     */
-    public $updatedRange;
-    /**
-     * The number of rows where at least one cell in the row was updated.
-     *
-     * @var int
-     */
-    public $updatedRows;
-    /**
-     * The data filter that selected the range that was updated.
-     *
-     * @param DataFilter $dataFilter
-     */
-    public function setDataFilter(DataFilter $dataFilter)
+namespace Google\Service\Sheets {
+    class UpdateValuesByDataFilterResponse extends \Google\Model
     {
+        protected $dataFilterType = DataFilter::class;
+        protected $dataFilterDataType = '';
+        /**
+         * The number of cells updated.
+         *
+         * @var int
+         */
+        public $updatedCells;
+        /**
+         * The number of columns where at least one cell in the column was updated.
+         *
+         * @var int
+         */
+        public $updatedColumns;
+        protected $updatedDataType = ValueRange::class;
+        protected $updatedDataDataType = '';
+        /**
+         * The range (in [A1 notation](https://developers.google.com/workspace/sheets/
+         * api/guides/concepts#cell)) that updates were applied to.
+         *
+         * @var string
+         */
+        public $updatedRange;
+        /**
+         * The number of rows where at least one cell in the row was updated.
+         *
+         * @var int
+         */
+        public $updatedRows;
+        /**
+         * The data filter that selected the range that was updated.
+         *
+         * @param DataFilter $dataFilter
+         */
+        public function setDataFilter(DataFilter $dataFilter)
+        {
+        }
+        /**
+         * @return DataFilter
+         */
+        public function getDataFilter()
+        {
+        }
+        /**
+         * The number of cells updated.
+         *
+         * @param int $updatedCells
+         */
+        public function setUpdatedCells($updatedCells)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getUpdatedCells()
+        {
+        }
+        /**
+         * The number of columns where at least one cell in the column was updated.
+         *
+         * @param int $updatedColumns
+         */
+        public function setUpdatedColumns($updatedColumns)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getUpdatedColumns()
+        {
+        }
+        /**
+         * The values of the cells in the range matched by the dataFilter after all
+         * updates were applied. This is only included if the request's
+         * `includeValuesInResponse` field was `true`.
+         *
+         * @param ValueRange $updatedData
+         */
+        public function setUpdatedData(ValueRange $updatedData)
+        {
+        }
+        /**
+         * @return ValueRange
+         */
+        public function getUpdatedData()
+        {
+        }
+        /**
+         * The range (in [A1 notation](https://developers.google.com/workspace/sheets/
+         * api/guides/concepts#cell)) that updates were applied to.
+         *
+         * @param string $updatedRange
+         */
+        public function setUpdatedRange($updatedRange)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdatedRange()
+        {
+        }
+        /**
+         * The number of rows where at least one cell in the row was updated.
+         *
+         * @param int $updatedRows
+         */
+        public function setUpdatedRows($updatedRows)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getUpdatedRows()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DataFilter
+     * Runtime class alias of \Google\Service\Sheets\UpdateValuesByDataFilterResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataFilter()
-    {
-    }
-    /**
-     * The number of cells updated.
-     *
-     * @param int $updatedCells
-     */
-    public function setUpdatedCells($updatedCells)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getUpdatedCells()
-    {
-    }
-    /**
-     * The number of columns where at least one cell in the column was updated.
-     *
-     * @param int $updatedColumns
-     */
-    public function setUpdatedColumns($updatedColumns)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getUpdatedColumns()
-    {
-    }
-    /**
-     * The values of the cells in the range matched by the dataFilter after all
-     * updates were applied. This is only included if the request's
-     * `includeValuesInResponse` field was `true`.
-     *
-     * @param ValueRange $updatedData
-     */
-    public function setUpdatedData(ValueRange $updatedData)
-    {
-    }
-    /**
-     * @return ValueRange
-     */
-    public function getUpdatedData()
-    {
-    }
-    /**
-     * The range (in [A1 notation](https://developers.google.com/workspace/sheets/
-     * api/guides/concepts#cell)) that updates were applied to.
-     *
-     * @param string $updatedRange
-     */
-    public function setUpdatedRange($updatedRange)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdatedRange()
-    {
-    }
-    /**
-     * The number of rows where at least one cell in the row was updated.
-     *
-     * @param int $updatedRows
-     */
-    public function setUpdatedRows($updatedRows)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getUpdatedRows()
+    class Google_Service_Sheets_UpdateValuesByDataFilterResponse extends \Google\Service\Sheets\UpdateValuesByDataFilterResponse
     {
     }
 }

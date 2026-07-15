@@ -22,6 +22,17 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_quiz;
 
+use cm_info;
+use coding_exception;
+use context;
+use context_module;
+use core_question\local\bank\question_version_status;
+use mod_quiz\question\bank\qbank_helper;
+use mod_quiz\question\display_options;
+use moodle_exception;
+use moodle_url;
+use question_bank;
+use stdClass;
 /**
  * A class encapsulating the settings for a quiz.
  *
@@ -409,7 +420,7 @@ class quiz_settings
      *
      * @param boolean $includepotential if the quiz include random questions,
      *      setting this flag to true will make the function to return all the
-     *      possible question types matching random question filters.
+     *      possible question types in the random questions category.
      * @return array a sorted array including the different question types.
      * @since  Moodle 3.1
      */

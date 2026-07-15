@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AppHub;
-
-class ExtendedMetadataSchema extends \Google\Model
-{
-    /**
-     * Output only. The JSON schema as a string.
-     *
-     * @var string
-     */
-    public $jsonSchema;
-    /**
-     * Identifier. Resource name of the schema. Format:
-     * projects//locations//extendedMetadataSchemas/
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The version of the schema. New versions are required to be
-     * backwards compatible.
-     *
-     * @var string
-     */
-    public $schemaVersion;
-    /**
-     * Output only. The JSON schema as a string.
-     *
-     * @param string $jsonSchema
-     */
-    public function setJsonSchema($jsonSchema)
+namespace Google\Service\AppHub {
+    class ExtendedMetadataSchema extends \Google\Model
     {
+        /**
+         * Output only. The JSON schema as a string.
+         *
+         * @var string
+         */
+        public $jsonSchema;
+        /**
+         * Identifier. Resource name of the schema. Format:
+         * projects//locations//extendedMetadataSchemas/
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The version of the schema. New versions are required to be
+         * backwards compatible.
+         *
+         * @var string
+         */
+        public $schemaVersion;
+        /**
+         * Output only. The JSON schema as a string.
+         *
+         * @param string $jsonSchema
+         */
+        public function setJsonSchema($jsonSchema)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getJsonSchema()
+        {
+        }
+        /**
+         * Identifier. Resource name of the schema. Format:
+         * projects//locations//extendedMetadataSchemas/
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The version of the schema. New versions are required to be
+         * backwards compatible.
+         *
+         * @param string $schemaVersion
+         */
+        public function setSchemaVersion($schemaVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSchemaVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AppHub\ExtendedMetadataSchema registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getJsonSchema()
-    {
-    }
-    /**
-     * Identifier. Resource name of the schema. Format:
-     * projects//locations//extendedMetadataSchemas/
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The version of the schema. New versions are required to be
-     * backwards compatible.
-     *
-     * @param string $schemaVersion
-     */
-    public function setSchemaVersion($schemaVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSchemaVersion()
+    class Google_Service_AppHub_ExtendedMetadataSchema extends \Google\Service\AppHub\ExtendedMetadataSchema
     {
     }
 }

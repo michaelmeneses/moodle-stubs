@@ -21,255 +21,264 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2CompletionConfig extends \Google\Model
-{
-    protected $allowlistInputConfigType = GoogleCloudRetailV2CompletionDataInputConfig::class;
-    protected $allowlistInputConfigDataType = '';
-    /**
-     * If set to true, the auto learning function is enabled. Auto learning uses
-     * user data to generate suggestions using ML techniques. Default value is
-     * false. Only after enabling auto learning can users use `cloud-retail` data
-     * in CompleteQueryRequest.
-     *
-     * @var bool
-     */
-    public $autoLearning;
-    protected $denylistInputConfigType = GoogleCloudRetailV2CompletionDataInputConfig::class;
-    protected $denylistInputConfigDataType = '';
-    /**
-     * Output only. Name of the LRO corresponding to the latest allowlist import.
-     * Can use GetOperation API to retrieve the latest state of the Long Running
-     * Operation.
-     *
-     * @var string
-     */
-    public $lastAllowlistImportOperation;
-    /**
-     * Output only. Name of the LRO corresponding to the latest denylist import.
-     * Can use GetOperation API to retrieve the latest state of the Long Running
-     * Operation.
-     *
-     * @var string
-     */
-    public $lastDenylistImportOperation;
-    /**
-     * Output only. Name of the LRO corresponding to the latest suggestion terms
-     * list import. Can use GetOperation API method to retrieve the latest state
-     * of the Long Running Operation.
-     *
-     * @var string
-     */
-    public $lastSuggestionsImportOperation;
-    /**
-     * Specifies the matching order for autocomplete suggestions, e.g., a query
-     * consisting of 'sh' with 'out-of-order' specified would suggest "women's
-     * shoes", whereas a query of 'red s' with 'exact-prefix' specified would
-     * suggest "red shoes". Currently supported values: * 'out-of-order' * 'exact-
-     * prefix' Default value: 'exact-prefix'.
-     *
-     * @var string
-     */
-    public $matchingOrder;
-    /**
-     * The maximum number of autocomplete suggestions returned per term. Default
-     * value is 20. If left unset or set to 0, then will fallback to default
-     * value. Value range is 1 to 20.
-     *
-     * @var int
-     */
-    public $maxSuggestions;
-    /**
-     * The minimum number of characters needed to be typed in order to get
-     * suggestions. Default value is 2. If left unset or set to 0, then will
-     * fallback to default value. Value range is 1 to 20.
-     *
-     * @var int
-     */
-    public $minPrefixLength;
-    /**
-     * Required. Immutable. Fully qualified name
-     * `projects/locations/catalogs/completionConfig`
-     *
-     * @var string
-     */
-    public $name;
-    protected $suggestionsInputConfigType = GoogleCloudRetailV2CompletionDataInputConfig::class;
-    protected $suggestionsInputConfigDataType = '';
-    /**
-     * Output only. The source data for the latest import of the autocomplete
-     * allowlist phrases.
-     *
-     * @param GoogleCloudRetailV2CompletionDataInputConfig $allowlistInputConfig
-     */
-    public function setAllowlistInputConfig(GoogleCloudRetailV2CompletionDataInputConfig $allowlistInputConfig)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2CompletionConfig extends \Google\Model
     {
+        protected $allowlistInputConfigType = GoogleCloudRetailV2CompletionDataInputConfig::class;
+        protected $allowlistInputConfigDataType = '';
+        /**
+         * If set to true, the auto learning function is enabled. Auto learning uses
+         * user data to generate suggestions using ML techniques. Default value is
+         * false. Only after enabling auto learning can users use `cloud-retail` data
+         * in CompleteQueryRequest.
+         *
+         * @var bool
+         */
+        public $autoLearning;
+        protected $denylistInputConfigType = GoogleCloudRetailV2CompletionDataInputConfig::class;
+        protected $denylistInputConfigDataType = '';
+        /**
+         * Output only. Name of the LRO corresponding to the latest allowlist import.
+         * Can use GetOperation API to retrieve the latest state of the Long Running
+         * Operation.
+         *
+         * @var string
+         */
+        public $lastAllowlistImportOperation;
+        /**
+         * Output only. Name of the LRO corresponding to the latest denylist import.
+         * Can use GetOperation API to retrieve the latest state of the Long Running
+         * Operation.
+         *
+         * @var string
+         */
+        public $lastDenylistImportOperation;
+        /**
+         * Output only. Name of the LRO corresponding to the latest suggestion terms
+         * list import. Can use GetOperation API method to retrieve the latest state
+         * of the Long Running Operation.
+         *
+         * @var string
+         */
+        public $lastSuggestionsImportOperation;
+        /**
+         * Specifies the matching order for autocomplete suggestions, e.g., a query
+         * consisting of 'sh' with 'out-of-order' specified would suggest "women's
+         * shoes", whereas a query of 'red s' with 'exact-prefix' specified would
+         * suggest "red shoes". Currently supported values: * 'out-of-order' * 'exact-
+         * prefix' Default value: 'exact-prefix'.
+         *
+         * @var string
+         */
+        public $matchingOrder;
+        /**
+         * The maximum number of autocomplete suggestions returned per term. Default
+         * value is 20. If left unset or set to 0, then will fallback to default
+         * value. Value range is 1 to 20.
+         *
+         * @var int
+         */
+        public $maxSuggestions;
+        /**
+         * The minimum number of characters needed to be typed in order to get
+         * suggestions. Default value is 2. If left unset or set to 0, then will
+         * fallback to default value. Value range is 1 to 20.
+         *
+         * @var int
+         */
+        public $minPrefixLength;
+        /**
+         * Required. Immutable. Fully qualified name
+         * `projects/locations/catalogs/completionConfig`
+         *
+         * @var string
+         */
+        public $name;
+        protected $suggestionsInputConfigType = GoogleCloudRetailV2CompletionDataInputConfig::class;
+        protected $suggestionsInputConfigDataType = '';
+        /**
+         * Output only. The source data for the latest import of the autocomplete
+         * allowlist phrases.
+         *
+         * @param GoogleCloudRetailV2CompletionDataInputConfig $allowlistInputConfig
+         */
+        public function setAllowlistInputConfig(GoogleCloudRetailV2CompletionDataInputConfig $allowlistInputConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2CompletionDataInputConfig
+         */
+        public function getAllowlistInputConfig()
+        {
+        }
+        /**
+         * If set to true, the auto learning function is enabled. Auto learning uses
+         * user data to generate suggestions using ML techniques. Default value is
+         * false. Only after enabling auto learning can users use `cloud-retail` data
+         * in CompleteQueryRequest.
+         *
+         * @param bool $autoLearning
+         */
+        public function setAutoLearning($autoLearning)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAutoLearning()
+        {
+        }
+        /**
+         * Output only. The source data for the latest import of the autocomplete
+         * denylist phrases.
+         *
+         * @param GoogleCloudRetailV2CompletionDataInputConfig $denylistInputConfig
+         */
+        public function setDenylistInputConfig(GoogleCloudRetailV2CompletionDataInputConfig $denylistInputConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2CompletionDataInputConfig
+         */
+        public function getDenylistInputConfig()
+        {
+        }
+        /**
+         * Output only. Name of the LRO corresponding to the latest allowlist import.
+         * Can use GetOperation API to retrieve the latest state of the Long Running
+         * Operation.
+         *
+         * @param string $lastAllowlistImportOperation
+         */
+        public function setLastAllowlistImportOperation($lastAllowlistImportOperation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastAllowlistImportOperation()
+        {
+        }
+        /**
+         * Output only. Name of the LRO corresponding to the latest denylist import.
+         * Can use GetOperation API to retrieve the latest state of the Long Running
+         * Operation.
+         *
+         * @param string $lastDenylistImportOperation
+         */
+        public function setLastDenylistImportOperation($lastDenylistImportOperation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastDenylistImportOperation()
+        {
+        }
+        /**
+         * Output only. Name of the LRO corresponding to the latest suggestion terms
+         * list import. Can use GetOperation API method to retrieve the latest state
+         * of the Long Running Operation.
+         *
+         * @param string $lastSuggestionsImportOperation
+         */
+        public function setLastSuggestionsImportOperation($lastSuggestionsImportOperation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastSuggestionsImportOperation()
+        {
+        }
+        /**
+         * Specifies the matching order for autocomplete suggestions, e.g., a query
+         * consisting of 'sh' with 'out-of-order' specified would suggest "women's
+         * shoes", whereas a query of 'red s' with 'exact-prefix' specified would
+         * suggest "red shoes". Currently supported values: * 'out-of-order' * 'exact-
+         * prefix' Default value: 'exact-prefix'.
+         *
+         * @param string $matchingOrder
+         */
+        public function setMatchingOrder($matchingOrder)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMatchingOrder()
+        {
+        }
+        /**
+         * The maximum number of autocomplete suggestions returned per term. Default
+         * value is 20. If left unset or set to 0, then will fallback to default
+         * value. Value range is 1 to 20.
+         *
+         * @param int $maxSuggestions
+         */
+        public function setMaxSuggestions($maxSuggestions)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxSuggestions()
+        {
+        }
+        /**
+         * The minimum number of characters needed to be typed in order to get
+         * suggestions. Default value is 2. If left unset or set to 0, then will
+         * fallback to default value. Value range is 1 to 20.
+         *
+         * @param int $minPrefixLength
+         */
+        public function setMinPrefixLength($minPrefixLength)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMinPrefixLength()
+        {
+        }
+        /**
+         * Required. Immutable. Fully qualified name
+         * `projects/locations/catalogs/completionConfig`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The source data for the latest import of the autocomplete
+         * suggestion phrases.
+         *
+         * @param GoogleCloudRetailV2CompletionDataInputConfig $suggestionsInputConfig
+         */
+        public function setSuggestionsInputConfig(GoogleCloudRetailV2CompletionDataInputConfig $suggestionsInputConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2CompletionDataInputConfig
+         */
+        public function getSuggestionsInputConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRetailV2CompletionDataInputConfig
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2CompletionConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowlistInputConfig()
-    {
-    }
-    /**
-     * If set to true, the auto learning function is enabled. Auto learning uses
-     * user data to generate suggestions using ML techniques. Default value is
-     * false. Only after enabling auto learning can users use `cloud-retail` data
-     * in CompleteQueryRequest.
-     *
-     * @param bool $autoLearning
-     */
-    public function setAutoLearning($autoLearning)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getAutoLearning()
-    {
-    }
-    /**
-     * Output only. The source data for the latest import of the autocomplete
-     * denylist phrases.
-     *
-     * @param GoogleCloudRetailV2CompletionDataInputConfig $denylistInputConfig
-     */
-    public function setDenylistInputConfig(GoogleCloudRetailV2CompletionDataInputConfig $denylistInputConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudRetailV2CompletionDataInputConfig
-     */
-    public function getDenylistInputConfig()
-    {
-    }
-    /**
-     * Output only. Name of the LRO corresponding to the latest allowlist import.
-     * Can use GetOperation API to retrieve the latest state of the Long Running
-     * Operation.
-     *
-     * @param string $lastAllowlistImportOperation
-     */
-    public function setLastAllowlistImportOperation($lastAllowlistImportOperation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastAllowlistImportOperation()
-    {
-    }
-    /**
-     * Output only. Name of the LRO corresponding to the latest denylist import.
-     * Can use GetOperation API to retrieve the latest state of the Long Running
-     * Operation.
-     *
-     * @param string $lastDenylistImportOperation
-     */
-    public function setLastDenylistImportOperation($lastDenylistImportOperation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastDenylistImportOperation()
-    {
-    }
-    /**
-     * Output only. Name of the LRO corresponding to the latest suggestion terms
-     * list import. Can use GetOperation API method to retrieve the latest state
-     * of the Long Running Operation.
-     *
-     * @param string $lastSuggestionsImportOperation
-     */
-    public function setLastSuggestionsImportOperation($lastSuggestionsImportOperation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastSuggestionsImportOperation()
-    {
-    }
-    /**
-     * Specifies the matching order for autocomplete suggestions, e.g., a query
-     * consisting of 'sh' with 'out-of-order' specified would suggest "women's
-     * shoes", whereas a query of 'red s' with 'exact-prefix' specified would
-     * suggest "red shoes". Currently supported values: * 'out-of-order' * 'exact-
-     * prefix' Default value: 'exact-prefix'.
-     *
-     * @param string $matchingOrder
-     */
-    public function setMatchingOrder($matchingOrder)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMatchingOrder()
-    {
-    }
-    /**
-     * The maximum number of autocomplete suggestions returned per term. Default
-     * value is 20. If left unset or set to 0, then will fallback to default
-     * value. Value range is 1 to 20.
-     *
-     * @param int $maxSuggestions
-     */
-    public function setMaxSuggestions($maxSuggestions)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxSuggestions()
-    {
-    }
-    /**
-     * The minimum number of characters needed to be typed in order to get
-     * suggestions. Default value is 2. If left unset or set to 0, then will
-     * fallback to default value. Value range is 1 to 20.
-     *
-     * @param int $minPrefixLength
-     */
-    public function setMinPrefixLength($minPrefixLength)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMinPrefixLength()
-    {
-    }
-    /**
-     * Required. Immutable. Fully qualified name
-     * `projects/locations/catalogs/completionConfig`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The source data for the latest import of the autocomplete
-     * suggestion phrases.
-     *
-     * @param GoogleCloudRetailV2CompletionDataInputConfig $suggestionsInputConfig
-     */
-    public function setSuggestionsInputConfig(GoogleCloudRetailV2CompletionDataInputConfig $suggestionsInputConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudRetailV2CompletionDataInputConfig
-     */
-    public function getSuggestionsInputConfig()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2CompletionConfig extends \Google\Service\CloudRetail\GoogleCloudRetailV2CompletionConfig
     {
     }
 }

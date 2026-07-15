@@ -21,120 +21,129 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class BudgetSummary extends \Google\Model
-{
-    /**
-     * Corresponds to the external_budget_id of a campaign budget. If the value is
-     * not set in the campaign budget, this field will be empty.
-     *
-     * @var string
-     */
-    public $externalBudgetId;
-    /**
-     * The sum of charges made under this budget before taxes, in micros of the
-     * invoice's currency. For example, if currency_code is `USD`, then 1000000
-     * represents one US dollar.
-     *
-     * @var string
-     */
-    public $preTaxAmountMicros;
-    protected $prismaCpeCodeType = PrismaCpeCode::class;
-    protected $prismaCpeCodeDataType = '';
-    /**
-     * The amount of tax applied to charges under this budget, in micros of the
-     * invoice's currency. For example, if currency_code is `USD`, then 1000000
-     * represents one US dollar.
-     *
-     * @var string
-     */
-    public $taxAmountMicros;
-    /**
-     * The total sum of charges made under this budget, including tax, in micros
-     * of the invoice's currency. For example, if currency_code is `USD`, then
-     * 1000000 represents one US dollar.
-     *
-     * @var string
-     */
-    public $totalAmountMicros;
-    /**
-     * Corresponds to the external_budget_id of a campaign budget. If the value is
-     * not set in the campaign budget, this field will be empty.
-     *
-     * @param string $externalBudgetId
-     */
-    public function setExternalBudgetId($externalBudgetId)
+namespace Google\Service\DisplayVideo {
+    class BudgetSummary extends \Google\Model
     {
+        /**
+         * Corresponds to the external_budget_id of a campaign budget. If the value is
+         * not set in the campaign budget, this field will be empty.
+         *
+         * @var string
+         */
+        public $externalBudgetId;
+        /**
+         * The sum of charges made under this budget before taxes, in micros of the
+         * invoice's currency. For example, if currency_code is `USD`, then 1000000
+         * represents one US dollar.
+         *
+         * @var string
+         */
+        public $preTaxAmountMicros;
+        protected $prismaCpeCodeType = PrismaCpeCode::class;
+        protected $prismaCpeCodeDataType = '';
+        /**
+         * The amount of tax applied to charges under this budget, in micros of the
+         * invoice's currency. For example, if currency_code is `USD`, then 1000000
+         * represents one US dollar.
+         *
+         * @var string
+         */
+        public $taxAmountMicros;
+        /**
+         * The total sum of charges made under this budget, including tax, in micros
+         * of the invoice's currency. For example, if currency_code is `USD`, then
+         * 1000000 represents one US dollar.
+         *
+         * @var string
+         */
+        public $totalAmountMicros;
+        /**
+         * Corresponds to the external_budget_id of a campaign budget. If the value is
+         * not set in the campaign budget, this field will be empty.
+         *
+         * @param string $externalBudgetId
+         */
+        public function setExternalBudgetId($externalBudgetId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExternalBudgetId()
+        {
+        }
+        /**
+         * The sum of charges made under this budget before taxes, in micros of the
+         * invoice's currency. For example, if currency_code is `USD`, then 1000000
+         * represents one US dollar.
+         *
+         * @param string $preTaxAmountMicros
+         */
+        public function setPreTaxAmountMicros($preTaxAmountMicros)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPreTaxAmountMicros()
+        {
+        }
+        /**
+         * Relevant client, product, and estimate codes from the Mediaocean Prisma
+         * tool. Only applicable for campaign budgets with an external_budget_source
+         * of EXTERNAL_BUDGET_SOURCE_MEDIA_OCEAN.
+         *
+         * @param PrismaCpeCode $prismaCpeCode
+         */
+        public function setPrismaCpeCode(PrismaCpeCode $prismaCpeCode)
+        {
+        }
+        /**
+         * @return PrismaCpeCode
+         */
+        public function getPrismaCpeCode()
+        {
+        }
+        /**
+         * The amount of tax applied to charges under this budget, in micros of the
+         * invoice's currency. For example, if currency_code is `USD`, then 1000000
+         * represents one US dollar.
+         *
+         * @param string $taxAmountMicros
+         */
+        public function setTaxAmountMicros($taxAmountMicros)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTaxAmountMicros()
+        {
+        }
+        /**
+         * The total sum of charges made under this budget, including tax, in micros
+         * of the invoice's currency. For example, if currency_code is `USD`, then
+         * 1000000 represents one US dollar.
+         *
+         * @param string $totalAmountMicros
+         */
+        public function setTotalAmountMicros($totalAmountMicros)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalAmountMicros()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\BudgetSummary registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExternalBudgetId()
-    {
-    }
-    /**
-     * The sum of charges made under this budget before taxes, in micros of the
-     * invoice's currency. For example, if currency_code is `USD`, then 1000000
-     * represents one US dollar.
-     *
-     * @param string $preTaxAmountMicros
-     */
-    public function setPreTaxAmountMicros($preTaxAmountMicros)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPreTaxAmountMicros()
-    {
-    }
-    /**
-     * Relevant client, product, and estimate codes from the Mediaocean Prisma
-     * tool. Only applicable for campaign budgets with an external_budget_source
-     * of EXTERNAL_BUDGET_SOURCE_MEDIA_OCEAN.
-     *
-     * @param PrismaCpeCode $prismaCpeCode
-     */
-    public function setPrismaCpeCode(PrismaCpeCode $prismaCpeCode)
-    {
-    }
-    /**
-     * @return PrismaCpeCode
-     */
-    public function getPrismaCpeCode()
-    {
-    }
-    /**
-     * The amount of tax applied to charges under this budget, in micros of the
-     * invoice's currency. For example, if currency_code is `USD`, then 1000000
-     * represents one US dollar.
-     *
-     * @param string $taxAmountMicros
-     */
-    public function setTaxAmountMicros($taxAmountMicros)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTaxAmountMicros()
-    {
-    }
-    /**
-     * The total sum of charges made under this budget, including tax, in micros
-     * of the invoice's currency. For example, if currency_code is `USD`, then
-     * 1000000 represents one US dollar.
-     *
-     * @param string $totalAmountMicros
-     */
-    public function setTotalAmountMicros($totalAmountMicros)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalAmountMicros()
+    class Google_Service_DisplayVideo_BudgetSummary extends \Google\Service\DisplayVideo\BudgetSummary
     {
     }
 }

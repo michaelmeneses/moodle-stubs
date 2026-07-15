@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkManagement;
-
-class ShowEffectiveFlowLogsConfigsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $effectiveFlowLogsConfigsType = EffectiveVpcFlowLogsConfig::class;
-    protected $effectiveFlowLogsConfigsDataType = 'array';
-    /**
-     * Page token to fetch the next set of configurations.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Locations that could not be reached (when querying all locations with `-`).
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * List of Effective Vpc Flow Logs configurations.
-     *
-     * @param EffectiveVpcFlowLogsConfig[] $effectiveFlowLogsConfigs
-     */
-    public function setEffectiveFlowLogsConfigs($effectiveFlowLogsConfigs)
+namespace Google\Service\NetworkManagement {
+    class ShowEffectiveFlowLogsConfigsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $effectiveFlowLogsConfigsType = EffectiveVpcFlowLogsConfig::class;
+        protected $effectiveFlowLogsConfigsDataType = 'array';
+        /**
+         * Page token to fetch the next set of configurations.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Locations that could not be reached (when querying all locations with `-`).
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * List of Effective Vpc Flow Logs configurations.
+         *
+         * @param EffectiveVpcFlowLogsConfig[] $effectiveFlowLogsConfigs
+         */
+        public function setEffectiveFlowLogsConfigs($effectiveFlowLogsConfigs)
+        {
+        }
+        /**
+         * @return EffectiveVpcFlowLogsConfig[]
+         */
+        public function getEffectiveFlowLogsConfigs()
+        {
+        }
+        /**
+         * Page token to fetch the next set of configurations.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Locations that could not be reached (when querying all locations with `-`).
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EffectiveVpcFlowLogsConfig[]
+     * Runtime class alias of \Google\Service\NetworkManagement\ShowEffectiveFlowLogsConfigsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEffectiveFlowLogsConfigs()
-    {
-    }
-    /**
-     * Page token to fetch the next set of configurations.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Locations that could not be reached (when querying all locations with `-`).
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_NetworkManagement_ShowEffectiveFlowLogsConfigsResponse extends \Google\Service\NetworkManagement\ShowEffectiveFlowLogsConfigsResponse
     {
     }
 }

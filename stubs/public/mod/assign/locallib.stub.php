@@ -62,6 +62,13 @@ define('ASSIGN_MULTIMARKING_AVERAGE_ROUND_DOWN', 2);
 define('ASSIGN_MULTIMARKING_AVERAGE_ROUND_UP', 3);
 define('ASSIGN_MULTIMARKING_MAX_MARKERS', 10);
 define('ASSIGN_MULTIMARKING_DEFAULT_MARKERS', 2);
+use mod_assign\event\submission_removed;
+use mod_assign\event\submission_status_updated;
+use mod_assign\output\grading_app;
+use mod_assign\output\assign_header;
+use mod_assign\output\assign_submission_status;
+use mod_assign\output\timelimit_panel;
+use mod_assign\downloader;
 /**
  * Standard base class for mod_assign (assignment types).
  *
@@ -1517,10 +1524,9 @@ class assign
      * Calculate penalised grade and deducted mark.
      *
      * @param stdClass $grade The grade object
-     * @param grade_grade|null $usergraderecord Optional pre-fetched grade_grade for the user.
      * @return array [$penalisedgrade, $deductedmark] the penalised grade and the deducted mark
      */
-    public function calculate_penalised_grade(stdClass $grade, ?\grade_grade $usergraderecord = null): array
+    public function calculate_penalised_grade(stdClass $grade): array
     {
     }
     /**

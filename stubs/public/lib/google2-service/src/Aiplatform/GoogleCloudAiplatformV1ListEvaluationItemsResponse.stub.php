@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ListEvaluationItemsResponse extends \Google\Collection
-{
-    protected $collection_key = 'evaluationItems';
-    protected $evaluationItemsType = GoogleCloudAiplatformV1EvaluationItem::class;
-    protected $evaluationItemsDataType = 'array';
-    /**
-     * A token to retrieve the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of EvaluationItems in the requested page.
-     *
-     * @param GoogleCloudAiplatformV1EvaluationItem[] $evaluationItems
-     */
-    public function setEvaluationItems($evaluationItems)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ListEvaluationItemsResponse extends \Google\Collection
     {
+        protected $collection_key = 'evaluationItems';
+        protected $evaluationItemsType = GoogleCloudAiplatformV1EvaluationItem::class;
+        protected $evaluationItemsDataType = 'array';
+        /**
+         * A token to retrieve the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of EvaluationItems in the requested page.
+         *
+         * @param GoogleCloudAiplatformV1EvaluationItem[] $evaluationItems
+         */
+        public function setEvaluationItems($evaluationItems)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1EvaluationItem[]
+         */
+        public function getEvaluationItems()
+        {
+        }
+        /**
+         * A token to retrieve the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1EvaluationItem[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListEvaluationItemsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEvaluationItems()
-    {
-    }
-    /**
-     * A token to retrieve the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ListEvaluationItemsResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListEvaluationItemsResponse
     {
     }
 }

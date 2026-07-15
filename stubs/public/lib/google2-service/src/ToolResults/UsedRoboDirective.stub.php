@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class UsedRoboDirective extends \Google\Model
-{
-    /**
-     * The name of the resource that was used.
-     *
-     * @var string
-     */
-    public $resourceName;
-    /**
-     * The name of the resource that was used.
-     *
-     * @param string $resourceName
-     */
-    public function setResourceName($resourceName)
+namespace Google\Service\ToolResults {
+    class UsedRoboDirective extends \Google\Model
     {
+        /**
+         * The name of the resource that was used.
+         *
+         * @var string
+         */
+        public $resourceName;
+        /**
+         * The name of the resource that was used.
+         *
+         * @param string $resourceName
+         */
+        public function setResourceName($resourceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ToolResults\UsedRoboDirective registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResourceName()
+    class Google_Service_ToolResults_UsedRoboDirective extends \Google\Service\ToolResults\UsedRoboDirective
     {
     }
 }

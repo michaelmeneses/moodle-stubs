@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkSecurity;
-
-class AuthzPolicyAuthzRuleRequestResource extends \Google\Model
-{
-    protected $iamServiceAccountType = AuthzPolicyAuthzRuleStringMatch::class;
-    protected $iamServiceAccountDataType = '';
-    protected $tagValueIdSetType = AuthzPolicyAuthzRuleRequestResourceTagValueIdSet::class;
-    protected $tagValueIdSetDataType = '';
-    /**
-     * Optional. An IAM service account to match against the source service
-     * account of the VM sending the request.
-     *
-     * @param AuthzPolicyAuthzRuleStringMatch $iamServiceAccount
-     */
-    public function setIamServiceAccount(AuthzPolicyAuthzRuleStringMatch $iamServiceAccount)
+namespace Google\Service\NetworkSecurity {
+    class AuthzPolicyAuthzRuleRequestResource extends \Google\Model
     {
+        protected $iamServiceAccountType = AuthzPolicyAuthzRuleStringMatch::class;
+        protected $iamServiceAccountDataType = '';
+        protected $tagValueIdSetType = AuthzPolicyAuthzRuleRequestResourceTagValueIdSet::class;
+        protected $tagValueIdSetDataType = '';
+        /**
+         * Optional. An IAM service account to match against the source service
+         * account of the VM sending the request.
+         *
+         * @param AuthzPolicyAuthzRuleStringMatch $iamServiceAccount
+         */
+        public function setIamServiceAccount(AuthzPolicyAuthzRuleStringMatch $iamServiceAccount)
+        {
+        }
+        /**
+         * @return AuthzPolicyAuthzRuleStringMatch
+         */
+        public function getIamServiceAccount()
+        {
+        }
+        /**
+         * Optional. A list of resource tag value permanent IDs to match against the
+         * resource manager tags value associated with the source VM of a request.
+         *
+         * @param AuthzPolicyAuthzRuleRequestResourceTagValueIdSet $tagValueIdSet
+         */
+        public function setTagValueIdSet(AuthzPolicyAuthzRuleRequestResourceTagValueIdSet $tagValueIdSet)
+        {
+        }
+        /**
+         * @return AuthzPolicyAuthzRuleRequestResourceTagValueIdSet
+         */
+        public function getTagValueIdSet()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AuthzPolicyAuthzRuleStringMatch
+     * Runtime class alias of \Google\Service\NetworkSecurity\AuthzPolicyAuthzRuleRequestResource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIamServiceAccount()
-    {
-    }
-    /**
-     * Optional. A list of resource tag value permanent IDs to match against the
-     * resource manager tags value associated with the source VM of a request.
-     *
-     * @param AuthzPolicyAuthzRuleRequestResourceTagValueIdSet $tagValueIdSet
-     */
-    public function setTagValueIdSet(AuthzPolicyAuthzRuleRequestResourceTagValueIdSet $tagValueIdSet)
-    {
-    }
-    /**
-     * @return AuthzPolicyAuthzRuleRequestResourceTagValueIdSet
-     */
-    public function getTagValueIdSet()
+    class Google_Service_NetworkSecurity_AuthzPolicyAuthzRuleRequestResource extends \Google\Service\NetworkSecurity\AuthzPolicyAuthzRuleRequestResource
     {
     }
 }

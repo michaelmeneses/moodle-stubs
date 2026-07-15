@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSourceRepositories;
-
-class PubsubConfig extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $messageFormat;
-    /**
-     * @var string
-     */
-    public $serviceAccountEmail;
-    /**
-     * @var string
-     */
-    public $topic;
-    /**
-     * @param string
-     */
-    public function setMessageFormat($messageFormat)
+namespace Google\Service\CloudSourceRepositories {
+    class PubsubConfig extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $messageFormat;
+        /**
+         * @var string
+         */
+        public $serviceAccountEmail;
+        /**
+         * @var string
+         */
+        public $topic;
+        /**
+         * @param string
+         */
+        public function setMessageFormat($messageFormat)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessageFormat()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setServiceAccountEmail($serviceAccountEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceAccountEmail()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTopic($topic)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTopic()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSourceRepositories\PubsubConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMessageFormat()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setServiceAccountEmail($serviceAccountEmail)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceAccountEmail()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTopic($topic)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTopic()
+    class Google_Service_CloudSourceRepositories_PubsubConfig extends \Google\Service\CloudSourceRepositories\PubsubConfig
     {
     }
 }

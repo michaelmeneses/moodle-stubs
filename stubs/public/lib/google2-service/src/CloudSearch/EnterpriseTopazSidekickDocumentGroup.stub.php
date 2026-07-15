@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class EnterpriseTopazSidekickDocumentGroup extends \Google\Collection
-{
-    /**
-     * Unknown type.
-     */
-    public const GROUP_TYPE_UNKNOWN_TYPE = 'UNKNOWN_TYPE';
-    /**
-     * A mix of all the document types.
-     */
-    public const GROUP_TYPE_ALL = 'ALL';
-    protected $collection_key = 'personalizedDocument';
-    /**
-     * Document group type
-     *
-     * @deprecated
-     * @var string
-     */
-    public $groupType;
-    protected $personalizedDocumentType = EnterpriseTopazSidekickCommonDocument::class;
-    protected $personalizedDocumentDataType = 'array';
-    /**
-     * Document group type
-     *
-     * Accepted values: UNKNOWN_TYPE, ALL
-     *
-     * @deprecated
-     * @param self::GROUP_TYPE_* $groupType
-     */
-    public function setGroupType($groupType)
+namespace Google\Service\CloudSearch {
+    class EnterpriseTopazSidekickDocumentGroup extends \Google\Collection
     {
+        /**
+         * Unknown type.
+         */
+        public const GROUP_TYPE_UNKNOWN_TYPE = 'UNKNOWN_TYPE';
+        /**
+         * A mix of all the document types.
+         */
+        public const GROUP_TYPE_ALL = 'ALL';
+        protected $collection_key = 'personalizedDocument';
+        /**
+         * Document group type
+         *
+         * @deprecated
+         * @var string
+         */
+        public $groupType;
+        protected $personalizedDocumentType = EnterpriseTopazSidekickCommonDocument::class;
+        protected $personalizedDocumentDataType = 'array';
+        /**
+         * Document group type
+         *
+         * Accepted values: UNKNOWN_TYPE, ALL
+         *
+         * @deprecated
+         * @param self::GROUP_TYPE_* $groupType
+         */
+        public function setGroupType($groupType)
+        {
+        }
+        /**
+         * @deprecated
+         * @return self::GROUP_TYPE_*
+         */
+        public function getGroupType()
+        {
+        }
+        /**
+         * The list of corresponding documents.
+         *
+         * @param EnterpriseTopazSidekickCommonDocument[] $personalizedDocument
+         */
+        public function setPersonalizedDocument($personalizedDocument)
+        {
+        }
+        /**
+         * @return EnterpriseTopazSidekickCommonDocument[]
+         */
+        public function getPersonalizedDocument()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return self::GROUP_TYPE_*
+     * Runtime class alias of \Google\Service\CloudSearch\EnterpriseTopazSidekickDocumentGroup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGroupType()
-    {
-    }
-    /**
-     * The list of corresponding documents.
-     *
-     * @param EnterpriseTopazSidekickCommonDocument[] $personalizedDocument
-     */
-    public function setPersonalizedDocument($personalizedDocument)
-    {
-    }
-    /**
-     * @return EnterpriseTopazSidekickCommonDocument[]
-     */
-    public function getPersonalizedDocument()
+    class Google_Service_CloudSearch_EnterpriseTopazSidekickDocumentGroup extends \Google\Service\CloudSearch\EnterpriseTopazSidekickDocumentGroup
     {
     }
 }

@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class PostgresDestinationConfig extends \Google\Model
-{
-    /**
-     * Optional. Maximum number of connections Database Migration Service will
-     * open to the destination for data migration.
-     *
-     * @var int
-     */
-    public $maxConcurrentConnections;
-    /**
-     * Optional. Timeout for data migration transactions.
-     *
-     * @var string
-     */
-    public $transactionTimeout;
-    /**
-     * Optional. Maximum number of connections Database Migration Service will
-     * open to the destination for data migration.
-     *
-     * @param int $maxConcurrentConnections
-     */
-    public function setMaxConcurrentConnections($maxConcurrentConnections)
+namespace Google\Service\DatabaseMigrationService {
+    class PostgresDestinationConfig extends \Google\Model
     {
+        /**
+         * Optional. Maximum number of connections Database Migration Service will
+         * open to the destination for data migration.
+         *
+         * @var int
+         */
+        public $maxConcurrentConnections;
+        /**
+         * Optional. Timeout for data migration transactions.
+         *
+         * @var string
+         */
+        public $transactionTimeout;
+        /**
+         * Optional. Maximum number of connections Database Migration Service will
+         * open to the destination for data migration.
+         *
+         * @param int $maxConcurrentConnections
+         */
+        public function setMaxConcurrentConnections($maxConcurrentConnections)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxConcurrentConnections()
+        {
+        }
+        /**
+         * Optional. Timeout for data migration transactions.
+         *
+         * @param string $transactionTimeout
+         */
+        public function setTransactionTimeout($transactionTimeout)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTransactionTimeout()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\PostgresDestinationConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaxConcurrentConnections()
-    {
-    }
-    /**
-     * Optional. Timeout for data migration transactions.
-     *
-     * @param string $transactionTimeout
-     */
-    public function setTransactionTimeout($transactionTimeout)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTransactionTimeout()
+    class Google_Service_DatabaseMigrationService_PostgresDestinationConfig extends \Google\Service\DatabaseMigrationService\PostgresDestinationConfig
     {
     }
 }

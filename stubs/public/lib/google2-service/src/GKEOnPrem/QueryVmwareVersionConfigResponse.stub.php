@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class QueryVmwareVersionConfigResponse extends \Google\Collection
-{
-    protected $collection_key = 'versions';
-    protected $versionsType = VmwareVersionInfo::class;
-    protected $versionsDataType = 'array';
-    /**
-     * List of available versions to install or to upgrade to.
-     *
-     * @param VmwareVersionInfo[] $versions
-     */
-    public function setVersions($versions)
+namespace Google\Service\GKEOnPrem {
+    class QueryVmwareVersionConfigResponse extends \Google\Collection
     {
+        protected $collection_key = 'versions';
+        protected $versionsType = VmwareVersionInfo::class;
+        protected $versionsDataType = 'array';
+        /**
+         * List of available versions to install or to upgrade to.
+         *
+         * @param VmwareVersionInfo[] $versions
+         */
+        public function setVersions($versions)
+        {
+        }
+        /**
+         * @return VmwareVersionInfo[]
+         */
+        public function getVersions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return VmwareVersionInfo[]
+     * Runtime class alias of \Google\Service\GKEOnPrem\QueryVmwareVersionConfigResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getVersions()
+    class Google_Service_GKEOnPrem_QueryVmwareVersionConfigResponse extends \Google\Service\GKEOnPrem\QueryVmwareVersionConfigResponse
     {
     }
 }

@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ApigeeRegistry;
-
-class ListApiDeploymentRevisionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'apiDeployments';
-    protected $apiDeploymentsType = ApiDeployment::class;
-    protected $apiDeploymentsDataType = 'array';
-    /**
-     * A token that can be sent as `page_token` to retrieve the next page. If this
-     * field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The revisions of the deployment.
-     *
-     * @param ApiDeployment[] $apiDeployments
-     */
-    public function setApiDeployments($apiDeployments)
+namespace Google\Service\ApigeeRegistry {
+    class ListApiDeploymentRevisionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'apiDeployments';
+        protected $apiDeploymentsType = ApiDeployment::class;
+        protected $apiDeploymentsDataType = 'array';
+        /**
+         * A token that can be sent as `page_token` to retrieve the next page. If this
+         * field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The revisions of the deployment.
+         *
+         * @param ApiDeployment[] $apiDeployments
+         */
+        public function setApiDeployments($apiDeployments)
+        {
+        }
+        /**
+         * @return ApiDeployment[]
+         */
+        public function getApiDeployments()
+        {
+        }
+        /**
+         * A token that can be sent as `page_token` to retrieve the next page. If this
+         * field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ApiDeployment[]
+     * Runtime class alias of \Google\Service\ApigeeRegistry\ListApiDeploymentRevisionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiDeployments()
-    {
-    }
-    /**
-     * A token that can be sent as `page_token` to retrieve the next page. If this
-     * field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_ApigeeRegistry_ListApiDeploymentRevisionsResponse extends \Google\Service\ApigeeRegistry\ListApiDeploymentRevisionsResponse
     {
     }
 }

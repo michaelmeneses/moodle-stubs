@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaCreateBundleRequest extends \Google\Collection
-{
-    protected $collection_key = 'integrations';
-    /**
-     * @var string
-     */
-    public $bundleId;
-    /**
-     * @var string[]
-     */
-    public $integrations;
-    /**
-     * @var string
-     */
-    public $secondaryCustomerOrgId;
-    /**
-     * @param string
-     */
-    public function setBundleId($bundleId)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaCreateBundleRequest extends \Google\Collection
     {
+        protected $collection_key = 'integrations';
+        /**
+         * @var string
+         */
+        public $bundleId;
+        /**
+         * @var string[]
+         */
+        public $integrations;
+        /**
+         * @var string
+         */
+        public $secondaryCustomerOrgId;
+        /**
+         * @param string
+         */
+        public function setBundleId($bundleId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBundleId()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setIntegrations($integrations)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getIntegrations()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSecondaryCustomerOrgId($secondaryCustomerOrgId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSecondaryCustomerOrgId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaCreateBundleRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBundleId()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setIntegrations($integrations)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getIntegrations()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSecondaryCustomerOrgId($secondaryCustomerOrgId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSecondaryCustomerOrgId()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaCreateBundleRequest extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaCreateBundleRequest
     {
     }
 }

@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1beta1DocumentPageLayout extends \Google\Model
-{
-    protected $boundingPolyType = GoogleCloudDocumentaiV1beta1BoundingPoly::class;
-    protected $boundingPolyDataType = '';
-    /**
-     * @var float
-     */
-    public $confidence;
-    /**
-     * @var string
-     */
-    public $orientation;
-    protected $textAnchorType = GoogleCloudDocumentaiV1beta1DocumentTextAnchor::class;
-    protected $textAnchorDataType = '';
-    /**
-     * @param GoogleCloudDocumentaiV1beta1BoundingPoly
-     */
-    public function setBoundingPoly(GoogleCloudDocumentaiV1beta1BoundingPoly $boundingPoly)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1beta1DocumentPageLayout extends \Google\Model
     {
+        protected $boundingPolyType = GoogleCloudDocumentaiV1beta1BoundingPoly::class;
+        protected $boundingPolyDataType = '';
+        /**
+         * @var float
+         */
+        public $confidence;
+        /**
+         * @var string
+         */
+        public $orientation;
+        protected $textAnchorType = GoogleCloudDocumentaiV1beta1DocumentTextAnchor::class;
+        protected $textAnchorDataType = '';
+        /**
+         * @param GoogleCloudDocumentaiV1beta1BoundingPoly
+         */
+        public function setBoundingPoly(GoogleCloudDocumentaiV1beta1BoundingPoly $boundingPoly)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta1BoundingPoly
+         */
+        public function getBoundingPoly()
+        {
+        }
+        /**
+         * @param float
+         */
+        public function setConfidence($confidence)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getConfidence()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOrientation($orientation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOrientation()
+        {
+        }
+        /**
+         * @param GoogleCloudDocumentaiV1beta1DocumentTextAnchor
+         */
+        public function setTextAnchor(GoogleCloudDocumentaiV1beta1DocumentTextAnchor $textAnchor)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta1DocumentTextAnchor
+         */
+        public function getTextAnchor()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiV1beta1BoundingPoly
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1beta1DocumentPageLayout registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBoundingPoly()
-    {
-    }
-    /**
-     * @param float
-     */
-    public function setConfidence($confidence)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getConfidence()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOrientation($orientation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOrientation()
-    {
-    }
-    /**
-     * @param GoogleCloudDocumentaiV1beta1DocumentTextAnchor
-     */
-    public function setTextAnchor(GoogleCloudDocumentaiV1beta1DocumentTextAnchor $textAnchor)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1beta1DocumentTextAnchor
-     */
-    public function getTextAnchor()
+    class Google_Service_Document_GoogleCloudDocumentaiV1beta1DocumentPageLayout extends \Google\Service\Document\GoogleCloudDocumentaiV1beta1DocumentPageLayout
     {
     }
 }

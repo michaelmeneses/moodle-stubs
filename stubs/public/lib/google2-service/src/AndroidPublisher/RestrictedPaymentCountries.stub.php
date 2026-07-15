@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class RestrictedPaymentCountries extends \Google\Collection
-{
-    protected $collection_key = 'regionCodes';
-    /**
-     * Required. Region codes to impose payment restrictions on, as defined by ISO
-     * 3166-2, e.g. "US".
-     *
-     * @var string[]
-     */
-    public $regionCodes;
-    /**
-     * Required. Region codes to impose payment restrictions on, as defined by ISO
-     * 3166-2, e.g. "US".
-     *
-     * @param string[] $regionCodes
-     */
-    public function setRegionCodes($regionCodes)
+namespace Google\Service\AndroidPublisher {
+    class RestrictedPaymentCountries extends \Google\Collection
     {
+        protected $collection_key = 'regionCodes';
+        /**
+         * Required. Region codes to impose payment restrictions on, as defined by ISO
+         * 3166-2, e.g. "US".
+         *
+         * @var string[]
+         */
+        public $regionCodes;
+        /**
+         * Required. Region codes to impose payment restrictions on, as defined by ISO
+         * 3166-2, e.g. "US".
+         *
+         * @param string[] $regionCodes
+         */
+        public function setRegionCodes($regionCodes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRegionCodes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\AndroidPublisher\RestrictedPaymentCountries registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRegionCodes()
+    class Google_Service_AndroidPublisher_RestrictedPaymentCountries extends \Google\Service\AndroidPublisher\RestrictedPaymentCountries
     {
     }
 }

@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AlertCenter;
-
-class RequestInfo extends \Google\Collection
-{
-    protected $collection_key = 'appDeveloperEmail';
-    /**
-     * List of app developers who triggered notifications for above application.
-     *
-     * @var string[]
-     */
-    public $appDeveloperEmail;
-    /**
-     * Required. The application that requires the SQL setup.
-     *
-     * @var string
-     */
-    public $appKey;
-    /**
-     * Required. Number of requests sent for this application to set up default
-     * SQL instance.
-     *
-     * @var string
-     */
-    public $numberOfRequests;
-    /**
-     * List of app developers who triggered notifications for above application.
-     *
-     * @param string[] $appDeveloperEmail
-     */
-    public function setAppDeveloperEmail($appDeveloperEmail)
+namespace Google\Service\AlertCenter {
+    class RequestInfo extends \Google\Collection
     {
+        protected $collection_key = 'appDeveloperEmail';
+        /**
+         * List of app developers who triggered notifications for above application.
+         *
+         * @var string[]
+         */
+        public $appDeveloperEmail;
+        /**
+         * Required. The application that requires the SQL setup.
+         *
+         * @var string
+         */
+        public $appKey;
+        /**
+         * Required. Number of requests sent for this application to set up default
+         * SQL instance.
+         *
+         * @var string
+         */
+        public $numberOfRequests;
+        /**
+         * List of app developers who triggered notifications for above application.
+         *
+         * @param string[] $appDeveloperEmail
+         */
+        public function setAppDeveloperEmail($appDeveloperEmail)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAppDeveloperEmail()
+        {
+        }
+        /**
+         * Required. The application that requires the SQL setup.
+         *
+         * @param string $appKey
+         */
+        public function setAppKey($appKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAppKey()
+        {
+        }
+        /**
+         * Required. Number of requests sent for this application to set up default
+         * SQL instance.
+         *
+         * @param string $numberOfRequests
+         */
+        public function setNumberOfRequests($numberOfRequests)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNumberOfRequests()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\AlertCenter\RequestInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAppDeveloperEmail()
-    {
-    }
-    /**
-     * Required. The application that requires the SQL setup.
-     *
-     * @param string $appKey
-     */
-    public function setAppKey($appKey)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAppKey()
-    {
-    }
-    /**
-     * Required. Number of requests sent for this application to set up default
-     * SQL instance.
-     *
-     * @param string $numberOfRequests
-     */
-    public function setNumberOfRequests($numberOfRequests)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNumberOfRequests()
+    class Google_Service_AlertCenter_RequestInfo extends \Google\Service\AlertCenter\RequestInfo
     {
     }
 }

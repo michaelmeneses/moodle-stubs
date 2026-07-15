@@ -21,170 +21,179 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager;
-
-class Destination extends \Google\Model
-{
-    /**
-     * GTM Account ID.
-     *
-     * @var string
-     */
-    public $accountId;
-    /**
-     * GTM Container ID.
-     *
-     * @var string
-     */
-    public $containerId;
-    /**
-     * Destination ID.
-     *
-     * @var string
-     */
-    public $destinationId;
-    /**
-     * The Destination link ID uniquely identifies the Destination.
-     *
-     * @var string
-     */
-    public $destinationLinkId;
-    /**
-     * The fingerprint of the Google Tag Destination as computed at storage time.
-     * This value is recomputed whenever the destination is modified.
-     *
-     * @var string
-     */
-    public $fingerprint;
-    /**
-     * Destination display name.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Destination's API relative path.
-     *
-     * @var string
-     */
-    public $path;
-    /**
-     * Auto generated link to the tag manager UI.
-     *
-     * @var string
-     */
-    public $tagManagerUrl;
-    /**
-     * GTM Account ID.
-     *
-     * @param string $accountId
-     */
-    public function setAccountId($accountId)
+namespace Google\Service\TagManager {
+    class Destination extends \Google\Model
     {
+        /**
+         * GTM Account ID.
+         *
+         * @var string
+         */
+        public $accountId;
+        /**
+         * GTM Container ID.
+         *
+         * @var string
+         */
+        public $containerId;
+        /**
+         * Destination ID.
+         *
+         * @var string
+         */
+        public $destinationId;
+        /**
+         * The Destination link ID uniquely identifies the Destination.
+         *
+         * @var string
+         */
+        public $destinationLinkId;
+        /**
+         * The fingerprint of the Google Tag Destination as computed at storage time.
+         * This value is recomputed whenever the destination is modified.
+         *
+         * @var string
+         */
+        public $fingerprint;
+        /**
+         * Destination display name.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Destination's API relative path.
+         *
+         * @var string
+         */
+        public $path;
+        /**
+         * Auto generated link to the tag manager UI.
+         *
+         * @var string
+         */
+        public $tagManagerUrl;
+        /**
+         * GTM Account ID.
+         *
+         * @param string $accountId
+         */
+        public function setAccountId($accountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccountId()
+        {
+        }
+        /**
+         * GTM Container ID.
+         *
+         * @param string $containerId
+         */
+        public function setContainerId($containerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContainerId()
+        {
+        }
+        /**
+         * Destination ID.
+         *
+         * @param string $destinationId
+         */
+        public function setDestinationId($destinationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDestinationId()
+        {
+        }
+        /**
+         * The Destination link ID uniquely identifies the Destination.
+         *
+         * @param string $destinationLinkId
+         */
+        public function setDestinationLinkId($destinationLinkId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDestinationLinkId()
+        {
+        }
+        /**
+         * The fingerprint of the Google Tag Destination as computed at storage time.
+         * This value is recomputed whenever the destination is modified.
+         *
+         * @param string $fingerprint
+         */
+        public function setFingerprint($fingerprint)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFingerprint()
+        {
+        }
+        /**
+         * Destination display name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Destination's API relative path.
+         *
+         * @param string $path
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
+        /**
+         * Auto generated link to the tag manager UI.
+         *
+         * @param string $tagManagerUrl
+         */
+        public function setTagManagerUrl($tagManagerUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTagManagerUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\TagManager\Destination registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountId()
-    {
-    }
-    /**
-     * GTM Container ID.
-     *
-     * @param string $containerId
-     */
-    public function setContainerId($containerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContainerId()
-    {
-    }
-    /**
-     * Destination ID.
-     *
-     * @param string $destinationId
-     */
-    public function setDestinationId($destinationId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDestinationId()
-    {
-    }
-    /**
-     * The Destination link ID uniquely identifies the Destination.
-     *
-     * @param string $destinationLinkId
-     */
-    public function setDestinationLinkId($destinationLinkId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDestinationLinkId()
-    {
-    }
-    /**
-     * The fingerprint of the Google Tag Destination as computed at storage time.
-     * This value is recomputed whenever the destination is modified.
-     *
-     * @param string $fingerprint
-     */
-    public function setFingerprint($fingerprint)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFingerprint()
-    {
-    }
-    /**
-     * Destination display name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Destination's API relative path.
-     *
-     * @param string $path
-     */
-    public function setPath($path)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPath()
-    {
-    }
-    /**
-     * Auto generated link to the tag manager UI.
-     *
-     * @param string $tagManagerUrl
-     */
-    public function setTagManagerUrl($tagManagerUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTagManagerUrl()
+    class Google_Service_TagManager_Destination extends \Google\Service\TagManager\Destination
     {
     }
 }

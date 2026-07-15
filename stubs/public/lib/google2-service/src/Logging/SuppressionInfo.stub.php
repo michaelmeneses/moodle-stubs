@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Logging;
-
-class SuppressionInfo extends \Google\Model
-{
-    /**
-     * Unexpected default.
-     */
-    public const REASON_REASON_UNSPECIFIED = 'REASON_UNSPECIFIED';
-    /**
-     * Indicates suppression occurred due to relevant entries being received in
-     * excess of rate limits. For quotas and limits, see Logging API quotas and
-     * limits (https://cloud.google.com/logging/quotas#api-limits).
-     */
-    public const REASON_RATE_LIMIT = 'RATE_LIMIT';
-    /**
-     * Indicates suppression occurred due to the client not consuming responses
-     * quickly enough.
-     */
-    public const REASON_NOT_CONSUMED = 'NOT_CONSUMED';
-    /**
-     * The reason that entries were omitted from the session.
-     *
-     * @var string
-     */
-    public $reason;
-    /**
-     * A lower bound on the count of entries omitted due to reason.
-     *
-     * @var int
-     */
-    public $suppressedCount;
-    /**
-     * The reason that entries were omitted from the session.
-     *
-     * Accepted values: REASON_UNSPECIFIED, RATE_LIMIT, NOT_CONSUMED
-     *
-     * @param self::REASON_* $reason
-     */
-    public function setReason($reason)
+namespace Google\Service\Logging {
+    class SuppressionInfo extends \Google\Model
     {
+        /**
+         * Unexpected default.
+         */
+        public const REASON_REASON_UNSPECIFIED = 'REASON_UNSPECIFIED';
+        /**
+         * Indicates suppression occurred due to relevant entries being received in
+         * excess of rate limits. For quotas and limits, see Logging API quotas and
+         * limits (https://cloud.google.com/logging/quotas#api-limits).
+         */
+        public const REASON_RATE_LIMIT = 'RATE_LIMIT';
+        /**
+         * Indicates suppression occurred due to the client not consuming responses
+         * quickly enough.
+         */
+        public const REASON_NOT_CONSUMED = 'NOT_CONSUMED';
+        /**
+         * The reason that entries were omitted from the session.
+         *
+         * @var string
+         */
+        public $reason;
+        /**
+         * A lower bound on the count of entries omitted due to reason.
+         *
+         * @var int
+         */
+        public $suppressedCount;
+        /**
+         * The reason that entries were omitted from the session.
+         *
+         * Accepted values: REASON_UNSPECIFIED, RATE_LIMIT, NOT_CONSUMED
+         *
+         * @param self::REASON_* $reason
+         */
+        public function setReason($reason)
+        {
+        }
+        /**
+         * @return self::REASON_*
+         */
+        public function getReason()
+        {
+        }
+        /**
+         * A lower bound on the count of entries omitted due to reason.
+         *
+         * @param int $suppressedCount
+         */
+        public function setSuppressedCount($suppressedCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSuppressedCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::REASON_*
+     * Runtime class alias of \Google\Service\Logging\SuppressionInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReason()
-    {
-    }
-    /**
-     * A lower bound on the count of entries omitted due to reason.
-     *
-     * @param int $suppressedCount
-     */
-    public function setSuppressedCount($suppressedCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSuppressedCount()
+    class Google_Service_Logging_SuppressionInfo extends \Google\Service\Logging\SuppressionInfo
     {
     }
 }

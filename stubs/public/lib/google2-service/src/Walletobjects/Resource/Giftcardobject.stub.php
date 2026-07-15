@@ -21,115 +21,128 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects\Resource;
-
-/**
- * The "giftcardobject" collection of methods.
- * Typical usage is:
- *  <code>
- *   $walletobjectsService = new Google\Service\Walletobjects(...);
- *   $giftcardobject = $walletobjectsService->giftcardobject;
- *  </code>
- */
-class Giftcardobject extends \Google\Service\Resource
-{
+namespace Google\Service\Walletobjects\Resource {
+    use Google\Service\Walletobjects\AddMessageRequest;
+    use Google\Service\Walletobjects\GiftCardObject as GiftCardObjectModel;
+    use Google\Service\Walletobjects\GiftCardObjectAddMessageResponse;
+    use Google\Service\Walletobjects\GiftCardObjectListResponse;
     /**
-     * Adds a message to the gift card object referenced by the given object ID.
-     * (giftcardobject.addmessage)
-     *
-     * @param string $resourceId The unique identifier for an object. This ID must
-     * be unique across all objects from an issuer. This value should follow the
-     * format issuer ID. identifier where the former is issued by Google and latter
-     * is chosen by you. Your unique identifier should only include alphanumeric
-     * characters, '.', '_', or '-'.
-     * @param AddMessageRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GiftCardObjectAddMessageResponse
-     * @throws \Google\Service\Exception
+     * The "giftcardobject" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $walletobjectsService = new Google\Service\Walletobjects(...);
+     *   $giftcardobject = $walletobjectsService->giftcardobject;
+     *  </code>
      */
-    public function addmessage($resourceId, AddMessageRequest $postBody, $optParams = [])
+    class Giftcardobject extends \Google\Service\Resource
     {
+        /**
+         * Adds a message to the gift card object referenced by the given object ID.
+         * (giftcardobject.addmessage)
+         *
+         * @param string $resourceId The unique identifier for an object. This ID must
+         * be unique across all objects from an issuer. This value should follow the
+         * format issuer ID. identifier where the former is issued by Google and latter
+         * is chosen by you. Your unique identifier should only include alphanumeric
+         * characters, '.', '_', or '-'.
+         * @param AddMessageRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GiftCardObjectAddMessageResponse
+         * @throws \Google\Service\Exception
+         */
+        public function addmessage($resourceId, AddMessageRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Returns the gift card object with the given object ID. (giftcardobject.get)
+         *
+         * @param string $resourceId The unique identifier for an object. This ID must
+         * be unique across all objects from an issuer. This value should follow the
+         * format issuer ID. identifier where the former is issued by Google and latter
+         * is chosen by you. Your unique identifier should only include alphanumeric
+         * characters, '.', '_', or '-'.
+         * @param array $optParams Optional parameters.
+         * @return GiftCardObjectModel
+         * @throws \Google\Service\Exception
+         */
+        public function get($resourceId, $optParams = [])
+        {
+        }
+        /**
+         * Inserts an gift card object with the given ID and properties.
+         * (giftcardobject.insert)
+         *
+         * @param GiftCardObjectModel $postBody
+         * @param array $optParams Optional parameters.
+         * @return GiftCardObjectModel
+         * @throws \Google\Service\Exception
+         */
+        public function insert(GiftCardObjectModel $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Returns a list of all gift card objects for a given issuer ID.
+         * (giftcardobject.listGiftcardobject)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string classId The ID of the class whose objects will be listed.
+         * @opt_param int maxResults Identifies the max number of results returned by a
+         * list. All results are returned if `maxResults` isn't defined.
+         * @opt_param string token Used to get the next set of results if `maxResults`
+         * is specified, but more than `maxResults` objects are available in a list. For
+         * example, if you have a list of 200 objects and you call list with
+         * `maxResults` set to 20, list will return the first 20 objects and a token.
+         * Call list again with `maxResults` set to 20 and the token to get the next 20
+         * objects.
+         * @return GiftCardObjectListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listGiftcardobject($optParams = [])
+        {
+        }
+        /**
+         * Updates the gift card object referenced by the given object ID. This method
+         * supports patch semantics. (giftcardobject.patch)
+         *
+         * @param string $resourceId The unique identifier for an object. This ID must
+         * be unique across all objects from an issuer. This value should follow the
+         * format issuer ID. identifier where the former is issued by Google and latter
+         * is chosen by you. Your unique identifier should only include alphanumeric
+         * characters, '.', '_', or '-'.
+         * @param GiftCardObjectModel $postBody
+         * @param array $optParams Optional parameters.
+         * @return GiftCardObjectModel
+         * @throws \Google\Service\Exception
+         */
+        public function patch($resourceId, GiftCardObjectModel $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Updates the gift card object referenced by the given object ID.
+         * (giftcardobject.update)
+         *
+         * @param string $resourceId The unique identifier for an object. This ID must
+         * be unique across all objects from an issuer. This value should follow the
+         * format issuer ID. identifier where the former is issued by Google and latter
+         * is chosen by you. Your unique identifier should only include alphanumeric
+         * characters, '.', '_', or '-'.
+         * @param GiftCardObjectModel $postBody
+         * @param array $optParams Optional parameters.
+         * @return GiftCardObjectModel
+         * @throws \Google\Service\Exception
+         */
+        public function update($resourceId, GiftCardObjectModel $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Returns the gift card object with the given object ID. (giftcardobject.get)
-     *
-     * @param string $resourceId The unique identifier for an object. This ID must
-     * be unique across all objects from an issuer. This value should follow the
-     * format issuer ID. identifier where the former is issued by Google and latter
-     * is chosen by you. Your unique identifier should only include alphanumeric
-     * characters, '.', '_', or '-'.
-     * @param array $optParams Optional parameters.
-     * @return GiftCardObjectModel
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Walletobjects\Resource\Giftcardobject registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($resourceId, $optParams = [])
-    {
-    }
-    /**
-     * Inserts an gift card object with the given ID and properties.
-     * (giftcardobject.insert)
-     *
-     * @param GiftCardObjectModel $postBody
-     * @param array $optParams Optional parameters.
-     * @return GiftCardObjectModel
-     * @throws \Google\Service\Exception
-     */
-    public function insert(GiftCardObjectModel $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Returns a list of all gift card objects for a given issuer ID.
-     * (giftcardobject.listGiftcardobject)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string classId The ID of the class whose objects will be listed.
-     * @opt_param int maxResults Identifies the max number of results returned by a
-     * list. All results are returned if `maxResults` isn't defined.
-     * @opt_param string token Used to get the next set of results if `maxResults`
-     * is specified, but more than `maxResults` objects are available in a list. For
-     * example, if you have a list of 200 objects and you call list with
-     * `maxResults` set to 20, list will return the first 20 objects and a token.
-     * Call list again with `maxResults` set to 20 and the token to get the next 20
-     * objects.
-     * @return GiftCardObjectListResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listGiftcardobject($optParams = [])
-    {
-    }
-    /**
-     * Updates the gift card object referenced by the given object ID. This method
-     * supports patch semantics. (giftcardobject.patch)
-     *
-     * @param string $resourceId The unique identifier for an object. This ID must
-     * be unique across all objects from an issuer. This value should follow the
-     * format issuer ID. identifier where the former is issued by Google and latter
-     * is chosen by you. Your unique identifier should only include alphanumeric
-     * characters, '.', '_', or '-'.
-     * @param GiftCardObjectModel $postBody
-     * @param array $optParams Optional parameters.
-     * @return GiftCardObjectModel
-     * @throws \Google\Service\Exception
-     */
-    public function patch($resourceId, GiftCardObjectModel $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Updates the gift card object referenced by the given object ID.
-     * (giftcardobject.update)
-     *
-     * @param string $resourceId The unique identifier for an object. This ID must
-     * be unique across all objects from an issuer. This value should follow the
-     * format issuer ID. identifier where the former is issued by Google and latter
-     * is chosen by you. Your unique identifier should only include alphanumeric
-     * characters, '.', '_', or '-'.
-     * @param GiftCardObjectModel $postBody
-     * @param array $optParams Optional parameters.
-     * @return GiftCardObjectModel
-     * @throws \Google\Service\Exception
-     */
-    public function update($resourceId, GiftCardObjectModel $postBody, $optParams = [])
+    class Google_Service_Walletobjects_Resource_Giftcardobject extends \Google\Service\Walletobjects\Resource\Giftcardobject
     {
     }
 }

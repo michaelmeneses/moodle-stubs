@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class AccountsListLinksResponse extends \Google\Collection
-{
-    protected $collection_key = 'links';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "`content#accountsListLinksResponse`".
-     *
-     * @var string
-     */
-    public $kind;
-    protected $linksType = LinkedAccount::class;
-    protected $linksDataType = 'array';
-    /**
-     * The token for the retrieval of the next page of links.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "`content#accountsListLinksResponse`".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\ShoppingContent {
+    class AccountsListLinksResponse extends \Google\Collection
     {
+        protected $collection_key = 'links';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "`content#accountsListLinksResponse`".
+         *
+         * @var string
+         */
+        public $kind;
+        protected $linksType = LinkedAccount::class;
+        protected $linksDataType = 'array';
+        /**
+         * The token for the retrieval of the next page of links.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "`content#accountsListLinksResponse`".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The list of available links.
+         *
+         * @param LinkedAccount[] $links
+         */
+        public function setLinks($links)
+        {
+        }
+        /**
+         * @return LinkedAccount[]
+         */
+        public function getLinks()
+        {
+        }
+        /**
+         * The token for the retrieval of the next page of links.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\AccountsListLinksResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * The list of available links.
-     *
-     * @param LinkedAccount[] $links
-     */
-    public function setLinks($links)
-    {
-    }
-    /**
-     * @return LinkedAccount[]
-     */
-    public function getLinks()
-    {
-    }
-    /**
-     * The token for the retrieval of the next page of links.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_ShoppingContent_AccountsListLinksResponse extends \Google\Service\ShoppingContent\AccountsListLinksResponse
     {
     }
 }

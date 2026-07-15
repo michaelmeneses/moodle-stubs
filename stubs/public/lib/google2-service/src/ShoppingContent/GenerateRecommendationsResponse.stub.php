@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class GenerateRecommendationsResponse extends \Google\Collection
-{
-    protected $collection_key = 'recommendations';
-    protected $recommendationsType = Recommendation::class;
-    protected $recommendationsDataType = 'array';
-    /**
-     * Output only. Response token is a string created for each
-     * `GenerateRecommendationsResponse`. This token doesn't expire, and is
-     * globally unique. This token must be used when reporting interactions for
-     * recommendations.
-     *
-     * @var string
-     */
-    public $responseToken;
-    /**
-     * Recommendations generated for a request.
-     *
-     * @param Recommendation[] $recommendations
-     */
-    public function setRecommendations($recommendations)
+namespace Google\Service\ShoppingContent {
+    class GenerateRecommendationsResponse extends \Google\Collection
     {
+        protected $collection_key = 'recommendations';
+        protected $recommendationsType = Recommendation::class;
+        protected $recommendationsDataType = 'array';
+        /**
+         * Output only. Response token is a string created for each
+         * `GenerateRecommendationsResponse`. This token doesn't expire, and is
+         * globally unique. This token must be used when reporting interactions for
+         * recommendations.
+         *
+         * @var string
+         */
+        public $responseToken;
+        /**
+         * Recommendations generated for a request.
+         *
+         * @param Recommendation[] $recommendations
+         */
+        public function setRecommendations($recommendations)
+        {
+        }
+        /**
+         * @return Recommendation[]
+         */
+        public function getRecommendations()
+        {
+        }
+        /**
+         * Output only. Response token is a string created for each
+         * `GenerateRecommendationsResponse`. This token doesn't expire, and is
+         * globally unique. This token must be used when reporting interactions for
+         * recommendations.
+         *
+         * @param string $responseToken
+         */
+        public function setResponseToken($responseToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResponseToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Recommendation[]
+     * Runtime class alias of \Google\Service\ShoppingContent\GenerateRecommendationsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRecommendations()
-    {
-    }
-    /**
-     * Output only. Response token is a string created for each
-     * `GenerateRecommendationsResponse`. This token doesn't expire, and is
-     * globally unique. This token must be used when reporting interactions for
-     * recommendations.
-     *
-     * @param string $responseToken
-     */
-    public function setResponseToken($responseToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResponseToken()
+    class Google_Service_ShoppingContent_GenerateRecommendationsResponse extends \Google\Service\ShoppingContent\GenerateRecommendationsResponse
     {
     }
 }

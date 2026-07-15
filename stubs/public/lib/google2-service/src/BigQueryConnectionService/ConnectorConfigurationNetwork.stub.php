@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigQueryConnectionService;
-
-class ConnectorConfigurationNetwork extends \Google\Model
-{
-    protected $privateServiceConnectType = ConnectorConfigurationPrivateServiceConnect::class;
-    protected $privateServiceConnectDataType = '';
-    /**
-     * Private Service Connect networking configuration.
-     *
-     * @param ConnectorConfigurationPrivateServiceConnect $privateServiceConnect
-     */
-    public function setPrivateServiceConnect(ConnectorConfigurationPrivateServiceConnect $privateServiceConnect)
+namespace Google\Service\BigQueryConnectionService {
+    class ConnectorConfigurationNetwork extends \Google\Model
     {
+        protected $privateServiceConnectType = ConnectorConfigurationPrivateServiceConnect::class;
+        protected $privateServiceConnectDataType = '';
+        /**
+         * Private Service Connect networking configuration.
+         *
+         * @param ConnectorConfigurationPrivateServiceConnect $privateServiceConnect
+         */
+        public function setPrivateServiceConnect(ConnectorConfigurationPrivateServiceConnect $privateServiceConnect)
+        {
+        }
+        /**
+         * @return ConnectorConfigurationPrivateServiceConnect
+         */
+        public function getPrivateServiceConnect()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ConnectorConfigurationPrivateServiceConnect
+     * Runtime class alias of \Google\Service\BigQueryConnectionService\ConnectorConfigurationNetwork registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPrivateServiceConnect()
+    class Google_Service_BigQueryConnectionService_ConnectorConfigurationNetwork extends \Google\Service\BigQueryConnectionService\ConnectorConfigurationNetwork
     {
     }
 }

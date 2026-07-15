@@ -21,80 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Calendar;
-
-class EventDateTime extends \Google\Model
-{
-    /**
-     * The date, in the format "yyyy-mm-dd", if this is an all-day event.
-     *
-     * @var string
-     */
-    public $date;
-    /**
-     * The time, as a combined date-time value (formatted according to RFC3339). A
-     * time zone offset is required unless a time zone is explicitly specified in
-     * timeZone.
-     *
-     * @var string
-     */
-    public $dateTime;
-    /**
-     * The time zone in which the time is specified. (Formatted as an IANA Time
-     * Zone Database name, e.g. "Europe/Zurich".) For recurring events this field
-     * is required and specifies the time zone in which the recurrence is
-     * expanded. For single events this field is optional and indicates a custom
-     * time zone for the event start/end.
-     *
-     * @var string
-     */
-    public $timeZone;
-    /**
-     * The date, in the format "yyyy-mm-dd", if this is an all-day event.
-     *
-     * @param string $date
-     */
-    public function setDate($date)
+namespace Google\Service\Calendar {
+    class EventDateTime extends \Google\Model
     {
+        /**
+         * The date, in the format "yyyy-mm-dd", if this is an all-day event.
+         *
+         * @var string
+         */
+        public $date;
+        /**
+         * The time, as a combined date-time value (formatted according to RFC3339). A
+         * time zone offset is required unless a time zone is explicitly specified in
+         * timeZone.
+         *
+         * @var string
+         */
+        public $dateTime;
+        /**
+         * The time zone in which the time is specified. (Formatted as an IANA Time
+         * Zone Database name, e.g. "Europe/Zurich".) For recurring events this field
+         * is required and specifies the time zone in which the recurrence is
+         * expanded. For single events this field is optional and indicates a custom
+         * time zone for the event start/end.
+         *
+         * @var string
+         */
+        public $timeZone;
+        /**
+         * The date, in the format "yyyy-mm-dd", if this is an all-day event.
+         *
+         * @param string $date
+         */
+        public function setDate($date)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDate()
+        {
+        }
+        /**
+         * The time, as a combined date-time value (formatted according to RFC3339). A
+         * time zone offset is required unless a time zone is explicitly specified in
+         * timeZone.
+         *
+         * @param string $dateTime
+         */
+        public function setDateTime($dateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDateTime()
+        {
+        }
+        /**
+         * The time zone in which the time is specified. (Formatted as an IANA Time
+         * Zone Database name, e.g. "Europe/Zurich".) For recurring events this field
+         * is required and specifies the time zone in which the recurrence is
+         * expanded. For single events this field is optional and indicates a custom
+         * time zone for the event start/end.
+         *
+         * @param string $timeZone
+         */
+        public function setTimeZone($timeZone)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimeZone()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Calendar\EventDateTime registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDate()
-    {
-    }
-    /**
-     * The time, as a combined date-time value (formatted according to RFC3339). A
-     * time zone offset is required unless a time zone is explicitly specified in
-     * timeZone.
-     *
-     * @param string $dateTime
-     */
-    public function setDateTime($dateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDateTime()
-    {
-    }
-    /**
-     * The time zone in which the time is specified. (Formatted as an IANA Time
-     * Zone Database name, e.g. "Europe/Zurich".) For recurring events this field
-     * is required and specifies the time zone in which the recurrence is
-     * expanded. For single events this field is optional and indicates a custom
-     * time zone for the event start/end.
-     *
-     * @param string $timeZone
-     */
-    public function setTimeZone($timeZone)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimeZone()
+    class Google_Service_Calendar_EventDateTime extends \Google\Service\Calendar\EventDateTime
     {
     }
 }

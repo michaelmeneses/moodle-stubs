@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class CreateFootnoteRequest extends \Google\Model
-{
-    protected $endOfSegmentLocationType = EndOfSegmentLocation::class;
-    protected $endOfSegmentLocationDataType = '';
-    protected $locationType = Location::class;
-    protected $locationDataType = '';
-    /**
-     * Inserts the footnote reference at the end of the document body. Footnote
-     * references cannot be inserted inside a header, footer or footnote. Since
-     * footnote references can only be inserted in the body, the segment ID field
-     * must be empty.
-     *
-     * @param EndOfSegmentLocation $endOfSegmentLocation
-     */
-    public function setEndOfSegmentLocation(EndOfSegmentLocation $endOfSegmentLocation)
+namespace Google\Service\Docs {
+    class CreateFootnoteRequest extends \Google\Model
     {
+        protected $endOfSegmentLocationType = EndOfSegmentLocation::class;
+        protected $endOfSegmentLocationDataType = '';
+        protected $locationType = Location::class;
+        protected $locationDataType = '';
+        /**
+         * Inserts the footnote reference at the end of the document body. Footnote
+         * references cannot be inserted inside a header, footer or footnote. Since
+         * footnote references can only be inserted in the body, the segment ID field
+         * must be empty.
+         *
+         * @param EndOfSegmentLocation $endOfSegmentLocation
+         */
+        public function setEndOfSegmentLocation(EndOfSegmentLocation $endOfSegmentLocation)
+        {
+        }
+        /**
+         * @return EndOfSegmentLocation
+         */
+        public function getEndOfSegmentLocation()
+        {
+        }
+        /**
+         * Inserts the footnote reference at a specific index in the document. The
+         * footnote reference must be inserted inside the bounds of an existing
+         * Paragraph. For instance, it cannot be inserted at a table's start index
+         * (i.e. between the table and its preceding paragraph). Footnote references
+         * cannot be inserted inside an equation, header, footer or footnote. Since
+         * footnote references can only be inserted in the body, the segment ID field
+         * must be empty.
+         *
+         * @param Location $location
+         */
+        public function setLocation(Location $location)
+        {
+        }
+        /**
+         * @return Location
+         */
+        public function getLocation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EndOfSegmentLocation
+     * Runtime class alias of \Google\Service\Docs\CreateFootnoteRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndOfSegmentLocation()
-    {
-    }
-    /**
-     * Inserts the footnote reference at a specific index in the document. The
-     * footnote reference must be inserted inside the bounds of an existing
-     * Paragraph. For instance, it cannot be inserted at a table's start index
-     * (i.e. between the table and its preceding paragraph). Footnote references
-     * cannot be inserted inside an equation, header, footer or footnote. Since
-     * footnote references can only be inserted in the body, the segment ID field
-     * must be empty.
-     *
-     * @param Location $location
-     */
-    public function setLocation(Location $location)
-    {
-    }
-    /**
-     * @return Location
-     */
-    public function getLocation()
+    class Google_Service_Docs_CreateFootnoteRequest extends \Google\Service\Docs\CreateFootnoteRequest
     {
     }
 }

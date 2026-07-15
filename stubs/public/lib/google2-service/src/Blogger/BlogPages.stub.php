@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Blogger;
-
-class BlogPages extends \Google\Model
-{
-    /**
-     * The URL of the container for pages in this blog.
-     *
-     * @var string
-     */
-    public $selfLink;
-    /**
-     * The count of pages in this blog.
-     *
-     * @var int
-     */
-    public $totalItems;
-    /**
-     * The URL of the container for pages in this blog.
-     *
-     * @param string $selfLink
-     */
-    public function setSelfLink($selfLink)
+namespace Google\Service\Blogger {
+    class BlogPages extends \Google\Model
     {
+        /**
+         * The URL of the container for pages in this blog.
+         *
+         * @var string
+         */
+        public $selfLink;
+        /**
+         * The count of pages in this blog.
+         *
+         * @var int
+         */
+        public $totalItems;
+        /**
+         * The URL of the container for pages in this blog.
+         *
+         * @param string $selfLink
+         */
+        public function setSelfLink($selfLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelfLink()
+        {
+        }
+        /**
+         * The count of pages in this blog.
+         *
+         * @param int $totalItems
+         */
+        public function setTotalItems($totalItems)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalItems()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Blogger\BlogPages registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSelfLink()
-    {
-    }
-    /**
-     * The count of pages in this blog.
-     *
-     * @param int $totalItems
-     */
-    public function setTotalItems($totalItems)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalItems()
+    class Google_Service_Blogger_BlogPages extends \Google\Service\Blogger\BlogPages
     {
     }
 }

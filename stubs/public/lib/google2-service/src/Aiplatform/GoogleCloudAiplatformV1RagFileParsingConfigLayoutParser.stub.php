@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1RagFileParsingConfigLayoutParser extends \Google\Model
-{
-    /**
-     * The maximum number of requests the job is allowed to make to the Document
-     * AI processor per minute. Consult https://cloud.google.com/document-
-     * ai/quotas and the Quota page for your project to set an appropriate value
-     * here. If unspecified, a default value of 120 QPM would be used.
-     *
-     * @var int
-     */
-    public $maxParsingRequestsPerMin;
-    /**
-     * The full resource name of a Document AI processor or processor version. The
-     * processor must have type `LAYOUT_PARSER_PROCESSOR`. If specified, the
-     * `additional_config.parse_as_scanned_pdf` field must be false. Format: *
-     * `projects/{project_id}/locations/{location}/processors/{processor_id}` * `p
-     * rojects/{project_id}/locations/{location}/processors/{processor_id}/process
-     * orVersions/{processor_version_id}`
-     *
-     * @var string
-     */
-    public $processorName;
-    /**
-     * The maximum number of requests the job is allowed to make to the Document
-     * AI processor per minute. Consult https://cloud.google.com/document-
-     * ai/quotas and the Quota page for your project to set an appropriate value
-     * here. If unspecified, a default value of 120 QPM would be used.
-     *
-     * @param int $maxParsingRequestsPerMin
-     */
-    public function setMaxParsingRequestsPerMin($maxParsingRequestsPerMin)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1RagFileParsingConfigLayoutParser extends \Google\Model
     {
+        /**
+         * The maximum number of requests the job is allowed to make to the Document
+         * AI processor per minute. Consult https://cloud.google.com/document-
+         * ai/quotas and the Quota page for your project to set an appropriate value
+         * here. If unspecified, a default value of 120 QPM would be used.
+         *
+         * @var int
+         */
+        public $maxParsingRequestsPerMin;
+        /**
+         * The full resource name of a Document AI processor or processor version. The
+         * processor must have type `LAYOUT_PARSER_PROCESSOR`. If specified, the
+         * `additional_config.parse_as_scanned_pdf` field must be false. Format: *
+         * `projects/{project_id}/locations/{location}/processors/{processor_id}` * `p
+         * rojects/{project_id}/locations/{location}/processors/{processor_id}/process
+         * orVersions/{processor_version_id}`
+         *
+         * @var string
+         */
+        public $processorName;
+        /**
+         * The maximum number of requests the job is allowed to make to the Document
+         * AI processor per minute. Consult https://cloud.google.com/document-
+         * ai/quotas and the Quota page for your project to set an appropriate value
+         * here. If unspecified, a default value of 120 QPM would be used.
+         *
+         * @param int $maxParsingRequestsPerMin
+         */
+        public function setMaxParsingRequestsPerMin($maxParsingRequestsPerMin)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxParsingRequestsPerMin()
+        {
+        }
+        /**
+         * The full resource name of a Document AI processor or processor version. The
+         * processor must have type `LAYOUT_PARSER_PROCESSOR`. If specified, the
+         * `additional_config.parse_as_scanned_pdf` field must be false. Format: *
+         * `projects/{project_id}/locations/{location}/processors/{processor_id}` * `p
+         * rojects/{project_id}/locations/{location}/processors/{processor_id}/process
+         * orVersions/{processor_version_id}`
+         *
+         * @param string $processorName
+         */
+        public function setProcessorName($processorName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProcessorName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1RagFileParsingConfigLayoutParser registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaxParsingRequestsPerMin()
-    {
-    }
-    /**
-     * The full resource name of a Document AI processor or processor version. The
-     * processor must have type `LAYOUT_PARSER_PROCESSOR`. If specified, the
-     * `additional_config.parse_as_scanned_pdf` field must be false. Format: *
-     * `projects/{project_id}/locations/{location}/processors/{processor_id}` * `p
-     * rojects/{project_id}/locations/{location}/processors/{processor_id}/process
-     * orVersions/{processor_version_id}`
-     *
-     * @param string $processorName
-     */
-    public function setProcessorName($processorName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProcessorName()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1RagFileParsingConfigLayoutParser extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1RagFileParsingConfigLayoutParser
     {
     }
 }

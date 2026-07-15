@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaRecommendResponse extends \Google\Collection
-{
-    protected $collection_key = 'results';
-    /**
-     * @var string
-     */
-    public $attributionToken;
-    /**
-     * @var string[]
-     */
-    public $missingIds;
-    protected $resultsType = GoogleCloudDiscoveryengineV1betaRecommendResponseRecommendationResult::class;
-    protected $resultsDataType = 'array';
-    /**
-     * @var bool
-     */
-    public $validateOnly;
-    /**
-     * @param string
-     */
-    public function setAttributionToken($attributionToken)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaRecommendResponse extends \Google\Collection
     {
+        protected $collection_key = 'results';
+        /**
+         * @var string
+         */
+        public $attributionToken;
+        /**
+         * @var string[]
+         */
+        public $missingIds;
+        protected $resultsType = GoogleCloudDiscoveryengineV1betaRecommendResponseRecommendationResult::class;
+        protected $resultsDataType = 'array';
+        /**
+         * @var bool
+         */
+        public $validateOnly;
+        /**
+         * @param string
+         */
+        public function setAttributionToken($attributionToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAttributionToken()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setMissingIds($missingIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMissingIds()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaRecommendResponseRecommendationResult[]
+         */
+        public function setResults($results)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaRecommendResponseRecommendationResult[]
+         */
+        public function getResults()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setValidateOnly($validateOnly)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getValidateOnly()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaRecommendResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttributionToken()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setMissingIds($missingIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getMissingIds()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaRecommendResponseRecommendationResult[]
-     */
-    public function setResults($results)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaRecommendResponseRecommendationResult[]
-     */
-    public function getResults()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setValidateOnly($validateOnly)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getValidateOnly()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaRecommendResponse extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaRecommendResponse
     {
     }
 }

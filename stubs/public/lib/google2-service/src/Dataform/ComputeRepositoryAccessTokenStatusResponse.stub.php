@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataform;
-
-class ComputeRepositoryAccessTokenStatusResponse extends \Google\Model
-{
-    /**
-     * Default value. This value is unused.
-     */
-    public const TOKEN_STATUS_TOKEN_STATUS_UNSPECIFIED = 'TOKEN_STATUS_UNSPECIFIED';
-    /**
-     * The token could not be found in Secret Manager (or the Dataform Service
-     * Account did not have permission to access it).
-     */
-    public const TOKEN_STATUS_NOT_FOUND = 'NOT_FOUND';
-    /**
-     * The token could not be used to authenticate against the Git remote.
-     */
-    public const TOKEN_STATUS_INVALID = 'INVALID';
-    /**
-     * The token was used successfully to authenticate against the Git remote.
-     */
-    public const TOKEN_STATUS_VALID = 'VALID';
-    /**
-     * Indicates the status of the Git access token.
-     *
-     * @var string
-     */
-    public $tokenStatus;
-    /**
-     * Indicates the status of the Git access token.
-     *
-     * Accepted values: TOKEN_STATUS_UNSPECIFIED, NOT_FOUND, INVALID, VALID
-     *
-     * @param self::TOKEN_STATUS_* $tokenStatus
-     */
-    public function setTokenStatus($tokenStatus)
+namespace Google\Service\Dataform {
+    class ComputeRepositoryAccessTokenStatusResponse extends \Google\Model
     {
+        /**
+         * Default value. This value is unused.
+         */
+        public const TOKEN_STATUS_TOKEN_STATUS_UNSPECIFIED = 'TOKEN_STATUS_UNSPECIFIED';
+        /**
+         * The token could not be found in Secret Manager (or the Dataform Service
+         * Account did not have permission to access it).
+         */
+        public const TOKEN_STATUS_NOT_FOUND = 'NOT_FOUND';
+        /**
+         * The token could not be used to authenticate against the Git remote.
+         */
+        public const TOKEN_STATUS_INVALID = 'INVALID';
+        /**
+         * The token was used successfully to authenticate against the Git remote.
+         */
+        public const TOKEN_STATUS_VALID = 'VALID';
+        /**
+         * Indicates the status of the Git access token.
+         *
+         * @var string
+         */
+        public $tokenStatus;
+        /**
+         * Indicates the status of the Git access token.
+         *
+         * Accepted values: TOKEN_STATUS_UNSPECIFIED, NOT_FOUND, INVALID, VALID
+         *
+         * @param self::TOKEN_STATUS_* $tokenStatus
+         */
+        public function setTokenStatus($tokenStatus)
+        {
+        }
+        /**
+         * @return self::TOKEN_STATUS_*
+         */
+        public function getTokenStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::TOKEN_STATUS_*
+     * Runtime class alias of \Google\Service\Dataform\ComputeRepositoryAccessTokenStatusResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTokenStatus()
+    class Google_Service_Dataform_ComputeRepositoryAccessTokenStatusResponse extends \Google\Service\Dataform\ComputeRepositoryAccessTokenStatusResponse
     {
     }
 }

@@ -21,84 +21,96 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudTasks\Resource;
-
-/**
- * The "locations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $cloudtasksService = new Google\Service\CloudTasks(...);
- *   $locations = $cloudtasksService->projects_locations;
- *  </code>
- */
-class ProjectsLocations extends \Google\Service\Resource
-{
+namespace Google\Service\CloudTasks\Resource {
+    use Google\Service\CloudTasks\CmekConfig;
+    use Google\Service\CloudTasks\ListLocationsResponse;
+    use Google\Service\CloudTasks\Location;
     /**
-     * Gets information about a location. (locations.get)
-     *
-     * @param string $name Resource name for the location.
-     * @param array $optParams Optional parameters.
-     * @return Location
-     * @throws \Google\Service\Exception
+     * The "locations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $cloudtasksService = new Google\Service\CloudTasks(...);
+     *   $locations = $cloudtasksService->projects_locations;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class ProjectsLocations extends \Google\Service\Resource
     {
+        /**
+         * Gets information about a location. (locations.get)
+         *
+         * @param string $name Resource name for the location.
+         * @param array $optParams Optional parameters.
+         * @return Location
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets the CMEK config. Gets the Customer Managed Encryption Key configured
+         * with the Cloud Tasks lcoation. By default there is no kms_key configured.
+         * (locations.getCmekConfig)
+         *
+         * @param string $name Required. The config. For example:
+         * projects/PROJECT_ID/locations/LOCATION_ID/CmekConfig`
+         * @param array $optParams Optional parameters.
+         * @return CmekConfig
+         * @throws \Google\Service\Exception
+         */
+        public function getCmekConfig($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists information about the supported locations for this service.
+         * (locations.listProjectsLocations)
+         *
+         * @param string $name The resource that owns the locations collection, if
+         * applicable.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string extraLocationTypes Optional. Do not use this field. It is
+         * unsupported and is ignored unless explicitly documented otherwise. This is
+         * primarily for internal usage.
+         * @opt_param string filter A filter to narrow down results to a preferred
+         * subset. The filtering language accepts strings like `"displayName=tokyo"`,
+         * and is documented in more detail in [AIP-160](https://google.aip.dev/160).
+         * @opt_param int pageSize The maximum number of results to return. If not set,
+         * the service selects a default.
+         * @opt_param string pageToken A page token received from the `next_page_token`
+         * field in the response. Send that page token to receive the subsequent page.
+         * @return ListLocationsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocations($name, $optParams = [])
+        {
+        }
+        /**
+         * Creates or Updates a CMEK config. Updates the Customer Managed Encryption Key
+         * assotiated with the Cloud Tasks location (Creates if the key does not already
+         * exist). All new tasks created in the location will be encrypted at-rest with
+         * the KMS-key provided in the config. (locations.updateCmekConfig)
+         *
+         * @param string $name Output only. The config resource name which includes the
+         * project and location and must end in 'cmekConfig', in the format
+         * projects/PROJECT_ID/locations/LOCATION_ID/cmekConfig`
+         * @param CmekConfig $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask List of fields to be updated in this request.
+         * @return CmekConfig
+         * @throws \Google\Service\Exception
+         */
+        public function updateCmekConfig($name, CmekConfig $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets the CMEK config. Gets the Customer Managed Encryption Key configured
-     * with the Cloud Tasks lcoation. By default there is no kms_key configured.
-     * (locations.getCmekConfig)
-     *
-     * @param string $name Required. The config. For example:
-     * projects/PROJECT_ID/locations/LOCATION_ID/CmekConfig`
-     * @param array $optParams Optional parameters.
-     * @return CmekConfig
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\CloudTasks\Resource\ProjectsLocations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCmekConfig($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists information about the supported locations for this service.
-     * (locations.listProjectsLocations)
-     *
-     * @param string $name The resource that owns the locations collection, if
-     * applicable.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string extraLocationTypes Optional. Do not use this field. It is
-     * unsupported and is ignored unless explicitly documented otherwise. This is
-     * primarily for internal usage.
-     * @opt_param string filter A filter to narrow down results to a preferred
-     * subset. The filtering language accepts strings like `"displayName=tokyo"`,
-     * and is documented in more detail in [AIP-160](https://google.aip.dev/160).
-     * @opt_param int pageSize The maximum number of results to return. If not set,
-     * the service selects a default.
-     * @opt_param string pageToken A page token received from the `next_page_token`
-     * field in the response. Send that page token to receive the subsequent page.
-     * @return ListLocationsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocations($name, $optParams = [])
-    {
-    }
-    /**
-     * Creates or Updates a CMEK config. Updates the Customer Managed Encryption Key
-     * assotiated with the Cloud Tasks location (Creates if the key does not already
-     * exist). All new tasks created in the location will be encrypted at-rest with
-     * the KMS-key provided in the config. (locations.updateCmekConfig)
-     *
-     * @param string $name Output only. The config resource name which includes the
-     * project and location and must end in 'cmekConfig', in the format
-     * projects/PROJECT_ID/locations/LOCATION_ID/cmekConfig`
-     * @param CmekConfig $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask List of fields to be updated in this request.
-     * @return CmekConfig
-     * @throws \Google\Service\Exception
-     */
-    public function updateCmekConfig($name, CmekConfig $postBody, $optParams = [])
+    class Google_Service_CloudTasks_Resource_ProjectsLocations extends \Google\Service\CloudTasks\Resource\ProjectsLocations
     {
     }
 }

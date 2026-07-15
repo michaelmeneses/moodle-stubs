@@ -21,27 +21,36 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class VmwareMetalLbConfig extends \Google\Collection
-{
-    protected $collection_key = 'addressPools';
-    protected $addressPoolsType = VmwareAddressPool::class;
-    protected $addressPoolsDataType = 'array';
-    /**
-     * Required. AddressPools is a list of non-overlapping IP pools used by load
-     * balancer typed services. All addresses must be routable to load balancer
-     * nodes. IngressVIP must be included in the pools.
-     *
-     * @param VmwareAddressPool[] $addressPools
-     */
-    public function setAddressPools($addressPools)
+namespace Google\Service\GKEOnPrem {
+    class VmwareMetalLbConfig extends \Google\Collection
     {
+        protected $collection_key = 'addressPools';
+        protected $addressPoolsType = VmwareAddressPool::class;
+        protected $addressPoolsDataType = 'array';
+        /**
+         * Required. AddressPools is a list of non-overlapping IP pools used by load
+         * balancer typed services. All addresses must be routable to load balancer
+         * nodes. IngressVIP must be included in the pools.
+         *
+         * @param VmwareAddressPool[] $addressPools
+         */
+        public function setAddressPools($addressPools)
+        {
+        }
+        /**
+         * @return VmwareAddressPool[]
+         */
+        public function getAddressPools()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return VmwareAddressPool[]
+     * Runtime class alias of \Google\Service\GKEOnPrem\VmwareMetalLbConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddressPools()
+    class Google_Service_GKEOnPrem_VmwareMetalLbConfig extends \Google\Service\GKEOnPrem\VmwareMetalLbConfig
     {
     }
 }

@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataform;
-
-class BigQueryAction extends \Google\Model
-{
-    /**
-     * Output only. The ID of the BigQuery job that executed the SQL in
-     * sql_script. Only set once the job has started to run.
-     *
-     * @var string
-     */
-    public $jobId;
-    /**
-     * Output only. The generated BigQuery SQL script that will be executed.
-     *
-     * @var string
-     */
-    public $sqlScript;
-    /**
-     * Output only. The ID of the BigQuery job that executed the SQL in
-     * sql_script. Only set once the job has started to run.
-     *
-     * @param string $jobId
-     */
-    public function setJobId($jobId)
+namespace Google\Service\Dataform {
+    class BigQueryAction extends \Google\Model
     {
+        /**
+         * Output only. The ID of the BigQuery job that executed the SQL in
+         * sql_script. Only set once the job has started to run.
+         *
+         * @var string
+         */
+        public $jobId;
+        /**
+         * Output only. The generated BigQuery SQL script that will be executed.
+         *
+         * @var string
+         */
+        public $sqlScript;
+        /**
+         * Output only. The ID of the BigQuery job that executed the SQL in
+         * sql_script. Only set once the job has started to run.
+         *
+         * @param string $jobId
+         */
+        public function setJobId($jobId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getJobId()
+        {
+        }
+        /**
+         * Output only. The generated BigQuery SQL script that will be executed.
+         *
+         * @param string $sqlScript
+         */
+        public function setSqlScript($sqlScript)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSqlScript()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataform\BigQueryAction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getJobId()
-    {
-    }
-    /**
-     * Output only. The generated BigQuery SQL script that will be executed.
-     *
-     * @param string $sqlScript
-     */
-    public function setSqlScript($sqlScript)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSqlScript()
+    class Google_Service_Dataform_BigQueryAction extends \Google\Service\Dataform\BigQueryAction
     {
     }
 }

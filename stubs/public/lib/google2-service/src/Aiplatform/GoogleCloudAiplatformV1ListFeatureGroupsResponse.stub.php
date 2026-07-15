@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ListFeatureGroupsResponse extends \Google\Collection
-{
-    protected $collection_key = 'featureGroups';
-    protected $featureGroupsType = GoogleCloudAiplatformV1FeatureGroup::class;
-    protected $featureGroupsDataType = 'array';
-    /**
-     * A token, which can be sent as ListFeatureGroupsRequest.page_token to
-     * retrieve the next page. If this field is omitted, there are no subsequent
-     * pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The FeatureGroups matching the request.
-     *
-     * @param GoogleCloudAiplatformV1FeatureGroup[] $featureGroups
-     */
-    public function setFeatureGroups($featureGroups)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ListFeatureGroupsResponse extends \Google\Collection
     {
+        protected $collection_key = 'featureGroups';
+        protected $featureGroupsType = GoogleCloudAiplatformV1FeatureGroup::class;
+        protected $featureGroupsDataType = 'array';
+        /**
+         * A token, which can be sent as ListFeatureGroupsRequest.page_token to
+         * retrieve the next page. If this field is omitted, there are no subsequent
+         * pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The FeatureGroups matching the request.
+         *
+         * @param GoogleCloudAiplatformV1FeatureGroup[] $featureGroups
+         */
+        public function setFeatureGroups($featureGroups)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1FeatureGroup[]
+         */
+        public function getFeatureGroups()
+        {
+        }
+        /**
+         * A token, which can be sent as ListFeatureGroupsRequest.page_token to
+         * retrieve the next page. If this field is omitted, there are no subsequent
+         * pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1FeatureGroup[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListFeatureGroupsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFeatureGroups()
-    {
-    }
-    /**
-     * A token, which can be sent as ListFeatureGroupsRequest.page_token to
-     * retrieve the next page. If this field is omitted, there are no subsequent
-     * pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ListFeatureGroupsResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListFeatureGroupsResponse
     {
     }
 }

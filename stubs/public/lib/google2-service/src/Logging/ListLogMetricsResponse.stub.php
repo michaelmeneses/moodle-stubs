@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Logging;
-
-class ListLogMetricsResponse extends \Google\Collection
-{
-    protected $collection_key = 'metrics';
-    protected $metricsType = LogMetric::class;
-    protected $metricsDataType = 'array';
-    /**
-     * If there might be more results than appear in this response, then
-     * nextPageToken is included. To get the next set of results, call this method
-     * again using the value of nextPageToken as pageToken.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * A list of logs-based metrics.
-     *
-     * @param LogMetric[] $metrics
-     */
-    public function setMetrics($metrics)
+namespace Google\Service\Logging {
+    class ListLogMetricsResponse extends \Google\Collection
     {
+        protected $collection_key = 'metrics';
+        protected $metricsType = LogMetric::class;
+        protected $metricsDataType = 'array';
+        /**
+         * If there might be more results than appear in this response, then
+         * nextPageToken is included. To get the next set of results, call this method
+         * again using the value of nextPageToken as pageToken.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * A list of logs-based metrics.
+         *
+         * @param LogMetric[] $metrics
+         */
+        public function setMetrics($metrics)
+        {
+        }
+        /**
+         * @return LogMetric[]
+         */
+        public function getMetrics()
+        {
+        }
+        /**
+         * If there might be more results than appear in this response, then
+         * nextPageToken is included. To get the next set of results, call this method
+         * again using the value of nextPageToken as pageToken.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LogMetric[]
+     * Runtime class alias of \Google\Service\Logging\ListLogMetricsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetrics()
-    {
-    }
-    /**
-     * If there might be more results than appear in this response, then
-     * nextPageToken is included. To get the next set of results, call this method
-     * again using the value of nextPageToken as pageToken.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Logging_ListLogMetricsResponse extends \Google\Service\Logging\ListLogMetricsResponse
     {
     }
 }

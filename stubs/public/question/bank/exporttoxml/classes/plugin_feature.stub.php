@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qbank_exporttoxml;
 
+use core_question\local\bank\plugin_features_base;
 /**
  * Class plugin_feature is the entrypoint for the columns.
  *

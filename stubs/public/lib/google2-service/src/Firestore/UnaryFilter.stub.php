@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class UnaryFilter extends \Google\Model
-{
-    /**
-     * Unspecified. This value must not be used.
-     */
-    public const OP_OPERATOR_UNSPECIFIED = 'OPERATOR_UNSPECIFIED';
-    /**
-     * The given `field` is equal to `NaN`.
-     */
-    public const OP_IS_NAN = 'IS_NAN';
-    /**
-     * The given `field` is equal to `NULL`.
-     */
-    public const OP_IS_NULL = 'IS_NULL';
-    /**
-     * The given `field` is not equal to `NaN`. Requires: * No other `NOT_EQUAL`,
-     * `NOT_IN`, `IS_NOT_NULL`, or `IS_NOT_NAN`. * That `field` comes first in the
-     * `order_by`.
-     */
-    public const OP_IS_NOT_NAN = 'IS_NOT_NAN';
-    /**
-     * The given `field` is not equal to `NULL`. Requires: * A single `NOT_EQUAL`,
-     * `NOT_IN`, `IS_NOT_NULL`, or `IS_NOT_NAN`. * That `field` comes first in the
-     * `order_by`.
-     */
-    public const OP_IS_NOT_NULL = 'IS_NOT_NULL';
-    protected $fieldType = FieldReference::class;
-    protected $fieldDataType = '';
-    /**
-     * The unary operator to apply.
-     *
-     * @var string
-     */
-    public $op;
-    /**
-     * The field to which to apply the operator.
-     *
-     * @param FieldReference $field
-     */
-    public function setField(FieldReference $field)
+namespace Google\Service\Firestore {
+    class UnaryFilter extends \Google\Model
     {
+        /**
+         * Unspecified. This value must not be used.
+         */
+        public const OP_OPERATOR_UNSPECIFIED = 'OPERATOR_UNSPECIFIED';
+        /**
+         * The given `field` is equal to `NaN`.
+         */
+        public const OP_IS_NAN = 'IS_NAN';
+        /**
+         * The given `field` is equal to `NULL`.
+         */
+        public const OP_IS_NULL = 'IS_NULL';
+        /**
+         * The given `field` is not equal to `NaN`. Requires: * No other `NOT_EQUAL`,
+         * `NOT_IN`, `IS_NOT_NULL`, or `IS_NOT_NAN`. * That `field` comes first in the
+         * `order_by`.
+         */
+        public const OP_IS_NOT_NAN = 'IS_NOT_NAN';
+        /**
+         * The given `field` is not equal to `NULL`. Requires: * A single `NOT_EQUAL`,
+         * `NOT_IN`, `IS_NOT_NULL`, or `IS_NOT_NAN`. * That `field` comes first in the
+         * `order_by`.
+         */
+        public const OP_IS_NOT_NULL = 'IS_NOT_NULL';
+        protected $fieldType = FieldReference::class;
+        protected $fieldDataType = '';
+        /**
+         * The unary operator to apply.
+         *
+         * @var string
+         */
+        public $op;
+        /**
+         * The field to which to apply the operator.
+         *
+         * @param FieldReference $field
+         */
+        public function setField(FieldReference $field)
+        {
+        }
+        /**
+         * @return FieldReference
+         */
+        public function getField()
+        {
+        }
+        /**
+         * The unary operator to apply.
+         *
+         * Accepted values: OPERATOR_UNSPECIFIED, IS_NAN, IS_NULL, IS_NOT_NAN,
+         * IS_NOT_NULL
+         *
+         * @param self::OP_* $op
+         */
+        public function setOp($op)
+        {
+        }
+        /**
+         * @return self::OP_*
+         */
+        public function getOp()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FieldReference
+     * Runtime class alias of \Google\Service\Firestore\UnaryFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getField()
-    {
-    }
-    /**
-     * The unary operator to apply.
-     *
-     * Accepted values: OPERATOR_UNSPECIFIED, IS_NAN, IS_NULL, IS_NOT_NAN,
-     * IS_NOT_NULL
-     *
-     * @param self::OP_* $op
-     */
-    public function setOp($op)
-    {
-    }
-    /**
-     * @return self::OP_*
-     */
-    public function getOp()
+    class Google_Service_Firestore_UnaryFilter extends \Google\Service\Firestore\UnaryFilter
     {
     }
 }

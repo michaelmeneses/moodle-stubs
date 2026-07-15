@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessBusinessInformation;
-
-class MoreHoursType extends \Google\Model
-{
-    /**
-     * Output only. The human-readable English display name for the hours type.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Output only. A stable ID provided by Google for this hours type.
-     *
-     * @var string
-     */
-    public $hoursTypeId;
-    /**
-     * Output only. The human-readable localized display name for the hours type.
-     *
-     * @var string
-     */
-    public $localizedDisplayName;
-    /**
-     * Output only. The human-readable English display name for the hours type.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\MyBusinessBusinessInformation {
+    class MoreHoursType extends \Google\Model
     {
+        /**
+         * Output only. The human-readable English display name for the hours type.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Output only. A stable ID provided by Google for this hours type.
+         *
+         * @var string
+         */
+        public $hoursTypeId;
+        /**
+         * Output only. The human-readable localized display name for the hours type.
+         *
+         * @var string
+         */
+        public $localizedDisplayName;
+        /**
+         * Output only. The human-readable English display name for the hours type.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Output only. A stable ID provided by Google for this hours type.
+         *
+         * @param string $hoursTypeId
+         */
+        public function setHoursTypeId($hoursTypeId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHoursTypeId()
+        {
+        }
+        /**
+         * Output only. The human-readable localized display name for the hours type.
+         *
+         * @param string $localizedDisplayName
+         */
+        public function setLocalizedDisplayName($localizedDisplayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocalizedDisplayName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MyBusinessBusinessInformation\MoreHoursType registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Output only. A stable ID provided by Google for this hours type.
-     *
-     * @param string $hoursTypeId
-     */
-    public function setHoursTypeId($hoursTypeId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHoursTypeId()
-    {
-    }
-    /**
-     * Output only. The human-readable localized display name for the hours type.
-     *
-     * @param string $localizedDisplayName
-     */
-    public function setLocalizedDisplayName($localizedDisplayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocalizedDisplayName()
+    class Google_Service_MyBusinessBusinessInformation_MoreHoursType extends \Google\Service\MyBusinessBusinessInformation\MoreHoursType
     {
     }
 }

@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InterconnectRemoteLocationConstraintsSubnetLengthRange extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $max;
-    /**
-     * @var int
-     */
-    public $min;
-    /**
-     * @param int $max
-     */
-    public function setMax($max)
+namespace Google\Service\Compute {
+    class InterconnectRemoteLocationConstraintsSubnetLengthRange extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $max;
+        /**
+         * @var int
+         */
+        public $min;
+        /**
+         * @param int $max
+         */
+        public function setMax($max)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMax()
+        {
+        }
+        /**
+         * @param int $min
+         */
+        public function setMin($min)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMin()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Compute\InterconnectRemoteLocationConstraintsSubnetLengthRange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMax()
-    {
-    }
-    /**
-     * @param int $min
-     */
-    public function setMin($min)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMin()
+    class Google_Service_Compute_InterconnectRemoteLocationConstraintsSubnetLengthRange extends \Google\Service\Compute\InterconnectRemoteLocationConstraintsSubnetLengthRange
     {
     }
 }

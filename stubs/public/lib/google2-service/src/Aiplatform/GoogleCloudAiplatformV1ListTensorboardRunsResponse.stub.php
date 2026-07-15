@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ListTensorboardRunsResponse extends \Google\Collection
-{
-    protected $collection_key = 'tensorboardRuns';
-    /**
-     * A token, which can be sent as ListTensorboardRunsRequest.page_token to
-     * retrieve the next page. If this field is omitted, there are no subsequent
-     * pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $tensorboardRunsType = GoogleCloudAiplatformV1TensorboardRun::class;
-    protected $tensorboardRunsDataType = 'array';
-    /**
-     * A token, which can be sent as ListTensorboardRunsRequest.page_token to
-     * retrieve the next page. If this field is omitted, there are no subsequent
-     * pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ListTensorboardRunsResponse extends \Google\Collection
     {
+        protected $collection_key = 'tensorboardRuns';
+        /**
+         * A token, which can be sent as ListTensorboardRunsRequest.page_token to
+         * retrieve the next page. If this field is omitted, there are no subsequent
+         * pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $tensorboardRunsType = GoogleCloudAiplatformV1TensorboardRun::class;
+        protected $tensorboardRunsDataType = 'array';
+        /**
+         * A token, which can be sent as ListTensorboardRunsRequest.page_token to
+         * retrieve the next page. If this field is omitted, there are no subsequent
+         * pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The TensorboardRuns mathching the request.
+         *
+         * @param GoogleCloudAiplatformV1TensorboardRun[] $tensorboardRuns
+         */
+        public function setTensorboardRuns($tensorboardRuns)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1TensorboardRun[]
+         */
+        public function getTensorboardRuns()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListTensorboardRunsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The TensorboardRuns mathching the request.
-     *
-     * @param GoogleCloudAiplatformV1TensorboardRun[] $tensorboardRuns
-     */
-    public function setTensorboardRuns($tensorboardRuns)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1TensorboardRun[]
-     */
-    public function getTensorboardRuns()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ListTensorboardRunsResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListTensorboardRunsResponse
     {
     }
 }

@@ -21,85 +21,94 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChecksService;
-
-class GoogleChecksRepoScanV1alphaScmMetadata extends \Google\Model
-{
-    /**
-     * Required. Branch name.
-     *
-     * @var string
-     */
-    public $branch;
-    protected $pullRequestType = GoogleChecksRepoScanV1alphaPullRequest::class;
-    protected $pullRequestDataType = '';
-    /**
-     * Required. Git remote URL.
-     *
-     * @var string
-     */
-    public $remoteUri;
-    /**
-     * Required. Revision ID, e.g. Git commit hash.
-     *
-     * @var string
-     */
-    public $revisionId;
-    /**
-     * Required. Branch name.
-     *
-     * @param string $branch
-     */
-    public function setBranch($branch)
+namespace Google\Service\ChecksService {
+    class GoogleChecksRepoScanV1alphaScmMetadata extends \Google\Model
     {
+        /**
+         * Required. Branch name.
+         *
+         * @var string
+         */
+        public $branch;
+        protected $pullRequestType = GoogleChecksRepoScanV1alphaPullRequest::class;
+        protected $pullRequestDataType = '';
+        /**
+         * Required. Git remote URL.
+         *
+         * @var string
+         */
+        public $remoteUri;
+        /**
+         * Required. Revision ID, e.g. Git commit hash.
+         *
+         * @var string
+         */
+        public $revisionId;
+        /**
+         * Required. Branch name.
+         *
+         * @param string $branch
+         */
+        public function setBranch($branch)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBranch()
+        {
+        }
+        /**
+         * Optional. Contains info about the associated pull request. This is only
+         * populated for pull request scans.
+         *
+         * @param GoogleChecksRepoScanV1alphaPullRequest $pullRequest
+         */
+        public function setPullRequest(GoogleChecksRepoScanV1alphaPullRequest $pullRequest)
+        {
+        }
+        /**
+         * @return GoogleChecksRepoScanV1alphaPullRequest
+         */
+        public function getPullRequest()
+        {
+        }
+        /**
+         * Required. Git remote URL.
+         *
+         * @param string $remoteUri
+         */
+        public function setRemoteUri($remoteUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRemoteUri()
+        {
+        }
+        /**
+         * Required. Revision ID, e.g. Git commit hash.
+         *
+         * @param string $revisionId
+         */
+        public function setRevisionId($revisionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRevisionId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChecksService\GoogleChecksRepoScanV1alphaScmMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBranch()
-    {
-    }
-    /**
-     * Optional. Contains info about the associated pull request. This is only
-     * populated for pull request scans.
-     *
-     * @param GoogleChecksRepoScanV1alphaPullRequest $pullRequest
-     */
-    public function setPullRequest(GoogleChecksRepoScanV1alphaPullRequest $pullRequest)
-    {
-    }
-    /**
-     * @return GoogleChecksRepoScanV1alphaPullRequest
-     */
-    public function getPullRequest()
-    {
-    }
-    /**
-     * Required. Git remote URL.
-     *
-     * @param string $remoteUri
-     */
-    public function setRemoteUri($remoteUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRemoteUri()
-    {
-    }
-    /**
-     * Required. Revision ID, e.g. Git commit hash.
-     *
-     * @param string $revisionId
-     */
-    public function setRevisionId($revisionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRevisionId()
+    class Google_Service_ChecksService_GoogleChecksRepoScanV1alphaScmMetadata extends \Google\Service\ChecksService\GoogleChecksRepoScanV1alphaScmMetadata
     {
     }
 }

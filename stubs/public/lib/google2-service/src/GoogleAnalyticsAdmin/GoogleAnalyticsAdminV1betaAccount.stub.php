@@ -21,156 +21,165 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1betaAccount extends \Google\Model
-{
-    /**
-     * Output only. Time when this account was originally created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Output only. Indicates whether this Account is soft-deleted or not. Deleted
-     * accounts are excluded from List results unless specifically requested.
-     *
-     * @var bool
-     */
-    public $deleted;
-    /**
-     * Required. Human-readable display name for this account.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Output only. The URI for a Google Marketing Platform organization resource.
-     * Only set when this account is connected to a GMP organization. Format:
-     * marketingplatformadmin.googleapis.com/organizations/{org_id}
-     *
-     * @var string
-     */
-    public $gmpOrganization;
-    /**
-     * Output only. Resource name of this account. Format: accounts/{account}
-     * Example: "accounts/100"
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Country of business. Must be a Unicode CLDR region code.
-     *
-     * @var string
-     */
-    public $regionCode;
-    /**
-     * Output only. Time when account payload fields were last updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. Time when this account was originally created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1betaAccount extends \Google\Model
     {
+        /**
+         * Output only. Time when this account was originally created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Output only. Indicates whether this Account is soft-deleted or not. Deleted
+         * accounts are excluded from List results unless specifically requested.
+         *
+         * @var bool
+         */
+        public $deleted;
+        /**
+         * Required. Human-readable display name for this account.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Output only. The URI for a Google Marketing Platform organization resource.
+         * Only set when this account is connected to a GMP organization. Format:
+         * marketingplatformadmin.googleapis.com/organizations/{org_id}
+         *
+         * @var string
+         */
+        public $gmpOrganization;
+        /**
+         * Output only. Resource name of this account. Format: accounts/{account}
+         * Example: "accounts/100"
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Country of business. Must be a Unicode CLDR region code.
+         *
+         * @var string
+         */
+        public $regionCode;
+        /**
+         * Output only. Time when account payload fields were last updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. Time when this account was originally created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. Indicates whether this Account is soft-deleted or not. Deleted
+         * accounts are excluded from List results unless specifically requested.
+         *
+         * @param bool $deleted
+         */
+        public function setDeleted($deleted)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDeleted()
+        {
+        }
+        /**
+         * Required. Human-readable display name for this account.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Output only. The URI for a Google Marketing Platform organization resource.
+         * Only set when this account is connected to a GMP organization. Format:
+         * marketingplatformadmin.googleapis.com/organizations/{org_id}
+         *
+         * @param string $gmpOrganization
+         */
+        public function setGmpOrganization($gmpOrganization)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGmpOrganization()
+        {
+        }
+        /**
+         * Output only. Resource name of this account. Format: accounts/{account}
+         * Example: "accounts/100"
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Country of business. Must be a Unicode CLDR region code.
+         *
+         * @param string $regionCode
+         */
+        public function setRegionCode($regionCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegionCode()
+        {
+        }
+        /**
+         * Output only. Time when account payload fields were last updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaAccount registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. Indicates whether this Account is soft-deleted or not. Deleted
-     * accounts are excluded from List results unless specifically requested.
-     *
-     * @param bool $deleted
-     */
-    public function setDeleted($deleted)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDeleted()
-    {
-    }
-    /**
-     * Required. Human-readable display name for this account.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Output only. The URI for a Google Marketing Platform organization resource.
-     * Only set when this account is connected to a GMP organization. Format:
-     * marketingplatformadmin.googleapis.com/organizations/{org_id}
-     *
-     * @param string $gmpOrganization
-     */
-    public function setGmpOrganization($gmpOrganization)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGmpOrganization()
-    {
-    }
-    /**
-     * Output only. Resource name of this account. Format: accounts/{account}
-     * Example: "accounts/100"
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Country of business. Must be a Unicode CLDR region code.
-     *
-     * @param string $regionCode
-     */
-    public function setRegionCode($regionCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegionCode()
-    {
-    }
-    /**
-     * Output only. Time when account payload fields were last updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1betaAccount extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaAccount
     {
     }
 }

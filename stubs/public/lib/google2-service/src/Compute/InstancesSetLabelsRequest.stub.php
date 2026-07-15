@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InstancesSetLabelsRequest extends \Google\Model
-{
-    /**
-     * Fingerprint of the previous set of labels for this resource, used to
-     * prevent conflicts. Provide the latest fingerprint value when making a
-     * request to add or change labels.
-     *
-     * @var string
-     */
-    public $labelFingerprint;
-    /**
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Fingerprint of the previous set of labels for this resource, used to
-     * prevent conflicts. Provide the latest fingerprint value when making a
-     * request to add or change labels.
-     *
-     * @param string $labelFingerprint
-     */
-    public function setLabelFingerprint($labelFingerprint)
+namespace Google\Service\Compute {
+    class InstancesSetLabelsRequest extends \Google\Model
     {
+        /**
+         * Fingerprint of the previous set of labels for this resource, used to
+         * prevent conflicts. Provide the latest fingerprint value when making a
+         * request to add or change labels.
+         *
+         * @var string
+         */
+        public $labelFingerprint;
+        /**
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Fingerprint of the previous set of labels for this resource, used to
+         * prevent conflicts. Provide the latest fingerprint value when making a
+         * request to add or change labels.
+         *
+         * @param string $labelFingerprint
+         */
+        public function setLabelFingerprint($labelFingerprint)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLabelFingerprint()
+        {
+        }
+        /**
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\InstancesSetLabelsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLabelFingerprint()
-    {
-    }
-    /**
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
+    class Google_Service_Compute_InstancesSetLabelsRequest extends \Google\Service\Compute\InstancesSetLabelsRequest
     {
     }
 }

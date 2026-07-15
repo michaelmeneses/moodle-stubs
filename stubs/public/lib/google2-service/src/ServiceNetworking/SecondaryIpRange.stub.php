@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceNetworking;
-
-class SecondaryIpRange extends \Google\Model
-{
-    /**
-     * Secondary IP CIDR range in `x.x.x.x/y` format.
-     *
-     * @var string
-     */
-    public $ipCidrRange;
-    /**
-     * Name of the secondary IP range.
-     *
-     * @var string
-     */
-    public $rangeName;
-    /**
-     * Secondary IP CIDR range in `x.x.x.x/y` format.
-     *
-     * @param string $ipCidrRange
-     */
-    public function setIpCidrRange($ipCidrRange)
+namespace Google\Service\ServiceNetworking {
+    class SecondaryIpRange extends \Google\Model
     {
+        /**
+         * Secondary IP CIDR range in `x.x.x.x/y` format.
+         *
+         * @var string
+         */
+        public $ipCidrRange;
+        /**
+         * Name of the secondary IP range.
+         *
+         * @var string
+         */
+        public $rangeName;
+        /**
+         * Secondary IP CIDR range in `x.x.x.x/y` format.
+         *
+         * @param string $ipCidrRange
+         */
+        public function setIpCidrRange($ipCidrRange)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIpCidrRange()
+        {
+        }
+        /**
+         * Name of the secondary IP range.
+         *
+         * @param string $rangeName
+         */
+        public function setRangeName($rangeName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRangeName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ServiceNetworking\SecondaryIpRange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIpCidrRange()
-    {
-    }
-    /**
-     * Name of the secondary IP range.
-     *
-     * @param string $rangeName
-     */
-    public function setRangeName($rangeName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRangeName()
+    class Google_Service_ServiceNetworking_SecondaryIpRange extends \Google\Service\ServiceNetworking\SecondaryIpRange
     {
     }
 }

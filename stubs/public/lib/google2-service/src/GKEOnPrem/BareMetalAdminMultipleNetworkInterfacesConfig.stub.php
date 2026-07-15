@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class BareMetalAdminMultipleNetworkInterfacesConfig extends \Google\Model
-{
-    /**
-     * Whether to enable multiple network interfaces for your pods. When set
-     * network_config.advanced_networking is automatically set to true.
-     *
-     * @var bool
-     */
-    public $enabled;
-    /**
-     * Whether to enable multiple network interfaces for your pods. When set
-     * network_config.advanced_networking is automatically set to true.
-     *
-     * @param bool $enabled
-     */
-    public function setEnabled($enabled)
+namespace Google\Service\GKEOnPrem {
+    class BareMetalAdminMultipleNetworkInterfacesConfig extends \Google\Model
     {
+        /**
+         * Whether to enable multiple network interfaces for your pods. When set
+         * network_config.advanced_networking is automatically set to true.
+         *
+         * @var bool
+         */
+        public $enabled;
+        /**
+         * Whether to enable multiple network interfaces for your pods. When set
+         * network_config.advanced_networking is automatically set to true.
+         *
+         * @param bool $enabled
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\GKEOnPrem\BareMetalAdminMultipleNetworkInterfacesConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnabled()
+    class Google_Service_GKEOnPrem_BareMetalAdminMultipleNetworkInterfacesConfig extends \Google\Service\GKEOnPrem\BareMetalAdminMultipleNetworkInterfacesConfig
     {
     }
 }

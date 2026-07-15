@@ -21,201 +21,210 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1DebugMask extends \Google\Collection
-{
-    protected $collection_key = 'variables';
-    /**
-     * List of JSON paths that specify the JSON elements to be filtered from JSON
-     * payloads in error flows.
-     *
-     * @var string[]
-     */
-    public $faultJSONPaths;
-    /**
-     * List of XPaths that specify the XML elements to be filtered from XML
-     * payloads in error flows.
-     *
-     * @var string[]
-     */
-    public $faultXPaths;
-    /**
-     * Name of the debug mask.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Map of namespaces to URIs.
-     *
-     * @var string[]
-     */
-    public $namespaces;
-    /**
-     * List of JSON paths that specify the JSON elements to be filtered from JSON
-     * request message payloads.
-     *
-     * @var string[]
-     */
-    public $requestJSONPaths;
-    /**
-     * List of XPaths that specify the XML elements to be filtered from XML
-     * request message payloads.
-     *
-     * @var string[]
-     */
-    public $requestXPaths;
-    /**
-     * List of JSON paths that specify the JSON elements to be filtered from JSON
-     * response message payloads.
-     *
-     * @var string[]
-     */
-    public $responseJSONPaths;
-    /**
-     * List of XPaths that specify the XML elements to be filtered from XML
-     * response message payloads.
-     *
-     * @var string[]
-     */
-    public $responseXPaths;
-    /**
-     * List of variables that should be masked from the debug output.
-     *
-     * @var string[]
-     */
-    public $variables;
-    /**
-     * List of JSON paths that specify the JSON elements to be filtered from JSON
-     * payloads in error flows.
-     *
-     * @param string[] $faultJSONPaths
-     */
-    public function setFaultJSONPaths($faultJSONPaths)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1DebugMask extends \Google\Collection
     {
+        protected $collection_key = 'variables';
+        /**
+         * List of JSON paths that specify the JSON elements to be filtered from JSON
+         * payloads in error flows.
+         *
+         * @var string[]
+         */
+        public $faultJSONPaths;
+        /**
+         * List of XPaths that specify the XML elements to be filtered from XML
+         * payloads in error flows.
+         *
+         * @var string[]
+         */
+        public $faultXPaths;
+        /**
+         * Name of the debug mask.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Map of namespaces to URIs.
+         *
+         * @var string[]
+         */
+        public $namespaces;
+        /**
+         * List of JSON paths that specify the JSON elements to be filtered from JSON
+         * request message payloads.
+         *
+         * @var string[]
+         */
+        public $requestJSONPaths;
+        /**
+         * List of XPaths that specify the XML elements to be filtered from XML
+         * request message payloads.
+         *
+         * @var string[]
+         */
+        public $requestXPaths;
+        /**
+         * List of JSON paths that specify the JSON elements to be filtered from JSON
+         * response message payloads.
+         *
+         * @var string[]
+         */
+        public $responseJSONPaths;
+        /**
+         * List of XPaths that specify the XML elements to be filtered from XML
+         * response message payloads.
+         *
+         * @var string[]
+         */
+        public $responseXPaths;
+        /**
+         * List of variables that should be masked from the debug output.
+         *
+         * @var string[]
+         */
+        public $variables;
+        /**
+         * List of JSON paths that specify the JSON elements to be filtered from JSON
+         * payloads in error flows.
+         *
+         * @param string[] $faultJSONPaths
+         */
+        public function setFaultJSONPaths($faultJSONPaths)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getFaultJSONPaths()
+        {
+        }
+        /**
+         * List of XPaths that specify the XML elements to be filtered from XML
+         * payloads in error flows.
+         *
+         * @param string[] $faultXPaths
+         */
+        public function setFaultXPaths($faultXPaths)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getFaultXPaths()
+        {
+        }
+        /**
+         * Name of the debug mask.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Map of namespaces to URIs.
+         *
+         * @param string[] $namespaces
+         */
+        public function setNamespaces($namespaces)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getNamespaces()
+        {
+        }
+        /**
+         * List of JSON paths that specify the JSON elements to be filtered from JSON
+         * request message payloads.
+         *
+         * @param string[] $requestJSONPaths
+         */
+        public function setRequestJSONPaths($requestJSONPaths)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRequestJSONPaths()
+        {
+        }
+        /**
+         * List of XPaths that specify the XML elements to be filtered from XML
+         * request message payloads.
+         *
+         * @param string[] $requestXPaths
+         */
+        public function setRequestXPaths($requestXPaths)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRequestXPaths()
+        {
+        }
+        /**
+         * List of JSON paths that specify the JSON elements to be filtered from JSON
+         * response message payloads.
+         *
+         * @param string[] $responseJSONPaths
+         */
+        public function setResponseJSONPaths($responseJSONPaths)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getResponseJSONPaths()
+        {
+        }
+        /**
+         * List of XPaths that specify the XML elements to be filtered from XML
+         * response message payloads.
+         *
+         * @param string[] $responseXPaths
+         */
+        public function setResponseXPaths($responseXPaths)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getResponseXPaths()
+        {
+        }
+        /**
+         * List of variables that should be masked from the debug output.
+         *
+         * @param string[] $variables
+         */
+        public function setVariables($variables)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getVariables()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1DebugMask registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFaultJSONPaths()
-    {
-    }
-    /**
-     * List of XPaths that specify the XML elements to be filtered from XML
-     * payloads in error flows.
-     *
-     * @param string[] $faultXPaths
-     */
-    public function setFaultXPaths($faultXPaths)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getFaultXPaths()
-    {
-    }
-    /**
-     * Name of the debug mask.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Map of namespaces to URIs.
-     *
-     * @param string[] $namespaces
-     */
-    public function setNamespaces($namespaces)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getNamespaces()
-    {
-    }
-    /**
-     * List of JSON paths that specify the JSON elements to be filtered from JSON
-     * request message payloads.
-     *
-     * @param string[] $requestJSONPaths
-     */
-    public function setRequestJSONPaths($requestJSONPaths)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRequestJSONPaths()
-    {
-    }
-    /**
-     * List of XPaths that specify the XML elements to be filtered from XML
-     * request message payloads.
-     *
-     * @param string[] $requestXPaths
-     */
-    public function setRequestXPaths($requestXPaths)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRequestXPaths()
-    {
-    }
-    /**
-     * List of JSON paths that specify the JSON elements to be filtered from JSON
-     * response message payloads.
-     *
-     * @param string[] $responseJSONPaths
-     */
-    public function setResponseJSONPaths($responseJSONPaths)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getResponseJSONPaths()
-    {
-    }
-    /**
-     * List of XPaths that specify the XML elements to be filtered from XML
-     * response message payloads.
-     *
-     * @param string[] $responseXPaths
-     */
-    public function setResponseXPaths($responseXPaths)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getResponseXPaths()
-    {
-    }
-    /**
-     * List of variables that should be masked from the debug output.
-     *
-     * @param string[] $variables
-     */
-    public function setVariables($variables)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getVariables()
+    class Google_Service_Apigee_GoogleCloudApigeeV1DebugMask extends \Google\Service\Apigee\GoogleCloudApigeeV1DebugMask
     {
     }
 }

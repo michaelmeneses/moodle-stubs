@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveLabels;
-
-class GoogleAppsDriveLabelsV2LifecycleDisabledPolicy extends \Google\Model
-{
-    /**
-     * Whether to hide this disabled object in the search menu for Drive items. *
-     * When `false`, the object is generally shown in the UI as disabled but it
-     * appears in the search results when searching for Drive items. * When
-     * `true`, the object is generally hidden in the UI when searching for Drive
-     * items.
-     *
-     * @var bool
-     */
-    public $hideInSearch;
-    /**
-     * Whether to show this disabled object in the apply menu on Drive items. *
-     * When `true`, the object is generally shown in the UI as disabled and is
-     * unselectable. * When `false`, the object is generally hidden in the UI.
-     *
-     * @var bool
-     */
-    public $showInApply;
-    /**
-     * Whether to hide this disabled object in the search menu for Drive items. *
-     * When `false`, the object is generally shown in the UI as disabled but it
-     * appears in the search results when searching for Drive items. * When
-     * `true`, the object is generally hidden in the UI when searching for Drive
-     * items.
-     *
-     * @param bool $hideInSearch
-     */
-    public function setHideInSearch($hideInSearch)
+namespace Google\Service\DriveLabels {
+    class GoogleAppsDriveLabelsV2LifecycleDisabledPolicy extends \Google\Model
     {
+        /**
+         * Whether to hide this disabled object in the search menu for Drive items. *
+         * When `false`, the object is generally shown in the UI as disabled but it
+         * appears in the search results when searching for Drive items. * When
+         * `true`, the object is generally hidden in the UI when searching for Drive
+         * items.
+         *
+         * @var bool
+         */
+        public $hideInSearch;
+        /**
+         * Whether to show this disabled object in the apply menu on Drive items. *
+         * When `true`, the object is generally shown in the UI as disabled and is
+         * unselectable. * When `false`, the object is generally hidden in the UI.
+         *
+         * @var bool
+         */
+        public $showInApply;
+        /**
+         * Whether to hide this disabled object in the search menu for Drive items. *
+         * When `false`, the object is generally shown in the UI as disabled but it
+         * appears in the search results when searching for Drive items. * When
+         * `true`, the object is generally hidden in the UI when searching for Drive
+         * items.
+         *
+         * @param bool $hideInSearch
+         */
+        public function setHideInSearch($hideInSearch)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getHideInSearch()
+        {
+        }
+        /**
+         * Whether to show this disabled object in the apply menu on Drive items. *
+         * When `true`, the object is generally shown in the UI as disabled and is
+         * unselectable. * When `false`, the object is generally hidden in the UI.
+         *
+         * @param bool $showInApply
+         */
+        public function setShowInApply($showInApply)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getShowInApply()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2LifecycleDisabledPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHideInSearch()
-    {
-    }
-    /**
-     * Whether to show this disabled object in the apply menu on Drive items. *
-     * When `true`, the object is generally shown in the UI as disabled and is
-     * unselectable. * When `false`, the object is generally hidden in the UI.
-     *
-     * @param bool $showInApply
-     */
-    public function setShowInApply($showInApply)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getShowInApply()
+    class Google_Service_DriveLabels_GoogleAppsDriveLabelsV2LifecycleDisabledPolicy extends \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2LifecycleDisabledPolicy
     {
     }
 }

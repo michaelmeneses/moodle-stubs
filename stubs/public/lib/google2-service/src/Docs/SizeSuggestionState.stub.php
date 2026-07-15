@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class SizeSuggestionState extends \Google\Model
-{
-    /**
-     * Indicates if there was a suggested change to height.
-     *
-     * @var bool
-     */
-    public $heightSuggested;
-    /**
-     * Indicates if there was a suggested change to width.
-     *
-     * @var bool
-     */
-    public $widthSuggested;
-    /**
-     * Indicates if there was a suggested change to height.
-     *
-     * @param bool $heightSuggested
-     */
-    public function setHeightSuggested($heightSuggested)
+namespace Google\Service\Docs {
+    class SizeSuggestionState extends \Google\Model
     {
+        /**
+         * Indicates if there was a suggested change to height.
+         *
+         * @var bool
+         */
+        public $heightSuggested;
+        /**
+         * Indicates if there was a suggested change to width.
+         *
+         * @var bool
+         */
+        public $widthSuggested;
+        /**
+         * Indicates if there was a suggested change to height.
+         *
+         * @param bool $heightSuggested
+         */
+        public function setHeightSuggested($heightSuggested)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getHeightSuggested()
+        {
+        }
+        /**
+         * Indicates if there was a suggested change to width.
+         *
+         * @param bool $widthSuggested
+         */
+        public function setWidthSuggested($widthSuggested)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getWidthSuggested()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Docs\SizeSuggestionState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHeightSuggested()
-    {
-    }
-    /**
-     * Indicates if there was a suggested change to width.
-     *
-     * @param bool $widthSuggested
-     */
-    public function setWidthSuggested($widthSuggested)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getWidthSuggested()
+    class Google_Service_Docs_SizeSuggestionState extends \Google\Service\Docs\SizeSuggestionState
     {
     }
 }

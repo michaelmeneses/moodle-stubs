@@ -21,37 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class QueryList extends \Google\Collection
-{
-    protected $collection_key = 'queries';
-    /**
-     * Required. The queries to execute. You do not need to end a query expression
-     * with a semicolon. Multiple queries can be specified in one string by
-     * separating each with a semicolon. Here is an example of a Dataproc API
-     * snippet that uses a QueryList to specify a HiveJob: "hiveJob": {
-     * "queryList": { "queries": [ "query1", "query2", "query3;query4", ] } }
-     *
-     * @var string[]
-     */
-    public $queries;
-    /**
-     * Required. The queries to execute. You do not need to end a query expression
-     * with a semicolon. Multiple queries can be specified in one string by
-     * separating each with a semicolon. Here is an example of a Dataproc API
-     * snippet that uses a QueryList to specify a HiveJob: "hiveJob": {
-     * "queryList": { "queries": [ "query1", "query2", "query3;query4", ] } }
-     *
-     * @param string[] $queries
-     */
-    public function setQueries($queries)
+namespace Google\Service\Dataproc {
+    class QueryList extends \Google\Collection
     {
+        protected $collection_key = 'queries';
+        /**
+         * Required. The queries to execute. You do not need to end a query expression
+         * with a semicolon. Multiple queries can be specified in one string by
+         * separating each with a semicolon. Here is an example of a Dataproc API
+         * snippet that uses a QueryList to specify a HiveJob: "hiveJob": {
+         * "queryList": { "queries": [ "query1", "query2", "query3;query4", ] } }
+         *
+         * @var string[]
+         */
+        public $queries;
+        /**
+         * Required. The queries to execute. You do not need to end a query expression
+         * with a semicolon. Multiple queries can be specified in one string by
+         * separating each with a semicolon. Here is an example of a Dataproc API
+         * snippet that uses a QueryList to specify a HiveJob: "hiveJob": {
+         * "queryList": { "queries": [ "query1", "query2", "query3;query4", ] } }
+         *
+         * @param string[] $queries
+         */
+        public function setQueries($queries)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getQueries()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Dataproc\QueryList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getQueries()
+    class Google_Service_Dataproc_QueryList extends \Google\Service\Dataproc\QueryList
     {
     }
 }

@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Games;
-
-class UnlinkPersonaResponse extends \Google\Model
-{
-    /**
-     * Required. Whether a Recall token specified by the request was deleted. Can
-     * be 'false' when there were no Recall tokens satisfied the criteria from the
-     * request.
-     *
-     * @var bool
-     */
-    public $unlinked;
-    /**
-     * Required. Whether a Recall token specified by the request was deleted. Can
-     * be 'false' when there were no Recall tokens satisfied the criteria from the
-     * request.
-     *
-     * @param bool $unlinked
-     */
-    public function setUnlinked($unlinked)
+namespace Google\Service\Games {
+    class UnlinkPersonaResponse extends \Google\Model
     {
+        /**
+         * Required. Whether a Recall token specified by the request was deleted. Can
+         * be 'false' when there were no Recall tokens satisfied the criteria from the
+         * request.
+         *
+         * @var bool
+         */
+        public $unlinked;
+        /**
+         * Required. Whether a Recall token specified by the request was deleted. Can
+         * be 'false' when there were no Recall tokens satisfied the criteria from the
+         * request.
+         *
+         * @param bool $unlinked
+         */
+        public function setUnlinked($unlinked)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUnlinked()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Games\UnlinkPersonaResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUnlinked()
+    class Google_Service_Games_UnlinkPersonaResponse extends \Google\Service\Games\UnlinkPersonaResponse
     {
     }
 }

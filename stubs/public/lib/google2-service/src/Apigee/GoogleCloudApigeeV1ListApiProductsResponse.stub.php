@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1ListApiProductsResponse extends \Google\Collection
-{
-    protected $collection_key = 'apiProduct';
-    protected $apiProductType = GoogleCloudApigeeV1ApiProduct::class;
-    protected $apiProductDataType = 'array';
-    /**
-     * Lists all API product names defined for an organization.
-     *
-     * @param GoogleCloudApigeeV1ApiProduct[] $apiProduct
-     */
-    public function setApiProduct($apiProduct)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1ListApiProductsResponse extends \Google\Collection
     {
+        protected $collection_key = 'apiProduct';
+        protected $apiProductType = GoogleCloudApigeeV1ApiProduct::class;
+        protected $apiProductDataType = 'array';
+        /**
+         * Lists all API product names defined for an organization.
+         *
+         * @param GoogleCloudApigeeV1ApiProduct[] $apiProduct
+         */
+        public function setApiProduct($apiProduct)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1ApiProduct[]
+         */
+        public function getApiProduct()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApigeeV1ApiProduct[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1ListApiProductsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiProduct()
+    class Google_Service_Apigee_GoogleCloudApigeeV1ListApiProductsResponse extends \Google\Service\Apigee\GoogleCloudApigeeV1ListApiProductsResponse
     {
     }
 }

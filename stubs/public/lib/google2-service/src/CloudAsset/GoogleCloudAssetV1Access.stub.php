@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class GoogleCloudAssetV1Access extends \Google\Model
-{
-    protected $analysisStateType = IamPolicyAnalysisState::class;
-    protected $analysisStateDataType = '';
-    /**
-     * The permission.
-     *
-     * @var string
-     */
-    public $permission;
-    /**
-     * The role.
-     *
-     * @var string
-     */
-    public $role;
-    /**
-     * The analysis state of this access.
-     *
-     * @param IamPolicyAnalysisState $analysisState
-     */
-    public function setAnalysisState(IamPolicyAnalysisState $analysisState)
+namespace Google\Service\CloudAsset {
+    class GoogleCloudAssetV1Access extends \Google\Model
     {
+        protected $analysisStateType = IamPolicyAnalysisState::class;
+        protected $analysisStateDataType = '';
+        /**
+         * The permission.
+         *
+         * @var string
+         */
+        public $permission;
+        /**
+         * The role.
+         *
+         * @var string
+         */
+        public $role;
+        /**
+         * The analysis state of this access.
+         *
+         * @param IamPolicyAnalysisState $analysisState
+         */
+        public function setAnalysisState(IamPolicyAnalysisState $analysisState)
+        {
+        }
+        /**
+         * @return IamPolicyAnalysisState
+         */
+        public function getAnalysisState()
+        {
+        }
+        /**
+         * The permission.
+         *
+         * @param string $permission
+         */
+        public function setPermission($permission)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPermission()
+        {
+        }
+        /**
+         * The role.
+         *
+         * @param string $role
+         */
+        public function setRole($role)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRole()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return IamPolicyAnalysisState
+     * Runtime class alias of \Google\Service\CloudAsset\GoogleCloudAssetV1Access registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnalysisState()
-    {
-    }
-    /**
-     * The permission.
-     *
-     * @param string $permission
-     */
-    public function setPermission($permission)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPermission()
-    {
-    }
-    /**
-     * The role.
-     *
-     * @param string $role
-     */
-    public function setRole($role)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRole()
+    class Google_Service_CloudAsset_GoogleCloudAssetV1Access extends \Google\Service\CloudAsset\GoogleCloudAssetV1Access
     {
     }
 }

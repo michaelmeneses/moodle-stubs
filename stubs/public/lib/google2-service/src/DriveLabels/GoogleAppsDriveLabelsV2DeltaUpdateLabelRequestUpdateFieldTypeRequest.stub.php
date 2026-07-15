@@ -21,132 +21,141 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveLabels;
-
-class GoogleAppsDriveLabelsV2DeltaUpdateLabelRequestUpdateFieldTypeRequest extends \Google\Model
-{
-    protected $dateOptionsType = GoogleAppsDriveLabelsV2FieldDateOptions::class;
-    protected $dateOptionsDataType = '';
-    /**
-     * Required. The field to update.
-     *
-     * @var string
-     */
-    public $id;
-    protected $integerOptionsType = GoogleAppsDriveLabelsV2FieldIntegerOptions::class;
-    protected $integerOptionsDataType = '';
-    protected $selectionOptionsType = GoogleAppsDriveLabelsV2FieldSelectionOptions::class;
-    protected $selectionOptionsDataType = '';
-    protected $textOptionsType = GoogleAppsDriveLabelsV2FieldTextOptions::class;
-    protected $textOptionsDataType = '';
-    /**
-     * The fields that should be updated. At least one field must be specified.
-     * The root of `type_options` is implied and should not be specified. A single
-     * `*` can be used as a short-hand for updating every field.
-     *
-     * @var string
-     */
-    public $updateMask;
-    protected $userOptionsType = GoogleAppsDriveLabelsV2FieldUserOptions::class;
-    protected $userOptionsDataType = '';
-    /**
-     * Update field to Date.
-     *
-     * @param GoogleAppsDriveLabelsV2FieldDateOptions $dateOptions
-     */
-    public function setDateOptions(GoogleAppsDriveLabelsV2FieldDateOptions $dateOptions)
+namespace Google\Service\DriveLabels {
+    class GoogleAppsDriveLabelsV2DeltaUpdateLabelRequestUpdateFieldTypeRequest extends \Google\Model
     {
+        protected $dateOptionsType = GoogleAppsDriveLabelsV2FieldDateOptions::class;
+        protected $dateOptionsDataType = '';
+        /**
+         * Required. The field to update.
+         *
+         * @var string
+         */
+        public $id;
+        protected $integerOptionsType = GoogleAppsDriveLabelsV2FieldIntegerOptions::class;
+        protected $integerOptionsDataType = '';
+        protected $selectionOptionsType = GoogleAppsDriveLabelsV2FieldSelectionOptions::class;
+        protected $selectionOptionsDataType = '';
+        protected $textOptionsType = GoogleAppsDriveLabelsV2FieldTextOptions::class;
+        protected $textOptionsDataType = '';
+        /**
+         * The fields that should be updated. At least one field must be specified.
+         * The root of `type_options` is implied and should not be specified. A single
+         * `*` can be used as a short-hand for updating every field.
+         *
+         * @var string
+         */
+        public $updateMask;
+        protected $userOptionsType = GoogleAppsDriveLabelsV2FieldUserOptions::class;
+        protected $userOptionsDataType = '';
+        /**
+         * Update field to Date.
+         *
+         * @param GoogleAppsDriveLabelsV2FieldDateOptions $dateOptions
+         */
+        public function setDateOptions(GoogleAppsDriveLabelsV2FieldDateOptions $dateOptions)
+        {
+        }
+        /**
+         * @return GoogleAppsDriveLabelsV2FieldDateOptions
+         */
+        public function getDateOptions()
+        {
+        }
+        /**
+         * Required. The field to update.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Update field to Integer.
+         *
+         * @param GoogleAppsDriveLabelsV2FieldIntegerOptions $integerOptions
+         */
+        public function setIntegerOptions(GoogleAppsDriveLabelsV2FieldIntegerOptions $integerOptions)
+        {
+        }
+        /**
+         * @return GoogleAppsDriveLabelsV2FieldIntegerOptions
+         */
+        public function getIntegerOptions()
+        {
+        }
+        /**
+         * Update field to Selection.
+         *
+         * @param GoogleAppsDriveLabelsV2FieldSelectionOptions $selectionOptions
+         */
+        public function setSelectionOptions(GoogleAppsDriveLabelsV2FieldSelectionOptions $selectionOptions)
+        {
+        }
+        /**
+         * @return GoogleAppsDriveLabelsV2FieldSelectionOptions
+         */
+        public function getSelectionOptions()
+        {
+        }
+        /**
+         * Update field to Text.
+         *
+         * @param GoogleAppsDriveLabelsV2FieldTextOptions $textOptions
+         */
+        public function setTextOptions(GoogleAppsDriveLabelsV2FieldTextOptions $textOptions)
+        {
+        }
+        /**
+         * @return GoogleAppsDriveLabelsV2FieldTextOptions
+         */
+        public function getTextOptions()
+        {
+        }
+        /**
+         * The fields that should be updated. At least one field must be specified.
+         * The root of `type_options` is implied and should not be specified. A single
+         * `*` can be used as a short-hand for updating every field.
+         *
+         * @param string $updateMask
+         */
+        public function setUpdateMask($updateMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateMask()
+        {
+        }
+        /**
+         * Update field to User.
+         *
+         * @param GoogleAppsDriveLabelsV2FieldUserOptions $userOptions
+         */
+        public function setUserOptions(GoogleAppsDriveLabelsV2FieldUserOptions $userOptions)
+        {
+        }
+        /**
+         * @return GoogleAppsDriveLabelsV2FieldUserOptions
+         */
+        public function getUserOptions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAppsDriveLabelsV2FieldDateOptions
+     * Runtime class alias of \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2DeltaUpdateLabelRequestUpdateFieldTypeRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDateOptions()
-    {
-    }
-    /**
-     * Required. The field to update.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Update field to Integer.
-     *
-     * @param GoogleAppsDriveLabelsV2FieldIntegerOptions $integerOptions
-     */
-    public function setIntegerOptions(GoogleAppsDriveLabelsV2FieldIntegerOptions $integerOptions)
-    {
-    }
-    /**
-     * @return GoogleAppsDriveLabelsV2FieldIntegerOptions
-     */
-    public function getIntegerOptions()
-    {
-    }
-    /**
-     * Update field to Selection.
-     *
-     * @param GoogleAppsDriveLabelsV2FieldSelectionOptions $selectionOptions
-     */
-    public function setSelectionOptions(GoogleAppsDriveLabelsV2FieldSelectionOptions $selectionOptions)
-    {
-    }
-    /**
-     * @return GoogleAppsDriveLabelsV2FieldSelectionOptions
-     */
-    public function getSelectionOptions()
-    {
-    }
-    /**
-     * Update field to Text.
-     *
-     * @param GoogleAppsDriveLabelsV2FieldTextOptions $textOptions
-     */
-    public function setTextOptions(GoogleAppsDriveLabelsV2FieldTextOptions $textOptions)
-    {
-    }
-    /**
-     * @return GoogleAppsDriveLabelsV2FieldTextOptions
-     */
-    public function getTextOptions()
-    {
-    }
-    /**
-     * The fields that should be updated. At least one field must be specified.
-     * The root of `type_options` is implied and should not be specified. A single
-     * `*` can be used as a short-hand for updating every field.
-     *
-     * @param string $updateMask
-     */
-    public function setUpdateMask($updateMask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateMask()
-    {
-    }
-    /**
-     * Update field to User.
-     *
-     * @param GoogleAppsDriveLabelsV2FieldUserOptions $userOptions
-     */
-    public function setUserOptions(GoogleAppsDriveLabelsV2FieldUserOptions $userOptions)
-    {
-    }
-    /**
-     * @return GoogleAppsDriveLabelsV2FieldUserOptions
-     */
-    public function getUserOptions()
+    class Google_Service_DriveLabels_GoogleAppsDriveLabelsV2DeltaUpdateLabelRequestUpdateFieldTypeRequest extends \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2DeltaUpdateLabelRequestUpdateFieldTypeRequest
     {
     }
 }

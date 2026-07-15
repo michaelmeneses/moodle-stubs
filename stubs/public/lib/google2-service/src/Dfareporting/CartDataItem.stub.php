@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class CartDataItem extends \Google\Model
-{
-    /**
-     * The shopping id of the item. Must be equal to the Merchant Center product
-     * identifier. This is a required field.
-     *
-     * @var string
-     */
-    public $itemId;
-    /**
-     * Number of items sold. This is a required field.
-     *
-     * @var int
-     */
-    public $quantity;
-    /**
-     * Unit price excluding tax, shipping, and any transaction level discounts.
-     * Interpreted in CM360 Floodlight config parent advertiser's currency code.
-     * This is a required field.
-     *
-     * @var 
-     */
-    public $unitPrice;
-    /**
-     * The shopping id of the item. Must be equal to the Merchant Center product
-     * identifier. This is a required field.
-     *
-     * @param string $itemId
-     */
-    public function setItemId($itemId)
+namespace Google\Service\Dfareporting {
+    class CartDataItem extends \Google\Model
     {
+        /**
+         * The shopping id of the item. Must be equal to the Merchant Center product
+         * identifier. This is a required field.
+         *
+         * @var string
+         */
+        public $itemId;
+        /**
+         * Number of items sold. This is a required field.
+         *
+         * @var int
+         */
+        public $quantity;
+        /**
+         * Unit price excluding tax, shipping, and any transaction level discounts.
+         * Interpreted in CM360 Floodlight config parent advertiser's currency code.
+         * This is a required field.
+         *
+         * @var 
+         */
+        public $unitPrice;
+        /**
+         * The shopping id of the item. Must be equal to the Merchant Center product
+         * identifier. This is a required field.
+         *
+         * @param string $itemId
+         */
+        public function setItemId($itemId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getItemId()
+        {
+        }
+        /**
+         * Number of items sold. This is a required field.
+         *
+         * @param int $quantity
+         */
+        public function setQuantity($quantity)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getQuantity()
+        {
+        }
+        public function setUnitPrice($unitPrice)
+        {
+        }
+        public function getUnitPrice()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\CartDataItem registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItemId()
-    {
-    }
-    /**
-     * Number of items sold. This is a required field.
-     *
-     * @param int $quantity
-     */
-    public function setQuantity($quantity)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getQuantity()
-    {
-    }
-    public function setUnitPrice($unitPrice)
-    {
-    }
-    public function getUnitPrice()
+    class Google_Service_Dfareporting_CartDataItem extends \Google\Service\Dfareporting\CartDataItem
     {
     }
 }

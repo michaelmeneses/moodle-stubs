@@ -21,56 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow\Resource;
-
-/**
- * The "changelogs" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dialogflowService = new Google\Service\Dialogflow(...);
- *   $changelogs = $dialogflowService->projects_locations_agents_changelogs;
- *  </code>
- */
-class ProjectsLocationsAgentsChangelogs extends \Google\Service\Resource
-{
+namespace Google\Service\Dialogflow\Resource {
+    use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3Changelog;
+    use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ListChangelogsResponse;
     /**
-     * Retrieves the specified Changelog. (changelogs.get)
-     *
-     * @param string $name Required. The name of the changelog to get. Format:
-     * `projects//locations//agents//changelogs/`.
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudDialogflowCxV3Changelog
-     * @throws \Google\Service\Exception
+     * The "changelogs" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dialogflowService = new Google\Service\Dialogflow(...);
+     *   $changelogs = $dialogflowService->projects_locations_agents_changelogs;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class ProjectsLocationsAgentsChangelogs extends \Google\Service\Resource
     {
+        /**
+         * Retrieves the specified Changelog. (changelogs.get)
+         *
+         * @param string $name Required. The name of the changelog to get. Format:
+         * `projects//locations//agents//changelogs/`.
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudDialogflowCxV3Changelog
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Returns the list of Changelogs.
+         * (changelogs.listProjectsLocationsAgentsChangelogs)
+         *
+         * @param string $parent Required. The agent containing the changelogs. Format:
+         * `projects//locations//agents/`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter The filter string. Supports filter by user_email,
+         * resource, type and create_time. Some examples: 1. By user email: user_email =
+         * "someone@google.com" 2. By resource name: resource =
+         * "projects/123/locations/global/agents/456/flows/789" 3. By resource display
+         * name: display_name = "my agent" 4. By action: action = "Create" 5. By type:
+         * type = "flows" 6. By create time. Currently predicates on `create_time` and
+         * `create_time_epoch_seconds` are supported: create_time_epoch_seconds >
+         * 1551790877 AND create_time <= 2017-01-15T01:30:15.01Z 7. Combination of above
+         * filters: resource = "projects/123/locations/global/agents/456/flows/789" AND
+         * user_email = "someone@google.com" AND create_time <= 2017-01-15T01:30:15.01Z
+         * @opt_param int pageSize The maximum number of items to return in a single
+         * page. By default 100 and at most 1000.
+         * @opt_param string pageToken The next_page_token value returned from a
+         * previous list request.
+         * @return GoogleCloudDialogflowCxV3ListChangelogsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsAgentsChangelogs($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Returns the list of Changelogs.
-     * (changelogs.listProjectsLocationsAgentsChangelogs)
-     *
-     * @param string $parent Required. The agent containing the changelogs. Format:
-     * `projects//locations//agents/`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter The filter string. Supports filter by user_email,
-     * resource, type and create_time. Some examples: 1. By user email: user_email =
-     * "someone@google.com" 2. By resource name: resource =
-     * "projects/123/locations/global/agents/456/flows/789" 3. By resource display
-     * name: display_name = "my agent" 4. By action: action = "Create" 5. By type:
-     * type = "flows" 6. By create time. Currently predicates on `create_time` and
-     * `create_time_epoch_seconds` are supported: create_time_epoch_seconds >
-     * 1551790877 AND create_time <= 2017-01-15T01:30:15.01Z 7. Combination of above
-     * filters: resource = "projects/123/locations/global/agents/456/flows/789" AND
-     * user_email = "someone@google.com" AND create_time <= 2017-01-15T01:30:15.01Z
-     * @opt_param int pageSize The maximum number of items to return in a single
-     * page. By default 100 and at most 1000.
-     * @opt_param string pageToken The next_page_token value returned from a
-     * previous list request.
-     * @return GoogleCloudDialogflowCxV3ListChangelogsResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Dialogflow\Resource\ProjectsLocationsAgentsChangelogs registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listProjectsLocationsAgentsChangelogs($parent, $optParams = [])
+    class Google_Service_Dialogflow_Resource_ProjectsLocationsAgentsChangelogs extends \Google\Service\Dialogflow\Resource\ProjectsLocationsAgentsChangelogs
     {
     }
 }

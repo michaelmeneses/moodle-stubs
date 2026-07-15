@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedVideoReference extends \Google\Collection
-{
-    protected $collection_key = 'format';
-    /**
-     * @var int[]
-     */
-    public $format;
-    /**
-     * @var string
-     */
-    public $status;
-    /**
-     * @param int[]
-     */
-    public function setFormat($format)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedVideoReference extends \Google\Collection
     {
+        protected $collection_key = 'format';
+        /**
+         * @var int[]
+         */
+        public $format;
+        /**
+         * @var string
+         */
+        public $status;
+        /**
+         * @param int[]
+         */
+        public function setFormat($format)
+        {
+        }
+        /**
+         * @return int[]
+         */
+        public function getFormat()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int[]
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedVideoReference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFormat()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStatus()
+    class Google_Service_CloudSearch_AppsDynamiteSharedVideoReference extends \Google\Service\CloudSearch\AppsDynamiteSharedVideoReference
     {
     }
 }

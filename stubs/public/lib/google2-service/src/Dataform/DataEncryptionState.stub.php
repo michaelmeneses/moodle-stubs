@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataform;
-
-class DataEncryptionState extends \Google\Model
-{
-    /**
-     * Required. The KMS key version name with which data of a resource is
-     * encrypted.
-     *
-     * @var string
-     */
-    public $kmsKeyVersionName;
-    /**
-     * Required. The KMS key version name with which data of a resource is
-     * encrypted.
-     *
-     * @param string $kmsKeyVersionName
-     */
-    public function setKmsKeyVersionName($kmsKeyVersionName)
+namespace Google\Service\Dataform {
+    class DataEncryptionState extends \Google\Model
     {
+        /**
+         * Required. The KMS key version name with which data of a resource is
+         * encrypted.
+         *
+         * @var string
+         */
+        public $kmsKeyVersionName;
+        /**
+         * Required. The KMS key version name with which data of a resource is
+         * encrypted.
+         *
+         * @param string $kmsKeyVersionName
+         */
+        public function setKmsKeyVersionName($kmsKeyVersionName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKmsKeyVersionName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataform\DataEncryptionState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKmsKeyVersionName()
+    class Google_Service_Dataform_DataEncryptionState extends \Google\Service\Dataform\DataEncryptionState
     {
     }
 }

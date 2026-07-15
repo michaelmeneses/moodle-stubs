@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class DriverSchedulingConfig extends \Google\Model
-{
-    /**
-     * Required. The amount of memory in MB the driver is requesting.
-     *
-     * @var int
-     */
-    public $memoryMb;
-    /**
-     * Required. The number of vCPUs the driver is requesting.
-     *
-     * @var int
-     */
-    public $vcores;
-    /**
-     * Required. The amount of memory in MB the driver is requesting.
-     *
-     * @param int $memoryMb
-     */
-    public function setMemoryMb($memoryMb)
+namespace Google\Service\Dataproc {
+    class DriverSchedulingConfig extends \Google\Model
     {
+        /**
+         * Required. The amount of memory in MB the driver is requesting.
+         *
+         * @var int
+         */
+        public $memoryMb;
+        /**
+         * Required. The number of vCPUs the driver is requesting.
+         *
+         * @var int
+         */
+        public $vcores;
+        /**
+         * Required. The amount of memory in MB the driver is requesting.
+         *
+         * @param int $memoryMb
+         */
+        public function setMemoryMb($memoryMb)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMemoryMb()
+        {
+        }
+        /**
+         * Required. The number of vCPUs the driver is requesting.
+         *
+         * @param int $vcores
+         */
+        public function setVcores($vcores)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getVcores()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Dataproc\DriverSchedulingConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMemoryMb()
-    {
-    }
-    /**
-     * Required. The number of vCPUs the driver is requesting.
-     *
-     * @param int $vcores
-     */
-    public function setVcores($vcores)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getVcores()
+    class Google_Service_Dataproc_DriverSchedulingConfig extends \Google\Service\Dataproc\DriverSchedulingConfig
     {
     }
 }

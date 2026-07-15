@@ -8,6 +8,7 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Chart;
 
+use PhpOffice\PhpSpreadsheet\Worksheet\Worksheet;
 class DataSeries
 {
     const TYPE_BARCHART = 'barChart';

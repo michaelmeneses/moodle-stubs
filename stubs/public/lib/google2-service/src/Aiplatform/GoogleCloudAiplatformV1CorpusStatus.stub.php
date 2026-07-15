@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1CorpusStatus extends \Google\Model
-{
-    /**
-     * This state is not supposed to happen.
-     */
-    public const STATE_UNKNOWN = 'UNKNOWN';
-    /**
-     * RagCorpus resource entry is initialized, but hasn't done validation.
-     */
-    public const STATE_INITIALIZED = 'INITIALIZED';
-    /**
-     * RagCorpus is provisioned successfully and is ready to serve.
-     */
-    public const STATE_ACTIVE = 'ACTIVE';
-    /**
-     * RagCorpus is in a problematic situation. See `error_message` field for
-     * details.
-     */
-    public const STATE_ERROR = 'ERROR';
-    /**
-     * Output only. Only when the `state` field is ERROR.
-     *
-     * @var string
-     */
-    public $errorStatus;
-    /**
-     * Output only. RagCorpus life state.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Output only. Only when the `state` field is ERROR.
-     *
-     * @param string $errorStatus
-     */
-    public function setErrorStatus($errorStatus)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1CorpusStatus extends \Google\Model
     {
+        /**
+         * This state is not supposed to happen.
+         */
+        public const STATE_UNKNOWN = 'UNKNOWN';
+        /**
+         * RagCorpus resource entry is initialized, but hasn't done validation.
+         */
+        public const STATE_INITIALIZED = 'INITIALIZED';
+        /**
+         * RagCorpus is provisioned successfully and is ready to serve.
+         */
+        public const STATE_ACTIVE = 'ACTIVE';
+        /**
+         * RagCorpus is in a problematic situation. See `error_message` field for
+         * details.
+         */
+        public const STATE_ERROR = 'ERROR';
+        /**
+         * Output only. Only when the `state` field is ERROR.
+         *
+         * @var string
+         */
+        public $errorStatus;
+        /**
+         * Output only. RagCorpus life state.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Output only. Only when the `state` field is ERROR.
+         *
+         * @param string $errorStatus
+         */
+        public function setErrorStatus($errorStatus)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getErrorStatus()
+        {
+        }
+        /**
+         * Output only. RagCorpus life state.
+         *
+         * Accepted values: UNKNOWN, INITIALIZED, ACTIVE, ERROR
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1CorpusStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrorStatus()
-    {
-    }
-    /**
-     * Output only. RagCorpus life state.
-     *
-     * Accepted values: UNKNOWN, INITIALIZED, ACTIVE, ERROR
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1CorpusStatus extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1CorpusStatus
     {
     }
 }

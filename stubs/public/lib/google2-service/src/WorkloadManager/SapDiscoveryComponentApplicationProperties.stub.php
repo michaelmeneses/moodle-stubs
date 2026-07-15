@@ -21,194 +21,203 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager;
-
-class SapDiscoveryComponentApplicationProperties extends \Google\Model
-{
-    /**
-     * Unspecified application type
-     */
-    public const APPLICATION_TYPE_APPLICATION_TYPE_UNSPECIFIED = 'APPLICATION_TYPE_UNSPECIFIED';
-    /**
-     * SAP Netweaver
-     */
-    public const APPLICATION_TYPE_NETWEAVER = 'NETWEAVER';
-    /**
-     * SAP Netweaver ABAP
-     */
-    public const APPLICATION_TYPE_NETWEAVER_ABAP = 'NETWEAVER_ABAP';
-    /**
-     * SAP Netweaver Java
-     */
-    public const APPLICATION_TYPE_NETWEAVER_JAVA = 'NETWEAVER_JAVA';
-    /**
-     * Optional. Deprecated: ApplicationType now tells you whether this is ABAP or
-     * Java.
-     *
-     * @deprecated
-     * @var bool
-     */
-    public $abap;
-    /**
-     * Optional. Instance number of the SAP application instance.
-     *
-     * @var string
-     */
-    public $appInstanceNumber;
-    /**
-     * Required. Type of the application. Netweaver, etc.
-     *
-     * @var string
-     */
-    public $applicationType;
-    /**
-     * Optional. Instance number of the ASCS instance.
-     *
-     * @var string
-     */
-    public $ascsInstanceNumber;
-    /**
-     * Optional. Resource URI of the recognized ASCS host of the application.
-     *
-     * @var string
-     */
-    public $ascsUri;
-    /**
-     * Optional. Instance number of the ERS instance.
-     *
-     * @var string
-     */
-    public $ersInstanceNumber;
-    /**
-     * Optional. Kernel version for Netweaver running in the system.
-     *
-     * @var string
-     */
-    public $kernelVersion;
-    /**
-     * Optional. Resource URI of the recognized shared NFS of the application. May
-     * be empty if the application server has only a single node.
-     *
-     * @var string
-     */
-    public $nfsUri;
-    /**
-     * Optional. Deprecated: ApplicationType now tells you whether this is ABAP or
-     * Java.
-     *
-     * @deprecated
-     * @param bool $abap
-     */
-    public function setAbap($abap)
+namespace Google\Service\WorkloadManager {
+    class SapDiscoveryComponentApplicationProperties extends \Google\Model
     {
+        /**
+         * Unspecified application type
+         */
+        public const APPLICATION_TYPE_APPLICATION_TYPE_UNSPECIFIED = 'APPLICATION_TYPE_UNSPECIFIED';
+        /**
+         * SAP Netweaver
+         */
+        public const APPLICATION_TYPE_NETWEAVER = 'NETWEAVER';
+        /**
+         * SAP Netweaver ABAP
+         */
+        public const APPLICATION_TYPE_NETWEAVER_ABAP = 'NETWEAVER_ABAP';
+        /**
+         * SAP Netweaver Java
+         */
+        public const APPLICATION_TYPE_NETWEAVER_JAVA = 'NETWEAVER_JAVA';
+        /**
+         * Optional. Deprecated: ApplicationType now tells you whether this is ABAP or
+         * Java.
+         *
+         * @deprecated
+         * @var bool
+         */
+        public $abap;
+        /**
+         * Optional. Instance number of the SAP application instance.
+         *
+         * @var string
+         */
+        public $appInstanceNumber;
+        /**
+         * Required. Type of the application. Netweaver, etc.
+         *
+         * @var string
+         */
+        public $applicationType;
+        /**
+         * Optional. Instance number of the ASCS instance.
+         *
+         * @var string
+         */
+        public $ascsInstanceNumber;
+        /**
+         * Optional. Resource URI of the recognized ASCS host of the application.
+         *
+         * @var string
+         */
+        public $ascsUri;
+        /**
+         * Optional. Instance number of the ERS instance.
+         *
+         * @var string
+         */
+        public $ersInstanceNumber;
+        /**
+         * Optional. Kernel version for Netweaver running in the system.
+         *
+         * @var string
+         */
+        public $kernelVersion;
+        /**
+         * Optional. Resource URI of the recognized shared NFS of the application. May
+         * be empty if the application server has only a single node.
+         *
+         * @var string
+         */
+        public $nfsUri;
+        /**
+         * Optional. Deprecated: ApplicationType now tells you whether this is ABAP or
+         * Java.
+         *
+         * @deprecated
+         * @param bool $abap
+         */
+        public function setAbap($abap)
+        {
+        }
+        /**
+         * @deprecated
+         * @return bool
+         */
+        public function getAbap()
+        {
+        }
+        /**
+         * Optional. Instance number of the SAP application instance.
+         *
+         * @param string $appInstanceNumber
+         */
+        public function setAppInstanceNumber($appInstanceNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAppInstanceNumber()
+        {
+        }
+        /**
+         * Required. Type of the application. Netweaver, etc.
+         *
+         * Accepted values: APPLICATION_TYPE_UNSPECIFIED, NETWEAVER, NETWEAVER_ABAP,
+         * NETWEAVER_JAVA
+         *
+         * @param self::APPLICATION_TYPE_* $applicationType
+         */
+        public function setApplicationType($applicationType)
+        {
+        }
+        /**
+         * @return self::APPLICATION_TYPE_*
+         */
+        public function getApplicationType()
+        {
+        }
+        /**
+         * Optional. Instance number of the ASCS instance.
+         *
+         * @param string $ascsInstanceNumber
+         */
+        public function setAscsInstanceNumber($ascsInstanceNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAscsInstanceNumber()
+        {
+        }
+        /**
+         * Optional. Resource URI of the recognized ASCS host of the application.
+         *
+         * @param string $ascsUri
+         */
+        public function setAscsUri($ascsUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAscsUri()
+        {
+        }
+        /**
+         * Optional. Instance number of the ERS instance.
+         *
+         * @param string $ersInstanceNumber
+         */
+        public function setErsInstanceNumber($ersInstanceNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getErsInstanceNumber()
+        {
+        }
+        /**
+         * Optional. Kernel version for Netweaver running in the system.
+         *
+         * @param string $kernelVersion
+         */
+        public function setKernelVersion($kernelVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKernelVersion()
+        {
+        }
+        /**
+         * Optional. Resource URI of the recognized shared NFS of the application. May
+         * be empty if the application server has only a single node.
+         *
+         * @param string $nfsUri
+         */
+        public function setNfsUri($nfsUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNfsUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return bool
+     * Runtime class alias of \Google\Service\WorkloadManager\SapDiscoveryComponentApplicationProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAbap()
-    {
-    }
-    /**
-     * Optional. Instance number of the SAP application instance.
-     *
-     * @param string $appInstanceNumber
-     */
-    public function setAppInstanceNumber($appInstanceNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAppInstanceNumber()
-    {
-    }
-    /**
-     * Required. Type of the application. Netweaver, etc.
-     *
-     * Accepted values: APPLICATION_TYPE_UNSPECIFIED, NETWEAVER, NETWEAVER_ABAP,
-     * NETWEAVER_JAVA
-     *
-     * @param self::APPLICATION_TYPE_* $applicationType
-     */
-    public function setApplicationType($applicationType)
-    {
-    }
-    /**
-     * @return self::APPLICATION_TYPE_*
-     */
-    public function getApplicationType()
-    {
-    }
-    /**
-     * Optional. Instance number of the ASCS instance.
-     *
-     * @param string $ascsInstanceNumber
-     */
-    public function setAscsInstanceNumber($ascsInstanceNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAscsInstanceNumber()
-    {
-    }
-    /**
-     * Optional. Resource URI of the recognized ASCS host of the application.
-     *
-     * @param string $ascsUri
-     */
-    public function setAscsUri($ascsUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAscsUri()
-    {
-    }
-    /**
-     * Optional. Instance number of the ERS instance.
-     *
-     * @param string $ersInstanceNumber
-     */
-    public function setErsInstanceNumber($ersInstanceNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getErsInstanceNumber()
-    {
-    }
-    /**
-     * Optional. Kernel version for Netweaver running in the system.
-     *
-     * @param string $kernelVersion
-     */
-    public function setKernelVersion($kernelVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKernelVersion()
-    {
-    }
-    /**
-     * Optional. Resource URI of the recognized shared NFS of the application. May
-     * be empty if the application server has only a single node.
-     *
-     * @param string $nfsUri
-     */
-    public function setNfsUri($nfsUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNfsUri()
+    class Google_Service_WorkloadManager_SapDiscoveryComponentApplicationProperties extends \Google\Service\WorkloadManager\SapDiscoveryComponentApplicationProperties
     {
     }
 }

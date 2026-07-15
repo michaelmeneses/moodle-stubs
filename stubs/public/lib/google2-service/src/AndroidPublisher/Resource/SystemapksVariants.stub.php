@@ -21,69 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher\Resource;
-
-/**
- * The "variants" collection of methods.
- * Typical usage is:
- *  <code>
- *   $androidpublisherService = new Google\Service\AndroidPublisher(...);
- *   $variants = $androidpublisherService->systemapks_variants;
- *  </code>
- */
-class SystemapksVariants extends \Google\Service\Resource
-{
+namespace Google\Service\AndroidPublisher\Resource {
+    use Google\Service\AndroidPublisher\SystemApksListResponse;
+    use Google\Service\AndroidPublisher\Variant;
     /**
-     * Creates an APK which is suitable for inclusion in a system image from an
-     * already uploaded Android App Bundle. (variants.create)
-     *
-     * @param string $packageName Package name of the app.
-     * @param string $versionCode The version code of the App Bundle.
-     * @param Variant $postBody
-     * @param array $optParams Optional parameters.
-     * @return Variant
-     * @throws \Google\Service\Exception
+     * The "variants" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $androidpublisherService = new Google\Service\AndroidPublisher(...);
+     *   $variants = $androidpublisherService->systemapks_variants;
+     *  </code>
      */
-    public function create($packageName, $versionCode, Variant $postBody, $optParams = [])
+    class SystemapksVariants extends \Google\Service\Resource
     {
+        /**
+         * Creates an APK which is suitable for inclusion in a system image from an
+         * already uploaded Android App Bundle. (variants.create)
+         *
+         * @param string $packageName Package name of the app.
+         * @param string $versionCode The version code of the App Bundle.
+         * @param Variant $postBody
+         * @param array $optParams Optional parameters.
+         * @return Variant
+         * @throws \Google\Service\Exception
+         */
+        public function create($packageName, $versionCode, Variant $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Downloads a previously created system APK which is suitable for inclusion in
+         * a system image. (variants.download)
+         *
+         * @param string $packageName Package name of the app.
+         * @param string $versionCode The version code of the App Bundle.
+         * @param string $variantId The ID of a previously created system APK variant.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function download($packageName, $versionCode, $variantId, $optParams = [])
+        {
+        }
+        /**
+         * Returns a previously created system APK variant. (variants.get)
+         *
+         * @param string $packageName Package name of the app.
+         * @param string $versionCode The version code of the App Bundle.
+         * @param string $variantId The ID of a previously created system APK variant.
+         * @param array $optParams Optional parameters.
+         * @return Variant
+         * @throws \Google\Service\Exception
+         */
+        public function get($packageName, $versionCode, $variantId, $optParams = [])
+        {
+        }
+        /**
+         * Returns the list of previously created system APK variants.
+         * (variants.listSystemapksVariants)
+         *
+         * @param string $packageName Package name of the app.
+         * @param string $versionCode The version code of the App Bundle.
+         * @param array $optParams Optional parameters.
+         * @return SystemApksListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listSystemapksVariants($packageName, $versionCode, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Downloads a previously created system APK which is suitable for inclusion in
-     * a system image. (variants.download)
-     *
-     * @param string $packageName Package name of the app.
-     * @param string $versionCode The version code of the App Bundle.
-     * @param string $variantId The ID of a previously created system APK variant.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\AndroidPublisher\Resource\SystemapksVariants registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function download($packageName, $versionCode, $variantId, $optParams = [])
-    {
-    }
-    /**
-     * Returns a previously created system APK variant. (variants.get)
-     *
-     * @param string $packageName Package name of the app.
-     * @param string $versionCode The version code of the App Bundle.
-     * @param string $variantId The ID of a previously created system APK variant.
-     * @param array $optParams Optional parameters.
-     * @return Variant
-     * @throws \Google\Service\Exception
-     */
-    public function get($packageName, $versionCode, $variantId, $optParams = [])
-    {
-    }
-    /**
-     * Returns the list of previously created system APK variants.
-     * (variants.listSystemapksVariants)
-     *
-     * @param string $packageName Package name of the app.
-     * @param string $versionCode The version code of the App Bundle.
-     * @param array $optParams Optional parameters.
-     * @return SystemApksListResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listSystemapksVariants($packageName, $versionCode, $optParams = [])
+    class Google_Service_AndroidPublisher_Resource_SystemapksVariants extends \Google\Service\AndroidPublisher\Resource\SystemapksVariants
     {
     }
 }

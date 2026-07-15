@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class AddDataSourceRequest extends \Google\Model
-{
-    protected $dataSourceType = DataSource::class;
-    protected $dataSourceDataType = '';
-    /**
-     * The data source to add.
-     *
-     * @param DataSource $dataSource
-     */
-    public function setDataSource(DataSource $dataSource)
+namespace Google\Service\Sheets {
+    class AddDataSourceRequest extends \Google\Model
     {
+        protected $dataSourceType = DataSource::class;
+        protected $dataSourceDataType = '';
+        /**
+         * The data source to add.
+         *
+         * @param DataSource $dataSource
+         */
+        public function setDataSource(DataSource $dataSource)
+        {
+        }
+        /**
+         * @return DataSource
+         */
+        public function getDataSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DataSource
+     * Runtime class alias of \Google\Service\Sheets\AddDataSourceRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataSource()
+    class Google_Service_Sheets_AddDataSourceRequest extends \Google\Service\Sheets\AddDataSourceRequest
     {
     }
 }

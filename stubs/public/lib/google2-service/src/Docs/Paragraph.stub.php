@@ -21,128 +21,137 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class Paragraph extends \Google\Collection
-{
-    protected $collection_key = 'positionedObjectIds';
-    protected $bulletType = Bullet::class;
-    protected $bulletDataType = '';
-    protected $elementsType = ParagraphElement::class;
-    protected $elementsDataType = 'array';
-    protected $paragraphStyleType = ParagraphStyle::class;
-    protected $paragraphStyleDataType = '';
-    /**
-     * The IDs of the positioned objects tethered to this paragraph.
-     *
-     * @var string[]
-     */
-    public $positionedObjectIds;
-    protected $suggestedBulletChangesType = SuggestedBullet::class;
-    protected $suggestedBulletChangesDataType = 'map';
-    protected $suggestedParagraphStyleChangesType = SuggestedParagraphStyle::class;
-    protected $suggestedParagraphStyleChangesDataType = 'map';
-    protected $suggestedPositionedObjectIdsType = ObjectReferences::class;
-    protected $suggestedPositionedObjectIdsDataType = 'map';
-    /**
-     * The bullet for this paragraph. If not present, the paragraph does not
-     * belong to a list.
-     *
-     * @param Bullet $bullet
-     */
-    public function setBullet(Bullet $bullet)
+namespace Google\Service\Docs {
+    class Paragraph extends \Google\Collection
     {
+        protected $collection_key = 'positionedObjectIds';
+        protected $bulletType = Bullet::class;
+        protected $bulletDataType = '';
+        protected $elementsType = ParagraphElement::class;
+        protected $elementsDataType = 'array';
+        protected $paragraphStyleType = ParagraphStyle::class;
+        protected $paragraphStyleDataType = '';
+        /**
+         * The IDs of the positioned objects tethered to this paragraph.
+         *
+         * @var string[]
+         */
+        public $positionedObjectIds;
+        protected $suggestedBulletChangesType = SuggestedBullet::class;
+        protected $suggestedBulletChangesDataType = 'map';
+        protected $suggestedParagraphStyleChangesType = SuggestedParagraphStyle::class;
+        protected $suggestedParagraphStyleChangesDataType = 'map';
+        protected $suggestedPositionedObjectIdsType = ObjectReferences::class;
+        protected $suggestedPositionedObjectIdsDataType = 'map';
+        /**
+         * The bullet for this paragraph. If not present, the paragraph does not
+         * belong to a list.
+         *
+         * @param Bullet $bullet
+         */
+        public function setBullet(Bullet $bullet)
+        {
+        }
+        /**
+         * @return Bullet
+         */
+        public function getBullet()
+        {
+        }
+        /**
+         * The content of the paragraph, broken down into its component parts.
+         *
+         * @param ParagraphElement[] $elements
+         */
+        public function setElements($elements)
+        {
+        }
+        /**
+         * @return ParagraphElement[]
+         */
+        public function getElements()
+        {
+        }
+        /**
+         * The style of this paragraph.
+         *
+         * @param ParagraphStyle $paragraphStyle
+         */
+        public function setParagraphStyle(ParagraphStyle $paragraphStyle)
+        {
+        }
+        /**
+         * @return ParagraphStyle
+         */
+        public function getParagraphStyle()
+        {
+        }
+        /**
+         * The IDs of the positioned objects tethered to this paragraph.
+         *
+         * @param string[] $positionedObjectIds
+         */
+        public function setPositionedObjectIds($positionedObjectIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPositionedObjectIds()
+        {
+        }
+        /**
+         * The suggested changes to this paragraph's bullet.
+         *
+         * @param SuggestedBullet[] $suggestedBulletChanges
+         */
+        public function setSuggestedBulletChanges($suggestedBulletChanges)
+        {
+        }
+        /**
+         * @return SuggestedBullet[]
+         */
+        public function getSuggestedBulletChanges()
+        {
+        }
+        /**
+         * The suggested paragraph style changes to this paragraph, keyed by
+         * suggestion ID.
+         *
+         * @param SuggestedParagraphStyle[] $suggestedParagraphStyleChanges
+         */
+        public function setSuggestedParagraphStyleChanges($suggestedParagraphStyleChanges)
+        {
+        }
+        /**
+         * @return SuggestedParagraphStyle[]
+         */
+        public function getSuggestedParagraphStyleChanges()
+        {
+        }
+        /**
+         * The IDs of the positioned objects suggested to be attached to this
+         * paragraph, keyed by suggestion ID.
+         *
+         * @param ObjectReferences[] $suggestedPositionedObjectIds
+         */
+        public function setSuggestedPositionedObjectIds($suggestedPositionedObjectIds)
+        {
+        }
+        /**
+         * @return ObjectReferences[]
+         */
+        public function getSuggestedPositionedObjectIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Bullet
+     * Runtime class alias of \Google\Service\Docs\Paragraph registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBullet()
-    {
-    }
-    /**
-     * The content of the paragraph, broken down into its component parts.
-     *
-     * @param ParagraphElement[] $elements
-     */
-    public function setElements($elements)
-    {
-    }
-    /**
-     * @return ParagraphElement[]
-     */
-    public function getElements()
-    {
-    }
-    /**
-     * The style of this paragraph.
-     *
-     * @param ParagraphStyle $paragraphStyle
-     */
-    public function setParagraphStyle(ParagraphStyle $paragraphStyle)
-    {
-    }
-    /**
-     * @return ParagraphStyle
-     */
-    public function getParagraphStyle()
-    {
-    }
-    /**
-     * The IDs of the positioned objects tethered to this paragraph.
-     *
-     * @param string[] $positionedObjectIds
-     */
-    public function setPositionedObjectIds($positionedObjectIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPositionedObjectIds()
-    {
-    }
-    /**
-     * The suggested changes to this paragraph's bullet.
-     *
-     * @param SuggestedBullet[] $suggestedBulletChanges
-     */
-    public function setSuggestedBulletChanges($suggestedBulletChanges)
-    {
-    }
-    /**
-     * @return SuggestedBullet[]
-     */
-    public function getSuggestedBulletChanges()
-    {
-    }
-    /**
-     * The suggested paragraph style changes to this paragraph, keyed by
-     * suggestion ID.
-     *
-     * @param SuggestedParagraphStyle[] $suggestedParagraphStyleChanges
-     */
-    public function setSuggestedParagraphStyleChanges($suggestedParagraphStyleChanges)
-    {
-    }
-    /**
-     * @return SuggestedParagraphStyle[]
-     */
-    public function getSuggestedParagraphStyleChanges()
-    {
-    }
-    /**
-     * The IDs of the positioned objects suggested to be attached to this
-     * paragraph, keyed by suggestion ID.
-     *
-     * @param ObjectReferences[] $suggestedPositionedObjectIds
-     */
-    public function setSuggestedPositionedObjectIds($suggestedPositionedObjectIds)
-    {
-    }
-    /**
-     * @return ObjectReferences[]
-     */
-    public function getSuggestedPositionedObjectIds()
+    class Google_Service_Docs_Paragraph extends \Google\Service\Docs\Paragraph
     {
     }
 }

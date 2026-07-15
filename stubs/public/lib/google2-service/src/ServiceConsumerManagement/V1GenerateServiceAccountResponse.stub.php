@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceConsumerManagement;
-
-class V1GenerateServiceAccountResponse extends \Google\Model
-{
-    protected $accountType = V1ServiceAccount::class;
-    protected $accountDataType = '';
-    /**
-     * ServiceAccount that was created or retrieved.
-     *
-     * @param V1ServiceAccount $account
-     */
-    public function setAccount(V1ServiceAccount $account)
+namespace Google\Service\ServiceConsumerManagement {
+    class V1GenerateServiceAccountResponse extends \Google\Model
     {
+        protected $accountType = V1ServiceAccount::class;
+        protected $accountDataType = '';
+        /**
+         * ServiceAccount that was created or retrieved.
+         *
+         * @param V1ServiceAccount $account
+         */
+        public function setAccount(V1ServiceAccount $account)
+        {
+        }
+        /**
+         * @return V1ServiceAccount
+         */
+        public function getAccount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return V1ServiceAccount
+     * Runtime class alias of \Google\Service\ServiceConsumerManagement\V1GenerateServiceAccountResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccount()
+    class Google_Service_ServiceConsumerManagement_V1GenerateServiceAccountResponse extends \Google\Service\ServiceConsumerManagement\V1GenerateServiceAccountResponse
     {
     }
 }

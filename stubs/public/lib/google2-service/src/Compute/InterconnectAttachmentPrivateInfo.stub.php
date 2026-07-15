@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InterconnectAttachmentPrivateInfo extends \Google\Model
-{
-    /**
-     * [Output Only] 802.1q encapsulation tag to be used for traffic between
-     * Google and the customer, going to and from this network and region.
-     *
-     * @var string
-     */
-    public $tag8021q;
-    /**
-     * [Output Only] 802.1q encapsulation tag to be used for traffic between
-     * Google and the customer, going to and from this network and region.
-     *
-     * @param string $tag8021q
-     */
-    public function setTag8021q($tag8021q)
+namespace Google\Service\Compute {
+    class InterconnectAttachmentPrivateInfo extends \Google\Model
     {
+        /**
+         * [Output Only] 802.1q encapsulation tag to be used for traffic between
+         * Google and the customer, going to and from this network and region.
+         *
+         * @var string
+         */
+        public $tag8021q;
+        /**
+         * [Output Only] 802.1q encapsulation tag to be used for traffic between
+         * Google and the customer, going to and from this network and region.
+         *
+         * @param string $tag8021q
+         */
+        public function setTag8021q($tag8021q)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTag8021q()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\InterconnectAttachmentPrivateInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTag8021q()
+    class Google_Service_Compute_InterconnectAttachmentPrivateInfo extends \Google\Service\Compute\InterconnectAttachmentPrivateInfo
     {
     }
 }

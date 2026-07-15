@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_bigbluebuttonbn\task;
 
+use core\message\message;
+use core\task\adhoc_task;
+use mod_bigbluebuttonbn\instance;
+use moodle_exception;
+use stdClass;
 /**
  * Class containing the abstract class for notification processes in BBB.
  *

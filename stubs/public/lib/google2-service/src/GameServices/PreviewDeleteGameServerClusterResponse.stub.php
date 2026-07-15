@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GameServices;
-
-class PreviewDeleteGameServerClusterResponse extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $etag;
-    protected $targetStateType = TargetState::class;
-    protected $targetStateDataType = '';
-    /**
-     * @param string
-     */
-    public function setEtag($etag)
+namespace Google\Service\GameServices {
+    class PreviewDeleteGameServerClusterResponse extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $etag;
+        protected $targetStateType = TargetState::class;
+        protected $targetStateDataType = '';
+        /**
+         * @param string
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * @param TargetState
+         */
+        public function setTargetState(TargetState $targetState)
+        {
+        }
+        /**
+         * @return TargetState
+         */
+        public function getTargetState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GameServices\PreviewDeleteGameServerClusterResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
-    {
-    }
-    /**
-     * @param TargetState
-     */
-    public function setTargetState(TargetState $targetState)
-    {
-    }
-    /**
-     * @return TargetState
-     */
-    public function getTargetState()
+    class Google_Service_GameServices_PreviewDeleteGameServerClusterResponse extends \Google\Service\GameServices\PreviewDeleteGameServerClusterResponse
     {
     }
 }

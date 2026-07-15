@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PaymentsResellerSubscription;
-
-class SubscriptionLineItemBundleDetailsBundleElementDetails extends \Google\Model
-{
-    /**
-     * Output only. Product resource name that identifies the bundle element. The
-     * format is 'partners/{partner_id}/products/{product_id}'.
-     *
-     * @var string
-     */
-    public $product;
-    /**
-     * Output only. The time when this product is linked to an end user.
-     *
-     * @var string
-     */
-    public $userAccountLinkedTime;
-    /**
-     * Output only. Product resource name that identifies the bundle element. The
-     * format is 'partners/{partner_id}/products/{product_id}'.
-     *
-     * @param string $product
-     */
-    public function setProduct($product)
+namespace Google\Service\PaymentsResellerSubscription {
+    class SubscriptionLineItemBundleDetailsBundleElementDetails extends \Google\Model
     {
+        /**
+         * Output only. Product resource name that identifies the bundle element. The
+         * format is 'partners/{partner_id}/products/{product_id}'.
+         *
+         * @var string
+         */
+        public $product;
+        /**
+         * Output only. The time when this product is linked to an end user.
+         *
+         * @var string
+         */
+        public $userAccountLinkedTime;
+        /**
+         * Output only. Product resource name that identifies the bundle element. The
+         * format is 'partners/{partner_id}/products/{product_id}'.
+         *
+         * @param string $product
+         */
+        public function setProduct($product)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProduct()
+        {
+        }
+        /**
+         * Output only. The time when this product is linked to an end user.
+         *
+         * @param string $userAccountLinkedTime
+         */
+        public function setUserAccountLinkedTime($userAccountLinkedTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserAccountLinkedTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PaymentsResellerSubscription\SubscriptionLineItemBundleDetailsBundleElementDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProduct()
-    {
-    }
-    /**
-     * Output only. The time when this product is linked to an end user.
-     *
-     * @param string $userAccountLinkedTime
-     */
-    public function setUserAccountLinkedTime($userAccountLinkedTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserAccountLinkedTime()
+    class Google_Service_PaymentsResellerSubscription_SubscriptionLineItemBundleDetailsBundleElementDetails extends \Google\Service\PaymentsResellerSubscription\SubscriptionLineItemBundleDetailsBundleElementDetails
     {
     }
 }

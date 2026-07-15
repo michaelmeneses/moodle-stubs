@@ -21,79 +21,88 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class Table extends \Google\Collection
-{
-    protected $collection_key = 'rows';
-    protected $columnHeadersType = Headers::class;
-    protected $columnHeadersDataType = '';
-    /**
-     * Name of the table. Required for subtables, ignored for the main table.
-     *
-     * @var string
-     */
-    public $name;
-    protected $rowHeadersType = Headers::class;
-    protected $rowHeadersDataType = '';
-    protected $rowsType = Row::class;
-    protected $rowsDataType = 'array';
-    /**
-     * Headers of the table's columns. Optional: if not set then the table has
-     * only one dimension.
-     *
-     * @param Headers $columnHeaders
-     */
-    public function setColumnHeaders(Headers $columnHeaders)
+namespace Google\Service\ShoppingContent {
+    class Table extends \Google\Collection
     {
+        protected $collection_key = 'rows';
+        protected $columnHeadersType = Headers::class;
+        protected $columnHeadersDataType = '';
+        /**
+         * Name of the table. Required for subtables, ignored for the main table.
+         *
+         * @var string
+         */
+        public $name;
+        protected $rowHeadersType = Headers::class;
+        protected $rowHeadersDataType = '';
+        protected $rowsType = Row::class;
+        protected $rowsDataType = 'array';
+        /**
+         * Headers of the table's columns. Optional: if not set then the table has
+         * only one dimension.
+         *
+         * @param Headers $columnHeaders
+         */
+        public function setColumnHeaders(Headers $columnHeaders)
+        {
+        }
+        /**
+         * @return Headers
+         */
+        public function getColumnHeaders()
+        {
+        }
+        /**
+         * Name of the table. Required for subtables, ignored for the main table.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Headers of the table's rows. Required.
+         *
+         * @param Headers $rowHeaders
+         */
+        public function setRowHeaders(Headers $rowHeaders)
+        {
+        }
+        /**
+         * @return Headers
+         */
+        public function getRowHeaders()
+        {
+        }
+        /**
+         * The list of rows that constitute the table. Must have the same length as
+         * `rowHeaders`. Required.
+         *
+         * @param Row[] $rows
+         */
+        public function setRows($rows)
+        {
+        }
+        /**
+         * @return Row[]
+         */
+        public function getRows()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Headers
+     * Runtime class alias of \Google\Service\ShoppingContent\Table registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumnHeaders()
-    {
-    }
-    /**
-     * Name of the table. Required for subtables, ignored for the main table.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Headers of the table's rows. Required.
-     *
-     * @param Headers $rowHeaders
-     */
-    public function setRowHeaders(Headers $rowHeaders)
-    {
-    }
-    /**
-     * @return Headers
-     */
-    public function getRowHeaders()
-    {
-    }
-    /**
-     * The list of rows that constitute the table. Must have the same length as
-     * `rowHeaders`. Required.
-     *
-     * @param Row[] $rows
-     */
-    public function setRows($rows)
-    {
-    }
-    /**
-     * @return Row[]
-     */
-    public function getRows()
+    class Google_Service_ShoppingContent_Table extends \Google\Service\ShoppingContent\Table
     {
     }
 }

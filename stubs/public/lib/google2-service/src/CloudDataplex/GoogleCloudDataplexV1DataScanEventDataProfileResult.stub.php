@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1DataScanEventDataProfileResult extends \Google\Model
-{
-    /**
-     * The count of rows processed in the data scan job.
-     *
-     * @var string
-     */
-    public $rowCount;
-    /**
-     * The count of rows processed in the data scan job.
-     *
-     * @param string $rowCount
-     */
-    public function setRowCount($rowCount)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1DataScanEventDataProfileResult extends \Google\Model
     {
+        /**
+         * The count of rows processed in the data scan job.
+         *
+         * @var string
+         */
+        public $rowCount;
+        /**
+         * The count of rows processed in the data scan job.
+         *
+         * @param string $rowCount
+         */
+        public function setRowCount($rowCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRowCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataScanEventDataProfileResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRowCount()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1DataScanEventDataProfileResult extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataScanEventDataProfileResult
     {
     }
 }

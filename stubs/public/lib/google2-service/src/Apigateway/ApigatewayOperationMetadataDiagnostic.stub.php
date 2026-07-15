@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigateway;
-
-class ApigatewayOperationMetadataDiagnostic extends \Google\Model
-{
-    /**
-     * Location of the diagnostic.
-     *
-     * @var string
-     */
-    public $location;
-    /**
-     * The diagnostic message.
-     *
-     * @var string
-     */
-    public $message;
-    /**
-     * Location of the diagnostic.
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
+namespace Google\Service\Apigateway {
+    class ApigatewayOperationMetadataDiagnostic extends \Google\Model
     {
+        /**
+         * Location of the diagnostic.
+         *
+         * @var string
+         */
+        public $location;
+        /**
+         * The diagnostic message.
+         *
+         * @var string
+         */
+        public $message;
+        /**
+         * Location of the diagnostic.
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * The diagnostic message.
+         *
+         * @param string $message
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigateway\ApigatewayOperationMetadataDiagnostic registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLocation()
-    {
-    }
-    /**
-     * The diagnostic message.
-     *
-     * @param string $message
-     */
-    public function setMessage($message)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMessage()
+    class Google_Service_Apigateway_ApigatewayOperationMetadataDiagnostic extends \Google\Service\Apigateway\ApigatewayOperationMetadataDiagnostic
     {
     }
 }

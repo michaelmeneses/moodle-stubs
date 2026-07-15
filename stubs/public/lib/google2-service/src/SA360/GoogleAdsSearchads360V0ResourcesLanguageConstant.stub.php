@@ -21,114 +21,123 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0ResourcesLanguageConstant extends \Google\Model
-{
-    /**
-     * Output only. The language code, for example, "en_US", "en_AU", "es", "fr",
-     * etc.
-     *
-     * @var string
-     */
-    public $code;
-    /**
-     * Output only. The ID of the language constant.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Output only. The full name of the language in English, for example,
-     * "English (US)", "Spanish", etc.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The resource name of the language constant. Language constant
-     * resource names have the form: `languageConstants/{criterion_id}`
-     *
-     * @var string
-     */
-    public $resourceName;
-    /**
-     * Output only. Whether the language is targetable.
-     *
-     * @var bool
-     */
-    public $targetable;
-    /**
-     * Output only. The language code, for example, "en_US", "en_AU", "es", "fr",
-     * etc.
-     *
-     * @param string $code
-     */
-    public function setCode($code)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0ResourcesLanguageConstant extends \Google\Model
     {
+        /**
+         * Output only. The language code, for example, "en_US", "en_AU", "es", "fr",
+         * etc.
+         *
+         * @var string
+         */
+        public $code;
+        /**
+         * Output only. The ID of the language constant.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Output only. The full name of the language in English, for example,
+         * "English (US)", "Spanish", etc.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The resource name of the language constant. Language constant
+         * resource names have the form: `languageConstants/{criterion_id}`
+         *
+         * @var string
+         */
+        public $resourceName;
+        /**
+         * Output only. Whether the language is targetable.
+         *
+         * @var bool
+         */
+        public $targetable;
+        /**
+         * Output only. The language code, for example, "en_US", "en_AU", "es", "fr",
+         * etc.
+         *
+         * @param string $code
+         */
+        public function setCode($code)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCode()
+        {
+        }
+        /**
+         * Output only. The ID of the language constant.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Output only. The full name of the language in English, for example,
+         * "English (US)", "Spanish", etc.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The resource name of the language constant. Language constant
+         * resource names have the form: `languageConstants/{criterion_id}`
+         *
+         * @param string $resourceName
+         */
+        public function setResourceName($resourceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceName()
+        {
+        }
+        /**
+         * Output only. Whether the language is targetable.
+         *
+         * @param bool $targetable
+         */
+        public function setTargetable($targetable)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getTargetable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0ResourcesLanguageConstant registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCode()
-    {
-    }
-    /**
-     * Output only. The ID of the language constant.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Output only. The full name of the language in English, for example,
-     * "English (US)", "Spanish", etc.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The resource name of the language constant. Language constant
-     * resource names have the form: `languageConstants/{criterion_id}`
-     *
-     * @param string $resourceName
-     */
-    public function setResourceName($resourceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceName()
-    {
-    }
-    /**
-     * Output only. Whether the language is targetable.
-     *
-     * @param bool $targetable
-     */
-    public function setTargetable($targetable)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getTargetable()
+    class Google_Service_SA360_GoogleAdsSearchads360V0ResourcesLanguageConstant extends \Google\Service\SA360\GoogleAdsSearchads360V0ResourcesLanguageConstant
     {
     }
 }

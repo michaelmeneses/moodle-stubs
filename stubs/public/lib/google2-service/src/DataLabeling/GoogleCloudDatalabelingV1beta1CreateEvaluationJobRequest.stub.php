@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1CreateEvaluationJobRequest extends \Google\Model
-{
-    protected $jobType = GoogleCloudDatalabelingV1beta1EvaluationJob::class;
-    protected $jobDataType = '';
-    /**
-     * Required. The evaluation job to create.
-     *
-     * @param GoogleCloudDatalabelingV1beta1EvaluationJob $job
-     */
-    public function setJob(GoogleCloudDatalabelingV1beta1EvaluationJob $job)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1CreateEvaluationJobRequest extends \Google\Model
     {
+        protected $jobType = GoogleCloudDatalabelingV1beta1EvaluationJob::class;
+        protected $jobDataType = '';
+        /**
+         * Required. The evaluation job to create.
+         *
+         * @param GoogleCloudDatalabelingV1beta1EvaluationJob $job
+         */
+        public function setJob(GoogleCloudDatalabelingV1beta1EvaluationJob $job)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1EvaluationJob
+         */
+        public function getJob()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatalabelingV1beta1EvaluationJob
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1CreateEvaluationJobRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getJob()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1CreateEvaluationJobRequest extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1CreateEvaluationJobRequest
     {
     }
 }

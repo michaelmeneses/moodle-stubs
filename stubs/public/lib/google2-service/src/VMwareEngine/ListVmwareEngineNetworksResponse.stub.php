@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMwareEngine;
-
-class ListVmwareEngineNetworksResponse extends \Google\Collection
-{
-    protected $collection_key = 'vmwareEngineNetworks';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Unreachable resources.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    protected $vmwareEngineNetworksType = VmwareEngineNetwork::class;
-    protected $vmwareEngineNetworksDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\VMwareEngine {
+    class ListVmwareEngineNetworksResponse extends \Google\Collection
     {
+        protected $collection_key = 'vmwareEngineNetworks';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Unreachable resources.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        protected $vmwareEngineNetworksType = VmwareEngineNetwork::class;
+        protected $vmwareEngineNetworksDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Unreachable resources.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
+        /**
+         * A list of VMware Engine networks.
+         *
+         * @param VmwareEngineNetwork[] $vmwareEngineNetworks
+         */
+        public function setVmwareEngineNetworks($vmwareEngineNetworks)
+        {
+        }
+        /**
+         * @return VmwareEngineNetwork[]
+         */
+        public function getVmwareEngineNetworks()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\VMwareEngine\ListVmwareEngineNetworksResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Unreachable resources.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
-    {
-    }
-    /**
-     * A list of VMware Engine networks.
-     *
-     * @param VmwareEngineNetwork[] $vmwareEngineNetworks
-     */
-    public function setVmwareEngineNetworks($vmwareEngineNetworks)
-    {
-    }
-    /**
-     * @return VmwareEngineNetwork[]
-     */
-    public function getVmwareEngineNetworks()
+    class Google_Service_VMwareEngine_ListVmwareEngineNetworksResponse extends \Google\Service\VMwareEngine\ListVmwareEngineNetworksResponse
     {
     }
 }

@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class GCPSecretManagerCertificateConfig extends \Google\Model
-{
-    /**
-     * Secret URI, in the form
-     * "projects/$PROJECT_ID/secrets/$SECRET_NAME/versions/$VERSION". Version can
-     * be fixed (e.g. "2") or "latest"
-     *
-     * @var string
-     */
-    public $secretUri;
-    /**
-     * Secret URI, in the form
-     * "projects/$PROJECT_ID/secrets/$SECRET_NAME/versions/$VERSION". Version can
-     * be fixed (e.g. "2") or "latest"
-     *
-     * @param string $secretUri
-     */
-    public function setSecretUri($secretUri)
+namespace Google\Service\Container {
+    class GCPSecretManagerCertificateConfig extends \Google\Model
     {
+        /**
+         * Secret URI, in the form
+         * "projects/$PROJECT_ID/secrets/$SECRET_NAME/versions/$VERSION". Version can
+         * be fixed (e.g. "2") or "latest"
+         *
+         * @var string
+         */
+        public $secretUri;
+        /**
+         * Secret URI, in the form
+         * "projects/$PROJECT_ID/secrets/$SECRET_NAME/versions/$VERSION". Version can
+         * be fixed (e.g. "2") or "latest"
+         *
+         * @param string $secretUri
+         */
+        public function setSecretUri($secretUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSecretUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Container\GCPSecretManagerCertificateConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSecretUri()
+    class Google_Service_Container_GCPSecretManagerCertificateConfig extends \Google\Service\Container\GCPSecretManagerCertificateConfig
     {
     }
 }

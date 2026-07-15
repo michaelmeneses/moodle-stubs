@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PagespeedInsights;
-
-class PagespeedVersion extends \Google\Model
-{
-    /**
-     * The major version number of PageSpeed used to generate these results.
-     *
-     * @var string
-     */
-    public $major;
-    /**
-     * The minor version number of PageSpeed used to generate these results.
-     *
-     * @var string
-     */
-    public $minor;
-    /**
-     * The major version number of PageSpeed used to generate these results.
-     *
-     * @param string $major
-     */
-    public function setMajor($major)
+namespace Google\Service\PagespeedInsights {
+    class PagespeedVersion extends \Google\Model
     {
+        /**
+         * The major version number of PageSpeed used to generate these results.
+         *
+         * @var string
+         */
+        public $major;
+        /**
+         * The minor version number of PageSpeed used to generate these results.
+         *
+         * @var string
+         */
+        public $minor;
+        /**
+         * The major version number of PageSpeed used to generate these results.
+         *
+         * @param string $major
+         */
+        public function setMajor($major)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMajor()
+        {
+        }
+        /**
+         * The minor version number of PageSpeed used to generate these results.
+         *
+         * @param string $minor
+         */
+        public function setMinor($minor)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMinor()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PagespeedInsights\PagespeedVersion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMajor()
-    {
-    }
-    /**
-     * The minor version number of PageSpeed used to generate these results.
-     *
-     * @param string $minor
-     */
-    public function setMinor($minor)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMinor()
+    class Google_Service_PagespeedInsights_PagespeedVersion extends \Google\Service\PagespeedInsights\PagespeedVersion
     {
     }
 }

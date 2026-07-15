@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataManager;
-
-class ErrorInfo extends \Google\Collection
-{
-    protected $collection_key = 'errorCounts';
-    protected $errorCountsType = ErrorCount::class;
-    protected $errorCountsDataType = 'array';
-    /**
-     * A list of errors and counts per error reason. May not be populated in all
-     * cases.
-     *
-     * @param ErrorCount[] $errorCounts
-     */
-    public function setErrorCounts($errorCounts)
+namespace Google\Service\DataManager {
+    class ErrorInfo extends \Google\Collection
     {
+        protected $collection_key = 'errorCounts';
+        protected $errorCountsType = ErrorCount::class;
+        protected $errorCountsDataType = 'array';
+        /**
+         * A list of errors and counts per error reason. May not be populated in all
+         * cases.
+         *
+         * @param ErrorCount[] $errorCounts
+         */
+        public function setErrorCounts($errorCounts)
+        {
+        }
+        /**
+         * @return ErrorCount[]
+         */
+        public function getErrorCounts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ErrorCount[]
+     * Runtime class alias of \Google\Service\DataManager\ErrorInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrorCounts()
+    class Google_Service_DataManager_ErrorInfo extends \Google\Service\DataManager\ErrorInfo
     {
     }
 }

@@ -21,183 +21,192 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class CreativeGroup extends \Google\Model
-{
-    /**
-     * Account ID of this creative group. This is a read-only field that can be
-     * left blank.
-     *
-     * @var string
-     */
-    public $accountId;
-    /**
-     * Advertiser ID of this creative group. This is a required field on
-     * insertion.
-     *
-     * @var string
-     */
-    public $advertiserId;
-    protected $advertiserIdDimensionValueType = DimensionValue::class;
-    protected $advertiserIdDimensionValueDataType = '';
-    /**
-     * Subgroup of the creative group. Assign your creative groups to a subgroup
-     * in order to filter or manage them more easily. This field is required on
-     * insertion and is read-only after insertion. Acceptable values are 1 to 2,
-     * inclusive.
-     *
-     * @var int
-     */
-    public $groupNumber;
-    /**
-     * ID of this creative group. This is a read-only, auto-generated field.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#creativeGroup".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Name of this creative group. This is a required field and must be less than
-     * 256 characters long and unique among creative groups of the same
-     * advertiser.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Subaccount ID of this creative group. This is a read-only field that can be
-     * left blank.
-     *
-     * @var string
-     */
-    public $subaccountId;
-    /**
-     * Account ID of this creative group. This is a read-only field that can be
-     * left blank.
-     *
-     * @param string $accountId
-     */
-    public function setAccountId($accountId)
+namespace Google\Service\Dfareporting {
+    class CreativeGroup extends \Google\Model
     {
+        /**
+         * Account ID of this creative group. This is a read-only field that can be
+         * left blank.
+         *
+         * @var string
+         */
+        public $accountId;
+        /**
+         * Advertiser ID of this creative group. This is a required field on
+         * insertion.
+         *
+         * @var string
+         */
+        public $advertiserId;
+        protected $advertiserIdDimensionValueType = DimensionValue::class;
+        protected $advertiserIdDimensionValueDataType = '';
+        /**
+         * Subgroup of the creative group. Assign your creative groups to a subgroup
+         * in order to filter or manage them more easily. This field is required on
+         * insertion and is read-only after insertion. Acceptable values are 1 to 2,
+         * inclusive.
+         *
+         * @var int
+         */
+        public $groupNumber;
+        /**
+         * ID of this creative group. This is a read-only, auto-generated field.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#creativeGroup".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Name of this creative group. This is a required field and must be less than
+         * 256 characters long and unique among creative groups of the same
+         * advertiser.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Subaccount ID of this creative group. This is a read-only field that can be
+         * left blank.
+         *
+         * @var string
+         */
+        public $subaccountId;
+        /**
+         * Account ID of this creative group. This is a read-only field that can be
+         * left blank.
+         *
+         * @param string $accountId
+         */
+        public function setAccountId($accountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccountId()
+        {
+        }
+        /**
+         * Advertiser ID of this creative group. This is a required field on
+         * insertion.
+         *
+         * @param string $advertiserId
+         */
+        public function setAdvertiserId($advertiserId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdvertiserId()
+        {
+        }
+        /**
+         * Dimension value for the ID of the advertiser. This is a read-only, auto-
+         * generated field.
+         *
+         * @param DimensionValue $advertiserIdDimensionValue
+         */
+        public function setAdvertiserIdDimensionValue(DimensionValue $advertiserIdDimensionValue)
+        {
+        }
+        /**
+         * @return DimensionValue
+         */
+        public function getAdvertiserIdDimensionValue()
+        {
+        }
+        /**
+         * Subgroup of the creative group. Assign your creative groups to a subgroup
+         * in order to filter or manage them more easily. This field is required on
+         * insertion and is read-only after insertion. Acceptable values are 1 to 2,
+         * inclusive.
+         *
+         * @param int $groupNumber
+         */
+        public function setGroupNumber($groupNumber)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getGroupNumber()
+        {
+        }
+        /**
+         * ID of this creative group. This is a read-only, auto-generated field.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#creativeGroup".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Name of this creative group. This is a required field and must be less than
+         * 256 characters long and unique among creative groups of the same
+         * advertiser.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Subaccount ID of this creative group. This is a read-only field that can be
+         * left blank.
+         *
+         * @param string $subaccountId
+         */
+        public function setSubaccountId($subaccountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubaccountId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\CreativeGroup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountId()
-    {
-    }
-    /**
-     * Advertiser ID of this creative group. This is a required field on
-     * insertion.
-     *
-     * @param string $advertiserId
-     */
-    public function setAdvertiserId($advertiserId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAdvertiserId()
-    {
-    }
-    /**
-     * Dimension value for the ID of the advertiser. This is a read-only, auto-
-     * generated field.
-     *
-     * @param DimensionValue $advertiserIdDimensionValue
-     */
-    public function setAdvertiserIdDimensionValue(DimensionValue $advertiserIdDimensionValue)
-    {
-    }
-    /**
-     * @return DimensionValue
-     */
-    public function getAdvertiserIdDimensionValue()
-    {
-    }
-    /**
-     * Subgroup of the creative group. Assign your creative groups to a subgroup
-     * in order to filter or manage them more easily. This field is required on
-     * insertion and is read-only after insertion. Acceptable values are 1 to 2,
-     * inclusive.
-     *
-     * @param int $groupNumber
-     */
-    public function setGroupNumber($groupNumber)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getGroupNumber()
-    {
-    }
-    /**
-     * ID of this creative group. This is a read-only, auto-generated field.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#creativeGroup".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Name of this creative group. This is a required field and must be less than
-     * 256 characters long and unique among creative groups of the same
-     * advertiser.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Subaccount ID of this creative group. This is a read-only field that can be
-     * left blank.
-     *
-     * @param string $subaccountId
-     */
-    public function setSubaccountId($subaccountId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubaccountId()
+    class Google_Service_Dfareporting_CreativeGroup extends \Google\Service\Dfareporting\CreativeGroup
     {
     }
 }

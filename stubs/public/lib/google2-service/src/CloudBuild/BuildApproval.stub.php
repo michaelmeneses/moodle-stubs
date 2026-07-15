@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class BuildApproval extends \Google\Model
-{
-    protected $configType = ApprovalConfig::class;
-    protected $configDataType = '';
-    protected $resultType = ApprovalResult::class;
-    protected $resultDataType = '';
-    /**
-     * @var string
-     */
-    public $state;
-    /**
-     * @param ApprovalConfig
-     */
-    public function setConfig(ApprovalConfig $config)
+namespace Google\Service\CloudBuild {
+    class BuildApproval extends \Google\Model
     {
+        protected $configType = ApprovalConfig::class;
+        protected $configDataType = '';
+        protected $resultType = ApprovalResult::class;
+        protected $resultDataType = '';
+        /**
+         * @var string
+         */
+        public $state;
+        /**
+         * @param ApprovalConfig
+         */
+        public function setConfig(ApprovalConfig $config)
+        {
+        }
+        /**
+         * @return ApprovalConfig
+         */
+        public function getConfig()
+        {
+        }
+        /**
+         * @param ApprovalResult
+         */
+        public function setResult(ApprovalResult $result)
+        {
+        }
+        /**
+         * @return ApprovalResult
+         */
+        public function getResult()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ApprovalConfig
+     * Runtime class alias of \Google\Service\CloudBuild\BuildApproval registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfig()
-    {
-    }
-    /**
-     * @param ApprovalResult
-     */
-    public function setResult(ApprovalResult $result)
-    {
-    }
-    /**
-     * @return ApprovalResult
-     */
-    public function getResult()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getState()
+    class Google_Service_CloudBuild_BuildApproval extends \Google\Service\CloudBuild\BuildApproval
     {
     }
 }

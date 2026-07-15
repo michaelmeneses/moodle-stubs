@@ -21,29 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog\Resource;
-
-/**
- * The "enumValues" collection of methods.
- * Typical usage is:
- *  <code>
- *   $datacatalogService = new Google\Service\DataCatalog(...);
- *   $enumValues = $datacatalogService->projects_locations_tagTemplates_fields_enumValues;
- *  </code>
- */
-class ProjectsLocationsTagTemplatesFieldsEnumValues extends \Google\Service\Resource
-{
+namespace Google\Service\DataCatalog\Resource {
+    use Google\Service\DataCatalog\GoogleCloudDatacatalogV1RenameTagTemplateFieldEnumValueRequest;
+    use Google\Service\DataCatalog\GoogleCloudDatacatalogV1TagTemplateField;
     /**
-     * Renames an enum value in a tag template. Within a single enum field, enum
-     * values must be unique. (enumValues.rename)
-     *
-     * @param string $name Required. The name of the enum field value.
-     * @param GoogleCloudDatacatalogV1RenameTagTemplateFieldEnumValueRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudDatacatalogV1TagTemplateField
-     * @throws \Google\Service\Exception
+     * The "enumValues" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $datacatalogService = new Google\Service\DataCatalog(...);
+     *   $enumValues = $datacatalogService->projects_locations_tagTemplates_fields_enumValues;
+     *  </code>
      */
-    public function rename($name, GoogleCloudDatacatalogV1RenameTagTemplateFieldEnumValueRequest $postBody, $optParams = [])
+    class ProjectsLocationsTagTemplatesFieldsEnumValues extends \Google\Service\Resource
+    {
+        /**
+         * Renames an enum value in a tag template. Within a single enum field, enum
+         * values must be unique. (enumValues.rename)
+         *
+         * @param string $name Required. The name of the enum field value.
+         * @param GoogleCloudDatacatalogV1RenameTagTemplateFieldEnumValueRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudDatacatalogV1TagTemplateField
+         * @throws \Google\Service\Exception
+         */
+        public function rename($name, GoogleCloudDatacatalogV1RenameTagTemplateFieldEnumValueRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\DataCatalog\Resource\ProjectsLocationsTagTemplatesFieldsEnumValues registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_DataCatalog_Resource_ProjectsLocationsTagTemplatesFieldsEnumValues extends \Google\Service\DataCatalog\Resource\ProjectsLocationsTagTemplatesFieldsEnumValues
     {
     }
 }

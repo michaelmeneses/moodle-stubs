@@ -21,100 +21,109 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class CreateBackupMetadata extends \Google\Model
-{
-    /**
-     * The time at which cancellation of this operation was received.
-     * Operations.CancelOperation starts asynchronous cancellation on a long-
-     * running operation. The server makes a best effort to cancel the operation,
-     * but success is not guaranteed. Clients can use Operations.GetOperation or
-     * other methods to check whether the cancellation succeeded or whether the
-     * operation completed despite cancellation. On successful cancellation, the
-     * operation is not deleted; instead, it becomes an operation with an
-     * Operation.error value with a google.rpc.Status.code of 1, corresponding to
-     * `Code.CANCELLED`.
-     *
-     * @var string
-     */
-    public $cancelTime;
-    /**
-     * The name of the database the backup is created from.
-     *
-     * @var string
-     */
-    public $database;
-    /**
-     * The name of the backup being created.
-     *
-     * @var string
-     */
-    public $name;
-    protected $progressType = OperationProgress::class;
-    protected $progressDataType = '';
-    /**
-     * The time at which cancellation of this operation was received.
-     * Operations.CancelOperation starts asynchronous cancellation on a long-
-     * running operation. The server makes a best effort to cancel the operation,
-     * but success is not guaranteed. Clients can use Operations.GetOperation or
-     * other methods to check whether the cancellation succeeded or whether the
-     * operation completed despite cancellation. On successful cancellation, the
-     * operation is not deleted; instead, it becomes an operation with an
-     * Operation.error value with a google.rpc.Status.code of 1, corresponding to
-     * `Code.CANCELLED`.
-     *
-     * @param string $cancelTime
-     */
-    public function setCancelTime($cancelTime)
+namespace Google\Service\Spanner {
+    class CreateBackupMetadata extends \Google\Model
     {
+        /**
+         * The time at which cancellation of this operation was received.
+         * Operations.CancelOperation starts asynchronous cancellation on a long-
+         * running operation. The server makes a best effort to cancel the operation,
+         * but success is not guaranteed. Clients can use Operations.GetOperation or
+         * other methods to check whether the cancellation succeeded or whether the
+         * operation completed despite cancellation. On successful cancellation, the
+         * operation is not deleted; instead, it becomes an operation with an
+         * Operation.error value with a google.rpc.Status.code of 1, corresponding to
+         * `Code.CANCELLED`.
+         *
+         * @var string
+         */
+        public $cancelTime;
+        /**
+         * The name of the database the backup is created from.
+         *
+         * @var string
+         */
+        public $database;
+        /**
+         * The name of the backup being created.
+         *
+         * @var string
+         */
+        public $name;
+        protected $progressType = OperationProgress::class;
+        protected $progressDataType = '';
+        /**
+         * The time at which cancellation of this operation was received.
+         * Operations.CancelOperation starts asynchronous cancellation on a long-
+         * running operation. The server makes a best effort to cancel the operation,
+         * but success is not guaranteed. Clients can use Operations.GetOperation or
+         * other methods to check whether the cancellation succeeded or whether the
+         * operation completed despite cancellation. On successful cancellation, the
+         * operation is not deleted; instead, it becomes an operation with an
+         * Operation.error value with a google.rpc.Status.code of 1, corresponding to
+         * `Code.CANCELLED`.
+         *
+         * @param string $cancelTime
+         */
+        public function setCancelTime($cancelTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCancelTime()
+        {
+        }
+        /**
+         * The name of the database the backup is created from.
+         *
+         * @param string $database
+         */
+        public function setDatabase($database)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatabase()
+        {
+        }
+        /**
+         * The name of the backup being created.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The progress of the CreateBackup operation.
+         *
+         * @param OperationProgress $progress
+         */
+        public function setProgress(OperationProgress $progress)
+        {
+        }
+        /**
+         * @return OperationProgress
+         */
+        public function getProgress()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Spanner\CreateBackupMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCancelTime()
-    {
-    }
-    /**
-     * The name of the database the backup is created from.
-     *
-     * @param string $database
-     */
-    public function setDatabase($database)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDatabase()
-    {
-    }
-    /**
-     * The name of the backup being created.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The progress of the CreateBackup operation.
-     *
-     * @param OperationProgress $progress
-     */
-    public function setProgress(OperationProgress $progress)
-    {
-    }
-    /**
-     * @return OperationProgress
-     */
-    public function getProgress()
+    class Google_Service_Spanner_CreateBackupMetadata extends \Google\Service\Spanner\CreateBackupMetadata
     {
     }
 }

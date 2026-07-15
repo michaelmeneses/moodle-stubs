@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class SpaceDataSource extends \Google\Model
-{
-    /**
-     * If set to `true`, the multiselect menu selects the current Google Chat
-     * space as an item by default.
-     *
-     * @var bool
-     */
-    public $defaultToCurrentSpace;
-    /**
-     * If set to `true`, the multiselect menu selects the current Google Chat
-     * space as an item by default.
-     *
-     * @param bool $defaultToCurrentSpace
-     */
-    public function setDefaultToCurrentSpace($defaultToCurrentSpace)
+namespace Google\Service\HangoutsChat {
+    class SpaceDataSource extends \Google\Model
     {
+        /**
+         * If set to `true`, the multiselect menu selects the current Google Chat
+         * space as an item by default.
+         *
+         * @var bool
+         */
+        public $defaultToCurrentSpace;
+        /**
+         * If set to `true`, the multiselect menu selects the current Google Chat
+         * space as an item by default.
+         *
+         * @param bool $defaultToCurrentSpace
+         */
+        public function setDefaultToCurrentSpace($defaultToCurrentSpace)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDefaultToCurrentSpace()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\HangoutsChat\SpaceDataSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDefaultToCurrentSpace()
+    class Google_Service_HangoutsChat_SpaceDataSource extends \Google\Service\HangoutsChat\SpaceDataSource
     {
     }
 }

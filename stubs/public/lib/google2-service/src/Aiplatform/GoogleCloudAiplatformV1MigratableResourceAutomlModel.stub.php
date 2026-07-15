@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1MigratableResourceAutomlModel extends \Google\Model
-{
-    /**
-     * Full resource name of automl Model. Format:
-     * `projects/{project}/locations/{location}/models/{model}`.
-     *
-     * @var string
-     */
-    public $model;
-    /**
-     * The Model's display name in automl.googleapis.com.
-     *
-     * @var string
-     */
-    public $modelDisplayName;
-    /**
-     * Full resource name of automl Model. Format:
-     * `projects/{project}/locations/{location}/models/{model}`.
-     *
-     * @param string $model
-     */
-    public function setModel($model)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1MigratableResourceAutomlModel extends \Google\Model
     {
+        /**
+         * Full resource name of automl Model. Format:
+         * `projects/{project}/locations/{location}/models/{model}`.
+         *
+         * @var string
+         */
+        public $model;
+        /**
+         * The Model's display name in automl.googleapis.com.
+         *
+         * @var string
+         */
+        public $modelDisplayName;
+        /**
+         * Full resource name of automl Model. Format:
+         * `projects/{project}/locations/{location}/models/{model}`.
+         *
+         * @param string $model
+         */
+        public function setModel($model)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getModel()
+        {
+        }
+        /**
+         * The Model's display name in automl.googleapis.com.
+         *
+         * @param string $modelDisplayName
+         */
+        public function setModelDisplayName($modelDisplayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getModelDisplayName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1MigratableResourceAutomlModel registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getModel()
-    {
-    }
-    /**
-     * The Model's display name in automl.googleapis.com.
-     *
-     * @param string $modelDisplayName
-     */
-    public function setModelDisplayName($modelDisplayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getModelDisplayName()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1MigratableResourceAutomlModel extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1MigratableResourceAutomlModel
     {
     }
 }

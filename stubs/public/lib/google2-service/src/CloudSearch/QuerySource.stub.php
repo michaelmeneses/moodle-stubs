@@ -21,83 +21,92 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class QuerySource extends \Google\Collection
-{
-    protected $collection_key = 'operators';
-    /**
-     * Display name of the data source.
-     *
-     * @var string
-     */
-    public $displayName;
-    protected $operatorsType = QueryOperator::class;
-    protected $operatorsDataType = 'array';
-    /**
-     * A short name or alias for the source. This value can be used with the
-     * 'source' operator.
-     *
-     * @var string
-     */
-    public $shortName;
-    protected $sourceType = Source::class;
-    protected $sourceDataType = '';
-    /**
-     * Display name of the data source.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\CloudSearch {
+    class QuerySource extends \Google\Collection
     {
+        protected $collection_key = 'operators';
+        /**
+         * Display name of the data source.
+         *
+         * @var string
+         */
+        public $displayName;
+        protected $operatorsType = QueryOperator::class;
+        protected $operatorsDataType = 'array';
+        /**
+         * A short name or alias for the source. This value can be used with the
+         * 'source' operator.
+         *
+         * @var string
+         */
+        public $shortName;
+        protected $sourceType = Source::class;
+        protected $sourceDataType = '';
+        /**
+         * Display name of the data source.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * List of all operators applicable for this source.
+         *
+         * @param QueryOperator[] $operators
+         */
+        public function setOperators($operators)
+        {
+        }
+        /**
+         * @return QueryOperator[]
+         */
+        public function getOperators()
+        {
+        }
+        /**
+         * A short name or alias for the source. This value can be used with the
+         * 'source' operator.
+         *
+         * @param string $shortName
+         */
+        public function setShortName($shortName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getShortName()
+        {
+        }
+        /**
+         * The name of the source
+         *
+         * @param Source $source
+         */
+        public function setSource(Source $source)
+        {
+        }
+        /**
+         * @return Source
+         */
+        public function getSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\QuerySource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * List of all operators applicable for this source.
-     *
-     * @param QueryOperator[] $operators
-     */
-    public function setOperators($operators)
-    {
-    }
-    /**
-     * @return QueryOperator[]
-     */
-    public function getOperators()
-    {
-    }
-    /**
-     * A short name or alias for the source. This value can be used with the
-     * 'source' operator.
-     *
-     * @param string $shortName
-     */
-    public function setShortName($shortName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getShortName()
-    {
-    }
-    /**
-     * The name of the source
-     *
-     * @param Source $source
-     */
-    public function setSource(Source $source)
-    {
-    }
-    /**
-     * @return Source
-     */
-    public function getSource()
+    class Google_Service_CloudSearch_QuerySource extends \Google\Service\CloudSearch\QuerySource
     {
     }
 }

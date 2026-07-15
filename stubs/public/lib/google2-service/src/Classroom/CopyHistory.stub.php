@@ -21,93 +21,102 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Classroom;
-
-class CopyHistory extends \Google\Model
-{
-    /**
-     * Immutable. Identifier of the attachment.
-     *
-     * @var string
-     */
-    public $attachmentId;
-    /**
-     * Immutable. Identifier of the course.
-     *
-     * @var string
-     */
-    public $courseId;
-    /**
-     * Immutable. Identifier of the `Announcement`, `CourseWork`, or
-     * `CourseWorkMaterial` under which the attachment is attached.
-     *
-     * @var string
-     */
-    public $itemId;
-    /**
-     * Immutable. Deprecated, use `item_id` instead.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $postId;
-    /**
-     * Immutable. Identifier of the attachment.
-     *
-     * @param string $attachmentId
-     */
-    public function setAttachmentId($attachmentId)
+namespace Google\Service\Classroom {
+    class CopyHistory extends \Google\Model
     {
+        /**
+         * Immutable. Identifier of the attachment.
+         *
+         * @var string
+         */
+        public $attachmentId;
+        /**
+         * Immutable. Identifier of the course.
+         *
+         * @var string
+         */
+        public $courseId;
+        /**
+         * Immutable. Identifier of the `Announcement`, `CourseWork`, or
+         * `CourseWorkMaterial` under which the attachment is attached.
+         *
+         * @var string
+         */
+        public $itemId;
+        /**
+         * Immutable. Deprecated, use `item_id` instead.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $postId;
+        /**
+         * Immutable. Identifier of the attachment.
+         *
+         * @param string $attachmentId
+         */
+        public function setAttachmentId($attachmentId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAttachmentId()
+        {
+        }
+        /**
+         * Immutable. Identifier of the course.
+         *
+         * @param string $courseId
+         */
+        public function setCourseId($courseId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCourseId()
+        {
+        }
+        /**
+         * Immutable. Identifier of the `Announcement`, `CourseWork`, or
+         * `CourseWorkMaterial` under which the attachment is attached.
+         *
+         * @param string $itemId
+         */
+        public function setItemId($itemId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getItemId()
+        {
+        }
+        /**
+         * Immutable. Deprecated, use `item_id` instead.
+         *
+         * @deprecated
+         * @param string $postId
+         */
+        public function setPostId($postId)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getPostId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Classroom\CopyHistory registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttachmentId()
-    {
-    }
-    /**
-     * Immutable. Identifier of the course.
-     *
-     * @param string $courseId
-     */
-    public function setCourseId($courseId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCourseId()
-    {
-    }
-    /**
-     * Immutable. Identifier of the `Announcement`, `CourseWork`, or
-     * `CourseWorkMaterial` under which the attachment is attached.
-     *
-     * @param string $itemId
-     */
-    public function setItemId($itemId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getItemId()
-    {
-    }
-    /**
-     * Immutable. Deprecated, use `item_id` instead.
-     *
-     * @deprecated
-     * @param string $postId
-     */
-    public function setPostId($postId)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getPostId()
+    class Google_Service_Classroom_CopyHistory extends \Google\Service\Classroom\CopyHistory
     {
     }
 }

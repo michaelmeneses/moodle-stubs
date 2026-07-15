@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaTextSegment extends \Google\Model
-{
-    /**
-     * The text content in the segment for output only.
-     *
-     * @var string
-     */
-    public $content;
-    /**
-     * Zero-based character index of the first character past the end of the text
-     * segment (counting character from the beginning of the text). The character
-     * at the end_offset is NOT included in the text segment.
-     *
-     * @var string
-     */
-    public $endOffset;
-    /**
-     * Zero-based character index of the first character of the text segment
-     * (counting characters from the beginning of the text).
-     *
-     * @var string
-     */
-    public $startOffset;
-    /**
-     * The text content in the segment for output only.
-     *
-     * @param string $content
-     */
-    public function setContent($content)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaTextSegment extends \Google\Model
     {
+        /**
+         * The text content in the segment for output only.
+         *
+         * @var string
+         */
+        public $content;
+        /**
+         * Zero-based character index of the first character past the end of the text
+         * segment (counting character from the beginning of the text). The character
+         * at the end_offset is NOT included in the text segment.
+         *
+         * @var string
+         */
+        public $endOffset;
+        /**
+         * Zero-based character index of the first character of the text segment
+         * (counting characters from the beginning of the text).
+         *
+         * @var string
+         */
+        public $startOffset;
+        /**
+         * The text content in the segment for output only.
+         *
+         * @param string $content
+         */
+        public function setContent($content)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContent()
+        {
+        }
+        /**
+         * Zero-based character index of the first character past the end of the text
+         * segment (counting character from the beginning of the text). The character
+         * at the end_offset is NOT included in the text segment.
+         *
+         * @param string $endOffset
+         */
+        public function setEndOffset($endOffset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndOffset()
+        {
+        }
+        /**
+         * Zero-based character index of the first character of the text segment
+         * (counting characters from the beginning of the text).
+         *
+         * @param string $startOffset
+         */
+        public function setStartOffset($startOffset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartOffset()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaTextSegment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContent()
-    {
-    }
-    /**
-     * Zero-based character index of the first character past the end of the text
-     * segment (counting character from the beginning of the text). The character
-     * at the end_offset is NOT included in the text segment.
-     *
-     * @param string $endOffset
-     */
-    public function setEndOffset($endOffset)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndOffset()
-    {
-    }
-    /**
-     * Zero-based character index of the first character of the text segment
-     * (counting characters from the beginning of the text).
-     *
-     * @param string $startOffset
-     */
-    public function setStartOffset($startOffset)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartOffset()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaTextSegment extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaTextSegment
     {
     }
 }

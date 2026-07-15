@@ -8,6 +8,7 @@
  */
 namespace Aws\DirectoryServiceData;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Directory Service Data** service.
  * @method \Aws\Result addGroupMember(array $args = [])

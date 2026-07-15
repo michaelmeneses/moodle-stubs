@@ -21,213 +21,222 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Calendar;
-
-class Calendar extends \Google\Model
-{
-    /**
-     * Whether this calendar automatically accepts invitations. Only valid for
-     * resource calendars.
-     *
-     * @var bool
-     */
-    public $autoAcceptInvitations;
-    protected $conferencePropertiesType = ConferenceProperties::class;
-    protected $conferencePropertiesDataType = '';
-    /**
-     * The email of the owner of the calendar. Set only for secondary calendars.
-     * Read-only.
-     *
-     * @var string
-     */
-    public $dataOwner;
-    /**
-     * Description of the calendar. Optional.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * ETag of the resource.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * Identifier of the calendar. To retrieve IDs call the calendarList.list()
-     * method.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Type of the resource ("calendar#calendar").
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Geographic location of the calendar as free-form text. Optional.
-     *
-     * @var string
-     */
-    public $location;
-    /**
-     * Title of the calendar.
-     *
-     * @var string
-     */
-    public $summary;
-    /**
-     * The time zone of the calendar. (Formatted as an IANA Time Zone Database
-     * name, e.g. "Europe/Zurich".) Optional.
-     *
-     * @var string
-     */
-    public $timeZone;
-    /**
-     * Whether this calendar automatically accepts invitations. Only valid for
-     * resource calendars.
-     *
-     * @param bool $autoAcceptInvitations
-     */
-    public function setAutoAcceptInvitations($autoAcceptInvitations)
+namespace Google\Service\Calendar {
+    class Calendar extends \Google\Model
     {
+        /**
+         * Whether this calendar automatically accepts invitations. Only valid for
+         * resource calendars.
+         *
+         * @var bool
+         */
+        public $autoAcceptInvitations;
+        protected $conferencePropertiesType = ConferenceProperties::class;
+        protected $conferencePropertiesDataType = '';
+        /**
+         * The email of the owner of the calendar. Set only for secondary calendars.
+         * Read-only.
+         *
+         * @var string
+         */
+        public $dataOwner;
+        /**
+         * Description of the calendar. Optional.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * ETag of the resource.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * Identifier of the calendar. To retrieve IDs call the calendarList.list()
+         * method.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Type of the resource ("calendar#calendar").
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Geographic location of the calendar as free-form text. Optional.
+         *
+         * @var string
+         */
+        public $location;
+        /**
+         * Title of the calendar.
+         *
+         * @var string
+         */
+        public $summary;
+        /**
+         * The time zone of the calendar. (Formatted as an IANA Time Zone Database
+         * name, e.g. "Europe/Zurich".) Optional.
+         *
+         * @var string
+         */
+        public $timeZone;
+        /**
+         * Whether this calendar automatically accepts invitations. Only valid for
+         * resource calendars.
+         *
+         * @param bool $autoAcceptInvitations
+         */
+        public function setAutoAcceptInvitations($autoAcceptInvitations)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAutoAcceptInvitations()
+        {
+        }
+        /**
+         * Conferencing properties for this calendar, for example what types of
+         * conferences are allowed.
+         *
+         * @param ConferenceProperties $conferenceProperties
+         */
+        public function setConferenceProperties(ConferenceProperties $conferenceProperties)
+        {
+        }
+        /**
+         * @return ConferenceProperties
+         */
+        public function getConferenceProperties()
+        {
+        }
+        /**
+         * The email of the owner of the calendar. Set only for secondary calendars.
+         * Read-only.
+         *
+         * @param string $dataOwner
+         */
+        public function setDataOwner($dataOwner)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataOwner()
+        {
+        }
+        /**
+         * Description of the calendar. Optional.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * ETag of the resource.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * Identifier of the calendar. To retrieve IDs call the calendarList.list()
+         * method.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Type of the resource ("calendar#calendar").
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Geographic location of the calendar as free-form text. Optional.
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * Title of the calendar.
+         *
+         * @param string $summary
+         */
+        public function setSummary($summary)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSummary()
+        {
+        }
+        /**
+         * The time zone of the calendar. (Formatted as an IANA Time Zone Database
+         * name, e.g. "Europe/Zurich".) Optional.
+         *
+         * @param string $timeZone
+         */
+        public function setTimeZone($timeZone)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimeZone()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Calendar\Calendar registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAutoAcceptInvitations()
-    {
-    }
-    /**
-     * Conferencing properties for this calendar, for example what types of
-     * conferences are allowed.
-     *
-     * @param ConferenceProperties $conferenceProperties
-     */
-    public function setConferenceProperties(ConferenceProperties $conferenceProperties)
-    {
-    }
-    /**
-     * @return ConferenceProperties
-     */
-    public function getConferenceProperties()
-    {
-    }
-    /**
-     * The email of the owner of the calendar. Set only for secondary calendars.
-     * Read-only.
-     *
-     * @param string $dataOwner
-     */
-    public function setDataOwner($dataOwner)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDataOwner()
-    {
-    }
-    /**
-     * Description of the calendar. Optional.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * ETag of the resource.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * Identifier of the calendar. To retrieve IDs call the calendarList.list()
-     * method.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Type of the resource ("calendar#calendar").
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Geographic location of the calendar as free-form text. Optional.
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocation()
-    {
-    }
-    /**
-     * Title of the calendar.
-     *
-     * @param string $summary
-     */
-    public function setSummary($summary)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSummary()
-    {
-    }
-    /**
-     * The time zone of the calendar. (Formatted as an IANA Time Zone Database
-     * name, e.g. "Europe/Zurich".) Optional.
-     *
-     * @param string $timeZone
-     */
-    public function setTimeZone($timeZone)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimeZone()
+    class Google_Service_Calendar_Calendar extends \Google\Service\Calendar\Calendar
     {
     }
 }

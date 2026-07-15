@@ -21,28 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Logging\Resource;
-
-/**
- * The "operations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $loggingService = new Google\Service\Logging(...);
- *   $operations = $loggingService->operations;
- *  </code>
- */
-class BillingAccountsOperations extends \Google\Service\Resource
-{
+namespace Google\Service\Logging\Resource {
+    use Google\Service\Logging\Operation;
     /**
-     * Gets the latest state of a long-running operation. Clients can use this
-     * method to poll the operation result at intervals as recommended by the API
-     * service. (operations.get)
-     *
-     * @param string $name The name of the operation resource.
-     * @param array $optParams Optional parameters.
-     * @return Operation
+     * The "operations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $loggingService = new Google\Service\Logging(...);
+     *   $operations = $loggingService->operations;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class BillingAccountsOperations extends \Google\Service\Resource
+    {
+        /**
+         * Gets the latest state of a long-running operation. Clients can use this
+         * method to poll the operation result at intervals as recommended by the API
+         * service. (operations.get)
+         *
+         * @param string $name The name of the operation resource.
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Logging\Resource\BillingAccountsOperations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Logging_Resource_BillingAccountsOperations extends \Google\Service\Logging\Resource\BillingAccountsOperations
     {
     }
 }

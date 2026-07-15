@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class ListNegativeKeywordsResponse extends \Google\Collection
-{
-    protected $collection_key = 'negativeKeywords';
-    protected $negativeKeywordsType = NegativeKeyword::class;
-    protected $negativeKeywordsDataType = 'array';
-    /**
-     * A token to retrieve the next page of results. Pass this value in the
-     * page_token field in the subsequent call to `ListNegativeKeywords` method to
-     * retrieve the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of negative keywords. This list will be absent if empty.
-     *
-     * @param NegativeKeyword[] $negativeKeywords
-     */
-    public function setNegativeKeywords($negativeKeywords)
+namespace Google\Service\DisplayVideo {
+    class ListNegativeKeywordsResponse extends \Google\Collection
     {
+        protected $collection_key = 'negativeKeywords';
+        protected $negativeKeywordsType = NegativeKeyword::class;
+        protected $negativeKeywordsDataType = 'array';
+        /**
+         * A token to retrieve the next page of results. Pass this value in the
+         * page_token field in the subsequent call to `ListNegativeKeywords` method to
+         * retrieve the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of negative keywords. This list will be absent if empty.
+         *
+         * @param NegativeKeyword[] $negativeKeywords
+         */
+        public function setNegativeKeywords($negativeKeywords)
+        {
+        }
+        /**
+         * @return NegativeKeyword[]
+         */
+        public function getNegativeKeywords()
+        {
+        }
+        /**
+         * A token to retrieve the next page of results. Pass this value in the
+         * page_token field in the subsequent call to `ListNegativeKeywords` method to
+         * retrieve the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return NegativeKeyword[]
+     * Runtime class alias of \Google\Service\DisplayVideo\ListNegativeKeywordsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNegativeKeywords()
-    {
-    }
-    /**
-     * A token to retrieve the next page of results. Pass this value in the
-     * page_token field in the subsequent call to `ListNegativeKeywords` method to
-     * retrieve the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_DisplayVideo_ListNegativeKeywordsResponse extends \Google\Service\DisplayVideo\ListNegativeKeywordsResponse
     {
     }
 }

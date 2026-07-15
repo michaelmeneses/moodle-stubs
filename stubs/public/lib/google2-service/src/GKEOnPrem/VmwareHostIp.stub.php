@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class VmwareHostIp extends \Google\Model
-{
-    /**
-     * Hostname of the machine. VM's name will be used if this field is empty.
-     *
-     * @var string
-     */
-    public $hostname;
-    /**
-     * IP could be an IP address (like 1.2.3.4) or a CIDR (like 1.2.3.0/24).
-     *
-     * @var string
-     */
-    public $ip;
-    /**
-     * Hostname of the machine. VM's name will be used if this field is empty.
-     *
-     * @param string $hostname
-     */
-    public function setHostname($hostname)
+namespace Google\Service\GKEOnPrem {
+    class VmwareHostIp extends \Google\Model
     {
+        /**
+         * Hostname of the machine. VM's name will be used if this field is empty.
+         *
+         * @var string
+         */
+        public $hostname;
+        /**
+         * IP could be an IP address (like 1.2.3.4) or a CIDR (like 1.2.3.0/24).
+         *
+         * @var string
+         */
+        public $ip;
+        /**
+         * Hostname of the machine. VM's name will be used if this field is empty.
+         *
+         * @param string $hostname
+         */
+        public function setHostname($hostname)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHostname()
+        {
+        }
+        /**
+         * IP could be an IP address (like 1.2.3.4) or a CIDR (like 1.2.3.0/24).
+         *
+         * @param string $ip
+         */
+        public function setIp($ip)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIp()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEOnPrem\VmwareHostIp registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHostname()
-    {
-    }
-    /**
-     * IP could be an IP address (like 1.2.3.4) or a CIDR (like 1.2.3.0/24).
-     *
-     * @param string $ip
-     */
-    public function setIp($ip)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIp()
+    class Google_Service_GKEOnPrem_VmwareHostIp extends \Google\Service\GKEOnPrem\VmwareHostIp
     {
     }
 }

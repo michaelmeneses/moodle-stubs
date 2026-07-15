@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMMigrationService;
-
-class OSDescription extends \Google\Model
-{
-    /**
-     * OS offer.
-     *
-     * @var string
-     */
-    public $offer;
-    /**
-     * OS plan.
-     *
-     * @var string
-     */
-    public $plan;
-    /**
-     * OS publisher.
-     *
-     * @var string
-     */
-    public $publisher;
-    /**
-     * OS type.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * OS offer.
-     *
-     * @param string $offer
-     */
-    public function setOffer($offer)
+namespace Google\Service\VMMigrationService {
+    class OSDescription extends \Google\Model
     {
+        /**
+         * OS offer.
+         *
+         * @var string
+         */
+        public $offer;
+        /**
+         * OS plan.
+         *
+         * @var string
+         */
+        public $plan;
+        /**
+         * OS publisher.
+         *
+         * @var string
+         */
+        public $publisher;
+        /**
+         * OS type.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * OS offer.
+         *
+         * @param string $offer
+         */
+        public function setOffer($offer)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOffer()
+        {
+        }
+        /**
+         * OS plan.
+         *
+         * @param string $plan
+         */
+        public function setPlan($plan)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPlan()
+        {
+        }
+        /**
+         * OS publisher.
+         *
+         * @param string $publisher
+         */
+        public function setPublisher($publisher)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPublisher()
+        {
+        }
+        /**
+         * OS type.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\VMMigrationService\OSDescription registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOffer()
-    {
-    }
-    /**
-     * OS plan.
-     *
-     * @param string $plan
-     */
-    public function setPlan($plan)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPlan()
-    {
-    }
-    /**
-     * OS publisher.
-     *
-     * @param string $publisher
-     */
-    public function setPublisher($publisher)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPublisher()
-    {
-    }
-    /**
-     * OS type.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_VMMigrationService_OSDescription extends \Google\Service\VMMigrationService\OSDescription
     {
     }
 }

@@ -21,33 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RealTimeBidding;
-
-class RemoveTargetedSitesRequest extends \Google\Collection
-{
-    protected $collection_key = 'sites';
-    /**
-     * A list of site URLs to stop targeting in the pretargeting configuration.
-     * These values will be removed from the list of targeted URLs in
-     * PretargetingConfig.webTargeting.values.
-     *
-     * @var string[]
-     */
-    public $sites;
-    /**
-     * A list of site URLs to stop targeting in the pretargeting configuration.
-     * These values will be removed from the list of targeted URLs in
-     * PretargetingConfig.webTargeting.values.
-     *
-     * @param string[] $sites
-     */
-    public function setSites($sites)
+namespace Google\Service\RealTimeBidding {
+    class RemoveTargetedSitesRequest extends \Google\Collection
     {
+        protected $collection_key = 'sites';
+        /**
+         * A list of site URLs to stop targeting in the pretargeting configuration.
+         * These values will be removed from the list of targeted URLs in
+         * PretargetingConfig.webTargeting.values.
+         *
+         * @var string[]
+         */
+        public $sites;
+        /**
+         * A list of site URLs to stop targeting in the pretargeting configuration.
+         * These values will be removed from the list of targeted URLs in
+         * PretargetingConfig.webTargeting.values.
+         *
+         * @param string[] $sites
+         */
+        public function setSites($sites)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSites()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\RealTimeBidding\RemoveTargetedSitesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSites()
+    class Google_Service_RealTimeBidding_RemoveTargetedSitesRequest extends \Google\Service\RealTimeBidding\RemoveTargetedSitesRequest
     {
     }
 }

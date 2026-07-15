@@ -21,61 +21,70 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SpeechConfig extends \Google\Model
-{
-    /**
-     * Optional. The language code (ISO 639-1) for the speech synthesis.
-     *
-     * @var string
-     */
-    public $languageCode;
-    protected $multiSpeakerVoiceConfigType = GoogleCloudAiplatformV1MultiSpeakerVoiceConfig::class;
-    protected $multiSpeakerVoiceConfigDataType = '';
-    protected $voiceConfigType = GoogleCloudAiplatformV1VoiceConfig::class;
-    protected $voiceConfigDataType = '';
-    /**
-     * Optional. The language code (ISO 639-1) for the speech synthesis.
-     *
-     * @param string $languageCode
-     */
-    public function setLanguageCode($languageCode)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SpeechConfig extends \Google\Model
     {
+        /**
+         * Optional. The language code (ISO 639-1) for the speech synthesis.
+         *
+         * @var string
+         */
+        public $languageCode;
+        protected $multiSpeakerVoiceConfigType = GoogleCloudAiplatformV1MultiSpeakerVoiceConfig::class;
+        protected $multiSpeakerVoiceConfigDataType = '';
+        protected $voiceConfigType = GoogleCloudAiplatformV1VoiceConfig::class;
+        protected $voiceConfigDataType = '';
+        /**
+         * Optional. The language code (ISO 639-1) for the speech synthesis.
+         *
+         * @param string $languageCode
+         */
+        public function setLanguageCode($languageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLanguageCode()
+        {
+        }
+        /**
+         * The configuration for a multi-speaker text-to-speech request. This field is
+         * mutually exclusive with `voice_config`.
+         *
+         * @param GoogleCloudAiplatformV1MultiSpeakerVoiceConfig $multiSpeakerVoiceConfig
+         */
+        public function setMultiSpeakerVoiceConfig(GoogleCloudAiplatformV1MultiSpeakerVoiceConfig $multiSpeakerVoiceConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1MultiSpeakerVoiceConfig
+         */
+        public function getMultiSpeakerVoiceConfig()
+        {
+        }
+        /**
+         * The configuration for the voice to use.
+         *
+         * @param GoogleCloudAiplatformV1VoiceConfig $voiceConfig
+         */
+        public function setVoiceConfig(GoogleCloudAiplatformV1VoiceConfig $voiceConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1VoiceConfig
+         */
+        public function getVoiceConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SpeechConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLanguageCode()
-    {
-    }
-    /**
-     * The configuration for a multi-speaker text-to-speech request. This field is
-     * mutually exclusive with `voice_config`.
-     *
-     * @param GoogleCloudAiplatformV1MultiSpeakerVoiceConfig $multiSpeakerVoiceConfig
-     */
-    public function setMultiSpeakerVoiceConfig(GoogleCloudAiplatformV1MultiSpeakerVoiceConfig $multiSpeakerVoiceConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1MultiSpeakerVoiceConfig
-     */
-    public function getMultiSpeakerVoiceConfig()
-    {
-    }
-    /**
-     * The configuration for the voice to use.
-     *
-     * @param GoogleCloudAiplatformV1VoiceConfig $voiceConfig
-     */
-    public function setVoiceConfig(GoogleCloudAiplatformV1VoiceConfig $voiceConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1VoiceConfig
-     */
-    public function getVoiceConfig()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SpeechConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SpeechConfig
     {
     }
 }

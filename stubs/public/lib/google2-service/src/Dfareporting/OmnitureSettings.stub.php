@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class OmnitureSettings extends \Google\Model
-{
-    /**
-     * Whether placement cost data will be sent to Omniture. This property can be
-     * enabled only if omnitureIntegrationEnabled is true.
-     *
-     * @var bool
-     */
-    public $omnitureCostDataEnabled;
-    /**
-     * Whether Omniture integration is enabled. This property can be enabled only
-     * when the "Advanced Ad Serving" account setting is enabled.
-     *
-     * @var bool
-     */
-    public $omnitureIntegrationEnabled;
-    /**
-     * Whether placement cost data will be sent to Omniture. This property can be
-     * enabled only if omnitureIntegrationEnabled is true.
-     *
-     * @param bool $omnitureCostDataEnabled
-     */
-    public function setOmnitureCostDataEnabled($omnitureCostDataEnabled)
+namespace Google\Service\Dfareporting {
+    class OmnitureSettings extends \Google\Model
     {
+        /**
+         * Whether placement cost data will be sent to Omniture. This property can be
+         * enabled only if omnitureIntegrationEnabled is true.
+         *
+         * @var bool
+         */
+        public $omnitureCostDataEnabled;
+        /**
+         * Whether Omniture integration is enabled. This property can be enabled only
+         * when the "Advanced Ad Serving" account setting is enabled.
+         *
+         * @var bool
+         */
+        public $omnitureIntegrationEnabled;
+        /**
+         * Whether placement cost data will be sent to Omniture. This property can be
+         * enabled only if omnitureIntegrationEnabled is true.
+         *
+         * @param bool $omnitureCostDataEnabled
+         */
+        public function setOmnitureCostDataEnabled($omnitureCostDataEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getOmnitureCostDataEnabled()
+        {
+        }
+        /**
+         * Whether Omniture integration is enabled. This property can be enabled only
+         * when the "Advanced Ad Serving" account setting is enabled.
+         *
+         * @param bool $omnitureIntegrationEnabled
+         */
+        public function setOmnitureIntegrationEnabled($omnitureIntegrationEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getOmnitureIntegrationEnabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Dfareporting\OmnitureSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOmnitureCostDataEnabled()
-    {
-    }
-    /**
-     * Whether Omniture integration is enabled. This property can be enabled only
-     * when the "Advanced Ad Serving" account setting is enabled.
-     *
-     * @param bool $omnitureIntegrationEnabled
-     */
-    public function setOmnitureIntegrationEnabled($omnitureIntegrationEnabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getOmnitureIntegrationEnabled()
+    class Google_Service_Dfareporting_OmnitureSettings extends \Google\Service\Dfareporting\OmnitureSettings
     {
     }
 }

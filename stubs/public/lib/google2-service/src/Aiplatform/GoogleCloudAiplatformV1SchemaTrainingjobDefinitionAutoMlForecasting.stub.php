@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlForecasting extends \Google\Model
-{
-    protected $inputsType = GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlForecastingInputs::class;
-    protected $inputsDataType = '';
-    protected $metadataType = GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlForecastingMetadata::class;
-    protected $metadataDataType = '';
-    /**
-     * The input parameters of this TrainingJob.
-     *
-     * @param GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlForecastingInputs $inputs
-     */
-    public function setInputs(GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlForecastingInputs $inputs)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlForecasting extends \Google\Model
     {
+        protected $inputsType = GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlForecastingInputs::class;
+        protected $inputsDataType = '';
+        protected $metadataType = GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlForecastingMetadata::class;
+        protected $metadataDataType = '';
+        /**
+         * The input parameters of this TrainingJob.
+         *
+         * @param GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlForecastingInputs $inputs
+         */
+        public function setInputs(GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlForecastingInputs $inputs)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlForecastingInputs
+         */
+        public function getInputs()
+        {
+        }
+        /**
+         * The metadata information.
+         *
+         * @param GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlForecastingMetadata $metadata
+         */
+        public function setMetadata(GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlForecastingMetadata $metadata)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlForecastingMetadata
+         */
+        public function getMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlForecastingInputs
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlForecasting registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInputs()
-    {
-    }
-    /**
-     * The metadata information.
-     *
-     * @param GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlForecastingMetadata $metadata
-     */
-    public function setMetadata(GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlForecastingMetadata $metadata)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlForecastingMetadata
-     */
-    public function getMetadata()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlForecasting extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlForecasting
     {
     }
 }

@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class FutureResourcesSpecTargetResources extends \Google\Model
-{
-    protected $aggregateResourcesType = FutureResourcesSpecAggregateResources::class;
-    protected $aggregateResourcesDataType = '';
-    protected $specificSkuResourcesType = FutureResourcesSpecSpecificSKUResources::class;
-    protected $specificSkuResourcesDataType = '';
-    /**
-     * @param FutureResourcesSpecAggregateResources $aggregateResources
-     */
-    public function setAggregateResources(FutureResourcesSpecAggregateResources $aggregateResources)
+namespace Google\Service\Compute {
+    class FutureResourcesSpecTargetResources extends \Google\Model
     {
+        protected $aggregateResourcesType = FutureResourcesSpecAggregateResources::class;
+        protected $aggregateResourcesDataType = '';
+        protected $specificSkuResourcesType = FutureResourcesSpecSpecificSKUResources::class;
+        protected $specificSkuResourcesDataType = '';
+        /**
+         * @param FutureResourcesSpecAggregateResources $aggregateResources
+         */
+        public function setAggregateResources(FutureResourcesSpecAggregateResources $aggregateResources)
+        {
+        }
+        /**
+         * @return FutureResourcesSpecAggregateResources
+         */
+        public function getAggregateResources()
+        {
+        }
+        /**
+         * @param FutureResourcesSpecSpecificSKUResources $specificSkuResources
+         */
+        public function setSpecificSkuResources(FutureResourcesSpecSpecificSKUResources $specificSkuResources)
+        {
+        }
+        /**
+         * @return FutureResourcesSpecSpecificSKUResources
+         */
+        public function getSpecificSkuResources()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FutureResourcesSpecAggregateResources
+     * Runtime class alias of \Google\Service\Compute\FutureResourcesSpecTargetResources registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAggregateResources()
-    {
-    }
-    /**
-     * @param FutureResourcesSpecSpecificSKUResources $specificSkuResources
-     */
-    public function setSpecificSkuResources(FutureResourcesSpecSpecificSKUResources $specificSkuResources)
-    {
-    }
-    /**
-     * @return FutureResourcesSpecSpecificSKUResources
-     */
-    public function getSpecificSkuResources()
+    class Google_Service_Compute_FutureResourcesSpecTargetResources extends \Google\Service\Compute\FutureResourcesSpecTargetResources
     {
     }
 }

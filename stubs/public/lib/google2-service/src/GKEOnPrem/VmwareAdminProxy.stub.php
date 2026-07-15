@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class VmwareAdminProxy extends \Google\Model
-{
-    /**
-     * A comma-separated list of IP addresses, IP address ranges, host names, and
-     * domain names that should not go through the proxy server. When Google
-     * Distributed Cloud sends a request to one of these addresses, hosts, or
-     * domains, the request is sent directly.
-     *
-     * @var string
-     */
-    public $noProxy;
-    /**
-     * The HTTP address of proxy server.
-     *
-     * @var string
-     */
-    public $url;
-    /**
-     * A comma-separated list of IP addresses, IP address ranges, host names, and
-     * domain names that should not go through the proxy server. When Google
-     * Distributed Cloud sends a request to one of these addresses, hosts, or
-     * domains, the request is sent directly.
-     *
-     * @param string $noProxy
-     */
-    public function setNoProxy($noProxy)
+namespace Google\Service\GKEOnPrem {
+    class VmwareAdminProxy extends \Google\Model
     {
+        /**
+         * A comma-separated list of IP addresses, IP address ranges, host names, and
+         * domain names that should not go through the proxy server. When Google
+         * Distributed Cloud sends a request to one of these addresses, hosts, or
+         * domains, the request is sent directly.
+         *
+         * @var string
+         */
+        public $noProxy;
+        /**
+         * The HTTP address of proxy server.
+         *
+         * @var string
+         */
+        public $url;
+        /**
+         * A comma-separated list of IP addresses, IP address ranges, host names, and
+         * domain names that should not go through the proxy server. When Google
+         * Distributed Cloud sends a request to one of these addresses, hosts, or
+         * domains, the request is sent directly.
+         *
+         * @param string $noProxy
+         */
+        public function setNoProxy($noProxy)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNoProxy()
+        {
+        }
+        /**
+         * The HTTP address of proxy server.
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEOnPrem\VmwareAdminProxy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNoProxy()
-    {
-    }
-    /**
-     * The HTTP address of proxy server.
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
+    class Google_Service_GKEOnPrem_VmwareAdminProxy extends \Google\Service\GKEOnPrem\VmwareAdminProxy
     {
     }
 }

@@ -21,134 +21,143 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1DeveloperSubscription extends \Google\Model
-{
-    /**
-     * Name of the API product for which the developer is purchasing a
-     * subscription.
-     *
-     * @var string
-     */
-    public $apiproduct;
-    /**
-     * Output only. Time when the API product subscription was created in
-     * milliseconds since epoch.
-     *
-     * @var string
-     */
-    public $createdAt;
-    /**
-     * Time when the API product subscription ends in milliseconds since epoch.
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * Output only. Time when the API product subscription was last modified in
-     * milliseconds since epoch.
-     *
-     * @var string
-     */
-    public $lastModifiedAt;
-    /**
-     * Output only. Name of the API product subscription.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Time when the API product subscription starts in milliseconds since epoch.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * Name of the API product for which the developer is purchasing a
-     * subscription.
-     *
-     * @param string $apiproduct
-     */
-    public function setApiproduct($apiproduct)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1DeveloperSubscription extends \Google\Model
     {
+        /**
+         * Name of the API product for which the developer is purchasing a
+         * subscription.
+         *
+         * @var string
+         */
+        public $apiproduct;
+        /**
+         * Output only. Time when the API product subscription was created in
+         * milliseconds since epoch.
+         *
+         * @var string
+         */
+        public $createdAt;
+        /**
+         * Time when the API product subscription ends in milliseconds since epoch.
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * Output only. Time when the API product subscription was last modified in
+         * milliseconds since epoch.
+         *
+         * @var string
+         */
+        public $lastModifiedAt;
+        /**
+         * Output only. Name of the API product subscription.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Time when the API product subscription starts in milliseconds since epoch.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * Name of the API product for which the developer is purchasing a
+         * subscription.
+         *
+         * @param string $apiproduct
+         */
+        public function setApiproduct($apiproduct)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApiproduct()
+        {
+        }
+        /**
+         * Output only. Time when the API product subscription was created in
+         * milliseconds since epoch.
+         *
+         * @param string $createdAt
+         */
+        public function setCreatedAt($createdAt)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreatedAt()
+        {
+        }
+        /**
+         * Time when the API product subscription ends in milliseconds since epoch.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * Output only. Time when the API product subscription was last modified in
+         * milliseconds since epoch.
+         *
+         * @param string $lastModifiedAt
+         */
+        public function setLastModifiedAt($lastModifiedAt)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastModifiedAt()
+        {
+        }
+        /**
+         * Output only. Name of the API product subscription.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Time when the API product subscription starts in milliseconds since epoch.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1DeveloperSubscription registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiproduct()
-    {
-    }
-    /**
-     * Output only. Time when the API product subscription was created in
-     * milliseconds since epoch.
-     *
-     * @param string $createdAt
-     */
-    public function setCreatedAt($createdAt)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreatedAt()
-    {
-    }
-    /**
-     * Time when the API product subscription ends in milliseconds since epoch.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndTime()
-    {
-    }
-    /**
-     * Output only. Time when the API product subscription was last modified in
-     * milliseconds since epoch.
-     *
-     * @param string $lastModifiedAt
-     */
-    public function setLastModifiedAt($lastModifiedAt)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastModifiedAt()
-    {
-    }
-    /**
-     * Output only. Name of the API product subscription.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Time when the API product subscription starts in milliseconds since epoch.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
+    class Google_Service_Apigee_GoogleCloudApigeeV1DeveloperSubscription extends \Google\Service\Apigee\GoogleCloudApigeeV1DeveloperSubscription
     {
     }
 }

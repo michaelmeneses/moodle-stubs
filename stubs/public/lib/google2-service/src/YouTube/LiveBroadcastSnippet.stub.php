@@ -21,242 +21,251 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class LiveBroadcastSnippet extends \Google\Model
-{
-    /**
-     * The date and time that the broadcast actually ended. This information is
-     * only available once the broadcast's state is complete.
-     *
-     * @var string
-     */
-    public $actualEndTime;
-    /**
-     * The date and time that the broadcast actually started. This information is
-     * only available once the broadcast's state is live.
-     *
-     * @var string
-     */
-    public $actualStartTime;
-    /**
-     * The ID that YouTube uses to uniquely identify the channel that is
-     * publishing the broadcast.
-     *
-     * @var string
-     */
-    public $channelId;
-    /**
-     * The broadcast's description. As with the title, you can set this field by
-     * modifying the broadcast resource or by setting the description field of the
-     * corresponding video resource.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Indicates whether this broadcast is the default broadcast. Internal only.
-     *
-     * @var bool
-     */
-    public $isDefaultBroadcast;
-    /**
-     * The id of the live chat for this broadcast.
-     *
-     * @var string
-     */
-    public $liveChatId;
-    /**
-     * The date and time that the broadcast was added to YouTube's live broadcast
-     * schedule.
-     *
-     * @var string
-     */
-    public $publishedAt;
-    /**
-     * The date and time that the broadcast is scheduled to end.
-     *
-     * @var string
-     */
-    public $scheduledEndTime;
-    /**
-     * The date and time that the broadcast is scheduled to start.
-     *
-     * @var string
-     */
-    public $scheduledStartTime;
-    protected $thumbnailsType = ThumbnailDetails::class;
-    protected $thumbnailsDataType = '';
-    /**
-     * The broadcast's title. Note that the broadcast represents exactly one
-     * YouTube video. You can set this field by modifying the broadcast resource
-     * or by setting the title field of the corresponding video resource.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * The date and time that the broadcast actually ended. This information is
-     * only available once the broadcast's state is complete.
-     *
-     * @param string $actualEndTime
-     */
-    public function setActualEndTime($actualEndTime)
+namespace Google\Service\YouTube {
+    class LiveBroadcastSnippet extends \Google\Model
     {
+        /**
+         * The date and time that the broadcast actually ended. This information is
+         * only available once the broadcast's state is complete.
+         *
+         * @var string
+         */
+        public $actualEndTime;
+        /**
+         * The date and time that the broadcast actually started. This information is
+         * only available once the broadcast's state is live.
+         *
+         * @var string
+         */
+        public $actualStartTime;
+        /**
+         * The ID that YouTube uses to uniquely identify the channel that is
+         * publishing the broadcast.
+         *
+         * @var string
+         */
+        public $channelId;
+        /**
+         * The broadcast's description. As with the title, you can set this field by
+         * modifying the broadcast resource or by setting the description field of the
+         * corresponding video resource.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Indicates whether this broadcast is the default broadcast. Internal only.
+         *
+         * @var bool
+         */
+        public $isDefaultBroadcast;
+        /**
+         * The id of the live chat for this broadcast.
+         *
+         * @var string
+         */
+        public $liveChatId;
+        /**
+         * The date and time that the broadcast was added to YouTube's live broadcast
+         * schedule.
+         *
+         * @var string
+         */
+        public $publishedAt;
+        /**
+         * The date and time that the broadcast is scheduled to end.
+         *
+         * @var string
+         */
+        public $scheduledEndTime;
+        /**
+         * The date and time that the broadcast is scheduled to start.
+         *
+         * @var string
+         */
+        public $scheduledStartTime;
+        protected $thumbnailsType = ThumbnailDetails::class;
+        protected $thumbnailsDataType = '';
+        /**
+         * The broadcast's title. Note that the broadcast represents exactly one
+         * YouTube video. You can set this field by modifying the broadcast resource
+         * or by setting the title field of the corresponding video resource.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * The date and time that the broadcast actually ended. This information is
+         * only available once the broadcast's state is complete.
+         *
+         * @param string $actualEndTime
+         */
+        public function setActualEndTime($actualEndTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getActualEndTime()
+        {
+        }
+        /**
+         * The date and time that the broadcast actually started. This information is
+         * only available once the broadcast's state is live.
+         *
+         * @param string $actualStartTime
+         */
+        public function setActualStartTime($actualStartTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getActualStartTime()
+        {
+        }
+        /**
+         * The ID that YouTube uses to uniquely identify the channel that is
+         * publishing the broadcast.
+         *
+         * @param string $channelId
+         */
+        public function setChannelId($channelId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChannelId()
+        {
+        }
+        /**
+         * The broadcast's description. As with the title, you can set this field by
+         * modifying the broadcast resource or by setting the description field of the
+         * corresponding video resource.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Indicates whether this broadcast is the default broadcast. Internal only.
+         *
+         * @param bool $isDefaultBroadcast
+         */
+        public function setIsDefaultBroadcast($isDefaultBroadcast)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsDefaultBroadcast()
+        {
+        }
+        /**
+         * The id of the live chat for this broadcast.
+         *
+         * @param string $liveChatId
+         */
+        public function setLiveChatId($liveChatId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLiveChatId()
+        {
+        }
+        /**
+         * The date and time that the broadcast was added to YouTube's live broadcast
+         * schedule.
+         *
+         * @param string $publishedAt
+         */
+        public function setPublishedAt($publishedAt)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPublishedAt()
+        {
+        }
+        /**
+         * The date and time that the broadcast is scheduled to end.
+         *
+         * @param string $scheduledEndTime
+         */
+        public function setScheduledEndTime($scheduledEndTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScheduledEndTime()
+        {
+        }
+        /**
+         * The date and time that the broadcast is scheduled to start.
+         *
+         * @param string $scheduledStartTime
+         */
+        public function setScheduledStartTime($scheduledStartTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScheduledStartTime()
+        {
+        }
+        /**
+         * A map of thumbnail images associated with the broadcast. For each nested
+         * object in this object, the key is the name of the thumbnail image, and the
+         * value is an object that contains other information about the thumbnail.
+         *
+         * @param ThumbnailDetails $thumbnails
+         */
+        public function setThumbnails(ThumbnailDetails $thumbnails)
+        {
+        }
+        /**
+         * @return ThumbnailDetails
+         */
+        public function getThumbnails()
+        {
+        }
+        /**
+         * The broadcast's title. Note that the broadcast represents exactly one
+         * YouTube video. You can set this field by modifying the broadcast resource
+         * or by setting the title field of the corresponding video resource.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\LiveBroadcastSnippet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActualEndTime()
-    {
-    }
-    /**
-     * The date and time that the broadcast actually started. This information is
-     * only available once the broadcast's state is live.
-     *
-     * @param string $actualStartTime
-     */
-    public function setActualStartTime($actualStartTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getActualStartTime()
-    {
-    }
-    /**
-     * The ID that YouTube uses to uniquely identify the channel that is
-     * publishing the broadcast.
-     *
-     * @param string $channelId
-     */
-    public function setChannelId($channelId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getChannelId()
-    {
-    }
-    /**
-     * The broadcast's description. As with the title, you can set this field by
-     * modifying the broadcast resource or by setting the description field of the
-     * corresponding video resource.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Indicates whether this broadcast is the default broadcast. Internal only.
-     *
-     * @param bool $isDefaultBroadcast
-     */
-    public function setIsDefaultBroadcast($isDefaultBroadcast)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsDefaultBroadcast()
-    {
-    }
-    /**
-     * The id of the live chat for this broadcast.
-     *
-     * @param string $liveChatId
-     */
-    public function setLiveChatId($liveChatId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLiveChatId()
-    {
-    }
-    /**
-     * The date and time that the broadcast was added to YouTube's live broadcast
-     * schedule.
-     *
-     * @param string $publishedAt
-     */
-    public function setPublishedAt($publishedAt)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPublishedAt()
-    {
-    }
-    /**
-     * The date and time that the broadcast is scheduled to end.
-     *
-     * @param string $scheduledEndTime
-     */
-    public function setScheduledEndTime($scheduledEndTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getScheduledEndTime()
-    {
-    }
-    /**
-     * The date and time that the broadcast is scheduled to start.
-     *
-     * @param string $scheduledStartTime
-     */
-    public function setScheduledStartTime($scheduledStartTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getScheduledStartTime()
-    {
-    }
-    /**
-     * A map of thumbnail images associated with the broadcast. For each nested
-     * object in this object, the key is the name of the thumbnail image, and the
-     * value is an object that contains other information about the thumbnail.
-     *
-     * @param ThumbnailDetails $thumbnails
-     */
-    public function setThumbnails(ThumbnailDetails $thumbnails)
-    {
-    }
-    /**
-     * @return ThumbnailDetails
-     */
-    public function getThumbnails()
-    {
-    }
-    /**
-     * The broadcast's title. Note that the broadcast represents exactly one
-     * YouTube video. You can set this field by modifying the broadcast resource
-     * or by setting the title field of the corresponding video resource.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_YouTube_LiveBroadcastSnippet extends \Google\Service\YouTube\LiveBroadcastSnippet
     {
     }
 }

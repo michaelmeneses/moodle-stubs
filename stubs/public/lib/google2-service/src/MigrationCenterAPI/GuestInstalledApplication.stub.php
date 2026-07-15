@@ -21,129 +21,138 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class GuestInstalledApplication extends \Google\Collection
-{
-    protected $collection_key = 'licenses';
-    /**
-     * Installed application name.
-     *
-     * @var string
-     */
-    public $applicationName;
-    /**
-     * The time when the application was installed.
-     *
-     * @var string
-     */
-    public $installTime;
-    /**
-     * License strings associated with the installed application.
-     *
-     * @var string[]
-     */
-    public $licenses;
-    /**
-     * Source path.
-     *
-     * @var string
-     */
-    public $path;
-    /**
-     * Installed application vendor.
-     *
-     * @var string
-     */
-    public $vendor;
-    /**
-     * Installed application version.
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * Installed application name.
-     *
-     * @param string $applicationName
-     */
-    public function setApplicationName($applicationName)
+namespace Google\Service\MigrationCenterAPI {
+    class GuestInstalledApplication extends \Google\Collection
     {
+        protected $collection_key = 'licenses';
+        /**
+         * Installed application name.
+         *
+         * @var string
+         */
+        public $applicationName;
+        /**
+         * The time when the application was installed.
+         *
+         * @var string
+         */
+        public $installTime;
+        /**
+         * License strings associated with the installed application.
+         *
+         * @var string[]
+         */
+        public $licenses;
+        /**
+         * Source path.
+         *
+         * @var string
+         */
+        public $path;
+        /**
+         * Installed application vendor.
+         *
+         * @var string
+         */
+        public $vendor;
+        /**
+         * Installed application version.
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * Installed application name.
+         *
+         * @param string $applicationName
+         */
+        public function setApplicationName($applicationName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApplicationName()
+        {
+        }
+        /**
+         * The time when the application was installed.
+         *
+         * @param string $installTime
+         */
+        public function setInstallTime($installTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstallTime()
+        {
+        }
+        /**
+         * License strings associated with the installed application.
+         *
+         * @param string[] $licenses
+         */
+        public function setLicenses($licenses)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLicenses()
+        {
+        }
+        /**
+         * Source path.
+         *
+         * @param string $path
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
+        /**
+         * Installed application vendor.
+         *
+         * @param string $vendor
+         */
+        public function setVendor($vendor)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVendor()
+        {
+        }
+        /**
+         * Installed application version.
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\GuestInstalledApplication registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApplicationName()
-    {
-    }
-    /**
-     * The time when the application was installed.
-     *
-     * @param string $installTime
-     */
-    public function setInstallTime($installTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInstallTime()
-    {
-    }
-    /**
-     * License strings associated with the installed application.
-     *
-     * @param string[] $licenses
-     */
-    public function setLicenses($licenses)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLicenses()
-    {
-    }
-    /**
-     * Source path.
-     *
-     * @param string $path
-     */
-    public function setPath($path)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPath()
-    {
-    }
-    /**
-     * Installed application vendor.
-     *
-     * @param string $vendor
-     */
-    public function setVendor($vendor)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVendor()
-    {
-    }
-    /**
-     * Installed application version.
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_MigrationCenterAPI_GuestInstalledApplication extends \Google\Service\MigrationCenterAPI\GuestInstalledApplication
     {
     }
 }

@@ -21,85 +21,94 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class Groups extends \Google\Collection
-{
-    protected $collection_key = 'groups';
-    /**
-     * ETag of the resource.
-     *
-     * @var string
-     */
-    public $etag;
-    protected $groupsType = Group::class;
-    protected $groupsDataType = 'array';
-    /**
-     * Kind of resource this is.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Token used to access next page of this result.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * ETag of the resource.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
+namespace Google\Service\Directory {
+    class Groups extends \Google\Collection
     {
+        protected $collection_key = 'groups';
+        /**
+         * ETag of the resource.
+         *
+         * @var string
+         */
+        public $etag;
+        protected $groupsType = Group::class;
+        protected $groupsDataType = 'array';
+        /**
+         * Kind of resource this is.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Token used to access next page of this result.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * ETag of the resource.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * A list of group objects.
+         *
+         * @param Group[] $groups
+         */
+        public function setGroups($groups)
+        {
+        }
+        /**
+         * @return Group[]
+         */
+        public function getGroups()
+        {
+        }
+        /**
+         * Kind of resource this is.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Token used to access next page of this result.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Directory\Groups registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
-    {
-    }
-    /**
-     * A list of group objects.
-     *
-     * @param Group[] $groups
-     */
-    public function setGroups($groups)
-    {
-    }
-    /**
-     * @return Group[]
-     */
-    public function getGroups()
-    {
-    }
-    /**
-     * Kind of resource this is.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Token used to access next page of this result.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Directory_Groups extends \Google\Service\Directory\Groups
     {
     }
 }

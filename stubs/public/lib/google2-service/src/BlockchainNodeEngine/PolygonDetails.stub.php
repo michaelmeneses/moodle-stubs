@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BlockchainNodeEngine;
-
-class PolygonDetails extends \Google\Model
-{
-    protected $additionalEndpointsType = PolygonEndpoints::class;
-    protected $additionalEndpointsDataType = '';
-    /**
-     * @var string
-     */
-    public $blockProducerClient;
-    /**
-     * @var string
-     */
-    public $network;
-    /**
-     * @var string
-     */
-    public $nodeType;
-    /**
-     * @var string
-     */
-    public $validationClient;
-    /**
-     * @param PolygonEndpoints
-     */
-    public function setAdditionalEndpoints(PolygonEndpoints $additionalEndpoints)
+namespace Google\Service\BlockchainNodeEngine {
+    class PolygonDetails extends \Google\Model
     {
+        protected $additionalEndpointsType = PolygonEndpoints::class;
+        protected $additionalEndpointsDataType = '';
+        /**
+         * @var string
+         */
+        public $blockProducerClient;
+        /**
+         * @var string
+         */
+        public $network;
+        /**
+         * @var string
+         */
+        public $nodeType;
+        /**
+         * @var string
+         */
+        public $validationClient;
+        /**
+         * @param PolygonEndpoints
+         */
+        public function setAdditionalEndpoints(PolygonEndpoints $additionalEndpoints)
+        {
+        }
+        /**
+         * @return PolygonEndpoints
+         */
+        public function getAdditionalEndpoints()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setBlockProducerClient($blockProducerClient)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBlockProducerClient()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNetwork($network)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNetwork()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNodeType($nodeType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNodeType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setValidationClient($validationClient)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValidationClient()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PolygonEndpoints
+     * Runtime class alias of \Google\Service\BlockchainNodeEngine\PolygonDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdditionalEndpoints()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setBlockProducerClient($blockProducerClient)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBlockProducerClient()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNetwork($network)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNetwork()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNodeType($nodeType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNodeType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setValidationClient($validationClient)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValidationClient()
+    class Google_Service_BlockchainNodeEngine_PolygonDetails extends \Google\Service\BlockchainNodeEngine\PolygonDetails
     {
     }
 }

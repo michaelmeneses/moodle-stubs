@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdMob;
-
-class ReportRowMetricValue extends \Google\Model
-{
-    /**
-     * Double precision (approximate) decimal values. Rates are from 0 to 1.
-     *
-     * @var 
-     */
-    public $doubleValue;
-    /**
-     * Metric integer value.
-     *
-     * @var string
-     */
-    public $integerValue;
-    /**
-     * Amount in micros. One million is equivalent to one unit. Currency value is
-     * in the unit (USD, EUR or other) specified by the request. For example,
-     * $6.50 whould be represented as 6500000 micros.
-     *
-     * @var string
-     */
-    public $microsValue;
-    public function setDoubleValue($doubleValue)
+namespace Google\Service\AdMob {
+    class ReportRowMetricValue extends \Google\Model
     {
+        /**
+         * Double precision (approximate) decimal values. Rates are from 0 to 1.
+         *
+         * @var 
+         */
+        public $doubleValue;
+        /**
+         * Metric integer value.
+         *
+         * @var string
+         */
+        public $integerValue;
+        /**
+         * Amount in micros. One million is equivalent to one unit. Currency value is
+         * in the unit (USD, EUR or other) specified by the request. For example,
+         * $6.50 whould be represented as 6500000 micros.
+         *
+         * @var string
+         */
+        public $microsValue;
+        public function setDoubleValue($doubleValue)
+        {
+        }
+        public function getDoubleValue()
+        {
+        }
+        /**
+         * Metric integer value.
+         *
+         * @param string $integerValue
+         */
+        public function setIntegerValue($integerValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIntegerValue()
+        {
+        }
+        /**
+         * Amount in micros. One million is equivalent to one unit. Currency value is
+         * in the unit (USD, EUR or other) specified by the request. For example,
+         * $6.50 whould be represented as 6500000 micros.
+         *
+         * @param string $microsValue
+         */
+        public function setMicrosValue($microsValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMicrosValue()
+        {
+        }
     }
-    public function getDoubleValue()
-    {
-    }
+}
+namespace {
     /**
-     * Metric integer value.
-     *
-     * @param string $integerValue
+     * Runtime class alias of \Google\Service\AdMob\ReportRowMetricValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setIntegerValue($integerValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIntegerValue()
-    {
-    }
-    /**
-     * Amount in micros. One million is equivalent to one unit. Currency value is
-     * in the unit (USD, EUR or other) specified by the request. For example,
-     * $6.50 whould be represented as 6500000 micros.
-     *
-     * @param string $microsValue
-     */
-    public function setMicrosValue($microsValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMicrosValue()
+    class Google_Service_AdMob_ReportRowMetricValue extends \Google\Service\AdMob\ReportRowMetricValue
     {
     }
 }

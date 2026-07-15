@@ -21,279 +21,288 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class OrderDocument extends \Google\Collection
-{
-    protected $collection_key = 'lastSentRecipients';
-    /**
-     * @var string
-     */
-    public $accountId;
-    /**
-     * @var string
-     */
-    public $advertiserId;
-    /**
-     * @var string
-     */
-    public $amendedOrderDocumentId;
-    /**
-     * @var string[]
-     */
-    public $approvedByUserProfileIds;
-    /**
-     * @var bool
-     */
-    public $cancelled;
-    protected $createdInfoType = LastModifiedInfo::class;
-    protected $createdInfoDataType = '';
-    /**
-     * @var string
-     */
-    public $effectiveDate;
-    /**
-     * @var string
-     */
-    public $id;
-    /**
-     * @var string
-     */
-    public $kind;
-    /**
-     * @var string[]
-     */
-    public $lastSentRecipients;
-    /**
-     * @var string
-     */
-    public $lastSentTime;
-    /**
-     * @var string
-     */
-    public $orderId;
-    /**
-     * @var string
-     */
-    public $projectId;
-    /**
-     * @var bool
-     */
-    public $signed;
-    /**
-     * @var string
-     */
-    public $subaccountId;
-    /**
-     * @var string
-     */
-    public $title;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @param string
-     */
-    public function setAccountId($accountId)
+namespace Google\Service\Dfareporting {
+    class OrderDocument extends \Google\Collection
     {
+        protected $collection_key = 'lastSentRecipients';
+        /**
+         * @var string
+         */
+        public $accountId;
+        /**
+         * @var string
+         */
+        public $advertiserId;
+        /**
+         * @var string
+         */
+        public $amendedOrderDocumentId;
+        /**
+         * @var string[]
+         */
+        public $approvedByUserProfileIds;
+        /**
+         * @var bool
+         */
+        public $cancelled;
+        protected $createdInfoType = LastModifiedInfo::class;
+        protected $createdInfoDataType = '';
+        /**
+         * @var string
+         */
+        public $effectiveDate;
+        /**
+         * @var string
+         */
+        public $id;
+        /**
+         * @var string
+         */
+        public $kind;
+        /**
+         * @var string[]
+         */
+        public $lastSentRecipients;
+        /**
+         * @var string
+         */
+        public $lastSentTime;
+        /**
+         * @var string
+         */
+        public $orderId;
+        /**
+         * @var string
+         */
+        public $projectId;
+        /**
+         * @var bool
+         */
+        public $signed;
+        /**
+         * @var string
+         */
+        public $subaccountId;
+        /**
+         * @var string
+         */
+        public $title;
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @param string
+         */
+        public function setAccountId($accountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccountId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setAdvertiserId($advertiserId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdvertiserId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setAmendedOrderDocumentId($amendedOrderDocumentId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAmendedOrderDocumentId()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setApprovedByUserProfileIds($approvedByUserProfileIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getApprovedByUserProfileIds()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setCancelled($cancelled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCancelled()
+        {
+        }
+        /**
+         * @param LastModifiedInfo
+         */
+        public function setCreatedInfo(LastModifiedInfo $createdInfo)
+        {
+        }
+        /**
+         * @return LastModifiedInfo
+         */
+        public function getCreatedInfo()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEffectiveDate($effectiveDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEffectiveDate()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setLastSentRecipients($lastSentRecipients)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLastSentRecipients()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLastSentTime($lastSentTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastSentTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOrderId($orderId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOrderId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setSigned($signed)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSigned()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSubaccountId($subaccountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubaccountId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\OrderDocument registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setAdvertiserId($advertiserId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAdvertiserId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setAmendedOrderDocumentId($amendedOrderDocumentId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAmendedOrderDocumentId()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setApprovedByUserProfileIds($approvedByUserProfileIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getApprovedByUserProfileIds()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setCancelled($cancelled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCancelled()
-    {
-    }
-    /**
-     * @param LastModifiedInfo
-     */
-    public function setCreatedInfo(LastModifiedInfo $createdInfo)
-    {
-    }
-    /**
-     * @return LastModifiedInfo
-     */
-    public function getCreatedInfo()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEffectiveDate($effectiveDate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEffectiveDate()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setLastSentRecipients($lastSentRecipients)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLastSentRecipients()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLastSentTime($lastSentTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastSentTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOrderId($orderId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOrderId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setProjectId($projectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProjectId()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setSigned($signed)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSigned()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSubaccountId($subaccountId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubaccountId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_Dfareporting_OrderDocument extends \Google\Service\Dfareporting\OrderDocument
     {
     }
 }

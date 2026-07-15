@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ApiKeysService;
-
-class V2BrowserKeyRestrictions extends \Google\Collection
-{
-    protected $collection_key = 'allowedReferrers';
-    /**
-     * A list of regular expressions for the referrer URLs that are allowed to
-     * make API calls with this key.
-     *
-     * @var string[]
-     */
-    public $allowedReferrers;
-    /**
-     * A list of regular expressions for the referrer URLs that are allowed to
-     * make API calls with this key.
-     *
-     * @param string[] $allowedReferrers
-     */
-    public function setAllowedReferrers($allowedReferrers)
+namespace Google\Service\ApiKeysService {
+    class V2BrowserKeyRestrictions extends \Google\Collection
     {
+        protected $collection_key = 'allowedReferrers';
+        /**
+         * A list of regular expressions for the referrer URLs that are allowed to
+         * make API calls with this key.
+         *
+         * @var string[]
+         */
+        public $allowedReferrers;
+        /**
+         * A list of regular expressions for the referrer URLs that are allowed to
+         * make API calls with this key.
+         *
+         * @param string[] $allowedReferrers
+         */
+        public function setAllowedReferrers($allowedReferrers)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAllowedReferrers()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\ApiKeysService\V2BrowserKeyRestrictions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowedReferrers()
+    class Google_Service_ApiKeysService_V2BrowserKeyRestrictions extends \Google\Service\ApiKeysService\V2BrowserKeyRestrictions
     {
     }
 }

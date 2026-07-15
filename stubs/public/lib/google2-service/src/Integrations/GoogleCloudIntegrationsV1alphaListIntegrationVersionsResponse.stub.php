@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaListIntegrationVersionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'integrationVersions';
-    protected $integrationVersionsType = GoogleCloudIntegrationsV1alphaIntegrationVersion::class;
-    protected $integrationVersionsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Whether the user has no permission on the version or not.
-     *
-     * @var bool
-     */
-    public $noPermission;
-    /**
-     * The integrations which match the request.
-     *
-     * @param GoogleCloudIntegrationsV1alphaIntegrationVersion[] $integrationVersions
-     */
-    public function setIntegrationVersions($integrationVersions)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaListIntegrationVersionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'integrationVersions';
+        protected $integrationVersionsType = GoogleCloudIntegrationsV1alphaIntegrationVersion::class;
+        protected $integrationVersionsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Whether the user has no permission on the version or not.
+         *
+         * @var bool
+         */
+        public $noPermission;
+        /**
+         * The integrations which match the request.
+         *
+         * @param GoogleCloudIntegrationsV1alphaIntegrationVersion[] $integrationVersions
+         */
+        public function setIntegrationVersions($integrationVersions)
+        {
+        }
+        /**
+         * @return GoogleCloudIntegrationsV1alphaIntegrationVersion[]
+         */
+        public function getIntegrationVersions()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Whether the user has no permission on the version or not.
+         *
+         * @param bool $noPermission
+         */
+        public function setNoPermission($noPermission)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getNoPermission()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudIntegrationsV1alphaIntegrationVersion[]
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaListIntegrationVersionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIntegrationVersions()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Whether the user has no permission on the version or not.
-     *
-     * @param bool $noPermission
-     */
-    public function setNoPermission($noPermission)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getNoPermission()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaListIntegrationVersionsResponse extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaListIntegrationVersionsResponse
     {
     }
 }

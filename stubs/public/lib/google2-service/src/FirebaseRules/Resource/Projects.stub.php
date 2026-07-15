@@ -21,43 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseRules\Resource;
-
-/**
- * The "projects" collection of methods.
- * Typical usage is:
- *  <code>
- *   $firebaserulesService = new Google\Service\FirebaseRules(...);
- *   $projects = $firebaserulesService->projects;
- *  </code>
- */
-class Projects extends \Google\Service\Resource
-{
+namespace Google\Service\FirebaseRules\Resource {
+    use Google\Service\FirebaseRules\TestRulesetRequest;
+    use Google\Service\FirebaseRules\TestRulesetResponse;
     /**
-     * Test `Source` for syntactic and semantic correctness. Issues present, if any,
-     * will be returned to the caller with a description, severity, and source
-     * location. The test method may be executed with `Source` or a `Ruleset` name.
-     * Passing `Source` is useful for unit testing new rules. Passing a `Ruleset`
-     * name is useful for regression testing an existing rule. The following is an
-     * example of `Source` that permits users to upload images to a bucket bearing
-     * their user id and matching the correct metadata: _*Example*_ // Users are
-     * allowed to subscribe and unsubscribe to the blog. service firebase.storage {
-     * match /users/{userId}/images/{imageName} { allow write: if userId ==
-     * request.auth.uid && (imageName.matches('*.png$') ||
-     * imageName.matches('*.jpg$')) && resource.mimeType.matches('^image/') } }
-     * (projects.test)
-     *
-     * @param string $name Required. Tests may either provide `source` or a
-     * `Ruleset` resource name. For tests against `source`, the resource name must
-     * refer to the project: Format: `projects/{project_id}` For tests against a
-     * `Ruleset`, this must be the `Ruleset` resource name: Format:
-     * `projects/{project_id}/rulesets/{ruleset_id}`
-     * @param TestRulesetRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return TestRulesetResponse
-     * @throws \Google\Service\Exception
+     * The "projects" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $firebaserulesService = new Google\Service\FirebaseRules(...);
+     *   $projects = $firebaserulesService->projects;
+     *  </code>
      */
-    public function test($name, TestRulesetRequest $postBody, $optParams = [])
+    class Projects extends \Google\Service\Resource
+    {
+        /**
+         * Test `Source` for syntactic and semantic correctness. Issues present, if any,
+         * will be returned to the caller with a description, severity, and source
+         * location. The test method may be executed with `Source` or a `Ruleset` name.
+         * Passing `Source` is useful for unit testing new rules. Passing a `Ruleset`
+         * name is useful for regression testing an existing rule. The following is an
+         * example of `Source` that permits users to upload images to a bucket bearing
+         * their user id and matching the correct metadata: _*Example*_ // Users are
+         * allowed to subscribe and unsubscribe to the blog. service firebase.storage {
+         * match /users/{userId}/images/{imageName} { allow write: if userId ==
+         * request.auth.uid && (imageName.matches('*.png$') ||
+         * imageName.matches('*.jpg$')) && resource.mimeType.matches('^image/') } }
+         * (projects.test)
+         *
+         * @param string $name Required. Tests may either provide `source` or a
+         * `Ruleset` resource name. For tests against `source`, the resource name must
+         * refer to the project: Format: `projects/{project_id}` For tests against a
+         * `Ruleset`, this must be the `Ruleset` resource name: Format:
+         * `projects/{project_id}/rulesets/{ruleset_id}`
+         * @param TestRulesetRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return TestRulesetResponse
+         * @throws \Google\Service\Exception
+         */
+        public function test($name, TestRulesetRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\FirebaseRules\Resource\Projects registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_FirebaseRules_Resource_Projects extends \Google\Service\FirebaseRules\Resource\Projects
     {
     }
 }

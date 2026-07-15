@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class MessageAttributes extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $isTombstone;
-    /**
-     * @param bool
-     */
-    public function setIsTombstone($isTombstone)
+namespace Google\Service\CloudSearch {
+    class MessageAttributes extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $isTombstone;
+        /**
+         * @param bool
+         */
+        public function setIsTombstone($isTombstone)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsTombstone()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudSearch\MessageAttributes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIsTombstone()
+    class Google_Service_CloudSearch_MessageAttributes extends \Google\Service\CloudSearch\MessageAttributes
     {
     }
 }

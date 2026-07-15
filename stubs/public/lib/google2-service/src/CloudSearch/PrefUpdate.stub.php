@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class PrefUpdate extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $name;
-    protected $preStateType = FuseboxPrefUpdatePreState::class;
-    protected $preStateDataType = '';
-    protected $prefDeletedType = PrefDeleted::class;
-    protected $prefDeletedDataType = '';
-    protected $prefWrittenType = PrefWritten::class;
-    protected $prefWrittenDataType = '';
-    /**
-     * @param string
-     */
-    public function setName($name)
+namespace Google\Service\CloudSearch {
+    class PrefUpdate extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $name;
+        protected $preStateType = FuseboxPrefUpdatePreState::class;
+        protected $preStateDataType = '';
+        protected $prefDeletedType = PrefDeleted::class;
+        protected $prefDeletedDataType = '';
+        protected $prefWrittenType = PrefWritten::class;
+        protected $prefWrittenDataType = '';
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param FuseboxPrefUpdatePreState
+         */
+        public function setPreState(FuseboxPrefUpdatePreState $preState)
+        {
+        }
+        /**
+         * @return FuseboxPrefUpdatePreState
+         */
+        public function getPreState()
+        {
+        }
+        /**
+         * @param PrefDeleted
+         */
+        public function setPrefDeleted(PrefDeleted $prefDeleted)
+        {
+        }
+        /**
+         * @return PrefDeleted
+         */
+        public function getPrefDeleted()
+        {
+        }
+        /**
+         * @param PrefWritten
+         */
+        public function setPrefWritten(PrefWritten $prefWritten)
+        {
+        }
+        /**
+         * @return PrefWritten
+         */
+        public function getPrefWritten()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\PrefUpdate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * @param FuseboxPrefUpdatePreState
-     */
-    public function setPreState(FuseboxPrefUpdatePreState $preState)
-    {
-    }
-    /**
-     * @return FuseboxPrefUpdatePreState
-     */
-    public function getPreState()
-    {
-    }
-    /**
-     * @param PrefDeleted
-     */
-    public function setPrefDeleted(PrefDeleted $prefDeleted)
-    {
-    }
-    /**
-     * @return PrefDeleted
-     */
-    public function getPrefDeleted()
-    {
-    }
-    /**
-     * @param PrefWritten
-     */
-    public function setPrefWritten(PrefWritten $prefWritten)
-    {
-    }
-    /**
-     * @return PrefWritten
-     */
-    public function getPrefWritten()
+    class Google_Service_CloudSearch_PrefUpdate extends \Google\Service\CloudSearch\PrefUpdate
     {
     }
 }

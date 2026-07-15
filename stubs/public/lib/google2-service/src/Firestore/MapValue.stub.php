@@ -21,27 +21,36 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class MapValue extends \Google\Model
-{
-    protected $fieldsType = Value::class;
-    protected $fieldsDataType = 'map';
-    /**
-     * The map's fields. The map keys represent field names. Field names matching
-     * the regular expression `__.*__` are reserved. Reserved field names are
-     * forbidden except in certain documented contexts. The map keys, represented
-     * as UTF-8, must not exceed 1,500 bytes and cannot be empty.
-     *
-     * @param Value[] $fields
-     */
-    public function setFields($fields)
+namespace Google\Service\Firestore {
+    class MapValue extends \Google\Model
     {
+        protected $fieldsType = Value::class;
+        protected $fieldsDataType = 'map';
+        /**
+         * The map's fields. The map keys represent field names. Field names matching
+         * the regular expression `__.*__` are reserved. Reserved field names are
+         * forbidden except in certain documented contexts. The map keys, represented
+         * as UTF-8, must not exceed 1,500 bytes and cannot be empty.
+         *
+         * @param Value[] $fields
+         */
+        public function setFields($fields)
+        {
+        }
+        /**
+         * @return Value[]
+         */
+        public function getFields()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Value[]
+     * Runtime class alias of \Google\Service\Firestore\MapValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFields()
+    class Google_Service_Firestore_MapValue extends \Google\Service\Firestore\MapValue
     {
     }
 }

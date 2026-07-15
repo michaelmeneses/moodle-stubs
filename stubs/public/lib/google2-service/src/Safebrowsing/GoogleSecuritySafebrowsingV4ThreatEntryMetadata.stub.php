@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Safebrowsing;
-
-class GoogleSecuritySafebrowsingV4ThreatEntryMetadata extends \Google\Collection
-{
-    protected $collection_key = 'entries';
-    protected $entriesType = GoogleSecuritySafebrowsingV4ThreatEntryMetadataMetadataEntry::class;
-    protected $entriesDataType = 'array';
-    /**
-     * @param GoogleSecuritySafebrowsingV4ThreatEntryMetadataMetadataEntry[]
-     */
-    public function setEntries($entries)
+namespace Google\Service\Safebrowsing {
+    class GoogleSecuritySafebrowsingV4ThreatEntryMetadata extends \Google\Collection
     {
+        protected $collection_key = 'entries';
+        protected $entriesType = GoogleSecuritySafebrowsingV4ThreatEntryMetadataMetadataEntry::class;
+        protected $entriesDataType = 'array';
+        /**
+         * @param GoogleSecuritySafebrowsingV4ThreatEntryMetadataMetadataEntry[]
+         */
+        public function setEntries($entries)
+        {
+        }
+        /**
+         * @return GoogleSecuritySafebrowsingV4ThreatEntryMetadataMetadataEntry[]
+         */
+        public function getEntries()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleSecuritySafebrowsingV4ThreatEntryMetadataMetadataEntry[]
+     * Runtime class alias of \Google\Service\Safebrowsing\GoogleSecuritySafebrowsingV4ThreatEntryMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntries()
+    class Google_Service_Safebrowsing_GoogleSecuritySafebrowsingV4ThreatEntryMetadata extends \Google\Service\Safebrowsing\GoogleSecuritySafebrowsingV4ThreatEntryMetadata
     {
     }
 }

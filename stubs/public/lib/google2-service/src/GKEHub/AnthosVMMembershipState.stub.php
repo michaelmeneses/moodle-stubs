@@ -21,37 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class AnthosVMMembershipState extends \Google\Collection
-{
-    protected $collection_key = 'subfeatureState';
-    protected $localControllerStateType = LocalControllerState::class;
-    protected $localControllerStateDataType = '';
-    protected $subfeatureStateType = AnthosVMSubFeatureState::class;
-    protected $subfeatureStateDataType = 'array';
-    /**
-     * @param LocalControllerState
-     */
-    public function setLocalControllerState(LocalControllerState $localControllerState)
+namespace Google\Service\GKEHub {
+    class AnthosVMMembershipState extends \Google\Collection
     {
+        protected $collection_key = 'subfeatureState';
+        protected $localControllerStateType = LocalControllerState::class;
+        protected $localControllerStateDataType = '';
+        protected $subfeatureStateType = AnthosVMSubFeatureState::class;
+        protected $subfeatureStateDataType = 'array';
+        /**
+         * @param LocalControllerState
+         */
+        public function setLocalControllerState(LocalControllerState $localControllerState)
+        {
+        }
+        /**
+         * @return LocalControllerState
+         */
+        public function getLocalControllerState()
+        {
+        }
+        /**
+         * @param AnthosVMSubFeatureState[]
+         */
+        public function setSubfeatureState($subfeatureState)
+        {
+        }
+        /**
+         * @return AnthosVMSubFeatureState[]
+         */
+        public function getSubfeatureState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LocalControllerState
+     * Runtime class alias of \Google\Service\GKEHub\AnthosVMMembershipState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLocalControllerState()
-    {
-    }
-    /**
-     * @param AnthosVMSubFeatureState[]
-     */
-    public function setSubfeatureState($subfeatureState)
-    {
-    }
-    /**
-     * @return AnthosVMSubFeatureState[]
-     */
-    public function getSubfeatureState()
+    class Google_Service_GKEHub_AnthosVMMembershipState extends \Google\Service\GKEHub\AnthosVMMembershipState
     {
     }
 }

@@ -21,29 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Adsense\Resource;
-
-/**
- * The "payments" collection of methods.
- * Typical usage is:
- *  <code>
- *   $adsenseService = new Google\Service\Adsense(...);
- *   $payments = $adsenseService->accounts_payments;
- *  </code>
- */
-class AccountsPayments extends \Google\Service\Resource
-{
+namespace Google\Service\Adsense\Resource {
+    use Google\Service\Adsense\ListPaymentsResponse;
     /**
-     * Lists all the payments available for an account.
-     * (payments.listAccountsPayments)
-     *
-     * @param string $parent Required. The account which owns the collection of
-     * payments. Format: accounts/{account}
-     * @param array $optParams Optional parameters.
-     * @return ListPaymentsResponse
-     * @throws \Google\Service\Exception
+     * The "payments" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $adsenseService = new Google\Service\Adsense(...);
+     *   $payments = $adsenseService->accounts_payments;
+     *  </code>
      */
-    public function listAccountsPayments($parent, $optParams = [])
+    class AccountsPayments extends \Google\Service\Resource
+    {
+        /**
+         * Lists all the payments available for an account.
+         * (payments.listAccountsPayments)
+         *
+         * @param string $parent Required. The account which owns the collection of
+         * payments. Format: accounts/{account}
+         * @param array $optParams Optional parameters.
+         * @return ListPaymentsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listAccountsPayments($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Adsense\Resource\AccountsPayments registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Adsense_Resource_AccountsPayments extends \Google\Service\Adsense\Resource\AccountsPayments
     {
     }
 }

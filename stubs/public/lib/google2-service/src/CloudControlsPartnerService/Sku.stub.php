@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudControlsPartnerService;
-
-class Sku extends \Google\Model
-{
-    /**
-     * Display name of the product identified by the SKU. A partner may want to
-     * show partner branded names for their offerings such as local sovereign
-     * cloud solutions.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Argentum product SKU, that is associated with the partner offerings to
-     * customers used by Syntro for billing purposes. SKUs can represent resold
-     * Google products or support services.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Display name of the product identified by the SKU. A partner may want to
-     * show partner branded names for their offerings such as local sovereign
-     * cloud solutions.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\CloudControlsPartnerService {
+    class Sku extends \Google\Model
     {
+        /**
+         * Display name of the product identified by the SKU. A partner may want to
+         * show partner branded names for their offerings such as local sovereign
+         * cloud solutions.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Argentum product SKU, that is associated with the partner offerings to
+         * customers used by Syntro for billing purposes. SKUs can represent resold
+         * Google products or support services.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Display name of the product identified by the SKU. A partner may want to
+         * show partner branded names for their offerings such as local sovereign
+         * cloud solutions.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Argentum product SKU, that is associated with the partner offerings to
+         * customers used by Syntro for billing purposes. SKUs can represent resold
+         * Google products or support services.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudControlsPartnerService\Sku registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Argentum product SKU, that is associated with the partner offerings to
-     * customers used by Syntro for billing purposes. SKUs can represent resold
-     * Google products or support services.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
+    class Google_Service_CloudControlsPartnerService_Sku extends \Google\Service\CloudControlsPartnerService\Sku
     {
     }
 }

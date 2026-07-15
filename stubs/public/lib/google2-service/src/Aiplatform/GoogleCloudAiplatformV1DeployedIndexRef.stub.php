@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1DeployedIndexRef extends \Google\Model
-{
-    /**
-     * Immutable. The ID of the DeployedIndex in the above IndexEndpoint.
-     *
-     * @var string
-     */
-    public $deployedIndexId;
-    /**
-     * Output only. The display name of the DeployedIndex.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Immutable. A resource name of the IndexEndpoint.
-     *
-     * @var string
-     */
-    public $indexEndpoint;
-    /**
-     * Immutable. The ID of the DeployedIndex in the above IndexEndpoint.
-     *
-     * @param string $deployedIndexId
-     */
-    public function setDeployedIndexId($deployedIndexId)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1DeployedIndexRef extends \Google\Model
     {
+        /**
+         * Immutable. The ID of the DeployedIndex in the above IndexEndpoint.
+         *
+         * @var string
+         */
+        public $deployedIndexId;
+        /**
+         * Output only. The display name of the DeployedIndex.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Immutable. A resource name of the IndexEndpoint.
+         *
+         * @var string
+         */
+        public $indexEndpoint;
+        /**
+         * Immutable. The ID of the DeployedIndex in the above IndexEndpoint.
+         *
+         * @param string $deployedIndexId
+         */
+        public function setDeployedIndexId($deployedIndexId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeployedIndexId()
+        {
+        }
+        /**
+         * Output only. The display name of the DeployedIndex.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Immutable. A resource name of the IndexEndpoint.
+         *
+         * @param string $indexEndpoint
+         */
+        public function setIndexEndpoint($indexEndpoint)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIndexEndpoint()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1DeployedIndexRef registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeployedIndexId()
-    {
-    }
-    /**
-     * Output only. The display name of the DeployedIndex.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Immutable. A resource name of the IndexEndpoint.
-     *
-     * @param string $indexEndpoint
-     */
-    public function setIndexEndpoint($indexEndpoint)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIndexEndpoint()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1DeployedIndexRef extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1DeployedIndexRef
     {
     }
 }

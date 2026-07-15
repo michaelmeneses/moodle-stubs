@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class RddOperationCluster extends \Google\Collection
-{
-    protected $collection_key = 'childNodes';
-    protected $childClustersType = RddOperationCluster::class;
-    protected $childClustersDataType = 'array';
-    protected $childNodesType = RddOperationNode::class;
-    protected $childNodesDataType = 'array';
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $rddClusterId;
-    /**
-     * @param RddOperationCluster[] $childClusters
-     */
-    public function setChildClusters($childClusters)
+namespace Google\Service\Dataproc {
+    class RddOperationCluster extends \Google\Collection
     {
+        protected $collection_key = 'childNodes';
+        protected $childClustersType = RddOperationCluster::class;
+        protected $childClustersDataType = 'array';
+        protected $childNodesType = RddOperationNode::class;
+        protected $childNodesDataType = 'array';
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $rddClusterId;
+        /**
+         * @param RddOperationCluster[] $childClusters
+         */
+        public function setChildClusters($childClusters)
+        {
+        }
+        /**
+         * @return RddOperationCluster[]
+         */
+        public function getChildClusters()
+        {
+        }
+        /**
+         * @param RddOperationNode[] $childNodes
+         */
+        public function setChildNodes($childNodes)
+        {
+        }
+        /**
+         * @return RddOperationNode[]
+         */
+        public function getChildNodes()
+        {
+        }
+        /**
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string $rddClusterId
+         */
+        public function setRddClusterId($rddClusterId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRddClusterId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RddOperationCluster[]
+     * Runtime class alias of \Google\Service\Dataproc\RddOperationCluster registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChildClusters()
-    {
-    }
-    /**
-     * @param RddOperationNode[] $childNodes
-     */
-    public function setChildNodes($childNodes)
-    {
-    }
-    /**
-     * @return RddOperationNode[]
-     */
-    public function getChildNodes()
-    {
-    }
-    /**
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string $rddClusterId
-     */
-    public function setRddClusterId($rddClusterId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRddClusterId()
+    class Google_Service_Dataproc_RddOperationCluster extends \Google\Service\Dataproc\RddOperationCluster
     {
     }
 }

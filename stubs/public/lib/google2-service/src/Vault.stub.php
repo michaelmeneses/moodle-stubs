@@ -21,48 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for Vault (v1).
- *
- * <p>
- * Retention and eDiscovery for Google Workspace. To work with Vault resources,
- * the account must have the [required Vault
- * privileges](https://support.google.com/vault/answer/2799699) and access to
- * the matter. To access a matter, the account must have created the matter,
- * have the matter shared with them, or have the **View All Matters** privilege.
- * For example, to download an export, an account needs the **Manage Exports**
- * privilege and the matter shared with them.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://developers.google.com/workspace/vault" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class Vault extends \Google\Service
-{
-    /** Manage your eDiscovery data. */
-    const EDISCOVERY = "https://www.googleapis.com/auth/ediscovery";
-    /** View your eDiscovery data. */
-    const EDISCOVERY_READONLY = "https://www.googleapis.com/auth/ediscovery.readonly";
-    public $matters;
-    public $matters_exports;
-    public $matters_holds;
-    public $matters_holds_accounts;
-    public $matters_savedQueries;
-    public $operations;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the Vault service.
+     * Service definition for Vault (v1).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * Retention and eDiscovery for Google Workspace. To work with Vault resources,
+     * the account must have the [required Vault
+     * privileges](https://support.google.com/vault/answer/2799699) and access to
+     * the matter. To access a matter, the account must have created the matter,
+     * have the matter shared with them, or have the **View All Matters** privilege.
+     * For example, to download an export, an account needs the **Manage Exports**
+     * privilege and the matter shared with them.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://developers.google.com/workspace/vault" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class Vault extends \Google\Service
+    {
+        /** Manage your eDiscovery data. */
+        const EDISCOVERY = "https://www.googleapis.com/auth/ediscovery";
+        /** View your eDiscovery data. */
+        const EDISCOVERY_READONLY = "https://www.googleapis.com/auth/ediscovery.readonly";
+        public $matters;
+        public $matters_exports;
+        public $matters_holds;
+        public $matters_holds_accounts;
+        public $matters_savedQueries;
+        public $operations;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the Vault service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Vault registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Vault extends \Google\Service\Vault
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1DiscoveryEventActionDetails extends \Google\Model
-{
-    /**
-     * The human readable issue associated with the action.
-     *
-     * @var string
-     */
-    public $issue;
-    /**
-     * The type of action. Eg. IncompatibleDataSchema, InvalidDataFormat
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The human readable issue associated with the action.
-     *
-     * @param string $issue
-     */
-    public function setIssue($issue)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1DiscoveryEventActionDetails extends \Google\Model
     {
+        /**
+         * The human readable issue associated with the action.
+         *
+         * @var string
+         */
+        public $issue;
+        /**
+         * The type of action. Eg. IncompatibleDataSchema, InvalidDataFormat
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The human readable issue associated with the action.
+         *
+         * @param string $issue
+         */
+        public function setIssue($issue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIssue()
+        {
+        }
+        /**
+         * The type of action. Eg. IncompatibleDataSchema, InvalidDataFormat
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1DiscoveryEventActionDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIssue()
-    {
-    }
-    /**
-     * The type of action. Eg. IncompatibleDataSchema, InvalidDataFormat
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1DiscoveryEventActionDetails extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1DiscoveryEventActionDetails
     {
     }
 }

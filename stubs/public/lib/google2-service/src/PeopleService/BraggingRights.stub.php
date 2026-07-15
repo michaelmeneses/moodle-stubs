@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PeopleService;
-
-class BraggingRights extends \Google\Model
-{
-    protected $metadataType = FieldMetadata::class;
-    protected $metadataDataType = '';
-    /**
-     * The bragging rights; for example, `climbed mount everest`.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Metadata about the bragging rights.
-     *
-     * @param FieldMetadata $metadata
-     */
-    public function setMetadata(FieldMetadata $metadata)
+namespace Google\Service\PeopleService {
+    class BraggingRights extends \Google\Model
     {
+        protected $metadataType = FieldMetadata::class;
+        protected $metadataDataType = '';
+        /**
+         * The bragging rights; for example, `climbed mount everest`.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Metadata about the bragging rights.
+         *
+         * @param FieldMetadata $metadata
+         */
+        public function setMetadata(FieldMetadata $metadata)
+        {
+        }
+        /**
+         * @return FieldMetadata
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * The bragging rights; for example, `climbed mount everest`.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FieldMetadata
+     * Runtime class alias of \Google\Service\PeopleService\BraggingRights registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetadata()
-    {
-    }
-    /**
-     * The bragging rights; for example, `climbed mount everest`.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_PeopleService_BraggingRights extends \Google\Service\PeopleService\BraggingRights
     {
     }
 }

@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1ProcessorTypeLocationInfo extends \Google\Model
-{
-    /**
-     * The location ID. For supported locations, refer to [regional and multi-
-     * regional support](/document-ai/docs/regions).
-     *
-     * @var string
-     */
-    public $locationId;
-    /**
-     * The location ID. For supported locations, refer to [regional and multi-
-     * regional support](/document-ai/docs/regions).
-     *
-     * @param string $locationId
-     */
-    public function setLocationId($locationId)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1ProcessorTypeLocationInfo extends \Google\Model
     {
+        /**
+         * The location ID. For supported locations, refer to [regional and multi-
+         * regional support](/document-ai/docs/regions).
+         *
+         * @var string
+         */
+        public $locationId;
+        /**
+         * The location ID. For supported locations, refer to [regional and multi-
+         * regional support](/document-ai/docs/regions).
+         *
+         * @param string $locationId
+         */
+        public function setLocationId($locationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocationId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1ProcessorTypeLocationInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLocationId()
+    class Google_Service_Document_GoogleCloudDocumentaiV1ProcessorTypeLocationInfo extends \Google\Service\Document\GoogleCloudDocumentaiV1ProcessorTypeLocationInfo
     {
     }
 }

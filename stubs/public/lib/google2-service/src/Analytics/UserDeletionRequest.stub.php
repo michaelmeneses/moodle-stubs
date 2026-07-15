@@ -21,126 +21,135 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics;
-
-class UserDeletionRequest extends \Google\Model
-{
-    /**
-     * This marks the point in time for which all user data before should be
-     * deleted
-     *
-     * @var string
-     */
-    public $deletionRequestTime;
-    /**
-     * Firebase Project Id
-     *
-     * @var string
-     */
-    public $firebaseProjectId;
-    protected $idType = UserDeletionRequestId::class;
-    protected $idDataType = '';
-    /**
-     * Value is "analytics#userDeletionRequest".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Property ID
-     *
-     * @var string
-     */
-    public $propertyId;
-    /**
-     * Web property ID of the form UA-XXXXX-YY.
-     *
-     * @var string
-     */
-    public $webPropertyId;
-    /**
-     * This marks the point in time for which all user data before should be
-     * deleted
-     *
-     * @param string $deletionRequestTime
-     */
-    public function setDeletionRequestTime($deletionRequestTime)
+namespace Google\Service\Analytics {
+    class UserDeletionRequest extends \Google\Model
     {
+        /**
+         * This marks the point in time for which all user data before should be
+         * deleted
+         *
+         * @var string
+         */
+        public $deletionRequestTime;
+        /**
+         * Firebase Project Id
+         *
+         * @var string
+         */
+        public $firebaseProjectId;
+        protected $idType = UserDeletionRequestId::class;
+        protected $idDataType = '';
+        /**
+         * Value is "analytics#userDeletionRequest".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Property ID
+         *
+         * @var string
+         */
+        public $propertyId;
+        /**
+         * Web property ID of the form UA-XXXXX-YY.
+         *
+         * @var string
+         */
+        public $webPropertyId;
+        /**
+         * This marks the point in time for which all user data before should be
+         * deleted
+         *
+         * @param string $deletionRequestTime
+         */
+        public function setDeletionRequestTime($deletionRequestTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeletionRequestTime()
+        {
+        }
+        /**
+         * Firebase Project Id
+         *
+         * @param string $firebaseProjectId
+         */
+        public function setFirebaseProjectId($firebaseProjectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFirebaseProjectId()
+        {
+        }
+        /**
+         * User ID.
+         *
+         * @param UserDeletionRequestId $id
+         */
+        public function setId(UserDeletionRequestId $id)
+        {
+        }
+        /**
+         * @return UserDeletionRequestId
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Value is "analytics#userDeletionRequest".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Property ID
+         *
+         * @param string $propertyId
+         */
+        public function setPropertyId($propertyId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPropertyId()
+        {
+        }
+        /**
+         * Web property ID of the form UA-XXXXX-YY.
+         *
+         * @param string $webPropertyId
+         */
+        public function setWebPropertyId($webPropertyId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWebPropertyId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Analytics\UserDeletionRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeletionRequestTime()
-    {
-    }
-    /**
-     * Firebase Project Id
-     *
-     * @param string $firebaseProjectId
-     */
-    public function setFirebaseProjectId($firebaseProjectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFirebaseProjectId()
-    {
-    }
-    /**
-     * User ID.
-     *
-     * @param UserDeletionRequestId $id
-     */
-    public function setId(UserDeletionRequestId $id)
-    {
-    }
-    /**
-     * @return UserDeletionRequestId
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Value is "analytics#userDeletionRequest".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Property ID
-     *
-     * @param string $propertyId
-     */
-    public function setPropertyId($propertyId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPropertyId()
-    {
-    }
-    /**
-     * Web property ID of the form UA-XXXXX-YY.
-     *
-     * @param string $webPropertyId
-     */
-    public function setWebPropertyId($webPropertyId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWebPropertyId()
+    class Google_Service_Analytics_UserDeletionRequest extends \Google\Service\Analytics\UserDeletionRequest
     {
     }
 }

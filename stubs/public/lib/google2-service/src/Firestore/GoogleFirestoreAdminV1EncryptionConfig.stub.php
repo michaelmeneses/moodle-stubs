@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class GoogleFirestoreAdminV1EncryptionConfig extends \Google\Model
-{
-    protected $customerManagedEncryptionType = GoogleFirestoreAdminV1CustomerManagedEncryptionOptions::class;
-    protected $customerManagedEncryptionDataType = '';
-    protected $googleDefaultEncryptionType = GoogleFirestoreAdminV1GoogleDefaultEncryptionOptions::class;
-    protected $googleDefaultEncryptionDataType = '';
-    protected $useSourceEncryptionType = GoogleFirestoreAdminV1SourceEncryptionOptions::class;
-    protected $useSourceEncryptionDataType = '';
-    /**
-     * Use Customer Managed Encryption Keys (CMEK) for encryption.
-     *
-     * @param GoogleFirestoreAdminV1CustomerManagedEncryptionOptions $customerManagedEncryption
-     */
-    public function setCustomerManagedEncryption(GoogleFirestoreAdminV1CustomerManagedEncryptionOptions $customerManagedEncryption)
+namespace Google\Service\Firestore {
+    class GoogleFirestoreAdminV1EncryptionConfig extends \Google\Model
     {
+        protected $customerManagedEncryptionType = GoogleFirestoreAdminV1CustomerManagedEncryptionOptions::class;
+        protected $customerManagedEncryptionDataType = '';
+        protected $googleDefaultEncryptionType = GoogleFirestoreAdminV1GoogleDefaultEncryptionOptions::class;
+        protected $googleDefaultEncryptionDataType = '';
+        protected $useSourceEncryptionType = GoogleFirestoreAdminV1SourceEncryptionOptions::class;
+        protected $useSourceEncryptionDataType = '';
+        /**
+         * Use Customer Managed Encryption Keys (CMEK) for encryption.
+         *
+         * @param GoogleFirestoreAdminV1CustomerManagedEncryptionOptions $customerManagedEncryption
+         */
+        public function setCustomerManagedEncryption(GoogleFirestoreAdminV1CustomerManagedEncryptionOptions $customerManagedEncryption)
+        {
+        }
+        /**
+         * @return GoogleFirestoreAdminV1CustomerManagedEncryptionOptions
+         */
+        public function getCustomerManagedEncryption()
+        {
+        }
+        /**
+         * Use Google default encryption.
+         *
+         * @param GoogleFirestoreAdminV1GoogleDefaultEncryptionOptions $googleDefaultEncryption
+         */
+        public function setGoogleDefaultEncryption(GoogleFirestoreAdminV1GoogleDefaultEncryptionOptions $googleDefaultEncryption)
+        {
+        }
+        /**
+         * @return GoogleFirestoreAdminV1GoogleDefaultEncryptionOptions
+         */
+        public function getGoogleDefaultEncryption()
+        {
+        }
+        /**
+         * The database will use the same encryption configuration as the source.
+         *
+         * @param GoogleFirestoreAdminV1SourceEncryptionOptions $useSourceEncryption
+         */
+        public function setUseSourceEncryption(GoogleFirestoreAdminV1SourceEncryptionOptions $useSourceEncryption)
+        {
+        }
+        /**
+         * @return GoogleFirestoreAdminV1SourceEncryptionOptions
+         */
+        public function getUseSourceEncryption()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleFirestoreAdminV1CustomerManagedEncryptionOptions
+     * Runtime class alias of \Google\Service\Firestore\GoogleFirestoreAdminV1EncryptionConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomerManagedEncryption()
-    {
-    }
-    /**
-     * Use Google default encryption.
-     *
-     * @param GoogleFirestoreAdminV1GoogleDefaultEncryptionOptions $googleDefaultEncryption
-     */
-    public function setGoogleDefaultEncryption(GoogleFirestoreAdminV1GoogleDefaultEncryptionOptions $googleDefaultEncryption)
-    {
-    }
-    /**
-     * @return GoogleFirestoreAdminV1GoogleDefaultEncryptionOptions
-     */
-    public function getGoogleDefaultEncryption()
-    {
-    }
-    /**
-     * The database will use the same encryption configuration as the source.
-     *
-     * @param GoogleFirestoreAdminV1SourceEncryptionOptions $useSourceEncryption
-     */
-    public function setUseSourceEncryption(GoogleFirestoreAdminV1SourceEncryptionOptions $useSourceEncryption)
-    {
-    }
-    /**
-     * @return GoogleFirestoreAdminV1SourceEncryptionOptions
-     */
-    public function getUseSourceEncryption()
+    class Google_Service_Firestore_GoogleFirestoreAdminV1EncryptionConfig extends \Google\Service\Firestore\GoogleFirestoreAdminV1EncryptionConfig
     {
     }
 }

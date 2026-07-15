@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class GenerateMembershipRBACRoleBindingYAMLResponse extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $roleBindingsYaml;
-    /**
-     * @param string
-     */
-    public function setRoleBindingsYaml($roleBindingsYaml)
+namespace Google\Service\GKEHub {
+    class GenerateMembershipRBACRoleBindingYAMLResponse extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $roleBindingsYaml;
+        /**
+         * @param string
+         */
+        public function setRoleBindingsYaml($roleBindingsYaml)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRoleBindingsYaml()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEHub\GenerateMembershipRBACRoleBindingYAMLResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRoleBindingsYaml()
+    class Google_Service_GKEHub_GenerateMembershipRBACRoleBindingYAMLResponse extends \Google\Service\GKEHub\GenerateMembershipRBACRoleBindingYAMLResponse
     {
     }
 }

@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class Padding extends \Google\Model
-{
-    /**
-     * The bottom padding of the cell.
-     *
-     * @var int
-     */
-    public $bottom;
-    /**
-     * The left padding of the cell.
-     *
-     * @var int
-     */
-    public $left;
-    /**
-     * The right padding of the cell.
-     *
-     * @var int
-     */
-    public $right;
-    /**
-     * The top padding of the cell.
-     *
-     * @var int
-     */
-    public $top;
-    /**
-     * The bottom padding of the cell.
-     *
-     * @param int $bottom
-     */
-    public function setBottom($bottom)
+namespace Google\Service\Sheets {
+    class Padding extends \Google\Model
     {
+        /**
+         * The bottom padding of the cell.
+         *
+         * @var int
+         */
+        public $bottom;
+        /**
+         * The left padding of the cell.
+         *
+         * @var int
+         */
+        public $left;
+        /**
+         * The right padding of the cell.
+         *
+         * @var int
+         */
+        public $right;
+        /**
+         * The top padding of the cell.
+         *
+         * @var int
+         */
+        public $top;
+        /**
+         * The bottom padding of the cell.
+         *
+         * @param int $bottom
+         */
+        public function setBottom($bottom)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getBottom()
+        {
+        }
+        /**
+         * The left padding of the cell.
+         *
+         * @param int $left
+         */
+        public function setLeft($left)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getLeft()
+        {
+        }
+        /**
+         * The right padding of the cell.
+         *
+         * @param int $right
+         */
+        public function setRight($right)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRight()
+        {
+        }
+        /**
+         * The top padding of the cell.
+         *
+         * @param int $top
+         */
+        public function setTop($top)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTop()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Sheets\Padding registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBottom()
-    {
-    }
-    /**
-     * The left padding of the cell.
-     *
-     * @param int $left
-     */
-    public function setLeft($left)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getLeft()
-    {
-    }
-    /**
-     * The right padding of the cell.
-     *
-     * @param int $right
-     */
-    public function setRight($right)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getRight()
-    {
-    }
-    /**
-     * The top padding of the cell.
-     *
-     * @param int $top
-     */
-    public function setTop($top)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTop()
+    class Google_Service_Sheets_Padding extends \Google\Service\Sheets\Padding
     {
     }
 }

@@ -22,6 +22,15 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_bigbluebuttonbn\output;
 
+use mod_bigbluebuttonbn\instance;
+use mod_bigbluebuttonbn\local\bigbluebutton\recordings\recording_data;
+use mod_bigbluebuttonbn\local\config;
+use mod_bigbluebuttonbn\local\helpers\roles;
+use mod_bigbluebuttonbn\recording;
+use renderable;
+use renderer_base;
+use stdClass;
+use templatable;
 /**
  * Renderer for recording row playback column
  *

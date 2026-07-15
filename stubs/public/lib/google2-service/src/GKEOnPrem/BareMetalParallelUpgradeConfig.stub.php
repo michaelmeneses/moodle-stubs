@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class BareMetalParallelUpgradeConfig extends \Google\Model
-{
-    /**
-     * The maximum number of nodes that can be upgraded at once.
-     *
-     * @var int
-     */
-    public $concurrentNodes;
-    /**
-     * The minimum number of nodes that should be healthy and available during an
-     * upgrade. If set to the default value of 0, it is possible that none of the
-     * nodes will be available during an upgrade.
-     *
-     * @var int
-     */
-    public $minimumAvailableNodes;
-    /**
-     * The maximum number of nodes that can be upgraded at once.
-     *
-     * @param int $concurrentNodes
-     */
-    public function setConcurrentNodes($concurrentNodes)
+namespace Google\Service\GKEOnPrem {
+    class BareMetalParallelUpgradeConfig extends \Google\Model
     {
+        /**
+         * The maximum number of nodes that can be upgraded at once.
+         *
+         * @var int
+         */
+        public $concurrentNodes;
+        /**
+         * The minimum number of nodes that should be healthy and available during an
+         * upgrade. If set to the default value of 0, it is possible that none of the
+         * nodes will be available during an upgrade.
+         *
+         * @var int
+         */
+        public $minimumAvailableNodes;
+        /**
+         * The maximum number of nodes that can be upgraded at once.
+         *
+         * @param int $concurrentNodes
+         */
+        public function setConcurrentNodes($concurrentNodes)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getConcurrentNodes()
+        {
+        }
+        /**
+         * The minimum number of nodes that should be healthy and available during an
+         * upgrade. If set to the default value of 0, it is possible that none of the
+         * nodes will be available during an upgrade.
+         *
+         * @param int $minimumAvailableNodes
+         */
+        public function setMinimumAvailableNodes($minimumAvailableNodes)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMinimumAvailableNodes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\GKEOnPrem\BareMetalParallelUpgradeConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConcurrentNodes()
-    {
-    }
-    /**
-     * The minimum number of nodes that should be healthy and available during an
-     * upgrade. If set to the default value of 0, it is possible that none of the
-     * nodes will be available during an upgrade.
-     *
-     * @param int $minimumAvailableNodes
-     */
-    public function setMinimumAvailableNodes($minimumAvailableNodes)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMinimumAvailableNodes()
+    class Google_Service_GKEOnPrem_BareMetalParallelUpgradeConfig extends \Google\Service\GKEOnPrem\BareMetalParallelUpgradeConfig
     {
     }
 }

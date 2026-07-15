@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMMigrationService;
-
-class AzureDiskDetails extends \Google\Model
-{
-    /**
-     * Output only. Azure disk ID.
-     *
-     * @var string
-     */
-    public $diskId;
-    /**
-     * Output only. The ordinal number of the disk.
-     *
-     * @var int
-     */
-    public $diskNumber;
-    /**
-     * Output only. Size in GB.
-     *
-     * @var string
-     */
-    public $sizeGb;
-    /**
-     * Output only. Azure disk ID.
-     *
-     * @param string $diskId
-     */
-    public function setDiskId($diskId)
+namespace Google\Service\VMMigrationService {
+    class AzureDiskDetails extends \Google\Model
     {
+        /**
+         * Output only. Azure disk ID.
+         *
+         * @var string
+         */
+        public $diskId;
+        /**
+         * Output only. The ordinal number of the disk.
+         *
+         * @var int
+         */
+        public $diskNumber;
+        /**
+         * Output only. Size in GB.
+         *
+         * @var string
+         */
+        public $sizeGb;
+        /**
+         * Output only. Azure disk ID.
+         *
+         * @param string $diskId
+         */
+        public function setDiskId($diskId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDiskId()
+        {
+        }
+        /**
+         * Output only. The ordinal number of the disk.
+         *
+         * @param int $diskNumber
+         */
+        public function setDiskNumber($diskNumber)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getDiskNumber()
+        {
+        }
+        /**
+         * Output only. Size in GB.
+         *
+         * @param string $sizeGb
+         */
+        public function setSizeGb($sizeGb)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSizeGb()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\VMMigrationService\AzureDiskDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDiskId()
-    {
-    }
-    /**
-     * Output only. The ordinal number of the disk.
-     *
-     * @param int $diskNumber
-     */
-    public function setDiskNumber($diskNumber)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getDiskNumber()
-    {
-    }
-    /**
-     * Output only. Size in GB.
-     *
-     * @param string $sizeGb
-     */
-    public function setSizeGb($sizeGb)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSizeGb()
+    class Google_Service_VMMigrationService_AzureDiskDetails extends \Google\Service\VMMigrationService\AzureDiskDetails
     {
     }
 }

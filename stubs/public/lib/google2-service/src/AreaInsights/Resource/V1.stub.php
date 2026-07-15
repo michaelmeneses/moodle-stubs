@@ -21,35 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AreaInsights\Resource;
-
-/**
- * The "v1" collection of methods.
- * Typical usage is:
- *  <code>
- *   $areainsightsService = new Google\Service\AreaInsights(...);
- *   $v1 = $areainsightsService->v1;
- *  </code>
- */
-class V1 extends \Google\Service\Resource
-{
+namespace Google\Service\AreaInsights\Resource {
+    use Google\Service\AreaInsights\ComputeInsightsRequest;
+    use Google\Service\AreaInsights\ComputeInsightsResponse;
     /**
-     * This method lets you retrieve insights about areas using a variety of filter
-     * such as: area, place type, operating status, price level and ratings.
-     * Currently "count" and "places" insights are supported. With "count" insights
-     * you can answer questions such as "How many restaurant are located in
-     * California that are operational, are inexpensive and have an average rating
-     * of at least 4 stars" (see `insight` enum for more details). With "places"
-     * insights, you can determine which places match the requested filter. Clients
-     * can then use those place resource names to fetch more details about each
-     * individual place using the Places API. (v1.computeInsights)
-     *
-     * @param ComputeInsightsRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return ComputeInsightsResponse
-     * @throws \Google\Service\Exception
+     * The "v1" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $areainsightsService = new Google\Service\AreaInsights(...);
+     *   $v1 = $areainsightsService->v1;
+     *  </code>
      */
-    public function computeInsights(ComputeInsightsRequest $postBody, $optParams = [])
+    class V1 extends \Google\Service\Resource
+    {
+        /**
+         * This method lets you retrieve insights about areas using a variety of filter
+         * such as: area, place type, operating status, price level and ratings.
+         * Currently "count" and "places" insights are supported. With "count" insights
+         * you can answer questions such as "How many restaurant are located in
+         * California that are operational, are inexpensive and have an average rating
+         * of at least 4 stars" (see `insight` enum for more details). With "places"
+         * insights, you can determine which places match the requested filter. Clients
+         * can then use those place resource names to fetch more details about each
+         * individual place using the Places API. (v1.computeInsights)
+         *
+         * @param ComputeInsightsRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return ComputeInsightsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function computeInsights(ComputeInsightsRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AreaInsights\Resource\V1 registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AreaInsights_Resource_V1 extends \Google\Service\AreaInsights\Resource\V1
     {
     }
 }

@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class StandardSqlField extends \Google\Model
-{
-    /**
-     * Optional. The name of this field. Can be absent for struct fields.
-     *
-     * @var string
-     */
-    public $name;
-    protected $typeType = StandardSqlDataType::class;
-    protected $typeDataType = '';
-    /**
-     * Optional. The name of this field. Can be absent for struct fields.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Bigquery {
+    class StandardSqlField extends \Google\Model
     {
+        /**
+         * Optional. The name of this field. Can be absent for struct fields.
+         *
+         * @var string
+         */
+        public $name;
+        protected $typeType = StandardSqlDataType::class;
+        protected $typeDataType = '';
+        /**
+         * Optional. The name of this field. Can be absent for struct fields.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. The type of this parameter. Absent if not explicitly specified
+         * (e.g., CREATE FUNCTION statement can omit the return type; in this case the
+         * output parameter does not have this "type" field).
+         *
+         * @param StandardSqlDataType $type
+         */
+        public function setType(StandardSqlDataType $type)
+        {
+        }
+        /**
+         * @return StandardSqlDataType
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Bigquery\StandardSqlField registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. The type of this parameter. Absent if not explicitly specified
-     * (e.g., CREATE FUNCTION statement can omit the return type; in this case the
-     * output parameter does not have this "type" field).
-     *
-     * @param StandardSqlDataType $type
-     */
-    public function setType(StandardSqlDataType $type)
-    {
-    }
-    /**
-     * @return StandardSqlDataType
-     */
-    public function getType()
+    class Google_Service_Bigquery_StandardSqlField extends \Google\Service\Bigquery\StandardSqlField
     {
     }
 }

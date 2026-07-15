@@ -8,6 +8,7 @@
  */
 namespace Aws\NetworkFirewall;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Network Firewall** service.
  * @method \Aws\Result acceptNetworkFirewallTransitGatewayAttachment(array $args = [])

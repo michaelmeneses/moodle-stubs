@@ -21,89 +21,98 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class PromotionPromotionStatus extends \Google\Collection
-{
-    protected $collection_key = 'promotionIssue';
-    /**
-     * Date on which the promotion has been created in [ISO
-     * 8601](http://en.wikipedia.org/wiki/ISO_8601) format: Date, time, and
-     * offset, for example "2020-01-02T09:00:00+01:00" or "2020-01-02T09:00:00Z"
-     *
-     * @var string
-     */
-    public $creationDate;
-    protected $destinationStatusesType = PromotionPromotionStatusDestinationStatus::class;
-    protected $destinationStatusesDataType = 'array';
-    /**
-     * Date on which the promotion status has been last updated in [ISO
-     * 8601](http://en.wikipedia.org/wiki/ISO_8601) format: Date, time, and
-     * offset, for example "2020-01-02T09:00:00+01:00" or "2020-01-02T09:00:00Z"
-     *
-     * @var string
-     */
-    public $lastUpdateDate;
-    protected $promotionIssueType = PromotionPromotionStatusPromotionIssue::class;
-    protected $promotionIssueDataType = 'array';
-    /**
-     * Date on which the promotion has been created in [ISO
-     * 8601](http://en.wikipedia.org/wiki/ISO_8601) format: Date, time, and
-     * offset, for example "2020-01-02T09:00:00+01:00" or "2020-01-02T09:00:00Z"
-     *
-     * @param string $creationDate
-     */
-    public function setCreationDate($creationDate)
+namespace Google\Service\ShoppingContent {
+    class PromotionPromotionStatus extends \Google\Collection
     {
+        protected $collection_key = 'promotionIssue';
+        /**
+         * Date on which the promotion has been created in [ISO
+         * 8601](http://en.wikipedia.org/wiki/ISO_8601) format: Date, time, and
+         * offset, for example "2020-01-02T09:00:00+01:00" or "2020-01-02T09:00:00Z"
+         *
+         * @var string
+         */
+        public $creationDate;
+        protected $destinationStatusesType = PromotionPromotionStatusDestinationStatus::class;
+        protected $destinationStatusesDataType = 'array';
+        /**
+         * Date on which the promotion status has been last updated in [ISO
+         * 8601](http://en.wikipedia.org/wiki/ISO_8601) format: Date, time, and
+         * offset, for example "2020-01-02T09:00:00+01:00" or "2020-01-02T09:00:00Z"
+         *
+         * @var string
+         */
+        public $lastUpdateDate;
+        protected $promotionIssueType = PromotionPromotionStatusPromotionIssue::class;
+        protected $promotionIssueDataType = 'array';
+        /**
+         * Date on which the promotion has been created in [ISO
+         * 8601](http://en.wikipedia.org/wiki/ISO_8601) format: Date, time, and
+         * offset, for example "2020-01-02T09:00:00+01:00" or "2020-01-02T09:00:00Z"
+         *
+         * @param string $creationDate
+         */
+        public function setCreationDate($creationDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreationDate()
+        {
+        }
+        /**
+         * The intended destinations for the promotion.
+         *
+         * @param PromotionPromotionStatusDestinationStatus[] $destinationStatuses
+         */
+        public function setDestinationStatuses($destinationStatuses)
+        {
+        }
+        /**
+         * @return PromotionPromotionStatusDestinationStatus[]
+         */
+        public function getDestinationStatuses()
+        {
+        }
+        /**
+         * Date on which the promotion status has been last updated in [ISO
+         * 8601](http://en.wikipedia.org/wiki/ISO_8601) format: Date, time, and
+         * offset, for example "2020-01-02T09:00:00+01:00" or "2020-01-02T09:00:00Z"
+         *
+         * @param string $lastUpdateDate
+         */
+        public function setLastUpdateDate($lastUpdateDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastUpdateDate()
+        {
+        }
+        /**
+         * A list of issues associated with the promotion.
+         *
+         * @param PromotionPromotionStatusPromotionIssue[] $promotionIssue
+         */
+        public function setPromotionIssue($promotionIssue)
+        {
+        }
+        /**
+         * @return PromotionPromotionStatusPromotionIssue[]
+         */
+        public function getPromotionIssue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\PromotionPromotionStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreationDate()
-    {
-    }
-    /**
-     * The intended destinations for the promotion.
-     *
-     * @param PromotionPromotionStatusDestinationStatus[] $destinationStatuses
-     */
-    public function setDestinationStatuses($destinationStatuses)
-    {
-    }
-    /**
-     * @return PromotionPromotionStatusDestinationStatus[]
-     */
-    public function getDestinationStatuses()
-    {
-    }
-    /**
-     * Date on which the promotion status has been last updated in [ISO
-     * 8601](http://en.wikipedia.org/wiki/ISO_8601) format: Date, time, and
-     * offset, for example "2020-01-02T09:00:00+01:00" or "2020-01-02T09:00:00Z"
-     *
-     * @param string $lastUpdateDate
-     */
-    public function setLastUpdateDate($lastUpdateDate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastUpdateDate()
-    {
-    }
-    /**
-     * A list of issues associated with the promotion.
-     *
-     * @param PromotionPromotionStatusPromotionIssue[] $promotionIssue
-     */
-    public function setPromotionIssue($promotionIssue)
-    {
-    }
-    /**
-     * @return PromotionPromotionStatusPromotionIssue[]
-     */
-    public function getPromotionIssue()
+    class Google_Service_ShoppingContent_PromotionPromotionStatus extends \Google\Service\ShoppingContent\PromotionPromotionStatus
     {
     }
 }

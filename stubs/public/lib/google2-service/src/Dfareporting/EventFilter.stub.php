@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class EventFilter extends \Google\Model
-{
-    protected $dimensionFilterType = PathReportDimensionValue::class;
-    protected $dimensionFilterDataType = '';
-    /**
-     * @var string
-     */
-    public $kind;
-    protected $uvarFilterType = UvarFilter::class;
-    protected $uvarFilterDataType = '';
-    /**
-     * @param PathReportDimensionValue
-     */
-    public function setDimensionFilter(PathReportDimensionValue $dimensionFilter)
+namespace Google\Service\Dfareporting {
+    class EventFilter extends \Google\Model
     {
+        protected $dimensionFilterType = PathReportDimensionValue::class;
+        protected $dimensionFilterDataType = '';
+        /**
+         * @var string
+         */
+        public $kind;
+        protected $uvarFilterType = UvarFilter::class;
+        protected $uvarFilterDataType = '';
+        /**
+         * @param PathReportDimensionValue
+         */
+        public function setDimensionFilter(PathReportDimensionValue $dimensionFilter)
+        {
+        }
+        /**
+         * @return PathReportDimensionValue
+         */
+        public function getDimensionFilter()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * @param UvarFilter
+         */
+        public function setUvarFilter(UvarFilter $uvarFilter)
+        {
+        }
+        /**
+         * @return UvarFilter
+         */
+        public function getUvarFilter()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PathReportDimensionValue
+     * Runtime class alias of \Google\Service\Dfareporting\EventFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDimensionFilter()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * @param UvarFilter
-     */
-    public function setUvarFilter(UvarFilter $uvarFilter)
-    {
-    }
-    /**
-     * @return UvarFilter
-     */
-    public function getUvarFilter()
+    class Google_Service_Dfareporting_EventFilter extends \Google\Service\Dfareporting\EventFilter
     {
     }
 }

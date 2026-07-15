@@ -21,107 +21,120 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform\Resource;
-
-/**
- * The "persistentResources" collection of methods.
- * Typical usage is:
- *  <code>
- *   $aiplatformService = new Google\Service\Aiplatform(...);
- *   $persistentResources = $aiplatformService->projects_locations_persistentResources;
- *  </code>
- */
-class ProjectsLocationsPersistentResources extends \Google\Service\Resource
-{
+namespace Google\Service\Aiplatform\Resource {
+    use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListPersistentResourcesResponse;
+    use Google\Service\Aiplatform\GoogleCloudAiplatformV1PersistentResource;
+    use Google\Service\Aiplatform\GoogleCloudAiplatformV1RebootPersistentResourceRequest;
+    use Google\Service\Aiplatform\GoogleLongrunningOperation;
     /**
-     * Creates a PersistentResource. (persistentResources.create)
-     *
-     * @param string $parent Required. The resource name of the Location to create
-     * the PersistentResource in. Format: `projects/{project}/locations/{location}`
-     * @param GoogleCloudAiplatformV1PersistentResource $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string persistentResourceId Required. The ID to use for the
-     * PersistentResource, which become the final component of the
-     * PersistentResource's resource name. The maximum length is 63 characters, and
-     * valid characters are `/^[a-z]([a-z0-9-]{0,61}[a-z0-9])?$/`.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
+     * The "persistentResources" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $aiplatformService = new Google\Service\Aiplatform(...);
+     *   $persistentResources = $aiplatformService->projects_locations_persistentResources;
+     *  </code>
      */
-    public function create($parent, GoogleCloudAiplatformV1PersistentResource $postBody, $optParams = [])
+    class ProjectsLocationsPersistentResources extends \Google\Service\Resource
     {
+        /**
+         * Creates a PersistentResource. (persistentResources.create)
+         *
+         * @param string $parent Required. The resource name of the Location to create
+         * the PersistentResource in. Format: `projects/{project}/locations/{location}`
+         * @param GoogleCloudAiplatformV1PersistentResource $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string persistentResourceId Required. The ID to use for the
+         * PersistentResource, which become the final component of the
+         * PersistentResource's resource name. The maximum length is 63 characters, and
+         * valid characters are `/^[a-z]([a-z0-9-]{0,61}[a-z0-9])?$/`.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, GoogleCloudAiplatformV1PersistentResource $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a PersistentResource. (persistentResources.delete)
+         *
+         * @param string $name Required. The name of the PersistentResource to be
+         * deleted. Format: `projects/{project}/locations/{location}/persistentResources
+         * /{persistent_resource}`
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets a PersistentResource. (persistentResources.get)
+         *
+         * @param string $name Required. The name of the PersistentResource resource.
+         * Format: `projects/{project_id_or_number}/locations/{location_id}/persistentRe
+         * sources/{persistent_resource_id}`
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudAiplatformV1PersistentResource
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists PersistentResources in a Location.
+         * (persistentResources.listProjectsLocationsPersistentResources)
+         *
+         * @param string $parent Required. The resource name of the Location to list the
+         * PersistentResources from. Format: `projects/{project}/locations/{location}`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Optional. The standard list page size.
+         * @opt_param string pageToken Optional. The standard list page token. Typically
+         * obtained via ListPersistentResourcesResponse.next_page_token of the previous
+         * PersistentResourceService.ListPersistentResource call.
+         * @return GoogleCloudAiplatformV1ListPersistentResourcesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsPersistentResources($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates a PersistentResource. (persistentResources.patch)
+         *
+         * @param string $name Immutable. Resource name of a PersistentResource.
+         * @param GoogleCloudAiplatformV1PersistentResource $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Required. Specify the fields to be overwritten
+         * in the PersistentResource by the update method.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, GoogleCloudAiplatformV1PersistentResource $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Reboots a PersistentResource. (persistentResources.reboot)
+         *
+         * @param string $name Required. The name of the PersistentResource resource.
+         * Format: `projects/{project_id_or_number}/locations/{location_id}/persistentRe
+         * sources/{persistent_resource_id}`
+         * @param GoogleCloudAiplatformV1RebootPersistentResourceRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function reboot($name, GoogleCloudAiplatformV1RebootPersistentResourceRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a PersistentResource. (persistentResources.delete)
-     *
-     * @param string $name Required. The name of the PersistentResource to be
-     * deleted. Format: `projects/{project}/locations/{location}/persistentResources
-     * /{persistent_resource}`
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Aiplatform\Resource\ProjectsLocationsPersistentResources registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets a PersistentResource. (persistentResources.get)
-     *
-     * @param string $name Required. The name of the PersistentResource resource.
-     * Format: `projects/{project_id_or_number}/locations/{location_id}/persistentRe
-     * sources/{persistent_resource_id}`
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudAiplatformV1PersistentResource
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists PersistentResources in a Location.
-     * (persistentResources.listProjectsLocationsPersistentResources)
-     *
-     * @param string $parent Required. The resource name of the Location to list the
-     * PersistentResources from. Format: `projects/{project}/locations/{location}`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Optional. The standard list page size.
-     * @opt_param string pageToken Optional. The standard list page token. Typically
-     * obtained via ListPersistentResourcesResponse.next_page_token of the previous
-     * PersistentResourceService.ListPersistentResource call.
-     * @return GoogleCloudAiplatformV1ListPersistentResourcesResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsPersistentResources($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates a PersistentResource. (persistentResources.patch)
-     *
-     * @param string $name Immutable. Resource name of a PersistentResource.
-     * @param GoogleCloudAiplatformV1PersistentResource $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Required. Specify the fields to be overwritten
-     * in the PersistentResource by the update method.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, GoogleCloudAiplatformV1PersistentResource $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Reboots a PersistentResource. (persistentResources.reboot)
-     *
-     * @param string $name Required. The name of the PersistentResource resource.
-     * Format: `projects/{project_id_or_number}/locations/{location_id}/persistentRe
-     * sources/{persistent_resource_id}`
-     * @param GoogleCloudAiplatformV1RebootPersistentResourceRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
-     */
-    public function reboot($name, GoogleCloudAiplatformV1RebootPersistentResourceRequest $postBody, $optParams = [])
+    class Google_Service_Aiplatform_Resource_ProjectsLocationsPersistentResources extends \Google\Service\Aiplatform\Resource\ProjectsLocationsPersistentResources
     {
     }
 }

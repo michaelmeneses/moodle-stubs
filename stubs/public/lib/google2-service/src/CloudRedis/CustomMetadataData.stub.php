@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRedis;
-
-class CustomMetadataData extends \Google\Collection
-{
-    protected $collection_key = 'internalResourceMetadata';
-    protected $internalResourceMetadataType = InternalResourceMetadata::class;
-    protected $internalResourceMetadataDataType = 'array';
-    /**
-     * Metadata for individual internal resources in an instance. e.g. spanner
-     * instance can have multiple databases with unique configuration.
-     *
-     * @param InternalResourceMetadata[] $internalResourceMetadata
-     */
-    public function setInternalResourceMetadata($internalResourceMetadata)
+namespace Google\Service\CloudRedis {
+    class CustomMetadataData extends \Google\Collection
     {
+        protected $collection_key = 'internalResourceMetadata';
+        protected $internalResourceMetadataType = InternalResourceMetadata::class;
+        protected $internalResourceMetadataDataType = 'array';
+        /**
+         * Metadata for individual internal resources in an instance. e.g. spanner
+         * instance can have multiple databases with unique configuration.
+         *
+         * @param InternalResourceMetadata[] $internalResourceMetadata
+         */
+        public function setInternalResourceMetadata($internalResourceMetadata)
+        {
+        }
+        /**
+         * @return InternalResourceMetadata[]
+         */
+        public function getInternalResourceMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InternalResourceMetadata[]
+     * Runtime class alias of \Google\Service\CloudRedis\CustomMetadataData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInternalResourceMetadata()
+    class Google_Service_CloudRedis_CustomMetadataData extends \Google\Service\CloudRedis\CustomMetadataData
     {
     }
 }

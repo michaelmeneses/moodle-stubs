@@ -21,101 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee\Resource;
-
-/**
- * The "overrides" collection of methods.
- * Typical usage is:
- *  <code>
- *   $apigeeService = new Google\Service\Apigee(...);
- *   $overrides = $apigeeService->organizations_environments_traceConfig_overrides;
- *  </code>
- */
-class OrganizationsEnvironmentsTraceConfigOverrides extends \Google\Service\Resource
-{
+namespace Google\Service\Apigee\Resource {
+    use Google\Service\Apigee\GoogleCloudApigeeV1ListTraceConfigOverridesResponse;
+    use Google\Service\Apigee\GoogleCloudApigeeV1TraceConfigOverride;
+    use Google\Service\Apigee\GoogleProtobufEmpty;
     /**
-     * Creates a trace configuration override. The response contains a system-
-     * generated UUID, that can be used to view, update, or delete the configuration
-     * override. Use the List API to view the existing trace configuration
-     * overrides. (overrides.create)
-     *
-     * @param string $parent Required. Parent resource of the trace configuration
-     * override. Use the following structure in your request.
-     * "organizations/environments/traceConfig".
-     * @param GoogleCloudApigeeV1TraceConfigOverride $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudApigeeV1TraceConfigOverride
-     * @throws \Google\Service\Exception
+     * The "overrides" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $apigeeService = new Google\Service\Apigee(...);
+     *   $overrides = $apigeeService->organizations_environments_traceConfig_overrides;
+     *  </code>
      */
-    public function create($parent, GoogleCloudApigeeV1TraceConfigOverride $postBody, $optParams = [])
+    class OrganizationsEnvironmentsTraceConfigOverrides extends \Google\Service\Resource
     {
+        /**
+         * Creates a trace configuration override. The response contains a system-
+         * generated UUID, that can be used to view, update, or delete the configuration
+         * override. Use the List API to view the existing trace configuration
+         * overrides. (overrides.create)
+         *
+         * @param string $parent Required. Parent resource of the trace configuration
+         * override. Use the following structure in your request.
+         * "organizations/environments/traceConfig".
+         * @param GoogleCloudApigeeV1TraceConfigOverride $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudApigeeV1TraceConfigOverride
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, GoogleCloudApigeeV1TraceConfigOverride $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a distributed trace configuration override. (overrides.delete)
+         *
+         * @param string $name Required. Name of the trace configuration override. Use
+         * the following structure in your request:
+         * "organizations/environments/traceConfig/overrides".
+         * @param array $optParams Optional parameters.
+         * @return GoogleProtobufEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets a trace configuration override. (overrides.get)
+         *
+         * @param string $name Required. Name of the trace configuration override. Use
+         * the following structure in your request:
+         * "organizations/environments/traceConfig/overrides".
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudApigeeV1TraceConfigOverride
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists all of the distributed trace configuration overrides in an environment.
+         * (overrides.listOrganizationsEnvironmentsTraceConfigOverrides)
+         *
+         * @param string $parent Required. Parent resource of the trace configuration
+         * override. Use the following structure in your request:
+         * "organizations/environments/traceConfig".
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Maximum number of trace configuration overrides to
+         * return. If not specified, the maximum number returned is 25. The maximum
+         * number cannot exceed 100.
+         * @opt_param string pageToken A page token, returned from a previous
+         * `ListTraceConfigOverrides` call. Token value that can be used to retrieve the
+         * subsequent page. When paginating, all other parameters provided to
+         * `ListTraceConfigOverrides` must match those specified in the call to obtain
+         * the page token.
+         * @return GoogleCloudApigeeV1ListTraceConfigOverridesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listOrganizationsEnvironmentsTraceConfigOverrides($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates a distributed trace configuration override. Note that the repeated
+         * fields have replace semantics when included in the field mask and that they
+         * will be overwritten by the value of the fields in the request body.
+         * (overrides.patch)
+         *
+         * @param string $name Required. Name of the trace configuration override. Use
+         * the following structure in your request:
+         * "organizations/environments/traceConfig/overrides".
+         * @param GoogleCloudApigeeV1TraceConfigOverride $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask List of fields to be updated.
+         * @return GoogleCloudApigeeV1TraceConfigOverride
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, GoogleCloudApigeeV1TraceConfigOverride $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a distributed trace configuration override. (overrides.delete)
-     *
-     * @param string $name Required. Name of the trace configuration override. Use
-     * the following structure in your request:
-     * "organizations/environments/traceConfig/overrides".
-     * @param array $optParams Optional parameters.
-     * @return GoogleProtobufEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Apigee\Resource\OrganizationsEnvironmentsTraceConfigOverrides registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets a trace configuration override. (overrides.get)
-     *
-     * @param string $name Required. Name of the trace configuration override. Use
-     * the following structure in your request:
-     * "organizations/environments/traceConfig/overrides".
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudApigeeV1TraceConfigOverride
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists all of the distributed trace configuration overrides in an environment.
-     * (overrides.listOrganizationsEnvironmentsTraceConfigOverrides)
-     *
-     * @param string $parent Required. Parent resource of the trace configuration
-     * override. Use the following structure in your request:
-     * "organizations/environments/traceConfig".
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Maximum number of trace configuration overrides to
-     * return. If not specified, the maximum number returned is 25. The maximum
-     * number cannot exceed 100.
-     * @opt_param string pageToken A page token, returned from a previous
-     * `ListTraceConfigOverrides` call. Token value that can be used to retrieve the
-     * subsequent page. When paginating, all other parameters provided to
-     * `ListTraceConfigOverrides` must match those specified in the call to obtain
-     * the page token.
-     * @return GoogleCloudApigeeV1ListTraceConfigOverridesResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listOrganizationsEnvironmentsTraceConfigOverrides($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates a distributed trace configuration override. Note that the repeated
-     * fields have replace semantics when included in the field mask and that they
-     * will be overwritten by the value of the fields in the request body.
-     * (overrides.patch)
-     *
-     * @param string $name Required. Name of the trace configuration override. Use
-     * the following structure in your request:
-     * "organizations/environments/traceConfig/overrides".
-     * @param GoogleCloudApigeeV1TraceConfigOverride $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask List of fields to be updated.
-     * @return GoogleCloudApigeeV1TraceConfigOverride
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, GoogleCloudApigeeV1TraceConfigOverride $postBody, $optParams = [])
+    class Google_Service_Apigee_Resource_OrganizationsEnvironmentsTraceConfigOverrides extends \Google\Service\Apigee\Resource\OrganizationsEnvironmentsTraceConfigOverrides
     {
     }
 }

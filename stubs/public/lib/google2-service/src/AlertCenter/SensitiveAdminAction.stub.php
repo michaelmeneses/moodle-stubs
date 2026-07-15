@@ -21,129 +21,138 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AlertCenter;
-
-class SensitiveAdminAction extends \Google\Model
-{
-    /**
-     * Email of person who performed the action
-     *
-     * @var string
-     */
-    public $actorEmail;
-    /**
-     * The time at which event occurred
-     *
-     * @var string
-     */
-    public $eventTime;
-    protected $primaryAdminChangedEventType = PrimaryAdminChangedEvent::class;
-    protected $primaryAdminChangedEventDataType = '';
-    protected $ssoProfileCreatedEventType = SSOProfileCreatedEvent::class;
-    protected $ssoProfileCreatedEventDataType = '';
-    protected $ssoProfileDeletedEventType = SSOProfileDeletedEvent::class;
-    protected $ssoProfileDeletedEventDataType = '';
-    protected $ssoProfileUpdatedEventType = SSOProfileUpdatedEvent::class;
-    protected $ssoProfileUpdatedEventDataType = '';
-    protected $superAdminPasswordResetEventType = SuperAdminPasswordResetEvent::class;
-    protected $superAdminPasswordResetEventDataType = '';
-    /**
-     * Email of person who performed the action
-     *
-     * @param string $actorEmail
-     */
-    public function setActorEmail($actorEmail)
+namespace Google\Service\AlertCenter {
+    class SensitiveAdminAction extends \Google\Model
     {
+        /**
+         * Email of person who performed the action
+         *
+         * @var string
+         */
+        public $actorEmail;
+        /**
+         * The time at which event occurred
+         *
+         * @var string
+         */
+        public $eventTime;
+        protected $primaryAdminChangedEventType = PrimaryAdminChangedEvent::class;
+        protected $primaryAdminChangedEventDataType = '';
+        protected $ssoProfileCreatedEventType = SSOProfileCreatedEvent::class;
+        protected $ssoProfileCreatedEventDataType = '';
+        protected $ssoProfileDeletedEventType = SSOProfileDeletedEvent::class;
+        protected $ssoProfileDeletedEventDataType = '';
+        protected $ssoProfileUpdatedEventType = SSOProfileUpdatedEvent::class;
+        protected $ssoProfileUpdatedEventDataType = '';
+        protected $superAdminPasswordResetEventType = SuperAdminPasswordResetEvent::class;
+        protected $superAdminPasswordResetEventDataType = '';
+        /**
+         * Email of person who performed the action
+         *
+         * @param string $actorEmail
+         */
+        public function setActorEmail($actorEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getActorEmail()
+        {
+        }
+        /**
+         * The time at which event occurred
+         *
+         * @param string $eventTime
+         */
+        public function setEventTime($eventTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEventTime()
+        {
+        }
+        /**
+         * Event occurred when primary admin changed in customer's account
+         *
+         * @param PrimaryAdminChangedEvent $primaryAdminChangedEvent
+         */
+        public function setPrimaryAdminChangedEvent(PrimaryAdminChangedEvent $primaryAdminChangedEvent)
+        {
+        }
+        /**
+         * @return PrimaryAdminChangedEvent
+         */
+        public function getPrimaryAdminChangedEvent()
+        {
+        }
+        /**
+         * Event occurred when SSO Profile created in customer's account
+         *
+         * @param SSOProfileCreatedEvent $ssoProfileCreatedEvent
+         */
+        public function setSsoProfileCreatedEvent(SSOProfileCreatedEvent $ssoProfileCreatedEvent)
+        {
+        }
+        /**
+         * @return SSOProfileCreatedEvent
+         */
+        public function getSsoProfileCreatedEvent()
+        {
+        }
+        /**
+         * Event occurred when SSO Profile deleted in customer's account
+         *
+         * @param SSOProfileDeletedEvent $ssoProfileDeletedEvent
+         */
+        public function setSsoProfileDeletedEvent(SSOProfileDeletedEvent $ssoProfileDeletedEvent)
+        {
+        }
+        /**
+         * @return SSOProfileDeletedEvent
+         */
+        public function getSsoProfileDeletedEvent()
+        {
+        }
+        /**
+         * Event occurred when SSO Profile updated in customer's account
+         *
+         * @param SSOProfileUpdatedEvent $ssoProfileUpdatedEvent
+         */
+        public function setSsoProfileUpdatedEvent(SSOProfileUpdatedEvent $ssoProfileUpdatedEvent)
+        {
+        }
+        /**
+         * @return SSOProfileUpdatedEvent
+         */
+        public function getSsoProfileUpdatedEvent()
+        {
+        }
+        /**
+         * Event occurred when password was reset for super admin in customer's
+         * account
+         *
+         * @param SuperAdminPasswordResetEvent $superAdminPasswordResetEvent
+         */
+        public function setSuperAdminPasswordResetEvent(SuperAdminPasswordResetEvent $superAdminPasswordResetEvent)
+        {
+        }
+        /**
+         * @return SuperAdminPasswordResetEvent
+         */
+        public function getSuperAdminPasswordResetEvent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AlertCenter\SensitiveAdminAction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActorEmail()
-    {
-    }
-    /**
-     * The time at which event occurred
-     *
-     * @param string $eventTime
-     */
-    public function setEventTime($eventTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEventTime()
-    {
-    }
-    /**
-     * Event occurred when primary admin changed in customer's account
-     *
-     * @param PrimaryAdminChangedEvent $primaryAdminChangedEvent
-     */
-    public function setPrimaryAdminChangedEvent(PrimaryAdminChangedEvent $primaryAdminChangedEvent)
-    {
-    }
-    /**
-     * @return PrimaryAdminChangedEvent
-     */
-    public function getPrimaryAdminChangedEvent()
-    {
-    }
-    /**
-     * Event occurred when SSO Profile created in customer's account
-     *
-     * @param SSOProfileCreatedEvent $ssoProfileCreatedEvent
-     */
-    public function setSsoProfileCreatedEvent(SSOProfileCreatedEvent $ssoProfileCreatedEvent)
-    {
-    }
-    /**
-     * @return SSOProfileCreatedEvent
-     */
-    public function getSsoProfileCreatedEvent()
-    {
-    }
-    /**
-     * Event occurred when SSO Profile deleted in customer's account
-     *
-     * @param SSOProfileDeletedEvent $ssoProfileDeletedEvent
-     */
-    public function setSsoProfileDeletedEvent(SSOProfileDeletedEvent $ssoProfileDeletedEvent)
-    {
-    }
-    /**
-     * @return SSOProfileDeletedEvent
-     */
-    public function getSsoProfileDeletedEvent()
-    {
-    }
-    /**
-     * Event occurred when SSO Profile updated in customer's account
-     *
-     * @param SSOProfileUpdatedEvent $ssoProfileUpdatedEvent
-     */
-    public function setSsoProfileUpdatedEvent(SSOProfileUpdatedEvent $ssoProfileUpdatedEvent)
-    {
-    }
-    /**
-     * @return SSOProfileUpdatedEvent
-     */
-    public function getSsoProfileUpdatedEvent()
-    {
-    }
-    /**
-     * Event occurred when password was reset for super admin in customer's
-     * account
-     *
-     * @param SuperAdminPasswordResetEvent $superAdminPasswordResetEvent
-     */
-    public function setSuperAdminPasswordResetEvent(SuperAdminPasswordResetEvent $superAdminPasswordResetEvent)
-    {
-    }
-    /**
-     * @return SuperAdminPasswordResetEvent
-     */
-    public function getSuperAdminPasswordResetEvent()
+    class Google_Service_AlertCenter_SensitiveAdminAction extends \Google\Service\AlertCenter\SensitiveAdminAction
     {
     }
 }

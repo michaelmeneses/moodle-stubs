@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1AnswerStepActionObservationSearchResultSnippetInfo extends \Google\Model
-{
-    /**
-     * Snippet content.
-     *
-     * @var string
-     */
-    public $snippet;
-    /**
-     * Status of the snippet defined by the search team.
-     *
-     * @var string
-     */
-    public $snippetStatus;
-    /**
-     * Snippet content.
-     *
-     * @param string $snippet
-     */
-    public function setSnippet($snippet)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1AnswerStepActionObservationSearchResultSnippetInfo extends \Google\Model
     {
+        /**
+         * Snippet content.
+         *
+         * @var string
+         */
+        public $snippet;
+        /**
+         * Status of the snippet defined by the search team.
+         *
+         * @var string
+         */
+        public $snippetStatus;
+        /**
+         * Snippet content.
+         *
+         * @param string $snippet
+         */
+        public function setSnippet($snippet)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSnippet()
+        {
+        }
+        /**
+         * Status of the snippet defined by the search team.
+         *
+         * @param string $snippetStatus
+         */
+        public function setSnippetStatus($snippetStatus)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSnippetStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AnswerStepActionObservationSearchResultSnippetInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSnippet()
-    {
-    }
-    /**
-     * Status of the snippet defined by the search team.
-     *
-     * @param string $snippetStatus
-     */
-    public function setSnippetStatus($snippetStatus)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSnippetStatus()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1AnswerStepActionObservationSearchResultSnippetInfo extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AnswerStepActionObservationSearchResultSnippetInfo
     {
     }
 }

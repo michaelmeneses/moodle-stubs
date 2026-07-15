@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class ListMigrationTokensResponse extends \Google\Collection
-{
-    protected $collection_key = 'migrationTokens';
-    protected $migrationTokensType = MigrationToken::class;
-    protected $migrationTokensDataType = 'array';
-    /**
-     * A token, which can be sent as page_token to retrieve the next page. If this
-     * field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The migration tokens from the specified enterprise.
-     *
-     * @param MigrationToken[] $migrationTokens
-     */
-    public function setMigrationTokens($migrationTokens)
+namespace Google\Service\AndroidManagement {
+    class ListMigrationTokensResponse extends \Google\Collection
     {
+        protected $collection_key = 'migrationTokens';
+        protected $migrationTokensType = MigrationToken::class;
+        protected $migrationTokensDataType = 'array';
+        /**
+         * A token, which can be sent as page_token to retrieve the next page. If this
+         * field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The migration tokens from the specified enterprise.
+         *
+         * @param MigrationToken[] $migrationTokens
+         */
+        public function setMigrationTokens($migrationTokens)
+        {
+        }
+        /**
+         * @return MigrationToken[]
+         */
+        public function getMigrationTokens()
+        {
+        }
+        /**
+         * A token, which can be sent as page_token to retrieve the next page. If this
+         * field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MigrationToken[]
+     * Runtime class alias of \Google\Service\AndroidManagement\ListMigrationTokensResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMigrationTokens()
-    {
-    }
-    /**
-     * A token, which can be sent as page_token to retrieve the next page. If this
-     * field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_AndroidManagement_ListMigrationTokensResponse extends \Google\Service\AndroidManagement\ListMigrationTokensResponse
     {
     }
 }

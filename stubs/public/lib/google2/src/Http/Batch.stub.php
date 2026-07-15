@@ -23,6 +23,13 @@
  */
 namespace Google\Http;
 
+use Google\Client;
+use Google\Service\Exception as GoogleServiceException;
+use GuzzleHttp\Psr7;
+use GuzzleHttp\Psr7\Request;
+use GuzzleHttp\Psr7\Response;
+use Psr\Http\Message\RequestInterface;
+use Psr\Http\Message\ResponseInterface;
 /**
  * Class to handle batched requests to the Google API service.
  *

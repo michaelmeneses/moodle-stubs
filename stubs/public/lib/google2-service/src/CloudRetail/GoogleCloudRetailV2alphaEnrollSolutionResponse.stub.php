@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2alphaEnrollSolutionResponse extends \Google\Model
-{
-    /**
-     * Default value.
-     */
-    public const ENROLLED_SOLUTION_SOLUTION_TYPE_UNSPECIFIED = 'SOLUTION_TYPE_UNSPECIFIED';
-    /**
-     * Used for Recommendations AI.
-     */
-    public const ENROLLED_SOLUTION_SOLUTION_TYPE_RECOMMENDATION = 'SOLUTION_TYPE_RECOMMENDATION';
-    /**
-     * Used for Retail Search.
-     */
-    public const ENROLLED_SOLUTION_SOLUTION_TYPE_SEARCH = 'SOLUTION_TYPE_SEARCH';
-    /**
-     * Retail API solution that the project has enrolled.
-     *
-     * @var string
-     */
-    public $enrolledSolution;
-    /**
-     * Retail API solution that the project has enrolled.
-     *
-     * Accepted values: SOLUTION_TYPE_UNSPECIFIED, SOLUTION_TYPE_RECOMMENDATION,
-     * SOLUTION_TYPE_SEARCH
-     *
-     * @param self::ENROLLED_SOLUTION_* $enrolledSolution
-     */
-    public function setEnrolledSolution($enrolledSolution)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2alphaEnrollSolutionResponse extends \Google\Model
     {
+        /**
+         * Default value.
+         */
+        public const ENROLLED_SOLUTION_SOLUTION_TYPE_UNSPECIFIED = 'SOLUTION_TYPE_UNSPECIFIED';
+        /**
+         * Used for Recommendations AI.
+         */
+        public const ENROLLED_SOLUTION_SOLUTION_TYPE_RECOMMENDATION = 'SOLUTION_TYPE_RECOMMENDATION';
+        /**
+         * Used for Retail Search.
+         */
+        public const ENROLLED_SOLUTION_SOLUTION_TYPE_SEARCH = 'SOLUTION_TYPE_SEARCH';
+        /**
+         * Retail API solution that the project has enrolled.
+         *
+         * @var string
+         */
+        public $enrolledSolution;
+        /**
+         * Retail API solution that the project has enrolled.
+         *
+         * Accepted values: SOLUTION_TYPE_UNSPECIFIED, SOLUTION_TYPE_RECOMMENDATION,
+         * SOLUTION_TYPE_SEARCH
+         *
+         * @param self::ENROLLED_SOLUTION_* $enrolledSolution
+         */
+        public function setEnrolledSolution($enrolledSolution)
+        {
+        }
+        /**
+         * @return self::ENROLLED_SOLUTION_*
+         */
+        public function getEnrolledSolution()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::ENROLLED_SOLUTION_*
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2alphaEnrollSolutionResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnrolledSolution()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2alphaEnrollSolutionResponse extends \Google\Service\CloudRetail\GoogleCloudRetailV2alphaEnrollSolutionResponse
     {
     }
 }

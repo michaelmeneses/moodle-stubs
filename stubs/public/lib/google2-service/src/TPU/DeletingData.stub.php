@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TPU;
-
-class DeletingData extends \Google\Model
-{
+namespace Google\Service\TPU {
+    class DeletingData extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\TPU\DeletingData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_TPU_DeletingData extends \Google\Service\TPU\DeletingData
+    {
+    }
 }

@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class StreamingComputationRanges extends \Google\Collection
-{
-    protected $collection_key = 'rangeAssignments';
-    /**
-     * The ID of the computation.
-     *
-     * @var string
-     */
-    public $computationId;
-    protected $rangeAssignmentsType = KeyRangeDataDiskAssignment::class;
-    protected $rangeAssignmentsDataType = 'array';
-    /**
-     * The ID of the computation.
-     *
-     * @param string $computationId
-     */
-    public function setComputationId($computationId)
+namespace Google\Service\Dataflow {
+    class StreamingComputationRanges extends \Google\Collection
     {
+        protected $collection_key = 'rangeAssignments';
+        /**
+         * The ID of the computation.
+         *
+         * @var string
+         */
+        public $computationId;
+        protected $rangeAssignmentsType = KeyRangeDataDiskAssignment::class;
+        protected $rangeAssignmentsDataType = 'array';
+        /**
+         * The ID of the computation.
+         *
+         * @param string $computationId
+         */
+        public function setComputationId($computationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getComputationId()
+        {
+        }
+        /**
+         * Data disk assignments for ranges from this computation.
+         *
+         * @param KeyRangeDataDiskAssignment[] $rangeAssignments
+         */
+        public function setRangeAssignments($rangeAssignments)
+        {
+        }
+        /**
+         * @return KeyRangeDataDiskAssignment[]
+         */
+        public function getRangeAssignments()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataflow\StreamingComputationRanges registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getComputationId()
-    {
-    }
-    /**
-     * Data disk assignments for ranges from this computation.
-     *
-     * @param KeyRangeDataDiskAssignment[] $rangeAssignments
-     */
-    public function setRangeAssignments($rangeAssignments)
-    {
-    }
-    /**
-     * @return KeyRangeDataDiskAssignment[]
-     */
-    public function getRangeAssignments()
+    class Google_Service_Dataflow_StreamingComputationRanges extends \Google\Service\Dataflow\StreamingComputationRanges
     {
     }
 }

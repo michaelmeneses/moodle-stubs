@@ -21,96 +21,105 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMMigrationService;
-
-class CycleStep extends \Google\Model
-{
-    /**
-     * The time the cycle step has ended.
-     *
-     * @var string
-     */
-    public $endTime;
-    protected $initializingReplicationType = InitializingReplicationStep::class;
-    protected $initializingReplicationDataType = '';
-    protected $postProcessingType = PostProcessingStep::class;
-    protected $postProcessingDataType = '';
-    protected $replicatingType = ReplicatingStep::class;
-    protected $replicatingDataType = '';
-    /**
-     * The time the cycle step has started.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * The time the cycle step has ended.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
+namespace Google\Service\VMMigrationService {
+    class CycleStep extends \Google\Model
     {
+        /**
+         * The time the cycle step has ended.
+         *
+         * @var string
+         */
+        public $endTime;
+        protected $initializingReplicationType = InitializingReplicationStep::class;
+        protected $initializingReplicationDataType = '';
+        protected $postProcessingType = PostProcessingStep::class;
+        protected $postProcessingDataType = '';
+        protected $replicatingType = ReplicatingStep::class;
+        protected $replicatingDataType = '';
+        /**
+         * The time the cycle step has started.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * The time the cycle step has ended.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * Initializing replication step.
+         *
+         * @param InitializingReplicationStep $initializingReplication
+         */
+        public function setInitializingReplication(InitializingReplicationStep $initializingReplication)
+        {
+        }
+        /**
+         * @return InitializingReplicationStep
+         */
+        public function getInitializingReplication()
+        {
+        }
+        /**
+         * Post processing step.
+         *
+         * @param PostProcessingStep $postProcessing
+         */
+        public function setPostProcessing(PostProcessingStep $postProcessing)
+        {
+        }
+        /**
+         * @return PostProcessingStep
+         */
+        public function getPostProcessing()
+        {
+        }
+        /**
+         * Replicating step.
+         *
+         * @param ReplicatingStep $replicating
+         */
+        public function setReplicating(ReplicatingStep $replicating)
+        {
+        }
+        /**
+         * @return ReplicatingStep
+         */
+        public function getReplicating()
+        {
+        }
+        /**
+         * The time the cycle step has started.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\VMMigrationService\CycleStep registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndTime()
-    {
-    }
-    /**
-     * Initializing replication step.
-     *
-     * @param InitializingReplicationStep $initializingReplication
-     */
-    public function setInitializingReplication(InitializingReplicationStep $initializingReplication)
-    {
-    }
-    /**
-     * @return InitializingReplicationStep
-     */
-    public function getInitializingReplication()
-    {
-    }
-    /**
-     * Post processing step.
-     *
-     * @param PostProcessingStep $postProcessing
-     */
-    public function setPostProcessing(PostProcessingStep $postProcessing)
-    {
-    }
-    /**
-     * @return PostProcessingStep
-     */
-    public function getPostProcessing()
-    {
-    }
-    /**
-     * Replicating step.
-     *
-     * @param ReplicatingStep $replicating
-     */
-    public function setReplicating(ReplicatingStep $replicating)
-    {
-    }
-    /**
-     * @return ReplicatingStep
-     */
-    public function getReplicating()
-    {
-    }
-    /**
-     * The time the cycle step has started.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
+    class Google_Service_VMMigrationService_CycleStep extends \Google\Service\VMMigrationService\CycleStep
     {
     }
 }

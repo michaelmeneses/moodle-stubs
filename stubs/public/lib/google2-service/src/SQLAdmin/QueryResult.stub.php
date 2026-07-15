@@ -21,100 +21,109 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class QueryResult extends \Google\Collection
-{
-    protected $collection_key = 'rows';
-    protected $columnsType = Column::class;
-    protected $columnsDataType = 'array';
-    /**
-     * Message related to the SQL execution result.
-     *
-     * @var string
-     */
-    public $message;
-    /**
-     * Set to true if the SQL execution's result is truncated due to size limits
-     * or an error retrieving results.
-     *
-     * @var bool
-     */
-    public $partialResult;
-    protected $rowsType = Row::class;
-    protected $rowsDataType = 'array';
-    protected $statusType = Status::class;
-    protected $statusDataType = '';
-    /**
-     * List of columns included in the result. This also includes the data type of
-     * the column.
-     *
-     * @param Column[] $columns
-     */
-    public function setColumns($columns)
+namespace Google\Service\SQLAdmin {
+    class QueryResult extends \Google\Collection
     {
+        protected $collection_key = 'rows';
+        protected $columnsType = Column::class;
+        protected $columnsDataType = 'array';
+        /**
+         * Message related to the SQL execution result.
+         *
+         * @var string
+         */
+        public $message;
+        /**
+         * Set to true if the SQL execution's result is truncated due to size limits
+         * or an error retrieving results.
+         *
+         * @var bool
+         */
+        public $partialResult;
+        protected $rowsType = Row::class;
+        protected $rowsDataType = 'array';
+        protected $statusType = Status::class;
+        protected $statusDataType = '';
+        /**
+         * List of columns included in the result. This also includes the data type of
+         * the column.
+         *
+         * @param Column[] $columns
+         */
+        public function setColumns($columns)
+        {
+        }
+        /**
+         * @return Column[]
+         */
+        public function getColumns()
+        {
+        }
+        /**
+         * Message related to the SQL execution result.
+         *
+         * @param string $message
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
+        /**
+         * Set to true if the SQL execution's result is truncated due to size limits
+         * or an error retrieving results.
+         *
+         * @param bool $partialResult
+         */
+        public function setPartialResult($partialResult)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPartialResult()
+        {
+        }
+        /**
+         * Rows returned by the SQL statement.
+         *
+         * @param Row[] $rows
+         */
+        public function setRows($rows)
+        {
+        }
+        /**
+         * @return Row[]
+         */
+        public function getRows()
+        {
+        }
+        /**
+         * If results were truncated due to an error, details of that error.
+         *
+         * @param Status $status
+         */
+        public function setStatus(Status $status)
+        {
+        }
+        /**
+         * @return Status
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Column[]
+     * Runtime class alias of \Google\Service\SQLAdmin\QueryResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumns()
-    {
-    }
-    /**
-     * Message related to the SQL execution result.
-     *
-     * @param string $message
-     */
-    public function setMessage($message)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMessage()
-    {
-    }
-    /**
-     * Set to true if the SQL execution's result is truncated due to size limits
-     * or an error retrieving results.
-     *
-     * @param bool $partialResult
-     */
-    public function setPartialResult($partialResult)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPartialResult()
-    {
-    }
-    /**
-     * Rows returned by the SQL statement.
-     *
-     * @param Row[] $rows
-     */
-    public function setRows($rows)
-    {
-    }
-    /**
-     * @return Row[]
-     */
-    public function getRows()
-    {
-    }
-    /**
-     * If results were truncated due to an error, details of that error.
-     *
-     * @param Status $status
-     */
-    public function setStatus(Status $status)
-    {
-    }
-    /**
-     * @return Status
-     */
-    public function getStatus()
+    class Google_Service_SQLAdmin_QueryResult extends \Google\Service\SQLAdmin\QueryResult
     {
     }
 }

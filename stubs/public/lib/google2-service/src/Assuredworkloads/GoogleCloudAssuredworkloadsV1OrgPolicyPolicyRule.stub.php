@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Assuredworkloads;
-
-class GoogleCloudAssuredworkloadsV1OrgPolicyPolicyRule extends \Google\Model
-{
-    /**
-     * ListPolicy only when all values are allowed.
-     *
-     * @var bool
-     */
-    public $allowAll;
-    /**
-     * ListPolicy only when all values are denied.
-     *
-     * @var bool
-     */
-    public $denyAll;
-    /**
-     * BooleanPolicy only.
-     *
-     * @var bool
-     */
-    public $enforce;
-    protected $valuesType = GoogleCloudAssuredworkloadsV1OrgPolicyPolicyRuleStringValues::class;
-    protected $valuesDataType = '';
-    /**
-     * ListPolicy only when all values are allowed.
-     *
-     * @param bool $allowAll
-     */
-    public function setAllowAll($allowAll)
+namespace Google\Service\Assuredworkloads {
+    class GoogleCloudAssuredworkloadsV1OrgPolicyPolicyRule extends \Google\Model
     {
+        /**
+         * ListPolicy only when all values are allowed.
+         *
+         * @var bool
+         */
+        public $allowAll;
+        /**
+         * ListPolicy only when all values are denied.
+         *
+         * @var bool
+         */
+        public $denyAll;
+        /**
+         * BooleanPolicy only.
+         *
+         * @var bool
+         */
+        public $enforce;
+        protected $valuesType = GoogleCloudAssuredworkloadsV1OrgPolicyPolicyRuleStringValues::class;
+        protected $valuesDataType = '';
+        /**
+         * ListPolicy only when all values are allowed.
+         *
+         * @param bool $allowAll
+         */
+        public function setAllowAll($allowAll)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAllowAll()
+        {
+        }
+        /**
+         * ListPolicy only when all values are denied.
+         *
+         * @param bool $denyAll
+         */
+        public function setDenyAll($denyAll)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDenyAll()
+        {
+        }
+        /**
+         * BooleanPolicy only.
+         *
+         * @param bool $enforce
+         */
+        public function setEnforce($enforce)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnforce()
+        {
+        }
+        /**
+         * ListPolicy only when custom values are specified.
+         *
+         * @param GoogleCloudAssuredworkloadsV1OrgPolicyPolicyRuleStringValues $values
+         */
+        public function setValues(GoogleCloudAssuredworkloadsV1OrgPolicyPolicyRuleStringValues $values)
+        {
+        }
+        /**
+         * @return GoogleCloudAssuredworkloadsV1OrgPolicyPolicyRuleStringValues
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1OrgPolicyPolicyRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowAll()
-    {
-    }
-    /**
-     * ListPolicy only when all values are denied.
-     *
-     * @param bool $denyAll
-     */
-    public function setDenyAll($denyAll)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDenyAll()
-    {
-    }
-    /**
-     * BooleanPolicy only.
-     *
-     * @param bool $enforce
-     */
-    public function setEnforce($enforce)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnforce()
-    {
-    }
-    /**
-     * ListPolicy only when custom values are specified.
-     *
-     * @param GoogleCloudAssuredworkloadsV1OrgPolicyPolicyRuleStringValues $values
-     */
-    public function setValues(GoogleCloudAssuredworkloadsV1OrgPolicyPolicyRuleStringValues $values)
-    {
-    }
-    /**
-     * @return GoogleCloudAssuredworkloadsV1OrgPolicyPolicyRuleStringValues
-     */
-    public function getValues()
+    class Google_Service_Assuredworkloads_GoogleCloudAssuredworkloadsV1OrgPolicyPolicyRule extends \Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1OrgPolicyPolicyRule
     {
     }
 }

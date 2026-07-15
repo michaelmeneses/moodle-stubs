@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class SignupPromotion extends \Google\Model
-{
-    protected $oneTimeCodeType = OneTimeCode::class;
-    protected $oneTimeCodeDataType = '';
-    protected $vanityCodeType = VanityCode::class;
-    protected $vanityCodeDataType = '';
-    /**
-     * A one-time code was applied.
-     *
-     * @param OneTimeCode $oneTimeCode
-     */
-    public function setOneTimeCode(OneTimeCode $oneTimeCode)
+namespace Google\Service\AndroidPublisher {
+    class SignupPromotion extends \Google\Model
     {
+        protected $oneTimeCodeType = OneTimeCode::class;
+        protected $oneTimeCodeDataType = '';
+        protected $vanityCodeType = VanityCode::class;
+        protected $vanityCodeDataType = '';
+        /**
+         * A one-time code was applied.
+         *
+         * @param OneTimeCode $oneTimeCode
+         */
+        public function setOneTimeCode(OneTimeCode $oneTimeCode)
+        {
+        }
+        /**
+         * @return OneTimeCode
+         */
+        public function getOneTimeCode()
+        {
+        }
+        /**
+         * A vanity code was applied.
+         *
+         * @param VanityCode $vanityCode
+         */
+        public function setVanityCode(VanityCode $vanityCode)
+        {
+        }
+        /**
+         * @return VanityCode
+         */
+        public function getVanityCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return OneTimeCode
+     * Runtime class alias of \Google\Service\AndroidPublisher\SignupPromotion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOneTimeCode()
-    {
-    }
-    /**
-     * A vanity code was applied.
-     *
-     * @param VanityCode $vanityCode
-     */
-    public function setVanityCode(VanityCode $vanityCode)
-    {
-    }
-    /**
-     * @return VanityCode
-     */
-    public function getVanityCode()
+    class Google_Service_AndroidPublisher_SignupPromotion extends \Google\Service\AndroidPublisher\SignupPromotion
     {
     }
 }

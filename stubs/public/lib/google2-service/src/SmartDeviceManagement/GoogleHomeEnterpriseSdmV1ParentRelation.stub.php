@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SmartDeviceManagement;
-
-class GoogleHomeEnterpriseSdmV1ParentRelation extends \Google\Model
-{
-    /**
-     * Output only. The custom name of the relation -- e.g., structure/room where
-     * the device is assigned to.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Output only. The name of the relation -- e.g., structure/room where the
-     * device is assigned to. For example: "enterprises/XYZ/structures/ABC" or
-     * "enterprises/XYZ/structures/ABC/rooms/123"
-     *
-     * @var string
-     */
-    public $parent;
-    /**
-     * Output only. The custom name of the relation -- e.g., structure/room where
-     * the device is assigned to.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\SmartDeviceManagement {
+    class GoogleHomeEnterpriseSdmV1ParentRelation extends \Google\Model
     {
+        /**
+         * Output only. The custom name of the relation -- e.g., structure/room where
+         * the device is assigned to.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Output only. The name of the relation -- e.g., structure/room where the
+         * device is assigned to. For example: "enterprises/XYZ/structures/ABC" or
+         * "enterprises/XYZ/structures/ABC/rooms/123"
+         *
+         * @var string
+         */
+        public $parent;
+        /**
+         * Output only. The custom name of the relation -- e.g., structure/room where
+         * the device is assigned to.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Output only. The name of the relation -- e.g., structure/room where the
+         * device is assigned to. For example: "enterprises/XYZ/structures/ABC" or
+         * "enterprises/XYZ/structures/ABC/rooms/123"
+         *
+         * @param string $parent
+         */
+        public function setParent($parent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SmartDeviceManagement\GoogleHomeEnterpriseSdmV1ParentRelation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Output only. The name of the relation -- e.g., structure/room where the
-     * device is assigned to. For example: "enterprises/XYZ/structures/ABC" or
-     * "enterprises/XYZ/structures/ABC/rooms/123"
-     *
-     * @param string $parent
-     */
-    public function setParent($parent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParent()
+    class Google_Service_SmartDeviceManagement_GoogleHomeEnterpriseSdmV1ParentRelation extends \Google\Service\SmartDeviceManagement\GoogleHomeEnterpriseSdmV1ParentRelation
     {
     }
 }

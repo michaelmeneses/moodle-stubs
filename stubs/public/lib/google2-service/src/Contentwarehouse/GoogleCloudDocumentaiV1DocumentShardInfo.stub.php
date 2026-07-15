@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudDocumentaiV1DocumentShardInfo extends \Google\Model
-{
-    /**
-     * Total number of shards.
-     *
-     * @var string
-     */
-    public $shardCount;
-    /**
-     * The 0-based index of this shard.
-     *
-     * @var string
-     */
-    public $shardIndex;
-    /**
-     * The index of the first character in Document.text in the overall document
-     * global text.
-     *
-     * @var string
-     */
-    public $textOffset;
-    /**
-     * Total number of shards.
-     *
-     * @param string $shardCount
-     */
-    public function setShardCount($shardCount)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudDocumentaiV1DocumentShardInfo extends \Google\Model
     {
+        /**
+         * Total number of shards.
+         *
+         * @var string
+         */
+        public $shardCount;
+        /**
+         * The 0-based index of this shard.
+         *
+         * @var string
+         */
+        public $shardIndex;
+        /**
+         * The index of the first character in Document.text in the overall document
+         * global text.
+         *
+         * @var string
+         */
+        public $textOffset;
+        /**
+         * Total number of shards.
+         *
+         * @param string $shardCount
+         */
+        public function setShardCount($shardCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getShardCount()
+        {
+        }
+        /**
+         * The 0-based index of this shard.
+         *
+         * @param string $shardIndex
+         */
+        public function setShardIndex($shardIndex)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getShardIndex()
+        {
+        }
+        /**
+         * The index of the first character in Document.text in the overall document
+         * global text.
+         *
+         * @param string $textOffset
+         */
+        public function setTextOffset($textOffset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTextOffset()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudDocumentaiV1DocumentShardInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getShardCount()
-    {
-    }
-    /**
-     * The 0-based index of this shard.
-     *
-     * @param string $shardIndex
-     */
-    public function setShardIndex($shardIndex)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getShardIndex()
-    {
-    }
-    /**
-     * The index of the first character in Document.text in the overall document
-     * global text.
-     *
-     * @param string $textOffset
-     */
-    public function setTextOffset($textOffset)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTextOffset()
+    class Google_Service_Contentwarehouse_GoogleCloudDocumentaiV1DocumentShardInfo extends \Google\Service\Contentwarehouse\GoogleCloudDocumentaiV1DocumentShardInfo
     {
     }
 }

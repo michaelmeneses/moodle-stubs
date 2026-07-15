@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OracleDatabase;
-
-class AutonomousDatabaseCharacterSet extends \Google\Model
-{
-    /**
-     * Character set type is not specified.
-     */
-    public const CHARACTER_SET_TYPE_CHARACTER_SET_TYPE_UNSPECIFIED = 'CHARACTER_SET_TYPE_UNSPECIFIED';
-    /**
-     * Character set type is set to database.
-     */
-    public const CHARACTER_SET_TYPE_DATABASE = 'DATABASE';
-    /**
-     * Character set type is set to national.
-     */
-    public const CHARACTER_SET_TYPE_NATIONAL = 'NATIONAL';
-    /**
-     * Output only. The character set name for the Autonomous Database which is
-     * the ID in the resource name.
-     *
-     * @var string
-     */
-    public $characterSet;
-    /**
-     * Output only. The character set type for the Autonomous Database.
-     *
-     * @var string
-     */
-    public $characterSetType;
-    /**
-     * Identifier. The name of the Autonomous Database Character Set resource in
-     * the following format: projects/{project}/locations/{region}/autonomousDatab
-     * aseCharacterSets/{autonomous_database_character_set}
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The character set name for the Autonomous Database which is
-     * the ID in the resource name.
-     *
-     * @param string $characterSet
-     */
-    public function setCharacterSet($characterSet)
+namespace Google\Service\OracleDatabase {
+    class AutonomousDatabaseCharacterSet extends \Google\Model
     {
+        /**
+         * Character set type is not specified.
+         */
+        public const CHARACTER_SET_TYPE_CHARACTER_SET_TYPE_UNSPECIFIED = 'CHARACTER_SET_TYPE_UNSPECIFIED';
+        /**
+         * Character set type is set to database.
+         */
+        public const CHARACTER_SET_TYPE_DATABASE = 'DATABASE';
+        /**
+         * Character set type is set to national.
+         */
+        public const CHARACTER_SET_TYPE_NATIONAL = 'NATIONAL';
+        /**
+         * Output only. The character set name for the Autonomous Database which is
+         * the ID in the resource name.
+         *
+         * @var string
+         */
+        public $characterSet;
+        /**
+         * Output only. The character set type for the Autonomous Database.
+         *
+         * @var string
+         */
+        public $characterSetType;
+        /**
+         * Identifier. The name of the Autonomous Database Character Set resource in
+         * the following format: projects/{project}/locations/{region}/autonomousDatab
+         * aseCharacterSets/{autonomous_database_character_set}
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The character set name for the Autonomous Database which is
+         * the ID in the resource name.
+         *
+         * @param string $characterSet
+         */
+        public function setCharacterSet($characterSet)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCharacterSet()
+        {
+        }
+        /**
+         * Output only. The character set type for the Autonomous Database.
+         *
+         * Accepted values: CHARACTER_SET_TYPE_UNSPECIFIED, DATABASE, NATIONAL
+         *
+         * @param self::CHARACTER_SET_TYPE_* $characterSetType
+         */
+        public function setCharacterSetType($characterSetType)
+        {
+        }
+        /**
+         * @return self::CHARACTER_SET_TYPE_*
+         */
+        public function getCharacterSetType()
+        {
+        }
+        /**
+         * Identifier. The name of the Autonomous Database Character Set resource in
+         * the following format: projects/{project}/locations/{region}/autonomousDatab
+         * aseCharacterSets/{autonomous_database_character_set}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OracleDatabase\AutonomousDatabaseCharacterSet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCharacterSet()
-    {
-    }
-    /**
-     * Output only. The character set type for the Autonomous Database.
-     *
-     * Accepted values: CHARACTER_SET_TYPE_UNSPECIFIED, DATABASE, NATIONAL
-     *
-     * @param self::CHARACTER_SET_TYPE_* $characterSetType
-     */
-    public function setCharacterSetType($characterSetType)
-    {
-    }
-    /**
-     * @return self::CHARACTER_SET_TYPE_*
-     */
-    public function getCharacterSetType()
-    {
-    }
-    /**
-     * Identifier. The name of the Autonomous Database Character Set resource in
-     * the following format: projects/{project}/locations/{region}/autonomousDatab
-     * aseCharacterSets/{autonomous_database_character_set}
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_OracleDatabase_AutonomousDatabaseCharacterSet extends \Google\Service\OracleDatabase\AutonomousDatabaseCharacterSet
     {
     }
 }

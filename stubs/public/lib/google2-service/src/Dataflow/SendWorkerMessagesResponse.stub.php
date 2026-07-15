@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class SendWorkerMessagesResponse extends \Google\Collection
-{
-    protected $collection_key = 'workerMessageResponses';
-    protected $workerMessageResponsesType = WorkerMessageResponse::class;
-    protected $workerMessageResponsesDataType = 'array';
-    /**
-     * The servers response to the worker messages.
-     *
-     * @param WorkerMessageResponse[] $workerMessageResponses
-     */
-    public function setWorkerMessageResponses($workerMessageResponses)
+namespace Google\Service\Dataflow {
+    class SendWorkerMessagesResponse extends \Google\Collection
     {
+        protected $collection_key = 'workerMessageResponses';
+        protected $workerMessageResponsesType = WorkerMessageResponse::class;
+        protected $workerMessageResponsesDataType = 'array';
+        /**
+         * The servers response to the worker messages.
+         *
+         * @param WorkerMessageResponse[] $workerMessageResponses
+         */
+        public function setWorkerMessageResponses($workerMessageResponses)
+        {
+        }
+        /**
+         * @return WorkerMessageResponse[]
+         */
+        public function getWorkerMessageResponses()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return WorkerMessageResponse[]
+     * Runtime class alias of \Google\Service\Dataflow\SendWorkerMessagesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getWorkerMessageResponses()
+    class Google_Service_Dataflow_SendWorkerMessagesResponse extends \Google\Service\Dataflow\SendWorkerMessagesResponse
     {
     }
 }

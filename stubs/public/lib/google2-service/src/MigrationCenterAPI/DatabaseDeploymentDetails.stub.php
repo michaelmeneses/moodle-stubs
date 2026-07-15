@@ -21,184 +21,193 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class DatabaseDeploymentDetails extends \Google\Model
-{
-    protected $aggregatedStatsType = DatabaseDeploymentDetailsAggregatedStats::class;
-    protected $aggregatedStatsDataType = '';
-    protected $awsRdsType = AwsRds::class;
-    protected $awsRdsDataType = '';
-    /**
-     * Optional. The database deployment edition.
-     *
-     * @var string
-     */
-    public $edition;
-    /**
-     * Optional. The database deployment generated ID.
-     *
-     * @var string
-     */
-    public $generatedId;
-    /**
-     * Optional. A manual unique ID set by the user.
-     *
-     * @var string
-     */
-    public $manualUniqueId;
-    protected $mysqlType = MysqlDatabaseDeployment::class;
-    protected $mysqlDataType = '';
-    protected $postgresqlType = PostgreSqlDatabaseDeployment::class;
-    protected $postgresqlDataType = '';
-    protected $sqlServerType = SqlServerDatabaseDeployment::class;
-    protected $sqlServerDataType = '';
-    protected $topologyType = DatabaseDeploymentTopology::class;
-    protected $topologyDataType = '';
-    /**
-     * Optional. The database deployment version.
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * Output only. Aggregated stats for the database deployment.
-     *
-     * @param DatabaseDeploymentDetailsAggregatedStats $aggregatedStats
-     */
-    public function setAggregatedStats(DatabaseDeploymentDetailsAggregatedStats $aggregatedStats)
+namespace Google\Service\MigrationCenterAPI {
+    class DatabaseDeploymentDetails extends \Google\Model
     {
+        protected $aggregatedStatsType = DatabaseDeploymentDetailsAggregatedStats::class;
+        protected $aggregatedStatsDataType = '';
+        protected $awsRdsType = AwsRds::class;
+        protected $awsRdsDataType = '';
+        /**
+         * Optional. The database deployment edition.
+         *
+         * @var string
+         */
+        public $edition;
+        /**
+         * Optional. The database deployment generated ID.
+         *
+         * @var string
+         */
+        public $generatedId;
+        /**
+         * Optional. A manual unique ID set by the user.
+         *
+         * @var string
+         */
+        public $manualUniqueId;
+        protected $mysqlType = MysqlDatabaseDeployment::class;
+        protected $mysqlDataType = '';
+        protected $postgresqlType = PostgreSqlDatabaseDeployment::class;
+        protected $postgresqlDataType = '';
+        protected $sqlServerType = SqlServerDatabaseDeployment::class;
+        protected $sqlServerDataType = '';
+        protected $topologyType = DatabaseDeploymentTopology::class;
+        protected $topologyDataType = '';
+        /**
+         * Optional. The database deployment version.
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * Output only. Aggregated stats for the database deployment.
+         *
+         * @param DatabaseDeploymentDetailsAggregatedStats $aggregatedStats
+         */
+        public function setAggregatedStats(DatabaseDeploymentDetailsAggregatedStats $aggregatedStats)
+        {
+        }
+        /**
+         * @return DatabaseDeploymentDetailsAggregatedStats
+         */
+        public function getAggregatedStats()
+        {
+        }
+        /**
+         * Optional. Details of an AWS RDS instance.
+         *
+         * @param AwsRds $awsRds
+         */
+        public function setAwsRds(AwsRds $awsRds)
+        {
+        }
+        /**
+         * @return AwsRds
+         */
+        public function getAwsRds()
+        {
+        }
+        /**
+         * Optional. The database deployment edition.
+         *
+         * @param string $edition
+         */
+        public function setEdition($edition)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEdition()
+        {
+        }
+        /**
+         * Optional. The database deployment generated ID.
+         *
+         * @param string $generatedId
+         */
+        public function setGeneratedId($generatedId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGeneratedId()
+        {
+        }
+        /**
+         * Optional. A manual unique ID set by the user.
+         *
+         * @param string $manualUniqueId
+         */
+        public function setManualUniqueId($manualUniqueId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getManualUniqueId()
+        {
+        }
+        /**
+         * Optional. Details of a MYSQL database deployment.
+         *
+         * @param MysqlDatabaseDeployment $mysql
+         */
+        public function setMysql(MysqlDatabaseDeployment $mysql)
+        {
+        }
+        /**
+         * @return MysqlDatabaseDeployment
+         */
+        public function getMysql()
+        {
+        }
+        /**
+         * Optional. Details of a PostgreSQL database deployment.
+         *
+         * @param PostgreSqlDatabaseDeployment $postgresql
+         */
+        public function setPostgresql(PostgreSqlDatabaseDeployment $postgresql)
+        {
+        }
+        /**
+         * @return PostgreSqlDatabaseDeployment
+         */
+        public function getPostgresql()
+        {
+        }
+        /**
+         * Optional. Details of a Microsoft SQL Server database deployment.
+         *
+         * @param SqlServerDatabaseDeployment $sqlServer
+         */
+        public function setSqlServer(SqlServerDatabaseDeployment $sqlServer)
+        {
+        }
+        /**
+         * @return SqlServerDatabaseDeployment
+         */
+        public function getSqlServer()
+        {
+        }
+        /**
+         * Optional. Details of the database deployment topology.
+         *
+         * @param DatabaseDeploymentTopology $topology
+         */
+        public function setTopology(DatabaseDeploymentTopology $topology)
+        {
+        }
+        /**
+         * @return DatabaseDeploymentTopology
+         */
+        public function getTopology()
+        {
+        }
+        /**
+         * Optional. The database deployment version.
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DatabaseDeploymentDetailsAggregatedStats
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\DatabaseDeploymentDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAggregatedStats()
-    {
-    }
-    /**
-     * Optional. Details of an AWS RDS instance.
-     *
-     * @param AwsRds $awsRds
-     */
-    public function setAwsRds(AwsRds $awsRds)
-    {
-    }
-    /**
-     * @return AwsRds
-     */
-    public function getAwsRds()
-    {
-    }
-    /**
-     * Optional. The database deployment edition.
-     *
-     * @param string $edition
-     */
-    public function setEdition($edition)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEdition()
-    {
-    }
-    /**
-     * Optional. The database deployment generated ID.
-     *
-     * @param string $generatedId
-     */
-    public function setGeneratedId($generatedId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGeneratedId()
-    {
-    }
-    /**
-     * Optional. A manual unique ID set by the user.
-     *
-     * @param string $manualUniqueId
-     */
-    public function setManualUniqueId($manualUniqueId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getManualUniqueId()
-    {
-    }
-    /**
-     * Optional. Details of a MYSQL database deployment.
-     *
-     * @param MysqlDatabaseDeployment $mysql
-     */
-    public function setMysql(MysqlDatabaseDeployment $mysql)
-    {
-    }
-    /**
-     * @return MysqlDatabaseDeployment
-     */
-    public function getMysql()
-    {
-    }
-    /**
-     * Optional. Details of a PostgreSQL database deployment.
-     *
-     * @param PostgreSqlDatabaseDeployment $postgresql
-     */
-    public function setPostgresql(PostgreSqlDatabaseDeployment $postgresql)
-    {
-    }
-    /**
-     * @return PostgreSqlDatabaseDeployment
-     */
-    public function getPostgresql()
-    {
-    }
-    /**
-     * Optional. Details of a Microsoft SQL Server database deployment.
-     *
-     * @param SqlServerDatabaseDeployment $sqlServer
-     */
-    public function setSqlServer(SqlServerDatabaseDeployment $sqlServer)
-    {
-    }
-    /**
-     * @return SqlServerDatabaseDeployment
-     */
-    public function getSqlServer()
-    {
-    }
-    /**
-     * Optional. Details of the database deployment topology.
-     *
-     * @param DatabaseDeploymentTopology $topology
-     */
-    public function setTopology(DatabaseDeploymentTopology $topology)
-    {
-    }
-    /**
-     * @return DatabaseDeploymentTopology
-     */
-    public function getTopology()
-    {
-    }
-    /**
-     * Optional. The database deployment version.
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_MigrationCenterAPI_DatabaseDeploymentDetails extends \Google\Service\MigrationCenterAPI\DatabaseDeploymentDetails
     {
     }
 }

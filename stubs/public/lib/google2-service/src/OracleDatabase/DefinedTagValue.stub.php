@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OracleDatabase;
-
-class DefinedTagValue extends \Google\Model
-{
-    /**
-     * The tags within the namespace.
-     *
-     * @var string[]
-     */
-    public $tags;
-    /**
-     * The tags within the namespace.
-     *
-     * @param string[] $tags
-     */
-    public function setTags($tags)
+namespace Google\Service\OracleDatabase {
+    class DefinedTagValue extends \Google\Model
     {
+        /**
+         * The tags within the namespace.
+         *
+         * @var string[]
+         */
+        public $tags;
+        /**
+         * The tags within the namespace.
+         *
+         * @param string[] $tags
+         */
+        public function setTags($tags)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTags()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\OracleDatabase\DefinedTagValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTags()
+    class Google_Service_OracleDatabase_DefinedTagValue extends \Google\Service\OracleDatabase\DefinedTagValue
     {
     }
 }

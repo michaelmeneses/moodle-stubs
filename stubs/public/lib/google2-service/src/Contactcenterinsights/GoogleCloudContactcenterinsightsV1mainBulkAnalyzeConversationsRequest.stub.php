@@ -21,85 +21,94 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1mainBulkAnalyzeConversationsRequest extends \Google\Model
-{
-    /**
-     * Required. Percentage of selected conversation to analyze, between [0, 100].
-     *
-     * @var float
-     */
-    public $analysisPercentage;
-    protected $annotatorSelectorType = GoogleCloudContactcenterinsightsV1mainAnnotatorSelector::class;
-    protected $annotatorSelectorDataType = '';
-    /**
-     * Required. Filter used to select the subset of conversations to analyze.
-     *
-     * @var string
-     */
-    public $filter;
-    /**
-     * Required. The parent resource to create analyses in.
-     *
-     * @var string
-     */
-    public $parent;
-    /**
-     * Required. Percentage of selected conversation to analyze, between [0, 100].
-     *
-     * @param float $analysisPercentage
-     */
-    public function setAnalysisPercentage($analysisPercentage)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1mainBulkAnalyzeConversationsRequest extends \Google\Model
     {
+        /**
+         * Required. Percentage of selected conversation to analyze, between [0, 100].
+         *
+         * @var float
+         */
+        public $analysisPercentage;
+        protected $annotatorSelectorType = GoogleCloudContactcenterinsightsV1mainAnnotatorSelector::class;
+        protected $annotatorSelectorDataType = '';
+        /**
+         * Required. Filter used to select the subset of conversations to analyze.
+         *
+         * @var string
+         */
+        public $filter;
+        /**
+         * Required. The parent resource to create analyses in.
+         *
+         * @var string
+         */
+        public $parent;
+        /**
+         * Required. Percentage of selected conversation to analyze, between [0, 100].
+         *
+         * @param float $analysisPercentage
+         */
+        public function setAnalysisPercentage($analysisPercentage)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getAnalysisPercentage()
+        {
+        }
+        /**
+         * To select the annotators to run and the phrase matchers to use (if any). If
+         * not specified, all annotators will be run.
+         *
+         * @param GoogleCloudContactcenterinsightsV1mainAnnotatorSelector $annotatorSelector
+         */
+        public function setAnnotatorSelector(GoogleCloudContactcenterinsightsV1mainAnnotatorSelector $annotatorSelector)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1mainAnnotatorSelector
+         */
+        public function getAnnotatorSelector()
+        {
+        }
+        /**
+         * Required. Filter used to select the subset of conversations to analyze.
+         *
+         * @param string $filter
+         */
+        public function setFilter($filter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilter()
+        {
+        }
+        /**
+         * Required. The parent resource to create analyses in.
+         *
+         * @param string $parent
+         */
+        public function setParent($parent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainBulkAnalyzeConversationsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnalysisPercentage()
-    {
-    }
-    /**
-     * To select the annotators to run and the phrase matchers to use (if any). If
-     * not specified, all annotators will be run.
-     *
-     * @param GoogleCloudContactcenterinsightsV1mainAnnotatorSelector $annotatorSelector
-     */
-    public function setAnnotatorSelector(GoogleCloudContactcenterinsightsV1mainAnnotatorSelector $annotatorSelector)
-    {
-    }
-    /**
-     * @return GoogleCloudContactcenterinsightsV1mainAnnotatorSelector
-     */
-    public function getAnnotatorSelector()
-    {
-    }
-    /**
-     * Required. Filter used to select the subset of conversations to analyze.
-     *
-     * @param string $filter
-     */
-    public function setFilter($filter)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFilter()
-    {
-    }
-    /**
-     * Required. The parent resource to create analyses in.
-     *
-     * @param string $parent
-     */
-    public function setParent($parent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParent()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1mainBulkAnalyzeConversationsRequest extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainBulkAnalyzeConversationsRequest
     {
     }
 }

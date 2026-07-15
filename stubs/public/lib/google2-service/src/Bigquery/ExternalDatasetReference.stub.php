@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class ExternalDatasetReference extends \Google\Model
-{
-    /**
-     * Required. The connection id that is used to access the external_source.
-     * Format:
-     * projects/{project_id}/locations/{location_id}/connections/{connection_id}
-     *
-     * @var string
-     */
-    public $connection;
-    /**
-     * Required. External source that backs this dataset.
-     *
-     * @var string
-     */
-    public $externalSource;
-    /**
-     * Required. The connection id that is used to access the external_source.
-     * Format:
-     * projects/{project_id}/locations/{location_id}/connections/{connection_id}
-     *
-     * @param string $connection
-     */
-    public function setConnection($connection)
+namespace Google\Service\Bigquery {
+    class ExternalDatasetReference extends \Google\Model
     {
+        /**
+         * Required. The connection id that is used to access the external_source.
+         * Format:
+         * projects/{project_id}/locations/{location_id}/connections/{connection_id}
+         *
+         * @var string
+         */
+        public $connection;
+        /**
+         * Required. External source that backs this dataset.
+         *
+         * @var string
+         */
+        public $externalSource;
+        /**
+         * Required. The connection id that is used to access the external_source.
+         * Format:
+         * projects/{project_id}/locations/{location_id}/connections/{connection_id}
+         *
+         * @param string $connection
+         */
+        public function setConnection($connection)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConnection()
+        {
+        }
+        /**
+         * Required. External source that backs this dataset.
+         *
+         * @param string $externalSource
+         */
+        public function setExternalSource($externalSource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExternalSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Bigquery\ExternalDatasetReference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConnection()
-    {
-    }
-    /**
-     * Required. External source that backs this dataset.
-     *
-     * @param string $externalSource
-     */
-    public function setExternalSource($externalSource)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExternalSource()
+    class Google_Service_Bigquery_ExternalDatasetReference extends \Google\Service\Bigquery\ExternalDatasetReference
     {
     }
 }

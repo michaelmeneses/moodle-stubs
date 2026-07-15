@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class NodeGroupsAddNodesRequest extends \Google\Model
-{
-    /**
-     * Count of additional nodes to be added to the node group.
-     *
-     * @var int
-     */
-    public $additionalNodeCount;
-    /**
-     * Count of additional nodes to be added to the node group.
-     *
-     * @param int $additionalNodeCount
-     */
-    public function setAdditionalNodeCount($additionalNodeCount)
+namespace Google\Service\Compute {
+    class NodeGroupsAddNodesRequest extends \Google\Model
     {
+        /**
+         * Count of additional nodes to be added to the node group.
+         *
+         * @var int
+         */
+        public $additionalNodeCount;
+        /**
+         * Count of additional nodes to be added to the node group.
+         *
+         * @param int $additionalNodeCount
+         */
+        public function setAdditionalNodeCount($additionalNodeCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getAdditionalNodeCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Compute\NodeGroupsAddNodesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdditionalNodeCount()
+    class Google_Service_Compute_NodeGroupsAddNodesRequest extends \Google\Service\Compute\NodeGroupsAddNodesRequest
     {
     }
 }

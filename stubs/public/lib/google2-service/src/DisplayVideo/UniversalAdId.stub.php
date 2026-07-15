@@ -21,77 +21,86 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class UniversalAdId extends \Google\Model
-{
-    /**
-     * The Universal Ad registry is unspecified or is unknown in this version.
-     */
-    public const REGISTRY_UNIVERSAL_AD_REGISTRY_UNSPECIFIED = 'UNIVERSAL_AD_REGISTRY_UNSPECIFIED';
-    /**
-     * Use a custom provider to provide the Universal Ad ID.
-     */
-    public const REGISTRY_UNIVERSAL_AD_REGISTRY_OTHER = 'UNIVERSAL_AD_REGISTRY_OTHER';
-    /**
-     * Use Ad-ID to provide the Universal Ad ID.
-     */
-    public const REGISTRY_UNIVERSAL_AD_REGISTRY_AD_ID = 'UNIVERSAL_AD_REGISTRY_AD_ID';
-    /**
-     * Use clearcast.co.uk to provide the Universal Ad ID.
-     */
-    public const REGISTRY_UNIVERSAL_AD_REGISTRY_CLEARCAST = 'UNIVERSAL_AD_REGISTRY_CLEARCAST';
-    /**
-     * Use Display & Video 360 to provide the Universal Ad ID.
-     */
-    public const REGISTRY_UNIVERSAL_AD_REGISTRY_DV360 = 'UNIVERSAL_AD_REGISTRY_DV360';
-    /**
-     * Use Campaign Manager 360 to provide the Universal Ad ID.
-     */
-    public const REGISTRY_UNIVERSAL_AD_REGISTRY_CM = 'UNIVERSAL_AD_REGISTRY_CM';
-    /**
-     * Optional. The unique creative identifier.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Optional. The registry provides unique creative identifiers.
-     *
-     * @var string
-     */
-    public $registry;
-    /**
-     * Optional. The unique creative identifier.
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\DisplayVideo {
+    class UniversalAdId extends \Google\Model
     {
+        /**
+         * The Universal Ad registry is unspecified or is unknown in this version.
+         */
+        public const REGISTRY_UNIVERSAL_AD_REGISTRY_UNSPECIFIED = 'UNIVERSAL_AD_REGISTRY_UNSPECIFIED';
+        /**
+         * Use a custom provider to provide the Universal Ad ID.
+         */
+        public const REGISTRY_UNIVERSAL_AD_REGISTRY_OTHER = 'UNIVERSAL_AD_REGISTRY_OTHER';
+        /**
+         * Use Ad-ID to provide the Universal Ad ID.
+         */
+        public const REGISTRY_UNIVERSAL_AD_REGISTRY_AD_ID = 'UNIVERSAL_AD_REGISTRY_AD_ID';
+        /**
+         * Use clearcast.co.uk to provide the Universal Ad ID.
+         */
+        public const REGISTRY_UNIVERSAL_AD_REGISTRY_CLEARCAST = 'UNIVERSAL_AD_REGISTRY_CLEARCAST';
+        /**
+         * Use Display & Video 360 to provide the Universal Ad ID.
+         */
+        public const REGISTRY_UNIVERSAL_AD_REGISTRY_DV360 = 'UNIVERSAL_AD_REGISTRY_DV360';
+        /**
+         * Use Campaign Manager 360 to provide the Universal Ad ID.
+         */
+        public const REGISTRY_UNIVERSAL_AD_REGISTRY_CM = 'UNIVERSAL_AD_REGISTRY_CM';
+        /**
+         * Optional. The unique creative identifier.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Optional. The registry provides unique creative identifiers.
+         *
+         * @var string
+         */
+        public $registry;
+        /**
+         * Optional. The unique creative identifier.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Optional. The registry provides unique creative identifiers.
+         *
+         * Accepted values: UNIVERSAL_AD_REGISTRY_UNSPECIFIED,
+         * UNIVERSAL_AD_REGISTRY_OTHER, UNIVERSAL_AD_REGISTRY_AD_ID,
+         * UNIVERSAL_AD_REGISTRY_CLEARCAST, UNIVERSAL_AD_REGISTRY_DV360,
+         * UNIVERSAL_AD_REGISTRY_CM
+         *
+         * @param self::REGISTRY_* $registry
+         */
+        public function setRegistry($registry)
+        {
+        }
+        /**
+         * @return self::REGISTRY_*
+         */
+        public function getRegistry()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\UniversalAdId registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * Optional. The registry provides unique creative identifiers.
-     *
-     * Accepted values: UNIVERSAL_AD_REGISTRY_UNSPECIFIED,
-     * UNIVERSAL_AD_REGISTRY_OTHER, UNIVERSAL_AD_REGISTRY_AD_ID,
-     * UNIVERSAL_AD_REGISTRY_CLEARCAST, UNIVERSAL_AD_REGISTRY_DV360,
-     * UNIVERSAL_AD_REGISTRY_CM
-     *
-     * @param self::REGISTRY_* $registry
-     */
-    public function setRegistry($registry)
-    {
-    }
-    /**
-     * @return self::REGISTRY_*
-     */
-    public function getRegistry()
+    class Google_Service_DisplayVideo_UniversalAdId extends \Google\Service\DisplayVideo\UniversalAdId
     {
     }
 }

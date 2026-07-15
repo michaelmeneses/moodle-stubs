@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Forms;
-
-class UpdateSettingsRequest extends \Google\Model
-{
-    protected $settingsType = FormSettings::class;
-    protected $settingsDataType = '';
-    /**
-     * Required. Only values named in this mask are changed. At least one field
-     * must be specified. The root `settings` is implied and should not be
-     * specified. A single `"*"` can be used as short-hand for updating every
-     * field.
-     *
-     * @var string
-     */
-    public $updateMask;
-    /**
-     * Required. The settings to update with.
-     *
-     * @param FormSettings $settings
-     */
-    public function setSettings(FormSettings $settings)
+namespace Google\Service\Forms {
+    class UpdateSettingsRequest extends \Google\Model
     {
+        protected $settingsType = FormSettings::class;
+        protected $settingsDataType = '';
+        /**
+         * Required. Only values named in this mask are changed. At least one field
+         * must be specified. The root `settings` is implied and should not be
+         * specified. A single `"*"` can be used as short-hand for updating every
+         * field.
+         *
+         * @var string
+         */
+        public $updateMask;
+        /**
+         * Required. The settings to update with.
+         *
+         * @param FormSettings $settings
+         */
+        public function setSettings(FormSettings $settings)
+        {
+        }
+        /**
+         * @return FormSettings
+         */
+        public function getSettings()
+        {
+        }
+        /**
+         * Required. Only values named in this mask are changed. At least one field
+         * must be specified. The root `settings` is implied and should not be
+         * specified. A single `"*"` can be used as short-hand for updating every
+         * field.
+         *
+         * @param string $updateMask
+         */
+        public function setUpdateMask($updateMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateMask()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FormSettings
+     * Runtime class alias of \Google\Service\Forms\UpdateSettingsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSettings()
-    {
-    }
-    /**
-     * Required. Only values named in this mask are changed. At least one field
-     * must be specified. The root `settings` is implied and should not be
-     * specified. A single `"*"` can be used as short-hand for updating every
-     * field.
-     *
-     * @param string $updateMask
-     */
-    public function setUpdateMask($updateMask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateMask()
+    class Google_Service_Forms_UpdateSettingsRequest extends \Google\Service\Forms\UpdateSettingsRequest
     {
     }
 }

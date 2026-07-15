@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Script;
-
-class Content extends \Google\Collection
-{
-    protected $collection_key = 'files';
-    protected $filesType = ScriptFile::class;
-    protected $filesDataType = 'array';
-    /**
-     * The script project's Drive ID.
-     *
-     * @var string
-     */
-    public $scriptId;
-    /**
-     * The list of script project files. One of the files is a script manifest; it
-     * must be named "appsscript", must have type of JSON, and include the
-     * manifest configurations for the project.
-     *
-     * @param ScriptFile[] $files
-     */
-    public function setFiles($files)
+namespace Google\Service\Script {
+    class Content extends \Google\Collection
     {
+        protected $collection_key = 'files';
+        protected $filesType = ScriptFile::class;
+        protected $filesDataType = 'array';
+        /**
+         * The script project's Drive ID.
+         *
+         * @var string
+         */
+        public $scriptId;
+        /**
+         * The list of script project files. One of the files is a script manifest; it
+         * must be named "appsscript", must have type of JSON, and include the
+         * manifest configurations for the project.
+         *
+         * @param ScriptFile[] $files
+         */
+        public function setFiles($files)
+        {
+        }
+        /**
+         * @return ScriptFile[]
+         */
+        public function getFiles()
+        {
+        }
+        /**
+         * The script project's Drive ID.
+         *
+         * @param string $scriptId
+         */
+        public function setScriptId($scriptId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScriptId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ScriptFile[]
+     * Runtime class alias of \Google\Service\Script\Content registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFiles()
-    {
-    }
-    /**
-     * The script project's Drive ID.
-     *
-     * @param string $scriptId
-     */
-    public function setScriptId($scriptId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getScriptId()
+    class Google_Service_Script_Content extends \Google\Service\Script\Content
     {
     }
 }

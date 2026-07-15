@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1MigratableResourceDataLabelingDatasetDataLabelingAnnotatedDataset extends \Google\Model
-{
-    /**
-     * Full resource name of data labeling AnnotatedDataset. Format: `projects/{pr
-     * oject}/datasets/{dataset}/annotatedDatasets/{annotated_dataset}`.
-     *
-     * @var string
-     */
-    public $annotatedDataset;
-    /**
-     * The AnnotatedDataset's display name in datalabeling.googleapis.com.
-     *
-     * @var string
-     */
-    public $annotatedDatasetDisplayName;
-    /**
-     * Full resource name of data labeling AnnotatedDataset. Format: `projects/{pr
-     * oject}/datasets/{dataset}/annotatedDatasets/{annotated_dataset}`.
-     *
-     * @param string $annotatedDataset
-     */
-    public function setAnnotatedDataset($annotatedDataset)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1MigratableResourceDataLabelingDatasetDataLabelingAnnotatedDataset extends \Google\Model
     {
+        /**
+         * Full resource name of data labeling AnnotatedDataset. Format: `projects/{pr
+         * oject}/datasets/{dataset}/annotatedDatasets/{annotated_dataset}`.
+         *
+         * @var string
+         */
+        public $annotatedDataset;
+        /**
+         * The AnnotatedDataset's display name in datalabeling.googleapis.com.
+         *
+         * @var string
+         */
+        public $annotatedDatasetDisplayName;
+        /**
+         * Full resource name of data labeling AnnotatedDataset. Format: `projects/{pr
+         * oject}/datasets/{dataset}/annotatedDatasets/{annotated_dataset}`.
+         *
+         * @param string $annotatedDataset
+         */
+        public function setAnnotatedDataset($annotatedDataset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnnotatedDataset()
+        {
+        }
+        /**
+         * The AnnotatedDataset's display name in datalabeling.googleapis.com.
+         *
+         * @param string $annotatedDatasetDisplayName
+         */
+        public function setAnnotatedDatasetDisplayName($annotatedDatasetDisplayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnnotatedDatasetDisplayName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1MigratableResourceDataLabelingDatasetDataLabelingAnnotatedDataset registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotatedDataset()
-    {
-    }
-    /**
-     * The AnnotatedDataset's display name in datalabeling.googleapis.com.
-     *
-     * @param string $annotatedDatasetDisplayName
-     */
-    public function setAnnotatedDatasetDisplayName($annotatedDatasetDisplayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAnnotatedDatasetDisplayName()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1MigratableResourceDataLabelingDatasetDataLabelingAnnotatedDataset extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1MigratableResourceDataLabelingDatasetDataLabelingAnnotatedDataset
     {
     }
 }

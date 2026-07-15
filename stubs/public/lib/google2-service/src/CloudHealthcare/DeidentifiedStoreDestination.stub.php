@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class DeidentifiedStoreDestination extends \Google\Model
-{
-    protected $configType = DeidentifyConfig::class;
-    protected $configDataType = '';
-    /**
-     * Optional. The full resource name of a Cloud Healthcare FHIR store, for
-     * example, `projects/{project_id}/locations/{location_id}/datasets/{dataset_i
-     * d}/fhirStores/{fhir_store_id}`.
-     *
-     * @var string
-     */
-    public $store;
-    /**
-     * Optional. The configuration to use when de-identifying resources that are
-     * added to this store.
-     *
-     * @param DeidentifyConfig $config
-     */
-    public function setConfig(DeidentifyConfig $config)
+namespace Google\Service\CloudHealthcare {
+    class DeidentifiedStoreDestination extends \Google\Model
     {
+        protected $configType = DeidentifyConfig::class;
+        protected $configDataType = '';
+        /**
+         * Optional. The full resource name of a Cloud Healthcare FHIR store, for
+         * example, `projects/{project_id}/locations/{location_id}/datasets/{dataset_i
+         * d}/fhirStores/{fhir_store_id}`.
+         *
+         * @var string
+         */
+        public $store;
+        /**
+         * Optional. The configuration to use when de-identifying resources that are
+         * added to this store.
+         *
+         * @param DeidentifyConfig $config
+         */
+        public function setConfig(DeidentifyConfig $config)
+        {
+        }
+        /**
+         * @return DeidentifyConfig
+         */
+        public function getConfig()
+        {
+        }
+        /**
+         * Optional. The full resource name of a Cloud Healthcare FHIR store, for
+         * example, `projects/{project_id}/locations/{location_id}/datasets/{dataset_i
+         * d}/fhirStores/{fhir_store_id}`.
+         *
+         * @param string $store
+         */
+        public function setStore($store)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStore()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DeidentifyConfig
+     * Runtime class alias of \Google\Service\CloudHealthcare\DeidentifiedStoreDestination registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfig()
-    {
-    }
-    /**
-     * Optional. The full resource name of a Cloud Healthcare FHIR store, for
-     * example, `projects/{project_id}/locations/{location_id}/datasets/{dataset_i
-     * d}/fhirStores/{fhir_store_id}`.
-     *
-     * @param string $store
-     */
-    public function setStore($store)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStore()
+    class Google_Service_CloudHealthcare_DeidentifiedStoreDestination extends \Google\Service\CloudHealthcare\DeidentifiedStoreDestination
     {
     }
 }

@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementV1RiskAssessment extends \Google\Model
-{
-    /**
-     * Risk assessment for the extension. Currently, this is a numerical value,
-     * and its interpretation is specific to each risk assessment provider.
-     *
-     * @var string
-     */
-    public $assessment;
-    /**
-     * A URL that a user can navigate to for more information about the risk
-     * assessment.
-     *
-     * @var string
-     */
-    public $detailsUrl;
-    /**
-     * The version of the extension that this assessment applies to.
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * Risk assessment for the extension. Currently, this is a numerical value,
-     * and its interpretation is specific to each risk assessment provider.
-     *
-     * @param string $assessment
-     */
-    public function setAssessment($assessment)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementV1RiskAssessment extends \Google\Model
     {
+        /**
+         * Risk assessment for the extension. Currently, this is a numerical value,
+         * and its interpretation is specific to each risk assessment provider.
+         *
+         * @var string
+         */
+        public $assessment;
+        /**
+         * A URL that a user can navigate to for more information about the risk
+         * assessment.
+         *
+         * @var string
+         */
+        public $detailsUrl;
+        /**
+         * The version of the extension that this assessment applies to.
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * Risk assessment for the extension. Currently, this is a numerical value,
+         * and its interpretation is specific to each risk assessment provider.
+         *
+         * @param string $assessment
+         */
+        public function setAssessment($assessment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAssessment()
+        {
+        }
+        /**
+         * A URL that a user can navigate to for more information about the risk
+         * assessment.
+         *
+         * @param string $detailsUrl
+         */
+        public function setDetailsUrl($detailsUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDetailsUrl()
+        {
+        }
+        /**
+         * The version of the extension that this assessment applies to.
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementV1RiskAssessment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssessment()
-    {
-    }
-    /**
-     * A URL that a user can navigate to for more information about the risk
-     * assessment.
-     *
-     * @param string $detailsUrl
-     */
-    public function setDetailsUrl($detailsUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDetailsUrl()
-    {
-    }
-    /**
-     * The version of the extension that this assessment applies to.
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_ChromeManagement_GoogleChromeManagementV1RiskAssessment extends \Google\Service\ChromeManagement\GoogleChromeManagementV1RiskAssessment
     {
     }
 }

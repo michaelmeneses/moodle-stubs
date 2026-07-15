@@ -21,391 +21,400 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataManager;
-
-class Event extends \Google\Collection
-{
-    /**
-     * Unspecified EventSource. Should never be used.
-     */
-    public const EVENT_SOURCE_EVENT_SOURCE_UNSPECIFIED = 'EVENT_SOURCE_UNSPECIFIED';
-    /**
-     * The event was generated from a web browser.
-     */
-    public const EVENT_SOURCE_WEB = 'WEB';
-    /**
-     * The event was generated from an app.
-     */
-    public const EVENT_SOURCE_APP = 'APP';
-    /**
-     * The event was generated from an in-store transaction.
-     */
-    public const EVENT_SOURCE_IN_STORE = 'IN_STORE';
-    /**
-     * The event was generated from a phone call.
-     */
-    public const EVENT_SOURCE_PHONE = 'PHONE';
-    /**
-     * The event was generated from other sources.
-     */
-    public const EVENT_SOURCE_OTHER = 'OTHER';
-    protected $collection_key = 'experimentalFields';
-    protected $adIdentifiersType = AdIdentifiers::class;
-    protected $adIdentifiersDataType = '';
-    protected $additionalEventParametersType = EventParameter::class;
-    protected $additionalEventParametersDataType = 'array';
-    protected $cartDataType = CartData::class;
-    protected $cartDataDataType = '';
-    /**
-     * Optional. A unique identifier for the user instance of a web client for
-     * this GA4 web stream.
-     *
-     * @var string
-     */
-    public $clientId;
-    protected $consentType = Consent::class;
-    protected $consentDataType = '';
-    /**
-     * Optional. The conversion value associated with the event, for value-based
-     * conversions.
-     *
-     * @var 
-     */
-    public $conversionValue;
-    /**
-     * Optional. The currency code associated with all monetary values within this
-     * event.
-     *
-     * @var string
-     */
-    public $currency;
-    protected $customVariablesType = CustomVariable::class;
-    protected $customVariablesDataType = 'array';
-    /**
-     * Optional. Reference string used to determine the destination. If empty, the
-     * event will be sent to all destinations in the request.
-     *
-     * @var string[]
-     */
-    public $destinationReferences;
-    protected $eventDeviceInfoType = DeviceInfo::class;
-    protected $eventDeviceInfoDataType = '';
-    /**
-     * Optional. The name of the event. Required for GA4 events.
-     *
-     * @var string
-     */
-    public $eventName;
-    /**
-     * Optional. Signal for where the event happened (web, app, in-store, etc.).
-     *
-     * @var string
-     */
-    public $eventSource;
-    /**
-     * Required. The time the event occurred.
-     *
-     * @var string
-     */
-    public $eventTimestamp;
-    protected $experimentalFieldsType = ExperimentalField::class;
-    protected $experimentalFieldsDataType = 'array';
-    /**
-     * Optional. The last time the event was updated.
-     *
-     * @var string
-     */
-    public $lastUpdatedTimestamp;
-    /**
-     * Optional. The unique identifier for this event. Required for conversions
-     * using multiple data sources.
-     *
-     * @var string
-     */
-    public $transactionId;
-    protected $userDataType = UserData::class;
-    protected $userDataDataType = '';
-    /**
-     * Optional. A unique identifier for a user, as defined by the advertiser.
-     *
-     * @var string
-     */
-    public $userId;
-    protected $userPropertiesType = UserProperties::class;
-    protected $userPropertiesDataType = '';
-    /**
-     * Optional. Identifiers and other information used to match the conversion
-     * event with other online activity (such as ad clicks).
-     *
-     * @param AdIdentifiers $adIdentifiers
-     */
-    public function setAdIdentifiers(AdIdentifiers $adIdentifiers)
+namespace Google\Service\DataManager {
+    class Event extends \Google\Collection
     {
+        /**
+         * Unspecified EventSource. Should never be used.
+         */
+        public const EVENT_SOURCE_EVENT_SOURCE_UNSPECIFIED = 'EVENT_SOURCE_UNSPECIFIED';
+        /**
+         * The event was generated from a web browser.
+         */
+        public const EVENT_SOURCE_WEB = 'WEB';
+        /**
+         * The event was generated from an app.
+         */
+        public const EVENT_SOURCE_APP = 'APP';
+        /**
+         * The event was generated from an in-store transaction.
+         */
+        public const EVENT_SOURCE_IN_STORE = 'IN_STORE';
+        /**
+         * The event was generated from a phone call.
+         */
+        public const EVENT_SOURCE_PHONE = 'PHONE';
+        /**
+         * The event was generated from other sources.
+         */
+        public const EVENT_SOURCE_OTHER = 'OTHER';
+        protected $collection_key = 'experimentalFields';
+        protected $adIdentifiersType = AdIdentifiers::class;
+        protected $adIdentifiersDataType = '';
+        protected $additionalEventParametersType = EventParameter::class;
+        protected $additionalEventParametersDataType = 'array';
+        protected $cartDataType = CartData::class;
+        protected $cartDataDataType = '';
+        /**
+         * Optional. A unique identifier for the user instance of a web client for
+         * this GA4 web stream.
+         *
+         * @var string
+         */
+        public $clientId;
+        protected $consentType = Consent::class;
+        protected $consentDataType = '';
+        /**
+         * Optional. The conversion value associated with the event, for value-based
+         * conversions.
+         *
+         * @var 
+         */
+        public $conversionValue;
+        /**
+         * Optional. The currency code associated with all monetary values within this
+         * event.
+         *
+         * @var string
+         */
+        public $currency;
+        protected $customVariablesType = CustomVariable::class;
+        protected $customVariablesDataType = 'array';
+        /**
+         * Optional. Reference string used to determine the destination. If empty, the
+         * event will be sent to all destinations in the request.
+         *
+         * @var string[]
+         */
+        public $destinationReferences;
+        protected $eventDeviceInfoType = DeviceInfo::class;
+        protected $eventDeviceInfoDataType = '';
+        /**
+         * Optional. The name of the event. Required for GA4 events.
+         *
+         * @var string
+         */
+        public $eventName;
+        /**
+         * Optional. Signal for where the event happened (web, app, in-store, etc.).
+         *
+         * @var string
+         */
+        public $eventSource;
+        /**
+         * Required. The time the event occurred.
+         *
+         * @var string
+         */
+        public $eventTimestamp;
+        protected $experimentalFieldsType = ExperimentalField::class;
+        protected $experimentalFieldsDataType = 'array';
+        /**
+         * Optional. The last time the event was updated.
+         *
+         * @var string
+         */
+        public $lastUpdatedTimestamp;
+        /**
+         * Optional. The unique identifier for this event. Required for conversions
+         * using multiple data sources.
+         *
+         * @var string
+         */
+        public $transactionId;
+        protected $userDataType = UserData::class;
+        protected $userDataDataType = '';
+        /**
+         * Optional. A unique identifier for a user, as defined by the advertiser.
+         *
+         * @var string
+         */
+        public $userId;
+        protected $userPropertiesType = UserProperties::class;
+        protected $userPropertiesDataType = '';
+        /**
+         * Optional. Identifiers and other information used to match the conversion
+         * event with other online activity (such as ad clicks).
+         *
+         * @param AdIdentifiers $adIdentifiers
+         */
+        public function setAdIdentifiers(AdIdentifiers $adIdentifiers)
+        {
+        }
+        /**
+         * @return AdIdentifiers
+         */
+        public function getAdIdentifiers()
+        {
+        }
+        /**
+         * Optional. A bucket of any [event parameters](https://developers.google.com/
+         * analytics/devguides/collection/protocol/ga4/reference/events) to be
+         * included within the event that were not already specified using other
+         * structured fields.
+         *
+         * @param EventParameter[] $additionalEventParameters
+         */
+        public function setAdditionalEventParameters($additionalEventParameters)
+        {
+        }
+        /**
+         * @return EventParameter[]
+         */
+        public function getAdditionalEventParameters()
+        {
+        }
+        /**
+         * Optional. Information about the transaction and items associated with the
+         * event.
+         *
+         * @param CartData $cartData
+         */
+        public function setCartData(CartData $cartData)
+        {
+        }
+        /**
+         * @return CartData
+         */
+        public function getCartData()
+        {
+        }
+        /**
+         * Optional. A unique identifier for the user instance of a web client for
+         * this GA4 web stream.
+         *
+         * @param string $clientId
+         */
+        public function setClientId($clientId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClientId()
+        {
+        }
+        /**
+         * Optional. Information about whether the associated user has provided
+         * different types of consent.
+         *
+         * @param Consent $consent
+         */
+        public function setConsent(Consent $consent)
+        {
+        }
+        /**
+         * @return Consent
+         */
+        public function getConsent()
+        {
+        }
+        public function setConversionValue($conversionValue)
+        {
+        }
+        public function getConversionValue()
+        {
+        }
+        /**
+         * Optional. The currency code associated with all monetary values within this
+         * event.
+         *
+         * @param string $currency
+         */
+        public function setCurrency($currency)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCurrency()
+        {
+        }
+        /**
+         * Optional. Additional key/value pair information to send to the conversion
+         * containers (conversion action or FL activity).
+         *
+         * @param CustomVariable[] $customVariables
+         */
+        public function setCustomVariables($customVariables)
+        {
+        }
+        /**
+         * @return CustomVariable[]
+         */
+        public function getCustomVariables()
+        {
+        }
+        /**
+         * Optional. Reference string used to determine the destination. If empty, the
+         * event will be sent to all destinations in the request.
+         *
+         * @param string[] $destinationReferences
+         */
+        public function setDestinationReferences($destinationReferences)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDestinationReferences()
+        {
+        }
+        /**
+         * Optional. Information gathered about the device being used (if any) when
+         * the event happened.
+         *
+         * @param DeviceInfo $eventDeviceInfo
+         */
+        public function setEventDeviceInfo(DeviceInfo $eventDeviceInfo)
+        {
+        }
+        /**
+         * @return DeviceInfo
+         */
+        public function getEventDeviceInfo()
+        {
+        }
+        /**
+         * Optional. The name of the event. Required for GA4 events.
+         *
+         * @param string $eventName
+         */
+        public function setEventName($eventName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEventName()
+        {
+        }
+        /**
+         * Optional. Signal for where the event happened (web, app, in-store, etc.).
+         *
+         * Accepted values: EVENT_SOURCE_UNSPECIFIED, WEB, APP, IN_STORE, PHONE, OTHER
+         *
+         * @param self::EVENT_SOURCE_* $eventSource
+         */
+        public function setEventSource($eventSource)
+        {
+        }
+        /**
+         * @return self::EVENT_SOURCE_*
+         */
+        public function getEventSource()
+        {
+        }
+        /**
+         * Required. The time the event occurred.
+         *
+         * @param string $eventTimestamp
+         */
+        public function setEventTimestamp($eventTimestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEventTimestamp()
+        {
+        }
+        /**
+         * Optional. A list of key/value pairs for experimental fields that may
+         * eventually be promoted to be part of the API.
+         *
+         * @param ExperimentalField[] $experimentalFields
+         */
+        public function setExperimentalFields($experimentalFields)
+        {
+        }
+        /**
+         * @return ExperimentalField[]
+         */
+        public function getExperimentalFields()
+        {
+        }
+        /**
+         * Optional. The last time the event was updated.
+         *
+         * @param string $lastUpdatedTimestamp
+         */
+        public function setLastUpdatedTimestamp($lastUpdatedTimestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastUpdatedTimestamp()
+        {
+        }
+        /**
+         * Optional. The unique identifier for this event. Required for conversions
+         * using multiple data sources.
+         *
+         * @param string $transactionId
+         */
+        public function setTransactionId($transactionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTransactionId()
+        {
+        }
+        /**
+         * Optional. Pieces of user provided data, representing the user the event is
+         * associated with.
+         *
+         * @param UserData $userData
+         */
+        public function setUserData(UserData $userData)
+        {
+        }
+        /**
+         * @return UserData
+         */
+        public function getUserData()
+        {
+        }
+        /**
+         * Optional. A unique identifier for a user, as defined by the advertiser.
+         *
+         * @param string $userId
+         */
+        public function setUserId($userId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserId()
+        {
+        }
+        /**
+         * Optional. Advertiser-assessed information about the user at the time that
+         * the event happened.
+         *
+         * @param UserProperties $userProperties
+         */
+        public function setUserProperties(UserProperties $userProperties)
+        {
+        }
+        /**
+         * @return UserProperties
+         */
+        public function getUserProperties()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AdIdentifiers
+     * Runtime class alias of \Google\Service\DataManager\Event registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdIdentifiers()
-    {
-    }
-    /**
-     * Optional. A bucket of any [event parameters](https://developers.google.com/
-     * analytics/devguides/collection/protocol/ga4/reference/events) to be
-     * included within the event that were not already specified using other
-     * structured fields.
-     *
-     * @param EventParameter[] $additionalEventParameters
-     */
-    public function setAdditionalEventParameters($additionalEventParameters)
-    {
-    }
-    /**
-     * @return EventParameter[]
-     */
-    public function getAdditionalEventParameters()
-    {
-    }
-    /**
-     * Optional. Information about the transaction and items associated with the
-     * event.
-     *
-     * @param CartData $cartData
-     */
-    public function setCartData(CartData $cartData)
-    {
-    }
-    /**
-     * @return CartData
-     */
-    public function getCartData()
-    {
-    }
-    /**
-     * Optional. A unique identifier for the user instance of a web client for
-     * this GA4 web stream.
-     *
-     * @param string $clientId
-     */
-    public function setClientId($clientId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getClientId()
-    {
-    }
-    /**
-     * Optional. Information about whether the associated user has provided
-     * different types of consent.
-     *
-     * @param Consent $consent
-     */
-    public function setConsent(Consent $consent)
-    {
-    }
-    /**
-     * @return Consent
-     */
-    public function getConsent()
-    {
-    }
-    public function setConversionValue($conversionValue)
-    {
-    }
-    public function getConversionValue()
-    {
-    }
-    /**
-     * Optional. The currency code associated with all monetary values within this
-     * event.
-     *
-     * @param string $currency
-     */
-    public function setCurrency($currency)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCurrency()
-    {
-    }
-    /**
-     * Optional. Additional key/value pair information to send to the conversion
-     * containers (conversion action or FL activity).
-     *
-     * @param CustomVariable[] $customVariables
-     */
-    public function setCustomVariables($customVariables)
-    {
-    }
-    /**
-     * @return CustomVariable[]
-     */
-    public function getCustomVariables()
-    {
-    }
-    /**
-     * Optional. Reference string used to determine the destination. If empty, the
-     * event will be sent to all destinations in the request.
-     *
-     * @param string[] $destinationReferences
-     */
-    public function setDestinationReferences($destinationReferences)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getDestinationReferences()
-    {
-    }
-    /**
-     * Optional. Information gathered about the device being used (if any) when
-     * the event happened.
-     *
-     * @param DeviceInfo $eventDeviceInfo
-     */
-    public function setEventDeviceInfo(DeviceInfo $eventDeviceInfo)
-    {
-    }
-    /**
-     * @return DeviceInfo
-     */
-    public function getEventDeviceInfo()
-    {
-    }
-    /**
-     * Optional. The name of the event. Required for GA4 events.
-     *
-     * @param string $eventName
-     */
-    public function setEventName($eventName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEventName()
-    {
-    }
-    /**
-     * Optional. Signal for where the event happened (web, app, in-store, etc.).
-     *
-     * Accepted values: EVENT_SOURCE_UNSPECIFIED, WEB, APP, IN_STORE, PHONE, OTHER
-     *
-     * @param self::EVENT_SOURCE_* $eventSource
-     */
-    public function setEventSource($eventSource)
-    {
-    }
-    /**
-     * @return self::EVENT_SOURCE_*
-     */
-    public function getEventSource()
-    {
-    }
-    /**
-     * Required. The time the event occurred.
-     *
-     * @param string $eventTimestamp
-     */
-    public function setEventTimestamp($eventTimestamp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEventTimestamp()
-    {
-    }
-    /**
-     * Optional. A list of key/value pairs for experimental fields that may
-     * eventually be promoted to be part of the API.
-     *
-     * @param ExperimentalField[] $experimentalFields
-     */
-    public function setExperimentalFields($experimentalFields)
-    {
-    }
-    /**
-     * @return ExperimentalField[]
-     */
-    public function getExperimentalFields()
-    {
-    }
-    /**
-     * Optional. The last time the event was updated.
-     *
-     * @param string $lastUpdatedTimestamp
-     */
-    public function setLastUpdatedTimestamp($lastUpdatedTimestamp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastUpdatedTimestamp()
-    {
-    }
-    /**
-     * Optional. The unique identifier for this event. Required for conversions
-     * using multiple data sources.
-     *
-     * @param string $transactionId
-     */
-    public function setTransactionId($transactionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTransactionId()
-    {
-    }
-    /**
-     * Optional. Pieces of user provided data, representing the user the event is
-     * associated with.
-     *
-     * @param UserData $userData
-     */
-    public function setUserData(UserData $userData)
-    {
-    }
-    /**
-     * @return UserData
-     */
-    public function getUserData()
-    {
-    }
-    /**
-     * Optional. A unique identifier for a user, as defined by the advertiser.
-     *
-     * @param string $userId
-     */
-    public function setUserId($userId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserId()
-    {
-    }
-    /**
-     * Optional. Advertiser-assessed information about the user at the time that
-     * the event happened.
-     *
-     * @param UserProperties $userProperties
-     */
-    public function setUserProperties(UserProperties $userProperties)
-    {
-    }
-    /**
-     * @return UserProperties
-     */
-    public function getUserProperties()
+    class Google_Service_DataManager_Event extends \Google\Service\DataManager\Event
     {
     }
 }

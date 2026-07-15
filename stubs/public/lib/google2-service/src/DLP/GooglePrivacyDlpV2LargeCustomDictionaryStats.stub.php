@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2LargeCustomDictionaryStats extends \Google\Model
-{
-    /**
-     * Approximate number of distinct phrases in the dictionary.
-     *
-     * @var string
-     */
-    public $approxNumPhrases;
-    /**
-     * Approximate number of distinct phrases in the dictionary.
-     *
-     * @param string $approxNumPhrases
-     */
-    public function setApproxNumPhrases($approxNumPhrases)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2LargeCustomDictionaryStats extends \Google\Model
     {
+        /**
+         * Approximate number of distinct phrases in the dictionary.
+         *
+         * @var string
+         */
+        public $approxNumPhrases;
+        /**
+         * Approximate number of distinct phrases in the dictionary.
+         *
+         * @param string $approxNumPhrases
+         */
+        public function setApproxNumPhrases($approxNumPhrases)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApproxNumPhrases()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2LargeCustomDictionaryStats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApproxNumPhrases()
+    class Google_Service_DLP_GooglePrivacyDlpV2LargeCustomDictionaryStats extends \Google\Service\DLP\GooglePrivacyDlpV2LargeCustomDictionaryStats
     {
     }
 }

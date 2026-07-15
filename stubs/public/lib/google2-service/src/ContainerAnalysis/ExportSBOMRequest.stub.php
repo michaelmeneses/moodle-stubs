@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class ExportSBOMRequest extends \Google\Model
-{
-    protected $cloudStorageLocationType = CloudStorageLocation::class;
-    protected $cloudStorageLocationDataType = '';
-    /**
-     * Optional. Empty placeholder to denote that this is a Google Cloud Storage
-     * export request.
-     *
-     * @param CloudStorageLocation $cloudStorageLocation
-     */
-    public function setCloudStorageLocation(CloudStorageLocation $cloudStorageLocation)
+namespace Google\Service\ContainerAnalysis {
+    class ExportSBOMRequest extends \Google\Model
     {
+        protected $cloudStorageLocationType = CloudStorageLocation::class;
+        protected $cloudStorageLocationDataType = '';
+        /**
+         * Optional. Empty placeholder to denote that this is a Google Cloud Storage
+         * export request.
+         *
+         * @param CloudStorageLocation $cloudStorageLocation
+         */
+        public function setCloudStorageLocation(CloudStorageLocation $cloudStorageLocation)
+        {
+        }
+        /**
+         * @return CloudStorageLocation
+         */
+        public function getCloudStorageLocation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CloudStorageLocation
+     * Runtime class alias of \Google\Service\ContainerAnalysis\ExportSBOMRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCloudStorageLocation()
+    class Google_Service_ContainerAnalysis_ExportSBOMRequest extends \Google\Service\ContainerAnalysis\ExportSBOMRequest
     {
     }
 }

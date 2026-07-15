@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OrgPolicyAPI;
-
-class GoogleCloudOrgpolicyV2ConstraintCustomConstraintDefinitionParameterMetadata extends \Google\Model
-{
-    /**
-     * Detailed description of what this `parameter` is and use of it. Mutable.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Detailed description of what this `parameter` is and use of it. Mutable.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\OrgPolicyAPI {
+    class GoogleCloudOrgpolicyV2ConstraintCustomConstraintDefinitionParameterMetadata extends \Google\Model
     {
+        /**
+         * Detailed description of what this `parameter` is and use of it. Mutable.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Detailed description of what this `parameter` is and use of it. Mutable.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OrgPolicyAPI\GoogleCloudOrgpolicyV2ConstraintCustomConstraintDefinitionParameterMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
+    class Google_Service_OrgPolicyAPI_GoogleCloudOrgpolicyV2ConstraintCustomConstraintDefinitionParameterMetadata extends \Google\Service\OrgPolicyAPI\GoogleCloudOrgpolicyV2ConstraintCustomConstraintDefinitionParameterMetadata
     {
     }
 }

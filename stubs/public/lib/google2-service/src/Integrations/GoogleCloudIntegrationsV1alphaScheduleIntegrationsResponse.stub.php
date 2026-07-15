@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaScheduleIntegrationsResponse extends \Google\Collection
-{
-    protected $collection_key = 'executionInfoIds';
-    /**
-     * The execution info id for the executed integrations.
-     *
-     * @var string[]
-     */
-    public $executionInfoIds;
-    /**
-     * The execution info id for the executed integrations.
-     *
-     * @param string[] $executionInfoIds
-     */
-    public function setExecutionInfoIds($executionInfoIds)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaScheduleIntegrationsResponse extends \Google\Collection
     {
+        protected $collection_key = 'executionInfoIds';
+        /**
+         * The execution info id for the executed integrations.
+         *
+         * @var string[]
+         */
+        public $executionInfoIds;
+        /**
+         * The execution info id for the executed integrations.
+         *
+         * @param string[] $executionInfoIds
+         */
+        public function setExecutionInfoIds($executionInfoIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getExecutionInfoIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaScheduleIntegrationsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExecutionInfoIds()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaScheduleIntegrationsResponse extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaScheduleIntegrationsResponse
     {
     }
 }

@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1SiteSearchEngine extends \Google\Model
-{
-    /**
-     * The fully qualified resource name of the site search engine. Format:
-     * `projects/locations/dataStores/siteSearchEngine`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The fully qualified resource name of the site search engine. Format:
-     * `projects/locations/dataStores/siteSearchEngine`
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1SiteSearchEngine extends \Google\Model
     {
+        /**
+         * The fully qualified resource name of the site search engine. Format:
+         * `projects/locations/dataStores/siteSearchEngine`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The fully qualified resource name of the site search engine. Format:
+         * `projects/locations/dataStores/siteSearchEngine`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1SiteSearchEngine registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1SiteSearchEngine extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1SiteSearchEngine
     {
     }
 }

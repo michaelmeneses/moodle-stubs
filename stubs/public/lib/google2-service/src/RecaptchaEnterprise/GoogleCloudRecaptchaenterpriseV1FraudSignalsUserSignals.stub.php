@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecaptchaEnterprise;
-
-class GoogleCloudRecaptchaenterpriseV1FraudSignalsUserSignals extends \Google\Model
-{
-    /**
-     * Output only. This user (based on email, phone, and other identifiers) has
-     * been seen on the internet for at least this number of days.
-     *
-     * @var int
-     */
-    public $activeDaysLowerBound;
-    /**
-     * Output only. Likelihood (from 0.0 to 1.0) this user includes synthetic
-     * components in their identity, such as a randomly generated email address,
-     * temporary phone number, or fake shipping address.
-     *
-     * @var float
-     */
-    public $syntheticRisk;
-    /**
-     * Output only. This user (based on email, phone, and other identifiers) has
-     * been seen on the internet for at least this number of days.
-     *
-     * @param int $activeDaysLowerBound
-     */
-    public function setActiveDaysLowerBound($activeDaysLowerBound)
+namespace Google\Service\RecaptchaEnterprise {
+    class GoogleCloudRecaptchaenterpriseV1FraudSignalsUserSignals extends \Google\Model
     {
+        /**
+         * Output only. This user (based on email, phone, and other identifiers) has
+         * been seen on the internet for at least this number of days.
+         *
+         * @var int
+         */
+        public $activeDaysLowerBound;
+        /**
+         * Output only. Likelihood (from 0.0 to 1.0) this user includes synthetic
+         * components in their identity, such as a randomly generated email address,
+         * temporary phone number, or fake shipping address.
+         *
+         * @var float
+         */
+        public $syntheticRisk;
+        /**
+         * Output only. This user (based on email, phone, and other identifiers) has
+         * been seen on the internet for at least this number of days.
+         *
+         * @param int $activeDaysLowerBound
+         */
+        public function setActiveDaysLowerBound($activeDaysLowerBound)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getActiveDaysLowerBound()
+        {
+        }
+        /**
+         * Output only. Likelihood (from 0.0 to 1.0) this user includes synthetic
+         * components in their identity, such as a randomly generated email address,
+         * temporary phone number, or fake shipping address.
+         *
+         * @param float $syntheticRisk
+         */
+        public function setSyntheticRisk($syntheticRisk)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getSyntheticRisk()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1FraudSignalsUserSignals registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActiveDaysLowerBound()
-    {
-    }
-    /**
-     * Output only. Likelihood (from 0.0 to 1.0) this user includes synthetic
-     * components in their identity, such as a randomly generated email address,
-     * temporary phone number, or fake shipping address.
-     *
-     * @param float $syntheticRisk
-     */
-    public function setSyntheticRisk($syntheticRisk)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getSyntheticRisk()
+    class Google_Service_RecaptchaEnterprise_GoogleCloudRecaptchaenterpriseV1FraudSignalsUserSignals extends \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1FraudSignalsUserSignals
     {
     }
 }

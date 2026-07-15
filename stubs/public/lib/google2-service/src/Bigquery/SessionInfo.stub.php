@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class SessionInfo extends \Google\Model
-{
-    /**
-     * Output only. The id of the session.
-     *
-     * @var string
-     */
-    public $sessionId;
-    /**
-     * Output only. The id of the session.
-     *
-     * @param string $sessionId
-     */
-    public function setSessionId($sessionId)
+namespace Google\Service\Bigquery {
+    class SessionInfo extends \Google\Model
     {
+        /**
+         * Output only. The id of the session.
+         *
+         * @var string
+         */
+        public $sessionId;
+        /**
+         * Output only. The id of the session.
+         *
+         * @param string $sessionId
+         */
+        public function setSessionId($sessionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSessionId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Bigquery\SessionInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSessionId()
+    class Google_Service_Bigquery_SessionInfo extends \Google\Service\Bigquery\SessionInfo
     {
     }
 }

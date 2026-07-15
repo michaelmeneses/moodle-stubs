@@ -21,80 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Css;
-
-class HeadlineOfferSubscriptionCost extends \Google\Model
-{
-    /**
-     * Indicates that the subscription period is unspecified.
-     */
-    public const PERIOD_SUBSCRIPTION_PERIOD_UNSPECIFIED = 'SUBSCRIPTION_PERIOD_UNSPECIFIED';
-    /**
-     * Indicates that the subscription period is month.
-     */
-    public const PERIOD_MONTH = 'MONTH';
-    /**
-     * Indicates that the subscription period is year.
-     */
-    public const PERIOD_YEAR = 'YEAR';
-    protected $amountType = Price::class;
-    protected $amountDataType = '';
-    /**
-     * The type of subscription period. Supported values are: * "`month`" *
-     * "`year`"
-     *
-     * @var string
-     */
-    public $period;
-    /**
-     * The number of subscription periods the buyer has to pay.
-     *
-     * @var string
-     */
-    public $periodLength;
-    /**
-     * The amount the buyer has to pay per subscription period.
-     *
-     * @param Price $amount
-     */
-    public function setAmount(Price $amount)
+namespace Google\Service\Css {
+    class HeadlineOfferSubscriptionCost extends \Google\Model
     {
+        /**
+         * Indicates that the subscription period is unspecified.
+         */
+        public const PERIOD_SUBSCRIPTION_PERIOD_UNSPECIFIED = 'SUBSCRIPTION_PERIOD_UNSPECIFIED';
+        /**
+         * Indicates that the subscription period is month.
+         */
+        public const PERIOD_MONTH = 'MONTH';
+        /**
+         * Indicates that the subscription period is year.
+         */
+        public const PERIOD_YEAR = 'YEAR';
+        protected $amountType = Price::class;
+        protected $amountDataType = '';
+        /**
+         * The type of subscription period. Supported values are: * "`month`" *
+         * "`year`"
+         *
+         * @var string
+         */
+        public $period;
+        /**
+         * The number of subscription periods the buyer has to pay.
+         *
+         * @var string
+         */
+        public $periodLength;
+        /**
+         * The amount the buyer has to pay per subscription period.
+         *
+         * @param Price $amount
+         */
+        public function setAmount(Price $amount)
+        {
+        }
+        /**
+         * @return Price
+         */
+        public function getAmount()
+        {
+        }
+        /**
+         * The type of subscription period. Supported values are: * "`month`" *
+         * "`year`"
+         *
+         * Accepted values: SUBSCRIPTION_PERIOD_UNSPECIFIED, MONTH, YEAR
+         *
+         * @param self::PERIOD_* $period
+         */
+        public function setPeriod($period)
+        {
+        }
+        /**
+         * @return self::PERIOD_*
+         */
+        public function getPeriod()
+        {
+        }
+        /**
+         * The number of subscription periods the buyer has to pay.
+         *
+         * @param string $periodLength
+         */
+        public function setPeriodLength($periodLength)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPeriodLength()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Price
+     * Runtime class alias of \Google\Service\Css\HeadlineOfferSubscriptionCost registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAmount()
-    {
-    }
-    /**
-     * The type of subscription period. Supported values are: * "`month`" *
-     * "`year`"
-     *
-     * Accepted values: SUBSCRIPTION_PERIOD_UNSPECIFIED, MONTH, YEAR
-     *
-     * @param self::PERIOD_* $period
-     */
-    public function setPeriod($period)
-    {
-    }
-    /**
-     * @return self::PERIOD_*
-     */
-    public function getPeriod()
-    {
-    }
-    /**
-     * The number of subscription periods the buyer has to pay.
-     *
-     * @param string $periodLength
-     */
-    public function setPeriodLength($periodLength)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPeriodLength()
+    class Google_Service_Css_HeadlineOfferSubscriptionCost extends \Google\Service\Css\HeadlineOfferSubscriptionCost
     {
     }
 }

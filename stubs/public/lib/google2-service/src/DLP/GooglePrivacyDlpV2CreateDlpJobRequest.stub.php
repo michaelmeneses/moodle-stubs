@@ -21,87 +21,96 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2CreateDlpJobRequest extends \Google\Model
-{
-    protected $inspectJobType = GooglePrivacyDlpV2InspectJobConfig::class;
-    protected $inspectJobDataType = '';
-    /**
-     * The job id can contain uppercase and lowercase letters, numbers, and
-     * hyphens; that is, it must match the regular expression: `[a-zA-Z\d-_]+`.
-     * The maximum length is 100 characters. Can be empty to allow the system to
-     * generate one.
-     *
-     * @var string
-     */
-    public $jobId;
-    /**
-     * Deprecated. This field has no effect.
-     *
-     * @var string
-     */
-    public $locationId;
-    protected $riskJobType = GooglePrivacyDlpV2RiskAnalysisJobConfig::class;
-    protected $riskJobDataType = '';
-    /**
-     * An inspection job scans a storage repository for InfoTypes.
-     *
-     * @param GooglePrivacyDlpV2InspectJobConfig $inspectJob
-     */
-    public function setInspectJob(GooglePrivacyDlpV2InspectJobConfig $inspectJob)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2CreateDlpJobRequest extends \Google\Model
     {
+        protected $inspectJobType = GooglePrivacyDlpV2InspectJobConfig::class;
+        protected $inspectJobDataType = '';
+        /**
+         * The job id can contain uppercase and lowercase letters, numbers, and
+         * hyphens; that is, it must match the regular expression: `[a-zA-Z\d-_]+`.
+         * The maximum length is 100 characters. Can be empty to allow the system to
+         * generate one.
+         *
+         * @var string
+         */
+        public $jobId;
+        /**
+         * Deprecated. This field has no effect.
+         *
+         * @var string
+         */
+        public $locationId;
+        protected $riskJobType = GooglePrivacyDlpV2RiskAnalysisJobConfig::class;
+        protected $riskJobDataType = '';
+        /**
+         * An inspection job scans a storage repository for InfoTypes.
+         *
+         * @param GooglePrivacyDlpV2InspectJobConfig $inspectJob
+         */
+        public function setInspectJob(GooglePrivacyDlpV2InspectJobConfig $inspectJob)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2InspectJobConfig
+         */
+        public function getInspectJob()
+        {
+        }
+        /**
+         * The job id can contain uppercase and lowercase letters, numbers, and
+         * hyphens; that is, it must match the regular expression: `[a-zA-Z\d-_]+`.
+         * The maximum length is 100 characters. Can be empty to allow the system to
+         * generate one.
+         *
+         * @param string $jobId
+         */
+        public function setJobId($jobId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getJobId()
+        {
+        }
+        /**
+         * Deprecated. This field has no effect.
+         *
+         * @param string $locationId
+         */
+        public function setLocationId($locationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocationId()
+        {
+        }
+        /**
+         * A risk analysis job calculates re-identification risk metrics for a
+         * BigQuery table.
+         *
+         * @param GooglePrivacyDlpV2RiskAnalysisJobConfig $riskJob
+         */
+        public function setRiskJob(GooglePrivacyDlpV2RiskAnalysisJobConfig $riskJob)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2RiskAnalysisJobConfig
+         */
+        public function getRiskJob()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2InspectJobConfig
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2CreateDlpJobRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInspectJob()
-    {
-    }
-    /**
-     * The job id can contain uppercase and lowercase letters, numbers, and
-     * hyphens; that is, it must match the regular expression: `[a-zA-Z\d-_]+`.
-     * The maximum length is 100 characters. Can be empty to allow the system to
-     * generate one.
-     *
-     * @param string $jobId
-     */
-    public function setJobId($jobId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getJobId()
-    {
-    }
-    /**
-     * Deprecated. This field has no effect.
-     *
-     * @param string $locationId
-     */
-    public function setLocationId($locationId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocationId()
-    {
-    }
-    /**
-     * A risk analysis job calculates re-identification risk metrics for a
-     * BigQuery table.
-     *
-     * @param GooglePrivacyDlpV2RiskAnalysisJobConfig $riskJob
-     */
-    public function setRiskJob(GooglePrivacyDlpV2RiskAnalysisJobConfig $riskJob)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2RiskAnalysisJobConfig
-     */
-    public function getRiskJob()
+    class Google_Service_DLP_GooglePrivacyDlpV2CreateDlpJobRequest extends \Google\Service\DLP\GooglePrivacyDlpV2CreateDlpJobRequest
     {
     }
 }

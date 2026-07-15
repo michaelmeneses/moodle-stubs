@@ -21,120 +21,129 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class GoogleAppsCardV1GridItem extends \Google\Model
-{
-    /**
-     * Don't use. Unspecified.
-     */
-    public const LAYOUT_GRID_ITEM_LAYOUT_UNSPECIFIED = 'GRID_ITEM_LAYOUT_UNSPECIFIED';
-    /**
-     * The title and subtitle are shown below the grid item's image.
-     */
-    public const LAYOUT_TEXT_BELOW = 'TEXT_BELOW';
-    /**
-     * The title and subtitle are shown above the grid item's image.
-     */
-    public const LAYOUT_TEXT_ABOVE = 'TEXT_ABOVE';
-    /**
-     * A user-specified identifier for this grid item. This identifier is returned
-     * in the parent grid's `onClick` callback parameters.
-     *
-     * @var string
-     */
-    public $id;
-    protected $imageType = GoogleAppsCardV1ImageComponent::class;
-    protected $imageDataType = '';
-    /**
-     * The layout to use for the grid item.
-     *
-     * @var string
-     */
-    public $layout;
-    /**
-     * The grid item's subtitle.
-     *
-     * @var string
-     */
-    public $subtitle;
-    /**
-     * The grid item's title.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * A user-specified identifier for this grid item. This identifier is returned
-     * in the parent grid's `onClick` callback parameters.
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\HangoutsChat {
+    class GoogleAppsCardV1GridItem extends \Google\Model
     {
+        /**
+         * Don't use. Unspecified.
+         */
+        public const LAYOUT_GRID_ITEM_LAYOUT_UNSPECIFIED = 'GRID_ITEM_LAYOUT_UNSPECIFIED';
+        /**
+         * The title and subtitle are shown below the grid item's image.
+         */
+        public const LAYOUT_TEXT_BELOW = 'TEXT_BELOW';
+        /**
+         * The title and subtitle are shown above the grid item's image.
+         */
+        public const LAYOUT_TEXT_ABOVE = 'TEXT_ABOVE';
+        /**
+         * A user-specified identifier for this grid item. This identifier is returned
+         * in the parent grid's `onClick` callback parameters.
+         *
+         * @var string
+         */
+        public $id;
+        protected $imageType = GoogleAppsCardV1ImageComponent::class;
+        protected $imageDataType = '';
+        /**
+         * The layout to use for the grid item.
+         *
+         * @var string
+         */
+        public $layout;
+        /**
+         * The grid item's subtitle.
+         *
+         * @var string
+         */
+        public $subtitle;
+        /**
+         * The grid item's title.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * A user-specified identifier for this grid item. This identifier is returned
+         * in the parent grid's `onClick` callback parameters.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * The image that displays in the grid item.
+         *
+         * @param GoogleAppsCardV1ImageComponent $image
+         */
+        public function setImage(GoogleAppsCardV1ImageComponent $image)
+        {
+        }
+        /**
+         * @return GoogleAppsCardV1ImageComponent
+         */
+        public function getImage()
+        {
+        }
+        /**
+         * The layout to use for the grid item.
+         *
+         * Accepted values: GRID_ITEM_LAYOUT_UNSPECIFIED, TEXT_BELOW, TEXT_ABOVE
+         *
+         * @param self::LAYOUT_* $layout
+         */
+        public function setLayout($layout)
+        {
+        }
+        /**
+         * @return self::LAYOUT_*
+         */
+        public function getLayout()
+        {
+        }
+        /**
+         * The grid item's subtitle.
+         *
+         * @param string $subtitle
+         */
+        public function setSubtitle($subtitle)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubtitle()
+        {
+        }
+        /**
+         * The grid item's title.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\HangoutsChat\GoogleAppsCardV1GridItem registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * The image that displays in the grid item.
-     *
-     * @param GoogleAppsCardV1ImageComponent $image
-     */
-    public function setImage(GoogleAppsCardV1ImageComponent $image)
-    {
-    }
-    /**
-     * @return GoogleAppsCardV1ImageComponent
-     */
-    public function getImage()
-    {
-    }
-    /**
-     * The layout to use for the grid item.
-     *
-     * Accepted values: GRID_ITEM_LAYOUT_UNSPECIFIED, TEXT_BELOW, TEXT_ABOVE
-     *
-     * @param self::LAYOUT_* $layout
-     */
-    public function setLayout($layout)
-    {
-    }
-    /**
-     * @return self::LAYOUT_*
-     */
-    public function getLayout()
-    {
-    }
-    /**
-     * The grid item's subtitle.
-     *
-     * @param string $subtitle
-     */
-    public function setSubtitle($subtitle)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubtitle()
-    {
-    }
-    /**
-     * The grid item's title.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_HangoutsChat_GoogleAppsCardV1GridItem extends \Google\Service\HangoutsChat\GoogleAppsCardV1GridItem
     {
     }
 }

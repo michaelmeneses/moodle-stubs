@@ -21,32 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher\Resource;
-
-/**
- * The "deobfuscationfiles" collection of methods.
- * Typical usage is:
- *  <code>
- *   $androidpublisherService = new Google\Service\AndroidPublisher(...);
- *   $deobfuscationfiles = $androidpublisherService->edits_deobfuscationfiles;
- *  </code>
- */
-class EditsDeobfuscationfiles extends \Google\Service\Resource
-{
+namespace Google\Service\AndroidPublisher\Resource {
+    use Google\Service\AndroidPublisher\DeobfuscationFilesUploadResponse;
     /**
-     * Uploads a new deobfuscation file and attaches to the specified APK.
-     * (deobfuscationfiles.upload)
-     *
-     * @param string $packageName Unique identifier for the Android app.
-     * @param string $editId Unique identifier for this edit.
-     * @param int $apkVersionCode The version code of the APK whose Deobfuscation
-     * File is being uploaded.
-     * @param string $deobfuscationFileType The type of the deobfuscation file.
-     * @param array $optParams Optional parameters.
-     * @return DeobfuscationFilesUploadResponse
-     * @throws \Google\Service\Exception
+     * The "deobfuscationfiles" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $androidpublisherService = new Google\Service\AndroidPublisher(...);
+     *   $deobfuscationfiles = $androidpublisherService->edits_deobfuscationfiles;
+     *  </code>
      */
-    public function upload($packageName, $editId, $apkVersionCode, $deobfuscationFileType, $optParams = [])
+    class EditsDeobfuscationfiles extends \Google\Service\Resource
+    {
+        /**
+         * Uploads a new deobfuscation file and attaches to the specified APK.
+         * (deobfuscationfiles.upload)
+         *
+         * @param string $packageName Unique identifier for the Android app.
+         * @param string $editId Unique identifier for this edit.
+         * @param int $apkVersionCode The version code of the APK whose Deobfuscation
+         * File is being uploaded.
+         * @param string $deobfuscationFileType The type of the deobfuscation file.
+         * @param array $optParams Optional parameters.
+         * @return DeobfuscationFilesUploadResponse
+         * @throws \Google\Service\Exception
+         */
+        public function upload($packageName, $editId, $apkVersionCode, $deobfuscationFileType, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AndroidPublisher\Resource\EditsDeobfuscationfiles registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AndroidPublisher_Resource_EditsDeobfuscationfiles extends \Google\Service\AndroidPublisher\Resource\EditsDeobfuscationfiles
     {
     }
 }

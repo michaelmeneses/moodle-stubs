@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ToolParameterKeyMatchResults extends \Google\Collection
-{
-    protected $collection_key = 'toolParameterKeyMatchMetricValues';
-    protected $toolParameterKeyMatchMetricValuesType = GoogleCloudAiplatformV1ToolParameterKeyMatchMetricValue::class;
-    protected $toolParameterKeyMatchMetricValuesDataType = 'array';
-    /**
-     * Output only. Tool parameter key match metric values.
-     *
-     * @param GoogleCloudAiplatformV1ToolParameterKeyMatchMetricValue[] $toolParameterKeyMatchMetricValues
-     */
-    public function setToolParameterKeyMatchMetricValues($toolParameterKeyMatchMetricValues)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ToolParameterKeyMatchResults extends \Google\Collection
     {
+        protected $collection_key = 'toolParameterKeyMatchMetricValues';
+        protected $toolParameterKeyMatchMetricValuesType = GoogleCloudAiplatformV1ToolParameterKeyMatchMetricValue::class;
+        protected $toolParameterKeyMatchMetricValuesDataType = 'array';
+        /**
+         * Output only. Tool parameter key match metric values.
+         *
+         * @param GoogleCloudAiplatformV1ToolParameterKeyMatchMetricValue[] $toolParameterKeyMatchMetricValues
+         */
+        public function setToolParameterKeyMatchMetricValues($toolParameterKeyMatchMetricValues)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ToolParameterKeyMatchMetricValue[]
+         */
+        public function getToolParameterKeyMatchMetricValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1ToolParameterKeyMatchMetricValue[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ToolParameterKeyMatchResults registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getToolParameterKeyMatchMetricValues()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ToolParameterKeyMatchResults extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ToolParameterKeyMatchResults
     {
     }
 }

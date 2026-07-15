@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SearchModelDeploymentMonitoringStatsAnomaliesResponse extends \Google\Collection
-{
-    protected $collection_key = 'monitoringStats';
-    protected $monitoringStatsType = GoogleCloudAiplatformV1ModelMonitoringStatsAnomalies::class;
-    protected $monitoringStatsDataType = 'array';
-    /**
-     * The page token that can be used by the next
-     * JobService.SearchModelDeploymentMonitoringStatsAnomalies call.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Stats retrieved for requested objectives. There are at most 1000 ModelMonit
-     * oringStatsAnomalies.FeatureHistoricStatsAnomalies.prediction_stats in the
-     * response.
-     *
-     * @param GoogleCloudAiplatformV1ModelMonitoringStatsAnomalies[] $monitoringStats
-     */
-    public function setMonitoringStats($monitoringStats)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SearchModelDeploymentMonitoringStatsAnomaliesResponse extends \Google\Collection
     {
+        protected $collection_key = 'monitoringStats';
+        protected $monitoringStatsType = GoogleCloudAiplatformV1ModelMonitoringStatsAnomalies::class;
+        protected $monitoringStatsDataType = 'array';
+        /**
+         * The page token that can be used by the next
+         * JobService.SearchModelDeploymentMonitoringStatsAnomalies call.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Stats retrieved for requested objectives. There are at most 1000 ModelMonit
+         * oringStatsAnomalies.FeatureHistoricStatsAnomalies.prediction_stats in the
+         * response.
+         *
+         * @param GoogleCloudAiplatformV1ModelMonitoringStatsAnomalies[] $monitoringStats
+         */
+        public function setMonitoringStats($monitoringStats)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ModelMonitoringStatsAnomalies[]
+         */
+        public function getMonitoringStats()
+        {
+        }
+        /**
+         * The page token that can be used by the next
+         * JobService.SearchModelDeploymentMonitoringStatsAnomalies call.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1ModelMonitoringStatsAnomalies[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SearchModelDeploymentMonitoringStatsAnomaliesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMonitoringStats()
-    {
-    }
-    /**
-     * The page token that can be used by the next
-     * JobService.SearchModelDeploymentMonitoringStatsAnomalies call.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SearchModelDeploymentMonitoringStatsAnomaliesResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SearchModelDeploymentMonitoringStatsAnomaliesResponse
     {
     }
 }

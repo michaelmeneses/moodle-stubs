@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdSenseHost;
-
-class AdStyle extends \Google\Model
-{
-    protected $colorsType = AdStyleColors::class;
-    protected $colorsDataType = '';
-    /**
-     * @var string
-     */
-    public $corners;
-    protected $fontType = AdStyleFont::class;
-    protected $fontDataType = '';
-    /**
-     * @var string
-     */
-    public $kind;
-    /**
-     * @param AdStyleColors
-     */
-    public function setColors(AdStyleColors $colors)
+namespace Google\Service\AdSenseHost {
+    class AdStyle extends \Google\Model
     {
+        protected $colorsType = AdStyleColors::class;
+        protected $colorsDataType = '';
+        /**
+         * @var string
+         */
+        public $corners;
+        protected $fontType = AdStyleFont::class;
+        protected $fontDataType = '';
+        /**
+         * @var string
+         */
+        public $kind;
+        /**
+         * @param AdStyleColors
+         */
+        public function setColors(AdStyleColors $colors)
+        {
+        }
+        /**
+         * @return AdStyleColors
+         */
+        public function getColors()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCorners($corners)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCorners()
+        {
+        }
+        /**
+         * @param AdStyleFont
+         */
+        public function setFont(AdStyleFont $font)
+        {
+        }
+        /**
+         * @return AdStyleFont
+         */
+        public function getFont()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AdStyleColors
+     * Runtime class alias of \Google\Service\AdSenseHost\AdStyle registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColors()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCorners($corners)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCorners()
-    {
-    }
-    /**
-     * @param AdStyleFont
-     */
-    public function setFont(AdStyleFont $font)
-    {
-    }
-    /**
-     * @return AdStyleFont
-     */
-    public function getFont()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_AdSenseHost_AdStyle extends \Google\Service\AdSenseHost\AdStyle
     {
     }
 }

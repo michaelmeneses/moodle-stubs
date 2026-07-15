@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class AnalyzerOrgPolicyConstraint extends \Google\Model
-{
-    protected $customConstraintType = GoogleCloudAssetV1CustomConstraint::class;
-    protected $customConstraintDataType = '';
-    protected $googleDefinedConstraintType = GoogleCloudAssetV1Constraint::class;
-    protected $googleDefinedConstraintDataType = '';
-    /**
-     * The definition of the custom constraint.
-     *
-     * @param GoogleCloudAssetV1CustomConstraint $customConstraint
-     */
-    public function setCustomConstraint(GoogleCloudAssetV1CustomConstraint $customConstraint)
+namespace Google\Service\CloudAsset {
+    class AnalyzerOrgPolicyConstraint extends \Google\Model
     {
+        protected $customConstraintType = GoogleCloudAssetV1CustomConstraint::class;
+        protected $customConstraintDataType = '';
+        protected $googleDefinedConstraintType = GoogleCloudAssetV1Constraint::class;
+        protected $googleDefinedConstraintDataType = '';
+        /**
+         * The definition of the custom constraint.
+         *
+         * @param GoogleCloudAssetV1CustomConstraint $customConstraint
+         */
+        public function setCustomConstraint(GoogleCloudAssetV1CustomConstraint $customConstraint)
+        {
+        }
+        /**
+         * @return GoogleCloudAssetV1CustomConstraint
+         */
+        public function getCustomConstraint()
+        {
+        }
+        /**
+         * The definition of the canned constraint defined by Google.
+         *
+         * @param GoogleCloudAssetV1Constraint $googleDefinedConstraint
+         */
+        public function setGoogleDefinedConstraint(GoogleCloudAssetV1Constraint $googleDefinedConstraint)
+        {
+        }
+        /**
+         * @return GoogleCloudAssetV1Constraint
+         */
+        public function getGoogleDefinedConstraint()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAssetV1CustomConstraint
+     * Runtime class alias of \Google\Service\CloudAsset\AnalyzerOrgPolicyConstraint registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomConstraint()
-    {
-    }
-    /**
-     * The definition of the canned constraint defined by Google.
-     *
-     * @param GoogleCloudAssetV1Constraint $googleDefinedConstraint
-     */
-    public function setGoogleDefinedConstraint(GoogleCloudAssetV1Constraint $googleDefinedConstraint)
-    {
-    }
-    /**
-     * @return GoogleCloudAssetV1Constraint
-     */
-    public function getGoogleDefinedConstraint()
+    class Google_Service_CloudAsset_AnalyzerOrgPolicyConstraint extends \Google\Service\CloudAsset\AnalyzerOrgPolicyConstraint
     {
     }
 }

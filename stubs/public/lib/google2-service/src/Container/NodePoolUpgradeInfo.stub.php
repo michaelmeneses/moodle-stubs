@@ -21,145 +21,154 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class NodePoolUpgradeInfo extends \Google\Collection
-{
-    protected $collection_key = 'upgradeDetails';
-    /**
-     * The auto upgrade status.
-     *
-     * @var string[]
-     */
-    public $autoUpgradeStatus;
-    /**
-     * The nodepool's current minor version's end of extended support timestamp.
-     *
-     * @var string
-     */
-    public $endOfExtendedSupportTimestamp;
-    /**
-     * The nodepool's current minor version's end of standard support timestamp.
-     *
-     * @var string
-     */
-    public $endOfStandardSupportTimestamp;
-    /**
-     * minor_target_version indicates the target version for minor upgrade.
-     *
-     * @var string
-     */
-    public $minorTargetVersion;
-    /**
-     * patch_target_version indicates the target version for patch upgrade.
-     *
-     * @var string
-     */
-    public $patchTargetVersion;
-    /**
-     * The auto upgrade paused reason.
-     *
-     * @var string[]
-     */
-    public $pausedReason;
-    protected $upgradeDetailsType = UpgradeDetails::class;
-    protected $upgradeDetailsDataType = 'array';
-    /**
-     * The auto upgrade status.
-     *
-     * @param string[] $autoUpgradeStatus
-     */
-    public function setAutoUpgradeStatus($autoUpgradeStatus)
+namespace Google\Service\Container {
+    class NodePoolUpgradeInfo extends \Google\Collection
     {
+        protected $collection_key = 'upgradeDetails';
+        /**
+         * The auto upgrade status.
+         *
+         * @var string[]
+         */
+        public $autoUpgradeStatus;
+        /**
+         * The nodepool's current minor version's end of extended support timestamp.
+         *
+         * @var string
+         */
+        public $endOfExtendedSupportTimestamp;
+        /**
+         * The nodepool's current minor version's end of standard support timestamp.
+         *
+         * @var string
+         */
+        public $endOfStandardSupportTimestamp;
+        /**
+         * minor_target_version indicates the target version for minor upgrade.
+         *
+         * @var string
+         */
+        public $minorTargetVersion;
+        /**
+         * patch_target_version indicates the target version for patch upgrade.
+         *
+         * @var string
+         */
+        public $patchTargetVersion;
+        /**
+         * The auto upgrade paused reason.
+         *
+         * @var string[]
+         */
+        public $pausedReason;
+        protected $upgradeDetailsType = UpgradeDetails::class;
+        protected $upgradeDetailsDataType = 'array';
+        /**
+         * The auto upgrade status.
+         *
+         * @param string[] $autoUpgradeStatus
+         */
+        public function setAutoUpgradeStatus($autoUpgradeStatus)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAutoUpgradeStatus()
+        {
+        }
+        /**
+         * The nodepool's current minor version's end of extended support timestamp.
+         *
+         * @param string $endOfExtendedSupportTimestamp
+         */
+        public function setEndOfExtendedSupportTimestamp($endOfExtendedSupportTimestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndOfExtendedSupportTimestamp()
+        {
+        }
+        /**
+         * The nodepool's current minor version's end of standard support timestamp.
+         *
+         * @param string $endOfStandardSupportTimestamp
+         */
+        public function setEndOfStandardSupportTimestamp($endOfStandardSupportTimestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndOfStandardSupportTimestamp()
+        {
+        }
+        /**
+         * minor_target_version indicates the target version for minor upgrade.
+         *
+         * @param string $minorTargetVersion
+         */
+        public function setMinorTargetVersion($minorTargetVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMinorTargetVersion()
+        {
+        }
+        /**
+         * patch_target_version indicates the target version for patch upgrade.
+         *
+         * @param string $patchTargetVersion
+         */
+        public function setPatchTargetVersion($patchTargetVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPatchTargetVersion()
+        {
+        }
+        /**
+         * The auto upgrade paused reason.
+         *
+         * @param string[] $pausedReason
+         */
+        public function setPausedReason($pausedReason)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPausedReason()
+        {
+        }
+        /**
+         * The list of past auto upgrades.
+         *
+         * @param UpgradeDetails[] $upgradeDetails
+         */
+        public function setUpgradeDetails($upgradeDetails)
+        {
+        }
+        /**
+         * @return UpgradeDetails[]
+         */
+        public function getUpgradeDetails()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Container\NodePoolUpgradeInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAutoUpgradeStatus()
-    {
-    }
-    /**
-     * The nodepool's current minor version's end of extended support timestamp.
-     *
-     * @param string $endOfExtendedSupportTimestamp
-     */
-    public function setEndOfExtendedSupportTimestamp($endOfExtendedSupportTimestamp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndOfExtendedSupportTimestamp()
-    {
-    }
-    /**
-     * The nodepool's current minor version's end of standard support timestamp.
-     *
-     * @param string $endOfStandardSupportTimestamp
-     */
-    public function setEndOfStandardSupportTimestamp($endOfStandardSupportTimestamp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndOfStandardSupportTimestamp()
-    {
-    }
-    /**
-     * minor_target_version indicates the target version for minor upgrade.
-     *
-     * @param string $minorTargetVersion
-     */
-    public function setMinorTargetVersion($minorTargetVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMinorTargetVersion()
-    {
-    }
-    /**
-     * patch_target_version indicates the target version for patch upgrade.
-     *
-     * @param string $patchTargetVersion
-     */
-    public function setPatchTargetVersion($patchTargetVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPatchTargetVersion()
-    {
-    }
-    /**
-     * The auto upgrade paused reason.
-     *
-     * @param string[] $pausedReason
-     */
-    public function setPausedReason($pausedReason)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPausedReason()
-    {
-    }
-    /**
-     * The list of past auto upgrades.
-     *
-     * @param UpgradeDetails[] $upgradeDetails
-     */
-    public function setUpgradeDetails($upgradeDetails)
-    {
-    }
-    /**
-     * @return UpgradeDetails[]
-     */
-    public function getUpgradeDetails()
+    class Google_Service_Container_NodePoolUpgradeInfo extends \Google\Service\Container\NodePoolUpgradeInfo
     {
     }
 }

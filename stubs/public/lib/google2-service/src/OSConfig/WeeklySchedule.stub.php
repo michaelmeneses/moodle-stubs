@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OSConfig;
-
-class WeeklySchedule extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $dayOfWeek;
-    /**
-     * @param string
-     */
-    public function setDayOfWeek($dayOfWeek)
+namespace Google\Service\OSConfig {
+    class WeeklySchedule extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $dayOfWeek;
+        /**
+         * @param string
+         */
+        public function setDayOfWeek($dayOfWeek)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDayOfWeek()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OSConfig\WeeklySchedule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDayOfWeek()
+    class Google_Service_OSConfig_WeeklySchedule extends \Google\Service\OSConfig\WeeklySchedule
     {
     }
 }

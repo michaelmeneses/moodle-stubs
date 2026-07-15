@@ -8,6 +8,8 @@
  */
 namespace lbuchs\WebAuthn\CBOR;
 
+use lbuchs\WebAuthn\WebAuthnException;
+use lbuchs\WebAuthn\Binary\ByteBuffer;
 /**
  * Modified version of https://github.com/madwizard-thomas/webauthn-server/blob/master/src/Format/CborDecoder.php
  * Copyright © 2018 Thomas Bleeker - MIT licensed

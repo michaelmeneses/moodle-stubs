@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class DuplicateFilterViewRequest extends \Google\Model
-{
-    /**
-     * The ID of the filter being duplicated.
-     *
-     * @var int
-     */
-    public $filterId;
-    /**
-     * The ID of the filter being duplicated.
-     *
-     * @param int $filterId
-     */
-    public function setFilterId($filterId)
+namespace Google\Service\Sheets {
+    class DuplicateFilterViewRequest extends \Google\Model
     {
+        /**
+         * The ID of the filter being duplicated.
+         *
+         * @var int
+         */
+        public $filterId;
+        /**
+         * The ID of the filter being duplicated.
+         *
+         * @param int $filterId
+         */
+        public function setFilterId($filterId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getFilterId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Sheets\DuplicateFilterViewRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFilterId()
+    class Google_Service_Sheets_DuplicateFilterViewRequest extends \Google\Service\Sheets\DuplicateFilterViewRequest
     {
     }
 }

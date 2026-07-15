@@ -21,63 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaListExecutionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'executions';
-    protected $executionInfosType = EnterpriseCrmFrontendsEventbusProtoEventExecutionInfo::class;
-    protected $executionInfosDataType = 'array';
-    protected $executionsType = GoogleCloudIntegrationsV1alphaExecution::class;
-    protected $executionsDataType = 'array';
-    /**
-     * The token used to retrieve the next page results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Required. The detailed information of requested executions.
-     *
-     * @deprecated
-     * @param EnterpriseCrmFrontendsEventbusProtoEventExecutionInfo[] $executionInfos
-     */
-    public function setExecutionInfos($executionInfos)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaListExecutionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'executions';
+        protected $executionInfosType = EnterpriseCrmFrontendsEventbusProtoEventExecutionInfo::class;
+        protected $executionInfosDataType = 'array';
+        protected $executionsType = GoogleCloudIntegrationsV1alphaExecution::class;
+        protected $executionsDataType = 'array';
+        /**
+         * The token used to retrieve the next page results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Required. The detailed information of requested executions.
+         *
+         * @deprecated
+         * @param EnterpriseCrmFrontendsEventbusProtoEventExecutionInfo[] $executionInfos
+         */
+        public function setExecutionInfos($executionInfos)
+        {
+        }
+        /**
+         * @deprecated
+         * @return EnterpriseCrmFrontendsEventbusProtoEventExecutionInfo[]
+         */
+        public function getExecutionInfos()
+        {
+        }
+        /**
+         * The detailed information of requested executions
+         *
+         * @param GoogleCloudIntegrationsV1alphaExecution[] $executions
+         */
+        public function setExecutions($executions)
+        {
+        }
+        /**
+         * @return GoogleCloudIntegrationsV1alphaExecution[]
+         */
+        public function getExecutions()
+        {
+        }
+        /**
+         * The token used to retrieve the next page results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return EnterpriseCrmFrontendsEventbusProtoEventExecutionInfo[]
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaListExecutionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExecutionInfos()
-    {
-    }
-    /**
-     * The detailed information of requested executions
-     *
-     * @param GoogleCloudIntegrationsV1alphaExecution[] $executions
-     */
-    public function setExecutions($executions)
-    {
-    }
-    /**
-     * @return GoogleCloudIntegrationsV1alphaExecution[]
-     */
-    public function getExecutions()
-    {
-    }
-    /**
-     * The token used to retrieve the next page results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaListExecutionsResponse extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaListExecutionsResponse
     {
     }
 }

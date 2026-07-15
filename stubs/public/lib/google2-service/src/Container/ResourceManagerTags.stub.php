@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class ResourceManagerTags extends \Google\Model
-{
-    /**
-     * TagKeyValue must be in one of the following formats ([KEY]=[VALUE]) 1.
-     * `tagKeys/{tag_key_id}=tagValues/{tag_value_id}` 2.
-     * `{org_id}/{tag_key_name}={tag_value_name}` 3.
-     * `{project_id}/{tag_key_name}={tag_value_name}`
-     *
-     * @var string[]
-     */
-    public $tags;
-    /**
-     * TagKeyValue must be in one of the following formats ([KEY]=[VALUE]) 1.
-     * `tagKeys/{tag_key_id}=tagValues/{tag_value_id}` 2.
-     * `{org_id}/{tag_key_name}={tag_value_name}` 3.
-     * `{project_id}/{tag_key_name}={tag_value_name}`
-     *
-     * @param string[] $tags
-     */
-    public function setTags($tags)
+namespace Google\Service\Container {
+    class ResourceManagerTags extends \Google\Model
     {
+        /**
+         * TagKeyValue must be in one of the following formats ([KEY]=[VALUE]) 1.
+         * `tagKeys/{tag_key_id}=tagValues/{tag_value_id}` 2.
+         * `{org_id}/{tag_key_name}={tag_value_name}` 3.
+         * `{project_id}/{tag_key_name}={tag_value_name}`
+         *
+         * @var string[]
+         */
+        public $tags;
+        /**
+         * TagKeyValue must be in one of the following formats ([KEY]=[VALUE]) 1.
+         * `tagKeys/{tag_key_id}=tagValues/{tag_value_id}` 2.
+         * `{org_id}/{tag_key_name}={tag_value_name}` 3.
+         * `{project_id}/{tag_key_name}={tag_value_name}`
+         *
+         * @param string[] $tags
+         */
+        public function setTags($tags)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTags()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Container\ResourceManagerTags registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTags()
+    class Google_Service_Container_ResourceManagerTags extends \Google\Service\Container\ResourceManagerTags
     {
     }
 }

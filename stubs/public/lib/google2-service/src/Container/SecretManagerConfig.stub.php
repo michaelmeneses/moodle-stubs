@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class SecretManagerConfig extends \Google\Model
-{
-    /**
-     * Enable/Disable Secret Manager Config.
-     *
-     * @var bool
-     */
-    public $enabled;
-    protected $rotationConfigType = RotationConfig::class;
-    protected $rotationConfigDataType = '';
-    /**
-     * Enable/Disable Secret Manager Config.
-     *
-     * @param bool $enabled
-     */
-    public function setEnabled($enabled)
+namespace Google\Service\Container {
+    class SecretManagerConfig extends \Google\Model
     {
+        /**
+         * Enable/Disable Secret Manager Config.
+         *
+         * @var bool
+         */
+        public $enabled;
+        protected $rotationConfigType = RotationConfig::class;
+        protected $rotationConfigDataType = '';
+        /**
+         * Enable/Disable Secret Manager Config.
+         *
+         * @param bool $enabled
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
+        /**
+         * Rotation config for secret manager.
+         *
+         * @param RotationConfig $rotationConfig
+         */
+        public function setRotationConfig(RotationConfig $rotationConfig)
+        {
+        }
+        /**
+         * @return RotationConfig
+         */
+        public function getRotationConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Container\SecretManagerConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnabled()
-    {
-    }
-    /**
-     * Rotation config for secret manager.
-     *
-     * @param RotationConfig $rotationConfig
-     */
-    public function setRotationConfig(RotationConfig $rotationConfig)
-    {
-    }
-    /**
-     * @return RotationConfig
-     */
-    public function getRotationConfig()
+    class Google_Service_Container_SecretManagerConfig extends \Google\Service\Container\SecretManagerConfig
     {
     }
 }

@@ -21,134 +21,143 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Drive;
-
-class User extends \Google\Model
-{
-    /**
-     * Output only. A plain text displayable name for this user.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Output only. The email address of the user. This may not be present in
-     * certain contexts if the user has not made their email address visible to
-     * the requester.
-     *
-     * @var string
-     */
-    public $emailAddress;
-    /**
-     * Output only. Identifies what kind of resource this is. Value: the fixed
-     * string `drive#user`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Output only. Whether this user is the requesting user.
-     *
-     * @var bool
-     */
-    public $me;
-    /**
-     * Output only. The user's ID as visible in Permission resources.
-     *
-     * @var string
-     */
-    public $permissionId;
-    /**
-     * Output only. A link to the user's profile photo, if available.
-     *
-     * @var string
-     */
-    public $photoLink;
-    /**
-     * Output only. A plain text displayable name for this user.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\Drive {
+    class User extends \Google\Model
     {
+        /**
+         * Output only. A plain text displayable name for this user.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Output only. The email address of the user. This may not be present in
+         * certain contexts if the user has not made their email address visible to
+         * the requester.
+         *
+         * @var string
+         */
+        public $emailAddress;
+        /**
+         * Output only. Identifies what kind of resource this is. Value: the fixed
+         * string `drive#user`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Output only. Whether this user is the requesting user.
+         *
+         * @var bool
+         */
+        public $me;
+        /**
+         * Output only. The user's ID as visible in Permission resources.
+         *
+         * @var string
+         */
+        public $permissionId;
+        /**
+         * Output only. A link to the user's profile photo, if available.
+         *
+         * @var string
+         */
+        public $photoLink;
+        /**
+         * Output only. A plain text displayable name for this user.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Output only. The email address of the user. This may not be present in
+         * certain contexts if the user has not made their email address visible to
+         * the requester.
+         *
+         * @param string $emailAddress
+         */
+        public function setEmailAddress($emailAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmailAddress()
+        {
+        }
+        /**
+         * Output only. Identifies what kind of resource this is. Value: the fixed
+         * string `drive#user`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Output only. Whether this user is the requesting user.
+         *
+         * @param bool $me
+         */
+        public function setMe($me)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getMe()
+        {
+        }
+        /**
+         * Output only. The user's ID as visible in Permission resources.
+         *
+         * @param string $permissionId
+         */
+        public function setPermissionId($permissionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPermissionId()
+        {
+        }
+        /**
+         * Output only. A link to the user's profile photo, if available.
+         *
+         * @param string $photoLink
+         */
+        public function setPhotoLink($photoLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPhotoLink()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Drive\User registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Output only. The email address of the user. This may not be present in
-     * certain contexts if the user has not made their email address visible to
-     * the requester.
-     *
-     * @param string $emailAddress
-     */
-    public function setEmailAddress($emailAddress)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEmailAddress()
-    {
-    }
-    /**
-     * Output only. Identifies what kind of resource this is. Value: the fixed
-     * string `drive#user`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Output only. Whether this user is the requesting user.
-     *
-     * @param bool $me
-     */
-    public function setMe($me)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getMe()
-    {
-    }
-    /**
-     * Output only. The user's ID as visible in Permission resources.
-     *
-     * @param string $permissionId
-     */
-    public function setPermissionId($permissionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPermissionId()
-    {
-    }
-    /**
-     * Output only. A link to the user's profile photo, if available.
-     *
-     * @param string $photoLink
-     */
-    public function setPhotoLink($photoLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPhotoLink()
+    class Google_Service_Drive_User extends \Google\Service\Drive\User
     {
     }
 }

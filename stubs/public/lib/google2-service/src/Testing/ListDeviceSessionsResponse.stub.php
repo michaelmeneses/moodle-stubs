@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Testing;
-
-class ListDeviceSessionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'deviceSessions';
-    protected $deviceSessionsType = DeviceSession::class;
-    protected $deviceSessionsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The sessions matching the specified filter in the given cloud project.
-     *
-     * @param DeviceSession[] $deviceSessions
-     */
-    public function setDeviceSessions($deviceSessions)
+namespace Google\Service\Testing {
+    class ListDeviceSessionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'deviceSessions';
+        protected $deviceSessionsType = DeviceSession::class;
+        protected $deviceSessionsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The sessions matching the specified filter in the given cloud project.
+         *
+         * @param DeviceSession[] $deviceSessions
+         */
+        public function setDeviceSessions($deviceSessions)
+        {
+        }
+        /**
+         * @return DeviceSession[]
+         */
+        public function getDeviceSessions()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DeviceSession[]
+     * Runtime class alias of \Google\Service\Testing\ListDeviceSessionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeviceSessions()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Testing_ListDeviceSessionsResponse extends \Google\Service\Testing\ListDeviceSessionsResponse
     {
     }
 }

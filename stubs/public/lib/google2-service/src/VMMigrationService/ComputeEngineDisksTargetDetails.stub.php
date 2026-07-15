@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMMigrationService;
-
-class ComputeEngineDisksTargetDetails extends \Google\Collection
-{
-    protected $collection_key = 'disks';
-    protected $disksType = PersistentDisk::class;
-    protected $disksDataType = 'array';
-    protected $disksTargetDetailsType = DisksMigrationDisksTargetDetails::class;
-    protected $disksTargetDetailsDataType = '';
-    protected $vmTargetDetailsType = DisksMigrationVmTargetDetails::class;
-    protected $vmTargetDetailsDataType = '';
-    /**
-     * The details of each created Persistent Disk.
-     *
-     * @param PersistentDisk[] $disks
-     */
-    public function setDisks($disks)
+namespace Google\Service\VMMigrationService {
+    class ComputeEngineDisksTargetDetails extends \Google\Collection
     {
+        protected $collection_key = 'disks';
+        protected $disksType = PersistentDisk::class;
+        protected $disksDataType = 'array';
+        protected $disksTargetDetailsType = DisksMigrationDisksTargetDetails::class;
+        protected $disksTargetDetailsDataType = '';
+        protected $vmTargetDetailsType = DisksMigrationVmTargetDetails::class;
+        protected $vmTargetDetailsDataType = '';
+        /**
+         * The details of each created Persistent Disk.
+         *
+         * @param PersistentDisk[] $disks
+         */
+        public function setDisks($disks)
+        {
+        }
+        /**
+         * @return PersistentDisk[]
+         */
+        public function getDisks()
+        {
+        }
+        /**
+         * Details of the disks-only migration target.
+         *
+         * @param DisksMigrationDisksTargetDetails $disksTargetDetails
+         */
+        public function setDisksTargetDetails(DisksMigrationDisksTargetDetails $disksTargetDetails)
+        {
+        }
+        /**
+         * @return DisksMigrationDisksTargetDetails
+         */
+        public function getDisksTargetDetails()
+        {
+        }
+        /**
+         * Details for the VM the migrated data disks are attached to.
+         *
+         * @param DisksMigrationVmTargetDetails $vmTargetDetails
+         */
+        public function setVmTargetDetails(DisksMigrationVmTargetDetails $vmTargetDetails)
+        {
+        }
+        /**
+         * @return DisksMigrationVmTargetDetails
+         */
+        public function getVmTargetDetails()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PersistentDisk[]
+     * Runtime class alias of \Google\Service\VMMigrationService\ComputeEngineDisksTargetDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisks()
-    {
-    }
-    /**
-     * Details of the disks-only migration target.
-     *
-     * @param DisksMigrationDisksTargetDetails $disksTargetDetails
-     */
-    public function setDisksTargetDetails(DisksMigrationDisksTargetDetails $disksTargetDetails)
-    {
-    }
-    /**
-     * @return DisksMigrationDisksTargetDetails
-     */
-    public function getDisksTargetDetails()
-    {
-    }
-    /**
-     * Details for the VM the migrated data disks are attached to.
-     *
-     * @param DisksMigrationVmTargetDetails $vmTargetDetails
-     */
-    public function setVmTargetDetails(DisksMigrationVmTargetDetails $vmTargetDetails)
-    {
-    }
-    /**
-     * @return DisksMigrationVmTargetDetails
-     */
-    public function getVmTargetDetails()
+    class Google_Service_VMMigrationService_ComputeEngineDisksTargetDetails extends \Google\Service\VMMigrationService\ComputeEngineDisksTargetDetails
     {
     }
 }

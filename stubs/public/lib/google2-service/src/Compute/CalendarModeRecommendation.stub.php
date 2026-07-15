@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class CalendarModeRecommendation extends \Google\Model
-{
-    protected $recommendationsPerSpecType = FutureResourcesRecommendation::class;
-    protected $recommendationsPerSpecDataType = 'map';
-    /**
-     * Recommendations for every future resource specification passed in
-     * CalendarModeAdviceRequest. Keys of the map correspond to keys specified in
-     * the request.
-     *
-     * @param FutureResourcesRecommendation[] $recommendationsPerSpec
-     */
-    public function setRecommendationsPerSpec($recommendationsPerSpec)
+namespace Google\Service\Compute {
+    class CalendarModeRecommendation extends \Google\Model
     {
+        protected $recommendationsPerSpecType = FutureResourcesRecommendation::class;
+        protected $recommendationsPerSpecDataType = 'map';
+        /**
+         * Recommendations for every future resource specification passed in
+         * CalendarModeAdviceRequest. Keys of the map correspond to keys specified in
+         * the request.
+         *
+         * @param FutureResourcesRecommendation[] $recommendationsPerSpec
+         */
+        public function setRecommendationsPerSpec($recommendationsPerSpec)
+        {
+        }
+        /**
+         * @return FutureResourcesRecommendation[]
+         */
+        public function getRecommendationsPerSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FutureResourcesRecommendation[]
+     * Runtime class alias of \Google\Service\Compute\CalendarModeRecommendation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRecommendationsPerSpec()
+    class Google_Service_Compute_CalendarModeRecommendation extends \Google\Service\Compute\CalendarModeRecommendation
     {
     }
 }

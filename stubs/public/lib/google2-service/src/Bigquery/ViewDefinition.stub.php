@@ -21,127 +21,136 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class ViewDefinition extends \Google\Collection
-{
-    protected $collection_key = 'userDefinedFunctionResources';
-    protected $foreignDefinitionsType = ForeignViewDefinition::class;
-    protected $foreignDefinitionsDataType = 'array';
-    protected $privacyPolicyType = PrivacyPolicy::class;
-    protected $privacyPolicyDataType = '';
-    /**
-     * Required. A query that BigQuery executes when the view is referenced.
-     *
-     * @var string
-     */
-    public $query;
-    /**
-     * True if the column names are explicitly specified. For example by using the
-     * 'CREATE VIEW v(c1, c2) AS ...' syntax. Can only be set for GoogleSQL views.
-     *
-     * @var bool
-     */
-    public $useExplicitColumnNames;
-    /**
-     * Specifies whether to use BigQuery's legacy SQL for this view. The default
-     * value is true. If set to false, the view will use BigQuery's GoogleSQL:
-     * https://cloud.google.com/bigquery/sql-reference/ Queries and views that
-     * reference this view must use the same flag value. A wrapper is used here
-     * because the default value is True.
-     *
-     * @var bool
-     */
-    public $useLegacySql;
-    protected $userDefinedFunctionResourcesType = UserDefinedFunctionResource::class;
-    protected $userDefinedFunctionResourcesDataType = 'array';
-    /**
-     * Optional. Foreign view representations.
-     *
-     * @param ForeignViewDefinition[] $foreignDefinitions
-     */
-    public function setForeignDefinitions($foreignDefinitions)
+namespace Google\Service\Bigquery {
+    class ViewDefinition extends \Google\Collection
     {
+        protected $collection_key = 'userDefinedFunctionResources';
+        protected $foreignDefinitionsType = ForeignViewDefinition::class;
+        protected $foreignDefinitionsDataType = 'array';
+        protected $privacyPolicyType = PrivacyPolicy::class;
+        protected $privacyPolicyDataType = '';
+        /**
+         * Required. A query that BigQuery executes when the view is referenced.
+         *
+         * @var string
+         */
+        public $query;
+        /**
+         * True if the column names are explicitly specified. For example by using the
+         * 'CREATE VIEW v(c1, c2) AS ...' syntax. Can only be set for GoogleSQL views.
+         *
+         * @var bool
+         */
+        public $useExplicitColumnNames;
+        /**
+         * Specifies whether to use BigQuery's legacy SQL for this view. The default
+         * value is true. If set to false, the view will use BigQuery's GoogleSQL:
+         * https://cloud.google.com/bigquery/sql-reference/ Queries and views that
+         * reference this view must use the same flag value. A wrapper is used here
+         * because the default value is True.
+         *
+         * @var bool
+         */
+        public $useLegacySql;
+        protected $userDefinedFunctionResourcesType = UserDefinedFunctionResource::class;
+        protected $userDefinedFunctionResourcesDataType = 'array';
+        /**
+         * Optional. Foreign view representations.
+         *
+         * @param ForeignViewDefinition[] $foreignDefinitions
+         */
+        public function setForeignDefinitions($foreignDefinitions)
+        {
+        }
+        /**
+         * @return ForeignViewDefinition[]
+         */
+        public function getForeignDefinitions()
+        {
+        }
+        /**
+         * Optional. Specifies the privacy policy for the view.
+         *
+         * @param PrivacyPolicy $privacyPolicy
+         */
+        public function setPrivacyPolicy(PrivacyPolicy $privacyPolicy)
+        {
+        }
+        /**
+         * @return PrivacyPolicy
+         */
+        public function getPrivacyPolicy()
+        {
+        }
+        /**
+         * Required. A query that BigQuery executes when the view is referenced.
+         *
+         * @param string $query
+         */
+        public function setQuery($query)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQuery()
+        {
+        }
+        /**
+         * True if the column names are explicitly specified. For example by using the
+         * 'CREATE VIEW v(c1, c2) AS ...' syntax. Can only be set for GoogleSQL views.
+         *
+         * @param bool $useExplicitColumnNames
+         */
+        public function setUseExplicitColumnNames($useExplicitColumnNames)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUseExplicitColumnNames()
+        {
+        }
+        /**
+         * Specifies whether to use BigQuery's legacy SQL for this view. The default
+         * value is true. If set to false, the view will use BigQuery's GoogleSQL:
+         * https://cloud.google.com/bigquery/sql-reference/ Queries and views that
+         * reference this view must use the same flag value. A wrapper is used here
+         * because the default value is True.
+         *
+         * @param bool $useLegacySql
+         */
+        public function setUseLegacySql($useLegacySql)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUseLegacySql()
+        {
+        }
+        /**
+         * Describes user-defined function resources used in the query.
+         *
+         * @param UserDefinedFunctionResource[] $userDefinedFunctionResources
+         */
+        public function setUserDefinedFunctionResources($userDefinedFunctionResources)
+        {
+        }
+        /**
+         * @return UserDefinedFunctionResource[]
+         */
+        public function getUserDefinedFunctionResources()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ForeignViewDefinition[]
+     * Runtime class alias of \Google\Service\Bigquery\ViewDefinition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getForeignDefinitions()
-    {
-    }
-    /**
-     * Optional. Specifies the privacy policy for the view.
-     *
-     * @param PrivacyPolicy $privacyPolicy
-     */
-    public function setPrivacyPolicy(PrivacyPolicy $privacyPolicy)
-    {
-    }
-    /**
-     * @return PrivacyPolicy
-     */
-    public function getPrivacyPolicy()
-    {
-    }
-    /**
-     * Required. A query that BigQuery executes when the view is referenced.
-     *
-     * @param string $query
-     */
-    public function setQuery($query)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQuery()
-    {
-    }
-    /**
-     * True if the column names are explicitly specified. For example by using the
-     * 'CREATE VIEW v(c1, c2) AS ...' syntax. Can only be set for GoogleSQL views.
-     *
-     * @param bool $useExplicitColumnNames
-     */
-    public function setUseExplicitColumnNames($useExplicitColumnNames)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUseExplicitColumnNames()
-    {
-    }
-    /**
-     * Specifies whether to use BigQuery's legacy SQL for this view. The default
-     * value is true. If set to false, the view will use BigQuery's GoogleSQL:
-     * https://cloud.google.com/bigquery/sql-reference/ Queries and views that
-     * reference this view must use the same flag value. A wrapper is used here
-     * because the default value is True.
-     *
-     * @param bool $useLegacySql
-     */
-    public function setUseLegacySql($useLegacySql)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUseLegacySql()
-    {
-    }
-    /**
-     * Describes user-defined function resources used in the query.
-     *
-     * @param UserDefinedFunctionResource[] $userDefinedFunctionResources
-     */
-    public function setUserDefinedFunctionResources($userDefinedFunctionResources)
-    {
-    }
-    /**
-     * @return UserDefinedFunctionResource[]
-     */
-    public function getUserDefinedFunctionResources()
+    class Google_Service_Bigquery_ViewDefinition extends \Google\Service\Bigquery\ViewDefinition
     {
     }
 }

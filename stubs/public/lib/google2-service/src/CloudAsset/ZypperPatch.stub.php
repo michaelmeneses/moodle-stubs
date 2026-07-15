@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class ZypperPatch extends \Google\Model
-{
-    /**
-     * The category of the patch.
-     *
-     * @var string
-     */
-    public $category;
-    /**
-     * The name of the patch.
-     *
-     * @var string
-     */
-    public $patchName;
-    /**
-     * The severity specified for this patch
-     *
-     * @var string
-     */
-    public $severity;
-    /**
-     * Any summary information provided about this patch.
-     *
-     * @var string
-     */
-    public $summary;
-    /**
-     * The category of the patch.
-     *
-     * @param string $category
-     */
-    public function setCategory($category)
+namespace Google\Service\CloudAsset {
+    class ZypperPatch extends \Google\Model
     {
+        /**
+         * The category of the patch.
+         *
+         * @var string
+         */
+        public $category;
+        /**
+         * The name of the patch.
+         *
+         * @var string
+         */
+        public $patchName;
+        /**
+         * The severity specified for this patch
+         *
+         * @var string
+         */
+        public $severity;
+        /**
+         * Any summary information provided about this patch.
+         *
+         * @var string
+         */
+        public $summary;
+        /**
+         * The category of the patch.
+         *
+         * @param string $category
+         */
+        public function setCategory($category)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCategory()
+        {
+        }
+        /**
+         * The name of the patch.
+         *
+         * @param string $patchName
+         */
+        public function setPatchName($patchName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPatchName()
+        {
+        }
+        /**
+         * The severity specified for this patch
+         *
+         * @param string $severity
+         */
+        public function setSeverity($severity)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSeverity()
+        {
+        }
+        /**
+         * Any summary information provided about this patch.
+         *
+         * @param string $summary
+         */
+        public function setSummary($summary)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSummary()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudAsset\ZypperPatch registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCategory()
-    {
-    }
-    /**
-     * The name of the patch.
-     *
-     * @param string $patchName
-     */
-    public function setPatchName($patchName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPatchName()
-    {
-    }
-    /**
-     * The severity specified for this patch
-     *
-     * @param string $severity
-     */
-    public function setSeverity($severity)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSeverity()
-    {
-    }
-    /**
-     * Any summary information provided about this patch.
-     *
-     * @param string $summary
-     */
-    public function setSummary($summary)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSummary()
+    class Google_Service_CloudAsset_ZypperPatch extends \Google\Service\CloudAsset\ZypperPatch
     {
     }
 }

@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataTransfer;
-
-class ApplicationDataTransfer extends \Google\Collection
-{
-    protected $collection_key = 'applicationTransferParams';
-    /**
-     * The application's ID.
-     *
-     * @var string
-     */
-    public $applicationId;
-    protected $applicationTransferParamsType = ApplicationTransferParam::class;
-    protected $applicationTransferParamsDataType = 'array';
-    /**
-     * Read-only. Current status of transfer for this application.
-     *
-     * @var string
-     */
-    public $applicationTransferStatus;
-    /**
-     * The application's ID.
-     *
-     * @param string $applicationId
-     */
-    public function setApplicationId($applicationId)
+namespace Google\Service\DataTransfer {
+    class ApplicationDataTransfer extends \Google\Collection
     {
+        protected $collection_key = 'applicationTransferParams';
+        /**
+         * The application's ID.
+         *
+         * @var string
+         */
+        public $applicationId;
+        protected $applicationTransferParamsType = ApplicationTransferParam::class;
+        protected $applicationTransferParamsDataType = 'array';
+        /**
+         * Read-only. Current status of transfer for this application.
+         *
+         * @var string
+         */
+        public $applicationTransferStatus;
+        /**
+         * The application's ID.
+         *
+         * @param string $applicationId
+         */
+        public function setApplicationId($applicationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApplicationId()
+        {
+        }
+        /**
+         * The transfer parameters for the application. These parameters are used to
+         * select the data which will get transferred in context of this application.
+         * For more information about the specific values available for each
+         * application, see the [Transfer
+         * parameters](https://developers.google.com/workspace/admin/data-
+         * transfer/v1/parameters) reference.
+         *
+         * @param ApplicationTransferParam[] $applicationTransferParams
+         */
+        public function setApplicationTransferParams($applicationTransferParams)
+        {
+        }
+        /**
+         * @return ApplicationTransferParam[]
+         */
+        public function getApplicationTransferParams()
+        {
+        }
+        /**
+         * Read-only. Current status of transfer for this application.
+         *
+         * @param string $applicationTransferStatus
+         */
+        public function setApplicationTransferStatus($applicationTransferStatus)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApplicationTransferStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataTransfer\ApplicationDataTransfer registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApplicationId()
-    {
-    }
-    /**
-     * The transfer parameters for the application. These parameters are used to
-     * select the data which will get transferred in context of this application.
-     * For more information about the specific values available for each
-     * application, see the [Transfer
-     * parameters](https://developers.google.com/workspace/admin/data-
-     * transfer/v1/parameters) reference.
-     *
-     * @param ApplicationTransferParam[] $applicationTransferParams
-     */
-    public function setApplicationTransferParams($applicationTransferParams)
-    {
-    }
-    /**
-     * @return ApplicationTransferParam[]
-     */
-    public function getApplicationTransferParams()
-    {
-    }
-    /**
-     * Read-only. Current status of transfer for this application.
-     *
-     * @param string $applicationTransferStatus
-     */
-    public function setApplicationTransferStatus($applicationTransferStatus)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getApplicationTransferStatus()
+    class Google_Service_DataTransfer_ApplicationDataTransfer extends \Google\Service\DataTransfer\ApplicationDataTransfer
     {
     }
 }

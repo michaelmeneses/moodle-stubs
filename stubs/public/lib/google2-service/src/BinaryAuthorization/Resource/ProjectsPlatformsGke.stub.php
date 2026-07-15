@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BinaryAuthorization\Resource;
-
-/**
- * The "gke" collection of methods.
- * Typical usage is:
- *  <code>
- *   $binaryauthorizationService = new Google\Service\BinaryAuthorization(...);
- *   $gke = $binaryauthorizationService->projects_platforms_gke;
- *  </code>
- */
-class ProjectsPlatformsGke extends \Google\Service\Resource
-{
+namespace Google\Service\BinaryAuthorization\Resource {
+    /**
+     * The "gke" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $binaryauthorizationService = new Google\Service\BinaryAuthorization(...);
+     *   $gke = $binaryauthorizationService->projects_platforms_gke;
+     *  </code>
+     */
+    class ProjectsPlatformsGke extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\BinaryAuthorization\Resource\ProjectsPlatformsGke registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_BinaryAuthorization_Resource_ProjectsPlatformsGke extends \Google\Service\BinaryAuthorization\Resource\ProjectsPlatformsGke
+    {
+    }
 }

@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1EntityCompatibilityStatus extends \Google\Model
-{
-    protected $bigqueryType = GoogleCloudDataplexV1EntityCompatibilityStatusCompatibility::class;
-    protected $bigqueryDataType = '';
-    protected $hiveMetastoreType = GoogleCloudDataplexV1EntityCompatibilityStatusCompatibility::class;
-    protected $hiveMetastoreDataType = '';
-    /**
-     * Output only. Whether this entity is compatible with BigQuery.
-     *
-     * @param GoogleCloudDataplexV1EntityCompatibilityStatusCompatibility $bigquery
-     */
-    public function setBigquery(GoogleCloudDataplexV1EntityCompatibilityStatusCompatibility $bigquery)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1EntityCompatibilityStatus extends \Google\Model
     {
+        protected $bigqueryType = GoogleCloudDataplexV1EntityCompatibilityStatusCompatibility::class;
+        protected $bigqueryDataType = '';
+        protected $hiveMetastoreType = GoogleCloudDataplexV1EntityCompatibilityStatusCompatibility::class;
+        protected $hiveMetastoreDataType = '';
+        /**
+         * Output only. Whether this entity is compatible with BigQuery.
+         *
+         * @param GoogleCloudDataplexV1EntityCompatibilityStatusCompatibility $bigquery
+         */
+        public function setBigquery(GoogleCloudDataplexV1EntityCompatibilityStatusCompatibility $bigquery)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1EntityCompatibilityStatusCompatibility
+         */
+        public function getBigquery()
+        {
+        }
+        /**
+         * Output only. Whether this entity is compatible with Hive Metastore.
+         *
+         * @param GoogleCloudDataplexV1EntityCompatibilityStatusCompatibility $hiveMetastore
+         */
+        public function setHiveMetastore(GoogleCloudDataplexV1EntityCompatibilityStatusCompatibility $hiveMetastore)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1EntityCompatibilityStatusCompatibility
+         */
+        public function getHiveMetastore()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDataplexV1EntityCompatibilityStatusCompatibility
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1EntityCompatibilityStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBigquery()
-    {
-    }
-    /**
-     * Output only. Whether this entity is compatible with Hive Metastore.
-     *
-     * @param GoogleCloudDataplexV1EntityCompatibilityStatusCompatibility $hiveMetastore
-     */
-    public function setHiveMetastore(GoogleCloudDataplexV1EntityCompatibilityStatusCompatibility $hiveMetastore)
-    {
-    }
-    /**
-     * @return GoogleCloudDataplexV1EntityCompatibilityStatusCompatibility
-     */
-    public function getHiveMetastore()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1EntityCompatibilityStatus extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1EntityCompatibilityStatus
     {
     }
 }

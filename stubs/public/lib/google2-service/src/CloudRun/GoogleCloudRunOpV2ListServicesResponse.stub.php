@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleCloudRunOpV2ListServicesResponse extends \Google\Collection
-{
-    protected $collection_key = 'services';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    protected $servicesType = GoogleCloudRunOpV2Service::class;
-    protected $servicesDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\CloudRun {
+    class GoogleCloudRunOpV2ListServicesResponse extends \Google\Collection
     {
+        protected $collection_key = 'services';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        protected $servicesType = GoogleCloudRunOpV2Service::class;
+        protected $servicesDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param GoogleCloudRunOpV2Service[]
+         */
+        public function setServices($services)
+        {
+        }
+        /**
+         * @return GoogleCloudRunOpV2Service[]
+         */
+        public function getServices()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRun\GoogleCloudRunOpV2ListServicesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param GoogleCloudRunOpV2Service[]
-     */
-    public function setServices($services)
-    {
-    }
-    /**
-     * @return GoogleCloudRunOpV2Service[]
-     */
-    public function getServices()
+    class Google_Service_CloudRun_GoogleCloudRunOpV2ListServicesResponse extends \Google\Service\CloudRun\GoogleCloudRunOpV2ListServicesResponse
     {
     }
 }

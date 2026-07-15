@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class DisplayDevice extends \Google\Model
-{
-    /**
-     * Defines whether the instance has Display enabled.
-     *
-     * @var bool
-     */
-    public $enableDisplay;
-    /**
-     * Defines whether the instance has Display enabled.
-     *
-     * @param bool $enableDisplay
-     */
-    public function setEnableDisplay($enableDisplay)
+namespace Google\Service\Compute {
+    class DisplayDevice extends \Google\Model
     {
+        /**
+         * Defines whether the instance has Display enabled.
+         *
+         * @var bool
+         */
+        public $enableDisplay;
+        /**
+         * Defines whether the instance has Display enabled.
+         *
+         * @param bool $enableDisplay
+         */
+        public function setEnableDisplay($enableDisplay)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableDisplay()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Compute\DisplayDevice registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnableDisplay()
+    class Google_Service_Compute_DisplayDevice extends \Google\Service\Compute\DisplayDevice
     {
     }
 }

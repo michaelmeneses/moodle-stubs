@@ -8,6 +8,9 @@
  */
 namespace Aws\Token;
 
+use Aws\Configuration\ConfigurationResolver;
+use Aws\Exception\TokenException;
+use GuzzleHttp\Promise;
 /**
  * Token provider for Bedrock that sources bearer tokens from environment variables.
  */

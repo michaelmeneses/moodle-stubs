@@ -21,150 +21,159 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2FileClusterSummary extends \Google\Collection
-{
-    protected $collection_key = 'fileStoreInfoTypeSummaries';
-    protected $dataRiskLevelType = GooglePrivacyDlpV2DataRiskLevel::class;
-    protected $dataRiskLevelDataType = '';
-    protected $errorsType = GooglePrivacyDlpV2Error::class;
-    protected $errorsDataType = 'array';
-    protected $fileClusterTypeType = GooglePrivacyDlpV2FileClusterType::class;
-    protected $fileClusterTypeDataType = '';
-    protected $fileExtensionsScannedType = GooglePrivacyDlpV2FileExtensionInfo::class;
-    protected $fileExtensionsScannedDataType = 'array';
-    protected $fileExtensionsSeenType = GooglePrivacyDlpV2FileExtensionInfo::class;
-    protected $fileExtensionsSeenDataType = 'array';
-    protected $fileStoreInfoTypeSummariesType = GooglePrivacyDlpV2FileStoreInfoTypeSummary::class;
-    protected $fileStoreInfoTypeSummariesDataType = 'array';
-    /**
-     * True if no files exist in this cluster. If the file store had more files
-     * than could be listed, this will be false even if no files for this cluster
-     * were seen and file_extensions_seen is empty.
-     *
-     * @var bool
-     */
-    public $noFilesExist;
-    protected $sensitivityScoreType = GooglePrivacyDlpV2SensitivityScore::class;
-    protected $sensitivityScoreDataType = '';
-    /**
-     * The data risk level of this cluster. RISK_LOW if nothing has been scanned.
-     *
-     * @param GooglePrivacyDlpV2DataRiskLevel $dataRiskLevel
-     */
-    public function setDataRiskLevel(GooglePrivacyDlpV2DataRiskLevel $dataRiskLevel)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2FileClusterSummary extends \Google\Collection
     {
+        protected $collection_key = 'fileStoreInfoTypeSummaries';
+        protected $dataRiskLevelType = GooglePrivacyDlpV2DataRiskLevel::class;
+        protected $dataRiskLevelDataType = '';
+        protected $errorsType = GooglePrivacyDlpV2Error::class;
+        protected $errorsDataType = 'array';
+        protected $fileClusterTypeType = GooglePrivacyDlpV2FileClusterType::class;
+        protected $fileClusterTypeDataType = '';
+        protected $fileExtensionsScannedType = GooglePrivacyDlpV2FileExtensionInfo::class;
+        protected $fileExtensionsScannedDataType = 'array';
+        protected $fileExtensionsSeenType = GooglePrivacyDlpV2FileExtensionInfo::class;
+        protected $fileExtensionsSeenDataType = 'array';
+        protected $fileStoreInfoTypeSummariesType = GooglePrivacyDlpV2FileStoreInfoTypeSummary::class;
+        protected $fileStoreInfoTypeSummariesDataType = 'array';
+        /**
+         * True if no files exist in this cluster. If the file store had more files
+         * than could be listed, this will be false even if no files for this cluster
+         * were seen and file_extensions_seen is empty.
+         *
+         * @var bool
+         */
+        public $noFilesExist;
+        protected $sensitivityScoreType = GooglePrivacyDlpV2SensitivityScore::class;
+        protected $sensitivityScoreDataType = '';
+        /**
+         * The data risk level of this cluster. RISK_LOW if nothing has been scanned.
+         *
+         * @param GooglePrivacyDlpV2DataRiskLevel $dataRiskLevel
+         */
+        public function setDataRiskLevel(GooglePrivacyDlpV2DataRiskLevel $dataRiskLevel)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2DataRiskLevel
+         */
+        public function getDataRiskLevel()
+        {
+        }
+        /**
+         * A list of errors detected while scanning this cluster. The list is
+         * truncated to 10 per cluster.
+         *
+         * @param GooglePrivacyDlpV2Error[] $errors
+         */
+        public function setErrors($errors)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2Error[]
+         */
+        public function getErrors()
+        {
+        }
+        /**
+         * The file cluster type.
+         *
+         * @param GooglePrivacyDlpV2FileClusterType $fileClusterType
+         */
+        public function setFileClusterType(GooglePrivacyDlpV2FileClusterType $fileClusterType)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2FileClusterType
+         */
+        public function getFileClusterType()
+        {
+        }
+        /**
+         * A sample of file types scanned in this cluster. Empty if no files were
+         * scanned. File extensions can be derived from the file name or the file
+         * content.
+         *
+         * @param GooglePrivacyDlpV2FileExtensionInfo[] $fileExtensionsScanned
+         */
+        public function setFileExtensionsScanned($fileExtensionsScanned)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2FileExtensionInfo[]
+         */
+        public function getFileExtensionsScanned()
+        {
+        }
+        /**
+         * A sample of file types seen in this cluster. Empty if no files were seen.
+         * File extensions can be derived from the file name or the file content.
+         *
+         * @param GooglePrivacyDlpV2FileExtensionInfo[] $fileExtensionsSeen
+         */
+        public function setFileExtensionsSeen($fileExtensionsSeen)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2FileExtensionInfo[]
+         */
+        public function getFileExtensionsSeen()
+        {
+        }
+        /**
+         * InfoTypes detected in this cluster.
+         *
+         * @param GooglePrivacyDlpV2FileStoreInfoTypeSummary[] $fileStoreInfoTypeSummaries
+         */
+        public function setFileStoreInfoTypeSummaries($fileStoreInfoTypeSummaries)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2FileStoreInfoTypeSummary[]
+         */
+        public function getFileStoreInfoTypeSummaries()
+        {
+        }
+        /**
+         * True if no files exist in this cluster. If the file store had more files
+         * than could be listed, this will be false even if no files for this cluster
+         * were seen and file_extensions_seen is empty.
+         *
+         * @param bool $noFilesExist
+         */
+        public function setNoFilesExist($noFilesExist)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getNoFilesExist()
+        {
+        }
+        /**
+         * The sensitivity score of this cluster. The score will be SENSITIVITY_LOW if
+         * nothing has been scanned.
+         *
+         * @param GooglePrivacyDlpV2SensitivityScore $sensitivityScore
+         */
+        public function setSensitivityScore(GooglePrivacyDlpV2SensitivityScore $sensitivityScore)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2SensitivityScore
+         */
+        public function getSensitivityScore()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2DataRiskLevel
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2FileClusterSummary registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataRiskLevel()
-    {
-    }
-    /**
-     * A list of errors detected while scanning this cluster. The list is
-     * truncated to 10 per cluster.
-     *
-     * @param GooglePrivacyDlpV2Error[] $errors
-     */
-    public function setErrors($errors)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2Error[]
-     */
-    public function getErrors()
-    {
-    }
-    /**
-     * The file cluster type.
-     *
-     * @param GooglePrivacyDlpV2FileClusterType $fileClusterType
-     */
-    public function setFileClusterType(GooglePrivacyDlpV2FileClusterType $fileClusterType)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2FileClusterType
-     */
-    public function getFileClusterType()
-    {
-    }
-    /**
-     * A sample of file types scanned in this cluster. Empty if no files were
-     * scanned. File extensions can be derived from the file name or the file
-     * content.
-     *
-     * @param GooglePrivacyDlpV2FileExtensionInfo[] $fileExtensionsScanned
-     */
-    public function setFileExtensionsScanned($fileExtensionsScanned)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2FileExtensionInfo[]
-     */
-    public function getFileExtensionsScanned()
-    {
-    }
-    /**
-     * A sample of file types seen in this cluster. Empty if no files were seen.
-     * File extensions can be derived from the file name or the file content.
-     *
-     * @param GooglePrivacyDlpV2FileExtensionInfo[] $fileExtensionsSeen
-     */
-    public function setFileExtensionsSeen($fileExtensionsSeen)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2FileExtensionInfo[]
-     */
-    public function getFileExtensionsSeen()
-    {
-    }
-    /**
-     * InfoTypes detected in this cluster.
-     *
-     * @param GooglePrivacyDlpV2FileStoreInfoTypeSummary[] $fileStoreInfoTypeSummaries
-     */
-    public function setFileStoreInfoTypeSummaries($fileStoreInfoTypeSummaries)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2FileStoreInfoTypeSummary[]
-     */
-    public function getFileStoreInfoTypeSummaries()
-    {
-    }
-    /**
-     * True if no files exist in this cluster. If the file store had more files
-     * than could be listed, this will be false even if no files for this cluster
-     * were seen and file_extensions_seen is empty.
-     *
-     * @param bool $noFilesExist
-     */
-    public function setNoFilesExist($noFilesExist)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getNoFilesExist()
-    {
-    }
-    /**
-     * The sensitivity score of this cluster. The score will be SENSITIVITY_LOW if
-     * nothing has been scanned.
-     *
-     * @param GooglePrivacyDlpV2SensitivityScore $sensitivityScore
-     */
-    public function setSensitivityScore(GooglePrivacyDlpV2SensitivityScore $sensitivityScore)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2SensitivityScore
-     */
-    public function getSensitivityScore()
+    class Google_Service_DLP_GooglePrivacyDlpV2FileClusterSummary extends \Google\Service\DLP\GooglePrivacyDlpV2FileClusterSummary
     {
     }
 }

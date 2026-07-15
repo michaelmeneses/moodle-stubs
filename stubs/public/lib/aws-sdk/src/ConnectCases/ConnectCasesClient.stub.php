@@ -8,6 +8,7 @@
  */
 namespace Aws\ConnectCases;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon Connect Cases** service.
  * @method \Aws\Result batchGetCaseRule(array $args = [])

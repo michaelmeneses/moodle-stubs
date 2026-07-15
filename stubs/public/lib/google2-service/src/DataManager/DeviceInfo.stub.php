@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataManager;
-
-class DeviceInfo extends \Google\Model
-{
-    /**
-     * Optional. The IP address of the device for the given context. **Note:**
-     * Google Ads does not support IP address matching for end users in the
-     * European Economic Area (EEA), United Kingdom (UK), or Switzerland (CH). Add
-     * logic to conditionally exclude sharing IP addresses from users from these
-     * regions and ensure that you provide users with clear and comprehensive
-     * information about the data you collect on your sites, apps, and other
-     * properties and get consent where required by law or any applicable Google
-     * policies. See the [About offline conversion
-     * imports](https://support.google.com/google-ads/answer/2998031) page for
-     * more details.
-     *
-     * @var string
-     */
-    public $ipAddress;
-    /**
-     * Optional. The user-agent string of the device for the given context.
-     *
-     * @var string
-     */
-    public $userAgent;
-    /**
-     * Optional. The IP address of the device for the given context. **Note:**
-     * Google Ads does not support IP address matching for end users in the
-     * European Economic Area (EEA), United Kingdom (UK), or Switzerland (CH). Add
-     * logic to conditionally exclude sharing IP addresses from users from these
-     * regions and ensure that you provide users with clear and comprehensive
-     * information about the data you collect on your sites, apps, and other
-     * properties and get consent where required by law or any applicable Google
-     * policies. See the [About offline conversion
-     * imports](https://support.google.com/google-ads/answer/2998031) page for
-     * more details.
-     *
-     * @param string $ipAddress
-     */
-    public function setIpAddress($ipAddress)
+namespace Google\Service\DataManager {
+    class DeviceInfo extends \Google\Model
     {
+        /**
+         * Optional. The IP address of the device for the given context. **Note:**
+         * Google Ads does not support IP address matching for end users in the
+         * European Economic Area (EEA), United Kingdom (UK), or Switzerland (CH). Add
+         * logic to conditionally exclude sharing IP addresses from users from these
+         * regions and ensure that you provide users with clear and comprehensive
+         * information about the data you collect on your sites, apps, and other
+         * properties and get consent where required by law or any applicable Google
+         * policies. See the [About offline conversion
+         * imports](https://support.google.com/google-ads/answer/2998031) page for
+         * more details.
+         *
+         * @var string
+         */
+        public $ipAddress;
+        /**
+         * Optional. The user-agent string of the device for the given context.
+         *
+         * @var string
+         */
+        public $userAgent;
+        /**
+         * Optional. The IP address of the device for the given context. **Note:**
+         * Google Ads does not support IP address matching for end users in the
+         * European Economic Area (EEA), United Kingdom (UK), or Switzerland (CH). Add
+         * logic to conditionally exclude sharing IP addresses from users from these
+         * regions and ensure that you provide users with clear and comprehensive
+         * information about the data you collect on your sites, apps, and other
+         * properties and get consent where required by law or any applicable Google
+         * policies. See the [About offline conversion
+         * imports](https://support.google.com/google-ads/answer/2998031) page for
+         * more details.
+         *
+         * @param string $ipAddress
+         */
+        public function setIpAddress($ipAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIpAddress()
+        {
+        }
+        /**
+         * Optional. The user-agent string of the device for the given context.
+         *
+         * @param string $userAgent
+         */
+        public function setUserAgent($userAgent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserAgent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataManager\DeviceInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIpAddress()
-    {
-    }
-    /**
-     * Optional. The user-agent string of the device for the given context.
-     *
-     * @param string $userAgent
-     */
-    public function setUserAgent($userAgent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserAgent()
+    class Google_Service_DataManager_DeviceInfo extends \Google\Service\DataManager\DeviceInfo
     {
     }
 }

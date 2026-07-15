@@ -21,143 +21,152 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OnDemandScanning;
-
-class WindowsUpdate extends \Google\Collection
-{
-    protected $collection_key = 'kbArticleIds';
-    protected $categoriesType = Category::class;
-    protected $categoriesDataType = 'array';
-    /**
-     * The localized description of the update.
-     *
-     * @var string
-     */
-    public $description;
-    protected $identityType = Identity::class;
-    protected $identityDataType = '';
-    /**
-     * The Microsoft Knowledge Base article IDs that are associated with the
-     * update.
-     *
-     * @var string[]
-     */
-    public $kbArticleIds;
-    /**
-     * The last published timestamp of the update.
-     *
-     * @var string
-     */
-    public $lastPublishedTimestamp;
-    /**
-     * The hyperlink to the support information for the update.
-     *
-     * @var string
-     */
-    public $supportUrl;
-    /**
-     * The localized title of the update.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * The list of categories to which the update belongs.
-     *
-     * @param Category[] $categories
-     */
-    public function setCategories($categories)
+namespace Google\Service\OnDemandScanning {
+    class WindowsUpdate extends \Google\Collection
     {
+        protected $collection_key = 'kbArticleIds';
+        protected $categoriesType = Category::class;
+        protected $categoriesDataType = 'array';
+        /**
+         * The localized description of the update.
+         *
+         * @var string
+         */
+        public $description;
+        protected $identityType = Identity::class;
+        protected $identityDataType = '';
+        /**
+         * The Microsoft Knowledge Base article IDs that are associated with the
+         * update.
+         *
+         * @var string[]
+         */
+        public $kbArticleIds;
+        /**
+         * The last published timestamp of the update.
+         *
+         * @var string
+         */
+        public $lastPublishedTimestamp;
+        /**
+         * The hyperlink to the support information for the update.
+         *
+         * @var string
+         */
+        public $supportUrl;
+        /**
+         * The localized title of the update.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * The list of categories to which the update belongs.
+         *
+         * @param Category[] $categories
+         */
+        public function setCategories($categories)
+        {
+        }
+        /**
+         * @return Category[]
+         */
+        public function getCategories()
+        {
+        }
+        /**
+         * The localized description of the update.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Required - The unique identifier for the update.
+         *
+         * @param Identity $identity
+         */
+        public function setIdentity(Identity $identity)
+        {
+        }
+        /**
+         * @return Identity
+         */
+        public function getIdentity()
+        {
+        }
+        /**
+         * The Microsoft Knowledge Base article IDs that are associated with the
+         * update.
+         *
+         * @param string[] $kbArticleIds
+         */
+        public function setKbArticleIds($kbArticleIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getKbArticleIds()
+        {
+        }
+        /**
+         * The last published timestamp of the update.
+         *
+         * @param string $lastPublishedTimestamp
+         */
+        public function setLastPublishedTimestamp($lastPublishedTimestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastPublishedTimestamp()
+        {
+        }
+        /**
+         * The hyperlink to the support information for the update.
+         *
+         * @param string $supportUrl
+         */
+        public function setSupportUrl($supportUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSupportUrl()
+        {
+        }
+        /**
+         * The localized title of the update.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Category[]
+     * Runtime class alias of \Google\Service\OnDemandScanning\WindowsUpdate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCategories()
-    {
-    }
-    /**
-     * The localized description of the update.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Required - The unique identifier for the update.
-     *
-     * @param Identity $identity
-     */
-    public function setIdentity(Identity $identity)
-    {
-    }
-    /**
-     * @return Identity
-     */
-    public function getIdentity()
-    {
-    }
-    /**
-     * The Microsoft Knowledge Base article IDs that are associated with the
-     * update.
-     *
-     * @param string[] $kbArticleIds
-     */
-    public function setKbArticleIds($kbArticleIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getKbArticleIds()
-    {
-    }
-    /**
-     * The last published timestamp of the update.
-     *
-     * @param string $lastPublishedTimestamp
-     */
-    public function setLastPublishedTimestamp($lastPublishedTimestamp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastPublishedTimestamp()
-    {
-    }
-    /**
-     * The hyperlink to the support information for the update.
-     *
-     * @param string $supportUrl
-     */
-    public function setSupportUrl($supportUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSupportUrl()
-    {
-    }
-    /**
-     * The localized title of the update.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_OnDemandScanning_WindowsUpdate extends \Google\Service\OnDemandScanning\WindowsUpdate
     {
     }
 }

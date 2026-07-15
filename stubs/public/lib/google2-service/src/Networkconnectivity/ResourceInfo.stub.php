@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity;
-
-class ResourceInfo extends \Google\Model
-{
-    public $resourceContainer;
-    public $resourceLocation;
-    public $resourceName;
-    public function setResourceContainer($resourceContainer)
+namespace Google\Service\Networkconnectivity {
+    class ResourceInfo extends \Google\Model
     {
+        public $resourceContainer;
+        public $resourceLocation;
+        public $resourceName;
+        public function setResourceContainer($resourceContainer)
+        {
+        }
+        public function getResourceContainer()
+        {
+        }
+        public function setResourceLocation($resourceLocation)
+        {
+        }
+        public function getResourceLocation()
+        {
+        }
+        public function setResourceName($resourceName)
+        {
+        }
+        public function getResourceName()
+        {
+        }
     }
-    public function getResourceContainer()
-    {
-    }
-    public function setResourceLocation($resourceLocation)
-    {
-    }
-    public function getResourceLocation()
-    {
-    }
-    public function setResourceName($resourceName)
-    {
-    }
-    public function getResourceName()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Networkconnectivity\ResourceInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Networkconnectivity_ResourceInfo extends \Google\Service\Networkconnectivity\ResourceInfo
     {
     }
 }

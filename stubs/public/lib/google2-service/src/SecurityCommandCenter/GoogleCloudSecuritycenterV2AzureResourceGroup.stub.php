@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GoogleCloudSecuritycenterV2AzureResourceGroup extends \Google\Model
-{
-    /**
-     * The ID of the Azure resource group.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * The name of the Azure resource group. This is not a UUID.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The ID of the Azure resource group.
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\SecurityCommandCenter {
+    class GoogleCloudSecuritycenterV2AzureResourceGroup extends \Google\Model
     {
+        /**
+         * The ID of the Azure resource group.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * The name of the Azure resource group. This is not a UUID.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The ID of the Azure resource group.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * The name of the Azure resource group. This is not a UUID.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2AzureResourceGroup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * The name of the Azure resource group. This is not a UUID.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_SecurityCommandCenter_GoogleCloudSecuritycenterV2AzureResourceGroup extends \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2AzureResourceGroup
     {
     }
 }

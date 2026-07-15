@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BusinessProfilePerformance\Resource;
-
-/**
- * The "searchkeywords" collection of methods.
- * Typical usage is:
- *  <code>
- *   $businessprofileperformanceService = new Google\Service\BusinessProfilePerformance(...);
- *   $searchkeywords = $businessprofileperformanceService->locations_searchkeywords;
- *  </code>
- */
-class LocationsSearchkeywords extends \Google\Service\Resource
-{
+namespace Google\Service\BusinessProfilePerformance\Resource {
+    /**
+     * The "searchkeywords" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $businessprofileperformanceService = new Google\Service\BusinessProfilePerformance(...);
+     *   $searchkeywords = $businessprofileperformanceService->locations_searchkeywords;
+     *  </code>
+     */
+    class LocationsSearchkeywords extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\BusinessProfilePerformance\Resource\LocationsSearchkeywords registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_BusinessProfilePerformance_Resource_LocationsSearchkeywords extends \Google\Service\BusinessProfilePerformance\Resource\LocationsSearchkeywords
+    {
+    }
 }

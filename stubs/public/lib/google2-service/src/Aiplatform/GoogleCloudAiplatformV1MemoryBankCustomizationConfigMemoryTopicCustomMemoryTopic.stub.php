@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1MemoryBankCustomizationConfigMemoryTopicCustomMemoryTopic extends \Google\Model
-{
-    /**
-     * Required. Description of the memory topic. This should explain what
-     * information should be extracted for this topic.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Required. The label of the topic.
-     *
-     * @var string
-     */
-    public $label;
-    /**
-     * Required. Description of the memory topic. This should explain what
-     * information should be extracted for this topic.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1MemoryBankCustomizationConfigMemoryTopicCustomMemoryTopic extends \Google\Model
     {
+        /**
+         * Required. Description of the memory topic. This should explain what
+         * information should be extracted for this topic.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Required. The label of the topic.
+         *
+         * @var string
+         */
+        public $label;
+        /**
+         * Required. Description of the memory topic. This should explain what
+         * information should be extracted for this topic.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Required. The label of the topic.
+         *
+         * @param string $label
+         */
+        public function setLabel($label)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLabel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1MemoryBankCustomizationConfigMemoryTopicCustomMemoryTopic registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * Required. The label of the topic.
-     *
-     * @param string $label
-     */
-    public function setLabel($label)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLabel()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1MemoryBankCustomizationConfigMemoryTopicCustomMemoryTopic extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1MemoryBankCustomizationConfigMemoryTopicCustomMemoryTopic
     {
     }
 }

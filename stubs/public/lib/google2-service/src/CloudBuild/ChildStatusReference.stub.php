@@ -21,96 +21,105 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class ChildStatusReference extends \Google\Collection
-{
-    /**
-     * Default enum type; should not be used.
-     */
-    public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
-    /**
-     * TaskRun.
-     */
-    public const TYPE_TASK_RUN = 'TASK_RUN';
-    protected $collection_key = 'whenExpressions';
-    /**
-     * Name is the name of the TaskRun or Run this is referencing.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * PipelineTaskName is the name of the PipelineTask this is referencing.
-     *
-     * @var string
-     */
-    public $pipelineTaskName;
-    /**
-     * Output only. Type of the child reference.
-     *
-     * @var string
-     */
-    public $type;
-    protected $whenExpressionsType = WhenExpression::class;
-    protected $whenExpressionsDataType = 'array';
-    /**
-     * Name is the name of the TaskRun or Run this is referencing.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\CloudBuild {
+    class ChildStatusReference extends \Google\Collection
     {
+        /**
+         * Default enum type; should not be used.
+         */
+        public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
+        /**
+         * TaskRun.
+         */
+        public const TYPE_TASK_RUN = 'TASK_RUN';
+        protected $collection_key = 'whenExpressions';
+        /**
+         * Name is the name of the TaskRun or Run this is referencing.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * PipelineTaskName is the name of the PipelineTask this is referencing.
+         *
+         * @var string
+         */
+        public $pipelineTaskName;
+        /**
+         * Output only. Type of the child reference.
+         *
+         * @var string
+         */
+        public $type;
+        protected $whenExpressionsType = WhenExpression::class;
+        protected $whenExpressionsDataType = 'array';
+        /**
+         * Name is the name of the TaskRun or Run this is referencing.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * PipelineTaskName is the name of the PipelineTask this is referencing.
+         *
+         * @param string $pipelineTaskName
+         */
+        public function setPipelineTaskName($pipelineTaskName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPipelineTaskName()
+        {
+        }
+        /**
+         * Output only. Type of the child reference.
+         *
+         * Accepted values: TYPE_UNSPECIFIED, TASK_RUN
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
+        /**
+         * WhenExpressions is the list of checks guarding the execution of the
+         * PipelineTask
+         *
+         * @param WhenExpression[] $whenExpressions
+         */
+        public function setWhenExpressions($whenExpressions)
+        {
+        }
+        /**
+         * @return WhenExpression[]
+         */
+        public function getWhenExpressions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudBuild\ChildStatusReference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * PipelineTaskName is the name of the PipelineTask this is referencing.
-     *
-     * @param string $pipelineTaskName
-     */
-    public function setPipelineTaskName($pipelineTaskName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPipelineTaskName()
-    {
-    }
-    /**
-     * Output only. Type of the child reference.
-     *
-     * Accepted values: TYPE_UNSPECIFIED, TASK_RUN
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
-    {
-    }
-    /**
-     * WhenExpressions is the list of checks guarding the execution of the
-     * PipelineTask
-     *
-     * @param WhenExpression[] $whenExpressions
-     */
-    public function setWhenExpressions($whenExpressions)
-    {
-    }
-    /**
-     * @return WhenExpression[]
-     */
-    public function getWhenExpressions()
+    class Google_Service_CloudBuild_ChildStatusReference extends \Google\Service\CloudBuild\ChildStatusReference
     {
     }
 }

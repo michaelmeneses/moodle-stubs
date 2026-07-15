@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class Borders extends \Google\Model
-{
-    protected $bottomType = Border::class;
-    protected $bottomDataType = '';
-    protected $leftType = Border::class;
-    protected $leftDataType = '';
-    protected $rightType = Border::class;
-    protected $rightDataType = '';
-    protected $topType = Border::class;
-    protected $topDataType = '';
-    /**
-     * The bottom border of the cell.
-     *
-     * @param Border $bottom
-     */
-    public function setBottom(Border $bottom)
+namespace Google\Service\Sheets {
+    class Borders extends \Google\Model
     {
+        protected $bottomType = Border::class;
+        protected $bottomDataType = '';
+        protected $leftType = Border::class;
+        protected $leftDataType = '';
+        protected $rightType = Border::class;
+        protected $rightDataType = '';
+        protected $topType = Border::class;
+        protected $topDataType = '';
+        /**
+         * The bottom border of the cell.
+         *
+         * @param Border $bottom
+         */
+        public function setBottom(Border $bottom)
+        {
+        }
+        /**
+         * @return Border
+         */
+        public function getBottom()
+        {
+        }
+        /**
+         * The left border of the cell.
+         *
+         * @param Border $left
+         */
+        public function setLeft(Border $left)
+        {
+        }
+        /**
+         * @return Border
+         */
+        public function getLeft()
+        {
+        }
+        /**
+         * The right border of the cell.
+         *
+         * @param Border $right
+         */
+        public function setRight(Border $right)
+        {
+        }
+        /**
+         * @return Border
+         */
+        public function getRight()
+        {
+        }
+        /**
+         * The top border of the cell.
+         *
+         * @param Border $top
+         */
+        public function setTop(Border $top)
+        {
+        }
+        /**
+         * @return Border
+         */
+        public function getTop()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Border
+     * Runtime class alias of \Google\Service\Sheets\Borders registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBottom()
-    {
-    }
-    /**
-     * The left border of the cell.
-     *
-     * @param Border $left
-     */
-    public function setLeft(Border $left)
-    {
-    }
-    /**
-     * @return Border
-     */
-    public function getLeft()
-    {
-    }
-    /**
-     * The right border of the cell.
-     *
-     * @param Border $right
-     */
-    public function setRight(Border $right)
-    {
-    }
-    /**
-     * @return Border
-     */
-    public function getRight()
-    {
-    }
-    /**
-     * The top border of the cell.
-     *
-     * @param Border $top
-     */
-    public function setTop(Border $top)
-    {
-    }
-    /**
-     * @return Border
-     */
-    public function getTop()
+    class Google_Service_Sheets_Borders extends \Google\Service\Sheets\Borders
     {
     }
 }

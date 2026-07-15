@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class AdvertiserTargetingConfig extends \Google\Model
-{
-    /**
-     * Whether or not connected TV devices are exempt from viewability targeting
-     * for all video line items under the advertiser.
-     *
-     * @var bool
-     */
-    public $exemptTvFromViewabilityTargeting;
-    /**
-     * Whether or not connected TV devices are exempt from viewability targeting
-     * for all video line items under the advertiser.
-     *
-     * @param bool $exemptTvFromViewabilityTargeting
-     */
-    public function setExemptTvFromViewabilityTargeting($exemptTvFromViewabilityTargeting)
+namespace Google\Service\DisplayVideo {
+    class AdvertiserTargetingConfig extends \Google\Model
     {
+        /**
+         * Whether or not connected TV devices are exempt from viewability targeting
+         * for all video line items under the advertiser.
+         *
+         * @var bool
+         */
+        public $exemptTvFromViewabilityTargeting;
+        /**
+         * Whether or not connected TV devices are exempt from viewability targeting
+         * for all video line items under the advertiser.
+         *
+         * @param bool $exemptTvFromViewabilityTargeting
+         */
+        public function setExemptTvFromViewabilityTargeting($exemptTvFromViewabilityTargeting)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getExemptTvFromViewabilityTargeting()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DisplayVideo\AdvertiserTargetingConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExemptTvFromViewabilityTargeting()
+    class Google_Service_DisplayVideo_AdvertiserTargetingConfig extends \Google\Service\DisplayVideo\AdvertiserTargetingConfig
     {
     }
 }

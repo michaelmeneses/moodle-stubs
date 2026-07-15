@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2Trigger extends \Google\Model
-{
-    protected $manualType = GooglePrivacyDlpV2Manual::class;
-    protected $manualDataType = '';
-    protected $scheduleType = GooglePrivacyDlpV2Schedule::class;
-    protected $scheduleDataType = '';
-    /**
-     * For use with hybrid jobs. Jobs must be manually created and finished.
-     *
-     * @param GooglePrivacyDlpV2Manual $manual
-     */
-    public function setManual(GooglePrivacyDlpV2Manual $manual)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2Trigger extends \Google\Model
     {
+        protected $manualType = GooglePrivacyDlpV2Manual::class;
+        protected $manualDataType = '';
+        protected $scheduleType = GooglePrivacyDlpV2Schedule::class;
+        protected $scheduleDataType = '';
+        /**
+         * For use with hybrid jobs. Jobs must be manually created and finished.
+         *
+         * @param GooglePrivacyDlpV2Manual $manual
+         */
+        public function setManual(GooglePrivacyDlpV2Manual $manual)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2Manual
+         */
+        public function getManual()
+        {
+        }
+        /**
+         * Create a job on a repeating basis based on the elapse of time.
+         *
+         * @param GooglePrivacyDlpV2Schedule $schedule
+         */
+        public function setSchedule(GooglePrivacyDlpV2Schedule $schedule)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2Schedule
+         */
+        public function getSchedule()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2Manual
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2Trigger registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getManual()
-    {
-    }
-    /**
-     * Create a job on a repeating basis based on the elapse of time.
-     *
-     * @param GooglePrivacyDlpV2Schedule $schedule
-     */
-    public function setSchedule(GooglePrivacyDlpV2Schedule $schedule)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2Schedule
-     */
-    public function getSchedule()
+    class Google_Service_DLP_GooglePrivacyDlpV2Trigger extends \Google\Service\DLP\GooglePrivacyDlpV2Trigger
     {
     }
 }

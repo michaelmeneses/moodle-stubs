@@ -21,84 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GamesConfiguration\Resource;
-
-/**
- * The "achievementConfigurations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $gamesConfigurationService = new Google\Service\GamesConfiguration(...);
- *   $achievementConfigurations = $gamesConfigurationService->achievementConfigurations;
- *  </code>
- */
-class AchievementConfigurations extends \Google\Service\Resource
-{
+namespace Google\Service\GamesConfiguration\Resource {
+    use Google\Service\GamesConfiguration\AchievementConfiguration;
+    use Google\Service\GamesConfiguration\AchievementConfigurationListResponse;
     /**
-     * Delete the achievement configuration with the given ID.
-     * (achievementConfigurations.delete)
-     *
-     * @param string $achievementId The ID of the achievement used by this method.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * The "achievementConfigurations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $gamesConfigurationService = new Google\Service\GamesConfiguration(...);
+     *   $achievementConfigurations = $gamesConfigurationService->achievementConfigurations;
+     *  </code>
      */
-    public function delete($achievementId, $optParams = [])
+    class AchievementConfigurations extends \Google\Service\Resource
     {
+        /**
+         * Delete the achievement configuration with the given ID.
+         * (achievementConfigurations.delete)
+         *
+         * @param string $achievementId The ID of the achievement used by this method.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($achievementId, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves the metadata of the achievement configuration with the given ID.
+         * (achievementConfigurations.get)
+         *
+         * @param string $achievementId The ID of the achievement used by this method.
+         * @param array $optParams Optional parameters.
+         * @return AchievementConfiguration
+         * @throws \Google\Service\Exception
+         */
+        public function get($achievementId, $optParams = [])
+        {
+        }
+        /**
+         * Insert a new achievement configuration in this application.
+         * (achievementConfigurations.insert)
+         *
+         * @param string $applicationId The application ID from the Google Play
+         * developer console.
+         * @param AchievementConfiguration $postBody
+         * @param array $optParams Optional parameters.
+         * @return AchievementConfiguration
+         * @throws \Google\Service\Exception
+         */
+        public function insert($applicationId, AchievementConfiguration $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Returns a list of the achievement configurations in this application.
+         * (achievementConfigurations.listAchievementConfigurations)
+         *
+         * @param string $applicationId The application ID from the Google Play
+         * developer console.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int maxResults The maximum number of resource configurations to
+         * return in the response, used for paging. For any response, the actual number
+         * of resources returned may be less than the specified `maxResults`.
+         * @opt_param string pageToken The token returned by the previous request.
+         * @return AchievementConfigurationListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listAchievementConfigurations($applicationId, $optParams = [])
+        {
+        }
+        /**
+         * Update the metadata of the achievement configuration with the given ID.
+         * (achievementConfigurations.update)
+         *
+         * @param string $achievementId The ID of the achievement used by this method.
+         * @param AchievementConfiguration $postBody
+         * @param array $optParams Optional parameters.
+         * @return AchievementConfiguration
+         * @throws \Google\Service\Exception
+         */
+        public function update($achievementId, AchievementConfiguration $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Retrieves the metadata of the achievement configuration with the given ID.
-     * (achievementConfigurations.get)
-     *
-     * @param string $achievementId The ID of the achievement used by this method.
-     * @param array $optParams Optional parameters.
-     * @return AchievementConfiguration
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\GamesConfiguration\Resource\AchievementConfigurations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($achievementId, $optParams = [])
-    {
-    }
-    /**
-     * Insert a new achievement configuration in this application.
-     * (achievementConfigurations.insert)
-     *
-     * @param string $applicationId The application ID from the Google Play
-     * developer console.
-     * @param AchievementConfiguration $postBody
-     * @param array $optParams Optional parameters.
-     * @return AchievementConfiguration
-     * @throws \Google\Service\Exception
-     */
-    public function insert($applicationId, AchievementConfiguration $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Returns a list of the achievement configurations in this application.
-     * (achievementConfigurations.listAchievementConfigurations)
-     *
-     * @param string $applicationId The application ID from the Google Play
-     * developer console.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int maxResults The maximum number of resource configurations to
-     * return in the response, used for paging. For any response, the actual number
-     * of resources returned may be less than the specified `maxResults`.
-     * @opt_param string pageToken The token returned by the previous request.
-     * @return AchievementConfigurationListResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listAchievementConfigurations($applicationId, $optParams = [])
-    {
-    }
-    /**
-     * Update the metadata of the achievement configuration with the given ID.
-     * (achievementConfigurations.update)
-     *
-     * @param string $achievementId The ID of the achievement used by this method.
-     * @param AchievementConfiguration $postBody
-     * @param array $optParams Optional parameters.
-     * @return AchievementConfiguration
-     * @throws \Google\Service\Exception
-     */
-    public function update($achievementId, AchievementConfiguration $postBody, $optParams = [])
+    class Google_Service_GamesConfiguration_Resource_AchievementConfigurations extends \Google\Service\GamesConfiguration\Resource\AchievementConfigurations
     {
     }
 }

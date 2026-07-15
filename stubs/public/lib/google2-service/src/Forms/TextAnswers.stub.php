@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Forms;
-
-class TextAnswers extends \Google\Collection
-{
-    protected $collection_key = 'answers';
-    protected $answersType = TextAnswer::class;
-    protected $answersDataType = 'array';
-    /**
-     * Output only. Answers to a question. For multiple-value ChoiceQuestions,
-     * each answer is a separate value.
-     *
-     * @param TextAnswer[] $answers
-     */
-    public function setAnswers($answers)
+namespace Google\Service\Forms {
+    class TextAnswers extends \Google\Collection
     {
+        protected $collection_key = 'answers';
+        protected $answersType = TextAnswer::class;
+        protected $answersDataType = 'array';
+        /**
+         * Output only. Answers to a question. For multiple-value ChoiceQuestions,
+         * each answer is a separate value.
+         *
+         * @param TextAnswer[] $answers
+         */
+        public function setAnswers($answers)
+        {
+        }
+        /**
+         * @return TextAnswer[]
+         */
+        public function getAnswers()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TextAnswer[]
+     * Runtime class alias of \Google\Service\Forms\TextAnswers registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnswers()
+    class Google_Service_Forms_TextAnswers extends \Google\Service\Forms\TextAnswers
     {
     }
 }

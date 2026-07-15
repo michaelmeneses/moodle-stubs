@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeUXReport;
-
-class Bin extends \Google\Model
-{
-    /**
-     * The proportion of users that experienced this bin's value for the given
-     * metric.
-     *
-     * @var array
-     */
-    public $density;
-    /**
-     * End is the end of the data bin. If end is not populated, then the bin has
-     * no end and is valid from start to +inf.
-     *
-     * @var array
-     */
-    public $end;
-    /**
-     * Start is the beginning of the data bin.
-     *
-     * @var array
-     */
-    public $start;
-    /**
-     * The proportion of users that experienced this bin's value for the given
-     * metric.
-     *
-     * @param array $density
-     */
-    public function setDensity($density)
+namespace Google\Service\ChromeUXReport {
+    class Bin extends \Google\Model
     {
+        /**
+         * The proportion of users that experienced this bin's value for the given
+         * metric.
+         *
+         * @var array
+         */
+        public $density;
+        /**
+         * End is the end of the data bin. If end is not populated, then the bin has
+         * no end and is valid from start to +inf.
+         *
+         * @var array
+         */
+        public $end;
+        /**
+         * Start is the beginning of the data bin.
+         *
+         * @var array
+         */
+        public $start;
+        /**
+         * The proportion of users that experienced this bin's value for the given
+         * metric.
+         *
+         * @param array $density
+         */
+        public function setDensity($density)
+        {
+        }
+        /**
+         * @return array
+         */
+        public function getDensity()
+        {
+        }
+        /**
+         * End is the end of the data bin. If end is not populated, then the bin has
+         * no end and is valid from start to +inf.
+         *
+         * @param array $end
+         */
+        public function setEnd($end)
+        {
+        }
+        /**
+         * @return array
+         */
+        public function getEnd()
+        {
+        }
+        /**
+         * Start is the beginning of the data bin.
+         *
+         * @param array $start
+         */
+        public function setStart($start)
+        {
+        }
+        /**
+         * @return array
+         */
+        public function getStart()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array
+     * Runtime class alias of \Google\Service\ChromeUXReport\Bin registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDensity()
-    {
-    }
-    /**
-     * End is the end of the data bin. If end is not populated, then the bin has
-     * no end and is valid from start to +inf.
-     *
-     * @param array $end
-     */
-    public function setEnd($end)
-    {
-    }
-    /**
-     * @return array
-     */
-    public function getEnd()
-    {
-    }
-    /**
-     * Start is the beginning of the data bin.
-     *
-     * @param array $start
-     */
-    public function setStart($start)
-    {
-    }
-    /**
-     * @return array
-     */
-    public function getStart()
+    class Google_Service_ChromeUXReport_Bin extends \Google\Service\ChromeUXReport\Bin
     {
     }
 }

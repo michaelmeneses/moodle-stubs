@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ReadTensorboardUsageResponsePerUserUsageData extends \Google\Model
-{
-    /**
-     * User's username
-     *
-     * @var string
-     */
-    public $username;
-    /**
-     * Number of times the user has read data within the Tensorboard.
-     *
-     * @var string
-     */
-    public $viewCount;
-    /**
-     * User's username
-     *
-     * @param string $username
-     */
-    public function setUsername($username)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ReadTensorboardUsageResponsePerUserUsageData extends \Google\Model
     {
+        /**
+         * User's username
+         *
+         * @var string
+         */
+        public $username;
+        /**
+         * Number of times the user has read data within the Tensorboard.
+         *
+         * @var string
+         */
+        public $viewCount;
+        /**
+         * User's username
+         *
+         * @param string $username
+         */
+        public function setUsername($username)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUsername()
+        {
+        }
+        /**
+         * Number of times the user has read data within the Tensorboard.
+         *
+         * @param string $viewCount
+         */
+        public function setViewCount($viewCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getViewCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ReadTensorboardUsageResponsePerUserUsageData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUsername()
-    {
-    }
-    /**
-     * Number of times the user has read data within the Tensorboard.
-     *
-     * @param string $viewCount
-     */
-    public function setViewCount($viewCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getViewCount()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ReadTensorboardUsageResponsePerUserUsageData extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ReadTensorboardUsageResponsePerUserUsageData
     {
     }
 }

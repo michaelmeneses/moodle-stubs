@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class IntelligenceCloudAutomlXpsMetricEntryLabel extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $labelName;
-    /**
-     * @var string
-     */
-    public $labelValue;
-    /**
-     * @param string
-     */
-    public function setLabelName($labelName)
+namespace Google\Service\Aiplatform {
+    class IntelligenceCloudAutomlXpsMetricEntryLabel extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $labelName;
+        /**
+         * @var string
+         */
+        public $labelValue;
+        /**
+         * @param string
+         */
+        public function setLabelName($labelName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLabelName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLabelValue($labelValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLabelValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\IntelligenceCloudAutomlXpsMetricEntryLabel registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLabelName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLabelValue($labelValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLabelValue()
+    class Google_Service_Aiplatform_IntelligenceCloudAutomlXpsMetricEntryLabel extends \Google\Service\Aiplatform\IntelligenceCloudAutomlXpsMetricEntryLabel
     {
     }
 }

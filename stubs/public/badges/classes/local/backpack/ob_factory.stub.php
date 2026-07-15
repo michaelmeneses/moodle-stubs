@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_badges\local\backpack;
 
+use core_badges\local\backpack\ob\assertion_exporter_interface;
+use core_badges\local\backpack\ob\badge_exporter_interface;
+use core_badges\local\backpack\ob\issuer_exporter_interface;
 /**
  * Factory class for Open Badges, used to decouple the construction of Open Badges related objects.
  *

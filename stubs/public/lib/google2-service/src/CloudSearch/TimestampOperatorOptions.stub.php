@@ -21,106 +21,115 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class TimestampOperatorOptions extends \Google\Model
-{
-    /**
-     * Indicates the operator name required in the query in order to isolate the
-     * timestamp property using the greater-than operator. For example, if
-     * greaterThanOperatorName is *closedafter* and the property's name is
-     * *closeDate*, then queries like *closedafter:* show results only where the
-     * value of the property named *closeDate* is later than **. The operator name
-     * can only contain lowercase letters (a-z). The maximum length is 32
-     * characters.
-     *
-     * @var string
-     */
-    public $greaterThanOperatorName;
-    /**
-     * Indicates the operator name required in the query in order to isolate the
-     * timestamp property using the less-than operator. For example, if
-     * lessThanOperatorName is *closedbefore* and the property's name is
-     * *closeDate*, then queries like *closedbefore:* show results only where the
-     * value of the property named *closeDate* is earlier than **. The operator
-     * name can only contain lowercase letters (a-z). The maximum length is 32
-     * characters.
-     *
-     * @var string
-     */
-    public $lessThanOperatorName;
-    /**
-     * Indicates the operator name required in the query in order to isolate the
-     * timestamp property. For example, if operatorName is *closedon* and the
-     * property's name is *closeDate*, then queries like *closedon:* show results
-     * only where the value of the property named *closeDate* matches **. By
-     * contrast, a search that uses the same ** without an operator returns all
-     * items where ** matches the value of any String properties or text within
-     * the content field for the item. The operator name can only contain
-     * lowercase letters (a-z). The maximum length is 32 characters.
-     *
-     * @var string
-     */
-    public $operatorName;
-    /**
-     * Indicates the operator name required in the query in order to isolate the
-     * timestamp property using the greater-than operator. For example, if
-     * greaterThanOperatorName is *closedafter* and the property's name is
-     * *closeDate*, then queries like *closedafter:* show results only where the
-     * value of the property named *closeDate* is later than **. The operator name
-     * can only contain lowercase letters (a-z). The maximum length is 32
-     * characters.
-     *
-     * @param string $greaterThanOperatorName
-     */
-    public function setGreaterThanOperatorName($greaterThanOperatorName)
+namespace Google\Service\CloudSearch {
+    class TimestampOperatorOptions extends \Google\Model
     {
+        /**
+         * Indicates the operator name required in the query in order to isolate the
+         * timestamp property using the greater-than operator. For example, if
+         * greaterThanOperatorName is *closedafter* and the property's name is
+         * *closeDate*, then queries like *closedafter:* show results only where the
+         * value of the property named *closeDate* is later than **. The operator name
+         * can only contain lowercase letters (a-z). The maximum length is 32
+         * characters.
+         *
+         * @var string
+         */
+        public $greaterThanOperatorName;
+        /**
+         * Indicates the operator name required in the query in order to isolate the
+         * timestamp property using the less-than operator. For example, if
+         * lessThanOperatorName is *closedbefore* and the property's name is
+         * *closeDate*, then queries like *closedbefore:* show results only where the
+         * value of the property named *closeDate* is earlier than **. The operator
+         * name can only contain lowercase letters (a-z). The maximum length is 32
+         * characters.
+         *
+         * @var string
+         */
+        public $lessThanOperatorName;
+        /**
+         * Indicates the operator name required in the query in order to isolate the
+         * timestamp property. For example, if operatorName is *closedon* and the
+         * property's name is *closeDate*, then queries like *closedon:* show results
+         * only where the value of the property named *closeDate* matches **. By
+         * contrast, a search that uses the same ** without an operator returns all
+         * items where ** matches the value of any String properties or text within
+         * the content field for the item. The operator name can only contain
+         * lowercase letters (a-z). The maximum length is 32 characters.
+         *
+         * @var string
+         */
+        public $operatorName;
+        /**
+         * Indicates the operator name required in the query in order to isolate the
+         * timestamp property using the greater-than operator. For example, if
+         * greaterThanOperatorName is *closedafter* and the property's name is
+         * *closeDate*, then queries like *closedafter:* show results only where the
+         * value of the property named *closeDate* is later than **. The operator name
+         * can only contain lowercase letters (a-z). The maximum length is 32
+         * characters.
+         *
+         * @param string $greaterThanOperatorName
+         */
+        public function setGreaterThanOperatorName($greaterThanOperatorName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGreaterThanOperatorName()
+        {
+        }
+        /**
+         * Indicates the operator name required in the query in order to isolate the
+         * timestamp property using the less-than operator. For example, if
+         * lessThanOperatorName is *closedbefore* and the property's name is
+         * *closeDate*, then queries like *closedbefore:* show results only where the
+         * value of the property named *closeDate* is earlier than **. The operator
+         * name can only contain lowercase letters (a-z). The maximum length is 32
+         * characters.
+         *
+         * @param string $lessThanOperatorName
+         */
+        public function setLessThanOperatorName($lessThanOperatorName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLessThanOperatorName()
+        {
+        }
+        /**
+         * Indicates the operator name required in the query in order to isolate the
+         * timestamp property. For example, if operatorName is *closedon* and the
+         * property's name is *closeDate*, then queries like *closedon:* show results
+         * only where the value of the property named *closeDate* matches **. By
+         * contrast, a search that uses the same ** without an operator returns all
+         * items where ** matches the value of any String properties or text within
+         * the content field for the item. The operator name can only contain
+         * lowercase letters (a-z). The maximum length is 32 characters.
+         *
+         * @param string $operatorName
+         */
+        public function setOperatorName($operatorName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOperatorName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\TimestampOperatorOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGreaterThanOperatorName()
-    {
-    }
-    /**
-     * Indicates the operator name required in the query in order to isolate the
-     * timestamp property using the less-than operator. For example, if
-     * lessThanOperatorName is *closedbefore* and the property's name is
-     * *closeDate*, then queries like *closedbefore:* show results only where the
-     * value of the property named *closeDate* is earlier than **. The operator
-     * name can only contain lowercase letters (a-z). The maximum length is 32
-     * characters.
-     *
-     * @param string $lessThanOperatorName
-     */
-    public function setLessThanOperatorName($lessThanOperatorName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLessThanOperatorName()
-    {
-    }
-    /**
-     * Indicates the operator name required in the query in order to isolate the
-     * timestamp property. For example, if operatorName is *closedon* and the
-     * property's name is *closeDate*, then queries like *closedon:* show results
-     * only where the value of the property named *closeDate* matches **. By
-     * contrast, a search that uses the same ** without an operator returns all
-     * items where ** matches the value of any String properties or text within
-     * the content field for the item. The operator name can only contain
-     * lowercase letters (a-z). The maximum length is 32 characters.
-     *
-     * @param string $operatorName
-     */
-    public function setOperatorName($operatorName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOperatorName()
+    class Google_Service_CloudSearch_TimestampOperatorOptions extends \Google\Service\CloudSearch\TimestampOperatorOptions
     {
     }
 }

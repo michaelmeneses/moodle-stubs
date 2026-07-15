@@ -20,51 +20,62 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core_filters;
-
-/**
- * A Moodle form base class for editing local filter settings.
- *
- * @copyright Tim Hunt
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @package    core_filters
- */
-abstract class local_settings_form extends moodleform
-{
+namespace core_filters {
+    use core\context;
+    use moodleform;
     /**
-     * Create an instance of the form.
+     * A Moodle form base class for editing local filter settings.
      *
-     * @param string $submiturl
-     * @param string $filter
-     * @param context $context
+     * @copyright Tim Hunt
+     * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+     * @package    core_filters
      */
-    public function __construct(
-        string $submiturl,
-        /** @var string The filter to manage */
-        protected string $filter,
-        /** @var \core\context The context */
-        protected context $context
-    )
+    abstract class local_settings_form extends moodleform
     {
+        /**
+         * Create an instance of the form.
+         *
+         * @param string $submiturl
+         * @param string $filter
+         * @param context $context
+         */
+        public function __construct(
+            string $submiturl,
+            /** @var string The filter to manage */
+            protected string $filter,
+            /** @var \core\context The context */
+            protected context $context
+        )
+        {
+        }
+        #[\Override]
+        public function definition()
+        {
+        }
+        /**
+         * Override this method to add your form controls.
+         *
+         * @param \MoodleQuickForm $mform the form we are building. $this->_form, but passed in for convenience.
+         */
+        abstract protected function definition_inner($mform);
+        /**
+         * Override this method to save the settings to the database.
+         *
+         * The default implementation will probably be sufficient for most simple cases.
+         *
+         * @param object $data the form data that was submitted.
+         */
+        public function save_changes($data)
+        {
+        }
     }
-    #[\Override]
-    public function definition()
-    {
-    }
+}
+namespace {
     /**
-     * Override this method to add your form controls.
-     *
-     * @param \MoodleQuickForm $mform the form we are building. $this->_form, but passed in for convenience.
+     * Runtime class alias of \core_filters\local_settings_form registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    abstract protected function definition_inner($mform);
-    /**
-     * Override this method to save the settings to the database.
-     *
-     * The default implementation will probably be sufficient for most simple cases.
-     *
-     * @param object $data the form data that was submitted.
-     */
-    public function save_changes($data)
+    abstract class filter_local_settings_form extends \core_filters\local_settings_form
     {
     }
 }

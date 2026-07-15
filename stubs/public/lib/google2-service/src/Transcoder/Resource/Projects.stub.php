@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Transcoder\Resource;
-
-/**
- * The "projects" collection of methods.
- * Typical usage is:
- *  <code>
- *   $transcoderService = new Google\Service\Transcoder(...);
- *   $projects = $transcoderService->projects;
- *  </code>
- */
-class Projects extends \Google\Service\Resource
-{
+namespace Google\Service\Transcoder\Resource {
+    /**
+     * The "projects" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $transcoderService = new Google\Service\Transcoder(...);
+     *   $projects = $transcoderService->projects;
+     *  </code>
+     */
+    class Projects extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Transcoder\Resource\Projects registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Transcoder_Resource_Projects extends \Google\Service\Transcoder\Resource\Projects
+    {
+    }
 }

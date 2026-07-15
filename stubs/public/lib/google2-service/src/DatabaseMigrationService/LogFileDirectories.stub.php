@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class LogFileDirectories extends \Google\Model
-{
-    /**
-     * Required. Oracle directory for archived logs.
-     *
-     * @var string
-     */
-    public $archivedLogDirectory;
-    /**
-     * Required. Oracle directory for online logs.
-     *
-     * @var string
-     */
-    public $onlineLogDirectory;
-    /**
-     * Required. Oracle directory for archived logs.
-     *
-     * @param string $archivedLogDirectory
-     */
-    public function setArchivedLogDirectory($archivedLogDirectory)
+namespace Google\Service\DatabaseMigrationService {
+    class LogFileDirectories extends \Google\Model
     {
+        /**
+         * Required. Oracle directory for archived logs.
+         *
+         * @var string
+         */
+        public $archivedLogDirectory;
+        /**
+         * Required. Oracle directory for online logs.
+         *
+         * @var string
+         */
+        public $onlineLogDirectory;
+        /**
+         * Required. Oracle directory for archived logs.
+         *
+         * @param string $archivedLogDirectory
+         */
+        public function setArchivedLogDirectory($archivedLogDirectory)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getArchivedLogDirectory()
+        {
+        }
+        /**
+         * Required. Oracle directory for online logs.
+         *
+         * @param string $onlineLogDirectory
+         */
+        public function setOnlineLogDirectory($onlineLogDirectory)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOnlineLogDirectory()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\LogFileDirectories registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArchivedLogDirectory()
-    {
-    }
-    /**
-     * Required. Oracle directory for online logs.
-     *
-     * @param string $onlineLogDirectory
-     */
-    public function setOnlineLogDirectory($onlineLogDirectory)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOnlineLogDirectory()
+    class Google_Service_DatabaseMigrationService_LogFileDirectories extends \Google\Service\DatabaseMigrationService\LogFileDirectories
     {
     }
 }

@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromePolicy;
-
-class GoogleChromePolicyV1ModifyGroupPolicyRequest extends \Google\Model
-{
-    protected $policyTargetKeyType = GoogleChromePolicyV1PolicyTargetKey::class;
-    protected $policyTargetKeyDataType = '';
-    protected $policyValueType = GoogleChromePolicyV1PolicyValue::class;
-    protected $policyValueDataType = '';
-    /**
-     * @var string
-     */
-    public $updateMask;
-    /**
-     * @param GoogleChromePolicyV1PolicyTargetKey
-     */
-    public function setPolicyTargetKey(GoogleChromePolicyV1PolicyTargetKey $policyTargetKey)
+namespace Google\Service\ChromePolicy {
+    class GoogleChromePolicyV1ModifyGroupPolicyRequest extends \Google\Model
     {
+        protected $policyTargetKeyType = GoogleChromePolicyV1PolicyTargetKey::class;
+        protected $policyTargetKeyDataType = '';
+        protected $policyValueType = GoogleChromePolicyV1PolicyValue::class;
+        protected $policyValueDataType = '';
+        /**
+         * @var string
+         */
+        public $updateMask;
+        /**
+         * @param GoogleChromePolicyV1PolicyTargetKey
+         */
+        public function setPolicyTargetKey(GoogleChromePolicyV1PolicyTargetKey $policyTargetKey)
+        {
+        }
+        /**
+         * @return GoogleChromePolicyV1PolicyTargetKey
+         */
+        public function getPolicyTargetKey()
+        {
+        }
+        /**
+         * @param GoogleChromePolicyV1PolicyValue
+         */
+        public function setPolicyValue(GoogleChromePolicyV1PolicyValue $policyValue)
+        {
+        }
+        /**
+         * @return GoogleChromePolicyV1PolicyValue
+         */
+        public function getPolicyValue()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUpdateMask($updateMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateMask()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleChromePolicyV1PolicyTargetKey
+     * Runtime class alias of \Google\Service\ChromePolicy\GoogleChromePolicyV1ModifyGroupPolicyRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPolicyTargetKey()
-    {
-    }
-    /**
-     * @param GoogleChromePolicyV1PolicyValue
-     */
-    public function setPolicyValue(GoogleChromePolicyV1PolicyValue $policyValue)
-    {
-    }
-    /**
-     * @return GoogleChromePolicyV1PolicyValue
-     */
-    public function getPolicyValue()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUpdateMask($updateMask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateMask()
+    class Google_Service_ChromePolicy_GoogleChromePolicyV1ModifyGroupPolicyRequest extends \Google\Service\ChromePolicy\GoogleChromePolicyV1ModifyGroupPolicyRequest
     {
     }
 }

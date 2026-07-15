@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class TimeInterval extends \Google\Model
-{
-    /**
-     * Required. The end of the time interval.
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * Optional. The beginning of the time interval. The default value for the
-     * start time is the end time. The start time must not be later than the end
-     * time.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * Required. The end of the time interval.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
+namespace Google\Service\Monitoring {
+    class TimeInterval extends \Google\Model
     {
+        /**
+         * Required. The end of the time interval.
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * Optional. The beginning of the time interval. The default value for the
+         * start time is the end time. The start time must not be later than the end
+         * time.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * Required. The end of the time interval.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * Optional. The beginning of the time interval. The default value for the
+         * start time is the end time. The start time must not be later than the end
+         * time.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Monitoring\TimeInterval registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndTime()
-    {
-    }
-    /**
-     * Optional. The beginning of the time interval. The default value for the
-     * start time is the end time. The start time must not be later than the end
-     * time.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
+    class Google_Service_Monitoring_TimeInterval extends \Google\Service\Monitoring\TimeInterval
     {
     }
 }

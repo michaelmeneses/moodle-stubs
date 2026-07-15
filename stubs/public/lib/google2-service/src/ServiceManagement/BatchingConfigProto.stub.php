@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceManagement;
-
-class BatchingConfigProto extends \Google\Model
-{
-    protected $batchDescriptorType = BatchingDescriptorProto::class;
-    protected $batchDescriptorDataType = '';
-    protected $thresholdsType = BatchingSettingsProto::class;
-    protected $thresholdsDataType = '';
-    /**
-     * The request and response fields used in batching.
-     *
-     * @param BatchingDescriptorProto $batchDescriptor
-     */
-    public function setBatchDescriptor(BatchingDescriptorProto $batchDescriptor)
+namespace Google\Service\ServiceManagement {
+    class BatchingConfigProto extends \Google\Model
     {
+        protected $batchDescriptorType = BatchingDescriptorProto::class;
+        protected $batchDescriptorDataType = '';
+        protected $thresholdsType = BatchingSettingsProto::class;
+        protected $thresholdsDataType = '';
+        /**
+         * The request and response fields used in batching.
+         *
+         * @param BatchingDescriptorProto $batchDescriptor
+         */
+        public function setBatchDescriptor(BatchingDescriptorProto $batchDescriptor)
+        {
+        }
+        /**
+         * @return BatchingDescriptorProto
+         */
+        public function getBatchDescriptor()
+        {
+        }
+        /**
+         * The thresholds which trigger a batched request to be sent.
+         *
+         * @param BatchingSettingsProto $thresholds
+         */
+        public function setThresholds(BatchingSettingsProto $thresholds)
+        {
+        }
+        /**
+         * @return BatchingSettingsProto
+         */
+        public function getThresholds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BatchingDescriptorProto
+     * Runtime class alias of \Google\Service\ServiceManagement\BatchingConfigProto registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBatchDescriptor()
-    {
-    }
-    /**
-     * The thresholds which trigger a batched request to be sent.
-     *
-     * @param BatchingSettingsProto $thresholds
-     */
-    public function setThresholds(BatchingSettingsProto $thresholds)
-    {
-    }
-    /**
-     * @return BatchingSettingsProto
-     */
-    public function getThresholds()
+    class Google_Service_ServiceManagement_BatchingConfigProto extends \Google\Service\ServiceManagement\BatchingConfigProto
     {
     }
 }

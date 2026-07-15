@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaDeleteSessionRequest extends \Google\Model
-{
-    /**
-     * Required. The resource name of the Session to delete. Format: `projects/{pr
-     * oject}/locations/{location}/collections/{collection}/dataStores/{data_store
-     * _id}/sessions/{session_id}`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. The resource name of the Session to delete. Format: `projects/{pr
-     * oject}/locations/{location}/collections/{collection}/dataStores/{data_store
-     * _id}/sessions/{session_id}`
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaDeleteSessionRequest extends \Google\Model
     {
+        /**
+         * Required. The resource name of the Session to delete. Format: `projects/{pr
+         * oject}/locations/{location}/collections/{collection}/dataStores/{data_store
+         * _id}/sessions/{session_id}`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. The resource name of the Session to delete. Format: `projects/{pr
+         * oject}/locations/{location}/collections/{collection}/dataStores/{data_store
+         * _id}/sessions/{session_id}`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaDeleteSessionRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaDeleteSessionRequest extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaDeleteSessionRequest
     {
     }
 }

@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Batch;
-
-class AgentEnvironment extends \Google\Model
-{
-    protected $encryptedVariablesType = AgentKMSEnvMap::class;
-    protected $encryptedVariablesDataType = '';
-    /**
-     * A map of environment variable names to Secret Manager secret names. The VM
-     * will access the named secrets to set the value of each environment
-     * variable.
-     *
-     * @var string[]
-     */
-    public $secretVariables;
-    /**
-     * A map of environment variable names to values.
-     *
-     * @var string[]
-     */
-    public $variables;
-    /**
-     * An encrypted JSON dictionary where the key/value pairs correspond to
-     * environment variable names and their values.
-     *
-     * @param AgentKMSEnvMap $encryptedVariables
-     */
-    public function setEncryptedVariables(AgentKMSEnvMap $encryptedVariables)
+namespace Google\Service\Batch {
+    class AgentEnvironment extends \Google\Model
     {
+        protected $encryptedVariablesType = AgentKMSEnvMap::class;
+        protected $encryptedVariablesDataType = '';
+        /**
+         * A map of environment variable names to Secret Manager secret names. The VM
+         * will access the named secrets to set the value of each environment
+         * variable.
+         *
+         * @var string[]
+         */
+        public $secretVariables;
+        /**
+         * A map of environment variable names to values.
+         *
+         * @var string[]
+         */
+        public $variables;
+        /**
+         * An encrypted JSON dictionary where the key/value pairs correspond to
+         * environment variable names and their values.
+         *
+         * @param AgentKMSEnvMap $encryptedVariables
+         */
+        public function setEncryptedVariables(AgentKMSEnvMap $encryptedVariables)
+        {
+        }
+        /**
+         * @return AgentKMSEnvMap
+         */
+        public function getEncryptedVariables()
+        {
+        }
+        /**
+         * A map of environment variable names to Secret Manager secret names. The VM
+         * will access the named secrets to set the value of each environment
+         * variable.
+         *
+         * @param string[] $secretVariables
+         */
+        public function setSecretVariables($secretVariables)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSecretVariables()
+        {
+        }
+        /**
+         * A map of environment variable names to values.
+         *
+         * @param string[] $variables
+         */
+        public function setVariables($variables)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getVariables()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AgentKMSEnvMap
+     * Runtime class alias of \Google\Service\Batch\AgentEnvironment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEncryptedVariables()
-    {
-    }
-    /**
-     * A map of environment variable names to Secret Manager secret names. The VM
-     * will access the named secrets to set the value of each environment
-     * variable.
-     *
-     * @param string[] $secretVariables
-     */
-    public function setSecretVariables($secretVariables)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSecretVariables()
-    {
-    }
-    /**
-     * A map of environment variable names to values.
-     *
-     * @param string[] $variables
-     */
-    public function setVariables($variables)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getVariables()
+    class Google_Service_Batch_AgentEnvironment extends \Google\Service\Batch\AgentEnvironment
     {
     }
 }

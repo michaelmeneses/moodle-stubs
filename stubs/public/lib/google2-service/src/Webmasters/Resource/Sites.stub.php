@@ -21,60 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Webmasters\Resource;
-
-/**
- * The "sites" collection of methods.
- * Typical usage is:
- *  <code>
- *   $webmastersService = new Google\Service\Webmasters(...);
- *   $sites = $webmastersService->sites;
- *  </code>
- */
-class Sites extends \Google\Service\Resource
-{
+namespace Google\Service\Webmasters\Resource {
+    use Google\Service\Webmasters\SitesListResponse;
+    use Google\Service\Webmasters\WmxSite;
     /**
-     * Adds a site to the set of the user's sites in Search Console. (sites.add)
-     *
-     * @param string $siteUrl The URL of the site to add.
-     * @param array $optParams Optional parameters.
+     * The "sites" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $webmastersService = new Google\Service\Webmasters(...);
+     *   $sites = $webmastersService->sites;
+     *  </code>
      */
-    public function add($siteUrl, $optParams = [])
+    class Sites extends \Google\Service\Resource
     {
+        /**
+         * Adds a site to the set of the user's sites in Search Console. (sites.add)
+         *
+         * @param string $siteUrl The URL of the site to add.
+         * @param array $optParams Optional parameters.
+         */
+        public function add($siteUrl, $optParams = [])
+        {
+        }
+        /**
+         * Removes a site from the set of the user's Search Console sites.
+         * (sites.delete)
+         *
+         * @param string $siteUrl The URI of the property as defined in Search Console.
+         * Examples: http://www.example.com/ or android-app://com.example/ Note: for
+         * property-sets, use the URI that starts with sc-set: which is used in Search
+         * Console URLs.
+         * @param array $optParams Optional parameters.
+         */
+        public function delete($siteUrl, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves information about specific site. (sites.get)
+         *
+         * @param string $siteUrl The URI of the property as defined in Search Console.
+         * Examples: http://www.example.com/ or android-app://com.example/ Note: for
+         * property-sets, use the URI that starts with sc-set: which is used in Search
+         * Console URLs.
+         * @param array $optParams Optional parameters.
+         * @return WmxSite
+         */
+        public function get($siteUrl, $optParams = [])
+        {
+        }
+        /**
+         * Lists the user's Search Console sites. (sites.listSites)
+         *
+         * @param array $optParams Optional parameters.
+         * @return SitesListResponse
+         */
+        public function listSites($optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Removes a site from the set of the user's Search Console sites.
-     * (sites.delete)
-     *
-     * @param string $siteUrl The URI of the property as defined in Search Console.
-     * Examples: http://www.example.com/ or android-app://com.example/ Note: for
-     * property-sets, use the URI that starts with sc-set: which is used in Search
-     * Console URLs.
-     * @param array $optParams Optional parameters.
+     * Runtime class alias of \Google\Service\Webmasters\Resource\Sites registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($siteUrl, $optParams = [])
-    {
-    }
-    /**
-     * Retrieves information about specific site. (sites.get)
-     *
-     * @param string $siteUrl The URI of the property as defined in Search Console.
-     * Examples: http://www.example.com/ or android-app://com.example/ Note: for
-     * property-sets, use the URI that starts with sc-set: which is used in Search
-     * Console URLs.
-     * @param array $optParams Optional parameters.
-     * @return WmxSite
-     */
-    public function get($siteUrl, $optParams = [])
-    {
-    }
-    /**
-     * Lists the user's Search Console sites. (sites.listSites)
-     *
-     * @param array $optParams Optional parameters.
-     * @return SitesListResponse
-     */
-    public function listSites($optParams = [])
+    class Google_Service_Webmasters_Resource_Sites extends \Google\Service\Webmasters\Resource\Sites
     {
     }
 }

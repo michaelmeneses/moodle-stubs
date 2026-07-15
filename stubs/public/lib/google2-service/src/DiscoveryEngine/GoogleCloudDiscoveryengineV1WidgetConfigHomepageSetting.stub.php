@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1WidgetConfigHomepageSetting extends \Google\Collection
-{
-    protected $collection_key = 'shortcuts';
-    protected $shortcutsType = GoogleCloudDiscoveryengineV1WidgetConfigHomepageSettingShortcut::class;
-    protected $shortcutsDataType = 'array';
-    /**
-     * Optional. The shortcuts to display on the homepage.
-     *
-     * @param GoogleCloudDiscoveryengineV1WidgetConfigHomepageSettingShortcut[] $shortcuts
-     */
-    public function setShortcuts($shortcuts)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1WidgetConfigHomepageSetting extends \Google\Collection
     {
+        protected $collection_key = 'shortcuts';
+        protected $shortcutsType = GoogleCloudDiscoveryengineV1WidgetConfigHomepageSettingShortcut::class;
+        protected $shortcutsDataType = 'array';
+        /**
+         * Optional. The shortcuts to display on the homepage.
+         *
+         * @param GoogleCloudDiscoveryengineV1WidgetConfigHomepageSettingShortcut[] $shortcuts
+         */
+        public function setShortcuts($shortcuts)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1WidgetConfigHomepageSettingShortcut[]
+         */
+        public function getShortcuts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1WidgetConfigHomepageSettingShortcut[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1WidgetConfigHomepageSetting registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getShortcuts()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1WidgetConfigHomepageSetting extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1WidgetConfigHomepageSetting
     {
     }
 }

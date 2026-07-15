@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Forms;
-
-class RowQuestion extends \Google\Model
-{
-    /**
-     * Required. The title for the single row in the QuestionGroupItem.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * Required. The title for the single row in the QuestionGroupItem.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
+namespace Google\Service\Forms {
+    class RowQuestion extends \Google\Model
     {
+        /**
+         * Required. The title for the single row in the QuestionGroupItem.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * Required. The title for the single row in the QuestionGroupItem.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Forms\RowQuestion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTitle()
+    class Google_Service_Forms_RowQuestion extends \Google\Service\Forms\RowQuestion
     {
     }
 }

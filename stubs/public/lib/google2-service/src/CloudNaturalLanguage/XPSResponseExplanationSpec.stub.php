@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSResponseExplanationSpec extends \Google\Model
-{
-    /**
-     * Explanation type. For AutoML Image Classification models, possible values
-     * are: * `image-integrated-gradients` * `image-xrai`
-     *
-     * @var string
-     */
-    public $explanationType;
-    protected $metadataType = XPSResponseExplanationMetadata::class;
-    protected $metadataDataType = '';
-    protected $parametersType = XPSResponseExplanationParameters::class;
-    protected $parametersDataType = '';
-    /**
-     * Explanation type. For AutoML Image Classification models, possible values
-     * are: * `image-integrated-gradients` * `image-xrai`
-     *
-     * @param string $explanationType
-     */
-    public function setExplanationType($explanationType)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSResponseExplanationSpec extends \Google\Model
     {
+        /**
+         * Explanation type. For AutoML Image Classification models, possible values
+         * are: * `image-integrated-gradients` * `image-xrai`
+         *
+         * @var string
+         */
+        public $explanationType;
+        protected $metadataType = XPSResponseExplanationMetadata::class;
+        protected $metadataDataType = '';
+        protected $parametersType = XPSResponseExplanationParameters::class;
+        protected $parametersDataType = '';
+        /**
+         * Explanation type. For AutoML Image Classification models, possible values
+         * are: * `image-integrated-gradients` * `image-xrai`
+         *
+         * @param string $explanationType
+         */
+        public function setExplanationType($explanationType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExplanationType()
+        {
+        }
+        /**
+         * Metadata describing the Model's input and output for explanation.
+         *
+         * @param XPSResponseExplanationMetadata $metadata
+         */
+        public function setMetadata(XPSResponseExplanationMetadata $metadata)
+        {
+        }
+        /**
+         * @return XPSResponseExplanationMetadata
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * Parameters that configure explaining of the Model's predictions.
+         *
+         * @param XPSResponseExplanationParameters $parameters
+         */
+        public function setParameters(XPSResponseExplanationParameters $parameters)
+        {
+        }
+        /**
+         * @return XPSResponseExplanationParameters
+         */
+        public function getParameters()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSResponseExplanationSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExplanationType()
-    {
-    }
-    /**
-     * Metadata describing the Model's input and output for explanation.
-     *
-     * @param XPSResponseExplanationMetadata $metadata
-     */
-    public function setMetadata(XPSResponseExplanationMetadata $metadata)
-    {
-    }
-    /**
-     * @return XPSResponseExplanationMetadata
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * Parameters that configure explaining of the Model's predictions.
-     *
-     * @param XPSResponseExplanationParameters $parameters
-     */
-    public function setParameters(XPSResponseExplanationParameters $parameters)
-    {
-    }
-    /**
-     * @return XPSResponseExplanationParameters
-     */
-    public function getParameters()
+    class Google_Service_CloudNaturalLanguage_XPSResponseExplanationSpec extends \Google\Service\CloudNaturalLanguage\XPSResponseExplanationSpec
     {
     }
 }

@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class ShippingsettingsGetSupportedCarriersResponse extends \Google\Collection
-{
-    protected $collection_key = 'carriers';
-    protected $carriersType = CarriersCarrier::class;
-    protected $carriersDataType = 'array';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "`content#shippingsettingsGetSupportedCarriersResponse`".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * A list of supported carriers. May be empty.
-     *
-     * @param CarriersCarrier[] $carriers
-     */
-    public function setCarriers($carriers)
+namespace Google\Service\ShoppingContent {
+    class ShippingsettingsGetSupportedCarriersResponse extends \Google\Collection
     {
+        protected $collection_key = 'carriers';
+        protected $carriersType = CarriersCarrier::class;
+        protected $carriersDataType = 'array';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "`content#shippingsettingsGetSupportedCarriersResponse`".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * A list of supported carriers. May be empty.
+         *
+         * @param CarriersCarrier[] $carriers
+         */
+        public function setCarriers($carriers)
+        {
+        }
+        /**
+         * @return CarriersCarrier[]
+         */
+        public function getCarriers()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "`content#shippingsettingsGetSupportedCarriersResponse`".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CarriersCarrier[]
+     * Runtime class alias of \Google\Service\ShoppingContent\ShippingsettingsGetSupportedCarriersResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCarriers()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "`content#shippingsettingsGetSupportedCarriersResponse`".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_ShoppingContent_ShippingsettingsGetSupportedCarriersResponse extends \Google\Service\ShoppingContent\ShippingsettingsGetSupportedCarriersResponse
     {
     }
 }

@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2CategoricalStatsResult extends \Google\Collection
-{
-    protected $collection_key = 'valueFrequencyHistogramBuckets';
-    protected $valueFrequencyHistogramBucketsType = GooglePrivacyDlpV2CategoricalStatsHistogramBucket::class;
-    protected $valueFrequencyHistogramBucketsDataType = 'array';
-    /**
-     * Histogram of value frequencies in the column.
-     *
-     * @param GooglePrivacyDlpV2CategoricalStatsHistogramBucket[] $valueFrequencyHistogramBuckets
-     */
-    public function setValueFrequencyHistogramBuckets($valueFrequencyHistogramBuckets)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2CategoricalStatsResult extends \Google\Collection
     {
+        protected $collection_key = 'valueFrequencyHistogramBuckets';
+        protected $valueFrequencyHistogramBucketsType = GooglePrivacyDlpV2CategoricalStatsHistogramBucket::class;
+        protected $valueFrequencyHistogramBucketsDataType = 'array';
+        /**
+         * Histogram of value frequencies in the column.
+         *
+         * @param GooglePrivacyDlpV2CategoricalStatsHistogramBucket[] $valueFrequencyHistogramBuckets
+         */
+        public function setValueFrequencyHistogramBuckets($valueFrequencyHistogramBuckets)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2CategoricalStatsHistogramBucket[]
+         */
+        public function getValueFrequencyHistogramBuckets()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2CategoricalStatsHistogramBucket[]
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2CategoricalStatsResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getValueFrequencyHistogramBuckets()
+    class Google_Service_DLP_GooglePrivacyDlpV2CategoricalStatsResult extends \Google\Service\DLP\GooglePrivacyDlpV2CategoricalStatsResult
     {
     }
 }

@@ -21,259 +21,268 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class WireGroup extends \Google\Collection
-{
-    protected $collection_key = 'wires';
-    /**
-     * Indicates whether the wires in the wire group are enabled. When false, the
-     * wires in the wire group are disabled. When true and when there is
-     * simultaneously no wire-specific override of `adminEnabled` to false, a
-     * given wire is enabled. Defaults to true.
-     *
-     * @var bool
-     */
-    public $adminEnabled;
-    /**
-     * Output only. [Output Only] Creation timestamp inRFC3339 text format.
-     *
-     * @var string
-     */
-    public $creationTimestamp;
-    /**
-     * An optional description of the wire group.
-     *
-     * @var string
-     */
-    public $description;
-    protected $endpointsType = WireGroupEndpoint::class;
-    protected $endpointsDataType = 'map';
-    /**
-     * Output only. [Output Only] The unique identifier for the resource type. The
-     * server generates this identifier.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Output only. [Output Only] Type of the resource. Alwayscompute#wireGroups
-     * for wire groups.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Name of the resource. Provided by the client when the resource is created.
-     * The name must be 1-63 characters long, and comply withRFC1035.
-     * Specifically, the name must be 1-63 characters long and match the regular
-     * expression `[a-z]([-a-z0-9]*[a-z0-9])?` which means the first character
-     * must be a lowercase letter, and all following characters must be a dash,
-     * lowercase letter, or digit, except the last character, which cannot be a
-     * dash.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. [Output Only] Indicates whether there are wire changes yet to
-     * be processed.
-     *
-     * @var bool
-     */
-    public $reconciling;
-    /**
-     * Output only. [Output Only] Server-defined URL for the resource.
-     *
-     * @var string
-     */
-    public $selfLink;
-    protected $topologyType = WireGroupTopology::class;
-    protected $topologyDataType = '';
-    protected $wirePropertiesType = WireProperties::class;
-    protected $wirePropertiesDataType = '';
-    protected $wiresType = Wire::class;
-    protected $wiresDataType = 'array';
-    /**
-     * Indicates whether the wires in the wire group are enabled. When false, the
-     * wires in the wire group are disabled. When true and when there is
-     * simultaneously no wire-specific override of `adminEnabled` to false, a
-     * given wire is enabled. Defaults to true.
-     *
-     * @param bool $adminEnabled
-     */
-    public function setAdminEnabled($adminEnabled)
+namespace Google\Service\Compute {
+    class WireGroup extends \Google\Collection
     {
+        protected $collection_key = 'wires';
+        /**
+         * Indicates whether the wires in the wire group are enabled. When false, the
+         * wires in the wire group are disabled. When true and when there is
+         * simultaneously no wire-specific override of `adminEnabled` to false, a
+         * given wire is enabled. Defaults to true.
+         *
+         * @var bool
+         */
+        public $adminEnabled;
+        /**
+         * Output only. [Output Only] Creation timestamp inRFC3339 text format.
+         *
+         * @var string
+         */
+        public $creationTimestamp;
+        /**
+         * An optional description of the wire group.
+         *
+         * @var string
+         */
+        public $description;
+        protected $endpointsType = WireGroupEndpoint::class;
+        protected $endpointsDataType = 'map';
+        /**
+         * Output only. [Output Only] The unique identifier for the resource type. The
+         * server generates this identifier.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Output only. [Output Only] Type of the resource. Alwayscompute#wireGroups
+         * for wire groups.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Name of the resource. Provided by the client when the resource is created.
+         * The name must be 1-63 characters long, and comply withRFC1035.
+         * Specifically, the name must be 1-63 characters long and match the regular
+         * expression `[a-z]([-a-z0-9]*[a-z0-9])?` which means the first character
+         * must be a lowercase letter, and all following characters must be a dash,
+         * lowercase letter, or digit, except the last character, which cannot be a
+         * dash.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. [Output Only] Indicates whether there are wire changes yet to
+         * be processed.
+         *
+         * @var bool
+         */
+        public $reconciling;
+        /**
+         * Output only. [Output Only] Server-defined URL for the resource.
+         *
+         * @var string
+         */
+        public $selfLink;
+        protected $topologyType = WireGroupTopology::class;
+        protected $topologyDataType = '';
+        protected $wirePropertiesType = WireProperties::class;
+        protected $wirePropertiesDataType = '';
+        protected $wiresType = Wire::class;
+        protected $wiresDataType = 'array';
+        /**
+         * Indicates whether the wires in the wire group are enabled. When false, the
+         * wires in the wire group are disabled. When true and when there is
+         * simultaneously no wire-specific override of `adminEnabled` to false, a
+         * given wire is enabled. Defaults to true.
+         *
+         * @param bool $adminEnabled
+         */
+        public function setAdminEnabled($adminEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAdminEnabled()
+        {
+        }
+        /**
+         * Output only. [Output Only] Creation timestamp inRFC3339 text format.
+         *
+         * @param string $creationTimestamp
+         */
+        public function setCreationTimestamp($creationTimestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreationTimestamp()
+        {
+        }
+        /**
+         * An optional description of the wire group.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * A map that contains the logical endpoints of the wire group. Specify key-
+         * value pairs for the map as follows:        - Key: an RFC1035 user-specified
+         * label.    - Value: an Endpoint object.
+         *
+         * @param WireGroupEndpoint[] $endpoints
+         */
+        public function setEndpoints($endpoints)
+        {
+        }
+        /**
+         * @return WireGroupEndpoint[]
+         */
+        public function getEndpoints()
+        {
+        }
+        /**
+         * Output only. [Output Only] The unique identifier for the resource type. The
+         * server generates this identifier.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Output only. [Output Only] Type of the resource. Alwayscompute#wireGroups
+         * for wire groups.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Name of the resource. Provided by the client when the resource is created.
+         * The name must be 1-63 characters long, and comply withRFC1035.
+         * Specifically, the name must be 1-63 characters long and match the regular
+         * expression `[a-z]([-a-z0-9]*[a-z0-9])?` which means the first character
+         * must be a lowercase letter, and all following characters must be a dash,
+         * lowercase letter, or digit, except the last character, which cannot be a
+         * dash.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. [Output Only] Indicates whether there are wire changes yet to
+         * be processed.
+         *
+         * @param bool $reconciling
+         */
+        public function setReconciling($reconciling)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getReconciling()
+        {
+        }
+        /**
+         * Output only. [Output Only] Server-defined URL for the resource.
+         *
+         * @param string $selfLink
+         */
+        public function setSelfLink($selfLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelfLink()
+        {
+        }
+        /**
+         * Output only. Topology details for the wire group configuration.
+         *
+         * @param WireGroupTopology $topology
+         */
+        public function setTopology(WireGroupTopology $topology)
+        {
+        }
+        /**
+         * @return WireGroupTopology
+         */
+        public function getTopology()
+        {
+        }
+        /**
+         * Properties for all wires in the wire group.
+         *
+         * @param WireProperties $wireProperties
+         */
+        public function setWireProperties(WireProperties $wireProperties)
+        {
+        }
+        /**
+         * @return WireProperties
+         */
+        public function getWireProperties()
+        {
+        }
+        /**
+         * Output only. The single/redundant wire(s) managed by the wire group.
+         *
+         * @param Wire[] $wires
+         */
+        public function setWires($wires)
+        {
+        }
+        /**
+         * @return Wire[]
+         */
+        public function getWires()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Compute\WireGroup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdminEnabled()
-    {
-    }
-    /**
-     * Output only. [Output Only] Creation timestamp inRFC3339 text format.
-     *
-     * @param string $creationTimestamp
-     */
-    public function setCreationTimestamp($creationTimestamp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreationTimestamp()
-    {
-    }
-    /**
-     * An optional description of the wire group.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * A map that contains the logical endpoints of the wire group. Specify key-
-     * value pairs for the map as follows:        - Key: an RFC1035 user-specified
-     * label.    - Value: an Endpoint object.
-     *
-     * @param WireGroupEndpoint[] $endpoints
-     */
-    public function setEndpoints($endpoints)
-    {
-    }
-    /**
-     * @return WireGroupEndpoint[]
-     */
-    public function getEndpoints()
-    {
-    }
-    /**
-     * Output only. [Output Only] The unique identifier for the resource type. The
-     * server generates this identifier.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Output only. [Output Only] Type of the resource. Alwayscompute#wireGroups
-     * for wire groups.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Name of the resource. Provided by the client when the resource is created.
-     * The name must be 1-63 characters long, and comply withRFC1035.
-     * Specifically, the name must be 1-63 characters long and match the regular
-     * expression `[a-z]([-a-z0-9]*[a-z0-9])?` which means the first character
-     * must be a lowercase letter, and all following characters must be a dash,
-     * lowercase letter, or digit, except the last character, which cannot be a
-     * dash.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. [Output Only] Indicates whether there are wire changes yet to
-     * be processed.
-     *
-     * @param bool $reconciling
-     */
-    public function setReconciling($reconciling)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getReconciling()
-    {
-    }
-    /**
-     * Output only. [Output Only] Server-defined URL for the resource.
-     *
-     * @param string $selfLink
-     */
-    public function setSelfLink($selfLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelfLink()
-    {
-    }
-    /**
-     * Output only. Topology details for the wire group configuration.
-     *
-     * @param WireGroupTopology $topology
-     */
-    public function setTopology(WireGroupTopology $topology)
-    {
-    }
-    /**
-     * @return WireGroupTopology
-     */
-    public function getTopology()
-    {
-    }
-    /**
-     * Properties for all wires in the wire group.
-     *
-     * @param WireProperties $wireProperties
-     */
-    public function setWireProperties(WireProperties $wireProperties)
-    {
-    }
-    /**
-     * @return WireProperties
-     */
-    public function getWireProperties()
-    {
-    }
-    /**
-     * Output only. The single/redundant wire(s) managed by the wire group.
-     *
-     * @param Wire[] $wires
-     */
-    public function setWires($wires)
-    {
-    }
-    /**
-     * @return Wire[]
-     */
-    public function getWires()
+    class Google_Service_Compute_WireGroup extends \Google\Service\Compute\WireGroup
     {
     }
 }

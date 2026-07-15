@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class UDTEntity extends \Google\Model
-{
-    /**
-     * Custom engine specific features.
-     *
-     * @var array[]
-     */
-    public $customFeatures;
-    /**
-     * The SQL code which creates the udt body.
-     *
-     * @var string
-     */
-    public $udtBody;
-    /**
-     * The SQL code which creates the udt.
-     *
-     * @var string
-     */
-    public $udtSqlCode;
-    /**
-     * Custom engine specific features.
-     *
-     * @param array[] $customFeatures
-     */
-    public function setCustomFeatures($customFeatures)
+namespace Google\Service\DatabaseMigrationService {
+    class UDTEntity extends \Google\Model
     {
+        /**
+         * Custom engine specific features.
+         *
+         * @var array[]
+         */
+        public $customFeatures;
+        /**
+         * The SQL code which creates the udt body.
+         *
+         * @var string
+         */
+        public $udtBody;
+        /**
+         * The SQL code which creates the udt.
+         *
+         * @var string
+         */
+        public $udtSqlCode;
+        /**
+         * Custom engine specific features.
+         *
+         * @param array[] $customFeatures
+         */
+        public function setCustomFeatures($customFeatures)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getCustomFeatures()
+        {
+        }
+        /**
+         * The SQL code which creates the udt body.
+         *
+         * @param string $udtBody
+         */
+        public function setUdtBody($udtBody)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUdtBody()
+        {
+        }
+        /**
+         * The SQL code which creates the udt.
+         *
+         * @param string $udtSqlCode
+         */
+        public function setUdtSqlCode($udtSqlCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUdtSqlCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\UDTEntity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomFeatures()
-    {
-    }
-    /**
-     * The SQL code which creates the udt body.
-     *
-     * @param string $udtBody
-     */
-    public function setUdtBody($udtBody)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUdtBody()
-    {
-    }
-    /**
-     * The SQL code which creates the udt.
-     *
-     * @param string $udtSqlCode
-     */
-    public function setUdtSqlCode($udtSqlCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUdtSqlCode()
+    class Google_Service_DatabaseMigrationService_UDTEntity extends \Google\Service\DatabaseMigrationService\UDTEntity
     {
     }
 }

@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiUiv1beta3DeleteDataLabelingJobOperationMetadata extends \Google\Model
-{
-    protected $commonMetadataType = GoogleCloudDocumentaiUiv1beta3CommonOperationMetadata::class;
-    protected $commonMetadataDataType = '';
-    public $commonMetadata;
-    /**
-     * @param GoogleCloudDocumentaiUiv1beta3CommonOperationMetadata
-     */
-    public function setCommonMetadata(GoogleCloudDocumentaiUiv1beta3CommonOperationMetadata $commonMetadata)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiUiv1beta3DeleteDataLabelingJobOperationMetadata extends \Google\Model
     {
+        protected $commonMetadataType = GoogleCloudDocumentaiUiv1beta3CommonOperationMetadata::class;
+        protected $commonMetadataDataType = '';
+        public $commonMetadata;
+        /**
+         * @param GoogleCloudDocumentaiUiv1beta3CommonOperationMetadata
+         */
+        public function setCommonMetadata(GoogleCloudDocumentaiUiv1beta3CommonOperationMetadata $commonMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiUiv1beta3CommonOperationMetadata
+         */
+        public function getCommonMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiUiv1beta3CommonOperationMetadata
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiUiv1beta3DeleteDataLabelingJobOperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCommonMetadata()
+    class Google_Service_Document_GoogleCloudDocumentaiUiv1beta3DeleteDataLabelingJobOperationMetadata extends \Google\Service\Document\GoogleCloudDocumentaiUiv1beta3DeleteDataLabelingJobOperationMetadata
     {
     }
 }

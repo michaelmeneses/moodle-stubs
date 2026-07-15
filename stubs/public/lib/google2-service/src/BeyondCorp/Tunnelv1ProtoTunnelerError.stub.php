@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BeyondCorp;
-
-class Tunnelv1ProtoTunnelerError extends \Google\Model
-{
-    /**
-     * Original raw error
-     *
-     * @var string
-     */
-    public $err;
-    /**
-     * retryable isn't used for now, but we may want to reuse it in the future.
-     *
-     * @var bool
-     */
-    public $retryable;
-    /**
-     * Original raw error
-     *
-     * @param string $err
-     */
-    public function setErr($err)
+namespace Google\Service\BeyondCorp {
+    class Tunnelv1ProtoTunnelerError extends \Google\Model
     {
+        /**
+         * Original raw error
+         *
+         * @var string
+         */
+        public $err;
+        /**
+         * retryable isn't used for now, but we may want to reuse it in the future.
+         *
+         * @var bool
+         */
+        public $retryable;
+        /**
+         * Original raw error
+         *
+         * @param string $err
+         */
+        public function setErr($err)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getErr()
+        {
+        }
+        /**
+         * retryable isn't used for now, but we may want to reuse it in the future.
+         *
+         * @param bool $retryable
+         */
+        public function setRetryable($retryable)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getRetryable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BeyondCorp\Tunnelv1ProtoTunnelerError registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErr()
-    {
-    }
-    /**
-     * retryable isn't used for now, but we may want to reuse it in the future.
-     *
-     * @param bool $retryable
-     */
-    public function setRetryable($retryable)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getRetryable()
+    class Google_Service_BeyondCorp_Tunnelv1ProtoTunnelerError extends \Google\Service\BeyondCorp\Tunnelv1ProtoTunnelerError
     {
     }
 }

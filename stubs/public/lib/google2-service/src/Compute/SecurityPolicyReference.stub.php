@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class SecurityPolicyReference extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $securityPolicy;
-    /**
-     * @param string $securityPolicy
-     */
-    public function setSecurityPolicy($securityPolicy)
+namespace Google\Service\Compute {
+    class SecurityPolicyReference extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $securityPolicy;
+        /**
+         * @param string $securityPolicy
+         */
+        public function setSecurityPolicy($securityPolicy)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSecurityPolicy()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\SecurityPolicyReference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSecurityPolicy()
+    class Google_Service_Compute_SecurityPolicyReference extends \Google\Service\Compute\SecurityPolicyReference
     {
     }
 }

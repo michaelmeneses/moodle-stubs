@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class BigQueryIODetails extends \Google\Model
-{
-    /**
-     * Dataset accessed in the connection.
-     *
-     * @var string
-     */
-    public $dataset;
-    /**
-     * Project accessed in the connection.
-     *
-     * @var string
-     */
-    public $projectId;
-    /**
-     * Query used to access data in the connection.
-     *
-     * @var string
-     */
-    public $query;
-    /**
-     * Table accessed in the connection.
-     *
-     * @var string
-     */
-    public $table;
-    /**
-     * Dataset accessed in the connection.
-     *
-     * @param string $dataset
-     */
-    public function setDataset($dataset)
+namespace Google\Service\Dataflow {
+    class BigQueryIODetails extends \Google\Model
     {
+        /**
+         * Dataset accessed in the connection.
+         *
+         * @var string
+         */
+        public $dataset;
+        /**
+         * Project accessed in the connection.
+         *
+         * @var string
+         */
+        public $projectId;
+        /**
+         * Query used to access data in the connection.
+         *
+         * @var string
+         */
+        public $query;
+        /**
+         * Table accessed in the connection.
+         *
+         * @var string
+         */
+        public $table;
+        /**
+         * Dataset accessed in the connection.
+         *
+         * @param string $dataset
+         */
+        public function setDataset($dataset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataset()
+        {
+        }
+        /**
+         * Project accessed in the connection.
+         *
+         * @param string $projectId
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
+        /**
+         * Query used to access data in the connection.
+         *
+         * @param string $query
+         */
+        public function setQuery($query)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQuery()
+        {
+        }
+        /**
+         * Table accessed in the connection.
+         *
+         * @param string $table
+         */
+        public function setTable($table)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataflow\BigQueryIODetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataset()
-    {
-    }
-    /**
-     * Project accessed in the connection.
-     *
-     * @param string $projectId
-     */
-    public function setProjectId($projectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProjectId()
-    {
-    }
-    /**
-     * Query used to access data in the connection.
-     *
-     * @param string $query
-     */
-    public function setQuery($query)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQuery()
-    {
-    }
-    /**
-     * Table accessed in the connection.
-     *
-     * @param string $table
-     */
-    public function setTable($table)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTable()
+    class Google_Service_Dataflow_BigQueryIODetails extends \Google\Service\Dataflow\BigQueryIODetails
     {
     }
 }

@@ -21,30 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild\Resource;
-
-/**
- * The "connectedRepositories" collection of methods.
- * Typical usage is:
- *  <code>
- *   $cloudbuildService = new Google\Service\CloudBuild(...);
- *   $connectedRepositories = $cloudbuildService->projects_locations_gitLabConfigs_connectedRepositories;
- *  </code>
- */
-class ProjectsLocationsGitLabConfigsConnectedRepositories extends \Google\Service\Resource
-{
+namespace Google\Service\CloudBuild\Resource {
+    use Google\Service\CloudBuild\BatchCreateGitLabConnectedRepositoriesRequest;
+    use Google\Service\CloudBuild\Operation;
     /**
-     * Batch connecting GitLab repositories to Cloud Build. This API is
-     * experimental. (connectedRepositories.batchCreate)
-     *
-     * @param string $parent The name of the `GitLabConfig` that adds connected
-     * repositories. Format:
-     * `projects/{project}/locations/{location}/gitLabConfigs/{config}`
-     * @param BatchCreateGitLabConnectedRepositoriesRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Operation
+     * The "connectedRepositories" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $cloudbuildService = new Google\Service\CloudBuild(...);
+     *   $connectedRepositories = $cloudbuildService->projects_locations_gitLabConfigs_connectedRepositories;
+     *  </code>
      */
-    public function batchCreate($parent, BatchCreateGitLabConnectedRepositoriesRequest $postBody, $optParams = [])
+    class ProjectsLocationsGitLabConfigsConnectedRepositories extends \Google\Service\Resource
+    {
+        /**
+         * Batch connecting GitLab repositories to Cloud Build. This API is
+         * experimental. (connectedRepositories.batchCreate)
+         *
+         * @param string $parent The name of the `GitLabConfig` that adds connected
+         * repositories. Format:
+         * `projects/{project}/locations/{location}/gitLabConfigs/{config}`
+         * @param BatchCreateGitLabConnectedRepositoriesRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         */
+        public function batchCreate($parent, BatchCreateGitLabConnectedRepositoriesRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudBuild\Resource\ProjectsLocationsGitLabConfigsConnectedRepositories registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudBuild_Resource_ProjectsLocationsGitLabConfigsConnectedRepositories extends \Google\Service\CloudBuild\Resource\ProjectsLocationsGitLabConfigsConnectedRepositories
     {
     }
 }

@@ -21,96 +21,108 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataform\Resource;
-
-/**
- * The "workflowConfigs" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dataformService = new Google\Service\Dataform(...);
- *   $workflowConfigs = $dataformService->projects_locations_repositories_workflowConfigs;
- *  </code>
- */
-class ProjectsLocationsRepositoriesWorkflowConfigs extends \Google\Service\Resource
-{
+namespace Google\Service\Dataform\Resource {
+    use Google\Service\Dataform\DataformEmpty;
+    use Google\Service\Dataform\ListWorkflowConfigsResponse;
+    use Google\Service\Dataform\WorkflowConfig;
     /**
-     * Creates a new WorkflowConfig in a given Repository. (workflowConfigs.create)
-     *
-     * @param string $parent Required. The repository in which to create the
-     * workflow config. Must be in the format `projects/locations/repositories`.
-     * @param WorkflowConfig $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string workflowConfigId Required. The ID to use for the workflow
-     * config, which will become the final component of the workflow config's
-     * resource name.
-     * @return WorkflowConfig
-     * @throws \Google\Service\Exception
+     * The "workflowConfigs" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dataformService = new Google\Service\Dataform(...);
+     *   $workflowConfigs = $dataformService->projects_locations_repositories_workflowConfigs;
+     *  </code>
      */
-    public function create($parent, WorkflowConfig $postBody, $optParams = [])
+    class ProjectsLocationsRepositoriesWorkflowConfigs extends \Google\Service\Resource
     {
+        /**
+         * Creates a new WorkflowConfig in a given Repository. (workflowConfigs.create)
+         *
+         * @param string $parent Required. The repository in which to create the
+         * workflow config. Must be in the format `projects/locations/repositories`.
+         * @param WorkflowConfig $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string workflowConfigId Required. The ID to use for the workflow
+         * config, which will become the final component of the workflow config's
+         * resource name.
+         * @return WorkflowConfig
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, WorkflowConfig $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a single WorkflowConfig. (workflowConfigs.delete)
+         *
+         * @param string $name Required. The workflow config's name.
+         * @param array $optParams Optional parameters.
+         * @return DataformEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Fetches a single WorkflowConfig. (workflowConfigs.get)
+         *
+         * @param string $name Required. The workflow config's name.
+         * @param array $optParams Optional parameters.
+         * @return WorkflowConfig
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists WorkflowConfigs in a given Repository.
+         * (workflowConfigs.listProjectsLocationsRepositoriesWorkflowConfigs)
+         *
+         * @param string $parent Required. The repository in which to list workflow
+         * configs. Must be in the format `projects/locations/repositories`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Optional. Maximum number of workflow configs to
+         * return. The server may return fewer items than requested. If unspecified, the
+         * server will pick an appropriate default.
+         * @opt_param string pageToken Optional. Page token received from a previous
+         * `ListWorkflowConfigs` call. Provide this to retrieve the subsequent page.
+         * When paginating, all other parameters provided to `ListWorkflowConfigs`, with
+         * the exception of `page_size`, must match the call that provided the page
+         * token.
+         * @return ListWorkflowConfigsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsRepositoriesWorkflowConfigs($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates a single WorkflowConfig. **Note:** *This method does not fully
+         * implement [AIP/134](https://google.aip.dev/134). The wildcard entry () is
+         * treated as a bad request, and when the `field_mask` is omitted, the request
+         * is treated as a full update on all modifiable fields.*
+         * (workflowConfigs.patch)
+         *
+         * @param string $name Identifier. The workflow config's name.
+         * @param WorkflowConfig $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Optional. Specifies the fields to be updated in
+         * the workflow config. If left unset, all fields will be updated.
+         * @return WorkflowConfig
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, WorkflowConfig $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a single WorkflowConfig. (workflowConfigs.delete)
-     *
-     * @param string $name Required. The workflow config's name.
-     * @param array $optParams Optional parameters.
-     * @return DataformEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Dataform\Resource\ProjectsLocationsRepositoriesWorkflowConfigs registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Fetches a single WorkflowConfig. (workflowConfigs.get)
-     *
-     * @param string $name Required. The workflow config's name.
-     * @param array $optParams Optional parameters.
-     * @return WorkflowConfig
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists WorkflowConfigs in a given Repository.
-     * (workflowConfigs.listProjectsLocationsRepositoriesWorkflowConfigs)
-     *
-     * @param string $parent Required. The repository in which to list workflow
-     * configs. Must be in the format `projects/locations/repositories`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Optional. Maximum number of workflow configs to
-     * return. The server may return fewer items than requested. If unspecified, the
-     * server will pick an appropriate default.
-     * @opt_param string pageToken Optional. Page token received from a previous
-     * `ListWorkflowConfigs` call. Provide this to retrieve the subsequent page.
-     * When paginating, all other parameters provided to `ListWorkflowConfigs`, with
-     * the exception of `page_size`, must match the call that provided the page
-     * token.
-     * @return ListWorkflowConfigsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsRepositoriesWorkflowConfigs($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates a single WorkflowConfig. **Note:** *This method does not fully
-     * implement [AIP/134](https://google.aip.dev/134). The wildcard entry () is
-     * treated as a bad request, and when the `field_mask` is omitted, the request
-     * is treated as a full update on all modifiable fields.*
-     * (workflowConfigs.patch)
-     *
-     * @param string $name Identifier. The workflow config's name.
-     * @param WorkflowConfig $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Optional. Specifies the fields to be updated in
-     * the workflow config. If left unset, all fields will be updated.
-     * @return WorkflowConfig
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, WorkflowConfig $postBody, $optParams = [])
+    class Google_Service_Dataform_Resource_ProjectsLocationsRepositoriesWorkflowConfigs extends \Google\Service\Dataform\Resource\ProjectsLocationsRepositoriesWorkflowConfigs
     {
     }
 }

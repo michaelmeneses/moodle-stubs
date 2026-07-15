@@ -16,6 +16,8 @@
  */
 namespace Monolog\Processor;
 
+use ArrayAccess;
+use Monolog\LogRecord;
 /**
  * Injects url/method and remote IP of the current web request in all records
  *

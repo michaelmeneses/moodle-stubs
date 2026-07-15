@@ -21,80 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class ShippingSettings extends \Google\Collection
-{
-    protected $collection_key = 'warehouses';
-    /**
-     * The ID of the account to which these account shipping settings belong.
-     * Ignored upon update, always present in get request responses.
-     *
-     * @var string
-     */
-    public $accountId;
-    protected $postalCodeGroupsType = PostalCodeGroup::class;
-    protected $postalCodeGroupsDataType = 'array';
-    protected $servicesType = Service::class;
-    protected $servicesDataType = 'array';
-    protected $warehousesType = Warehouse::class;
-    protected $warehousesDataType = 'array';
-    /**
-     * The ID of the account to which these account shipping settings belong.
-     * Ignored upon update, always present in get request responses.
-     *
-     * @param string $accountId
-     */
-    public function setAccountId($accountId)
+namespace Google\Service\ShoppingContent {
+    class ShippingSettings extends \Google\Collection
     {
+        protected $collection_key = 'warehouses';
+        /**
+         * The ID of the account to which these account shipping settings belong.
+         * Ignored upon update, always present in get request responses.
+         *
+         * @var string
+         */
+        public $accountId;
+        protected $postalCodeGroupsType = PostalCodeGroup::class;
+        protected $postalCodeGroupsDataType = 'array';
+        protected $servicesType = Service::class;
+        protected $servicesDataType = 'array';
+        protected $warehousesType = Warehouse::class;
+        protected $warehousesDataType = 'array';
+        /**
+         * The ID of the account to which these account shipping settings belong.
+         * Ignored upon update, always present in get request responses.
+         *
+         * @param string $accountId
+         */
+        public function setAccountId($accountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccountId()
+        {
+        }
+        /**
+         * A list of postal code groups that can be referred to in `services`.
+         * Optional.
+         *
+         * @param PostalCodeGroup[] $postalCodeGroups
+         */
+        public function setPostalCodeGroups($postalCodeGroups)
+        {
+        }
+        /**
+         * @return PostalCodeGroup[]
+         */
+        public function getPostalCodeGroups()
+        {
+        }
+        /**
+         * The target account's list of services. Optional.
+         *
+         * @param Service[] $services
+         */
+        public function setServices($services)
+        {
+        }
+        /**
+         * @return Service[]
+         */
+        public function getServices()
+        {
+        }
+        /**
+         * Optional. A list of warehouses which can be referred to in `services`.
+         *
+         * @param Warehouse[] $warehouses
+         */
+        public function setWarehouses($warehouses)
+        {
+        }
+        /**
+         * @return Warehouse[]
+         */
+        public function getWarehouses()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\ShippingSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountId()
-    {
-    }
-    /**
-     * A list of postal code groups that can be referred to in `services`.
-     * Optional.
-     *
-     * @param PostalCodeGroup[] $postalCodeGroups
-     */
-    public function setPostalCodeGroups($postalCodeGroups)
-    {
-    }
-    /**
-     * @return PostalCodeGroup[]
-     */
-    public function getPostalCodeGroups()
-    {
-    }
-    /**
-     * The target account's list of services. Optional.
-     *
-     * @param Service[] $services
-     */
-    public function setServices($services)
-    {
-    }
-    /**
-     * @return Service[]
-     */
-    public function getServices()
-    {
-    }
-    /**
-     * Optional. A list of warehouses which can be referred to in `services`.
-     *
-     * @param Warehouse[] $warehouses
-     */
-    public function setWarehouses($warehouses)
-    {
-    }
-    /**
-     * @return Warehouse[]
-     */
-    public function getWarehouses()
+    class Google_Service_ShoppingContent_ShippingSettings extends \Google\Service\ShoppingContent\ShippingSettings
     {
     }
 }

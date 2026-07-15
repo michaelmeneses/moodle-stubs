@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceUsage;
-
-class BatchEnableServicesResponse extends \Google\Collection
-{
-    protected $collection_key = 'services';
-    protected $failuresType = EnableFailure::class;
-    protected $failuresDataType = 'array';
-    protected $servicesType = GoogleApiServiceusageV1Service::class;
-    protected $servicesDataType = 'array';
-    /**
-     * If allow_partial_success is true, and one or more services could not be
-     * enabled, this field contains the details about each failure.
-     *
-     * @param EnableFailure[] $failures
-     */
-    public function setFailures($failures)
+namespace Google\Service\ServiceUsage {
+    class BatchEnableServicesResponse extends \Google\Collection
     {
+        protected $collection_key = 'services';
+        protected $failuresType = EnableFailure::class;
+        protected $failuresDataType = 'array';
+        protected $servicesType = GoogleApiServiceusageV1Service::class;
+        protected $servicesDataType = 'array';
+        /**
+         * If allow_partial_success is true, and one or more services could not be
+         * enabled, this field contains the details about each failure.
+         *
+         * @param EnableFailure[] $failures
+         */
+        public function setFailures($failures)
+        {
+        }
+        /**
+         * @return EnableFailure[]
+         */
+        public function getFailures()
+        {
+        }
+        /**
+         * The new state of the services after enabling.
+         *
+         * @param GoogleApiServiceusageV1Service[] $services
+         */
+        public function setServices($services)
+        {
+        }
+        /**
+         * @return GoogleApiServiceusageV1Service[]
+         */
+        public function getServices()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EnableFailure[]
+     * Runtime class alias of \Google\Service\ServiceUsage\BatchEnableServicesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFailures()
-    {
-    }
-    /**
-     * The new state of the services after enabling.
-     *
-     * @param GoogleApiServiceusageV1Service[] $services
-     */
-    public function setServices($services)
-    {
-    }
-    /**
-     * @return GoogleApiServiceusageV1Service[]
-     */
-    public function getServices()
+    class Google_Service_ServiceUsage_BatchEnableServicesResponse extends \Google\Service\ServiceUsage\BatchEnableServicesResponse
     {
     }
 }

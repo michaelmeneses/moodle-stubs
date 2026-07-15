@@ -21,118 +21,127 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class Person extends \Google\Collection
-{
-    protected $collection_key = 'photos';
-    protected $emailAddressesType = EmailAddress::class;
-    protected $emailAddressesDataType = 'array';
-    /**
-     * The resource name of the person to provide information about. See
-     * [`People.get`](https://developers.google.com/people/api/rest/v1/people/get)
-     * from the Google People API.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Obfuscated ID of a person.
-     *
-     * @var string
-     */
-    public $obfuscatedId;
-    protected $personNamesType = Name::class;
-    protected $personNamesDataType = 'array';
-    protected $phoneNumbersType = PhoneNumber::class;
-    protected $phoneNumbersDataType = 'array';
-    protected $photosType = Photo::class;
-    protected $photosDataType = 'array';
-    /**
-     * The person's email addresses
-     *
-     * @param EmailAddress[] $emailAddresses
-     */
-    public function setEmailAddresses($emailAddresses)
+namespace Google\Service\CloudSearch {
+    class Person extends \Google\Collection
     {
+        protected $collection_key = 'photos';
+        protected $emailAddressesType = EmailAddress::class;
+        protected $emailAddressesDataType = 'array';
+        /**
+         * The resource name of the person to provide information about. See
+         * [`People.get`](https://developers.google.com/people/api/rest/v1/people/get)
+         * from the Google People API.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Obfuscated ID of a person.
+         *
+         * @var string
+         */
+        public $obfuscatedId;
+        protected $personNamesType = Name::class;
+        protected $personNamesDataType = 'array';
+        protected $phoneNumbersType = PhoneNumber::class;
+        protected $phoneNumbersDataType = 'array';
+        protected $photosType = Photo::class;
+        protected $photosDataType = 'array';
+        /**
+         * The person's email addresses
+         *
+         * @param EmailAddress[] $emailAddresses
+         */
+        public function setEmailAddresses($emailAddresses)
+        {
+        }
+        /**
+         * @return EmailAddress[]
+         */
+        public function getEmailAddresses()
+        {
+        }
+        /**
+         * The resource name of the person to provide information about. See
+         * [`People.get`](https://developers.google.com/people/api/rest/v1/people/get)
+         * from the Google People API.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Obfuscated ID of a person.
+         *
+         * @param string $obfuscatedId
+         */
+        public function setObfuscatedId($obfuscatedId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObfuscatedId()
+        {
+        }
+        /**
+         * The person's name
+         *
+         * @param Name[] $personNames
+         */
+        public function setPersonNames($personNames)
+        {
+        }
+        /**
+         * @return Name[]
+         */
+        public function getPersonNames()
+        {
+        }
+        /**
+         * The person's phone numbers
+         *
+         * @param PhoneNumber[] $phoneNumbers
+         */
+        public function setPhoneNumbers($phoneNumbers)
+        {
+        }
+        /**
+         * @return PhoneNumber[]
+         */
+        public function getPhoneNumbers()
+        {
+        }
+        /**
+         * A person's read-only photo. A picture shown next to the person's name to
+         * help others recognize the person in search results.
+         *
+         * @param Photo[] $photos
+         */
+        public function setPhotos($photos)
+        {
+        }
+        /**
+         * @return Photo[]
+         */
+        public function getPhotos()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EmailAddress[]
+     * Runtime class alias of \Google\Service\CloudSearch\Person registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmailAddresses()
-    {
-    }
-    /**
-     * The resource name of the person to provide information about. See
-     * [`People.get`](https://developers.google.com/people/api/rest/v1/people/get)
-     * from the Google People API.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Obfuscated ID of a person.
-     *
-     * @param string $obfuscatedId
-     */
-    public function setObfuscatedId($obfuscatedId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObfuscatedId()
-    {
-    }
-    /**
-     * The person's name
-     *
-     * @param Name[] $personNames
-     */
-    public function setPersonNames($personNames)
-    {
-    }
-    /**
-     * @return Name[]
-     */
-    public function getPersonNames()
-    {
-    }
-    /**
-     * The person's phone numbers
-     *
-     * @param PhoneNumber[] $phoneNumbers
-     */
-    public function setPhoneNumbers($phoneNumbers)
-    {
-    }
-    /**
-     * @return PhoneNumber[]
-     */
-    public function getPhoneNumbers()
-    {
-    }
-    /**
-     * A person's read-only photo. A picture shown next to the person's name to
-     * help others recognize the person in search results.
-     *
-     * @param Photo[] $photos
-     */
-    public function setPhotos($photos)
-    {
-    }
-    /**
-     * @return Photo[]
-     */
-    public function getPhotos()
+    class Google_Service_CloudSearch_Person extends \Google\Service\CloudSearch\Person
     {
     }
 }

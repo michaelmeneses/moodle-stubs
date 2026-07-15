@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager;
-
-class CreateBuiltInVariableResponse extends \Google\Collection
-{
-    protected $collection_key = 'builtInVariable';
-    protected $builtInVariableType = BuiltInVariable::class;
-    protected $builtInVariableDataType = 'array';
-    /**
-     * List of created built-in variables.
-     *
-     * @param BuiltInVariable[] $builtInVariable
-     */
-    public function setBuiltInVariable($builtInVariable)
+namespace Google\Service\TagManager {
+    class CreateBuiltInVariableResponse extends \Google\Collection
     {
+        protected $collection_key = 'builtInVariable';
+        protected $builtInVariableType = BuiltInVariable::class;
+        protected $builtInVariableDataType = 'array';
+        /**
+         * List of created built-in variables.
+         *
+         * @param BuiltInVariable[] $builtInVariable
+         */
+        public function setBuiltInVariable($builtInVariable)
+        {
+        }
+        /**
+         * @return BuiltInVariable[]
+         */
+        public function getBuiltInVariable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BuiltInVariable[]
+     * Runtime class alias of \Google\Service\TagManager\CreateBuiltInVariableResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBuiltInVariable()
+    class Google_Service_TagManager_CreateBuiltInVariableResponse extends \Google\Service\TagManager\CreateBuiltInVariableResponse
     {
     }
 }

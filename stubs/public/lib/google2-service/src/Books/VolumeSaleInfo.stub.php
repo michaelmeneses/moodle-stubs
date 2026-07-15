@@ -21,169 +21,178 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class VolumeSaleInfo extends \Google\Collection
-{
-    protected $collection_key = 'offers';
-    /**
-     * URL to purchase this volume on the Google Books site. (In LITE projection)
-     *
-     * @var string
-     */
-    public $buyLink;
-    /**
-     * The two-letter ISO_3166-1 country code for which this sale information is
-     * valid. (In LITE projection.)
-     *
-     * @var string
-     */
-    public $country;
-    /**
-     * Whether or not this volume is an eBook (can be added to the My eBooks
-     * shelf).
-     *
-     * @var bool
-     */
-    public $isEbook;
-    protected $listPriceType = VolumeSaleInfoListPrice::class;
-    protected $listPriceDataType = '';
-    protected $offersType = VolumeSaleInfoOffers::class;
-    protected $offersDataType = 'array';
-    /**
-     * The date on which this book is available for sale.
-     *
-     * @var string
-     */
-    public $onSaleDate;
-    protected $retailPriceType = VolumeSaleInfoRetailPrice::class;
-    protected $retailPriceDataType = '';
-    /**
-     * Whether or not this book is available for sale or offered for free in the
-     * Google eBookstore for the country listed above. Possible values are
-     * FOR_SALE, FOR_RENTAL_ONLY, FOR_SALE_AND_RENTAL, FREE, NOT_FOR_SALE, or
-     * FOR_PREORDER.
-     *
-     * @var string
-     */
-    public $saleability;
-    /**
-     * URL to purchase this volume on the Google Books site. (In LITE projection)
-     *
-     * @param string $buyLink
-     */
-    public function setBuyLink($buyLink)
+namespace Google\Service\Books {
+    class VolumeSaleInfo extends \Google\Collection
     {
+        protected $collection_key = 'offers';
+        /**
+         * URL to purchase this volume on the Google Books site. (In LITE projection)
+         *
+         * @var string
+         */
+        public $buyLink;
+        /**
+         * The two-letter ISO_3166-1 country code for which this sale information is
+         * valid. (In LITE projection.)
+         *
+         * @var string
+         */
+        public $country;
+        /**
+         * Whether or not this volume is an eBook (can be added to the My eBooks
+         * shelf).
+         *
+         * @var bool
+         */
+        public $isEbook;
+        protected $listPriceType = VolumeSaleInfoListPrice::class;
+        protected $listPriceDataType = '';
+        protected $offersType = VolumeSaleInfoOffers::class;
+        protected $offersDataType = 'array';
+        /**
+         * The date on which this book is available for sale.
+         *
+         * @var string
+         */
+        public $onSaleDate;
+        protected $retailPriceType = VolumeSaleInfoRetailPrice::class;
+        protected $retailPriceDataType = '';
+        /**
+         * Whether or not this book is available for sale or offered for free in the
+         * Google eBookstore for the country listed above. Possible values are
+         * FOR_SALE, FOR_RENTAL_ONLY, FOR_SALE_AND_RENTAL, FREE, NOT_FOR_SALE, or
+         * FOR_PREORDER.
+         *
+         * @var string
+         */
+        public $saleability;
+        /**
+         * URL to purchase this volume on the Google Books site. (In LITE projection)
+         *
+         * @param string $buyLink
+         */
+        public function setBuyLink($buyLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBuyLink()
+        {
+        }
+        /**
+         * The two-letter ISO_3166-1 country code for which this sale information is
+         * valid. (In LITE projection.)
+         *
+         * @param string $country
+         */
+        public function setCountry($country)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCountry()
+        {
+        }
+        /**
+         * Whether or not this volume is an eBook (can be added to the My eBooks
+         * shelf).
+         *
+         * @param bool $isEbook
+         */
+        public function setIsEbook($isEbook)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsEbook()
+        {
+        }
+        /**
+         * Suggested retail price. (In LITE projection.)
+         *
+         * @param VolumeSaleInfoListPrice $listPrice
+         */
+        public function setListPrice(VolumeSaleInfoListPrice $listPrice)
+        {
+        }
+        /**
+         * @return VolumeSaleInfoListPrice
+         */
+        public function getListPrice()
+        {
+        }
+        /**
+         * Offers available for this volume (sales and rentals).
+         *
+         * @param VolumeSaleInfoOffers[] $offers
+         */
+        public function setOffers($offers)
+        {
+        }
+        /**
+         * @return VolumeSaleInfoOffers[]
+         */
+        public function getOffers()
+        {
+        }
+        /**
+         * The date on which this book is available for sale.
+         *
+         * @param string $onSaleDate
+         */
+        public function setOnSaleDate($onSaleDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOnSaleDate()
+        {
+        }
+        /**
+         * The actual selling price of the book. This is the same as the suggested
+         * retail or list price unless there are offers or discounts on this volume.
+         * (In LITE projection.)
+         *
+         * @param VolumeSaleInfoRetailPrice $retailPrice
+         */
+        public function setRetailPrice(VolumeSaleInfoRetailPrice $retailPrice)
+        {
+        }
+        /**
+         * @return VolumeSaleInfoRetailPrice
+         */
+        public function getRetailPrice()
+        {
+        }
+        /**
+         * Whether or not this book is available for sale or offered for free in the
+         * Google eBookstore for the country listed above. Possible values are
+         * FOR_SALE, FOR_RENTAL_ONLY, FOR_SALE_AND_RENTAL, FREE, NOT_FOR_SALE, or
+         * FOR_PREORDER.
+         *
+         * @param string $saleability
+         */
+        public function setSaleability($saleability)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSaleability()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Books\VolumeSaleInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBuyLink()
-    {
-    }
-    /**
-     * The two-letter ISO_3166-1 country code for which this sale information is
-     * valid. (In LITE projection.)
-     *
-     * @param string $country
-     */
-    public function setCountry($country)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCountry()
-    {
-    }
-    /**
-     * Whether or not this volume is an eBook (can be added to the My eBooks
-     * shelf).
-     *
-     * @param bool $isEbook
-     */
-    public function setIsEbook($isEbook)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsEbook()
-    {
-    }
-    /**
-     * Suggested retail price. (In LITE projection.)
-     *
-     * @param VolumeSaleInfoListPrice $listPrice
-     */
-    public function setListPrice(VolumeSaleInfoListPrice $listPrice)
-    {
-    }
-    /**
-     * @return VolumeSaleInfoListPrice
-     */
-    public function getListPrice()
-    {
-    }
-    /**
-     * Offers available for this volume (sales and rentals).
-     *
-     * @param VolumeSaleInfoOffers[] $offers
-     */
-    public function setOffers($offers)
-    {
-    }
-    /**
-     * @return VolumeSaleInfoOffers[]
-     */
-    public function getOffers()
-    {
-    }
-    /**
-     * The date on which this book is available for sale.
-     *
-     * @param string $onSaleDate
-     */
-    public function setOnSaleDate($onSaleDate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOnSaleDate()
-    {
-    }
-    /**
-     * The actual selling price of the book. This is the same as the suggested
-     * retail or list price unless there are offers or discounts on this volume.
-     * (In LITE projection.)
-     *
-     * @param VolumeSaleInfoRetailPrice $retailPrice
-     */
-    public function setRetailPrice(VolumeSaleInfoRetailPrice $retailPrice)
-    {
-    }
-    /**
-     * @return VolumeSaleInfoRetailPrice
-     */
-    public function getRetailPrice()
-    {
-    }
-    /**
-     * Whether or not this book is available for sale or offered for free in the
-     * Google eBookstore for the country listed above. Possible values are
-     * FOR_SALE, FOR_RENTAL_ONLY, FOR_SALE_AND_RENTAL, FREE, NOT_FOR_SALE, or
-     * FOR_PREORDER.
-     *
-     * @param string $saleability
-     */
-    public function setSaleability($saleability)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSaleability()
+    class Google_Service_Books_VolumeSaleInfo extends \Google\Service\Books\VolumeSaleInfo
     {
     }
 }

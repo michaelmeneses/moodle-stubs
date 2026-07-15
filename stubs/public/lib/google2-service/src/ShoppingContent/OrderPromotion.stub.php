@@ -21,193 +21,202 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class OrderPromotion extends \Google\Collection
-{
-    protected $collection_key = 'appliedItems';
-    protected $applicableItemsType = OrderPromotionItem::class;
-    protected $applicableItemsDataType = 'array';
-    protected $appliedItemsType = OrderPromotionItem::class;
-    protected $appliedItemsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $endTime;
-    /**
-     * @var string
-     */
-    public $funder;
-    /**
-     * @var string
-     */
-    public $merchantPromotionId;
-    protected $priceValueType = Price::class;
-    protected $priceValueDataType = '';
-    /**
-     * @var string
-     */
-    public $shortTitle;
-    /**
-     * @var string
-     */
-    public $startTime;
-    /**
-     * @var string
-     */
-    public $subtype;
-    protected $taxValueType = Price::class;
-    protected $taxValueDataType = '';
-    /**
-     * @var string
-     */
-    public $title;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @param OrderPromotionItem[]
-     */
-    public function setApplicableItems($applicableItems)
+namespace Google\Service\ShoppingContent {
+    class OrderPromotion extends \Google\Collection
     {
+        protected $collection_key = 'appliedItems';
+        protected $applicableItemsType = OrderPromotionItem::class;
+        protected $applicableItemsDataType = 'array';
+        protected $appliedItemsType = OrderPromotionItem::class;
+        protected $appliedItemsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $endTime;
+        /**
+         * @var string
+         */
+        public $funder;
+        /**
+         * @var string
+         */
+        public $merchantPromotionId;
+        protected $priceValueType = Price::class;
+        protected $priceValueDataType = '';
+        /**
+         * @var string
+         */
+        public $shortTitle;
+        /**
+         * @var string
+         */
+        public $startTime;
+        /**
+         * @var string
+         */
+        public $subtype;
+        protected $taxValueType = Price::class;
+        protected $taxValueDataType = '';
+        /**
+         * @var string
+         */
+        public $title;
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @param OrderPromotionItem[]
+         */
+        public function setApplicableItems($applicableItems)
+        {
+        }
+        /**
+         * @return OrderPromotionItem[]
+         */
+        public function getApplicableItems()
+        {
+        }
+        /**
+         * @param OrderPromotionItem[]
+         */
+        public function setAppliedItems($appliedItems)
+        {
+        }
+        /**
+         * @return OrderPromotionItem[]
+         */
+        public function getAppliedItems()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setFunder($funder)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFunder()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMerchantPromotionId($merchantPromotionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMerchantPromotionId()
+        {
+        }
+        /**
+         * @param Price
+         */
+        public function setPriceValue(Price $priceValue)
+        {
+        }
+        /**
+         * @return Price
+         */
+        public function getPriceValue()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setShortTitle($shortTitle)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getShortTitle()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSubtype($subtype)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubtype()
+        {
+        }
+        /**
+         * @param Price
+         */
+        public function setTaxValue(Price $taxValue)
+        {
+        }
+        /**
+         * @return Price
+         */
+        public function getTaxValue()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return OrderPromotionItem[]
+     * Runtime class alias of \Google\Service\ShoppingContent\OrderPromotion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApplicableItems()
-    {
-    }
-    /**
-     * @param OrderPromotionItem[]
-     */
-    public function setAppliedItems($appliedItems)
-    {
-    }
-    /**
-     * @return OrderPromotionItem[]
-     */
-    public function getAppliedItems()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEndTime($endTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setFunder($funder)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFunder()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMerchantPromotionId($merchantPromotionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMerchantPromotionId()
-    {
-    }
-    /**
-     * @param Price
-     */
-    public function setPriceValue(Price $priceValue)
-    {
-    }
-    /**
-     * @return Price
-     */
-    public function getPriceValue()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setShortTitle($shortTitle)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getShortTitle()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSubtype($subtype)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubtype()
-    {
-    }
-    /**
-     * @param Price
-     */
-    public function setTaxValue(Price $taxValue)
-    {
-    }
-    /**
-     * @return Price
-     */
-    public function getTaxValue()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_ShoppingContent_OrderPromotion extends \Google\Service\ShoppingContent\OrderPromotion
     {
     }
 }

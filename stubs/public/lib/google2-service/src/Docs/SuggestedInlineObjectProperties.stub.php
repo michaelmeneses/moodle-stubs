@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class SuggestedInlineObjectProperties extends \Google\Model
-{
-    protected $inlineObjectPropertiesType = InlineObjectProperties::class;
-    protected $inlineObjectPropertiesDataType = '';
-    protected $inlineObjectPropertiesSuggestionStateType = InlineObjectPropertiesSuggestionState::class;
-    protected $inlineObjectPropertiesSuggestionStateDataType = '';
-    /**
-     * An InlineObjectProperties that only includes the changes made in this
-     * suggestion. This can be used along with the
-     * inline_object_properties_suggestion_state to see which fields have changed
-     * and their new values.
-     *
-     * @param InlineObjectProperties $inlineObjectProperties
-     */
-    public function setInlineObjectProperties(InlineObjectProperties $inlineObjectProperties)
+namespace Google\Service\Docs {
+    class SuggestedInlineObjectProperties extends \Google\Model
     {
+        protected $inlineObjectPropertiesType = InlineObjectProperties::class;
+        protected $inlineObjectPropertiesDataType = '';
+        protected $inlineObjectPropertiesSuggestionStateType = InlineObjectPropertiesSuggestionState::class;
+        protected $inlineObjectPropertiesSuggestionStateDataType = '';
+        /**
+         * An InlineObjectProperties that only includes the changes made in this
+         * suggestion. This can be used along with the
+         * inline_object_properties_suggestion_state to see which fields have changed
+         * and their new values.
+         *
+         * @param InlineObjectProperties $inlineObjectProperties
+         */
+        public function setInlineObjectProperties(InlineObjectProperties $inlineObjectProperties)
+        {
+        }
+        /**
+         * @return InlineObjectProperties
+         */
+        public function getInlineObjectProperties()
+        {
+        }
+        /**
+         * A mask that indicates which of the fields on the base
+         * InlineObjectProperties have been changed in this suggestion.
+         *
+         * @param InlineObjectPropertiesSuggestionState $inlineObjectPropertiesSuggestionState
+         */
+        public function setInlineObjectPropertiesSuggestionState(InlineObjectPropertiesSuggestionState $inlineObjectPropertiesSuggestionState)
+        {
+        }
+        /**
+         * @return InlineObjectPropertiesSuggestionState
+         */
+        public function getInlineObjectPropertiesSuggestionState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InlineObjectProperties
+     * Runtime class alias of \Google\Service\Docs\SuggestedInlineObjectProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInlineObjectProperties()
-    {
-    }
-    /**
-     * A mask that indicates which of the fields on the base
-     * InlineObjectProperties have been changed in this suggestion.
-     *
-     * @param InlineObjectPropertiesSuggestionState $inlineObjectPropertiesSuggestionState
-     */
-    public function setInlineObjectPropertiesSuggestionState(InlineObjectPropertiesSuggestionState $inlineObjectPropertiesSuggestionState)
-    {
-    }
-    /**
-     * @return InlineObjectPropertiesSuggestionState
-     */
-    public function getInlineObjectPropertiesSuggestionState()
+    class Google_Service_Docs_SuggestedInlineObjectProperties extends \Google\Service\Docs\SuggestedInlineObjectProperties
     {
     }
 }

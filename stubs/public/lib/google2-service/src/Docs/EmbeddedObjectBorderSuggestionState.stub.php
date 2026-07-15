@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class EmbeddedObjectBorderSuggestionState extends \Google\Model
-{
-    /**
-     * Indicates if there was a suggested change to color.
-     *
-     * @var bool
-     */
-    public $colorSuggested;
-    /**
-     * Indicates if there was a suggested change to dash_style.
-     *
-     * @var bool
-     */
-    public $dashStyleSuggested;
-    /**
-     * Indicates if there was a suggested change to property_state.
-     *
-     * @var bool
-     */
-    public $propertyStateSuggested;
-    /**
-     * Indicates if there was a suggested change to width.
-     *
-     * @var bool
-     */
-    public $widthSuggested;
-    /**
-     * Indicates if there was a suggested change to color.
-     *
-     * @param bool $colorSuggested
-     */
-    public function setColorSuggested($colorSuggested)
+namespace Google\Service\Docs {
+    class EmbeddedObjectBorderSuggestionState extends \Google\Model
     {
+        /**
+         * Indicates if there was a suggested change to color.
+         *
+         * @var bool
+         */
+        public $colorSuggested;
+        /**
+         * Indicates if there was a suggested change to dash_style.
+         *
+         * @var bool
+         */
+        public $dashStyleSuggested;
+        /**
+         * Indicates if there was a suggested change to property_state.
+         *
+         * @var bool
+         */
+        public $propertyStateSuggested;
+        /**
+         * Indicates if there was a suggested change to width.
+         *
+         * @var bool
+         */
+        public $widthSuggested;
+        /**
+         * Indicates if there was a suggested change to color.
+         *
+         * @param bool $colorSuggested
+         */
+        public function setColorSuggested($colorSuggested)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getColorSuggested()
+        {
+        }
+        /**
+         * Indicates if there was a suggested change to dash_style.
+         *
+         * @param bool $dashStyleSuggested
+         */
+        public function setDashStyleSuggested($dashStyleSuggested)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDashStyleSuggested()
+        {
+        }
+        /**
+         * Indicates if there was a suggested change to property_state.
+         *
+         * @param bool $propertyStateSuggested
+         */
+        public function setPropertyStateSuggested($propertyStateSuggested)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPropertyStateSuggested()
+        {
+        }
+        /**
+         * Indicates if there was a suggested change to width.
+         *
+         * @param bool $widthSuggested
+         */
+        public function setWidthSuggested($widthSuggested)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getWidthSuggested()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Docs\EmbeddedObjectBorderSuggestionState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColorSuggested()
-    {
-    }
-    /**
-     * Indicates if there was a suggested change to dash_style.
-     *
-     * @param bool $dashStyleSuggested
-     */
-    public function setDashStyleSuggested($dashStyleSuggested)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDashStyleSuggested()
-    {
-    }
-    /**
-     * Indicates if there was a suggested change to property_state.
-     *
-     * @param bool $propertyStateSuggested
-     */
-    public function setPropertyStateSuggested($propertyStateSuggested)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPropertyStateSuggested()
-    {
-    }
-    /**
-     * Indicates if there was a suggested change to width.
-     *
-     * @param bool $widthSuggested
-     */
-    public function setWidthSuggested($widthSuggested)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getWidthSuggested()
+    class Google_Service_Docs_EmbeddedObjectBorderSuggestionState extends \Google\Service\Docs\EmbeddedObjectBorderSuggestionState
     {
     }
 }

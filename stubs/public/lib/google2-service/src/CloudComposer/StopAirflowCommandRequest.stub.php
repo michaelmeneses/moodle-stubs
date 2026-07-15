@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudComposer;
-
-class StopAirflowCommandRequest extends \Google\Model
-{
-    /**
-     * The unique ID of the command execution.
-     *
-     * @var string
-     */
-    public $executionId;
-    /**
-     * If true, the execution is terminated forcefully (SIGKILL). If false, the
-     * execution is stopped gracefully, giving it time for cleanup.
-     *
-     * @var bool
-     */
-    public $force;
-    /**
-     * The name of the pod where the command is executed.
-     *
-     * @var string
-     */
-    public $pod;
-    /**
-     * The namespace of the pod where the command is executed.
-     *
-     * @var string
-     */
-    public $podNamespace;
-    /**
-     * The unique ID of the command execution.
-     *
-     * @param string $executionId
-     */
-    public function setExecutionId($executionId)
+namespace Google\Service\CloudComposer {
+    class StopAirflowCommandRequest extends \Google\Model
     {
+        /**
+         * The unique ID of the command execution.
+         *
+         * @var string
+         */
+        public $executionId;
+        /**
+         * If true, the execution is terminated forcefully (SIGKILL). If false, the
+         * execution is stopped gracefully, giving it time for cleanup.
+         *
+         * @var bool
+         */
+        public $force;
+        /**
+         * The name of the pod where the command is executed.
+         *
+         * @var string
+         */
+        public $pod;
+        /**
+         * The namespace of the pod where the command is executed.
+         *
+         * @var string
+         */
+        public $podNamespace;
+        /**
+         * The unique ID of the command execution.
+         *
+         * @param string $executionId
+         */
+        public function setExecutionId($executionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExecutionId()
+        {
+        }
+        /**
+         * If true, the execution is terminated forcefully (SIGKILL). If false, the
+         * execution is stopped gracefully, giving it time for cleanup.
+         *
+         * @param bool $force
+         */
+        public function setForce($force)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getForce()
+        {
+        }
+        /**
+         * The name of the pod where the command is executed.
+         *
+         * @param string $pod
+         */
+        public function setPod($pod)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPod()
+        {
+        }
+        /**
+         * The namespace of the pod where the command is executed.
+         *
+         * @param string $podNamespace
+         */
+        public function setPodNamespace($podNamespace)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPodNamespace()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudComposer\StopAirflowCommandRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExecutionId()
-    {
-    }
-    /**
-     * If true, the execution is terminated forcefully (SIGKILL). If false, the
-     * execution is stopped gracefully, giving it time for cleanup.
-     *
-     * @param bool $force
-     */
-    public function setForce($force)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getForce()
-    {
-    }
-    /**
-     * The name of the pod where the command is executed.
-     *
-     * @param string $pod
-     */
-    public function setPod($pod)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPod()
-    {
-    }
-    /**
-     * The namespace of the pod where the command is executed.
-     *
-     * @param string $podNamespace
-     */
-    public function setPodNamespace($podNamespace)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPodNamespace()
+    class Google_Service_CloudComposer_StopAirflowCommandRequest extends \Google\Service\CloudComposer\StopAirflowCommandRequest
     {
     }
 }

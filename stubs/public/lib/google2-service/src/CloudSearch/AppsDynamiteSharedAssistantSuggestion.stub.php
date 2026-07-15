@@ -21,80 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedAssistantSuggestion extends \Google\Model
-{
-    protected $debugContextType = AppsDynamiteSharedAssistantDebugContext::class;
-    protected $debugContextDataType = '';
-    protected $feedbackContextType = AppsDynamiteSharedAssistantFeedbackContext::class;
-    protected $feedbackContextDataType = '';
-    protected $findDocumentSuggestionType = AppsDynamiteSharedFindDocumentSuggestion::class;
-    protected $findDocumentSuggestionDataType = '';
-    /**
-     * @var string
-     */
-    public $serializedSuggestions;
-    protected $sessionContextType = AppsDynamiteSharedAssistantSessionContext::class;
-    protected $sessionContextDataType = '';
-    /**
-     * @param AppsDynamiteSharedAssistantDebugContext
-     */
-    public function setDebugContext(AppsDynamiteSharedAssistantDebugContext $debugContext)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedAssistantSuggestion extends \Google\Model
     {
+        protected $debugContextType = AppsDynamiteSharedAssistantDebugContext::class;
+        protected $debugContextDataType = '';
+        protected $feedbackContextType = AppsDynamiteSharedAssistantFeedbackContext::class;
+        protected $feedbackContextDataType = '';
+        protected $findDocumentSuggestionType = AppsDynamiteSharedFindDocumentSuggestion::class;
+        protected $findDocumentSuggestionDataType = '';
+        /**
+         * @var string
+         */
+        public $serializedSuggestions;
+        protected $sessionContextType = AppsDynamiteSharedAssistantSessionContext::class;
+        protected $sessionContextDataType = '';
+        /**
+         * @param AppsDynamiteSharedAssistantDebugContext
+         */
+        public function setDebugContext(AppsDynamiteSharedAssistantDebugContext $debugContext)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedAssistantDebugContext
+         */
+        public function getDebugContext()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedAssistantFeedbackContext
+         */
+        public function setFeedbackContext(AppsDynamiteSharedAssistantFeedbackContext $feedbackContext)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedAssistantFeedbackContext
+         */
+        public function getFeedbackContext()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedFindDocumentSuggestion
+         */
+        public function setFindDocumentSuggestion(AppsDynamiteSharedFindDocumentSuggestion $findDocumentSuggestion)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedFindDocumentSuggestion
+         */
+        public function getFindDocumentSuggestion()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSerializedSuggestions($serializedSuggestions)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSerializedSuggestions()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedAssistantSessionContext
+         */
+        public function setSessionContext(AppsDynamiteSharedAssistantSessionContext $sessionContext)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedAssistantSessionContext
+         */
+        public function getSessionContext()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppsDynamiteSharedAssistantDebugContext
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedAssistantSuggestion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDebugContext()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedAssistantFeedbackContext
-     */
-    public function setFeedbackContext(AppsDynamiteSharedAssistantFeedbackContext $feedbackContext)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedAssistantFeedbackContext
-     */
-    public function getFeedbackContext()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedFindDocumentSuggestion
-     */
-    public function setFindDocumentSuggestion(AppsDynamiteSharedFindDocumentSuggestion $findDocumentSuggestion)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedFindDocumentSuggestion
-     */
-    public function getFindDocumentSuggestion()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSerializedSuggestions($serializedSuggestions)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSerializedSuggestions()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedAssistantSessionContext
-     */
-    public function setSessionContext(AppsDynamiteSharedAssistantSessionContext $sessionContext)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedAssistantSessionContext
-     */
-    public function getSessionContext()
+    class Google_Service_CloudSearch_AppsDynamiteSharedAssistantSuggestion extends \Google\Service\CloudSearch\AppsDynamiteSharedAssistantSuggestion
     {
     }
 }

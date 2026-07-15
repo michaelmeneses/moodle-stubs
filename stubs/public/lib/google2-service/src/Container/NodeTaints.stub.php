@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class NodeTaints extends \Google\Collection
-{
-    protected $collection_key = 'taints';
-    protected $taintsType = NodeTaint::class;
-    protected $taintsDataType = 'array';
-    /**
-     * List of node taints.
-     *
-     * @param NodeTaint[] $taints
-     */
-    public function setTaints($taints)
+namespace Google\Service\Container {
+    class NodeTaints extends \Google\Collection
     {
+        protected $collection_key = 'taints';
+        protected $taintsType = NodeTaint::class;
+        protected $taintsDataType = 'array';
+        /**
+         * List of node taints.
+         *
+         * @param NodeTaint[] $taints
+         */
+        public function setTaints($taints)
+        {
+        }
+        /**
+         * @return NodeTaint[]
+         */
+        public function getTaints()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return NodeTaint[]
+     * Runtime class alias of \Google\Service\Container\NodeTaints registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTaints()
+    class Google_Service_Container_NodeTaints extends \Google\Service\Container\NodeTaints
     {
     }
 }

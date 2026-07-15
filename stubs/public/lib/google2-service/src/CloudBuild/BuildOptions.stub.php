@@ -21,245 +21,254 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class BuildOptions extends \Google\Collection
-{
-    protected $collection_key = 'volumes';
-    /**
-     * @var bool
-     */
-    public $automapSubstitutions;
-    /**
-     * @var string
-     */
-    public $defaultLogsBucketBehavior;
-    /**
-     * @var string
-     */
-    public $diskSizeGb;
-    /**
-     * @var bool
-     */
-    public $dynamicSubstitutions;
-    /**
-     * @var string[]
-     */
-    public $env;
-    /**
-     * @var string
-     */
-    public $logStreamingOption;
-    /**
-     * @var string
-     */
-    public $logging;
-    /**
-     * @var string
-     */
-    public $machineType;
-    protected $poolType = PoolOption::class;
-    protected $poolDataType = '';
-    /**
-     * @var string
-     */
-    public $requestedVerifyOption;
-    /**
-     * @var string[]
-     */
-    public $secretEnv;
-    /**
-     * @var string[]
-     */
-    public $sourceProvenanceHash;
-    /**
-     * @var string
-     */
-    public $substitutionOption;
-    protected $volumesType = Volume::class;
-    protected $volumesDataType = 'array';
-    /**
-     * @var string
-     */
-    public $workerPool;
-    /**
-     * @param bool
-     */
-    public function setAutomapSubstitutions($automapSubstitutions)
+namespace Google\Service\CloudBuild {
+    class BuildOptions extends \Google\Collection
     {
+        protected $collection_key = 'volumes';
+        /**
+         * @var bool
+         */
+        public $automapSubstitutions;
+        /**
+         * @var string
+         */
+        public $defaultLogsBucketBehavior;
+        /**
+         * @var string
+         */
+        public $diskSizeGb;
+        /**
+         * @var bool
+         */
+        public $dynamicSubstitutions;
+        /**
+         * @var string[]
+         */
+        public $env;
+        /**
+         * @var string
+         */
+        public $logStreamingOption;
+        /**
+         * @var string
+         */
+        public $logging;
+        /**
+         * @var string
+         */
+        public $machineType;
+        protected $poolType = PoolOption::class;
+        protected $poolDataType = '';
+        /**
+         * @var string
+         */
+        public $requestedVerifyOption;
+        /**
+         * @var string[]
+         */
+        public $secretEnv;
+        /**
+         * @var string[]
+         */
+        public $sourceProvenanceHash;
+        /**
+         * @var string
+         */
+        public $substitutionOption;
+        protected $volumesType = Volume::class;
+        protected $volumesDataType = 'array';
+        /**
+         * @var string
+         */
+        public $workerPool;
+        /**
+         * @param bool
+         */
+        public function setAutomapSubstitutions($automapSubstitutions)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAutomapSubstitutions()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDefaultLogsBucketBehavior($defaultLogsBucketBehavior)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDefaultLogsBucketBehavior()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDiskSizeGb($diskSizeGb)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDiskSizeGb()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setDynamicSubstitutions($dynamicSubstitutions)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDynamicSubstitutions()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setEnv($env)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getEnv()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLogStreamingOption($logStreamingOption)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLogStreamingOption()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLogging($logging)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLogging()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMachineType($machineType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMachineType()
+        {
+        }
+        /**
+         * @param PoolOption
+         */
+        public function setPool(PoolOption $pool)
+        {
+        }
+        /**
+         * @return PoolOption
+         */
+        public function getPool()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRequestedVerifyOption($requestedVerifyOption)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestedVerifyOption()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setSecretEnv($secretEnv)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSecretEnv()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setSourceProvenanceHash($sourceProvenanceHash)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSourceProvenanceHash()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSubstitutionOption($substitutionOption)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubstitutionOption()
+        {
+        }
+        /**
+         * @param Volume[]
+         */
+        public function setVolumes($volumes)
+        {
+        }
+        /**
+         * @return Volume[]
+         */
+        public function getVolumes()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setWorkerPool($workerPool)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWorkerPool()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudBuild\BuildOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAutomapSubstitutions()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDefaultLogsBucketBehavior($defaultLogsBucketBehavior)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDefaultLogsBucketBehavior()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDiskSizeGb($diskSizeGb)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDiskSizeGb()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setDynamicSubstitutions($dynamicSubstitutions)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDynamicSubstitutions()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setEnv($env)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getEnv()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLogStreamingOption($logStreamingOption)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLogStreamingOption()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLogging($logging)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLogging()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMachineType($machineType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMachineType()
-    {
-    }
-    /**
-     * @param PoolOption
-     */
-    public function setPool(PoolOption $pool)
-    {
-    }
-    /**
-     * @return PoolOption
-     */
-    public function getPool()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRequestedVerifyOption($requestedVerifyOption)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestedVerifyOption()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setSecretEnv($secretEnv)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSecretEnv()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setSourceProvenanceHash($sourceProvenanceHash)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSourceProvenanceHash()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSubstitutionOption($substitutionOption)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubstitutionOption()
-    {
-    }
-    /**
-     * @param Volume[]
-     */
-    public function setVolumes($volumes)
-    {
-    }
-    /**
-     * @return Volume[]
-     */
-    public function getVolumes()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setWorkerPool($workerPool)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWorkerPool()
+    class Google_Service_CloudBuild_BuildOptions extends \Google\Service\CloudBuild\BuildOptions
     {
     }
 }

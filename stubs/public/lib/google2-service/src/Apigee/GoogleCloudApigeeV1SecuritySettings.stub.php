@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1SecuritySettings extends \Google\Model
-{
-    /**
-     * Optional. If true the user consents to the use of ML models for Abuse
-     * detection.
-     *
-     * @var bool
-     */
-    public $mlRetrainingFeedbackEnabled;
-    /**
-     * Identifier. Full resource name is always
-     * `organizations/{org}/securitySettings`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optional. If true the user consents to the use of ML models for Abuse
-     * detection.
-     *
-     * @param bool $mlRetrainingFeedbackEnabled
-     */
-    public function setMlRetrainingFeedbackEnabled($mlRetrainingFeedbackEnabled)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1SecuritySettings extends \Google\Model
     {
+        /**
+         * Optional. If true the user consents to the use of ML models for Abuse
+         * detection.
+         *
+         * @var bool
+         */
+        public $mlRetrainingFeedbackEnabled;
+        /**
+         * Identifier. Full resource name is always
+         * `organizations/{org}/securitySettings`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optional. If true the user consents to the use of ML models for Abuse
+         * detection.
+         *
+         * @param bool $mlRetrainingFeedbackEnabled
+         */
+        public function setMlRetrainingFeedbackEnabled($mlRetrainingFeedbackEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getMlRetrainingFeedbackEnabled()
+        {
+        }
+        /**
+         * Identifier. Full resource name is always
+         * `organizations/{org}/securitySettings`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1SecuritySettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMlRetrainingFeedbackEnabled()
-    {
-    }
-    /**
-     * Identifier. Full resource name is always
-     * `organizations/{org}/securitySettings`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Apigee_GoogleCloudApigeeV1SecuritySettings extends \Google\Service\Apigee\GoogleCloudApigeeV1SecuritySettings
     {
     }
 }

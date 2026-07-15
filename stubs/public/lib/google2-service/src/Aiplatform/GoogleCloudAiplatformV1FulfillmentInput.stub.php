@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1FulfillmentInput extends \Google\Model
-{
-    protected $instanceType = GoogleCloudAiplatformV1FulfillmentInstance::class;
-    protected $instanceDataType = '';
-    protected $metricSpecType = GoogleCloudAiplatformV1FulfillmentSpec::class;
-    protected $metricSpecDataType = '';
-    /**
-     * Required. Fulfillment instance.
-     *
-     * @param GoogleCloudAiplatformV1FulfillmentInstance $instance
-     */
-    public function setInstance(GoogleCloudAiplatformV1FulfillmentInstance $instance)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1FulfillmentInput extends \Google\Model
     {
+        protected $instanceType = GoogleCloudAiplatformV1FulfillmentInstance::class;
+        protected $instanceDataType = '';
+        protected $metricSpecType = GoogleCloudAiplatformV1FulfillmentSpec::class;
+        protected $metricSpecDataType = '';
+        /**
+         * Required. Fulfillment instance.
+         *
+         * @param GoogleCloudAiplatformV1FulfillmentInstance $instance
+         */
+        public function setInstance(GoogleCloudAiplatformV1FulfillmentInstance $instance)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1FulfillmentInstance
+         */
+        public function getInstance()
+        {
+        }
+        /**
+         * Required. Spec for fulfillment score metric.
+         *
+         * @param GoogleCloudAiplatformV1FulfillmentSpec $metricSpec
+         */
+        public function setMetricSpec(GoogleCloudAiplatformV1FulfillmentSpec $metricSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1FulfillmentSpec
+         */
+        public function getMetricSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1FulfillmentInstance
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1FulfillmentInput registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstance()
-    {
-    }
-    /**
-     * Required. Spec for fulfillment score metric.
-     *
-     * @param GoogleCloudAiplatformV1FulfillmentSpec $metricSpec
-     */
-    public function setMetricSpec(GoogleCloudAiplatformV1FulfillmentSpec $metricSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1FulfillmentSpec
-     */
-    public function getMetricSpec()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1FulfillmentInput extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1FulfillmentInput
     {
     }
 }

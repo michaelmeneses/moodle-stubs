@@ -21,248 +21,257 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RealTimeBidding;
-
-class NativeContent extends \Google\Model
-{
-    /**
-     * The name of the advertiser or sponsor, to be displayed in the ad creative.
-     *
-     * @var string
-     */
-    public $advertiserName;
-    protected $appIconType = Image::class;
-    protected $appIconDataType = '';
-    /**
-     * A long description of the ad.
-     *
-     * @var string
-     */
-    public $body;
-    /**
-     * A label for the button that the user is supposed to click.
-     *
-     * @var string
-     */
-    public $callToAction;
-    /**
-     * The URL that the browser/SDK will load when the user clicks the ad.
-     *
-     * @var string
-     */
-    public $clickLinkUrl;
-    /**
-     * The URL to use for click tracking.
-     *
-     * @var string
-     */
-    public $clickTrackingUrl;
-    /**
-     * A short title for the ad.
-     *
-     * @var string
-     */
-    public $headline;
-    protected $imageType = Image::class;
-    protected $imageDataType = '';
-    protected $logoType = Image::class;
-    protected $logoDataType = '';
-    /**
-     * The price of the promoted app including currency info.
-     *
-     * @var string
-     */
-    public $priceDisplayText;
-    /**
-     * The app rating in the app store. Must be in the range [0-5].
-     *
-     * @var 
-     */
-    public $starRating;
-    /**
-     * The URL to fetch a native video ad.
-     *
-     * @var string
-     */
-    public $videoUrl;
-    /**
-     * The contents of a VAST document for a native video ad.
-     *
-     * @var string
-     */
-    public $videoVastXml;
-    /**
-     * The name of the advertiser or sponsor, to be displayed in the ad creative.
-     *
-     * @param string $advertiserName
-     */
-    public function setAdvertiserName($advertiserName)
+namespace Google\Service\RealTimeBidding {
+    class NativeContent extends \Google\Model
     {
+        /**
+         * The name of the advertiser or sponsor, to be displayed in the ad creative.
+         *
+         * @var string
+         */
+        public $advertiserName;
+        protected $appIconType = Image::class;
+        protected $appIconDataType = '';
+        /**
+         * A long description of the ad.
+         *
+         * @var string
+         */
+        public $body;
+        /**
+         * A label for the button that the user is supposed to click.
+         *
+         * @var string
+         */
+        public $callToAction;
+        /**
+         * The URL that the browser/SDK will load when the user clicks the ad.
+         *
+         * @var string
+         */
+        public $clickLinkUrl;
+        /**
+         * The URL to use for click tracking.
+         *
+         * @var string
+         */
+        public $clickTrackingUrl;
+        /**
+         * A short title for the ad.
+         *
+         * @var string
+         */
+        public $headline;
+        protected $imageType = Image::class;
+        protected $imageDataType = '';
+        protected $logoType = Image::class;
+        protected $logoDataType = '';
+        /**
+         * The price of the promoted app including currency info.
+         *
+         * @var string
+         */
+        public $priceDisplayText;
+        /**
+         * The app rating in the app store. Must be in the range [0-5].
+         *
+         * @var 
+         */
+        public $starRating;
+        /**
+         * The URL to fetch a native video ad.
+         *
+         * @var string
+         */
+        public $videoUrl;
+        /**
+         * The contents of a VAST document for a native video ad.
+         *
+         * @var string
+         */
+        public $videoVastXml;
+        /**
+         * The name of the advertiser or sponsor, to be displayed in the ad creative.
+         *
+         * @param string $advertiserName
+         */
+        public function setAdvertiserName($advertiserName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdvertiserName()
+        {
+        }
+        /**
+         * The app icon, for app download ads.
+         *
+         * @param Image $appIcon
+         */
+        public function setAppIcon(Image $appIcon)
+        {
+        }
+        /**
+         * @return Image
+         */
+        public function getAppIcon()
+        {
+        }
+        /**
+         * A long description of the ad.
+         *
+         * @param string $body
+         */
+        public function setBody($body)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBody()
+        {
+        }
+        /**
+         * A label for the button that the user is supposed to click.
+         *
+         * @param string $callToAction
+         */
+        public function setCallToAction($callToAction)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCallToAction()
+        {
+        }
+        /**
+         * The URL that the browser/SDK will load when the user clicks the ad.
+         *
+         * @param string $clickLinkUrl
+         */
+        public function setClickLinkUrl($clickLinkUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClickLinkUrl()
+        {
+        }
+        /**
+         * The URL to use for click tracking.
+         *
+         * @param string $clickTrackingUrl
+         */
+        public function setClickTrackingUrl($clickTrackingUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClickTrackingUrl()
+        {
+        }
+        /**
+         * A short title for the ad.
+         *
+         * @param string $headline
+         */
+        public function setHeadline($headline)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHeadline()
+        {
+        }
+        /**
+         * A large image.
+         *
+         * @param Image $image
+         */
+        public function setImage(Image $image)
+        {
+        }
+        /**
+         * @return Image
+         */
+        public function getImage()
+        {
+        }
+        /**
+         * A smaller image, for the advertiser's logo.
+         *
+         * @param Image $logo
+         */
+        public function setLogo(Image $logo)
+        {
+        }
+        /**
+         * @return Image
+         */
+        public function getLogo()
+        {
+        }
+        /**
+         * The price of the promoted app including currency info.
+         *
+         * @param string $priceDisplayText
+         */
+        public function setPriceDisplayText($priceDisplayText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPriceDisplayText()
+        {
+        }
+        public function setStarRating($starRating)
+        {
+        }
+        public function getStarRating()
+        {
+        }
+        /**
+         * The URL to fetch a native video ad.
+         *
+         * @param string $videoUrl
+         */
+        public function setVideoUrl($videoUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVideoUrl()
+        {
+        }
+        /**
+         * The contents of a VAST document for a native video ad.
+         *
+         * @param string $videoVastXml
+         */
+        public function setVideoVastXml($videoVastXml)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVideoVastXml()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\RealTimeBidding\NativeContent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdvertiserName()
-    {
-    }
-    /**
-     * The app icon, for app download ads.
-     *
-     * @param Image $appIcon
-     */
-    public function setAppIcon(Image $appIcon)
-    {
-    }
-    /**
-     * @return Image
-     */
-    public function getAppIcon()
-    {
-    }
-    /**
-     * A long description of the ad.
-     *
-     * @param string $body
-     */
-    public function setBody($body)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBody()
-    {
-    }
-    /**
-     * A label for the button that the user is supposed to click.
-     *
-     * @param string $callToAction
-     */
-    public function setCallToAction($callToAction)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCallToAction()
-    {
-    }
-    /**
-     * The URL that the browser/SDK will load when the user clicks the ad.
-     *
-     * @param string $clickLinkUrl
-     */
-    public function setClickLinkUrl($clickLinkUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getClickLinkUrl()
-    {
-    }
-    /**
-     * The URL to use for click tracking.
-     *
-     * @param string $clickTrackingUrl
-     */
-    public function setClickTrackingUrl($clickTrackingUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getClickTrackingUrl()
-    {
-    }
-    /**
-     * A short title for the ad.
-     *
-     * @param string $headline
-     */
-    public function setHeadline($headline)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHeadline()
-    {
-    }
-    /**
-     * A large image.
-     *
-     * @param Image $image
-     */
-    public function setImage(Image $image)
-    {
-    }
-    /**
-     * @return Image
-     */
-    public function getImage()
-    {
-    }
-    /**
-     * A smaller image, for the advertiser's logo.
-     *
-     * @param Image $logo
-     */
-    public function setLogo(Image $logo)
-    {
-    }
-    /**
-     * @return Image
-     */
-    public function getLogo()
-    {
-    }
-    /**
-     * The price of the promoted app including currency info.
-     *
-     * @param string $priceDisplayText
-     */
-    public function setPriceDisplayText($priceDisplayText)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPriceDisplayText()
-    {
-    }
-    public function setStarRating($starRating)
-    {
-    }
-    public function getStarRating()
-    {
-    }
-    /**
-     * The URL to fetch a native video ad.
-     *
-     * @param string $videoUrl
-     */
-    public function setVideoUrl($videoUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVideoUrl()
-    {
-    }
-    /**
-     * The contents of a VAST document for a native video ad.
-     *
-     * @param string $videoVastXml
-     */
-    public function setVideoVastXml($videoVastXml)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVideoVastXml()
+    class Google_Service_RealTimeBidding_NativeContent extends \Google\Service\RealTimeBidding\NativeContent
     {
     }
 }

@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2IntentMessageLinkOutSuggestion extends \Google\Model
-{
-    /**
-     * Required. The name of the app or site this chip is linking to.
-     *
-     * @var string
-     */
-    public $destinationName;
-    /**
-     * Required. The URI of the app or site to open when the user taps the
-     * suggestion chip.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * Required. The name of the app or site this chip is linking to.
-     *
-     * @param string $destinationName
-     */
-    public function setDestinationName($destinationName)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2IntentMessageLinkOutSuggestion extends \Google\Model
     {
+        /**
+         * Required. The name of the app or site this chip is linking to.
+         *
+         * @var string
+         */
+        public $destinationName;
+        /**
+         * Required. The URI of the app or site to open when the user taps the
+         * suggestion chip.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * Required. The name of the app or site this chip is linking to.
+         *
+         * @param string $destinationName
+         */
+        public function setDestinationName($destinationName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDestinationName()
+        {
+        }
+        /**
+         * Required. The URI of the app or site to open when the user taps the
+         * suggestion chip.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2IntentMessageLinkOutSuggestion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDestinationName()
-    {
-    }
-    /**
-     * Required. The URI of the app or site to open when the user taps the
-     * suggestion chip.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2IntentMessageLinkOutSuggestion extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2IntentMessageLinkOutSuggestion
     {
     }
 }

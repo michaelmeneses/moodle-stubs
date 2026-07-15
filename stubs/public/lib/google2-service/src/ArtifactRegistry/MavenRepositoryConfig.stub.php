@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ArtifactRegistry;
-
-class MavenRepositoryConfig extends \Google\Model
-{
-    /**
-     * VERSION_POLICY_UNSPECIFIED - the version policy is not defined. When the
-     * version policy is not defined, no validation is performed for the versions.
-     */
-    public const VERSION_POLICY_VERSION_POLICY_UNSPECIFIED = 'VERSION_POLICY_UNSPECIFIED';
-    /**
-     * RELEASE - repository will accept only Release versions.
-     */
-    public const VERSION_POLICY_RELEASE = 'RELEASE';
-    /**
-     * SNAPSHOT - repository will accept only Snapshot versions.
-     */
-    public const VERSION_POLICY_SNAPSHOT = 'SNAPSHOT';
-    /**
-     * The repository with this flag will allow publishing the same snapshot
-     * versions.
-     *
-     * @var bool
-     */
-    public $allowSnapshotOverwrites;
-    /**
-     * Version policy defines the versions that the registry will accept.
-     *
-     * @var string
-     */
-    public $versionPolicy;
-    /**
-     * The repository with this flag will allow publishing the same snapshot
-     * versions.
-     *
-     * @param bool $allowSnapshotOverwrites
-     */
-    public function setAllowSnapshotOverwrites($allowSnapshotOverwrites)
+namespace Google\Service\ArtifactRegistry {
+    class MavenRepositoryConfig extends \Google\Model
     {
+        /**
+         * VERSION_POLICY_UNSPECIFIED - the version policy is not defined. When the
+         * version policy is not defined, no validation is performed for the versions.
+         */
+        public const VERSION_POLICY_VERSION_POLICY_UNSPECIFIED = 'VERSION_POLICY_UNSPECIFIED';
+        /**
+         * RELEASE - repository will accept only Release versions.
+         */
+        public const VERSION_POLICY_RELEASE = 'RELEASE';
+        /**
+         * SNAPSHOT - repository will accept only Snapshot versions.
+         */
+        public const VERSION_POLICY_SNAPSHOT = 'SNAPSHOT';
+        /**
+         * The repository with this flag will allow publishing the same snapshot
+         * versions.
+         *
+         * @var bool
+         */
+        public $allowSnapshotOverwrites;
+        /**
+         * Version policy defines the versions that the registry will accept.
+         *
+         * @var string
+         */
+        public $versionPolicy;
+        /**
+         * The repository with this flag will allow publishing the same snapshot
+         * versions.
+         *
+         * @param bool $allowSnapshotOverwrites
+         */
+        public function setAllowSnapshotOverwrites($allowSnapshotOverwrites)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAllowSnapshotOverwrites()
+        {
+        }
+        /**
+         * Version policy defines the versions that the registry will accept.
+         *
+         * Accepted values: VERSION_POLICY_UNSPECIFIED, RELEASE, SNAPSHOT
+         *
+         * @param self::VERSION_POLICY_* $versionPolicy
+         */
+        public function setVersionPolicy($versionPolicy)
+        {
+        }
+        /**
+         * @return self::VERSION_POLICY_*
+         */
+        public function getVersionPolicy()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\ArtifactRegistry\MavenRepositoryConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowSnapshotOverwrites()
-    {
-    }
-    /**
-     * Version policy defines the versions that the registry will accept.
-     *
-     * Accepted values: VERSION_POLICY_UNSPECIFIED, RELEASE, SNAPSHOT
-     *
-     * @param self::VERSION_POLICY_* $versionPolicy
-     */
-    public function setVersionPolicy($versionPolicy)
-    {
-    }
-    /**
-     * @return self::VERSION_POLICY_*
-     */
-    public function getVersionPolicy()
+    class Google_Service_ArtifactRegistry_MavenRepositoryConfig extends \Google\Service\ArtifactRegistry\MavenRepositoryConfig
     {
     }
 }

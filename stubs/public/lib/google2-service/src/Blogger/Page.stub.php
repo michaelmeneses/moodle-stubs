@@ -21,267 +21,276 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Blogger;
-
-class Page extends \Google\Model
-{
-    public const STATUS_LIVE = 'LIVE';
-    public const STATUS_DRAFT = 'DRAFT';
-    public const STATUS_SOFT_TRASHED = 'SOFT_TRASHED';
-    protected $authorType = PageAuthor::class;
-    protected $authorDataType = '';
-    protected $blogType = PageBlog::class;
-    protected $blogDataType = '';
-    /**
-     * The body content of this Page, in HTML.
-     *
-     * @var string
-     */
-    public $content;
-    /**
-     * Etag of the resource.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * The identifier for this resource.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * The kind of this entity. Always blogger#page.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * RFC 3339 date-time when this Page was published.
-     *
-     * @var string
-     */
-    public $published;
-    /**
-     * The API REST URL to fetch this resource from.
-     *
-     * @var string
-     */
-    public $selfLink;
-    /**
-     * The status of the page for admin resources (either LIVE or DRAFT).
-     *
-     * @var string
-     */
-    public $status;
-    /**
-     * The title of this entity. This is the name displayed in the Admin user
-     * interface.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * RFC 3339 date-time when this Page was trashed.
-     *
-     * @var string
-     */
-    public $trashed;
-    /**
-     * RFC 3339 date-time when this Page was last updated.
-     *
-     * @var string
-     */
-    public $updated;
-    /**
-     * The URL that this Page is displayed at.
-     *
-     * @var string
-     */
-    public $url;
-    /**
-     * The author of this Page.
-     *
-     * @param PageAuthor $author
-     */
-    public function setAuthor(PageAuthor $author)
+namespace Google\Service\Blogger {
+    class Page extends \Google\Model
     {
+        public const STATUS_LIVE = 'LIVE';
+        public const STATUS_DRAFT = 'DRAFT';
+        public const STATUS_SOFT_TRASHED = 'SOFT_TRASHED';
+        protected $authorType = PageAuthor::class;
+        protected $authorDataType = '';
+        protected $blogType = PageBlog::class;
+        protected $blogDataType = '';
+        /**
+         * The body content of this Page, in HTML.
+         *
+         * @var string
+         */
+        public $content;
+        /**
+         * Etag of the resource.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * The identifier for this resource.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * The kind of this entity. Always blogger#page.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * RFC 3339 date-time when this Page was published.
+         *
+         * @var string
+         */
+        public $published;
+        /**
+         * The API REST URL to fetch this resource from.
+         *
+         * @var string
+         */
+        public $selfLink;
+        /**
+         * The status of the page for admin resources (either LIVE or DRAFT).
+         *
+         * @var string
+         */
+        public $status;
+        /**
+         * The title of this entity. This is the name displayed in the Admin user
+         * interface.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * RFC 3339 date-time when this Page was trashed.
+         *
+         * @var string
+         */
+        public $trashed;
+        /**
+         * RFC 3339 date-time when this Page was last updated.
+         *
+         * @var string
+         */
+        public $updated;
+        /**
+         * The URL that this Page is displayed at.
+         *
+         * @var string
+         */
+        public $url;
+        /**
+         * The author of this Page.
+         *
+         * @param PageAuthor $author
+         */
+        public function setAuthor(PageAuthor $author)
+        {
+        }
+        /**
+         * @return PageAuthor
+         */
+        public function getAuthor()
+        {
+        }
+        /**
+         * Data about the blog containing this Page.
+         *
+         * @param PageBlog $blog
+         */
+        public function setBlog(PageBlog $blog)
+        {
+        }
+        /**
+         * @return PageBlog
+         */
+        public function getBlog()
+        {
+        }
+        /**
+         * The body content of this Page, in HTML.
+         *
+         * @param string $content
+         */
+        public function setContent($content)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContent()
+        {
+        }
+        /**
+         * Etag of the resource.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * The identifier for this resource.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * The kind of this entity. Always blogger#page.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * RFC 3339 date-time when this Page was published.
+         *
+         * @param string $published
+         */
+        public function setPublished($published)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPublished()
+        {
+        }
+        /**
+         * The API REST URL to fetch this resource from.
+         *
+         * @param string $selfLink
+         */
+        public function setSelfLink($selfLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelfLink()
+        {
+        }
+        /**
+         * The status of the page for admin resources (either LIVE or DRAFT).
+         *
+         * Accepted values: LIVE, DRAFT, SOFT_TRASHED
+         *
+         * @param self::STATUS_* $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return self::STATUS_*
+         */
+        public function getStatus()
+        {
+        }
+        /**
+         * The title of this entity. This is the name displayed in the Admin user
+         * interface.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * RFC 3339 date-time when this Page was trashed.
+         *
+         * @param string $trashed
+         */
+        public function setTrashed($trashed)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTrashed()
+        {
+        }
+        /**
+         * RFC 3339 date-time when this Page was last updated.
+         *
+         * @param string $updated
+         */
+        public function setUpdated($updated)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdated()
+        {
+        }
+        /**
+         * The URL that this Page is displayed at.
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PageAuthor
+     * Runtime class alias of \Google\Service\Blogger\Page registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuthor()
-    {
-    }
-    /**
-     * Data about the blog containing this Page.
-     *
-     * @param PageBlog $blog
-     */
-    public function setBlog(PageBlog $blog)
-    {
-    }
-    /**
-     * @return PageBlog
-     */
-    public function getBlog()
-    {
-    }
-    /**
-     * The body content of this Page, in HTML.
-     *
-     * @param string $content
-     */
-    public function setContent($content)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContent()
-    {
-    }
-    /**
-     * Etag of the resource.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * The identifier for this resource.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * The kind of this entity. Always blogger#page.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * RFC 3339 date-time when this Page was published.
-     *
-     * @param string $published
-     */
-    public function setPublished($published)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPublished()
-    {
-    }
-    /**
-     * The API REST URL to fetch this resource from.
-     *
-     * @param string $selfLink
-     */
-    public function setSelfLink($selfLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelfLink()
-    {
-    }
-    /**
-     * The status of the page for admin resources (either LIVE or DRAFT).
-     *
-     * Accepted values: LIVE, DRAFT, SOFT_TRASHED
-     *
-     * @param self::STATUS_* $status
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return self::STATUS_*
-     */
-    public function getStatus()
-    {
-    }
-    /**
-     * The title of this entity. This is the name displayed in the Admin user
-     * interface.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
-    {
-    }
-    /**
-     * RFC 3339 date-time when this Page was trashed.
-     *
-     * @param string $trashed
-     */
-    public function setTrashed($trashed)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTrashed()
-    {
-    }
-    /**
-     * RFC 3339 date-time when this Page was last updated.
-     *
-     * @param string $updated
-     */
-    public function setUpdated($updated)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdated()
-    {
-    }
-    /**
-     * The URL that this Page is displayed at.
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
+    class Google_Service_Blogger_Page extends \Google\Service\Blogger\Page
     {
     }
 }

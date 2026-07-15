@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class FeedOutputConfig extends \Google\Model
-{
-    protected $pubsubDestinationType = PubsubDestination::class;
-    protected $pubsubDestinationDataType = '';
-    /**
-     * Destination on Pub/Sub.
-     *
-     * @param PubsubDestination $pubsubDestination
-     */
-    public function setPubsubDestination(PubsubDestination $pubsubDestination)
+namespace Google\Service\CloudAsset {
+    class FeedOutputConfig extends \Google\Model
     {
+        protected $pubsubDestinationType = PubsubDestination::class;
+        protected $pubsubDestinationDataType = '';
+        /**
+         * Destination on Pub/Sub.
+         *
+         * @param PubsubDestination $pubsubDestination
+         */
+        public function setPubsubDestination(PubsubDestination $pubsubDestination)
+        {
+        }
+        /**
+         * @return PubsubDestination
+         */
+        public function getPubsubDestination()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PubsubDestination
+     * Runtime class alias of \Google\Service\CloudAsset\FeedOutputConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPubsubDestination()
+    class Google_Service_CloudAsset_FeedOutputConfig extends \Google\Service\CloudAsset\FeedOutputConfig
     {
     }
 }

@@ -21,301 +21,310 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudVideoIntelligence;
-
-class GoogleCloudVideointelligenceV1VideoAnnotationResults extends \Google\Collection
-{
-    protected $collection_key = 'textAnnotations';
-    protected $errorType = GoogleRpcStatus::class;
-    protected $errorDataType = '';
-    protected $explicitAnnotationType = GoogleCloudVideointelligenceV1ExplicitContentAnnotation::class;
-    protected $explicitAnnotationDataType = '';
-    protected $faceAnnotationsType = GoogleCloudVideointelligenceV1FaceAnnotation::class;
-    protected $faceAnnotationsDataType = 'array';
-    protected $faceDetectionAnnotationsType = GoogleCloudVideointelligenceV1FaceDetectionAnnotation::class;
-    protected $faceDetectionAnnotationsDataType = 'array';
-    protected $frameLabelAnnotationsType = GoogleCloudVideointelligenceV1LabelAnnotation::class;
-    protected $frameLabelAnnotationsDataType = 'array';
-    /**
-     * Video file location in [Cloud Storage](https://cloud.google.com/storage/).
-     *
-     * @var string
-     */
-    public $inputUri;
-    protected $logoRecognitionAnnotationsType = GoogleCloudVideointelligenceV1LogoRecognitionAnnotation::class;
-    protected $logoRecognitionAnnotationsDataType = 'array';
-    protected $objectAnnotationsType = GoogleCloudVideointelligenceV1ObjectTrackingAnnotation::class;
-    protected $objectAnnotationsDataType = 'array';
-    protected $personDetectionAnnotationsType = GoogleCloudVideointelligenceV1PersonDetectionAnnotation::class;
-    protected $personDetectionAnnotationsDataType = 'array';
-    protected $segmentType = GoogleCloudVideointelligenceV1VideoSegment::class;
-    protected $segmentDataType = '';
-    protected $segmentLabelAnnotationsType = GoogleCloudVideointelligenceV1LabelAnnotation::class;
-    protected $segmentLabelAnnotationsDataType = 'array';
-    protected $segmentPresenceLabelAnnotationsType = GoogleCloudVideointelligenceV1LabelAnnotation::class;
-    protected $segmentPresenceLabelAnnotationsDataType = 'array';
-    protected $shotAnnotationsType = GoogleCloudVideointelligenceV1VideoSegment::class;
-    protected $shotAnnotationsDataType = 'array';
-    protected $shotLabelAnnotationsType = GoogleCloudVideointelligenceV1LabelAnnotation::class;
-    protected $shotLabelAnnotationsDataType = 'array';
-    protected $shotPresenceLabelAnnotationsType = GoogleCloudVideointelligenceV1LabelAnnotation::class;
-    protected $shotPresenceLabelAnnotationsDataType = 'array';
-    protected $speechTranscriptionsType = GoogleCloudVideointelligenceV1SpeechTranscription::class;
-    protected $speechTranscriptionsDataType = 'array';
-    protected $textAnnotationsType = GoogleCloudVideointelligenceV1TextAnnotation::class;
-    protected $textAnnotationsDataType = 'array';
-    /**
-     * If set, indicates an error. Note that for a single `AnnotateVideoRequest`
-     * some videos may succeed and some may fail.
-     *
-     * @param GoogleRpcStatus $error
-     */
-    public function setError(GoogleRpcStatus $error)
+namespace Google\Service\CloudVideoIntelligence {
+    class GoogleCloudVideointelligenceV1VideoAnnotationResults extends \Google\Collection
     {
+        protected $collection_key = 'textAnnotations';
+        protected $errorType = GoogleRpcStatus::class;
+        protected $errorDataType = '';
+        protected $explicitAnnotationType = GoogleCloudVideointelligenceV1ExplicitContentAnnotation::class;
+        protected $explicitAnnotationDataType = '';
+        protected $faceAnnotationsType = GoogleCloudVideointelligenceV1FaceAnnotation::class;
+        protected $faceAnnotationsDataType = 'array';
+        protected $faceDetectionAnnotationsType = GoogleCloudVideointelligenceV1FaceDetectionAnnotation::class;
+        protected $faceDetectionAnnotationsDataType = 'array';
+        protected $frameLabelAnnotationsType = GoogleCloudVideointelligenceV1LabelAnnotation::class;
+        protected $frameLabelAnnotationsDataType = 'array';
+        /**
+         * Video file location in [Cloud Storage](https://cloud.google.com/storage/).
+         *
+         * @var string
+         */
+        public $inputUri;
+        protected $logoRecognitionAnnotationsType = GoogleCloudVideointelligenceV1LogoRecognitionAnnotation::class;
+        protected $logoRecognitionAnnotationsDataType = 'array';
+        protected $objectAnnotationsType = GoogleCloudVideointelligenceV1ObjectTrackingAnnotation::class;
+        protected $objectAnnotationsDataType = 'array';
+        protected $personDetectionAnnotationsType = GoogleCloudVideointelligenceV1PersonDetectionAnnotation::class;
+        protected $personDetectionAnnotationsDataType = 'array';
+        protected $segmentType = GoogleCloudVideointelligenceV1VideoSegment::class;
+        protected $segmentDataType = '';
+        protected $segmentLabelAnnotationsType = GoogleCloudVideointelligenceV1LabelAnnotation::class;
+        protected $segmentLabelAnnotationsDataType = 'array';
+        protected $segmentPresenceLabelAnnotationsType = GoogleCloudVideointelligenceV1LabelAnnotation::class;
+        protected $segmentPresenceLabelAnnotationsDataType = 'array';
+        protected $shotAnnotationsType = GoogleCloudVideointelligenceV1VideoSegment::class;
+        protected $shotAnnotationsDataType = 'array';
+        protected $shotLabelAnnotationsType = GoogleCloudVideointelligenceV1LabelAnnotation::class;
+        protected $shotLabelAnnotationsDataType = 'array';
+        protected $shotPresenceLabelAnnotationsType = GoogleCloudVideointelligenceV1LabelAnnotation::class;
+        protected $shotPresenceLabelAnnotationsDataType = 'array';
+        protected $speechTranscriptionsType = GoogleCloudVideointelligenceV1SpeechTranscription::class;
+        protected $speechTranscriptionsDataType = 'array';
+        protected $textAnnotationsType = GoogleCloudVideointelligenceV1TextAnnotation::class;
+        protected $textAnnotationsDataType = 'array';
+        /**
+         * If set, indicates an error. Note that for a single `AnnotateVideoRequest`
+         * some videos may succeed and some may fail.
+         *
+         * @param GoogleRpcStatus $error
+         */
+        public function setError(GoogleRpcStatus $error)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus
+         */
+        public function getError()
+        {
+        }
+        /**
+         * Explicit content annotation.
+         *
+         * @param GoogleCloudVideointelligenceV1ExplicitContentAnnotation $explicitAnnotation
+         */
+        public function setExplicitAnnotation(GoogleCloudVideointelligenceV1ExplicitContentAnnotation $explicitAnnotation)
+        {
+        }
+        /**
+         * @return GoogleCloudVideointelligenceV1ExplicitContentAnnotation
+         */
+        public function getExplicitAnnotation()
+        {
+        }
+        /**
+         * Deprecated. Please use `face_detection_annotations` instead.
+         *
+         * @deprecated
+         * @param GoogleCloudVideointelligenceV1FaceAnnotation[] $faceAnnotations
+         */
+        public function setFaceAnnotations($faceAnnotations)
+        {
+        }
+        /**
+         * @deprecated
+         * @return GoogleCloudVideointelligenceV1FaceAnnotation[]
+         */
+        public function getFaceAnnotations()
+        {
+        }
+        /**
+         * Face detection annotations.
+         *
+         * @param GoogleCloudVideointelligenceV1FaceDetectionAnnotation[] $faceDetectionAnnotations
+         */
+        public function setFaceDetectionAnnotations($faceDetectionAnnotations)
+        {
+        }
+        /**
+         * @return GoogleCloudVideointelligenceV1FaceDetectionAnnotation[]
+         */
+        public function getFaceDetectionAnnotations()
+        {
+        }
+        /**
+         * Label annotations on frame level. There is exactly one element for each
+         * unique label.
+         *
+         * @param GoogleCloudVideointelligenceV1LabelAnnotation[] $frameLabelAnnotations
+         */
+        public function setFrameLabelAnnotations($frameLabelAnnotations)
+        {
+        }
+        /**
+         * @return GoogleCloudVideointelligenceV1LabelAnnotation[]
+         */
+        public function getFrameLabelAnnotations()
+        {
+        }
+        /**
+         * Video file location in [Cloud Storage](https://cloud.google.com/storage/).
+         *
+         * @param string $inputUri
+         */
+        public function setInputUri($inputUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInputUri()
+        {
+        }
+        /**
+         * Annotations for list of logos detected, tracked and recognized in video.
+         *
+         * @param GoogleCloudVideointelligenceV1LogoRecognitionAnnotation[] $logoRecognitionAnnotations
+         */
+        public function setLogoRecognitionAnnotations($logoRecognitionAnnotations)
+        {
+        }
+        /**
+         * @return GoogleCloudVideointelligenceV1LogoRecognitionAnnotation[]
+         */
+        public function getLogoRecognitionAnnotations()
+        {
+        }
+        /**
+         * Annotations for list of objects detected and tracked in video.
+         *
+         * @param GoogleCloudVideointelligenceV1ObjectTrackingAnnotation[] $objectAnnotations
+         */
+        public function setObjectAnnotations($objectAnnotations)
+        {
+        }
+        /**
+         * @return GoogleCloudVideointelligenceV1ObjectTrackingAnnotation[]
+         */
+        public function getObjectAnnotations()
+        {
+        }
+        /**
+         * Person detection annotations.
+         *
+         * @param GoogleCloudVideointelligenceV1PersonDetectionAnnotation[] $personDetectionAnnotations
+         */
+        public function setPersonDetectionAnnotations($personDetectionAnnotations)
+        {
+        }
+        /**
+         * @return GoogleCloudVideointelligenceV1PersonDetectionAnnotation[]
+         */
+        public function getPersonDetectionAnnotations()
+        {
+        }
+        /**
+         * Video segment on which the annotation is run.
+         *
+         * @param GoogleCloudVideointelligenceV1VideoSegment $segment
+         */
+        public function setSegment(GoogleCloudVideointelligenceV1VideoSegment $segment)
+        {
+        }
+        /**
+         * @return GoogleCloudVideointelligenceV1VideoSegment
+         */
+        public function getSegment()
+        {
+        }
+        /**
+         * Topical label annotations on video level or user-specified segment level.
+         * There is exactly one element for each unique label.
+         *
+         * @param GoogleCloudVideointelligenceV1LabelAnnotation[] $segmentLabelAnnotations
+         */
+        public function setSegmentLabelAnnotations($segmentLabelAnnotations)
+        {
+        }
+        /**
+         * @return GoogleCloudVideointelligenceV1LabelAnnotation[]
+         */
+        public function getSegmentLabelAnnotations()
+        {
+        }
+        /**
+         * Presence label annotations on video level or user-specified segment level.
+         * There is exactly one element for each unique label. Compared to the
+         * existing topical `segment_label_annotations`, this field presents more
+         * fine-grained, segment-level labels detected in video content and is made
+         * available only when the client sets `LabelDetectionConfig.model` to
+         * "builtin/latest" in the request.
+         *
+         * @param GoogleCloudVideointelligenceV1LabelAnnotation[] $segmentPresenceLabelAnnotations
+         */
+        public function setSegmentPresenceLabelAnnotations($segmentPresenceLabelAnnotations)
+        {
+        }
+        /**
+         * @return GoogleCloudVideointelligenceV1LabelAnnotation[]
+         */
+        public function getSegmentPresenceLabelAnnotations()
+        {
+        }
+        /**
+         * Shot annotations. Each shot is represented as a video segment.
+         *
+         * @param GoogleCloudVideointelligenceV1VideoSegment[] $shotAnnotations
+         */
+        public function setShotAnnotations($shotAnnotations)
+        {
+        }
+        /**
+         * @return GoogleCloudVideointelligenceV1VideoSegment[]
+         */
+        public function getShotAnnotations()
+        {
+        }
+        /**
+         * Topical label annotations on shot level. There is exactly one element for
+         * each unique label.
+         *
+         * @param GoogleCloudVideointelligenceV1LabelAnnotation[] $shotLabelAnnotations
+         */
+        public function setShotLabelAnnotations($shotLabelAnnotations)
+        {
+        }
+        /**
+         * @return GoogleCloudVideointelligenceV1LabelAnnotation[]
+         */
+        public function getShotLabelAnnotations()
+        {
+        }
+        /**
+         * Presence label annotations on shot level. There is exactly one element for
+         * each unique label. Compared to the existing topical
+         * `shot_label_annotations`, this field presents more fine-grained, shot-level
+         * labels detected in video content and is made available only when the client
+         * sets `LabelDetectionConfig.model` to "builtin/latest" in the request.
+         *
+         * @param GoogleCloudVideointelligenceV1LabelAnnotation[] $shotPresenceLabelAnnotations
+         */
+        public function setShotPresenceLabelAnnotations($shotPresenceLabelAnnotations)
+        {
+        }
+        /**
+         * @return GoogleCloudVideointelligenceV1LabelAnnotation[]
+         */
+        public function getShotPresenceLabelAnnotations()
+        {
+        }
+        /**
+         * Speech transcription.
+         *
+         * @param GoogleCloudVideointelligenceV1SpeechTranscription[] $speechTranscriptions
+         */
+        public function setSpeechTranscriptions($speechTranscriptions)
+        {
+        }
+        /**
+         * @return GoogleCloudVideointelligenceV1SpeechTranscription[]
+         */
+        public function getSpeechTranscriptions()
+        {
+        }
+        /**
+         * OCR text detection and tracking. Annotations for list of detected text
+         * snippets. Each will have list of frame information associated with it.
+         *
+         * @param GoogleCloudVideointelligenceV1TextAnnotation[] $textAnnotations
+         */
+        public function setTextAnnotations($textAnnotations)
+        {
+        }
+        /**
+         * @return GoogleCloudVideointelligenceV1TextAnnotation[]
+         */
+        public function getTextAnnotations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleRpcStatus
+     * Runtime class alias of \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1VideoAnnotationResults registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getError()
-    {
-    }
-    /**
-     * Explicit content annotation.
-     *
-     * @param GoogleCloudVideointelligenceV1ExplicitContentAnnotation $explicitAnnotation
-     */
-    public function setExplicitAnnotation(GoogleCloudVideointelligenceV1ExplicitContentAnnotation $explicitAnnotation)
-    {
-    }
-    /**
-     * @return GoogleCloudVideointelligenceV1ExplicitContentAnnotation
-     */
-    public function getExplicitAnnotation()
-    {
-    }
-    /**
-     * Deprecated. Please use `face_detection_annotations` instead.
-     *
-     * @deprecated
-     * @param GoogleCloudVideointelligenceV1FaceAnnotation[] $faceAnnotations
-     */
-    public function setFaceAnnotations($faceAnnotations)
-    {
-    }
-    /**
-     * @deprecated
-     * @return GoogleCloudVideointelligenceV1FaceAnnotation[]
-     */
-    public function getFaceAnnotations()
-    {
-    }
-    /**
-     * Face detection annotations.
-     *
-     * @param GoogleCloudVideointelligenceV1FaceDetectionAnnotation[] $faceDetectionAnnotations
-     */
-    public function setFaceDetectionAnnotations($faceDetectionAnnotations)
-    {
-    }
-    /**
-     * @return GoogleCloudVideointelligenceV1FaceDetectionAnnotation[]
-     */
-    public function getFaceDetectionAnnotations()
-    {
-    }
-    /**
-     * Label annotations on frame level. There is exactly one element for each
-     * unique label.
-     *
-     * @param GoogleCloudVideointelligenceV1LabelAnnotation[] $frameLabelAnnotations
-     */
-    public function setFrameLabelAnnotations($frameLabelAnnotations)
-    {
-    }
-    /**
-     * @return GoogleCloudVideointelligenceV1LabelAnnotation[]
-     */
-    public function getFrameLabelAnnotations()
-    {
-    }
-    /**
-     * Video file location in [Cloud Storage](https://cloud.google.com/storage/).
-     *
-     * @param string $inputUri
-     */
-    public function setInputUri($inputUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInputUri()
-    {
-    }
-    /**
-     * Annotations for list of logos detected, tracked and recognized in video.
-     *
-     * @param GoogleCloudVideointelligenceV1LogoRecognitionAnnotation[] $logoRecognitionAnnotations
-     */
-    public function setLogoRecognitionAnnotations($logoRecognitionAnnotations)
-    {
-    }
-    /**
-     * @return GoogleCloudVideointelligenceV1LogoRecognitionAnnotation[]
-     */
-    public function getLogoRecognitionAnnotations()
-    {
-    }
-    /**
-     * Annotations for list of objects detected and tracked in video.
-     *
-     * @param GoogleCloudVideointelligenceV1ObjectTrackingAnnotation[] $objectAnnotations
-     */
-    public function setObjectAnnotations($objectAnnotations)
-    {
-    }
-    /**
-     * @return GoogleCloudVideointelligenceV1ObjectTrackingAnnotation[]
-     */
-    public function getObjectAnnotations()
-    {
-    }
-    /**
-     * Person detection annotations.
-     *
-     * @param GoogleCloudVideointelligenceV1PersonDetectionAnnotation[] $personDetectionAnnotations
-     */
-    public function setPersonDetectionAnnotations($personDetectionAnnotations)
-    {
-    }
-    /**
-     * @return GoogleCloudVideointelligenceV1PersonDetectionAnnotation[]
-     */
-    public function getPersonDetectionAnnotations()
-    {
-    }
-    /**
-     * Video segment on which the annotation is run.
-     *
-     * @param GoogleCloudVideointelligenceV1VideoSegment $segment
-     */
-    public function setSegment(GoogleCloudVideointelligenceV1VideoSegment $segment)
-    {
-    }
-    /**
-     * @return GoogleCloudVideointelligenceV1VideoSegment
-     */
-    public function getSegment()
-    {
-    }
-    /**
-     * Topical label annotations on video level or user-specified segment level.
-     * There is exactly one element for each unique label.
-     *
-     * @param GoogleCloudVideointelligenceV1LabelAnnotation[] $segmentLabelAnnotations
-     */
-    public function setSegmentLabelAnnotations($segmentLabelAnnotations)
-    {
-    }
-    /**
-     * @return GoogleCloudVideointelligenceV1LabelAnnotation[]
-     */
-    public function getSegmentLabelAnnotations()
-    {
-    }
-    /**
-     * Presence label annotations on video level or user-specified segment level.
-     * There is exactly one element for each unique label. Compared to the
-     * existing topical `segment_label_annotations`, this field presents more
-     * fine-grained, segment-level labels detected in video content and is made
-     * available only when the client sets `LabelDetectionConfig.model` to
-     * "builtin/latest" in the request.
-     *
-     * @param GoogleCloudVideointelligenceV1LabelAnnotation[] $segmentPresenceLabelAnnotations
-     */
-    public function setSegmentPresenceLabelAnnotations($segmentPresenceLabelAnnotations)
-    {
-    }
-    /**
-     * @return GoogleCloudVideointelligenceV1LabelAnnotation[]
-     */
-    public function getSegmentPresenceLabelAnnotations()
-    {
-    }
-    /**
-     * Shot annotations. Each shot is represented as a video segment.
-     *
-     * @param GoogleCloudVideointelligenceV1VideoSegment[] $shotAnnotations
-     */
-    public function setShotAnnotations($shotAnnotations)
-    {
-    }
-    /**
-     * @return GoogleCloudVideointelligenceV1VideoSegment[]
-     */
-    public function getShotAnnotations()
-    {
-    }
-    /**
-     * Topical label annotations on shot level. There is exactly one element for
-     * each unique label.
-     *
-     * @param GoogleCloudVideointelligenceV1LabelAnnotation[] $shotLabelAnnotations
-     */
-    public function setShotLabelAnnotations($shotLabelAnnotations)
-    {
-    }
-    /**
-     * @return GoogleCloudVideointelligenceV1LabelAnnotation[]
-     */
-    public function getShotLabelAnnotations()
-    {
-    }
-    /**
-     * Presence label annotations on shot level. There is exactly one element for
-     * each unique label. Compared to the existing topical
-     * `shot_label_annotations`, this field presents more fine-grained, shot-level
-     * labels detected in video content and is made available only when the client
-     * sets `LabelDetectionConfig.model` to "builtin/latest" in the request.
-     *
-     * @param GoogleCloudVideointelligenceV1LabelAnnotation[] $shotPresenceLabelAnnotations
-     */
-    public function setShotPresenceLabelAnnotations($shotPresenceLabelAnnotations)
-    {
-    }
-    /**
-     * @return GoogleCloudVideointelligenceV1LabelAnnotation[]
-     */
-    public function getShotPresenceLabelAnnotations()
-    {
-    }
-    /**
-     * Speech transcription.
-     *
-     * @param GoogleCloudVideointelligenceV1SpeechTranscription[] $speechTranscriptions
-     */
-    public function setSpeechTranscriptions($speechTranscriptions)
-    {
-    }
-    /**
-     * @return GoogleCloudVideointelligenceV1SpeechTranscription[]
-     */
-    public function getSpeechTranscriptions()
-    {
-    }
-    /**
-     * OCR text detection and tracking. Annotations for list of detected text
-     * snippets. Each will have list of frame information associated with it.
-     *
-     * @param GoogleCloudVideointelligenceV1TextAnnotation[] $textAnnotations
-     */
-    public function setTextAnnotations($textAnnotations)
-    {
-    }
-    /**
-     * @return GoogleCloudVideointelligenceV1TextAnnotation[]
-     */
-    public function getTextAnnotations()
+    class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1VideoAnnotationResults extends \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1VideoAnnotationResults
     {
     }
 }

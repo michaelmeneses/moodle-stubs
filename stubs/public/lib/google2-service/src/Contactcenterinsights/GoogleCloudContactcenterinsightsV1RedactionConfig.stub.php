@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1RedactionConfig extends \Google\Model
-{
-    /**
-     * The fully-qualified DLP deidentify template resource name. Format:
-     * `projects/{project}/deidentifyTemplates/{template}`
-     *
-     * @var string
-     */
-    public $deidentifyTemplate;
-    /**
-     * The fully-qualified DLP inspect template resource name. Format:
-     * `projects/{project}/locations/{location}/inspectTemplates/{template}`
-     *
-     * @var string
-     */
-    public $inspectTemplate;
-    /**
-     * The fully-qualified DLP deidentify template resource name. Format:
-     * `projects/{project}/deidentifyTemplates/{template}`
-     *
-     * @param string $deidentifyTemplate
-     */
-    public function setDeidentifyTemplate($deidentifyTemplate)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1RedactionConfig extends \Google\Model
     {
+        /**
+         * The fully-qualified DLP deidentify template resource name. Format:
+         * `projects/{project}/deidentifyTemplates/{template}`
+         *
+         * @var string
+         */
+        public $deidentifyTemplate;
+        /**
+         * The fully-qualified DLP inspect template resource name. Format:
+         * `projects/{project}/locations/{location}/inspectTemplates/{template}`
+         *
+         * @var string
+         */
+        public $inspectTemplate;
+        /**
+         * The fully-qualified DLP deidentify template resource name. Format:
+         * `projects/{project}/deidentifyTemplates/{template}`
+         *
+         * @param string $deidentifyTemplate
+         */
+        public function setDeidentifyTemplate($deidentifyTemplate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeidentifyTemplate()
+        {
+        }
+        /**
+         * The fully-qualified DLP inspect template resource name. Format:
+         * `projects/{project}/locations/{location}/inspectTemplates/{template}`
+         *
+         * @param string $inspectTemplate
+         */
+        public function setInspectTemplate($inspectTemplate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInspectTemplate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1RedactionConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeidentifyTemplate()
-    {
-    }
-    /**
-     * The fully-qualified DLP inspect template resource name. Format:
-     * `projects/{project}/locations/{location}/inspectTemplates/{template}`
-     *
-     * @param string $inspectTemplate
-     */
-    public function setInspectTemplate($inspectTemplate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInspectTemplate()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1RedactionConfig extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1RedactionConfig
     {
     }
 }

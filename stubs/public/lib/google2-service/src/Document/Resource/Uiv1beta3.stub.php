@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document\Resource;
-
-/**
- * The "uiv1beta3" collection of methods.
- * Typical usage is:
- *  <code>
- *   $documentaiService = new Google\Service\Document(...);
- *   $uiv1beta3 = $documentaiService->uiv1beta3;
- *  </code>
- */
-class Uiv1beta3 extends \Google\Service\Resource
-{
+namespace Google\Service\Document\Resource {
+    /**
+     * The "uiv1beta3" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $documentaiService = new Google\Service\Document(...);
+     *   $uiv1beta3 = $documentaiService->uiv1beta3;
+     *  </code>
+     */
+    class Uiv1beta3 extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Document\Resource\Uiv1beta3 registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Document_Resource_Uiv1beta3 extends \Google\Service\Document\Resource\Uiv1beta3
+    {
+    }
 }

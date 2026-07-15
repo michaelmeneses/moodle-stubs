@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsData;
-
-class SchemaRestrictionResponse extends \Google\Collection
-{
-    protected $collection_key = 'activeMetricRestrictions';
-    protected $activeMetricRestrictionsType = ActiveMetricRestriction::class;
-    protected $activeMetricRestrictionsDataType = 'array';
-    /**
-     * All restrictions actively enforced in creating the report. For example,
-     * `purchaseRevenue` always has the restriction type `REVENUE_DATA`. However,
-     * this active response restriction is only populated if the user's custom
-     * role disallows access to `REVENUE_DATA`.
-     *
-     * @param ActiveMetricRestriction[] $activeMetricRestrictions
-     */
-    public function setActiveMetricRestrictions($activeMetricRestrictions)
+namespace Google\Service\AnalyticsData {
+    class SchemaRestrictionResponse extends \Google\Collection
     {
+        protected $collection_key = 'activeMetricRestrictions';
+        protected $activeMetricRestrictionsType = ActiveMetricRestriction::class;
+        protected $activeMetricRestrictionsDataType = 'array';
+        /**
+         * All restrictions actively enforced in creating the report. For example,
+         * `purchaseRevenue` always has the restriction type `REVENUE_DATA`. However,
+         * this active response restriction is only populated if the user's custom
+         * role disallows access to `REVENUE_DATA`.
+         *
+         * @param ActiveMetricRestriction[] $activeMetricRestrictions
+         */
+        public function setActiveMetricRestrictions($activeMetricRestrictions)
+        {
+        }
+        /**
+         * @return ActiveMetricRestriction[]
+         */
+        public function getActiveMetricRestrictions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ActiveMetricRestriction[]
+     * Runtime class alias of \Google\Service\AnalyticsData\SchemaRestrictionResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActiveMetricRestrictions()
+    class Google_Service_AnalyticsData_SchemaRestrictionResponse extends \Google\Service\AnalyticsData\SchemaRestrictionResponse
     {
     }
 }

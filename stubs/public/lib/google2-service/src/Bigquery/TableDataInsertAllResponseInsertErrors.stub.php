@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class TableDataInsertAllResponseInsertErrors extends \Google\Collection
-{
-    protected $collection_key = 'errors';
-    protected $errorsType = ErrorProto::class;
-    protected $errorsDataType = 'array';
-    /**
-     * The index of the row that error applies to.
-     *
-     * @var string
-     */
-    public $index;
-    /**
-     * Error information for the row indicated by the index property.
-     *
-     * @param ErrorProto[] $errors
-     */
-    public function setErrors($errors)
+namespace Google\Service\Bigquery {
+    class TableDataInsertAllResponseInsertErrors extends \Google\Collection
     {
+        protected $collection_key = 'errors';
+        protected $errorsType = ErrorProto::class;
+        protected $errorsDataType = 'array';
+        /**
+         * The index of the row that error applies to.
+         *
+         * @var string
+         */
+        public $index;
+        /**
+         * Error information for the row indicated by the index property.
+         *
+         * @param ErrorProto[] $errors
+         */
+        public function setErrors($errors)
+        {
+        }
+        /**
+         * @return ErrorProto[]
+         */
+        public function getErrors()
+        {
+        }
+        /**
+         * The index of the row that error applies to.
+         *
+         * @param string $index
+         */
+        public function setIndex($index)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIndex()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ErrorProto[]
+     * Runtime class alias of \Google\Service\Bigquery\TableDataInsertAllResponseInsertErrors registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrors()
-    {
-    }
-    /**
-     * The index of the row that error applies to.
-     *
-     * @param string $index
-     */
-    public function setIndex($index)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIndex()
+    class Google_Service_Bigquery_TableDataInsertAllResponseInsertErrors extends \Google\Service\Bigquery\TableDataInsertAllResponseInsertErrors
     {
     }
 }

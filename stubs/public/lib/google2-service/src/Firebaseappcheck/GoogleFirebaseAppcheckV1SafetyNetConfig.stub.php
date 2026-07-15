@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firebaseappcheck;
-
-class GoogleFirebaseAppcheckV1SafetyNetConfig extends \Google\Model
-{
-    /**
-     * Required. The relative resource name of the SafetyNet configuration object,
-     * in the format: ``` projects/{project_number}/apps/{app_id}/safetyNetConfig
-     * ```
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Specifies the duration for which App Check tokens exchanged from SafetyNet
-     * tokens will be valid. If unset, a default value of 1 hour is assumed. Must
-     * be between 30 minutes and 7 days, inclusive.
-     *
-     * @var string
-     */
-    public $tokenTtl;
-    /**
-     * Required. The relative resource name of the SafetyNet configuration object,
-     * in the format: ``` projects/{project_number}/apps/{app_id}/safetyNetConfig
-     * ```
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Firebaseappcheck {
+    class GoogleFirebaseAppcheckV1SafetyNetConfig extends \Google\Model
     {
+        /**
+         * Required. The relative resource name of the SafetyNet configuration object,
+         * in the format: ``` projects/{project_number}/apps/{app_id}/safetyNetConfig
+         * ```
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Specifies the duration for which App Check tokens exchanged from SafetyNet
+         * tokens will be valid. If unset, a default value of 1 hour is assumed. Must
+         * be between 30 minutes and 7 days, inclusive.
+         *
+         * @var string
+         */
+        public $tokenTtl;
+        /**
+         * Required. The relative resource name of the SafetyNet configuration object,
+         * in the format: ``` projects/{project_number}/apps/{app_id}/safetyNetConfig
+         * ```
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Specifies the duration for which App Check tokens exchanged from SafetyNet
+         * tokens will be valid. If unset, a default value of 1 hour is assumed. Must
+         * be between 30 minutes and 7 days, inclusive.
+         *
+         * @param string $tokenTtl
+         */
+        public function setTokenTtl($tokenTtl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTokenTtl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1SafetyNetConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Specifies the duration for which App Check tokens exchanged from SafetyNet
-     * tokens will be valid. If unset, a default value of 1 hour is assumed. Must
-     * be between 30 minutes and 7 days, inclusive.
-     *
-     * @param string $tokenTtl
-     */
-    public function setTokenTtl($tokenTtl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTokenTtl()
+    class Google_Service_Firebaseappcheck_GoogleFirebaseAppcheckV1SafetyNetConfig extends \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1SafetyNetConfig
     {
     }
 }

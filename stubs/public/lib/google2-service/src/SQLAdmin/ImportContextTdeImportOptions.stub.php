@@ -21,96 +21,105 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class ImportContextTdeImportOptions extends \Google\Model
-{
-    /**
-     * Required. Path to the TDE certificate public key in the form
-     * gs://bucketName/fileName. The instance must have read access to the file.
-     * Applicable only for SQL Server instances.
-     *
-     * @var string
-     */
-    public $certificatePath;
-    /**
-     * Required. Certificate name. Applicable only for SQL Server instances.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. Password that encrypts the private key.
-     *
-     * @var string
-     */
-    public $privateKeyPassword;
-    /**
-     * Required. Path to the TDE certificate private key in the form
-     * gs://bucketName/fileName. The instance must have read access to the file.
-     * Applicable only for SQL Server instances.
-     *
-     * @var string
-     */
-    public $privateKeyPath;
-    /**
-     * Required. Path to the TDE certificate public key in the form
-     * gs://bucketName/fileName. The instance must have read access to the file.
-     * Applicable only for SQL Server instances.
-     *
-     * @param string $certificatePath
-     */
-    public function setCertificatePath($certificatePath)
+namespace Google\Service\SQLAdmin {
+    class ImportContextTdeImportOptions extends \Google\Model
     {
+        /**
+         * Required. Path to the TDE certificate public key in the form
+         * gs://bucketName/fileName. The instance must have read access to the file.
+         * Applicable only for SQL Server instances.
+         *
+         * @var string
+         */
+        public $certificatePath;
+        /**
+         * Required. Certificate name. Applicable only for SQL Server instances.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. Password that encrypts the private key.
+         *
+         * @var string
+         */
+        public $privateKeyPassword;
+        /**
+         * Required. Path to the TDE certificate private key in the form
+         * gs://bucketName/fileName. The instance must have read access to the file.
+         * Applicable only for SQL Server instances.
+         *
+         * @var string
+         */
+        public $privateKeyPath;
+        /**
+         * Required. Path to the TDE certificate public key in the form
+         * gs://bucketName/fileName. The instance must have read access to the file.
+         * Applicable only for SQL Server instances.
+         *
+         * @param string $certificatePath
+         */
+        public function setCertificatePath($certificatePath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCertificatePath()
+        {
+        }
+        /**
+         * Required. Certificate name. Applicable only for SQL Server instances.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Required. Password that encrypts the private key.
+         *
+         * @param string $privateKeyPassword
+         */
+        public function setPrivateKeyPassword($privateKeyPassword)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrivateKeyPassword()
+        {
+        }
+        /**
+         * Required. Path to the TDE certificate private key in the form
+         * gs://bucketName/fileName. The instance must have read access to the file.
+         * Applicable only for SQL Server instances.
+         *
+         * @param string $privateKeyPath
+         */
+        public function setPrivateKeyPath($privateKeyPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrivateKeyPath()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SQLAdmin\ImportContextTdeImportOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCertificatePath()
-    {
-    }
-    /**
-     * Required. Certificate name. Applicable only for SQL Server instances.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Required. Password that encrypts the private key.
-     *
-     * @param string $privateKeyPassword
-     */
-    public function setPrivateKeyPassword($privateKeyPassword)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrivateKeyPassword()
-    {
-    }
-    /**
-     * Required. Path to the TDE certificate private key in the form
-     * gs://bucketName/fileName. The instance must have read access to the file.
-     * Applicable only for SQL Server instances.
-     *
-     * @param string $privateKeyPath
-     */
-    public function setPrivateKeyPath($privateKeyPath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrivateKeyPath()
+    class Google_Service_SQLAdmin_ImportContextTdeImportOptions extends \Google\Service\SQLAdmin\ImportContextTdeImportOptions
     {
     }
 }

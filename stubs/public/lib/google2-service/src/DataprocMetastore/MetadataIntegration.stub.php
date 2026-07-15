@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataprocMetastore;
-
-class MetadataIntegration extends \Google\Model
-{
-    protected $dataCatalogConfigType = DataCatalogConfig::class;
-    protected $dataCatalogConfigDataType = '';
-    /**
-     * @param DataCatalogConfig
-     */
-    public function setDataCatalogConfig(DataCatalogConfig $dataCatalogConfig)
+namespace Google\Service\DataprocMetastore {
+    class MetadataIntegration extends \Google\Model
     {
+        protected $dataCatalogConfigType = DataCatalogConfig::class;
+        protected $dataCatalogConfigDataType = '';
+        /**
+         * @param DataCatalogConfig
+         */
+        public function setDataCatalogConfig(DataCatalogConfig $dataCatalogConfig)
+        {
+        }
+        /**
+         * @return DataCatalogConfig
+         */
+        public function getDataCatalogConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DataCatalogConfig
+     * Runtime class alias of \Google\Service\DataprocMetastore\MetadataIntegration registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataCatalogConfig()
+    class Google_Service_DataprocMetastore_MetadataIntegration extends \Google\Service\DataprocMetastore\MetadataIntegration
     {
     }
 }

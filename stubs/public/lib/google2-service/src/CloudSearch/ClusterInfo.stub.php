@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class ClusterInfo extends \Google\Collection
-{
-    protected $collection_key = 'clusterId';
-    /**
-     * @var string[]
-     */
-    public $clusterId;
-    /**
-     * @var bool
-     */
-    public $throttled;
-    /**
-     * @param string[]
-     */
-    public function setClusterId($clusterId)
+namespace Google\Service\CloudSearch {
+    class ClusterInfo extends \Google\Collection
     {
+        protected $collection_key = 'clusterId';
+        /**
+         * @var string[]
+         */
+        public $clusterId;
+        /**
+         * @var bool
+         */
+        public $throttled;
+        /**
+         * @param string[]
+         */
+        public function setClusterId($clusterId)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getClusterId()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setThrottled($throttled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getThrottled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudSearch\ClusterInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClusterId()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setThrottled($throttled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getThrottled()
+    class Google_Service_CloudSearch_ClusterInfo extends \Google\Service\CloudSearch\ClusterInfo
     {
     }
 }

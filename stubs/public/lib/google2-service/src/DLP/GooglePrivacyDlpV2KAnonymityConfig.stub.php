@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2KAnonymityConfig extends \Google\Collection
-{
-    protected $collection_key = 'quasiIds';
-    protected $entityIdType = GooglePrivacyDlpV2EntityId::class;
-    protected $entityIdDataType = '';
-    protected $quasiIdsType = GooglePrivacyDlpV2FieldId::class;
-    protected $quasiIdsDataType = 'array';
-    /**
-     * Message indicating that multiple rows might be associated to a single
-     * individual. If the same entity_id is associated to multiple quasi-
-     * identifier tuples over distinct rows, we consider the entire collection of
-     * tuples as the composite quasi-identifier. This collection is a multiset:
-     * the order in which the different tuples appear in the dataset is ignored,
-     * but their frequency is taken into account. Important note: a maximum of
-     * 1000 rows can be associated to a single entity ID. If more rows are
-     * associated with the same entity ID, some might be ignored.
-     *
-     * @param GooglePrivacyDlpV2EntityId $entityId
-     */
-    public function setEntityId(GooglePrivacyDlpV2EntityId $entityId)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2KAnonymityConfig extends \Google\Collection
     {
+        protected $collection_key = 'quasiIds';
+        protected $entityIdType = GooglePrivacyDlpV2EntityId::class;
+        protected $entityIdDataType = '';
+        protected $quasiIdsType = GooglePrivacyDlpV2FieldId::class;
+        protected $quasiIdsDataType = 'array';
+        /**
+         * Message indicating that multiple rows might be associated to a single
+         * individual. If the same entity_id is associated to multiple quasi-
+         * identifier tuples over distinct rows, we consider the entire collection of
+         * tuples as the composite quasi-identifier. This collection is a multiset:
+         * the order in which the different tuples appear in the dataset is ignored,
+         * but their frequency is taken into account. Important note: a maximum of
+         * 1000 rows can be associated to a single entity ID. If more rows are
+         * associated with the same entity ID, some might be ignored.
+         *
+         * @param GooglePrivacyDlpV2EntityId $entityId
+         */
+        public function setEntityId(GooglePrivacyDlpV2EntityId $entityId)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2EntityId
+         */
+        public function getEntityId()
+        {
+        }
+        /**
+         * Set of fields to compute k-anonymity over. When multiple fields are
+         * specified, they are considered a single composite key. Structs and repeated
+         * data types are not supported; however, nested fields are supported so long
+         * as they are not structs themselves or nested within a repeated field.
+         *
+         * @param GooglePrivacyDlpV2FieldId[] $quasiIds
+         */
+        public function setQuasiIds($quasiIds)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2FieldId[]
+         */
+        public function getQuasiIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2EntityId
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2KAnonymityConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntityId()
-    {
-    }
-    /**
-     * Set of fields to compute k-anonymity over. When multiple fields are
-     * specified, they are considered a single composite key. Structs and repeated
-     * data types are not supported; however, nested fields are supported so long
-     * as they are not structs themselves or nested within a repeated field.
-     *
-     * @param GooglePrivacyDlpV2FieldId[] $quasiIds
-     */
-    public function setQuasiIds($quasiIds)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2FieldId[]
-     */
-    public function getQuasiIds()
+    class Google_Service_DLP_GooglePrivacyDlpV2KAnonymityConfig extends \Google\Service\DLP\GooglePrivacyDlpV2KAnonymityConfig
     {
     }
 }

@@ -23,6 +23,8 @@
  */
 namespace Google\Auth;
 
+use Google\Auth\Credentials\GCECredentials;
+use Psr\Cache\CacheItemPoolInterface;
 /**
  * A class to implement caching for calls to GCECredentials::onGce. This class
  * is used automatically when you pass a `Psr\Cache\CacheItemPoolInterface`

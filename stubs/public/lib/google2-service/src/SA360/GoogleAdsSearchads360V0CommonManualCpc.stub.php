@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0CommonManualCpc extends \Google\Model
-{
-    /**
-     * Whether bids are to be enhanced based on conversion optimizer data.
-     *
-     * @var bool
-     */
-    public $enhancedCpcEnabled;
-    /**
-     * Whether bids are to be enhanced based on conversion optimizer data.
-     *
-     * @param bool $enhancedCpcEnabled
-     */
-    public function setEnhancedCpcEnabled($enhancedCpcEnabled)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0CommonManualCpc extends \Google\Model
     {
+        /**
+         * Whether bids are to be enhanced based on conversion optimizer data.
+         *
+         * @var bool
+         */
+        public $enhancedCpcEnabled;
+        /**
+         * Whether bids are to be enhanced based on conversion optimizer data.
+         *
+         * @param bool $enhancedCpcEnabled
+         */
+        public function setEnhancedCpcEnabled($enhancedCpcEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnhancedCpcEnabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0CommonManualCpc registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnhancedCpcEnabled()
+    class Google_Service_SA360_GoogleAdsSearchads360V0CommonManualCpc extends \Google\Service\SA360\GoogleAdsSearchads360V0CommonManualCpc
     {
     }
 }

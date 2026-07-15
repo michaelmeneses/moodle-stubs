@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGroundingSourceInlineSource extends \Google\Collection
-{
-    protected $collection_key = 'groundingFacts';
-    /**
-     * @var string[]
-     */
-    public $attributes;
-    protected $groundingFactsType = GoogleCloudDiscoveryengineV1GroundingFact::class;
-    protected $groundingFactsDataType = 'array';
-    /**
-     * @param string[]
-     */
-    public function setAttributes($attributes)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGroundingSourceInlineSource extends \Google\Collection
     {
+        protected $collection_key = 'groundingFacts';
+        /**
+         * @var string[]
+         */
+        public $attributes;
+        protected $groundingFactsType = GoogleCloudDiscoveryengineV1GroundingFact::class;
+        protected $groundingFactsDataType = 'array';
+        /**
+         * @param string[]
+         */
+        public function setAttributes($attributes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAttributes()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1GroundingFact[]
+         */
+        public function setGroundingFacts($groundingFacts)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1GroundingFact[]
+         */
+        public function getGroundingFacts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGroundingSourceInlineSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttributes()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1GroundingFact[]
-     */
-    public function setGroundingFacts($groundingFacts)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1GroundingFact[]
-     */
-    public function getGroundingFacts()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGroundingSourceInlineSource extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1GenerateGroundedContentRequestGroundingSourceInlineSource
     {
     }
 }

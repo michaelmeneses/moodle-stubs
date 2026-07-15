@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OrgPolicyAPI;
-
-class GoogleCloudOrgpolicyV2ListConstraintsResponse extends \Google\Collection
-{
-    protected $collection_key = 'constraints';
-    protected $constraintsType = GoogleCloudOrgpolicyV2Constraint::class;
-    protected $constraintsDataType = 'array';
-    /**
-     * Page token used to retrieve the next page. This is currently not used.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The collection of constraints that are available on the targeted resource.
-     *
-     * @param GoogleCloudOrgpolicyV2Constraint[] $constraints
-     */
-    public function setConstraints($constraints)
+namespace Google\Service\OrgPolicyAPI {
+    class GoogleCloudOrgpolicyV2ListConstraintsResponse extends \Google\Collection
     {
+        protected $collection_key = 'constraints';
+        protected $constraintsType = GoogleCloudOrgpolicyV2Constraint::class;
+        protected $constraintsDataType = 'array';
+        /**
+         * Page token used to retrieve the next page. This is currently not used.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The collection of constraints that are available on the targeted resource.
+         *
+         * @param GoogleCloudOrgpolicyV2Constraint[] $constraints
+         */
+        public function setConstraints($constraints)
+        {
+        }
+        /**
+         * @return GoogleCloudOrgpolicyV2Constraint[]
+         */
+        public function getConstraints()
+        {
+        }
+        /**
+         * Page token used to retrieve the next page. This is currently not used.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudOrgpolicyV2Constraint[]
+     * Runtime class alias of \Google\Service\OrgPolicyAPI\GoogleCloudOrgpolicyV2ListConstraintsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConstraints()
-    {
-    }
-    /**
-     * Page token used to retrieve the next page. This is currently not used.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_OrgPolicyAPI_GoogleCloudOrgpolicyV2ListConstraintsResponse extends \Google\Service\OrgPolicyAPI\GoogleCloudOrgpolicyV2ListConstraintsResponse
     {
     }
 }

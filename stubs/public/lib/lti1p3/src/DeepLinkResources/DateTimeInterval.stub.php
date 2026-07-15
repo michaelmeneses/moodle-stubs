@@ -8,6 +8,9 @@
  */
 namespace Packback\Lti1p3\DeepLinkResources;
 
+use DateTime;
+use Packback\Lti1p3\Concerns\Arrayable;
+use Packback\Lti1p3\LtiException;
 class DateTimeInterval
 {
     use Arrayable;

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1AssistantContentExecutableCode extends \Google\Model
-{
-    /**
-     * Required. The code content. Currently only supports Python.
-     *
-     * @var string
-     */
-    public $code;
-    /**
-     * Required. The code content. Currently only supports Python.
-     *
-     * @param string $code
-     */
-    public function setCode($code)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1AssistantContentExecutableCode extends \Google\Model
     {
+        /**
+         * Required. The code content. Currently only supports Python.
+         *
+         * @var string
+         */
+        public $code;
+        /**
+         * Required. The code content. Currently only supports Python.
+         *
+         * @param string $code
+         */
+        public function setCode($code)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AssistantContentExecutableCode registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCode()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1AssistantContentExecutableCode extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AssistantContentExecutableCode
     {
     }
 }

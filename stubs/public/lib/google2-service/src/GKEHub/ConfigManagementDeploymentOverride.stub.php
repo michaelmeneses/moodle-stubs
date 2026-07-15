@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class ConfigManagementDeploymentOverride extends \Google\Collection
-{
-    protected $collection_key = 'containers';
-    protected $containersType = ConfigManagementContainerOverride::class;
-    protected $containersDataType = 'array';
-    /**
-     * Required. The name of the deployment resource to be overridden.
-     *
-     * @var string
-     */
-    public $deploymentName;
-    /**
-     * Required. The namespace of the deployment resource to be overridden.
-     *
-     * @var string
-     */
-    public $deploymentNamespace;
-    /**
-     * Optional. The containers of the deployment resource to be overridden.
-     *
-     * @param ConfigManagementContainerOverride[] $containers
-     */
-    public function setContainers($containers)
+namespace Google\Service\GKEHub {
+    class ConfigManagementDeploymentOverride extends \Google\Collection
     {
+        protected $collection_key = 'containers';
+        protected $containersType = ConfigManagementContainerOverride::class;
+        protected $containersDataType = 'array';
+        /**
+         * Required. The name of the deployment resource to be overridden.
+         *
+         * @var string
+         */
+        public $deploymentName;
+        /**
+         * Required. The namespace of the deployment resource to be overridden.
+         *
+         * @var string
+         */
+        public $deploymentNamespace;
+        /**
+         * Optional. The containers of the deployment resource to be overridden.
+         *
+         * @param ConfigManagementContainerOverride[] $containers
+         */
+        public function setContainers($containers)
+        {
+        }
+        /**
+         * @return ConfigManagementContainerOverride[]
+         */
+        public function getContainers()
+        {
+        }
+        /**
+         * Required. The name of the deployment resource to be overridden.
+         *
+         * @param string $deploymentName
+         */
+        public function setDeploymentName($deploymentName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeploymentName()
+        {
+        }
+        /**
+         * Required. The namespace of the deployment resource to be overridden.
+         *
+         * @param string $deploymentNamespace
+         */
+        public function setDeploymentNamespace($deploymentNamespace)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeploymentNamespace()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ConfigManagementContainerOverride[]
+     * Runtime class alias of \Google\Service\GKEHub\ConfigManagementDeploymentOverride registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContainers()
-    {
-    }
-    /**
-     * Required. The name of the deployment resource to be overridden.
-     *
-     * @param string $deploymentName
-     */
-    public function setDeploymentName($deploymentName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeploymentName()
-    {
-    }
-    /**
-     * Required. The namespace of the deployment resource to be overridden.
-     *
-     * @param string $deploymentNamespace
-     */
-    public function setDeploymentNamespace($deploymentNamespace)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeploymentNamespace()
+    class Google_Service_GKEHub_ConfigManagementDeploymentOverride extends \Google\Service\GKEHub\ConfigManagementDeploymentOverride
     {
     }
 }

@@ -21,205 +21,214 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSSpeechPreprocessStats extends \Google\Collection
-{
-    protected $collection_key = 'dataErrors';
-    protected $dataErrorsType = XPSDataErrors::class;
-    protected $dataErrorsDataType = 'array';
-    /**
-     * The number of rows marked HUMAN_LABELLED
-     *
-     * @var int
-     */
-    public $numHumanLabeledExamples;
-    /**
-     * The number of samples found in the previously recorded logs data.
-     *
-     * @var int
-     */
-    public $numLogsExamples;
-    /**
-     * The number of rows marked as MACHINE_TRANSCRIBED
-     *
-     * @var int
-     */
-    public $numMachineTranscribedExamples;
-    /**
-     * The number of examples labelled as TEST by Speech xps server.
-     *
-     * @var int
-     */
-    public $testExamplesCount;
-    /**
-     * The number of sentences in the test data set.
-     *
-     * @var int
-     */
-    public $testSentencesCount;
-    /**
-     * The number of words in the test data set.
-     *
-     * @var int
-     */
-    public $testWordsCount;
-    /**
-     * The number of examples labeled as TRAIN by Speech xps server.
-     *
-     * @var int
-     */
-    public $trainExamplesCount;
-    /**
-     * The number of sentences in the training data set.
-     *
-     * @var int
-     */
-    public $trainSentencesCount;
-    /**
-     * The number of words in the training data set.
-     *
-     * @var int
-     */
-    public $trainWordsCount;
-    /**
-     * Different types of data errors and the counts associated with them.
-     *
-     * @param XPSDataErrors[] $dataErrors
-     */
-    public function setDataErrors($dataErrors)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSSpeechPreprocessStats extends \Google\Collection
     {
+        protected $collection_key = 'dataErrors';
+        protected $dataErrorsType = XPSDataErrors::class;
+        protected $dataErrorsDataType = 'array';
+        /**
+         * The number of rows marked HUMAN_LABELLED
+         *
+         * @var int
+         */
+        public $numHumanLabeledExamples;
+        /**
+         * The number of samples found in the previously recorded logs data.
+         *
+         * @var int
+         */
+        public $numLogsExamples;
+        /**
+         * The number of rows marked as MACHINE_TRANSCRIBED
+         *
+         * @var int
+         */
+        public $numMachineTranscribedExamples;
+        /**
+         * The number of examples labelled as TEST by Speech xps server.
+         *
+         * @var int
+         */
+        public $testExamplesCount;
+        /**
+         * The number of sentences in the test data set.
+         *
+         * @var int
+         */
+        public $testSentencesCount;
+        /**
+         * The number of words in the test data set.
+         *
+         * @var int
+         */
+        public $testWordsCount;
+        /**
+         * The number of examples labeled as TRAIN by Speech xps server.
+         *
+         * @var int
+         */
+        public $trainExamplesCount;
+        /**
+         * The number of sentences in the training data set.
+         *
+         * @var int
+         */
+        public $trainSentencesCount;
+        /**
+         * The number of words in the training data set.
+         *
+         * @var int
+         */
+        public $trainWordsCount;
+        /**
+         * Different types of data errors and the counts associated with them.
+         *
+         * @param XPSDataErrors[] $dataErrors
+         */
+        public function setDataErrors($dataErrors)
+        {
+        }
+        /**
+         * @return XPSDataErrors[]
+         */
+        public function getDataErrors()
+        {
+        }
+        /**
+         * The number of rows marked HUMAN_LABELLED
+         *
+         * @param int $numHumanLabeledExamples
+         */
+        public function setNumHumanLabeledExamples($numHumanLabeledExamples)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumHumanLabeledExamples()
+        {
+        }
+        /**
+         * The number of samples found in the previously recorded logs data.
+         *
+         * @param int $numLogsExamples
+         */
+        public function setNumLogsExamples($numLogsExamples)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumLogsExamples()
+        {
+        }
+        /**
+         * The number of rows marked as MACHINE_TRANSCRIBED
+         *
+         * @param int $numMachineTranscribedExamples
+         */
+        public function setNumMachineTranscribedExamples($numMachineTranscribedExamples)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumMachineTranscribedExamples()
+        {
+        }
+        /**
+         * The number of examples labelled as TEST by Speech xps server.
+         *
+         * @param int $testExamplesCount
+         */
+        public function setTestExamplesCount($testExamplesCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTestExamplesCount()
+        {
+        }
+        /**
+         * The number of sentences in the test data set.
+         *
+         * @param int $testSentencesCount
+         */
+        public function setTestSentencesCount($testSentencesCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTestSentencesCount()
+        {
+        }
+        /**
+         * The number of words in the test data set.
+         *
+         * @param int $testWordsCount
+         */
+        public function setTestWordsCount($testWordsCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTestWordsCount()
+        {
+        }
+        /**
+         * The number of examples labeled as TRAIN by Speech xps server.
+         *
+         * @param int $trainExamplesCount
+         */
+        public function setTrainExamplesCount($trainExamplesCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTrainExamplesCount()
+        {
+        }
+        /**
+         * The number of sentences in the training data set.
+         *
+         * @param int $trainSentencesCount
+         */
+        public function setTrainSentencesCount($trainSentencesCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTrainSentencesCount()
+        {
+        }
+        /**
+         * The number of words in the training data set.
+         *
+         * @param int $trainWordsCount
+         */
+        public function setTrainWordsCount($trainWordsCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTrainWordsCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return XPSDataErrors[]
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSSpeechPreprocessStats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataErrors()
-    {
-    }
-    /**
-     * The number of rows marked HUMAN_LABELLED
-     *
-     * @param int $numHumanLabeledExamples
-     */
-    public function setNumHumanLabeledExamples($numHumanLabeledExamples)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNumHumanLabeledExamples()
-    {
-    }
-    /**
-     * The number of samples found in the previously recorded logs data.
-     *
-     * @param int $numLogsExamples
-     */
-    public function setNumLogsExamples($numLogsExamples)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNumLogsExamples()
-    {
-    }
-    /**
-     * The number of rows marked as MACHINE_TRANSCRIBED
-     *
-     * @param int $numMachineTranscribedExamples
-     */
-    public function setNumMachineTranscribedExamples($numMachineTranscribedExamples)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNumMachineTranscribedExamples()
-    {
-    }
-    /**
-     * The number of examples labelled as TEST by Speech xps server.
-     *
-     * @param int $testExamplesCount
-     */
-    public function setTestExamplesCount($testExamplesCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTestExamplesCount()
-    {
-    }
-    /**
-     * The number of sentences in the test data set.
-     *
-     * @param int $testSentencesCount
-     */
-    public function setTestSentencesCount($testSentencesCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTestSentencesCount()
-    {
-    }
-    /**
-     * The number of words in the test data set.
-     *
-     * @param int $testWordsCount
-     */
-    public function setTestWordsCount($testWordsCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTestWordsCount()
-    {
-    }
-    /**
-     * The number of examples labeled as TRAIN by Speech xps server.
-     *
-     * @param int $trainExamplesCount
-     */
-    public function setTrainExamplesCount($trainExamplesCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTrainExamplesCount()
-    {
-    }
-    /**
-     * The number of sentences in the training data set.
-     *
-     * @param int $trainSentencesCount
-     */
-    public function setTrainSentencesCount($trainSentencesCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTrainSentencesCount()
-    {
-    }
-    /**
-     * The number of words in the training data set.
-     *
-     * @param int $trainWordsCount
-     */
-    public function setTrainWordsCount($trainWordsCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTrainWordsCount()
+    class Google_Service_CloudNaturalLanguage_XPSSpeechPreprocessStats extends \Google\Service\CloudNaturalLanguage\XPSSpeechPreprocessStats
     {
     }
 }

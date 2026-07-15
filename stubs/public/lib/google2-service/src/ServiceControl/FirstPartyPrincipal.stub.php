@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceControl;
-
-class FirstPartyPrincipal extends \Google\Model
-{
-    /**
-     * The email address of a Google account. .
-     *
-     * @var string
-     */
-    public $principalEmail;
-    /**
-     * Metadata about the service that uses the service account. .
-     *
-     * @var array[]
-     */
-    public $serviceMetadata;
-    /**
-     * The email address of a Google account. .
-     *
-     * @param string $principalEmail
-     */
-    public function setPrincipalEmail($principalEmail)
+namespace Google\Service\ServiceControl {
+    class FirstPartyPrincipal extends \Google\Model
     {
+        /**
+         * The email address of a Google account. .
+         *
+         * @var string
+         */
+        public $principalEmail;
+        /**
+         * Metadata about the service that uses the service account. .
+         *
+         * @var array[]
+         */
+        public $serviceMetadata;
+        /**
+         * The email address of a Google account. .
+         *
+         * @param string $principalEmail
+         */
+        public function setPrincipalEmail($principalEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrincipalEmail()
+        {
+        }
+        /**
+         * Metadata about the service that uses the service account. .
+         *
+         * @param array[] $serviceMetadata
+         */
+        public function setServiceMetadata($serviceMetadata)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getServiceMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ServiceControl\FirstPartyPrincipal registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPrincipalEmail()
-    {
-    }
-    /**
-     * Metadata about the service that uses the service account. .
-     *
-     * @param array[] $serviceMetadata
-     */
-    public function setServiceMetadata($serviceMetadata)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getServiceMetadata()
+    class Google_Service_ServiceControl_FirstPartyPrincipal extends \Google\Service\ServiceControl\FirstPartyPrincipal
     {
     }
 }

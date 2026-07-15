@@ -21,61 +21,70 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MapsPlaces;
-
-class GoogleMapsPlacesV1ContextualContent extends \Google\Collection
-{
-    protected $collection_key = 'reviews';
-    protected $justificationsType = GoogleMapsPlacesV1ContextualContentJustification::class;
-    protected $justificationsDataType = 'array';
-    protected $photosType = GoogleMapsPlacesV1Photo::class;
-    protected $photosDataType = 'array';
-    protected $reviewsType = GoogleMapsPlacesV1Review::class;
-    protected $reviewsDataType = 'array';
-    /**
-     * Experimental: See
-     * https://developers.google.com/maps/documentation/places/web-
-     * service/experimental/places-generative for more details. Justifications for
-     * the place.
-     *
-     * @param GoogleMapsPlacesV1ContextualContentJustification[] $justifications
-     */
-    public function setJustifications($justifications)
+namespace Google\Service\MapsPlaces {
+    class GoogleMapsPlacesV1ContextualContent extends \Google\Collection
     {
+        protected $collection_key = 'reviews';
+        protected $justificationsType = GoogleMapsPlacesV1ContextualContentJustification::class;
+        protected $justificationsDataType = 'array';
+        protected $photosType = GoogleMapsPlacesV1Photo::class;
+        protected $photosDataType = 'array';
+        protected $reviewsType = GoogleMapsPlacesV1Review::class;
+        protected $reviewsDataType = 'array';
+        /**
+         * Experimental: See
+         * https://developers.google.com/maps/documentation/places/web-
+         * service/experimental/places-generative for more details. Justifications for
+         * the place.
+         *
+         * @param GoogleMapsPlacesV1ContextualContentJustification[] $justifications
+         */
+        public function setJustifications($justifications)
+        {
+        }
+        /**
+         * @return GoogleMapsPlacesV1ContextualContentJustification[]
+         */
+        public function getJustifications()
+        {
+        }
+        /**
+         * Information (including references) about photos of this place, contexual to
+         * the place query.
+         *
+         * @param GoogleMapsPlacesV1Photo[] $photos
+         */
+        public function setPhotos($photos)
+        {
+        }
+        /**
+         * @return GoogleMapsPlacesV1Photo[]
+         */
+        public function getPhotos()
+        {
+        }
+        /**
+         * List of reviews about this place, contexual to the place query.
+         *
+         * @param GoogleMapsPlacesV1Review[] $reviews
+         */
+        public function setReviews($reviews)
+        {
+        }
+        /**
+         * @return GoogleMapsPlacesV1Review[]
+         */
+        public function getReviews()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleMapsPlacesV1ContextualContentJustification[]
+     * Runtime class alias of \Google\Service\MapsPlaces\GoogleMapsPlacesV1ContextualContent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getJustifications()
-    {
-    }
-    /**
-     * Information (including references) about photos of this place, contexual to
-     * the place query.
-     *
-     * @param GoogleMapsPlacesV1Photo[] $photos
-     */
-    public function setPhotos($photos)
-    {
-    }
-    /**
-     * @return GoogleMapsPlacesV1Photo[]
-     */
-    public function getPhotos()
-    {
-    }
-    /**
-     * List of reviews about this place, contexual to the place query.
-     *
-     * @param GoogleMapsPlacesV1Review[] $reviews
-     */
-    public function setReviews($reviews)
-    {
-    }
-    /**
-     * @return GoogleMapsPlacesV1Review[]
-     */
-    public function getReviews()
+    class Google_Service_MapsPlaces_GoogleMapsPlacesV1ContextualContent extends \Google\Service\MapsPlaces\GoogleMapsPlacesV1ContextualContent
     {
     }
 }

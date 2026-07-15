@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastore;
-
-class TransactionOptions extends \Google\Model
-{
-    protected $readOnlyType = DatastoreReadOnly::class;
-    protected $readOnlyDataType = '';
-    protected $readWriteType = ReadWrite::class;
-    protected $readWriteDataType = '';
-    /**
-     * The transaction should only allow reads.
-     *
-     * @param DatastoreReadOnly $readOnly
-     */
-    public function setReadOnly(DatastoreReadOnly $readOnly)
+namespace Google\Service\Datastore {
+    class TransactionOptions extends \Google\Model
     {
+        protected $readOnlyType = DatastoreReadOnly::class;
+        protected $readOnlyDataType = '';
+        protected $readWriteType = ReadWrite::class;
+        protected $readWriteDataType = '';
+        /**
+         * The transaction should only allow reads.
+         *
+         * @param DatastoreReadOnly $readOnly
+         */
+        public function setReadOnly(DatastoreReadOnly $readOnly)
+        {
+        }
+        /**
+         * @return DatastoreReadOnly
+         */
+        public function getReadOnly()
+        {
+        }
+        /**
+         * The transaction should allow both reads and writes.
+         *
+         * @param ReadWrite $readWrite
+         */
+        public function setReadWrite(ReadWrite $readWrite)
+        {
+        }
+        /**
+         * @return ReadWrite
+         */
+        public function getReadWrite()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DatastoreReadOnly
+     * Runtime class alias of \Google\Service\Datastore\TransactionOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReadOnly()
-    {
-    }
-    /**
-     * The transaction should allow both reads and writes.
-     *
-     * @param ReadWrite $readWrite
-     */
-    public function setReadWrite(ReadWrite $readWrite)
-    {
-    }
-    /**
-     * @return ReadWrite
-     */
-    public function getReadWrite()
+    class Google_Service_Datastore_TransactionOptions extends \Google\Service\Datastore\TransactionOptions
     {
     }
 }

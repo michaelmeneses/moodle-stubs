@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1betaListMeasurementProtocolSecretsResponse extends \Google\Collection
-{
-    protected $collection_key = 'measurementProtocolSecrets';
-    protected $measurementProtocolSecretsType = GoogleAnalyticsAdminV1betaMeasurementProtocolSecret::class;
-    protected $measurementProtocolSecretsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * A list of secrets for the parent stream specified in the request.
-     *
-     * @param GoogleAnalyticsAdminV1betaMeasurementProtocolSecret[] $measurementProtocolSecrets
-     */
-    public function setMeasurementProtocolSecrets($measurementProtocolSecrets)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1betaListMeasurementProtocolSecretsResponse extends \Google\Collection
     {
+        protected $collection_key = 'measurementProtocolSecrets';
+        protected $measurementProtocolSecretsType = GoogleAnalyticsAdminV1betaMeasurementProtocolSecret::class;
+        protected $measurementProtocolSecretsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * A list of secrets for the parent stream specified in the request.
+         *
+         * @param GoogleAnalyticsAdminV1betaMeasurementProtocolSecret[] $measurementProtocolSecrets
+         */
+        public function setMeasurementProtocolSecrets($measurementProtocolSecrets)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1betaMeasurementProtocolSecret[]
+         */
+        public function getMeasurementProtocolSecrets()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAnalyticsAdminV1betaMeasurementProtocolSecret[]
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaListMeasurementProtocolSecretsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMeasurementProtocolSecrets()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1betaListMeasurementProtocolSecretsResponse extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaListMeasurementProtocolSecretsResponse
     {
     }
 }

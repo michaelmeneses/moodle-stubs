@@ -21,307 +21,316 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaServingConfig extends \Google\Collection
-{
-    protected $collection_key = 'synonymsControlIds';
-    /**
-     * @var string[]
-     */
-    public $boostControlIds;
-    /**
-     * @var string
-     */
-    public $createTime;
-    /**
-     * @var string
-     */
-    public $displayName;
-    /**
-     * @var string[]
-     */
-    public $dissociateControlIds;
-    /**
-     * @var string
-     */
-    public $diversityLevel;
-    protected $embeddingConfigType = GoogleCloudDiscoveryengineV1betaEmbeddingConfig::class;
-    protected $embeddingConfigDataType = '';
-    /**
-     * @var string[]
-     */
-    public $filterControlIds;
-    protected $genericConfigType = GoogleCloudDiscoveryengineV1betaServingConfigGenericConfig::class;
-    protected $genericConfigDataType = '';
-    /**
-     * @var string[]
-     */
-    public $ignoreControlIds;
-    protected $mediaConfigType = GoogleCloudDiscoveryengineV1betaServingConfigMediaConfig::class;
-    protected $mediaConfigDataType = '';
-    /**
-     * @var string
-     */
-    public $modelId;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string[]
-     */
-    public $onewaySynonymsControlIds;
-    /**
-     * @var string
-     */
-    public $rankingExpression;
-    /**
-     * @var string[]
-     */
-    public $redirectControlIds;
-    /**
-     * @var string[]
-     */
-    public $replacementControlIds;
-    /**
-     * @var string
-     */
-    public $solutionType;
-    /**
-     * @var string[]
-     */
-    public $synonymsControlIds;
-    /**
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * @param string[]
-     */
-    public function setBoostControlIds($boostControlIds)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaServingConfig extends \Google\Collection
     {
+        protected $collection_key = 'synonymsControlIds';
+        /**
+         * @var string[]
+         */
+        public $boostControlIds;
+        /**
+         * @var string
+         */
+        public $createTime;
+        /**
+         * @var string
+         */
+        public $displayName;
+        /**
+         * @var string[]
+         */
+        public $dissociateControlIds;
+        /**
+         * @var string
+         */
+        public $diversityLevel;
+        protected $embeddingConfigType = GoogleCloudDiscoveryengineV1betaEmbeddingConfig::class;
+        protected $embeddingConfigDataType = '';
+        /**
+         * @var string[]
+         */
+        public $filterControlIds;
+        protected $genericConfigType = GoogleCloudDiscoveryengineV1betaServingConfigGenericConfig::class;
+        protected $genericConfigDataType = '';
+        /**
+         * @var string[]
+         */
+        public $ignoreControlIds;
+        protected $mediaConfigType = GoogleCloudDiscoveryengineV1betaServingConfigMediaConfig::class;
+        protected $mediaConfigDataType = '';
+        /**
+         * @var string
+         */
+        public $modelId;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string[]
+         */
+        public $onewaySynonymsControlIds;
+        /**
+         * @var string
+         */
+        public $rankingExpression;
+        /**
+         * @var string[]
+         */
+        public $redirectControlIds;
+        /**
+         * @var string[]
+         */
+        public $replacementControlIds;
+        /**
+         * @var string
+         */
+        public $solutionType;
+        /**
+         * @var string[]
+         */
+        public $synonymsControlIds;
+        /**
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * @param string[]
+         */
+        public function setBoostControlIds($boostControlIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getBoostControlIds()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setDissociateControlIds($dissociateControlIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDissociateControlIds()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDiversityLevel($diversityLevel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDiversityLevel()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaEmbeddingConfig
+         */
+        public function setEmbeddingConfig(GoogleCloudDiscoveryengineV1betaEmbeddingConfig $embeddingConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaEmbeddingConfig
+         */
+        public function getEmbeddingConfig()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setFilterControlIds($filterControlIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getFilterControlIds()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaServingConfigGenericConfig
+         */
+        public function setGenericConfig(GoogleCloudDiscoveryengineV1betaServingConfigGenericConfig $genericConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaServingConfigGenericConfig
+         */
+        public function getGenericConfig()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setIgnoreControlIds($ignoreControlIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getIgnoreControlIds()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaServingConfigMediaConfig
+         */
+        public function setMediaConfig(GoogleCloudDiscoveryengineV1betaServingConfigMediaConfig $mediaConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaServingConfigMediaConfig
+         */
+        public function getMediaConfig()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setModelId($modelId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getModelId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setOnewaySynonymsControlIds($onewaySynonymsControlIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getOnewaySynonymsControlIds()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRankingExpression($rankingExpression)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRankingExpression()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setRedirectControlIds($redirectControlIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRedirectControlIds()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setReplacementControlIds($replacementControlIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getReplacementControlIds()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSolutionType($solutionType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSolutionType()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setSynonymsControlIds($synonymsControlIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSynonymsControlIds()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaServingConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBoostControlIds()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setDissociateControlIds($dissociateControlIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getDissociateControlIds()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDiversityLevel($diversityLevel)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDiversityLevel()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaEmbeddingConfig
-     */
-    public function setEmbeddingConfig(GoogleCloudDiscoveryengineV1betaEmbeddingConfig $embeddingConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaEmbeddingConfig
-     */
-    public function getEmbeddingConfig()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setFilterControlIds($filterControlIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getFilterControlIds()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaServingConfigGenericConfig
-     */
-    public function setGenericConfig(GoogleCloudDiscoveryengineV1betaServingConfigGenericConfig $genericConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaServingConfigGenericConfig
-     */
-    public function getGenericConfig()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setIgnoreControlIds($ignoreControlIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getIgnoreControlIds()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaServingConfigMediaConfig
-     */
-    public function setMediaConfig(GoogleCloudDiscoveryengineV1betaServingConfigMediaConfig $mediaConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaServingConfigMediaConfig
-     */
-    public function getMediaConfig()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setModelId($modelId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getModelId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setOnewaySynonymsControlIds($onewaySynonymsControlIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getOnewaySynonymsControlIds()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRankingExpression($rankingExpression)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRankingExpression()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setRedirectControlIds($redirectControlIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRedirectControlIds()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setReplacementControlIds($replacementControlIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getReplacementControlIds()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSolutionType($solutionType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSolutionType()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setSynonymsControlIds($synonymsControlIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSynonymsControlIds()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaServingConfig extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaServingConfig
     {
     }
 }

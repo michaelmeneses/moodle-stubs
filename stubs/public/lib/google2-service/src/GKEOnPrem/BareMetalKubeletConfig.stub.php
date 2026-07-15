@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class BareMetalKubeletConfig extends \Google\Model
-{
-    /**
-     * The maximum size of bursty pulls, temporarily allows pulls to burst to this
-     * number, while still not exceeding registry_pull_qps. The value must not be
-     * a negative number. Updating this field may impact scalability by changing
-     * the amount of traffic produced by image pulls. Defaults to 10.
-     *
-     * @var int
-     */
-    public $registryBurst;
-    /**
-     * The limit of registry pulls per second. Setting this value to 0 means no
-     * limit. Updating this field may impact scalability by changing the amount of
-     * traffic produced by image pulls. Defaults to 5.
-     *
-     * @var int
-     */
-    public $registryPullQps;
-    /**
-     * Prevents the Kubelet from pulling multiple images at a time. We recommend
-     * *not* changing the default value on nodes that run docker daemon with
-     * version < 1.9 or an Another Union File System (Aufs) storage backend. Issue
-     * https://github.com/kubernetes/kubernetes/issues/10959 has more details.
-     *
-     * @var bool
-     */
-    public $serializeImagePullsDisabled;
-    /**
-     * The maximum size of bursty pulls, temporarily allows pulls to burst to this
-     * number, while still not exceeding registry_pull_qps. The value must not be
-     * a negative number. Updating this field may impact scalability by changing
-     * the amount of traffic produced by image pulls. Defaults to 10.
-     *
-     * @param int $registryBurst
-     */
-    public function setRegistryBurst($registryBurst)
+namespace Google\Service\GKEOnPrem {
+    class BareMetalKubeletConfig extends \Google\Model
     {
+        /**
+         * The maximum size of bursty pulls, temporarily allows pulls to burst to this
+         * number, while still not exceeding registry_pull_qps. The value must not be
+         * a negative number. Updating this field may impact scalability by changing
+         * the amount of traffic produced by image pulls. Defaults to 10.
+         *
+         * @var int
+         */
+        public $registryBurst;
+        /**
+         * The limit of registry pulls per second. Setting this value to 0 means no
+         * limit. Updating this field may impact scalability by changing the amount of
+         * traffic produced by image pulls. Defaults to 5.
+         *
+         * @var int
+         */
+        public $registryPullQps;
+        /**
+         * Prevents the Kubelet from pulling multiple images at a time. We recommend
+         * *not* changing the default value on nodes that run docker daemon with
+         * version < 1.9 or an Another Union File System (Aufs) storage backend. Issue
+         * https://github.com/kubernetes/kubernetes/issues/10959 has more details.
+         *
+         * @var bool
+         */
+        public $serializeImagePullsDisabled;
+        /**
+         * The maximum size of bursty pulls, temporarily allows pulls to burst to this
+         * number, while still not exceeding registry_pull_qps. The value must not be
+         * a negative number. Updating this field may impact scalability by changing
+         * the amount of traffic produced by image pulls. Defaults to 10.
+         *
+         * @param int $registryBurst
+         */
+        public function setRegistryBurst($registryBurst)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRegistryBurst()
+        {
+        }
+        /**
+         * The limit of registry pulls per second. Setting this value to 0 means no
+         * limit. Updating this field may impact scalability by changing the amount of
+         * traffic produced by image pulls. Defaults to 5.
+         *
+         * @param int $registryPullQps
+         */
+        public function setRegistryPullQps($registryPullQps)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRegistryPullQps()
+        {
+        }
+        /**
+         * Prevents the Kubelet from pulling multiple images at a time. We recommend
+         * *not* changing the default value on nodes that run docker daemon with
+         * version < 1.9 or an Another Union File System (Aufs) storage backend. Issue
+         * https://github.com/kubernetes/kubernetes/issues/10959 has more details.
+         *
+         * @param bool $serializeImagePullsDisabled
+         */
+        public function setSerializeImagePullsDisabled($serializeImagePullsDisabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSerializeImagePullsDisabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\GKEOnPrem\BareMetalKubeletConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRegistryBurst()
-    {
-    }
-    /**
-     * The limit of registry pulls per second. Setting this value to 0 means no
-     * limit. Updating this field may impact scalability by changing the amount of
-     * traffic produced by image pulls. Defaults to 5.
-     *
-     * @param int $registryPullQps
-     */
-    public function setRegistryPullQps($registryPullQps)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getRegistryPullQps()
-    {
-    }
-    /**
-     * Prevents the Kubelet from pulling multiple images at a time. We recommend
-     * *not* changing the default value on nodes that run docker daemon with
-     * version < 1.9 or an Another Union File System (Aufs) storage backend. Issue
-     * https://github.com/kubernetes/kubernetes/issues/10959 has more details.
-     *
-     * @param bool $serializeImagePullsDisabled
-     */
-    public function setSerializeImagePullsDisabled($serializeImagePullsDisabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSerializeImagePullsDisabled()
+    class Google_Service_GKEOnPrem_BareMetalKubeletConfig extends \Google\Service\GKEOnPrem\BareMetalKubeletConfig
     {
     }
 }

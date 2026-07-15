@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1RagRetrievalConfigRanking extends \Google\Model
-{
-    protected $llmRankerType = GoogleCloudAiplatformV1RagRetrievalConfigRankingLlmRanker::class;
-    protected $llmRankerDataType = '';
-    protected $rankServiceType = GoogleCloudAiplatformV1RagRetrievalConfigRankingRankService::class;
-    protected $rankServiceDataType = '';
-    /**
-     * Optional. Config for LlmRanker.
-     *
-     * @param GoogleCloudAiplatformV1RagRetrievalConfigRankingLlmRanker $llmRanker
-     */
-    public function setLlmRanker(GoogleCloudAiplatformV1RagRetrievalConfigRankingLlmRanker $llmRanker)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1RagRetrievalConfigRanking extends \Google\Model
     {
+        protected $llmRankerType = GoogleCloudAiplatformV1RagRetrievalConfigRankingLlmRanker::class;
+        protected $llmRankerDataType = '';
+        protected $rankServiceType = GoogleCloudAiplatformV1RagRetrievalConfigRankingRankService::class;
+        protected $rankServiceDataType = '';
+        /**
+         * Optional. Config for LlmRanker.
+         *
+         * @param GoogleCloudAiplatformV1RagRetrievalConfigRankingLlmRanker $llmRanker
+         */
+        public function setLlmRanker(GoogleCloudAiplatformV1RagRetrievalConfigRankingLlmRanker $llmRanker)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1RagRetrievalConfigRankingLlmRanker
+         */
+        public function getLlmRanker()
+        {
+        }
+        /**
+         * Optional. Config for Rank Service.
+         *
+         * @param GoogleCloudAiplatformV1RagRetrievalConfigRankingRankService $rankService
+         */
+        public function setRankService(GoogleCloudAiplatformV1RagRetrievalConfigRankingRankService $rankService)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1RagRetrievalConfigRankingRankService
+         */
+        public function getRankService()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1RagRetrievalConfigRankingLlmRanker
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1RagRetrievalConfigRanking registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLlmRanker()
-    {
-    }
-    /**
-     * Optional. Config for Rank Service.
-     *
-     * @param GoogleCloudAiplatformV1RagRetrievalConfigRankingRankService $rankService
-     */
-    public function setRankService(GoogleCloudAiplatformV1RagRetrievalConfigRankingRankService $rankService)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1RagRetrievalConfigRankingRankService
-     */
-    public function getRankService()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1RagRetrievalConfigRanking extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1RagRetrievalConfigRanking
     {
     }
 }

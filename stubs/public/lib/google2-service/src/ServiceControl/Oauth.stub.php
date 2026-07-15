@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceControl;
-
-class Oauth extends \Google\Model
-{
-    /**
-     * The optional OAuth client ID. This is the unique public identifier issued
-     * by an authorization server to a registered client application. Empty string
-     * is equivalent to no oauth client id. WARNING: This is for MCP tools/call
-     * and tools/list authorization and not for general use.
-     *
-     * @var string
-     */
-    public $clientId;
-    /**
-     * The optional OAuth client ID. This is the unique public identifier issued
-     * by an authorization server to a registered client application. Empty string
-     * is equivalent to no oauth client id. WARNING: This is for MCP tools/call
-     * and tools/list authorization and not for general use.
-     *
-     * @param string $clientId
-     */
-    public function setClientId($clientId)
+namespace Google\Service\ServiceControl {
+    class Oauth extends \Google\Model
     {
+        /**
+         * The optional OAuth client ID. This is the unique public identifier issued
+         * by an authorization server to a registered client application. Empty string
+         * is equivalent to no oauth client id. WARNING: This is for MCP tools/call
+         * and tools/list authorization and not for general use.
+         *
+         * @var string
+         */
+        public $clientId;
+        /**
+         * The optional OAuth client ID. This is the unique public identifier issued
+         * by an authorization server to a registered client application. Empty string
+         * is equivalent to no oauth client id. WARNING: This is for MCP tools/call
+         * and tools/list authorization and not for general use.
+         *
+         * @param string $clientId
+         */
+        public function setClientId($clientId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClientId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ServiceControl\Oauth registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClientId()
+    class Google_Service_ServiceControl_Oauth extends \Google\Service\ServiceControl\Oauth
     {
     }
 }

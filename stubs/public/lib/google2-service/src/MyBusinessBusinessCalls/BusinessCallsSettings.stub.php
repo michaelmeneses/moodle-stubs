@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessBusinessCalls;
-
-class BusinessCallsSettings extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $callsState;
-    /**
-     * @var string
-     */
-    public $consentTime;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @param string
-     */
-    public function setCallsState($callsState)
+namespace Google\Service\MyBusinessBusinessCalls {
+    class BusinessCallsSettings extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $callsState;
+        /**
+         * @var string
+         */
+        public $consentTime;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @param string
+         */
+        public function setCallsState($callsState)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCallsState()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setConsentTime($consentTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConsentTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MyBusinessBusinessCalls\BusinessCallsSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCallsState()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setConsentTime($consentTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getConsentTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_MyBusinessBusinessCalls_BusinessCallsSettings extends \Google\Service\MyBusinessBusinessCalls\BusinessCallsSettings
     {
     }
 }

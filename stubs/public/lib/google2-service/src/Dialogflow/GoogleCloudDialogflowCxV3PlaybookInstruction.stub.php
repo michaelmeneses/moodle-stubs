@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3PlaybookInstruction extends \Google\Collection
-{
-    protected $collection_key = 'steps';
-    /**
-     * General guidelines for the playbook. These are unstructured instructions
-     * that are not directly part of the goal, e.g. "Always be polite". It's valid
-     * for this text to be long and used instead of steps altogether.
-     *
-     * @var string
-     */
-    public $guidelines;
-    protected $stepsType = GoogleCloudDialogflowCxV3PlaybookStep::class;
-    protected $stepsDataType = 'array';
-    /**
-     * General guidelines for the playbook. These are unstructured instructions
-     * that are not directly part of the goal, e.g. "Always be polite". It's valid
-     * for this text to be long and used instead of steps altogether.
-     *
-     * @param string $guidelines
-     */
-    public function setGuidelines($guidelines)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3PlaybookInstruction extends \Google\Collection
     {
+        protected $collection_key = 'steps';
+        /**
+         * General guidelines for the playbook. These are unstructured instructions
+         * that are not directly part of the goal, e.g. "Always be polite". It's valid
+         * for this text to be long and used instead of steps altogether.
+         *
+         * @var string
+         */
+        public $guidelines;
+        protected $stepsType = GoogleCloudDialogflowCxV3PlaybookStep::class;
+        protected $stepsDataType = 'array';
+        /**
+         * General guidelines for the playbook. These are unstructured instructions
+         * that are not directly part of the goal, e.g. "Always be polite". It's valid
+         * for this text to be long and used instead of steps altogether.
+         *
+         * @param string $guidelines
+         */
+        public function setGuidelines($guidelines)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGuidelines()
+        {
+        }
+        /**
+         * Ordered list of step by step execution instructions to accomplish target
+         * goal.
+         *
+         * @param GoogleCloudDialogflowCxV3PlaybookStep[] $steps
+         */
+        public function setSteps($steps)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3PlaybookStep[]
+         */
+        public function getSteps()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3PlaybookInstruction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGuidelines()
-    {
-    }
-    /**
-     * Ordered list of step by step execution instructions to accomplish target
-     * goal.
-     *
-     * @param GoogleCloudDialogflowCxV3PlaybookStep[] $steps
-     */
-    public function setSteps($steps)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3PlaybookStep[]
-     */
-    public function getSteps()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3PlaybookInstruction extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3PlaybookInstruction
     {
     }
 }

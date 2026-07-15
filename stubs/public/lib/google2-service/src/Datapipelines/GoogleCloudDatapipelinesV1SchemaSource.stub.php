@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datapipelines;
-
-class GoogleCloudDatapipelinesV1SchemaSource extends \Google\Model
-{
-    protected $localSchemaType = GoogleCloudDatapipelinesV1Schema::class;
-    protected $localSchemaDataType = '';
-    /**
-     * @var string
-     */
-    public $referenceId;
-    /**
-     * @param GoogleCloudDatapipelinesV1Schema
-     */
-    public function setLocalSchema(GoogleCloudDatapipelinesV1Schema $localSchema)
+namespace Google\Service\Datapipelines {
+    class GoogleCloudDatapipelinesV1SchemaSource extends \Google\Model
     {
+        protected $localSchemaType = GoogleCloudDatapipelinesV1Schema::class;
+        protected $localSchemaDataType = '';
+        /**
+         * @var string
+         */
+        public $referenceId;
+        /**
+         * @param GoogleCloudDatapipelinesV1Schema
+         */
+        public function setLocalSchema(GoogleCloudDatapipelinesV1Schema $localSchema)
+        {
+        }
+        /**
+         * @return GoogleCloudDatapipelinesV1Schema
+         */
+        public function getLocalSchema()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReferenceId($referenceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReferenceId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatapipelinesV1Schema
+     * Runtime class alias of \Google\Service\Datapipelines\GoogleCloudDatapipelinesV1SchemaSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLocalSchema()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReferenceId($referenceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReferenceId()
+    class Google_Service_Datapipelines_GoogleCloudDatapipelinesV1SchemaSource extends \Google\Service\Datapipelines\GoogleCloudDatapipelinesV1SchemaSource
     {
     }
 }

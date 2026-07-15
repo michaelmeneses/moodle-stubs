@@ -21,93 +21,102 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class VmwareAddressPool extends \Google\Collection
-{
-    protected $collection_key = 'addresses';
-    /**
-     * Required. The addresses that are part of this pool. Each address must be
-     * either in the CIDR form (1.2.3.0/24) or range form (1.2.3.1-1.2.3.5).
-     *
-     * @var string[]
-     */
-    public $addresses;
-    /**
-     * If true, avoid using IPs ending in .0 or .255. This avoids buggy consumer
-     * devices mistakenly dropping IPv4 traffic for those special IP addresses.
-     *
-     * @var bool
-     */
-    public $avoidBuggyIps;
-    /**
-     * If true, prevent IP addresses from being automatically assigned.
-     *
-     * @var bool
-     */
-    public $manualAssign;
-    /**
-     * Required. The name of the address pool.
-     *
-     * @var string
-     */
-    public $pool;
-    /**
-     * Required. The addresses that are part of this pool. Each address must be
-     * either in the CIDR form (1.2.3.0/24) or range form (1.2.3.1-1.2.3.5).
-     *
-     * @param string[] $addresses
-     */
-    public function setAddresses($addresses)
+namespace Google\Service\GKEOnPrem {
+    class VmwareAddressPool extends \Google\Collection
     {
+        protected $collection_key = 'addresses';
+        /**
+         * Required. The addresses that are part of this pool. Each address must be
+         * either in the CIDR form (1.2.3.0/24) or range form (1.2.3.1-1.2.3.5).
+         *
+         * @var string[]
+         */
+        public $addresses;
+        /**
+         * If true, avoid using IPs ending in .0 or .255. This avoids buggy consumer
+         * devices mistakenly dropping IPv4 traffic for those special IP addresses.
+         *
+         * @var bool
+         */
+        public $avoidBuggyIps;
+        /**
+         * If true, prevent IP addresses from being automatically assigned.
+         *
+         * @var bool
+         */
+        public $manualAssign;
+        /**
+         * Required. The name of the address pool.
+         *
+         * @var string
+         */
+        public $pool;
+        /**
+         * Required. The addresses that are part of this pool. Each address must be
+         * either in the CIDR form (1.2.3.0/24) or range form (1.2.3.1-1.2.3.5).
+         *
+         * @param string[] $addresses
+         */
+        public function setAddresses($addresses)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAddresses()
+        {
+        }
+        /**
+         * If true, avoid using IPs ending in .0 or .255. This avoids buggy consumer
+         * devices mistakenly dropping IPv4 traffic for those special IP addresses.
+         *
+         * @param bool $avoidBuggyIps
+         */
+        public function setAvoidBuggyIps($avoidBuggyIps)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAvoidBuggyIps()
+        {
+        }
+        /**
+         * If true, prevent IP addresses from being automatically assigned.
+         *
+         * @param bool $manualAssign
+         */
+        public function setManualAssign($manualAssign)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getManualAssign()
+        {
+        }
+        /**
+         * Required. The name of the address pool.
+         *
+         * @param string $pool
+         */
+        public function setPool($pool)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPool()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\GKEOnPrem\VmwareAddressPool registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddresses()
-    {
-    }
-    /**
-     * If true, avoid using IPs ending in .0 or .255. This avoids buggy consumer
-     * devices mistakenly dropping IPv4 traffic for those special IP addresses.
-     *
-     * @param bool $avoidBuggyIps
-     */
-    public function setAvoidBuggyIps($avoidBuggyIps)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getAvoidBuggyIps()
-    {
-    }
-    /**
-     * If true, prevent IP addresses from being automatically assigned.
-     *
-     * @param bool $manualAssign
-     */
-    public function setManualAssign($manualAssign)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getManualAssign()
-    {
-    }
-    /**
-     * Required. The name of the address pool.
-     *
-     * @param string $pool
-     */
-    public function setPool($pool)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPool()
+    class Google_Service_GKEOnPrem_VmwareAddressPool extends \Google\Service\GKEOnPrem\VmwareAddressPool
     {
     }
 }

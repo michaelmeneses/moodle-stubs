@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIAP;
-
-class WorkforceIdentitySettings extends \Google\Collection
-{
-    protected $collection_key = 'workforcePools';
-    protected $oauth2Type = OAuth2::class;
-    protected $oauth2DataType = '';
-    /**
-     * The workforce pool resources. Only one workforce pool is accepted.
-     *
-     * @var string[]
-     */
-    public $workforcePools;
-    /**
-     * OAuth 2.0 settings for IAP to perform OIDC flow with workforce identity
-     * federation services.
-     *
-     * @param OAuth2 $oauth2
-     */
-    public function setOauth2(OAuth2 $oauth2)
+namespace Google\Service\CloudIAP {
+    class WorkforceIdentitySettings extends \Google\Collection
     {
+        protected $collection_key = 'workforcePools';
+        protected $oauth2Type = OAuth2::class;
+        protected $oauth2DataType = '';
+        /**
+         * The workforce pool resources. Only one workforce pool is accepted.
+         *
+         * @var string[]
+         */
+        public $workforcePools;
+        /**
+         * OAuth 2.0 settings for IAP to perform OIDC flow with workforce identity
+         * federation services.
+         *
+         * @param OAuth2 $oauth2
+         */
+        public function setOauth2(OAuth2 $oauth2)
+        {
+        }
+        /**
+         * @return OAuth2
+         */
+        public function getOauth2()
+        {
+        }
+        /**
+         * The workforce pool resources. Only one workforce pool is accepted.
+         *
+         * @param string[] $workforcePools
+         */
+        public function setWorkforcePools($workforcePools)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getWorkforcePools()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return OAuth2
+     * Runtime class alias of \Google\Service\CloudIAP\WorkforceIdentitySettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOauth2()
-    {
-    }
-    /**
-     * The workforce pool resources. Only one workforce pool is accepted.
-     *
-     * @param string[] $workforcePools
-     */
-    public function setWorkforcePools($workforcePools)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getWorkforcePools()
+    class Google_Service_CloudIAP_WorkforceIdentitySettings extends \Google\Service\CloudIAP\WorkforceIdentitySettings
     {
     }
 }

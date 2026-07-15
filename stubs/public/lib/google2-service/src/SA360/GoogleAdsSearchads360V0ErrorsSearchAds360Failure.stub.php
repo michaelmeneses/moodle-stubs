@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0ErrorsSearchAds360Failure extends \Google\Collection
-{
-    protected $collection_key = 'errors';
-    protected $errorsType = GoogleAdsSearchads360V0ErrorsSearchAds360Error::class;
-    protected $errorsDataType = 'array';
-    /**
-     * The unique ID of the request that is used for debugging purposes.
-     *
-     * @var string
-     */
-    public $requestId;
-    /**
-     * The list of errors that occurred.
-     *
-     * @param GoogleAdsSearchads360V0ErrorsSearchAds360Error[] $errors
-     */
-    public function setErrors($errors)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0ErrorsSearchAds360Failure extends \Google\Collection
     {
+        protected $collection_key = 'errors';
+        protected $errorsType = GoogleAdsSearchads360V0ErrorsSearchAds360Error::class;
+        protected $errorsDataType = 'array';
+        /**
+         * The unique ID of the request that is used for debugging purposes.
+         *
+         * @var string
+         */
+        public $requestId;
+        /**
+         * The list of errors that occurred.
+         *
+         * @param GoogleAdsSearchads360V0ErrorsSearchAds360Error[] $errors
+         */
+        public function setErrors($errors)
+        {
+        }
+        /**
+         * @return GoogleAdsSearchads360V0ErrorsSearchAds360Error[]
+         */
+        public function getErrors()
+        {
+        }
+        /**
+         * The unique ID of the request that is used for debugging purposes.
+         *
+         * @param string $requestId
+         */
+        public function setRequestId($requestId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAdsSearchads360V0ErrorsSearchAds360Error[]
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0ErrorsSearchAds360Failure registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrors()
-    {
-    }
-    /**
-     * The unique ID of the request that is used for debugging purposes.
-     *
-     * @param string $requestId
-     */
-    public function setRequestId($requestId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestId()
+    class Google_Service_SA360_GoogleAdsSearchads360V0ErrorsSearchAds360Failure extends \Google\Service\SA360\GoogleAdsSearchads360V0ErrorsSearchAds360Failure
     {
     }
 }

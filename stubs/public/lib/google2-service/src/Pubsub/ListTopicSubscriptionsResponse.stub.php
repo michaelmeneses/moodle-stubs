@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Pubsub;
-
-class ListTopicSubscriptionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'subscriptions';
-    /**
-     * Optional. If not empty, indicates that there may be more subscriptions that
-     * match the request; this value should be passed in a new
-     * `ListTopicSubscriptionsRequest` to get more subscriptions.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Optional. The names of subscriptions attached to the topic specified in the
-     * request.
-     *
-     * @var string[]
-     */
-    public $subscriptions;
-    /**
-     * Optional. If not empty, indicates that there may be more subscriptions that
-     * match the request; this value should be passed in a new
-     * `ListTopicSubscriptionsRequest` to get more subscriptions.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Pubsub {
+    class ListTopicSubscriptionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'subscriptions';
+        /**
+         * Optional. If not empty, indicates that there may be more subscriptions that
+         * match the request; this value should be passed in a new
+         * `ListTopicSubscriptionsRequest` to get more subscriptions.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Optional. The names of subscriptions attached to the topic specified in the
+         * request.
+         *
+         * @var string[]
+         */
+        public $subscriptions;
+        /**
+         * Optional. If not empty, indicates that there may be more subscriptions that
+         * match the request; this value should be passed in a new
+         * `ListTopicSubscriptionsRequest` to get more subscriptions.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Optional. The names of subscriptions attached to the topic specified in the
+         * request.
+         *
+         * @param string[] $subscriptions
+         */
+        public function setSubscriptions($subscriptions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSubscriptions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Pubsub\ListTopicSubscriptionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Optional. The names of subscriptions attached to the topic specified in the
-     * request.
-     *
-     * @param string[] $subscriptions
-     */
-    public function setSubscriptions($subscriptions)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSubscriptions()
+    class Google_Service_Pubsub_ListTopicSubscriptionsResponse extends \Google\Service\Pubsub\ListTopicSubscriptionsResponse
     {
     }
 }

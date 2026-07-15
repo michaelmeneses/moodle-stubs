@@ -21,157 +21,166 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class CloudAiPlatformTenantresourceCloudSqlInstanceConfig extends \Google\Collection
-{
-    protected $collection_key = 'mdbRolesForCorpAccess';
-    /**
-     * Output only. The CloudSQL instance connection name.
-     *
-     * @var string
-     */
-    public $cloudSqlInstanceConnectionName;
-    /**
-     * Input/Output [Optional]. The CloudSQL instance name within SLM instance. If
-     * not set, a random UUIC will be generated as instance name.
-     *
-     * @var string
-     */
-    public $cloudSqlInstanceName;
-    /**
-     * Input [Optional]. The KMS key name or the KMS grant name used for CMEK
-     * encryption. Only set this field when provisioning new CloudSQL instances.
-     * For existing CloudSQL instances, this field will be ignored because CMEK
-     * re-encryption is not supported.
-     *
-     * @var string
-     */
-    public $kmsKeyReference;
-    /**
-     * Input [Optional]. MDB roles for corp access to CloudSQL instance.
-     *
-     * @var string[]
-     */
-    public $mdbRolesForCorpAccess;
-    /**
-     * Output only. The SLM instance's full resource name.
-     *
-     * @var string
-     */
-    public $slmInstanceName;
-    /**
-     * Input [Required]. The SLM instance template to provision CloudSQL.
-     *
-     * @var string
-     */
-    public $slmInstanceTemplate;
-    /**
-     * Input [Required]. The SLM instance type to provision CloudSQL.
-     *
-     * @var string
-     */
-    public $slmInstanceType;
-    /**
-     * Output only. The CloudSQL instance connection name.
-     *
-     * @param string $cloudSqlInstanceConnectionName
-     */
-    public function setCloudSqlInstanceConnectionName($cloudSqlInstanceConnectionName)
+namespace Google\Service\Contentwarehouse {
+    class CloudAiPlatformTenantresourceCloudSqlInstanceConfig extends \Google\Collection
     {
+        protected $collection_key = 'mdbRolesForCorpAccess';
+        /**
+         * Output only. The CloudSQL instance connection name.
+         *
+         * @var string
+         */
+        public $cloudSqlInstanceConnectionName;
+        /**
+         * Input/Output [Optional]. The CloudSQL instance name within SLM instance. If
+         * not set, a random UUIC will be generated as instance name.
+         *
+         * @var string
+         */
+        public $cloudSqlInstanceName;
+        /**
+         * Input [Optional]. The KMS key name or the KMS grant name used for CMEK
+         * encryption. Only set this field when provisioning new CloudSQL instances.
+         * For existing CloudSQL instances, this field will be ignored because CMEK
+         * re-encryption is not supported.
+         *
+         * @var string
+         */
+        public $kmsKeyReference;
+        /**
+         * Input [Optional]. MDB roles for corp access to CloudSQL instance.
+         *
+         * @var string[]
+         */
+        public $mdbRolesForCorpAccess;
+        /**
+         * Output only. The SLM instance's full resource name.
+         *
+         * @var string
+         */
+        public $slmInstanceName;
+        /**
+         * Input [Required]. The SLM instance template to provision CloudSQL.
+         *
+         * @var string
+         */
+        public $slmInstanceTemplate;
+        /**
+         * Input [Required]. The SLM instance type to provision CloudSQL.
+         *
+         * @var string
+         */
+        public $slmInstanceType;
+        /**
+         * Output only. The CloudSQL instance connection name.
+         *
+         * @param string $cloudSqlInstanceConnectionName
+         */
+        public function setCloudSqlInstanceConnectionName($cloudSqlInstanceConnectionName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCloudSqlInstanceConnectionName()
+        {
+        }
+        /**
+         * Input/Output [Optional]. The CloudSQL instance name within SLM instance. If
+         * not set, a random UUIC will be generated as instance name.
+         *
+         * @param string $cloudSqlInstanceName
+         */
+        public function setCloudSqlInstanceName($cloudSqlInstanceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCloudSqlInstanceName()
+        {
+        }
+        /**
+         * Input [Optional]. The KMS key name or the KMS grant name used for CMEK
+         * encryption. Only set this field when provisioning new CloudSQL instances.
+         * For existing CloudSQL instances, this field will be ignored because CMEK
+         * re-encryption is not supported.
+         *
+         * @param string $kmsKeyReference
+         */
+        public function setKmsKeyReference($kmsKeyReference)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKmsKeyReference()
+        {
+        }
+        /**
+         * Input [Optional]. MDB roles for corp access to CloudSQL instance.
+         *
+         * @param string[] $mdbRolesForCorpAccess
+         */
+        public function setMdbRolesForCorpAccess($mdbRolesForCorpAccess)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMdbRolesForCorpAccess()
+        {
+        }
+        /**
+         * Output only. The SLM instance's full resource name.
+         *
+         * @param string $slmInstanceName
+         */
+        public function setSlmInstanceName($slmInstanceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSlmInstanceName()
+        {
+        }
+        /**
+         * Input [Required]. The SLM instance template to provision CloudSQL.
+         *
+         * @param string $slmInstanceTemplate
+         */
+        public function setSlmInstanceTemplate($slmInstanceTemplate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSlmInstanceTemplate()
+        {
+        }
+        /**
+         * Input [Required]. The SLM instance type to provision CloudSQL.
+         *
+         * @param string $slmInstanceType
+         */
+        public function setSlmInstanceType($slmInstanceType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSlmInstanceType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contentwarehouse\CloudAiPlatformTenantresourceCloudSqlInstanceConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCloudSqlInstanceConnectionName()
-    {
-    }
-    /**
-     * Input/Output [Optional]. The CloudSQL instance name within SLM instance. If
-     * not set, a random UUIC will be generated as instance name.
-     *
-     * @param string $cloudSqlInstanceName
-     */
-    public function setCloudSqlInstanceName($cloudSqlInstanceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCloudSqlInstanceName()
-    {
-    }
-    /**
-     * Input [Optional]. The KMS key name or the KMS grant name used for CMEK
-     * encryption. Only set this field when provisioning new CloudSQL instances.
-     * For existing CloudSQL instances, this field will be ignored because CMEK
-     * re-encryption is not supported.
-     *
-     * @param string $kmsKeyReference
-     */
-    public function setKmsKeyReference($kmsKeyReference)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKmsKeyReference()
-    {
-    }
-    /**
-     * Input [Optional]. MDB roles for corp access to CloudSQL instance.
-     *
-     * @param string[] $mdbRolesForCorpAccess
-     */
-    public function setMdbRolesForCorpAccess($mdbRolesForCorpAccess)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getMdbRolesForCorpAccess()
-    {
-    }
-    /**
-     * Output only. The SLM instance's full resource name.
-     *
-     * @param string $slmInstanceName
-     */
-    public function setSlmInstanceName($slmInstanceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSlmInstanceName()
-    {
-    }
-    /**
-     * Input [Required]. The SLM instance template to provision CloudSQL.
-     *
-     * @param string $slmInstanceTemplate
-     */
-    public function setSlmInstanceTemplate($slmInstanceTemplate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSlmInstanceTemplate()
-    {
-    }
-    /**
-     * Input [Required]. The SLM instance type to provision CloudSQL.
-     *
-     * @param string $slmInstanceType
-     */
-    public function setSlmInstanceType($slmInstanceType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSlmInstanceType()
+    class Google_Service_Contentwarehouse_CloudAiPlatformTenantresourceCloudSqlInstanceConfig extends \Google\Service\Contentwarehouse\CloudAiPlatformTenantresourceCloudSqlInstanceConfig
     {
     }
 }

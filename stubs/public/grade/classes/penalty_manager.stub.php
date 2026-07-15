@@ -22,6 +22,16 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_grades;
 
+use core\context;
+use core\plugininfo\gradepenalty;
+use core_plugin_manager;
+use grade_grade;
+use grade_item;
+use moodle_url;
+use navigation_node;
+use pix_icon;
+use settings_navigation;
+use stdClass;
 /**
  * Manager class for grade penalty.
  *
@@ -133,20 +143,6 @@ class penalty_manager
      * @return penalty_container The penalty container containing information about the applied penalty.
      */
     private static function apply_penalty(int $userid, grade_item $gradeitem, int $submissiondate, int $duedate, bool $previewonly = false): penalty_container
-    {
-    }
-    /**
-     * Apply grade-item multfactor/plusfactor to a raw penalised grade, returning a value
-     * on the same scale as the gradebook finalgrade.
-     *
-     * @param float $rawgrade The penalised raw grade (before grade-item factors are applied).
-     * @param grade_item $gradeitem The grade item whose multfactor/plusfactor to apply.
-     * @param grade_grade|null $usergrade The user's grade_grade record, which carries the
-     *        rawgrademin/rawgrademax stored at grading time. Falls back to gradeitem
-     *        grademin/grademax when null or when the record has not yet been persisted.
-     * @return float|null The adjusted grade, or null when rawgrade is null.
-     */
-    public static function apply_grade_item_factors(float $rawgrade, grade_item $gradeitem, ?grade_grade $usergrade = null): ?float
     {
     }
     /**

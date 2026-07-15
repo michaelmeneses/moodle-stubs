@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Gmail;
-
-class ListThreadsResponse extends \Google\Collection
-{
-    protected $collection_key = 'threads';
-    /**
-     * Page token to retrieve the next page of results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Estimated total number of results.
-     *
-     * @var string
-     */
-    public $resultSizeEstimate;
-    protected $threadsType = Thread::class;
-    protected $threadsDataType = 'array';
-    /**
-     * Page token to retrieve the next page of results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Gmail {
+    class ListThreadsResponse extends \Google\Collection
     {
+        protected $collection_key = 'threads';
+        /**
+         * Page token to retrieve the next page of results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Estimated total number of results.
+         *
+         * @var string
+         */
+        public $resultSizeEstimate;
+        protected $threadsType = Thread::class;
+        protected $threadsDataType = 'array';
+        /**
+         * Page token to retrieve the next page of results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Estimated total number of results.
+         *
+         * @param string $resultSizeEstimate
+         */
+        public function setResultSizeEstimate($resultSizeEstimate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResultSizeEstimate()
+        {
+        }
+        /**
+         * List of threads. Note that each thread resource does not contain a list of
+         * `messages`. The list of `messages` for a given thread can be fetched using
+         * the [`threads.get`](https://developers.google.com/workspace/gmail/api/v1/re
+         * ference/users/threads/get) method.
+         *
+         * @param Thread[] $threads
+         */
+        public function setThreads($threads)
+        {
+        }
+        /**
+         * @return Thread[]
+         */
+        public function getThreads()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Gmail\ListThreadsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Estimated total number of results.
-     *
-     * @param string $resultSizeEstimate
-     */
-    public function setResultSizeEstimate($resultSizeEstimate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResultSizeEstimate()
-    {
-    }
-    /**
-     * List of threads. Note that each thread resource does not contain a list of
-     * `messages`. The list of `messages` for a given thread can be fetched using
-     * the [`threads.get`](https://developers.google.com/workspace/gmail/api/v1/re
-     * ference/users/threads/get) method.
-     *
-     * @param Thread[] $threads
-     */
-    public function setThreads($threads)
-    {
-    }
-    /**
-     * @return Thread[]
-     */
-    public function getThreads()
+    class Google_Service_Gmail_ListThreadsResponse extends \Google\Service\Gmail\ListThreadsResponse
     {
     }
 }

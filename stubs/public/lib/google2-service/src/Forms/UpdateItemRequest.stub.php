@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Forms;
-
-class UpdateItemRequest extends \Google\Model
-{
-    protected $itemType = Item::class;
-    protected $itemDataType = '';
-    protected $locationType = Location::class;
-    protected $locationDataType = '';
-    /**
-     * Required. Only values named in this mask are changed.
-     *
-     * @var string
-     */
-    public $updateMask;
-    /**
-     * Required. New values for the item. Note that item and question IDs are used
-     * if they are provided (and are in the field mask). If an ID is blank (and in
-     * the field mask) a new ID is generated. This means you can modify an item by
-     * getting the form via forms.get, modifying your local copy of that item to
-     * be how you want it, and using UpdateItemRequest to write it back, with the
-     * IDs being the same (or not in the field mask).
-     *
-     * @param Item $item
-     */
-    public function setItem(Item $item)
+namespace Google\Service\Forms {
+    class UpdateItemRequest extends \Google\Model
     {
+        protected $itemType = Item::class;
+        protected $itemDataType = '';
+        protected $locationType = Location::class;
+        protected $locationDataType = '';
+        /**
+         * Required. Only values named in this mask are changed.
+         *
+         * @var string
+         */
+        public $updateMask;
+        /**
+         * Required. New values for the item. Note that item and question IDs are used
+         * if they are provided (and are in the field mask). If an ID is blank (and in
+         * the field mask) a new ID is generated. This means you can modify an item by
+         * getting the form via forms.get, modifying your local copy of that item to
+         * be how you want it, and using UpdateItemRequest to write it back, with the
+         * IDs being the same (or not in the field mask).
+         *
+         * @param Item $item
+         */
+        public function setItem(Item $item)
+        {
+        }
+        /**
+         * @return Item
+         */
+        public function getItem()
+        {
+        }
+        /**
+         * Required. The location identifying the item to update.
+         *
+         * @param Location $location
+         */
+        public function setLocation(Location $location)
+        {
+        }
+        /**
+         * @return Location
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * Required. Only values named in this mask are changed.
+         *
+         * @param string $updateMask
+         */
+        public function setUpdateMask($updateMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateMask()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Item
+     * Runtime class alias of \Google\Service\Forms\UpdateItemRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItem()
-    {
-    }
-    /**
-     * Required. The location identifying the item to update.
-     *
-     * @param Location $location
-     */
-    public function setLocation(Location $location)
-    {
-    }
-    /**
-     * @return Location
-     */
-    public function getLocation()
-    {
-    }
-    /**
-     * Required. Only values named in this mask are changed.
-     *
-     * @param string $updateMask
-     */
-    public function setUpdateMask($updateMask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateMask()
+    class Google_Service_Forms_UpdateItemRequest extends \Google\Service\Forms\UpdateItemRequest
     {
     }
 }

@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2beta1KnowledgeAssistAnswerKnowledgeAnswer extends \Google\Model
-{
-    /**
-     * The piece of text from the `source` that answers this suggested query.
-     *
-     * @var string
-     */
-    public $answerText;
-    protected $faqSourceType = GoogleCloudDialogflowV2beta1KnowledgeAssistAnswerKnowledgeAnswerFaqSource::class;
-    protected $faqSourceDataType = '';
-    protected $generativeSourceType = GoogleCloudDialogflowV2beta1KnowledgeAssistAnswerKnowledgeAnswerGenerativeSource::class;
-    protected $generativeSourceDataType = '';
-    /**
-     * The piece of text from the `source` that answers this suggested query.
-     *
-     * @param string $answerText
-     */
-    public function setAnswerText($answerText)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2beta1KnowledgeAssistAnswerKnowledgeAnswer extends \Google\Model
     {
+        /**
+         * The piece of text from the `source` that answers this suggested query.
+         *
+         * @var string
+         */
+        public $answerText;
+        protected $faqSourceType = GoogleCloudDialogflowV2beta1KnowledgeAssistAnswerKnowledgeAnswerFaqSource::class;
+        protected $faqSourceDataType = '';
+        protected $generativeSourceType = GoogleCloudDialogflowV2beta1KnowledgeAssistAnswerKnowledgeAnswerGenerativeSource::class;
+        protected $generativeSourceDataType = '';
+        /**
+         * The piece of text from the `source` that answers this suggested query.
+         *
+         * @param string $answerText
+         */
+        public function setAnswerText($answerText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnswerText()
+        {
+        }
+        /**
+         * Populated if the prediction came from FAQ.
+         *
+         * @param GoogleCloudDialogflowV2beta1KnowledgeAssistAnswerKnowledgeAnswerFaqSource $faqSource
+         */
+        public function setFaqSource(GoogleCloudDialogflowV2beta1KnowledgeAssistAnswerKnowledgeAnswerFaqSource $faqSource)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2beta1KnowledgeAssistAnswerKnowledgeAnswerFaqSource
+         */
+        public function getFaqSource()
+        {
+        }
+        /**
+         * Populated if the prediction was Generative.
+         *
+         * @param GoogleCloudDialogflowV2beta1KnowledgeAssistAnswerKnowledgeAnswerGenerativeSource $generativeSource
+         */
+        public function setGenerativeSource(GoogleCloudDialogflowV2beta1KnowledgeAssistAnswerKnowledgeAnswerGenerativeSource $generativeSource)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2beta1KnowledgeAssistAnswerKnowledgeAnswerGenerativeSource
+         */
+        public function getGenerativeSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1KnowledgeAssistAnswerKnowledgeAnswer registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnswerText()
-    {
-    }
-    /**
-     * Populated if the prediction came from FAQ.
-     *
-     * @param GoogleCloudDialogflowV2beta1KnowledgeAssistAnswerKnowledgeAnswerFaqSource $faqSource
-     */
-    public function setFaqSource(GoogleCloudDialogflowV2beta1KnowledgeAssistAnswerKnowledgeAnswerFaqSource $faqSource)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowV2beta1KnowledgeAssistAnswerKnowledgeAnswerFaqSource
-     */
-    public function getFaqSource()
-    {
-    }
-    /**
-     * Populated if the prediction was Generative.
-     *
-     * @param GoogleCloudDialogflowV2beta1KnowledgeAssistAnswerKnowledgeAnswerGenerativeSource $generativeSource
-     */
-    public function setGenerativeSource(GoogleCloudDialogflowV2beta1KnowledgeAssistAnswerKnowledgeAnswerGenerativeSource $generativeSource)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowV2beta1KnowledgeAssistAnswerKnowledgeAnswerGenerativeSource
-     */
-    public function getGenerativeSource()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1KnowledgeAssistAnswerKnowledgeAnswer extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1KnowledgeAssistAnswerKnowledgeAnswer
     {
     }
 }

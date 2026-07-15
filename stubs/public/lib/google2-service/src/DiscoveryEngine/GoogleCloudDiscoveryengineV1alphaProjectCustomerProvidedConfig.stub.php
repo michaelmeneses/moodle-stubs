@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaProjectCustomerProvidedConfig extends \Google\Model
-{
-    protected $notebooklmConfigType = GoogleCloudDiscoveryengineV1alphaProjectCustomerProvidedConfigNotebooklmConfig::class;
-    protected $notebooklmConfigDataType = '';
-    /**
-     * Optional. Configuration for NotebookLM settings.
-     *
-     * @param GoogleCloudDiscoveryengineV1alphaProjectCustomerProvidedConfigNotebooklmConfig $notebooklmConfig
-     */
-    public function setNotebooklmConfig(GoogleCloudDiscoveryengineV1alphaProjectCustomerProvidedConfigNotebooklmConfig $notebooklmConfig)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaProjectCustomerProvidedConfig extends \Google\Model
     {
+        protected $notebooklmConfigType = GoogleCloudDiscoveryengineV1alphaProjectCustomerProvidedConfigNotebooklmConfig::class;
+        protected $notebooklmConfigDataType = '';
+        /**
+         * Optional. Configuration for NotebookLM settings.
+         *
+         * @param GoogleCloudDiscoveryengineV1alphaProjectCustomerProvidedConfigNotebooklmConfig $notebooklmConfig
+         */
+        public function setNotebooklmConfig(GoogleCloudDiscoveryengineV1alphaProjectCustomerProvidedConfigNotebooklmConfig $notebooklmConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1alphaProjectCustomerProvidedConfigNotebooklmConfig
+         */
+        public function getNotebooklmConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1alphaProjectCustomerProvidedConfigNotebooklmConfig
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaProjectCustomerProvidedConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNotebooklmConfig()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaProjectCustomerProvidedConfig extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaProjectCustomerProvidedConfig
     {
     }
 }

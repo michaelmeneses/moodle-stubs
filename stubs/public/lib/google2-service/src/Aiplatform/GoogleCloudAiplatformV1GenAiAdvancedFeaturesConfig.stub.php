@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1GenAiAdvancedFeaturesConfig extends \Google\Model
-{
-    protected $ragConfigType = GoogleCloudAiplatformV1GenAiAdvancedFeaturesConfigRagConfig::class;
-    protected $ragConfigDataType = '';
-    /**
-     * Configuration for Retrieval Augmented Generation feature.
-     *
-     * @param GoogleCloudAiplatformV1GenAiAdvancedFeaturesConfigRagConfig $ragConfig
-     */
-    public function setRagConfig(GoogleCloudAiplatformV1GenAiAdvancedFeaturesConfigRagConfig $ragConfig)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1GenAiAdvancedFeaturesConfig extends \Google\Model
     {
+        protected $ragConfigType = GoogleCloudAiplatformV1GenAiAdvancedFeaturesConfigRagConfig::class;
+        protected $ragConfigDataType = '';
+        /**
+         * Configuration for Retrieval Augmented Generation feature.
+         *
+         * @param GoogleCloudAiplatformV1GenAiAdvancedFeaturesConfigRagConfig $ragConfig
+         */
+        public function setRagConfig(GoogleCloudAiplatformV1GenAiAdvancedFeaturesConfigRagConfig $ragConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1GenAiAdvancedFeaturesConfigRagConfig
+         */
+        public function getRagConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1GenAiAdvancedFeaturesConfigRagConfig
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1GenAiAdvancedFeaturesConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRagConfig()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1GenAiAdvancedFeaturesConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1GenAiAdvancedFeaturesConfig
     {
     }
 }

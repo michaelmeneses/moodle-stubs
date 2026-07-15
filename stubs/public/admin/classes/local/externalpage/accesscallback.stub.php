@@ -29,6 +29,7 @@
  */
 namespace core_admin\local\externalpage;
 
+use admin_externalpage;
 /**
  * Admin externalpage class
  *

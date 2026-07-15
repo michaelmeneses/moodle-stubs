@@ -21,100 +21,112 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild\Resource;
-
-/**
- * The "githubEnterpriseConfigs" collection of methods.
- * Typical usage is:
- *  <code>
- *   $cloudbuildService = new Google\Service\CloudBuild(...);
- *   $githubEnterpriseConfigs = $cloudbuildService->projects_locations_githubEnterpriseConfigs;
- *  </code>
- */
-class ProjectsLocationsGithubEnterpriseConfigs extends \Google\Service\Resource
-{
+namespace Google\Service\CloudBuild\Resource {
+    use Google\Service\CloudBuild\GitHubEnterpriseConfig;
+    use Google\Service\CloudBuild\ListGithubEnterpriseConfigsResponse;
+    use Google\Service\CloudBuild\Operation;
     /**
-     * Create an association between a GCP project and a GitHub Enterprise server.
-     * (githubEnterpriseConfigs.create)
-     *
-     * @param string $parent Name of the parent project. For example:
-     * projects/{$project_number} or projects/{$project_id}
-     * @param GitHubEnterpriseConfig $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string gheConfigId Optional. The ID to use for the
-     * GithubEnterpriseConfig, which will become the final component of the
-     * GithubEnterpriseConfig's resource name. ghe_config_id must meet the following
-     * requirements: + They must contain only alphanumeric characters and dashes. +
-     * They can be 1-64 characters long. + They must begin and end with an
-     * alphanumeric character
-     * @opt_param string projectId ID of the project.
-     * @return Operation
+     * The "githubEnterpriseConfigs" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $cloudbuildService = new Google\Service\CloudBuild(...);
+     *   $githubEnterpriseConfigs = $cloudbuildService->projects_locations_githubEnterpriseConfigs;
+     *  </code>
      */
-    public function create($parent, GitHubEnterpriseConfig $postBody, $optParams = [])
+    class ProjectsLocationsGithubEnterpriseConfigs extends \Google\Service\Resource
     {
+        /**
+         * Create an association between a GCP project and a GitHub Enterprise server.
+         * (githubEnterpriseConfigs.create)
+         *
+         * @param string $parent Name of the parent project. For example:
+         * projects/{$project_number} or projects/{$project_id}
+         * @param GitHubEnterpriseConfig $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string gheConfigId Optional. The ID to use for the
+         * GithubEnterpriseConfig, which will become the final component of the
+         * GithubEnterpriseConfig's resource name. ghe_config_id must meet the following
+         * requirements: + They must contain only alphanumeric characters and dashes. +
+         * They can be 1-64 characters long. + They must begin and end with an
+         * alphanumeric character
+         * @opt_param string projectId ID of the project.
+         * @return Operation
+         */
+        public function create($parent, GitHubEnterpriseConfig $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Delete an association between a GCP project and a GitHub Enterprise server.
+         * (githubEnterpriseConfigs.delete)
+         *
+         * @param string $name This field should contain the name of the enterprise
+         * config resource. For example: "projects/{$project_id}/locations/{$location_id
+         * }/githubEnterpriseConfigs/{$config_id}"
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string configId Unique identifier of the `GitHubEnterpriseConfig`
+         * @opt_param string projectId ID of the project
+         * @return Operation
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Retrieve a GitHubEnterpriseConfig. (githubEnterpriseConfigs.get)
+         *
+         * @param string $name This field should contain the name of the enterprise
+         * config resource. For example: "projects/{$project_id}/locations/{$location_id
+         * }/githubEnterpriseConfigs/{$config_id}"
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string configId Unique identifier of the `GitHubEnterpriseConfig`
+         * @opt_param string projectId ID of the project
+         * @return GitHubEnterpriseConfig
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * List all GitHubEnterpriseConfigs for a given project.
+         * (githubEnterpriseConfigs.listProjectsLocationsGithubEnterpriseConfigs)
+         *
+         * @param string $parent Name of the parent project. For example:
+         * projects/{$project_number} or projects/{$project_id}
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string projectId ID of the project
+         * @return ListGithubEnterpriseConfigsResponse
+         */
+        public function listProjectsLocationsGithubEnterpriseConfigs($parent, $optParams = [])
+        {
+        }
+        /**
+         * Update an association between a GCP project and a GitHub Enterprise server.
+         * (githubEnterpriseConfigs.patch)
+         *
+         * @param string $name Optional. The full resource name for the
+         * GitHubEnterpriseConfig For example: "projects/{$project_id}/locations/{$locat
+         * ion_id}/githubEnterpriseConfigs/{$config_id}"
+         * @param GitHubEnterpriseConfig $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Update mask for the resource. If this is set,
+         * the server will only update the fields specified in the field mask.
+         * Otherwise, a full update of the mutable resource fields will be performed.
+         * @return Operation
+         */
+        public function patch($name, GitHubEnterpriseConfig $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Delete an association between a GCP project and a GitHub Enterprise server.
-     * (githubEnterpriseConfigs.delete)
-     *
-     * @param string $name This field should contain the name of the enterprise
-     * config resource. For example: "projects/{$project_id}/locations/{$location_id
-     * }/githubEnterpriseConfigs/{$config_id}"
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string configId Unique identifier of the `GitHubEnterpriseConfig`
-     * @opt_param string projectId ID of the project
-     * @return Operation
+     * Runtime class alias of \Google\Service\CloudBuild\Resource\ProjectsLocationsGithubEnterpriseConfigs registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Retrieve a GitHubEnterpriseConfig. (githubEnterpriseConfigs.get)
-     *
-     * @param string $name This field should contain the name of the enterprise
-     * config resource. For example: "projects/{$project_id}/locations/{$location_id
-     * }/githubEnterpriseConfigs/{$config_id}"
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string configId Unique identifier of the `GitHubEnterpriseConfig`
-     * @opt_param string projectId ID of the project
-     * @return GitHubEnterpriseConfig
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * List all GitHubEnterpriseConfigs for a given project.
-     * (githubEnterpriseConfigs.listProjectsLocationsGithubEnterpriseConfigs)
-     *
-     * @param string $parent Name of the parent project. For example:
-     * projects/{$project_number} or projects/{$project_id}
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string projectId ID of the project
-     * @return ListGithubEnterpriseConfigsResponse
-     */
-    public function listProjectsLocationsGithubEnterpriseConfigs($parent, $optParams = [])
-    {
-    }
-    /**
-     * Update an association between a GCP project and a GitHub Enterprise server.
-     * (githubEnterpriseConfigs.patch)
-     *
-     * @param string $name Optional. The full resource name for the
-     * GitHubEnterpriseConfig For example: "projects/{$project_id}/locations/{$locat
-     * ion_id}/githubEnterpriseConfigs/{$config_id}"
-     * @param GitHubEnterpriseConfig $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Update mask for the resource. If this is set,
-     * the server will only update the fields specified in the field mask.
-     * Otherwise, a full update of the mutable resource fields will be performed.
-     * @return Operation
-     */
-    public function patch($name, GitHubEnterpriseConfig $postBody, $optParams = [])
+    class Google_Service_CloudBuild_Resource_ProjectsLocationsGithubEnterpriseConfigs extends \Google\Service\CloudBuild\Resource\ProjectsLocationsGithubEnterpriseConfigs
     {
     }
 }

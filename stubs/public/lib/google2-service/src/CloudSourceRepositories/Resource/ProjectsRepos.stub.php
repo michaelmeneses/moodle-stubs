@@ -21,163 +21,182 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSourceRepositories\Resource;
-
-/**
- * The "repos" collection of methods.
- * Typical usage is:
- *  <code>
- *   $sourcerepoService = new Google\Service\CloudSourceRepositories(...);
- *   $repos = $sourcerepoService->projects_repos;
- *  </code>
- */
-class ProjectsRepos extends \Google\Service\Resource
-{
+namespace Google\Service\CloudSourceRepositories\Resource {
+    use Google\Service\CloudSourceRepositories\ListReposResponse;
+    use Google\Service\CloudSourceRepositories\Operation;
+    use Google\Service\CloudSourceRepositories\Policy;
+    use Google\Service\CloudSourceRepositories\Repo;
+    use Google\Service\CloudSourceRepositories\SetIamPolicyRequest;
+    use Google\Service\CloudSourceRepositories\SourcerepoEmpty;
+    use Google\Service\CloudSourceRepositories\SyncRepoRequest;
+    use Google\Service\CloudSourceRepositories\TestIamPermissionsRequest;
+    use Google\Service\CloudSourceRepositories\TestIamPermissionsResponse;
+    use Google\Service\CloudSourceRepositories\UpdateRepoRequest;
     /**
-     * Creates a repo in the given project with the given name. If the named
-     * repository already exists, `CreateRepo` returns `ALREADY_EXISTS`.
-     * (repos.create)
-     *
-     * @param string $parent The project in which to create the repo. Values are of
-     * the form `projects/`.
-     * @param Repo $postBody
-     * @param array $optParams Optional parameters.
-     * @return Repo
-     * @throws \Google\Service\Exception
+     * The "repos" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $sourcerepoService = new Google\Service\CloudSourceRepositories(...);
+     *   $repos = $sourcerepoService->projects_repos;
+     *  </code>
      */
-    public function create($parent, Repo $postBody, $optParams = [])
+    class ProjectsRepos extends \Google\Service\Resource
     {
+        /**
+         * Creates a repo in the given project with the given name. If the named
+         * repository already exists, `CreateRepo` returns `ALREADY_EXISTS`.
+         * (repos.create)
+         *
+         * @param string $parent The project in which to create the repo. Values are of
+         * the form `projects/`.
+         * @param Repo $postBody
+         * @param array $optParams Optional parameters.
+         * @return Repo
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, Repo $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a repo. (repos.delete)
+         *
+         * @param string $name The name of the repo to delete. Values are of the form
+         * `projects//repos/`.
+         * @param array $optParams Optional parameters.
+         * @return SourcerepoEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Returns information about a repo. (repos.get)
+         *
+         * @param string $name The name of the requested repository. Values are of the
+         * form `projects//repos/`.
+         * @param array $optParams Optional parameters.
+         * @return Repo
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets the IAM policy policy for a resource. Returns an empty policy if the
+         * resource exists and does not have a policy set. (repos.getIamPolicy)
+         *
+         * @param string $resource REQUIRED: The resource for which the policy is being
+         * requested. See [Resource
+         * names](https://cloud.google.com/apis/design/resource_names) for the
+         * appropriate value for this field.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int options.requestedPolicyVersion Optional. The maximum policy
+         * version that will be used to format the policy. Valid values are 0, 1, and 3.
+         * Requests specifying an invalid value will be rejected. Requests for policies
+         * with any conditional role bindings must specify version 3. Policies with no
+         * conditional role bindings may specify any valid value or leave the field
+         * unset. The policy in the response might use the policy version that you
+         * specified, or it might use a lower policy version. For example, if you
+         * specify version 3, but the policy has no conditional role bindings, the
+         * response uses version 1. To learn which resources support conditions in their
+         * IAM policies, see the [IAM
+         * documentation](https://cloud.google.com/iam/help/conditions/resource-
+         * policies).
+         * @return Policy
+         * @throws \Google\Service\Exception
+         */
+        public function getIamPolicy($resource, $optParams = [])
+        {
+        }
+        /**
+         * Returns all repos belonging to a project. The sizes of the repos are not set
+         * by ListRepos. To get the size of a repo, use GetRepo.
+         * (repos.listProjectsRepos)
+         *
+         * @param string $name The project ID whose repos should be listed. Values are
+         * of the form `projects/`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Maximum number of repositories to return; between 1
+         * and 500. If not set or zero, defaults to 100 at the server.
+         * @opt_param string pageToken Resume listing repositories where a prior
+         * ListReposResponse left off. This is an opaque token that must be obtained
+         * from a recent, prior ListReposResponse's next_page_token field.
+         * @return ListReposResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsRepos($name, $optParams = [])
+        {
+        }
+        /**
+         * Updates information about a repo. (repos.patch)
+         *
+         * @param string $name The name of the requested repository. Values are of the
+         * form `projects//repos/`.
+         * @param UpdateRepoRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Repo
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, UpdateRepoRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Sets the IAM policy on the specified resource. Replaces any existing policy.
+         * (repos.setIamPolicy)
+         *
+         * @param string $resource REQUIRED: The resource for which the policy is being
+         * specified. See [Resource
+         * names](https://cloud.google.com/apis/design/resource_names) for the
+         * appropriate value for this field.
+         * @param SetIamPolicyRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Policy
+         * @throws \Google\Service\Exception
+         */
+        public function setIamPolicy($resource, SetIamPolicyRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Synchronize a connected repo. The response contains SyncRepoMetadata in the
+         * metadata field. (repos.sync)
+         *
+         * @param string $name The name of the repo to synchronize. Values are of the
+         * form `projects//repos/`.
+         * @param SyncRepoRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function sync($name, SyncRepoRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Returns permissions that a caller has on the specified resource. If the
+         * resource does not exist, this will return an empty set of permissions, not a
+         * NOT_FOUND error. (repos.testIamPermissions)
+         *
+         * @param string $resource REQUIRED: The resource for which the policy detail is
+         * being requested. See [Resource
+         * names](https://cloud.google.com/apis/design/resource_names) for the
+         * appropriate value for this field.
+         * @param TestIamPermissionsRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return TestIamPermissionsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function testIamPermissions($resource, TestIamPermissionsRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a repo. (repos.delete)
-     *
-     * @param string $name The name of the repo to delete. Values are of the form
-     * `projects//repos/`.
-     * @param array $optParams Optional parameters.
-     * @return SourcerepoEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\CloudSourceRepositories\Resource\ProjectsRepos registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Returns information about a repo. (repos.get)
-     *
-     * @param string $name The name of the requested repository. Values are of the
-     * form `projects//repos/`.
-     * @param array $optParams Optional parameters.
-     * @return Repo
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets the IAM policy policy for a resource. Returns an empty policy if the
-     * resource exists and does not have a policy set. (repos.getIamPolicy)
-     *
-     * @param string $resource REQUIRED: The resource for which the policy is being
-     * requested. See [Resource
-     * names](https://cloud.google.com/apis/design/resource_names) for the
-     * appropriate value for this field.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int options.requestedPolicyVersion Optional. The maximum policy
-     * version that will be used to format the policy. Valid values are 0, 1, and 3.
-     * Requests specifying an invalid value will be rejected. Requests for policies
-     * with any conditional role bindings must specify version 3. Policies with no
-     * conditional role bindings may specify any valid value or leave the field
-     * unset. The policy in the response might use the policy version that you
-     * specified, or it might use a lower policy version. For example, if you
-     * specify version 3, but the policy has no conditional role bindings, the
-     * response uses version 1. To learn which resources support conditions in their
-     * IAM policies, see the [IAM
-     * documentation](https://cloud.google.com/iam/help/conditions/resource-
-     * policies).
-     * @return Policy
-     * @throws \Google\Service\Exception
-     */
-    public function getIamPolicy($resource, $optParams = [])
-    {
-    }
-    /**
-     * Returns all repos belonging to a project. The sizes of the repos are not set
-     * by ListRepos. To get the size of a repo, use GetRepo.
-     * (repos.listProjectsRepos)
-     *
-     * @param string $name The project ID whose repos should be listed. Values are
-     * of the form `projects/`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Maximum number of repositories to return; between 1
-     * and 500. If not set or zero, defaults to 100 at the server.
-     * @opt_param string pageToken Resume listing repositories where a prior
-     * ListReposResponse left off. This is an opaque token that must be obtained
-     * from a recent, prior ListReposResponse's next_page_token field.
-     * @return ListReposResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsRepos($name, $optParams = [])
-    {
-    }
-    /**
-     * Updates information about a repo. (repos.patch)
-     *
-     * @param string $name The name of the requested repository. Values are of the
-     * form `projects//repos/`.
-     * @param UpdateRepoRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Repo
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, UpdateRepoRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Sets the IAM policy on the specified resource. Replaces any existing policy.
-     * (repos.setIamPolicy)
-     *
-     * @param string $resource REQUIRED: The resource for which the policy is being
-     * specified. See [Resource
-     * names](https://cloud.google.com/apis/design/resource_names) for the
-     * appropriate value for this field.
-     * @param SetIamPolicyRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Policy
-     * @throws \Google\Service\Exception
-     */
-    public function setIamPolicy($resource, SetIamPolicyRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Synchronize a connected repo. The response contains SyncRepoMetadata in the
-     * metadata field. (repos.sync)
-     *
-     * @param string $name The name of the repo to synchronize. Values are of the
-     * form `projects//repos/`.
-     * @param SyncRepoRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
-     */
-    public function sync($name, SyncRepoRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Returns permissions that a caller has on the specified resource. If the
-     * resource does not exist, this will return an empty set of permissions, not a
-     * NOT_FOUND error. (repos.testIamPermissions)
-     *
-     * @param string $resource REQUIRED: The resource for which the policy detail is
-     * being requested. See [Resource
-     * names](https://cloud.google.com/apis/design/resource_names) for the
-     * appropriate value for this field.
-     * @param TestIamPermissionsRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return TestIamPermissionsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function testIamPermissions($resource, TestIamPermissionsRequest $postBody, $optParams = [])
+    class Google_Service_CloudSourceRepositories_Resource_ProjectsRepos extends \Google\Service\CloudSourceRepositories\Resource\ProjectsRepos
     {
     }
 }

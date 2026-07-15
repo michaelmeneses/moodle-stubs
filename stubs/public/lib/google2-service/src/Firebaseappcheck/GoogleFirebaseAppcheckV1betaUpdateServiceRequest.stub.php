@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firebaseappcheck;
-
-class GoogleFirebaseAppcheckV1betaUpdateServiceRequest extends \Google\Model
-{
-    protected $serviceType = GoogleFirebaseAppcheckV1betaService::class;
-    protected $serviceDataType = '';
-    /**
-     * @var string
-     */
-    public $updateMask;
-    /**
-     * @param GoogleFirebaseAppcheckV1betaService
-     */
-    public function setService(GoogleFirebaseAppcheckV1betaService $service)
+namespace Google\Service\Firebaseappcheck {
+    class GoogleFirebaseAppcheckV1betaUpdateServiceRequest extends \Google\Model
     {
+        protected $serviceType = GoogleFirebaseAppcheckV1betaService::class;
+        protected $serviceDataType = '';
+        /**
+         * @var string
+         */
+        public $updateMask;
+        /**
+         * @param GoogleFirebaseAppcheckV1betaService
+         */
+        public function setService(GoogleFirebaseAppcheckV1betaService $service)
+        {
+        }
+        /**
+         * @return GoogleFirebaseAppcheckV1betaService
+         */
+        public function getService()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUpdateMask($updateMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateMask()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleFirebaseAppcheckV1betaService
+     * Runtime class alias of \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1betaUpdateServiceRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getService()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUpdateMask($updateMask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateMask()
+    class Google_Service_Firebaseappcheck_GoogleFirebaseAppcheckV1betaUpdateServiceRequest extends \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1betaUpdateServiceRequest
     {
     }
 }

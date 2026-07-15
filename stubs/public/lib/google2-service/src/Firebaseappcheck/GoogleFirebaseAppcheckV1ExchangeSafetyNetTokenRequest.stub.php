@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firebaseappcheck;
-
-class GoogleFirebaseAppcheckV1ExchangeSafetyNetTokenRequest extends \Google\Model
-{
-    /**
-     * Required. The [SafetyNet attestation response](https://developer.android.co
-     * m/training/safetynet/attestation#request-attestation-step) issued to your
-     * app.
-     *
-     * @var string
-     */
-    public $safetyNetToken;
-    /**
-     * Required. The [SafetyNet attestation response](https://developer.android.co
-     * m/training/safetynet/attestation#request-attestation-step) issued to your
-     * app.
-     *
-     * @param string $safetyNetToken
-     */
-    public function setSafetyNetToken($safetyNetToken)
+namespace Google\Service\Firebaseappcheck {
+    class GoogleFirebaseAppcheckV1ExchangeSafetyNetTokenRequest extends \Google\Model
     {
+        /**
+         * Required. The [SafetyNet attestation response](https://developer.android.co
+         * m/training/safetynet/attestation#request-attestation-step) issued to your
+         * app.
+         *
+         * @var string
+         */
+        public $safetyNetToken;
+        /**
+         * Required. The [SafetyNet attestation response](https://developer.android.co
+         * m/training/safetynet/attestation#request-attestation-step) issued to your
+         * app.
+         *
+         * @param string $safetyNetToken
+         */
+        public function setSafetyNetToken($safetyNetToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSafetyNetToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1ExchangeSafetyNetTokenRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSafetyNetToken()
+    class Google_Service_Firebaseappcheck_GoogleFirebaseAppcheckV1ExchangeSafetyNetTokenRequest extends \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1ExchangeSafetyNetTokenRequest
     {
     }
 }

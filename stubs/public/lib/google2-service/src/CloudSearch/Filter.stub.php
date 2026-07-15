@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class Filter extends \Google\Model
-{
-    protected $compositeFilterType = CompositeFilter::class;
-    protected $compositeFilterDataType = '';
-    protected $valueFilterType = ValueFilter::class;
-    protected $valueFilterDataType = '';
-    /**
-     * @param CompositeFilter $compositeFilter
-     */
-    public function setCompositeFilter(CompositeFilter $compositeFilter)
+namespace Google\Service\CloudSearch {
+    class Filter extends \Google\Model
     {
+        protected $compositeFilterType = CompositeFilter::class;
+        protected $compositeFilterDataType = '';
+        protected $valueFilterType = ValueFilter::class;
+        protected $valueFilterDataType = '';
+        /**
+         * @param CompositeFilter $compositeFilter
+         */
+        public function setCompositeFilter(CompositeFilter $compositeFilter)
+        {
+        }
+        /**
+         * @return CompositeFilter
+         */
+        public function getCompositeFilter()
+        {
+        }
+        /**
+         * @param ValueFilter $valueFilter
+         */
+        public function setValueFilter(ValueFilter $valueFilter)
+        {
+        }
+        /**
+         * @return ValueFilter
+         */
+        public function getValueFilter()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CompositeFilter
+     * Runtime class alias of \Google\Service\CloudSearch\Filter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCompositeFilter()
-    {
-    }
-    /**
-     * @param ValueFilter $valueFilter
-     */
-    public function setValueFilter(ValueFilter $valueFilter)
-    {
-    }
-    /**
-     * @return ValueFilter
-     */
-    public function getValueFilter()
+    class Google_Service_CloudSearch_Filter extends \Google\Service\CloudSearch\Filter
     {
     }
 }

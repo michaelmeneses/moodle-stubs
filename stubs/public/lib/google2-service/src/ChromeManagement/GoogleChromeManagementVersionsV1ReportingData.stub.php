@@ -21,123 +21,132 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementVersionsV1ReportingData extends \Google\Collection
-{
-    protected $collection_key = 'policyData';
-    /**
-     * Output only. Executable path of the installed Chrome browser. A valid path
-     * is included only in affiliated profiles.
-     *
-     * @var string
-     */
-    public $browserExecutablePath;
-    protected $extensionDataType = GoogleChromeManagementVersionsV1ReportingDataExtensionData::class;
-    protected $extensionDataDataType = 'array';
-    protected $extensionPolicyDataType = GoogleChromeManagementVersionsV1ReportingDataExtensionPolicyData::class;
-    protected $extensionPolicyDataDataType = 'array';
-    /**
-     * Output only. Updated version of a browser, if it is different from the
-     * active browser version.
-     *
-     * @var string
-     */
-    public $installedBrowserVersion;
-    protected $policyDataType = GoogleChromeManagementVersionsV1ReportingDataPolicyData::class;
-    protected $policyDataDataType = 'array';
-    /**
-     * Output only. Path of the profile. A valid path is included only in
-     * affiliated profiles.
-     *
-     * @var string
-     */
-    public $profilePath;
-    /**
-     * Output only. Executable path of the installed Chrome browser. A valid path
-     * is included only in affiliated profiles.
-     *
-     * @param string $browserExecutablePath
-     */
-    public function setBrowserExecutablePath($browserExecutablePath)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementVersionsV1ReportingData extends \Google\Collection
     {
+        protected $collection_key = 'policyData';
+        /**
+         * Output only. Executable path of the installed Chrome browser. A valid path
+         * is included only in affiliated profiles.
+         *
+         * @var string
+         */
+        public $browserExecutablePath;
+        protected $extensionDataType = GoogleChromeManagementVersionsV1ReportingDataExtensionData::class;
+        protected $extensionDataDataType = 'array';
+        protected $extensionPolicyDataType = GoogleChromeManagementVersionsV1ReportingDataExtensionPolicyData::class;
+        protected $extensionPolicyDataDataType = 'array';
+        /**
+         * Output only. Updated version of a browser, if it is different from the
+         * active browser version.
+         *
+         * @var string
+         */
+        public $installedBrowserVersion;
+        protected $policyDataType = GoogleChromeManagementVersionsV1ReportingDataPolicyData::class;
+        protected $policyDataDataType = 'array';
+        /**
+         * Output only. Path of the profile. A valid path is included only in
+         * affiliated profiles.
+         *
+         * @var string
+         */
+        public $profilePath;
+        /**
+         * Output only. Executable path of the installed Chrome browser. A valid path
+         * is included only in affiliated profiles.
+         *
+         * @param string $browserExecutablePath
+         */
+        public function setBrowserExecutablePath($browserExecutablePath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBrowserExecutablePath()
+        {
+        }
+        /**
+         * Output only. Information of the extensions installed on the profile.
+         *
+         * @param GoogleChromeManagementVersionsV1ReportingDataExtensionData[] $extensionData
+         */
+        public function setExtensionData($extensionData)
+        {
+        }
+        /**
+         * @return GoogleChromeManagementVersionsV1ReportingDataExtensionData[]
+         */
+        public function getExtensionData()
+        {
+        }
+        /**
+         * Output only. Information of the policies applied on the extensions.
+         *
+         * @param GoogleChromeManagementVersionsV1ReportingDataExtensionPolicyData[] $extensionPolicyData
+         */
+        public function setExtensionPolicyData($extensionPolicyData)
+        {
+        }
+        /**
+         * @return GoogleChromeManagementVersionsV1ReportingDataExtensionPolicyData[]
+         */
+        public function getExtensionPolicyData()
+        {
+        }
+        /**
+         * Output only. Updated version of a browser, if it is different from the
+         * active browser version.
+         *
+         * @param string $installedBrowserVersion
+         */
+        public function setInstalledBrowserVersion($installedBrowserVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstalledBrowserVersion()
+        {
+        }
+        /**
+         * Output only. Information of the policies applied on the profile.
+         *
+         * @param GoogleChromeManagementVersionsV1ReportingDataPolicyData[] $policyData
+         */
+        public function setPolicyData($policyData)
+        {
+        }
+        /**
+         * @return GoogleChromeManagementVersionsV1ReportingDataPolicyData[]
+         */
+        public function getPolicyData()
+        {
+        }
+        /**
+         * Output only. Path of the profile. A valid path is included only in
+         * affiliated profiles.
+         *
+         * @param string $profilePath
+         */
+        public function setProfilePath($profilePath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProfilePath()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1ReportingData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBrowserExecutablePath()
-    {
-    }
-    /**
-     * Output only. Information of the extensions installed on the profile.
-     *
-     * @param GoogleChromeManagementVersionsV1ReportingDataExtensionData[] $extensionData
-     */
-    public function setExtensionData($extensionData)
-    {
-    }
-    /**
-     * @return GoogleChromeManagementVersionsV1ReportingDataExtensionData[]
-     */
-    public function getExtensionData()
-    {
-    }
-    /**
-     * Output only. Information of the policies applied on the extensions.
-     *
-     * @param GoogleChromeManagementVersionsV1ReportingDataExtensionPolicyData[] $extensionPolicyData
-     */
-    public function setExtensionPolicyData($extensionPolicyData)
-    {
-    }
-    /**
-     * @return GoogleChromeManagementVersionsV1ReportingDataExtensionPolicyData[]
-     */
-    public function getExtensionPolicyData()
-    {
-    }
-    /**
-     * Output only. Updated version of a browser, if it is different from the
-     * active browser version.
-     *
-     * @param string $installedBrowserVersion
-     */
-    public function setInstalledBrowserVersion($installedBrowserVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInstalledBrowserVersion()
-    {
-    }
-    /**
-     * Output only. Information of the policies applied on the profile.
-     *
-     * @param GoogleChromeManagementVersionsV1ReportingDataPolicyData[] $policyData
-     */
-    public function setPolicyData($policyData)
-    {
-    }
-    /**
-     * @return GoogleChromeManagementVersionsV1ReportingDataPolicyData[]
-     */
-    public function getPolicyData()
-    {
-    }
-    /**
-     * Output only. Path of the profile. A valid path is included only in
-     * affiliated profiles.
-     *
-     * @param string $profilePath
-     */
-    public function setProfilePath($profilePath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProfilePath()
+    class Google_Service_ChromeManagement_GoogleChromeManagementVersionsV1ReportingData extends \Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1ReportingData
     {
     }
 }

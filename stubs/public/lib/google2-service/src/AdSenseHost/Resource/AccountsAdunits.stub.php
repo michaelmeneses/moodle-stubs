@@ -21,124 +21,136 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdSenseHost\Resource;
-
-/**
- * The "adunits" collection of methods.
- * Typical usage is:
- *  <code>
- *   $adsensehostService = new Google\Service\AdSenseHost(...);
- *   $adunits = $adsensehostService->accounts_adunits;
- *  </code>
- */
-class AccountsAdunits extends \Google\Service\Resource
-{
+namespace Google\Service\AdSenseHost\Resource {
+    use Google\Service\AdSenseHost\AdCode;
+    use Google\Service\AdSenseHost\AdUnit;
+    use Google\Service\AdSenseHost\AdUnits;
     /**
-     * Delete the specified ad unit from the specified publisher AdSense account.
-     * (adunits.delete)
-     *
-     * @param string $accountId Account which contains the ad unit.
-     * @param string $adClientId Ad client for which to get ad unit.
-     * @param string $adUnitId Ad unit to delete.
-     * @param array $optParams Optional parameters.
-     * @return AdUnit
-     * @throws \Google\Service\Exception
+     * The "adunits" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $adsensehostService = new Google\Service\AdSenseHost(...);
+     *   $adunits = $adsensehostService->accounts_adunits;
+     *  </code>
      */
-    public function delete($accountId, $adClientId, $adUnitId, $optParams = [])
+    class AccountsAdunits extends \Google\Service\Resource
     {
+        /**
+         * Delete the specified ad unit from the specified publisher AdSense account.
+         * (adunits.delete)
+         *
+         * @param string $accountId Account which contains the ad unit.
+         * @param string $adClientId Ad client for which to get ad unit.
+         * @param string $adUnitId Ad unit to delete.
+         * @param array $optParams Optional parameters.
+         * @return AdUnit
+         * @throws \Google\Service\Exception
+         */
+        public function delete($accountId, $adClientId, $adUnitId, $optParams = [])
+        {
+        }
+        /**
+         * Get the specified host ad unit in this AdSense account. (adunits.get)
+         *
+         * @param string $accountId Account which contains the ad unit.
+         * @param string $adClientId Ad client for which to get ad unit.
+         * @param string $adUnitId Ad unit to get.
+         * @param array $optParams Optional parameters.
+         * @return AdUnit
+         * @throws \Google\Service\Exception
+         */
+        public function get($accountId, $adClientId, $adUnitId, $optParams = [])
+        {
+        }
+        /**
+         * Get ad code for the specified ad unit, attaching the specified host custom
+         * channels. (adunits.getAdCode)
+         *
+         * @param string $accountId Account which contains the ad client.
+         * @param string $adClientId Ad client with contains the ad unit.
+         * @param string $adUnitId Ad unit to get the code for.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string hostCustomChannelId Host custom channel to attach to the ad
+         * code.
+         * @return AdCode
+         * @throws \Google\Service\Exception
+         */
+        public function getAdCode($accountId, $adClientId, $adUnitId, $optParams = [])
+        {
+        }
+        /**
+         * Insert the supplied ad unit into the specified publisher AdSense account.
+         * (adunits.insert)
+         *
+         * @param string $accountId Account which will contain the ad unit.
+         * @param string $adClientId Ad client into which to insert the ad unit.
+         * @param AdUnit $postBody
+         * @param array $optParams Optional parameters.
+         * @return AdUnit
+         * @throws \Google\Service\Exception
+         */
+        public function insert($accountId, $adClientId, AdUnit $postBody, $optParams = [])
+        {
+        }
+        /**
+         * List all ad units in the specified publisher's AdSense account.
+         * (adunits.listAccountsAdunits)
+         *
+         * @param string $accountId Account which contains the ad client.
+         * @param string $adClientId Ad client for which to list ad units.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool includeInactive Whether to include inactive ad units.
+         * Default: true.
+         * @opt_param string maxResults The maximum number of ad units to include in the
+         * response, used for paging.
+         * @opt_param string pageToken A continuation token, used to page through ad
+         * units. To retrieve the next page, set this parameter to the value of
+         * "nextPageToken" from the previous response.
+         * @return AdUnits
+         * @throws \Google\Service\Exception
+         */
+        public function listAccountsAdunits($accountId, $adClientId, $optParams = [])
+        {
+        }
+        /**
+         * Update the supplied ad unit in the specified publisher AdSense account. This
+         * method supports patch semantics. (adunits.patch)
+         *
+         * @param string $accountId Account which contains the ad client.
+         * @param string $adClientId Ad client which contains the ad unit.
+         * @param string $adUnitId Ad unit to get.
+         * @param AdUnit $postBody
+         * @param array $optParams Optional parameters.
+         * @return AdUnit
+         * @throws \Google\Service\Exception
+         */
+        public function patch($accountId, $adClientId, $adUnitId, AdUnit $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Update the supplied ad unit in the specified publisher AdSense account.
+         * (adunits.update)
+         *
+         * @param string $accountId Account which contains the ad client.
+         * @param string $adClientId Ad client which contains the ad unit.
+         * @param AdUnit $postBody
+         * @param array $optParams Optional parameters.
+         * @return AdUnit
+         * @throws \Google\Service\Exception
+         */
+        public function update($accountId, $adClientId, AdUnit $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Get the specified host ad unit in this AdSense account. (adunits.get)
-     *
-     * @param string $accountId Account which contains the ad unit.
-     * @param string $adClientId Ad client for which to get ad unit.
-     * @param string $adUnitId Ad unit to get.
-     * @param array $optParams Optional parameters.
-     * @return AdUnit
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\AdSenseHost\Resource\AccountsAdunits registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($accountId, $adClientId, $adUnitId, $optParams = [])
-    {
-    }
-    /**
-     * Get ad code for the specified ad unit, attaching the specified host custom
-     * channels. (adunits.getAdCode)
-     *
-     * @param string $accountId Account which contains the ad client.
-     * @param string $adClientId Ad client with contains the ad unit.
-     * @param string $adUnitId Ad unit to get the code for.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string hostCustomChannelId Host custom channel to attach to the ad
-     * code.
-     * @return AdCode
-     * @throws \Google\Service\Exception
-     */
-    public function getAdCode($accountId, $adClientId, $adUnitId, $optParams = [])
-    {
-    }
-    /**
-     * Insert the supplied ad unit into the specified publisher AdSense account.
-     * (adunits.insert)
-     *
-     * @param string $accountId Account which will contain the ad unit.
-     * @param string $adClientId Ad client into which to insert the ad unit.
-     * @param AdUnit $postBody
-     * @param array $optParams Optional parameters.
-     * @return AdUnit
-     * @throws \Google\Service\Exception
-     */
-    public function insert($accountId, $adClientId, AdUnit $postBody, $optParams = [])
-    {
-    }
-    /**
-     * List all ad units in the specified publisher's AdSense account.
-     * (adunits.listAccountsAdunits)
-     *
-     * @param string $accountId Account which contains the ad client.
-     * @param string $adClientId Ad client for which to list ad units.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool includeInactive Whether to include inactive ad units.
-     * Default: true.
-     * @opt_param string maxResults The maximum number of ad units to include in the
-     * response, used for paging.
-     * @opt_param string pageToken A continuation token, used to page through ad
-     * units. To retrieve the next page, set this parameter to the value of
-     * "nextPageToken" from the previous response.
-     * @return AdUnits
-     * @throws \Google\Service\Exception
-     */
-    public function listAccountsAdunits($accountId, $adClientId, $optParams = [])
-    {
-    }
-    /**
-     * Update the supplied ad unit in the specified publisher AdSense account. This
-     * method supports patch semantics. (adunits.patch)
-     *
-     * @param string $accountId Account which contains the ad client.
-     * @param string $adClientId Ad client which contains the ad unit.
-     * @param string $adUnitId Ad unit to get.
-     * @param AdUnit $postBody
-     * @param array $optParams Optional parameters.
-     * @return AdUnit
-     * @throws \Google\Service\Exception
-     */
-    public function patch($accountId, $adClientId, $adUnitId, AdUnit $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Update the supplied ad unit in the specified publisher AdSense account.
-     * (adunits.update)
-     *
-     * @param string $accountId Account which contains the ad client.
-     * @param string $adClientId Ad client which contains the ad unit.
-     * @param AdUnit $postBody
-     * @param array $optParams Optional parameters.
-     * @return AdUnit
-     * @throws \Google\Service\Exception
-     */
-    public function update($accountId, $adClientId, AdUnit $postBody, $optParams = [])
+    class Google_Service_AdSenseHost_Resource_AccountsAdunits extends \Google\Service\AdSenseHost\Resource\AccountsAdunits
     {
     }
 }

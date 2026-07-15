@@ -21,59 +21,68 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmEventbusProtoAddress extends \Google\Collection
-{
-    protected $collection_key = 'tokens';
-    /**
-     * Required.
-     *
-     * @var string
-     */
-    public $email;
-    /**
-     * @var string
-     */
-    public $name;
-    protected $tokensType = EnterpriseCrmEventbusProtoToken::class;
-    protected $tokensDataType = 'array';
-    /**
-     * Required.
-     *
-     * @param string $email
-     */
-    public function setEmail($email)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmEventbusProtoAddress extends \Google\Collection
     {
+        protected $collection_key = 'tokens';
+        /**
+         * Required.
+         *
+         * @var string
+         */
+        public $email;
+        /**
+         * @var string
+         */
+        public $name;
+        protected $tokensType = EnterpriseCrmEventbusProtoToken::class;
+        protected $tokensDataType = 'array';
+        /**
+         * Required.
+         *
+         * @param string $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
+        /**
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param EnterpriseCrmEventbusProtoToken[] $tokens
+         */
+        public function setTokens($tokens)
+        {
+        }
+        /**
+         * @return EnterpriseCrmEventbusProtoToken[]
+         */
+        public function getTokens()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmEventbusProtoAddress registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmail()
-    {
-    }
-    /**
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param EnterpriseCrmEventbusProtoToken[] $tokens
-     */
-    public function setTokens($tokens)
-    {
-    }
-    /**
-     * @return EnterpriseCrmEventbusProtoToken[]
-     */
-    public function getTokens()
+    class Google_Service_Integrations_EnterpriseCrmEventbusProtoAddress extends \Google\Service\Integrations\EnterpriseCrmEventbusProtoAddress
     {
     }
 }

@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors;
-
-class RefreshAccessTokenResponse extends \Google\Model
-{
-    protected $accessCredentialsType = AccessCredentials::class;
-    protected $accessCredentialsDataType = '';
-    /**
-     * Metadata like service latency, etc.
-     *
-     * @var array[]
-     */
-    public $metadata;
-    /**
-     * @param AccessCredentials $accessCredentials
-     */
-    public function setAccessCredentials(AccessCredentials $accessCredentials)
+namespace Google\Service\Connectors {
+    class RefreshAccessTokenResponse extends \Google\Model
     {
+        protected $accessCredentialsType = AccessCredentials::class;
+        protected $accessCredentialsDataType = '';
+        /**
+         * Metadata like service latency, etc.
+         *
+         * @var array[]
+         */
+        public $metadata;
+        /**
+         * @param AccessCredentials $accessCredentials
+         */
+        public function setAccessCredentials(AccessCredentials $accessCredentials)
+        {
+        }
+        /**
+         * @return AccessCredentials
+         */
+        public function getAccessCredentials()
+        {
+        }
+        /**
+         * Metadata like service latency, etc.
+         *
+         * @param array[] $metadata
+         */
+        public function setMetadata($metadata)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AccessCredentials
+     * Runtime class alias of \Google\Service\Connectors\RefreshAccessTokenResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccessCredentials()
-    {
-    }
-    /**
-     * Metadata like service latency, etc.
-     *
-     * @param array[] $metadata
-     */
-    public function setMetadata($metadata)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getMetadata()
+    class Google_Service_Connectors_RefreshAccessTokenResponse extends \Google\Service\Connectors\RefreshAccessTokenResponse
     {
     }
 }

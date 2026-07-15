@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveLabels;
-
-class GoogleAppsDriveLabelsV2DateLimits extends \Google\Model
-{
-    protected $maxValueType = GoogleTypeDate::class;
-    protected $maxValueDataType = '';
-    protected $minValueType = GoogleTypeDate::class;
-    protected $minValueDataType = '';
-    /**
-     * Maximum value for the date field type.
-     *
-     * @param GoogleTypeDate $maxValue
-     */
-    public function setMaxValue(GoogleTypeDate $maxValue)
+namespace Google\Service\DriveLabels {
+    class GoogleAppsDriveLabelsV2DateLimits extends \Google\Model
     {
+        protected $maxValueType = GoogleTypeDate::class;
+        protected $maxValueDataType = '';
+        protected $minValueType = GoogleTypeDate::class;
+        protected $minValueDataType = '';
+        /**
+         * Maximum value for the date field type.
+         *
+         * @param GoogleTypeDate $maxValue
+         */
+        public function setMaxValue(GoogleTypeDate $maxValue)
+        {
+        }
+        /**
+         * @return GoogleTypeDate
+         */
+        public function getMaxValue()
+        {
+        }
+        /**
+         * Minimum value for the date field type.
+         *
+         * @param GoogleTypeDate $minValue
+         */
+        public function setMinValue(GoogleTypeDate $minValue)
+        {
+        }
+        /**
+         * @return GoogleTypeDate
+         */
+        public function getMinValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleTypeDate
+     * Runtime class alias of \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2DateLimits registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaxValue()
-    {
-    }
-    /**
-     * Minimum value for the date field type.
-     *
-     * @param GoogleTypeDate $minValue
-     */
-    public function setMinValue(GoogleTypeDate $minValue)
-    {
-    }
-    /**
-     * @return GoogleTypeDate
-     */
-    public function getMinValue()
+    class Google_Service_DriveLabels_GoogleAppsDriveLabelsV2DateLimits extends \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2DateLimits
     {
     }
 }

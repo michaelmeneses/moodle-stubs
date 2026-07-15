@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class DialogAction extends \Google\Model
-{
-    protected $actionStatusType = ActionStatus::class;
-    protected $actionStatusDataType = '';
-    protected $dialogType = Dialog::class;
-    protected $dialogDataType = '';
-    /**
-     * Input only. Status for a request to either invoke or submit a
-     * [dialog](https://developers.google.com/workspace/chat/dialogs). Displays a
-     * status and message to users, if necessary. For example, in case of an error
-     * or success.
-     *
-     * @param ActionStatus $actionStatus
-     */
-    public function setActionStatus(ActionStatus $actionStatus)
+namespace Google\Service\HangoutsChat {
+    class DialogAction extends \Google\Model
     {
+        protected $actionStatusType = ActionStatus::class;
+        protected $actionStatusDataType = '';
+        protected $dialogType = Dialog::class;
+        protected $dialogDataType = '';
+        /**
+         * Input only. Status for a request to either invoke or submit a
+         * [dialog](https://developers.google.com/workspace/chat/dialogs). Displays a
+         * status and message to users, if necessary. For example, in case of an error
+         * or success.
+         *
+         * @param ActionStatus $actionStatus
+         */
+        public function setActionStatus(ActionStatus $actionStatus)
+        {
+        }
+        /**
+         * @return ActionStatus
+         */
+        public function getActionStatus()
+        {
+        }
+        /**
+         * Input only. [Dialog](https://developers.google.com/workspace/chat/dialogs)
+         * for the request.
+         *
+         * @param Dialog $dialog
+         */
+        public function setDialog(Dialog $dialog)
+        {
+        }
+        /**
+         * @return Dialog
+         */
+        public function getDialog()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ActionStatus
+     * Runtime class alias of \Google\Service\HangoutsChat\DialogAction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActionStatus()
-    {
-    }
-    /**
-     * Input only. [Dialog](https://developers.google.com/workspace/chat/dialogs)
-     * for the request.
-     *
-     * @param Dialog $dialog
-     */
-    public function setDialog(Dialog $dialog)
-    {
-    }
-    /**
-     * @return Dialog
-     */
-    public function getDialog()
+    class Google_Service_HangoutsChat_DialogAction extends \Google\Service\HangoutsChat\DialogAction
     {
     }
 }

@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class Cluster extends \Google\Collection
-{
-    protected $collection_key = 'featureValues';
-    /**
-     * Centroid id.
-     *
-     * @var string
-     */
-    public $centroidId;
-    /**
-     * Count of training data rows that were assigned to this cluster.
-     *
-     * @var string
-     */
-    public $count;
-    protected $featureValuesType = FeatureValue::class;
-    protected $featureValuesDataType = 'array';
-    /**
-     * Centroid id.
-     *
-     * @param string $centroidId
-     */
-    public function setCentroidId($centroidId)
+namespace Google\Service\Bigquery {
+    class Cluster extends \Google\Collection
     {
+        protected $collection_key = 'featureValues';
+        /**
+         * Centroid id.
+         *
+         * @var string
+         */
+        public $centroidId;
+        /**
+         * Count of training data rows that were assigned to this cluster.
+         *
+         * @var string
+         */
+        public $count;
+        protected $featureValuesType = FeatureValue::class;
+        protected $featureValuesDataType = 'array';
+        /**
+         * Centroid id.
+         *
+         * @param string $centroidId
+         */
+        public function setCentroidId($centroidId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCentroidId()
+        {
+        }
+        /**
+         * Count of training data rows that were assigned to this cluster.
+         *
+         * @param string $count
+         */
+        public function setCount($count)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCount()
+        {
+        }
+        /**
+         * Values of highly variant features for this cluster.
+         *
+         * @param FeatureValue[] $featureValues
+         */
+        public function setFeatureValues($featureValues)
+        {
+        }
+        /**
+         * @return FeatureValue[]
+         */
+        public function getFeatureValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Bigquery\Cluster registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCentroidId()
-    {
-    }
-    /**
-     * Count of training data rows that were assigned to this cluster.
-     *
-     * @param string $count
-     */
-    public function setCount($count)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCount()
-    {
-    }
-    /**
-     * Values of highly variant features for this cluster.
-     *
-     * @param FeatureValue[] $featureValues
-     */
-    public function setFeatureValues($featureValues)
-    {
-    }
-    /**
-     * @return FeatureValue[]
-     */
-    public function getFeatureValues()
+    class Google_Service_Bigquery_Cluster extends \Google\Service\Bigquery\Cluster
     {
     }
 }

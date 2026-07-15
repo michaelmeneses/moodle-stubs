@@ -21,186 +21,195 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1GlossaryTerm extends \Google\Model
-{
-    /**
-     * Output only. The time at which the GlossaryTerm was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Optional. The user-mutable description of the GlossaryTerm.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Optional. User friendly display name of the GlossaryTerm. This is user-
-     * mutable. This will be same as the GlossaryTermId, if not specified.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Optional. User-defined labels for the GlossaryTerm.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Output only. Identifier. The resource name of the GlossaryTerm. Format: pro
-     * jects/{project_id_or_number}/locations/{location_id}/glossaries/{glossary_i
-     * d}/terms/{term_id}
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. The immediate parent of the GlossaryTerm in the resource-
-     * hierarchy. It can either be a Glossary or a GlossaryCategory. Format: proje
-     * cts/{project_id_or_number}/locations/{location_id}/glossaries/{glossary_id}
-     * OR projects/{project_id_or_number}/locations/{location_id}/glossaries/{glos
-     * sary_id}/categories/{category_id}
-     *
-     * @var string
-     */
-    public $parent;
-    /**
-     * Output only. System generated unique id for the GlossaryTerm. This ID will
-     * be different if the GlossaryTerm is deleted and re-created with the same
-     * name.
-     *
-     * @var string
-     */
-    public $uid;
-    /**
-     * Output only. The time at which the GlossaryTerm was last updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. The time at which the GlossaryTerm was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1GlossaryTerm extends \Google\Model
     {
+        /**
+         * Output only. The time at which the GlossaryTerm was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Optional. The user-mutable description of the GlossaryTerm.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Optional. User friendly display name of the GlossaryTerm. This is user-
+         * mutable. This will be same as the GlossaryTermId, if not specified.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Optional. User-defined labels for the GlossaryTerm.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Output only. Identifier. The resource name of the GlossaryTerm. Format: pro
+         * jects/{project_id_or_number}/locations/{location_id}/glossaries/{glossary_i
+         * d}/terms/{term_id}
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. The immediate parent of the GlossaryTerm in the resource-
+         * hierarchy. It can either be a Glossary or a GlossaryCategory. Format: proje
+         * cts/{project_id_or_number}/locations/{location_id}/glossaries/{glossary_id}
+         * OR projects/{project_id_or_number}/locations/{location_id}/glossaries/{glos
+         * sary_id}/categories/{category_id}
+         *
+         * @var string
+         */
+        public $parent;
+        /**
+         * Output only. System generated unique id for the GlossaryTerm. This ID will
+         * be different if the GlossaryTerm is deleted and re-created with the same
+         * name.
+         *
+         * @var string
+         */
+        public $uid;
+        /**
+         * Output only. The time at which the GlossaryTerm was last updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. The time at which the GlossaryTerm was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Optional. The user-mutable description of the GlossaryTerm.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Optional. User friendly display name of the GlossaryTerm. This is user-
+         * mutable. This will be same as the GlossaryTermId, if not specified.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Optional. User-defined labels for the GlossaryTerm.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Output only. Identifier. The resource name of the GlossaryTerm. Format: pro
+         * jects/{project_id_or_number}/locations/{location_id}/glossaries/{glossary_i
+         * d}/terms/{term_id}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Required. The immediate parent of the GlossaryTerm in the resource-
+         * hierarchy. It can either be a Glossary or a GlossaryCategory. Format: proje
+         * cts/{project_id_or_number}/locations/{location_id}/glossaries/{glossary_id}
+         * OR projects/{project_id_or_number}/locations/{location_id}/glossaries/{glos
+         * sary_id}/categories/{category_id}
+         *
+         * @param string $parent
+         */
+        public function setParent($parent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParent()
+        {
+        }
+        /**
+         * Output only. System generated unique id for the GlossaryTerm. This ID will
+         * be different if the GlossaryTerm is deleted and re-created with the same
+         * name.
+         *
+         * @param string $uid
+         */
+        public function setUid($uid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUid()
+        {
+        }
+        /**
+         * Output only. The time at which the GlossaryTerm was last updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1GlossaryTerm registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Optional. The user-mutable description of the GlossaryTerm.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Optional. User friendly display name of the GlossaryTerm. This is user-
-     * mutable. This will be same as the GlossaryTermId, if not specified.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Optional. User-defined labels for the GlossaryTerm.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Output only. Identifier. The resource name of the GlossaryTerm. Format: pro
-     * jects/{project_id_or_number}/locations/{location_id}/glossaries/{glossary_i
-     * d}/terms/{term_id}
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Required. The immediate parent of the GlossaryTerm in the resource-
-     * hierarchy. It can either be a Glossary or a GlossaryCategory. Format: proje
-     * cts/{project_id_or_number}/locations/{location_id}/glossaries/{glossary_id}
-     * OR projects/{project_id_or_number}/locations/{location_id}/glossaries/{glos
-     * sary_id}/categories/{category_id}
-     *
-     * @param string $parent
-     */
-    public function setParent($parent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParent()
-    {
-    }
-    /**
-     * Output only. System generated unique id for the GlossaryTerm. This ID will
-     * be different if the GlossaryTerm is deleted and re-created with the same
-     * name.
-     *
-     * @param string $uid
-     */
-    public function setUid($uid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUid()
-    {
-    }
-    /**
-     * Output only. The time at which the GlossaryTerm was last updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1GlossaryTerm extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1GlossaryTerm
     {
     }
 }

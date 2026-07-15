@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataform;
-
-class ReadFileResponse extends \Google\Model
-{
-    /**
-     * The file's contents.
-     *
-     * @var string
-     */
-    public $fileContents;
-    /**
-     * The file's contents.
-     *
-     * @param string $fileContents
-     */
-    public function setFileContents($fileContents)
+namespace Google\Service\Dataform {
+    class ReadFileResponse extends \Google\Model
     {
+        /**
+         * The file's contents.
+         *
+         * @var string
+         */
+        public $fileContents;
+        /**
+         * The file's contents.
+         *
+         * @param string $fileContents
+         */
+        public function setFileContents($fileContents)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFileContents()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataform\ReadFileResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFileContents()
+    class Google_Service_Dataform_ReadFileResponse extends \Google\Service\Dataform\ReadFileResponse
     {
     }
 }

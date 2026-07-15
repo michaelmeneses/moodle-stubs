@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class ProductLineItem extends \Google\Model
-{
-    /**
-     * The purchased product ID (for example, 'monthly001').
-     *
-     * @var string
-     */
-    public $productId;
-    protected $productOfferDetailsType = ProductOfferDetails::class;
-    protected $productOfferDetailsDataType = '';
-    /**
-     * The purchased product ID (for example, 'monthly001').
-     *
-     * @param string $productId
-     */
-    public function setProductId($productId)
+namespace Google\Service\AndroidPublisher {
+    class ProductLineItem extends \Google\Model
     {
+        /**
+         * The purchased product ID (for example, 'monthly001').
+         *
+         * @var string
+         */
+        public $productId;
+        protected $productOfferDetailsType = ProductOfferDetails::class;
+        protected $productOfferDetailsDataType = '';
+        /**
+         * The purchased product ID (for example, 'monthly001').
+         *
+         * @param string $productId
+         */
+        public function setProductId($productId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProductId()
+        {
+        }
+        /**
+         * The offer details for this item.
+         *
+         * @param ProductOfferDetails $productOfferDetails
+         */
+        public function setProductOfferDetails(ProductOfferDetails $productOfferDetails)
+        {
+        }
+        /**
+         * @return ProductOfferDetails
+         */
+        public function getProductOfferDetails()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidPublisher\ProductLineItem registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProductId()
-    {
-    }
-    /**
-     * The offer details for this item.
-     *
-     * @param ProductOfferDetails $productOfferDetails
-     */
-    public function setProductOfferDetails(ProductOfferDetails $productOfferDetails)
-    {
-    }
-    /**
-     * @return ProductOfferDetails
-     */
-    public function getProductOfferDetails()
+    class Google_Service_AndroidPublisher_ProductLineItem extends \Google\Service\AndroidPublisher\ProductLineItem
     {
     }
 }

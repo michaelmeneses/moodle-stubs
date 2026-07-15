@@ -21,150 +21,159 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1Datastore extends \Google\Model
-{
-    /**
-     * Output only. Datastore create time, in milliseconds since the epoch of
-     * 1970-01-01T00:00:00Z
-     *
-     * @var string
-     */
-    public $createTime;
-    protected $datastoreConfigType = GoogleCloudApigeeV1DatastoreConfig::class;
-    protected $datastoreConfigDataType = '';
-    /**
-     * Required. Display name in UI
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Output only. Datastore last update time, in milliseconds since the epoch of
-     * 1970-01-01T00:00:00Z
-     *
-     * @var string
-     */
-    public $lastUpdateTime;
-    /**
-     * Output only. Organization that the datastore belongs to
-     *
-     * @var string
-     */
-    public $org;
-    /**
-     * Output only. Resource link of Datastore. Example:
-     * `/organizations/{org}/analytics/datastores/{uuid}`
-     *
-     * @var string
-     */
-    public $self;
-    /**
-     * Destination storage type. Supported types `gcs` or `bigquery`.
-     *
-     * @var string
-     */
-    public $targetType;
-    /**
-     * Output only. Datastore create time, in milliseconds since the epoch of
-     * 1970-01-01T00:00:00Z
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1Datastore extends \Google\Model
     {
+        /**
+         * Output only. Datastore create time, in milliseconds since the epoch of
+         * 1970-01-01T00:00:00Z
+         *
+         * @var string
+         */
+        public $createTime;
+        protected $datastoreConfigType = GoogleCloudApigeeV1DatastoreConfig::class;
+        protected $datastoreConfigDataType = '';
+        /**
+         * Required. Display name in UI
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Output only. Datastore last update time, in milliseconds since the epoch of
+         * 1970-01-01T00:00:00Z
+         *
+         * @var string
+         */
+        public $lastUpdateTime;
+        /**
+         * Output only. Organization that the datastore belongs to
+         *
+         * @var string
+         */
+        public $org;
+        /**
+         * Output only. Resource link of Datastore. Example:
+         * `/organizations/{org}/analytics/datastores/{uuid}`
+         *
+         * @var string
+         */
+        public $self;
+        /**
+         * Destination storage type. Supported types `gcs` or `bigquery`.
+         *
+         * @var string
+         */
+        public $targetType;
+        /**
+         * Output only. Datastore create time, in milliseconds since the epoch of
+         * 1970-01-01T00:00:00Z
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Datastore Configurations.
+         *
+         * @param GoogleCloudApigeeV1DatastoreConfig $datastoreConfig
+         */
+        public function setDatastoreConfig(GoogleCloudApigeeV1DatastoreConfig $datastoreConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1DatastoreConfig
+         */
+        public function getDatastoreConfig()
+        {
+        }
+        /**
+         * Required. Display name in UI
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Output only. Datastore last update time, in milliseconds since the epoch of
+         * 1970-01-01T00:00:00Z
+         *
+         * @param string $lastUpdateTime
+         */
+        public function setLastUpdateTime($lastUpdateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastUpdateTime()
+        {
+        }
+        /**
+         * Output only. Organization that the datastore belongs to
+         *
+         * @param string $org
+         */
+        public function setOrg($org)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOrg()
+        {
+        }
+        /**
+         * Output only. Resource link of Datastore. Example:
+         * `/organizations/{org}/analytics/datastores/{uuid}`
+         *
+         * @param string $self
+         */
+        public function setSelf($self)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelf()
+        {
+        }
+        /**
+         * Destination storage type. Supported types `gcs` or `bigquery`.
+         *
+         * @param string $targetType
+         */
+        public function setTargetType($targetType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1Datastore registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Datastore Configurations.
-     *
-     * @param GoogleCloudApigeeV1DatastoreConfig $datastoreConfig
-     */
-    public function setDatastoreConfig(GoogleCloudApigeeV1DatastoreConfig $datastoreConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1DatastoreConfig
-     */
-    public function getDatastoreConfig()
-    {
-    }
-    /**
-     * Required. Display name in UI
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Output only. Datastore last update time, in milliseconds since the epoch of
-     * 1970-01-01T00:00:00Z
-     *
-     * @param string $lastUpdateTime
-     */
-    public function setLastUpdateTime($lastUpdateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastUpdateTime()
-    {
-    }
-    /**
-     * Output only. Organization that the datastore belongs to
-     *
-     * @param string $org
-     */
-    public function setOrg($org)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOrg()
-    {
-    }
-    /**
-     * Output only. Resource link of Datastore. Example:
-     * `/organizations/{org}/analytics/datastores/{uuid}`
-     *
-     * @param string $self
-     */
-    public function setSelf($self)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelf()
-    {
-    }
-    /**
-     * Destination storage type. Supported types `gcs` or `bigquery`.
-     *
-     * @param string $targetType
-     */
-    public function setTargetType($targetType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetType()
+    class Google_Service_Apigee_GoogleCloudApigeeV1Datastore extends \Google\Service\Apigee\GoogleCloudApigeeV1Datastore
     {
     }
 }

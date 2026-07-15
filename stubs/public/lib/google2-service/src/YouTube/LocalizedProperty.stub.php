@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class LocalizedProperty extends \Google\Collection
-{
-    protected $collection_key = 'localized';
-    /**
-     * @var string
-     */
-    public $default;
-    protected $defaultLanguageType = LanguageTag::class;
-    protected $defaultLanguageDataType = '';
-    protected $localizedType = LocalizedString::class;
-    protected $localizedDataType = 'array';
-    /**
-     * @param string $default
-     */
-    public function setDefault($default)
+namespace Google\Service\YouTube {
+    class LocalizedProperty extends \Google\Collection
     {
+        protected $collection_key = 'localized';
+        /**
+         * @var string
+         */
+        public $default;
+        protected $defaultLanguageType = LanguageTag::class;
+        protected $defaultLanguageDataType = '';
+        protected $localizedType = LocalizedString::class;
+        protected $localizedDataType = 'array';
+        /**
+         * @param string $default
+         */
+        public function setDefault($default)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDefault()
+        {
+        }
+        /**
+         * The language of the default property.
+         *
+         * @param LanguageTag $defaultLanguage
+         */
+        public function setDefaultLanguage(LanguageTag $defaultLanguage)
+        {
+        }
+        /**
+         * @return LanguageTag
+         */
+        public function getDefaultLanguage()
+        {
+        }
+        /**
+         * @param LocalizedString[] $localized
+         */
+        public function setLocalized($localized)
+        {
+        }
+        /**
+         * @return LocalizedString[]
+         */
+        public function getLocalized()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\LocalizedProperty registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDefault()
-    {
-    }
-    /**
-     * The language of the default property.
-     *
-     * @param LanguageTag $defaultLanguage
-     */
-    public function setDefaultLanguage(LanguageTag $defaultLanguage)
-    {
-    }
-    /**
-     * @return LanguageTag
-     */
-    public function getDefaultLanguage()
-    {
-    }
-    /**
-     * @param LocalizedString[] $localized
-     */
-    public function setLocalized($localized)
-    {
-    }
-    /**
-     * @return LocalizedString[]
-     */
-    public function getLocalized()
+    class Google_Service_YouTube_LocalizedProperty extends \Google\Service\YouTube\LocalizedProperty
     {
     }
 }

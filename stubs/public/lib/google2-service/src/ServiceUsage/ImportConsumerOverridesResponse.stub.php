@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceUsage;
-
-class ImportConsumerOverridesResponse extends \Google\Collection
-{
-    protected $collection_key = 'overrides';
-    protected $overridesType = QuotaOverride::class;
-    protected $overridesDataType = 'array';
-    /**
-     * The overrides that were created from the imported data.
-     *
-     * @param QuotaOverride[] $overrides
-     */
-    public function setOverrides($overrides)
+namespace Google\Service\ServiceUsage {
+    class ImportConsumerOverridesResponse extends \Google\Collection
     {
+        protected $collection_key = 'overrides';
+        protected $overridesType = QuotaOverride::class;
+        protected $overridesDataType = 'array';
+        /**
+         * The overrides that were created from the imported data.
+         *
+         * @param QuotaOverride[] $overrides
+         */
+        public function setOverrides($overrides)
+        {
+        }
+        /**
+         * @return QuotaOverride[]
+         */
+        public function getOverrides()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return QuotaOverride[]
+     * Runtime class alias of \Google\Service\ServiceUsage\ImportConsumerOverridesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOverrides()
+    class Google_Service_ServiceUsage_ImportConsumerOverridesResponse extends \Google\Service\ServiceUsage\ImportConsumerOverridesResponse
     {
     }
 }

@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1beta1TagTemplateField extends \Google\Model
-{
-    public $description;
-    public $displayName;
-    public $isRequired;
-    public $name;
-    public $order;
-    protected $typeType = GoogleCloudDatacatalogV1beta1FieldType::class;
-    protected $typeDataType = '';
-    public function setDescription($description)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1beta1TagTemplateField extends \Google\Model
     {
+        public $description;
+        public $displayName;
+        public $isRequired;
+        public $name;
+        public $order;
+        protected $typeType = GoogleCloudDatacatalogV1beta1FieldType::class;
+        protected $typeDataType = '';
+        public function setDescription($description)
+        {
+        }
+        public function getDescription()
+        {
+        }
+        public function setDisplayName($displayName)
+        {
+        }
+        public function getDisplayName()
+        {
+        }
+        public function setIsRequired($isRequired)
+        {
+        }
+        public function getIsRequired()
+        {
+        }
+        public function setName($name)
+        {
+        }
+        public function getName()
+        {
+        }
+        public function setOrder($order)
+        {
+        }
+        public function getOrder()
+        {
+        }
+        /**
+         * @param GoogleCloudDatacatalogV1beta1FieldType
+         */
+        public function setType(GoogleCloudDatacatalogV1beta1FieldType $type)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1beta1FieldType
+         */
+        public function getType()
+        {
+        }
     }
-    public function getDescription()
-    {
-    }
-    public function setDisplayName($displayName)
-    {
-    }
-    public function getDisplayName()
-    {
-    }
-    public function setIsRequired($isRequired)
-    {
-    }
-    public function getIsRequired()
-    {
-    }
-    public function setName($name)
-    {
-    }
-    public function getName()
-    {
-    }
-    public function setOrder($order)
-    {
-    }
-    public function getOrder()
-    {
-    }
+}
+namespace {
     /**
-     * @param GoogleCloudDatacatalogV1beta1FieldType
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1beta1TagTemplateField registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setType(GoogleCloudDatacatalogV1beta1FieldType $type)
-    {
-    }
-    /**
-     * @return GoogleCloudDatacatalogV1beta1FieldType
-     */
-    public function getType()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1beta1TagTemplateField extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1beta1TagTemplateField
     {
     }
 }

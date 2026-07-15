@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1beta1ListTagsResponse extends \Google\Collection
-{
-    protected $collection_key = 'tags';
-    public $nextPageToken;
-    protected $tagsType = GoogleCloudDatacatalogV1beta1Tag::class;
-    protected $tagsDataType = 'array';
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1beta1ListTagsResponse extends \Google\Collection
     {
+        protected $collection_key = 'tags';
+        public $nextPageToken;
+        protected $tagsType = GoogleCloudDatacatalogV1beta1Tag::class;
+        protected $tagsDataType = 'array';
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param GoogleCloudDatacatalogV1beta1Tag[]
+         */
+        public function setTags($tags)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1beta1Tag[]
+         */
+        public function getTags()
+        {
+        }
     }
-    public function getNextPageToken()
-    {
-    }
+}
+namespace {
     /**
-     * @param GoogleCloudDatacatalogV1beta1Tag[]
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1beta1ListTagsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setTags($tags)
-    {
-    }
-    /**
-     * @return GoogleCloudDatacatalogV1beta1Tag[]
-     */
-    public function getTags()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1beta1ListTagsResponse extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1beta1ListTagsResponse
     {
     }
 }

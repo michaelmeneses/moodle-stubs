@@ -21,103 +21,112 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedGridGridItem extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $id;
-    protected $imageType = AppsDynamiteSharedImageComponent::class;
-    protected $imageDataType = '';
-    public $image;
-    /**
-     * @var string
-     */
-    public $layout;
-    /**
-     * @var string
-     */
-    public $subtitle;
-    /**
-     * @var string
-     */
-    public $textAlignment;
-    /**
-     * @var string
-     */
-    public $title;
-    /**
-     * @param string
-     */
-    public function setId($id)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedGridGridItem extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $id;
+        protected $imageType = AppsDynamiteSharedImageComponent::class;
+        protected $imageDataType = '';
+        public $image;
+        /**
+         * @var string
+         */
+        public $layout;
+        /**
+         * @var string
+         */
+        public $subtitle;
+        /**
+         * @var string
+         */
+        public $textAlignment;
+        /**
+         * @var string
+         */
+        public $title;
+        /**
+         * @param string
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedImageComponent
+         */
+        public function setImage(AppsDynamiteSharedImageComponent $image)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedImageComponent
+         */
+        public function getImage()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLayout($layout)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLayout()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSubtitle($subtitle)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubtitle()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTextAlignment($textAlignment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTextAlignment()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedGridGridItem registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedImageComponent
-     */
-    public function setImage(AppsDynamiteSharedImageComponent $image)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedImageComponent
-     */
-    public function getImage()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLayout($layout)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLayout()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSubtitle($subtitle)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubtitle()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTextAlignment($textAlignment)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTextAlignment()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_CloudSearch_AppsDynamiteSharedGridGridItem extends \Google\Service\CloudSearch\AppsDynamiteSharedGridGridItem
     {
     }
 }

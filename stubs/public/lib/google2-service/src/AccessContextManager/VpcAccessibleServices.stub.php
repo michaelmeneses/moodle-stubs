@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AccessContextManager;
-
-class VpcAccessibleServices extends \Google\Collection
-{
-    protected $collection_key = 'allowedServices';
-    /**
-     * The list of APIs usable within the Service Perimeter. Must be empty unless
-     * 'enable_restriction' is True. You can specify a list of individual
-     * services, as well as include the 'RESTRICTED-SERVICES' value, which
-     * automatically includes all of the services protected by the perimeter.
-     *
-     * @var string[]
-     */
-    public $allowedServices;
-    /**
-     * Whether to restrict API calls within the Service Perimeter to the list of
-     * APIs specified in 'allowed_services'.
-     *
-     * @var bool
-     */
-    public $enableRestriction;
-    /**
-     * The list of APIs usable within the Service Perimeter. Must be empty unless
-     * 'enable_restriction' is True. You can specify a list of individual
-     * services, as well as include the 'RESTRICTED-SERVICES' value, which
-     * automatically includes all of the services protected by the perimeter.
-     *
-     * @param string[] $allowedServices
-     */
-    public function setAllowedServices($allowedServices)
+namespace Google\Service\AccessContextManager {
+    class VpcAccessibleServices extends \Google\Collection
     {
+        protected $collection_key = 'allowedServices';
+        /**
+         * The list of APIs usable within the Service Perimeter. Must be empty unless
+         * 'enable_restriction' is True. You can specify a list of individual
+         * services, as well as include the 'RESTRICTED-SERVICES' value, which
+         * automatically includes all of the services protected by the perimeter.
+         *
+         * @var string[]
+         */
+        public $allowedServices;
+        /**
+         * Whether to restrict API calls within the Service Perimeter to the list of
+         * APIs specified in 'allowed_services'.
+         *
+         * @var bool
+         */
+        public $enableRestriction;
+        /**
+         * The list of APIs usable within the Service Perimeter. Must be empty unless
+         * 'enable_restriction' is True. You can specify a list of individual
+         * services, as well as include the 'RESTRICTED-SERVICES' value, which
+         * automatically includes all of the services protected by the perimeter.
+         *
+         * @param string[] $allowedServices
+         */
+        public function setAllowedServices($allowedServices)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAllowedServices()
+        {
+        }
+        /**
+         * Whether to restrict API calls within the Service Perimeter to the list of
+         * APIs specified in 'allowed_services'.
+         *
+         * @param bool $enableRestriction
+         */
+        public function setEnableRestriction($enableRestriction)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableRestriction()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\AccessContextManager\VpcAccessibleServices registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowedServices()
-    {
-    }
-    /**
-     * Whether to restrict API calls within the Service Perimeter to the list of
-     * APIs specified in 'allowed_services'.
-     *
-     * @param bool $enableRestriction
-     */
-    public function setEnableRestriction($enableRestriction)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnableRestriction()
+    class Google_Service_AccessContextManager_VpcAccessibleServices extends \Google\Service\AccessContextManager\VpcAccessibleServices
     {
     }
 }

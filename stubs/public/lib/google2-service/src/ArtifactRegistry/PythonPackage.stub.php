@@ -21,142 +21,151 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ArtifactRegistry;
-
-class PythonPackage extends \Google\Model
-{
-    /**
-     * Output only. Time the package was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Required. registry_location, project_id, repository_name and python_package
-     * forms a unique package
-     * name:`projects//locations//repository//pythonPackages/`. For example,
-     * "projects/test-project/locations/us-west4/repositories/test-
-     * repo/pythonPackages/ python_package:1.0.0", where "us-west4" is the
-     * registry_location, "test-project" is the project_id, "test-repo" is the
-     * repository_name and python_package:1.0.0" is the python package.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Package for the artifact.
-     *
-     * @var string
-     */
-    public $packageName;
-    /**
-     * Output only. Time the package was updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Required. URL to access the package. Example: us-west4-python.pkg.dev/test-
-     * project/test-repo/python_package/file-name-1.0.0.tar.gz
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * Version of this package.
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * Output only. Time the package was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\ArtifactRegistry {
+    class PythonPackage extends \Google\Model
     {
+        /**
+         * Output only. Time the package was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Required. registry_location, project_id, repository_name and python_package
+         * forms a unique package
+         * name:`projects//locations//repository//pythonPackages/`. For example,
+         * "projects/test-project/locations/us-west4/repositories/test-
+         * repo/pythonPackages/ python_package:1.0.0", where "us-west4" is the
+         * registry_location, "test-project" is the project_id, "test-repo" is the
+         * repository_name and python_package:1.0.0" is the python package.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Package for the artifact.
+         *
+         * @var string
+         */
+        public $packageName;
+        /**
+         * Output only. Time the package was updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Required. URL to access the package. Example: us-west4-python.pkg.dev/test-
+         * project/test-repo/python_package/file-name-1.0.0.tar.gz
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * Version of this package.
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * Output only. Time the package was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Required. registry_location, project_id, repository_name and python_package
+         * forms a unique package
+         * name:`projects//locations//repository//pythonPackages/`. For example,
+         * "projects/test-project/locations/us-west4/repositories/test-
+         * repo/pythonPackages/ python_package:1.0.0", where "us-west4" is the
+         * registry_location, "test-project" is the project_id, "test-repo" is the
+         * repository_name and python_package:1.0.0" is the python package.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Package for the artifact.
+         *
+         * @param string $packageName
+         */
+        public function setPackageName($packageName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPackageName()
+        {
+        }
+        /**
+         * Output only. Time the package was updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
+        /**
+         * Required. URL to access the package. Example: us-west4-python.pkg.dev/test-
+         * project/test-repo/python_package/file-name-1.0.0.tar.gz
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
+        /**
+         * Version of this package.
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ArtifactRegistry\PythonPackage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Required. registry_location, project_id, repository_name and python_package
-     * forms a unique package
-     * name:`projects//locations//repository//pythonPackages/`. For example,
-     * "projects/test-project/locations/us-west4/repositories/test-
-     * repo/pythonPackages/ python_package:1.0.0", where "us-west4" is the
-     * registry_location, "test-project" is the project_id, "test-repo" is the
-     * repository_name and python_package:1.0.0" is the python package.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Package for the artifact.
-     *
-     * @param string $packageName
-     */
-    public function setPackageName($packageName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPackageName()
-    {
-    }
-    /**
-     * Output only. Time the package was updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
-    {
-    }
-    /**
-     * Required. URL to access the package. Example: us-west4-python.pkg.dev/test-
-     * project/test-repo/python_package/file-name-1.0.0.tar.gz
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
-    {
-    }
-    /**
-     * Version of this package.
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_ArtifactRegistry_PythonPackage extends \Google\Service\ArtifactRegistry\PythonPackage
     {
     }
 }

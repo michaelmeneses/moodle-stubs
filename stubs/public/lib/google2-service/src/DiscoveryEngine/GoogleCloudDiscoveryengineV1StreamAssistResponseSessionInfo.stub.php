@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1StreamAssistResponseSessionInfo extends \Google\Model
-{
-    /**
-     * Name of the newly generated or continued session. Format: `projects/{projec
-     * t}/locations/{location}/collections/{collection}/engines/{engine}/sessions/
-     * {session}`.
-     *
-     * @var string
-     */
-    public $session;
-    /**
-     * Name of the newly generated or continued session. Format: `projects/{projec
-     * t}/locations/{location}/collections/{collection}/engines/{engine}/sessions/
-     * {session}`.
-     *
-     * @param string $session
-     */
-    public function setSession($session)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1StreamAssistResponseSessionInfo extends \Google\Model
     {
+        /**
+         * Name of the newly generated or continued session. Format: `projects/{projec
+         * t}/locations/{location}/collections/{collection}/engines/{engine}/sessions/
+         * {session}`.
+         *
+         * @var string
+         */
+        public $session;
+        /**
+         * Name of the newly generated or continued session. Format: `projects/{projec
+         * t}/locations/{location}/collections/{collection}/engines/{engine}/sessions/
+         * {session}`.
+         *
+         * @param string $session
+         */
+        public function setSession($session)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSession()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1StreamAssistResponseSessionInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSession()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1StreamAssistResponseSessionInfo extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1StreamAssistResponseSessionInfo
     {
     }
 }

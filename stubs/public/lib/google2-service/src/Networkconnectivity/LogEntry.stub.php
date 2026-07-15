@@ -21,113 +21,122 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity;
-
-class LogEntry extends \Google\Model
-{
-    protected $httpRequestType = HttpRequest::class;
-    protected $httpRequestDataType = '';
-    public $insertId;
-    public $labels;
-    public $name;
-    protected $operationType = LogEntryOperation::class;
-    protected $operationDataType = '';
-    public $protoPayload;
-    public $severity;
-    protected $sourceLocationType = LogEntrySourceLocation::class;
-    protected $sourceLocationDataType = '';
-    public $structPayload;
-    public $textPayload;
-    public $timestamp;
-    public $trace;
+namespace Google\Service\Networkconnectivity {
+    class LogEntry extends \Google\Model
+    {
+        protected $httpRequestType = HttpRequest::class;
+        protected $httpRequestDataType = '';
+        public $insertId;
+        public $labels;
+        public $name;
+        protected $operationType = LogEntryOperation::class;
+        protected $operationDataType = '';
+        public $protoPayload;
+        public $severity;
+        protected $sourceLocationType = LogEntrySourceLocation::class;
+        protected $sourceLocationDataType = '';
+        public $structPayload;
+        public $textPayload;
+        public $timestamp;
+        public $trace;
+        /**
+         * @param HttpRequest
+         */
+        public function setHttpRequest(HttpRequest $httpRequest)
+        {
+        }
+        /**
+         * @return HttpRequest
+         */
+        public function getHttpRequest()
+        {
+        }
+        public function setInsertId($insertId)
+        {
+        }
+        public function getInsertId()
+        {
+        }
+        public function setLabels($labels)
+        {
+        }
+        public function getLabels()
+        {
+        }
+        public function setName($name)
+        {
+        }
+        public function getName()
+        {
+        }
+        /**
+         * @param LogEntryOperation
+         */
+        public function setOperation(LogEntryOperation $operation)
+        {
+        }
+        /**
+         * @return LogEntryOperation
+         */
+        public function getOperation()
+        {
+        }
+        public function setProtoPayload($protoPayload)
+        {
+        }
+        public function getProtoPayload()
+        {
+        }
+        public function setSeverity($severity)
+        {
+        }
+        public function getSeverity()
+        {
+        }
+        /**
+         * @param LogEntrySourceLocation
+         */
+        public function setSourceLocation(LogEntrySourceLocation $sourceLocation)
+        {
+        }
+        /**
+         * @return LogEntrySourceLocation
+         */
+        public function getSourceLocation()
+        {
+        }
+        public function setStructPayload($structPayload)
+        {
+        }
+        public function getStructPayload()
+        {
+        }
+        public function setTextPayload($textPayload)
+        {
+        }
+        public function getTextPayload()
+        {
+        }
+        public function setTimestamp($timestamp)
+        {
+        }
+        public function getTimestamp()
+        {
+        }
+        public function setTrace($trace)
+        {
+        }
+        public function getTrace()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @param HttpRequest
+     * Runtime class alias of \Google\Service\Networkconnectivity\LogEntry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setHttpRequest(HttpRequest $httpRequest)
-    {
-    }
-    /**
-     * @return HttpRequest
-     */
-    public function getHttpRequest()
-    {
-    }
-    public function setInsertId($insertId)
-    {
-    }
-    public function getInsertId()
-    {
-    }
-    public function setLabels($labels)
-    {
-    }
-    public function getLabels()
-    {
-    }
-    public function setName($name)
-    {
-    }
-    public function getName()
-    {
-    }
-    /**
-     * @param LogEntryOperation
-     */
-    public function setOperation(LogEntryOperation $operation)
-    {
-    }
-    /**
-     * @return LogEntryOperation
-     */
-    public function getOperation()
-    {
-    }
-    public function setProtoPayload($protoPayload)
-    {
-    }
-    public function getProtoPayload()
-    {
-    }
-    public function setSeverity($severity)
-    {
-    }
-    public function getSeverity()
-    {
-    }
-    /**
-     * @param LogEntrySourceLocation
-     */
-    public function setSourceLocation(LogEntrySourceLocation $sourceLocation)
-    {
-    }
-    /**
-     * @return LogEntrySourceLocation
-     */
-    public function getSourceLocation()
-    {
-    }
-    public function setStructPayload($structPayload)
-    {
-    }
-    public function getStructPayload()
-    {
-    }
-    public function setTextPayload($textPayload)
-    {
-    }
-    public function getTextPayload()
-    {
-    }
-    public function setTimestamp($timestamp)
-    {
-    }
-    public function getTimestamp()
-    {
-    }
-    public function setTrace($trace)
-    {
-    }
-    public function getTrace()
+    class Google_Service_Networkconnectivity_LogEntry extends \Google\Service\Networkconnectivity\LogEntry
     {
     }
 }

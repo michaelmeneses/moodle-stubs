@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity;
-
-class RouterApplianceInstance extends \Google\Model
-{
-    /**
-     * The IP address on the VM to use for peering.
-     *
-     * @var string
-     */
-    public $ipAddress;
-    /**
-     * The URI of the VM.
-     *
-     * @var string
-     */
-    public $virtualMachine;
-    /**
-     * The IP address on the VM to use for peering.
-     *
-     * @param string $ipAddress
-     */
-    public function setIpAddress($ipAddress)
+namespace Google\Service\Networkconnectivity {
+    class RouterApplianceInstance extends \Google\Model
     {
+        /**
+         * The IP address on the VM to use for peering.
+         *
+         * @var string
+         */
+        public $ipAddress;
+        /**
+         * The URI of the VM.
+         *
+         * @var string
+         */
+        public $virtualMachine;
+        /**
+         * The IP address on the VM to use for peering.
+         *
+         * @param string $ipAddress
+         */
+        public function setIpAddress($ipAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIpAddress()
+        {
+        }
+        /**
+         * The URI of the VM.
+         *
+         * @param string $virtualMachine
+         */
+        public function setVirtualMachine($virtualMachine)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVirtualMachine()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Networkconnectivity\RouterApplianceInstance registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIpAddress()
-    {
-    }
-    /**
-     * The URI of the VM.
-     *
-     * @param string $virtualMachine
-     */
-    public function setVirtualMachine($virtualMachine)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVirtualMachine()
+    class Google_Service_Networkconnectivity_RouterApplianceInstance extends \Google\Service\Networkconnectivity\RouterApplianceInstance
     {
     }
 }

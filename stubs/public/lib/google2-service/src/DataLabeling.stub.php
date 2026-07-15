@@ -21,51 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for DataLabeling (v1beta1).
- *
- * <p>
- * Public API for Google Cloud AI Data Labeling Service.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://cloud.google.com/data-labeling/docs/" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class DataLabeling extends \Google\Service
-{
-    /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
-    const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
-    public $projects_annotationSpecSets;
-    public $projects_datasets;
-    public $projects_datasets_annotatedDatasets;
-    public $projects_datasets_annotatedDatasets_dataItems;
-    public $projects_datasets_annotatedDatasets_examples;
-    public $projects_datasets_annotatedDatasets_feedbackThreads;
-    public $projects_datasets_annotatedDatasets_feedbackThreads_feedbackMessages;
-    public $projects_datasets_dataItems;
-    public $projects_datasets_evaluations;
-    public $projects_datasets_evaluations_exampleComparisons;
-    public $projects_datasets_image;
-    public $projects_datasets_text;
-    public $projects_datasets_video;
-    public $projects_evaluationJobs;
-    public $projects_evaluations;
-    public $projects_instructions;
-    public $projects_operations;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the DataLabeling service.
+     * Service definition for DataLabeling (v1beta1).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * Public API for Google Cloud AI Data Labeling Service.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://cloud.google.com/data-labeling/docs/" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class DataLabeling extends \Google\Service
+    {
+        /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
+        const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
+        public $projects_annotationSpecSets;
+        public $projects_datasets;
+        public $projects_datasets_annotatedDatasets;
+        public $projects_datasets_annotatedDatasets_dataItems;
+        public $projects_datasets_annotatedDatasets_examples;
+        public $projects_datasets_annotatedDatasets_feedbackThreads;
+        public $projects_datasets_annotatedDatasets_feedbackThreads_feedbackMessages;
+        public $projects_datasets_dataItems;
+        public $projects_datasets_evaluations;
+        public $projects_datasets_evaluations_exampleComparisons;
+        public $projects_datasets_image;
+        public $projects_datasets_text;
+        public $projects_datasets_video;
+        public $projects_evaluationJobs;
+        public $projects_evaluations;
+        public $projects_instructions;
+        public $projects_operations;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the DataLabeling service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\DataLabeling registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_DataLabeling extends \Google\Service\DataLabeling
     {
     }
 }

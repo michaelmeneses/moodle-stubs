@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleCloudRunOpV2TrafficTargetStatus extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $percent;
-    /**
-     * @var string
-     */
-    public $revision;
-    /**
-     * @var string
-     */
-    public $tag;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @var string
-     */
-    public $uri;
-    /**
-     * @param int
-     */
-    public function setPercent($percent)
+namespace Google\Service\CloudRun {
+    class GoogleCloudRunOpV2TrafficTargetStatus extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $percent;
+        /**
+         * @var string
+         */
+        public $revision;
+        /**
+         * @var string
+         */
+        public $tag;
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @var string
+         */
+        public $uri;
+        /**
+         * @param int
+         */
+        public function setPercent($percent)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPercent()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRevision($revision)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRevision()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTag($tag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTag()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudRun\GoogleCloudRunOpV2TrafficTargetStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPercent()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRevision($revision)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRevision()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTag($tag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTag()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_CloudRun_GoogleCloudRunOpV2TrafficTargetStatus extends \Google\Service\CloudRun\GoogleCloudRunOpV2TrafficTargetStatus
     {
     }
 }

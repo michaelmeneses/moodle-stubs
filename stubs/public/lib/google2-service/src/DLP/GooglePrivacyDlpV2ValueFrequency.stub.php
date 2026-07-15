@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2ValueFrequency extends \Google\Model
-{
-    /**
-     * How many times the value is contained in the field.
-     *
-     * @var string
-     */
-    public $count;
-    protected $valueType = GooglePrivacyDlpV2Value::class;
-    protected $valueDataType = '';
-    /**
-     * How many times the value is contained in the field.
-     *
-     * @param string $count
-     */
-    public function setCount($count)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2ValueFrequency extends \Google\Model
     {
+        /**
+         * How many times the value is contained in the field.
+         *
+         * @var string
+         */
+        public $count;
+        protected $valueType = GooglePrivacyDlpV2Value::class;
+        protected $valueDataType = '';
+        /**
+         * How many times the value is contained in the field.
+         *
+         * @param string $count
+         */
+        public function setCount($count)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCount()
+        {
+        }
+        /**
+         * A value contained in the field in question.
+         *
+         * @param GooglePrivacyDlpV2Value $value
+         */
+        public function setValue(GooglePrivacyDlpV2Value $value)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2Value
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2ValueFrequency registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCount()
-    {
-    }
-    /**
-     * A value contained in the field in question.
-     *
-     * @param GooglePrivacyDlpV2Value $value
-     */
-    public function setValue(GooglePrivacyDlpV2Value $value)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2Value
-     */
-    public function getValue()
+    class Google_Service_DLP_GooglePrivacyDlpV2ValueFrequency extends \Google\Service\DLP\GooglePrivacyDlpV2ValueFrequency
     {
     }
 }

@@ -21,138 +21,147 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1beta3BatchProcessMetadata extends \Google\Collection
-{
-    /**
-     * The default value. This value is used if the state is omitted.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * Request operation is waiting for scheduling.
-     */
-    public const STATE_WAITING = 'WAITING';
-    /**
-     * Request is being processed.
-     */
-    public const STATE_RUNNING = 'RUNNING';
-    /**
-     * The batch processing completed successfully.
-     */
-    public const STATE_SUCCEEDED = 'SUCCEEDED';
-    /**
-     * The batch processing was being cancelled.
-     */
-    public const STATE_CANCELLING = 'CANCELLING';
-    /**
-     * The batch processing was cancelled.
-     */
-    public const STATE_CANCELLED = 'CANCELLED';
-    /**
-     * The batch processing has failed.
-     */
-    public const STATE_FAILED = 'FAILED';
-    protected $collection_key = 'individualProcessStatuses';
-    /**
-     * The creation time of the operation.
-     *
-     * @var string
-     */
-    public $createTime;
-    protected $individualProcessStatusesType = GoogleCloudDocumentaiV1beta3BatchProcessMetadataIndividualProcessStatus::class;
-    protected $individualProcessStatusesDataType = 'array';
-    /**
-     * The state of the current batch processing.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * A message providing more details about the current state of processing. For
-     * example, the error message if the operation is failed.
-     *
-     * @var string
-     */
-    public $stateMessage;
-    /**
-     * The last update time of the operation.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * The creation time of the operation.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1beta3BatchProcessMetadata extends \Google\Collection
     {
+        /**
+         * The default value. This value is used if the state is omitted.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * Request operation is waiting for scheduling.
+         */
+        public const STATE_WAITING = 'WAITING';
+        /**
+         * Request is being processed.
+         */
+        public const STATE_RUNNING = 'RUNNING';
+        /**
+         * The batch processing completed successfully.
+         */
+        public const STATE_SUCCEEDED = 'SUCCEEDED';
+        /**
+         * The batch processing was being cancelled.
+         */
+        public const STATE_CANCELLING = 'CANCELLING';
+        /**
+         * The batch processing was cancelled.
+         */
+        public const STATE_CANCELLED = 'CANCELLED';
+        /**
+         * The batch processing has failed.
+         */
+        public const STATE_FAILED = 'FAILED';
+        protected $collection_key = 'individualProcessStatuses';
+        /**
+         * The creation time of the operation.
+         *
+         * @var string
+         */
+        public $createTime;
+        protected $individualProcessStatusesType = GoogleCloudDocumentaiV1beta3BatchProcessMetadataIndividualProcessStatus::class;
+        protected $individualProcessStatusesDataType = 'array';
+        /**
+         * The state of the current batch processing.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * A message providing more details about the current state of processing. For
+         * example, the error message if the operation is failed.
+         *
+         * @var string
+         */
+        public $stateMessage;
+        /**
+         * The last update time of the operation.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * The creation time of the operation.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * The list of response details of each document.
+         *
+         * @param GoogleCloudDocumentaiV1beta3BatchProcessMetadataIndividualProcessStatus[] $individualProcessStatuses
+         */
+        public function setIndividualProcessStatuses($individualProcessStatuses)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta3BatchProcessMetadataIndividualProcessStatus[]
+         */
+        public function getIndividualProcessStatuses()
+        {
+        }
+        /**
+         * The state of the current batch processing.
+         *
+         * Accepted values: STATE_UNSPECIFIED, WAITING, RUNNING, SUCCEEDED,
+         * CANCELLING, CANCELLED, FAILED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * A message providing more details about the current state of processing. For
+         * example, the error message if the operation is failed.
+         *
+         * @param string $stateMessage
+         */
+        public function setStateMessage($stateMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStateMessage()
+        {
+        }
+        /**
+         * The last update time of the operation.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1beta3BatchProcessMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * The list of response details of each document.
-     *
-     * @param GoogleCloudDocumentaiV1beta3BatchProcessMetadataIndividualProcessStatus[] $individualProcessStatuses
-     */
-    public function setIndividualProcessStatuses($individualProcessStatuses)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1beta3BatchProcessMetadataIndividualProcessStatus[]
-     */
-    public function getIndividualProcessStatuses()
-    {
-    }
-    /**
-     * The state of the current batch processing.
-     *
-     * Accepted values: STATE_UNSPECIFIED, WAITING, RUNNING, SUCCEEDED,
-     * CANCELLING, CANCELLED, FAILED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * A message providing more details about the current state of processing. For
-     * example, the error message if the operation is failed.
-     *
-     * @param string $stateMessage
-     */
-    public function setStateMessage($stateMessage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStateMessage()
-    {
-    }
-    /**
-     * The last update time of the operation.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_Document_GoogleCloudDocumentaiV1beta3BatchProcessMetadata extends \Google\Service\Document\GoogleCloudDocumentaiV1beta3BatchProcessMetadata
     {
     }
 }

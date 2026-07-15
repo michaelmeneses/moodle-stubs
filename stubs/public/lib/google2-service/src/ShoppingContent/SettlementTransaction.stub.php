@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class SettlementTransaction extends \Google\Model
-{
-    protected $amountType = SettlementTransactionAmount::class;
-    protected $amountDataType = '';
-    protected $identifiersType = SettlementTransactionIdentifiers::class;
-    protected $identifiersDataType = '';
-    /**
-     * @var string
-     */
-    public $kind;
-    protected $transactionType = SettlementTransactionTransaction::class;
-    protected $transactionDataType = '';
-    /**
-     * @param SettlementTransactionAmount
-     */
-    public function setAmount(SettlementTransactionAmount $amount)
+namespace Google\Service\ShoppingContent {
+    class SettlementTransaction extends \Google\Model
     {
+        protected $amountType = SettlementTransactionAmount::class;
+        protected $amountDataType = '';
+        protected $identifiersType = SettlementTransactionIdentifiers::class;
+        protected $identifiersDataType = '';
+        /**
+         * @var string
+         */
+        public $kind;
+        protected $transactionType = SettlementTransactionTransaction::class;
+        protected $transactionDataType = '';
+        /**
+         * @param SettlementTransactionAmount
+         */
+        public function setAmount(SettlementTransactionAmount $amount)
+        {
+        }
+        /**
+         * @return SettlementTransactionAmount
+         */
+        public function getAmount()
+        {
+        }
+        /**
+         * @param SettlementTransactionIdentifiers
+         */
+        public function setIdentifiers(SettlementTransactionIdentifiers $identifiers)
+        {
+        }
+        /**
+         * @return SettlementTransactionIdentifiers
+         */
+        public function getIdentifiers()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * @param SettlementTransactionTransaction
+         */
+        public function setTransaction(SettlementTransactionTransaction $transaction)
+        {
+        }
+        /**
+         * @return SettlementTransactionTransaction
+         */
+        public function getTransaction()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SettlementTransactionAmount
+     * Runtime class alias of \Google\Service\ShoppingContent\SettlementTransaction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAmount()
-    {
-    }
-    /**
-     * @param SettlementTransactionIdentifiers
-     */
-    public function setIdentifiers(SettlementTransactionIdentifiers $identifiers)
-    {
-    }
-    /**
-     * @return SettlementTransactionIdentifiers
-     */
-    public function getIdentifiers()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * @param SettlementTransactionTransaction
-     */
-    public function setTransaction(SettlementTransactionTransaction $transaction)
-    {
-    }
-    /**
-     * @return SettlementTransactionTransaction
-     */
-    public function getTransaction()
+    class Google_Service_ShoppingContent_SettlementTransaction extends \Google\Service\ShoppingContent\SettlementTransaction
     {
     }
 }

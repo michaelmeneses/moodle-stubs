@@ -21,61 +21,70 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1PscInterfaceConfig extends \Google\Collection
-{
-    protected $collection_key = 'dnsPeeringConfigs';
-    protected $dnsPeeringConfigsType = GoogleCloudAiplatformV1DnsPeeringConfig::class;
-    protected $dnsPeeringConfigsDataType = 'array';
-    /**
-     * Optional. The name of the Compute Engine [network
-     * attachment](https://cloud.google.com/vpc/docs/about-network-attachments) to
-     * attach to the resource within the region and user project. To specify this
-     * field, you must have already [created a network attachment]
-     * (https://cloud.google.com/vpc/docs/create-manage-network-
-     * attachments#create-network-attachments). This field is only used for
-     * resources using PSC-I.
-     *
-     * @var string
-     */
-    public $networkAttachment;
-    /**
-     * Optional. DNS peering configurations. When specified, Vertex AI will
-     * attempt to configure DNS peering zones in the tenant project VPC to resolve
-     * the specified domains using the target network's Cloud DNS. The user must
-     * grant the dns.peer role to the Vertex AI Service Agent on the target
-     * project.
-     *
-     * @param GoogleCloudAiplatformV1DnsPeeringConfig[] $dnsPeeringConfigs
-     */
-    public function setDnsPeeringConfigs($dnsPeeringConfigs)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1PscInterfaceConfig extends \Google\Collection
     {
+        protected $collection_key = 'dnsPeeringConfigs';
+        protected $dnsPeeringConfigsType = GoogleCloudAiplatformV1DnsPeeringConfig::class;
+        protected $dnsPeeringConfigsDataType = 'array';
+        /**
+         * Optional. The name of the Compute Engine [network
+         * attachment](https://cloud.google.com/vpc/docs/about-network-attachments) to
+         * attach to the resource within the region and user project. To specify this
+         * field, you must have already [created a network attachment]
+         * (https://cloud.google.com/vpc/docs/create-manage-network-
+         * attachments#create-network-attachments). This field is only used for
+         * resources using PSC-I.
+         *
+         * @var string
+         */
+        public $networkAttachment;
+        /**
+         * Optional. DNS peering configurations. When specified, Vertex AI will
+         * attempt to configure DNS peering zones in the tenant project VPC to resolve
+         * the specified domains using the target network's Cloud DNS. The user must
+         * grant the dns.peer role to the Vertex AI Service Agent on the target
+         * project.
+         *
+         * @param GoogleCloudAiplatformV1DnsPeeringConfig[] $dnsPeeringConfigs
+         */
+        public function setDnsPeeringConfigs($dnsPeeringConfigs)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1DnsPeeringConfig[]
+         */
+        public function getDnsPeeringConfigs()
+        {
+        }
+        /**
+         * Optional. The name of the Compute Engine [network
+         * attachment](https://cloud.google.com/vpc/docs/about-network-attachments) to
+         * attach to the resource within the region and user project. To specify this
+         * field, you must have already [created a network attachment]
+         * (https://cloud.google.com/vpc/docs/create-manage-network-
+         * attachments#create-network-attachments). This field is only used for
+         * resources using PSC-I.
+         *
+         * @param string $networkAttachment
+         */
+        public function setNetworkAttachment($networkAttachment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNetworkAttachment()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1DnsPeeringConfig[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1PscInterfaceConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDnsPeeringConfigs()
-    {
-    }
-    /**
-     * Optional. The name of the Compute Engine [network
-     * attachment](https://cloud.google.com/vpc/docs/about-network-attachments) to
-     * attach to the resource within the region and user project. To specify this
-     * field, you must have already [created a network attachment]
-     * (https://cloud.google.com/vpc/docs/create-manage-network-
-     * attachments#create-network-attachments). This field is only used for
-     * resources using PSC-I.
-     *
-     * @param string $networkAttachment
-     */
-    public function setNetworkAttachment($networkAttachment)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNetworkAttachment()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1PscInterfaceConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1PscInterfaceConfig
     {
     }
 }

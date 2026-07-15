@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storage;
-
-class BucketLifecycle extends \Google\Collection
-{
-    protected $collection_key = 'rule';
-    protected $ruleType = BucketLifecycleRule::class;
-    protected $ruleDataType = 'array';
-    /**
-     * A lifecycle management rule, which is made of an action to take and the
-     * condition(s) under which the action will be taken.
-     *
-     * @param BucketLifecycleRule[] $rule
-     */
-    public function setRule($rule)
+namespace Google\Service\Storage {
+    class BucketLifecycle extends \Google\Collection
     {
+        protected $collection_key = 'rule';
+        protected $ruleType = BucketLifecycleRule::class;
+        protected $ruleDataType = 'array';
+        /**
+         * A lifecycle management rule, which is made of an action to take and the
+         * condition(s) under which the action will be taken.
+         *
+         * @param BucketLifecycleRule[] $rule
+         */
+        public function setRule($rule)
+        {
+        }
+        /**
+         * @return BucketLifecycleRule[]
+         */
+        public function getRule()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BucketLifecycleRule[]
+     * Runtime class alias of \Google\Service\Storage\BucketLifecycle registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRule()
+    class Google_Service_Storage_BucketLifecycle extends \Google\Service\Storage\BucketLifecycle
     {
     }
 }

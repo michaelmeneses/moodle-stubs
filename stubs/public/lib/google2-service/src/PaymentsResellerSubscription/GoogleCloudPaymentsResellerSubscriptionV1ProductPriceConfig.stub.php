@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PaymentsResellerSubscription;
-
-class GoogleCloudPaymentsResellerSubscriptionV1ProductPriceConfig extends \Google\Model
-{
-    protected $amountType = GoogleCloudPaymentsResellerSubscriptionV1Amount::class;
-    protected $amountDataType = '';
-    /**
-     * @var string
-     */
-    public $regionCode;
-    /**
-     * @param GoogleCloudPaymentsResellerSubscriptionV1Amount
-     */
-    public function setAmount(GoogleCloudPaymentsResellerSubscriptionV1Amount $amount)
+namespace Google\Service\PaymentsResellerSubscription {
+    class GoogleCloudPaymentsResellerSubscriptionV1ProductPriceConfig extends \Google\Model
     {
+        protected $amountType = GoogleCloudPaymentsResellerSubscriptionV1Amount::class;
+        protected $amountDataType = '';
+        /**
+         * @var string
+         */
+        public $regionCode;
+        /**
+         * @param GoogleCloudPaymentsResellerSubscriptionV1Amount
+         */
+        public function setAmount(GoogleCloudPaymentsResellerSubscriptionV1Amount $amount)
+        {
+        }
+        /**
+         * @return GoogleCloudPaymentsResellerSubscriptionV1Amount
+         */
+        public function getAmount()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRegionCode($regionCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegionCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudPaymentsResellerSubscriptionV1Amount
+     * Runtime class alias of \Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1ProductPriceConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAmount()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRegionCode($regionCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegionCode()
+    class Google_Service_PaymentsResellerSubscription_GoogleCloudPaymentsResellerSubscriptionV1ProductPriceConfig extends \Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1ProductPriceConfig
     {
     }
 }

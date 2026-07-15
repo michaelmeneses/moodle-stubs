@@ -20,74 +20,83 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\test;
-
-/**
- * Finds components and plugins with tests.
- *
- * @package    core
- * @category   test
- * @copyright  2012 Petr Skoda {@link http://skodak.org}
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-class test_finder
-{
+namespace core\test {
     /**
-     * Returns all the components with tests of the specified type.
+     * Finds components and plugins with tests.
      *
-     * @param string $testtype The kind of test we are looking for
-     * @return array
+     * @package    core
+     * @category   test
+     * @copyright  2012 Petr Skoda {@link http://skodak.org}
+     * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
      */
-    public static function get_components_with_tests($testtype)
+    class test_finder
     {
+        /**
+         * Returns all the components with tests of the specified type.
+         *
+         * @param string $testtype The kind of test we are looking for
+         * @return array
+         */
+        public static function get_components_with_tests($testtype)
+        {
+        }
+        /**
+         * Returns all the plugins having tests.
+         *
+         * @param string $testtype The kind of test we are looking for
+         * @return array  all the plugins having tests
+         */
+        private static function get_all_plugins_with_tests($testtype)
+        {
+        }
+        /**
+         * Returns all the subsystems having tests
+         *
+         * Note we are hacking here the list of subsystems
+         * to cover some well-known subsystems that are not properly
+         * returned by the {@link get_core_subsystems()} function.
+         *
+         * @param string $testtype The kind of test we are looking for
+         * @return array all the subsystems having tests
+         */
+        private static function get_all_subsystems_with_tests($testtype)
+        {
+        }
+        /**
+         * Returns all the directories having tests
+         *
+         * @param string $testtype The kind of test we are looking for
+         * @return array all directories having tests
+         */
+        private static function get_all_directories_with_tests($testtype)
+        {
+        }
+        /**
+         * Returns if a given directory has tests (recursively)
+         *
+         * @param string $dir full path to the directory to look for phpunit tests
+         * @param string $testtype phpunit|behat
+         * @return bool if a given directory has tests (true) or no (false)
+         */
+        private static function directory_has_tests($dir, $testtype)
+        {
+        }
+        /**
+         * Returns the regular expression to match by the test files
+         * @param string $testtype
+         * @return string
+         */
+        private static function get_regexp($testtype)
+        {
+        }
     }
+}
+namespace {
     /**
-     * Returns all the plugins having tests.
-     *
-     * @param string $testtype The kind of test we are looking for
-     * @return array  all the plugins having tests
+     * Runtime class alias of \core\test\test_finder registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    private static function get_all_plugins_with_tests($testtype)
-    {
-    }
-    /**
-     * Returns all the subsystems having tests
-     *
-     * Note we are hacking here the list of subsystems
-     * to cover some well-known subsystems that are not properly
-     * returned by the {@link get_core_subsystems()} function.
-     *
-     * @param string $testtype The kind of test we are looking for
-     * @return array all the subsystems having tests
-     */
-    private static function get_all_subsystems_with_tests($testtype)
-    {
-    }
-    /**
-     * Returns all the directories having tests
-     *
-     * @param string $testtype The kind of test we are looking for
-     * @return array all directories having tests
-     */
-    private static function get_all_directories_with_tests($testtype)
-    {
-    }
-    /**
-     * Returns if a given directory has tests (recursively)
-     *
-     * @param string $dir full path to the directory to look for phpunit tests
-     * @param string $testtype phpunit|behat
-     * @return bool if a given directory has tests (true) or no (false)
-     */
-    private static function directory_has_tests($dir, $testtype)
-    {
-    }
-    /**
-     * Returns the regular expression to match by the test files
-     * @param string $testtype
-     * @return string
-     */
-    private static function get_regexp($testtype)
+    class tests_finder extends \core\test\test_finder
     {
     }
 }

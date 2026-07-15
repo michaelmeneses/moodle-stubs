@@ -21,96 +21,105 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class ImportContextBakImportOptionsEncryptionOptions extends \Google\Model
-{
-    /**
-     * Path to the Certificate (.cer) in Cloud Storage, in the form
-     * `gs://bucketName/fileName`. The instance must have write permissions to the
-     * bucket and read access to the file.
-     *
-     * @var string
-     */
-    public $certPath;
-    /**
-     * Optional. Whether the imported file remains encrypted.
-     *
-     * @var bool
-     */
-    public $keepEncrypted;
-    /**
-     * Password that encrypts the private key
-     *
-     * @var string
-     */
-    public $pvkPassword;
-    /**
-     * Path to the Certificate Private Key (.pvk) in Cloud Storage, in the form
-     * `gs://bucketName/fileName`. The instance must have write permissions to the
-     * bucket and read access to the file.
-     *
-     * @var string
-     */
-    public $pvkPath;
-    /**
-     * Path to the Certificate (.cer) in Cloud Storage, in the form
-     * `gs://bucketName/fileName`. The instance must have write permissions to the
-     * bucket and read access to the file.
-     *
-     * @param string $certPath
-     */
-    public function setCertPath($certPath)
+namespace Google\Service\SQLAdmin {
+    class ImportContextBakImportOptionsEncryptionOptions extends \Google\Model
     {
+        /**
+         * Path to the Certificate (.cer) in Cloud Storage, in the form
+         * `gs://bucketName/fileName`. The instance must have write permissions to the
+         * bucket and read access to the file.
+         *
+         * @var string
+         */
+        public $certPath;
+        /**
+         * Optional. Whether the imported file remains encrypted.
+         *
+         * @var bool
+         */
+        public $keepEncrypted;
+        /**
+         * Password that encrypts the private key
+         *
+         * @var string
+         */
+        public $pvkPassword;
+        /**
+         * Path to the Certificate Private Key (.pvk) in Cloud Storage, in the form
+         * `gs://bucketName/fileName`. The instance must have write permissions to the
+         * bucket and read access to the file.
+         *
+         * @var string
+         */
+        public $pvkPath;
+        /**
+         * Path to the Certificate (.cer) in Cloud Storage, in the form
+         * `gs://bucketName/fileName`. The instance must have write permissions to the
+         * bucket and read access to the file.
+         *
+         * @param string $certPath
+         */
+        public function setCertPath($certPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCertPath()
+        {
+        }
+        /**
+         * Optional. Whether the imported file remains encrypted.
+         *
+         * @param bool $keepEncrypted
+         */
+        public function setKeepEncrypted($keepEncrypted)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getKeepEncrypted()
+        {
+        }
+        /**
+         * Password that encrypts the private key
+         *
+         * @param string $pvkPassword
+         */
+        public function setPvkPassword($pvkPassword)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPvkPassword()
+        {
+        }
+        /**
+         * Path to the Certificate Private Key (.pvk) in Cloud Storage, in the form
+         * `gs://bucketName/fileName`. The instance must have write permissions to the
+         * bucket and read access to the file.
+         *
+         * @param string $pvkPath
+         */
+        public function setPvkPath($pvkPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPvkPath()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SQLAdmin\ImportContextBakImportOptionsEncryptionOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCertPath()
-    {
-    }
-    /**
-     * Optional. Whether the imported file remains encrypted.
-     *
-     * @param bool $keepEncrypted
-     */
-    public function setKeepEncrypted($keepEncrypted)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getKeepEncrypted()
-    {
-    }
-    /**
-     * Password that encrypts the private key
-     *
-     * @param string $pvkPassword
-     */
-    public function setPvkPassword($pvkPassword)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPvkPassword()
-    {
-    }
-    /**
-     * Path to the Certificate Private Key (.pvk) in Cloud Storage, in the form
-     * `gs://bucketName/fileName`. The instance must have write permissions to the
-     * bucket and read access to the file.
-     *
-     * @param string $pvkPath
-     */
-    public function setPvkPath($pvkPath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPvkPath()
+    class Google_Service_SQLAdmin_ImportContextBakImportOptionsEncryptionOptions extends \Google\Service\SQLAdmin\ImportContextBakImportOptionsEncryptionOptions
     {
     }
 }

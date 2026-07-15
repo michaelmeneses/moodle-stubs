@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class ApproveBuildRequest extends \Google\Model
-{
-    protected $approvalResultType = ApprovalResult::class;
-    protected $approvalResultDataType = '';
-    /**
-     * @param ApprovalResult
-     */
-    public function setApprovalResult(ApprovalResult $approvalResult)
+namespace Google\Service\CloudBuild {
+    class ApproveBuildRequest extends \Google\Model
     {
+        protected $approvalResultType = ApprovalResult::class;
+        protected $approvalResultDataType = '';
+        /**
+         * @param ApprovalResult
+         */
+        public function setApprovalResult(ApprovalResult $approvalResult)
+        {
+        }
+        /**
+         * @return ApprovalResult
+         */
+        public function getApprovalResult()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ApprovalResult
+     * Runtime class alias of \Google\Service\CloudBuild\ApproveBuildRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApprovalResult()
+    class Google_Service_CloudBuild_ApproveBuildRequest extends \Google\Service\CloudBuild\ApproveBuildRequest
     {
     }
 }

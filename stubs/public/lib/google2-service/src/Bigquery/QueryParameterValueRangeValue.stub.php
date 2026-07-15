@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class QueryParameterValueRangeValue extends \Google\Model
-{
-    protected $endType = QueryParameterValue::class;
-    protected $endDataType = '';
-    protected $startType = QueryParameterValue::class;
-    protected $startDataType = '';
-    /**
-     * @param QueryParameterValue
-     */
-    public function setEnd(QueryParameterValue $end)
+namespace Google\Service\Bigquery {
+    class QueryParameterValueRangeValue extends \Google\Model
     {
+        protected $endType = QueryParameterValue::class;
+        protected $endDataType = '';
+        protected $startType = QueryParameterValue::class;
+        protected $startDataType = '';
+        /**
+         * @param QueryParameterValue
+         */
+        public function setEnd(QueryParameterValue $end)
+        {
+        }
+        /**
+         * @return QueryParameterValue
+         */
+        public function getEnd()
+        {
+        }
+        /**
+         * @param QueryParameterValue
+         */
+        public function setStart(QueryParameterValue $start)
+        {
+        }
+        /**
+         * @return QueryParameterValue
+         */
+        public function getStart()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return QueryParameterValue
+     * Runtime class alias of \Google\Service\Bigquery\QueryParameterValueRangeValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnd()
-    {
-    }
-    /**
-     * @param QueryParameterValue
-     */
-    public function setStart(QueryParameterValue $start)
-    {
-    }
-    /**
-     * @return QueryParameterValue
-     */
-    public function getStart()
+    class Google_Service_Bigquery_QueryParameterValueRangeValue extends \Google\Service\Bigquery\QueryParameterValueRangeValue
     {
     }
 }

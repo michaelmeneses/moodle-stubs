@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1ProcessResponse extends \Google\Model
-{
-    protected $documentType = GoogleCloudDocumentaiV1Document::class;
-    protected $documentDataType = '';
-    protected $humanReviewStatusType = GoogleCloudDocumentaiV1HumanReviewStatus::class;
-    protected $humanReviewStatusDataType = '';
-    /**
-     * The document payload, will populate fields based on the processor's
-     * behavior.
-     *
-     * @param GoogleCloudDocumentaiV1Document $document
-     */
-    public function setDocument(GoogleCloudDocumentaiV1Document $document)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1ProcessResponse extends \Google\Model
     {
+        protected $documentType = GoogleCloudDocumentaiV1Document::class;
+        protected $documentDataType = '';
+        protected $humanReviewStatusType = GoogleCloudDocumentaiV1HumanReviewStatus::class;
+        protected $humanReviewStatusDataType = '';
+        /**
+         * The document payload, will populate fields based on the processor's
+         * behavior.
+         *
+         * @param GoogleCloudDocumentaiV1Document $document
+         */
+        public function setDocument(GoogleCloudDocumentaiV1Document $document)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1Document
+         */
+        public function getDocument()
+        {
+        }
+        /**
+         * The status of human review on the processed document.
+         *
+         * @param GoogleCloudDocumentaiV1HumanReviewStatus $humanReviewStatus
+         */
+        public function setHumanReviewStatus(GoogleCloudDocumentaiV1HumanReviewStatus $humanReviewStatus)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1HumanReviewStatus
+         */
+        public function getHumanReviewStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiV1Document
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1ProcessResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDocument()
-    {
-    }
-    /**
-     * The status of human review on the processed document.
-     *
-     * @param GoogleCloudDocumentaiV1HumanReviewStatus $humanReviewStatus
-     */
-    public function setHumanReviewStatus(GoogleCloudDocumentaiV1HumanReviewStatus $humanReviewStatus)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1HumanReviewStatus
-     */
-    public function getHumanReviewStatus()
+    class Google_Service_Document_GoogleCloudDocumentaiV1ProcessResponse extends \Google\Service\Document\GoogleCloudDocumentaiV1ProcessResponse
     {
     }
 }

@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class AuxiliaryServicesConfig extends \Google\Model
-{
-    protected $metastoreConfigType = MetastoreConfig::class;
-    protected $metastoreConfigDataType = '';
-    protected $sparkHistoryServerConfigType = SparkHistoryServerConfig::class;
-    protected $sparkHistoryServerConfigDataType = '';
-    /**
-     * Optional. The Hive Metastore configuration for this workload.
-     *
-     * @param MetastoreConfig $metastoreConfig
-     */
-    public function setMetastoreConfig(MetastoreConfig $metastoreConfig)
+namespace Google\Service\Dataproc {
+    class AuxiliaryServicesConfig extends \Google\Model
     {
+        protected $metastoreConfigType = MetastoreConfig::class;
+        protected $metastoreConfigDataType = '';
+        protected $sparkHistoryServerConfigType = SparkHistoryServerConfig::class;
+        protected $sparkHistoryServerConfigDataType = '';
+        /**
+         * Optional. The Hive Metastore configuration for this workload.
+         *
+         * @param MetastoreConfig $metastoreConfig
+         */
+        public function setMetastoreConfig(MetastoreConfig $metastoreConfig)
+        {
+        }
+        /**
+         * @return MetastoreConfig
+         */
+        public function getMetastoreConfig()
+        {
+        }
+        /**
+         * Optional. The Spark History Server configuration for the workload.
+         *
+         * @param SparkHistoryServerConfig $sparkHistoryServerConfig
+         */
+        public function setSparkHistoryServerConfig(SparkHistoryServerConfig $sparkHistoryServerConfig)
+        {
+        }
+        /**
+         * @return SparkHistoryServerConfig
+         */
+        public function getSparkHistoryServerConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MetastoreConfig
+     * Runtime class alias of \Google\Service\Dataproc\AuxiliaryServicesConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetastoreConfig()
-    {
-    }
-    /**
-     * Optional. The Spark History Server configuration for the workload.
-     *
-     * @param SparkHistoryServerConfig $sparkHistoryServerConfig
-     */
-    public function setSparkHistoryServerConfig(SparkHistoryServerConfig $sparkHistoryServerConfig)
-    {
-    }
-    /**
-     * @return SparkHistoryServerConfig
-     */
-    public function getSparkHistoryServerConfig()
+    class Google_Service_Dataproc_AuxiliaryServicesConfig extends \Google\Service\Dataproc\AuxiliaryServicesConfig
     {
     }
 }

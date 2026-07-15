@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaFactChunk extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $chunkText;
-    /**
-     * @var string
-     */
-    public $source;
-    /**
-     * @var string[]
-     */
-    public $sourceMetadata;
-    /**
-     * @param string
-     */
-    public function setChunkText($chunkText)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaFactChunk extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $chunkText;
+        /**
+         * @var string
+         */
+        public $source;
+        /**
+         * @var string[]
+         */
+        public $sourceMetadata;
+        /**
+         * @param string
+         */
+        public function setChunkText($chunkText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChunkText()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSource($source)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSource()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setSourceMetadata($sourceMetadata)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSourceMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaFactChunk registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChunkText()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSource($source)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSource()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setSourceMetadata($sourceMetadata)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSourceMetadata()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaFactChunk extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaFactChunk
     {
     }
 }

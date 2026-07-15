@@ -21,104 +21,114 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for HangoutsChat (v1).
- *
- * <p>
- * The Google Chat API lets you build Chat apps to integrate your services with
- * Google Chat and manage Chat resources such as spaces, members, and messages.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://developers.google.com/workspace/chat" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class HangoutsChat extends \Google\Service
-{
-    /** Delete conversations and spaces owned by your organization and remove access to associated files in Google Chat. */
-    const CHAT_ADMIN_DELETE = "https://www.googleapis.com/auth/chat.admin.delete";
-    /** View, add, update and remove members and managers in conversations owned by your organization. */
-    const CHAT_ADMIN_MEMBERSHIPS = "https://www.googleapis.com/auth/chat.admin.memberships";
-    /** View members and managers in conversations owned by your organization. */
-    const CHAT_ADMIN_MEMBERSHIPS_READONLY = "https://www.googleapis.com/auth/chat.admin.memberships.readonly";
-    /** View or edit display name, description, and other metadata for all Google Chat conversations owned by your organization. */
-    const CHAT_ADMIN_SPACES = "https://www.googleapis.com/auth/chat.admin.spaces";
-    /** View display name, description, and other metadata for all Google Chat conversations owned by your organization. */
-    const CHAT_ADMIN_SPACES_READONLY = "https://www.googleapis.com/auth/chat.admin.spaces.readonly";
-    /** On their own behalf, apps in Google Chat can delete conversations and spaces and remove access to associated files. */
-    const CHAT_APP_DELETE = "https://www.googleapis.com/auth/chat.app.delete";
-    /** On their own behalf, apps in Google Chat can see, add, update, and remove members from conversations and spaces. */
-    const CHAT_APP_MEMBERSHIPS = "https://www.googleapis.com/auth/chat.app.memberships";
-    /** On their own behalf, apps in Google Chat can see all messages and their associated reactions and message content. */
-    const CHAT_APP_MESSAGES_READONLY = "https://www.googleapis.com/auth/chat.app.messages.readonly";
-    /** On their own behalf, apps in Google Chat can create conversations and spaces and see or update their metadata (including history settings and access settings). */
-    const CHAT_APP_SPACES = "https://www.googleapis.com/auth/chat.app.spaces";
-    /** On their own behalf, apps in Google Chat can create conversations and spaces. */
-    const CHAT_APP_SPACES_CREATE = "https://www.googleapis.com/auth/chat.app.spaces.create";
-    /** Private Service: https://www.googleapis.com/auth/chat.bot. */
-    const CHAT_BOT = "https://www.googleapis.com/auth/chat.bot";
-    /** View, create, and delete custom emoji in Google Chat. */
-    const CHAT_CUSTOMEMOJIS = "https://www.googleapis.com/auth/chat.customemojis";
-    /** View custom emoji in Google Chat. */
-    const CHAT_CUSTOMEMOJIS_READONLY = "https://www.googleapis.com/auth/chat.customemojis.readonly";
-    /** Delete conversations and spaces and remove access to associated files in Google Chat. */
-    const CHAT_DELETE = "https://www.googleapis.com/auth/chat.delete";
-    /** Import spaces, messages, and memberships into Google Chat.. */
-    const CHAT_IMPORT = "https://www.googleapis.com/auth/chat.import";
-    /** See, add, update, and remove members from conversations and spaces in Google Chat. */
-    const CHAT_MEMBERSHIPS = "https://www.googleapis.com/auth/chat.memberships";
-    /** Add and remove itself from conversations and spaces in Google Chat. */
-    const CHAT_MEMBERSHIPS_APP = "https://www.googleapis.com/auth/chat.memberships.app";
-    /** View members in Google Chat conversations.. */
-    const CHAT_MEMBERSHIPS_READONLY = "https://www.googleapis.com/auth/chat.memberships.readonly";
-    /** See, compose, send, update, and delete messages as well as their message content; add, see, and delete reactions to messages.. */
-    const CHAT_MESSAGES = "https://www.googleapis.com/auth/chat.messages";
-    /** Compose and send messages in Google Chat. */
-    const CHAT_MESSAGES_CREATE = "https://www.googleapis.com/auth/chat.messages.create";
-    /** See, add, and delete reactions as well as their reaction content to messages in Google Chat. */
-    const CHAT_MESSAGES_REACTIONS = "https://www.googleapis.com/auth/chat.messages.reactions";
-    /** Add reactions to messages in Google Chat. */
-    const CHAT_MESSAGES_REACTIONS_CREATE = "https://www.googleapis.com/auth/chat.messages.reactions.create";
-    /** View reactions as well as their reaction content to messages in Google Chat. */
-    const CHAT_MESSAGES_REACTIONS_READONLY = "https://www.googleapis.com/auth/chat.messages.reactions.readonly";
-    /** See messages as well as their reactions and message content in Google Chat. */
-    const CHAT_MESSAGES_READONLY = "https://www.googleapis.com/auth/chat.messages.readonly";
-    /** Create conversations and spaces and see or update metadata (including history settings and access settings) in Google Chat. */
-    const CHAT_SPACES = "https://www.googleapis.com/auth/chat.spaces";
-    /** Create new conversations and spaces in Google Chat. */
-    const CHAT_SPACES_CREATE = "https://www.googleapis.com/auth/chat.spaces.create";
-    /** View chat and spaces in Google Chat. */
-    const CHAT_SPACES_READONLY = "https://www.googleapis.com/auth/chat.spaces.readonly";
-    /** View and modify last read time for Google Chat conversations. */
-    const CHAT_USERS_READSTATE = "https://www.googleapis.com/auth/chat.users.readstate";
-    /** View last read time for Google Chat conversations. */
-    const CHAT_USERS_READSTATE_READONLY = "https://www.googleapis.com/auth/chat.users.readstate.readonly";
-    /** Read and update your space settings. */
-    const CHAT_USERS_SPACESETTINGS = "https://www.googleapis.com/auth/chat.users.spacesettings";
-    public $customEmojis;
-    public $media;
-    public $spaces;
-    public $spaces_members;
-    public $spaces_messages;
-    public $spaces_messages_attachments;
-    public $spaces_messages_reactions;
-    public $spaces_spaceEvents;
-    public $users_spaces;
-    public $users_spaces_spaceNotificationSetting;
-    public $users_spaces_threads;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the HangoutsChat service.
+     * Service definition for HangoutsChat (v1).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * The Google Chat API lets you build Chat apps to integrate your services with
+     * Google Chat and manage Chat resources such as spaces, members, and messages.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://developers.google.com/workspace/chat" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class HangoutsChat extends \Google\Service
+    {
+        /** Delete conversations and spaces owned by your organization and remove access to associated files in Google Chat. */
+        const CHAT_ADMIN_DELETE = "https://www.googleapis.com/auth/chat.admin.delete";
+        /** View, add, update and remove members and managers in conversations owned by your organization. */
+        const CHAT_ADMIN_MEMBERSHIPS = "https://www.googleapis.com/auth/chat.admin.memberships";
+        /** View members and managers in conversations owned by your organization. */
+        const CHAT_ADMIN_MEMBERSHIPS_READONLY = "https://www.googleapis.com/auth/chat.admin.memberships.readonly";
+        /** View or edit display name, description, and other metadata for all Google Chat conversations owned by your organization. */
+        const CHAT_ADMIN_SPACES = "https://www.googleapis.com/auth/chat.admin.spaces";
+        /** View display name, description, and other metadata for all Google Chat conversations owned by your organization. */
+        const CHAT_ADMIN_SPACES_READONLY = "https://www.googleapis.com/auth/chat.admin.spaces.readonly";
+        /** On their own behalf, apps in Google Chat can delete conversations and spaces and remove access to associated files. */
+        const CHAT_APP_DELETE = "https://www.googleapis.com/auth/chat.app.delete";
+        /** On their own behalf, apps in Google Chat can see, add, update, and remove members from conversations and spaces. */
+        const CHAT_APP_MEMBERSHIPS = "https://www.googleapis.com/auth/chat.app.memberships";
+        /** On their own behalf, apps in Google Chat can see all messages and their associated reactions and message content. */
+        const CHAT_APP_MESSAGES_READONLY = "https://www.googleapis.com/auth/chat.app.messages.readonly";
+        /** On their own behalf, apps in Google Chat can create conversations and spaces and see or update their metadata (including history settings and access settings). */
+        const CHAT_APP_SPACES = "https://www.googleapis.com/auth/chat.app.spaces";
+        /** On their own behalf, apps in Google Chat can create conversations and spaces. */
+        const CHAT_APP_SPACES_CREATE = "https://www.googleapis.com/auth/chat.app.spaces.create";
+        /** Private Service: https://www.googleapis.com/auth/chat.bot. */
+        const CHAT_BOT = "https://www.googleapis.com/auth/chat.bot";
+        /** View, create, and delete custom emoji in Google Chat. */
+        const CHAT_CUSTOMEMOJIS = "https://www.googleapis.com/auth/chat.customemojis";
+        /** View custom emoji in Google Chat. */
+        const CHAT_CUSTOMEMOJIS_READONLY = "https://www.googleapis.com/auth/chat.customemojis.readonly";
+        /** Delete conversations and spaces and remove access to associated files in Google Chat. */
+        const CHAT_DELETE = "https://www.googleapis.com/auth/chat.delete";
+        /** Import spaces, messages, and memberships into Google Chat.. */
+        const CHAT_IMPORT = "https://www.googleapis.com/auth/chat.import";
+        /** See, add, update, and remove members from conversations and spaces in Google Chat. */
+        const CHAT_MEMBERSHIPS = "https://www.googleapis.com/auth/chat.memberships";
+        /** Add and remove itself from conversations and spaces in Google Chat. */
+        const CHAT_MEMBERSHIPS_APP = "https://www.googleapis.com/auth/chat.memberships.app";
+        /** View members in Google Chat conversations.. */
+        const CHAT_MEMBERSHIPS_READONLY = "https://www.googleapis.com/auth/chat.memberships.readonly";
+        /** See, compose, send, update, and delete messages as well as their message content; add, see, and delete reactions to messages.. */
+        const CHAT_MESSAGES = "https://www.googleapis.com/auth/chat.messages";
+        /** Compose and send messages in Google Chat. */
+        const CHAT_MESSAGES_CREATE = "https://www.googleapis.com/auth/chat.messages.create";
+        /** See, add, and delete reactions as well as their reaction content to messages in Google Chat. */
+        const CHAT_MESSAGES_REACTIONS = "https://www.googleapis.com/auth/chat.messages.reactions";
+        /** Add reactions to messages in Google Chat. */
+        const CHAT_MESSAGES_REACTIONS_CREATE = "https://www.googleapis.com/auth/chat.messages.reactions.create";
+        /** View reactions as well as their reaction content to messages in Google Chat. */
+        const CHAT_MESSAGES_REACTIONS_READONLY = "https://www.googleapis.com/auth/chat.messages.reactions.readonly";
+        /** See messages as well as their reactions and message content in Google Chat. */
+        const CHAT_MESSAGES_READONLY = "https://www.googleapis.com/auth/chat.messages.readonly";
+        /** Create conversations and spaces and see or update metadata (including history settings and access settings) in Google Chat. */
+        const CHAT_SPACES = "https://www.googleapis.com/auth/chat.spaces";
+        /** Create new conversations and spaces in Google Chat. */
+        const CHAT_SPACES_CREATE = "https://www.googleapis.com/auth/chat.spaces.create";
+        /** View chat and spaces in Google Chat. */
+        const CHAT_SPACES_READONLY = "https://www.googleapis.com/auth/chat.spaces.readonly";
+        /** View and modify last read time for Google Chat conversations. */
+        const CHAT_USERS_READSTATE = "https://www.googleapis.com/auth/chat.users.readstate";
+        /** View last read time for Google Chat conversations. */
+        const CHAT_USERS_READSTATE_READONLY = "https://www.googleapis.com/auth/chat.users.readstate.readonly";
+        /** Read and update your space settings. */
+        const CHAT_USERS_SPACESETTINGS = "https://www.googleapis.com/auth/chat.users.spacesettings";
+        public $customEmojis;
+        public $media;
+        public $spaces;
+        public $spaces_members;
+        public $spaces_messages;
+        public $spaces_messages_attachments;
+        public $spaces_messages_reactions;
+        public $spaces_spaceEvents;
+        public $users_spaces;
+        public $users_spaces_spaceNotificationSetting;
+        public $users_spaces_threads;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the HangoutsChat service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\HangoutsChat registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_HangoutsChat extends \Google\Service\HangoutsChat
     {
     }
 }

@@ -21,120 +21,129 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class RetryAttempt extends \Google\Model
-{
-    /**
-     * The `repair` has an unspecified state.
-     */
-    public const STATE_REPAIR_STATE_UNSPECIFIED = 'REPAIR_STATE_UNSPECIFIED';
-    /**
-     * The `repair` action has succeeded.
-     */
-    public const STATE_REPAIR_STATE_SUCCEEDED = 'REPAIR_STATE_SUCCEEDED';
-    /**
-     * The `repair` action was cancelled.
-     */
-    public const STATE_REPAIR_STATE_CANCELLED = 'REPAIR_STATE_CANCELLED';
-    /**
-     * The `repair` action has failed.
-     */
-    public const STATE_REPAIR_STATE_FAILED = 'REPAIR_STATE_FAILED';
-    /**
-     * The `repair` action is in progress.
-     */
-    public const STATE_REPAIR_STATE_IN_PROGRESS = 'REPAIR_STATE_IN_PROGRESS';
-    /**
-     * The `repair` action is pending.
-     */
-    public const STATE_REPAIR_STATE_PENDING = 'REPAIR_STATE_PENDING';
-    /**
-     * The `repair` action was aborted.
-     */
-    public const STATE_REPAIR_STATE_ABORTED = 'REPAIR_STATE_ABORTED';
-    /**
-     * Output only. The index of this retry attempt.
-     *
-     * @var string
-     */
-    public $attempt;
-    /**
-     * Output only. Valid state of this retry action.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Output only. Description of the state of the Retry.
-     *
-     * @var string
-     */
-    public $stateDesc;
-    /**
-     * Output only. How long the operation will be paused.
-     *
-     * @var string
-     */
-    public $wait;
-    /**
-     * Output only. The index of this retry attempt.
-     *
-     * @param string $attempt
-     */
-    public function setAttempt($attempt)
+namespace Google\Service\CloudDeploy {
+    class RetryAttempt extends \Google\Model
     {
+        /**
+         * The `repair` has an unspecified state.
+         */
+        public const STATE_REPAIR_STATE_UNSPECIFIED = 'REPAIR_STATE_UNSPECIFIED';
+        /**
+         * The `repair` action has succeeded.
+         */
+        public const STATE_REPAIR_STATE_SUCCEEDED = 'REPAIR_STATE_SUCCEEDED';
+        /**
+         * The `repair` action was cancelled.
+         */
+        public const STATE_REPAIR_STATE_CANCELLED = 'REPAIR_STATE_CANCELLED';
+        /**
+         * The `repair` action has failed.
+         */
+        public const STATE_REPAIR_STATE_FAILED = 'REPAIR_STATE_FAILED';
+        /**
+         * The `repair` action is in progress.
+         */
+        public const STATE_REPAIR_STATE_IN_PROGRESS = 'REPAIR_STATE_IN_PROGRESS';
+        /**
+         * The `repair` action is pending.
+         */
+        public const STATE_REPAIR_STATE_PENDING = 'REPAIR_STATE_PENDING';
+        /**
+         * The `repair` action was aborted.
+         */
+        public const STATE_REPAIR_STATE_ABORTED = 'REPAIR_STATE_ABORTED';
+        /**
+         * Output only. The index of this retry attempt.
+         *
+         * @var string
+         */
+        public $attempt;
+        /**
+         * Output only. Valid state of this retry action.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Output only. Description of the state of the Retry.
+         *
+         * @var string
+         */
+        public $stateDesc;
+        /**
+         * Output only. How long the operation will be paused.
+         *
+         * @var string
+         */
+        public $wait;
+        /**
+         * Output only. The index of this retry attempt.
+         *
+         * @param string $attempt
+         */
+        public function setAttempt($attempt)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAttempt()
+        {
+        }
+        /**
+         * Output only. Valid state of this retry action.
+         *
+         * Accepted values: REPAIR_STATE_UNSPECIFIED, REPAIR_STATE_SUCCEEDED,
+         * REPAIR_STATE_CANCELLED, REPAIR_STATE_FAILED, REPAIR_STATE_IN_PROGRESS,
+         * REPAIR_STATE_PENDING, REPAIR_STATE_ABORTED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Output only. Description of the state of the Retry.
+         *
+         * @param string $stateDesc
+         */
+        public function setStateDesc($stateDesc)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStateDesc()
+        {
+        }
+        /**
+         * Output only. How long the operation will be paused.
+         *
+         * @param string $wait
+         */
+        public function setWait($wait)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWait()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDeploy\RetryAttempt registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttempt()
-    {
-    }
-    /**
-     * Output only. Valid state of this retry action.
-     *
-     * Accepted values: REPAIR_STATE_UNSPECIFIED, REPAIR_STATE_SUCCEEDED,
-     * REPAIR_STATE_CANCELLED, REPAIR_STATE_FAILED, REPAIR_STATE_IN_PROGRESS,
-     * REPAIR_STATE_PENDING, REPAIR_STATE_ABORTED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Output only. Description of the state of the Retry.
-     *
-     * @param string $stateDesc
-     */
-    public function setStateDesc($stateDesc)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStateDesc()
-    {
-    }
-    /**
-     * Output only. How long the operation will be paused.
-     *
-     * @param string $wait
-     */
-    public function setWait($wait)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWait()
+    class Google_Service_CloudDeploy_RetryAttempt extends \Google\Service\CloudDeploy\RetryAttempt
     {
     }
 }

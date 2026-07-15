@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class UserMentionData extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $email;
-    protected $userType = PrincipalProto::class;
-    protected $userDataType = '';
-    /**
-     * @var string
-     */
-    public $userGaiaId;
-    /**
-     * @var string
-     */
-    public $userId;
-    /**
-     * @param string
-     */
-    public function setEmail($email)
+namespace Google\Service\CloudSearch {
+    class UserMentionData extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $email;
+        protected $userType = PrincipalProto::class;
+        protected $userDataType = '';
+        /**
+         * @var string
+         */
+        public $userGaiaId;
+        /**
+         * @var string
+         */
+        public $userId;
+        /**
+         * @param string
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
+        /**
+         * @param PrincipalProto
+         */
+        public function setUser(PrincipalProto $user)
+        {
+        }
+        /**
+         * @return PrincipalProto
+         */
+        public function getUser()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUserGaiaId($userGaiaId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserGaiaId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUserId($userId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\UserMentionData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmail()
-    {
-    }
-    /**
-     * @param PrincipalProto
-     */
-    public function setUser(PrincipalProto $user)
-    {
-    }
-    /**
-     * @return PrincipalProto
-     */
-    public function getUser()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUserGaiaId($userGaiaId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserGaiaId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUserId($userId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserId()
+    class Google_Service_CloudSearch_UserMentionData extends \Google\Service\CloudSearch\UserMentionData
     {
     }
 }

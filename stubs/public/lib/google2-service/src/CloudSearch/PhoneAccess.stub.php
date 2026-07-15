@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class PhoneAccess extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $formattedPhoneNumber;
-    /**
-     * @var string
-     */
-    public $languageCode;
-    /**
-     * @var string
-     */
-    public $phoneNumber;
-    /**
-     * @var string
-     */
-    public $pin;
-    /**
-     * @var string
-     */
-    public $regionCode;
-    /**
-     * @param string
-     */
-    public function setFormattedPhoneNumber($formattedPhoneNumber)
+namespace Google\Service\CloudSearch {
+    class PhoneAccess extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $formattedPhoneNumber;
+        /**
+         * @var string
+         */
+        public $languageCode;
+        /**
+         * @var string
+         */
+        public $phoneNumber;
+        /**
+         * @var string
+         */
+        public $pin;
+        /**
+         * @var string
+         */
+        public $regionCode;
+        /**
+         * @param string
+         */
+        public function setFormattedPhoneNumber($formattedPhoneNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFormattedPhoneNumber()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLanguageCode($languageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLanguageCode()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPhoneNumber($phoneNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPhoneNumber()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPin($pin)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPin()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRegionCode($regionCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegionCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\PhoneAccess registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFormattedPhoneNumber()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLanguageCode($languageCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLanguageCode()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPhoneNumber($phoneNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPhoneNumber()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPin($pin)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPin()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRegionCode($regionCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegionCode()
+    class Google_Service_CloudSearch_PhoneAccess extends \Google\Service\CloudSearch\PhoneAccess
     {
     }
 }

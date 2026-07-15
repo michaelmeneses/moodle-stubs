@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1ReplaceTaxonomyRequest extends \Google\Model
-{
-    protected $serializedTaxonomyType = GoogleCloudDatacatalogV1SerializedTaxonomy::class;
-    protected $serializedTaxonomyDataType = '';
-    /**
-     * Required. Taxonomy to update along with its child policy tags.
-     *
-     * @param GoogleCloudDatacatalogV1SerializedTaxonomy $serializedTaxonomy
-     */
-    public function setSerializedTaxonomy(GoogleCloudDatacatalogV1SerializedTaxonomy $serializedTaxonomy)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1ReplaceTaxonomyRequest extends \Google\Model
     {
+        protected $serializedTaxonomyType = GoogleCloudDatacatalogV1SerializedTaxonomy::class;
+        protected $serializedTaxonomyDataType = '';
+        /**
+         * Required. Taxonomy to update along with its child policy tags.
+         *
+         * @param GoogleCloudDatacatalogV1SerializedTaxonomy $serializedTaxonomy
+         */
+        public function setSerializedTaxonomy(GoogleCloudDatacatalogV1SerializedTaxonomy $serializedTaxonomy)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1SerializedTaxonomy
+         */
+        public function getSerializedTaxonomy()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatacatalogV1SerializedTaxonomy
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1ReplaceTaxonomyRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSerializedTaxonomy()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1ReplaceTaxonomyRequest extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1ReplaceTaxonomyRequest
     {
     }
 }

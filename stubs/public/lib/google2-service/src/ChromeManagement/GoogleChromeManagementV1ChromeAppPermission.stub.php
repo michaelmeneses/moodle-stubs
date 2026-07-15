@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementV1ChromeAppPermission extends \Google\Model
-{
-    /**
-     * Output only. If available, whether this permissions grants the
-     * app/extension access to user data.
-     *
-     * @var bool
-     */
-    public $accessUserData;
-    /**
-     * Output only. If available, a URI to a page that has documentation for the
-     * current permission.
-     *
-     * @var string
-     */
-    public $documentationUri;
-    /**
-     * Output only. The type of the permission.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Output only. If available, whether this permissions grants the
-     * app/extension access to user data.
-     *
-     * @param bool $accessUserData
-     */
-    public function setAccessUserData($accessUserData)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementV1ChromeAppPermission extends \Google\Model
     {
+        /**
+         * Output only. If available, whether this permissions grants the
+         * app/extension access to user data.
+         *
+         * @var bool
+         */
+        public $accessUserData;
+        /**
+         * Output only. If available, a URI to a page that has documentation for the
+         * current permission.
+         *
+         * @var string
+         */
+        public $documentationUri;
+        /**
+         * Output only. The type of the permission.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Output only. If available, whether this permissions grants the
+         * app/extension access to user data.
+         *
+         * @param bool $accessUserData
+         */
+        public function setAccessUserData($accessUserData)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAccessUserData()
+        {
+        }
+        /**
+         * Output only. If available, a URI to a page that has documentation for the
+         * current permission.
+         *
+         * @param string $documentationUri
+         */
+        public function setDocumentationUri($documentationUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDocumentationUri()
+        {
+        }
+        /**
+         * Output only. The type of the permission.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementV1ChromeAppPermission registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccessUserData()
-    {
-    }
-    /**
-     * Output only. If available, a URI to a page that has documentation for the
-     * current permission.
-     *
-     * @param string $documentationUri
-     */
-    public function setDocumentationUri($documentationUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDocumentationUri()
-    {
-    }
-    /**
-     * Output only. The type of the permission.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_ChromeManagement_GoogleChromeManagementV1ChromeAppPermission extends \Google\Service\ChromeManagement\GoogleChromeManagementV1ChromeAppPermission
     {
     }
 }

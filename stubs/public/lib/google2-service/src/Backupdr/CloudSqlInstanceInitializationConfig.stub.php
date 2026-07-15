@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Backupdr;
-
-class CloudSqlInstanceInitializationConfig extends \Google\Model
-{
-    /**
-     * Unspecified edition.
-     */
-    public const EDITION_EDITION_UNSPECIFIED = 'EDITION_UNSPECIFIED';
-    /**
-     * Enterprise edition.
-     */
-    public const EDITION_ENTERPRISE = 'ENTERPRISE';
-    /**
-     * Enterprise Plus edition.
-     */
-    public const EDITION_ENTERPRISE_PLUS = 'ENTERPRISE_PLUS';
-    /**
-     * Required. The edition of the Cloud SQL instance.
-     *
-     * @var string
-     */
-    public $edition;
-    /**
-     * Required. The edition of the Cloud SQL instance.
-     *
-     * Accepted values: EDITION_UNSPECIFIED, ENTERPRISE, ENTERPRISE_PLUS
-     *
-     * @param self::EDITION_* $edition
-     */
-    public function setEdition($edition)
+namespace Google\Service\Backupdr {
+    class CloudSqlInstanceInitializationConfig extends \Google\Model
     {
+        /**
+         * Unspecified edition.
+         */
+        public const EDITION_EDITION_UNSPECIFIED = 'EDITION_UNSPECIFIED';
+        /**
+         * Enterprise edition.
+         */
+        public const EDITION_ENTERPRISE = 'ENTERPRISE';
+        /**
+         * Enterprise Plus edition.
+         */
+        public const EDITION_ENTERPRISE_PLUS = 'ENTERPRISE_PLUS';
+        /**
+         * Required. The edition of the Cloud SQL instance.
+         *
+         * @var string
+         */
+        public $edition;
+        /**
+         * Required. The edition of the Cloud SQL instance.
+         *
+         * Accepted values: EDITION_UNSPECIFIED, ENTERPRISE, ENTERPRISE_PLUS
+         *
+         * @param self::EDITION_* $edition
+         */
+        public function setEdition($edition)
+        {
+        }
+        /**
+         * @return self::EDITION_*
+         */
+        public function getEdition()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::EDITION_*
+     * Runtime class alias of \Google\Service\Backupdr\CloudSqlInstanceInitializationConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEdition()
+    class Google_Service_Backupdr_CloudSqlInstanceInitializationConfig extends \Google\Service\Backupdr\CloudSqlInstanceInitializationConfig
     {
     }
 }

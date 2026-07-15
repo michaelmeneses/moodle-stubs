@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManagedKafka;
-
-class UpdateSchemaModeRequest extends \Google\Model
-{
-    /**
-     * The default / unset value. The subject mode is NONE/unset by default, which
-     * means use the global schema registry mode. This should not be used for
-     * setting the mode.
-     */
-    public const MODE_NONE = 'NONE';
-    /**
-     * READONLY mode.
-     */
-    public const MODE_READONLY = 'READONLY';
-    /**
-     * READWRITE mode.
-     */
-    public const MODE_READWRITE = 'READWRITE';
-    /**
-     * IMPORT mode.
-     */
-    public const MODE_IMPORT = 'IMPORT';
-    /**
-     * Required. The mode type.
-     *
-     * @var string
-     */
-    public $mode;
-    /**
-     * Required. The mode type.
-     *
-     * Accepted values: NONE, READONLY, READWRITE, IMPORT
-     *
-     * @param self::MODE_* $mode
-     */
-    public function setMode($mode)
+namespace Google\Service\ManagedKafka {
+    class UpdateSchemaModeRequest extends \Google\Model
     {
+        /**
+         * The default / unset value. The subject mode is NONE/unset by default, which
+         * means use the global schema registry mode. This should not be used for
+         * setting the mode.
+         */
+        public const MODE_NONE = 'NONE';
+        /**
+         * READONLY mode.
+         */
+        public const MODE_READONLY = 'READONLY';
+        /**
+         * READWRITE mode.
+         */
+        public const MODE_READWRITE = 'READWRITE';
+        /**
+         * IMPORT mode.
+         */
+        public const MODE_IMPORT = 'IMPORT';
+        /**
+         * Required. The mode type.
+         *
+         * @var string
+         */
+        public $mode;
+        /**
+         * Required. The mode type.
+         *
+         * Accepted values: NONE, READONLY, READWRITE, IMPORT
+         *
+         * @param self::MODE_* $mode
+         */
+        public function setMode($mode)
+        {
+        }
+        /**
+         * @return self::MODE_*
+         */
+        public function getMode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::MODE_*
+     * Runtime class alias of \Google\Service\ManagedKafka\UpdateSchemaModeRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMode()
+    class Google_Service_ManagedKafka_UpdateSchemaModeRequest extends \Google\Service\ManagedKafka\UpdateSchemaModeRequest
     {
     }
 }

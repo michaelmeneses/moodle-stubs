@@ -16,6 +16,15 @@
  */
 namespace Monolog\Handler;
 
+use Monolog\Formatter\LineFormatter;
+use Monolog\Formatter\FormatterInterface;
+use Monolog\Level;
+use Monolog\Utils;
+use PhpConsole\Connector;
+use PhpConsole\Handler as VendorPhpConsoleHandler;
+use PhpConsole\Helper;
+use Monolog\LogRecord;
+use PhpConsole\Storage;
 /**
  * Monolog handler for Google Chrome extension "PHP Console"
  *

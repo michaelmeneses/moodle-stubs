@@ -21,204 +21,213 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAlloyDBAdmin;
-
-class ClusterUpgradeDetails extends \Google\Collection
-{
-    /**
-     * The type of the cluster is unknown.
-     */
-    public const CLUSTER_TYPE_CLUSTER_TYPE_UNSPECIFIED = 'CLUSTER_TYPE_UNSPECIFIED';
-    /**
-     * Primary cluster that support read and write operations.
-     */
-    public const CLUSTER_TYPE_PRIMARY = 'PRIMARY';
-    /**
-     * Secondary cluster that is replicating from another region. This only
-     * supports read.
-     */
-    public const CLUSTER_TYPE_SECONDARY = 'SECONDARY';
-    /**
-     * This is an unknown database version.
-     */
-    public const DATABASE_VERSION_DATABASE_VERSION_UNSPECIFIED = 'DATABASE_VERSION_UNSPECIFIED';
-    /**
-     * DEPRECATED - The database version is Postgres 13.
-     *
-     * @deprecated
-     */
-    public const DATABASE_VERSION_POSTGRES_13 = 'POSTGRES_13';
-    /**
-     * The database version is Postgres 14.
-     */
-    public const DATABASE_VERSION_POSTGRES_14 = 'POSTGRES_14';
-    /**
-     * The database version is Postgres 15.
-     */
-    public const DATABASE_VERSION_POSTGRES_15 = 'POSTGRES_15';
-    /**
-     * The database version is Postgres 16.
-     */
-    public const DATABASE_VERSION_POSTGRES_16 = 'POSTGRES_16';
-    /**
-     * The database version is Postgres 17.
-     */
-    public const DATABASE_VERSION_POSTGRES_17 = 'POSTGRES_17';
-    /**
-     * Unspecified status.
-     */
-    public const UPGRADE_STATUS_STATUS_UNSPECIFIED = 'STATUS_UNSPECIFIED';
-    /**
-     * Not started.
-     */
-    public const UPGRADE_STATUS_NOT_STARTED = 'NOT_STARTED';
-    /**
-     * In progress.
-     */
-    public const UPGRADE_STATUS_IN_PROGRESS = 'IN_PROGRESS';
-    /**
-     * Operation succeeded.
-     */
-    public const UPGRADE_STATUS_SUCCESS = 'SUCCESS';
-    /**
-     * Operation failed.
-     */
-    public const UPGRADE_STATUS_FAILED = 'FAILED';
-    /**
-     * Operation partially succeeded.
-     */
-    public const UPGRADE_STATUS_PARTIAL_SUCCESS = 'PARTIAL_SUCCESS';
-    /**
-     * Cancel is in progress.
-     */
-    public const UPGRADE_STATUS_CANCEL_IN_PROGRESS = 'CANCEL_IN_PROGRESS';
-    /**
-     * Cancellation complete.
-     */
-    public const UPGRADE_STATUS_CANCELLED = 'CANCELLED';
-    protected $collection_key = 'stageInfo';
-    /**
-     * Cluster type which can either be primary or secondary.
-     *
-     * @var string
-     */
-    public $clusterType;
-    /**
-     * Database version of the cluster after the upgrade operation. This will be
-     * the target version if the upgrade was successful otherwise it remains the
-     * same as that before the upgrade operation.
-     *
-     * @var string
-     */
-    public $databaseVersion;
-    protected $instanceUpgradeDetailsType = InstanceUpgradeDetails::class;
-    protected $instanceUpgradeDetailsDataType = 'array';
-    /**
-     * Normalized name of the cluster
-     *
-     * @var string
-     */
-    public $name;
-    protected $stageInfoType = StageInfo::class;
-    protected $stageInfoDataType = 'array';
-    /**
-     * Upgrade status of the cluster.
-     *
-     * @var string
-     */
-    public $upgradeStatus;
-    /**
-     * Cluster type which can either be primary or secondary.
-     *
-     * Accepted values: CLUSTER_TYPE_UNSPECIFIED, PRIMARY, SECONDARY
-     *
-     * @param self::CLUSTER_TYPE_* $clusterType
-     */
-    public function setClusterType($clusterType)
+namespace Google\Service\CloudAlloyDBAdmin {
+    class ClusterUpgradeDetails extends \Google\Collection
     {
+        /**
+         * The type of the cluster is unknown.
+         */
+        public const CLUSTER_TYPE_CLUSTER_TYPE_UNSPECIFIED = 'CLUSTER_TYPE_UNSPECIFIED';
+        /**
+         * Primary cluster that support read and write operations.
+         */
+        public const CLUSTER_TYPE_PRIMARY = 'PRIMARY';
+        /**
+         * Secondary cluster that is replicating from another region. This only
+         * supports read.
+         */
+        public const CLUSTER_TYPE_SECONDARY = 'SECONDARY';
+        /**
+         * This is an unknown database version.
+         */
+        public const DATABASE_VERSION_DATABASE_VERSION_UNSPECIFIED = 'DATABASE_VERSION_UNSPECIFIED';
+        /**
+         * DEPRECATED - The database version is Postgres 13.
+         *
+         * @deprecated
+         */
+        public const DATABASE_VERSION_POSTGRES_13 = 'POSTGRES_13';
+        /**
+         * The database version is Postgres 14.
+         */
+        public const DATABASE_VERSION_POSTGRES_14 = 'POSTGRES_14';
+        /**
+         * The database version is Postgres 15.
+         */
+        public const DATABASE_VERSION_POSTGRES_15 = 'POSTGRES_15';
+        /**
+         * The database version is Postgres 16.
+         */
+        public const DATABASE_VERSION_POSTGRES_16 = 'POSTGRES_16';
+        /**
+         * The database version is Postgres 17.
+         */
+        public const DATABASE_VERSION_POSTGRES_17 = 'POSTGRES_17';
+        /**
+         * Unspecified status.
+         */
+        public const UPGRADE_STATUS_STATUS_UNSPECIFIED = 'STATUS_UNSPECIFIED';
+        /**
+         * Not started.
+         */
+        public const UPGRADE_STATUS_NOT_STARTED = 'NOT_STARTED';
+        /**
+         * In progress.
+         */
+        public const UPGRADE_STATUS_IN_PROGRESS = 'IN_PROGRESS';
+        /**
+         * Operation succeeded.
+         */
+        public const UPGRADE_STATUS_SUCCESS = 'SUCCESS';
+        /**
+         * Operation failed.
+         */
+        public const UPGRADE_STATUS_FAILED = 'FAILED';
+        /**
+         * Operation partially succeeded.
+         */
+        public const UPGRADE_STATUS_PARTIAL_SUCCESS = 'PARTIAL_SUCCESS';
+        /**
+         * Cancel is in progress.
+         */
+        public const UPGRADE_STATUS_CANCEL_IN_PROGRESS = 'CANCEL_IN_PROGRESS';
+        /**
+         * Cancellation complete.
+         */
+        public const UPGRADE_STATUS_CANCELLED = 'CANCELLED';
+        protected $collection_key = 'stageInfo';
+        /**
+         * Cluster type which can either be primary or secondary.
+         *
+         * @var string
+         */
+        public $clusterType;
+        /**
+         * Database version of the cluster after the upgrade operation. This will be
+         * the target version if the upgrade was successful otherwise it remains the
+         * same as that before the upgrade operation.
+         *
+         * @var string
+         */
+        public $databaseVersion;
+        protected $instanceUpgradeDetailsType = InstanceUpgradeDetails::class;
+        protected $instanceUpgradeDetailsDataType = 'array';
+        /**
+         * Normalized name of the cluster
+         *
+         * @var string
+         */
+        public $name;
+        protected $stageInfoType = StageInfo::class;
+        protected $stageInfoDataType = 'array';
+        /**
+         * Upgrade status of the cluster.
+         *
+         * @var string
+         */
+        public $upgradeStatus;
+        /**
+         * Cluster type which can either be primary or secondary.
+         *
+         * Accepted values: CLUSTER_TYPE_UNSPECIFIED, PRIMARY, SECONDARY
+         *
+         * @param self::CLUSTER_TYPE_* $clusterType
+         */
+        public function setClusterType($clusterType)
+        {
+        }
+        /**
+         * @return self::CLUSTER_TYPE_*
+         */
+        public function getClusterType()
+        {
+        }
+        /**
+         * Database version of the cluster after the upgrade operation. This will be
+         * the target version if the upgrade was successful otherwise it remains the
+         * same as that before the upgrade operation.
+         *
+         * Accepted values: DATABASE_VERSION_UNSPECIFIED, POSTGRES_13, POSTGRES_14,
+         * POSTGRES_15, POSTGRES_16, POSTGRES_17
+         *
+         * @param self::DATABASE_VERSION_* $databaseVersion
+         */
+        public function setDatabaseVersion($databaseVersion)
+        {
+        }
+        /**
+         * @return self::DATABASE_VERSION_*
+         */
+        public function getDatabaseVersion()
+        {
+        }
+        /**
+         * Upgrade details of the instances directly associated with this cluster.
+         *
+         * @param InstanceUpgradeDetails[] $instanceUpgradeDetails
+         */
+        public function setInstanceUpgradeDetails($instanceUpgradeDetails)
+        {
+        }
+        /**
+         * @return InstanceUpgradeDetails[]
+         */
+        public function getInstanceUpgradeDetails()
+        {
+        }
+        /**
+         * Normalized name of the cluster
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Array containing stage info associated with this cluster.
+         *
+         * @param StageInfo[] $stageInfo
+         */
+        public function setStageInfo($stageInfo)
+        {
+        }
+        /**
+         * @return StageInfo[]
+         */
+        public function getStageInfo()
+        {
+        }
+        /**
+         * Upgrade status of the cluster.
+         *
+         * Accepted values: STATUS_UNSPECIFIED, NOT_STARTED, IN_PROGRESS, SUCCESS,
+         * FAILED, PARTIAL_SUCCESS, CANCEL_IN_PROGRESS, CANCELLED
+         *
+         * @param self::UPGRADE_STATUS_* $upgradeStatus
+         */
+        public function setUpgradeStatus($upgradeStatus)
+        {
+        }
+        /**
+         * @return self::UPGRADE_STATUS_*
+         */
+        public function getUpgradeStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::CLUSTER_TYPE_*
+     * Runtime class alias of \Google\Service\CloudAlloyDBAdmin\ClusterUpgradeDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClusterType()
-    {
-    }
-    /**
-     * Database version of the cluster after the upgrade operation. This will be
-     * the target version if the upgrade was successful otherwise it remains the
-     * same as that before the upgrade operation.
-     *
-     * Accepted values: DATABASE_VERSION_UNSPECIFIED, POSTGRES_13, POSTGRES_14,
-     * POSTGRES_15, POSTGRES_16, POSTGRES_17
-     *
-     * @param self::DATABASE_VERSION_* $databaseVersion
-     */
-    public function setDatabaseVersion($databaseVersion)
-    {
-    }
-    /**
-     * @return self::DATABASE_VERSION_*
-     */
-    public function getDatabaseVersion()
-    {
-    }
-    /**
-     * Upgrade details of the instances directly associated with this cluster.
-     *
-     * @param InstanceUpgradeDetails[] $instanceUpgradeDetails
-     */
-    public function setInstanceUpgradeDetails($instanceUpgradeDetails)
-    {
-    }
-    /**
-     * @return InstanceUpgradeDetails[]
-     */
-    public function getInstanceUpgradeDetails()
-    {
-    }
-    /**
-     * Normalized name of the cluster
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Array containing stage info associated with this cluster.
-     *
-     * @param StageInfo[] $stageInfo
-     */
-    public function setStageInfo($stageInfo)
-    {
-    }
-    /**
-     * @return StageInfo[]
-     */
-    public function getStageInfo()
-    {
-    }
-    /**
-     * Upgrade status of the cluster.
-     *
-     * Accepted values: STATUS_UNSPECIFIED, NOT_STARTED, IN_PROGRESS, SUCCESS,
-     * FAILED, PARTIAL_SUCCESS, CANCEL_IN_PROGRESS, CANCELLED
-     *
-     * @param self::UPGRADE_STATUS_* $upgradeStatus
-     */
-    public function setUpgradeStatus($upgradeStatus)
-    {
-    }
-    /**
-     * @return self::UPGRADE_STATUS_*
-     */
-    public function getUpgradeStatus()
+    class Google_Service_CloudAlloyDBAdmin_ClusterUpgradeDetails extends \Google\Service\CloudAlloyDBAdmin\ClusterUpgradeDetails
     {
     }
 }

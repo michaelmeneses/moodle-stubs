@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class ReviewsReplyResponse extends \Google\Model
-{
-    protected $resultType = ReviewReplyResult::class;
-    protected $resultDataType = '';
-    /**
-     * The result of replying/updating a reply to review.
-     *
-     * @param ReviewReplyResult $result
-     */
-    public function setResult(ReviewReplyResult $result)
+namespace Google\Service\AndroidPublisher {
+    class ReviewsReplyResponse extends \Google\Model
     {
+        protected $resultType = ReviewReplyResult::class;
+        protected $resultDataType = '';
+        /**
+         * The result of replying/updating a reply to review.
+         *
+         * @param ReviewReplyResult $result
+         */
+        public function setResult(ReviewReplyResult $result)
+        {
+        }
+        /**
+         * @return ReviewReplyResult
+         */
+        public function getResult()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ReviewReplyResult
+     * Runtime class alias of \Google\Service\AndroidPublisher\ReviewsReplyResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResult()
+    class Google_Service_AndroidPublisher_ReviewsReplyResponse extends \Google\Service\AndroidPublisher\ReviewsReplyResponse
     {
     }
 }

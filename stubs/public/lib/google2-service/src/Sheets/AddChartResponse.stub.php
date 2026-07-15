@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class AddChartResponse extends \Google\Model
-{
-    protected $chartType = EmbeddedChart::class;
-    protected $chartDataType = '';
-    /**
-     * The newly added chart.
-     *
-     * @param EmbeddedChart $chart
-     */
-    public function setChart(EmbeddedChart $chart)
+namespace Google\Service\Sheets {
+    class AddChartResponse extends \Google\Model
     {
+        protected $chartType = EmbeddedChart::class;
+        protected $chartDataType = '';
+        /**
+         * The newly added chart.
+         *
+         * @param EmbeddedChart $chart
+         */
+        public function setChart(EmbeddedChart $chart)
+        {
+        }
+        /**
+         * @return EmbeddedChart
+         */
+        public function getChart()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EmbeddedChart
+     * Runtime class alias of \Google\Service\Sheets\AddChartResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChart()
+    class Google_Service_Sheets_AddChartResponse extends \Google\Service\Sheets\AddChartResponse
     {
     }
 }

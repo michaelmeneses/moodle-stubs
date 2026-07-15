@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseHosting;
-
-class CertVerification extends \Google\Model
-{
-    protected $dnsType = DnsUpdates::class;
-    protected $dnsDataType = '';
-    protected $httpType = HttpUpdate::class;
-    protected $httpDataType = '';
-    /**
-     * Output only. A `TXT` record to add to your DNS records that confirms your
-     * intent to let Hosting create an SSL cert for your domain name.
-     *
-     * @param DnsUpdates $dns
-     */
-    public function setDns(DnsUpdates $dns)
+namespace Google\Service\FirebaseHosting {
+    class CertVerification extends \Google\Model
     {
+        protected $dnsType = DnsUpdates::class;
+        protected $dnsDataType = '';
+        protected $httpType = HttpUpdate::class;
+        protected $httpDataType = '';
+        /**
+         * Output only. A `TXT` record to add to your DNS records that confirms your
+         * intent to let Hosting create an SSL cert for your domain name.
+         *
+         * @param DnsUpdates $dns
+         */
+        public function setDns(DnsUpdates $dns)
+        {
+        }
+        /**
+         * @return DnsUpdates
+         */
+        public function getDns()
+        {
+        }
+        /**
+         * Output only. A file to add to your existing, non-Hosting hosting service
+         * that confirms your intent to let Hosting create an SSL cert for your domain
+         * name.
+         *
+         * @param HttpUpdate $http
+         */
+        public function setHttp(HttpUpdate $http)
+        {
+        }
+        /**
+         * @return HttpUpdate
+         */
+        public function getHttp()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DnsUpdates
+     * Runtime class alias of \Google\Service\FirebaseHosting\CertVerification registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDns()
-    {
-    }
-    /**
-     * Output only. A file to add to your existing, non-Hosting hosting service
-     * that confirms your intent to let Hosting create an SSL cert for your domain
-     * name.
-     *
-     * @param HttpUpdate $http
-     */
-    public function setHttp(HttpUpdate $http)
-    {
-    }
-    /**
-     * @return HttpUpdate
-     */
-    public function getHttp()
+    class Google_Service_FirebaseHosting_CertVerification extends \Google\Service\FirebaseHosting\CertVerification
     {
     }
 }

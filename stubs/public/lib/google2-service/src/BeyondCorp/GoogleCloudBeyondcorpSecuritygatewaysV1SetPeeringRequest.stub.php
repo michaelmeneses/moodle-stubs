@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BeyondCorp;
-
-class GoogleCloudBeyondcorpSecuritygatewaysV1SetPeeringRequest extends \Google\Collection
-{
-    protected $collection_key = 'peerings';
-    protected $peeringsType = GoogleCloudBeyondcorpSecuritygatewaysV1Peering::class;
-    protected $peeringsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $requestId;
-    /**
-     * @var bool
-     */
-    public $validateOnly;
-    /**
-     * @param GoogleCloudBeyondcorpSecuritygatewaysV1Peering[]
-     */
-    public function setPeerings($peerings)
+namespace Google\Service\BeyondCorp {
+    class GoogleCloudBeyondcorpSecuritygatewaysV1SetPeeringRequest extends \Google\Collection
     {
+        protected $collection_key = 'peerings';
+        protected $peeringsType = GoogleCloudBeyondcorpSecuritygatewaysV1Peering::class;
+        protected $peeringsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $requestId;
+        /**
+         * @var bool
+         */
+        public $validateOnly;
+        /**
+         * @param GoogleCloudBeyondcorpSecuritygatewaysV1Peering[]
+         */
+        public function setPeerings($peerings)
+        {
+        }
+        /**
+         * @return GoogleCloudBeyondcorpSecuritygatewaysV1Peering[]
+         */
+        public function getPeerings()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRequestId($requestId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestId()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setValidateOnly($validateOnly)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getValidateOnly()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudBeyondcorpSecuritygatewaysV1Peering[]
+     * Runtime class alias of \Google\Service\BeyondCorp\GoogleCloudBeyondcorpSecuritygatewaysV1SetPeeringRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPeerings()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRequestId($requestId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestId()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setValidateOnly($validateOnly)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getValidateOnly()
+    class Google_Service_BeyondCorp_GoogleCloudBeyondcorpSecuritygatewaysV1SetPeeringRequest extends \Google\Service\BeyondCorp\GoogleCloudBeyondcorpSecuritygatewaysV1SetPeeringRequest
     {
     }
 }

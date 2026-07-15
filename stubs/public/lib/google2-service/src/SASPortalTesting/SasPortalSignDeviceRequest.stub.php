@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SASPortalTesting;
-
-class SasPortalSignDeviceRequest extends \Google\Model
-{
-    protected $deviceType = SasPortalDevice::class;
-    protected $deviceDataType = '';
-    /**
-     * Required. The device to sign. The device fields name, fcc_id and
-     * serial_number must be set. The user_id field must be set.
-     *
-     * @param SasPortalDevice $device
-     */
-    public function setDevice(SasPortalDevice $device)
+namespace Google\Service\SASPortalTesting {
+    class SasPortalSignDeviceRequest extends \Google\Model
     {
+        protected $deviceType = SasPortalDevice::class;
+        protected $deviceDataType = '';
+        /**
+         * Required. The device to sign. The device fields name, fcc_id and
+         * serial_number must be set. The user_id field must be set.
+         *
+         * @param SasPortalDevice $device
+         */
+        public function setDevice(SasPortalDevice $device)
+        {
+        }
+        /**
+         * @return SasPortalDevice
+         */
+        public function getDevice()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SasPortalDevice
+     * Runtime class alias of \Google\Service\SASPortalTesting\SasPortalSignDeviceRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDevice()
+    class Google_Service_SASPortalTesting_SasPortalSignDeviceRequest extends \Google\Service\SASPortalTesting\SasPortalSignDeviceRequest
     {
     }
 }

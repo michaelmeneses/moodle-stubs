@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaSearchResponseFacet extends \Google\Collection
-{
-    protected $collection_key = 'values';
-    /**
-     * @var bool
-     */
-    public $dynamicFacet;
-    /**
-     * @var string
-     */
-    public $key;
-    protected $valuesType = GoogleCloudDiscoveryengineV1betaSearchResponseFacetFacetValue::class;
-    protected $valuesDataType = 'array';
-    /**
-     * @param bool
-     */
-    public function setDynamicFacet($dynamicFacet)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaSearchResponseFacet extends \Google\Collection
     {
+        protected $collection_key = 'values';
+        /**
+         * @var bool
+         */
+        public $dynamicFacet;
+        /**
+         * @var string
+         */
+        public $key;
+        protected $valuesType = GoogleCloudDiscoveryengineV1betaSearchResponseFacetFacetValue::class;
+        protected $valuesDataType = 'array';
+        /**
+         * @param bool
+         */
+        public function setDynamicFacet($dynamicFacet)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDynamicFacet()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaSearchResponseFacetFacetValue[]
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaSearchResponseFacetFacetValue[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaSearchResponseFacet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDynamicFacet()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKey($key)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKey()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaSearchResponseFacetFacetValue[]
-     */
-    public function setValues($values)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaSearchResponseFacetFacetValue[]
-     */
-    public function getValues()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaSearchResponseFacet extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaSearchResponseFacet
     {
     }
 }

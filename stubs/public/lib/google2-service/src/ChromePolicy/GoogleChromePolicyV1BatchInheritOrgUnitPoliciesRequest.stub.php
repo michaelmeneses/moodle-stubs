@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromePolicy;
-
-class GoogleChromePolicyV1BatchInheritOrgUnitPoliciesRequest extends \Google\Collection
-{
-    protected $collection_key = 'requests';
-    protected $requestsType = GoogleChromePolicyV1InheritOrgUnitPolicyRequest::class;
-    protected $requestsDataType = 'array';
-    /**
-     * @param GoogleChromePolicyV1InheritOrgUnitPolicyRequest[]
-     */
-    public function setRequests($requests)
+namespace Google\Service\ChromePolicy {
+    class GoogleChromePolicyV1BatchInheritOrgUnitPoliciesRequest extends \Google\Collection
     {
+        protected $collection_key = 'requests';
+        protected $requestsType = GoogleChromePolicyV1InheritOrgUnitPolicyRequest::class;
+        protected $requestsDataType = 'array';
+        /**
+         * @param GoogleChromePolicyV1InheritOrgUnitPolicyRequest[]
+         */
+        public function setRequests($requests)
+        {
+        }
+        /**
+         * @return GoogleChromePolicyV1InheritOrgUnitPolicyRequest[]
+         */
+        public function getRequests()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleChromePolicyV1InheritOrgUnitPolicyRequest[]
+     * Runtime class alias of \Google\Service\ChromePolicy\GoogleChromePolicyV1BatchInheritOrgUnitPoliciesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequests()
+    class Google_Service_ChromePolicy_GoogleChromePolicyV1BatchInheritOrgUnitPoliciesRequest extends \Google\Service\ChromePolicy\GoogleChromePolicyV1BatchInheritOrgUnitPoliciesRequest
     {
     }
 }

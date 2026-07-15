@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MapsPlaces;
-
-class GoogleMapsPlacesV1PlaceOpeningHoursPeriod extends \Google\Model
-{
-    protected $closeType = GoogleMapsPlacesV1PlaceOpeningHoursPeriodPoint::class;
-    protected $closeDataType = '';
-    protected $openType = GoogleMapsPlacesV1PlaceOpeningHoursPeriodPoint::class;
-    protected $openDataType = '';
-    /**
-     * The time that the place starts to be closed.
-     *
-     * @param GoogleMapsPlacesV1PlaceOpeningHoursPeriodPoint $close
-     */
-    public function setClose(GoogleMapsPlacesV1PlaceOpeningHoursPeriodPoint $close)
+namespace Google\Service\MapsPlaces {
+    class GoogleMapsPlacesV1PlaceOpeningHoursPeriod extends \Google\Model
     {
+        protected $closeType = GoogleMapsPlacesV1PlaceOpeningHoursPeriodPoint::class;
+        protected $closeDataType = '';
+        protected $openType = GoogleMapsPlacesV1PlaceOpeningHoursPeriodPoint::class;
+        protected $openDataType = '';
+        /**
+         * The time that the place starts to be closed.
+         *
+         * @param GoogleMapsPlacesV1PlaceOpeningHoursPeriodPoint $close
+         */
+        public function setClose(GoogleMapsPlacesV1PlaceOpeningHoursPeriodPoint $close)
+        {
+        }
+        /**
+         * @return GoogleMapsPlacesV1PlaceOpeningHoursPeriodPoint
+         */
+        public function getClose()
+        {
+        }
+        /**
+         * The time that the place starts to be open.
+         *
+         * @param GoogleMapsPlacesV1PlaceOpeningHoursPeriodPoint $open
+         */
+        public function setOpen(GoogleMapsPlacesV1PlaceOpeningHoursPeriodPoint $open)
+        {
+        }
+        /**
+         * @return GoogleMapsPlacesV1PlaceOpeningHoursPeriodPoint
+         */
+        public function getOpen()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleMapsPlacesV1PlaceOpeningHoursPeriodPoint
+     * Runtime class alias of \Google\Service\MapsPlaces\GoogleMapsPlacesV1PlaceOpeningHoursPeriod registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClose()
-    {
-    }
-    /**
-     * The time that the place starts to be open.
-     *
-     * @param GoogleMapsPlacesV1PlaceOpeningHoursPeriodPoint $open
-     */
-    public function setOpen(GoogleMapsPlacesV1PlaceOpeningHoursPeriodPoint $open)
-    {
-    }
-    /**
-     * @return GoogleMapsPlacesV1PlaceOpeningHoursPeriodPoint
-     */
-    public function getOpen()
+    class Google_Service_MapsPlaces_GoogleMapsPlacesV1PlaceOpeningHoursPeriod extends \Google\Service\MapsPlaces\GoogleMapsPlacesV1PlaceOpeningHoursPeriod
     {
     }
 }

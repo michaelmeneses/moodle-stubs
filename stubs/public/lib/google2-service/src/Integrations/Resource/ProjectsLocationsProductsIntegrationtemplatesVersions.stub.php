@@ -21,68 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations\Resource;
-
-/**
- * The "versions" collection of methods.
- * Typical usage is:
- *  <code>
- *   $integrationsService = new Google\Service\Integrations(...);
- *   $versions = $integrationsService->projects_locations_products_integrationtemplates_versions;
- *  </code>
- */
-class ProjectsLocationsProductsIntegrationtemplatesVersions extends \Google\Service\Resource
-{
+namespace Google\Service\Integrations\Resource {
+    use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaIntegrationTemplateVersion;
+    use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaListIntegrationTemplateVersionsResponse;
     /**
-     * Creates an IntegrationTemplateVersion. (versions.create)
-     *
-     * @param string $parent Required. The parent resource where this
-     * TemplateVersion will be created. Format: projects/{project}/location/{locatio
-     * n}/product/{product}/integrationtemplates/{integrationtemplate}
-     * @param GoogleCloudIntegrationsV1alphaIntegrationTemplateVersion $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudIntegrationsV1alphaIntegrationTemplateVersion
-     * @throws \Google\Service\Exception
+     * The "versions" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $integrationsService = new Google\Service\Integrations(...);
+     *   $versions = $integrationsService->projects_locations_products_integrationtemplates_versions;
+     *  </code>
      */
-    public function create($parent, GoogleCloudIntegrationsV1alphaIntegrationTemplateVersion $postBody, $optParams = [])
+    class ProjectsLocationsProductsIntegrationtemplatesVersions extends \Google\Service\Resource
     {
+        /**
+         * Creates an IntegrationTemplateVersion. (versions.create)
+         *
+         * @param string $parent Required. The parent resource where this
+         * TemplateVersion will be created. Format: projects/{project}/location/{locatio
+         * n}/product/{product}/integrationtemplates/{integrationtemplate}
+         * @param GoogleCloudIntegrationsV1alphaIntegrationTemplateVersion $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudIntegrationsV1alphaIntegrationTemplateVersion
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, GoogleCloudIntegrationsV1alphaIntegrationTemplateVersion $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Returns an IntegrationTemplateVersion in the specified project.
+         * (versions.get)
+         *
+         * @param string $name Required. The TemplateVersion to retrieve. Format: projec
+         * ts/{project}/locations/{location}/products/{product}/integrationtemplates/{in
+         * tegrationtemplate}/versions/{version}
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudIntegrationsV1alphaIntegrationTemplateVersion
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Returns the list of all IntegrationTemplateVersions in the specified project.
+         * (versions.listProjectsLocationsProductsIntegrationtemplatesVersions)
+         *
+         * @param string $parent Required. Format: projects/{project}/location/{location
+         * }/product/{product}/integrationtemplates/{integrationtemplate}
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Filter syntax: defined in the EBNF grammar.
+         * @opt_param int pageSize The maximum number of IntegrationTemplateVersions to
+         * return. The service may return fewer than this value. If unspecified, at most
+         * 50 versions will be returned. The maximum value is 1000; values above 1000
+         * will be coerced to 1000.
+         * @opt_param string pageToken A page token, received from a previous
+         * `ListIntegrationTemplateVersions` call. Provide this to retrieve the
+         * subsequent page. When paginating, all other parameters provided to
+         * `ListIntegrationTemplateVersions` must match the call that provided the page
+         * token.
+         * @return GoogleCloudIntegrationsV1alphaListIntegrationTemplateVersionsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsProductsIntegrationtemplatesVersions($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Returns an IntegrationTemplateVersion in the specified project.
-     * (versions.get)
-     *
-     * @param string $name Required. The TemplateVersion to retrieve. Format: projec
-     * ts/{project}/locations/{location}/products/{product}/integrationtemplates/{in
-     * tegrationtemplate}/versions/{version}
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudIntegrationsV1alphaIntegrationTemplateVersion
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Integrations\Resource\ProjectsLocationsProductsIntegrationtemplatesVersions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Returns the list of all IntegrationTemplateVersions in the specified project.
-     * (versions.listProjectsLocationsProductsIntegrationtemplatesVersions)
-     *
-     * @param string $parent Required. Format: projects/{project}/location/{location
-     * }/product/{product}/integrationtemplates/{integrationtemplate}
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Filter syntax: defined in the EBNF grammar.
-     * @opt_param int pageSize The maximum number of IntegrationTemplateVersions to
-     * return. The service may return fewer than this value. If unspecified, at most
-     * 50 versions will be returned. The maximum value is 1000; values above 1000
-     * will be coerced to 1000.
-     * @opt_param string pageToken A page token, received from a previous
-     * `ListIntegrationTemplateVersions` call. Provide this to retrieve the
-     * subsequent page. When paginating, all other parameters provided to
-     * `ListIntegrationTemplateVersions` must match the call that provided the page
-     * token.
-     * @return GoogleCloudIntegrationsV1alphaListIntegrationTemplateVersionsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsProductsIntegrationtemplatesVersions($parent, $optParams = [])
+    class Google_Service_Integrations_Resource_ProjectsLocationsProductsIntegrationtemplatesVersions extends \Google\Service\Integrations\Resource\ProjectsLocationsProductsIntegrationtemplatesVersions
     {
     }
 }

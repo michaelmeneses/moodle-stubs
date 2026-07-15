@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class EmbeddedDrawingPropertiesSuggestionState extends \Google\Model
-{
+namespace Google\Service\Docs {
+    class EmbeddedDrawingPropertiesSuggestionState extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Docs\EmbeddedDrawingPropertiesSuggestionState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Docs_EmbeddedDrawingPropertiesSuggestionState extends \Google\Service\Docs\EmbeddedDrawingPropertiesSuggestionState
+    {
+    }
 }

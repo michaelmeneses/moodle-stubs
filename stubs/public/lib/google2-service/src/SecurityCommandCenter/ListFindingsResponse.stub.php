@@ -21,87 +21,96 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class ListFindingsResponse extends \Google\Collection
-{
-    protected $collection_key = 'listFindingsResults';
-    protected $listFindingsResultsType = ListFindingsResult::class;
-    protected $listFindingsResultsDataType = 'array';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Time used for executing the list request.
-     *
-     * @var string
-     */
-    public $readTime;
-    /**
-     * The total number of findings matching the query.
-     *
-     * @var int
-     */
-    public $totalSize;
-    /**
-     * Findings matching the list request.
-     *
-     * @param ListFindingsResult[] $listFindingsResults
-     */
-    public function setListFindingsResults($listFindingsResults)
+namespace Google\Service\SecurityCommandCenter {
+    class ListFindingsResponse extends \Google\Collection
     {
+        protected $collection_key = 'listFindingsResults';
+        protected $listFindingsResultsType = ListFindingsResult::class;
+        protected $listFindingsResultsDataType = 'array';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Time used for executing the list request.
+         *
+         * @var string
+         */
+        public $readTime;
+        /**
+         * The total number of findings matching the query.
+         *
+         * @var int
+         */
+        public $totalSize;
+        /**
+         * Findings matching the list request.
+         *
+         * @param ListFindingsResult[] $listFindingsResults
+         */
+        public function setListFindingsResults($listFindingsResults)
+        {
+        }
+        /**
+         * @return ListFindingsResult[]
+         */
+        public function getListFindingsResults()
+        {
+        }
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Time used for executing the list request.
+         *
+         * @param string $readTime
+         */
+        public function setReadTime($readTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReadTime()
+        {
+        }
+        /**
+         * The total number of findings matching the query.
+         *
+         * @param int $totalSize
+         */
+        public function setTotalSize($totalSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalSize()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ListFindingsResult[]
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\ListFindingsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getListFindingsResults()
-    {
-    }
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Time used for executing the list request.
-     *
-     * @param string $readTime
-     */
-    public function setReadTime($readTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReadTime()
-    {
-    }
-    /**
-     * The total number of findings matching the query.
-     *
-     * @param int $totalSize
-     */
-    public function setTotalSize($totalSize)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalSize()
+    class Google_Service_SecurityCommandCenter_ListFindingsResponse extends \Google\Service\SecurityCommandCenter\ListFindingsResponse
     {
     }
 }

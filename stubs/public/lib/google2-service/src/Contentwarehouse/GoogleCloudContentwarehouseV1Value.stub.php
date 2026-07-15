@@ -21,136 +21,145 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudContentwarehouseV1Value extends \Google\Model
-{
-    /**
-     * Represents a boolean value.
-     *
-     * @var bool
-     */
-    public $booleanValue;
-    protected $datetimeValueType = GoogleTypeDateTime::class;
-    protected $datetimeValueDataType = '';
-    protected $enumValueType = GoogleCloudContentwarehouseV1EnumValue::class;
-    protected $enumValueDataType = '';
-    /**
-     * Represents a float value.
-     *
-     * @var float
-     */
-    public $floatValue;
-    /**
-     * Represents a integer value.
-     *
-     * @var int
-     */
-    public $intValue;
-    /**
-     * Represents a string value.
-     *
-     * @var string
-     */
-    public $stringValue;
-    protected $timestampValueType = GoogleCloudContentwarehouseV1TimestampValue::class;
-    protected $timestampValueDataType = '';
-    /**
-     * Represents a boolean value.
-     *
-     * @param bool $booleanValue
-     */
-    public function setBooleanValue($booleanValue)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudContentwarehouseV1Value extends \Google\Model
     {
+        /**
+         * Represents a boolean value.
+         *
+         * @var bool
+         */
+        public $booleanValue;
+        protected $datetimeValueType = GoogleTypeDateTime::class;
+        protected $datetimeValueDataType = '';
+        protected $enumValueType = GoogleCloudContentwarehouseV1EnumValue::class;
+        protected $enumValueDataType = '';
+        /**
+         * Represents a float value.
+         *
+         * @var float
+         */
+        public $floatValue;
+        /**
+         * Represents a integer value.
+         *
+         * @var int
+         */
+        public $intValue;
+        /**
+         * Represents a string value.
+         *
+         * @var string
+         */
+        public $stringValue;
+        protected $timestampValueType = GoogleCloudContentwarehouseV1TimestampValue::class;
+        protected $timestampValueDataType = '';
+        /**
+         * Represents a boolean value.
+         *
+         * @param bool $booleanValue
+         */
+        public function setBooleanValue($booleanValue)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getBooleanValue()
+        {
+        }
+        /**
+         * Represents a datetime value.
+         *
+         * @param GoogleTypeDateTime $datetimeValue
+         */
+        public function setDatetimeValue(GoogleTypeDateTime $datetimeValue)
+        {
+        }
+        /**
+         * @return GoogleTypeDateTime
+         */
+        public function getDatetimeValue()
+        {
+        }
+        /**
+         * Represents an enum value.
+         *
+         * @param GoogleCloudContentwarehouseV1EnumValue $enumValue
+         */
+        public function setEnumValue(GoogleCloudContentwarehouseV1EnumValue $enumValue)
+        {
+        }
+        /**
+         * @return GoogleCloudContentwarehouseV1EnumValue
+         */
+        public function getEnumValue()
+        {
+        }
+        /**
+         * Represents a float value.
+         *
+         * @param float $floatValue
+         */
+        public function setFloatValue($floatValue)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getFloatValue()
+        {
+        }
+        /**
+         * Represents a integer value.
+         *
+         * @param int $intValue
+         */
+        public function setIntValue($intValue)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getIntValue()
+        {
+        }
+        /**
+         * Represents a string value.
+         *
+         * @param string $stringValue
+         */
+        public function setStringValue($stringValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStringValue()
+        {
+        }
+        /**
+         * Represents a timestamp value.
+         *
+         * @param GoogleCloudContentwarehouseV1TimestampValue $timestampValue
+         */
+        public function setTimestampValue(GoogleCloudContentwarehouseV1TimestampValue $timestampValue)
+        {
+        }
+        /**
+         * @return GoogleCloudContentwarehouseV1TimestampValue
+         */
+        public function getTimestampValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1Value registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBooleanValue()
-    {
-    }
-    /**
-     * Represents a datetime value.
-     *
-     * @param GoogleTypeDateTime $datetimeValue
-     */
-    public function setDatetimeValue(GoogleTypeDateTime $datetimeValue)
-    {
-    }
-    /**
-     * @return GoogleTypeDateTime
-     */
-    public function getDatetimeValue()
-    {
-    }
-    /**
-     * Represents an enum value.
-     *
-     * @param GoogleCloudContentwarehouseV1EnumValue $enumValue
-     */
-    public function setEnumValue(GoogleCloudContentwarehouseV1EnumValue $enumValue)
-    {
-    }
-    /**
-     * @return GoogleCloudContentwarehouseV1EnumValue
-     */
-    public function getEnumValue()
-    {
-    }
-    /**
-     * Represents a float value.
-     *
-     * @param float $floatValue
-     */
-    public function setFloatValue($floatValue)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getFloatValue()
-    {
-    }
-    /**
-     * Represents a integer value.
-     *
-     * @param int $intValue
-     */
-    public function setIntValue($intValue)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getIntValue()
-    {
-    }
-    /**
-     * Represents a string value.
-     *
-     * @param string $stringValue
-     */
-    public function setStringValue($stringValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStringValue()
-    {
-    }
-    /**
-     * Represents a timestamp value.
-     *
-     * @param GoogleCloudContentwarehouseV1TimestampValue $timestampValue
-     */
-    public function setTimestampValue(GoogleCloudContentwarehouseV1TimestampValue $timestampValue)
-    {
-    }
-    /**
-     * @return GoogleCloudContentwarehouseV1TimestampValue
-     */
-    public function getTimestampValue()
+    class Google_Service_Contentwarehouse_GoogleCloudContentwarehouseV1Value extends \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1Value
     {
     }
 }

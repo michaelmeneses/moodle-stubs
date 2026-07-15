@@ -21,38 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Pubsub\Resource;
-
-/**
- * The "snapshots" collection of methods.
- * Typical usage is:
- *  <code>
- *   $pubsubService = new Google\Service\Pubsub(...);
- *   $snapshots = $pubsubService->projects_topics_snapshots;
- *  </code>
- */
-class ProjectsTopicsSnapshots extends \Google\Service\Resource
-{
+namespace Google\Service\Pubsub\Resource {
+    use Google\Service\Pubsub\ListTopicSnapshotsResponse;
     /**
-     * Lists the names of the snapshots on this topic. Snapshots are used in
-     * [Seek](https://cloud.google.com/pubsub/docs/replay-overview) operations,
-     * which allow you to manage message acknowledgments in bulk. That is, you can
-     * set the acknowledgment state of messages in an existing subscription to the
-     * state captured by a snapshot. (snapshots.listProjectsTopicsSnapshots)
-     *
-     * @param string $topic Required. The name of the topic that snapshots are
-     * attached to. Format is `projects/{project}/topics/{topic}`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Optional. Maximum number of snapshot names to return.
-     * @opt_param string pageToken Optional. The value returned by the last
-     * `ListTopicSnapshotsResponse`; indicates that this is a continuation of a
-     * prior `ListTopicSnapshots` call, and that the system should return the next
-     * page of data.
-     * @return ListTopicSnapshotsResponse
-     * @throws \Google\Service\Exception
+     * The "snapshots" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $pubsubService = new Google\Service\Pubsub(...);
+     *   $snapshots = $pubsubService->projects_topics_snapshots;
+     *  </code>
      */
-    public function listProjectsTopicsSnapshots($topic, $optParams = [])
+    class ProjectsTopicsSnapshots extends \Google\Service\Resource
+    {
+        /**
+         * Lists the names of the snapshots on this topic. Snapshots are used in
+         * [Seek](https://cloud.google.com/pubsub/docs/replay-overview) operations,
+         * which allow you to manage message acknowledgments in bulk. That is, you can
+         * set the acknowledgment state of messages in an existing subscription to the
+         * state captured by a snapshot. (snapshots.listProjectsTopicsSnapshots)
+         *
+         * @param string $topic Required. The name of the topic that snapshots are
+         * attached to. Format is `projects/{project}/topics/{topic}`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Optional. Maximum number of snapshot names to return.
+         * @opt_param string pageToken Optional. The value returned by the last
+         * `ListTopicSnapshotsResponse`; indicates that this is a continuation of a
+         * prior `ListTopicSnapshots` call, and that the system should return the next
+         * page of data.
+         * @return ListTopicSnapshotsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsTopicsSnapshots($topic, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Pubsub\Resource\ProjectsTopicsSnapshots registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Pubsub_Resource_ProjectsTopicsSnapshots extends \Google\Service\Pubsub\Resource\ProjectsTopicsSnapshots
     {
     }
 }

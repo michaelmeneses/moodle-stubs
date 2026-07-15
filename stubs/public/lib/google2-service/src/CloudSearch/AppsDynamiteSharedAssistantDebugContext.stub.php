@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedAssistantDebugContext extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $query;
-    /**
-     * @param string
-     */
-    public function setQuery($query)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedAssistantDebugContext extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $query;
+        /**
+         * @param string
+         */
+        public function setQuery($query)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQuery()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedAssistantDebugContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getQuery()
+    class Google_Service_CloudSearch_AppsDynamiteSharedAssistantDebugContext extends \Google\Service\CloudSearch\AppsDynamiteSharedAssistantDebugContext
     {
     }
 }

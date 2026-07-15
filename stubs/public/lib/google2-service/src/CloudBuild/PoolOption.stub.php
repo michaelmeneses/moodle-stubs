@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class PoolOption extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @param string
-     */
-    public function setName($name)
+namespace Google\Service\CloudBuild {
+    class PoolOption extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudBuild\PoolOption registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
+    class Google_Service_CloudBuild_PoolOption extends \Google\Service\CloudBuild\PoolOption
     {
     }
 }

@@ -21,95 +21,104 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2CompleteQueryResponse extends \Google\Collection
-{
-    protected $collection_key = 'recentSearchResults';
-    protected $attributeResultsType = GoogleCloudRetailV2CompleteQueryResponseAttributeResult::class;
-    protected $attributeResultsDataType = 'map';
-    /**
-     * A unique complete token. This should be included in the
-     * UserEvent.completion_detail for search events resulting from this
-     * completion, which enables accurate attribution of complete model
-     * performance.
-     *
-     * @var string
-     */
-    public $attributionToken;
-    protected $completionResultsType = GoogleCloudRetailV2CompleteQueryResponseCompletionResult::class;
-    protected $completionResultsDataType = 'array';
-    protected $recentSearchResultsType = GoogleCloudRetailV2CompleteQueryResponseRecentSearchResult::class;
-    protected $recentSearchResultsDataType = 'array';
-    /**
-     * A map of matched attribute suggestions. This field is only available for
-     * `cloud-retail` dataset. Current supported keys: * `brands` * `categories`
-     *
-     * @param GoogleCloudRetailV2CompleteQueryResponseAttributeResult[] $attributeResults
-     */
-    public function setAttributeResults($attributeResults)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2CompleteQueryResponse extends \Google\Collection
     {
+        protected $collection_key = 'recentSearchResults';
+        protected $attributeResultsType = GoogleCloudRetailV2CompleteQueryResponseAttributeResult::class;
+        protected $attributeResultsDataType = 'map';
+        /**
+         * A unique complete token. This should be included in the
+         * UserEvent.completion_detail for search events resulting from this
+         * completion, which enables accurate attribution of complete model
+         * performance.
+         *
+         * @var string
+         */
+        public $attributionToken;
+        protected $completionResultsType = GoogleCloudRetailV2CompleteQueryResponseCompletionResult::class;
+        protected $completionResultsDataType = 'array';
+        protected $recentSearchResultsType = GoogleCloudRetailV2CompleteQueryResponseRecentSearchResult::class;
+        protected $recentSearchResultsDataType = 'array';
+        /**
+         * A map of matched attribute suggestions. This field is only available for
+         * `cloud-retail` dataset. Current supported keys: * `brands` * `categories`
+         *
+         * @param GoogleCloudRetailV2CompleteQueryResponseAttributeResult[] $attributeResults
+         */
+        public function setAttributeResults($attributeResults)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2CompleteQueryResponseAttributeResult[]
+         */
+        public function getAttributeResults()
+        {
+        }
+        /**
+         * A unique complete token. This should be included in the
+         * UserEvent.completion_detail for search events resulting from this
+         * completion, which enables accurate attribution of complete model
+         * performance.
+         *
+         * @param string $attributionToken
+         */
+        public function setAttributionToken($attributionToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAttributionToken()
+        {
+        }
+        /**
+         * Results of the matching suggestions. The result list is ordered and the
+         * first result is top suggestion.
+         *
+         * @param GoogleCloudRetailV2CompleteQueryResponseCompletionResult[] $completionResults
+         */
+        public function setCompletionResults($completionResults)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2CompleteQueryResponseCompletionResult[]
+         */
+        public function getCompletionResults()
+        {
+        }
+        /**
+         * Deprecated. Matched recent searches of this user. The maximum number of
+         * recent searches is 10. This field is a restricted feature. If you want to
+         * enable it, contact Retail Search support. This feature is only available
+         * when CompleteQueryRequest.visitor_id field is set and UserEvent is
+         * imported. The recent searches satisfy the follow rules: * They are ordered
+         * from latest to oldest. * They are matched with CompleteQueryRequest.query
+         * case insensitively. * They are transformed to lower case. * They are UTF-8
+         * safe. Recent searches are deduplicated. More recent searches will be
+         * reserved when duplication happens.
+         *
+         * @deprecated
+         * @param GoogleCloudRetailV2CompleteQueryResponseRecentSearchResult[] $recentSearchResults
+         */
+        public function setRecentSearchResults($recentSearchResults)
+        {
+        }
+        /**
+         * @deprecated
+         * @return GoogleCloudRetailV2CompleteQueryResponseRecentSearchResult[]
+         */
+        public function getRecentSearchResults()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRetailV2CompleteQueryResponseAttributeResult[]
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2CompleteQueryResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttributeResults()
-    {
-    }
-    /**
-     * A unique complete token. This should be included in the
-     * UserEvent.completion_detail for search events resulting from this
-     * completion, which enables accurate attribution of complete model
-     * performance.
-     *
-     * @param string $attributionToken
-     */
-    public function setAttributionToken($attributionToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAttributionToken()
-    {
-    }
-    /**
-     * Results of the matching suggestions. The result list is ordered and the
-     * first result is top suggestion.
-     *
-     * @param GoogleCloudRetailV2CompleteQueryResponseCompletionResult[] $completionResults
-     */
-    public function setCompletionResults($completionResults)
-    {
-    }
-    /**
-     * @return GoogleCloudRetailV2CompleteQueryResponseCompletionResult[]
-     */
-    public function getCompletionResults()
-    {
-    }
-    /**
-     * Deprecated. Matched recent searches of this user. The maximum number of
-     * recent searches is 10. This field is a restricted feature. If you want to
-     * enable it, contact Retail Search support. This feature is only available
-     * when CompleteQueryRequest.visitor_id field is set and UserEvent is
-     * imported. The recent searches satisfy the follow rules: * They are ordered
-     * from latest to oldest. * They are matched with CompleteQueryRequest.query
-     * case insensitively. * They are transformed to lower case. * They are UTF-8
-     * safe. Recent searches are deduplicated. More recent searches will be
-     * reserved when duplication happens.
-     *
-     * @deprecated
-     * @param GoogleCloudRetailV2CompleteQueryResponseRecentSearchResult[] $recentSearchResults
-     */
-    public function setRecentSearchResults($recentSearchResults)
-    {
-    }
-    /**
-     * @deprecated
-     * @return GoogleCloudRetailV2CompleteQueryResponseRecentSearchResult[]
-     */
-    public function getRecentSearchResults()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2CompleteQueryResponse extends \Google\Service\CloudRetail\GoogleCloudRetailV2CompleteQueryResponse
     {
     }
 }

@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class DeleteRangeRequest extends \Google\Model
-{
-    /**
-     * The default value, do not use.
-     */
-    public const SHIFT_DIMENSION_DIMENSION_UNSPECIFIED = 'DIMENSION_UNSPECIFIED';
-    /**
-     * Operates on the rows of a sheet.
-     */
-    public const SHIFT_DIMENSION_ROWS = 'ROWS';
-    /**
-     * Operates on the columns of a sheet.
-     */
-    public const SHIFT_DIMENSION_COLUMNS = 'COLUMNS';
-    protected $rangeType = GridRange::class;
-    protected $rangeDataType = '';
-    /**
-     * The dimension from which deleted cells will be replaced with. If ROWS,
-     * existing cells will be shifted upward to replace the deleted cells. If
-     * COLUMNS, existing cells will be shifted left to replace the deleted cells.
-     *
-     * @var string
-     */
-    public $shiftDimension;
-    /**
-     * The range of cells to delete.
-     *
-     * @param GridRange $range
-     */
-    public function setRange(GridRange $range)
+namespace Google\Service\Sheets {
+    class DeleteRangeRequest extends \Google\Model
     {
+        /**
+         * The default value, do not use.
+         */
+        public const SHIFT_DIMENSION_DIMENSION_UNSPECIFIED = 'DIMENSION_UNSPECIFIED';
+        /**
+         * Operates on the rows of a sheet.
+         */
+        public const SHIFT_DIMENSION_ROWS = 'ROWS';
+        /**
+         * Operates on the columns of a sheet.
+         */
+        public const SHIFT_DIMENSION_COLUMNS = 'COLUMNS';
+        protected $rangeType = GridRange::class;
+        protected $rangeDataType = '';
+        /**
+         * The dimension from which deleted cells will be replaced with. If ROWS,
+         * existing cells will be shifted upward to replace the deleted cells. If
+         * COLUMNS, existing cells will be shifted left to replace the deleted cells.
+         *
+         * @var string
+         */
+        public $shiftDimension;
+        /**
+         * The range of cells to delete.
+         *
+         * @param GridRange $range
+         */
+        public function setRange(GridRange $range)
+        {
+        }
+        /**
+         * @return GridRange
+         */
+        public function getRange()
+        {
+        }
+        /**
+         * The dimension from which deleted cells will be replaced with. If ROWS,
+         * existing cells will be shifted upward to replace the deleted cells. If
+         * COLUMNS, existing cells will be shifted left to replace the deleted cells.
+         *
+         * Accepted values: DIMENSION_UNSPECIFIED, ROWS, COLUMNS
+         *
+         * @param self::SHIFT_DIMENSION_* $shiftDimension
+         */
+        public function setShiftDimension($shiftDimension)
+        {
+        }
+        /**
+         * @return self::SHIFT_DIMENSION_*
+         */
+        public function getShiftDimension()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GridRange
+     * Runtime class alias of \Google\Service\Sheets\DeleteRangeRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRange()
-    {
-    }
-    /**
-     * The dimension from which deleted cells will be replaced with. If ROWS,
-     * existing cells will be shifted upward to replace the deleted cells. If
-     * COLUMNS, existing cells will be shifted left to replace the deleted cells.
-     *
-     * Accepted values: DIMENSION_UNSPECIFIED, ROWS, COLUMNS
-     *
-     * @param self::SHIFT_DIMENSION_* $shiftDimension
-     */
-    public function setShiftDimension($shiftDimension)
-    {
-    }
-    /**
-     * @return self::SHIFT_DIMENSION_*
-     */
-    public function getShiftDimension()
+    class Google_Service_Sheets_DeleteRangeRequest extends \Google\Service\Sheets\DeleteRangeRequest
     {
     }
 }

@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class RoutersGetRoutePolicyResponse extends \Google\Model
-{
-    protected $resourceType = RoutePolicy::class;
-    protected $resourceDataType = '';
-    /**
-     * @param RoutePolicy $resource
-     */
-    public function setResource(RoutePolicy $resource)
+namespace Google\Service\Compute {
+    class RoutersGetRoutePolicyResponse extends \Google\Model
     {
+        protected $resourceType = RoutePolicy::class;
+        protected $resourceDataType = '';
+        /**
+         * @param RoutePolicy $resource
+         */
+        public function setResource(RoutePolicy $resource)
+        {
+        }
+        /**
+         * @return RoutePolicy
+         */
+        public function getResource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RoutePolicy
+     * Runtime class alias of \Google\Service\Compute\RoutersGetRoutePolicyResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResource()
+    class Google_Service_Compute_RoutersGetRoutePolicyResponse extends \Google\Service\Compute\RoutersGetRoutePolicyResponse
     {
     }
 }

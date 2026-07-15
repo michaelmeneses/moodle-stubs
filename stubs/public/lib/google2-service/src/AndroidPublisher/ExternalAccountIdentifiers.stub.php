@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class ExternalAccountIdentifiers extends \Google\Model
-{
-    /**
-     * User account identifier in the third-party service. Only present if account
-     * linking happened as part of the subscription purchase flow.
-     *
-     * @var string
-     */
-    public $externalAccountId;
-    /**
-     * An obfuscated version of the id that is uniquely associated with the user's
-     * account in your app. Present for the following purchases: * If account
-     * linking happened as part of the subscription purchase flow. * It was
-     * specified using https://developer.android.com/reference/com/android/billing
-     * client/api/BillingFlowParams.Builder#setobfuscatedaccountid when the
-     * purchase was made.
-     *
-     * @var string
-     */
-    public $obfuscatedExternalAccountId;
-    /**
-     * An obfuscated version of the id that is uniquely associated with the user's
-     * profile in your app. Only present if specified using https://developer.andr
-     * oid.com/reference/com/android/billingclient/api/BillingFlowParams.Builder#s
-     * etobfuscatedprofileid when the purchase was made.
-     *
-     * @var string
-     */
-    public $obfuscatedExternalProfileId;
-    /**
-     * User account identifier in the third-party service. Only present if account
-     * linking happened as part of the subscription purchase flow.
-     *
-     * @param string $externalAccountId
-     */
-    public function setExternalAccountId($externalAccountId)
+namespace Google\Service\AndroidPublisher {
+    class ExternalAccountIdentifiers extends \Google\Model
     {
+        /**
+         * User account identifier in the third-party service. Only present if account
+         * linking happened as part of the subscription purchase flow.
+         *
+         * @var string
+         */
+        public $externalAccountId;
+        /**
+         * An obfuscated version of the id that is uniquely associated with the user's
+         * account in your app. Present for the following purchases: * If account
+         * linking happened as part of the subscription purchase flow. * It was
+         * specified using https://developer.android.com/reference/com/android/billing
+         * client/api/BillingFlowParams.Builder#setobfuscatedaccountid when the
+         * purchase was made.
+         *
+         * @var string
+         */
+        public $obfuscatedExternalAccountId;
+        /**
+         * An obfuscated version of the id that is uniquely associated with the user's
+         * profile in your app. Only present if specified using https://developer.andr
+         * oid.com/reference/com/android/billingclient/api/BillingFlowParams.Builder#s
+         * etobfuscatedprofileid when the purchase was made.
+         *
+         * @var string
+         */
+        public $obfuscatedExternalProfileId;
+        /**
+         * User account identifier in the third-party service. Only present if account
+         * linking happened as part of the subscription purchase flow.
+         *
+         * @param string $externalAccountId
+         */
+        public function setExternalAccountId($externalAccountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExternalAccountId()
+        {
+        }
+        /**
+         * An obfuscated version of the id that is uniquely associated with the user's
+         * account in your app. Present for the following purchases: * If account
+         * linking happened as part of the subscription purchase flow. * It was
+         * specified using https://developer.android.com/reference/com/android/billing
+         * client/api/BillingFlowParams.Builder#setobfuscatedaccountid when the
+         * purchase was made.
+         *
+         * @param string $obfuscatedExternalAccountId
+         */
+        public function setObfuscatedExternalAccountId($obfuscatedExternalAccountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObfuscatedExternalAccountId()
+        {
+        }
+        /**
+         * An obfuscated version of the id that is uniquely associated with the user's
+         * profile in your app. Only present if specified using https://developer.andr
+         * oid.com/reference/com/android/billingclient/api/BillingFlowParams.Builder#s
+         * etobfuscatedprofileid when the purchase was made.
+         *
+         * @param string $obfuscatedExternalProfileId
+         */
+        public function setObfuscatedExternalProfileId($obfuscatedExternalProfileId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObfuscatedExternalProfileId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidPublisher\ExternalAccountIdentifiers registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExternalAccountId()
-    {
-    }
-    /**
-     * An obfuscated version of the id that is uniquely associated with the user's
-     * account in your app. Present for the following purchases: * If account
-     * linking happened as part of the subscription purchase flow. * It was
-     * specified using https://developer.android.com/reference/com/android/billing
-     * client/api/BillingFlowParams.Builder#setobfuscatedaccountid when the
-     * purchase was made.
-     *
-     * @param string $obfuscatedExternalAccountId
-     */
-    public function setObfuscatedExternalAccountId($obfuscatedExternalAccountId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObfuscatedExternalAccountId()
-    {
-    }
-    /**
-     * An obfuscated version of the id that is uniquely associated with the user's
-     * profile in your app. Only present if specified using https://developer.andr
-     * oid.com/reference/com/android/billingclient/api/BillingFlowParams.Builder#s
-     * etobfuscatedprofileid when the purchase was made.
-     *
-     * @param string $obfuscatedExternalProfileId
-     */
-    public function setObfuscatedExternalProfileId($obfuscatedExternalProfileId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObfuscatedExternalProfileId()
+    class Google_Service_AndroidPublisher_ExternalAccountIdentifiers extends \Google\Service\AndroidPublisher\ExternalAccountIdentifiers
     {
     }
 }

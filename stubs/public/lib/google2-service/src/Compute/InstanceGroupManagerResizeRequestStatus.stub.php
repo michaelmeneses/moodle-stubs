@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InstanceGroupManagerResizeRequestStatus extends \Google\Model
-{
-    protected $errorType = InstanceGroupManagerResizeRequestStatusError::class;
-    protected $errorDataType = '';
-    protected $lastAttemptType = InstanceGroupManagerResizeRequestStatusLastAttempt::class;
-    protected $lastAttemptDataType = '';
-    /**
-     * Output only. [Output only] Fatal errors encountered during the queueing or
-     * provisioning phases of the ResizeRequest that caused the transition to the
-     * FAILED state. Contrary to the last_attempt errors, this field is final and
-     * errors are never removed from here, as the ResizeRequest is not going to
-     * retry.
-     *
-     * @param InstanceGroupManagerResizeRequestStatusError $error
-     */
-    public function setError(InstanceGroupManagerResizeRequestStatusError $error)
+namespace Google\Service\Compute {
+    class InstanceGroupManagerResizeRequestStatus extends \Google\Model
     {
+        protected $errorType = InstanceGroupManagerResizeRequestStatusError::class;
+        protected $errorDataType = '';
+        protected $lastAttemptType = InstanceGroupManagerResizeRequestStatusLastAttempt::class;
+        protected $lastAttemptDataType = '';
+        /**
+         * Output only. [Output only] Fatal errors encountered during the queueing or
+         * provisioning phases of the ResizeRequest that caused the transition to the
+         * FAILED state. Contrary to the last_attempt errors, this field is final and
+         * errors are never removed from here, as the ResizeRequest is not going to
+         * retry.
+         *
+         * @param InstanceGroupManagerResizeRequestStatusError $error
+         */
+        public function setError(InstanceGroupManagerResizeRequestStatusError $error)
+        {
+        }
+        /**
+         * @return InstanceGroupManagerResizeRequestStatusError
+         */
+        public function getError()
+        {
+        }
+        /**
+         * Output only. [Output only] Information about the last attempt to fulfill
+         * the request. The value is temporary since the ResizeRequest can retry, as
+         * long as it's still active and the last attempt value can either be cleared
+         * or replaced with a different error. Since ResizeRequest retries
+         * infrequently, the value may be stale and no longer show an active problem.
+         * The value is cleared when ResizeRequest transitions to the final state
+         * (becomes inactive). If the final state is FAILED the error describing it
+         * will be storred in the "error" field only.
+         *
+         * @param InstanceGroupManagerResizeRequestStatusLastAttempt $lastAttempt
+         */
+        public function setLastAttempt(InstanceGroupManagerResizeRequestStatusLastAttempt $lastAttempt)
+        {
+        }
+        /**
+         * @return InstanceGroupManagerResizeRequestStatusLastAttempt
+         */
+        public function getLastAttempt()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InstanceGroupManagerResizeRequestStatusError
+     * Runtime class alias of \Google\Service\Compute\InstanceGroupManagerResizeRequestStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getError()
-    {
-    }
-    /**
-     * Output only. [Output only] Information about the last attempt to fulfill
-     * the request. The value is temporary since the ResizeRequest can retry, as
-     * long as it's still active and the last attempt value can either be cleared
-     * or replaced with a different error. Since ResizeRequest retries
-     * infrequently, the value may be stale and no longer show an active problem.
-     * The value is cleared when ResizeRequest transitions to the final state
-     * (becomes inactive). If the final state is FAILED the error describing it
-     * will be storred in the "error" field only.
-     *
-     * @param InstanceGroupManagerResizeRequestStatusLastAttempt $lastAttempt
-     */
-    public function setLastAttempt(InstanceGroupManagerResizeRequestStatusLastAttempt $lastAttempt)
-    {
-    }
-    /**
-     * @return InstanceGroupManagerResizeRequestStatusLastAttempt
-     */
-    public function getLastAttempt()
+    class Google_Service_Compute_InstanceGroupManagerResizeRequestStatus extends \Google\Service\Compute\InstanceGroupManagerResizeRequestStatus
     {
     }
 }

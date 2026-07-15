@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkServices;
-
-class TcpRouteRouteRule extends \Google\Collection
-{
-    protected $collection_key = 'matches';
-    protected $actionType = TcpRouteRouteAction::class;
-    protected $actionDataType = '';
-    protected $matchesType = TcpRouteRouteMatch::class;
-    protected $matchesDataType = 'array';
-    /**
-     * Required. The detailed rule defining how to route matched traffic.
-     *
-     * @param TcpRouteRouteAction $action
-     */
-    public function setAction(TcpRouteRouteAction $action)
+namespace Google\Service\NetworkServices {
+    class TcpRouteRouteRule extends \Google\Collection
     {
+        protected $collection_key = 'matches';
+        protected $actionType = TcpRouteRouteAction::class;
+        protected $actionDataType = '';
+        protected $matchesType = TcpRouteRouteMatch::class;
+        protected $matchesDataType = 'array';
+        /**
+         * Required. The detailed rule defining how to route matched traffic.
+         *
+         * @param TcpRouteRouteAction $action
+         */
+        public function setAction(TcpRouteRouteAction $action)
+        {
+        }
+        /**
+         * @return TcpRouteRouteAction
+         */
+        public function getAction()
+        {
+        }
+        /**
+         * Optional. RouteMatch defines the predicate used to match requests to a
+         * given action. Multiple match types are "OR"ed for evaluation. If no
+         * routeMatch field is specified, this rule will unconditionally match
+         * traffic.
+         *
+         * @param TcpRouteRouteMatch[] $matches
+         */
+        public function setMatches($matches)
+        {
+        }
+        /**
+         * @return TcpRouteRouteMatch[]
+         */
+        public function getMatches()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TcpRouteRouteAction
+     * Runtime class alias of \Google\Service\NetworkServices\TcpRouteRouteRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAction()
-    {
-    }
-    /**
-     * Optional. RouteMatch defines the predicate used to match requests to a
-     * given action. Multiple match types are "OR"ed for evaluation. If no
-     * routeMatch field is specified, this rule will unconditionally match
-     * traffic.
-     *
-     * @param TcpRouteRouteMatch[] $matches
-     */
-    public function setMatches($matches)
-    {
-    }
-    /**
-     * @return TcpRouteRouteMatch[]
-     */
-    public function getMatches()
+    class Google_Service_NetworkServices_TcpRouteRouteRule extends \Google\Service\NetworkServices\TcpRouteRouteRule
     {
     }
 }

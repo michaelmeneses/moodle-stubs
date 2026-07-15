@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudContentwarehouseV1FloatArray extends \Google\Collection
-{
-    protected $collection_key = 'values';
-    /**
-     * List of float values.
-     *
-     * @var float[]
-     */
-    public $values;
-    /**
-     * List of float values.
-     *
-     * @param float[] $values
-     */
-    public function setValues($values)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudContentwarehouseV1FloatArray extends \Google\Collection
     {
+        protected $collection_key = 'values';
+        /**
+         * List of float values.
+         *
+         * @var float[]
+         */
+        public $values;
+        /**
+         * List of float values.
+         *
+         * @param float[] $values
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return float[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float[]
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1FloatArray registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getValues()
+    class Google_Service_Contentwarehouse_GoogleCloudContentwarehouseV1FloatArray extends \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1FloatArray
     {
     }
 }

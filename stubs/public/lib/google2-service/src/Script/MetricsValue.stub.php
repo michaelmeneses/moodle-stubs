@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Script;
-
-class MetricsValue extends \Google\Model
-{
-    /**
-     * Required field indicating the end time of the interval.
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * Required field indicating the start time of the interval.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * Indicates the number of executions counted.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Required field indicating the end time of the interval.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
+namespace Google\Service\Script {
+    class MetricsValue extends \Google\Model
     {
+        /**
+         * Required field indicating the end time of the interval.
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * Required field indicating the start time of the interval.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * Indicates the number of executions counted.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Required field indicating the end time of the interval.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * Required field indicating the start time of the interval.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
+        /**
+         * Indicates the number of executions counted.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Script\MetricsValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndTime()
-    {
-    }
-    /**
-     * Required field indicating the start time of the interval.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
-    {
-    }
-    /**
-     * Indicates the number of executions counted.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_Script_MetricsValue extends \Google\Service\Script\MetricsValue
     {
     }
 }

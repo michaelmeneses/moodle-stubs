@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class QueryTimeSeriesRequest extends \Google\Model
-{
-    /**
-     * A positive number that is the maximum number of time_series_data to return.
-     *
-     * @var int
-     */
-    public $pageSize;
-    /**
-     * If this field is not empty then it must contain the nextPageToken value
-     * returned by a previous call to this method. Using this field causes the
-     * method to return additional results from the previous method call.
-     *
-     * @var string
-     */
-    public $pageToken;
-    /**
-     * Required. The query in the Monitoring Query Language
-     * (https://cloud.google.com/monitoring/mql/reference) format. The default
-     * time zone is in UTC.
-     *
-     * @var string
-     */
-    public $query;
-    /**
-     * A positive number that is the maximum number of time_series_data to return.
-     *
-     * @param int $pageSize
-     */
-    public function setPageSize($pageSize)
+namespace Google\Service\Monitoring {
+    class QueryTimeSeriesRequest extends \Google\Model
     {
+        /**
+         * A positive number that is the maximum number of time_series_data to return.
+         *
+         * @var int
+         */
+        public $pageSize;
+        /**
+         * If this field is not empty then it must contain the nextPageToken value
+         * returned by a previous call to this method. Using this field causes the
+         * method to return additional results from the previous method call.
+         *
+         * @var string
+         */
+        public $pageToken;
+        /**
+         * Required. The query in the Monitoring Query Language
+         * (https://cloud.google.com/monitoring/mql/reference) format. The default
+         * time zone is in UTC.
+         *
+         * @var string
+         */
+        public $query;
+        /**
+         * A positive number that is the maximum number of time_series_data to return.
+         *
+         * @param int $pageSize
+         */
+        public function setPageSize($pageSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPageSize()
+        {
+        }
+        /**
+         * If this field is not empty then it must contain the nextPageToken value
+         * returned by a previous call to this method. Using this field causes the
+         * method to return additional results from the previous method call.
+         *
+         * @param string $pageToken
+         */
+        public function setPageToken($pageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPageToken()
+        {
+        }
+        /**
+         * Required. The query in the Monitoring Query Language
+         * (https://cloud.google.com/monitoring/mql/reference) format. The default
+         * time zone is in UTC.
+         *
+         * @param string $query
+         */
+        public function setQuery($query)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQuery()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Monitoring\QueryTimeSeriesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPageSize()
-    {
-    }
-    /**
-     * If this field is not empty then it must contain the nextPageToken value
-     * returned by a previous call to this method. Using this field causes the
-     * method to return additional results from the previous method call.
-     *
-     * @param string $pageToken
-     */
-    public function setPageToken($pageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPageToken()
-    {
-    }
-    /**
-     * Required. The query in the Monitoring Query Language
-     * (https://cloud.google.com/monitoring/mql/reference) format. The default
-     * time zone is in UTC.
-     *
-     * @param string $query
-     */
-    public function setQuery($query)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQuery()
+    class Google_Service_Monitoring_QueryTimeSeriesRequest extends \Google\Service\Monitoring\QueryTimeSeriesRequest
     {
     }
 }

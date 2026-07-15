@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaUpdateUserLinkRequest extends \Google\Model
-{
-    protected $userLinkType = GoogleAnalyticsAdminV1alphaUserLink::class;
-    protected $userLinkDataType = '';
-    /**
-     * @param GoogleAnalyticsAdminV1alphaUserLink
-     */
-    public function setUserLink(GoogleAnalyticsAdminV1alphaUserLink $userLink)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaUpdateUserLinkRequest extends \Google\Model
     {
+        protected $userLinkType = GoogleAnalyticsAdminV1alphaUserLink::class;
+        protected $userLinkDataType = '';
+        /**
+         * @param GoogleAnalyticsAdminV1alphaUserLink
+         */
+        public function setUserLink(GoogleAnalyticsAdminV1alphaUserLink $userLink)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaUserLink
+         */
+        public function getUserLink()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAnalyticsAdminV1alphaUserLink
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaUpdateUserLinkRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUserLink()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaUpdateUserLinkRequest extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaUpdateUserLinkRequest
     {
     }
 }

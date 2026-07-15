@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class VersionedPackage extends \Google\Model
-{
-    /**
-     * The system architecture this package is intended for.
-     *
-     * @var string
-     */
-    public $architecture;
-    /**
-     * The name of the package.
-     *
-     * @var string
-     */
-    public $packageName;
-    /**
-     * The version of the package.
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * The system architecture this package is intended for.
-     *
-     * @param string $architecture
-     */
-    public function setArchitecture($architecture)
+namespace Google\Service\CloudAsset {
+    class VersionedPackage extends \Google\Model
     {
+        /**
+         * The system architecture this package is intended for.
+         *
+         * @var string
+         */
+        public $architecture;
+        /**
+         * The name of the package.
+         *
+         * @var string
+         */
+        public $packageName;
+        /**
+         * The version of the package.
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * The system architecture this package is intended for.
+         *
+         * @param string $architecture
+         */
+        public function setArchitecture($architecture)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getArchitecture()
+        {
+        }
+        /**
+         * The name of the package.
+         *
+         * @param string $packageName
+         */
+        public function setPackageName($packageName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPackageName()
+        {
+        }
+        /**
+         * The version of the package.
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudAsset\VersionedPackage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArchitecture()
-    {
-    }
-    /**
-     * The name of the package.
-     *
-     * @param string $packageName
-     */
-    public function setPackageName($packageName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPackageName()
-    {
-    }
-    /**
-     * The version of the package.
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_CloudAsset_VersionedPackage extends \Google\Service\CloudAsset\VersionedPackage
     {
     }
 }

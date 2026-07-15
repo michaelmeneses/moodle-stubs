@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class ImapSyncDelete extends \Google\Model
-{
-    protected $mappingsType = FolderAttribute::class;
-    protected $mappingsDataType = '';
-    /**
-     * @var string
-     */
-    public $msgId;
-    /**
-     * @param FolderAttribute
-     */
-    public function setMappings(FolderAttribute $mappings)
+namespace Google\Service\CloudSearch {
+    class ImapSyncDelete extends \Google\Model
     {
+        protected $mappingsType = FolderAttribute::class;
+        protected $mappingsDataType = '';
+        /**
+         * @var string
+         */
+        public $msgId;
+        /**
+         * @param FolderAttribute
+         */
+        public function setMappings(FolderAttribute $mappings)
+        {
+        }
+        /**
+         * @return FolderAttribute
+         */
+        public function getMappings()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMsgId($msgId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMsgId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FolderAttribute
+     * Runtime class alias of \Google\Service\CloudSearch\ImapSyncDelete registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMappings()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMsgId($msgId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMsgId()
+    class Google_Service_CloudSearch_ImapSyncDelete extends \Google\Service\CloudSearch\ImapSyncDelete
     {
     }
 }

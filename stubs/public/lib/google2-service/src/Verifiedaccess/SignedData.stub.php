@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Verifiedaccess;
-
-class SignedData extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $data;
-    /**
-     * @var string
-     */
-    public $signature;
-    /**
-     * @param string
-     */
-    public function setData($data)
+namespace Google\Service\Verifiedaccess {
+    class SignedData extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $data;
+        /**
+         * @var string
+         */
+        public $signature;
+        /**
+         * @param string
+         */
+        public function setData($data)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getData()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSignature($signature)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSignature()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Verifiedaccess\SignedData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getData()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSignature($signature)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSignature()
+    class Google_Service_Verifiedaccess_SignedData extends \Google\Service\Verifiedaccess\SignedData
     {
     }
 }

@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AirQuality;
-
-class CustomLocalAqi extends \Google\Model
-{
-    /**
-     * The AQI to associate the country/region with. Value should be a [valid
-     * index](/maps/documentation/air-quality/laqis) code.
-     *
-     * @var string
-     */
-    public $aqi;
-    /**
-     * The country/region requiring the custom AQI. Value should be provided using
-     * [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2)
-     * code.
-     *
-     * @var string
-     */
-    public $regionCode;
-    /**
-     * The AQI to associate the country/region with. Value should be a [valid
-     * index](/maps/documentation/air-quality/laqis) code.
-     *
-     * @param string $aqi
-     */
-    public function setAqi($aqi)
+namespace Google\Service\AirQuality {
+    class CustomLocalAqi extends \Google\Model
     {
+        /**
+         * The AQI to associate the country/region with. Value should be a [valid
+         * index](/maps/documentation/air-quality/laqis) code.
+         *
+         * @var string
+         */
+        public $aqi;
+        /**
+         * The country/region requiring the custom AQI. Value should be provided using
+         * [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2)
+         * code.
+         *
+         * @var string
+         */
+        public $regionCode;
+        /**
+         * The AQI to associate the country/region with. Value should be a [valid
+         * index](/maps/documentation/air-quality/laqis) code.
+         *
+         * @param string $aqi
+         */
+        public function setAqi($aqi)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAqi()
+        {
+        }
+        /**
+         * The country/region requiring the custom AQI. Value should be provided using
+         * [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2)
+         * code.
+         *
+         * @param string $regionCode
+         */
+        public function setRegionCode($regionCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegionCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AirQuality\CustomLocalAqi registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAqi()
-    {
-    }
-    /**
-     * The country/region requiring the custom AQI. Value should be provided using
-     * [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2)
-     * code.
-     *
-     * @param string $regionCode
-     */
-    public function setRegionCode($regionCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegionCode()
+    class Google_Service_AirQuality_CustomLocalAqi extends \Google\Service\AirQuality\CustomLocalAqi
     {
     }
 }

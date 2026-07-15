@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution;
-
-class GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature extends \Google\Collection
-{
-    protected $collection_key = 'allowedValues';
-    public $allowedValues;
-    public $policy;
-    public function setAllowedValues($allowedValues)
+namespace Google\Service\RemoteBuildExecution {
+    class GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature extends \Google\Collection
     {
+        protected $collection_key = 'allowedValues';
+        public $allowedValues;
+        public $policy;
+        public function setAllowedValues($allowedValues)
+        {
+        }
+        public function getAllowedValues()
+        {
+        }
+        public function setPolicy($policy)
+        {
+        }
+        public function getPolicy()
+        {
+        }
     }
-    public function getAllowedValues()
-    {
-    }
-    public function setPolicy($policy)
-    {
-    }
-    public function getPolicy()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_RemoteBuildExecution_GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature extends \Google\Service\RemoteBuildExecution\GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature
     {
     }
 }

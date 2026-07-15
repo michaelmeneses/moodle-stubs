@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class CloudReliabilityZicyWs3DataplaneProtosLocationData extends \Google\Model
-{
-    protected $blobstoreLocationType = CloudReliabilityZicyWs3DataplaneProtosBlobstoreLocation::class;
-    protected $blobstoreLocationDataType = '';
-    protected $childAssetLocationType = CloudReliabilityZicyWs3DataplaneProtosCloudAssetComposition::class;
-    protected $childAssetLocationDataType = '';
-    protected $directLocationType = CloudReliabilityZicyWs3DataplaneProtosDirectLocationAssignment::class;
-    protected $directLocationDataType = '';
-    protected $gcpProjectProxyType = CloudReliabilityZicyWs3DataplaneProtosTenantProjectProxy::class;
-    protected $gcpProjectProxyDataType = '';
-    protected $placerLocationType = CloudReliabilityZicyWs3DataplaneProtosPlacerLocation::class;
-    protected $placerLocationDataType = '';
-    protected $spannerLocationType = CloudReliabilityZicyWs3DataplaneProtosSpannerLocation::class;
-    protected $spannerLocationDataType = '';
-    /**
-     * @param CloudReliabilityZicyWs3DataplaneProtosBlobstoreLocation
-     */
-    public function setBlobstoreLocation(CloudReliabilityZicyWs3DataplaneProtosBlobstoreLocation $blobstoreLocation)
+namespace Google\Service\CloudDataplex {
+    class CloudReliabilityZicyWs3DataplaneProtosLocationData extends \Google\Model
     {
+        protected $blobstoreLocationType = CloudReliabilityZicyWs3DataplaneProtosBlobstoreLocation::class;
+        protected $blobstoreLocationDataType = '';
+        protected $childAssetLocationType = CloudReliabilityZicyWs3DataplaneProtosCloudAssetComposition::class;
+        protected $childAssetLocationDataType = '';
+        protected $directLocationType = CloudReliabilityZicyWs3DataplaneProtosDirectLocationAssignment::class;
+        protected $directLocationDataType = '';
+        protected $gcpProjectProxyType = CloudReliabilityZicyWs3DataplaneProtosTenantProjectProxy::class;
+        protected $gcpProjectProxyDataType = '';
+        protected $placerLocationType = CloudReliabilityZicyWs3DataplaneProtosPlacerLocation::class;
+        protected $placerLocationDataType = '';
+        protected $spannerLocationType = CloudReliabilityZicyWs3DataplaneProtosSpannerLocation::class;
+        protected $spannerLocationDataType = '';
+        /**
+         * @param CloudReliabilityZicyWs3DataplaneProtosBlobstoreLocation
+         */
+        public function setBlobstoreLocation(CloudReliabilityZicyWs3DataplaneProtosBlobstoreLocation $blobstoreLocation)
+        {
+        }
+        /**
+         * @return CloudReliabilityZicyWs3DataplaneProtosBlobstoreLocation
+         */
+        public function getBlobstoreLocation()
+        {
+        }
+        /**
+         * @param CloudReliabilityZicyWs3DataplaneProtosCloudAssetComposition
+         */
+        public function setChildAssetLocation(CloudReliabilityZicyWs3DataplaneProtosCloudAssetComposition $childAssetLocation)
+        {
+        }
+        /**
+         * @return CloudReliabilityZicyWs3DataplaneProtosCloudAssetComposition
+         */
+        public function getChildAssetLocation()
+        {
+        }
+        /**
+         * @param CloudReliabilityZicyWs3DataplaneProtosDirectLocationAssignment
+         */
+        public function setDirectLocation(CloudReliabilityZicyWs3DataplaneProtosDirectLocationAssignment $directLocation)
+        {
+        }
+        /**
+         * @return CloudReliabilityZicyWs3DataplaneProtosDirectLocationAssignment
+         */
+        public function getDirectLocation()
+        {
+        }
+        /**
+         * @param CloudReliabilityZicyWs3DataplaneProtosTenantProjectProxy
+         */
+        public function setGcpProjectProxy(CloudReliabilityZicyWs3DataplaneProtosTenantProjectProxy $gcpProjectProxy)
+        {
+        }
+        /**
+         * @return CloudReliabilityZicyWs3DataplaneProtosTenantProjectProxy
+         */
+        public function getGcpProjectProxy()
+        {
+        }
+        /**
+         * @param CloudReliabilityZicyWs3DataplaneProtosPlacerLocation
+         */
+        public function setPlacerLocation(CloudReliabilityZicyWs3DataplaneProtosPlacerLocation $placerLocation)
+        {
+        }
+        /**
+         * @return CloudReliabilityZicyWs3DataplaneProtosPlacerLocation
+         */
+        public function getPlacerLocation()
+        {
+        }
+        /**
+         * @param CloudReliabilityZicyWs3DataplaneProtosSpannerLocation
+         */
+        public function setSpannerLocation(CloudReliabilityZicyWs3DataplaneProtosSpannerLocation $spannerLocation)
+        {
+        }
+        /**
+         * @return CloudReliabilityZicyWs3DataplaneProtosSpannerLocation
+         */
+        public function getSpannerLocation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CloudReliabilityZicyWs3DataplaneProtosBlobstoreLocation
+     * Runtime class alias of \Google\Service\CloudDataplex\CloudReliabilityZicyWs3DataplaneProtosLocationData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBlobstoreLocation()
-    {
-    }
-    /**
-     * @param CloudReliabilityZicyWs3DataplaneProtosCloudAssetComposition
-     */
-    public function setChildAssetLocation(CloudReliabilityZicyWs3DataplaneProtosCloudAssetComposition $childAssetLocation)
-    {
-    }
-    /**
-     * @return CloudReliabilityZicyWs3DataplaneProtosCloudAssetComposition
-     */
-    public function getChildAssetLocation()
-    {
-    }
-    /**
-     * @param CloudReliabilityZicyWs3DataplaneProtosDirectLocationAssignment
-     */
-    public function setDirectLocation(CloudReliabilityZicyWs3DataplaneProtosDirectLocationAssignment $directLocation)
-    {
-    }
-    /**
-     * @return CloudReliabilityZicyWs3DataplaneProtosDirectLocationAssignment
-     */
-    public function getDirectLocation()
-    {
-    }
-    /**
-     * @param CloudReliabilityZicyWs3DataplaneProtosTenantProjectProxy
-     */
-    public function setGcpProjectProxy(CloudReliabilityZicyWs3DataplaneProtosTenantProjectProxy $gcpProjectProxy)
-    {
-    }
-    /**
-     * @return CloudReliabilityZicyWs3DataplaneProtosTenantProjectProxy
-     */
-    public function getGcpProjectProxy()
-    {
-    }
-    /**
-     * @param CloudReliabilityZicyWs3DataplaneProtosPlacerLocation
-     */
-    public function setPlacerLocation(CloudReliabilityZicyWs3DataplaneProtosPlacerLocation $placerLocation)
-    {
-    }
-    /**
-     * @return CloudReliabilityZicyWs3DataplaneProtosPlacerLocation
-     */
-    public function getPlacerLocation()
-    {
-    }
-    /**
-     * @param CloudReliabilityZicyWs3DataplaneProtosSpannerLocation
-     */
-    public function setSpannerLocation(CloudReliabilityZicyWs3DataplaneProtosSpannerLocation $spannerLocation)
-    {
-    }
-    /**
-     * @return CloudReliabilityZicyWs3DataplaneProtosSpannerLocation
-     */
-    public function getSpannerLocation()
+    class Google_Service_CloudDataplex_CloudReliabilityZicyWs3DataplaneProtosLocationData extends \Google\Service\CloudDataplex\CloudReliabilityZicyWs3DataplaneProtosLocationData
     {
     }
 }

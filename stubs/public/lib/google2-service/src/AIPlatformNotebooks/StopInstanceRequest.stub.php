@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AIPlatformNotebooks;
-
-class StopInstanceRequest extends \Google\Model
-{
+namespace Google\Service\AIPlatformNotebooks {
+    class StopInstanceRequest extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AIPlatformNotebooks\StopInstanceRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AIPlatformNotebooks_StopInstanceRequest extends \Google\Service\AIPlatformNotebooks\StopInstanceRequest
+    {
+    }
 }

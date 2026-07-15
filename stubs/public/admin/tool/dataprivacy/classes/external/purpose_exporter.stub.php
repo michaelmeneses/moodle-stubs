@@ -29,6 +29,10 @@
  */
 namespace tool_dataprivacy\external;
 
+use core\external\persistent_exporter;
+use renderer_base;
+use tool_dataprivacy\context_instance;
+use tool_dataprivacy\purpose;
 /**
  * Class for exporting field data.
  *

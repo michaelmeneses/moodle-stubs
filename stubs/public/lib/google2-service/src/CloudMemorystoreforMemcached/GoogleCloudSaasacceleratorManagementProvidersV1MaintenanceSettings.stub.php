@@ -21,75 +21,84 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudMemorystoreforMemcached;
-
-class GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSettings extends \Google\Model
-{
-    /**
-     * Optional. Exclude instance from maintenance. When true, rollout service
-     * will not attempt maintenance on the instance. Rollout service will include
-     * the instance in reported rollout progress as not attempted.
-     *
-     * @var bool
-     */
-    public $exclude;
-    /**
-     * Optional. If the update call is triggered from rollback, set the value as
-     * true.
-     *
-     * @var bool
-     */
-    public $isRollback;
-    protected $maintenancePoliciesType = MaintenancePolicy::class;
-    protected $maintenancePoliciesDataType = 'map';
-    /**
-     * Optional. Exclude instance from maintenance. When true, rollout service
-     * will not attempt maintenance on the instance. Rollout service will include
-     * the instance in reported rollout progress as not attempted.
-     *
-     * @param bool $exclude
-     */
-    public function setExclude($exclude)
+namespace Google\Service\CloudMemorystoreforMemcached {
+    class GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSettings extends \Google\Model
     {
+        /**
+         * Optional. Exclude instance from maintenance. When true, rollout service
+         * will not attempt maintenance on the instance. Rollout service will include
+         * the instance in reported rollout progress as not attempted.
+         *
+         * @var bool
+         */
+        public $exclude;
+        /**
+         * Optional. If the update call is triggered from rollback, set the value as
+         * true.
+         *
+         * @var bool
+         */
+        public $isRollback;
+        protected $maintenancePoliciesType = MaintenancePolicy::class;
+        protected $maintenancePoliciesDataType = 'map';
+        /**
+         * Optional. Exclude instance from maintenance. When true, rollout service
+         * will not attempt maintenance on the instance. Rollout service will include
+         * the instance in reported rollout progress as not attempted.
+         *
+         * @param bool $exclude
+         */
+        public function setExclude($exclude)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getExclude()
+        {
+        }
+        /**
+         * Optional. If the update call is triggered from rollback, set the value as
+         * true.
+         *
+         * @param bool $isRollback
+         */
+        public function setIsRollback($isRollback)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsRollback()
+        {
+        }
+        /**
+         * Optional. The MaintenancePolicies that have been attached to the instance.
+         * The key must be of the type name of the oneof policy name defined in
+         * MaintenancePolicy, and the embedded policy must define the same policy
+         * type. For details, please refer to go/mr-user-guide. Should not be set if
+         * maintenance_policy_names is set. If only the name is needed, then only
+         * populate MaintenancePolicy.name.
+         *
+         * @param MaintenancePolicy[] $maintenancePolicies
+         */
+        public function setMaintenancePolicies($maintenancePolicies)
+        {
+        }
+        /**
+         * @return MaintenancePolicy[]
+         */
+        public function getMaintenancePolicies()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudMemorystoreforMemcached\GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExclude()
-    {
-    }
-    /**
-     * Optional. If the update call is triggered from rollback, set the value as
-     * true.
-     *
-     * @param bool $isRollback
-     */
-    public function setIsRollback($isRollback)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsRollback()
-    {
-    }
-    /**
-     * Optional. The MaintenancePolicies that have been attached to the instance.
-     * The key must be of the type name of the oneof policy name defined in
-     * MaintenancePolicy, and the embedded policy must define the same policy
-     * type. For details, please refer to go/mr-user-guide. Should not be set if
-     * maintenance_policy_names is set. If only the name is needed, then only
-     * populate MaintenancePolicy.name.
-     *
-     * @param MaintenancePolicy[] $maintenancePolicies
-     */
-    public function setMaintenancePolicies($maintenancePolicies)
-    {
-    }
-    /**
-     * @return MaintenancePolicy[]
-     */
-    public function getMaintenancePolicies()
+    class Google_Service_CloudMemorystoreforMemcached_GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSettings extends \Google\Service\CloudMemorystoreforMemcached\GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSettings
     {
     }
 }

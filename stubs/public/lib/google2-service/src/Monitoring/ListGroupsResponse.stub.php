@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class ListGroupsResponse extends \Google\Collection
-{
-    protected $collection_key = 'group';
-    protected $groupType = Group::class;
-    protected $groupDataType = 'array';
-    /**
-     * If there are more results than have been returned, then this field is set
-     * to a non-empty value. To see the additional results, use that value as
-     * page_token in the next call to this method.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The groups that match the specified filters.
-     *
-     * @param Group[] $group
-     */
-    public function setGroup($group)
+namespace Google\Service\Monitoring {
+    class ListGroupsResponse extends \Google\Collection
     {
+        protected $collection_key = 'group';
+        protected $groupType = Group::class;
+        protected $groupDataType = 'array';
+        /**
+         * If there are more results than have been returned, then this field is set
+         * to a non-empty value. To see the additional results, use that value as
+         * page_token in the next call to this method.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The groups that match the specified filters.
+         *
+         * @param Group[] $group
+         */
+        public function setGroup($group)
+        {
+        }
+        /**
+         * @return Group[]
+         */
+        public function getGroup()
+        {
+        }
+        /**
+         * If there are more results than have been returned, then this field is set
+         * to a non-empty value. To see the additional results, use that value as
+         * page_token in the next call to this method.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Group[]
+     * Runtime class alias of \Google\Service\Monitoring\ListGroupsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGroup()
-    {
-    }
-    /**
-     * If there are more results than have been returned, then this field is set
-     * to a non-empty value. To see the additional results, use that value as
-     * page_token in the next call to this method.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Monitoring_ListGroupsResponse extends \Google\Service\Monitoring\ListGroupsResponse
     {
     }
 }

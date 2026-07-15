@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class ReturnPolicySeasonalOverride extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $endDate;
-    /**
-     * @var string
-     */
-    public $name;
-    protected $policyType = ReturnPolicyPolicy::class;
-    protected $policyDataType = '';
-    /**
-     * @var string
-     */
-    public $startDate;
-    /**
-     * @param string
-     */
-    public function setEndDate($endDate)
+namespace Google\Service\ShoppingContent {
+    class ReturnPolicySeasonalOverride extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $endDate;
+        /**
+         * @var string
+         */
+        public $name;
+        protected $policyType = ReturnPolicyPolicy::class;
+        protected $policyDataType = '';
+        /**
+         * @var string
+         */
+        public $startDate;
+        /**
+         * @param string
+         */
+        public function setEndDate($endDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndDate()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param ReturnPolicyPolicy
+         */
+        public function setPolicy(ReturnPolicyPolicy $policy)
+        {
+        }
+        /**
+         * @return ReturnPolicyPolicy
+         */
+        public function getPolicy()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setStartDate($startDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartDate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\ReturnPolicySeasonalOverride registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndDate()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param ReturnPolicyPolicy
-     */
-    public function setPolicy(ReturnPolicyPolicy $policy)
-    {
-    }
-    /**
-     * @return ReturnPolicyPolicy
-     */
-    public function getPolicy()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setStartDate($startDate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartDate()
+    class Google_Service_ShoppingContent_ReturnPolicySeasonalOverride extends \Google\Service\ShoppingContent\ReturnPolicySeasonalOverride
     {
     }
 }

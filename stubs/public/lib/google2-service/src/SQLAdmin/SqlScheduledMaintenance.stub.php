@@ -21,87 +21,96 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class SqlScheduledMaintenance extends \Google\Model
-{
-    /**
-     * @deprecated
-     * @var bool
-     */
-    public $canDefer;
-    /**
-     * If the scheduled maintenance can be rescheduled.
-     *
-     * @var bool
-     */
-    public $canReschedule;
-    /**
-     * Maintenance cannot be rescheduled to start beyond this deadline.
-     *
-     * @var string
-     */
-    public $scheduleDeadlineTime;
-    /**
-     * The start time of any upcoming scheduled maintenance for this instance.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * @deprecated
-     * @param bool $canDefer
-     */
-    public function setCanDefer($canDefer)
+namespace Google\Service\SQLAdmin {
+    class SqlScheduledMaintenance extends \Google\Model
     {
+        /**
+         * @deprecated
+         * @var bool
+         */
+        public $canDefer;
+        /**
+         * If the scheduled maintenance can be rescheduled.
+         *
+         * @var bool
+         */
+        public $canReschedule;
+        /**
+         * Maintenance cannot be rescheduled to start beyond this deadline.
+         *
+         * @var string
+         */
+        public $scheduleDeadlineTime;
+        /**
+         * The start time of any upcoming scheduled maintenance for this instance.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * @deprecated
+         * @param bool $canDefer
+         */
+        public function setCanDefer($canDefer)
+        {
+        }
+        /**
+         * @deprecated
+         * @return bool
+         */
+        public function getCanDefer()
+        {
+        }
+        /**
+         * If the scheduled maintenance can be rescheduled.
+         *
+         * @param bool $canReschedule
+         */
+        public function setCanReschedule($canReschedule)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanReschedule()
+        {
+        }
+        /**
+         * Maintenance cannot be rescheduled to start beyond this deadline.
+         *
+         * @param string $scheduleDeadlineTime
+         */
+        public function setScheduleDeadlineTime($scheduleDeadlineTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScheduleDeadlineTime()
+        {
+        }
+        /**
+         * The start time of any upcoming scheduled maintenance for this instance.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return bool
+     * Runtime class alias of \Google\Service\SQLAdmin\SqlScheduledMaintenance registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCanDefer()
-    {
-    }
-    /**
-     * If the scheduled maintenance can be rescheduled.
-     *
-     * @param bool $canReschedule
-     */
-    public function setCanReschedule($canReschedule)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanReschedule()
-    {
-    }
-    /**
-     * Maintenance cannot be rescheduled to start beyond this deadline.
-     *
-     * @param string $scheduleDeadlineTime
-     */
-    public function setScheduleDeadlineTime($scheduleDeadlineTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getScheduleDeadlineTime()
-    {
-    }
-    /**
-     * The start time of any upcoming scheduled maintenance for this instance.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
+    class Google_Service_SQLAdmin_SqlScheduledMaintenance extends \Google\Service\SQLAdmin\SqlScheduledMaintenance
     {
     }
 }

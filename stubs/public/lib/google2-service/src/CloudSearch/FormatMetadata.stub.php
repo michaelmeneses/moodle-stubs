@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class FormatMetadata extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $fontColor;
-    /**
-     * @var string
-     */
-    public $formatType;
-    /**
-     * @param string
-     */
-    public function setFontColor($fontColor)
+namespace Google\Service\CloudSearch {
+    class FormatMetadata extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $fontColor;
+        /**
+         * @var string
+         */
+        public $formatType;
+        /**
+         * @param string
+         */
+        public function setFontColor($fontColor)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFontColor()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setFormatType($formatType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFormatType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\FormatMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFontColor()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setFormatType($formatType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFormatType()
+    class Google_Service_CloudSearch_FormatMetadata extends \Google\Service\CloudSearch\FormatMetadata
     {
     }
 }

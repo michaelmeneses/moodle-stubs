@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1VideoThumbnail extends \Google\Model
-{
-    /**
-     * A byte string of the video frame.
-     *
-     * @var string
-     */
-    public $thumbnail;
-    /**
-     * Time offset relative to the beginning of the video, corresponding to the
-     * video frame where the thumbnail has been extracted from.
-     *
-     * @var string
-     */
-    public $timeOffset;
-    /**
-     * A byte string of the video frame.
-     *
-     * @param string $thumbnail
-     */
-    public function setThumbnail($thumbnail)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1VideoThumbnail extends \Google\Model
     {
+        /**
+         * A byte string of the video frame.
+         *
+         * @var string
+         */
+        public $thumbnail;
+        /**
+         * Time offset relative to the beginning of the video, corresponding to the
+         * video frame where the thumbnail has been extracted from.
+         *
+         * @var string
+         */
+        public $timeOffset;
+        /**
+         * A byte string of the video frame.
+         *
+         * @param string $thumbnail
+         */
+        public function setThumbnail($thumbnail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getThumbnail()
+        {
+        }
+        /**
+         * Time offset relative to the beginning of the video, corresponding to the
+         * video frame where the thumbnail has been extracted from.
+         *
+         * @param string $timeOffset
+         */
+        public function setTimeOffset($timeOffset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimeOffset()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1VideoThumbnail registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getThumbnail()
-    {
-    }
-    /**
-     * Time offset relative to the beginning of the video, corresponding to the
-     * video frame where the thumbnail has been extracted from.
-     *
-     * @param string $timeOffset
-     */
-    public function setTimeOffset($timeOffset)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimeOffset()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1VideoThumbnail extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1VideoThumbnail
     {
     }
 }

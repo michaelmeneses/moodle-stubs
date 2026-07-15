@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class DoubleRange extends \Google\Model
-{
+namespace Google\Service\Bigquery {
+    class DoubleRange extends \Google\Model
+    {
+        /**
+         * Max value of the double parameter.
+         *
+         * @var 
+         */
+        public $max;
+        /**
+         * Min value of the double parameter.
+         *
+         * @var 
+         */
+        public $min;
+        public function setMax($max)
+        {
+        }
+        public function getMax()
+        {
+        }
+        public function setMin($min)
+        {
+        }
+        public function getMin()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * Max value of the double parameter.
-     *
-     * @var 
+     * Runtime class alias of \Google\Service\Bigquery\DoubleRange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public $max;
-    /**
-     * Min value of the double parameter.
-     *
-     * @var 
-     */
-    public $min;
-    public function setMax($max)
-    {
-    }
-    public function getMax()
-    {
-    }
-    public function setMin($min)
-    {
-    }
-    public function getMin()
+    class Google_Service_Bigquery_DoubleRange extends \Google\Service\Bigquery\DoubleRange
     {
     }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaTargetSiteFailureReason extends \Google\Model
-{
-    protected $quotaFailureType = GoogleCloudDiscoveryengineV1alphaTargetSiteFailureReasonQuotaFailure::class;
-    protected $quotaFailureDataType = '';
-    /**
-     * Failed due to insufficient quota.
-     *
-     * @param GoogleCloudDiscoveryengineV1alphaTargetSiteFailureReasonQuotaFailure $quotaFailure
-     */
-    public function setQuotaFailure(GoogleCloudDiscoveryengineV1alphaTargetSiteFailureReasonQuotaFailure $quotaFailure)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaTargetSiteFailureReason extends \Google\Model
     {
+        protected $quotaFailureType = GoogleCloudDiscoveryengineV1alphaTargetSiteFailureReasonQuotaFailure::class;
+        protected $quotaFailureDataType = '';
+        /**
+         * Failed due to insufficient quota.
+         *
+         * @param GoogleCloudDiscoveryengineV1alphaTargetSiteFailureReasonQuotaFailure $quotaFailure
+         */
+        public function setQuotaFailure(GoogleCloudDiscoveryengineV1alphaTargetSiteFailureReasonQuotaFailure $quotaFailure)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1alphaTargetSiteFailureReasonQuotaFailure
+         */
+        public function getQuotaFailure()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1alphaTargetSiteFailureReasonQuotaFailure
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaTargetSiteFailureReason registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getQuotaFailure()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaTargetSiteFailureReason extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaTargetSiteFailureReason
     {
     }
 }

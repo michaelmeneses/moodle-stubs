@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudbilling;
-
-class ListBillingAccountsResponse extends \Google\Collection
-{
-    protected $collection_key = 'billingAccounts';
-    protected $billingAccountsType = BillingAccount::class;
-    protected $billingAccountsDataType = 'array';
-    /**
-     * A token to retrieve the next page of results. To retrieve the next page,
-     * call `ListBillingAccounts` again with the `page_token` field set to this
-     * value. This field is empty if there are no more results to retrieve.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * A list of billing accounts.
-     *
-     * @param BillingAccount[] $billingAccounts
-     */
-    public function setBillingAccounts($billingAccounts)
+namespace Google\Service\Cloudbilling {
+    class ListBillingAccountsResponse extends \Google\Collection
     {
+        protected $collection_key = 'billingAccounts';
+        protected $billingAccountsType = BillingAccount::class;
+        protected $billingAccountsDataType = 'array';
+        /**
+         * A token to retrieve the next page of results. To retrieve the next page,
+         * call `ListBillingAccounts` again with the `page_token` field set to this
+         * value. This field is empty if there are no more results to retrieve.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * A list of billing accounts.
+         *
+         * @param BillingAccount[] $billingAccounts
+         */
+        public function setBillingAccounts($billingAccounts)
+        {
+        }
+        /**
+         * @return BillingAccount[]
+         */
+        public function getBillingAccounts()
+        {
+        }
+        /**
+         * A token to retrieve the next page of results. To retrieve the next page,
+         * call `ListBillingAccounts` again with the `page_token` field set to this
+         * value. This field is empty if there are no more results to retrieve.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BillingAccount[]
+     * Runtime class alias of \Google\Service\Cloudbilling\ListBillingAccountsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBillingAccounts()
-    {
-    }
-    /**
-     * A token to retrieve the next page of results. To retrieve the next page,
-     * call `ListBillingAccounts` again with the `page_token` field set to this
-     * value. This field is empty if there are no more results to retrieve.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Cloudbilling_ListBillingAccountsResponse extends \Google\Service\Cloudbilling\ListBillingAccountsResponse
     {
     }
 }

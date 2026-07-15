@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1ChannelPartnerRepricingConfig extends \Google\Model
-{
-    /**
-     * Output only. Resource name of the ChannelPartnerRepricingConfig. Format: ac
-     * counts/{account_id}/channelPartnerLinks/{channel_partner_id}/channelPartner
-     * RepricingConfigs/{id}.
-     *
-     * @var string
-     */
-    public $name;
-    protected $repricingConfigType = GoogleCloudChannelV1RepricingConfig::class;
-    protected $repricingConfigDataType = '';
-    /**
-     * Output only. Timestamp of an update to the repricing rule. If `update_time`
-     * is after RepricingConfig.effective_invoice_month then it indicates this was
-     * set mid-month.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. Resource name of the ChannelPartnerRepricingConfig. Format: ac
-     * counts/{account_id}/channelPartnerLinks/{channel_partner_id}/channelPartner
-     * RepricingConfigs/{id}.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1ChannelPartnerRepricingConfig extends \Google\Model
     {
+        /**
+         * Output only. Resource name of the ChannelPartnerRepricingConfig. Format: ac
+         * counts/{account_id}/channelPartnerLinks/{channel_partner_id}/channelPartner
+         * RepricingConfigs/{id}.
+         *
+         * @var string
+         */
+        public $name;
+        protected $repricingConfigType = GoogleCloudChannelV1RepricingConfig::class;
+        protected $repricingConfigDataType = '';
+        /**
+         * Output only. Timestamp of an update to the repricing rule. If `update_time`
+         * is after RepricingConfig.effective_invoice_month then it indicates this was
+         * set mid-month.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. Resource name of the ChannelPartnerRepricingConfig. Format: ac
+         * counts/{account_id}/channelPartnerLinks/{channel_partner_id}/channelPartner
+         * RepricingConfigs/{id}.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Required. The configuration for bill modifications made by a reseller
+         * before sending it to ChannelPartner.
+         *
+         * @param GoogleCloudChannelV1RepricingConfig $repricingConfig
+         */
+        public function setRepricingConfig(GoogleCloudChannelV1RepricingConfig $repricingConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1RepricingConfig
+         */
+        public function getRepricingConfig()
+        {
+        }
+        /**
+         * Output only. Timestamp of an update to the repricing rule. If `update_time`
+         * is after RepricingConfig.effective_invoice_month then it indicates this was
+         * set mid-month.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1ChannelPartnerRepricingConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Required. The configuration for bill modifications made by a reseller
-     * before sending it to ChannelPartner.
-     *
-     * @param GoogleCloudChannelV1RepricingConfig $repricingConfig
-     */
-    public function setRepricingConfig(GoogleCloudChannelV1RepricingConfig $repricingConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudChannelV1RepricingConfig
-     */
-    public function getRepricingConfig()
-    {
-    }
-    /**
-     * Output only. Timestamp of an update to the repricing rule. If `update_time`
-     * is after RepricingConfig.effective_invoice_month then it indicates this was
-     * set mid-month.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1ChannelPartnerRepricingConfig extends \Google\Service\Cloudchannel\GoogleCloudChannelV1ChannelPartnerRepricingConfig
     {
     }
 }

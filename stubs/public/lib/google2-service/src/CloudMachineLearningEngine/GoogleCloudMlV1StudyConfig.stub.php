@@ -21,97 +21,106 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudMachineLearningEngine;
-
-class GoogleCloudMlV1StudyConfig extends \Google\Collection
-{
-    /**
-     * The default algorithm used by the Cloud AI Platform Vizier service.
-     */
-    public const ALGORITHM_ALGORITHM_UNSPECIFIED = 'ALGORITHM_UNSPECIFIED';
-    /**
-     * Gaussian Process Bandit.
-     */
-    public const ALGORITHM_GAUSSIAN_PROCESS_BANDIT = 'GAUSSIAN_PROCESS_BANDIT';
-    /**
-     * Simple grid search within the feasible space. To use grid search, all
-     * parameters must be `INTEGER`, `CATEGORICAL`, or `DISCRETE`.
-     */
-    public const ALGORITHM_GRID_SEARCH = 'GRID_SEARCH';
-    /**
-     * Simple random search within the feasible space.
-     */
-    public const ALGORITHM_RANDOM_SEARCH = 'RANDOM_SEARCH';
-    protected $collection_key = 'parameters';
-    /**
-     * The search algorithm specified for the study.
-     *
-     * @var string
-     */
-    public $algorithm;
-    protected $automatedStoppingConfigType = GoogleCloudMlV1AutomatedStoppingConfig::class;
-    protected $automatedStoppingConfigDataType = '';
-    protected $metricsType = GoogleCloudMlV1StudyConfigMetricSpec::class;
-    protected $metricsDataType = 'array';
-    protected $parametersType = GoogleCloudMlV1StudyConfigParameterSpec::class;
-    protected $parametersDataType = 'array';
-    /**
-     * The search algorithm specified for the study.
-     *
-     * Accepted values: ALGORITHM_UNSPECIFIED, GAUSSIAN_PROCESS_BANDIT,
-     * GRID_SEARCH, RANDOM_SEARCH
-     *
-     * @param self::ALGORITHM_* $algorithm
-     */
-    public function setAlgorithm($algorithm)
+namespace Google\Service\CloudMachineLearningEngine {
+    class GoogleCloudMlV1StudyConfig extends \Google\Collection
     {
+        /**
+         * The default algorithm used by the Cloud AI Platform Vizier service.
+         */
+        public const ALGORITHM_ALGORITHM_UNSPECIFIED = 'ALGORITHM_UNSPECIFIED';
+        /**
+         * Gaussian Process Bandit.
+         */
+        public const ALGORITHM_GAUSSIAN_PROCESS_BANDIT = 'GAUSSIAN_PROCESS_BANDIT';
+        /**
+         * Simple grid search within the feasible space. To use grid search, all
+         * parameters must be `INTEGER`, `CATEGORICAL`, or `DISCRETE`.
+         */
+        public const ALGORITHM_GRID_SEARCH = 'GRID_SEARCH';
+        /**
+         * Simple random search within the feasible space.
+         */
+        public const ALGORITHM_RANDOM_SEARCH = 'RANDOM_SEARCH';
+        protected $collection_key = 'parameters';
+        /**
+         * The search algorithm specified for the study.
+         *
+         * @var string
+         */
+        public $algorithm;
+        protected $automatedStoppingConfigType = GoogleCloudMlV1AutomatedStoppingConfig::class;
+        protected $automatedStoppingConfigDataType = '';
+        protected $metricsType = GoogleCloudMlV1StudyConfigMetricSpec::class;
+        protected $metricsDataType = 'array';
+        protected $parametersType = GoogleCloudMlV1StudyConfigParameterSpec::class;
+        protected $parametersDataType = 'array';
+        /**
+         * The search algorithm specified for the study.
+         *
+         * Accepted values: ALGORITHM_UNSPECIFIED, GAUSSIAN_PROCESS_BANDIT,
+         * GRID_SEARCH, RANDOM_SEARCH
+         *
+         * @param self::ALGORITHM_* $algorithm
+         */
+        public function setAlgorithm($algorithm)
+        {
+        }
+        /**
+         * @return self::ALGORITHM_*
+         */
+        public function getAlgorithm()
+        {
+        }
+        /**
+         * Configuration for automated stopping of unpromising Trials.
+         *
+         * @param GoogleCloudMlV1AutomatedStoppingConfig $automatedStoppingConfig
+         */
+        public function setAutomatedStoppingConfig(GoogleCloudMlV1AutomatedStoppingConfig $automatedStoppingConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudMlV1AutomatedStoppingConfig
+         */
+        public function getAutomatedStoppingConfig()
+        {
+        }
+        /**
+         * Metric specs for the study.
+         *
+         * @param GoogleCloudMlV1StudyConfigMetricSpec[] $metrics
+         */
+        public function setMetrics($metrics)
+        {
+        }
+        /**
+         * @return GoogleCloudMlV1StudyConfigMetricSpec[]
+         */
+        public function getMetrics()
+        {
+        }
+        /**
+         * Required. The set of parameters to tune.
+         *
+         * @param GoogleCloudMlV1StudyConfigParameterSpec[] $parameters
+         */
+        public function setParameters($parameters)
+        {
+        }
+        /**
+         * @return GoogleCloudMlV1StudyConfigParameterSpec[]
+         */
+        public function getParameters()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::ALGORITHM_*
+     * Runtime class alias of \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1StudyConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAlgorithm()
-    {
-    }
-    /**
-     * Configuration for automated stopping of unpromising Trials.
-     *
-     * @param GoogleCloudMlV1AutomatedStoppingConfig $automatedStoppingConfig
-     */
-    public function setAutomatedStoppingConfig(GoogleCloudMlV1AutomatedStoppingConfig $automatedStoppingConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudMlV1AutomatedStoppingConfig
-     */
-    public function getAutomatedStoppingConfig()
-    {
-    }
-    /**
-     * Metric specs for the study.
-     *
-     * @param GoogleCloudMlV1StudyConfigMetricSpec[] $metrics
-     */
-    public function setMetrics($metrics)
-    {
-    }
-    /**
-     * @return GoogleCloudMlV1StudyConfigMetricSpec[]
-     */
-    public function getMetrics()
-    {
-    }
-    /**
-     * Required. The set of parameters to tune.
-     *
-     * @param GoogleCloudMlV1StudyConfigParameterSpec[] $parameters
-     */
-    public function setParameters($parameters)
-    {
-    }
-    /**
-     * @return GoogleCloudMlV1StudyConfigParameterSpec[]
-     */
-    public function getParameters()
+    class Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1StudyConfig extends \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1StudyConfig
     {
     }
 }

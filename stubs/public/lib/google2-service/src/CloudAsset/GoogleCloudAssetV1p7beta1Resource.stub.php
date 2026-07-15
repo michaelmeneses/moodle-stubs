@@ -21,180 +21,189 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class GoogleCloudAssetV1p7beta1Resource extends \Google\Model
-{
-    /**
-     * The content of the resource, in which some sensitive fields are removed and
-     * may not be present.
-     *
-     * @var array[]
-     */
-    public $data;
-    /**
-     * The URL of the discovery document containing the resource's JSON schema.
-     * Example: `https://www.googleapis.com/discovery/v1/apis/compute/v1/rest`
-     * This value is unspecified for resources that do not have an API based on a
-     * discovery document, such as Cloud Bigtable.
-     *
-     * @var string
-     */
-    public $discoveryDocumentUri;
-    /**
-     * The JSON schema name listed in the discovery document. Example: `Project`
-     * This value is unspecified for resources that do not have an API based on a
-     * discovery document, such as Cloud Bigtable.
-     *
-     * @var string
-     */
-    public $discoveryName;
-    /**
-     * The location of the resource in Google Cloud, such as its zone and region.
-     * For more information, see https://cloud.google.com/about/locations/.
-     *
-     * @var string
-     */
-    public $location;
-    /**
-     * The full name of the immediate parent of this resource. See [Resource Names
-     * ](https://cloud.google.com/apis/design/resource_names#full_resource_name)
-     * for more information. For Google Cloud assets, this value is the parent
-     * resource defined in the [IAM policy
-     * hierarchy](https://cloud.google.com/iam/docs/overview#policy_hierarchy).
-     * Example: `//cloudresourcemanager.googleapis.com/projects/my_project_123`
-     * For third-party assets, this field may be set differently.
-     *
-     * @var string
-     */
-    public $parent;
-    /**
-     * The REST URL for accessing the resource. An HTTP `GET` request using this
-     * URL returns the resource itself. Example:
-     * `https://cloudresourcemanager.googleapis.com/v1/projects/my-project-123`
-     * This value is unspecified for resources without a REST API.
-     *
-     * @var string
-     */
-    public $resourceUrl;
-    /**
-     * The API version. Example: `v1`
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * The content of the resource, in which some sensitive fields are removed and
-     * may not be present.
-     *
-     * @param array[] $data
-     */
-    public function setData($data)
+namespace Google\Service\CloudAsset {
+    class GoogleCloudAssetV1p7beta1Resource extends \Google\Model
     {
+        /**
+         * The content of the resource, in which some sensitive fields are removed and
+         * may not be present.
+         *
+         * @var array[]
+         */
+        public $data;
+        /**
+         * The URL of the discovery document containing the resource's JSON schema.
+         * Example: `https://www.googleapis.com/discovery/v1/apis/compute/v1/rest`
+         * This value is unspecified for resources that do not have an API based on a
+         * discovery document, such as Cloud Bigtable.
+         *
+         * @var string
+         */
+        public $discoveryDocumentUri;
+        /**
+         * The JSON schema name listed in the discovery document. Example: `Project`
+         * This value is unspecified for resources that do not have an API based on a
+         * discovery document, such as Cloud Bigtable.
+         *
+         * @var string
+         */
+        public $discoveryName;
+        /**
+         * The location of the resource in Google Cloud, such as its zone and region.
+         * For more information, see https://cloud.google.com/about/locations/.
+         *
+         * @var string
+         */
+        public $location;
+        /**
+         * The full name of the immediate parent of this resource. See [Resource Names
+         * ](https://cloud.google.com/apis/design/resource_names#full_resource_name)
+         * for more information. For Google Cloud assets, this value is the parent
+         * resource defined in the [IAM policy
+         * hierarchy](https://cloud.google.com/iam/docs/overview#policy_hierarchy).
+         * Example: `//cloudresourcemanager.googleapis.com/projects/my_project_123`
+         * For third-party assets, this field may be set differently.
+         *
+         * @var string
+         */
+        public $parent;
+        /**
+         * The REST URL for accessing the resource. An HTTP `GET` request using this
+         * URL returns the resource itself. Example:
+         * `https://cloudresourcemanager.googleapis.com/v1/projects/my-project-123`
+         * This value is unspecified for resources without a REST API.
+         *
+         * @var string
+         */
+        public $resourceUrl;
+        /**
+         * The API version. Example: `v1`
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * The content of the resource, in which some sensitive fields are removed and
+         * may not be present.
+         *
+         * @param array[] $data
+         */
+        public function setData($data)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getData()
+        {
+        }
+        /**
+         * The URL of the discovery document containing the resource's JSON schema.
+         * Example: `https://www.googleapis.com/discovery/v1/apis/compute/v1/rest`
+         * This value is unspecified for resources that do not have an API based on a
+         * discovery document, such as Cloud Bigtable.
+         *
+         * @param string $discoveryDocumentUri
+         */
+        public function setDiscoveryDocumentUri($discoveryDocumentUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDiscoveryDocumentUri()
+        {
+        }
+        /**
+         * The JSON schema name listed in the discovery document. Example: `Project`
+         * This value is unspecified for resources that do not have an API based on a
+         * discovery document, such as Cloud Bigtable.
+         *
+         * @param string $discoveryName
+         */
+        public function setDiscoveryName($discoveryName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDiscoveryName()
+        {
+        }
+        /**
+         * The location of the resource in Google Cloud, such as its zone and region.
+         * For more information, see https://cloud.google.com/about/locations/.
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * The full name of the immediate parent of this resource. See [Resource Names
+         * ](https://cloud.google.com/apis/design/resource_names#full_resource_name)
+         * for more information. For Google Cloud assets, this value is the parent
+         * resource defined in the [IAM policy
+         * hierarchy](https://cloud.google.com/iam/docs/overview#policy_hierarchy).
+         * Example: `//cloudresourcemanager.googleapis.com/projects/my_project_123`
+         * For third-party assets, this field may be set differently.
+         *
+         * @param string $parent
+         */
+        public function setParent($parent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParent()
+        {
+        }
+        /**
+         * The REST URL for accessing the resource. An HTTP `GET` request using this
+         * URL returns the resource itself. Example:
+         * `https://cloudresourcemanager.googleapis.com/v1/projects/my-project-123`
+         * This value is unspecified for resources without a REST API.
+         *
+         * @param string $resourceUrl
+         */
+        public function setResourceUrl($resourceUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceUrl()
+        {
+        }
+        /**
+         * The API version. Example: `v1`
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\CloudAsset\GoogleCloudAssetV1p7beta1Resource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getData()
-    {
-    }
-    /**
-     * The URL of the discovery document containing the resource's JSON schema.
-     * Example: `https://www.googleapis.com/discovery/v1/apis/compute/v1/rest`
-     * This value is unspecified for resources that do not have an API based on a
-     * discovery document, such as Cloud Bigtable.
-     *
-     * @param string $discoveryDocumentUri
-     */
-    public function setDiscoveryDocumentUri($discoveryDocumentUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDiscoveryDocumentUri()
-    {
-    }
-    /**
-     * The JSON schema name listed in the discovery document. Example: `Project`
-     * This value is unspecified for resources that do not have an API based on a
-     * discovery document, such as Cloud Bigtable.
-     *
-     * @param string $discoveryName
-     */
-    public function setDiscoveryName($discoveryName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDiscoveryName()
-    {
-    }
-    /**
-     * The location of the resource in Google Cloud, such as its zone and region.
-     * For more information, see https://cloud.google.com/about/locations/.
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocation()
-    {
-    }
-    /**
-     * The full name of the immediate parent of this resource. See [Resource Names
-     * ](https://cloud.google.com/apis/design/resource_names#full_resource_name)
-     * for more information. For Google Cloud assets, this value is the parent
-     * resource defined in the [IAM policy
-     * hierarchy](https://cloud.google.com/iam/docs/overview#policy_hierarchy).
-     * Example: `//cloudresourcemanager.googleapis.com/projects/my_project_123`
-     * For third-party assets, this field may be set differently.
-     *
-     * @param string $parent
-     */
-    public function setParent($parent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParent()
-    {
-    }
-    /**
-     * The REST URL for accessing the resource. An HTTP `GET` request using this
-     * URL returns the resource itself. Example:
-     * `https://cloudresourcemanager.googleapis.com/v1/projects/my-project-123`
-     * This value is unspecified for resources without a REST API.
-     *
-     * @param string $resourceUrl
-     */
-    public function setResourceUrl($resourceUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceUrl()
-    {
-    }
-    /**
-     * The API version. Example: `v1`
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_CloudAsset_GoogleCloudAssetV1p7beta1Resource extends \Google\Service\CloudAsset\GoogleCloudAssetV1p7beta1Resource
     {
     }
 }

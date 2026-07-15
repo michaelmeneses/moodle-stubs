@@ -21,130 +21,139 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class CompatibleFields extends \Google\Model
-{
-    protected $crossDimensionReachReportCompatibleFieldsType = CrossDimensionReachReportCompatibleFields::class;
-    protected $crossDimensionReachReportCompatibleFieldsDataType = '';
-    protected $crossMediaReachReportCompatibleFieldsType = CrossMediaReachReportCompatibleFields::class;
-    protected $crossMediaReachReportCompatibleFieldsDataType = '';
-    protected $floodlightReportCompatibleFieldsType = FloodlightReportCompatibleFields::class;
-    protected $floodlightReportCompatibleFieldsDataType = '';
-    /**
-     * The kind of resource this is, in this case dfareporting#compatibleFields.
-     *
-     * @var string
-     */
-    public $kind;
-    protected $pathToConversionReportCompatibleFieldsType = PathToConversionReportCompatibleFields::class;
-    protected $pathToConversionReportCompatibleFieldsDataType = '';
-    protected $reachReportCompatibleFieldsType = ReachReportCompatibleFields::class;
-    protected $reachReportCompatibleFieldsDataType = '';
-    protected $reportCompatibleFieldsType = ReportCompatibleFields::class;
-    protected $reportCompatibleFieldsDataType = '';
-    /**
-     * Contains items that are compatible to be selected for a report of type
-     * "CROSS_DIMENSION_REACH".
-     *
-     * @param CrossDimensionReachReportCompatibleFields $crossDimensionReachReportCompatibleFields
-     */
-    public function setCrossDimensionReachReportCompatibleFields(CrossDimensionReachReportCompatibleFields $crossDimensionReachReportCompatibleFields)
+namespace Google\Service\Dfareporting {
+    class CompatibleFields extends \Google\Model
     {
+        protected $crossDimensionReachReportCompatibleFieldsType = CrossDimensionReachReportCompatibleFields::class;
+        protected $crossDimensionReachReportCompatibleFieldsDataType = '';
+        protected $crossMediaReachReportCompatibleFieldsType = CrossMediaReachReportCompatibleFields::class;
+        protected $crossMediaReachReportCompatibleFieldsDataType = '';
+        protected $floodlightReportCompatibleFieldsType = FloodlightReportCompatibleFields::class;
+        protected $floodlightReportCompatibleFieldsDataType = '';
+        /**
+         * The kind of resource this is, in this case dfareporting#compatibleFields.
+         *
+         * @var string
+         */
+        public $kind;
+        protected $pathToConversionReportCompatibleFieldsType = PathToConversionReportCompatibleFields::class;
+        protected $pathToConversionReportCompatibleFieldsDataType = '';
+        protected $reachReportCompatibleFieldsType = ReachReportCompatibleFields::class;
+        protected $reachReportCompatibleFieldsDataType = '';
+        protected $reportCompatibleFieldsType = ReportCompatibleFields::class;
+        protected $reportCompatibleFieldsDataType = '';
+        /**
+         * Contains items that are compatible to be selected for a report of type
+         * "CROSS_DIMENSION_REACH".
+         *
+         * @param CrossDimensionReachReportCompatibleFields $crossDimensionReachReportCompatibleFields
+         */
+        public function setCrossDimensionReachReportCompatibleFields(CrossDimensionReachReportCompatibleFields $crossDimensionReachReportCompatibleFields)
+        {
+        }
+        /**
+         * @return CrossDimensionReachReportCompatibleFields
+         */
+        public function getCrossDimensionReachReportCompatibleFields()
+        {
+        }
+        /**
+         * Contains items that are compatible to be selected for a report of type
+         * "CROSS_MEDIA_REACH".
+         *
+         * @param CrossMediaReachReportCompatibleFields $crossMediaReachReportCompatibleFields
+         */
+        public function setCrossMediaReachReportCompatibleFields(CrossMediaReachReportCompatibleFields $crossMediaReachReportCompatibleFields)
+        {
+        }
+        /**
+         * @return CrossMediaReachReportCompatibleFields
+         */
+        public function getCrossMediaReachReportCompatibleFields()
+        {
+        }
+        /**
+         * Contains items that are compatible to be selected for a report of type
+         * "FLOODLIGHT".
+         *
+         * @param FloodlightReportCompatibleFields $floodlightReportCompatibleFields
+         */
+        public function setFloodlightReportCompatibleFields(FloodlightReportCompatibleFields $floodlightReportCompatibleFields)
+        {
+        }
+        /**
+         * @return FloodlightReportCompatibleFields
+         */
+        public function getFloodlightReportCompatibleFields()
+        {
+        }
+        /**
+         * The kind of resource this is, in this case dfareporting#compatibleFields.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Contains items that are compatible to be selected for a report of type
+         * "PATH_TO_CONVERSION".
+         *
+         * @param PathToConversionReportCompatibleFields $pathToConversionReportCompatibleFields
+         */
+        public function setPathToConversionReportCompatibleFields(PathToConversionReportCompatibleFields $pathToConversionReportCompatibleFields)
+        {
+        }
+        /**
+         * @return PathToConversionReportCompatibleFields
+         */
+        public function getPathToConversionReportCompatibleFields()
+        {
+        }
+        /**
+         * Contains items that are compatible to be selected for a report of type
+         * "REACH".
+         *
+         * @param ReachReportCompatibleFields $reachReportCompatibleFields
+         */
+        public function setReachReportCompatibleFields(ReachReportCompatibleFields $reachReportCompatibleFields)
+        {
+        }
+        /**
+         * @return ReachReportCompatibleFields
+         */
+        public function getReachReportCompatibleFields()
+        {
+        }
+        /**
+         * Contains items that are compatible to be selected for a report of type
+         * "STANDARD".
+         *
+         * @param ReportCompatibleFields $reportCompatibleFields
+         */
+        public function setReportCompatibleFields(ReportCompatibleFields $reportCompatibleFields)
+        {
+        }
+        /**
+         * @return ReportCompatibleFields
+         */
+        public function getReportCompatibleFields()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CrossDimensionReachReportCompatibleFields
+     * Runtime class alias of \Google\Service\Dfareporting\CompatibleFields registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCrossDimensionReachReportCompatibleFields()
-    {
-    }
-    /**
-     * Contains items that are compatible to be selected for a report of type
-     * "CROSS_MEDIA_REACH".
-     *
-     * @param CrossMediaReachReportCompatibleFields $crossMediaReachReportCompatibleFields
-     */
-    public function setCrossMediaReachReportCompatibleFields(CrossMediaReachReportCompatibleFields $crossMediaReachReportCompatibleFields)
-    {
-    }
-    /**
-     * @return CrossMediaReachReportCompatibleFields
-     */
-    public function getCrossMediaReachReportCompatibleFields()
-    {
-    }
-    /**
-     * Contains items that are compatible to be selected for a report of type
-     * "FLOODLIGHT".
-     *
-     * @param FloodlightReportCompatibleFields $floodlightReportCompatibleFields
-     */
-    public function setFloodlightReportCompatibleFields(FloodlightReportCompatibleFields $floodlightReportCompatibleFields)
-    {
-    }
-    /**
-     * @return FloodlightReportCompatibleFields
-     */
-    public function getFloodlightReportCompatibleFields()
-    {
-    }
-    /**
-     * The kind of resource this is, in this case dfareporting#compatibleFields.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Contains items that are compatible to be selected for a report of type
-     * "PATH_TO_CONVERSION".
-     *
-     * @param PathToConversionReportCompatibleFields $pathToConversionReportCompatibleFields
-     */
-    public function setPathToConversionReportCompatibleFields(PathToConversionReportCompatibleFields $pathToConversionReportCompatibleFields)
-    {
-    }
-    /**
-     * @return PathToConversionReportCompatibleFields
-     */
-    public function getPathToConversionReportCompatibleFields()
-    {
-    }
-    /**
-     * Contains items that are compatible to be selected for a report of type
-     * "REACH".
-     *
-     * @param ReachReportCompatibleFields $reachReportCompatibleFields
-     */
-    public function setReachReportCompatibleFields(ReachReportCompatibleFields $reachReportCompatibleFields)
-    {
-    }
-    /**
-     * @return ReachReportCompatibleFields
-     */
-    public function getReachReportCompatibleFields()
-    {
-    }
-    /**
-     * Contains items that are compatible to be selected for a report of type
-     * "STANDARD".
-     *
-     * @param ReportCompatibleFields $reportCompatibleFields
-     */
-    public function setReportCompatibleFields(ReportCompatibleFields $reportCompatibleFields)
-    {
-    }
-    /**
-     * @return ReportCompatibleFields
-     */
-    public function getReportCompatibleFields()
+    class Google_Service_Dfareporting_CompatibleFields extends \Google\Service\Dfareporting\CompatibleFields
     {
     }
 }

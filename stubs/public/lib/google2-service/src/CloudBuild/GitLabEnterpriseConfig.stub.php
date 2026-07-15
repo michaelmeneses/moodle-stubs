@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class GitLabEnterpriseConfig extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $hostUri;
-    protected $serviceDirectoryConfigType = ServiceDirectoryConfig::class;
-    protected $serviceDirectoryConfigDataType = '';
-    /**
-     * @var string
-     */
-    public $sslCa;
-    /**
-     * @param string
-     */
-    public function setHostUri($hostUri)
+namespace Google\Service\CloudBuild {
+    class GitLabEnterpriseConfig extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $hostUri;
+        protected $serviceDirectoryConfigType = ServiceDirectoryConfig::class;
+        protected $serviceDirectoryConfigDataType = '';
+        /**
+         * @var string
+         */
+        public $sslCa;
+        /**
+         * @param string
+         */
+        public function setHostUri($hostUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHostUri()
+        {
+        }
+        /**
+         * @param ServiceDirectoryConfig
+         */
+        public function setServiceDirectoryConfig(ServiceDirectoryConfig $serviceDirectoryConfig)
+        {
+        }
+        /**
+         * @return ServiceDirectoryConfig
+         */
+        public function getServiceDirectoryConfig()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSslCa($sslCa)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSslCa()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudBuild\GitLabEnterpriseConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHostUri()
-    {
-    }
-    /**
-     * @param ServiceDirectoryConfig
-     */
-    public function setServiceDirectoryConfig(ServiceDirectoryConfig $serviceDirectoryConfig)
-    {
-    }
-    /**
-     * @return ServiceDirectoryConfig
-     */
-    public function getServiceDirectoryConfig()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSslCa($sslCa)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSslCa()
+    class Google_Service_CloudBuild_GitLabEnterpriseConfig extends \Google\Service\CloudBuild\GitLabEnterpriseConfig
     {
     }
 }

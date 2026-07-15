@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIdentity;
-
-class MembershipAdjacencyList extends \Google\Collection
-{
-    protected $collection_key = 'edges';
-    protected $edgesType = Membership::class;
-    protected $edgesDataType = 'array';
-    /**
-     * Resource name of the group that the members belong to.
-     *
-     * @var string
-     */
-    public $group;
-    /**
-     * Each edge contains information about the member that belongs to this group.
-     * Note: Fields returned here will help identify the specific Membership
-     * resource (e.g `name`, `preferred_member_key` and `role`), but may not be a
-     * comprehensive list of all fields.
-     *
-     * @param Membership[] $edges
-     */
-    public function setEdges($edges)
+namespace Google\Service\CloudIdentity {
+    class MembershipAdjacencyList extends \Google\Collection
     {
+        protected $collection_key = 'edges';
+        protected $edgesType = Membership::class;
+        protected $edgesDataType = 'array';
+        /**
+         * Resource name of the group that the members belong to.
+         *
+         * @var string
+         */
+        public $group;
+        /**
+         * Each edge contains information about the member that belongs to this group.
+         * Note: Fields returned here will help identify the specific Membership
+         * resource (e.g `name`, `preferred_member_key` and `role`), but may not be a
+         * comprehensive list of all fields.
+         *
+         * @param Membership[] $edges
+         */
+        public function setEdges($edges)
+        {
+        }
+        /**
+         * @return Membership[]
+         */
+        public function getEdges()
+        {
+        }
+        /**
+         * Resource name of the group that the members belong to.
+         *
+         * @param string $group
+         */
+        public function setGroup($group)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGroup()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Membership[]
+     * Runtime class alias of \Google\Service\CloudIdentity\MembershipAdjacencyList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEdges()
-    {
-    }
-    /**
-     * Resource name of the group that the members belong to.
-     *
-     * @param string $group
-     */
-    public function setGroup($group)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGroup()
+    class Google_Service_CloudIdentity_MembershipAdjacencyList extends \Google\Service\CloudIdentity\MembershipAdjacencyList
     {
     }
 }

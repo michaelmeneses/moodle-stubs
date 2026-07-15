@@ -21,164 +21,173 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class BandingProperties extends \Google\Model
-{
-    protected $firstBandColorType = Color::class;
-    protected $firstBandColorDataType = '';
-    protected $firstBandColorStyleType = ColorStyle::class;
-    protected $firstBandColorStyleDataType = '';
-    protected $footerColorType = Color::class;
-    protected $footerColorDataType = '';
-    protected $footerColorStyleType = ColorStyle::class;
-    protected $footerColorStyleDataType = '';
-    protected $headerColorType = Color::class;
-    protected $headerColorDataType = '';
-    protected $headerColorStyleType = ColorStyle::class;
-    protected $headerColorStyleDataType = '';
-    protected $secondBandColorType = Color::class;
-    protected $secondBandColorDataType = '';
-    protected $secondBandColorStyleType = ColorStyle::class;
-    protected $secondBandColorStyleDataType = '';
-    /**
-     * The first color that is alternating. (Required) Deprecated: Use
-     * first_band_color_style.
-     *
-     * @deprecated
-     * @param Color $firstBandColor
-     */
-    public function setFirstBandColor(Color $firstBandColor)
+namespace Google\Service\Sheets {
+    class BandingProperties extends \Google\Model
     {
+        protected $firstBandColorType = Color::class;
+        protected $firstBandColorDataType = '';
+        protected $firstBandColorStyleType = ColorStyle::class;
+        protected $firstBandColorStyleDataType = '';
+        protected $footerColorType = Color::class;
+        protected $footerColorDataType = '';
+        protected $footerColorStyleType = ColorStyle::class;
+        protected $footerColorStyleDataType = '';
+        protected $headerColorType = Color::class;
+        protected $headerColorDataType = '';
+        protected $headerColorStyleType = ColorStyle::class;
+        protected $headerColorStyleDataType = '';
+        protected $secondBandColorType = Color::class;
+        protected $secondBandColorDataType = '';
+        protected $secondBandColorStyleType = ColorStyle::class;
+        protected $secondBandColorStyleDataType = '';
+        /**
+         * The first color that is alternating. (Required) Deprecated: Use
+         * first_band_color_style.
+         *
+         * @deprecated
+         * @param Color $firstBandColor
+         */
+        public function setFirstBandColor(Color $firstBandColor)
+        {
+        }
+        /**
+         * @deprecated
+         * @return Color
+         */
+        public function getFirstBandColor()
+        {
+        }
+        /**
+         * The first color that is alternating. (Required) If first_band_color is also
+         * set, this field takes precedence.
+         *
+         * @param ColorStyle $firstBandColorStyle
+         */
+        public function setFirstBandColorStyle(ColorStyle $firstBandColorStyle)
+        {
+        }
+        /**
+         * @return ColorStyle
+         */
+        public function getFirstBandColorStyle()
+        {
+        }
+        /**
+         * The color of the last row or column. If this field is not set, the last row
+         * or column is filled with either first_band_color or second_band_color,
+         * depending on the color of the previous row or column. Deprecated: Use
+         * footer_color_style.
+         *
+         * @deprecated
+         * @param Color $footerColor
+         */
+        public function setFooterColor(Color $footerColor)
+        {
+        }
+        /**
+         * @deprecated
+         * @return Color
+         */
+        public function getFooterColor()
+        {
+        }
+        /**
+         * The color of the last row or column. If this field is not set, the last row
+         * or column is filled with either first_band_color or second_band_color,
+         * depending on the color of the previous row or column. If footer_color is
+         * also set, this field takes precedence.
+         *
+         * @param ColorStyle $footerColorStyle
+         */
+        public function setFooterColorStyle(ColorStyle $footerColorStyle)
+        {
+        }
+        /**
+         * @return ColorStyle
+         */
+        public function getFooterColorStyle()
+        {
+        }
+        /**
+         * The color of the first row or column. If this field is set, the first row
+         * or column is filled with this color and the colors alternate between
+         * first_band_color and second_band_color starting from the second row or
+         * column. Otherwise, the first row or column is filled with first_band_color
+         * and the colors proceed to alternate as they normally would. Deprecated: Use
+         * header_color_style.
+         *
+         * @deprecated
+         * @param Color $headerColor
+         */
+        public function setHeaderColor(Color $headerColor)
+        {
+        }
+        /**
+         * @deprecated
+         * @return Color
+         */
+        public function getHeaderColor()
+        {
+        }
+        /**
+         * The color of the first row or column. If this field is set, the first row
+         * or column is filled with this color and the colors alternate between
+         * first_band_color and second_band_color starting from the second row or
+         * column. Otherwise, the first row or column is filled with first_band_color
+         * and the colors proceed to alternate as they normally would. If header_color
+         * is also set, this field takes precedence.
+         *
+         * @param ColorStyle $headerColorStyle
+         */
+        public function setHeaderColorStyle(ColorStyle $headerColorStyle)
+        {
+        }
+        /**
+         * @return ColorStyle
+         */
+        public function getHeaderColorStyle()
+        {
+        }
+        /**
+         * The second color that is alternating. (Required) Deprecated: Use
+         * second_band_color_style.
+         *
+         * @deprecated
+         * @param Color $secondBandColor
+         */
+        public function setSecondBandColor(Color $secondBandColor)
+        {
+        }
+        /**
+         * @deprecated
+         * @return Color
+         */
+        public function getSecondBandColor()
+        {
+        }
+        /**
+         * The second color that is alternating. (Required) If second_band_color is
+         * also set, this field takes precedence.
+         *
+         * @param ColorStyle $secondBandColorStyle
+         */
+        public function setSecondBandColorStyle(ColorStyle $secondBandColorStyle)
+        {
+        }
+        /**
+         * @return ColorStyle
+         */
+        public function getSecondBandColorStyle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return Color
+     * Runtime class alias of \Google\Service\Sheets\BandingProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFirstBandColor()
-    {
-    }
-    /**
-     * The first color that is alternating. (Required) If first_band_color is also
-     * set, this field takes precedence.
-     *
-     * @param ColorStyle $firstBandColorStyle
-     */
-    public function setFirstBandColorStyle(ColorStyle $firstBandColorStyle)
-    {
-    }
-    /**
-     * @return ColorStyle
-     */
-    public function getFirstBandColorStyle()
-    {
-    }
-    /**
-     * The color of the last row or column. If this field is not set, the last row
-     * or column is filled with either first_band_color or second_band_color,
-     * depending on the color of the previous row or column. Deprecated: Use
-     * footer_color_style.
-     *
-     * @deprecated
-     * @param Color $footerColor
-     */
-    public function setFooterColor(Color $footerColor)
-    {
-    }
-    /**
-     * @deprecated
-     * @return Color
-     */
-    public function getFooterColor()
-    {
-    }
-    /**
-     * The color of the last row or column. If this field is not set, the last row
-     * or column is filled with either first_band_color or second_band_color,
-     * depending on the color of the previous row or column. If footer_color is
-     * also set, this field takes precedence.
-     *
-     * @param ColorStyle $footerColorStyle
-     */
-    public function setFooterColorStyle(ColorStyle $footerColorStyle)
-    {
-    }
-    /**
-     * @return ColorStyle
-     */
-    public function getFooterColorStyle()
-    {
-    }
-    /**
-     * The color of the first row or column. If this field is set, the first row
-     * or column is filled with this color and the colors alternate between
-     * first_band_color and second_band_color starting from the second row or
-     * column. Otherwise, the first row or column is filled with first_band_color
-     * and the colors proceed to alternate as they normally would. Deprecated: Use
-     * header_color_style.
-     *
-     * @deprecated
-     * @param Color $headerColor
-     */
-    public function setHeaderColor(Color $headerColor)
-    {
-    }
-    /**
-     * @deprecated
-     * @return Color
-     */
-    public function getHeaderColor()
-    {
-    }
-    /**
-     * The color of the first row or column. If this field is set, the first row
-     * or column is filled with this color and the colors alternate between
-     * first_band_color and second_band_color starting from the second row or
-     * column. Otherwise, the first row or column is filled with first_band_color
-     * and the colors proceed to alternate as they normally would. If header_color
-     * is also set, this field takes precedence.
-     *
-     * @param ColorStyle $headerColorStyle
-     */
-    public function setHeaderColorStyle(ColorStyle $headerColorStyle)
-    {
-    }
-    /**
-     * @return ColorStyle
-     */
-    public function getHeaderColorStyle()
-    {
-    }
-    /**
-     * The second color that is alternating. (Required) Deprecated: Use
-     * second_band_color_style.
-     *
-     * @deprecated
-     * @param Color $secondBandColor
-     */
-    public function setSecondBandColor(Color $secondBandColor)
-    {
-    }
-    /**
-     * @deprecated
-     * @return Color
-     */
-    public function getSecondBandColor()
-    {
-    }
-    /**
-     * The second color that is alternating. (Required) If second_band_color is
-     * also set, this field takes precedence.
-     *
-     * @param ColorStyle $secondBandColorStyle
-     */
-    public function setSecondBandColorStyle(ColorStyle $secondBandColorStyle)
-    {
-    }
-    /**
-     * @return ColorStyle
-     */
-    public function getSecondBandColorStyle()
+    class Google_Service_Sheets_BandingProperties extends \Google\Service\Sheets\BandingProperties
     {
     }
 }

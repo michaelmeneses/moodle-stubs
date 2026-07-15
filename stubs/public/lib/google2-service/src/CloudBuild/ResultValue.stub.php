@@ -21,107 +21,116 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class ResultValue extends \Google\Collection
-{
-    /**
-     * Default enum type; should not be used.
-     */
-    public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
-    /**
-     * Default
-     */
-    public const TYPE_STRING = 'STRING';
-    /**
-     * Array type
-     */
-    public const TYPE_ARRAY = 'ARRAY';
-    /**
-     * Object type
-     */
-    public const TYPE_OBJECT = 'OBJECT';
-    protected $collection_key = 'arrayVal';
-    /**
-     * Value of the result if type is array.
-     *
-     * @var string[]
-     */
-    public $arrayVal;
-    /**
-     * Value of the result if type is object.
-     *
-     * @var string[]
-     */
-    public $objectVal;
-    /**
-     * Value of the result if type is string.
-     *
-     * @var string
-     */
-    public $stringVal;
-    /**
-     * Output only. The type of data that the result holds.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Value of the result if type is array.
-     *
-     * @param string[] $arrayVal
-     */
-    public function setArrayVal($arrayVal)
+namespace Google\Service\CloudBuild {
+    class ResultValue extends \Google\Collection
     {
+        /**
+         * Default enum type; should not be used.
+         */
+        public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
+        /**
+         * Default
+         */
+        public const TYPE_STRING = 'STRING';
+        /**
+         * Array type
+         */
+        public const TYPE_ARRAY = 'ARRAY';
+        /**
+         * Object type
+         */
+        public const TYPE_OBJECT = 'OBJECT';
+        protected $collection_key = 'arrayVal';
+        /**
+         * Value of the result if type is array.
+         *
+         * @var string[]
+         */
+        public $arrayVal;
+        /**
+         * Value of the result if type is object.
+         *
+         * @var string[]
+         */
+        public $objectVal;
+        /**
+         * Value of the result if type is string.
+         *
+         * @var string
+         */
+        public $stringVal;
+        /**
+         * Output only. The type of data that the result holds.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Value of the result if type is array.
+         *
+         * @param string[] $arrayVal
+         */
+        public function setArrayVal($arrayVal)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getArrayVal()
+        {
+        }
+        /**
+         * Value of the result if type is object.
+         *
+         * @param string[] $objectVal
+         */
+        public function setObjectVal($objectVal)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getObjectVal()
+        {
+        }
+        /**
+         * Value of the result if type is string.
+         *
+         * @param string $stringVal
+         */
+        public function setStringVal($stringVal)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStringVal()
+        {
+        }
+        /**
+         * Output only. The type of data that the result holds.
+         *
+         * Accepted values: TYPE_UNSPECIFIED, STRING, ARRAY, OBJECT
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudBuild\ResultValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArrayVal()
-    {
-    }
-    /**
-     * Value of the result if type is object.
-     *
-     * @param string[] $objectVal
-     */
-    public function setObjectVal($objectVal)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getObjectVal()
-    {
-    }
-    /**
-     * Value of the result if type is string.
-     *
-     * @param string $stringVal
-     */
-    public function setStringVal($stringVal)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStringVal()
-    {
-    }
-    /**
-     * Output only. The type of data that the result holds.
-     *
-     * Accepted values: TYPE_UNSPECIFIED, STRING, ARRAY, OBJECT
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_CloudBuild_ResultValue extends \Google\Service\CloudBuild\ResultValue
     {
     }
 }

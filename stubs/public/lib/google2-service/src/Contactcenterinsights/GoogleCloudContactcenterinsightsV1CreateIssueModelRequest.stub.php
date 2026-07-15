@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1CreateIssueModelRequest extends \Google\Model
-{
-    protected $issueModelType = GoogleCloudContactcenterinsightsV1IssueModel::class;
-    protected $issueModelDataType = '';
-    /**
-     * Required. The parent resource of the issue model.
-     *
-     * @var string
-     */
-    public $parent;
-    /**
-     * Required. The issue model to create.
-     *
-     * @param GoogleCloudContactcenterinsightsV1IssueModel $issueModel
-     */
-    public function setIssueModel(GoogleCloudContactcenterinsightsV1IssueModel $issueModel)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1CreateIssueModelRequest extends \Google\Model
     {
+        protected $issueModelType = GoogleCloudContactcenterinsightsV1IssueModel::class;
+        protected $issueModelDataType = '';
+        /**
+         * Required. The parent resource of the issue model.
+         *
+         * @var string
+         */
+        public $parent;
+        /**
+         * Required. The issue model to create.
+         *
+         * @param GoogleCloudContactcenterinsightsV1IssueModel $issueModel
+         */
+        public function setIssueModel(GoogleCloudContactcenterinsightsV1IssueModel $issueModel)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1IssueModel
+         */
+        public function getIssueModel()
+        {
+        }
+        /**
+         * Required. The parent resource of the issue model.
+         *
+         * @param string $parent
+         */
+        public function setParent($parent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudContactcenterinsightsV1IssueModel
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1CreateIssueModelRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIssueModel()
-    {
-    }
-    /**
-     * Required. The parent resource of the issue model.
-     *
-     * @param string $parent
-     */
-    public function setParent($parent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParent()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1CreateIssueModelRequest extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1CreateIssueModelRequest
     {
     }
 }

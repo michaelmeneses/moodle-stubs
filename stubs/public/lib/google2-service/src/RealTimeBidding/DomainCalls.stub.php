@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RealTimeBidding;
-
-class DomainCalls extends \Google\Model
-{
-    /**
-     * The domain name.
-     *
-     * @var string
-     */
-    public $domain;
-    /**
-     * Number of HTTP calls made to the domain.
-     *
-     * @var int
-     */
-    public $httpCallCount;
-    /**
-     * The domain name.
-     *
-     * @param string $domain
-     */
-    public function setDomain($domain)
+namespace Google\Service\RealTimeBidding {
+    class DomainCalls extends \Google\Model
     {
+        /**
+         * The domain name.
+         *
+         * @var string
+         */
+        public $domain;
+        /**
+         * Number of HTTP calls made to the domain.
+         *
+         * @var int
+         */
+        public $httpCallCount;
+        /**
+         * The domain name.
+         *
+         * @param string $domain
+         */
+        public function setDomain($domain)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDomain()
+        {
+        }
+        /**
+         * Number of HTTP calls made to the domain.
+         *
+         * @param int $httpCallCount
+         */
+        public function setHttpCallCount($httpCallCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getHttpCallCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\RealTimeBidding\DomainCalls registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDomain()
-    {
-    }
-    /**
-     * Number of HTTP calls made to the domain.
-     *
-     * @param int $httpCallCount
-     */
-    public function setHttpCallCount($httpCallCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getHttpCallCount()
+    class Google_Service_RealTimeBidding_DomainCalls extends \Google\Service\RealTimeBidding\DomainCalls
     {
     }
 }

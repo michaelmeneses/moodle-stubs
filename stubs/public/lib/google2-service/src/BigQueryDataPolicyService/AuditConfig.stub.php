@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigQueryDataPolicyService;
-
-class AuditConfig extends \Google\Collection
-{
-    protected $collection_key = 'auditLogConfigs';
-    protected $auditLogConfigsType = AuditLogConfig::class;
-    protected $auditLogConfigsDataType = 'array';
-    /**
-     * Specifies a service that will be enabled for audit logging. For example,
-     * `storage.googleapis.com`, `cloudsql.googleapis.com`. `allServices` is a
-     * special value that covers all services.
-     *
-     * @var string
-     */
-    public $service;
-    /**
-     * The configuration for logging of each type of permission.
-     *
-     * @param AuditLogConfig[] $auditLogConfigs
-     */
-    public function setAuditLogConfigs($auditLogConfigs)
+namespace Google\Service\BigQueryDataPolicyService {
+    class AuditConfig extends \Google\Collection
     {
+        protected $collection_key = 'auditLogConfigs';
+        protected $auditLogConfigsType = AuditLogConfig::class;
+        protected $auditLogConfigsDataType = 'array';
+        /**
+         * Specifies a service that will be enabled for audit logging. For example,
+         * `storage.googleapis.com`, `cloudsql.googleapis.com`. `allServices` is a
+         * special value that covers all services.
+         *
+         * @var string
+         */
+        public $service;
+        /**
+         * The configuration for logging of each type of permission.
+         *
+         * @param AuditLogConfig[] $auditLogConfigs
+         */
+        public function setAuditLogConfigs($auditLogConfigs)
+        {
+        }
+        /**
+         * @return AuditLogConfig[]
+         */
+        public function getAuditLogConfigs()
+        {
+        }
+        /**
+         * Specifies a service that will be enabled for audit logging. For example,
+         * `storage.googleapis.com`, `cloudsql.googleapis.com`. `allServices` is a
+         * special value that covers all services.
+         *
+         * @param string $service
+         */
+        public function setService($service)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getService()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AuditLogConfig[]
+     * Runtime class alias of \Google\Service\BigQueryDataPolicyService\AuditConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuditLogConfigs()
-    {
-    }
-    /**
-     * Specifies a service that will be enabled for audit logging. For example,
-     * `storage.googleapis.com`, `cloudsql.googleapis.com`. `allServices` is a
-     * special value that covers all services.
-     *
-     * @param string $service
-     */
-    public function setService($service)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getService()
+    class Google_Service_BigQueryDataPolicyService_AuditConfig extends \Google\Service\BigQueryDataPolicyService\AuditConfig
     {
     }
 }

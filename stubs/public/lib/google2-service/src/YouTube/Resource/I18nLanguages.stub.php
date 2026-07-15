@@ -21,32 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube\Resource;
-
-/**
- * The "i18nLanguages" collection of methods.
- * Typical usage is:
- *  <code>
- *   $youtubeService = new Google\Service\YouTube(...);
- *   $i18nLanguages = $youtubeService->i18nLanguages;
- *  </code>
- */
-class I18nLanguages extends \Google\Service\Resource
-{
+namespace Google\Service\YouTube\Resource {
+    use Google\Service\YouTube\I18nLanguageListResponse;
     /**
-     * Retrieves a list of resources, possibly filtered.
-     * (i18nLanguages.listI18nLanguages)
-     *
-     * @param string|array $part The *part* parameter specifies the i18nLanguage
-     * resource properties that the API response will include. Set the parameter
-     * value to snippet.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string hl
-     * @return I18nLanguageListResponse
-     * @throws \Google\Service\Exception
+     * The "i18nLanguages" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $youtubeService = new Google\Service\YouTube(...);
+     *   $i18nLanguages = $youtubeService->i18nLanguages;
+     *  </code>
      */
-    public function listI18nLanguages($part, $optParams = [])
+    class I18nLanguages extends \Google\Service\Resource
+    {
+        /**
+         * Retrieves a list of resources, possibly filtered.
+         * (i18nLanguages.listI18nLanguages)
+         *
+         * @param string|array $part The *part* parameter specifies the i18nLanguage
+         * resource properties that the API response will include. Set the parameter
+         * value to snippet.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string hl
+         * @return I18nLanguageListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listI18nLanguages($part, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\YouTube\Resource\I18nLanguages registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_YouTube_Resource_I18nLanguages extends \Google\Service\YouTube\Resource\I18nLanguages
     {
     }
 }

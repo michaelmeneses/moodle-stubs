@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1alpha1AgentCoachingSuggestionSampleResponse extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $responseText;
-    /**
-     * @param string
-     */
-    public function setResponseText($responseText)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1alpha1AgentCoachingSuggestionSampleResponse extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $responseText;
+        /**
+         * @param string
+         */
+        public function setResponseText($responseText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResponseText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1AgentCoachingSuggestionSampleResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResponseText()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1alpha1AgentCoachingSuggestionSampleResponse extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1AgentCoachingSuggestionSampleResponse
     {
     }
 }

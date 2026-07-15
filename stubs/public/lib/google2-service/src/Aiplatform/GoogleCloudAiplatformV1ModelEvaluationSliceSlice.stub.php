@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ModelEvaluationSliceSlice extends \Google\Model
-{
-    /**
-     * Output only. The dimension of the slice. Well-known dimensions are: *
-     * `annotationSpec`: This slice is on the test data that has either ground
-     * truth or prediction with AnnotationSpec.display_name equals to value. *
-     * `slice`: This slice is a user customized slice defined by its SliceSpec.
-     *
-     * @var string
-     */
-    public $dimension;
-    protected $sliceSpecType = GoogleCloudAiplatformV1ModelEvaluationSliceSliceSliceSpec::class;
-    protected $sliceSpecDataType = '';
-    /**
-     * Output only. The value of the dimension in this slice.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Output only. The dimension of the slice. Well-known dimensions are: *
-     * `annotationSpec`: This slice is on the test data that has either ground
-     * truth or prediction with AnnotationSpec.display_name equals to value. *
-     * `slice`: This slice is a user customized slice defined by its SliceSpec.
-     *
-     * @param string $dimension
-     */
-    public function setDimension($dimension)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ModelEvaluationSliceSlice extends \Google\Model
     {
+        /**
+         * Output only. The dimension of the slice. Well-known dimensions are: *
+         * `annotationSpec`: This slice is on the test data that has either ground
+         * truth or prediction with AnnotationSpec.display_name equals to value. *
+         * `slice`: This slice is a user customized slice defined by its SliceSpec.
+         *
+         * @var string
+         */
+        public $dimension;
+        protected $sliceSpecType = GoogleCloudAiplatformV1ModelEvaluationSliceSliceSliceSpec::class;
+        protected $sliceSpecDataType = '';
+        /**
+         * Output only. The value of the dimension in this slice.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Output only. The dimension of the slice. Well-known dimensions are: *
+         * `annotationSpec`: This slice is on the test data that has either ground
+         * truth or prediction with AnnotationSpec.display_name equals to value. *
+         * `slice`: This slice is a user customized slice defined by its SliceSpec.
+         *
+         * @param string $dimension
+         */
+        public function setDimension($dimension)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDimension()
+        {
+        }
+        /**
+         * Output only. Specification for how the data was sliced.
+         *
+         * @param GoogleCloudAiplatformV1ModelEvaluationSliceSliceSliceSpec $sliceSpec
+         */
+        public function setSliceSpec(GoogleCloudAiplatformV1ModelEvaluationSliceSliceSliceSpec $sliceSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ModelEvaluationSliceSliceSliceSpec
+         */
+        public function getSliceSpec()
+        {
+        }
+        /**
+         * Output only. The value of the dimension in this slice.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ModelEvaluationSliceSlice registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDimension()
-    {
-    }
-    /**
-     * Output only. Specification for how the data was sliced.
-     *
-     * @param GoogleCloudAiplatformV1ModelEvaluationSliceSliceSliceSpec $sliceSpec
-     */
-    public function setSliceSpec(GoogleCloudAiplatformV1ModelEvaluationSliceSliceSliceSpec $sliceSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1ModelEvaluationSliceSliceSliceSpec
-     */
-    public function getSliceSpec()
-    {
-    }
-    /**
-     * Output only. The value of the dimension in this slice.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ModelEvaluationSliceSlice extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ModelEvaluationSliceSlice
     {
     }
 }

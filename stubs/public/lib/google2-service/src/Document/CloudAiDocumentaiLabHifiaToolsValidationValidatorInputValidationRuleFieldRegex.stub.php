@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleFieldRegex extends \Google\Model
-{
-    protected $fieldType = CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleField::class;
-    protected $fieldDataType = '';
-    /**
-     * Python regex to validate the field values.
-     *
-     * @var string
-     */
-    public $pattern;
-    /**
-     * @param CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleField $field
-     */
-    public function setField(CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleField $field)
+namespace Google\Service\Document {
+    class CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleFieldRegex extends \Google\Model
     {
+        protected $fieldType = CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleField::class;
+        protected $fieldDataType = '';
+        /**
+         * Python regex to validate the field values.
+         *
+         * @var string
+         */
+        public $pattern;
+        /**
+         * @param CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleField $field
+         */
+        public function setField(CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleField $field)
+        {
+        }
+        /**
+         * @return CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleField
+         */
+        public function getField()
+        {
+        }
+        /**
+         * Python regex to validate the field values.
+         *
+         * @param string $pattern
+         */
+        public function setPattern($pattern)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPattern()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleField
+     * Runtime class alias of \Google\Service\Document\CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleFieldRegex registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getField()
-    {
-    }
-    /**
-     * Python regex to validate the field values.
-     *
-     * @param string $pattern
-     */
-    public function setPattern($pattern)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPattern()
+    class Google_Service_Document_CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleFieldRegex extends \Google\Service\Document\CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleFieldRegex
     {
     }
 }

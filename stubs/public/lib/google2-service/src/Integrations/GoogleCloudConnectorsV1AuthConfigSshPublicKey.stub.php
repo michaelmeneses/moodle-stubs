@@ -21,80 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudConnectorsV1AuthConfigSshPublicKey extends \Google\Model
-{
-    /**
-     * Optional. Format of SSH Client cert.
-     *
-     * @var string
-     */
-    public $certType;
-    protected $sshClientCertType = GoogleCloudConnectorsV1Secret::class;
-    protected $sshClientCertDataType = '';
-    protected $sshClientCertPassType = GoogleCloudConnectorsV1Secret::class;
-    protected $sshClientCertPassDataType = '';
-    /**
-     * Optional. The user account used to authenticate.
-     *
-     * @var string
-     */
-    public $username;
-    /**
-     * Optional. Format of SSH Client cert.
-     *
-     * @param string $certType
-     */
-    public function setCertType($certType)
+namespace Google\Service\Integrations {
+    class GoogleCloudConnectorsV1AuthConfigSshPublicKey extends \Google\Model
     {
+        /**
+         * Optional. Format of SSH Client cert.
+         *
+         * @var string
+         */
+        public $certType;
+        protected $sshClientCertType = GoogleCloudConnectorsV1Secret::class;
+        protected $sshClientCertDataType = '';
+        protected $sshClientCertPassType = GoogleCloudConnectorsV1Secret::class;
+        protected $sshClientCertPassDataType = '';
+        /**
+         * Optional. The user account used to authenticate.
+         *
+         * @var string
+         */
+        public $username;
+        /**
+         * Optional. Format of SSH Client cert.
+         *
+         * @param string $certType
+         */
+        public function setCertType($certType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCertType()
+        {
+        }
+        /**
+         * Optional. SSH Client Cert. It should contain both public and private key.
+         *
+         * @param GoogleCloudConnectorsV1Secret $sshClientCert
+         */
+        public function setSshClientCert(GoogleCloudConnectorsV1Secret $sshClientCert)
+        {
+        }
+        /**
+         * @return GoogleCloudConnectorsV1Secret
+         */
+        public function getSshClientCert()
+        {
+        }
+        /**
+         * Optional. Password (passphrase) for ssh client certificate if it has one.
+         *
+         * @param GoogleCloudConnectorsV1Secret $sshClientCertPass
+         */
+        public function setSshClientCertPass(GoogleCloudConnectorsV1Secret $sshClientCertPass)
+        {
+        }
+        /**
+         * @return GoogleCloudConnectorsV1Secret
+         */
+        public function getSshClientCertPass()
+        {
+        }
+        /**
+         * Optional. The user account used to authenticate.
+         *
+         * @param string $username
+         */
+        public function setUsername($username)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUsername()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudConnectorsV1AuthConfigSshPublicKey registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCertType()
-    {
-    }
-    /**
-     * Optional. SSH Client Cert. It should contain both public and private key.
-     *
-     * @param GoogleCloudConnectorsV1Secret $sshClientCert
-     */
-    public function setSshClientCert(GoogleCloudConnectorsV1Secret $sshClientCert)
-    {
-    }
-    /**
-     * @return GoogleCloudConnectorsV1Secret
-     */
-    public function getSshClientCert()
-    {
-    }
-    /**
-     * Optional. Password (passphrase) for ssh client certificate if it has one.
-     *
-     * @param GoogleCloudConnectorsV1Secret $sshClientCertPass
-     */
-    public function setSshClientCertPass(GoogleCloudConnectorsV1Secret $sshClientCertPass)
-    {
-    }
-    /**
-     * @return GoogleCloudConnectorsV1Secret
-     */
-    public function getSshClientCertPass()
-    {
-    }
-    /**
-     * Optional. The user account used to authenticate.
-     *
-     * @param string $username
-     */
-    public function setUsername($username)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUsername()
+    class Google_Service_Integrations_GoogleCloudConnectorsV1AuthConfigSshPublicKey extends \Google\Service\Integrations\GoogleCloudConnectorsV1AuthConfigSshPublicKey
     {
     }
 }

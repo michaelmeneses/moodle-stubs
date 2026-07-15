@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class OracleSchema extends \Google\Collection
-{
-    protected $collection_key = 'oracleTables';
-    protected $oracleTablesType = OracleTable::class;
-    protected $oracleTablesDataType = 'array';
-    /**
-     * Schema name.
-     *
-     * @var string
-     */
-    public $schema;
-    /**
-     * Tables in the schema.
-     *
-     * @param OracleTable[] $oracleTables
-     */
-    public function setOracleTables($oracleTables)
+namespace Google\Service\Datastream {
+    class OracleSchema extends \Google\Collection
     {
+        protected $collection_key = 'oracleTables';
+        protected $oracleTablesType = OracleTable::class;
+        protected $oracleTablesDataType = 'array';
+        /**
+         * Schema name.
+         *
+         * @var string
+         */
+        public $schema;
+        /**
+         * Tables in the schema.
+         *
+         * @param OracleTable[] $oracleTables
+         */
+        public function setOracleTables($oracleTables)
+        {
+        }
+        /**
+         * @return OracleTable[]
+         */
+        public function getOracleTables()
+        {
+        }
+        /**
+         * Schema name.
+         *
+         * @param string $schema
+         */
+        public function setSchema($schema)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSchema()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return OracleTable[]
+     * Runtime class alias of \Google\Service\Datastream\OracleSchema registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOracleTables()
-    {
-    }
-    /**
-     * Schema name.
-     *
-     * @param string $schema
-     */
-    public function setSchema($schema)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSchema()
+    class Google_Service_Datastream_OracleSchema extends \Google\Service\Datastream\OracleSchema
     {
     }
 }

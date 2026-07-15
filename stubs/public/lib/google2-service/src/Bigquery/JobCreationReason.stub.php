@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class JobCreationReason extends \Google\Model
-{
-    /**
-     * Reason is not specified.
-     */
-    public const CODE_CODE_UNSPECIFIED = 'CODE_UNSPECIFIED';
-    /**
-     * Job creation was requested.
-     */
-    public const CODE_REQUESTED = 'REQUESTED';
-    /**
-     * The query request ran beyond a system defined timeout specified by the
-     * [timeoutMs field in the QueryRequest](https://cloud.google.com/bigquery/doc
-     * s/reference/rest/v2/jobs/query#queryrequest). As a result it was considered
-     * a long running operation for which a job was created.
-     */
-    public const CODE_LONG_RUNNING = 'LONG_RUNNING';
-    /**
-     * The results from the query cannot fit in the response.
-     */
-    public const CODE_LARGE_RESULTS = 'LARGE_RESULTS';
-    /**
-     * BigQuery has determined that the query needs to be executed as a Job.
-     */
-    public const CODE_OTHER = 'OTHER';
-    /**
-     * Output only. Specifies the high level reason why a Job was created.
-     *
-     * @var string
-     */
-    public $code;
-    /**
-     * Output only. Specifies the high level reason why a Job was created.
-     *
-     * Accepted values: CODE_UNSPECIFIED, REQUESTED, LONG_RUNNING, LARGE_RESULTS,
-     * OTHER
-     *
-     * @param self::CODE_* $code
-     */
-    public function setCode($code)
+namespace Google\Service\Bigquery {
+    class JobCreationReason extends \Google\Model
     {
+        /**
+         * Reason is not specified.
+         */
+        public const CODE_CODE_UNSPECIFIED = 'CODE_UNSPECIFIED';
+        /**
+         * Job creation was requested.
+         */
+        public const CODE_REQUESTED = 'REQUESTED';
+        /**
+         * The query request ran beyond a system defined timeout specified by the
+         * [timeoutMs field in the QueryRequest](https://cloud.google.com/bigquery/doc
+         * s/reference/rest/v2/jobs/query#queryrequest). As a result it was considered
+         * a long running operation for which a job was created.
+         */
+        public const CODE_LONG_RUNNING = 'LONG_RUNNING';
+        /**
+         * The results from the query cannot fit in the response.
+         */
+        public const CODE_LARGE_RESULTS = 'LARGE_RESULTS';
+        /**
+         * BigQuery has determined that the query needs to be executed as a Job.
+         */
+        public const CODE_OTHER = 'OTHER';
+        /**
+         * Output only. Specifies the high level reason why a Job was created.
+         *
+         * @var string
+         */
+        public $code;
+        /**
+         * Output only. Specifies the high level reason why a Job was created.
+         *
+         * Accepted values: CODE_UNSPECIFIED, REQUESTED, LONG_RUNNING, LARGE_RESULTS,
+         * OTHER
+         *
+         * @param self::CODE_* $code
+         */
+        public function setCode($code)
+        {
+        }
+        /**
+         * @return self::CODE_*
+         */
+        public function getCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::CODE_*
+     * Runtime class alias of \Google\Service\Bigquery\JobCreationReason registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCode()
+    class Google_Service_Bigquery_JobCreationReason extends \Google\Service\Bigquery\JobCreationReason
     {
     }
 }

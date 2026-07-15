@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OSConfig;
-
-class InventoryWindowsApplication extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $displayName;
-    /**
-     * @var string
-     */
-    public $displayVersion;
-    /**
-     * @var string
-     */
-    public $helpLink;
-    protected $installDateType = Date::class;
-    protected $installDateDataType = '';
-    /**
-     * @var string
-     */
-    public $publisher;
-    /**
-     * @param string
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\OSConfig {
+    class InventoryWindowsApplication extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $displayName;
+        /**
+         * @var string
+         */
+        public $displayVersion;
+        /**
+         * @var string
+         */
+        public $helpLink;
+        protected $installDateType = Date::class;
+        protected $installDateDataType = '';
+        /**
+         * @var string
+         */
+        public $publisher;
+        /**
+         * @param string
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDisplayVersion($displayVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayVersion()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setHelpLink($helpLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHelpLink()
+        {
+        }
+        /**
+         * @param Date
+         */
+        public function setInstallDate(Date $installDate)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getInstallDate()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPublisher($publisher)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPublisher()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OSConfig\InventoryWindowsApplication registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDisplayVersion($displayVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayVersion()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setHelpLink($helpLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHelpLink()
-    {
-    }
-    /**
-     * @param Date
-     */
-    public function setInstallDate(Date $installDate)
-    {
-    }
-    /**
-     * @return Date
-     */
-    public function getInstallDate()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPublisher($publisher)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPublisher()
+    class Google_Service_OSConfig_InventoryWindowsApplication extends \Google\Service\OSConfig\InventoryWindowsApplication
     {
     }
 }

@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1ChunkStructuredContent extends \Google\Model
-{
-    /**
-     * Default value.
-     */
-    public const STRUCTURE_TYPE_STRUCTURE_TYPE_UNSPECIFIED = 'STRUCTURE_TYPE_UNSPECIFIED';
-    /**
-     * Shareholder structure.
-     */
-    public const STRUCTURE_TYPE_SHAREHOLDER_STRUCTURE = 'SHAREHOLDER_STRUCTURE';
-    /**
-     * Signature structure.
-     */
-    public const STRUCTURE_TYPE_SIGNATURE_STRUCTURE = 'SIGNATURE_STRUCTURE';
-    /**
-     * Checkbox structure.
-     */
-    public const STRUCTURE_TYPE_CHECKBOX_STRUCTURE = 'CHECKBOX_STRUCTURE';
-    /**
-     * Output only. The content of the structured content.
-     *
-     * @var string
-     */
-    public $content;
-    /**
-     * Output only. The structure type of the structured content.
-     *
-     * @var string
-     */
-    public $structureType;
-    /**
-     * Output only. The content of the structured content.
-     *
-     * @param string $content
-     */
-    public function setContent($content)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1ChunkStructuredContent extends \Google\Model
     {
+        /**
+         * Default value.
+         */
+        public const STRUCTURE_TYPE_STRUCTURE_TYPE_UNSPECIFIED = 'STRUCTURE_TYPE_UNSPECIFIED';
+        /**
+         * Shareholder structure.
+         */
+        public const STRUCTURE_TYPE_SHAREHOLDER_STRUCTURE = 'SHAREHOLDER_STRUCTURE';
+        /**
+         * Signature structure.
+         */
+        public const STRUCTURE_TYPE_SIGNATURE_STRUCTURE = 'SIGNATURE_STRUCTURE';
+        /**
+         * Checkbox structure.
+         */
+        public const STRUCTURE_TYPE_CHECKBOX_STRUCTURE = 'CHECKBOX_STRUCTURE';
+        /**
+         * Output only. The content of the structured content.
+         *
+         * @var string
+         */
+        public $content;
+        /**
+         * Output only. The structure type of the structured content.
+         *
+         * @var string
+         */
+        public $structureType;
+        /**
+         * Output only. The content of the structured content.
+         *
+         * @param string $content
+         */
+        public function setContent($content)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContent()
+        {
+        }
+        /**
+         * Output only. The structure type of the structured content.
+         *
+         * Accepted values: STRUCTURE_TYPE_UNSPECIFIED, SHAREHOLDER_STRUCTURE,
+         * SIGNATURE_STRUCTURE, CHECKBOX_STRUCTURE
+         *
+         * @param self::STRUCTURE_TYPE_* $structureType
+         */
+        public function setStructureType($structureType)
+        {
+        }
+        /**
+         * @return self::STRUCTURE_TYPE_*
+         */
+        public function getStructureType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ChunkStructuredContent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContent()
-    {
-    }
-    /**
-     * Output only. The structure type of the structured content.
-     *
-     * Accepted values: STRUCTURE_TYPE_UNSPECIFIED, SHAREHOLDER_STRUCTURE,
-     * SIGNATURE_STRUCTURE, CHECKBOX_STRUCTURE
-     *
-     * @param self::STRUCTURE_TYPE_* $structureType
-     */
-    public function setStructureType($structureType)
-    {
-    }
-    /**
-     * @return self::STRUCTURE_TYPE_*
-     */
-    public function getStructureType()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1ChunkStructuredContent extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ChunkStructuredContent
     {
     }
 }

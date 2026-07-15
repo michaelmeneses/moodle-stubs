@@ -21,126 +21,135 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetAppFiles;
-
-class BackupRetentionPolicy extends \Google\Model
-{
-    /**
-     * Required. Minimum retention duration in days for backups in the backup
-     * vault.
-     *
-     * @var int
-     */
-    public $backupMinimumEnforcedRetentionDays;
-    /**
-     * Optional. Indicates if the daily backups are immutable. At least one of
-     * daily_backup_immutable, weekly_backup_immutable, monthly_backup_immutable
-     * and manual_backup_immutable must be true.
-     *
-     * @var bool
-     */
-    public $dailyBackupImmutable;
-    /**
-     * Optional. Indicates if the manual backups are immutable. At least one of
-     * daily_backup_immutable, weekly_backup_immutable, monthly_backup_immutable
-     * and manual_backup_immutable must be true.
-     *
-     * @var bool
-     */
-    public $manualBackupImmutable;
-    /**
-     * Optional. Indicates if the monthly backups are immutable. At least one of
-     * daily_backup_immutable, weekly_backup_immutable, monthly_backup_immutable
-     * and manual_backup_immutable must be true.
-     *
-     * @var bool
-     */
-    public $monthlyBackupImmutable;
-    /**
-     * Optional. Indicates if the weekly backups are immutable. At least one of
-     * daily_backup_immutable, weekly_backup_immutable, monthly_backup_immutable
-     * and manual_backup_immutable must be true.
-     *
-     * @var bool
-     */
-    public $weeklyBackupImmutable;
-    /**
-     * Required. Minimum retention duration in days for backups in the backup
-     * vault.
-     *
-     * @param int $backupMinimumEnforcedRetentionDays
-     */
-    public function setBackupMinimumEnforcedRetentionDays($backupMinimumEnforcedRetentionDays)
+namespace Google\Service\NetAppFiles {
+    class BackupRetentionPolicy extends \Google\Model
     {
+        /**
+         * Required. Minimum retention duration in days for backups in the backup
+         * vault.
+         *
+         * @var int
+         */
+        public $backupMinimumEnforcedRetentionDays;
+        /**
+         * Optional. Indicates if the daily backups are immutable. At least one of
+         * daily_backup_immutable, weekly_backup_immutable, monthly_backup_immutable
+         * and manual_backup_immutable must be true.
+         *
+         * @var bool
+         */
+        public $dailyBackupImmutable;
+        /**
+         * Optional. Indicates if the manual backups are immutable. At least one of
+         * daily_backup_immutable, weekly_backup_immutable, monthly_backup_immutable
+         * and manual_backup_immutable must be true.
+         *
+         * @var bool
+         */
+        public $manualBackupImmutable;
+        /**
+         * Optional. Indicates if the monthly backups are immutable. At least one of
+         * daily_backup_immutable, weekly_backup_immutable, monthly_backup_immutable
+         * and manual_backup_immutable must be true.
+         *
+         * @var bool
+         */
+        public $monthlyBackupImmutable;
+        /**
+         * Optional. Indicates if the weekly backups are immutable. At least one of
+         * daily_backup_immutable, weekly_backup_immutable, monthly_backup_immutable
+         * and manual_backup_immutable must be true.
+         *
+         * @var bool
+         */
+        public $weeklyBackupImmutable;
+        /**
+         * Required. Minimum retention duration in days for backups in the backup
+         * vault.
+         *
+         * @param int $backupMinimumEnforcedRetentionDays
+         */
+        public function setBackupMinimumEnforcedRetentionDays($backupMinimumEnforcedRetentionDays)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getBackupMinimumEnforcedRetentionDays()
+        {
+        }
+        /**
+         * Optional. Indicates if the daily backups are immutable. At least one of
+         * daily_backup_immutable, weekly_backup_immutable, monthly_backup_immutable
+         * and manual_backup_immutable must be true.
+         *
+         * @param bool $dailyBackupImmutable
+         */
+        public function setDailyBackupImmutable($dailyBackupImmutable)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDailyBackupImmutable()
+        {
+        }
+        /**
+         * Optional. Indicates if the manual backups are immutable. At least one of
+         * daily_backup_immutable, weekly_backup_immutable, monthly_backup_immutable
+         * and manual_backup_immutable must be true.
+         *
+         * @param bool $manualBackupImmutable
+         */
+        public function setManualBackupImmutable($manualBackupImmutable)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getManualBackupImmutable()
+        {
+        }
+        /**
+         * Optional. Indicates if the monthly backups are immutable. At least one of
+         * daily_backup_immutable, weekly_backup_immutable, monthly_backup_immutable
+         * and manual_backup_immutable must be true.
+         *
+         * @param bool $monthlyBackupImmutable
+         */
+        public function setMonthlyBackupImmutable($monthlyBackupImmutable)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getMonthlyBackupImmutable()
+        {
+        }
+        /**
+         * Optional. Indicates if the weekly backups are immutable. At least one of
+         * daily_backup_immutable, weekly_backup_immutable, monthly_backup_immutable
+         * and manual_backup_immutable must be true.
+         *
+         * @param bool $weeklyBackupImmutable
+         */
+        public function setWeeklyBackupImmutable($weeklyBackupImmutable)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getWeeklyBackupImmutable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\NetAppFiles\BackupRetentionPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackupMinimumEnforcedRetentionDays()
-    {
-    }
-    /**
-     * Optional. Indicates if the daily backups are immutable. At least one of
-     * daily_backup_immutable, weekly_backup_immutable, monthly_backup_immutable
-     * and manual_backup_immutable must be true.
-     *
-     * @param bool $dailyBackupImmutable
-     */
-    public function setDailyBackupImmutable($dailyBackupImmutable)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDailyBackupImmutable()
-    {
-    }
-    /**
-     * Optional. Indicates if the manual backups are immutable. At least one of
-     * daily_backup_immutable, weekly_backup_immutable, monthly_backup_immutable
-     * and manual_backup_immutable must be true.
-     *
-     * @param bool $manualBackupImmutable
-     */
-    public function setManualBackupImmutable($manualBackupImmutable)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getManualBackupImmutable()
-    {
-    }
-    /**
-     * Optional. Indicates if the monthly backups are immutable. At least one of
-     * daily_backup_immutable, weekly_backup_immutable, monthly_backup_immutable
-     * and manual_backup_immutable must be true.
-     *
-     * @param bool $monthlyBackupImmutable
-     */
-    public function setMonthlyBackupImmutable($monthlyBackupImmutable)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getMonthlyBackupImmutable()
-    {
-    }
-    /**
-     * Optional. Indicates if the weekly backups are immutable. At least one of
-     * daily_backup_immutable, weekly_backup_immutable, monthly_backup_immutable
-     * and manual_backup_immutable must be true.
-     *
-     * @param bool $weeklyBackupImmutable
-     */
-    public function setWeeklyBackupImmutable($weeklyBackupImmutable)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getWeeklyBackupImmutable()
+    class Google_Service_NetAppFiles_BackupRetentionPolicy extends \Google\Service\NetAppFiles\BackupRetentionPolicy
     {
     }
 }

@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class PlaylistStatus extends \Google\Model
-{
-    public const PODCAST_STATUS_enabled = 'enabled';
-    public const PODCAST_STATUS_disabled = 'disabled';
-    public const PRIVACY_STATUS_public = 'public';
-    public const PRIVACY_STATUS_unlisted = 'unlisted';
-    public const PRIVACY_STATUS_private = 'private';
-    /**
-     * The playlist's podcast status.
-     *
-     * @var string
-     */
-    public $podcastStatus;
-    /**
-     * The playlist's privacy status.
-     *
-     * @var string
-     */
-    public $privacyStatus;
-    /**
-     * The playlist's podcast status.
-     *
-     * Accepted values: enabled, disabled
-     *
-     * @param self::PODCAST_STATUS_* $podcastStatus
-     */
-    public function setPodcastStatus($podcastStatus)
+namespace Google\Service\YouTube {
+    class PlaylistStatus extends \Google\Model
     {
+        public const PODCAST_STATUS_enabled = 'enabled';
+        public const PODCAST_STATUS_disabled = 'disabled';
+        public const PRIVACY_STATUS_public = 'public';
+        public const PRIVACY_STATUS_unlisted = 'unlisted';
+        public const PRIVACY_STATUS_private = 'private';
+        /**
+         * The playlist's podcast status.
+         *
+         * @var string
+         */
+        public $podcastStatus;
+        /**
+         * The playlist's privacy status.
+         *
+         * @var string
+         */
+        public $privacyStatus;
+        /**
+         * The playlist's podcast status.
+         *
+         * Accepted values: enabled, disabled
+         *
+         * @param self::PODCAST_STATUS_* $podcastStatus
+         */
+        public function setPodcastStatus($podcastStatus)
+        {
+        }
+        /**
+         * @return self::PODCAST_STATUS_*
+         */
+        public function getPodcastStatus()
+        {
+        }
+        /**
+         * The playlist's privacy status.
+         *
+         * Accepted values: public, unlisted, private
+         *
+         * @param self::PRIVACY_STATUS_* $privacyStatus
+         */
+        public function setPrivacyStatus($privacyStatus)
+        {
+        }
+        /**
+         * @return self::PRIVACY_STATUS_*
+         */
+        public function getPrivacyStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::PODCAST_STATUS_*
+     * Runtime class alias of \Google\Service\YouTube\PlaylistStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPodcastStatus()
-    {
-    }
-    /**
-     * The playlist's privacy status.
-     *
-     * Accepted values: public, unlisted, private
-     *
-     * @param self::PRIVACY_STATUS_* $privacyStatus
-     */
-    public function setPrivacyStatus($privacyStatus)
-    {
-    }
-    /**
-     * @return self::PRIVACY_STATUS_*
-     */
-    public function getPrivacyStatus()
+    class Google_Service_YouTube_PlaylistStatus extends \Google\Service\YouTube\PlaylistStatus
     {
     }
 }

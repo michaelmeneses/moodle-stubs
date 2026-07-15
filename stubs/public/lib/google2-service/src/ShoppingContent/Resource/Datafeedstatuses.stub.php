@@ -21,73 +21,86 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent\Resource;
-
-/**
- * The "datafeedstatuses" collection of methods.
- * Typical usage is:
- *  <code>
- *   $contentService = new Google\Service\ShoppingContent(...);
- *   $datafeedstatuses = $contentService->datafeedstatuses;
- *  </code>
- */
-class Datafeedstatuses extends \Google\Service\Resource
-{
+namespace Google\Service\ShoppingContent\Resource {
+    use Google\Service\ShoppingContent\DatafeedStatus;
+    use Google\Service\ShoppingContent\DatafeedstatusesCustomBatchRequest;
+    use Google\Service\ShoppingContent\DatafeedstatusesCustomBatchResponse;
+    use Google\Service\ShoppingContent\DatafeedstatusesListResponse;
     /**
-     * Gets multiple Merchant Center datafeed statuses in a single request.
-     * (datafeedstatuses.custombatch)
-     *
-     * @param DatafeedstatusesCustomBatchRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return DatafeedstatusesCustomBatchResponse
-     * @throws \Google\Service\Exception
+     * The "datafeedstatuses" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $contentService = new Google\Service\ShoppingContent(...);
+     *   $datafeedstatuses = $contentService->datafeedstatuses;
+     *  </code>
      */
-    public function custombatch(DatafeedstatusesCustomBatchRequest $postBody, $optParams = [])
+    class Datafeedstatuses extends \Google\Service\Resource
     {
+        /**
+         * Gets multiple Merchant Center datafeed statuses in a single request.
+         * (datafeedstatuses.custombatch)
+         *
+         * @param DatafeedstatusesCustomBatchRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return DatafeedstatusesCustomBatchResponse
+         * @throws \Google\Service\Exception
+         */
+        public function custombatch(DatafeedstatusesCustomBatchRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves the status of a datafeed from your Merchant Center account.
+         * (datafeedstatuses.get)
+         *
+         * @param string $merchantId The ID of the account that manages the datafeed.
+         * This account cannot be a multi-client account.
+         * @param string $datafeedId The ID of the datafeed.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string country Deprecated. Use `feedLabel` instead. The country to
+         * get the datafeed status for. If this parameter is provided then `language`
+         * must also be provided. Note that this parameter is required for feeds
+         * targeting multiple countries and languages, since a feed may have a different
+         * status for each target.
+         * @opt_param string feedLabel The feed label to get the datafeed status for. If
+         * this parameter is provided then `language` must also be provided. Note that
+         * this parameter is required for feeds targeting multiple countries and
+         * languages, since a feed may have a different status for each target.
+         * @opt_param string language The language to get the datafeed status for. If
+         * this parameter is provided then `country` must also be provided. Note that
+         * this parameter is required for feeds targeting multiple countries and
+         * languages, since a feed may have a different status for each target.
+         * @return DatafeedStatus
+         * @throws \Google\Service\Exception
+         */
+        public function get($merchantId, $datafeedId, $optParams = [])
+        {
+        }
+        /**
+         * Lists the statuses of the datafeeds in your Merchant Center account.
+         * (datafeedstatuses.listDatafeedstatuses)
+         *
+         * @param string $merchantId The ID of the account that manages the datafeeds.
+         * This account cannot be a multi-client account.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string maxResults The maximum number of products to return in the
+         * response, used for paging.
+         * @opt_param string pageToken The token returned by the previous request.
+         * @return DatafeedstatusesListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listDatafeedstatuses($merchantId, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Retrieves the status of a datafeed from your Merchant Center account.
-     * (datafeedstatuses.get)
-     *
-     * @param string $merchantId The ID of the account that manages the datafeed.
-     * This account cannot be a multi-client account.
-     * @param string $datafeedId The ID of the datafeed.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string country Deprecated. Use `feedLabel` instead. The country to
-     * get the datafeed status for. If this parameter is provided then `language`
-     * must also be provided. Note that this parameter is required for feeds
-     * targeting multiple countries and languages, since a feed may have a different
-     * status for each target.
-     * @opt_param string feedLabel The feed label to get the datafeed status for. If
-     * this parameter is provided then `language` must also be provided. Note that
-     * this parameter is required for feeds targeting multiple countries and
-     * languages, since a feed may have a different status for each target.
-     * @opt_param string language The language to get the datafeed status for. If
-     * this parameter is provided then `country` must also be provided. Note that
-     * this parameter is required for feeds targeting multiple countries and
-     * languages, since a feed may have a different status for each target.
-     * @return DatafeedStatus
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\ShoppingContent\Resource\Datafeedstatuses registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($merchantId, $datafeedId, $optParams = [])
-    {
-    }
-    /**
-     * Lists the statuses of the datafeeds in your Merchant Center account.
-     * (datafeedstatuses.listDatafeedstatuses)
-     *
-     * @param string $merchantId The ID of the account that manages the datafeeds.
-     * This account cannot be a multi-client account.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string maxResults The maximum number of products to return in the
-     * response, used for paging.
-     * @opt_param string pageToken The token returned by the previous request.
-     * @return DatafeedstatusesListResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listDatafeedstatuses($merchantId, $optParams = [])
+    class Google_Service_ShoppingContent_Resource_Datafeedstatuses extends \Google\Service\ShoppingContent\Resource\Datafeedstatuses
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManufacturerCenter;
-
-class Price extends \Google\Model
-{
-    /**
-     * The numeric value of the price.
-     *
-     * @var string
-     */
-    public $amount;
-    /**
-     * The currency in which the price is denoted.
-     *
-     * @var string
-     */
-    public $currency;
-    /**
-     * The numeric value of the price.
-     *
-     * @param string $amount
-     */
-    public function setAmount($amount)
+namespace Google\Service\ManufacturerCenter {
+    class Price extends \Google\Model
     {
+        /**
+         * The numeric value of the price.
+         *
+         * @var string
+         */
+        public $amount;
+        /**
+         * The currency in which the price is denoted.
+         *
+         * @var string
+         */
+        public $currency;
+        /**
+         * The numeric value of the price.
+         *
+         * @param string $amount
+         */
+        public function setAmount($amount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAmount()
+        {
+        }
+        /**
+         * The currency in which the price is denoted.
+         *
+         * @param string $currency
+         */
+        public function setCurrency($currency)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCurrency()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ManufacturerCenter\Price registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAmount()
-    {
-    }
-    /**
-     * The currency in which the price is denoted.
-     *
-     * @param string $currency
-     */
-    public function setCurrency($currency)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCurrency()
+    class Google_Service_ManufacturerCenter_Price extends \Google\Service\ManufacturerCenter\Price
     {
     }
 }

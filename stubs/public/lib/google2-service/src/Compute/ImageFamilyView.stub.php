@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class ImageFamilyView extends \Google\Model
-{
-    protected $imageType = Image::class;
-    protected $imageDataType = '';
-    /**
-     * The latest image that is part of the specified image family in the
-     * requested location, and that is not deprecated.
-     *
-     * @param Image $image
-     */
-    public function setImage(Image $image)
+namespace Google\Service\Compute {
+    class ImageFamilyView extends \Google\Model
     {
+        protected $imageType = Image::class;
+        protected $imageDataType = '';
+        /**
+         * The latest image that is part of the specified image family in the
+         * requested location, and that is not deprecated.
+         *
+         * @param Image $image
+         */
+        public function setImage(Image $image)
+        {
+        }
+        /**
+         * @return Image
+         */
+        public function getImage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Image
+     * Runtime class alias of \Google\Service\Compute\ImageFamilyView registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getImage()
+    class Google_Service_Compute_ImageFamilyView extends \Google\Service\Compute\ImageFamilyView
     {
     }
 }

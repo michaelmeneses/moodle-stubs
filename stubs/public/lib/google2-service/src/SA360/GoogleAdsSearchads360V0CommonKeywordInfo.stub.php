@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0CommonKeywordInfo extends \Google\Model
-{
-    /**
-     * Not specified.
-     */
-    public const MATCH_TYPE_UNSPECIFIED = 'UNSPECIFIED';
-    /**
-     * Used for return value only. Represents value unknown in this version.
-     */
-    public const MATCH_TYPE_UNKNOWN = 'UNKNOWN';
-    /**
-     * Exact match.
-     */
-    public const MATCH_TYPE_EXACT = 'EXACT';
-    /**
-     * Phrase match.
-     */
-    public const MATCH_TYPE_PHRASE = 'PHRASE';
-    /**
-     * Broad match.
-     */
-    public const MATCH_TYPE_BROAD = 'BROAD';
-    /**
-     * The match type of the keyword.
-     *
-     * @var string
-     */
-    public $matchType;
-    /**
-     * The text of the keyword (at most 80 characters and 10 words).
-     *
-     * @var string
-     */
-    public $text;
-    /**
-     * The match type of the keyword.
-     *
-     * Accepted values: UNSPECIFIED, UNKNOWN, EXACT, PHRASE, BROAD
-     *
-     * @param self::MATCH_TYPE_* $matchType
-     */
-    public function setMatchType($matchType)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0CommonKeywordInfo extends \Google\Model
     {
+        /**
+         * Not specified.
+         */
+        public const MATCH_TYPE_UNSPECIFIED = 'UNSPECIFIED';
+        /**
+         * Used for return value only. Represents value unknown in this version.
+         */
+        public const MATCH_TYPE_UNKNOWN = 'UNKNOWN';
+        /**
+         * Exact match.
+         */
+        public const MATCH_TYPE_EXACT = 'EXACT';
+        /**
+         * Phrase match.
+         */
+        public const MATCH_TYPE_PHRASE = 'PHRASE';
+        /**
+         * Broad match.
+         */
+        public const MATCH_TYPE_BROAD = 'BROAD';
+        /**
+         * The match type of the keyword.
+         *
+         * @var string
+         */
+        public $matchType;
+        /**
+         * The text of the keyword (at most 80 characters and 10 words).
+         *
+         * @var string
+         */
+        public $text;
+        /**
+         * The match type of the keyword.
+         *
+         * Accepted values: UNSPECIFIED, UNKNOWN, EXACT, PHRASE, BROAD
+         *
+         * @param self::MATCH_TYPE_* $matchType
+         */
+        public function setMatchType($matchType)
+        {
+        }
+        /**
+         * @return self::MATCH_TYPE_*
+         */
+        public function getMatchType()
+        {
+        }
+        /**
+         * The text of the keyword (at most 80 characters and 10 words).
+         *
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::MATCH_TYPE_*
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0CommonKeywordInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMatchType()
-    {
-    }
-    /**
-     * The text of the keyword (at most 80 characters and 10 words).
-     *
-     * @param string $text
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
+    class Google_Service_SA360_GoogleAdsSearchads360V0CommonKeywordInfo extends \Google\Service\SA360\GoogleAdsSearchads360V0CommonKeywordInfo
     {
     }
 }

@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class ManualRule extends \Google\Collection
-{
-    protected $collection_key = 'groups';
-    protected $groupsType = ManualRuleGroup::class;
-    protected $groupsDataType = 'array';
-    /**
-     * The list of group names and the corresponding items from the source data
-     * that map to each group name.
-     *
-     * @param ManualRuleGroup[] $groups
-     */
-    public function setGroups($groups)
+namespace Google\Service\Sheets {
+    class ManualRule extends \Google\Collection
     {
+        protected $collection_key = 'groups';
+        protected $groupsType = ManualRuleGroup::class;
+        protected $groupsDataType = 'array';
+        /**
+         * The list of group names and the corresponding items from the source data
+         * that map to each group name.
+         *
+         * @param ManualRuleGroup[] $groups
+         */
+        public function setGroups($groups)
+        {
+        }
+        /**
+         * @return ManualRuleGroup[]
+         */
+        public function getGroups()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ManualRuleGroup[]
+     * Runtime class alias of \Google\Service\Sheets\ManualRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGroups()
+    class Google_Service_Sheets_ManualRule extends \Google\Service\Sheets\ManualRule
     {
     }
 }

@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Baremetalsolution;
-
-class NetworkUsage extends \Google\Collection
-{
-    protected $collection_key = 'usedIps';
-    protected $networkType = Network::class;
-    protected $networkDataType = '';
-    /**
-     * All used IP addresses in this network.
-     *
-     * @var string[]
-     */
-    public $usedIps;
-    /**
-     * Network.
-     *
-     * @param Network $network
-     */
-    public function setNetwork(Network $network)
+namespace Google\Service\Baremetalsolution {
+    class NetworkUsage extends \Google\Collection
     {
+        protected $collection_key = 'usedIps';
+        protected $networkType = Network::class;
+        protected $networkDataType = '';
+        /**
+         * All used IP addresses in this network.
+         *
+         * @var string[]
+         */
+        public $usedIps;
+        /**
+         * Network.
+         *
+         * @param Network $network
+         */
+        public function setNetwork(Network $network)
+        {
+        }
+        /**
+         * @return Network
+         */
+        public function getNetwork()
+        {
+        }
+        /**
+         * All used IP addresses in this network.
+         *
+         * @param string[] $usedIps
+         */
+        public function setUsedIps($usedIps)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUsedIps()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Network
+     * Runtime class alias of \Google\Service\Baremetalsolution\NetworkUsage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNetwork()
-    {
-    }
-    /**
-     * All used IP addresses in this network.
-     *
-     * @param string[] $usedIps
-     */
-    public function setUsedIps($usedIps)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUsedIps()
+    class Google_Service_Baremetalsolution_NetworkUsage extends \Google\Service\Baremetalsolution\NetworkUsage
     {
     }
 }

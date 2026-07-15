@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class ListFloodlightActivitiesResponse extends \Google\Collection
-{
-    protected $collection_key = 'floodlightActivities';
-    protected $floodlightActivitiesType = FloodlightActivity::class;
-    protected $floodlightActivitiesDataType = 'array';
-    /**
-     * A token to retrieve the next page of results. Pass this value in the
-     * page_token field in the subsequent call to `ListFloodlightActivities`
-     * method to retrieve the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of Floodlight activities. This list will be absent if empty.
-     *
-     * @param FloodlightActivity[] $floodlightActivities
-     */
-    public function setFloodlightActivities($floodlightActivities)
+namespace Google\Service\DisplayVideo {
+    class ListFloodlightActivitiesResponse extends \Google\Collection
     {
+        protected $collection_key = 'floodlightActivities';
+        protected $floodlightActivitiesType = FloodlightActivity::class;
+        protected $floodlightActivitiesDataType = 'array';
+        /**
+         * A token to retrieve the next page of results. Pass this value in the
+         * page_token field in the subsequent call to `ListFloodlightActivities`
+         * method to retrieve the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of Floodlight activities. This list will be absent if empty.
+         *
+         * @param FloodlightActivity[] $floodlightActivities
+         */
+        public function setFloodlightActivities($floodlightActivities)
+        {
+        }
+        /**
+         * @return FloodlightActivity[]
+         */
+        public function getFloodlightActivities()
+        {
+        }
+        /**
+         * A token to retrieve the next page of results. Pass this value in the
+         * page_token field in the subsequent call to `ListFloodlightActivities`
+         * method to retrieve the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FloodlightActivity[]
+     * Runtime class alias of \Google\Service\DisplayVideo\ListFloodlightActivitiesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFloodlightActivities()
-    {
-    }
-    /**
-     * A token to retrieve the next page of results. Pass this value in the
-     * page_token field in the subsequent call to `ListFloodlightActivities`
-     * method to retrieve the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_DisplayVideo_ListFloodlightActivitiesResponse extends \Google\Service\DisplayVideo\ListFloodlightActivitiesResponse
     {
     }
 }

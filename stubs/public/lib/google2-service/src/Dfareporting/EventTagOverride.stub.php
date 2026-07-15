@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class EventTagOverride extends \Google\Model
-{
-    /**
-     * Whether this override is enabled.
-     *
-     * @var bool
-     */
-    public $enabled;
-    /**
-     * ID of this event tag override. This is a read-only, auto-generated field.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Whether this override is enabled.
-     *
-     * @param bool $enabled
-     */
-    public function setEnabled($enabled)
+namespace Google\Service\Dfareporting {
+    class EventTagOverride extends \Google\Model
     {
+        /**
+         * Whether this override is enabled.
+         *
+         * @var bool
+         */
+        public $enabled;
+        /**
+         * ID of this event tag override. This is a read-only, auto-generated field.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Whether this override is enabled.
+         *
+         * @param bool $enabled
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
+        /**
+         * ID of this event tag override. This is a read-only, auto-generated field.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Dfareporting\EventTagOverride registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnabled()
-    {
-    }
-    /**
-     * ID of this event tag override. This is a read-only, auto-generated field.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
+    class Google_Service_Dfareporting_EventTagOverride extends \Google\Service\Dfareporting\EventTagOverride
     {
     }
 }

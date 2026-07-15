@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class ImportRowErrorCsvErrorDetails extends \Google\Model
-{
-    /**
-     * The row number where the error was detected.
-     *
-     * @var int
-     */
-    public $rowNumber;
-    /**
-     * The row number where the error was detected.
-     *
-     * @param int $rowNumber
-     */
-    public function setRowNumber($rowNumber)
+namespace Google\Service\MigrationCenterAPI {
+    class ImportRowErrorCsvErrorDetails extends \Google\Model
     {
+        /**
+         * The row number where the error was detected.
+         *
+         * @var int
+         */
+        public $rowNumber;
+        /**
+         * The row number where the error was detected.
+         *
+         * @param int $rowNumber
+         */
+        public function setRowNumber($rowNumber)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRowNumber()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\ImportRowErrorCsvErrorDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRowNumber()
+    class Google_Service_MigrationCenterAPI_ImportRowErrorCsvErrorDetails extends \Google\Service\MigrationCenterAPI\ImportRowErrorCsvErrorDetails
     {
     }
 }

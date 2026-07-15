@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class SinkProgress extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var string[]
-     */
-    public $metrics;
-    /**
-     * @var string
-     */
-    public $numOutputRows;
-    /**
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\Dataproc {
+    class SinkProgress extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $description;
+        /**
+         * @var string[]
+         */
+        public $metrics;
+        /**
+         * @var string
+         */
+        public $numOutputRows;
+        /**
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * @param string[] $metrics
+         */
+        public function setMetrics($metrics)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMetrics()
+        {
+        }
+        /**
+         * @param string $numOutputRows
+         */
+        public function setNumOutputRows($numOutputRows)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNumOutputRows()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\SinkProgress registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * @param string[] $metrics
-     */
-    public function setMetrics($metrics)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getMetrics()
-    {
-    }
-    /**
-     * @param string $numOutputRows
-     */
-    public function setNumOutputRows($numOutputRows)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNumOutputRows()
+    class Google_Service_Dataproc_SinkProgress extends \Google\Service\Dataproc\SinkProgress
     {
     }
 }

@@ -21,105 +21,114 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise;
-
-class AutoInstallConstraint extends \Google\Model
-{
-    public const CHARGING_STATE_CONSTRAINT_chargingStateConstraintUnspecified = 'chargingStateConstraintUnspecified';
-    /**
-     * Device doesn't have to be charging.
-     */
-    public const CHARGING_STATE_CONSTRAINT_chargingNotRequired = 'chargingNotRequired';
-    /**
-     * Device has to be charging.
-     */
-    public const CHARGING_STATE_CONSTRAINT_chargingRequired = 'chargingRequired';
-    public const DEVICE_IDLE_STATE_CONSTRAINT_deviceIdleStateConstraintUnspecified = 'deviceIdleStateConstraintUnspecified';
-    /**
-     * Device doesn't have to be idle, app can be installed while the user is
-     * interacting with the device.
-     */
-    public const DEVICE_IDLE_STATE_CONSTRAINT_deviceIdleNotRequired = 'deviceIdleNotRequired';
-    /**
-     * Device has to be idle.
-     */
-    public const DEVICE_IDLE_STATE_CONSTRAINT_deviceIdleRequired = 'deviceIdleRequired';
-    public const NETWORK_TYPE_CONSTRAINT_networkTypeConstraintUnspecified = 'networkTypeConstraintUnspecified';
-    /**
-     * Any active networks (Wi-Fi, cellular, etc.).
-     */
-    public const NETWORK_TYPE_CONSTRAINT_anyNetwork = 'anyNetwork';
-    /**
-     * Any unmetered network (e.g. Wi-FI).
-     */
-    public const NETWORK_TYPE_CONSTRAINT_unmeteredNetwork = 'unmeteredNetwork';
-    /**
-     * Charging state constraint.
-     *
-     * @var string
-     */
-    public $chargingStateConstraint;
-    /**
-     * Device idle state constraint.
-     *
-     * @var string
-     */
-    public $deviceIdleStateConstraint;
-    /**
-     * Network type constraint.
-     *
-     * @var string
-     */
-    public $networkTypeConstraint;
-    /**
-     * Charging state constraint.
-     *
-     * Accepted values: chargingStateConstraintUnspecified, chargingNotRequired,
-     * chargingRequired
-     *
-     * @param self::CHARGING_STATE_CONSTRAINT_* $chargingStateConstraint
-     */
-    public function setChargingStateConstraint($chargingStateConstraint)
+namespace Google\Service\AndroidEnterprise {
+    class AutoInstallConstraint extends \Google\Model
     {
+        public const CHARGING_STATE_CONSTRAINT_chargingStateConstraintUnspecified = 'chargingStateConstraintUnspecified';
+        /**
+         * Device doesn't have to be charging.
+         */
+        public const CHARGING_STATE_CONSTRAINT_chargingNotRequired = 'chargingNotRequired';
+        /**
+         * Device has to be charging.
+         */
+        public const CHARGING_STATE_CONSTRAINT_chargingRequired = 'chargingRequired';
+        public const DEVICE_IDLE_STATE_CONSTRAINT_deviceIdleStateConstraintUnspecified = 'deviceIdleStateConstraintUnspecified';
+        /**
+         * Device doesn't have to be idle, app can be installed while the user is
+         * interacting with the device.
+         */
+        public const DEVICE_IDLE_STATE_CONSTRAINT_deviceIdleNotRequired = 'deviceIdleNotRequired';
+        /**
+         * Device has to be idle.
+         */
+        public const DEVICE_IDLE_STATE_CONSTRAINT_deviceIdleRequired = 'deviceIdleRequired';
+        public const NETWORK_TYPE_CONSTRAINT_networkTypeConstraintUnspecified = 'networkTypeConstraintUnspecified';
+        /**
+         * Any active networks (Wi-Fi, cellular, etc.).
+         */
+        public const NETWORK_TYPE_CONSTRAINT_anyNetwork = 'anyNetwork';
+        /**
+         * Any unmetered network (e.g. Wi-FI).
+         */
+        public const NETWORK_TYPE_CONSTRAINT_unmeteredNetwork = 'unmeteredNetwork';
+        /**
+         * Charging state constraint.
+         *
+         * @var string
+         */
+        public $chargingStateConstraint;
+        /**
+         * Device idle state constraint.
+         *
+         * @var string
+         */
+        public $deviceIdleStateConstraint;
+        /**
+         * Network type constraint.
+         *
+         * @var string
+         */
+        public $networkTypeConstraint;
+        /**
+         * Charging state constraint.
+         *
+         * Accepted values: chargingStateConstraintUnspecified, chargingNotRequired,
+         * chargingRequired
+         *
+         * @param self::CHARGING_STATE_CONSTRAINT_* $chargingStateConstraint
+         */
+        public function setChargingStateConstraint($chargingStateConstraint)
+        {
+        }
+        /**
+         * @return self::CHARGING_STATE_CONSTRAINT_*
+         */
+        public function getChargingStateConstraint()
+        {
+        }
+        /**
+         * Device idle state constraint.
+         *
+         * Accepted values: deviceIdleStateConstraintUnspecified,
+         * deviceIdleNotRequired, deviceIdleRequired
+         *
+         * @param self::DEVICE_IDLE_STATE_CONSTRAINT_* $deviceIdleStateConstraint
+         */
+        public function setDeviceIdleStateConstraint($deviceIdleStateConstraint)
+        {
+        }
+        /**
+         * @return self::DEVICE_IDLE_STATE_CONSTRAINT_*
+         */
+        public function getDeviceIdleStateConstraint()
+        {
+        }
+        /**
+         * Network type constraint.
+         *
+         * Accepted values: networkTypeConstraintUnspecified, anyNetwork,
+         * unmeteredNetwork
+         *
+         * @param self::NETWORK_TYPE_CONSTRAINT_* $networkTypeConstraint
+         */
+        public function setNetworkTypeConstraint($networkTypeConstraint)
+        {
+        }
+        /**
+         * @return self::NETWORK_TYPE_CONSTRAINT_*
+         */
+        public function getNetworkTypeConstraint()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::CHARGING_STATE_CONSTRAINT_*
+     * Runtime class alias of \Google\Service\AndroidEnterprise\AutoInstallConstraint registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChargingStateConstraint()
-    {
-    }
-    /**
-     * Device idle state constraint.
-     *
-     * Accepted values: deviceIdleStateConstraintUnspecified,
-     * deviceIdleNotRequired, deviceIdleRequired
-     *
-     * @param self::DEVICE_IDLE_STATE_CONSTRAINT_* $deviceIdleStateConstraint
-     */
-    public function setDeviceIdleStateConstraint($deviceIdleStateConstraint)
-    {
-    }
-    /**
-     * @return self::DEVICE_IDLE_STATE_CONSTRAINT_*
-     */
-    public function getDeviceIdleStateConstraint()
-    {
-    }
-    /**
-     * Network type constraint.
-     *
-     * Accepted values: networkTypeConstraintUnspecified, anyNetwork,
-     * unmeteredNetwork
-     *
-     * @param self::NETWORK_TYPE_CONSTRAINT_* $networkTypeConstraint
-     */
-    public function setNetworkTypeConstraint($networkTypeConstraint)
-    {
-    }
-    /**
-     * @return self::NETWORK_TYPE_CONSTRAINT_*
-     */
-    public function getNetworkTypeConstraint()
+    class Google_Service_AndroidEnterprise_AutoInstallConstraint extends \Google\Service\AndroidEnterprise\AutoInstallConstraint
     {
     }
 }

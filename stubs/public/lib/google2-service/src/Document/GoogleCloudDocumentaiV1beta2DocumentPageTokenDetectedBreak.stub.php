@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1beta2DocumentPageTokenDetectedBreak extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @param string
-     */
-    public function setType($type)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1beta2DocumentPageTokenDetectedBreak extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1beta2DocumentPageTokenDetectedBreak registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getType()
+    class Google_Service_Document_GoogleCloudDocumentaiV1beta2DocumentPageTokenDetectedBreak extends \Google\Service\Document\GoogleCloudDocumentaiV1beta2DocumentPageTokenDetectedBreak
     {
     }
 }

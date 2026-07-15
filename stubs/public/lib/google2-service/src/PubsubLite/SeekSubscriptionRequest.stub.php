@@ -21,61 +21,70 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PubsubLite;
-
-class SeekSubscriptionRequest extends \Google\Model
-{
-    /**
-     * Unspecified named target. Do not use.
-     */
-    public const NAMED_TARGET_NAMED_TARGET_UNSPECIFIED = 'NAMED_TARGET_UNSPECIFIED';
-    /**
-     * Seek to the oldest retained message.
-     */
-    public const NAMED_TARGET_TAIL = 'TAIL';
-    /**
-     * Seek past all recently published messages, skipping the entire message
-     * backlog.
-     */
-    public const NAMED_TARGET_HEAD = 'HEAD';
-    /**
-     * Seek to a named position with respect to the message backlog.
-     *
-     * @var string
-     */
-    public $namedTarget;
-    protected $timeTargetType = TimeTarget::class;
-    protected $timeTargetDataType = '';
-    /**
-     * Seek to a named position with respect to the message backlog.
-     *
-     * Accepted values: NAMED_TARGET_UNSPECIFIED, TAIL, HEAD
-     *
-     * @param self::NAMED_TARGET_* $namedTarget
-     */
-    public function setNamedTarget($namedTarget)
+namespace Google\Service\PubsubLite {
+    class SeekSubscriptionRequest extends \Google\Model
     {
+        /**
+         * Unspecified named target. Do not use.
+         */
+        public const NAMED_TARGET_NAMED_TARGET_UNSPECIFIED = 'NAMED_TARGET_UNSPECIFIED';
+        /**
+         * Seek to the oldest retained message.
+         */
+        public const NAMED_TARGET_TAIL = 'TAIL';
+        /**
+         * Seek past all recently published messages, skipping the entire message
+         * backlog.
+         */
+        public const NAMED_TARGET_HEAD = 'HEAD';
+        /**
+         * Seek to a named position with respect to the message backlog.
+         *
+         * @var string
+         */
+        public $namedTarget;
+        protected $timeTargetType = TimeTarget::class;
+        protected $timeTargetDataType = '';
+        /**
+         * Seek to a named position with respect to the message backlog.
+         *
+         * Accepted values: NAMED_TARGET_UNSPECIFIED, TAIL, HEAD
+         *
+         * @param self::NAMED_TARGET_* $namedTarget
+         */
+        public function setNamedTarget($namedTarget)
+        {
+        }
+        /**
+         * @return self::NAMED_TARGET_*
+         */
+        public function getNamedTarget()
+        {
+        }
+        /**
+         * Seek to the first message whose publish or event time is greater than or
+         * equal to the specified query time. If no such message can be located, will
+         * seek to the end of the message backlog.
+         *
+         * @param TimeTarget $timeTarget
+         */
+        public function setTimeTarget(TimeTarget $timeTarget)
+        {
+        }
+        /**
+         * @return TimeTarget
+         */
+        public function getTimeTarget()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::NAMED_TARGET_*
+     * Runtime class alias of \Google\Service\PubsubLite\SeekSubscriptionRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNamedTarget()
-    {
-    }
-    /**
-     * Seek to the first message whose publish or event time is greater than or
-     * equal to the specified query time. If no such message can be located, will
-     * seek to the end of the message backlog.
-     *
-     * @param TimeTarget $timeTarget
-     */
-    public function setTimeTarget(TimeTarget $timeTarget)
-    {
-    }
-    /**
-     * @return TimeTarget
-     */
-    public function getTimeTarget()
+    class Google_Service_PubsubLite_SeekSubscriptionRequest extends \Google\Service\PubsubLite\SeekSubscriptionRequest
     {
     }
 }

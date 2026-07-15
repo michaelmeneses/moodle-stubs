@@ -21,119 +21,128 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class MobileDeviceApplications extends \Google\Collection
-{
-    protected $collection_key = 'permission';
-    /**
-     * The application's display name. An example is `Browser`.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The application's package name. An example is `com.android.browser`.
-     *
-     * @var string
-     */
-    public $packageName;
-    /**
-     * The list of permissions of this application. These can be either a standard
-     * Android permission or one defined by the application, and are found in an
-     * application's [Android
-     * manifest](https://developer.android.com/guide/topics/manifest/uses-
-     * permission-element.html). Examples of a Calendar application's permissions
-     * are `READ_CALENDAR`, or `MANAGE_ACCOUNTS`.
-     *
-     * @var string[]
-     */
-    public $permission;
-    /**
-     * The application's version code. An example is `13`.
-     *
-     * @var int
-     */
-    public $versionCode;
-    /**
-     * The application's version name. An example is `3.2-140714`.
-     *
-     * @var string
-     */
-    public $versionName;
-    /**
-     * The application's display name. An example is `Browser`.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\Directory {
+    class MobileDeviceApplications extends \Google\Collection
     {
+        protected $collection_key = 'permission';
+        /**
+         * The application's display name. An example is `Browser`.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The application's package name. An example is `com.android.browser`.
+         *
+         * @var string
+         */
+        public $packageName;
+        /**
+         * The list of permissions of this application. These can be either a standard
+         * Android permission or one defined by the application, and are found in an
+         * application's [Android
+         * manifest](https://developer.android.com/guide/topics/manifest/uses-
+         * permission-element.html). Examples of a Calendar application's permissions
+         * are `READ_CALENDAR`, or `MANAGE_ACCOUNTS`.
+         *
+         * @var string[]
+         */
+        public $permission;
+        /**
+         * The application's version code. An example is `13`.
+         *
+         * @var int
+         */
+        public $versionCode;
+        /**
+         * The application's version name. An example is `3.2-140714`.
+         *
+         * @var string
+         */
+        public $versionName;
+        /**
+         * The application's display name. An example is `Browser`.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The application's package name. An example is `com.android.browser`.
+         *
+         * @param string $packageName
+         */
+        public function setPackageName($packageName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPackageName()
+        {
+        }
+        /**
+         * The list of permissions of this application. These can be either a standard
+         * Android permission or one defined by the application, and are found in an
+         * application's [Android
+         * manifest](https://developer.android.com/guide/topics/manifest/uses-
+         * permission-element.html). Examples of a Calendar application's permissions
+         * are `READ_CALENDAR`, or `MANAGE_ACCOUNTS`.
+         *
+         * @param string[] $permission
+         */
+        public function setPermission($permission)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPermission()
+        {
+        }
+        /**
+         * The application's version code. An example is `13`.
+         *
+         * @param int $versionCode
+         */
+        public function setVersionCode($versionCode)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getVersionCode()
+        {
+        }
+        /**
+         * The application's version name. An example is `3.2-140714`.
+         *
+         * @param string $versionName
+         */
+        public function setVersionName($versionName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersionName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Directory\MobileDeviceApplications registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The application's package name. An example is `com.android.browser`.
-     *
-     * @param string $packageName
-     */
-    public function setPackageName($packageName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPackageName()
-    {
-    }
-    /**
-     * The list of permissions of this application. These can be either a standard
-     * Android permission or one defined by the application, and are found in an
-     * application's [Android
-     * manifest](https://developer.android.com/guide/topics/manifest/uses-
-     * permission-element.html). Examples of a Calendar application's permissions
-     * are `READ_CALENDAR`, or `MANAGE_ACCOUNTS`.
-     *
-     * @param string[] $permission
-     */
-    public function setPermission($permission)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPermission()
-    {
-    }
-    /**
-     * The application's version code. An example is `13`.
-     *
-     * @param int $versionCode
-     */
-    public function setVersionCode($versionCode)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getVersionCode()
-    {
-    }
-    /**
-     * The application's version name. An example is `3.2-140714`.
-     *
-     * @param string $versionName
-     */
-    public function setVersionName($versionName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersionName()
+    class Google_Service_Directory_MobileDeviceApplications extends \Google\Service\Directory\MobileDeviceApplications
     {
     }
 }

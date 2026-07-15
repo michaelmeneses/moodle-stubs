@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class GoogleChatV1ContextualAddOnMarkup extends \Google\Collection
-{
-    protected $collection_key = 'cards';
-    protected $cardsType = GoogleChatV1ContextualAddOnMarkupCard::class;
-    protected $cardsDataType = 'array';
-    /**
-     * @param GoogleChatV1ContextualAddOnMarkupCard[]
-     */
-    public function setCards($cards)
+namespace Google\Service\CloudSearch {
+    class GoogleChatV1ContextualAddOnMarkup extends \Google\Collection
     {
+        protected $collection_key = 'cards';
+        protected $cardsType = GoogleChatV1ContextualAddOnMarkupCard::class;
+        protected $cardsDataType = 'array';
+        /**
+         * @param GoogleChatV1ContextualAddOnMarkupCard[]
+         */
+        public function setCards($cards)
+        {
+        }
+        /**
+         * @return GoogleChatV1ContextualAddOnMarkupCard[]
+         */
+        public function getCards()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleChatV1ContextualAddOnMarkupCard[]
+     * Runtime class alias of \Google\Service\CloudSearch\GoogleChatV1ContextualAddOnMarkup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCards()
+    class Google_Service_CloudSearch_GoogleChatV1ContextualAddOnMarkup extends \Google\Service\CloudSearch\GoogleChatV1ContextualAddOnMarkup
     {
     }
 }

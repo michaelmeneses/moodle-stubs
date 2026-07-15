@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InterconnectGroupsCreateMembersRequest extends \Google\Model
-{
-    protected $requestType = InterconnectGroupsCreateMembers::class;
-    protected $requestDataType = '';
-    /**
-     * @param InterconnectGroupsCreateMembers $request
-     */
-    public function setRequest(InterconnectGroupsCreateMembers $request)
+namespace Google\Service\Compute {
+    class InterconnectGroupsCreateMembersRequest extends \Google\Model
     {
+        protected $requestType = InterconnectGroupsCreateMembers::class;
+        protected $requestDataType = '';
+        /**
+         * @param InterconnectGroupsCreateMembers $request
+         */
+        public function setRequest(InterconnectGroupsCreateMembers $request)
+        {
+        }
+        /**
+         * @return InterconnectGroupsCreateMembers
+         */
+        public function getRequest()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InterconnectGroupsCreateMembers
+     * Runtime class alias of \Google\Service\Compute\InterconnectGroupsCreateMembersRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequest()
+    class Google_Service_Compute_InterconnectGroupsCreateMembersRequest extends \Google\Service\Compute\InterconnectGroupsCreateMembersRequest
     {
     }
 }

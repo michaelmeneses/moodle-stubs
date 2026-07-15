@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1DateRange extends \Google\Model
-{
-    /**
-     * Required. End date (exclusive) of the data to export in the format `yyyy-
-     * mm-dd`. The date range ends at 00:00:00 UTC on the end date- which will not
-     * be in the output.
-     *
-     * @var string
-     */
-    public $end;
-    /**
-     * Required. Start date of the data to export in the format `yyyy-mm-dd`. The
-     * date range begins at 00:00:00 UTC on the start date.
-     *
-     * @var string
-     */
-    public $start;
-    /**
-     * Required. End date (exclusive) of the data to export in the format `yyyy-
-     * mm-dd`. The date range ends at 00:00:00 UTC on the end date- which will not
-     * be in the output.
-     *
-     * @param string $end
-     */
-    public function setEnd($end)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1DateRange extends \Google\Model
     {
+        /**
+         * Required. End date (exclusive) of the data to export in the format `yyyy-
+         * mm-dd`. The date range ends at 00:00:00 UTC on the end date- which will not
+         * be in the output.
+         *
+         * @var string
+         */
+        public $end;
+        /**
+         * Required. Start date of the data to export in the format `yyyy-mm-dd`. The
+         * date range begins at 00:00:00 UTC on the start date.
+         *
+         * @var string
+         */
+        public $start;
+        /**
+         * Required. End date (exclusive) of the data to export in the format `yyyy-
+         * mm-dd`. The date range ends at 00:00:00 UTC on the end date- which will not
+         * be in the output.
+         *
+         * @param string $end
+         */
+        public function setEnd($end)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEnd()
+        {
+        }
+        /**
+         * Required. Start date of the data to export in the format `yyyy-mm-dd`. The
+         * date range begins at 00:00:00 UTC on the start date.
+         *
+         * @param string $start
+         */
+        public function setStart($start)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStart()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1DateRange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnd()
-    {
-    }
-    /**
-     * Required. Start date of the data to export in the format `yyyy-mm-dd`. The
-     * date range begins at 00:00:00 UTC on the start date.
-     *
-     * @param string $start
-     */
-    public function setStart($start)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStart()
+    class Google_Service_Apigee_GoogleCloudApigeeV1DateRange extends \Google\Service\Apigee\GoogleCloudApigeeV1DateRange
     {
     }
 }

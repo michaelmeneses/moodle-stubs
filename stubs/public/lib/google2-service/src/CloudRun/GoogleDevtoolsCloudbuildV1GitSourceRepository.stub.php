@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleDevtoolsCloudbuildV1GitSourceRepository extends \Google\Model
-{
-    /**
-     * The Developer Connect Git repository link formatted as
-     * `projects/locations/connections/gitRepositoryLink`
-     *
-     * @var string
-     */
-    public $developerConnect;
-    /**
-     * Location of the Git repository.
-     *
-     * @var string
-     */
-    public $url;
-    /**
-     * The Developer Connect Git repository link formatted as
-     * `projects/locations/connections/gitRepositoryLink`
-     *
-     * @param string $developerConnect
-     */
-    public function setDeveloperConnect($developerConnect)
+namespace Google\Service\CloudRun {
+    class GoogleDevtoolsCloudbuildV1GitSourceRepository extends \Google\Model
     {
+        /**
+         * The Developer Connect Git repository link formatted as
+         * `projects/locations/connections/gitRepositoryLink`
+         *
+         * @var string
+         */
+        public $developerConnect;
+        /**
+         * Location of the Git repository.
+         *
+         * @var string
+         */
+        public $url;
+        /**
+         * The Developer Connect Git repository link formatted as
+         * `projects/locations/connections/gitRepositoryLink`
+         *
+         * @param string $developerConnect
+         */
+        public function setDeveloperConnect($developerConnect)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeveloperConnect()
+        {
+        }
+        /**
+         * Location of the Git repository.
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRun\GoogleDevtoolsCloudbuildV1GitSourceRepository registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeveloperConnect()
-    {
-    }
-    /**
-     * Location of the Git repository.
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
+    class Google_Service_CloudRun_GoogleDevtoolsCloudbuildV1GitSourceRepository extends \Google\Service\CloudRun\GoogleDevtoolsCloudbuildV1GitSourceRepository
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaTablesDatasetMetadataBigQuerySource extends \Google\Model
-{
-    /**
-     * The URI of a BigQuery table. e.g. bq://projectId.bqDatasetId.bqTableId
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * The URI of a BigQuery table. e.g. bq://projectId.bqDatasetId.bqTableId
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaTablesDatasetMetadataBigQuerySource extends \Google\Model
     {
+        /**
+         * The URI of a BigQuery table. e.g. bq://projectId.bqDatasetId.bqTableId
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * The URI of a BigQuery table. e.g. bq://projectId.bqDatasetId.bqTableId
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaTablesDatasetMetadataBigQuerySource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUri()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaTablesDatasetMetadataBigQuerySource extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaTablesDatasetMetadataBigQuerySource
     {
     }
 }

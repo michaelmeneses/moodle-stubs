@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1ListAssistantsResponse extends \Google\Collection
-{
-    protected $collection_key = 'assistants';
-    protected $assistantsType = GoogleCloudDiscoveryengineV1Assistant::class;
-    protected $assistantsDataType = 'array';
-    /**
-     * A token that can be sent as ListAssistantsRequest.page_token to retrieve
-     * the next page. If this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * All the customer's Assistants.
-     *
-     * @param GoogleCloudDiscoveryengineV1Assistant[] $assistants
-     */
-    public function setAssistants($assistants)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1ListAssistantsResponse extends \Google\Collection
     {
+        protected $collection_key = 'assistants';
+        protected $assistantsType = GoogleCloudDiscoveryengineV1Assistant::class;
+        protected $assistantsDataType = 'array';
+        /**
+         * A token that can be sent as ListAssistantsRequest.page_token to retrieve
+         * the next page. If this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * All the customer's Assistants.
+         *
+         * @param GoogleCloudDiscoveryengineV1Assistant[] $assistants
+         */
+        public function setAssistants($assistants)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1Assistant[]
+         */
+        public function getAssistants()
+        {
+        }
+        /**
+         * A token that can be sent as ListAssistantsRequest.page_token to retrieve
+         * the next page. If this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1Assistant[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ListAssistantsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssistants()
-    {
-    }
-    /**
-     * A token that can be sent as ListAssistantsRequest.page_token to retrieve
-     * the next page. If this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1ListAssistantsResponse extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ListAssistantsResponse
     {
     }
 }

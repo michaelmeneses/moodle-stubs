@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class ChannelBannerResource extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $etag;
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "youtube#channelBannerResource".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The URL of this banner image.
-     *
-     * @var string
-     */
-    public $url;
-    /**
-     * @param string $etag
-     */
-    public function setEtag($etag)
+namespace Google\Service\YouTube {
+    class ChannelBannerResource extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $etag;
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "youtube#channelBannerResource".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The URL of this banner image.
+         *
+         * @var string
+         */
+        public $url;
+        /**
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "youtube#channelBannerResource".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The URL of this banner image.
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\ChannelBannerResource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "youtube#channelBannerResource".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The URL of this banner image.
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
+    class Google_Service_YouTube_ChannelBannerResource extends \Google\Service\YouTube\ChannelBannerResource
     {
     }
 }

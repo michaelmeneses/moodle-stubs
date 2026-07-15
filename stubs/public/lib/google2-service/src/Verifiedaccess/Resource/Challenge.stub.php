@@ -21,38 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Verifiedaccess\Resource;
-
-/**
- * The "challenge" collection of methods.
- * Typical usage is:
- *  <code>
- *   $verifiedaccessService = new Google\Service\Verifiedaccess(...);
- *   $challenge = $verifiedaccessService->challenge;
- *  </code>
- */
-class Challenge extends \Google\Service\Resource
-{
+namespace Google\Service\Verifiedaccess\Resource {
+    use Google\Service\Verifiedaccess\Challenge as ChallengeModel;
+    use Google\Service\Verifiedaccess\VerifiedaccessEmpty;
+    use Google\Service\Verifiedaccess\VerifyChallengeResponseRequest;
+    use Google\Service\Verifiedaccess\VerifyChallengeResponseResult;
     /**
-     * Generates a new challenge. (challenge.generate)
-     *
-     * @param VerifiedaccessEmpty $postBody
-     * @param array $optParams Optional parameters.
-     * @return ChallengeModel
-     * @throws \Google\Service\Exception
+     * The "challenge" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $verifiedaccessService = new Google\Service\Verifiedaccess(...);
+     *   $challenge = $verifiedaccessService->challenge;
+     *  </code>
      */
-    public function generate(VerifiedaccessEmpty $postBody, $optParams = [])
+    class Challenge extends \Google\Service\Resource
     {
+        /**
+         * Generates a new challenge. (challenge.generate)
+         *
+         * @param VerifiedaccessEmpty $postBody
+         * @param array $optParams Optional parameters.
+         * @return ChallengeModel
+         * @throws \Google\Service\Exception
+         */
+        public function generate(VerifiedaccessEmpty $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Verifies the challenge response. (challenge.verify)
+         *
+         * @param VerifyChallengeResponseRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return VerifyChallengeResponseResult
+         * @throws \Google\Service\Exception
+         */
+        public function verify(VerifyChallengeResponseRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Verifies the challenge response. (challenge.verify)
-     *
-     * @param VerifyChallengeResponseRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return VerifyChallengeResponseResult
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Verifiedaccess\Resource\Challenge registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function verify(VerifyChallengeResponseRequest $postBody, $optParams = [])
+    class Google_Service_Verifiedaccess_Resource_Challenge extends \Google\Service\Verifiedaccess\Resource\Challenge
     {
     }
 }

@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIdentity;
-
-class ListInboundSsoAssignmentsResponse extends \Google\Collection
-{
-    protected $collection_key = 'inboundSsoAssignments';
-    protected $inboundSsoAssignmentsType = InboundSsoAssignment::class;
-    protected $inboundSsoAssignmentsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The assignments.
-     *
-     * @param InboundSsoAssignment[] $inboundSsoAssignments
-     */
-    public function setInboundSsoAssignments($inboundSsoAssignments)
+namespace Google\Service\CloudIdentity {
+    class ListInboundSsoAssignmentsResponse extends \Google\Collection
     {
+        protected $collection_key = 'inboundSsoAssignments';
+        protected $inboundSsoAssignmentsType = InboundSsoAssignment::class;
+        protected $inboundSsoAssignmentsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The assignments.
+         *
+         * @param InboundSsoAssignment[] $inboundSsoAssignments
+         */
+        public function setInboundSsoAssignments($inboundSsoAssignments)
+        {
+        }
+        /**
+         * @return InboundSsoAssignment[]
+         */
+        public function getInboundSsoAssignments()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InboundSsoAssignment[]
+     * Runtime class alias of \Google\Service\CloudIdentity\ListInboundSsoAssignmentsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInboundSsoAssignments()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_CloudIdentity_ListInboundSsoAssignmentsResponse extends \Google\Service\CloudIdentity\ListInboundSsoAssignmentsResponse
     {
     }
 }

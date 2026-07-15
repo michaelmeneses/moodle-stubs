@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudDocumentaiV1DocumentPageDetectedLanguage extends \Google\Model
-{
-    /**
-     * Confidence of detected language. Range `[0, 1]`.
-     *
-     * @var float
-     */
-    public $confidence;
-    /**
-     * The [BCP-47 language
-     * code](https://www.unicode.org/reports/tr35/#Unicode_locale_identifier),
-     * such as `en-US` or `sr-Latn`.
-     *
-     * @var string
-     */
-    public $languageCode;
-    /**
-     * Confidence of detected language. Range `[0, 1]`.
-     *
-     * @param float $confidence
-     */
-    public function setConfidence($confidence)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudDocumentaiV1DocumentPageDetectedLanguage extends \Google\Model
     {
+        /**
+         * Confidence of detected language. Range `[0, 1]`.
+         *
+         * @var float
+         */
+        public $confidence;
+        /**
+         * The [BCP-47 language
+         * code](https://www.unicode.org/reports/tr35/#Unicode_locale_identifier),
+         * such as `en-US` or `sr-Latn`.
+         *
+         * @var string
+         */
+        public $languageCode;
+        /**
+         * Confidence of detected language. Range `[0, 1]`.
+         *
+         * @param float $confidence
+         */
+        public function setConfidence($confidence)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getConfidence()
+        {
+        }
+        /**
+         * The [BCP-47 language
+         * code](https://www.unicode.org/reports/tr35/#Unicode_locale_identifier),
+         * such as `en-US` or `sr-Latn`.
+         *
+         * @param string $languageCode
+         */
+        public function setLanguageCode($languageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLanguageCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudDocumentaiV1DocumentPageDetectedLanguage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfidence()
-    {
-    }
-    /**
-     * The [BCP-47 language
-     * code](https://www.unicode.org/reports/tr35/#Unicode_locale_identifier),
-     * such as `en-US` or `sr-Latn`.
-     *
-     * @param string $languageCode
-     */
-    public function setLanguageCode($languageCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLanguageCode()
+    class Google_Service_Contentwarehouse_GoogleCloudDocumentaiV1DocumentPageDetectedLanguage extends \Google\Service\Contentwarehouse\GoogleCloudDocumentaiV1DocumentPageDetectedLanguage
     {
     }
 }

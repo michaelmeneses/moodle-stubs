@@ -21,27 +21,36 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class AssetPerformanceData extends \Google\Collection
-{
-    protected $collection_key = 'dailyResourceUsageAggregations';
-    protected $dailyResourceUsageAggregationsType = DailyResourceUsageAggregation::class;
-    protected $dailyResourceUsageAggregationsDataType = 'array';
-    /**
-     * Daily resource usage aggregations. Contains all of the data available for
-     * an asset, up to the last 420 days. Aggregations are sorted from oldest to
-     * most recent.
-     *
-     * @param DailyResourceUsageAggregation[] $dailyResourceUsageAggregations
-     */
-    public function setDailyResourceUsageAggregations($dailyResourceUsageAggregations)
+namespace Google\Service\MigrationCenterAPI {
+    class AssetPerformanceData extends \Google\Collection
     {
+        protected $collection_key = 'dailyResourceUsageAggregations';
+        protected $dailyResourceUsageAggregationsType = DailyResourceUsageAggregation::class;
+        protected $dailyResourceUsageAggregationsDataType = 'array';
+        /**
+         * Daily resource usage aggregations. Contains all of the data available for
+         * an asset, up to the last 420 days. Aggregations are sorted from oldest to
+         * most recent.
+         *
+         * @param DailyResourceUsageAggregation[] $dailyResourceUsageAggregations
+         */
+        public function setDailyResourceUsageAggregations($dailyResourceUsageAggregations)
+        {
+        }
+        /**
+         * @return DailyResourceUsageAggregation[]
+         */
+        public function getDailyResourceUsageAggregations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DailyResourceUsageAggregation[]
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\AssetPerformanceData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDailyResourceUsageAggregations()
+    class Google_Service_MigrationCenterAPI_AssetPerformanceData extends \Google\Service\MigrationCenterAPI\AssetPerformanceData
     {
     }
 }

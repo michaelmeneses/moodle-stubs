@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class BatchGetValuesByDataFilterResponse extends \Google\Collection
-{
-    protected $collection_key = 'valueRanges';
-    /**
-     * The ID of the spreadsheet the data was retrieved from.
-     *
-     * @var string
-     */
-    public $spreadsheetId;
-    protected $valueRangesType = MatchedValueRange::class;
-    protected $valueRangesDataType = 'array';
-    /**
-     * The ID of the spreadsheet the data was retrieved from.
-     *
-     * @param string $spreadsheetId
-     */
-    public function setSpreadsheetId($spreadsheetId)
+namespace Google\Service\Sheets {
+    class BatchGetValuesByDataFilterResponse extends \Google\Collection
     {
+        protected $collection_key = 'valueRanges';
+        /**
+         * The ID of the spreadsheet the data was retrieved from.
+         *
+         * @var string
+         */
+        public $spreadsheetId;
+        protected $valueRangesType = MatchedValueRange::class;
+        protected $valueRangesDataType = 'array';
+        /**
+         * The ID of the spreadsheet the data was retrieved from.
+         *
+         * @param string $spreadsheetId
+         */
+        public function setSpreadsheetId($spreadsheetId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSpreadsheetId()
+        {
+        }
+        /**
+         * The requested values with the list of data filters that matched them.
+         *
+         * @param MatchedValueRange[] $valueRanges
+         */
+        public function setValueRanges($valueRanges)
+        {
+        }
+        /**
+         * @return MatchedValueRange[]
+         */
+        public function getValueRanges()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Sheets\BatchGetValuesByDataFilterResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSpreadsheetId()
-    {
-    }
-    /**
-     * The requested values with the list of data filters that matched them.
-     *
-     * @param MatchedValueRange[] $valueRanges
-     */
-    public function setValueRanges($valueRanges)
-    {
-    }
-    /**
-     * @return MatchedValueRange[]
-     */
-    public function getValueRanges()
+    class Google_Service_Sheets_BatchGetValuesByDataFilterResponse extends \Google\Service\Sheets\BatchGetValuesByDataFilterResponse
     {
     }
 }

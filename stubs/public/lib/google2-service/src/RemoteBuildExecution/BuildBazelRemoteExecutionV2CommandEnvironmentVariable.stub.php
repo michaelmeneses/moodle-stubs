@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution;
-
-class BuildBazelRemoteExecutionV2CommandEnvironmentVariable extends \Google\Model
-{
-    public $name;
-    public $value;
-    public function setName($name)
+namespace Google\Service\RemoteBuildExecution {
+    class BuildBazelRemoteExecutionV2CommandEnvironmentVariable extends \Google\Model
     {
+        public $name;
+        public $value;
+        public function setName($name)
+        {
+        }
+        public function getName()
+        {
+        }
+        public function setValue($value)
+        {
+        }
+        public function getValue()
+        {
+        }
     }
-    public function getName()
-    {
-    }
-    public function setValue($value)
-    {
-    }
-    public function getValue()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2CommandEnvironmentVariable registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_RemoteBuildExecution_BuildBazelRemoteExecutionV2CommandEnvironmentVariable extends \Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2CommandEnvironmentVariable
     {
     }
 }

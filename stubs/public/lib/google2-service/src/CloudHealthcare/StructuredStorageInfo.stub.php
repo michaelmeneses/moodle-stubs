@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class StructuredStorageInfo extends \Google\Model
-{
-    /**
-     * Size in bytes of data stored in structured storage.
-     *
-     * @var string
-     */
-    public $sizeBytes;
-    /**
-     * Size in bytes of data stored in structured storage.
-     *
-     * @param string $sizeBytes
-     */
-    public function setSizeBytes($sizeBytes)
+namespace Google\Service\CloudHealthcare {
+    class StructuredStorageInfo extends \Google\Model
     {
+        /**
+         * Size in bytes of data stored in structured storage.
+         *
+         * @var string
+         */
+        public $sizeBytes;
+        /**
+         * Size in bytes of data stored in structured storage.
+         *
+         * @param string $sizeBytes
+         */
+        public function setSizeBytes($sizeBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSizeBytes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudHealthcare\StructuredStorageInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSizeBytes()
+    class Google_Service_CloudHealthcare_StructuredStorageInfo extends \Google\Service\CloudHealthcare\StructuredStorageInfo
     {
     }
 }

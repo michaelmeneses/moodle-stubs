@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class BareMetalAdminMachineDrainStatus extends \Google\Collection
-{
-    protected $collection_key = 'drainingMachines';
-    protected $drainedMachinesType = BareMetalAdminDrainedMachine::class;
-    protected $drainedMachinesDataType = 'array';
-    protected $drainingMachinesType = BareMetalAdminDrainingMachine::class;
-    protected $drainingMachinesDataType = 'array';
-    /**
-     * The list of drained machines.
-     *
-     * @param BareMetalAdminDrainedMachine[] $drainedMachines
-     */
-    public function setDrainedMachines($drainedMachines)
+namespace Google\Service\GKEOnPrem {
+    class BareMetalAdminMachineDrainStatus extends \Google\Collection
     {
+        protected $collection_key = 'drainingMachines';
+        protected $drainedMachinesType = BareMetalAdminDrainedMachine::class;
+        protected $drainedMachinesDataType = 'array';
+        protected $drainingMachinesType = BareMetalAdminDrainingMachine::class;
+        protected $drainingMachinesDataType = 'array';
+        /**
+         * The list of drained machines.
+         *
+         * @param BareMetalAdminDrainedMachine[] $drainedMachines
+         */
+        public function setDrainedMachines($drainedMachines)
+        {
+        }
+        /**
+         * @return BareMetalAdminDrainedMachine[]
+         */
+        public function getDrainedMachines()
+        {
+        }
+        /**
+         * The list of draning machines.
+         *
+         * @param BareMetalAdminDrainingMachine[] $drainingMachines
+         */
+        public function setDrainingMachines($drainingMachines)
+        {
+        }
+        /**
+         * @return BareMetalAdminDrainingMachine[]
+         */
+        public function getDrainingMachines()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BareMetalAdminDrainedMachine[]
+     * Runtime class alias of \Google\Service\GKEOnPrem\BareMetalAdminMachineDrainStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDrainedMachines()
-    {
-    }
-    /**
-     * The list of draning machines.
-     *
-     * @param BareMetalAdminDrainingMachine[] $drainingMachines
-     */
-    public function setDrainingMachines($drainingMachines)
-    {
-    }
-    /**
-     * @return BareMetalAdminDrainingMachine[]
-     */
-    public function getDrainingMachines()
+    class Google_Service_GKEOnPrem_BareMetalAdminMachineDrainStatus extends \Google\Service\GKEOnPrem\BareMetalAdminMachineDrainStatus
     {
     }
 }

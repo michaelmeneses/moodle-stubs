@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDomains;
-
-class RetrieveGoogleDomainsForwardingConfigResponse extends \Google\Collection
-{
-    protected $collection_key = 'emailForwardings';
-    protected $domainForwardingsType = DomainForwarding::class;
-    protected $domainForwardingsDataType = 'array';
-    protected $emailForwardingsType = EmailForwarding::class;
-    protected $emailForwardingsDataType = 'array';
-    /**
-     * The list of domain forwarding configurations. A forwarding configuration
-     * might not work correctly if the required DNS records are not present in the
-     * domain's authoritative DNS zone.
-     *
-     * @param DomainForwarding[] $domainForwardings
-     */
-    public function setDomainForwardings($domainForwardings)
+namespace Google\Service\CloudDomains {
+    class RetrieveGoogleDomainsForwardingConfigResponse extends \Google\Collection
     {
+        protected $collection_key = 'emailForwardings';
+        protected $domainForwardingsType = DomainForwarding::class;
+        protected $domainForwardingsDataType = 'array';
+        protected $emailForwardingsType = EmailForwarding::class;
+        protected $emailForwardingsDataType = 'array';
+        /**
+         * The list of domain forwarding configurations. A forwarding configuration
+         * might not work correctly if the required DNS records are not present in the
+         * domain's authoritative DNS zone.
+         *
+         * @param DomainForwarding[] $domainForwardings
+         */
+        public function setDomainForwardings($domainForwardings)
+        {
+        }
+        /**
+         * @return DomainForwarding[]
+         */
+        public function getDomainForwardings()
+        {
+        }
+        /**
+         * The list of email forwarding configurations. A forwarding configuration
+         * might not work correctly if the required DNS records are not present in the
+         * domain's authoritative DNS zone.
+         *
+         * @param EmailForwarding[] $emailForwardings
+         */
+        public function setEmailForwardings($emailForwardings)
+        {
+        }
+        /**
+         * @return EmailForwarding[]
+         */
+        public function getEmailForwardings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DomainForwarding[]
+     * Runtime class alias of \Google\Service\CloudDomains\RetrieveGoogleDomainsForwardingConfigResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDomainForwardings()
-    {
-    }
-    /**
-     * The list of email forwarding configurations. A forwarding configuration
-     * might not work correctly if the required DNS records are not present in the
-     * domain's authoritative DNS zone.
-     *
-     * @param EmailForwarding[] $emailForwardings
-     */
-    public function setEmailForwardings($emailForwardings)
-    {
-    }
-    /**
-     * @return EmailForwarding[]
-     */
-    public function getEmailForwardings()
+    class Google_Service_CloudDomains_RetrieveGoogleDomainsForwardingConfigResponse extends \Google\Service\CloudDomains\RetrieveGoogleDomainsForwardingConfigResponse
     {
     }
 }

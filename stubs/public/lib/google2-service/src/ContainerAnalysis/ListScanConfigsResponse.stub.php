@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class ListScanConfigsResponse extends \Google\Collection
-{
-    protected $collection_key = 'scanConfigs';
-    public $nextPageToken;
-    protected $scanConfigsType = ScanConfig::class;
-    protected $scanConfigsDataType = 'array';
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\ContainerAnalysis {
+    class ListScanConfigsResponse extends \Google\Collection
     {
+        protected $collection_key = 'scanConfigs';
+        public $nextPageToken;
+        protected $scanConfigsType = ScanConfig::class;
+        protected $scanConfigsDataType = 'array';
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param ScanConfig[]
+         */
+        public function setScanConfigs($scanConfigs)
+        {
+        }
+        /**
+         * @return ScanConfig[]
+         */
+        public function getScanConfigs()
+        {
+        }
     }
-    public function getNextPageToken()
-    {
-    }
+}
+namespace {
     /**
-     * @param ScanConfig[]
+     * Runtime class alias of \Google\Service\ContainerAnalysis\ListScanConfigsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setScanConfigs($scanConfigs)
-    {
-    }
-    /**
-     * @return ScanConfig[]
-     */
-    public function getScanConfigs()
+    class Google_Service_ContainerAnalysis_ListScanConfigsResponse extends \Google\Service\ContainerAnalysis\ListScanConfigsResponse
     {
     }
 }

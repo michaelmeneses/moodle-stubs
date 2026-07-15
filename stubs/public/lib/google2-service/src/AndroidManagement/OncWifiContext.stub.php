@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class OncWifiContext extends \Google\Model
-{
-    /**
-     * The GUID of non-compliant Wi-Fi configuration.
-     *
-     * @var string
-     */
-    public $wifiGuid;
-    /**
-     * The GUID of non-compliant Wi-Fi configuration.
-     *
-     * @param string $wifiGuid
-     */
-    public function setWifiGuid($wifiGuid)
+namespace Google\Service\AndroidManagement {
+    class OncWifiContext extends \Google\Model
     {
+        /**
+         * The GUID of non-compliant Wi-Fi configuration.
+         *
+         * @var string
+         */
+        public $wifiGuid;
+        /**
+         * The GUID of non-compliant Wi-Fi configuration.
+         *
+         * @param string $wifiGuid
+         */
+        public function setWifiGuid($wifiGuid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWifiGuid()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidManagement\OncWifiContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getWifiGuid()
+    class Google_Service_AndroidManagement_OncWifiContext extends \Google\Service\AndroidManagement\OncWifiContext
     {
     }
 }

@@ -21,221 +21,230 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class OrderTrackingSignalLineItemDetails extends \Google\Model
-{
-    /**
-     * Brand of the product.
-     *
-     * @var string
-     */
-    public $brand;
-    /**
-     * The Global Trade Item Number.
-     *
-     * @var string
-     */
-    public $gtin;
-    /**
-     * Required. The ID for this line item.
-     *
-     * @var string
-     */
-    public $lineItemId;
-    /**
-     * The manufacturer part number.
-     *
-     * @var string
-     */
-    public $mpn;
-    /**
-     * Plain text description of this product (deprecated: Please use
-     * product_title instead).
-     *
-     * @deprecated
-     * @var string
-     */
-    public $productDescription;
-    /**
-     * Required. The Content API REST ID of the product, in the form
-     * channel:contentLanguage:targetCountry:offerId.
-     *
-     * @var string
-     */
-    public $productId;
-    /**
-     * Plain text title of this product.
-     *
-     * @var string
-     */
-    public $productTitle;
-    /**
-     * The quantity of the line item in the order.
-     *
-     * @var string
-     */
-    public $quantity;
-    /**
-     * Merchant SKU for this item (deprecated).
-     *
-     * @deprecated
-     * @var string
-     */
-    public $sku;
-    /**
-     * Universal product code for this item (deprecated: Please use GTIN instead).
-     *
-     * @deprecated
-     * @var string
-     */
-    public $upc;
-    /**
-     * Brand of the product.
-     *
-     * @param string $brand
-     */
-    public function setBrand($brand)
+namespace Google\Service\ShoppingContent {
+    class OrderTrackingSignalLineItemDetails extends \Google\Model
     {
+        /**
+         * Brand of the product.
+         *
+         * @var string
+         */
+        public $brand;
+        /**
+         * The Global Trade Item Number.
+         *
+         * @var string
+         */
+        public $gtin;
+        /**
+         * Required. The ID for this line item.
+         *
+         * @var string
+         */
+        public $lineItemId;
+        /**
+         * The manufacturer part number.
+         *
+         * @var string
+         */
+        public $mpn;
+        /**
+         * Plain text description of this product (deprecated: Please use
+         * product_title instead).
+         *
+         * @deprecated
+         * @var string
+         */
+        public $productDescription;
+        /**
+         * Required. The Content API REST ID of the product, in the form
+         * channel:contentLanguage:targetCountry:offerId.
+         *
+         * @var string
+         */
+        public $productId;
+        /**
+         * Plain text title of this product.
+         *
+         * @var string
+         */
+        public $productTitle;
+        /**
+         * The quantity of the line item in the order.
+         *
+         * @var string
+         */
+        public $quantity;
+        /**
+         * Merchant SKU for this item (deprecated).
+         *
+         * @deprecated
+         * @var string
+         */
+        public $sku;
+        /**
+         * Universal product code for this item (deprecated: Please use GTIN instead).
+         *
+         * @deprecated
+         * @var string
+         */
+        public $upc;
+        /**
+         * Brand of the product.
+         *
+         * @param string $brand
+         */
+        public function setBrand($brand)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBrand()
+        {
+        }
+        /**
+         * The Global Trade Item Number.
+         *
+         * @param string $gtin
+         */
+        public function setGtin($gtin)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGtin()
+        {
+        }
+        /**
+         * Required. The ID for this line item.
+         *
+         * @param string $lineItemId
+         */
+        public function setLineItemId($lineItemId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLineItemId()
+        {
+        }
+        /**
+         * The manufacturer part number.
+         *
+         * @param string $mpn
+         */
+        public function setMpn($mpn)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMpn()
+        {
+        }
+        /**
+         * Plain text description of this product (deprecated: Please use
+         * product_title instead).
+         *
+         * @deprecated
+         * @param string $productDescription
+         */
+        public function setProductDescription($productDescription)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getProductDescription()
+        {
+        }
+        /**
+         * Required. The Content API REST ID of the product, in the form
+         * channel:contentLanguage:targetCountry:offerId.
+         *
+         * @param string $productId
+         */
+        public function setProductId($productId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProductId()
+        {
+        }
+        /**
+         * Plain text title of this product.
+         *
+         * @param string $productTitle
+         */
+        public function setProductTitle($productTitle)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProductTitle()
+        {
+        }
+        /**
+         * The quantity of the line item in the order.
+         *
+         * @param string $quantity
+         */
+        public function setQuantity($quantity)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQuantity()
+        {
+        }
+        /**
+         * Merchant SKU for this item (deprecated).
+         *
+         * @deprecated
+         * @param string $sku
+         */
+        public function setSku($sku)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getSku()
+        {
+        }
+        /**
+         * Universal product code for this item (deprecated: Please use GTIN instead).
+         *
+         * @deprecated
+         * @param string $upc
+         */
+        public function setUpc($upc)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getUpc()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\OrderTrackingSignalLineItemDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBrand()
-    {
-    }
-    /**
-     * The Global Trade Item Number.
-     *
-     * @param string $gtin
-     */
-    public function setGtin($gtin)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGtin()
-    {
-    }
-    /**
-     * Required. The ID for this line item.
-     *
-     * @param string $lineItemId
-     */
-    public function setLineItemId($lineItemId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLineItemId()
-    {
-    }
-    /**
-     * The manufacturer part number.
-     *
-     * @param string $mpn
-     */
-    public function setMpn($mpn)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMpn()
-    {
-    }
-    /**
-     * Plain text description of this product (deprecated: Please use
-     * product_title instead).
-     *
-     * @deprecated
-     * @param string $productDescription
-     */
-    public function setProductDescription($productDescription)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getProductDescription()
-    {
-    }
-    /**
-     * Required. The Content API REST ID of the product, in the form
-     * channel:contentLanguage:targetCountry:offerId.
-     *
-     * @param string $productId
-     */
-    public function setProductId($productId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProductId()
-    {
-    }
-    /**
-     * Plain text title of this product.
-     *
-     * @param string $productTitle
-     */
-    public function setProductTitle($productTitle)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProductTitle()
-    {
-    }
-    /**
-     * The quantity of the line item in the order.
-     *
-     * @param string $quantity
-     */
-    public function setQuantity($quantity)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQuantity()
-    {
-    }
-    /**
-     * Merchant SKU for this item (deprecated).
-     *
-     * @deprecated
-     * @param string $sku
-     */
-    public function setSku($sku)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getSku()
-    {
-    }
-    /**
-     * Universal product code for this item (deprecated: Please use GTIN instead).
-     *
-     * @deprecated
-     * @param string $upc
-     */
-    public function setUpc($upc)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getUpc()
+    class Google_Service_ShoppingContent_OrderTrackingSignalLineItemDetails extends \Google\Service\ShoppingContent\OrderTrackingSignalLineItemDetails
     {
     }
 }

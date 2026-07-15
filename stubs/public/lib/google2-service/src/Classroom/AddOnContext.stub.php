@@ -21,129 +21,138 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Classroom;
-
-class AddOnContext extends \Google\Model
-{
-    /**
-     * Immutable. Identifier of the course.
-     *
-     * @var string
-     */
-    public $courseId;
-    /**
-     * Immutable. Identifier of the `Announcement`, `CourseWork`, or
-     * `CourseWorkMaterial` under which the attachment is attached.
-     *
-     * @var string
-     */
-    public $itemId;
-    /**
-     * Immutable. Deprecated, use `item_id` instead.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $postId;
-    protected $studentContextType = StudentContext::class;
-    protected $studentContextDataType = '';
-    /**
-     * Optional. Whether the post allows the teacher to see student work and
-     * passback grades.
-     *
-     * @var bool
-     */
-    public $supportsStudentWork;
-    protected $teacherContextType = TeacherContext::class;
-    protected $teacherContextDataType = '';
-    /**
-     * Immutable. Identifier of the course.
-     *
-     * @param string $courseId
-     */
-    public function setCourseId($courseId)
+namespace Google\Service\Classroom {
+    class AddOnContext extends \Google\Model
     {
+        /**
+         * Immutable. Identifier of the course.
+         *
+         * @var string
+         */
+        public $courseId;
+        /**
+         * Immutable. Identifier of the `Announcement`, `CourseWork`, or
+         * `CourseWorkMaterial` under which the attachment is attached.
+         *
+         * @var string
+         */
+        public $itemId;
+        /**
+         * Immutable. Deprecated, use `item_id` instead.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $postId;
+        protected $studentContextType = StudentContext::class;
+        protected $studentContextDataType = '';
+        /**
+         * Optional. Whether the post allows the teacher to see student work and
+         * passback grades.
+         *
+         * @var bool
+         */
+        public $supportsStudentWork;
+        protected $teacherContextType = TeacherContext::class;
+        protected $teacherContextDataType = '';
+        /**
+         * Immutable. Identifier of the course.
+         *
+         * @param string $courseId
+         */
+        public function setCourseId($courseId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCourseId()
+        {
+        }
+        /**
+         * Immutable. Identifier of the `Announcement`, `CourseWork`, or
+         * `CourseWorkMaterial` under which the attachment is attached.
+         *
+         * @param string $itemId
+         */
+        public function setItemId($itemId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getItemId()
+        {
+        }
+        /**
+         * Immutable. Deprecated, use `item_id` instead.
+         *
+         * @deprecated
+         * @param string $postId
+         */
+        public function setPostId($postId)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getPostId()
+        {
+        }
+        /**
+         * Add-on context corresponding to the requesting user's role as a student.
+         * Its presence implies that the requesting user is a student in the course.
+         *
+         * @param StudentContext $studentContext
+         */
+        public function setStudentContext(StudentContext $studentContext)
+        {
+        }
+        /**
+         * @return StudentContext
+         */
+        public function getStudentContext()
+        {
+        }
+        /**
+         * Optional. Whether the post allows the teacher to see student work and
+         * passback grades.
+         *
+         * @param bool $supportsStudentWork
+         */
+        public function setSupportsStudentWork($supportsStudentWork)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSupportsStudentWork()
+        {
+        }
+        /**
+         * Add-on context corresponding to the requesting user's role as a teacher.
+         * Its presence implies that the requesting user is a teacher in the course.
+         *
+         * @param TeacherContext $teacherContext
+         */
+        public function setTeacherContext(TeacherContext $teacherContext)
+        {
+        }
+        /**
+         * @return TeacherContext
+         */
+        public function getTeacherContext()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Classroom\AddOnContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCourseId()
-    {
-    }
-    /**
-     * Immutable. Identifier of the `Announcement`, `CourseWork`, or
-     * `CourseWorkMaterial` under which the attachment is attached.
-     *
-     * @param string $itemId
-     */
-    public function setItemId($itemId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getItemId()
-    {
-    }
-    /**
-     * Immutable. Deprecated, use `item_id` instead.
-     *
-     * @deprecated
-     * @param string $postId
-     */
-    public function setPostId($postId)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getPostId()
-    {
-    }
-    /**
-     * Add-on context corresponding to the requesting user's role as a student.
-     * Its presence implies that the requesting user is a student in the course.
-     *
-     * @param StudentContext $studentContext
-     */
-    public function setStudentContext(StudentContext $studentContext)
-    {
-    }
-    /**
-     * @return StudentContext
-     */
-    public function getStudentContext()
-    {
-    }
-    /**
-     * Optional. Whether the post allows the teacher to see student work and
-     * passback grades.
-     *
-     * @param bool $supportsStudentWork
-     */
-    public function setSupportsStudentWork($supportsStudentWork)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSupportsStudentWork()
-    {
-    }
-    /**
-     * Add-on context corresponding to the requesting user's role as a teacher.
-     * Its presence implies that the requesting user is a teacher in the course.
-     *
-     * @param TeacherContext $teacherContext
-     */
-    public function setTeacherContext(TeacherContext $teacherContext)
-    {
-    }
-    /**
-     * @return TeacherContext
-     */
-    public function getTeacherContext()
+    class Google_Service_Classroom_AddOnContext extends \Google\Service\Classroom\AddOnContext
     {
     }
 }

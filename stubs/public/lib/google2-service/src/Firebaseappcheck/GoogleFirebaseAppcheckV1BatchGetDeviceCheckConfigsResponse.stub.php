@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firebaseappcheck;
-
-class GoogleFirebaseAppcheckV1BatchGetDeviceCheckConfigsResponse extends \Google\Collection
-{
-    protected $collection_key = 'configs';
-    protected $configsType = GoogleFirebaseAppcheckV1DeviceCheckConfig::class;
-    protected $configsDataType = 'array';
-    /**
-     * DeviceCheckConfigs retrieved.
-     *
-     * @param GoogleFirebaseAppcheckV1DeviceCheckConfig[] $configs
-     */
-    public function setConfigs($configs)
+namespace Google\Service\Firebaseappcheck {
+    class GoogleFirebaseAppcheckV1BatchGetDeviceCheckConfigsResponse extends \Google\Collection
     {
+        protected $collection_key = 'configs';
+        protected $configsType = GoogleFirebaseAppcheckV1DeviceCheckConfig::class;
+        protected $configsDataType = 'array';
+        /**
+         * DeviceCheckConfigs retrieved.
+         *
+         * @param GoogleFirebaseAppcheckV1DeviceCheckConfig[] $configs
+         */
+        public function setConfigs($configs)
+        {
+        }
+        /**
+         * @return GoogleFirebaseAppcheckV1DeviceCheckConfig[]
+         */
+        public function getConfigs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleFirebaseAppcheckV1DeviceCheckConfig[]
+     * Runtime class alias of \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1BatchGetDeviceCheckConfigsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfigs()
+    class Google_Service_Firebaseappcheck_GoogleFirebaseAppcheckV1BatchGetDeviceCheckConfigsResponse extends \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1BatchGetDeviceCheckConfigsResponse
     {
     }
 }

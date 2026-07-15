@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1StreamingPredictResponse extends \Google\Collection
-{
-    protected $collection_key = 'outputs';
-    protected $outputsType = GoogleCloudAiplatformV1Tensor::class;
-    protected $outputsDataType = 'array';
-    protected $parametersType = GoogleCloudAiplatformV1Tensor::class;
-    protected $parametersDataType = '';
-    /**
-     * The prediction output.
-     *
-     * @param GoogleCloudAiplatformV1Tensor[] $outputs
-     */
-    public function setOutputs($outputs)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1StreamingPredictResponse extends \Google\Collection
     {
+        protected $collection_key = 'outputs';
+        protected $outputsType = GoogleCloudAiplatformV1Tensor::class;
+        protected $outputsDataType = 'array';
+        protected $parametersType = GoogleCloudAiplatformV1Tensor::class;
+        protected $parametersDataType = '';
+        /**
+         * The prediction output.
+         *
+         * @param GoogleCloudAiplatformV1Tensor[] $outputs
+         */
+        public function setOutputs($outputs)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1Tensor[]
+         */
+        public function getOutputs()
+        {
+        }
+        /**
+         * The parameters that govern the prediction.
+         *
+         * @param GoogleCloudAiplatformV1Tensor $parameters
+         */
+        public function setParameters(GoogleCloudAiplatformV1Tensor $parameters)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1Tensor
+         */
+        public function getParameters()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1Tensor[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1StreamingPredictResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOutputs()
-    {
-    }
-    /**
-     * The parameters that govern the prediction.
-     *
-     * @param GoogleCloudAiplatformV1Tensor $parameters
-     */
-    public function setParameters(GoogleCloudAiplatformV1Tensor $parameters)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1Tensor
-     */
-    public function getParameters()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1StreamingPredictResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1StreamingPredictResponse
     {
     }
 }

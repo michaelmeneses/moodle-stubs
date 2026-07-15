@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class VmwareAdminHAControlPlaneConfig extends \Google\Model
-{
-    protected $controlPlaneIpBlockType = VmwareIpBlock::class;
-    protected $controlPlaneIpBlockDataType = '';
-    /**
-     * Static IP addresses for the admin control plane nodes.
-     *
-     * @param VmwareIpBlock $controlPlaneIpBlock
-     */
-    public function setControlPlaneIpBlock(VmwareIpBlock $controlPlaneIpBlock)
+namespace Google\Service\GKEOnPrem {
+    class VmwareAdminHAControlPlaneConfig extends \Google\Model
     {
+        protected $controlPlaneIpBlockType = VmwareIpBlock::class;
+        protected $controlPlaneIpBlockDataType = '';
+        /**
+         * Static IP addresses for the admin control plane nodes.
+         *
+         * @param VmwareIpBlock $controlPlaneIpBlock
+         */
+        public function setControlPlaneIpBlock(VmwareIpBlock $controlPlaneIpBlock)
+        {
+        }
+        /**
+         * @return VmwareIpBlock
+         */
+        public function getControlPlaneIpBlock()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return VmwareIpBlock
+     * Runtime class alias of \Google\Service\GKEOnPrem\VmwareAdminHAControlPlaneConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getControlPlaneIpBlock()
+    class Google_Service_GKEOnPrem_VmwareAdminHAControlPlaneConfig extends \Google\Service\GKEOnPrem\VmwareAdminHAControlPlaneConfig
     {
     }
 }

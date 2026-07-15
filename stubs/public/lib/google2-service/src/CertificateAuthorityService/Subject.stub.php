@@ -21,185 +21,194 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CertificateAuthorityService;
-
-class Subject extends \Google\Collection
-{
-    protected $collection_key = 'rdnSequence';
-    /**
-     * The "common name" of the subject.
-     *
-     * @var string
-     */
-    public $commonName;
-    /**
-     * The country code of the subject.
-     *
-     * @var string
-     */
-    public $countryCode;
-    /**
-     * The locality or city of the subject.
-     *
-     * @var string
-     */
-    public $locality;
-    /**
-     * The organization of the subject.
-     *
-     * @var string
-     */
-    public $organization;
-    /**
-     * The organizational_unit of the subject.
-     *
-     * @var string
-     */
-    public $organizationalUnit;
-    /**
-     * The postal code of the subject.
-     *
-     * @var string
-     */
-    public $postalCode;
-    /**
-     * The province, territory, or regional state of the subject.
-     *
-     * @var string
-     */
-    public $province;
-    protected $rdnSequenceType = RelativeDistinguishedName::class;
-    protected $rdnSequenceDataType = 'array';
-    /**
-     * The street address of the subject.
-     *
-     * @var string
-     */
-    public $streetAddress;
-    /**
-     * The "common name" of the subject.
-     *
-     * @param string $commonName
-     */
-    public function setCommonName($commonName)
+namespace Google\Service\CertificateAuthorityService {
+    class Subject extends \Google\Collection
     {
+        protected $collection_key = 'rdnSequence';
+        /**
+         * The "common name" of the subject.
+         *
+         * @var string
+         */
+        public $commonName;
+        /**
+         * The country code of the subject.
+         *
+         * @var string
+         */
+        public $countryCode;
+        /**
+         * The locality or city of the subject.
+         *
+         * @var string
+         */
+        public $locality;
+        /**
+         * The organization of the subject.
+         *
+         * @var string
+         */
+        public $organization;
+        /**
+         * The organizational_unit of the subject.
+         *
+         * @var string
+         */
+        public $organizationalUnit;
+        /**
+         * The postal code of the subject.
+         *
+         * @var string
+         */
+        public $postalCode;
+        /**
+         * The province, territory, or regional state of the subject.
+         *
+         * @var string
+         */
+        public $province;
+        protected $rdnSequenceType = RelativeDistinguishedName::class;
+        protected $rdnSequenceDataType = 'array';
+        /**
+         * The street address of the subject.
+         *
+         * @var string
+         */
+        public $streetAddress;
+        /**
+         * The "common name" of the subject.
+         *
+         * @param string $commonName
+         */
+        public function setCommonName($commonName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCommonName()
+        {
+        }
+        /**
+         * The country code of the subject.
+         *
+         * @param string $countryCode
+         */
+        public function setCountryCode($countryCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCountryCode()
+        {
+        }
+        /**
+         * The locality or city of the subject.
+         *
+         * @param string $locality
+         */
+        public function setLocality($locality)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocality()
+        {
+        }
+        /**
+         * The organization of the subject.
+         *
+         * @param string $organization
+         */
+        public function setOrganization($organization)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOrganization()
+        {
+        }
+        /**
+         * The organizational_unit of the subject.
+         *
+         * @param string $organizationalUnit
+         */
+        public function setOrganizationalUnit($organizationalUnit)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOrganizationalUnit()
+        {
+        }
+        /**
+         * The postal code of the subject.
+         *
+         * @param string $postalCode
+         */
+        public function setPostalCode($postalCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPostalCode()
+        {
+        }
+        /**
+         * The province, territory, or regional state of the subject.
+         *
+         * @param string $province
+         */
+        public function setProvince($province)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProvince()
+        {
+        }
+        /**
+         * This field can be used in place of the named subject fields.
+         *
+         * @param RelativeDistinguishedName[] $rdnSequence
+         */
+        public function setRdnSequence($rdnSequence)
+        {
+        }
+        /**
+         * @return RelativeDistinguishedName[]
+         */
+        public function getRdnSequence()
+        {
+        }
+        /**
+         * The street address of the subject.
+         *
+         * @param string $streetAddress
+         */
+        public function setStreetAddress($streetAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStreetAddress()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CertificateAuthorityService\Subject registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCommonName()
-    {
-    }
-    /**
-     * The country code of the subject.
-     *
-     * @param string $countryCode
-     */
-    public function setCountryCode($countryCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCountryCode()
-    {
-    }
-    /**
-     * The locality or city of the subject.
-     *
-     * @param string $locality
-     */
-    public function setLocality($locality)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocality()
-    {
-    }
-    /**
-     * The organization of the subject.
-     *
-     * @param string $organization
-     */
-    public function setOrganization($organization)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOrganization()
-    {
-    }
-    /**
-     * The organizational_unit of the subject.
-     *
-     * @param string $organizationalUnit
-     */
-    public function setOrganizationalUnit($organizationalUnit)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOrganizationalUnit()
-    {
-    }
-    /**
-     * The postal code of the subject.
-     *
-     * @param string $postalCode
-     */
-    public function setPostalCode($postalCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPostalCode()
-    {
-    }
-    /**
-     * The province, territory, or regional state of the subject.
-     *
-     * @param string $province
-     */
-    public function setProvince($province)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProvince()
-    {
-    }
-    /**
-     * This field can be used in place of the named subject fields.
-     *
-     * @param RelativeDistinguishedName[] $rdnSequence
-     */
-    public function setRdnSequence($rdnSequence)
-    {
-    }
-    /**
-     * @return RelativeDistinguishedName[]
-     */
-    public function getRdnSequence()
-    {
-    }
-    /**
-     * The street address of the subject.
-     *
-     * @param string $streetAddress
-     */
-    public function setStreetAddress($streetAddress)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStreetAddress()
+    class Google_Service_CertificateAuthorityService_Subject extends \Google\Service\CertificateAuthorityService\Subject
     {
     }
 }

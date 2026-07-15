@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GameServices;
-
-class DeployedFleet extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $fleet;
-    /**
-     * @var string
-     */
-    public $fleetSpec;
-    protected $specSourceType = SpecSource::class;
-    protected $specSourceDataType = '';
-    protected $statusType = DeployedFleetStatus::class;
-    protected $statusDataType = '';
-    /**
-     * @param string
-     */
-    public function setFleet($fleet)
+namespace Google\Service\GameServices {
+    class DeployedFleet extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $fleet;
+        /**
+         * @var string
+         */
+        public $fleetSpec;
+        protected $specSourceType = SpecSource::class;
+        protected $specSourceDataType = '';
+        protected $statusType = DeployedFleetStatus::class;
+        protected $statusDataType = '';
+        /**
+         * @param string
+         */
+        public function setFleet($fleet)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFleet()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setFleetSpec($fleetSpec)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFleetSpec()
+        {
+        }
+        /**
+         * @param SpecSource
+         */
+        public function setSpecSource(SpecSource $specSource)
+        {
+        }
+        /**
+         * @return SpecSource
+         */
+        public function getSpecSource()
+        {
+        }
+        /**
+         * @param DeployedFleetStatus
+         */
+        public function setStatus(DeployedFleetStatus $status)
+        {
+        }
+        /**
+         * @return DeployedFleetStatus
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GameServices\DeployedFleet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFleet()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setFleetSpec($fleetSpec)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFleetSpec()
-    {
-    }
-    /**
-     * @param SpecSource
-     */
-    public function setSpecSource(SpecSource $specSource)
-    {
-    }
-    /**
-     * @return SpecSource
-     */
-    public function getSpecSource()
-    {
-    }
-    /**
-     * @param DeployedFleetStatus
-     */
-    public function setStatus(DeployedFleetStatus $status)
-    {
-    }
-    /**
-     * @return DeployedFleetStatus
-     */
-    public function getStatus()
+    class Google_Service_GameServices_DeployedFleet extends \Google\Service\GameServices\DeployedFleet
     {
     }
 }

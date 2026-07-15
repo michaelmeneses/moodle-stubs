@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1ListSpecsResponse extends \Google\Collection
-{
-    protected $collection_key = 'specs';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $specsType = GoogleCloudApihubV1Spec::class;
-    protected $specsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1ListSpecsResponse extends \Google\Collection
     {
+        protected $collection_key = 'specs';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $specsType = GoogleCloudApihubV1Spec::class;
+        protected $specsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The specs corresponding to an API Version.
+         *
+         * @param GoogleCloudApihubV1Spec[] $specs
+         */
+        public function setSpecs($specs)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1Spec[]
+         */
+        public function getSpecs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1ListSpecsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The specs corresponding to an API Version.
-     *
-     * @param GoogleCloudApihubV1Spec[] $specs
-     */
-    public function setSpecs($specs)
-    {
-    }
-    /**
-     * @return GoogleCloudApihubV1Spec[]
-     */
-    public function getSpecs()
+    class Google_Service_APIhub_GoogleCloudApihubV1ListSpecsResponse extends \Google\Service\APIhub\GoogleCloudApihubV1ListSpecsResponse
     {
     }
 }

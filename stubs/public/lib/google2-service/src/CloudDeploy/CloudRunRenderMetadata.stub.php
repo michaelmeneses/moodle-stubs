@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class CloudRunRenderMetadata extends \Google\Model
-{
-    /**
-     * Output only. The name of the Cloud Run Service in the rendered manifest.
-     * Format is `projects/{project}/locations/{location}/services/{service}`.
-     *
-     * @var string
-     */
-    public $service;
-    /**
-     * Output only. The name of the Cloud Run Service in the rendered manifest.
-     * Format is `projects/{project}/locations/{location}/services/{service}`.
-     *
-     * @param string $service
-     */
-    public function setService($service)
+namespace Google\Service\CloudDeploy {
+    class CloudRunRenderMetadata extends \Google\Model
     {
+        /**
+         * Output only. The name of the Cloud Run Service in the rendered manifest.
+         * Format is `projects/{project}/locations/{location}/services/{service}`.
+         *
+         * @var string
+         */
+        public $service;
+        /**
+         * Output only. The name of the Cloud Run Service in the rendered manifest.
+         * Format is `projects/{project}/locations/{location}/services/{service}`.
+         *
+         * @param string $service
+         */
+        public function setService($service)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getService()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDeploy\CloudRunRenderMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getService()
+    class Google_Service_CloudDeploy_CloudRunRenderMetadata extends \Google\Service\CloudDeploy\CloudRunRenderMetadata
     {
     }
 }

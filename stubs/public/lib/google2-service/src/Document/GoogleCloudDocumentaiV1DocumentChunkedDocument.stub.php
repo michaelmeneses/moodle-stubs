@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1DocumentChunkedDocument extends \Google\Collection
-{
-    protected $collection_key = 'chunks';
-    protected $chunksType = GoogleCloudDocumentaiV1DocumentChunkedDocumentChunk::class;
-    protected $chunksDataType = 'array';
-    /**
-     * List of chunks.
-     *
-     * @param GoogleCloudDocumentaiV1DocumentChunkedDocumentChunk[] $chunks
-     */
-    public function setChunks($chunks)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1DocumentChunkedDocument extends \Google\Collection
     {
+        protected $collection_key = 'chunks';
+        protected $chunksType = GoogleCloudDocumentaiV1DocumentChunkedDocumentChunk::class;
+        protected $chunksDataType = 'array';
+        /**
+         * List of chunks.
+         *
+         * @param GoogleCloudDocumentaiV1DocumentChunkedDocumentChunk[] $chunks
+         */
+        public function setChunks($chunks)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1DocumentChunkedDocumentChunk[]
+         */
+        public function getChunks()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiV1DocumentChunkedDocumentChunk[]
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1DocumentChunkedDocument registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChunks()
+    class Google_Service_Document_GoogleCloudDocumentaiV1DocumentChunkedDocument extends \Google\Service\Document\GoogleCloudDocumentaiV1DocumentChunkedDocument
     {
     }
 }

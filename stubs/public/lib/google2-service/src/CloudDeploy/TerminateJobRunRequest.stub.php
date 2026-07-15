@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class TerminateJobRunRequest extends \Google\Collection
-{
-    protected $collection_key = 'overrideDeployPolicy';
-    /**
-     * Optional. Deploy policies to override. Format is
-     * `projects/{project}/locations/{location}/deployPolicies/{deployPolicy}`.
-     *
-     * @var string[]
-     */
-    public $overrideDeployPolicy;
-    /**
-     * Optional. Deploy policies to override. Format is
-     * `projects/{project}/locations/{location}/deployPolicies/{deployPolicy}`.
-     *
-     * @param string[] $overrideDeployPolicy
-     */
-    public function setOverrideDeployPolicy($overrideDeployPolicy)
+namespace Google\Service\CloudDeploy {
+    class TerminateJobRunRequest extends \Google\Collection
     {
+        protected $collection_key = 'overrideDeployPolicy';
+        /**
+         * Optional. Deploy policies to override. Format is
+         * `projects/{project}/locations/{location}/deployPolicies/{deployPolicy}`.
+         *
+         * @var string[]
+         */
+        public $overrideDeployPolicy;
+        /**
+         * Optional. Deploy policies to override. Format is
+         * `projects/{project}/locations/{location}/deployPolicies/{deployPolicy}`.
+         *
+         * @param string[] $overrideDeployPolicy
+         */
+        public function setOverrideDeployPolicy($overrideDeployPolicy)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getOverrideDeployPolicy()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudDeploy\TerminateJobRunRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOverrideDeployPolicy()
+    class Google_Service_CloudDeploy_TerminateJobRunRequest extends \Google\Service\CloudDeploy\TerminateJobRunRequest
     {
     }
 }

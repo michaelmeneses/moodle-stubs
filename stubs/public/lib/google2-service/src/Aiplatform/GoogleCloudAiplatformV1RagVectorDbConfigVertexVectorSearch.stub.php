@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1RagVectorDbConfigVertexVectorSearch extends \Google\Model
-{
-    /**
-     * The resource name of the Index. Format:
-     * `projects/{project}/locations/{location}/indexes/{index}`
-     *
-     * @var string
-     */
-    public $index;
-    /**
-     * The resource name of the Index Endpoint. Format:
-     * `projects/{project}/locations/{location}/indexEndpoints/{index_endpoint}`
-     *
-     * @var string
-     */
-    public $indexEndpoint;
-    /**
-     * The resource name of the Index. Format:
-     * `projects/{project}/locations/{location}/indexes/{index}`
-     *
-     * @param string $index
-     */
-    public function setIndex($index)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1RagVectorDbConfigVertexVectorSearch extends \Google\Model
     {
+        /**
+         * The resource name of the Index. Format:
+         * `projects/{project}/locations/{location}/indexes/{index}`
+         *
+         * @var string
+         */
+        public $index;
+        /**
+         * The resource name of the Index Endpoint. Format:
+         * `projects/{project}/locations/{location}/indexEndpoints/{index_endpoint}`
+         *
+         * @var string
+         */
+        public $indexEndpoint;
+        /**
+         * The resource name of the Index. Format:
+         * `projects/{project}/locations/{location}/indexes/{index}`
+         *
+         * @param string $index
+         */
+        public function setIndex($index)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIndex()
+        {
+        }
+        /**
+         * The resource name of the Index Endpoint. Format:
+         * `projects/{project}/locations/{location}/indexEndpoints/{index_endpoint}`
+         *
+         * @param string $indexEndpoint
+         */
+        public function setIndexEndpoint($indexEndpoint)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIndexEndpoint()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1RagVectorDbConfigVertexVectorSearch registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIndex()
-    {
-    }
-    /**
-     * The resource name of the Index Endpoint. Format:
-     * `projects/{project}/locations/{location}/indexEndpoints/{index_endpoint}`
-     *
-     * @param string $indexEndpoint
-     */
-    public function setIndexEndpoint($indexEndpoint)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIndexEndpoint()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1RagVectorDbConfigVertexVectorSearch extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1RagVectorDbConfigVertexVectorSearch
     {
     }
 }

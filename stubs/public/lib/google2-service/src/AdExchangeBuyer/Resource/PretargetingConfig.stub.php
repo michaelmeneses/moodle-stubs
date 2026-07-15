@@ -21,88 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer\Resource;
-
-/**
- * The "pretargetingConfig" collection of methods.
- * Typical usage is:
- *  <code>
- *   $adexchangebuyerService = new Google\Service\AdExchangeBuyer(...);
- *   $pretargetingConfig = $adexchangebuyerService->pretargetingConfig;
- *  </code>
- */
-class PretargetingConfig extends \Google\Service\Resource
-{
+namespace Google\Service\AdExchangeBuyer\Resource {
+    use Google\Service\AdExchangeBuyer\PretargetingConfig as PretargetingConfigModel;
+    use Google\Service\AdExchangeBuyer\PretargetingConfigList;
     /**
-     * Deletes an existing pretargeting config. (pretargetingConfig.delete)
-     *
-     * @param string $accountId The account id to delete the pretargeting config
-     * for.
-     * @param string $configId The specific id of the configuration to delete.
-     * @param array $optParams Optional parameters.
+     * The "pretargetingConfig" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $adexchangebuyerService = new Google\Service\AdExchangeBuyer(...);
+     *   $pretargetingConfig = $adexchangebuyerService->pretargetingConfig;
+     *  </code>
      */
-    public function delete($accountId, $configId, $optParams = [])
+    class PretargetingConfig extends \Google\Service\Resource
     {
+        /**
+         * Deletes an existing pretargeting config. (pretargetingConfig.delete)
+         *
+         * @param string $accountId The account id to delete the pretargeting config
+         * for.
+         * @param string $configId The specific id of the configuration to delete.
+         * @param array $optParams Optional parameters.
+         */
+        public function delete($accountId, $configId, $optParams = [])
+        {
+        }
+        /**
+         * Gets a specific pretargeting configuration (pretargetingConfig.get)
+         *
+         * @param string $accountId The account id to get the pretargeting config for.
+         * @param string $configId The specific id of the configuration to retrieve.
+         * @param array $optParams Optional parameters.
+         * @return PretargetingConfigModel
+         */
+        public function get($accountId, $configId, $optParams = [])
+        {
+        }
+        /**
+         * Inserts a new pretargeting configuration. (pretargetingConfig.insert)
+         *
+         * @param string $accountId The account id to insert the pretargeting config
+         * for.
+         * @param PretargetingConfigModel $postBody
+         * @param array $optParams Optional parameters.
+         * @return PretargetingConfigModel
+         */
+        public function insert($accountId, PretargetingConfigModel $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves a list of the authenticated user's pretargeting configurations.
+         * (pretargetingConfig.listPretargetingConfig)
+         *
+         * @param string $accountId The account id to get the pretargeting configs for.
+         * @param array $optParams Optional parameters.
+         * @return PretargetingConfigList
+         */
+        public function listPretargetingConfig($accountId, $optParams = [])
+        {
+        }
+        /**
+         * Updates an existing pretargeting config. This method supports patch
+         * semantics. (pretargetingConfig.patch)
+         *
+         * @param string $accountId The account id to update the pretargeting config
+         * for.
+         * @param string $configId The specific id of the configuration to update.
+         * @param PretargetingConfigModel $postBody
+         * @param array $optParams Optional parameters.
+         * @return PretargetingConfigModel
+         */
+        public function patch($accountId, $configId, PretargetingConfigModel $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Updates an existing pretargeting config. (pretargetingConfig.update)
+         *
+         * @param string $accountId The account id to update the pretargeting config
+         * for.
+         * @param string $configId The specific id of the configuration to update.
+         * @param PretargetingConfigModel $postBody
+         * @param array $optParams Optional parameters.
+         * @return PretargetingConfigModel
+         */
+        public function update($accountId, $configId, PretargetingConfigModel $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets a specific pretargeting configuration (pretargetingConfig.get)
-     *
-     * @param string $accountId The account id to get the pretargeting config for.
-     * @param string $configId The specific id of the configuration to retrieve.
-     * @param array $optParams Optional parameters.
-     * @return PretargetingConfigModel
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\Resource\PretargetingConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($accountId, $configId, $optParams = [])
-    {
-    }
-    /**
-     * Inserts a new pretargeting configuration. (pretargetingConfig.insert)
-     *
-     * @param string $accountId The account id to insert the pretargeting config
-     * for.
-     * @param PretargetingConfigModel $postBody
-     * @param array $optParams Optional parameters.
-     * @return PretargetingConfigModel
-     */
-    public function insert($accountId, PretargetingConfigModel $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Retrieves a list of the authenticated user's pretargeting configurations.
-     * (pretargetingConfig.listPretargetingConfig)
-     *
-     * @param string $accountId The account id to get the pretargeting configs for.
-     * @param array $optParams Optional parameters.
-     * @return PretargetingConfigList
-     */
-    public function listPretargetingConfig($accountId, $optParams = [])
-    {
-    }
-    /**
-     * Updates an existing pretargeting config. This method supports patch
-     * semantics. (pretargetingConfig.patch)
-     *
-     * @param string $accountId The account id to update the pretargeting config
-     * for.
-     * @param string $configId The specific id of the configuration to update.
-     * @param PretargetingConfigModel $postBody
-     * @param array $optParams Optional parameters.
-     * @return PretargetingConfigModel
-     */
-    public function patch($accountId, $configId, PretargetingConfigModel $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Updates an existing pretargeting config. (pretargetingConfig.update)
-     *
-     * @param string $accountId The account id to update the pretargeting config
-     * for.
-     * @param string $configId The specific id of the configuration to update.
-     * @param PretargetingConfigModel $postBody
-     * @param array $optParams Optional parameters.
-     * @return PretargetingConfigModel
-     */
-    public function update($accountId, $configId, PretargetingConfigModel $postBody, $optParams = [])
+    class Google_Service_AdExchangeBuyer_Resource_PretargetingConfig extends \Google\Service\AdExchangeBuyer\Resource\PretargetingConfig
     {
     }
 }

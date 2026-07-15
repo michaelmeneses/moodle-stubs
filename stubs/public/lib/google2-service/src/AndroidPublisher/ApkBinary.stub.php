@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class ApkBinary extends \Google\Model
-{
-    /**
-     * A sha1 hash of the APK payload, encoded as a hex string and matching the
-     * output of the sha1sum command.
-     *
-     * @var string
-     */
-    public $sha1;
-    /**
-     * A sha256 hash of the APK payload, encoded as a hex string and matching the
-     * output of the sha256sum command.
-     *
-     * @var string
-     */
-    public $sha256;
-    /**
-     * A sha1 hash of the APK payload, encoded as a hex string and matching the
-     * output of the sha1sum command.
-     *
-     * @param string $sha1
-     */
-    public function setSha1($sha1)
+namespace Google\Service\AndroidPublisher {
+    class ApkBinary extends \Google\Model
     {
+        /**
+         * A sha1 hash of the APK payload, encoded as a hex string and matching the
+         * output of the sha1sum command.
+         *
+         * @var string
+         */
+        public $sha1;
+        /**
+         * A sha256 hash of the APK payload, encoded as a hex string and matching the
+         * output of the sha256sum command.
+         *
+         * @var string
+         */
+        public $sha256;
+        /**
+         * A sha1 hash of the APK payload, encoded as a hex string and matching the
+         * output of the sha1sum command.
+         *
+         * @param string $sha1
+         */
+        public function setSha1($sha1)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSha1()
+        {
+        }
+        /**
+         * A sha256 hash of the APK payload, encoded as a hex string and matching the
+         * output of the sha256sum command.
+         *
+         * @param string $sha256
+         */
+        public function setSha256($sha256)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSha256()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidPublisher\ApkBinary registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSha1()
-    {
-    }
-    /**
-     * A sha256 hash of the APK payload, encoded as a hex string and matching the
-     * output of the sha256sum command.
-     *
-     * @param string $sha256
-     */
-    public function setSha256($sha256)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSha256()
+    class Google_Service_AndroidPublisher_ApkBinary extends \Google\Service\AndroidPublisher\ApkBinary
     {
     }
 }

@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PaymentsResellerSubscription;
-
-class GoogleCloudPaymentsResellerSubscriptionV1YoutubePayload extends \Google\Collection
-{
-    protected $collection_key = 'partnerEligibilityIds';
-    /**
-     * @var string
-     */
-    public $accessEndTime;
-    /**
-     * @var string[]
-     */
-    public $partnerEligibilityIds;
-    /**
-     * @var string
-     */
-    public $partnerPlanType;
-    /**
-     * @param string
-     */
-    public function setAccessEndTime($accessEndTime)
+namespace Google\Service\PaymentsResellerSubscription {
+    class GoogleCloudPaymentsResellerSubscriptionV1YoutubePayload extends \Google\Collection
     {
+        protected $collection_key = 'partnerEligibilityIds';
+        /**
+         * @var string
+         */
+        public $accessEndTime;
+        /**
+         * @var string[]
+         */
+        public $partnerEligibilityIds;
+        /**
+         * @var string
+         */
+        public $partnerPlanType;
+        /**
+         * @param string
+         */
+        public function setAccessEndTime($accessEndTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccessEndTime()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setPartnerEligibilityIds($partnerEligibilityIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPartnerEligibilityIds()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPartnerPlanType($partnerPlanType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPartnerPlanType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1YoutubePayload registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccessEndTime()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setPartnerEligibilityIds($partnerEligibilityIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPartnerEligibilityIds()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPartnerPlanType($partnerPlanType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPartnerPlanType()
+    class Google_Service_PaymentsResellerSubscription_GoogleCloudPaymentsResellerSubscriptionV1YoutubePayload extends \Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1YoutubePayload
     {
     }
 }

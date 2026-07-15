@@ -21,118 +21,127 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class UsageMetrics extends \Google\Model
-{
-    /**
-     * Optional. DEPRECATED Accelerator type being used, if any
-     *
-     * @var string
-     */
-    public $acceleratorType;
-    /**
-     * Optional. DEPRECATED Accelerator usage in (milliAccelerator x seconds) (see
-     * Dataproc Serverless pricing (https://cloud.google.com/dataproc-
-     * serverless/pricing)).
-     *
-     * @var string
-     */
-    public $milliAcceleratorSeconds;
-    /**
-     * Optional. DCU (Dataproc Compute Units) usage in (milliDCU x seconds) (see
-     * Dataproc Serverless pricing (https://cloud.google.com/dataproc-
-     * serverless/pricing)).
-     *
-     * @var string
-     */
-    public $milliDcuSeconds;
-    /**
-     * Optional. Shuffle storage usage in (GB x seconds) (see Dataproc Serverless
-     * pricing (https://cloud.google.com/dataproc-serverless/pricing)).
-     *
-     * @var string
-     */
-    public $shuffleStorageGbSeconds;
-    /**
-     * Optional. The timestamp of the usage metrics.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Optional. DEPRECATED Accelerator type being used, if any
-     *
-     * @param string $acceleratorType
-     */
-    public function setAcceleratorType($acceleratorType)
+namespace Google\Service\Dataproc {
+    class UsageMetrics extends \Google\Model
     {
+        /**
+         * Optional. DEPRECATED Accelerator type being used, if any
+         *
+         * @var string
+         */
+        public $acceleratorType;
+        /**
+         * Optional. DEPRECATED Accelerator usage in (milliAccelerator x seconds) (see
+         * Dataproc Serverless pricing (https://cloud.google.com/dataproc-
+         * serverless/pricing)).
+         *
+         * @var string
+         */
+        public $milliAcceleratorSeconds;
+        /**
+         * Optional. DCU (Dataproc Compute Units) usage in (milliDCU x seconds) (see
+         * Dataproc Serverless pricing (https://cloud.google.com/dataproc-
+         * serverless/pricing)).
+         *
+         * @var string
+         */
+        public $milliDcuSeconds;
+        /**
+         * Optional. Shuffle storage usage in (GB x seconds) (see Dataproc Serverless
+         * pricing (https://cloud.google.com/dataproc-serverless/pricing)).
+         *
+         * @var string
+         */
+        public $shuffleStorageGbSeconds;
+        /**
+         * Optional. The timestamp of the usage metrics.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Optional. DEPRECATED Accelerator type being used, if any
+         *
+         * @param string $acceleratorType
+         */
+        public function setAcceleratorType($acceleratorType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAcceleratorType()
+        {
+        }
+        /**
+         * Optional. DEPRECATED Accelerator usage in (milliAccelerator x seconds) (see
+         * Dataproc Serverless pricing (https://cloud.google.com/dataproc-
+         * serverless/pricing)).
+         *
+         * @param string $milliAcceleratorSeconds
+         */
+        public function setMilliAcceleratorSeconds($milliAcceleratorSeconds)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMilliAcceleratorSeconds()
+        {
+        }
+        /**
+         * Optional. DCU (Dataproc Compute Units) usage in (milliDCU x seconds) (see
+         * Dataproc Serverless pricing (https://cloud.google.com/dataproc-
+         * serverless/pricing)).
+         *
+         * @param string $milliDcuSeconds
+         */
+        public function setMilliDcuSeconds($milliDcuSeconds)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMilliDcuSeconds()
+        {
+        }
+        /**
+         * Optional. Shuffle storage usage in (GB x seconds) (see Dataproc Serverless
+         * pricing (https://cloud.google.com/dataproc-serverless/pricing)).
+         *
+         * @param string $shuffleStorageGbSeconds
+         */
+        public function setShuffleStorageGbSeconds($shuffleStorageGbSeconds)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getShuffleStorageGbSeconds()
+        {
+        }
+        /**
+         * Optional. The timestamp of the usage metrics.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\UsageMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAcceleratorType()
-    {
-    }
-    /**
-     * Optional. DEPRECATED Accelerator usage in (milliAccelerator x seconds) (see
-     * Dataproc Serverless pricing (https://cloud.google.com/dataproc-
-     * serverless/pricing)).
-     *
-     * @param string $milliAcceleratorSeconds
-     */
-    public function setMilliAcceleratorSeconds($milliAcceleratorSeconds)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMilliAcceleratorSeconds()
-    {
-    }
-    /**
-     * Optional. DCU (Dataproc Compute Units) usage in (milliDCU x seconds) (see
-     * Dataproc Serverless pricing (https://cloud.google.com/dataproc-
-     * serverless/pricing)).
-     *
-     * @param string $milliDcuSeconds
-     */
-    public function setMilliDcuSeconds($milliDcuSeconds)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMilliDcuSeconds()
-    {
-    }
-    /**
-     * Optional. Shuffle storage usage in (GB x seconds) (see Dataproc Serverless
-     * pricing (https://cloud.google.com/dataproc-serverless/pricing)).
-     *
-     * @param string $shuffleStorageGbSeconds
-     */
-    public function setShuffleStorageGbSeconds($shuffleStorageGbSeconds)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getShuffleStorageGbSeconds()
-    {
-    }
-    /**
-     * Optional. The timestamp of the usage metrics.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_Dataproc_UsageMetrics extends \Google\Service\Dataproc\UsageMetrics
     {
     }
 }

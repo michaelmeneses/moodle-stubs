@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors;
-
-class ExtractionRules extends \Google\Collection
-{
-    protected $collection_key = 'extractionRule';
-    protected $extractionRuleType = ExtractionRule::class;
-    protected $extractionRuleDataType = 'array';
-    /**
-     * @param ExtractionRule[]
-     */
-    public function setExtractionRule($extractionRule)
+namespace Google\Service\Connectors {
+    class ExtractionRules extends \Google\Collection
     {
+        protected $collection_key = 'extractionRule';
+        protected $extractionRuleType = ExtractionRule::class;
+        protected $extractionRuleDataType = 'array';
+        /**
+         * @param ExtractionRule[]
+         */
+        public function setExtractionRule($extractionRule)
+        {
+        }
+        /**
+         * @return ExtractionRule[]
+         */
+        public function getExtractionRule()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ExtractionRule[]
+     * Runtime class alias of \Google\Service\Connectors\ExtractionRules registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExtractionRule()
+    class Google_Service_Connectors_ExtractionRules extends \Google\Service\Connectors\ExtractionRules
     {
     }
 }

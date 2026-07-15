@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromePolicy;
-
-class GoogleChromePolicyVersionsV1PolicyTargetKey extends \Google\Model
-{
-    /**
-     * Map containing the additional target key name and value pairs used to
-     * further identify the target of the policy.
-     *
-     * @var string[]
-     */
-    public $additionalTargetKeys;
-    /**
-     * The target resource on which this policy is applied. The following
-     * resources are supported: * Organizational Unit ("orgunits/{orgunit_id}") *
-     * Group ("groups/{group_id}")
-     *
-     * @var string
-     */
-    public $targetResource;
-    /**
-     * Map containing the additional target key name and value pairs used to
-     * further identify the target of the policy.
-     *
-     * @param string[] $additionalTargetKeys
-     */
-    public function setAdditionalTargetKeys($additionalTargetKeys)
+namespace Google\Service\ChromePolicy {
+    class GoogleChromePolicyVersionsV1PolicyTargetKey extends \Google\Model
     {
+        /**
+         * Map containing the additional target key name and value pairs used to
+         * further identify the target of the policy.
+         *
+         * @var string[]
+         */
+        public $additionalTargetKeys;
+        /**
+         * The target resource on which this policy is applied. The following
+         * resources are supported: * Organizational Unit ("orgunits/{orgunit_id}") *
+         * Group ("groups/{group_id}")
+         *
+         * @var string
+         */
+        public $targetResource;
+        /**
+         * Map containing the additional target key name and value pairs used to
+         * further identify the target of the policy.
+         *
+         * @param string[] $additionalTargetKeys
+         */
+        public function setAdditionalTargetKeys($additionalTargetKeys)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAdditionalTargetKeys()
+        {
+        }
+        /**
+         * The target resource on which this policy is applied. The following
+         * resources are supported: * Organizational Unit ("orgunits/{orgunit_id}") *
+         * Group ("groups/{group_id}")
+         *
+         * @param string $targetResource
+         */
+        public function setTargetResource($targetResource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetResource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1PolicyTargetKey registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdditionalTargetKeys()
-    {
-    }
-    /**
-     * The target resource on which this policy is applied. The following
-     * resources are supported: * Organizational Unit ("orgunits/{orgunit_id}") *
-     * Group ("groups/{group_id}")
-     *
-     * @param string $targetResource
-     */
-    public function setTargetResource($targetResource)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetResource()
+    class Google_Service_ChromePolicy_GoogleChromePolicyVersionsV1PolicyTargetKey extends \Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1PolicyTargetKey
     {
     }
 }

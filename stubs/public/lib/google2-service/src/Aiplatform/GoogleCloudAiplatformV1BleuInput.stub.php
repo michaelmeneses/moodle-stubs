@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1BleuInput extends \Google\Collection
-{
-    protected $collection_key = 'instances';
-    protected $instancesType = GoogleCloudAiplatformV1BleuInstance::class;
-    protected $instancesDataType = 'array';
-    protected $metricSpecType = GoogleCloudAiplatformV1BleuSpec::class;
-    protected $metricSpecDataType = '';
-    /**
-     * Required. Repeated bleu instances.
-     *
-     * @param GoogleCloudAiplatformV1BleuInstance[] $instances
-     */
-    public function setInstances($instances)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1BleuInput extends \Google\Collection
     {
+        protected $collection_key = 'instances';
+        protected $instancesType = GoogleCloudAiplatformV1BleuInstance::class;
+        protected $instancesDataType = 'array';
+        protected $metricSpecType = GoogleCloudAiplatformV1BleuSpec::class;
+        protected $metricSpecDataType = '';
+        /**
+         * Required. Repeated bleu instances.
+         *
+         * @param GoogleCloudAiplatformV1BleuInstance[] $instances
+         */
+        public function setInstances($instances)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1BleuInstance[]
+         */
+        public function getInstances()
+        {
+        }
+        /**
+         * Required. Spec for bleu score metric.
+         *
+         * @param GoogleCloudAiplatformV1BleuSpec $metricSpec
+         */
+        public function setMetricSpec(GoogleCloudAiplatformV1BleuSpec $metricSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1BleuSpec
+         */
+        public function getMetricSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1BleuInstance[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1BleuInput registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstances()
-    {
-    }
-    /**
-     * Required. Spec for bleu score metric.
-     *
-     * @param GoogleCloudAiplatformV1BleuSpec $metricSpec
-     */
-    public function setMetricSpec(GoogleCloudAiplatformV1BleuSpec $metricSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1BleuSpec
-     */
-    public function getMetricSpec()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1BleuInput extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1BleuInput
     {
     }
 }

@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class VersionSource extends \Google\Model
-{
-    /**
-     * The field to extract from the MSH segment. For example, "3.1" or "18[1].1".
-     *
-     * @var string
-     */
-    public $mshField;
-    /**
-     * The value to match with the field. For example, "My Application Name" or
-     * "2.3".
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * The field to extract from the MSH segment. For example, "3.1" or "18[1].1".
-     *
-     * @param string $mshField
-     */
-    public function setMshField($mshField)
+namespace Google\Service\CloudHealthcare {
+    class VersionSource extends \Google\Model
     {
+        /**
+         * The field to extract from the MSH segment. For example, "3.1" or "18[1].1".
+         *
+         * @var string
+         */
+        public $mshField;
+        /**
+         * The value to match with the field. For example, "My Application Name" or
+         * "2.3".
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * The field to extract from the MSH segment. For example, "3.1" or "18[1].1".
+         *
+         * @param string $mshField
+         */
+        public function setMshField($mshField)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMshField()
+        {
+        }
+        /**
+         * The value to match with the field. For example, "My Application Name" or
+         * "2.3".
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudHealthcare\VersionSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMshField()
-    {
-    }
-    /**
-     * The value to match with the field. For example, "My Application Name" or
-     * "2.3".
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_CloudHealthcare_VersionSource extends \Google\Service\CloudHealthcare\VersionSource
     {
     }
 }

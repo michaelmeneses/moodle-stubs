@@ -21,107 +21,116 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class BqmlTrainingRunTrainingOptions extends \Google\Model
-{
+namespace Google\Service\Bigquery {
+    class BqmlTrainingRunTrainingOptions extends \Google\Model
+    {
+        /**
+         * @var bool
+         */
+        public $earlyStop;
+        public $l1Reg;
+        public $l2Reg;
+        public $learnRate;
+        /**
+         * @var string
+         */
+        public $learnRateStrategy;
+        public $lineSearchInitLearnRate;
+        /**
+         * @var string
+         */
+        public $maxIteration;
+        public $minRelProgress;
+        /**
+         * @var bool
+         */
+        public $warmStart;
+        /**
+         * @param bool $earlyStop
+         */
+        public function setEarlyStop($earlyStop)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEarlyStop()
+        {
+        }
+        public function setL1Reg($l1Reg)
+        {
+        }
+        public function getL1Reg()
+        {
+        }
+        public function setL2Reg($l2Reg)
+        {
+        }
+        public function getL2Reg()
+        {
+        }
+        public function setLearnRate($learnRate)
+        {
+        }
+        public function getLearnRate()
+        {
+        }
+        /**
+         * @param string $learnRateStrategy
+         */
+        public function setLearnRateStrategy($learnRateStrategy)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLearnRateStrategy()
+        {
+        }
+        public function setLineSearchInitLearnRate($lineSearchInitLearnRate)
+        {
+        }
+        public function getLineSearchInitLearnRate()
+        {
+        }
+        /**
+         * @param string $maxIteration
+         */
+        public function setMaxIteration($maxIteration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaxIteration()
+        {
+        }
+        public function setMinRelProgress($minRelProgress)
+        {
+        }
+        public function getMinRelProgress()
+        {
+        }
+        /**
+         * @param bool $warmStart
+         */
+        public function setWarmStart($warmStart)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getWarmStart()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @var bool
+     * Runtime class alias of \Google\Service\Bigquery\BqmlTrainingRunTrainingOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public $earlyStop;
-    public $l1Reg;
-    public $l2Reg;
-    public $learnRate;
-    /**
-     * @var string
-     */
-    public $learnRateStrategy;
-    public $lineSearchInitLearnRate;
-    /**
-     * @var string
-     */
-    public $maxIteration;
-    public $minRelProgress;
-    /**
-     * @var bool
-     */
-    public $warmStart;
-    /**
-     * @param bool $earlyStop
-     */
-    public function setEarlyStop($earlyStop)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEarlyStop()
-    {
-    }
-    public function setL1Reg($l1Reg)
-    {
-    }
-    public function getL1Reg()
-    {
-    }
-    public function setL2Reg($l2Reg)
-    {
-    }
-    public function getL2Reg()
-    {
-    }
-    public function setLearnRate($learnRate)
-    {
-    }
-    public function getLearnRate()
-    {
-    }
-    /**
-     * @param string $learnRateStrategy
-     */
-    public function setLearnRateStrategy($learnRateStrategy)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLearnRateStrategy()
-    {
-    }
-    public function setLineSearchInitLearnRate($lineSearchInitLearnRate)
-    {
-    }
-    public function getLineSearchInitLearnRate()
-    {
-    }
-    /**
-     * @param string $maxIteration
-     */
-    public function setMaxIteration($maxIteration)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMaxIteration()
-    {
-    }
-    public function setMinRelProgress($minRelProgress)
-    {
-    }
-    public function getMinRelProgress()
-    {
-    }
-    /**
-     * @param bool $warmStart
-     */
-    public function setWarmStart($warmStart)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getWarmStart()
+    class Google_Service_Bigquery_BqmlTrainingRunTrainingOptions extends \Google\Service\Bigquery\BqmlTrainingRunTrainingOptions
     {
     }
 }

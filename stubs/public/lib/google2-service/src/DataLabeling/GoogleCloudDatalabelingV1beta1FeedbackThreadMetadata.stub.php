@@ -21,93 +21,102 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1FeedbackThreadMetadata extends \Google\Model
-{
-    public const STATUS_FEEDBACK_THREAD_STATUS_UNSPECIFIED = 'FEEDBACK_THREAD_STATUS_UNSPECIFIED';
-    /**
-     * Feedback thread is created with no reply;
-     */
-    public const STATUS_NEW = 'NEW';
-    /**
-     * Feedback thread is replied at least once;
-     */
-    public const STATUS_REPLIED = 'REPLIED';
-    /**
-     * When the thread is created
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * When the thread is last updated.
-     *
-     * @var string
-     */
-    public $lastUpdateTime;
-    /**
-     * @var string
-     */
-    public $status;
-    /**
-     * An image thumbnail of this thread.
-     *
-     * @var string
-     */
-    public $thumbnail;
-    /**
-     * When the thread is created
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1FeedbackThreadMetadata extends \Google\Model
     {
+        public const STATUS_FEEDBACK_THREAD_STATUS_UNSPECIFIED = 'FEEDBACK_THREAD_STATUS_UNSPECIFIED';
+        /**
+         * Feedback thread is created with no reply;
+         */
+        public const STATUS_NEW = 'NEW';
+        /**
+         * Feedback thread is replied at least once;
+         */
+        public const STATUS_REPLIED = 'REPLIED';
+        /**
+         * When the thread is created
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * When the thread is last updated.
+         *
+         * @var string
+         */
+        public $lastUpdateTime;
+        /**
+         * @var string
+         */
+        public $status;
+        /**
+         * An image thumbnail of this thread.
+         *
+         * @var string
+         */
+        public $thumbnail;
+        /**
+         * When the thread is created
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * When the thread is last updated.
+         *
+         * @param string $lastUpdateTime
+         */
+        public function setLastUpdateTime($lastUpdateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastUpdateTime()
+        {
+        }
+        /**
+         * @param self::STATUS_* $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return self::STATUS_*
+         */
+        public function getStatus()
+        {
+        }
+        /**
+         * An image thumbnail of this thread.
+         *
+         * @param string $thumbnail
+         */
+        public function setThumbnail($thumbnail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getThumbnail()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1FeedbackThreadMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * When the thread is last updated.
-     *
-     * @param string $lastUpdateTime
-     */
-    public function setLastUpdateTime($lastUpdateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastUpdateTime()
-    {
-    }
-    /**
-     * @param self::STATUS_* $status
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return self::STATUS_*
-     */
-    public function getStatus()
-    {
-    }
-    /**
-     * An image thumbnail of this thread.
-     *
-     * @param string $thumbnail
-     */
-    public function setThumbnail($thumbnail)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getThumbnail()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1FeedbackThreadMetadata extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1FeedbackThreadMetadata
     {
     }
 }

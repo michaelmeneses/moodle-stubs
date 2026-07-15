@@ -20,61 +20,70 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\test\phpunit;
-
-/**
- * Message sink for phpmailer.
- *
- * @package    core
- * @category   test
- * @copyright  Andrew Nicols <andrew@nicols.co.uk>.
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-class phpmailer_sink
-{
+namespace core\test\phpunit {
     /**
-     * @var array of records which would have been sent by phpmailer.
-     */
-    protected $messages = [];
-    /**
-     * Stop message redirection.
+     * Message sink for phpmailer.
      *
-     * Use if you do not want message redirected any more.
+     * @package    core
+     * @category   test
+     * @copyright  Andrew Nicols <andrew@nicols.co.uk>.
+     * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
      */
-    public function close()
+    class phpmailer_sink
     {
+        /**
+         * @var array of records which would have been sent by phpmailer.
+         */
+        protected $messages = [];
+        /**
+         * Stop message redirection.
+         *
+         * Use if you do not want message redirected any more.
+         */
+        public function close()
+        {
+        }
+        /**
+         * To be called from phpunit_util only!
+         *
+         * @param stdClass $message record from messages table
+         */
+        public function add_message($message)
+        {
+        }
+        /**
+         * Returns all redirected messages.
+         *
+         * The instances are records from the messages table.
+         * The array indexes are numbered from 0 and the order is matching
+         * the creation of events.
+         *
+         * @return array
+         */
+        public function get_messages()
+        {
+        }
+        /**
+         * Return number of messages redirected to this sink.
+         * @return int
+         */
+        public function count()
+        {
+        }
+        /**
+         * Removes all previously stored messages.
+         */
+        public function clear()
+        {
+        }
     }
+}
+namespace {
     /**
-     * To be called from phpunit_util only!
-     *
-     * @param stdClass $message record from messages table
+     * Runtime class alias of \core\test\phpunit\phpmailer_sink registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function add_message($message)
-    {
-    }
-    /**
-     * Returns all redirected messages.
-     *
-     * The instances are records from the messages table.
-     * The array indexes are numbered from 0 and the order is matching
-     * the creation of events.
-     *
-     * @return array
-     */
-    public function get_messages()
-    {
-    }
-    /**
-     * Return number of messages redirected to this sink.
-     * @return int
-     */
-    public function count()
-    {
-    }
-    /**
-     * Removes all previously stored messages.
-     */
-    public function clear()
+    class phpunit_phpmailer_sink extends \core\test\phpunit\phpmailer_sink
     {
     }
 }

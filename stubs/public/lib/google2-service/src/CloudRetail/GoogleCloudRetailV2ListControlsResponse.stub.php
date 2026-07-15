@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2ListControlsResponse extends \Google\Collection
-{
-    protected $collection_key = 'controls';
-    protected $controlsType = GoogleCloudRetailV2Control::class;
-    protected $controlsDataType = 'array';
-    /**
-     * Pagination token, if not returned indicates the last page.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * All the Controls for a given catalog.
-     *
-     * @param GoogleCloudRetailV2Control[] $controls
-     */
-    public function setControls($controls)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2ListControlsResponse extends \Google\Collection
     {
+        protected $collection_key = 'controls';
+        protected $controlsType = GoogleCloudRetailV2Control::class;
+        protected $controlsDataType = 'array';
+        /**
+         * Pagination token, if not returned indicates the last page.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * All the Controls for a given catalog.
+         *
+         * @param GoogleCloudRetailV2Control[] $controls
+         */
+        public function setControls($controls)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2Control[]
+         */
+        public function getControls()
+        {
+        }
+        /**
+         * Pagination token, if not returned indicates the last page.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRetailV2Control[]
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2ListControlsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getControls()
-    {
-    }
-    /**
-     * Pagination token, if not returned indicates the last page.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2ListControlsResponse extends \Google\Service\CloudRetail\GoogleCloudRetailV2ListControlsResponse
     {
     }
 }

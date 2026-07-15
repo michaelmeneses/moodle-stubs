@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class ConfigManagementInstallError extends \Google\Model
-{
-    /**
-     * A string representing the user facing error message.
-     *
-     * @var string
-     */
-    public $errorMessage;
-    /**
-     * A string representing the user facing error message.
-     *
-     * @param string $errorMessage
-     */
-    public function setErrorMessage($errorMessage)
+namespace Google\Service\GKEHub {
+    class ConfigManagementInstallError extends \Google\Model
     {
+        /**
+         * A string representing the user facing error message.
+         *
+         * @var string
+         */
+        public $errorMessage;
+        /**
+         * A string representing the user facing error message.
+         *
+         * @param string $errorMessage
+         */
+        public function setErrorMessage($errorMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getErrorMessage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEHub\ConfigManagementInstallError registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrorMessage()
+    class Google_Service_GKEHub_ConfigManagementInstallError extends \Google\Service\GKEHub\ConfigManagementInstallError
     {
     }
 }

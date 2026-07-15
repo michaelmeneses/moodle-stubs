@@ -21,81 +21,90 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2InspectJobConfig extends \Google\Collection
-{
-    protected $collection_key = 'actions';
-    protected $actionsType = GooglePrivacyDlpV2Action::class;
-    protected $actionsDataType = 'array';
-    protected $inspectConfigType = GooglePrivacyDlpV2InspectConfig::class;
-    protected $inspectConfigDataType = '';
-    /**
-     * If provided, will be used as the default for all values in InspectConfig.
-     * `inspect_config` will be merged into the values persisted as part of the
-     * template.
-     *
-     * @var string
-     */
-    public $inspectTemplateName;
-    protected $storageConfigType = GooglePrivacyDlpV2StorageConfig::class;
-    protected $storageConfigDataType = '';
-    /**
-     * Actions to execute at the completion of the job.
-     *
-     * @param GooglePrivacyDlpV2Action[] $actions
-     */
-    public function setActions($actions)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2InspectJobConfig extends \Google\Collection
     {
+        protected $collection_key = 'actions';
+        protected $actionsType = GooglePrivacyDlpV2Action::class;
+        protected $actionsDataType = 'array';
+        protected $inspectConfigType = GooglePrivacyDlpV2InspectConfig::class;
+        protected $inspectConfigDataType = '';
+        /**
+         * If provided, will be used as the default for all values in InspectConfig.
+         * `inspect_config` will be merged into the values persisted as part of the
+         * template.
+         *
+         * @var string
+         */
+        public $inspectTemplateName;
+        protected $storageConfigType = GooglePrivacyDlpV2StorageConfig::class;
+        protected $storageConfigDataType = '';
+        /**
+         * Actions to execute at the completion of the job.
+         *
+         * @param GooglePrivacyDlpV2Action[] $actions
+         */
+        public function setActions($actions)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2Action[]
+         */
+        public function getActions()
+        {
+        }
+        /**
+         * How and what to scan for.
+         *
+         * @param GooglePrivacyDlpV2InspectConfig $inspectConfig
+         */
+        public function setInspectConfig(GooglePrivacyDlpV2InspectConfig $inspectConfig)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2InspectConfig
+         */
+        public function getInspectConfig()
+        {
+        }
+        /**
+         * If provided, will be used as the default for all values in InspectConfig.
+         * `inspect_config` will be merged into the values persisted as part of the
+         * template.
+         *
+         * @param string $inspectTemplateName
+         */
+        public function setInspectTemplateName($inspectTemplateName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInspectTemplateName()
+        {
+        }
+        /**
+         * The data to scan.
+         *
+         * @param GooglePrivacyDlpV2StorageConfig $storageConfig
+         */
+        public function setStorageConfig(GooglePrivacyDlpV2StorageConfig $storageConfig)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2StorageConfig
+         */
+        public function getStorageConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2Action[]
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2InspectJobConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActions()
-    {
-    }
-    /**
-     * How and what to scan for.
-     *
-     * @param GooglePrivacyDlpV2InspectConfig $inspectConfig
-     */
-    public function setInspectConfig(GooglePrivacyDlpV2InspectConfig $inspectConfig)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2InspectConfig
-     */
-    public function getInspectConfig()
-    {
-    }
-    /**
-     * If provided, will be used as the default for all values in InspectConfig.
-     * `inspect_config` will be merged into the values persisted as part of the
-     * template.
-     *
-     * @param string $inspectTemplateName
-     */
-    public function setInspectTemplateName($inspectTemplateName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInspectTemplateName()
-    {
-    }
-    /**
-     * The data to scan.
-     *
-     * @param GooglePrivacyDlpV2StorageConfig $storageConfig
-     */
-    public function setStorageConfig(GooglePrivacyDlpV2StorageConfig $storageConfig)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2StorageConfig
-     */
-    public function getStorageConfig()
+    class Google_Service_DLP_GooglePrivacyDlpV2InspectJobConfig extends \Google\Service\DLP\GooglePrivacyDlpV2InspectJobConfig
     {
     }
 }

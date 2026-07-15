@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GamesConfiguration;
-
-class ImageConfiguration extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $imageType;
-    /**
-     * @var string
-     */
-    public $kind;
-    /**
-     * @var string
-     */
-    public $resourceId;
-    /**
-     * @var string
-     */
-    public $url;
-    /**
-     * @param string
-     */
-    public function setImageType($imageType)
+namespace Google\Service\GamesConfiguration {
+    class ImageConfiguration extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $imageType;
+        /**
+         * @var string
+         */
+        public $kind;
+        /**
+         * @var string
+         */
+        public $resourceId;
+        /**
+         * @var string
+         */
+        public $url;
+        /**
+         * @param string
+         */
+        public function setImageType($imageType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImageType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setResourceId($resourceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GamesConfiguration\ImageConfiguration registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getImageType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setResourceId($resourceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
+    class Google_Service_GamesConfiguration_ImageConfiguration extends \Google\Service\GamesConfiguration\ImageConfiguration
     {
     }
 }

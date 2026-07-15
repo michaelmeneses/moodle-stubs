@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1DataDiscoverySpec extends \Google\Model
-{
-    protected $bigqueryPublishingConfigType = GoogleCloudDataplexV1DataDiscoverySpecBigQueryPublishingConfig::class;
-    protected $bigqueryPublishingConfigDataType = '';
-    protected $storageConfigType = GoogleCloudDataplexV1DataDiscoverySpecStorageConfig::class;
-    protected $storageConfigDataType = '';
-    /**
-     * Optional. Configuration for metadata publishing.
-     *
-     * @param GoogleCloudDataplexV1DataDiscoverySpecBigQueryPublishingConfig $bigqueryPublishingConfig
-     */
-    public function setBigqueryPublishingConfig(GoogleCloudDataplexV1DataDiscoverySpecBigQueryPublishingConfig $bigqueryPublishingConfig)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1DataDiscoverySpec extends \Google\Model
     {
+        protected $bigqueryPublishingConfigType = GoogleCloudDataplexV1DataDiscoverySpecBigQueryPublishingConfig::class;
+        protected $bigqueryPublishingConfigDataType = '';
+        protected $storageConfigType = GoogleCloudDataplexV1DataDiscoverySpecStorageConfig::class;
+        protected $storageConfigDataType = '';
+        /**
+         * Optional. Configuration for metadata publishing.
+         *
+         * @param GoogleCloudDataplexV1DataDiscoverySpecBigQueryPublishingConfig $bigqueryPublishingConfig
+         */
+        public function setBigqueryPublishingConfig(GoogleCloudDataplexV1DataDiscoverySpecBigQueryPublishingConfig $bigqueryPublishingConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1DataDiscoverySpecBigQueryPublishingConfig
+         */
+        public function getBigqueryPublishingConfig()
+        {
+        }
+        /**
+         * Cloud Storage related configurations.
+         *
+         * @param GoogleCloudDataplexV1DataDiscoverySpecStorageConfig $storageConfig
+         */
+        public function setStorageConfig(GoogleCloudDataplexV1DataDiscoverySpecStorageConfig $storageConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1DataDiscoverySpecStorageConfig
+         */
+        public function getStorageConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDataplexV1DataDiscoverySpecBigQueryPublishingConfig
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataDiscoverySpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBigqueryPublishingConfig()
-    {
-    }
-    /**
-     * Cloud Storage related configurations.
-     *
-     * @param GoogleCloudDataplexV1DataDiscoverySpecStorageConfig $storageConfig
-     */
-    public function setStorageConfig(GoogleCloudDataplexV1DataDiscoverySpecStorageConfig $storageConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudDataplexV1DataDiscoverySpecStorageConfig
-     */
-    public function getStorageConfig()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1DataDiscoverySpec extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataDiscoverySpec
     {
     }
 }

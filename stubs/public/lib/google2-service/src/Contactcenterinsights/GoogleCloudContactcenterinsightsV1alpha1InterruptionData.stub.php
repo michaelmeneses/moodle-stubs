@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1alpha1InterruptionData extends \Google\Model
-{
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1alpha1InterruptionData extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1InterruptionData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1alpha1InterruptionData extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1InterruptionData
+    {
+    }
 }

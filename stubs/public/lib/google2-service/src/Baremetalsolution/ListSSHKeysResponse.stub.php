@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Baremetalsolution;
-
-class ListSSHKeysResponse extends \Google\Collection
-{
-    protected $collection_key = 'sshKeys';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $sshKeysType = SSHKey::class;
-    protected $sshKeysDataType = 'array';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Baremetalsolution {
+    class ListSSHKeysResponse extends \Google\Collection
     {
+        protected $collection_key = 'sshKeys';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $sshKeysType = SSHKey::class;
+        protected $sshKeysDataType = 'array';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The SSH keys registered in the project.
+         *
+         * @param SSHKey[] $sshKeys
+         */
+        public function setSshKeys($sshKeys)
+        {
+        }
+        /**
+         * @return SSHKey[]
+         */
+        public function getSshKeys()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Baremetalsolution\ListSSHKeysResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The SSH keys registered in the project.
-     *
-     * @param SSHKey[] $sshKeys
-     */
-    public function setSshKeys($sshKeys)
-    {
-    }
-    /**
-     * @return SSHKey[]
-     */
-    public function getSshKeys()
+    class Google_Service_Baremetalsolution_ListSSHKeysResponse extends \Google\Service\Baremetalsolution\ListSSHKeysResponse
     {
     }
 }

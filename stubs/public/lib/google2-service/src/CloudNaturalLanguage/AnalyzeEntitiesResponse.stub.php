@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class AnalyzeEntitiesResponse extends \Google\Collection
-{
-    protected $collection_key = 'entities';
-    protected $entitiesType = Entity::class;
-    protected $entitiesDataType = 'array';
-    /**
-     * The language of the text, which will be the same as the language specified
-     * in the request or, if not specified, the automatically-detected language.
-     * See Document.language_code field for more details.
-     *
-     * @var string
-     */
-    public $languageCode;
-    /**
-     * Whether the language is officially supported. The API may still return a
-     * response when the language is not supported, but it is on a best effort
-     * basis.
-     *
-     * @var bool
-     */
-    public $languageSupported;
-    /**
-     * The recognized entities in the input document.
-     *
-     * @param Entity[] $entities
-     */
-    public function setEntities($entities)
+namespace Google\Service\CloudNaturalLanguage {
+    class AnalyzeEntitiesResponse extends \Google\Collection
     {
+        protected $collection_key = 'entities';
+        protected $entitiesType = Entity::class;
+        protected $entitiesDataType = 'array';
+        /**
+         * The language of the text, which will be the same as the language specified
+         * in the request or, if not specified, the automatically-detected language.
+         * See Document.language_code field for more details.
+         *
+         * @var string
+         */
+        public $languageCode;
+        /**
+         * Whether the language is officially supported. The API may still return a
+         * response when the language is not supported, but it is on a best effort
+         * basis.
+         *
+         * @var bool
+         */
+        public $languageSupported;
+        /**
+         * The recognized entities in the input document.
+         *
+         * @param Entity[] $entities
+         */
+        public function setEntities($entities)
+        {
+        }
+        /**
+         * @return Entity[]
+         */
+        public function getEntities()
+        {
+        }
+        /**
+         * The language of the text, which will be the same as the language specified
+         * in the request or, if not specified, the automatically-detected language.
+         * See Document.language_code field for more details.
+         *
+         * @param string $languageCode
+         */
+        public function setLanguageCode($languageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLanguageCode()
+        {
+        }
+        /**
+         * Whether the language is officially supported. The API may still return a
+         * response when the language is not supported, but it is on a best effort
+         * basis.
+         *
+         * @param bool $languageSupported
+         */
+        public function setLanguageSupported($languageSupported)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getLanguageSupported()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Entity[]
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\AnalyzeEntitiesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntities()
-    {
-    }
-    /**
-     * The language of the text, which will be the same as the language specified
-     * in the request or, if not specified, the automatically-detected language.
-     * See Document.language_code field for more details.
-     *
-     * @param string $languageCode
-     */
-    public function setLanguageCode($languageCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLanguageCode()
-    {
-    }
-    /**
-     * Whether the language is officially supported. The API may still return a
-     * response when the language is not supported, but it is on a best effort
-     * basis.
-     *
-     * @param bool $languageSupported
-     */
-    public function setLanguageSupported($languageSupported)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getLanguageSupported()
+    class Google_Service_CloudNaturalLanguage_AnalyzeEntitiesResponse extends \Google\Service\CloudNaturalLanguage\AnalyzeEntitiesResponse
     {
     }
 }

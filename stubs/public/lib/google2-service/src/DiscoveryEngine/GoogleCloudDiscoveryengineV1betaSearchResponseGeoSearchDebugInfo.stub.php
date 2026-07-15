@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaSearchResponseGeoSearchDebugInfo extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $errorMessage;
-    /**
-     * @var string
-     */
-    public $originalAddressQuery;
-    /**
-     * @param string
-     */
-    public function setErrorMessage($errorMessage)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaSearchResponseGeoSearchDebugInfo extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $errorMessage;
+        /**
+         * @var string
+         */
+        public $originalAddressQuery;
+        /**
+         * @param string
+         */
+        public function setErrorMessage($errorMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getErrorMessage()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOriginalAddressQuery($originalAddressQuery)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOriginalAddressQuery()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaSearchResponseGeoSearchDebugInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrorMessage()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOriginalAddressQuery($originalAddressQuery)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOriginalAddressQuery()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaSearchResponseGeoSearchDebugInfo extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaSearchResponseGeoSearchDebugInfo
     {
     }
 }

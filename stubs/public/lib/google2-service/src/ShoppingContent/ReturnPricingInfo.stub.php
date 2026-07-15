@@ -21,80 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class ReturnPricingInfo extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $chargeReturnShippingFee;
-    protected $maxReturnShippingFeeType = MonetaryAmount::class;
-    protected $maxReturnShippingFeeDataType = '';
-    protected $refundableItemsTotalAmountType = MonetaryAmount::class;
-    protected $refundableItemsTotalAmountDataType = '';
-    protected $refundableShippingAmountType = MonetaryAmount::class;
-    protected $refundableShippingAmountDataType = '';
-    protected $totalRefundedAmountType = MonetaryAmount::class;
-    protected $totalRefundedAmountDataType = '';
-    /**
-     * @param bool
-     */
-    public function setChargeReturnShippingFee($chargeReturnShippingFee)
+namespace Google\Service\ShoppingContent {
+    class ReturnPricingInfo extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $chargeReturnShippingFee;
+        protected $maxReturnShippingFeeType = MonetaryAmount::class;
+        protected $maxReturnShippingFeeDataType = '';
+        protected $refundableItemsTotalAmountType = MonetaryAmount::class;
+        protected $refundableItemsTotalAmountDataType = '';
+        protected $refundableShippingAmountType = MonetaryAmount::class;
+        protected $refundableShippingAmountDataType = '';
+        protected $totalRefundedAmountType = MonetaryAmount::class;
+        protected $totalRefundedAmountDataType = '';
+        /**
+         * @param bool
+         */
+        public function setChargeReturnShippingFee($chargeReturnShippingFee)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getChargeReturnShippingFee()
+        {
+        }
+        /**
+         * @param MonetaryAmount
+         */
+        public function setMaxReturnShippingFee(MonetaryAmount $maxReturnShippingFee)
+        {
+        }
+        /**
+         * @return MonetaryAmount
+         */
+        public function getMaxReturnShippingFee()
+        {
+        }
+        /**
+         * @param MonetaryAmount
+         */
+        public function setRefundableItemsTotalAmount(MonetaryAmount $refundableItemsTotalAmount)
+        {
+        }
+        /**
+         * @return MonetaryAmount
+         */
+        public function getRefundableItemsTotalAmount()
+        {
+        }
+        /**
+         * @param MonetaryAmount
+         */
+        public function setRefundableShippingAmount(MonetaryAmount $refundableShippingAmount)
+        {
+        }
+        /**
+         * @return MonetaryAmount
+         */
+        public function getRefundableShippingAmount()
+        {
+        }
+        /**
+         * @param MonetaryAmount
+         */
+        public function setTotalRefundedAmount(MonetaryAmount $totalRefundedAmount)
+        {
+        }
+        /**
+         * @return MonetaryAmount
+         */
+        public function getTotalRefundedAmount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\ShoppingContent\ReturnPricingInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChargeReturnShippingFee()
-    {
-    }
-    /**
-     * @param MonetaryAmount
-     */
-    public function setMaxReturnShippingFee(MonetaryAmount $maxReturnShippingFee)
-    {
-    }
-    /**
-     * @return MonetaryAmount
-     */
-    public function getMaxReturnShippingFee()
-    {
-    }
-    /**
-     * @param MonetaryAmount
-     */
-    public function setRefundableItemsTotalAmount(MonetaryAmount $refundableItemsTotalAmount)
-    {
-    }
-    /**
-     * @return MonetaryAmount
-     */
-    public function getRefundableItemsTotalAmount()
-    {
-    }
-    /**
-     * @param MonetaryAmount
-     */
-    public function setRefundableShippingAmount(MonetaryAmount $refundableShippingAmount)
-    {
-    }
-    /**
-     * @return MonetaryAmount
-     */
-    public function getRefundableShippingAmount()
-    {
-    }
-    /**
-     * @param MonetaryAmount
-     */
-    public function setTotalRefundedAmount(MonetaryAmount $totalRefundedAmount)
-    {
-    }
-    /**
-     * @return MonetaryAmount
-     */
-    public function getTotalRefundedAmount()
+    class Google_Service_ShoppingContent_ReturnPricingInfo extends \Google\Service\ShoppingContent\ReturnPricingInfo
     {
     }
 }

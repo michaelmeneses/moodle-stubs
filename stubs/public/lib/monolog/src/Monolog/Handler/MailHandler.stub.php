@@ -16,6 +16,9 @@
  */
 namespace Monolog\Handler;
 
+use Monolog\Formatter\FormatterInterface;
+use Monolog\Formatter\HtmlFormatter;
+use Monolog\LogRecord;
 /**
  * Base class for all mail handlers
  *

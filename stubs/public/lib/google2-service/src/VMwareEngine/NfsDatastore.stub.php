@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMwareEngine;
-
-class NfsDatastore extends \Google\Model
-{
-    protected $googleFileServiceType = GoogleFileService::class;
-    protected $googleFileServiceDataType = '';
-    protected $googleVmwareFileServiceType = GoogleVmwareFileService::class;
-    protected $googleVmwareFileServiceDataType = '';
-    protected $thirdPartyFileServiceType = ThirdPartyFileService::class;
-    protected $thirdPartyFileServiceDataType = '';
-    /**
-     * Google service file service configuration
-     *
-     * @param GoogleFileService $googleFileService
-     */
-    public function setGoogleFileService(GoogleFileService $googleFileService)
+namespace Google\Service\VMwareEngine {
+    class NfsDatastore extends \Google\Model
     {
+        protected $googleFileServiceType = GoogleFileService::class;
+        protected $googleFileServiceDataType = '';
+        protected $googleVmwareFileServiceType = GoogleVmwareFileService::class;
+        protected $googleVmwareFileServiceDataType = '';
+        protected $thirdPartyFileServiceType = ThirdPartyFileService::class;
+        protected $thirdPartyFileServiceDataType = '';
+        /**
+         * Google service file service configuration
+         *
+         * @param GoogleFileService $googleFileService
+         */
+        public function setGoogleFileService(GoogleFileService $googleFileService)
+        {
+        }
+        /**
+         * @return GoogleFileService
+         */
+        public function getGoogleFileService()
+        {
+        }
+        /**
+         * GCVE file service configuration
+         *
+         * @param GoogleVmwareFileService $googleVmwareFileService
+         */
+        public function setGoogleVmwareFileService(GoogleVmwareFileService $googleVmwareFileService)
+        {
+        }
+        /**
+         * @return GoogleVmwareFileService
+         */
+        public function getGoogleVmwareFileService()
+        {
+        }
+        /**
+         * Third party file service configuration
+         *
+         * @param ThirdPartyFileService $thirdPartyFileService
+         */
+        public function setThirdPartyFileService(ThirdPartyFileService $thirdPartyFileService)
+        {
+        }
+        /**
+         * @return ThirdPartyFileService
+         */
+        public function getThirdPartyFileService()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleFileService
+     * Runtime class alias of \Google\Service\VMwareEngine\NfsDatastore registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGoogleFileService()
-    {
-    }
-    /**
-     * GCVE file service configuration
-     *
-     * @param GoogleVmwareFileService $googleVmwareFileService
-     */
-    public function setGoogleVmwareFileService(GoogleVmwareFileService $googleVmwareFileService)
-    {
-    }
-    /**
-     * @return GoogleVmwareFileService
-     */
-    public function getGoogleVmwareFileService()
-    {
-    }
-    /**
-     * Third party file service configuration
-     *
-     * @param ThirdPartyFileService $thirdPartyFileService
-     */
-    public function setThirdPartyFileService(ThirdPartyFileService $thirdPartyFileService)
-    {
-    }
-    /**
-     * @return ThirdPartyFileService
-     */
-    public function getThirdPartyFileService()
+    class Google_Service_VMwareEngine_NfsDatastore extends \Google\Service\VMwareEngine\NfsDatastore
     {
     }
 }

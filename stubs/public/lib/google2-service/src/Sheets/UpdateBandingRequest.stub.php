@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class UpdateBandingRequest extends \Google\Model
-{
-    protected $bandedRangeType = BandedRange::class;
-    protected $bandedRangeDataType = '';
-    /**
-     * The fields that should be updated. At least one field must be specified.
-     * The root `bandedRange` is implied and should not be specified. A single
-     * `"*"` can be used as short-hand for listing every field.
-     *
-     * @var string
-     */
-    public $fields;
-    /**
-     * The banded range to update with the new properties.
-     *
-     * @param BandedRange $bandedRange
-     */
-    public function setBandedRange(BandedRange $bandedRange)
+namespace Google\Service\Sheets {
+    class UpdateBandingRequest extends \Google\Model
     {
+        protected $bandedRangeType = BandedRange::class;
+        protected $bandedRangeDataType = '';
+        /**
+         * The fields that should be updated. At least one field must be specified.
+         * The root `bandedRange` is implied and should not be specified. A single
+         * `"*"` can be used as short-hand for listing every field.
+         *
+         * @var string
+         */
+        public $fields;
+        /**
+         * The banded range to update with the new properties.
+         *
+         * @param BandedRange $bandedRange
+         */
+        public function setBandedRange(BandedRange $bandedRange)
+        {
+        }
+        /**
+         * @return BandedRange
+         */
+        public function getBandedRange()
+        {
+        }
+        /**
+         * The fields that should be updated. At least one field must be specified.
+         * The root `bandedRange` is implied and should not be specified. A single
+         * `"*"` can be used as short-hand for listing every field.
+         *
+         * @param string $fields
+         */
+        public function setFields($fields)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFields()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BandedRange
+     * Runtime class alias of \Google\Service\Sheets\UpdateBandingRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBandedRange()
-    {
-    }
-    /**
-     * The fields that should be updated. At least one field must be specified.
-     * The root `bandedRange` is implied and should not be specified. A single
-     * `"*"` can be used as short-hand for listing every field.
-     *
-     * @param string $fields
-     */
-    public function setFields($fields)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFields()
+    class Google_Service_Sheets_UpdateBandingRequest extends \Google\Service\Sheets\UpdateBandingRequest
     {
     }
 }

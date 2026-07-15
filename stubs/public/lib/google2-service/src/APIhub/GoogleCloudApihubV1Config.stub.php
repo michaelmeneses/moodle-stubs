@@ -21,118 +21,127 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1Config extends \Google\Model
-{
-    /**
-     * Encryption type unspecified.
-     */
-    public const ENCRYPTION_TYPE_ENCRYPTION_TYPE_UNSPECIFIED = 'ENCRYPTION_TYPE_UNSPECIFIED';
-    /**
-     * Default encryption using Google managed encryption key.
-     */
-    public const ENCRYPTION_TYPE_GMEK = 'GMEK';
-    /**
-     * Encryption using customer managed encryption key.
-     */
-    public const ENCRYPTION_TYPE_CMEK = 'CMEK';
-    /**
-     * Optional. The Customer Managed Encryption Key (CMEK) used for data
-     * encryption. The CMEK name should follow the format of
-     * `projects/([^/]+)/locations/([^/]+)/keyRings/([^/]+)/cryptoKeys/([^/]+)`,
-     * where the location must match the instance location. If the CMEK is not
-     * provided, a GMEK will be created for the instance.
-     *
-     * @var string
-     */
-    public $cmekKeyName;
-    /**
-     * Optional. If true, the search will be disabled for the instance. The
-     * default value is false.
-     *
-     * @var bool
-     */
-    public $disableSearch;
-    /**
-     * Optional. Encryption type for the region. If the encryption type is CMEK,
-     * the cmek_key_name must be provided. If no encryption type is provided, GMEK
-     * will be used.
-     *
-     * @var string
-     */
-    public $encryptionType;
-    /**
-     * Optional. The name of the Vertex AI location where the data store is
-     * stored.
-     *
-     * @var string
-     */
-    public $vertexLocation;
-    /**
-     * Optional. The Customer Managed Encryption Key (CMEK) used for data
-     * encryption. The CMEK name should follow the format of
-     * `projects/([^/]+)/locations/([^/]+)/keyRings/([^/]+)/cryptoKeys/([^/]+)`,
-     * where the location must match the instance location. If the CMEK is not
-     * provided, a GMEK will be created for the instance.
-     *
-     * @param string $cmekKeyName
-     */
-    public function setCmekKeyName($cmekKeyName)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1Config extends \Google\Model
     {
+        /**
+         * Encryption type unspecified.
+         */
+        public const ENCRYPTION_TYPE_ENCRYPTION_TYPE_UNSPECIFIED = 'ENCRYPTION_TYPE_UNSPECIFIED';
+        /**
+         * Default encryption using Google managed encryption key.
+         */
+        public const ENCRYPTION_TYPE_GMEK = 'GMEK';
+        /**
+         * Encryption using customer managed encryption key.
+         */
+        public const ENCRYPTION_TYPE_CMEK = 'CMEK';
+        /**
+         * Optional. The Customer Managed Encryption Key (CMEK) used for data
+         * encryption. The CMEK name should follow the format of
+         * `projects/([^/]+)/locations/([^/]+)/keyRings/([^/]+)/cryptoKeys/([^/]+)`,
+         * where the location must match the instance location. If the CMEK is not
+         * provided, a GMEK will be created for the instance.
+         *
+         * @var string
+         */
+        public $cmekKeyName;
+        /**
+         * Optional. If true, the search will be disabled for the instance. The
+         * default value is false.
+         *
+         * @var bool
+         */
+        public $disableSearch;
+        /**
+         * Optional. Encryption type for the region. If the encryption type is CMEK,
+         * the cmek_key_name must be provided. If no encryption type is provided, GMEK
+         * will be used.
+         *
+         * @var string
+         */
+        public $encryptionType;
+        /**
+         * Optional. The name of the Vertex AI location where the data store is
+         * stored.
+         *
+         * @var string
+         */
+        public $vertexLocation;
+        /**
+         * Optional. The Customer Managed Encryption Key (CMEK) used for data
+         * encryption. The CMEK name should follow the format of
+         * `projects/([^/]+)/locations/([^/]+)/keyRings/([^/]+)/cryptoKeys/([^/]+)`,
+         * where the location must match the instance location. If the CMEK is not
+         * provided, a GMEK will be created for the instance.
+         *
+         * @param string $cmekKeyName
+         */
+        public function setCmekKeyName($cmekKeyName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCmekKeyName()
+        {
+        }
+        /**
+         * Optional. If true, the search will be disabled for the instance. The
+         * default value is false.
+         *
+         * @param bool $disableSearch
+         */
+        public function setDisableSearch($disableSearch)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisableSearch()
+        {
+        }
+        /**
+         * Optional. Encryption type for the region. If the encryption type is CMEK,
+         * the cmek_key_name must be provided. If no encryption type is provided, GMEK
+         * will be used.
+         *
+         * Accepted values: ENCRYPTION_TYPE_UNSPECIFIED, GMEK, CMEK
+         *
+         * @param self::ENCRYPTION_TYPE_* $encryptionType
+         */
+        public function setEncryptionType($encryptionType)
+        {
+        }
+        /**
+         * @return self::ENCRYPTION_TYPE_*
+         */
+        public function getEncryptionType()
+        {
+        }
+        /**
+         * Optional. The name of the Vertex AI location where the data store is
+         * stored.
+         *
+         * @param string $vertexLocation
+         */
+        public function setVertexLocation($vertexLocation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVertexLocation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1Config registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCmekKeyName()
-    {
-    }
-    /**
-     * Optional. If true, the search will be disabled for the instance. The
-     * default value is false.
-     *
-     * @param bool $disableSearch
-     */
-    public function setDisableSearch($disableSearch)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDisableSearch()
-    {
-    }
-    /**
-     * Optional. Encryption type for the region. If the encryption type is CMEK,
-     * the cmek_key_name must be provided. If no encryption type is provided, GMEK
-     * will be used.
-     *
-     * Accepted values: ENCRYPTION_TYPE_UNSPECIFIED, GMEK, CMEK
-     *
-     * @param self::ENCRYPTION_TYPE_* $encryptionType
-     */
-    public function setEncryptionType($encryptionType)
-    {
-    }
-    /**
-     * @return self::ENCRYPTION_TYPE_*
-     */
-    public function getEncryptionType()
-    {
-    }
-    /**
-     * Optional. The name of the Vertex AI location where the data store is
-     * stored.
-     *
-     * @param string $vertexLocation
-     */
-    public function setVertexLocation($vertexLocation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVertexLocation()
+    class Google_Service_APIhub_GoogleCloudApihubV1Config extends \Google\Service\APIhub\GoogleCloudApihubV1Config
     {
     }
 }

@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Assuredworkloads;
-
-class GoogleCloudAssuredworkloadsV1MutatePartnerPermissionsRequest extends \Google\Model
-{
-    /**
-     * Optional. The etag of the workload. If this is provided, it must match the
-     * server's etag.
-     *
-     * @var string
-     */
-    public $etag;
-    protected $partnerPermissionsType = GoogleCloudAssuredworkloadsV1WorkloadPartnerPermissions::class;
-    protected $partnerPermissionsDataType = '';
-    /**
-     * Required. The list of fields to be updated. E.g. update_mask { paths:
-     * "partner_permissions.data_logs_viewer"}
-     *
-     * @var string
-     */
-    public $updateMask;
-    /**
-     * Optional. The etag of the workload. If this is provided, it must match the
-     * server's etag.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
+namespace Google\Service\Assuredworkloads {
+    class GoogleCloudAssuredworkloadsV1MutatePartnerPermissionsRequest extends \Google\Model
     {
+        /**
+         * Optional. The etag of the workload. If this is provided, it must match the
+         * server's etag.
+         *
+         * @var string
+         */
+        public $etag;
+        protected $partnerPermissionsType = GoogleCloudAssuredworkloadsV1WorkloadPartnerPermissions::class;
+        protected $partnerPermissionsDataType = '';
+        /**
+         * Required. The list of fields to be updated. E.g. update_mask { paths:
+         * "partner_permissions.data_logs_viewer"}
+         *
+         * @var string
+         */
+        public $updateMask;
+        /**
+         * Optional. The etag of the workload. If this is provided, it must match the
+         * server's etag.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * Required. The partner permissions to be updated.
+         *
+         * @param GoogleCloudAssuredworkloadsV1WorkloadPartnerPermissions $partnerPermissions
+         */
+        public function setPartnerPermissions(GoogleCloudAssuredworkloadsV1WorkloadPartnerPermissions $partnerPermissions)
+        {
+        }
+        /**
+         * @return GoogleCloudAssuredworkloadsV1WorkloadPartnerPermissions
+         */
+        public function getPartnerPermissions()
+        {
+        }
+        /**
+         * Required. The list of fields to be updated. E.g. update_mask { paths:
+         * "partner_permissions.data_logs_viewer"}
+         *
+         * @param string $updateMask
+         */
+        public function setUpdateMask($updateMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateMask()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1MutatePartnerPermissionsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
-    {
-    }
-    /**
-     * Required. The partner permissions to be updated.
-     *
-     * @param GoogleCloudAssuredworkloadsV1WorkloadPartnerPermissions $partnerPermissions
-     */
-    public function setPartnerPermissions(GoogleCloudAssuredworkloadsV1WorkloadPartnerPermissions $partnerPermissions)
-    {
-    }
-    /**
-     * @return GoogleCloudAssuredworkloadsV1WorkloadPartnerPermissions
-     */
-    public function getPartnerPermissions()
-    {
-    }
-    /**
-     * Required. The list of fields to be updated. E.g. update_mask { paths:
-     * "partner_permissions.data_logs_viewer"}
-     *
-     * @param string $updateMask
-     */
-    public function setUpdateMask($updateMask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateMask()
+    class Google_Service_Assuredworkloads_GoogleCloudAssuredworkloadsV1MutatePartnerPermissionsRequest extends \Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1MutatePartnerPermissionsRequest
     {
     }
 }

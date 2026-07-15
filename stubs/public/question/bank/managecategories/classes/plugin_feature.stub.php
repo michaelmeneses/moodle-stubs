@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qbank_managecategories;
 
+use core_question\local\bank\navigation_node_base;
+use core_question\local\bank\plugin_features_base;
+use core_question\local\bank\view;
 /**
  * Class plugin_feature.
  *

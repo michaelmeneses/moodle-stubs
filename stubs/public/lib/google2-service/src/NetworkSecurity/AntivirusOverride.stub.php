@@ -21,110 +21,119 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkSecurity;
-
-class AntivirusOverride extends \Google\Model
-{
-    /**
-     * Threat action not specified.
-     */
-    public const ACTION_THREAT_ACTION_UNSPECIFIED = 'THREAT_ACTION_UNSPECIFIED';
-    /**
-     * The default action (as specified by the vendor) is taken.
-     */
-    public const ACTION_DEFAULT_ACTION = 'DEFAULT_ACTION';
-    /**
-     * The packet matching this rule will be allowed to transmit.
-     */
-    public const ACTION_ALLOW = 'ALLOW';
-    /**
-     * The packet matching this rule will be allowed to transmit, but a threat_log
-     * entry will be sent to the consumer project.
-     */
-    public const ACTION_ALERT = 'ALERT';
-    /**
-     * The packet matching this rule will be dropped, and a threat_log entry will
-     * be sent to the consumer project.
-     */
-    public const ACTION_DENY = 'DENY';
-    /**
-     * Protocol not specified.
-     */
-    public const PROTOCOL_PROTOCOL_UNSPECIFIED = 'PROTOCOL_UNSPECIFIED';
-    /**
-     * SMTP protocol
-     */
-    public const PROTOCOL_SMTP = 'SMTP';
-    /**
-     * SMB protocol
-     */
-    public const PROTOCOL_SMB = 'SMB';
-    /**
-     * POP3 protocol
-     */
-    public const PROTOCOL_POP3 = 'POP3';
-    /**
-     * IMAP protocol
-     */
-    public const PROTOCOL_IMAP = 'IMAP';
-    /**
-     * HTTP2 protocol
-     */
-    public const PROTOCOL_HTTP2 = 'HTTP2';
-    /**
-     * HTTP protocol
-     */
-    public const PROTOCOL_HTTP = 'HTTP';
-    /**
-     * FTP protocol
-     */
-    public const PROTOCOL_FTP = 'FTP';
-    /**
-     * Required. Threat action override. For some threat types, only a subset of
-     * actions applies.
-     *
-     * @var string
-     */
-    public $action;
-    /**
-     * Required. Protocol to match.
-     *
-     * @var string
-     */
-    public $protocol;
-    /**
-     * Required. Threat action override. For some threat types, only a subset of
-     * actions applies.
-     *
-     * Accepted values: THREAT_ACTION_UNSPECIFIED, DEFAULT_ACTION, ALLOW, ALERT,
-     * DENY
-     *
-     * @param self::ACTION_* $action
-     */
-    public function setAction($action)
+namespace Google\Service\NetworkSecurity {
+    class AntivirusOverride extends \Google\Model
     {
+        /**
+         * Threat action not specified.
+         */
+        public const ACTION_THREAT_ACTION_UNSPECIFIED = 'THREAT_ACTION_UNSPECIFIED';
+        /**
+         * The default action (as specified by the vendor) is taken.
+         */
+        public const ACTION_DEFAULT_ACTION = 'DEFAULT_ACTION';
+        /**
+         * The packet matching this rule will be allowed to transmit.
+         */
+        public const ACTION_ALLOW = 'ALLOW';
+        /**
+         * The packet matching this rule will be allowed to transmit, but a threat_log
+         * entry will be sent to the consumer project.
+         */
+        public const ACTION_ALERT = 'ALERT';
+        /**
+         * The packet matching this rule will be dropped, and a threat_log entry will
+         * be sent to the consumer project.
+         */
+        public const ACTION_DENY = 'DENY';
+        /**
+         * Protocol not specified.
+         */
+        public const PROTOCOL_PROTOCOL_UNSPECIFIED = 'PROTOCOL_UNSPECIFIED';
+        /**
+         * SMTP protocol
+         */
+        public const PROTOCOL_SMTP = 'SMTP';
+        /**
+         * SMB protocol
+         */
+        public const PROTOCOL_SMB = 'SMB';
+        /**
+         * POP3 protocol
+         */
+        public const PROTOCOL_POP3 = 'POP3';
+        /**
+         * IMAP protocol
+         */
+        public const PROTOCOL_IMAP = 'IMAP';
+        /**
+         * HTTP2 protocol
+         */
+        public const PROTOCOL_HTTP2 = 'HTTP2';
+        /**
+         * HTTP protocol
+         */
+        public const PROTOCOL_HTTP = 'HTTP';
+        /**
+         * FTP protocol
+         */
+        public const PROTOCOL_FTP = 'FTP';
+        /**
+         * Required. Threat action override. For some threat types, only a subset of
+         * actions applies.
+         *
+         * @var string
+         */
+        public $action;
+        /**
+         * Required. Protocol to match.
+         *
+         * @var string
+         */
+        public $protocol;
+        /**
+         * Required. Threat action override. For some threat types, only a subset of
+         * actions applies.
+         *
+         * Accepted values: THREAT_ACTION_UNSPECIFIED, DEFAULT_ACTION, ALLOW, ALERT,
+         * DENY
+         *
+         * @param self::ACTION_* $action
+         */
+        public function setAction($action)
+        {
+        }
+        /**
+         * @return self::ACTION_*
+         */
+        public function getAction()
+        {
+        }
+        /**
+         * Required. Protocol to match.
+         *
+         * Accepted values: PROTOCOL_UNSPECIFIED, SMTP, SMB, POP3, IMAP, HTTP2, HTTP,
+         * FTP
+         *
+         * @param self::PROTOCOL_* $protocol
+         */
+        public function setProtocol($protocol)
+        {
+        }
+        /**
+         * @return self::PROTOCOL_*
+         */
+        public function getProtocol()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::ACTION_*
+     * Runtime class alias of \Google\Service\NetworkSecurity\AntivirusOverride registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAction()
-    {
-    }
-    /**
-     * Required. Protocol to match.
-     *
-     * Accepted values: PROTOCOL_UNSPECIFIED, SMTP, SMB, POP3, IMAP, HTTP2, HTTP,
-     * FTP
-     *
-     * @param self::PROTOCOL_* $protocol
-     */
-    public function setProtocol($protocol)
-    {
-    }
-    /**
-     * @return self::PROTOCOL_*
-     */
-    public function getProtocol()
+    class Google_Service_NetworkSecurity_AntivirusOverride extends \Google\Service\NetworkSecurity\AntivirusOverride
     {
     }
 }

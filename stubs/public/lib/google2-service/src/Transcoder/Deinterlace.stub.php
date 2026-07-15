@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Transcoder;
-
-class Deinterlace extends \Google\Model
-{
-    protected $bwdifType = BwdifConfig::class;
-    protected $bwdifDataType = '';
-    protected $yadifType = YadifConfig::class;
-    protected $yadifDataType = '';
-    /**
-     * Specifies the Bob Weaver Deinterlacing Filter Configuration.
-     *
-     * @param BwdifConfig $bwdif
-     */
-    public function setBwdif(BwdifConfig $bwdif)
+namespace Google\Service\Transcoder {
+    class Deinterlace extends \Google\Model
     {
+        protected $bwdifType = BwdifConfig::class;
+        protected $bwdifDataType = '';
+        protected $yadifType = YadifConfig::class;
+        protected $yadifDataType = '';
+        /**
+         * Specifies the Bob Weaver Deinterlacing Filter Configuration.
+         *
+         * @param BwdifConfig $bwdif
+         */
+        public function setBwdif(BwdifConfig $bwdif)
+        {
+        }
+        /**
+         * @return BwdifConfig
+         */
+        public function getBwdif()
+        {
+        }
+        /**
+         * Specifies the Yet Another Deinterlacing Filter Configuration.
+         *
+         * @param YadifConfig $yadif
+         */
+        public function setYadif(YadifConfig $yadif)
+        {
+        }
+        /**
+         * @return YadifConfig
+         */
+        public function getYadif()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BwdifConfig
+     * Runtime class alias of \Google\Service\Transcoder\Deinterlace registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBwdif()
-    {
-    }
-    /**
-     * Specifies the Yet Another Deinterlacing Filter Configuration.
-     *
-     * @param YadifConfig $yadif
-     */
-    public function setYadif(YadifConfig $yadif)
-    {
-    }
-    /**
-     * @return YadifConfig
-     */
-    public function getYadif()
+    class Google_Service_Transcoder_Deinterlace extends \Google\Service\Transcoder\Deinterlace
     {
     }
 }

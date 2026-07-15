@@ -21,28 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudControlsPartnerService\Resource;
-
-/**
- * The "locations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $cloudcontrolspartnerService = new Google\Service\CloudControlsPartnerService(...);
- *   $locations = $cloudcontrolspartnerService->organizations_locations;
- *  </code>
- */
-class OrganizationsLocations extends \Google\Service\Resource
-{
+namespace Google\Service\CloudControlsPartnerService\Resource {
+    use Google\Service\CloudControlsPartnerService\Partner;
     /**
-     * Get details of a Partner. (locations.getPartner)
-     *
-     * @param string $name Required. Format:
-     * `organizations/{organization}/locations/{location}/partner`
-     * @param array $optParams Optional parameters.
-     * @return Partner
-     * @throws \Google\Service\Exception
+     * The "locations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $cloudcontrolspartnerService = new Google\Service\CloudControlsPartnerService(...);
+     *   $locations = $cloudcontrolspartnerService->organizations_locations;
+     *  </code>
      */
-    public function getPartner($name, $optParams = [])
+    class OrganizationsLocations extends \Google\Service\Resource
+    {
+        /**
+         * Get details of a Partner. (locations.getPartner)
+         *
+         * @param string $name Required. Format:
+         * `organizations/{organization}/locations/{location}/partner`
+         * @param array $optParams Optional parameters.
+         * @return Partner
+         * @throws \Google\Service\Exception
+         */
+        public function getPartner($name, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudControlsPartnerService\Resource\OrganizationsLocations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudControlsPartnerService_Resource_OrganizationsLocations extends \Google\Service\CloudControlsPartnerService\Resource\OrganizationsLocations
     {
     }
 }

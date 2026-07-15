@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InstanceGroupManagerAllInstancesConfig extends \Google\Model
-{
-    protected $propertiesType = InstancePropertiesPatch::class;
-    protected $propertiesDataType = '';
-    /**
-     * Properties to set on all instances in the group.
-     *
-     * You can add or modify properties using theinstanceGroupManagers.patch
-     * orregionInstanceGroupManagers.patch. After settingallInstancesConfig on the
-     * group, you must update the group's instances to apply the configuration. To
-     * apply the configuration, set the group's updatePolicy.type field to use
-     * proactive updates or use the applyUpdatesToInstances method.
-     *
-     * @param InstancePropertiesPatch $properties
-     */
-    public function setProperties(InstancePropertiesPatch $properties)
+namespace Google\Service\Compute {
+    class InstanceGroupManagerAllInstancesConfig extends \Google\Model
     {
+        protected $propertiesType = InstancePropertiesPatch::class;
+        protected $propertiesDataType = '';
+        /**
+         * Properties to set on all instances in the group.
+         *
+         * You can add or modify properties using theinstanceGroupManagers.patch
+         * orregionInstanceGroupManagers.patch. After settingallInstancesConfig on the
+         * group, you must update the group's instances to apply the configuration. To
+         * apply the configuration, set the group's updatePolicy.type field to use
+         * proactive updates or use the applyUpdatesToInstances method.
+         *
+         * @param InstancePropertiesPatch $properties
+         */
+        public function setProperties(InstancePropertiesPatch $properties)
+        {
+        }
+        /**
+         * @return InstancePropertiesPatch
+         */
+        public function getProperties()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InstancePropertiesPatch
+     * Runtime class alias of \Google\Service\Compute\InstanceGroupManagerAllInstancesConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProperties()
+    class Google_Service_Compute_InstanceGroupManagerAllInstancesConfig extends \Google\Service\Compute\InstanceGroupManagerAllInstancesConfig
     {
     }
 }

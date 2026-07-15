@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides;
-
-class DuplicateObjectResponse extends \Google\Model
-{
-    /**
-     * The ID of the new duplicate object.
-     *
-     * @var string
-     */
-    public $objectId;
-    /**
-     * The ID of the new duplicate object.
-     *
-     * @param string $objectId
-     */
-    public function setObjectId($objectId)
+namespace Google\Service\Slides {
+    class DuplicateObjectResponse extends \Google\Model
     {
+        /**
+         * The ID of the new duplicate object.
+         *
+         * @var string
+         */
+        public $objectId;
+        /**
+         * The ID of the new duplicate object.
+         *
+         * @param string $objectId
+         */
+        public function setObjectId($objectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Slides\DuplicateObjectResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getObjectId()
+    class Google_Service_Slides_DuplicateObjectResponse extends \Google\Service\Slides\DuplicateObjectResponse
     {
     }
 }

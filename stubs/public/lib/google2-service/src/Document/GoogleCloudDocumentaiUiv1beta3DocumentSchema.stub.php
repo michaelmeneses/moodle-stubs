@@ -21,105 +21,114 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiUiv1beta3DocumentSchema extends \Google\Collection
-{
-    protected $collection_key = 'entityTypes';
-    /**
-     * Description of the schema.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Display name to show to users.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Optional. Document level prompt provided by the user. This custom text is
-     * injected into the AI model's prompt to provide extra, document-wide
-     * guidance for processing.
-     *
-     * @var string
-     */
-    public $documentPrompt;
-    protected $entityTypesType = GoogleCloudDocumentaiUiv1beta3DocumentSchemaEntityType::class;
-    protected $entityTypesDataType = 'array';
-    protected $metadataType = GoogleCloudDocumentaiUiv1beta3DocumentSchemaMetadata::class;
-    protected $metadataDataType = '';
-    /**
-     * Description of the schema.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiUiv1beta3DocumentSchema extends \Google\Collection
     {
+        protected $collection_key = 'entityTypes';
+        /**
+         * Description of the schema.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Display name to show to users.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Optional. Document level prompt provided by the user. This custom text is
+         * injected into the AI model's prompt to provide extra, document-wide
+         * guidance for processing.
+         *
+         * @var string
+         */
+        public $documentPrompt;
+        protected $entityTypesType = GoogleCloudDocumentaiUiv1beta3DocumentSchemaEntityType::class;
+        protected $entityTypesDataType = 'array';
+        protected $metadataType = GoogleCloudDocumentaiUiv1beta3DocumentSchemaMetadata::class;
+        protected $metadataDataType = '';
+        /**
+         * Description of the schema.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Display name to show to users.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Optional. Document level prompt provided by the user. This custom text is
+         * injected into the AI model's prompt to provide extra, document-wide
+         * guidance for processing.
+         *
+         * @param string $documentPrompt
+         */
+        public function setDocumentPrompt($documentPrompt)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDocumentPrompt()
+        {
+        }
+        /**
+         * Entity types of the schema.
+         *
+         * @param GoogleCloudDocumentaiUiv1beta3DocumentSchemaEntityType[] $entityTypes
+         */
+        public function setEntityTypes($entityTypes)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiUiv1beta3DocumentSchemaEntityType[]
+         */
+        public function getEntityTypes()
+        {
+        }
+        /**
+         * Metadata of the schema.
+         *
+         * @param GoogleCloudDocumentaiUiv1beta3DocumentSchemaMetadata $metadata
+         */
+        public function setMetadata(GoogleCloudDocumentaiUiv1beta3DocumentSchemaMetadata $metadata)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiUiv1beta3DocumentSchemaMetadata
+         */
+        public function getMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiUiv1beta3DocumentSchema registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * Display name to show to users.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Optional. Document level prompt provided by the user. This custom text is
-     * injected into the AI model's prompt to provide extra, document-wide
-     * guidance for processing.
-     *
-     * @param string $documentPrompt
-     */
-    public function setDocumentPrompt($documentPrompt)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDocumentPrompt()
-    {
-    }
-    /**
-     * Entity types of the schema.
-     *
-     * @param GoogleCloudDocumentaiUiv1beta3DocumentSchemaEntityType[] $entityTypes
-     */
-    public function setEntityTypes($entityTypes)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiUiv1beta3DocumentSchemaEntityType[]
-     */
-    public function getEntityTypes()
-    {
-    }
-    /**
-     * Metadata of the schema.
-     *
-     * @param GoogleCloudDocumentaiUiv1beta3DocumentSchemaMetadata $metadata
-     */
-    public function setMetadata(GoogleCloudDocumentaiUiv1beta3DocumentSchemaMetadata $metadata)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiUiv1beta3DocumentSchemaMetadata
-     */
-    public function getMetadata()
+    class Google_Service_Document_GoogleCloudDocumentaiUiv1beta3DocumentSchema extends \Google\Service\Document\GoogleCloudDocumentaiUiv1beta3DocumentSchema
     {
     }
 }

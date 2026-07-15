@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class BorderStyle extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $cornerRadius;
-    /**
-     * @var string
-     */
-    public $strokeColor;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @param int
-     */
-    public function setCornerRadius($cornerRadius)
+namespace Google\Service\CloudSearch {
+    class BorderStyle extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $cornerRadius;
+        /**
+         * @var string
+         */
+        public $strokeColor;
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @param int
+         */
+        public function setCornerRadius($cornerRadius)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCornerRadius()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setStrokeColor($strokeColor)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStrokeColor()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudSearch\BorderStyle registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCornerRadius()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setStrokeColor($strokeColor)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStrokeColor()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_CloudSearch_BorderStyle extends \Google\Service\CloudSearch\BorderStyle
     {
     }
 }

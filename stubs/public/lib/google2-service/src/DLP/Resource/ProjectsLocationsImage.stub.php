@@ -21,43 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP\Resource;
-
-/**
- * The "image" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dlpService = new Google\Service\DLP(...);
- *   $image = $dlpService->projects_locations_image;
- *  </code>
- */
-class ProjectsLocationsImage extends \Google\Service\Resource
-{
+namespace Google\Service\DLP\Resource {
+    use Google\Service\DLP\GooglePrivacyDlpV2RedactImageRequest;
+    use Google\Service\DLP\GooglePrivacyDlpV2RedactImageResponse;
     /**
-     * Redacts potentially sensitive info from an image. This method has limits on
-     * input size, processing time, and output size. See
-     * https://cloud.google.com/sensitive-data-protection/docs/redacting-sensitive-
-     * data-images to learn more. When no InfoTypes or CustomInfoTypes are specified
-     * in this request, the system will automatically choose what detectors to run.
-     * By default this may be all types, but may change over time as detectors are
-     * updated. Only the first frame of each multiframe image is redacted. Metadata
-     * and other frames are omitted in the response. (image.redact)
-     *
-     * @param string $parent Parent resource name. The format of this value varies
-     * depending on whether you have [specified a processing
-     * location](https://cloud.google.com/sensitive-data-protection/docs/specifying-
-     * location): + Projects scope, location specified:
-     * `projects/{project_id}/locations/{location_id}` + Projects scope, no location
-     * specified (defaults to global): `projects/{project_id}` The following example
-     * `parent` string specifies a parent project with the identifier `example-
-     * project`, and specifies the `europe-west3` location for processing data:
-     * parent=projects/example-project/locations/europe-west3
-     * @param GooglePrivacyDlpV2RedactImageRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GooglePrivacyDlpV2RedactImageResponse
-     * @throws \Google\Service\Exception
+     * The "image" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dlpService = new Google\Service\DLP(...);
+     *   $image = $dlpService->projects_locations_image;
+     *  </code>
      */
-    public function redact($parent, GooglePrivacyDlpV2RedactImageRequest $postBody, $optParams = [])
+    class ProjectsLocationsImage extends \Google\Service\Resource
+    {
+        /**
+         * Redacts potentially sensitive info from an image. This method has limits on
+         * input size, processing time, and output size. See
+         * https://cloud.google.com/sensitive-data-protection/docs/redacting-sensitive-
+         * data-images to learn more. When no InfoTypes or CustomInfoTypes are specified
+         * in this request, the system will automatically choose what detectors to run.
+         * By default this may be all types, but may change over time as detectors are
+         * updated. Only the first frame of each multiframe image is redacted. Metadata
+         * and other frames are omitted in the response. (image.redact)
+         *
+         * @param string $parent Parent resource name. The format of this value varies
+         * depending on whether you have [specified a processing
+         * location](https://cloud.google.com/sensitive-data-protection/docs/specifying-
+         * location): + Projects scope, location specified:
+         * `projects/{project_id}/locations/{location_id}` + Projects scope, no location
+         * specified (defaults to global): `projects/{project_id}` The following example
+         * `parent` string specifies a parent project with the identifier `example-
+         * project`, and specifies the `europe-west3` location for processing data:
+         * parent=projects/example-project/locations/europe-west3
+         * @param GooglePrivacyDlpV2RedactImageRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GooglePrivacyDlpV2RedactImageResponse
+         * @throws \Google\Service\Exception
+         */
+        public function redact($parent, GooglePrivacyDlpV2RedactImageRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\DLP\Resource\ProjectsLocationsImage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_DLP_Resource_ProjectsLocationsImage extends \Google\Service\DLP\Resource\ProjectsLocationsImage
     {
     }
 }

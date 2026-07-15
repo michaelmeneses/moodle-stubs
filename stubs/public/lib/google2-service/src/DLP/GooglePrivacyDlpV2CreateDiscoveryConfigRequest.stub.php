@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2CreateDiscoveryConfigRequest extends \Google\Model
-{
-    /**
-     * The config ID can contain uppercase and lowercase letters, numbers, and
-     * hyphens; that is, it must match the regular expression: `[a-zA-Z\d-_]+`.
-     * The maximum length is 100 characters. Can be empty to allow the system to
-     * generate one.
-     *
-     * @var string
-     */
-    public $configId;
-    protected $discoveryConfigType = GooglePrivacyDlpV2DiscoveryConfig::class;
-    protected $discoveryConfigDataType = '';
-    /**
-     * The config ID can contain uppercase and lowercase letters, numbers, and
-     * hyphens; that is, it must match the regular expression: `[a-zA-Z\d-_]+`.
-     * The maximum length is 100 characters. Can be empty to allow the system to
-     * generate one.
-     *
-     * @param string $configId
-     */
-    public function setConfigId($configId)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2CreateDiscoveryConfigRequest extends \Google\Model
     {
+        /**
+         * The config ID can contain uppercase and lowercase letters, numbers, and
+         * hyphens; that is, it must match the regular expression: `[a-zA-Z\d-_]+`.
+         * The maximum length is 100 characters. Can be empty to allow the system to
+         * generate one.
+         *
+         * @var string
+         */
+        public $configId;
+        protected $discoveryConfigType = GooglePrivacyDlpV2DiscoveryConfig::class;
+        protected $discoveryConfigDataType = '';
+        /**
+         * The config ID can contain uppercase and lowercase letters, numbers, and
+         * hyphens; that is, it must match the regular expression: `[a-zA-Z\d-_]+`.
+         * The maximum length is 100 characters. Can be empty to allow the system to
+         * generate one.
+         *
+         * @param string $configId
+         */
+        public function setConfigId($configId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConfigId()
+        {
+        }
+        /**
+         * Required. The DiscoveryConfig to create.
+         *
+         * @param GooglePrivacyDlpV2DiscoveryConfig $discoveryConfig
+         */
+        public function setDiscoveryConfig(GooglePrivacyDlpV2DiscoveryConfig $discoveryConfig)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2DiscoveryConfig
+         */
+        public function getDiscoveryConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2CreateDiscoveryConfigRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfigId()
-    {
-    }
-    /**
-     * Required. The DiscoveryConfig to create.
-     *
-     * @param GooglePrivacyDlpV2DiscoveryConfig $discoveryConfig
-     */
-    public function setDiscoveryConfig(GooglePrivacyDlpV2DiscoveryConfig $discoveryConfig)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2DiscoveryConfig
-     */
-    public function getDiscoveryConfig()
+    class Google_Service_DLP_GooglePrivacyDlpV2CreateDiscoveryConfigRequest extends \Google\Service\DLP\GooglePrivacyDlpV2CreateDiscoveryConfigRequest
     {
     }
 }

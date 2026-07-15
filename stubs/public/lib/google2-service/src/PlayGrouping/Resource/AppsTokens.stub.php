@@ -21,34 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PlayGrouping\Resource;
-
-/**
- * The "tokens" collection of methods.
- * Typical usage is:
- *  <code>
- *   $playgroupingService = new Google\Service\PlayGrouping(...);
- *   $tokens = $playgroupingService->apps_tokens;
- *  </code>
- */
-class AppsTokens extends \Google\Service\Resource
-{
+namespace Google\Service\PlayGrouping\Resource {
+    use Google\Service\PlayGrouping\VerifyTokenRequest;
+    use Google\Service\PlayGrouping\VerifyTokenResponse;
     /**
-     * Verify an API token by asserting the app and persona it belongs to. The
-     * verification is a protection against client-side attacks and will fail if the
-     * contents of the token don't match the provided values. A token must be
-     * verified before it can be used to manipulate user tags. (tokens.verify)
-     *
-     * @param string $appPackage Required. App the token belongs to. Format:
-     * apps/{package_name}
-     * @param string $token Required. The token to be verified. Format:
-     * tokens/{token}
-     * @param VerifyTokenRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return VerifyTokenResponse
-     * @throws \Google\Service\Exception
+     * The "tokens" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $playgroupingService = new Google\Service\PlayGrouping(...);
+     *   $tokens = $playgroupingService->apps_tokens;
+     *  </code>
      */
-    public function verify($appPackage, $token, VerifyTokenRequest $postBody, $optParams = [])
+    class AppsTokens extends \Google\Service\Resource
+    {
+        /**
+         * Verify an API token by asserting the app and persona it belongs to. The
+         * verification is a protection against client-side attacks and will fail if the
+         * contents of the token don't match the provided values. A token must be
+         * verified before it can be used to manipulate user tags. (tokens.verify)
+         *
+         * @param string $appPackage Required. App the token belongs to. Format:
+         * apps/{package_name}
+         * @param string $token Required. The token to be verified. Format:
+         * tokens/{token}
+         * @param VerifyTokenRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return VerifyTokenResponse
+         * @throws \Google\Service\Exception
+         */
+        public function verify($appPackage, $token, VerifyTokenRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\PlayGrouping\Resource\AppsTokens registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_PlayGrouping_Resource_AppsTokens extends \Google\Service\PlayGrouping\Resource\AppsTokens
     {
     }
 }

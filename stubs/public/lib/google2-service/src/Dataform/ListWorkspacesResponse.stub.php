@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataform;
-
-class ListWorkspacesResponse extends \Google\Collection
-{
-    protected $collection_key = 'workspaces';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Locations which could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    protected $workspacesType = Workspace::class;
-    protected $workspacesDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Dataform {
+    class ListWorkspacesResponse extends \Google\Collection
     {
+        protected $collection_key = 'workspaces';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Locations which could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        protected $workspacesType = Workspace::class;
+        protected $workspacesDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Locations which could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
+        /**
+         * List of workspaces.
+         *
+         * @param Workspace[] $workspaces
+         */
+        public function setWorkspaces($workspaces)
+        {
+        }
+        /**
+         * @return Workspace[]
+         */
+        public function getWorkspaces()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataform\ListWorkspacesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Locations which could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
-    {
-    }
-    /**
-     * List of workspaces.
-     *
-     * @param Workspace[] $workspaces
-     */
-    public function setWorkspaces($workspaces)
-    {
-    }
-    /**
-     * @return Workspace[]
-     */
-    public function getWorkspaces()
+    class Google_Service_Dataform_ListWorkspacesResponse extends \Google\Service\Dataform\ListWorkspacesResponse
     {
     }
 }

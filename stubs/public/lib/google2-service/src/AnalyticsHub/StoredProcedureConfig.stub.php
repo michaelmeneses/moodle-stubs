@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsHub;
-
-class StoredProcedureConfig extends \Google\Collection
-{
-    protected $collection_key = 'allowedStoredProcedureTypes';
-    /**
-     * Output only. Types of stored procedure supported to share.
-     *
-     * @var string[]
-     */
-    public $allowedStoredProcedureTypes;
-    /**
-     * Optional. If true, enable sharing of stored procedure.
-     *
-     * @var bool
-     */
-    public $enabled;
-    /**
-     * Output only. Types of stored procedure supported to share.
-     *
-     * @param string[] $allowedStoredProcedureTypes
-     */
-    public function setAllowedStoredProcedureTypes($allowedStoredProcedureTypes)
+namespace Google\Service\AnalyticsHub {
+    class StoredProcedureConfig extends \Google\Collection
     {
+        protected $collection_key = 'allowedStoredProcedureTypes';
+        /**
+         * Output only. Types of stored procedure supported to share.
+         *
+         * @var string[]
+         */
+        public $allowedStoredProcedureTypes;
+        /**
+         * Optional. If true, enable sharing of stored procedure.
+         *
+         * @var bool
+         */
+        public $enabled;
+        /**
+         * Output only. Types of stored procedure supported to share.
+         *
+         * @param string[] $allowedStoredProcedureTypes
+         */
+        public function setAllowedStoredProcedureTypes($allowedStoredProcedureTypes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAllowedStoredProcedureTypes()
+        {
+        }
+        /**
+         * Optional. If true, enable sharing of stored procedure.
+         *
+         * @param bool $enabled
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\AnalyticsHub\StoredProcedureConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowedStoredProcedureTypes()
-    {
-    }
-    /**
-     * Optional. If true, enable sharing of stored procedure.
-     *
-     * @param bool $enabled
-     */
-    public function setEnabled($enabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnabled()
+    class Google_Service_AnalyticsHub_StoredProcedureConfig extends \Google\Service\AnalyticsHub\StoredProcedureConfig
     {
     }
 }

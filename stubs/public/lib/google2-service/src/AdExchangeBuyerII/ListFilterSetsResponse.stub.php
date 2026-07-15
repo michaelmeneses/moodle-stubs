@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyerII;
-
-class ListFilterSetsResponse extends \Google\Collection
-{
-    protected $collection_key = 'filterSets';
-    protected $filterSetsType = FilterSet::class;
-    protected $filterSetsDataType = 'array';
-    /**
-     * A token to retrieve the next page of results. Pass this value in the
-     * ListFilterSetsRequest.pageToken field in the subsequent call to the
-     * accounts.filterSets.list method to retrieve the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The filter sets belonging to the buyer.
-     *
-     * @param FilterSet[] $filterSets
-     */
-    public function setFilterSets($filterSets)
+namespace Google\Service\AdExchangeBuyerII {
+    class ListFilterSetsResponse extends \Google\Collection
     {
+        protected $collection_key = 'filterSets';
+        protected $filterSetsType = FilterSet::class;
+        protected $filterSetsDataType = 'array';
+        /**
+         * A token to retrieve the next page of results. Pass this value in the
+         * ListFilterSetsRequest.pageToken field in the subsequent call to the
+         * accounts.filterSets.list method to retrieve the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The filter sets belonging to the buyer.
+         *
+         * @param FilterSet[] $filterSets
+         */
+        public function setFilterSets($filterSets)
+        {
+        }
+        /**
+         * @return FilterSet[]
+         */
+        public function getFilterSets()
+        {
+        }
+        /**
+         * A token to retrieve the next page of results. Pass this value in the
+         * ListFilterSetsRequest.pageToken field in the subsequent call to the
+         * accounts.filterSets.list method to retrieve the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FilterSet[]
+     * Runtime class alias of \Google\Service\AdExchangeBuyerII\ListFilterSetsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFilterSets()
-    {
-    }
-    /**
-     * A token to retrieve the next page of results. Pass this value in the
-     * ListFilterSetsRequest.pageToken field in the subsequent call to the
-     * accounts.filterSets.list method to retrieve the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_AdExchangeBuyerII_ListFilterSetsResponse extends \Google\Service\AdExchangeBuyerII\ListFilterSetsResponse
     {
     }
 }

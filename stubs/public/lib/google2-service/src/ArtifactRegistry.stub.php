@@ -21,57 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for ArtifactRegistry (v1).
- *
- * <p>
- * Store and manage build artifacts in a scalable and integrated service built
- * on Google infrastructure.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://cloud.google.com/artifacts/docs/" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class ArtifactRegistry extends \Google\Service
-{
-    /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
-    const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
-    /** View your data across Google Cloud services and see the email address of your Google Account. */
-    const CLOUD_PLATFORM_READ_ONLY = "https://www.googleapis.com/auth/cloud-platform.read-only";
-    public $projects;
-    public $projects_locations;
-    public $projects_locations_operations;
-    public $projects_locations_repositories;
-    public $projects_locations_repositories_aptArtifacts;
-    public $projects_locations_repositories_attachments;
-    public $projects_locations_repositories_dockerImages;
-    public $projects_locations_repositories_files;
-    public $projects_locations_repositories_genericArtifacts;
-    public $projects_locations_repositories_goModules;
-    public $projects_locations_repositories_googetArtifacts;
-    public $projects_locations_repositories_kfpArtifacts;
-    public $projects_locations_repositories_mavenArtifacts;
-    public $projects_locations_repositories_npmPackages;
-    public $projects_locations_repositories_packages;
-    public $projects_locations_repositories_packages_tags;
-    public $projects_locations_repositories_packages_versions;
-    public $projects_locations_repositories_pythonPackages;
-    public $projects_locations_repositories_rules;
-    public $projects_locations_repositories_yumArtifacts;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the ArtifactRegistry service.
+     * Service definition for ArtifactRegistry (v1).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * Store and manage build artifacts in a scalable and integrated service built
+     * on Google infrastructure.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://cloud.google.com/artifacts/docs/" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class ArtifactRegistry extends \Google\Service
+    {
+        /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
+        const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
+        /** View your data across Google Cloud services and see the email address of your Google Account. */
+        const CLOUD_PLATFORM_READ_ONLY = "https://www.googleapis.com/auth/cloud-platform.read-only";
+        public $projects;
+        public $projects_locations;
+        public $projects_locations_operations;
+        public $projects_locations_repositories;
+        public $projects_locations_repositories_aptArtifacts;
+        public $projects_locations_repositories_attachments;
+        public $projects_locations_repositories_dockerImages;
+        public $projects_locations_repositories_files;
+        public $projects_locations_repositories_genericArtifacts;
+        public $projects_locations_repositories_goModules;
+        public $projects_locations_repositories_googetArtifacts;
+        public $projects_locations_repositories_kfpArtifacts;
+        public $projects_locations_repositories_mavenArtifacts;
+        public $projects_locations_repositories_npmPackages;
+        public $projects_locations_repositories_packages;
+        public $projects_locations_repositories_packages_tags;
+        public $projects_locations_repositories_packages_versions;
+        public $projects_locations_repositories_pythonPackages;
+        public $projects_locations_repositories_rules;
+        public $projects_locations_repositories_yumArtifacts;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the ArtifactRegistry service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ArtifactRegistry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ArtifactRegistry extends \Google\Service\ArtifactRegistry
     {
     }
 }

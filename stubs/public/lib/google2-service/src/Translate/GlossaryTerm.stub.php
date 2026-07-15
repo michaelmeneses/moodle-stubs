@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Translate;
-
-class GlossaryTerm extends \Google\Model
-{
-    /**
-     * The language for this glossary term.
-     *
-     * @var string
-     */
-    public $languageCode;
-    /**
-     * The text for the glossary term.
-     *
-     * @var string
-     */
-    public $text;
-    /**
-     * The language for this glossary term.
-     *
-     * @param string $languageCode
-     */
-    public function setLanguageCode($languageCode)
+namespace Google\Service\Translate {
+    class GlossaryTerm extends \Google\Model
     {
+        /**
+         * The language for this glossary term.
+         *
+         * @var string
+         */
+        public $languageCode;
+        /**
+         * The text for the glossary term.
+         *
+         * @var string
+         */
+        public $text;
+        /**
+         * The language for this glossary term.
+         *
+         * @param string $languageCode
+         */
+        public function setLanguageCode($languageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLanguageCode()
+        {
+        }
+        /**
+         * The text for the glossary term.
+         *
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Translate\GlossaryTerm registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLanguageCode()
-    {
-    }
-    /**
-     * The text for the glossary term.
-     *
-     * @param string $text
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
+    class Google_Service_Translate_GlossaryTerm extends \Google\Service\Translate\GlossaryTerm
     {
     }
 }

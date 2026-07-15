@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class AssetList extends \Google\Collection
-{
-    protected $collection_key = 'assetIds';
-    /**
-     * Required. A list of asset IDs
-     *
-     * @var string[]
-     */
-    public $assetIds;
-    /**
-     * Required. A list of asset IDs
-     *
-     * @param string[] $assetIds
-     */
-    public function setAssetIds($assetIds)
+namespace Google\Service\MigrationCenterAPI {
+    class AssetList extends \Google\Collection
     {
+        protected $collection_key = 'assetIds';
+        /**
+         * Required. A list of asset IDs
+         *
+         * @var string[]
+         */
+        public $assetIds;
+        /**
+         * Required. A list of asset IDs
+         *
+         * @param string[] $assetIds
+         */
+        public function setAssetIds($assetIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAssetIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\AssetList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssetIds()
+    class Google_Service_MigrationCenterAPI_AssetList extends \Google\Service\MigrationCenterAPI\AssetList
     {
     }
 }

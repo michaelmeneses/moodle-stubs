@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1SecurityActionHttpHeader extends \Google\Model
-{
-    /**
-     * The header name to be sent to the target.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The header value to be sent to the target.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * The header name to be sent to the target.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1SecurityActionHttpHeader extends \Google\Model
     {
+        /**
+         * The header name to be sent to the target.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The header value to be sent to the target.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * The header name to be sent to the target.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The header value to be sent to the target.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1SecurityActionHttpHeader registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * The header value to be sent to the target.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_Apigee_GoogleCloudApigeeV1SecurityActionHttpHeader extends \Google\Service\Apigee\GoogleCloudApigeeV1SecurityActionHttpHeader
     {
     }
 }

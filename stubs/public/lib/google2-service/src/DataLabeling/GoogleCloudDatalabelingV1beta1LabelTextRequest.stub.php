@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1LabelTextRequest extends \Google\Model
-{
-    public const FEATURE_FEATURE_UNSPECIFIED = 'FEATURE_UNSPECIFIED';
-    /**
-     * Label text content to one of more labels.
-     */
-    public const FEATURE_TEXT_CLASSIFICATION = 'TEXT_CLASSIFICATION';
-    /**
-     * Label entities and their span in text.
-     */
-    public const FEATURE_TEXT_ENTITY_EXTRACTION = 'TEXT_ENTITY_EXTRACTION';
-    protected $basicConfigType = GoogleCloudDatalabelingV1beta1HumanAnnotationConfig::class;
-    protected $basicConfigDataType = '';
-    /**
-     * Required. The type of text labeling task.
-     *
-     * @var string
-     */
-    public $feature;
-    protected $textClassificationConfigType = GoogleCloudDatalabelingV1beta1TextClassificationConfig::class;
-    protected $textClassificationConfigDataType = '';
-    protected $textEntityExtractionConfigType = GoogleCloudDatalabelingV1beta1TextEntityExtractionConfig::class;
-    protected $textEntityExtractionConfigDataType = '';
-    /**
-     * Required. Basic human annotation config.
-     *
-     * @param GoogleCloudDatalabelingV1beta1HumanAnnotationConfig $basicConfig
-     */
-    public function setBasicConfig(GoogleCloudDatalabelingV1beta1HumanAnnotationConfig $basicConfig)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1LabelTextRequest extends \Google\Model
     {
+        public const FEATURE_FEATURE_UNSPECIFIED = 'FEATURE_UNSPECIFIED';
+        /**
+         * Label text content to one of more labels.
+         */
+        public const FEATURE_TEXT_CLASSIFICATION = 'TEXT_CLASSIFICATION';
+        /**
+         * Label entities and their span in text.
+         */
+        public const FEATURE_TEXT_ENTITY_EXTRACTION = 'TEXT_ENTITY_EXTRACTION';
+        protected $basicConfigType = GoogleCloudDatalabelingV1beta1HumanAnnotationConfig::class;
+        protected $basicConfigDataType = '';
+        /**
+         * Required. The type of text labeling task.
+         *
+         * @var string
+         */
+        public $feature;
+        protected $textClassificationConfigType = GoogleCloudDatalabelingV1beta1TextClassificationConfig::class;
+        protected $textClassificationConfigDataType = '';
+        protected $textEntityExtractionConfigType = GoogleCloudDatalabelingV1beta1TextEntityExtractionConfig::class;
+        protected $textEntityExtractionConfigDataType = '';
+        /**
+         * Required. Basic human annotation config.
+         *
+         * @param GoogleCloudDatalabelingV1beta1HumanAnnotationConfig $basicConfig
+         */
+        public function setBasicConfig(GoogleCloudDatalabelingV1beta1HumanAnnotationConfig $basicConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1HumanAnnotationConfig
+         */
+        public function getBasicConfig()
+        {
+        }
+        /**
+         * Required. The type of text labeling task.
+         *
+         * Accepted values: FEATURE_UNSPECIFIED, TEXT_CLASSIFICATION,
+         * TEXT_ENTITY_EXTRACTION
+         *
+         * @param self::FEATURE_* $feature
+         */
+        public function setFeature($feature)
+        {
+        }
+        /**
+         * @return self::FEATURE_*
+         */
+        public function getFeature()
+        {
+        }
+        /**
+         * Configuration for text classification task. One of
+         * text_classification_config and text_entity_extraction_config is required.
+         *
+         * @param GoogleCloudDatalabelingV1beta1TextClassificationConfig $textClassificationConfig
+         */
+        public function setTextClassificationConfig(GoogleCloudDatalabelingV1beta1TextClassificationConfig $textClassificationConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1TextClassificationConfig
+         */
+        public function getTextClassificationConfig()
+        {
+        }
+        /**
+         * Configuration for entity extraction task. One of text_classification_config
+         * and text_entity_extraction_config is required.
+         *
+         * @param GoogleCloudDatalabelingV1beta1TextEntityExtractionConfig $textEntityExtractionConfig
+         */
+        public function setTextEntityExtractionConfig(GoogleCloudDatalabelingV1beta1TextEntityExtractionConfig $textEntityExtractionConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1TextEntityExtractionConfig
+         */
+        public function getTextEntityExtractionConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatalabelingV1beta1HumanAnnotationConfig
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1LabelTextRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBasicConfig()
-    {
-    }
-    /**
-     * Required. The type of text labeling task.
-     *
-     * Accepted values: FEATURE_UNSPECIFIED, TEXT_CLASSIFICATION,
-     * TEXT_ENTITY_EXTRACTION
-     *
-     * @param self::FEATURE_* $feature
-     */
-    public function setFeature($feature)
-    {
-    }
-    /**
-     * @return self::FEATURE_*
-     */
-    public function getFeature()
-    {
-    }
-    /**
-     * Configuration for text classification task. One of
-     * text_classification_config and text_entity_extraction_config is required.
-     *
-     * @param GoogleCloudDatalabelingV1beta1TextClassificationConfig $textClassificationConfig
-     */
-    public function setTextClassificationConfig(GoogleCloudDatalabelingV1beta1TextClassificationConfig $textClassificationConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudDatalabelingV1beta1TextClassificationConfig
-     */
-    public function getTextClassificationConfig()
-    {
-    }
-    /**
-     * Configuration for entity extraction task. One of text_classification_config
-     * and text_entity_extraction_config is required.
-     *
-     * @param GoogleCloudDatalabelingV1beta1TextEntityExtractionConfig $textEntityExtractionConfig
-     */
-    public function setTextEntityExtractionConfig(GoogleCloudDatalabelingV1beta1TextEntityExtractionConfig $textEntityExtractionConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudDatalabelingV1beta1TextEntityExtractionConfig
-     */
-    public function getTextEntityExtractionConfig()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1LabelTextRequest extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1LabelTextRequest
     {
     }
 }

@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ReasoningEngineSpecSourceCodeSpecDeveloperConnectConfig extends \Google\Model
-{
-    /**
-     * Required. Directory, relative to the source root, in which to run the
-     * build.
-     *
-     * @var string
-     */
-    public $dir;
-    /**
-     * Required. The Developer Connect Git repository link, formatted as
-     * `projects/locations/connections/gitRepositoryLink`.
-     *
-     * @var string
-     */
-    public $gitRepositoryLink;
-    /**
-     * Required. The revision to fetch from the Git repository such as a branch, a
-     * tag, a commit SHA, or any Git ref.
-     *
-     * @var string
-     */
-    public $revision;
-    /**
-     * Required. Directory, relative to the source root, in which to run the
-     * build.
-     *
-     * @param string $dir
-     */
-    public function setDir($dir)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ReasoningEngineSpecSourceCodeSpecDeveloperConnectConfig extends \Google\Model
     {
+        /**
+         * Required. Directory, relative to the source root, in which to run the
+         * build.
+         *
+         * @var string
+         */
+        public $dir;
+        /**
+         * Required. The Developer Connect Git repository link, formatted as
+         * `projects/locations/connections/gitRepositoryLink`.
+         *
+         * @var string
+         */
+        public $gitRepositoryLink;
+        /**
+         * Required. The revision to fetch from the Git repository such as a branch, a
+         * tag, a commit SHA, or any Git ref.
+         *
+         * @var string
+         */
+        public $revision;
+        /**
+         * Required. Directory, relative to the source root, in which to run the
+         * build.
+         *
+         * @param string $dir
+         */
+        public function setDir($dir)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDir()
+        {
+        }
+        /**
+         * Required. The Developer Connect Git repository link, formatted as
+         * `projects/locations/connections/gitRepositoryLink`.
+         *
+         * @param string $gitRepositoryLink
+         */
+        public function setGitRepositoryLink($gitRepositoryLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGitRepositoryLink()
+        {
+        }
+        /**
+         * Required. The revision to fetch from the Git repository such as a branch, a
+         * tag, a commit SHA, or any Git ref.
+         *
+         * @param string $revision
+         */
+        public function setRevision($revision)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRevision()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ReasoningEngineSpecSourceCodeSpecDeveloperConnectConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDir()
-    {
-    }
-    /**
-     * Required. The Developer Connect Git repository link, formatted as
-     * `projects/locations/connections/gitRepositoryLink`.
-     *
-     * @param string $gitRepositoryLink
-     */
-    public function setGitRepositoryLink($gitRepositoryLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGitRepositoryLink()
-    {
-    }
-    /**
-     * Required. The revision to fetch from the Git repository such as a branch, a
-     * tag, a commit SHA, or any Git ref.
-     *
-     * @param string $revision
-     */
-    public function setRevision($revision)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRevision()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ReasoningEngineSpecSourceCodeSpecDeveloperConnectConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ReasoningEngineSpecSourceCodeSpecDeveloperConnectConfig
     {
     }
 }

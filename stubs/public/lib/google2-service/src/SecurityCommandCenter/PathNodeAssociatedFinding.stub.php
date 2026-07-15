@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class PathNodeAssociatedFinding extends \Google\Model
-{
-    /**
-     * Canonical name of the associated findings. Example:
-     * `organizations/123/sources/456/findings/789`
-     *
-     * @var string
-     */
-    public $canonicalFinding;
-    /**
-     * The additional taxonomy group within findings from a given source.
-     *
-     * @var string
-     */
-    public $findingCategory;
-    /**
-     * Full resource name of the finding.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Canonical name of the associated findings. Example:
-     * `organizations/123/sources/456/findings/789`
-     *
-     * @param string $canonicalFinding
-     */
-    public function setCanonicalFinding($canonicalFinding)
+namespace Google\Service\SecurityCommandCenter {
+    class PathNodeAssociatedFinding extends \Google\Model
     {
+        /**
+         * Canonical name of the associated findings. Example:
+         * `organizations/123/sources/456/findings/789`
+         *
+         * @var string
+         */
+        public $canonicalFinding;
+        /**
+         * The additional taxonomy group within findings from a given source.
+         *
+         * @var string
+         */
+        public $findingCategory;
+        /**
+         * Full resource name of the finding.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Canonical name of the associated findings. Example:
+         * `organizations/123/sources/456/findings/789`
+         *
+         * @param string $canonicalFinding
+         */
+        public function setCanonicalFinding($canonicalFinding)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCanonicalFinding()
+        {
+        }
+        /**
+         * The additional taxonomy group within findings from a given source.
+         *
+         * @param string $findingCategory
+         */
+        public function setFindingCategory($findingCategory)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFindingCategory()
+        {
+        }
+        /**
+         * Full resource name of the finding.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\PathNodeAssociatedFinding registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCanonicalFinding()
-    {
-    }
-    /**
-     * The additional taxonomy group within findings from a given source.
-     *
-     * @param string $findingCategory
-     */
-    public function setFindingCategory($findingCategory)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFindingCategory()
-    {
-    }
-    /**
-     * Full resource name of the finding.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_SecurityCommandCenter_PathNodeAssociatedFinding extends \Google\Service\SecurityCommandCenter\PathNodeAssociatedFinding
     {
     }
 }

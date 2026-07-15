@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Looker;
-
-class MaintenanceSchedule extends \Google\Model
-{
-    /**
-     * The scheduled end time for the maintenance.
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * The scheduled start time for the maintenance.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * The scheduled end time for the maintenance.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
+namespace Google\Service\Looker {
+    class MaintenanceSchedule extends \Google\Model
     {
+        /**
+         * The scheduled end time for the maintenance.
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * The scheduled start time for the maintenance.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * The scheduled end time for the maintenance.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * The scheduled start time for the maintenance.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Looker\MaintenanceSchedule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndTime()
-    {
-    }
-    /**
-     * The scheduled start time for the maintenance.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
+    class Google_Service_Looker_MaintenanceSchedule extends \Google\Service\Looker\MaintenanceSchedule
     {
     }
 }

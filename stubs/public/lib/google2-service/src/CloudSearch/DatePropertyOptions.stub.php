@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class DatePropertyOptions extends \Google\Model
-{
-    protected $operatorOptionsType = DateOperatorOptions::class;
-    protected $operatorOptionsDataType = '';
-    /**
-     * If set, describes how the date should be used as a search operator.
-     *
-     * @param DateOperatorOptions $operatorOptions
-     */
-    public function setOperatorOptions(DateOperatorOptions $operatorOptions)
+namespace Google\Service\CloudSearch {
+    class DatePropertyOptions extends \Google\Model
     {
+        protected $operatorOptionsType = DateOperatorOptions::class;
+        protected $operatorOptionsDataType = '';
+        /**
+         * If set, describes how the date should be used as a search operator.
+         *
+         * @param DateOperatorOptions $operatorOptions
+         */
+        public function setOperatorOptions(DateOperatorOptions $operatorOptions)
+        {
+        }
+        /**
+         * @return DateOperatorOptions
+         */
+        public function getOperatorOptions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DateOperatorOptions
+     * Runtime class alias of \Google\Service\CloudSearch\DatePropertyOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOperatorOptions()
+    class Google_Service_CloudSearch_DatePropertyOptions extends \Google\Service\CloudSearch\DatePropertyOptions
     {
     }
 }

@@ -21,81 +21,90 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaRunAccessReportResponse extends \Google\Collection
-{
-    protected $collection_key = 'rows';
-    protected $dimensionHeadersType = GoogleAnalyticsAdminV1alphaAccessDimensionHeader::class;
-    protected $dimensionHeadersDataType = 'array';
-    protected $metricHeadersType = GoogleAnalyticsAdminV1alphaAccessMetricHeader::class;
-    protected $metricHeadersDataType = 'array';
-    protected $quotaType = GoogleAnalyticsAdminV1alphaAccessQuota::class;
-    protected $quotaDataType = '';
-    /**
-     * @var int
-     */
-    public $rowCount;
-    protected $rowsType = GoogleAnalyticsAdminV1alphaAccessRow::class;
-    protected $rowsDataType = 'array';
-    /**
-     * @param GoogleAnalyticsAdminV1alphaAccessDimensionHeader[]
-     */
-    public function setDimensionHeaders($dimensionHeaders)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaRunAccessReportResponse extends \Google\Collection
     {
+        protected $collection_key = 'rows';
+        protected $dimensionHeadersType = GoogleAnalyticsAdminV1alphaAccessDimensionHeader::class;
+        protected $dimensionHeadersDataType = 'array';
+        protected $metricHeadersType = GoogleAnalyticsAdminV1alphaAccessMetricHeader::class;
+        protected $metricHeadersDataType = 'array';
+        protected $quotaType = GoogleAnalyticsAdminV1alphaAccessQuota::class;
+        protected $quotaDataType = '';
+        /**
+         * @var int
+         */
+        public $rowCount;
+        protected $rowsType = GoogleAnalyticsAdminV1alphaAccessRow::class;
+        protected $rowsDataType = 'array';
+        /**
+         * @param GoogleAnalyticsAdminV1alphaAccessDimensionHeader[]
+         */
+        public function setDimensionHeaders($dimensionHeaders)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaAccessDimensionHeader[]
+         */
+        public function getDimensionHeaders()
+        {
+        }
+        /**
+         * @param GoogleAnalyticsAdminV1alphaAccessMetricHeader[]
+         */
+        public function setMetricHeaders($metricHeaders)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaAccessMetricHeader[]
+         */
+        public function getMetricHeaders()
+        {
+        }
+        /**
+         * @param GoogleAnalyticsAdminV1alphaAccessQuota
+         */
+        public function setQuota(GoogleAnalyticsAdminV1alphaAccessQuota $quota)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaAccessQuota
+         */
+        public function getQuota()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setRowCount($rowCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRowCount()
+        {
+        }
+        /**
+         * @param GoogleAnalyticsAdminV1alphaAccessRow[]
+         */
+        public function setRows($rows)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaAccessRow[]
+         */
+        public function getRows()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAnalyticsAdminV1alphaAccessDimensionHeader[]
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaRunAccessReportResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDimensionHeaders()
-    {
-    }
-    /**
-     * @param GoogleAnalyticsAdminV1alphaAccessMetricHeader[]
-     */
-    public function setMetricHeaders($metricHeaders)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1alphaAccessMetricHeader[]
-     */
-    public function getMetricHeaders()
-    {
-    }
-    /**
-     * @param GoogleAnalyticsAdminV1alphaAccessQuota
-     */
-    public function setQuota(GoogleAnalyticsAdminV1alphaAccessQuota $quota)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1alphaAccessQuota
-     */
-    public function getQuota()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setRowCount($rowCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getRowCount()
-    {
-    }
-    /**
-     * @param GoogleAnalyticsAdminV1alphaAccessRow[]
-     */
-    public function setRows($rows)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1alphaAccessRow[]
-     */
-    public function getRows()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaRunAccessReportResponse extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaRunAccessReportResponse
     {
     }
 }

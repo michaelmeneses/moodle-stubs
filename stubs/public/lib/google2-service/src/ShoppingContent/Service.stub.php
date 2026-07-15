@@ -21,247 +21,256 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class Service extends \Google\Collection
-{
-    protected $collection_key = 'rateGroups';
-    /**
-     * A boolean exposing the active status of the shipping service. Required.
-     *
-     * @var bool
-     */
-    public $active;
-    /**
-     * The CLDR code of the currency to which this service applies. Must match
-     * that of the prices in rate groups.
-     *
-     * @var string
-     */
-    public $currency;
-    /**
-     * The CLDR territory code of the country to which the service applies.
-     * Required.
-     *
-     * @var string
-     */
-    public $deliveryCountry;
-    protected $deliveryTimeType = DeliveryTime::class;
-    protected $deliveryTimeDataType = '';
-    /**
-     * Eligibility for this service. Acceptable values are: - "`All scenarios`" -
-     * "`All scenarios except Shopping Actions`" - "`Shopping Actions`"
-     *
-     * @var string
-     */
-    public $eligibility;
-    protected $minimumOrderValueType = Price::class;
-    protected $minimumOrderValueDataType = '';
-    protected $minimumOrderValueTableType = MinimumOrderValueTable::class;
-    protected $minimumOrderValueTableDataType = '';
-    /**
-     * Free-form name of the service. Must be unique within target account.
-     * Required.
-     *
-     * @var string
-     */
-    public $name;
-    protected $pickupServiceType = PickupCarrierService::class;
-    protected $pickupServiceDataType = '';
-    protected $rateGroupsType = RateGroup::class;
-    protected $rateGroupsDataType = 'array';
-    /**
-     * Type of locations this service ships orders to. Acceptable values are: -
-     * "`delivery`" - "`pickup` (deprecated)" - "`local_delivery`" -
-     * "`collection_point`"
-     *
-     * @var string
-     */
-    public $shipmentType;
-    protected $storeConfigType = ServiceStoreConfig::class;
-    protected $storeConfigDataType = '';
-    /**
-     * A boolean exposing the active status of the shipping service. Required.
-     *
-     * @param bool $active
-     */
-    public function setActive($active)
+namespace Google\Service\ShoppingContent {
+    class Service extends \Google\Collection
     {
+        protected $collection_key = 'rateGroups';
+        /**
+         * A boolean exposing the active status of the shipping service. Required.
+         *
+         * @var bool
+         */
+        public $active;
+        /**
+         * The CLDR code of the currency to which this service applies. Must match
+         * that of the prices in rate groups.
+         *
+         * @var string
+         */
+        public $currency;
+        /**
+         * The CLDR territory code of the country to which the service applies.
+         * Required.
+         *
+         * @var string
+         */
+        public $deliveryCountry;
+        protected $deliveryTimeType = DeliveryTime::class;
+        protected $deliveryTimeDataType = '';
+        /**
+         * Eligibility for this service. Acceptable values are: - "`All scenarios`" -
+         * "`All scenarios except Shopping Actions`" - "`Shopping Actions`"
+         *
+         * @var string
+         */
+        public $eligibility;
+        protected $minimumOrderValueType = Price::class;
+        protected $minimumOrderValueDataType = '';
+        protected $minimumOrderValueTableType = MinimumOrderValueTable::class;
+        protected $minimumOrderValueTableDataType = '';
+        /**
+         * Free-form name of the service. Must be unique within target account.
+         * Required.
+         *
+         * @var string
+         */
+        public $name;
+        protected $pickupServiceType = PickupCarrierService::class;
+        protected $pickupServiceDataType = '';
+        protected $rateGroupsType = RateGroup::class;
+        protected $rateGroupsDataType = 'array';
+        /**
+         * Type of locations this service ships orders to. Acceptable values are: -
+         * "`delivery`" - "`pickup` (deprecated)" - "`local_delivery`" -
+         * "`collection_point`"
+         *
+         * @var string
+         */
+        public $shipmentType;
+        protected $storeConfigType = ServiceStoreConfig::class;
+        protected $storeConfigDataType = '';
+        /**
+         * A boolean exposing the active status of the shipping service. Required.
+         *
+         * @param bool $active
+         */
+        public function setActive($active)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getActive()
+        {
+        }
+        /**
+         * The CLDR code of the currency to which this service applies. Must match
+         * that of the prices in rate groups.
+         *
+         * @param string $currency
+         */
+        public function setCurrency($currency)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCurrency()
+        {
+        }
+        /**
+         * The CLDR territory code of the country to which the service applies.
+         * Required.
+         *
+         * @param string $deliveryCountry
+         */
+        public function setDeliveryCountry($deliveryCountry)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeliveryCountry()
+        {
+        }
+        /**
+         * Time spent in various aspects from order to the delivery of the product.
+         * Required.
+         *
+         * @param DeliveryTime $deliveryTime
+         */
+        public function setDeliveryTime(DeliveryTime $deliveryTime)
+        {
+        }
+        /**
+         * @return DeliveryTime
+         */
+        public function getDeliveryTime()
+        {
+        }
+        /**
+         * Eligibility for this service. Acceptable values are: - "`All scenarios`" -
+         * "`All scenarios except Shopping Actions`" - "`Shopping Actions`"
+         *
+         * @param string $eligibility
+         */
+        public function setEligibility($eligibility)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEligibility()
+        {
+        }
+        /**
+         * Minimum order value for this service. If set, indicates that customers will
+         * have to spend at least this amount. All prices within a service must have
+         * the same currency. Cannot be set together with minimum_order_value_table.
+         *
+         * @param Price $minimumOrderValue
+         */
+        public function setMinimumOrderValue(Price $minimumOrderValue)
+        {
+        }
+        /**
+         * @return Price
+         */
+        public function getMinimumOrderValue()
+        {
+        }
+        /**
+         * Table of per store minimum order values for the pickup fulfillment type.
+         * Cannot be set together with minimum_order_value.
+         *
+         * @param MinimumOrderValueTable $minimumOrderValueTable
+         */
+        public function setMinimumOrderValueTable(MinimumOrderValueTable $minimumOrderValueTable)
+        {
+        }
+        /**
+         * @return MinimumOrderValueTable
+         */
+        public function getMinimumOrderValueTable()
+        {
+        }
+        /**
+         * Free-form name of the service. Must be unique within target account.
+         * Required.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The carrier-service pair delivering items to collection points. The list of
+         * supported pickup services can be retrieved through the
+         * `getSupportedPickupServices` method. Required if and only if the service
+         * delivery type is `pickup`.
+         *
+         * @param PickupCarrierService $pickupService
+         */
+        public function setPickupService(PickupCarrierService $pickupService)
+        {
+        }
+        /**
+         * @return PickupCarrierService
+         */
+        public function getPickupService()
+        {
+        }
+        /**
+         * Shipping rate group definitions. Only the last one is allowed to have an
+         * empty `applicableShippingLabels`, which means "everything else". The other
+         * `applicableShippingLabels` must not overlap.
+         *
+         * @param RateGroup[] $rateGroups
+         */
+        public function setRateGroups($rateGroups)
+        {
+        }
+        /**
+         * @return RateGroup[]
+         */
+        public function getRateGroups()
+        {
+        }
+        /**
+         * Type of locations this service ships orders to. Acceptable values are: -
+         * "`delivery`" - "`pickup` (deprecated)" - "`local_delivery`" -
+         * "`collection_point`"
+         *
+         * @param string $shipmentType
+         */
+        public function setShipmentType($shipmentType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getShipmentType()
+        {
+        }
+        /**
+         * A list of stores your products are delivered from. This is only available
+         * for the local delivery shipment type.
+         *
+         * @param ServiceStoreConfig $storeConfig
+         */
+        public function setStoreConfig(ServiceStoreConfig $storeConfig)
+        {
+        }
+        /**
+         * @return ServiceStoreConfig
+         */
+        public function getStoreConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\ShoppingContent\Service registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActive()
-    {
-    }
-    /**
-     * The CLDR code of the currency to which this service applies. Must match
-     * that of the prices in rate groups.
-     *
-     * @param string $currency
-     */
-    public function setCurrency($currency)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCurrency()
-    {
-    }
-    /**
-     * The CLDR territory code of the country to which the service applies.
-     * Required.
-     *
-     * @param string $deliveryCountry
-     */
-    public function setDeliveryCountry($deliveryCountry)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeliveryCountry()
-    {
-    }
-    /**
-     * Time spent in various aspects from order to the delivery of the product.
-     * Required.
-     *
-     * @param DeliveryTime $deliveryTime
-     */
-    public function setDeliveryTime(DeliveryTime $deliveryTime)
-    {
-    }
-    /**
-     * @return DeliveryTime
-     */
-    public function getDeliveryTime()
-    {
-    }
-    /**
-     * Eligibility for this service. Acceptable values are: - "`All scenarios`" -
-     * "`All scenarios except Shopping Actions`" - "`Shopping Actions`"
-     *
-     * @param string $eligibility
-     */
-    public function setEligibility($eligibility)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEligibility()
-    {
-    }
-    /**
-     * Minimum order value for this service. If set, indicates that customers will
-     * have to spend at least this amount. All prices within a service must have
-     * the same currency. Cannot be set together with minimum_order_value_table.
-     *
-     * @param Price $minimumOrderValue
-     */
-    public function setMinimumOrderValue(Price $minimumOrderValue)
-    {
-    }
-    /**
-     * @return Price
-     */
-    public function getMinimumOrderValue()
-    {
-    }
-    /**
-     * Table of per store minimum order values for the pickup fulfillment type.
-     * Cannot be set together with minimum_order_value.
-     *
-     * @param MinimumOrderValueTable $minimumOrderValueTable
-     */
-    public function setMinimumOrderValueTable(MinimumOrderValueTable $minimumOrderValueTable)
-    {
-    }
-    /**
-     * @return MinimumOrderValueTable
-     */
-    public function getMinimumOrderValueTable()
-    {
-    }
-    /**
-     * Free-form name of the service. Must be unique within target account.
-     * Required.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The carrier-service pair delivering items to collection points. The list of
-     * supported pickup services can be retrieved through the
-     * `getSupportedPickupServices` method. Required if and only if the service
-     * delivery type is `pickup`.
-     *
-     * @param PickupCarrierService $pickupService
-     */
-    public function setPickupService(PickupCarrierService $pickupService)
-    {
-    }
-    /**
-     * @return PickupCarrierService
-     */
-    public function getPickupService()
-    {
-    }
-    /**
-     * Shipping rate group definitions. Only the last one is allowed to have an
-     * empty `applicableShippingLabels`, which means "everything else". The other
-     * `applicableShippingLabels` must not overlap.
-     *
-     * @param RateGroup[] $rateGroups
-     */
-    public function setRateGroups($rateGroups)
-    {
-    }
-    /**
-     * @return RateGroup[]
-     */
-    public function getRateGroups()
-    {
-    }
-    /**
-     * Type of locations this service ships orders to. Acceptable values are: -
-     * "`delivery`" - "`pickup` (deprecated)" - "`local_delivery`" -
-     * "`collection_point`"
-     *
-     * @param string $shipmentType
-     */
-    public function setShipmentType($shipmentType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getShipmentType()
-    {
-    }
-    /**
-     * A list of stores your products are delivered from. This is only available
-     * for the local delivery shipment type.
-     *
-     * @param ServiceStoreConfig $storeConfig
-     */
-    public function setStoreConfig(ServiceStoreConfig $storeConfig)
-    {
-    }
-    /**
-     * @return ServiceStoreConfig
-     */
-    public function getStoreConfig()
+    class Google_Service_ShoppingContent_Service extends \Google\Service\ShoppingContent\Service
     {
     }
 }

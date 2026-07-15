@@ -21,37 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Baremetalsolution;
-
-class Binding extends \Google\Collection
-{
-    protected $collection_key = 'members';
-    protected $conditionType = Expr::class;
-    protected $conditionDataType = '';
-    public $members;
-    public $role;
+namespace Google\Service\Baremetalsolution {
+    class Binding extends \Google\Collection
+    {
+        protected $collection_key = 'members';
+        protected $conditionType = Expr::class;
+        protected $conditionDataType = '';
+        public $members;
+        public $role;
+        /**
+         * @param Expr
+         */
+        public function setCondition(Expr $condition)
+        {
+        }
+        /**
+         * @return Expr
+         */
+        public function getCondition()
+        {
+        }
+        public function setMembers($members)
+        {
+        }
+        public function getMembers()
+        {
+        }
+        public function setRole($role)
+        {
+        }
+        public function getRole()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @param Expr
+     * Runtime class alias of \Google\Service\Baremetalsolution\Binding registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setCondition(Expr $condition)
-    {
-    }
-    /**
-     * @return Expr
-     */
-    public function getCondition()
-    {
-    }
-    public function setMembers($members)
-    {
-    }
-    public function getMembers()
-    {
-    }
-    public function setRole($role)
-    {
-    }
-    public function getRole()
+    class Google_Service_Baremetalsolution_Binding extends \Google\Service\Baremetalsolution\Binding
     {
     }
 }

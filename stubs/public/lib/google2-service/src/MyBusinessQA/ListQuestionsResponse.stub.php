@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessQA;
-
-class ListQuestionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'questions';
-    /**
-     * If the number of questions exceeds the requested max page size, this field
-     * is populated with a token to fetch the next page of questions on a
-     * subsequent call. If there are no more questions, this field is not present
-     * in the response.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $questionsType = Question::class;
-    protected $questionsDataType = 'array';
-    /**
-     * The total number of questions posted for this location across all pages.
-     *
-     * @var int
-     */
-    public $totalSize;
-    /**
-     * If the number of questions exceeds the requested max page size, this field
-     * is populated with a token to fetch the next page of questions on a
-     * subsequent call. If there are no more questions, this field is not present
-     * in the response.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\MyBusinessQA {
+    class ListQuestionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'questions';
+        /**
+         * If the number of questions exceeds the requested max page size, this field
+         * is populated with a token to fetch the next page of questions on a
+         * subsequent call. If there are no more questions, this field is not present
+         * in the response.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $questionsType = Question::class;
+        protected $questionsDataType = 'array';
+        /**
+         * The total number of questions posted for this location across all pages.
+         *
+         * @var int
+         */
+        public $totalSize;
+        /**
+         * If the number of questions exceeds the requested max page size, this field
+         * is populated with a token to fetch the next page of questions on a
+         * subsequent call. If there are no more questions, this field is not present
+         * in the response.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The requested questions,
+         *
+         * @param Question[] $questions
+         */
+        public function setQuestions($questions)
+        {
+        }
+        /**
+         * @return Question[]
+         */
+        public function getQuestions()
+        {
+        }
+        /**
+         * The total number of questions posted for this location across all pages.
+         *
+         * @param int $totalSize
+         */
+        public function setTotalSize($totalSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalSize()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MyBusinessQA\ListQuestionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The requested questions,
-     *
-     * @param Question[] $questions
-     */
-    public function setQuestions($questions)
-    {
-    }
-    /**
-     * @return Question[]
-     */
-    public function getQuestions()
-    {
-    }
-    /**
-     * The total number of questions posted for this location across all pages.
-     *
-     * @param int $totalSize
-     */
-    public function setTotalSize($totalSize)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalSize()
+    class Google_Service_MyBusinessQA_ListQuestionsResponse extends \Google\Service\MyBusinessQA\ListQuestionsResponse
     {
     }
 }

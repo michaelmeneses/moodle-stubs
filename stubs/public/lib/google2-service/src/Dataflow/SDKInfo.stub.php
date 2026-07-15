@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class SDKInfo extends \Google\Model
-{
-    /**
-     * UNKNOWN Language.
-     */
-    public const LANGUAGE_UNKNOWN = 'UNKNOWN';
-    /**
-     * Java.
-     */
-    public const LANGUAGE_JAVA = 'JAVA';
-    /**
-     * Python.
-     */
-    public const LANGUAGE_PYTHON = 'PYTHON';
-    /**
-     * Go.
-     */
-    public const LANGUAGE_GO = 'GO';
-    /**
-     * YAML.
-     */
-    public const LANGUAGE_YAML = 'YAML';
-    /**
-     * Required. The SDK Language.
-     *
-     * @var string
-     */
-    public $language;
-    /**
-     * Optional. The SDK version.
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * Required. The SDK Language.
-     *
-     * Accepted values: UNKNOWN, JAVA, PYTHON, GO, YAML
-     *
-     * @param self::LANGUAGE_* $language
-     */
-    public function setLanguage($language)
+namespace Google\Service\Dataflow {
+    class SDKInfo extends \Google\Model
     {
+        /**
+         * UNKNOWN Language.
+         */
+        public const LANGUAGE_UNKNOWN = 'UNKNOWN';
+        /**
+         * Java.
+         */
+        public const LANGUAGE_JAVA = 'JAVA';
+        /**
+         * Python.
+         */
+        public const LANGUAGE_PYTHON = 'PYTHON';
+        /**
+         * Go.
+         */
+        public const LANGUAGE_GO = 'GO';
+        /**
+         * YAML.
+         */
+        public const LANGUAGE_YAML = 'YAML';
+        /**
+         * Required. The SDK Language.
+         *
+         * @var string
+         */
+        public $language;
+        /**
+         * Optional. The SDK version.
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * Required. The SDK Language.
+         *
+         * Accepted values: UNKNOWN, JAVA, PYTHON, GO, YAML
+         *
+         * @param self::LANGUAGE_* $language
+         */
+        public function setLanguage($language)
+        {
+        }
+        /**
+         * @return self::LANGUAGE_*
+         */
+        public function getLanguage()
+        {
+        }
+        /**
+         * Optional. The SDK version.
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::LANGUAGE_*
+     * Runtime class alias of \Google\Service\Dataflow\SDKInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLanguage()
-    {
-    }
-    /**
-     * Optional. The SDK version.
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_Dataflow_SDKInfo extends \Google\Service\Dataflow\SDKInfo
     {
     }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2beta1SentimentAnalysisResult extends \Google\Model
-{
-    protected $queryTextSentimentType = GoogleCloudDialogflowV2beta1Sentiment::class;
-    protected $queryTextSentimentDataType = '';
-    /**
-     * The sentiment analysis result for `query_text`.
-     *
-     * @param GoogleCloudDialogflowV2beta1Sentiment $queryTextSentiment
-     */
-    public function setQueryTextSentiment(GoogleCloudDialogflowV2beta1Sentiment $queryTextSentiment)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2beta1SentimentAnalysisResult extends \Google\Model
     {
+        protected $queryTextSentimentType = GoogleCloudDialogflowV2beta1Sentiment::class;
+        protected $queryTextSentimentDataType = '';
+        /**
+         * The sentiment analysis result for `query_text`.
+         *
+         * @param GoogleCloudDialogflowV2beta1Sentiment $queryTextSentiment
+         */
+        public function setQueryTextSentiment(GoogleCloudDialogflowV2beta1Sentiment $queryTextSentiment)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2beta1Sentiment
+         */
+        public function getQueryTextSentiment()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowV2beta1Sentiment
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1SentimentAnalysisResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getQueryTextSentiment()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1SentimentAnalysisResult extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1SentimentAnalysisResult
     {
     }
 }

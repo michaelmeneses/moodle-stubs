@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleMarketingPlatformAdminAPI;
-
-class SetPropertyServiceLevelResponse extends \Google\Model
-{
+namespace Google\Service\GoogleMarketingPlatformAdminAPI {
+    class SetPropertyServiceLevelResponse extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\GoogleMarketingPlatformAdminAPI\SetPropertyServiceLevelResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_GoogleMarketingPlatformAdminAPI_SetPropertyServiceLevelResponse extends \Google\Service\GoogleMarketingPlatformAdminAPI\SetPropertyServiceLevelResponse
+    {
+    }
 }

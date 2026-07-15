@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DoubleClickBidManager;
-
-class ReportKey extends \Google\Model
-{
-    /**
-     * Output only. The unique ID of the query that generated the report.
-     *
-     * @var string
-     */
-    public $queryId;
-    /**
-     * Output only. The unique ID of the report.
-     *
-     * @var string
-     */
-    public $reportId;
-    /**
-     * Output only. The unique ID of the query that generated the report.
-     *
-     * @param string $queryId
-     */
-    public function setQueryId($queryId)
+namespace Google\Service\DoubleClickBidManager {
+    class ReportKey extends \Google\Model
     {
+        /**
+         * Output only. The unique ID of the query that generated the report.
+         *
+         * @var string
+         */
+        public $queryId;
+        /**
+         * Output only. The unique ID of the report.
+         *
+         * @var string
+         */
+        public $reportId;
+        /**
+         * Output only. The unique ID of the query that generated the report.
+         *
+         * @param string $queryId
+         */
+        public function setQueryId($queryId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQueryId()
+        {
+        }
+        /**
+         * Output only. The unique ID of the report.
+         *
+         * @param string $reportId
+         */
+        public function setReportId($reportId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReportId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DoubleClickBidManager\ReportKey registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getQueryId()
-    {
-    }
-    /**
-     * Output only. The unique ID of the report.
-     *
-     * @param string $reportId
-     */
-    public function setReportId($reportId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReportId()
+    class Google_Service_DoubleClickBidManager_ReportKey extends \Google\Service\DoubleClickBidManager\ReportKey
     {
     }
 }

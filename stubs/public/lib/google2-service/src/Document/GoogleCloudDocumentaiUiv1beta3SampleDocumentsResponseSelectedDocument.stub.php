@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiUiv1beta3SampleDocumentsResponseSelectedDocument extends \Google\Model
-{
-    /**
-     * An internal identifier for document.
-     *
-     * @var string
-     */
-    public $documentId;
-    /**
-     * An internal identifier for document.
-     *
-     * @param string $documentId
-     */
-    public function setDocumentId($documentId)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiUiv1beta3SampleDocumentsResponseSelectedDocument extends \Google\Model
     {
+        /**
+         * An internal identifier for document.
+         *
+         * @var string
+         */
+        public $documentId;
+        /**
+         * An internal identifier for document.
+         *
+         * @param string $documentId
+         */
+        public function setDocumentId($documentId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDocumentId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiUiv1beta3SampleDocumentsResponseSelectedDocument registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDocumentId()
+    class Google_Service_Document_GoogleCloudDocumentaiUiv1beta3SampleDocumentsResponseSelectedDocument extends \Google\Service\Document\GoogleCloudDocumentaiUiv1beta3SampleDocumentsResponseSelectedDocument
     {
     }
 }

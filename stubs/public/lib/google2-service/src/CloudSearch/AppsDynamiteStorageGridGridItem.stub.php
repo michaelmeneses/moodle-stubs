@@ -21,102 +21,111 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteStorageGridGridItem extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $id;
-    protected $imageType = AppsDynamiteStorageImageComponent::class;
-    protected $imageDataType = '';
-    /**
-     * @var string
-     */
-    public $layout;
-    /**
-     * @var string
-     */
-    public $subtitle;
-    /**
-     * @var string
-     */
-    public $textAlignment;
-    /**
-     * @var string
-     */
-    public $title;
-    /**
-     * @param string
-     */
-    public function setId($id)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteStorageGridGridItem extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $id;
+        protected $imageType = AppsDynamiteStorageImageComponent::class;
+        protected $imageDataType = '';
+        /**
+         * @var string
+         */
+        public $layout;
+        /**
+         * @var string
+         */
+        public $subtitle;
+        /**
+         * @var string
+         */
+        public $textAlignment;
+        /**
+         * @var string
+         */
+        public $title;
+        /**
+         * @param string
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * @param AppsDynamiteStorageImageComponent
+         */
+        public function setImage(AppsDynamiteStorageImageComponent $image)
+        {
+        }
+        /**
+         * @return AppsDynamiteStorageImageComponent
+         */
+        public function getImage()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLayout($layout)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLayout()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSubtitle($subtitle)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubtitle()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTextAlignment($textAlignment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTextAlignment()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteStorageGridGridItem registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * @param AppsDynamiteStorageImageComponent
-     */
-    public function setImage(AppsDynamiteStorageImageComponent $image)
-    {
-    }
-    /**
-     * @return AppsDynamiteStorageImageComponent
-     */
-    public function getImage()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLayout($layout)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLayout()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSubtitle($subtitle)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubtitle()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTextAlignment($textAlignment)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTextAlignment()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_CloudSearch_AppsDynamiteStorageGridGridItem extends \Google\Service\CloudSearch\AppsDynamiteStorageGridGridItem
     {
     }
 }

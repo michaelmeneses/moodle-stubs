@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataprocMetastore;
-
-class NetworkConfig extends \Google\Collection
-{
-    protected $collection_key = 'consumers';
-    protected $consumersType = Consumer::class;
-    protected $consumersDataType = 'array';
-    /**
-     * @param Consumer[]
-     */
-    public function setConsumers($consumers)
+namespace Google\Service\DataprocMetastore {
+    class NetworkConfig extends \Google\Collection
     {
+        protected $collection_key = 'consumers';
+        protected $consumersType = Consumer::class;
+        protected $consumersDataType = 'array';
+        /**
+         * @param Consumer[]
+         */
+        public function setConsumers($consumers)
+        {
+        }
+        /**
+         * @return Consumer[]
+         */
+        public function getConsumers()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Consumer[]
+     * Runtime class alias of \Google\Service\DataprocMetastore\NetworkConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConsumers()
+    class Google_Service_DataprocMetastore_NetworkConfig extends \Google\Service\DataprocMetastore\NetworkConfig
     {
     }
 }

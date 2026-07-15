@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class EnrollVmwareNodePoolRequest extends \Google\Model
-{
-    /**
-     * The target node pool id to be enrolled.
-     *
-     * @var string
-     */
-    public $vmwareNodePoolId;
-    /**
-     * The target node pool id to be enrolled.
-     *
-     * @param string $vmwareNodePoolId
-     */
-    public function setVmwareNodePoolId($vmwareNodePoolId)
+namespace Google\Service\GKEOnPrem {
+    class EnrollVmwareNodePoolRequest extends \Google\Model
     {
+        /**
+         * The target node pool id to be enrolled.
+         *
+         * @var string
+         */
+        public $vmwareNodePoolId;
+        /**
+         * The target node pool id to be enrolled.
+         *
+         * @param string $vmwareNodePoolId
+         */
+        public function setVmwareNodePoolId($vmwareNodePoolId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVmwareNodePoolId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEOnPrem\EnrollVmwareNodePoolRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getVmwareNodePoolId()
+    class Google_Service_GKEOnPrem_EnrollVmwareNodePoolRequest extends \Google\Service\GKEOnPrem\EnrollVmwareNodePoolRequest
     {
     }
 }

@@ -21,15 +21,24 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution;
-
-class BuildBazelRemoteExecutionV2ResultsCachePolicy extends \Google\Model
-{
-    public $priority;
-    public function setPriority($priority)
+namespace Google\Service\RemoteBuildExecution {
+    class BuildBazelRemoteExecutionV2ResultsCachePolicy extends \Google\Model
     {
+        public $priority;
+        public function setPriority($priority)
+        {
+        }
+        public function getPriority()
+        {
+        }
     }
-    public function getPriority()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2ResultsCachePolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_RemoteBuildExecution_BuildBazelRemoteExecutionV2ResultsCachePolicy extends \Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2ResultsCachePolicy
     {
     }
 }

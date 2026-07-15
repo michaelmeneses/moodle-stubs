@@ -21,151 +21,160 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1AdvancedCompleteQueryResponseContentSuggestion extends \Google\Model
-{
-    /**
-     * Default value.
-     */
-    public const CONTENT_TYPE_CONTENT_TYPE_UNSPECIFIED = 'CONTENT_TYPE_UNSPECIFIED';
-    /**
-     * The suggestion is from a Google Workspace source.
-     */
-    public const CONTENT_TYPE_GOOGLE_WORKSPACE = 'GOOGLE_WORKSPACE';
-    /**
-     * The suggestion is from a third party source.
-     */
-    public const CONTENT_TYPE_THIRD_PARTY = 'THIRD_PARTY';
-    /**
-     * The type of the content suggestion.
-     *
-     * @var string
-     */
-    public $contentType;
-    /**
-     * The name of the dataStore that this suggestion belongs to.
-     *
-     * @var string
-     */
-    public $dataStore;
-    /**
-     * The destination uri of the content suggestion.
-     *
-     * @var string
-     */
-    public $destinationUri;
-    protected $documentType = GoogleCloudDiscoveryengineV1Document::class;
-    protected $documentDataType = '';
-    /**
-     * The icon uri of the content suggestion.
-     *
-     * @var string
-     */
-    public $iconUri;
-    /**
-     * The score of each suggestion. The score is in the range of [0, 1].
-     *
-     * @var 
-     */
-    public $score;
-    /**
-     * The suggestion for the query.
-     *
-     * @var string
-     */
-    public $suggestion;
-    /**
-     * The type of the content suggestion.
-     *
-     * Accepted values: CONTENT_TYPE_UNSPECIFIED, GOOGLE_WORKSPACE, THIRD_PARTY
-     *
-     * @param self::CONTENT_TYPE_* $contentType
-     */
-    public function setContentType($contentType)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1AdvancedCompleteQueryResponseContentSuggestion extends \Google\Model
     {
+        /**
+         * Default value.
+         */
+        public const CONTENT_TYPE_CONTENT_TYPE_UNSPECIFIED = 'CONTENT_TYPE_UNSPECIFIED';
+        /**
+         * The suggestion is from a Google Workspace source.
+         */
+        public const CONTENT_TYPE_GOOGLE_WORKSPACE = 'GOOGLE_WORKSPACE';
+        /**
+         * The suggestion is from a third party source.
+         */
+        public const CONTENT_TYPE_THIRD_PARTY = 'THIRD_PARTY';
+        /**
+         * The type of the content suggestion.
+         *
+         * @var string
+         */
+        public $contentType;
+        /**
+         * The name of the dataStore that this suggestion belongs to.
+         *
+         * @var string
+         */
+        public $dataStore;
+        /**
+         * The destination uri of the content suggestion.
+         *
+         * @var string
+         */
+        public $destinationUri;
+        protected $documentType = GoogleCloudDiscoveryengineV1Document::class;
+        protected $documentDataType = '';
+        /**
+         * The icon uri of the content suggestion.
+         *
+         * @var string
+         */
+        public $iconUri;
+        /**
+         * The score of each suggestion. The score is in the range of [0, 1].
+         *
+         * @var 
+         */
+        public $score;
+        /**
+         * The suggestion for the query.
+         *
+         * @var string
+         */
+        public $suggestion;
+        /**
+         * The type of the content suggestion.
+         *
+         * Accepted values: CONTENT_TYPE_UNSPECIFIED, GOOGLE_WORKSPACE, THIRD_PARTY
+         *
+         * @param self::CONTENT_TYPE_* $contentType
+         */
+        public function setContentType($contentType)
+        {
+        }
+        /**
+         * @return self::CONTENT_TYPE_*
+         */
+        public function getContentType()
+        {
+        }
+        /**
+         * The name of the dataStore that this suggestion belongs to.
+         *
+         * @param string $dataStore
+         */
+        public function setDataStore($dataStore)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataStore()
+        {
+        }
+        /**
+         * The destination uri of the content suggestion.
+         *
+         * @param string $destinationUri
+         */
+        public function setDestinationUri($destinationUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDestinationUri()
+        {
+        }
+        /**
+         * The document data snippet in the suggestion. Only a subset of fields will
+         * be populated.
+         *
+         * @param GoogleCloudDiscoveryengineV1Document $document
+         */
+        public function setDocument(GoogleCloudDiscoveryengineV1Document $document)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1Document
+         */
+        public function getDocument()
+        {
+        }
+        /**
+         * The icon uri of the content suggestion.
+         *
+         * @param string $iconUri
+         */
+        public function setIconUri($iconUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIconUri()
+        {
+        }
+        public function setScore($score)
+        {
+        }
+        public function getScore()
+        {
+        }
+        /**
+         * The suggestion for the query.
+         *
+         * @param string $suggestion
+         */
+        public function setSuggestion($suggestion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSuggestion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::CONTENT_TYPE_*
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AdvancedCompleteQueryResponseContentSuggestion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContentType()
-    {
-    }
-    /**
-     * The name of the dataStore that this suggestion belongs to.
-     *
-     * @param string $dataStore
-     */
-    public function setDataStore($dataStore)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDataStore()
-    {
-    }
-    /**
-     * The destination uri of the content suggestion.
-     *
-     * @param string $destinationUri
-     */
-    public function setDestinationUri($destinationUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDestinationUri()
-    {
-    }
-    /**
-     * The document data snippet in the suggestion. Only a subset of fields will
-     * be populated.
-     *
-     * @param GoogleCloudDiscoveryengineV1Document $document
-     */
-    public function setDocument(GoogleCloudDiscoveryengineV1Document $document)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1Document
-     */
-    public function getDocument()
-    {
-    }
-    /**
-     * The icon uri of the content suggestion.
-     *
-     * @param string $iconUri
-     */
-    public function setIconUri($iconUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIconUri()
-    {
-    }
-    public function setScore($score)
-    {
-    }
-    public function getScore()
-    {
-    }
-    /**
-     * The suggestion for the query.
-     *
-     * @param string $suggestion
-     */
-    public function setSuggestion($suggestion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSuggestion()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1AdvancedCompleteQueryResponseContentSuggestion extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AdvancedCompleteQueryResponseContentSuggestion
     {
     }
 }

@@ -21,132 +21,141 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AlertCenter;
-
-class ResourceInfo extends \Google\Model
-{
-    /**
-     * Chat attachment ID.
-     *
-     * @var string
-     */
-    public $chatAttachmentId;
-    /**
-     * Chat message ID.
-     *
-     * @var string
-     */
-    public $chatMessageId;
-    /**
-     * Id to identify a device. For example, for Android devices, this is the
-     * "Android Device Id" and for Chrome OS devices, it's the "Device Virtual
-     * Id".
-     *
-     * @var string
-     */
-    public $deviceId;
-    /**
-     * Drive file ID.
-     *
-     * @var string
-     */
-    public $documentId;
-    /**
-     * RFC2822 message ID.
-     *
-     * @var string
-     */
-    public $messageId;
-    /**
-     * Title of the resource, for example email subject, or document title.
-     *
-     * @var string
-     */
-    public $resourceTitle;
-    /**
-     * Chat attachment ID.
-     *
-     * @param string $chatAttachmentId
-     */
-    public function setChatAttachmentId($chatAttachmentId)
+namespace Google\Service\AlertCenter {
+    class ResourceInfo extends \Google\Model
     {
+        /**
+         * Chat attachment ID.
+         *
+         * @var string
+         */
+        public $chatAttachmentId;
+        /**
+         * Chat message ID.
+         *
+         * @var string
+         */
+        public $chatMessageId;
+        /**
+         * Id to identify a device. For example, for Android devices, this is the
+         * "Android Device Id" and for Chrome OS devices, it's the "Device Virtual
+         * Id".
+         *
+         * @var string
+         */
+        public $deviceId;
+        /**
+         * Drive file ID.
+         *
+         * @var string
+         */
+        public $documentId;
+        /**
+         * RFC2822 message ID.
+         *
+         * @var string
+         */
+        public $messageId;
+        /**
+         * Title of the resource, for example email subject, or document title.
+         *
+         * @var string
+         */
+        public $resourceTitle;
+        /**
+         * Chat attachment ID.
+         *
+         * @param string $chatAttachmentId
+         */
+        public function setChatAttachmentId($chatAttachmentId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChatAttachmentId()
+        {
+        }
+        /**
+         * Chat message ID.
+         *
+         * @param string $chatMessageId
+         */
+        public function setChatMessageId($chatMessageId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChatMessageId()
+        {
+        }
+        /**
+         * Id to identify a device. For example, for Android devices, this is the
+         * "Android Device Id" and for Chrome OS devices, it's the "Device Virtual
+         * Id".
+         *
+         * @param string $deviceId
+         */
+        public function setDeviceId($deviceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeviceId()
+        {
+        }
+        /**
+         * Drive file ID.
+         *
+         * @param string $documentId
+         */
+        public function setDocumentId($documentId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDocumentId()
+        {
+        }
+        /**
+         * RFC2822 message ID.
+         *
+         * @param string $messageId
+         */
+        public function setMessageId($messageId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessageId()
+        {
+        }
+        /**
+         * Title of the resource, for example email subject, or document title.
+         *
+         * @param string $resourceTitle
+         */
+        public function setResourceTitle($resourceTitle)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AlertCenter\ResourceInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChatAttachmentId()
-    {
-    }
-    /**
-     * Chat message ID.
-     *
-     * @param string $chatMessageId
-     */
-    public function setChatMessageId($chatMessageId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getChatMessageId()
-    {
-    }
-    /**
-     * Id to identify a device. For example, for Android devices, this is the
-     * "Android Device Id" and for Chrome OS devices, it's the "Device Virtual
-     * Id".
-     *
-     * @param string $deviceId
-     */
-    public function setDeviceId($deviceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeviceId()
-    {
-    }
-    /**
-     * Drive file ID.
-     *
-     * @param string $documentId
-     */
-    public function setDocumentId($documentId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDocumentId()
-    {
-    }
-    /**
-     * RFC2822 message ID.
-     *
-     * @param string $messageId
-     */
-    public function setMessageId($messageId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMessageId()
-    {
-    }
-    /**
-     * Title of the resource, for example email subject, or document title.
-     *
-     * @param string $resourceTitle
-     */
-    public function setResourceTitle($resourceTitle)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceTitle()
+    class Google_Service_AlertCenter_ResourceInfo extends \Google\Service\AlertCenter\ResourceInfo
     {
     }
 }

@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1TrialSettings extends \Google\Model
-{
-    /**
-     * Date when the trial ends. The value is in milliseconds using the UNIX Epoch
-     * format. See an example [Epoch converter](https://www.epochconverter.com).
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * Determines if the entitlement is in a trial or not: * `true` - The
-     * entitlement is in trial. * `false` - The entitlement is not in trial.
-     *
-     * @var bool
-     */
-    public $trial;
-    /**
-     * Date when the trial ends. The value is in milliseconds using the UNIX Epoch
-     * format. See an example [Epoch converter](https://www.epochconverter.com).
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1TrialSettings extends \Google\Model
     {
+        /**
+         * Date when the trial ends. The value is in milliseconds using the UNIX Epoch
+         * format. See an example [Epoch converter](https://www.epochconverter.com).
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * Determines if the entitlement is in a trial or not: * `true` - The
+         * entitlement is in trial. * `false` - The entitlement is not in trial.
+         *
+         * @var bool
+         */
+        public $trial;
+        /**
+         * Date when the trial ends. The value is in milliseconds using the UNIX Epoch
+         * format. See an example [Epoch converter](https://www.epochconverter.com).
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * Determines if the entitlement is in a trial or not: * `true` - The
+         * entitlement is in trial. * `false` - The entitlement is not in trial.
+         *
+         * @param bool $trial
+         */
+        public function setTrial($trial)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getTrial()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1TrialSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndTime()
-    {
-    }
-    /**
-     * Determines if the entitlement is in a trial or not: * `true` - The
-     * entitlement is in trial. * `false` - The entitlement is not in trial.
-     *
-     * @param bool $trial
-     */
-    public function setTrial($trial)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getTrial()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1TrialSettings extends \Google\Service\Cloudchannel\GoogleCloudChannelV1TrialSettings
     {
     }
 }

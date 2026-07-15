@@ -21,95 +21,104 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class PrivateMessageInfo extends \Google\Collection
-{
-    protected $collection_key = 'gsuiteIntegrationMetadata';
-    protected $annotationsType = Annotation::class;
-    protected $annotationsDataType = 'array';
-    protected $attachmentsType = Attachment::class;
-    protected $attachmentsDataType = 'array';
-    protected $contextualAddOnMarkupType = GoogleChatV1ContextualAddOnMarkup::class;
-    protected $contextualAddOnMarkupDataType = 'array';
-    protected $gsuiteIntegrationMetadataType = GsuiteIntegrationMetadata::class;
-    protected $gsuiteIntegrationMetadataDataType = 'array';
-    /**
-     * @var string
-     */
-    public $text;
-    protected $userIdType = UserId::class;
-    protected $userIdDataType = '';
-    /**
-     * @param Annotation[]
-     */
-    public function setAnnotations($annotations)
+namespace Google\Service\CloudSearch {
+    class PrivateMessageInfo extends \Google\Collection
     {
+        protected $collection_key = 'gsuiteIntegrationMetadata';
+        protected $annotationsType = Annotation::class;
+        protected $annotationsDataType = 'array';
+        protected $attachmentsType = Attachment::class;
+        protected $attachmentsDataType = 'array';
+        protected $contextualAddOnMarkupType = GoogleChatV1ContextualAddOnMarkup::class;
+        protected $contextualAddOnMarkupDataType = 'array';
+        protected $gsuiteIntegrationMetadataType = GsuiteIntegrationMetadata::class;
+        protected $gsuiteIntegrationMetadataDataType = 'array';
+        /**
+         * @var string
+         */
+        public $text;
+        protected $userIdType = UserId::class;
+        protected $userIdDataType = '';
+        /**
+         * @param Annotation[]
+         */
+        public function setAnnotations($annotations)
+        {
+        }
+        /**
+         * @return Annotation[]
+         */
+        public function getAnnotations()
+        {
+        }
+        /**
+         * @param Attachment[]
+         */
+        public function setAttachments($attachments)
+        {
+        }
+        /**
+         * @return Attachment[]
+         */
+        public function getAttachments()
+        {
+        }
+        /**
+         * @param GoogleChatV1ContextualAddOnMarkup[]
+         */
+        public function setContextualAddOnMarkup($contextualAddOnMarkup)
+        {
+        }
+        /**
+         * @return GoogleChatV1ContextualAddOnMarkup[]
+         */
+        public function getContextualAddOnMarkup()
+        {
+        }
+        /**
+         * @param GsuiteIntegrationMetadata[]
+         */
+        public function setGsuiteIntegrationMetadata($gsuiteIntegrationMetadata)
+        {
+        }
+        /**
+         * @return GsuiteIntegrationMetadata[]
+         */
+        public function getGsuiteIntegrationMetadata()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
+        /**
+         * @param UserId
+         */
+        public function setUserId(UserId $userId)
+        {
+        }
+        /**
+         * @return UserId
+         */
+        public function getUserId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Annotation[]
+     * Runtime class alias of \Google\Service\CloudSearch\PrivateMessageInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotations()
-    {
-    }
-    /**
-     * @param Attachment[]
-     */
-    public function setAttachments($attachments)
-    {
-    }
-    /**
-     * @return Attachment[]
-     */
-    public function getAttachments()
-    {
-    }
-    /**
-     * @param GoogleChatV1ContextualAddOnMarkup[]
-     */
-    public function setContextualAddOnMarkup($contextualAddOnMarkup)
-    {
-    }
-    /**
-     * @return GoogleChatV1ContextualAddOnMarkup[]
-     */
-    public function getContextualAddOnMarkup()
-    {
-    }
-    /**
-     * @param GsuiteIntegrationMetadata[]
-     */
-    public function setGsuiteIntegrationMetadata($gsuiteIntegrationMetadata)
-    {
-    }
-    /**
-     * @return GsuiteIntegrationMetadata[]
-     */
-    public function getGsuiteIntegrationMetadata()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
-    {
-    }
-    /**
-     * @param UserId
-     */
-    public function setUserId(UserId $userId)
-    {
-    }
-    /**
-     * @return UserId
-     */
-    public function getUserId()
+    class Google_Service_CloudSearch_PrivateMessageInfo extends \Google\Service\CloudSearch\PrivateMessageInfo
     {
     }
 }

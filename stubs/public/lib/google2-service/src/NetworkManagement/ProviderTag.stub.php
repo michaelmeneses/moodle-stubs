@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkManagement;
-
-class ProviderTag extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $category;
-    /**
-     * @var string
-     */
-    public $resourceType;
-    /**
-     * @var string
-     */
-    public $value;
-    /**
-     * @param string
-     */
-    public function setCategory($category)
+namespace Google\Service\NetworkManagement {
+    class ProviderTag extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $category;
+        /**
+         * @var string
+         */
+        public $resourceType;
+        /**
+         * @var string
+         */
+        public $value;
+        /**
+         * @param string
+         */
+        public function setCategory($category)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCategory()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setResourceType($resourceType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetworkManagement\ProviderTag registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCategory()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setResourceType($resourceType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_NetworkManagement_ProviderTag extends \Google\Service\NetworkManagement\ProviderTag
     {
     }
 }

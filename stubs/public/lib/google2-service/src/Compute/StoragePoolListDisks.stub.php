@@ -21,171 +21,180 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class StoragePoolListDisks extends \Google\Collection
-{
-    protected $collection_key = 'unreachables';
-    /**
-     * @var string
-     */
-    public $etag;
-    /**
-     * Output only. [Output Only] Unique identifier for the resource; defined by
-     * the server.
-     *
-     * @var string
-     */
-    public $id;
-    protected $itemsType = StoragePoolDisk::class;
-    protected $itemsDataType = 'array';
-    /**
-     * Output only. [Output Only] Type of resource.
-     * Alwayscompute#storagePoolListDisks for lists of disks in a storagePool.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Output only. [Output Only] This token allows you to get the next page of
-     * results for list requests. If the number of results is larger
-     * thanmaxResults, use the nextPageToken as a value for the query parameter
-     * pageToken in the next list request. Subsequent list requests will have
-     * their own nextPageToken to continue paging through the results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Output only. [Output Only] Server-defined URL for this resource.
-     *
-     * @var string
-     */
-    public $selfLink;
-    /**
-     * Output only. [Output Only] Unreachable resources. end_interface:
-     * MixerListResponseWithEtagBuilder
-     *
-     * @var string[]
-     */
-    public $unreachables;
-    protected $warningType = StoragePoolListDisksWarning::class;
-    protected $warningDataType = '';
-    /**
-     * @param string $etag
-     */
-    public function setEtag($etag)
+namespace Google\Service\Compute {
+    class StoragePoolListDisks extends \Google\Collection
     {
+        protected $collection_key = 'unreachables';
+        /**
+         * @var string
+         */
+        public $etag;
+        /**
+         * Output only. [Output Only] Unique identifier for the resource; defined by
+         * the server.
+         *
+         * @var string
+         */
+        public $id;
+        protected $itemsType = StoragePoolDisk::class;
+        protected $itemsDataType = 'array';
+        /**
+         * Output only. [Output Only] Type of resource.
+         * Alwayscompute#storagePoolListDisks for lists of disks in a storagePool.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Output only. [Output Only] This token allows you to get the next page of
+         * results for list requests. If the number of results is larger
+         * thanmaxResults, use the nextPageToken as a value for the query parameter
+         * pageToken in the next list request. Subsequent list requests will have
+         * their own nextPageToken to continue paging through the results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Output only. [Output Only] Server-defined URL for this resource.
+         *
+         * @var string
+         */
+        public $selfLink;
+        /**
+         * Output only. [Output Only] Unreachable resources. end_interface:
+         * MixerListResponseWithEtagBuilder
+         *
+         * @var string[]
+         */
+        public $unreachables;
+        protected $warningType = StoragePoolListDisksWarning::class;
+        protected $warningDataType = '';
+        /**
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * Output only. [Output Only] Unique identifier for the resource; defined by
+         * the server.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * A list of StoragePoolDisk resources.
+         *
+         * @param StoragePoolDisk[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return StoragePoolDisk[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * Output only. [Output Only] Type of resource.
+         * Alwayscompute#storagePoolListDisks for lists of disks in a storagePool.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Output only. [Output Only] This token allows you to get the next page of
+         * results for list requests. If the number of results is larger
+         * thanmaxResults, use the nextPageToken as a value for the query parameter
+         * pageToken in the next list request. Subsequent list requests will have
+         * their own nextPageToken to continue paging through the results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Output only. [Output Only] Server-defined URL for this resource.
+         *
+         * @param string $selfLink
+         */
+        public function setSelfLink($selfLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelfLink()
+        {
+        }
+        /**
+         * Output only. [Output Only] Unreachable resources. end_interface:
+         * MixerListResponseWithEtagBuilder
+         *
+         * @param string[] $unreachables
+         */
+        public function setUnreachables($unreachables)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachables()
+        {
+        }
+        /**
+         * Output only. [Output Only] Informational warning message.
+         *
+         * @param StoragePoolListDisksWarning $warning
+         */
+        public function setWarning(StoragePoolListDisksWarning $warning)
+        {
+        }
+        /**
+         * @return StoragePoolListDisksWarning
+         */
+        public function getWarning()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\StoragePoolListDisks registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
-    {
-    }
-    /**
-     * Output only. [Output Only] Unique identifier for the resource; defined by
-     * the server.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * A list of StoragePoolDisk resources.
-     *
-     * @param StoragePoolDisk[] $items
-     */
-    public function setItems($items)
-    {
-    }
-    /**
-     * @return StoragePoolDisk[]
-     */
-    public function getItems()
-    {
-    }
-    /**
-     * Output only. [Output Only] Type of resource.
-     * Alwayscompute#storagePoolListDisks for lists of disks in a storagePool.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Output only. [Output Only] This token allows you to get the next page of
-     * results for list requests. If the number of results is larger
-     * thanmaxResults, use the nextPageToken as a value for the query parameter
-     * pageToken in the next list request. Subsequent list requests will have
-     * their own nextPageToken to continue paging through the results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Output only. [Output Only] Server-defined URL for this resource.
-     *
-     * @param string $selfLink
-     */
-    public function setSelfLink($selfLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelfLink()
-    {
-    }
-    /**
-     * Output only. [Output Only] Unreachable resources. end_interface:
-     * MixerListResponseWithEtagBuilder
-     *
-     * @param string[] $unreachables
-     */
-    public function setUnreachables($unreachables)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachables()
-    {
-    }
-    /**
-     * Output only. [Output Only] Informational warning message.
-     *
-     * @param StoragePoolListDisksWarning $warning
-     */
-    public function setWarning(StoragePoolListDisksWarning $warning)
-    {
-    }
-    /**
-     * @return StoragePoolListDisksWarning
-     */
-    public function getWarning()
+    class Google_Service_Compute_StoragePoolListDisks extends \Google\Service\Compute\StoragePoolListDisks
     {
     }
 }

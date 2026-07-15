@@ -21,63 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Config;
-
-class ResourceDrift extends \Google\Collection
-{
-    protected $collection_key = 'propertyDrifts';
-    /**
-     * Identifier. The name of the resource drift. Format: 'projects/{project_id}/
-     * locations/{location}/previews/{preview}/resourceDrifts/{resource_drift}'.
-     *
-     * @var string
-     */
-    public $name;
-    protected $propertyDriftsType = PropertyDrift::class;
-    protected $propertyDriftsDataType = 'array';
-    protected $terraformInfoType = ResourceDriftTerraformInfo::class;
-    protected $terraformInfoDataType = '';
-    /**
-     * Identifier. The name of the resource drift. Format: 'projects/{project_id}/
-     * locations/{location}/previews/{preview}/resourceDrifts/{resource_drift}'.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Config {
+    class ResourceDrift extends \Google\Collection
     {
+        protected $collection_key = 'propertyDrifts';
+        /**
+         * Identifier. The name of the resource drift. Format: 'projects/{project_id}/
+         * locations/{location}/previews/{preview}/resourceDrifts/{resource_drift}'.
+         *
+         * @var string
+         */
+        public $name;
+        protected $propertyDriftsType = PropertyDrift::class;
+        protected $propertyDriftsDataType = 'array';
+        protected $terraformInfoType = ResourceDriftTerraformInfo::class;
+        protected $terraformInfoDataType = '';
+        /**
+         * Identifier. The name of the resource drift. Format: 'projects/{project_id}/
+         * locations/{location}/previews/{preview}/resourceDrifts/{resource_drift}'.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The property drifts of the resource drift.
+         *
+         * @param PropertyDrift[] $propertyDrifts
+         */
+        public function setPropertyDrifts($propertyDrifts)
+        {
+        }
+        /**
+         * @return PropertyDrift[]
+         */
+        public function getPropertyDrifts()
+        {
+        }
+        /**
+         * Output only. Terraform info of the resource drift.
+         *
+         * @param ResourceDriftTerraformInfo $terraformInfo
+         */
+        public function setTerraformInfo(ResourceDriftTerraformInfo $terraformInfo)
+        {
+        }
+        /**
+         * @return ResourceDriftTerraformInfo
+         */
+        public function getTerraformInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Config\ResourceDrift registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The property drifts of the resource drift.
-     *
-     * @param PropertyDrift[] $propertyDrifts
-     */
-    public function setPropertyDrifts($propertyDrifts)
-    {
-    }
-    /**
-     * @return PropertyDrift[]
-     */
-    public function getPropertyDrifts()
-    {
-    }
-    /**
-     * Output only. Terraform info of the resource drift.
-     *
-     * @param ResourceDriftTerraformInfo $terraformInfo
-     */
-    public function setTerraformInfo(ResourceDriftTerraformInfo $terraformInfo)
-    {
-    }
-    /**
-     * @return ResourceDriftTerraformInfo
-     */
-    public function getTerraformInfo()
+    class Google_Service_Config_ResourceDrift extends \Google\Service\Config\ResourceDrift
     {
     }
 }

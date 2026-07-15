@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RealTimeBidding;
-
-class GetRemarketingTagResponse extends \Google\Model
-{
-    /**
-     * An HTML tag that can be placed on the advertiser's page to add users to a
-     * user list. For more information and code samples on using snippets on your
-     * website, refer to [Tag your site for
-     * remarketing](https://support.google.com/google-ads/answer/2476688).
-     *
-     * @var string
-     */
-    public $snippet;
-    /**
-     * An HTML tag that can be placed on the advertiser's page to add users to a
-     * user list. For more information and code samples on using snippets on your
-     * website, refer to [Tag your site for
-     * remarketing](https://support.google.com/google-ads/answer/2476688).
-     *
-     * @param string $snippet
-     */
-    public function setSnippet($snippet)
+namespace Google\Service\RealTimeBidding {
+    class GetRemarketingTagResponse extends \Google\Model
     {
+        /**
+         * An HTML tag that can be placed on the advertiser's page to add users to a
+         * user list. For more information and code samples on using snippets on your
+         * website, refer to [Tag your site for
+         * remarketing](https://support.google.com/google-ads/answer/2476688).
+         *
+         * @var string
+         */
+        public $snippet;
+        /**
+         * An HTML tag that can be placed on the advertiser's page to add users to a
+         * user list. For more information and code samples on using snippets on your
+         * website, refer to [Tag your site for
+         * remarketing](https://support.google.com/google-ads/answer/2476688).
+         *
+         * @param string $snippet
+         */
+        public function setSnippet($snippet)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSnippet()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\RealTimeBidding\GetRemarketingTagResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSnippet()
+    class Google_Service_RealTimeBidding_GetRemarketingTagResponse extends \Google\Service\RealTimeBidding\GetRemarketingTagResponse
     {
     }
 }

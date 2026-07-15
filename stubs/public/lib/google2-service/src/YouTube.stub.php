@@ -21,81 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for YouTube (v3).
- *
- * <p>
- * The YouTube Data API v3 is an API that provides access to YouTube data, such
- * as videos, playlists, and channels.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://developers.google.com/youtube/" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class YouTube extends \Google\Service
-{
-    /** Manage your YouTube account. */
-    const YOUTUBE = "https://www.googleapis.com/auth/youtube";
-    /** See a list of your current active channel members, their current level, and when they became a member. */
-    const YOUTUBE_CHANNEL_MEMBERSHIPS_CREATOR = "https://www.googleapis.com/auth/youtube.channel-memberships.creator";
-    /** See, edit, and permanently delete your YouTube videos, ratings, comments and captions. */
-    const YOUTUBE_FORCE_SSL = "https://www.googleapis.com/auth/youtube.force-ssl";
-    /** View your YouTube account. */
-    const YOUTUBE_READONLY = "https://www.googleapis.com/auth/youtube.readonly";
-    /** Manage your YouTube videos. */
-    const YOUTUBE_UPLOAD = "https://www.googleapis.com/auth/youtube.upload";
-    /** View and manage your assets and associated content on YouTube. */
-    const YOUTUBEPARTNER = "https://www.googleapis.com/auth/youtubepartner";
-    /** View private information of your YouTube channel relevant during the audit process with a YouTube partner. */
-    const YOUTUBEPARTNER_CHANNEL_AUDIT = "https://www.googleapis.com/auth/youtubepartner-channel-audit";
-    public $abuseReports;
-    public $activities;
-    public $captions;
-    public $channelBanners;
-    public $channelSections;
-    public $channels;
-    public $commentThreads;
-    public $comments;
-    public $i18nLanguages;
-    public $i18nRegions;
-    public $liveBroadcasts;
-    public $liveChatBans;
-    public $liveChatMessages;
-    public $liveChatModerators;
-    public $liveStreams;
-    public $members;
-    public $membershipsLevels;
-    public $playlistImages;
-    public $playlistItems;
-    public $playlists;
-    public $search;
-    public $subscriptions;
-    public $superChatEvents;
-    public $tests;
-    public $thirdPartyLinks;
-    public $thumbnails;
-    public $videoAbuseReportReasons;
-    public $videoCategories;
-    public $videoTrainability;
-    public $videos;
-    public $watermarks;
-    public $youtube_v3;
-    public $youtube_v3_liveChat_messages;
-    public $youtube_v3_videos;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the YouTube service.
+     * Service definition for YouTube (v3).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * The YouTube Data API v3 is an API that provides access to YouTube data, such
+     * as videos, playlists, and channels.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://developers.google.com/youtube/" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class YouTube extends \Google\Service
+    {
+        /** Manage your YouTube account. */
+        const YOUTUBE = "https://www.googleapis.com/auth/youtube";
+        /** See a list of your current active channel members, their current level, and when they became a member. */
+        const YOUTUBE_CHANNEL_MEMBERSHIPS_CREATOR = "https://www.googleapis.com/auth/youtube.channel-memberships.creator";
+        /** See, edit, and permanently delete your YouTube videos, ratings, comments and captions. */
+        const YOUTUBE_FORCE_SSL = "https://www.googleapis.com/auth/youtube.force-ssl";
+        /** View your YouTube account. */
+        const YOUTUBE_READONLY = "https://www.googleapis.com/auth/youtube.readonly";
+        /** Manage your YouTube videos. */
+        const YOUTUBE_UPLOAD = "https://www.googleapis.com/auth/youtube.upload";
+        /** View and manage your assets and associated content on YouTube. */
+        const YOUTUBEPARTNER = "https://www.googleapis.com/auth/youtubepartner";
+        /** View private information of your YouTube channel relevant during the audit process with a YouTube partner. */
+        const YOUTUBEPARTNER_CHANNEL_AUDIT = "https://www.googleapis.com/auth/youtubepartner-channel-audit";
+        public $abuseReports;
+        public $activities;
+        public $captions;
+        public $channelBanners;
+        public $channelSections;
+        public $channels;
+        public $commentThreads;
+        public $comments;
+        public $i18nLanguages;
+        public $i18nRegions;
+        public $liveBroadcasts;
+        public $liveChatBans;
+        public $liveChatMessages;
+        public $liveChatModerators;
+        public $liveStreams;
+        public $members;
+        public $membershipsLevels;
+        public $playlistImages;
+        public $playlistItems;
+        public $playlists;
+        public $search;
+        public $subscriptions;
+        public $superChatEvents;
+        public $tests;
+        public $thirdPartyLinks;
+        public $thumbnails;
+        public $videoAbuseReportReasons;
+        public $videoCategories;
+        public $videoTrainability;
+        public $videos;
+        public $watermarks;
+        public $youtube_v3;
+        public $youtube_v3_liveChat_messages;
+        public $youtube_v3_videos;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the YouTube service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\YouTube registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_YouTube extends \Google\Service\YouTube
     {
     }
 }

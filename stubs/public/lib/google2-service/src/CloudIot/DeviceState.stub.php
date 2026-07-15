@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIot;
-
-class DeviceState extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $binaryData;
-    /**
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * @param string
-     */
-    public function setBinaryData($binaryData)
+namespace Google\Service\CloudIot {
+    class DeviceState extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $binaryData;
+        /**
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * @param string
+         */
+        public function setBinaryData($binaryData)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBinaryData()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudIot\DeviceState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBinaryData()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_CloudIot_DeviceState extends \Google\Service\CloudIot\DeviceState
     {
     }
 }

@@ -21,43 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for Reports (reports_v1).
- *
- * <p>
- * Admin SDK lets administrators of enterprise domains to view and manage
- * resources like user, groups etc. It also provides audit and usage reports of
- * domain.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://developers.google.com/workspace/admin/" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class Reports extends \Google\Service
-{
-    /** View audit reports for your Google Workspace domain. */
-    const ADMIN_REPORTS_AUDIT_READONLY = "https://www.googleapis.com/auth/admin.reports.audit.readonly";
-    /** View usage reports for your Google Workspace domain. */
-    const ADMIN_REPORTS_USAGE_READONLY = "https://www.googleapis.com/auth/admin.reports.usage.readonly";
-    public $activities;
-    public $channels;
-    public $customerUsageReports;
-    public $entityUsageReports;
-    public $userUsageReport;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the Reports service.
+     * Service definition for Reports (reports_v1).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * Admin SDK lets administrators of enterprise domains to view and manage
+     * resources like user, groups etc. It also provides audit and usage reports of
+     * domain.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://developers.google.com/workspace/admin/" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class Reports extends \Google\Service
+    {
+        /** View audit reports for your Google Workspace domain. */
+        const ADMIN_REPORTS_AUDIT_READONLY = "https://www.googleapis.com/auth/admin.reports.audit.readonly";
+        /** View usage reports for your Google Workspace domain. */
+        const ADMIN_REPORTS_USAGE_READONLY = "https://www.googleapis.com/auth/admin.reports.usage.readonly";
+        public $activities;
+        public $channels;
+        public $customerUsageReports;
+        public $entityUsageReports;
+        public $userUsageReport;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the Reports service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Reports registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Reports extends \Google\Service\Reports
     {
     }
 }

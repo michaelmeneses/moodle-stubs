@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DeveloperConnect;
-
-class GoogleCloudRun extends \Google\Model
-{
-    /**
-     * Required. Immutable. The name of the Cloud Run service. Format:
-     * `projects/{project}/locations/{location}/services/{service}`.
-     *
-     * @var string
-     */
-    public $serviceUri;
-    /**
-     * Required. Immutable. The name of the Cloud Run service. Format:
-     * `projects/{project}/locations/{location}/services/{service}`.
-     *
-     * @param string $serviceUri
-     */
-    public function setServiceUri($serviceUri)
+namespace Google\Service\DeveloperConnect {
+    class GoogleCloudRun extends \Google\Model
     {
+        /**
+         * Required. Immutable. The name of the Cloud Run service. Format:
+         * `projects/{project}/locations/{location}/services/{service}`.
+         *
+         * @var string
+         */
+        public $serviceUri;
+        /**
+         * Required. Immutable. The name of the Cloud Run service. Format:
+         * `projects/{project}/locations/{location}/services/{service}`.
+         *
+         * @param string $serviceUri
+         */
+        public function setServiceUri($serviceUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DeveloperConnect\GoogleCloudRun registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getServiceUri()
+    class Google_Service_DeveloperConnect_GoogleCloudRun extends \Google\Service\DeveloperConnect\GoogleCloudRun
     {
     }
 }

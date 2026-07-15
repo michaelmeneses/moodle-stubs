@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class CreateSessionRequest extends \Google\Model
-{
-    protected $sessionType = Session::class;
-    protected $sessionDataType = '';
-    /**
-     * Required. The session to create.
-     *
-     * @param Session $session
-     */
-    public function setSession(Session $session)
+namespace Google\Service\Spanner {
+    class CreateSessionRequest extends \Google\Model
     {
+        protected $sessionType = Session::class;
+        protected $sessionDataType = '';
+        /**
+         * Required. The session to create.
+         *
+         * @param Session $session
+         */
+        public function setSession(Session $session)
+        {
+        }
+        /**
+         * @return Session
+         */
+        public function getSession()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Session
+     * Runtime class alias of \Google\Service\Spanner\CreateSessionRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSession()
+    class Google_Service_Spanner_CreateSessionRequest extends \Google\Service\Spanner\CreateSessionRequest
     {
     }
 }

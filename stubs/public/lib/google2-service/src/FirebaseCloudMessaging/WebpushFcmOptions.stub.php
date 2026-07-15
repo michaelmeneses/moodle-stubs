@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseCloudMessaging;
-
-class WebpushFcmOptions extends \Google\Model
-{
-    /**
-     * Label associated with the message's analytics data.
-     *
-     * @var string
-     */
-    public $analyticsLabel;
-    /**
-     * The link to open when the user clicks on the notification. For all URL
-     * values, HTTPS is required.
-     *
-     * @var string
-     */
-    public $link;
-    /**
-     * Label associated with the message's analytics data.
-     *
-     * @param string $analyticsLabel
-     */
-    public function setAnalyticsLabel($analyticsLabel)
+namespace Google\Service\FirebaseCloudMessaging {
+    class WebpushFcmOptions extends \Google\Model
     {
+        /**
+         * Label associated with the message's analytics data.
+         *
+         * @var string
+         */
+        public $analyticsLabel;
+        /**
+         * The link to open when the user clicks on the notification. For all URL
+         * values, HTTPS is required.
+         *
+         * @var string
+         */
+        public $link;
+        /**
+         * Label associated with the message's analytics data.
+         *
+         * @param string $analyticsLabel
+         */
+        public function setAnalyticsLabel($analyticsLabel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnalyticsLabel()
+        {
+        }
+        /**
+         * The link to open when the user clicks on the notification. For all URL
+         * values, HTTPS is required.
+         *
+         * @param string $link
+         */
+        public function setLink($link)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLink()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\FirebaseCloudMessaging\WebpushFcmOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnalyticsLabel()
-    {
-    }
-    /**
-     * The link to open when the user clicks on the notification. For all URL
-     * values, HTTPS is required.
-     *
-     * @param string $link
-     */
-    public function setLink($link)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLink()
+    class Google_Service_FirebaseCloudMessaging_WebpushFcmOptions extends \Google\Service\FirebaseCloudMessaging\WebpushFcmOptions
     {
     }
 }

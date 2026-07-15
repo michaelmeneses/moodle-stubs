@@ -21,91 +21,100 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1ReviewDocumentRequest extends \Google\Model
-{
-    /**
-     * The default priority level.
-     */
-    public const PRIORITY_DEFAULT = 'DEFAULT';
-    /**
-     * The urgent priority level. The labeling manager should allocate labeler
-     * resource to the urgent task queue to respect this priority level.
-     */
-    public const PRIORITY_URGENT = 'URGENT';
-    protected $documentSchemaType = GoogleCloudDocumentaiV1DocumentSchema::class;
-    protected $documentSchemaDataType = '';
-    /**
-     * Whether the validation should be performed on the ad-hoc review request.
-     *
-     * @var bool
-     */
-    public $enableSchemaValidation;
-    protected $inlineDocumentType = GoogleCloudDocumentaiV1Document::class;
-    protected $inlineDocumentDataType = '';
-    /**
-     * The priority of the human review task.
-     *
-     * @var string
-     */
-    public $priority;
-    /**
-     * The document schema of the human review task.
-     *
-     * @param GoogleCloudDocumentaiV1DocumentSchema $documentSchema
-     */
-    public function setDocumentSchema(GoogleCloudDocumentaiV1DocumentSchema $documentSchema)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1ReviewDocumentRequest extends \Google\Model
     {
+        /**
+         * The default priority level.
+         */
+        public const PRIORITY_DEFAULT = 'DEFAULT';
+        /**
+         * The urgent priority level. The labeling manager should allocate labeler
+         * resource to the urgent task queue to respect this priority level.
+         */
+        public const PRIORITY_URGENT = 'URGENT';
+        protected $documentSchemaType = GoogleCloudDocumentaiV1DocumentSchema::class;
+        protected $documentSchemaDataType = '';
+        /**
+         * Whether the validation should be performed on the ad-hoc review request.
+         *
+         * @var bool
+         */
+        public $enableSchemaValidation;
+        protected $inlineDocumentType = GoogleCloudDocumentaiV1Document::class;
+        protected $inlineDocumentDataType = '';
+        /**
+         * The priority of the human review task.
+         *
+         * @var string
+         */
+        public $priority;
+        /**
+         * The document schema of the human review task.
+         *
+         * @param GoogleCloudDocumentaiV1DocumentSchema $documentSchema
+         */
+        public function setDocumentSchema(GoogleCloudDocumentaiV1DocumentSchema $documentSchema)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1DocumentSchema
+         */
+        public function getDocumentSchema()
+        {
+        }
+        /**
+         * Whether the validation should be performed on the ad-hoc review request.
+         *
+         * @param bool $enableSchemaValidation
+         */
+        public function setEnableSchemaValidation($enableSchemaValidation)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableSchemaValidation()
+        {
+        }
+        /**
+         * An inline document proto.
+         *
+         * @param GoogleCloudDocumentaiV1Document $inlineDocument
+         */
+        public function setInlineDocument(GoogleCloudDocumentaiV1Document $inlineDocument)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1Document
+         */
+        public function getInlineDocument()
+        {
+        }
+        /**
+         * The priority of the human review task.
+         *
+         * Accepted values: DEFAULT, URGENT
+         *
+         * @param self::PRIORITY_* $priority
+         */
+        public function setPriority($priority)
+        {
+        }
+        /**
+         * @return self::PRIORITY_*
+         */
+        public function getPriority()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiV1DocumentSchema
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1ReviewDocumentRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDocumentSchema()
-    {
-    }
-    /**
-     * Whether the validation should be performed on the ad-hoc review request.
-     *
-     * @param bool $enableSchemaValidation
-     */
-    public function setEnableSchemaValidation($enableSchemaValidation)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnableSchemaValidation()
-    {
-    }
-    /**
-     * An inline document proto.
-     *
-     * @param GoogleCloudDocumentaiV1Document $inlineDocument
-     */
-    public function setInlineDocument(GoogleCloudDocumentaiV1Document $inlineDocument)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1Document
-     */
-    public function getInlineDocument()
-    {
-    }
-    /**
-     * The priority of the human review task.
-     *
-     * Accepted values: DEFAULT, URGENT
-     *
-     * @param self::PRIORITY_* $priority
-     */
-    public function setPriority($priority)
-    {
-    }
-    /**
-     * @return self::PRIORITY_*
-     */
-    public function getPriority()
+    class Google_Service_Document_GoogleCloudDocumentaiV1ReviewDocumentRequest extends \Google\Service\Document\GoogleCloudDocumentaiV1ReviewDocumentRequest
     {
     }
 }

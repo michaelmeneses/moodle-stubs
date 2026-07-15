@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1SegmentationConfig extends \Google\Model
-{
-    /**
-     * Required. Annotation spec set resource name. format:
-     * projects/{project_id}/annotationSpecSets/{annotation_spec_set_id}
-     *
-     * @var string
-     */
-    public $annotationSpecSet;
-    /**
-     * Instruction message showed on labelers UI.
-     *
-     * @var string
-     */
-    public $instructionMessage;
-    /**
-     * Required. Annotation spec set resource name. format:
-     * projects/{project_id}/annotationSpecSets/{annotation_spec_set_id}
-     *
-     * @param string $annotationSpecSet
-     */
-    public function setAnnotationSpecSet($annotationSpecSet)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1SegmentationConfig extends \Google\Model
     {
+        /**
+         * Required. Annotation spec set resource name. format:
+         * projects/{project_id}/annotationSpecSets/{annotation_spec_set_id}
+         *
+         * @var string
+         */
+        public $annotationSpecSet;
+        /**
+         * Instruction message showed on labelers UI.
+         *
+         * @var string
+         */
+        public $instructionMessage;
+        /**
+         * Required. Annotation spec set resource name. format:
+         * projects/{project_id}/annotationSpecSets/{annotation_spec_set_id}
+         *
+         * @param string $annotationSpecSet
+         */
+        public function setAnnotationSpecSet($annotationSpecSet)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnnotationSpecSet()
+        {
+        }
+        /**
+         * Instruction message showed on labelers UI.
+         *
+         * @param string $instructionMessage
+         */
+        public function setInstructionMessage($instructionMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstructionMessage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1SegmentationConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotationSpecSet()
-    {
-    }
-    /**
-     * Instruction message showed on labelers UI.
-     *
-     * @param string $instructionMessage
-     */
-    public function setInstructionMessage($instructionMessage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInstructionMessage()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1SegmentationConfig extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1SegmentationConfig
     {
     }
 }

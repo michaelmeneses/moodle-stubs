@@ -21,96 +21,105 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storage;
-
-class BucketAutoclass extends \Google\Model
-{
-    /**
-     * Whether or not Autoclass is enabled on this bucket
-     *
-     * @var bool
-     */
-    public $enabled;
-    /**
-     * The storage class that objects in the bucket eventually transition to if
-     * they are not read for a certain length of time. Valid values are NEARLINE
-     * and ARCHIVE.
-     *
-     * @var string
-     */
-    public $terminalStorageClass;
-    /**
-     * A date and time in RFC 3339 format representing the time of the most recent
-     * update to "terminalStorageClass".
-     *
-     * @var string
-     */
-    public $terminalStorageClassUpdateTime;
-    /**
-     * A date and time in RFC 3339 format representing the instant at which
-     * "enabled" was last toggled.
-     *
-     * @var string
-     */
-    public $toggleTime;
-    /**
-     * Whether or not Autoclass is enabled on this bucket
-     *
-     * @param bool $enabled
-     */
-    public function setEnabled($enabled)
+namespace Google\Service\Storage {
+    class BucketAutoclass extends \Google\Model
     {
+        /**
+         * Whether or not Autoclass is enabled on this bucket
+         *
+         * @var bool
+         */
+        public $enabled;
+        /**
+         * The storage class that objects in the bucket eventually transition to if
+         * they are not read for a certain length of time. Valid values are NEARLINE
+         * and ARCHIVE.
+         *
+         * @var string
+         */
+        public $terminalStorageClass;
+        /**
+         * A date and time in RFC 3339 format representing the time of the most recent
+         * update to "terminalStorageClass".
+         *
+         * @var string
+         */
+        public $terminalStorageClassUpdateTime;
+        /**
+         * A date and time in RFC 3339 format representing the instant at which
+         * "enabled" was last toggled.
+         *
+         * @var string
+         */
+        public $toggleTime;
+        /**
+         * Whether or not Autoclass is enabled on this bucket
+         *
+         * @param bool $enabled
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
+        /**
+         * The storage class that objects in the bucket eventually transition to if
+         * they are not read for a certain length of time. Valid values are NEARLINE
+         * and ARCHIVE.
+         *
+         * @param string $terminalStorageClass
+         */
+        public function setTerminalStorageClass($terminalStorageClass)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTerminalStorageClass()
+        {
+        }
+        /**
+         * A date and time in RFC 3339 format representing the time of the most recent
+         * update to "terminalStorageClass".
+         *
+         * @param string $terminalStorageClassUpdateTime
+         */
+        public function setTerminalStorageClassUpdateTime($terminalStorageClassUpdateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTerminalStorageClassUpdateTime()
+        {
+        }
+        /**
+         * A date and time in RFC 3339 format representing the instant at which
+         * "enabled" was last toggled.
+         *
+         * @param string $toggleTime
+         */
+        public function setToggleTime($toggleTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getToggleTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Storage\BucketAutoclass registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnabled()
-    {
-    }
-    /**
-     * The storage class that objects in the bucket eventually transition to if
-     * they are not read for a certain length of time. Valid values are NEARLINE
-     * and ARCHIVE.
-     *
-     * @param string $terminalStorageClass
-     */
-    public function setTerminalStorageClass($terminalStorageClass)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTerminalStorageClass()
-    {
-    }
-    /**
-     * A date and time in RFC 3339 format representing the time of the most recent
-     * update to "terminalStorageClass".
-     *
-     * @param string $terminalStorageClassUpdateTime
-     */
-    public function setTerminalStorageClassUpdateTime($terminalStorageClassUpdateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTerminalStorageClassUpdateTime()
-    {
-    }
-    /**
-     * A date and time in RFC 3339 format representing the instant at which
-     * "enabled" was last toggled.
-     *
-     * @param string $toggleTime
-     */
-    public function setToggleTime($toggleTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getToggleTime()
+    class Google_Service_Storage_BucketAutoclass extends \Google\Service\Storage\BucketAutoclass
     {
     }
 }

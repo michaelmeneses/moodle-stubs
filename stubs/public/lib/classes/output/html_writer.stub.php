@@ -20,348 +20,363 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\output;
-
-/**
- * Simple html output class
- *
- * @copyright 2009 Tim Hunt, 2010 Petr Skoda
- * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @since Moodle 2.0
- * @package core
- * @category output
- */
-class html_writer
-{
+namespace core\output {
+    use core\exception\coding_exception;
+    use core_table\output\html_table;
+    use core_table\output\html_table_cell;
+    use core_table\output\html_table_row;
+    use core_text;
+    use moodle_url;
     /**
-     * Outputs a tag with attributes and contents
+     * Simple html output class
      *
-     * @param string $tagname The name of tag ('a', 'img', 'span' etc.)
-     * @param string $contents What goes between the opening and closing tags
-     * @param null|array $attributes The tag attributes (array('src' => $url, 'class' => 'class1') etc.)
-     * @return string HTML fragment
+     * @copyright 2009 Tim Hunt, 2010 Petr Skoda
+     * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+     * @since Moodle 2.0
+     * @package core
+     * @category output
      */
-    public static function tag($tagname, $contents, ?array $attributes = null)
+    class html_writer
     {
+        /**
+         * Outputs a tag with attributes and contents
+         *
+         * @param string $tagname The name of tag ('a', 'img', 'span' etc.)
+         * @param string $contents What goes between the opening and closing tags
+         * @param null|array $attributes The tag attributes (array('src' => $url, 'class' => 'class1') etc.)
+         * @return string HTML fragment
+         */
+        public static function tag($tagname, $contents, ?array $attributes = null)
+        {
+        }
+        /**
+         * Outputs an opening tag with attributes
+         *
+         * @param string $tagname The name of tag ('a', 'img', 'span' etc.)
+         * @param null|array $attributes The tag attributes (array('src' => $url, 'class' => 'class1') etc.)
+         * @return string HTML fragment
+         */
+        public static function start_tag($tagname, ?array $attributes = null)
+        {
+        }
+        /**
+         * Outputs a closing tag
+         *
+         * @param string $tagname The name of tag ('a', 'img', 'span' etc.)
+         * @return string HTML fragment
+         */
+        public static function end_tag($tagname)
+        {
+        }
+        /**
+         * Outputs an empty tag with attributes
+         *
+         * @param string $tagname The name of tag ('input', 'img', 'br' etc.)
+         * @param null|array $attributes The tag attributes (array('src' => $url, 'class' => 'class1') etc.)
+         * @return string HTML fragment
+         */
+        public static function empty_tag($tagname, ?array $attributes = null)
+        {
+        }
+        /**
+         * Outputs a tag, but only if the contents are not empty
+         *
+         * @param string $tagname The name of tag ('a', 'img', 'span' etc.)
+         * @param string $contents What goes between the opening and closing tags
+         * @param null|array $attributes The tag attributes (array('src' => $url, 'class' => 'class1') etc.)
+         * @return string HTML fragment
+         */
+        public static function nonempty_tag($tagname, $contents, ?array $attributes = null)
+        {
+        }
+        /**
+         * Outputs a HTML attribute and value
+         *
+         * @param string $name The name of the attribute ('src', 'href', 'class' etc.)
+         * @param string $value The value of the attribute. The value will be escaped with {@see s()}
+         * @return string HTML fragment
+         */
+        public static function attribute($name, $value)
+        {
+        }
+        /**
+         * Outputs a list of HTML attributes and values
+         *
+         * @param null|array $attributes The tag attributes (array('src' => $url, 'class' => 'class1') etc.)
+         *       The values will be escaped with {@see s()}
+         * @return string HTML fragment
+         */
+        public static function attributes(?array $attributes = null)
+        {
+        }
+        /**
+         * Generates a simple image tag with attributes.
+         *
+         * @param string $src The source of image
+         * @param string $alt The alternate text for image
+         * @param null|array $attributes The tag attributes (array('height' => $max_height, 'class' => 'class1') etc.)
+         * @return string HTML fragment
+         */
+        public static function img($src, $alt, ?array $attributes = null)
+        {
+        }
+        /**
+         * Generates random html element id.
+         *
+         * @staticvar int $counter
+         * @staticvar string $uniq
+         * @param string $base A string fragment that will be included in the random ID.
+         * @return string A unique ID
+         */
+        public static function random_id($base = 'random')
+        {
+        }
+        /**
+         * Generates a simple html link
+         *
+         * @param string|moodle_url $url The URL
+         * @param string $text The text
+         * @param null|array $attributes HTML attributes
+         * @return string HTML fragment
+         */
+        public static function link($url, $text, ?array $attributes = null)
+        {
+        }
+        /**
+         * Generates a simple checkbox with optional label
+         *
+         * @param string $name The name of the checkbox
+         * @param string $value The value of the checkbox
+         * @param bool $checked Whether the checkbox is checked
+         * @param string $label The label for the checkbox
+         * @param null|array $attributes Any attributes to apply to the checkbox
+         * @param null|array $labelattributes Any attributes to apply to the label, if present
+         * @return string html fragment
+         */
+        public static function checkbox($name, $value, $checked = true, $label = '', ?array $attributes = null, ?array $labelattributes = null)
+        {
+        }
+        /**
+         * Generates a simple select yes/no form field
+         *
+         * @param string $name name of select element
+         * @param bool $selected
+         * @param null|array $attributes - html select element attributes
+         * @return string HTML fragment
+         */
+        public static function select_yes_no($name, $selected = true, ?array $attributes = null)
+        {
+        }
+        /**
+         * Generates a simple select form field
+         *
+         * Note this function does HTML escaping on the optgroup labels, but not on the choice labels.
+         *
+         * @param array $options associative array value=>label ex.:
+         *                array(1=>'One, 2=>Two)
+         *              it is also possible to specify optgroup as complex label array ex.:
+         *                array(array('Odd'=>array(1=>'One', 3=>'Three)), array('Even'=>array(2=>'Two')))
+         *                array(1=>'One', '--1uniquekey'=>array('More'=>array(2=>'Two', 3=>'Three')))
+         * @param string $name name of select element
+         * @param string|array $selected value or array of values depending on multiple attribute
+         * @param array|bool|null $nothing add nothing selected option, or false of not added
+         * @param null|array $attributes html select element attributes
+         * @param array $disabled An array of disabled options.
+         * @return string HTML fragment
+         */
+        public static function select(array $options, $name, $selected = '', $nothing = ['' => 'choosedots'], ?array $attributes = null, array $disabled = []): string
+        {
+        }
+        /**
+         * Returns HTML to display a select box option.
+         *
+         * @param string $label The label to display as the option.
+         * @param string|int $value The value the option represents
+         * @param array $selected An array of selected options
+         * @param array $disabled An array of disabled options.
+         * @return string HTML fragment
+         */
+        private static function select_option($label, $value, array $selected, array $disabled = []): string
+        {
+        }
+        /**
+         * Returns HTML to display a select box option group.
+         *
+         * @param string $groupname The label to use for the group
+         * @param array $options The options in the group
+         * @param array $selected An array of selected values.
+         * @param array $disabled An array of disabled options.
+         * @return string HTML fragment.
+         */
+        private static function select_optgroup($groupname, $options, array $selected, array $disabled = []): string
+        {
+        }
+        /**
+         * This is a shortcut for making an hour selector menu.
+         *
+         * @param string $type The type of selector (years, months, days, hours, minutes)
+         * @param string $name fieldname
+         * @param int $currenttime A default timestamp in GMT
+         * @param int $step minute spacing
+         * @param null|array $attributes - html select element attributes
+         * @param float|int|string $timezone the timezone to use to calculate the time
+         *        {@link https://moodledev.io/docs/apis/subsystems/time#timezone}
+         * @return string HTML fragment
+         */
+        public static function select_time($type, $name, $currenttime = 0, $step = 5, ?array $attributes = null, $timezone = 99)
+        {
+        }
+        /**
+         * Shortcut for quick making of lists
+         *
+         * Note: 'list' is a reserved keyword ;-)
+         *
+         * @param array $items
+         * @param null|array $attributes
+         * @param string $tag ul or ol
+         * @return string
+         */
+        public static function alist(array $items, ?array $attributes = null, $tag = 'ul')
+        {
+        }
+        /**
+         * Returns hidden input fields created from url parameters.
+         *
+         * @param moodle_url $url
+         * @param null|array $exclude list of excluded parameters
+         * @return string HTML fragment
+         */
+        public static function input_hidden_params(moodle_url $url, ?array $exclude = null)
+        {
+        }
+        /**
+         * Generate a script tag containing the the specified code.
+         *
+         * @param string $jscode the JavaScript code
+         * @param moodle_url|string $url optional url of the external script, $code ignored if specified
+         * @return string HTML, the code wrapped in <script> tags.
+         */
+        public static function script($jscode, $url = null)
+        {
+        }
+        /**
+         * Renders HTML table
+         *
+         * This method may modify the passed instance by adding some default properties if they are not set yet.
+         * If this is not what you want, you should make a full clone of your data before passing them to this
+         * method. In most cases this is not an issue at all so we do not clone by default for performance
+         * and memory consumption reasons.
+         *
+         * @param html_table $table data to be rendered
+         * @return string HTML code
+         */
+        public static function table(html_table $table)
+        {
+        }
+        /**
+         * Renders form element label
+         *
+         * By default, the label is suffixed with a label separator defined in the
+         * current language pack (colon by default in the English lang pack).
+         * Adding the colon can be explicitly disabled if needed. Label separators
+         * are put outside the label tag itself so they are not read by
+         * screenreaders (accessibility).
+         *
+         * Parameter $for explicitly associates the label with a form control. When
+         * set, the value of this attribute must be the same as the value of
+         * the id attribute of the form control in the same document. When null,
+         * the label being defined is associated with the control inside the label
+         * element.
+         *
+         * @param string $text content of the label tag
+         * @param string|null $for id of the element this label is associated with, null for no association
+         * @param bool $colonize add label separator (colon) to the label text, if it is not there yet
+         * @param array $attributes to be inserted in the tab, for example array('accesskey' => 'a')
+         * @return string HTML of the label element
+         */
+        public static function label($text, $for, $colonize = true, array $attributes = [])
+        {
+        }
+        /**
+         * Combines a class parameter with other attributes. Aids in code reduction
+         * because the class parameter is very frequently used.
+         *
+         * If the class attribute is specified both in the attributes and in the
+         * class parameter, the two values are combined with a space between.
+         *
+         * @param string $class Optional CSS class (or classes as space-separated list)
+         * @param null|array $attributes Optional other attributes as array
+         * @return array Attributes (or null if still none)
+         */
+        private static function add_class($class = '', ?array $attributes = null)
+        {
+        }
+        /**
+         * Creates a <div> tag. (Shortcut function.)
+         *
+         * @param string $content HTML content of tag
+         * @param string $class Optional CSS class (or classes as space-separated list)
+         * @param null|array $attributes Optional other attributes as array
+         * @return string HTML code for div
+         */
+        public static function div($content, $class = '', ?array $attributes = null)
+        {
+        }
+        /**
+         * Starts a <div> tag. (Shortcut function.)
+         *
+         * @param string $class Optional CSS class (or classes as space-separated list)
+         * @param null|array $attributes Optional other attributes as array
+         * @return string HTML code for open div tag
+         */
+        public static function start_div($class = '', ?array $attributes = null)
+        {
+        }
+        /**
+         * Ends a <div> tag. (Shortcut function.)
+         *
+         * @return string HTML code for close div tag
+         */
+        public static function end_div()
+        {
+        }
+        /**
+         * Creates a <span> tag. (Shortcut function.)
+         *
+         * @param string $content HTML content of tag
+         * @param string $class Optional CSS class (or classes as space-separated list)
+         * @param null|array $attributes Optional other attributes as array
+         * @return string HTML code for span
+         */
+        public static function span($content, $class = '', ?array $attributes = null)
+        {
+        }
+        /**
+         * Starts a <span> tag. (Shortcut function.)
+         *
+         * @param string $class Optional CSS class (or classes as space-separated list)
+         * @param null|array $attributes Optional other attributes as array
+         * @return string HTML code for open span tag
+         */
+        public static function start_span($class = '', ?array $attributes = null)
+        {
+        }
+        /**
+         * Ends a <span> tag. (Shortcut function.)
+         *
+         * @return string HTML code for close span tag
+         */
+        public static function end_span()
+        {
+        }
     }
+}
+namespace {
     /**
-     * Outputs an opening tag with attributes
-     *
-     * @param string $tagname The name of tag ('a', 'img', 'span' etc.)
-     * @param null|array $attributes The tag attributes (array('src' => $url, 'class' => 'class1') etc.)
-     * @return string HTML fragment
+     * Runtime class alias of \core\output\html_writer registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public static function start_tag($tagname, ?array $attributes = null)
-    {
-    }
-    /**
-     * Outputs a closing tag
-     *
-     * @param string $tagname The name of tag ('a', 'img', 'span' etc.)
-     * @return string HTML fragment
-     */
-    public static function end_tag($tagname)
-    {
-    }
-    /**
-     * Outputs an empty tag with attributes
-     *
-     * @param string $tagname The name of tag ('input', 'img', 'br' etc.)
-     * @param null|array $attributes The tag attributes (array('src' => $url, 'class' => 'class1') etc.)
-     * @return string HTML fragment
-     */
-    public static function empty_tag($tagname, ?array $attributes = null)
-    {
-    }
-    /**
-     * Outputs a tag, but only if the contents are not empty
-     *
-     * @param string $tagname The name of tag ('a', 'img', 'span' etc.)
-     * @param string $contents What goes between the opening and closing tags
-     * @param null|array $attributes The tag attributes (array('src' => $url, 'class' => 'class1') etc.)
-     * @return string HTML fragment
-     */
-    public static function nonempty_tag($tagname, $contents, ?array $attributes = null)
-    {
-    }
-    /**
-     * Outputs a HTML attribute and value
-     *
-     * @param string $name The name of the attribute ('src', 'href', 'class' etc.)
-     * @param string $value The value of the attribute. The value will be escaped with {@see s()}
-     * @return string HTML fragment
-     */
-    public static function attribute($name, $value)
-    {
-    }
-    /**
-     * Outputs a list of HTML attributes and values
-     *
-     * @param null|array $attributes The tag attributes (array('src' => $url, 'class' => 'class1') etc.)
-     *       The values will be escaped with {@see s()}
-     * @return string HTML fragment
-     */
-    public static function attributes(?array $attributes = null)
-    {
-    }
-    /**
-     * Generates a simple image tag with attributes.
-     *
-     * @param string $src The source of image
-     * @param string $alt The alternate text for image
-     * @param null|array $attributes The tag attributes (array('height' => $max_height, 'class' => 'class1') etc.)
-     * @return string HTML fragment
-     */
-    public static function img($src, $alt, ?array $attributes = null)
-    {
-    }
-    /**
-     * Generates random html element id.
-     *
-     * @staticvar int $counter
-     * @staticvar string $uniq
-     * @param string $base A string fragment that will be included in the random ID.
-     * @return string A unique ID
-     */
-    public static function random_id($base = 'random')
-    {
-    }
-    /**
-     * Generates a simple html link
-     *
-     * @param string|moodle_url $url The URL
-     * @param string $text The text
-     * @param null|array $attributes HTML attributes
-     * @return string HTML fragment
-     */
-    public static function link($url, $text, ?array $attributes = null)
-    {
-    }
-    /**
-     * Generates a simple checkbox with optional label
-     *
-     * @param string $name The name of the checkbox
-     * @param string $value The value of the checkbox
-     * @param bool $checked Whether the checkbox is checked
-     * @param string $label The label for the checkbox
-     * @param null|array $attributes Any attributes to apply to the checkbox
-     * @param null|array $labelattributes Any attributes to apply to the label, if present
-     * @return string html fragment
-     */
-    public static function checkbox($name, $value, $checked = true, $label = '', ?array $attributes = null, ?array $labelattributes = null)
-    {
-    }
-    /**
-     * Generates a simple select yes/no form field
-     *
-     * @param string $name name of select element
-     * @param bool $selected
-     * @param null|array $attributes - html select element attributes
-     * @return string HTML fragment
-     */
-    public static function select_yes_no($name, $selected = true, ?array $attributes = null)
-    {
-    }
-    /**
-     * Generates a simple select form field
-     *
-     * Note this function does HTML escaping on the optgroup labels, but not on the choice labels.
-     *
-     * @param array $options associative array value=>label ex.:
-     *                array(1=>'One, 2=>Two)
-     *              it is also possible to specify optgroup as complex label array ex.:
-     *                array(array('Odd'=>array(1=>'One', 3=>'Three)), array('Even'=>array(2=>'Two')))
-     *                array(1=>'One', '--1uniquekey'=>array('More'=>array(2=>'Two', 3=>'Three')))
-     * @param string $name name of select element
-     * @param string|array $selected value or array of values depending on multiple attribute
-     * @param array|bool|null $nothing add nothing selected option, or false of not added
-     * @param null|array $attributes html select element attributes
-     * @param array $disabled An array of disabled options.
-     * @return string HTML fragment
-     */
-    public static function select(array $options, $name, $selected = '', $nothing = ['' => 'choosedots'], ?array $attributes = null, array $disabled = []): string
-    {
-    }
-    /**
-     * Returns HTML to display a select box option.
-     *
-     * @param string $label The label to display as the option.
-     * @param string|int $value The value the option represents
-     * @param array $selected An array of selected options
-     * @param array $disabled An array of disabled options.
-     * @return string HTML fragment
-     */
-    private static function select_option($label, $value, array $selected, array $disabled = []): string
-    {
-    }
-    /**
-     * Returns HTML to display a select box option group.
-     *
-     * @param string $groupname The label to use for the group
-     * @param array $options The options in the group
-     * @param array $selected An array of selected values.
-     * @param array $disabled An array of disabled options.
-     * @return string HTML fragment.
-     */
-    private static function select_optgroup($groupname, $options, array $selected, array $disabled = []): string
-    {
-    }
-    /**
-     * This is a shortcut for making an hour selector menu.
-     *
-     * @param string $type The type of selector (years, months, days, hours, minutes)
-     * @param string $name fieldname
-     * @param int $currenttime A default timestamp in GMT
-     * @param int $step minute spacing
-     * @param null|array $attributes - html select element attributes
-     * @param float|int|string $timezone the timezone to use to calculate the time
-     *        {@link https://moodledev.io/docs/apis/subsystems/time#timezone}
-     * @return string HTML fragment
-     */
-    public static function select_time($type, $name, $currenttime = 0, $step = 5, ?array $attributes = null, $timezone = 99)
-    {
-    }
-    /**
-     * Shortcut for quick making of lists
-     *
-     * Note: 'list' is a reserved keyword ;-)
-     *
-     * @param array $items
-     * @param null|array $attributes
-     * @param string $tag ul or ol
-     * @return string
-     */
-    public static function alist(array $items, ?array $attributes = null, $tag = 'ul')
-    {
-    }
-    /**
-     * Returns hidden input fields created from url parameters.
-     *
-     * @param moodle_url $url
-     * @param null|array $exclude list of excluded parameters
-     * @return string HTML fragment
-     */
-    public static function input_hidden_params(moodle_url $url, ?array $exclude = null)
-    {
-    }
-    /**
-     * Generate a script tag containing the the specified code.
-     *
-     * @param string $jscode the JavaScript code
-     * @param moodle_url|string $url optional url of the external script, $code ignored if specified
-     * @return string HTML, the code wrapped in <script> tags.
-     */
-    public static function script($jscode, $url = null)
-    {
-    }
-    /**
-     * Renders HTML table
-     *
-     * This method may modify the passed instance by adding some default properties if they are not set yet.
-     * If this is not what you want, you should make a full clone of your data before passing them to this
-     * method. In most cases this is not an issue at all so we do not clone by default for performance
-     * and memory consumption reasons.
-     *
-     * @param html_table $table data to be rendered
-     * @return string HTML code
-     */
-    public static function table(html_table $table)
-    {
-    }
-    /**
-     * Renders form element label
-     *
-     * By default, the label is suffixed with a label separator defined in the
-     * current language pack (colon by default in the English lang pack).
-     * Adding the colon can be explicitly disabled if needed. Label separators
-     * are put outside the label tag itself so they are not read by
-     * screenreaders (accessibility).
-     *
-     * Parameter $for explicitly associates the label with a form control. When
-     * set, the value of this attribute must be the same as the value of
-     * the id attribute of the form control in the same document. When null,
-     * the label being defined is associated with the control inside the label
-     * element.
-     *
-     * @param string $text content of the label tag
-     * @param string|null $for id of the element this label is associated with, null for no association
-     * @param bool $colonize add label separator (colon) to the label text, if it is not there yet
-     * @param array $attributes to be inserted in the tab, for example array('accesskey' => 'a')
-     * @return string HTML of the label element
-     */
-    public static function label($text, $for, $colonize = true, array $attributes = [])
-    {
-    }
-    /**
-     * Combines a class parameter with other attributes. Aids in code reduction
-     * because the class parameter is very frequently used.
-     *
-     * If the class attribute is specified both in the attributes and in the
-     * class parameter, the two values are combined with a space between.
-     *
-     * @param string $class Optional CSS class (or classes as space-separated list)
-     * @param null|array $attributes Optional other attributes as array
-     * @return array Attributes (or null if still none)
-     */
-    private static function add_class($class = '', ?array $attributes = null)
-    {
-    }
-    /**
-     * Creates a <div> tag. (Shortcut function.)
-     *
-     * @param string $content HTML content of tag
-     * @param string $class Optional CSS class (or classes as space-separated list)
-     * @param null|array $attributes Optional other attributes as array
-     * @return string HTML code for div
-     */
-    public static function div($content, $class = '', ?array $attributes = null)
-    {
-    }
-    /**
-     * Starts a <div> tag. (Shortcut function.)
-     *
-     * @param string $class Optional CSS class (or classes as space-separated list)
-     * @param null|array $attributes Optional other attributes as array
-     * @return string HTML code for open div tag
-     */
-    public static function start_div($class = '', ?array $attributes = null)
-    {
-    }
-    /**
-     * Ends a <div> tag. (Shortcut function.)
-     *
-     * @return string HTML code for close div tag
-     */
-    public static function end_div()
-    {
-    }
-    /**
-     * Creates a <span> tag. (Shortcut function.)
-     *
-     * @param string $content HTML content of tag
-     * @param string $class Optional CSS class (or classes as space-separated list)
-     * @param null|array $attributes Optional other attributes as array
-     * @return string HTML code for span
-     */
-    public static function span($content, $class = '', ?array $attributes = null)
-    {
-    }
-    /**
-     * Starts a <span> tag. (Shortcut function.)
-     *
-     * @param string $class Optional CSS class (or classes as space-separated list)
-     * @param null|array $attributes Optional other attributes as array
-     * @return string HTML code for open span tag
-     */
-    public static function start_span($class = '', ?array $attributes = null)
-    {
-    }
-    /**
-     * Ends a <span> tag. (Shortcut function.)
-     *
-     * @return string HTML code for close span tag
-     */
-    public static function end_span()
+    class html_writer extends \core\output\html_writer
     {
     }
 }

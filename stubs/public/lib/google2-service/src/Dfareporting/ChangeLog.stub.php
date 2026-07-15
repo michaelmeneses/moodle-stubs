@@ -21,292 +21,301 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class ChangeLog extends \Google\Model
-{
-    /**
-     * Account ID of the modified object.
-     *
-     * @var string
-     */
-    public $accountId;
-    /**
-     * Action which caused the change.
-     *
-     * @var string
-     */
-    public $action;
-    /**
-     * @var string
-     */
-    public $changeTime;
-    /**
-     * Field name of the object which changed.
-     *
-     * @var string
-     */
-    public $fieldName;
-    /**
-     * ID of this change log.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#changeLog".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * New value of the object field.
-     *
-     * @var string
-     */
-    public $newValue;
-    /**
-     * ID of the object of this change log. The object could be a campaign,
-     * placement, ad, or other type.
-     *
-     * @var string
-     */
-    public $objectId;
-    /**
-     * Object type of the change log.
-     *
-     * @var string
-     */
-    public $objectType;
-    /**
-     * Old value of the object field.
-     *
-     * @var string
-     */
-    public $oldValue;
-    /**
-     * Subaccount ID of the modified object.
-     *
-     * @var string
-     */
-    public $subaccountId;
-    /**
-     * Transaction ID of this change log. When a single API call results in many
-     * changes, each change will have a separate ID in the change log but will
-     * share the same transactionId.
-     *
-     * @var string
-     */
-    public $transactionId;
-    /**
-     * ID of the user who modified the object.
-     *
-     * @var string
-     */
-    public $userProfileId;
-    /**
-     * User profile name of the user who modified the object.
-     *
-     * @var string
-     */
-    public $userProfileName;
-    /**
-     * Account ID of the modified object.
-     *
-     * @param string $accountId
-     */
-    public function setAccountId($accountId)
+namespace Google\Service\Dfareporting {
+    class ChangeLog extends \Google\Model
     {
+        /**
+         * Account ID of the modified object.
+         *
+         * @var string
+         */
+        public $accountId;
+        /**
+         * Action which caused the change.
+         *
+         * @var string
+         */
+        public $action;
+        /**
+         * @var string
+         */
+        public $changeTime;
+        /**
+         * Field name of the object which changed.
+         *
+         * @var string
+         */
+        public $fieldName;
+        /**
+         * ID of this change log.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#changeLog".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * New value of the object field.
+         *
+         * @var string
+         */
+        public $newValue;
+        /**
+         * ID of the object of this change log. The object could be a campaign,
+         * placement, ad, or other type.
+         *
+         * @var string
+         */
+        public $objectId;
+        /**
+         * Object type of the change log.
+         *
+         * @var string
+         */
+        public $objectType;
+        /**
+         * Old value of the object field.
+         *
+         * @var string
+         */
+        public $oldValue;
+        /**
+         * Subaccount ID of the modified object.
+         *
+         * @var string
+         */
+        public $subaccountId;
+        /**
+         * Transaction ID of this change log. When a single API call results in many
+         * changes, each change will have a separate ID in the change log but will
+         * share the same transactionId.
+         *
+         * @var string
+         */
+        public $transactionId;
+        /**
+         * ID of the user who modified the object.
+         *
+         * @var string
+         */
+        public $userProfileId;
+        /**
+         * User profile name of the user who modified the object.
+         *
+         * @var string
+         */
+        public $userProfileName;
+        /**
+         * Account ID of the modified object.
+         *
+         * @param string $accountId
+         */
+        public function setAccountId($accountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccountId()
+        {
+        }
+        /**
+         * Action which caused the change.
+         *
+         * @param string $action
+         */
+        public function setAction($action)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAction()
+        {
+        }
+        /**
+         * @param string $changeTime
+         */
+        public function setChangeTime($changeTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChangeTime()
+        {
+        }
+        /**
+         * Field name of the object which changed.
+         *
+         * @param string $fieldName
+         */
+        public function setFieldName($fieldName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFieldName()
+        {
+        }
+        /**
+         * ID of this change log.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#changeLog".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * New value of the object field.
+         *
+         * @param string $newValue
+         */
+        public function setNewValue($newValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNewValue()
+        {
+        }
+        /**
+         * ID of the object of this change log. The object could be a campaign,
+         * placement, ad, or other type.
+         *
+         * @param string $objectId
+         */
+        public function setObjectId($objectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectId()
+        {
+        }
+        /**
+         * Object type of the change log.
+         *
+         * @param string $objectType
+         */
+        public function setObjectType($objectType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectType()
+        {
+        }
+        /**
+         * Old value of the object field.
+         *
+         * @param string $oldValue
+         */
+        public function setOldValue($oldValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOldValue()
+        {
+        }
+        /**
+         * Subaccount ID of the modified object.
+         *
+         * @param string $subaccountId
+         */
+        public function setSubaccountId($subaccountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubaccountId()
+        {
+        }
+        /**
+         * Transaction ID of this change log. When a single API call results in many
+         * changes, each change will have a separate ID in the change log but will
+         * share the same transactionId.
+         *
+         * @param string $transactionId
+         */
+        public function setTransactionId($transactionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTransactionId()
+        {
+        }
+        /**
+         * ID of the user who modified the object.
+         *
+         * @param string $userProfileId
+         */
+        public function setUserProfileId($userProfileId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserProfileId()
+        {
+        }
+        /**
+         * User profile name of the user who modified the object.
+         *
+         * @param string $userProfileName
+         */
+        public function setUserProfileName($userProfileName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserProfileName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\ChangeLog registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountId()
-    {
-    }
-    /**
-     * Action which caused the change.
-     *
-     * @param string $action
-     */
-    public function setAction($action)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAction()
-    {
-    }
-    /**
-     * @param string $changeTime
-     */
-    public function setChangeTime($changeTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getChangeTime()
-    {
-    }
-    /**
-     * Field name of the object which changed.
-     *
-     * @param string $fieldName
-     */
-    public function setFieldName($fieldName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFieldName()
-    {
-    }
-    /**
-     * ID of this change log.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#changeLog".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * New value of the object field.
-     *
-     * @param string $newValue
-     */
-    public function setNewValue($newValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNewValue()
-    {
-    }
-    /**
-     * ID of the object of this change log. The object could be a campaign,
-     * placement, ad, or other type.
-     *
-     * @param string $objectId
-     */
-    public function setObjectId($objectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObjectId()
-    {
-    }
-    /**
-     * Object type of the change log.
-     *
-     * @param string $objectType
-     */
-    public function setObjectType($objectType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObjectType()
-    {
-    }
-    /**
-     * Old value of the object field.
-     *
-     * @param string $oldValue
-     */
-    public function setOldValue($oldValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOldValue()
-    {
-    }
-    /**
-     * Subaccount ID of the modified object.
-     *
-     * @param string $subaccountId
-     */
-    public function setSubaccountId($subaccountId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubaccountId()
-    {
-    }
-    /**
-     * Transaction ID of this change log. When a single API call results in many
-     * changes, each change will have a separate ID in the change log but will
-     * share the same transactionId.
-     *
-     * @param string $transactionId
-     */
-    public function setTransactionId($transactionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTransactionId()
-    {
-    }
-    /**
-     * ID of the user who modified the object.
-     *
-     * @param string $userProfileId
-     */
-    public function setUserProfileId($userProfileId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserProfileId()
-    {
-    }
-    /**
-     * User profile name of the user who modified the object.
-     *
-     * @param string $userProfileName
-     */
-    public function setUserProfileName($userProfileName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserProfileName()
+    class Google_Service_Dfareporting_ChangeLog extends \Google\Service\Dfareporting\ChangeLog
     {
     }
 }

@@ -21,85 +21,94 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class ReportSummaryComputeEngineFinding extends \Google\Collection
-{
-    protected $collection_key = 'machineSeriesAllocations';
-    /**
-     * Count of assets which were allocated.
-     *
-     * @var string
-     */
-    public $allocatedAssetCount;
-    /**
-     * Set of disk types allocated to assets.
-     *
-     * @var string[]
-     */
-    public $allocatedDiskTypes;
-    /**
-     * Set of regions in which the assets were allocated.
-     *
-     * @var string[]
-     */
-    public $allocatedRegions;
-    protected $machineSeriesAllocationsType = ReportSummaryMachineSeriesAllocation::class;
-    protected $machineSeriesAllocationsDataType = 'array';
-    /**
-     * Count of assets which were allocated.
-     *
-     * @param string $allocatedAssetCount
-     */
-    public function setAllocatedAssetCount($allocatedAssetCount)
+namespace Google\Service\MigrationCenterAPI {
+    class ReportSummaryComputeEngineFinding extends \Google\Collection
     {
+        protected $collection_key = 'machineSeriesAllocations';
+        /**
+         * Count of assets which were allocated.
+         *
+         * @var string
+         */
+        public $allocatedAssetCount;
+        /**
+         * Set of disk types allocated to assets.
+         *
+         * @var string[]
+         */
+        public $allocatedDiskTypes;
+        /**
+         * Set of regions in which the assets were allocated.
+         *
+         * @var string[]
+         */
+        public $allocatedRegions;
+        protected $machineSeriesAllocationsType = ReportSummaryMachineSeriesAllocation::class;
+        protected $machineSeriesAllocationsDataType = 'array';
+        /**
+         * Count of assets which were allocated.
+         *
+         * @param string $allocatedAssetCount
+         */
+        public function setAllocatedAssetCount($allocatedAssetCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAllocatedAssetCount()
+        {
+        }
+        /**
+         * Set of disk types allocated to assets.
+         *
+         * @param string[] $allocatedDiskTypes
+         */
+        public function setAllocatedDiskTypes($allocatedDiskTypes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAllocatedDiskTypes()
+        {
+        }
+        /**
+         * Set of regions in which the assets were allocated.
+         *
+         * @param string[] $allocatedRegions
+         */
+        public function setAllocatedRegions($allocatedRegions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAllocatedRegions()
+        {
+        }
+        /**
+         * Distribution of assets based on the Machine Series.
+         *
+         * @param ReportSummaryMachineSeriesAllocation[] $machineSeriesAllocations
+         */
+        public function setMachineSeriesAllocations($machineSeriesAllocations)
+        {
+        }
+        /**
+         * @return ReportSummaryMachineSeriesAllocation[]
+         */
+        public function getMachineSeriesAllocations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\ReportSummaryComputeEngineFinding registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllocatedAssetCount()
-    {
-    }
-    /**
-     * Set of disk types allocated to assets.
-     *
-     * @param string[] $allocatedDiskTypes
-     */
-    public function setAllocatedDiskTypes($allocatedDiskTypes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getAllocatedDiskTypes()
-    {
-    }
-    /**
-     * Set of regions in which the assets were allocated.
-     *
-     * @param string[] $allocatedRegions
-     */
-    public function setAllocatedRegions($allocatedRegions)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getAllocatedRegions()
-    {
-    }
-    /**
-     * Distribution of assets based on the Machine Series.
-     *
-     * @param ReportSummaryMachineSeriesAllocation[] $machineSeriesAllocations
-     */
-    public function setMachineSeriesAllocations($machineSeriesAllocations)
-    {
-    }
-    /**
-     * @return ReportSummaryMachineSeriesAllocation[]
-     */
-    public function getMachineSeriesAllocations()
+    class Google_Service_MigrationCenterAPI_ReportSummaryComputeEngineFinding extends \Google\Service\MigrationCenterAPI\ReportSummaryComputeEngineFinding
     {
     }
 }

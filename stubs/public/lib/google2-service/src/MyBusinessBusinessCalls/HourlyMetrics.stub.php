@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessBusinessCalls;
-
-class HourlyMetrics extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $hour;
-    /**
-     * @var int
-     */
-    public $missedCallsCount;
-    /**
-     * @param int
-     */
-    public function setHour($hour)
+namespace Google\Service\MyBusinessBusinessCalls {
+    class HourlyMetrics extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $hour;
+        /**
+         * @var int
+         */
+        public $missedCallsCount;
+        /**
+         * @param int
+         */
+        public function setHour($hour)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getHour()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setMissedCallsCount($missedCallsCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMissedCallsCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\MyBusinessBusinessCalls\HourlyMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHour()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setMissedCallsCount($missedCallsCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMissedCallsCount()
+    class Google_Service_MyBusinessBusinessCalls_HourlyMetrics extends \Google\Service\MyBusinessBusinessCalls\HourlyMetrics
     {
     }
 }

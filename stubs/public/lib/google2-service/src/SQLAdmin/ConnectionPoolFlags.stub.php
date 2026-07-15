@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class ConnectionPoolFlags extends \Google\Model
-{
-    /**
-     * Required. The name of the flag.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. The value of the flag. Boolean flags are set to `on` for true and
-     * `off` for false. This field must be omitted if the flag doesn't take a
-     * value.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Required. The name of the flag.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\SQLAdmin {
+    class ConnectionPoolFlags extends \Google\Model
     {
+        /**
+         * Required. The name of the flag.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. The value of the flag. Boolean flags are set to `on` for true and
+         * `off` for false. This field must be omitted if the flag doesn't take a
+         * value.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Required. The name of the flag.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Required. The value of the flag. Boolean flags are set to `on` for true and
+         * `off` for false. This field must be omitted if the flag doesn't take a
+         * value.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SQLAdmin\ConnectionPoolFlags registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Required. The value of the flag. Boolean flags are set to `on` for true and
-     * `off` for false. This field must be omitted if the flag doesn't take a
-     * value.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_SQLAdmin_ConnectionPoolFlags extends \Google\Service\SQLAdmin\ConnectionPoolFlags
     {
     }
 }

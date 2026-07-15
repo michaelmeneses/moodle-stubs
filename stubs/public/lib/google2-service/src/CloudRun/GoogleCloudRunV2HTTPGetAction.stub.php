@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleCloudRunV2HTTPGetAction extends \Google\Collection
-{
-    protected $collection_key = 'httpHeaders';
-    protected $httpHeadersType = GoogleCloudRunV2HTTPHeader::class;
-    protected $httpHeadersDataType = 'array';
-    /**
-     * Optional. Path to access on the HTTP server. Defaults to '/'.
-     *
-     * @var string
-     */
-    public $path;
-    /**
-     * Optional. Port number to access on the container. Must be in the range 1 to
-     * 65535. If not specified, defaults to the exposed port of the container,
-     * which is the value of container.ports[0].containerPort.
-     *
-     * @var int
-     */
-    public $port;
-    /**
-     * Optional. Custom headers to set in the request. HTTP allows repeated
-     * headers.
-     *
-     * @param GoogleCloudRunV2HTTPHeader[] $httpHeaders
-     */
-    public function setHttpHeaders($httpHeaders)
+namespace Google\Service\CloudRun {
+    class GoogleCloudRunV2HTTPGetAction extends \Google\Collection
     {
+        protected $collection_key = 'httpHeaders';
+        protected $httpHeadersType = GoogleCloudRunV2HTTPHeader::class;
+        protected $httpHeadersDataType = 'array';
+        /**
+         * Optional. Path to access on the HTTP server. Defaults to '/'.
+         *
+         * @var string
+         */
+        public $path;
+        /**
+         * Optional. Port number to access on the container. Must be in the range 1 to
+         * 65535. If not specified, defaults to the exposed port of the container,
+         * which is the value of container.ports[0].containerPort.
+         *
+         * @var int
+         */
+        public $port;
+        /**
+         * Optional. Custom headers to set in the request. HTTP allows repeated
+         * headers.
+         *
+         * @param GoogleCloudRunV2HTTPHeader[] $httpHeaders
+         */
+        public function setHttpHeaders($httpHeaders)
+        {
+        }
+        /**
+         * @return GoogleCloudRunV2HTTPHeader[]
+         */
+        public function getHttpHeaders()
+        {
+        }
+        /**
+         * Optional. Path to access on the HTTP server. Defaults to '/'.
+         *
+         * @param string $path
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
+        /**
+         * Optional. Port number to access on the container. Must be in the range 1 to
+         * 65535. If not specified, defaults to the exposed port of the container,
+         * which is the value of container.ports[0].containerPort.
+         *
+         * @param int $port
+         */
+        public function setPort($port)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPort()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRunV2HTTPHeader[]
+     * Runtime class alias of \Google\Service\CloudRun\GoogleCloudRunV2HTTPGetAction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHttpHeaders()
-    {
-    }
-    /**
-     * Optional. Path to access on the HTTP server. Defaults to '/'.
-     *
-     * @param string $path
-     */
-    public function setPath($path)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPath()
-    {
-    }
-    /**
-     * Optional. Port number to access on the container. Must be in the range 1 to
-     * 65535. If not specified, defaults to the exposed port of the container,
-     * which is the value of container.ports[0].containerPort.
-     *
-     * @param int $port
-     */
-    public function setPort($port)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPort()
+    class Google_Service_CloudRun_GoogleCloudRunV2HTTPGetAction extends \Google\Service\CloudRun\GoogleCloudRunV2HTTPGetAction
     {
     }
 }

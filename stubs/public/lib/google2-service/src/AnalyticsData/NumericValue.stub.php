@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsData;
-
-class NumericValue extends \Google\Model
-{
-    /**
-     * Double value
-     *
-     * @var 
-     */
-    public $doubleValue;
-    /**
-     * Integer value
-     *
-     * @var string
-     */
-    public $int64Value;
-    public function setDoubleValue($doubleValue)
+namespace Google\Service\AnalyticsData {
+    class NumericValue extends \Google\Model
     {
+        /**
+         * Double value
+         *
+         * @var 
+         */
+        public $doubleValue;
+        /**
+         * Integer value
+         *
+         * @var string
+         */
+        public $int64Value;
+        public function setDoubleValue($doubleValue)
+        {
+        }
+        public function getDoubleValue()
+        {
+        }
+        /**
+         * Integer value
+         *
+         * @param string $int64Value
+         */
+        public function setInt64Value($int64Value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInt64Value()
+        {
+        }
     }
-    public function getDoubleValue()
-    {
-    }
+}
+namespace {
     /**
-     * Integer value
-     *
-     * @param string $int64Value
+     * Runtime class alias of \Google\Service\AnalyticsData\NumericValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setInt64Value($int64Value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInt64Value()
+    class Google_Service_AnalyticsData_NumericValue extends \Google\Service\AnalyticsData\NumericValue
     {
     }
 }

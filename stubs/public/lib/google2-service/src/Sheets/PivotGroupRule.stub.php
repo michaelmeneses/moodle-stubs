@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class PivotGroupRule extends \Google\Model
-{
-    protected $dateTimeRuleType = DateTimeRule::class;
-    protected $dateTimeRuleDataType = '';
-    protected $histogramRuleType = HistogramRule::class;
-    protected $histogramRuleDataType = '';
-    protected $manualRuleType = ManualRule::class;
-    protected $manualRuleDataType = '';
-    /**
-     * A DateTimeRule.
-     *
-     * @param DateTimeRule $dateTimeRule
-     */
-    public function setDateTimeRule(DateTimeRule $dateTimeRule)
+namespace Google\Service\Sheets {
+    class PivotGroupRule extends \Google\Model
     {
+        protected $dateTimeRuleType = DateTimeRule::class;
+        protected $dateTimeRuleDataType = '';
+        protected $histogramRuleType = HistogramRule::class;
+        protected $histogramRuleDataType = '';
+        protected $manualRuleType = ManualRule::class;
+        protected $manualRuleDataType = '';
+        /**
+         * A DateTimeRule.
+         *
+         * @param DateTimeRule $dateTimeRule
+         */
+        public function setDateTimeRule(DateTimeRule $dateTimeRule)
+        {
+        }
+        /**
+         * @return DateTimeRule
+         */
+        public function getDateTimeRule()
+        {
+        }
+        /**
+         * A HistogramRule.
+         *
+         * @param HistogramRule $histogramRule
+         */
+        public function setHistogramRule(HistogramRule $histogramRule)
+        {
+        }
+        /**
+         * @return HistogramRule
+         */
+        public function getHistogramRule()
+        {
+        }
+        /**
+         * A ManualRule.
+         *
+         * @param ManualRule $manualRule
+         */
+        public function setManualRule(ManualRule $manualRule)
+        {
+        }
+        /**
+         * @return ManualRule
+         */
+        public function getManualRule()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DateTimeRule
+     * Runtime class alias of \Google\Service\Sheets\PivotGroupRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDateTimeRule()
-    {
-    }
-    /**
-     * A HistogramRule.
-     *
-     * @param HistogramRule $histogramRule
-     */
-    public function setHistogramRule(HistogramRule $histogramRule)
-    {
-    }
-    /**
-     * @return HistogramRule
-     */
-    public function getHistogramRule()
-    {
-    }
-    /**
-     * A ManualRule.
-     *
-     * @param ManualRule $manualRule
-     */
-    public function setManualRule(ManualRule $manualRule)
-    {
-    }
-    /**
-     * @return ManualRule
-     */
-    public function getManualRule()
+    class Google_Service_Sheets_PivotGroupRule extends \Google\Service\Sheets\PivotGroupRule
     {
     }
 }

@@ -29,6 +29,8 @@
  */
 namespace tool_lpmigrate\output;
 
+use plugin_renderer_base;
+use renderable;
 /**
  * Renderer class.
  *

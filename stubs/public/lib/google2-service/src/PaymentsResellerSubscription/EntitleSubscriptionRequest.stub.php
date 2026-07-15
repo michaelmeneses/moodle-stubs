@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PaymentsResellerSubscription;
-
-class EntitleSubscriptionRequest extends \Google\Collection
-{
-    protected $collection_key = 'lineItemEntitlementDetails';
-    protected $lineItemEntitlementDetailsType = EntitleSubscriptionRequestLineItemEntitlementDetails::class;
-    protected $lineItemEntitlementDetailsDataType = 'array';
-    /**
-     * Optional. The line items to be entitled. If unspecified, all line items
-     * will be entitled.
-     *
-     * @param EntitleSubscriptionRequestLineItemEntitlementDetails[] $lineItemEntitlementDetails
-     */
-    public function setLineItemEntitlementDetails($lineItemEntitlementDetails)
+namespace Google\Service\PaymentsResellerSubscription {
+    class EntitleSubscriptionRequest extends \Google\Collection
     {
+        protected $collection_key = 'lineItemEntitlementDetails';
+        protected $lineItemEntitlementDetailsType = EntitleSubscriptionRequestLineItemEntitlementDetails::class;
+        protected $lineItemEntitlementDetailsDataType = 'array';
+        /**
+         * Optional. The line items to be entitled. If unspecified, all line items
+         * will be entitled.
+         *
+         * @param EntitleSubscriptionRequestLineItemEntitlementDetails[] $lineItemEntitlementDetails
+         */
+        public function setLineItemEntitlementDetails($lineItemEntitlementDetails)
+        {
+        }
+        /**
+         * @return EntitleSubscriptionRequestLineItemEntitlementDetails[]
+         */
+        public function getLineItemEntitlementDetails()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EntitleSubscriptionRequestLineItemEntitlementDetails[]
+     * Runtime class alias of \Google\Service\PaymentsResellerSubscription\EntitleSubscriptionRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLineItemEntitlementDetails()
+    class Google_Service_PaymentsResellerSubscription_EntitleSubscriptionRequest extends \Google\Service\PaymentsResellerSubscription\EntitleSubscriptionRequest
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecommendationsAI;
-
-class GoogleCloudRecommendationengineV1beta1PurgeUserEventsMetadata extends \Google\Model
-{
-    /**
-     * Operation create time.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * The ID of the request / operation.
-     *
-     * @var string
-     */
-    public $operationName;
-    /**
-     * Operation create time.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\RecommendationsAI {
+    class GoogleCloudRecommendationengineV1beta1PurgeUserEventsMetadata extends \Google\Model
     {
+        /**
+         * Operation create time.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * The ID of the request / operation.
+         *
+         * @var string
+         */
+        public $operationName;
+        /**
+         * Operation create time.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * The ID of the request / operation.
+         *
+         * @param string $operationName
+         */
+        public function setOperationName($operationName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOperationName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1PurgeUserEventsMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * The ID of the request / operation.
-     *
-     * @param string $operationName
-     */
-    public function setOperationName($operationName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOperationName()
+    class Google_Service_RecommendationsAI_GoogleCloudRecommendationengineV1beta1PurgeUserEventsMetadata extends \Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1PurgeUserEventsMetadata
     {
     }
 }

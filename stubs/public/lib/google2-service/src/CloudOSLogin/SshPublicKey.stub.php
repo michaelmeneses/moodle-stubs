@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudOSLogin;
-
-class SshPublicKey extends \Google\Model
-{
-    /**
-     * An expiration time in microseconds since epoch.
-     *
-     * @var string
-     */
-    public $expirationTimeUsec;
-    /**
-     * Output only. The SHA-256 fingerprint of the SSH public key.
-     *
-     * @var string
-     */
-    public $fingerprint;
-    /**
-     * Required. Public key text in SSH format, defined by
-     * [RFC4253](https://www.ietf.org/rfc/rfc4253.txt) section 6.6.
-     *
-     * @var string
-     */
-    public $key;
-    /**
-     * Output only. The canonical resource name.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * An expiration time in microseconds since epoch.
-     *
-     * @param string $expirationTimeUsec
-     */
-    public function setExpirationTimeUsec($expirationTimeUsec)
+namespace Google\Service\CloudOSLogin {
+    class SshPublicKey extends \Google\Model
     {
+        /**
+         * An expiration time in microseconds since epoch.
+         *
+         * @var string
+         */
+        public $expirationTimeUsec;
+        /**
+         * Output only. The SHA-256 fingerprint of the SSH public key.
+         *
+         * @var string
+         */
+        public $fingerprint;
+        /**
+         * Required. Public key text in SSH format, defined by
+         * [RFC4253](https://www.ietf.org/rfc/rfc4253.txt) section 6.6.
+         *
+         * @var string
+         */
+        public $key;
+        /**
+         * Output only. The canonical resource name.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * An expiration time in microseconds since epoch.
+         *
+         * @param string $expirationTimeUsec
+         */
+        public function setExpirationTimeUsec($expirationTimeUsec)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpirationTimeUsec()
+        {
+        }
+        /**
+         * Output only. The SHA-256 fingerprint of the SSH public key.
+         *
+         * @param string $fingerprint
+         */
+        public function setFingerprint($fingerprint)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFingerprint()
+        {
+        }
+        /**
+         * Required. Public key text in SSH format, defined by
+         * [RFC4253](https://www.ietf.org/rfc/rfc4253.txt) section 6.6.
+         *
+         * @param string $key
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * Output only. The canonical resource name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudOSLogin\SshPublicKey registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExpirationTimeUsec()
-    {
-    }
-    /**
-     * Output only. The SHA-256 fingerprint of the SSH public key.
-     *
-     * @param string $fingerprint
-     */
-    public function setFingerprint($fingerprint)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFingerprint()
-    {
-    }
-    /**
-     * Required. Public key text in SSH format, defined by
-     * [RFC4253](https://www.ietf.org/rfc/rfc4253.txt) section 6.6.
-     *
-     * @param string $key
-     */
-    public function setKey($key)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKey()
-    {
-    }
-    /**
-     * Output only. The canonical resource name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_CloudOSLogin_SshPublicKey extends \Google\Service\CloudOSLogin\SshPublicKey
     {
     }
 }

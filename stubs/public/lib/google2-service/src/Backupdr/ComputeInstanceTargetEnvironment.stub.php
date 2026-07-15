@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Backupdr;
-
-class ComputeInstanceTargetEnvironment extends \Google\Model
-{
-    /**
-     * Required. Target project for the Compute Engine instance.
-     *
-     * @var string
-     */
-    public $project;
-    /**
-     * Required. The zone of the Compute Engine instance.
-     *
-     * @var string
-     */
-    public $zone;
-    /**
-     * Required. Target project for the Compute Engine instance.
-     *
-     * @param string $project
-     */
-    public function setProject($project)
+namespace Google\Service\Backupdr {
+    class ComputeInstanceTargetEnvironment extends \Google\Model
     {
+        /**
+         * Required. Target project for the Compute Engine instance.
+         *
+         * @var string
+         */
+        public $project;
+        /**
+         * Required. The zone of the Compute Engine instance.
+         *
+         * @var string
+         */
+        public $zone;
+        /**
+         * Required. Target project for the Compute Engine instance.
+         *
+         * @param string $project
+         */
+        public function setProject($project)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProject()
+        {
+        }
+        /**
+         * Required. The zone of the Compute Engine instance.
+         *
+         * @param string $zone
+         */
+        public function setZone($zone)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getZone()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Backupdr\ComputeInstanceTargetEnvironment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProject()
-    {
-    }
-    /**
-     * Required. The zone of the Compute Engine instance.
-     *
-     * @param string $zone
-     */
-    public function setZone($zone)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getZone()
+    class Google_Service_Backupdr_ComputeInstanceTargetEnvironment extends \Google\Service\Backupdr\ComputeInstanceTargetEnvironment
     {
     }
 }

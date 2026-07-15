@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1NoteConversationTurnNote extends \Google\Model
-{
-    /**
-     * The conversation turn index that the note is associated with.
-     *
-     * @var int
-     */
-    public $turnIndex;
-    /**
-     * The conversation turn index that the note is associated with.
-     *
-     * @param int $turnIndex
-     */
-    public function setTurnIndex($turnIndex)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1NoteConversationTurnNote extends \Google\Model
     {
+        /**
+         * The conversation turn index that the note is associated with.
+         *
+         * @var int
+         */
+        public $turnIndex;
+        /**
+         * The conversation turn index that the note is associated with.
+         *
+         * @param int $turnIndex
+         */
+        public function setTurnIndex($turnIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTurnIndex()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1NoteConversationTurnNote registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTurnIndex()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1NoteConversationTurnNote extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1NoteConversationTurnNote
     {
     }
 }

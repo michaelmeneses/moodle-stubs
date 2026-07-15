@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastore;
-
-class ReserveIdsResponse extends \Google\Model
-{
+namespace Google\Service\Datastore {
+    class ReserveIdsResponse extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Datastore\ReserveIdsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Datastore_ReserveIdsResponse extends \Google\Service\Datastore\ReserveIdsResponse
+    {
+    }
 }

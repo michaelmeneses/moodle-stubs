@@ -21,112 +21,121 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class StudyMetrics extends \Google\Model
-{
-    /**
-     * Total blob storage bytes for all instances in the study.
-     *
-     * @var string
-     */
-    public $blobStorageSizeBytes;
-    /**
-     * Number of instances in the study.
-     *
-     * @var string
-     */
-    public $instanceCount;
-    /**
-     * Number of series in the study.
-     *
-     * @var string
-     */
-    public $seriesCount;
-    /**
-     * Total structured storage bytes for all instances in the study.
-     *
-     * @var string
-     */
-    public $structuredStorageSizeBytes;
-    /**
-     * The study resource path. For example, `projects/{project_id}/locations/{loc
-     * ation_id}/datasets/{dataset_id}/dicomStores/{dicom_store_id}/dicomWeb/studi
-     * es/{study_uid}`.
-     *
-     * @var string
-     */
-    public $study;
-    /**
-     * Total blob storage bytes for all instances in the study.
-     *
-     * @param string $blobStorageSizeBytes
-     */
-    public function setBlobStorageSizeBytes($blobStorageSizeBytes)
+namespace Google\Service\CloudHealthcare {
+    class StudyMetrics extends \Google\Model
     {
+        /**
+         * Total blob storage bytes for all instances in the study.
+         *
+         * @var string
+         */
+        public $blobStorageSizeBytes;
+        /**
+         * Number of instances in the study.
+         *
+         * @var string
+         */
+        public $instanceCount;
+        /**
+         * Number of series in the study.
+         *
+         * @var string
+         */
+        public $seriesCount;
+        /**
+         * Total structured storage bytes for all instances in the study.
+         *
+         * @var string
+         */
+        public $structuredStorageSizeBytes;
+        /**
+         * The study resource path. For example, `projects/{project_id}/locations/{loc
+         * ation_id}/datasets/{dataset_id}/dicomStores/{dicom_store_id}/dicomWeb/studi
+         * es/{study_uid}`.
+         *
+         * @var string
+         */
+        public $study;
+        /**
+         * Total blob storage bytes for all instances in the study.
+         *
+         * @param string $blobStorageSizeBytes
+         */
+        public function setBlobStorageSizeBytes($blobStorageSizeBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBlobStorageSizeBytes()
+        {
+        }
+        /**
+         * Number of instances in the study.
+         *
+         * @param string $instanceCount
+         */
+        public function setInstanceCount($instanceCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstanceCount()
+        {
+        }
+        /**
+         * Number of series in the study.
+         *
+         * @param string $seriesCount
+         */
+        public function setSeriesCount($seriesCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSeriesCount()
+        {
+        }
+        /**
+         * Total structured storage bytes for all instances in the study.
+         *
+         * @param string $structuredStorageSizeBytes
+         */
+        public function setStructuredStorageSizeBytes($structuredStorageSizeBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStructuredStorageSizeBytes()
+        {
+        }
+        /**
+         * The study resource path. For example, `projects/{project_id}/locations/{loc
+         * ation_id}/datasets/{dataset_id}/dicomStores/{dicom_store_id}/dicomWeb/studi
+         * es/{study_uid}`.
+         *
+         * @param string $study
+         */
+        public function setStudy($study)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStudy()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudHealthcare\StudyMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBlobStorageSizeBytes()
-    {
-    }
-    /**
-     * Number of instances in the study.
-     *
-     * @param string $instanceCount
-     */
-    public function setInstanceCount($instanceCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInstanceCount()
-    {
-    }
-    /**
-     * Number of series in the study.
-     *
-     * @param string $seriesCount
-     */
-    public function setSeriesCount($seriesCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSeriesCount()
-    {
-    }
-    /**
-     * Total structured storage bytes for all instances in the study.
-     *
-     * @param string $structuredStorageSizeBytes
-     */
-    public function setStructuredStorageSizeBytes($structuredStorageSizeBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStructuredStorageSizeBytes()
-    {
-    }
-    /**
-     * The study resource path. For example, `projects/{project_id}/locations/{loc
-     * ation_id}/datasets/{dataset_id}/dicomStores/{dicom_store_id}/dicomWeb/studi
-     * es/{study_uid}`.
-     *
-     * @param string $study
-     */
-    public function setStudy($study)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStudy()
+    class Google_Service_CloudHealthcare_StudyMetrics extends \Google\Service\CloudHealthcare\StudyMetrics
     {
     }
 }

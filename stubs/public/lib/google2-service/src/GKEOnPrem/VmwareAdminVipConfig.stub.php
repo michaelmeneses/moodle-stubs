@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class VmwareAdminVipConfig extends \Google\Model
-{
-    /**
-     * The VIP to configure the load balancer for add-ons.
-     *
-     * @var string
-     */
-    public $addonsVip;
-    /**
-     * The VIP which you previously set aside for the Kubernetes API of the admin
-     * cluster.
-     *
-     * @var string
-     */
-    public $controlPlaneVip;
-    /**
-     * The VIP to configure the load balancer for add-ons.
-     *
-     * @param string $addonsVip
-     */
-    public function setAddonsVip($addonsVip)
+namespace Google\Service\GKEOnPrem {
+    class VmwareAdminVipConfig extends \Google\Model
     {
+        /**
+         * The VIP to configure the load balancer for add-ons.
+         *
+         * @var string
+         */
+        public $addonsVip;
+        /**
+         * The VIP which you previously set aside for the Kubernetes API of the admin
+         * cluster.
+         *
+         * @var string
+         */
+        public $controlPlaneVip;
+        /**
+         * The VIP to configure the load balancer for add-ons.
+         *
+         * @param string $addonsVip
+         */
+        public function setAddonsVip($addonsVip)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAddonsVip()
+        {
+        }
+        /**
+         * The VIP which you previously set aside for the Kubernetes API of the admin
+         * cluster.
+         *
+         * @param string $controlPlaneVip
+         */
+        public function setControlPlaneVip($controlPlaneVip)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getControlPlaneVip()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEOnPrem\VmwareAdminVipConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddonsVip()
-    {
-    }
-    /**
-     * The VIP which you previously set aside for the Kubernetes API of the admin
-     * cluster.
-     *
-     * @param string $controlPlaneVip
-     */
-    public function setControlPlaneVip($controlPlaneVip)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getControlPlaneVip()
+    class Google_Service_GKEOnPrem_VmwareAdminVipConfig extends \Google\Service\GKEOnPrem\VmwareAdminVipConfig
     {
     }
 }

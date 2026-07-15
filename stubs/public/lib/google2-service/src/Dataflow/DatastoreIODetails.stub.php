@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class DatastoreIODetails extends \Google\Model
-{
-    /**
-     * Namespace used in the connection.
-     *
-     * @var string
-     */
-    public $namespace;
-    /**
-     * ProjectId accessed in the connection.
-     *
-     * @var string
-     */
-    public $projectId;
-    /**
-     * Namespace used in the connection.
-     *
-     * @param string $namespace
-     */
-    public function setNamespace($namespace)
+namespace Google\Service\Dataflow {
+    class DatastoreIODetails extends \Google\Model
     {
+        /**
+         * Namespace used in the connection.
+         *
+         * @var string
+         */
+        public $namespace;
+        /**
+         * ProjectId accessed in the connection.
+         *
+         * @var string
+         */
+        public $projectId;
+        /**
+         * Namespace used in the connection.
+         *
+         * @param string $namespace
+         */
+        public function setNamespace($namespace)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNamespace()
+        {
+        }
+        /**
+         * ProjectId accessed in the connection.
+         *
+         * @param string $projectId
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataflow\DatastoreIODetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNamespace()
-    {
-    }
-    /**
-     * ProjectId accessed in the connection.
-     *
-     * @param string $projectId
-     */
-    public function setProjectId($projectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProjectId()
+    class Google_Service_Dataflow_DatastoreIODetails extends \Google\Service\Dataflow\DatastoreIODetails
     {
     }
 }

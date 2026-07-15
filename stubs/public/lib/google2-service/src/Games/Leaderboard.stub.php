@@ -21,142 +21,151 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Games;
-
-class Leaderboard extends \Google\Model
-{
-    /**
-     * Larger values are better; scores are sorted in descending order
-     */
-    public const ORDER_LARGER_IS_BETTER = 'LARGER_IS_BETTER';
-    /**
-     * Smaller values are better; scores are sorted in ascending order
-     */
-    public const ORDER_SMALLER_IS_BETTER = 'SMALLER_IS_BETTER';
-    /**
-     * The icon for the leaderboard.
-     *
-     * @var string
-     */
-    public $iconUrl;
-    /**
-     * The leaderboard ID.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Indicates whether the icon image being returned is a default image, or is
-     * game-provided.
-     *
-     * @var bool
-     */
-    public $isIconUrlDefault;
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#leaderboard`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The name of the leaderboard.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * How scores are ordered.
-     *
-     * @var string
-     */
-    public $order;
-    /**
-     * The icon for the leaderboard.
-     *
-     * @param string $iconUrl
-     */
-    public function setIconUrl($iconUrl)
+namespace Google\Service\Games {
+    class Leaderboard extends \Google\Model
     {
+        /**
+         * Larger values are better; scores are sorted in descending order
+         */
+        public const ORDER_LARGER_IS_BETTER = 'LARGER_IS_BETTER';
+        /**
+         * Smaller values are better; scores are sorted in ascending order
+         */
+        public const ORDER_SMALLER_IS_BETTER = 'SMALLER_IS_BETTER';
+        /**
+         * The icon for the leaderboard.
+         *
+         * @var string
+         */
+        public $iconUrl;
+        /**
+         * The leaderboard ID.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Indicates whether the icon image being returned is a default image, or is
+         * game-provided.
+         *
+         * @var bool
+         */
+        public $isIconUrlDefault;
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#leaderboard`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The name of the leaderboard.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * How scores are ordered.
+         *
+         * @var string
+         */
+        public $order;
+        /**
+         * The icon for the leaderboard.
+         *
+         * @param string $iconUrl
+         */
+        public function setIconUrl($iconUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIconUrl()
+        {
+        }
+        /**
+         * The leaderboard ID.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Indicates whether the icon image being returned is a default image, or is
+         * game-provided.
+         *
+         * @param bool $isIconUrlDefault
+         */
+        public function setIsIconUrlDefault($isIconUrlDefault)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsIconUrlDefault()
+        {
+        }
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#leaderboard`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The name of the leaderboard.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * How scores are ordered.
+         *
+         * Accepted values: LARGER_IS_BETTER, SMALLER_IS_BETTER
+         *
+         * @param self::ORDER_* $order
+         */
+        public function setOrder($order)
+        {
+        }
+        /**
+         * @return self::ORDER_*
+         */
+        public function getOrder()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Games\Leaderboard registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIconUrl()
-    {
-    }
-    /**
-     * The leaderboard ID.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Indicates whether the icon image being returned is a default image, or is
-     * game-provided.
-     *
-     * @param bool $isIconUrlDefault
-     */
-    public function setIsIconUrlDefault($isIconUrlDefault)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsIconUrlDefault()
-    {
-    }
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#leaderboard`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The name of the leaderboard.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * How scores are ordered.
-     *
-     * Accepted values: LARGER_IS_BETTER, SMALLER_IS_BETTER
-     *
-     * @param self::ORDER_* $order
-     */
-    public function setOrder($order)
-    {
-    }
-    /**
-     * @return self::ORDER_*
-     */
-    public function getOrder()
+    class Google_Service_Games_Leaderboard extends \Google\Service\Games\Leaderboard
     {
     }
 }

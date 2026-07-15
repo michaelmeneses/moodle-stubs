@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AuthorizedBuyersMarketplace;
-
-class AcceptProposalRequest extends \Google\Model
-{
-    /**
-     * The last known client revision number of the proposal.
-     *
-     * @var string
-     */
-    public $proposalRevision;
-    /**
-     * The last known client revision number of the proposal.
-     *
-     * @param string $proposalRevision
-     */
-    public function setProposalRevision($proposalRevision)
+namespace Google\Service\AuthorizedBuyersMarketplace {
+    class AcceptProposalRequest extends \Google\Model
     {
+        /**
+         * The last known client revision number of the proposal.
+         *
+         * @var string
+         */
+        public $proposalRevision;
+        /**
+         * The last known client revision number of the proposal.
+         *
+         * @param string $proposalRevision
+         */
+        public function setProposalRevision($proposalRevision)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProposalRevision()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AuthorizedBuyersMarketplace\AcceptProposalRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProposalRevision()
+    class Google_Service_AuthorizedBuyersMarketplace_AcceptProposalRequest extends \Google\Service\AuthorizedBuyersMarketplace\AcceptProposalRequest
     {
     }
 }

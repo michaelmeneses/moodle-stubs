@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class VpnTunnelCipherSuite extends \Google\Model
-{
-    protected $phase1Type = VpnTunnelPhase1Algorithms::class;
-    protected $phase1DataType = '';
-    protected $phase2Type = VpnTunnelPhase2Algorithms::class;
-    protected $phase2DataType = '';
-    /**
-     * @param VpnTunnelPhase1Algorithms $phase1
-     */
-    public function setPhase1(VpnTunnelPhase1Algorithms $phase1)
+namespace Google\Service\Compute {
+    class VpnTunnelCipherSuite extends \Google\Model
     {
+        protected $phase1Type = VpnTunnelPhase1Algorithms::class;
+        protected $phase1DataType = '';
+        protected $phase2Type = VpnTunnelPhase2Algorithms::class;
+        protected $phase2DataType = '';
+        /**
+         * @param VpnTunnelPhase1Algorithms $phase1
+         */
+        public function setPhase1(VpnTunnelPhase1Algorithms $phase1)
+        {
+        }
+        /**
+         * @return VpnTunnelPhase1Algorithms
+         */
+        public function getPhase1()
+        {
+        }
+        /**
+         * @param VpnTunnelPhase2Algorithms $phase2
+         */
+        public function setPhase2(VpnTunnelPhase2Algorithms $phase2)
+        {
+        }
+        /**
+         * @return VpnTunnelPhase2Algorithms
+         */
+        public function getPhase2()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return VpnTunnelPhase1Algorithms
+     * Runtime class alias of \Google\Service\Compute\VpnTunnelCipherSuite registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPhase1()
-    {
-    }
-    /**
-     * @param VpnTunnelPhase2Algorithms $phase2
-     */
-    public function setPhase2(VpnTunnelPhase2Algorithms $phase2)
-    {
-    }
-    /**
-     * @return VpnTunnelPhase2Algorithms
-     */
-    public function getPhase2()
+    class Google_Service_Compute_VpnTunnelCipherSuite extends \Google\Service\Compute\VpnTunnelCipherSuite
     {
     }
 }

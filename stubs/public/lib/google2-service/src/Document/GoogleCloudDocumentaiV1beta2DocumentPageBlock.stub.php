@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1beta2DocumentPageBlock extends \Google\Collection
-{
-    protected $collection_key = 'detectedLanguages';
-    protected $detectedLanguagesType = GoogleCloudDocumentaiV1beta2DocumentPageDetectedLanguage::class;
-    protected $detectedLanguagesDataType = 'array';
-    protected $layoutType = GoogleCloudDocumentaiV1beta2DocumentPageLayout::class;
-    protected $layoutDataType = '';
-    protected $provenanceType = GoogleCloudDocumentaiV1beta2DocumentProvenance::class;
-    protected $provenanceDataType = '';
-    /**
-     * @param GoogleCloudDocumentaiV1beta2DocumentPageDetectedLanguage[]
-     */
-    public function setDetectedLanguages($detectedLanguages)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1beta2DocumentPageBlock extends \Google\Collection
     {
+        protected $collection_key = 'detectedLanguages';
+        protected $detectedLanguagesType = GoogleCloudDocumentaiV1beta2DocumentPageDetectedLanguage::class;
+        protected $detectedLanguagesDataType = 'array';
+        protected $layoutType = GoogleCloudDocumentaiV1beta2DocumentPageLayout::class;
+        protected $layoutDataType = '';
+        protected $provenanceType = GoogleCloudDocumentaiV1beta2DocumentProvenance::class;
+        protected $provenanceDataType = '';
+        /**
+         * @param GoogleCloudDocumentaiV1beta2DocumentPageDetectedLanguage[]
+         */
+        public function setDetectedLanguages($detectedLanguages)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta2DocumentPageDetectedLanguage[]
+         */
+        public function getDetectedLanguages()
+        {
+        }
+        /**
+         * @param GoogleCloudDocumentaiV1beta2DocumentPageLayout
+         */
+        public function setLayout(GoogleCloudDocumentaiV1beta2DocumentPageLayout $layout)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta2DocumentPageLayout
+         */
+        public function getLayout()
+        {
+        }
+        /**
+         * @param GoogleCloudDocumentaiV1beta2DocumentProvenance
+         */
+        public function setProvenance(GoogleCloudDocumentaiV1beta2DocumentProvenance $provenance)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta2DocumentProvenance
+         */
+        public function getProvenance()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiV1beta2DocumentPageDetectedLanguage[]
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1beta2DocumentPageBlock registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDetectedLanguages()
-    {
-    }
-    /**
-     * @param GoogleCloudDocumentaiV1beta2DocumentPageLayout
-     */
-    public function setLayout(GoogleCloudDocumentaiV1beta2DocumentPageLayout $layout)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1beta2DocumentPageLayout
-     */
-    public function getLayout()
-    {
-    }
-    /**
-     * @param GoogleCloudDocumentaiV1beta2DocumentProvenance
-     */
-    public function setProvenance(GoogleCloudDocumentaiV1beta2DocumentProvenance $provenance)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1beta2DocumentProvenance
-     */
-    public function getProvenance()
+    class Google_Service_Document_GoogleCloudDocumentaiV1beta2DocumentPageBlock extends \Google\Service\Document\GoogleCloudDocumentaiV1beta2DocumentPageBlock
     {
     }
 }

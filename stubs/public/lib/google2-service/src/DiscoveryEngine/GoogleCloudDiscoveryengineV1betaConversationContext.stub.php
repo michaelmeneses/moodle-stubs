@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaConversationContext extends \Google\Collection
-{
-    protected $collection_key = 'contextDocuments';
-    /**
-     * @var string
-     */
-    public $activeDocument;
-    /**
-     * @var string[]
-     */
-    public $contextDocuments;
-    /**
-     * @param string
-     */
-    public function setActiveDocument($activeDocument)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaConversationContext extends \Google\Collection
     {
+        protected $collection_key = 'contextDocuments';
+        /**
+         * @var string
+         */
+        public $activeDocument;
+        /**
+         * @var string[]
+         */
+        public $contextDocuments;
+        /**
+         * @param string
+         */
+        public function setActiveDocument($activeDocument)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getActiveDocument()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setContextDocuments($contextDocuments)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getContextDocuments()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaConversationContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActiveDocument()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setContextDocuments($contextDocuments)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getContextDocuments()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaConversationContext extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaConversationContext
     {
     }
 }

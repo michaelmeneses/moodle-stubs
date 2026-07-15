@@ -21,119 +21,128 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class NotificationEndpointGrpcSettings extends \Google\Model
-{
-    /**
-     * Optional. If specified, this field is used to set the authority header by
-     * the sender of notifications. See
-     * https://tools.ietf.org/html/rfc7540#section-8.1.2.3
-     *
-     * @var string
-     */
-    public $authority;
-    /**
-     * Endpoint to which gRPC notifications are sent. This must be a valid gRPCLB
-     * DNS name.
-     *
-     * @var string
-     */
-    public $endpoint;
-    /**
-     * Optional. If specified, this field is used to populate the "name" field in
-     * gRPC requests.
-     *
-     * @var string
-     */
-    public $payloadName;
-    protected $resendIntervalType = Duration::class;
-    protected $resendIntervalDataType = '';
-    /**
-     * How much time (in seconds) is spent attempting notification retries until a
-     * successful response is received. Default is 30s. Limit is 20m (1200s). Must
-     * be a positive number.
-     *
-     * @var string
-     */
-    public $retryDurationSec;
-    /**
-     * Optional. If specified, this field is used to set the authority header by
-     * the sender of notifications. See
-     * https://tools.ietf.org/html/rfc7540#section-8.1.2.3
-     *
-     * @param string $authority
-     */
-    public function setAuthority($authority)
+namespace Google\Service\Compute {
+    class NotificationEndpointGrpcSettings extends \Google\Model
     {
+        /**
+         * Optional. If specified, this field is used to set the authority header by
+         * the sender of notifications. See
+         * https://tools.ietf.org/html/rfc7540#section-8.1.2.3
+         *
+         * @var string
+         */
+        public $authority;
+        /**
+         * Endpoint to which gRPC notifications are sent. This must be a valid gRPCLB
+         * DNS name.
+         *
+         * @var string
+         */
+        public $endpoint;
+        /**
+         * Optional. If specified, this field is used to populate the "name" field in
+         * gRPC requests.
+         *
+         * @var string
+         */
+        public $payloadName;
+        protected $resendIntervalType = Duration::class;
+        protected $resendIntervalDataType = '';
+        /**
+         * How much time (in seconds) is spent attempting notification retries until a
+         * successful response is received. Default is 30s. Limit is 20m (1200s). Must
+         * be a positive number.
+         *
+         * @var string
+         */
+        public $retryDurationSec;
+        /**
+         * Optional. If specified, this field is used to set the authority header by
+         * the sender of notifications. See
+         * https://tools.ietf.org/html/rfc7540#section-8.1.2.3
+         *
+         * @param string $authority
+         */
+        public function setAuthority($authority)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAuthority()
+        {
+        }
+        /**
+         * Endpoint to which gRPC notifications are sent. This must be a valid gRPCLB
+         * DNS name.
+         *
+         * @param string $endpoint
+         */
+        public function setEndpoint($endpoint)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndpoint()
+        {
+        }
+        /**
+         * Optional. If specified, this field is used to populate the "name" field in
+         * gRPC requests.
+         *
+         * @param string $payloadName
+         */
+        public function setPayloadName($payloadName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPayloadName()
+        {
+        }
+        /**
+         * Optional. This field is used to configure how often to send a full update
+         * of all non-healthy backends. If unspecified, full updates are not sent. If
+         * specified, must be in the range between 600 seconds to 3600 seconds. Nanos
+         * are disallowed. Can only be set for regional notification endpoints.
+         *
+         * @param Duration $resendInterval
+         */
+        public function setResendInterval(Duration $resendInterval)
+        {
+        }
+        /**
+         * @return Duration
+         */
+        public function getResendInterval()
+        {
+        }
+        /**
+         * How much time (in seconds) is spent attempting notification retries until a
+         * successful response is received. Default is 30s. Limit is 20m (1200s). Must
+         * be a positive number.
+         *
+         * @param string $retryDurationSec
+         */
+        public function setRetryDurationSec($retryDurationSec)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRetryDurationSec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\NotificationEndpointGrpcSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuthority()
-    {
-    }
-    /**
-     * Endpoint to which gRPC notifications are sent. This must be a valid gRPCLB
-     * DNS name.
-     *
-     * @param string $endpoint
-     */
-    public function setEndpoint($endpoint)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndpoint()
-    {
-    }
-    /**
-     * Optional. If specified, this field is used to populate the "name" field in
-     * gRPC requests.
-     *
-     * @param string $payloadName
-     */
-    public function setPayloadName($payloadName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPayloadName()
-    {
-    }
-    /**
-     * Optional. This field is used to configure how often to send a full update
-     * of all non-healthy backends. If unspecified, full updates are not sent. If
-     * specified, must be in the range between 600 seconds to 3600 seconds. Nanos
-     * are disallowed. Can only be set for regional notification endpoints.
-     *
-     * @param Duration $resendInterval
-     */
-    public function setResendInterval(Duration $resendInterval)
-    {
-    }
-    /**
-     * @return Duration
-     */
-    public function getResendInterval()
-    {
-    }
-    /**
-     * How much time (in seconds) is spent attempting notification retries until a
-     * successful response is received. Default is 30s. Limit is 20m (1200s). Must
-     * be a positive number.
-     *
-     * @param string $retryDurationSec
-     */
-    public function setRetryDurationSec($retryDurationSec)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRetryDurationSec()
+    class Google_Service_Compute_NotificationEndpointGrpcSettings extends \Google\Service\Compute\NotificationEndpointGrpcSettings
     {
     }
 }

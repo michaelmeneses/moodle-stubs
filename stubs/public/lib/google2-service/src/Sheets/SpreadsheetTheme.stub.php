@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class SpreadsheetTheme extends \Google\Collection
-{
-    protected $collection_key = 'themeColors';
-    /**
-     * Name of the primary font family.
-     *
-     * @var string
-     */
-    public $primaryFontFamily;
-    protected $themeColorsType = ThemeColorPair::class;
-    protected $themeColorsDataType = 'array';
-    /**
-     * Name of the primary font family.
-     *
-     * @param string $primaryFontFamily
-     */
-    public function setPrimaryFontFamily($primaryFontFamily)
+namespace Google\Service\Sheets {
+    class SpreadsheetTheme extends \Google\Collection
     {
+        protected $collection_key = 'themeColors';
+        /**
+         * Name of the primary font family.
+         *
+         * @var string
+         */
+        public $primaryFontFamily;
+        protected $themeColorsType = ThemeColorPair::class;
+        protected $themeColorsDataType = 'array';
+        /**
+         * Name of the primary font family.
+         *
+         * @param string $primaryFontFamily
+         */
+        public function setPrimaryFontFamily($primaryFontFamily)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrimaryFontFamily()
+        {
+        }
+        /**
+         * The spreadsheet theme color pairs. To update you must provide all theme
+         * color pairs.
+         *
+         * @param ThemeColorPair[] $themeColors
+         */
+        public function setThemeColors($themeColors)
+        {
+        }
+        /**
+         * @return ThemeColorPair[]
+         */
+        public function getThemeColors()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Sheets\SpreadsheetTheme registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPrimaryFontFamily()
-    {
-    }
-    /**
-     * The spreadsheet theme color pairs. To update you must provide all theme
-     * color pairs.
-     *
-     * @param ThemeColorPair[] $themeColors
-     */
-    public function setThemeColors($themeColors)
-    {
-    }
-    /**
-     * @return ThemeColorPair[]
-     */
-    public function getThemeColors()
+    class Google_Service_Sheets_SpreadsheetTheme extends \Google\Service\Sheets\SpreadsheetTheme
     {
     }
 }

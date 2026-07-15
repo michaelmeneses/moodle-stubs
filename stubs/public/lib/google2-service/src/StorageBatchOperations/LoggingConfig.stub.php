@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\StorageBatchOperations;
-
-class LoggingConfig extends \Google\Collection
-{
-    protected $collection_key = 'logActions';
-    /**
-     * Required. States in which Action are logged.If empty, no logs are
-     * generated.
-     *
-     * @var string[]
-     */
-    public $logActionStates;
-    /**
-     * Required. Specifies the actions to be logged.
-     *
-     * @var string[]
-     */
-    public $logActions;
-    /**
-     * Required. States in which Action are logged.If empty, no logs are
-     * generated.
-     *
-     * @param string[] $logActionStates
-     */
-    public function setLogActionStates($logActionStates)
+namespace Google\Service\StorageBatchOperations {
+    class LoggingConfig extends \Google\Collection
     {
+        protected $collection_key = 'logActions';
+        /**
+         * Required. States in which Action are logged.If empty, no logs are
+         * generated.
+         *
+         * @var string[]
+         */
+        public $logActionStates;
+        /**
+         * Required. Specifies the actions to be logged.
+         *
+         * @var string[]
+         */
+        public $logActions;
+        /**
+         * Required. States in which Action are logged.If empty, no logs are
+         * generated.
+         *
+         * @param string[] $logActionStates
+         */
+        public function setLogActionStates($logActionStates)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLogActionStates()
+        {
+        }
+        /**
+         * Required. Specifies the actions to be logged.
+         *
+         * @param string[] $logActions
+         */
+        public function setLogActions($logActions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLogActions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\StorageBatchOperations\LoggingConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLogActionStates()
-    {
-    }
-    /**
-     * Required. Specifies the actions to be logged.
-     *
-     * @param string[] $logActions
-     */
-    public function setLogActions($logActions)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLogActions()
+    class Google_Service_StorageBatchOperations_LoggingConfig extends \Google\Service\StorageBatchOperations\LoggingConfig
     {
     }
 }

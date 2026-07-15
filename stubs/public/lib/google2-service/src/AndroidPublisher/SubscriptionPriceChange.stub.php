@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class SubscriptionPriceChange extends \Google\Model
-{
-    protected $newPriceType = Price::class;
-    protected $newPriceDataType = '';
-    /**
-     * The current state of the price change. Possible values are: 0. Outstanding:
-     * State for a pending price change waiting for the user to agree. In this
-     * state, you can optionally seek confirmation from the user using the In-App
-     * API. 1. Accepted: State for an accepted price change that the subscription
-     * will renew with unless it's canceled. The price change takes effect on a
-     * future date when the subscription renews. Note that the change might not
-     * occur when the subscription is renewed next.
-     *
-     * @var int
-     */
-    public $state;
-    /**
-     * The new price the subscription will renew with if the price change is
-     * accepted by the user.
-     *
-     * @param Price $newPrice
-     */
-    public function setNewPrice(Price $newPrice)
+namespace Google\Service\AndroidPublisher {
+    class SubscriptionPriceChange extends \Google\Model
     {
+        protected $newPriceType = Price::class;
+        protected $newPriceDataType = '';
+        /**
+         * The current state of the price change. Possible values are: 0. Outstanding:
+         * State for a pending price change waiting for the user to agree. In this
+         * state, you can optionally seek confirmation from the user using the In-App
+         * API. 1. Accepted: State for an accepted price change that the subscription
+         * will renew with unless it's canceled. The price change takes effect on a
+         * future date when the subscription renews. Note that the change might not
+         * occur when the subscription is renewed next.
+         *
+         * @var int
+         */
+        public $state;
+        /**
+         * The new price the subscription will renew with if the price change is
+         * accepted by the user.
+         *
+         * @param Price $newPrice
+         */
+        public function setNewPrice(Price $newPrice)
+        {
+        }
+        /**
+         * @return Price
+         */
+        public function getNewPrice()
+        {
+        }
+        /**
+         * The current state of the price change. Possible values are: 0. Outstanding:
+         * State for a pending price change waiting for the user to agree. In this
+         * state, you can optionally seek confirmation from the user using the In-App
+         * API. 1. Accepted: State for an accepted price change that the subscription
+         * will renew with unless it's canceled. The price change takes effect on a
+         * future date when the subscription renews. Note that the change might not
+         * occur when the subscription is renewed next.
+         *
+         * @param int $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Price
+     * Runtime class alias of \Google\Service\AndroidPublisher\SubscriptionPriceChange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNewPrice()
-    {
-    }
-    /**
-     * The current state of the price change. Possible values are: 0. Outstanding:
-     * State for a pending price change waiting for the user to agree. In this
-     * state, you can optionally seek confirmation from the user using the In-App
-     * API. 1. Accepted: State for an accepted price change that the subscription
-     * will renew with unless it's canceled. The price change takes effect on a
-     * future date when the subscription renews. Note that the change might not
-     * occur when the subscription is renewed next.
-     *
-     * @param int $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getState()
+    class Google_Service_AndroidPublisher_SubscriptionPriceChange extends \Google\Service\AndroidPublisher\SubscriptionPriceChange
     {
     }
 }

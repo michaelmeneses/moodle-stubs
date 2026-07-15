@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_course\customfield;
 
+use core_customfield\field_controller;
 /**
  * Course handler for custom fields
  *

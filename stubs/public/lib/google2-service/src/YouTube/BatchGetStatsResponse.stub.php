@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class BatchGetStatsResponse extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    /**
-     * Output only. Etag of this resource.
-     *
-     * @var string
-     */
-    public $etag;
-    protected $itemsType = VideoStat::class;
-    protected $itemsDataType = 'array';
-    /**
-     * Output only. Identifies what kind of resource this is. Value: the fixed
-     * string "youtube#batchGetStatsResponse".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Output only. Etag of this resource.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
+namespace Google\Service\YouTube {
+    class BatchGetStatsResponse extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        /**
+         * Output only. Etag of this resource.
+         *
+         * @var string
+         */
+        public $etag;
+        protected $itemsType = VideoStat::class;
+        protected $itemsDataType = 'array';
+        /**
+         * Output only. Identifies what kind of resource this is. Value: the fixed
+         * string "youtube#batchGetStatsResponse".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Output only. Etag of this resource.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * Output only. The videos' stats information.
+         *
+         * @param VideoStat[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return VideoStat[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * Output only. Identifies what kind of resource this is. Value: the fixed
+         * string "youtube#batchGetStatsResponse".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\BatchGetStatsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
-    {
-    }
-    /**
-     * Output only. The videos' stats information.
-     *
-     * @param VideoStat[] $items
-     */
-    public function setItems($items)
-    {
-    }
-    /**
-     * @return VideoStat[]
-     */
-    public function getItems()
-    {
-    }
-    /**
-     * Output only. Identifies what kind of resource this is. Value: the fixed
-     * string "youtube#batchGetStatsResponse".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_YouTube_BatchGetStatsResponse extends \Google\Service\YouTube\BatchGetStatsResponse
     {
     }
 }

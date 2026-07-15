@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PlayIntegrity;
-
-class DecodeIntegrityTokenResponse extends \Google\Model
-{
-    protected $tokenPayloadExternalType = TokenPayloadExternal::class;
-    protected $tokenPayloadExternalDataType = '';
-    /**
-     * Plain token payload generated from the decoded integrity token.
-     *
-     * @param TokenPayloadExternal $tokenPayloadExternal
-     */
-    public function setTokenPayloadExternal(TokenPayloadExternal $tokenPayloadExternal)
+namespace Google\Service\PlayIntegrity {
+    class DecodeIntegrityTokenResponse extends \Google\Model
     {
+        protected $tokenPayloadExternalType = TokenPayloadExternal::class;
+        protected $tokenPayloadExternalDataType = '';
+        /**
+         * Plain token payload generated from the decoded integrity token.
+         *
+         * @param TokenPayloadExternal $tokenPayloadExternal
+         */
+        public function setTokenPayloadExternal(TokenPayloadExternal $tokenPayloadExternal)
+        {
+        }
+        /**
+         * @return TokenPayloadExternal
+         */
+        public function getTokenPayloadExternal()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TokenPayloadExternal
+     * Runtime class alias of \Google\Service\PlayIntegrity\DecodeIntegrityTokenResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTokenPayloadExternal()
+    class Google_Service_PlayIntegrity_DecodeIntegrityTokenResponse extends \Google\Service\PlayIntegrity\DecodeIntegrityTokenResponse
     {
     }
 }

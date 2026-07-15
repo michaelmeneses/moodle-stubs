@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1PersonalDetails extends \Google\Model
-{
-    /**
-     * Set if the entry is starred; unset otherwise.
-     *
-     * @var string
-     */
-    public $starTime;
-    /**
-     * True if the entry is starred by the user; false otherwise.
-     *
-     * @var bool
-     */
-    public $starred;
-    /**
-     * Set if the entry is starred; unset otherwise.
-     *
-     * @param string $starTime
-     */
-    public function setStarTime($starTime)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1PersonalDetails extends \Google\Model
     {
+        /**
+         * Set if the entry is starred; unset otherwise.
+         *
+         * @var string
+         */
+        public $starTime;
+        /**
+         * True if the entry is starred by the user; false otherwise.
+         *
+         * @var bool
+         */
+        public $starred;
+        /**
+         * Set if the entry is starred; unset otherwise.
+         *
+         * @param string $starTime
+         */
+        public function setStarTime($starTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStarTime()
+        {
+        }
+        /**
+         * True if the entry is starred by the user; false otherwise.
+         *
+         * @param bool $starred
+         */
+        public function setStarred($starred)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getStarred()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1PersonalDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStarTime()
-    {
-    }
-    /**
-     * True if the entry is starred by the user; false otherwise.
-     *
-     * @param bool $starred
-     */
-    public function setStarred($starred)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getStarred()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1PersonalDetails extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1PersonalDetails
     {
     }
 }

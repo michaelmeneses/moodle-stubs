@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMMigrationService;
-
-class VmUtilizationInfo extends \Google\Model
-{
-    protected $utilizationType = VmUtilizationMetrics::class;
-    protected $utilizationDataType = '';
-    /**
-     * The VM's ID in the source.
-     *
-     * @var string
-     */
-    public $vmId;
-    protected $vmwareVmDetailsType = VmwareVmDetails::class;
-    protected $vmwareVmDetailsDataType = '';
-    /**
-     * Utilization metrics for this VM.
-     *
-     * @param VmUtilizationMetrics $utilization
-     */
-    public function setUtilization(VmUtilizationMetrics $utilization)
+namespace Google\Service\VMMigrationService {
+    class VmUtilizationInfo extends \Google\Model
     {
+        protected $utilizationType = VmUtilizationMetrics::class;
+        protected $utilizationDataType = '';
+        /**
+         * The VM's ID in the source.
+         *
+         * @var string
+         */
+        public $vmId;
+        protected $vmwareVmDetailsType = VmwareVmDetails::class;
+        protected $vmwareVmDetailsDataType = '';
+        /**
+         * Utilization metrics for this VM.
+         *
+         * @param VmUtilizationMetrics $utilization
+         */
+        public function setUtilization(VmUtilizationMetrics $utilization)
+        {
+        }
+        /**
+         * @return VmUtilizationMetrics
+         */
+        public function getUtilization()
+        {
+        }
+        /**
+         * The VM's ID in the source.
+         *
+         * @param string $vmId
+         */
+        public function setVmId($vmId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVmId()
+        {
+        }
+        /**
+         * The description of the VM in a Source of type Vmware.
+         *
+         * @param VmwareVmDetails $vmwareVmDetails
+         */
+        public function setVmwareVmDetails(VmwareVmDetails $vmwareVmDetails)
+        {
+        }
+        /**
+         * @return VmwareVmDetails
+         */
+        public function getVmwareVmDetails()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return VmUtilizationMetrics
+     * Runtime class alias of \Google\Service\VMMigrationService\VmUtilizationInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUtilization()
-    {
-    }
-    /**
-     * The VM's ID in the source.
-     *
-     * @param string $vmId
-     */
-    public function setVmId($vmId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVmId()
-    {
-    }
-    /**
-     * The description of the VM in a Source of type Vmware.
-     *
-     * @param VmwareVmDetails $vmwareVmDetails
-     */
-    public function setVmwareVmDetails(VmwareVmDetails $vmwareVmDetails)
-    {
-    }
-    /**
-     * @return VmwareVmDetails
-     */
-    public function getVmwareVmDetails()
+    class Google_Service_VMMigrationService_VmUtilizationInfo extends \Google\Service\VMMigrationService\VmUtilizationInfo
     {
     }
 }

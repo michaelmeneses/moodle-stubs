@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkManagement\Resource;
-
-/**
- * The "organizations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $networkmanagementService = new Google\Service\NetworkManagement(...);
- *   $organizations = $networkmanagementService->organizations;
- *  </code>
- */
-class Organizations extends \Google\Service\Resource
-{
+namespace Google\Service\NetworkManagement\Resource {
+    /**
+     * The "organizations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $networkmanagementService = new Google\Service\NetworkManagement(...);
+     *   $organizations = $networkmanagementService->organizations;
+     *  </code>
+     */
+    class Organizations extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\NetworkManagement\Resource\Organizations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_NetworkManagement_Resource_Organizations extends \Google\Service\NetworkManagement\Resource\Organizations
+    {
+    }
 }

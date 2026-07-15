@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class DataSourceSpec extends \Google\Collection
-{
-    protected $collection_key = 'parameters';
-    protected $bigQueryType = BigQueryDataSourceSpec::class;
-    protected $bigQueryDataType = '';
-    protected $lookerType = LookerDataSourceSpec::class;
-    protected $lookerDataType = '';
-    protected $parametersType = DataSourceParameter::class;
-    protected $parametersDataType = 'array';
-    /**
-     * A BigQueryDataSourceSpec.
-     *
-     * @param BigQueryDataSourceSpec $bigQuery
-     */
-    public function setBigQuery(BigQueryDataSourceSpec $bigQuery)
+namespace Google\Service\Sheets {
+    class DataSourceSpec extends \Google\Collection
     {
+        protected $collection_key = 'parameters';
+        protected $bigQueryType = BigQueryDataSourceSpec::class;
+        protected $bigQueryDataType = '';
+        protected $lookerType = LookerDataSourceSpec::class;
+        protected $lookerDataType = '';
+        protected $parametersType = DataSourceParameter::class;
+        protected $parametersDataType = 'array';
+        /**
+         * A BigQueryDataSourceSpec.
+         *
+         * @param BigQueryDataSourceSpec $bigQuery
+         */
+        public function setBigQuery(BigQueryDataSourceSpec $bigQuery)
+        {
+        }
+        /**
+         * @return BigQueryDataSourceSpec
+         */
+        public function getBigQuery()
+        {
+        }
+        /**
+         * A LookerDatasourceSpec.
+         *
+         * @param LookerDataSourceSpec $looker
+         */
+        public function setLooker(LookerDataSourceSpec $looker)
+        {
+        }
+        /**
+         * @return LookerDataSourceSpec
+         */
+        public function getLooker()
+        {
+        }
+        /**
+         * The parameters of the data source, used when querying the data source.
+         *
+         * @param DataSourceParameter[] $parameters
+         */
+        public function setParameters($parameters)
+        {
+        }
+        /**
+         * @return DataSourceParameter[]
+         */
+        public function getParameters()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BigQueryDataSourceSpec
+     * Runtime class alias of \Google\Service\Sheets\DataSourceSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBigQuery()
-    {
-    }
-    /**
-     * A LookerDatasourceSpec.
-     *
-     * @param LookerDataSourceSpec $looker
-     */
-    public function setLooker(LookerDataSourceSpec $looker)
-    {
-    }
-    /**
-     * @return LookerDataSourceSpec
-     */
-    public function getLooker()
-    {
-    }
-    /**
-     * The parameters of the data source, used when querying the data source.
-     *
-     * @param DataSourceParameter[] $parameters
-     */
-    public function setParameters($parameters)
-    {
-    }
-    /**
-     * @return DataSourceParameter[]
-     */
-    public function getParameters()
+    class Google_Service_Sheets_DataSourceSpec extends \Google\Service\Sheets\DataSourceSpec
     {
     }
 }

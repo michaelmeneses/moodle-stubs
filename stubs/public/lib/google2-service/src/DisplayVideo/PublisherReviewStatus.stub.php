@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class PublisherReviewStatus extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $publisherName;
-    /**
-     * @var string
-     */
-    public $status;
-    /**
-     * @param string
-     */
-    public function setPublisherName($publisherName)
+namespace Google\Service\DisplayVideo {
+    class PublisherReviewStatus extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $publisherName;
+        /**
+         * @var string
+         */
+        public $status;
+        /**
+         * @param string
+         */
+        public function setPublisherName($publisherName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPublisherName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\PublisherReviewStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPublisherName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStatus()
+    class Google_Service_DisplayVideo_PublisherReviewStatus extends \Google\Service\DisplayVideo\PublisherReviewStatus
     {
     }
 }

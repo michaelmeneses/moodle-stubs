@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutListBlock extends \Google\Collection
-{
-    protected $collection_key = 'listEntries';
-    protected $listEntriesType = GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutListEntry::class;
-    protected $listEntriesDataType = 'array';
-    /**
-     * Type of the list_entries (if exist). Available options are `ordered` and
-     * `unordered`.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * List entries that constitute a list block.
-     *
-     * @param GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutListEntry[] $listEntries
-     */
-    public function setListEntries($listEntries)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutListBlock extends \Google\Collection
     {
+        protected $collection_key = 'listEntries';
+        protected $listEntriesType = GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutListEntry::class;
+        protected $listEntriesDataType = 'array';
+        /**
+         * Type of the list_entries (if exist). Available options are `ordered` and
+         * `unordered`.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * List entries that constitute a list block.
+         *
+         * @param GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutListEntry[] $listEntries
+         */
+        public function setListEntries($listEntries)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutListEntry[]
+         */
+        public function getListEntries()
+        {
+        }
+        /**
+         * Type of the list_entries (if exist). Available options are `ordered` and
+         * `unordered`.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutListEntry[]
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutListBlock registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getListEntries()
-    {
-    }
-    /**
-     * Type of the list_entries (if exist). Available options are `ordered` and
-     * `unordered`.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_Contentwarehouse_GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutListBlock extends \Google\Service\Contentwarehouse\GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutListBlock
     {
     }
 }

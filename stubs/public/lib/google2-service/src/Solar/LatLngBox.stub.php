@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Solar;
-
-class LatLngBox extends \Google\Model
-{
-    protected $neType = LatLng::class;
-    protected $neDataType = '';
-    protected $swType = LatLng::class;
-    protected $swDataType = '';
-    /**
-     * The northeast corner of the box.
-     *
-     * @param LatLng $ne
-     */
-    public function setNe(LatLng $ne)
+namespace Google\Service\Solar {
+    class LatLngBox extends \Google\Model
     {
+        protected $neType = LatLng::class;
+        protected $neDataType = '';
+        protected $swType = LatLng::class;
+        protected $swDataType = '';
+        /**
+         * The northeast corner of the box.
+         *
+         * @param LatLng $ne
+         */
+        public function setNe(LatLng $ne)
+        {
+        }
+        /**
+         * @return LatLng
+         */
+        public function getNe()
+        {
+        }
+        /**
+         * The southwest corner of the box.
+         *
+         * @param LatLng $sw
+         */
+        public function setSw(LatLng $sw)
+        {
+        }
+        /**
+         * @return LatLng
+         */
+        public function getSw()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LatLng
+     * Runtime class alias of \Google\Service\Solar\LatLngBox registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNe()
-    {
-    }
-    /**
-     * The southwest corner of the box.
-     *
-     * @param LatLng $sw
-     */
-    public function setSw(LatLng $sw)
-    {
-    }
-    /**
-     * @return LatLng
-     */
-    public function getSw()
+    class Google_Service_Solar_LatLngBox extends \Google\Service\Solar\LatLngBox
     {
     }
 }

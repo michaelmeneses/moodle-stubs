@@ -21,100 +21,109 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1Value extends \Google\Model
-{
-    /**
-     * Represents a boolean value.
-     *
-     * @var bool
-     */
-    public $boolValue;
-    /**
-     * Represents a double value.
-     *
-     * @var 
-     */
-    public $doubleValue;
-    /**
-     * Represents an int64 value.
-     *
-     * @var string
-     */
-    public $int64Value;
-    /**
-     * Represents an 'Any' proto value.
-     *
-     * @var array[]
-     */
-    public $protoValue;
-    /**
-     * Represents a string value.
-     *
-     * @var string
-     */
-    public $stringValue;
-    /**
-     * Represents a boolean value.
-     *
-     * @param bool $boolValue
-     */
-    public function setBoolValue($boolValue)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1Value extends \Google\Model
     {
+        /**
+         * Represents a boolean value.
+         *
+         * @var bool
+         */
+        public $boolValue;
+        /**
+         * Represents a double value.
+         *
+         * @var 
+         */
+        public $doubleValue;
+        /**
+         * Represents an int64 value.
+         *
+         * @var string
+         */
+        public $int64Value;
+        /**
+         * Represents an 'Any' proto value.
+         *
+         * @var array[]
+         */
+        public $protoValue;
+        /**
+         * Represents a string value.
+         *
+         * @var string
+         */
+        public $stringValue;
+        /**
+         * Represents a boolean value.
+         *
+         * @param bool $boolValue
+         */
+        public function setBoolValue($boolValue)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getBoolValue()
+        {
+        }
+        public function setDoubleValue($doubleValue)
+        {
+        }
+        public function getDoubleValue()
+        {
+        }
+        /**
+         * Represents an int64 value.
+         *
+         * @param string $int64Value
+         */
+        public function setInt64Value($int64Value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInt64Value()
+        {
+        }
+        /**
+         * Represents an 'Any' proto value.
+         *
+         * @param array[] $protoValue
+         */
+        public function setProtoValue($protoValue)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getProtoValue()
+        {
+        }
+        /**
+         * Represents a string value.
+         *
+         * @param string $stringValue
+         */
+        public function setStringValue($stringValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStringValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1Value registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBoolValue()
-    {
-    }
-    public function setDoubleValue($doubleValue)
-    {
-    }
-    public function getDoubleValue()
-    {
-    }
-    /**
-     * Represents an int64 value.
-     *
-     * @param string $int64Value
-     */
-    public function setInt64Value($int64Value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInt64Value()
-    {
-    }
-    /**
-     * Represents an 'Any' proto value.
-     *
-     * @param array[] $protoValue
-     */
-    public function setProtoValue($protoValue)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getProtoValue()
-    {
-    }
-    /**
-     * Represents a string value.
-     *
-     * @param string $stringValue
-     */
-    public function setStringValue($stringValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStringValue()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1Value extends \Google\Service\Cloudchannel\GoogleCloudChannelV1Value
     {
     }
 }

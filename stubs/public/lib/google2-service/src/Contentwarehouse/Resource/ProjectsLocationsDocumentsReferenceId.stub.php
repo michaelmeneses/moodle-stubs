@@ -21,64 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse\Resource;
-
-/**
- * The "referenceId" collection of methods.
- * Typical usage is:
- *  <code>
- *   $contentwarehouseService = new Google\Service\Contentwarehouse(...);
- *   $referenceId = $contentwarehouseService->projects_locations_documents_referenceId;
- *  </code>
- */
-class ProjectsLocationsDocumentsReferenceId extends \Google\Service\Resource
-{
+namespace Google\Service\Contentwarehouse\Resource {
+    use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1DeleteDocumentRequest;
+    use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1Document;
+    use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1GetDocumentRequest;
+    use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1UpdateDocumentRequest;
+    use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1UpdateDocumentResponse;
+    use Google\Service\Contentwarehouse\GoogleProtobufEmpty;
     /**
-     * Deletes a document. Returns NOT_FOUND if the document does not exist.
-     * (referenceId.delete)
-     *
-     * @param string $name Required. The name of the document to delete. Format:
-     * projects/{project_number}/locations/{location}/documents/{document_id} or pro
-     * jects/{project_number}/locations/{location}/documents/referenceId/{reference_
-     * id}.
-     * @param GoogleCloudContentwarehouseV1DeleteDocumentRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleProtobufEmpty
-     * @throws \Google\Service\Exception
+     * The "referenceId" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $contentwarehouseService = new Google\Service\Contentwarehouse(...);
+     *   $referenceId = $contentwarehouseService->projects_locations_documents_referenceId;
+     *  </code>
      */
-    public function delete($name, GoogleCloudContentwarehouseV1DeleteDocumentRequest $postBody, $optParams = [])
+    class ProjectsLocationsDocumentsReferenceId extends \Google\Service\Resource
     {
+        /**
+         * Deletes a document. Returns NOT_FOUND if the document does not exist.
+         * (referenceId.delete)
+         *
+         * @param string $name Required. The name of the document to delete. Format:
+         * projects/{project_number}/locations/{location}/documents/{document_id} or pro
+         * jects/{project_number}/locations/{location}/documents/referenceId/{reference_
+         * id}.
+         * @param GoogleCloudContentwarehouseV1DeleteDocumentRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleProtobufEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, GoogleCloudContentwarehouseV1DeleteDocumentRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Gets a document. Returns NOT_FOUND if the document does not exist.
+         * (referenceId.get)
+         *
+         * @param string $name Required. The name of the document to retrieve. Format:
+         * projects/{project_number}/locations/{location}/documents/{document_id} or pro
+         * jects/{project_number}/locations/{location}/documents/referenceId/{reference_
+         * id}.
+         * @param GoogleCloudContentwarehouseV1GetDocumentRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudContentwarehouseV1Document
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, GoogleCloudContentwarehouseV1GetDocumentRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Updates a document. Returns INVALID_ARGUMENT if the name of the document is
+         * non-empty and does not equal the existing name. (referenceId.patch)
+         *
+         * @param string $name Required. The name of the document to update. Format:
+         * projects/{project_number}/locations/{location}/documents/{document_id} or pro
+         * jects/{project_number}/locations/{location}/documents/referenceId/{reference_
+         * id}.
+         * @param GoogleCloudContentwarehouseV1UpdateDocumentRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudContentwarehouseV1UpdateDocumentResponse
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, GoogleCloudContentwarehouseV1UpdateDocumentRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets a document. Returns NOT_FOUND if the document does not exist.
-     * (referenceId.get)
-     *
-     * @param string $name Required. The name of the document to retrieve. Format:
-     * projects/{project_number}/locations/{location}/documents/{document_id} or pro
-     * jects/{project_number}/locations/{location}/documents/referenceId/{reference_
-     * id}.
-     * @param GoogleCloudContentwarehouseV1GetDocumentRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudContentwarehouseV1Document
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Contentwarehouse\Resource\ProjectsLocationsDocumentsReferenceId registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($name, GoogleCloudContentwarehouseV1GetDocumentRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Updates a document. Returns INVALID_ARGUMENT if the name of the document is
-     * non-empty and does not equal the existing name. (referenceId.patch)
-     *
-     * @param string $name Required. The name of the document to update. Format:
-     * projects/{project_number}/locations/{location}/documents/{document_id} or pro
-     * jects/{project_number}/locations/{location}/documents/referenceId/{reference_
-     * id}.
-     * @param GoogleCloudContentwarehouseV1UpdateDocumentRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudContentwarehouseV1UpdateDocumentResponse
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, GoogleCloudContentwarehouseV1UpdateDocumentRequest $postBody, $optParams = [])
+    class Google_Service_Contentwarehouse_Resource_ProjectsLocationsDocumentsReferenceId extends \Google\Service\Contentwarehouse\Resource\ProjectsLocationsDocumentsReferenceId
     {
     }
 }

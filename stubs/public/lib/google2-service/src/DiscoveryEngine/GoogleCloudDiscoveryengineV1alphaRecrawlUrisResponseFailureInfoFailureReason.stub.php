@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaRecrawlUrisResponseFailureInfoFailureReason extends \Google\Model
-{
-    /**
-     * Default value.
-     */
-    public const CORPUS_TYPE_CORPUS_TYPE_UNSPECIFIED = 'CORPUS_TYPE_UNSPECIFIED';
-    /**
-     * Denotes a crawling attempt for the desktop version of a page.
-     */
-    public const CORPUS_TYPE_DESKTOP = 'DESKTOP';
-    /**
-     * Denotes a crawling attempt for the mobile version of a page.
-     */
-    public const CORPUS_TYPE_MOBILE = 'MOBILE';
-    /**
-     * DESKTOP, MOBILE, or CORPUS_TYPE_UNSPECIFIED.
-     *
-     * @var string
-     */
-    public $corpusType;
-    /**
-     * Reason why the URI was not crawled.
-     *
-     * @var string
-     */
-    public $errorMessage;
-    /**
-     * DESKTOP, MOBILE, or CORPUS_TYPE_UNSPECIFIED.
-     *
-     * Accepted values: CORPUS_TYPE_UNSPECIFIED, DESKTOP, MOBILE
-     *
-     * @param self::CORPUS_TYPE_* $corpusType
-     */
-    public function setCorpusType($corpusType)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaRecrawlUrisResponseFailureInfoFailureReason extends \Google\Model
     {
+        /**
+         * Default value.
+         */
+        public const CORPUS_TYPE_CORPUS_TYPE_UNSPECIFIED = 'CORPUS_TYPE_UNSPECIFIED';
+        /**
+         * Denotes a crawling attempt for the desktop version of a page.
+         */
+        public const CORPUS_TYPE_DESKTOP = 'DESKTOP';
+        /**
+         * Denotes a crawling attempt for the mobile version of a page.
+         */
+        public const CORPUS_TYPE_MOBILE = 'MOBILE';
+        /**
+         * DESKTOP, MOBILE, or CORPUS_TYPE_UNSPECIFIED.
+         *
+         * @var string
+         */
+        public $corpusType;
+        /**
+         * Reason why the URI was not crawled.
+         *
+         * @var string
+         */
+        public $errorMessage;
+        /**
+         * DESKTOP, MOBILE, or CORPUS_TYPE_UNSPECIFIED.
+         *
+         * Accepted values: CORPUS_TYPE_UNSPECIFIED, DESKTOP, MOBILE
+         *
+         * @param self::CORPUS_TYPE_* $corpusType
+         */
+        public function setCorpusType($corpusType)
+        {
+        }
+        /**
+         * @return self::CORPUS_TYPE_*
+         */
+        public function getCorpusType()
+        {
+        }
+        /**
+         * Reason why the URI was not crawled.
+         *
+         * @param string $errorMessage
+         */
+        public function setErrorMessage($errorMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getErrorMessage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::CORPUS_TYPE_*
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaRecrawlUrisResponseFailureInfoFailureReason registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCorpusType()
-    {
-    }
-    /**
-     * Reason why the URI was not crawled.
-     *
-     * @param string $errorMessage
-     */
-    public function setErrorMessage($errorMessage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getErrorMessage()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaRecrawlUrisResponseFailureInfoFailureReason extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaRecrawlUrisResponseFailureInfoFailureReason
     {
     }
 }

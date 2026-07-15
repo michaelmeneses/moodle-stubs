@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1beta1ImportTaxonomiesRequest extends \Google\Model
-{
-    protected $inlineSourceType = GoogleCloudDatacatalogV1beta1InlineSource::class;
-    protected $inlineSourceDataType = '';
-    /**
-     * @param GoogleCloudDatacatalogV1beta1InlineSource
-     */
-    public function setInlineSource(GoogleCloudDatacatalogV1beta1InlineSource $inlineSource)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1beta1ImportTaxonomiesRequest extends \Google\Model
     {
+        protected $inlineSourceType = GoogleCloudDatacatalogV1beta1InlineSource::class;
+        protected $inlineSourceDataType = '';
+        /**
+         * @param GoogleCloudDatacatalogV1beta1InlineSource
+         */
+        public function setInlineSource(GoogleCloudDatacatalogV1beta1InlineSource $inlineSource)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1beta1InlineSource
+         */
+        public function getInlineSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatacatalogV1beta1InlineSource
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1beta1ImportTaxonomiesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInlineSource()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1beta1ImportTaxonomiesRequest extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1beta1ImportTaxonomiesRequest
     {
     }
 }

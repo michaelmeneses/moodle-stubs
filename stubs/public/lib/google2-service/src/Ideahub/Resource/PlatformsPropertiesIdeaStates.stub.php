@@ -21,30 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Ideahub\Resource;
-
-/**
- * The "ideaStates" collection of methods.
- * Typical usage is:
- *  <code>
- *   $ideahubService = new Google\Service\Ideahub(...);
- *   $ideaStates = $ideahubService->platforms_properties_ideaStates;
- *  </code>
- */
-class PlatformsPropertiesIdeaStates extends \Google\Service\Resource
-{
+namespace Google\Service\Ideahub\Resource {
+    use Google\Service\Ideahub\GoogleSearchIdeahubV1betaIdeaState;
     /**
-     * Update an idea state resource. (ideaStates.patch)
-     *
-     * @param string $name Unique identifier for the idea state. Format:
-     * platforms/{platform}/properties/{property}/ideaStates/{idea_state}
-     * @param GoogleSearchIdeahubV1betaIdeaState $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask The list of fields to be updated.
-     * @return GoogleSearchIdeahubV1betaIdeaState
+     * The "ideaStates" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $ideahubService = new Google\Service\Ideahub(...);
+     *   $ideaStates = $ideahubService->platforms_properties_ideaStates;
+     *  </code>
      */
-    public function patch($name, GoogleSearchIdeahubV1betaIdeaState $postBody, $optParams = [])
+    class PlatformsPropertiesIdeaStates extends \Google\Service\Resource
+    {
+        /**
+         * Update an idea state resource. (ideaStates.patch)
+         *
+         * @param string $name Unique identifier for the idea state. Format:
+         * platforms/{platform}/properties/{property}/ideaStates/{idea_state}
+         * @param GoogleSearchIdeahubV1betaIdeaState $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask The list of fields to be updated.
+         * @return GoogleSearchIdeahubV1betaIdeaState
+         */
+        public function patch($name, GoogleSearchIdeahubV1betaIdeaState $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Ideahub\Resource\PlatformsPropertiesIdeaStates registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Ideahub_Resource_PlatformsPropertiesIdeaStates extends \Google\Service\Ideahub\Resource\PlatformsPropertiesIdeaStates
     {
     }
 }

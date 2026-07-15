@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Speech;
-
-class ClassItem extends \Google\Model
-{
-    /**
-     * The class item's value.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * The class item's value.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
+namespace Google\Service\Speech {
+    class ClassItem extends \Google\Model
     {
+        /**
+         * The class item's value.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * The class item's value.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Speech\ClassItem registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getValue()
+    class Google_Service_Speech_ClassItem extends \Google\Service\Speech\ClassItem
     {
     }
 }

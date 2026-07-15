@@ -21,84 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GamesConfiguration\Resource;
-
-/**
- * The "leaderboardConfigurations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $gamesConfigurationService = new Google\Service\GamesConfiguration(...);
- *   $leaderboardConfigurations = $gamesConfigurationService->leaderboardConfigurations;
- *  </code>
- */
-class LeaderboardConfigurations extends \Google\Service\Resource
-{
+namespace Google\Service\GamesConfiguration\Resource {
+    use Google\Service\GamesConfiguration\LeaderboardConfiguration;
+    use Google\Service\GamesConfiguration\LeaderboardConfigurationListResponse;
     /**
-     * Delete the leaderboard configuration with the given ID.
-     * (leaderboardConfigurations.delete)
-     *
-     * @param string $leaderboardId The ID of the leaderboard.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * The "leaderboardConfigurations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $gamesConfigurationService = new Google\Service\GamesConfiguration(...);
+     *   $leaderboardConfigurations = $gamesConfigurationService->leaderboardConfigurations;
+     *  </code>
      */
-    public function delete($leaderboardId, $optParams = [])
+    class LeaderboardConfigurations extends \Google\Service\Resource
     {
+        /**
+         * Delete the leaderboard configuration with the given ID.
+         * (leaderboardConfigurations.delete)
+         *
+         * @param string $leaderboardId The ID of the leaderboard.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($leaderboardId, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves the metadata of the leaderboard configuration with the given ID.
+         * (leaderboardConfigurations.get)
+         *
+         * @param string $leaderboardId The ID of the leaderboard.
+         * @param array $optParams Optional parameters.
+         * @return LeaderboardConfiguration
+         * @throws \Google\Service\Exception
+         */
+        public function get($leaderboardId, $optParams = [])
+        {
+        }
+        /**
+         * Insert a new leaderboard configuration in this application.
+         * (leaderboardConfigurations.insert)
+         *
+         * @param string $applicationId The application ID from the Google Play
+         * developer console.
+         * @param LeaderboardConfiguration $postBody
+         * @param array $optParams Optional parameters.
+         * @return LeaderboardConfiguration
+         * @throws \Google\Service\Exception
+         */
+        public function insert($applicationId, LeaderboardConfiguration $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Returns a list of the leaderboard configurations in this application.
+         * (leaderboardConfigurations.listLeaderboardConfigurations)
+         *
+         * @param string $applicationId The application ID from the Google Play
+         * developer console.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int maxResults The maximum number of resource configurations to
+         * return in the response, used for paging. For any response, the actual number
+         * of resources returned may be less than the specified `maxResults`.
+         * @opt_param string pageToken The token returned by the previous request.
+         * @return LeaderboardConfigurationListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listLeaderboardConfigurations($applicationId, $optParams = [])
+        {
+        }
+        /**
+         * Update the metadata of the leaderboard configuration with the given ID.
+         * (leaderboardConfigurations.update)
+         *
+         * @param string $leaderboardId The ID of the leaderboard.
+         * @param LeaderboardConfiguration $postBody
+         * @param array $optParams Optional parameters.
+         * @return LeaderboardConfiguration
+         * @throws \Google\Service\Exception
+         */
+        public function update($leaderboardId, LeaderboardConfiguration $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Retrieves the metadata of the leaderboard configuration with the given ID.
-     * (leaderboardConfigurations.get)
-     *
-     * @param string $leaderboardId The ID of the leaderboard.
-     * @param array $optParams Optional parameters.
-     * @return LeaderboardConfiguration
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\GamesConfiguration\Resource\LeaderboardConfigurations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($leaderboardId, $optParams = [])
-    {
-    }
-    /**
-     * Insert a new leaderboard configuration in this application.
-     * (leaderboardConfigurations.insert)
-     *
-     * @param string $applicationId The application ID from the Google Play
-     * developer console.
-     * @param LeaderboardConfiguration $postBody
-     * @param array $optParams Optional parameters.
-     * @return LeaderboardConfiguration
-     * @throws \Google\Service\Exception
-     */
-    public function insert($applicationId, LeaderboardConfiguration $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Returns a list of the leaderboard configurations in this application.
-     * (leaderboardConfigurations.listLeaderboardConfigurations)
-     *
-     * @param string $applicationId The application ID from the Google Play
-     * developer console.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int maxResults The maximum number of resource configurations to
-     * return in the response, used for paging. For any response, the actual number
-     * of resources returned may be less than the specified `maxResults`.
-     * @opt_param string pageToken The token returned by the previous request.
-     * @return LeaderboardConfigurationListResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listLeaderboardConfigurations($applicationId, $optParams = [])
-    {
-    }
-    /**
-     * Update the metadata of the leaderboard configuration with the given ID.
-     * (leaderboardConfigurations.update)
-     *
-     * @param string $leaderboardId The ID of the leaderboard.
-     * @param LeaderboardConfiguration $postBody
-     * @param array $optParams Optional parameters.
-     * @return LeaderboardConfiguration
-     * @throws \Google\Service\Exception
-     */
-    public function update($leaderboardId, LeaderboardConfiguration $postBody, $optParams = [])
+    class Google_Service_GamesConfiguration_Resource_LeaderboardConfigurations extends \Google\Service\GamesConfiguration\Resource\LeaderboardConfigurations
     {
     }
 }

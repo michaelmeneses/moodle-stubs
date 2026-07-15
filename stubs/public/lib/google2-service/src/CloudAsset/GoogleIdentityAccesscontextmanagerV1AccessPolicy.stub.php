@@ -21,141 +21,150 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class GoogleIdentityAccesscontextmanagerV1AccessPolicy extends \Google\Collection
-{
-    protected $collection_key = 'scopes';
-    /**
-     * Output only. An opaque identifier for the current version of the
-     * `AccessPolicy`. This will always be a strongly validated etag, meaning that
-     * two Access Policies will be identical if and only if their etags are
-     * identical. Clients should not expect this to be in any specific format.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * Output only. Identifier. Resource name of the `AccessPolicy`. Format:
-     * `accessPolicies/{access_policy}`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. The parent of this `AccessPolicy` in the Cloud Resource
-     * Hierarchy. Currently immutable once created. Format:
-     * `organizations/{organization_id}`
-     *
-     * @var string
-     */
-    public $parent;
-    /**
-     * The scopes of the AccessPolicy. Scopes define which resources a policy can
-     * restrict and where its resources can be referenced. For example, policy A
-     * with `scopes=["folders/123"]` has the following behavior: -
-     * ServicePerimeter can only restrict projects within `folders/123`. -
-     * ServicePerimeter within policy A can only reference access levels defined
-     * within policy A. - Only one policy can include a given scope; thus,
-     * attempting to create a second policy which includes `folders/123` will
-     * result in an error. If no scopes are provided, then any resource within the
-     * organization can be restricted. Scopes cannot be modified after a policy is
-     * created. Policies can only have a single scope. Format: list of
-     * `folders/{folder_number}` or `projects/{project_number}`
-     *
-     * @var string[]
-     */
-    public $scopes;
-    /**
-     * Required. Human readable title. Does not affect behavior.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * Output only. An opaque identifier for the current version of the
-     * `AccessPolicy`. This will always be a strongly validated etag, meaning that
-     * two Access Policies will be identical if and only if their etags are
-     * identical. Clients should not expect this to be in any specific format.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
+namespace Google\Service\CloudAsset {
+    class GoogleIdentityAccesscontextmanagerV1AccessPolicy extends \Google\Collection
     {
+        protected $collection_key = 'scopes';
+        /**
+         * Output only. An opaque identifier for the current version of the
+         * `AccessPolicy`. This will always be a strongly validated etag, meaning that
+         * two Access Policies will be identical if and only if their etags are
+         * identical. Clients should not expect this to be in any specific format.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * Output only. Identifier. Resource name of the `AccessPolicy`. Format:
+         * `accessPolicies/{access_policy}`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. The parent of this `AccessPolicy` in the Cloud Resource
+         * Hierarchy. Currently immutable once created. Format:
+         * `organizations/{organization_id}`
+         *
+         * @var string
+         */
+        public $parent;
+        /**
+         * The scopes of the AccessPolicy. Scopes define which resources a policy can
+         * restrict and where its resources can be referenced. For example, policy A
+         * with `scopes=["folders/123"]` has the following behavior: -
+         * ServicePerimeter can only restrict projects within `folders/123`. -
+         * ServicePerimeter within policy A can only reference access levels defined
+         * within policy A. - Only one policy can include a given scope; thus,
+         * attempting to create a second policy which includes `folders/123` will
+         * result in an error. If no scopes are provided, then any resource within the
+         * organization can be restricted. Scopes cannot be modified after a policy is
+         * created. Policies can only have a single scope. Format: list of
+         * `folders/{folder_number}` or `projects/{project_number}`
+         *
+         * @var string[]
+         */
+        public $scopes;
+        /**
+         * Required. Human readable title. Does not affect behavior.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * Output only. An opaque identifier for the current version of the
+         * `AccessPolicy`. This will always be a strongly validated etag, meaning that
+         * two Access Policies will be identical if and only if their etags are
+         * identical. Clients should not expect this to be in any specific format.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * Output only. Identifier. Resource name of the `AccessPolicy`. Format:
+         * `accessPolicies/{access_policy}`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Required. The parent of this `AccessPolicy` in the Cloud Resource
+         * Hierarchy. Currently immutable once created. Format:
+         * `organizations/{organization_id}`
+         *
+         * @param string $parent
+         */
+        public function setParent($parent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParent()
+        {
+        }
+        /**
+         * The scopes of the AccessPolicy. Scopes define which resources a policy can
+         * restrict and where its resources can be referenced. For example, policy A
+         * with `scopes=["folders/123"]` has the following behavior: -
+         * ServicePerimeter can only restrict projects within `folders/123`. -
+         * ServicePerimeter within policy A can only reference access levels defined
+         * within policy A. - Only one policy can include a given scope; thus,
+         * attempting to create a second policy which includes `folders/123` will
+         * result in an error. If no scopes are provided, then any resource within the
+         * organization can be restricted. Scopes cannot be modified after a policy is
+         * created. Policies can only have a single scope. Format: list of
+         * `folders/{folder_number}` or `projects/{project_number}`
+         *
+         * @param string[] $scopes
+         */
+        public function setScopes($scopes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getScopes()
+        {
+        }
+        /**
+         * Required. Human readable title. Does not affect behavior.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudAsset\GoogleIdentityAccesscontextmanagerV1AccessPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
-    {
-    }
-    /**
-     * Output only. Identifier. Resource name of the `AccessPolicy`. Format:
-     * `accessPolicies/{access_policy}`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Required. The parent of this `AccessPolicy` in the Cloud Resource
-     * Hierarchy. Currently immutable once created. Format:
-     * `organizations/{organization_id}`
-     *
-     * @param string $parent
-     */
-    public function setParent($parent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParent()
-    {
-    }
-    /**
-     * The scopes of the AccessPolicy. Scopes define which resources a policy can
-     * restrict and where its resources can be referenced. For example, policy A
-     * with `scopes=["folders/123"]` has the following behavior: -
-     * ServicePerimeter can only restrict projects within `folders/123`. -
-     * ServicePerimeter within policy A can only reference access levels defined
-     * within policy A. - Only one policy can include a given scope; thus,
-     * attempting to create a second policy which includes `folders/123` will
-     * result in an error. If no scopes are provided, then any resource within the
-     * organization can be restricted. Scopes cannot be modified after a policy is
-     * created. Policies can only have a single scope. Format: list of
-     * `folders/{folder_number}` or `projects/{project_number}`
-     *
-     * @param string[] $scopes
-     */
-    public function setScopes($scopes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getScopes()
-    {
-    }
-    /**
-     * Required. Human readable title. Does not affect behavior.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_CloudAsset_GoogleIdentityAccesscontextmanagerV1AccessPolicy extends \Google\Service\CloudAsset\GoogleIdentityAccesscontextmanagerV1AccessPolicy
     {
     }
 }

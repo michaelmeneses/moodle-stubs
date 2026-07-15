@@ -21,197 +21,206 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1DeveloperAppKey extends \Google\Collection
-{
-    protected $collection_key = 'scopes';
-    /**
-     * List of API products for which the credential can be used. **Note**: Do not
-     * specify the list of API products when creating a consumer key and secret
-     * for a developer app. Instead, use the UpdateDeveloperAppKey API to make the
-     * association after the consumer key and secret are created.
-     *
-     * @var array[]
-     */
-    public $apiProducts;
-    protected $attributesType = GoogleCloudApigeeV1Attribute::class;
-    protected $attributesDataType = 'array';
-    /**
-     * Consumer key.
-     *
-     * @var string
-     */
-    public $consumerKey;
-    /**
-     * Secret key.
-     *
-     * @var string
-     */
-    public $consumerSecret;
-    /**
-     * Time the developer app expires in milliseconds since epoch.
-     *
-     * @var string
-     */
-    public $expiresAt;
-    /**
-     * Input only. Expiration time, in seconds, for the consumer key. If not set
-     * or left to the default value of `-1`, the API key never expires. The
-     * expiration time can't be updated after it is set.
-     *
-     * @var string
-     */
-    public $expiresInSeconds;
-    /**
-     * Time the developer app was created in milliseconds since epoch.
-     *
-     * @var string
-     */
-    public $issuedAt;
-    /**
-     * Scopes to apply to the app. The specified scope names must already be
-     * defined for the API product that you associate with the app.
-     *
-     * @var string[]
-     */
-    public $scopes;
-    /**
-     * Status of the credential. Valid values include `approved` or `revoked`.
-     *
-     * @var string
-     */
-    public $status;
-    /**
-     * List of API products for which the credential can be used. **Note**: Do not
-     * specify the list of API products when creating a consumer key and secret
-     * for a developer app. Instead, use the UpdateDeveloperAppKey API to make the
-     * association after the consumer key and secret are created.
-     *
-     * @param array[] $apiProducts
-     */
-    public function setApiProducts($apiProducts)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1DeveloperAppKey extends \Google\Collection
     {
+        protected $collection_key = 'scopes';
+        /**
+         * List of API products for which the credential can be used. **Note**: Do not
+         * specify the list of API products when creating a consumer key and secret
+         * for a developer app. Instead, use the UpdateDeveloperAppKey API to make the
+         * association after the consumer key and secret are created.
+         *
+         * @var array[]
+         */
+        public $apiProducts;
+        protected $attributesType = GoogleCloudApigeeV1Attribute::class;
+        protected $attributesDataType = 'array';
+        /**
+         * Consumer key.
+         *
+         * @var string
+         */
+        public $consumerKey;
+        /**
+         * Secret key.
+         *
+         * @var string
+         */
+        public $consumerSecret;
+        /**
+         * Time the developer app expires in milliseconds since epoch.
+         *
+         * @var string
+         */
+        public $expiresAt;
+        /**
+         * Input only. Expiration time, in seconds, for the consumer key. If not set
+         * or left to the default value of `-1`, the API key never expires. The
+         * expiration time can't be updated after it is set.
+         *
+         * @var string
+         */
+        public $expiresInSeconds;
+        /**
+         * Time the developer app was created in milliseconds since epoch.
+         *
+         * @var string
+         */
+        public $issuedAt;
+        /**
+         * Scopes to apply to the app. The specified scope names must already be
+         * defined for the API product that you associate with the app.
+         *
+         * @var string[]
+         */
+        public $scopes;
+        /**
+         * Status of the credential. Valid values include `approved` or `revoked`.
+         *
+         * @var string
+         */
+        public $status;
+        /**
+         * List of API products for which the credential can be used. **Note**: Do not
+         * specify the list of API products when creating a consumer key and secret
+         * for a developer app. Instead, use the UpdateDeveloperAppKey API to make the
+         * association after the consumer key and secret are created.
+         *
+         * @param array[] $apiProducts
+         */
+        public function setApiProducts($apiProducts)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getApiProducts()
+        {
+        }
+        /**
+         * List of attributes associated with the credential.
+         *
+         * @param GoogleCloudApigeeV1Attribute[] $attributes
+         */
+        public function setAttributes($attributes)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1Attribute[]
+         */
+        public function getAttributes()
+        {
+        }
+        /**
+         * Consumer key.
+         *
+         * @param string $consumerKey
+         */
+        public function setConsumerKey($consumerKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConsumerKey()
+        {
+        }
+        /**
+         * Secret key.
+         *
+         * @param string $consumerSecret
+         */
+        public function setConsumerSecret($consumerSecret)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConsumerSecret()
+        {
+        }
+        /**
+         * Time the developer app expires in milliseconds since epoch.
+         *
+         * @param string $expiresAt
+         */
+        public function setExpiresAt($expiresAt)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpiresAt()
+        {
+        }
+        /**
+         * Input only. Expiration time, in seconds, for the consumer key. If not set
+         * or left to the default value of `-1`, the API key never expires. The
+         * expiration time can't be updated after it is set.
+         *
+         * @param string $expiresInSeconds
+         */
+        public function setExpiresInSeconds($expiresInSeconds)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpiresInSeconds()
+        {
+        }
+        /**
+         * Time the developer app was created in milliseconds since epoch.
+         *
+         * @param string $issuedAt
+         */
+        public function setIssuedAt($issuedAt)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIssuedAt()
+        {
+        }
+        /**
+         * Scopes to apply to the app. The specified scope names must already be
+         * defined for the API product that you associate with the app.
+         *
+         * @param string[] $scopes
+         */
+        public function setScopes($scopes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getScopes()
+        {
+        }
+        /**
+         * Status of the credential. Valid values include `approved` or `revoked`.
+         *
+         * @param string $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1DeveloperAppKey registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiProducts()
-    {
-    }
-    /**
-     * List of attributes associated with the credential.
-     *
-     * @param GoogleCloudApigeeV1Attribute[] $attributes
-     */
-    public function setAttributes($attributes)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1Attribute[]
-     */
-    public function getAttributes()
-    {
-    }
-    /**
-     * Consumer key.
-     *
-     * @param string $consumerKey
-     */
-    public function setConsumerKey($consumerKey)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getConsumerKey()
-    {
-    }
-    /**
-     * Secret key.
-     *
-     * @param string $consumerSecret
-     */
-    public function setConsumerSecret($consumerSecret)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getConsumerSecret()
-    {
-    }
-    /**
-     * Time the developer app expires in milliseconds since epoch.
-     *
-     * @param string $expiresAt
-     */
-    public function setExpiresAt($expiresAt)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExpiresAt()
-    {
-    }
-    /**
-     * Input only. Expiration time, in seconds, for the consumer key. If not set
-     * or left to the default value of `-1`, the API key never expires. The
-     * expiration time can't be updated after it is set.
-     *
-     * @param string $expiresInSeconds
-     */
-    public function setExpiresInSeconds($expiresInSeconds)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExpiresInSeconds()
-    {
-    }
-    /**
-     * Time the developer app was created in milliseconds since epoch.
-     *
-     * @param string $issuedAt
-     */
-    public function setIssuedAt($issuedAt)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIssuedAt()
-    {
-    }
-    /**
-     * Scopes to apply to the app. The specified scope names must already be
-     * defined for the API product that you associate with the app.
-     *
-     * @param string[] $scopes
-     */
-    public function setScopes($scopes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getScopes()
-    {
-    }
-    /**
-     * Status of the credential. Valid values include `approved` or `revoked`.
-     *
-     * @param string $status
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStatus()
+    class Google_Service_Apigee_GoogleCloudApigeeV1DeveloperAppKey extends \Google\Service\Apigee\GoogleCloudApigeeV1DeveloperAppKey
     {
     }
 }

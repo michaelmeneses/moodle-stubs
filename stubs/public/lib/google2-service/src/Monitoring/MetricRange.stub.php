@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class MetricRange extends \Google\Model
-{
-    protected $rangeType = GoogleMonitoringV3Range::class;
-    protected $rangeDataType = '';
-    /**
-     * A monitoring filter (https://cloud.google.com/monitoring/api/v3/filters)
-     * specifying the TimeSeries to use for evaluating window quality.
-     *
-     * @var string
-     */
-    public $timeSeries;
-    /**
-     * Range of values considered "good." For a one-sided range, set one bound to
-     * an infinite value.
-     *
-     * @param GoogleMonitoringV3Range $range
-     */
-    public function setRange(GoogleMonitoringV3Range $range)
+namespace Google\Service\Monitoring {
+    class MetricRange extends \Google\Model
     {
+        protected $rangeType = GoogleMonitoringV3Range::class;
+        protected $rangeDataType = '';
+        /**
+         * A monitoring filter (https://cloud.google.com/monitoring/api/v3/filters)
+         * specifying the TimeSeries to use for evaluating window quality.
+         *
+         * @var string
+         */
+        public $timeSeries;
+        /**
+         * Range of values considered "good." For a one-sided range, set one bound to
+         * an infinite value.
+         *
+         * @param GoogleMonitoringV3Range $range
+         */
+        public function setRange(GoogleMonitoringV3Range $range)
+        {
+        }
+        /**
+         * @return GoogleMonitoringV3Range
+         */
+        public function getRange()
+        {
+        }
+        /**
+         * A monitoring filter (https://cloud.google.com/monitoring/api/v3/filters)
+         * specifying the TimeSeries to use for evaluating window quality.
+         *
+         * @param string $timeSeries
+         */
+        public function setTimeSeries($timeSeries)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimeSeries()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleMonitoringV3Range
+     * Runtime class alias of \Google\Service\Monitoring\MetricRange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRange()
-    {
-    }
-    /**
-     * A monitoring filter (https://cloud.google.com/monitoring/api/v3/filters)
-     * specifying the TimeSeries to use for evaluating window quality.
-     *
-     * @param string $timeSeries
-     */
-    public function setTimeSeries($timeSeries)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimeSeries()
+    class Google_Service_Monitoring_MetricRange extends \Google\Service\Monitoring\MetricRange
     {
     }
 }

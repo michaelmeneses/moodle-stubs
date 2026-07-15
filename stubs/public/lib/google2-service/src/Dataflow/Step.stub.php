@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class Step extends \Google\Model
-{
-    /**
-     * The kind of step in the Cloud Dataflow job.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The name that identifies the step. This must be unique for each step with
-     * respect to all other steps in the Cloud Dataflow job.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Named properties associated with the step. Each kind of predefined step has
-     * its own required set of properties. Must be provided on Create. Only
-     * retrieved with JOB_VIEW_ALL.
-     *
-     * @var array[]
-     */
-    public $properties;
-    /**
-     * The kind of step in the Cloud Dataflow job.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Dataflow {
+    class Step extends \Google\Model
     {
+        /**
+         * The kind of step in the Cloud Dataflow job.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The name that identifies the step. This must be unique for each step with
+         * respect to all other steps in the Cloud Dataflow job.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Named properties associated with the step. Each kind of predefined step has
+         * its own required set of properties. Must be provided on Create. Only
+         * retrieved with JOB_VIEW_ALL.
+         *
+         * @var array[]
+         */
+        public $properties;
+        /**
+         * The kind of step in the Cloud Dataflow job.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The name that identifies the step. This must be unique for each step with
+         * respect to all other steps in the Cloud Dataflow job.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Named properties associated with the step. Each kind of predefined step has
+         * its own required set of properties. Must be provided on Create. Only
+         * retrieved with JOB_VIEW_ALL.
+         *
+         * @param array[] $properties
+         */
+        public function setProperties($properties)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getProperties()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataflow\Step registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * The name that identifies the step. This must be unique for each step with
-     * respect to all other steps in the Cloud Dataflow job.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Named properties associated with the step. Each kind of predefined step has
-     * its own required set of properties. Must be provided on Create. Only
-     * retrieved with JOB_VIEW_ALL.
-     *
-     * @param array[] $properties
-     */
-    public function setProperties($properties)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getProperties()
+    class Google_Service_Dataflow_Step extends \Google\Service\Dataflow\Step
     {
     }
 }

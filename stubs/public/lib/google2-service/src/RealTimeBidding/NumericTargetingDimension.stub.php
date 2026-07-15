@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RealTimeBidding;
-
-class NumericTargetingDimension extends \Google\Collection
-{
-    protected $collection_key = 'includedIds';
-    /**
-     * The IDs excluded in a configuration.
-     *
-     * @var string[]
-     */
-    public $excludedIds;
-    /**
-     * The IDs included in a configuration.
-     *
-     * @var string[]
-     */
-    public $includedIds;
-    /**
-     * The IDs excluded in a configuration.
-     *
-     * @param string[] $excludedIds
-     */
-    public function setExcludedIds($excludedIds)
+namespace Google\Service\RealTimeBidding {
+    class NumericTargetingDimension extends \Google\Collection
     {
+        protected $collection_key = 'includedIds';
+        /**
+         * The IDs excluded in a configuration.
+         *
+         * @var string[]
+         */
+        public $excludedIds;
+        /**
+         * The IDs included in a configuration.
+         *
+         * @var string[]
+         */
+        public $includedIds;
+        /**
+         * The IDs excluded in a configuration.
+         *
+         * @param string[] $excludedIds
+         */
+        public function setExcludedIds($excludedIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getExcludedIds()
+        {
+        }
+        /**
+         * The IDs included in a configuration.
+         *
+         * @param string[] $includedIds
+         */
+        public function setIncludedIds($includedIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getIncludedIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\RealTimeBidding\NumericTargetingDimension registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExcludedIds()
-    {
-    }
-    /**
-     * The IDs included in a configuration.
-     *
-     * @param string[] $includedIds
-     */
-    public function setIncludedIds($includedIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getIncludedIds()
+    class Google_Service_RealTimeBidding_NumericTargetingDimension extends \Google\Service\RealTimeBidding\NumericTargetingDimension
     {
     }
 }

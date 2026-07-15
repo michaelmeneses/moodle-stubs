@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaListSessionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'sessions';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    protected $sessionsType = GoogleCloudDiscoveryengineV1betaSession::class;
-    protected $sessionsDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaListSessionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'sessions';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        protected $sessionsType = GoogleCloudDiscoveryengineV1betaSession::class;
+        protected $sessionsDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaSession[]
+         */
+        public function setSessions($sessions)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaSession[]
+         */
+        public function getSessions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaListSessionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaSession[]
-     */
-    public function setSessions($sessions)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaSession[]
-     */
-    public function getSessions()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaListSessionsResponse extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaListSessionsResponse
     {
     }
 }

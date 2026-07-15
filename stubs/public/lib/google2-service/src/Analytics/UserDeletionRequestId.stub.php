@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics;
-
-class UserDeletionRequestId extends \Google\Model
-{
-    /**
-     * Type of user
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The User's id
-     *
-     * @var string
-     */
-    public $userId;
-    /**
-     * Type of user
-     *
-     * @param string $type
-     */
-    public function setType($type)
+namespace Google\Service\Analytics {
+    class UserDeletionRequestId extends \Google\Model
     {
+        /**
+         * Type of user
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The User's id
+         *
+         * @var string
+         */
+        public $userId;
+        /**
+         * Type of user
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
+        /**
+         * The User's id
+         *
+         * @param string $userId
+         */
+        public function setUserId($userId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Analytics\UserDeletionRequestId registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getType()
-    {
-    }
-    /**
-     * The User's id
-     *
-     * @param string $userId
-     */
-    public function setUserId($userId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserId()
+    class Google_Service_Analytics_UserDeletionRequestId extends \Google\Service\Analytics\UserDeletionRequestId
     {
     }
 }

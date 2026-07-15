@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIAP;
-
-class IapSettings extends \Google\Model
-{
-    protected $accessSettingsType = AccessSettings::class;
-    protected $accessSettingsDataType = '';
-    protected $applicationSettingsType = ApplicationSettings::class;
-    protected $applicationSettingsDataType = '';
-    /**
-     * Required. The resource name of the IAP protected resource.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optional. Top level wrapper for all access related setting in IAP
-     *
-     * @param AccessSettings $accessSettings
-     */
-    public function setAccessSettings(AccessSettings $accessSettings)
+namespace Google\Service\CloudIAP {
+    class IapSettings extends \Google\Model
     {
+        protected $accessSettingsType = AccessSettings::class;
+        protected $accessSettingsDataType = '';
+        protected $applicationSettingsType = ApplicationSettings::class;
+        protected $applicationSettingsDataType = '';
+        /**
+         * Required. The resource name of the IAP protected resource.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optional. Top level wrapper for all access related setting in IAP
+         *
+         * @param AccessSettings $accessSettings
+         */
+        public function setAccessSettings(AccessSettings $accessSettings)
+        {
+        }
+        /**
+         * @return AccessSettings
+         */
+        public function getAccessSettings()
+        {
+        }
+        /**
+         * Optional. Top level wrapper for all application related settings in IAP
+         *
+         * @param ApplicationSettings $applicationSettings
+         */
+        public function setApplicationSettings(ApplicationSettings $applicationSettings)
+        {
+        }
+        /**
+         * @return ApplicationSettings
+         */
+        public function getApplicationSettings()
+        {
+        }
+        /**
+         * Required. The resource name of the IAP protected resource.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AccessSettings
+     * Runtime class alias of \Google\Service\CloudIAP\IapSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccessSettings()
-    {
-    }
-    /**
-     * Optional. Top level wrapper for all application related settings in IAP
-     *
-     * @param ApplicationSettings $applicationSettings
-     */
-    public function setApplicationSettings(ApplicationSettings $applicationSettings)
-    {
-    }
-    /**
-     * @return ApplicationSettings
-     */
-    public function getApplicationSettings()
-    {
-    }
-    /**
-     * Required. The resource name of the IAP protected resource.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_CloudIAP_IapSettings extends \Google\Service\CloudIAP\IapSettings
     {
     }
 }

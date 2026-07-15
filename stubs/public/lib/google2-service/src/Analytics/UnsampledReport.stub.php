@@ -21,391 +21,400 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics;
-
-class UnsampledReport extends \Google\Model
-{
-    protected $internal_gapi_mappings = ["endDate" => "end-date", "startDate" => "start-date"];
-    /**
-     * Account ID to which this unsampled report belongs.
-     *
-     * @var string
-     */
-    public $accountId;
-    protected $cloudStorageDownloadDetailsType = UnsampledReportCloudStorageDownloadDetails::class;
-    protected $cloudStorageDownloadDetailsDataType = '';
-    /**
-     * Time this unsampled report was created.
-     *
-     * @var string
-     */
-    public $created;
-    /**
-     * The dimensions for the unsampled report.
-     *
-     * @var string
-     */
-    public $dimensions;
-    /**
-     * The type of download you need to use for the report data file. Possible
-     * values include `GOOGLE_DRIVE` and `GOOGLE_CLOUD_STORAGE`. If the value is
-     * `GOOGLE_DRIVE`, see the `driveDownloadDetails` field. If the value is
-     * `GOOGLE_CLOUD_STORAGE`, see the `cloudStorageDownloadDetails` field.
-     *
-     * @var string
-     */
-    public $downloadType;
-    protected $driveDownloadDetailsType = UnsampledReportDriveDownloadDetails::class;
-    protected $driveDownloadDetailsDataType = '';
-    /**
-     * The end date for the unsampled report.
-     *
-     * @var string
-     */
-    public $endDate;
-    /**
-     * The filters for the unsampled report.
-     *
-     * @var string
-     */
-    public $filters;
-    /**
-     * Unsampled report ID.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Resource type for an Analytics unsampled report.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The metrics for the unsampled report.
-     *
-     * @var string
-     */
-    public $metrics;
-    /**
-     * View (Profile) ID to which this unsampled report belongs.
-     *
-     * @var string
-     */
-    public $profileId;
-    /**
-     * The segment for the unsampled report.
-     *
-     * @var string
-     */
-    public $segment;
-    /**
-     * Link for this unsampled report.
-     *
-     * @var string
-     */
-    public $selfLink;
-    /**
-     * The start date for the unsampled report.
-     *
-     * @var string
-     */
-    public $startDate;
-    /**
-     * Status of this unsampled report. Possible values are PENDING, COMPLETED, or
-     * FAILED.
-     *
-     * @var string
-     */
-    public $status;
-    /**
-     * Title of the unsampled report.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * Time this unsampled report was last modified.
-     *
-     * @var string
-     */
-    public $updated;
-    /**
-     * Web property ID to which this unsampled report belongs. The web property ID
-     * is of the form UA-XXXXX-YY.
-     *
-     * @var string
-     */
-    public $webPropertyId;
-    /**
-     * Account ID to which this unsampled report belongs.
-     *
-     * @param string $accountId
-     */
-    public function setAccountId($accountId)
+namespace Google\Service\Analytics {
+    class UnsampledReport extends \Google\Model
     {
+        protected $internal_gapi_mappings = ["endDate" => "end-date", "startDate" => "start-date"];
+        /**
+         * Account ID to which this unsampled report belongs.
+         *
+         * @var string
+         */
+        public $accountId;
+        protected $cloudStorageDownloadDetailsType = UnsampledReportCloudStorageDownloadDetails::class;
+        protected $cloudStorageDownloadDetailsDataType = '';
+        /**
+         * Time this unsampled report was created.
+         *
+         * @var string
+         */
+        public $created;
+        /**
+         * The dimensions for the unsampled report.
+         *
+         * @var string
+         */
+        public $dimensions;
+        /**
+         * The type of download you need to use for the report data file. Possible
+         * values include `GOOGLE_DRIVE` and `GOOGLE_CLOUD_STORAGE`. If the value is
+         * `GOOGLE_DRIVE`, see the `driveDownloadDetails` field. If the value is
+         * `GOOGLE_CLOUD_STORAGE`, see the `cloudStorageDownloadDetails` field.
+         *
+         * @var string
+         */
+        public $downloadType;
+        protected $driveDownloadDetailsType = UnsampledReportDriveDownloadDetails::class;
+        protected $driveDownloadDetailsDataType = '';
+        /**
+         * The end date for the unsampled report.
+         *
+         * @var string
+         */
+        public $endDate;
+        /**
+         * The filters for the unsampled report.
+         *
+         * @var string
+         */
+        public $filters;
+        /**
+         * Unsampled report ID.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Resource type for an Analytics unsampled report.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The metrics for the unsampled report.
+         *
+         * @var string
+         */
+        public $metrics;
+        /**
+         * View (Profile) ID to which this unsampled report belongs.
+         *
+         * @var string
+         */
+        public $profileId;
+        /**
+         * The segment for the unsampled report.
+         *
+         * @var string
+         */
+        public $segment;
+        /**
+         * Link for this unsampled report.
+         *
+         * @var string
+         */
+        public $selfLink;
+        /**
+         * The start date for the unsampled report.
+         *
+         * @var string
+         */
+        public $startDate;
+        /**
+         * Status of this unsampled report. Possible values are PENDING, COMPLETED, or
+         * FAILED.
+         *
+         * @var string
+         */
+        public $status;
+        /**
+         * Title of the unsampled report.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * Time this unsampled report was last modified.
+         *
+         * @var string
+         */
+        public $updated;
+        /**
+         * Web property ID to which this unsampled report belongs. The web property ID
+         * is of the form UA-XXXXX-YY.
+         *
+         * @var string
+         */
+        public $webPropertyId;
+        /**
+         * Account ID to which this unsampled report belongs.
+         *
+         * @param string $accountId
+         */
+        public function setAccountId($accountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccountId()
+        {
+        }
+        /**
+         * Download details for a file stored in Google Cloud Storage.
+         *
+         * @param UnsampledReportCloudStorageDownloadDetails $cloudStorageDownloadDetails
+         */
+        public function setCloudStorageDownloadDetails(UnsampledReportCloudStorageDownloadDetails $cloudStorageDownloadDetails)
+        {
+        }
+        /**
+         * @return UnsampledReportCloudStorageDownloadDetails
+         */
+        public function getCloudStorageDownloadDetails()
+        {
+        }
+        /**
+         * Time this unsampled report was created.
+         *
+         * @param string $created
+         */
+        public function setCreated($created)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreated()
+        {
+        }
+        /**
+         * The dimensions for the unsampled report.
+         *
+         * @param string $dimensions
+         */
+        public function setDimensions($dimensions)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDimensions()
+        {
+        }
+        /**
+         * The type of download you need to use for the report data file. Possible
+         * values include `GOOGLE_DRIVE` and `GOOGLE_CLOUD_STORAGE`. If the value is
+         * `GOOGLE_DRIVE`, see the `driveDownloadDetails` field. If the value is
+         * `GOOGLE_CLOUD_STORAGE`, see the `cloudStorageDownloadDetails` field.
+         *
+         * @param string $downloadType
+         */
+        public function setDownloadType($downloadType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDownloadType()
+        {
+        }
+        /**
+         * Download details for a file stored in Google Drive.
+         *
+         * @param UnsampledReportDriveDownloadDetails $driveDownloadDetails
+         */
+        public function setDriveDownloadDetails(UnsampledReportDriveDownloadDetails $driveDownloadDetails)
+        {
+        }
+        /**
+         * @return UnsampledReportDriveDownloadDetails
+         */
+        public function getDriveDownloadDetails()
+        {
+        }
+        /**
+         * The end date for the unsampled report.
+         *
+         * @param string $endDate
+         */
+        public function setEndDate($endDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndDate()
+        {
+        }
+        /**
+         * The filters for the unsampled report.
+         *
+         * @param string $filters
+         */
+        public function setFilters($filters)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilters()
+        {
+        }
+        /**
+         * Unsampled report ID.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Resource type for an Analytics unsampled report.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The metrics for the unsampled report.
+         *
+         * @param string $metrics
+         */
+        public function setMetrics($metrics)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMetrics()
+        {
+        }
+        /**
+         * View (Profile) ID to which this unsampled report belongs.
+         *
+         * @param string $profileId
+         */
+        public function setProfileId($profileId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProfileId()
+        {
+        }
+        /**
+         * The segment for the unsampled report.
+         *
+         * @param string $segment
+         */
+        public function setSegment($segment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSegment()
+        {
+        }
+        /**
+         * Link for this unsampled report.
+         *
+         * @param string $selfLink
+         */
+        public function setSelfLink($selfLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelfLink()
+        {
+        }
+        /**
+         * The start date for the unsampled report.
+         *
+         * @param string $startDate
+         */
+        public function setStartDate($startDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartDate()
+        {
+        }
+        /**
+         * Status of this unsampled report. Possible values are PENDING, COMPLETED, or
+         * FAILED.
+         *
+         * @param string $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStatus()
+        {
+        }
+        /**
+         * Title of the unsampled report.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * Time this unsampled report was last modified.
+         *
+         * @param string $updated
+         */
+        public function setUpdated($updated)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdated()
+        {
+        }
+        /**
+         * Web property ID to which this unsampled report belongs. The web property ID
+         * is of the form UA-XXXXX-YY.
+         *
+         * @param string $webPropertyId
+         */
+        public function setWebPropertyId($webPropertyId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWebPropertyId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Analytics\UnsampledReport registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountId()
-    {
-    }
-    /**
-     * Download details for a file stored in Google Cloud Storage.
-     *
-     * @param UnsampledReportCloudStorageDownloadDetails $cloudStorageDownloadDetails
-     */
-    public function setCloudStorageDownloadDetails(UnsampledReportCloudStorageDownloadDetails $cloudStorageDownloadDetails)
-    {
-    }
-    /**
-     * @return UnsampledReportCloudStorageDownloadDetails
-     */
-    public function getCloudStorageDownloadDetails()
-    {
-    }
-    /**
-     * Time this unsampled report was created.
-     *
-     * @param string $created
-     */
-    public function setCreated($created)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreated()
-    {
-    }
-    /**
-     * The dimensions for the unsampled report.
-     *
-     * @param string $dimensions
-     */
-    public function setDimensions($dimensions)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDimensions()
-    {
-    }
-    /**
-     * The type of download you need to use for the report data file. Possible
-     * values include `GOOGLE_DRIVE` and `GOOGLE_CLOUD_STORAGE`. If the value is
-     * `GOOGLE_DRIVE`, see the `driveDownloadDetails` field. If the value is
-     * `GOOGLE_CLOUD_STORAGE`, see the `cloudStorageDownloadDetails` field.
-     *
-     * @param string $downloadType
-     */
-    public function setDownloadType($downloadType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDownloadType()
-    {
-    }
-    /**
-     * Download details for a file stored in Google Drive.
-     *
-     * @param UnsampledReportDriveDownloadDetails $driveDownloadDetails
-     */
-    public function setDriveDownloadDetails(UnsampledReportDriveDownloadDetails $driveDownloadDetails)
-    {
-    }
-    /**
-     * @return UnsampledReportDriveDownloadDetails
-     */
-    public function getDriveDownloadDetails()
-    {
-    }
-    /**
-     * The end date for the unsampled report.
-     *
-     * @param string $endDate
-     */
-    public function setEndDate($endDate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndDate()
-    {
-    }
-    /**
-     * The filters for the unsampled report.
-     *
-     * @param string $filters
-     */
-    public function setFilters($filters)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFilters()
-    {
-    }
-    /**
-     * Unsampled report ID.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Resource type for an Analytics unsampled report.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The metrics for the unsampled report.
-     *
-     * @param string $metrics
-     */
-    public function setMetrics($metrics)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMetrics()
-    {
-    }
-    /**
-     * View (Profile) ID to which this unsampled report belongs.
-     *
-     * @param string $profileId
-     */
-    public function setProfileId($profileId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProfileId()
-    {
-    }
-    /**
-     * The segment for the unsampled report.
-     *
-     * @param string $segment
-     */
-    public function setSegment($segment)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSegment()
-    {
-    }
-    /**
-     * Link for this unsampled report.
-     *
-     * @param string $selfLink
-     */
-    public function setSelfLink($selfLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelfLink()
-    {
-    }
-    /**
-     * The start date for the unsampled report.
-     *
-     * @param string $startDate
-     */
-    public function setStartDate($startDate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartDate()
-    {
-    }
-    /**
-     * Status of this unsampled report. Possible values are PENDING, COMPLETED, or
-     * FAILED.
-     *
-     * @param string $status
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStatus()
-    {
-    }
-    /**
-     * Title of the unsampled report.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
-    {
-    }
-    /**
-     * Time this unsampled report was last modified.
-     *
-     * @param string $updated
-     */
-    public function setUpdated($updated)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdated()
-    {
-    }
-    /**
-     * Web property ID to which this unsampled report belongs. The web property ID
-     * is of the form UA-XXXXX-YY.
-     *
-     * @param string $webPropertyId
-     */
-    public function setWebPropertyId($webPropertyId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWebPropertyId()
+    class Google_Service_Analytics_UnsampledReport extends \Google\Service\Analytics\UnsampledReport
     {
     }
 }

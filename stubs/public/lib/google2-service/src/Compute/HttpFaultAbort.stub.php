@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class HttpFaultAbort extends \Google\Model
-{
-    /**
-     * The HTTP status code used to abort the request.
-     *
-     * The value must be from 200 to 599 inclusive.
-     *
-     * For gRPC protocol, the gRPC status code is mapped to HTTP status code
-     * according to this  mapping table. HTTP status 200 is mapped to gRPC status
-     * UNKNOWN. Injecting an OK status is currently not supported by Traffic
-     * Director.
-     *
-     * @var string
-     */
-    public $httpStatus;
-    /**
-     * The percentage of traffic for connections, operations, or requests that is
-     * aborted as part of fault injection.
-     *
-     * The value must be from 0.0 to 100.0 inclusive.
-     *
-     * @var 
-     */
-    public $percentage;
-    /**
-     * The HTTP status code used to abort the request.
-     *
-     * The value must be from 200 to 599 inclusive.
-     *
-     * For gRPC protocol, the gRPC status code is mapped to HTTP status code
-     * according to this  mapping table. HTTP status 200 is mapped to gRPC status
-     * UNKNOWN. Injecting an OK status is currently not supported by Traffic
-     * Director.
-     *
-     * @param string $httpStatus
-     */
-    public function setHttpStatus($httpStatus)
+namespace Google\Service\Compute {
+    class HttpFaultAbort extends \Google\Model
     {
+        /**
+         * The HTTP status code used to abort the request.
+         *
+         * The value must be from 200 to 599 inclusive.
+         *
+         * For gRPC protocol, the gRPC status code is mapped to HTTP status code
+         * according to this  mapping table. HTTP status 200 is mapped to gRPC status
+         * UNKNOWN. Injecting an OK status is currently not supported by Traffic
+         * Director.
+         *
+         * @var string
+         */
+        public $httpStatus;
+        /**
+         * The percentage of traffic for connections, operations, or requests that is
+         * aborted as part of fault injection.
+         *
+         * The value must be from 0.0 to 100.0 inclusive.
+         *
+         * @var 
+         */
+        public $percentage;
+        /**
+         * The HTTP status code used to abort the request.
+         *
+         * The value must be from 200 to 599 inclusive.
+         *
+         * For gRPC protocol, the gRPC status code is mapped to HTTP status code
+         * according to this  mapping table. HTTP status 200 is mapped to gRPC status
+         * UNKNOWN. Injecting an OK status is currently not supported by Traffic
+         * Director.
+         *
+         * @param string $httpStatus
+         */
+        public function setHttpStatus($httpStatus)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHttpStatus()
+        {
+        }
+        public function setPercentage($percentage)
+        {
+        }
+        public function getPercentage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\HttpFaultAbort registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHttpStatus()
-    {
-    }
-    public function setPercentage($percentage)
-    {
-    }
-    public function getPercentage()
+    class Google_Service_Compute_HttpFaultAbort extends \Google\Service\Compute\HttpFaultAbort
     {
     }
 }

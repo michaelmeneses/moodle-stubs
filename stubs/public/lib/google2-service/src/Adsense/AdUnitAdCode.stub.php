@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Adsense;
-
-class AdUnitAdCode extends \Google\Model
-{
-    /**
-     * Output only. The code snippet to add to the body of an HTML page.
-     *
-     * @var string
-     */
-    public $adCode;
-    /**
-     * Output only. The code snippet to add to the body of an HTML page.
-     *
-     * @param string $adCode
-     */
-    public function setAdCode($adCode)
+namespace Google\Service\Adsense {
+    class AdUnitAdCode extends \Google\Model
     {
+        /**
+         * Output only. The code snippet to add to the body of an HTML page.
+         *
+         * @var string
+         */
+        public $adCode;
+        /**
+         * Output only. The code snippet to add to the body of an HTML page.
+         *
+         * @param string $adCode
+         */
+        public function setAdCode($adCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Adsense\AdUnitAdCode registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdCode()
+    class Google_Service_Adsense_AdUnitAdCode extends \Google\Service\Adsense\AdUnitAdCode
     {
     }
 }

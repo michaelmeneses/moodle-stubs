@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SaaSServiceManagement;
-
-class Aggregate extends \Google\Model
-{
-    /**
-     * Required. Number of records in the group.
-     *
-     * @var int
-     */
-    public $count;
-    /**
-     * Required. Group by which to aggregate.
-     *
-     * @var string
-     */
-    public $group;
-    /**
-     * Required. Number of records in the group.
-     *
-     * @param int $count
-     */
-    public function setCount($count)
+namespace Google\Service\SaaSServiceManagement {
+    class Aggregate extends \Google\Model
     {
+        /**
+         * Required. Number of records in the group.
+         *
+         * @var int
+         */
+        public $count;
+        /**
+         * Required. Group by which to aggregate.
+         *
+         * @var string
+         */
+        public $group;
+        /**
+         * Required. Number of records in the group.
+         *
+         * @param int $count
+         */
+        public function setCount($count)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCount()
+        {
+        }
+        /**
+         * Required. Group by which to aggregate.
+         *
+         * @param string $group
+         */
+        public function setGroup($group)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGroup()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\SaaSServiceManagement\Aggregate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCount()
-    {
-    }
-    /**
-     * Required. Group by which to aggregate.
-     *
-     * @param string $group
-     */
-    public function setGroup($group)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGroup()
+    class Google_Service_SaaSServiceManagement_Aggregate extends \Google\Service\SaaSServiceManagement\Aggregate
     {
     }
 }

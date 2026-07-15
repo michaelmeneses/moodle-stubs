@@ -21,113 +21,122 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class WireProperties extends \Google\Model
-{
-    /**
-     * Configures a separate unmetered bandwidth allocation (and associated
-     * charges) for each wire in the group.
-     */
-    public const BANDWIDTH_ALLOCATION_ALLOCATE_PER_WIRE = 'ALLOCATE_PER_WIRE';
-    /**
-     * This is the default behavior. Configures one unmetered bandwidth allocation
-     * for the wire group. The unmetered bandwidth is divided equally across each
-     * wire in the group, but dynamic throttling reallocates unused unmetered
-     * bandwidth from unused or underused wires to other wires in the group.
-     */
-    public const BANDWIDTH_ALLOCATION_SHARED_WITH_WIRE_GROUP = 'SHARED_WITH_WIRE_GROUP';
-    /**
-     * Set the port line protocol down when inline probes detect a fault. This
-     * setting is only permitted on port mode pseudowires.
-     */
-    public const FAULT_RESPONSE_DISABLE_PORT = 'DISABLE_PORT';
-    /**
-     * Default.
-     */
-    public const FAULT_RESPONSE_NONE = 'NONE';
-    /**
-     * The configuration of the bandwidth allocation, one of the following:
-     * - ALLOCATE_PER_WIRE: configures a separate unmetered bandwidth allocation
-     * (and associated charges) for each wire in the group.    -
-     * SHARED_WITH_WIRE_GROUP: this is the default behavior, which configures
-     * one unmetered bandwidth allocation for the wire group. The unmetered
-     * bandwidth is divided equally across each wire in the group, but dynamic
-     * throttling reallocates unused unmetered bandwidth from unused or underused
-     * wires to other wires in the group.
-     *
-     * @var string
-     */
-    public $bandwidthAllocation;
-    /**
-     * The unmetered bandwidth in Gigabits per second, using decimal units. `10`
-     * is 10 Gbps, `100` is 100 Gbps. The bandwidth must be greater than 0.
-     *
-     * @var string
-     */
-    public $bandwidthUnmetered;
-    /**
-     * Response when a fault is detected in a pseudowire:        - NONE: default.
-     * - DISABLE_PORT: set the port line protocol down when inline probes
-     * detect a fault. This setting is only permitted on port mode    pseudowires.
-     *
-     * @var string
-     */
-    public $faultResponse;
-    /**
-     * The configuration of the bandwidth allocation, one of the following:
-     * - ALLOCATE_PER_WIRE: configures a separate unmetered bandwidth allocation
-     * (and associated charges) for each wire in the group.    -
-     * SHARED_WITH_WIRE_GROUP: this is the default behavior, which configures
-     * one unmetered bandwidth allocation for the wire group. The unmetered
-     * bandwidth is divided equally across each wire in the group, but dynamic
-     * throttling reallocates unused unmetered bandwidth from unused or underused
-     * wires to other wires in the group.
-     *
-     * Accepted values: ALLOCATE_PER_WIRE, SHARED_WITH_WIRE_GROUP
-     *
-     * @param self::BANDWIDTH_ALLOCATION_* $bandwidthAllocation
-     */
-    public function setBandwidthAllocation($bandwidthAllocation)
+namespace Google\Service\Compute {
+    class WireProperties extends \Google\Model
     {
+        /**
+         * Configures a separate unmetered bandwidth allocation (and associated
+         * charges) for each wire in the group.
+         */
+        public const BANDWIDTH_ALLOCATION_ALLOCATE_PER_WIRE = 'ALLOCATE_PER_WIRE';
+        /**
+         * This is the default behavior. Configures one unmetered bandwidth allocation
+         * for the wire group. The unmetered bandwidth is divided equally across each
+         * wire in the group, but dynamic throttling reallocates unused unmetered
+         * bandwidth from unused or underused wires to other wires in the group.
+         */
+        public const BANDWIDTH_ALLOCATION_SHARED_WITH_WIRE_GROUP = 'SHARED_WITH_WIRE_GROUP';
+        /**
+         * Set the port line protocol down when inline probes detect a fault. This
+         * setting is only permitted on port mode pseudowires.
+         */
+        public const FAULT_RESPONSE_DISABLE_PORT = 'DISABLE_PORT';
+        /**
+         * Default.
+         */
+        public const FAULT_RESPONSE_NONE = 'NONE';
+        /**
+         * The configuration of the bandwidth allocation, one of the following:
+         * - ALLOCATE_PER_WIRE: configures a separate unmetered bandwidth allocation
+         * (and associated charges) for each wire in the group.    -
+         * SHARED_WITH_WIRE_GROUP: this is the default behavior, which configures
+         * one unmetered bandwidth allocation for the wire group. The unmetered
+         * bandwidth is divided equally across each wire in the group, but dynamic
+         * throttling reallocates unused unmetered bandwidth from unused or underused
+         * wires to other wires in the group.
+         *
+         * @var string
+         */
+        public $bandwidthAllocation;
+        /**
+         * The unmetered bandwidth in Gigabits per second, using decimal units. `10`
+         * is 10 Gbps, `100` is 100 Gbps. The bandwidth must be greater than 0.
+         *
+         * @var string
+         */
+        public $bandwidthUnmetered;
+        /**
+         * Response when a fault is detected in a pseudowire:        - NONE: default.
+         * - DISABLE_PORT: set the port line protocol down when inline probes
+         * detect a fault. This setting is only permitted on port mode    pseudowires.
+         *
+         * @var string
+         */
+        public $faultResponse;
+        /**
+         * The configuration of the bandwidth allocation, one of the following:
+         * - ALLOCATE_PER_WIRE: configures a separate unmetered bandwidth allocation
+         * (and associated charges) for each wire in the group.    -
+         * SHARED_WITH_WIRE_GROUP: this is the default behavior, which configures
+         * one unmetered bandwidth allocation for the wire group. The unmetered
+         * bandwidth is divided equally across each wire in the group, but dynamic
+         * throttling reallocates unused unmetered bandwidth from unused or underused
+         * wires to other wires in the group.
+         *
+         * Accepted values: ALLOCATE_PER_WIRE, SHARED_WITH_WIRE_GROUP
+         *
+         * @param self::BANDWIDTH_ALLOCATION_* $bandwidthAllocation
+         */
+        public function setBandwidthAllocation($bandwidthAllocation)
+        {
+        }
+        /**
+         * @return self::BANDWIDTH_ALLOCATION_*
+         */
+        public function getBandwidthAllocation()
+        {
+        }
+        /**
+         * The unmetered bandwidth in Gigabits per second, using decimal units. `10`
+         * is 10 Gbps, `100` is 100 Gbps. The bandwidth must be greater than 0.
+         *
+         * @param string $bandwidthUnmetered
+         */
+        public function setBandwidthUnmetered($bandwidthUnmetered)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBandwidthUnmetered()
+        {
+        }
+        /**
+         * Response when a fault is detected in a pseudowire:        - NONE: default.
+         * - DISABLE_PORT: set the port line protocol down when inline probes
+         * detect a fault. This setting is only permitted on port mode    pseudowires.
+         *
+         * Accepted values: DISABLE_PORT, NONE
+         *
+         * @param self::FAULT_RESPONSE_* $faultResponse
+         */
+        public function setFaultResponse($faultResponse)
+        {
+        }
+        /**
+         * @return self::FAULT_RESPONSE_*
+         */
+        public function getFaultResponse()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::BANDWIDTH_ALLOCATION_*
+     * Runtime class alias of \Google\Service\Compute\WireProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBandwidthAllocation()
-    {
-    }
-    /**
-     * The unmetered bandwidth in Gigabits per second, using decimal units. `10`
-     * is 10 Gbps, `100` is 100 Gbps. The bandwidth must be greater than 0.
-     *
-     * @param string $bandwidthUnmetered
-     */
-    public function setBandwidthUnmetered($bandwidthUnmetered)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBandwidthUnmetered()
-    {
-    }
-    /**
-     * Response when a fault is detected in a pseudowire:        - NONE: default.
-     * - DISABLE_PORT: set the port line protocol down when inline probes
-     * detect a fault. This setting is only permitted on port mode    pseudowires.
-     *
-     * Accepted values: DISABLE_PORT, NONE
-     *
-     * @param self::FAULT_RESPONSE_* $faultResponse
-     */
-    public function setFaultResponse($faultResponse)
-    {
-    }
-    /**
-     * @return self::FAULT_RESPONSE_*
-     */
-    public function getFaultResponse()
+    class Google_Service_Compute_WireProperties extends \Google\Service\Compute\WireProperties
     {
     }
 }

@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveActivity;
-
-class TargetReference extends \Google\Model
-{
-    protected $driveType = DriveReference::class;
-    protected $driveDataType = '';
-    protected $driveItemType = DriveItemReference::class;
-    protected $driveItemDataType = '';
-    protected $teamDriveType = TeamDriveReference::class;
-    protected $teamDriveDataType = '';
-    /**
-     * The target is a shared drive.
-     *
-     * @param DriveReference $drive
-     */
-    public function setDrive(DriveReference $drive)
+namespace Google\Service\DriveActivity {
+    class TargetReference extends \Google\Model
     {
+        protected $driveType = DriveReference::class;
+        protected $driveDataType = '';
+        protected $driveItemType = DriveItemReference::class;
+        protected $driveItemDataType = '';
+        protected $teamDriveType = TeamDriveReference::class;
+        protected $teamDriveDataType = '';
+        /**
+         * The target is a shared drive.
+         *
+         * @param DriveReference $drive
+         */
+        public function setDrive(DriveReference $drive)
+        {
+        }
+        /**
+         * @return DriveReference
+         */
+        public function getDrive()
+        {
+        }
+        /**
+         * The target is a Drive item.
+         *
+         * @param DriveItemReference $driveItem
+         */
+        public function setDriveItem(DriveItemReference $driveItem)
+        {
+        }
+        /**
+         * @return DriveItemReference
+         */
+        public function getDriveItem()
+        {
+        }
+        /**
+         * This field is deprecated; please use the `drive` field instead.
+         *
+         * @deprecated
+         * @param TeamDriveReference $teamDrive
+         */
+        public function setTeamDrive(TeamDriveReference $teamDrive)
+        {
+        }
+        /**
+         * @deprecated
+         * @return TeamDriveReference
+         */
+        public function getTeamDrive()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DriveReference
+     * Runtime class alias of \Google\Service\DriveActivity\TargetReference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDrive()
-    {
-    }
-    /**
-     * The target is a Drive item.
-     *
-     * @param DriveItemReference $driveItem
-     */
-    public function setDriveItem(DriveItemReference $driveItem)
-    {
-    }
-    /**
-     * @return DriveItemReference
-     */
-    public function getDriveItem()
-    {
-    }
-    /**
-     * This field is deprecated; please use the `drive` field instead.
-     *
-     * @deprecated
-     * @param TeamDriveReference $teamDrive
-     */
-    public function setTeamDrive(TeamDriveReference $teamDrive)
-    {
-    }
-    /**
-     * @deprecated
-     * @return TeamDriveReference
-     */
-    public function getTeamDrive()
+    class Google_Service_DriveActivity_TargetReference extends \Google\Service\DriveActivity\TargetReference
     {
     }
 }

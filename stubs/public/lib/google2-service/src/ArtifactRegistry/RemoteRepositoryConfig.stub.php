@@ -21,179 +21,188 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ArtifactRegistry;
-
-class RemoteRepositoryConfig extends \Google\Model
-{
-    protected $aptRepositoryType = AptRepository::class;
-    protected $aptRepositoryDataType = '';
-    protected $commonRepositoryType = CommonRemoteRepository::class;
-    protected $commonRepositoryDataType = '';
-    /**
-     * The description of the remote source.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Input only. A create/update remote repo option to avoid making a HEAD/GET
-     * request to validate a remote repo and any supplied upstream credentials.
-     *
-     * @var bool
-     */
-    public $disableUpstreamValidation;
-    protected $dockerRepositoryType = DockerRepository::class;
-    protected $dockerRepositoryDataType = '';
-    protected $mavenRepositoryType = MavenRepository::class;
-    protected $mavenRepositoryDataType = '';
-    protected $npmRepositoryType = NpmRepository::class;
-    protected $npmRepositoryDataType = '';
-    protected $pythonRepositoryType = PythonRepository::class;
-    protected $pythonRepositoryDataType = '';
-    protected $upstreamCredentialsType = UpstreamCredentials::class;
-    protected $upstreamCredentialsDataType = '';
-    protected $yumRepositoryType = YumRepository::class;
-    protected $yumRepositoryDataType = '';
-    /**
-     * Specific settings for an Apt remote repository.
-     *
-     * @param AptRepository $aptRepository
-     */
-    public function setAptRepository(AptRepository $aptRepository)
+namespace Google\Service\ArtifactRegistry {
+    class RemoteRepositoryConfig extends \Google\Model
     {
+        protected $aptRepositoryType = AptRepository::class;
+        protected $aptRepositoryDataType = '';
+        protected $commonRepositoryType = CommonRemoteRepository::class;
+        protected $commonRepositoryDataType = '';
+        /**
+         * The description of the remote source.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Input only. A create/update remote repo option to avoid making a HEAD/GET
+         * request to validate a remote repo and any supplied upstream credentials.
+         *
+         * @var bool
+         */
+        public $disableUpstreamValidation;
+        protected $dockerRepositoryType = DockerRepository::class;
+        protected $dockerRepositoryDataType = '';
+        protected $mavenRepositoryType = MavenRepository::class;
+        protected $mavenRepositoryDataType = '';
+        protected $npmRepositoryType = NpmRepository::class;
+        protected $npmRepositoryDataType = '';
+        protected $pythonRepositoryType = PythonRepository::class;
+        protected $pythonRepositoryDataType = '';
+        protected $upstreamCredentialsType = UpstreamCredentials::class;
+        protected $upstreamCredentialsDataType = '';
+        protected $yumRepositoryType = YumRepository::class;
+        protected $yumRepositoryDataType = '';
+        /**
+         * Specific settings for an Apt remote repository.
+         *
+         * @param AptRepository $aptRepository
+         */
+        public function setAptRepository(AptRepository $aptRepository)
+        {
+        }
+        /**
+         * @return AptRepository
+         */
+        public function getAptRepository()
+        {
+        }
+        /**
+         * Common remote repository settings. Used as the remote repository upstream
+         * URL.
+         *
+         * @param CommonRemoteRepository $commonRepository
+         */
+        public function setCommonRepository(CommonRemoteRepository $commonRepository)
+        {
+        }
+        /**
+         * @return CommonRemoteRepository
+         */
+        public function getCommonRepository()
+        {
+        }
+        /**
+         * The description of the remote source.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Input only. A create/update remote repo option to avoid making a HEAD/GET
+         * request to validate a remote repo and any supplied upstream credentials.
+         *
+         * @param bool $disableUpstreamValidation
+         */
+        public function setDisableUpstreamValidation($disableUpstreamValidation)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisableUpstreamValidation()
+        {
+        }
+        /**
+         * Specific settings for a Docker remote repository.
+         *
+         * @param DockerRepository $dockerRepository
+         */
+        public function setDockerRepository(DockerRepository $dockerRepository)
+        {
+        }
+        /**
+         * @return DockerRepository
+         */
+        public function getDockerRepository()
+        {
+        }
+        /**
+         * Specific settings for a Maven remote repository.
+         *
+         * @param MavenRepository $mavenRepository
+         */
+        public function setMavenRepository(MavenRepository $mavenRepository)
+        {
+        }
+        /**
+         * @return MavenRepository
+         */
+        public function getMavenRepository()
+        {
+        }
+        /**
+         * Specific settings for an Npm remote repository.
+         *
+         * @param NpmRepository $npmRepository
+         */
+        public function setNpmRepository(NpmRepository $npmRepository)
+        {
+        }
+        /**
+         * @return NpmRepository
+         */
+        public function getNpmRepository()
+        {
+        }
+        /**
+         * Specific settings for a Python remote repository.
+         *
+         * @param PythonRepository $pythonRepository
+         */
+        public function setPythonRepository(PythonRepository $pythonRepository)
+        {
+        }
+        /**
+         * @return PythonRepository
+         */
+        public function getPythonRepository()
+        {
+        }
+        /**
+         * Optional. The credentials used to access the remote repository.
+         *
+         * @param UpstreamCredentials $upstreamCredentials
+         */
+        public function setUpstreamCredentials(UpstreamCredentials $upstreamCredentials)
+        {
+        }
+        /**
+         * @return UpstreamCredentials
+         */
+        public function getUpstreamCredentials()
+        {
+        }
+        /**
+         * Specific settings for a Yum remote repository.
+         *
+         * @param YumRepository $yumRepository
+         */
+        public function setYumRepository(YumRepository $yumRepository)
+        {
+        }
+        /**
+         * @return YumRepository
+         */
+        public function getYumRepository()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AptRepository
+     * Runtime class alias of \Google\Service\ArtifactRegistry\RemoteRepositoryConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAptRepository()
-    {
-    }
-    /**
-     * Common remote repository settings. Used as the remote repository upstream
-     * URL.
-     *
-     * @param CommonRemoteRepository $commonRepository
-     */
-    public function setCommonRepository(CommonRemoteRepository $commonRepository)
-    {
-    }
-    /**
-     * @return CommonRemoteRepository
-     */
-    public function getCommonRepository()
-    {
-    }
-    /**
-     * The description of the remote source.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Input only. A create/update remote repo option to avoid making a HEAD/GET
-     * request to validate a remote repo and any supplied upstream credentials.
-     *
-     * @param bool $disableUpstreamValidation
-     */
-    public function setDisableUpstreamValidation($disableUpstreamValidation)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDisableUpstreamValidation()
-    {
-    }
-    /**
-     * Specific settings for a Docker remote repository.
-     *
-     * @param DockerRepository $dockerRepository
-     */
-    public function setDockerRepository(DockerRepository $dockerRepository)
-    {
-    }
-    /**
-     * @return DockerRepository
-     */
-    public function getDockerRepository()
-    {
-    }
-    /**
-     * Specific settings for a Maven remote repository.
-     *
-     * @param MavenRepository $mavenRepository
-     */
-    public function setMavenRepository(MavenRepository $mavenRepository)
-    {
-    }
-    /**
-     * @return MavenRepository
-     */
-    public function getMavenRepository()
-    {
-    }
-    /**
-     * Specific settings for an Npm remote repository.
-     *
-     * @param NpmRepository $npmRepository
-     */
-    public function setNpmRepository(NpmRepository $npmRepository)
-    {
-    }
-    /**
-     * @return NpmRepository
-     */
-    public function getNpmRepository()
-    {
-    }
-    /**
-     * Specific settings for a Python remote repository.
-     *
-     * @param PythonRepository $pythonRepository
-     */
-    public function setPythonRepository(PythonRepository $pythonRepository)
-    {
-    }
-    /**
-     * @return PythonRepository
-     */
-    public function getPythonRepository()
-    {
-    }
-    /**
-     * Optional. The credentials used to access the remote repository.
-     *
-     * @param UpstreamCredentials $upstreamCredentials
-     */
-    public function setUpstreamCredentials(UpstreamCredentials $upstreamCredentials)
-    {
-    }
-    /**
-     * @return UpstreamCredentials
-     */
-    public function getUpstreamCredentials()
-    {
-    }
-    /**
-     * Specific settings for a Yum remote repository.
-     *
-     * @param YumRepository $yumRepository
-     */
-    public function setYumRepository(YumRepository $yumRepository)
-    {
-    }
-    /**
-     * @return YumRepository
-     */
-    public function getYumRepository()
+    class Google_Service_ArtifactRegistry_RemoteRepositoryConfig extends \Google\Service\ArtifactRegistry\RemoteRepositoryConfig
     {
     }
 }

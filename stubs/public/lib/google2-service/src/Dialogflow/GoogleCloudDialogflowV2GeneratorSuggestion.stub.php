@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2GeneratorSuggestion extends \Google\Collection
-{
-    protected $collection_key = 'toolCallInfo';
-    protected $agentCoachingSuggestionType = GoogleCloudDialogflowV2AgentCoachingSuggestion::class;
-    protected $agentCoachingSuggestionDataType = '';
-    protected $freeFormSuggestionType = GoogleCloudDialogflowV2FreeFormSuggestion::class;
-    protected $freeFormSuggestionDataType = '';
-    protected $summarySuggestionType = GoogleCloudDialogflowV2SummarySuggestion::class;
-    protected $summarySuggestionDataType = '';
-    protected $toolCallInfoType = GoogleCloudDialogflowV2GeneratorSuggestionToolCallInfo::class;
-    protected $toolCallInfoDataType = 'array';
-    /**
-     * Optional. Suggestion to coach the agent.
-     *
-     * @param GoogleCloudDialogflowV2AgentCoachingSuggestion $agentCoachingSuggestion
-     */
-    public function setAgentCoachingSuggestion(GoogleCloudDialogflowV2AgentCoachingSuggestion $agentCoachingSuggestion)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2GeneratorSuggestion extends \Google\Collection
     {
+        protected $collection_key = 'toolCallInfo';
+        protected $agentCoachingSuggestionType = GoogleCloudDialogflowV2AgentCoachingSuggestion::class;
+        protected $agentCoachingSuggestionDataType = '';
+        protected $freeFormSuggestionType = GoogleCloudDialogflowV2FreeFormSuggestion::class;
+        protected $freeFormSuggestionDataType = '';
+        protected $summarySuggestionType = GoogleCloudDialogflowV2SummarySuggestion::class;
+        protected $summarySuggestionDataType = '';
+        protected $toolCallInfoType = GoogleCloudDialogflowV2GeneratorSuggestionToolCallInfo::class;
+        protected $toolCallInfoDataType = 'array';
+        /**
+         * Optional. Suggestion to coach the agent.
+         *
+         * @param GoogleCloudDialogflowV2AgentCoachingSuggestion $agentCoachingSuggestion
+         */
+        public function setAgentCoachingSuggestion(GoogleCloudDialogflowV2AgentCoachingSuggestion $agentCoachingSuggestion)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2AgentCoachingSuggestion
+         */
+        public function getAgentCoachingSuggestion()
+        {
+        }
+        /**
+         * Optional. Free form suggestion.
+         *
+         * @param GoogleCloudDialogflowV2FreeFormSuggestion $freeFormSuggestion
+         */
+        public function setFreeFormSuggestion(GoogleCloudDialogflowV2FreeFormSuggestion $freeFormSuggestion)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2FreeFormSuggestion
+         */
+        public function getFreeFormSuggestion()
+        {
+        }
+        /**
+         * Optional. Suggested summary.
+         *
+         * @param GoogleCloudDialogflowV2SummarySuggestion $summarySuggestion
+         */
+        public function setSummarySuggestion(GoogleCloudDialogflowV2SummarySuggestion $summarySuggestion)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2SummarySuggestion
+         */
+        public function getSummarySuggestion()
+        {
+        }
+        /**
+         * Optional. List of request and response for tool calls executed.
+         *
+         * @param GoogleCloudDialogflowV2GeneratorSuggestionToolCallInfo[] $toolCallInfo
+         */
+        public function setToolCallInfo($toolCallInfo)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2GeneratorSuggestionToolCallInfo[]
+         */
+        public function getToolCallInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowV2AgentCoachingSuggestion
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2GeneratorSuggestion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAgentCoachingSuggestion()
-    {
-    }
-    /**
-     * Optional. Free form suggestion.
-     *
-     * @param GoogleCloudDialogflowV2FreeFormSuggestion $freeFormSuggestion
-     */
-    public function setFreeFormSuggestion(GoogleCloudDialogflowV2FreeFormSuggestion $freeFormSuggestion)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowV2FreeFormSuggestion
-     */
-    public function getFreeFormSuggestion()
-    {
-    }
-    /**
-     * Optional. Suggested summary.
-     *
-     * @param GoogleCloudDialogflowV2SummarySuggestion $summarySuggestion
-     */
-    public function setSummarySuggestion(GoogleCloudDialogflowV2SummarySuggestion $summarySuggestion)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowV2SummarySuggestion
-     */
-    public function getSummarySuggestion()
-    {
-    }
-    /**
-     * Optional. List of request and response for tool calls executed.
-     *
-     * @param GoogleCloudDialogflowV2GeneratorSuggestionToolCallInfo[] $toolCallInfo
-     */
-    public function setToolCallInfo($toolCallInfo)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowV2GeneratorSuggestionToolCallInfo[]
-     */
-    public function getToolCallInfo()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2GeneratorSuggestion extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2GeneratorSuggestion
     {
     }
 }

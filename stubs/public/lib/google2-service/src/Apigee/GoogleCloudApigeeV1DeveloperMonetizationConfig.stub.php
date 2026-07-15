@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1DeveloperMonetizationConfig extends \Google\Model
-{
-    /**
-     * The default/unset value.
-     */
-    public const BILLING_TYPE_BILLING_TYPE_UNSPECIFIED = 'BILLING_TYPE_UNSPECIFIED';
-    /**
-     * Developer pays in advance for the use of APIs and the charged amount is
-     * deducted from their account balance.
-     */
-    public const BILLING_TYPE_PREPAID = 'PREPAID';
-    /**
-     * Developer does not maintain an account balance. The API provider bills the
-     * developer for API usage.
-     */
-    public const BILLING_TYPE_POSTPAID = 'POSTPAID';
-    /**
-     * Billing type.
-     *
-     * @var string
-     */
-    public $billingType;
-    /**
-     * Billing type.
-     *
-     * Accepted values: BILLING_TYPE_UNSPECIFIED, PREPAID, POSTPAID
-     *
-     * @param self::BILLING_TYPE_* $billingType
-     */
-    public function setBillingType($billingType)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1DeveloperMonetizationConfig extends \Google\Model
     {
+        /**
+         * The default/unset value.
+         */
+        public const BILLING_TYPE_BILLING_TYPE_UNSPECIFIED = 'BILLING_TYPE_UNSPECIFIED';
+        /**
+         * Developer pays in advance for the use of APIs and the charged amount is
+         * deducted from their account balance.
+         */
+        public const BILLING_TYPE_PREPAID = 'PREPAID';
+        /**
+         * Developer does not maintain an account balance. The API provider bills the
+         * developer for API usage.
+         */
+        public const BILLING_TYPE_POSTPAID = 'POSTPAID';
+        /**
+         * Billing type.
+         *
+         * @var string
+         */
+        public $billingType;
+        /**
+         * Billing type.
+         *
+         * Accepted values: BILLING_TYPE_UNSPECIFIED, PREPAID, POSTPAID
+         *
+         * @param self::BILLING_TYPE_* $billingType
+         */
+        public function setBillingType($billingType)
+        {
+        }
+        /**
+         * @return self::BILLING_TYPE_*
+         */
+        public function getBillingType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::BILLING_TYPE_*
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1DeveloperMonetizationConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBillingType()
+    class Google_Service_Apigee_GoogleCloudApigeeV1DeveloperMonetizationConfig extends \Google\Service\Apigee\GoogleCloudApigeeV1DeveloperMonetizationConfig
     {
     }
 }

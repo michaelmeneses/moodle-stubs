@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class AddTargetingResponse extends \Google\Model
-{
+namespace Google\Service\AndroidPublisher {
+    class AddTargetingResponse extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AndroidPublisher\AddTargetingResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AndroidPublisher_AddTargetingResponse extends \Google\Service\AndroidPublisher\AddTargetingResponse
+    {
+    }
 }

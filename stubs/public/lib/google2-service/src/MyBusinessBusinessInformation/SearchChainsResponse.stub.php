@@ -21,27 +21,36 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessBusinessInformation;
-
-class SearchChainsResponse extends \Google\Collection
-{
-    protected $collection_key = 'chains';
-    protected $chainsType = Chain::class;
-    protected $chainsDataType = 'array';
-    /**
-     * Chains that match the queried chain_display_name in SearchChainsRequest. If
-     * there are no matches, this field will be empty. Results are listed in order
-     * of relevance.
-     *
-     * @param Chain[] $chains
-     */
-    public function setChains($chains)
+namespace Google\Service\MyBusinessBusinessInformation {
+    class SearchChainsResponse extends \Google\Collection
     {
+        protected $collection_key = 'chains';
+        protected $chainsType = Chain::class;
+        protected $chainsDataType = 'array';
+        /**
+         * Chains that match the queried chain_display_name in SearchChainsRequest. If
+         * there are no matches, this field will be empty. Results are listed in order
+         * of relevance.
+         *
+         * @param Chain[] $chains
+         */
+        public function setChains($chains)
+        {
+        }
+        /**
+         * @return Chain[]
+         */
+        public function getChains()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Chain[]
+     * Runtime class alias of \Google\Service\MyBusinessBusinessInformation\SearchChainsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChains()
+    class Google_Service_MyBusinessBusinessInformation_SearchChainsResponse extends \Google\Service\MyBusinessBusinessInformation\SearchChainsResponse
     {
     }
 }

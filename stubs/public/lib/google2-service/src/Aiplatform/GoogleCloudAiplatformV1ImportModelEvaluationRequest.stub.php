@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ImportModelEvaluationRequest extends \Google\Model
-{
-    protected $modelEvaluationType = GoogleCloudAiplatformV1ModelEvaluation::class;
-    protected $modelEvaluationDataType = '';
-    /**
-     * Required. Model evaluation resource to be imported.
-     *
-     * @param GoogleCloudAiplatformV1ModelEvaluation $modelEvaluation
-     */
-    public function setModelEvaluation(GoogleCloudAiplatformV1ModelEvaluation $modelEvaluation)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ImportModelEvaluationRequest extends \Google\Model
     {
+        protected $modelEvaluationType = GoogleCloudAiplatformV1ModelEvaluation::class;
+        protected $modelEvaluationDataType = '';
+        /**
+         * Required. Model evaluation resource to be imported.
+         *
+         * @param GoogleCloudAiplatformV1ModelEvaluation $modelEvaluation
+         */
+        public function setModelEvaluation(GoogleCloudAiplatformV1ModelEvaluation $modelEvaluation)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ModelEvaluation
+         */
+        public function getModelEvaluation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1ModelEvaluation
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ImportModelEvaluationRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getModelEvaluation()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ImportModelEvaluationRequest extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ImportModelEvaluationRequest
     {
     }
 }

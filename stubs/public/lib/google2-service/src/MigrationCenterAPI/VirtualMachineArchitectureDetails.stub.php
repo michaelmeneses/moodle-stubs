@@ -21,150 +21,159 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class VirtualMachineArchitectureDetails extends \Google\Model
-{
-    protected $biosType = BiosDetails::class;
-    protected $biosDataType = '';
-    /**
-     * @var string
-     */
-    public $cpuArchitecture;
-    /**
-     * @var string
-     */
-    public $cpuManufacturer;
-    /**
-     * @var string
-     */
-    public $cpuName;
-    /**
-     * @var int
-     */
-    public $cpuSocketCount;
-    /**
-     * @var int
-     */
-    public $cpuThreadCount;
-    /**
-     * @var string
-     */
-    public $firmware;
-    /**
-     * @var string
-     */
-    public $hyperthreading;
-    /**
-     * @var string
-     */
-    public $vendor;
-    /**
-     * @param BiosDetails
-     */
-    public function setBios(BiosDetails $bios)
+namespace Google\Service\MigrationCenterAPI {
+    class VirtualMachineArchitectureDetails extends \Google\Model
     {
+        protected $biosType = BiosDetails::class;
+        protected $biosDataType = '';
+        /**
+         * @var string
+         */
+        public $cpuArchitecture;
+        /**
+         * @var string
+         */
+        public $cpuManufacturer;
+        /**
+         * @var string
+         */
+        public $cpuName;
+        /**
+         * @var int
+         */
+        public $cpuSocketCount;
+        /**
+         * @var int
+         */
+        public $cpuThreadCount;
+        /**
+         * @var string
+         */
+        public $firmware;
+        /**
+         * @var string
+         */
+        public $hyperthreading;
+        /**
+         * @var string
+         */
+        public $vendor;
+        /**
+         * @param BiosDetails
+         */
+        public function setBios(BiosDetails $bios)
+        {
+        }
+        /**
+         * @return BiosDetails
+         */
+        public function getBios()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCpuArchitecture($cpuArchitecture)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCpuArchitecture()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCpuManufacturer($cpuManufacturer)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCpuManufacturer()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCpuName($cpuName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCpuName()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setCpuSocketCount($cpuSocketCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCpuSocketCount()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setCpuThreadCount($cpuThreadCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCpuThreadCount()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setFirmware($firmware)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFirmware()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setHyperthreading($hyperthreading)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHyperthreading()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setVendor($vendor)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVendor()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BiosDetails
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\VirtualMachineArchitectureDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBios()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCpuArchitecture($cpuArchitecture)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCpuArchitecture()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCpuManufacturer($cpuManufacturer)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCpuManufacturer()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCpuName($cpuName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCpuName()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setCpuSocketCount($cpuSocketCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getCpuSocketCount()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setCpuThreadCount($cpuThreadCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getCpuThreadCount()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setFirmware($firmware)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFirmware()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setHyperthreading($hyperthreading)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHyperthreading()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setVendor($vendor)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVendor()
+    class Google_Service_MigrationCenterAPI_VirtualMachineArchitectureDetails extends \Google\Service\MigrationCenterAPI\VirtualMachineArchitectureDetails
     {
     }
 }

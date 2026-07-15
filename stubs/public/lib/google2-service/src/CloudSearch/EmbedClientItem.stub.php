@@ -21,131 +21,140 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class EmbedClientItem extends \Google\Collection
-{
-    protected $collection_key = 'type';
-    /**
-     * @var string
-     */
-    public $canonicalId;
-    protected $deepLinkDataType = DeepLinkData::class;
-    protected $deepLinkDataDataType = '';
-    /**
-     * @var string
-     */
-    public $id;
-    protected $provenanceType = Provenance::class;
-    protected $provenanceDataType = '';
-    /**
-     * @var string
-     */
-    public $renderId;
-    /**
-     * @var string
-     */
-    public $signature;
-    protected $transientDataType = TransientData::class;
-    protected $transientDataDataType = '';
-    /**
-     * @var string[]
-     */
-    public $type;
-    /**
-     * @param string
-     */
-    public function setCanonicalId($canonicalId)
+namespace Google\Service\CloudSearch {
+    class EmbedClientItem extends \Google\Collection
     {
+        protected $collection_key = 'type';
+        /**
+         * @var string
+         */
+        public $canonicalId;
+        protected $deepLinkDataType = DeepLinkData::class;
+        protected $deepLinkDataDataType = '';
+        /**
+         * @var string
+         */
+        public $id;
+        protected $provenanceType = Provenance::class;
+        protected $provenanceDataType = '';
+        /**
+         * @var string
+         */
+        public $renderId;
+        /**
+         * @var string
+         */
+        public $signature;
+        protected $transientDataType = TransientData::class;
+        protected $transientDataDataType = '';
+        /**
+         * @var string[]
+         */
+        public $type;
+        /**
+         * @param string
+         */
+        public function setCanonicalId($canonicalId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCanonicalId()
+        {
+        }
+        /**
+         * @param DeepLinkData
+         */
+        public function setDeepLinkData(DeepLinkData $deepLinkData)
+        {
+        }
+        /**
+         * @return DeepLinkData
+         */
+        public function getDeepLinkData()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * @param Provenance
+         */
+        public function setProvenance(Provenance $provenance)
+        {
+        }
+        /**
+         * @return Provenance
+         */
+        public function getProvenance()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRenderId($renderId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRenderId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSignature($signature)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSignature()
+        {
+        }
+        /**
+         * @param TransientData
+         */
+        public function setTransientData(TransientData $transientData)
+        {
+        }
+        /**
+         * @return TransientData
+         */
+        public function getTransientData()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\EmbedClientItem registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCanonicalId()
-    {
-    }
-    /**
-     * @param DeepLinkData
-     */
-    public function setDeepLinkData(DeepLinkData $deepLinkData)
-    {
-    }
-    /**
-     * @return DeepLinkData
-     */
-    public function getDeepLinkData()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * @param Provenance
-     */
-    public function setProvenance(Provenance $provenance)
-    {
-    }
-    /**
-     * @return Provenance
-     */
-    public function getProvenance()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRenderId($renderId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRenderId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSignature($signature)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSignature()
-    {
-    }
-    /**
-     * @param TransientData
-     */
-    public function setTransientData(TransientData $transientData)
-    {
-    }
-    /**
-     * @return TransientData
-     */
-    public function getTransientData()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getType()
+    class Google_Service_CloudSearch_EmbedClientItem extends \Google\Service\CloudSearch\EmbedClientItem
     {
     }
 }

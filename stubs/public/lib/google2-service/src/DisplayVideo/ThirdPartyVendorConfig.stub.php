@@ -21,105 +21,114 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class ThirdPartyVendorConfig extends \Google\Model
-{
-    /**
-     * Unknown third-party vendor.
-     */
-    public const VENDOR_THIRD_PARTY_VENDOR_UNSPECIFIED = 'THIRD_PARTY_VENDOR_UNSPECIFIED';
-    /**
-     * Moat.
-     */
-    public const VENDOR_THIRD_PARTY_VENDOR_MOAT = 'THIRD_PARTY_VENDOR_MOAT';
-    /**
-     * DoubleVerify.
-     */
-    public const VENDOR_THIRD_PARTY_VENDOR_DOUBLE_VERIFY = 'THIRD_PARTY_VENDOR_DOUBLE_VERIFY';
-    /**
-     * Integral Ad Science.
-     */
-    public const VENDOR_THIRD_PARTY_VENDOR_INTEGRAL_AD_SCIENCE = 'THIRD_PARTY_VENDOR_INTEGRAL_AD_SCIENCE';
-    /**
-     * Comscore.
-     */
-    public const VENDOR_THIRD_PARTY_VENDOR_COMSCORE = 'THIRD_PARTY_VENDOR_COMSCORE';
-    /**
-     * Telemetry.
-     */
-    public const VENDOR_THIRD_PARTY_VENDOR_TELEMETRY = 'THIRD_PARTY_VENDOR_TELEMETRY';
-    /**
-     * Meetrics.
-     */
-    public const VENDOR_THIRD_PARTY_VENDOR_MEETRICS = 'THIRD_PARTY_VENDOR_MEETRICS';
-    /**
-     * ZEFR.
-     */
-    public const VENDOR_THIRD_PARTY_VENDOR_ZEFR = 'THIRD_PARTY_VENDOR_ZEFR';
-    /**
-     * Nielsen.
-     */
-    public const VENDOR_THIRD_PARTY_VENDOR_NIELSEN = 'THIRD_PARTY_VENDOR_NIELSEN';
-    /**
-     * Kantar.
-     */
-    public const VENDOR_THIRD_PARTY_VENDOR_KANTAR = 'THIRD_PARTY_VENDOR_KANTAR';
-    /**
-     * Dynata.
-     */
-    public const VENDOR_THIRD_PARTY_VENDOR_DYNATA = 'THIRD_PARTY_VENDOR_DYNATA';
-    /**
-     * Transunion.
-     */
-    public const VENDOR_THIRD_PARTY_VENDOR_TRANSUNION = 'THIRD_PARTY_VENDOR_TRANSUNION';
-    /**
-     * The ID used by the platform of the third-party vendor to identify the line
-     * item.
-     *
-     * @var string
-     */
-    public $placementId;
-    /**
-     * The third-party measurement vendor.
-     *
-     * @var string
-     */
-    public $vendor;
-    /**
-     * The ID used by the platform of the third-party vendor to identify the line
-     * item.
-     *
-     * @param string $placementId
-     */
-    public function setPlacementId($placementId)
+namespace Google\Service\DisplayVideo {
+    class ThirdPartyVendorConfig extends \Google\Model
     {
+        /**
+         * Unknown third-party vendor.
+         */
+        public const VENDOR_THIRD_PARTY_VENDOR_UNSPECIFIED = 'THIRD_PARTY_VENDOR_UNSPECIFIED';
+        /**
+         * Moat.
+         */
+        public const VENDOR_THIRD_PARTY_VENDOR_MOAT = 'THIRD_PARTY_VENDOR_MOAT';
+        /**
+         * DoubleVerify.
+         */
+        public const VENDOR_THIRD_PARTY_VENDOR_DOUBLE_VERIFY = 'THIRD_PARTY_VENDOR_DOUBLE_VERIFY';
+        /**
+         * Integral Ad Science.
+         */
+        public const VENDOR_THIRD_PARTY_VENDOR_INTEGRAL_AD_SCIENCE = 'THIRD_PARTY_VENDOR_INTEGRAL_AD_SCIENCE';
+        /**
+         * Comscore.
+         */
+        public const VENDOR_THIRD_PARTY_VENDOR_COMSCORE = 'THIRD_PARTY_VENDOR_COMSCORE';
+        /**
+         * Telemetry.
+         */
+        public const VENDOR_THIRD_PARTY_VENDOR_TELEMETRY = 'THIRD_PARTY_VENDOR_TELEMETRY';
+        /**
+         * Meetrics.
+         */
+        public const VENDOR_THIRD_PARTY_VENDOR_MEETRICS = 'THIRD_PARTY_VENDOR_MEETRICS';
+        /**
+         * ZEFR.
+         */
+        public const VENDOR_THIRD_PARTY_VENDOR_ZEFR = 'THIRD_PARTY_VENDOR_ZEFR';
+        /**
+         * Nielsen.
+         */
+        public const VENDOR_THIRD_PARTY_VENDOR_NIELSEN = 'THIRD_PARTY_VENDOR_NIELSEN';
+        /**
+         * Kantar.
+         */
+        public const VENDOR_THIRD_PARTY_VENDOR_KANTAR = 'THIRD_PARTY_VENDOR_KANTAR';
+        /**
+         * Dynata.
+         */
+        public const VENDOR_THIRD_PARTY_VENDOR_DYNATA = 'THIRD_PARTY_VENDOR_DYNATA';
+        /**
+         * Transunion.
+         */
+        public const VENDOR_THIRD_PARTY_VENDOR_TRANSUNION = 'THIRD_PARTY_VENDOR_TRANSUNION';
+        /**
+         * The ID used by the platform of the third-party vendor to identify the line
+         * item.
+         *
+         * @var string
+         */
+        public $placementId;
+        /**
+         * The third-party measurement vendor.
+         *
+         * @var string
+         */
+        public $vendor;
+        /**
+         * The ID used by the platform of the third-party vendor to identify the line
+         * item.
+         *
+         * @param string $placementId
+         */
+        public function setPlacementId($placementId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPlacementId()
+        {
+        }
+        /**
+         * The third-party measurement vendor.
+         *
+         * Accepted values: THIRD_PARTY_VENDOR_UNSPECIFIED, THIRD_PARTY_VENDOR_MOAT,
+         * THIRD_PARTY_VENDOR_DOUBLE_VERIFY, THIRD_PARTY_VENDOR_INTEGRAL_AD_SCIENCE,
+         * THIRD_PARTY_VENDOR_COMSCORE, THIRD_PARTY_VENDOR_TELEMETRY,
+         * THIRD_PARTY_VENDOR_MEETRICS, THIRD_PARTY_VENDOR_ZEFR,
+         * THIRD_PARTY_VENDOR_NIELSEN, THIRD_PARTY_VENDOR_KANTAR,
+         * THIRD_PARTY_VENDOR_DYNATA, THIRD_PARTY_VENDOR_TRANSUNION
+         *
+         * @param self::VENDOR_* $vendor
+         */
+        public function setVendor($vendor)
+        {
+        }
+        /**
+         * @return self::VENDOR_*
+         */
+        public function getVendor()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\ThirdPartyVendorConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPlacementId()
-    {
-    }
-    /**
-     * The third-party measurement vendor.
-     *
-     * Accepted values: THIRD_PARTY_VENDOR_UNSPECIFIED, THIRD_PARTY_VENDOR_MOAT,
-     * THIRD_PARTY_VENDOR_DOUBLE_VERIFY, THIRD_PARTY_VENDOR_INTEGRAL_AD_SCIENCE,
-     * THIRD_PARTY_VENDOR_COMSCORE, THIRD_PARTY_VENDOR_TELEMETRY,
-     * THIRD_PARTY_VENDOR_MEETRICS, THIRD_PARTY_VENDOR_ZEFR,
-     * THIRD_PARTY_VENDOR_NIELSEN, THIRD_PARTY_VENDOR_KANTAR,
-     * THIRD_PARTY_VENDOR_DYNATA, THIRD_PARTY_VENDOR_TRANSUNION
-     *
-     * @param self::VENDOR_* $vendor
-     */
-    public function setVendor($vendor)
-    {
-    }
-    /**
-     * @return self::VENDOR_*
-     */
-    public function getVendor()
+    class Google_Service_DisplayVideo_ThirdPartyVendorConfig extends \Google\Service\DisplayVideo\ThirdPartyVendorConfig
     {
     }
 }

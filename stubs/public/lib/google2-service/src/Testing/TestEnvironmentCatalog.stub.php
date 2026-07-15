@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Testing;
-
-class TestEnvironmentCatalog extends \Google\Model
-{
-    protected $androidDeviceCatalogType = AndroidDeviceCatalog::class;
-    protected $androidDeviceCatalogDataType = '';
-    protected $deviceIpBlockCatalogType = DeviceIpBlockCatalog::class;
-    protected $deviceIpBlockCatalogDataType = '';
-    protected $iosDeviceCatalogType = IosDeviceCatalog::class;
-    protected $iosDeviceCatalogDataType = '';
-    protected $networkConfigurationCatalogType = NetworkConfigurationCatalog::class;
-    protected $networkConfigurationCatalogDataType = '';
-    protected $softwareCatalogType = ProvidedSoftwareCatalog::class;
-    protected $softwareCatalogDataType = '';
-    /**
-     * Supported Android devices.
-     *
-     * @param AndroidDeviceCatalog $androidDeviceCatalog
-     */
-    public function setAndroidDeviceCatalog(AndroidDeviceCatalog $androidDeviceCatalog)
+namespace Google\Service\Testing {
+    class TestEnvironmentCatalog extends \Google\Model
     {
+        protected $androidDeviceCatalogType = AndroidDeviceCatalog::class;
+        protected $androidDeviceCatalogDataType = '';
+        protected $deviceIpBlockCatalogType = DeviceIpBlockCatalog::class;
+        protected $deviceIpBlockCatalogDataType = '';
+        protected $iosDeviceCatalogType = IosDeviceCatalog::class;
+        protected $iosDeviceCatalogDataType = '';
+        protected $networkConfigurationCatalogType = NetworkConfigurationCatalog::class;
+        protected $networkConfigurationCatalogDataType = '';
+        protected $softwareCatalogType = ProvidedSoftwareCatalog::class;
+        protected $softwareCatalogDataType = '';
+        /**
+         * Supported Android devices.
+         *
+         * @param AndroidDeviceCatalog $androidDeviceCatalog
+         */
+        public function setAndroidDeviceCatalog(AndroidDeviceCatalog $androidDeviceCatalog)
+        {
+        }
+        /**
+         * @return AndroidDeviceCatalog
+         */
+        public function getAndroidDeviceCatalog()
+        {
+        }
+        /**
+         * The IP blocks used by devices in the test environment.
+         *
+         * @param DeviceIpBlockCatalog $deviceIpBlockCatalog
+         */
+        public function setDeviceIpBlockCatalog(DeviceIpBlockCatalog $deviceIpBlockCatalog)
+        {
+        }
+        /**
+         * @return DeviceIpBlockCatalog
+         */
+        public function getDeviceIpBlockCatalog()
+        {
+        }
+        /**
+         * Supported iOS devices.
+         *
+         * @param IosDeviceCatalog $iosDeviceCatalog
+         */
+        public function setIosDeviceCatalog(IosDeviceCatalog $iosDeviceCatalog)
+        {
+        }
+        /**
+         * @return IosDeviceCatalog
+         */
+        public function getIosDeviceCatalog()
+        {
+        }
+        /**
+         * Supported network configurations.
+         *
+         * @param NetworkConfigurationCatalog $networkConfigurationCatalog
+         */
+        public function setNetworkConfigurationCatalog(NetworkConfigurationCatalog $networkConfigurationCatalog)
+        {
+        }
+        /**
+         * @return NetworkConfigurationCatalog
+         */
+        public function getNetworkConfigurationCatalog()
+        {
+        }
+        /**
+         * The software test environment provided by TestExecutionService.
+         *
+         * @param ProvidedSoftwareCatalog $softwareCatalog
+         */
+        public function setSoftwareCatalog(ProvidedSoftwareCatalog $softwareCatalog)
+        {
+        }
+        /**
+         * @return ProvidedSoftwareCatalog
+         */
+        public function getSoftwareCatalog()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AndroidDeviceCatalog
+     * Runtime class alias of \Google\Service\Testing\TestEnvironmentCatalog registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAndroidDeviceCatalog()
-    {
-    }
-    /**
-     * The IP blocks used by devices in the test environment.
-     *
-     * @param DeviceIpBlockCatalog $deviceIpBlockCatalog
-     */
-    public function setDeviceIpBlockCatalog(DeviceIpBlockCatalog $deviceIpBlockCatalog)
-    {
-    }
-    /**
-     * @return DeviceIpBlockCatalog
-     */
-    public function getDeviceIpBlockCatalog()
-    {
-    }
-    /**
-     * Supported iOS devices.
-     *
-     * @param IosDeviceCatalog $iosDeviceCatalog
-     */
-    public function setIosDeviceCatalog(IosDeviceCatalog $iosDeviceCatalog)
-    {
-    }
-    /**
-     * @return IosDeviceCatalog
-     */
-    public function getIosDeviceCatalog()
-    {
-    }
-    /**
-     * Supported network configurations.
-     *
-     * @param NetworkConfigurationCatalog $networkConfigurationCatalog
-     */
-    public function setNetworkConfigurationCatalog(NetworkConfigurationCatalog $networkConfigurationCatalog)
-    {
-    }
-    /**
-     * @return NetworkConfigurationCatalog
-     */
-    public function getNetworkConfigurationCatalog()
-    {
-    }
-    /**
-     * The software test environment provided by TestExecutionService.
-     *
-     * @param ProvidedSoftwareCatalog $softwareCatalog
-     */
-    public function setSoftwareCatalog(ProvidedSoftwareCatalog $softwareCatalog)
-    {
-    }
-    /**
-     * @return ProvidedSoftwareCatalog
-     */
-    public function getSoftwareCatalog()
+    class Google_Service_Testing_TestEnvironmentCatalog extends \Google\Service\Testing\TestEnvironmentCatalog
     {
     }
 }

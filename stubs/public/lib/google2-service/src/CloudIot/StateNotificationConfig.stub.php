@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIot;
-
-class StateNotificationConfig extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $pubsubTopicName;
-    /**
-     * @param string
-     */
-    public function setPubsubTopicName($pubsubTopicName)
+namespace Google\Service\CloudIot {
+    class StateNotificationConfig extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $pubsubTopicName;
+        /**
+         * @param string
+         */
+        public function setPubsubTopicName($pubsubTopicName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPubsubTopicName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudIot\StateNotificationConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPubsubTopicName()
+    class Google_Service_CloudIot_StateNotificationConfig extends \Google\Service\CloudIot\StateNotificationConfig
     {
     }
 }

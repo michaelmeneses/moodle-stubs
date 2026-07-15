@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementV1NetworkBandwidthReport extends \Google\Model
-{
-    /**
-     * Output only. Download speed in kilobits per second.
-     *
-     * @var string
-     */
-    public $downloadSpeedKbps;
-    /**
-     * Output only. Timestamp of when the report was collected.
-     *
-     * @var string
-     */
-    public $reportTime;
-    /**
-     * Output only. Download speed in kilobits per second.
-     *
-     * @param string $downloadSpeedKbps
-     */
-    public function setDownloadSpeedKbps($downloadSpeedKbps)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementV1NetworkBandwidthReport extends \Google\Model
     {
+        /**
+         * Output only. Download speed in kilobits per second.
+         *
+         * @var string
+         */
+        public $downloadSpeedKbps;
+        /**
+         * Output only. Timestamp of when the report was collected.
+         *
+         * @var string
+         */
+        public $reportTime;
+        /**
+         * Output only. Download speed in kilobits per second.
+         *
+         * @param string $downloadSpeedKbps
+         */
+        public function setDownloadSpeedKbps($downloadSpeedKbps)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDownloadSpeedKbps()
+        {
+        }
+        /**
+         * Output only. Timestamp of when the report was collected.
+         *
+         * @param string $reportTime
+         */
+        public function setReportTime($reportTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReportTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementV1NetworkBandwidthReport registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDownloadSpeedKbps()
-    {
-    }
-    /**
-     * Output only. Timestamp of when the report was collected.
-     *
-     * @param string $reportTime
-     */
-    public function setReportTime($reportTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReportTime()
+    class Google_Service_ChromeManagement_GoogleChromeManagementV1NetworkBandwidthReport extends \Google\Service\ChromeManagement\GoogleChromeManagementV1NetworkBandwidthReport
     {
     }
 }

@@ -21,60 +21,70 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube\Resource;
-
-/**
- * The "watermarks" collection of methods.
- * Typical usage is:
- *  <code>
- *   $youtubeService = new Google\Service\YouTube(...);
- *   $watermarks = $youtubeService->watermarks;
- *  </code>
- */
-class Watermarks extends \Google\Service\Resource
-{
+namespace Google\Service\YouTube\Resource {
+    use Google\Service\YouTube\InvideoBranding;
     /**
-     * Allows upload of watermark image and setting it for a channel.
-     * (watermarks.set)
-     *
-     * @param string $channelId
-     * @param InvideoBranding $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string onBehalfOfContentOwner *Note:* This parameter is intended
-     * exclusively for YouTube content partners. The *onBehalfOfContentOwner*
-     * parameter indicates that the request's authorization credentials identify a
-     * YouTube CMS user who is acting on behalf of the content owner specified in
-     * the parameter value. This parameter is intended for YouTube content partners
-     * that own and manage many different YouTube channels. It allows content owners
-     * to authenticate once and get access to all their video and channel data,
-     * without having to provide authentication credentials for each individual
-     * channel. The CMS account that the user authenticates with must be linked to
-     * the specified YouTube content owner.
-     * @throws \Google\Service\Exception
+     * The "watermarks" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $youtubeService = new Google\Service\YouTube(...);
+     *   $watermarks = $youtubeService->watermarks;
+     *  </code>
      */
-    public function set($channelId, InvideoBranding $postBody, $optParams = [])
+    class Watermarks extends \Google\Service\Resource
     {
+        /**
+         * Allows upload of watermark image and setting it for a channel.
+         * (watermarks.set)
+         *
+         * @param string $channelId
+         * @param InvideoBranding $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string onBehalfOfContentOwner *Note:* This parameter is intended
+         * exclusively for YouTube content partners. The *onBehalfOfContentOwner*
+         * parameter indicates that the request's authorization credentials identify a
+         * YouTube CMS user who is acting on behalf of the content owner specified in
+         * the parameter value. This parameter is intended for YouTube content partners
+         * that own and manage many different YouTube channels. It allows content owners
+         * to authenticate once and get access to all their video and channel data,
+         * without having to provide authentication credentials for each individual
+         * channel. The CMS account that the user authenticates with must be linked to
+         * the specified YouTube content owner.
+         * @throws \Google\Service\Exception
+         */
+        public function set($channelId, InvideoBranding $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Allows removal of channel watermark. (watermarks.unsetWatermarks)
+         *
+         * @param string $channelId
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string onBehalfOfContentOwner *Note:* This parameter is intended
+         * exclusively for YouTube content partners. The *onBehalfOfContentOwner*
+         * parameter indicates that the request's authorization credentials identify a
+         * YouTube CMS user who is acting on behalf of the content owner specified in
+         * the parameter value. This parameter is intended for YouTube content partners
+         * that own and manage many different YouTube channels. It allows content owners
+         * to authenticate once and get access to all their video and channel data,
+         * without having to provide authentication credentials for each individual
+         * channel. The CMS account that the user authenticates with must be linked to
+         * the specified YouTube content owner.
+         * @throws \Google\Service\Exception
+         */
+        public function unsetWatermarks($channelId, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Allows removal of channel watermark. (watermarks.unsetWatermarks)
-     *
-     * @param string $channelId
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string onBehalfOfContentOwner *Note:* This parameter is intended
-     * exclusively for YouTube content partners. The *onBehalfOfContentOwner*
-     * parameter indicates that the request's authorization credentials identify a
-     * YouTube CMS user who is acting on behalf of the content owner specified in
-     * the parameter value. This parameter is intended for YouTube content partners
-     * that own and manage many different YouTube channels. It allows content owners
-     * to authenticate once and get access to all their video and channel data,
-     * without having to provide authentication credentials for each individual
-     * channel. The CMS account that the user authenticates with must be linked to
-     * the specified YouTube content owner.
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\YouTube\Resource\Watermarks registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function unsetWatermarks($channelId, $optParams = [])
+    class Google_Service_YouTube_Resource_Watermarks extends \Google\Service\YouTube\Resource\Watermarks
     {
     }
 }

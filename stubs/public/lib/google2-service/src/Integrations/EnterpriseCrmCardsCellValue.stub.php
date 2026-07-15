@@ -21,78 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmCardsCellValue extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $booleanValue;
-    public $doubleValue;
-    protected $emptyType = GoogleProtobufEmpty::class;
-    protected $emptyDataType = '';
-    public $empty;
-    /**
-     * @var string
-     */
-    public $longValue;
-    /**
-     * @var string
-     */
-    public $stringValue;
-    /**
-     * @param bool
-     */
-    public function setBooleanValue($booleanValue)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmCardsCellValue extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $booleanValue;
+        public $doubleValue;
+        protected $emptyType = GoogleProtobufEmpty::class;
+        protected $emptyDataType = '';
+        public $empty;
+        /**
+         * @var string
+         */
+        public $longValue;
+        /**
+         * @var string
+         */
+        public $stringValue;
+        /**
+         * @param bool
+         */
+        public function setBooleanValue($booleanValue)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getBooleanValue()
+        {
+        }
+        public function setDoubleValue($doubleValue)
+        {
+        }
+        public function getDoubleValue()
+        {
+        }
+        /**
+         * @param GoogleProtobufEmpty
+         */
+        public function setEmpty(GoogleProtobufEmpty $empty)
+        {
+        }
+        /**
+         * @return GoogleProtobufEmpty
+         */
+        public function getEmpty()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLongValue($longValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLongValue()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setStringValue($stringValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStringValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmCardsCellValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBooleanValue()
-    {
-    }
-    public function setDoubleValue($doubleValue)
-    {
-    }
-    public function getDoubleValue()
-    {
-    }
-    /**
-     * @param GoogleProtobufEmpty
-     */
-    public function setEmpty(GoogleProtobufEmpty $empty)
-    {
-    }
-    /**
-     * @return GoogleProtobufEmpty
-     */
-    public function getEmpty()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLongValue($longValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLongValue()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setStringValue($stringValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStringValue()
+    class Google_Service_Integrations_EnterpriseCrmCardsCellValue extends \Google\Service\Integrations\EnterpriseCrmCardsCellValue
     {
     }
 }

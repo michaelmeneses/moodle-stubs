@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class GetCustomerQueryStatsResponse extends \Google\Collection
-{
-    protected $collection_key = 'stats';
-    protected $statsType = CustomerQueryStats::class;
-    protected $statsDataType = 'array';
-    /**
-     * Total successful query count (status code 200) for the given date range.
-     *
-     * @var string
-     */
-    public $totalQueryCount;
-    /**
-     * @param CustomerQueryStats[] $stats
-     */
-    public function setStats($stats)
+namespace Google\Service\CloudSearch {
+    class GetCustomerQueryStatsResponse extends \Google\Collection
     {
+        protected $collection_key = 'stats';
+        protected $statsType = CustomerQueryStats::class;
+        protected $statsDataType = 'array';
+        /**
+         * Total successful query count (status code 200) for the given date range.
+         *
+         * @var string
+         */
+        public $totalQueryCount;
+        /**
+         * @param CustomerQueryStats[] $stats
+         */
+        public function setStats($stats)
+        {
+        }
+        /**
+         * @return CustomerQueryStats[]
+         */
+        public function getStats()
+        {
+        }
+        /**
+         * Total successful query count (status code 200) for the given date range.
+         *
+         * @param string $totalQueryCount
+         */
+        public function setTotalQueryCount($totalQueryCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalQueryCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CustomerQueryStats[]
+     * Runtime class alias of \Google\Service\CloudSearch\GetCustomerQueryStatsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStats()
-    {
-    }
-    /**
-     * Total successful query count (status code 200) for the given date range.
-     *
-     * @param string $totalQueryCount
-     */
-    public function setTotalQueryCount($totalQueryCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalQueryCount()
+    class Google_Service_CloudSearch_GetCustomerQueryStatsResponse extends \Google\Service\CloudSearch\GetCustomerQueryStatsResponse
     {
     }
 }

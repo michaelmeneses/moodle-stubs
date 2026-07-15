@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class PausedStateContext extends \Google\Model
-{
-    /**
-     * Time at which the subscription will be automatically resumed.
-     *
-     * @var string
-     */
-    public $autoResumeTime;
-    /**
-     * Time at which the subscription will be automatically resumed.
-     *
-     * @param string $autoResumeTime
-     */
-    public function setAutoResumeTime($autoResumeTime)
+namespace Google\Service\AndroidPublisher {
+    class PausedStateContext extends \Google\Model
     {
+        /**
+         * Time at which the subscription will be automatically resumed.
+         *
+         * @var string
+         */
+        public $autoResumeTime;
+        /**
+         * Time at which the subscription will be automatically resumed.
+         *
+         * @param string $autoResumeTime
+         */
+        public function setAutoResumeTime($autoResumeTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAutoResumeTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidPublisher\PausedStateContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAutoResumeTime()
+    class Google_Service_AndroidPublisher_PausedStateContext extends \Google\Service\AndroidPublisher\PausedStateContext
     {
     }
 }

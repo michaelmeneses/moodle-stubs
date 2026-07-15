@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class TimeUnitPartition extends \Google\Model
-{
-    /**
-     * Unspecified partitioing interval.
-     */
-    public const PARTITIONING_TIME_GRANULARITY_PARTITIONING_TIME_GRANULARITY_UNSPECIFIED = 'PARTITIONING_TIME_GRANULARITY_UNSPECIFIED';
-    /**
-     * Hourly partitioning.
-     */
-    public const PARTITIONING_TIME_GRANULARITY_PARTITIONING_TIME_GRANULARITY_HOUR = 'PARTITIONING_TIME_GRANULARITY_HOUR';
-    /**
-     * Daily partitioning.
-     */
-    public const PARTITIONING_TIME_GRANULARITY_PARTITIONING_TIME_GRANULARITY_DAY = 'PARTITIONING_TIME_GRANULARITY_DAY';
-    /**
-     * Monthly partitioning.
-     */
-    public const PARTITIONING_TIME_GRANULARITY_PARTITIONING_TIME_GRANULARITY_MONTH = 'PARTITIONING_TIME_GRANULARITY_MONTH';
-    /**
-     * Yearly partitioning.
-     */
-    public const PARTITIONING_TIME_GRANULARITY_PARTITIONING_TIME_GRANULARITY_YEAR = 'PARTITIONING_TIME_GRANULARITY_YEAR';
-    /**
-     * Required. The partitioning column.
-     *
-     * @var string
-     */
-    public $column;
-    /**
-     * Optional. Partition granularity.
-     *
-     * @var string
-     */
-    public $partitioningTimeGranularity;
-    /**
-     * Required. The partitioning column.
-     *
-     * @param string $column
-     */
-    public function setColumn($column)
+namespace Google\Service\Datastream {
+    class TimeUnitPartition extends \Google\Model
     {
+        /**
+         * Unspecified partitioing interval.
+         */
+        public const PARTITIONING_TIME_GRANULARITY_PARTITIONING_TIME_GRANULARITY_UNSPECIFIED = 'PARTITIONING_TIME_GRANULARITY_UNSPECIFIED';
+        /**
+         * Hourly partitioning.
+         */
+        public const PARTITIONING_TIME_GRANULARITY_PARTITIONING_TIME_GRANULARITY_HOUR = 'PARTITIONING_TIME_GRANULARITY_HOUR';
+        /**
+         * Daily partitioning.
+         */
+        public const PARTITIONING_TIME_GRANULARITY_PARTITIONING_TIME_GRANULARITY_DAY = 'PARTITIONING_TIME_GRANULARITY_DAY';
+        /**
+         * Monthly partitioning.
+         */
+        public const PARTITIONING_TIME_GRANULARITY_PARTITIONING_TIME_GRANULARITY_MONTH = 'PARTITIONING_TIME_GRANULARITY_MONTH';
+        /**
+         * Yearly partitioning.
+         */
+        public const PARTITIONING_TIME_GRANULARITY_PARTITIONING_TIME_GRANULARITY_YEAR = 'PARTITIONING_TIME_GRANULARITY_YEAR';
+        /**
+         * Required. The partitioning column.
+         *
+         * @var string
+         */
+        public $column;
+        /**
+         * Optional. Partition granularity.
+         *
+         * @var string
+         */
+        public $partitioningTimeGranularity;
+        /**
+         * Required. The partitioning column.
+         *
+         * @param string $column
+         */
+        public function setColumn($column)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getColumn()
+        {
+        }
+        /**
+         * Optional. Partition granularity.
+         *
+         * Accepted values: PARTITIONING_TIME_GRANULARITY_UNSPECIFIED,
+         * PARTITIONING_TIME_GRANULARITY_HOUR, PARTITIONING_TIME_GRANULARITY_DAY,
+         * PARTITIONING_TIME_GRANULARITY_MONTH, PARTITIONING_TIME_GRANULARITY_YEAR
+         *
+         * @param self::PARTITIONING_TIME_GRANULARITY_* $partitioningTimeGranularity
+         */
+        public function setPartitioningTimeGranularity($partitioningTimeGranularity)
+        {
+        }
+        /**
+         * @return self::PARTITIONING_TIME_GRANULARITY_*
+         */
+        public function getPartitioningTimeGranularity()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Datastream\TimeUnitPartition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumn()
-    {
-    }
-    /**
-     * Optional. Partition granularity.
-     *
-     * Accepted values: PARTITIONING_TIME_GRANULARITY_UNSPECIFIED,
-     * PARTITIONING_TIME_GRANULARITY_HOUR, PARTITIONING_TIME_GRANULARITY_DAY,
-     * PARTITIONING_TIME_GRANULARITY_MONTH, PARTITIONING_TIME_GRANULARITY_YEAR
-     *
-     * @param self::PARTITIONING_TIME_GRANULARITY_* $partitioningTimeGranularity
-     */
-    public function setPartitioningTimeGranularity($partitioningTimeGranularity)
-    {
-    }
-    /**
-     * @return self::PARTITIONING_TIME_GRANULARITY_*
-     */
-    public function getPartitioningTimeGranularity()
+    class Google_Service_Datastream_TimeUnitPartition extends \Google\Service\Datastream\TimeUnitPartition
     {
     }
 }

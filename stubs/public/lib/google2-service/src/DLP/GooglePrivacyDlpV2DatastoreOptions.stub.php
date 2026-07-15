@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2DatastoreOptions extends \Google\Model
-{
-    protected $kindType = GooglePrivacyDlpV2KindExpression::class;
-    protected $kindDataType = '';
-    protected $partitionIdType = GooglePrivacyDlpV2PartitionId::class;
-    protected $partitionIdDataType = '';
-    /**
-     * The kind to process.
-     *
-     * @param GooglePrivacyDlpV2KindExpression $kind
-     */
-    public function setKind(GooglePrivacyDlpV2KindExpression $kind)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2DatastoreOptions extends \Google\Model
     {
+        protected $kindType = GooglePrivacyDlpV2KindExpression::class;
+        protected $kindDataType = '';
+        protected $partitionIdType = GooglePrivacyDlpV2PartitionId::class;
+        protected $partitionIdDataType = '';
+        /**
+         * The kind to process.
+         *
+         * @param GooglePrivacyDlpV2KindExpression $kind
+         */
+        public function setKind(GooglePrivacyDlpV2KindExpression $kind)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2KindExpression
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * A partition ID identifies a grouping of entities. The grouping is always by
+         * project and namespace, however the namespace ID may be empty.
+         *
+         * @param GooglePrivacyDlpV2PartitionId $partitionId
+         */
+        public function setPartitionId(GooglePrivacyDlpV2PartitionId $partitionId)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2PartitionId
+         */
+        public function getPartitionId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2KindExpression
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2DatastoreOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * A partition ID identifies a grouping of entities. The grouping is always by
-     * project and namespace, however the namespace ID may be empty.
-     *
-     * @param GooglePrivacyDlpV2PartitionId $partitionId
-     */
-    public function setPartitionId(GooglePrivacyDlpV2PartitionId $partitionId)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2PartitionId
-     */
-    public function getPartitionId()
+    class Google_Service_DLP_GooglePrivacyDlpV2DatastoreOptions extends \Google\Service\DLP\GooglePrivacyDlpV2DatastoreOptions
     {
     }
 }

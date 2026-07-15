@@ -21,43 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for GoogleMarketingPlatformAdminAPI (v1alpha).
- *
- * <p>
- * The Google Marketing Platform Admin API allows for programmatic access to the
- * Google Marketing Platform configuration data. You can use the Google
- * Marketing Platform Admin API to manage links between your Google Marketing
- * Platform organization and Google Analytics accounts, and to set the service
- * level of your GA4 properties.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://developers.google.com/analytics/devguides/config/gmp/v1" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class GoogleMarketingPlatformAdminAPI extends \Google\Service
-{
-    /** View your Google Analytics product account data in GMP home. */
-    const MARKETINGPLATFORMADMIN_ANALYTICS_READ = "https://www.googleapis.com/auth/marketingplatformadmin.analytics.read";
-    /** Manage your Google Analytics product account data in GMP home. */
-    const MARKETINGPLATFORMADMIN_ANALYTICS_UPDATE = "https://www.googleapis.com/auth/marketingplatformadmin.analytics.update";
-    public $organizations;
-    public $organizations_analyticsAccountLinks;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the
-     * GoogleMarketingPlatformAdminAPI service.
+     * Service definition for GoogleMarketingPlatformAdminAPI (v1alpha).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * The Google Marketing Platform Admin API allows for programmatic access to the
+     * Google Marketing Platform configuration data. You can use the Google
+     * Marketing Platform Admin API to manage links between your Google Marketing
+     * Platform organization and Google Analytics accounts, and to set the service
+     * level of your GA4 properties.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://developers.google.com/analytics/devguides/config/gmp/v1" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class GoogleMarketingPlatformAdminAPI extends \Google\Service
+    {
+        /** View your Google Analytics product account data in GMP home. */
+        const MARKETINGPLATFORMADMIN_ANALYTICS_READ = "https://www.googleapis.com/auth/marketingplatformadmin.analytics.read";
+        /** Manage your Google Analytics product account data in GMP home. */
+        const MARKETINGPLATFORMADMIN_ANALYTICS_UPDATE = "https://www.googleapis.com/auth/marketingplatformadmin.analytics.update";
+        public $organizations;
+        public $organizations_analyticsAccountLinks;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the
+         * GoogleMarketingPlatformAdminAPI service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\GoogleMarketingPlatformAdminAPI registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_GoogleMarketingPlatformAdminAPI extends \Google\Service\GoogleMarketingPlatformAdminAPI
     {
     }
 }

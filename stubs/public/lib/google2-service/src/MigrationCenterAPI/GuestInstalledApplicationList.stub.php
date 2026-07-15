@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class GuestInstalledApplicationList extends \Google\Collection
-{
-    protected $collection_key = 'entries';
-    protected $entriesType = GuestInstalledApplication::class;
-    protected $entriesDataType = 'array';
-    /**
-     * Application entries.
-     *
-     * @param GuestInstalledApplication[] $entries
-     */
-    public function setEntries($entries)
+namespace Google\Service\MigrationCenterAPI {
+    class GuestInstalledApplicationList extends \Google\Collection
     {
+        protected $collection_key = 'entries';
+        protected $entriesType = GuestInstalledApplication::class;
+        protected $entriesDataType = 'array';
+        /**
+         * Application entries.
+         *
+         * @param GuestInstalledApplication[] $entries
+         */
+        public function setEntries($entries)
+        {
+        }
+        /**
+         * @return GuestInstalledApplication[]
+         */
+        public function getEntries()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GuestInstalledApplication[]
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\GuestInstalledApplicationList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntries()
+    class Google_Service_MigrationCenterAPI_GuestInstalledApplicationList extends \Google\Service\MigrationCenterAPI\GuestInstalledApplicationList
     {
     }
 }

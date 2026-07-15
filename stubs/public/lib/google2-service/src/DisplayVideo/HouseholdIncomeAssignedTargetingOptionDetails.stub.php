@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class HouseholdIncomeAssignedTargetingOptionDetails extends \Google\Model
-{
-    /**
-     * Default value when household income is not specified in this version. This
-     * enum is a placeholder for default value and does not represent a real
-     * household income option.
-     */
-    public const HOUSEHOLD_INCOME_HOUSEHOLD_INCOME_UNSPECIFIED = 'HOUSEHOLD_INCOME_UNSPECIFIED';
-    /**
-     * The household income of the audience is unknown.
-     */
-    public const HOUSEHOLD_INCOME_HOUSEHOLD_INCOME_UNKNOWN = 'HOUSEHOLD_INCOME_UNKNOWN';
-    /**
-     * The audience is in the lower 50% of U.S. household incomes.
-     */
-    public const HOUSEHOLD_INCOME_HOUSEHOLD_INCOME_LOWER_50_PERCENT = 'HOUSEHOLD_INCOME_LOWER_50_PERCENT';
-    /**
-     * The audience is in the top 41-50% of U.S. household incomes.
-     */
-    public const HOUSEHOLD_INCOME_HOUSEHOLD_INCOME_TOP_41_TO_50_PERCENT = 'HOUSEHOLD_INCOME_TOP_41_TO_50_PERCENT';
-    /**
-     * The audience is in the top 31-40% of U.S. household incomes.
-     */
-    public const HOUSEHOLD_INCOME_HOUSEHOLD_INCOME_TOP_31_TO_40_PERCENT = 'HOUSEHOLD_INCOME_TOP_31_TO_40_PERCENT';
-    /**
-     * The audience is in the top 21-30% of U.S. household incomes.
-     */
-    public const HOUSEHOLD_INCOME_HOUSEHOLD_INCOME_TOP_21_TO_30_PERCENT = 'HOUSEHOLD_INCOME_TOP_21_TO_30_PERCENT';
-    /**
-     * The audience is in the top 11-20% of U.S. household incomes.
-     */
-    public const HOUSEHOLD_INCOME_HOUSEHOLD_INCOME_TOP_11_TO_20_PERCENT = 'HOUSEHOLD_INCOME_TOP_11_TO_20_PERCENT';
-    /**
-     * The audience is in the top 10% of U.S. household incomes.
-     */
-    public const HOUSEHOLD_INCOME_HOUSEHOLD_INCOME_TOP_10_PERCENT = 'HOUSEHOLD_INCOME_TOP_10_PERCENT';
-    /**
-     * Required. The household income of the audience.
-     *
-     * @var string
-     */
-    public $householdIncome;
-    /**
-     * Required. The household income of the audience.
-     *
-     * Accepted values: HOUSEHOLD_INCOME_UNSPECIFIED, HOUSEHOLD_INCOME_UNKNOWN,
-     * HOUSEHOLD_INCOME_LOWER_50_PERCENT, HOUSEHOLD_INCOME_TOP_41_TO_50_PERCENT,
-     * HOUSEHOLD_INCOME_TOP_31_TO_40_PERCENT,
-     * HOUSEHOLD_INCOME_TOP_21_TO_30_PERCENT,
-     * HOUSEHOLD_INCOME_TOP_11_TO_20_PERCENT, HOUSEHOLD_INCOME_TOP_10_PERCENT
-     *
-     * @param self::HOUSEHOLD_INCOME_* $householdIncome
-     */
-    public function setHouseholdIncome($householdIncome)
+namespace Google\Service\DisplayVideo {
+    class HouseholdIncomeAssignedTargetingOptionDetails extends \Google\Model
     {
+        /**
+         * Default value when household income is not specified in this version. This
+         * enum is a placeholder for default value and does not represent a real
+         * household income option.
+         */
+        public const HOUSEHOLD_INCOME_HOUSEHOLD_INCOME_UNSPECIFIED = 'HOUSEHOLD_INCOME_UNSPECIFIED';
+        /**
+         * The household income of the audience is unknown.
+         */
+        public const HOUSEHOLD_INCOME_HOUSEHOLD_INCOME_UNKNOWN = 'HOUSEHOLD_INCOME_UNKNOWN';
+        /**
+         * The audience is in the lower 50% of U.S. household incomes.
+         */
+        public const HOUSEHOLD_INCOME_HOUSEHOLD_INCOME_LOWER_50_PERCENT = 'HOUSEHOLD_INCOME_LOWER_50_PERCENT';
+        /**
+         * The audience is in the top 41-50% of U.S. household incomes.
+         */
+        public const HOUSEHOLD_INCOME_HOUSEHOLD_INCOME_TOP_41_TO_50_PERCENT = 'HOUSEHOLD_INCOME_TOP_41_TO_50_PERCENT';
+        /**
+         * The audience is in the top 31-40% of U.S. household incomes.
+         */
+        public const HOUSEHOLD_INCOME_HOUSEHOLD_INCOME_TOP_31_TO_40_PERCENT = 'HOUSEHOLD_INCOME_TOP_31_TO_40_PERCENT';
+        /**
+         * The audience is in the top 21-30% of U.S. household incomes.
+         */
+        public const HOUSEHOLD_INCOME_HOUSEHOLD_INCOME_TOP_21_TO_30_PERCENT = 'HOUSEHOLD_INCOME_TOP_21_TO_30_PERCENT';
+        /**
+         * The audience is in the top 11-20% of U.S. household incomes.
+         */
+        public const HOUSEHOLD_INCOME_HOUSEHOLD_INCOME_TOP_11_TO_20_PERCENT = 'HOUSEHOLD_INCOME_TOP_11_TO_20_PERCENT';
+        /**
+         * The audience is in the top 10% of U.S. household incomes.
+         */
+        public const HOUSEHOLD_INCOME_HOUSEHOLD_INCOME_TOP_10_PERCENT = 'HOUSEHOLD_INCOME_TOP_10_PERCENT';
+        /**
+         * Required. The household income of the audience.
+         *
+         * @var string
+         */
+        public $householdIncome;
+        /**
+         * Required. The household income of the audience.
+         *
+         * Accepted values: HOUSEHOLD_INCOME_UNSPECIFIED, HOUSEHOLD_INCOME_UNKNOWN,
+         * HOUSEHOLD_INCOME_LOWER_50_PERCENT, HOUSEHOLD_INCOME_TOP_41_TO_50_PERCENT,
+         * HOUSEHOLD_INCOME_TOP_31_TO_40_PERCENT,
+         * HOUSEHOLD_INCOME_TOP_21_TO_30_PERCENT,
+         * HOUSEHOLD_INCOME_TOP_11_TO_20_PERCENT, HOUSEHOLD_INCOME_TOP_10_PERCENT
+         *
+         * @param self::HOUSEHOLD_INCOME_* $householdIncome
+         */
+        public function setHouseholdIncome($householdIncome)
+        {
+        }
+        /**
+         * @return self::HOUSEHOLD_INCOME_*
+         */
+        public function getHouseholdIncome()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::HOUSEHOLD_INCOME_*
+     * Runtime class alias of \Google\Service\DisplayVideo\HouseholdIncomeAssignedTargetingOptionDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHouseholdIncome()
+    class Google_Service_DisplayVideo_HouseholdIncomeAssignedTargetingOptionDetails extends \Google\Service\DisplayVideo\HouseholdIncomeAssignedTargetingOptionDetails
     {
     }
 }

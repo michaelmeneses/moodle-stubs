@@ -21,100 +21,109 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class GenerateTcpProxyScriptRequest extends \Google\Model
-{
-    /**
-     * Required. The type of the Compute instance that will host the proxy.
-     *
-     * @var string
-     */
-    public $vmMachineType;
-    /**
-     * Required. The name of the Compute instance that will host the proxy.
-     *
-     * @var string
-     */
-    public $vmName;
-    /**
-     * Required. The name of the subnet the Compute instance will use for private
-     * connectivity. Must be supplied in the form of
-     * projects/{project}/regions/{region}/subnetworks/{subnetwork}. Note: the
-     * region for the subnet must match the Compute instance region.
-     *
-     * @var string
-     */
-    public $vmSubnet;
-    /**
-     * Optional. The Google Cloud Platform zone to create the VM in. The fully
-     * qualified name of the zone must be specified, including the region name,
-     * for example "us-central1-b". If not specified, uses the "-b" zone of the
-     * destination Connection Profile's region.
-     *
-     * @var string
-     */
-    public $vmZone;
-    /**
-     * Required. The type of the Compute instance that will host the proxy.
-     *
-     * @param string $vmMachineType
-     */
-    public function setVmMachineType($vmMachineType)
+namespace Google\Service\DatabaseMigrationService {
+    class GenerateTcpProxyScriptRequest extends \Google\Model
     {
+        /**
+         * Required. The type of the Compute instance that will host the proxy.
+         *
+         * @var string
+         */
+        public $vmMachineType;
+        /**
+         * Required. The name of the Compute instance that will host the proxy.
+         *
+         * @var string
+         */
+        public $vmName;
+        /**
+         * Required. The name of the subnet the Compute instance will use for private
+         * connectivity. Must be supplied in the form of
+         * projects/{project}/regions/{region}/subnetworks/{subnetwork}. Note: the
+         * region for the subnet must match the Compute instance region.
+         *
+         * @var string
+         */
+        public $vmSubnet;
+        /**
+         * Optional. The Google Cloud Platform zone to create the VM in. The fully
+         * qualified name of the zone must be specified, including the region name,
+         * for example "us-central1-b". If not specified, uses the "-b" zone of the
+         * destination Connection Profile's region.
+         *
+         * @var string
+         */
+        public $vmZone;
+        /**
+         * Required. The type of the Compute instance that will host the proxy.
+         *
+         * @param string $vmMachineType
+         */
+        public function setVmMachineType($vmMachineType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVmMachineType()
+        {
+        }
+        /**
+         * Required. The name of the Compute instance that will host the proxy.
+         *
+         * @param string $vmName
+         */
+        public function setVmName($vmName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVmName()
+        {
+        }
+        /**
+         * Required. The name of the subnet the Compute instance will use for private
+         * connectivity. Must be supplied in the form of
+         * projects/{project}/regions/{region}/subnetworks/{subnetwork}. Note: the
+         * region for the subnet must match the Compute instance region.
+         *
+         * @param string $vmSubnet
+         */
+        public function setVmSubnet($vmSubnet)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVmSubnet()
+        {
+        }
+        /**
+         * Optional. The Google Cloud Platform zone to create the VM in. The fully
+         * qualified name of the zone must be specified, including the region name,
+         * for example "us-central1-b". If not specified, uses the "-b" zone of the
+         * destination Connection Profile's region.
+         *
+         * @param string $vmZone
+         */
+        public function setVmZone($vmZone)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVmZone()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\GenerateTcpProxyScriptRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getVmMachineType()
-    {
-    }
-    /**
-     * Required. The name of the Compute instance that will host the proxy.
-     *
-     * @param string $vmName
-     */
-    public function setVmName($vmName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVmName()
-    {
-    }
-    /**
-     * Required. The name of the subnet the Compute instance will use for private
-     * connectivity. Must be supplied in the form of
-     * projects/{project}/regions/{region}/subnetworks/{subnetwork}. Note: the
-     * region for the subnet must match the Compute instance region.
-     *
-     * @param string $vmSubnet
-     */
-    public function setVmSubnet($vmSubnet)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVmSubnet()
-    {
-    }
-    /**
-     * Optional. The Google Cloud Platform zone to create the VM in. The fully
-     * qualified name of the zone must be specified, including the region name,
-     * for example "us-central1-b". If not specified, uses the "-b" zone of the
-     * destination Connection Profile's region.
-     *
-     * @param string $vmZone
-     */
-    public function setVmZone($vmZone)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVmZone()
+    class Google_Service_DatabaseMigrationService_GenerateTcpProxyScriptRequest extends \Google\Service\DatabaseMigrationService\GenerateTcpProxyScriptRequest
     {
     }
 }

@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class NetworkProfileLocation extends \Google\Model
-{
-    public const SCOPE_REGION = 'REGION';
-    public const SCOPE_ZONE = 'ZONE';
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $scope;
-    /**
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Compute {
+    class NetworkProfileLocation extends \Google\Model
     {
+        public const SCOPE_REGION = 'REGION';
+        public const SCOPE_ZONE = 'ZONE';
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $scope;
+        /**
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param self::SCOPE_* $scope
+         */
+        public function setScope($scope)
+        {
+        }
+        /**
+         * @return self::SCOPE_*
+         */
+        public function getScope()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\NetworkProfileLocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * @param self::SCOPE_* $scope
-     */
-    public function setScope($scope)
-    {
-    }
-    /**
-     * @return self::SCOPE_*
-     */
-    public function getScope()
+    class Google_Service_Compute_NetworkProfileLocation extends \Google\Service\Compute\NetworkProfileLocation
     {
     }
 }

@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class GetSpreadsheetByDataFilterRequest extends \Google\Collection
-{
-    protected $collection_key = 'dataFilters';
-    protected $dataFiltersType = DataFilter::class;
-    protected $dataFiltersDataType = 'array';
-    /**
-     * True if tables should be excluded in the banded ranges. False if not set.
-     *
-     * @var bool
-     */
-    public $excludeTablesInBandedRanges;
-    /**
-     * True if grid data should be returned. This parameter is ignored if a field
-     * mask was set in the request.
-     *
-     * @var bool
-     */
-    public $includeGridData;
-    /**
-     * The DataFilters used to select which ranges to retrieve from the
-     * spreadsheet.
-     *
-     * @param DataFilter[] $dataFilters
-     */
-    public function setDataFilters($dataFilters)
+namespace Google\Service\Sheets {
+    class GetSpreadsheetByDataFilterRequest extends \Google\Collection
     {
+        protected $collection_key = 'dataFilters';
+        protected $dataFiltersType = DataFilter::class;
+        protected $dataFiltersDataType = 'array';
+        /**
+         * True if tables should be excluded in the banded ranges. False if not set.
+         *
+         * @var bool
+         */
+        public $excludeTablesInBandedRanges;
+        /**
+         * True if grid data should be returned. This parameter is ignored if a field
+         * mask was set in the request.
+         *
+         * @var bool
+         */
+        public $includeGridData;
+        /**
+         * The DataFilters used to select which ranges to retrieve from the
+         * spreadsheet.
+         *
+         * @param DataFilter[] $dataFilters
+         */
+        public function setDataFilters($dataFilters)
+        {
+        }
+        /**
+         * @return DataFilter[]
+         */
+        public function getDataFilters()
+        {
+        }
+        /**
+         * True if tables should be excluded in the banded ranges. False if not set.
+         *
+         * @param bool $excludeTablesInBandedRanges
+         */
+        public function setExcludeTablesInBandedRanges($excludeTablesInBandedRanges)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getExcludeTablesInBandedRanges()
+        {
+        }
+        /**
+         * True if grid data should be returned. This parameter is ignored if a field
+         * mask was set in the request.
+         *
+         * @param bool $includeGridData
+         */
+        public function setIncludeGridData($includeGridData)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIncludeGridData()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DataFilter[]
+     * Runtime class alias of \Google\Service\Sheets\GetSpreadsheetByDataFilterRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataFilters()
-    {
-    }
-    /**
-     * True if tables should be excluded in the banded ranges. False if not set.
-     *
-     * @param bool $excludeTablesInBandedRanges
-     */
-    public function setExcludeTablesInBandedRanges($excludeTablesInBandedRanges)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getExcludeTablesInBandedRanges()
-    {
-    }
-    /**
-     * True if grid data should be returned. This parameter is ignored if a field
-     * mask was set in the request.
-     *
-     * @param bool $includeGridData
-     */
-    public function setIncludeGridData($includeGridData)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIncludeGridData()
+    class Google_Service_Sheets_GetSpreadsheetByDataFilterRequest extends \Google\Service\Sheets\GetSpreadsheetByDataFilterRequest
     {
     }
 }

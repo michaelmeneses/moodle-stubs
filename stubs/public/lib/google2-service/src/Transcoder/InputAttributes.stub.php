@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Transcoder;
-
-class InputAttributes extends \Google\Collection
-{
-    protected $collection_key = 'trackDefinitions';
-    protected $trackDefinitionsType = TrackDefinition::class;
-    protected $trackDefinitionsDataType = 'array';
-    /**
-     * Optional. A list of track definitions for the input asset.
-     *
-     * @param TrackDefinition[] $trackDefinitions
-     */
-    public function setTrackDefinitions($trackDefinitions)
+namespace Google\Service\Transcoder {
+    class InputAttributes extends \Google\Collection
     {
+        protected $collection_key = 'trackDefinitions';
+        protected $trackDefinitionsType = TrackDefinition::class;
+        protected $trackDefinitionsDataType = 'array';
+        /**
+         * Optional. A list of track definitions for the input asset.
+         *
+         * @param TrackDefinition[] $trackDefinitions
+         */
+        public function setTrackDefinitions($trackDefinitions)
+        {
+        }
+        /**
+         * @return TrackDefinition[]
+         */
+        public function getTrackDefinitions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TrackDefinition[]
+     * Runtime class alias of \Google\Service\Transcoder\InputAttributes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTrackDefinitions()
+    class Google_Service_Transcoder_InputAttributes extends \Google\Service\Transcoder\InputAttributes
     {
     }
 }

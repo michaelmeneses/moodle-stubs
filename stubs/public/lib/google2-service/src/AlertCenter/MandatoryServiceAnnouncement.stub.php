@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AlertCenter;
-
-class MandatoryServiceAnnouncement extends \Google\Model
-{
-    /**
-     * Detailed, freeform text describing the announcement
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * One line summary of the announcement
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * Detailed, freeform text describing the announcement
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\AlertCenter {
+    class MandatoryServiceAnnouncement extends \Google\Model
     {
+        /**
+         * Detailed, freeform text describing the announcement
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * One line summary of the announcement
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * Detailed, freeform text describing the announcement
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * One line summary of the announcement
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AlertCenter\MandatoryServiceAnnouncement registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * One line summary of the announcement
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_AlertCenter_MandatoryServiceAnnouncement extends \Google\Service\AlertCenter\MandatoryServiceAnnouncement
     {
     }
 }

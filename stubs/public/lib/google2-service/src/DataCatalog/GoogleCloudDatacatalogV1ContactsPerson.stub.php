@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1ContactsPerson extends \Google\Model
-{
-    /**
-     * Designation of the person, for example, Data Steward.
-     *
-     * @var string
-     */
-    public $designation;
-    /**
-     * Email of the person in the format of `john.doe@xyz`, ``, or `John Doe`.
-     *
-     * @var string
-     */
-    public $email;
-    /**
-     * Designation of the person, for example, Data Steward.
-     *
-     * @param string $designation
-     */
-    public function setDesignation($designation)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1ContactsPerson extends \Google\Model
     {
+        /**
+         * Designation of the person, for example, Data Steward.
+         *
+         * @var string
+         */
+        public $designation;
+        /**
+         * Email of the person in the format of `john.doe@xyz`, ``, or `John Doe`.
+         *
+         * @var string
+         */
+        public $email;
+        /**
+         * Designation of the person, for example, Data Steward.
+         *
+         * @param string $designation
+         */
+        public function setDesignation($designation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDesignation()
+        {
+        }
+        /**
+         * Email of the person in the format of `john.doe@xyz`, ``, or `John Doe`.
+         *
+         * @param string $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1ContactsPerson registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDesignation()
-    {
-    }
-    /**
-     * Email of the person in the format of `john.doe@xyz`, ``, or `John Doe`.
-     *
-     * @param string $email
-     */
-    public function setEmail($email)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEmail()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1ContactsPerson extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1ContactsPerson
     {
     }
 }

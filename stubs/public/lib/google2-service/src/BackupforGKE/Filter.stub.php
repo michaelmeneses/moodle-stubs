@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BackupforGKE;
-
-class Filter extends \Google\Collection
-{
-    protected $collection_key = 'inclusionFilters';
-    protected $exclusionFiltersType = ResourceSelector::class;
-    protected $exclusionFiltersDataType = 'array';
-    protected $inclusionFiltersType = ResourceSelector::class;
-    protected $inclusionFiltersDataType = 'array';
-    /**
-     * Optional. Excludes resources from restoration. If specified, a resource
-     * will not be restored if it matches any `ResourceSelector` of the
-     * `exclusion_filters`.
-     *
-     * @param ResourceSelector[] $exclusionFilters
-     */
-    public function setExclusionFilters($exclusionFilters)
+namespace Google\Service\BackupforGKE {
+    class Filter extends \Google\Collection
     {
+        protected $collection_key = 'inclusionFilters';
+        protected $exclusionFiltersType = ResourceSelector::class;
+        protected $exclusionFiltersDataType = 'array';
+        protected $inclusionFiltersType = ResourceSelector::class;
+        protected $inclusionFiltersDataType = 'array';
+        /**
+         * Optional. Excludes resources from restoration. If specified, a resource
+         * will not be restored if it matches any `ResourceSelector` of the
+         * `exclusion_filters`.
+         *
+         * @param ResourceSelector[] $exclusionFilters
+         */
+        public function setExclusionFilters($exclusionFilters)
+        {
+        }
+        /**
+         * @return ResourceSelector[]
+         */
+        public function getExclusionFilters()
+        {
+        }
+        /**
+         * Optional. Selects resources for restoration. If specified, only resources
+         * which match `inclusion_filters` will be selected for restoration. A
+         * resource will be selected if it matches any `ResourceSelector` of the
+         * `inclusion_filters`.
+         *
+         * @param ResourceSelector[] $inclusionFilters
+         */
+        public function setInclusionFilters($inclusionFilters)
+        {
+        }
+        /**
+         * @return ResourceSelector[]
+         */
+        public function getInclusionFilters()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ResourceSelector[]
+     * Runtime class alias of \Google\Service\BackupforGKE\Filter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExclusionFilters()
-    {
-    }
-    /**
-     * Optional. Selects resources for restoration. If specified, only resources
-     * which match `inclusion_filters` will be selected for restoration. A
-     * resource will be selected if it matches any `ResourceSelector` of the
-     * `inclusion_filters`.
-     *
-     * @param ResourceSelector[] $inclusionFilters
-     */
-    public function setInclusionFilters($inclusionFilters)
-    {
-    }
-    /**
-     * @return ResourceSelector[]
-     */
-    public function getInclusionFilters()
+    class Google_Service_BackupforGKE_Filter extends \Google\Service\BackupforGKE\Filter
     {
     }
 }

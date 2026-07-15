@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaPageInfo extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $pageCategory;
-    /**
-     * @var string
-     */
-    public $pageviewId;
-    /**
-     * @var string
-     */
-    public $referrerUri;
-    /**
-     * @var string
-     */
-    public $uri;
-    /**
-     * @param string
-     */
-    public function setPageCategory($pageCategory)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaPageInfo extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $pageCategory;
+        /**
+         * @var string
+         */
+        public $pageviewId;
+        /**
+         * @var string
+         */
+        public $referrerUri;
+        /**
+         * @var string
+         */
+        public $uri;
+        /**
+         * @param string
+         */
+        public function setPageCategory($pageCategory)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPageCategory()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPageviewId($pageviewId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPageviewId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReferrerUri($referrerUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReferrerUri()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaPageInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPageCategory()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPageviewId($pageviewId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPageviewId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReferrerUri($referrerUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReferrerUri()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaPageInfo extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaPageInfo
     {
     }
 }

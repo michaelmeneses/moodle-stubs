@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Recommender;
-
-class GoogleCloudRecommenderV1SustainabilityProjection extends \Google\Model
-{
-    /**
-     * Duration for which this sustainability applies.
-     *
-     * @var string
-     */
-    public $duration;
-    /**
-     * Carbon Footprint generated in kg of CO2 equivalent. Chose kg_c_o2e so that
-     * the name renders correctly in camelCase (kgCO2e).
-     *
-     * @var 
-     */
-    public $kgCO2e;
-    /**
-     * Duration for which this sustainability applies.
-     *
-     * @param string $duration
-     */
-    public function setDuration($duration)
+namespace Google\Service\Recommender {
+    class GoogleCloudRecommenderV1SustainabilityProjection extends \Google\Model
     {
+        /**
+         * Duration for which this sustainability applies.
+         *
+         * @var string
+         */
+        public $duration;
+        /**
+         * Carbon Footprint generated in kg of CO2 equivalent. Chose kg_c_o2e so that
+         * the name renders correctly in camelCase (kgCO2e).
+         *
+         * @var 
+         */
+        public $kgCO2e;
+        /**
+         * Duration for which this sustainability applies.
+         *
+         * @param string $duration
+         */
+        public function setDuration($duration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDuration()
+        {
+        }
+        public function setKgCO2e($kgCO2e)
+        {
+        }
+        public function getKgCO2e()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Recommender\GoogleCloudRecommenderV1SustainabilityProjection registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDuration()
-    {
-    }
-    public function setKgCO2e($kgCO2e)
-    {
-    }
-    public function getKgCO2e()
+    class Google_Service_Recommender_GoogleCloudRecommenderV1SustainabilityProjection extends \Google\Service\Recommender\GoogleCloudRecommenderV1SustainabilityProjection
     {
     }
 }

@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class CloudReliabilityZicyWs3DataplaneProtosDirectLocationAssignment extends \Google\Collection
-{
-    protected $collection_key = 'location';
-    protected $locationType = CloudReliabilityZicyWs3DataplaneProtosLocationAssignment::class;
-    protected $locationDataType = 'array';
-    /**
-     * @param CloudReliabilityZicyWs3DataplaneProtosLocationAssignment[]
-     */
-    public function setLocation($location)
+namespace Google\Service\CloudDataplex {
+    class CloudReliabilityZicyWs3DataplaneProtosDirectLocationAssignment extends \Google\Collection
     {
+        protected $collection_key = 'location';
+        protected $locationType = CloudReliabilityZicyWs3DataplaneProtosLocationAssignment::class;
+        protected $locationDataType = 'array';
+        /**
+         * @param CloudReliabilityZicyWs3DataplaneProtosLocationAssignment[]
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return CloudReliabilityZicyWs3DataplaneProtosLocationAssignment[]
+         */
+        public function getLocation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CloudReliabilityZicyWs3DataplaneProtosLocationAssignment[]
+     * Runtime class alias of \Google\Service\CloudDataplex\CloudReliabilityZicyWs3DataplaneProtosDirectLocationAssignment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLocation()
+    class Google_Service_CloudDataplex_CloudReliabilityZicyWs3DataplaneProtosDirectLocationAssignment extends \Google\Service\CloudDataplex\CloudReliabilityZicyWs3DataplaneProtosDirectLocationAssignment
     {
     }
 }

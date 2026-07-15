@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Webmasters;
-
-class SearchAnalyticsQueryResponse extends \Google\Collection
-{
-    protected $collection_key = 'rows';
-    public $responseAggregationType;
-    protected $rowsType = ApiDataRow::class;
-    protected $rowsDataType = 'array';
-    public function setResponseAggregationType($responseAggregationType)
+namespace Google\Service\Webmasters {
+    class SearchAnalyticsQueryResponse extends \Google\Collection
     {
+        protected $collection_key = 'rows';
+        public $responseAggregationType;
+        protected $rowsType = ApiDataRow::class;
+        protected $rowsDataType = 'array';
+        public function setResponseAggregationType($responseAggregationType)
+        {
+        }
+        public function getResponseAggregationType()
+        {
+        }
+        /**
+         * @param ApiDataRow[]
+         */
+        public function setRows($rows)
+        {
+        }
+        /**
+         * @return ApiDataRow[]
+         */
+        public function getRows()
+        {
+        }
     }
-    public function getResponseAggregationType()
-    {
-    }
+}
+namespace {
     /**
-     * @param ApiDataRow[]
+     * Runtime class alias of \Google\Service\Webmasters\SearchAnalyticsQueryResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setRows($rows)
-    {
-    }
-    /**
-     * @return ApiDataRow[]
-     */
-    public function getRows()
+    class Google_Service_Webmasters_SearchAnalyticsQueryResponse extends \Google\Service\Webmasters\SearchAnalyticsQueryResponse
     {
     }
 }

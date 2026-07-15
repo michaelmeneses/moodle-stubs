@@ -21,122 +21,131 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1ExportDataOperationResponse extends \Google\Model
-{
-    /**
-     * Output only. The name of annotated dataset in format
-     * "projects/datasets/annotatedDatasets".
-     *
-     * @var string
-     */
-    public $annotatedDataset;
-    /**
-     * Ouptut only. The name of dataset. "projects/datasets"
-     *
-     * @var string
-     */
-    public $dataset;
-    /**
-     * Output only. Number of examples exported successfully.
-     *
-     * @var int
-     */
-    public $exportCount;
-    protected $labelStatsType = GoogleCloudDatalabelingV1beta1LabelStats::class;
-    protected $labelStatsDataType = '';
-    protected $outputConfigType = GoogleCloudDatalabelingV1beta1OutputConfig::class;
-    protected $outputConfigDataType = '';
-    /**
-     * Output only. Total number of examples requested to export
-     *
-     * @var int
-     */
-    public $totalCount;
-    /**
-     * Output only. The name of annotated dataset in format
-     * "projects/datasets/annotatedDatasets".
-     *
-     * @param string $annotatedDataset
-     */
-    public function setAnnotatedDataset($annotatedDataset)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1ExportDataOperationResponse extends \Google\Model
     {
+        /**
+         * Output only. The name of annotated dataset in format
+         * "projects/datasets/annotatedDatasets".
+         *
+         * @var string
+         */
+        public $annotatedDataset;
+        /**
+         * Ouptut only. The name of dataset. "projects/datasets"
+         *
+         * @var string
+         */
+        public $dataset;
+        /**
+         * Output only. Number of examples exported successfully.
+         *
+         * @var int
+         */
+        public $exportCount;
+        protected $labelStatsType = GoogleCloudDatalabelingV1beta1LabelStats::class;
+        protected $labelStatsDataType = '';
+        protected $outputConfigType = GoogleCloudDatalabelingV1beta1OutputConfig::class;
+        protected $outputConfigDataType = '';
+        /**
+         * Output only. Total number of examples requested to export
+         *
+         * @var int
+         */
+        public $totalCount;
+        /**
+         * Output only. The name of annotated dataset in format
+         * "projects/datasets/annotatedDatasets".
+         *
+         * @param string $annotatedDataset
+         */
+        public function setAnnotatedDataset($annotatedDataset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnnotatedDataset()
+        {
+        }
+        /**
+         * Ouptut only. The name of dataset. "projects/datasets"
+         *
+         * @param string $dataset
+         */
+        public function setDataset($dataset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataset()
+        {
+        }
+        /**
+         * Output only. Number of examples exported successfully.
+         *
+         * @param int $exportCount
+         */
+        public function setExportCount($exportCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getExportCount()
+        {
+        }
+        /**
+         * Output only. Statistic infos of labels in the exported dataset.
+         *
+         * @param GoogleCloudDatalabelingV1beta1LabelStats $labelStats
+         */
+        public function setLabelStats(GoogleCloudDatalabelingV1beta1LabelStats $labelStats)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1LabelStats
+         */
+        public function getLabelStats()
+        {
+        }
+        /**
+         * Output only. output_config in the ExportData request.
+         *
+         * @param GoogleCloudDatalabelingV1beta1OutputConfig $outputConfig
+         */
+        public function setOutputConfig(GoogleCloudDatalabelingV1beta1OutputConfig $outputConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1OutputConfig
+         */
+        public function getOutputConfig()
+        {
+        }
+        /**
+         * Output only. Total number of examples requested to export
+         *
+         * @param int $totalCount
+         */
+        public function setTotalCount($totalCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1ExportDataOperationResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotatedDataset()
-    {
-    }
-    /**
-     * Ouptut only. The name of dataset. "projects/datasets"
-     *
-     * @param string $dataset
-     */
-    public function setDataset($dataset)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDataset()
-    {
-    }
-    /**
-     * Output only. Number of examples exported successfully.
-     *
-     * @param int $exportCount
-     */
-    public function setExportCount($exportCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getExportCount()
-    {
-    }
-    /**
-     * Output only. Statistic infos of labels in the exported dataset.
-     *
-     * @param GoogleCloudDatalabelingV1beta1LabelStats $labelStats
-     */
-    public function setLabelStats(GoogleCloudDatalabelingV1beta1LabelStats $labelStats)
-    {
-    }
-    /**
-     * @return GoogleCloudDatalabelingV1beta1LabelStats
-     */
-    public function getLabelStats()
-    {
-    }
-    /**
-     * Output only. output_config in the ExportData request.
-     *
-     * @param GoogleCloudDatalabelingV1beta1OutputConfig $outputConfig
-     */
-    public function setOutputConfig(GoogleCloudDatalabelingV1beta1OutputConfig $outputConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudDatalabelingV1beta1OutputConfig
-     */
-    public function getOutputConfig()
-    {
-    }
-    /**
-     * Output only. Total number of examples requested to export
-     *
-     * @param int $totalCount
-     */
-    public function setTotalCount($totalCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalCount()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1ExportDataOperationResponse extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1ExportDataOperationResponse
     {
     }
 }

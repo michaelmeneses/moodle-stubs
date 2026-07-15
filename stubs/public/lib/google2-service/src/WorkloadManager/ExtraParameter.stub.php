@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager;
-
-class ExtraParameter extends \Google\Model
-{
-    protected $regionalMigDistributionPolicyType = RegionalMigDistributionPolicy::class;
-    protected $regionalMigDistributionPolicyDataType = '';
-    /**
-     * @param RegionalMigDistributionPolicy
-     */
-    public function setRegionalMigDistributionPolicy(RegionalMigDistributionPolicy $regionalMigDistributionPolicy)
+namespace Google\Service\WorkloadManager {
+    class ExtraParameter extends \Google\Model
     {
+        protected $regionalMigDistributionPolicyType = RegionalMigDistributionPolicy::class;
+        protected $regionalMigDistributionPolicyDataType = '';
+        /**
+         * @param RegionalMigDistributionPolicy
+         */
+        public function setRegionalMigDistributionPolicy(RegionalMigDistributionPolicy $regionalMigDistributionPolicy)
+        {
+        }
+        /**
+         * @return RegionalMigDistributionPolicy
+         */
+        public function getRegionalMigDistributionPolicy()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RegionalMigDistributionPolicy
+     * Runtime class alias of \Google\Service\WorkloadManager\ExtraParameter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRegionalMigDistributionPolicy()
+    class Google_Service_WorkloadManager_ExtraParameter extends \Google\Service\WorkloadManager\ExtraParameter
     {
     }
 }

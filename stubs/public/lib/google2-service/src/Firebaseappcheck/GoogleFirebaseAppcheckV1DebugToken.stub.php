@@ -21,100 +21,109 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firebaseappcheck;
-
-class GoogleFirebaseAppcheckV1DebugToken extends \Google\Model
-{
-    /**
-     * Required. A human readable display name used to identify this debug token.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Required. The relative resource name of the debug token, in the format: ```
-     * projects/{project_number}/apps/{app_id}/debugTokens/{debug_token_id} ```
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. Input only. Immutable. The secret token itself. Must be provided
-     * during creation, and must be a UUID4, case insensitive. This field is
-     * immutable once set, and cannot be provided during an UpdateDebugToken
-     * request. You can, however, delete this debug token using DeleteDebugToken
-     * to revoke it. For security reasons, this field will never be populated in
-     * any response.
-     *
-     * @var string
-     */
-    public $token;
-    /**
-     * Output only. Timestamp when this debug token was most recently updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Required. A human readable display name used to identify this debug token.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\Firebaseappcheck {
+    class GoogleFirebaseAppcheckV1DebugToken extends \Google\Model
     {
+        /**
+         * Required. A human readable display name used to identify this debug token.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Required. The relative resource name of the debug token, in the format: ```
+         * projects/{project_number}/apps/{app_id}/debugTokens/{debug_token_id} ```
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. Input only. Immutable. The secret token itself. Must be provided
+         * during creation, and must be a UUID4, case insensitive. This field is
+         * immutable once set, and cannot be provided during an UpdateDebugToken
+         * request. You can, however, delete this debug token using DeleteDebugToken
+         * to revoke it. For security reasons, this field will never be populated in
+         * any response.
+         *
+         * @var string
+         */
+        public $token;
+        /**
+         * Output only. Timestamp when this debug token was most recently updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Required. A human readable display name used to identify this debug token.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Required. The relative resource name of the debug token, in the format: ```
+         * projects/{project_number}/apps/{app_id}/debugTokens/{debug_token_id} ```
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Required. Input only. Immutable. The secret token itself. Must be provided
+         * during creation, and must be a UUID4, case insensitive. This field is
+         * immutable once set, and cannot be provided during an UpdateDebugToken
+         * request. You can, however, delete this debug token using DeleteDebugToken
+         * to revoke it. For security reasons, this field will never be populated in
+         * any response.
+         *
+         * @param string $token
+         */
+        public function setToken($token)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getToken()
+        {
+        }
+        /**
+         * Output only. Timestamp when this debug token was most recently updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1DebugToken registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Required. The relative resource name of the debug token, in the format: ```
-     * projects/{project_number}/apps/{app_id}/debugTokens/{debug_token_id} ```
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Required. Input only. Immutable. The secret token itself. Must be provided
-     * during creation, and must be a UUID4, case insensitive. This field is
-     * immutable once set, and cannot be provided during an UpdateDebugToken
-     * request. You can, however, delete this debug token using DeleteDebugToken
-     * to revoke it. For security reasons, this field will never be populated in
-     * any response.
-     *
-     * @param string $token
-     */
-    public function setToken($token)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getToken()
-    {
-    }
-    /**
-     * Output only. Timestamp when this debug token was most recently updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_Firebaseappcheck_GoogleFirebaseAppcheckV1DebugToken extends \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1DebugToken
     {
     }
 }

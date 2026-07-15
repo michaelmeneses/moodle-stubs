@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class SerDeInfo extends \Google\Model
-{
-    /**
-     * Optional. Name of the SerDe. The maximum length is 256 characters.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optional. Key-value pairs that define the initialization parameters for the
-     * serialization library. Maximum size 10 Kib.
-     *
-     * @var string[]
-     */
-    public $parameters;
-    /**
-     * Required. Specifies a fully-qualified class name of the serialization
-     * library that is responsible for the translation of data between table
-     * representation and the underlying low-level input and output format
-     * structures. The maximum length is 256 characters.
-     *
-     * @var string
-     */
-    public $serializationLibrary;
-    /**
-     * Optional. Name of the SerDe. The maximum length is 256 characters.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Bigquery {
+    class SerDeInfo extends \Google\Model
     {
+        /**
+         * Optional. Name of the SerDe. The maximum length is 256 characters.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optional. Key-value pairs that define the initialization parameters for the
+         * serialization library. Maximum size 10 Kib.
+         *
+         * @var string[]
+         */
+        public $parameters;
+        /**
+         * Required. Specifies a fully-qualified class name of the serialization
+         * library that is responsible for the translation of data between table
+         * representation and the underlying low-level input and output format
+         * structures. The maximum length is 256 characters.
+         *
+         * @var string
+         */
+        public $serializationLibrary;
+        /**
+         * Optional. Name of the SerDe. The maximum length is 256 characters.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. Key-value pairs that define the initialization parameters for the
+         * serialization library. Maximum size 10 Kib.
+         *
+         * @param string[] $parameters
+         */
+        public function setParameters($parameters)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getParameters()
+        {
+        }
+        /**
+         * Required. Specifies a fully-qualified class name of the serialization
+         * library that is responsible for the translation of data between table
+         * representation and the underlying low-level input and output format
+         * structures. The maximum length is 256 characters.
+         *
+         * @param string $serializationLibrary
+         */
+        public function setSerializationLibrary($serializationLibrary)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSerializationLibrary()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Bigquery\SerDeInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. Key-value pairs that define the initialization parameters for the
-     * serialization library. Maximum size 10 Kib.
-     *
-     * @param string[] $parameters
-     */
-    public function setParameters($parameters)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getParameters()
-    {
-    }
-    /**
-     * Required. Specifies a fully-qualified class name of the serialization
-     * library that is responsible for the translation of data between table
-     * representation and the underlying low-level input and output format
-     * structures. The maximum length is 256 characters.
-     *
-     * @param string $serializationLibrary
-     */
-    public function setSerializationLibrary($serializationLibrary)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSerializationLibrary()
+    class Google_Service_Bigquery_SerDeInfo extends \Google\Service\Bigquery\SerDeInfo
     {
     }
 }

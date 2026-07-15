@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1RagContexts extends \Google\Collection
-{
-    protected $collection_key = 'contexts';
-    protected $contextsType = GoogleCloudAiplatformV1RagContextsContext::class;
-    protected $contextsDataType = 'array';
-    /**
-     * All its contexts.
-     *
-     * @param GoogleCloudAiplatformV1RagContextsContext[] $contexts
-     */
-    public function setContexts($contexts)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1RagContexts extends \Google\Collection
     {
+        protected $collection_key = 'contexts';
+        protected $contextsType = GoogleCloudAiplatformV1RagContextsContext::class;
+        protected $contextsDataType = 'array';
+        /**
+         * All its contexts.
+         *
+         * @param GoogleCloudAiplatformV1RagContextsContext[] $contexts
+         */
+        public function setContexts($contexts)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1RagContextsContext[]
+         */
+        public function getContexts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1RagContextsContext[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1RagContexts registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContexts()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1RagContexts extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1RagContexts
     {
     }
 }

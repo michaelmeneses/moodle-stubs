@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigQueryReservation;
-
-class SearchAllAssignmentsResponse extends \Google\Collection
-{
-    protected $collection_key = 'assignments';
-    protected $assignmentsType = Assignment::class;
-    protected $assignmentsDataType = 'array';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of assignments visible to the user.
-     *
-     * @param Assignment[] $assignments
-     */
-    public function setAssignments($assignments)
+namespace Google\Service\BigQueryReservation {
+    class SearchAllAssignmentsResponse extends \Google\Collection
     {
+        protected $collection_key = 'assignments';
+        protected $assignmentsType = Assignment::class;
+        protected $assignmentsDataType = 'array';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of assignments visible to the user.
+         *
+         * @param Assignment[] $assignments
+         */
+        public function setAssignments($assignments)
+        {
+        }
+        /**
+         * @return Assignment[]
+         */
+        public function getAssignments()
+        {
+        }
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Assignment[]
+     * Runtime class alias of \Google\Service\BigQueryReservation\SearchAllAssignmentsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssignments()
-    {
-    }
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_BigQueryReservation_SearchAllAssignmentsResponse extends \Google\Service\BigQueryReservation\SearchAllAssignmentsResponse
     {
     }
 }

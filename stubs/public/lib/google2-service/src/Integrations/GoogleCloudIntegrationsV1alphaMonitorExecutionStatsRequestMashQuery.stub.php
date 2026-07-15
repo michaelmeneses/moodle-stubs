@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestMashQuery extends \Google\Model
-{
-    protected $firstQueryType = GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestMashQueryComponent::class;
-    protected $firstQueryDataType = '';
-    public $firstQuery;
-    protected $operationModeType = GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestMashQueryOperationMode::class;
-    protected $operationModeDataType = '';
-    public $operationMode;
-    protected $secondQueryType = GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestMashQueryComponent::class;
-    protected $secondQueryDataType = '';
-    public $secondQuery;
-    /**
-     * @param GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestMashQueryComponent
-     */
-    public function setFirstQuery(GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestMashQueryComponent $firstQuery)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestMashQuery extends \Google\Model
     {
+        protected $firstQueryType = GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestMashQueryComponent::class;
+        protected $firstQueryDataType = '';
+        public $firstQuery;
+        protected $operationModeType = GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestMashQueryOperationMode::class;
+        protected $operationModeDataType = '';
+        public $operationMode;
+        protected $secondQueryType = GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestMashQueryComponent::class;
+        protected $secondQueryDataType = '';
+        public $secondQuery;
+        /**
+         * @param GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestMashQueryComponent
+         */
+        public function setFirstQuery(GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestMashQueryComponent $firstQuery)
+        {
+        }
+        /**
+         * @return GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestMashQueryComponent
+         */
+        public function getFirstQuery()
+        {
+        }
+        /**
+         * @param GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestMashQueryOperationMode
+         */
+        public function setOperationMode(GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestMashQueryOperationMode $operationMode)
+        {
+        }
+        /**
+         * @return GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestMashQueryOperationMode
+         */
+        public function getOperationMode()
+        {
+        }
+        /**
+         * @param GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestMashQueryComponent
+         */
+        public function setSecondQuery(GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestMashQueryComponent $secondQuery)
+        {
+        }
+        /**
+         * @return GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestMashQueryComponent
+         */
+        public function getSecondQuery()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestMashQueryComponent
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestMashQuery registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFirstQuery()
-    {
-    }
-    /**
-     * @param GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestMashQueryOperationMode
-     */
-    public function setOperationMode(GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestMashQueryOperationMode $operationMode)
-    {
-    }
-    /**
-     * @return GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestMashQueryOperationMode
-     */
-    public function getOperationMode()
-    {
-    }
-    /**
-     * @param GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestMashQueryComponent
-     */
-    public function setSecondQuery(GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestMashQueryComponent $secondQuery)
-    {
-    }
-    /**
-     * @return GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestMashQueryComponent
-     */
-    public function getSecondQuery()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestMashQuery extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestMashQuery
     {
     }
 }

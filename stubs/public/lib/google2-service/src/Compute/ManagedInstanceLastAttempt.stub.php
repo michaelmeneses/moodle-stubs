@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class ManagedInstanceLastAttempt extends \Google\Model
-{
-    protected $errorsType = ManagedInstanceLastAttemptErrors::class;
-    protected $errorsDataType = '';
-    /**
-     * Output only. [Output Only] Encountered errors during the last attempt to
-     * create or delete the instance.
-     *
-     * @param ManagedInstanceLastAttemptErrors $errors
-     */
-    public function setErrors(ManagedInstanceLastAttemptErrors $errors)
+namespace Google\Service\Compute {
+    class ManagedInstanceLastAttempt extends \Google\Model
     {
+        protected $errorsType = ManagedInstanceLastAttemptErrors::class;
+        protected $errorsDataType = '';
+        /**
+         * Output only. [Output Only] Encountered errors during the last attempt to
+         * create or delete the instance.
+         *
+         * @param ManagedInstanceLastAttemptErrors $errors
+         */
+        public function setErrors(ManagedInstanceLastAttemptErrors $errors)
+        {
+        }
+        /**
+         * @return ManagedInstanceLastAttemptErrors
+         */
+        public function getErrors()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ManagedInstanceLastAttemptErrors
+     * Runtime class alias of \Google\Service\Compute\ManagedInstanceLastAttempt registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrors()
+    class Google_Service_Compute_ManagedInstanceLastAttempt extends \Google\Service\Compute\ManagedInstanceLastAttempt
     {
     }
 }

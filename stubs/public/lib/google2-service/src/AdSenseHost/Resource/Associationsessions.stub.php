@@ -21,47 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdSenseHost\Resource;
-
-/**
- * The "associationsessions" collection of methods.
- * Typical usage is:
- *  <code>
- *   $adsensehostService = new Google\Service\AdSenseHost(...);
- *   $associationsessions = $adsensehostService->associationsessions;
- *  </code>
- */
-class Associationsessions extends \Google\Service\Resource
-{
+namespace Google\Service\AdSenseHost\Resource {
+    use Google\Service\AdSenseHost\AssociationSession;
     /**
-     * Create an association session for initiating an association with an AdSense
-     * user. (associationsessions.start)
-     *
-     * @param string|array $productCode Products to associate with the user.
-     * @param string $websiteUrl The URL of the user's hosted website.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string callbackUrl The URL to redirect the user to once
-     * association is completed. It receives a token parameter that can then be used
-     * to retrieve the associated account.
-     * @opt_param string userLocale The preferred locale of the user.
-     * @opt_param string websiteLocale The locale of the user's hosted website.
-     * @return AssociationSession
-     * @throws \Google\Service\Exception
+     * The "associationsessions" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $adsensehostService = new Google\Service\AdSenseHost(...);
+     *   $associationsessions = $adsensehostService->associationsessions;
+     *  </code>
      */
-    public function start($productCode, $websiteUrl, $optParams = [])
+    class Associationsessions extends \Google\Service\Resource
     {
+        /**
+         * Create an association session for initiating an association with an AdSense
+         * user. (associationsessions.start)
+         *
+         * @param string|array $productCode Products to associate with the user.
+         * @param string $websiteUrl The URL of the user's hosted website.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string callbackUrl The URL to redirect the user to once
+         * association is completed. It receives a token parameter that can then be used
+         * to retrieve the associated account.
+         * @opt_param string userLocale The preferred locale of the user.
+         * @opt_param string websiteLocale The locale of the user's hosted website.
+         * @return AssociationSession
+         * @throws \Google\Service\Exception
+         */
+        public function start($productCode, $websiteUrl, $optParams = [])
+        {
+        }
+        /**
+         * Verify an association session after the association callback returns from
+         * AdSense signup. (associationsessions.verify)
+         *
+         * @param string $token The token returned to the association callback URL.
+         * @param array $optParams Optional parameters.
+         * @return AssociationSession
+         * @throws \Google\Service\Exception
+         */
+        public function verify($token, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Verify an association session after the association callback returns from
-     * AdSense signup. (associationsessions.verify)
-     *
-     * @param string $token The token returned to the association callback URL.
-     * @param array $optParams Optional parameters.
-     * @return AssociationSession
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\AdSenseHost\Resource\Associationsessions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function verify($token, $optParams = [])
+    class Google_Service_AdSenseHost_Resource_Associationsessions extends \Google\Service\AdSenseHost\Resource\Associationsessions
     {
     }
 }

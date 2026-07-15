@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class AddDataSourceResponse extends \Google\Model
-{
-    protected $dataExecutionStatusType = DataExecutionStatus::class;
-    protected $dataExecutionStatusDataType = '';
-    protected $dataSourceType = DataSource::class;
-    protected $dataSourceDataType = '';
-    /**
-     * The data execution status.
-     *
-     * @param DataExecutionStatus $dataExecutionStatus
-     */
-    public function setDataExecutionStatus(DataExecutionStatus $dataExecutionStatus)
+namespace Google\Service\Sheets {
+    class AddDataSourceResponse extends \Google\Model
     {
+        protected $dataExecutionStatusType = DataExecutionStatus::class;
+        protected $dataExecutionStatusDataType = '';
+        protected $dataSourceType = DataSource::class;
+        protected $dataSourceDataType = '';
+        /**
+         * The data execution status.
+         *
+         * @param DataExecutionStatus $dataExecutionStatus
+         */
+        public function setDataExecutionStatus(DataExecutionStatus $dataExecutionStatus)
+        {
+        }
+        /**
+         * @return DataExecutionStatus
+         */
+        public function getDataExecutionStatus()
+        {
+        }
+        /**
+         * The data source that was created.
+         *
+         * @param DataSource $dataSource
+         */
+        public function setDataSource(DataSource $dataSource)
+        {
+        }
+        /**
+         * @return DataSource
+         */
+        public function getDataSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DataExecutionStatus
+     * Runtime class alias of \Google\Service\Sheets\AddDataSourceResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataExecutionStatus()
-    {
-    }
-    /**
-     * The data source that was created.
-     *
-     * @param DataSource $dataSource
-     */
-    public function setDataSource(DataSource $dataSource)
-    {
-    }
-    /**
-     * @return DataSource
-     */
-    public function getDataSource()
+    class Google_Service_Sheets_AddDataSourceResponse extends \Google\Service\Sheets\AddDataSourceResponse
     {
     }
 }

@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleCloudRunV2ListRevisionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'revisions';
-    /**
-     * A token indicating there are more items than page_size. Use it in the next
-     * ListRevisions request to continue.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $revisionsType = GoogleCloudRunV2Revision::class;
-    protected $revisionsDataType = 'array';
-    /**
-     * A token indicating there are more items than page_size. Use it in the next
-     * ListRevisions request to continue.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\CloudRun {
+    class GoogleCloudRunV2ListRevisionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'revisions';
+        /**
+         * A token indicating there are more items than page_size. Use it in the next
+         * ListRevisions request to continue.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $revisionsType = GoogleCloudRunV2Revision::class;
+        protected $revisionsDataType = 'array';
+        /**
+         * A token indicating there are more items than page_size. Use it in the next
+         * ListRevisions request to continue.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The resulting list of Revisions.
+         *
+         * @param GoogleCloudRunV2Revision[] $revisions
+         */
+        public function setRevisions($revisions)
+        {
+        }
+        /**
+         * @return GoogleCloudRunV2Revision[]
+         */
+        public function getRevisions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRun\GoogleCloudRunV2ListRevisionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The resulting list of Revisions.
-     *
-     * @param GoogleCloudRunV2Revision[] $revisions
-     */
-    public function setRevisions($revisions)
-    {
-    }
-    /**
-     * @return GoogleCloudRunV2Revision[]
-     */
-    public function getRevisions()
+    class Google_Service_CloudRun_GoogleCloudRunV2ListRevisionsResponse extends \Google\Service\CloudRun\GoogleCloudRunV2ListRevisionsResponse
     {
     }
 }

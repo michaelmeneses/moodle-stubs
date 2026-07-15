@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeUXReport;
-
-class QueryHistoryResponse extends \Google\Model
-{
-    protected $recordType = HistoryRecord::class;
-    protected $recordDataType = '';
-    protected $urlNormalizationDetailsType = UrlNormalization::class;
-    protected $urlNormalizationDetailsDataType = '';
-    /**
-     * The record that was found.
-     *
-     * @param HistoryRecord $record
-     */
-    public function setRecord(HistoryRecord $record)
+namespace Google\Service\ChromeUXReport {
+    class QueryHistoryResponse extends \Google\Model
     {
+        protected $recordType = HistoryRecord::class;
+        protected $recordDataType = '';
+        protected $urlNormalizationDetailsType = UrlNormalization::class;
+        protected $urlNormalizationDetailsDataType = '';
+        /**
+         * The record that was found.
+         *
+         * @param HistoryRecord $record
+         */
+        public function setRecord(HistoryRecord $record)
+        {
+        }
+        /**
+         * @return HistoryRecord
+         */
+        public function getRecord()
+        {
+        }
+        /**
+         * These are details about automated normalization actions that were taken in
+         * order to make the requested `url_pattern` valid.
+         *
+         * @param UrlNormalization $urlNormalizationDetails
+         */
+        public function setUrlNormalizationDetails(UrlNormalization $urlNormalizationDetails)
+        {
+        }
+        /**
+         * @return UrlNormalization
+         */
+        public function getUrlNormalizationDetails()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return HistoryRecord
+     * Runtime class alias of \Google\Service\ChromeUXReport\QueryHistoryResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRecord()
-    {
-    }
-    /**
-     * These are details about automated normalization actions that were taken in
-     * order to make the requested `url_pattern` valid.
-     *
-     * @param UrlNormalization $urlNormalizationDetails
-     */
-    public function setUrlNormalizationDetails(UrlNormalization $urlNormalizationDetails)
-    {
-    }
-    /**
-     * @return UrlNormalization
-     */
-    public function getUrlNormalizationDetails()
+    class Google_Service_ChromeUXReport_QueryHistoryResponse extends \Google\Service\ChromeUXReport\QueryHistoryResponse
     {
     }
 }

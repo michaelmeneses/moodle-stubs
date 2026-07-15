@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1DestinationFeatureSetting extends \Google\Model
-{
-    /**
-     * Specify the field name in the export destination. If not specified, Feature
-     * ID is used.
-     *
-     * @var string
-     */
-    public $destinationField;
-    /**
-     * Required. The ID of the Feature to apply the setting to.
-     *
-     * @var string
-     */
-    public $featureId;
-    /**
-     * Specify the field name in the export destination. If not specified, Feature
-     * ID is used.
-     *
-     * @param string $destinationField
-     */
-    public function setDestinationField($destinationField)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1DestinationFeatureSetting extends \Google\Model
     {
+        /**
+         * Specify the field name in the export destination. If not specified, Feature
+         * ID is used.
+         *
+         * @var string
+         */
+        public $destinationField;
+        /**
+         * Required. The ID of the Feature to apply the setting to.
+         *
+         * @var string
+         */
+        public $featureId;
+        /**
+         * Specify the field name in the export destination. If not specified, Feature
+         * ID is used.
+         *
+         * @param string $destinationField
+         */
+        public function setDestinationField($destinationField)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDestinationField()
+        {
+        }
+        /**
+         * Required. The ID of the Feature to apply the setting to.
+         *
+         * @param string $featureId
+         */
+        public function setFeatureId($featureId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFeatureId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1DestinationFeatureSetting registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDestinationField()
-    {
-    }
-    /**
-     * Required. The ID of the Feature to apply the setting to.
-     *
-     * @param string $featureId
-     */
-    public function setFeatureId($featureId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFeatureId()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1DestinationFeatureSetting extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1DestinationFeatureSetting
     {
     }
 }

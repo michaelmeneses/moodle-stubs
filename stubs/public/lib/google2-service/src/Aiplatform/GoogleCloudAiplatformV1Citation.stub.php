@@ -21,124 +21,133 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1Citation extends \Google\Model
-{
-    /**
-     * Output only. The end index of the citation in the content.
-     *
-     * @var int
-     */
-    public $endIndex;
-    /**
-     * Output only. The license of the source of the citation.
-     *
-     * @var string
-     */
-    public $license;
-    protected $publicationDateType = GoogleTypeDate::class;
-    protected $publicationDateDataType = '';
-    /**
-     * Output only. The start index of the citation in the content.
-     *
-     * @var int
-     */
-    public $startIndex;
-    /**
-     * Output only. The title of the source of the citation.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * Output only. The URI of the source of the citation.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * Output only. The end index of the citation in the content.
-     *
-     * @param int $endIndex
-     */
-    public function setEndIndex($endIndex)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1Citation extends \Google\Model
     {
+        /**
+         * Output only. The end index of the citation in the content.
+         *
+         * @var int
+         */
+        public $endIndex;
+        /**
+         * Output only. The license of the source of the citation.
+         *
+         * @var string
+         */
+        public $license;
+        protected $publicationDateType = GoogleTypeDate::class;
+        protected $publicationDateDataType = '';
+        /**
+         * Output only. The start index of the citation in the content.
+         *
+         * @var int
+         */
+        public $startIndex;
+        /**
+         * Output only. The title of the source of the citation.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * Output only. The URI of the source of the citation.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * Output only. The end index of the citation in the content.
+         *
+         * @param int $endIndex
+         */
+        public function setEndIndex($endIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getEndIndex()
+        {
+        }
+        /**
+         * Output only. The license of the source of the citation.
+         *
+         * @param string $license
+         */
+        public function setLicense($license)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLicense()
+        {
+        }
+        /**
+         * Output only. The publication date of the source of the citation.
+         *
+         * @param GoogleTypeDate $publicationDate
+         */
+        public function setPublicationDate(GoogleTypeDate $publicationDate)
+        {
+        }
+        /**
+         * @return GoogleTypeDate
+         */
+        public function getPublicationDate()
+        {
+        }
+        /**
+         * Output only. The start index of the citation in the content.
+         *
+         * @param int $startIndex
+         */
+        public function setStartIndex($startIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getStartIndex()
+        {
+        }
+        /**
+         * Output only. The title of the source of the citation.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * Output only. The URI of the source of the citation.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1Citation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndIndex()
-    {
-    }
-    /**
-     * Output only. The license of the source of the citation.
-     *
-     * @param string $license
-     */
-    public function setLicense($license)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLicense()
-    {
-    }
-    /**
-     * Output only. The publication date of the source of the citation.
-     *
-     * @param GoogleTypeDate $publicationDate
-     */
-    public function setPublicationDate(GoogleTypeDate $publicationDate)
-    {
-    }
-    /**
-     * @return GoogleTypeDate
-     */
-    public function getPublicationDate()
-    {
-    }
-    /**
-     * Output only. The start index of the citation in the content.
-     *
-     * @param int $startIndex
-     */
-    public function setStartIndex($startIndex)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getStartIndex()
-    {
-    }
-    /**
-     * Output only. The title of the source of the citation.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
-    {
-    }
-    /**
-     * Output only. The URI of the source of the citation.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1Citation extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1Citation
     {
     }
 }

@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class DeviceTypeTargetingOptionDetails extends \Google\Model
-{
-    /**
-     * Default value when device type is not specified in this version. This enum
-     * is a placeholder for default value and does not represent a real device
-     * type option.
-     */
-    public const DEVICE_TYPE_DEVICE_TYPE_UNSPECIFIED = 'DEVICE_TYPE_UNSPECIFIED';
-    /**
-     * Computer.
-     */
-    public const DEVICE_TYPE_DEVICE_TYPE_COMPUTER = 'DEVICE_TYPE_COMPUTER';
-    /**
-     * Connected TV.
-     */
-    public const DEVICE_TYPE_DEVICE_TYPE_CONNECTED_TV = 'DEVICE_TYPE_CONNECTED_TV';
-    /**
-     * Smart phone.
-     */
-    public const DEVICE_TYPE_DEVICE_TYPE_SMART_PHONE = 'DEVICE_TYPE_SMART_PHONE';
-    /**
-     * Tablet.
-     */
-    public const DEVICE_TYPE_DEVICE_TYPE_TABLET = 'DEVICE_TYPE_TABLET';
-    /**
-     * Connected device.
-     */
-    public const DEVICE_TYPE_DEVICE_TYPE_CONNECTED_DEVICE = 'DEVICE_TYPE_CONNECTED_DEVICE';
-    /**
-     * Output only. The device type that is used to be targeted.
-     *
-     * @var string
-     */
-    public $deviceType;
-    /**
-     * Output only. The device type that is used to be targeted.
-     *
-     * Accepted values: DEVICE_TYPE_UNSPECIFIED, DEVICE_TYPE_COMPUTER,
-     * DEVICE_TYPE_CONNECTED_TV, DEVICE_TYPE_SMART_PHONE, DEVICE_TYPE_TABLET,
-     * DEVICE_TYPE_CONNECTED_DEVICE
-     *
-     * @param self::DEVICE_TYPE_* $deviceType
-     */
-    public function setDeviceType($deviceType)
+namespace Google\Service\DisplayVideo {
+    class DeviceTypeTargetingOptionDetails extends \Google\Model
     {
+        /**
+         * Default value when device type is not specified in this version. This enum
+         * is a placeholder for default value and does not represent a real device
+         * type option.
+         */
+        public const DEVICE_TYPE_DEVICE_TYPE_UNSPECIFIED = 'DEVICE_TYPE_UNSPECIFIED';
+        /**
+         * Computer.
+         */
+        public const DEVICE_TYPE_DEVICE_TYPE_COMPUTER = 'DEVICE_TYPE_COMPUTER';
+        /**
+         * Connected TV.
+         */
+        public const DEVICE_TYPE_DEVICE_TYPE_CONNECTED_TV = 'DEVICE_TYPE_CONNECTED_TV';
+        /**
+         * Smart phone.
+         */
+        public const DEVICE_TYPE_DEVICE_TYPE_SMART_PHONE = 'DEVICE_TYPE_SMART_PHONE';
+        /**
+         * Tablet.
+         */
+        public const DEVICE_TYPE_DEVICE_TYPE_TABLET = 'DEVICE_TYPE_TABLET';
+        /**
+         * Connected device.
+         */
+        public const DEVICE_TYPE_DEVICE_TYPE_CONNECTED_DEVICE = 'DEVICE_TYPE_CONNECTED_DEVICE';
+        /**
+         * Output only. The device type that is used to be targeted.
+         *
+         * @var string
+         */
+        public $deviceType;
+        /**
+         * Output only. The device type that is used to be targeted.
+         *
+         * Accepted values: DEVICE_TYPE_UNSPECIFIED, DEVICE_TYPE_COMPUTER,
+         * DEVICE_TYPE_CONNECTED_TV, DEVICE_TYPE_SMART_PHONE, DEVICE_TYPE_TABLET,
+         * DEVICE_TYPE_CONNECTED_DEVICE
+         *
+         * @param self::DEVICE_TYPE_* $deviceType
+         */
+        public function setDeviceType($deviceType)
+        {
+        }
+        /**
+         * @return self::DEVICE_TYPE_*
+         */
+        public function getDeviceType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::DEVICE_TYPE_*
+     * Runtime class alias of \Google\Service\DisplayVideo\DeviceTypeTargetingOptionDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeviceType()
+    class Google_Service_DisplayVideo_DeviceTypeTargetingOptionDetails extends \Google\Service\DisplayVideo\DeviceTypeTargetingOptionDetails
     {
     }
 }

@@ -21,102 +21,111 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AuthorizedBuyersMarketplace;
-
-class MediaPlanner extends \Google\Collection
-{
-    protected $collection_key = 'ancestorNames';
-    /**
-     * Output only. Account ID of the media planner.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $accountId;
-    /**
-     * Output only. The ancestor names of the media planner. Format:
-     * `mediaPlanners/{mediaPlannerAccountId}` Can be used to filter the response
-     * of the mediaPlanners.list method.
-     *
-     * @var string[]
-     */
-    public $ancestorNames;
-    /**
-     * Output only. The display name of the media planner. Can be used to filter
-     * the response of the mediaPlanners.list method.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Identifier. The unique resource name of the media planner. Format:
-     * `mediaPlanners/{mediaPlannerAccountId}` Can be used to filter the response
-     * of the mediaPlanners.list method.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. Account ID of the media planner.
-     *
-     * @deprecated
-     * @param string $accountId
-     */
-    public function setAccountId($accountId)
+namespace Google\Service\AuthorizedBuyersMarketplace {
+    class MediaPlanner extends \Google\Collection
     {
+        protected $collection_key = 'ancestorNames';
+        /**
+         * Output only. Account ID of the media planner.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $accountId;
+        /**
+         * Output only. The ancestor names of the media planner. Format:
+         * `mediaPlanners/{mediaPlannerAccountId}` Can be used to filter the response
+         * of the mediaPlanners.list method.
+         *
+         * @var string[]
+         */
+        public $ancestorNames;
+        /**
+         * Output only. The display name of the media planner. Can be used to filter
+         * the response of the mediaPlanners.list method.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Identifier. The unique resource name of the media planner. Format:
+         * `mediaPlanners/{mediaPlannerAccountId}` Can be used to filter the response
+         * of the mediaPlanners.list method.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. Account ID of the media planner.
+         *
+         * @deprecated
+         * @param string $accountId
+         */
+        public function setAccountId($accountId)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getAccountId()
+        {
+        }
+        /**
+         * Output only. The ancestor names of the media planner. Format:
+         * `mediaPlanners/{mediaPlannerAccountId}` Can be used to filter the response
+         * of the mediaPlanners.list method.
+         *
+         * @param string[] $ancestorNames
+         */
+        public function setAncestorNames($ancestorNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAncestorNames()
+        {
+        }
+        /**
+         * Output only. The display name of the media planner. Can be used to filter
+         * the response of the mediaPlanners.list method.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Identifier. The unique resource name of the media planner. Format:
+         * `mediaPlanners/{mediaPlannerAccountId}` Can be used to filter the response
+         * of the mediaPlanners.list method.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return string
+     * Runtime class alias of \Google\Service\AuthorizedBuyersMarketplace\MediaPlanner registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountId()
-    {
-    }
-    /**
-     * Output only. The ancestor names of the media planner. Format:
-     * `mediaPlanners/{mediaPlannerAccountId}` Can be used to filter the response
-     * of the mediaPlanners.list method.
-     *
-     * @param string[] $ancestorNames
-     */
-    public function setAncestorNames($ancestorNames)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getAncestorNames()
-    {
-    }
-    /**
-     * Output only. The display name of the media planner. Can be used to filter
-     * the response of the mediaPlanners.list method.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Identifier. The unique resource name of the media planner. Format:
-     * `mediaPlanners/{mediaPlannerAccountId}` Can be used to filter the response
-     * of the mediaPlanners.list method.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_AuthorizedBuyersMarketplace_MediaPlanner extends \Google\Service\AuthorizedBuyersMarketplace\MediaPlanner
     {
     }
 }

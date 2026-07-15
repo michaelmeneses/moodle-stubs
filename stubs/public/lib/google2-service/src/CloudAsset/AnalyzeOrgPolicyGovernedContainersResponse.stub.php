@@ -21,63 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class AnalyzeOrgPolicyGovernedContainersResponse extends \Google\Collection
-{
-    protected $collection_key = 'governedContainers';
-    protected $constraintType = AnalyzerOrgPolicyConstraint::class;
-    protected $constraintDataType = '';
-    protected $governedContainersType = GoogleCloudAssetV1GovernedContainer::class;
-    protected $governedContainersDataType = 'array';
-    /**
-     * The page token to fetch the next page for
-     * AnalyzeOrgPolicyGovernedContainersResponse.governed_containers.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The definition of the constraint in the request.
-     *
-     * @param AnalyzerOrgPolicyConstraint $constraint
-     */
-    public function setConstraint(AnalyzerOrgPolicyConstraint $constraint)
+namespace Google\Service\CloudAsset {
+    class AnalyzeOrgPolicyGovernedContainersResponse extends \Google\Collection
     {
+        protected $collection_key = 'governedContainers';
+        protected $constraintType = AnalyzerOrgPolicyConstraint::class;
+        protected $constraintDataType = '';
+        protected $governedContainersType = GoogleCloudAssetV1GovernedContainer::class;
+        protected $governedContainersDataType = 'array';
+        /**
+         * The page token to fetch the next page for
+         * AnalyzeOrgPolicyGovernedContainersResponse.governed_containers.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The definition of the constraint in the request.
+         *
+         * @param AnalyzerOrgPolicyConstraint $constraint
+         */
+        public function setConstraint(AnalyzerOrgPolicyConstraint $constraint)
+        {
+        }
+        /**
+         * @return AnalyzerOrgPolicyConstraint
+         */
+        public function getConstraint()
+        {
+        }
+        /**
+         * The list of the analyzed governed containers.
+         *
+         * @param GoogleCloudAssetV1GovernedContainer[] $governedContainers
+         */
+        public function setGovernedContainers($governedContainers)
+        {
+        }
+        /**
+         * @return GoogleCloudAssetV1GovernedContainer[]
+         */
+        public function getGovernedContainers()
+        {
+        }
+        /**
+         * The page token to fetch the next page for
+         * AnalyzeOrgPolicyGovernedContainersResponse.governed_containers.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AnalyzerOrgPolicyConstraint
+     * Runtime class alias of \Google\Service\CloudAsset\AnalyzeOrgPolicyGovernedContainersResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConstraint()
-    {
-    }
-    /**
-     * The list of the analyzed governed containers.
-     *
-     * @param GoogleCloudAssetV1GovernedContainer[] $governedContainers
-     */
-    public function setGovernedContainers($governedContainers)
-    {
-    }
-    /**
-     * @return GoogleCloudAssetV1GovernedContainer[]
-     */
-    public function getGovernedContainers()
-    {
-    }
-    /**
-     * The page token to fetch the next page for
-     * AnalyzeOrgPolicyGovernedContainersResponse.governed_containers.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_CloudAsset_AnalyzeOrgPolicyGovernedContainersResponse extends \Google\Service\CloudAsset\AnalyzeOrgPolicyGovernedContainersResponse
     {
     }
 }

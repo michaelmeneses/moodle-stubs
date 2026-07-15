@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_badges\local\backpack\ob;
 
+use core\url;
 /**
  * The base class for Open Badges exporters. It provides a common interface for exporting Open Badges data.
  *

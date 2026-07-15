@@ -21,37 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PubsubLite\Resource;
-
-/**
- * The "subscriptions" collection of methods.
- * Typical usage is:
- *  <code>
- *   $pubsubliteService = new Google\Service\PubsubLite(...);
- *   $subscriptions = $pubsubliteService->admin_projects_locations_topics_subscriptions;
- *  </code>
- */
-class AdminProjectsLocationsTopicsSubscriptions extends \Google\Service\Resource
-{
+namespace Google\Service\PubsubLite\Resource {
+    use Google\Service\PubsubLite\ListTopicSubscriptionsResponse;
     /**
-     * Lists the subscriptions attached to the specified topic.
-     * (subscriptions.listAdminProjectsLocationsTopicsSubscriptions)
-     *
-     * @param string $name Required. The name of the topic whose subscriptions to
-     * list.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The maximum number of subscriptions to return. The
-     * service may return fewer than this value. If unset or zero, all subscriptions
-     * for the given topic will be returned.
-     * @opt_param string pageToken A page token, received from a previous
-     * `ListTopicSubscriptions` call. Provide this to retrieve the subsequent page.
-     * When paginating, all other parameters provided to `ListTopicSubscriptions`
-     * must match the call that provided the page token.
-     * @return ListTopicSubscriptionsResponse
-     * @throws \Google\Service\Exception
+     * The "subscriptions" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $pubsubliteService = new Google\Service\PubsubLite(...);
+     *   $subscriptions = $pubsubliteService->admin_projects_locations_topics_subscriptions;
+     *  </code>
      */
-    public function listAdminProjectsLocationsTopicsSubscriptions($name, $optParams = [])
+    class AdminProjectsLocationsTopicsSubscriptions extends \Google\Service\Resource
+    {
+        /**
+         * Lists the subscriptions attached to the specified topic.
+         * (subscriptions.listAdminProjectsLocationsTopicsSubscriptions)
+         *
+         * @param string $name Required. The name of the topic whose subscriptions to
+         * list.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The maximum number of subscriptions to return. The
+         * service may return fewer than this value. If unset or zero, all subscriptions
+         * for the given topic will be returned.
+         * @opt_param string pageToken A page token, received from a previous
+         * `ListTopicSubscriptions` call. Provide this to retrieve the subsequent page.
+         * When paginating, all other parameters provided to `ListTopicSubscriptions`
+         * must match the call that provided the page token.
+         * @return ListTopicSubscriptionsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listAdminProjectsLocationsTopicsSubscriptions($name, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\PubsubLite\Resource\AdminProjectsLocationsTopicsSubscriptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_PubsubLite_Resource_AdminProjectsLocationsTopicsSubscriptions extends \Google\Service\PubsubLite\Resource\AdminProjectsLocationsTopicsSubscriptions
     {
     }
 }

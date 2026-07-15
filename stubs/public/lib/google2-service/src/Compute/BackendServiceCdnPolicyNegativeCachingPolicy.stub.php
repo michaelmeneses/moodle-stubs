@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class BackendServiceCdnPolicyNegativeCachingPolicy extends \Google\Model
-{
-    /**
-     * The HTTP status code to define a TTL against. Only HTTP status codes 300,
-     * 301, 302, 307, 308, 404, 405, 410, 421, 451 and 501 can be specified as
-     * values, and you cannot specify a status code more than once.
-     *
-     * @var int
-     */
-    public $code;
-    /**
-     * The TTL (in seconds) for which to cache responses with the corresponding
-     * status code. The maximum allowed value is 1800s (30 minutes), noting that
-     * infrequently accessed objects may be evicted from the cache before the
-     * defined TTL.
-     *
-     * @var int
-     */
-    public $ttl;
-    /**
-     * The HTTP status code to define a TTL against. Only HTTP status codes 300,
-     * 301, 302, 307, 308, 404, 405, 410, 421, 451 and 501 can be specified as
-     * values, and you cannot specify a status code more than once.
-     *
-     * @param int $code
-     */
-    public function setCode($code)
+namespace Google\Service\Compute {
+    class BackendServiceCdnPolicyNegativeCachingPolicy extends \Google\Model
     {
+        /**
+         * The HTTP status code to define a TTL against. Only HTTP status codes 300,
+         * 301, 302, 307, 308, 404, 405, 410, 421, 451 and 501 can be specified as
+         * values, and you cannot specify a status code more than once.
+         *
+         * @var int
+         */
+        public $code;
+        /**
+         * The TTL (in seconds) for which to cache responses with the corresponding
+         * status code. The maximum allowed value is 1800s (30 minutes), noting that
+         * infrequently accessed objects may be evicted from the cache before the
+         * defined TTL.
+         *
+         * @var int
+         */
+        public $ttl;
+        /**
+         * The HTTP status code to define a TTL against. Only HTTP status codes 300,
+         * 301, 302, 307, 308, 404, 405, 410, 421, 451 and 501 can be specified as
+         * values, and you cannot specify a status code more than once.
+         *
+         * @param int $code
+         */
+        public function setCode($code)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCode()
+        {
+        }
+        /**
+         * The TTL (in seconds) for which to cache responses with the corresponding
+         * status code. The maximum allowed value is 1800s (30 minutes), noting that
+         * infrequently accessed objects may be evicted from the cache before the
+         * defined TTL.
+         *
+         * @param int $ttl
+         */
+        public function setTtl($ttl)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTtl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Compute\BackendServiceCdnPolicyNegativeCachingPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCode()
-    {
-    }
-    /**
-     * The TTL (in seconds) for which to cache responses with the corresponding
-     * status code. The maximum allowed value is 1800s (30 minutes), noting that
-     * infrequently accessed objects may be evicted from the cache before the
-     * defined TTL.
-     *
-     * @param int $ttl
-     */
-    public function setTtl($ttl)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTtl()
+    class Google_Service_Compute_BackendServiceCdnPolicyNegativeCachingPolicy extends \Google\Service\Compute\BackendServiceCdnPolicyNegativeCachingPolicy
     {
     }
 }

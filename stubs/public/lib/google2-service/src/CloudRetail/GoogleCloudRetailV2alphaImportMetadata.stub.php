@@ -21,155 +21,164 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2alphaImportMetadata extends \Google\Model
-{
-    /**
-     * Operation create time.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Count of entries that encountered errors while processing.
-     *
-     * @var string
-     */
-    public $failureCount;
-    /**
-     * Pub/Sub topic for receiving notification. If this field is set, when the
-     * import is finished, a notification is sent to specified Pub/Sub topic. The
-     * message data is JSON string of a Operation. Format of the Pub/Sub topic is
-     * `projects/{project}/topics/{topic}`.
-     *
-     * @var string
-     */
-    public $notificationPubsubTopic;
-    /**
-     * Deprecated. This field is never set.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $requestId;
-    /**
-     * Count of entries that were processed successfully.
-     *
-     * @var string
-     */
-    public $successCount;
-    protected $transformedUserEventsMetadataType = GoogleCloudRetailV2alphaTransformedUserEventsMetadata::class;
-    protected $transformedUserEventsMetadataDataType = '';
-    /**
-     * Operation last update time. If the operation is done, this is also the
-     * finish time.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Operation create time.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2alphaImportMetadata extends \Google\Model
     {
+        /**
+         * Operation create time.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Count of entries that encountered errors while processing.
+         *
+         * @var string
+         */
+        public $failureCount;
+        /**
+         * Pub/Sub topic for receiving notification. If this field is set, when the
+         * import is finished, a notification is sent to specified Pub/Sub topic. The
+         * message data is JSON string of a Operation. Format of the Pub/Sub topic is
+         * `projects/{project}/topics/{topic}`.
+         *
+         * @var string
+         */
+        public $notificationPubsubTopic;
+        /**
+         * Deprecated. This field is never set.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $requestId;
+        /**
+         * Count of entries that were processed successfully.
+         *
+         * @var string
+         */
+        public $successCount;
+        protected $transformedUserEventsMetadataType = GoogleCloudRetailV2alphaTransformedUserEventsMetadata::class;
+        protected $transformedUserEventsMetadataDataType = '';
+        /**
+         * Operation last update time. If the operation is done, this is also the
+         * finish time.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Operation create time.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Count of entries that encountered errors while processing.
+         *
+         * @param string $failureCount
+         */
+        public function setFailureCount($failureCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFailureCount()
+        {
+        }
+        /**
+         * Pub/Sub topic for receiving notification. If this field is set, when the
+         * import is finished, a notification is sent to specified Pub/Sub topic. The
+         * message data is JSON string of a Operation. Format of the Pub/Sub topic is
+         * `projects/{project}/topics/{topic}`.
+         *
+         * @param string $notificationPubsubTopic
+         */
+        public function setNotificationPubsubTopic($notificationPubsubTopic)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNotificationPubsubTopic()
+        {
+        }
+        /**
+         * Deprecated. This field is never set.
+         *
+         * @deprecated
+         * @param string $requestId
+         */
+        public function setRequestId($requestId)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getRequestId()
+        {
+        }
+        /**
+         * Count of entries that were processed successfully.
+         *
+         * @param string $successCount
+         */
+        public function setSuccessCount($successCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSuccessCount()
+        {
+        }
+        /**
+         * Metadata related to transform user events.
+         *
+         * @param GoogleCloudRetailV2alphaTransformedUserEventsMetadata $transformedUserEventsMetadata
+         */
+        public function setTransformedUserEventsMetadata(GoogleCloudRetailV2alphaTransformedUserEventsMetadata $transformedUserEventsMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2alphaTransformedUserEventsMetadata
+         */
+        public function getTransformedUserEventsMetadata()
+        {
+        }
+        /**
+         * Operation last update time. If the operation is done, this is also the
+         * finish time.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2alphaImportMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Count of entries that encountered errors while processing.
-     *
-     * @param string $failureCount
-     */
-    public function setFailureCount($failureCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFailureCount()
-    {
-    }
-    /**
-     * Pub/Sub topic for receiving notification. If this field is set, when the
-     * import is finished, a notification is sent to specified Pub/Sub topic. The
-     * message data is JSON string of a Operation. Format of the Pub/Sub topic is
-     * `projects/{project}/topics/{topic}`.
-     *
-     * @param string $notificationPubsubTopic
-     */
-    public function setNotificationPubsubTopic($notificationPubsubTopic)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNotificationPubsubTopic()
-    {
-    }
-    /**
-     * Deprecated. This field is never set.
-     *
-     * @deprecated
-     * @param string $requestId
-     */
-    public function setRequestId($requestId)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getRequestId()
-    {
-    }
-    /**
-     * Count of entries that were processed successfully.
-     *
-     * @param string $successCount
-     */
-    public function setSuccessCount($successCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSuccessCount()
-    {
-    }
-    /**
-     * Metadata related to transform user events.
-     *
-     * @param GoogleCloudRetailV2alphaTransformedUserEventsMetadata $transformedUserEventsMetadata
-     */
-    public function setTransformedUserEventsMetadata(GoogleCloudRetailV2alphaTransformedUserEventsMetadata $transformedUserEventsMetadata)
-    {
-    }
-    /**
-     * @return GoogleCloudRetailV2alphaTransformedUserEventsMetadata
-     */
-    public function getTransformedUserEventsMetadata()
-    {
-    }
-    /**
-     * Operation last update time. If the operation is done, this is also the
-     * finish time.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2alphaImportMetadata extends \Google\Service\CloudRetail\GoogleCloudRetailV2alphaImportMetadata
     {
     }
 }

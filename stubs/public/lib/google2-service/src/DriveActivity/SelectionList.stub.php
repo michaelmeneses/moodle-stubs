@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveActivity;
-
-class SelectionList extends \Google\Collection
-{
-    protected $collection_key = 'values';
-    protected $valuesType = Selection::class;
-    protected $valuesDataType = 'array';
-    /**
-     * Selection values.
-     *
-     * @param Selection[] $values
-     */
-    public function setValues($values)
+namespace Google\Service\DriveActivity {
+    class SelectionList extends \Google\Collection
     {
+        protected $collection_key = 'values';
+        protected $valuesType = Selection::class;
+        protected $valuesDataType = 'array';
+        /**
+         * Selection values.
+         *
+         * @param Selection[] $values
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return Selection[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Selection[]
+     * Runtime class alias of \Google\Service\DriveActivity\SelectionList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getValues()
+    class Google_Service_DriveActivity_SelectionList extends \Google\Service\DriveActivity\SelectionList
     {
     }
 }

@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class NetworkParams extends \Google\Model
-{
-    /**
-     * Tag keys/values directly bound to this resource. Tag keys and values have
-     * the same definition as resource manager tags. The field is allowed for
-     * INSERT only. The keys/values to set on the resource should be specified in
-     * either ID { : } or Namespaced format { : }. For example the following are
-     * valid inputs: * {"tagKeys/333" : "tagValues/444", "tagKeys/123" :
-     * "tagValues/456"} * {"123/environment" : "production", "345/abc" : "xyz"}
-     * Note: * Invalid combinations of ID & namespaced format is not supported.
-     * For   instance: {"123/environment" : "tagValues/444"} is invalid.
-     *
-     * @var string[]
-     */
-    public $resourceManagerTags;
-    /**
-     * Tag keys/values directly bound to this resource. Tag keys and values have
-     * the same definition as resource manager tags. The field is allowed for
-     * INSERT only. The keys/values to set on the resource should be specified in
-     * either ID { : } or Namespaced format { : }. For example the following are
-     * valid inputs: * {"tagKeys/333" : "tagValues/444", "tagKeys/123" :
-     * "tagValues/456"} * {"123/environment" : "production", "345/abc" : "xyz"}
-     * Note: * Invalid combinations of ID & namespaced format is not supported.
-     * For   instance: {"123/environment" : "tagValues/444"} is invalid.
-     *
-     * @param string[] $resourceManagerTags
-     */
-    public function setResourceManagerTags($resourceManagerTags)
+namespace Google\Service\Compute {
+    class NetworkParams extends \Google\Model
     {
+        /**
+         * Tag keys/values directly bound to this resource. Tag keys and values have
+         * the same definition as resource manager tags. The field is allowed for
+         * INSERT only. The keys/values to set on the resource should be specified in
+         * either ID { : } or Namespaced format { : }. For example the following are
+         * valid inputs: * {"tagKeys/333" : "tagValues/444", "tagKeys/123" :
+         * "tagValues/456"} * {"123/environment" : "production", "345/abc" : "xyz"}
+         * Note: * Invalid combinations of ID & namespaced format is not supported.
+         * For   instance: {"123/environment" : "tagValues/444"} is invalid.
+         *
+         * @var string[]
+         */
+        public $resourceManagerTags;
+        /**
+         * Tag keys/values directly bound to this resource. Tag keys and values have
+         * the same definition as resource manager tags. The field is allowed for
+         * INSERT only. The keys/values to set on the resource should be specified in
+         * either ID { : } or Namespaced format { : }. For example the following are
+         * valid inputs: * {"tagKeys/333" : "tagValues/444", "tagKeys/123" :
+         * "tagValues/456"} * {"123/environment" : "production", "345/abc" : "xyz"}
+         * Note: * Invalid combinations of ID & namespaced format is not supported.
+         * For   instance: {"123/environment" : "tagValues/444"} is invalid.
+         *
+         * @param string[] $resourceManagerTags
+         */
+        public function setResourceManagerTags($resourceManagerTags)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getResourceManagerTags()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Compute\NetworkParams registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResourceManagerTags()
+    class Google_Service_Compute_NetworkParams extends \Google\Service\Compute\NetworkParams
     {
     }
 }

@@ -21,190 +21,199 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CertificateAuthorityService;
-
-class KeyUsageOptions extends \Google\Model
-{
-    /**
-     * The key may be used to sign certificates.
-     *
-     * @var bool
-     */
-    public $certSign;
-    /**
-     * The key may be used for cryptographic commitments. Note that this may also
-     * be referred to as "non-repudiation".
-     *
-     * @var bool
-     */
-    public $contentCommitment;
-    /**
-     * The key may be used sign certificate revocation lists.
-     *
-     * @var bool
-     */
-    public $crlSign;
-    /**
-     * The key may be used to encipher data.
-     *
-     * @var bool
-     */
-    public $dataEncipherment;
-    /**
-     * The key may be used to decipher only.
-     *
-     * @var bool
-     */
-    public $decipherOnly;
-    /**
-     * The key may be used for digital signatures.
-     *
-     * @var bool
-     */
-    public $digitalSignature;
-    /**
-     * The key may be used to encipher only.
-     *
-     * @var bool
-     */
-    public $encipherOnly;
-    /**
-     * The key may be used in a key agreement protocol.
-     *
-     * @var bool
-     */
-    public $keyAgreement;
-    /**
-     * The key may be used to encipher other keys.
-     *
-     * @var bool
-     */
-    public $keyEncipherment;
-    /**
-     * The key may be used to sign certificates.
-     *
-     * @param bool $certSign
-     */
-    public function setCertSign($certSign)
+namespace Google\Service\CertificateAuthorityService {
+    class KeyUsageOptions extends \Google\Model
     {
+        /**
+         * The key may be used to sign certificates.
+         *
+         * @var bool
+         */
+        public $certSign;
+        /**
+         * The key may be used for cryptographic commitments. Note that this may also
+         * be referred to as "non-repudiation".
+         *
+         * @var bool
+         */
+        public $contentCommitment;
+        /**
+         * The key may be used sign certificate revocation lists.
+         *
+         * @var bool
+         */
+        public $crlSign;
+        /**
+         * The key may be used to encipher data.
+         *
+         * @var bool
+         */
+        public $dataEncipherment;
+        /**
+         * The key may be used to decipher only.
+         *
+         * @var bool
+         */
+        public $decipherOnly;
+        /**
+         * The key may be used for digital signatures.
+         *
+         * @var bool
+         */
+        public $digitalSignature;
+        /**
+         * The key may be used to encipher only.
+         *
+         * @var bool
+         */
+        public $encipherOnly;
+        /**
+         * The key may be used in a key agreement protocol.
+         *
+         * @var bool
+         */
+        public $keyAgreement;
+        /**
+         * The key may be used to encipher other keys.
+         *
+         * @var bool
+         */
+        public $keyEncipherment;
+        /**
+         * The key may be used to sign certificates.
+         *
+         * @param bool $certSign
+         */
+        public function setCertSign($certSign)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCertSign()
+        {
+        }
+        /**
+         * The key may be used for cryptographic commitments. Note that this may also
+         * be referred to as "non-repudiation".
+         *
+         * @param bool $contentCommitment
+         */
+        public function setContentCommitment($contentCommitment)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getContentCommitment()
+        {
+        }
+        /**
+         * The key may be used sign certificate revocation lists.
+         *
+         * @param bool $crlSign
+         */
+        public function setCrlSign($crlSign)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCrlSign()
+        {
+        }
+        /**
+         * The key may be used to encipher data.
+         *
+         * @param bool $dataEncipherment
+         */
+        public function setDataEncipherment($dataEncipherment)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDataEncipherment()
+        {
+        }
+        /**
+         * The key may be used to decipher only.
+         *
+         * @param bool $decipherOnly
+         */
+        public function setDecipherOnly($decipherOnly)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDecipherOnly()
+        {
+        }
+        /**
+         * The key may be used for digital signatures.
+         *
+         * @param bool $digitalSignature
+         */
+        public function setDigitalSignature($digitalSignature)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDigitalSignature()
+        {
+        }
+        /**
+         * The key may be used to encipher only.
+         *
+         * @param bool $encipherOnly
+         */
+        public function setEncipherOnly($encipherOnly)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEncipherOnly()
+        {
+        }
+        /**
+         * The key may be used in a key agreement protocol.
+         *
+         * @param bool $keyAgreement
+         */
+        public function setKeyAgreement($keyAgreement)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getKeyAgreement()
+        {
+        }
+        /**
+         * The key may be used to encipher other keys.
+         *
+         * @param bool $keyEncipherment
+         */
+        public function setKeyEncipherment($keyEncipherment)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getKeyEncipherment()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CertificateAuthorityService\KeyUsageOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCertSign()
-    {
-    }
-    /**
-     * The key may be used for cryptographic commitments. Note that this may also
-     * be referred to as "non-repudiation".
-     *
-     * @param bool $contentCommitment
-     */
-    public function setContentCommitment($contentCommitment)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getContentCommitment()
-    {
-    }
-    /**
-     * The key may be used sign certificate revocation lists.
-     *
-     * @param bool $crlSign
-     */
-    public function setCrlSign($crlSign)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCrlSign()
-    {
-    }
-    /**
-     * The key may be used to encipher data.
-     *
-     * @param bool $dataEncipherment
-     */
-    public function setDataEncipherment($dataEncipherment)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDataEncipherment()
-    {
-    }
-    /**
-     * The key may be used to decipher only.
-     *
-     * @param bool $decipherOnly
-     */
-    public function setDecipherOnly($decipherOnly)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDecipherOnly()
-    {
-    }
-    /**
-     * The key may be used for digital signatures.
-     *
-     * @param bool $digitalSignature
-     */
-    public function setDigitalSignature($digitalSignature)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDigitalSignature()
-    {
-    }
-    /**
-     * The key may be used to encipher only.
-     *
-     * @param bool $encipherOnly
-     */
-    public function setEncipherOnly($encipherOnly)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEncipherOnly()
-    {
-    }
-    /**
-     * The key may be used in a key agreement protocol.
-     *
-     * @param bool $keyAgreement
-     */
-    public function setKeyAgreement($keyAgreement)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getKeyAgreement()
-    {
-    }
-    /**
-     * The key may be used to encipher other keys.
-     *
-     * @param bool $keyEncipherment
-     */
-    public function setKeyEncipherment($keyEncipherment)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getKeyEncipherment()
+    class Google_Service_CertificateAuthorityService_KeyUsageOptions extends \Google\Service\CertificateAuthorityService\KeyUsageOptions
     {
     }
 }

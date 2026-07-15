@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudScheduler;
-
-class CloudschedulerEmpty extends \Google\Model
-{
+namespace Google\Service\CloudScheduler {
+    class CloudschedulerEmpty extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudScheduler\CloudschedulerEmpty registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudScheduler_CloudschedulerEmpty extends \Google\Service\CloudScheduler\CloudschedulerEmpty
+    {
+    }
 }

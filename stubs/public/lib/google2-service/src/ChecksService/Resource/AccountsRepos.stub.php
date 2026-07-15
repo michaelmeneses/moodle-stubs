@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChecksService\Resource;
-
-/**
- * The "repos" collection of methods.
- * Typical usage is:
- *  <code>
- *   $checksService = new Google\Service\ChecksService(...);
- *   $repos = $checksService->accounts_repos;
- *  </code>
- */
-class AccountsRepos extends \Google\Service\Resource
-{
+namespace Google\Service\ChecksService\Resource {
+    /**
+     * The "repos" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $checksService = new Google\Service\ChecksService(...);
+     *   $repos = $checksService->accounts_repos;
+     *  </code>
+     */
+    class AccountsRepos extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ChecksService\Resource\AccountsRepos registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ChecksService_Resource_AccountsRepos extends \Google\Service\ChecksService\Resource\AccountsRepos
+    {
+    }
 }

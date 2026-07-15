@@ -21,103 +21,114 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting\Resource;
-
-/**
- * The "advertisers" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dfareportingService = new Google\Service\Dfareporting(...);
- *   $advertisers = $dfareportingService->advertisers;
- *  </code>
- */
-class Advertisers extends \Google\Service\Resource
-{
+namespace Google\Service\Dfareporting\Resource {
+    use Google\Service\Dfareporting\Advertiser;
+    use Google\Service\Dfareporting\AdvertisersListResponse;
     /**
-     * Gets one advertiser by ID. (advertisers.get)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param string $id Advertiser ID.
-     * @param array $optParams Optional parameters.
-     * @return Advertiser
-     * @throws \Google\Service\Exception
+     * The "advertisers" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dfareportingService = new Google\Service\Dfareporting(...);
+     *   $advertisers = $dfareportingService->advertisers;
+     *  </code>
      */
-    public function get($profileId, $id, $optParams = [])
+    class Advertisers extends \Google\Service\Resource
     {
+        /**
+         * Gets one advertiser by ID. (advertisers.get)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param string $id Advertiser ID.
+         * @param array $optParams Optional parameters.
+         * @return Advertiser
+         * @throws \Google\Service\Exception
+         */
+        public function get($profileId, $id, $optParams = [])
+        {
+        }
+        /**
+         * Inserts a new advertiser. (advertisers.insert)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param Advertiser $postBody
+         * @param array $optParams Optional parameters.
+         * @return Advertiser
+         * @throws \Google\Service\Exception
+         */
+        public function insert($profileId, Advertiser $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves a list of advertisers, possibly filtered. This method supports
+         * paging. (advertisers.listAdvertisers)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string advertiserGroupIds Select only advertisers with these
+         * advertiser group IDs.
+         * @opt_param string floodlightConfigurationIds Select only advertisers with
+         * these floodlight configuration IDs.
+         * @opt_param string ids Select only advertisers with these IDs.
+         * @opt_param bool includeAdvertisersWithoutGroupsOnly Select only advertisers
+         * which do not belong to any advertiser group.
+         * @opt_param int maxResults Maximum number of results to return.
+         * @opt_param bool onlyParent Select only advertisers which use another
+         * advertiser's floodlight configuration.
+         * @opt_param string pageToken Value of the nextPageToken from the previous
+         * result page.
+         * @opt_param string searchString Allows searching for objects by name or ID.
+         * Wildcards (*) are allowed. For example, "advertiser*2015" will return objects
+         * with names like "advertiser June 2015", "advertiser April 2015", or simply
+         * "advertiser 2015". Most of the searches also add wildcards implicitly at the
+         * start and the end of the search string. For example, a search string of
+         * "advertiser" will match objects with name "my advertiser", "advertiser 2015",
+         * or simply "advertiser" .
+         * @opt_param string sortField Field by which to sort the list.
+         * @opt_param string sortOrder Order of sorted results.
+         * @opt_param string status Select only advertisers with the specified status.
+         * @opt_param string subaccountId Select only advertisers with these subaccount
+         * IDs.
+         * @return AdvertisersListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listAdvertisers($profileId, $optParams = [])
+        {
+        }
+        /**
+         * Updates an existing advertiser. This method supports patch semantics.
+         * (advertisers.patch)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param string $id Required. Advertiser ID.
+         * @param Advertiser $postBody
+         * @param array $optParams Optional parameters.
+         * @return Advertiser
+         * @throws \Google\Service\Exception
+         */
+        public function patch($profileId, $id, Advertiser $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Updates an existing advertiser. (advertisers.update)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param Advertiser $postBody
+         * @param array $optParams Optional parameters.
+         * @return Advertiser
+         * @throws \Google\Service\Exception
+         */
+        public function update($profileId, Advertiser $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Inserts a new advertiser. (advertisers.insert)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param Advertiser $postBody
-     * @param array $optParams Optional parameters.
-     * @return Advertiser
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Dfareporting\Resource\Advertisers registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function insert($profileId, Advertiser $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Retrieves a list of advertisers, possibly filtered. This method supports
-     * paging. (advertisers.listAdvertisers)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string advertiserGroupIds Select only advertisers with these
-     * advertiser group IDs.
-     * @opt_param string floodlightConfigurationIds Select only advertisers with
-     * these floodlight configuration IDs.
-     * @opt_param string ids Select only advertisers with these IDs.
-     * @opt_param bool includeAdvertisersWithoutGroupsOnly Select only advertisers
-     * which do not belong to any advertiser group.
-     * @opt_param int maxResults Maximum number of results to return.
-     * @opt_param bool onlyParent Select only advertisers which use another
-     * advertiser's floodlight configuration.
-     * @opt_param string pageToken Value of the nextPageToken from the previous
-     * result page.
-     * @opt_param string searchString Allows searching for objects by name or ID.
-     * Wildcards (*) are allowed. For example, "advertiser*2015" will return objects
-     * with names like "advertiser June 2015", "advertiser April 2015", or simply
-     * "advertiser 2015". Most of the searches also add wildcards implicitly at the
-     * start and the end of the search string. For example, a search string of
-     * "advertiser" will match objects with name "my advertiser", "advertiser 2015",
-     * or simply "advertiser" .
-     * @opt_param string sortField Field by which to sort the list.
-     * @opt_param string sortOrder Order of sorted results.
-     * @opt_param string status Select only advertisers with the specified status.
-     * @opt_param string subaccountId Select only advertisers with these subaccount
-     * IDs.
-     * @return AdvertisersListResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listAdvertisers($profileId, $optParams = [])
-    {
-    }
-    /**
-     * Updates an existing advertiser. This method supports patch semantics.
-     * (advertisers.patch)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param string $id Required. Advertiser ID.
-     * @param Advertiser $postBody
-     * @param array $optParams Optional parameters.
-     * @return Advertiser
-     * @throws \Google\Service\Exception
-     */
-    public function patch($profileId, $id, Advertiser $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Updates an existing advertiser. (advertisers.update)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param Advertiser $postBody
-     * @param array $optParams Optional parameters.
-     * @return Advertiser
-     * @throws \Google\Service\Exception
-     */
-    public function update($profileId, Advertiser $postBody, $optParams = [])
+    class Google_Service_Dfareporting_Resource_Advertisers extends \Google\Service\Dfareporting\Resource\Advertisers
     {
     }
 }

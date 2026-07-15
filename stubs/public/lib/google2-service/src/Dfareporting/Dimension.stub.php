@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class Dimension extends \Google\Model
-{
-    /**
-     * The kind of resource this is, in this case dfareporting#dimension.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The dimension name, e.g. advertiser
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The kind of resource this is, in this case dfareporting#dimension.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Dfareporting {
+    class Dimension extends \Google\Model
     {
+        /**
+         * The kind of resource this is, in this case dfareporting#dimension.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The dimension name, e.g. advertiser
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The kind of resource this is, in this case dfareporting#dimension.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The dimension name, e.g. advertiser
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\Dimension registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * The dimension name, e.g. advertiser
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Dfareporting_Dimension extends \Google\Service\Dfareporting\Dimension
     {
     }
 }

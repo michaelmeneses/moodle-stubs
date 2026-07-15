@@ -21,204 +21,213 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PaymentsResellerSubscription;
-
-class Promotion extends \Google\Collection
-{
-    /**
-     * The promotion type is unspecified.
-     */
-    public const PROMOTION_TYPE_PROMOTION_TYPE_UNSPECIFIED = 'PROMOTION_TYPE_UNSPECIFIED';
-    /**
-     * The promotion is a free trial.
-     */
-    public const PROMOTION_TYPE_PROMOTION_TYPE_FREE_TRIAL = 'PROMOTION_TYPE_FREE_TRIAL';
-    /**
-     * The promotion is a reduced introductory pricing.
-     */
-    public const PROMOTION_TYPE_PROMOTION_TYPE_INTRODUCTORY_PRICING = 'PROMOTION_TYPE_INTRODUCTORY_PRICING';
-    protected $collection_key = 'titles';
-    /**
-     * Output only. The product ids this promotion can be applied to.
-     *
-     * @var string[]
-     */
-    public $applicableProducts;
-    /**
-     * Optional. Specifies the end time (exclusive) of the period that the
-     * promotion is available in. If unset, the promotion is available
-     * indefinitely.
-     *
-     * @var string
-     */
-    public $endTime;
-    protected $freeTrialDurationType = Duration::class;
-    protected $freeTrialDurationDataType = '';
-    protected $introductoryPricingDetailsType = PromotionIntroductoryPricingDetails::class;
-    protected $introductoryPricingDetailsDataType = '';
-    /**
-     * Identifier. Response only. Resource name of the subscription promotion. It
-     * will have the format of "partners/{partner_id}/promotion/{promotion_id}"
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. Specifies the type of the promotion.
-     *
-     * @var string
-     */
-    public $promotionType;
-    /**
-     * Output only. 2-letter ISO region code where the promotion is available in.
-     * Ex. "US" Please refers to: https://en.wikipedia.org/wiki/ISO_3166-1
-     *
-     * @var string[]
-     */
-    public $regionCodes;
-    /**
-     * Optional. Specifies the start time (inclusive) of the period that the
-     * promotion is available in.
-     *
-     * @var string
-     */
-    public $startTime;
-    protected $titlesType = GoogleTypeLocalizedText::class;
-    protected $titlesDataType = 'array';
-    /**
-     * Output only. The product ids this promotion can be applied to.
-     *
-     * @param string[] $applicableProducts
-     */
-    public function setApplicableProducts($applicableProducts)
+namespace Google\Service\PaymentsResellerSubscription {
+    class Promotion extends \Google\Collection
     {
+        /**
+         * The promotion type is unspecified.
+         */
+        public const PROMOTION_TYPE_PROMOTION_TYPE_UNSPECIFIED = 'PROMOTION_TYPE_UNSPECIFIED';
+        /**
+         * The promotion is a free trial.
+         */
+        public const PROMOTION_TYPE_PROMOTION_TYPE_FREE_TRIAL = 'PROMOTION_TYPE_FREE_TRIAL';
+        /**
+         * The promotion is a reduced introductory pricing.
+         */
+        public const PROMOTION_TYPE_PROMOTION_TYPE_INTRODUCTORY_PRICING = 'PROMOTION_TYPE_INTRODUCTORY_PRICING';
+        protected $collection_key = 'titles';
+        /**
+         * Output only. The product ids this promotion can be applied to.
+         *
+         * @var string[]
+         */
+        public $applicableProducts;
+        /**
+         * Optional. Specifies the end time (exclusive) of the period that the
+         * promotion is available in. If unset, the promotion is available
+         * indefinitely.
+         *
+         * @var string
+         */
+        public $endTime;
+        protected $freeTrialDurationType = Duration::class;
+        protected $freeTrialDurationDataType = '';
+        protected $introductoryPricingDetailsType = PromotionIntroductoryPricingDetails::class;
+        protected $introductoryPricingDetailsDataType = '';
+        /**
+         * Identifier. Response only. Resource name of the subscription promotion. It
+         * will have the format of "partners/{partner_id}/promotion/{promotion_id}"
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. Specifies the type of the promotion.
+         *
+         * @var string
+         */
+        public $promotionType;
+        /**
+         * Output only. 2-letter ISO region code where the promotion is available in.
+         * Ex. "US" Please refers to: https://en.wikipedia.org/wiki/ISO_3166-1
+         *
+         * @var string[]
+         */
+        public $regionCodes;
+        /**
+         * Optional. Specifies the start time (inclusive) of the period that the
+         * promotion is available in.
+         *
+         * @var string
+         */
+        public $startTime;
+        protected $titlesType = GoogleTypeLocalizedText::class;
+        protected $titlesDataType = 'array';
+        /**
+         * Output only. The product ids this promotion can be applied to.
+         *
+         * @param string[] $applicableProducts
+         */
+        public function setApplicableProducts($applicableProducts)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getApplicableProducts()
+        {
+        }
+        /**
+         * Optional. Specifies the end time (exclusive) of the period that the
+         * promotion is available in. If unset, the promotion is available
+         * indefinitely.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * Optional. Specifies the duration of the free trial of the subscription when
+         * promotion_type is PROMOTION_TYPE_FREE_TRIAL
+         *
+         * @param Duration $freeTrialDuration
+         */
+        public function setFreeTrialDuration(Duration $freeTrialDuration)
+        {
+        }
+        /**
+         * @return Duration
+         */
+        public function getFreeTrialDuration()
+        {
+        }
+        /**
+         * Optional. Specifies the introductory pricing details when the
+         * promotion_type is PROMOTION_TYPE_INTRODUCTORY_PRICING.
+         *
+         * @param PromotionIntroductoryPricingDetails $introductoryPricingDetails
+         */
+        public function setIntroductoryPricingDetails(PromotionIntroductoryPricingDetails $introductoryPricingDetails)
+        {
+        }
+        /**
+         * @return PromotionIntroductoryPricingDetails
+         */
+        public function getIntroductoryPricingDetails()
+        {
+        }
+        /**
+         * Identifier. Response only. Resource name of the subscription promotion. It
+         * will have the format of "partners/{partner_id}/promotion/{promotion_id}"
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. Specifies the type of the promotion.
+         *
+         * Accepted values: PROMOTION_TYPE_UNSPECIFIED, PROMOTION_TYPE_FREE_TRIAL,
+         * PROMOTION_TYPE_INTRODUCTORY_PRICING
+         *
+         * @param self::PROMOTION_TYPE_* $promotionType
+         */
+        public function setPromotionType($promotionType)
+        {
+        }
+        /**
+         * @return self::PROMOTION_TYPE_*
+         */
+        public function getPromotionType()
+        {
+        }
+        /**
+         * Output only. 2-letter ISO region code where the promotion is available in.
+         * Ex. "US" Please refers to: https://en.wikipedia.org/wiki/ISO_3166-1
+         *
+         * @param string[] $regionCodes
+         */
+        public function setRegionCodes($regionCodes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRegionCodes()
+        {
+        }
+        /**
+         * Optional. Specifies the start time (inclusive) of the period that the
+         * promotion is available in.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
+        /**
+         * Output only. Localized human readable name of the promotion.
+         *
+         * @param GoogleTypeLocalizedText[] $titles
+         */
+        public function setTitles($titles)
+        {
+        }
+        /**
+         * @return GoogleTypeLocalizedText[]
+         */
+        public function getTitles()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\PaymentsResellerSubscription\Promotion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApplicableProducts()
-    {
-    }
-    /**
-     * Optional. Specifies the end time (exclusive) of the period that the
-     * promotion is available in. If unset, the promotion is available
-     * indefinitely.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndTime()
-    {
-    }
-    /**
-     * Optional. Specifies the duration of the free trial of the subscription when
-     * promotion_type is PROMOTION_TYPE_FREE_TRIAL
-     *
-     * @param Duration $freeTrialDuration
-     */
-    public function setFreeTrialDuration(Duration $freeTrialDuration)
-    {
-    }
-    /**
-     * @return Duration
-     */
-    public function getFreeTrialDuration()
-    {
-    }
-    /**
-     * Optional. Specifies the introductory pricing details when the
-     * promotion_type is PROMOTION_TYPE_INTRODUCTORY_PRICING.
-     *
-     * @param PromotionIntroductoryPricingDetails $introductoryPricingDetails
-     */
-    public function setIntroductoryPricingDetails(PromotionIntroductoryPricingDetails $introductoryPricingDetails)
-    {
-    }
-    /**
-     * @return PromotionIntroductoryPricingDetails
-     */
-    public function getIntroductoryPricingDetails()
-    {
-    }
-    /**
-     * Identifier. Response only. Resource name of the subscription promotion. It
-     * will have the format of "partners/{partner_id}/promotion/{promotion_id}"
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. Specifies the type of the promotion.
-     *
-     * Accepted values: PROMOTION_TYPE_UNSPECIFIED, PROMOTION_TYPE_FREE_TRIAL,
-     * PROMOTION_TYPE_INTRODUCTORY_PRICING
-     *
-     * @param self::PROMOTION_TYPE_* $promotionType
-     */
-    public function setPromotionType($promotionType)
-    {
-    }
-    /**
-     * @return self::PROMOTION_TYPE_*
-     */
-    public function getPromotionType()
-    {
-    }
-    /**
-     * Output only. 2-letter ISO region code where the promotion is available in.
-     * Ex. "US" Please refers to: https://en.wikipedia.org/wiki/ISO_3166-1
-     *
-     * @param string[] $regionCodes
-     */
-    public function setRegionCodes($regionCodes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRegionCodes()
-    {
-    }
-    /**
-     * Optional. Specifies the start time (inclusive) of the period that the
-     * promotion is available in.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
-    {
-    }
-    /**
-     * Output only. Localized human readable name of the promotion.
-     *
-     * @param GoogleTypeLocalizedText[] $titles
-     */
-    public function setTitles($titles)
-    {
-    }
-    /**
-     * @return GoogleTypeLocalizedText[]
-     */
-    public function getTitles()
+    class Google_Service_PaymentsResellerSubscription_Promotion extends \Google\Service\PaymentsResellerSubscription\Promotion
     {
     }
 }

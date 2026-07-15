@@ -21,111 +21,120 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSupport;
-
-class Actor extends \Google\Model
-{
-    /**
-     * The name to display for the actor. If not provided, it is inferred from
-     * credentials supplied during case creation. When an email is provided, a
-     * display name must also be provided. This will be obfuscated if the user is
-     * a Google Support agent.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The email address of the actor. If not provided, it is inferred from the
-     * credentials supplied during case creation. When a name is provided, an
-     * email must also be provided. If the user is a Google Support agent, this is
-     * obfuscated. This field is deprecated. Use `username` instead.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $email;
-    /**
-     * Output only. Whether the actor is a Google support actor.
-     *
-     * @var bool
-     */
-    public $googleSupport;
-    /**
-     * Output only. The username of the actor. It may look like an email or other
-     * format provided by the identity provider. If not provided, it is inferred
-     * from the credentials supplied. When a name is provided, a username must
-     * also be provided. If the user is a Google Support agent, this will not be
-     * set.
-     *
-     * @var string
-     */
-    public $username;
-    /**
-     * The name to display for the actor. If not provided, it is inferred from
-     * credentials supplied during case creation. When an email is provided, a
-     * display name must also be provided. This will be obfuscated if the user is
-     * a Google Support agent.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\CloudSupport {
+    class Actor extends \Google\Model
     {
+        /**
+         * The name to display for the actor. If not provided, it is inferred from
+         * credentials supplied during case creation. When an email is provided, a
+         * display name must also be provided. This will be obfuscated if the user is
+         * a Google Support agent.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The email address of the actor. If not provided, it is inferred from the
+         * credentials supplied during case creation. When a name is provided, an
+         * email must also be provided. If the user is a Google Support agent, this is
+         * obfuscated. This field is deprecated. Use `username` instead.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $email;
+        /**
+         * Output only. Whether the actor is a Google support actor.
+         *
+         * @var bool
+         */
+        public $googleSupport;
+        /**
+         * Output only. The username of the actor. It may look like an email or other
+         * format provided by the identity provider. If not provided, it is inferred
+         * from the credentials supplied. When a name is provided, a username must
+         * also be provided. If the user is a Google Support agent, this will not be
+         * set.
+         *
+         * @var string
+         */
+        public $username;
+        /**
+         * The name to display for the actor. If not provided, it is inferred from
+         * credentials supplied during case creation. When an email is provided, a
+         * display name must also be provided. This will be obfuscated if the user is
+         * a Google Support agent.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The email address of the actor. If not provided, it is inferred from the
+         * credentials supplied during case creation. When a name is provided, an
+         * email must also be provided. If the user is a Google Support agent, this is
+         * obfuscated. This field is deprecated. Use `username` instead.
+         *
+         * @deprecated
+         * @param string $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
+        /**
+         * Output only. Whether the actor is a Google support actor.
+         *
+         * @param bool $googleSupport
+         */
+        public function setGoogleSupport($googleSupport)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getGoogleSupport()
+        {
+        }
+        /**
+         * Output only. The username of the actor. It may look like an email or other
+         * format provided by the identity provider. If not provided, it is inferred
+         * from the credentials supplied. When a name is provided, a username must
+         * also be provided. If the user is a Google Support agent, this will not be
+         * set.
+         *
+         * @param string $username
+         */
+        public function setUsername($username)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUsername()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSupport\Actor registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The email address of the actor. If not provided, it is inferred from the
-     * credentials supplied during case creation. When a name is provided, an
-     * email must also be provided. If the user is a Google Support agent, this is
-     * obfuscated. This field is deprecated. Use `username` instead.
-     *
-     * @deprecated
-     * @param string $email
-     */
-    public function setEmail($email)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getEmail()
-    {
-    }
-    /**
-     * Output only. Whether the actor is a Google support actor.
-     *
-     * @param bool $googleSupport
-     */
-    public function setGoogleSupport($googleSupport)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getGoogleSupport()
-    {
-    }
-    /**
-     * Output only. The username of the actor. It may look like an email or other
-     * format provided by the identity provider. If not provided, it is inferred
-     * from the credentials supplied. When a name is provided, a username must
-     * also be provided. If the user is a Google Support agent, this will not be
-     * set.
-     *
-     * @param string $username
-     */
-    public function setUsername($username)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUsername()
+    class Google_Service_CloudSupport_Actor extends \Google\Service\CloudSupport\Actor
     {
     }
 }

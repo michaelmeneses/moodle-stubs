@@ -8,6 +8,13 @@
  */
 namespace core_competency\reportbuilder\local\entities;
 
+use core\lang_string;
+use core_competency\{competency, user_competency};
+use core_reportbuilder\local\entities\base;
+use core_reportbuilder\local\filters\{boolean_select, select};
+use core_reportbuilder\local\helpers\format;
+use core_reportbuilder\local\report\{column, filter};
+use stdClass;
 /**
  * User competency entity
  *

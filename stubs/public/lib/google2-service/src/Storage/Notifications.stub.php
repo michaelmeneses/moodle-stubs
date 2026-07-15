@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storage;
-
-class Notifications extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    protected $itemsType = Notification::class;
-    protected $itemsDataType = 'array';
-    /**
-     * The kind of item this is. For lists of notifications, this is always
-     * storage#notifications.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The list of items.
-     *
-     * @param Notification[] $items
-     */
-    public function setItems($items)
+namespace Google\Service\Storage {
+    class Notifications extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        protected $itemsType = Notification::class;
+        protected $itemsDataType = 'array';
+        /**
+         * The kind of item this is. For lists of notifications, this is always
+         * storage#notifications.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The list of items.
+         *
+         * @param Notification[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return Notification[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * The kind of item this is. For lists of notifications, this is always
+         * storage#notifications.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Notification[]
+     * Runtime class alias of \Google\Service\Storage\Notifications registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItems()
-    {
-    }
-    /**
-     * The kind of item this is. For lists of notifications, this is always
-     * storage#notifications.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_Storage_Notifications extends \Google\Service\Storage\Notifications
     {
     }
 }

@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Backupdr;
-
-class FetchAccessTokenResponse extends \Google\Model
-{
-    /**
-     * The token is valid until this time.
-     *
-     * @var string
-     */
-    public $expireTime;
-    /**
-     * The location in bucket that can be used for reading.
-     *
-     * @var string
-     */
-    public $readLocation;
-    /**
-     * The downscoped token that was created.
-     *
-     * @var string
-     */
-    public $token;
-    /**
-     * The location in bucket that can be used for writing.
-     *
-     * @var string
-     */
-    public $writeLocation;
-    /**
-     * The token is valid until this time.
-     *
-     * @param string $expireTime
-     */
-    public function setExpireTime($expireTime)
+namespace Google\Service\Backupdr {
+    class FetchAccessTokenResponse extends \Google\Model
     {
+        /**
+         * The token is valid until this time.
+         *
+         * @var string
+         */
+        public $expireTime;
+        /**
+         * The location in bucket that can be used for reading.
+         *
+         * @var string
+         */
+        public $readLocation;
+        /**
+         * The downscoped token that was created.
+         *
+         * @var string
+         */
+        public $token;
+        /**
+         * The location in bucket that can be used for writing.
+         *
+         * @var string
+         */
+        public $writeLocation;
+        /**
+         * The token is valid until this time.
+         *
+         * @param string $expireTime
+         */
+        public function setExpireTime($expireTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpireTime()
+        {
+        }
+        /**
+         * The location in bucket that can be used for reading.
+         *
+         * @param string $readLocation
+         */
+        public function setReadLocation($readLocation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReadLocation()
+        {
+        }
+        /**
+         * The downscoped token that was created.
+         *
+         * @param string $token
+         */
+        public function setToken($token)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getToken()
+        {
+        }
+        /**
+         * The location in bucket that can be used for writing.
+         *
+         * @param string $writeLocation
+         */
+        public function setWriteLocation($writeLocation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWriteLocation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Backupdr\FetchAccessTokenResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExpireTime()
-    {
-    }
-    /**
-     * The location in bucket that can be used for reading.
-     *
-     * @param string $readLocation
-     */
-    public function setReadLocation($readLocation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReadLocation()
-    {
-    }
-    /**
-     * The downscoped token that was created.
-     *
-     * @param string $token
-     */
-    public function setToken($token)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getToken()
-    {
-    }
-    /**
-     * The location in bucket that can be used for writing.
-     *
-     * @param string $writeLocation
-     */
-    public function setWriteLocation($writeLocation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWriteLocation()
+    class Google_Service_Backupdr_FetchAccessTokenResponse extends \Google\Service\Backupdr\FetchAccessTokenResponse
     {
     }
 }

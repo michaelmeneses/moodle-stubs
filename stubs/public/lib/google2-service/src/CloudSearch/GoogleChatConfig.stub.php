@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class GoogleChatConfig extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $chatGroupId;
-    /**
-     * @param string
-     */
-    public function setChatGroupId($chatGroupId)
+namespace Google\Service\CloudSearch {
+    class GoogleChatConfig extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $chatGroupId;
+        /**
+         * @param string
+         */
+        public function setChatGroupId($chatGroupId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChatGroupId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\GoogleChatConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChatGroupId()
+    class Google_Service_CloudSearch_GoogleChatConfig extends \Google\Service\CloudSearch\GoogleChatConfig
     {
     }
 }

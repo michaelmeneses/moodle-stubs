@@ -21,93 +21,102 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class ValidationCheck extends \Google\Model
-{
-    /**
-     * Default value. Standard preflight validation check will be used.
-     */
-    public const OPTION_OPTIONS_UNSPECIFIED = 'OPTIONS_UNSPECIFIED';
-    /**
-     * Prevent failed preflight checks from failing.
-     */
-    public const OPTION_SKIP_VALIDATION_CHECK_BLOCKING = 'SKIP_VALIDATION_CHECK_BLOCKING';
-    /**
-     * Skip all preflight check validations.
-     */
-    public const OPTION_SKIP_VALIDATION_ALL = 'SKIP_VALIDATION_ALL';
-    /**
-     * Default value. This value is unused.
-     */
-    public const SCENARIO_SCENARIO_UNSPECIFIED = 'SCENARIO_UNSPECIFIED';
-    /**
-     * The validation check occurred during a create flow.
-     */
-    public const SCENARIO_CREATE = 'CREATE';
-    /**
-     * The validation check occurred during an update flow.
-     */
-    public const SCENARIO_UPDATE = 'UPDATE';
-    /**
-     * Options used for the validation check
-     *
-     * @var string
-     */
-    public $option;
-    /**
-     * Output only. The scenario when the preflight checks were run.
-     *
-     * @var string
-     */
-    public $scenario;
-    protected $statusType = ValidationCheckStatus::class;
-    protected $statusDataType = '';
-    /**
-     * Options used for the validation check
-     *
-     * Accepted values: OPTIONS_UNSPECIFIED, SKIP_VALIDATION_CHECK_BLOCKING,
-     * SKIP_VALIDATION_ALL
-     *
-     * @param self::OPTION_* $option
-     */
-    public function setOption($option)
+namespace Google\Service\GKEOnPrem {
+    class ValidationCheck extends \Google\Model
     {
+        /**
+         * Default value. Standard preflight validation check will be used.
+         */
+        public const OPTION_OPTIONS_UNSPECIFIED = 'OPTIONS_UNSPECIFIED';
+        /**
+         * Prevent failed preflight checks from failing.
+         */
+        public const OPTION_SKIP_VALIDATION_CHECK_BLOCKING = 'SKIP_VALIDATION_CHECK_BLOCKING';
+        /**
+         * Skip all preflight check validations.
+         */
+        public const OPTION_SKIP_VALIDATION_ALL = 'SKIP_VALIDATION_ALL';
+        /**
+         * Default value. This value is unused.
+         */
+        public const SCENARIO_SCENARIO_UNSPECIFIED = 'SCENARIO_UNSPECIFIED';
+        /**
+         * The validation check occurred during a create flow.
+         */
+        public const SCENARIO_CREATE = 'CREATE';
+        /**
+         * The validation check occurred during an update flow.
+         */
+        public const SCENARIO_UPDATE = 'UPDATE';
+        /**
+         * Options used for the validation check
+         *
+         * @var string
+         */
+        public $option;
+        /**
+         * Output only. The scenario when the preflight checks were run.
+         *
+         * @var string
+         */
+        public $scenario;
+        protected $statusType = ValidationCheckStatus::class;
+        protected $statusDataType = '';
+        /**
+         * Options used for the validation check
+         *
+         * Accepted values: OPTIONS_UNSPECIFIED, SKIP_VALIDATION_CHECK_BLOCKING,
+         * SKIP_VALIDATION_ALL
+         *
+         * @param self::OPTION_* $option
+         */
+        public function setOption($option)
+        {
+        }
+        /**
+         * @return self::OPTION_*
+         */
+        public function getOption()
+        {
+        }
+        /**
+         * Output only. The scenario when the preflight checks were run.
+         *
+         * Accepted values: SCENARIO_UNSPECIFIED, CREATE, UPDATE
+         *
+         * @param self::SCENARIO_* $scenario
+         */
+        public function setScenario($scenario)
+        {
+        }
+        /**
+         * @return self::SCENARIO_*
+         */
+        public function getScenario()
+        {
+        }
+        /**
+         * Output only. The detailed validation check status.
+         *
+         * @param ValidationCheckStatus $status
+         */
+        public function setStatus(ValidationCheckStatus $status)
+        {
+        }
+        /**
+         * @return ValidationCheckStatus
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::OPTION_*
+     * Runtime class alias of \Google\Service\GKEOnPrem\ValidationCheck registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOption()
-    {
-    }
-    /**
-     * Output only. The scenario when the preflight checks were run.
-     *
-     * Accepted values: SCENARIO_UNSPECIFIED, CREATE, UPDATE
-     *
-     * @param self::SCENARIO_* $scenario
-     */
-    public function setScenario($scenario)
-    {
-    }
-    /**
-     * @return self::SCENARIO_*
-     */
-    public function getScenario()
-    {
-    }
-    /**
-     * Output only. The detailed validation check status.
-     *
-     * @param ValidationCheckStatus $status
-     */
-    public function setStatus(ValidationCheckStatus $status)
-    {
-    }
-    /**
-     * @return ValidationCheckStatus
-     */
-    public function getStatus()
+    class Google_Service_GKEOnPrem_ValidationCheck extends \Google\Service\GKEOnPrem\ValidationCheck
     {
     }
 }

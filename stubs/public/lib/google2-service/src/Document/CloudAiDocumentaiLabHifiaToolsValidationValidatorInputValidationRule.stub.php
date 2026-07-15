@@ -21,138 +21,147 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRule extends \Google\Model
-{
-    protected $childAlignmentRuleType = CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleChildAlignmentRule::class;
-    protected $childAlignmentRuleDataType = '';
-    /**
-     * Description of the validation rule. This has no use but for documentation
-     *
-     * @var string
-     */
-    public $description;
-    protected $entityAlignmentRuleType = CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleEntityAlignmentRule::class;
-    protected $entityAlignmentRuleDataType = '';
-    protected $fieldOccurrencesType = CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleFieldOccurrences::class;
-    protected $fieldOccurrencesDataType = '';
-    protected $fieldRegexType = CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleFieldRegex::class;
-    protected $fieldRegexDataType = '';
-    protected $formValidationType = CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleFormValidation::class;
-    protected $formValidationDataType = '';
-    /**
-     * Name of the validation rule.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Unique identifier of the rule. Optional.
-     *
-     * @var string
-     */
-    public $ruleId;
-    /**
-     * @param CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleChildAlignmentRule $childAlignmentRule
-     */
-    public function setChildAlignmentRule(CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleChildAlignmentRule $childAlignmentRule)
+namespace Google\Service\Document {
+    class CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRule extends \Google\Model
     {
+        protected $childAlignmentRuleType = CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleChildAlignmentRule::class;
+        protected $childAlignmentRuleDataType = '';
+        /**
+         * Description of the validation rule. This has no use but for documentation
+         *
+         * @var string
+         */
+        public $description;
+        protected $entityAlignmentRuleType = CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleEntityAlignmentRule::class;
+        protected $entityAlignmentRuleDataType = '';
+        protected $fieldOccurrencesType = CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleFieldOccurrences::class;
+        protected $fieldOccurrencesDataType = '';
+        protected $fieldRegexType = CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleFieldRegex::class;
+        protected $fieldRegexDataType = '';
+        protected $formValidationType = CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleFormValidation::class;
+        protected $formValidationDataType = '';
+        /**
+         * Name of the validation rule.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Unique identifier of the rule. Optional.
+         *
+         * @var string
+         */
+        public $ruleId;
+        /**
+         * @param CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleChildAlignmentRule $childAlignmentRule
+         */
+        public function setChildAlignmentRule(CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleChildAlignmentRule $childAlignmentRule)
+        {
+        }
+        /**
+         * @return CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleChildAlignmentRule
+         */
+        public function getChildAlignmentRule()
+        {
+        }
+        /**
+         * Description of the validation rule. This has no use but for documentation
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * @param CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleEntityAlignmentRule $entityAlignmentRule
+         */
+        public function setEntityAlignmentRule(CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleEntityAlignmentRule $entityAlignmentRule)
+        {
+        }
+        /**
+         * @return CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleEntityAlignmentRule
+         */
+        public function getEntityAlignmentRule()
+        {
+        }
+        /**
+         * @param CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleFieldOccurrences $fieldOccurrences
+         */
+        public function setFieldOccurrences(CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleFieldOccurrences $fieldOccurrences)
+        {
+        }
+        /**
+         * @return CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleFieldOccurrences
+         */
+        public function getFieldOccurrences()
+        {
+        }
+        /**
+         * @param CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleFieldRegex $fieldRegex
+         */
+        public function setFieldRegex(CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleFieldRegex $fieldRegex)
+        {
+        }
+        /**
+         * @return CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleFieldRegex
+         */
+        public function getFieldRegex()
+        {
+        }
+        /**
+         * @param CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleFormValidation $formValidation
+         */
+        public function setFormValidation(CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleFormValidation $formValidation)
+        {
+        }
+        /**
+         * @return CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleFormValidation
+         */
+        public function getFormValidation()
+        {
+        }
+        /**
+         * Name of the validation rule.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Unique identifier of the rule. Optional.
+         *
+         * @param string $ruleId
+         */
+        public function setRuleId($ruleId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRuleId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleChildAlignmentRule
+     * Runtime class alias of \Google\Service\Document\CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChildAlignmentRule()
-    {
-    }
-    /**
-     * Description of the validation rule. This has no use but for documentation
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * @param CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleEntityAlignmentRule $entityAlignmentRule
-     */
-    public function setEntityAlignmentRule(CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleEntityAlignmentRule $entityAlignmentRule)
-    {
-    }
-    /**
-     * @return CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleEntityAlignmentRule
-     */
-    public function getEntityAlignmentRule()
-    {
-    }
-    /**
-     * @param CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleFieldOccurrences $fieldOccurrences
-     */
-    public function setFieldOccurrences(CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleFieldOccurrences $fieldOccurrences)
-    {
-    }
-    /**
-     * @return CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleFieldOccurrences
-     */
-    public function getFieldOccurrences()
-    {
-    }
-    /**
-     * @param CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleFieldRegex $fieldRegex
-     */
-    public function setFieldRegex(CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleFieldRegex $fieldRegex)
-    {
-    }
-    /**
-     * @return CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleFieldRegex
-     */
-    public function getFieldRegex()
-    {
-    }
-    /**
-     * @param CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleFormValidation $formValidation
-     */
-    public function setFormValidation(CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleFormValidation $formValidation)
-    {
-    }
-    /**
-     * @return CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleFormValidation
-     */
-    public function getFormValidation()
-    {
-    }
-    /**
-     * Name of the validation rule.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Unique identifier of the rule. Optional.
-     *
-     * @param string $ruleId
-     */
-    public function setRuleId($ruleId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRuleId()
+    class Google_Service_Document_CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRule extends \Google\Service\Document\CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRule
     {
     }
 }

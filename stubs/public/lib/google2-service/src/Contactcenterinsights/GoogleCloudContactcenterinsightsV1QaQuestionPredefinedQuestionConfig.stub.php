@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1QaQuestionPredefinedQuestionConfig extends \Google\Model
-{
-    /**
-     * The type of the predefined question is unspecified.
-     */
-    public const TYPE_PREDEFINED_QUESTION_TYPE_UNSPECIFIED = 'PREDEFINED_QUESTION_TYPE_UNSPECIFIED';
-    /**
-     * A prebuilt classifier classfying the outcome of the conversation. For
-     * example, if the customer issue mentioned in a conversation has been
-     * resolved or not.
-     */
-    public const TYPE_CONVERSATION_OUTCOME = 'CONVERSATION_OUTCOME';
-    /**
-     * A prebuilt classifier classfying the initiator of the conversation
-     * escalation. For example, if it was initiated by the customer or the agent.
-     */
-    public const TYPE_CONVERSATION_OUTCOME_ESCALATION_INITIATOR_ROLE = 'CONVERSATION_OUTCOME_ESCALATION_INITIATOR_ROLE';
-    /**
-     * The type of the predefined question.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The type of the predefined question.
-     *
-     * Accepted values: PREDEFINED_QUESTION_TYPE_UNSPECIFIED,
-     * CONVERSATION_OUTCOME, CONVERSATION_OUTCOME_ESCALATION_INITIATOR_ROLE
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1QaQuestionPredefinedQuestionConfig extends \Google\Model
     {
+        /**
+         * The type of the predefined question is unspecified.
+         */
+        public const TYPE_PREDEFINED_QUESTION_TYPE_UNSPECIFIED = 'PREDEFINED_QUESTION_TYPE_UNSPECIFIED';
+        /**
+         * A prebuilt classifier classfying the outcome of the conversation. For
+         * example, if the customer issue mentioned in a conversation has been
+         * resolved or not.
+         */
+        public const TYPE_CONVERSATION_OUTCOME = 'CONVERSATION_OUTCOME';
+        /**
+         * A prebuilt classifier classfying the initiator of the conversation
+         * escalation. For example, if it was initiated by the customer or the agent.
+         */
+        public const TYPE_CONVERSATION_OUTCOME_ESCALATION_INITIATOR_ROLE = 'CONVERSATION_OUTCOME_ESCALATION_INITIATOR_ROLE';
+        /**
+         * The type of the predefined question.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The type of the predefined question.
+         *
+         * Accepted values: PREDEFINED_QUESTION_TYPE_UNSPECIFIED,
+         * CONVERSATION_OUTCOME, CONVERSATION_OUTCOME_ESCALATION_INITIATOR_ROLE
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::TYPE_*
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1QaQuestionPredefinedQuestionConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getType()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1QaQuestionPredefinedQuestionConfig extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1QaQuestionPredefinedQuestionConfig
     {
     }
 }

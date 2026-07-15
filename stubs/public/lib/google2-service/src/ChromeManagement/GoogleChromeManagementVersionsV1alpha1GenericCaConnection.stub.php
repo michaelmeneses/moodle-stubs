@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementVersionsV1alpha1GenericCaConnection extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $caConnectionAdapterConfigReference;
-    /**
-     * @param string
-     */
-    public function setCaConnectionAdapterConfigReference($caConnectionAdapterConfigReference)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementVersionsV1alpha1GenericCaConnection extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $caConnectionAdapterConfigReference;
+        /**
+         * @param string
+         */
+        public function setCaConnectionAdapterConfigReference($caConnectionAdapterConfigReference)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCaConnectionAdapterConfigReference()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1alpha1GenericCaConnection registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCaConnectionAdapterConfigReference()
+    class Google_Service_ChromeManagement_GoogleChromeManagementVersionsV1alpha1GenericCaConnection extends \Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1alpha1GenericCaConnection
     {
     }
 }

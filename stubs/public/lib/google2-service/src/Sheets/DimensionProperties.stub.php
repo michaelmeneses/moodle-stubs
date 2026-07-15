@@ -21,101 +21,110 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class DimensionProperties extends \Google\Collection
-{
-    protected $collection_key = 'developerMetadata';
-    protected $dataSourceColumnReferenceType = DataSourceColumnReference::class;
-    protected $dataSourceColumnReferenceDataType = '';
-    protected $developerMetadataType = DeveloperMetadata::class;
-    protected $developerMetadataDataType = 'array';
-    /**
-     * True if this dimension is being filtered. This field is read-only.
-     *
-     * @var bool
-     */
-    public $hiddenByFilter;
-    /**
-     * True if this dimension is explicitly hidden.
-     *
-     * @var bool
-     */
-    public $hiddenByUser;
-    /**
-     * The height (if a row) or width (if a column) of the dimension in pixels.
-     *
-     * @var int
-     */
-    public $pixelSize;
-    /**
-     * Output only. If set, this is a column in a data source sheet.
-     *
-     * @param DataSourceColumnReference $dataSourceColumnReference
-     */
-    public function setDataSourceColumnReference(DataSourceColumnReference $dataSourceColumnReference)
+namespace Google\Service\Sheets {
+    class DimensionProperties extends \Google\Collection
     {
+        protected $collection_key = 'developerMetadata';
+        protected $dataSourceColumnReferenceType = DataSourceColumnReference::class;
+        protected $dataSourceColumnReferenceDataType = '';
+        protected $developerMetadataType = DeveloperMetadata::class;
+        protected $developerMetadataDataType = 'array';
+        /**
+         * True if this dimension is being filtered. This field is read-only.
+         *
+         * @var bool
+         */
+        public $hiddenByFilter;
+        /**
+         * True if this dimension is explicitly hidden.
+         *
+         * @var bool
+         */
+        public $hiddenByUser;
+        /**
+         * The height (if a row) or width (if a column) of the dimension in pixels.
+         *
+         * @var int
+         */
+        public $pixelSize;
+        /**
+         * Output only. If set, this is a column in a data source sheet.
+         *
+         * @param DataSourceColumnReference $dataSourceColumnReference
+         */
+        public function setDataSourceColumnReference(DataSourceColumnReference $dataSourceColumnReference)
+        {
+        }
+        /**
+         * @return DataSourceColumnReference
+         */
+        public function getDataSourceColumnReference()
+        {
+        }
+        /**
+         * The developer metadata associated with a single row or column.
+         *
+         * @param DeveloperMetadata[] $developerMetadata
+         */
+        public function setDeveloperMetadata($developerMetadata)
+        {
+        }
+        /**
+         * @return DeveloperMetadata[]
+         */
+        public function getDeveloperMetadata()
+        {
+        }
+        /**
+         * True if this dimension is being filtered. This field is read-only.
+         *
+         * @param bool $hiddenByFilter
+         */
+        public function setHiddenByFilter($hiddenByFilter)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getHiddenByFilter()
+        {
+        }
+        /**
+         * True if this dimension is explicitly hidden.
+         *
+         * @param bool $hiddenByUser
+         */
+        public function setHiddenByUser($hiddenByUser)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getHiddenByUser()
+        {
+        }
+        /**
+         * The height (if a row) or width (if a column) of the dimension in pixels.
+         *
+         * @param int $pixelSize
+         */
+        public function setPixelSize($pixelSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPixelSize()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DataSourceColumnReference
+     * Runtime class alias of \Google\Service\Sheets\DimensionProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataSourceColumnReference()
-    {
-    }
-    /**
-     * The developer metadata associated with a single row or column.
-     *
-     * @param DeveloperMetadata[] $developerMetadata
-     */
-    public function setDeveloperMetadata($developerMetadata)
-    {
-    }
-    /**
-     * @return DeveloperMetadata[]
-     */
-    public function getDeveloperMetadata()
-    {
-    }
-    /**
-     * True if this dimension is being filtered. This field is read-only.
-     *
-     * @param bool $hiddenByFilter
-     */
-    public function setHiddenByFilter($hiddenByFilter)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getHiddenByFilter()
-    {
-    }
-    /**
-     * True if this dimension is explicitly hidden.
-     *
-     * @param bool $hiddenByUser
-     */
-    public function setHiddenByUser($hiddenByUser)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getHiddenByUser()
-    {
-    }
-    /**
-     * The height (if a row) or width (if a column) of the dimension in pixels.
-     *
-     * @param int $pixelSize
-     */
-    public function setPixelSize($pixelSize)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPixelSize()
+    class Google_Service_Sheets_DimensionProperties extends \Google\Service\Sheets\DimensionProperties
     {
     }
 }

@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class EmbeddedTask extends \Google\Model
-{
-    /**
-     * User annotations. See https://google.aip.dev/128#annotations
-     *
-     * @var string[]
-     */
-    public $annotations;
-    protected $taskSpecType = TaskSpec::class;
-    protected $taskSpecDataType = '';
-    /**
-     * User annotations. See https://google.aip.dev/128#annotations
-     *
-     * @param string[] $annotations
-     */
-    public function setAnnotations($annotations)
+namespace Google\Service\CloudBuild {
+    class EmbeddedTask extends \Google\Model
     {
+        /**
+         * User annotations. See https://google.aip.dev/128#annotations
+         *
+         * @var string[]
+         */
+        public $annotations;
+        protected $taskSpecType = TaskSpec::class;
+        protected $taskSpecDataType = '';
+        /**
+         * User annotations. See https://google.aip.dev/128#annotations
+         *
+         * @param string[] $annotations
+         */
+        public function setAnnotations($annotations)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAnnotations()
+        {
+        }
+        /**
+         * Spec to instantiate this TaskRun.
+         *
+         * @param TaskSpec $taskSpec
+         */
+        public function setTaskSpec(TaskSpec $taskSpec)
+        {
+        }
+        /**
+         * @return TaskSpec
+         */
+        public function getTaskSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudBuild\EmbeddedTask registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotations()
-    {
-    }
-    /**
-     * Spec to instantiate this TaskRun.
-     *
-     * @param TaskSpec $taskSpec
-     */
-    public function setTaskSpec(TaskSpec $taskSpec)
-    {
-    }
-    /**
-     * @return TaskSpec
-     */
-    public function getTaskSpec()
+    class Google_Service_CloudBuild_EmbeddedTask extends \Google\Service\CloudBuild\EmbeddedTask
     {
     }
 }

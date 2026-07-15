@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class SdfDownloadTask extends \Google\Model
-{
-    /**
-     * A resource name to be used in media.download to Download the prepared
-     * files. Resource names have the format
-     * `download/sdfdownloadtasks/media/{media_id}`. `media_id` will be made
-     * available by the long running operation service once the task status is
-     * done.
-     *
-     * @var string
-     */
-    public $resourceName;
-    /**
-     * A resource name to be used in media.download to Download the prepared
-     * files. Resource names have the format
-     * `download/sdfdownloadtasks/media/{media_id}`. `media_id` will be made
-     * available by the long running operation service once the task status is
-     * done.
-     *
-     * @param string $resourceName
-     */
-    public function setResourceName($resourceName)
+namespace Google\Service\DisplayVideo {
+    class SdfDownloadTask extends \Google\Model
     {
+        /**
+         * A resource name to be used in media.download to Download the prepared
+         * files. Resource names have the format
+         * `download/sdfdownloadtasks/media/{media_id}`. `media_id` will be made
+         * available by the long running operation service once the task status is
+         * done.
+         *
+         * @var string
+         */
+        public $resourceName;
+        /**
+         * A resource name to be used in media.download to Download the prepared
+         * files. Resource names have the format
+         * `download/sdfdownloadtasks/media/{media_id}`. `media_id` will be made
+         * available by the long running operation service once the task status is
+         * done.
+         *
+         * @param string $resourceName
+         */
+        public function setResourceName($resourceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\SdfDownloadTask registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResourceName()
+    class Google_Service_DisplayVideo_SdfDownloadTask extends \Google\Service\DisplayVideo\SdfDownloadTask
     {
     }
 }

@@ -21,63 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudComposer;
-
-class ConfigConflict extends \Google\Model
-{
-    /**
-     * Conflict type is unknown.
-     */
-    public const TYPE_CONFLICT_TYPE_UNSPECIFIED = 'CONFLICT_TYPE_UNSPECIFIED';
-    /**
-     * Conflict is blocking, the upgrade would fail.
-     */
-    public const TYPE_BLOCKING = 'BLOCKING';
-    /**
-     * Conflict is non-blocking. The upgrade would succeed, but the environment
-     * configuration would be changed.
-     */
-    public const TYPE_NON_BLOCKING = 'NON_BLOCKING';
-    /**
-     * Conflict message.
-     *
-     * @var string
-     */
-    public $message;
-    /**
-     * Conflict type. It can be blocking or non-blocking.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Conflict message.
-     *
-     * @param string $message
-     */
-    public function setMessage($message)
+namespace Google\Service\CloudComposer {
+    class ConfigConflict extends \Google\Model
     {
+        /**
+         * Conflict type is unknown.
+         */
+        public const TYPE_CONFLICT_TYPE_UNSPECIFIED = 'CONFLICT_TYPE_UNSPECIFIED';
+        /**
+         * Conflict is blocking, the upgrade would fail.
+         */
+        public const TYPE_BLOCKING = 'BLOCKING';
+        /**
+         * Conflict is non-blocking. The upgrade would succeed, but the environment
+         * configuration would be changed.
+         */
+        public const TYPE_NON_BLOCKING = 'NON_BLOCKING';
+        /**
+         * Conflict message.
+         *
+         * @var string
+         */
+        public $message;
+        /**
+         * Conflict type. It can be blocking or non-blocking.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Conflict message.
+         *
+         * @param string $message
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
+        /**
+         * Conflict type. It can be blocking or non-blocking.
+         *
+         * Accepted values: CONFLICT_TYPE_UNSPECIFIED, BLOCKING, NON_BLOCKING
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudComposer\ConfigConflict registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMessage()
-    {
-    }
-    /**
-     * Conflict type. It can be blocking or non-blocking.
-     *
-     * Accepted values: CONFLICT_TYPE_UNSPECIFIED, BLOCKING, NON_BLOCKING
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_CloudComposer_ConfigConflict extends \Google\Service\CloudComposer\ConfigConflict
     {
     }
 }

@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementV1GraphicsStatusReport extends \Google\Collection
-{
-    protected $collection_key = 'displays';
-    protected $displaysType = GoogleChromeManagementV1DisplayInfo::class;
-    protected $displaysDataType = 'array';
-    /**
-     * Output only. Time at which the graphics data was reported.
-     *
-     * @var string
-     */
-    public $reportTime;
-    /**
-     * Output only. Information about the displays for the device.
-     *
-     * @param GoogleChromeManagementV1DisplayInfo[] $displays
-     */
-    public function setDisplays($displays)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementV1GraphicsStatusReport extends \Google\Collection
     {
+        protected $collection_key = 'displays';
+        protected $displaysType = GoogleChromeManagementV1DisplayInfo::class;
+        protected $displaysDataType = 'array';
+        /**
+         * Output only. Time at which the graphics data was reported.
+         *
+         * @var string
+         */
+        public $reportTime;
+        /**
+         * Output only. Information about the displays for the device.
+         *
+         * @param GoogleChromeManagementV1DisplayInfo[] $displays
+         */
+        public function setDisplays($displays)
+        {
+        }
+        /**
+         * @return GoogleChromeManagementV1DisplayInfo[]
+         */
+        public function getDisplays()
+        {
+        }
+        /**
+         * Output only. Time at which the graphics data was reported.
+         *
+         * @param string $reportTime
+         */
+        public function setReportTime($reportTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReportTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleChromeManagementV1DisplayInfo[]
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementV1GraphicsStatusReport registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplays()
-    {
-    }
-    /**
-     * Output only. Time at which the graphics data was reported.
-     *
-     * @param string $reportTime
-     */
-    public function setReportTime($reportTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReportTime()
+    class Google_Service_ChromeManagement_GoogleChromeManagementV1GraphicsStatusReport extends \Google\Service\ChromeManagement\GoogleChromeManagementV1GraphicsStatusReport
     {
     }
 }

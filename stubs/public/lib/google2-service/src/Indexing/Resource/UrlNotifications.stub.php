@@ -21,42 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Indexing\Resource;
-
-/**
- * The "urlNotifications" collection of methods.
- * Typical usage is:
- *  <code>
- *   $indexingService = new Google\Service\Indexing(...);
- *   $urlNotifications = $indexingService->urlNotifications;
- *  </code>
- */
-class UrlNotifications extends \Google\Service\Resource
-{
+namespace Google\Service\Indexing\Resource {
+    use Google\Service\Indexing\PublishUrlNotificationResponse;
+    use Google\Service\Indexing\UrlNotification;
+    use Google\Service\Indexing\UrlNotificationMetadata;
     /**
-     * Gets metadata about a Web Document. This method can _only_ be used to query
-     * URLs that were previously seen in successful Indexing API notifications.
-     * Includes the latest `UrlNotification` received via this API.
-     * (urlNotifications.getMetadata)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string url URL that is being queried.
-     * @return UrlNotificationMetadata
-     * @throws \Google\Service\Exception
+     * The "urlNotifications" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $indexingService = new Google\Service\Indexing(...);
+     *   $urlNotifications = $indexingService->urlNotifications;
+     *  </code>
      */
-    public function getMetadata($optParams = [])
+    class UrlNotifications extends \Google\Service\Resource
     {
+        /**
+         * Gets metadata about a Web Document. This method can _only_ be used to query
+         * URLs that were previously seen in successful Indexing API notifications.
+         * Includes the latest `UrlNotification` received via this API.
+         * (urlNotifications.getMetadata)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string url URL that is being queried.
+         * @return UrlNotificationMetadata
+         * @throws \Google\Service\Exception
+         */
+        public function getMetadata($optParams = [])
+        {
+        }
+        /**
+         * Notifies that a URL has been updated or deleted. (urlNotifications.publish)
+         *
+         * @param UrlNotification $postBody
+         * @param array $optParams Optional parameters.
+         * @return PublishUrlNotificationResponse
+         * @throws \Google\Service\Exception
+         */
+        public function publish(UrlNotification $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Notifies that a URL has been updated or deleted. (urlNotifications.publish)
-     *
-     * @param UrlNotification $postBody
-     * @param array $optParams Optional parameters.
-     * @return PublishUrlNotificationResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Indexing\Resource\UrlNotifications registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function publish(UrlNotification $postBody, $optParams = [])
+    class Google_Service_Indexing_Resource_UrlNotifications extends \Google\Service\Indexing\Resource\UrlNotifications
     {
     }
 }

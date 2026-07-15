@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class OrderRefund extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $actor;
-    protected $amountType = Price::class;
-    protected $amountDataType = '';
-    /**
-     * @var string
-     */
-    public $creationDate;
-    /**
-     * @var string
-     */
-    public $reason;
-    /**
-     * @var string
-     */
-    public $reasonText;
-    /**
-     * @param string
-     */
-    public function setActor($actor)
+namespace Google\Service\ShoppingContent {
+    class OrderRefund extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $actor;
+        protected $amountType = Price::class;
+        protected $amountDataType = '';
+        /**
+         * @var string
+         */
+        public $creationDate;
+        /**
+         * @var string
+         */
+        public $reason;
+        /**
+         * @var string
+         */
+        public $reasonText;
+        /**
+         * @param string
+         */
+        public function setActor($actor)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getActor()
+        {
+        }
+        /**
+         * @param Price
+         */
+        public function setAmount(Price $amount)
+        {
+        }
+        /**
+         * @return Price
+         */
+        public function getAmount()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCreationDate($creationDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreationDate()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReason($reason)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReason()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReasonText($reasonText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReasonText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\OrderRefund registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActor()
-    {
-    }
-    /**
-     * @param Price
-     */
-    public function setAmount(Price $amount)
-    {
-    }
-    /**
-     * @return Price
-     */
-    public function getAmount()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCreationDate($creationDate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreationDate()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReason($reason)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReason()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReasonText($reasonText)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReasonText()
+    class Google_Service_ShoppingContent_OrderRefund extends \Google\Service\ShoppingContent\OrderRefund
     {
     }
 }

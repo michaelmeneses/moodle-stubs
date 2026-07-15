@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaExecuteTestCaseRequest extends \Google\Model
-{
-    protected $inputParametersType = GoogleCloudIntegrationsV1alphaValueType::class;
-    protected $inputParametersDataType = 'map';
-    /**
-     * Optional. Input parameters used by test case execution.
-     *
-     * @param GoogleCloudIntegrationsV1alphaValueType[] $inputParameters
-     */
-    public function setInputParameters($inputParameters)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaExecuteTestCaseRequest extends \Google\Model
     {
+        protected $inputParametersType = GoogleCloudIntegrationsV1alphaValueType::class;
+        protected $inputParametersDataType = 'map';
+        /**
+         * Optional. Input parameters used by test case execution.
+         *
+         * @param GoogleCloudIntegrationsV1alphaValueType[] $inputParameters
+         */
+        public function setInputParameters($inputParameters)
+        {
+        }
+        /**
+         * @return GoogleCloudIntegrationsV1alphaValueType[]
+         */
+        public function getInputParameters()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudIntegrationsV1alphaValueType[]
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaExecuteTestCaseRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInputParameters()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaExecuteTestCaseRequest extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaExecuteTestCaseRequest
     {
     }
 }

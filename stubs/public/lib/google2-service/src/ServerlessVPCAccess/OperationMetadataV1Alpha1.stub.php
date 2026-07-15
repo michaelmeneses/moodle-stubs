@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServerlessVPCAccess;
-
-class OperationMetadataV1Alpha1 extends \Google\Model
-{
-    /**
-     * Output only. Time when the operation completed.
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * Output only. Time when the operation was created.
-     *
-     * @var string
-     */
-    public $insertTime;
-    /**
-     * Output only. Method that initiated the operation e.g.
-     * google.cloud.vpcaccess.v1alpha1.Connectors.CreateConnector.
-     *
-     * @var string
-     */
-    public $method;
-    /**
-     * Output only. Name of the resource that this operation is acting on e.g.
-     * projects/my-project/locations/us-central1/connectors/v1.
-     *
-     * @var string
-     */
-    public $target;
-    /**
-     * Output only. Time when the operation completed.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
+namespace Google\Service\ServerlessVPCAccess {
+    class OperationMetadataV1Alpha1 extends \Google\Model
     {
+        /**
+         * Output only. Time when the operation completed.
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * Output only. Time when the operation was created.
+         *
+         * @var string
+         */
+        public $insertTime;
+        /**
+         * Output only. Method that initiated the operation e.g.
+         * google.cloud.vpcaccess.v1alpha1.Connectors.CreateConnector.
+         *
+         * @var string
+         */
+        public $method;
+        /**
+         * Output only. Name of the resource that this operation is acting on e.g.
+         * projects/my-project/locations/us-central1/connectors/v1.
+         *
+         * @var string
+         */
+        public $target;
+        /**
+         * Output only. Time when the operation completed.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * Output only. Time when the operation was created.
+         *
+         * @param string $insertTime
+         */
+        public function setInsertTime($insertTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInsertTime()
+        {
+        }
+        /**
+         * Output only. Method that initiated the operation e.g.
+         * google.cloud.vpcaccess.v1alpha1.Connectors.CreateConnector.
+         *
+         * @param string $method
+         */
+        public function setMethod($method)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMethod()
+        {
+        }
+        /**
+         * Output only. Name of the resource that this operation is acting on e.g.
+         * projects/my-project/locations/us-central1/connectors/v1.
+         *
+         * @param string $target
+         */
+        public function setTarget($target)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTarget()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ServerlessVPCAccess\OperationMetadataV1Alpha1 registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndTime()
-    {
-    }
-    /**
-     * Output only. Time when the operation was created.
-     *
-     * @param string $insertTime
-     */
-    public function setInsertTime($insertTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInsertTime()
-    {
-    }
-    /**
-     * Output only. Method that initiated the operation e.g.
-     * google.cloud.vpcaccess.v1alpha1.Connectors.CreateConnector.
-     *
-     * @param string $method
-     */
-    public function setMethod($method)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMethod()
-    {
-    }
-    /**
-     * Output only. Name of the resource that this operation is acting on e.g.
-     * projects/my-project/locations/us-central1/connectors/v1.
-     *
-     * @param string $target
-     */
-    public function setTarget($target)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTarget()
+    class Google_Service_ServerlessVPCAccess_OperationMetadataV1Alpha1 extends \Google\Service\ServerlessVPCAccess\OperationMetadataV1Alpha1
     {
     }
 }

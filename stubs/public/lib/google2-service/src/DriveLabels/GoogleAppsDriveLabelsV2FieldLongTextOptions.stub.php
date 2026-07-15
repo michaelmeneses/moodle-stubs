@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveLabels;
-
-class GoogleAppsDriveLabelsV2FieldLongTextOptions extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $maxLength;
-    /**
-     * @var int
-     */
-    public $minLength;
-    /**
-     * @param int
-     */
-    public function setMaxLength($maxLength)
+namespace Google\Service\DriveLabels {
+    class GoogleAppsDriveLabelsV2FieldLongTextOptions extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $maxLength;
+        /**
+         * @var int
+         */
+        public $minLength;
+        /**
+         * @param int
+         */
+        public function setMaxLength($maxLength)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxLength()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setMinLength($minLength)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMinLength()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2FieldLongTextOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaxLength()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setMinLength($minLength)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMinLength()
+    class Google_Service_DriveLabels_GoogleAppsDriveLabelsV2FieldLongTextOptions extends \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2FieldLongTextOptions
     {
     }
 }

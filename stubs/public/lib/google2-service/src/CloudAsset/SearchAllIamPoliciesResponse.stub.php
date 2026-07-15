@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class SearchAllIamPoliciesResponse extends \Google\Collection
-{
-    protected $collection_key = 'results';
-    /**
-     * Set if there are more results than those appearing in this response; to get
-     * the next set of results, call this method again, using this value as the
-     * `page_token`.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $resultsType = IamPolicySearchResult::class;
-    protected $resultsDataType = 'array';
-    /**
-     * Set if there are more results than those appearing in this response; to get
-     * the next set of results, call this method again, using this value as the
-     * `page_token`.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\CloudAsset {
+    class SearchAllIamPoliciesResponse extends \Google\Collection
     {
+        protected $collection_key = 'results';
+        /**
+         * Set if there are more results than those appearing in this response; to get
+         * the next set of results, call this method again, using this value as the
+         * `page_token`.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $resultsType = IamPolicySearchResult::class;
+        protected $resultsDataType = 'array';
+        /**
+         * Set if there are more results than those appearing in this response; to get
+         * the next set of results, call this method again, using this value as the
+         * `page_token`.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * A list of IAM policies that match the search query. Related information
+         * such as the associated resource is returned along with the policy.
+         *
+         * @param IamPolicySearchResult[] $results
+         */
+        public function setResults($results)
+        {
+        }
+        /**
+         * @return IamPolicySearchResult[]
+         */
+        public function getResults()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudAsset\SearchAllIamPoliciesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * A list of IAM policies that match the search query. Related information
-     * such as the associated resource is returned along with the policy.
-     *
-     * @param IamPolicySearchResult[] $results
-     */
-    public function setResults($results)
-    {
-    }
-    /**
-     * @return IamPolicySearchResult[]
-     */
-    public function getResults()
+    class Google_Service_CloudAsset_SearchAllIamPoliciesResponse extends \Google\Service\CloudAsset\SearchAllIamPoliciesResponse
     {
     }
 }

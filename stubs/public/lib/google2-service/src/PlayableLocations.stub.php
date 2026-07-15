@@ -21,32 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
-* Service definition for PlayableLocations (v3).
-*
-* <p>
-</p>
-*
-* <p>
-* For more information about this service, see the API
-* <a href="https://developers.google.com/maps/contact-sales/" target="_blank">Documentation</a>
-* </p>
-*
-* @author Google, Inc.
-*/
-class PlayableLocations extends \Google\Service
-{
-    public $v3;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the PlayableLocations service.
-     *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+    * Service definition for PlayableLocations (v3).
+    *
+    * <p>
+    </p>
+    *
+    * <p>
+    * For more information about this service, see the API
+    * <a href="https://developers.google.com/maps/contact-sales/" target="_blank">Documentation</a>
+    * </p>
+    *
+    * @author Google, Inc.
+    */
+    class PlayableLocations extends \Google\Service
+    {
+        public $v3;
+        /**
+         * Constructs the internal representation of the PlayableLocations service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\PlayableLocations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class Google_Service_PlayableLocations extends \Google\Service\PlayableLocations
     {
     }
 }

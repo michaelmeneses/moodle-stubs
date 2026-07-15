@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1FieldType extends \Google\Model
-{
-    /**
-     * The default invalid value for a type.
-     */
-    public const PRIMITIVE_TYPE_PRIMITIVE_TYPE_UNSPECIFIED = 'PRIMITIVE_TYPE_UNSPECIFIED';
-    /**
-     * A double precision number.
-     */
-    public const PRIMITIVE_TYPE_DOUBLE = 'DOUBLE';
-    /**
-     * An UTF-8 string.
-     */
-    public const PRIMITIVE_TYPE_STRING = 'STRING';
-    /**
-     * A boolean value.
-     */
-    public const PRIMITIVE_TYPE_BOOL = 'BOOL';
-    /**
-     * A timestamp.
-     */
-    public const PRIMITIVE_TYPE_TIMESTAMP = 'TIMESTAMP';
-    /**
-     * A Richtext description.
-     */
-    public const PRIMITIVE_TYPE_RICHTEXT = 'RICHTEXT';
-    protected $enumTypeType = GoogleCloudDatacatalogV1FieldTypeEnumType::class;
-    protected $enumTypeDataType = '';
-    /**
-     * Primitive types, such as string, boolean, etc.
-     *
-     * @var string
-     */
-    public $primitiveType;
-    /**
-     * An enum type.
-     *
-     * @param GoogleCloudDatacatalogV1FieldTypeEnumType $enumType
-     */
-    public function setEnumType(GoogleCloudDatacatalogV1FieldTypeEnumType $enumType)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1FieldType extends \Google\Model
     {
+        /**
+         * The default invalid value for a type.
+         */
+        public const PRIMITIVE_TYPE_PRIMITIVE_TYPE_UNSPECIFIED = 'PRIMITIVE_TYPE_UNSPECIFIED';
+        /**
+         * A double precision number.
+         */
+        public const PRIMITIVE_TYPE_DOUBLE = 'DOUBLE';
+        /**
+         * An UTF-8 string.
+         */
+        public const PRIMITIVE_TYPE_STRING = 'STRING';
+        /**
+         * A boolean value.
+         */
+        public const PRIMITIVE_TYPE_BOOL = 'BOOL';
+        /**
+         * A timestamp.
+         */
+        public const PRIMITIVE_TYPE_TIMESTAMP = 'TIMESTAMP';
+        /**
+         * A Richtext description.
+         */
+        public const PRIMITIVE_TYPE_RICHTEXT = 'RICHTEXT';
+        protected $enumTypeType = GoogleCloudDatacatalogV1FieldTypeEnumType::class;
+        protected $enumTypeDataType = '';
+        /**
+         * Primitive types, such as string, boolean, etc.
+         *
+         * @var string
+         */
+        public $primitiveType;
+        /**
+         * An enum type.
+         *
+         * @param GoogleCloudDatacatalogV1FieldTypeEnumType $enumType
+         */
+        public function setEnumType(GoogleCloudDatacatalogV1FieldTypeEnumType $enumType)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1FieldTypeEnumType
+         */
+        public function getEnumType()
+        {
+        }
+        /**
+         * Primitive types, such as string, boolean, etc.
+         *
+         * Accepted values: PRIMITIVE_TYPE_UNSPECIFIED, DOUBLE, STRING, BOOL,
+         * TIMESTAMP, RICHTEXT
+         *
+         * @param self::PRIMITIVE_TYPE_* $primitiveType
+         */
+        public function setPrimitiveType($primitiveType)
+        {
+        }
+        /**
+         * @return self::PRIMITIVE_TYPE_*
+         */
+        public function getPrimitiveType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatacatalogV1FieldTypeEnumType
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1FieldType registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnumType()
-    {
-    }
-    /**
-     * Primitive types, such as string, boolean, etc.
-     *
-     * Accepted values: PRIMITIVE_TYPE_UNSPECIFIED, DOUBLE, STRING, BOOL,
-     * TIMESTAMP, RICHTEXT
-     *
-     * @param self::PRIMITIVE_TYPE_* $primitiveType
-     */
-    public function setPrimitiveType($primitiveType)
-    {
-    }
-    /**
-     * @return self::PRIMITIVE_TYPE_*
-     */
-    public function getPrimitiveType()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1FieldType extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1FieldType
     {
     }
 }

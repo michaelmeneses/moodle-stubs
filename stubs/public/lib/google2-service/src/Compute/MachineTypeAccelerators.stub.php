@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class MachineTypeAccelerators extends \Google\Model
-{
-    /**
-     * Number of accelerator cards exposed to the guest.
-     *
-     * @var int
-     */
-    public $guestAcceleratorCount;
-    /**
-     * The accelerator type resource name, not a full URL, e.g.nvidia-tesla-t4.
-     *
-     * @var string
-     */
-    public $guestAcceleratorType;
-    /**
-     * Number of accelerator cards exposed to the guest.
-     *
-     * @param int $guestAcceleratorCount
-     */
-    public function setGuestAcceleratorCount($guestAcceleratorCount)
+namespace Google\Service\Compute {
+    class MachineTypeAccelerators extends \Google\Model
     {
+        /**
+         * Number of accelerator cards exposed to the guest.
+         *
+         * @var int
+         */
+        public $guestAcceleratorCount;
+        /**
+         * The accelerator type resource name, not a full URL, e.g.nvidia-tesla-t4.
+         *
+         * @var string
+         */
+        public $guestAcceleratorType;
+        /**
+         * Number of accelerator cards exposed to the guest.
+         *
+         * @param int $guestAcceleratorCount
+         */
+        public function setGuestAcceleratorCount($guestAcceleratorCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getGuestAcceleratorCount()
+        {
+        }
+        /**
+         * The accelerator type resource name, not a full URL, e.g.nvidia-tesla-t4.
+         *
+         * @param string $guestAcceleratorType
+         */
+        public function setGuestAcceleratorType($guestAcceleratorType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGuestAcceleratorType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Compute\MachineTypeAccelerators registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGuestAcceleratorCount()
-    {
-    }
-    /**
-     * The accelerator type resource name, not a full URL, e.g.nvidia-tesla-t4.
-     *
-     * @param string $guestAcceleratorType
-     */
-    public function setGuestAcceleratorType($guestAcceleratorType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGuestAcceleratorType()
+    class Google_Service_Compute_MachineTypeAccelerators extends \Google\Service\Compute\MachineTypeAccelerators
     {
     }
 }

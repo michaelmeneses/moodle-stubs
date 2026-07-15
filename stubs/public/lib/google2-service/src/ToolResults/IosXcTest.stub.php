@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class IosXcTest extends \Google\Model
-{
-    /**
-     * Bundle ID of the app.
-     *
-     * @var string
-     */
-    public $bundleId;
-    /**
-     * Xcode version that the test was run with.
-     *
-     * @var string
-     */
-    public $xcodeVersion;
-    /**
-     * Bundle ID of the app.
-     *
-     * @param string $bundleId
-     */
-    public function setBundleId($bundleId)
+namespace Google\Service\ToolResults {
+    class IosXcTest extends \Google\Model
     {
+        /**
+         * Bundle ID of the app.
+         *
+         * @var string
+         */
+        public $bundleId;
+        /**
+         * Xcode version that the test was run with.
+         *
+         * @var string
+         */
+        public $xcodeVersion;
+        /**
+         * Bundle ID of the app.
+         *
+         * @param string $bundleId
+         */
+        public function setBundleId($bundleId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBundleId()
+        {
+        }
+        /**
+         * Xcode version that the test was run with.
+         *
+         * @param string $xcodeVersion
+         */
+        public function setXcodeVersion($xcodeVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getXcodeVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ToolResults\IosXcTest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBundleId()
-    {
-    }
-    /**
-     * Xcode version that the test was run with.
-     *
-     * @param string $xcodeVersion
-     */
-    public function setXcodeVersion($xcodeVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getXcodeVersion()
+    class Google_Service_ToolResults_IosXcTest extends \Google\Service\ToolResults\IosXcTest
     {
     }
 }

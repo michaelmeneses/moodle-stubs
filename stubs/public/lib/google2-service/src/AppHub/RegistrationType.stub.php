@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AppHub;
-
-class RegistrationType extends \Google\Model
-{
-    /**
-     * Unspecified registration type. Defaults to EXCLUSIVE.
-     */
-    public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
-    /**
-     * The service can only be registered to one application.
-     */
-    public const TYPE_EXCLUSIVE = 'EXCLUSIVE';
-    /**
-     * The service can be registered to multiple applications.
-     */
-    public const TYPE_SHARED = 'SHARED';
-    /**
-     * Output only. The registration type of a service.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Output only. The registration type of a service.
-     *
-     * Accepted values: TYPE_UNSPECIFIED, EXCLUSIVE, SHARED
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
+namespace Google\Service\AppHub {
+    class RegistrationType extends \Google\Model
     {
+        /**
+         * Unspecified registration type. Defaults to EXCLUSIVE.
+         */
+        public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
+        /**
+         * The service can only be registered to one application.
+         */
+        public const TYPE_EXCLUSIVE = 'EXCLUSIVE';
+        /**
+         * The service can be registered to multiple applications.
+         */
+        public const TYPE_SHARED = 'SHARED';
+        /**
+         * Output only. The registration type of a service.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Output only. The registration type of a service.
+         *
+         * Accepted values: TYPE_UNSPECIFIED, EXCLUSIVE, SHARED
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::TYPE_*
+     * Runtime class alias of \Google\Service\AppHub\RegistrationType registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getType()
+    class Google_Service_AppHub_RegistrationType extends \Google\Service\AppHub\RegistrationType
     {
     }
 }

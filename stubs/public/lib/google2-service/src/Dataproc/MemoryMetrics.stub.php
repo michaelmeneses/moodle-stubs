@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class MemoryMetrics extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $totalOffHeapStorageMemory;
-    /**
-     * @var string
-     */
-    public $totalOnHeapStorageMemory;
-    /**
-     * @var string
-     */
-    public $usedOffHeapStorageMemory;
-    /**
-     * @var string
-     */
-    public $usedOnHeapStorageMemory;
-    /**
-     * @param string $totalOffHeapStorageMemory
-     */
-    public function setTotalOffHeapStorageMemory($totalOffHeapStorageMemory)
+namespace Google\Service\Dataproc {
+    class MemoryMetrics extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $totalOffHeapStorageMemory;
+        /**
+         * @var string
+         */
+        public $totalOnHeapStorageMemory;
+        /**
+         * @var string
+         */
+        public $usedOffHeapStorageMemory;
+        /**
+         * @var string
+         */
+        public $usedOnHeapStorageMemory;
+        /**
+         * @param string $totalOffHeapStorageMemory
+         */
+        public function setTotalOffHeapStorageMemory($totalOffHeapStorageMemory)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalOffHeapStorageMemory()
+        {
+        }
+        /**
+         * @param string $totalOnHeapStorageMemory
+         */
+        public function setTotalOnHeapStorageMemory($totalOnHeapStorageMemory)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalOnHeapStorageMemory()
+        {
+        }
+        /**
+         * @param string $usedOffHeapStorageMemory
+         */
+        public function setUsedOffHeapStorageMemory($usedOffHeapStorageMemory)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUsedOffHeapStorageMemory()
+        {
+        }
+        /**
+         * @param string $usedOnHeapStorageMemory
+         */
+        public function setUsedOnHeapStorageMemory($usedOnHeapStorageMemory)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUsedOnHeapStorageMemory()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\MemoryMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTotalOffHeapStorageMemory()
-    {
-    }
-    /**
-     * @param string $totalOnHeapStorageMemory
-     */
-    public function setTotalOnHeapStorageMemory($totalOnHeapStorageMemory)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalOnHeapStorageMemory()
-    {
-    }
-    /**
-     * @param string $usedOffHeapStorageMemory
-     */
-    public function setUsedOffHeapStorageMemory($usedOffHeapStorageMemory)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUsedOffHeapStorageMemory()
-    {
-    }
-    /**
-     * @param string $usedOnHeapStorageMemory
-     */
-    public function setUsedOnHeapStorageMemory($usedOnHeapStorageMemory)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUsedOnHeapStorageMemory()
+    class Google_Service_Dataproc_MemoryMetrics extends \Google\Service\Dataproc\MemoryMetrics
     {
     }
 }

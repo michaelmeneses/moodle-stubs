@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseDynamicLinks;
-
-class CreateShortDynamicLinkResponse extends \Google\Collection
-{
-    protected $collection_key = 'warning';
-    /**
-     * Preview link to show the link flow chart. (debug info.)
-     *
-     * @var string
-     */
-    public $previewLink;
-    /**
-     * Short Dynamic Link value. e.g. https://abcd.app.goo.gl/wxyz
-     *
-     * @var string
-     */
-    public $shortLink;
-    protected $warningType = DynamicLinkWarning::class;
-    protected $warningDataType = 'array';
-    /**
-     * Preview link to show the link flow chart. (debug info.)
-     *
-     * @param string $previewLink
-     */
-    public function setPreviewLink($previewLink)
+namespace Google\Service\FirebaseDynamicLinks {
+    class CreateShortDynamicLinkResponse extends \Google\Collection
     {
+        protected $collection_key = 'warning';
+        /**
+         * Preview link to show the link flow chart. (debug info.)
+         *
+         * @var string
+         */
+        public $previewLink;
+        /**
+         * Short Dynamic Link value. e.g. https://abcd.app.goo.gl/wxyz
+         *
+         * @var string
+         */
+        public $shortLink;
+        protected $warningType = DynamicLinkWarning::class;
+        protected $warningDataType = 'array';
+        /**
+         * Preview link to show the link flow chart. (debug info.)
+         *
+         * @param string $previewLink
+         */
+        public function setPreviewLink($previewLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPreviewLink()
+        {
+        }
+        /**
+         * Short Dynamic Link value. e.g. https://abcd.app.goo.gl/wxyz
+         *
+         * @param string $shortLink
+         */
+        public function setShortLink($shortLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getShortLink()
+        {
+        }
+        /**
+         * Information about potential warnings on link creation.
+         *
+         * @param DynamicLinkWarning[] $warning
+         */
+        public function setWarning($warning)
+        {
+        }
+        /**
+         * @return DynamicLinkWarning[]
+         */
+        public function getWarning()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\FirebaseDynamicLinks\CreateShortDynamicLinkResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPreviewLink()
-    {
-    }
-    /**
-     * Short Dynamic Link value. e.g. https://abcd.app.goo.gl/wxyz
-     *
-     * @param string $shortLink
-     */
-    public function setShortLink($shortLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getShortLink()
-    {
-    }
-    /**
-     * Information about potential warnings on link creation.
-     *
-     * @param DynamicLinkWarning[] $warning
-     */
-    public function setWarning($warning)
-    {
-    }
-    /**
-     * @return DynamicLinkWarning[]
-     */
-    public function getWarning()
+    class Google_Service_FirebaseDynamicLinks_CreateShortDynamicLinkResponse extends \Google\Service\FirebaseDynamicLinks\CreateShortDynamicLinkResponse
     {
     }
 }

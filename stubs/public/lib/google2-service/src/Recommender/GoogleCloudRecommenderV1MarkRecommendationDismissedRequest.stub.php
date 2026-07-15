@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Recommender;
-
-class GoogleCloudRecommenderV1MarkRecommendationDismissedRequest extends \Google\Model
-{
-    /**
-     * Fingerprint of the Recommendation. Provides optimistic locking.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * Fingerprint of the Recommendation. Provides optimistic locking.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
+namespace Google\Service\Recommender {
+    class GoogleCloudRecommenderV1MarkRecommendationDismissedRequest extends \Google\Model
     {
+        /**
+         * Fingerprint of the Recommendation. Provides optimistic locking.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * Fingerprint of the Recommendation. Provides optimistic locking.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Recommender\GoogleCloudRecommenderV1MarkRecommendationDismissedRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
+    class Google_Service_Recommender_GoogleCloudRecommenderV1MarkRecommendationDismissedRequest extends \Google\Service\Recommender\GoogleCloudRecommenderV1MarkRecommendationDismissedRequest
     {
     }
 }

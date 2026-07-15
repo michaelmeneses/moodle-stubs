@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class NotifierSpec extends \Google\Collection
-{
-    protected $collection_key = 'secrets';
-    protected $notificationType = Notification::class;
-    protected $notificationDataType = '';
-    public $notification;
-    protected $secretsType = NotifierSecret::class;
-    protected $secretsDataType = 'array';
-    public $secrets;
-    /**
-     * @param Notification
-     */
-    public function setNotification(Notification $notification)
+namespace Google\Service\CloudBuild {
+    class NotifierSpec extends \Google\Collection
     {
+        protected $collection_key = 'secrets';
+        protected $notificationType = Notification::class;
+        protected $notificationDataType = '';
+        public $notification;
+        protected $secretsType = NotifierSecret::class;
+        protected $secretsDataType = 'array';
+        public $secrets;
+        /**
+         * @param Notification
+         */
+        public function setNotification(Notification $notification)
+        {
+        }
+        /**
+         * @return Notification
+         */
+        public function getNotification()
+        {
+        }
+        /**
+         * @param NotifierSecret[]
+         */
+        public function setSecrets($secrets)
+        {
+        }
+        /**
+         * @return NotifierSecret[]
+         */
+        public function getSecrets()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Notification
+     * Runtime class alias of \Google\Service\CloudBuild\NotifierSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNotification()
-    {
-    }
-    /**
-     * @param NotifierSecret[]
-     */
-    public function setSecrets($secrets)
-    {
-    }
-    /**
-     * @return NotifierSecret[]
-     */
-    public function getSecrets()
+    class Google_Service_CloudBuild_NotifierSpec extends \Google\Service\CloudBuild\NotifierSpec
     {
     }
 }

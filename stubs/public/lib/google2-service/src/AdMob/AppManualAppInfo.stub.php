@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdMob;
-
-class AppManualAppInfo extends \Google\Model
-{
-    /**
-     * The display name of the app as shown in the AdMob UI, which is provided by
-     * the user. The maximum length allowed is 80 characters.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The display name of the app as shown in the AdMob UI, which is provided by
-     * the user. The maximum length allowed is 80 characters.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\AdMob {
+    class AppManualAppInfo extends \Google\Model
     {
+        /**
+         * The display name of the app as shown in the AdMob UI, which is provided by
+         * the user. The maximum length allowed is 80 characters.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The display name of the app as shown in the AdMob UI, which is provided by
+         * the user. The maximum length allowed is 80 characters.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AdMob\AppManualAppInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
+    class Google_Service_AdMob_AppManualAppInfo extends \Google\Service\AdMob\AppManualAppInfo
     {
     }
 }

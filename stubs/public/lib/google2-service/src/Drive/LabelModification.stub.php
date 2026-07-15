@@ -21,85 +21,94 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Drive;
-
-class LabelModification extends \Google\Collection
-{
-    protected $collection_key = 'fieldModifications';
-    protected $fieldModificationsType = LabelFieldModification::class;
-    protected $fieldModificationsDataType = 'array';
-    /**
-     * This is always `"drive#labelModification"`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The ID of the label to modify.
-     *
-     * @var string
-     */
-    public $labelId;
-    /**
-     * If true, the label will be removed from the file.
-     *
-     * @var bool
-     */
-    public $removeLabel;
-    /**
-     * The list of modifications to this label's fields.
-     *
-     * @param LabelFieldModification[] $fieldModifications
-     */
-    public function setFieldModifications($fieldModifications)
+namespace Google\Service\Drive {
+    class LabelModification extends \Google\Collection
     {
+        protected $collection_key = 'fieldModifications';
+        protected $fieldModificationsType = LabelFieldModification::class;
+        protected $fieldModificationsDataType = 'array';
+        /**
+         * This is always `"drive#labelModification"`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The ID of the label to modify.
+         *
+         * @var string
+         */
+        public $labelId;
+        /**
+         * If true, the label will be removed from the file.
+         *
+         * @var bool
+         */
+        public $removeLabel;
+        /**
+         * The list of modifications to this label's fields.
+         *
+         * @param LabelFieldModification[] $fieldModifications
+         */
+        public function setFieldModifications($fieldModifications)
+        {
+        }
+        /**
+         * @return LabelFieldModification[]
+         */
+        public function getFieldModifications()
+        {
+        }
+        /**
+         * This is always `"drive#labelModification"`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The ID of the label to modify.
+         *
+         * @param string $labelId
+         */
+        public function setLabelId($labelId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLabelId()
+        {
+        }
+        /**
+         * If true, the label will be removed from the file.
+         *
+         * @param bool $removeLabel
+         */
+        public function setRemoveLabel($removeLabel)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getRemoveLabel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LabelFieldModification[]
+     * Runtime class alias of \Google\Service\Drive\LabelModification registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFieldModifications()
-    {
-    }
-    /**
-     * This is always `"drive#labelModification"`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The ID of the label to modify.
-     *
-     * @param string $labelId
-     */
-    public function setLabelId($labelId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLabelId()
-    {
-    }
-    /**
-     * If true, the label will be removed from the file.
-     *
-     * @param bool $removeLabel
-     */
-    public function setRemoveLabel($removeLabel)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getRemoveLabel()
+    class Google_Service_Drive_LabelModification extends \Google\Service\Drive\LabelModification
     {
     }
 }

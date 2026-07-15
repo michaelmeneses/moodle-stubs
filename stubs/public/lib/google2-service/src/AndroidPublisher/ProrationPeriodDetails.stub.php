@@ -21,80 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class ProrationPeriodDetails extends \Google\Model
-{
-    /**
-     * Offer phase unspecified. This value is not used.
-     */
-    public const ORIGINAL_OFFER_PHASE_OFFER_PHASE_UNSPECIFIED = 'OFFER_PHASE_UNSPECIFIED';
-    /**
-     * The order funds a base price period.
-     */
-    public const ORIGINAL_OFFER_PHASE_BASE = 'BASE';
-    /**
-     * The order funds an introductory pricing period.
-     */
-    public const ORIGINAL_OFFER_PHASE_INTRODUCTORY = 'INTRODUCTORY';
-    /**
-     * The order funds a free trial period.
-     */
-    public const ORIGINAL_OFFER_PHASE_FREE_TRIAL = 'FREE_TRIAL';
-    /**
-     * The last order id of the original subscription purchase prior to the plan
-     * change. This is only populated if this proration period is from an
-     * ugrade/downgrade from a previous subscription and carries the remaining
-     * offer phase from the linked order of the previous subscription.
-     *
-     * @var string
-     */
-    public $linkedOrderId;
-    /**
-     * Represent the original offer phase from the purchased the line item if the
-     * proration period contains any of them. For example, a proration period from
-     * CHARGE_FULL_PRICE plan change may merge the 1st offer phase of the
-     * subscription offer of the new product user purchased. In this case, the
-     * original offer phase will be set here.
-     *
-     * @var string
-     */
-    public $originalOfferPhase;
-    /**
-     * The last order id of the original subscription purchase prior to the plan
-     * change. This is only populated if this proration period is from an
-     * ugrade/downgrade from a previous subscription and carries the remaining
-     * offer phase from the linked order of the previous subscription.
-     *
-     * @param string $linkedOrderId
-     */
-    public function setLinkedOrderId($linkedOrderId)
+namespace Google\Service\AndroidPublisher {
+    class ProrationPeriodDetails extends \Google\Model
     {
+        /**
+         * Offer phase unspecified. This value is not used.
+         */
+        public const ORIGINAL_OFFER_PHASE_OFFER_PHASE_UNSPECIFIED = 'OFFER_PHASE_UNSPECIFIED';
+        /**
+         * The order funds a base price period.
+         */
+        public const ORIGINAL_OFFER_PHASE_BASE = 'BASE';
+        /**
+         * The order funds an introductory pricing period.
+         */
+        public const ORIGINAL_OFFER_PHASE_INTRODUCTORY = 'INTRODUCTORY';
+        /**
+         * The order funds a free trial period.
+         */
+        public const ORIGINAL_OFFER_PHASE_FREE_TRIAL = 'FREE_TRIAL';
+        /**
+         * The last order id of the original subscription purchase prior to the plan
+         * change. This is only populated if this proration period is from an
+         * ugrade/downgrade from a previous subscription and carries the remaining
+         * offer phase from the linked order of the previous subscription.
+         *
+         * @var string
+         */
+        public $linkedOrderId;
+        /**
+         * Represent the original offer phase from the purchased the line item if the
+         * proration period contains any of them. For example, a proration period from
+         * CHARGE_FULL_PRICE plan change may merge the 1st offer phase of the
+         * subscription offer of the new product user purchased. In this case, the
+         * original offer phase will be set here.
+         *
+         * @var string
+         */
+        public $originalOfferPhase;
+        /**
+         * The last order id of the original subscription purchase prior to the plan
+         * change. This is only populated if this proration period is from an
+         * ugrade/downgrade from a previous subscription and carries the remaining
+         * offer phase from the linked order of the previous subscription.
+         *
+         * @param string $linkedOrderId
+         */
+        public function setLinkedOrderId($linkedOrderId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLinkedOrderId()
+        {
+        }
+        /**
+         * Represent the original offer phase from the purchased the line item if the
+         * proration period contains any of them. For example, a proration period from
+         * CHARGE_FULL_PRICE plan change may merge the 1st offer phase of the
+         * subscription offer of the new product user purchased. In this case, the
+         * original offer phase will be set here.
+         *
+         * Accepted values: OFFER_PHASE_UNSPECIFIED, BASE, INTRODUCTORY, FREE_TRIAL
+         *
+         * @param self::ORIGINAL_OFFER_PHASE_* $originalOfferPhase
+         */
+        public function setOriginalOfferPhase($originalOfferPhase)
+        {
+        }
+        /**
+         * @return self::ORIGINAL_OFFER_PHASE_*
+         */
+        public function getOriginalOfferPhase()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidPublisher\ProrationPeriodDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLinkedOrderId()
-    {
-    }
-    /**
-     * Represent the original offer phase from the purchased the line item if the
-     * proration period contains any of them. For example, a proration period from
-     * CHARGE_FULL_PRICE plan change may merge the 1st offer phase of the
-     * subscription offer of the new product user purchased. In this case, the
-     * original offer phase will be set here.
-     *
-     * Accepted values: OFFER_PHASE_UNSPECIFIED, BASE, INTRODUCTORY, FREE_TRIAL
-     *
-     * @param self::ORIGINAL_OFFER_PHASE_* $originalOfferPhase
-     */
-    public function setOriginalOfferPhase($originalOfferPhase)
-    {
-    }
-    /**
-     * @return self::ORIGINAL_OFFER_PHASE_*
-     */
-    public function getOriginalOfferPhase()
+    class Google_Service_AndroidPublisher_ProrationPeriodDetails extends \Google\Service\AndroidPublisher\ProrationPeriodDetails
     {
     }
 }

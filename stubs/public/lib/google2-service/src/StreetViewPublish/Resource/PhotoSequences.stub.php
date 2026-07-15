@@ -21,43 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\StreetViewPublish\Resource;
-
-/**
- * The "photoSequences" collection of methods.
- * Typical usage is:
- *  <code>
- *   $streetviewpublishService = new Google\Service\StreetViewPublish(...);
- *   $photoSequences = $streetviewpublishService->photoSequences;
- *  </code>
- */
-class PhotoSequences extends \Google\Service\Resource
-{
+namespace Google\Service\StreetViewPublish\Resource {
+    use Google\Service\StreetViewPublish\ListPhotoSequencesResponse;
     /**
-     * Lists all the PhotoSequences that belong to the user, in descending
-     * CreatePhotoSequence timestamp order. (photoSequences.listPhotoSequences)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Optional. The filter expression. For example:
-     * `imagery_type=SPHERICAL`. The filters supported are: `imagery_type`,
-     * `processing_state`, `min_latitude`, `max_latitude`, `min_longitude`,
-     * `max_longitude`, `filename_query`, `min_capture_time_seconds`,
-     * `max_capture_time_seconds. See https://google.aip.dev/160 for more
-     * information. Filename queries should sent as a Phrase in order to support
-     * multiple words and special characters by adding escaped quotes. Ex:
-     * filename_query="example of a phrase.mp4"
-     * @opt_param int pageSize Optional. The maximum number of photo sequences to
-     * return. `pageSize` must be non-negative. If `pageSize` is zero or is not
-     * provided, the default page size of 100 is used. The number of photo sequences
-     * returned in the response may be less than `pageSize` if the number of matches
-     * is less than `pageSize`. This is currently unimplemented but is in process.
-     * @opt_param string pageToken Optional. The nextPageToken value returned from a
-     * previous ListPhotoSequences request, if any.
-     * @return ListPhotoSequencesResponse
-     * @throws \Google\Service\Exception
+     * The "photoSequences" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $streetviewpublishService = new Google\Service\StreetViewPublish(...);
+     *   $photoSequences = $streetviewpublishService->photoSequences;
+     *  </code>
      */
-    public function listPhotoSequences($optParams = [])
+    class PhotoSequences extends \Google\Service\Resource
+    {
+        /**
+         * Lists all the PhotoSequences that belong to the user, in descending
+         * CreatePhotoSequence timestamp order. (photoSequences.listPhotoSequences)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Optional. The filter expression. For example:
+         * `imagery_type=SPHERICAL`. The filters supported are: `imagery_type`,
+         * `processing_state`, `min_latitude`, `max_latitude`, `min_longitude`,
+         * `max_longitude`, `filename_query`, `min_capture_time_seconds`,
+         * `max_capture_time_seconds. See https://google.aip.dev/160 for more
+         * information. Filename queries should sent as a Phrase in order to support
+         * multiple words and special characters by adding escaped quotes. Ex:
+         * filename_query="example of a phrase.mp4"
+         * @opt_param int pageSize Optional. The maximum number of photo sequences to
+         * return. `pageSize` must be non-negative. If `pageSize` is zero or is not
+         * provided, the default page size of 100 is used. The number of photo sequences
+         * returned in the response may be less than `pageSize` if the number of matches
+         * is less than `pageSize`. This is currently unimplemented but is in process.
+         * @opt_param string pageToken Optional. The nextPageToken value returned from a
+         * previous ListPhotoSequences request, if any.
+         * @return ListPhotoSequencesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listPhotoSequences($optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\StreetViewPublish\Resource\PhotoSequences registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_StreetViewPublish_Resource_PhotoSequences extends \Google\Service\StreetViewPublish\Resource\PhotoSequences
     {
     }
 }

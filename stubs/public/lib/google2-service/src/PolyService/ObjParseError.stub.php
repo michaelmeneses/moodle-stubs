@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PolyService;
-
-class ObjParseError extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $code;
-    /**
-     * @var int
-     */
-    public $endIndex;
-    /**
-     * @var string
-     */
-    public $filePath;
-    /**
-     * @var string
-     */
-    public $line;
-    /**
-     * @var int
-     */
-    public $lineNumber;
-    /**
-     * @var int
-     */
-    public $startIndex;
-    /**
-     * @param string
-     */
-    public function setCode($code)
+namespace Google\Service\PolyService {
+    class ObjParseError extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $code;
+        /**
+         * @var int
+         */
+        public $endIndex;
+        /**
+         * @var string
+         */
+        public $filePath;
+        /**
+         * @var string
+         */
+        public $line;
+        /**
+         * @var int
+         */
+        public $lineNumber;
+        /**
+         * @var int
+         */
+        public $startIndex;
+        /**
+         * @param string
+         */
+        public function setCode($code)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCode()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setEndIndex($endIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getEndIndex()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setFilePath($filePath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilePath()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLine($line)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLine()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setLineNumber($lineNumber)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getLineNumber()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setStartIndex($startIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getStartIndex()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PolyService\ObjParseError registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCode()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setEndIndex($endIndex)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getEndIndex()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setFilePath($filePath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFilePath()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLine($line)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLine()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setLineNumber($lineNumber)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getLineNumber()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setStartIndex($startIndex)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getStartIndex()
+    class Google_Service_PolyService_ObjParseError extends \Google\Service\PolyService\ObjParseError
     {
     }
 }

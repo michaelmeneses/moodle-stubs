@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity;
-
-class ListSpokesResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    /**
-     * The token for the next page of the response. To see more results, use this
-     * value as the page_token for your next request. If this value is empty,
-     * there are no more results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $spokesType = Spoke::class;
-    protected $spokesDataType = 'array';
-    /**
-     * Locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * The token for the next page of the response. To see more results, use this
-     * value as the page_token for your next request. If this value is empty,
-     * there are no more results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Networkconnectivity {
+    class ListSpokesResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        /**
+         * The token for the next page of the response. To see more results, use this
+         * value as the page_token for your next request. If this value is empty,
+         * there are no more results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $spokesType = Spoke::class;
+        protected $spokesDataType = 'array';
+        /**
+         * Locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * The token for the next page of the response. To see more results, use this
+         * value as the page_token for your next request. If this value is empty,
+         * there are no more results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The requested spokes.
+         *
+         * @param Spoke[] $spokes
+         */
+        public function setSpokes($spokes)
+        {
+        }
+        /**
+         * @return Spoke[]
+         */
+        public function getSpokes()
+        {
+        }
+        /**
+         * Locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Networkconnectivity\ListSpokesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The requested spokes.
-     *
-     * @param Spoke[] $spokes
-     */
-    public function setSpokes($spokes)
-    {
-    }
-    /**
-     * @return Spoke[]
-     */
-    public function getSpokes()
-    {
-    }
-    /**
-     * Locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_Networkconnectivity_ListSpokesResponse extends \Google\Service\Networkconnectivity\ListSpokesResponse
     {
     }
 }

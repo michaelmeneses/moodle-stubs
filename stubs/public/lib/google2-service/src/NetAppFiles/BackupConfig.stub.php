@@ -21,97 +21,106 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetAppFiles;
-
-class BackupConfig extends \Google\Collection
-{
-    protected $collection_key = 'backupPolicies';
-    /**
-     * Output only. Total size of all backups in a chain in bytes = baseline
-     * backup size + sum(incremental backup size).
-     *
-     * @var string
-     */
-    public $backupChainBytes;
-    /**
-     * Optional. When specified, schedule backups will be created based on the
-     * policy configuration.
-     *
-     * @var string[]
-     */
-    public $backupPolicies;
-    /**
-     * Optional. Name of backup vault. Format:
-     * projects/{project_id}/locations/{location}/backupVaults/{backup_vault_id}
-     *
-     * @var string
-     */
-    public $backupVault;
-    /**
-     * Optional. When set to true, scheduled backup is enabled on the volume. This
-     * field should be nil when there's no backup policy attached.
-     *
-     * @var bool
-     */
-    public $scheduledBackupEnabled;
-    /**
-     * Output only. Total size of all backups in a chain in bytes = baseline
-     * backup size + sum(incremental backup size).
-     *
-     * @param string $backupChainBytes
-     */
-    public function setBackupChainBytes($backupChainBytes)
+namespace Google\Service\NetAppFiles {
+    class BackupConfig extends \Google\Collection
     {
+        protected $collection_key = 'backupPolicies';
+        /**
+         * Output only. Total size of all backups in a chain in bytes = baseline
+         * backup size + sum(incremental backup size).
+         *
+         * @var string
+         */
+        public $backupChainBytes;
+        /**
+         * Optional. When specified, schedule backups will be created based on the
+         * policy configuration.
+         *
+         * @var string[]
+         */
+        public $backupPolicies;
+        /**
+         * Optional. Name of backup vault. Format:
+         * projects/{project_id}/locations/{location}/backupVaults/{backup_vault_id}
+         *
+         * @var string
+         */
+        public $backupVault;
+        /**
+         * Optional. When set to true, scheduled backup is enabled on the volume. This
+         * field should be nil when there's no backup policy attached.
+         *
+         * @var bool
+         */
+        public $scheduledBackupEnabled;
+        /**
+         * Output only. Total size of all backups in a chain in bytes = baseline
+         * backup size + sum(incremental backup size).
+         *
+         * @param string $backupChainBytes
+         */
+        public function setBackupChainBytes($backupChainBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBackupChainBytes()
+        {
+        }
+        /**
+         * Optional. When specified, schedule backups will be created based on the
+         * policy configuration.
+         *
+         * @param string[] $backupPolicies
+         */
+        public function setBackupPolicies($backupPolicies)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getBackupPolicies()
+        {
+        }
+        /**
+         * Optional. Name of backup vault. Format:
+         * projects/{project_id}/locations/{location}/backupVaults/{backup_vault_id}
+         *
+         * @param string $backupVault
+         */
+        public function setBackupVault($backupVault)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBackupVault()
+        {
+        }
+        /**
+         * Optional. When set to true, scheduled backup is enabled on the volume. This
+         * field should be nil when there's no backup policy attached.
+         *
+         * @param bool $scheduledBackupEnabled
+         */
+        public function setScheduledBackupEnabled($scheduledBackupEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getScheduledBackupEnabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetAppFiles\BackupConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackupChainBytes()
-    {
-    }
-    /**
-     * Optional. When specified, schedule backups will be created based on the
-     * policy configuration.
-     *
-     * @param string[] $backupPolicies
-     */
-    public function setBackupPolicies($backupPolicies)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getBackupPolicies()
-    {
-    }
-    /**
-     * Optional. Name of backup vault. Format:
-     * projects/{project_id}/locations/{location}/backupVaults/{backup_vault_id}
-     *
-     * @param string $backupVault
-     */
-    public function setBackupVault($backupVault)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBackupVault()
-    {
-    }
-    /**
-     * Optional. When set to true, scheduled backup is enabled on the volume. This
-     * field should be nil when there's no backup policy attached.
-     *
-     * @param bool $scheduledBackupEnabled
-     */
-    public function setScheduledBackupEnabled($scheduledBackupEnabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getScheduledBackupEnabled()
+    class Google_Service_NetAppFiles_BackupConfig extends \Google\Service\NetAppFiles\BackupConfig
     {
     }
 }

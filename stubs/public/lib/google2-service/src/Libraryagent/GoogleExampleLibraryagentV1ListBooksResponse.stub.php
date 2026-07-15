@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Libraryagent;
-
-class GoogleExampleLibraryagentV1ListBooksResponse extends \Google\Collection
-{
-    protected $collection_key = 'books';
-    protected $booksType = GoogleExampleLibraryagentV1Book::class;
-    protected $booksDataType = 'array';
-    /**
-     * A token to retrieve next page of results. Pass this value in the
-     * ListBooksRequest.page_token field in the subsequent call to `ListBooks`
-     * method to retrieve the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of books.
-     *
-     * @param GoogleExampleLibraryagentV1Book[] $books
-     */
-    public function setBooks($books)
+namespace Google\Service\Libraryagent {
+    class GoogleExampleLibraryagentV1ListBooksResponse extends \Google\Collection
     {
+        protected $collection_key = 'books';
+        protected $booksType = GoogleExampleLibraryagentV1Book::class;
+        protected $booksDataType = 'array';
+        /**
+         * A token to retrieve next page of results. Pass this value in the
+         * ListBooksRequest.page_token field in the subsequent call to `ListBooks`
+         * method to retrieve the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of books.
+         *
+         * @param GoogleExampleLibraryagentV1Book[] $books
+         */
+        public function setBooks($books)
+        {
+        }
+        /**
+         * @return GoogleExampleLibraryagentV1Book[]
+         */
+        public function getBooks()
+        {
+        }
+        /**
+         * A token to retrieve next page of results. Pass this value in the
+         * ListBooksRequest.page_token field in the subsequent call to `ListBooks`
+         * method to retrieve the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleExampleLibraryagentV1Book[]
+     * Runtime class alias of \Google\Service\Libraryagent\GoogleExampleLibraryagentV1ListBooksResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBooks()
-    {
-    }
-    /**
-     * A token to retrieve next page of results. Pass this value in the
-     * ListBooksRequest.page_token field in the subsequent call to `ListBooks`
-     * method to retrieve the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Libraryagent_GoogleExampleLibraryagentV1ListBooksResponse extends \Google\Service\Libraryagent\GoogleExampleLibraryagentV1ListBooksResponse
     {
     }
 }

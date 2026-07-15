@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager;
-
-class ListWorkloadProfilesResponse extends \Google\Collection
-{
-    protected $collection_key = 'workloadOverviews';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * @var string[]
-     */
-    public $unreachable;
-    protected $workloadOverviewsType = WorkloadProfileOverview::class;
-    protected $workloadOverviewsDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\WorkloadManager {
+    class ListWorkloadProfilesResponse extends \Google\Collection
     {
+        protected $collection_key = 'workloadOverviews';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * @var string[]
+         */
+        public $unreachable;
+        protected $workloadOverviewsType = WorkloadProfileOverview::class;
+        protected $workloadOverviewsDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
+        /**
+         * @param WorkloadProfileOverview[]
+         */
+        public function setWorkloadOverviews($workloadOverviews)
+        {
+        }
+        /**
+         * @return WorkloadProfileOverview[]
+         */
+        public function getWorkloadOverviews()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\WorkloadManager\ListWorkloadProfilesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
-    {
-    }
-    /**
-     * @param WorkloadProfileOverview[]
-     */
-    public function setWorkloadOverviews($workloadOverviews)
-    {
-    }
-    /**
-     * @return WorkloadProfileOverview[]
-     */
-    public function getWorkloadOverviews()
+    class Google_Service_WorkloadManager_ListWorkloadProfilesResponse extends \Google\Service\WorkloadManager\ListWorkloadProfilesResponse
     {
     }
 }

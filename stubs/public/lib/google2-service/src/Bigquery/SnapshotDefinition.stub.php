@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class SnapshotDefinition extends \Google\Model
-{
-    protected $baseTableReferenceType = TableReference::class;
-    protected $baseTableReferenceDataType = '';
-    /**
-     * Required. The time at which the base table was snapshot. This value is
-     * reported in the JSON response using RFC3339 format.
-     *
-     * @var string
-     */
-    public $snapshotTime;
-    /**
-     * Required. Reference describing the ID of the table that was snapshot.
-     *
-     * @param TableReference $baseTableReference
-     */
-    public function setBaseTableReference(TableReference $baseTableReference)
+namespace Google\Service\Bigquery {
+    class SnapshotDefinition extends \Google\Model
     {
+        protected $baseTableReferenceType = TableReference::class;
+        protected $baseTableReferenceDataType = '';
+        /**
+         * Required. The time at which the base table was snapshot. This value is
+         * reported in the JSON response using RFC3339 format.
+         *
+         * @var string
+         */
+        public $snapshotTime;
+        /**
+         * Required. Reference describing the ID of the table that was snapshot.
+         *
+         * @param TableReference $baseTableReference
+         */
+        public function setBaseTableReference(TableReference $baseTableReference)
+        {
+        }
+        /**
+         * @return TableReference
+         */
+        public function getBaseTableReference()
+        {
+        }
+        /**
+         * Required. The time at which the base table was snapshot. This value is
+         * reported in the JSON response using RFC3339 format.
+         *
+         * @param string $snapshotTime
+         */
+        public function setSnapshotTime($snapshotTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSnapshotTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TableReference
+     * Runtime class alias of \Google\Service\Bigquery\SnapshotDefinition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBaseTableReference()
-    {
-    }
-    /**
-     * Required. The time at which the base table was snapshot. This value is
-     * reported in the JSON response using RFC3339 format.
-     *
-     * @param string $snapshotTime
-     */
-    public function setSnapshotTime($snapshotTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSnapshotTime()
+    class Google_Service_Bigquery_SnapshotDefinition extends \Google\Service\Bigquery\SnapshotDefinition
     {
     }
 }

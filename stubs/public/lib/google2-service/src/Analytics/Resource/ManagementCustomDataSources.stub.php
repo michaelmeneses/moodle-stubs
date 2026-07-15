@@ -21,36 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics\Resource;
-
-/**
- * The "customDataSources" collection of methods.
- * Typical usage is:
- *  <code>
- *   $analyticsService = new Google\Service\Analytics(...);
- *   $customDataSources = $analyticsService->management_customDataSources;
- *  </code>
- */
-class ManagementCustomDataSources extends \Google\Service\Resource
-{
+namespace Google\Service\Analytics\Resource {
+    use Google\Service\Analytics\CustomDataSources;
     /**
-     * List custom data sources to which the user has access.
-     * (customDataSources.listManagementCustomDataSources)
-     *
-     * @param string $accountId Account Id for the custom data sources to retrieve.
-     * @param string $webPropertyId Web property Id for the custom data sources to
-     * retrieve.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int max-results The maximum number of custom data sources to
-     * include in this response.
-     * @opt_param int start-index A 1-based index of the first custom data source to
-     * retrieve. Use this parameter as a pagination mechanism along with the max-
-     * results parameter.
-     * @return CustomDataSources
-     * @throws \Google\Service\Exception
+     * The "customDataSources" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $analyticsService = new Google\Service\Analytics(...);
+     *   $customDataSources = $analyticsService->management_customDataSources;
+     *  </code>
      */
-    public function listManagementCustomDataSources($accountId, $webPropertyId, $optParams = [])
+    class ManagementCustomDataSources extends \Google\Service\Resource
+    {
+        /**
+         * List custom data sources to which the user has access.
+         * (customDataSources.listManagementCustomDataSources)
+         *
+         * @param string $accountId Account Id for the custom data sources to retrieve.
+         * @param string $webPropertyId Web property Id for the custom data sources to
+         * retrieve.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int max-results The maximum number of custom data sources to
+         * include in this response.
+         * @opt_param int start-index A 1-based index of the first custom data source to
+         * retrieve. Use this parameter as a pagination mechanism along with the max-
+         * results parameter.
+         * @return CustomDataSources
+         * @throws \Google\Service\Exception
+         */
+        public function listManagementCustomDataSources($accountId, $webPropertyId, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Analytics\Resource\ManagementCustomDataSources registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Analytics_Resource_ManagementCustomDataSources extends \Google\Service\Analytics\Resource\ManagementCustomDataSources
     {
     }
 }

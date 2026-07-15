@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1CreateDeploymentResourcePoolRequest extends \Google\Model
-{
-    protected $deploymentResourcePoolType = GoogleCloudAiplatformV1DeploymentResourcePool::class;
-    protected $deploymentResourcePoolDataType = '';
-    /**
-     * Required. The ID to use for the DeploymentResourcePool, which will become
-     * the final component of the DeploymentResourcePool's resource name. The
-     * maximum length is 63 characters, and valid characters are
-     * `/^[a-z]([a-z0-9-]{0,61}[a-z0-9])?$/`.
-     *
-     * @var string
-     */
-    public $deploymentResourcePoolId;
-    /**
-     * Required. The DeploymentResourcePool to create.
-     *
-     * @param GoogleCloudAiplatformV1DeploymentResourcePool $deploymentResourcePool
-     */
-    public function setDeploymentResourcePool(GoogleCloudAiplatformV1DeploymentResourcePool $deploymentResourcePool)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1CreateDeploymentResourcePoolRequest extends \Google\Model
     {
+        protected $deploymentResourcePoolType = GoogleCloudAiplatformV1DeploymentResourcePool::class;
+        protected $deploymentResourcePoolDataType = '';
+        /**
+         * Required. The ID to use for the DeploymentResourcePool, which will become
+         * the final component of the DeploymentResourcePool's resource name. The
+         * maximum length is 63 characters, and valid characters are
+         * `/^[a-z]([a-z0-9-]{0,61}[a-z0-9])?$/`.
+         *
+         * @var string
+         */
+        public $deploymentResourcePoolId;
+        /**
+         * Required. The DeploymentResourcePool to create.
+         *
+         * @param GoogleCloudAiplatformV1DeploymentResourcePool $deploymentResourcePool
+         */
+        public function setDeploymentResourcePool(GoogleCloudAiplatformV1DeploymentResourcePool $deploymentResourcePool)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1DeploymentResourcePool
+         */
+        public function getDeploymentResourcePool()
+        {
+        }
+        /**
+         * Required. The ID to use for the DeploymentResourcePool, which will become
+         * the final component of the DeploymentResourcePool's resource name. The
+         * maximum length is 63 characters, and valid characters are
+         * `/^[a-z]([a-z0-9-]{0,61}[a-z0-9])?$/`.
+         *
+         * @param string $deploymentResourcePoolId
+         */
+        public function setDeploymentResourcePoolId($deploymentResourcePoolId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeploymentResourcePoolId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1DeploymentResourcePool
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1CreateDeploymentResourcePoolRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeploymentResourcePool()
-    {
-    }
-    /**
-     * Required. The ID to use for the DeploymentResourcePool, which will become
-     * the final component of the DeploymentResourcePool's resource name. The
-     * maximum length is 63 characters, and valid characters are
-     * `/^[a-z]([a-z0-9-]{0,61}[a-z0-9])?$/`.
-     *
-     * @param string $deploymentResourcePoolId
-     */
-    public function setDeploymentResourcePoolId($deploymentResourcePoolId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeploymentResourcePoolId()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1CreateDeploymentResourcePoolRequest extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1CreateDeploymentResourcePoolRequest
     {
     }
 }

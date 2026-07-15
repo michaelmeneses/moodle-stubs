@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1ApiMetadataList extends \Google\Collection
-{
-    protected $collection_key = 'apiMetadata';
-    protected $apiMetadataType = GoogleCloudApihubV1APIMetadata::class;
-    protected $apiMetadataDataType = 'array';
-    /**
-     * Required. The list of API metadata.
-     *
-     * @param GoogleCloudApihubV1APIMetadata[] $apiMetadata
-     */
-    public function setApiMetadata($apiMetadata)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1ApiMetadataList extends \Google\Collection
     {
+        protected $collection_key = 'apiMetadata';
+        protected $apiMetadataType = GoogleCloudApihubV1APIMetadata::class;
+        protected $apiMetadataDataType = 'array';
+        /**
+         * Required. The list of API metadata.
+         *
+         * @param GoogleCloudApihubV1APIMetadata[] $apiMetadata
+         */
+        public function setApiMetadata($apiMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1APIMetadata[]
+         */
+        public function getApiMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApihubV1APIMetadata[]
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1ApiMetadataList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiMetadata()
+    class Google_Service_APIhub_GoogleCloudApihubV1ApiMetadataList extends \Google\Service\APIhub\GoogleCloudApihubV1ApiMetadataList
     {
     }
 }

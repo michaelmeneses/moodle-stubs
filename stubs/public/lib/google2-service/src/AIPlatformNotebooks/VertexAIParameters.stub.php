@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AIPlatformNotebooks;
-
-class VertexAIParameters extends \Google\Model
-{
-    /**
-     * @var string[]
-     */
-    public $env = [];
-    /**
-     * @var string
-     */
-    public $network;
-    /**
-     * @param string[]
-     */
-    public function setEnv($env)
+namespace Google\Service\AIPlatformNotebooks {
+    class VertexAIParameters extends \Google\Model
     {
+        /**
+         * @var string[]
+         */
+        public $env = [];
+        /**
+         * @var string
+         */
+        public $network;
+        /**
+         * @param string[]
+         */
+        public function setEnv($env)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getEnv()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNetwork($network)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNetwork()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\AIPlatformNotebooks\VertexAIParameters registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnv()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNetwork($network)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNetwork()
+    class Google_Service_AIPlatformNotebooks_VertexAIParameters extends \Google\Service\AIPlatformNotebooks\VertexAIParameters
     {
     }
 }

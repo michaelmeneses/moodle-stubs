@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestion extends \Google\Model
-{
-    protected $actionType = GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedAction::class;
-    protected $actionDataType = '';
-    protected $replyType = GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedReply::class;
-    protected $replyDataType = '';
-    /**
-     * Predefined client side actions that user can choose
-     *
-     * @param GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedAction $action
-     */
-    public function setAction(GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedAction $action)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestion extends \Google\Model
     {
+        protected $actionType = GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedAction::class;
+        protected $actionDataType = '';
+        protected $replyType = GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedReply::class;
+        protected $replyDataType = '';
+        /**
+         * Predefined client side actions that user can choose
+         *
+         * @param GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedAction $action
+         */
+        public function setAction(GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedAction $action)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedAction
+         */
+        public function getAction()
+        {
+        }
+        /**
+         * Predefined replies for user to select instead of typing
+         *
+         * @param GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedReply $reply
+         */
+        public function setReply(GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedReply $reply)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedReply
+         */
+        public function getReply()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedAction
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAction()
-    {
-    }
-    /**
-     * Predefined replies for user to select instead of typing
-     *
-     * @param GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedReply $reply
-     */
-    public function setReply(GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedReply $reply)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedReply
-     */
-    public function getReply()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestion extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestion
     {
     }
 }

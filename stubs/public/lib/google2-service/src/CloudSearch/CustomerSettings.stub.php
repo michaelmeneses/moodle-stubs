@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class CustomerSettings extends \Google\Model
-{
-    protected $auditLoggingSettingsType = AuditLoggingSettings::class;
-    protected $auditLoggingSettingsDataType = '';
-    protected $vpcSettingsType = VPCSettings::class;
-    protected $vpcSettingsDataType = '';
-    /**
-     * Audit Logging settings for the customer. If update_mask is empty then this
-     * field will be updated based on UpdateCustomerSettings request.
-     *
-     * @param AuditLoggingSettings $auditLoggingSettings
-     */
-    public function setAuditLoggingSettings(AuditLoggingSettings $auditLoggingSettings)
+namespace Google\Service\CloudSearch {
+    class CustomerSettings extends \Google\Model
     {
+        protected $auditLoggingSettingsType = AuditLoggingSettings::class;
+        protected $auditLoggingSettingsDataType = '';
+        protected $vpcSettingsType = VPCSettings::class;
+        protected $vpcSettingsDataType = '';
+        /**
+         * Audit Logging settings for the customer. If update_mask is empty then this
+         * field will be updated based on UpdateCustomerSettings request.
+         *
+         * @param AuditLoggingSettings $auditLoggingSettings
+         */
+        public function setAuditLoggingSettings(AuditLoggingSettings $auditLoggingSettings)
+        {
+        }
+        /**
+         * @return AuditLoggingSettings
+         */
+        public function getAuditLoggingSettings()
+        {
+        }
+        /**
+         * VPC SC settings for the customer. If update_mask is empty then this field
+         * will be updated based on UpdateCustomerSettings request.
+         *
+         * @param VPCSettings $vpcSettings
+         */
+        public function setVpcSettings(VPCSettings $vpcSettings)
+        {
+        }
+        /**
+         * @return VPCSettings
+         */
+        public function getVpcSettings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AuditLoggingSettings
+     * Runtime class alias of \Google\Service\CloudSearch\CustomerSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuditLoggingSettings()
-    {
-    }
-    /**
-     * VPC SC settings for the customer. If update_mask is empty then this field
-     * will be updated based on UpdateCustomerSettings request.
-     *
-     * @param VPCSettings $vpcSettings
-     */
-    public function setVpcSettings(VPCSettings $vpcSettings)
-    {
-    }
-    /**
-     * @return VPCSettings
-     */
-    public function getVpcSettings()
+    class Google_Service_CloudSearch_CustomerSettings extends \Google\Service\CloudSearch\CustomerSettings
     {
     }
 }

@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkServices;
-
-class ListGatewayRouteViewsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $gatewayRouteViewsType = GatewayRouteView::class;
-    protected $gatewayRouteViewsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Unreachable resources. Populated when the request attempts to list all
-     * resources across all supported locations, while some locations are
-     * temporarily unavailable.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * List of GatewayRouteView resources.
-     *
-     * @param GatewayRouteView[] $gatewayRouteViews
-     */
-    public function setGatewayRouteViews($gatewayRouteViews)
+namespace Google\Service\NetworkServices {
+    class ListGatewayRouteViewsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $gatewayRouteViewsType = GatewayRouteView::class;
+        protected $gatewayRouteViewsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Unreachable resources. Populated when the request attempts to list all
+         * resources across all supported locations, while some locations are
+         * temporarily unavailable.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * List of GatewayRouteView resources.
+         *
+         * @param GatewayRouteView[] $gatewayRouteViews
+         */
+        public function setGatewayRouteViews($gatewayRouteViews)
+        {
+        }
+        /**
+         * @return GatewayRouteView[]
+         */
+        public function getGatewayRouteViews()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Unreachable resources. Populated when the request attempts to list all
+         * resources across all supported locations, while some locations are
+         * temporarily unavailable.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GatewayRouteView[]
+     * Runtime class alias of \Google\Service\NetworkServices\ListGatewayRouteViewsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGatewayRouteViews()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Unreachable resources. Populated when the request attempts to list all
-     * resources across all supported locations, while some locations are
-     * temporarily unavailable.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_NetworkServices_ListGatewayRouteViewsResponse extends \Google\Service\NetworkServices\ListGatewayRouteViewsResponse
     {
     }
 }

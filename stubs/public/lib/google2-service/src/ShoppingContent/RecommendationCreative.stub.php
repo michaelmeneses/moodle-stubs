@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class RecommendationCreative extends \Google\Model
-{
-    /**
-     * Default value. If provided, shall be considered invalid.
-     */
-    public const TYPE_CREATIVE_TYPE_UNSPECIFIED = 'CREATIVE_TYPE_UNSPECIFIED';
-    /**
-     * Video creatives.
-     */
-    public const TYPE_VIDEO = 'VIDEO';
-    /**
-     * Photo creatives.
-     */
-    public const TYPE_PHOTO = 'PHOTO';
-    /**
-     * Type of the creative.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * URL of the creative.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * Type of the creative.
-     *
-     * Accepted values: CREATIVE_TYPE_UNSPECIFIED, VIDEO, PHOTO
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
+namespace Google\Service\ShoppingContent {
+    class RecommendationCreative extends \Google\Model
     {
+        /**
+         * Default value. If provided, shall be considered invalid.
+         */
+        public const TYPE_CREATIVE_TYPE_UNSPECIFIED = 'CREATIVE_TYPE_UNSPECIFIED';
+        /**
+         * Video creatives.
+         */
+        public const TYPE_VIDEO = 'VIDEO';
+        /**
+         * Photo creatives.
+         */
+        public const TYPE_PHOTO = 'PHOTO';
+        /**
+         * Type of the creative.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * URL of the creative.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * Type of the creative.
+         *
+         * Accepted values: CREATIVE_TYPE_UNSPECIFIED, VIDEO, PHOTO
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
+        /**
+         * URL of the creative.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::TYPE_*
+     * Runtime class alias of \Google\Service\ShoppingContent\RecommendationCreative registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getType()
-    {
-    }
-    /**
-     * URL of the creative.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_ShoppingContent_RecommendationCreative extends \Google\Service\ShoppingContent\RecommendationCreative
     {
     }
 }

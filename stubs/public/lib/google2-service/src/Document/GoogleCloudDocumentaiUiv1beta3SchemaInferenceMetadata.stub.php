@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiUiv1beta3SchemaInferenceMetadata extends \Google\Model
-{
-    /**
-     * True if is inferred by schema inference.
-     *
-     * @var bool
-     */
-    public $inferred;
-    /**
-     * True if is inferred by schema inference.
-     *
-     * @param bool $inferred
-     */
-    public function setInferred($inferred)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiUiv1beta3SchemaInferenceMetadata extends \Google\Model
     {
+        /**
+         * True if is inferred by schema inference.
+         *
+         * @var bool
+         */
+        public $inferred;
+        /**
+         * True if is inferred by schema inference.
+         *
+         * @param bool $inferred
+         */
+        public function setInferred($inferred)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getInferred()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiUiv1beta3SchemaInferenceMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInferred()
+    class Google_Service_Document_GoogleCloudDocumentaiUiv1beta3SchemaInferenceMetadata extends \Google\Service\Document\GoogleCloudDocumentaiUiv1beta3SchemaInferenceMetadata
     {
     }
 }

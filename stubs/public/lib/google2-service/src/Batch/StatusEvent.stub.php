@@ -21,136 +21,145 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Batch;
-
-class StatusEvent extends \Google\Model
-{
-    /**
-     * Unknown state.
-     */
-    public const TASK_STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * The Task is created and waiting for resources.
-     */
-    public const TASK_STATE_PENDING = 'PENDING';
-    /**
-     * The Task is assigned to at least one VM.
-     */
-    public const TASK_STATE_ASSIGNED = 'ASSIGNED';
-    /**
-     * The Task is running.
-     */
-    public const TASK_STATE_RUNNING = 'RUNNING';
-    /**
-     * The Task has failed.
-     */
-    public const TASK_STATE_FAILED = 'FAILED';
-    /**
-     * The Task has succeeded.
-     */
-    public const TASK_STATE_SUCCEEDED = 'SUCCEEDED';
-    /**
-     * The Task has not been executed when the Job finishes.
-     */
-    public const TASK_STATE_UNEXECUTED = 'UNEXECUTED';
-    /**
-     * Description of the event.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * The time this event occurred.
-     *
-     * @var string
-     */
-    public $eventTime;
-    protected $taskExecutionType = TaskExecution::class;
-    protected $taskExecutionDataType = '';
-    /**
-     * Task State. This field is only defined for task-level status events.
-     *
-     * @var string
-     */
-    public $taskState;
-    /**
-     * Type of the event.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Description of the event.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\Batch {
+    class StatusEvent extends \Google\Model
     {
+        /**
+         * Unknown state.
+         */
+        public const TASK_STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * The Task is created and waiting for resources.
+         */
+        public const TASK_STATE_PENDING = 'PENDING';
+        /**
+         * The Task is assigned to at least one VM.
+         */
+        public const TASK_STATE_ASSIGNED = 'ASSIGNED';
+        /**
+         * The Task is running.
+         */
+        public const TASK_STATE_RUNNING = 'RUNNING';
+        /**
+         * The Task has failed.
+         */
+        public const TASK_STATE_FAILED = 'FAILED';
+        /**
+         * The Task has succeeded.
+         */
+        public const TASK_STATE_SUCCEEDED = 'SUCCEEDED';
+        /**
+         * The Task has not been executed when the Job finishes.
+         */
+        public const TASK_STATE_UNEXECUTED = 'UNEXECUTED';
+        /**
+         * Description of the event.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * The time this event occurred.
+         *
+         * @var string
+         */
+        public $eventTime;
+        protected $taskExecutionType = TaskExecution::class;
+        protected $taskExecutionDataType = '';
+        /**
+         * Task State. This field is only defined for task-level status events.
+         *
+         * @var string
+         */
+        public $taskState;
+        /**
+         * Type of the event.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Description of the event.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * The time this event occurred.
+         *
+         * @param string $eventTime
+         */
+        public function setEventTime($eventTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEventTime()
+        {
+        }
+        /**
+         * Task Execution. This field is only defined for task-level status events
+         * where the task fails.
+         *
+         * @param TaskExecution $taskExecution
+         */
+        public function setTaskExecution(TaskExecution $taskExecution)
+        {
+        }
+        /**
+         * @return TaskExecution
+         */
+        public function getTaskExecution()
+        {
+        }
+        /**
+         * Task State. This field is only defined for task-level status events.
+         *
+         * Accepted values: STATE_UNSPECIFIED, PENDING, ASSIGNED, RUNNING, FAILED,
+         * SUCCEEDED, UNEXECUTED
+         *
+         * @param self::TASK_STATE_* $taskState
+         */
+        public function setTaskState($taskState)
+        {
+        }
+        /**
+         * @return self::TASK_STATE_*
+         */
+        public function getTaskState()
+        {
+        }
+        /**
+         * Type of the event.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Batch\StatusEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * The time this event occurred.
-     *
-     * @param string $eventTime
-     */
-    public function setEventTime($eventTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEventTime()
-    {
-    }
-    /**
-     * Task Execution. This field is only defined for task-level status events
-     * where the task fails.
-     *
-     * @param TaskExecution $taskExecution
-     */
-    public function setTaskExecution(TaskExecution $taskExecution)
-    {
-    }
-    /**
-     * @return TaskExecution
-     */
-    public function getTaskExecution()
-    {
-    }
-    /**
-     * Task State. This field is only defined for task-level status events.
-     *
-     * Accepted values: STATE_UNSPECIFIED, PENDING, ASSIGNED, RUNNING, FAILED,
-     * SUCCEEDED, UNEXECUTED
-     *
-     * @param self::TASK_STATE_* $taskState
-     */
-    public function setTaskState($taskState)
-    {
-    }
-    /**
-     * @return self::TASK_STATE_*
-     */
-    public function getTaskState()
-    {
-    }
-    /**
-     * Type of the event.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_Batch_StatusEvent extends \Google\Service\Batch\StatusEvent
     {
     }
 }

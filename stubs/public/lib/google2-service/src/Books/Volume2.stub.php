@@ -21,61 +21,70 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class Volume2 extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    protected $itemsType = Volume::class;
-    protected $itemsDataType = 'array';
-    /**
-     * Resource type.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * A list of volumes.
-     *
-     * @param Volume[] $items
-     */
-    public function setItems($items)
+namespace Google\Service\Books {
+    class Volume2 extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        protected $itemsType = Volume::class;
+        protected $itemsDataType = 'array';
+        /**
+         * Resource type.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * A list of volumes.
+         *
+         * @param Volume[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return Volume[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * Resource type.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Volume[]
+     * Runtime class alias of \Google\Service\Books\Volume2 registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItems()
-    {
-    }
-    /**
-     * Resource type.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Books_Volume2 extends \Google\Service\Books\Volume2
     {
     }
 }

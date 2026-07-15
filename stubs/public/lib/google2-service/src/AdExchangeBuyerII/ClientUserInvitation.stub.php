@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyerII;
-
-class ClientUserInvitation extends \Google\Model
-{
-    /**
-     * Numerical account ID of the client buyer that the invited user is
-     * associated with. The value of this field is ignored in create operations.
-     *
-     * @var string
-     */
-    public $clientAccountId;
-    /**
-     * The email address to which the invitation is sent. Email addresses should
-     * be unique among all client users under each sponsor buyer.
-     *
-     * @var string
-     */
-    public $email;
-    /**
-     * The unique numerical ID of the invitation that is sent to the user. The
-     * value of this field is ignored in create operations.
-     *
-     * @var string
-     */
-    public $invitationId;
-    /**
-     * Numerical account ID of the client buyer that the invited user is
-     * associated with. The value of this field is ignored in create operations.
-     *
-     * @param string $clientAccountId
-     */
-    public function setClientAccountId($clientAccountId)
+namespace Google\Service\AdExchangeBuyerII {
+    class ClientUserInvitation extends \Google\Model
     {
+        /**
+         * Numerical account ID of the client buyer that the invited user is
+         * associated with. The value of this field is ignored in create operations.
+         *
+         * @var string
+         */
+        public $clientAccountId;
+        /**
+         * The email address to which the invitation is sent. Email addresses should
+         * be unique among all client users under each sponsor buyer.
+         *
+         * @var string
+         */
+        public $email;
+        /**
+         * The unique numerical ID of the invitation that is sent to the user. The
+         * value of this field is ignored in create operations.
+         *
+         * @var string
+         */
+        public $invitationId;
+        /**
+         * Numerical account ID of the client buyer that the invited user is
+         * associated with. The value of this field is ignored in create operations.
+         *
+         * @param string $clientAccountId
+         */
+        public function setClientAccountId($clientAccountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClientAccountId()
+        {
+        }
+        /**
+         * The email address to which the invitation is sent. Email addresses should
+         * be unique among all client users under each sponsor buyer.
+         *
+         * @param string $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
+        /**
+         * The unique numerical ID of the invitation that is sent to the user. The
+         * value of this field is ignored in create operations.
+         *
+         * @param string $invitationId
+         */
+        public function setInvitationId($invitationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInvitationId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AdExchangeBuyerII\ClientUserInvitation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClientAccountId()
-    {
-    }
-    /**
-     * The email address to which the invitation is sent. Email addresses should
-     * be unique among all client users under each sponsor buyer.
-     *
-     * @param string $email
-     */
-    public function setEmail($email)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEmail()
-    {
-    }
-    /**
-     * The unique numerical ID of the invitation that is sent to the user. The
-     * value of this field is ignored in create operations.
-     *
-     * @param string $invitationId
-     */
-    public function setInvitationId($invitationId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInvitationId()
+    class Google_Service_AdExchangeBuyerII_ClientUserInvitation extends \Google\Service\AdExchangeBuyerII\ClientUserInvitation
     {
     }
 }

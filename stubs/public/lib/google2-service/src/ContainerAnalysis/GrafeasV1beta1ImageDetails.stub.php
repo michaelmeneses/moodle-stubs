@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class GrafeasV1beta1ImageDetails extends \Google\Model
-{
-    protected $derivedImageType = Derived::class;
-    protected $derivedImageDataType = '';
-    /**
-     * @param Derived
-     */
-    public function setDerivedImage(Derived $derivedImage)
+namespace Google\Service\ContainerAnalysis {
+    class GrafeasV1beta1ImageDetails extends \Google\Model
     {
+        protected $derivedImageType = Derived::class;
+        protected $derivedImageDataType = '';
+        /**
+         * @param Derived
+         */
+        public function setDerivedImage(Derived $derivedImage)
+        {
+        }
+        /**
+         * @return Derived
+         */
+        public function getDerivedImage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Derived
+     * Runtime class alias of \Google\Service\ContainerAnalysis\GrafeasV1beta1ImageDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDerivedImage()
+    class Google_Service_ContainerAnalysis_GrafeasV1beta1ImageDetails extends \Google\Service\ContainerAnalysis\GrafeasV1beta1ImageDetails
     {
     }
 }

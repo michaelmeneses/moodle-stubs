@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkSecurity;
-
-class AuthzPolicyCustomProvider extends \Google\Model
-{
-    protected $authzExtensionType = AuthzPolicyCustomProviderAuthzExtension::class;
-    protected $authzExtensionDataType = '';
-    protected $cloudIapType = AuthzPolicyCustomProviderCloudIap::class;
-    protected $cloudIapDataType = '';
-    /**
-     * Optional. Delegate authorization decision to user authored Service
-     * Extension. Only one of cloudIap or authzExtension can be specified.
-     *
-     * @param AuthzPolicyCustomProviderAuthzExtension $authzExtension
-     */
-    public function setAuthzExtension(AuthzPolicyCustomProviderAuthzExtension $authzExtension)
+namespace Google\Service\NetworkSecurity {
+    class AuthzPolicyCustomProvider extends \Google\Model
     {
+        protected $authzExtensionType = AuthzPolicyCustomProviderAuthzExtension::class;
+        protected $authzExtensionDataType = '';
+        protected $cloudIapType = AuthzPolicyCustomProviderCloudIap::class;
+        protected $cloudIapDataType = '';
+        /**
+         * Optional. Delegate authorization decision to user authored Service
+         * Extension. Only one of cloudIap or authzExtension can be specified.
+         *
+         * @param AuthzPolicyCustomProviderAuthzExtension $authzExtension
+         */
+        public function setAuthzExtension(AuthzPolicyCustomProviderAuthzExtension $authzExtension)
+        {
+        }
+        /**
+         * @return AuthzPolicyCustomProviderAuthzExtension
+         */
+        public function getAuthzExtension()
+        {
+        }
+        /**
+         * Optional. Delegates authorization decisions to Cloud IAP. Applicable only
+         * for managed load balancers. Enabling Cloud IAP at the AuthzPolicy level is
+         * not compatible with Cloud IAP settings in the BackendService. Enabling IAP
+         * in both places will result in request failure. Ensure that IAP is enabled
+         * in either the AuthzPolicy or the BackendService but not in both places.
+         *
+         * @param AuthzPolicyCustomProviderCloudIap $cloudIap
+         */
+        public function setCloudIap(AuthzPolicyCustomProviderCloudIap $cloudIap)
+        {
+        }
+        /**
+         * @return AuthzPolicyCustomProviderCloudIap
+         */
+        public function getCloudIap()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AuthzPolicyCustomProviderAuthzExtension
+     * Runtime class alias of \Google\Service\NetworkSecurity\AuthzPolicyCustomProvider registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuthzExtension()
-    {
-    }
-    /**
-     * Optional. Delegates authorization decisions to Cloud IAP. Applicable only
-     * for managed load balancers. Enabling Cloud IAP at the AuthzPolicy level is
-     * not compatible with Cloud IAP settings in the BackendService. Enabling IAP
-     * in both places will result in request failure. Ensure that IAP is enabled
-     * in either the AuthzPolicy or the BackendService but not in both places.
-     *
-     * @param AuthzPolicyCustomProviderCloudIap $cloudIap
-     */
-    public function setCloudIap(AuthzPolicyCustomProviderCloudIap $cloudIap)
-    {
-    }
-    /**
-     * @return AuthzPolicyCustomProviderCloudIap
-     */
-    public function getCloudIap()
+    class Google_Service_NetworkSecurity_AuthzPolicyCustomProvider extends \Google\Service\NetworkSecurity\AuthzPolicyCustomProvider
     {
     }
 }

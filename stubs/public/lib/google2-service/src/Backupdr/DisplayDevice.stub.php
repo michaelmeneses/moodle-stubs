@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Backupdr;
-
-class DisplayDevice extends \Google\Model
-{
-    /**
-     * Optional. Enables display for the Compute Engine VM
-     *
-     * @var bool
-     */
-    public $enableDisplay;
-    /**
-     * Optional. Enables display for the Compute Engine VM
-     *
-     * @param bool $enableDisplay
-     */
-    public function setEnableDisplay($enableDisplay)
+namespace Google\Service\Backupdr {
+    class DisplayDevice extends \Google\Model
     {
+        /**
+         * Optional. Enables display for the Compute Engine VM
+         *
+         * @var bool
+         */
+        public $enableDisplay;
+        /**
+         * Optional. Enables display for the Compute Engine VM
+         *
+         * @param bool $enableDisplay
+         */
+        public function setEnableDisplay($enableDisplay)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableDisplay()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Backupdr\DisplayDevice registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnableDisplay()
+    class Google_Service_Backupdr_DisplayDevice extends \Google\Service\Backupdr\DisplayDevice
     {
     }
 }

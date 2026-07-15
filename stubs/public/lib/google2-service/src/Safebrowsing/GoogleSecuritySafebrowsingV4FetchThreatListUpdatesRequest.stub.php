@@ -21,37 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Safebrowsing;
-
-class GoogleSecuritySafebrowsingV4FetchThreatListUpdatesRequest extends \Google\Collection
-{
-    protected $collection_key = 'listUpdateRequests';
-    protected $clientType = GoogleSecuritySafebrowsingV4ClientInfo::class;
-    protected $clientDataType = '';
-    protected $listUpdateRequestsType = GoogleSecuritySafebrowsingV4FetchThreatListUpdatesRequestListUpdateRequest::class;
-    protected $listUpdateRequestsDataType = 'array';
-    /**
-     * @param GoogleSecuritySafebrowsingV4ClientInfo
-     */
-    public function setClient(GoogleSecuritySafebrowsingV4ClientInfo $client)
+namespace Google\Service\Safebrowsing {
+    class GoogleSecuritySafebrowsingV4FetchThreatListUpdatesRequest extends \Google\Collection
     {
+        protected $collection_key = 'listUpdateRequests';
+        protected $clientType = GoogleSecuritySafebrowsingV4ClientInfo::class;
+        protected $clientDataType = '';
+        protected $listUpdateRequestsType = GoogleSecuritySafebrowsingV4FetchThreatListUpdatesRequestListUpdateRequest::class;
+        protected $listUpdateRequestsDataType = 'array';
+        /**
+         * @param GoogleSecuritySafebrowsingV4ClientInfo
+         */
+        public function setClient(GoogleSecuritySafebrowsingV4ClientInfo $client)
+        {
+        }
+        /**
+         * @return GoogleSecuritySafebrowsingV4ClientInfo
+         */
+        public function getClient()
+        {
+        }
+        /**
+         * @param GoogleSecuritySafebrowsingV4FetchThreatListUpdatesRequestListUpdateRequest[]
+         */
+        public function setListUpdateRequests($listUpdateRequests)
+        {
+        }
+        /**
+         * @return GoogleSecuritySafebrowsingV4FetchThreatListUpdatesRequestListUpdateRequest[]
+         */
+        public function getListUpdateRequests()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleSecuritySafebrowsingV4ClientInfo
+     * Runtime class alias of \Google\Service\Safebrowsing\GoogleSecuritySafebrowsingV4FetchThreatListUpdatesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClient()
-    {
-    }
-    /**
-     * @param GoogleSecuritySafebrowsingV4FetchThreatListUpdatesRequestListUpdateRequest[]
-     */
-    public function setListUpdateRequests($listUpdateRequests)
-    {
-    }
-    /**
-     * @return GoogleSecuritySafebrowsingV4FetchThreatListUpdatesRequestListUpdateRequest[]
-     */
-    public function getListUpdateRequests()
+    class Google_Service_Safebrowsing_GoogleSecuritySafebrowsingV4FetchThreatListUpdatesRequest extends \Google\Service\Safebrowsing\GoogleSecuritySafebrowsingV4FetchThreatListUpdatesRequest
     {
     }
 }

@@ -21,80 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3ExportPlaybookRequest extends \Google\Model
-{
-    /**
-     * Unspecified format.
-     */
-    public const DATA_FORMAT_DATA_FORMAT_UNSPECIFIED = 'DATA_FORMAT_UNSPECIFIED';
-    /**
-     * Flow content will be exported as raw bytes.
-     */
-    public const DATA_FORMAT_BLOB = 'BLOB';
-    /**
-     * Flow content will be exported in JSON format.
-     */
-    public const DATA_FORMAT_JSON = 'JSON';
-    /**
-     * Optional. The data format of the exported agent. If not specified, `BLOB`
-     * is assumed.
-     *
-     * @var string
-     */
-    public $dataFormat;
-    /**
-     * Optional. The [Google Cloud
-     * Storage](https://cloud.google.com/storage/docs/) URI to export the playbook
-     * to. The format of this URI must be `gs:`. If left unspecified, the
-     * serialized playbook is returned inline. Dialogflow performs a write
-     * operation for the Cloud Storage object on the caller's behalf, so your
-     * request authentication must have write permissions for the object. For more
-     * information, see [Dialogflow access
-     * control](https://cloud.google.com/dialogflow/cx/docs/concept/access-
-     * control#storage).
-     *
-     * @var string
-     */
-    public $playbookUri;
-    /**
-     * Optional. The data format of the exported agent. If not specified, `BLOB`
-     * is assumed.
-     *
-     * Accepted values: DATA_FORMAT_UNSPECIFIED, BLOB, JSON
-     *
-     * @param self::DATA_FORMAT_* $dataFormat
-     */
-    public function setDataFormat($dataFormat)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3ExportPlaybookRequest extends \Google\Model
     {
+        /**
+         * Unspecified format.
+         */
+        public const DATA_FORMAT_DATA_FORMAT_UNSPECIFIED = 'DATA_FORMAT_UNSPECIFIED';
+        /**
+         * Flow content will be exported as raw bytes.
+         */
+        public const DATA_FORMAT_BLOB = 'BLOB';
+        /**
+         * Flow content will be exported in JSON format.
+         */
+        public const DATA_FORMAT_JSON = 'JSON';
+        /**
+         * Optional. The data format of the exported agent. If not specified, `BLOB`
+         * is assumed.
+         *
+         * @var string
+         */
+        public $dataFormat;
+        /**
+         * Optional. The [Google Cloud
+         * Storage](https://cloud.google.com/storage/docs/) URI to export the playbook
+         * to. The format of this URI must be `gs:`. If left unspecified, the
+         * serialized playbook is returned inline. Dialogflow performs a write
+         * operation for the Cloud Storage object on the caller's behalf, so your
+         * request authentication must have write permissions for the object. For more
+         * information, see [Dialogflow access
+         * control](https://cloud.google.com/dialogflow/cx/docs/concept/access-
+         * control#storage).
+         *
+         * @var string
+         */
+        public $playbookUri;
+        /**
+         * Optional. The data format of the exported agent. If not specified, `BLOB`
+         * is assumed.
+         *
+         * Accepted values: DATA_FORMAT_UNSPECIFIED, BLOB, JSON
+         *
+         * @param self::DATA_FORMAT_* $dataFormat
+         */
+        public function setDataFormat($dataFormat)
+        {
+        }
+        /**
+         * @return self::DATA_FORMAT_*
+         */
+        public function getDataFormat()
+        {
+        }
+        /**
+         * Optional. The [Google Cloud
+         * Storage](https://cloud.google.com/storage/docs/) URI to export the playbook
+         * to. The format of this URI must be `gs:`. If left unspecified, the
+         * serialized playbook is returned inline. Dialogflow performs a write
+         * operation for the Cloud Storage object on the caller's behalf, so your
+         * request authentication must have write permissions for the object. For more
+         * information, see [Dialogflow access
+         * control](https://cloud.google.com/dialogflow/cx/docs/concept/access-
+         * control#storage).
+         *
+         * @param string $playbookUri
+         */
+        public function setPlaybookUri($playbookUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPlaybookUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::DATA_FORMAT_*
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ExportPlaybookRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataFormat()
-    {
-    }
-    /**
-     * Optional. The [Google Cloud
-     * Storage](https://cloud.google.com/storage/docs/) URI to export the playbook
-     * to. The format of this URI must be `gs:`. If left unspecified, the
-     * serialized playbook is returned inline. Dialogflow performs a write
-     * operation for the Cloud Storage object on the caller's behalf, so your
-     * request authentication must have write permissions for the object. For more
-     * information, see [Dialogflow access
-     * control](https://cloud.google.com/dialogflow/cx/docs/concept/access-
-     * control#storage).
-     *
-     * @param string $playbookUri
-     */
-    public function setPlaybookUri($playbookUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPlaybookUri()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3ExportPlaybookRequest extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ExportPlaybookRequest
     {
     }
 }

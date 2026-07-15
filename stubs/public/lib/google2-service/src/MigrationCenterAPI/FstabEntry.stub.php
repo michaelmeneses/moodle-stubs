@@ -21,130 +21,139 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class FstabEntry extends \Google\Model
-{
-    /**
-     * The mount point for the filesystem.
-     *
-     * @var string
-     */
-    public $file;
-    /**
-     * Used by dump to determine which filesystems need to be dumped.
-     *
-     * @var int
-     */
-    public $freq;
-    /**
-     * Mount options associated with the filesystem.
-     *
-     * @var string
-     */
-    public $mntops;
-    /**
-     * Used by the fsck(8) program to determine the order in which filesystem
-     * checks are done at reboot time.
-     *
-     * @var int
-     */
-    public $passno;
-    /**
-     * The block special device or remote filesystem to be mounted.
-     *
-     * @var string
-     */
-    public $spec;
-    /**
-     * The type of the filesystem.
-     *
-     * @var string
-     */
-    public $vfstype;
-    /**
-     * The mount point for the filesystem.
-     *
-     * @param string $file
-     */
-    public function setFile($file)
+namespace Google\Service\MigrationCenterAPI {
+    class FstabEntry extends \Google\Model
     {
+        /**
+         * The mount point for the filesystem.
+         *
+         * @var string
+         */
+        public $file;
+        /**
+         * Used by dump to determine which filesystems need to be dumped.
+         *
+         * @var int
+         */
+        public $freq;
+        /**
+         * Mount options associated with the filesystem.
+         *
+         * @var string
+         */
+        public $mntops;
+        /**
+         * Used by the fsck(8) program to determine the order in which filesystem
+         * checks are done at reboot time.
+         *
+         * @var int
+         */
+        public $passno;
+        /**
+         * The block special device or remote filesystem to be mounted.
+         *
+         * @var string
+         */
+        public $spec;
+        /**
+         * The type of the filesystem.
+         *
+         * @var string
+         */
+        public $vfstype;
+        /**
+         * The mount point for the filesystem.
+         *
+         * @param string $file
+         */
+        public function setFile($file)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFile()
+        {
+        }
+        /**
+         * Used by dump to determine which filesystems need to be dumped.
+         *
+         * @param int $freq
+         */
+        public function setFreq($freq)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getFreq()
+        {
+        }
+        /**
+         * Mount options associated with the filesystem.
+         *
+         * @param string $mntops
+         */
+        public function setMntops($mntops)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMntops()
+        {
+        }
+        /**
+         * Used by the fsck(8) program to determine the order in which filesystem
+         * checks are done at reboot time.
+         *
+         * @param int $passno
+         */
+        public function setPassno($passno)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPassno()
+        {
+        }
+        /**
+         * The block special device or remote filesystem to be mounted.
+         *
+         * @param string $spec
+         */
+        public function setSpec($spec)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSpec()
+        {
+        }
+        /**
+         * The type of the filesystem.
+         *
+         * @param string $vfstype
+         */
+        public function setVfstype($vfstype)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVfstype()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\FstabEntry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFile()
-    {
-    }
-    /**
-     * Used by dump to determine which filesystems need to be dumped.
-     *
-     * @param int $freq
-     */
-    public function setFreq($freq)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getFreq()
-    {
-    }
-    /**
-     * Mount options associated with the filesystem.
-     *
-     * @param string $mntops
-     */
-    public function setMntops($mntops)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMntops()
-    {
-    }
-    /**
-     * Used by the fsck(8) program to determine the order in which filesystem
-     * checks are done at reboot time.
-     *
-     * @param int $passno
-     */
-    public function setPassno($passno)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPassno()
-    {
-    }
-    /**
-     * The block special device or remote filesystem to be mounted.
-     *
-     * @param string $spec
-     */
-    public function setSpec($spec)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSpec()
-    {
-    }
-    /**
-     * The type of the filesystem.
-     *
-     * @param string $vfstype
-     */
-    public function setVfstype($vfstype)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVfstype()
+    class Google_Service_MigrationCenterAPI_FstabEntry extends \Google\Service\MigrationCenterAPI\FstabEntry
     {
     }
 }

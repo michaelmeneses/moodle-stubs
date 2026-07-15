@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class AccounttaxCustomBatchResponse extends \Google\Collection
-{
-    protected $collection_key = 'entries';
-    protected $entriesType = AccounttaxCustomBatchResponseEntry::class;
-    protected $entriesDataType = 'array';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "`content#accounttaxCustomBatchResponse`".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The result of the execution of the batch requests.
-     *
-     * @param AccounttaxCustomBatchResponseEntry[] $entries
-     */
-    public function setEntries($entries)
+namespace Google\Service\ShoppingContent {
+    class AccounttaxCustomBatchResponse extends \Google\Collection
     {
+        protected $collection_key = 'entries';
+        protected $entriesType = AccounttaxCustomBatchResponseEntry::class;
+        protected $entriesDataType = 'array';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "`content#accounttaxCustomBatchResponse`".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The result of the execution of the batch requests.
+         *
+         * @param AccounttaxCustomBatchResponseEntry[] $entries
+         */
+        public function setEntries($entries)
+        {
+        }
+        /**
+         * @return AccounttaxCustomBatchResponseEntry[]
+         */
+        public function getEntries()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "`content#accounttaxCustomBatchResponse`".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AccounttaxCustomBatchResponseEntry[]
+     * Runtime class alias of \Google\Service\ShoppingContent\AccounttaxCustomBatchResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntries()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "`content#accounttaxCustomBatchResponse`".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_ShoppingContent_AccounttaxCustomBatchResponse extends \Google\Service\ShoppingContent\AccounttaxCustomBatchResponse
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigQueryDataTransfer;
-
-class CheckValidCredsResponse extends \Google\Model
-{
-    /**
-     * If set to `true`, the credentials exist and are valid.
-     *
-     * @var bool
-     */
-    public $hasValidCreds;
-    /**
-     * If set to `true`, the credentials exist and are valid.
-     *
-     * @param bool $hasValidCreds
-     */
-    public function setHasValidCreds($hasValidCreds)
+namespace Google\Service\BigQueryDataTransfer {
+    class CheckValidCredsResponse extends \Google\Model
     {
+        /**
+         * If set to `true`, the credentials exist and are valid.
+         *
+         * @var bool
+         */
+        public $hasValidCreds;
+        /**
+         * If set to `true`, the credentials exist and are valid.
+         *
+         * @param bool $hasValidCreds
+         */
+        public function setHasValidCreds($hasValidCreds)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getHasValidCreds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\BigQueryDataTransfer\CheckValidCredsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHasValidCreds()
+    class Google_Service_BigQueryDataTransfer_CheckValidCredsResponse extends \Google\Service\BigQueryDataTransfer\CheckValidCredsResponse
     {
     }
 }

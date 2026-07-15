@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class MeshIstio extends \Google\Model
-{
-    /**
-     * Identifier for the mesh in which this Istio service is defined. Corresponds
-     * to the mesh_uid metric label in Istio metrics.
-     *
-     * @var string
-     */
-    public $meshUid;
-    /**
-     * The name of the Istio service underlying this service. Corresponds to the
-     * destination_service_name metric label in Istio metrics.
-     *
-     * @var string
-     */
-    public $serviceName;
-    /**
-     * The namespace of the Istio service underlying this service. Corresponds to
-     * the destination_service_namespace metric label in Istio metrics.
-     *
-     * @var string
-     */
-    public $serviceNamespace;
-    /**
-     * Identifier for the mesh in which this Istio service is defined. Corresponds
-     * to the mesh_uid metric label in Istio metrics.
-     *
-     * @param string $meshUid
-     */
-    public function setMeshUid($meshUid)
+namespace Google\Service\Monitoring {
+    class MeshIstio extends \Google\Model
     {
+        /**
+         * Identifier for the mesh in which this Istio service is defined. Corresponds
+         * to the mesh_uid metric label in Istio metrics.
+         *
+         * @var string
+         */
+        public $meshUid;
+        /**
+         * The name of the Istio service underlying this service. Corresponds to the
+         * destination_service_name metric label in Istio metrics.
+         *
+         * @var string
+         */
+        public $serviceName;
+        /**
+         * The namespace of the Istio service underlying this service. Corresponds to
+         * the destination_service_namespace metric label in Istio metrics.
+         *
+         * @var string
+         */
+        public $serviceNamespace;
+        /**
+         * Identifier for the mesh in which this Istio service is defined. Corresponds
+         * to the mesh_uid metric label in Istio metrics.
+         *
+         * @param string $meshUid
+         */
+        public function setMeshUid($meshUid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMeshUid()
+        {
+        }
+        /**
+         * The name of the Istio service underlying this service. Corresponds to the
+         * destination_service_name metric label in Istio metrics.
+         *
+         * @param string $serviceName
+         */
+        public function setServiceName($serviceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceName()
+        {
+        }
+        /**
+         * The namespace of the Istio service underlying this service. Corresponds to
+         * the destination_service_namespace metric label in Istio metrics.
+         *
+         * @param string $serviceNamespace
+         */
+        public function setServiceNamespace($serviceNamespace)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceNamespace()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Monitoring\MeshIstio registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMeshUid()
-    {
-    }
-    /**
-     * The name of the Istio service underlying this service. Corresponds to the
-     * destination_service_name metric label in Istio metrics.
-     *
-     * @param string $serviceName
-     */
-    public function setServiceName($serviceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceName()
-    {
-    }
-    /**
-     * The namespace of the Istio service underlying this service. Corresponds to
-     * the destination_service_namespace metric label in Istio metrics.
-     *
-     * @param string $serviceNamespace
-     */
-    public function setServiceNamespace($serviceNamespace)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceNamespace()
+    class Google_Service_Monitoring_MeshIstio extends \Google\Service\Monitoring\MeshIstio
     {
     }
 }

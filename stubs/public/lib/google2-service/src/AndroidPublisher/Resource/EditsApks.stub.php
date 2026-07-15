@@ -21,56 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher\Resource;
-
-/**
- * The "apks" collection of methods.
- * Typical usage is:
- *  <code>
- *   $androidpublisherService = new Google\Service\AndroidPublisher(...);
- *   $apks = $androidpublisherService->edits_apks;
- *  </code>
- */
-class EditsApks extends \Google\Service\Resource
-{
+namespace Google\Service\AndroidPublisher\Resource {
+    use Google\Service\AndroidPublisher\Apk;
+    use Google\Service\AndroidPublisher\ApksAddExternallyHostedRequest;
+    use Google\Service\AndroidPublisher\ApksAddExternallyHostedResponse;
+    use Google\Service\AndroidPublisher\ApksListResponse;
     /**
-     * Creates a new APK without uploading the APK itself to Google Play, instead
-     * hosting the APK at a specified URL. This function is only available to
-     * organizations using Managed Play whose application is configured to restrict
-     * distribution to the organizations. (apks.addexternallyhosted)
-     *
-     * @param string $packageName Package name of the app.
-     * @param string $editId Identifier of the edit.
-     * @param ApksAddExternallyHostedRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return ApksAddExternallyHostedResponse
-     * @throws \Google\Service\Exception
+     * The "apks" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $androidpublisherService = new Google\Service\AndroidPublisher(...);
+     *   $apks = $androidpublisherService->edits_apks;
+     *  </code>
      */
-    public function addexternallyhosted($packageName, $editId, ApksAddExternallyHostedRequest $postBody, $optParams = [])
+    class EditsApks extends \Google\Service\Resource
     {
+        /**
+         * Creates a new APK without uploading the APK itself to Google Play, instead
+         * hosting the APK at a specified URL. This function is only available to
+         * organizations using Managed Play whose application is configured to restrict
+         * distribution to the organizations. (apks.addexternallyhosted)
+         *
+         * @param string $packageName Package name of the app.
+         * @param string $editId Identifier of the edit.
+         * @param ApksAddExternallyHostedRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return ApksAddExternallyHostedResponse
+         * @throws \Google\Service\Exception
+         */
+        public function addexternallyhosted($packageName, $editId, ApksAddExternallyHostedRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Lists all current APKs of the app and edit. (apks.listEditsApks)
+         *
+         * @param string $packageName Package name of the app.
+         * @param string $editId Identifier of the edit.
+         * @param array $optParams Optional parameters.
+         * @return ApksListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listEditsApks($packageName, $editId, $optParams = [])
+        {
+        }
+        /**
+         * Uploads an APK and adds to the current edit. (apks.upload)
+         *
+         * @param string $packageName Package name of the app.
+         * @param string $editId Identifier of the edit.
+         * @param array $optParams Optional parameters.
+         * @return Apk
+         * @throws \Google\Service\Exception
+         */
+        public function upload($packageName, $editId, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists all current APKs of the app and edit. (apks.listEditsApks)
-     *
-     * @param string $packageName Package name of the app.
-     * @param string $editId Identifier of the edit.
-     * @param array $optParams Optional parameters.
-     * @return ApksListResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\AndroidPublisher\Resource\EditsApks registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listEditsApks($packageName, $editId, $optParams = [])
-    {
-    }
-    /**
-     * Uploads an APK and adds to the current edit. (apks.upload)
-     *
-     * @param string $packageName Package name of the app.
-     * @param string $editId Identifier of the edit.
-     * @param array $optParams Optional parameters.
-     * @return Apk
-     * @throws \Google\Service\Exception
-     */
-    public function upload($packageName, $editId, $optParams = [])
+    class Google_Service_AndroidPublisher_Resource_EditsApks extends \Google\Service\AndroidPublisher\Resource\EditsApks
     {
     }
 }

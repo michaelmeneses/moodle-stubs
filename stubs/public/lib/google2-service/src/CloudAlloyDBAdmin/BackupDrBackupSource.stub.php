@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAlloyDBAdmin;
-
-class BackupDrBackupSource extends \Google\Model
-{
-    /**
-     * Required. The name of the backup resource with the format: * projects/{proj
-     * ect}/locations/{location}/backupVaults/{backupvault_id}/dataSources/{dataso
-     * urce_id}/backups/{backup_id}
-     *
-     * @var string
-     */
-    public $backup;
-    /**
-     * Required. The name of the backup resource with the format: * projects/{proj
-     * ect}/locations/{location}/backupVaults/{backupvault_id}/dataSources/{dataso
-     * urce_id}/backups/{backup_id}
-     *
-     * @param string $backup
-     */
-    public function setBackup($backup)
+namespace Google\Service\CloudAlloyDBAdmin {
+    class BackupDrBackupSource extends \Google\Model
     {
+        /**
+         * Required. The name of the backup resource with the format: * projects/{proj
+         * ect}/locations/{location}/backupVaults/{backupvault_id}/dataSources/{dataso
+         * urce_id}/backups/{backup_id}
+         *
+         * @var string
+         */
+        public $backup;
+        /**
+         * Required. The name of the backup resource with the format: * projects/{proj
+         * ect}/locations/{location}/backupVaults/{backupvault_id}/dataSources/{dataso
+         * urce_id}/backups/{backup_id}
+         *
+         * @param string $backup
+         */
+        public function setBackup($backup)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBackup()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudAlloyDBAdmin\BackupDrBackupSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackup()
+    class Google_Service_CloudAlloyDBAdmin_BackupDrBackupSource extends \Google\Service\CloudAlloyDBAdmin\BackupDrBackupSource
     {
     }
 }

@@ -21,80 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSTablesTrainResponse extends \Google\Collection
-{
-    protected $collection_key = 'tablesModelColumnInfo';
-    protected $modelStructureType = XPSTablesModelStructure::class;
-    protected $modelStructureDataType = '';
-    protected $predictionSampleRowsType = XPSRow::class;
-    protected $predictionSampleRowsDataType = 'array';
-    protected $tablesModelColumnInfoType = XPSTablesModelColumnInfo::class;
-    protected $tablesModelColumnInfoDataType = 'array';
-    /**
-     * The actual training cost of the model, expressed in milli node hours, i.e.
-     * 1,000 value in this field means 1 node hour. Guaranteed to not exceed the
-     * train budget.
-     *
-     * @var string
-     */
-    public $trainCostMilliNodeHours;
-    /**
-     * @param XPSTablesModelStructure $modelStructure
-     */
-    public function setModelStructure(XPSTablesModelStructure $modelStructure)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSTablesTrainResponse extends \Google\Collection
     {
+        protected $collection_key = 'tablesModelColumnInfo';
+        protected $modelStructureType = XPSTablesModelStructure::class;
+        protected $modelStructureDataType = '';
+        protected $predictionSampleRowsType = XPSRow::class;
+        protected $predictionSampleRowsDataType = 'array';
+        protected $tablesModelColumnInfoType = XPSTablesModelColumnInfo::class;
+        protected $tablesModelColumnInfoDataType = 'array';
+        /**
+         * The actual training cost of the model, expressed in milli node hours, i.e.
+         * 1,000 value in this field means 1 node hour. Guaranteed to not exceed the
+         * train budget.
+         *
+         * @var string
+         */
+        public $trainCostMilliNodeHours;
+        /**
+         * @param XPSTablesModelStructure $modelStructure
+         */
+        public function setModelStructure(XPSTablesModelStructure $modelStructure)
+        {
+        }
+        /**
+         * @return XPSTablesModelStructure
+         */
+        public function getModelStructure()
+        {
+        }
+        /**
+         * Sample rows from the dataset this model was trained.
+         *
+         * @param XPSRow[] $predictionSampleRows
+         */
+        public function setPredictionSampleRows($predictionSampleRows)
+        {
+        }
+        /**
+         * @return XPSRow[]
+         */
+        public function getPredictionSampleRows()
+        {
+        }
+        /**
+         * Output only. Auxiliary information for each of the
+         * input_feature_column_specs, with respect to this particular model.
+         *
+         * @param XPSTablesModelColumnInfo[] $tablesModelColumnInfo
+         */
+        public function setTablesModelColumnInfo($tablesModelColumnInfo)
+        {
+        }
+        /**
+         * @return XPSTablesModelColumnInfo[]
+         */
+        public function getTablesModelColumnInfo()
+        {
+        }
+        /**
+         * The actual training cost of the model, expressed in milli node hours, i.e.
+         * 1,000 value in this field means 1 node hour. Guaranteed to not exceed the
+         * train budget.
+         *
+         * @param string $trainCostMilliNodeHours
+         */
+        public function setTrainCostMilliNodeHours($trainCostMilliNodeHours)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTrainCostMilliNodeHours()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return XPSTablesModelStructure
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSTablesTrainResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getModelStructure()
-    {
-    }
-    /**
-     * Sample rows from the dataset this model was trained.
-     *
-     * @param XPSRow[] $predictionSampleRows
-     */
-    public function setPredictionSampleRows($predictionSampleRows)
-    {
-    }
-    /**
-     * @return XPSRow[]
-     */
-    public function getPredictionSampleRows()
-    {
-    }
-    /**
-     * Output only. Auxiliary information for each of the
-     * input_feature_column_specs, with respect to this particular model.
-     *
-     * @param XPSTablesModelColumnInfo[] $tablesModelColumnInfo
-     */
-    public function setTablesModelColumnInfo($tablesModelColumnInfo)
-    {
-    }
-    /**
-     * @return XPSTablesModelColumnInfo[]
-     */
-    public function getTablesModelColumnInfo()
-    {
-    }
-    /**
-     * The actual training cost of the model, expressed in milli node hours, i.e.
-     * 1,000 value in this field means 1 node hour. Guaranteed to not exceed the
-     * train budget.
-     *
-     * @param string $trainCostMilliNodeHours
-     */
-    public function setTrainCostMilliNodeHours($trainCostMilliNodeHours)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTrainCostMilliNodeHours()
+    class Google_Service_CloudNaturalLanguage_XPSTablesTrainResponse extends \Google\Service\CloudNaturalLanguage\XPSTablesTrainResponse
     {
     }
 }

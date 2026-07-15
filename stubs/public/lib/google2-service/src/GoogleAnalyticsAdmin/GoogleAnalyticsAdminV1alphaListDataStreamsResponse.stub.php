@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaListDataStreamsResponse extends \Google\Collection
-{
-    protected $collection_key = 'dataStreams';
-    protected $dataStreamsType = GoogleAnalyticsAdminV1alphaDataStream::class;
-    protected $dataStreamsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * @param GoogleAnalyticsAdminV1alphaDataStream[]
-     */
-    public function setDataStreams($dataStreams)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaListDataStreamsResponse extends \Google\Collection
     {
+        protected $collection_key = 'dataStreams';
+        protected $dataStreamsType = GoogleAnalyticsAdminV1alphaDataStream::class;
+        protected $dataStreamsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * @param GoogleAnalyticsAdminV1alphaDataStream[]
+         */
+        public function setDataStreams($dataStreams)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaDataStream[]
+         */
+        public function getDataStreams()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAnalyticsAdminV1alphaDataStream[]
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaListDataStreamsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataStreams()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaListDataStreamsResponse extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaListDataStreamsResponse
     {
     }
 }

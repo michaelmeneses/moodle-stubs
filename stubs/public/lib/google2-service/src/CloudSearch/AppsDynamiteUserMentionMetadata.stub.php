@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteUserMentionMetadata extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $displayName;
-    /**
-     * @var string
-     */
-    public $gender;
-    protected $idType = AppsDynamiteUserId::class;
-    protected $idDataType = '';
-    protected $inviteeInfoType = AppsDynamiteInviteeInfo::class;
-    protected $inviteeInfoDataType = '';
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @param string
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteUserMentionMetadata extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $displayName;
+        /**
+         * @var string
+         */
+        public $gender;
+        protected $idType = AppsDynamiteUserId::class;
+        protected $idDataType = '';
+        protected $inviteeInfoType = AppsDynamiteInviteeInfo::class;
+        protected $inviteeInfoDataType = '';
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @param string
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setGender($gender)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGender()
+        {
+        }
+        /**
+         * @param AppsDynamiteUserId
+         */
+        public function setId(AppsDynamiteUserId $id)
+        {
+        }
+        /**
+         * @return AppsDynamiteUserId
+         */
+        public function getId()
+        {
+        }
+        /**
+         * @param AppsDynamiteInviteeInfo
+         */
+        public function setInviteeInfo(AppsDynamiteInviteeInfo $inviteeInfo)
+        {
+        }
+        /**
+         * @return AppsDynamiteInviteeInfo
+         */
+        public function getInviteeInfo()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteUserMentionMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setGender($gender)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGender()
-    {
-    }
-    /**
-     * @param AppsDynamiteUserId
-     */
-    public function setId(AppsDynamiteUserId $id)
-    {
-    }
-    /**
-     * @return AppsDynamiteUserId
-     */
-    public function getId()
-    {
-    }
-    /**
-     * @param AppsDynamiteInviteeInfo
-     */
-    public function setInviteeInfo(AppsDynamiteInviteeInfo $inviteeInfo)
-    {
-    }
-    /**
-     * @return AppsDynamiteInviteeInfo
-     */
-    public function getInviteeInfo()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_CloudSearch_AppsDynamiteUserMentionMetadata extends \Google\Service\CloudSearch\AppsDynamiteUserMentionMetadata
     {
     }
 }

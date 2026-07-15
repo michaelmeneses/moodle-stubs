@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceManagement;
-
-class MetricRule extends \Google\Model
-{
-    /**
-     * Metrics to update when the selected methods are called, and the associated
-     * cost applied to each metric. The key of the map is the metric name, and the
-     * values are the amount increased for the metric against which the quota
-     * limits are defined. The value must not be negative.
-     *
-     * @var string[]
-     */
-    public $metricCosts;
-    /**
-     * Selects the methods to which this rule applies. Refer to selector for
-     * syntax details.
-     *
-     * @var string
-     */
-    public $selector;
-    /**
-     * Metrics to update when the selected methods are called, and the associated
-     * cost applied to each metric. The key of the map is the metric name, and the
-     * values are the amount increased for the metric against which the quota
-     * limits are defined. The value must not be negative.
-     *
-     * @param string[] $metricCosts
-     */
-    public function setMetricCosts($metricCosts)
+namespace Google\Service\ServiceManagement {
+    class MetricRule extends \Google\Model
     {
+        /**
+         * Metrics to update when the selected methods are called, and the associated
+         * cost applied to each metric. The key of the map is the metric name, and the
+         * values are the amount increased for the metric against which the quota
+         * limits are defined. The value must not be negative.
+         *
+         * @var string[]
+         */
+        public $metricCosts;
+        /**
+         * Selects the methods to which this rule applies. Refer to selector for
+         * syntax details.
+         *
+         * @var string
+         */
+        public $selector;
+        /**
+         * Metrics to update when the selected methods are called, and the associated
+         * cost applied to each metric. The key of the map is the metric name, and the
+         * values are the amount increased for the metric against which the quota
+         * limits are defined. The value must not be negative.
+         *
+         * @param string[] $metricCosts
+         */
+        public function setMetricCosts($metricCosts)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMetricCosts()
+        {
+        }
+        /**
+         * Selects the methods to which this rule applies. Refer to selector for
+         * syntax details.
+         *
+         * @param string $selector
+         */
+        public function setSelector($selector)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelector()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\ServiceManagement\MetricRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetricCosts()
-    {
-    }
-    /**
-     * Selects the methods to which this rule applies. Refer to selector for
-     * syntax details.
-     *
-     * @param string $selector
-     */
-    public function setSelector($selector)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelector()
+    class Google_Service_ServiceManagement_MetricRule extends \Google\Service\ServiceManagement\MetricRule
     {
     }
 }

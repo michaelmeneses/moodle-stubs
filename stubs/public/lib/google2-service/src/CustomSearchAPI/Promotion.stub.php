@@ -21,121 +21,130 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CustomSearchAPI;
-
-class Promotion extends \Google\Collection
-{
-    protected $collection_key = 'bodyLines';
-    protected $bodyLinesType = PromotionBodyLines::class;
-    protected $bodyLinesDataType = 'array';
-    /**
-     * An abridged version of this search's result URL, e.g. www.example.com.
-     *
-     * @var string
-     */
-    public $displayLink;
-    /**
-     * The title of the promotion, in HTML.
-     *
-     * @var string
-     */
-    public $htmlTitle;
-    protected $imageType = PromotionImage::class;
-    protected $imageDataType = '';
-    /**
-     * The URL of the promotion.
-     *
-     * @var string
-     */
-    public $link;
-    /**
-     * The title of the promotion.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * An array of block objects for this promotion.
-     *
-     * @param PromotionBodyLines[] $bodyLines
-     */
-    public function setBodyLines($bodyLines)
+namespace Google\Service\CustomSearchAPI {
+    class Promotion extends \Google\Collection
     {
+        protected $collection_key = 'bodyLines';
+        protected $bodyLinesType = PromotionBodyLines::class;
+        protected $bodyLinesDataType = 'array';
+        /**
+         * An abridged version of this search's result URL, e.g. www.example.com.
+         *
+         * @var string
+         */
+        public $displayLink;
+        /**
+         * The title of the promotion, in HTML.
+         *
+         * @var string
+         */
+        public $htmlTitle;
+        protected $imageType = PromotionImage::class;
+        protected $imageDataType = '';
+        /**
+         * The URL of the promotion.
+         *
+         * @var string
+         */
+        public $link;
+        /**
+         * The title of the promotion.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * An array of block objects for this promotion.
+         *
+         * @param PromotionBodyLines[] $bodyLines
+         */
+        public function setBodyLines($bodyLines)
+        {
+        }
+        /**
+         * @return PromotionBodyLines[]
+         */
+        public function getBodyLines()
+        {
+        }
+        /**
+         * An abridged version of this search's result URL, e.g. www.example.com.
+         *
+         * @param string $displayLink
+         */
+        public function setDisplayLink($displayLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayLink()
+        {
+        }
+        /**
+         * The title of the promotion, in HTML.
+         *
+         * @param string $htmlTitle
+         */
+        public function setHtmlTitle($htmlTitle)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHtmlTitle()
+        {
+        }
+        /**
+         * Image belonging to a promotion.
+         *
+         * @param PromotionImage $image
+         */
+        public function setImage(PromotionImage $image)
+        {
+        }
+        /**
+         * @return PromotionImage
+         */
+        public function getImage()
+        {
+        }
+        /**
+         * The URL of the promotion.
+         *
+         * @param string $link
+         */
+        public function setLink($link)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLink()
+        {
+        }
+        /**
+         * The title of the promotion.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PromotionBodyLines[]
+     * Runtime class alias of \Google\Service\CustomSearchAPI\Promotion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBodyLines()
-    {
-    }
-    /**
-     * An abridged version of this search's result URL, e.g. www.example.com.
-     *
-     * @param string $displayLink
-     */
-    public function setDisplayLink($displayLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayLink()
-    {
-    }
-    /**
-     * The title of the promotion, in HTML.
-     *
-     * @param string $htmlTitle
-     */
-    public function setHtmlTitle($htmlTitle)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHtmlTitle()
-    {
-    }
-    /**
-     * Image belonging to a promotion.
-     *
-     * @param PromotionImage $image
-     */
-    public function setImage(PromotionImage $image)
-    {
-    }
-    /**
-     * @return PromotionImage
-     */
-    public function getImage()
-    {
-    }
-    /**
-     * The URL of the promotion.
-     *
-     * @param string $link
-     */
-    public function setLink($link)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLink()
-    {
-    }
-    /**
-     * The title of the promotion.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_CustomSearchAPI_Promotion extends \Google\Service\CustomSearchAPI\Promotion
     {
     }
 }

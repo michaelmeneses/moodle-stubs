@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecretManager;
-
-class ReplicaStatus extends \Google\Model
-{
-    protected $customerManagedEncryptionType = CustomerManagedEncryptionStatus::class;
-    protected $customerManagedEncryptionDataType = '';
-    /**
-     * Output only. The canonical ID of the replica location. For example: `"us-
-     * east1"`.
-     *
-     * @var string
-     */
-    public $location;
-    /**
-     * Output only. The customer-managed encryption status of the SecretVersion.
-     * Only populated if customer-managed encryption is used.
-     *
-     * @param CustomerManagedEncryptionStatus $customerManagedEncryption
-     */
-    public function setCustomerManagedEncryption(CustomerManagedEncryptionStatus $customerManagedEncryption)
+namespace Google\Service\SecretManager {
+    class ReplicaStatus extends \Google\Model
     {
+        protected $customerManagedEncryptionType = CustomerManagedEncryptionStatus::class;
+        protected $customerManagedEncryptionDataType = '';
+        /**
+         * Output only. The canonical ID of the replica location. For example: `"us-
+         * east1"`.
+         *
+         * @var string
+         */
+        public $location;
+        /**
+         * Output only. The customer-managed encryption status of the SecretVersion.
+         * Only populated if customer-managed encryption is used.
+         *
+         * @param CustomerManagedEncryptionStatus $customerManagedEncryption
+         */
+        public function setCustomerManagedEncryption(CustomerManagedEncryptionStatus $customerManagedEncryption)
+        {
+        }
+        /**
+         * @return CustomerManagedEncryptionStatus
+         */
+        public function getCustomerManagedEncryption()
+        {
+        }
+        /**
+         * Output only. The canonical ID of the replica location. For example: `"us-
+         * east1"`.
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CustomerManagedEncryptionStatus
+     * Runtime class alias of \Google\Service\SecretManager\ReplicaStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomerManagedEncryption()
-    {
-    }
-    /**
-     * Output only. The canonical ID of the replica location. For example: `"us-
-     * east1"`.
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocation()
+    class Google_Service_SecretManager_ReplicaStatus extends \Google\Service\SecretManager\ReplicaStatus
     {
     }
 }

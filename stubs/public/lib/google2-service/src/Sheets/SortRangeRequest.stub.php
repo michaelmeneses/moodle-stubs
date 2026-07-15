@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class SortRangeRequest extends \Google\Collection
-{
-    protected $collection_key = 'sortSpecs';
-    protected $rangeType = GridRange::class;
-    protected $rangeDataType = '';
-    protected $sortSpecsType = SortSpec::class;
-    protected $sortSpecsDataType = 'array';
-    /**
-     * The range to sort.
-     *
-     * @param GridRange $range
-     */
-    public function setRange(GridRange $range)
+namespace Google\Service\Sheets {
+    class SortRangeRequest extends \Google\Collection
     {
+        protected $collection_key = 'sortSpecs';
+        protected $rangeType = GridRange::class;
+        protected $rangeDataType = '';
+        protected $sortSpecsType = SortSpec::class;
+        protected $sortSpecsDataType = 'array';
+        /**
+         * The range to sort.
+         *
+         * @param GridRange $range
+         */
+        public function setRange(GridRange $range)
+        {
+        }
+        /**
+         * @return GridRange
+         */
+        public function getRange()
+        {
+        }
+        /**
+         * The sort order per column. Later specifications are used when values are
+         * equal in the earlier specifications.
+         *
+         * @param SortSpec[] $sortSpecs
+         */
+        public function setSortSpecs($sortSpecs)
+        {
+        }
+        /**
+         * @return SortSpec[]
+         */
+        public function getSortSpecs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GridRange
+     * Runtime class alias of \Google\Service\Sheets\SortRangeRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRange()
-    {
-    }
-    /**
-     * The sort order per column. Later specifications are used when values are
-     * equal in the earlier specifications.
-     *
-     * @param SortSpec[] $sortSpecs
-     */
-    public function setSortSpecs($sortSpecs)
-    {
-    }
-    /**
-     * @return SortSpec[]
-     */
-    public function getSortSpecs()
+    class Google_Service_Sheets_SortRangeRequest extends \Google\Service\Sheets\SortRangeRequest
     {
     }
 }

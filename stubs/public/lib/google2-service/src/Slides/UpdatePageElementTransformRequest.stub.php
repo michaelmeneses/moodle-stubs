@@ -21,79 +21,88 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides;
-
-class UpdatePageElementTransformRequest extends \Google\Model
-{
-    /**
-     * Unspecified mode.
-     */
-    public const APPLY_MODE_APPLY_MODE_UNSPECIFIED = 'APPLY_MODE_UNSPECIFIED';
-    /**
-     * Applies the new AffineTransform matrix to the existing one, and replaces
-     * the existing one with the resulting concatenation.
-     */
-    public const APPLY_MODE_RELATIVE = 'RELATIVE';
-    /**
-     * Replaces the existing AffineTransform matrix with the new one.
-     */
-    public const APPLY_MODE_ABSOLUTE = 'ABSOLUTE';
-    /**
-     * The apply mode of the transform update.
-     *
-     * @var string
-     */
-    public $applyMode;
-    /**
-     * The object ID of the page element to update.
-     *
-     * @var string
-     */
-    public $objectId;
-    protected $transformType = AffineTransform::class;
-    protected $transformDataType = '';
-    /**
-     * The apply mode of the transform update.
-     *
-     * Accepted values: APPLY_MODE_UNSPECIFIED, RELATIVE, ABSOLUTE
-     *
-     * @param self::APPLY_MODE_* $applyMode
-     */
-    public function setApplyMode($applyMode)
+namespace Google\Service\Slides {
+    class UpdatePageElementTransformRequest extends \Google\Model
     {
+        /**
+         * Unspecified mode.
+         */
+        public const APPLY_MODE_APPLY_MODE_UNSPECIFIED = 'APPLY_MODE_UNSPECIFIED';
+        /**
+         * Applies the new AffineTransform matrix to the existing one, and replaces
+         * the existing one with the resulting concatenation.
+         */
+        public const APPLY_MODE_RELATIVE = 'RELATIVE';
+        /**
+         * Replaces the existing AffineTransform matrix with the new one.
+         */
+        public const APPLY_MODE_ABSOLUTE = 'ABSOLUTE';
+        /**
+         * The apply mode of the transform update.
+         *
+         * @var string
+         */
+        public $applyMode;
+        /**
+         * The object ID of the page element to update.
+         *
+         * @var string
+         */
+        public $objectId;
+        protected $transformType = AffineTransform::class;
+        protected $transformDataType = '';
+        /**
+         * The apply mode of the transform update.
+         *
+         * Accepted values: APPLY_MODE_UNSPECIFIED, RELATIVE, ABSOLUTE
+         *
+         * @param self::APPLY_MODE_* $applyMode
+         */
+        public function setApplyMode($applyMode)
+        {
+        }
+        /**
+         * @return self::APPLY_MODE_*
+         */
+        public function getApplyMode()
+        {
+        }
+        /**
+         * The object ID of the page element to update.
+         *
+         * @param string $objectId
+         */
+        public function setObjectId($objectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectId()
+        {
+        }
+        /**
+         * The input transform matrix used to update the page element.
+         *
+         * @param AffineTransform $transform
+         */
+        public function setTransform(AffineTransform $transform)
+        {
+        }
+        /**
+         * @return AffineTransform
+         */
+        public function getTransform()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::APPLY_MODE_*
+     * Runtime class alias of \Google\Service\Slides\UpdatePageElementTransformRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApplyMode()
-    {
-    }
-    /**
-     * The object ID of the page element to update.
-     *
-     * @param string $objectId
-     */
-    public function setObjectId($objectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObjectId()
-    {
-    }
-    /**
-     * The input transform matrix used to update the page element.
-     *
-     * @param AffineTransform $transform
-     */
-    public function setTransform(AffineTransform $transform)
-    {
-    }
-    /**
-     * @return AffineTransform
-     */
-    public function getTransform()
+    class Google_Service_Slides_UpdatePageElementTransformRequest extends \Google\Service\Slides\UpdatePageElementTransformRequest
     {
     }
 }

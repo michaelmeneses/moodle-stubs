@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1RepricingAdjustment extends \Google\Model
-{
-    protected $percentageAdjustmentType = GoogleCloudChannelV1PercentageAdjustment::class;
-    protected $percentageAdjustmentDataType = '';
-    /**
-     * Flat markup or markdown on an entire bill.
-     *
-     * @param GoogleCloudChannelV1PercentageAdjustment $percentageAdjustment
-     */
-    public function setPercentageAdjustment(GoogleCloudChannelV1PercentageAdjustment $percentageAdjustment)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1RepricingAdjustment extends \Google\Model
     {
+        protected $percentageAdjustmentType = GoogleCloudChannelV1PercentageAdjustment::class;
+        protected $percentageAdjustmentDataType = '';
+        /**
+         * Flat markup or markdown on an entire bill.
+         *
+         * @param GoogleCloudChannelV1PercentageAdjustment $percentageAdjustment
+         */
+        public function setPercentageAdjustment(GoogleCloudChannelV1PercentageAdjustment $percentageAdjustment)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1PercentageAdjustment
+         */
+        public function getPercentageAdjustment()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudChannelV1PercentageAdjustment
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1RepricingAdjustment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPercentageAdjustment()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1RepricingAdjustment extends \Google\Service\Cloudchannel\GoogleCloudChannelV1RepricingAdjustment
     {
     }
 }

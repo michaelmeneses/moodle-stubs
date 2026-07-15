@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigChunkingConfig extends \Google\Model
-{
-    protected $layoutBasedChunkingConfigType = GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigChunkingConfigLayoutBasedChunkingConfig::class;
-    protected $layoutBasedChunkingConfigDataType = '';
-    /**
-     * Configuration for the layout based chunking.
-     *
-     * @param GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigChunkingConfigLayoutBasedChunkingConfig $layoutBasedChunkingConfig
-     */
-    public function setLayoutBasedChunkingConfig(GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigChunkingConfigLayoutBasedChunkingConfig $layoutBasedChunkingConfig)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigChunkingConfig extends \Google\Model
     {
+        protected $layoutBasedChunkingConfigType = GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigChunkingConfigLayoutBasedChunkingConfig::class;
+        protected $layoutBasedChunkingConfigDataType = '';
+        /**
+         * Configuration for the layout based chunking.
+         *
+         * @param GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigChunkingConfigLayoutBasedChunkingConfig $layoutBasedChunkingConfig
+         */
+        public function setLayoutBasedChunkingConfig(GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigChunkingConfigLayoutBasedChunkingConfig $layoutBasedChunkingConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigChunkingConfigLayoutBasedChunkingConfig
+         */
+        public function getLayoutBasedChunkingConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigChunkingConfigLayoutBasedChunkingConfig
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigChunkingConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLayoutBasedChunkingConfig()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigChunkingConfig extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigChunkingConfig
     {
     }
 }

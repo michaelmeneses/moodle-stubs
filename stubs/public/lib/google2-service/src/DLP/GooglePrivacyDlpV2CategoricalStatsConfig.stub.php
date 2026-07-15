@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2CategoricalStatsConfig extends \Google\Model
-{
-    protected $fieldType = GooglePrivacyDlpV2FieldId::class;
-    protected $fieldDataType = '';
-    /**
-     * Field to compute categorical stats on. All column types are supported
-     * except for arrays and structs. However, it may be more informative to use
-     * NumericalStats when the field type is supported, depending on the data.
-     *
-     * @param GooglePrivacyDlpV2FieldId $field
-     */
-    public function setField(GooglePrivacyDlpV2FieldId $field)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2CategoricalStatsConfig extends \Google\Model
     {
+        protected $fieldType = GooglePrivacyDlpV2FieldId::class;
+        protected $fieldDataType = '';
+        /**
+         * Field to compute categorical stats on. All column types are supported
+         * except for arrays and structs. However, it may be more informative to use
+         * NumericalStats when the field type is supported, depending on the data.
+         *
+         * @param GooglePrivacyDlpV2FieldId $field
+         */
+        public function setField(GooglePrivacyDlpV2FieldId $field)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2FieldId
+         */
+        public function getField()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2FieldId
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2CategoricalStatsConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getField()
+    class Google_Service_DLP_GooglePrivacyDlpV2CategoricalStatsConfig extends \Google\Service\DLP\GooglePrivacyDlpV2CategoricalStatsConfig
     {
     }
 }

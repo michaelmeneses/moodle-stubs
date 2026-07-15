@@ -21,61 +21,70 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeUXReport;
-
-class MetricTimeseries extends \Google\Collection
-{
-    protected $collection_key = 'histogramTimeseries';
-    protected $fractionTimeseriesType = FractionTimeseries::class;
-    protected $fractionTimeseriesDataType = 'map';
-    protected $histogramTimeseriesType = TimeseriesBin::class;
-    protected $histogramTimeseriesDataType = 'array';
-    protected $percentilesTimeseriesType = TimeseriesPercentiles::class;
-    protected $percentilesTimeseriesDataType = '';
-    /**
-     * Mapping from labels to timeseries of fractions attributed to this label.
-     *
-     * @param FractionTimeseries[] $fractionTimeseries
-     */
-    public function setFractionTimeseries($fractionTimeseries)
+namespace Google\Service\ChromeUXReport {
+    class MetricTimeseries extends \Google\Collection
     {
+        protected $collection_key = 'histogramTimeseries';
+        protected $fractionTimeseriesType = FractionTimeseries::class;
+        protected $fractionTimeseriesDataType = 'map';
+        protected $histogramTimeseriesType = TimeseriesBin::class;
+        protected $histogramTimeseriesDataType = 'array';
+        protected $percentilesTimeseriesType = TimeseriesPercentiles::class;
+        protected $percentilesTimeseriesDataType = '';
+        /**
+         * Mapping from labels to timeseries of fractions attributed to this label.
+         *
+         * @param FractionTimeseries[] $fractionTimeseries
+         */
+        public function setFractionTimeseries($fractionTimeseries)
+        {
+        }
+        /**
+         * @return FractionTimeseries[]
+         */
+        public function getFractionTimeseries()
+        {
+        }
+        /**
+         * The histogram of user experiences for a metric. The histogram will have at
+         * least one bin and the densities of all bins will add up to ~1, for each
+         * timeseries entry.
+         *
+         * @param TimeseriesBin[] $histogramTimeseries
+         */
+        public function setHistogramTimeseries($histogramTimeseries)
+        {
+        }
+        /**
+         * @return TimeseriesBin[]
+         */
+        public function getHistogramTimeseries()
+        {
+        }
+        /**
+         * Commonly useful percentiles of the Metric. The value type for the
+         * percentiles will be the same as the value types given for the Histogram
+         * bins.
+         *
+         * @param TimeseriesPercentiles $percentilesTimeseries
+         */
+        public function setPercentilesTimeseries(TimeseriesPercentiles $percentilesTimeseries)
+        {
+        }
+        /**
+         * @return TimeseriesPercentiles
+         */
+        public function getPercentilesTimeseries()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FractionTimeseries[]
+     * Runtime class alias of \Google\Service\ChromeUXReport\MetricTimeseries registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFractionTimeseries()
-    {
-    }
-    /**
-     * The histogram of user experiences for a metric. The histogram will have at
-     * least one bin and the densities of all bins will add up to ~1, for each
-     * timeseries entry.
-     *
-     * @param TimeseriesBin[] $histogramTimeseries
-     */
-    public function setHistogramTimeseries($histogramTimeseries)
-    {
-    }
-    /**
-     * @return TimeseriesBin[]
-     */
-    public function getHistogramTimeseries()
-    {
-    }
-    /**
-     * Commonly useful percentiles of the Metric. The value type for the
-     * percentiles will be the same as the value types given for the Histogram
-     * bins.
-     *
-     * @param TimeseriesPercentiles $percentilesTimeseries
-     */
-    public function setPercentilesTimeseries(TimeseriesPercentiles $percentilesTimeseries)
-    {
-    }
-    /**
-     * @return TimeseriesPercentiles
-     */
-    public function getPercentilesTimeseries()
+    class Google_Service_ChromeUXReport_MetricTimeseries extends \Google\Service\ChromeUXReport\MetricTimeseries
     {
     }
 }

@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmFrontendsEventbusProtoWorkflowParameters extends \Google\Collection
-{
-    protected $collection_key = 'parameters';
-    protected $parametersType = EnterpriseCrmFrontendsEventbusProtoWorkflowParameterEntry::class;
-    protected $parametersDataType = 'array';
-    /**
-     * Parameters are a part of Event and can be used to communiticate between
-     * different tasks that are part of the same workflow execution.
-     *
-     * @param EnterpriseCrmFrontendsEventbusProtoWorkflowParameterEntry[] $parameters
-     */
-    public function setParameters($parameters)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmFrontendsEventbusProtoWorkflowParameters extends \Google\Collection
     {
+        protected $collection_key = 'parameters';
+        protected $parametersType = EnterpriseCrmFrontendsEventbusProtoWorkflowParameterEntry::class;
+        protected $parametersDataType = 'array';
+        /**
+         * Parameters are a part of Event and can be used to communiticate between
+         * different tasks that are part of the same workflow execution.
+         *
+         * @param EnterpriseCrmFrontendsEventbusProtoWorkflowParameterEntry[] $parameters
+         */
+        public function setParameters($parameters)
+        {
+        }
+        /**
+         * @return EnterpriseCrmFrontendsEventbusProtoWorkflowParameterEntry[]
+         */
+        public function getParameters()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EnterpriseCrmFrontendsEventbusProtoWorkflowParameterEntry[]
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmFrontendsEventbusProtoWorkflowParameters registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getParameters()
+    class Google_Service_Integrations_EnterpriseCrmFrontendsEventbusProtoWorkflowParameters extends \Google\Service\Integrations\EnterpriseCrmFrontendsEventbusProtoWorkflowParameters
     {
     }
 }

@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class Reference extends \Google\Model
-{
-    /**
-     * Output only. [Output Only] Type of the resource. Always compute#reference
-     * for references.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * A description of the reference type with no implied semantics. Possible
-     * values include:             1. MEMBER_OF
-     *
-     * @var string
-     */
-    public $referenceType;
-    /**
-     * URL of the resource which refers to the target.
-     *
-     * @var string
-     */
-    public $referrer;
-    /**
-     * URL of the resource to which this reference points.
-     *
-     * @var string
-     */
-    public $target;
-    /**
-     * Output only. [Output Only] Type of the resource. Always compute#reference
-     * for references.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Compute {
+    class Reference extends \Google\Model
     {
+        /**
+         * Output only. [Output Only] Type of the resource. Always compute#reference
+         * for references.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * A description of the reference type with no implied semantics. Possible
+         * values include:             1. MEMBER_OF
+         *
+         * @var string
+         */
+        public $referenceType;
+        /**
+         * URL of the resource which refers to the target.
+         *
+         * @var string
+         */
+        public $referrer;
+        /**
+         * URL of the resource to which this reference points.
+         *
+         * @var string
+         */
+        public $target;
+        /**
+         * Output only. [Output Only] Type of the resource. Always compute#reference
+         * for references.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * A description of the reference type with no implied semantics. Possible
+         * values include:             1. MEMBER_OF
+         *
+         * @param string $referenceType
+         */
+        public function setReferenceType($referenceType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReferenceType()
+        {
+        }
+        /**
+         * URL of the resource which refers to the target.
+         *
+         * @param string $referrer
+         */
+        public function setReferrer($referrer)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReferrer()
+        {
+        }
+        /**
+         * URL of the resource to which this reference points.
+         *
+         * @param string $target
+         */
+        public function setTarget($target)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTarget()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\Reference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * A description of the reference type with no implied semantics. Possible
-     * values include:             1. MEMBER_OF
-     *
-     * @param string $referenceType
-     */
-    public function setReferenceType($referenceType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReferenceType()
-    {
-    }
-    /**
-     * URL of the resource which refers to the target.
-     *
-     * @param string $referrer
-     */
-    public function setReferrer($referrer)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReferrer()
-    {
-    }
-    /**
-     * URL of the resource to which this reference points.
-     *
-     * @param string $target
-     */
-    public function setTarget($target)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTarget()
+    class Google_Service_Compute_Reference extends \Google\Service\Compute\Reference
     {
     }
 }

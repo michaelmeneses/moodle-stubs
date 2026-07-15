@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1MigratableResourceAutomlDataset extends \Google\Model
-{
-    /**
-     * Full resource name of automl Dataset. Format:
-     * `projects/{project}/locations/{location}/datasets/{dataset}`.
-     *
-     * @var string
-     */
-    public $dataset;
-    /**
-     * The Dataset's display name in automl.googleapis.com.
-     *
-     * @var string
-     */
-    public $datasetDisplayName;
-    /**
-     * Full resource name of automl Dataset. Format:
-     * `projects/{project}/locations/{location}/datasets/{dataset}`.
-     *
-     * @param string $dataset
-     */
-    public function setDataset($dataset)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1MigratableResourceAutomlDataset extends \Google\Model
     {
+        /**
+         * Full resource name of automl Dataset. Format:
+         * `projects/{project}/locations/{location}/datasets/{dataset}`.
+         *
+         * @var string
+         */
+        public $dataset;
+        /**
+         * The Dataset's display name in automl.googleapis.com.
+         *
+         * @var string
+         */
+        public $datasetDisplayName;
+        /**
+         * Full resource name of automl Dataset. Format:
+         * `projects/{project}/locations/{location}/datasets/{dataset}`.
+         *
+         * @param string $dataset
+         */
+        public function setDataset($dataset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataset()
+        {
+        }
+        /**
+         * The Dataset's display name in automl.googleapis.com.
+         *
+         * @param string $datasetDisplayName
+         */
+        public function setDatasetDisplayName($datasetDisplayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatasetDisplayName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1MigratableResourceAutomlDataset registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataset()
-    {
-    }
-    /**
-     * The Dataset's display name in automl.googleapis.com.
-     *
-     * @param string $datasetDisplayName
-     */
-    public function setDatasetDisplayName($datasetDisplayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDatasetDisplayName()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1MigratableResourceAutomlDataset extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1MigratableResourceAutomlDataset
     {
     }
 }

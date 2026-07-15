@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecaptchaEnterprise;
-
-class GoogleCloudRecaptchaenterpriseV1ScoreDistribution extends \Google\Model
-{
-    /**
-     * Map key is score value multiplied by 100. The scores are discrete values
-     * between [0, 1]. The maximum number of buckets is on order of a few dozen,
-     * but typically much lower (ie. 10).
-     *
-     * @var string[]
-     */
-    public $scoreBuckets;
-    /**
-     * Map key is score value multiplied by 100. The scores are discrete values
-     * between [0, 1]. The maximum number of buckets is on order of a few dozen,
-     * but typically much lower (ie. 10).
-     *
-     * @param string[] $scoreBuckets
-     */
-    public function setScoreBuckets($scoreBuckets)
+namespace Google\Service\RecaptchaEnterprise {
+    class GoogleCloudRecaptchaenterpriseV1ScoreDistribution extends \Google\Model
     {
+        /**
+         * Map key is score value multiplied by 100. The scores are discrete values
+         * between [0, 1]. The maximum number of buckets is on order of a few dozen,
+         * but typically much lower (ie. 10).
+         *
+         * @var string[]
+         */
+        public $scoreBuckets;
+        /**
+         * Map key is score value multiplied by 100. The scores are discrete values
+         * between [0, 1]. The maximum number of buckets is on order of a few dozen,
+         * but typically much lower (ie. 10).
+         *
+         * @param string[] $scoreBuckets
+         */
+        public function setScoreBuckets($scoreBuckets)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getScoreBuckets()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1ScoreDistribution registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getScoreBuckets()
+    class Google_Service_RecaptchaEnterprise_GoogleCloudRecaptchaenterpriseV1ScoreDistribution extends \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1ScoreDistribution
     {
     }
 }

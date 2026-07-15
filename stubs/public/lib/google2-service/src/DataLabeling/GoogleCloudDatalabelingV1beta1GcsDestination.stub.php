@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1GcsDestination extends \Google\Model
-{
-    /**
-     * Required. The format of the gcs destination. Only "text/csv" and
-     * "application/json" are supported.
-     *
-     * @var string
-     */
-    public $mimeType;
-    /**
-     * Required. The output uri of destination file.
-     *
-     * @var string
-     */
-    public $outputUri;
-    /**
-     * Required. The format of the gcs destination. Only "text/csv" and
-     * "application/json" are supported.
-     *
-     * @param string $mimeType
-     */
-    public function setMimeType($mimeType)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1GcsDestination extends \Google\Model
     {
+        /**
+         * Required. The format of the gcs destination. Only "text/csv" and
+         * "application/json" are supported.
+         *
+         * @var string
+         */
+        public $mimeType;
+        /**
+         * Required. The output uri of destination file.
+         *
+         * @var string
+         */
+        public $outputUri;
+        /**
+         * Required. The format of the gcs destination. Only "text/csv" and
+         * "application/json" are supported.
+         *
+         * @param string $mimeType
+         */
+        public function setMimeType($mimeType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMimeType()
+        {
+        }
+        /**
+         * Required. The output uri of destination file.
+         *
+         * @param string $outputUri
+         */
+        public function setOutputUri($outputUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOutputUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1GcsDestination registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMimeType()
-    {
-    }
-    /**
-     * Required. The output uri of destination file.
-     *
-     * @param string $outputUri
-     */
-    public function setOutputUri($outputUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOutputUri()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1GcsDestination extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1GcsDestination
     {
     }
 }

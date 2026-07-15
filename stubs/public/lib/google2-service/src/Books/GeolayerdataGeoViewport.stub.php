@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class GeolayerdataGeoViewport extends \Google\Model
-{
-    protected $hiType = GeolayerdataGeoViewportHi::class;
-    protected $hiDataType = '';
-    protected $loType = GeolayerdataGeoViewportLo::class;
-    protected $loDataType = '';
-    /**
-     * @param GeolayerdataGeoViewportHi $hi
-     */
-    public function setHi(GeolayerdataGeoViewportHi $hi)
+namespace Google\Service\Books {
+    class GeolayerdataGeoViewport extends \Google\Model
     {
+        protected $hiType = GeolayerdataGeoViewportHi::class;
+        protected $hiDataType = '';
+        protected $loType = GeolayerdataGeoViewportLo::class;
+        protected $loDataType = '';
+        /**
+         * @param GeolayerdataGeoViewportHi $hi
+         */
+        public function setHi(GeolayerdataGeoViewportHi $hi)
+        {
+        }
+        /**
+         * @return GeolayerdataGeoViewportHi
+         */
+        public function getHi()
+        {
+        }
+        /**
+         * @param GeolayerdataGeoViewportLo $lo
+         */
+        public function setLo(GeolayerdataGeoViewportLo $lo)
+        {
+        }
+        /**
+         * @return GeolayerdataGeoViewportLo
+         */
+        public function getLo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GeolayerdataGeoViewportHi
+     * Runtime class alias of \Google\Service\Books\GeolayerdataGeoViewport registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHi()
-    {
-    }
-    /**
-     * @param GeolayerdataGeoViewportLo $lo
-     */
-    public function setLo(GeolayerdataGeoViewportLo $lo)
-    {
-    }
-    /**
-     * @return GeolayerdataGeoViewportLo
-     */
-    public function getLo()
+    class Google_Service_Books_GeolayerdataGeoViewport extends \Google\Service\Books\GeolayerdataGeoViewport
     {
     }
 }

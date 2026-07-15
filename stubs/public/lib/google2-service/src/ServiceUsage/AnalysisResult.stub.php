@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceUsage;
-
-class AnalysisResult extends \Google\Collection
-{
-    protected $collection_key = 'warnings';
-    protected $blockersType = Impact::class;
-    protected $blockersDataType = 'array';
-    protected $warningsType = Impact::class;
-    protected $warningsDataType = 'array';
-    /**
-     * Blocking information that would prevent the policy changes at runtime.
-     *
-     * @param Impact[] $blockers
-     */
-    public function setBlockers($blockers)
+namespace Google\Service\ServiceUsage {
+    class AnalysisResult extends \Google\Collection
     {
+        protected $collection_key = 'warnings';
+        protected $blockersType = Impact::class;
+        protected $blockersDataType = 'array';
+        protected $warningsType = Impact::class;
+        protected $warningsDataType = 'array';
+        /**
+         * Blocking information that would prevent the policy changes at runtime.
+         *
+         * @param Impact[] $blockers
+         */
+        public function setBlockers($blockers)
+        {
+        }
+        /**
+         * @return Impact[]
+         */
+        public function getBlockers()
+        {
+        }
+        /**
+         * Warning information indicating that the policy changes might be unsafe, but
+         * will not block the changes at runtime.
+         *
+         * @param Impact[] $warnings
+         */
+        public function setWarnings($warnings)
+        {
+        }
+        /**
+         * @return Impact[]
+         */
+        public function getWarnings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Impact[]
+     * Runtime class alias of \Google\Service\ServiceUsage\AnalysisResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBlockers()
-    {
-    }
-    /**
-     * Warning information indicating that the policy changes might be unsafe, but
-     * will not block the changes at runtime.
-     *
-     * @param Impact[] $warnings
-     */
-    public function setWarnings($warnings)
-    {
-    }
-    /**
-     * @return Impact[]
-     */
-    public function getWarnings()
+    class Google_Service_ServiceUsage_AnalysisResult extends \Google\Service\ServiceUsage\AnalysisResult
     {
     }
 }

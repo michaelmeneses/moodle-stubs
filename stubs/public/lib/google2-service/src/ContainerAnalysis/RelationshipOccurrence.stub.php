@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class RelationshipOccurrence extends \Google\Model
-{
-    public $comment;
-    public $source;
-    public $target;
-    public $type;
-    public function setComment($comment)
+namespace Google\Service\ContainerAnalysis {
+    class RelationshipOccurrence extends \Google\Model
     {
+        public $comment;
+        public $source;
+        public $target;
+        public $type;
+        public function setComment($comment)
+        {
+        }
+        public function getComment()
+        {
+        }
+        public function setSource($source)
+        {
+        }
+        public function getSource()
+        {
+        }
+        public function setTarget($target)
+        {
+        }
+        public function getTarget()
+        {
+        }
+        public function setType($type)
+        {
+        }
+        public function getType()
+        {
+        }
     }
-    public function getComment()
-    {
-    }
-    public function setSource($source)
-    {
-    }
-    public function getSource()
-    {
-    }
-    public function setTarget($target)
-    {
-    }
-    public function getTarget()
-    {
-    }
-    public function setType($type)
-    {
-    }
-    public function getType()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ContainerAnalysis\RelationshipOccurrence registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ContainerAnalysis_RelationshipOccurrence extends \Google\Service\ContainerAnalysis\RelationshipOccurrence
     {
     }
 }

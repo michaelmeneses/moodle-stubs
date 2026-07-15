@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleCloudRunV2CloudStorageSource extends \Google\Model
-{
-    /**
-     * Required. The Cloud Storage bucket name.
-     *
-     * @var string
-     */
-    public $bucket;
-    /**
-     * Optional. The Cloud Storage object generation.
-     *
-     * @var string
-     */
-    public $generation;
-    /**
-     * Required. The Cloud Storage object name.
-     *
-     * @var string
-     */
-    public $object;
-    /**
-     * Required. The Cloud Storage bucket name.
-     *
-     * @param string $bucket
-     */
-    public function setBucket($bucket)
+namespace Google\Service\CloudRun {
+    class GoogleCloudRunV2CloudStorageSource extends \Google\Model
     {
+        /**
+         * Required. The Cloud Storage bucket name.
+         *
+         * @var string
+         */
+        public $bucket;
+        /**
+         * Optional. The Cloud Storage object generation.
+         *
+         * @var string
+         */
+        public $generation;
+        /**
+         * Required. The Cloud Storage object name.
+         *
+         * @var string
+         */
+        public $object;
+        /**
+         * Required. The Cloud Storage bucket name.
+         *
+         * @param string $bucket
+         */
+        public function setBucket($bucket)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBucket()
+        {
+        }
+        /**
+         * Optional. The Cloud Storage object generation.
+         *
+         * @param string $generation
+         */
+        public function setGeneration($generation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGeneration()
+        {
+        }
+        /**
+         * Required. The Cloud Storage object name.
+         *
+         * @param string $object
+         */
+        public function setObject($object)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObject()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRun\GoogleCloudRunV2CloudStorageSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBucket()
-    {
-    }
-    /**
-     * Optional. The Cloud Storage object generation.
-     *
-     * @param string $generation
-     */
-    public function setGeneration($generation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGeneration()
-    {
-    }
-    /**
-     * Required. The Cloud Storage object name.
-     *
-     * @param string $object
-     */
-    public function setObject($object)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObject()
+    class Google_Service_CloudRun_GoogleCloudRunV2CloudStorageSource extends \Google\Service\CloudRun\GoogleCloudRunV2CloudStorageSource
     {
     }
 }

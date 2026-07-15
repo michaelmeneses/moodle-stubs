@@ -21,33 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class RegexValidation extends \Google\Collection
-{
-    protected $collection_key = 'regexes';
-    /**
-     * Required. RE2 regular expressions used to validate the parameter's value.
-     * The value must match the regex in its entirety (substring matches are not
-     * sufficient).
-     *
-     * @var string[]
-     */
-    public $regexes;
-    /**
-     * Required. RE2 regular expressions used to validate the parameter's value.
-     * The value must match the regex in its entirety (substring matches are not
-     * sufficient).
-     *
-     * @param string[] $regexes
-     */
-    public function setRegexes($regexes)
+namespace Google\Service\Dataproc {
+    class RegexValidation extends \Google\Collection
     {
+        protected $collection_key = 'regexes';
+        /**
+         * Required. RE2 regular expressions used to validate the parameter's value.
+         * The value must match the regex in its entirety (substring matches are not
+         * sufficient).
+         *
+         * @var string[]
+         */
+        public $regexes;
+        /**
+         * Required. RE2 regular expressions used to validate the parameter's value.
+         * The value must match the regex in its entirety (substring matches are not
+         * sufficient).
+         *
+         * @param string[] $regexes
+         */
+        public function setRegexes($regexes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRegexes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Dataproc\RegexValidation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRegexes()
+    class Google_Service_Dataproc_RegexValidation extends \Google\Service\Dataproc\RegexValidation
     {
     }
 }

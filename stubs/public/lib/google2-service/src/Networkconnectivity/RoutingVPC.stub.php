@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity;
-
-class RoutingVPC extends \Google\Model
-{
-    /**
-     * Output only. If true, indicates that this VPC network is currently
-     * associated with spokes that use the data transfer feature (spokes where the
-     * site_to_site_data_transfer field is set to true). If you create new spokes
-     * that use data transfer, they must be associated with this VPC network. At
-     * most, one VPC network will have this field set to true.
-     *
-     * @var bool
-     */
-    public $requiredForNewSiteToSiteDataTransferSpokes;
-    /**
-     * The URI of the VPC network.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * Output only. If true, indicates that this VPC network is currently
-     * associated with spokes that use the data transfer feature (spokes where the
-     * site_to_site_data_transfer field is set to true). If you create new spokes
-     * that use data transfer, they must be associated with this VPC network. At
-     * most, one VPC network will have this field set to true.
-     *
-     * @param bool $requiredForNewSiteToSiteDataTransferSpokes
-     */
-    public function setRequiredForNewSiteToSiteDataTransferSpokes($requiredForNewSiteToSiteDataTransferSpokes)
+namespace Google\Service\Networkconnectivity {
+    class RoutingVPC extends \Google\Model
     {
+        /**
+         * Output only. If true, indicates that this VPC network is currently
+         * associated with spokes that use the data transfer feature (spokes where the
+         * site_to_site_data_transfer field is set to true). If you create new spokes
+         * that use data transfer, they must be associated with this VPC network. At
+         * most, one VPC network will have this field set to true.
+         *
+         * @var bool
+         */
+        public $requiredForNewSiteToSiteDataTransferSpokes;
+        /**
+         * The URI of the VPC network.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * Output only. If true, indicates that this VPC network is currently
+         * associated with spokes that use the data transfer feature (spokes where the
+         * site_to_site_data_transfer field is set to true). If you create new spokes
+         * that use data transfer, they must be associated with this VPC network. At
+         * most, one VPC network will have this field set to true.
+         *
+         * @param bool $requiredForNewSiteToSiteDataTransferSpokes
+         */
+        public function setRequiredForNewSiteToSiteDataTransferSpokes($requiredForNewSiteToSiteDataTransferSpokes)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getRequiredForNewSiteToSiteDataTransferSpokes()
+        {
+        }
+        /**
+         * The URI of the VPC network.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Networkconnectivity\RoutingVPC registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequiredForNewSiteToSiteDataTransferSpokes()
-    {
-    }
-    /**
-     * The URI of the VPC network.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_Networkconnectivity_RoutingVPC extends \Google\Service\Networkconnectivity\RoutingVPC
     {
     }
 }

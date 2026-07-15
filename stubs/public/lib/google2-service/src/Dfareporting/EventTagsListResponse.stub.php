@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class EventTagsListResponse extends \Google\Collection
-{
-    protected $collection_key = 'eventTags';
-    protected $eventTagsType = EventTag::class;
-    protected $eventTagsDataType = 'array';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#eventTagsListResponse".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Event tag collection.
-     *
-     * @param EventTag[] $eventTags
-     */
-    public function setEventTags($eventTags)
+namespace Google\Service\Dfareporting {
+    class EventTagsListResponse extends \Google\Collection
     {
+        protected $collection_key = 'eventTags';
+        protected $eventTagsType = EventTag::class;
+        protected $eventTagsDataType = 'array';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#eventTagsListResponse".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Event tag collection.
+         *
+         * @param EventTag[] $eventTags
+         */
+        public function setEventTags($eventTags)
+        {
+        }
+        /**
+         * @return EventTag[]
+         */
+        public function getEventTags()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#eventTagsListResponse".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EventTag[]
+     * Runtime class alias of \Google\Service\Dfareporting\EventTagsListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEventTags()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#eventTagsListResponse".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_Dfareporting_EventTagsListResponse extends \Google\Service\Dfareporting\EventTagsListResponse
     {
     }
 }

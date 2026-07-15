@@ -21,37 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for SiteVerification (v1).
- *
- * <p>
- * Verifies ownership of websites or domains with Google.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://developers.google.com/site-verification/" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class SiteVerification extends \Google\Service
-{
-    /** Manage the list of sites and domains you control. */
-    const SITEVERIFICATION = "https://www.googleapis.com/auth/siteverification";
-    /** Manage your new site verifications with Google. */
-    const SITEVERIFICATION_VERIFY_ONLY = "https://www.googleapis.com/auth/siteverification.verify_only";
-    public $webResource;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the SiteVerification service.
+     * Service definition for SiteVerification (v1).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * Verifies ownership of websites or domains with Google.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://developers.google.com/site-verification/" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class SiteVerification extends \Google\Service
+    {
+        /** Manage the list of sites and domains you control. */
+        const SITEVERIFICATION = "https://www.googleapis.com/auth/siteverification";
+        /** Manage your new site verifications with Google. */
+        const SITEVERIFICATION_VERIFY_ONLY = "https://www.googleapis.com/auth/siteverification.verify_only";
+        public $webResource;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the SiteVerification service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\SiteVerification registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_SiteVerification extends \Google\Service\SiteVerification
     {
     }
 }

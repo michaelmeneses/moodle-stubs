@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class TvCampaignSummariesListResponse extends \Google\Collection
-{
-    protected $collection_key = 'tvCampaignSummaries';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#tvCampaignSummariesListResponse".
-     *
-     * @var string
-     */
-    public $kind;
-    protected $tvCampaignSummariesType = TvCampaignSummary::class;
-    protected $tvCampaignSummariesDataType = 'array';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#tvCampaignSummariesListResponse".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Dfareporting {
+    class TvCampaignSummariesListResponse extends \Google\Collection
     {
+        protected $collection_key = 'tvCampaignSummaries';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#tvCampaignSummariesListResponse".
+         *
+         * @var string
+         */
+        public $kind;
+        protected $tvCampaignSummariesType = TvCampaignSummary::class;
+        protected $tvCampaignSummariesDataType = 'array';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#tvCampaignSummariesListResponse".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * List of TV campaign summaries.
+         *
+         * @param TvCampaignSummary[] $tvCampaignSummaries
+         */
+        public function setTvCampaignSummaries($tvCampaignSummaries)
+        {
+        }
+        /**
+         * @return TvCampaignSummary[]
+         */
+        public function getTvCampaignSummaries()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\TvCampaignSummariesListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * List of TV campaign summaries.
-     *
-     * @param TvCampaignSummary[] $tvCampaignSummaries
-     */
-    public function setTvCampaignSummaries($tvCampaignSummaries)
-    {
-    }
-    /**
-     * @return TvCampaignSummary[]
-     */
-    public function getTvCampaignSummaries()
+    class Google_Service_Dfareporting_TvCampaignSummariesListResponse extends \Google\Service\Dfareporting\TvCampaignSummariesListResponse
     {
     }
 }

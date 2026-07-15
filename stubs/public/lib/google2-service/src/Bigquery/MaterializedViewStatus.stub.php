@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class MaterializedViewStatus extends \Google\Model
-{
-    protected $lastRefreshStatusType = ErrorProto::class;
-    protected $lastRefreshStatusDataType = '';
-    /**
-     * Output only. Refresh watermark of materialized view. The base tables' data
-     * were collected into the materialized view cache until this time.
-     *
-     * @var string
-     */
-    public $refreshWatermark;
-    /**
-     * Output only. Error result of the last automatic refresh. If present,
-     * indicates that the last automatic refresh was unsuccessful.
-     *
-     * @param ErrorProto $lastRefreshStatus
-     */
-    public function setLastRefreshStatus(ErrorProto $lastRefreshStatus)
+namespace Google\Service\Bigquery {
+    class MaterializedViewStatus extends \Google\Model
     {
+        protected $lastRefreshStatusType = ErrorProto::class;
+        protected $lastRefreshStatusDataType = '';
+        /**
+         * Output only. Refresh watermark of materialized view. The base tables' data
+         * were collected into the materialized view cache until this time.
+         *
+         * @var string
+         */
+        public $refreshWatermark;
+        /**
+         * Output only. Error result of the last automatic refresh. If present,
+         * indicates that the last automatic refresh was unsuccessful.
+         *
+         * @param ErrorProto $lastRefreshStatus
+         */
+        public function setLastRefreshStatus(ErrorProto $lastRefreshStatus)
+        {
+        }
+        /**
+         * @return ErrorProto
+         */
+        public function getLastRefreshStatus()
+        {
+        }
+        /**
+         * Output only. Refresh watermark of materialized view. The base tables' data
+         * were collected into the materialized view cache until this time.
+         *
+         * @param string $refreshWatermark
+         */
+        public function setRefreshWatermark($refreshWatermark)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRefreshWatermark()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ErrorProto
+     * Runtime class alias of \Google\Service\Bigquery\MaterializedViewStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLastRefreshStatus()
-    {
-    }
-    /**
-     * Output only. Refresh watermark of materialized view. The base tables' data
-     * were collected into the materialized view cache until this time.
-     *
-     * @param string $refreshWatermark
-     */
-    public function setRefreshWatermark($refreshWatermark)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRefreshWatermark()
+    class Google_Service_Bigquery_MaterializedViewStatus extends \Google\Service\Bigquery\MaterializedViewStatus
     {
     }
 }

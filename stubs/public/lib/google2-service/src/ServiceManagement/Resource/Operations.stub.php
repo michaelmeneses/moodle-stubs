@@ -21,64 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceManagement\Resource;
-
-/**
- * The "operations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $servicemanagementService = new Google\Service\ServiceManagement(...);
- *   $operations = $servicemanagementService->operations;
- *  </code>
- */
-class Operations extends \Google\Service\Resource
-{
+namespace Google\Service\ServiceManagement\Resource {
+    use Google\Service\ServiceManagement\ListOperationsResponse;
+    use Google\Service\ServiceManagement\Operation;
     /**
-     * Gets the latest state of a long-running operation. Clients can use this
-     * method to poll the operation result at intervals as recommended by the API
-     * service. (operations.get)
-     *
-     * @param string $name The name of the operation resource.
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * The "operations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $servicemanagementService = new Google\Service\ServiceManagement(...);
+     *   $operations = $servicemanagementService->operations;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class Operations extends \Google\Service\Resource
     {
+        /**
+         * Gets the latest state of a long-running operation. Clients can use this
+         * method to poll the operation result at intervals as recommended by the API
+         * service. (operations.get)
+         *
+         * @param string $name The name of the operation resource.
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists service operations that match the specified filter in the request.
+         * (operations.listOperations)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter A string for filtering Operations. The following
+         * filter fields are supported: * serviceName: Required. Only `=` operator is
+         * allowed. * startTime: The time this job was started, in ISO 8601 format.
+         * Allowed operators are `>=`, `>`, `<=`, and `<`. * status: Can be `done`,
+         * `in_progress`, or `failed`. Allowed operators are `=`, and `!=`. Filter
+         * expression supports conjunction (AND) and disjunction (OR) logical operators.
+         * However, the serviceName restriction must be at the top-level and can only be
+         * combined with other restrictions via the AND logical operator. Examples: *
+         * `serviceName={some-service}.googleapis.com` * `serviceName={some-
+         * service}.googleapis.com AND startTime>="2017-02-01"` * `serviceName={some-
+         * service}.googleapis.com AND status=done` * `serviceName={some-
+         * service}.googleapis.com AND (status=done OR startTime>="2017-02-01")`
+         * @opt_param string name Not used.
+         * @opt_param int pageSize The maximum number of operations to return. If
+         * unspecified, defaults to 50. The maximum value is 100.
+         * @opt_param string pageToken The standard list page token.
+         * @opt_param bool returnPartialSuccess When set to `true`, operations that are
+         * reachable are returned as normal, and those that are unreachable are returned
+         * in the ListOperationsResponse.unreachable field. This can only be `true` when
+         * reading across collections. For example, when `parent` is set to
+         * `"projects/example/locations/-"`. This field is not supported by default and
+         * will result in an `UNIMPLEMENTED` error if set unless explicitly documented
+         * otherwise in service or product specific documentation.
+         * @return ListOperationsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listOperations($optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists service operations that match the specified filter in the request.
-     * (operations.listOperations)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter A string for filtering Operations. The following
-     * filter fields are supported: * serviceName: Required. Only `=` operator is
-     * allowed. * startTime: The time this job was started, in ISO 8601 format.
-     * Allowed operators are `>=`, `>`, `<=`, and `<`. * status: Can be `done`,
-     * `in_progress`, or `failed`. Allowed operators are `=`, and `!=`. Filter
-     * expression supports conjunction (AND) and disjunction (OR) logical operators.
-     * However, the serviceName restriction must be at the top-level and can only be
-     * combined with other restrictions via the AND logical operator. Examples: *
-     * `serviceName={some-service}.googleapis.com` * `serviceName={some-
-     * service}.googleapis.com AND startTime>="2017-02-01"` * `serviceName={some-
-     * service}.googleapis.com AND status=done` * `serviceName={some-
-     * service}.googleapis.com AND (status=done OR startTime>="2017-02-01")`
-     * @opt_param string name Not used.
-     * @opt_param int pageSize The maximum number of operations to return. If
-     * unspecified, defaults to 50. The maximum value is 100.
-     * @opt_param string pageToken The standard list page token.
-     * @opt_param bool returnPartialSuccess When set to `true`, operations that are
-     * reachable are returned as normal, and those that are unreachable are returned
-     * in the ListOperationsResponse.unreachable field. This can only be `true` when
-     * reading across collections. For example, when `parent` is set to
-     * `"projects/example/locations/-"`. This field is not supported by default and
-     * will result in an `UNIMPLEMENTED` error if set unless explicitly documented
-     * otherwise in service or product specific documentation.
-     * @return ListOperationsResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\ServiceManagement\Resource\Operations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listOperations($optParams = [])
+    class Google_Service_ServiceManagement_Resource_Operations extends \Google\Service\ServiceManagement\Resource\Operations
     {
     }
 }

@@ -22,6 +22,19 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_quiz\output;
 
+use action_link;
+use core\output\named_templatable;
+use html_writer;
+use mod_quiz\grade_calculator;
+use mod_quiz\output\grades\grade_out_of;
+use mod_quiz\quiz_attempt;
+use moodle_url;
+use mod_quiz\question\display_options;
+use question_display_options;
+use renderable;
+use renderer_base;
+use stdClass;
+use user_picture;
 /**
  * A summary of a single quiz attempt for rendering.
  *

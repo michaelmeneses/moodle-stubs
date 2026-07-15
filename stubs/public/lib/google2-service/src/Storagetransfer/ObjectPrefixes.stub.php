@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storagetransfer;
-
-class ObjectPrefixes extends \Google\Collection
-{
-    protected $collection_key = 'objectPrefixes';
-    protected $objectPrefixesType = ObjectPrefix::class;
-    protected $objectPrefixesDataType = 'array';
-    /**
-     * @param ObjectPrefix[]
-     */
-    public function setObjectPrefixes($objectPrefixes)
+namespace Google\Service\Storagetransfer {
+    class ObjectPrefixes extends \Google\Collection
     {
+        protected $collection_key = 'objectPrefixes';
+        protected $objectPrefixesType = ObjectPrefix::class;
+        protected $objectPrefixesDataType = 'array';
+        /**
+         * @param ObjectPrefix[]
+         */
+        public function setObjectPrefixes($objectPrefixes)
+        {
+        }
+        /**
+         * @return ObjectPrefix[]
+         */
+        public function getObjectPrefixes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ObjectPrefix[]
+     * Runtime class alias of \Google\Service\Storagetransfer\ObjectPrefixes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getObjectPrefixes()
+    class Google_Service_Storagetransfer_ObjectPrefixes extends \Google\Service\Storagetransfer\ObjectPrefixes
     {
     }
 }

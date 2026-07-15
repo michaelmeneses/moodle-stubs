@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class SalesforceOrg extends \Google\Collection
-{
-    protected $collection_key = 'objects';
-    protected $objectsType = SalesforceObject::class;
-    protected $objectsDataType = 'array';
-    /**
-     * Salesforce objects in the database server.
-     *
-     * @param SalesforceObject[] $objects
-     */
-    public function setObjects($objects)
+namespace Google\Service\Datastream {
+    class SalesforceOrg extends \Google\Collection
     {
+        protected $collection_key = 'objects';
+        protected $objectsType = SalesforceObject::class;
+        protected $objectsDataType = 'array';
+        /**
+         * Salesforce objects in the database server.
+         *
+         * @param SalesforceObject[] $objects
+         */
+        public function setObjects($objects)
+        {
+        }
+        /**
+         * @return SalesforceObject[]
+         */
+        public function getObjects()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SalesforceObject[]
+     * Runtime class alias of \Google\Service\Datastream\SalesforceOrg registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getObjects()
+    class Google_Service_Datastream_SalesforceOrg extends \Google\Service\Datastream\SalesforceOrg
     {
     }
 }

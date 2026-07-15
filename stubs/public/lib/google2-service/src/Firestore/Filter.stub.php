@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class Filter extends \Google\Model
-{
-    protected $compositeFilterType = CompositeFilter::class;
-    protected $compositeFilterDataType = '';
-    protected $fieldFilterType = FieldFilter::class;
-    protected $fieldFilterDataType = '';
-    protected $unaryFilterType = UnaryFilter::class;
-    protected $unaryFilterDataType = '';
-    /**
-     * A composite filter.
-     *
-     * @param CompositeFilter $compositeFilter
-     */
-    public function setCompositeFilter(CompositeFilter $compositeFilter)
+namespace Google\Service\Firestore {
+    class Filter extends \Google\Model
     {
+        protected $compositeFilterType = CompositeFilter::class;
+        protected $compositeFilterDataType = '';
+        protected $fieldFilterType = FieldFilter::class;
+        protected $fieldFilterDataType = '';
+        protected $unaryFilterType = UnaryFilter::class;
+        protected $unaryFilterDataType = '';
+        /**
+         * A composite filter.
+         *
+         * @param CompositeFilter $compositeFilter
+         */
+        public function setCompositeFilter(CompositeFilter $compositeFilter)
+        {
+        }
+        /**
+         * @return CompositeFilter
+         */
+        public function getCompositeFilter()
+        {
+        }
+        /**
+         * A filter on a document field.
+         *
+         * @param FieldFilter $fieldFilter
+         */
+        public function setFieldFilter(FieldFilter $fieldFilter)
+        {
+        }
+        /**
+         * @return FieldFilter
+         */
+        public function getFieldFilter()
+        {
+        }
+        /**
+         * A filter that takes exactly one argument.
+         *
+         * @param UnaryFilter $unaryFilter
+         */
+        public function setUnaryFilter(UnaryFilter $unaryFilter)
+        {
+        }
+        /**
+         * @return UnaryFilter
+         */
+        public function getUnaryFilter()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CompositeFilter
+     * Runtime class alias of \Google\Service\Firestore\Filter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCompositeFilter()
-    {
-    }
-    /**
-     * A filter on a document field.
-     *
-     * @param FieldFilter $fieldFilter
-     */
-    public function setFieldFilter(FieldFilter $fieldFilter)
-    {
-    }
-    /**
-     * @return FieldFilter
-     */
-    public function getFieldFilter()
-    {
-    }
-    /**
-     * A filter that takes exactly one argument.
-     *
-     * @param UnaryFilter $unaryFilter
-     */
-    public function setUnaryFilter(UnaryFilter $unaryFilter)
-    {
-    }
-    /**
-     * @return UnaryFilter
-     */
-    public function getUnaryFilter()
+    class Google_Service_Firestore_Filter extends \Google\Service\Firestore\Filter
     {
     }
 }

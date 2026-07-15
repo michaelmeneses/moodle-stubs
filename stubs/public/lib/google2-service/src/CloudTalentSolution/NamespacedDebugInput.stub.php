@@ -21,249 +21,258 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudTalentSolution;
-
-class NamespacedDebugInput extends \Google\Collection
-{
-    protected $collection_key = 'disableExps';
-    /**
-     * @var string[]
-     */
-    public $absolutelyForcedExpNames;
-    /**
-     * @var string[]
-     */
-    public $absolutelyForcedExpTags;
-    /**
-     * @var int[]
-     */
-    public $absolutelyForcedExps;
-    /**
-     * @var string[]
-     */
-    public $conditionallyForcedExpNames;
-    /**
-     * @var string[]
-     */
-    public $conditionallyForcedExpTags;
-    /**
-     * @var int[]
-     */
-    public $conditionallyForcedExps;
-    /**
-     * @var bool
-     */
-    public $disableAutomaticEnrollmentSelection;
-    /**
-     * @var string[]
-     */
-    public $disableExpNames;
-    /**
-     * @var string[]
-     */
-    public $disableExpTags;
-    /**
-     * @var int[]
-     */
-    public $disableExps;
-    /**
-     * @var bool
-     */
-    public $disableManualEnrollmentSelection;
-    /**
-     * @var bool
-     */
-    public $disableOrganicSelection;
-    /**
-     * @var string[]
-     */
-    public $forcedFlags;
-    /**
-     * @var bool[]
-     */
-    public $forcedRollouts;
-    /**
-     * @var string
-     */
-    public $testingMode;
-    /**
-     * @param string[]
-     */
-    public function setAbsolutelyForcedExpNames($absolutelyForcedExpNames)
+namespace Google\Service\CloudTalentSolution {
+    class NamespacedDebugInput extends \Google\Collection
     {
+        protected $collection_key = 'disableExps';
+        /**
+         * @var string[]
+         */
+        public $absolutelyForcedExpNames;
+        /**
+         * @var string[]
+         */
+        public $absolutelyForcedExpTags;
+        /**
+         * @var int[]
+         */
+        public $absolutelyForcedExps;
+        /**
+         * @var string[]
+         */
+        public $conditionallyForcedExpNames;
+        /**
+         * @var string[]
+         */
+        public $conditionallyForcedExpTags;
+        /**
+         * @var int[]
+         */
+        public $conditionallyForcedExps;
+        /**
+         * @var bool
+         */
+        public $disableAutomaticEnrollmentSelection;
+        /**
+         * @var string[]
+         */
+        public $disableExpNames;
+        /**
+         * @var string[]
+         */
+        public $disableExpTags;
+        /**
+         * @var int[]
+         */
+        public $disableExps;
+        /**
+         * @var bool
+         */
+        public $disableManualEnrollmentSelection;
+        /**
+         * @var bool
+         */
+        public $disableOrganicSelection;
+        /**
+         * @var string[]
+         */
+        public $forcedFlags;
+        /**
+         * @var bool[]
+         */
+        public $forcedRollouts;
+        /**
+         * @var string
+         */
+        public $testingMode;
+        /**
+         * @param string[]
+         */
+        public function setAbsolutelyForcedExpNames($absolutelyForcedExpNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAbsolutelyForcedExpNames()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setAbsolutelyForcedExpTags($absolutelyForcedExpTags)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAbsolutelyForcedExpTags()
+        {
+        }
+        /**
+         * @param int[]
+         */
+        public function setAbsolutelyForcedExps($absolutelyForcedExps)
+        {
+        }
+        /**
+         * @return int[]
+         */
+        public function getAbsolutelyForcedExps()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setConditionallyForcedExpNames($conditionallyForcedExpNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getConditionallyForcedExpNames()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setConditionallyForcedExpTags($conditionallyForcedExpTags)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getConditionallyForcedExpTags()
+        {
+        }
+        /**
+         * @param int[]
+         */
+        public function setConditionallyForcedExps($conditionallyForcedExps)
+        {
+        }
+        /**
+         * @return int[]
+         */
+        public function getConditionallyForcedExps()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setDisableAutomaticEnrollmentSelection($disableAutomaticEnrollmentSelection)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisableAutomaticEnrollmentSelection()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setDisableExpNames($disableExpNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDisableExpNames()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setDisableExpTags($disableExpTags)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDisableExpTags()
+        {
+        }
+        /**
+         * @param int[]
+         */
+        public function setDisableExps($disableExps)
+        {
+        }
+        /**
+         * @return int[]
+         */
+        public function getDisableExps()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setDisableManualEnrollmentSelection($disableManualEnrollmentSelection)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisableManualEnrollmentSelection()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setDisableOrganicSelection($disableOrganicSelection)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisableOrganicSelection()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setForcedFlags($forcedFlags)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getForcedFlags()
+        {
+        }
+        /**
+         * @param bool[]
+         */
+        public function setForcedRollouts($forcedRollouts)
+        {
+        }
+        /**
+         * @return bool[]
+         */
+        public function getForcedRollouts()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTestingMode($testingMode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTestingMode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudTalentSolution\NamespacedDebugInput registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAbsolutelyForcedExpNames()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setAbsolutelyForcedExpTags($absolutelyForcedExpTags)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getAbsolutelyForcedExpTags()
-    {
-    }
-    /**
-     * @param int[]
-     */
-    public function setAbsolutelyForcedExps($absolutelyForcedExps)
-    {
-    }
-    /**
-     * @return int[]
-     */
-    public function getAbsolutelyForcedExps()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setConditionallyForcedExpNames($conditionallyForcedExpNames)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getConditionallyForcedExpNames()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setConditionallyForcedExpTags($conditionallyForcedExpTags)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getConditionallyForcedExpTags()
-    {
-    }
-    /**
-     * @param int[]
-     */
-    public function setConditionallyForcedExps($conditionallyForcedExps)
-    {
-    }
-    /**
-     * @return int[]
-     */
-    public function getConditionallyForcedExps()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setDisableAutomaticEnrollmentSelection($disableAutomaticEnrollmentSelection)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDisableAutomaticEnrollmentSelection()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setDisableExpNames($disableExpNames)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getDisableExpNames()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setDisableExpTags($disableExpTags)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getDisableExpTags()
-    {
-    }
-    /**
-     * @param int[]
-     */
-    public function setDisableExps($disableExps)
-    {
-    }
-    /**
-     * @return int[]
-     */
-    public function getDisableExps()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setDisableManualEnrollmentSelection($disableManualEnrollmentSelection)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDisableManualEnrollmentSelection()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setDisableOrganicSelection($disableOrganicSelection)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDisableOrganicSelection()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setForcedFlags($forcedFlags)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getForcedFlags()
-    {
-    }
-    /**
-     * @param bool[]
-     */
-    public function setForcedRollouts($forcedRollouts)
-    {
-    }
-    /**
-     * @return bool[]
-     */
-    public function getForcedRollouts()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTestingMode($testingMode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTestingMode()
+    class Google_Service_CloudTalentSolution_NamespacedDebugInput extends \Google\Service\CloudTalentSolution\NamespacedDebugInput
     {
     }
 }

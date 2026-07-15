@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1CreateDatasetRequest extends \Google\Model
-{
-    protected $datasetType = GoogleCloudDatalabelingV1beta1Dataset::class;
-    protected $datasetDataType = '';
-    /**
-     * Required. The dataset to be created.
-     *
-     * @param GoogleCloudDatalabelingV1beta1Dataset $dataset
-     */
-    public function setDataset(GoogleCloudDatalabelingV1beta1Dataset $dataset)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1CreateDatasetRequest extends \Google\Model
     {
+        protected $datasetType = GoogleCloudDatalabelingV1beta1Dataset::class;
+        protected $datasetDataType = '';
+        /**
+         * Required. The dataset to be created.
+         *
+         * @param GoogleCloudDatalabelingV1beta1Dataset $dataset
+         */
+        public function setDataset(GoogleCloudDatalabelingV1beta1Dataset $dataset)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1Dataset
+         */
+        public function getDataset()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatalabelingV1beta1Dataset
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1CreateDatasetRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataset()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1CreateDatasetRequest extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1CreateDatasetRequest
     {
     }
 }

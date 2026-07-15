@@ -21,79 +21,88 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceManagement;
-
-class BatchingDescriptorProto extends \Google\Collection
-{
-    protected $collection_key = 'discriminatorFields';
-    /**
-     * The repeated field in the request message to be aggregated by batching.
-     *
-     * @var string
-     */
-    public $batchedField;
-    /**
-     * A list of the fields in the request message. Two requests will be batched
-     * together only if the values of every field specified in
-     * `request_discriminator_fields` is equal between the two requests.
-     *
-     * @var string[]
-     */
-    public $discriminatorFields;
-    /**
-     * Optional. When present, indicates the field in the response message to be
-     * used to demultiplex the response into multiple response messages, in
-     * correspondence with the multiple request messages originally batched
-     * together.
-     *
-     * @var string
-     */
-    public $subresponseField;
-    /**
-     * The repeated field in the request message to be aggregated by batching.
-     *
-     * @param string $batchedField
-     */
-    public function setBatchedField($batchedField)
+namespace Google\Service\ServiceManagement {
+    class BatchingDescriptorProto extends \Google\Collection
     {
+        protected $collection_key = 'discriminatorFields';
+        /**
+         * The repeated field in the request message to be aggregated by batching.
+         *
+         * @var string
+         */
+        public $batchedField;
+        /**
+         * A list of the fields in the request message. Two requests will be batched
+         * together only if the values of every field specified in
+         * `request_discriminator_fields` is equal between the two requests.
+         *
+         * @var string[]
+         */
+        public $discriminatorFields;
+        /**
+         * Optional. When present, indicates the field in the response message to be
+         * used to demultiplex the response into multiple response messages, in
+         * correspondence with the multiple request messages originally batched
+         * together.
+         *
+         * @var string
+         */
+        public $subresponseField;
+        /**
+         * The repeated field in the request message to be aggregated by batching.
+         *
+         * @param string $batchedField
+         */
+        public function setBatchedField($batchedField)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBatchedField()
+        {
+        }
+        /**
+         * A list of the fields in the request message. Two requests will be batched
+         * together only if the values of every field specified in
+         * `request_discriminator_fields` is equal between the two requests.
+         *
+         * @param string[] $discriminatorFields
+         */
+        public function setDiscriminatorFields($discriminatorFields)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDiscriminatorFields()
+        {
+        }
+        /**
+         * Optional. When present, indicates the field in the response message to be
+         * used to demultiplex the response into multiple response messages, in
+         * correspondence with the multiple request messages originally batched
+         * together.
+         *
+         * @param string $subresponseField
+         */
+        public function setSubresponseField($subresponseField)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubresponseField()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ServiceManagement\BatchingDescriptorProto registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBatchedField()
-    {
-    }
-    /**
-     * A list of the fields in the request message. Two requests will be batched
-     * together only if the values of every field specified in
-     * `request_discriminator_fields` is equal between the two requests.
-     *
-     * @param string[] $discriminatorFields
-     */
-    public function setDiscriminatorFields($discriminatorFields)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getDiscriminatorFields()
-    {
-    }
-    /**
-     * Optional. When present, indicates the field in the response message to be
-     * used to demultiplex the response into multiple response messages, in
-     * correspondence with the multiple request messages originally batched
-     * together.
-     *
-     * @param string $subresponseField
-     */
-    public function setSubresponseField($subresponseField)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubresponseField()
+    class Google_Service_ServiceManagement_BatchingDescriptorProto extends \Google\Service\ServiceManagement\BatchingDescriptorProto
     {
     }
 }

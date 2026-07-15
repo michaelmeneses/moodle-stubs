@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InstancesSetNameRequest extends \Google\Model
-{
-    /**
-     * The current name of this resource, used to prevent conflicts. Provide the
-     * latest name when making a request to change name.
-     *
-     * @var string
-     */
-    public $currentName;
-    /**
-     * The name to be applied to the instance. Needs to be RFC 1035 compliant.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The current name of this resource, used to prevent conflicts. Provide the
-     * latest name when making a request to change name.
-     *
-     * @param string $currentName
-     */
-    public function setCurrentName($currentName)
+namespace Google\Service\Compute {
+    class InstancesSetNameRequest extends \Google\Model
     {
+        /**
+         * The current name of this resource, used to prevent conflicts. Provide the
+         * latest name when making a request to change name.
+         *
+         * @var string
+         */
+        public $currentName;
+        /**
+         * The name to be applied to the instance. Needs to be RFC 1035 compliant.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The current name of this resource, used to prevent conflicts. Provide the
+         * latest name when making a request to change name.
+         *
+         * @param string $currentName
+         */
+        public function setCurrentName($currentName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCurrentName()
+        {
+        }
+        /**
+         * The name to be applied to the instance. Needs to be RFC 1035 compliant.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\InstancesSetNameRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCurrentName()
-    {
-    }
-    /**
-     * The name to be applied to the instance. Needs to be RFC 1035 compliant.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Compute_InstancesSetNameRequest extends \Google\Service\Compute\InstancesSetNameRequest
     {
     }
 }

@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1ListProcessorVersionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'processorVersions';
-    /**
-     * Points to the next processor, otherwise empty.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $processorVersionsType = GoogleCloudDocumentaiV1ProcessorVersion::class;
-    protected $processorVersionsDataType = 'array';
-    /**
-     * Points to the next processor, otherwise empty.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1ListProcessorVersionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'processorVersions';
+        /**
+         * Points to the next processor, otherwise empty.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $processorVersionsType = GoogleCloudDocumentaiV1ProcessorVersion::class;
+        protected $processorVersionsDataType = 'array';
+        /**
+         * Points to the next processor, otherwise empty.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of processors.
+         *
+         * @param GoogleCloudDocumentaiV1ProcessorVersion[] $processorVersions
+         */
+        public function setProcessorVersions($processorVersions)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1ProcessorVersion[]
+         */
+        public function getProcessorVersions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1ListProcessorVersionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of processors.
-     *
-     * @param GoogleCloudDocumentaiV1ProcessorVersion[] $processorVersions
-     */
-    public function setProcessorVersions($processorVersions)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1ProcessorVersion[]
-     */
-    public function getProcessorVersions()
+    class Google_Service_Document_GoogleCloudDocumentaiV1ListProcessorVersionsResponse extends \Google\Service\Document\GoogleCloudDocumentaiV1ListProcessorVersionsResponse
     {
     }
 }

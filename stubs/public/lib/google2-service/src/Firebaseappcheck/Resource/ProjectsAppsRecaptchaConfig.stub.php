@@ -21,68 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firebaseappcheck\Resource;
-
-/**
- * The "recaptchaConfig" collection of methods.
- * Typical usage is:
- *  <code>
- *   $firebaseappcheckService = new Google\Service\Firebaseappcheck(...);
- *   $recaptchaConfig = $firebaseappcheckService->recaptchaConfig;
- *  </code>
- */
-class ProjectsAppsRecaptchaConfig extends \Google\Service\Resource
-{
+namespace Google\Service\Firebaseappcheck\Resource {
+    use Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1betaBatchGetRecaptchaConfigsResponse;
+    use Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1betaRecaptchaConfig;
     /**
-     * Atomically gets the RecaptchaConfigs for the specified list of apps. For
-     * security reasons, the `site_secret` field is never populated in the response.
-     * (recaptchaConfig.batchGet)
-     *
-     * @param string $parent Required. The parent project name shared by all
-     * RecaptchaConfigs being retrieved, in the format ``` projects/{project_number}
-     * ``` The parent collection in the `name` field of any resource being retrieved
-     * must match this field, or the entire batch fails.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string names Required. The relative resource names of the
-     * RecaptchaConfigs to retrieve, in the format: ```
-     * projects/{project_number}/apps/{app_id}/recaptchaConfig ``` A maximum of 100
-     * objects can be retrieved in a batch.
-     * @return GoogleFirebaseAppcheckV1betaBatchGetRecaptchaConfigsResponse
+     * The "recaptchaConfig" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $firebaseappcheckService = new Google\Service\Firebaseappcheck(...);
+     *   $recaptchaConfig = $firebaseappcheckService->recaptchaConfig;
+     *  </code>
      */
-    public function batchGet($parent, $optParams = [])
+    class ProjectsAppsRecaptchaConfig extends \Google\Service\Resource
     {
+        /**
+         * Atomically gets the RecaptchaConfigs for the specified list of apps. For
+         * security reasons, the `site_secret` field is never populated in the response.
+         * (recaptchaConfig.batchGet)
+         *
+         * @param string $parent Required. The parent project name shared by all
+         * RecaptchaConfigs being retrieved, in the format ``` projects/{project_number}
+         * ``` The parent collection in the `name` field of any resource being retrieved
+         * must match this field, or the entire batch fails.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string names Required. The relative resource names of the
+         * RecaptchaConfigs to retrieve, in the format: ```
+         * projects/{project_number}/apps/{app_id}/recaptchaConfig ``` A maximum of 100
+         * objects can be retrieved in a batch.
+         * @return GoogleFirebaseAppcheckV1betaBatchGetRecaptchaConfigsResponse
+         */
+        public function batchGet($parent, $optParams = [])
+        {
+        }
+        /**
+         * Gets the RecaptchaConfig for the specified app. For security reasons, the
+         * `site_secret` field is never populated in the response. (recaptchaConfig.get)
+         *
+         * @param string $name Required. The relative resource name of the
+         * RecaptchaConfig, in the format: ```
+         * projects/{project_number}/apps/{app_id}/recaptchaConfig ```
+         * @param array $optParams Optional parameters.
+         * @return GoogleFirebaseAppcheckV1betaRecaptchaConfig
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Updates the RecaptchaConfig for the specified app. While this configuration
+         * is incomplete or invalid, the app will be unable to exchange reCAPTCHA tokens
+         * for App Check tokens. For security reasons, the `site_secret` field is never
+         * populated in the response. (recaptchaConfig.patch)
+         *
+         * @param string $name Required. The relative resource name of the reCAPTCHA v3
+         * configuration object, in the format: ```
+         * projects/{project_number}/apps/{app_id}/recaptchaConfig ```
+         * @param GoogleFirebaseAppcheckV1betaRecaptchaConfig $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Required. A comma-separated list of names of
+         * fields in the RecaptchaConfig to update. Example: `site_secret`.
+         * @return GoogleFirebaseAppcheckV1betaRecaptchaConfig
+         */
+        public function patch($name, GoogleFirebaseAppcheckV1betaRecaptchaConfig $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets the RecaptchaConfig for the specified app. For security reasons, the
-     * `site_secret` field is never populated in the response. (recaptchaConfig.get)
-     *
-     * @param string $name Required. The relative resource name of the
-     * RecaptchaConfig, in the format: ```
-     * projects/{project_number}/apps/{app_id}/recaptchaConfig ```
-     * @param array $optParams Optional parameters.
-     * @return GoogleFirebaseAppcheckV1betaRecaptchaConfig
+     * Runtime class alias of \Google\Service\Firebaseappcheck\Resource\ProjectsAppsRecaptchaConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Updates the RecaptchaConfig for the specified app. While this configuration
-     * is incomplete or invalid, the app will be unable to exchange reCAPTCHA tokens
-     * for App Check tokens. For security reasons, the `site_secret` field is never
-     * populated in the response. (recaptchaConfig.patch)
-     *
-     * @param string $name Required. The relative resource name of the reCAPTCHA v3
-     * configuration object, in the format: ```
-     * projects/{project_number}/apps/{app_id}/recaptchaConfig ```
-     * @param GoogleFirebaseAppcheckV1betaRecaptchaConfig $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Required. A comma-separated list of names of
-     * fields in the RecaptchaConfig to update. Example: `site_secret`.
-     * @return GoogleFirebaseAppcheckV1betaRecaptchaConfig
-     */
-    public function patch($name, GoogleFirebaseAppcheckV1betaRecaptchaConfig $postBody, $optParams = [])
+    class Google_Service_Firebaseappcheck_Resource_ProjectsAppsRecaptchaConfig extends \Google\Service\Firebaseappcheck\Resource\ProjectsAppsRecaptchaConfig
     {
     }
 }

@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class SearchSparkApplicationExecutorStageSummaryResponse extends \Google\Collection
-{
-    protected $collection_key = 'sparkApplicationStageExecutors';
-    /**
-     * This token is included in the response if there are more results to fetch.
-     * To fetch additional results, provide this value as the page_token in a
-     * subsequent SearchSparkApplicationExecutorsListRequest.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $sparkApplicationStageExecutorsType = ExecutorStageSummary::class;
-    protected $sparkApplicationStageExecutorsDataType = 'array';
-    /**
-     * This token is included in the response if there are more results to fetch.
-     * To fetch additional results, provide this value as the page_token in a
-     * subsequent SearchSparkApplicationExecutorsListRequest.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Dataproc {
+    class SearchSparkApplicationExecutorStageSummaryResponse extends \Google\Collection
     {
+        protected $collection_key = 'sparkApplicationStageExecutors';
+        /**
+         * This token is included in the response if there are more results to fetch.
+         * To fetch additional results, provide this value as the page_token in a
+         * subsequent SearchSparkApplicationExecutorsListRequest.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $sparkApplicationStageExecutorsType = ExecutorStageSummary::class;
+        protected $sparkApplicationStageExecutorsDataType = 'array';
+        /**
+         * This token is included in the response if there are more results to fetch.
+         * To fetch additional results, provide this value as the page_token in a
+         * subsequent SearchSparkApplicationExecutorsListRequest.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Details about executors used by the application stage.
+         *
+         * @param ExecutorStageSummary[] $sparkApplicationStageExecutors
+         */
+        public function setSparkApplicationStageExecutors($sparkApplicationStageExecutors)
+        {
+        }
+        /**
+         * @return ExecutorStageSummary[]
+         */
+        public function getSparkApplicationStageExecutors()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\SearchSparkApplicationExecutorStageSummaryResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Details about executors used by the application stage.
-     *
-     * @param ExecutorStageSummary[] $sparkApplicationStageExecutors
-     */
-    public function setSparkApplicationStageExecutors($sparkApplicationStageExecutors)
-    {
-    }
-    /**
-     * @return ExecutorStageSummary[]
-     */
-    public function getSparkApplicationStageExecutors()
+    class Google_Service_Dataproc_SearchSparkApplicationExecutorStageSummaryResponse extends \Google\Service\Dataproc\SearchSparkApplicationExecutorStageSummaryResponse
     {
     }
 }

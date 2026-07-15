@@ -21,125 +21,134 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1EvaluationResult extends \Google\Collection
-{
-    protected $collection_key = 'candidateResults';
-    protected $candidateResultsType = GoogleCloudAiplatformV1CandidateResult::class;
-    protected $candidateResultsDataType = 'array';
-    /**
-     * Required. The request item that was evaluated. Format:
-     * projects/{project}/locations/{location}/evaluationItems/{evaluation_item}
-     *
-     * @var string
-     */
-    public $evaluationRequest;
-    /**
-     * Required. The evaluation run that was used to generate the result. Format:
-     * projects/{project}/locations/{location}/evaluationRuns/{evaluation_run}
-     *
-     * @var string
-     */
-    public $evaluationRun;
-    /**
-     * Optional. Metadata about the evaluation result.
-     *
-     * @var array
-     */
-    public $metadata;
-    /**
-     * Required. The metric that was evaluated.
-     *
-     * @var string
-     */
-    public $metric;
-    protected $requestType = GoogleCloudAiplatformV1EvaluationRequest::class;
-    protected $requestDataType = '';
-    /**
-     * Optional. The results for the metric.
-     *
-     * @param GoogleCloudAiplatformV1CandidateResult[] $candidateResults
-     */
-    public function setCandidateResults($candidateResults)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1EvaluationResult extends \Google\Collection
     {
+        protected $collection_key = 'candidateResults';
+        protected $candidateResultsType = GoogleCloudAiplatformV1CandidateResult::class;
+        protected $candidateResultsDataType = 'array';
+        /**
+         * Required. The request item that was evaluated. Format:
+         * projects/{project}/locations/{location}/evaluationItems/{evaluation_item}
+         *
+         * @var string
+         */
+        public $evaluationRequest;
+        /**
+         * Required. The evaluation run that was used to generate the result. Format:
+         * projects/{project}/locations/{location}/evaluationRuns/{evaluation_run}
+         *
+         * @var string
+         */
+        public $evaluationRun;
+        /**
+         * Optional. Metadata about the evaluation result.
+         *
+         * @var array
+         */
+        public $metadata;
+        /**
+         * Required. The metric that was evaluated.
+         *
+         * @var string
+         */
+        public $metric;
+        protected $requestType = GoogleCloudAiplatformV1EvaluationRequest::class;
+        protected $requestDataType = '';
+        /**
+         * Optional. The results for the metric.
+         *
+         * @param GoogleCloudAiplatformV1CandidateResult[] $candidateResults
+         */
+        public function setCandidateResults($candidateResults)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1CandidateResult[]
+         */
+        public function getCandidateResults()
+        {
+        }
+        /**
+         * Required. The request item that was evaluated. Format:
+         * projects/{project}/locations/{location}/evaluationItems/{evaluation_item}
+         *
+         * @param string $evaluationRequest
+         */
+        public function setEvaluationRequest($evaluationRequest)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEvaluationRequest()
+        {
+        }
+        /**
+         * Required. The evaluation run that was used to generate the result. Format:
+         * projects/{project}/locations/{location}/evaluationRuns/{evaluation_run}
+         *
+         * @param string $evaluationRun
+         */
+        public function setEvaluationRun($evaluationRun)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEvaluationRun()
+        {
+        }
+        /**
+         * Optional. Metadata about the evaluation result.
+         *
+         * @param array $metadata
+         */
+        public function setMetadata($metadata)
+        {
+        }
+        /**
+         * @return array
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * Required. The metric that was evaluated.
+         *
+         * @param string $metric
+         */
+        public function setMetric($metric)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMetric()
+        {
+        }
+        /**
+         * Required. The request that was evaluated.
+         *
+         * @param GoogleCloudAiplatformV1EvaluationRequest $request
+         */
+        public function setRequest(GoogleCloudAiplatformV1EvaluationRequest $request)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1EvaluationRequest
+         */
+        public function getRequest()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1CandidateResult[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1EvaluationResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCandidateResults()
-    {
-    }
-    /**
-     * Required. The request item that was evaluated. Format:
-     * projects/{project}/locations/{location}/evaluationItems/{evaluation_item}
-     *
-     * @param string $evaluationRequest
-     */
-    public function setEvaluationRequest($evaluationRequest)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEvaluationRequest()
-    {
-    }
-    /**
-     * Required. The evaluation run that was used to generate the result. Format:
-     * projects/{project}/locations/{location}/evaluationRuns/{evaluation_run}
-     *
-     * @param string $evaluationRun
-     */
-    public function setEvaluationRun($evaluationRun)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEvaluationRun()
-    {
-    }
-    /**
-     * Optional. Metadata about the evaluation result.
-     *
-     * @param array $metadata
-     */
-    public function setMetadata($metadata)
-    {
-    }
-    /**
-     * @return array
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * Required. The metric that was evaluated.
-     *
-     * @param string $metric
-     */
-    public function setMetric($metric)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMetric()
-    {
-    }
-    /**
-     * Required. The request that was evaluated.
-     *
-     * @param GoogleCloudAiplatformV1EvaluationRequest $request
-     */
-    public function setRequest(GoogleCloudAiplatformV1EvaluationRequest $request)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1EvaluationRequest
-     */
-    public function getRequest()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1EvaluationResult extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1EvaluationResult
     {
     }
 }

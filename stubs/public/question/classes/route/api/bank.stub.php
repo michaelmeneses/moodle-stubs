@@ -22,6 +22,32 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_question\route\api;
 
+use core\context\course;
+use core\context\module;
+use core\param;
+use core\router\parameters\query_course;
+use core\router\parameters\query_coursemodule;
+use core\router\require_login;
+use core\router\route;
+use core\router\schema\example;
+use core\router\schema\objects\array_of_strings;
+use core\router\schema\objects\array_of_things;
+use core\router\schema\objects\schema_object;
+use core\router\schema\parameters\path_parameter;
+use core\router\schema\parameters\query_parameter;
+use core\router\schema\response\content\json_media_type;
+use core\router\schema\response\payload_response;
+use core\router\schema\response\response;
+use core_question\local\bank\formatted_bank;
+use core_question\local\bank\question_bank_helper;
+use core_question\local\bank\question_counts;
+use core_question\local\bank\question_edit_contexts;
+use core_question\local\bank\question_version_status;
+use core_question\output\question_category_selector;
+use core_question\question_category;
+use Psr\Http\Message\ResponseInterface;
+use Psr\Http\Message\ServerRequestInterface;
+use stdClass;
 /**
  * Web service functions related to question banks
  *

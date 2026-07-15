@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessBusinessInformation;
-
-class PlaceInfo extends \Google\Model
-{
-    /**
-     * Required. The ID of the place. Must correspond to a region.
-     * (https://developers.google.com/places/web-service/supported_types#table3)
-     *
-     * @var string
-     */
-    public $placeId;
-    /**
-     * Required. The localized name of the place. For example, `Scottsdale, AZ`.
-     *
-     * @var string
-     */
-    public $placeName;
-    /**
-     * Required. The ID of the place. Must correspond to a region.
-     * (https://developers.google.com/places/web-service/supported_types#table3)
-     *
-     * @param string $placeId
-     */
-    public function setPlaceId($placeId)
+namespace Google\Service\MyBusinessBusinessInformation {
+    class PlaceInfo extends \Google\Model
     {
+        /**
+         * Required. The ID of the place. Must correspond to a region.
+         * (https://developers.google.com/places/web-service/supported_types#table3)
+         *
+         * @var string
+         */
+        public $placeId;
+        /**
+         * Required. The localized name of the place. For example, `Scottsdale, AZ`.
+         *
+         * @var string
+         */
+        public $placeName;
+        /**
+         * Required. The ID of the place. Must correspond to a region.
+         * (https://developers.google.com/places/web-service/supported_types#table3)
+         *
+         * @param string $placeId
+         */
+        public function setPlaceId($placeId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPlaceId()
+        {
+        }
+        /**
+         * Required. The localized name of the place. For example, `Scottsdale, AZ`.
+         *
+         * @param string $placeName
+         */
+        public function setPlaceName($placeName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPlaceName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MyBusinessBusinessInformation\PlaceInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPlaceId()
-    {
-    }
-    /**
-     * Required. The localized name of the place. For example, `Scottsdale, AZ`.
-     *
-     * @param string $placeName
-     */
-    public function setPlaceName($placeName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPlaceName()
+    class Google_Service_MyBusinessBusinessInformation_PlaceInfo extends \Google\Service\MyBusinessBusinessInformation\PlaceInfo
     {
     }
 }

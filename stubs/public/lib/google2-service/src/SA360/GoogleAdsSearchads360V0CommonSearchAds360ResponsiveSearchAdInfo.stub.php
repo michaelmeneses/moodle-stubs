@@ -21,103 +21,112 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0CommonSearchAds360ResponsiveSearchAdInfo extends \Google\Collection
-{
-    protected $collection_key = 'headlines';
-    /**
-     * The tracking id of the ad.
-     *
-     * @var string
-     */
-    public $adTrackingId;
-    protected $descriptionsType = GoogleAdsSearchads360V0CommonAdTextAsset::class;
-    protected $descriptionsDataType = 'array';
-    protected $headlinesType = GoogleAdsSearchads360V0CommonAdTextAsset::class;
-    protected $headlinesDataType = 'array';
-    /**
-     * Text appended to the auto-generated visible URL with a delimiter.
-     *
-     * @var string
-     */
-    public $path1;
-    /**
-     * Text appended to path1 with a delimiter.
-     *
-     * @var string
-     */
-    public $path2;
-    /**
-     * The tracking id of the ad.
-     *
-     * @param string $adTrackingId
-     */
-    public function setAdTrackingId($adTrackingId)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0CommonSearchAds360ResponsiveSearchAdInfo extends \Google\Collection
     {
+        protected $collection_key = 'headlines';
+        /**
+         * The tracking id of the ad.
+         *
+         * @var string
+         */
+        public $adTrackingId;
+        protected $descriptionsType = GoogleAdsSearchads360V0CommonAdTextAsset::class;
+        protected $descriptionsDataType = 'array';
+        protected $headlinesType = GoogleAdsSearchads360V0CommonAdTextAsset::class;
+        protected $headlinesDataType = 'array';
+        /**
+         * Text appended to the auto-generated visible URL with a delimiter.
+         *
+         * @var string
+         */
+        public $path1;
+        /**
+         * Text appended to path1 with a delimiter.
+         *
+         * @var string
+         */
+        public $path2;
+        /**
+         * The tracking id of the ad.
+         *
+         * @param string $adTrackingId
+         */
+        public function setAdTrackingId($adTrackingId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdTrackingId()
+        {
+        }
+        /**
+         * List of text assets for descriptions. When the ad serves the descriptions
+         * will be selected from this list.
+         *
+         * @param GoogleAdsSearchads360V0CommonAdTextAsset[] $descriptions
+         */
+        public function setDescriptions($descriptions)
+        {
+        }
+        /**
+         * @return GoogleAdsSearchads360V0CommonAdTextAsset[]
+         */
+        public function getDescriptions()
+        {
+        }
+        /**
+         * List of text assets for headlines. When the ad serves the headlines will be
+         * selected from this list.
+         *
+         * @param GoogleAdsSearchads360V0CommonAdTextAsset[] $headlines
+         */
+        public function setHeadlines($headlines)
+        {
+        }
+        /**
+         * @return GoogleAdsSearchads360V0CommonAdTextAsset[]
+         */
+        public function getHeadlines()
+        {
+        }
+        /**
+         * Text appended to the auto-generated visible URL with a delimiter.
+         *
+         * @param string $path1
+         */
+        public function setPath1($path1)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath1()
+        {
+        }
+        /**
+         * Text appended to path1 with a delimiter.
+         *
+         * @param string $path2
+         */
+        public function setPath2($path2)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath2()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0CommonSearchAds360ResponsiveSearchAdInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdTrackingId()
-    {
-    }
-    /**
-     * List of text assets for descriptions. When the ad serves the descriptions
-     * will be selected from this list.
-     *
-     * @param GoogleAdsSearchads360V0CommonAdTextAsset[] $descriptions
-     */
-    public function setDescriptions($descriptions)
-    {
-    }
-    /**
-     * @return GoogleAdsSearchads360V0CommonAdTextAsset[]
-     */
-    public function getDescriptions()
-    {
-    }
-    /**
-     * List of text assets for headlines. When the ad serves the headlines will be
-     * selected from this list.
-     *
-     * @param GoogleAdsSearchads360V0CommonAdTextAsset[] $headlines
-     */
-    public function setHeadlines($headlines)
-    {
-    }
-    /**
-     * @return GoogleAdsSearchads360V0CommonAdTextAsset[]
-     */
-    public function getHeadlines()
-    {
-    }
-    /**
-     * Text appended to the auto-generated visible URL with a delimiter.
-     *
-     * @param string $path1
-     */
-    public function setPath1($path1)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPath1()
-    {
-    }
-    /**
-     * Text appended to path1 with a delimiter.
-     *
-     * @param string $path2
-     */
-    public function setPath2($path2)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPath2()
+    class Google_Service_SA360_GoogleAdsSearchads360V0CommonSearchAds360ResponsiveSearchAdInfo extends \Google\Service\SA360\GoogleAdsSearchads360V0CommonSearchAds360ResponsiveSearchAdInfo
     {
     }
 }

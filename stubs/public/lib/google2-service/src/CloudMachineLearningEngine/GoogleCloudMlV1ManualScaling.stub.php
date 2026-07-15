@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudMachineLearningEngine;
-
-class GoogleCloudMlV1ManualScaling extends \Google\Model
-{
-    /**
-     * The number of nodes to allocate for this model. These nodes are always up,
-     * starting from the time the model is deployed, so the cost of operating this
-     * model will be proportional to `nodes` * number of hours since last billing
-     * cycle plus the cost for each prediction performed.
-     *
-     * @var int
-     */
-    public $nodes;
-    /**
-     * The number of nodes to allocate for this model. These nodes are always up,
-     * starting from the time the model is deployed, so the cost of operating this
-     * model will be proportional to `nodes` * number of hours since last billing
-     * cycle plus the cost for each prediction performed.
-     *
-     * @param int $nodes
-     */
-    public function setNodes($nodes)
+namespace Google\Service\CloudMachineLearningEngine {
+    class GoogleCloudMlV1ManualScaling extends \Google\Model
     {
+        /**
+         * The number of nodes to allocate for this model. These nodes are always up,
+         * starting from the time the model is deployed, so the cost of operating this
+         * model will be proportional to `nodes` * number of hours since last billing
+         * cycle plus the cost for each prediction performed.
+         *
+         * @var int
+         */
+        public $nodes;
+        /**
+         * The number of nodes to allocate for this model. These nodes are always up,
+         * starting from the time the model is deployed, so the cost of operating this
+         * model will be proportional to `nodes` * number of hours since last billing
+         * cycle plus the cost for each prediction performed.
+         *
+         * @param int $nodes
+         */
+        public function setNodes($nodes)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNodes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1ManualScaling registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNodes()
+    class Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1ManualScaling extends \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1ManualScaling
     {
     }
 }

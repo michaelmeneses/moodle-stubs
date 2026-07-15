@@ -21,96 +21,107 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher\Resource;
-
-/**
- * The "listings" collection of methods.
- * Typical usage is:
- *  <code>
- *   $androidpublisherService = new Google\Service\AndroidPublisher(...);
- *   $listings = $androidpublisherService->edits_listings;
- *  </code>
- */
-class EditsListings extends \Google\Service\Resource
-{
+namespace Google\Service\AndroidPublisher\Resource {
+    use Google\Service\AndroidPublisher\Listing;
+    use Google\Service\AndroidPublisher\ListingsListResponse;
     /**
-     * Deletes a localized store listing. (listings.delete)
-     *
-     * @param string $packageName Package name of the app.
-     * @param string $editId Identifier of the edit.
-     * @param string $language Language localization code (a BCP-47 language tag;
-     * for example, "de-AT" for Austrian German).
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * The "listings" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $androidpublisherService = new Google\Service\AndroidPublisher(...);
+     *   $listings = $androidpublisherService->edits_listings;
+     *  </code>
      */
-    public function delete($packageName, $editId, $language, $optParams = [])
+    class EditsListings extends \Google\Service\Resource
     {
+        /**
+         * Deletes a localized store listing. (listings.delete)
+         *
+         * @param string $packageName Package name of the app.
+         * @param string $editId Identifier of the edit.
+         * @param string $language Language localization code (a BCP-47 language tag;
+         * for example, "de-AT" for Austrian German).
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($packageName, $editId, $language, $optParams = [])
+        {
+        }
+        /**
+         * Deletes all store listings. (listings.deleteall)
+         *
+         * @param string $packageName Package name of the app.
+         * @param string $editId Identifier of the edit.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function deleteall($packageName, $editId, $optParams = [])
+        {
+        }
+        /**
+         * Gets a localized store listing. (listings.get)
+         *
+         * @param string $packageName Package name of the app.
+         * @param string $editId Identifier of the edit.
+         * @param string $language Language localization code (a BCP-47 language tag;
+         * for example, "de-AT" for Austrian German).
+         * @param array $optParams Optional parameters.
+         * @return Listing
+         * @throws \Google\Service\Exception
+         */
+        public function get($packageName, $editId, $language, $optParams = [])
+        {
+        }
+        /**
+         * Lists all localized store listings. (listings.listEditsListings)
+         *
+         * @param string $packageName Package name of the app.
+         * @param string $editId Identifier of the edit.
+         * @param array $optParams Optional parameters.
+         * @return ListingsListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listEditsListings($packageName, $editId, $optParams = [])
+        {
+        }
+        /**
+         * Patches a localized store listing. (listings.patch)
+         *
+         * @param string $packageName Package name of the app.
+         * @param string $editId Identifier of the edit.
+         * @param string $language Language localization code (a BCP-47 language tag;
+         * for example, "de-AT" for Austrian German).
+         * @param Listing $postBody
+         * @param array $optParams Optional parameters.
+         * @return Listing
+         * @throws \Google\Service\Exception
+         */
+        public function patch($packageName, $editId, $language, Listing $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Creates or updates a localized store listing. (listings.update)
+         *
+         * @param string $packageName Package name of the app.
+         * @param string $editId Identifier of the edit.
+         * @param string $language Language localization code (a BCP-47 language tag;
+         * for example, "de-AT" for Austrian German).
+         * @param Listing $postBody
+         * @param array $optParams Optional parameters.
+         * @return Listing
+         * @throws \Google\Service\Exception
+         */
+        public function update($packageName, $editId, $language, Listing $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes all store listings. (listings.deleteall)
-     *
-     * @param string $packageName Package name of the app.
-     * @param string $editId Identifier of the edit.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\AndroidPublisher\Resource\EditsListings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function deleteall($packageName, $editId, $optParams = [])
-    {
-    }
-    /**
-     * Gets a localized store listing. (listings.get)
-     *
-     * @param string $packageName Package name of the app.
-     * @param string $editId Identifier of the edit.
-     * @param string $language Language localization code (a BCP-47 language tag;
-     * for example, "de-AT" for Austrian German).
-     * @param array $optParams Optional parameters.
-     * @return Listing
-     * @throws \Google\Service\Exception
-     */
-    public function get($packageName, $editId, $language, $optParams = [])
-    {
-    }
-    /**
-     * Lists all localized store listings. (listings.listEditsListings)
-     *
-     * @param string $packageName Package name of the app.
-     * @param string $editId Identifier of the edit.
-     * @param array $optParams Optional parameters.
-     * @return ListingsListResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listEditsListings($packageName, $editId, $optParams = [])
-    {
-    }
-    /**
-     * Patches a localized store listing. (listings.patch)
-     *
-     * @param string $packageName Package name of the app.
-     * @param string $editId Identifier of the edit.
-     * @param string $language Language localization code (a BCP-47 language tag;
-     * for example, "de-AT" for Austrian German).
-     * @param Listing $postBody
-     * @param array $optParams Optional parameters.
-     * @return Listing
-     * @throws \Google\Service\Exception
-     */
-    public function patch($packageName, $editId, $language, Listing $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Creates or updates a localized store listing. (listings.update)
-     *
-     * @param string $packageName Package name of the app.
-     * @param string $editId Identifier of the edit.
-     * @param string $language Language localization code (a BCP-47 language tag;
-     * for example, "de-AT" for Austrian German).
-     * @param Listing $postBody
-     * @param array $optParams Optional parameters.
-     * @return Listing
-     * @throws \Google\Service\Exception
-     */
-    public function update($packageName, $editId, $language, Listing $postBody, $optParams = [])
+    class Google_Service_AndroidPublisher_Resource_EditsListings extends \Google\Service\AndroidPublisher\Resource\EditsListings
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class HugepagesConfig extends \Google\Model
-{
-    /**
-     * Optional. Amount of 1G hugepages
-     *
-     * @var int
-     */
-    public $hugepageSize1g;
-    /**
-     * Optional. Amount of 2M hugepages
-     *
-     * @var int
-     */
-    public $hugepageSize2m;
-    /**
-     * Optional. Amount of 1G hugepages
-     *
-     * @param int $hugepageSize1g
-     */
-    public function setHugepageSize1g($hugepageSize1g)
+namespace Google\Service\Container {
+    class HugepagesConfig extends \Google\Model
     {
+        /**
+         * Optional. Amount of 1G hugepages
+         *
+         * @var int
+         */
+        public $hugepageSize1g;
+        /**
+         * Optional. Amount of 2M hugepages
+         *
+         * @var int
+         */
+        public $hugepageSize2m;
+        /**
+         * Optional. Amount of 1G hugepages
+         *
+         * @param int $hugepageSize1g
+         */
+        public function setHugepageSize1g($hugepageSize1g)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getHugepageSize1g()
+        {
+        }
+        /**
+         * Optional. Amount of 2M hugepages
+         *
+         * @param int $hugepageSize2m
+         */
+        public function setHugepageSize2m($hugepageSize2m)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getHugepageSize2m()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Container\HugepagesConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHugepageSize1g()
-    {
-    }
-    /**
-     * Optional. Amount of 2M hugepages
-     *
-     * @param int $hugepageSize2m
-     */
-    public function setHugepageSize2m($hugepageSize2m)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getHugepageSize2m()
+    class Google_Service_Container_HugepagesConfig extends \Google\Service\Container\HugepagesConfig
     {
     }
 }

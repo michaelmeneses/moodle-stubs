@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GoogleCloudSecuritycenterV2Dataset extends \Google\Model
-{
-    /**
-     * The user defined display name of dataset, e.g. plants-dataset
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Resource name of the dataset, e.g.
-     * projects/{project}/locations/{location}/datasets/2094040236064505856
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Data source, such as a BigQuery source URI, e.g. bq://scc-nexus-
-     * test.AIPPtest.gsod
-     *
-     * @var string
-     */
-    public $source;
-    /**
-     * The user defined display name of dataset, e.g. plants-dataset
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\SecurityCommandCenter {
+    class GoogleCloudSecuritycenterV2Dataset extends \Google\Model
     {
+        /**
+         * The user defined display name of dataset, e.g. plants-dataset
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Resource name of the dataset, e.g.
+         * projects/{project}/locations/{location}/datasets/2094040236064505856
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Data source, such as a BigQuery source URI, e.g. bq://scc-nexus-
+         * test.AIPPtest.gsod
+         *
+         * @var string
+         */
+        public $source;
+        /**
+         * The user defined display name of dataset, e.g. plants-dataset
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Resource name of the dataset, e.g.
+         * projects/{project}/locations/{location}/datasets/2094040236064505856
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Data source, such as a BigQuery source URI, e.g. bq://scc-nexus-
+         * test.AIPPtest.gsod
+         *
+         * @param string $source
+         */
+        public function setSource($source)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2Dataset registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Resource name of the dataset, e.g.
-     * projects/{project}/locations/{location}/datasets/2094040236064505856
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Data source, such as a BigQuery source URI, e.g. bq://scc-nexus-
-     * test.AIPPtest.gsod
-     *
-     * @param string $source
-     */
-    public function setSource($source)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSource()
+    class Google_Service_SecurityCommandCenter_GoogleCloudSecuritycenterV2Dataset extends \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2Dataset
     {
     }
 }

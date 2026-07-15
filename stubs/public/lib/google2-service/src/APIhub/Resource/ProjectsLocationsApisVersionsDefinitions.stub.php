@@ -21,29 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub\Resource;
-
-/**
- * The "definitions" collection of methods.
- * Typical usage is:
- *  <code>
- *   $apihubService = new Google\Service\APIhub(...);
- *   $definitions = $apihubService->projects_locations_apis_versions_definitions;
- *  </code>
- */
-class ProjectsLocationsApisVersionsDefinitions extends \Google\Service\Resource
-{
+namespace Google\Service\APIhub\Resource {
+    use Google\Service\APIhub\GoogleCloudApihubV1Definition;
     /**
-     * Get details about a definition in an API version. (definitions.get)
-     *
-     * @param string $name Required. The name of the definition to retrieve. Format:
-     * `projects/{project}/locations/{location}/apis/{api}/versions/{version}/defini
-     * tions/{definition}`
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudApihubV1Definition
-     * @throws \Google\Service\Exception
+     * The "definitions" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $apihubService = new Google\Service\APIhub(...);
+     *   $definitions = $apihubService->projects_locations_apis_versions_definitions;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class ProjectsLocationsApisVersionsDefinitions extends \Google\Service\Resource
+    {
+        /**
+         * Get details about a definition in an API version. (definitions.get)
+         *
+         * @param string $name Required. The name of the definition to retrieve. Format:
+         * `projects/{project}/locations/{location}/apis/{api}/versions/{version}/defini
+         * tions/{definition}`
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudApihubV1Definition
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\APIhub\Resource\ProjectsLocationsApisVersionsDefinitions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_APIhub_Resource_ProjectsLocationsApisVersionsDefinitions extends \Google\Service\APIhub\Resource\ProjectsLocationsApisVersionsDefinitions
     {
     }
 }

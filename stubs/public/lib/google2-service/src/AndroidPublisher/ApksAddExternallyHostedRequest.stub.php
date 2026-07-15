@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class ApksAddExternallyHostedRequest extends \Google\Model
-{
-    protected $externallyHostedApkType = ExternallyHostedApk::class;
-    protected $externallyHostedApkDataType = '';
-    /**
-     * The definition of the externally-hosted APK and where it is located.
-     *
-     * @param ExternallyHostedApk $externallyHostedApk
-     */
-    public function setExternallyHostedApk(ExternallyHostedApk $externallyHostedApk)
+namespace Google\Service\AndroidPublisher {
+    class ApksAddExternallyHostedRequest extends \Google\Model
     {
+        protected $externallyHostedApkType = ExternallyHostedApk::class;
+        protected $externallyHostedApkDataType = '';
+        /**
+         * The definition of the externally-hosted APK and where it is located.
+         *
+         * @param ExternallyHostedApk $externallyHostedApk
+         */
+        public function setExternallyHostedApk(ExternallyHostedApk $externallyHostedApk)
+        {
+        }
+        /**
+         * @return ExternallyHostedApk
+         */
+        public function getExternallyHostedApk()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ExternallyHostedApk
+     * Runtime class alias of \Google\Service\AndroidPublisher\ApksAddExternallyHostedRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExternallyHostedApk()
+    class Google_Service_AndroidPublisher_ApksAddExternallyHostedRequest extends \Google\Service\AndroidPublisher\ApksAddExternallyHostedRequest
     {
     }
 }

@@ -21,76 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting\Resource;
-
-/**
- * The "directorySites" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dfareportingService = new Google\Service\Dfareporting(...);
- *   $directorySites = $dfareportingService->directorySites;
- *  </code>
- */
-class DirectorySites extends \Google\Service\Resource
-{
+namespace Google\Service\Dfareporting\Resource {
+    use Google\Service\Dfareporting\DirectorySite;
+    use Google\Service\Dfareporting\DirectorySitesListResponse;
     /**
-     * Gets one directory site by ID. (directorySites.get)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param string $id Directory site ID.
-     * @param array $optParams Optional parameters.
-     * @return DirectorySite
-     * @throws \Google\Service\Exception
+     * The "directorySites" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dfareportingService = new Google\Service\Dfareporting(...);
+     *   $directorySites = $dfareportingService->directorySites;
+     *  </code>
      */
-    public function get($profileId, $id, $optParams = [])
+    class DirectorySites extends \Google\Service\Resource
     {
+        /**
+         * Gets one directory site by ID. (directorySites.get)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param string $id Directory site ID.
+         * @param array $optParams Optional parameters.
+         * @return DirectorySite
+         * @throws \Google\Service\Exception
+         */
+        public function get($profileId, $id, $optParams = [])
+        {
+        }
+        /**
+         * Inserts a new directory site. (directorySites.insert)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param DirectorySite $postBody
+         * @param array $optParams Optional parameters.
+         * @return DirectorySite
+         * @throws \Google\Service\Exception
+         */
+        public function insert($profileId, DirectorySite $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves a list of directory sites, possibly filtered. This method supports
+         * paging. (directorySites.listDirectorySites)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool acceptsInStreamVideoPlacements This search filter is no
+         * longer supported and will have no effect on the results returned.
+         * @opt_param bool acceptsInterstitialPlacements This search filter is no longer
+         * supported and will have no effect on the results returned.
+         * @opt_param bool acceptsPublisherPaidPlacements Select only directory sites
+         * that accept publisher paid placements. This field can be left blank.
+         * @opt_param bool active Select only active directory sites. Leave blank to
+         * retrieve both active and inactive directory sites.
+         * @opt_param string dfpNetworkCode Select only directory sites with this Ad
+         * Manager network code.
+         * @opt_param string ids Select only directory sites with these IDs.
+         * @opt_param int maxResults Maximum number of results to return.
+         * @opt_param string pageToken Value of the nextPageToken from the previous
+         * result page.
+         * @opt_param string searchString Allows searching for objects by name, ID or
+         * URL. Wildcards (*) are allowed. For example, "directory site*2015" will
+         * return objects with names like "directory site June 2015", "directory site
+         * April 2015", or simply "directory site 2015". Most of the searches also add
+         * wildcards implicitly at the start and the end of the search string. For
+         * example, a search string of "directory site" will match objects with name "my
+         * directory site", "directory site 2015" or simply, "directory site".
+         * @opt_param string sortField Field by which to sort the list.
+         * @opt_param string sortOrder Order of sorted results.
+         * @return DirectorySitesListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listDirectorySites($profileId, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Inserts a new directory site. (directorySites.insert)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param DirectorySite $postBody
-     * @param array $optParams Optional parameters.
-     * @return DirectorySite
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Dfareporting\Resource\DirectorySites registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function insert($profileId, DirectorySite $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Retrieves a list of directory sites, possibly filtered. This method supports
-     * paging. (directorySites.listDirectorySites)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool acceptsInStreamVideoPlacements This search filter is no
-     * longer supported and will have no effect on the results returned.
-     * @opt_param bool acceptsInterstitialPlacements This search filter is no longer
-     * supported and will have no effect on the results returned.
-     * @opt_param bool acceptsPublisherPaidPlacements Select only directory sites
-     * that accept publisher paid placements. This field can be left blank.
-     * @opt_param bool active Select only active directory sites. Leave blank to
-     * retrieve both active and inactive directory sites.
-     * @opt_param string dfpNetworkCode Select only directory sites with this Ad
-     * Manager network code.
-     * @opt_param string ids Select only directory sites with these IDs.
-     * @opt_param int maxResults Maximum number of results to return.
-     * @opt_param string pageToken Value of the nextPageToken from the previous
-     * result page.
-     * @opt_param string searchString Allows searching for objects by name, ID or
-     * URL. Wildcards (*) are allowed. For example, "directory site*2015" will
-     * return objects with names like "directory site June 2015", "directory site
-     * April 2015", or simply "directory site 2015". Most of the searches also add
-     * wildcards implicitly at the start and the end of the search string. For
-     * example, a search string of "directory site" will match objects with name "my
-     * directory site", "directory site 2015" or simply, "directory site".
-     * @opt_param string sortField Field by which to sort the list.
-     * @opt_param string sortOrder Order of sorted results.
-     * @return DirectorySitesListResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listDirectorySites($profileId, $optParams = [])
+    class Google_Service_Dfareporting_Resource_DirectorySites extends \Google\Service\Dfareporting\Resource\DirectorySites
     {
     }
 }

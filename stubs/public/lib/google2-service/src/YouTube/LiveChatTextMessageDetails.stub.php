@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class LiveChatTextMessageDetails extends \Google\Model
-{
-    /**
-     * The user's message.
-     *
-     * @var string
-     */
-    public $messageText;
-    /**
-     * The user's message.
-     *
-     * @param string $messageText
-     */
-    public function setMessageText($messageText)
+namespace Google\Service\YouTube {
+    class LiveChatTextMessageDetails extends \Google\Model
     {
+        /**
+         * The user's message.
+         *
+         * @var string
+         */
+        public $messageText;
+        /**
+         * The user's message.
+         *
+         * @param string $messageText
+         */
+        public function setMessageText($messageText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessageText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\LiveChatTextMessageDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMessageText()
+    class Google_Service_YouTube_LiveChatTextMessageDetails extends \Google\Service\YouTube\LiveChatTextMessageDetails
     {
     }
 }

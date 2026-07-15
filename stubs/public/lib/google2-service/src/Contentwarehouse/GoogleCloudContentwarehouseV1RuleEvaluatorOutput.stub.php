@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudContentwarehouseV1RuleEvaluatorOutput extends \Google\Collection
-{
-    protected $collection_key = 'triggeredRules';
-    protected $invalidRulesType = GoogleCloudContentwarehouseV1InvalidRule::class;
-    protected $invalidRulesDataType = 'array';
-    protected $matchedRulesType = GoogleCloudContentwarehouseV1Rule::class;
-    protected $matchedRulesDataType = 'array';
-    protected $triggeredRulesType = GoogleCloudContentwarehouseV1Rule::class;
-    protected $triggeredRulesDataType = 'array';
-    /**
-     * A subset of triggered rules that failed the validation check(s) after
-     * parsing.
-     *
-     * @param GoogleCloudContentwarehouseV1InvalidRule[] $invalidRules
-     */
-    public function setInvalidRules($invalidRules)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudContentwarehouseV1RuleEvaluatorOutput extends \Google\Collection
     {
+        protected $collection_key = 'triggeredRules';
+        protected $invalidRulesType = GoogleCloudContentwarehouseV1InvalidRule::class;
+        protected $invalidRulesDataType = 'array';
+        protected $matchedRulesType = GoogleCloudContentwarehouseV1Rule::class;
+        protected $matchedRulesDataType = 'array';
+        protected $triggeredRulesType = GoogleCloudContentwarehouseV1Rule::class;
+        protected $triggeredRulesDataType = 'array';
+        /**
+         * A subset of triggered rules that failed the validation check(s) after
+         * parsing.
+         *
+         * @param GoogleCloudContentwarehouseV1InvalidRule[] $invalidRules
+         */
+        public function setInvalidRules($invalidRules)
+        {
+        }
+        /**
+         * @return GoogleCloudContentwarehouseV1InvalidRule[]
+         */
+        public function getInvalidRules()
+        {
+        }
+        /**
+         * A subset of triggered rules that are evaluated true for a given request.
+         *
+         * @param GoogleCloudContentwarehouseV1Rule[] $matchedRules
+         */
+        public function setMatchedRules($matchedRules)
+        {
+        }
+        /**
+         * @return GoogleCloudContentwarehouseV1Rule[]
+         */
+        public function getMatchedRules()
+        {
+        }
+        /**
+         * List of rules fetched from database for the given request trigger type.
+         *
+         * @param GoogleCloudContentwarehouseV1Rule[] $triggeredRules
+         */
+        public function setTriggeredRules($triggeredRules)
+        {
+        }
+        /**
+         * @return GoogleCloudContentwarehouseV1Rule[]
+         */
+        public function getTriggeredRules()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudContentwarehouseV1InvalidRule[]
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1RuleEvaluatorOutput registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInvalidRules()
-    {
-    }
-    /**
-     * A subset of triggered rules that are evaluated true for a given request.
-     *
-     * @param GoogleCloudContentwarehouseV1Rule[] $matchedRules
-     */
-    public function setMatchedRules($matchedRules)
-    {
-    }
-    /**
-     * @return GoogleCloudContentwarehouseV1Rule[]
-     */
-    public function getMatchedRules()
-    {
-    }
-    /**
-     * List of rules fetched from database for the given request trigger type.
-     *
-     * @param GoogleCloudContentwarehouseV1Rule[] $triggeredRules
-     */
-    public function setTriggeredRules($triggeredRules)
-    {
-    }
-    /**
-     * @return GoogleCloudContentwarehouseV1Rule[]
-     */
-    public function getTriggeredRules()
+    class Google_Service_Contentwarehouse_GoogleCloudContentwarehouseV1RuleEvaluatorOutput extends \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1RuleEvaluatorOutput
     {
     }
 }

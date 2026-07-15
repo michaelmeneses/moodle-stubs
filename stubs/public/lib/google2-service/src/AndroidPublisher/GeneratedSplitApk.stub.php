@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class GeneratedSplitApk extends \Google\Model
-{
-    /**
-     * Download ID, which uniquely identifies the APK to download. Should be
-     * supplied to `generatedapks.download` method.
-     *
-     * @var string
-     */
-    public $downloadId;
-    /**
-     * Name of the module that this APK belongs to.
-     *
-     * @var string
-     */
-    public $moduleName;
-    /**
-     * Split ID. Empty for the main split of the base module.
-     *
-     * @var string
-     */
-    public $splitId;
-    /**
-     * ID of the generated variant.
-     *
-     * @var int
-     */
-    public $variantId;
-    /**
-     * Download ID, which uniquely identifies the APK to download. Should be
-     * supplied to `generatedapks.download` method.
-     *
-     * @param string $downloadId
-     */
-    public function setDownloadId($downloadId)
+namespace Google\Service\AndroidPublisher {
+    class GeneratedSplitApk extends \Google\Model
     {
+        /**
+         * Download ID, which uniquely identifies the APK to download. Should be
+         * supplied to `generatedapks.download` method.
+         *
+         * @var string
+         */
+        public $downloadId;
+        /**
+         * Name of the module that this APK belongs to.
+         *
+         * @var string
+         */
+        public $moduleName;
+        /**
+         * Split ID. Empty for the main split of the base module.
+         *
+         * @var string
+         */
+        public $splitId;
+        /**
+         * ID of the generated variant.
+         *
+         * @var int
+         */
+        public $variantId;
+        /**
+         * Download ID, which uniquely identifies the APK to download. Should be
+         * supplied to `generatedapks.download` method.
+         *
+         * @param string $downloadId
+         */
+        public function setDownloadId($downloadId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDownloadId()
+        {
+        }
+        /**
+         * Name of the module that this APK belongs to.
+         *
+         * @param string $moduleName
+         */
+        public function setModuleName($moduleName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getModuleName()
+        {
+        }
+        /**
+         * Split ID. Empty for the main split of the base module.
+         *
+         * @param string $splitId
+         */
+        public function setSplitId($splitId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSplitId()
+        {
+        }
+        /**
+         * ID of the generated variant.
+         *
+         * @param int $variantId
+         */
+        public function setVariantId($variantId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getVariantId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidPublisher\GeneratedSplitApk registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDownloadId()
-    {
-    }
-    /**
-     * Name of the module that this APK belongs to.
-     *
-     * @param string $moduleName
-     */
-    public function setModuleName($moduleName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getModuleName()
-    {
-    }
-    /**
-     * Split ID. Empty for the main split of the base module.
-     *
-     * @param string $splitId
-     */
-    public function setSplitId($splitId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSplitId()
-    {
-    }
-    /**
-     * ID of the generated variant.
-     *
-     * @param int $variantId
-     */
-    public function setVariantId($variantId)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getVariantId()
+    class Google_Service_AndroidPublisher_GeneratedSplitApk extends \Google\Service\AndroidPublisher\GeneratedSplitApk
     {
     }
 }

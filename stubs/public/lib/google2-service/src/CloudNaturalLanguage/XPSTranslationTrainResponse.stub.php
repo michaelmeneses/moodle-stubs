@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSTranslationTrainResponse extends \Google\Model
-{
-    /**
-     * Default
-     */
-    public const MODEL_TYPE_MODEL_TYPE_UNSPECIFIED = 'MODEL_TYPE_UNSPECIFIED';
-    /**
-     * Legacy model. Will be deprecated.
-     */
-    public const MODEL_TYPE_LEGACY = 'LEGACY';
-    /**
-     * Current model.
-     */
-    public const MODEL_TYPE_CURRENT = 'CURRENT';
-    /**
-     * Type of the model.
-     *
-     * @var string
-     */
-    public $modelType;
-    /**
-     * Type of the model.
-     *
-     * Accepted values: MODEL_TYPE_UNSPECIFIED, LEGACY, CURRENT
-     *
-     * @param self::MODEL_TYPE_* $modelType
-     */
-    public function setModelType($modelType)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSTranslationTrainResponse extends \Google\Model
     {
+        /**
+         * Default
+         */
+        public const MODEL_TYPE_MODEL_TYPE_UNSPECIFIED = 'MODEL_TYPE_UNSPECIFIED';
+        /**
+         * Legacy model. Will be deprecated.
+         */
+        public const MODEL_TYPE_LEGACY = 'LEGACY';
+        /**
+         * Current model.
+         */
+        public const MODEL_TYPE_CURRENT = 'CURRENT';
+        /**
+         * Type of the model.
+         *
+         * @var string
+         */
+        public $modelType;
+        /**
+         * Type of the model.
+         *
+         * Accepted values: MODEL_TYPE_UNSPECIFIED, LEGACY, CURRENT
+         *
+         * @param self::MODEL_TYPE_* $modelType
+         */
+        public function setModelType($modelType)
+        {
+        }
+        /**
+         * @return self::MODEL_TYPE_*
+         */
+        public function getModelType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::MODEL_TYPE_*
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSTranslationTrainResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getModelType()
+    class Google_Service_CloudNaturalLanguage_XPSTranslationTrainResponse extends \Google\Service\CloudNaturalLanguage\XPSTranslationTrainResponse
     {
     }
 }

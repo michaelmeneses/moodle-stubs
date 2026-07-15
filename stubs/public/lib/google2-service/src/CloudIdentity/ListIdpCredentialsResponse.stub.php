@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIdentity;
-
-class ListIdpCredentialsResponse extends \Google\Collection
-{
-    protected $collection_key = 'idpCredentials';
-    protected $idpCredentialsType = IdpCredential::class;
-    protected $idpCredentialsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The IdpCredentials from the specified InboundSamlSsoProfile.
-     *
-     * @param IdpCredential[] $idpCredentials
-     */
-    public function setIdpCredentials($idpCredentials)
+namespace Google\Service\CloudIdentity {
+    class ListIdpCredentialsResponse extends \Google\Collection
     {
+        protected $collection_key = 'idpCredentials';
+        protected $idpCredentialsType = IdpCredential::class;
+        protected $idpCredentialsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The IdpCredentials from the specified InboundSamlSsoProfile.
+         *
+         * @param IdpCredential[] $idpCredentials
+         */
+        public function setIdpCredentials($idpCredentials)
+        {
+        }
+        /**
+         * @return IdpCredential[]
+         */
+        public function getIdpCredentials()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return IdpCredential[]
+     * Runtime class alias of \Google\Service\CloudIdentity\ListIdpCredentialsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIdpCredentials()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_CloudIdentity_ListIdpCredentialsResponse extends \Google\Service\CloudIdentity\ListIdpCredentialsResponse
     {
     }
 }

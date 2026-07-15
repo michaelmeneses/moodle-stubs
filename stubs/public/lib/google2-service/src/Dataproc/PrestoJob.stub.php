@@ -21,151 +21,160 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class PrestoJob extends \Google\Collection
-{
-    protected $collection_key = 'clientTags';
-    /**
-     * Optional. Presto client tags to attach to this query
-     *
-     * @var string[]
-     */
-    public $clientTags;
-    /**
-     * Optional. Whether to continue executing queries if a query fails. The
-     * default value is false. Setting to true can be useful when executing
-     * independent parallel queries.
-     *
-     * @var bool
-     */
-    public $continueOnFailure;
-    protected $loggingConfigType = LoggingConfig::class;
-    protected $loggingConfigDataType = '';
-    /**
-     * Optional. The format in which query output will be displayed. See the
-     * Presto documentation for supported output formats
-     *
-     * @var string
-     */
-    public $outputFormat;
-    /**
-     * Optional. A mapping of property names to values. Used to set Presto session
-     * properties (https://prestodb.io/docs/current/sql/set-session.html)
-     * Equivalent to using the --session flag in the Presto CLI
-     *
-     * @var string[]
-     */
-    public $properties;
-    /**
-     * The HCFS URI of the script that contains SQL queries.
-     *
-     * @var string
-     */
-    public $queryFileUri;
-    protected $queryListType = QueryList::class;
-    protected $queryListDataType = '';
-    /**
-     * Optional. Presto client tags to attach to this query
-     *
-     * @param string[] $clientTags
-     */
-    public function setClientTags($clientTags)
+namespace Google\Service\Dataproc {
+    class PrestoJob extends \Google\Collection
     {
+        protected $collection_key = 'clientTags';
+        /**
+         * Optional. Presto client tags to attach to this query
+         *
+         * @var string[]
+         */
+        public $clientTags;
+        /**
+         * Optional. Whether to continue executing queries if a query fails. The
+         * default value is false. Setting to true can be useful when executing
+         * independent parallel queries.
+         *
+         * @var bool
+         */
+        public $continueOnFailure;
+        protected $loggingConfigType = LoggingConfig::class;
+        protected $loggingConfigDataType = '';
+        /**
+         * Optional. The format in which query output will be displayed. See the
+         * Presto documentation for supported output formats
+         *
+         * @var string
+         */
+        public $outputFormat;
+        /**
+         * Optional. A mapping of property names to values. Used to set Presto session
+         * properties (https://prestodb.io/docs/current/sql/set-session.html)
+         * Equivalent to using the --session flag in the Presto CLI
+         *
+         * @var string[]
+         */
+        public $properties;
+        /**
+         * The HCFS URI of the script that contains SQL queries.
+         *
+         * @var string
+         */
+        public $queryFileUri;
+        protected $queryListType = QueryList::class;
+        protected $queryListDataType = '';
+        /**
+         * Optional. Presto client tags to attach to this query
+         *
+         * @param string[] $clientTags
+         */
+        public function setClientTags($clientTags)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getClientTags()
+        {
+        }
+        /**
+         * Optional. Whether to continue executing queries if a query fails. The
+         * default value is false. Setting to true can be useful when executing
+         * independent parallel queries.
+         *
+         * @param bool $continueOnFailure
+         */
+        public function setContinueOnFailure($continueOnFailure)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getContinueOnFailure()
+        {
+        }
+        /**
+         * Optional. The runtime log config for job execution.
+         *
+         * @param LoggingConfig $loggingConfig
+         */
+        public function setLoggingConfig(LoggingConfig $loggingConfig)
+        {
+        }
+        /**
+         * @return LoggingConfig
+         */
+        public function getLoggingConfig()
+        {
+        }
+        /**
+         * Optional. The format in which query output will be displayed. See the
+         * Presto documentation for supported output formats
+         *
+         * @param string $outputFormat
+         */
+        public function setOutputFormat($outputFormat)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOutputFormat()
+        {
+        }
+        /**
+         * Optional. A mapping of property names to values. Used to set Presto session
+         * properties (https://prestodb.io/docs/current/sql/set-session.html)
+         * Equivalent to using the --session flag in the Presto CLI
+         *
+         * @param string[] $properties
+         */
+        public function setProperties($properties)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getProperties()
+        {
+        }
+        /**
+         * The HCFS URI of the script that contains SQL queries.
+         *
+         * @param string $queryFileUri
+         */
+        public function setQueryFileUri($queryFileUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQueryFileUri()
+        {
+        }
+        /**
+         * A list of queries.
+         *
+         * @param QueryList $queryList
+         */
+        public function setQueryList(QueryList $queryList)
+        {
+        }
+        /**
+         * @return QueryList
+         */
+        public function getQueryList()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Dataproc\PrestoJob registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClientTags()
-    {
-    }
-    /**
-     * Optional. Whether to continue executing queries if a query fails. The
-     * default value is false. Setting to true can be useful when executing
-     * independent parallel queries.
-     *
-     * @param bool $continueOnFailure
-     */
-    public function setContinueOnFailure($continueOnFailure)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getContinueOnFailure()
-    {
-    }
-    /**
-     * Optional. The runtime log config for job execution.
-     *
-     * @param LoggingConfig $loggingConfig
-     */
-    public function setLoggingConfig(LoggingConfig $loggingConfig)
-    {
-    }
-    /**
-     * @return LoggingConfig
-     */
-    public function getLoggingConfig()
-    {
-    }
-    /**
-     * Optional. The format in which query output will be displayed. See the
-     * Presto documentation for supported output formats
-     *
-     * @param string $outputFormat
-     */
-    public function setOutputFormat($outputFormat)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOutputFormat()
-    {
-    }
-    /**
-     * Optional. A mapping of property names to values. Used to set Presto session
-     * properties (https://prestodb.io/docs/current/sql/set-session.html)
-     * Equivalent to using the --session flag in the Presto CLI
-     *
-     * @param string[] $properties
-     */
-    public function setProperties($properties)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getProperties()
-    {
-    }
-    /**
-     * The HCFS URI of the script that contains SQL queries.
-     *
-     * @param string $queryFileUri
-     */
-    public function setQueryFileUri($queryFileUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQueryFileUri()
-    {
-    }
-    /**
-     * A list of queries.
-     *
-     * @param QueryList $queryList
-     */
-    public function setQueryList(QueryList $queryList)
-    {
-    }
-    /**
-     * @return QueryList
-     */
-    public function getQueryList()
+    class Google_Service_Dataproc_PrestoJob extends \Google\Service\Dataproc\PrestoJob
     {
     }
 }

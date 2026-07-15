@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudResourceManager;
-
-class EffectiveTagBindingCollection extends \Google\Model
-{
-    /**
-     * Tag keys/values effectively bound to this resource, specified in namespaced
-     * format. For example: "123/environment": "production"
-     *
-     * @var string[]
-     */
-    public $effectiveTags;
-    /**
-     * The full resource name of the resource the TagBindings are bound to. E.g.
-     * `//cloudresourcemanager.googleapis.com/projects/123`
-     *
-     * @var string
-     */
-    public $fullResourceName;
-    /**
-     * Identifier. The name of the EffectiveTagBindingCollection, following the
-     * convention: `locations/{location}/effectiveTagBindingCollections/{encoded-
-     * full-resource-name}` where the encoded-full-resource-name is the UTF-8
-     * encoded name of the GCP resource the TagBindings are bound to. E.g. "locati
-     * ons/global/effectiveTagBindingCollections/%2f%2fcloudresourcemanager.google
-     * apis.com%2fprojects%2f123"
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Tag keys/values effectively bound to this resource, specified in namespaced
-     * format. For example: "123/environment": "production"
-     *
-     * @param string[] $effectiveTags
-     */
-    public function setEffectiveTags($effectiveTags)
+namespace Google\Service\CloudResourceManager {
+    class EffectiveTagBindingCollection extends \Google\Model
     {
+        /**
+         * Tag keys/values effectively bound to this resource, specified in namespaced
+         * format. For example: "123/environment": "production"
+         *
+         * @var string[]
+         */
+        public $effectiveTags;
+        /**
+         * The full resource name of the resource the TagBindings are bound to. E.g.
+         * `//cloudresourcemanager.googleapis.com/projects/123`
+         *
+         * @var string
+         */
+        public $fullResourceName;
+        /**
+         * Identifier. The name of the EffectiveTagBindingCollection, following the
+         * convention: `locations/{location}/effectiveTagBindingCollections/{encoded-
+         * full-resource-name}` where the encoded-full-resource-name is the UTF-8
+         * encoded name of the GCP resource the TagBindings are bound to. E.g. "locati
+         * ons/global/effectiveTagBindingCollections/%2f%2fcloudresourcemanager.google
+         * apis.com%2fprojects%2f123"
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Tag keys/values effectively bound to this resource, specified in namespaced
+         * format. For example: "123/environment": "production"
+         *
+         * @param string[] $effectiveTags
+         */
+        public function setEffectiveTags($effectiveTags)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getEffectiveTags()
+        {
+        }
+        /**
+         * The full resource name of the resource the TagBindings are bound to. E.g.
+         * `//cloudresourcemanager.googleapis.com/projects/123`
+         *
+         * @param string $fullResourceName
+         */
+        public function setFullResourceName($fullResourceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFullResourceName()
+        {
+        }
+        /**
+         * Identifier. The name of the EffectiveTagBindingCollection, following the
+         * convention: `locations/{location}/effectiveTagBindingCollections/{encoded-
+         * full-resource-name}` where the encoded-full-resource-name is the UTF-8
+         * encoded name of the GCP resource the TagBindings are bound to. E.g. "locati
+         * ons/global/effectiveTagBindingCollections/%2f%2fcloudresourcemanager.google
+         * apis.com%2fprojects%2f123"
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudResourceManager\EffectiveTagBindingCollection registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEffectiveTags()
-    {
-    }
-    /**
-     * The full resource name of the resource the TagBindings are bound to. E.g.
-     * `//cloudresourcemanager.googleapis.com/projects/123`
-     *
-     * @param string $fullResourceName
-     */
-    public function setFullResourceName($fullResourceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFullResourceName()
-    {
-    }
-    /**
-     * Identifier. The name of the EffectiveTagBindingCollection, following the
-     * convention: `locations/{location}/effectiveTagBindingCollections/{encoded-
-     * full-resource-name}` where the encoded-full-resource-name is the UTF-8
-     * encoded name of the GCP resource the TagBindings are bound to. E.g. "locati
-     * ons/global/effectiveTagBindingCollections/%2f%2fcloudresourcemanager.google
-     * apis.com%2fprojects%2f123"
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_CloudResourceManager_EffectiveTagBindingCollection extends \Google\Service\CloudResourceManager\EffectiveTagBindingCollection
     {
     }
 }

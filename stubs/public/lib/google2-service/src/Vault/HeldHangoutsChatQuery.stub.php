@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vault;
-
-class HeldHangoutsChatQuery extends \Google\Model
-{
-    /**
-     * To include messages in Chat spaces the user was a member of, set to
-     * **true**.
-     *
-     * @var bool
-     */
-    public $includeRooms;
-    /**
-     * To include messages in Chat spaces the user was a member of, set to
-     * **true**.
-     *
-     * @param bool $includeRooms
-     */
-    public function setIncludeRooms($includeRooms)
+namespace Google\Service\Vault {
+    class HeldHangoutsChatQuery extends \Google\Model
     {
+        /**
+         * To include messages in Chat spaces the user was a member of, set to
+         * **true**.
+         *
+         * @var bool
+         */
+        public $includeRooms;
+        /**
+         * To include messages in Chat spaces the user was a member of, set to
+         * **true**.
+         *
+         * @param bool $includeRooms
+         */
+        public function setIncludeRooms($includeRooms)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIncludeRooms()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Vault\HeldHangoutsChatQuery registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIncludeRooms()
+    class Google_Service_Vault_HeldHangoutsChatQuery extends \Google\Service\Vault\HeldHangoutsChatQuery
     {
     }
 }

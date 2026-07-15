@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1DeploymentChangeReportRoutingConflict extends \Google\Model
-{
-    protected $conflictingDeploymentType = GoogleCloudApigeeV1DeploymentChangeReportRoutingDeployment::class;
-    protected $conflictingDeploymentDataType = '';
-    /**
-     * Human-readable description of this conflict.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Name of the environment group in which this conflict exists.
-     *
-     * @var string
-     */
-    public $environmentGroup;
-    /**
-     * Existing base path/deployment causing the conflict.
-     *
-     * @param GoogleCloudApigeeV1DeploymentChangeReportRoutingDeployment $conflictingDeployment
-     */
-    public function setConflictingDeployment(GoogleCloudApigeeV1DeploymentChangeReportRoutingDeployment $conflictingDeployment)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1DeploymentChangeReportRoutingConflict extends \Google\Model
     {
+        protected $conflictingDeploymentType = GoogleCloudApigeeV1DeploymentChangeReportRoutingDeployment::class;
+        protected $conflictingDeploymentDataType = '';
+        /**
+         * Human-readable description of this conflict.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Name of the environment group in which this conflict exists.
+         *
+         * @var string
+         */
+        public $environmentGroup;
+        /**
+         * Existing base path/deployment causing the conflict.
+         *
+         * @param GoogleCloudApigeeV1DeploymentChangeReportRoutingDeployment $conflictingDeployment
+         */
+        public function setConflictingDeployment(GoogleCloudApigeeV1DeploymentChangeReportRoutingDeployment $conflictingDeployment)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1DeploymentChangeReportRoutingDeployment
+         */
+        public function getConflictingDeployment()
+        {
+        }
+        /**
+         * Human-readable description of this conflict.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Name of the environment group in which this conflict exists.
+         *
+         * @param string $environmentGroup
+         */
+        public function setEnvironmentGroup($environmentGroup)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEnvironmentGroup()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApigeeV1DeploymentChangeReportRoutingDeployment
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1DeploymentChangeReportRoutingConflict registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConflictingDeployment()
-    {
-    }
-    /**
-     * Human-readable description of this conflict.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Name of the environment group in which this conflict exists.
-     *
-     * @param string $environmentGroup
-     */
-    public function setEnvironmentGroup($environmentGroup)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEnvironmentGroup()
+    class Google_Service_Apigee_GoogleCloudApigeeV1DeploymentChangeReportRoutingConflict extends \Google\Service\Apigee\GoogleCloudApigeeV1DeploymentChangeReportRoutingConflict
     {
     }
 }

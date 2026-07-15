@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1ListDeveloperAppsResponse extends \Google\Collection
-{
-    protected $collection_key = 'app';
-    protected $appType = GoogleCloudApigeeV1DeveloperApp::class;
-    protected $appDataType = 'array';
-    /**
-     * List of developer apps and their credentials.
-     *
-     * @param GoogleCloudApigeeV1DeveloperApp[] $app
-     */
-    public function setApp($app)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1ListDeveloperAppsResponse extends \Google\Collection
     {
+        protected $collection_key = 'app';
+        protected $appType = GoogleCloudApigeeV1DeveloperApp::class;
+        protected $appDataType = 'array';
+        /**
+         * List of developer apps and their credentials.
+         *
+         * @param GoogleCloudApigeeV1DeveloperApp[] $app
+         */
+        public function setApp($app)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1DeveloperApp[]
+         */
+        public function getApp()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApigeeV1DeveloperApp[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1ListDeveloperAppsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApp()
+    class Google_Service_Apigee_GoogleCloudApigeeV1ListDeveloperAppsResponse extends \Google\Service\Apigee\GoogleCloudApigeeV1ListDeveloperAppsResponse
     {
     }
 }

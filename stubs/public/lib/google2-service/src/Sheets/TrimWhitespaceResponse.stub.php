@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class TrimWhitespaceResponse extends \Google\Model
-{
-    /**
-     * The number of cells that were trimmed of whitespace.
-     *
-     * @var int
-     */
-    public $cellsChangedCount;
-    /**
-     * The number of cells that were trimmed of whitespace.
-     *
-     * @param int $cellsChangedCount
-     */
-    public function setCellsChangedCount($cellsChangedCount)
+namespace Google\Service\Sheets {
+    class TrimWhitespaceResponse extends \Google\Model
     {
+        /**
+         * The number of cells that were trimmed of whitespace.
+         *
+         * @var int
+         */
+        public $cellsChangedCount;
+        /**
+         * The number of cells that were trimmed of whitespace.
+         *
+         * @param int $cellsChangedCount
+         */
+        public function setCellsChangedCount($cellsChangedCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCellsChangedCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Sheets\TrimWhitespaceResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCellsChangedCount()
+    class Google_Service_Sheets_TrimWhitespaceResponse extends \Google\Service\Sheets\TrimWhitespaceResponse
     {
     }
 }

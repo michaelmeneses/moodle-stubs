@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3ListChangelogsResponse extends \Google\Collection
-{
-    protected $collection_key = 'changelogs';
-    protected $changelogsType = GoogleCloudDialogflowCxV3Changelog::class;
-    protected $changelogsDataType = 'array';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of changelogs. There will be a maximum number of items returned
-     * based on the page_size field in the request. The changelogs will be ordered
-     * by timestamp.
-     *
-     * @param GoogleCloudDialogflowCxV3Changelog[] $changelogs
-     */
-    public function setChangelogs($changelogs)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3ListChangelogsResponse extends \Google\Collection
     {
+        protected $collection_key = 'changelogs';
+        protected $changelogsType = GoogleCloudDialogflowCxV3Changelog::class;
+        protected $changelogsDataType = 'array';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of changelogs. There will be a maximum number of items returned
+         * based on the page_size field in the request. The changelogs will be ordered
+         * by timestamp.
+         *
+         * @param GoogleCloudDialogflowCxV3Changelog[] $changelogs
+         */
+        public function setChangelogs($changelogs)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3Changelog[]
+         */
+        public function getChangelogs()
+        {
+        }
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowCxV3Changelog[]
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ListChangelogsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChangelogs()
-    {
-    }
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3ListChangelogsResponse extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ListChangelogsResponse
     {
     }
 }

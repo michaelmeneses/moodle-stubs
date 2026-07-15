@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class ClusterSelector extends \Google\Model
-{
-    /**
-     * Required. The cluster labels. Cluster must have all labels to match.
-     *
-     * @var string[]
-     */
-    public $clusterLabels;
-    /**
-     * Optional. The zone where workflow process executes. This parameter does not
-     * affect the selection of the cluster.If unspecified, the zone of the first
-     * cluster matching the selector is used.
-     *
-     * @var string
-     */
-    public $zone;
-    /**
-     * Required. The cluster labels. Cluster must have all labels to match.
-     *
-     * @param string[] $clusterLabels
-     */
-    public function setClusterLabels($clusterLabels)
+namespace Google\Service\Dataproc {
+    class ClusterSelector extends \Google\Model
     {
+        /**
+         * Required. The cluster labels. Cluster must have all labels to match.
+         *
+         * @var string[]
+         */
+        public $clusterLabels;
+        /**
+         * Optional. The zone where workflow process executes. This parameter does not
+         * affect the selection of the cluster.If unspecified, the zone of the first
+         * cluster matching the selector is used.
+         *
+         * @var string
+         */
+        public $zone;
+        /**
+         * Required. The cluster labels. Cluster must have all labels to match.
+         *
+         * @param string[] $clusterLabels
+         */
+        public function setClusterLabels($clusterLabels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getClusterLabels()
+        {
+        }
+        /**
+         * Optional. The zone where workflow process executes. This parameter does not
+         * affect the selection of the cluster.If unspecified, the zone of the first
+         * cluster matching the selector is used.
+         *
+         * @param string $zone
+         */
+        public function setZone($zone)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getZone()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Dataproc\ClusterSelector registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClusterLabels()
-    {
-    }
-    /**
-     * Optional. The zone where workflow process executes. This parameter does not
-     * affect the selection of the cluster.If unspecified, the zone of the first
-     * cluster matching the selector is used.
-     *
-     * @param string $zone
-     */
-    public function setZone($zone)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getZone()
+    class Google_Service_Dataproc_ClusterSelector extends \Google\Service\Dataproc\ClusterSelector
     {
     }
 }

@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class BgpRouteNetworkLayerReachabilityInformation extends \Google\Model
-{
-    /**
-     * If the BGP session supports multiple paths (RFC 7911), the path identifier
-     * for this route.
-     *
-     * @var string
-     */
-    public $pathId;
-    /**
-     * Human readable CIDR notation for a prefix. E.g. 10.42.0.0/16.
-     *
-     * @var string
-     */
-    public $prefix;
-    /**
-     * If the BGP session supports multiple paths (RFC 7911), the path identifier
-     * for this route.
-     *
-     * @param string $pathId
-     */
-    public function setPathId($pathId)
+namespace Google\Service\Compute {
+    class BgpRouteNetworkLayerReachabilityInformation extends \Google\Model
     {
+        /**
+         * If the BGP session supports multiple paths (RFC 7911), the path identifier
+         * for this route.
+         *
+         * @var string
+         */
+        public $pathId;
+        /**
+         * Human readable CIDR notation for a prefix. E.g. 10.42.0.0/16.
+         *
+         * @var string
+         */
+        public $prefix;
+        /**
+         * If the BGP session supports multiple paths (RFC 7911), the path identifier
+         * for this route.
+         *
+         * @param string $pathId
+         */
+        public function setPathId($pathId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPathId()
+        {
+        }
+        /**
+         * Human readable CIDR notation for a prefix. E.g. 10.42.0.0/16.
+         *
+         * @param string $prefix
+         */
+        public function setPrefix($prefix)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrefix()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\BgpRouteNetworkLayerReachabilityInformation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPathId()
-    {
-    }
-    /**
-     * Human readable CIDR notation for a prefix. E.g. 10.42.0.0/16.
-     *
-     * @param string $prefix
-     */
-    public function setPrefix($prefix)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrefix()
+    class Google_Service_Compute_BgpRouteNetworkLayerReachabilityInformation extends \Google\Service\Compute\BgpRouteNetworkLayerReachabilityInformation
     {
     }
 }

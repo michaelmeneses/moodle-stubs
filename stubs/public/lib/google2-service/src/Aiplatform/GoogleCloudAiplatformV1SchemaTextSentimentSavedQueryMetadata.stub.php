@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaTextSentimentSavedQueryMetadata extends \Google\Model
-{
-    /**
-     * The maximum sentiment of sentiment Anntoation in this SavedQuery.
-     *
-     * @var int
-     */
-    public $sentimentMax;
-    /**
-     * The maximum sentiment of sentiment Anntoation in this SavedQuery.
-     *
-     * @param int $sentimentMax
-     */
-    public function setSentimentMax($sentimentMax)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaTextSentimentSavedQueryMetadata extends \Google\Model
     {
+        /**
+         * The maximum sentiment of sentiment Anntoation in this SavedQuery.
+         *
+         * @var int
+         */
+        public $sentimentMax;
+        /**
+         * The maximum sentiment of sentiment Anntoation in this SavedQuery.
+         *
+         * @param int $sentimentMax
+         */
+        public function setSentimentMax($sentimentMax)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSentimentMax()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaTextSentimentSavedQueryMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSentimentMax()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaTextSentimentSavedQueryMetadata extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaTextSentimentSavedQueryMetadata
     {
     }
 }

@@ -21,63 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseHosting;
-
-class DnsRecordSet extends \Google\Collection
-{
-    protected $collection_key = 'records';
-    protected $checkErrorType = Status::class;
-    protected $checkErrorDataType = '';
-    /**
-     * Output only. The domain name the record set pertains to.
-     *
-     * @var string
-     */
-    public $domainName;
-    protected $recordsType = DnsRecord::class;
-    protected $recordsDataType = 'array';
-    /**
-     * Output only. An error Hosting services encountered when querying your
-     * domain name's DNS records. Note: Hosting ignores `NXDOMAIN` errors, as
-     * those generally just mean that a domain name hasn't been set up yet.
-     *
-     * @param Status $checkError
-     */
-    public function setCheckError(Status $checkError)
+namespace Google\Service\FirebaseHosting {
+    class DnsRecordSet extends \Google\Collection
     {
+        protected $collection_key = 'records';
+        protected $checkErrorType = Status::class;
+        protected $checkErrorDataType = '';
+        /**
+         * Output only. The domain name the record set pertains to.
+         *
+         * @var string
+         */
+        public $domainName;
+        protected $recordsType = DnsRecord::class;
+        protected $recordsDataType = 'array';
+        /**
+         * Output only. An error Hosting services encountered when querying your
+         * domain name's DNS records. Note: Hosting ignores `NXDOMAIN` errors, as
+         * those generally just mean that a domain name hasn't been set up yet.
+         *
+         * @param Status $checkError
+         */
+        public function setCheckError(Status $checkError)
+        {
+        }
+        /**
+         * @return Status
+         */
+        public function getCheckError()
+        {
+        }
+        /**
+         * Output only. The domain name the record set pertains to.
+         *
+         * @param string $domainName
+         */
+        public function setDomainName($domainName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDomainName()
+        {
+        }
+        /**
+         * Output only. Records on the domain.
+         *
+         * @param DnsRecord[] $records
+         */
+        public function setRecords($records)
+        {
+        }
+        /**
+         * @return DnsRecord[]
+         */
+        public function getRecords()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Status
+     * Runtime class alias of \Google\Service\FirebaseHosting\DnsRecordSet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCheckError()
-    {
-    }
-    /**
-     * Output only. The domain name the record set pertains to.
-     *
-     * @param string $domainName
-     */
-    public function setDomainName($domainName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDomainName()
-    {
-    }
-    /**
-     * Output only. Records on the domain.
-     *
-     * @param DnsRecord[] $records
-     */
-    public function setRecords($records)
-    {
-    }
-    /**
-     * @return DnsRecord[]
-     */
-    public function getRecords()
+    class Google_Service_FirebaseHosting_DnsRecordSet extends \Google\Service\FirebaseHosting\DnsRecordSet
     {
     }
 }

@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseAppHosting;
-
-class CancelOperationRequest extends \Google\Model
-{
+namespace Google\Service\FirebaseAppHosting {
+    class CancelOperationRequest extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\FirebaseAppHosting\CancelOperationRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_FirebaseAppHosting_CancelOperationRequest extends \Google\Service\FirebaseAppHosting\CancelOperationRequest
+    {
+    }
 }

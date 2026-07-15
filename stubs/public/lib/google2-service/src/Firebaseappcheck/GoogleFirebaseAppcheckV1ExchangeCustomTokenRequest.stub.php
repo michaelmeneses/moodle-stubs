@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firebaseappcheck;
-
-class GoogleFirebaseAppcheckV1ExchangeCustomTokenRequest extends \Google\Model
-{
-    /**
-     * Required. A custom token signed using your project's Admin SDK service
-     * account credentials.
-     *
-     * @var string
-     */
-    public $customToken;
-    /**
-     * Specifies whether this attestation is for use in a *limited use* (`true`)
-     * or *session based* (`false`) context. To enable this attestation to be used
-     * with the *replay protection* feature, set this to `true`. The default value
-     * is `false`.
-     *
-     * @var bool
-     */
-    public $limitedUse;
-    /**
-     * Required. A custom token signed using your project's Admin SDK service
-     * account credentials.
-     *
-     * @param string $customToken
-     */
-    public function setCustomToken($customToken)
+namespace Google\Service\Firebaseappcheck {
+    class GoogleFirebaseAppcheckV1ExchangeCustomTokenRequest extends \Google\Model
     {
+        /**
+         * Required. A custom token signed using your project's Admin SDK service
+         * account credentials.
+         *
+         * @var string
+         */
+        public $customToken;
+        /**
+         * Specifies whether this attestation is for use in a *limited use* (`true`)
+         * or *session based* (`false`) context. To enable this attestation to be used
+         * with the *replay protection* feature, set this to `true`. The default value
+         * is `false`.
+         *
+         * @var bool
+         */
+        public $limitedUse;
+        /**
+         * Required. A custom token signed using your project's Admin SDK service
+         * account credentials.
+         *
+         * @param string $customToken
+         */
+        public function setCustomToken($customToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomToken()
+        {
+        }
+        /**
+         * Specifies whether this attestation is for use in a *limited use* (`true`)
+         * or *session based* (`false`) context. To enable this attestation to be used
+         * with the *replay protection* feature, set this to `true`. The default value
+         * is `false`.
+         *
+         * @param bool $limitedUse
+         */
+        public function setLimitedUse($limitedUse)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getLimitedUse()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1ExchangeCustomTokenRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomToken()
-    {
-    }
-    /**
-     * Specifies whether this attestation is for use in a *limited use* (`true`)
-     * or *session based* (`false`) context. To enable this attestation to be used
-     * with the *replay protection* feature, set this to `true`. The default value
-     * is `false`.
-     *
-     * @param bool $limitedUse
-     */
-    public function setLimitedUse($limitedUse)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getLimitedUse()
+    class Google_Service_Firebaseappcheck_GoogleFirebaseAppcheckV1ExchangeCustomTokenRequest extends \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1ExchangeCustomTokenRequest
     {
     }
 }

@@ -21,20 +21,29 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SamplingStrategyRandomSampleConfig extends \Google\Model
-{
-    /**
-     * Sample rate (0, 1]
-     *
-     * @var 
-     */
-    public $sampleRate;
-    public function setSampleRate($sampleRate)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SamplingStrategyRandomSampleConfig extends \Google\Model
     {
+        /**
+         * Sample rate (0, 1]
+         *
+         * @var 
+         */
+        public $sampleRate;
+        public function setSampleRate($sampleRate)
+        {
+        }
+        public function getSampleRate()
+        {
+        }
     }
-    public function getSampleRate()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SamplingStrategyRandomSampleConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SamplingStrategyRandomSampleConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SamplingStrategyRandomSampleConfig
     {
     }
 }

@@ -21,112 +21,121 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Config;
-
-class ResourceChange extends \Google\Collection
-{
-    /**
-     * The default value.
-     */
-    public const INTENT_INTENT_UNSPECIFIED = 'INTENT_UNSPECIFIED';
-    /**
-     * The resource will be created.
-     */
-    public const INTENT_CREATE = 'CREATE';
-    /**
-     * The resource will be updated.
-     */
-    public const INTENT_UPDATE = 'UPDATE';
-    /**
-     * The resource will be deleted.
-     */
-    public const INTENT_DELETE = 'DELETE';
-    /**
-     * The resource will be recreated.
-     */
-    public const INTENT_RECREATE = 'RECREATE';
-    /**
-     * The resource will be untouched.
-     */
-    public const INTENT_UNCHANGED = 'UNCHANGED';
-    protected $collection_key = 'propertyChanges';
-    /**
-     * Output only. The intent of the resource change.
-     *
-     * @var string
-     */
-    public $intent;
-    /**
-     * Identifier. The name of the resource change. Format: 'projects/{project_id}
-     * /locations/{location}/previews/{preview}/resourceChanges/{resource_change}'
-     * .
-     *
-     * @var string
-     */
-    public $name;
-    protected $propertyChangesType = PropertyChange::class;
-    protected $propertyChangesDataType = 'array';
-    protected $terraformInfoType = ResourceChangeTerraformInfo::class;
-    protected $terraformInfoDataType = '';
-    /**
-     * Output only. The intent of the resource change.
-     *
-     * Accepted values: INTENT_UNSPECIFIED, CREATE, UPDATE, DELETE, RECREATE,
-     * UNCHANGED
-     *
-     * @param self::INTENT_* $intent
-     */
-    public function setIntent($intent)
+namespace Google\Service\Config {
+    class ResourceChange extends \Google\Collection
     {
+        /**
+         * The default value.
+         */
+        public const INTENT_INTENT_UNSPECIFIED = 'INTENT_UNSPECIFIED';
+        /**
+         * The resource will be created.
+         */
+        public const INTENT_CREATE = 'CREATE';
+        /**
+         * The resource will be updated.
+         */
+        public const INTENT_UPDATE = 'UPDATE';
+        /**
+         * The resource will be deleted.
+         */
+        public const INTENT_DELETE = 'DELETE';
+        /**
+         * The resource will be recreated.
+         */
+        public const INTENT_RECREATE = 'RECREATE';
+        /**
+         * The resource will be untouched.
+         */
+        public const INTENT_UNCHANGED = 'UNCHANGED';
+        protected $collection_key = 'propertyChanges';
+        /**
+         * Output only. The intent of the resource change.
+         *
+         * @var string
+         */
+        public $intent;
+        /**
+         * Identifier. The name of the resource change. Format: 'projects/{project_id}
+         * /locations/{location}/previews/{preview}/resourceChanges/{resource_change}'
+         * .
+         *
+         * @var string
+         */
+        public $name;
+        protected $propertyChangesType = PropertyChange::class;
+        protected $propertyChangesDataType = 'array';
+        protected $terraformInfoType = ResourceChangeTerraformInfo::class;
+        protected $terraformInfoDataType = '';
+        /**
+         * Output only. The intent of the resource change.
+         *
+         * Accepted values: INTENT_UNSPECIFIED, CREATE, UPDATE, DELETE, RECREATE,
+         * UNCHANGED
+         *
+         * @param self::INTENT_* $intent
+         */
+        public function setIntent($intent)
+        {
+        }
+        /**
+         * @return self::INTENT_*
+         */
+        public function getIntent()
+        {
+        }
+        /**
+         * Identifier. The name of the resource change. Format: 'projects/{project_id}
+         * /locations/{location}/previews/{preview}/resourceChanges/{resource_change}'
+         * .
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The property changes of the resource change.
+         *
+         * @param PropertyChange[] $propertyChanges
+         */
+        public function setPropertyChanges($propertyChanges)
+        {
+        }
+        /**
+         * @return PropertyChange[]
+         */
+        public function getPropertyChanges()
+        {
+        }
+        /**
+         * Output only. Terraform info of the resource change.
+         *
+         * @param ResourceChangeTerraformInfo $terraformInfo
+         */
+        public function setTerraformInfo(ResourceChangeTerraformInfo $terraformInfo)
+        {
+        }
+        /**
+         * @return ResourceChangeTerraformInfo
+         */
+        public function getTerraformInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::INTENT_*
+     * Runtime class alias of \Google\Service\Config\ResourceChange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIntent()
-    {
-    }
-    /**
-     * Identifier. The name of the resource change. Format: 'projects/{project_id}
-     * /locations/{location}/previews/{preview}/resourceChanges/{resource_change}'
-     * .
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The property changes of the resource change.
-     *
-     * @param PropertyChange[] $propertyChanges
-     */
-    public function setPropertyChanges($propertyChanges)
-    {
-    }
-    /**
-     * @return PropertyChange[]
-     */
-    public function getPropertyChanges()
-    {
-    }
-    /**
-     * Output only. Terraform info of the resource change.
-     *
-     * @param ResourceChangeTerraformInfo $terraformInfo
-     */
-    public function setTerraformInfo(ResourceChangeTerraformInfo $terraformInfo)
-    {
-    }
-    /**
-     * @return ResourceChangeTerraformInfo
-     */
-    public function getTerraformInfo()
+    class Google_Service_Config_ResourceChange extends \Google\Service\Config\ResourceChange
     {
     }
 }

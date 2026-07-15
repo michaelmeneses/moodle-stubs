@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudVideoIntelligence;
-
-class GoogleCloudVideointelligenceV1beta2ObjectTrackingFrame extends \Google\Model
-{
-    protected $normalizedBoundingBoxType = GoogleCloudVideointelligenceV1beta2NormalizedBoundingBox::class;
-    protected $normalizedBoundingBoxDataType = '';
-    /**
-     * The timestamp of the frame in microseconds.
-     *
-     * @var string
-     */
-    public $timeOffset;
-    /**
-     * The normalized bounding box location of this object track for the frame.
-     *
-     * @param GoogleCloudVideointelligenceV1beta2NormalizedBoundingBox $normalizedBoundingBox
-     */
-    public function setNormalizedBoundingBox(GoogleCloudVideointelligenceV1beta2NormalizedBoundingBox $normalizedBoundingBox)
+namespace Google\Service\CloudVideoIntelligence {
+    class GoogleCloudVideointelligenceV1beta2ObjectTrackingFrame extends \Google\Model
     {
+        protected $normalizedBoundingBoxType = GoogleCloudVideointelligenceV1beta2NormalizedBoundingBox::class;
+        protected $normalizedBoundingBoxDataType = '';
+        /**
+         * The timestamp of the frame in microseconds.
+         *
+         * @var string
+         */
+        public $timeOffset;
+        /**
+         * The normalized bounding box location of this object track for the frame.
+         *
+         * @param GoogleCloudVideointelligenceV1beta2NormalizedBoundingBox $normalizedBoundingBox
+         */
+        public function setNormalizedBoundingBox(GoogleCloudVideointelligenceV1beta2NormalizedBoundingBox $normalizedBoundingBox)
+        {
+        }
+        /**
+         * @return GoogleCloudVideointelligenceV1beta2NormalizedBoundingBox
+         */
+        public function getNormalizedBoundingBox()
+        {
+        }
+        /**
+         * The timestamp of the frame in microseconds.
+         *
+         * @param string $timeOffset
+         */
+        public function setTimeOffset($timeOffset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimeOffset()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudVideointelligenceV1beta2NormalizedBoundingBox
+     * Runtime class alias of \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1beta2ObjectTrackingFrame registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNormalizedBoundingBox()
-    {
-    }
-    /**
-     * The timestamp of the frame in microseconds.
-     *
-     * @param string $timeOffset
-     */
-    public function setTimeOffset($timeOffset)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimeOffset()
+    class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1beta2ObjectTrackingFrame extends \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1beta2ObjectTrackingFrame
     {
     }
 }

@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class CommentThread extends \Google\Model
-{
-    /**
-     * Etag of this resource.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * The ID that YouTube uses to uniquely identify the comment thread.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "youtube#commentThread".
-     *
-     * @var string
-     */
-    public $kind;
-    protected $repliesType = CommentThreadReplies::class;
-    protected $repliesDataType = '';
-    protected $snippetType = CommentThreadSnippet::class;
-    protected $snippetDataType = '';
-    /**
-     * Etag of this resource.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
+namespace Google\Service\YouTube {
+    class CommentThread extends \Google\Model
     {
+        /**
+         * Etag of this resource.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * The ID that YouTube uses to uniquely identify the comment thread.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "youtube#commentThread".
+         *
+         * @var string
+         */
+        public $kind;
+        protected $repliesType = CommentThreadReplies::class;
+        protected $repliesDataType = '';
+        protected $snippetType = CommentThreadSnippet::class;
+        protected $snippetDataType = '';
+        /**
+         * Etag of this resource.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * The ID that YouTube uses to uniquely identify the comment thread.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "youtube#commentThread".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The replies object contains a limited number of replies (if any) to the top
+         * level comment found in the snippet.
+         *
+         * @param CommentThreadReplies $replies
+         */
+        public function setReplies(CommentThreadReplies $replies)
+        {
+        }
+        /**
+         * @return CommentThreadReplies
+         */
+        public function getReplies()
+        {
+        }
+        /**
+         * The snippet object contains basic details about the comment thread and also
+         * the top level comment.
+         *
+         * @param CommentThreadSnippet $snippet
+         */
+        public function setSnippet(CommentThreadSnippet $snippet)
+        {
+        }
+        /**
+         * @return CommentThreadSnippet
+         */
+        public function getSnippet()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\CommentThread registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
-    {
-    }
-    /**
-     * The ID that YouTube uses to uniquely identify the comment thread.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "youtube#commentThread".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The replies object contains a limited number of replies (if any) to the top
-     * level comment found in the snippet.
-     *
-     * @param CommentThreadReplies $replies
-     */
-    public function setReplies(CommentThreadReplies $replies)
-    {
-    }
-    /**
-     * @return CommentThreadReplies
-     */
-    public function getReplies()
-    {
-    }
-    /**
-     * The snippet object contains basic details about the comment thread and also
-     * the top level comment.
-     *
-     * @param CommentThreadSnippet $snippet
-     */
-    public function setSnippet(CommentThreadSnippet $snippet)
-    {
-    }
-    /**
-     * @return CommentThreadSnippet
-     */
-    public function getSnippet()
+    class Google_Service_YouTube_CommentThread extends \Google\Service\YouTube\CommentThread
     {
     }
 }

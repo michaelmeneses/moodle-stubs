@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InstancesStartWithEncryptionKeyRequest extends \Google\Collection
-{
-    protected $collection_key = 'disks';
-    protected $disksType = CustomerEncryptionKeyProtectedDisk::class;
-    protected $disksDataType = 'array';
-    /**
-     * Array of disks associated with this instance that are protected with
-     * acustomer-supplied encryption key.
-     *
-     * In order to start the instance, the disk url and its corresponding key must
-     * be provided.
-     *
-     * If the disk is not protected with a customer-supplied encryption key it
-     * should not be specified.
-     *
-     * @param CustomerEncryptionKeyProtectedDisk[] $disks
-     */
-    public function setDisks($disks)
+namespace Google\Service\Compute {
+    class InstancesStartWithEncryptionKeyRequest extends \Google\Collection
     {
+        protected $collection_key = 'disks';
+        protected $disksType = CustomerEncryptionKeyProtectedDisk::class;
+        protected $disksDataType = 'array';
+        /**
+         * Array of disks associated with this instance that are protected with
+         * acustomer-supplied encryption key.
+         *
+         * In order to start the instance, the disk url and its corresponding key must
+         * be provided.
+         *
+         * If the disk is not protected with a customer-supplied encryption key it
+         * should not be specified.
+         *
+         * @param CustomerEncryptionKeyProtectedDisk[] $disks
+         */
+        public function setDisks($disks)
+        {
+        }
+        /**
+         * @return CustomerEncryptionKeyProtectedDisk[]
+         */
+        public function getDisks()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CustomerEncryptionKeyProtectedDisk[]
+     * Runtime class alias of \Google\Service\Compute\InstancesStartWithEncryptionKeyRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisks()
+    class Google_Service_Compute_InstancesStartWithEncryptionKeyRequest extends \Google\Service\Compute\InstancesStartWithEncryptionKeyRequest
     {
     }
 }

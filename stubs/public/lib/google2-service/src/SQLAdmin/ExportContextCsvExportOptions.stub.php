@@ -21,114 +21,123 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class ExportContextCsvExportOptions extends \Google\Model
-{
-    /**
-     * Specifies the character that should appear before a data character that
-     * needs to be escaped.
-     *
-     * @var string
-     */
-    public $escapeCharacter;
-    /**
-     * Specifies the character that separates columns within each row (line) of
-     * the file.
-     *
-     * @var string
-     */
-    public $fieldsTerminatedBy;
-    /**
-     * This is used to separate lines. If a line does not contain all fields, the
-     * rest of the columns are set to their default values.
-     *
-     * @var string
-     */
-    public $linesTerminatedBy;
-    /**
-     * Specifies the quoting character to be used when a data value is quoted.
-     *
-     * @var string
-     */
-    public $quoteCharacter;
-    /**
-     * The select query used to extract the data.
-     *
-     * @var string
-     */
-    public $selectQuery;
-    /**
-     * Specifies the character that should appear before a data character that
-     * needs to be escaped.
-     *
-     * @param string $escapeCharacter
-     */
-    public function setEscapeCharacter($escapeCharacter)
+namespace Google\Service\SQLAdmin {
+    class ExportContextCsvExportOptions extends \Google\Model
     {
+        /**
+         * Specifies the character that should appear before a data character that
+         * needs to be escaped.
+         *
+         * @var string
+         */
+        public $escapeCharacter;
+        /**
+         * Specifies the character that separates columns within each row (line) of
+         * the file.
+         *
+         * @var string
+         */
+        public $fieldsTerminatedBy;
+        /**
+         * This is used to separate lines. If a line does not contain all fields, the
+         * rest of the columns are set to their default values.
+         *
+         * @var string
+         */
+        public $linesTerminatedBy;
+        /**
+         * Specifies the quoting character to be used when a data value is quoted.
+         *
+         * @var string
+         */
+        public $quoteCharacter;
+        /**
+         * The select query used to extract the data.
+         *
+         * @var string
+         */
+        public $selectQuery;
+        /**
+         * Specifies the character that should appear before a data character that
+         * needs to be escaped.
+         *
+         * @param string $escapeCharacter
+         */
+        public function setEscapeCharacter($escapeCharacter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEscapeCharacter()
+        {
+        }
+        /**
+         * Specifies the character that separates columns within each row (line) of
+         * the file.
+         *
+         * @param string $fieldsTerminatedBy
+         */
+        public function setFieldsTerminatedBy($fieldsTerminatedBy)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFieldsTerminatedBy()
+        {
+        }
+        /**
+         * This is used to separate lines. If a line does not contain all fields, the
+         * rest of the columns are set to their default values.
+         *
+         * @param string $linesTerminatedBy
+         */
+        public function setLinesTerminatedBy($linesTerminatedBy)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLinesTerminatedBy()
+        {
+        }
+        /**
+         * Specifies the quoting character to be used when a data value is quoted.
+         *
+         * @param string $quoteCharacter
+         */
+        public function setQuoteCharacter($quoteCharacter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQuoteCharacter()
+        {
+        }
+        /**
+         * The select query used to extract the data.
+         *
+         * @param string $selectQuery
+         */
+        public function setSelectQuery($selectQuery)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelectQuery()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SQLAdmin\ExportContextCsvExportOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEscapeCharacter()
-    {
-    }
-    /**
-     * Specifies the character that separates columns within each row (line) of
-     * the file.
-     *
-     * @param string $fieldsTerminatedBy
-     */
-    public function setFieldsTerminatedBy($fieldsTerminatedBy)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFieldsTerminatedBy()
-    {
-    }
-    /**
-     * This is used to separate lines. If a line does not contain all fields, the
-     * rest of the columns are set to their default values.
-     *
-     * @param string $linesTerminatedBy
-     */
-    public function setLinesTerminatedBy($linesTerminatedBy)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLinesTerminatedBy()
-    {
-    }
-    /**
-     * Specifies the quoting character to be used when a data value is quoted.
-     *
-     * @param string $quoteCharacter
-     */
-    public function setQuoteCharacter($quoteCharacter)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQuoteCharacter()
-    {
-    }
-    /**
-     * The select query used to extract the data.
-     *
-     * @param string $selectQuery
-     */
-    public function setSelectQuery($selectQuery)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelectQuery()
+    class Google_Service_SQLAdmin_ExportContextCsvExportOptions extends \Google\Service\SQLAdmin\ExportContextCsvExportOptions
     {
     }
 }

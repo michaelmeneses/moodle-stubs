@@ -21,60 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher\Resource;
-
-/**
- * The "subscriptionsv2" collection of methods.
- * Typical usage is:
- *  <code>
- *   $androidpublisherService = new Google\Service\AndroidPublisher(...);
- *   $subscriptionsv2 = $androidpublisherService->purchases_subscriptionsv2;
- *  </code>
- */
-class PurchasesSubscriptionsv2 extends \Google\Service\Resource
-{
+namespace Google\Service\AndroidPublisher\Resource {
+    use Google\Service\AndroidPublisher\CancelSubscriptionPurchaseRequest;
+    use Google\Service\AndroidPublisher\CancelSubscriptionPurchaseResponse;
+    use Google\Service\AndroidPublisher\RevokeSubscriptionPurchaseRequest;
+    use Google\Service\AndroidPublisher\RevokeSubscriptionPurchaseResponse;
+    use Google\Service\AndroidPublisher\SubscriptionPurchaseV2;
     /**
-     * Cancel a subscription purchase for the user. (subscriptionsv2.cancel)
-     *
-     * @param string $packageName Required. The package of the application for which
-     * this subscription was purchased (for example, 'com.some.thing').
-     * @param string $token Required. The token provided to the user's device when
-     * the subscription was purchased.
-     * @param CancelSubscriptionPurchaseRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return CancelSubscriptionPurchaseResponse
-     * @throws \Google\Service\Exception
+     * The "subscriptionsv2" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $androidpublisherService = new Google\Service\AndroidPublisher(...);
+     *   $subscriptionsv2 = $androidpublisherService->purchases_subscriptionsv2;
+     *  </code>
      */
-    public function cancel($packageName, $token, CancelSubscriptionPurchaseRequest $postBody, $optParams = [])
+    class PurchasesSubscriptionsv2 extends \Google\Service\Resource
     {
+        /**
+         * Cancel a subscription purchase for the user. (subscriptionsv2.cancel)
+         *
+         * @param string $packageName Required. The package of the application for which
+         * this subscription was purchased (for example, 'com.some.thing').
+         * @param string $token Required. The token provided to the user's device when
+         * the subscription was purchased.
+         * @param CancelSubscriptionPurchaseRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return CancelSubscriptionPurchaseResponse
+         * @throws \Google\Service\Exception
+         */
+        public function cancel($packageName, $token, CancelSubscriptionPurchaseRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Get metadata about a subscription (subscriptionsv2.get)
+         *
+         * @param string $packageName The package of the application for which this
+         * subscription was purchased (for example, 'com.some.thing').
+         * @param string $token Required. The token provided to the user's device when
+         * the subscription was purchased.
+         * @param array $optParams Optional parameters.
+         * @return SubscriptionPurchaseV2
+         * @throws \Google\Service\Exception
+         */
+        public function get($packageName, $token, $optParams = [])
+        {
+        }
+        /**
+         * Revoke a subscription purchase for the user. (subscriptionsv2.revoke)
+         *
+         * @param string $packageName Required. The package of the application for which
+         * this subscription was purchased (for example, 'com.some.thing').
+         * @param string $token Required. The token provided to the user's device when
+         * the subscription was purchased.
+         * @param RevokeSubscriptionPurchaseRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return RevokeSubscriptionPurchaseResponse
+         * @throws \Google\Service\Exception
+         */
+        public function revoke($packageName, $token, RevokeSubscriptionPurchaseRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Get metadata about a subscription (subscriptionsv2.get)
-     *
-     * @param string $packageName The package of the application for which this
-     * subscription was purchased (for example, 'com.some.thing').
-     * @param string $token Required. The token provided to the user's device when
-     * the subscription was purchased.
-     * @param array $optParams Optional parameters.
-     * @return SubscriptionPurchaseV2
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\AndroidPublisher\Resource\PurchasesSubscriptionsv2 registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($packageName, $token, $optParams = [])
-    {
-    }
-    /**
-     * Revoke a subscription purchase for the user. (subscriptionsv2.revoke)
-     *
-     * @param string $packageName Required. The package of the application for which
-     * this subscription was purchased (for example, 'com.some.thing').
-     * @param string $token Required. The token provided to the user's device when
-     * the subscription was purchased.
-     * @param RevokeSubscriptionPurchaseRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return RevokeSubscriptionPurchaseResponse
-     * @throws \Google\Service\Exception
-     */
-    public function revoke($packageName, $token, RevokeSubscriptionPurchaseRequest $postBody, $optParams = [])
+    class Google_Service_AndroidPublisher_Resource_PurchasesSubscriptionsv2 extends \Google\Service\AndroidPublisher\Resource\PurchasesSubscriptionsv2
     {
     }
 }

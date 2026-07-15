@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaQuery extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $queryId;
-    /**
-     * @var string
-     */
-    public $text;
-    /**
-     * @param string
-     */
-    public function setQueryId($queryId)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaQuery extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $queryId;
+        /**
+         * @var string
+         */
+        public $text;
+        /**
+         * @param string
+         */
+        public function setQueryId($queryId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQueryId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaQuery registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getQueryId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaQuery extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaQuery
     {
     }
 }

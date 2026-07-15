@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TPU;
-
-class ShieldedInstanceConfig extends \Google\Model
-{
-    /**
-     * Defines whether the instance has Secure Boot enabled.
-     *
-     * @var bool
-     */
-    public $enableSecureBoot;
-    /**
-     * Defines whether the instance has Secure Boot enabled.
-     *
-     * @param bool $enableSecureBoot
-     */
-    public function setEnableSecureBoot($enableSecureBoot)
+namespace Google\Service\TPU {
+    class ShieldedInstanceConfig extends \Google\Model
     {
+        /**
+         * Defines whether the instance has Secure Boot enabled.
+         *
+         * @var bool
+         */
+        public $enableSecureBoot;
+        /**
+         * Defines whether the instance has Secure Boot enabled.
+         *
+         * @param bool $enableSecureBoot
+         */
+        public function setEnableSecureBoot($enableSecureBoot)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableSecureBoot()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\TPU\ShieldedInstanceConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnableSecureBoot()
+    class Google_Service_TPU_ShieldedInstanceConfig extends \Google\Service\TPU\ShieldedInstanceConfig
     {
     }
 }

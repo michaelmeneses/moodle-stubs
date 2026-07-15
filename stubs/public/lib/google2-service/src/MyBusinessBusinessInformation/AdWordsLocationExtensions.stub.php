@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessBusinessInformation;
-
-class AdWordsLocationExtensions extends \Google\Model
-{
-    /**
-     * Required. An alternate phone number to display on AdWords location
-     * extensions instead of the location's primary phone number.
-     *
-     * @var string
-     */
-    public $adPhone;
-    /**
-     * Required. An alternate phone number to display on AdWords location
-     * extensions instead of the location's primary phone number.
-     *
-     * @param string $adPhone
-     */
-    public function setAdPhone($adPhone)
+namespace Google\Service\MyBusinessBusinessInformation {
+    class AdWordsLocationExtensions extends \Google\Model
     {
+        /**
+         * Required. An alternate phone number to display on AdWords location
+         * extensions instead of the location's primary phone number.
+         *
+         * @var string
+         */
+        public $adPhone;
+        /**
+         * Required. An alternate phone number to display on AdWords location
+         * extensions instead of the location's primary phone number.
+         *
+         * @param string $adPhone
+         */
+        public function setAdPhone($adPhone)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdPhone()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MyBusinessBusinessInformation\AdWordsLocationExtensions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdPhone()
+    class Google_Service_MyBusinessBusinessInformation_AdWordsLocationExtensions extends \Google\Service\MyBusinessBusinessInformation\AdWordsLocationExtensions
     {
     }
 }

@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleApiServiceconsumermanagementV1PolicyBinding extends \Google\Collection
-{
-    protected $collection_key = 'members';
-    /**
-     * Uses the same format as in IAM policy. `member` must include both a prefix
-     * and ID. For example, `user:{emailId}`, `serviceAccount:{emailId}`,
-     * `group:{emailId}`.
-     *
-     * @var string[]
-     */
-    public $members;
-    /**
-     * Role. (https://cloud.google.com/iam/docs/understanding-roles) For example,
-     * `roles/viewer`, `roles/editor`, or `roles/owner`.
-     *
-     * @var string
-     */
-    public $role;
-    /**
-     * Uses the same format as in IAM policy. `member` must include both a prefix
-     * and ID. For example, `user:{emailId}`, `serviceAccount:{emailId}`,
-     * `group:{emailId}`.
-     *
-     * @param string[] $members
-     */
-    public function setMembers($members)
+namespace Google\Service\Contentwarehouse {
+    class GoogleApiServiceconsumermanagementV1PolicyBinding extends \Google\Collection
     {
+        protected $collection_key = 'members';
+        /**
+         * Uses the same format as in IAM policy. `member` must include both a prefix
+         * and ID. For example, `user:{emailId}`, `serviceAccount:{emailId}`,
+         * `group:{emailId}`.
+         *
+         * @var string[]
+         */
+        public $members;
+        /**
+         * Role. (https://cloud.google.com/iam/docs/understanding-roles) For example,
+         * `roles/viewer`, `roles/editor`, or `roles/owner`.
+         *
+         * @var string
+         */
+        public $role;
+        /**
+         * Uses the same format as in IAM policy. `member` must include both a prefix
+         * and ID. For example, `user:{emailId}`, `serviceAccount:{emailId}`,
+         * `group:{emailId}`.
+         *
+         * @param string[] $members
+         */
+        public function setMembers($members)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMembers()
+        {
+        }
+        /**
+         * Role. (https://cloud.google.com/iam/docs/understanding-roles) For example,
+         * `roles/viewer`, `roles/editor`, or `roles/owner`.
+         *
+         * @param string $role
+         */
+        public function setRole($role)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRole()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleApiServiceconsumermanagementV1PolicyBinding registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMembers()
-    {
-    }
-    /**
-     * Role. (https://cloud.google.com/iam/docs/understanding-roles) For example,
-     * `roles/viewer`, `roles/editor`, or `roles/owner`.
-     *
-     * @param string $role
-     */
-    public function setRole($role)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRole()
+    class Google_Service_Contentwarehouse_GoogleApiServiceconsumermanagementV1PolicyBinding extends \Google\Service\Contentwarehouse\GoogleApiServiceconsumermanagementV1PolicyBinding
     {
     }
 }

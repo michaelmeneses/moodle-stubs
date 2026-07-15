@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class NotificationConfig extends \Google\Model
-{
-    protected $pubsubType = PubSub::class;
-    protected $pubsubDataType = '';
-    /**
-     * Notification config for Pub/Sub.
-     *
-     * @param PubSub $pubsub
-     */
-    public function setPubsub(PubSub $pubsub)
+namespace Google\Service\Container {
+    class NotificationConfig extends \Google\Model
     {
+        protected $pubsubType = PubSub::class;
+        protected $pubsubDataType = '';
+        /**
+         * Notification config for Pub/Sub.
+         *
+         * @param PubSub $pubsub
+         */
+        public function setPubsub(PubSub $pubsub)
+        {
+        }
+        /**
+         * @return PubSub
+         */
+        public function getPubsub()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PubSub
+     * Runtime class alias of \Google\Service\Container\NotificationConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPubsub()
+    class Google_Service_Container_NotificationConfig extends \Google\Service\Container\NotificationConfig
     {
     }
 }

@@ -29,6 +29,9 @@
  */
 namespace core_xapi\local\statement;
 
+use stdClass;
+use JsonSerializable;
+use core_xapi\iri;
 /**
  * Item class used for xAPI statement elements without validation.
  *

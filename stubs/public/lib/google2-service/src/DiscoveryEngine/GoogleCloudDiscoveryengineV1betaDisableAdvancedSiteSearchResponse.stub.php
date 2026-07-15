@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaDisableAdvancedSiteSearchResponse extends \Google\Model
-{
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaDisableAdvancedSiteSearchResponse extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaDisableAdvancedSiteSearchResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaDisableAdvancedSiteSearchResponse extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaDisableAdvancedSiteSearchResponse
+    {
+    }
 }

@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub\Resource;
-
-/**
- * The "projects" collection of methods.
- * Typical usage is:
- *  <code>
- *   $gkehubService = new Google\Service\GKEHub(...);
- *   $projects = $gkehubService->projects;
- *  </code>
- */
-class Projects extends \Google\Service\Resource
-{
+namespace Google\Service\GKEHub\Resource {
+    /**
+     * The "projects" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $gkehubService = new Google\Service\GKEHub(...);
+     *   $projects = $gkehubService->projects;
+     *  </code>
+     */
+    class Projects extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\GKEHub\Resource\Projects registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_GKEHub_Resource_Projects extends \Google\Service\GKEHub\Resource\Projects
+    {
+    }
 }

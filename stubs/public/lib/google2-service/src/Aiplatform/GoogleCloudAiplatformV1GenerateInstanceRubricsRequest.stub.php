@@ -21,101 +21,110 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1GenerateInstanceRubricsRequest extends \Google\Collection
-{
-    protected $collection_key = 'contents';
-    protected $agentConfigType = GoogleCloudAiplatformV1EvaluationInstanceAgentConfig::class;
-    protected $agentConfigDataType = '';
-    protected $contentsType = GoogleCloudAiplatformV1Content::class;
-    protected $contentsDataType = 'array';
-    /**
-     * Required. The resource name of the Location to generate rubrics from.
-     * Format: `projects/{project}/locations/{location}`
-     *
-     * @var string
-     */
-    public $location;
-    protected $predefinedRubricGenerationSpecType = GoogleCloudAiplatformV1PredefinedMetricSpec::class;
-    protected $predefinedRubricGenerationSpecDataType = '';
-    protected $rubricGenerationSpecType = GoogleCloudAiplatformV1RubricGenerationSpec::class;
-    protected $rubricGenerationSpecDataType = '';
-    /**
-     * Optional. Agent configuration, required for agent-based rubric generation.
-     *
-     * @param GoogleCloudAiplatformV1EvaluationInstanceAgentConfig $agentConfig
-     */
-    public function setAgentConfig(GoogleCloudAiplatformV1EvaluationInstanceAgentConfig $agentConfig)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1GenerateInstanceRubricsRequest extends \Google\Collection
     {
+        protected $collection_key = 'contents';
+        protected $agentConfigType = GoogleCloudAiplatformV1EvaluationInstanceAgentConfig::class;
+        protected $agentConfigDataType = '';
+        protected $contentsType = GoogleCloudAiplatformV1Content::class;
+        protected $contentsDataType = 'array';
+        /**
+         * Required. The resource name of the Location to generate rubrics from.
+         * Format: `projects/{project}/locations/{location}`
+         *
+         * @var string
+         */
+        public $location;
+        protected $predefinedRubricGenerationSpecType = GoogleCloudAiplatformV1PredefinedMetricSpec::class;
+        protected $predefinedRubricGenerationSpecDataType = '';
+        protected $rubricGenerationSpecType = GoogleCloudAiplatformV1RubricGenerationSpec::class;
+        protected $rubricGenerationSpecDataType = '';
+        /**
+         * Optional. Agent configuration, required for agent-based rubric generation.
+         *
+         * @param GoogleCloudAiplatformV1EvaluationInstanceAgentConfig $agentConfig
+         */
+        public function setAgentConfig(GoogleCloudAiplatformV1EvaluationInstanceAgentConfig $agentConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1EvaluationInstanceAgentConfig
+         */
+        public function getAgentConfig()
+        {
+        }
+        /**
+         * Required. The prompt to generate rubrics from. For single-turn queries,
+         * this is a single instance. For multi-turn queries, this is a repeated field
+         * that contains conversation history + latest request.
+         *
+         * @param GoogleCloudAiplatformV1Content[] $contents
+         */
+        public function setContents($contents)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1Content[]
+         */
+        public function getContents()
+        {
+        }
+        /**
+         * Required. The resource name of the Location to generate rubrics from.
+         * Format: `projects/{project}/locations/{location}`
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * Optional. Specification for using the rubric generation configs of a pre-
+         * defined metric, e.g. "generic_quality_v1" and "instruction_following_v1".
+         * Some of the configs may be only used in rubric generation and not
+         * supporting evaluation, e.g. "fully_customized_generic_quality_v1". If this
+         * field is set, the `rubric_generation_spec` field will be ignored.
+         *
+         * @param GoogleCloudAiplatformV1PredefinedMetricSpec $predefinedRubricGenerationSpec
+         */
+        public function setPredefinedRubricGenerationSpec(GoogleCloudAiplatformV1PredefinedMetricSpec $predefinedRubricGenerationSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1PredefinedMetricSpec
+         */
+        public function getPredefinedRubricGenerationSpec()
+        {
+        }
+        /**
+         * Optional. Specification for how the rubrics should be generated.
+         *
+         * @param GoogleCloudAiplatformV1RubricGenerationSpec $rubricGenerationSpec
+         */
+        public function setRubricGenerationSpec(GoogleCloudAiplatformV1RubricGenerationSpec $rubricGenerationSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1RubricGenerationSpec
+         */
+        public function getRubricGenerationSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1EvaluationInstanceAgentConfig
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1GenerateInstanceRubricsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAgentConfig()
-    {
-    }
-    /**
-     * Required. The prompt to generate rubrics from. For single-turn queries,
-     * this is a single instance. For multi-turn queries, this is a repeated field
-     * that contains conversation history + latest request.
-     *
-     * @param GoogleCloudAiplatformV1Content[] $contents
-     */
-    public function setContents($contents)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1Content[]
-     */
-    public function getContents()
-    {
-    }
-    /**
-     * Required. The resource name of the Location to generate rubrics from.
-     * Format: `projects/{project}/locations/{location}`
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocation()
-    {
-    }
-    /**
-     * Optional. Specification for using the rubric generation configs of a pre-
-     * defined metric, e.g. "generic_quality_v1" and "instruction_following_v1".
-     * Some of the configs may be only used in rubric generation and not
-     * supporting evaluation, e.g. "fully_customized_generic_quality_v1". If this
-     * field is set, the `rubric_generation_spec` field will be ignored.
-     *
-     * @param GoogleCloudAiplatformV1PredefinedMetricSpec $predefinedRubricGenerationSpec
-     */
-    public function setPredefinedRubricGenerationSpec(GoogleCloudAiplatformV1PredefinedMetricSpec $predefinedRubricGenerationSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1PredefinedMetricSpec
-     */
-    public function getPredefinedRubricGenerationSpec()
-    {
-    }
-    /**
-     * Optional. Specification for how the rubrics should be generated.
-     *
-     * @param GoogleCloudAiplatformV1RubricGenerationSpec $rubricGenerationSpec
-     */
-    public function setRubricGenerationSpec(GoogleCloudAiplatformV1RubricGenerationSpec $rubricGenerationSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1RubricGenerationSpec
-     */
-    public function getRubricGenerationSpec()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1GenerateInstanceRubricsRequest extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1GenerateInstanceRubricsRequest
     {
     }
 }

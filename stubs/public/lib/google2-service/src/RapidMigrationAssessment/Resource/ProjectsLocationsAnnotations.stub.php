@@ -21,42 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RapidMigrationAssessment\Resource;
-
-/**
- * The "annotations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $rapidmigrationassessmentService = new Google\Service\RapidMigrationAssessment(...);
- *   $annotations = $rapidmigrationassessmentService->projects_locations_annotations;
- *  </code>
- */
-class ProjectsLocationsAnnotations extends \Google\Service\Resource
-{
+namespace Google\Service\RapidMigrationAssessment\Resource {
+    use Google\Service\RapidMigrationAssessment\Annotation;
+    use Google\Service\RapidMigrationAssessment\Operation;
     /**
-     * Creates an Annotation (annotations.create)
-     *
-     * @param string $parent Required. Name of the parent (project+location).
-     * @param Annotation $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string requestId Optional. An optional request ID to identify
-     * requests.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * The "annotations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $rapidmigrationassessmentService = new Google\Service\RapidMigrationAssessment(...);
+     *   $annotations = $rapidmigrationassessmentService->projects_locations_annotations;
+     *  </code>
      */
-    public function create($parent, Annotation $postBody, $optParams = [])
+    class ProjectsLocationsAnnotations extends \Google\Service\Resource
     {
+        /**
+         * Creates an Annotation (annotations.create)
+         *
+         * @param string $parent Required. Name of the parent (project+location).
+         * @param Annotation $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string requestId Optional. An optional request ID to identify
+         * requests.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, Annotation $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Gets details of a single Annotation. (annotations.get)
+         *
+         * @param string $name Required. Name of the resource.
+         * @param array $optParams Optional parameters.
+         * @return Annotation
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets details of a single Annotation. (annotations.get)
-     *
-     * @param string $name Required. Name of the resource.
-     * @param array $optParams Optional parameters.
-     * @return Annotation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\RapidMigrationAssessment\Resource\ProjectsLocationsAnnotations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($name, $optParams = [])
+    class Google_Service_RapidMigrationAssessment_Resource_ProjectsLocationsAnnotations extends \Google\Service\RapidMigrationAssessment\Resource\ProjectsLocationsAnnotations
     {
     }
 }

@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveLabels;
-
-class GoogleAppsDriveLabelsV2SelectionLimits extends \Google\Model
-{
-    protected $listLimitsType = GoogleAppsDriveLabelsV2ListLimits::class;
-    protected $listLimitsDataType = '';
-    /**
-     * Maximum number of choices.
-     *
-     * @var int
-     */
-    public $maxChoices;
-    /**
-     * Maximum number of deleted choices.
-     *
-     * @var int
-     */
-    public $maxDeletedChoices;
-    /**
-     * Maximum length for display name.
-     *
-     * @var int
-     */
-    public $maxDisplayNameLength;
-    /**
-     * Maximum ID length for a selection option.
-     *
-     * @var int
-     */
-    public $maxIdLength;
-    /**
-     * Limits for list-variant of a field type.
-     *
-     * @param GoogleAppsDriveLabelsV2ListLimits $listLimits
-     */
-    public function setListLimits(GoogleAppsDriveLabelsV2ListLimits $listLimits)
+namespace Google\Service\DriveLabels {
+    class GoogleAppsDriveLabelsV2SelectionLimits extends \Google\Model
     {
+        protected $listLimitsType = GoogleAppsDriveLabelsV2ListLimits::class;
+        protected $listLimitsDataType = '';
+        /**
+         * Maximum number of choices.
+         *
+         * @var int
+         */
+        public $maxChoices;
+        /**
+         * Maximum number of deleted choices.
+         *
+         * @var int
+         */
+        public $maxDeletedChoices;
+        /**
+         * Maximum length for display name.
+         *
+         * @var int
+         */
+        public $maxDisplayNameLength;
+        /**
+         * Maximum ID length for a selection option.
+         *
+         * @var int
+         */
+        public $maxIdLength;
+        /**
+         * Limits for list-variant of a field type.
+         *
+         * @param GoogleAppsDriveLabelsV2ListLimits $listLimits
+         */
+        public function setListLimits(GoogleAppsDriveLabelsV2ListLimits $listLimits)
+        {
+        }
+        /**
+         * @return GoogleAppsDriveLabelsV2ListLimits
+         */
+        public function getListLimits()
+        {
+        }
+        /**
+         * Maximum number of choices.
+         *
+         * @param int $maxChoices
+         */
+        public function setMaxChoices($maxChoices)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxChoices()
+        {
+        }
+        /**
+         * Maximum number of deleted choices.
+         *
+         * @param int $maxDeletedChoices
+         */
+        public function setMaxDeletedChoices($maxDeletedChoices)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxDeletedChoices()
+        {
+        }
+        /**
+         * Maximum length for display name.
+         *
+         * @param int $maxDisplayNameLength
+         */
+        public function setMaxDisplayNameLength($maxDisplayNameLength)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxDisplayNameLength()
+        {
+        }
+        /**
+         * Maximum ID length for a selection option.
+         *
+         * @param int $maxIdLength
+         */
+        public function setMaxIdLength($maxIdLength)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxIdLength()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAppsDriveLabelsV2ListLimits
+     * Runtime class alias of \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2SelectionLimits registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getListLimits()
-    {
-    }
-    /**
-     * Maximum number of choices.
-     *
-     * @param int $maxChoices
-     */
-    public function setMaxChoices($maxChoices)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxChoices()
-    {
-    }
-    /**
-     * Maximum number of deleted choices.
-     *
-     * @param int $maxDeletedChoices
-     */
-    public function setMaxDeletedChoices($maxDeletedChoices)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxDeletedChoices()
-    {
-    }
-    /**
-     * Maximum length for display name.
-     *
-     * @param int $maxDisplayNameLength
-     */
-    public function setMaxDisplayNameLength($maxDisplayNameLength)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxDisplayNameLength()
-    {
-    }
-    /**
-     * Maximum ID length for a selection option.
-     *
-     * @param int $maxIdLength
-     */
-    public function setMaxIdLength($maxIdLength)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxIdLength()
+    class Google_Service_DriveLabels_GoogleAppsDriveLabelsV2SelectionLimits extends \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2SelectionLimits
     {
     }
 }

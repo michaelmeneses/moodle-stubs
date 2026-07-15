@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Iam;
-
-class ListServiceAccountsResponse extends \Google\Collection
-{
-    protected $collection_key = 'accounts';
-    protected $accountsType = ServiceAccount::class;
-    protected $accountsDataType = 'array';
-    public $accounts;
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * @param ServiceAccount[]
-     */
-    public function setAccounts($accounts)
+namespace Google\Service\Iam {
+    class ListServiceAccountsResponse extends \Google\Collection
     {
+        protected $collection_key = 'accounts';
+        protected $accountsType = ServiceAccount::class;
+        protected $accountsDataType = 'array';
+        public $accounts;
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * @param ServiceAccount[]
+         */
+        public function setAccounts($accounts)
+        {
+        }
+        /**
+         * @return ServiceAccount[]
+         */
+        public function getAccounts()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ServiceAccount[]
+     * Runtime class alias of \Google\Service\Iam\ListServiceAccountsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccounts()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Iam_ListServiceAccountsResponse extends \Google\Service\Iam\ListServiceAccountsResponse
     {
     }
 }

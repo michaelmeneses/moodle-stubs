@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ListDeploymentResourcePoolsResponse extends \Google\Collection
-{
-    protected $collection_key = 'deploymentResourcePools';
-    protected $deploymentResourcePoolsType = GoogleCloudAiplatformV1DeploymentResourcePool::class;
-    protected $deploymentResourcePoolsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The DeploymentResourcePools from the specified location.
-     *
-     * @param GoogleCloudAiplatformV1DeploymentResourcePool[] $deploymentResourcePools
-     */
-    public function setDeploymentResourcePools($deploymentResourcePools)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ListDeploymentResourcePoolsResponse extends \Google\Collection
     {
+        protected $collection_key = 'deploymentResourcePools';
+        protected $deploymentResourcePoolsType = GoogleCloudAiplatformV1DeploymentResourcePool::class;
+        protected $deploymentResourcePoolsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The DeploymentResourcePools from the specified location.
+         *
+         * @param GoogleCloudAiplatformV1DeploymentResourcePool[] $deploymentResourcePools
+         */
+        public function setDeploymentResourcePools($deploymentResourcePools)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1DeploymentResourcePool[]
+         */
+        public function getDeploymentResourcePools()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1DeploymentResourcePool[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListDeploymentResourcePoolsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeploymentResourcePools()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ListDeploymentResourcePoolsResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListDeploymentResourcePoolsResponse
     {
     }
 }

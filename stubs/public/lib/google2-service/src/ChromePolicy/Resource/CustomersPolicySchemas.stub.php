@@ -21,49 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromePolicy\Resource;
-
-/**
- * The "policySchemas" collection of methods.
- * Typical usage is:
- *  <code>
- *   $chromepolicyService = new Google\Service\ChromePolicy(...);
- *   $policySchemas = $chromepolicyService->customers_policySchemas;
- *  </code>
- */
-class CustomersPolicySchemas extends \Google\Service\Resource
-{
+namespace Google\Service\ChromePolicy\Resource {
+    use Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1ListPolicySchemasResponse;
+    use Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1PolicySchema;
     /**
-     * Get a specific policy schema for a customer by its resource name.
-     * (policySchemas.get)
-     *
-     * @param string $name Required. The policy schema resource name to query.
-     * @param array $optParams Optional parameters.
-     * @return GoogleChromePolicyVersionsV1PolicySchema
-     * @throws \Google\Service\Exception
+     * The "policySchemas" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $chromepolicyService = new Google\Service\ChromePolicy(...);
+     *   $policySchemas = $chromepolicyService->customers_policySchemas;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class CustomersPolicySchemas extends \Google\Service\Resource
     {
+        /**
+         * Get a specific policy schema for a customer by its resource name.
+         * (policySchemas.get)
+         *
+         * @param string $name Required. The policy schema resource name to query.
+         * @param array $optParams Optional parameters.
+         * @return GoogleChromePolicyVersionsV1PolicySchema
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets a list of policy schemas that match a specified filter value for a given
+         * customer. (policySchemas.listCustomersPolicySchemas)
+         *
+         * @param string $parent Required. The customer for which the listing request
+         * will apply.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter The schema filter used to find a particular schema
+         * based on fields like its resource name, description and
+         * `additionalTargetKeyNames`.
+         * @opt_param int pageSize The maximum number of policy schemas to return,
+         * defaults to 100 and has a maximum of 1000.
+         * @opt_param string pageToken The page token used to retrieve a specific page
+         * of the listing request.
+         * @return GoogleChromePolicyVersionsV1ListPolicySchemasResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listCustomersPolicySchemas($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets a list of policy schemas that match a specified filter value for a given
-     * customer. (policySchemas.listCustomersPolicySchemas)
-     *
-     * @param string $parent Required. The customer for which the listing request
-     * will apply.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter The schema filter used to find a particular schema
-     * based on fields like its resource name, description and
-     * `additionalTargetKeyNames`.
-     * @opt_param int pageSize The maximum number of policy schemas to return,
-     * defaults to 100 and has a maximum of 1000.
-     * @opt_param string pageToken The page token used to retrieve a specific page
-     * of the listing request.
-     * @return GoogleChromePolicyVersionsV1ListPolicySchemasResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\ChromePolicy\Resource\CustomersPolicySchemas registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listCustomersPolicySchemas($parent, $optParams = [])
+    class Google_Service_ChromePolicy_Resource_CustomersPolicySchemas extends \Google\Service\ChromePolicy\Resource\CustomersPolicySchemas
     {
     }
 }

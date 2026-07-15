@@ -21,59 +21,68 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1mainQueryMetricsResponseSlice extends \Google\Collection
-{
-    protected $collection_key = 'dimensions';
-    protected $dimensionsType = GoogleCloudContactcenterinsightsV1mainDimension::class;
-    protected $dimensionsDataType = 'array';
-    protected $timeSeriesType = GoogleCloudContactcenterinsightsV1mainQueryMetricsResponseSliceTimeSeries::class;
-    protected $timeSeriesDataType = '';
-    protected $totalType = GoogleCloudContactcenterinsightsV1mainQueryMetricsResponseSliceDataPoint::class;
-    protected $totalDataType = '';
-    /**
-     * A unique combination of dimensions that this slice represents.
-     *
-     * @param GoogleCloudContactcenterinsightsV1mainDimension[] $dimensions
-     */
-    public function setDimensions($dimensions)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1mainQueryMetricsResponseSlice extends \Google\Collection
     {
+        protected $collection_key = 'dimensions';
+        protected $dimensionsType = GoogleCloudContactcenterinsightsV1mainDimension::class;
+        protected $dimensionsDataType = 'array';
+        protected $timeSeriesType = GoogleCloudContactcenterinsightsV1mainQueryMetricsResponseSliceTimeSeries::class;
+        protected $timeSeriesDataType = '';
+        protected $totalType = GoogleCloudContactcenterinsightsV1mainQueryMetricsResponseSliceDataPoint::class;
+        protected $totalDataType = '';
+        /**
+         * A unique combination of dimensions that this slice represents.
+         *
+         * @param GoogleCloudContactcenterinsightsV1mainDimension[] $dimensions
+         */
+        public function setDimensions($dimensions)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1mainDimension[]
+         */
+        public function getDimensions()
+        {
+        }
+        /**
+         * A time series of metric values. This is only populated if the request
+         * specifies a time granularity other than NONE.
+         *
+         * @param GoogleCloudContactcenterinsightsV1mainQueryMetricsResponseSliceTimeSeries $timeSeries
+         */
+        public function setTimeSeries(GoogleCloudContactcenterinsightsV1mainQueryMetricsResponseSliceTimeSeries $timeSeries)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1mainQueryMetricsResponseSliceTimeSeries
+         */
+        public function getTimeSeries()
+        {
+        }
+        /**
+         * The total metric value. The interval of this data point is [starting create
+         * time, ending create time) from the request.
+         *
+         * @param GoogleCloudContactcenterinsightsV1mainQueryMetricsResponseSliceDataPoint $total
+         */
+        public function setTotal(GoogleCloudContactcenterinsightsV1mainQueryMetricsResponseSliceDataPoint $total)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1mainQueryMetricsResponseSliceDataPoint
+         */
+        public function getTotal()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudContactcenterinsightsV1mainDimension[]
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainQueryMetricsResponseSlice registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDimensions()
-    {
-    }
-    /**
-     * A time series of metric values. This is only populated if the request
-     * specifies a time granularity other than NONE.
-     *
-     * @param GoogleCloudContactcenterinsightsV1mainQueryMetricsResponseSliceTimeSeries $timeSeries
-     */
-    public function setTimeSeries(GoogleCloudContactcenterinsightsV1mainQueryMetricsResponseSliceTimeSeries $timeSeries)
-    {
-    }
-    /**
-     * @return GoogleCloudContactcenterinsightsV1mainQueryMetricsResponseSliceTimeSeries
-     */
-    public function getTimeSeries()
-    {
-    }
-    /**
-     * The total metric value. The interval of this data point is [starting create
-     * time, ending create time) from the request.
-     *
-     * @param GoogleCloudContactcenterinsightsV1mainQueryMetricsResponseSliceDataPoint $total
-     */
-    public function setTotal(GoogleCloudContactcenterinsightsV1mainQueryMetricsResponseSliceDataPoint $total)
-    {
-    }
-    /**
-     * @return GoogleCloudContactcenterinsightsV1mainQueryMetricsResponseSliceDataPoint
-     */
-    public function getTotal()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1mainQueryMetricsResponseSlice extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainQueryMetricsResponseSlice
     {
     }
 }

@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessBusinessInformation;
-
-class ListAttributeMetadataResponse extends \Google\Collection
-{
-    protected $collection_key = 'attributeMetadata';
-    protected $attributeMetadataType = AttributeMetadata::class;
-    protected $attributeMetadataDataType = 'array';
-    /**
-     * If the number of attributes exceeded the requested page size, this field
-     * will be populated with a token to fetch the next page of attributes on a
-     * subsequent call to `attributes.list`. If there are no more attributes, this
-     * field will not be present in the response.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * A collection of attribute metadata for the available attributes.
-     *
-     * @param AttributeMetadata[] $attributeMetadata
-     */
-    public function setAttributeMetadata($attributeMetadata)
+namespace Google\Service\MyBusinessBusinessInformation {
+    class ListAttributeMetadataResponse extends \Google\Collection
     {
+        protected $collection_key = 'attributeMetadata';
+        protected $attributeMetadataType = AttributeMetadata::class;
+        protected $attributeMetadataDataType = 'array';
+        /**
+         * If the number of attributes exceeded the requested page size, this field
+         * will be populated with a token to fetch the next page of attributes on a
+         * subsequent call to `attributes.list`. If there are no more attributes, this
+         * field will not be present in the response.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * A collection of attribute metadata for the available attributes.
+         *
+         * @param AttributeMetadata[] $attributeMetadata
+         */
+        public function setAttributeMetadata($attributeMetadata)
+        {
+        }
+        /**
+         * @return AttributeMetadata[]
+         */
+        public function getAttributeMetadata()
+        {
+        }
+        /**
+         * If the number of attributes exceeded the requested page size, this field
+         * will be populated with a token to fetch the next page of attributes on a
+         * subsequent call to `attributes.list`. If there are no more attributes, this
+         * field will not be present in the response.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AttributeMetadata[]
+     * Runtime class alias of \Google\Service\MyBusinessBusinessInformation\ListAttributeMetadataResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttributeMetadata()
-    {
-    }
-    /**
-     * If the number of attributes exceeded the requested page size, this field
-     * will be populated with a token to fetch the next page of attributes on a
-     * subsequent call to `attributes.list`. If there are no more attributes, this
-     * field will not be present in the response.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_MyBusinessBusinessInformation_ListAttributeMetadataResponse extends \Google\Service\MyBusinessBusinessInformation\ListAttributeMetadataResponse
     {
     }
 }

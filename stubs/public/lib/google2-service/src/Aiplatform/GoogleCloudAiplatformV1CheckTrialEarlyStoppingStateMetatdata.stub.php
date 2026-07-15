@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1CheckTrialEarlyStoppingStateMetatdata extends \Google\Model
-{
-    protected $genericMetadataType = GoogleCloudAiplatformV1GenericOperationMetadata::class;
-    protected $genericMetadataDataType = '';
-    /**
-     * The name of the Study that the Trial belongs to.
-     *
-     * @var string
-     */
-    public $study;
-    /**
-     * The Trial name.
-     *
-     * @var string
-     */
-    public $trial;
-    /**
-     * Operation metadata for suggesting Trials.
-     *
-     * @param GoogleCloudAiplatformV1GenericOperationMetadata $genericMetadata
-     */
-    public function setGenericMetadata(GoogleCloudAiplatformV1GenericOperationMetadata $genericMetadata)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1CheckTrialEarlyStoppingStateMetatdata extends \Google\Model
     {
+        protected $genericMetadataType = GoogleCloudAiplatformV1GenericOperationMetadata::class;
+        protected $genericMetadataDataType = '';
+        /**
+         * The name of the Study that the Trial belongs to.
+         *
+         * @var string
+         */
+        public $study;
+        /**
+         * The Trial name.
+         *
+         * @var string
+         */
+        public $trial;
+        /**
+         * Operation metadata for suggesting Trials.
+         *
+         * @param GoogleCloudAiplatformV1GenericOperationMetadata $genericMetadata
+         */
+        public function setGenericMetadata(GoogleCloudAiplatformV1GenericOperationMetadata $genericMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1GenericOperationMetadata
+         */
+        public function getGenericMetadata()
+        {
+        }
+        /**
+         * The name of the Study that the Trial belongs to.
+         *
+         * @param string $study
+         */
+        public function setStudy($study)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStudy()
+        {
+        }
+        /**
+         * The Trial name.
+         *
+         * @param string $trial
+         */
+        public function setTrial($trial)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTrial()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1GenericOperationMetadata
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1CheckTrialEarlyStoppingStateMetatdata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGenericMetadata()
-    {
-    }
-    /**
-     * The name of the Study that the Trial belongs to.
-     *
-     * @param string $study
-     */
-    public function setStudy($study)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStudy()
-    {
-    }
-    /**
-     * The Trial name.
-     *
-     * @param string $trial
-     */
-    public function setTrial($trial)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTrial()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1CheckTrialEarlyStoppingStateMetatdata extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1CheckTrialEarlyStoppingStateMetatdata
     {
     }
 }

@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3PlaybookTransition extends \Google\Model
-{
-    /**
-     * Output only. The display name of the playbook.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Required. The unique identifier of the playbook. Format:
-     * `projects//locations//agents//playbooks/`.
-     *
-     * @var string
-     */
-    public $playbook;
-    /**
-     * Output only. The display name of the playbook.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3PlaybookTransition extends \Google\Model
     {
+        /**
+         * Output only. The display name of the playbook.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Required. The unique identifier of the playbook. Format:
+         * `projects//locations//agents//playbooks/`.
+         *
+         * @var string
+         */
+        public $playbook;
+        /**
+         * Output only. The display name of the playbook.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Required. The unique identifier of the playbook. Format:
+         * `projects//locations//agents//playbooks/`.
+         *
+         * @param string $playbook
+         */
+        public function setPlaybook($playbook)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPlaybook()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3PlaybookTransition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Required. The unique identifier of the playbook. Format:
-     * `projects//locations//agents//playbooks/`.
-     *
-     * @param string $playbook
-     */
-    public function setPlaybook($playbook)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPlaybook()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3PlaybookTransition extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3PlaybookTransition
     {
     }
 }

@@ -21,29 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessBusinessInformation\Resource;
-
-/**
- * The "attributes" collection of methods.
- * Typical usage is:
- *  <code>
- *   $mybusinessbusinessinformationService = new Google\Service\MyBusinessBusinessInformation(...);
- *   $attributes = $mybusinessbusinessinformationService->locations_attributes;
- *  </code>
- */
-class LocationsAttributes extends \Google\Service\Resource
-{
+namespace Google\Service\MyBusinessBusinessInformation\Resource {
+    use Google\Service\MyBusinessBusinessInformation\Attributes as AttributesModel;
     /**
-     * Gets the Google-updated version of the specified location.
-     * (attributes.getGoogleUpdated)
-     *
-     * @param string $name Required. Google identifier for this location in the form
-     * of `locations/{location_id}/attributes`.
-     * @param array $optParams Optional parameters.
-     * @return AttributesModel
-     * @throws \Google\Service\Exception
+     * The "attributes" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $mybusinessbusinessinformationService = new Google\Service\MyBusinessBusinessInformation(...);
+     *   $attributes = $mybusinessbusinessinformationService->locations_attributes;
+     *  </code>
      */
-    public function getGoogleUpdated($name, $optParams = [])
+    class LocationsAttributes extends \Google\Service\Resource
+    {
+        /**
+         * Gets the Google-updated version of the specified location.
+         * (attributes.getGoogleUpdated)
+         *
+         * @param string $name Required. Google identifier for this location in the form
+         * of `locations/{location_id}/attributes`.
+         * @param array $optParams Optional parameters.
+         * @return AttributesModel
+         * @throws \Google\Service\Exception
+         */
+        public function getGoogleUpdated($name, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\MyBusinessBusinessInformation\Resource\LocationsAttributes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_MyBusinessBusinessInformation_Resource_LocationsAttributes extends \Google\Service\MyBusinessBusinessInformation\Resource\LocationsAttributes
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromePolicy;
-
-class GoogleChromePolicyVersionsV1AdditionalTargetKeyName extends \Google\Model
-{
-    /**
-     * Key name.
-     *
-     * @var string
-     */
-    public $key;
-    /**
-     * Key description.
-     *
-     * @var string
-     */
-    public $keyDescription;
-    /**
-     * Key name.
-     *
-     * @param string $key
-     */
-    public function setKey($key)
+namespace Google\Service\ChromePolicy {
+    class GoogleChromePolicyVersionsV1AdditionalTargetKeyName extends \Google\Model
     {
+        /**
+         * Key name.
+         *
+         * @var string
+         */
+        public $key;
+        /**
+         * Key description.
+         *
+         * @var string
+         */
+        public $keyDescription;
+        /**
+         * Key name.
+         *
+         * @param string $key
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * Key description.
+         *
+         * @param string $keyDescription
+         */
+        public function setKeyDescription($keyDescription)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKeyDescription()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1AdditionalTargetKeyName registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKey()
-    {
-    }
-    /**
-     * Key description.
-     *
-     * @param string $keyDescription
-     */
-    public function setKeyDescription($keyDescription)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKeyDescription()
+    class Google_Service_ChromePolicy_GoogleChromePolicyVersionsV1AdditionalTargetKeyName extends \Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1AdditionalTargetKeyName
     {
     }
 }

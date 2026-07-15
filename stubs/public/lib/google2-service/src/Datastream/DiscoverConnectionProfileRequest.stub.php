@@ -21,182 +21,191 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class DiscoverConnectionProfileRequest extends \Google\Model
-{
-    protected $connectionProfileType = ConnectionProfile::class;
-    protected $connectionProfileDataType = '';
-    /**
-     * A reference to an existing connection profile.
-     *
-     * @var string
-     */
-    public $connectionProfileName;
-    /**
-     * Whether to retrieve the full hierarchy of data objects (TRUE) or only the
-     * current level (FALSE).
-     *
-     * @var bool
-     */
-    public $fullHierarchy;
-    /**
-     * The number of hierarchy levels below the current level to be retrieved.
-     *
-     * @var int
-     */
-    public $hierarchyDepth;
-    protected $mongodbClusterType = MongodbCluster::class;
-    protected $mongodbClusterDataType = '';
-    protected $mysqlRdbmsType = MysqlRdbms::class;
-    protected $mysqlRdbmsDataType = '';
-    protected $oracleRdbmsType = OracleRdbms::class;
-    protected $oracleRdbmsDataType = '';
-    protected $postgresqlRdbmsType = PostgresqlRdbms::class;
-    protected $postgresqlRdbmsDataType = '';
-    protected $salesforceOrgType = SalesforceOrg::class;
-    protected $salesforceOrgDataType = '';
-    protected $sqlServerRdbmsType = SqlServerRdbms::class;
-    protected $sqlServerRdbmsDataType = '';
-    /**
-     * An ad-hoc connection profile configuration.
-     *
-     * @param ConnectionProfile $connectionProfile
-     */
-    public function setConnectionProfile(ConnectionProfile $connectionProfile)
+namespace Google\Service\Datastream {
+    class DiscoverConnectionProfileRequest extends \Google\Model
     {
+        protected $connectionProfileType = ConnectionProfile::class;
+        protected $connectionProfileDataType = '';
+        /**
+         * A reference to an existing connection profile.
+         *
+         * @var string
+         */
+        public $connectionProfileName;
+        /**
+         * Whether to retrieve the full hierarchy of data objects (TRUE) or only the
+         * current level (FALSE).
+         *
+         * @var bool
+         */
+        public $fullHierarchy;
+        /**
+         * The number of hierarchy levels below the current level to be retrieved.
+         *
+         * @var int
+         */
+        public $hierarchyDepth;
+        protected $mongodbClusterType = MongodbCluster::class;
+        protected $mongodbClusterDataType = '';
+        protected $mysqlRdbmsType = MysqlRdbms::class;
+        protected $mysqlRdbmsDataType = '';
+        protected $oracleRdbmsType = OracleRdbms::class;
+        protected $oracleRdbmsDataType = '';
+        protected $postgresqlRdbmsType = PostgresqlRdbms::class;
+        protected $postgresqlRdbmsDataType = '';
+        protected $salesforceOrgType = SalesforceOrg::class;
+        protected $salesforceOrgDataType = '';
+        protected $sqlServerRdbmsType = SqlServerRdbms::class;
+        protected $sqlServerRdbmsDataType = '';
+        /**
+         * An ad-hoc connection profile configuration.
+         *
+         * @param ConnectionProfile $connectionProfile
+         */
+        public function setConnectionProfile(ConnectionProfile $connectionProfile)
+        {
+        }
+        /**
+         * @return ConnectionProfile
+         */
+        public function getConnectionProfile()
+        {
+        }
+        /**
+         * A reference to an existing connection profile.
+         *
+         * @param string $connectionProfileName
+         */
+        public function setConnectionProfileName($connectionProfileName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConnectionProfileName()
+        {
+        }
+        /**
+         * Whether to retrieve the full hierarchy of data objects (TRUE) or only the
+         * current level (FALSE).
+         *
+         * @param bool $fullHierarchy
+         */
+        public function setFullHierarchy($fullHierarchy)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getFullHierarchy()
+        {
+        }
+        /**
+         * The number of hierarchy levels below the current level to be retrieved.
+         *
+         * @param int $hierarchyDepth
+         */
+        public function setHierarchyDepth($hierarchyDepth)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getHierarchyDepth()
+        {
+        }
+        /**
+         * MongoDB cluster to enrich with child data objects and metadata.
+         *
+         * @param MongodbCluster $mongodbCluster
+         */
+        public function setMongodbCluster(MongodbCluster $mongodbCluster)
+        {
+        }
+        /**
+         * @return MongodbCluster
+         */
+        public function getMongodbCluster()
+        {
+        }
+        /**
+         * MySQL RDBMS to enrich with child data objects and metadata.
+         *
+         * @param MysqlRdbms $mysqlRdbms
+         */
+        public function setMysqlRdbms(MysqlRdbms $mysqlRdbms)
+        {
+        }
+        /**
+         * @return MysqlRdbms
+         */
+        public function getMysqlRdbms()
+        {
+        }
+        /**
+         * Oracle RDBMS to enrich with child data objects and metadata.
+         *
+         * @param OracleRdbms $oracleRdbms
+         */
+        public function setOracleRdbms(OracleRdbms $oracleRdbms)
+        {
+        }
+        /**
+         * @return OracleRdbms
+         */
+        public function getOracleRdbms()
+        {
+        }
+        /**
+         * PostgreSQL RDBMS to enrich with child data objects and metadata.
+         *
+         * @param PostgresqlRdbms $postgresqlRdbms
+         */
+        public function setPostgresqlRdbms(PostgresqlRdbms $postgresqlRdbms)
+        {
+        }
+        /**
+         * @return PostgresqlRdbms
+         */
+        public function getPostgresqlRdbms()
+        {
+        }
+        /**
+         * Salesforce organization to enrich with child data objects and metadata.
+         *
+         * @param SalesforceOrg $salesforceOrg
+         */
+        public function setSalesforceOrg(SalesforceOrg $salesforceOrg)
+        {
+        }
+        /**
+         * @return SalesforceOrg
+         */
+        public function getSalesforceOrg()
+        {
+        }
+        /**
+         * SQLServer RDBMS to enrich with child data objects and metadata.
+         *
+         * @param SqlServerRdbms $sqlServerRdbms
+         */
+        public function setSqlServerRdbms(SqlServerRdbms $sqlServerRdbms)
+        {
+        }
+        /**
+         * @return SqlServerRdbms
+         */
+        public function getSqlServerRdbms()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ConnectionProfile
+     * Runtime class alias of \Google\Service\Datastream\DiscoverConnectionProfileRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConnectionProfile()
-    {
-    }
-    /**
-     * A reference to an existing connection profile.
-     *
-     * @param string $connectionProfileName
-     */
-    public function setConnectionProfileName($connectionProfileName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getConnectionProfileName()
-    {
-    }
-    /**
-     * Whether to retrieve the full hierarchy of data objects (TRUE) or only the
-     * current level (FALSE).
-     *
-     * @param bool $fullHierarchy
-     */
-    public function setFullHierarchy($fullHierarchy)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getFullHierarchy()
-    {
-    }
-    /**
-     * The number of hierarchy levels below the current level to be retrieved.
-     *
-     * @param int $hierarchyDepth
-     */
-    public function setHierarchyDepth($hierarchyDepth)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getHierarchyDepth()
-    {
-    }
-    /**
-     * MongoDB cluster to enrich with child data objects and metadata.
-     *
-     * @param MongodbCluster $mongodbCluster
-     */
-    public function setMongodbCluster(MongodbCluster $mongodbCluster)
-    {
-    }
-    /**
-     * @return MongodbCluster
-     */
-    public function getMongodbCluster()
-    {
-    }
-    /**
-     * MySQL RDBMS to enrich with child data objects and metadata.
-     *
-     * @param MysqlRdbms $mysqlRdbms
-     */
-    public function setMysqlRdbms(MysqlRdbms $mysqlRdbms)
-    {
-    }
-    /**
-     * @return MysqlRdbms
-     */
-    public function getMysqlRdbms()
-    {
-    }
-    /**
-     * Oracle RDBMS to enrich with child data objects and metadata.
-     *
-     * @param OracleRdbms $oracleRdbms
-     */
-    public function setOracleRdbms(OracleRdbms $oracleRdbms)
-    {
-    }
-    /**
-     * @return OracleRdbms
-     */
-    public function getOracleRdbms()
-    {
-    }
-    /**
-     * PostgreSQL RDBMS to enrich with child data objects and metadata.
-     *
-     * @param PostgresqlRdbms $postgresqlRdbms
-     */
-    public function setPostgresqlRdbms(PostgresqlRdbms $postgresqlRdbms)
-    {
-    }
-    /**
-     * @return PostgresqlRdbms
-     */
-    public function getPostgresqlRdbms()
-    {
-    }
-    /**
-     * Salesforce organization to enrich with child data objects and metadata.
-     *
-     * @param SalesforceOrg $salesforceOrg
-     */
-    public function setSalesforceOrg(SalesforceOrg $salesforceOrg)
-    {
-    }
-    /**
-     * @return SalesforceOrg
-     */
-    public function getSalesforceOrg()
-    {
-    }
-    /**
-     * SQLServer RDBMS to enrich with child data objects and metadata.
-     *
-     * @param SqlServerRdbms $sqlServerRdbms
-     */
-    public function setSqlServerRdbms(SqlServerRdbms $sqlServerRdbms)
-    {
-    }
-    /**
-     * @return SqlServerRdbms
-     */
-    public function getSqlServerRdbms()
+    class Google_Service_Datastream_DiscoverConnectionProfileRequest extends \Google\Service\Datastream\DiscoverConnectionProfileRequest
     {
     }
 }

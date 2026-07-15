@@ -21,125 +21,134 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2CustomAttribute extends \Google\Collection
-{
-    protected $collection_key = 'text';
-    /**
-     * This field is normally ignored unless
-     * AttributesConfig.attribute_config_level of the Catalog is set to the
-     * deprecated 'PRODUCT_LEVEL_ATTRIBUTE_CONFIG' mode. For information about
-     * product-level attribute configuration, see [Configuration
-     * modes](https://cloud.google.com/retail/docs/attribute-config#config-modes).
-     * If true, custom attribute values are indexed, so that they can be filtered,
-     * faceted or boosted in SearchService.Search. This field is ignored in a
-     * UserEvent. See SearchRequest.filter, SearchRequest.facet_specs and
-     * SearchRequest.boost_spec for more details.
-     *
-     * @deprecated
-     * @var bool
-     */
-    public $indexable;
-    /**
-     * The numerical values of this custom attribute. For example, `[2.3, 15.4]`
-     * when the key is "lengths_cm". Exactly one of text or numbers should be set.
-     * Otherwise, an INVALID_ARGUMENT error is returned.
-     *
-     * @var []
-     */
-    public $numbers;
-    /**
-     * This field is normally ignored unless
-     * AttributesConfig.attribute_config_level of the Catalog is set to the
-     * deprecated 'PRODUCT_LEVEL_ATTRIBUTE_CONFIG' mode. For information about
-     * product-level attribute configuration, see [Configuration
-     * modes](https://cloud.google.com/retail/docs/attribute-config#config-modes).
-     * If true, custom attribute values are searchable by text queries in
-     * SearchService.Search. This field is ignored in a UserEvent. Only set if
-     * type text is set. Otherwise, a INVALID_ARGUMENT error is returned.
-     *
-     * @deprecated
-     * @var bool
-     */
-    public $searchable;
-    /**
-     * The textual values of this custom attribute. For example, `["yellow",
-     * "green"]` when the key is "color". Empty string is not allowed. Otherwise,
-     * an INVALID_ARGUMENT error is returned. Exactly one of text or numbers
-     * should be set. Otherwise, an INVALID_ARGUMENT error is returned.
-     *
-     * @var string[]
-     */
-    public $text;
-    /**
-     * This field is normally ignored unless
-     * AttributesConfig.attribute_config_level of the Catalog is set to the
-     * deprecated 'PRODUCT_LEVEL_ATTRIBUTE_CONFIG' mode. For information about
-     * product-level attribute configuration, see [Configuration
-     * modes](https://cloud.google.com/retail/docs/attribute-config#config-modes).
-     * If true, custom attribute values are indexed, so that they can be filtered,
-     * faceted or boosted in SearchService.Search. This field is ignored in a
-     * UserEvent. See SearchRequest.filter, SearchRequest.facet_specs and
-     * SearchRequest.boost_spec for more details.
-     *
-     * @deprecated
-     * @param bool $indexable
-     */
-    public function setIndexable($indexable)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2CustomAttribute extends \Google\Collection
     {
+        protected $collection_key = 'text';
+        /**
+         * This field is normally ignored unless
+         * AttributesConfig.attribute_config_level of the Catalog is set to the
+         * deprecated 'PRODUCT_LEVEL_ATTRIBUTE_CONFIG' mode. For information about
+         * product-level attribute configuration, see [Configuration
+         * modes](https://cloud.google.com/retail/docs/attribute-config#config-modes).
+         * If true, custom attribute values are indexed, so that they can be filtered,
+         * faceted or boosted in SearchService.Search. This field is ignored in a
+         * UserEvent. See SearchRequest.filter, SearchRequest.facet_specs and
+         * SearchRequest.boost_spec for more details.
+         *
+         * @deprecated
+         * @var bool
+         */
+        public $indexable;
+        /**
+         * The numerical values of this custom attribute. For example, `[2.3, 15.4]`
+         * when the key is "lengths_cm". Exactly one of text or numbers should be set.
+         * Otherwise, an INVALID_ARGUMENT error is returned.
+         *
+         * @var []
+         */
+        public $numbers;
+        /**
+         * This field is normally ignored unless
+         * AttributesConfig.attribute_config_level of the Catalog is set to the
+         * deprecated 'PRODUCT_LEVEL_ATTRIBUTE_CONFIG' mode. For information about
+         * product-level attribute configuration, see [Configuration
+         * modes](https://cloud.google.com/retail/docs/attribute-config#config-modes).
+         * If true, custom attribute values are searchable by text queries in
+         * SearchService.Search. This field is ignored in a UserEvent. Only set if
+         * type text is set. Otherwise, a INVALID_ARGUMENT error is returned.
+         *
+         * @deprecated
+         * @var bool
+         */
+        public $searchable;
+        /**
+         * The textual values of this custom attribute. For example, `["yellow",
+         * "green"]` when the key is "color". Empty string is not allowed. Otherwise,
+         * an INVALID_ARGUMENT error is returned. Exactly one of text or numbers
+         * should be set. Otherwise, an INVALID_ARGUMENT error is returned.
+         *
+         * @var string[]
+         */
+        public $text;
+        /**
+         * This field is normally ignored unless
+         * AttributesConfig.attribute_config_level of the Catalog is set to the
+         * deprecated 'PRODUCT_LEVEL_ATTRIBUTE_CONFIG' mode. For information about
+         * product-level attribute configuration, see [Configuration
+         * modes](https://cloud.google.com/retail/docs/attribute-config#config-modes).
+         * If true, custom attribute values are indexed, so that they can be filtered,
+         * faceted or boosted in SearchService.Search. This field is ignored in a
+         * UserEvent. See SearchRequest.filter, SearchRequest.facet_specs and
+         * SearchRequest.boost_spec for more details.
+         *
+         * @deprecated
+         * @param bool $indexable
+         */
+        public function setIndexable($indexable)
+        {
+        }
+        /**
+         * @deprecated
+         * @return bool
+         */
+        public function getIndexable()
+        {
+        }
+        public function setNumbers($numbers)
+        {
+        }
+        public function getNumbers()
+        {
+        }
+        /**
+         * This field is normally ignored unless
+         * AttributesConfig.attribute_config_level of the Catalog is set to the
+         * deprecated 'PRODUCT_LEVEL_ATTRIBUTE_CONFIG' mode. For information about
+         * product-level attribute configuration, see [Configuration
+         * modes](https://cloud.google.com/retail/docs/attribute-config#config-modes).
+         * If true, custom attribute values are searchable by text queries in
+         * SearchService.Search. This field is ignored in a UserEvent. Only set if
+         * type text is set. Otherwise, a INVALID_ARGUMENT error is returned.
+         *
+         * @deprecated
+         * @param bool $searchable
+         */
+        public function setSearchable($searchable)
+        {
+        }
+        /**
+         * @deprecated
+         * @return bool
+         */
+        public function getSearchable()
+        {
+        }
+        /**
+         * The textual values of this custom attribute. For example, `["yellow",
+         * "green"]` when the key is "color". Empty string is not allowed. Otherwise,
+         * an INVALID_ARGUMENT error is returned. Exactly one of text or numbers
+         * should be set. Otherwise, an INVALID_ARGUMENT error is returned.
+         *
+         * @param string[] $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2CustomAttribute registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIndexable()
-    {
-    }
-    public function setNumbers($numbers)
-    {
-    }
-    public function getNumbers()
-    {
-    }
-    /**
-     * This field is normally ignored unless
-     * AttributesConfig.attribute_config_level of the Catalog is set to the
-     * deprecated 'PRODUCT_LEVEL_ATTRIBUTE_CONFIG' mode. For information about
-     * product-level attribute configuration, see [Configuration
-     * modes](https://cloud.google.com/retail/docs/attribute-config#config-modes).
-     * If true, custom attribute values are searchable by text queries in
-     * SearchService.Search. This field is ignored in a UserEvent. Only set if
-     * type text is set. Otherwise, a INVALID_ARGUMENT error is returned.
-     *
-     * @deprecated
-     * @param bool $searchable
-     */
-    public function setSearchable($searchable)
-    {
-    }
-    /**
-     * @deprecated
-     * @return bool
-     */
-    public function getSearchable()
-    {
-    }
-    /**
-     * The textual values of this custom attribute. For example, `["yellow",
-     * "green"]` when the key is "color". Empty string is not allowed. Otherwise,
-     * an INVALID_ARGUMENT error is returned. Exactly one of text or numbers
-     * should be set. Otherwise, an INVALID_ARGUMENT error is returned.
-     *
-     * @param string[] $text
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getText()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2CustomAttribute extends \Google\Service\CloudRetail\GoogleCloudRetailV2CustomAttribute
     {
     }
 }

@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ListExecutionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'executions';
-    protected $executionsType = GoogleCloudAiplatformV1Execution::class;
-    protected $executionsDataType = 'array';
-    /**
-     * A token, which can be sent as ListExecutionsRequest.page_token to retrieve
-     * the next page. If this field is not populated, there are no subsequent
-     * pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The Executions retrieved from the MetadataStore.
-     *
-     * @param GoogleCloudAiplatformV1Execution[] $executions
-     */
-    public function setExecutions($executions)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ListExecutionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'executions';
+        protected $executionsType = GoogleCloudAiplatformV1Execution::class;
+        protected $executionsDataType = 'array';
+        /**
+         * A token, which can be sent as ListExecutionsRequest.page_token to retrieve
+         * the next page. If this field is not populated, there are no subsequent
+         * pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The Executions retrieved from the MetadataStore.
+         *
+         * @param GoogleCloudAiplatformV1Execution[] $executions
+         */
+        public function setExecutions($executions)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1Execution[]
+         */
+        public function getExecutions()
+        {
+        }
+        /**
+         * A token, which can be sent as ListExecutionsRequest.page_token to retrieve
+         * the next page. If this field is not populated, there are no subsequent
+         * pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1Execution[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListExecutionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExecutions()
-    {
-    }
-    /**
-     * A token, which can be sent as ListExecutionsRequest.page_token to retrieve
-     * the next page. If this field is not populated, there are no subsequent
-     * pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ListExecutionsResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListExecutionsResponse
     {
     }
 }

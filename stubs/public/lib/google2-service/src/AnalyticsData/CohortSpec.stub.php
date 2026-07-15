@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsData;
-
-class CohortSpec extends \Google\Collection
-{
-    protected $collection_key = 'cohorts';
-    protected $cohortReportSettingsType = CohortReportSettings::class;
-    protected $cohortReportSettingsDataType = '';
-    protected $cohortsType = Cohort::class;
-    protected $cohortsDataType = 'array';
-    protected $cohortsRangeType = CohortsRange::class;
-    protected $cohortsRangeDataType = '';
-    /**
-     * Optional settings for a cohort report.
-     *
-     * @param CohortReportSettings $cohortReportSettings
-     */
-    public function setCohortReportSettings(CohortReportSettings $cohortReportSettings)
+namespace Google\Service\AnalyticsData {
+    class CohortSpec extends \Google\Collection
     {
+        protected $collection_key = 'cohorts';
+        protected $cohortReportSettingsType = CohortReportSettings::class;
+        protected $cohortReportSettingsDataType = '';
+        protected $cohortsType = Cohort::class;
+        protected $cohortsDataType = 'array';
+        protected $cohortsRangeType = CohortsRange::class;
+        protected $cohortsRangeDataType = '';
+        /**
+         * Optional settings for a cohort report.
+         *
+         * @param CohortReportSettings $cohortReportSettings
+         */
+        public function setCohortReportSettings(CohortReportSettings $cohortReportSettings)
+        {
+        }
+        /**
+         * @return CohortReportSettings
+         */
+        public function getCohortReportSettings()
+        {
+        }
+        /**
+         * Defines the selection criteria to group users into cohorts. Most cohort
+         * reports define only a single cohort. If multiple cohorts are specified,
+         * each cohort can be recognized in the report by their name.
+         *
+         * @param Cohort[] $cohorts
+         */
+        public function setCohorts($cohorts)
+        {
+        }
+        /**
+         * @return Cohort[]
+         */
+        public function getCohorts()
+        {
+        }
+        /**
+         * Cohort reports follow cohorts over an extended reporting date range. This
+         * range specifies an offset duration to follow the cohorts over.
+         *
+         * @param CohortsRange $cohortsRange
+         */
+        public function setCohortsRange(CohortsRange $cohortsRange)
+        {
+        }
+        /**
+         * @return CohortsRange
+         */
+        public function getCohortsRange()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CohortReportSettings
+     * Runtime class alias of \Google\Service\AnalyticsData\CohortSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCohortReportSettings()
-    {
-    }
-    /**
-     * Defines the selection criteria to group users into cohorts. Most cohort
-     * reports define only a single cohort. If multiple cohorts are specified,
-     * each cohort can be recognized in the report by their name.
-     *
-     * @param Cohort[] $cohorts
-     */
-    public function setCohorts($cohorts)
-    {
-    }
-    /**
-     * @return Cohort[]
-     */
-    public function getCohorts()
-    {
-    }
-    /**
-     * Cohort reports follow cohorts over an extended reporting date range. This
-     * range specifies an offset duration to follow the cohorts over.
-     *
-     * @param CohortsRange $cohortsRange
-     */
-    public function setCohortsRange(CohortsRange $cohortsRange)
-    {
-    }
-    /**
-     * @return CohortsRange
-     */
-    public function getCohortsRange()
+    class Google_Service_AnalyticsData_CohortSpec extends \Google\Service\AnalyticsData\CohortSpec
     {
     }
 }

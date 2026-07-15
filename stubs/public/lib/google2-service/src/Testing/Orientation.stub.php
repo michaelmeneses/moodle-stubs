@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Testing;
-
-class Orientation extends \Google\Collection
-{
-    protected $collection_key = 'tags';
-    /**
-     * The id for this orientation. Example: "portrait".
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * A human-friendly name for this orientation. Example: "portrait".
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Tags for this dimension. Example: "default".
-     *
-     * @var string[]
-     */
-    public $tags;
-    /**
-     * The id for this orientation. Example: "portrait".
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\Testing {
+    class Orientation extends \Google\Collection
     {
+        protected $collection_key = 'tags';
+        /**
+         * The id for this orientation. Example: "portrait".
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * A human-friendly name for this orientation. Example: "portrait".
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Tags for this dimension. Example: "default".
+         *
+         * @var string[]
+         */
+        public $tags;
+        /**
+         * The id for this orientation. Example: "portrait".
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * A human-friendly name for this orientation. Example: "portrait".
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Tags for this dimension. Example: "default".
+         *
+         * @param string[] $tags
+         */
+        public function setTags($tags)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTags()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Testing\Orientation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * A human-friendly name for this orientation. Example: "portrait".
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Tags for this dimension. Example: "default".
-     *
-     * @param string[] $tags
-     */
-    public function setTags($tags)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTags()
+    class Google_Service_Testing_Orientation extends \Google\Service\Testing\Orientation
     {
     }
 }

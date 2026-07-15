@@ -21,34 +21,44 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent\Resource;
-
-/**
- * The "accountstatusesbyexternalsellerid" collection of methods.
- * Typical usage is:
- *  <code>
- *   $contentService = new Google\Service\ShoppingContent(...);
- *   $accountstatusesbyexternalsellerid = $contentService->accountstatusesbyexternalsellerid;
- *  </code>
- */
-class Accountstatusesbyexternalsellerid extends \Google\Service\Resource
-{
+namespace Google\Service\ShoppingContent\Resource {
+    use Google\Service\ShoppingContent\AccountStatus;
     /**
-     * Gets status of the account with the specified external_seller_id belonging to
-     * the MCA with the specified merchant_id.
-     * (accountstatusesbyexternalsellerid.get)
-     *
-     * @param string $merchantId Required. The ID of the MCA containing the seller.
-     * @param string $externalSellerId Required. The External Seller ID of the
-     * seller account to be retrieved.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string destinations If set, only issues for the specified
-     * destinations are returned, otherwise only issues for the Shopping
-     * destination.
-     * @return AccountStatus
+     * The "accountstatusesbyexternalsellerid" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $contentService = new Google\Service\ShoppingContent(...);
+     *   $accountstatusesbyexternalsellerid = $contentService->accountstatusesbyexternalsellerid;
+     *  </code>
      */
-    public function get($merchantId, $externalSellerId, $optParams = [])
+    class Accountstatusesbyexternalsellerid extends \Google\Service\Resource
+    {
+        /**
+         * Gets status of the account with the specified external_seller_id belonging to
+         * the MCA with the specified merchant_id.
+         * (accountstatusesbyexternalsellerid.get)
+         *
+         * @param string $merchantId Required. The ID of the MCA containing the seller.
+         * @param string $externalSellerId Required. The External Seller ID of the
+         * seller account to be retrieved.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string destinations If set, only issues for the specified
+         * destinations are returned, otherwise only issues for the Shopping
+         * destination.
+         * @return AccountStatus
+         */
+        public function get($merchantId, $externalSellerId, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ShoppingContent\Resource\Accountstatusesbyexternalsellerid registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ShoppingContent_Resource_Accountstatusesbyexternalsellerid extends \Google\Service\ShoppingContent\Resource\Accountstatusesbyexternalsellerid
     {
     }
 }

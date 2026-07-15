@@ -21,94 +21,103 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataManager;
-
-class AddressInfo extends \Google\Model
-{
-    /**
-     * Required. Family (last) name of the user, all lowercase, with no
-     * punctuation, no leading or trailing whitespace, and hashed as SHA-256.
-     *
-     * @var string
-     */
-    public $familyName;
-    /**
-     * Required. Given (first) name of the user, all lowercase, with no
-     * punctuation, no leading or trailing whitespace, and hashed as SHA-256.
-     *
-     * @var string
-     */
-    public $givenName;
-    /**
-     * Required. The postal code of the user's address.
-     *
-     * @var string
-     */
-    public $postalCode;
-    /**
-     * Required. The 2-letter region code in ISO-3166-1 alpha-2 of the user's
-     * address.
-     *
-     * @var string
-     */
-    public $regionCode;
-    /**
-     * Required. Family (last) name of the user, all lowercase, with no
-     * punctuation, no leading or trailing whitespace, and hashed as SHA-256.
-     *
-     * @param string $familyName
-     */
-    public function setFamilyName($familyName)
+namespace Google\Service\DataManager {
+    class AddressInfo extends \Google\Model
     {
+        /**
+         * Required. Family (last) name of the user, all lowercase, with no
+         * punctuation, no leading or trailing whitespace, and hashed as SHA-256.
+         *
+         * @var string
+         */
+        public $familyName;
+        /**
+         * Required. Given (first) name of the user, all lowercase, with no
+         * punctuation, no leading or trailing whitespace, and hashed as SHA-256.
+         *
+         * @var string
+         */
+        public $givenName;
+        /**
+         * Required. The postal code of the user's address.
+         *
+         * @var string
+         */
+        public $postalCode;
+        /**
+         * Required. The 2-letter region code in ISO-3166-1 alpha-2 of the user's
+         * address.
+         *
+         * @var string
+         */
+        public $regionCode;
+        /**
+         * Required. Family (last) name of the user, all lowercase, with no
+         * punctuation, no leading or trailing whitespace, and hashed as SHA-256.
+         *
+         * @param string $familyName
+         */
+        public function setFamilyName($familyName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFamilyName()
+        {
+        }
+        /**
+         * Required. Given (first) name of the user, all lowercase, with no
+         * punctuation, no leading or trailing whitespace, and hashed as SHA-256.
+         *
+         * @param string $givenName
+         */
+        public function setGivenName($givenName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGivenName()
+        {
+        }
+        /**
+         * Required. The postal code of the user's address.
+         *
+         * @param string $postalCode
+         */
+        public function setPostalCode($postalCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPostalCode()
+        {
+        }
+        /**
+         * Required. The 2-letter region code in ISO-3166-1 alpha-2 of the user's
+         * address.
+         *
+         * @param string $regionCode
+         */
+        public function setRegionCode($regionCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegionCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataManager\AddressInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFamilyName()
-    {
-    }
-    /**
-     * Required. Given (first) name of the user, all lowercase, with no
-     * punctuation, no leading or trailing whitespace, and hashed as SHA-256.
-     *
-     * @param string $givenName
-     */
-    public function setGivenName($givenName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGivenName()
-    {
-    }
-    /**
-     * Required. The postal code of the user's address.
-     *
-     * @param string $postalCode
-     */
-    public function setPostalCode($postalCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPostalCode()
-    {
-    }
-    /**
-     * Required. The 2-letter region code in ISO-3166-1 alpha-2 of the user's
-     * address.
-     *
-     * @param string $regionCode
-     */
-    public function setRegionCode($regionCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegionCode()
+    class Google_Service_DataManager_AddressInfo extends \Google\Service\DataManager\AddressInfo
     {
     }
 }

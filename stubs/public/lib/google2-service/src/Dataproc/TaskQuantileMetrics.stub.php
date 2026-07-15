@@ -21,246 +21,255 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class TaskQuantileMetrics extends \Google\Model
-{
-    protected $diskBytesSpilledType = Quantiles::class;
-    protected $diskBytesSpilledDataType = '';
-    protected $durationMillisType = Quantiles::class;
-    protected $durationMillisDataType = '';
-    protected $executorCpuTimeNanosType = Quantiles::class;
-    protected $executorCpuTimeNanosDataType = '';
-    protected $executorDeserializeCpuTimeNanosType = Quantiles::class;
-    protected $executorDeserializeCpuTimeNanosDataType = '';
-    protected $executorDeserializeTimeMillisType = Quantiles::class;
-    protected $executorDeserializeTimeMillisDataType = '';
-    protected $executorRunTimeMillisType = Quantiles::class;
-    protected $executorRunTimeMillisDataType = '';
-    protected $gettingResultTimeMillisType = Quantiles::class;
-    protected $gettingResultTimeMillisDataType = '';
-    protected $inputMetricsType = InputQuantileMetrics::class;
-    protected $inputMetricsDataType = '';
-    protected $jvmGcTimeMillisType = Quantiles::class;
-    protected $jvmGcTimeMillisDataType = '';
-    protected $memoryBytesSpilledType = Quantiles::class;
-    protected $memoryBytesSpilledDataType = '';
-    protected $outputMetricsType = OutputQuantileMetrics::class;
-    protected $outputMetricsDataType = '';
-    protected $peakExecutionMemoryBytesType = Quantiles::class;
-    protected $peakExecutionMemoryBytesDataType = '';
-    protected $resultSerializationTimeMillisType = Quantiles::class;
-    protected $resultSerializationTimeMillisDataType = '';
-    protected $resultSizeType = Quantiles::class;
-    protected $resultSizeDataType = '';
-    protected $schedulerDelayMillisType = Quantiles::class;
-    protected $schedulerDelayMillisDataType = '';
-    protected $shuffleReadMetricsType = ShuffleReadQuantileMetrics::class;
-    protected $shuffleReadMetricsDataType = '';
-    protected $shuffleWriteMetricsType = ShuffleWriteQuantileMetrics::class;
-    protected $shuffleWriteMetricsDataType = '';
-    /**
-     * @param Quantiles $diskBytesSpilled
-     */
-    public function setDiskBytesSpilled(Quantiles $diskBytesSpilled)
+namespace Google\Service\Dataproc {
+    class TaskQuantileMetrics extends \Google\Model
     {
+        protected $diskBytesSpilledType = Quantiles::class;
+        protected $diskBytesSpilledDataType = '';
+        protected $durationMillisType = Quantiles::class;
+        protected $durationMillisDataType = '';
+        protected $executorCpuTimeNanosType = Quantiles::class;
+        protected $executorCpuTimeNanosDataType = '';
+        protected $executorDeserializeCpuTimeNanosType = Quantiles::class;
+        protected $executorDeserializeCpuTimeNanosDataType = '';
+        protected $executorDeserializeTimeMillisType = Quantiles::class;
+        protected $executorDeserializeTimeMillisDataType = '';
+        protected $executorRunTimeMillisType = Quantiles::class;
+        protected $executorRunTimeMillisDataType = '';
+        protected $gettingResultTimeMillisType = Quantiles::class;
+        protected $gettingResultTimeMillisDataType = '';
+        protected $inputMetricsType = InputQuantileMetrics::class;
+        protected $inputMetricsDataType = '';
+        protected $jvmGcTimeMillisType = Quantiles::class;
+        protected $jvmGcTimeMillisDataType = '';
+        protected $memoryBytesSpilledType = Quantiles::class;
+        protected $memoryBytesSpilledDataType = '';
+        protected $outputMetricsType = OutputQuantileMetrics::class;
+        protected $outputMetricsDataType = '';
+        protected $peakExecutionMemoryBytesType = Quantiles::class;
+        protected $peakExecutionMemoryBytesDataType = '';
+        protected $resultSerializationTimeMillisType = Quantiles::class;
+        protected $resultSerializationTimeMillisDataType = '';
+        protected $resultSizeType = Quantiles::class;
+        protected $resultSizeDataType = '';
+        protected $schedulerDelayMillisType = Quantiles::class;
+        protected $schedulerDelayMillisDataType = '';
+        protected $shuffleReadMetricsType = ShuffleReadQuantileMetrics::class;
+        protected $shuffleReadMetricsDataType = '';
+        protected $shuffleWriteMetricsType = ShuffleWriteQuantileMetrics::class;
+        protected $shuffleWriteMetricsDataType = '';
+        /**
+         * @param Quantiles $diskBytesSpilled
+         */
+        public function setDiskBytesSpilled(Quantiles $diskBytesSpilled)
+        {
+        }
+        /**
+         * @return Quantiles
+         */
+        public function getDiskBytesSpilled()
+        {
+        }
+        /**
+         * @param Quantiles $durationMillis
+         */
+        public function setDurationMillis(Quantiles $durationMillis)
+        {
+        }
+        /**
+         * @return Quantiles
+         */
+        public function getDurationMillis()
+        {
+        }
+        /**
+         * @param Quantiles $executorCpuTimeNanos
+         */
+        public function setExecutorCpuTimeNanos(Quantiles $executorCpuTimeNanos)
+        {
+        }
+        /**
+         * @return Quantiles
+         */
+        public function getExecutorCpuTimeNanos()
+        {
+        }
+        /**
+         * @param Quantiles $executorDeserializeCpuTimeNanos
+         */
+        public function setExecutorDeserializeCpuTimeNanos(Quantiles $executorDeserializeCpuTimeNanos)
+        {
+        }
+        /**
+         * @return Quantiles
+         */
+        public function getExecutorDeserializeCpuTimeNanos()
+        {
+        }
+        /**
+         * @param Quantiles $executorDeserializeTimeMillis
+         */
+        public function setExecutorDeserializeTimeMillis(Quantiles $executorDeserializeTimeMillis)
+        {
+        }
+        /**
+         * @return Quantiles
+         */
+        public function getExecutorDeserializeTimeMillis()
+        {
+        }
+        /**
+         * @param Quantiles $executorRunTimeMillis
+         */
+        public function setExecutorRunTimeMillis(Quantiles $executorRunTimeMillis)
+        {
+        }
+        /**
+         * @return Quantiles
+         */
+        public function getExecutorRunTimeMillis()
+        {
+        }
+        /**
+         * @param Quantiles $gettingResultTimeMillis
+         */
+        public function setGettingResultTimeMillis(Quantiles $gettingResultTimeMillis)
+        {
+        }
+        /**
+         * @return Quantiles
+         */
+        public function getGettingResultTimeMillis()
+        {
+        }
+        /**
+         * @param InputQuantileMetrics $inputMetrics
+         */
+        public function setInputMetrics(InputQuantileMetrics $inputMetrics)
+        {
+        }
+        /**
+         * @return InputQuantileMetrics
+         */
+        public function getInputMetrics()
+        {
+        }
+        /**
+         * @param Quantiles $jvmGcTimeMillis
+         */
+        public function setJvmGcTimeMillis(Quantiles $jvmGcTimeMillis)
+        {
+        }
+        /**
+         * @return Quantiles
+         */
+        public function getJvmGcTimeMillis()
+        {
+        }
+        /**
+         * @param Quantiles $memoryBytesSpilled
+         */
+        public function setMemoryBytesSpilled(Quantiles $memoryBytesSpilled)
+        {
+        }
+        /**
+         * @return Quantiles
+         */
+        public function getMemoryBytesSpilled()
+        {
+        }
+        /**
+         * @param OutputQuantileMetrics $outputMetrics
+         */
+        public function setOutputMetrics(OutputQuantileMetrics $outputMetrics)
+        {
+        }
+        /**
+         * @return OutputQuantileMetrics
+         */
+        public function getOutputMetrics()
+        {
+        }
+        /**
+         * @param Quantiles $peakExecutionMemoryBytes
+         */
+        public function setPeakExecutionMemoryBytes(Quantiles $peakExecutionMemoryBytes)
+        {
+        }
+        /**
+         * @return Quantiles
+         */
+        public function getPeakExecutionMemoryBytes()
+        {
+        }
+        /**
+         * @param Quantiles $resultSerializationTimeMillis
+         */
+        public function setResultSerializationTimeMillis(Quantiles $resultSerializationTimeMillis)
+        {
+        }
+        /**
+         * @return Quantiles
+         */
+        public function getResultSerializationTimeMillis()
+        {
+        }
+        /**
+         * @param Quantiles $resultSize
+         */
+        public function setResultSize(Quantiles $resultSize)
+        {
+        }
+        /**
+         * @return Quantiles
+         */
+        public function getResultSize()
+        {
+        }
+        /**
+         * @param Quantiles $schedulerDelayMillis
+         */
+        public function setSchedulerDelayMillis(Quantiles $schedulerDelayMillis)
+        {
+        }
+        /**
+         * @return Quantiles
+         */
+        public function getSchedulerDelayMillis()
+        {
+        }
+        /**
+         * @param ShuffleReadQuantileMetrics $shuffleReadMetrics
+         */
+        public function setShuffleReadMetrics(ShuffleReadQuantileMetrics $shuffleReadMetrics)
+        {
+        }
+        /**
+         * @return ShuffleReadQuantileMetrics
+         */
+        public function getShuffleReadMetrics()
+        {
+        }
+        /**
+         * @param ShuffleWriteQuantileMetrics $shuffleWriteMetrics
+         */
+        public function setShuffleWriteMetrics(ShuffleWriteQuantileMetrics $shuffleWriteMetrics)
+        {
+        }
+        /**
+         * @return ShuffleWriteQuantileMetrics
+         */
+        public function getShuffleWriteMetrics()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Quantiles
+     * Runtime class alias of \Google\Service\Dataproc\TaskQuantileMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDiskBytesSpilled()
-    {
-    }
-    /**
-     * @param Quantiles $durationMillis
-     */
-    public function setDurationMillis(Quantiles $durationMillis)
-    {
-    }
-    /**
-     * @return Quantiles
-     */
-    public function getDurationMillis()
-    {
-    }
-    /**
-     * @param Quantiles $executorCpuTimeNanos
-     */
-    public function setExecutorCpuTimeNanos(Quantiles $executorCpuTimeNanos)
-    {
-    }
-    /**
-     * @return Quantiles
-     */
-    public function getExecutorCpuTimeNanos()
-    {
-    }
-    /**
-     * @param Quantiles $executorDeserializeCpuTimeNanos
-     */
-    public function setExecutorDeserializeCpuTimeNanos(Quantiles $executorDeserializeCpuTimeNanos)
-    {
-    }
-    /**
-     * @return Quantiles
-     */
-    public function getExecutorDeserializeCpuTimeNanos()
-    {
-    }
-    /**
-     * @param Quantiles $executorDeserializeTimeMillis
-     */
-    public function setExecutorDeserializeTimeMillis(Quantiles $executorDeserializeTimeMillis)
-    {
-    }
-    /**
-     * @return Quantiles
-     */
-    public function getExecutorDeserializeTimeMillis()
-    {
-    }
-    /**
-     * @param Quantiles $executorRunTimeMillis
-     */
-    public function setExecutorRunTimeMillis(Quantiles $executorRunTimeMillis)
-    {
-    }
-    /**
-     * @return Quantiles
-     */
-    public function getExecutorRunTimeMillis()
-    {
-    }
-    /**
-     * @param Quantiles $gettingResultTimeMillis
-     */
-    public function setGettingResultTimeMillis(Quantiles $gettingResultTimeMillis)
-    {
-    }
-    /**
-     * @return Quantiles
-     */
-    public function getGettingResultTimeMillis()
-    {
-    }
-    /**
-     * @param InputQuantileMetrics $inputMetrics
-     */
-    public function setInputMetrics(InputQuantileMetrics $inputMetrics)
-    {
-    }
-    /**
-     * @return InputQuantileMetrics
-     */
-    public function getInputMetrics()
-    {
-    }
-    /**
-     * @param Quantiles $jvmGcTimeMillis
-     */
-    public function setJvmGcTimeMillis(Quantiles $jvmGcTimeMillis)
-    {
-    }
-    /**
-     * @return Quantiles
-     */
-    public function getJvmGcTimeMillis()
-    {
-    }
-    /**
-     * @param Quantiles $memoryBytesSpilled
-     */
-    public function setMemoryBytesSpilled(Quantiles $memoryBytesSpilled)
-    {
-    }
-    /**
-     * @return Quantiles
-     */
-    public function getMemoryBytesSpilled()
-    {
-    }
-    /**
-     * @param OutputQuantileMetrics $outputMetrics
-     */
-    public function setOutputMetrics(OutputQuantileMetrics $outputMetrics)
-    {
-    }
-    /**
-     * @return OutputQuantileMetrics
-     */
-    public function getOutputMetrics()
-    {
-    }
-    /**
-     * @param Quantiles $peakExecutionMemoryBytes
-     */
-    public function setPeakExecutionMemoryBytes(Quantiles $peakExecutionMemoryBytes)
-    {
-    }
-    /**
-     * @return Quantiles
-     */
-    public function getPeakExecutionMemoryBytes()
-    {
-    }
-    /**
-     * @param Quantiles $resultSerializationTimeMillis
-     */
-    public function setResultSerializationTimeMillis(Quantiles $resultSerializationTimeMillis)
-    {
-    }
-    /**
-     * @return Quantiles
-     */
-    public function getResultSerializationTimeMillis()
-    {
-    }
-    /**
-     * @param Quantiles $resultSize
-     */
-    public function setResultSize(Quantiles $resultSize)
-    {
-    }
-    /**
-     * @return Quantiles
-     */
-    public function getResultSize()
-    {
-    }
-    /**
-     * @param Quantiles $schedulerDelayMillis
-     */
-    public function setSchedulerDelayMillis(Quantiles $schedulerDelayMillis)
-    {
-    }
-    /**
-     * @return Quantiles
-     */
-    public function getSchedulerDelayMillis()
-    {
-    }
-    /**
-     * @param ShuffleReadQuantileMetrics $shuffleReadMetrics
-     */
-    public function setShuffleReadMetrics(ShuffleReadQuantileMetrics $shuffleReadMetrics)
-    {
-    }
-    /**
-     * @return ShuffleReadQuantileMetrics
-     */
-    public function getShuffleReadMetrics()
-    {
-    }
-    /**
-     * @param ShuffleWriteQuantileMetrics $shuffleWriteMetrics
-     */
-    public function setShuffleWriteMetrics(ShuffleWriteQuantileMetrics $shuffleWriteMetrics)
-    {
-    }
-    /**
-     * @return ShuffleWriteQuantileMetrics
-     */
-    public function getShuffleWriteMetrics()
+    class Google_Service_Dataproc_TaskQuantileMetrics extends \Google\Service\Dataproc\TaskQuantileMetrics
     {
     }
 }

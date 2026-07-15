@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BeyondCorp;
-
-class GoogleCloudBeyondcorpAppconnectorsV1AppConnectorInstanceConfig extends \Google\Model
-{
-    protected $imageConfigType = GoogleCloudBeyondcorpAppconnectorsV1ImageConfig::class;
-    protected $imageConfigDataType = '';
-    /**
-     * The SLM instance agent configuration.
-     *
-     * @var array[]
-     */
-    public $instanceConfig;
-    protected $notificationConfigType = GoogleCloudBeyondcorpAppconnectorsV1NotificationConfig::class;
-    protected $notificationConfigDataType = '';
-    /**
-     * Required. A monotonically increasing number generated and maintained by the
-     * API provider. Every time a config changes in the backend, the
-     * sequenceNumber should be bumped up to reflect the change.
-     *
-     * @var string
-     */
-    public $sequenceNumber;
-    /**
-     * ImageConfig defines the GCR images to run for the remote agent's control
-     * plane.
-     *
-     * @param GoogleCloudBeyondcorpAppconnectorsV1ImageConfig $imageConfig
-     */
-    public function setImageConfig(GoogleCloudBeyondcorpAppconnectorsV1ImageConfig $imageConfig)
+namespace Google\Service\BeyondCorp {
+    class GoogleCloudBeyondcorpAppconnectorsV1AppConnectorInstanceConfig extends \Google\Model
     {
+        protected $imageConfigType = GoogleCloudBeyondcorpAppconnectorsV1ImageConfig::class;
+        protected $imageConfigDataType = '';
+        /**
+         * The SLM instance agent configuration.
+         *
+         * @var array[]
+         */
+        public $instanceConfig;
+        protected $notificationConfigType = GoogleCloudBeyondcorpAppconnectorsV1NotificationConfig::class;
+        protected $notificationConfigDataType = '';
+        /**
+         * Required. A monotonically increasing number generated and maintained by the
+         * API provider. Every time a config changes in the backend, the
+         * sequenceNumber should be bumped up to reflect the change.
+         *
+         * @var string
+         */
+        public $sequenceNumber;
+        /**
+         * ImageConfig defines the GCR images to run for the remote agent's control
+         * plane.
+         *
+         * @param GoogleCloudBeyondcorpAppconnectorsV1ImageConfig $imageConfig
+         */
+        public function setImageConfig(GoogleCloudBeyondcorpAppconnectorsV1ImageConfig $imageConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudBeyondcorpAppconnectorsV1ImageConfig
+         */
+        public function getImageConfig()
+        {
+        }
+        /**
+         * The SLM instance agent configuration.
+         *
+         * @param array[] $instanceConfig
+         */
+        public function setInstanceConfig($instanceConfig)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getInstanceConfig()
+        {
+        }
+        /**
+         * NotificationConfig defines the notification mechanism that the remote
+         * instance should subscribe to in order to receive notification.
+         *
+         * @param GoogleCloudBeyondcorpAppconnectorsV1NotificationConfig $notificationConfig
+         */
+        public function setNotificationConfig(GoogleCloudBeyondcorpAppconnectorsV1NotificationConfig $notificationConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudBeyondcorpAppconnectorsV1NotificationConfig
+         */
+        public function getNotificationConfig()
+        {
+        }
+        /**
+         * Required. A monotonically increasing number generated and maintained by the
+         * API provider. Every time a config changes in the backend, the
+         * sequenceNumber should be bumped up to reflect the change.
+         *
+         * @param string $sequenceNumber
+         */
+        public function setSequenceNumber($sequenceNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSequenceNumber()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudBeyondcorpAppconnectorsV1ImageConfig
+     * Runtime class alias of \Google\Service\BeyondCorp\GoogleCloudBeyondcorpAppconnectorsV1AppConnectorInstanceConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getImageConfig()
-    {
-    }
-    /**
-     * The SLM instance agent configuration.
-     *
-     * @param array[] $instanceConfig
-     */
-    public function setInstanceConfig($instanceConfig)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getInstanceConfig()
-    {
-    }
-    /**
-     * NotificationConfig defines the notification mechanism that the remote
-     * instance should subscribe to in order to receive notification.
-     *
-     * @param GoogleCloudBeyondcorpAppconnectorsV1NotificationConfig $notificationConfig
-     */
-    public function setNotificationConfig(GoogleCloudBeyondcorpAppconnectorsV1NotificationConfig $notificationConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudBeyondcorpAppconnectorsV1NotificationConfig
-     */
-    public function getNotificationConfig()
-    {
-    }
-    /**
-     * Required. A monotonically increasing number generated and maintained by the
-     * API provider. Every time a config changes in the backend, the
-     * sequenceNumber should be bumped up to reflect the change.
-     *
-     * @param string $sequenceNumber
-     */
-    public function setSequenceNumber($sequenceNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSequenceNumber()
+    class Google_Service_BeyondCorp_GoogleCloudBeyondcorpAppconnectorsV1AppConnectorInstanceConfig extends \Google\Service\BeyondCorp\GoogleCloudBeyondcorpAppconnectorsV1AppConnectorInstanceConfig
     {
     }
 }

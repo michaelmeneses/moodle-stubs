@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedChatItemGroupInfo extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $attributeCheckerGroupType;
-    /**
-     * @var string
-     */
-    public $groupName;
-    /**
-     * @var string
-     */
-    public $groupReadTimeUsec;
-    /**
-     * @var bool
-     */
-    public $inlineThreadingEnabled;
-    /**
-     * @param string
-     */
-    public function setAttributeCheckerGroupType($attributeCheckerGroupType)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedChatItemGroupInfo extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $attributeCheckerGroupType;
+        /**
+         * @var string
+         */
+        public $groupName;
+        /**
+         * @var string
+         */
+        public $groupReadTimeUsec;
+        /**
+         * @var bool
+         */
+        public $inlineThreadingEnabled;
+        /**
+         * @param string
+         */
+        public function setAttributeCheckerGroupType($attributeCheckerGroupType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAttributeCheckerGroupType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setGroupName($groupName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGroupName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setGroupReadTimeUsec($groupReadTimeUsec)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGroupReadTimeUsec()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setInlineThreadingEnabled($inlineThreadingEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getInlineThreadingEnabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedChatItemGroupInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttributeCheckerGroupType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setGroupName($groupName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGroupName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setGroupReadTimeUsec($groupReadTimeUsec)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGroupReadTimeUsec()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setInlineThreadingEnabled($inlineThreadingEnabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getInlineThreadingEnabled()
+    class Google_Service_CloudSearch_AppsDynamiteSharedChatItemGroupInfo extends \Google\Service\CloudSearch\AppsDynamiteSharedChatItemGroupInfo
     {
     }
 }

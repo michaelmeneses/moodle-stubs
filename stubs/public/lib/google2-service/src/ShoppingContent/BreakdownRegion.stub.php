@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class BreakdownRegion extends \Google\Model
-{
-    /**
-     * The [CLDR territory code]
-     * (http://www.unicode.org/repos/cldr/tags/latest/common/main/en.xml)
-     *
-     * @var string
-     */
-    public $code;
-    /**
-     * The localized name of the region. For region with code='001' the value is
-     * 'All countries' or the equivalent in other languages.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The [CLDR territory code]
-     * (http://www.unicode.org/repos/cldr/tags/latest/common/main/en.xml)
-     *
-     * @param string $code
-     */
-    public function setCode($code)
+namespace Google\Service\ShoppingContent {
+    class BreakdownRegion extends \Google\Model
     {
+        /**
+         * The [CLDR territory code]
+         * (http://www.unicode.org/repos/cldr/tags/latest/common/main/en.xml)
+         *
+         * @var string
+         */
+        public $code;
+        /**
+         * The localized name of the region. For region with code='001' the value is
+         * 'All countries' or the equivalent in other languages.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The [CLDR territory code]
+         * (http://www.unicode.org/repos/cldr/tags/latest/common/main/en.xml)
+         *
+         * @param string $code
+         */
+        public function setCode($code)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCode()
+        {
+        }
+        /**
+         * The localized name of the region. For region with code='001' the value is
+         * 'All countries' or the equivalent in other languages.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\BreakdownRegion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCode()
-    {
-    }
-    /**
-     * The localized name of the region. For region with code='001' the value is
-     * 'All countries' or the equivalent in other languages.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_ShoppingContent_BreakdownRegion extends \Google\Service\ShoppingContent\BreakdownRegion
     {
     }
 }

@@ -21,191 +21,200 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecureSourceManager;
-
-class Hook extends \Google\Collection
-{
-    protected $collection_key = 'events';
-    /**
-     * Output only. Create timestamp.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Optional. Determines if the hook disabled or not. Set to true to stop
-     * sending traffic.
-     *
-     * @var bool
-     */
-    public $disabled;
-    /**
-     * Optional. The events that trigger hook on.
-     *
-     * @var string[]
-     */
-    public $events;
-    /**
-     * Identifier. A unique identifier for a Hook. The name should be of the
-     * format: `projects/{project}/locations/{location_id}/repositories/{repositor
-     * y_id}/hooks/{hook_id}`
-     *
-     * @var string
-     */
-    public $name;
-    protected $pushOptionType = PushOption::class;
-    protected $pushOptionDataType = '';
-    /**
-     * Optional. The sensitive query string to be appended to the target URI.
-     *
-     * @var string
-     */
-    public $sensitiveQueryString;
-    /**
-     * Required. The target URI to which the payloads will be delivered.
-     *
-     * @var string
-     */
-    public $targetUri;
-    /**
-     * Output only. Unique identifier of the hook.
-     *
-     * @var string
-     */
-    public $uid;
-    /**
-     * Output only. Update timestamp.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. Create timestamp.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\SecureSourceManager {
+    class Hook extends \Google\Collection
     {
+        protected $collection_key = 'events';
+        /**
+         * Output only. Create timestamp.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Optional. Determines if the hook disabled or not. Set to true to stop
+         * sending traffic.
+         *
+         * @var bool
+         */
+        public $disabled;
+        /**
+         * Optional. The events that trigger hook on.
+         *
+         * @var string[]
+         */
+        public $events;
+        /**
+         * Identifier. A unique identifier for a Hook. The name should be of the
+         * format: `projects/{project}/locations/{location_id}/repositories/{repositor
+         * y_id}/hooks/{hook_id}`
+         *
+         * @var string
+         */
+        public $name;
+        protected $pushOptionType = PushOption::class;
+        protected $pushOptionDataType = '';
+        /**
+         * Optional. The sensitive query string to be appended to the target URI.
+         *
+         * @var string
+         */
+        public $sensitiveQueryString;
+        /**
+         * Required. The target URI to which the payloads will be delivered.
+         *
+         * @var string
+         */
+        public $targetUri;
+        /**
+         * Output only. Unique identifier of the hook.
+         *
+         * @var string
+         */
+        public $uid;
+        /**
+         * Output only. Update timestamp.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. Create timestamp.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Optional. Determines if the hook disabled or not. Set to true to stop
+         * sending traffic.
+         *
+         * @param bool $disabled
+         */
+        public function setDisabled($disabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisabled()
+        {
+        }
+        /**
+         * Optional. The events that trigger hook on.
+         *
+         * @param string[] $events
+         */
+        public function setEvents($events)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getEvents()
+        {
+        }
+        /**
+         * Identifier. A unique identifier for a Hook. The name should be of the
+         * format: `projects/{project}/locations/{location_id}/repositories/{repositor
+         * y_id}/hooks/{hook_id}`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. The trigger option for push events.
+         *
+         * @param PushOption $pushOption
+         */
+        public function setPushOption(PushOption $pushOption)
+        {
+        }
+        /**
+         * @return PushOption
+         */
+        public function getPushOption()
+        {
+        }
+        /**
+         * Optional. The sensitive query string to be appended to the target URI.
+         *
+         * @param string $sensitiveQueryString
+         */
+        public function setSensitiveQueryString($sensitiveQueryString)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSensitiveQueryString()
+        {
+        }
+        /**
+         * Required. The target URI to which the payloads will be delivered.
+         *
+         * @param string $targetUri
+         */
+        public function setTargetUri($targetUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetUri()
+        {
+        }
+        /**
+         * Output only. Unique identifier of the hook.
+         *
+         * @param string $uid
+         */
+        public function setUid($uid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUid()
+        {
+        }
+        /**
+         * Output only. Update timestamp.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecureSourceManager\Hook registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Optional. Determines if the hook disabled or not. Set to true to stop
-     * sending traffic.
-     *
-     * @param bool $disabled
-     */
-    public function setDisabled($disabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDisabled()
-    {
-    }
-    /**
-     * Optional. The events that trigger hook on.
-     *
-     * @param string[] $events
-     */
-    public function setEvents($events)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getEvents()
-    {
-    }
-    /**
-     * Identifier. A unique identifier for a Hook. The name should be of the
-     * format: `projects/{project}/locations/{location_id}/repositories/{repositor
-     * y_id}/hooks/{hook_id}`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. The trigger option for push events.
-     *
-     * @param PushOption $pushOption
-     */
-    public function setPushOption(PushOption $pushOption)
-    {
-    }
-    /**
-     * @return PushOption
-     */
-    public function getPushOption()
-    {
-    }
-    /**
-     * Optional. The sensitive query string to be appended to the target URI.
-     *
-     * @param string $sensitiveQueryString
-     */
-    public function setSensitiveQueryString($sensitiveQueryString)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSensitiveQueryString()
-    {
-    }
-    /**
-     * Required. The target URI to which the payloads will be delivered.
-     *
-     * @param string $targetUri
-     */
-    public function setTargetUri($targetUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetUri()
-    {
-    }
-    /**
-     * Output only. Unique identifier of the hook.
-     *
-     * @param string $uid
-     */
-    public function setUid($uid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUid()
-    {
-    }
-    /**
-     * Output only. Update timestamp.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_SecureSourceManager_Hook extends \Google\Service\SecureSourceManager\Hook
     {
     }
 }

@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2CryptoKey extends \Google\Model
-{
-    protected $kmsWrappedType = GooglePrivacyDlpV2KmsWrappedCryptoKey::class;
-    protected $kmsWrappedDataType = '';
-    protected $transientType = GooglePrivacyDlpV2TransientCryptoKey::class;
-    protected $transientDataType = '';
-    protected $unwrappedType = GooglePrivacyDlpV2UnwrappedCryptoKey::class;
-    protected $unwrappedDataType = '';
-    /**
-     * Key wrapped using Cloud KMS
-     *
-     * @param GooglePrivacyDlpV2KmsWrappedCryptoKey $kmsWrapped
-     */
-    public function setKmsWrapped(GooglePrivacyDlpV2KmsWrappedCryptoKey $kmsWrapped)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2CryptoKey extends \Google\Model
     {
+        protected $kmsWrappedType = GooglePrivacyDlpV2KmsWrappedCryptoKey::class;
+        protected $kmsWrappedDataType = '';
+        protected $transientType = GooglePrivacyDlpV2TransientCryptoKey::class;
+        protected $transientDataType = '';
+        protected $unwrappedType = GooglePrivacyDlpV2UnwrappedCryptoKey::class;
+        protected $unwrappedDataType = '';
+        /**
+         * Key wrapped using Cloud KMS
+         *
+         * @param GooglePrivacyDlpV2KmsWrappedCryptoKey $kmsWrapped
+         */
+        public function setKmsWrapped(GooglePrivacyDlpV2KmsWrappedCryptoKey $kmsWrapped)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2KmsWrappedCryptoKey
+         */
+        public function getKmsWrapped()
+        {
+        }
+        /**
+         * Transient crypto key
+         *
+         * @param GooglePrivacyDlpV2TransientCryptoKey $transient
+         */
+        public function setTransient(GooglePrivacyDlpV2TransientCryptoKey $transient)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2TransientCryptoKey
+         */
+        public function getTransient()
+        {
+        }
+        /**
+         * Unwrapped crypto key
+         *
+         * @param GooglePrivacyDlpV2UnwrappedCryptoKey $unwrapped
+         */
+        public function setUnwrapped(GooglePrivacyDlpV2UnwrappedCryptoKey $unwrapped)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2UnwrappedCryptoKey
+         */
+        public function getUnwrapped()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2KmsWrappedCryptoKey
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2CryptoKey registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKmsWrapped()
-    {
-    }
-    /**
-     * Transient crypto key
-     *
-     * @param GooglePrivacyDlpV2TransientCryptoKey $transient
-     */
-    public function setTransient(GooglePrivacyDlpV2TransientCryptoKey $transient)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2TransientCryptoKey
-     */
-    public function getTransient()
-    {
-    }
-    /**
-     * Unwrapped crypto key
-     *
-     * @param GooglePrivacyDlpV2UnwrappedCryptoKey $unwrapped
-     */
-    public function setUnwrapped(GooglePrivacyDlpV2UnwrappedCryptoKey $unwrapped)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2UnwrappedCryptoKey
-     */
-    public function getUnwrapped()
+    class Google_Service_DLP_GooglePrivacyDlpV2CryptoKey extends \Google\Service\DLP\GooglePrivacyDlpV2CryptoKey
     {
     }
 }

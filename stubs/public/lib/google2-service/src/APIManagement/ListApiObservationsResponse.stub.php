@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIManagement;
-
-class ListApiObservationsResponse extends \Google\Collection
-{
-    protected $collection_key = 'apiObservations';
-    protected $apiObservationsType = ApiObservation::class;
-    protected $apiObservationsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The ApiObservation from the specified project and location and
-     * ObservationJobs.
-     *
-     * @param ApiObservation[] $apiObservations
-     */
-    public function setApiObservations($apiObservations)
+namespace Google\Service\APIManagement {
+    class ListApiObservationsResponse extends \Google\Collection
     {
+        protected $collection_key = 'apiObservations';
+        protected $apiObservationsType = ApiObservation::class;
+        protected $apiObservationsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The ApiObservation from the specified project and location and
+         * ObservationJobs.
+         *
+         * @param ApiObservation[] $apiObservations
+         */
+        public function setApiObservations($apiObservations)
+        {
+        }
+        /**
+         * @return ApiObservation[]
+         */
+        public function getApiObservations()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ApiObservation[]
+     * Runtime class alias of \Google\Service\APIManagement\ListApiObservationsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiObservations()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_APIManagement_ListApiObservationsResponse extends \Google\Service\APIManagement\ListApiObservationsResponse
     {
     }
 }

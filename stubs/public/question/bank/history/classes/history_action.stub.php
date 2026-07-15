@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qbank_history;
 
+use core_question\local\bank\filter_condition_manager;
+use core_question\local\bank\question_action_base;
 /**
  * Question bank column for the history action icon.
  *

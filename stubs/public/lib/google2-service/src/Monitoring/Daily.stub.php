@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class Daily extends \Google\Model
-{
-    protected $executionTimeType = TimeOfDay::class;
-    protected $executionTimeDataType = '';
-    /**
-     * Required. The number of days between runs. Must be greater than or equal to
-     * 1 day and less than or equal to 31 days.
-     *
-     * @var int
-     */
-    public $periodicity;
-    /**
-     * Optional. The time of day (in UTC) at which the query should run. If left
-     * unspecified, the server picks an arbitrary time of day and runs the query
-     * at the same time each day.
-     *
-     * @param TimeOfDay $executionTime
-     */
-    public function setExecutionTime(TimeOfDay $executionTime)
+namespace Google\Service\Monitoring {
+    class Daily extends \Google\Model
     {
+        protected $executionTimeType = TimeOfDay::class;
+        protected $executionTimeDataType = '';
+        /**
+         * Required. The number of days between runs. Must be greater than or equal to
+         * 1 day and less than or equal to 31 days.
+         *
+         * @var int
+         */
+        public $periodicity;
+        /**
+         * Optional. The time of day (in UTC) at which the query should run. If left
+         * unspecified, the server picks an arbitrary time of day and runs the query
+         * at the same time each day.
+         *
+         * @param TimeOfDay $executionTime
+         */
+        public function setExecutionTime(TimeOfDay $executionTime)
+        {
+        }
+        /**
+         * @return TimeOfDay
+         */
+        public function getExecutionTime()
+        {
+        }
+        /**
+         * Required. The number of days between runs. Must be greater than or equal to
+         * 1 day and less than or equal to 31 days.
+         *
+         * @param int $periodicity
+         */
+        public function setPeriodicity($periodicity)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPeriodicity()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TimeOfDay
+     * Runtime class alias of \Google\Service\Monitoring\Daily registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExecutionTime()
-    {
-    }
-    /**
-     * Required. The number of days between runs. Must be greater than or equal to
-     * 1 day and less than or equal to 31 days.
-     *
-     * @param int $periodicity
-     */
-    public function setPeriodicity($periodicity)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPeriodicity()
+    class Google_Service_Monitoring_Daily extends \Google\Service\Monitoring\Daily
     {
     }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TPU;
-
-class GenerateServiceIdentityResponse extends \Google\Model
-{
-    protected $identityType = ServiceIdentity::class;
-    protected $identityDataType = '';
-    /**
-     * ServiceIdentity that was created or retrieved.
-     *
-     * @param ServiceIdentity $identity
-     */
-    public function setIdentity(ServiceIdentity $identity)
+namespace Google\Service\TPU {
+    class GenerateServiceIdentityResponse extends \Google\Model
     {
+        protected $identityType = ServiceIdentity::class;
+        protected $identityDataType = '';
+        /**
+         * ServiceIdentity that was created or retrieved.
+         *
+         * @param ServiceIdentity $identity
+         */
+        public function setIdentity(ServiceIdentity $identity)
+        {
+        }
+        /**
+         * @return ServiceIdentity
+         */
+        public function getIdentity()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ServiceIdentity
+     * Runtime class alias of \Google\Service\TPU\GenerateServiceIdentityResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIdentity()
+    class Google_Service_TPU_GenerateServiceIdentityResponse extends \Google\Service\TPU\GenerateServiceIdentityResponse
     {
     }
 }

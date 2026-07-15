@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CivicInfo;
-
-class AdministrationRegion extends \Google\Collection
-{
-    protected $collection_key = 'sources';
-    protected $internal_gapi_mappings = ["localJurisdiction" => "local_jurisdiction"];
-    protected $electionAdministrationBodyType = AdministrativeBody::class;
-    protected $electionAdministrationBodyDataType = '';
-    protected $localJurisdictionType = AdministrationRegion::class;
-    protected $localJurisdictionDataType = '';
-    /**
-     * @var string
-     */
-    public $name;
-    protected $sourcesType = Source::class;
-    protected $sourcesDataType = 'array';
-    /**
-     * @param AdministrativeBody
-     */
-    public function setElectionAdministrationBody(AdministrativeBody $electionAdministrationBody)
+namespace Google\Service\CivicInfo {
+    class AdministrationRegion extends \Google\Collection
     {
+        protected $collection_key = 'sources';
+        protected $internal_gapi_mappings = ["localJurisdiction" => "local_jurisdiction"];
+        protected $electionAdministrationBodyType = AdministrativeBody::class;
+        protected $electionAdministrationBodyDataType = '';
+        protected $localJurisdictionType = AdministrationRegion::class;
+        protected $localJurisdictionDataType = '';
+        /**
+         * @var string
+         */
+        public $name;
+        protected $sourcesType = Source::class;
+        protected $sourcesDataType = 'array';
+        /**
+         * @param AdministrativeBody
+         */
+        public function setElectionAdministrationBody(AdministrativeBody $electionAdministrationBody)
+        {
+        }
+        /**
+         * @return AdministrativeBody
+         */
+        public function getElectionAdministrationBody()
+        {
+        }
+        /**
+         * @param AdministrationRegion
+         */
+        public function setLocalJurisdiction(AdministrationRegion $localJurisdiction)
+        {
+        }
+        /**
+         * @return AdministrationRegion
+         */
+        public function getLocalJurisdiction()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param Source[]
+         */
+        public function setSources($sources)
+        {
+        }
+        /**
+         * @return Source[]
+         */
+        public function getSources()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AdministrativeBody
+     * Runtime class alias of \Google\Service\CivicInfo\AdministrationRegion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getElectionAdministrationBody()
-    {
-    }
-    /**
-     * @param AdministrationRegion
-     */
-    public function setLocalJurisdiction(AdministrationRegion $localJurisdiction)
-    {
-    }
-    /**
-     * @return AdministrationRegion
-     */
-    public function getLocalJurisdiction()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param Source[]
-     */
-    public function setSources($sources)
-    {
-    }
-    /**
-     * @return Source[]
-     */
-    public function getSources()
+    class Google_Service_CivicInfo_AdministrationRegion extends \Google\Service\CivicInfo\AdministrationRegion
     {
     }
 }

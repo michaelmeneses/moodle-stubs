@@ -21,177 +21,186 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class ExplainDataAccessConsentInfo extends \Google\Collection
-{
-    /**
-     * Unspecified policy type.
-     */
-    public const TYPE_CONSENT_POLICY_TYPE_UNSPECIFIED = 'CONSENT_POLICY_TYPE_UNSPECIFIED';
-    /**
-     * Consent represent a patient consent.
-     */
-    public const TYPE_CONSENT_POLICY_TYPE_PATIENT = 'CONSENT_POLICY_TYPE_PATIENT';
-    /**
-     * Consent represent an admin consent.
-     */
-    public const TYPE_CONSENT_POLICY_TYPE_ADMIN = 'CONSENT_POLICY_TYPE_ADMIN';
-    protected $collection_key = 'variants';
-    /**
-     * The compartment base resources that matched a cascading policy. Each
-     * resource has the following format: `projects/{project_id}/locations/{locati
-     * on_id}/datasets/{dataset_id}/fhirStores/{fhir_store_id}/fhir/{resource_type
-     * }/{resource_id}`
-     *
-     * @var string[]
-     */
-    public $cascadeOrigins;
-    /**
-     * The resource name of this consent resource, in the format: `projects/{proje
-     * ct_id}/locations/{location}/datasets/{dataset_id}/fhirStores/{fhir_store_id
-     * }/fhir/Consent/{resource_id}`.
-     *
-     * @var string
-     */
-    public $consentResource;
-    /**
-     * Last enforcement timestamp of this consent resource.
-     *
-     * @var string
-     */
-    public $enforcementTime;
-    protected $matchingAccessorScopesType = ConsentAccessorScope::class;
-    protected $matchingAccessorScopesDataType = 'array';
-    /**
-     * The patient owning the consent (only applicable for patient consents), in
-     * the format: `projects/{project_id}/locations/{location_id}/datasets/{datase
-     * t_id}/fhirStores/{fhir_store_id}/fhir/Patient/{patient_id}`
-     *
-     * @var string
-     */
-    public $patientConsentOwner;
-    /**
-     * The policy type of consent resource (e.g. PATIENT, ADMIN).
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The consent's variant combinations. A single consent may have multiple
-     * variants.
-     *
-     * @var string[]
-     */
-    public $variants;
-    /**
-     * The compartment base resources that matched a cascading policy. Each
-     * resource has the following format: `projects/{project_id}/locations/{locati
-     * on_id}/datasets/{dataset_id}/fhirStores/{fhir_store_id}/fhir/{resource_type
-     * }/{resource_id}`
-     *
-     * @param string[] $cascadeOrigins
-     */
-    public function setCascadeOrigins($cascadeOrigins)
+namespace Google\Service\CloudHealthcare {
+    class ExplainDataAccessConsentInfo extends \Google\Collection
     {
+        /**
+         * Unspecified policy type.
+         */
+        public const TYPE_CONSENT_POLICY_TYPE_UNSPECIFIED = 'CONSENT_POLICY_TYPE_UNSPECIFIED';
+        /**
+         * Consent represent a patient consent.
+         */
+        public const TYPE_CONSENT_POLICY_TYPE_PATIENT = 'CONSENT_POLICY_TYPE_PATIENT';
+        /**
+         * Consent represent an admin consent.
+         */
+        public const TYPE_CONSENT_POLICY_TYPE_ADMIN = 'CONSENT_POLICY_TYPE_ADMIN';
+        protected $collection_key = 'variants';
+        /**
+         * The compartment base resources that matched a cascading policy. Each
+         * resource has the following format: `projects/{project_id}/locations/{locati
+         * on_id}/datasets/{dataset_id}/fhirStores/{fhir_store_id}/fhir/{resource_type
+         * }/{resource_id}`
+         *
+         * @var string[]
+         */
+        public $cascadeOrigins;
+        /**
+         * The resource name of this consent resource, in the format: `projects/{proje
+         * ct_id}/locations/{location}/datasets/{dataset_id}/fhirStores/{fhir_store_id
+         * }/fhir/Consent/{resource_id}`.
+         *
+         * @var string
+         */
+        public $consentResource;
+        /**
+         * Last enforcement timestamp of this consent resource.
+         *
+         * @var string
+         */
+        public $enforcementTime;
+        protected $matchingAccessorScopesType = ConsentAccessorScope::class;
+        protected $matchingAccessorScopesDataType = 'array';
+        /**
+         * The patient owning the consent (only applicable for patient consents), in
+         * the format: `projects/{project_id}/locations/{location_id}/datasets/{datase
+         * t_id}/fhirStores/{fhir_store_id}/fhir/Patient/{patient_id}`
+         *
+         * @var string
+         */
+        public $patientConsentOwner;
+        /**
+         * The policy type of consent resource (e.g. PATIENT, ADMIN).
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The consent's variant combinations. A single consent may have multiple
+         * variants.
+         *
+         * @var string[]
+         */
+        public $variants;
+        /**
+         * The compartment base resources that matched a cascading policy. Each
+         * resource has the following format: `projects/{project_id}/locations/{locati
+         * on_id}/datasets/{dataset_id}/fhirStores/{fhir_store_id}/fhir/{resource_type
+         * }/{resource_id}`
+         *
+         * @param string[] $cascadeOrigins
+         */
+        public function setCascadeOrigins($cascadeOrigins)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCascadeOrigins()
+        {
+        }
+        /**
+         * The resource name of this consent resource, in the format: `projects/{proje
+         * ct_id}/locations/{location}/datasets/{dataset_id}/fhirStores/{fhir_store_id
+         * }/fhir/Consent/{resource_id}`.
+         *
+         * @param string $consentResource
+         */
+        public function setConsentResource($consentResource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConsentResource()
+        {
+        }
+        /**
+         * Last enforcement timestamp of this consent resource.
+         *
+         * @param string $enforcementTime
+         */
+        public function setEnforcementTime($enforcementTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEnforcementTime()
+        {
+        }
+        /**
+         * A list of all the matching accessor scopes of this consent policy that
+         * enforced ExplainDataAccessConsentScope.accessor_scope.
+         *
+         * @param ConsentAccessorScope[] $matchingAccessorScopes
+         */
+        public function setMatchingAccessorScopes($matchingAccessorScopes)
+        {
+        }
+        /**
+         * @return ConsentAccessorScope[]
+         */
+        public function getMatchingAccessorScopes()
+        {
+        }
+        /**
+         * The patient owning the consent (only applicable for patient consents), in
+         * the format: `projects/{project_id}/locations/{location_id}/datasets/{datase
+         * t_id}/fhirStores/{fhir_store_id}/fhir/Patient/{patient_id}`
+         *
+         * @param string $patientConsentOwner
+         */
+        public function setPatientConsentOwner($patientConsentOwner)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPatientConsentOwner()
+        {
+        }
+        /**
+         * The policy type of consent resource (e.g. PATIENT, ADMIN).
+         *
+         * Accepted values: CONSENT_POLICY_TYPE_UNSPECIFIED,
+         * CONSENT_POLICY_TYPE_PATIENT, CONSENT_POLICY_TYPE_ADMIN
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
+        /**
+         * The consent's variant combinations. A single consent may have multiple
+         * variants.
+         *
+         * @param string[] $variants
+         */
+        public function setVariants($variants)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getVariants()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudHealthcare\ExplainDataAccessConsentInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCascadeOrigins()
-    {
-    }
-    /**
-     * The resource name of this consent resource, in the format: `projects/{proje
-     * ct_id}/locations/{location}/datasets/{dataset_id}/fhirStores/{fhir_store_id
-     * }/fhir/Consent/{resource_id}`.
-     *
-     * @param string $consentResource
-     */
-    public function setConsentResource($consentResource)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getConsentResource()
-    {
-    }
-    /**
-     * Last enforcement timestamp of this consent resource.
-     *
-     * @param string $enforcementTime
-     */
-    public function setEnforcementTime($enforcementTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEnforcementTime()
-    {
-    }
-    /**
-     * A list of all the matching accessor scopes of this consent policy that
-     * enforced ExplainDataAccessConsentScope.accessor_scope.
-     *
-     * @param ConsentAccessorScope[] $matchingAccessorScopes
-     */
-    public function setMatchingAccessorScopes($matchingAccessorScopes)
-    {
-    }
-    /**
-     * @return ConsentAccessorScope[]
-     */
-    public function getMatchingAccessorScopes()
-    {
-    }
-    /**
-     * The patient owning the consent (only applicable for patient consents), in
-     * the format: `projects/{project_id}/locations/{location_id}/datasets/{datase
-     * t_id}/fhirStores/{fhir_store_id}/fhir/Patient/{patient_id}`
-     *
-     * @param string $patientConsentOwner
-     */
-    public function setPatientConsentOwner($patientConsentOwner)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPatientConsentOwner()
-    {
-    }
-    /**
-     * The policy type of consent resource (e.g. PATIENT, ADMIN).
-     *
-     * Accepted values: CONSENT_POLICY_TYPE_UNSPECIFIED,
-     * CONSENT_POLICY_TYPE_PATIENT, CONSENT_POLICY_TYPE_ADMIN
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
-    {
-    }
-    /**
-     * The consent's variant combinations. A single consent may have multiple
-     * variants.
-     *
-     * @param string[] $variants
-     */
-    public function setVariants($variants)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getVariants()
+    class Google_Service_CloudHealthcare_ExplainDataAccessConsentInfo extends \Google\Service\CloudHealthcare\ExplainDataAccessConsentInfo
     {
     }
 }

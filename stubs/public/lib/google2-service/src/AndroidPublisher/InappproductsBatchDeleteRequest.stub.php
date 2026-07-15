@@ -21,27 +21,36 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class InappproductsBatchDeleteRequest extends \Google\Collection
-{
-    protected $collection_key = 'requests';
-    protected $requestsType = InappproductsDeleteRequest::class;
-    protected $requestsDataType = 'array';
-    /**
-     * Individual delete requests. At least one request is required. Can contain
-     * up to 100 requests. All requests must correspond to different in-app
-     * products.
-     *
-     * @param InappproductsDeleteRequest[] $requests
-     */
-    public function setRequests($requests)
+namespace Google\Service\AndroidPublisher {
+    class InappproductsBatchDeleteRequest extends \Google\Collection
     {
+        protected $collection_key = 'requests';
+        protected $requestsType = InappproductsDeleteRequest::class;
+        protected $requestsDataType = 'array';
+        /**
+         * Individual delete requests. At least one request is required. Can contain
+         * up to 100 requests. All requests must correspond to different in-app
+         * products.
+         *
+         * @param InappproductsDeleteRequest[] $requests
+         */
+        public function setRequests($requests)
+        {
+        }
+        /**
+         * @return InappproductsDeleteRequest[]
+         */
+        public function getRequests()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InappproductsDeleteRequest[]
+     * Runtime class alias of \Google\Service\AndroidPublisher\InappproductsBatchDeleteRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequests()
+    class Google_Service_AndroidPublisher_InappproductsBatchDeleteRequest extends \Google\Service\AndroidPublisher\InappproductsBatchDeleteRequest
     {
     }
 }

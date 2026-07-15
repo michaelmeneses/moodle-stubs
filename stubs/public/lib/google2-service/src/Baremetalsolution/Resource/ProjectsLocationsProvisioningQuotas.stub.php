@@ -21,36 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Baremetalsolution\Resource;
-
-/**
- * The "provisioningQuotas" collection of methods.
- * Typical usage is:
- *  <code>
- *   $baremetalsolutionService = new Google\Service\Baremetalsolution(...);
- *   $provisioningQuotas = $baremetalsolutionService->projects_locations_provisioningQuotas;
- *  </code>
- */
-class ProjectsLocationsProvisioningQuotas extends \Google\Service\Resource
-{
+namespace Google\Service\Baremetalsolution\Resource {
+    use Google\Service\Baremetalsolution\ListProvisioningQuotasResponse;
     /**
-     * List the budget details to provision resources on a given project.
-     * (provisioningQuotas.listProjectsLocationsProvisioningQuotas)
-     *
-     * @param string $parent Required. Parent value for
-     * ListProvisioningQuotasRequest.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Requested page size. The server might return fewer
-     * items than requested. If unspecified, server will pick an appropriate
-     * default. Notice that page_size field is not supported and won't be respected
-     * in the API request for now, will be updated when pagination is supported.
-     * @opt_param string pageToken A token identifying a page of results from the
-     * server.
-     * @return ListProvisioningQuotasResponse
-     * @throws \Google\Service\Exception
+     * The "provisioningQuotas" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $baremetalsolutionService = new Google\Service\Baremetalsolution(...);
+     *   $provisioningQuotas = $baremetalsolutionService->projects_locations_provisioningQuotas;
+     *  </code>
      */
-    public function listProjectsLocationsProvisioningQuotas($parent, $optParams = [])
+    class ProjectsLocationsProvisioningQuotas extends \Google\Service\Resource
+    {
+        /**
+         * List the budget details to provision resources on a given project.
+         * (provisioningQuotas.listProjectsLocationsProvisioningQuotas)
+         *
+         * @param string $parent Required. Parent value for
+         * ListProvisioningQuotasRequest.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Requested page size. The server might return fewer
+         * items than requested. If unspecified, server will pick an appropriate
+         * default. Notice that page_size field is not supported and won't be respected
+         * in the API request for now, will be updated when pagination is supported.
+         * @opt_param string pageToken A token identifying a page of results from the
+         * server.
+         * @return ListProvisioningQuotasResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsProvisioningQuotas($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Baremetalsolution\Resource\ProjectsLocationsProvisioningQuotas registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Baremetalsolution_Resource_ProjectsLocationsProvisioningQuotas extends \Google\Service\Baremetalsolution\Resource\ProjectsLocationsProvisioningQuotas
     {
     }
 }

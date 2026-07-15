@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Testing;
-
-class RegularFile extends \Google\Model
-{
-    protected $contentType = FileReference::class;
-    protected $contentDataType = '';
-    /**
-     * Required. Where to put the content on the device. Must be an absolute,
-     * allowlisted path. If the file exists, it will be replaced. The following
-     * device-side directories and any of their subdirectories are allowlisted:
-     * ${EXTERNAL_STORAGE}, /sdcard ${ANDROID_DATA}/local/tmp, or /data/local/tmp
-     * Specifying a path outside of these directory trees is invalid. The paths
-     * /sdcard and /data will be made available and treated as implicit path
-     * substitutions. E.g. if /sdcard on a particular device does not map to
-     * external storage, the system will replace it with the external storage path
-     * prefix for that device and copy the file there. It is strongly advised to
-     * use the Environment API in app and test code to access files on the device
-     * in a portable way.
-     *
-     * @var string
-     */
-    public $devicePath;
-    /**
-     * Required. The source file.
-     *
-     * @param FileReference $content
-     */
-    public function setContent(FileReference $content)
+namespace Google\Service\Testing {
+    class RegularFile extends \Google\Model
     {
+        protected $contentType = FileReference::class;
+        protected $contentDataType = '';
+        /**
+         * Required. Where to put the content on the device. Must be an absolute,
+         * allowlisted path. If the file exists, it will be replaced. The following
+         * device-side directories and any of their subdirectories are allowlisted:
+         * ${EXTERNAL_STORAGE}, /sdcard ${ANDROID_DATA}/local/tmp, or /data/local/tmp
+         * Specifying a path outside of these directory trees is invalid. The paths
+         * /sdcard and /data will be made available and treated as implicit path
+         * substitutions. E.g. if /sdcard on a particular device does not map to
+         * external storage, the system will replace it with the external storage path
+         * prefix for that device and copy the file there. It is strongly advised to
+         * use the Environment API in app and test code to access files on the device
+         * in a portable way.
+         *
+         * @var string
+         */
+        public $devicePath;
+        /**
+         * Required. The source file.
+         *
+         * @param FileReference $content
+         */
+        public function setContent(FileReference $content)
+        {
+        }
+        /**
+         * @return FileReference
+         */
+        public function getContent()
+        {
+        }
+        /**
+         * Required. Where to put the content on the device. Must be an absolute,
+         * allowlisted path. If the file exists, it will be replaced. The following
+         * device-side directories and any of their subdirectories are allowlisted:
+         * ${EXTERNAL_STORAGE}, /sdcard ${ANDROID_DATA}/local/tmp, or /data/local/tmp
+         * Specifying a path outside of these directory trees is invalid. The paths
+         * /sdcard and /data will be made available and treated as implicit path
+         * substitutions. E.g. if /sdcard on a particular device does not map to
+         * external storage, the system will replace it with the external storage path
+         * prefix for that device and copy the file there. It is strongly advised to
+         * use the Environment API in app and test code to access files on the device
+         * in a portable way.
+         *
+         * @param string $devicePath
+         */
+        public function setDevicePath($devicePath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDevicePath()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FileReference
+     * Runtime class alias of \Google\Service\Testing\RegularFile registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContent()
-    {
-    }
-    /**
-     * Required. Where to put the content on the device. Must be an absolute,
-     * allowlisted path. If the file exists, it will be replaced. The following
-     * device-side directories and any of their subdirectories are allowlisted:
-     * ${EXTERNAL_STORAGE}, /sdcard ${ANDROID_DATA}/local/tmp, or /data/local/tmp
-     * Specifying a path outside of these directory trees is invalid. The paths
-     * /sdcard and /data will be made available and treated as implicit path
-     * substitutions. E.g. if /sdcard on a particular device does not map to
-     * external storage, the system will replace it with the external storage path
-     * prefix for that device and copy the file there. It is strongly advised to
-     * use the Environment API in app and test code to access files on the device
-     * in a portable way.
-     *
-     * @param string $devicePath
-     */
-    public function setDevicePath($devicePath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDevicePath()
+    class Google_Service_Testing_RegularFile extends \Google\Service\Testing\RegularFile
     {
     }
 }

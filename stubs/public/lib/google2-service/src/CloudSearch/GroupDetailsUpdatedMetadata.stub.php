@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class GroupDetailsUpdatedMetadata extends \Google\Model
-{
-    protected $newGroupDetailsType = AppsDynamiteSharedGroupDetails::class;
-    protected $newGroupDetailsDataType = '';
-    protected $prevGroupDetailsType = AppsDynamiteSharedGroupDetails::class;
-    protected $prevGroupDetailsDataType = '';
-    /**
-     * @param AppsDynamiteSharedGroupDetails
-     */
-    public function setNewGroupDetails(AppsDynamiteSharedGroupDetails $newGroupDetails)
+namespace Google\Service\CloudSearch {
+    class GroupDetailsUpdatedMetadata extends \Google\Model
     {
+        protected $newGroupDetailsType = AppsDynamiteSharedGroupDetails::class;
+        protected $newGroupDetailsDataType = '';
+        protected $prevGroupDetailsType = AppsDynamiteSharedGroupDetails::class;
+        protected $prevGroupDetailsDataType = '';
+        /**
+         * @param AppsDynamiteSharedGroupDetails
+         */
+        public function setNewGroupDetails(AppsDynamiteSharedGroupDetails $newGroupDetails)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedGroupDetails
+         */
+        public function getNewGroupDetails()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedGroupDetails
+         */
+        public function setPrevGroupDetails(AppsDynamiteSharedGroupDetails $prevGroupDetails)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedGroupDetails
+         */
+        public function getPrevGroupDetails()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppsDynamiteSharedGroupDetails
+     * Runtime class alias of \Google\Service\CloudSearch\GroupDetailsUpdatedMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNewGroupDetails()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedGroupDetails
-     */
-    public function setPrevGroupDetails(AppsDynamiteSharedGroupDetails $prevGroupDetails)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedGroupDetails
-     */
-    public function getPrevGroupDetails()
+    class Google_Service_CloudSearch_GroupDetailsUpdatedMetadata extends \Google\Service\CloudSearch\GroupDetailsUpdatedMetadata
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class VolumeRecommendedInfo extends \Google\Model
-{
-    /**
-     * A text explaining why this volume is recommended.
-     *
-     * @var string
-     */
-    public $explanation;
-    /**
-     * A text explaining why this volume is recommended.
-     *
-     * @param string $explanation
-     */
-    public function setExplanation($explanation)
+namespace Google\Service\Books {
+    class VolumeRecommendedInfo extends \Google\Model
     {
+        /**
+         * A text explaining why this volume is recommended.
+         *
+         * @var string
+         */
+        public $explanation;
+        /**
+         * A text explaining why this volume is recommended.
+         *
+         * @param string $explanation
+         */
+        public function setExplanation($explanation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExplanation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Books\VolumeRecommendedInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExplanation()
+    class Google_Service_Books_VolumeRecommendedInfo extends \Google\Service\Books\VolumeRecommendedInfo
     {
     }
 }

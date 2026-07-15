@@ -21,188 +21,197 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI;
-
-class Backup extends \Google\Model
-{
-    /**
-     * Not set.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * Backup is being created.
-     */
-    public const STATE_CREATING = 'CREATING';
-    /**
-     * Backup has been created and validated.
-     */
-    public const STATE_ACTIVE = 'ACTIVE';
-    /**
-     * Backup has been created but failed validation.
-     */
-    public const STATE_FAILED = 'FAILED';
-    /**
-     * Backup is being deleted.
-     */
-    public const STATE_DELETING = 'DELETING';
-    /**
-     * Backup was manually created.
-     */
-    public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
-    /**
-     * Backup was manually created.
-     */
-    public const TYPE_ON_DEMAND = 'ON_DEMAND';
-    /**
-     * Backup was automatically created.
-     */
-    public const TYPE_SCHEDULED = 'SCHEDULED';
-    /**
-     * Output only. The time the backups was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Optional. Resource labels to represent user provided metadata.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Output only. The unique name of the Backup in the form of `projects/{projec
-     * t_id}/locations/global/domains/{domain_name}/backups/{name}`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The current state of the backup.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Output only. Additional information about the current status of this
-     * backup, if available.
-     *
-     * @var string
-     */
-    public $statusMessage;
-    /**
-     * Output only. Indicates whether it’s an on-demand backup or scheduled.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Output only. Last update time.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. The time the backups was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI {
+    class Backup extends \Google\Model
     {
+        /**
+         * Not set.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * Backup is being created.
+         */
+        public const STATE_CREATING = 'CREATING';
+        /**
+         * Backup has been created and validated.
+         */
+        public const STATE_ACTIVE = 'ACTIVE';
+        /**
+         * Backup has been created but failed validation.
+         */
+        public const STATE_FAILED = 'FAILED';
+        /**
+         * Backup is being deleted.
+         */
+        public const STATE_DELETING = 'DELETING';
+        /**
+         * Backup was manually created.
+         */
+        public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
+        /**
+         * Backup was manually created.
+         */
+        public const TYPE_ON_DEMAND = 'ON_DEMAND';
+        /**
+         * Backup was automatically created.
+         */
+        public const TYPE_SCHEDULED = 'SCHEDULED';
+        /**
+         * Output only. The time the backups was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Optional. Resource labels to represent user provided metadata.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Output only. The unique name of the Backup in the form of `projects/{projec
+         * t_id}/locations/global/domains/{domain_name}/backups/{name}`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The current state of the backup.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Output only. Additional information about the current status of this
+         * backup, if available.
+         *
+         * @var string
+         */
+        public $statusMessage;
+        /**
+         * Output only. Indicates whether it’s an on-demand backup or scheduled.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Output only. Last update time.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. The time the backups was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Optional. Resource labels to represent user provided metadata.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Output only. The unique name of the Backup in the form of `projects/{projec
+         * t_id}/locations/global/domains/{domain_name}/backups/{name}`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The current state of the backup.
+         *
+         * Accepted values: STATE_UNSPECIFIED, CREATING, ACTIVE, FAILED, DELETING
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Output only. Additional information about the current status of this
+         * backup, if available.
+         *
+         * @param string $statusMessage
+         */
+        public function setStatusMessage($statusMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStatusMessage()
+        {
+        }
+        /**
+         * Output only. Indicates whether it’s an on-demand backup or scheduled.
+         *
+         * Accepted values: TYPE_UNSPECIFIED, ON_DEMAND, SCHEDULED
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
+        /**
+         * Output only. Last update time.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\Backup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Optional. Resource labels to represent user provided metadata.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Output only. The unique name of the Backup in the form of `projects/{projec
-     * t_id}/locations/global/domains/{domain_name}/backups/{name}`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The current state of the backup.
-     *
-     * Accepted values: STATE_UNSPECIFIED, CREATING, ACTIVE, FAILED, DELETING
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Output only. Additional information about the current status of this
-     * backup, if available.
-     *
-     * @param string $statusMessage
-     */
-    public function setStatusMessage($statusMessage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStatusMessage()
-    {
-    }
-    /**
-     * Output only. Indicates whether it’s an on-demand backup or scheduled.
-     *
-     * Accepted values: TYPE_UNSPECIFIED, ON_DEMAND, SCHEDULED
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
-    {
-    }
-    /**
-     * Output only. Last update time.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_ManagedServiceforMicrosoftActiveDirectoryConsumerAPI_Backup extends \Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\Backup
     {
     }
 }

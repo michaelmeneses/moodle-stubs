@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1UserPasswordConfig extends \Google\Model
-{
-    protected $passwordType = GoogleCloudApihubV1Secret::class;
-    protected $passwordDataType = '';
-    /**
-     * Required. Username.
-     *
-     * @var string
-     */
-    public $username;
-    /**
-     * Required. Secret version reference containing the password. The
-     * `secretmanager.versions.access` permission should be granted to the service
-     * account accessing the secret.
-     *
-     * @param GoogleCloudApihubV1Secret $password
-     */
-    public function setPassword(GoogleCloudApihubV1Secret $password)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1UserPasswordConfig extends \Google\Model
     {
+        protected $passwordType = GoogleCloudApihubV1Secret::class;
+        protected $passwordDataType = '';
+        /**
+         * Required. Username.
+         *
+         * @var string
+         */
+        public $username;
+        /**
+         * Required. Secret version reference containing the password. The
+         * `secretmanager.versions.access` permission should be granted to the service
+         * account accessing the secret.
+         *
+         * @param GoogleCloudApihubV1Secret $password
+         */
+        public function setPassword(GoogleCloudApihubV1Secret $password)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1Secret
+         */
+        public function getPassword()
+        {
+        }
+        /**
+         * Required. Username.
+         *
+         * @param string $username
+         */
+        public function setUsername($username)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUsername()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApihubV1Secret
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1UserPasswordConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPassword()
-    {
-    }
-    /**
-     * Required. Username.
-     *
-     * @param string $username
-     */
-    public function setUsername($username)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUsername()
+    class Google_Service_APIhub_GoogleCloudApihubV1UserPasswordConfig extends \Google\Service\APIhub\GoogleCloudApihubV1UserPasswordConfig
     {
     }
 }

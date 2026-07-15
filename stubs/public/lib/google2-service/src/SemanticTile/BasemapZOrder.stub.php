@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SemanticTile;
-
-class BasemapZOrder extends \Google\Model
-{
-    public $zGrade;
-    public $zPlane;
-    public $zWithinGrade;
-    public function setZGrade($zGrade)
+namespace Google\Service\SemanticTile {
+    class BasemapZOrder extends \Google\Model
     {
+        public $zGrade;
+        public $zPlane;
+        public $zWithinGrade;
+        public function setZGrade($zGrade)
+        {
+        }
+        public function getZGrade()
+        {
+        }
+        public function setZPlane($zPlane)
+        {
+        }
+        public function getZPlane()
+        {
+        }
+        public function setZWithinGrade($zWithinGrade)
+        {
+        }
+        public function getZWithinGrade()
+        {
+        }
     }
-    public function getZGrade()
-    {
-    }
-    public function setZPlane($zPlane)
-    {
-    }
-    public function getZPlane()
-    {
-    }
-    public function setZWithinGrade($zWithinGrade)
-    {
-    }
-    public function getZWithinGrade()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\SemanticTile\BasemapZOrder registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_SemanticTile_BasemapZOrder extends \Google\Service\SemanticTile\BasemapZOrder
     {
     }
 }

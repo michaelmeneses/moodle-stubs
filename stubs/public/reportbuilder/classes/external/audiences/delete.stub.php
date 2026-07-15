@@ -8,6 +8,12 @@
  */
 namespace core_reportbuilder\external\audiences;
 
+use core_external\external_api;
+use core_external\external_value;
+use core_external\external_function_parameters;
+use core_reportbuilder\local\helpers\audience;
+use core_reportbuilder\manager;
+use core_reportbuilder\permission;
 /**
  * External method for deleting a report audience
  *

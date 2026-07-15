@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class BulkEditAssignedTargetingOptionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'updatedLineItemIds';
-    protected $errorsType = Status::class;
-    protected $errorsDataType = 'array';
-    /**
-     * Output only. The IDs of the line items which failed.
-     *
-     * @var string[]
-     */
-    public $failedLineItemIds;
-    /**
-     * Output only. The IDs of the line items which successfully updated.
-     *
-     * @var string[]
-     */
-    public $updatedLineItemIds;
-    /**
-     * The error information for each line item that failed to update.
-     *
-     * @param Status[] $errors
-     */
-    public function setErrors($errors)
+namespace Google\Service\DisplayVideo {
+    class BulkEditAssignedTargetingOptionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'updatedLineItemIds';
+        protected $errorsType = Status::class;
+        protected $errorsDataType = 'array';
+        /**
+         * Output only. The IDs of the line items which failed.
+         *
+         * @var string[]
+         */
+        public $failedLineItemIds;
+        /**
+         * Output only. The IDs of the line items which successfully updated.
+         *
+         * @var string[]
+         */
+        public $updatedLineItemIds;
+        /**
+         * The error information for each line item that failed to update.
+         *
+         * @param Status[] $errors
+         */
+        public function setErrors($errors)
+        {
+        }
+        /**
+         * @return Status[]
+         */
+        public function getErrors()
+        {
+        }
+        /**
+         * Output only. The IDs of the line items which failed.
+         *
+         * @param string[] $failedLineItemIds
+         */
+        public function setFailedLineItemIds($failedLineItemIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getFailedLineItemIds()
+        {
+        }
+        /**
+         * Output only. The IDs of the line items which successfully updated.
+         *
+         * @param string[] $updatedLineItemIds
+         */
+        public function setUpdatedLineItemIds($updatedLineItemIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUpdatedLineItemIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Status[]
+     * Runtime class alias of \Google\Service\DisplayVideo\BulkEditAssignedTargetingOptionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrors()
-    {
-    }
-    /**
-     * Output only. The IDs of the line items which failed.
-     *
-     * @param string[] $failedLineItemIds
-     */
-    public function setFailedLineItemIds($failedLineItemIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getFailedLineItemIds()
-    {
-    }
-    /**
-     * Output only. The IDs of the line items which successfully updated.
-     *
-     * @param string[] $updatedLineItemIds
-     */
-    public function setUpdatedLineItemIds($updatedLineItemIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUpdatedLineItemIds()
+    class Google_Service_DisplayVideo_BulkEditAssignedTargetingOptionsResponse extends \Google\Service\DisplayVideo\BulkEditAssignedTargetingOptionsResponse
     {
     }
 }

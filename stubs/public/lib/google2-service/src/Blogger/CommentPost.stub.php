@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Blogger;
-
-class CommentPost extends \Google\Model
-{
-    /**
-     * The identifier of the post containing this comment.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * The identifier of the post containing this comment.
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\Blogger {
+    class CommentPost extends \Google\Model
     {
+        /**
+         * The identifier of the post containing this comment.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * The identifier of the post containing this comment.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Blogger\CommentPost registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
+    class Google_Service_Blogger_CommentPost extends \Google\Service\Blogger\CommentPost
     {
     }
 }

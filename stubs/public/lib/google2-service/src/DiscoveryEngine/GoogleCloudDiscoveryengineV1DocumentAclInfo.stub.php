@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1DocumentAclInfo extends \Google\Collection
-{
-    protected $collection_key = 'readers';
-    protected $readersType = GoogleCloudDiscoveryengineV1DocumentAclInfoAccessRestriction::class;
-    protected $readersDataType = 'array';
-    /**
-     * Readers of the document.
-     *
-     * @param GoogleCloudDiscoveryengineV1DocumentAclInfoAccessRestriction[] $readers
-     */
-    public function setReaders($readers)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1DocumentAclInfo extends \Google\Collection
     {
+        protected $collection_key = 'readers';
+        protected $readersType = GoogleCloudDiscoveryengineV1DocumentAclInfoAccessRestriction::class;
+        protected $readersDataType = 'array';
+        /**
+         * Readers of the document.
+         *
+         * @param GoogleCloudDiscoveryengineV1DocumentAclInfoAccessRestriction[] $readers
+         */
+        public function setReaders($readers)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1DocumentAclInfoAccessRestriction[]
+         */
+        public function getReaders()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1DocumentAclInfoAccessRestriction[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1DocumentAclInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReaders()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1DocumentAclInfo extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1DocumentAclInfo
     {
     }
 }

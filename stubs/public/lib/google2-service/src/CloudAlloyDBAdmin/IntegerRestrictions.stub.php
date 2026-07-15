@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAlloyDBAdmin;
-
-class IntegerRestrictions extends \Google\Model
-{
-    /**
-     * The maximum value that can be specified, if applicable.
-     *
-     * @var string
-     */
-    public $maxValue;
-    /**
-     * The minimum value that can be specified, if applicable.
-     *
-     * @var string
-     */
-    public $minValue;
-    /**
-     * The maximum value that can be specified, if applicable.
-     *
-     * @param string $maxValue
-     */
-    public function setMaxValue($maxValue)
+namespace Google\Service\CloudAlloyDBAdmin {
+    class IntegerRestrictions extends \Google\Model
     {
+        /**
+         * The maximum value that can be specified, if applicable.
+         *
+         * @var string
+         */
+        public $maxValue;
+        /**
+         * The minimum value that can be specified, if applicable.
+         *
+         * @var string
+         */
+        public $minValue;
+        /**
+         * The maximum value that can be specified, if applicable.
+         *
+         * @param string $maxValue
+         */
+        public function setMaxValue($maxValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaxValue()
+        {
+        }
+        /**
+         * The minimum value that can be specified, if applicable.
+         *
+         * @param string $minValue
+         */
+        public function setMinValue($minValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMinValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudAlloyDBAdmin\IntegerRestrictions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaxValue()
-    {
-    }
-    /**
-     * The minimum value that can be specified, if applicable.
-     *
-     * @param string $minValue
-     */
-    public function setMinValue($minValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMinValue()
+    class Google_Service_CloudAlloyDBAdmin_IntegerRestrictions extends \Google\Service\CloudAlloyDBAdmin\IntegerRestrictions
     {
     }
 }

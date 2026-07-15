@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise;
-
-class ServiceAccount extends \Google\Model
-{
-    protected $keyType = ServiceAccountKey::class;
-    protected $keyDataType = '';
-    /**
-     * The account name of the service account, in the form of an email address.
-     * Assigned by the server.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Credentials that can be used to authenticate as this ServiceAccount.
-     *
-     * @param ServiceAccountKey $key
-     */
-    public function setKey(ServiceAccountKey $key)
+namespace Google\Service\AndroidEnterprise {
+    class ServiceAccount extends \Google\Model
     {
+        protected $keyType = ServiceAccountKey::class;
+        protected $keyDataType = '';
+        /**
+         * The account name of the service account, in the form of an email address.
+         * Assigned by the server.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Credentials that can be used to authenticate as this ServiceAccount.
+         *
+         * @param ServiceAccountKey $key
+         */
+        public function setKey(ServiceAccountKey $key)
+        {
+        }
+        /**
+         * @return ServiceAccountKey
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * The account name of the service account, in the form of an email address.
+         * Assigned by the server.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ServiceAccountKey
+     * Runtime class alias of \Google\Service\AndroidEnterprise\ServiceAccount registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKey()
-    {
-    }
-    /**
-     * The account name of the service account, in the form of an email address.
-     * Assigned by the server.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_AndroidEnterprise_ServiceAccount extends \Google\Service\AndroidEnterprise\ServiceAccount
     {
     }
 }

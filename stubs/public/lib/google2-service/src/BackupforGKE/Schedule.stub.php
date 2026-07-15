@@ -21,102 +21,111 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BackupforGKE;
-
-class Schedule extends \Google\Model
-{
-    /**
-     * Optional. A standard [cron](https://wikipedia.com/wiki/cron) string that
-     * defines a repeating schedule for creating Backups via this BackupPlan. This
-     * is mutually exclusive with the rpo_config field since at most one schedule
-     * can be defined for a BackupPlan. If this is defined, then
-     * backup_retain_days must also be defined. Default (empty): no automatic
-     * backup creation will occur.
-     *
-     * @var string
-     */
-    public $cronSchedule;
-    /**
-     * Output only. Start time of next scheduled backup under this BackupPlan by
-     * either cron_schedule or rpo config.
-     *
-     * @var string
-     */
-    public $nextScheduledBackupTime;
-    /**
-     * Optional. This flag denotes whether automatic Backup creation is paused for
-     * this BackupPlan. Default: False
-     *
-     * @var bool
-     */
-    public $paused;
-    protected $rpoConfigType = RpoConfig::class;
-    protected $rpoConfigDataType = '';
-    /**
-     * Optional. A standard [cron](https://wikipedia.com/wiki/cron) string that
-     * defines a repeating schedule for creating Backups via this BackupPlan. This
-     * is mutually exclusive with the rpo_config field since at most one schedule
-     * can be defined for a BackupPlan. If this is defined, then
-     * backup_retain_days must also be defined. Default (empty): no automatic
-     * backup creation will occur.
-     *
-     * @param string $cronSchedule
-     */
-    public function setCronSchedule($cronSchedule)
+namespace Google\Service\BackupforGKE {
+    class Schedule extends \Google\Model
     {
+        /**
+         * Optional. A standard [cron](https://wikipedia.com/wiki/cron) string that
+         * defines a repeating schedule for creating Backups via this BackupPlan. This
+         * is mutually exclusive with the rpo_config field since at most one schedule
+         * can be defined for a BackupPlan. If this is defined, then
+         * backup_retain_days must also be defined. Default (empty): no automatic
+         * backup creation will occur.
+         *
+         * @var string
+         */
+        public $cronSchedule;
+        /**
+         * Output only. Start time of next scheduled backup under this BackupPlan by
+         * either cron_schedule or rpo config.
+         *
+         * @var string
+         */
+        public $nextScheduledBackupTime;
+        /**
+         * Optional. This flag denotes whether automatic Backup creation is paused for
+         * this BackupPlan. Default: False
+         *
+         * @var bool
+         */
+        public $paused;
+        protected $rpoConfigType = RpoConfig::class;
+        protected $rpoConfigDataType = '';
+        /**
+         * Optional. A standard [cron](https://wikipedia.com/wiki/cron) string that
+         * defines a repeating schedule for creating Backups via this BackupPlan. This
+         * is mutually exclusive with the rpo_config field since at most one schedule
+         * can be defined for a BackupPlan. If this is defined, then
+         * backup_retain_days must also be defined. Default (empty): no automatic
+         * backup creation will occur.
+         *
+         * @param string $cronSchedule
+         */
+        public function setCronSchedule($cronSchedule)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCronSchedule()
+        {
+        }
+        /**
+         * Output only. Start time of next scheduled backup under this BackupPlan by
+         * either cron_schedule or rpo config.
+         *
+         * @param string $nextScheduledBackupTime
+         */
+        public function setNextScheduledBackupTime($nextScheduledBackupTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextScheduledBackupTime()
+        {
+        }
+        /**
+         * Optional. This flag denotes whether automatic Backup creation is paused for
+         * this BackupPlan. Default: False
+         *
+         * @param bool $paused
+         */
+        public function setPaused($paused)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPaused()
+        {
+        }
+        /**
+         * Optional. Defines the RPO schedule configuration for this BackupPlan. This
+         * is mutually exclusive with the cron_schedule field since at most one
+         * schedule can be defined for a BackupPLan. If this is defined, then
+         * backup_retain_days must also be defined. Default (empty): no automatic
+         * backup creation will occur.
+         *
+         * @param RpoConfig $rpoConfig
+         */
+        public function setRpoConfig(RpoConfig $rpoConfig)
+        {
+        }
+        /**
+         * @return RpoConfig
+         */
+        public function getRpoConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BackupforGKE\Schedule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCronSchedule()
-    {
-    }
-    /**
-     * Output only. Start time of next scheduled backup under this BackupPlan by
-     * either cron_schedule or rpo config.
-     *
-     * @param string $nextScheduledBackupTime
-     */
-    public function setNextScheduledBackupTime($nextScheduledBackupTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextScheduledBackupTime()
-    {
-    }
-    /**
-     * Optional. This flag denotes whether automatic Backup creation is paused for
-     * this BackupPlan. Default: False
-     *
-     * @param bool $paused
-     */
-    public function setPaused($paused)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPaused()
-    {
-    }
-    /**
-     * Optional. Defines the RPO schedule configuration for this BackupPlan. This
-     * is mutually exclusive with the cron_schedule field since at most one
-     * schedule can be defined for a BackupPLan. If this is defined, then
-     * backup_retain_days must also be defined. Default (empty): no automatic
-     * backup creation will occur.
-     *
-     * @param RpoConfig $rpoConfig
-     */
-    public function setRpoConfig(RpoConfig $rpoConfig)
-    {
-    }
-    /**
-     * @return RpoConfig
-     */
-    public function getRpoConfig()
+    class Google_Service_BackupforGKE_Schedule extends \Google\Service\BackupforGKE\Schedule
     {
     }
 }

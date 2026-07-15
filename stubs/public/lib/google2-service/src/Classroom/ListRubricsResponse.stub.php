@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Classroom;
-
-class ListRubricsResponse extends \Google\Collection
-{
-    protected $collection_key = 'rubrics';
-    /**
-     * Token identifying the next page of results to return. If empty, no further
-     * results are available.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $rubricsType = Rubric::class;
-    protected $rubricsDataType = 'array';
-    /**
-     * Token identifying the next page of results to return. If empty, no further
-     * results are available.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Classroom {
+    class ListRubricsResponse extends \Google\Collection
     {
+        protected $collection_key = 'rubrics';
+        /**
+         * Token identifying the next page of results to return. If empty, no further
+         * results are available.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $rubricsType = Rubric::class;
+        protected $rubricsDataType = 'array';
+        /**
+         * Token identifying the next page of results to return. If empty, no further
+         * results are available.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Rubrics that match the request.
+         *
+         * @param Rubric[] $rubrics
+         */
+        public function setRubrics($rubrics)
+        {
+        }
+        /**
+         * @return Rubric[]
+         */
+        public function getRubrics()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Classroom\ListRubricsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Rubrics that match the request.
-     *
-     * @param Rubric[] $rubrics
-     */
-    public function setRubrics($rubrics)
-    {
-    }
-    /**
-     * @return Rubric[]
-     */
-    public function getRubrics()
+    class Google_Service_Classroom_ListRubricsResponse extends \Google\Service\Classroom\ListRubricsResponse
     {
     }
 }

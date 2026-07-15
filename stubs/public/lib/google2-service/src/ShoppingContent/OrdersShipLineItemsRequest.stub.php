@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class OrdersShipLineItemsRequest extends \Google\Collection
-{
-    protected $collection_key = 'shipmentInfos';
-    protected $lineItemsType = OrderShipmentLineItemShipment::class;
-    protected $lineItemsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $operationId;
-    /**
-     * @var string
-     */
-    public $shipmentGroupId;
-    protected $shipmentInfosType = OrdersCustomBatchRequestEntryShipLineItemsShipmentInfo::class;
-    protected $shipmentInfosDataType = 'array';
-    /**
-     * @param OrderShipmentLineItemShipment[]
-     */
-    public function setLineItems($lineItems)
+namespace Google\Service\ShoppingContent {
+    class OrdersShipLineItemsRequest extends \Google\Collection
     {
+        protected $collection_key = 'shipmentInfos';
+        protected $lineItemsType = OrderShipmentLineItemShipment::class;
+        protected $lineItemsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $operationId;
+        /**
+         * @var string
+         */
+        public $shipmentGroupId;
+        protected $shipmentInfosType = OrdersCustomBatchRequestEntryShipLineItemsShipmentInfo::class;
+        protected $shipmentInfosDataType = 'array';
+        /**
+         * @param OrderShipmentLineItemShipment[]
+         */
+        public function setLineItems($lineItems)
+        {
+        }
+        /**
+         * @return OrderShipmentLineItemShipment[]
+         */
+        public function getLineItems()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOperationId($operationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOperationId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setShipmentGroupId($shipmentGroupId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getShipmentGroupId()
+        {
+        }
+        /**
+         * @param OrdersCustomBatchRequestEntryShipLineItemsShipmentInfo[]
+         */
+        public function setShipmentInfos($shipmentInfos)
+        {
+        }
+        /**
+         * @return OrdersCustomBatchRequestEntryShipLineItemsShipmentInfo[]
+         */
+        public function getShipmentInfos()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return OrderShipmentLineItemShipment[]
+     * Runtime class alias of \Google\Service\ShoppingContent\OrdersShipLineItemsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLineItems()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOperationId($operationId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOperationId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setShipmentGroupId($shipmentGroupId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getShipmentGroupId()
-    {
-    }
-    /**
-     * @param OrdersCustomBatchRequestEntryShipLineItemsShipmentInfo[]
-     */
-    public function setShipmentInfos($shipmentInfos)
-    {
-    }
-    /**
-     * @return OrdersCustomBatchRequestEntryShipLineItemsShipmentInfo[]
-     */
-    public function getShipmentInfos()
+    class Google_Service_ShoppingContent_OrdersShipLineItemsRequest extends \Google\Service\ShoppingContent\OrdersShipLineItemsRequest
     {
     }
 }

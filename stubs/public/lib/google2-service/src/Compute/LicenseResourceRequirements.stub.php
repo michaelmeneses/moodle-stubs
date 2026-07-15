@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class LicenseResourceRequirements extends \Google\Model
-{
-    /**
-     * [Input Only] Deprecated. This field no longer reflects the minimum number
-     * of guest cpus required to use the Instance.
-     *
-     * @var int
-     */
-    public $minGuestCpuCount;
-    /**
-     * [Input Only] Deprecated. This field no longer reflects the minimum memory
-     * required to use the Instance.
-     *
-     * @var int
-     */
-    public $minMemoryMb;
-    /**
-     * [Input Only] Deprecated. This field no longer reflects the minimum number
-     * of guest cpus required to use the Instance.
-     *
-     * @param int $minGuestCpuCount
-     */
-    public function setMinGuestCpuCount($minGuestCpuCount)
+namespace Google\Service\Compute {
+    class LicenseResourceRequirements extends \Google\Model
     {
+        /**
+         * [Input Only] Deprecated. This field no longer reflects the minimum number
+         * of guest cpus required to use the Instance.
+         *
+         * @var int
+         */
+        public $minGuestCpuCount;
+        /**
+         * [Input Only] Deprecated. This field no longer reflects the minimum memory
+         * required to use the Instance.
+         *
+         * @var int
+         */
+        public $minMemoryMb;
+        /**
+         * [Input Only] Deprecated. This field no longer reflects the minimum number
+         * of guest cpus required to use the Instance.
+         *
+         * @param int $minGuestCpuCount
+         */
+        public function setMinGuestCpuCount($minGuestCpuCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMinGuestCpuCount()
+        {
+        }
+        /**
+         * [Input Only] Deprecated. This field no longer reflects the minimum memory
+         * required to use the Instance.
+         *
+         * @param int $minMemoryMb
+         */
+        public function setMinMemoryMb($minMemoryMb)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMinMemoryMb()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Compute\LicenseResourceRequirements registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMinGuestCpuCount()
-    {
-    }
-    /**
-     * [Input Only] Deprecated. This field no longer reflects the minimum memory
-     * required to use the Instance.
-     *
-     * @param int $minMemoryMb
-     */
-    public function setMinMemoryMb($minMemoryMb)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMinMemoryMb()
+    class Google_Service_Compute_LicenseResourceRequirements extends \Google\Service\Compute\LicenseResourceRequirements
     {
     }
 }

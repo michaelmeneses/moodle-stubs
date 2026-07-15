@@ -21,108 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TPU;
-
-class QueueingPolicy extends \Google\Model
-{
-    /**
-     * Optional. A relative time after which resources may be created.
-     *
-     * @var string
-     */
-    public $validAfterDuration;
-    /**
-     * Optional. An absolute time after which resources may be created.
-     *
-     * @var string
-     */
-    public $validAfterTime;
-    protected $validIntervalType = Interval::class;
-    protected $validIntervalDataType = '';
-    /**
-     * Optional. A relative time after which resources should not be created. If
-     * the request cannot be fulfilled by this time the request will be failed.
-     *
-     * @var string
-     */
-    public $validUntilDuration;
-    /**
-     * Optional. An absolute time after which resources should not be created. If
-     * the request cannot be fulfilled by this time the request will be failed.
-     *
-     * @var string
-     */
-    public $validUntilTime;
-    /**
-     * Optional. A relative time after which resources may be created.
-     *
-     * @param string $validAfterDuration
-     */
-    public function setValidAfterDuration($validAfterDuration)
+namespace Google\Service\TPU {
+    class QueueingPolicy extends \Google\Model
     {
+        /**
+         * Optional. A relative time after which resources may be created.
+         *
+         * @var string
+         */
+        public $validAfterDuration;
+        /**
+         * Optional. An absolute time after which resources may be created.
+         *
+         * @var string
+         */
+        public $validAfterTime;
+        protected $validIntervalType = Interval::class;
+        protected $validIntervalDataType = '';
+        /**
+         * Optional. A relative time after which resources should not be created. If
+         * the request cannot be fulfilled by this time the request will be failed.
+         *
+         * @var string
+         */
+        public $validUntilDuration;
+        /**
+         * Optional. An absolute time after which resources should not be created. If
+         * the request cannot be fulfilled by this time the request will be failed.
+         *
+         * @var string
+         */
+        public $validUntilTime;
+        /**
+         * Optional. A relative time after which resources may be created.
+         *
+         * @param string $validAfterDuration
+         */
+        public function setValidAfterDuration($validAfterDuration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValidAfterDuration()
+        {
+        }
+        /**
+         * Optional. An absolute time after which resources may be created.
+         *
+         * @param string $validAfterTime
+         */
+        public function setValidAfterTime($validAfterTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValidAfterTime()
+        {
+        }
+        /**
+         * Optional. An absolute time interval within which resources may be created.
+         *
+         * @param Interval $validInterval
+         */
+        public function setValidInterval(Interval $validInterval)
+        {
+        }
+        /**
+         * @return Interval
+         */
+        public function getValidInterval()
+        {
+        }
+        /**
+         * Optional. A relative time after which resources should not be created. If
+         * the request cannot be fulfilled by this time the request will be failed.
+         *
+         * @param string $validUntilDuration
+         */
+        public function setValidUntilDuration($validUntilDuration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValidUntilDuration()
+        {
+        }
+        /**
+         * Optional. An absolute time after which resources should not be created. If
+         * the request cannot be fulfilled by this time the request will be failed.
+         *
+         * @param string $validUntilTime
+         */
+        public function setValidUntilTime($validUntilTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValidUntilTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\TPU\QueueingPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getValidAfterDuration()
-    {
-    }
-    /**
-     * Optional. An absolute time after which resources may be created.
-     *
-     * @param string $validAfterTime
-     */
-    public function setValidAfterTime($validAfterTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValidAfterTime()
-    {
-    }
-    /**
-     * Optional. An absolute time interval within which resources may be created.
-     *
-     * @param Interval $validInterval
-     */
-    public function setValidInterval(Interval $validInterval)
-    {
-    }
-    /**
-     * @return Interval
-     */
-    public function getValidInterval()
-    {
-    }
-    /**
-     * Optional. A relative time after which resources should not be created. If
-     * the request cannot be fulfilled by this time the request will be failed.
-     *
-     * @param string $validUntilDuration
-     */
-    public function setValidUntilDuration($validUntilDuration)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValidUntilDuration()
-    {
-    }
-    /**
-     * Optional. An absolute time after which resources should not be created. If
-     * the request cannot be fulfilled by this time the request will be failed.
-     *
-     * @param string $validUntilTime
-     */
-    public function setValidUntilTime($validUntilTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValidUntilTime()
+    class Google_Service_TPU_QueueingPolicy extends \Google\Service\TPU\QueueingPolicy
     {
     }
 }

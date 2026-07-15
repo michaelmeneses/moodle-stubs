@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveActivity;
-
-class QueryDriveActivityResponse extends \Google\Collection
-{
-    protected $collection_key = 'activities';
-    protected $activitiesType = DriveActivity::class;
-    protected $activitiesDataType = 'array';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of activity requested.
-     *
-     * @param DriveActivity[] $activities
-     */
-    public function setActivities($activities)
+namespace Google\Service\DriveActivity {
+    class QueryDriveActivityResponse extends \Google\Collection
     {
+        protected $collection_key = 'activities';
+        protected $activitiesType = DriveActivity::class;
+        protected $activitiesDataType = 'array';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of activity requested.
+         *
+         * @param DriveActivity[] $activities
+         */
+        public function setActivities($activities)
+        {
+        }
+        /**
+         * @return DriveActivity[]
+         */
+        public function getActivities()
+        {
+        }
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DriveActivity[]
+     * Runtime class alias of \Google\Service\DriveActivity\QueryDriveActivityResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActivities()
-    {
-    }
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_DriveActivity_QueryDriveActivityResponse extends \Google\Service\DriveActivity\QueryDriveActivityResponse
     {
     }
 }

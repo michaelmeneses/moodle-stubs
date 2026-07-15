@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class ListPrintServersResponse extends \Google\Collection
-{
-    protected $collection_key = 'printServers';
-    /**
-     * A token that can be sent as `page_token` in a request to retrieve the next
-     * page. If this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $printServersType = PrintServer::class;
-    protected $printServersDataType = 'array';
-    /**
-     * A token that can be sent as `page_token` in a request to retrieve the next
-     * page. If this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Directory {
+    class ListPrintServersResponse extends \Google\Collection
     {
+        protected $collection_key = 'printServers';
+        /**
+         * A token that can be sent as `page_token` in a request to retrieve the next
+         * page. If this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $printServersType = PrintServer::class;
+        protected $printServersDataType = 'array';
+        /**
+         * A token that can be sent as `page_token` in a request to retrieve the next
+         * page. If this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * List of print servers.
+         *
+         * @param PrintServer[] $printServers
+         */
+        public function setPrintServers($printServers)
+        {
+        }
+        /**
+         * @return PrintServer[]
+         */
+        public function getPrintServers()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Directory\ListPrintServersResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * List of print servers.
-     *
-     * @param PrintServer[] $printServers
-     */
-    public function setPrintServers($printServers)
-    {
-    }
-    /**
-     * @return PrintServer[]
-     */
-    public function getPrintServers()
+    class Google_Service_Directory_ListPrintServersResponse extends \Google\Service\Directory\ListPrintServersResponse
     {
     }
 }

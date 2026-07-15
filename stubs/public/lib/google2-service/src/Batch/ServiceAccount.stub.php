@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Batch;
-
-class ServiceAccount extends \Google\Collection
-{
-    protected $collection_key = 'scopes';
-    /**
-     * Email address of the service account.
-     *
-     * @var string
-     */
-    public $email;
-    /**
-     * List of scopes to be enabled for this service account.
-     *
-     * @var string[]
-     */
-    public $scopes;
-    /**
-     * Email address of the service account.
-     *
-     * @param string $email
-     */
-    public function setEmail($email)
+namespace Google\Service\Batch {
+    class ServiceAccount extends \Google\Collection
     {
+        protected $collection_key = 'scopes';
+        /**
+         * Email address of the service account.
+         *
+         * @var string
+         */
+        public $email;
+        /**
+         * List of scopes to be enabled for this service account.
+         *
+         * @var string[]
+         */
+        public $scopes;
+        /**
+         * Email address of the service account.
+         *
+         * @param string $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
+        /**
+         * List of scopes to be enabled for this service account.
+         *
+         * @param string[] $scopes
+         */
+        public function setScopes($scopes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getScopes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Batch\ServiceAccount registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmail()
-    {
-    }
-    /**
-     * List of scopes to be enabled for this service account.
-     *
-     * @param string[] $scopes
-     */
-    public function setScopes($scopes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getScopes()
+    class Google_Service_Batch_ServiceAccount extends \Google\Service\Batch\ServiceAccount
     {
     }
 }

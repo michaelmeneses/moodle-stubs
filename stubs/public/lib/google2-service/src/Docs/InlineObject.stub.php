@@ -21,106 +21,115 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class InlineObject extends \Google\Collection
-{
-    protected $collection_key = 'suggestedDeletionIds';
-    protected $inlineObjectPropertiesType = InlineObjectProperties::class;
-    protected $inlineObjectPropertiesDataType = '';
-    /**
-     * The ID of this inline object. Can be used to update an object’s properties.
-     *
-     * @var string
-     */
-    public $objectId;
-    /**
-     * The suggested deletion IDs. If empty, then there are no suggested deletions
-     * of this content.
-     *
-     * @var string[]
-     */
-    public $suggestedDeletionIds;
-    protected $suggestedInlineObjectPropertiesChangesType = SuggestedInlineObjectProperties::class;
-    protected $suggestedInlineObjectPropertiesChangesDataType = 'map';
-    /**
-     * The suggested insertion ID. If empty, then this is not a suggested
-     * insertion.
-     *
-     * @var string
-     */
-    public $suggestedInsertionId;
-    /**
-     * The properties of this inline object.
-     *
-     * @param InlineObjectProperties $inlineObjectProperties
-     */
-    public function setInlineObjectProperties(InlineObjectProperties $inlineObjectProperties)
+namespace Google\Service\Docs {
+    class InlineObject extends \Google\Collection
     {
+        protected $collection_key = 'suggestedDeletionIds';
+        protected $inlineObjectPropertiesType = InlineObjectProperties::class;
+        protected $inlineObjectPropertiesDataType = '';
+        /**
+         * The ID of this inline object. Can be used to update an object’s properties.
+         *
+         * @var string
+         */
+        public $objectId;
+        /**
+         * The suggested deletion IDs. If empty, then there are no suggested deletions
+         * of this content.
+         *
+         * @var string[]
+         */
+        public $suggestedDeletionIds;
+        protected $suggestedInlineObjectPropertiesChangesType = SuggestedInlineObjectProperties::class;
+        protected $suggestedInlineObjectPropertiesChangesDataType = 'map';
+        /**
+         * The suggested insertion ID. If empty, then this is not a suggested
+         * insertion.
+         *
+         * @var string
+         */
+        public $suggestedInsertionId;
+        /**
+         * The properties of this inline object.
+         *
+         * @param InlineObjectProperties $inlineObjectProperties
+         */
+        public function setInlineObjectProperties(InlineObjectProperties $inlineObjectProperties)
+        {
+        }
+        /**
+         * @return InlineObjectProperties
+         */
+        public function getInlineObjectProperties()
+        {
+        }
+        /**
+         * The ID of this inline object. Can be used to update an object’s properties.
+         *
+         * @param string $objectId
+         */
+        public function setObjectId($objectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectId()
+        {
+        }
+        /**
+         * The suggested deletion IDs. If empty, then there are no suggested deletions
+         * of this content.
+         *
+         * @param string[] $suggestedDeletionIds
+         */
+        public function setSuggestedDeletionIds($suggestedDeletionIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSuggestedDeletionIds()
+        {
+        }
+        /**
+         * The suggested changes to the inline object properties, keyed by suggestion
+         * ID.
+         *
+         * @param SuggestedInlineObjectProperties[] $suggestedInlineObjectPropertiesChanges
+         */
+        public function setSuggestedInlineObjectPropertiesChanges($suggestedInlineObjectPropertiesChanges)
+        {
+        }
+        /**
+         * @return SuggestedInlineObjectProperties[]
+         */
+        public function getSuggestedInlineObjectPropertiesChanges()
+        {
+        }
+        /**
+         * The suggested insertion ID. If empty, then this is not a suggested
+         * insertion.
+         *
+         * @param string $suggestedInsertionId
+         */
+        public function setSuggestedInsertionId($suggestedInsertionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSuggestedInsertionId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InlineObjectProperties
+     * Runtime class alias of \Google\Service\Docs\InlineObject registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInlineObjectProperties()
-    {
-    }
-    /**
-     * The ID of this inline object. Can be used to update an object’s properties.
-     *
-     * @param string $objectId
-     */
-    public function setObjectId($objectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObjectId()
-    {
-    }
-    /**
-     * The suggested deletion IDs. If empty, then there are no suggested deletions
-     * of this content.
-     *
-     * @param string[] $suggestedDeletionIds
-     */
-    public function setSuggestedDeletionIds($suggestedDeletionIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSuggestedDeletionIds()
-    {
-    }
-    /**
-     * The suggested changes to the inline object properties, keyed by suggestion
-     * ID.
-     *
-     * @param SuggestedInlineObjectProperties[] $suggestedInlineObjectPropertiesChanges
-     */
-    public function setSuggestedInlineObjectPropertiesChanges($suggestedInlineObjectPropertiesChanges)
-    {
-    }
-    /**
-     * @return SuggestedInlineObjectProperties[]
-     */
-    public function getSuggestedInlineObjectPropertiesChanges()
-    {
-    }
-    /**
-     * The suggested insertion ID. If empty, then this is not a suggested
-     * insertion.
-     *
-     * @param string $suggestedInsertionId
-     */
-    public function setSuggestedInsertionId($suggestedInsertionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSuggestedInsertionId()
+    class Google_Service_Docs_InlineObject extends \Google\Service\Docs\InlineObject
     {
     }
 }

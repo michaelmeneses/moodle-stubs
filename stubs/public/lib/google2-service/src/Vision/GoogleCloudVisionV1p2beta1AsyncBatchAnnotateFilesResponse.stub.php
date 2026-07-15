@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class GoogleCloudVisionV1p2beta1AsyncBatchAnnotateFilesResponse extends \Google\Collection
-{
-    protected $collection_key = 'responses';
-    protected $responsesType = GoogleCloudVisionV1p2beta1AsyncAnnotateFileResponse::class;
-    protected $responsesDataType = 'array';
-    /**
-     * The list of file annotation responses, one for each request in
-     * AsyncBatchAnnotateFilesRequest.
-     *
-     * @param GoogleCloudVisionV1p2beta1AsyncAnnotateFileResponse[] $responses
-     */
-    public function setResponses($responses)
+namespace Google\Service\Vision {
+    class GoogleCloudVisionV1p2beta1AsyncBatchAnnotateFilesResponse extends \Google\Collection
     {
+        protected $collection_key = 'responses';
+        protected $responsesType = GoogleCloudVisionV1p2beta1AsyncAnnotateFileResponse::class;
+        protected $responsesDataType = 'array';
+        /**
+         * The list of file annotation responses, one for each request in
+         * AsyncBatchAnnotateFilesRequest.
+         *
+         * @param GoogleCloudVisionV1p2beta1AsyncAnnotateFileResponse[] $responses
+         */
+        public function setResponses($responses)
+        {
+        }
+        /**
+         * @return GoogleCloudVisionV1p2beta1AsyncAnnotateFileResponse[]
+         */
+        public function getResponses()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudVisionV1p2beta1AsyncAnnotateFileResponse[]
+     * Runtime class alias of \Google\Service\Vision\GoogleCloudVisionV1p2beta1AsyncBatchAnnotateFilesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResponses()
+    class Google_Service_Vision_GoogleCloudVisionV1p2beta1AsyncBatchAnnotateFilesResponse extends \Google\Service\Vision\GoogleCloudVisionV1p2beta1AsyncBatchAnnotateFilesResponse
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1FeatureViewBigtableMetadata extends \Google\Model
-{
-    /**
-     * Output only. The Bigtable App Profile to use for reading from Bigtable.
-     *
-     * @var string
-     */
-    public $readAppProfile;
-    /**
-     * Output only. The Bigtable App Profile to use for reading from Bigtable.
-     *
-     * @param string $readAppProfile
-     */
-    public function setReadAppProfile($readAppProfile)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1FeatureViewBigtableMetadata extends \Google\Model
     {
+        /**
+         * Output only. The Bigtable App Profile to use for reading from Bigtable.
+         *
+         * @var string
+         */
+        public $readAppProfile;
+        /**
+         * Output only. The Bigtable App Profile to use for reading from Bigtable.
+         *
+         * @param string $readAppProfile
+         */
+        public function setReadAppProfile($readAppProfile)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReadAppProfile()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1FeatureViewBigtableMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReadAppProfile()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1FeatureViewBigtableMetadata extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1FeatureViewBigtableMetadata
     {
     }
 }

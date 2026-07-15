@@ -21,53 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for GoogleAnalyticsAdmin (v1beta).
- *
- * <p>
- * Manage properties in Google Analytics. Warning: Creating multiple Customer
- * Applications, Accounts, or Projects to simulate or act as a single Customer
- * Application, Account, or Project (respectively) or to circumvent Service-
- * specific usage limits or quotas is a direct violation of Google Cloud
- * Platform Terms of Service as well as Google APIs Terms of Service. These
- * actions can result in immediate termination of your GCP project(s) without
- * any warning.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="http://code.google.com/apis/analytics/docs/mgmt/home.html" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class GoogleAnalyticsAdmin extends \Google\Service
-{
-    /** Edit Google Analytics management entities. */
-    const ANALYTICS_EDIT = "https://www.googleapis.com/auth/analytics.edit";
-    /** See and download your Google Analytics data. */
-    const ANALYTICS_READONLY = "https://www.googleapis.com/auth/analytics.readonly";
-    public $accountSummaries;
-    public $accounts;
-    public $properties;
-    public $properties_conversionEvents;
-    public $properties_customDimensions;
-    public $properties_customMetrics;
-    public $properties_dataStreams;
-    public $properties_dataStreams_measurementProtocolSecrets;
-    public $properties_firebaseLinks;
-    public $properties_googleAdsLinks;
-    public $properties_keyEvents;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the GoogleAnalyticsAdmin service.
+     * Service definition for GoogleAnalyticsAdmin (v1beta).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * Manage properties in Google Analytics. Warning: Creating multiple Customer
+     * Applications, Accounts, or Projects to simulate or act as a single Customer
+     * Application, Account, or Project (respectively) or to circumvent Service-
+     * specific usage limits or quotas is a direct violation of Google Cloud
+     * Platform Terms of Service as well as Google APIs Terms of Service. These
+     * actions can result in immediate termination of your GCP project(s) without
+     * any warning.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="http://code.google.com/apis/analytics/docs/mgmt/home.html" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class GoogleAnalyticsAdmin extends \Google\Service
+    {
+        /** Edit Google Analytics management entities. */
+        const ANALYTICS_EDIT = "https://www.googleapis.com/auth/analytics.edit";
+        /** See and download your Google Analytics data. */
+        const ANALYTICS_READONLY = "https://www.googleapis.com/auth/analytics.readonly";
+        public $accountSummaries;
+        public $accounts;
+        public $properties;
+        public $properties_conversionEvents;
+        public $properties_customDimensions;
+        public $properties_customMetrics;
+        public $properties_dataStreams;
+        public $properties_dataStreams_measurementProtocolSecrets;
+        public $properties_firebaseLinks;
+        public $properties_googleAdsLinks;
+        public $properties_keyEvents;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the GoogleAnalyticsAdmin service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_GoogleAnalyticsAdmin extends \Google\Service\GoogleAnalyticsAdmin
     {
     }
 }

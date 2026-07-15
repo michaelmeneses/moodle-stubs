@@ -21,78 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PeopleService;
-
-class Biography extends \Google\Model
-{
-    /**
-     * Unspecified.
-     */
-    public const CONTENT_TYPE_CONTENT_TYPE_UNSPECIFIED = 'CONTENT_TYPE_UNSPECIFIED';
-    /**
-     * Plain text.
-     */
-    public const CONTENT_TYPE_TEXT_PLAIN = 'TEXT_PLAIN';
-    /**
-     * HTML text.
-     */
-    public const CONTENT_TYPE_TEXT_HTML = 'TEXT_HTML';
-    /**
-     * The content type of the biography.
-     *
-     * @var string
-     */
-    public $contentType;
-    protected $metadataType = FieldMetadata::class;
-    protected $metadataDataType = '';
-    /**
-     * The short biography.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * The content type of the biography.
-     *
-     * Accepted values: CONTENT_TYPE_UNSPECIFIED, TEXT_PLAIN, TEXT_HTML
-     *
-     * @param self::CONTENT_TYPE_* $contentType
-     */
-    public function setContentType($contentType)
+namespace Google\Service\PeopleService {
+    class Biography extends \Google\Model
     {
+        /**
+         * Unspecified.
+         */
+        public const CONTENT_TYPE_CONTENT_TYPE_UNSPECIFIED = 'CONTENT_TYPE_UNSPECIFIED';
+        /**
+         * Plain text.
+         */
+        public const CONTENT_TYPE_TEXT_PLAIN = 'TEXT_PLAIN';
+        /**
+         * HTML text.
+         */
+        public const CONTENT_TYPE_TEXT_HTML = 'TEXT_HTML';
+        /**
+         * The content type of the biography.
+         *
+         * @var string
+         */
+        public $contentType;
+        protected $metadataType = FieldMetadata::class;
+        protected $metadataDataType = '';
+        /**
+         * The short biography.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * The content type of the biography.
+         *
+         * Accepted values: CONTENT_TYPE_UNSPECIFIED, TEXT_PLAIN, TEXT_HTML
+         *
+         * @param self::CONTENT_TYPE_* $contentType
+         */
+        public function setContentType($contentType)
+        {
+        }
+        /**
+         * @return self::CONTENT_TYPE_*
+         */
+        public function getContentType()
+        {
+        }
+        /**
+         * Metadata about the biography.
+         *
+         * @param FieldMetadata $metadata
+         */
+        public function setMetadata(FieldMetadata $metadata)
+        {
+        }
+        /**
+         * @return FieldMetadata
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * The short biography.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::CONTENT_TYPE_*
+     * Runtime class alias of \Google\Service\PeopleService\Biography registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContentType()
-    {
-    }
-    /**
-     * Metadata about the biography.
-     *
-     * @param FieldMetadata $metadata
-     */
-    public function setMetadata(FieldMetadata $metadata)
-    {
-    }
-    /**
-     * @return FieldMetadata
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * The short biography.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_PeopleService_Biography extends \Google\Service\PeopleService\Biography
     {
     }
 }

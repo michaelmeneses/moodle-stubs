@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class CustomListTargetingSetting extends \Google\Model
-{
-    /**
-     * Required. Custom id of custom list targeting setting. This id is
-     * custom_list_id.
-     *
-     * @var string
-     */
-    public $customListId;
-    /**
-     * Required. Custom id of custom list targeting setting. This id is
-     * custom_list_id.
-     *
-     * @param string $customListId
-     */
-    public function setCustomListId($customListId)
+namespace Google\Service\DisplayVideo {
+    class CustomListTargetingSetting extends \Google\Model
     {
+        /**
+         * Required. Custom id of custom list targeting setting. This id is
+         * custom_list_id.
+         *
+         * @var string
+         */
+        public $customListId;
+        /**
+         * Required. Custom id of custom list targeting setting. This id is
+         * custom_list_id.
+         *
+         * @param string $customListId
+         */
+        public function setCustomListId($customListId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomListId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\CustomListTargetingSetting registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomListId()
+    class Google_Service_DisplayVideo_CustomListTargetingSetting extends \Google\Service\DisplayVideo\CustomListTargetingSetting
     {
     }
 }

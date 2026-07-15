@@ -21,94 +21,103 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class AttributionSettings extends \Google\Collection
-{
-    public const ATTRIBUTION_MODEL_ATTRIBUTION_MODEL_UNSPECIFIED = 'ATTRIBUTION_MODEL_UNSPECIFIED';
-    /**
-     * Cross-channel Last Click model.
-     */
-    public const ATTRIBUTION_MODEL_CROSS_CHANNEL_LAST_CLICK = 'CROSS_CHANNEL_LAST_CLICK';
-    /**
-     * Ads-preferred Last Click model.
-     */
-    public const ATTRIBUTION_MODEL_ADS_PREFERRED_LAST_CLICK = 'ADS_PREFERRED_LAST_CLICK';
-    /**
-     * Cross-channel Data Driven model.
-     */
-    public const ATTRIBUTION_MODEL_CROSS_CHANNEL_DATA_DRIVEN = 'CROSS_CHANNEL_DATA_DRIVEN';
-    /**
-     * Cross-channel First Click model.
-     */
-    public const ATTRIBUTION_MODEL_CROSS_CHANNEL_FIRST_CLICK = 'CROSS_CHANNEL_FIRST_CLICK';
-    /**
-     * Cross-channel Linear model.
-     */
-    public const ATTRIBUTION_MODEL_CROSS_CHANNEL_LINEAR = 'CROSS_CHANNEL_LINEAR';
-    /**
-     * Cross-channel Position Based model.
-     */
-    public const ATTRIBUTION_MODEL_CROSS_CHANNEL_POSITION_BASED = 'CROSS_CHANNEL_POSITION_BASED';
-    /**
-     * Cross-channel Time Decay model.
-     */
-    public const ATTRIBUTION_MODEL_CROSS_CHANNEL_TIME_DECAY = 'CROSS_CHANNEL_TIME_DECAY';
-    protected $collection_key = 'conversionType';
-    /**
-     * Required. Lookback windows (in days) used for attribution in this source.
-     * Supported values are 7, 30, 40.
-     *
-     * @var int
-     */
-    public $attributionLookbackWindowInDays;
-    /**
-     * @var string
-     */
-    public $attributionModel;
-    protected $conversionTypeType = AttributionSettingsConversionType::class;
-    protected $conversionTypeDataType = 'array';
-    /**
-     * Required. Lookback windows (in days) used for attribution in this source.
-     * Supported values are 7, 30, 40.
-     *
-     * @param int $attributionLookbackWindowInDays
-     */
-    public function setAttributionLookbackWindowInDays($attributionLookbackWindowInDays)
+namespace Google\Service\ShoppingContent {
+    class AttributionSettings extends \Google\Collection
     {
+        public const ATTRIBUTION_MODEL_ATTRIBUTION_MODEL_UNSPECIFIED = 'ATTRIBUTION_MODEL_UNSPECIFIED';
+        /**
+         * Cross-channel Last Click model.
+         */
+        public const ATTRIBUTION_MODEL_CROSS_CHANNEL_LAST_CLICK = 'CROSS_CHANNEL_LAST_CLICK';
+        /**
+         * Ads-preferred Last Click model.
+         */
+        public const ATTRIBUTION_MODEL_ADS_PREFERRED_LAST_CLICK = 'ADS_PREFERRED_LAST_CLICK';
+        /**
+         * Cross-channel Data Driven model.
+         */
+        public const ATTRIBUTION_MODEL_CROSS_CHANNEL_DATA_DRIVEN = 'CROSS_CHANNEL_DATA_DRIVEN';
+        /**
+         * Cross-channel First Click model.
+         */
+        public const ATTRIBUTION_MODEL_CROSS_CHANNEL_FIRST_CLICK = 'CROSS_CHANNEL_FIRST_CLICK';
+        /**
+         * Cross-channel Linear model.
+         */
+        public const ATTRIBUTION_MODEL_CROSS_CHANNEL_LINEAR = 'CROSS_CHANNEL_LINEAR';
+        /**
+         * Cross-channel Position Based model.
+         */
+        public const ATTRIBUTION_MODEL_CROSS_CHANNEL_POSITION_BASED = 'CROSS_CHANNEL_POSITION_BASED';
+        /**
+         * Cross-channel Time Decay model.
+         */
+        public const ATTRIBUTION_MODEL_CROSS_CHANNEL_TIME_DECAY = 'CROSS_CHANNEL_TIME_DECAY';
+        protected $collection_key = 'conversionType';
+        /**
+         * Required. Lookback windows (in days) used for attribution in this source.
+         * Supported values are 7, 30, 40.
+         *
+         * @var int
+         */
+        public $attributionLookbackWindowInDays;
+        /**
+         * @var string
+         */
+        public $attributionModel;
+        protected $conversionTypeType = AttributionSettingsConversionType::class;
+        protected $conversionTypeDataType = 'array';
+        /**
+         * Required. Lookback windows (in days) used for attribution in this source.
+         * Supported values are 7, 30, 40.
+         *
+         * @param int $attributionLookbackWindowInDays
+         */
+        public function setAttributionLookbackWindowInDays($attributionLookbackWindowInDays)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getAttributionLookbackWindowInDays()
+        {
+        }
+        /**
+         * @param self::ATTRIBUTION_MODEL_* $attributionModel
+         */
+        public function setAttributionModel($attributionModel)
+        {
+        }
+        /**
+         * @return self::ATTRIBUTION_MODEL_*
+         */
+        public function getAttributionModel()
+        {
+        }
+        /**
+         * Immutable. Unordered list. List of different conversion types a conversion
+         * event can be classified as. A standard "purchase" type will be
+         * automatically created if this list is empty at creation time.
+         *
+         * @param AttributionSettingsConversionType[] $conversionType
+         */
+        public function setConversionType($conversionType)
+        {
+        }
+        /**
+         * @return AttributionSettingsConversionType[]
+         */
+        public function getConversionType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\ShoppingContent\AttributionSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttributionLookbackWindowInDays()
-    {
-    }
-    /**
-     * @param self::ATTRIBUTION_MODEL_* $attributionModel
-     */
-    public function setAttributionModel($attributionModel)
-    {
-    }
-    /**
-     * @return self::ATTRIBUTION_MODEL_*
-     */
-    public function getAttributionModel()
-    {
-    }
-    /**
-     * Immutable. Unordered list. List of different conversion types a conversion
-     * event can be classified as. A standard "purchase" type will be
-     * automatically created if this list is empty at creation time.
-     *
-     * @param AttributionSettingsConversionType[] $conversionType
-     */
-    public function setConversionType($conversionType)
-    {
-    }
-    /**
-     * @return AttributionSettingsConversionType[]
-     */
-    public function getConversionType()
+    class Google_Service_ShoppingContent_AttributionSettings extends \Google\Service\ShoppingContent\AttributionSettings
     {
     }
 }

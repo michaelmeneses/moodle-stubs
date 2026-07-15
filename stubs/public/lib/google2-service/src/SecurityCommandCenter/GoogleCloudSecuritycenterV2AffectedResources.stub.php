@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GoogleCloudSecuritycenterV2AffectedResources extends \Google\Model
-{
-    /**
-     * The count of resources affected by the finding.
-     *
-     * @var string
-     */
-    public $count;
-    /**
-     * The count of resources affected by the finding.
-     *
-     * @param string $count
-     */
-    public function setCount($count)
+namespace Google\Service\SecurityCommandCenter {
+    class GoogleCloudSecuritycenterV2AffectedResources extends \Google\Model
     {
+        /**
+         * The count of resources affected by the finding.
+         *
+         * @var string
+         */
+        public $count;
+        /**
+         * The count of resources affected by the finding.
+         *
+         * @param string $count
+         */
+        public function setCount($count)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2AffectedResources registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCount()
+    class Google_Service_SecurityCommandCenter_GoogleCloudSecuritycenterV2AffectedResources extends \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2AffectedResources
     {
     }
 }

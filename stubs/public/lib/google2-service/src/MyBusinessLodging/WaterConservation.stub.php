@@ -21,394 +21,403 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessLodging;
-
-class WaterConservation extends \Google\Model
-{
-    /**
-     * Default unspecified exception. Use this only if a more specific exception
-     * does not match.
-     */
-    public const INDEPENDENT_ORGANIZATION_AUDITS_WATER_USE_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
-    /**
-     * Amenity or service is unavailable due to ongoing work orders.
-     */
-    public const INDEPENDENT_ORGANIZATION_AUDITS_WATER_USE_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
-    /**
-     * Amenity or service availability is seasonal.
-     */
-    public const INDEPENDENT_ORGANIZATION_AUDITS_WATER_USE_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
-    /**
-     * Amenity or service availability depends on the day of the week.
-     */
-    public const INDEPENDENT_ORGANIZATION_AUDITS_WATER_USE_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
-    /**
-     * Default unspecified exception. Use this only if a more specific exception
-     * does not match.
-     */
-    public const LINEN_REUSE_PROGRAM_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
-    /**
-     * Amenity or service is unavailable due to ongoing work orders.
-     */
-    public const LINEN_REUSE_PROGRAM_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
-    /**
-     * Amenity or service availability is seasonal.
-     */
-    public const LINEN_REUSE_PROGRAM_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
-    /**
-     * Amenity or service availability depends on the day of the week.
-     */
-    public const LINEN_REUSE_PROGRAM_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
-    /**
-     * Default unspecified exception. Use this only if a more specific exception
-     * does not match.
-     */
-    public const TOWEL_REUSE_PROGRAM_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
-    /**
-     * Amenity or service is unavailable due to ongoing work orders.
-     */
-    public const TOWEL_REUSE_PROGRAM_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
-    /**
-     * Amenity or service availability is seasonal.
-     */
-    public const TOWEL_REUSE_PROGRAM_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
-    /**
-     * Amenity or service availability depends on the day of the week.
-     */
-    public const TOWEL_REUSE_PROGRAM_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
-    /**
-     * Default unspecified exception. Use this only if a more specific exception
-     * does not match.
-     */
-    public const WATER_SAVING_SHOWERS_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
-    /**
-     * Amenity or service is unavailable due to ongoing work orders.
-     */
-    public const WATER_SAVING_SHOWERS_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
-    /**
-     * Amenity or service availability is seasonal.
-     */
-    public const WATER_SAVING_SHOWERS_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
-    /**
-     * Amenity or service availability depends on the day of the week.
-     */
-    public const WATER_SAVING_SHOWERS_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
-    /**
-     * Default unspecified exception. Use this only if a more specific exception
-     * does not match.
-     */
-    public const WATER_SAVING_SINKS_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
-    /**
-     * Amenity or service is unavailable due to ongoing work orders.
-     */
-    public const WATER_SAVING_SINKS_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
-    /**
-     * Amenity or service availability is seasonal.
-     */
-    public const WATER_SAVING_SINKS_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
-    /**
-     * Amenity or service availability depends on the day of the week.
-     */
-    public const WATER_SAVING_SINKS_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
-    /**
-     * Default unspecified exception. Use this only if a more specific exception
-     * does not match.
-     */
-    public const WATER_SAVING_TOILETS_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
-    /**
-     * Amenity or service is unavailable due to ongoing work orders.
-     */
-    public const WATER_SAVING_TOILETS_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
-    /**
-     * Amenity or service availability is seasonal.
-     */
-    public const WATER_SAVING_TOILETS_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
-    /**
-     * Amenity or service availability depends on the day of the week.
-     */
-    public const WATER_SAVING_TOILETS_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
-    /**
-     * Independent organization audits water use. The property conducts a water
-     * conservation audit every 5 years, the results of which are either verified
-     * by a third-party and/or published in external communications. A water
-     * conservation audit is a detailed assessment of the facility, providing
-     * recommendations to existing operations and procedures to improve water
-     * efficiency, available incentives or rebates, and opportunities for
-     * improvements through renovations or upgrades. Examples of organizations who
-     * conduct credible third party audits include: Engie Impact, and local
-     * utility providers (they often provide energy and water audits).
-     *
-     * @var bool
-     */
-    public $independentOrganizationAuditsWaterUse;
-    /**
-     * Independent organization audits water use exception.
-     *
-     * @var string
-     */
-    public $independentOrganizationAuditsWaterUseException;
-    /**
-     * Linen reuse program. The property offers a linen reuse program.
-     *
-     * @var bool
-     */
-    public $linenReuseProgram;
-    /**
-     * Linen reuse program exception.
-     *
-     * @var string
-     */
-    public $linenReuseProgramException;
-    /**
-     * Towel reuse program. The property offers a towel reuse program.
-     *
-     * @var bool
-     */
-    public $towelReuseProgram;
-    /**
-     * Towel reuse program exception.
-     *
-     * @var string
-     */
-    public $towelReuseProgramException;
-    /**
-     * Water saving showers. All of the property's guest rooms have shower heads
-     * that use no more than 2.0 gallons per minute (gpm).
-     *
-     * @var bool
-     */
-    public $waterSavingShowers;
-    /**
-     * Water saving showers exception.
-     *
-     * @var string
-     */
-    public $waterSavingShowersException;
-    /**
-     * Water saving sinks. All of the property's guest rooms have bathroom faucets
-     * that use a maximum of 1.5 gallons per minute (gpm), public restroom faucets
-     * do not exceed 0.5 gpm, and kitchen faucets (excluding faucets used
-     * exclusively for filling operations) do not exceed 2.2 gpm.
-     *
-     * @var bool
-     */
-    public $waterSavingSinks;
-    /**
-     * Water saving sinks exception.
-     *
-     * @var string
-     */
-    public $waterSavingSinksException;
-    /**
-     * Water saving toilets. All of the property's toilets use 1.6 gallons per
-     * flush, or less.
-     *
-     * @var bool
-     */
-    public $waterSavingToilets;
-    /**
-     * Water saving toilets exception.
-     *
-     * @var string
-     */
-    public $waterSavingToiletsException;
-    /**
-     * Independent organization audits water use. The property conducts a water
-     * conservation audit every 5 years, the results of which are either verified
-     * by a third-party and/or published in external communications. A water
-     * conservation audit is a detailed assessment of the facility, providing
-     * recommendations to existing operations and procedures to improve water
-     * efficiency, available incentives or rebates, and opportunities for
-     * improvements through renovations or upgrades. Examples of organizations who
-     * conduct credible third party audits include: Engie Impact, and local
-     * utility providers (they often provide energy and water audits).
-     *
-     * @param bool $independentOrganizationAuditsWaterUse
-     */
-    public function setIndependentOrganizationAuditsWaterUse($independentOrganizationAuditsWaterUse)
+namespace Google\Service\MyBusinessLodging {
+    class WaterConservation extends \Google\Model
     {
+        /**
+         * Default unspecified exception. Use this only if a more specific exception
+         * does not match.
+         */
+        public const INDEPENDENT_ORGANIZATION_AUDITS_WATER_USE_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
+        /**
+         * Amenity or service is unavailable due to ongoing work orders.
+         */
+        public const INDEPENDENT_ORGANIZATION_AUDITS_WATER_USE_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
+        /**
+         * Amenity or service availability is seasonal.
+         */
+        public const INDEPENDENT_ORGANIZATION_AUDITS_WATER_USE_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
+        /**
+         * Amenity or service availability depends on the day of the week.
+         */
+        public const INDEPENDENT_ORGANIZATION_AUDITS_WATER_USE_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
+        /**
+         * Default unspecified exception. Use this only if a more specific exception
+         * does not match.
+         */
+        public const LINEN_REUSE_PROGRAM_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
+        /**
+         * Amenity or service is unavailable due to ongoing work orders.
+         */
+        public const LINEN_REUSE_PROGRAM_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
+        /**
+         * Amenity or service availability is seasonal.
+         */
+        public const LINEN_REUSE_PROGRAM_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
+        /**
+         * Amenity or service availability depends on the day of the week.
+         */
+        public const LINEN_REUSE_PROGRAM_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
+        /**
+         * Default unspecified exception. Use this only if a more specific exception
+         * does not match.
+         */
+        public const TOWEL_REUSE_PROGRAM_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
+        /**
+         * Amenity or service is unavailable due to ongoing work orders.
+         */
+        public const TOWEL_REUSE_PROGRAM_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
+        /**
+         * Amenity or service availability is seasonal.
+         */
+        public const TOWEL_REUSE_PROGRAM_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
+        /**
+         * Amenity or service availability depends on the day of the week.
+         */
+        public const TOWEL_REUSE_PROGRAM_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
+        /**
+         * Default unspecified exception. Use this only if a more specific exception
+         * does not match.
+         */
+        public const WATER_SAVING_SHOWERS_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
+        /**
+         * Amenity or service is unavailable due to ongoing work orders.
+         */
+        public const WATER_SAVING_SHOWERS_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
+        /**
+         * Amenity or service availability is seasonal.
+         */
+        public const WATER_SAVING_SHOWERS_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
+        /**
+         * Amenity or service availability depends on the day of the week.
+         */
+        public const WATER_SAVING_SHOWERS_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
+        /**
+         * Default unspecified exception. Use this only if a more specific exception
+         * does not match.
+         */
+        public const WATER_SAVING_SINKS_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
+        /**
+         * Amenity or service is unavailable due to ongoing work orders.
+         */
+        public const WATER_SAVING_SINKS_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
+        /**
+         * Amenity or service availability is seasonal.
+         */
+        public const WATER_SAVING_SINKS_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
+        /**
+         * Amenity or service availability depends on the day of the week.
+         */
+        public const WATER_SAVING_SINKS_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
+        /**
+         * Default unspecified exception. Use this only if a more specific exception
+         * does not match.
+         */
+        public const WATER_SAVING_TOILETS_EXCEPTION_EXCEPTION_UNSPECIFIED = 'EXCEPTION_UNSPECIFIED';
+        /**
+         * Amenity or service is unavailable due to ongoing work orders.
+         */
+        public const WATER_SAVING_TOILETS_EXCEPTION_UNDER_CONSTRUCTION = 'UNDER_CONSTRUCTION';
+        /**
+         * Amenity or service availability is seasonal.
+         */
+        public const WATER_SAVING_TOILETS_EXCEPTION_DEPENDENT_ON_SEASON = 'DEPENDENT_ON_SEASON';
+        /**
+         * Amenity or service availability depends on the day of the week.
+         */
+        public const WATER_SAVING_TOILETS_EXCEPTION_DEPENDENT_ON_DAY_OF_WEEK = 'DEPENDENT_ON_DAY_OF_WEEK';
+        /**
+         * Independent organization audits water use. The property conducts a water
+         * conservation audit every 5 years, the results of which are either verified
+         * by a third-party and/or published in external communications. A water
+         * conservation audit is a detailed assessment of the facility, providing
+         * recommendations to existing operations and procedures to improve water
+         * efficiency, available incentives or rebates, and opportunities for
+         * improvements through renovations or upgrades. Examples of organizations who
+         * conduct credible third party audits include: Engie Impact, and local
+         * utility providers (they often provide energy and water audits).
+         *
+         * @var bool
+         */
+        public $independentOrganizationAuditsWaterUse;
+        /**
+         * Independent organization audits water use exception.
+         *
+         * @var string
+         */
+        public $independentOrganizationAuditsWaterUseException;
+        /**
+         * Linen reuse program. The property offers a linen reuse program.
+         *
+         * @var bool
+         */
+        public $linenReuseProgram;
+        /**
+         * Linen reuse program exception.
+         *
+         * @var string
+         */
+        public $linenReuseProgramException;
+        /**
+         * Towel reuse program. The property offers a towel reuse program.
+         *
+         * @var bool
+         */
+        public $towelReuseProgram;
+        /**
+         * Towel reuse program exception.
+         *
+         * @var string
+         */
+        public $towelReuseProgramException;
+        /**
+         * Water saving showers. All of the property's guest rooms have shower heads
+         * that use no more than 2.0 gallons per minute (gpm).
+         *
+         * @var bool
+         */
+        public $waterSavingShowers;
+        /**
+         * Water saving showers exception.
+         *
+         * @var string
+         */
+        public $waterSavingShowersException;
+        /**
+         * Water saving sinks. All of the property's guest rooms have bathroom faucets
+         * that use a maximum of 1.5 gallons per minute (gpm), public restroom faucets
+         * do not exceed 0.5 gpm, and kitchen faucets (excluding faucets used
+         * exclusively for filling operations) do not exceed 2.2 gpm.
+         *
+         * @var bool
+         */
+        public $waterSavingSinks;
+        /**
+         * Water saving sinks exception.
+         *
+         * @var string
+         */
+        public $waterSavingSinksException;
+        /**
+         * Water saving toilets. All of the property's toilets use 1.6 gallons per
+         * flush, or less.
+         *
+         * @var bool
+         */
+        public $waterSavingToilets;
+        /**
+         * Water saving toilets exception.
+         *
+         * @var string
+         */
+        public $waterSavingToiletsException;
+        /**
+         * Independent organization audits water use. The property conducts a water
+         * conservation audit every 5 years, the results of which are either verified
+         * by a third-party and/or published in external communications. A water
+         * conservation audit is a detailed assessment of the facility, providing
+         * recommendations to existing operations and procedures to improve water
+         * efficiency, available incentives or rebates, and opportunities for
+         * improvements through renovations or upgrades. Examples of organizations who
+         * conduct credible third party audits include: Engie Impact, and local
+         * utility providers (they often provide energy and water audits).
+         *
+         * @param bool $independentOrganizationAuditsWaterUse
+         */
+        public function setIndependentOrganizationAuditsWaterUse($independentOrganizationAuditsWaterUse)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIndependentOrganizationAuditsWaterUse()
+        {
+        }
+        /**
+         * Independent organization audits water use exception.
+         *
+         * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
+         * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
+         *
+         * @param self::INDEPENDENT_ORGANIZATION_AUDITS_WATER_USE_EXCEPTION_* $independentOrganizationAuditsWaterUseException
+         */
+        public function setIndependentOrganizationAuditsWaterUseException($independentOrganizationAuditsWaterUseException)
+        {
+        }
+        /**
+         * @return self::INDEPENDENT_ORGANIZATION_AUDITS_WATER_USE_EXCEPTION_*
+         */
+        public function getIndependentOrganizationAuditsWaterUseException()
+        {
+        }
+        /**
+         * Linen reuse program. The property offers a linen reuse program.
+         *
+         * @param bool $linenReuseProgram
+         */
+        public function setLinenReuseProgram($linenReuseProgram)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getLinenReuseProgram()
+        {
+        }
+        /**
+         * Linen reuse program exception.
+         *
+         * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
+         * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
+         *
+         * @param self::LINEN_REUSE_PROGRAM_EXCEPTION_* $linenReuseProgramException
+         */
+        public function setLinenReuseProgramException($linenReuseProgramException)
+        {
+        }
+        /**
+         * @return self::LINEN_REUSE_PROGRAM_EXCEPTION_*
+         */
+        public function getLinenReuseProgramException()
+        {
+        }
+        /**
+         * Towel reuse program. The property offers a towel reuse program.
+         *
+         * @param bool $towelReuseProgram
+         */
+        public function setTowelReuseProgram($towelReuseProgram)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getTowelReuseProgram()
+        {
+        }
+        /**
+         * Towel reuse program exception.
+         *
+         * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
+         * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
+         *
+         * @param self::TOWEL_REUSE_PROGRAM_EXCEPTION_* $towelReuseProgramException
+         */
+        public function setTowelReuseProgramException($towelReuseProgramException)
+        {
+        }
+        /**
+         * @return self::TOWEL_REUSE_PROGRAM_EXCEPTION_*
+         */
+        public function getTowelReuseProgramException()
+        {
+        }
+        /**
+         * Water saving showers. All of the property's guest rooms have shower heads
+         * that use no more than 2.0 gallons per minute (gpm).
+         *
+         * @param bool $waterSavingShowers
+         */
+        public function setWaterSavingShowers($waterSavingShowers)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getWaterSavingShowers()
+        {
+        }
+        /**
+         * Water saving showers exception.
+         *
+         * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
+         * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
+         *
+         * @param self::WATER_SAVING_SHOWERS_EXCEPTION_* $waterSavingShowersException
+         */
+        public function setWaterSavingShowersException($waterSavingShowersException)
+        {
+        }
+        /**
+         * @return self::WATER_SAVING_SHOWERS_EXCEPTION_*
+         */
+        public function getWaterSavingShowersException()
+        {
+        }
+        /**
+         * Water saving sinks. All of the property's guest rooms have bathroom faucets
+         * that use a maximum of 1.5 gallons per minute (gpm), public restroom faucets
+         * do not exceed 0.5 gpm, and kitchen faucets (excluding faucets used
+         * exclusively for filling operations) do not exceed 2.2 gpm.
+         *
+         * @param bool $waterSavingSinks
+         */
+        public function setWaterSavingSinks($waterSavingSinks)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getWaterSavingSinks()
+        {
+        }
+        /**
+         * Water saving sinks exception.
+         *
+         * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
+         * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
+         *
+         * @param self::WATER_SAVING_SINKS_EXCEPTION_* $waterSavingSinksException
+         */
+        public function setWaterSavingSinksException($waterSavingSinksException)
+        {
+        }
+        /**
+         * @return self::WATER_SAVING_SINKS_EXCEPTION_*
+         */
+        public function getWaterSavingSinksException()
+        {
+        }
+        /**
+         * Water saving toilets. All of the property's toilets use 1.6 gallons per
+         * flush, or less.
+         *
+         * @param bool $waterSavingToilets
+         */
+        public function setWaterSavingToilets($waterSavingToilets)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getWaterSavingToilets()
+        {
+        }
+        /**
+         * Water saving toilets exception.
+         *
+         * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
+         * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
+         *
+         * @param self::WATER_SAVING_TOILETS_EXCEPTION_* $waterSavingToiletsException
+         */
+        public function setWaterSavingToiletsException($waterSavingToiletsException)
+        {
+        }
+        /**
+         * @return self::WATER_SAVING_TOILETS_EXCEPTION_*
+         */
+        public function getWaterSavingToiletsException()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\MyBusinessLodging\WaterConservation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIndependentOrganizationAuditsWaterUse()
-    {
-    }
-    /**
-     * Independent organization audits water use exception.
-     *
-     * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
-     * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
-     *
-     * @param self::INDEPENDENT_ORGANIZATION_AUDITS_WATER_USE_EXCEPTION_* $independentOrganizationAuditsWaterUseException
-     */
-    public function setIndependentOrganizationAuditsWaterUseException($independentOrganizationAuditsWaterUseException)
-    {
-    }
-    /**
-     * @return self::INDEPENDENT_ORGANIZATION_AUDITS_WATER_USE_EXCEPTION_*
-     */
-    public function getIndependentOrganizationAuditsWaterUseException()
-    {
-    }
-    /**
-     * Linen reuse program. The property offers a linen reuse program.
-     *
-     * @param bool $linenReuseProgram
-     */
-    public function setLinenReuseProgram($linenReuseProgram)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getLinenReuseProgram()
-    {
-    }
-    /**
-     * Linen reuse program exception.
-     *
-     * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
-     * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
-     *
-     * @param self::LINEN_REUSE_PROGRAM_EXCEPTION_* $linenReuseProgramException
-     */
-    public function setLinenReuseProgramException($linenReuseProgramException)
-    {
-    }
-    /**
-     * @return self::LINEN_REUSE_PROGRAM_EXCEPTION_*
-     */
-    public function getLinenReuseProgramException()
-    {
-    }
-    /**
-     * Towel reuse program. The property offers a towel reuse program.
-     *
-     * @param bool $towelReuseProgram
-     */
-    public function setTowelReuseProgram($towelReuseProgram)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getTowelReuseProgram()
-    {
-    }
-    /**
-     * Towel reuse program exception.
-     *
-     * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
-     * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
-     *
-     * @param self::TOWEL_REUSE_PROGRAM_EXCEPTION_* $towelReuseProgramException
-     */
-    public function setTowelReuseProgramException($towelReuseProgramException)
-    {
-    }
-    /**
-     * @return self::TOWEL_REUSE_PROGRAM_EXCEPTION_*
-     */
-    public function getTowelReuseProgramException()
-    {
-    }
-    /**
-     * Water saving showers. All of the property's guest rooms have shower heads
-     * that use no more than 2.0 gallons per minute (gpm).
-     *
-     * @param bool $waterSavingShowers
-     */
-    public function setWaterSavingShowers($waterSavingShowers)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getWaterSavingShowers()
-    {
-    }
-    /**
-     * Water saving showers exception.
-     *
-     * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
-     * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
-     *
-     * @param self::WATER_SAVING_SHOWERS_EXCEPTION_* $waterSavingShowersException
-     */
-    public function setWaterSavingShowersException($waterSavingShowersException)
-    {
-    }
-    /**
-     * @return self::WATER_SAVING_SHOWERS_EXCEPTION_*
-     */
-    public function getWaterSavingShowersException()
-    {
-    }
-    /**
-     * Water saving sinks. All of the property's guest rooms have bathroom faucets
-     * that use a maximum of 1.5 gallons per minute (gpm), public restroom faucets
-     * do not exceed 0.5 gpm, and kitchen faucets (excluding faucets used
-     * exclusively for filling operations) do not exceed 2.2 gpm.
-     *
-     * @param bool $waterSavingSinks
-     */
-    public function setWaterSavingSinks($waterSavingSinks)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getWaterSavingSinks()
-    {
-    }
-    /**
-     * Water saving sinks exception.
-     *
-     * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
-     * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
-     *
-     * @param self::WATER_SAVING_SINKS_EXCEPTION_* $waterSavingSinksException
-     */
-    public function setWaterSavingSinksException($waterSavingSinksException)
-    {
-    }
-    /**
-     * @return self::WATER_SAVING_SINKS_EXCEPTION_*
-     */
-    public function getWaterSavingSinksException()
-    {
-    }
-    /**
-     * Water saving toilets. All of the property's toilets use 1.6 gallons per
-     * flush, or less.
-     *
-     * @param bool $waterSavingToilets
-     */
-    public function setWaterSavingToilets($waterSavingToilets)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getWaterSavingToilets()
-    {
-    }
-    /**
-     * Water saving toilets exception.
-     *
-     * Accepted values: EXCEPTION_UNSPECIFIED, UNDER_CONSTRUCTION,
-     * DEPENDENT_ON_SEASON, DEPENDENT_ON_DAY_OF_WEEK
-     *
-     * @param self::WATER_SAVING_TOILETS_EXCEPTION_* $waterSavingToiletsException
-     */
-    public function setWaterSavingToiletsException($waterSavingToiletsException)
-    {
-    }
-    /**
-     * @return self::WATER_SAVING_TOILETS_EXCEPTION_*
-     */
-    public function getWaterSavingToiletsException()
+    class Google_Service_MyBusinessLodging_WaterConservation extends \Google\Service\MyBusinessLodging\WaterConservation
     {
     }
 }

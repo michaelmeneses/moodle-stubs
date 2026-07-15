@@ -21,85 +21,94 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Blogger;
-
-class PageList extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    /**
-     * Etag of the response.
-     *
-     * @var string
-     */
-    public $etag;
-    protected $itemsType = Page::class;
-    protected $itemsDataType = 'array';
-    /**
-     * The kind of this entity. Always blogger#pageList.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Pagination token to fetch the next page, if one exists.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Etag of the response.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
+namespace Google\Service\Blogger {
+    class PageList extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        /**
+         * Etag of the response.
+         *
+         * @var string
+         */
+        public $etag;
+        protected $itemsType = Page::class;
+        protected $itemsDataType = 'array';
+        /**
+         * The kind of this entity. Always blogger#pageList.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Pagination token to fetch the next page, if one exists.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Etag of the response.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * The list of Pages for a Blog.
+         *
+         * @param Page[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return Page[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * The kind of this entity. Always blogger#pageList.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Pagination token to fetch the next page, if one exists.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Blogger\PageList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
-    {
-    }
-    /**
-     * The list of Pages for a Blog.
-     *
-     * @param Page[] $items
-     */
-    public function setItems($items)
-    {
-    }
-    /**
-     * @return Page[]
-     */
-    public function getItems()
-    {
-    }
-    /**
-     * The kind of this entity. Always blogger#pageList.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Pagination token to fetch the next page, if one exists.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Blogger_PageList extends \Google\Service\Blogger\PageList
     {
     }
 }

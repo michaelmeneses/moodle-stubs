@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1beta2Barcode extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $format;
-    /**
-     * @var string
-     */
-    public $rawValue;
-    /**
-     * @var string
-     */
-    public $valueFormat;
-    /**
-     * @param string
-     */
-    public function setFormat($format)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1beta2Barcode extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $format;
+        /**
+         * @var string
+         */
+        public $rawValue;
+        /**
+         * @var string
+         */
+        public $valueFormat;
+        /**
+         * @param string
+         */
+        public function setFormat($format)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFormat()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRawValue($rawValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRawValue()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setValueFormat($valueFormat)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValueFormat()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1beta2Barcode registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFormat()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRawValue($rawValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRawValue()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setValueFormat($valueFormat)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValueFormat()
+    class Google_Service_Document_GoogleCloudDocumentaiV1beta2Barcode extends \Google\Service\Document\GoogleCloudDocumentaiV1beta2Barcode
     {
     }
 }

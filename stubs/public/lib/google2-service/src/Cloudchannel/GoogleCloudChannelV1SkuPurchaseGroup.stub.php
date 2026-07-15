@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1SkuPurchaseGroup extends \Google\Collection
-{
-    protected $collection_key = 'skus';
-    protected $billingAccountPurchaseInfosType = GoogleCloudChannelV1BillingAccountPurchaseInfo::class;
-    protected $billingAccountPurchaseInfosDataType = 'array';
-    /**
-     * Resource names of the SKUs included in this group. Format:
-     * products/{product_id}/skus/{sku_id}.
-     *
-     * @var string[]
-     */
-    public $skus;
-    /**
-     * List of billing accounts that are eligible to purhcase these SKUs.
-     *
-     * @param GoogleCloudChannelV1BillingAccountPurchaseInfo[] $billingAccountPurchaseInfos
-     */
-    public function setBillingAccountPurchaseInfos($billingAccountPurchaseInfos)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1SkuPurchaseGroup extends \Google\Collection
     {
+        protected $collection_key = 'skus';
+        protected $billingAccountPurchaseInfosType = GoogleCloudChannelV1BillingAccountPurchaseInfo::class;
+        protected $billingAccountPurchaseInfosDataType = 'array';
+        /**
+         * Resource names of the SKUs included in this group. Format:
+         * products/{product_id}/skus/{sku_id}.
+         *
+         * @var string[]
+         */
+        public $skus;
+        /**
+         * List of billing accounts that are eligible to purhcase these SKUs.
+         *
+         * @param GoogleCloudChannelV1BillingAccountPurchaseInfo[] $billingAccountPurchaseInfos
+         */
+        public function setBillingAccountPurchaseInfos($billingAccountPurchaseInfos)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1BillingAccountPurchaseInfo[]
+         */
+        public function getBillingAccountPurchaseInfos()
+        {
+        }
+        /**
+         * Resource names of the SKUs included in this group. Format:
+         * products/{product_id}/skus/{sku_id}.
+         *
+         * @param string[] $skus
+         */
+        public function setSkus($skus)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSkus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudChannelV1BillingAccountPurchaseInfo[]
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1SkuPurchaseGroup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBillingAccountPurchaseInfos()
-    {
-    }
-    /**
-     * Resource names of the SKUs included in this group. Format:
-     * products/{product_id}/skus/{sku_id}.
-     *
-     * @param string[] $skus
-     */
-    public function setSkus($skus)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSkus()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1SkuPurchaseGroup extends \Google\Service\Cloudchannel\GoogleCloudChannelV1SkuPurchaseGroup
     {
     }
 }

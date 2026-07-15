@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1ExportDataRequest extends \Google\Model
-{
-    /**
-     * Required. Annotated dataset resource name. DataItem in Dataset and their
-     * annotations in specified annotated dataset will be exported. It's in format
-     * of projects/{project_id}/datasets/{dataset_id}/annotatedDatasets/
-     * {annotated_dataset_id}
-     *
-     * @var string
-     */
-    public $annotatedDataset;
-    /**
-     * Optional. Filter is not supported at this moment.
-     *
-     * @var string
-     */
-    public $filter;
-    protected $outputConfigType = GoogleCloudDatalabelingV1beta1OutputConfig::class;
-    protected $outputConfigDataType = '';
-    /**
-     * Email of the user who started the export task and should be notified by
-     * email. If empty no notification will be sent.
-     *
-     * @var string
-     */
-    public $userEmailAddress;
-    /**
-     * Required. Annotated dataset resource name. DataItem in Dataset and their
-     * annotations in specified annotated dataset will be exported. It's in format
-     * of projects/{project_id}/datasets/{dataset_id}/annotatedDatasets/
-     * {annotated_dataset_id}
-     *
-     * @param string $annotatedDataset
-     */
-    public function setAnnotatedDataset($annotatedDataset)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1ExportDataRequest extends \Google\Model
     {
+        /**
+         * Required. Annotated dataset resource name. DataItem in Dataset and their
+         * annotations in specified annotated dataset will be exported. It's in format
+         * of projects/{project_id}/datasets/{dataset_id}/annotatedDatasets/
+         * {annotated_dataset_id}
+         *
+         * @var string
+         */
+        public $annotatedDataset;
+        /**
+         * Optional. Filter is not supported at this moment.
+         *
+         * @var string
+         */
+        public $filter;
+        protected $outputConfigType = GoogleCloudDatalabelingV1beta1OutputConfig::class;
+        protected $outputConfigDataType = '';
+        /**
+         * Email of the user who started the export task and should be notified by
+         * email. If empty no notification will be sent.
+         *
+         * @var string
+         */
+        public $userEmailAddress;
+        /**
+         * Required. Annotated dataset resource name. DataItem in Dataset and their
+         * annotations in specified annotated dataset will be exported. It's in format
+         * of projects/{project_id}/datasets/{dataset_id}/annotatedDatasets/
+         * {annotated_dataset_id}
+         *
+         * @param string $annotatedDataset
+         */
+        public function setAnnotatedDataset($annotatedDataset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnnotatedDataset()
+        {
+        }
+        /**
+         * Optional. Filter is not supported at this moment.
+         *
+         * @param string $filter
+         */
+        public function setFilter($filter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilter()
+        {
+        }
+        /**
+         * Required. Specify the output destination.
+         *
+         * @param GoogleCloudDatalabelingV1beta1OutputConfig $outputConfig
+         */
+        public function setOutputConfig(GoogleCloudDatalabelingV1beta1OutputConfig $outputConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1OutputConfig
+         */
+        public function getOutputConfig()
+        {
+        }
+        /**
+         * Email of the user who started the export task and should be notified by
+         * email. If empty no notification will be sent.
+         *
+         * @param string $userEmailAddress
+         */
+        public function setUserEmailAddress($userEmailAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserEmailAddress()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1ExportDataRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotatedDataset()
-    {
-    }
-    /**
-     * Optional. Filter is not supported at this moment.
-     *
-     * @param string $filter
-     */
-    public function setFilter($filter)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFilter()
-    {
-    }
-    /**
-     * Required. Specify the output destination.
-     *
-     * @param GoogleCloudDatalabelingV1beta1OutputConfig $outputConfig
-     */
-    public function setOutputConfig(GoogleCloudDatalabelingV1beta1OutputConfig $outputConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudDatalabelingV1beta1OutputConfig
-     */
-    public function getOutputConfig()
-    {
-    }
-    /**
-     * Email of the user who started the export task and should be notified by
-     * email. If empty no notification will be sent.
-     *
-     * @param string $userEmailAddress
-     */
-    public function setUserEmailAddress($userEmailAddress)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserEmailAddress()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1ExportDataRequest extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1ExportDataRequest
     {
     }
 }

@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaTrainCustomModelRequest extends \Google\Model
-{
-    protected $errorConfigType = GoogleCloudDiscoveryengineV1betaImportErrorConfig::class;
-    protected $errorConfigDataType = '';
-    protected $gcsTrainingInputType = GoogleCloudDiscoveryengineV1betaTrainCustomModelRequestGcsTrainingInput::class;
-    protected $gcsTrainingInputDataType = '';
-    /**
-     * @var string
-     */
-    public $modelType;
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaImportErrorConfig
-     */
-    public function setErrorConfig(GoogleCloudDiscoveryengineV1betaImportErrorConfig $errorConfig)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaTrainCustomModelRequest extends \Google\Model
     {
+        protected $errorConfigType = GoogleCloudDiscoveryengineV1betaImportErrorConfig::class;
+        protected $errorConfigDataType = '';
+        protected $gcsTrainingInputType = GoogleCloudDiscoveryengineV1betaTrainCustomModelRequestGcsTrainingInput::class;
+        protected $gcsTrainingInputDataType = '';
+        /**
+         * @var string
+         */
+        public $modelType;
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaImportErrorConfig
+         */
+        public function setErrorConfig(GoogleCloudDiscoveryengineV1betaImportErrorConfig $errorConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaImportErrorConfig
+         */
+        public function getErrorConfig()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaTrainCustomModelRequestGcsTrainingInput
+         */
+        public function setGcsTrainingInput(GoogleCloudDiscoveryengineV1betaTrainCustomModelRequestGcsTrainingInput $gcsTrainingInput)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaTrainCustomModelRequestGcsTrainingInput
+         */
+        public function getGcsTrainingInput()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setModelType($modelType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getModelType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1betaImportErrorConfig
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaTrainCustomModelRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrorConfig()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaTrainCustomModelRequestGcsTrainingInput
-     */
-    public function setGcsTrainingInput(GoogleCloudDiscoveryengineV1betaTrainCustomModelRequestGcsTrainingInput $gcsTrainingInput)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaTrainCustomModelRequestGcsTrainingInput
-     */
-    public function getGcsTrainingInput()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setModelType($modelType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getModelType()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaTrainCustomModelRequest extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaTrainCustomModelRequest
     {
     }
 }

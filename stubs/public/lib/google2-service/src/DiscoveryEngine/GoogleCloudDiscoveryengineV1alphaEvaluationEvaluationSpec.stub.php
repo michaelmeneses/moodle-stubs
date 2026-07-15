@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaEvaluationEvaluationSpec extends \Google\Model
-{
-    protected $querySetSpecType = GoogleCloudDiscoveryengineV1alphaEvaluationEvaluationSpecQuerySetSpec::class;
-    protected $querySetSpecDataType = '';
-    protected $searchRequestType = GoogleCloudDiscoveryengineV1alphaSearchRequest::class;
-    protected $searchRequestDataType = '';
-    /**
-     * Optional. The specification of the query set.
-     *
-     * @param GoogleCloudDiscoveryengineV1alphaEvaluationEvaluationSpecQuerySetSpec $querySetSpec
-     */
-    public function setQuerySetSpec(GoogleCloudDiscoveryengineV1alphaEvaluationEvaluationSpecQuerySetSpec $querySetSpec)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaEvaluationEvaluationSpec extends \Google\Model
     {
+        protected $querySetSpecType = GoogleCloudDiscoveryengineV1alphaEvaluationEvaluationSpecQuerySetSpec::class;
+        protected $querySetSpecDataType = '';
+        protected $searchRequestType = GoogleCloudDiscoveryengineV1alphaSearchRequest::class;
+        protected $searchRequestDataType = '';
+        /**
+         * Optional. The specification of the query set.
+         *
+         * @param GoogleCloudDiscoveryengineV1alphaEvaluationEvaluationSpecQuerySetSpec $querySetSpec
+         */
+        public function setQuerySetSpec(GoogleCloudDiscoveryengineV1alphaEvaluationEvaluationSpecQuerySetSpec $querySetSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1alphaEvaluationEvaluationSpecQuerySetSpec
+         */
+        public function getQuerySetSpec()
+        {
+        }
+        /**
+         * Required. The search request that is used to perform the evaluation. Only
+         * the following fields within SearchRequest are supported; if any other
+         * fields are provided, an UNSUPPORTED error will be returned: *
+         * SearchRequest.serving_config * SearchRequest.branch *
+         * SearchRequest.canonical_filter * SearchRequest.query_expansion_spec *
+         * SearchRequest.spell_correction_spec * SearchRequest.content_search_spec *
+         * SearchRequest.user_pseudo_id
+         *
+         * @param GoogleCloudDiscoveryengineV1alphaSearchRequest $searchRequest
+         */
+        public function setSearchRequest(GoogleCloudDiscoveryengineV1alphaSearchRequest $searchRequest)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1alphaSearchRequest
+         */
+        public function getSearchRequest()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1alphaEvaluationEvaluationSpecQuerySetSpec
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaEvaluationEvaluationSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getQuerySetSpec()
-    {
-    }
-    /**
-     * Required. The search request that is used to perform the evaluation. Only
-     * the following fields within SearchRequest are supported; if any other
-     * fields are provided, an UNSUPPORTED error will be returned: *
-     * SearchRequest.serving_config * SearchRequest.branch *
-     * SearchRequest.canonical_filter * SearchRequest.query_expansion_spec *
-     * SearchRequest.spell_correction_spec * SearchRequest.content_search_spec *
-     * SearchRequest.user_pseudo_id
-     *
-     * @param GoogleCloudDiscoveryengineV1alphaSearchRequest $searchRequest
-     */
-    public function setSearchRequest(GoogleCloudDiscoveryengineV1alphaSearchRequest $searchRequest)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1alphaSearchRequest
-     */
-    public function getSearchRequest()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaEvaluationEvaluationSpec extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaEvaluationEvaluationSpec
     {
     }
 }

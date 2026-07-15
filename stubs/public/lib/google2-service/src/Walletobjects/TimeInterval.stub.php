@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class TimeInterval extends \Google\Model
-{
-    protected $endType = DateTime::class;
-    protected $endDataType = '';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * `"walletobjects#timeInterval"`.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $kind;
-    protected $startType = DateTime::class;
-    protected $startDataType = '';
-    /**
-     * End time of the interval. Offset is not required. If an offset is provided
-     * and `start` time is set, `start` must also include an offset.
-     *
-     * @param DateTime $end
-     */
-    public function setEnd(DateTime $end)
+namespace Google\Service\Walletobjects {
+    class TimeInterval extends \Google\Model
     {
+        protected $endType = DateTime::class;
+        protected $endDataType = '';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * `"walletobjects#timeInterval"`.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $kind;
+        protected $startType = DateTime::class;
+        protected $startDataType = '';
+        /**
+         * End time of the interval. Offset is not required. If an offset is provided
+         * and `start` time is set, `start` must also include an offset.
+         *
+         * @param DateTime $end
+         */
+        public function setEnd(DateTime $end)
+        {
+        }
+        /**
+         * @return DateTime
+         */
+        public function getEnd()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * `"walletobjects#timeInterval"`.
+         *
+         * @deprecated
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Start time of the interval. Offset is not required. If an offset is
+         * provided and `end` time is set, `end` must also include an offset.
+         *
+         * @param DateTime $start
+         */
+        public function setStart(DateTime $start)
+        {
+        }
+        /**
+         * @return DateTime
+         */
+        public function getStart()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DateTime
+     * Runtime class alias of \Google\Service\Walletobjects\TimeInterval registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnd()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * `"walletobjects#timeInterval"`.
-     *
-     * @deprecated
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Start time of the interval. Offset is not required. If an offset is
-     * provided and `end` time is set, `end` must also include an offset.
-     *
-     * @param DateTime $start
-     */
-    public function setStart(DateTime $start)
-    {
-    }
-    /**
-     * @return DateTime
-     */
-    public function getStart()
+    class Google_Service_Walletobjects_TimeInterval extends \Google\Service\Walletobjects\TimeInterval
     {
     }
 }

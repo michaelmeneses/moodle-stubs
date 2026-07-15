@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager;
-
-class RevertFolderResponse extends \Google\Model
-{
-    protected $folderType = Folder::class;
-    protected $folderDataType = '';
-    /**
-     * Folder as it appears in the latest container version since the last
-     * workspace synchronization operation. If no folder is present, that means
-     * the folder was deleted in the latest container version.
-     *
-     * @param Folder $folder
-     */
-    public function setFolder(Folder $folder)
+namespace Google\Service\TagManager {
+    class RevertFolderResponse extends \Google\Model
     {
+        protected $folderType = Folder::class;
+        protected $folderDataType = '';
+        /**
+         * Folder as it appears in the latest container version since the last
+         * workspace synchronization operation. If no folder is present, that means
+         * the folder was deleted in the latest container version.
+         *
+         * @param Folder $folder
+         */
+        public function setFolder(Folder $folder)
+        {
+        }
+        /**
+         * @return Folder
+         */
+        public function getFolder()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Folder
+     * Runtime class alias of \Google\Service\TagManager\RevertFolderResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFolder()
+    class Google_Service_TagManager_RevertFolderResponse extends \Google\Service\TagManager\RevertFolderResponse
     {
     }
 }

@@ -21,89 +21,98 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1BigtableSource extends \Google\Model
-{
-    protected $bigtableOptionsType = GoogleCloudDiscoveryengineV1BigtableOptions::class;
-    protected $bigtableOptionsDataType = '';
-    /**
-     * Required. The instance ID of the Cloud Bigtable that needs to be imported.
-     *
-     * @var string
-     */
-    public $instanceId;
-    /**
-     * The project ID that contains the Bigtable source. Has a length limit of 128
-     * characters. If not specified, inherits the project ID from the parent
-     * request.
-     *
-     * @var string
-     */
-    public $projectId;
-    /**
-     * Required. The table ID of the Cloud Bigtable that needs to be imported.
-     *
-     * @var string
-     */
-    public $tableId;
-    /**
-     * Required. Bigtable options that contains information needed when parsing
-     * data into typed structures. For example, column type annotations.
-     *
-     * @param GoogleCloudDiscoveryengineV1BigtableOptions $bigtableOptions
-     */
-    public function setBigtableOptions(GoogleCloudDiscoveryengineV1BigtableOptions $bigtableOptions)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1BigtableSource extends \Google\Model
     {
+        protected $bigtableOptionsType = GoogleCloudDiscoveryengineV1BigtableOptions::class;
+        protected $bigtableOptionsDataType = '';
+        /**
+         * Required. The instance ID of the Cloud Bigtable that needs to be imported.
+         *
+         * @var string
+         */
+        public $instanceId;
+        /**
+         * The project ID that contains the Bigtable source. Has a length limit of 128
+         * characters. If not specified, inherits the project ID from the parent
+         * request.
+         *
+         * @var string
+         */
+        public $projectId;
+        /**
+         * Required. The table ID of the Cloud Bigtable that needs to be imported.
+         *
+         * @var string
+         */
+        public $tableId;
+        /**
+         * Required. Bigtable options that contains information needed when parsing
+         * data into typed structures. For example, column type annotations.
+         *
+         * @param GoogleCloudDiscoveryengineV1BigtableOptions $bigtableOptions
+         */
+        public function setBigtableOptions(GoogleCloudDiscoveryengineV1BigtableOptions $bigtableOptions)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1BigtableOptions
+         */
+        public function getBigtableOptions()
+        {
+        }
+        /**
+         * Required. The instance ID of the Cloud Bigtable that needs to be imported.
+         *
+         * @param string $instanceId
+         */
+        public function setInstanceId($instanceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstanceId()
+        {
+        }
+        /**
+         * The project ID that contains the Bigtable source. Has a length limit of 128
+         * characters. If not specified, inherits the project ID from the parent
+         * request.
+         *
+         * @param string $projectId
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
+        /**
+         * Required. The table ID of the Cloud Bigtable that needs to be imported.
+         *
+         * @param string $tableId
+         */
+        public function setTableId($tableId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTableId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1BigtableOptions
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1BigtableSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBigtableOptions()
-    {
-    }
-    /**
-     * Required. The instance ID of the Cloud Bigtable that needs to be imported.
-     *
-     * @param string $instanceId
-     */
-    public function setInstanceId($instanceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInstanceId()
-    {
-    }
-    /**
-     * The project ID that contains the Bigtable source. Has a length limit of 128
-     * characters. If not specified, inherits the project ID from the parent
-     * request.
-     *
-     * @param string $projectId
-     */
-    public function setProjectId($projectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProjectId()
-    {
-    }
-    /**
-     * Required. The table ID of the Cloud Bigtable that needs to be imported.
-     *
-     * @param string $tableId
-     */
-    public function setTableId($tableId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTableId()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1BigtableSource extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1BigtableSource
     {
     }
 }

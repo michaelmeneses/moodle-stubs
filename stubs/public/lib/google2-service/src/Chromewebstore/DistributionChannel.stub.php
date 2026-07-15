@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Chromewebstore;
-
-class DistributionChannel extends \Google\Model
-{
-    /**
-     * The extension version provided in the manifest of the uploaded package.
-     *
-     * @var string
-     */
-    public $crxVersion;
-    /**
-     * The current deploy percentage for the release channel (nonnegative number
-     * between 0 and 100).
-     *
-     * @var int
-     */
-    public $deployPercentage;
-    /**
-     * The extension version provided in the manifest of the uploaded package.
-     *
-     * @param string $crxVersion
-     */
-    public function setCrxVersion($crxVersion)
+namespace Google\Service\Chromewebstore {
+    class DistributionChannel extends \Google\Model
     {
+        /**
+         * The extension version provided in the manifest of the uploaded package.
+         *
+         * @var string
+         */
+        public $crxVersion;
+        /**
+         * The current deploy percentage for the release channel (nonnegative number
+         * between 0 and 100).
+         *
+         * @var int
+         */
+        public $deployPercentage;
+        /**
+         * The extension version provided in the manifest of the uploaded package.
+         *
+         * @param string $crxVersion
+         */
+        public function setCrxVersion($crxVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCrxVersion()
+        {
+        }
+        /**
+         * The current deploy percentage for the release channel (nonnegative number
+         * between 0 and 100).
+         *
+         * @param int $deployPercentage
+         */
+        public function setDeployPercentage($deployPercentage)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getDeployPercentage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Chromewebstore\DistributionChannel registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCrxVersion()
-    {
-    }
-    /**
-     * The current deploy percentage for the release channel (nonnegative number
-     * between 0 and 100).
-     *
-     * @param int $deployPercentage
-     */
-    public function setDeployPercentage($deployPercentage)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getDeployPercentage()
+    class Google_Service_Chromewebstore_DistributionChannel extends \Google\Service\Chromewebstore\DistributionChannel
     {
     }
 }

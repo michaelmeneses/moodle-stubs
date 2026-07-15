@@ -30,6 +30,8 @@
  */
 namespace core\dataformat;
 
+use OpenSpout\Common\Entity\Row;
+use OpenSpout\Writer\Common\Creator\WriterFactory;
 /**
  * Common Spout class for dataformat.
  *

@@ -21,105 +21,114 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class Activity extends \Google\Model
-{
-    protected $contentDetailsType = ActivityContentDetails::class;
-    protected $contentDetailsDataType = '';
-    /**
-     * Etag of this resource
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * The ID that YouTube uses to uniquely identify the activity.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "youtube#activity".
-     *
-     * @var string
-     */
-    public $kind;
-    protected $snippetType = ActivitySnippet::class;
-    protected $snippetDataType = '';
-    /**
-     * The contentDetails object contains information about the content associated
-     * with the activity. For example, if the snippet.type value is videoRated,
-     * then the contentDetails object's content identifies the rated video.
-     *
-     * @param ActivityContentDetails $contentDetails
-     */
-    public function setContentDetails(ActivityContentDetails $contentDetails)
+namespace Google\Service\YouTube {
+    class Activity extends \Google\Model
     {
+        protected $contentDetailsType = ActivityContentDetails::class;
+        protected $contentDetailsDataType = '';
+        /**
+         * Etag of this resource
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * The ID that YouTube uses to uniquely identify the activity.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "youtube#activity".
+         *
+         * @var string
+         */
+        public $kind;
+        protected $snippetType = ActivitySnippet::class;
+        protected $snippetDataType = '';
+        /**
+         * The contentDetails object contains information about the content associated
+         * with the activity. For example, if the snippet.type value is videoRated,
+         * then the contentDetails object's content identifies the rated video.
+         *
+         * @param ActivityContentDetails $contentDetails
+         */
+        public function setContentDetails(ActivityContentDetails $contentDetails)
+        {
+        }
+        /**
+         * @return ActivityContentDetails
+         */
+        public function getContentDetails()
+        {
+        }
+        /**
+         * Etag of this resource
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * The ID that YouTube uses to uniquely identify the activity.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "youtube#activity".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The snippet object contains basic details about the activity, including the
+         * activity's type and group ID.
+         *
+         * @param ActivitySnippet $snippet
+         */
+        public function setSnippet(ActivitySnippet $snippet)
+        {
+        }
+        /**
+         * @return ActivitySnippet
+         */
+        public function getSnippet()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ActivityContentDetails
+     * Runtime class alias of \Google\Service\YouTube\Activity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContentDetails()
-    {
-    }
-    /**
-     * Etag of this resource
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * The ID that YouTube uses to uniquely identify the activity.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "youtube#activity".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The snippet object contains basic details about the activity, including the
-     * activity's type and group ID.
-     *
-     * @param ActivitySnippet $snippet
-     */
-    public function setSnippet(ActivitySnippet $snippet)
-    {
-    }
-    /**
-     * @return ActivitySnippet
-     */
-    public function getSnippet()
+    class Google_Service_YouTube_Activity extends \Google\Service\YouTube\Activity
     {
     }
 }

@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class FacetResult extends \Google\Collection
-{
-    protected $collection_key = 'buckets';
-    protected $bucketsType = FacetBucket::class;
-    protected $bucketsDataType = 'array';
-    /**
-     * Object type for which facet results are returned. Can be empty.
-     *
-     * @var string
-     */
-    public $objectType;
-    /**
-     * The name of the operator chosen for faceting. @see
-     * cloudsearch.SchemaPropertyOptions
-     *
-     * @var string
-     */
-    public $operatorName;
-    /**
-     * Source name for which facet results are returned. Will not be empty.
-     *
-     * @var string
-     */
-    public $sourceName;
-    /**
-     * FacetBuckets for values in response containing at least a single result
-     * with the corresponding filter.
-     *
-     * @param FacetBucket[] $buckets
-     */
-    public function setBuckets($buckets)
+namespace Google\Service\CloudSearch {
+    class FacetResult extends \Google\Collection
     {
+        protected $collection_key = 'buckets';
+        protected $bucketsType = FacetBucket::class;
+        protected $bucketsDataType = 'array';
+        /**
+         * Object type for which facet results are returned. Can be empty.
+         *
+         * @var string
+         */
+        public $objectType;
+        /**
+         * The name of the operator chosen for faceting. @see
+         * cloudsearch.SchemaPropertyOptions
+         *
+         * @var string
+         */
+        public $operatorName;
+        /**
+         * Source name for which facet results are returned. Will not be empty.
+         *
+         * @var string
+         */
+        public $sourceName;
+        /**
+         * FacetBuckets for values in response containing at least a single result
+         * with the corresponding filter.
+         *
+         * @param FacetBucket[] $buckets
+         */
+        public function setBuckets($buckets)
+        {
+        }
+        /**
+         * @return FacetBucket[]
+         */
+        public function getBuckets()
+        {
+        }
+        /**
+         * Object type for which facet results are returned. Can be empty.
+         *
+         * @param string $objectType
+         */
+        public function setObjectType($objectType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectType()
+        {
+        }
+        /**
+         * The name of the operator chosen for faceting. @see
+         * cloudsearch.SchemaPropertyOptions
+         *
+         * @param string $operatorName
+         */
+        public function setOperatorName($operatorName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOperatorName()
+        {
+        }
+        /**
+         * Source name for which facet results are returned. Will not be empty.
+         *
+         * @param string $sourceName
+         */
+        public function setSourceName($sourceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FacetBucket[]
+     * Runtime class alias of \Google\Service\CloudSearch\FacetResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBuckets()
-    {
-    }
-    /**
-     * Object type for which facet results are returned. Can be empty.
-     *
-     * @param string $objectType
-     */
-    public function setObjectType($objectType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObjectType()
-    {
-    }
-    /**
-     * The name of the operator chosen for faceting. @see
-     * cloudsearch.SchemaPropertyOptions
-     *
-     * @param string $operatorName
-     */
-    public function setOperatorName($operatorName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOperatorName()
-    {
-    }
-    /**
-     * Source name for which facet results are returned. Will not be empty.
-     *
-     * @param string $sourceName
-     */
-    public function setSourceName($sourceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourceName()
+    class Google_Service_CloudSearch_FacetResult extends \Google\Service\CloudSearch\FacetResult
     {
     }
 }

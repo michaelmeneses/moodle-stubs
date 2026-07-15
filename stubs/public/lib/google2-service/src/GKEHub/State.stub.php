@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class State extends \Google\Model
-{
-    /**
-     * Unknown or not set.
-     */
-    public const CODE_CODE_UNSPECIFIED = 'CODE_UNSPECIFIED';
-    /**
-     * The MembershipFeature is operating normally.
-     */
-    public const CODE_OK = 'OK';
-    /**
-     * The MembershipFeature has encountered an issue, and is operating in a
-     * degraded state. The MembershipFeature may need intervention to return to
-     * normal operation. See the description and any associated MembershipFeature-
-     * specific details for more information.
-     */
-    public const CODE_WARNING = 'WARNING';
-    /**
-     * The MembershipFeature is not operating or is in a severely degraded state.
-     * The MembershipFeature may need intervention to return to normal operation.
-     * See the description and any associated MembershipFeature-specific details
-     * for more information.
-     */
-    public const CODE_ERROR = 'ERROR';
-    /**
-     * The high-level, machine-readable status of this MembershipFeature.
-     *
-     * @var string
-     */
-    public $code;
-    /**
-     * A human-readable description of the current status.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * The time this status and any related Feature-specific details were updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * The high-level, machine-readable status of this MembershipFeature.
-     *
-     * Accepted values: CODE_UNSPECIFIED, OK, WARNING, ERROR
-     *
-     * @param self::CODE_* $code
-     */
-    public function setCode($code)
+namespace Google\Service\GKEHub {
+    class State extends \Google\Model
     {
+        /**
+         * Unknown or not set.
+         */
+        public const CODE_CODE_UNSPECIFIED = 'CODE_UNSPECIFIED';
+        /**
+         * The MembershipFeature is operating normally.
+         */
+        public const CODE_OK = 'OK';
+        /**
+         * The MembershipFeature has encountered an issue, and is operating in a
+         * degraded state. The MembershipFeature may need intervention to return to
+         * normal operation. See the description and any associated MembershipFeature-
+         * specific details for more information.
+         */
+        public const CODE_WARNING = 'WARNING';
+        /**
+         * The MembershipFeature is not operating or is in a severely degraded state.
+         * The MembershipFeature may need intervention to return to normal operation.
+         * See the description and any associated MembershipFeature-specific details
+         * for more information.
+         */
+        public const CODE_ERROR = 'ERROR';
+        /**
+         * The high-level, machine-readable status of this MembershipFeature.
+         *
+         * @var string
+         */
+        public $code;
+        /**
+         * A human-readable description of the current status.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * The time this status and any related Feature-specific details were updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * The high-level, machine-readable status of this MembershipFeature.
+         *
+         * Accepted values: CODE_UNSPECIFIED, OK, WARNING, ERROR
+         *
+         * @param self::CODE_* $code
+         */
+        public function setCode($code)
+        {
+        }
+        /**
+         * @return self::CODE_*
+         */
+        public function getCode()
+        {
+        }
+        /**
+         * A human-readable description of the current status.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * The time this status and any related Feature-specific details were updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::CODE_*
+     * Runtime class alias of \Google\Service\GKEHub\State registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCode()
-    {
-    }
-    /**
-     * A human-readable description of the current status.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * The time this status and any related Feature-specific details were updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_GKEHub_State extends \Google\Service\GKEHub\State
     {
     }
 }

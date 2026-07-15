@@ -21,100 +21,109 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firebaseappcheck;
-
-class GoogleFirebaseAppcheckV1ExchangeAppAttestAssertionRequest extends \Google\Model
-{
-    /**
-     * Required. The artifact returned by a previous call to
-     * ExchangeAppAttestAttestation.
-     *
-     * @var string
-     */
-    public $artifact;
-    /**
-     * Required. The CBOR-encoded assertion returned by the client-side App Attest
-     * API.
-     *
-     * @var string
-     */
-    public $assertion;
-    /**
-     * Required. A one-time challenge returned by an immediately prior call to
-     * GenerateAppAttestChallenge.
-     *
-     * @var string
-     */
-    public $challenge;
-    /**
-     * Specifies whether this attestation is for use in a *limited use* (`true`)
-     * or *session based* (`false`) context. To enable this attestation to be used
-     * with the *replay protection* feature, set this to `true`. The default value
-     * is `false`.
-     *
-     * @var bool
-     */
-    public $limitedUse;
-    /**
-     * Required. The artifact returned by a previous call to
-     * ExchangeAppAttestAttestation.
-     *
-     * @param string $artifact
-     */
-    public function setArtifact($artifact)
+namespace Google\Service\Firebaseappcheck {
+    class GoogleFirebaseAppcheckV1ExchangeAppAttestAssertionRequest extends \Google\Model
     {
+        /**
+         * Required. The artifact returned by a previous call to
+         * ExchangeAppAttestAttestation.
+         *
+         * @var string
+         */
+        public $artifact;
+        /**
+         * Required. The CBOR-encoded assertion returned by the client-side App Attest
+         * API.
+         *
+         * @var string
+         */
+        public $assertion;
+        /**
+         * Required. A one-time challenge returned by an immediately prior call to
+         * GenerateAppAttestChallenge.
+         *
+         * @var string
+         */
+        public $challenge;
+        /**
+         * Specifies whether this attestation is for use in a *limited use* (`true`)
+         * or *session based* (`false`) context. To enable this attestation to be used
+         * with the *replay protection* feature, set this to `true`. The default value
+         * is `false`.
+         *
+         * @var bool
+         */
+        public $limitedUse;
+        /**
+         * Required. The artifact returned by a previous call to
+         * ExchangeAppAttestAttestation.
+         *
+         * @param string $artifact
+         */
+        public function setArtifact($artifact)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getArtifact()
+        {
+        }
+        /**
+         * Required. The CBOR-encoded assertion returned by the client-side App Attest
+         * API.
+         *
+         * @param string $assertion
+         */
+        public function setAssertion($assertion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAssertion()
+        {
+        }
+        /**
+         * Required. A one-time challenge returned by an immediately prior call to
+         * GenerateAppAttestChallenge.
+         *
+         * @param string $challenge
+         */
+        public function setChallenge($challenge)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChallenge()
+        {
+        }
+        /**
+         * Specifies whether this attestation is for use in a *limited use* (`true`)
+         * or *session based* (`false`) context. To enable this attestation to be used
+         * with the *replay protection* feature, set this to `true`. The default value
+         * is `false`.
+         *
+         * @param bool $limitedUse
+         */
+        public function setLimitedUse($limitedUse)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getLimitedUse()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1ExchangeAppAttestAssertionRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArtifact()
-    {
-    }
-    /**
-     * Required. The CBOR-encoded assertion returned by the client-side App Attest
-     * API.
-     *
-     * @param string $assertion
-     */
-    public function setAssertion($assertion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAssertion()
-    {
-    }
-    /**
-     * Required. A one-time challenge returned by an immediately prior call to
-     * GenerateAppAttestChallenge.
-     *
-     * @param string $challenge
-     */
-    public function setChallenge($challenge)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getChallenge()
-    {
-    }
-    /**
-     * Specifies whether this attestation is for use in a *limited use* (`true`)
-     * or *session based* (`false`) context. To enable this attestation to be used
-     * with the *replay protection* feature, set this to `true`. The default value
-     * is `false`.
-     *
-     * @param bool $limitedUse
-     */
-    public function setLimitedUse($limitedUse)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getLimitedUse()
+    class Google_Service_Firebaseappcheck_GoogleFirebaseAppcheckV1ExchangeAppAttestAssertionRequest extends \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1ExchangeAppAttestAssertionRequest
     {
     }
 }

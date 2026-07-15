@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManagedKafka;
-
-class ListAclsResponse extends \Google\Collection
-{
-    protected $collection_key = 'acls';
-    protected $aclsType = Acl::class;
-    protected $aclsDataType = 'array';
-    /**
-     * A token that can be sent as `page_token` to retrieve the next page of
-     * results. If this field is omitted, there are no more results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of acls in the requested parent. The order of the acls is
-     * unspecified.
-     *
-     * @param Acl[] $acls
-     */
-    public function setAcls($acls)
+namespace Google\Service\ManagedKafka {
+    class ListAclsResponse extends \Google\Collection
     {
+        protected $collection_key = 'acls';
+        protected $aclsType = Acl::class;
+        protected $aclsDataType = 'array';
+        /**
+         * A token that can be sent as `page_token` to retrieve the next page of
+         * results. If this field is omitted, there are no more results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of acls in the requested parent. The order of the acls is
+         * unspecified.
+         *
+         * @param Acl[] $acls
+         */
+        public function setAcls($acls)
+        {
+        }
+        /**
+         * @return Acl[]
+         */
+        public function getAcls()
+        {
+        }
+        /**
+         * A token that can be sent as `page_token` to retrieve the next page of
+         * results. If this field is omitted, there are no more results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Acl[]
+     * Runtime class alias of \Google\Service\ManagedKafka\ListAclsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAcls()
-    {
-    }
-    /**
-     * A token that can be sent as `page_token` to retrieve the next page of
-     * results. If this field is omitted, there are no more results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_ManagedKafka_ListAclsResponse extends \Google\Service\ManagedKafka\ListAclsResponse
     {
     }
 }

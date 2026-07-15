@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Translate;
-
-class ListGlossariesResponse extends \Google\Collection
-{
-    protected $collection_key = 'glossaries';
-    protected $glossariesType = Glossary::class;
-    protected $glossariesDataType = 'array';
-    /**
-     * A token to retrieve a page of results. Pass this value in the
-     * [ListGlossariesRequest.page_token] field in the subsequent call to
-     * `ListGlossaries` method to retrieve the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of glossaries for a project.
-     *
-     * @param Glossary[] $glossaries
-     */
-    public function setGlossaries($glossaries)
+namespace Google\Service\Translate {
+    class ListGlossariesResponse extends \Google\Collection
     {
+        protected $collection_key = 'glossaries';
+        protected $glossariesType = Glossary::class;
+        protected $glossariesDataType = 'array';
+        /**
+         * A token to retrieve a page of results. Pass this value in the
+         * [ListGlossariesRequest.page_token] field in the subsequent call to
+         * `ListGlossaries` method to retrieve the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of glossaries for a project.
+         *
+         * @param Glossary[] $glossaries
+         */
+        public function setGlossaries($glossaries)
+        {
+        }
+        /**
+         * @return Glossary[]
+         */
+        public function getGlossaries()
+        {
+        }
+        /**
+         * A token to retrieve a page of results. Pass this value in the
+         * [ListGlossariesRequest.page_token] field in the subsequent call to
+         * `ListGlossaries` method to retrieve the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Glossary[]
+     * Runtime class alias of \Google\Service\Translate\ListGlossariesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGlossaries()
-    {
-    }
-    /**
-     * A token to retrieve a page of results. Pass this value in the
-     * [ListGlossariesRequest.page_token] field in the subsequent call to
-     * `ListGlossaries` method to retrieve the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Translate_ListGlossariesResponse extends \Google\Service\Translate\ListGlossariesResponse
     {
     }
 }

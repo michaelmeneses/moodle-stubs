@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0ResourcesAccessibleBiddingStrategyTargetCpa extends \Google\Model
-{
-    /**
-     * Output only. Average CPA target. This target should be greater than or
-     * equal to minimum billable unit based on the currency for the account.
-     *
-     * @var string
-     */
-    public $targetCpaMicros;
-    /**
-     * Output only. Average CPA target. This target should be greater than or
-     * equal to minimum billable unit based on the currency for the account.
-     *
-     * @param string $targetCpaMicros
-     */
-    public function setTargetCpaMicros($targetCpaMicros)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0ResourcesAccessibleBiddingStrategyTargetCpa extends \Google\Model
     {
+        /**
+         * Output only. Average CPA target. This target should be greater than or
+         * equal to minimum billable unit based on the currency for the account.
+         *
+         * @var string
+         */
+        public $targetCpaMicros;
+        /**
+         * Output only. Average CPA target. This target should be greater than or
+         * equal to minimum billable unit based on the currency for the account.
+         *
+         * @param string $targetCpaMicros
+         */
+        public function setTargetCpaMicros($targetCpaMicros)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetCpaMicros()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0ResourcesAccessibleBiddingStrategyTargetCpa registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTargetCpaMicros()
+    class Google_Service_SA360_GoogleAdsSearchads360V0ResourcesAccessibleBiddingStrategyTargetCpa extends \Google\Service\SA360\GoogleAdsSearchads360V0ResourcesAccessibleBiddingStrategyTargetCpa
     {
     }
 }

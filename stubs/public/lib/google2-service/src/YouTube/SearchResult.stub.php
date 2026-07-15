@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class SearchResult extends \Google\Model
-{
-    /**
-     * Etag of this resource.
-     *
-     * @var string
-     */
-    public $etag;
-    protected $idType = ResourceId::class;
-    protected $idDataType = '';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "youtube#searchResult".
-     *
-     * @var string
-     */
-    public $kind;
-    protected $snippetType = SearchResultSnippet::class;
-    protected $snippetDataType = '';
-    /**
-     * Etag of this resource.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
+namespace Google\Service\YouTube {
+    class SearchResult extends \Google\Model
     {
+        /**
+         * Etag of this resource.
+         *
+         * @var string
+         */
+        public $etag;
+        protected $idType = ResourceId::class;
+        protected $idDataType = '';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "youtube#searchResult".
+         *
+         * @var string
+         */
+        public $kind;
+        protected $snippetType = SearchResultSnippet::class;
+        protected $snippetDataType = '';
+        /**
+         * Etag of this resource.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * The id object contains information that can be used to uniquely identify
+         * the resource that matches the search request.
+         *
+         * @param ResourceId $id
+         */
+        public function setId(ResourceId $id)
+        {
+        }
+        /**
+         * @return ResourceId
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "youtube#searchResult".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The snippet object contains basic details about a search result, such as
+         * its title or description. For example, if the search result is a video,
+         * then the title will be the video's title and the description will be the
+         * video's description.
+         *
+         * @param SearchResultSnippet $snippet
+         */
+        public function setSnippet(SearchResultSnippet $snippet)
+        {
+        }
+        /**
+         * @return SearchResultSnippet
+         */
+        public function getSnippet()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\SearchResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
-    {
-    }
-    /**
-     * The id object contains information that can be used to uniquely identify
-     * the resource that matches the search request.
-     *
-     * @param ResourceId $id
-     */
-    public function setId(ResourceId $id)
-    {
-    }
-    /**
-     * @return ResourceId
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "youtube#searchResult".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The snippet object contains basic details about a search result, such as
-     * its title or description. For example, if the search result is a video,
-     * then the title will be the video's title and the description will be the
-     * video's description.
-     *
-     * @param SearchResultSnippet $snippet
-     */
-    public function setSnippet(SearchResultSnippet $snippet)
-    {
-    }
-    /**
-     * @return SearchResultSnippet
-     */
-    public function getSnippet()
+    class Google_Service_YouTube_SearchResult extends \Google\Service\YouTube\SearchResult
     {
     }
 }

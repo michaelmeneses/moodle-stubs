@@ -21,310 +21,319 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1AnnotatedDataset extends \Google\Collection
-{
-    public const ANNOTATION_SOURCE_ANNOTATION_SOURCE_UNSPECIFIED = 'ANNOTATION_SOURCE_UNSPECIFIED';
-    /**
-     * Answer is provided by a human contributor.
-     */
-    public const ANNOTATION_SOURCE_OPERATOR = 'OPERATOR';
-    public const ANNOTATION_TYPE_ANNOTATION_TYPE_UNSPECIFIED = 'ANNOTATION_TYPE_UNSPECIFIED';
-    /**
-     * Classification annotations in an image. Allowed for continuous evaluation.
-     */
-    public const ANNOTATION_TYPE_IMAGE_CLASSIFICATION_ANNOTATION = 'IMAGE_CLASSIFICATION_ANNOTATION';
-    /**
-     * Bounding box annotations in an image. A form of image object detection.
-     * Allowed for continuous evaluation.
-     */
-    public const ANNOTATION_TYPE_IMAGE_BOUNDING_BOX_ANNOTATION = 'IMAGE_BOUNDING_BOX_ANNOTATION';
-    /**
-     * Oriented bounding box. The box does not have to be parallel to horizontal
-     * line.
-     */
-    public const ANNOTATION_TYPE_IMAGE_ORIENTED_BOUNDING_BOX_ANNOTATION = 'IMAGE_ORIENTED_BOUNDING_BOX_ANNOTATION';
-    /**
-     * Bounding poly annotations in an image.
-     */
-    public const ANNOTATION_TYPE_IMAGE_BOUNDING_POLY_ANNOTATION = 'IMAGE_BOUNDING_POLY_ANNOTATION';
-    /**
-     * Polyline annotations in an image.
-     */
-    public const ANNOTATION_TYPE_IMAGE_POLYLINE_ANNOTATION = 'IMAGE_POLYLINE_ANNOTATION';
-    /**
-     * Segmentation annotations in an image.
-     */
-    public const ANNOTATION_TYPE_IMAGE_SEGMENTATION_ANNOTATION = 'IMAGE_SEGMENTATION_ANNOTATION';
-    /**
-     * Classification annotations in video shots.
-     */
-    public const ANNOTATION_TYPE_VIDEO_SHOTS_CLASSIFICATION_ANNOTATION = 'VIDEO_SHOTS_CLASSIFICATION_ANNOTATION';
-    /**
-     * Video object tracking annotation.
-     */
-    public const ANNOTATION_TYPE_VIDEO_OBJECT_TRACKING_ANNOTATION = 'VIDEO_OBJECT_TRACKING_ANNOTATION';
-    /**
-     * Video object detection annotation.
-     */
-    public const ANNOTATION_TYPE_VIDEO_OBJECT_DETECTION_ANNOTATION = 'VIDEO_OBJECT_DETECTION_ANNOTATION';
-    /**
-     * Video event annotation.
-     */
-    public const ANNOTATION_TYPE_VIDEO_EVENT_ANNOTATION = 'VIDEO_EVENT_ANNOTATION';
-    /**
-     * Classification for text. Allowed for continuous evaluation.
-     */
-    public const ANNOTATION_TYPE_TEXT_CLASSIFICATION_ANNOTATION = 'TEXT_CLASSIFICATION_ANNOTATION';
-    /**
-     * Entity extraction for text.
-     */
-    public const ANNOTATION_TYPE_TEXT_ENTITY_EXTRACTION_ANNOTATION = 'TEXT_ENTITY_EXTRACTION_ANNOTATION';
-    /**
-     * General classification. Allowed for continuous evaluation.
-     */
-    public const ANNOTATION_TYPE_GENERAL_CLASSIFICATION_ANNOTATION = 'GENERAL_CLASSIFICATION_ANNOTATION';
-    protected $collection_key = 'blockingResources';
-    /**
-     * Output only. Source of the annotation.
-     *
-     * @var string
-     */
-    public $annotationSource;
-    /**
-     * Output only. Type of the annotation. It is specified when starting labeling
-     * task.
-     *
-     * @var string
-     */
-    public $annotationType;
-    /**
-     * Output only. The names of any related resources that are blocking changes
-     * to the annotated dataset.
-     *
-     * @var string[]
-     */
-    public $blockingResources;
-    /**
-     * Output only. Number of examples that have annotation in the annotated
-     * dataset.
-     *
-     * @var string
-     */
-    public $completedExampleCount;
-    /**
-     * Output only. Time the AnnotatedDataset was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Output only. The description of the AnnotatedDataset. It is specified in
-     * HumanAnnotationConfig when user starts a labeling task. Maximum of 10000
-     * characters.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Output only. The display name of the AnnotatedDataset. It is specified in
-     * HumanAnnotationConfig when user starts a labeling task. Maximum of 64
-     * characters.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Output only. Number of examples in the annotated dataset.
-     *
-     * @var string
-     */
-    public $exampleCount;
-    protected $labelStatsType = GoogleCloudDatalabelingV1beta1LabelStats::class;
-    protected $labelStatsDataType = '';
-    protected $metadataType = GoogleCloudDatalabelingV1beta1AnnotatedDatasetMetadata::class;
-    protected $metadataDataType = '';
-    /**
-     * Output only. AnnotatedDataset resource name in format of:
-     * projects/{project_id}/datasets/{dataset_id}/annotatedDatasets/
-     * {annotated_dataset_id}
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. Source of the annotation.
-     *
-     * Accepted values: ANNOTATION_SOURCE_UNSPECIFIED, OPERATOR
-     *
-     * @param self::ANNOTATION_SOURCE_* $annotationSource
-     */
-    public function setAnnotationSource($annotationSource)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1AnnotatedDataset extends \Google\Collection
     {
+        public const ANNOTATION_SOURCE_ANNOTATION_SOURCE_UNSPECIFIED = 'ANNOTATION_SOURCE_UNSPECIFIED';
+        /**
+         * Answer is provided by a human contributor.
+         */
+        public const ANNOTATION_SOURCE_OPERATOR = 'OPERATOR';
+        public const ANNOTATION_TYPE_ANNOTATION_TYPE_UNSPECIFIED = 'ANNOTATION_TYPE_UNSPECIFIED';
+        /**
+         * Classification annotations in an image. Allowed for continuous evaluation.
+         */
+        public const ANNOTATION_TYPE_IMAGE_CLASSIFICATION_ANNOTATION = 'IMAGE_CLASSIFICATION_ANNOTATION';
+        /**
+         * Bounding box annotations in an image. A form of image object detection.
+         * Allowed for continuous evaluation.
+         */
+        public const ANNOTATION_TYPE_IMAGE_BOUNDING_BOX_ANNOTATION = 'IMAGE_BOUNDING_BOX_ANNOTATION';
+        /**
+         * Oriented bounding box. The box does not have to be parallel to horizontal
+         * line.
+         */
+        public const ANNOTATION_TYPE_IMAGE_ORIENTED_BOUNDING_BOX_ANNOTATION = 'IMAGE_ORIENTED_BOUNDING_BOX_ANNOTATION';
+        /**
+         * Bounding poly annotations in an image.
+         */
+        public const ANNOTATION_TYPE_IMAGE_BOUNDING_POLY_ANNOTATION = 'IMAGE_BOUNDING_POLY_ANNOTATION';
+        /**
+         * Polyline annotations in an image.
+         */
+        public const ANNOTATION_TYPE_IMAGE_POLYLINE_ANNOTATION = 'IMAGE_POLYLINE_ANNOTATION';
+        /**
+         * Segmentation annotations in an image.
+         */
+        public const ANNOTATION_TYPE_IMAGE_SEGMENTATION_ANNOTATION = 'IMAGE_SEGMENTATION_ANNOTATION';
+        /**
+         * Classification annotations in video shots.
+         */
+        public const ANNOTATION_TYPE_VIDEO_SHOTS_CLASSIFICATION_ANNOTATION = 'VIDEO_SHOTS_CLASSIFICATION_ANNOTATION';
+        /**
+         * Video object tracking annotation.
+         */
+        public const ANNOTATION_TYPE_VIDEO_OBJECT_TRACKING_ANNOTATION = 'VIDEO_OBJECT_TRACKING_ANNOTATION';
+        /**
+         * Video object detection annotation.
+         */
+        public const ANNOTATION_TYPE_VIDEO_OBJECT_DETECTION_ANNOTATION = 'VIDEO_OBJECT_DETECTION_ANNOTATION';
+        /**
+         * Video event annotation.
+         */
+        public const ANNOTATION_TYPE_VIDEO_EVENT_ANNOTATION = 'VIDEO_EVENT_ANNOTATION';
+        /**
+         * Classification for text. Allowed for continuous evaluation.
+         */
+        public const ANNOTATION_TYPE_TEXT_CLASSIFICATION_ANNOTATION = 'TEXT_CLASSIFICATION_ANNOTATION';
+        /**
+         * Entity extraction for text.
+         */
+        public const ANNOTATION_TYPE_TEXT_ENTITY_EXTRACTION_ANNOTATION = 'TEXT_ENTITY_EXTRACTION_ANNOTATION';
+        /**
+         * General classification. Allowed for continuous evaluation.
+         */
+        public const ANNOTATION_TYPE_GENERAL_CLASSIFICATION_ANNOTATION = 'GENERAL_CLASSIFICATION_ANNOTATION';
+        protected $collection_key = 'blockingResources';
+        /**
+         * Output only. Source of the annotation.
+         *
+         * @var string
+         */
+        public $annotationSource;
+        /**
+         * Output only. Type of the annotation. It is specified when starting labeling
+         * task.
+         *
+         * @var string
+         */
+        public $annotationType;
+        /**
+         * Output only. The names of any related resources that are blocking changes
+         * to the annotated dataset.
+         *
+         * @var string[]
+         */
+        public $blockingResources;
+        /**
+         * Output only. Number of examples that have annotation in the annotated
+         * dataset.
+         *
+         * @var string
+         */
+        public $completedExampleCount;
+        /**
+         * Output only. Time the AnnotatedDataset was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Output only. The description of the AnnotatedDataset. It is specified in
+         * HumanAnnotationConfig when user starts a labeling task. Maximum of 10000
+         * characters.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Output only. The display name of the AnnotatedDataset. It is specified in
+         * HumanAnnotationConfig when user starts a labeling task. Maximum of 64
+         * characters.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Output only. Number of examples in the annotated dataset.
+         *
+         * @var string
+         */
+        public $exampleCount;
+        protected $labelStatsType = GoogleCloudDatalabelingV1beta1LabelStats::class;
+        protected $labelStatsDataType = '';
+        protected $metadataType = GoogleCloudDatalabelingV1beta1AnnotatedDatasetMetadata::class;
+        protected $metadataDataType = '';
+        /**
+         * Output only. AnnotatedDataset resource name in format of:
+         * projects/{project_id}/datasets/{dataset_id}/annotatedDatasets/
+         * {annotated_dataset_id}
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. Source of the annotation.
+         *
+         * Accepted values: ANNOTATION_SOURCE_UNSPECIFIED, OPERATOR
+         *
+         * @param self::ANNOTATION_SOURCE_* $annotationSource
+         */
+        public function setAnnotationSource($annotationSource)
+        {
+        }
+        /**
+         * @return self::ANNOTATION_SOURCE_*
+         */
+        public function getAnnotationSource()
+        {
+        }
+        /**
+         * Output only. Type of the annotation. It is specified when starting labeling
+         * task.
+         *
+         * Accepted values: ANNOTATION_TYPE_UNSPECIFIED,
+         * IMAGE_CLASSIFICATION_ANNOTATION, IMAGE_BOUNDING_BOX_ANNOTATION,
+         * IMAGE_ORIENTED_BOUNDING_BOX_ANNOTATION, IMAGE_BOUNDING_POLY_ANNOTATION,
+         * IMAGE_POLYLINE_ANNOTATION, IMAGE_SEGMENTATION_ANNOTATION,
+         * VIDEO_SHOTS_CLASSIFICATION_ANNOTATION, VIDEO_OBJECT_TRACKING_ANNOTATION,
+         * VIDEO_OBJECT_DETECTION_ANNOTATION, VIDEO_EVENT_ANNOTATION,
+         * TEXT_CLASSIFICATION_ANNOTATION, TEXT_ENTITY_EXTRACTION_ANNOTATION,
+         * GENERAL_CLASSIFICATION_ANNOTATION
+         *
+         * @param self::ANNOTATION_TYPE_* $annotationType
+         */
+        public function setAnnotationType($annotationType)
+        {
+        }
+        /**
+         * @return self::ANNOTATION_TYPE_*
+         */
+        public function getAnnotationType()
+        {
+        }
+        /**
+         * Output only. The names of any related resources that are blocking changes
+         * to the annotated dataset.
+         *
+         * @param string[] $blockingResources
+         */
+        public function setBlockingResources($blockingResources)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getBlockingResources()
+        {
+        }
+        /**
+         * Output only. Number of examples that have annotation in the annotated
+         * dataset.
+         *
+         * @param string $completedExampleCount
+         */
+        public function setCompletedExampleCount($completedExampleCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCompletedExampleCount()
+        {
+        }
+        /**
+         * Output only. Time the AnnotatedDataset was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. The description of the AnnotatedDataset. It is specified in
+         * HumanAnnotationConfig when user starts a labeling task. Maximum of 10000
+         * characters.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Output only. The display name of the AnnotatedDataset. It is specified in
+         * HumanAnnotationConfig when user starts a labeling task. Maximum of 64
+         * characters.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Output only. Number of examples in the annotated dataset.
+         *
+         * @param string $exampleCount
+         */
+        public function setExampleCount($exampleCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExampleCount()
+        {
+        }
+        /**
+         * Output only. Per label statistics.
+         *
+         * @param GoogleCloudDatalabelingV1beta1LabelStats $labelStats
+         */
+        public function setLabelStats(GoogleCloudDatalabelingV1beta1LabelStats $labelStats)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1LabelStats
+         */
+        public function getLabelStats()
+        {
+        }
+        /**
+         * Output only. Additional information about AnnotatedDataset.
+         *
+         * @param GoogleCloudDatalabelingV1beta1AnnotatedDatasetMetadata $metadata
+         */
+        public function setMetadata(GoogleCloudDatalabelingV1beta1AnnotatedDatasetMetadata $metadata)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1AnnotatedDatasetMetadata
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * Output only. AnnotatedDataset resource name in format of:
+         * projects/{project_id}/datasets/{dataset_id}/annotatedDatasets/
+         * {annotated_dataset_id}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::ANNOTATION_SOURCE_*
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1AnnotatedDataset registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotationSource()
-    {
-    }
-    /**
-     * Output only. Type of the annotation. It is specified when starting labeling
-     * task.
-     *
-     * Accepted values: ANNOTATION_TYPE_UNSPECIFIED,
-     * IMAGE_CLASSIFICATION_ANNOTATION, IMAGE_BOUNDING_BOX_ANNOTATION,
-     * IMAGE_ORIENTED_BOUNDING_BOX_ANNOTATION, IMAGE_BOUNDING_POLY_ANNOTATION,
-     * IMAGE_POLYLINE_ANNOTATION, IMAGE_SEGMENTATION_ANNOTATION,
-     * VIDEO_SHOTS_CLASSIFICATION_ANNOTATION, VIDEO_OBJECT_TRACKING_ANNOTATION,
-     * VIDEO_OBJECT_DETECTION_ANNOTATION, VIDEO_EVENT_ANNOTATION,
-     * TEXT_CLASSIFICATION_ANNOTATION, TEXT_ENTITY_EXTRACTION_ANNOTATION,
-     * GENERAL_CLASSIFICATION_ANNOTATION
-     *
-     * @param self::ANNOTATION_TYPE_* $annotationType
-     */
-    public function setAnnotationType($annotationType)
-    {
-    }
-    /**
-     * @return self::ANNOTATION_TYPE_*
-     */
-    public function getAnnotationType()
-    {
-    }
-    /**
-     * Output only. The names of any related resources that are blocking changes
-     * to the annotated dataset.
-     *
-     * @param string[] $blockingResources
-     */
-    public function setBlockingResources($blockingResources)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getBlockingResources()
-    {
-    }
-    /**
-     * Output only. Number of examples that have annotation in the annotated
-     * dataset.
-     *
-     * @param string $completedExampleCount
-     */
-    public function setCompletedExampleCount($completedExampleCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCompletedExampleCount()
-    {
-    }
-    /**
-     * Output only. Time the AnnotatedDataset was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. The description of the AnnotatedDataset. It is specified in
-     * HumanAnnotationConfig when user starts a labeling task. Maximum of 10000
-     * characters.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Output only. The display name of the AnnotatedDataset. It is specified in
-     * HumanAnnotationConfig when user starts a labeling task. Maximum of 64
-     * characters.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Output only. Number of examples in the annotated dataset.
-     *
-     * @param string $exampleCount
-     */
-    public function setExampleCount($exampleCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExampleCount()
-    {
-    }
-    /**
-     * Output only. Per label statistics.
-     *
-     * @param GoogleCloudDatalabelingV1beta1LabelStats $labelStats
-     */
-    public function setLabelStats(GoogleCloudDatalabelingV1beta1LabelStats $labelStats)
-    {
-    }
-    /**
-     * @return GoogleCloudDatalabelingV1beta1LabelStats
-     */
-    public function getLabelStats()
-    {
-    }
-    /**
-     * Output only. Additional information about AnnotatedDataset.
-     *
-     * @param GoogleCloudDatalabelingV1beta1AnnotatedDatasetMetadata $metadata
-     */
-    public function setMetadata(GoogleCloudDatalabelingV1beta1AnnotatedDatasetMetadata $metadata)
-    {
-    }
-    /**
-     * @return GoogleCloudDatalabelingV1beta1AnnotatedDatasetMetadata
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * Output only. AnnotatedDataset resource name in format of:
-     * projects/{project_id}/datasets/{dataset_id}/annotatedDatasets/
-     * {annotated_dataset_id}
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1AnnotatedDataset extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1AnnotatedDataset
     {
     }
 }

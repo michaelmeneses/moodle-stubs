@@ -21,30 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub\Resource;
-
-/**
- * The "styleGuide" collection of methods.
- * Typical usage is:
- *  <code>
- *   $apihubService = new Google\Service\APIhub(...);
- *   $styleGuide = $apihubService->projects_locations_plugins_styleGuide;
- *  </code>
- */
-class ProjectsLocationsPluginsStyleGuide extends \Google\Service\Resource
-{
+namespace Google\Service\APIhub\Resource {
+    use Google\Service\APIhub\GoogleCloudApihubV1StyleGuideContents;
     /**
-     * Get the contents of the style guide. (styleGuide.getContents)
-     *
-     * @param string $name Required. The name of the StyleGuide whose contents need
-     * to be retrieved. There is exactly one style guide resource per project per
-     * location. The expected format is
-     * `projects/{project}/locations/{location}/plugins/{plugin}/styleGuide`.
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudApihubV1StyleGuideContents
-     * @throws \Google\Service\Exception
+     * The "styleGuide" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $apihubService = new Google\Service\APIhub(...);
+     *   $styleGuide = $apihubService->projects_locations_plugins_styleGuide;
+     *  </code>
      */
-    public function getContents($name, $optParams = [])
+    class ProjectsLocationsPluginsStyleGuide extends \Google\Service\Resource
+    {
+        /**
+         * Get the contents of the style guide. (styleGuide.getContents)
+         *
+         * @param string $name Required. The name of the StyleGuide whose contents need
+         * to be retrieved. There is exactly one style guide resource per project per
+         * location. The expected format is
+         * `projects/{project}/locations/{location}/plugins/{plugin}/styleGuide`.
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudApihubV1StyleGuideContents
+         * @throws \Google\Service\Exception
+         */
+        public function getContents($name, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\APIhub\Resource\ProjectsLocationsPluginsStyleGuide registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_APIhub_Resource_ProjectsLocationsPluginsStyleGuide extends \Google\Service\APIhub\Resource\ProjectsLocationsPluginsStyleGuide
     {
     }
 }

@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsReporting;
-
-class Segment extends \Google\Model
-{
-    protected $dynamicSegmentType = DynamicSegment::class;
-    protected $dynamicSegmentDataType = '';
-    /**
-     * @var string
-     */
-    public $segmentId;
-    /**
-     * @param DynamicSegment
-     */
-    public function setDynamicSegment(DynamicSegment $dynamicSegment)
+namespace Google\Service\AnalyticsReporting {
+    class Segment extends \Google\Model
     {
+        protected $dynamicSegmentType = DynamicSegment::class;
+        protected $dynamicSegmentDataType = '';
+        /**
+         * @var string
+         */
+        public $segmentId;
+        /**
+         * @param DynamicSegment
+         */
+        public function setDynamicSegment(DynamicSegment $dynamicSegment)
+        {
+        }
+        /**
+         * @return DynamicSegment
+         */
+        public function getDynamicSegment()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSegmentId($segmentId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSegmentId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DynamicSegment
+     * Runtime class alias of \Google\Service\AnalyticsReporting\Segment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDynamicSegment()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSegmentId($segmentId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSegmentId()
+    class Google_Service_AnalyticsReporting_Segment extends \Google\Service\AnalyticsReporting\Segment
     {
     }
 }

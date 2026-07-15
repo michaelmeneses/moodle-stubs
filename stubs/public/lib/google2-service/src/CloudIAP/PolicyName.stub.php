@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIAP;
-
-class PolicyName extends \Google\Model
-{
-    /**
-     * Identifies an instance of the type. ID format varies by type. The ID format
-     * is defined in the IAM .service file that defines the type, either in
-     * path_mapping or in a comment.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * For Cloud IAM: The location of the Policy. Must be empty or "global" for
-     * Policies owned by global IAM. Must name a region from prodspec/cloud-iam-
-     * cloudspec for Regional IAM Policies, see go/iam-faq#where-is-iam-currently-
-     * deployed. For Local IAM: This field should be set to "local".
-     *
-     * @var string
-     */
-    public $region;
-    /**
-     * Resource type. Types are defined in IAM's .service files. Valid values for
-     * type might be 'storage_buckets', 'compute_instances',
-     * 'resourcemanager_customers', 'billing_accounts', etc.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Identifies an instance of the type. ID format varies by type. The ID format
-     * is defined in the IAM .service file that defines the type, either in
-     * path_mapping or in a comment.
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\CloudIAP {
+    class PolicyName extends \Google\Model
     {
+        /**
+         * Identifies an instance of the type. ID format varies by type. The ID format
+         * is defined in the IAM .service file that defines the type, either in
+         * path_mapping or in a comment.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * For Cloud IAM: The location of the Policy. Must be empty or "global" for
+         * Policies owned by global IAM. Must name a region from prodspec/cloud-iam-
+         * cloudspec for Regional IAM Policies, see go/iam-faq#where-is-iam-currently-
+         * deployed. For Local IAM: This field should be set to "local".
+         *
+         * @var string
+         */
+        public $region;
+        /**
+         * Resource type. Types are defined in IAM's .service files. Valid values for
+         * type might be 'storage_buckets', 'compute_instances',
+         * 'resourcemanager_customers', 'billing_accounts', etc.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Identifies an instance of the type. ID format varies by type. The ID format
+         * is defined in the IAM .service file that defines the type, either in
+         * path_mapping or in a comment.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * For Cloud IAM: The location of the Policy. Must be empty or "global" for
+         * Policies owned by global IAM. Must name a region from prodspec/cloud-iam-
+         * cloudspec for Regional IAM Policies, see go/iam-faq#where-is-iam-currently-
+         * deployed. For Local IAM: This field should be set to "local".
+         *
+         * @param string $region
+         */
+        public function setRegion($region)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegion()
+        {
+        }
+        /**
+         * Resource type. Types are defined in IAM's .service files. Valid values for
+         * type might be 'storage_buckets', 'compute_instances',
+         * 'resourcemanager_customers', 'billing_accounts', etc.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudIAP\PolicyName registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * For Cloud IAM: The location of the Policy. Must be empty or "global" for
-     * Policies owned by global IAM. Must name a region from prodspec/cloud-iam-
-     * cloudspec for Regional IAM Policies, see go/iam-faq#where-is-iam-currently-
-     * deployed. For Local IAM: This field should be set to "local".
-     *
-     * @param string $region
-     */
-    public function setRegion($region)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegion()
-    {
-    }
-    /**
-     * Resource type. Types are defined in IAM's .service files. Valid values for
-     * type might be 'storage_buckets', 'compute_instances',
-     * 'resourcemanager_customers', 'billing_accounts', etc.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_CloudIAP_PolicyName extends \Google\Service\CloudIAP\PolicyName
     {
     }
 }

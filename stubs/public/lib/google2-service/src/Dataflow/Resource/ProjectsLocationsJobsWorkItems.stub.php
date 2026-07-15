@@ -21,49 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow\Resource;
-
-/**
- * The "workItems" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dataflowService = new Google\Service\Dataflow(...);
- *   $workItems = $dataflowService->projects_locations_jobs_workItems;
- *  </code>
- */
-class ProjectsLocationsJobsWorkItems extends \Google\Service\Resource
-{
+namespace Google\Service\Dataflow\Resource {
+    use Google\Service\Dataflow\LeaseWorkItemRequest;
+    use Google\Service\Dataflow\LeaseWorkItemResponse;
+    use Google\Service\Dataflow\ReportWorkItemStatusRequest;
+    use Google\Service\Dataflow\ReportWorkItemStatusResponse;
     /**
-     * Leases a dataflow WorkItem to run. (workItems.lease)
-     *
-     * @param string $projectId Identifies the project this worker belongs to.
-     * @param string $location The [regional endpoint]
-     * (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that
-     * contains the WorkItem's job.
-     * @param string $jobId Identifies the workflow job this worker belongs to.
-     * @param LeaseWorkItemRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return LeaseWorkItemResponse
-     * @throws \Google\Service\Exception
+     * The "workItems" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dataflowService = new Google\Service\Dataflow(...);
+     *   $workItems = $dataflowService->projects_locations_jobs_workItems;
+     *  </code>
      */
-    public function lease($projectId, $location, $jobId, LeaseWorkItemRequest $postBody, $optParams = [])
+    class ProjectsLocationsJobsWorkItems extends \Google\Service\Resource
     {
+        /**
+         * Leases a dataflow WorkItem to run. (workItems.lease)
+         *
+         * @param string $projectId Identifies the project this worker belongs to.
+         * @param string $location The [regional endpoint]
+         * (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that
+         * contains the WorkItem's job.
+         * @param string $jobId Identifies the workflow job this worker belongs to.
+         * @param LeaseWorkItemRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return LeaseWorkItemResponse
+         * @throws \Google\Service\Exception
+         */
+        public function lease($projectId, $location, $jobId, LeaseWorkItemRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Reports the status of dataflow WorkItems leased by a worker.
+         * (workItems.reportStatus)
+         *
+         * @param string $projectId The project which owns the WorkItem's job.
+         * @param string $location The [regional endpoint]
+         * (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that
+         * contains the WorkItem's job.
+         * @param string $jobId The job which the WorkItem is part of.
+         * @param ReportWorkItemStatusRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return ReportWorkItemStatusResponse
+         * @throws \Google\Service\Exception
+         */
+        public function reportStatus($projectId, $location, $jobId, ReportWorkItemStatusRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Reports the status of dataflow WorkItems leased by a worker.
-     * (workItems.reportStatus)
-     *
-     * @param string $projectId The project which owns the WorkItem's job.
-     * @param string $location The [regional endpoint]
-     * (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that
-     * contains the WorkItem's job.
-     * @param string $jobId The job which the WorkItem is part of.
-     * @param ReportWorkItemStatusRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return ReportWorkItemStatusResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Dataflow\Resource\ProjectsLocationsJobsWorkItems registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function reportStatus($projectId, $location, $jobId, ReportWorkItemStatusRequest $postBody, $optParams = [])
+    class Google_Service_Dataflow_Resource_ProjectsLocationsJobsWorkItems extends \Google\Service\Dataflow\Resource\ProjectsLocationsJobsWorkItems
     {
     }
 }

@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class PriceStepUpConsentDetails extends \Google\Model
-{
-    /**
-     * Unspecified consent state.
-     */
-    public const STATE_CONSENT_STATE_UNSPECIFIED = 'CONSENT_STATE_UNSPECIFIED';
-    /**
-     * The user has not yet provided consent.
-     */
-    public const STATE_PENDING = 'PENDING';
-    /**
-     * The user has consented, and the new price is waiting to take effect.
-     */
-    public const STATE_CONFIRMED = 'CONFIRMED';
-    /**
-     * The user has consented, and the new price has taken effect.
-     */
-    public const STATE_COMPLETED = 'COMPLETED';
-    /**
-     * The deadline by which the user must provide consent. If consent is not
-     * provided by this time, the subscription will be canceled.
-     *
-     * @var string
-     */
-    public $consentDeadlineTime;
-    protected $newPriceType = Money::class;
-    protected $newPriceDataType = '';
-    /**
-     * Output only. The state of the price step-up consent.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * The deadline by which the user must provide consent. If consent is not
-     * provided by this time, the subscription will be canceled.
-     *
-     * @param string $consentDeadlineTime
-     */
-    public function setConsentDeadlineTime($consentDeadlineTime)
+namespace Google\Service\AndroidPublisher {
+    class PriceStepUpConsentDetails extends \Google\Model
     {
+        /**
+         * Unspecified consent state.
+         */
+        public const STATE_CONSENT_STATE_UNSPECIFIED = 'CONSENT_STATE_UNSPECIFIED';
+        /**
+         * The user has not yet provided consent.
+         */
+        public const STATE_PENDING = 'PENDING';
+        /**
+         * The user has consented, and the new price is waiting to take effect.
+         */
+        public const STATE_CONFIRMED = 'CONFIRMED';
+        /**
+         * The user has consented, and the new price has taken effect.
+         */
+        public const STATE_COMPLETED = 'COMPLETED';
+        /**
+         * The deadline by which the user must provide consent. If consent is not
+         * provided by this time, the subscription will be canceled.
+         *
+         * @var string
+         */
+        public $consentDeadlineTime;
+        protected $newPriceType = Money::class;
+        protected $newPriceDataType = '';
+        /**
+         * Output only. The state of the price step-up consent.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * The deadline by which the user must provide consent. If consent is not
+         * provided by this time, the subscription will be canceled.
+         *
+         * @param string $consentDeadlineTime
+         */
+        public function setConsentDeadlineTime($consentDeadlineTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConsentDeadlineTime()
+        {
+        }
+        /**
+         * The new price which requires user consent.
+         *
+         * @param Money $newPrice
+         */
+        public function setNewPrice(Money $newPrice)
+        {
+        }
+        /**
+         * @return Money
+         */
+        public function getNewPrice()
+        {
+        }
+        /**
+         * Output only. The state of the price step-up consent.
+         *
+         * Accepted values: CONSENT_STATE_UNSPECIFIED, PENDING, CONFIRMED, COMPLETED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidPublisher\PriceStepUpConsentDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConsentDeadlineTime()
-    {
-    }
-    /**
-     * The new price which requires user consent.
-     *
-     * @param Money $newPrice
-     */
-    public function setNewPrice(Money $newPrice)
-    {
-    }
-    /**
-     * @return Money
-     */
-    public function getNewPrice()
-    {
-    }
-    /**
-     * Output only. The state of the price step-up consent.
-     *
-     * Accepted values: CONSENT_STATE_UNSPECIFIED, PENDING, CONFIRMED, COMPLETED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
+    class Google_Service_AndroidPublisher_PriceStepUpConsentDetails extends \Google\Service\AndroidPublisher\PriceStepUpConsentDetails
     {
     }
 }

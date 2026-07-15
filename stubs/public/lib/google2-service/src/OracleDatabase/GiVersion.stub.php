@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OracleDatabase;
-
-class GiVersion extends \Google\Model
-{
-    /**
-     * Identifier. The name of the Oracle Grid Infrastructure (GI) version
-     * resource with the format:
-     * projects/{project}/locations/{region}/giVersions/{gi_versions}
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optional. version
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * Identifier. The name of the Oracle Grid Infrastructure (GI) version
-     * resource with the format:
-     * projects/{project}/locations/{region}/giVersions/{gi_versions}
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\OracleDatabase {
+    class GiVersion extends \Google\Model
     {
+        /**
+         * Identifier. The name of the Oracle Grid Infrastructure (GI) version
+         * resource with the format:
+         * projects/{project}/locations/{region}/giVersions/{gi_versions}
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optional. version
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * Identifier. The name of the Oracle Grid Infrastructure (GI) version
+         * resource with the format:
+         * projects/{project}/locations/{region}/giVersions/{gi_versions}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. version
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OracleDatabase\GiVersion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. version
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_OracleDatabase_GiVersion extends \Google\Service\OracleDatabase\GiVersion
     {
     }
 }

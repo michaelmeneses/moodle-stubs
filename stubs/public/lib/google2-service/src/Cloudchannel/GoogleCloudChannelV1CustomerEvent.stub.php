@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1CustomerEvent extends \Google\Model
-{
-    /**
-     * Not used.
-     */
-    public const EVENT_TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
-    /**
-     * Primary domain for customer was changed.
-     */
-    public const EVENT_TYPE_PRIMARY_DOMAIN_CHANGED = 'PRIMARY_DOMAIN_CHANGED';
-    /**
-     * Primary domain of the customer has been verified.
-     */
-    public const EVENT_TYPE_PRIMARY_DOMAIN_VERIFIED = 'PRIMARY_DOMAIN_VERIFIED';
-    /**
-     * Resource name of the customer. Format:
-     * accounts/{account_id}/customers/{customer_id}
-     *
-     * @var string
-     */
-    public $customer;
-    /**
-     * Type of event which happened for the customer.
-     *
-     * @var string
-     */
-    public $eventType;
-    /**
-     * Resource name of the customer. Format:
-     * accounts/{account_id}/customers/{customer_id}
-     *
-     * @param string $customer
-     */
-    public function setCustomer($customer)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1CustomerEvent extends \Google\Model
     {
+        /**
+         * Not used.
+         */
+        public const EVENT_TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
+        /**
+         * Primary domain for customer was changed.
+         */
+        public const EVENT_TYPE_PRIMARY_DOMAIN_CHANGED = 'PRIMARY_DOMAIN_CHANGED';
+        /**
+         * Primary domain of the customer has been verified.
+         */
+        public const EVENT_TYPE_PRIMARY_DOMAIN_VERIFIED = 'PRIMARY_DOMAIN_VERIFIED';
+        /**
+         * Resource name of the customer. Format:
+         * accounts/{account_id}/customers/{customer_id}
+         *
+         * @var string
+         */
+        public $customer;
+        /**
+         * Type of event which happened for the customer.
+         *
+         * @var string
+         */
+        public $eventType;
+        /**
+         * Resource name of the customer. Format:
+         * accounts/{account_id}/customers/{customer_id}
+         *
+         * @param string $customer
+         */
+        public function setCustomer($customer)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomer()
+        {
+        }
+        /**
+         * Type of event which happened for the customer.
+         *
+         * Accepted values: TYPE_UNSPECIFIED, PRIMARY_DOMAIN_CHANGED,
+         * PRIMARY_DOMAIN_VERIFIED
+         *
+         * @param self::EVENT_TYPE_* $eventType
+         */
+        public function setEventType($eventType)
+        {
+        }
+        /**
+         * @return self::EVENT_TYPE_*
+         */
+        public function getEventType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1CustomerEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomer()
-    {
-    }
-    /**
-     * Type of event which happened for the customer.
-     *
-     * Accepted values: TYPE_UNSPECIFIED, PRIMARY_DOMAIN_CHANGED,
-     * PRIMARY_DOMAIN_VERIFIED
-     *
-     * @param self::EVENT_TYPE_* $eventType
-     */
-    public function setEventType($eventType)
-    {
-    }
-    /**
-     * @return self::EVENT_TYPE_*
-     */
-    public function getEventType()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1CustomerEvent extends \Google\Service\Cloudchannel\GoogleCloudChannelV1CustomerEvent
     {
     }
 }

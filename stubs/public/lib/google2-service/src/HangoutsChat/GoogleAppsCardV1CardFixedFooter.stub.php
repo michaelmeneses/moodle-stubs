@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class GoogleAppsCardV1CardFixedFooter extends \Google\Model
-{
-    protected $primaryButtonType = GoogleAppsCardV1Button::class;
-    protected $primaryButtonDataType = '';
-    protected $secondaryButtonType = GoogleAppsCardV1Button::class;
-    protected $secondaryButtonDataType = '';
-    /**
-     * The primary button of the fixed footer. The button must be a text button
-     * with text and color set.
-     *
-     * @param GoogleAppsCardV1Button $primaryButton
-     */
-    public function setPrimaryButton(GoogleAppsCardV1Button $primaryButton)
+namespace Google\Service\HangoutsChat {
+    class GoogleAppsCardV1CardFixedFooter extends \Google\Model
     {
+        protected $primaryButtonType = GoogleAppsCardV1Button::class;
+        protected $primaryButtonDataType = '';
+        protected $secondaryButtonType = GoogleAppsCardV1Button::class;
+        protected $secondaryButtonDataType = '';
+        /**
+         * The primary button of the fixed footer. The button must be a text button
+         * with text and color set.
+         *
+         * @param GoogleAppsCardV1Button $primaryButton
+         */
+        public function setPrimaryButton(GoogleAppsCardV1Button $primaryButton)
+        {
+        }
+        /**
+         * @return GoogleAppsCardV1Button
+         */
+        public function getPrimaryButton()
+        {
+        }
+        /**
+         * The secondary button of the fixed footer. The button must be a text button
+         * with text and color set. If `secondaryButton` is set, you must also set
+         * `primaryButton`.
+         *
+         * @param GoogleAppsCardV1Button $secondaryButton
+         */
+        public function setSecondaryButton(GoogleAppsCardV1Button $secondaryButton)
+        {
+        }
+        /**
+         * @return GoogleAppsCardV1Button
+         */
+        public function getSecondaryButton()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAppsCardV1Button
+     * Runtime class alias of \Google\Service\HangoutsChat\GoogleAppsCardV1CardFixedFooter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPrimaryButton()
-    {
-    }
-    /**
-     * The secondary button of the fixed footer. The button must be a text button
-     * with text and color set. If `secondaryButton` is set, you must also set
-     * `primaryButton`.
-     *
-     * @param GoogleAppsCardV1Button $secondaryButton
-     */
-    public function setSecondaryButton(GoogleAppsCardV1Button $secondaryButton)
-    {
-    }
-    /**
-     * @return GoogleAppsCardV1Button
-     */
-    public function getSecondaryButton()
+    class Google_Service_HangoutsChat_GoogleAppsCardV1CardFixedFooter extends \Google\Service\HangoutsChat\GoogleAppsCardV1CardFixedFooter
     {
     }
 }

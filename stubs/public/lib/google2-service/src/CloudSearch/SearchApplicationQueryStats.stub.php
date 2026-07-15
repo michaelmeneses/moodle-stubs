@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class SearchApplicationQueryStats extends \Google\Collection
-{
-    protected $collection_key = 'queryCountByStatus';
-    protected $dateType = Date::class;
-    protected $dateDataType = '';
-    protected $queryCountByStatusType = QueryCountByStatus::class;
-    protected $queryCountByStatusDataType = 'array';
-    /**
-     * The date for which query stats were calculated. Stats calculated on the
-     * next day close to midnight are returned.
-     *
-     * @param Date $date
-     */
-    public function setDate(Date $date)
+namespace Google\Service\CloudSearch {
+    class SearchApplicationQueryStats extends \Google\Collection
     {
+        protected $collection_key = 'queryCountByStatus';
+        protected $dateType = Date::class;
+        protected $dateDataType = '';
+        protected $queryCountByStatusType = QueryCountByStatus::class;
+        protected $queryCountByStatusDataType = 'array';
+        /**
+         * The date for which query stats were calculated. Stats calculated on the
+         * next day close to midnight are returned.
+         *
+         * @param Date $date
+         */
+        public function setDate(Date $date)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getDate()
+        {
+        }
+        /**
+         * @param QueryCountByStatus[] $queryCountByStatus
+         */
+        public function setQueryCountByStatus($queryCountByStatus)
+        {
+        }
+        /**
+         * @return QueryCountByStatus[]
+         */
+        public function getQueryCountByStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Date
+     * Runtime class alias of \Google\Service\CloudSearch\SearchApplicationQueryStats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDate()
-    {
-    }
-    /**
-     * @param QueryCountByStatus[] $queryCountByStatus
-     */
-    public function setQueryCountByStatus($queryCountByStatus)
-    {
-    }
-    /**
-     * @return QueryCountByStatus[]
-     */
-    public function getQueryCountByStatus()
+    class Google_Service_CloudSearch_SearchApplicationQueryStats extends \Google\Service\CloudSearch\SearchApplicationQueryStats
     {
     }
 }

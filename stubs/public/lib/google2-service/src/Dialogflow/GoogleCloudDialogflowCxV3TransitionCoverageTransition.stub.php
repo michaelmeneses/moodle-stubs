@@ -21,114 +21,123 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3TransitionCoverageTransition extends \Google\Model
-{
-    /**
-     * Whether the transition is covered by at least one of the agent's test
-     * cases.
-     *
-     * @var bool
-     */
-    public $covered;
-    protected $eventHandlerType = GoogleCloudDialogflowCxV3EventHandler::class;
-    protected $eventHandlerDataType = '';
-    /**
-     * The index of a transition in the transition list. Starting from 0.
-     *
-     * @var int
-     */
-    public $index;
-    protected $sourceType = GoogleCloudDialogflowCxV3TransitionCoverageTransitionNode::class;
-    protected $sourceDataType = '';
-    protected $targetType = GoogleCloudDialogflowCxV3TransitionCoverageTransitionNode::class;
-    protected $targetDataType = '';
-    protected $transitionRouteType = GoogleCloudDialogflowCxV3TransitionRoute::class;
-    protected $transitionRouteDataType = '';
-    /**
-     * Whether the transition is covered by at least one of the agent's test
-     * cases.
-     *
-     * @param bool $covered
-     */
-    public function setCovered($covered)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3TransitionCoverageTransition extends \Google\Model
     {
+        /**
+         * Whether the transition is covered by at least one of the agent's test
+         * cases.
+         *
+         * @var bool
+         */
+        public $covered;
+        protected $eventHandlerType = GoogleCloudDialogflowCxV3EventHandler::class;
+        protected $eventHandlerDataType = '';
+        /**
+         * The index of a transition in the transition list. Starting from 0.
+         *
+         * @var int
+         */
+        public $index;
+        protected $sourceType = GoogleCloudDialogflowCxV3TransitionCoverageTransitionNode::class;
+        protected $sourceDataType = '';
+        protected $targetType = GoogleCloudDialogflowCxV3TransitionCoverageTransitionNode::class;
+        protected $targetDataType = '';
+        protected $transitionRouteType = GoogleCloudDialogflowCxV3TransitionRoute::class;
+        protected $transitionRouteDataType = '';
+        /**
+         * Whether the transition is covered by at least one of the agent's test
+         * cases.
+         *
+         * @param bool $covered
+         */
+        public function setCovered($covered)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCovered()
+        {
+        }
+        /**
+         * Event handler.
+         *
+         * @param GoogleCloudDialogflowCxV3EventHandler $eventHandler
+         */
+        public function setEventHandler(GoogleCloudDialogflowCxV3EventHandler $eventHandler)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3EventHandler
+         */
+        public function getEventHandler()
+        {
+        }
+        /**
+         * The index of a transition in the transition list. Starting from 0.
+         *
+         * @param int $index
+         */
+        public function setIndex($index)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getIndex()
+        {
+        }
+        /**
+         * The start node of a transition.
+         *
+         * @param GoogleCloudDialogflowCxV3TransitionCoverageTransitionNode $source
+         */
+        public function setSource(GoogleCloudDialogflowCxV3TransitionCoverageTransitionNode $source)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3TransitionCoverageTransitionNode
+         */
+        public function getSource()
+        {
+        }
+        /**
+         * The end node of a transition.
+         *
+         * @param GoogleCloudDialogflowCxV3TransitionCoverageTransitionNode $target
+         */
+        public function setTarget(GoogleCloudDialogflowCxV3TransitionCoverageTransitionNode $target)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3TransitionCoverageTransitionNode
+         */
+        public function getTarget()
+        {
+        }
+        /**
+         * Intent route or condition route.
+         *
+         * @param GoogleCloudDialogflowCxV3TransitionRoute $transitionRoute
+         */
+        public function setTransitionRoute(GoogleCloudDialogflowCxV3TransitionRoute $transitionRoute)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3TransitionRoute
+         */
+        public function getTransitionRoute()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3TransitionCoverageTransition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCovered()
-    {
-    }
-    /**
-     * Event handler.
-     *
-     * @param GoogleCloudDialogflowCxV3EventHandler $eventHandler
-     */
-    public function setEventHandler(GoogleCloudDialogflowCxV3EventHandler $eventHandler)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3EventHandler
-     */
-    public function getEventHandler()
-    {
-    }
-    /**
-     * The index of a transition in the transition list. Starting from 0.
-     *
-     * @param int $index
-     */
-    public function setIndex($index)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getIndex()
-    {
-    }
-    /**
-     * The start node of a transition.
-     *
-     * @param GoogleCloudDialogflowCxV3TransitionCoverageTransitionNode $source
-     */
-    public function setSource(GoogleCloudDialogflowCxV3TransitionCoverageTransitionNode $source)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3TransitionCoverageTransitionNode
-     */
-    public function getSource()
-    {
-    }
-    /**
-     * The end node of a transition.
-     *
-     * @param GoogleCloudDialogflowCxV3TransitionCoverageTransitionNode $target
-     */
-    public function setTarget(GoogleCloudDialogflowCxV3TransitionCoverageTransitionNode $target)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3TransitionCoverageTransitionNode
-     */
-    public function getTarget()
-    {
-    }
-    /**
-     * Intent route or condition route.
-     *
-     * @param GoogleCloudDialogflowCxV3TransitionRoute $transitionRoute
-     */
-    public function setTransitionRoute(GoogleCloudDialogflowCxV3TransitionRoute $transitionRoute)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3TransitionRoute
-     */
-    public function getTransitionRoute()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3TransitionCoverageTransition extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3TransitionCoverageTransition
     {
     }
 }

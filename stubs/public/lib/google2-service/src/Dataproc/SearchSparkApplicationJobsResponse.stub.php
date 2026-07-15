@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class SearchSparkApplicationJobsResponse extends \Google\Collection
-{
-    protected $collection_key = 'sparkApplicationJobs';
-    /**
-     * This token is included in the response if there are more results to fetch.
-     * To fetch additional results, provide this value as the page_token in a
-     * subsequent SearchSparkApplicationJobsRequest.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $sparkApplicationJobsType = JobData::class;
-    protected $sparkApplicationJobsDataType = 'array';
-    /**
-     * This token is included in the response if there are more results to fetch.
-     * To fetch additional results, provide this value as the page_token in a
-     * subsequent SearchSparkApplicationJobsRequest.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Dataproc {
+    class SearchSparkApplicationJobsResponse extends \Google\Collection
     {
+        protected $collection_key = 'sparkApplicationJobs';
+        /**
+         * This token is included in the response if there are more results to fetch.
+         * To fetch additional results, provide this value as the page_token in a
+         * subsequent SearchSparkApplicationJobsRequest.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $sparkApplicationJobsType = JobData::class;
+        protected $sparkApplicationJobsDataType = 'array';
+        /**
+         * This token is included in the response if there are more results to fetch.
+         * To fetch additional results, provide this value as the page_token in a
+         * subsequent SearchSparkApplicationJobsRequest.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Output only. Data corresponding to a spark job.
+         *
+         * @param JobData[] $sparkApplicationJobs
+         */
+        public function setSparkApplicationJobs($sparkApplicationJobs)
+        {
+        }
+        /**
+         * @return JobData[]
+         */
+        public function getSparkApplicationJobs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\SearchSparkApplicationJobsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Output only. Data corresponding to a spark job.
-     *
-     * @param JobData[] $sparkApplicationJobs
-     */
-    public function setSparkApplicationJobs($sparkApplicationJobs)
-    {
-    }
-    /**
-     * @return JobData[]
-     */
-    public function getSparkApplicationJobs()
+    class Google_Service_Dataproc_SearchSparkApplicationJobsResponse extends \Google\Service\Dataproc\SearchSparkApplicationJobsResponse
     {
     }
 }

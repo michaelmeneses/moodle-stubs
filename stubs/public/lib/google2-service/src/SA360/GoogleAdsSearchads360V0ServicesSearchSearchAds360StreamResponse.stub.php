@@ -21,83 +21,92 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0ServicesSearchSearchAds360StreamResponse extends \Google\Collection
-{
-    protected $collection_key = 'results';
-    protected $customColumnHeadersType = GoogleAdsSearchads360V0ServicesCustomColumnHeader::class;
-    protected $customColumnHeadersDataType = 'array';
-    /**
-     * @var string
-     */
-    public $fieldMask;
-    /**
-     * @var string
-     */
-    public $requestId;
-    protected $resultsType = GoogleAdsSearchads360V0ServicesSearchAds360Row::class;
-    protected $resultsDataType = 'array';
-    protected $summaryRowType = GoogleAdsSearchads360V0ServicesSearchAds360Row::class;
-    protected $summaryRowDataType = '';
-    /**
-     * @param GoogleAdsSearchads360V0ServicesCustomColumnHeader[]
-     */
-    public function setCustomColumnHeaders($customColumnHeaders)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0ServicesSearchSearchAds360StreamResponse extends \Google\Collection
     {
+        protected $collection_key = 'results';
+        protected $customColumnHeadersType = GoogleAdsSearchads360V0ServicesCustomColumnHeader::class;
+        protected $customColumnHeadersDataType = 'array';
+        /**
+         * @var string
+         */
+        public $fieldMask;
+        /**
+         * @var string
+         */
+        public $requestId;
+        protected $resultsType = GoogleAdsSearchads360V0ServicesSearchAds360Row::class;
+        protected $resultsDataType = 'array';
+        protected $summaryRowType = GoogleAdsSearchads360V0ServicesSearchAds360Row::class;
+        protected $summaryRowDataType = '';
+        /**
+         * @param GoogleAdsSearchads360V0ServicesCustomColumnHeader[]
+         */
+        public function setCustomColumnHeaders($customColumnHeaders)
+        {
+        }
+        /**
+         * @return GoogleAdsSearchads360V0ServicesCustomColumnHeader[]
+         */
+        public function getCustomColumnHeaders()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setFieldMask($fieldMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFieldMask()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRequestId($requestId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestId()
+        {
+        }
+        /**
+         * @param GoogleAdsSearchads360V0ServicesSearchAds360Row[]
+         */
+        public function setResults($results)
+        {
+        }
+        /**
+         * @return GoogleAdsSearchads360V0ServicesSearchAds360Row[]
+         */
+        public function getResults()
+        {
+        }
+        /**
+         * @param GoogleAdsSearchads360V0ServicesSearchAds360Row
+         */
+        public function setSummaryRow(GoogleAdsSearchads360V0ServicesSearchAds360Row $summaryRow)
+        {
+        }
+        /**
+         * @return GoogleAdsSearchads360V0ServicesSearchAds360Row
+         */
+        public function getSummaryRow()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAdsSearchads360V0ServicesCustomColumnHeader[]
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0ServicesSearchSearchAds360StreamResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomColumnHeaders()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setFieldMask($fieldMask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFieldMask()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRequestId($requestId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestId()
-    {
-    }
-    /**
-     * @param GoogleAdsSearchads360V0ServicesSearchAds360Row[]
-     */
-    public function setResults($results)
-    {
-    }
-    /**
-     * @return GoogleAdsSearchads360V0ServicesSearchAds360Row[]
-     */
-    public function getResults()
-    {
-    }
-    /**
-     * @param GoogleAdsSearchads360V0ServicesSearchAds360Row
-     */
-    public function setSummaryRow(GoogleAdsSearchads360V0ServicesSearchAds360Row $summaryRow)
-    {
-    }
-    /**
-     * @return GoogleAdsSearchads360V0ServicesSearchAds360Row
-     */
-    public function getSummaryRow()
+    class Google_Service_SA360_GoogleAdsSearchads360V0ServicesSearchSearchAds360StreamResponse extends \Google\Service\SA360\GoogleAdsSearchads360V0ServicesSearchSearchAds360StreamResponse
     {
     }
 }

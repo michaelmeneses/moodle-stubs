@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2RelatedResource extends \Google\Model
-{
-    /**
-     * The full resource name of the related resource.
-     *
-     * @var string
-     */
-    public $fullResource;
-    /**
-     * The full resource name of the related resource.
-     *
-     * @param string $fullResource
-     */
-    public function setFullResource($fullResource)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2RelatedResource extends \Google\Model
     {
+        /**
+         * The full resource name of the related resource.
+         *
+         * @var string
+         */
+        public $fullResource;
+        /**
+         * The full resource name of the related resource.
+         *
+         * @param string $fullResource
+         */
+        public function setFullResource($fullResource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFullResource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2RelatedResource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFullResource()
+    class Google_Service_DLP_GooglePrivacyDlpV2RelatedResource extends \Google\Service\DLP\GooglePrivacyDlpV2RelatedResource
     {
     }
 }

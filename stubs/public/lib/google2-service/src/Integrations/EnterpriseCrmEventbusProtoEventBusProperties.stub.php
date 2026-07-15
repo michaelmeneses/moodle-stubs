@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmEventbusProtoEventBusProperties extends \Google\Collection
-{
-    protected $collection_key = 'properties';
-    protected $propertiesType = EnterpriseCrmEventbusProtoPropertyEntry::class;
-    protected $propertiesDataType = 'array';
-    /**
-     * An unordered list of property entries.
-     *
-     * @param EnterpriseCrmEventbusProtoPropertyEntry[] $properties
-     */
-    public function setProperties($properties)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmEventbusProtoEventBusProperties extends \Google\Collection
     {
+        protected $collection_key = 'properties';
+        protected $propertiesType = EnterpriseCrmEventbusProtoPropertyEntry::class;
+        protected $propertiesDataType = 'array';
+        /**
+         * An unordered list of property entries.
+         *
+         * @param EnterpriseCrmEventbusProtoPropertyEntry[] $properties
+         */
+        public function setProperties($properties)
+        {
+        }
+        /**
+         * @return EnterpriseCrmEventbusProtoPropertyEntry[]
+         */
+        public function getProperties()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EnterpriseCrmEventbusProtoPropertyEntry[]
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmEventbusProtoEventBusProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProperties()
+    class Google_Service_Integrations_EnterpriseCrmEventbusProtoEventBusProperties extends \Google\Service\Integrations\EnterpriseCrmEventbusProtoEventBusProperties
     {
     }
 }

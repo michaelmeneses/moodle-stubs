@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1DocumentRevisionHumanReview extends \Google\Model
-{
-    /**
-     * Human review state. e.g. `requested`, `succeeded`, `rejected`.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * A message providing more details about the current state of processing. For
-     * example, the rejection reason when the state is `rejected`.
-     *
-     * @var string
-     */
-    public $stateMessage;
-    /**
-     * Human review state. e.g. `requested`, `succeeded`, `rejected`.
-     *
-     * @param string $state
-     */
-    public function setState($state)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1DocumentRevisionHumanReview extends \Google\Model
     {
+        /**
+         * Human review state. e.g. `requested`, `succeeded`, `rejected`.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * A message providing more details about the current state of processing. For
+         * example, the rejection reason when the state is `rejected`.
+         *
+         * @var string
+         */
+        public $stateMessage;
+        /**
+         * Human review state. e.g. `requested`, `succeeded`, `rejected`.
+         *
+         * @param string $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getState()
+        {
+        }
+        /**
+         * A message providing more details about the current state of processing. For
+         * example, the rejection reason when the state is `rejected`.
+         *
+         * @param string $stateMessage
+         */
+        public function setStateMessage($stateMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStateMessage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1DocumentRevisionHumanReview registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getState()
-    {
-    }
-    /**
-     * A message providing more details about the current state of processing. For
-     * example, the rejection reason when the state is `rejected`.
-     *
-     * @param string $stateMessage
-     */
-    public function setStateMessage($stateMessage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStateMessage()
+    class Google_Service_Document_GoogleCloudDocumentaiV1DocumentRevisionHumanReview extends \Google\Service\Document\GoogleCloudDocumentaiV1DocumentRevisionHumanReview
     {
     }
 }

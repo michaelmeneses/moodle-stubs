@@ -21,105 +21,114 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Blogger;
-
-class CommentList extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    /**
-     * Etag of the response.
-     *
-     * @var string
-     */
-    public $etag;
-    protected $itemsType = Comment::class;
-    protected $itemsDataType = 'array';
-    /**
-     * The kind of this entry. Always blogger#commentList.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Pagination token to fetch the next page, if one exists.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Pagination token to fetch the previous page, if one exists.
-     *
-     * @var string
-     */
-    public $prevPageToken;
-    /**
-     * Etag of the response.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
+namespace Google\Service\Blogger {
+    class CommentList extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        /**
+         * Etag of the response.
+         *
+         * @var string
+         */
+        public $etag;
+        protected $itemsType = Comment::class;
+        protected $itemsDataType = 'array';
+        /**
+         * The kind of this entry. Always blogger#commentList.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Pagination token to fetch the next page, if one exists.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Pagination token to fetch the previous page, if one exists.
+         *
+         * @var string
+         */
+        public $prevPageToken;
+        /**
+         * Etag of the response.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * The List of Comments for a Post.
+         *
+         * @param Comment[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return Comment[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * The kind of this entry. Always blogger#commentList.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Pagination token to fetch the next page, if one exists.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Pagination token to fetch the previous page, if one exists.
+         *
+         * @param string $prevPageToken
+         */
+        public function setPrevPageToken($prevPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrevPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Blogger\CommentList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
-    {
-    }
-    /**
-     * The List of Comments for a Post.
-     *
-     * @param Comment[] $items
-     */
-    public function setItems($items)
-    {
-    }
-    /**
-     * @return Comment[]
-     */
-    public function getItems()
-    {
-    }
-    /**
-     * The kind of this entry. Always blogger#commentList.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Pagination token to fetch the next page, if one exists.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Pagination token to fetch the previous page, if one exists.
-     *
-     * @param string $prevPageToken
-     */
-    public function setPrevPageToken($prevPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrevPageToken()
+    class Google_Service_Blogger_CommentList extends \Google\Service\Blogger\CommentList
     {
     }
 }

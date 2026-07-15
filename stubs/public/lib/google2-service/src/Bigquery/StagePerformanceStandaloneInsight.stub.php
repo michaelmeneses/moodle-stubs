@@ -21,118 +21,127 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class StagePerformanceStandaloneInsight extends \Google\Collection
-{
-    protected $collection_key = 'highCardinalityJoins';
-    protected $biEngineReasonsType = BiEngineReason::class;
-    protected $biEngineReasonsDataType = 'array';
-    protected $highCardinalityJoinsType = HighCardinalityJoin::class;
-    protected $highCardinalityJoinsDataType = 'array';
-    /**
-     * Output only. True if the stage has insufficient shuffle quota.
-     *
-     * @var bool
-     */
-    public $insufficientShuffleQuota;
-    protected $partitionSkewType = PartitionSkew::class;
-    protected $partitionSkewDataType = '';
-    /**
-     * Output only. True if the stage has a slot contention issue.
-     *
-     * @var bool
-     */
-    public $slotContention;
-    /**
-     * Output only. The stage id that the insight mapped to.
-     *
-     * @var string
-     */
-    public $stageId;
-    /**
-     * Output only. If present, the stage had the following reasons for being
-     * disqualified from BI Engine execution.
-     *
-     * @param BiEngineReason[] $biEngineReasons
-     */
-    public function setBiEngineReasons($biEngineReasons)
+namespace Google\Service\Bigquery {
+    class StagePerformanceStandaloneInsight extends \Google\Collection
     {
+        protected $collection_key = 'highCardinalityJoins';
+        protected $biEngineReasonsType = BiEngineReason::class;
+        protected $biEngineReasonsDataType = 'array';
+        protected $highCardinalityJoinsType = HighCardinalityJoin::class;
+        protected $highCardinalityJoinsDataType = 'array';
+        /**
+         * Output only. True if the stage has insufficient shuffle quota.
+         *
+         * @var bool
+         */
+        public $insufficientShuffleQuota;
+        protected $partitionSkewType = PartitionSkew::class;
+        protected $partitionSkewDataType = '';
+        /**
+         * Output only. True if the stage has a slot contention issue.
+         *
+         * @var bool
+         */
+        public $slotContention;
+        /**
+         * Output only. The stage id that the insight mapped to.
+         *
+         * @var string
+         */
+        public $stageId;
+        /**
+         * Output only. If present, the stage had the following reasons for being
+         * disqualified from BI Engine execution.
+         *
+         * @param BiEngineReason[] $biEngineReasons
+         */
+        public function setBiEngineReasons($biEngineReasons)
+        {
+        }
+        /**
+         * @return BiEngineReason[]
+         */
+        public function getBiEngineReasons()
+        {
+        }
+        /**
+         * Output only. High cardinality joins in the stage.
+         *
+         * @param HighCardinalityJoin[] $highCardinalityJoins
+         */
+        public function setHighCardinalityJoins($highCardinalityJoins)
+        {
+        }
+        /**
+         * @return HighCardinalityJoin[]
+         */
+        public function getHighCardinalityJoins()
+        {
+        }
+        /**
+         * Output only. True if the stage has insufficient shuffle quota.
+         *
+         * @param bool $insufficientShuffleQuota
+         */
+        public function setInsufficientShuffleQuota($insufficientShuffleQuota)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getInsufficientShuffleQuota()
+        {
+        }
+        /**
+         * Output only. Partition skew in the stage.
+         *
+         * @param PartitionSkew $partitionSkew
+         */
+        public function setPartitionSkew(PartitionSkew $partitionSkew)
+        {
+        }
+        /**
+         * @return PartitionSkew
+         */
+        public function getPartitionSkew()
+        {
+        }
+        /**
+         * Output only. True if the stage has a slot contention issue.
+         *
+         * @param bool $slotContention
+         */
+        public function setSlotContention($slotContention)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSlotContention()
+        {
+        }
+        /**
+         * Output only. The stage id that the insight mapped to.
+         *
+         * @param string $stageId
+         */
+        public function setStageId($stageId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStageId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BiEngineReason[]
+     * Runtime class alias of \Google\Service\Bigquery\StagePerformanceStandaloneInsight registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBiEngineReasons()
-    {
-    }
-    /**
-     * Output only. High cardinality joins in the stage.
-     *
-     * @param HighCardinalityJoin[] $highCardinalityJoins
-     */
-    public function setHighCardinalityJoins($highCardinalityJoins)
-    {
-    }
-    /**
-     * @return HighCardinalityJoin[]
-     */
-    public function getHighCardinalityJoins()
-    {
-    }
-    /**
-     * Output only. True if the stage has insufficient shuffle quota.
-     *
-     * @param bool $insufficientShuffleQuota
-     */
-    public function setInsufficientShuffleQuota($insufficientShuffleQuota)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getInsufficientShuffleQuota()
-    {
-    }
-    /**
-     * Output only. Partition skew in the stage.
-     *
-     * @param PartitionSkew $partitionSkew
-     */
-    public function setPartitionSkew(PartitionSkew $partitionSkew)
-    {
-    }
-    /**
-     * @return PartitionSkew
-     */
-    public function getPartitionSkew()
-    {
-    }
-    /**
-     * Output only. True if the stage has a slot contention issue.
-     *
-     * @param bool $slotContention
-     */
-    public function setSlotContention($slotContention)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSlotContention()
-    {
-    }
-    /**
-     * Output only. The stage id that the insight mapped to.
-     *
-     * @param string $stageId
-     */
-    public function setStageId($stageId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStageId()
+    class Google_Service_Bigquery_StagePerformanceStandaloneInsight extends \Google\Service\Bigquery\StagePerformanceStandaloneInsight
     {
     }
 }

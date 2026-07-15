@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class ContentReportSummary extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $numberReports;
-    /**
-     * @var int
-     */
-    public $numberReportsAllRevisions;
-    /**
-     * @param int
-     */
-    public function setNumberReports($numberReports)
+namespace Google\Service\CloudSearch {
+    class ContentReportSummary extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $numberReports;
+        /**
+         * @var int
+         */
+        public $numberReportsAllRevisions;
+        /**
+         * @param int
+         */
+        public function setNumberReports($numberReports)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumberReports()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setNumberReportsAllRevisions($numberReportsAllRevisions)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumberReportsAllRevisions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudSearch\ContentReportSummary registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNumberReports()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setNumberReportsAllRevisions($numberReportsAllRevisions)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNumberReportsAllRevisions()
+    class Google_Service_CloudSearch_ContentReportSummary extends \Google\Service\CloudSearch\ContentReportSummary
     {
     }
 }

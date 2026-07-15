@@ -21,81 +21,90 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1ControlPlaneAccess extends \Google\Collection
-{
-    protected $collection_key = 'synchronizerIdentities';
-    /**
-     * Optional. Array of service accounts authorized to publish analytics data to
-     * the control plane (for the Message Processor component).
-     *
-     * @var string[]
-     */
-    public $analyticsPublisherIdentities;
-    /**
-     * Identifier. The resource name of the ControlPlaneAccess. Format:
-     * "organizations/{org}/controlPlaneAccess"
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optional. Array of service accounts to grant access to control plane
-     * resources (for the Synchronizer component). The service accounts must have
-     * **Apigee Synchronizer Manager** role. See also [Create service
-     * accounts](https://cloud.google.com/apigee/docs/hybrid/latest/sa-
-     * about#create-the-service-accounts).
-     *
-     * @var string[]
-     */
-    public $synchronizerIdentities;
-    /**
-     * Optional. Array of service accounts authorized to publish analytics data to
-     * the control plane (for the Message Processor component).
-     *
-     * @param string[] $analyticsPublisherIdentities
-     */
-    public function setAnalyticsPublisherIdentities($analyticsPublisherIdentities)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1ControlPlaneAccess extends \Google\Collection
     {
+        protected $collection_key = 'synchronizerIdentities';
+        /**
+         * Optional. Array of service accounts authorized to publish analytics data to
+         * the control plane (for the Message Processor component).
+         *
+         * @var string[]
+         */
+        public $analyticsPublisherIdentities;
+        /**
+         * Identifier. The resource name of the ControlPlaneAccess. Format:
+         * "organizations/{org}/controlPlaneAccess"
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optional. Array of service accounts to grant access to control plane
+         * resources (for the Synchronizer component). The service accounts must have
+         * **Apigee Synchronizer Manager** role. See also [Create service
+         * accounts](https://cloud.google.com/apigee/docs/hybrid/latest/sa-
+         * about#create-the-service-accounts).
+         *
+         * @var string[]
+         */
+        public $synchronizerIdentities;
+        /**
+         * Optional. Array of service accounts authorized to publish analytics data to
+         * the control plane (for the Message Processor component).
+         *
+         * @param string[] $analyticsPublisherIdentities
+         */
+        public function setAnalyticsPublisherIdentities($analyticsPublisherIdentities)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAnalyticsPublisherIdentities()
+        {
+        }
+        /**
+         * Identifier. The resource name of the ControlPlaneAccess. Format:
+         * "organizations/{org}/controlPlaneAccess"
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. Array of service accounts to grant access to control plane
+         * resources (for the Synchronizer component). The service accounts must have
+         * **Apigee Synchronizer Manager** role. See also [Create service
+         * accounts](https://cloud.google.com/apigee/docs/hybrid/latest/sa-
+         * about#create-the-service-accounts).
+         *
+         * @param string[] $synchronizerIdentities
+         */
+        public function setSynchronizerIdentities($synchronizerIdentities)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSynchronizerIdentities()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1ControlPlaneAccess registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnalyticsPublisherIdentities()
-    {
-    }
-    /**
-     * Identifier. The resource name of the ControlPlaneAccess. Format:
-     * "organizations/{org}/controlPlaneAccess"
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. Array of service accounts to grant access to control plane
-     * resources (for the Synchronizer component). The service accounts must have
-     * **Apigee Synchronizer Manager** role. See also [Create service
-     * accounts](https://cloud.google.com/apigee/docs/hybrid/latest/sa-
-     * about#create-the-service-accounts).
-     *
-     * @param string[] $synchronizerIdentities
-     */
-    public function setSynchronizerIdentities($synchronizerIdentities)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSynchronizerIdentities()
+    class Google_Service_Apigee_GoogleCloudApigeeV1ControlPlaneAccess extends \Google\Service\Apigee\GoogleCloudApigeeV1ControlPlaneAccess
     {
     }
 }

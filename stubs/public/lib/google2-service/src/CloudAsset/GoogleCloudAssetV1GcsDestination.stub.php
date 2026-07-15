@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class GoogleCloudAssetV1GcsDestination extends \Google\Model
-{
-    /**
-     * Required. The URI of the Cloud Storage object. It's the same URI that is
-     * used by gsutil. Example: "gs://bucket_name/object_name". See [Viewing and
-     * Editing Object Metadata](https://cloud.google.com/storage/docs/viewing-
-     * editing-metadata) for more information. If the specified Cloud Storage
-     * object already exists and there is no
-     * [hold](https://cloud.google.com/storage/docs/object-holds), it will be
-     * overwritten with the analysis result.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * Required. The URI of the Cloud Storage object. It's the same URI that is
-     * used by gsutil. Example: "gs://bucket_name/object_name". See [Viewing and
-     * Editing Object Metadata](https://cloud.google.com/storage/docs/viewing-
-     * editing-metadata) for more information. If the specified Cloud Storage
-     * object already exists and there is no
-     * [hold](https://cloud.google.com/storage/docs/object-holds), it will be
-     * overwritten with the analysis result.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
+namespace Google\Service\CloudAsset {
+    class GoogleCloudAssetV1GcsDestination extends \Google\Model
     {
+        /**
+         * Required. The URI of the Cloud Storage object. It's the same URI that is
+         * used by gsutil. Example: "gs://bucket_name/object_name". See [Viewing and
+         * Editing Object Metadata](https://cloud.google.com/storage/docs/viewing-
+         * editing-metadata) for more information. If the specified Cloud Storage
+         * object already exists and there is no
+         * [hold](https://cloud.google.com/storage/docs/object-holds), it will be
+         * overwritten with the analysis result.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * Required. The URI of the Cloud Storage object. It's the same URI that is
+         * used by gsutil. Example: "gs://bucket_name/object_name". See [Viewing and
+         * Editing Object Metadata](https://cloud.google.com/storage/docs/viewing-
+         * editing-metadata) for more information. If the specified Cloud Storage
+         * object already exists and there is no
+         * [hold](https://cloud.google.com/storage/docs/object-holds), it will be
+         * overwritten with the analysis result.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudAsset\GoogleCloudAssetV1GcsDestination registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUri()
+    class Google_Service_CloudAsset_GoogleCloudAssetV1GcsDestination extends \Google\Service\CloudAsset\GoogleCloudAssetV1GcsDestination
     {
     }
 }

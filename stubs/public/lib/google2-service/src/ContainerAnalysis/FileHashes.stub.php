@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class FileHashes extends \Google\Collection
-{
-    protected $collection_key = 'fileHash';
-    protected $fileHashType = Hash::class;
-    protected $fileHashDataType = 'array';
-    /**
-     * Required. Collection of file hashes.
-     *
-     * @param Hash[] $fileHash
-     */
-    public function setFileHash($fileHash)
+namespace Google\Service\ContainerAnalysis {
+    class FileHashes extends \Google\Collection
     {
+        protected $collection_key = 'fileHash';
+        protected $fileHashType = Hash::class;
+        protected $fileHashDataType = 'array';
+        /**
+         * Required. Collection of file hashes.
+         *
+         * @param Hash[] $fileHash
+         */
+        public function setFileHash($fileHash)
+        {
+        }
+        /**
+         * @return Hash[]
+         */
+        public function getFileHash()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Hash[]
+     * Runtime class alias of \Google\Service\ContainerAnalysis\FileHashes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFileHash()
+    class Google_Service_ContainerAnalysis_FileHashes extends \Google\Service\ContainerAnalysis\FileHashes
     {
     }
 }

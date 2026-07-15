@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Config;
-
-class ResourceDriftTerraformInfo extends \Google\Model
-{
-    /**
-     * Output only. The address of the drifted resource.
-     *
-     * @var string
-     */
-    public $address;
-    /**
-     * Output only. The provider of the drifted resource.
-     *
-     * @var string
-     */
-    public $provider;
-    /**
-     * Output only. TF resource name.
-     *
-     * @var string
-     */
-    public $resourceName;
-    /**
-     * Output only. The type of the drifted resource.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Output only. The address of the drifted resource.
-     *
-     * @param string $address
-     */
-    public function setAddress($address)
+namespace Google\Service\Config {
+    class ResourceDriftTerraformInfo extends \Google\Model
     {
+        /**
+         * Output only. The address of the drifted resource.
+         *
+         * @var string
+         */
+        public $address;
+        /**
+         * Output only. The provider of the drifted resource.
+         *
+         * @var string
+         */
+        public $provider;
+        /**
+         * Output only. TF resource name.
+         *
+         * @var string
+         */
+        public $resourceName;
+        /**
+         * Output only. The type of the drifted resource.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Output only. The address of the drifted resource.
+         *
+         * @param string $address
+         */
+        public function setAddress($address)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAddress()
+        {
+        }
+        /**
+         * Output only. The provider of the drifted resource.
+         *
+         * @param string $provider
+         */
+        public function setProvider($provider)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProvider()
+        {
+        }
+        /**
+         * Output only. TF resource name.
+         *
+         * @param string $resourceName
+         */
+        public function setResourceName($resourceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceName()
+        {
+        }
+        /**
+         * Output only. The type of the drifted resource.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Config\ResourceDriftTerraformInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddress()
-    {
-    }
-    /**
-     * Output only. The provider of the drifted resource.
-     *
-     * @param string $provider
-     */
-    public function setProvider($provider)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProvider()
-    {
-    }
-    /**
-     * Output only. TF resource name.
-     *
-     * @param string $resourceName
-     */
-    public function setResourceName($resourceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceName()
-    {
-    }
-    /**
-     * Output only. The type of the drifted resource.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_Config_ResourceDriftTerraformInfo extends \Google\Service\Config\ResourceDriftTerraformInfo
     {
     }
 }

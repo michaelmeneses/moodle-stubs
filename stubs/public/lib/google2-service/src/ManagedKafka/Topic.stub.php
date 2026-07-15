@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManagedKafka;
-
-class Topic extends \Google\Model
-{
-    /**
-     * Optional. Configurations for the topic that are overridden from the cluster
-     * defaults. The key of the map is a Kafka topic property name, for example:
-     * `cleanup.policy`, `compression.type`.
-     *
-     * @var string[]
-     */
-    public $configs;
-    /**
-     * Identifier. The name of the topic. The `topic` segment is used when
-     * connecting directly to the cluster. Structured like:
-     * projects/{project}/locations/{location}/clusters/{cluster}/topics/{topic}
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. The number of partitions this topic has. The partition count can
-     * only be increased, not decreased. Please note that if partitions are
-     * increased for a topic that has a key, the partitioning logic or the
-     * ordering of the messages will be affected.
-     *
-     * @var int
-     */
-    public $partitionCount;
-    /**
-     * Required. Immutable. The number of replicas of each partition. A
-     * replication factor of 3 is recommended for high availability.
-     *
-     * @var int
-     */
-    public $replicationFactor;
-    /**
-     * Optional. Configurations for the topic that are overridden from the cluster
-     * defaults. The key of the map is a Kafka topic property name, for example:
-     * `cleanup.policy`, `compression.type`.
-     *
-     * @param string[] $configs
-     */
-    public function setConfigs($configs)
+namespace Google\Service\ManagedKafka {
+    class Topic extends \Google\Model
     {
+        /**
+         * Optional. Configurations for the topic that are overridden from the cluster
+         * defaults. The key of the map is a Kafka topic property name, for example:
+         * `cleanup.policy`, `compression.type`.
+         *
+         * @var string[]
+         */
+        public $configs;
+        /**
+         * Identifier. The name of the topic. The `topic` segment is used when
+         * connecting directly to the cluster. Structured like:
+         * projects/{project}/locations/{location}/clusters/{cluster}/topics/{topic}
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. The number of partitions this topic has. The partition count can
+         * only be increased, not decreased. Please note that if partitions are
+         * increased for a topic that has a key, the partitioning logic or the
+         * ordering of the messages will be affected.
+         *
+         * @var int
+         */
+        public $partitionCount;
+        /**
+         * Required. Immutable. The number of replicas of each partition. A
+         * replication factor of 3 is recommended for high availability.
+         *
+         * @var int
+         */
+        public $replicationFactor;
+        /**
+         * Optional. Configurations for the topic that are overridden from the cluster
+         * defaults. The key of the map is a Kafka topic property name, for example:
+         * `cleanup.policy`, `compression.type`.
+         *
+         * @param string[] $configs
+         */
+        public function setConfigs($configs)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getConfigs()
+        {
+        }
+        /**
+         * Identifier. The name of the topic. The `topic` segment is used when
+         * connecting directly to the cluster. Structured like:
+         * projects/{project}/locations/{location}/clusters/{cluster}/topics/{topic}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Required. The number of partitions this topic has. The partition count can
+         * only be increased, not decreased. Please note that if partitions are
+         * increased for a topic that has a key, the partitioning logic or the
+         * ordering of the messages will be affected.
+         *
+         * @param int $partitionCount
+         */
+        public function setPartitionCount($partitionCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPartitionCount()
+        {
+        }
+        /**
+         * Required. Immutable. The number of replicas of each partition. A
+         * replication factor of 3 is recommended for high availability.
+         *
+         * @param int $replicationFactor
+         */
+        public function setReplicationFactor($replicationFactor)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getReplicationFactor()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\ManagedKafka\Topic registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfigs()
-    {
-    }
-    /**
-     * Identifier. The name of the topic. The `topic` segment is used when
-     * connecting directly to the cluster. Structured like:
-     * projects/{project}/locations/{location}/clusters/{cluster}/topics/{topic}
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Required. The number of partitions this topic has. The partition count can
-     * only be increased, not decreased. Please note that if partitions are
-     * increased for a topic that has a key, the partitioning logic or the
-     * ordering of the messages will be affected.
-     *
-     * @param int $partitionCount
-     */
-    public function setPartitionCount($partitionCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPartitionCount()
-    {
-    }
-    /**
-     * Required. Immutable. The number of replicas of each partition. A
-     * replication factor of 3 is recommended for high availability.
-     *
-     * @param int $replicationFactor
-     */
-    public function setReplicationFactor($replicationFactor)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getReplicationFactor()
+    class Google_Service_ManagedKafka_Topic extends \Google\Service\ManagedKafka\Topic
     {
     }
 }

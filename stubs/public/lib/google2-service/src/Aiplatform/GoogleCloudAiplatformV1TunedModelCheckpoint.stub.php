@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1TunedModelCheckpoint extends \Google\Model
-{
-    /**
-     * The ID of the checkpoint.
-     *
-     * @var string
-     */
-    public $checkpointId;
-    /**
-     * The Endpoint resource name that the checkpoint is deployed to. Format:
-     * `projects/{project}/locations/{location}/endpoints/{endpoint}`.
-     *
-     * @var string
-     */
-    public $endpoint;
-    /**
-     * The epoch of the checkpoint.
-     *
-     * @var string
-     */
-    public $epoch;
-    /**
-     * The step of the checkpoint.
-     *
-     * @var string
-     */
-    public $step;
-    /**
-     * The ID of the checkpoint.
-     *
-     * @param string $checkpointId
-     */
-    public function setCheckpointId($checkpointId)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1TunedModelCheckpoint extends \Google\Model
     {
+        /**
+         * The ID of the checkpoint.
+         *
+         * @var string
+         */
+        public $checkpointId;
+        /**
+         * The Endpoint resource name that the checkpoint is deployed to. Format:
+         * `projects/{project}/locations/{location}/endpoints/{endpoint}`.
+         *
+         * @var string
+         */
+        public $endpoint;
+        /**
+         * The epoch of the checkpoint.
+         *
+         * @var string
+         */
+        public $epoch;
+        /**
+         * The step of the checkpoint.
+         *
+         * @var string
+         */
+        public $step;
+        /**
+         * The ID of the checkpoint.
+         *
+         * @param string $checkpointId
+         */
+        public function setCheckpointId($checkpointId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCheckpointId()
+        {
+        }
+        /**
+         * The Endpoint resource name that the checkpoint is deployed to. Format:
+         * `projects/{project}/locations/{location}/endpoints/{endpoint}`.
+         *
+         * @param string $endpoint
+         */
+        public function setEndpoint($endpoint)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndpoint()
+        {
+        }
+        /**
+         * The epoch of the checkpoint.
+         *
+         * @param string $epoch
+         */
+        public function setEpoch($epoch)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEpoch()
+        {
+        }
+        /**
+         * The step of the checkpoint.
+         *
+         * @param string $step
+         */
+        public function setStep($step)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStep()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1TunedModelCheckpoint registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCheckpointId()
-    {
-    }
-    /**
-     * The Endpoint resource name that the checkpoint is deployed to. Format:
-     * `projects/{project}/locations/{location}/endpoints/{endpoint}`.
-     *
-     * @param string $endpoint
-     */
-    public function setEndpoint($endpoint)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndpoint()
-    {
-    }
-    /**
-     * The epoch of the checkpoint.
-     *
-     * @param string $epoch
-     */
-    public function setEpoch($epoch)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEpoch()
-    {
-    }
-    /**
-     * The step of the checkpoint.
-     *
-     * @param string $step
-     */
-    public function setStep($step)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStep()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1TunedModelCheckpoint extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1TunedModelCheckpoint
     {
     }
 }

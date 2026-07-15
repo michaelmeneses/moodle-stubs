@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class OnClick extends \Google\Model
-{
-    protected $actionType = FormAction::class;
-    protected $actionDataType = '';
-    protected $openLinkType = OpenLink::class;
-    protected $openLinkDataType = '';
-    /**
-     * A form action is triggered by this `onclick` action if specified.
-     *
-     * @param FormAction $action
-     */
-    public function setAction(FormAction $action)
+namespace Google\Service\HangoutsChat {
+    class OnClick extends \Google\Model
     {
+        protected $actionType = FormAction::class;
+        protected $actionDataType = '';
+        protected $openLinkType = OpenLink::class;
+        protected $openLinkDataType = '';
+        /**
+         * A form action is triggered by this `onclick` action if specified.
+         *
+         * @param FormAction $action
+         */
+        public function setAction(FormAction $action)
+        {
+        }
+        /**
+         * @return FormAction
+         */
+        public function getAction()
+        {
+        }
+        /**
+         * This `onclick` action triggers an open link action if specified.
+         *
+         * @param OpenLink $openLink
+         */
+        public function setOpenLink(OpenLink $openLink)
+        {
+        }
+        /**
+         * @return OpenLink
+         */
+        public function getOpenLink()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FormAction
+     * Runtime class alias of \Google\Service\HangoutsChat\OnClick registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAction()
-    {
-    }
-    /**
-     * This `onclick` action triggers an open link action if specified.
-     *
-     * @param OpenLink $openLink
-     */
-    public function setOpenLink(OpenLink $openLink)
-    {
-    }
-    /**
-     * @return OpenLink
-     */
-    public function getOpenLink()
+    class Google_Service_HangoutsChat_OnClick extends \Google\Service\HangoutsChat\OnClick
     {
     }
 }

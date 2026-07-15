@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastore;
-
-class LookupRequest extends \Google\Collection
-{
-    protected $collection_key = 'keys';
-    /**
-     * The ID of the database against which to make the request. '(default)' is
-     * not allowed; please use empty string '' to refer the default database.
-     *
-     * @var string
-     */
-    public $databaseId;
-    protected $keysType = Key::class;
-    protected $keysDataType = 'array';
-    protected $propertyMaskType = PropertyMask::class;
-    protected $propertyMaskDataType = '';
-    protected $readOptionsType = ReadOptions::class;
-    protected $readOptionsDataType = '';
-    /**
-     * The ID of the database against which to make the request. '(default)' is
-     * not allowed; please use empty string '' to refer the default database.
-     *
-     * @param string $databaseId
-     */
-    public function setDatabaseId($databaseId)
+namespace Google\Service\Datastore {
+    class LookupRequest extends \Google\Collection
     {
+        protected $collection_key = 'keys';
+        /**
+         * The ID of the database against which to make the request. '(default)' is
+         * not allowed; please use empty string '' to refer the default database.
+         *
+         * @var string
+         */
+        public $databaseId;
+        protected $keysType = Key::class;
+        protected $keysDataType = 'array';
+        protected $propertyMaskType = PropertyMask::class;
+        protected $propertyMaskDataType = '';
+        protected $readOptionsType = ReadOptions::class;
+        protected $readOptionsDataType = '';
+        /**
+         * The ID of the database against which to make the request. '(default)' is
+         * not allowed; please use empty string '' to refer the default database.
+         *
+         * @param string $databaseId
+         */
+        public function setDatabaseId($databaseId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatabaseId()
+        {
+        }
+        /**
+         * Required. Keys of entities to look up.
+         *
+         * @param Key[] $keys
+         */
+        public function setKeys($keys)
+        {
+        }
+        /**
+         * @return Key[]
+         */
+        public function getKeys()
+        {
+        }
+        /**
+         * The properties to return. Defaults to returning all properties. If this
+         * field is set and an entity has a property not referenced in the mask, it
+         * will be absent from LookupResponse.found.entity.properties. The entity's
+         * key is always returned.
+         *
+         * @param PropertyMask $propertyMask
+         */
+        public function setPropertyMask(PropertyMask $propertyMask)
+        {
+        }
+        /**
+         * @return PropertyMask
+         */
+        public function getPropertyMask()
+        {
+        }
+        /**
+         * The options for this lookup request.
+         *
+         * @param ReadOptions $readOptions
+         */
+        public function setReadOptions(ReadOptions $readOptions)
+        {
+        }
+        /**
+         * @return ReadOptions
+         */
+        public function getReadOptions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Datastore\LookupRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatabaseId()
-    {
-    }
-    /**
-     * Required. Keys of entities to look up.
-     *
-     * @param Key[] $keys
-     */
-    public function setKeys($keys)
-    {
-    }
-    /**
-     * @return Key[]
-     */
-    public function getKeys()
-    {
-    }
-    /**
-     * The properties to return. Defaults to returning all properties. If this
-     * field is set and an entity has a property not referenced in the mask, it
-     * will be absent from LookupResponse.found.entity.properties. The entity's
-     * key is always returned.
-     *
-     * @param PropertyMask $propertyMask
-     */
-    public function setPropertyMask(PropertyMask $propertyMask)
-    {
-    }
-    /**
-     * @return PropertyMask
-     */
-    public function getPropertyMask()
-    {
-    }
-    /**
-     * The options for this lookup request.
-     *
-     * @param ReadOptions $readOptions
-     */
-    public function setReadOptions(ReadOptions $readOptions)
-    {
-    }
-    /**
-     * @return ReadOptions
-     */
-    public function getReadOptions()
+    class Google_Service_Datastore_LookupRequest extends \Google\Service\Datastore\LookupRequest
     {
     }
 }

@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIdentity;
-
-class LookupMembershipNameResponse extends \Google\Model
-{
-    /**
-     * The [resource name](https://cloud.google.com/apis/design/resource_names) of
-     * the looked-up `Membership`. Must be of the form
-     * `groups/{group}/memberships/{membership}`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The [resource name](https://cloud.google.com/apis/design/resource_names) of
-     * the looked-up `Membership`. Must be of the form
-     * `groups/{group}/memberships/{membership}`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\CloudIdentity {
+    class LookupMembershipNameResponse extends \Google\Model
     {
+        /**
+         * The [resource name](https://cloud.google.com/apis/design/resource_names) of
+         * the looked-up `Membership`. Must be of the form
+         * `groups/{group}/memberships/{membership}`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The [resource name](https://cloud.google.com/apis/design/resource_names) of
+         * the looked-up `Membership`. Must be of the form
+         * `groups/{group}/memberships/{membership}`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudIdentity\LookupMembershipNameResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
+    class Google_Service_CloudIdentity_LookupMembershipNameResponse extends \Google\Service\CloudIdentity\LookupMembershipNameResponse
     {
     }
 }

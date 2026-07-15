@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsReporting;
-
-class SimpleSegment extends \Google\Collection
-{
-    protected $collection_key = 'orFiltersForSegment';
-    protected $orFiltersForSegmentType = OrFiltersForSegment::class;
-    protected $orFiltersForSegmentDataType = 'array';
-    /**
-     * @param OrFiltersForSegment[]
-     */
-    public function setOrFiltersForSegment($orFiltersForSegment)
+namespace Google\Service\AnalyticsReporting {
+    class SimpleSegment extends \Google\Collection
     {
+        protected $collection_key = 'orFiltersForSegment';
+        protected $orFiltersForSegmentType = OrFiltersForSegment::class;
+        protected $orFiltersForSegmentDataType = 'array';
+        /**
+         * @param OrFiltersForSegment[]
+         */
+        public function setOrFiltersForSegment($orFiltersForSegment)
+        {
+        }
+        /**
+         * @return OrFiltersForSegment[]
+         */
+        public function getOrFiltersForSegment()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return OrFiltersForSegment[]
+     * Runtime class alias of \Google\Service\AnalyticsReporting\SimpleSegment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOrFiltersForSegment()
+    class Google_Service_AnalyticsReporting_SimpleSegment extends \Google\Service\AnalyticsReporting\SimpleSegment
     {
     }
 }

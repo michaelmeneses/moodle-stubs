@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager;
-
-class Layer extends \Google\Collection
-{
-    protected $collection_key = 'instances';
-    /**
-     * @var string
-     */
-    public $applicationType;
-    /**
-     * @var string
-     */
-    public $databaseType;
-    protected $instancesType = Instance::class;
-    protected $instancesDataType = 'array';
-    /**
-     * @var string
-     */
-    public $sid;
-    /**
-     * @param string
-     */
-    public function setApplicationType($applicationType)
+namespace Google\Service\WorkloadManager {
+    class Layer extends \Google\Collection
     {
+        protected $collection_key = 'instances';
+        /**
+         * @var string
+         */
+        public $applicationType;
+        /**
+         * @var string
+         */
+        public $databaseType;
+        protected $instancesType = Instance::class;
+        protected $instancesDataType = 'array';
+        /**
+         * @var string
+         */
+        public $sid;
+        /**
+         * @param string
+         */
+        public function setApplicationType($applicationType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApplicationType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDatabaseType($databaseType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatabaseType()
+        {
+        }
+        /**
+         * @param Instance[]
+         */
+        public function setInstances($instances)
+        {
+        }
+        /**
+         * @return Instance[]
+         */
+        public function getInstances()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSid($sid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSid()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\WorkloadManager\Layer registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApplicationType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDatabaseType($databaseType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDatabaseType()
-    {
-    }
-    /**
-     * @param Instance[]
-     */
-    public function setInstances($instances)
-    {
-    }
-    /**
-     * @return Instance[]
-     */
-    public function getInstances()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSid($sid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSid()
+    class Google_Service_WorkloadManager_Layer extends \Google\Service\WorkloadManager\Layer
     {
     }
 }

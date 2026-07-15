@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution;
-
-class GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig extends \Google\Model
-{
-    protected $acceleratorType = GoogleDevtoolsRemotebuildexecutionAdminV1alphaAcceleratorConfig::class;
-    protected $acceleratorDataType = '';
-    public $diskSizeGb;
-    public $diskType;
-    public $labels;
-    public $machineType;
-    public $maxConcurrentActions;
-    public $minCpuPlatform;
-    public $networkAccess;
-    public $reserved;
-    public $soleTenantNodeType;
-    public $vmImage;
+namespace Google\Service\RemoteBuildExecution {
+    class GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig extends \Google\Model
+    {
+        protected $acceleratorType = GoogleDevtoolsRemotebuildexecutionAdminV1alphaAcceleratorConfig::class;
+        protected $acceleratorDataType = '';
+        public $diskSizeGb;
+        public $diskType;
+        public $labels;
+        public $machineType;
+        public $maxConcurrentActions;
+        public $minCpuPlatform;
+        public $networkAccess;
+        public $reserved;
+        public $soleTenantNodeType;
+        public $vmImage;
+        /**
+         * @param GoogleDevtoolsRemotebuildexecutionAdminV1alphaAcceleratorConfig
+         */
+        public function setAccelerator(GoogleDevtoolsRemotebuildexecutionAdminV1alphaAcceleratorConfig $accelerator)
+        {
+        }
+        /**
+         * @return GoogleDevtoolsRemotebuildexecutionAdminV1alphaAcceleratorConfig
+         */
+        public function getAccelerator()
+        {
+        }
+        public function setDiskSizeGb($diskSizeGb)
+        {
+        }
+        public function getDiskSizeGb()
+        {
+        }
+        public function setDiskType($diskType)
+        {
+        }
+        public function getDiskType()
+        {
+        }
+        public function setLabels($labels)
+        {
+        }
+        public function getLabels()
+        {
+        }
+        public function setMachineType($machineType)
+        {
+        }
+        public function getMachineType()
+        {
+        }
+        public function setMaxConcurrentActions($maxConcurrentActions)
+        {
+        }
+        public function getMaxConcurrentActions()
+        {
+        }
+        public function setMinCpuPlatform($minCpuPlatform)
+        {
+        }
+        public function getMinCpuPlatform()
+        {
+        }
+        public function setNetworkAccess($networkAccess)
+        {
+        }
+        public function getNetworkAccess()
+        {
+        }
+        public function setReserved($reserved)
+        {
+        }
+        public function getReserved()
+        {
+        }
+        public function setSoleTenantNodeType($soleTenantNodeType)
+        {
+        }
+        public function getSoleTenantNodeType()
+        {
+        }
+        public function setVmImage($vmImage)
+        {
+        }
+        public function getVmImage()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @param GoogleDevtoolsRemotebuildexecutionAdminV1alphaAcceleratorConfig
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setAccelerator(GoogleDevtoolsRemotebuildexecutionAdminV1alphaAcceleratorConfig $accelerator)
-    {
-    }
-    /**
-     * @return GoogleDevtoolsRemotebuildexecutionAdminV1alphaAcceleratorConfig
-     */
-    public function getAccelerator()
-    {
-    }
-    public function setDiskSizeGb($diskSizeGb)
-    {
-    }
-    public function getDiskSizeGb()
-    {
-    }
-    public function setDiskType($diskType)
-    {
-    }
-    public function getDiskType()
-    {
-    }
-    public function setLabels($labels)
-    {
-    }
-    public function getLabels()
-    {
-    }
-    public function setMachineType($machineType)
-    {
-    }
-    public function getMachineType()
-    {
-    }
-    public function setMaxConcurrentActions($maxConcurrentActions)
-    {
-    }
-    public function getMaxConcurrentActions()
-    {
-    }
-    public function setMinCpuPlatform($minCpuPlatform)
-    {
-    }
-    public function getMinCpuPlatform()
-    {
-    }
-    public function setNetworkAccess($networkAccess)
-    {
-    }
-    public function getNetworkAccess()
-    {
-    }
-    public function setReserved($reserved)
-    {
-    }
-    public function getReserved()
-    {
-    }
-    public function setSoleTenantNodeType($soleTenantNodeType)
-    {
-    }
-    public function getSoleTenantNodeType()
-    {
-    }
-    public function setVmImage($vmImage)
-    {
-    }
-    public function getVmImage()
+    class Google_Service_RemoteBuildExecution_GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig extends \Google\Service\RemoteBuildExecution\GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig
     {
     }
 }

@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsData;
-
-class InListFilter extends \Google\Collection
-{
-    protected $collection_key = 'values';
-    /**
-     * If true, the string value is case sensitive.
-     *
-     * @var bool
-     */
-    public $caseSensitive;
-    /**
-     * The list of string values. Must be non-empty.
-     *
-     * @var string[]
-     */
-    public $values;
-    /**
-     * If true, the string value is case sensitive.
-     *
-     * @param bool $caseSensitive
-     */
-    public function setCaseSensitive($caseSensitive)
+namespace Google\Service\AnalyticsData {
+    class InListFilter extends \Google\Collection
     {
+        protected $collection_key = 'values';
+        /**
+         * If true, the string value is case sensitive.
+         *
+         * @var bool
+         */
+        public $caseSensitive;
+        /**
+         * The list of string values. Must be non-empty.
+         *
+         * @var string[]
+         */
+        public $values;
+        /**
+         * If true, the string value is case sensitive.
+         *
+         * @param bool $caseSensitive
+         */
+        public function setCaseSensitive($caseSensitive)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCaseSensitive()
+        {
+        }
+        /**
+         * The list of string values. Must be non-empty.
+         *
+         * @param string[] $values
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\AnalyticsData\InListFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCaseSensitive()
-    {
-    }
-    /**
-     * The list of string values. Must be non-empty.
-     *
-     * @param string[] $values
-     */
-    public function setValues($values)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getValues()
+    class Google_Service_AnalyticsData_InListFilter extends \Google\Service\AnalyticsData\InListFilter
     {
     }
 }

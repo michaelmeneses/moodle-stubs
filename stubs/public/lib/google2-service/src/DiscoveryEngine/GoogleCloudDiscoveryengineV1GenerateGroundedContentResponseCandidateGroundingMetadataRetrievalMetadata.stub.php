@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1GenerateGroundedContentResponseCandidateGroundingMetadataRetrievalMetadata extends \Google\Model
-{
-    protected $dynamicRetrievalMetadataType = GoogleCloudDiscoveryengineV1GenerateGroundedContentResponseCandidateGroundingMetadataDynamicRetrievalMetadata::class;
-    protected $dynamicRetrievalMetadataDataType = '';
-    /**
-     * @var string
-     */
-    public $source;
-    /**
-     * @param GoogleCloudDiscoveryengineV1GenerateGroundedContentResponseCandidateGroundingMetadataDynamicRetrievalMetadata
-     */
-    public function setDynamicRetrievalMetadata(GoogleCloudDiscoveryengineV1GenerateGroundedContentResponseCandidateGroundingMetadataDynamicRetrievalMetadata $dynamicRetrievalMetadata)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1GenerateGroundedContentResponseCandidateGroundingMetadataRetrievalMetadata extends \Google\Model
     {
+        protected $dynamicRetrievalMetadataType = GoogleCloudDiscoveryengineV1GenerateGroundedContentResponseCandidateGroundingMetadataDynamicRetrievalMetadata::class;
+        protected $dynamicRetrievalMetadataDataType = '';
+        /**
+         * @var string
+         */
+        public $source;
+        /**
+         * @param GoogleCloudDiscoveryengineV1GenerateGroundedContentResponseCandidateGroundingMetadataDynamicRetrievalMetadata
+         */
+        public function setDynamicRetrievalMetadata(GoogleCloudDiscoveryengineV1GenerateGroundedContentResponseCandidateGroundingMetadataDynamicRetrievalMetadata $dynamicRetrievalMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1GenerateGroundedContentResponseCandidateGroundingMetadataDynamicRetrievalMetadata
+         */
+        public function getDynamicRetrievalMetadata()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSource($source)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1GenerateGroundedContentResponseCandidateGroundingMetadataDynamicRetrievalMetadata
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1GenerateGroundedContentResponseCandidateGroundingMetadataRetrievalMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDynamicRetrievalMetadata()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSource($source)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSource()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1GenerateGroundedContentResponseCandidateGroundingMetadataRetrievalMetadata extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1GenerateGroundedContentResponseCandidateGroundingMetadataRetrievalMetadata
     {
     }
 }

@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1Oauth2ClientCredentialsConfig extends \Google\Model
-{
-    /**
-     * Required. The client identifier.
-     *
-     * @var string
-     */
-    public $clientId;
-    protected $clientSecretType = GoogleCloudApihubV1Secret::class;
-    protected $clientSecretDataType = '';
-    /**
-     * Required. The client identifier.
-     *
-     * @param string $clientId
-     */
-    public function setClientId($clientId)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1Oauth2ClientCredentialsConfig extends \Google\Model
     {
+        /**
+         * Required. The client identifier.
+         *
+         * @var string
+         */
+        public $clientId;
+        protected $clientSecretType = GoogleCloudApihubV1Secret::class;
+        protected $clientSecretDataType = '';
+        /**
+         * Required. The client identifier.
+         *
+         * @param string $clientId
+         */
+        public function setClientId($clientId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClientId()
+        {
+        }
+        /**
+         * Required. Secret version reference containing the client secret. The
+         * `secretmanager.versions.access` permission should be granted to the service
+         * account accessing the secret.
+         *
+         * @param GoogleCloudApihubV1Secret $clientSecret
+         */
+        public function setClientSecret(GoogleCloudApihubV1Secret $clientSecret)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1Secret
+         */
+        public function getClientSecret()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1Oauth2ClientCredentialsConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClientId()
-    {
-    }
-    /**
-     * Required. Secret version reference containing the client secret. The
-     * `secretmanager.versions.access` permission should be granted to the service
-     * account accessing the secret.
-     *
-     * @param GoogleCloudApihubV1Secret $clientSecret
-     */
-    public function setClientSecret(GoogleCloudApihubV1Secret $clientSecret)
-    {
-    }
-    /**
-     * @return GoogleCloudApihubV1Secret
-     */
-    public function getClientSecret()
+    class Google_Service_APIhub_GoogleCloudApihubV1Oauth2ClientCredentialsConfig extends \Google\Service\APIhub\GoogleCloudApihubV1Oauth2ClientCredentialsConfig
     {
     }
 }

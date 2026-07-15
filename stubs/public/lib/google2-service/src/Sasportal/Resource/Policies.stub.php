@@ -21,52 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sasportal\Resource;
-
-/**
- * The "policies" collection of methods.
- * Typical usage is:
- *  <code>
- *   $sasportalService = new Google\Service\Sasportal(...);
- *   $policies = $sasportalService->policies;
- *  </code>
- */
-class Policies extends \Google\Service\Resource
-{
+namespace Google\Service\Sasportal\Resource {
+    use Google\Service\Sasportal\SasPortalGetPolicyRequest;
+    use Google\Service\Sasportal\SasPortalPolicy;
+    use Google\Service\Sasportal\SasPortalSetPolicyRequest;
+    use Google\Service\Sasportal\SasPortalTestPermissionsRequest;
+    use Google\Service\Sasportal\SasPortalTestPermissionsResponse;
     /**
-     * Gets the access control policy for a resource. Returns an empty policy if the
-     * resource exists and does not have a policy set. (policies.get)
-     *
-     * @param SasPortalGetPolicyRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return SasPortalPolicy
-     * @throws \Google\Service\Exception
+     * The "policies" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $sasportalService = new Google\Service\Sasportal(...);
+     *   $policies = $sasportalService->policies;
+     *  </code>
      */
-    public function get(SasPortalGetPolicyRequest $postBody, $optParams = [])
+    class Policies extends \Google\Service\Resource
     {
+        /**
+         * Gets the access control policy for a resource. Returns an empty policy if the
+         * resource exists and does not have a policy set. (policies.get)
+         *
+         * @param SasPortalGetPolicyRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return SasPortalPolicy
+         * @throws \Google\Service\Exception
+         */
+        public function get(SasPortalGetPolicyRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Sets the access control policy on the specified resource. Replaces any
+         * existing policy. (policies.set)
+         *
+         * @param SasPortalSetPolicyRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return SasPortalPolicy
+         * @throws \Google\Service\Exception
+         */
+        public function set(SasPortalSetPolicyRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Returns permissions that a caller has on the specified resource.
+         * (policies.test)
+         *
+         * @param SasPortalTestPermissionsRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return SasPortalTestPermissionsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function test(SasPortalTestPermissionsRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Sets the access control policy on the specified resource. Replaces any
-     * existing policy. (policies.set)
-     *
-     * @param SasPortalSetPolicyRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return SasPortalPolicy
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Sasportal\Resource\Policies registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function set(SasPortalSetPolicyRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Returns permissions that a caller has on the specified resource.
-     * (policies.test)
-     *
-     * @param SasPortalTestPermissionsRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return SasPortalTestPermissionsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function test(SasPortalTestPermissionsRequest $postBody, $optParams = [])
+    class Google_Service_Sasportal_Resource_Policies extends \Google\Service\Sasportal\Resource\Policies
     {
     }
 }

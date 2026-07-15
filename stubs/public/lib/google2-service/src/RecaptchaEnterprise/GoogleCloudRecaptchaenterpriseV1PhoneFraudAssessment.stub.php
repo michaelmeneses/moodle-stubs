@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecaptchaEnterprise;
-
-class GoogleCloudRecaptchaenterpriseV1PhoneFraudAssessment extends \Google\Model
-{
-    protected $smsTollFraudVerdictType = GoogleCloudRecaptchaenterpriseV1SmsTollFraudVerdict::class;
-    protected $smsTollFraudVerdictDataType = '';
-    /**
-     * Output only. Assessment of this phone event for risk of SMS toll fraud.
-     *
-     * @param GoogleCloudRecaptchaenterpriseV1SmsTollFraudVerdict $smsTollFraudVerdict
-     */
-    public function setSmsTollFraudVerdict(GoogleCloudRecaptchaenterpriseV1SmsTollFraudVerdict $smsTollFraudVerdict)
+namespace Google\Service\RecaptchaEnterprise {
+    class GoogleCloudRecaptchaenterpriseV1PhoneFraudAssessment extends \Google\Model
     {
+        protected $smsTollFraudVerdictType = GoogleCloudRecaptchaenterpriseV1SmsTollFraudVerdict::class;
+        protected $smsTollFraudVerdictDataType = '';
+        /**
+         * Output only. Assessment of this phone event for risk of SMS toll fraud.
+         *
+         * @param GoogleCloudRecaptchaenterpriseV1SmsTollFraudVerdict $smsTollFraudVerdict
+         */
+        public function setSmsTollFraudVerdict(GoogleCloudRecaptchaenterpriseV1SmsTollFraudVerdict $smsTollFraudVerdict)
+        {
+        }
+        /**
+         * @return GoogleCloudRecaptchaenterpriseV1SmsTollFraudVerdict
+         */
+        public function getSmsTollFraudVerdict()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRecaptchaenterpriseV1SmsTollFraudVerdict
+     * Runtime class alias of \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1PhoneFraudAssessment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSmsTollFraudVerdict()
+    class Google_Service_RecaptchaEnterprise_GoogleCloudRecaptchaenterpriseV1PhoneFraudAssessment extends \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1PhoneFraudAssessment
     {
     }
 }

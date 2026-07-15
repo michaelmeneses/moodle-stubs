@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataprocMetastore\Resource;
-
-/**
- * The "locations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $metastoreService = new Google\Service\DataprocMetastore(...);
- *   $locations = $metastoreService->projects_locations;
- *  </code>
- */
-class ProjectsLocations extends \Google\Service\Resource
-{
+namespace Google\Service\DataprocMetastore\Resource {
+    /**
+     * The "locations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $metastoreService = new Google\Service\DataprocMetastore(...);
+     *   $locations = $metastoreService->projects_locations;
+     *  </code>
+     */
+    class ProjectsLocations extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\DataprocMetastore\Resource\ProjectsLocations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_DataprocMetastore_Resource_ProjectsLocations extends \Google\Service\DataprocMetastore\Resource\ProjectsLocations
+    {
+    }
 }

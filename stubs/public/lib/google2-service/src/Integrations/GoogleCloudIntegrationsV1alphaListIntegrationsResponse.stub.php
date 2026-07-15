@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaListIntegrationsResponse extends \Google\Collection
-{
-    protected $collection_key = 'integrations';
-    protected $integrationsType = GoogleCloudIntegrationsV1alphaIntegration::class;
-    protected $integrationsDataType = 'array';
-    /**
-     * The next page token for the response.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The integrations which match the request.
-     *
-     * @param GoogleCloudIntegrationsV1alphaIntegration[] $integrations
-     */
-    public function setIntegrations($integrations)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaListIntegrationsResponse extends \Google\Collection
     {
+        protected $collection_key = 'integrations';
+        protected $integrationsType = GoogleCloudIntegrationsV1alphaIntegration::class;
+        protected $integrationsDataType = 'array';
+        /**
+         * The next page token for the response.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The integrations which match the request.
+         *
+         * @param GoogleCloudIntegrationsV1alphaIntegration[] $integrations
+         */
+        public function setIntegrations($integrations)
+        {
+        }
+        /**
+         * @return GoogleCloudIntegrationsV1alphaIntegration[]
+         */
+        public function getIntegrations()
+        {
+        }
+        /**
+         * The next page token for the response.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudIntegrationsV1alphaIntegration[]
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaListIntegrationsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIntegrations()
-    {
-    }
-    /**
-     * The next page token for the response.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaListIntegrationsResponse extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaListIntegrationsResponse
     {
     }
 }

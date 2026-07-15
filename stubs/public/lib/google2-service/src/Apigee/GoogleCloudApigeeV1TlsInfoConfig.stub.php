@@ -21,217 +21,226 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1TlsInfoConfig extends \Google\Collection
-{
-    protected $collection_key = 'protocols';
-    /**
-     * List of ciphers that are granted access.
-     *
-     * @var string[]
-     */
-    public $ciphers;
-    /**
-     * Flag that specifies whether client-side authentication is enabled for the
-     * target server. Enables two-way TLS.
-     *
-     * @var bool
-     */
-    public $clientAuthEnabled;
-    protected $commonNameType = GoogleCloudApigeeV1CommonNameConfig::class;
-    protected $commonNameDataType = '';
-    /**
-     * Flag that specifies whether one-way TLS is enabled. Set to `true` to enable
-     * one-way TLS.
-     *
-     * @var bool
-     */
-    public $enabled;
-    /**
-     * Flag that enforces TLS settings
-     *
-     * @var bool
-     */
-    public $enforce;
-    /**
-     * Flag that specifies whether to ignore TLS certificate validation errors.
-     * Set to `true` to ignore errors.
-     *
-     * @var bool
-     */
-    public $ignoreValidationErrors;
-    /**
-     * Name of the alias used for client-side authentication in the following
-     * format: `organizations/{org}/environments/{env}/keystores/{keystore}/aliase
-     * s/{alias}`
-     *
-     * @var string
-     */
-    public $keyAlias;
-    protected $keyAliasReferenceType = GoogleCloudApigeeV1KeyAliasReference::class;
-    protected $keyAliasReferenceDataType = '';
-    /**
-     * List of TLS protocols that are granted access.
-     *
-     * @var string[]
-     */
-    public $protocols;
-    /**
-     * Name of the keystore or keystore reference containing trusted certificates
-     * for the server in the following format:
-     * `organizations/{org}/environments/{env}/keystores/{keystore}` or
-     * `organizations/{org}/environments/{env}/references/{reference}`
-     *
-     * @var string
-     */
-    public $trustStore;
-    /**
-     * List of ciphers that are granted access.
-     *
-     * @param string[] $ciphers
-     */
-    public function setCiphers($ciphers)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1TlsInfoConfig extends \Google\Collection
     {
+        protected $collection_key = 'protocols';
+        /**
+         * List of ciphers that are granted access.
+         *
+         * @var string[]
+         */
+        public $ciphers;
+        /**
+         * Flag that specifies whether client-side authentication is enabled for the
+         * target server. Enables two-way TLS.
+         *
+         * @var bool
+         */
+        public $clientAuthEnabled;
+        protected $commonNameType = GoogleCloudApigeeV1CommonNameConfig::class;
+        protected $commonNameDataType = '';
+        /**
+         * Flag that specifies whether one-way TLS is enabled. Set to `true` to enable
+         * one-way TLS.
+         *
+         * @var bool
+         */
+        public $enabled;
+        /**
+         * Flag that enforces TLS settings
+         *
+         * @var bool
+         */
+        public $enforce;
+        /**
+         * Flag that specifies whether to ignore TLS certificate validation errors.
+         * Set to `true` to ignore errors.
+         *
+         * @var bool
+         */
+        public $ignoreValidationErrors;
+        /**
+         * Name of the alias used for client-side authentication in the following
+         * format: `organizations/{org}/environments/{env}/keystores/{keystore}/aliase
+         * s/{alias}`
+         *
+         * @var string
+         */
+        public $keyAlias;
+        protected $keyAliasReferenceType = GoogleCloudApigeeV1KeyAliasReference::class;
+        protected $keyAliasReferenceDataType = '';
+        /**
+         * List of TLS protocols that are granted access.
+         *
+         * @var string[]
+         */
+        public $protocols;
+        /**
+         * Name of the keystore or keystore reference containing trusted certificates
+         * for the server in the following format:
+         * `organizations/{org}/environments/{env}/keystores/{keystore}` or
+         * `organizations/{org}/environments/{env}/references/{reference}`
+         *
+         * @var string
+         */
+        public $trustStore;
+        /**
+         * List of ciphers that are granted access.
+         *
+         * @param string[] $ciphers
+         */
+        public function setCiphers($ciphers)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCiphers()
+        {
+        }
+        /**
+         * Flag that specifies whether client-side authentication is enabled for the
+         * target server. Enables two-way TLS.
+         *
+         * @param bool $clientAuthEnabled
+         */
+        public function setClientAuthEnabled($clientAuthEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getClientAuthEnabled()
+        {
+        }
+        /**
+         * Common name to validate the target server against.
+         *
+         * @param GoogleCloudApigeeV1CommonNameConfig $commonName
+         */
+        public function setCommonName(GoogleCloudApigeeV1CommonNameConfig $commonName)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1CommonNameConfig
+         */
+        public function getCommonName()
+        {
+        }
+        /**
+         * Flag that specifies whether one-way TLS is enabled. Set to `true` to enable
+         * one-way TLS.
+         *
+         * @param bool $enabled
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
+        /**
+         * Flag that enforces TLS settings
+         *
+         * @param bool $enforce
+         */
+        public function setEnforce($enforce)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnforce()
+        {
+        }
+        /**
+         * Flag that specifies whether to ignore TLS certificate validation errors.
+         * Set to `true` to ignore errors.
+         *
+         * @param bool $ignoreValidationErrors
+         */
+        public function setIgnoreValidationErrors($ignoreValidationErrors)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIgnoreValidationErrors()
+        {
+        }
+        /**
+         * Name of the alias used for client-side authentication in the following
+         * format: `organizations/{org}/environments/{env}/keystores/{keystore}/aliase
+         * s/{alias}`
+         *
+         * @param string $keyAlias
+         */
+        public function setKeyAlias($keyAlias)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKeyAlias()
+        {
+        }
+        /**
+         * Reference name and alias pair to use for client-side authentication.
+         *
+         * @param GoogleCloudApigeeV1KeyAliasReference $keyAliasReference
+         */
+        public function setKeyAliasReference(GoogleCloudApigeeV1KeyAliasReference $keyAliasReference)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1KeyAliasReference
+         */
+        public function getKeyAliasReference()
+        {
+        }
+        /**
+         * List of TLS protocols that are granted access.
+         *
+         * @param string[] $protocols
+         */
+        public function setProtocols($protocols)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getProtocols()
+        {
+        }
+        /**
+         * Name of the keystore or keystore reference containing trusted certificates
+         * for the server in the following format:
+         * `organizations/{org}/environments/{env}/keystores/{keystore}` or
+         * `organizations/{org}/environments/{env}/references/{reference}`
+         *
+         * @param string $trustStore
+         */
+        public function setTrustStore($trustStore)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTrustStore()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1TlsInfoConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCiphers()
-    {
-    }
-    /**
-     * Flag that specifies whether client-side authentication is enabled for the
-     * target server. Enables two-way TLS.
-     *
-     * @param bool $clientAuthEnabled
-     */
-    public function setClientAuthEnabled($clientAuthEnabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getClientAuthEnabled()
-    {
-    }
-    /**
-     * Common name to validate the target server against.
-     *
-     * @param GoogleCloudApigeeV1CommonNameConfig $commonName
-     */
-    public function setCommonName(GoogleCloudApigeeV1CommonNameConfig $commonName)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1CommonNameConfig
-     */
-    public function getCommonName()
-    {
-    }
-    /**
-     * Flag that specifies whether one-way TLS is enabled. Set to `true` to enable
-     * one-way TLS.
-     *
-     * @param bool $enabled
-     */
-    public function setEnabled($enabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnabled()
-    {
-    }
-    /**
-     * Flag that enforces TLS settings
-     *
-     * @param bool $enforce
-     */
-    public function setEnforce($enforce)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnforce()
-    {
-    }
-    /**
-     * Flag that specifies whether to ignore TLS certificate validation errors.
-     * Set to `true` to ignore errors.
-     *
-     * @param bool $ignoreValidationErrors
-     */
-    public function setIgnoreValidationErrors($ignoreValidationErrors)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIgnoreValidationErrors()
-    {
-    }
-    /**
-     * Name of the alias used for client-side authentication in the following
-     * format: `organizations/{org}/environments/{env}/keystores/{keystore}/aliase
-     * s/{alias}`
-     *
-     * @param string $keyAlias
-     */
-    public function setKeyAlias($keyAlias)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKeyAlias()
-    {
-    }
-    /**
-     * Reference name and alias pair to use for client-side authentication.
-     *
-     * @param GoogleCloudApigeeV1KeyAliasReference $keyAliasReference
-     */
-    public function setKeyAliasReference(GoogleCloudApigeeV1KeyAliasReference $keyAliasReference)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1KeyAliasReference
-     */
-    public function getKeyAliasReference()
-    {
-    }
-    /**
-     * List of TLS protocols that are granted access.
-     *
-     * @param string[] $protocols
-     */
-    public function setProtocols($protocols)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getProtocols()
-    {
-    }
-    /**
-     * Name of the keystore or keystore reference containing trusted certificates
-     * for the server in the following format:
-     * `organizations/{org}/environments/{env}/keystores/{keystore}` or
-     * `organizations/{org}/environments/{env}/references/{reference}`
-     *
-     * @param string $trustStore
-     */
-    public function setTrustStore($trustStore)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTrustStore()
+    class Google_Service_Apigee_GoogleCloudApigeeV1TlsInfoConfig extends \Google\Service\Apigee\GoogleCloudApigeeV1TlsInfoConfig
     {
     }
 }

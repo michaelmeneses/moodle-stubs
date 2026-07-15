@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class InventorySourceGroup extends \Google\Model
-{
-    /**
-     * Required. The display name of the inventory source group. Must be UTF-8
-     * encoded with a maximum size of 240 bytes.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Output only. The unique ID of the inventory source group. Assigned by the
-     * system.
-     *
-     * @var string
-     */
-    public $inventorySourceGroupId;
-    /**
-     * Output only. The resource name of the inventory source group.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. The display name of the inventory source group. Must be UTF-8
-     * encoded with a maximum size of 240 bytes.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\DisplayVideo {
+    class InventorySourceGroup extends \Google\Model
     {
+        /**
+         * Required. The display name of the inventory source group. Must be UTF-8
+         * encoded with a maximum size of 240 bytes.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Output only. The unique ID of the inventory source group. Assigned by the
+         * system.
+         *
+         * @var string
+         */
+        public $inventorySourceGroupId;
+        /**
+         * Output only. The resource name of the inventory source group.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. The display name of the inventory source group. Must be UTF-8
+         * encoded with a maximum size of 240 bytes.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Output only. The unique ID of the inventory source group. Assigned by the
+         * system.
+         *
+         * @param string $inventorySourceGroupId
+         */
+        public function setInventorySourceGroupId($inventorySourceGroupId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInventorySourceGroupId()
+        {
+        }
+        /**
+         * Output only. The resource name of the inventory source group.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\InventorySourceGroup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Output only. The unique ID of the inventory source group. Assigned by the
-     * system.
-     *
-     * @param string $inventorySourceGroupId
-     */
-    public function setInventorySourceGroupId($inventorySourceGroupId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInventorySourceGroupId()
-    {
-    }
-    /**
-     * Output only. The resource name of the inventory source group.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_DisplayVideo_InventorySourceGroup extends \Google\Service\DisplayVideo\InventorySourceGroup
     {
     }
 }

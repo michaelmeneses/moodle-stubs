@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TPU;
-
-class ListNodesResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    /**
-     * The next page token or empty if none.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $nodesType = Node::class;
-    protected $nodesDataType = 'array';
-    /**
-     * Locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * The next page token or empty if none.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\TPU {
+    class ListNodesResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        /**
+         * The next page token or empty if none.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $nodesType = Node::class;
+        protected $nodesDataType = 'array';
+        /**
+         * Locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * The next page token or empty if none.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The listed nodes.
+         *
+         * @param Node[] $nodes
+         */
+        public function setNodes($nodes)
+        {
+        }
+        /**
+         * @return Node[]
+         */
+        public function getNodes()
+        {
+        }
+        /**
+         * Locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\TPU\ListNodesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The listed nodes.
-     *
-     * @param Node[] $nodes
-     */
-    public function setNodes($nodes)
-    {
-    }
-    /**
-     * @return Node[]
-     */
-    public function getNodes()
-    {
-    }
-    /**
-     * Locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_TPU_ListNodesResponse extends \Google\Service\TPU\ListNodesResponse
     {
     }
 }

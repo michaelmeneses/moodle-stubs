@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class DisjunctiveMatchStatement extends \Google\Collection
-{
-    protected $collection_key = 'eventFilters';
-    protected $eventFiltersType = EventFilter::class;
-    protected $eventFiltersDataType = 'array';
-    /**
-     * @var string
-     */
-    public $kind;
-    /**
-     * @param EventFilter[]
-     */
-    public function setEventFilters($eventFilters)
+namespace Google\Service\Dfareporting {
+    class DisjunctiveMatchStatement extends \Google\Collection
     {
+        protected $collection_key = 'eventFilters';
+        protected $eventFiltersType = EventFilter::class;
+        protected $eventFiltersDataType = 'array';
+        /**
+         * @var string
+         */
+        public $kind;
+        /**
+         * @param EventFilter[]
+         */
+        public function setEventFilters($eventFilters)
+        {
+        }
+        /**
+         * @return EventFilter[]
+         */
+        public function getEventFilters()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EventFilter[]
+     * Runtime class alias of \Google\Service\Dfareporting\DisjunctiveMatchStatement registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEventFilters()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_Dfareporting_DisjunctiveMatchStatement extends \Google\Service\Dfareporting\DisjunctiveMatchStatement
     {
     }
 }

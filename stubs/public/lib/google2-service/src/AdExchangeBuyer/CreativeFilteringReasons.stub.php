@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer;
-
-class CreativeFilteringReasons extends \Google\Collection
-{
-    protected $collection_key = 'reasons';
-    public $date;
-    protected $reasonsType = CreativeFilteringReasonsReasons::class;
-    protected $reasonsDataType = 'array';
-    public function setDate($date)
+namespace Google\Service\AdExchangeBuyer {
+    class CreativeFilteringReasons extends \Google\Collection
     {
+        protected $collection_key = 'reasons';
+        public $date;
+        protected $reasonsType = CreativeFilteringReasonsReasons::class;
+        protected $reasonsDataType = 'array';
+        public function setDate($date)
+        {
+        }
+        public function getDate()
+        {
+        }
+        /**
+         * @param CreativeFilteringReasonsReasons[]
+         */
+        public function setReasons($reasons)
+        {
+        }
+        /**
+         * @return CreativeFilteringReasonsReasons[]
+         */
+        public function getReasons()
+        {
+        }
     }
-    public function getDate()
-    {
-    }
+}
+namespace {
     /**
-     * @param CreativeFilteringReasonsReasons[]
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\CreativeFilteringReasons registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setReasons($reasons)
-    {
-    }
-    /**
-     * @return CreativeFilteringReasonsReasons[]
-     */
-    public function getReasons()
+    class Google_Service_AdExchangeBuyer_CreativeFilteringReasons extends \Google\Service\AdExchangeBuyer\CreativeFilteringReasons
     {
     }
 }

@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class ReservationsResizeRequest extends \Google\Model
-{
-    /**
-     * Number of allocated resources can be resized with minimum = 1 and maximum =
-     * 1000.
-     *
-     * @var string
-     */
-    public $specificSkuCount;
-    /**
-     * Number of allocated resources can be resized with minimum = 1 and maximum =
-     * 1000.
-     *
-     * @param string $specificSkuCount
-     */
-    public function setSpecificSkuCount($specificSkuCount)
+namespace Google\Service\Compute {
+    class ReservationsResizeRequest extends \Google\Model
     {
+        /**
+         * Number of allocated resources can be resized with minimum = 1 and maximum =
+         * 1000.
+         *
+         * @var string
+         */
+        public $specificSkuCount;
+        /**
+         * Number of allocated resources can be resized with minimum = 1 and maximum =
+         * 1000.
+         *
+         * @param string $specificSkuCount
+         */
+        public function setSpecificSkuCount($specificSkuCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSpecificSkuCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\ReservationsResizeRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSpecificSkuCount()
+    class Google_Service_Compute_ReservationsResizeRequest extends \Google\Service\Compute\ReservationsResizeRequest
     {
     }
 }

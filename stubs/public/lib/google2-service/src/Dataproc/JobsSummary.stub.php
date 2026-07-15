@@ -21,125 +21,134 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class JobsSummary extends \Google\Collection
-{
-    protected $collection_key = 'attempts';
-    /**
-     * Number of active jobs
-     *
-     * @var int
-     */
-    public $activeJobs;
-    /**
-     * Spark Application Id
-     *
-     * @var string
-     */
-    public $applicationId;
-    protected $attemptsType = ApplicationAttemptInfo::class;
-    protected $attemptsDataType = 'array';
-    /**
-     * Number of completed jobs
-     *
-     * @var int
-     */
-    public $completedJobs;
-    /**
-     * Number of failed jobs
-     *
-     * @var int
-     */
-    public $failedJobs;
-    /**
-     * Spark Scheduling mode
-     *
-     * @var string
-     */
-    public $schedulingMode;
-    /**
-     * Number of active jobs
-     *
-     * @param int $activeJobs
-     */
-    public function setActiveJobs($activeJobs)
+namespace Google\Service\Dataproc {
+    class JobsSummary extends \Google\Collection
     {
+        protected $collection_key = 'attempts';
+        /**
+         * Number of active jobs
+         *
+         * @var int
+         */
+        public $activeJobs;
+        /**
+         * Spark Application Id
+         *
+         * @var string
+         */
+        public $applicationId;
+        protected $attemptsType = ApplicationAttemptInfo::class;
+        protected $attemptsDataType = 'array';
+        /**
+         * Number of completed jobs
+         *
+         * @var int
+         */
+        public $completedJobs;
+        /**
+         * Number of failed jobs
+         *
+         * @var int
+         */
+        public $failedJobs;
+        /**
+         * Spark Scheduling mode
+         *
+         * @var string
+         */
+        public $schedulingMode;
+        /**
+         * Number of active jobs
+         *
+         * @param int $activeJobs
+         */
+        public function setActiveJobs($activeJobs)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getActiveJobs()
+        {
+        }
+        /**
+         * Spark Application Id
+         *
+         * @param string $applicationId
+         */
+        public function setApplicationId($applicationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApplicationId()
+        {
+        }
+        /**
+         * Attempts info
+         *
+         * @param ApplicationAttemptInfo[] $attempts
+         */
+        public function setAttempts($attempts)
+        {
+        }
+        /**
+         * @return ApplicationAttemptInfo[]
+         */
+        public function getAttempts()
+        {
+        }
+        /**
+         * Number of completed jobs
+         *
+         * @param int $completedJobs
+         */
+        public function setCompletedJobs($completedJobs)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCompletedJobs()
+        {
+        }
+        /**
+         * Number of failed jobs
+         *
+         * @param int $failedJobs
+         */
+        public function setFailedJobs($failedJobs)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getFailedJobs()
+        {
+        }
+        /**
+         * Spark Scheduling mode
+         *
+         * @param string $schedulingMode
+         */
+        public function setSchedulingMode($schedulingMode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSchedulingMode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Dataproc\JobsSummary registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActiveJobs()
-    {
-    }
-    /**
-     * Spark Application Id
-     *
-     * @param string $applicationId
-     */
-    public function setApplicationId($applicationId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getApplicationId()
-    {
-    }
-    /**
-     * Attempts info
-     *
-     * @param ApplicationAttemptInfo[] $attempts
-     */
-    public function setAttempts($attempts)
-    {
-    }
-    /**
-     * @return ApplicationAttemptInfo[]
-     */
-    public function getAttempts()
-    {
-    }
-    /**
-     * Number of completed jobs
-     *
-     * @param int $completedJobs
-     */
-    public function setCompletedJobs($completedJobs)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getCompletedJobs()
-    {
-    }
-    /**
-     * Number of failed jobs
-     *
-     * @param int $failedJobs
-     */
-    public function setFailedJobs($failedJobs)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getFailedJobs()
-    {
-    }
-    /**
-     * Spark Scheduling mode
-     *
-     * @param string $schedulingMode
-     */
-    public function setSchedulingMode($schedulingMode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSchedulingMode()
+    class Google_Service_Dataproc_JobsSummary extends \Google\Service\Dataproc\JobsSummary
     {
     }
 }

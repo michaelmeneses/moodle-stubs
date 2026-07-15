@@ -21,97 +21,106 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides;
-
-class UpdateTableRowPropertiesRequest extends \Google\Collection
-{
-    protected $collection_key = 'rowIndices';
-    /**
-     * The fields that should be updated. At least one field must be specified.
-     * The root `tableRowProperties` is implied and should not be specified. A
-     * single `"*"` can be used as short-hand for listing every field. For example
-     * to update the minimum row height, set `fields` to `"min_row_height"`. If
-     * '"min_row_height"' is included in the field mask but the property is left
-     * unset, the minimum row height will default to 0.
-     *
-     * @var string
-     */
-    public $fields;
-    /**
-     * The object ID of the table.
-     *
-     * @var string
-     */
-    public $objectId;
-    /**
-     * The list of zero-based indices specifying which rows to update. If no
-     * indices are provided, all rows in the table will be updated.
-     *
-     * @var int[]
-     */
-    public $rowIndices;
-    protected $tableRowPropertiesType = TableRowProperties::class;
-    protected $tableRowPropertiesDataType = '';
-    /**
-     * The fields that should be updated. At least one field must be specified.
-     * The root `tableRowProperties` is implied and should not be specified. A
-     * single `"*"` can be used as short-hand for listing every field. For example
-     * to update the minimum row height, set `fields` to `"min_row_height"`. If
-     * '"min_row_height"' is included in the field mask but the property is left
-     * unset, the minimum row height will default to 0.
-     *
-     * @param string $fields
-     */
-    public function setFields($fields)
+namespace Google\Service\Slides {
+    class UpdateTableRowPropertiesRequest extends \Google\Collection
     {
+        protected $collection_key = 'rowIndices';
+        /**
+         * The fields that should be updated. At least one field must be specified.
+         * The root `tableRowProperties` is implied and should not be specified. A
+         * single `"*"` can be used as short-hand for listing every field. For example
+         * to update the minimum row height, set `fields` to `"min_row_height"`. If
+         * '"min_row_height"' is included in the field mask but the property is left
+         * unset, the minimum row height will default to 0.
+         *
+         * @var string
+         */
+        public $fields;
+        /**
+         * The object ID of the table.
+         *
+         * @var string
+         */
+        public $objectId;
+        /**
+         * The list of zero-based indices specifying which rows to update. If no
+         * indices are provided, all rows in the table will be updated.
+         *
+         * @var int[]
+         */
+        public $rowIndices;
+        protected $tableRowPropertiesType = TableRowProperties::class;
+        protected $tableRowPropertiesDataType = '';
+        /**
+         * The fields that should be updated. At least one field must be specified.
+         * The root `tableRowProperties` is implied and should not be specified. A
+         * single `"*"` can be used as short-hand for listing every field. For example
+         * to update the minimum row height, set `fields` to `"min_row_height"`. If
+         * '"min_row_height"' is included in the field mask but the property is left
+         * unset, the minimum row height will default to 0.
+         *
+         * @param string $fields
+         */
+        public function setFields($fields)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFields()
+        {
+        }
+        /**
+         * The object ID of the table.
+         *
+         * @param string $objectId
+         */
+        public function setObjectId($objectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectId()
+        {
+        }
+        /**
+         * The list of zero-based indices specifying which rows to update. If no
+         * indices are provided, all rows in the table will be updated.
+         *
+         * @param int[] $rowIndices
+         */
+        public function setRowIndices($rowIndices)
+        {
+        }
+        /**
+         * @return int[]
+         */
+        public function getRowIndices()
+        {
+        }
+        /**
+         * The table row properties to update.
+         *
+         * @param TableRowProperties $tableRowProperties
+         */
+        public function setTableRowProperties(TableRowProperties $tableRowProperties)
+        {
+        }
+        /**
+         * @return TableRowProperties
+         */
+        public function getTableRowProperties()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Slides\UpdateTableRowPropertiesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFields()
-    {
-    }
-    /**
-     * The object ID of the table.
-     *
-     * @param string $objectId
-     */
-    public function setObjectId($objectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObjectId()
-    {
-    }
-    /**
-     * The list of zero-based indices specifying which rows to update. If no
-     * indices are provided, all rows in the table will be updated.
-     *
-     * @param int[] $rowIndices
-     */
-    public function setRowIndices($rowIndices)
-    {
-    }
-    /**
-     * @return int[]
-     */
-    public function getRowIndices()
-    {
-    }
-    /**
-     * The table row properties to update.
-     *
-     * @param TableRowProperties $tableRowProperties
-     */
-    public function setTableRowProperties(TableRowProperties $tableRowProperties)
-    {
-    }
-    /**
-     * @return TableRowProperties
-     */
-    public function getTableRowProperties()
+    class Google_Service_Slides_UpdateTableRowPropertiesRequest extends \Google\Service\Slides\UpdateTableRowPropertiesRequest
     {
     }
 }

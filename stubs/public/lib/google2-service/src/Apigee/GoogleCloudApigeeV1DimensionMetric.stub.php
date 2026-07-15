@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1DimensionMetric extends \Google\Collection
-{
-    protected $collection_key = 'metrics';
-    /**
-     * Individual dimension names. E.g. ["dim1_name", "dim2_name"].
-     *
-     * @var string[]
-     */
-    public $individualNames;
-    protected $metricsType = GoogleCloudApigeeV1Metric::class;
-    protected $metricsDataType = 'array';
-    /**
-     * Comma joined dimension names. E.g. "dim1_name,dim2_name". Deprecated. If
-     * name already has comma before join, we may get wrong splits. Please use
-     * individual_names.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $name;
-    /**
-     * Individual dimension names. E.g. ["dim1_name", "dim2_name"].
-     *
-     * @param string[] $individualNames
-     */
-    public function setIndividualNames($individualNames)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1DimensionMetric extends \Google\Collection
     {
+        protected $collection_key = 'metrics';
+        /**
+         * Individual dimension names. E.g. ["dim1_name", "dim2_name"].
+         *
+         * @var string[]
+         */
+        public $individualNames;
+        protected $metricsType = GoogleCloudApigeeV1Metric::class;
+        protected $metricsDataType = 'array';
+        /**
+         * Comma joined dimension names. E.g. "dim1_name,dim2_name". Deprecated. If
+         * name already has comma before join, we may get wrong splits. Please use
+         * individual_names.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $name;
+        /**
+         * Individual dimension names. E.g. ["dim1_name", "dim2_name"].
+         *
+         * @param string[] $individualNames
+         */
+        public function setIndividualNames($individualNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getIndividualNames()
+        {
+        }
+        /**
+         * List of metrics.
+         *
+         * @param GoogleCloudApigeeV1Metric[] $metrics
+         */
+        public function setMetrics($metrics)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1Metric[]
+         */
+        public function getMetrics()
+        {
+        }
+        /**
+         * Comma joined dimension names. E.g. "dim1_name,dim2_name". Deprecated. If
+         * name already has comma before join, we may get wrong splits. Please use
+         * individual_names.
+         *
+         * @deprecated
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1DimensionMetric registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIndividualNames()
-    {
-    }
-    /**
-     * List of metrics.
-     *
-     * @param GoogleCloudApigeeV1Metric[] $metrics
-     */
-    public function setMetrics($metrics)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1Metric[]
-     */
-    public function getMetrics()
-    {
-    }
-    /**
-     * Comma joined dimension names. E.g. "dim1_name,dim2_name". Deprecated. If
-     * name already has comma before join, we may get wrong splits. Please use
-     * individual_names.
-     *
-     * @deprecated
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Apigee_GoogleCloudApigeeV1DimensionMetric extends \Google\Service\Apigee\GoogleCloudApigeeV1DimensionMetric
     {
     }
 }

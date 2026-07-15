@@ -21,461 +21,470 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class Note extends \Google\Collection
-{
-    /**
-     * Default value. This value is unused.
-     */
-    public const KIND_NOTE_KIND_UNSPECIFIED = 'NOTE_KIND_UNSPECIFIED';
-    /**
-     * The note and occurrence represent a package vulnerability.
-     */
-    public const KIND_VULNERABILITY = 'VULNERABILITY';
-    /**
-     * The note and occurrence assert build provenance.
-     */
-    public const KIND_BUILD = 'BUILD';
-    /**
-     * This represents an image basis relationship.
-     */
-    public const KIND_IMAGE = 'IMAGE';
-    /**
-     * This represents a package installed via a package manager.
-     */
-    public const KIND_PACKAGE = 'PACKAGE';
-    /**
-     * The note and occurrence track deployment events.
-     */
-    public const KIND_DEPLOYMENT = 'DEPLOYMENT';
-    /**
-     * The note and occurrence track the initial discovery status of a resource.
-     */
-    public const KIND_DISCOVERY = 'DISCOVERY';
-    /**
-     * This represents a logical "role" that can attest to artifacts.
-     */
-    public const KIND_ATTESTATION = 'ATTESTATION';
-    /**
-     * This represents an available package upgrade.
-     */
-    public const KIND_UPGRADE = 'UPGRADE';
-    /**
-     * This represents a Compliance Note
-     */
-    public const KIND_COMPLIANCE = 'COMPLIANCE';
-    /**
-     * This represents a DSSE attestation Note
-     */
-    public const KIND_DSSE_ATTESTATION = 'DSSE_ATTESTATION';
-    /**
-     * This represents a Vulnerability Assessment.
-     */
-    public const KIND_VULNERABILITY_ASSESSMENT = 'VULNERABILITY_ASSESSMENT';
-    /**
-     * This represents an SBOM Reference.
-     */
-    public const KIND_SBOM_REFERENCE = 'SBOM_REFERENCE';
-    /**
-     * This represents a secret.
-     */
-    public const KIND_SECRET = 'SECRET';
-    protected $collection_key = 'relatedUrl';
-    protected $attestationType = AttestationNote::class;
-    protected $attestationDataType = '';
-    protected $buildType = BuildNote::class;
-    protected $buildDataType = '';
-    protected $complianceType = ComplianceNote::class;
-    protected $complianceDataType = '';
-    /**
-     * Output only. The time this note was created. This field can be used as a
-     * filter in list requests.
-     *
-     * @var string
-     */
-    public $createTime;
-    protected $deploymentType = DeploymentNote::class;
-    protected $deploymentDataType = '';
-    protected $discoveryType = DiscoveryNote::class;
-    protected $discoveryDataType = '';
-    protected $dsseAttestationType = DSSEAttestationNote::class;
-    protected $dsseAttestationDataType = '';
-    /**
-     * Time of expiration for this note. Empty if note does not expire.
-     *
-     * @var string
-     */
-    public $expirationTime;
-    protected $imageType = ImageNote::class;
-    protected $imageDataType = '';
-    /**
-     * Output only. The type of analysis. This field can be used as a filter in
-     * list requests.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * A detailed description of this note.
-     *
-     * @var string
-     */
-    public $longDescription;
-    /**
-     * Output only. The name of the note in the form of
-     * `projects/[PROVIDER_ID]/notes/[NOTE_ID]`.
-     *
-     * @var string
-     */
-    public $name;
-    protected $packageType = PackageNote::class;
-    protected $packageDataType = '';
-    /**
-     * Other notes related to this note.
-     *
-     * @var string[]
-     */
-    public $relatedNoteNames;
-    protected $relatedUrlType = RelatedUrl::class;
-    protected $relatedUrlDataType = 'array';
-    protected $sbomReferenceType = SBOMReferenceNote::class;
-    protected $sbomReferenceDataType = '';
-    protected $secretType = SecretNote::class;
-    protected $secretDataType = '';
-    /**
-     * A one sentence description of this note.
-     *
-     * @var string
-     */
-    public $shortDescription;
-    /**
-     * Output only. The time this note was last updated. This field can be used as
-     * a filter in list requests.
-     *
-     * @var string
-     */
-    public $updateTime;
-    protected $upgradeType = UpgradeNote::class;
-    protected $upgradeDataType = '';
-    protected $vulnerabilityType = VulnerabilityNote::class;
-    protected $vulnerabilityDataType = '';
-    protected $vulnerabilityAssessmentType = VulnerabilityAssessmentNote::class;
-    protected $vulnerabilityAssessmentDataType = '';
-    /**
-     * A note describing an attestation role.
-     *
-     * @param AttestationNote $attestation
-     */
-    public function setAttestation(AttestationNote $attestation)
+namespace Google\Service\ContainerAnalysis {
+    class Note extends \Google\Collection
     {
+        /**
+         * Default value. This value is unused.
+         */
+        public const KIND_NOTE_KIND_UNSPECIFIED = 'NOTE_KIND_UNSPECIFIED';
+        /**
+         * The note and occurrence represent a package vulnerability.
+         */
+        public const KIND_VULNERABILITY = 'VULNERABILITY';
+        /**
+         * The note and occurrence assert build provenance.
+         */
+        public const KIND_BUILD = 'BUILD';
+        /**
+         * This represents an image basis relationship.
+         */
+        public const KIND_IMAGE = 'IMAGE';
+        /**
+         * This represents a package installed via a package manager.
+         */
+        public const KIND_PACKAGE = 'PACKAGE';
+        /**
+         * The note and occurrence track deployment events.
+         */
+        public const KIND_DEPLOYMENT = 'DEPLOYMENT';
+        /**
+         * The note and occurrence track the initial discovery status of a resource.
+         */
+        public const KIND_DISCOVERY = 'DISCOVERY';
+        /**
+         * This represents a logical "role" that can attest to artifacts.
+         */
+        public const KIND_ATTESTATION = 'ATTESTATION';
+        /**
+         * This represents an available package upgrade.
+         */
+        public const KIND_UPGRADE = 'UPGRADE';
+        /**
+         * This represents a Compliance Note
+         */
+        public const KIND_COMPLIANCE = 'COMPLIANCE';
+        /**
+         * This represents a DSSE attestation Note
+         */
+        public const KIND_DSSE_ATTESTATION = 'DSSE_ATTESTATION';
+        /**
+         * This represents a Vulnerability Assessment.
+         */
+        public const KIND_VULNERABILITY_ASSESSMENT = 'VULNERABILITY_ASSESSMENT';
+        /**
+         * This represents an SBOM Reference.
+         */
+        public const KIND_SBOM_REFERENCE = 'SBOM_REFERENCE';
+        /**
+         * This represents a secret.
+         */
+        public const KIND_SECRET = 'SECRET';
+        protected $collection_key = 'relatedUrl';
+        protected $attestationType = AttestationNote::class;
+        protected $attestationDataType = '';
+        protected $buildType = BuildNote::class;
+        protected $buildDataType = '';
+        protected $complianceType = ComplianceNote::class;
+        protected $complianceDataType = '';
+        /**
+         * Output only. The time this note was created. This field can be used as a
+         * filter in list requests.
+         *
+         * @var string
+         */
+        public $createTime;
+        protected $deploymentType = DeploymentNote::class;
+        protected $deploymentDataType = '';
+        protected $discoveryType = DiscoveryNote::class;
+        protected $discoveryDataType = '';
+        protected $dsseAttestationType = DSSEAttestationNote::class;
+        protected $dsseAttestationDataType = '';
+        /**
+         * Time of expiration for this note. Empty if note does not expire.
+         *
+         * @var string
+         */
+        public $expirationTime;
+        protected $imageType = ImageNote::class;
+        protected $imageDataType = '';
+        /**
+         * Output only. The type of analysis. This field can be used as a filter in
+         * list requests.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * A detailed description of this note.
+         *
+         * @var string
+         */
+        public $longDescription;
+        /**
+         * Output only. The name of the note in the form of
+         * `projects/[PROVIDER_ID]/notes/[NOTE_ID]`.
+         *
+         * @var string
+         */
+        public $name;
+        protected $packageType = PackageNote::class;
+        protected $packageDataType = '';
+        /**
+         * Other notes related to this note.
+         *
+         * @var string[]
+         */
+        public $relatedNoteNames;
+        protected $relatedUrlType = RelatedUrl::class;
+        protected $relatedUrlDataType = 'array';
+        protected $sbomReferenceType = SBOMReferenceNote::class;
+        protected $sbomReferenceDataType = '';
+        protected $secretType = SecretNote::class;
+        protected $secretDataType = '';
+        /**
+         * A one sentence description of this note.
+         *
+         * @var string
+         */
+        public $shortDescription;
+        /**
+         * Output only. The time this note was last updated. This field can be used as
+         * a filter in list requests.
+         *
+         * @var string
+         */
+        public $updateTime;
+        protected $upgradeType = UpgradeNote::class;
+        protected $upgradeDataType = '';
+        protected $vulnerabilityType = VulnerabilityNote::class;
+        protected $vulnerabilityDataType = '';
+        protected $vulnerabilityAssessmentType = VulnerabilityAssessmentNote::class;
+        protected $vulnerabilityAssessmentDataType = '';
+        /**
+         * A note describing an attestation role.
+         *
+         * @param AttestationNote $attestation
+         */
+        public function setAttestation(AttestationNote $attestation)
+        {
+        }
+        /**
+         * @return AttestationNote
+         */
+        public function getAttestation()
+        {
+        }
+        /**
+         * A note describing build provenance for a verifiable build.
+         *
+         * @param BuildNote $build
+         */
+        public function setBuild(BuildNote $build)
+        {
+        }
+        /**
+         * @return BuildNote
+         */
+        public function getBuild()
+        {
+        }
+        /**
+         * A note describing a compliance check.
+         *
+         * @param ComplianceNote $compliance
+         */
+        public function setCompliance(ComplianceNote $compliance)
+        {
+        }
+        /**
+         * @return ComplianceNote
+         */
+        public function getCompliance()
+        {
+        }
+        /**
+         * Output only. The time this note was created. This field can be used as a
+         * filter in list requests.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * A note describing something that can be deployed.
+         *
+         * @param DeploymentNote $deployment
+         */
+        public function setDeployment(DeploymentNote $deployment)
+        {
+        }
+        /**
+         * @return DeploymentNote
+         */
+        public function getDeployment()
+        {
+        }
+        /**
+         * A note describing the initial analysis of a resource.
+         *
+         * @param DiscoveryNote $discovery
+         */
+        public function setDiscovery(DiscoveryNote $discovery)
+        {
+        }
+        /**
+         * @return DiscoveryNote
+         */
+        public function getDiscovery()
+        {
+        }
+        /**
+         * A note describing a dsse attestation note.
+         *
+         * @param DSSEAttestationNote $dsseAttestation
+         */
+        public function setDsseAttestation(DSSEAttestationNote $dsseAttestation)
+        {
+        }
+        /**
+         * @return DSSEAttestationNote
+         */
+        public function getDsseAttestation()
+        {
+        }
+        /**
+         * Time of expiration for this note. Empty if note does not expire.
+         *
+         * @param string $expirationTime
+         */
+        public function setExpirationTime($expirationTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpirationTime()
+        {
+        }
+        /**
+         * A note describing a base image.
+         *
+         * @param ImageNote $image
+         */
+        public function setImage(ImageNote $image)
+        {
+        }
+        /**
+         * @return ImageNote
+         */
+        public function getImage()
+        {
+        }
+        /**
+         * Output only. The type of analysis. This field can be used as a filter in
+         * list requests.
+         *
+         * Accepted values: NOTE_KIND_UNSPECIFIED, VULNERABILITY, BUILD, IMAGE,
+         * PACKAGE, DEPLOYMENT, DISCOVERY, ATTESTATION, UPGRADE, COMPLIANCE,
+         * DSSE_ATTESTATION, VULNERABILITY_ASSESSMENT, SBOM_REFERENCE, SECRET
+         *
+         * @param self::KIND_* $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return self::KIND_*
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * A detailed description of this note.
+         *
+         * @param string $longDescription
+         */
+        public function setLongDescription($longDescription)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLongDescription()
+        {
+        }
+        /**
+         * Output only. The name of the note in the form of
+         * `projects/[PROVIDER_ID]/notes/[NOTE_ID]`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * A note describing a package hosted by various package managers.
+         *
+         * @param PackageNote $package
+         */
+        public function setPackage(PackageNote $package)
+        {
+        }
+        /**
+         * @return PackageNote
+         */
+        public function getPackage()
+        {
+        }
+        /**
+         * Other notes related to this note.
+         *
+         * @param string[] $relatedNoteNames
+         */
+        public function setRelatedNoteNames($relatedNoteNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRelatedNoteNames()
+        {
+        }
+        /**
+         * URLs associated with this note.
+         *
+         * @param RelatedUrl[] $relatedUrl
+         */
+        public function setRelatedUrl($relatedUrl)
+        {
+        }
+        /**
+         * @return RelatedUrl[]
+         */
+        public function getRelatedUrl()
+        {
+        }
+        /**
+         * A note describing an SBOM reference.
+         *
+         * @param SBOMReferenceNote $sbomReference
+         */
+        public function setSbomReference(SBOMReferenceNote $sbomReference)
+        {
+        }
+        /**
+         * @return SBOMReferenceNote
+         */
+        public function getSbomReference()
+        {
+        }
+        /**
+         * A note describing a secret.
+         *
+         * @param SecretNote $secret
+         */
+        public function setSecret(SecretNote $secret)
+        {
+        }
+        /**
+         * @return SecretNote
+         */
+        public function getSecret()
+        {
+        }
+        /**
+         * A one sentence description of this note.
+         *
+         * @param string $shortDescription
+         */
+        public function setShortDescription($shortDescription)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getShortDescription()
+        {
+        }
+        /**
+         * Output only. The time this note was last updated. This field can be used as
+         * a filter in list requests.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
+        /**
+         * A note describing available package upgrades.
+         *
+         * @param UpgradeNote $upgrade
+         */
+        public function setUpgrade(UpgradeNote $upgrade)
+        {
+        }
+        /**
+         * @return UpgradeNote
+         */
+        public function getUpgrade()
+        {
+        }
+        /**
+         * A note describing a package vulnerability.
+         *
+         * @param VulnerabilityNote $vulnerability
+         */
+        public function setVulnerability(VulnerabilityNote $vulnerability)
+        {
+        }
+        /**
+         * @return VulnerabilityNote
+         */
+        public function getVulnerability()
+        {
+        }
+        /**
+         * A note describing a vulnerability assessment.
+         *
+         * @param VulnerabilityAssessmentNote $vulnerabilityAssessment
+         */
+        public function setVulnerabilityAssessment(VulnerabilityAssessmentNote $vulnerabilityAssessment)
+        {
+        }
+        /**
+         * @return VulnerabilityAssessmentNote
+         */
+        public function getVulnerabilityAssessment()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AttestationNote
+     * Runtime class alias of \Google\Service\ContainerAnalysis\Note registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttestation()
-    {
-    }
-    /**
-     * A note describing build provenance for a verifiable build.
-     *
-     * @param BuildNote $build
-     */
-    public function setBuild(BuildNote $build)
-    {
-    }
-    /**
-     * @return BuildNote
-     */
-    public function getBuild()
-    {
-    }
-    /**
-     * A note describing a compliance check.
-     *
-     * @param ComplianceNote $compliance
-     */
-    public function setCompliance(ComplianceNote $compliance)
-    {
-    }
-    /**
-     * @return ComplianceNote
-     */
-    public function getCompliance()
-    {
-    }
-    /**
-     * Output only. The time this note was created. This field can be used as a
-     * filter in list requests.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * A note describing something that can be deployed.
-     *
-     * @param DeploymentNote $deployment
-     */
-    public function setDeployment(DeploymentNote $deployment)
-    {
-    }
-    /**
-     * @return DeploymentNote
-     */
-    public function getDeployment()
-    {
-    }
-    /**
-     * A note describing the initial analysis of a resource.
-     *
-     * @param DiscoveryNote $discovery
-     */
-    public function setDiscovery(DiscoveryNote $discovery)
-    {
-    }
-    /**
-     * @return DiscoveryNote
-     */
-    public function getDiscovery()
-    {
-    }
-    /**
-     * A note describing a dsse attestation note.
-     *
-     * @param DSSEAttestationNote $dsseAttestation
-     */
-    public function setDsseAttestation(DSSEAttestationNote $dsseAttestation)
-    {
-    }
-    /**
-     * @return DSSEAttestationNote
-     */
-    public function getDsseAttestation()
-    {
-    }
-    /**
-     * Time of expiration for this note. Empty if note does not expire.
-     *
-     * @param string $expirationTime
-     */
-    public function setExpirationTime($expirationTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExpirationTime()
-    {
-    }
-    /**
-     * A note describing a base image.
-     *
-     * @param ImageNote $image
-     */
-    public function setImage(ImageNote $image)
-    {
-    }
-    /**
-     * @return ImageNote
-     */
-    public function getImage()
-    {
-    }
-    /**
-     * Output only. The type of analysis. This field can be used as a filter in
-     * list requests.
-     *
-     * Accepted values: NOTE_KIND_UNSPECIFIED, VULNERABILITY, BUILD, IMAGE,
-     * PACKAGE, DEPLOYMENT, DISCOVERY, ATTESTATION, UPGRADE, COMPLIANCE,
-     * DSSE_ATTESTATION, VULNERABILITY_ASSESSMENT, SBOM_REFERENCE, SECRET
-     *
-     * @param self::KIND_* $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return self::KIND_*
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * A detailed description of this note.
-     *
-     * @param string $longDescription
-     */
-    public function setLongDescription($longDescription)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLongDescription()
-    {
-    }
-    /**
-     * Output only. The name of the note in the form of
-     * `projects/[PROVIDER_ID]/notes/[NOTE_ID]`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * A note describing a package hosted by various package managers.
-     *
-     * @param PackageNote $package
-     */
-    public function setPackage(PackageNote $package)
-    {
-    }
-    /**
-     * @return PackageNote
-     */
-    public function getPackage()
-    {
-    }
-    /**
-     * Other notes related to this note.
-     *
-     * @param string[] $relatedNoteNames
-     */
-    public function setRelatedNoteNames($relatedNoteNames)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRelatedNoteNames()
-    {
-    }
-    /**
-     * URLs associated with this note.
-     *
-     * @param RelatedUrl[] $relatedUrl
-     */
-    public function setRelatedUrl($relatedUrl)
-    {
-    }
-    /**
-     * @return RelatedUrl[]
-     */
-    public function getRelatedUrl()
-    {
-    }
-    /**
-     * A note describing an SBOM reference.
-     *
-     * @param SBOMReferenceNote $sbomReference
-     */
-    public function setSbomReference(SBOMReferenceNote $sbomReference)
-    {
-    }
-    /**
-     * @return SBOMReferenceNote
-     */
-    public function getSbomReference()
-    {
-    }
-    /**
-     * A note describing a secret.
-     *
-     * @param SecretNote $secret
-     */
-    public function setSecret(SecretNote $secret)
-    {
-    }
-    /**
-     * @return SecretNote
-     */
-    public function getSecret()
-    {
-    }
-    /**
-     * A one sentence description of this note.
-     *
-     * @param string $shortDescription
-     */
-    public function setShortDescription($shortDescription)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getShortDescription()
-    {
-    }
-    /**
-     * Output only. The time this note was last updated. This field can be used as
-     * a filter in list requests.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
-    {
-    }
-    /**
-     * A note describing available package upgrades.
-     *
-     * @param UpgradeNote $upgrade
-     */
-    public function setUpgrade(UpgradeNote $upgrade)
-    {
-    }
-    /**
-     * @return UpgradeNote
-     */
-    public function getUpgrade()
-    {
-    }
-    /**
-     * A note describing a package vulnerability.
-     *
-     * @param VulnerabilityNote $vulnerability
-     */
-    public function setVulnerability(VulnerabilityNote $vulnerability)
-    {
-    }
-    /**
-     * @return VulnerabilityNote
-     */
-    public function getVulnerability()
-    {
-    }
-    /**
-     * A note describing a vulnerability assessment.
-     *
-     * @param VulnerabilityAssessmentNote $vulnerabilityAssessment
-     */
-    public function setVulnerabilityAssessment(VulnerabilityAssessmentNote $vulnerabilityAssessment)
-    {
-    }
-    /**
-     * @return VulnerabilityAssessmentNote
-     */
-    public function getVulnerabilityAssessment()
+    class Google_Service_ContainerAnalysis_Note extends \Google\Service\ContainerAnalysis\Note
     {
     }
 }

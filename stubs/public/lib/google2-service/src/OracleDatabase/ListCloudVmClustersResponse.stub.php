@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OracleDatabase;
-
-class ListCloudVmClustersResponse extends \Google\Collection
-{
-    protected $collection_key = 'cloudVmClusters';
-    protected $cloudVmClustersType = CloudVmCluster::class;
-    protected $cloudVmClustersDataType = 'array';
-    /**
-     * A token to fetch the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of VM Clusters.
-     *
-     * @param CloudVmCluster[] $cloudVmClusters
-     */
-    public function setCloudVmClusters($cloudVmClusters)
+namespace Google\Service\OracleDatabase {
+    class ListCloudVmClustersResponse extends \Google\Collection
     {
+        protected $collection_key = 'cloudVmClusters';
+        protected $cloudVmClustersType = CloudVmCluster::class;
+        protected $cloudVmClustersDataType = 'array';
+        /**
+         * A token to fetch the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of VM Clusters.
+         *
+         * @param CloudVmCluster[] $cloudVmClusters
+         */
+        public function setCloudVmClusters($cloudVmClusters)
+        {
+        }
+        /**
+         * @return CloudVmCluster[]
+         */
+        public function getCloudVmClusters()
+        {
+        }
+        /**
+         * A token to fetch the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CloudVmCluster[]
+     * Runtime class alias of \Google\Service\OracleDatabase\ListCloudVmClustersResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCloudVmClusters()
-    {
-    }
-    /**
-     * A token to fetch the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_OracleDatabase_ListCloudVmClustersResponse extends \Google\Service\OracleDatabase\ListCloudVmClustersResponse
     {
     }
 }

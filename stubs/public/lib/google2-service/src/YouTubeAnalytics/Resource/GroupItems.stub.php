@@ -21,85 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTubeAnalytics\Resource;
-
-/**
- * The "groupItems" collection of methods.
- * Typical usage is:
- *  <code>
- *   $youtubeAnalyticsService = new Google\Service\YouTubeAnalytics(...);
- *   $groupItems = $youtubeAnalyticsService->groupItems;
- *  </code>
- */
-class GroupItems extends \Google\Service\Resource
-{
+namespace Google\Service\YouTubeAnalytics\Resource {
+    use Google\Service\YouTubeAnalytics\EmptyResponse;
+    use Google\Service\YouTubeAnalytics\GroupItem;
+    use Google\Service\YouTubeAnalytics\ListGroupItemsResponse;
     /**
-     * Removes an item from a group. (groupItems.delete)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string id The `id` parameter specifies the YouTube group item ID
-     * of the group item that is being deleted.
-     * @opt_param string onBehalfOfContentOwner This parameter can only be used in a
-     * properly authorized request. **Note:** This parameter is intended exclusively
-     * for YouTube content partners that own and manage many different YouTube
-     * channels. The `onBehalfOfContentOwner` parameter indicates that the request's
-     * authorization credentials identify a YouTube user who is acting on behalf of
-     * the content owner specified in the parameter value. It allows content owners
-     * to authenticate once and get access to all their video and channel data,
-     * without having to provide authentication credentials for each individual
-     * channel. The account that the user authenticates with must be linked to the
-     * specified YouTube content owner.
-     * @return EmptyResponse
-     * @throws \Google\Service\Exception
+     * The "groupItems" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $youtubeAnalyticsService = new Google\Service\YouTubeAnalytics(...);
+     *   $groupItems = $youtubeAnalyticsService->groupItems;
+     *  </code>
      */
-    public function delete($optParams = [])
+    class GroupItems extends \Google\Service\Resource
     {
+        /**
+         * Removes an item from a group. (groupItems.delete)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string id The `id` parameter specifies the YouTube group item ID
+         * of the group item that is being deleted.
+         * @opt_param string onBehalfOfContentOwner This parameter can only be used in a
+         * properly authorized request. **Note:** This parameter is intended exclusively
+         * for YouTube content partners that own and manage many different YouTube
+         * channels. The `onBehalfOfContentOwner` parameter indicates that the request's
+         * authorization credentials identify a YouTube user who is acting on behalf of
+         * the content owner specified in the parameter value. It allows content owners
+         * to authenticate once and get access to all their video and channel data,
+         * without having to provide authentication credentials for each individual
+         * channel. The account that the user authenticates with must be linked to the
+         * specified YouTube content owner.
+         * @return EmptyResponse
+         * @throws \Google\Service\Exception
+         */
+        public function delete($optParams = [])
+        {
+        }
+        /**
+         * Creates a group item. (groupItems.insert)
+         *
+         * @param GroupItem $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string onBehalfOfContentOwner This parameter can only be used in a
+         * properly authorized request. **Note:** This parameter is intended exclusively
+         * for YouTube content partners that own and manage many different YouTube
+         * channels. The `onBehalfOfContentOwner` parameter indicates that the request's
+         * authorization credentials identify a YouTube user who is acting on behalf of
+         * the content owner specified in the parameter value. It allows content owners
+         * to authenticate once and get access to all their video and channel data,
+         * without having to provide authentication credentials for each individual
+         * channel. The account that the user authenticates with must be linked to the
+         * specified YouTube content owner.
+         * @return GroupItem
+         * @throws \Google\Service\Exception
+         */
+        public function insert(GroupItem $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Returns a collection of group items that match the API request parameters.
+         * (groupItems.listGroupItems)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string groupId The `groupId` parameter specifies the unique ID of
+         * the group for which you want to retrieve group items.
+         * @opt_param string onBehalfOfContentOwner This parameter can only be used in a
+         * properly authorized request. **Note:** This parameter is intended exclusively
+         * for YouTube content partners that own and manage many different YouTube
+         * channels. The `onBehalfOfContentOwner` parameter indicates that the request's
+         * authorization credentials identify a YouTube user who is acting on behalf of
+         * the content owner specified in the parameter value. It allows content owners
+         * to authenticate once and get access to all their video and channel data,
+         * without having to provide authentication credentials for each individual
+         * channel. The account that the user authenticates with must be linked to the
+         * specified YouTube content owner.
+         * @return ListGroupItemsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listGroupItems($optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Creates a group item. (groupItems.insert)
-     *
-     * @param GroupItem $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string onBehalfOfContentOwner This parameter can only be used in a
-     * properly authorized request. **Note:** This parameter is intended exclusively
-     * for YouTube content partners that own and manage many different YouTube
-     * channels. The `onBehalfOfContentOwner` parameter indicates that the request's
-     * authorization credentials identify a YouTube user who is acting on behalf of
-     * the content owner specified in the parameter value. It allows content owners
-     * to authenticate once and get access to all their video and channel data,
-     * without having to provide authentication credentials for each individual
-     * channel. The account that the user authenticates with must be linked to the
-     * specified YouTube content owner.
-     * @return GroupItem
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\YouTubeAnalytics\Resource\GroupItems registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function insert(GroupItem $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Returns a collection of group items that match the API request parameters.
-     * (groupItems.listGroupItems)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string groupId The `groupId` parameter specifies the unique ID of
-     * the group for which you want to retrieve group items.
-     * @opt_param string onBehalfOfContentOwner This parameter can only be used in a
-     * properly authorized request. **Note:** This parameter is intended exclusively
-     * for YouTube content partners that own and manage many different YouTube
-     * channels. The `onBehalfOfContentOwner` parameter indicates that the request's
-     * authorization credentials identify a YouTube user who is acting on behalf of
-     * the content owner specified in the parameter value. It allows content owners
-     * to authenticate once and get access to all their video and channel data,
-     * without having to provide authentication credentials for each individual
-     * channel. The account that the user authenticates with must be linked to the
-     * specified YouTube content owner.
-     * @return ListGroupItemsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listGroupItems($optParams = [])
+    class Google_Service_YouTubeAnalytics_Resource_GroupItems extends \Google\Service\YouTubeAnalytics\Resource\GroupItems
     {
     }
 }

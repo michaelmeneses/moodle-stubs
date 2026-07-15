@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDomains;
-
-class ListRegistrationsResponse extends \Google\Collection
-{
-    protected $collection_key = 'registrations';
-    /**
-     * When present, there are more results to retrieve. Set `page_token` to this
-     * value on a subsequent call to get the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $registrationsType = Registration::class;
-    protected $registrationsDataType = 'array';
-    /**
-     * When present, there are more results to retrieve. Set `page_token` to this
-     * value on a subsequent call to get the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\CloudDomains {
+    class ListRegistrationsResponse extends \Google\Collection
     {
+        protected $collection_key = 'registrations';
+        /**
+         * When present, there are more results to retrieve. Set `page_token` to this
+         * value on a subsequent call to get the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $registrationsType = Registration::class;
+        protected $registrationsDataType = 'array';
+        /**
+         * When present, there are more results to retrieve. Set `page_token` to this
+         * value on a subsequent call to get the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * A list of `Registration`s.
+         *
+         * @param Registration[] $registrations
+         */
+        public function setRegistrations($registrations)
+        {
+        }
+        /**
+         * @return Registration[]
+         */
+        public function getRegistrations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDomains\ListRegistrationsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * A list of `Registration`s.
-     *
-     * @param Registration[] $registrations
-     */
-    public function setRegistrations($registrations)
-    {
-    }
-    /**
-     * @return Registration[]
-     */
-    public function getRegistrations()
+    class Google_Service_CloudDomains_ListRegistrationsResponse extends \Google\Service\CloudDomains\ListRegistrationsResponse
     {
     }
 }

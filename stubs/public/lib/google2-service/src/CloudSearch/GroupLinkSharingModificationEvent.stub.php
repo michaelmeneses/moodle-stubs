@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class GroupLinkSharingModificationEvent extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $newStatus;
-    /**
-     * @param string
-     */
-    public function setNewStatus($newStatus)
+namespace Google\Service\CloudSearch {
+    class GroupLinkSharingModificationEvent extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $newStatus;
+        /**
+         * @param string
+         */
+        public function setNewStatus($newStatus)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNewStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\GroupLinkSharingModificationEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNewStatus()
+    class Google_Service_CloudSearch_GroupLinkSharingModificationEvent extends \Google\Service\CloudSearch\GroupLinkSharingModificationEvent
     {
     }
 }

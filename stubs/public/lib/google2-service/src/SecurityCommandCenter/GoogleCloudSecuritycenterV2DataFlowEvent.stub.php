@@ -21,128 +21,137 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GoogleCloudSecuritycenterV2DataFlowEvent extends \Google\Model
-{
-    /**
-     * The operation is unspecified.
-     */
-    public const OPERATION_OPERATION_UNSPECIFIED = 'OPERATION_UNSPECIFIED';
-    /**
-     * Represents a read operation.
-     */
-    public const OPERATION_READ = 'READ';
-    /**
-     * Represents a move operation.
-     */
-    public const OPERATION_MOVE = 'MOVE';
-    /**
-     * Represents a copy operation.
-     */
-    public const OPERATION_COPY = 'COPY';
-    /**
-     * Unique identifier for data flow event.
-     *
-     * @var string
-     */
-    public $eventId;
-    /**
-     * Timestamp of data flow event.
-     *
-     * @var string
-     */
-    public $eventTime;
-    /**
-     * The operation performed by the principal for the data flow event.
-     *
-     * @var string
-     */
-    public $operation;
-    /**
-     * The email address of the principal that initiated the data flow event. The
-     * principal could be a user account, service account, Google group, or other.
-     *
-     * @var string
-     */
-    public $principalEmail;
-    /**
-     * Non-compliant location of the principal or the data destination.
-     *
-     * @var string
-     */
-    public $violatedLocation;
-    /**
-     * Unique identifier for data flow event.
-     *
-     * @param string $eventId
-     */
-    public function setEventId($eventId)
+namespace Google\Service\SecurityCommandCenter {
+    class GoogleCloudSecuritycenterV2DataFlowEvent extends \Google\Model
     {
+        /**
+         * The operation is unspecified.
+         */
+        public const OPERATION_OPERATION_UNSPECIFIED = 'OPERATION_UNSPECIFIED';
+        /**
+         * Represents a read operation.
+         */
+        public const OPERATION_READ = 'READ';
+        /**
+         * Represents a move operation.
+         */
+        public const OPERATION_MOVE = 'MOVE';
+        /**
+         * Represents a copy operation.
+         */
+        public const OPERATION_COPY = 'COPY';
+        /**
+         * Unique identifier for data flow event.
+         *
+         * @var string
+         */
+        public $eventId;
+        /**
+         * Timestamp of data flow event.
+         *
+         * @var string
+         */
+        public $eventTime;
+        /**
+         * The operation performed by the principal for the data flow event.
+         *
+         * @var string
+         */
+        public $operation;
+        /**
+         * The email address of the principal that initiated the data flow event. The
+         * principal could be a user account, service account, Google group, or other.
+         *
+         * @var string
+         */
+        public $principalEmail;
+        /**
+         * Non-compliant location of the principal or the data destination.
+         *
+         * @var string
+         */
+        public $violatedLocation;
+        /**
+         * Unique identifier for data flow event.
+         *
+         * @param string $eventId
+         */
+        public function setEventId($eventId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEventId()
+        {
+        }
+        /**
+         * Timestamp of data flow event.
+         *
+         * @param string $eventTime
+         */
+        public function setEventTime($eventTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEventTime()
+        {
+        }
+        /**
+         * The operation performed by the principal for the data flow event.
+         *
+         * Accepted values: OPERATION_UNSPECIFIED, READ, MOVE, COPY
+         *
+         * @param self::OPERATION_* $operation
+         */
+        public function setOperation($operation)
+        {
+        }
+        /**
+         * @return self::OPERATION_*
+         */
+        public function getOperation()
+        {
+        }
+        /**
+         * The email address of the principal that initiated the data flow event. The
+         * principal could be a user account, service account, Google group, or other.
+         *
+         * @param string $principalEmail
+         */
+        public function setPrincipalEmail($principalEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrincipalEmail()
+        {
+        }
+        /**
+         * Non-compliant location of the principal or the data destination.
+         *
+         * @param string $violatedLocation
+         */
+        public function setViolatedLocation($violatedLocation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getViolatedLocation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2DataFlowEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEventId()
-    {
-    }
-    /**
-     * Timestamp of data flow event.
-     *
-     * @param string $eventTime
-     */
-    public function setEventTime($eventTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEventTime()
-    {
-    }
-    /**
-     * The operation performed by the principal for the data flow event.
-     *
-     * Accepted values: OPERATION_UNSPECIFIED, READ, MOVE, COPY
-     *
-     * @param self::OPERATION_* $operation
-     */
-    public function setOperation($operation)
-    {
-    }
-    /**
-     * @return self::OPERATION_*
-     */
-    public function getOperation()
-    {
-    }
-    /**
-     * The email address of the principal that initiated the data flow event. The
-     * principal could be a user account, service account, Google group, or other.
-     *
-     * @param string $principalEmail
-     */
-    public function setPrincipalEmail($principalEmail)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrincipalEmail()
-    {
-    }
-    /**
-     * Non-compliant location of the principal or the data destination.
-     *
-     * @param string $violatedLocation
-     */
-    public function setViolatedLocation($violatedLocation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getViolatedLocation()
+    class Google_Service_SecurityCommandCenter_GoogleCloudSecuritycenterV2DataFlowEvent extends \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2DataFlowEvent
     {
     }
 }

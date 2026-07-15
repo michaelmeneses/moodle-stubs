@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class NetworkPolicy extends \Google\Model
-{
-    /**
-     * Not set
-     */
-    public const PROVIDER_PROVIDER_UNSPECIFIED = 'PROVIDER_UNSPECIFIED';
-    /**
-     * Tigera (Calico Felix).
-     */
-    public const PROVIDER_CALICO = 'CALICO';
-    /**
-     * Whether network policy is enabled on the cluster.
-     *
-     * @var bool
-     */
-    public $enabled;
-    /**
-     * The selected network policy provider.
-     *
-     * @var string
-     */
-    public $provider;
-    /**
-     * Whether network policy is enabled on the cluster.
-     *
-     * @param bool $enabled
-     */
-    public function setEnabled($enabled)
+namespace Google\Service\Container {
+    class NetworkPolicy extends \Google\Model
     {
+        /**
+         * Not set
+         */
+        public const PROVIDER_PROVIDER_UNSPECIFIED = 'PROVIDER_UNSPECIFIED';
+        /**
+         * Tigera (Calico Felix).
+         */
+        public const PROVIDER_CALICO = 'CALICO';
+        /**
+         * Whether network policy is enabled on the cluster.
+         *
+         * @var bool
+         */
+        public $enabled;
+        /**
+         * The selected network policy provider.
+         *
+         * @var string
+         */
+        public $provider;
+        /**
+         * Whether network policy is enabled on the cluster.
+         *
+         * @param bool $enabled
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
+        /**
+         * The selected network policy provider.
+         *
+         * Accepted values: PROVIDER_UNSPECIFIED, CALICO
+         *
+         * @param self::PROVIDER_* $provider
+         */
+        public function setProvider($provider)
+        {
+        }
+        /**
+         * @return self::PROVIDER_*
+         */
+        public function getProvider()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Container\NetworkPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnabled()
-    {
-    }
-    /**
-     * The selected network policy provider.
-     *
-     * Accepted values: PROVIDER_UNSPECIFIED, CALICO
-     *
-     * @param self::PROVIDER_* $provider
-     */
-    public function setProvider($provider)
-    {
-    }
-    /**
-     * @return self::PROVIDER_*
-     */
-    public function getProvider()
+    class Google_Service_Container_NetworkPolicy extends \Google\Service\Container\NetworkPolicy
     {
     }
 }

@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1BatchCreateTensorboardTimeSeriesResponse extends \Google\Collection
-{
-    protected $collection_key = 'tensorboardTimeSeries';
-    protected $tensorboardTimeSeriesType = GoogleCloudAiplatformV1TensorboardTimeSeries::class;
-    protected $tensorboardTimeSeriesDataType = 'array';
-    /**
-     * The created TensorboardTimeSeries.
-     *
-     * @param GoogleCloudAiplatformV1TensorboardTimeSeries[] $tensorboardTimeSeries
-     */
-    public function setTensorboardTimeSeries($tensorboardTimeSeries)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1BatchCreateTensorboardTimeSeriesResponse extends \Google\Collection
     {
+        protected $collection_key = 'tensorboardTimeSeries';
+        protected $tensorboardTimeSeriesType = GoogleCloudAiplatformV1TensorboardTimeSeries::class;
+        protected $tensorboardTimeSeriesDataType = 'array';
+        /**
+         * The created TensorboardTimeSeries.
+         *
+         * @param GoogleCloudAiplatformV1TensorboardTimeSeries[] $tensorboardTimeSeries
+         */
+        public function setTensorboardTimeSeries($tensorboardTimeSeries)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1TensorboardTimeSeries[]
+         */
+        public function getTensorboardTimeSeries()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1TensorboardTimeSeries[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1BatchCreateTensorboardTimeSeriesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTensorboardTimeSeries()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1BatchCreateTensorboardTimeSeriesResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1BatchCreateTensorboardTimeSeriesResponse
     {
     }
 }

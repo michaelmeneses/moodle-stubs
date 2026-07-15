@@ -21,114 +21,123 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Adsense;
-
-class Alert extends \Google\Model
-{
-    /**
-     * Unspecified severity.
-     */
-    public const SEVERITY_SEVERITY_UNSPECIFIED = 'SEVERITY_UNSPECIFIED';
-    /**
-     * Info.
-     */
-    public const SEVERITY_INFO = 'INFO';
-    /**
-     * Warning.
-     */
-    public const SEVERITY_WARNING = 'WARNING';
-    /**
-     * Severe.
-     */
-    public const SEVERITY_SEVERE = 'SEVERE';
-    /**
-     * Output only. The localized alert message. This may contain HTML markup,
-     * such as phrase elements or links.
-     *
-     * @var string
-     */
-    public $message;
-    /**
-     * Output only. Resource name of the alert. Format:
-     * accounts/{account}/alerts/{alert}
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. Severity of this alert.
-     *
-     * @var string
-     */
-    public $severity;
-    /**
-     * Output only. Type of alert. This identifies the broad type of this alert,
-     * and provides a stable machine-readable identifier that will not be
-     * translated. For example, "payment-hold".
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Output only. The localized alert message. This may contain HTML markup,
-     * such as phrase elements or links.
-     *
-     * @param string $message
-     */
-    public function setMessage($message)
+namespace Google\Service\Adsense {
+    class Alert extends \Google\Model
     {
+        /**
+         * Unspecified severity.
+         */
+        public const SEVERITY_SEVERITY_UNSPECIFIED = 'SEVERITY_UNSPECIFIED';
+        /**
+         * Info.
+         */
+        public const SEVERITY_INFO = 'INFO';
+        /**
+         * Warning.
+         */
+        public const SEVERITY_WARNING = 'WARNING';
+        /**
+         * Severe.
+         */
+        public const SEVERITY_SEVERE = 'SEVERE';
+        /**
+         * Output only. The localized alert message. This may contain HTML markup,
+         * such as phrase elements or links.
+         *
+         * @var string
+         */
+        public $message;
+        /**
+         * Output only. Resource name of the alert. Format:
+         * accounts/{account}/alerts/{alert}
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. Severity of this alert.
+         *
+         * @var string
+         */
+        public $severity;
+        /**
+         * Output only. Type of alert. This identifies the broad type of this alert,
+         * and provides a stable machine-readable identifier that will not be
+         * translated. For example, "payment-hold".
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Output only. The localized alert message. This may contain HTML markup,
+         * such as phrase elements or links.
+         *
+         * @param string $message
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
+        /**
+         * Output only. Resource name of the alert. Format:
+         * accounts/{account}/alerts/{alert}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. Severity of this alert.
+         *
+         * Accepted values: SEVERITY_UNSPECIFIED, INFO, WARNING, SEVERE
+         *
+         * @param self::SEVERITY_* $severity
+         */
+        public function setSeverity($severity)
+        {
+        }
+        /**
+         * @return self::SEVERITY_*
+         */
+        public function getSeverity()
+        {
+        }
+        /**
+         * Output only. Type of alert. This identifies the broad type of this alert,
+         * and provides a stable machine-readable identifier that will not be
+         * translated. For example, "payment-hold".
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Adsense\Alert registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMessage()
-    {
-    }
-    /**
-     * Output only. Resource name of the alert. Format:
-     * accounts/{account}/alerts/{alert}
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. Severity of this alert.
-     *
-     * Accepted values: SEVERITY_UNSPECIFIED, INFO, WARNING, SEVERE
-     *
-     * @param self::SEVERITY_* $severity
-     */
-    public function setSeverity($severity)
-    {
-    }
-    /**
-     * @return self::SEVERITY_*
-     */
-    public function getSeverity()
-    {
-    }
-    /**
-     * Output only. Type of alert. This identifies the broad type of this alert,
-     * and provides a stable machine-readable identifier that will not be
-     * translated. For example, "payment-hold".
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_Adsense_Alert extends \Google\Service\Adsense\Alert
     {
     }
 }

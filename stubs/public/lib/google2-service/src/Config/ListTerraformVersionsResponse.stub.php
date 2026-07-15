@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Config;
-
-class ListTerraformVersionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    /**
-     * Token to be supplied to the next ListTerraformVersions request via
-     * `page_token` to obtain the next set of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $terraformVersionsType = TerraformVersion::class;
-    protected $terraformVersionsDataType = 'array';
-    /**
-     * Unreachable resources, if any.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * Token to be supplied to the next ListTerraformVersions request via
-     * `page_token` to obtain the next set of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Config {
+    class ListTerraformVersionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        /**
+         * Token to be supplied to the next ListTerraformVersions request via
+         * `page_token` to obtain the next set of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $terraformVersionsType = TerraformVersion::class;
+        protected $terraformVersionsDataType = 'array';
+        /**
+         * Unreachable resources, if any.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * Token to be supplied to the next ListTerraformVersions request via
+         * `page_token` to obtain the next set of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * List of TerraformVersions.
+         *
+         * @param TerraformVersion[] $terraformVersions
+         */
+        public function setTerraformVersions($terraformVersions)
+        {
+        }
+        /**
+         * @return TerraformVersion[]
+         */
+        public function getTerraformVersions()
+        {
+        }
+        /**
+         * Unreachable resources, if any.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Config\ListTerraformVersionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * List of TerraformVersions.
-     *
-     * @param TerraformVersion[] $terraformVersions
-     */
-    public function setTerraformVersions($terraformVersions)
-    {
-    }
-    /**
-     * @return TerraformVersion[]
-     */
-    public function getTerraformVersions()
-    {
-    }
-    /**
-     * Unreachable resources, if any.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_Config_ListTerraformVersionsResponse extends \Google\Service\Config\ListTerraformVersionsResponse
     {
     }
 }

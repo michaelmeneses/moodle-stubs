@@ -21,152 +21,161 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class CommentThreadSnippet extends \Google\Model
-{
-    /**
-     * Whether the current viewer of the thread can reply to it. This is viewer
-     * specific - other viewers may see a different value for this field.
-     *
-     * @var bool
-     */
-    public $canReply;
-    /**
-     * The YouTube channel the comments in the thread refer to or the channel with
-     * the video the comments refer to. If neither video_id nor post_id is set the
-     * comments refer to the channel itself.
-     *
-     * @var string
-     */
-    public $channelId;
-    /**
-     * Whether the thread (and therefore all its comments) is visible to all
-     * YouTube users.
-     *
-     * @var bool
-     */
-    public $isPublic;
-    /**
-     * The ID of the post the comments refer to, if any.
-     *
-     * @var string
-     */
-    public $postId;
-    protected $topLevelCommentType = Comment::class;
-    protected $topLevelCommentDataType = '';
-    /**
-     * The total number of replies (not including the top level comment).
-     *
-     * @var string
-     */
-    public $totalReplyCount;
-    /**
-     * The ID of the video the comments refer to, if any.
-     *
-     * @var string
-     */
-    public $videoId;
-    /**
-     * Whether the current viewer of the thread can reply to it. This is viewer
-     * specific - other viewers may see a different value for this field.
-     *
-     * @param bool $canReply
-     */
-    public function setCanReply($canReply)
+namespace Google\Service\YouTube {
+    class CommentThreadSnippet extends \Google\Model
     {
+        /**
+         * Whether the current viewer of the thread can reply to it. This is viewer
+         * specific - other viewers may see a different value for this field.
+         *
+         * @var bool
+         */
+        public $canReply;
+        /**
+         * The YouTube channel the comments in the thread refer to or the channel with
+         * the video the comments refer to. If neither video_id nor post_id is set the
+         * comments refer to the channel itself.
+         *
+         * @var string
+         */
+        public $channelId;
+        /**
+         * Whether the thread (and therefore all its comments) is visible to all
+         * YouTube users.
+         *
+         * @var bool
+         */
+        public $isPublic;
+        /**
+         * The ID of the post the comments refer to, if any.
+         *
+         * @var string
+         */
+        public $postId;
+        protected $topLevelCommentType = Comment::class;
+        protected $topLevelCommentDataType = '';
+        /**
+         * The total number of replies (not including the top level comment).
+         *
+         * @var string
+         */
+        public $totalReplyCount;
+        /**
+         * The ID of the video the comments refer to, if any.
+         *
+         * @var string
+         */
+        public $videoId;
+        /**
+         * Whether the current viewer of the thread can reply to it. This is viewer
+         * specific - other viewers may see a different value for this field.
+         *
+         * @param bool $canReply
+         */
+        public function setCanReply($canReply)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanReply()
+        {
+        }
+        /**
+         * The YouTube channel the comments in the thread refer to or the channel with
+         * the video the comments refer to. If neither video_id nor post_id is set the
+         * comments refer to the channel itself.
+         *
+         * @param string $channelId
+         */
+        public function setChannelId($channelId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChannelId()
+        {
+        }
+        /**
+         * Whether the thread (and therefore all its comments) is visible to all
+         * YouTube users.
+         *
+         * @param bool $isPublic
+         */
+        public function setIsPublic($isPublic)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsPublic()
+        {
+        }
+        /**
+         * The ID of the post the comments refer to, if any.
+         *
+         * @param string $postId
+         */
+        public function setPostId($postId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPostId()
+        {
+        }
+        /**
+         * The top level comment of this thread.
+         *
+         * @param Comment $topLevelComment
+         */
+        public function setTopLevelComment(Comment $topLevelComment)
+        {
+        }
+        /**
+         * @return Comment
+         */
+        public function getTopLevelComment()
+        {
+        }
+        /**
+         * The total number of replies (not including the top level comment).
+         *
+         * @param string $totalReplyCount
+         */
+        public function setTotalReplyCount($totalReplyCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalReplyCount()
+        {
+        }
+        /**
+         * The ID of the video the comments refer to, if any.
+         *
+         * @param string $videoId
+         */
+        public function setVideoId($videoId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVideoId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\YouTube\CommentThreadSnippet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCanReply()
-    {
-    }
-    /**
-     * The YouTube channel the comments in the thread refer to or the channel with
-     * the video the comments refer to. If neither video_id nor post_id is set the
-     * comments refer to the channel itself.
-     *
-     * @param string $channelId
-     */
-    public function setChannelId($channelId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getChannelId()
-    {
-    }
-    /**
-     * Whether the thread (and therefore all its comments) is visible to all
-     * YouTube users.
-     *
-     * @param bool $isPublic
-     */
-    public function setIsPublic($isPublic)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsPublic()
-    {
-    }
-    /**
-     * The ID of the post the comments refer to, if any.
-     *
-     * @param string $postId
-     */
-    public function setPostId($postId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPostId()
-    {
-    }
-    /**
-     * The top level comment of this thread.
-     *
-     * @param Comment $topLevelComment
-     */
-    public function setTopLevelComment(Comment $topLevelComment)
-    {
-    }
-    /**
-     * @return Comment
-     */
-    public function getTopLevelComment()
-    {
-    }
-    /**
-     * The total number of replies (not including the top level comment).
-     *
-     * @param string $totalReplyCount
-     */
-    public function setTotalReplyCount($totalReplyCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalReplyCount()
-    {
-    }
-    /**
-     * The ID of the video the comments refer to, if any.
-     *
-     * @param string $videoId
-     */
-    public function setVideoId($videoId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVideoId()
+    class Google_Service_YouTube_CommentThreadSnippet extends \Google\Service\YouTube\CommentThreadSnippet
     {
     }
 }

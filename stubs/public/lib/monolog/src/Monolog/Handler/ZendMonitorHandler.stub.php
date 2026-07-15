@@ -16,6 +16,10 @@
  */
 namespace Monolog\Handler;
 
+use Monolog\Formatter\FormatterInterface;
+use Monolog\Formatter\NormalizerFormatter;
+use Monolog\Level;
+use Monolog\LogRecord;
 /**
  * Handler sending logs to Zend Monitor
  *

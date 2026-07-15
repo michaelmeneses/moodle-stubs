@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class UpdateDatabaseRequest extends \Google\Model
-{
-    protected $databaseType = Database::class;
-    protected $databaseDataType = '';
-    /**
-     * Required. The list of fields to update. Currently, only
-     * `enable_drop_protection` field can be updated.
-     *
-     * @var string
-     */
-    public $updateMask;
-    /**
-     * Required. The database to update. The `name` field of the database is of
-     * the form `projects//instances//databases/`.
-     *
-     * @param Database $database
-     */
-    public function setDatabase(Database $database)
+namespace Google\Service\Spanner {
+    class UpdateDatabaseRequest extends \Google\Model
     {
+        protected $databaseType = Database::class;
+        protected $databaseDataType = '';
+        /**
+         * Required. The list of fields to update. Currently, only
+         * `enable_drop_protection` field can be updated.
+         *
+         * @var string
+         */
+        public $updateMask;
+        /**
+         * Required. The database to update. The `name` field of the database is of
+         * the form `projects//instances//databases/`.
+         *
+         * @param Database $database
+         */
+        public function setDatabase(Database $database)
+        {
+        }
+        /**
+         * @return Database
+         */
+        public function getDatabase()
+        {
+        }
+        /**
+         * Required. The list of fields to update. Currently, only
+         * `enable_drop_protection` field can be updated.
+         *
+         * @param string $updateMask
+         */
+        public function setUpdateMask($updateMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateMask()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Database
+     * Runtime class alias of \Google\Service\Spanner\UpdateDatabaseRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatabase()
-    {
-    }
-    /**
-     * Required. The list of fields to update. Currently, only
-     * `enable_drop_protection` field can be updated.
-     *
-     * @param string $updateMask
-     */
-    public function setUpdateMask($updateMask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateMask()
+    class Google_Service_Spanner_UpdateDatabaseRequest extends \Google\Service\Spanner\UpdateDatabaseRequest
     {
     }
 }

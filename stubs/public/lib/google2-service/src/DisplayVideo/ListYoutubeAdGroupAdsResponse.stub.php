@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class ListYoutubeAdGroupAdsResponse extends \Google\Collection
-{
-    protected $collection_key = 'youtubeAdGroupAds';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    protected $youtubeAdGroupAdsType = YoutubeAdGroupAd::class;
-    protected $youtubeAdGroupAdsDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\DisplayVideo {
+    class ListYoutubeAdGroupAdsResponse extends \Google\Collection
     {
+        protected $collection_key = 'youtubeAdGroupAds';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        protected $youtubeAdGroupAdsType = YoutubeAdGroupAd::class;
+        protected $youtubeAdGroupAdsDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param YoutubeAdGroupAd[]
+         */
+        public function setYoutubeAdGroupAds($youtubeAdGroupAds)
+        {
+        }
+        /**
+         * @return YoutubeAdGroupAd[]
+         */
+        public function getYoutubeAdGroupAds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\ListYoutubeAdGroupAdsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param YoutubeAdGroupAd[]
-     */
-    public function setYoutubeAdGroupAds($youtubeAdGroupAds)
-    {
-    }
-    /**
-     * @return YoutubeAdGroupAd[]
-     */
-    public function getYoutubeAdGroupAds()
+    class Google_Service_DisplayVideo_ListYoutubeAdGroupAdsResponse extends \Google\Service\DisplayVideo\ListYoutubeAdGroupAdsResponse
     {
     }
 }

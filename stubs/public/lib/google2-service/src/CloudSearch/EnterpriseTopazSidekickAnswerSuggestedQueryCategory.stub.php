@@ -21,87 +21,96 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class EnterpriseTopazSidekickAnswerSuggestedQueryCategory extends \Google\Collection
-{
-    /**
-     * Unknown.
-     */
-    public const CATEGORY_UNKNOWN = 'UNKNOWN';
-    /**
-     * Calendar based queries (e.g. "my agenda for tomorrow").
-     */
-    public const CATEGORY_CALENDAR = 'CALENDAR';
-    /**
-     * Document based queries (e.g. "files shared with me").
-     */
-    public const CATEGORY_DOCUMENT = 'DOCUMENT';
-    /**
-     * People based queries (e.g. "what is x's email address?").
-     */
-    public const CATEGORY_PEOPLE = 'PEOPLE';
-    protected $collection_key = 'query';
-    /**
-     * The query list category.
-     *
-     * @var string
-     */
-    public $category;
-    /**
-     * Whether this category is enabled.
-     *
-     * @var bool
-     */
-    public $isEnabled;
-    /**
-     * List of suggested queries to show the user.
-     *
-     * @var string[]
-     */
-    public $query;
-    /**
-     * The query list category.
-     *
-     * Accepted values: UNKNOWN, CALENDAR, DOCUMENT, PEOPLE
-     *
-     * @param self::CATEGORY_* $category
-     */
-    public function setCategory($category)
+namespace Google\Service\CloudSearch {
+    class EnterpriseTopazSidekickAnswerSuggestedQueryCategory extends \Google\Collection
     {
+        /**
+         * Unknown.
+         */
+        public const CATEGORY_UNKNOWN = 'UNKNOWN';
+        /**
+         * Calendar based queries (e.g. "my agenda for tomorrow").
+         */
+        public const CATEGORY_CALENDAR = 'CALENDAR';
+        /**
+         * Document based queries (e.g. "files shared with me").
+         */
+        public const CATEGORY_DOCUMENT = 'DOCUMENT';
+        /**
+         * People based queries (e.g. "what is x's email address?").
+         */
+        public const CATEGORY_PEOPLE = 'PEOPLE';
+        protected $collection_key = 'query';
+        /**
+         * The query list category.
+         *
+         * @var string
+         */
+        public $category;
+        /**
+         * Whether this category is enabled.
+         *
+         * @var bool
+         */
+        public $isEnabled;
+        /**
+         * List of suggested queries to show the user.
+         *
+         * @var string[]
+         */
+        public $query;
+        /**
+         * The query list category.
+         *
+         * Accepted values: UNKNOWN, CALENDAR, DOCUMENT, PEOPLE
+         *
+         * @param self::CATEGORY_* $category
+         */
+        public function setCategory($category)
+        {
+        }
+        /**
+         * @return self::CATEGORY_*
+         */
+        public function getCategory()
+        {
+        }
+        /**
+         * Whether this category is enabled.
+         *
+         * @param bool $isEnabled
+         */
+        public function setIsEnabled($isEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsEnabled()
+        {
+        }
+        /**
+         * List of suggested queries to show the user.
+         *
+         * @param string[] $query
+         */
+        public function setQuery($query)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getQuery()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::CATEGORY_*
+     * Runtime class alias of \Google\Service\CloudSearch\EnterpriseTopazSidekickAnswerSuggestedQueryCategory registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCategory()
-    {
-    }
-    /**
-     * Whether this category is enabled.
-     *
-     * @param bool $isEnabled
-     */
-    public function setIsEnabled($isEnabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsEnabled()
-    {
-    }
-    /**
-     * List of suggested queries to show the user.
-     *
-     * @param string[] $query
-     */
-    public function setQuery($query)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getQuery()
+    class Google_Service_CloudSearch_EnterpriseTopazSidekickAnswerSuggestedQueryCategory extends \Google\Service\CloudSearch\EnterpriseTopazSidekickAnswerSuggestedQueryCategory
     {
     }
 }

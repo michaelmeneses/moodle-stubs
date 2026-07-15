@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class MembershipDeletedEventData extends \Google\Model
-{
-    protected $membershipType = Membership::class;
-    protected $membershipDataType = '';
-    /**
-     * The deleted membership. Only the `name` and `state` fields are populated.
-     *
-     * @param Membership $membership
-     */
-    public function setMembership(Membership $membership)
+namespace Google\Service\HangoutsChat {
+    class MembershipDeletedEventData extends \Google\Model
     {
+        protected $membershipType = Membership::class;
+        protected $membershipDataType = '';
+        /**
+         * The deleted membership. Only the `name` and `state` fields are populated.
+         *
+         * @param Membership $membership
+         */
+        public function setMembership(Membership $membership)
+        {
+        }
+        /**
+         * @return Membership
+         */
+        public function getMembership()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Membership
+     * Runtime class alias of \Google\Service\HangoutsChat\MembershipDeletedEventData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMembership()
+    class Google_Service_HangoutsChat_MembershipDeletedEventData extends \Google\Service\HangoutsChat\MembershipDeletedEventData
     {
     }
 }

@@ -21,101 +21,110 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Safebrowsing;
-
-class ThreatHit extends \Google\Collection
-{
-    protected $collection_key = 'resources';
-    protected $clientInfoType = ClientInfo::class;
-    protected $clientInfoDataType = '';
-    public $clientInfo;
-    protected $entryType = ThreatEntry::class;
-    protected $entryDataType = '';
-    public $entry;
-    /**
-     * @var string
-     */
-    public $platformType;
-    protected $resourcesType = ThreatSource::class;
-    protected $resourcesDataType = 'array';
-    public $resources;
-    /**
-     * @var string
-     */
-    public $threatType;
-    protected $userInfoType = UserInfo::class;
-    protected $userInfoDataType = '';
-    public $userInfo;
-    /**
-     * @param ClientInfo
-     */
-    public function setClientInfo(ClientInfo $clientInfo)
+namespace Google\Service\Safebrowsing {
+    class ThreatHit extends \Google\Collection
     {
+        protected $collection_key = 'resources';
+        protected $clientInfoType = ClientInfo::class;
+        protected $clientInfoDataType = '';
+        public $clientInfo;
+        protected $entryType = ThreatEntry::class;
+        protected $entryDataType = '';
+        public $entry;
+        /**
+         * @var string
+         */
+        public $platformType;
+        protected $resourcesType = ThreatSource::class;
+        protected $resourcesDataType = 'array';
+        public $resources;
+        /**
+         * @var string
+         */
+        public $threatType;
+        protected $userInfoType = UserInfo::class;
+        protected $userInfoDataType = '';
+        public $userInfo;
+        /**
+         * @param ClientInfo
+         */
+        public function setClientInfo(ClientInfo $clientInfo)
+        {
+        }
+        /**
+         * @return ClientInfo
+         */
+        public function getClientInfo()
+        {
+        }
+        /**
+         * @param ThreatEntry
+         */
+        public function setEntry(ThreatEntry $entry)
+        {
+        }
+        /**
+         * @return ThreatEntry
+         */
+        public function getEntry()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPlatformType($platformType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPlatformType()
+        {
+        }
+        /**
+         * @param ThreatSource[]
+         */
+        public function setResources($resources)
+        {
+        }
+        /**
+         * @return ThreatSource[]
+         */
+        public function getResources()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setThreatType($threatType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getThreatType()
+        {
+        }
+        /**
+         * @param UserInfo
+         */
+        public function setUserInfo(UserInfo $userInfo)
+        {
+        }
+        /**
+         * @return UserInfo
+         */
+        public function getUserInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ClientInfo
+     * Runtime class alias of \Google\Service\Safebrowsing\ThreatHit registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClientInfo()
-    {
-    }
-    /**
-     * @param ThreatEntry
-     */
-    public function setEntry(ThreatEntry $entry)
-    {
-    }
-    /**
-     * @return ThreatEntry
-     */
-    public function getEntry()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPlatformType($platformType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPlatformType()
-    {
-    }
-    /**
-     * @param ThreatSource[]
-     */
-    public function setResources($resources)
-    {
-    }
-    /**
-     * @return ThreatSource[]
-     */
-    public function getResources()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setThreatType($threatType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getThreatType()
-    {
-    }
-    /**
-     * @param UserInfo
-     */
-    public function setUserInfo(UserInfo $userInfo)
-    {
-    }
-    /**
-     * @return UserInfo
-     */
-    public function getUserInfo()
+    class Google_Service_Safebrowsing_ThreatHit extends \Google\Service\Safebrowsing\ThreatHit
     {
     }
 }

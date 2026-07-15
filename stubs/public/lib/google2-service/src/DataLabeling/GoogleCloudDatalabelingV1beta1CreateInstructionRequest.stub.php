@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1CreateInstructionRequest extends \Google\Model
-{
-    protected $instructionType = GoogleCloudDatalabelingV1beta1Instruction::class;
-    protected $instructionDataType = '';
-    /**
-     * Required. Instruction of how to perform the labeling task.
-     *
-     * @param GoogleCloudDatalabelingV1beta1Instruction $instruction
-     */
-    public function setInstruction(GoogleCloudDatalabelingV1beta1Instruction $instruction)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1CreateInstructionRequest extends \Google\Model
     {
+        protected $instructionType = GoogleCloudDatalabelingV1beta1Instruction::class;
+        protected $instructionDataType = '';
+        /**
+         * Required. Instruction of how to perform the labeling task.
+         *
+         * @param GoogleCloudDatalabelingV1beta1Instruction $instruction
+         */
+        public function setInstruction(GoogleCloudDatalabelingV1beta1Instruction $instruction)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1Instruction
+         */
+        public function getInstruction()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatalabelingV1beta1Instruction
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1CreateInstructionRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstruction()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1CreateInstructionRequest extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1CreateInstructionRequest
     {
     }
 }

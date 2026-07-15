@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1DocumentPageTableTableRow extends \Google\Collection
-{
-    protected $collection_key = 'cells';
-    protected $cellsType = GoogleCloudDocumentaiV1DocumentPageTableTableCell::class;
-    protected $cellsDataType = 'array';
-    /**
-     * Cells that make up this row.
-     *
-     * @param GoogleCloudDocumentaiV1DocumentPageTableTableCell[] $cells
-     */
-    public function setCells($cells)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1DocumentPageTableTableRow extends \Google\Collection
     {
+        protected $collection_key = 'cells';
+        protected $cellsType = GoogleCloudDocumentaiV1DocumentPageTableTableCell::class;
+        protected $cellsDataType = 'array';
+        /**
+         * Cells that make up this row.
+         *
+         * @param GoogleCloudDocumentaiV1DocumentPageTableTableCell[] $cells
+         */
+        public function setCells($cells)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1DocumentPageTableTableCell[]
+         */
+        public function getCells()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiV1DocumentPageTableTableCell[]
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1DocumentPageTableTableRow registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCells()
+    class Google_Service_Document_GoogleCloudDocumentaiV1DocumentPageTableTableRow extends \Google\Service\Document\GoogleCloudDocumentaiV1DocumentPageTableTableRow
     {
     }
 }

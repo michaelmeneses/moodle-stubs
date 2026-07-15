@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace aiprovider_awsbedrock\form;
 
+use aiprovider_awsbedrock\helper;
+use core_ai\form\action_settings_form;
 /**
  * Base action settings form for AWS Bedrock provider.
  *

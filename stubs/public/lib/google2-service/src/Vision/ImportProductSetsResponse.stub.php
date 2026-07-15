@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class ImportProductSetsResponse extends \Google\Collection
-{
-    protected $collection_key = 'statuses';
-    protected $referenceImagesType = ReferenceImage::class;
-    protected $referenceImagesDataType = 'array';
-    protected $statusesType = Status::class;
-    protected $statusesDataType = 'array';
-    /**
-     * The list of reference_images that are imported successfully.
-     *
-     * @param ReferenceImage[] $referenceImages
-     */
-    public function setReferenceImages($referenceImages)
+namespace Google\Service\Vision {
+    class ImportProductSetsResponse extends \Google\Collection
     {
+        protected $collection_key = 'statuses';
+        protected $referenceImagesType = ReferenceImage::class;
+        protected $referenceImagesDataType = 'array';
+        protected $statusesType = Status::class;
+        protected $statusesDataType = 'array';
+        /**
+         * The list of reference_images that are imported successfully.
+         *
+         * @param ReferenceImage[] $referenceImages
+         */
+        public function setReferenceImages($referenceImages)
+        {
+        }
+        /**
+         * @return ReferenceImage[]
+         */
+        public function getReferenceImages()
+        {
+        }
+        /**
+         * The rpc status for each ImportProductSet request, including both successes
+         * and errors. The number of statuses here matches the number of lines in the
+         * csv file, and statuses[i] stores the success or failure status of
+         * processing the i-th line of the csv, starting from line 0.
+         *
+         * @param Status[] $statuses
+         */
+        public function setStatuses($statuses)
+        {
+        }
+        /**
+         * @return Status[]
+         */
+        public function getStatuses()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ReferenceImage[]
+     * Runtime class alias of \Google\Service\Vision\ImportProductSetsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReferenceImages()
-    {
-    }
-    /**
-     * The rpc status for each ImportProductSet request, including both successes
-     * and errors. The number of statuses here matches the number of lines in the
-     * csv file, and statuses[i] stores the success or failure status of
-     * processing the i-th line of the csv, starting from line 0.
-     *
-     * @param Status[] $statuses
-     */
-    public function setStatuses($statuses)
-    {
-    }
-    /**
-     * @return Status[]
-     */
-    public function getStatuses()
+    class Google_Service_Vision_ImportProductSetsResponse extends \Google\Service\Vision\ImportProductSetsResponse
     {
     }
 }

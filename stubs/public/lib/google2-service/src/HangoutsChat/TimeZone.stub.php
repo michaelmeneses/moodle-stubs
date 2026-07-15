@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class TimeZone extends \Google\Model
-{
-    /**
-     * The [IANA TZ](https://www.iana.org/time-zones) time zone database code,
-     * such as "America/Toronto".
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * The user timezone offset, in milliseconds, from Coordinated Universal Time
-     * (UTC).
-     *
-     * @var int
-     */
-    public $offset;
-    /**
-     * The [IANA TZ](https://www.iana.org/time-zones) time zone database code,
-     * such as "America/Toronto".
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\HangoutsChat {
+    class TimeZone extends \Google\Model
     {
+        /**
+         * The [IANA TZ](https://www.iana.org/time-zones) time zone database code,
+         * such as "America/Toronto".
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * The user timezone offset, in milliseconds, from Coordinated Universal Time
+         * (UTC).
+         *
+         * @var int
+         */
+        public $offset;
+        /**
+         * The [IANA TZ](https://www.iana.org/time-zones) time zone database code,
+         * such as "America/Toronto".
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * The user timezone offset, in milliseconds, from Coordinated Universal Time
+         * (UTC).
+         *
+         * @param int $offset
+         */
+        public function setOffset($offset)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getOffset()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\HangoutsChat\TimeZone registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * The user timezone offset, in milliseconds, from Coordinated Universal Time
-     * (UTC).
-     *
-     * @param int $offset
-     */
-    public function setOffset($offset)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getOffset()
+    class Google_Service_HangoutsChat_TimeZone extends \Google\Service\HangoutsChat\TimeZone
     {
     }
 }

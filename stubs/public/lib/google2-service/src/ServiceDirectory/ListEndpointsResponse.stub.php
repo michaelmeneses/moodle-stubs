@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceDirectory;
-
-class ListEndpointsResponse extends \Google\Collection
-{
-    protected $collection_key = 'endpoints';
-    protected $endpointsType = Endpoint::class;
-    protected $endpointsDataType = 'array';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of endpoints.
-     *
-     * @param Endpoint[] $endpoints
-     */
-    public function setEndpoints($endpoints)
+namespace Google\Service\ServiceDirectory {
+    class ListEndpointsResponse extends \Google\Collection
     {
+        protected $collection_key = 'endpoints';
+        protected $endpointsType = Endpoint::class;
+        protected $endpointsDataType = 'array';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of endpoints.
+         *
+         * @param Endpoint[] $endpoints
+         */
+        public function setEndpoints($endpoints)
+        {
+        }
+        /**
+         * @return Endpoint[]
+         */
+        public function getEndpoints()
+        {
+        }
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Endpoint[]
+     * Runtime class alias of \Google\Service\ServiceDirectory\ListEndpointsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndpoints()
-    {
-    }
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_ServiceDirectory_ListEndpointsResponse extends \Google\Service\ServiceDirectory\ListEndpointsResponse
     {
     }
 }

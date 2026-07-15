@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class OperatingSystemsListResponse extends \Google\Collection
-{
-    protected $collection_key = 'operatingSystems';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#operatingSystemsListResponse".
-     *
-     * @var string
-     */
-    public $kind;
-    protected $operatingSystemsType = OperatingSystem::class;
-    protected $operatingSystemsDataType = 'array';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#operatingSystemsListResponse".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Dfareporting {
+    class OperatingSystemsListResponse extends \Google\Collection
     {
+        protected $collection_key = 'operatingSystems';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#operatingSystemsListResponse".
+         *
+         * @var string
+         */
+        public $kind;
+        protected $operatingSystemsType = OperatingSystem::class;
+        protected $operatingSystemsDataType = 'array';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#operatingSystemsListResponse".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Operating system collection.
+         *
+         * @param OperatingSystem[] $operatingSystems
+         */
+        public function setOperatingSystems($operatingSystems)
+        {
+        }
+        /**
+         * @return OperatingSystem[]
+         */
+        public function getOperatingSystems()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\OperatingSystemsListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * Operating system collection.
-     *
-     * @param OperatingSystem[] $operatingSystems
-     */
-    public function setOperatingSystems($operatingSystems)
-    {
-    }
-    /**
-     * @return OperatingSystem[]
-     */
-    public function getOperatingSystems()
+    class Google_Service_Dfareporting_OperatingSystemsListResponse extends \Google\Service\Dfareporting\OperatingSystemsListResponse
     {
     }
 }

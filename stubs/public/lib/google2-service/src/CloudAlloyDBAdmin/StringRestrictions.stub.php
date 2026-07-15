@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAlloyDBAdmin;
-
-class StringRestrictions extends \Google\Collection
-{
-    protected $collection_key = 'allowedValues';
-    /**
-     * The list of allowed values, if bounded. This field will be empty if there
-     * is a unbounded number of allowed values.
-     *
-     * @var string[]
-     */
-    public $allowedValues;
-    /**
-     * The list of allowed values, if bounded. This field will be empty if there
-     * is a unbounded number of allowed values.
-     *
-     * @param string[] $allowedValues
-     */
-    public function setAllowedValues($allowedValues)
+namespace Google\Service\CloudAlloyDBAdmin {
+    class StringRestrictions extends \Google\Collection
     {
+        protected $collection_key = 'allowedValues';
+        /**
+         * The list of allowed values, if bounded. This field will be empty if there
+         * is a unbounded number of allowed values.
+         *
+         * @var string[]
+         */
+        public $allowedValues;
+        /**
+         * The list of allowed values, if bounded. This field will be empty if there
+         * is a unbounded number of allowed values.
+         *
+         * @param string[] $allowedValues
+         */
+        public function setAllowedValues($allowedValues)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAllowedValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudAlloyDBAdmin\StringRestrictions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowedValues()
+    class Google_Service_CloudAlloyDBAdmin_StringRestrictions extends \Google\Service\CloudAlloyDBAdmin\StringRestrictions
     {
     }
 }

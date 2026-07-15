@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class StructuredAggregationQuery extends \Google\Collection
-{
-    protected $collection_key = 'aggregations';
-    protected $aggregationsType = Aggregation::class;
-    protected $aggregationsDataType = 'array';
-    protected $structuredQueryType = StructuredQuery::class;
-    protected $structuredQueryDataType = '';
-    /**
-     * Optional. Series of aggregations to apply over the results of the
-     * `structured_query`. Requires: * A minimum of one and maximum of five
-     * aggregations per query.
-     *
-     * @param Aggregation[] $aggregations
-     */
-    public function setAggregations($aggregations)
+namespace Google\Service\Firestore {
+    class StructuredAggregationQuery extends \Google\Collection
     {
+        protected $collection_key = 'aggregations';
+        protected $aggregationsType = Aggregation::class;
+        protected $aggregationsDataType = 'array';
+        protected $structuredQueryType = StructuredQuery::class;
+        protected $structuredQueryDataType = '';
+        /**
+         * Optional. Series of aggregations to apply over the results of the
+         * `structured_query`. Requires: * A minimum of one and maximum of five
+         * aggregations per query.
+         *
+         * @param Aggregation[] $aggregations
+         */
+        public function setAggregations($aggregations)
+        {
+        }
+        /**
+         * @return Aggregation[]
+         */
+        public function getAggregations()
+        {
+        }
+        /**
+         * Nested structured query.
+         *
+         * @param StructuredQuery $structuredQuery
+         */
+        public function setStructuredQuery(StructuredQuery $structuredQuery)
+        {
+        }
+        /**
+         * @return StructuredQuery
+         */
+        public function getStructuredQuery()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Aggregation[]
+     * Runtime class alias of \Google\Service\Firestore\StructuredAggregationQuery registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAggregations()
-    {
-    }
-    /**
-     * Nested structured query.
-     *
-     * @param StructuredQuery $structuredQuery
-     */
-    public function setStructuredQuery(StructuredQuery $structuredQuery)
-    {
-    }
-    /**
-     * @return StructuredQuery
-     */
-    public function getStructuredQuery()
+    class Google_Service_Firestore_StructuredAggregationQuery extends \Google\Service\Firestore\StructuredAggregationQuery
     {
     }
 }

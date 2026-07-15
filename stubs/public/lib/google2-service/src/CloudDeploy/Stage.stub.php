@@ -21,93 +21,102 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class Stage extends \Google\Collection
-{
-    protected $collection_key = 'profiles';
-    protected $deployParametersType = DeployParameters::class;
-    protected $deployParametersDataType = 'array';
-    /**
-     * Optional. Skaffold profiles to use when rendering the manifest for this
-     * stage's `Target`.
-     *
-     * @var string[]
-     */
-    public $profiles;
-    protected $strategyType = Strategy::class;
-    protected $strategyDataType = '';
-    /**
-     * Optional. The target_id to which this stage points. This field refers
-     * exclusively to the last segment of a target name. For example, this field
-     * would just be `my-target` (rather than
-     * `projects/project/locations/location/targets/my-target`). The location of
-     * the `Target` is inferred to be the same as the location of the
-     * `DeliveryPipeline` that contains this `Stage`.
-     *
-     * @var string
-     */
-    public $targetId;
-    /**
-     * Optional. The deploy parameters to use for the target in this stage.
-     *
-     * @param DeployParameters[] $deployParameters
-     */
-    public function setDeployParameters($deployParameters)
+namespace Google\Service\CloudDeploy {
+    class Stage extends \Google\Collection
     {
+        protected $collection_key = 'profiles';
+        protected $deployParametersType = DeployParameters::class;
+        protected $deployParametersDataType = 'array';
+        /**
+         * Optional. Skaffold profiles to use when rendering the manifest for this
+         * stage's `Target`.
+         *
+         * @var string[]
+         */
+        public $profiles;
+        protected $strategyType = Strategy::class;
+        protected $strategyDataType = '';
+        /**
+         * Optional. The target_id to which this stage points. This field refers
+         * exclusively to the last segment of a target name. For example, this field
+         * would just be `my-target` (rather than
+         * `projects/project/locations/location/targets/my-target`). The location of
+         * the `Target` is inferred to be the same as the location of the
+         * `DeliveryPipeline` that contains this `Stage`.
+         *
+         * @var string
+         */
+        public $targetId;
+        /**
+         * Optional. The deploy parameters to use for the target in this stage.
+         *
+         * @param DeployParameters[] $deployParameters
+         */
+        public function setDeployParameters($deployParameters)
+        {
+        }
+        /**
+         * @return DeployParameters[]
+         */
+        public function getDeployParameters()
+        {
+        }
+        /**
+         * Optional. Skaffold profiles to use when rendering the manifest for this
+         * stage's `Target`.
+         *
+         * @param string[] $profiles
+         */
+        public function setProfiles($profiles)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getProfiles()
+        {
+        }
+        /**
+         * Optional. The strategy to use for a `Rollout` to this stage.
+         *
+         * @param Strategy $strategy
+         */
+        public function setStrategy(Strategy $strategy)
+        {
+        }
+        /**
+         * @return Strategy
+         */
+        public function getStrategy()
+        {
+        }
+        /**
+         * Optional. The target_id to which this stage points. This field refers
+         * exclusively to the last segment of a target name. For example, this field
+         * would just be `my-target` (rather than
+         * `projects/project/locations/location/targets/my-target`). The location of
+         * the `Target` is inferred to be the same as the location of the
+         * `DeliveryPipeline` that contains this `Stage`.
+         *
+         * @param string $targetId
+         */
+        public function setTargetId($targetId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DeployParameters[]
+     * Runtime class alias of \Google\Service\CloudDeploy\Stage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeployParameters()
-    {
-    }
-    /**
-     * Optional. Skaffold profiles to use when rendering the manifest for this
-     * stage's `Target`.
-     *
-     * @param string[] $profiles
-     */
-    public function setProfiles($profiles)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getProfiles()
-    {
-    }
-    /**
-     * Optional. The strategy to use for a `Rollout` to this stage.
-     *
-     * @param Strategy $strategy
-     */
-    public function setStrategy(Strategy $strategy)
-    {
-    }
-    /**
-     * @return Strategy
-     */
-    public function getStrategy()
-    {
-    }
-    /**
-     * Optional. The target_id to which this stage points. This field refers
-     * exclusively to the last segment of a target name. For example, this field
-     * would just be `my-target` (rather than
-     * `projects/project/locations/location/targets/my-target`). The location of
-     * the `Target` is inferred to be the same as the location of the
-     * `DeliveryPipeline` that contains this `Stage`.
-     *
-     * @param string $targetId
-     */
-    public function setTargetId($targetId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetId()
+    class Google_Service_CloudDeploy_Stage extends \Google\Service\CloudDeploy\Stage
     {
     }
 }

@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseRules;
-
-class TestSuite extends \Google\Collection
-{
-    protected $collection_key = 'testCases';
-    protected $testCasesType = TestCase::class;
-    protected $testCasesDataType = 'array';
-    /**
-     * Collection of test cases associated with the `TestSuite`.
-     *
-     * @param TestCase[] $testCases
-     */
-    public function setTestCases($testCases)
+namespace Google\Service\FirebaseRules {
+    class TestSuite extends \Google\Collection
     {
+        protected $collection_key = 'testCases';
+        protected $testCasesType = TestCase::class;
+        protected $testCasesDataType = 'array';
+        /**
+         * Collection of test cases associated with the `TestSuite`.
+         *
+         * @param TestCase[] $testCases
+         */
+        public function setTestCases($testCases)
+        {
+        }
+        /**
+         * @return TestCase[]
+         */
+        public function getTestCases()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TestCase[]
+     * Runtime class alias of \Google\Service\FirebaseRules\TestSuite registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTestCases()
+    class Google_Service_FirebaseRules_TestSuite extends \Google\Service\FirebaseRules\TestSuite
     {
     }
 }

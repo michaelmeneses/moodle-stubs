@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class ReservationsScopedList extends \Google\Collection
-{
-    protected $collection_key = 'reservations';
-    protected $reservationsType = Reservation::class;
-    protected $reservationsDataType = 'array';
-    protected $warningType = ReservationsScopedListWarning::class;
-    protected $warningDataType = '';
-    /**
-     * A list of reservations contained in this scope.
-     *
-     * @param Reservation[] $reservations
-     */
-    public function setReservations($reservations)
+namespace Google\Service\Compute {
+    class ReservationsScopedList extends \Google\Collection
     {
+        protected $collection_key = 'reservations';
+        protected $reservationsType = Reservation::class;
+        protected $reservationsDataType = 'array';
+        protected $warningType = ReservationsScopedListWarning::class;
+        protected $warningDataType = '';
+        /**
+         * A list of reservations contained in this scope.
+         *
+         * @param Reservation[] $reservations
+         */
+        public function setReservations($reservations)
+        {
+        }
+        /**
+         * @return Reservation[]
+         */
+        public function getReservations()
+        {
+        }
+        /**
+         * Informational warning which replaces the list of reservations when the list
+         * is empty.
+         *
+         * @param ReservationsScopedListWarning $warning
+         */
+        public function setWarning(ReservationsScopedListWarning $warning)
+        {
+        }
+        /**
+         * @return ReservationsScopedListWarning
+         */
+        public function getWarning()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Reservation[]
+     * Runtime class alias of \Google\Service\Compute\ReservationsScopedList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReservations()
-    {
-    }
-    /**
-     * Informational warning which replaces the list of reservations when the list
-     * is empty.
-     *
-     * @param ReservationsScopedListWarning $warning
-     */
-    public function setWarning(ReservationsScopedListWarning $warning)
-    {
-    }
-    /**
-     * @return ReservationsScopedListWarning
-     */
-    public function getWarning()
+    class Google_Service_Compute_ReservationsScopedList extends \Google\Service\Compute\ReservationsScopedList
     {
     }
 }

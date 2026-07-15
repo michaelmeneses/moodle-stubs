@@ -21,101 +21,110 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataManager;
-
-class WarningCount extends \Google\Model
-{
-    /**
-     * The processing warning reason is unknown.
-     */
-    public const REASON_PROCESSING_WARNING_REASON_UNSPECIFIED = 'PROCESSING_WARNING_REASON_UNSPECIFIED';
-    /**
-     * The system did not have the permissions needed to access the KEK.
-     */
-    public const REASON_PROCESSING_WARNING_REASON_KEK_PERMISSION_DENIED = 'PROCESSING_WARNING_REASON_KEK_PERMISSION_DENIED';
-    /**
-     * The DEK failed to be decrypted.
-     */
-    public const REASON_PROCESSING_WARNING_REASON_DEK_DECRYPTION_ERROR = 'PROCESSING_WARNING_REASON_DEK_DECRYPTION_ERROR';
-    /**
-     * The event has a decryption error.
-     */
-    public const REASON_PROCESSING_WARNING_REASON_DECRYPTION_ERROR = 'PROCESSING_WARNING_REASON_DECRYPTION_ERROR';
-    /**
-     * The WIP could not be used because it was rejected by its attestation
-     * condition.
-     */
-    public const REASON_PROCESSING_WARNING_REASON_WIP_AUTH_FAILED = 'PROCESSING_WARNING_REASON_WIP_AUTH_FAILED';
-    /**
-     * The WIP is formatted incorrectly or the WIP does not exist.
-     */
-    public const REASON_PROCESSING_WARNING_REASON_INVALID_WIP = 'PROCESSING_WARNING_REASON_INVALID_WIP';
-    /**
-     * The KEK cannot decrypt data because it is the wrong KEK, or it does not
-     * exist.
-     */
-    public const REASON_PROCESSING_WARNING_REASON_INVALID_KEK = 'PROCESSING_WARNING_REASON_INVALID_KEK';
-    /**
-     * Failed to decrypt th UserIdentifier data using the DEK.
-     */
-    public const REASON_PROCESSING_WARNING_REASON_USER_IDENTIFIER_DECRYPTION_ERROR = 'PROCESSING_WARNING_REASON_USER_IDENTIFIER_DECRYPTION_ERROR';
-    /**
-     * Internal error.
-     */
-    public const REASON_PROCESSING_WARNING_REASON_INTERNAL_ERROR = 'PROCESSING_WARNING_REASON_INTERNAL_ERROR';
-    /**
-     * The system failed to authenticate with AWS.
-     */
-    public const REASON_PROCESSING_WARNING_REASON_AWS_AUTH_FAILED = 'PROCESSING_WARNING_REASON_AWS_AUTH_FAILED';
-    /**
-     * The warning reason.
-     *
-     * @var string
-     */
-    public $reason;
-    /**
-     * The count of records that have a warning.
-     *
-     * @var string
-     */
-    public $recordCount;
-    /**
-     * The warning reason.
-     *
-     * Accepted values: PROCESSING_WARNING_REASON_UNSPECIFIED,
-     * PROCESSING_WARNING_REASON_KEK_PERMISSION_DENIED,
-     * PROCESSING_WARNING_REASON_DEK_DECRYPTION_ERROR,
-     * PROCESSING_WARNING_REASON_DECRYPTION_ERROR,
-     * PROCESSING_WARNING_REASON_WIP_AUTH_FAILED,
-     * PROCESSING_WARNING_REASON_INVALID_WIP,
-     * PROCESSING_WARNING_REASON_INVALID_KEK,
-     * PROCESSING_WARNING_REASON_USER_IDENTIFIER_DECRYPTION_ERROR,
-     * PROCESSING_WARNING_REASON_INTERNAL_ERROR,
-     * PROCESSING_WARNING_REASON_AWS_AUTH_FAILED
-     *
-     * @param self::REASON_* $reason
-     */
-    public function setReason($reason)
+namespace Google\Service\DataManager {
+    class WarningCount extends \Google\Model
     {
+        /**
+         * The processing warning reason is unknown.
+         */
+        public const REASON_PROCESSING_WARNING_REASON_UNSPECIFIED = 'PROCESSING_WARNING_REASON_UNSPECIFIED';
+        /**
+         * The system did not have the permissions needed to access the KEK.
+         */
+        public const REASON_PROCESSING_WARNING_REASON_KEK_PERMISSION_DENIED = 'PROCESSING_WARNING_REASON_KEK_PERMISSION_DENIED';
+        /**
+         * The DEK failed to be decrypted.
+         */
+        public const REASON_PROCESSING_WARNING_REASON_DEK_DECRYPTION_ERROR = 'PROCESSING_WARNING_REASON_DEK_DECRYPTION_ERROR';
+        /**
+         * The event has a decryption error.
+         */
+        public const REASON_PROCESSING_WARNING_REASON_DECRYPTION_ERROR = 'PROCESSING_WARNING_REASON_DECRYPTION_ERROR';
+        /**
+         * The WIP could not be used because it was rejected by its attestation
+         * condition.
+         */
+        public const REASON_PROCESSING_WARNING_REASON_WIP_AUTH_FAILED = 'PROCESSING_WARNING_REASON_WIP_AUTH_FAILED';
+        /**
+         * The WIP is formatted incorrectly or the WIP does not exist.
+         */
+        public const REASON_PROCESSING_WARNING_REASON_INVALID_WIP = 'PROCESSING_WARNING_REASON_INVALID_WIP';
+        /**
+         * The KEK cannot decrypt data because it is the wrong KEK, or it does not
+         * exist.
+         */
+        public const REASON_PROCESSING_WARNING_REASON_INVALID_KEK = 'PROCESSING_WARNING_REASON_INVALID_KEK';
+        /**
+         * Failed to decrypt th UserIdentifier data using the DEK.
+         */
+        public const REASON_PROCESSING_WARNING_REASON_USER_IDENTIFIER_DECRYPTION_ERROR = 'PROCESSING_WARNING_REASON_USER_IDENTIFIER_DECRYPTION_ERROR';
+        /**
+         * Internal error.
+         */
+        public const REASON_PROCESSING_WARNING_REASON_INTERNAL_ERROR = 'PROCESSING_WARNING_REASON_INTERNAL_ERROR';
+        /**
+         * The system failed to authenticate with AWS.
+         */
+        public const REASON_PROCESSING_WARNING_REASON_AWS_AUTH_FAILED = 'PROCESSING_WARNING_REASON_AWS_AUTH_FAILED';
+        /**
+         * The warning reason.
+         *
+         * @var string
+         */
+        public $reason;
+        /**
+         * The count of records that have a warning.
+         *
+         * @var string
+         */
+        public $recordCount;
+        /**
+         * The warning reason.
+         *
+         * Accepted values: PROCESSING_WARNING_REASON_UNSPECIFIED,
+         * PROCESSING_WARNING_REASON_KEK_PERMISSION_DENIED,
+         * PROCESSING_WARNING_REASON_DEK_DECRYPTION_ERROR,
+         * PROCESSING_WARNING_REASON_DECRYPTION_ERROR,
+         * PROCESSING_WARNING_REASON_WIP_AUTH_FAILED,
+         * PROCESSING_WARNING_REASON_INVALID_WIP,
+         * PROCESSING_WARNING_REASON_INVALID_KEK,
+         * PROCESSING_WARNING_REASON_USER_IDENTIFIER_DECRYPTION_ERROR,
+         * PROCESSING_WARNING_REASON_INTERNAL_ERROR,
+         * PROCESSING_WARNING_REASON_AWS_AUTH_FAILED
+         *
+         * @param self::REASON_* $reason
+         */
+        public function setReason($reason)
+        {
+        }
+        /**
+         * @return self::REASON_*
+         */
+        public function getReason()
+        {
+        }
+        /**
+         * The count of records that have a warning.
+         *
+         * @param string $recordCount
+         */
+        public function setRecordCount($recordCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRecordCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::REASON_*
+     * Runtime class alias of \Google\Service\DataManager\WarningCount registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReason()
-    {
-    }
-    /**
-     * The count of records that have a warning.
-     *
-     * @param string $recordCount
-     */
-    public function setRecordCount($recordCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRecordCount()
+    class Google_Service_DataManager_WarningCount extends \Google\Service\DataManager\WarningCount
     {
     }
 }

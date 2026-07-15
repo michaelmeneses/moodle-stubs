@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudComposer;
-
-class ListUserWorkloadsSecretsResponse extends \Google\Collection
-{
-    protected $collection_key = 'userWorkloadsSecrets';
-    /**
-     * The page token used to query for the next page if one exists.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $userWorkloadsSecretsType = UserWorkloadsSecret::class;
-    protected $userWorkloadsSecretsDataType = 'array';
-    /**
-     * The page token used to query for the next page if one exists.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\CloudComposer {
+    class ListUserWorkloadsSecretsResponse extends \Google\Collection
     {
+        protected $collection_key = 'userWorkloadsSecrets';
+        /**
+         * The page token used to query for the next page if one exists.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $userWorkloadsSecretsType = UserWorkloadsSecret::class;
+        protected $userWorkloadsSecretsDataType = 'array';
+        /**
+         * The page token used to query for the next page if one exists.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of Secrets returned by a ListUserWorkloadsSecretsRequest.
+         *
+         * @param UserWorkloadsSecret[] $userWorkloadsSecrets
+         */
+        public function setUserWorkloadsSecrets($userWorkloadsSecrets)
+        {
+        }
+        /**
+         * @return UserWorkloadsSecret[]
+         */
+        public function getUserWorkloadsSecrets()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudComposer\ListUserWorkloadsSecretsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of Secrets returned by a ListUserWorkloadsSecretsRequest.
-     *
-     * @param UserWorkloadsSecret[] $userWorkloadsSecrets
-     */
-    public function setUserWorkloadsSecrets($userWorkloadsSecrets)
-    {
-    }
-    /**
-     * @return UserWorkloadsSecret[]
-     */
-    public function getUserWorkloadsSecrets()
+    class Google_Service_CloudComposer_ListUserWorkloadsSecretsResponse extends \Google\Service\CloudComposer\ListUserWorkloadsSecretsResponse
     {
     }
 }

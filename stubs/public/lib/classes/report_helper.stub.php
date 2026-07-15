@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core;
 
+use context_course;
+use stdClass;
 /**
  * A helper class with static methods to help report plugins
  *

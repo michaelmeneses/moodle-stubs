@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataManager;
-
-class IngestEventsStatus extends \Google\Model
-{
-    /**
-     * The total count of events sent in the upload request. Includes all events
-     * in the request, regardless of whether they were successfully ingested or
-     * not.
-     *
-     * @var string
-     */
-    public $recordCount;
-    /**
-     * The total count of events sent in the upload request. Includes all events
-     * in the request, regardless of whether they were successfully ingested or
-     * not.
-     *
-     * @param string $recordCount
-     */
-    public function setRecordCount($recordCount)
+namespace Google\Service\DataManager {
+    class IngestEventsStatus extends \Google\Model
     {
+        /**
+         * The total count of events sent in the upload request. Includes all events
+         * in the request, regardless of whether they were successfully ingested or
+         * not.
+         *
+         * @var string
+         */
+        public $recordCount;
+        /**
+         * The total count of events sent in the upload request. Includes all events
+         * in the request, regardless of whether they were successfully ingested or
+         * not.
+         *
+         * @param string $recordCount
+         */
+        public function setRecordCount($recordCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRecordCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataManager\IngestEventsStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRecordCount()
+    class Google_Service_DataManager_IngestEventsStatus extends \Google\Service\DataManager\IngestEventsStatus
     {
     }
 }

@@ -21,242 +21,251 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class UrlMetadata extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $domain;
-    protected $gwsUrlType = SafeUrlProto::class;
-    protected $gwsUrlDataType = '';
-    /**
-     * @var string
-     */
-    public $gwsUrlExpirationTimestamp;
-    /**
-     * @var string
-     */
-    public $imageHeight;
-    /**
-     * @var string
-     */
-    public $imageUrl;
-    /**
-     * @var string
-     */
-    public $imageWidth;
-    /**
-     * @var int
-     */
-    public $intImageHeight;
-    /**
-     * @var int
-     */
-    public $intImageWidth;
-    /**
-     * @var string
-     */
-    public $mimeType;
-    protected $redirectUrlType = SafeUrlProto::class;
-    protected $redirectUrlDataType = '';
-    /**
-     * @var bool
-     */
-    public $shouldNotRender;
-    /**
-     * @var string
-     */
-    public $snippet;
-    /**
-     * @var string
-     */
-    public $title;
-    protected $urlType = SafeUrlProto::class;
-    protected $urlDataType = '';
-    /**
-     * @var string
-     */
-    public $urlSource;
-    /**
-     * @param string
-     */
-    public function setDomain($domain)
+namespace Google\Service\CloudSearch {
+    class UrlMetadata extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $domain;
+        protected $gwsUrlType = SafeUrlProto::class;
+        protected $gwsUrlDataType = '';
+        /**
+         * @var string
+         */
+        public $gwsUrlExpirationTimestamp;
+        /**
+         * @var string
+         */
+        public $imageHeight;
+        /**
+         * @var string
+         */
+        public $imageUrl;
+        /**
+         * @var string
+         */
+        public $imageWidth;
+        /**
+         * @var int
+         */
+        public $intImageHeight;
+        /**
+         * @var int
+         */
+        public $intImageWidth;
+        /**
+         * @var string
+         */
+        public $mimeType;
+        protected $redirectUrlType = SafeUrlProto::class;
+        protected $redirectUrlDataType = '';
+        /**
+         * @var bool
+         */
+        public $shouldNotRender;
+        /**
+         * @var string
+         */
+        public $snippet;
+        /**
+         * @var string
+         */
+        public $title;
+        protected $urlType = SafeUrlProto::class;
+        protected $urlDataType = '';
+        /**
+         * @var string
+         */
+        public $urlSource;
+        /**
+         * @param string
+         */
+        public function setDomain($domain)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDomain()
+        {
+        }
+        /**
+         * @param SafeUrlProto
+         */
+        public function setGwsUrl(SafeUrlProto $gwsUrl)
+        {
+        }
+        /**
+         * @return SafeUrlProto
+         */
+        public function getGwsUrl()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setGwsUrlExpirationTimestamp($gwsUrlExpirationTimestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGwsUrlExpirationTimestamp()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setImageHeight($imageHeight)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImageHeight()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setImageUrl($imageUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImageUrl()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setImageWidth($imageWidth)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImageWidth()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setIntImageHeight($intImageHeight)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getIntImageHeight()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setIntImageWidth($intImageWidth)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getIntImageWidth()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMimeType($mimeType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMimeType()
+        {
+        }
+        /**
+         * @param SafeUrlProto
+         */
+        public function setRedirectUrl(SafeUrlProto $redirectUrl)
+        {
+        }
+        /**
+         * @return SafeUrlProto
+         */
+        public function getRedirectUrl()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setShouldNotRender($shouldNotRender)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getShouldNotRender()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSnippet($snippet)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSnippet()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * @param SafeUrlProto
+         */
+        public function setUrl(SafeUrlProto $url)
+        {
+        }
+        /**
+         * @return SafeUrlProto
+         */
+        public function getUrl()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUrlSource($urlSource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrlSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\UrlMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDomain()
-    {
-    }
-    /**
-     * @param SafeUrlProto
-     */
-    public function setGwsUrl(SafeUrlProto $gwsUrl)
-    {
-    }
-    /**
-     * @return SafeUrlProto
-     */
-    public function getGwsUrl()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setGwsUrlExpirationTimestamp($gwsUrlExpirationTimestamp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGwsUrlExpirationTimestamp()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setImageHeight($imageHeight)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImageHeight()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setImageUrl($imageUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImageUrl()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setImageWidth($imageWidth)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImageWidth()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setIntImageHeight($intImageHeight)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getIntImageHeight()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setIntImageWidth($intImageWidth)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getIntImageWidth()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMimeType($mimeType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMimeType()
-    {
-    }
-    /**
-     * @param SafeUrlProto
-     */
-    public function setRedirectUrl(SafeUrlProto $redirectUrl)
-    {
-    }
-    /**
-     * @return SafeUrlProto
-     */
-    public function getRedirectUrl()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setShouldNotRender($shouldNotRender)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getShouldNotRender()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSnippet($snippet)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSnippet()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
-    {
-    }
-    /**
-     * @param SafeUrlProto
-     */
-    public function setUrl(SafeUrlProto $url)
-    {
-    }
-    /**
-     * @return SafeUrlProto
-     */
-    public function getUrl()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUrlSource($urlSource)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrlSource()
+    class Google_Service_CloudSearch_UrlMetadata extends \Google\Service\CloudSearch\UrlMetadata
     {
     }
 }

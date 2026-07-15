@@ -21,100 +21,109 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PolicySimulator;
-
-class GoogleCloudPolicysimulatorV1beta1ReplayResultsSummary extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $differenceCount;
-    /**
-     * @var int
-     */
-    public $errorCount;
-    /**
-     * @var int
-     */
-    public $logCount;
-    protected $newestDateType = GoogleTypeDate::class;
-    protected $newestDateDataType = '';
-    protected $oldestDateType = GoogleTypeDate::class;
-    protected $oldestDateDataType = '';
-    /**
-     * @var int
-     */
-    public $unchangedCount;
-    /**
-     * @param int
-     */
-    public function setDifferenceCount($differenceCount)
+namespace Google\Service\PolicySimulator {
+    class GoogleCloudPolicysimulatorV1beta1ReplayResultsSummary extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $differenceCount;
+        /**
+         * @var int
+         */
+        public $errorCount;
+        /**
+         * @var int
+         */
+        public $logCount;
+        protected $newestDateType = GoogleTypeDate::class;
+        protected $newestDateDataType = '';
+        protected $oldestDateType = GoogleTypeDate::class;
+        protected $oldestDateDataType = '';
+        /**
+         * @var int
+         */
+        public $unchangedCount;
+        /**
+         * @param int
+         */
+        public function setDifferenceCount($differenceCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getDifferenceCount()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setErrorCount($errorCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getErrorCount()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setLogCount($logCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getLogCount()
+        {
+        }
+        /**
+         * @param GoogleTypeDate
+         */
+        public function setNewestDate(GoogleTypeDate $newestDate)
+        {
+        }
+        /**
+         * @return GoogleTypeDate
+         */
+        public function getNewestDate()
+        {
+        }
+        /**
+         * @param GoogleTypeDate
+         */
+        public function setOldestDate(GoogleTypeDate $oldestDate)
+        {
+        }
+        /**
+         * @return GoogleTypeDate
+         */
+        public function getOldestDate()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setUnchangedCount($unchangedCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getUnchangedCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\PolicySimulator\GoogleCloudPolicysimulatorV1beta1ReplayResultsSummary registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDifferenceCount()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setErrorCount($errorCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getErrorCount()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setLogCount($logCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getLogCount()
-    {
-    }
-    /**
-     * @param GoogleTypeDate
-     */
-    public function setNewestDate(GoogleTypeDate $newestDate)
-    {
-    }
-    /**
-     * @return GoogleTypeDate
-     */
-    public function getNewestDate()
-    {
-    }
-    /**
-     * @param GoogleTypeDate
-     */
-    public function setOldestDate(GoogleTypeDate $oldestDate)
-    {
-    }
-    /**
-     * @return GoogleTypeDate
-     */
-    public function getOldestDate()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setUnchangedCount($unchangedCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getUnchangedCount()
+    class Google_Service_PolicySimulator_GoogleCloudPolicysimulatorV1beta1ReplayResultsSummary extends \Google\Service\PolicySimulator\GoogleCloudPolicysimulatorV1beta1ReplayResultsSummary
     {
     }
 }

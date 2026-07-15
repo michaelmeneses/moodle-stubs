@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1ImportUserEventsResponse extends \Google\Collection
-{
-    protected $collection_key = 'errorSamples';
-    protected $errorConfigType = GoogleCloudDiscoveryengineV1ImportErrorConfig::class;
-    protected $errorConfigDataType = '';
-    protected $errorSamplesType = GoogleRpcStatus::class;
-    protected $errorSamplesDataType = 'array';
-    /**
-     * Count of user events imported with complete existing Documents.
-     *
-     * @var string
-     */
-    public $joinedEventsCount;
-    /**
-     * Count of user events imported, but with Document information not found in
-     * the existing Branch.
-     *
-     * @var string
-     */
-    public $unjoinedEventsCount;
-    /**
-     * Echoes the destination for the complete errors if this field was set in the
-     * request.
-     *
-     * @param GoogleCloudDiscoveryengineV1ImportErrorConfig $errorConfig
-     */
-    public function setErrorConfig(GoogleCloudDiscoveryengineV1ImportErrorConfig $errorConfig)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1ImportUserEventsResponse extends \Google\Collection
     {
+        protected $collection_key = 'errorSamples';
+        protected $errorConfigType = GoogleCloudDiscoveryengineV1ImportErrorConfig::class;
+        protected $errorConfigDataType = '';
+        protected $errorSamplesType = GoogleRpcStatus::class;
+        protected $errorSamplesDataType = 'array';
+        /**
+         * Count of user events imported with complete existing Documents.
+         *
+         * @var string
+         */
+        public $joinedEventsCount;
+        /**
+         * Count of user events imported, but with Document information not found in
+         * the existing Branch.
+         *
+         * @var string
+         */
+        public $unjoinedEventsCount;
+        /**
+         * Echoes the destination for the complete errors if this field was set in the
+         * request.
+         *
+         * @param GoogleCloudDiscoveryengineV1ImportErrorConfig $errorConfig
+         */
+        public function setErrorConfig(GoogleCloudDiscoveryengineV1ImportErrorConfig $errorConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1ImportErrorConfig
+         */
+        public function getErrorConfig()
+        {
+        }
+        /**
+         * A sample of errors encountered while processing the request.
+         *
+         * @param GoogleRpcStatus[] $errorSamples
+         */
+        public function setErrorSamples($errorSamples)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus[]
+         */
+        public function getErrorSamples()
+        {
+        }
+        /**
+         * Count of user events imported with complete existing Documents.
+         *
+         * @param string $joinedEventsCount
+         */
+        public function setJoinedEventsCount($joinedEventsCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getJoinedEventsCount()
+        {
+        }
+        /**
+         * Count of user events imported, but with Document information not found in
+         * the existing Branch.
+         *
+         * @param string $unjoinedEventsCount
+         */
+        public function setUnjoinedEventsCount($unjoinedEventsCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUnjoinedEventsCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1ImportErrorConfig
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ImportUserEventsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrorConfig()
-    {
-    }
-    /**
-     * A sample of errors encountered while processing the request.
-     *
-     * @param GoogleRpcStatus[] $errorSamples
-     */
-    public function setErrorSamples($errorSamples)
-    {
-    }
-    /**
-     * @return GoogleRpcStatus[]
-     */
-    public function getErrorSamples()
-    {
-    }
-    /**
-     * Count of user events imported with complete existing Documents.
-     *
-     * @param string $joinedEventsCount
-     */
-    public function setJoinedEventsCount($joinedEventsCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getJoinedEventsCount()
-    {
-    }
-    /**
-     * Count of user events imported, but with Document information not found in
-     * the existing Branch.
-     *
-     * @param string $unjoinedEventsCount
-     */
-    public function setUnjoinedEventsCount($unjoinedEventsCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUnjoinedEventsCount()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1ImportUserEventsResponse extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ImportUserEventsResponse
     {
     }
 }

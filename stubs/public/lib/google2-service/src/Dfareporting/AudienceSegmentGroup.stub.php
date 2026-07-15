@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class AudienceSegmentGroup extends \Google\Collection
-{
-    protected $collection_key = 'audienceSegments';
-    protected $audienceSegmentsType = AudienceSegment::class;
-    protected $audienceSegmentsDataType = 'array';
-    /**
-     * ID of this audience segment group. This is a read-only, auto-generated
-     * field.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Name of this audience segment group. This is a required field and must be
-     * less than 65 characters long.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Audience segments assigned to this group. The number of segments must be
-     * between 2 and 100.
-     *
-     * @param AudienceSegment[] $audienceSegments
-     */
-    public function setAudienceSegments($audienceSegments)
+namespace Google\Service\Dfareporting {
+    class AudienceSegmentGroup extends \Google\Collection
     {
+        protected $collection_key = 'audienceSegments';
+        protected $audienceSegmentsType = AudienceSegment::class;
+        protected $audienceSegmentsDataType = 'array';
+        /**
+         * ID of this audience segment group. This is a read-only, auto-generated
+         * field.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Name of this audience segment group. This is a required field and must be
+         * less than 65 characters long.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Audience segments assigned to this group. The number of segments must be
+         * between 2 and 100.
+         *
+         * @param AudienceSegment[] $audienceSegments
+         */
+        public function setAudienceSegments($audienceSegments)
+        {
+        }
+        /**
+         * @return AudienceSegment[]
+         */
+        public function getAudienceSegments()
+        {
+        }
+        /**
+         * ID of this audience segment group. This is a read-only, auto-generated
+         * field.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Name of this audience segment group. This is a required field and must be
+         * less than 65 characters long.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AudienceSegment[]
+     * Runtime class alias of \Google\Service\Dfareporting\AudienceSegmentGroup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAudienceSegments()
-    {
-    }
-    /**
-     * ID of this audience segment group. This is a read-only, auto-generated
-     * field.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Name of this audience segment group. This is a required field and must be
-     * less than 65 characters long.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Dfareporting_AudienceSegmentGroup extends \Google\Service\Dfareporting\AudienceSegmentGroup
     {
     }
 }

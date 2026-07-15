@@ -21,83 +21,92 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSModelArtifactItem extends \Google\Model
-{
-    /**
-     * Should not be used.
-     */
-    public const ARTIFACT_FORMAT_ARTIFACT_FORMAT_UNSPECIFIED = 'ARTIFACT_FORMAT_UNSPECIFIED';
-    /**
-     * The Tensorflow checkpoints. See
-     * https://www.tensorflow.org/guide/checkpoint.
-     */
-    public const ARTIFACT_FORMAT_TF_CHECKPOINT = 'TF_CHECKPOINT';
-    /**
-     * The Tensorflow SavedModel binary.
-     */
-    public const ARTIFACT_FORMAT_TF_SAVED_MODEL = 'TF_SAVED_MODEL';
-    /**
-     * Model artifact in generic TensorFlow Lite (.tflite) format. See
-     * https://www.tensorflow.org/lite.
-     */
-    public const ARTIFACT_FORMAT_TF_LITE = 'TF_LITE';
-    /**
-     * Used for [Edge TPU](https://cloud.google.com/edge-tpu/) devices.
-     */
-    public const ARTIFACT_FORMAT_EDGE_TPU_TF_LITE = 'EDGE_TPU_TF_LITE';
-    /**
-     * A [TensorFlow.js](https://www.tensorflow.org/js) model that can be used in
-     * the browser and in Node.js using JavaScript.
-     */
-    public const ARTIFACT_FORMAT_TF_JS = 'TF_JS';
-    /**
-     * Used for iOS mobile devices in (.mlmodel) format. See
-     * https://developer.apple.com/documentation/coreml
-     */
-    public const ARTIFACT_FORMAT_CORE_ML = 'CORE_ML';
-    /**
-     * The model artifact format.
-     *
-     * @var string
-     */
-    public $artifactFormat;
-    /**
-     * The Google Cloud Storage URI that stores the model binary files.
-     *
-     * @var string
-     */
-    public $gcsUri;
-    /**
-     * The model artifact format.
-     *
-     * Accepted values: ARTIFACT_FORMAT_UNSPECIFIED, TF_CHECKPOINT,
-     * TF_SAVED_MODEL, TF_LITE, EDGE_TPU_TF_LITE, TF_JS, CORE_ML
-     *
-     * @param self::ARTIFACT_FORMAT_* $artifactFormat
-     */
-    public function setArtifactFormat($artifactFormat)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSModelArtifactItem extends \Google\Model
     {
+        /**
+         * Should not be used.
+         */
+        public const ARTIFACT_FORMAT_ARTIFACT_FORMAT_UNSPECIFIED = 'ARTIFACT_FORMAT_UNSPECIFIED';
+        /**
+         * The Tensorflow checkpoints. See
+         * https://www.tensorflow.org/guide/checkpoint.
+         */
+        public const ARTIFACT_FORMAT_TF_CHECKPOINT = 'TF_CHECKPOINT';
+        /**
+         * The Tensorflow SavedModel binary.
+         */
+        public const ARTIFACT_FORMAT_TF_SAVED_MODEL = 'TF_SAVED_MODEL';
+        /**
+         * Model artifact in generic TensorFlow Lite (.tflite) format. See
+         * https://www.tensorflow.org/lite.
+         */
+        public const ARTIFACT_FORMAT_TF_LITE = 'TF_LITE';
+        /**
+         * Used for [Edge TPU](https://cloud.google.com/edge-tpu/) devices.
+         */
+        public const ARTIFACT_FORMAT_EDGE_TPU_TF_LITE = 'EDGE_TPU_TF_LITE';
+        /**
+         * A [TensorFlow.js](https://www.tensorflow.org/js) model that can be used in
+         * the browser and in Node.js using JavaScript.
+         */
+        public const ARTIFACT_FORMAT_TF_JS = 'TF_JS';
+        /**
+         * Used for iOS mobile devices in (.mlmodel) format. See
+         * https://developer.apple.com/documentation/coreml
+         */
+        public const ARTIFACT_FORMAT_CORE_ML = 'CORE_ML';
+        /**
+         * The model artifact format.
+         *
+         * @var string
+         */
+        public $artifactFormat;
+        /**
+         * The Google Cloud Storage URI that stores the model binary files.
+         *
+         * @var string
+         */
+        public $gcsUri;
+        /**
+         * The model artifact format.
+         *
+         * Accepted values: ARTIFACT_FORMAT_UNSPECIFIED, TF_CHECKPOINT,
+         * TF_SAVED_MODEL, TF_LITE, EDGE_TPU_TF_LITE, TF_JS, CORE_ML
+         *
+         * @param self::ARTIFACT_FORMAT_* $artifactFormat
+         */
+        public function setArtifactFormat($artifactFormat)
+        {
+        }
+        /**
+         * @return self::ARTIFACT_FORMAT_*
+         */
+        public function getArtifactFormat()
+        {
+        }
+        /**
+         * The Google Cloud Storage URI that stores the model binary files.
+         *
+         * @param string $gcsUri
+         */
+        public function setGcsUri($gcsUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGcsUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::ARTIFACT_FORMAT_*
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSModelArtifactItem registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArtifactFormat()
-    {
-    }
-    /**
-     * The Google Cloud Storage URI that stores the model binary files.
-     *
-     * @param string $gcsUri
-     */
-    public function setGcsUri($gcsUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGcsUri()
+    class Google_Service_CloudNaturalLanguage_XPSModelArtifactItem extends \Google\Service\CloudNaturalLanguage\XPSModelArtifactItem
     {
     }
 }

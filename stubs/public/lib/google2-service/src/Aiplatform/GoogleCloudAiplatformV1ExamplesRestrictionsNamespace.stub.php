@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ExamplesRestrictionsNamespace extends \Google\Collection
-{
-    protected $collection_key = 'deny';
-    /**
-     * The list of allowed tags.
-     *
-     * @var string[]
-     */
-    public $allow;
-    /**
-     * The list of deny tags.
-     *
-     * @var string[]
-     */
-    public $deny;
-    /**
-     * The namespace name.
-     *
-     * @var string
-     */
-    public $namespaceName;
-    /**
-     * The list of allowed tags.
-     *
-     * @param string[] $allow
-     */
-    public function setAllow($allow)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ExamplesRestrictionsNamespace extends \Google\Collection
     {
+        protected $collection_key = 'deny';
+        /**
+         * The list of allowed tags.
+         *
+         * @var string[]
+         */
+        public $allow;
+        /**
+         * The list of deny tags.
+         *
+         * @var string[]
+         */
+        public $deny;
+        /**
+         * The namespace name.
+         *
+         * @var string
+         */
+        public $namespaceName;
+        /**
+         * The list of allowed tags.
+         *
+         * @param string[] $allow
+         */
+        public function setAllow($allow)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAllow()
+        {
+        }
+        /**
+         * The list of deny tags.
+         *
+         * @param string[] $deny
+         */
+        public function setDeny($deny)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDeny()
+        {
+        }
+        /**
+         * The namespace name.
+         *
+         * @param string $namespaceName
+         */
+        public function setNamespaceName($namespaceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNamespaceName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ExamplesRestrictionsNamespace registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllow()
-    {
-    }
-    /**
-     * The list of deny tags.
-     *
-     * @param string[] $deny
-     */
-    public function setDeny($deny)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getDeny()
-    {
-    }
-    /**
-     * The namespace name.
-     *
-     * @param string $namespaceName
-     */
-    public function setNamespaceName($namespaceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNamespaceName()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ExamplesRestrictionsNamespace extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ExamplesRestrictionsNamespace
     {
     }
 }

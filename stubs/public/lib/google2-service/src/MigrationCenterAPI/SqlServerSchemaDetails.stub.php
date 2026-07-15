@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class SqlServerSchemaDetails extends \Google\Model
-{
-    /**
-     * Optional. SqlServer number of CLR objects.
-     *
-     * @var int
-     */
-    public $clrObjectCount;
-    /**
-     * Optional. SqlServer number of CLR objects.
-     *
-     * @param int $clrObjectCount
-     */
-    public function setClrObjectCount($clrObjectCount)
+namespace Google\Service\MigrationCenterAPI {
+    class SqlServerSchemaDetails extends \Google\Model
     {
+        /**
+         * Optional. SqlServer number of CLR objects.
+         *
+         * @var int
+         */
+        public $clrObjectCount;
+        /**
+         * Optional. SqlServer number of CLR objects.
+         *
+         * @param int $clrObjectCount
+         */
+        public function setClrObjectCount($clrObjectCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getClrObjectCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\SqlServerSchemaDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClrObjectCount()
+    class Google_Service_MigrationCenterAPI_SqlServerSchemaDetails extends \Google\Service\MigrationCenterAPI\SqlServerSchemaDetails
     {
     }
 }

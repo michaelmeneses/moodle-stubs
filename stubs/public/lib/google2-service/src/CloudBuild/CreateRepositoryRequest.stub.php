@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class CreateRepositoryRequest extends \Google\Model
-{
-    /**
-     * Required. The connection to contain the repository. If the request is part
-     * of a BatchCreateRepositoriesRequest, this field should be empty or match
-     * the parent specified there.
-     *
-     * @var string
-     */
-    public $parent;
-    protected $repositoryType = Repository::class;
-    protected $repositoryDataType = '';
-    /**
-     * Required. The ID to use for the repository, which will become the final
-     * component of the repository's resource name. This ID should be unique in
-     * the connection. Allows alphanumeric characters and any of
-     * -._~%!$&'()*+,;=@.
-     *
-     * @var string
-     */
-    public $repositoryId;
-    /**
-     * Required. The connection to contain the repository. If the request is part
-     * of a BatchCreateRepositoriesRequest, this field should be empty or match
-     * the parent specified there.
-     *
-     * @param string $parent
-     */
-    public function setParent($parent)
+namespace Google\Service\CloudBuild {
+    class CreateRepositoryRequest extends \Google\Model
     {
+        /**
+         * Required. The connection to contain the repository. If the request is part
+         * of a BatchCreateRepositoriesRequest, this field should be empty or match
+         * the parent specified there.
+         *
+         * @var string
+         */
+        public $parent;
+        protected $repositoryType = Repository::class;
+        protected $repositoryDataType = '';
+        /**
+         * Required. The ID to use for the repository, which will become the final
+         * component of the repository's resource name. This ID should be unique in
+         * the connection. Allows alphanumeric characters and any of
+         * -._~%!$&'()*+,;=@.
+         *
+         * @var string
+         */
+        public $repositoryId;
+        /**
+         * Required. The connection to contain the repository. If the request is part
+         * of a BatchCreateRepositoriesRequest, this field should be empty or match
+         * the parent specified there.
+         *
+         * @param string $parent
+         */
+        public function setParent($parent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParent()
+        {
+        }
+        /**
+         * Required. The repository to create.
+         *
+         * @param Repository $repository
+         */
+        public function setRepository(Repository $repository)
+        {
+        }
+        /**
+         * @return Repository
+         */
+        public function getRepository()
+        {
+        }
+        /**
+         * Required. The ID to use for the repository, which will become the final
+         * component of the repository's resource name. This ID should be unique in
+         * the connection. Allows alphanumeric characters and any of
+         * -._~%!$&'()*+,;=@.
+         *
+         * @param string $repositoryId
+         */
+        public function setRepositoryId($repositoryId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRepositoryId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudBuild\CreateRepositoryRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getParent()
-    {
-    }
-    /**
-     * Required. The repository to create.
-     *
-     * @param Repository $repository
-     */
-    public function setRepository(Repository $repository)
-    {
-    }
-    /**
-     * @return Repository
-     */
-    public function getRepository()
-    {
-    }
-    /**
-     * Required. The ID to use for the repository, which will become the final
-     * component of the repository's resource name. This ID should be unique in
-     * the connection. Allows alphanumeric characters and any of
-     * -._~%!$&'()*+,;=@.
-     *
-     * @param string $repositoryId
-     */
-    public function setRepositoryId($repositoryId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRepositoryId()
+    class Google_Service_CloudBuild_CreateRepositoryRequest extends \Google\Service\CloudBuild\CreateRepositoryRequest
     {
     }
 }

@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HomeGraphService;
-
-class QueryResponse extends \Google\Model
-{
-    protected $payloadType = QueryResponsePayload::class;
-    protected $payloadDataType = '';
-    /**
-     * Request ID used for debugging. Copied from the request.
-     *
-     * @var string
-     */
-    public $requestId;
-    /**
-     * Device states for the devices given in the request.
-     *
-     * @param QueryResponsePayload $payload
-     */
-    public function setPayload(QueryResponsePayload $payload)
+namespace Google\Service\HomeGraphService {
+    class QueryResponse extends \Google\Model
     {
+        protected $payloadType = QueryResponsePayload::class;
+        protected $payloadDataType = '';
+        /**
+         * Request ID used for debugging. Copied from the request.
+         *
+         * @var string
+         */
+        public $requestId;
+        /**
+         * Device states for the devices given in the request.
+         *
+         * @param QueryResponsePayload $payload
+         */
+        public function setPayload(QueryResponsePayload $payload)
+        {
+        }
+        /**
+         * @return QueryResponsePayload
+         */
+        public function getPayload()
+        {
+        }
+        /**
+         * Request ID used for debugging. Copied from the request.
+         *
+         * @param string $requestId
+         */
+        public function setRequestId($requestId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return QueryResponsePayload
+     * Runtime class alias of \Google\Service\HomeGraphService\QueryResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPayload()
-    {
-    }
-    /**
-     * Request ID used for debugging. Copied from the request.
-     *
-     * @param string $requestId
-     */
-    public function setRequestId($requestId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestId()
+    class Google_Service_HomeGraphService_QueryResponse extends \Google\Service\HomeGraphService\QueryResponse
     {
     }
 }

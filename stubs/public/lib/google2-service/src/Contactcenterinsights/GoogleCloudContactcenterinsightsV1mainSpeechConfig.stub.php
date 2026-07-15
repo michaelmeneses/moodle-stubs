@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1mainSpeechConfig extends \Google\Model
-{
-    /**
-     * The fully-qualified Speech Recognizer resource name. Format:
-     * `projects/{project_id}/locations/{location}/recognizer/{recognizer}`
-     *
-     * @var string
-     */
-    public $speechRecognizer;
-    /**
-     * The fully-qualified Speech Recognizer resource name. Format:
-     * `projects/{project_id}/locations/{location}/recognizer/{recognizer}`
-     *
-     * @param string $speechRecognizer
-     */
-    public function setSpeechRecognizer($speechRecognizer)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1mainSpeechConfig extends \Google\Model
     {
+        /**
+         * The fully-qualified Speech Recognizer resource name. Format:
+         * `projects/{project_id}/locations/{location}/recognizer/{recognizer}`
+         *
+         * @var string
+         */
+        public $speechRecognizer;
+        /**
+         * The fully-qualified Speech Recognizer resource name. Format:
+         * `projects/{project_id}/locations/{location}/recognizer/{recognizer}`
+         *
+         * @param string $speechRecognizer
+         */
+        public function setSpeechRecognizer($speechRecognizer)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSpeechRecognizer()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainSpeechConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSpeechRecognizer()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1mainSpeechConfig extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainSpeechConfig
     {
     }
 }

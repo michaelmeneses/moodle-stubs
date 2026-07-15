@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Appengine;
-
-class CertificateRawData extends \Google\Model
-{
-    /**
-     * Unencrypted PEM encoded RSA private key. This field is set once on
-     * certificate creation and then encrypted. The key size must be 2048 bits or
-     * fewer. Must include the header and footer. Example: -----BEGIN RSA PRIVATE
-     * KEY----- -----END RSA PRIVATE KEY----- @InputOnly
-     *
-     * @var string
-     */
-    public $privateKey;
-    /**
-     * PEM encoded x.509 public key certificate. This field is set once on
-     * certificate creation. Must include the header and footer. Example:
-     * -----BEGIN CERTIFICATE----- -----END CERTIFICATE-----
-     *
-     * @var string
-     */
-    public $publicCertificate;
-    /**
-     * Unencrypted PEM encoded RSA private key. This field is set once on
-     * certificate creation and then encrypted. The key size must be 2048 bits or
-     * fewer. Must include the header and footer. Example: -----BEGIN RSA PRIVATE
-     * KEY----- -----END RSA PRIVATE KEY----- @InputOnly
-     *
-     * @param string $privateKey
-     */
-    public function setPrivateKey($privateKey)
+namespace Google\Service\Appengine {
+    class CertificateRawData extends \Google\Model
     {
+        /**
+         * Unencrypted PEM encoded RSA private key. This field is set once on
+         * certificate creation and then encrypted. The key size must be 2048 bits or
+         * fewer. Must include the header and footer. Example: -----BEGIN RSA PRIVATE
+         * KEY----- -----END RSA PRIVATE KEY----- @InputOnly
+         *
+         * @var string
+         */
+        public $privateKey;
+        /**
+         * PEM encoded x.509 public key certificate. This field is set once on
+         * certificate creation. Must include the header and footer. Example:
+         * -----BEGIN CERTIFICATE----- -----END CERTIFICATE-----
+         *
+         * @var string
+         */
+        public $publicCertificate;
+        /**
+         * Unencrypted PEM encoded RSA private key. This field is set once on
+         * certificate creation and then encrypted. The key size must be 2048 bits or
+         * fewer. Must include the header and footer. Example: -----BEGIN RSA PRIVATE
+         * KEY----- -----END RSA PRIVATE KEY----- @InputOnly
+         *
+         * @param string $privateKey
+         */
+        public function setPrivateKey($privateKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrivateKey()
+        {
+        }
+        /**
+         * PEM encoded x.509 public key certificate. This field is set once on
+         * certificate creation. Must include the header and footer. Example:
+         * -----BEGIN CERTIFICATE----- -----END CERTIFICATE-----
+         *
+         * @param string $publicCertificate
+         */
+        public function setPublicCertificate($publicCertificate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPublicCertificate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Appengine\CertificateRawData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPrivateKey()
-    {
-    }
-    /**
-     * PEM encoded x.509 public key certificate. This field is set once on
-     * certificate creation. Must include the header and footer. Example:
-     * -----BEGIN CERTIFICATE----- -----END CERTIFICATE-----
-     *
-     * @param string $publicCertificate
-     */
-    public function setPublicCertificate($publicCertificate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPublicCertificate()
+    class Google_Service_Appengine_CertificateRawData extends \Google\Service\Appengine\CertificateRawData
     {
     }
 }

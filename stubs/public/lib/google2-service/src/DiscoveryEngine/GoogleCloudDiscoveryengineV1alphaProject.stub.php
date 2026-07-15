@@ -21,127 +21,136 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaProject extends \Google\Model
-{
-    protected $configurableBillingStatusType = GoogleCloudDiscoveryengineV1alphaProjectConfigurableBillingStatus::class;
-    protected $configurableBillingStatusDataType = '';
-    /**
-     * Output only. The timestamp when this project is created.
-     *
-     * @var string
-     */
-    public $createTime;
-    protected $customerProvidedConfigType = GoogleCloudDiscoveryengineV1alphaProjectCustomerProvidedConfig::class;
-    protected $customerProvidedConfigDataType = '';
-    /**
-     * Output only. Full resource name of the project, for example
-     * `projects/{project}`. Note that when making requests, project number and
-     * project id are both acceptable, but the server will always respond in
-     * project number.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The timestamp when this project is successfully provisioned.
-     * Empty value means this project is still provisioning and is not ready for
-     * use.
-     *
-     * @var string
-     */
-    public $provisionCompletionTime;
-    protected $serviceTermsMapType = GoogleCloudDiscoveryengineV1alphaProjectServiceTerms::class;
-    protected $serviceTermsMapDataType = 'map';
-    /**
-     * Output only. The current status of the project's configurable billing.
-     *
-     * @param GoogleCloudDiscoveryengineV1alphaProjectConfigurableBillingStatus $configurableBillingStatus
-     */
-    public function setConfigurableBillingStatus(GoogleCloudDiscoveryengineV1alphaProjectConfigurableBillingStatus $configurableBillingStatus)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaProject extends \Google\Model
     {
+        protected $configurableBillingStatusType = GoogleCloudDiscoveryengineV1alphaProjectConfigurableBillingStatus::class;
+        protected $configurableBillingStatusDataType = '';
+        /**
+         * Output only. The timestamp when this project is created.
+         *
+         * @var string
+         */
+        public $createTime;
+        protected $customerProvidedConfigType = GoogleCloudDiscoveryengineV1alphaProjectCustomerProvidedConfig::class;
+        protected $customerProvidedConfigDataType = '';
+        /**
+         * Output only. Full resource name of the project, for example
+         * `projects/{project}`. Note that when making requests, project number and
+         * project id are both acceptable, but the server will always respond in
+         * project number.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The timestamp when this project is successfully provisioned.
+         * Empty value means this project is still provisioning and is not ready for
+         * use.
+         *
+         * @var string
+         */
+        public $provisionCompletionTime;
+        protected $serviceTermsMapType = GoogleCloudDiscoveryengineV1alphaProjectServiceTerms::class;
+        protected $serviceTermsMapDataType = 'map';
+        /**
+         * Output only. The current status of the project's configurable billing.
+         *
+         * @param GoogleCloudDiscoveryengineV1alphaProjectConfigurableBillingStatus $configurableBillingStatus
+         */
+        public function setConfigurableBillingStatus(GoogleCloudDiscoveryengineV1alphaProjectConfigurableBillingStatus $configurableBillingStatus)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1alphaProjectConfigurableBillingStatus
+         */
+        public function getConfigurableBillingStatus()
+        {
+        }
+        /**
+         * Output only. The timestamp when this project is created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Optional. Customer provided configurations.
+         *
+         * @param GoogleCloudDiscoveryengineV1alphaProjectCustomerProvidedConfig $customerProvidedConfig
+         */
+        public function setCustomerProvidedConfig(GoogleCloudDiscoveryengineV1alphaProjectCustomerProvidedConfig $customerProvidedConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1alphaProjectCustomerProvidedConfig
+         */
+        public function getCustomerProvidedConfig()
+        {
+        }
+        /**
+         * Output only. Full resource name of the project, for example
+         * `projects/{project}`. Note that when making requests, project number and
+         * project id are both acceptable, but the server will always respond in
+         * project number.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The timestamp when this project is successfully provisioned.
+         * Empty value means this project is still provisioning and is not ready for
+         * use.
+         *
+         * @param string $provisionCompletionTime
+         */
+        public function setProvisionCompletionTime($provisionCompletionTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProvisionCompletionTime()
+        {
+        }
+        /**
+         * Output only. A map of terms of services. The key is the `id` of
+         * ServiceTerms.
+         *
+         * @param GoogleCloudDiscoveryengineV1alphaProjectServiceTerms[] $serviceTermsMap
+         */
+        public function setServiceTermsMap($serviceTermsMap)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1alphaProjectServiceTerms[]
+         */
+        public function getServiceTermsMap()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1alphaProjectConfigurableBillingStatus
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaProject registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfigurableBillingStatus()
-    {
-    }
-    /**
-     * Output only. The timestamp when this project is created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Optional. Customer provided configurations.
-     *
-     * @param GoogleCloudDiscoveryengineV1alphaProjectCustomerProvidedConfig $customerProvidedConfig
-     */
-    public function setCustomerProvidedConfig(GoogleCloudDiscoveryengineV1alphaProjectCustomerProvidedConfig $customerProvidedConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1alphaProjectCustomerProvidedConfig
-     */
-    public function getCustomerProvidedConfig()
-    {
-    }
-    /**
-     * Output only. Full resource name of the project, for example
-     * `projects/{project}`. Note that when making requests, project number and
-     * project id are both acceptable, but the server will always respond in
-     * project number.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The timestamp when this project is successfully provisioned.
-     * Empty value means this project is still provisioning and is not ready for
-     * use.
-     *
-     * @param string $provisionCompletionTime
-     */
-    public function setProvisionCompletionTime($provisionCompletionTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProvisionCompletionTime()
-    {
-    }
-    /**
-     * Output only. A map of terms of services. The key is the `id` of
-     * ServiceTerms.
-     *
-     * @param GoogleCloudDiscoveryengineV1alphaProjectServiceTerms[] $serviceTermsMap
-     */
-    public function setServiceTermsMap($serviceTermsMap)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1alphaProjectServiceTerms[]
-     */
-    public function getServiceTermsMap()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaProject extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaProject
     {
     }
 }

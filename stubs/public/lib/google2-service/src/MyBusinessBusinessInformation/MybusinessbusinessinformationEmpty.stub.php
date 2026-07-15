@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessBusinessInformation;
-
-class MybusinessbusinessinformationEmpty extends \Google\Model
-{
+namespace Google\Service\MyBusinessBusinessInformation {
+    class MybusinessbusinessinformationEmpty extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\MyBusinessBusinessInformation\MybusinessbusinessinformationEmpty registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_MyBusinessBusinessInformation_MybusinessbusinessinformationEmpty extends \Google\Service\MyBusinessBusinessInformation\MybusinessbusinessinformationEmpty
+    {
+    }
 }

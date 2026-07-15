@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1ImportEntriesRequest extends \Google\Model
-{
-    /**
-     * Path to a Cloud Storage bucket that contains a dump ready for ingestion.
-     *
-     * @var string
-     */
-    public $gcsBucketPath;
-    /**
-     * Optional. (Optional) Dataplex Universal Catalog task job id, if specified
-     * will be used as part of ImportEntries LRO ID
-     *
-     * @var string
-     */
-    public $jobId;
-    /**
-     * Path to a Cloud Storage bucket that contains a dump ready for ingestion.
-     *
-     * @param string $gcsBucketPath
-     */
-    public function setGcsBucketPath($gcsBucketPath)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1ImportEntriesRequest extends \Google\Model
     {
+        /**
+         * Path to a Cloud Storage bucket that contains a dump ready for ingestion.
+         *
+         * @var string
+         */
+        public $gcsBucketPath;
+        /**
+         * Optional. (Optional) Dataplex Universal Catalog task job id, if specified
+         * will be used as part of ImportEntries LRO ID
+         *
+         * @var string
+         */
+        public $jobId;
+        /**
+         * Path to a Cloud Storage bucket that contains a dump ready for ingestion.
+         *
+         * @param string $gcsBucketPath
+         */
+        public function setGcsBucketPath($gcsBucketPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGcsBucketPath()
+        {
+        }
+        /**
+         * Optional. (Optional) Dataplex Universal Catalog task job id, if specified
+         * will be used as part of ImportEntries LRO ID
+         *
+         * @param string $jobId
+         */
+        public function setJobId($jobId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getJobId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1ImportEntriesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGcsBucketPath()
-    {
-    }
-    /**
-     * Optional. (Optional) Dataplex Universal Catalog task job id, if specified
-     * will be used as part of ImportEntries LRO ID
-     *
-     * @param string $jobId
-     */
-    public function setJobId($jobId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getJobId()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1ImportEntriesRequest extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1ImportEntriesRequest
     {
     }
 }

@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BinaryAuthorization;
-
-class ListAttestorsResponse extends \Google\Collection
-{
-    protected $collection_key = 'attestors';
-    protected $attestorsType = Attestor::class;
-    protected $attestorsDataType = 'array';
-    /**
-     * A token to retrieve the next page of results. Pass this value in the
-     * ListAttestorsRequest.page_token field in the subsequent call to the
-     * `ListAttestors` method to retrieve the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of attestors.
-     *
-     * @param Attestor[] $attestors
-     */
-    public function setAttestors($attestors)
+namespace Google\Service\BinaryAuthorization {
+    class ListAttestorsResponse extends \Google\Collection
     {
+        protected $collection_key = 'attestors';
+        protected $attestorsType = Attestor::class;
+        protected $attestorsDataType = 'array';
+        /**
+         * A token to retrieve the next page of results. Pass this value in the
+         * ListAttestorsRequest.page_token field in the subsequent call to the
+         * `ListAttestors` method to retrieve the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of attestors.
+         *
+         * @param Attestor[] $attestors
+         */
+        public function setAttestors($attestors)
+        {
+        }
+        /**
+         * @return Attestor[]
+         */
+        public function getAttestors()
+        {
+        }
+        /**
+         * A token to retrieve the next page of results. Pass this value in the
+         * ListAttestorsRequest.page_token field in the subsequent call to the
+         * `ListAttestors` method to retrieve the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Attestor[]
+     * Runtime class alias of \Google\Service\BinaryAuthorization\ListAttestorsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttestors()
-    {
-    }
-    /**
-     * A token to retrieve the next page of results. Pass this value in the
-     * ListAttestorsRequest.page_token field in the subsequent call to the
-     * `ListAttestors` method to retrieve the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_BinaryAuthorization_ListAttestorsResponse extends \Google\Service\BinaryAuthorization\ListAttestorsResponse
     {
     }
 }

@@ -21,94 +21,103 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\IdentityToolkit;
-
-class IdentitytoolkitRelyingpartyDownloadAccountRequest extends \Google\Model
-{
-    /**
-     * GCP project number of the requesting delegated app. Currently only intended
-     * for Firebase V1 migration.
-     *
-     * @var string
-     */
-    public $delegatedProjectNumber;
-    /**
-     * The max number of results to return in the response.
-     *
-     * @var string
-     */
-    public $maxResults;
-    /**
-     * The token for the next page. This should be taken from the previous
-     * response.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Specify which project (field value is actually project id) to operate. Only
-     * used when provided credential.
-     *
-     * @var string
-     */
-    public $targetProjectId;
-    /**
-     * GCP project number of the requesting delegated app. Currently only intended
-     * for Firebase V1 migration.
-     *
-     * @param string $delegatedProjectNumber
-     */
-    public function setDelegatedProjectNumber($delegatedProjectNumber)
+namespace Google\Service\IdentityToolkit {
+    class IdentitytoolkitRelyingpartyDownloadAccountRequest extends \Google\Model
     {
+        /**
+         * GCP project number of the requesting delegated app. Currently only intended
+         * for Firebase V1 migration.
+         *
+         * @var string
+         */
+        public $delegatedProjectNumber;
+        /**
+         * The max number of results to return in the response.
+         *
+         * @var string
+         */
+        public $maxResults;
+        /**
+         * The token for the next page. This should be taken from the previous
+         * response.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Specify which project (field value is actually project id) to operate. Only
+         * used when provided credential.
+         *
+         * @var string
+         */
+        public $targetProjectId;
+        /**
+         * GCP project number of the requesting delegated app. Currently only intended
+         * for Firebase V1 migration.
+         *
+         * @param string $delegatedProjectNumber
+         */
+        public function setDelegatedProjectNumber($delegatedProjectNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDelegatedProjectNumber()
+        {
+        }
+        /**
+         * The max number of results to return in the response.
+         *
+         * @param string $maxResults
+         */
+        public function setMaxResults($maxResults)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaxResults()
+        {
+        }
+        /**
+         * The token for the next page. This should be taken from the previous
+         * response.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Specify which project (field value is actually project id) to operate. Only
+         * used when provided credential.
+         *
+         * @param string $targetProjectId
+         */
+        public function setTargetProjectId($targetProjectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetProjectId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\IdentityToolkit\IdentitytoolkitRelyingpartyDownloadAccountRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDelegatedProjectNumber()
-    {
-    }
-    /**
-     * The max number of results to return in the response.
-     *
-     * @param string $maxResults
-     */
-    public function setMaxResults($maxResults)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMaxResults()
-    {
-    }
-    /**
-     * The token for the next page. This should be taken from the previous
-     * response.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Specify which project (field value is actually project id) to operate. Only
-     * used when provided credential.
-     *
-     * @param string $targetProjectId
-     */
-    public function setTargetProjectId($targetProjectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetProjectId()
+    class Google_Service_IdentityToolkit_IdentitytoolkitRelyingpartyDownloadAccountRequest extends \Google\Service\IdentityToolkit\IdentitytoolkitRelyingpartyDownloadAccountRequest
     {
     }
 }

@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ListDataLabelingJobsResponse extends \Google\Collection
-{
-    protected $collection_key = 'dataLabelingJobs';
-    protected $dataLabelingJobsType = GoogleCloudAiplatformV1DataLabelingJob::class;
-    protected $dataLabelingJobsDataType = 'array';
-    /**
-     * The standard List next-page token.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * A list of DataLabelingJobs that matches the specified filter in the
-     * request.
-     *
-     * @param GoogleCloudAiplatformV1DataLabelingJob[] $dataLabelingJobs
-     */
-    public function setDataLabelingJobs($dataLabelingJobs)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ListDataLabelingJobsResponse extends \Google\Collection
     {
+        protected $collection_key = 'dataLabelingJobs';
+        protected $dataLabelingJobsType = GoogleCloudAiplatformV1DataLabelingJob::class;
+        protected $dataLabelingJobsDataType = 'array';
+        /**
+         * The standard List next-page token.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * A list of DataLabelingJobs that matches the specified filter in the
+         * request.
+         *
+         * @param GoogleCloudAiplatformV1DataLabelingJob[] $dataLabelingJobs
+         */
+        public function setDataLabelingJobs($dataLabelingJobs)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1DataLabelingJob[]
+         */
+        public function getDataLabelingJobs()
+        {
+        }
+        /**
+         * The standard List next-page token.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1DataLabelingJob[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListDataLabelingJobsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataLabelingJobs()
-    {
-    }
-    /**
-     * The standard List next-page token.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ListDataLabelingJobsResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListDataLabelingJobsResponse
     {
     }
 }

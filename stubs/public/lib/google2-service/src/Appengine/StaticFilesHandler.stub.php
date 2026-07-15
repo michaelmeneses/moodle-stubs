@@ -21,168 +21,177 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Appengine;
-
-class StaticFilesHandler extends \Google\Model
-{
-    /**
-     * Whether files should also be uploaded as code data. By default, files
-     * declared in static file handlers are uploaded as static data and are only
-     * served to end users; they cannot be read by the application. If enabled,
-     * uploads are charged against both your code and static data storage resource
-     * quotas.
-     *
-     * @var bool
-     */
-    public $applicationReadable;
-    /**
-     * Time a static file served by this handler should be cached by web proxies
-     * and browsers.
-     *
-     * @var string
-     */
-    public $expiration;
-    /**
-     * HTTP headers to use for all responses from these URLs.
-     *
-     * @var string[]
-     */
-    public $httpHeaders;
-    /**
-     * MIME type used to serve all files served by this handler.Defaults to file-
-     * specific MIME types, which are derived from each file's filename extension.
-     *
-     * @var string
-     */
-    public $mimeType;
-    /**
-     * Path to the static files matched by the URL pattern, from the application
-     * root directory. The path can refer to text matched in groupings in the URL
-     * pattern.
-     *
-     * @var string
-     */
-    public $path;
-    /**
-     * Whether this handler should match the request if the file referenced by the
-     * handler does not exist.
-     *
-     * @var bool
-     */
-    public $requireMatchingFile;
-    /**
-     * Regular expression that matches the file paths for all files that should be
-     * referenced by this handler.
-     *
-     * @var string
-     */
-    public $uploadPathRegex;
-    /**
-     * Whether files should also be uploaded as code data. By default, files
-     * declared in static file handlers are uploaded as static data and are only
-     * served to end users; they cannot be read by the application. If enabled,
-     * uploads are charged against both your code and static data storage resource
-     * quotas.
-     *
-     * @param bool $applicationReadable
-     */
-    public function setApplicationReadable($applicationReadable)
+namespace Google\Service\Appengine {
+    class StaticFilesHandler extends \Google\Model
     {
+        /**
+         * Whether files should also be uploaded as code data. By default, files
+         * declared in static file handlers are uploaded as static data and are only
+         * served to end users; they cannot be read by the application. If enabled,
+         * uploads are charged against both your code and static data storage resource
+         * quotas.
+         *
+         * @var bool
+         */
+        public $applicationReadable;
+        /**
+         * Time a static file served by this handler should be cached by web proxies
+         * and browsers.
+         *
+         * @var string
+         */
+        public $expiration;
+        /**
+         * HTTP headers to use for all responses from these URLs.
+         *
+         * @var string[]
+         */
+        public $httpHeaders;
+        /**
+         * MIME type used to serve all files served by this handler.Defaults to file-
+         * specific MIME types, which are derived from each file's filename extension.
+         *
+         * @var string
+         */
+        public $mimeType;
+        /**
+         * Path to the static files matched by the URL pattern, from the application
+         * root directory. The path can refer to text matched in groupings in the URL
+         * pattern.
+         *
+         * @var string
+         */
+        public $path;
+        /**
+         * Whether this handler should match the request if the file referenced by the
+         * handler does not exist.
+         *
+         * @var bool
+         */
+        public $requireMatchingFile;
+        /**
+         * Regular expression that matches the file paths for all files that should be
+         * referenced by this handler.
+         *
+         * @var string
+         */
+        public $uploadPathRegex;
+        /**
+         * Whether files should also be uploaded as code data. By default, files
+         * declared in static file handlers are uploaded as static data and are only
+         * served to end users; they cannot be read by the application. If enabled,
+         * uploads are charged against both your code and static data storage resource
+         * quotas.
+         *
+         * @param bool $applicationReadable
+         */
+        public function setApplicationReadable($applicationReadable)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getApplicationReadable()
+        {
+        }
+        /**
+         * Time a static file served by this handler should be cached by web proxies
+         * and browsers.
+         *
+         * @param string $expiration
+         */
+        public function setExpiration($expiration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpiration()
+        {
+        }
+        /**
+         * HTTP headers to use for all responses from these URLs.
+         *
+         * @param string[] $httpHeaders
+         */
+        public function setHttpHeaders($httpHeaders)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getHttpHeaders()
+        {
+        }
+        /**
+         * MIME type used to serve all files served by this handler.Defaults to file-
+         * specific MIME types, which are derived from each file's filename extension.
+         *
+         * @param string $mimeType
+         */
+        public function setMimeType($mimeType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMimeType()
+        {
+        }
+        /**
+         * Path to the static files matched by the URL pattern, from the application
+         * root directory. The path can refer to text matched in groupings in the URL
+         * pattern.
+         *
+         * @param string $path
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
+        /**
+         * Whether this handler should match the request if the file referenced by the
+         * handler does not exist.
+         *
+         * @param bool $requireMatchingFile
+         */
+        public function setRequireMatchingFile($requireMatchingFile)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getRequireMatchingFile()
+        {
+        }
+        /**
+         * Regular expression that matches the file paths for all files that should be
+         * referenced by this handler.
+         *
+         * @param string $uploadPathRegex
+         */
+        public function setUploadPathRegex($uploadPathRegex)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUploadPathRegex()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Appengine\StaticFilesHandler registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApplicationReadable()
-    {
-    }
-    /**
-     * Time a static file served by this handler should be cached by web proxies
-     * and browsers.
-     *
-     * @param string $expiration
-     */
-    public function setExpiration($expiration)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExpiration()
-    {
-    }
-    /**
-     * HTTP headers to use for all responses from these URLs.
-     *
-     * @param string[] $httpHeaders
-     */
-    public function setHttpHeaders($httpHeaders)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getHttpHeaders()
-    {
-    }
-    /**
-     * MIME type used to serve all files served by this handler.Defaults to file-
-     * specific MIME types, which are derived from each file's filename extension.
-     *
-     * @param string $mimeType
-     */
-    public function setMimeType($mimeType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMimeType()
-    {
-    }
-    /**
-     * Path to the static files matched by the URL pattern, from the application
-     * root directory. The path can refer to text matched in groupings in the URL
-     * pattern.
-     *
-     * @param string $path
-     */
-    public function setPath($path)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPath()
-    {
-    }
-    /**
-     * Whether this handler should match the request if the file referenced by the
-     * handler does not exist.
-     *
-     * @param bool $requireMatchingFile
-     */
-    public function setRequireMatchingFile($requireMatchingFile)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getRequireMatchingFile()
-    {
-    }
-    /**
-     * Regular expression that matches the file paths for all files that should be
-     * referenced by this handler.
-     *
-     * @param string $uploadPathRegex
-     */
-    public function setUploadPathRegex($uploadPathRegex)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUploadPathRegex()
+    class Google_Service_Appengine_StaticFilesHandler extends \Google\Service\Appengine\StaticFilesHandler
     {
     }
 }

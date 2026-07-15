@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class TargetTcpProxiesScopedList extends \Google\Collection
-{
-    protected $collection_key = 'targetTcpProxies';
-    protected $targetTcpProxiesType = TargetTcpProxy::class;
-    protected $targetTcpProxiesDataType = 'array';
-    protected $warningType = TargetTcpProxiesScopedListWarning::class;
-    protected $warningDataType = '';
-    /**
-     * A list of TargetTcpProxies contained in this scope.
-     *
-     * @param TargetTcpProxy[] $targetTcpProxies
-     */
-    public function setTargetTcpProxies($targetTcpProxies)
+namespace Google\Service\Compute {
+    class TargetTcpProxiesScopedList extends \Google\Collection
     {
+        protected $collection_key = 'targetTcpProxies';
+        protected $targetTcpProxiesType = TargetTcpProxy::class;
+        protected $targetTcpProxiesDataType = 'array';
+        protected $warningType = TargetTcpProxiesScopedListWarning::class;
+        protected $warningDataType = '';
+        /**
+         * A list of TargetTcpProxies contained in this scope.
+         *
+         * @param TargetTcpProxy[] $targetTcpProxies
+         */
+        public function setTargetTcpProxies($targetTcpProxies)
+        {
+        }
+        /**
+         * @return TargetTcpProxy[]
+         */
+        public function getTargetTcpProxies()
+        {
+        }
+        /**
+         * Informational warning which replaces the list of backend services when the
+         * list is empty.
+         *
+         * @param TargetTcpProxiesScopedListWarning $warning
+         */
+        public function setWarning(TargetTcpProxiesScopedListWarning $warning)
+        {
+        }
+        /**
+         * @return TargetTcpProxiesScopedListWarning
+         */
+        public function getWarning()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TargetTcpProxy[]
+     * Runtime class alias of \Google\Service\Compute\TargetTcpProxiesScopedList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTargetTcpProxies()
-    {
-    }
-    /**
-     * Informational warning which replaces the list of backend services when the
-     * list is empty.
-     *
-     * @param TargetTcpProxiesScopedListWarning $warning
-     */
-    public function setWarning(TargetTcpProxiesScopedListWarning $warning)
-    {
-    }
-    /**
-     * @return TargetTcpProxiesScopedListWarning
-     */
-    public function getWarning()
+    class Google_Service_Compute_TargetTcpProxiesScopedList extends \Google\Service\Compute\TargetTcpProxiesScopedList
     {
     }
 }

@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class ProjectReference extends \Google\Model
-{
-    /**
-     * Required. ID of the project. Can be either the numeric ID or the assigned
-     * ID of the project.
-     *
-     * @var string
-     */
-    public $projectId;
-    /**
-     * Required. ID of the project. Can be either the numeric ID or the assigned
-     * ID of the project.
-     *
-     * @param string $projectId
-     */
-    public function setProjectId($projectId)
+namespace Google\Service\Bigquery {
+    class ProjectReference extends \Google\Model
     {
+        /**
+         * Required. ID of the project. Can be either the numeric ID or the assigned
+         * ID of the project.
+         *
+         * @var string
+         */
+        public $projectId;
+        /**
+         * Required. ID of the project. Can be either the numeric ID or the assigned
+         * ID of the project.
+         *
+         * @param string $projectId
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Bigquery\ProjectReference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProjectId()
+    class Google_Service_Bigquery_ProjectReference extends \Google\Service\Bigquery\ProjectReference
     {
     }
 }

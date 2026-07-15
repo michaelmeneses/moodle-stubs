@@ -21,80 +21,92 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun\Resource;
-
-/**
- * The "locations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $runService = new Google\Service\CloudRun(...);
- *   $locations = $runService->projects_locations;
- *  </code>
- */
-class ProjectsLocations extends \Google\Service\Resource
-{
+namespace Google\Service\CloudRun\Resource {
+    use Google\Service\CloudRun\GoogleCloudRunV2ExportImageRequest;
+    use Google\Service\CloudRun\GoogleCloudRunV2ExportImageResponse;
+    use Google\Service\CloudRun\GoogleCloudRunV2Metadata;
     /**
-     * Export image for a given resource. (locations.exportImage)
-     *
-     * @param string $name Required. The name of the resource of which image
-     * metadata should be exported. Format: `projects/{project_id_or_number}/locatio
-     * ns/{location}/services/{service}/revisions/{revision}` for Revision `projects
-     * /{project_id_or_number}/locations/{location}/jobs/{job}/executions/{execution
-     * }` for Execution
-     * @param GoogleCloudRunV2ExportImageRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudRunV2ExportImageResponse
-     * @throws \Google\Service\Exception
+     * The "locations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $runService = new Google\Service\CloudRun(...);
+     *   $locations = $runService->projects_locations;
+     *  </code>
      */
-    public function exportImage($name, GoogleCloudRunV2ExportImageRequest $postBody, $optParams = [])
+    class ProjectsLocations extends \Google\Service\Resource
     {
+        /**
+         * Export image for a given resource. (locations.exportImage)
+         *
+         * @param string $name Required. The name of the resource of which image
+         * metadata should be exported. Format: `projects/{project_id_or_number}/locatio
+         * ns/{location}/services/{service}/revisions/{revision}` for Revision `projects
+         * /{project_id_or_number}/locations/{location}/jobs/{job}/executions/{execution
+         * }` for Execution
+         * @param GoogleCloudRunV2ExportImageRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudRunV2ExportImageResponse
+         * @throws \Google\Service\Exception
+         */
+        public function exportImage($name, GoogleCloudRunV2ExportImageRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Export image metadata for a given resource. (locations.exportImageMetadata)
+         *
+         * @param string $name Required. The name of the resource of which image
+         * metadata should be exported. Format: `projects/{project_id_or_number}/locatio
+         * ns/{location}/services/{service}/revisions/{revision}` for Revision `projects
+         * /{project_id_or_number}/locations/{location}/jobs/{job}/executions/{execution
+         * }` for Execution
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudRunV2Metadata
+         * @throws \Google\Service\Exception
+         */
+        public function exportImageMetadata($name, $optParams = [])
+        {
+        }
+        /**
+         * Export generated customer metadata for a given resource.
+         * (locations.exportMetadata)
+         *
+         * @param string $name Required. The name of the resource of which metadata
+         * should be exported. Format:
+         * `projects/{project_id_or_number}/locations/{location}/services/{service}` for
+         * Service `projects/{project_id_or_number}/locations/{location}/services/{servi
+         * ce}/revisions/{revision}` for Revision `projects/{project_id_or_number}/locat
+         * ions/{location}/jobs/{job}/executions/{execution}` for Execution
+         * {project_id_or_number} may contains domain-scoped project IDs
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudRunV2Metadata
+         * @throws \Google\Service\Exception
+         */
+        public function exportMetadata($name, $optParams = [])
+        {
+        }
+        /**
+         * Export generated customer metadata for a given project.
+         * (locations.exportProjectMetadata)
+         *
+         * @param string $name Required. The name of the project of which metadata
+         * should be exported. Format:
+         * `projects/{project_id_or_number}/locations/{location}` for Project in a given
+         * location.
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudRunV2Metadata
+         * @throws \Google\Service\Exception
+         */
+        public function exportProjectMetadata($name, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Export image metadata for a given resource. (locations.exportImageMetadata)
-     *
-     * @param string $name Required. The name of the resource of which image
-     * metadata should be exported. Format: `projects/{project_id_or_number}/locatio
-     * ns/{location}/services/{service}/revisions/{revision}` for Revision `projects
-     * /{project_id_or_number}/locations/{location}/jobs/{job}/executions/{execution
-     * }` for Execution
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudRunV2Metadata
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\CloudRun\Resource\ProjectsLocations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function exportImageMetadata($name, $optParams = [])
-    {
-    }
-    /**
-     * Export generated customer metadata for a given resource.
-     * (locations.exportMetadata)
-     *
-     * @param string $name Required. The name of the resource of which metadata
-     * should be exported. Format:
-     * `projects/{project_id_or_number}/locations/{location}/services/{service}` for
-     * Service `projects/{project_id_or_number}/locations/{location}/services/{servi
-     * ce}/revisions/{revision}` for Revision `projects/{project_id_or_number}/locat
-     * ions/{location}/jobs/{job}/executions/{execution}` for Execution
-     * {project_id_or_number} may contains domain-scoped project IDs
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudRunV2Metadata
-     * @throws \Google\Service\Exception
-     */
-    public function exportMetadata($name, $optParams = [])
-    {
-    }
-    /**
-     * Export generated customer metadata for a given project.
-     * (locations.exportProjectMetadata)
-     *
-     * @param string $name Required. The name of the project of which metadata
-     * should be exported. Format:
-     * `projects/{project_id_or_number}/locations/{location}` for Project in a given
-     * location.
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudRunV2Metadata
-     * @throws \Google\Service\Exception
-     */
-    public function exportProjectMetadata($name, $optParams = [])
+    class Google_Service_CloudRun_Resource_ProjectsLocations extends \Google\Service\CloudRun\Resource\ProjectsLocations
     {
     }
 }

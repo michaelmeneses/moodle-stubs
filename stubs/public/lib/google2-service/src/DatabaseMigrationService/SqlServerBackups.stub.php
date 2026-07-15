@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class SqlServerBackups extends \Google\Model
-{
-    /**
-     * Required. The Cloud Storage bucket that stores backups for all replicated
-     * databases.
-     *
-     * @var string
-     */
-    public $gcsBucket;
-    /**
-     * Optional. Cloud Storage path inside the bucket that stores backups.
-     *
-     * @var string
-     */
-    public $gcsPrefix;
-    /**
-     * Required. The Cloud Storage bucket that stores backups for all replicated
-     * databases.
-     *
-     * @param string $gcsBucket
-     */
-    public function setGcsBucket($gcsBucket)
+namespace Google\Service\DatabaseMigrationService {
+    class SqlServerBackups extends \Google\Model
     {
+        /**
+         * Required. The Cloud Storage bucket that stores backups for all replicated
+         * databases.
+         *
+         * @var string
+         */
+        public $gcsBucket;
+        /**
+         * Optional. Cloud Storage path inside the bucket that stores backups.
+         *
+         * @var string
+         */
+        public $gcsPrefix;
+        /**
+         * Required. The Cloud Storage bucket that stores backups for all replicated
+         * databases.
+         *
+         * @param string $gcsBucket
+         */
+        public function setGcsBucket($gcsBucket)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGcsBucket()
+        {
+        }
+        /**
+         * Optional. Cloud Storage path inside the bucket that stores backups.
+         *
+         * @param string $gcsPrefix
+         */
+        public function setGcsPrefix($gcsPrefix)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGcsPrefix()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\SqlServerBackups registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGcsBucket()
-    {
-    }
-    /**
-     * Optional. Cloud Storage path inside the bucket that stores backups.
-     *
-     * @param string $gcsPrefix
-     */
-    public function setGcsPrefix($gcsPrefix)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGcsPrefix()
+    class Google_Service_DatabaseMigrationService_SqlServerBackups extends \Google\Service\DatabaseMigrationService\SqlServerBackups
     {
     }
 }

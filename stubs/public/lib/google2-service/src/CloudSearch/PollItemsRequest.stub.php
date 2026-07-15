@@ -21,111 +21,120 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class PollItemsRequest extends \Google\Collection
-{
-    protected $collection_key = 'statusCodes';
-    /**
-     * The name of connector making this call. Format:
-     * datasources/{source_id}/connectors/{ID}
-     *
-     * @var string
-     */
-    public $connectorName;
-    protected $debugOptionsType = DebugOptions::class;
-    protected $debugOptionsDataType = '';
-    /**
-     * Maximum number of items to return. The maximum value is 100 and the default
-     * value is 20.
-     *
-     * @var int
-     */
-    public $limit;
-    /**
-     * Queue name to fetch items from. If unspecified, PollItems will fetch from
-     * 'default' queue. The maximum length is 100 characters.
-     *
-     * @var string
-     */
-    public $queue;
-    /**
-     * Limit the items polled to the ones with these statuses.
-     *
-     * @var string[]
-     */
-    public $statusCodes;
-    /**
-     * The name of connector making this call. Format:
-     * datasources/{source_id}/connectors/{ID}
-     *
-     * @param string $connectorName
-     */
-    public function setConnectorName($connectorName)
+namespace Google\Service\CloudSearch {
+    class PollItemsRequest extends \Google\Collection
     {
+        protected $collection_key = 'statusCodes';
+        /**
+         * The name of connector making this call. Format:
+         * datasources/{source_id}/connectors/{ID}
+         *
+         * @var string
+         */
+        public $connectorName;
+        protected $debugOptionsType = DebugOptions::class;
+        protected $debugOptionsDataType = '';
+        /**
+         * Maximum number of items to return. The maximum value is 100 and the default
+         * value is 20.
+         *
+         * @var int
+         */
+        public $limit;
+        /**
+         * Queue name to fetch items from. If unspecified, PollItems will fetch from
+         * 'default' queue. The maximum length is 100 characters.
+         *
+         * @var string
+         */
+        public $queue;
+        /**
+         * Limit the items polled to the ones with these statuses.
+         *
+         * @var string[]
+         */
+        public $statusCodes;
+        /**
+         * The name of connector making this call. Format:
+         * datasources/{source_id}/connectors/{ID}
+         *
+         * @param string $connectorName
+         */
+        public function setConnectorName($connectorName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConnectorName()
+        {
+        }
+        /**
+         * Common debug options.
+         *
+         * @param DebugOptions $debugOptions
+         */
+        public function setDebugOptions(DebugOptions $debugOptions)
+        {
+        }
+        /**
+         * @return DebugOptions
+         */
+        public function getDebugOptions()
+        {
+        }
+        /**
+         * Maximum number of items to return. The maximum value is 100 and the default
+         * value is 20.
+         *
+         * @param int $limit
+         */
+        public function setLimit($limit)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getLimit()
+        {
+        }
+        /**
+         * Queue name to fetch items from. If unspecified, PollItems will fetch from
+         * 'default' queue. The maximum length is 100 characters.
+         *
+         * @param string $queue
+         */
+        public function setQueue($queue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQueue()
+        {
+        }
+        /**
+         * Limit the items polled to the ones with these statuses.
+         *
+         * @param string[] $statusCodes
+         */
+        public function setStatusCodes($statusCodes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getStatusCodes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\PollItemsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConnectorName()
-    {
-    }
-    /**
-     * Common debug options.
-     *
-     * @param DebugOptions $debugOptions
-     */
-    public function setDebugOptions(DebugOptions $debugOptions)
-    {
-    }
-    /**
-     * @return DebugOptions
-     */
-    public function getDebugOptions()
-    {
-    }
-    /**
-     * Maximum number of items to return. The maximum value is 100 and the default
-     * value is 20.
-     *
-     * @param int $limit
-     */
-    public function setLimit($limit)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getLimit()
-    {
-    }
-    /**
-     * Queue name to fetch items from. If unspecified, PollItems will fetch from
-     * 'default' queue. The maximum length is 100 characters.
-     *
-     * @param string $queue
-     */
-    public function setQueue($queue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQueue()
-    {
-    }
-    /**
-     * Limit the items polled to the ones with these statuses.
-     *
-     * @param string[] $statusCodes
-     */
-    public function setStatusCodes($statusCodes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getStatusCodes()
+    class Google_Service_CloudSearch_PollItemsRequest extends \Google\Service\CloudSearch\PollItemsRequest
     {
     }
 }

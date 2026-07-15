@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class BulkInsertInstanceResourcePerInstanceProperties extends \Google\Model
-{
-    /**
-     * Specifies the hostname of the instance. More details in:
-     * https://cloud.google.com/compute/docs/instances/custom-hostname-
-     * vm#naming_convention
-     *
-     * @var string
-     */
-    public $hostname;
-    /**
-     * Output only. This field is only temporary. It will be removed. Do not use
-     * it.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Specifies the hostname of the instance. More details in:
-     * https://cloud.google.com/compute/docs/instances/custom-hostname-
-     * vm#naming_convention
-     *
-     * @param string $hostname
-     */
-    public function setHostname($hostname)
+namespace Google\Service\Compute {
+    class BulkInsertInstanceResourcePerInstanceProperties extends \Google\Model
     {
+        /**
+         * Specifies the hostname of the instance. More details in:
+         * https://cloud.google.com/compute/docs/instances/custom-hostname-
+         * vm#naming_convention
+         *
+         * @var string
+         */
+        public $hostname;
+        /**
+         * Output only. This field is only temporary. It will be removed. Do not use
+         * it.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Specifies the hostname of the instance. More details in:
+         * https://cloud.google.com/compute/docs/instances/custom-hostname-
+         * vm#naming_convention
+         *
+         * @param string $hostname
+         */
+        public function setHostname($hostname)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHostname()
+        {
+        }
+        /**
+         * Output only. This field is only temporary. It will be removed. Do not use
+         * it.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\BulkInsertInstanceResourcePerInstanceProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHostname()
-    {
-    }
-    /**
-     * Output only. This field is only temporary. It will be removed. Do not use
-     * it.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Compute_BulkInsertInstanceResourcePerInstanceProperties extends \Google\Service\Compute\BulkInsertInstanceResourcePerInstanceProperties
     {
     }
 }

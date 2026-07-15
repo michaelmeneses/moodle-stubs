@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1TaskDescriptionStrategy extends \Google\Model
-{
-    /**
-     * Required. A high-level description of the synthetic data to be generated.
-     *
-     * @var string
-     */
-    public $taskDescription;
-    /**
-     * Required. A high-level description of the synthetic data to be generated.
-     *
-     * @param string $taskDescription
-     */
-    public function setTaskDescription($taskDescription)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1TaskDescriptionStrategy extends \Google\Model
     {
+        /**
+         * Required. A high-level description of the synthetic data to be generated.
+         *
+         * @var string
+         */
+        public $taskDescription;
+        /**
+         * Required. A high-level description of the synthetic data to be generated.
+         *
+         * @param string $taskDescription
+         */
+        public function setTaskDescription($taskDescription)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTaskDescription()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1TaskDescriptionStrategy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTaskDescription()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1TaskDescriptionStrategy extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1TaskDescriptionStrategy
     {
     }
 }

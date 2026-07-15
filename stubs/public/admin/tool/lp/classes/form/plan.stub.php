@@ -29,6 +29,9 @@
  */
 namespace tool_lp\form;
 
+use core\form\persistent;
+use core_competency\plan as planpersistent;
+use required_capability_exception;
 /**
  * Learning plan form.
  *

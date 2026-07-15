@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class InvideoTiming extends \Google\Model
-{
-    public const TYPE_offsetFromStart = 'offsetFromStart';
-    public const TYPE_offsetFromEnd = 'offsetFromEnd';
-    /**
-     * Defines the duration in milliseconds for which the promotion should be
-     * displayed. If missing, the client should use the default.
-     *
-     * @var string
-     */
-    public $durationMs;
-    /**
-     * Defines the time at which the promotion will appear. Depending on the value
-     * of type the value of the offsetMs field will represent a time offset from
-     * the start or from the end of the video, expressed in milliseconds.
-     *
-     * @var string
-     */
-    public $offsetMs;
-    /**
-     * Describes a timing type. If the value is offsetFromStart, then the offsetMs
-     * field represents an offset from the start of the video. If the value is
-     * offsetFromEnd, then the offsetMs field represents an offset from the end of
-     * the video.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Defines the duration in milliseconds for which the promotion should be
-     * displayed. If missing, the client should use the default.
-     *
-     * @param string $durationMs
-     */
-    public function setDurationMs($durationMs)
+namespace Google\Service\YouTube {
+    class InvideoTiming extends \Google\Model
     {
+        public const TYPE_offsetFromStart = 'offsetFromStart';
+        public const TYPE_offsetFromEnd = 'offsetFromEnd';
+        /**
+         * Defines the duration in milliseconds for which the promotion should be
+         * displayed. If missing, the client should use the default.
+         *
+         * @var string
+         */
+        public $durationMs;
+        /**
+         * Defines the time at which the promotion will appear. Depending on the value
+         * of type the value of the offsetMs field will represent a time offset from
+         * the start or from the end of the video, expressed in milliseconds.
+         *
+         * @var string
+         */
+        public $offsetMs;
+        /**
+         * Describes a timing type. If the value is offsetFromStart, then the offsetMs
+         * field represents an offset from the start of the video. If the value is
+         * offsetFromEnd, then the offsetMs field represents an offset from the end of
+         * the video.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Defines the duration in milliseconds for which the promotion should be
+         * displayed. If missing, the client should use the default.
+         *
+         * @param string $durationMs
+         */
+        public function setDurationMs($durationMs)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDurationMs()
+        {
+        }
+        /**
+         * Defines the time at which the promotion will appear. Depending on the value
+         * of type the value of the offsetMs field will represent a time offset from
+         * the start or from the end of the video, expressed in milliseconds.
+         *
+         * @param string $offsetMs
+         */
+        public function setOffsetMs($offsetMs)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOffsetMs()
+        {
+        }
+        /**
+         * Describes a timing type. If the value is offsetFromStart, then the offsetMs
+         * field represents an offset from the start of the video. If the value is
+         * offsetFromEnd, then the offsetMs field represents an offset from the end of
+         * the video.
+         *
+         * Accepted values: offsetFromStart, offsetFromEnd
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\InvideoTiming registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDurationMs()
-    {
-    }
-    /**
-     * Defines the time at which the promotion will appear. Depending on the value
-     * of type the value of the offsetMs field will represent a time offset from
-     * the start or from the end of the video, expressed in milliseconds.
-     *
-     * @param string $offsetMs
-     */
-    public function setOffsetMs($offsetMs)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOffsetMs()
-    {
-    }
-    /**
-     * Describes a timing type. If the value is offsetFromStart, then the offsetMs
-     * field represents an offset from the start of the video. If the value is
-     * offsetFromEnd, then the offsetMs field represents an offset from the end of
-     * the video.
-     *
-     * Accepted values: offsetFromStart, offsetFromEnd
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_YouTube_InvideoTiming extends \Google\Service\YouTube\InvideoTiming
     {
     }
 }

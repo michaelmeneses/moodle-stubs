@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class SummarizeSparkApplicationStagesResponse extends \Google\Model
-{
-    protected $stagesSummaryType = StagesSummary::class;
-    protected $stagesSummaryDataType = '';
-    /**
-     * Summary of a Spark Application Stages
-     *
-     * @param StagesSummary $stagesSummary
-     */
-    public function setStagesSummary(StagesSummary $stagesSummary)
+namespace Google\Service\Dataproc {
+    class SummarizeSparkApplicationStagesResponse extends \Google\Model
     {
+        protected $stagesSummaryType = StagesSummary::class;
+        protected $stagesSummaryDataType = '';
+        /**
+         * Summary of a Spark Application Stages
+         *
+         * @param StagesSummary $stagesSummary
+         */
+        public function setStagesSummary(StagesSummary $stagesSummary)
+        {
+        }
+        /**
+         * @return StagesSummary
+         */
+        public function getStagesSummary()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return StagesSummary
+     * Runtime class alias of \Google\Service\Dataproc\SummarizeSparkApplicationStagesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStagesSummary()
+    class Google_Service_Dataproc_SummarizeSparkApplicationStagesResponse extends \Google\Service\Dataproc\SummarizeSparkApplicationStagesResponse
     {
     }
 }

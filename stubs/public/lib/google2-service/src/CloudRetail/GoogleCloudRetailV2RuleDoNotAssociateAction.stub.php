@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2RuleDoNotAssociateAction extends \Google\Collection
-{
-    protected $collection_key = 'terms';
-    /**
-     * Cannot contain duplicates or the query term. Can specify up to 100 terms.
-     *
-     * @var string[]
-     */
-    public $doNotAssociateTerms;
-    /**
-     * Terms from the search query. Will not consider do_not_associate_terms for
-     * search if in search query. Can specify up to 100 terms.
-     *
-     * @var string[]
-     */
-    public $queryTerms;
-    /**
-     * Will be [deprecated = true] post migration;
-     *
-     * @var string[]
-     */
-    public $terms;
-    /**
-     * Cannot contain duplicates or the query term. Can specify up to 100 terms.
-     *
-     * @param string[] $doNotAssociateTerms
-     */
-    public function setDoNotAssociateTerms($doNotAssociateTerms)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2RuleDoNotAssociateAction extends \Google\Collection
     {
+        protected $collection_key = 'terms';
+        /**
+         * Cannot contain duplicates or the query term. Can specify up to 100 terms.
+         *
+         * @var string[]
+         */
+        public $doNotAssociateTerms;
+        /**
+         * Terms from the search query. Will not consider do_not_associate_terms for
+         * search if in search query. Can specify up to 100 terms.
+         *
+         * @var string[]
+         */
+        public $queryTerms;
+        /**
+         * Will be [deprecated = true] post migration;
+         *
+         * @var string[]
+         */
+        public $terms;
+        /**
+         * Cannot contain duplicates or the query term. Can specify up to 100 terms.
+         *
+         * @param string[] $doNotAssociateTerms
+         */
+        public function setDoNotAssociateTerms($doNotAssociateTerms)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDoNotAssociateTerms()
+        {
+        }
+        /**
+         * Terms from the search query. Will not consider do_not_associate_terms for
+         * search if in search query. Can specify up to 100 terms.
+         *
+         * @param string[] $queryTerms
+         */
+        public function setQueryTerms($queryTerms)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getQueryTerms()
+        {
+        }
+        /**
+         * Will be [deprecated = true] post migration;
+         *
+         * @param string[] $terms
+         */
+        public function setTerms($terms)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTerms()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2RuleDoNotAssociateAction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDoNotAssociateTerms()
-    {
-    }
-    /**
-     * Terms from the search query. Will not consider do_not_associate_terms for
-     * search if in search query. Can specify up to 100 terms.
-     *
-     * @param string[] $queryTerms
-     */
-    public function setQueryTerms($queryTerms)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getQueryTerms()
-    {
-    }
-    /**
-     * Will be [deprecated = true] post migration;
-     *
-     * @param string[] $terms
-     */
-    public function setTerms($terms)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTerms()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2RuleDoNotAssociateAction extends \Google\Service\CloudRetail\GoogleCloudRetailV2RuleDoNotAssociateAction
     {
     }
 }

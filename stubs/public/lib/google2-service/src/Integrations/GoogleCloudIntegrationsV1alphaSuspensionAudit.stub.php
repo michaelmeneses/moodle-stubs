@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaSuspensionAudit extends \Google\Model
-{
-    /**
-     * Time at which this suspension was resolved.
-     *
-     * @var string
-     */
-    public $resolveTime;
-    /**
-     * Email address of the person who resolved this suspension.
-     *
-     * @var string
-     */
-    public $resolver;
-    /**
-     * Time at which this suspension was resolved.
-     *
-     * @param string $resolveTime
-     */
-    public function setResolveTime($resolveTime)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaSuspensionAudit extends \Google\Model
     {
+        /**
+         * Time at which this suspension was resolved.
+         *
+         * @var string
+         */
+        public $resolveTime;
+        /**
+         * Email address of the person who resolved this suspension.
+         *
+         * @var string
+         */
+        public $resolver;
+        /**
+         * Time at which this suspension was resolved.
+         *
+         * @param string $resolveTime
+         */
+        public function setResolveTime($resolveTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResolveTime()
+        {
+        }
+        /**
+         * Email address of the person who resolved this suspension.
+         *
+         * @param string $resolver
+         */
+        public function setResolver($resolver)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResolver()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaSuspensionAudit registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResolveTime()
-    {
-    }
-    /**
-     * Email address of the person who resolved this suspension.
-     *
-     * @param string $resolver
-     */
-    public function setResolver($resolver)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResolver()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaSuspensionAudit extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaSuspensionAudit
     {
     }
 }

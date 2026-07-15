@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Backupdr;
-
-class FetchBackupPlanAssociationsForResourceTypeResponse extends \Google\Collection
-{
-    protected $collection_key = 'backupPlanAssociations';
-    protected $backupPlanAssociationsType = BackupPlanAssociation::class;
-    protected $backupPlanAssociationsDataType = 'array';
-    /**
-     * Output only. A token, which can be sent as `page_token` to retrieve the
-     * next page. If this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Output only. The BackupPlanAssociations from the specified parent.
-     *
-     * @param BackupPlanAssociation[] $backupPlanAssociations
-     */
-    public function setBackupPlanAssociations($backupPlanAssociations)
+namespace Google\Service\Backupdr {
+    class FetchBackupPlanAssociationsForResourceTypeResponse extends \Google\Collection
     {
+        protected $collection_key = 'backupPlanAssociations';
+        protected $backupPlanAssociationsType = BackupPlanAssociation::class;
+        protected $backupPlanAssociationsDataType = 'array';
+        /**
+         * Output only. A token, which can be sent as `page_token` to retrieve the
+         * next page. If this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Output only. The BackupPlanAssociations from the specified parent.
+         *
+         * @param BackupPlanAssociation[] $backupPlanAssociations
+         */
+        public function setBackupPlanAssociations($backupPlanAssociations)
+        {
+        }
+        /**
+         * @return BackupPlanAssociation[]
+         */
+        public function getBackupPlanAssociations()
+        {
+        }
+        /**
+         * Output only. A token, which can be sent as `page_token` to retrieve the
+         * next page. If this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BackupPlanAssociation[]
+     * Runtime class alias of \Google\Service\Backupdr\FetchBackupPlanAssociationsForResourceTypeResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackupPlanAssociations()
-    {
-    }
-    /**
-     * Output only. A token, which can be sent as `page_token` to retrieve the
-     * next page. If this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Backupdr_FetchBackupPlanAssociationsForResourceTypeResponse extends \Google\Service\Backupdr\FetchBackupPlanAssociationsForResourceTypeResponse
     {
     }
 }

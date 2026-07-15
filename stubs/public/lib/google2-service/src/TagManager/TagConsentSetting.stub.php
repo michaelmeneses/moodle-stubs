@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager;
-
-class TagConsentSetting extends \Google\Model
-{
-    /**
-     * Default value where user has not specified any setting on it.
-     */
-    public const CONSENT_STATUS_notSet = 'notSet';
-    /**
-     * Tag doesn't require any additional consent settings.
-     */
-    public const CONSENT_STATUS_notNeeded = 'notNeeded';
-    /**
-     * Tag requires additional consent settings.
-     */
-    public const CONSENT_STATUS_needed = 'needed';
-    /**
-     * The tag's consent status. If set to NEEDED, the runtime will check that the
-     * consent types specified by the consent_type field have been granted.
-     *
-     * @var string
-     */
-    public $consentStatus;
-    protected $consentTypeType = Parameter::class;
-    protected $consentTypeDataType = '';
-    /**
-     * The tag's consent status. If set to NEEDED, the runtime will check that the
-     * consent types specified by the consent_type field have been granted.
-     *
-     * Accepted values: notSet, notNeeded, needed
-     *
-     * @param self::CONSENT_STATUS_* $consentStatus
-     */
-    public function setConsentStatus($consentStatus)
+namespace Google\Service\TagManager {
+    class TagConsentSetting extends \Google\Model
     {
+        /**
+         * Default value where user has not specified any setting on it.
+         */
+        public const CONSENT_STATUS_notSet = 'notSet';
+        /**
+         * Tag doesn't require any additional consent settings.
+         */
+        public const CONSENT_STATUS_notNeeded = 'notNeeded';
+        /**
+         * Tag requires additional consent settings.
+         */
+        public const CONSENT_STATUS_needed = 'needed';
+        /**
+         * The tag's consent status. If set to NEEDED, the runtime will check that the
+         * consent types specified by the consent_type field have been granted.
+         *
+         * @var string
+         */
+        public $consentStatus;
+        protected $consentTypeType = Parameter::class;
+        protected $consentTypeDataType = '';
+        /**
+         * The tag's consent status. If set to NEEDED, the runtime will check that the
+         * consent types specified by the consent_type field have been granted.
+         *
+         * Accepted values: notSet, notNeeded, needed
+         *
+         * @param self::CONSENT_STATUS_* $consentStatus
+         */
+        public function setConsentStatus($consentStatus)
+        {
+        }
+        /**
+         * @return self::CONSENT_STATUS_*
+         */
+        public function getConsentStatus()
+        {
+        }
+        /**
+         * The type of consents to check for during tag firing if in the consent
+         * NEEDED state. This parameter must be of type LIST where each list item is
+         * of type STRING.
+         *
+         * @param Parameter $consentType
+         */
+        public function setConsentType(Parameter $consentType)
+        {
+        }
+        /**
+         * @return Parameter
+         */
+        public function getConsentType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::CONSENT_STATUS_*
+     * Runtime class alias of \Google\Service\TagManager\TagConsentSetting registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConsentStatus()
-    {
-    }
-    /**
-     * The type of consents to check for during tag firing if in the consent
-     * NEEDED state. This parameter must be of type LIST where each list item is
-     * of type STRING.
-     *
-     * @param Parameter $consentType
-     */
-    public function setConsentType(Parameter $consentType)
-    {
-    }
-    /**
-     * @return Parameter
-     */
-    public function getConsentType()
+    class Google_Service_TagManager_TagConsentSetting extends \Google\Service\TagManager\TagConsentSetting
     {
     }
 }

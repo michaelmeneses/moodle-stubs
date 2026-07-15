@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class PositionedObjectPositioningSuggestionState extends \Google\Model
-{
-    /**
-     * Indicates if there was a suggested change to layout.
-     *
-     * @var bool
-     */
-    public $layoutSuggested;
-    /**
-     * Indicates if there was a suggested change to left_offset.
-     *
-     * @var bool
-     */
-    public $leftOffsetSuggested;
-    /**
-     * Indicates if there was a suggested change to top_offset.
-     *
-     * @var bool
-     */
-    public $topOffsetSuggested;
-    /**
-     * Indicates if there was a suggested change to layout.
-     *
-     * @param bool $layoutSuggested
-     */
-    public function setLayoutSuggested($layoutSuggested)
+namespace Google\Service\Docs {
+    class PositionedObjectPositioningSuggestionState extends \Google\Model
     {
+        /**
+         * Indicates if there was a suggested change to layout.
+         *
+         * @var bool
+         */
+        public $layoutSuggested;
+        /**
+         * Indicates if there was a suggested change to left_offset.
+         *
+         * @var bool
+         */
+        public $leftOffsetSuggested;
+        /**
+         * Indicates if there was a suggested change to top_offset.
+         *
+         * @var bool
+         */
+        public $topOffsetSuggested;
+        /**
+         * Indicates if there was a suggested change to layout.
+         *
+         * @param bool $layoutSuggested
+         */
+        public function setLayoutSuggested($layoutSuggested)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getLayoutSuggested()
+        {
+        }
+        /**
+         * Indicates if there was a suggested change to left_offset.
+         *
+         * @param bool $leftOffsetSuggested
+         */
+        public function setLeftOffsetSuggested($leftOffsetSuggested)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getLeftOffsetSuggested()
+        {
+        }
+        /**
+         * Indicates if there was a suggested change to top_offset.
+         *
+         * @param bool $topOffsetSuggested
+         */
+        public function setTopOffsetSuggested($topOffsetSuggested)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getTopOffsetSuggested()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Docs\PositionedObjectPositioningSuggestionState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLayoutSuggested()
-    {
-    }
-    /**
-     * Indicates if there was a suggested change to left_offset.
-     *
-     * @param bool $leftOffsetSuggested
-     */
-    public function setLeftOffsetSuggested($leftOffsetSuggested)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getLeftOffsetSuggested()
-    {
-    }
-    /**
-     * Indicates if there was a suggested change to top_offset.
-     *
-     * @param bool $topOffsetSuggested
-     */
-    public function setTopOffsetSuggested($topOffsetSuggested)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getTopOffsetSuggested()
+    class Google_Service_Docs_PositionedObjectPositioningSuggestionState extends \Google\Service\Docs\PositionedObjectPositioningSuggestionState
     {
     }
 }

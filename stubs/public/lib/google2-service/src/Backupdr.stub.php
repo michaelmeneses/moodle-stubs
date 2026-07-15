@@ -21,47 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
-* Service definition for Backupdr (v1).
-*
-* <p>
-</p>
-*
-* <p>
-* For more information about this service, see the API
-* <a href="https://cloud.google.com/backup-disaster-recovery" target="_blank">Documentation</a>
-* </p>
-*
-* @author Google, Inc.
-*/
-class Backupdr extends \Google\Service
-{
-    /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
-    const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
-    public $projects_locations;
-    public $projects_locations_backupPlanAssociations;
-    public $projects_locations_backupPlans;
-    public $projects_locations_backupPlans_revisions;
-    public $projects_locations_backupVaults;
-    public $projects_locations_backupVaults_dataSources;
-    public $projects_locations_backupVaults_dataSources_backups;
-    public $projects_locations_dataSourceReferences;
-    public $projects_locations_managementServers;
-    public $projects_locations_operations;
-    public $projects_locations_resourceBackupConfigs;
-    public $projects_locations_serviceConfig;
-    public $projects_locations_trial;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the Backupdr service.
-     *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+    * Service definition for Backupdr (v1).
+    *
+    * <p>
+    </p>
+    *
+    * <p>
+    * For more information about this service, see the API
+    * <a href="https://cloud.google.com/backup-disaster-recovery" target="_blank">Documentation</a>
+    * </p>
+    *
+    * @author Google, Inc.
+    */
+    class Backupdr extends \Google\Service
+    {
+        /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
+        const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
+        public $projects_locations;
+        public $projects_locations_backupPlanAssociations;
+        public $projects_locations_backupPlans;
+        public $projects_locations_backupPlans_revisions;
+        public $projects_locations_backupVaults;
+        public $projects_locations_backupVaults_dataSources;
+        public $projects_locations_backupVaults_dataSources_backups;
+        public $projects_locations_dataSourceReferences;
+        public $projects_locations_managementServers;
+        public $projects_locations_operations;
+        public $projects_locations_resourceBackupConfigs;
+        public $projects_locations_serviceConfig;
+        public $projects_locations_trial;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the Backupdr service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Backupdr registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class Google_Service_Backupdr extends \Google\Service\Backupdr
     {
     }
 }

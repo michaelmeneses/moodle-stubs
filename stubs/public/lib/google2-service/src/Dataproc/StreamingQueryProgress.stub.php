@@ -21,195 +21,204 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class StreamingQueryProgress extends \Google\Collection
-{
-    protected $collection_key = 'stateOperators';
-    /**
-     * @var string
-     */
-    public $batchDuration;
-    /**
-     * @var string
-     */
-    public $batchId;
-    /**
-     * @var string[]
-     */
-    public $durationMillis;
-    /**
-     * @var string[]
-     */
-    public $eventTime;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string[]
-     */
-    public $observedMetrics;
-    /**
-     * @var string
-     */
-    public $runId;
-    protected $sinkType = SinkProgress::class;
-    protected $sinkDataType = '';
-    protected $sourcesType = SourceProgress::class;
-    protected $sourcesDataType = 'array';
-    protected $stateOperatorsType = StateOperatorProgress::class;
-    protected $stateOperatorsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $streamingQueryProgressId;
-    /**
-     * @var string
-     */
-    public $timestamp;
-    /**
-     * @param string $batchDuration
-     */
-    public function setBatchDuration($batchDuration)
+namespace Google\Service\Dataproc {
+    class StreamingQueryProgress extends \Google\Collection
     {
+        protected $collection_key = 'stateOperators';
+        /**
+         * @var string
+         */
+        public $batchDuration;
+        /**
+         * @var string
+         */
+        public $batchId;
+        /**
+         * @var string[]
+         */
+        public $durationMillis;
+        /**
+         * @var string[]
+         */
+        public $eventTime;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string[]
+         */
+        public $observedMetrics;
+        /**
+         * @var string
+         */
+        public $runId;
+        protected $sinkType = SinkProgress::class;
+        protected $sinkDataType = '';
+        protected $sourcesType = SourceProgress::class;
+        protected $sourcesDataType = 'array';
+        protected $stateOperatorsType = StateOperatorProgress::class;
+        protected $stateOperatorsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $streamingQueryProgressId;
+        /**
+         * @var string
+         */
+        public $timestamp;
+        /**
+         * @param string $batchDuration
+         */
+        public function setBatchDuration($batchDuration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBatchDuration()
+        {
+        }
+        /**
+         * @param string $batchId
+         */
+        public function setBatchId($batchId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBatchId()
+        {
+        }
+        /**
+         * @param string[] $durationMillis
+         */
+        public function setDurationMillis($durationMillis)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDurationMillis()
+        {
+        }
+        /**
+         * @param string[] $eventTime
+         */
+        public function setEventTime($eventTime)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getEventTime()
+        {
+        }
+        /**
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string[] $observedMetrics
+         */
+        public function setObservedMetrics($observedMetrics)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getObservedMetrics()
+        {
+        }
+        /**
+         * @param string $runId
+         */
+        public function setRunId($runId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRunId()
+        {
+        }
+        /**
+         * @param SinkProgress $sink
+         */
+        public function setSink(SinkProgress $sink)
+        {
+        }
+        /**
+         * @return SinkProgress
+         */
+        public function getSink()
+        {
+        }
+        /**
+         * @param SourceProgress[] $sources
+         */
+        public function setSources($sources)
+        {
+        }
+        /**
+         * @return SourceProgress[]
+         */
+        public function getSources()
+        {
+        }
+        /**
+         * @param StateOperatorProgress[] $stateOperators
+         */
+        public function setStateOperators($stateOperators)
+        {
+        }
+        /**
+         * @return StateOperatorProgress[]
+         */
+        public function getStateOperators()
+        {
+        }
+        /**
+         * @param string $streamingQueryProgressId
+         */
+        public function setStreamingQueryProgressId($streamingQueryProgressId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStreamingQueryProgressId()
+        {
+        }
+        /**
+         * @param string $timestamp
+         */
+        public function setTimestamp($timestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimestamp()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\StreamingQueryProgress registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBatchDuration()
-    {
-    }
-    /**
-     * @param string $batchId
-     */
-    public function setBatchId($batchId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBatchId()
-    {
-    }
-    /**
-     * @param string[] $durationMillis
-     */
-    public function setDurationMillis($durationMillis)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getDurationMillis()
-    {
-    }
-    /**
-     * @param string[] $eventTime
-     */
-    public function setEventTime($eventTime)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getEventTime()
-    {
-    }
-    /**
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string[] $observedMetrics
-     */
-    public function setObservedMetrics($observedMetrics)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getObservedMetrics()
-    {
-    }
-    /**
-     * @param string $runId
-     */
-    public function setRunId($runId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRunId()
-    {
-    }
-    /**
-     * @param SinkProgress $sink
-     */
-    public function setSink(SinkProgress $sink)
-    {
-    }
-    /**
-     * @return SinkProgress
-     */
-    public function getSink()
-    {
-    }
-    /**
-     * @param SourceProgress[] $sources
-     */
-    public function setSources($sources)
-    {
-    }
-    /**
-     * @return SourceProgress[]
-     */
-    public function getSources()
-    {
-    }
-    /**
-     * @param StateOperatorProgress[] $stateOperators
-     */
-    public function setStateOperators($stateOperators)
-    {
-    }
-    /**
-     * @return StateOperatorProgress[]
-     */
-    public function getStateOperators()
-    {
-    }
-    /**
-     * @param string $streamingQueryProgressId
-     */
-    public function setStreamingQueryProgressId($streamingQueryProgressId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStreamingQueryProgressId()
-    {
-    }
-    /**
-     * @param string $timestamp
-     */
-    public function setTimestamp($timestamp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimestamp()
+    class Google_Service_Dataproc_StreamingQueryProgress extends \Google\Service\Dataproc\StreamingQueryProgress
     {
     }
 }

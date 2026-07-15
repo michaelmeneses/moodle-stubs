@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1PublisherModelCallToActionOpenNotebooks extends \Google\Collection
-{
-    protected $collection_key = 'notebooks';
-    protected $notebooksType = GoogleCloudAiplatformV1PublisherModelCallToActionRegionalResourceReferences::class;
-    protected $notebooksDataType = 'array';
-    /**
-     * Required. Regional resource references to notebooks.
-     *
-     * @param GoogleCloudAiplatformV1PublisherModelCallToActionRegionalResourceReferences[] $notebooks
-     */
-    public function setNotebooks($notebooks)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1PublisherModelCallToActionOpenNotebooks extends \Google\Collection
     {
+        protected $collection_key = 'notebooks';
+        protected $notebooksType = GoogleCloudAiplatformV1PublisherModelCallToActionRegionalResourceReferences::class;
+        protected $notebooksDataType = 'array';
+        /**
+         * Required. Regional resource references to notebooks.
+         *
+         * @param GoogleCloudAiplatformV1PublisherModelCallToActionRegionalResourceReferences[] $notebooks
+         */
+        public function setNotebooks($notebooks)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1PublisherModelCallToActionRegionalResourceReferences[]
+         */
+        public function getNotebooks()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1PublisherModelCallToActionRegionalResourceReferences[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1PublisherModelCallToActionOpenNotebooks registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNotebooks()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1PublisherModelCallToActionOpenNotebooks extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1PublisherModelCallToActionOpenNotebooks
     {
     }
 }

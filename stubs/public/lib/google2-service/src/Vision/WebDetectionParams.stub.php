@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class WebDetectionParams extends \Google\Model
-{
-    /**
-     * This field has no effect on results.
-     *
-     * @deprecated
-     * @var bool
-     */
-    public $includeGeoResults;
-    /**
-     * This field has no effect on results.
-     *
-     * @deprecated
-     * @param bool $includeGeoResults
-     */
-    public function setIncludeGeoResults($includeGeoResults)
+namespace Google\Service\Vision {
+    class WebDetectionParams extends \Google\Model
     {
+        /**
+         * This field has no effect on results.
+         *
+         * @deprecated
+         * @var bool
+         */
+        public $includeGeoResults;
+        /**
+         * This field has no effect on results.
+         *
+         * @deprecated
+         * @param bool $includeGeoResults
+         */
+        public function setIncludeGeoResults($includeGeoResults)
+        {
+        }
+        /**
+         * @deprecated
+         * @return bool
+         */
+        public function getIncludeGeoResults()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return bool
+     * Runtime class alias of \Google\Service\Vision\WebDetectionParams registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIncludeGeoResults()
+    class Google_Service_Vision_WebDetectionParams extends \Google\Service\Vision\WebDetectionParams
     {
     }
 }

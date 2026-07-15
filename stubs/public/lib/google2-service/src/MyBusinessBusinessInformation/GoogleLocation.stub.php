@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessBusinessInformation;
-
-class GoogleLocation extends \Google\Model
-{
-    protected $locationType = Location::class;
-    protected $locationDataType = '';
-    /**
-     * Resource name of this GoogleLocation, in the format
-     * `googleLocations/{googleLocationId}`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * A URL that will redirect the user to the request admin rights UI. This
-     * field is only present if the location has already been claimed by any user,
-     * including the current user.
-     *
-     * @var string
-     */
-    public $requestAdminRightsUri;
-    /**
-     * The sparsely populated Location information. This field can be re-used in
-     * CreateLocation if it is not currently claimed by a user.
-     *
-     * @param Location $location
-     */
-    public function setLocation(Location $location)
+namespace Google\Service\MyBusinessBusinessInformation {
+    class GoogleLocation extends \Google\Model
     {
+        protected $locationType = Location::class;
+        protected $locationDataType = '';
+        /**
+         * Resource name of this GoogleLocation, in the format
+         * `googleLocations/{googleLocationId}`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * A URL that will redirect the user to the request admin rights UI. This
+         * field is only present if the location has already been claimed by any user,
+         * including the current user.
+         *
+         * @var string
+         */
+        public $requestAdminRightsUri;
+        /**
+         * The sparsely populated Location information. This field can be re-used in
+         * CreateLocation if it is not currently claimed by a user.
+         *
+         * @param Location $location
+         */
+        public function setLocation(Location $location)
+        {
+        }
+        /**
+         * @return Location
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * Resource name of this GoogleLocation, in the format
+         * `googleLocations/{googleLocationId}`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * A URL that will redirect the user to the request admin rights UI. This
+         * field is only present if the location has already been claimed by any user,
+         * including the current user.
+         *
+         * @param string $requestAdminRightsUri
+         */
+        public function setRequestAdminRightsUri($requestAdminRightsUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestAdminRightsUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Location
+     * Runtime class alias of \Google\Service\MyBusinessBusinessInformation\GoogleLocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLocation()
-    {
-    }
-    /**
-     * Resource name of this GoogleLocation, in the format
-     * `googleLocations/{googleLocationId}`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * A URL that will redirect the user to the request admin rights UI. This
-     * field is only present if the location has already been claimed by any user,
-     * including the current user.
-     *
-     * @param string $requestAdminRightsUri
-     */
-    public function setRequestAdminRightsUri($requestAdminRightsUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestAdminRightsUri()
+    class Google_Service_MyBusinessBusinessInformation_GoogleLocation extends \Google\Service\MyBusinessBusinessInformation\GoogleLocation
     {
     }
 }

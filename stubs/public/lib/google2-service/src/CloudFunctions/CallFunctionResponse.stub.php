@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudFunctions;
-
-class CallFunctionResponse extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $error;
-    /**
-     * @var string
-     */
-    public $executionId;
-    /**
-     * @var string
-     */
-    public $result;
-    /**
-     * @param string
-     */
-    public function setError($error)
+namespace Google\Service\CloudFunctions {
+    class CallFunctionResponse extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $error;
+        /**
+         * @var string
+         */
+        public $executionId;
+        /**
+         * @var string
+         */
+        public $result;
+        /**
+         * @param string
+         */
+        public function setError($error)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getError()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setExecutionId($executionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExecutionId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setResult($result)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResult()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudFunctions\CallFunctionResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getError()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setExecutionId($executionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExecutionId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setResult($result)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResult()
+    class Google_Service_CloudFunctions_CallFunctionResponse extends \Google\Service\CloudFunctions\CallFunctionResponse
     {
     }
 }

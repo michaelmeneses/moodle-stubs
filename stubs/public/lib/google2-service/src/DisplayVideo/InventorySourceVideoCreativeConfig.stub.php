@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class InventorySourceVideoCreativeConfig extends \Google\Model
-{
-    /**
-     * The duration requirements for the video creatives that can be assigned to
-     * the inventory source.
-     *
-     * @var string
-     */
-    public $duration;
-    /**
-     * The duration requirements for the video creatives that can be assigned to
-     * the inventory source.
-     *
-     * @param string $duration
-     */
-    public function setDuration($duration)
+namespace Google\Service\DisplayVideo {
+    class InventorySourceVideoCreativeConfig extends \Google\Model
     {
+        /**
+         * The duration requirements for the video creatives that can be assigned to
+         * the inventory source.
+         *
+         * @var string
+         */
+        public $duration;
+        /**
+         * The duration requirements for the video creatives that can be assigned to
+         * the inventory source.
+         *
+         * @param string $duration
+         */
+        public function setDuration($duration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDuration()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\InventorySourceVideoCreativeConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDuration()
+    class Google_Service_DisplayVideo_InventorySourceVideoCreativeConfig extends \Google\Service\DisplayVideo\InventorySourceVideoCreativeConfig
     {
     }
 }

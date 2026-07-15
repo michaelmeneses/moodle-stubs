@@ -21,113 +21,122 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class CloudAiLargeModelsVisionRaiInfo extends \Google\Collection
-{
-    protected $collection_key = 'scores';
-    /**
-     * List of blocked entities from the blocklist if it is detected.
-     *
-     * @var string[]
-     */
-    public $blockedEntities;
-    protected $detectedLabelsType = CloudAiLargeModelsVisionRaiInfoDetectedLabels::class;
-    protected $detectedLabelsDataType = 'array';
-    /**
-     * The model name used to indexing into the RaiFilterConfig map. Would either
-     * be one of imagegeneration@002-006, imagen-3.0-... api endpoint names, or
-     * internal names used for mapping to different filter configs (genselfie,
-     * ai_watermark) than its api endpoint.
-     *
-     * @var string
-     */
-    public $modelName;
-    /**
-     * List of rai categories' information to return
-     *
-     * @var string[]
-     */
-    public $raiCategories;
-    /**
-     * List of rai scores mapping to the rai categories. Rounded to 1 decimal
-     * place.
-     *
-     * @var float[]
-     */
-    public $scores;
-    /**
-     * List of blocked entities from the blocklist if it is detected.
-     *
-     * @param string[] $blockedEntities
-     */
-    public function setBlockedEntities($blockedEntities)
+namespace Google\Service\Aiplatform {
+    class CloudAiLargeModelsVisionRaiInfo extends \Google\Collection
     {
+        protected $collection_key = 'scores';
+        /**
+         * List of blocked entities from the blocklist if it is detected.
+         *
+         * @var string[]
+         */
+        public $blockedEntities;
+        protected $detectedLabelsType = CloudAiLargeModelsVisionRaiInfoDetectedLabels::class;
+        protected $detectedLabelsDataType = 'array';
+        /**
+         * The model name used to indexing into the RaiFilterConfig map. Would either
+         * be one of imagegeneration@002-006, imagen-3.0-... api endpoint names, or
+         * internal names used for mapping to different filter configs (genselfie,
+         * ai_watermark) than its api endpoint.
+         *
+         * @var string
+         */
+        public $modelName;
+        /**
+         * List of rai categories' information to return
+         *
+         * @var string[]
+         */
+        public $raiCategories;
+        /**
+         * List of rai scores mapping to the rai categories. Rounded to 1 decimal
+         * place.
+         *
+         * @var float[]
+         */
+        public $scores;
+        /**
+         * List of blocked entities from the blocklist if it is detected.
+         *
+         * @param string[] $blockedEntities
+         */
+        public function setBlockedEntities($blockedEntities)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getBlockedEntities()
+        {
+        }
+        /**
+         * The list of detected labels for different rai categories.
+         *
+         * @param CloudAiLargeModelsVisionRaiInfoDetectedLabels[] $detectedLabels
+         */
+        public function setDetectedLabels($detectedLabels)
+        {
+        }
+        /**
+         * @return CloudAiLargeModelsVisionRaiInfoDetectedLabels[]
+         */
+        public function getDetectedLabels()
+        {
+        }
+        /**
+         * The model name used to indexing into the RaiFilterConfig map. Would either
+         * be one of imagegeneration@002-006, imagen-3.0-... api endpoint names, or
+         * internal names used for mapping to different filter configs (genselfie,
+         * ai_watermark) than its api endpoint.
+         *
+         * @param string $modelName
+         */
+        public function setModelName($modelName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getModelName()
+        {
+        }
+        /**
+         * List of rai categories' information to return
+         *
+         * @param string[] $raiCategories
+         */
+        public function setRaiCategories($raiCategories)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRaiCategories()
+        {
+        }
+        /**
+         * List of rai scores mapping to the rai categories. Rounded to 1 decimal
+         * place.
+         *
+         * @param float[] $scores
+         */
+        public function setScores($scores)
+        {
+        }
+        /**
+         * @return float[]
+         */
+        public function getScores()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Aiplatform\CloudAiLargeModelsVisionRaiInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBlockedEntities()
-    {
-    }
-    /**
-     * The list of detected labels for different rai categories.
-     *
-     * @param CloudAiLargeModelsVisionRaiInfoDetectedLabels[] $detectedLabels
-     */
-    public function setDetectedLabels($detectedLabels)
-    {
-    }
-    /**
-     * @return CloudAiLargeModelsVisionRaiInfoDetectedLabels[]
-     */
-    public function getDetectedLabels()
-    {
-    }
-    /**
-     * The model name used to indexing into the RaiFilterConfig map. Would either
-     * be one of imagegeneration@002-006, imagen-3.0-... api endpoint names, or
-     * internal names used for mapping to different filter configs (genselfie,
-     * ai_watermark) than its api endpoint.
-     *
-     * @param string $modelName
-     */
-    public function setModelName($modelName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getModelName()
-    {
-    }
-    /**
-     * List of rai categories' information to return
-     *
-     * @param string[] $raiCategories
-     */
-    public function setRaiCategories($raiCategories)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRaiCategories()
-    {
-    }
-    /**
-     * List of rai scores mapping to the rai categories. Rounded to 1 decimal
-     * place.
-     *
-     * @param float[] $scores
-     */
-    public function setScores($scores)
-    {
-    }
-    /**
-     * @return float[]
-     */
-    public function getScores()
+    class Google_Service_Aiplatform_CloudAiLargeModelsVisionRaiInfo extends \Google\Service\Aiplatform\CloudAiLargeModelsVisionRaiInfo
     {
     }
 }

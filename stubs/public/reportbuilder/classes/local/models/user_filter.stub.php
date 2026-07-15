@@ -8,6 +8,8 @@
  */
 namespace core_reportbuilder\local\models;
 
+use lang_string;
+use core\persistent;
 /**
  * Persistent class to represent a user report filter
  *

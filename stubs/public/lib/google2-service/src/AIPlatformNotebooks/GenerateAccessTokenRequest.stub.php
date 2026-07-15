@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AIPlatformNotebooks;
-
-class GenerateAccessTokenRequest extends \Google\Model
-{
-    /**
-     * Required. The VM identity token (a JWT) for authenticating the VM.
-     * https://cloud.google.com/compute/docs/instances/verifying-instance-identity
-     *
-     * @var string
-     */
-    public $vmToken;
-    /**
-     * Required. The VM identity token (a JWT) for authenticating the VM.
-     * https://cloud.google.com/compute/docs/instances/verifying-instance-identity
-     *
-     * @param string $vmToken
-     */
-    public function setVmToken($vmToken)
+namespace Google\Service\AIPlatformNotebooks {
+    class GenerateAccessTokenRequest extends \Google\Model
     {
+        /**
+         * Required. The VM identity token (a JWT) for authenticating the VM.
+         * https://cloud.google.com/compute/docs/instances/verifying-instance-identity
+         *
+         * @var string
+         */
+        public $vmToken;
+        /**
+         * Required. The VM identity token (a JWT) for authenticating the VM.
+         * https://cloud.google.com/compute/docs/instances/verifying-instance-identity
+         *
+         * @param string $vmToken
+         */
+        public function setVmToken($vmToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVmToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AIPlatformNotebooks\GenerateAccessTokenRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getVmToken()
+    class Google_Service_AIPlatformNotebooks_GenerateAccessTokenRequest extends \Google\Service\AIPlatformNotebooks\GenerateAccessTokenRequest
     {
     }
 }

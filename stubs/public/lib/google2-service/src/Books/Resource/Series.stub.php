@@ -21,27 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books\Resource;
-
-/**
- * The "series" collection of methods.
- * Typical usage is:
- *  <code>
- *   $booksService = new Google\Service\Books(...);
- *   $series = $booksService->series;
- *  </code>
- */
-class Series extends \Google\Service\Resource
-{
+namespace Google\Service\Books\Resource {
+    use Google\Service\Books\Series as SeriesModel;
     /**
-     * Returns Series metadata for the given series ids. (series.get)
-     *
-     * @param string|array $seriesId String that identifies the series
-     * @param array $optParams Optional parameters.
-     * @return SeriesModel
-     * @throws \Google\Service\Exception
+     * The "series" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $booksService = new Google\Service\Books(...);
+     *   $series = $booksService->series;
+     *  </code>
      */
-    public function get($seriesId, $optParams = [])
+    class Series extends \Google\Service\Resource
+    {
+        /**
+         * Returns Series metadata for the given series ids. (series.get)
+         *
+         * @param string|array $seriesId String that identifies the series
+         * @param array $optParams Optional parameters.
+         * @return SeriesModel
+         * @throws \Google\Service\Exception
+         */
+        public function get($seriesId, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Books\Resource\Series registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Books_Resource_Series extends \Google\Service\Books\Resource\Series
     {
     }
 }

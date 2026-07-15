@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1ReviewDocumentOperationMetadata extends \Google\Model
-{
-    protected $commonMetadataType = GoogleCloudDocumentaiV1CommonOperationMetadata::class;
-    protected $commonMetadataDataType = '';
-    /**
-     * The Crowd Compute question ID.
-     *
-     * @var string
-     */
-    public $questionId;
-    /**
-     * The basic metadata of the long-running operation.
-     *
-     * @param GoogleCloudDocumentaiV1CommonOperationMetadata $commonMetadata
-     */
-    public function setCommonMetadata(GoogleCloudDocumentaiV1CommonOperationMetadata $commonMetadata)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1ReviewDocumentOperationMetadata extends \Google\Model
     {
+        protected $commonMetadataType = GoogleCloudDocumentaiV1CommonOperationMetadata::class;
+        protected $commonMetadataDataType = '';
+        /**
+         * The Crowd Compute question ID.
+         *
+         * @var string
+         */
+        public $questionId;
+        /**
+         * The basic metadata of the long-running operation.
+         *
+         * @param GoogleCloudDocumentaiV1CommonOperationMetadata $commonMetadata
+         */
+        public function setCommonMetadata(GoogleCloudDocumentaiV1CommonOperationMetadata $commonMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1CommonOperationMetadata
+         */
+        public function getCommonMetadata()
+        {
+        }
+        /**
+         * The Crowd Compute question ID.
+         *
+         * @param string $questionId
+         */
+        public function setQuestionId($questionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQuestionId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiV1CommonOperationMetadata
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1ReviewDocumentOperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCommonMetadata()
-    {
-    }
-    /**
-     * The Crowd Compute question ID.
-     *
-     * @param string $questionId
-     */
-    public function setQuestionId($questionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQuestionId()
+    class Google_Service_Document_GoogleCloudDocumentaiV1ReviewDocumentOperationMetadata extends \Google\Service\Document\GoogleCloudDocumentaiV1ReviewDocumentOperationMetadata
     {
     }
 }

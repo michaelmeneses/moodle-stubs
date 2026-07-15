@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class HttpCacheControlResponseHeader extends \Google\Model
-{
-    /**
-     * 14.6 response cache age, in seconds since the response is generated
-     *
-     * @var string
-     */
-    public $age;
-    /**
-     * 14.9 request and response directives
-     *
-     * @var string
-     */
-    public $directive;
-    /**
-     * 14.21 response cache expires, in RFC 1123 date format
-     *
-     * @var string
-     */
-    public $expires;
-    /**
-     * 14.6 response cache age, in seconds since the response is generated
-     *
-     * @param string $age
-     */
-    public function setAge($age)
+namespace Google\Service\Container {
+    class HttpCacheControlResponseHeader extends \Google\Model
     {
+        /**
+         * 14.6 response cache age, in seconds since the response is generated
+         *
+         * @var string
+         */
+        public $age;
+        /**
+         * 14.9 request and response directives
+         *
+         * @var string
+         */
+        public $directive;
+        /**
+         * 14.21 response cache expires, in RFC 1123 date format
+         *
+         * @var string
+         */
+        public $expires;
+        /**
+         * 14.6 response cache age, in seconds since the response is generated
+         *
+         * @param string $age
+         */
+        public function setAge($age)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAge()
+        {
+        }
+        /**
+         * 14.9 request and response directives
+         *
+         * @param string $directive
+         */
+        public function setDirective($directive)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDirective()
+        {
+        }
+        /**
+         * 14.21 response cache expires, in RFC 1123 date format
+         *
+         * @param string $expires
+         */
+        public function setExpires($expires)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpires()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Container\HttpCacheControlResponseHeader registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAge()
-    {
-    }
-    /**
-     * 14.9 request and response directives
-     *
-     * @param string $directive
-     */
-    public function setDirective($directive)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDirective()
-    {
-    }
-    /**
-     * 14.21 response cache expires, in RFC 1123 date format
-     *
-     * @param string $expires
-     */
-    public function setExpires($expires)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExpires()
+    class Google_Service_Container_HttpCacheControlResponseHeader extends \Google\Service\Container\HttpCacheControlResponseHeader
     {
     }
 }

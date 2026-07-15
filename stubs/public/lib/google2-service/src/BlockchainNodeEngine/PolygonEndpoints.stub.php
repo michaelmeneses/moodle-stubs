@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BlockchainNodeEngine;
-
-class PolygonEndpoints extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $blockProducerClientMetricsApiEndpoint;
-    /**
-     * @param string
-     */
-    public function setBlockProducerClientMetricsApiEndpoint($blockProducerClientMetricsApiEndpoint)
+namespace Google\Service\BlockchainNodeEngine {
+    class PolygonEndpoints extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $blockProducerClientMetricsApiEndpoint;
+        /**
+         * @param string
+         */
+        public function setBlockProducerClientMetricsApiEndpoint($blockProducerClientMetricsApiEndpoint)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBlockProducerClientMetricsApiEndpoint()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BlockchainNodeEngine\PolygonEndpoints registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBlockProducerClientMetricsApiEndpoint()
+    class Google_Service_BlockchainNodeEngine_PolygonEndpoints extends \Google\Service\BlockchainNodeEngine\PolygonEndpoints
     {
     }
 }

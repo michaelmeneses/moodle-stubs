@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Logging;
-
-class ListSinksResponse extends \Google\Collection
-{
-    protected $collection_key = 'sinks';
-    /**
-     * If there might be more results than appear in this response, then
-     * nextPageToken is included. To get the next set of results, call the same
-     * method again using the value of nextPageToken as pageToken.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $sinksType = LogSink::class;
-    protected $sinksDataType = 'array';
-    /**
-     * If there might be more results than appear in this response, then
-     * nextPageToken is included. To get the next set of results, call the same
-     * method again using the value of nextPageToken as pageToken.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Logging {
+    class ListSinksResponse extends \Google\Collection
     {
+        protected $collection_key = 'sinks';
+        /**
+         * If there might be more results than appear in this response, then
+         * nextPageToken is included. To get the next set of results, call the same
+         * method again using the value of nextPageToken as pageToken.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $sinksType = LogSink::class;
+        protected $sinksDataType = 'array';
+        /**
+         * If there might be more results than appear in this response, then
+         * nextPageToken is included. To get the next set of results, call the same
+         * method again using the value of nextPageToken as pageToken.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * A list of sinks.
+         *
+         * @param LogSink[] $sinks
+         */
+        public function setSinks($sinks)
+        {
+        }
+        /**
+         * @return LogSink[]
+         */
+        public function getSinks()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Logging\ListSinksResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * A list of sinks.
-     *
-     * @param LogSink[] $sinks
-     */
-    public function setSinks($sinks)
-    {
-    }
-    /**
-     * @return LogSink[]
-     */
-    public function getSinks()
+    class Google_Service_Logging_ListSinksResponse extends \Google\Service\Logging\ListSinksResponse
     {
     }
 }

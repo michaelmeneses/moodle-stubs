@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BackupforGKE;
-
-class TroubleshootingInfo extends \Google\Model
-{
-    /**
-     * Output only. Unique code for each backup/restore operation failure message
-     * which helps user identify the failure.
-     *
-     * @var string
-     */
-    public $stateReasonCode;
-    /**
-     * Output only. URL for the troubleshooting doc which will help the user fix
-     * the failing backup/restore operation.
-     *
-     * @var string
-     */
-    public $stateReasonUri;
-    /**
-     * Output only. Unique code for each backup/restore operation failure message
-     * which helps user identify the failure.
-     *
-     * @param string $stateReasonCode
-     */
-    public function setStateReasonCode($stateReasonCode)
+namespace Google\Service\BackupforGKE {
+    class TroubleshootingInfo extends \Google\Model
     {
+        /**
+         * Output only. Unique code for each backup/restore operation failure message
+         * which helps user identify the failure.
+         *
+         * @var string
+         */
+        public $stateReasonCode;
+        /**
+         * Output only. URL for the troubleshooting doc which will help the user fix
+         * the failing backup/restore operation.
+         *
+         * @var string
+         */
+        public $stateReasonUri;
+        /**
+         * Output only. Unique code for each backup/restore operation failure message
+         * which helps user identify the failure.
+         *
+         * @param string $stateReasonCode
+         */
+        public function setStateReasonCode($stateReasonCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStateReasonCode()
+        {
+        }
+        /**
+         * Output only. URL for the troubleshooting doc which will help the user fix
+         * the failing backup/restore operation.
+         *
+         * @param string $stateReasonUri
+         */
+        public function setStateReasonUri($stateReasonUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStateReasonUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BackupforGKE\TroubleshootingInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStateReasonCode()
-    {
-    }
-    /**
-     * Output only. URL for the troubleshooting doc which will help the user fix
-     * the failing backup/restore operation.
-     *
-     * @param string $stateReasonUri
-     */
-    public function setStateReasonUri($stateReasonUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStateReasonUri()
+    class Google_Service_BackupforGKE_TroubleshootingInfo extends \Google\Service\BackupforGKE\TroubleshootingInfo
     {
     }
 }

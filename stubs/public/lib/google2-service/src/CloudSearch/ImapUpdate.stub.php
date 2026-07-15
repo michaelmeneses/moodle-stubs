@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class ImapUpdate extends \Google\Model
-{
-    protected $imapUidsReassignType = ImapUidsReassign::class;
-    protected $imapUidsReassignDataType = '';
-    /**
-     * @param ImapUidsReassign
-     */
-    public function setImapUidsReassign(ImapUidsReassign $imapUidsReassign)
+namespace Google\Service\CloudSearch {
+    class ImapUpdate extends \Google\Model
     {
+        protected $imapUidsReassignType = ImapUidsReassign::class;
+        protected $imapUidsReassignDataType = '';
+        /**
+         * @param ImapUidsReassign
+         */
+        public function setImapUidsReassign(ImapUidsReassign $imapUidsReassign)
+        {
+        }
+        /**
+         * @return ImapUidsReassign
+         */
+        public function getImapUidsReassign()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ImapUidsReassign
+     * Runtime class alias of \Google\Service\CloudSearch\ImapUpdate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getImapUidsReassign()
+    class Google_Service_CloudSearch_ImapUpdate extends \Google\Service\CloudSearch\ImapUpdate
     {
     }
 }

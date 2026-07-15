@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdSenseHost;
-
-class UrlChannel extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $id;
-    /**
-     * @var string
-     */
-    public $kind;
-    /**
-     * @var string
-     */
-    public $urlPattern;
-    /**
-     * @param string
-     */
-    public function setId($id)
+namespace Google\Service\AdSenseHost {
+    class UrlChannel extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $id;
+        /**
+         * @var string
+         */
+        public $kind;
+        /**
+         * @var string
+         */
+        public $urlPattern;
+        /**
+         * @param string
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUrlPattern($urlPattern)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrlPattern()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AdSenseHost\UrlChannel registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUrlPattern($urlPattern)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrlPattern()
+    class Google_Service_AdSenseHost_UrlChannel extends \Google\Service\AdSenseHost\UrlChannel
     {
     }
 }

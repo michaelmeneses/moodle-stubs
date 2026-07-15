@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudComposer;
-
-class ListImageVersionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'imageVersions';
-    protected $imageVersionsType = ImageVersion::class;
-    protected $imageVersionsDataType = 'array';
-    /**
-     * The page token used to query for the next page if one exists.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of supported ImageVersions in a location.
-     *
-     * @param ImageVersion[] $imageVersions
-     */
-    public function setImageVersions($imageVersions)
+namespace Google\Service\CloudComposer {
+    class ListImageVersionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'imageVersions';
+        protected $imageVersionsType = ImageVersion::class;
+        protected $imageVersionsDataType = 'array';
+        /**
+         * The page token used to query for the next page if one exists.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of supported ImageVersions in a location.
+         *
+         * @param ImageVersion[] $imageVersions
+         */
+        public function setImageVersions($imageVersions)
+        {
+        }
+        /**
+         * @return ImageVersion[]
+         */
+        public function getImageVersions()
+        {
+        }
+        /**
+         * The page token used to query for the next page if one exists.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ImageVersion[]
+     * Runtime class alias of \Google\Service\CloudComposer\ListImageVersionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getImageVersions()
-    {
-    }
-    /**
-     * The page token used to query for the next page if one exists.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_CloudComposer_ListImageVersionsResponse extends \Google\Service\CloudComposer\ListImageVersionsResponse
     {
     }
 }

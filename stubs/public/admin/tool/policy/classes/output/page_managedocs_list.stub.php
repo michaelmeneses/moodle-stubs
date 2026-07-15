@@ -30,6 +30,17 @@
  */
 namespace tool_policy\output;
 
+use html_writer;
+use tool_policy\api;
+use action_menu;
+use action_menu_link;
+use moodle_url;
+use pix_icon;
+use renderable;
+use renderer_base;
+use single_button;
+use templatable;
+use tool_policy\policy_version;
 /**
  * Represents a management page with the list of policy documents.
  *

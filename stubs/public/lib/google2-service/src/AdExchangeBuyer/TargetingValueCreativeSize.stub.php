@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer;
-
-class TargetingValueCreativeSize extends \Google\Collection
-{
-    protected $collection_key = 'companionSizes';
-    public $allowedFormats;
-    protected $companionSizesType = TargetingValueSize::class;
-    protected $companionSizesDataType = 'array';
-    public $creativeSizeType;
-    public $nativeTemplate;
-    protected $sizeType = TargetingValueSize::class;
-    protected $sizeDataType = '';
-    public $skippableAdType;
-    public function setAllowedFormats($allowedFormats)
+namespace Google\Service\AdExchangeBuyer {
+    class TargetingValueCreativeSize extends \Google\Collection
     {
+        protected $collection_key = 'companionSizes';
+        public $allowedFormats;
+        protected $companionSizesType = TargetingValueSize::class;
+        protected $companionSizesDataType = 'array';
+        public $creativeSizeType;
+        public $nativeTemplate;
+        protected $sizeType = TargetingValueSize::class;
+        protected $sizeDataType = '';
+        public $skippableAdType;
+        public function setAllowedFormats($allowedFormats)
+        {
+        }
+        public function getAllowedFormats()
+        {
+        }
+        /**
+         * @param TargetingValueSize[]
+         */
+        public function setCompanionSizes($companionSizes)
+        {
+        }
+        /**
+         * @return TargetingValueSize[]
+         */
+        public function getCompanionSizes()
+        {
+        }
+        public function setCreativeSizeType($creativeSizeType)
+        {
+        }
+        public function getCreativeSizeType()
+        {
+        }
+        public function setNativeTemplate($nativeTemplate)
+        {
+        }
+        public function getNativeTemplate()
+        {
+        }
+        /**
+         * @param TargetingValueSize
+         */
+        public function setSize(TargetingValueSize $size)
+        {
+        }
+        /**
+         * @return TargetingValueSize
+         */
+        public function getSize()
+        {
+        }
+        public function setSkippableAdType($skippableAdType)
+        {
+        }
+        public function getSkippableAdType()
+        {
+        }
     }
-    public function getAllowedFormats()
-    {
-    }
+}
+namespace {
     /**
-     * @param TargetingValueSize[]
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\TargetingValueCreativeSize registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setCompanionSizes($companionSizes)
-    {
-    }
-    /**
-     * @return TargetingValueSize[]
-     */
-    public function getCompanionSizes()
-    {
-    }
-    public function setCreativeSizeType($creativeSizeType)
-    {
-    }
-    public function getCreativeSizeType()
-    {
-    }
-    public function setNativeTemplate($nativeTemplate)
-    {
-    }
-    public function getNativeTemplate()
-    {
-    }
-    /**
-     * @param TargetingValueSize
-     */
-    public function setSize(TargetingValueSize $size)
-    {
-    }
-    /**
-     * @return TargetingValueSize
-     */
-    public function getSize()
-    {
-    }
-    public function setSkippableAdType($skippableAdType)
-    {
-    }
-    public function getSkippableAdType()
+    class Google_Service_AdExchangeBuyer_TargetingValueCreativeSize extends \Google\Service\AdExchangeBuyer\TargetingValueCreativeSize
     {
     }
 }

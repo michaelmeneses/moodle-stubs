@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1SearchEntriesResultSnippets extends \Google\Model
-{
-    protected $dataplexEntryType = GoogleCloudDataplexV1Entry::class;
-    protected $dataplexEntryDataType = '';
-    /**
-     * Entry
-     *
-     * @deprecated
-     * @param GoogleCloudDataplexV1Entry $dataplexEntry
-     */
-    public function setDataplexEntry(GoogleCloudDataplexV1Entry $dataplexEntry)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1SearchEntriesResultSnippets extends \Google\Model
     {
+        protected $dataplexEntryType = GoogleCloudDataplexV1Entry::class;
+        protected $dataplexEntryDataType = '';
+        /**
+         * Entry
+         *
+         * @deprecated
+         * @param GoogleCloudDataplexV1Entry $dataplexEntry
+         */
+        public function setDataplexEntry(GoogleCloudDataplexV1Entry $dataplexEntry)
+        {
+        }
+        /**
+         * @deprecated
+         * @return GoogleCloudDataplexV1Entry
+         */
+        public function getDataplexEntry()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return GoogleCloudDataplexV1Entry
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1SearchEntriesResultSnippets registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataplexEntry()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1SearchEntriesResultSnippets extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1SearchEntriesResultSnippets
     {
     }
 }

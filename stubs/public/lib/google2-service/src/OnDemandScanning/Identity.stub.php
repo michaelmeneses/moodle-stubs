@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OnDemandScanning;
-
-class Identity extends \Google\Model
-{
-    /**
-     * The revision number of the update.
-     *
-     * @var int
-     */
-    public $revision;
-    /**
-     * The revision independent identifier of the update.
-     *
-     * @var string
-     */
-    public $updateId;
-    /**
-     * The revision number of the update.
-     *
-     * @param int $revision
-     */
-    public function setRevision($revision)
+namespace Google\Service\OnDemandScanning {
+    class Identity extends \Google\Model
     {
+        /**
+         * The revision number of the update.
+         *
+         * @var int
+         */
+        public $revision;
+        /**
+         * The revision independent identifier of the update.
+         *
+         * @var string
+         */
+        public $updateId;
+        /**
+         * The revision number of the update.
+         *
+         * @param int $revision
+         */
+        public function setRevision($revision)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRevision()
+        {
+        }
+        /**
+         * The revision independent identifier of the update.
+         *
+         * @param string $updateId
+         */
+        public function setUpdateId($updateId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\OnDemandScanning\Identity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRevision()
-    {
-    }
-    /**
-     * The revision independent identifier of the update.
-     *
-     * @param string $updateId
-     */
-    public function setUpdateId($updateId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateId()
+    class Google_Service_OnDemandScanning_Identity extends \Google\Service\OnDemandScanning\Identity
     {
     }
 }

@@ -21,50 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo\Resource;
-
-/**
- * The "floodlightGroups" collection of methods.
- * Typical usage is:
- *  <code>
- *   $displayvideoService = new Google\Service\DisplayVideo(...);
- *   $floodlightGroups = $displayvideoService->floodlightGroups;
- *  </code>
- */
-class FloodlightGroups extends \Google\Service\Resource
-{
+namespace Google\Service\DisplayVideo\Resource {
+    use Google\Service\DisplayVideo\FloodlightGroup;
     /**
-     * Gets a Floodlight group. (floodlightGroups.get)
-     *
-     * @param string $floodlightGroupId Required. The ID of the Floodlight group to
-     * fetch.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string partnerId Required. The partner context by which the
-     * Floodlight group is being accessed.
-     * @return FloodlightGroup
-     * @throws \Google\Service\Exception
+     * The "floodlightGroups" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $displayvideoService = new Google\Service\DisplayVideo(...);
+     *   $floodlightGroups = $displayvideoService->floodlightGroups;
+     *  </code>
      */
-    public function get($floodlightGroupId, $optParams = [])
+    class FloodlightGroups extends \Google\Service\Resource
     {
+        /**
+         * Gets a Floodlight group. (floodlightGroups.get)
+         *
+         * @param string $floodlightGroupId Required. The ID of the Floodlight group to
+         * fetch.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string partnerId Required. The partner context by which the
+         * Floodlight group is being accessed.
+         * @return FloodlightGroup
+         * @throws \Google\Service\Exception
+         */
+        public function get($floodlightGroupId, $optParams = [])
+        {
+        }
+        /**
+         * Updates an existing Floodlight group. Returns the updated Floodlight group if
+         * successful. (floodlightGroups.patch)
+         *
+         * @param string $floodlightGroupId Output only. The unique ID of the Floodlight
+         * group. Assigned by the system.
+         * @param FloodlightGroup $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string partnerId Required. The partner context by which the
+         * Floodlight group is being accessed.
+         * @opt_param string updateMask Required. The mask to control which fields to
+         * update.
+         * @return FloodlightGroup
+         * @throws \Google\Service\Exception
+         */
+        public function patch($floodlightGroupId, FloodlightGroup $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Updates an existing Floodlight group. Returns the updated Floodlight group if
-     * successful. (floodlightGroups.patch)
-     *
-     * @param string $floodlightGroupId Output only. The unique ID of the Floodlight
-     * group. Assigned by the system.
-     * @param FloodlightGroup $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string partnerId Required. The partner context by which the
-     * Floodlight group is being accessed.
-     * @opt_param string updateMask Required. The mask to control which fields to
-     * update.
-     * @return FloodlightGroup
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\DisplayVideo\Resource\FloodlightGroups registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function patch($floodlightGroupId, FloodlightGroup $postBody, $optParams = [])
+    class Google_Service_DisplayVideo_Resource_FloodlightGroups extends \Google\Service\DisplayVideo\Resource\FloodlightGroups
     {
     }
 }

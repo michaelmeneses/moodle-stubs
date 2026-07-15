@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class TableDataInsertAllResponse extends \Google\Collection
-{
-    protected $collection_key = 'insertErrors';
-    protected $insertErrorsType = TableDataInsertAllResponseInsertErrors::class;
-    protected $insertErrorsDataType = 'array';
-    /**
-     * Returns "bigquery#tableDataInsertAllResponse".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Describes specific errors encountered while processing the request.
-     *
-     * @param TableDataInsertAllResponseInsertErrors[] $insertErrors
-     */
-    public function setInsertErrors($insertErrors)
+namespace Google\Service\Bigquery {
+    class TableDataInsertAllResponse extends \Google\Collection
     {
+        protected $collection_key = 'insertErrors';
+        protected $insertErrorsType = TableDataInsertAllResponseInsertErrors::class;
+        protected $insertErrorsDataType = 'array';
+        /**
+         * Returns "bigquery#tableDataInsertAllResponse".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Describes specific errors encountered while processing the request.
+         *
+         * @param TableDataInsertAllResponseInsertErrors[] $insertErrors
+         */
+        public function setInsertErrors($insertErrors)
+        {
+        }
+        /**
+         * @return TableDataInsertAllResponseInsertErrors[]
+         */
+        public function getInsertErrors()
+        {
+        }
+        /**
+         * Returns "bigquery#tableDataInsertAllResponse".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TableDataInsertAllResponseInsertErrors[]
+     * Runtime class alias of \Google\Service\Bigquery\TableDataInsertAllResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInsertErrors()
-    {
-    }
-    /**
-     * Returns "bigquery#tableDataInsertAllResponse".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_Bigquery_TableDataInsertAllResponse extends \Google\Service\Bigquery\TableDataInsertAllResponse
     {
     }
 }

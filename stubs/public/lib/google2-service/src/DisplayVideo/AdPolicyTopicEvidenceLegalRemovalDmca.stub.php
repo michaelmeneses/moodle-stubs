@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class AdPolicyTopicEvidenceLegalRemovalDmca extends \Google\Model
-{
-    /**
-     * The entity who made the legal complaint.
-     *
-     * @var string
-     */
-    public $complainant;
-    /**
-     * The entity who made the legal complaint.
-     *
-     * @param string $complainant
-     */
-    public function setComplainant($complainant)
+namespace Google\Service\DisplayVideo {
+    class AdPolicyTopicEvidenceLegalRemovalDmca extends \Google\Model
     {
+        /**
+         * The entity who made the legal complaint.
+         *
+         * @var string
+         */
+        public $complainant;
+        /**
+         * The entity who made the legal complaint.
+         *
+         * @param string $complainant
+         */
+        public function setComplainant($complainant)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getComplainant()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\AdPolicyTopicEvidenceLegalRemovalDmca registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getComplainant()
+    class Google_Service_DisplayVideo_AdPolicyTopicEvidenceLegalRemovalDmca extends \Google\Service\DisplayVideo\AdPolicyTopicEvidenceLegalRemovalDmca
     {
     }
 }

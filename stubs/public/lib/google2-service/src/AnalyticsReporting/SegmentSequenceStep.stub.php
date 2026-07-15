@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsReporting;
-
-class SegmentSequenceStep extends \Google\Collection
-{
-    protected $collection_key = 'orFiltersForSegment';
-    /**
-     * @var string
-     */
-    public $matchType;
-    protected $orFiltersForSegmentType = OrFiltersForSegment::class;
-    protected $orFiltersForSegmentDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setMatchType($matchType)
+namespace Google\Service\AnalyticsReporting {
+    class SegmentSequenceStep extends \Google\Collection
     {
+        protected $collection_key = 'orFiltersForSegment';
+        /**
+         * @var string
+         */
+        public $matchType;
+        protected $orFiltersForSegmentType = OrFiltersForSegment::class;
+        protected $orFiltersForSegmentDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setMatchType($matchType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMatchType()
+        {
+        }
+        /**
+         * @param OrFiltersForSegment[]
+         */
+        public function setOrFiltersForSegment($orFiltersForSegment)
+        {
+        }
+        /**
+         * @return OrFiltersForSegment[]
+         */
+        public function getOrFiltersForSegment()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AnalyticsReporting\SegmentSequenceStep registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMatchType()
-    {
-    }
-    /**
-     * @param OrFiltersForSegment[]
-     */
-    public function setOrFiltersForSegment($orFiltersForSegment)
-    {
-    }
-    /**
-     * @return OrFiltersForSegment[]
-     */
-    public function getOrFiltersForSegment()
+    class Google_Service_AnalyticsReporting_SegmentSequenceStep extends \Google\Service\AnalyticsReporting\SegmentSequenceStep
     {
     }
 }

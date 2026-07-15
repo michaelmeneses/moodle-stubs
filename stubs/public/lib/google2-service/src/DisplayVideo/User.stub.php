@@ -21,128 +21,137 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class User extends \Google\Collection
-{
-    protected $collection_key = 'assignedUserRoles';
-    protected $assignedUserRolesType = AssignedUserRole::class;
-    protected $assignedUserRolesDataType = 'array';
-    /**
-     * Required. The display name of the user. Must be UTF-8 encoded with a
-     * maximum size of 240 bytes.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Required. Immutable. The email address used to identify the user.
-     *
-     * @var string
-     */
-    public $email;
-    /**
-     * Output only. The timestamp when the user last logged in DV360 UI.
-     *
-     * @var string
-     */
-    public $lastLoginTime;
-    /**
-     * Output only. The resource name of the user.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The unique ID of the user. Assigned by the system.
-     *
-     * @var string
-     */
-    public $userId;
-    /**
-     * The assigned user roles. Required in CreateUser. Output only in UpdateUser.
-     * Can only be updated through BulkEditAssignedUserRoles.
-     *
-     * @param AssignedUserRole[] $assignedUserRoles
-     */
-    public function setAssignedUserRoles($assignedUserRoles)
+namespace Google\Service\DisplayVideo {
+    class User extends \Google\Collection
     {
+        protected $collection_key = 'assignedUserRoles';
+        protected $assignedUserRolesType = AssignedUserRole::class;
+        protected $assignedUserRolesDataType = 'array';
+        /**
+         * Required. The display name of the user. Must be UTF-8 encoded with a
+         * maximum size of 240 bytes.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Required. Immutable. The email address used to identify the user.
+         *
+         * @var string
+         */
+        public $email;
+        /**
+         * Output only. The timestamp when the user last logged in DV360 UI.
+         *
+         * @var string
+         */
+        public $lastLoginTime;
+        /**
+         * Output only. The resource name of the user.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The unique ID of the user. Assigned by the system.
+         *
+         * @var string
+         */
+        public $userId;
+        /**
+         * The assigned user roles. Required in CreateUser. Output only in UpdateUser.
+         * Can only be updated through BulkEditAssignedUserRoles.
+         *
+         * @param AssignedUserRole[] $assignedUserRoles
+         */
+        public function setAssignedUserRoles($assignedUserRoles)
+        {
+        }
+        /**
+         * @return AssignedUserRole[]
+         */
+        public function getAssignedUserRoles()
+        {
+        }
+        /**
+         * Required. The display name of the user. Must be UTF-8 encoded with a
+         * maximum size of 240 bytes.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Required. Immutable. The email address used to identify the user.
+         *
+         * @param string $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
+        /**
+         * Output only. The timestamp when the user last logged in DV360 UI.
+         *
+         * @param string $lastLoginTime
+         */
+        public function setLastLoginTime($lastLoginTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastLoginTime()
+        {
+        }
+        /**
+         * Output only. The resource name of the user.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The unique ID of the user. Assigned by the system.
+         *
+         * @param string $userId
+         */
+        public function setUserId($userId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AssignedUserRole[]
+     * Runtime class alias of \Google\Service\DisplayVideo\User registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssignedUserRoles()
-    {
-    }
-    /**
-     * Required. The display name of the user. Must be UTF-8 encoded with a
-     * maximum size of 240 bytes.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Required. Immutable. The email address used to identify the user.
-     *
-     * @param string $email
-     */
-    public function setEmail($email)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEmail()
-    {
-    }
-    /**
-     * Output only. The timestamp when the user last logged in DV360 UI.
-     *
-     * @param string $lastLoginTime
-     */
-    public function setLastLoginTime($lastLoginTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastLoginTime()
-    {
-    }
-    /**
-     * Output only. The resource name of the user.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The unique ID of the user. Assigned by the system.
-     *
-     * @param string $userId
-     */
-    public function setUserId($userId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserId()
+    class Google_Service_DisplayVideo_User extends \Google\Service\DisplayVideo\User
     {
     }
 }

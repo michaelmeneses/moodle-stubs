@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1p1alpha1ImportDataOperationResponse extends \Google\Model
-{
-    /**
-     * Ouptut only. The name of imported dataset.
-     *
-     * @var string
-     */
-    public $dataset;
-    /**
-     * Output only. Number of examples imported successfully.
-     *
-     * @var int
-     */
-    public $importCount;
-    /**
-     * Output only. Total number of examples requested to import
-     *
-     * @var int
-     */
-    public $totalCount;
-    /**
-     * Ouptut only. The name of imported dataset.
-     *
-     * @param string $dataset
-     */
-    public function setDataset($dataset)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1p1alpha1ImportDataOperationResponse extends \Google\Model
     {
+        /**
+         * Ouptut only. The name of imported dataset.
+         *
+         * @var string
+         */
+        public $dataset;
+        /**
+         * Output only. Number of examples imported successfully.
+         *
+         * @var int
+         */
+        public $importCount;
+        /**
+         * Output only. Total number of examples requested to import
+         *
+         * @var int
+         */
+        public $totalCount;
+        /**
+         * Ouptut only. The name of imported dataset.
+         *
+         * @param string $dataset
+         */
+        public function setDataset($dataset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataset()
+        {
+        }
+        /**
+         * Output only. Number of examples imported successfully.
+         *
+         * @param int $importCount
+         */
+        public function setImportCount($importCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getImportCount()
+        {
+        }
+        /**
+         * Output only. Total number of examples requested to import
+         *
+         * @param int $totalCount
+         */
+        public function setTotalCount($totalCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1p1alpha1ImportDataOperationResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataset()
-    {
-    }
-    /**
-     * Output only. Number of examples imported successfully.
-     *
-     * @param int $importCount
-     */
-    public function setImportCount($importCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getImportCount()
-    {
-    }
-    /**
-     * Output only. Total number of examples requested to import
-     *
-     * @param int $totalCount
-     */
-    public function setTotalCount($totalCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalCount()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1p1alpha1ImportDataOperationResponse extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1p1alpha1ImportDataOperationResponse
     {
     }
 }

@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaExpandedDataSetFilter extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $fieldName;
-    protected $inListFilterType = GoogleAnalyticsAdminV1alphaExpandedDataSetFilterInListFilter::class;
-    protected $inListFilterDataType = '';
-    protected $stringFilterType = GoogleAnalyticsAdminV1alphaExpandedDataSetFilterStringFilter::class;
-    protected $stringFilterDataType = '';
-    /**
-     * @param string
-     */
-    public function setFieldName($fieldName)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaExpandedDataSetFilter extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $fieldName;
+        protected $inListFilterType = GoogleAnalyticsAdminV1alphaExpandedDataSetFilterInListFilter::class;
+        protected $inListFilterDataType = '';
+        protected $stringFilterType = GoogleAnalyticsAdminV1alphaExpandedDataSetFilterStringFilter::class;
+        protected $stringFilterDataType = '';
+        /**
+         * @param string
+         */
+        public function setFieldName($fieldName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFieldName()
+        {
+        }
+        /**
+         * @param GoogleAnalyticsAdminV1alphaExpandedDataSetFilterInListFilter
+         */
+        public function setInListFilter(GoogleAnalyticsAdminV1alphaExpandedDataSetFilterInListFilter $inListFilter)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaExpandedDataSetFilterInListFilter
+         */
+        public function getInListFilter()
+        {
+        }
+        /**
+         * @param GoogleAnalyticsAdminV1alphaExpandedDataSetFilterStringFilter
+         */
+        public function setStringFilter(GoogleAnalyticsAdminV1alphaExpandedDataSetFilterStringFilter $stringFilter)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaExpandedDataSetFilterStringFilter
+         */
+        public function getStringFilter()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaExpandedDataSetFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFieldName()
-    {
-    }
-    /**
-     * @param GoogleAnalyticsAdminV1alphaExpandedDataSetFilterInListFilter
-     */
-    public function setInListFilter(GoogleAnalyticsAdminV1alphaExpandedDataSetFilterInListFilter $inListFilter)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1alphaExpandedDataSetFilterInListFilter
-     */
-    public function getInListFilter()
-    {
-    }
-    /**
-     * @param GoogleAnalyticsAdminV1alphaExpandedDataSetFilterStringFilter
-     */
-    public function setStringFilter(GoogleAnalyticsAdminV1alphaExpandedDataSetFilterStringFilter $stringFilter)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1alphaExpandedDataSetFilterStringFilter
-     */
-    public function getStringFilter()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaExpandedDataSetFilter extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaExpandedDataSetFilter
     {
     }
 }

@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Transcoder;
-
-class Output extends \Google\Model
-{
-    /**
-     * URI for the output file(s). For example, `gs://my-bucket/outputs/`. Must be
-     * a directory and not a top-level bucket. If empty, the value is populated
-     * from Job.output_uri. See [Supported input and output
-     * formats](https://cloud.google.com/transcoder/docs/concepts/supported-input-
-     * and-output-formats).
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * URI for the output file(s). For example, `gs://my-bucket/outputs/`. Must be
-     * a directory and not a top-level bucket. If empty, the value is populated
-     * from Job.output_uri. See [Supported input and output
-     * formats](https://cloud.google.com/transcoder/docs/concepts/supported-input-
-     * and-output-formats).
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
+namespace Google\Service\Transcoder {
+    class Output extends \Google\Model
     {
+        /**
+         * URI for the output file(s). For example, `gs://my-bucket/outputs/`. Must be
+         * a directory and not a top-level bucket. If empty, the value is populated
+         * from Job.output_uri. See [Supported input and output
+         * formats](https://cloud.google.com/transcoder/docs/concepts/supported-input-
+         * and-output-formats).
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * URI for the output file(s). For example, `gs://my-bucket/outputs/`. Must be
+         * a directory and not a top-level bucket. If empty, the value is populated
+         * from Job.output_uri. See [Supported input and output
+         * formats](https://cloud.google.com/transcoder/docs/concepts/supported-input-
+         * and-output-formats).
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Transcoder\Output registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUri()
+    class Google_Service_Transcoder_Output extends \Google\Service\Transcoder\Output
     {
     }
 }

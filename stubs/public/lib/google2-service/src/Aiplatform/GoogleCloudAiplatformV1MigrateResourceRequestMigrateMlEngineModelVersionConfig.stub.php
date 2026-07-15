@@ -21,78 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1MigrateResourceRequestMigrateMlEngineModelVersionConfig extends \Google\Model
-{
-    /**
-     * Required. The ml.googleapis.com endpoint that this model version should be
-     * migrated from. Example values: * ml.googleapis.com * us-centrall-
-     * ml.googleapis.com * europe-west4-ml.googleapis.com * asia-
-     * east1-ml.googleapis.com
-     *
-     * @var string
-     */
-    public $endpoint;
-    /**
-     * Required. Display name of the model in Vertex AI. System will pick a
-     * display name if unspecified.
-     *
-     * @var string
-     */
-    public $modelDisplayName;
-    /**
-     * Required. Full resource name of ml engine model version. Format:
-     * `projects/{project}/models/{model}/versions/{version}`.
-     *
-     * @var string
-     */
-    public $modelVersion;
-    /**
-     * Required. The ml.googleapis.com endpoint that this model version should be
-     * migrated from. Example values: * ml.googleapis.com * us-centrall-
-     * ml.googleapis.com * europe-west4-ml.googleapis.com * asia-
-     * east1-ml.googleapis.com
-     *
-     * @param string $endpoint
-     */
-    public function setEndpoint($endpoint)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1MigrateResourceRequestMigrateMlEngineModelVersionConfig extends \Google\Model
     {
+        /**
+         * Required. The ml.googleapis.com endpoint that this model version should be
+         * migrated from. Example values: * ml.googleapis.com * us-centrall-
+         * ml.googleapis.com * europe-west4-ml.googleapis.com * asia-
+         * east1-ml.googleapis.com
+         *
+         * @var string
+         */
+        public $endpoint;
+        /**
+         * Required. Display name of the model in Vertex AI. System will pick a
+         * display name if unspecified.
+         *
+         * @var string
+         */
+        public $modelDisplayName;
+        /**
+         * Required. Full resource name of ml engine model version. Format:
+         * `projects/{project}/models/{model}/versions/{version}`.
+         *
+         * @var string
+         */
+        public $modelVersion;
+        /**
+         * Required. The ml.googleapis.com endpoint that this model version should be
+         * migrated from. Example values: * ml.googleapis.com * us-centrall-
+         * ml.googleapis.com * europe-west4-ml.googleapis.com * asia-
+         * east1-ml.googleapis.com
+         *
+         * @param string $endpoint
+         */
+        public function setEndpoint($endpoint)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndpoint()
+        {
+        }
+        /**
+         * Required. Display name of the model in Vertex AI. System will pick a
+         * display name if unspecified.
+         *
+         * @param string $modelDisplayName
+         */
+        public function setModelDisplayName($modelDisplayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getModelDisplayName()
+        {
+        }
+        /**
+         * Required. Full resource name of ml engine model version. Format:
+         * `projects/{project}/models/{model}/versions/{version}`.
+         *
+         * @param string $modelVersion
+         */
+        public function setModelVersion($modelVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getModelVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1MigrateResourceRequestMigrateMlEngineModelVersionConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndpoint()
-    {
-    }
-    /**
-     * Required. Display name of the model in Vertex AI. System will pick a
-     * display name if unspecified.
-     *
-     * @param string $modelDisplayName
-     */
-    public function setModelDisplayName($modelDisplayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getModelDisplayName()
-    {
-    }
-    /**
-     * Required. Full resource name of ml engine model version. Format:
-     * `projects/{project}/models/{model}/versions/{version}`.
-     *
-     * @param string $modelVersion
-     */
-    public function setModelVersion($modelVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getModelVersion()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1MigrateResourceRequestMigrateMlEngineModelVersionConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1MigrateResourceRequestMigrateMlEngineModelVersionConfig
     {
     }
 }

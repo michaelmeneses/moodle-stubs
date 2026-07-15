@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdMob;
-
-class ListAdUnitsResponse extends \Google\Collection
-{
-    protected $collection_key = 'adUnits';
-    protected $adUnitsType = AdUnit::class;
-    protected $adUnitsDataType = 'array';
-    /**
-     * If not empty, indicates that there may be more ad units for the request;
-     * this value should be passed in a new `ListAdUnitsRequest`.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The resulting ad units for the requested account.
-     *
-     * @param AdUnit[] $adUnits
-     */
-    public function setAdUnits($adUnits)
+namespace Google\Service\AdMob {
+    class ListAdUnitsResponse extends \Google\Collection
     {
+        protected $collection_key = 'adUnits';
+        protected $adUnitsType = AdUnit::class;
+        protected $adUnitsDataType = 'array';
+        /**
+         * If not empty, indicates that there may be more ad units for the request;
+         * this value should be passed in a new `ListAdUnitsRequest`.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The resulting ad units for the requested account.
+         *
+         * @param AdUnit[] $adUnits
+         */
+        public function setAdUnits($adUnits)
+        {
+        }
+        /**
+         * @return AdUnit[]
+         */
+        public function getAdUnits()
+        {
+        }
+        /**
+         * If not empty, indicates that there may be more ad units for the request;
+         * this value should be passed in a new `ListAdUnitsRequest`.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AdUnit[]
+     * Runtime class alias of \Google\Service\AdMob\ListAdUnitsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdUnits()
-    {
-    }
-    /**
-     * If not empty, indicates that there may be more ad units for the request;
-     * this value should be passed in a new `ListAdUnitsRequest`.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_AdMob_ListAdUnitsResponse extends \Google\Service\AdMob\ListAdUnitsResponse
     {
     }
 }

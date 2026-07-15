@@ -21,61 +21,70 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIAP;
-
-class TagsPartialState extends \Google\Collection
-{
-    protected $collection_key = 'tagKeysToRemove';
-    /**
-     * Keys of the tags that should be removed for evaluation purposes. IMPORTANT:
-     * Currently only numeric references are supported. Once support for namespace
-     * references is added, both the tag references (numeric and namespace) will
-     * be removed.
-     *
-     * @var string[]
-     */
-    public $tagKeysToRemove;
-    /**
-     * Tags that’ll be updated or added to the current state of tags for
-     * evaluation purposes. If a key exists in both "tags_to_upsert" and
-     * "tag_keys_to_remove", the one in "tag_keys_to_remove" is ignored. Only one
-     * type of tags reference (numeric or namespace) is required to be passed.
-     *
-     * @var string[]
-     */
-    public $tagsToUpsert;
-    /**
-     * Keys of the tags that should be removed for evaluation purposes. IMPORTANT:
-     * Currently only numeric references are supported. Once support for namespace
-     * references is added, both the tag references (numeric and namespace) will
-     * be removed.
-     *
-     * @param string[] $tagKeysToRemove
-     */
-    public function setTagKeysToRemove($tagKeysToRemove)
+namespace Google\Service\CloudIAP {
+    class TagsPartialState extends \Google\Collection
     {
+        protected $collection_key = 'tagKeysToRemove';
+        /**
+         * Keys of the tags that should be removed for evaluation purposes. IMPORTANT:
+         * Currently only numeric references are supported. Once support for namespace
+         * references is added, both the tag references (numeric and namespace) will
+         * be removed.
+         *
+         * @var string[]
+         */
+        public $tagKeysToRemove;
+        /**
+         * Tags that’ll be updated or added to the current state of tags for
+         * evaluation purposes. If a key exists in both "tags_to_upsert" and
+         * "tag_keys_to_remove", the one in "tag_keys_to_remove" is ignored. Only one
+         * type of tags reference (numeric or namespace) is required to be passed.
+         *
+         * @var string[]
+         */
+        public $tagsToUpsert;
+        /**
+         * Keys of the tags that should be removed for evaluation purposes. IMPORTANT:
+         * Currently only numeric references are supported. Once support for namespace
+         * references is added, both the tag references (numeric and namespace) will
+         * be removed.
+         *
+         * @param string[] $tagKeysToRemove
+         */
+        public function setTagKeysToRemove($tagKeysToRemove)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTagKeysToRemove()
+        {
+        }
+        /**
+         * Tags that’ll be updated or added to the current state of tags for
+         * evaluation purposes. If a key exists in both "tags_to_upsert" and
+         * "tag_keys_to_remove", the one in "tag_keys_to_remove" is ignored. Only one
+         * type of tags reference (numeric or namespace) is required to be passed.
+         *
+         * @param string[] $tagsToUpsert
+         */
+        public function setTagsToUpsert($tagsToUpsert)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTagsToUpsert()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudIAP\TagsPartialState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTagKeysToRemove()
-    {
-    }
-    /**
-     * Tags that’ll be updated or added to the current state of tags for
-     * evaluation purposes. If a key exists in both "tags_to_upsert" and
-     * "tag_keys_to_remove", the one in "tag_keys_to_remove" is ignored. Only one
-     * type of tags reference (numeric or namespace) is required to be passed.
-     *
-     * @param string[] $tagsToUpsert
-     */
-    public function setTagsToUpsert($tagsToUpsert)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTagsToUpsert()
+    class Google_Service_CloudIAP_TagsPartialState extends \Google\Service\CloudIAP\TagsPartialState
     {
     }
 }

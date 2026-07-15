@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class DebugResponse extends \Google\Model
-{
-    /**
-     * Serialized string of GenericSearchRequest.
-     *
-     * @var string
-     */
-    public $gsrRequest;
-    /**
-     * Serialized string of GenericSearchResponse.
-     *
-     * @var string
-     */
-    public $gsrResponse;
-    protected $searchResponseType = SearchResponse::class;
-    protected $searchResponseDataType = '';
-    /**
-     * Serialized string of GenericSearchRequest.
-     *
-     * @param string $gsrRequest
-     */
-    public function setGsrRequest($gsrRequest)
+namespace Google\Service\CloudSearch {
+    class DebugResponse extends \Google\Model
     {
+        /**
+         * Serialized string of GenericSearchRequest.
+         *
+         * @var string
+         */
+        public $gsrRequest;
+        /**
+         * Serialized string of GenericSearchResponse.
+         *
+         * @var string
+         */
+        public $gsrResponse;
+        protected $searchResponseType = SearchResponse::class;
+        protected $searchResponseDataType = '';
+        /**
+         * Serialized string of GenericSearchRequest.
+         *
+         * @param string $gsrRequest
+         */
+        public function setGsrRequest($gsrRequest)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGsrRequest()
+        {
+        }
+        /**
+         * Serialized string of GenericSearchResponse.
+         *
+         * @param string $gsrResponse
+         */
+        public function setGsrResponse($gsrResponse)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGsrResponse()
+        {
+        }
+        /**
+         * Search response.
+         *
+         * @param SearchResponse $searchResponse
+         */
+        public function setSearchResponse(SearchResponse $searchResponse)
+        {
+        }
+        /**
+         * @return SearchResponse
+         */
+        public function getSearchResponse()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\DebugResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGsrRequest()
-    {
-    }
-    /**
-     * Serialized string of GenericSearchResponse.
-     *
-     * @param string $gsrResponse
-     */
-    public function setGsrResponse($gsrResponse)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGsrResponse()
-    {
-    }
-    /**
-     * Search response.
-     *
-     * @param SearchResponse $searchResponse
-     */
-    public function setSearchResponse(SearchResponse $searchResponse)
-    {
-    }
-    /**
-     * @return SearchResponse
-     */
-    public function getSearchResponse()
+    class Google_Service_CloudSearch_DebugResponse extends \Google\Service\CloudSearch\DebugResponse
     {
     }
 }

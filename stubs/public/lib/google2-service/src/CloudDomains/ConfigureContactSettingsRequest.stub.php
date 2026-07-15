@@ -21,91 +21,100 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDomains;
-
-class ConfigureContactSettingsRequest extends \Google\Collection
-{
-    protected $collection_key = 'contactNotices';
-    /**
-     * The list of contact notices that the caller acknowledges. The notices
-     * needed here depend on the values specified in `contact_settings`.
-     *
-     * @var string[]
-     */
-    public $contactNotices;
-    protected $contactSettingsType = ContactSettings::class;
-    protected $contactSettingsDataType = '';
-    /**
-     * Required. The field mask describing which fields to update as a comma-
-     * separated list. For example, if only the registrant contact is being
-     * updated, the `update_mask` is `"registrant_contact"`.
-     *
-     * @var string
-     */
-    public $updateMask;
-    /**
-     * Validate the request without actually updating the contact settings.
-     *
-     * @var bool
-     */
-    public $validateOnly;
-    /**
-     * The list of contact notices that the caller acknowledges. The notices
-     * needed here depend on the values specified in `contact_settings`.
-     *
-     * @param string[] $contactNotices
-     */
-    public function setContactNotices($contactNotices)
+namespace Google\Service\CloudDomains {
+    class ConfigureContactSettingsRequest extends \Google\Collection
     {
+        protected $collection_key = 'contactNotices';
+        /**
+         * The list of contact notices that the caller acknowledges. The notices
+         * needed here depend on the values specified in `contact_settings`.
+         *
+         * @var string[]
+         */
+        public $contactNotices;
+        protected $contactSettingsType = ContactSettings::class;
+        protected $contactSettingsDataType = '';
+        /**
+         * Required. The field mask describing which fields to update as a comma-
+         * separated list. For example, if only the registrant contact is being
+         * updated, the `update_mask` is `"registrant_contact"`.
+         *
+         * @var string
+         */
+        public $updateMask;
+        /**
+         * Validate the request without actually updating the contact settings.
+         *
+         * @var bool
+         */
+        public $validateOnly;
+        /**
+         * The list of contact notices that the caller acknowledges. The notices
+         * needed here depend on the values specified in `contact_settings`.
+         *
+         * @param string[] $contactNotices
+         */
+        public function setContactNotices($contactNotices)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getContactNotices()
+        {
+        }
+        /**
+         * Fields of the `ContactSettings` to update.
+         *
+         * @param ContactSettings $contactSettings
+         */
+        public function setContactSettings(ContactSettings $contactSettings)
+        {
+        }
+        /**
+         * @return ContactSettings
+         */
+        public function getContactSettings()
+        {
+        }
+        /**
+         * Required. The field mask describing which fields to update as a comma-
+         * separated list. For example, if only the registrant contact is being
+         * updated, the `update_mask` is `"registrant_contact"`.
+         *
+         * @param string $updateMask
+         */
+        public function setUpdateMask($updateMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateMask()
+        {
+        }
+        /**
+         * Validate the request without actually updating the contact settings.
+         *
+         * @param bool $validateOnly
+         */
+        public function setValidateOnly($validateOnly)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getValidateOnly()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudDomains\ConfigureContactSettingsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContactNotices()
-    {
-    }
-    /**
-     * Fields of the `ContactSettings` to update.
-     *
-     * @param ContactSettings $contactSettings
-     */
-    public function setContactSettings(ContactSettings $contactSettings)
-    {
-    }
-    /**
-     * @return ContactSettings
-     */
-    public function getContactSettings()
-    {
-    }
-    /**
-     * Required. The field mask describing which fields to update as a comma-
-     * separated list. For example, if only the registrant contact is being
-     * updated, the `update_mask` is `"registrant_contact"`.
-     *
-     * @param string $updateMask
-     */
-    public function setUpdateMask($updateMask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateMask()
-    {
-    }
-    /**
-     * Validate the request without actually updating the contact settings.
-     *
-     * @param bool $validateOnly
-     */
-    public function setValidateOnly($validateOnly)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getValidateOnly()
+    class Google_Service_CloudDomains_ConfigureContactSettingsRequest extends \Google\Service\CloudDomains\ConfigureContactSettingsRequest
     {
     }
 }

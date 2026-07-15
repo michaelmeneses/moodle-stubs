@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class Color extends \Google\Model
-{
-    protected $rgbColorType = RgbColor::class;
-    protected $rgbColorDataType = '';
-    /**
-     * The RGB color value.
-     *
-     * @param RgbColor $rgbColor
-     */
-    public function setRgbColor(RgbColor $rgbColor)
+namespace Google\Service\Docs {
+    class Color extends \Google\Model
     {
+        protected $rgbColorType = RgbColor::class;
+        protected $rgbColorDataType = '';
+        /**
+         * The RGB color value.
+         *
+         * @param RgbColor $rgbColor
+         */
+        public function setRgbColor(RgbColor $rgbColor)
+        {
+        }
+        /**
+         * @return RgbColor
+         */
+        public function getRgbColor()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RgbColor
+     * Runtime class alias of \Google\Service\Docs\Color registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRgbColor()
+    class Google_Service_Docs_Color extends \Google\Service\Docs\Color
     {
     }
 }

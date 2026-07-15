@@ -21,118 +21,127 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class UserInfo extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $driveNotificationAvatarUrl;
-    /**
-     * @var string
-     */
-    public $updaterCountDisplayType;
-    /**
-     * @var int
-     */
-    public $updaterCountToShow;
-    /**
-     * @var string
-     */
-    public $updaterToShowEmail;
-    /**
-     * @var string
-     */
-    public $updaterToShowGaiaId;
-    /**
-     * @var string
-     */
-    public $updaterToShowName;
-    protected $updaterToShowUserIdType = UserId::class;
-    protected $updaterToShowUserIdDataType = '';
-    /**
-     * @param string
-     */
-    public function setDriveNotificationAvatarUrl($driveNotificationAvatarUrl)
+namespace Google\Service\CloudSearch {
+    class UserInfo extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $driveNotificationAvatarUrl;
+        /**
+         * @var string
+         */
+        public $updaterCountDisplayType;
+        /**
+         * @var int
+         */
+        public $updaterCountToShow;
+        /**
+         * @var string
+         */
+        public $updaterToShowEmail;
+        /**
+         * @var string
+         */
+        public $updaterToShowGaiaId;
+        /**
+         * @var string
+         */
+        public $updaterToShowName;
+        protected $updaterToShowUserIdType = UserId::class;
+        protected $updaterToShowUserIdDataType = '';
+        /**
+         * @param string
+         */
+        public function setDriveNotificationAvatarUrl($driveNotificationAvatarUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDriveNotificationAvatarUrl()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUpdaterCountDisplayType($updaterCountDisplayType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdaterCountDisplayType()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setUpdaterCountToShow($updaterCountToShow)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getUpdaterCountToShow()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUpdaterToShowEmail($updaterToShowEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdaterToShowEmail()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUpdaterToShowGaiaId($updaterToShowGaiaId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdaterToShowGaiaId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUpdaterToShowName($updaterToShowName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdaterToShowName()
+        {
+        }
+        /**
+         * @param UserId
+         */
+        public function setUpdaterToShowUserId(UserId $updaterToShowUserId)
+        {
+        }
+        /**
+         * @return UserId
+         */
+        public function getUpdaterToShowUserId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\UserInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDriveNotificationAvatarUrl()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUpdaterCountDisplayType($updaterCountDisplayType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdaterCountDisplayType()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setUpdaterCountToShow($updaterCountToShow)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getUpdaterCountToShow()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUpdaterToShowEmail($updaterToShowEmail)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdaterToShowEmail()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUpdaterToShowGaiaId($updaterToShowGaiaId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdaterToShowGaiaId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUpdaterToShowName($updaterToShowName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdaterToShowName()
-    {
-    }
-    /**
-     * @param UserId
-     */
-    public function setUpdaterToShowUserId(UserId $updaterToShowUserId)
-    {
-    }
-    /**
-     * @return UserId
-     */
-    public function getUpdaterToShowUserId()
+    class Google_Service_CloudSearch_UserInfo extends \Google\Service\CloudSearch\UserInfo
     {
     }
 }

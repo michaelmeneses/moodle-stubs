@@ -21,105 +21,114 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1VideoPayload extends \Google\Collection
-{
-    protected $collection_key = 'videoThumbnails';
-    /**
-     * FPS of the video.
-     *
-     * @var float
-     */
-    public $frameRate;
-    /**
-     * Video format.
-     *
-     * @var string
-     */
-    public $mimeType;
-    /**
-     * Signed uri of the video file in the service bucket.
-     *
-     * @var string
-     */
-    public $signedUri;
-    protected $videoThumbnailsType = GoogleCloudDatalabelingV1beta1VideoThumbnail::class;
-    protected $videoThumbnailsDataType = 'array';
-    /**
-     * Video uri from the user bucket.
-     *
-     * @var string
-     */
-    public $videoUri;
-    /**
-     * FPS of the video.
-     *
-     * @param float $frameRate
-     */
-    public function setFrameRate($frameRate)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1VideoPayload extends \Google\Collection
     {
+        protected $collection_key = 'videoThumbnails';
+        /**
+         * FPS of the video.
+         *
+         * @var float
+         */
+        public $frameRate;
+        /**
+         * Video format.
+         *
+         * @var string
+         */
+        public $mimeType;
+        /**
+         * Signed uri of the video file in the service bucket.
+         *
+         * @var string
+         */
+        public $signedUri;
+        protected $videoThumbnailsType = GoogleCloudDatalabelingV1beta1VideoThumbnail::class;
+        protected $videoThumbnailsDataType = 'array';
+        /**
+         * Video uri from the user bucket.
+         *
+         * @var string
+         */
+        public $videoUri;
+        /**
+         * FPS of the video.
+         *
+         * @param float $frameRate
+         */
+        public function setFrameRate($frameRate)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getFrameRate()
+        {
+        }
+        /**
+         * Video format.
+         *
+         * @param string $mimeType
+         */
+        public function setMimeType($mimeType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMimeType()
+        {
+        }
+        /**
+         * Signed uri of the video file in the service bucket.
+         *
+         * @param string $signedUri
+         */
+        public function setSignedUri($signedUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSignedUri()
+        {
+        }
+        /**
+         * The list of video thumbnails.
+         *
+         * @param GoogleCloudDatalabelingV1beta1VideoThumbnail[] $videoThumbnails
+         */
+        public function setVideoThumbnails($videoThumbnails)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1VideoThumbnail[]
+         */
+        public function getVideoThumbnails()
+        {
+        }
+        /**
+         * Video uri from the user bucket.
+         *
+         * @param string $videoUri
+         */
+        public function setVideoUri($videoUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVideoUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1VideoPayload registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFrameRate()
-    {
-    }
-    /**
-     * Video format.
-     *
-     * @param string $mimeType
-     */
-    public function setMimeType($mimeType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMimeType()
-    {
-    }
-    /**
-     * Signed uri of the video file in the service bucket.
-     *
-     * @param string $signedUri
-     */
-    public function setSignedUri($signedUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSignedUri()
-    {
-    }
-    /**
-     * The list of video thumbnails.
-     *
-     * @param GoogleCloudDatalabelingV1beta1VideoThumbnail[] $videoThumbnails
-     */
-    public function setVideoThumbnails($videoThumbnails)
-    {
-    }
-    /**
-     * @return GoogleCloudDatalabelingV1beta1VideoThumbnail[]
-     */
-    public function getVideoThumbnails()
-    {
-    }
-    /**
-     * Video uri from the user bucket.
-     *
-     * @param string $videoUri
-     */
-    public function setVideoUri($videoUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVideoUri()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1VideoPayload extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1VideoPayload
     {
     }
 }

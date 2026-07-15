@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class DataCacheConfig extends \Google\Model
-{
-    /**
-     * Optional. Whether data cache is enabled for the instance.
-     *
-     * @var bool
-     */
-    public $dataCacheEnabled;
-    /**
-     * Optional. Whether data cache is enabled for the instance.
-     *
-     * @param bool $dataCacheEnabled
-     */
-    public function setDataCacheEnabled($dataCacheEnabled)
+namespace Google\Service\DatabaseMigrationService {
+    class DataCacheConfig extends \Google\Model
     {
+        /**
+         * Optional. Whether data cache is enabled for the instance.
+         *
+         * @var bool
+         */
+        public $dataCacheEnabled;
+        /**
+         * Optional. Whether data cache is enabled for the instance.
+         *
+         * @param bool $dataCacheEnabled
+         */
+        public function setDataCacheEnabled($dataCacheEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDataCacheEnabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\DataCacheConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataCacheEnabled()
+    class Google_Service_DatabaseMigrationService_DataCacheConfig extends \Google\Service\DatabaseMigrationService\DataCacheConfig
     {
     }
 }

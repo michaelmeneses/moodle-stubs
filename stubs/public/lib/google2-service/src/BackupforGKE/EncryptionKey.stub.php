@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BackupforGKE;
-
-class EncryptionKey extends \Google\Model
-{
-    /**
-     * Optional. Google Cloud KMS encryption key. Format:
-     * `projects/locations/keyRings/cryptoKeys`
-     *
-     * @var string
-     */
-    public $gcpKmsEncryptionKey;
-    /**
-     * Optional. Google Cloud KMS encryption key. Format:
-     * `projects/locations/keyRings/cryptoKeys`
-     *
-     * @param string $gcpKmsEncryptionKey
-     */
-    public function setGcpKmsEncryptionKey($gcpKmsEncryptionKey)
+namespace Google\Service\BackupforGKE {
+    class EncryptionKey extends \Google\Model
     {
+        /**
+         * Optional. Google Cloud KMS encryption key. Format:
+         * `projects/locations/keyRings/cryptoKeys`
+         *
+         * @var string
+         */
+        public $gcpKmsEncryptionKey;
+        /**
+         * Optional. Google Cloud KMS encryption key. Format:
+         * `projects/locations/keyRings/cryptoKeys`
+         *
+         * @param string $gcpKmsEncryptionKey
+         */
+        public function setGcpKmsEncryptionKey($gcpKmsEncryptionKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGcpKmsEncryptionKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BackupforGKE\EncryptionKey registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGcpKmsEncryptionKey()
+    class Google_Service_BackupforGKE_EncryptionKey extends \Google\Service\BackupforGKE\EncryptionKey
     {
     }
 }

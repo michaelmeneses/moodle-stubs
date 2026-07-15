@@ -21,68 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChecksService\Resource;
-
-/**
- * The "scans" collection of methods.
- * Typical usage is:
- *  <code>
- *   $checksService = new Google\Service\ChecksService(...);
- *   $scans = $checksService->accounts_repos_scans;
- *  </code>
- */
-class AccountsReposScans extends \Google\Service\Resource
-{
+namespace Google\Service\ChecksService\Resource {
+    use Google\Service\ChecksService\GoogleChecksRepoScanV1alphaGenerateScanRequest;
+    use Google\Service\ChecksService\GoogleChecksRepoScanV1alphaListRepoScansResponse;
+    use Google\Service\ChecksService\GoogleChecksRepoScanV1alphaRepoScan;
+    use Google\Service\ChecksService\Operation;
     /**
-     * Uploads the results of local Code Compliance analysis and generates a scan of
-     * privacy issues. Returns a google.longrunning.Operation containing analysis
-     * and findings. (scans.generate)
-     *
-     * @param string $parent Required. Resource name of the repo. Example:
-     * `accounts/123/repos/456`
-     * @param GoogleChecksRepoScanV1alphaGenerateScanRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * The "scans" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $checksService = new Google\Service\ChecksService(...);
+     *   $scans = $checksService->accounts_repos_scans;
+     *  </code>
      */
-    public function generate($parent, GoogleChecksRepoScanV1alphaGenerateScanRequest $postBody, $optParams = [])
+    class AccountsReposScans extends \Google\Service\Resource
     {
+        /**
+         * Uploads the results of local Code Compliance analysis and generates a scan of
+         * privacy issues. Returns a google.longrunning.Operation containing analysis
+         * and findings. (scans.generate)
+         *
+         * @param string $parent Required. Resource name of the repo. Example:
+         * `accounts/123/repos/456`
+         * @param GoogleChecksRepoScanV1alphaGenerateScanRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function generate($parent, GoogleChecksRepoScanV1alphaGenerateScanRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Gets a repo scan. By default, only the name and results_uri fields are
+         * returned. You can include other fields by listing them in the `fields` URL
+         * query parameter. For example, `?fields=name,sources` will return the name and
+         * sources fields. (scans.get)
+         *
+         * @param string $name Required. Resource name of the repo scan. Example:
+         * `accounts/123/repos/456/scans/789`
+         * @param array $optParams Optional parameters.
+         * @return GoogleChecksRepoScanV1alphaRepoScan
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists repo scans for the specified repo. (scans.listAccountsReposScans)
+         *
+         * @param string $parent Required. Resource name of the repo. Example:
+         * `accounts/123/repos/456`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Optional. An [AIP-160](https://google.aip.dev/160)
+         * filter string to filter repo scans. Example: `scmMetadata.branch = main`
+         * @opt_param int pageSize Optional. The maximum number of repo scans to return.
+         * If unspecified, at most 10 repo scans will be returned. The maximum value is
+         * 50; values above 50 will be coerced to 50.
+         * @opt_param string pageToken Optional. A page token received from a previous
+         * `ListRepoScans` call. Provide this to retrieve the subsequent page. When
+         * paginating, all other parameters provided to `ListRepoScans` must match the
+         * call that provided the page token.
+         * @return GoogleChecksRepoScanV1alphaListRepoScansResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listAccountsReposScans($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets a repo scan. By default, only the name and results_uri fields are
-     * returned. You can include other fields by listing them in the `fields` URL
-     * query parameter. For example, `?fields=name,sources` will return the name and
-     * sources fields. (scans.get)
-     *
-     * @param string $name Required. Resource name of the repo scan. Example:
-     * `accounts/123/repos/456/scans/789`
-     * @param array $optParams Optional parameters.
-     * @return GoogleChecksRepoScanV1alphaRepoScan
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\ChecksService\Resource\AccountsReposScans registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists repo scans for the specified repo. (scans.listAccountsReposScans)
-     *
-     * @param string $parent Required. Resource name of the repo. Example:
-     * `accounts/123/repos/456`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Optional. An [AIP-160](https://google.aip.dev/160)
-     * filter string to filter repo scans. Example: `scmMetadata.branch = main`
-     * @opt_param int pageSize Optional. The maximum number of repo scans to return.
-     * If unspecified, at most 10 repo scans will be returned. The maximum value is
-     * 50; values above 50 will be coerced to 50.
-     * @opt_param string pageToken Optional. A page token received from a previous
-     * `ListRepoScans` call. Provide this to retrieve the subsequent page. When
-     * paginating, all other parameters provided to `ListRepoScans` must match the
-     * call that provided the page token.
-     * @return GoogleChecksRepoScanV1alphaListRepoScansResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listAccountsReposScans($parent, $optParams = [])
+    class Google_Service_ChecksService_Resource_AccountsReposScans extends \Google\Service\ChecksService\Resource\AccountsReposScans
     {
     }
 }

@@ -22,6 +22,13 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_dataprivacy\form;
 
+use context;
+use context_user;
+use moodle_exception;
+use moodle_url;
+use core_form\dynamic_form;
+use tool_dataprivacy\api;
+use tool_dataprivacy\external;
 /**
  * Contact DPO modal form
  *

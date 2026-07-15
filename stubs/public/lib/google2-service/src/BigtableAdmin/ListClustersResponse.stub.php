@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class ListClustersResponse extends \Google\Collection
-{
-    protected $collection_key = 'failedLocations';
-    protected $clustersType = Cluster::class;
-    protected $clustersDataType = 'array';
-    /**
-     * Locations from which Cluster information could not be retrieved, due to an
-     * outage or some other transient condition. Clusters from these locations may
-     * be missing from `clusters`, or may only have partial information returned.
-     * Values are of the form `projects//locations/`
-     *
-     * @var string[]
-     */
-    public $failedLocations;
-    /**
-     * DEPRECATED: This field is unused and ignored.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of requested clusters.
-     *
-     * @param Cluster[] $clusters
-     */
-    public function setClusters($clusters)
+namespace Google\Service\BigtableAdmin {
+    class ListClustersResponse extends \Google\Collection
     {
+        protected $collection_key = 'failedLocations';
+        protected $clustersType = Cluster::class;
+        protected $clustersDataType = 'array';
+        /**
+         * Locations from which Cluster information could not be retrieved, due to an
+         * outage or some other transient condition. Clusters from these locations may
+         * be missing from `clusters`, or may only have partial information returned.
+         * Values are of the form `projects//locations/`
+         *
+         * @var string[]
+         */
+        public $failedLocations;
+        /**
+         * DEPRECATED: This field is unused and ignored.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of requested clusters.
+         *
+         * @param Cluster[] $clusters
+         */
+        public function setClusters($clusters)
+        {
+        }
+        /**
+         * @return Cluster[]
+         */
+        public function getClusters()
+        {
+        }
+        /**
+         * Locations from which Cluster information could not be retrieved, due to an
+         * outage or some other transient condition. Clusters from these locations may
+         * be missing from `clusters`, or may only have partial information returned.
+         * Values are of the form `projects//locations/`
+         *
+         * @param string[] $failedLocations
+         */
+        public function setFailedLocations($failedLocations)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getFailedLocations()
+        {
+        }
+        /**
+         * DEPRECATED: This field is unused and ignored.
+         *
+         * @deprecated
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Cluster[]
+     * Runtime class alias of \Google\Service\BigtableAdmin\ListClustersResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClusters()
-    {
-    }
-    /**
-     * Locations from which Cluster information could not be retrieved, due to an
-     * outage or some other transient condition. Clusters from these locations may
-     * be missing from `clusters`, or may only have partial information returned.
-     * Values are of the form `projects//locations/`
-     *
-     * @param string[] $failedLocations
-     */
-    public function setFailedLocations($failedLocations)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getFailedLocations()
-    {
-    }
-    /**
-     * DEPRECATED: This field is unused and ignored.
-     *
-     * @deprecated
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_BigtableAdmin_ListClustersResponse extends \Google\Service\BigtableAdmin\ListClustersResponse
     {
     }
 }

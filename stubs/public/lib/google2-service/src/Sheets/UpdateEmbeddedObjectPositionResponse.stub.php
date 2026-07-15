@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class UpdateEmbeddedObjectPositionResponse extends \Google\Model
-{
-    protected $positionType = EmbeddedObjectPosition::class;
-    protected $positionDataType = '';
-    /**
-     * The new position of the embedded object.
-     *
-     * @param EmbeddedObjectPosition $position
-     */
-    public function setPosition(EmbeddedObjectPosition $position)
+namespace Google\Service\Sheets {
+    class UpdateEmbeddedObjectPositionResponse extends \Google\Model
     {
+        protected $positionType = EmbeddedObjectPosition::class;
+        protected $positionDataType = '';
+        /**
+         * The new position of the embedded object.
+         *
+         * @param EmbeddedObjectPosition $position
+         */
+        public function setPosition(EmbeddedObjectPosition $position)
+        {
+        }
+        /**
+         * @return EmbeddedObjectPosition
+         */
+        public function getPosition()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EmbeddedObjectPosition
+     * Runtime class alias of \Google\Service\Sheets\UpdateEmbeddedObjectPositionResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPosition()
+    class Google_Service_Sheets_UpdateEmbeddedObjectPositionResponse extends \Google\Service\Sheets\UpdateEmbeddedObjectPositionResponse
     {
     }
 }

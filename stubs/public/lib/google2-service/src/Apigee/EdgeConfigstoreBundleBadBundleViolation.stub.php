@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class EdgeConfigstoreBundleBadBundleViolation extends \Google\Model
-{
-    /**
-     * A description of why the bundle is invalid and how to fix it.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * The filename (including relative path from the bundle root) in which the
-     * error occurred.
-     *
-     * @var string
-     */
-    public $filename;
-    /**
-     * A description of why the bundle is invalid and how to fix it.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\Apigee {
+    class EdgeConfigstoreBundleBadBundleViolation extends \Google\Model
     {
+        /**
+         * A description of why the bundle is invalid and how to fix it.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * The filename (including relative path from the bundle root) in which the
+         * error occurred.
+         *
+         * @var string
+         */
+        public $filename;
+        /**
+         * A description of why the bundle is invalid and how to fix it.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * The filename (including relative path from the bundle root) in which the
+         * error occurred.
+         *
+         * @param string $filename
+         */
+        public function setFilename($filename)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilename()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\EdgeConfigstoreBundleBadBundleViolation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * The filename (including relative path from the bundle root) in which the
-     * error occurred.
-     *
-     * @param string $filename
-     */
-    public function setFilename($filename)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFilename()
+    class Google_Service_Apigee_EdgeConfigstoreBundleBadBundleViolation extends \Google\Service\Apigee\EdgeConfigstoreBundleBadBundleViolation
     {
     }
 }

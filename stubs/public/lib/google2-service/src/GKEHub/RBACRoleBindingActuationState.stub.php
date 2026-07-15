@@ -21,27 +21,36 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class RBACRoleBindingActuationState extends \Google\Model
-{
-    protected $rbacrolebindingStatesType = RBACRoleBindingActuationRBACRoleBindingState::class;
-    protected $rbacrolebindingStatesDataType = 'map';
-    /**
-     * Output only. The state of RBACRoleBindings using custom roles that exist on
-     * the cluster, keyed by RBACRoleBinding resource name with format: projects/{
-     * project}/locations/{location}/scopes/{scope}/rbacrolebindings/{rbacrolebind
-     * ing}.
-     *
-     * @param RBACRoleBindingActuationRBACRoleBindingState[] $rbacrolebindingStates
-     */
-    public function setRbacrolebindingStates($rbacrolebindingStates)
+namespace Google\Service\GKEHub {
+    class RBACRoleBindingActuationState extends \Google\Model
     {
+        protected $rbacrolebindingStatesType = RBACRoleBindingActuationRBACRoleBindingState::class;
+        protected $rbacrolebindingStatesDataType = 'map';
+        /**
+         * Output only. The state of RBACRoleBindings using custom roles that exist on
+         * the cluster, keyed by RBACRoleBinding resource name with format: projects/{
+         * project}/locations/{location}/scopes/{scope}/rbacrolebindings/{rbacrolebind
+         * ing}.
+         *
+         * @param RBACRoleBindingActuationRBACRoleBindingState[] $rbacrolebindingStates
+         */
+        public function setRbacrolebindingStates($rbacrolebindingStates)
+        {
+        }
+        /**
+         * @return RBACRoleBindingActuationRBACRoleBindingState[]
+         */
+        public function getRbacrolebindingStates()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RBACRoleBindingActuationRBACRoleBindingState[]
+     * Runtime class alias of \Google\Service\GKEHub\RBACRoleBindingActuationState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRbacrolebindingStates()
+    class Google_Service_GKEHub_RBACRoleBindingActuationState extends \Google\Service\GKEHub\RBACRoleBindingActuationState
     {
     }
 }

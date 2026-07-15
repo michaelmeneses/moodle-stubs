@@ -21,79 +21,88 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class ApplyAdminConsentsRequest extends \Google\Model
-{
-    protected $newConsentsListType = AdminConsents::class;
-    protected $newConsentsListDataType = '';
-    /**
-     * Optional. If true, the method only validates Consent resources to make sure
-     * they are supported. Otherwise, the method applies the aggregate consent
-     * information to update the enforcement model and reindex the FHIR resources.
-     * If all Consent resources can be applied successfully, the
-     * ApplyAdminConsentsResponse is returned containing the following fields: *
-     * `consent_apply_success` to indicate the number of Consent resources
-     * applied. * `affected_resources` to indicate the number of resources that
-     * might have had their consent access changed. If, however, one or more
-     * Consent resources are unsupported or cannot be applied, the method fails
-     * and ApplyAdminConsentsErrorDetail is is returned with details about the
-     * unsupported Consent resources.
-     *
-     * @var bool
-     */
-    public $validateOnly;
-    /**
-     * A new list of admin Consent resources to be applied. Any existing enforced
-     * Consents, which are specified in `consent_config.enforced_admin_consents`
-     * of the FhirStore, that are not part of this list will be disabled. An empty
-     * list is equivalent to clearing or disabling all Consents enforced on the
-     * FHIR store. When a FHIR store has `disable_resource_versioning=true` and
-     * this list contains a Consent resource that exists in
-     * `consent_config.enforced_admin_consents`, the method enforces any updates
-     * to the existing resource since the last enforcement. If the existing
-     * resource hasn't been updated since the last enforcement, the resource is
-     * unaffected. After the method finishes, the resulting consent enforcement
-     * model is determined by the contents of the Consent resource(s) when the
-     * method was called: * When `disable_resource_versioning=true`, the result is
-     * identical to the current resource(s) in the FHIR store. * When
-     * `disable_resource_versioning=false`, the result is based on the historical
-     * version(s) of the Consent resource(s) at the point in time when the method
-     * was called. At most 200 Consents can be specified.
-     *
-     * @param AdminConsents $newConsentsList
-     */
-    public function setNewConsentsList(AdminConsents $newConsentsList)
+namespace Google\Service\CloudHealthcare {
+    class ApplyAdminConsentsRequest extends \Google\Model
     {
+        protected $newConsentsListType = AdminConsents::class;
+        protected $newConsentsListDataType = '';
+        /**
+         * Optional. If true, the method only validates Consent resources to make sure
+         * they are supported. Otherwise, the method applies the aggregate consent
+         * information to update the enforcement model and reindex the FHIR resources.
+         * If all Consent resources can be applied successfully, the
+         * ApplyAdminConsentsResponse is returned containing the following fields: *
+         * `consent_apply_success` to indicate the number of Consent resources
+         * applied. * `affected_resources` to indicate the number of resources that
+         * might have had their consent access changed. If, however, one or more
+         * Consent resources are unsupported or cannot be applied, the method fails
+         * and ApplyAdminConsentsErrorDetail is is returned with details about the
+         * unsupported Consent resources.
+         *
+         * @var bool
+         */
+        public $validateOnly;
+        /**
+         * A new list of admin Consent resources to be applied. Any existing enforced
+         * Consents, which are specified in `consent_config.enforced_admin_consents`
+         * of the FhirStore, that are not part of this list will be disabled. An empty
+         * list is equivalent to clearing or disabling all Consents enforced on the
+         * FHIR store. When a FHIR store has `disable_resource_versioning=true` and
+         * this list contains a Consent resource that exists in
+         * `consent_config.enforced_admin_consents`, the method enforces any updates
+         * to the existing resource since the last enforcement. If the existing
+         * resource hasn't been updated since the last enforcement, the resource is
+         * unaffected. After the method finishes, the resulting consent enforcement
+         * model is determined by the contents of the Consent resource(s) when the
+         * method was called: * When `disable_resource_versioning=true`, the result is
+         * identical to the current resource(s) in the FHIR store. * When
+         * `disable_resource_versioning=false`, the result is based on the historical
+         * version(s) of the Consent resource(s) at the point in time when the method
+         * was called. At most 200 Consents can be specified.
+         *
+         * @param AdminConsents $newConsentsList
+         */
+        public function setNewConsentsList(AdminConsents $newConsentsList)
+        {
+        }
+        /**
+         * @return AdminConsents
+         */
+        public function getNewConsentsList()
+        {
+        }
+        /**
+         * Optional. If true, the method only validates Consent resources to make sure
+         * they are supported. Otherwise, the method applies the aggregate consent
+         * information to update the enforcement model and reindex the FHIR resources.
+         * If all Consent resources can be applied successfully, the
+         * ApplyAdminConsentsResponse is returned containing the following fields: *
+         * `consent_apply_success` to indicate the number of Consent resources
+         * applied. * `affected_resources` to indicate the number of resources that
+         * might have had their consent access changed. If, however, one or more
+         * Consent resources are unsupported or cannot be applied, the method fails
+         * and ApplyAdminConsentsErrorDetail is is returned with details about the
+         * unsupported Consent resources.
+         *
+         * @param bool $validateOnly
+         */
+        public function setValidateOnly($validateOnly)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getValidateOnly()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AdminConsents
+     * Runtime class alias of \Google\Service\CloudHealthcare\ApplyAdminConsentsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNewConsentsList()
-    {
-    }
-    /**
-     * Optional. If true, the method only validates Consent resources to make sure
-     * they are supported. Otherwise, the method applies the aggregate consent
-     * information to update the enforcement model and reindex the FHIR resources.
-     * If all Consent resources can be applied successfully, the
-     * ApplyAdminConsentsResponse is returned containing the following fields: *
-     * `consent_apply_success` to indicate the number of Consent resources
-     * applied. * `affected_resources` to indicate the number of resources that
-     * might have had their consent access changed. If, however, one or more
-     * Consent resources are unsupported or cannot be applied, the method fails
-     * and ApplyAdminConsentsErrorDetail is is returned with details about the
-     * unsupported Consent resources.
-     *
-     * @param bool $validateOnly
-     */
-    public function setValidateOnly($validateOnly)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getValidateOnly()
+    class Google_Service_CloudHealthcare_ApplyAdminConsentsRequest extends \Google\Service\CloudHealthcare\ApplyAdminConsentsRequest
     {
     }
 }

@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager;
-
-class AvailabilityGroup extends \Google\Collection
-{
-    protected $collection_key = 'secondaryServers';
-    /**
-     * @var string[]
-     */
-    public $databases;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $primaryServer;
-    /**
-     * @var string[]
-     */
-    public $secondaryServers;
-    /**
-     * @param string[]
-     */
-    public function setDatabases($databases)
+namespace Google\Service\WorkloadManager {
+    class AvailabilityGroup extends \Google\Collection
     {
+        protected $collection_key = 'secondaryServers';
+        /**
+         * @var string[]
+         */
+        public $databases;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $primaryServer;
+        /**
+         * @var string[]
+         */
+        public $secondaryServers;
+        /**
+         * @param string[]
+         */
+        public function setDatabases($databases)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDatabases()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPrimaryServer($primaryServer)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrimaryServer()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setSecondaryServers($secondaryServers)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSecondaryServers()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\WorkloadManager\AvailabilityGroup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatabases()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPrimaryServer($primaryServer)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrimaryServer()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setSecondaryServers($secondaryServers)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSecondaryServers()
+    class Google_Service_WorkloadManager_AvailabilityGroup extends \Google\Service\WorkloadManager\AvailabilityGroup
     {
     }
 }

@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1EntryTypeAuthorization extends \Google\Model
-{
-    /**
-     * Immutable. The IAM permission grantable on the Entry Group to allow access
-     * to instantiate Entries of Dataplex Universal Catalog owned Entry Types,
-     * only settable for Dataplex Universal Catalog owned Types.
-     *
-     * @var string
-     */
-    public $alternateUsePermission;
-    /**
-     * Immutable. The IAM permission grantable on the Entry Group to allow access
-     * to instantiate Entries of Dataplex Universal Catalog owned Entry Types,
-     * only settable for Dataplex Universal Catalog owned Types.
-     *
-     * @param string $alternateUsePermission
-     */
-    public function setAlternateUsePermission($alternateUsePermission)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1EntryTypeAuthorization extends \Google\Model
     {
+        /**
+         * Immutable. The IAM permission grantable on the Entry Group to allow access
+         * to instantiate Entries of Dataplex Universal Catalog owned Entry Types,
+         * only settable for Dataplex Universal Catalog owned Types.
+         *
+         * @var string
+         */
+        public $alternateUsePermission;
+        /**
+         * Immutable. The IAM permission grantable on the Entry Group to allow access
+         * to instantiate Entries of Dataplex Universal Catalog owned Entry Types,
+         * only settable for Dataplex Universal Catalog owned Types.
+         *
+         * @param string $alternateUsePermission
+         */
+        public function setAlternateUsePermission($alternateUsePermission)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAlternateUsePermission()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1EntryTypeAuthorization registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAlternateUsePermission()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1EntryTypeAuthorization extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1EntryTypeAuthorization
     {
     }
 }

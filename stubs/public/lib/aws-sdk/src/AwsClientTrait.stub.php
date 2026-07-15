@@ -8,6 +8,7 @@
  */
 namespace Aws;
 
+use Aws\Api\Service;
 /**
  * A trait providing generic functionality for interacting with Amazon Web
  * Services. This is meant to be used in classes implementing

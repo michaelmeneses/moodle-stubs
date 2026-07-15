@@ -21,143 +21,152 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class ItemThread extends \Google\Collection
-{
-    protected $collection_key = 'item';
-    protected $clusterInfoType = ClusterInfo::class;
-    protected $clusterInfoDataType = '';
-    protected $itemType = FuseboxItem::class;
-    protected $itemDataType = 'array';
-    /**
-     * @var string
-     */
-    public $lastItemId;
-    protected $matchInfoType = FuseboxItemThreadMatchInfo::class;
-    protected $matchInfoDataType = '';
-    /**
-     * @var string
-     */
-    public $snippet;
-    protected $threadKeyType = MultiKey::class;
-    protected $threadKeyDataType = '';
-    /**
-     * @var string
-     */
-    public $threadLocator;
-    protected $topicStateType = TopicState::class;
-    protected $topicStateDataType = '';
-    /**
-     * @var string
-     */
-    public $version;
-    /**
-     * @param ClusterInfo
-     */
-    public function setClusterInfo(ClusterInfo $clusterInfo)
+namespace Google\Service\CloudSearch {
+    class ItemThread extends \Google\Collection
     {
+        protected $collection_key = 'item';
+        protected $clusterInfoType = ClusterInfo::class;
+        protected $clusterInfoDataType = '';
+        protected $itemType = FuseboxItem::class;
+        protected $itemDataType = 'array';
+        /**
+         * @var string
+         */
+        public $lastItemId;
+        protected $matchInfoType = FuseboxItemThreadMatchInfo::class;
+        protected $matchInfoDataType = '';
+        /**
+         * @var string
+         */
+        public $snippet;
+        protected $threadKeyType = MultiKey::class;
+        protected $threadKeyDataType = '';
+        /**
+         * @var string
+         */
+        public $threadLocator;
+        protected $topicStateType = TopicState::class;
+        protected $topicStateDataType = '';
+        /**
+         * @var string
+         */
+        public $version;
+        /**
+         * @param ClusterInfo
+         */
+        public function setClusterInfo(ClusterInfo $clusterInfo)
+        {
+        }
+        /**
+         * @return ClusterInfo
+         */
+        public function getClusterInfo()
+        {
+        }
+        /**
+         * @param FuseboxItem[]
+         */
+        public function setItem($item)
+        {
+        }
+        /**
+         * @return FuseboxItem[]
+         */
+        public function getItem()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLastItemId($lastItemId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastItemId()
+        {
+        }
+        /**
+         * @param FuseboxItemThreadMatchInfo
+         */
+        public function setMatchInfo(FuseboxItemThreadMatchInfo $matchInfo)
+        {
+        }
+        /**
+         * @return FuseboxItemThreadMatchInfo
+         */
+        public function getMatchInfo()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSnippet($snippet)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSnippet()
+        {
+        }
+        /**
+         * @param MultiKey
+         */
+        public function setThreadKey(MultiKey $threadKey)
+        {
+        }
+        /**
+         * @return MultiKey
+         */
+        public function getThreadKey()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setThreadLocator($threadLocator)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getThreadLocator()
+        {
+        }
+        /**
+         * @param TopicState
+         */
+        public function setTopicState(TopicState $topicState)
+        {
+        }
+        /**
+         * @return TopicState
+         */
+        public function getTopicState()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ClusterInfo
+     * Runtime class alias of \Google\Service\CloudSearch\ItemThread registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClusterInfo()
-    {
-    }
-    /**
-     * @param FuseboxItem[]
-     */
-    public function setItem($item)
-    {
-    }
-    /**
-     * @return FuseboxItem[]
-     */
-    public function getItem()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLastItemId($lastItemId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastItemId()
-    {
-    }
-    /**
-     * @param FuseboxItemThreadMatchInfo
-     */
-    public function setMatchInfo(FuseboxItemThreadMatchInfo $matchInfo)
-    {
-    }
-    /**
-     * @return FuseboxItemThreadMatchInfo
-     */
-    public function getMatchInfo()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSnippet($snippet)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSnippet()
-    {
-    }
-    /**
-     * @param MultiKey
-     */
-    public function setThreadKey(MultiKey $threadKey)
-    {
-    }
-    /**
-     * @return MultiKey
-     */
-    public function getThreadKey()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setThreadLocator($threadLocator)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getThreadLocator()
-    {
-    }
-    /**
-     * @param TopicState
-     */
-    public function setTopicState(TopicState $topicState)
-    {
-    }
-    /**
-     * @return TopicState
-     */
-    public function getTopicState()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_CloudSearch_ItemThread extends \Google\Service\CloudSearch\ItemThread
     {
     }
 }

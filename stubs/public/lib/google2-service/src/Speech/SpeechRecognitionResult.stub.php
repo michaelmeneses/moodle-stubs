@@ -21,98 +21,107 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Speech;
-
-class SpeechRecognitionResult extends \Google\Collection
-{
-    protected $collection_key = 'alternatives';
-    protected $alternativesType = SpeechRecognitionAlternative::class;
-    protected $alternativesDataType = 'array';
-    /**
-     * For multi-channel audio, this is the channel number corresponding to the
-     * recognized result for the audio from that channel. For audio_channel_count
-     * = N, its output values can range from '1' to 'N'.
-     *
-     * @var int
-     */
-    public $channelTag;
-    /**
-     * Output only. The [BCP-47](https://www.rfc-editor.org/rfc/bcp/bcp47.txt)
-     * language tag of the language in this result. This language code was
-     * detected to have the most likelihood of being spoken in the audio.
-     *
-     * @var string
-     */
-    public $languageCode;
-    /**
-     * Time offset of the end of this result relative to the beginning of the
-     * audio.
-     *
-     * @var string
-     */
-    public $resultEndTime;
-    /**
-     * May contain one or more recognition hypotheses (up to the maximum specified
-     * in `max_alternatives`). These alternatives are ordered in terms of
-     * accuracy, with the top (first) alternative being the most probable, as
-     * ranked by the recognizer.
-     *
-     * @param SpeechRecognitionAlternative[] $alternatives
-     */
-    public function setAlternatives($alternatives)
+namespace Google\Service\Speech {
+    class SpeechRecognitionResult extends \Google\Collection
     {
+        protected $collection_key = 'alternatives';
+        protected $alternativesType = SpeechRecognitionAlternative::class;
+        protected $alternativesDataType = 'array';
+        /**
+         * For multi-channel audio, this is the channel number corresponding to the
+         * recognized result for the audio from that channel. For audio_channel_count
+         * = N, its output values can range from '1' to 'N'.
+         *
+         * @var int
+         */
+        public $channelTag;
+        /**
+         * Output only. The [BCP-47](https://www.rfc-editor.org/rfc/bcp/bcp47.txt)
+         * language tag of the language in this result. This language code was
+         * detected to have the most likelihood of being spoken in the audio.
+         *
+         * @var string
+         */
+        public $languageCode;
+        /**
+         * Time offset of the end of this result relative to the beginning of the
+         * audio.
+         *
+         * @var string
+         */
+        public $resultEndTime;
+        /**
+         * May contain one or more recognition hypotheses (up to the maximum specified
+         * in `max_alternatives`). These alternatives are ordered in terms of
+         * accuracy, with the top (first) alternative being the most probable, as
+         * ranked by the recognizer.
+         *
+         * @param SpeechRecognitionAlternative[] $alternatives
+         */
+        public function setAlternatives($alternatives)
+        {
+        }
+        /**
+         * @return SpeechRecognitionAlternative[]
+         */
+        public function getAlternatives()
+        {
+        }
+        /**
+         * For multi-channel audio, this is the channel number corresponding to the
+         * recognized result for the audio from that channel. For audio_channel_count
+         * = N, its output values can range from '1' to 'N'.
+         *
+         * @param int $channelTag
+         */
+        public function setChannelTag($channelTag)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getChannelTag()
+        {
+        }
+        /**
+         * Output only. The [BCP-47](https://www.rfc-editor.org/rfc/bcp/bcp47.txt)
+         * language tag of the language in this result. This language code was
+         * detected to have the most likelihood of being spoken in the audio.
+         *
+         * @param string $languageCode
+         */
+        public function setLanguageCode($languageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLanguageCode()
+        {
+        }
+        /**
+         * Time offset of the end of this result relative to the beginning of the
+         * audio.
+         *
+         * @param string $resultEndTime
+         */
+        public function setResultEndTime($resultEndTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResultEndTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SpeechRecognitionAlternative[]
+     * Runtime class alias of \Google\Service\Speech\SpeechRecognitionResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAlternatives()
-    {
-    }
-    /**
-     * For multi-channel audio, this is the channel number corresponding to the
-     * recognized result for the audio from that channel. For audio_channel_count
-     * = N, its output values can range from '1' to 'N'.
-     *
-     * @param int $channelTag
-     */
-    public function setChannelTag($channelTag)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getChannelTag()
-    {
-    }
-    /**
-     * Output only. The [BCP-47](https://www.rfc-editor.org/rfc/bcp/bcp47.txt)
-     * language tag of the language in this result. This language code was
-     * detected to have the most likelihood of being spoken in the audio.
-     *
-     * @param string $languageCode
-     */
-    public function setLanguageCode($languageCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLanguageCode()
-    {
-    }
-    /**
-     * Time offset of the end of this result relative to the beginning of the
-     * audio.
-     *
-     * @param string $resultEndTime
-     */
-    public function setResultEndTime($resultEndTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResultEndTime()
+    class Google_Service_Speech_SpeechRecognitionResult extends \Google\Service\Speech\SpeechRecognitionResult
     {
     }
 }

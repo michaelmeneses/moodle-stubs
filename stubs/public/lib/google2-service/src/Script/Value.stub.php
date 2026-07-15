@@ -21,139 +21,148 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Script;
-
-class Value extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $boolValue;
-    /**
-     * @var string
-     */
-    public $bytesValue;
-    /**
-     * @var string
-     */
-    public $dateValue;
-    protected $listValueType = ListValue::class;
-    protected $listValueDataType = '';
-    /**
-     * @var string
-     */
-    public $nullValue;
-    public $numberValue;
-    /**
-     * @var array[]
-     */
-    public $protoValue;
-    /**
-     * @var string
-     */
-    public $stringValue;
-    protected $structValueType = Struct::class;
-    protected $structValueDataType = '';
-    /**
-     * @param bool
-     */
-    public function setBoolValue($boolValue)
+namespace Google\Service\Script {
+    class Value extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $boolValue;
+        /**
+         * @var string
+         */
+        public $bytesValue;
+        /**
+         * @var string
+         */
+        public $dateValue;
+        protected $listValueType = ListValue::class;
+        protected $listValueDataType = '';
+        /**
+         * @var string
+         */
+        public $nullValue;
+        public $numberValue;
+        /**
+         * @var array[]
+         */
+        public $protoValue;
+        /**
+         * @var string
+         */
+        public $stringValue;
+        protected $structValueType = Struct::class;
+        protected $structValueDataType = '';
+        /**
+         * @param bool
+         */
+        public function setBoolValue($boolValue)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getBoolValue()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setBytesValue($bytesValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBytesValue()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDateValue($dateValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDateValue()
+        {
+        }
+        /**
+         * @param ListValue
+         */
+        public function setListValue(ListValue $listValue)
+        {
+        }
+        /**
+         * @return ListValue
+         */
+        public function getListValue()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNullValue($nullValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNullValue()
+        {
+        }
+        public function setNumberValue($numberValue)
+        {
+        }
+        public function getNumberValue()
+        {
+        }
+        /**
+         * @param array[]
+         */
+        public function setProtoValue($protoValue)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getProtoValue()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setStringValue($stringValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStringValue()
+        {
+        }
+        /**
+         * @param Struct
+         */
+        public function setStructValue(Struct $structValue)
+        {
+        }
+        /**
+         * @return Struct
+         */
+        public function getStructValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Script\Value registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBoolValue()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setBytesValue($bytesValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBytesValue()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDateValue($dateValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDateValue()
-    {
-    }
-    /**
-     * @param ListValue
-     */
-    public function setListValue(ListValue $listValue)
-    {
-    }
-    /**
-     * @return ListValue
-     */
-    public function getListValue()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNullValue($nullValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNullValue()
-    {
-    }
-    public function setNumberValue($numberValue)
-    {
-    }
-    public function getNumberValue()
-    {
-    }
-    /**
-     * @param array[]
-     */
-    public function setProtoValue($protoValue)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getProtoValue()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setStringValue($stringValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStringValue()
-    {
-    }
-    /**
-     * @param Struct
-     */
-    public function setStructValue(Struct $structValue)
-    {
-    }
-    /**
-     * @return Struct
-     */
-    public function getStructValue()
+    class Google_Service_Script_Value extends \Google\Service\Script\Value
     {
     }
 }

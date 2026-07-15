@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveLabels;
-
-class GoogleAppsDriveLabelsV2DeltaUpdateLabelRequestDisableSelectionChoiceRequest extends \Google\Model
-{
-    protected $disabledPolicyType = GoogleAppsDriveLabelsV2LifecycleDisabledPolicy::class;
-    protected $disabledPolicyDataType = '';
-    /**
-     * Required. The selection field in which a choice will be disabled.
-     *
-     * @var string
-     */
-    public $fieldId;
-    /**
-     * Required. Choice to disable.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * The fields that should be updated. At least one field must be specified.
-     * The root `disabled_policy` is implied and should not be specified. A single
-     * `*` can be used as a short-hand for updating every field.
-     *
-     * @var string
-     */
-    public $updateMask;
-    /**
-     * Required. The disabled policy to update.
-     *
-     * @param GoogleAppsDriveLabelsV2LifecycleDisabledPolicy $disabledPolicy
-     */
-    public function setDisabledPolicy(GoogleAppsDriveLabelsV2LifecycleDisabledPolicy $disabledPolicy)
+namespace Google\Service\DriveLabels {
+    class GoogleAppsDriveLabelsV2DeltaUpdateLabelRequestDisableSelectionChoiceRequest extends \Google\Model
     {
+        protected $disabledPolicyType = GoogleAppsDriveLabelsV2LifecycleDisabledPolicy::class;
+        protected $disabledPolicyDataType = '';
+        /**
+         * Required. The selection field in which a choice will be disabled.
+         *
+         * @var string
+         */
+        public $fieldId;
+        /**
+         * Required. Choice to disable.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * The fields that should be updated. At least one field must be specified.
+         * The root `disabled_policy` is implied and should not be specified. A single
+         * `*` can be used as a short-hand for updating every field.
+         *
+         * @var string
+         */
+        public $updateMask;
+        /**
+         * Required. The disabled policy to update.
+         *
+         * @param GoogleAppsDriveLabelsV2LifecycleDisabledPolicy $disabledPolicy
+         */
+        public function setDisabledPolicy(GoogleAppsDriveLabelsV2LifecycleDisabledPolicy $disabledPolicy)
+        {
+        }
+        /**
+         * @return GoogleAppsDriveLabelsV2LifecycleDisabledPolicy
+         */
+        public function getDisabledPolicy()
+        {
+        }
+        /**
+         * Required. The selection field in which a choice will be disabled.
+         *
+         * @param string $fieldId
+         */
+        public function setFieldId($fieldId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFieldId()
+        {
+        }
+        /**
+         * Required. Choice to disable.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * The fields that should be updated. At least one field must be specified.
+         * The root `disabled_policy` is implied and should not be specified. A single
+         * `*` can be used as a short-hand for updating every field.
+         *
+         * @param string $updateMask
+         */
+        public function setUpdateMask($updateMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateMask()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAppsDriveLabelsV2LifecycleDisabledPolicy
+     * Runtime class alias of \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2DeltaUpdateLabelRequestDisableSelectionChoiceRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisabledPolicy()
-    {
-    }
-    /**
-     * Required. The selection field in which a choice will be disabled.
-     *
-     * @param string $fieldId
-     */
-    public function setFieldId($fieldId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFieldId()
-    {
-    }
-    /**
-     * Required. Choice to disable.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * The fields that should be updated. At least one field must be specified.
-     * The root `disabled_policy` is implied and should not be specified. A single
-     * `*` can be used as a short-hand for updating every field.
-     *
-     * @param string $updateMask
-     */
-    public function setUpdateMask($updateMask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateMask()
+    class Google_Service_DriveLabels_GoogleAppsDriveLabelsV2DeltaUpdateLabelRequestDisableSelectionChoiceRequest extends \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2DeltaUpdateLabelRequestDisableSelectionChoiceRequest
     {
     }
 }

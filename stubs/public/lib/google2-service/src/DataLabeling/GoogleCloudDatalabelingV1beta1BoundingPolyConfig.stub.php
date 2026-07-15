@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1BoundingPolyConfig extends \Google\Model
-{
-    /**
-     * Required. Annotation spec set resource name.
-     *
-     * @var string
-     */
-    public $annotationSpecSet;
-    /**
-     * Optional. Instruction message showed on contributors UI.
-     *
-     * @var string
-     */
-    public $instructionMessage;
-    /**
-     * Required. Annotation spec set resource name.
-     *
-     * @param string $annotationSpecSet
-     */
-    public function setAnnotationSpecSet($annotationSpecSet)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1BoundingPolyConfig extends \Google\Model
     {
+        /**
+         * Required. Annotation spec set resource name.
+         *
+         * @var string
+         */
+        public $annotationSpecSet;
+        /**
+         * Optional. Instruction message showed on contributors UI.
+         *
+         * @var string
+         */
+        public $instructionMessage;
+        /**
+         * Required. Annotation spec set resource name.
+         *
+         * @param string $annotationSpecSet
+         */
+        public function setAnnotationSpecSet($annotationSpecSet)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnnotationSpecSet()
+        {
+        }
+        /**
+         * Optional. Instruction message showed on contributors UI.
+         *
+         * @param string $instructionMessage
+         */
+        public function setInstructionMessage($instructionMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstructionMessage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1BoundingPolyConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotationSpecSet()
-    {
-    }
-    /**
-     * Optional. Instruction message showed on contributors UI.
-     *
-     * @param string $instructionMessage
-     */
-    public function setInstructionMessage($instructionMessage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInstructionMessage()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1BoundingPolyConfig extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1BoundingPolyConfig
     {
     }
 }

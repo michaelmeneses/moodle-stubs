@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Classroom;
-
-class ModifyIndividualStudentsOptions extends \Google\Collection
-{
-    protected $collection_key = 'removeStudentIds';
-    /**
-     * IDs of students to be added as having access to this
-     * coursework/announcement.
-     *
-     * @var string[]
-     */
-    public $addStudentIds;
-    /**
-     * IDs of students to be removed from having access to this
-     * coursework/announcement.
-     *
-     * @var string[]
-     */
-    public $removeStudentIds;
-    /**
-     * IDs of students to be added as having access to this
-     * coursework/announcement.
-     *
-     * @param string[] $addStudentIds
-     */
-    public function setAddStudentIds($addStudentIds)
+namespace Google\Service\Classroom {
+    class ModifyIndividualStudentsOptions extends \Google\Collection
     {
+        protected $collection_key = 'removeStudentIds';
+        /**
+         * IDs of students to be added as having access to this
+         * coursework/announcement.
+         *
+         * @var string[]
+         */
+        public $addStudentIds;
+        /**
+         * IDs of students to be removed from having access to this
+         * coursework/announcement.
+         *
+         * @var string[]
+         */
+        public $removeStudentIds;
+        /**
+         * IDs of students to be added as having access to this
+         * coursework/announcement.
+         *
+         * @param string[] $addStudentIds
+         */
+        public function setAddStudentIds($addStudentIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAddStudentIds()
+        {
+        }
+        /**
+         * IDs of students to be removed from having access to this
+         * coursework/announcement.
+         *
+         * @param string[] $removeStudentIds
+         */
+        public function setRemoveStudentIds($removeStudentIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRemoveStudentIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Classroom\ModifyIndividualStudentsOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddStudentIds()
-    {
-    }
-    /**
-     * IDs of students to be removed from having access to this
-     * coursework/announcement.
-     *
-     * @param string[] $removeStudentIds
-     */
-    public function setRemoveStudentIds($removeStudentIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRemoveStudentIds()
+    class Google_Service_Classroom_ModifyIndividualStudentsOptions extends \Google\Service\Classroom\ModifyIndividualStudentsOptions
     {
     }
 }

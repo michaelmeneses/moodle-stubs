@@ -21,81 +21,94 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Games\Resource;
-
-/**
- * The "players" collection of methods.
- * Typical usage is:
- *  <code>
- *   $gamesService = new Google\Service\Games(...);
- *   $players = $gamesService->players;
- *  </code>
- */
-class Players extends \Google\Service\Resource
-{
+namespace Google\Service\Games\Resource {
+    use Google\Service\Games\GetMultipleApplicationPlayerIdsResponse;
+    use Google\Service\Games\Player;
+    use Google\Service\Games\PlayerListResponse;
+    use Google\Service\Games\ScopedPlayerIds;
     /**
-     * Retrieves the Player resource with the given ID. To retrieve the player for
-     * the currently authenticated user, set `playerId` to `me`. (players.get)
-     *
-     * @param string $playerId A player ID. A value of `me` may be used in place of
-     * the authenticated player's ID.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string language The preferred language to use for strings returned
-     * by this method.
-     * @opt_param string playerIdConsistencyToken Consistency token of the player
-     * id. The call returns a 'not found' result when the token is present and
-     * invalid. Empty value is ignored. See also GlobalPlayerIdConsistencyTokenProto
-     * @return Player
-     * @throws \Google\Service\Exception
+     * The "players" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $gamesService = new Google\Service\Games(...);
+     *   $players = $gamesService->players;
+     *  </code>
      */
-    public function get($playerId, $optParams = [])
+    class Players extends \Google\Service\Resource
     {
+        /**
+         * Retrieves the Player resource with the given ID. To retrieve the player for
+         * the currently authenticated user, set `playerId` to `me`. (players.get)
+         *
+         * @param string $playerId A player ID. A value of `me` may be used in place of
+         * the authenticated player's ID.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string language The preferred language to use for strings returned
+         * by this method.
+         * @opt_param string playerIdConsistencyToken Consistency token of the player
+         * id. The call returns a 'not found' result when the token is present and
+         * invalid. Empty value is ignored. See also GlobalPlayerIdConsistencyTokenProto
+         * @return Player
+         * @throws \Google\Service\Exception
+         */
+        public function get($playerId, $optParams = [])
+        {
+        }
+        /**
+         * Get the application player ids for the currently authenticated player across
+         * all requested games by the same developer as the calling application. This
+         * will only return ids for players that actually have an id (scoped or
+         * otherwise) with that game. (players.getMultipleApplicationPlayerIds)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string applicationIds Required. The application IDs from the
+         * Google Play developer console for the games to return scoped ids for.
+         * @return GetMultipleApplicationPlayerIdsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function getMultipleApplicationPlayerIds($optParams = [])
+        {
+        }
+        /**
+         * Retrieves scoped player identifiers for currently authenticated user.
+         * (players.getScopedPlayerIds)
+         *
+         * @param array $optParams Optional parameters.
+         * @return ScopedPlayerIds
+         * @throws \Google\Service\Exception
+         */
+        public function getScopedPlayerIds($optParams = [])
+        {
+        }
+        /**
+         * Get the collection of players for the currently authenticated user.
+         * (players.listPlayers)
+         *
+         * @param string $collection Collection of players being retrieved
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string language The preferred language to use for strings returned
+         * by this method.
+         * @opt_param int maxResults The maximum number of player resources to return in
+         * the response, used for paging. For any response, the actual number of player
+         * resources returned may be less than the specified `maxResults`.
+         * @opt_param string pageToken The token returned by the previous request.
+         * @return PlayerListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listPlayers($collection, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Get the application player ids for the currently authenticated player across
-     * all requested games by the same developer as the calling application. This
-     * will only return ids for players that actually have an id (scoped or
-     * otherwise) with that game. (players.getMultipleApplicationPlayerIds)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string applicationIds Required. The application IDs from the
-     * Google Play developer console for the games to return scoped ids for.
-     * @return GetMultipleApplicationPlayerIdsResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Games\Resource\Players registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMultipleApplicationPlayerIds($optParams = [])
-    {
-    }
-    /**
-     * Retrieves scoped player identifiers for currently authenticated user.
-     * (players.getScopedPlayerIds)
-     *
-     * @param array $optParams Optional parameters.
-     * @return ScopedPlayerIds
-     * @throws \Google\Service\Exception
-     */
-    public function getScopedPlayerIds($optParams = [])
-    {
-    }
-    /**
-     * Get the collection of players for the currently authenticated user.
-     * (players.listPlayers)
-     *
-     * @param string $collection Collection of players being retrieved
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string language The preferred language to use for strings returned
-     * by this method.
-     * @opt_param int maxResults The maximum number of player resources to return in
-     * the response, used for paging. For any response, the actual number of player
-     * resources returned may be less than the specified `maxResults`.
-     * @opt_param string pageToken The token returned by the previous request.
-     * @return PlayerListResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listPlayers($collection, $optParams = [])
+    class Google_Service_Games_Resource_Players extends \Google\Service\Games\Resource\Players
     {
     }
 }

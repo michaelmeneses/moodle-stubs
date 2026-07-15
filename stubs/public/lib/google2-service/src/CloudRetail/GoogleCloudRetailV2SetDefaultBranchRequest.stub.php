@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2SetDefaultBranchRequest extends \Google\Model
-{
-    /**
-     * The final component of the resource name of a branch. This field must be
-     * one of "0", "1" or "2". Otherwise, an INVALID_ARGUMENT error is returned.
-     * If there are no sufficient active products in the targeted branch and force
-     * is not set, a FAILED_PRECONDITION error is returned.
-     *
-     * @var string
-     */
-    public $branchId;
-    /**
-     * If set to true, it permits switching to a branch with branch_id even if it
-     * has no sufficient active products.
-     *
-     * @var bool
-     */
-    public $force;
-    /**
-     * Some note on this request, this can be retrieved by
-     * CatalogService.GetDefaultBranch before next valid default branch set
-     * occurs. This field must be a UTF-8 encoded string with a length limit of
-     * 1,000 characters. Otherwise, an INVALID_ARGUMENT error is returned.
-     *
-     * @var string
-     */
-    public $note;
-    /**
-     * The final component of the resource name of a branch. This field must be
-     * one of "0", "1" or "2". Otherwise, an INVALID_ARGUMENT error is returned.
-     * If there are no sufficient active products in the targeted branch and force
-     * is not set, a FAILED_PRECONDITION error is returned.
-     *
-     * @param string $branchId
-     */
-    public function setBranchId($branchId)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2SetDefaultBranchRequest extends \Google\Model
     {
+        /**
+         * The final component of the resource name of a branch. This field must be
+         * one of "0", "1" or "2". Otherwise, an INVALID_ARGUMENT error is returned.
+         * If there are no sufficient active products in the targeted branch and force
+         * is not set, a FAILED_PRECONDITION error is returned.
+         *
+         * @var string
+         */
+        public $branchId;
+        /**
+         * If set to true, it permits switching to a branch with branch_id even if it
+         * has no sufficient active products.
+         *
+         * @var bool
+         */
+        public $force;
+        /**
+         * Some note on this request, this can be retrieved by
+         * CatalogService.GetDefaultBranch before next valid default branch set
+         * occurs. This field must be a UTF-8 encoded string with a length limit of
+         * 1,000 characters. Otherwise, an INVALID_ARGUMENT error is returned.
+         *
+         * @var string
+         */
+        public $note;
+        /**
+         * The final component of the resource name of a branch. This field must be
+         * one of "0", "1" or "2". Otherwise, an INVALID_ARGUMENT error is returned.
+         * If there are no sufficient active products in the targeted branch and force
+         * is not set, a FAILED_PRECONDITION error is returned.
+         *
+         * @param string $branchId
+         */
+        public function setBranchId($branchId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBranchId()
+        {
+        }
+        /**
+         * If set to true, it permits switching to a branch with branch_id even if it
+         * has no sufficient active products.
+         *
+         * @param bool $force
+         */
+        public function setForce($force)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getForce()
+        {
+        }
+        /**
+         * Some note on this request, this can be retrieved by
+         * CatalogService.GetDefaultBranch before next valid default branch set
+         * occurs. This field must be a UTF-8 encoded string with a length limit of
+         * 1,000 characters. Otherwise, an INVALID_ARGUMENT error is returned.
+         *
+         * @param string $note
+         */
+        public function setNote($note)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNote()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2SetDefaultBranchRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBranchId()
-    {
-    }
-    /**
-     * If set to true, it permits switching to a branch with branch_id even if it
-     * has no sufficient active products.
-     *
-     * @param bool $force
-     */
-    public function setForce($force)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getForce()
-    {
-    }
-    /**
-     * Some note on this request, this can be retrieved by
-     * CatalogService.GetDefaultBranch before next valid default branch set
-     * occurs. This field must be a UTF-8 encoded string with a length limit of
-     * 1,000 characters. Otherwise, an INVALID_ARGUMENT error is returned.
-     *
-     * @param string $note
-     */
-    public function setNote($note)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNote()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2SetDefaultBranchRequest extends \Google\Service\CloudRetail\GoogleCloudRetailV2SetDefaultBranchRequest
     {
     }
 }

@@ -21,162 +21,171 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class SoftwarePackage extends \Google\Model
-{
-    protected $aptPackageType = VersionedPackage::class;
-    protected $aptPackageDataType = '';
-    protected $cosPackageType = VersionedPackage::class;
-    protected $cosPackageDataType = '';
-    protected $googetPackageType = VersionedPackage::class;
-    protected $googetPackageDataType = '';
-    protected $qfePackageType = WindowsQuickFixEngineeringPackage::class;
-    protected $qfePackageDataType = '';
-    protected $windowsApplicationType = WindowsApplication::class;
-    protected $windowsApplicationDataType = '';
-    protected $wuaPackageType = WindowsUpdatePackage::class;
-    protected $wuaPackageDataType = '';
-    protected $yumPackageType = VersionedPackage::class;
-    protected $yumPackageDataType = '';
-    protected $zypperPackageType = VersionedPackage::class;
-    protected $zypperPackageDataType = '';
-    protected $zypperPatchType = ZypperPatch::class;
-    protected $zypperPatchDataType = '';
-    /**
-     * Details of an APT package. For details about the apt package manager, see
-     * https://wiki.debian.org/Apt.
-     *
-     * @param VersionedPackage $aptPackage
-     */
-    public function setAptPackage(VersionedPackage $aptPackage)
+namespace Google\Service\CloudAsset {
+    class SoftwarePackage extends \Google\Model
     {
+        protected $aptPackageType = VersionedPackage::class;
+        protected $aptPackageDataType = '';
+        protected $cosPackageType = VersionedPackage::class;
+        protected $cosPackageDataType = '';
+        protected $googetPackageType = VersionedPackage::class;
+        protected $googetPackageDataType = '';
+        protected $qfePackageType = WindowsQuickFixEngineeringPackage::class;
+        protected $qfePackageDataType = '';
+        protected $windowsApplicationType = WindowsApplication::class;
+        protected $windowsApplicationDataType = '';
+        protected $wuaPackageType = WindowsUpdatePackage::class;
+        protected $wuaPackageDataType = '';
+        protected $yumPackageType = VersionedPackage::class;
+        protected $yumPackageDataType = '';
+        protected $zypperPackageType = VersionedPackage::class;
+        protected $zypperPackageDataType = '';
+        protected $zypperPatchType = ZypperPatch::class;
+        protected $zypperPatchDataType = '';
+        /**
+         * Details of an APT package. For details about the apt package manager, see
+         * https://wiki.debian.org/Apt.
+         *
+         * @param VersionedPackage $aptPackage
+         */
+        public function setAptPackage(VersionedPackage $aptPackage)
+        {
+        }
+        /**
+         * @return VersionedPackage
+         */
+        public function getAptPackage()
+        {
+        }
+        /**
+         * Details of a COS package.
+         *
+         * @param VersionedPackage $cosPackage
+         */
+        public function setCosPackage(VersionedPackage $cosPackage)
+        {
+        }
+        /**
+         * @return VersionedPackage
+         */
+        public function getCosPackage()
+        {
+        }
+        /**
+         * Details of a Googet package. For details about the googet package manager,
+         * see https://github.com/google/googet.
+         *
+         * @param VersionedPackage $googetPackage
+         */
+        public function setGoogetPackage(VersionedPackage $googetPackage)
+        {
+        }
+        /**
+         * @return VersionedPackage
+         */
+        public function getGoogetPackage()
+        {
+        }
+        /**
+         * Details of a Windows Quick Fix engineering package. See
+         * https://docs.microsoft.com/en-
+         * us/windows/win32/cimwin32prov/win32-quickfixengineering for info in Windows
+         * Quick Fix Engineering.
+         *
+         * @param WindowsQuickFixEngineeringPackage $qfePackage
+         */
+        public function setQfePackage(WindowsQuickFixEngineeringPackage $qfePackage)
+        {
+        }
+        /**
+         * @return WindowsQuickFixEngineeringPackage
+         */
+        public function getQfePackage()
+        {
+        }
+        /**
+         * Details of Windows Application.
+         *
+         * @param WindowsApplication $windowsApplication
+         */
+        public function setWindowsApplication(WindowsApplication $windowsApplication)
+        {
+        }
+        /**
+         * @return WindowsApplication
+         */
+        public function getWindowsApplication()
+        {
+        }
+        /**
+         * Details of a Windows Update package. See https://docs.microsoft.com/en-
+         * us/windows/win32/api/_wua/ for information about Windows Update.
+         *
+         * @param WindowsUpdatePackage $wuaPackage
+         */
+        public function setWuaPackage(WindowsUpdatePackage $wuaPackage)
+        {
+        }
+        /**
+         * @return WindowsUpdatePackage
+         */
+        public function getWuaPackage()
+        {
+        }
+        /**
+         * Yum package info. For details about the yum package manager, see
+         * https://access.redhat.com/documentation/en-
+         * us/red_hat_enterprise_linux/6/html/deployment_guide/ch-yum.
+         *
+         * @param VersionedPackage $yumPackage
+         */
+        public function setYumPackage(VersionedPackage $yumPackage)
+        {
+        }
+        /**
+         * @return VersionedPackage
+         */
+        public function getYumPackage()
+        {
+        }
+        /**
+         * Details of a Zypper package. For details about the Zypper package manager,
+         * see https://en.opensuse.org/SDB:Zypper_manual.
+         *
+         * @param VersionedPackage $zypperPackage
+         */
+        public function setZypperPackage(VersionedPackage $zypperPackage)
+        {
+        }
+        /**
+         * @return VersionedPackage
+         */
+        public function getZypperPackage()
+        {
+        }
+        /**
+         * Details of a Zypper patch. For details about the Zypper package manager,
+         * see https://en.opensuse.org/SDB:Zypper_manual.
+         *
+         * @param ZypperPatch $zypperPatch
+         */
+        public function setZypperPatch(ZypperPatch $zypperPatch)
+        {
+        }
+        /**
+         * @return ZypperPatch
+         */
+        public function getZypperPatch()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return VersionedPackage
+     * Runtime class alias of \Google\Service\CloudAsset\SoftwarePackage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAptPackage()
-    {
-    }
-    /**
-     * Details of a COS package.
-     *
-     * @param VersionedPackage $cosPackage
-     */
-    public function setCosPackage(VersionedPackage $cosPackage)
-    {
-    }
-    /**
-     * @return VersionedPackage
-     */
-    public function getCosPackage()
-    {
-    }
-    /**
-     * Details of a Googet package. For details about the googet package manager,
-     * see https://github.com/google/googet.
-     *
-     * @param VersionedPackage $googetPackage
-     */
-    public function setGoogetPackage(VersionedPackage $googetPackage)
-    {
-    }
-    /**
-     * @return VersionedPackage
-     */
-    public function getGoogetPackage()
-    {
-    }
-    /**
-     * Details of a Windows Quick Fix engineering package. See
-     * https://docs.microsoft.com/en-
-     * us/windows/win32/cimwin32prov/win32-quickfixengineering for info in Windows
-     * Quick Fix Engineering.
-     *
-     * @param WindowsQuickFixEngineeringPackage $qfePackage
-     */
-    public function setQfePackage(WindowsQuickFixEngineeringPackage $qfePackage)
-    {
-    }
-    /**
-     * @return WindowsQuickFixEngineeringPackage
-     */
-    public function getQfePackage()
-    {
-    }
-    /**
-     * Details of Windows Application.
-     *
-     * @param WindowsApplication $windowsApplication
-     */
-    public function setWindowsApplication(WindowsApplication $windowsApplication)
-    {
-    }
-    /**
-     * @return WindowsApplication
-     */
-    public function getWindowsApplication()
-    {
-    }
-    /**
-     * Details of a Windows Update package. See https://docs.microsoft.com/en-
-     * us/windows/win32/api/_wua/ for information about Windows Update.
-     *
-     * @param WindowsUpdatePackage $wuaPackage
-     */
-    public function setWuaPackage(WindowsUpdatePackage $wuaPackage)
-    {
-    }
-    /**
-     * @return WindowsUpdatePackage
-     */
-    public function getWuaPackage()
-    {
-    }
-    /**
-     * Yum package info. For details about the yum package manager, see
-     * https://access.redhat.com/documentation/en-
-     * us/red_hat_enterprise_linux/6/html/deployment_guide/ch-yum.
-     *
-     * @param VersionedPackage $yumPackage
-     */
-    public function setYumPackage(VersionedPackage $yumPackage)
-    {
-    }
-    /**
-     * @return VersionedPackage
-     */
-    public function getYumPackage()
-    {
-    }
-    /**
-     * Details of a Zypper package. For details about the Zypper package manager,
-     * see https://en.opensuse.org/SDB:Zypper_manual.
-     *
-     * @param VersionedPackage $zypperPackage
-     */
-    public function setZypperPackage(VersionedPackage $zypperPackage)
-    {
-    }
-    /**
-     * @return VersionedPackage
-     */
-    public function getZypperPackage()
-    {
-    }
-    /**
-     * Details of a Zypper patch. For details about the Zypper package manager,
-     * see https://en.opensuse.org/SDB:Zypper_manual.
-     *
-     * @param ZypperPatch $zypperPatch
-     */
-    public function setZypperPatch(ZypperPatch $zypperPatch)
-    {
-    }
-    /**
-     * @return ZypperPatch
-     */
-    public function getZypperPatch()
+    class Google_Service_CloudAsset_SoftwarePackage extends \Google\Service\CloudAsset\SoftwarePackage
     {
     }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ReadTensorboardUsageResponse extends \Google\Model
-{
-    protected $monthlyUsageDataType = GoogleCloudAiplatformV1ReadTensorboardUsageResponsePerMonthUsageData::class;
-    protected $monthlyUsageDataDataType = 'map';
-    /**
-     * Maps year-month (YYYYMM) string to per month usage data.
-     *
-     * @param GoogleCloudAiplatformV1ReadTensorboardUsageResponsePerMonthUsageData[] $monthlyUsageData
-     */
-    public function setMonthlyUsageData($monthlyUsageData)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ReadTensorboardUsageResponse extends \Google\Model
     {
+        protected $monthlyUsageDataType = GoogleCloudAiplatformV1ReadTensorboardUsageResponsePerMonthUsageData::class;
+        protected $monthlyUsageDataDataType = 'map';
+        /**
+         * Maps year-month (YYYYMM) string to per month usage data.
+         *
+         * @param GoogleCloudAiplatformV1ReadTensorboardUsageResponsePerMonthUsageData[] $monthlyUsageData
+         */
+        public function setMonthlyUsageData($monthlyUsageData)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ReadTensorboardUsageResponsePerMonthUsageData[]
+         */
+        public function getMonthlyUsageData()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1ReadTensorboardUsageResponsePerMonthUsageData[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ReadTensorboardUsageResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMonthlyUsageData()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ReadTensorboardUsageResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ReadTensorboardUsageResponse
     {
     }
 }

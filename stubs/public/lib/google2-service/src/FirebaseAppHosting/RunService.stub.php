@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseAppHosting;
-
-class RunService extends \Google\Model
-{
-    /**
-     * Optional. The name of the Cloud Run [`service`](https://cloud.google.com/ru
-     * n/docs/reference/rest/v2/projects.locations.services#resource:-service), in
-     * the format: `projects/{project}/locations/{location}/services/{serviceId}`
-     *
-     * @var string
-     */
-    public $service;
-    /**
-     * Optional. The name of the Cloud Run [`service`](https://cloud.google.com/ru
-     * n/docs/reference/rest/v2/projects.locations.services#resource:-service), in
-     * the format: `projects/{project}/locations/{location}/services/{serviceId}`
-     *
-     * @param string $service
-     */
-    public function setService($service)
+namespace Google\Service\FirebaseAppHosting {
+    class RunService extends \Google\Model
     {
+        /**
+         * Optional. The name of the Cloud Run [`service`](https://cloud.google.com/ru
+         * n/docs/reference/rest/v2/projects.locations.services#resource:-service), in
+         * the format: `projects/{project}/locations/{location}/services/{serviceId}`
+         *
+         * @var string
+         */
+        public $service;
+        /**
+         * Optional. The name of the Cloud Run [`service`](https://cloud.google.com/ru
+         * n/docs/reference/rest/v2/projects.locations.services#resource:-service), in
+         * the format: `projects/{project}/locations/{location}/services/{serviceId}`
+         *
+         * @param string $service
+         */
+        public function setService($service)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getService()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\FirebaseAppHosting\RunService registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getService()
+    class Google_Service_FirebaseAppHosting_RunService extends \Google\Service\FirebaseAppHosting\RunService
     {
     }
 }

@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0ResourcesCampaignSelectiveOptimization extends \Google\Collection
-{
-    protected $collection_key = 'conversionActions';
-    /**
-     * The selected set of resource names for conversion actions for optimizing
-     * this campaign.
-     *
-     * @var string[]
-     */
-    public $conversionActions;
-    /**
-     * The selected set of resource names for conversion actions for optimizing
-     * this campaign.
-     *
-     * @param string[] $conversionActions
-     */
-    public function setConversionActions($conversionActions)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0ResourcesCampaignSelectiveOptimization extends \Google\Collection
     {
+        protected $collection_key = 'conversionActions';
+        /**
+         * The selected set of resource names for conversion actions for optimizing
+         * this campaign.
+         *
+         * @var string[]
+         */
+        public $conversionActions;
+        /**
+         * The selected set of resource names for conversion actions for optimizing
+         * this campaign.
+         *
+         * @param string[] $conversionActions
+         */
+        public function setConversionActions($conversionActions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getConversionActions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0ResourcesCampaignSelectiveOptimization registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConversionActions()
+    class Google_Service_SA360_GoogleAdsSearchads360V0ResourcesCampaignSelectiveOptimization extends \Google\Service\SA360\GoogleAdsSearchads360V0ResourcesCampaignSelectiveOptimization
     {
     }
 }

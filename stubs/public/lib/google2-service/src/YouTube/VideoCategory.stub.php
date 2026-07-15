@@ -21,87 +21,96 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class VideoCategory extends \Google\Model
-{
-    /**
-     * Etag of this resource.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * The ID that YouTube uses to uniquely identify the video category.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "youtube#videoCategory".
-     *
-     * @var string
-     */
-    public $kind;
-    protected $snippetType = VideoCategorySnippet::class;
-    protected $snippetDataType = '';
-    /**
-     * Etag of this resource.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
+namespace Google\Service\YouTube {
+    class VideoCategory extends \Google\Model
     {
+        /**
+         * Etag of this resource.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * The ID that YouTube uses to uniquely identify the video category.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "youtube#videoCategory".
+         *
+         * @var string
+         */
+        public $kind;
+        protected $snippetType = VideoCategorySnippet::class;
+        protected $snippetDataType = '';
+        /**
+         * Etag of this resource.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * The ID that YouTube uses to uniquely identify the video category.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "youtube#videoCategory".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The snippet object contains basic details about the video category,
+         * including its title.
+         *
+         * @param VideoCategorySnippet $snippet
+         */
+        public function setSnippet(VideoCategorySnippet $snippet)
+        {
+        }
+        /**
+         * @return VideoCategorySnippet
+         */
+        public function getSnippet()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\VideoCategory registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
-    {
-    }
-    /**
-     * The ID that YouTube uses to uniquely identify the video category.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "youtube#videoCategory".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The snippet object contains basic details about the video category,
-     * including its title.
-     *
-     * @param VideoCategorySnippet $snippet
-     */
-    public function setSnippet(VideoCategorySnippet $snippet)
-    {
-    }
-    /**
-     * @return VideoCategorySnippet
-     */
-    public function getSnippet()
+    class Google_Service_YouTube_VideoCategory extends \Google\Service\YouTube\VideoCategory
     {
     }
 }

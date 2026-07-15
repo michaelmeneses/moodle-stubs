@@ -21,206 +21,215 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Backupdr;
-
-class AccessConfig extends \Google\Model
-{
-    /**
-     * Default value. This value is unused.
-     */
-    public const NETWORK_TIER_NETWORK_TIER_UNSPECIFIED = 'NETWORK_TIER_UNSPECIFIED';
-    /**
-     * High quality, Google-grade network tier, support for all networking
-     * products.
-     */
-    public const NETWORK_TIER_PREMIUM = 'PREMIUM';
-    /**
-     * Public internet quality, only limited support for other networking
-     * products.
-     */
-    public const NETWORK_TIER_STANDARD = 'STANDARD';
-    /**
-     * Default value. This value is unused.
-     */
-    public const TYPE_ACCESS_TYPE_UNSPECIFIED = 'ACCESS_TYPE_UNSPECIFIED';
-    /**
-     * ONE_TO_ONE_NAT
-     */
-    public const TYPE_ONE_TO_ONE_NAT = 'ONE_TO_ONE_NAT';
-    /**
-     * Direct IPv6 access.
-     */
-    public const TYPE_DIRECT_IPV6 = 'DIRECT_IPV6';
-    /**
-     * Optional. The external IPv6 address of this access configuration.
-     *
-     * @var string
-     */
-    public $externalIpv6;
-    /**
-     * Optional. The prefix length of the external IPv6 range.
-     *
-     * @var int
-     */
-    public $externalIpv6PrefixLength;
-    /**
-     * Optional. The name of this access configuration.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optional. The external IP address of this access configuration.
-     *
-     * @var string
-     */
-    public $natIP;
-    /**
-     * Optional. This signifies the networking tier used for configuring this
-     * access
-     *
-     * @var string
-     */
-    public $networkTier;
-    /**
-     * Optional. The DNS domain name for the public PTR record.
-     *
-     * @var string
-     */
-    public $publicPtrDomainName;
-    /**
-     * Optional. Specifies whether a public DNS 'PTR' record should be created to
-     * map the external IP address of the instance to a DNS domain name.
-     *
-     * @var bool
-     */
-    public $setPublicPtr;
-    /**
-     * Optional. In accessConfigs (IPv4), the default and only option is
-     * ONE_TO_ONE_NAT. In ipv6AccessConfigs, the default and only option is
-     * DIRECT_IPV6.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Optional. The external IPv6 address of this access configuration.
-     *
-     * @param string $externalIpv6
-     */
-    public function setExternalIpv6($externalIpv6)
+namespace Google\Service\Backupdr {
+    class AccessConfig extends \Google\Model
     {
+        /**
+         * Default value. This value is unused.
+         */
+        public const NETWORK_TIER_NETWORK_TIER_UNSPECIFIED = 'NETWORK_TIER_UNSPECIFIED';
+        /**
+         * High quality, Google-grade network tier, support for all networking
+         * products.
+         */
+        public const NETWORK_TIER_PREMIUM = 'PREMIUM';
+        /**
+         * Public internet quality, only limited support for other networking
+         * products.
+         */
+        public const NETWORK_TIER_STANDARD = 'STANDARD';
+        /**
+         * Default value. This value is unused.
+         */
+        public const TYPE_ACCESS_TYPE_UNSPECIFIED = 'ACCESS_TYPE_UNSPECIFIED';
+        /**
+         * ONE_TO_ONE_NAT
+         */
+        public const TYPE_ONE_TO_ONE_NAT = 'ONE_TO_ONE_NAT';
+        /**
+         * Direct IPv6 access.
+         */
+        public const TYPE_DIRECT_IPV6 = 'DIRECT_IPV6';
+        /**
+         * Optional. The external IPv6 address of this access configuration.
+         *
+         * @var string
+         */
+        public $externalIpv6;
+        /**
+         * Optional. The prefix length of the external IPv6 range.
+         *
+         * @var int
+         */
+        public $externalIpv6PrefixLength;
+        /**
+         * Optional. The name of this access configuration.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optional. The external IP address of this access configuration.
+         *
+         * @var string
+         */
+        public $natIP;
+        /**
+         * Optional. This signifies the networking tier used for configuring this
+         * access
+         *
+         * @var string
+         */
+        public $networkTier;
+        /**
+         * Optional. The DNS domain name for the public PTR record.
+         *
+         * @var string
+         */
+        public $publicPtrDomainName;
+        /**
+         * Optional. Specifies whether a public DNS 'PTR' record should be created to
+         * map the external IP address of the instance to a DNS domain name.
+         *
+         * @var bool
+         */
+        public $setPublicPtr;
+        /**
+         * Optional. In accessConfigs (IPv4), the default and only option is
+         * ONE_TO_ONE_NAT. In ipv6AccessConfigs, the default and only option is
+         * DIRECT_IPV6.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Optional. The external IPv6 address of this access configuration.
+         *
+         * @param string $externalIpv6
+         */
+        public function setExternalIpv6($externalIpv6)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExternalIpv6()
+        {
+        }
+        /**
+         * Optional. The prefix length of the external IPv6 range.
+         *
+         * @param int $externalIpv6PrefixLength
+         */
+        public function setExternalIpv6PrefixLength($externalIpv6PrefixLength)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getExternalIpv6PrefixLength()
+        {
+        }
+        /**
+         * Optional. The name of this access configuration.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. The external IP address of this access configuration.
+         *
+         * @param string $natIP
+         */
+        public function setNatIP($natIP)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNatIP()
+        {
+        }
+        /**
+         * Optional. This signifies the networking tier used for configuring this
+         * access
+         *
+         * Accepted values: NETWORK_TIER_UNSPECIFIED, PREMIUM, STANDARD
+         *
+         * @param self::NETWORK_TIER_* $networkTier
+         */
+        public function setNetworkTier($networkTier)
+        {
+        }
+        /**
+         * @return self::NETWORK_TIER_*
+         */
+        public function getNetworkTier()
+        {
+        }
+        /**
+         * Optional. The DNS domain name for the public PTR record.
+         *
+         * @param string $publicPtrDomainName
+         */
+        public function setPublicPtrDomainName($publicPtrDomainName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPublicPtrDomainName()
+        {
+        }
+        /**
+         * Optional. Specifies whether a public DNS 'PTR' record should be created to
+         * map the external IP address of the instance to a DNS domain name.
+         *
+         * @param bool $setPublicPtr
+         */
+        public function setSetPublicPtr($setPublicPtr)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSetPublicPtr()
+        {
+        }
+        /**
+         * Optional. In accessConfigs (IPv4), the default and only option is
+         * ONE_TO_ONE_NAT. In ipv6AccessConfigs, the default and only option is
+         * DIRECT_IPV6.
+         *
+         * Accepted values: ACCESS_TYPE_UNSPECIFIED, ONE_TO_ONE_NAT, DIRECT_IPV6
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Backupdr\AccessConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExternalIpv6()
-    {
-    }
-    /**
-     * Optional. The prefix length of the external IPv6 range.
-     *
-     * @param int $externalIpv6PrefixLength
-     */
-    public function setExternalIpv6PrefixLength($externalIpv6PrefixLength)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getExternalIpv6PrefixLength()
-    {
-    }
-    /**
-     * Optional. The name of this access configuration.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. The external IP address of this access configuration.
-     *
-     * @param string $natIP
-     */
-    public function setNatIP($natIP)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNatIP()
-    {
-    }
-    /**
-     * Optional. This signifies the networking tier used for configuring this
-     * access
-     *
-     * Accepted values: NETWORK_TIER_UNSPECIFIED, PREMIUM, STANDARD
-     *
-     * @param self::NETWORK_TIER_* $networkTier
-     */
-    public function setNetworkTier($networkTier)
-    {
-    }
-    /**
-     * @return self::NETWORK_TIER_*
-     */
-    public function getNetworkTier()
-    {
-    }
-    /**
-     * Optional. The DNS domain name for the public PTR record.
-     *
-     * @param string $publicPtrDomainName
-     */
-    public function setPublicPtrDomainName($publicPtrDomainName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPublicPtrDomainName()
-    {
-    }
-    /**
-     * Optional. Specifies whether a public DNS 'PTR' record should be created to
-     * map the external IP address of the instance to a DNS domain name.
-     *
-     * @param bool $setPublicPtr
-     */
-    public function setSetPublicPtr($setPublicPtr)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSetPublicPtr()
-    {
-    }
-    /**
-     * Optional. In accessConfigs (IPv4), the default and only option is
-     * ONE_TO_ONE_NAT. In ipv6AccessConfigs, the default and only option is
-     * DIRECT_IPV6.
-     *
-     * Accepted values: ACCESS_TYPE_UNSPECIFIED, ONE_TO_ONE_NAT, DIRECT_IPV6
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_Backupdr_AccessConfig extends \Google\Service\Backupdr\AccessConfig
     {
     }
 }

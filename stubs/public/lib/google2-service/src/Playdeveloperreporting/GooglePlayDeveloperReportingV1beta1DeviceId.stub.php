@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Playdeveloperreporting;
-
-class GooglePlayDeveloperReportingV1beta1DeviceId extends \Google\Model
-{
-    /**
-     * Value of Build.BRAND.
-     *
-     * @var string
-     */
-    public $buildBrand;
-    /**
-     * Value of Build.DEVICE.
-     *
-     * @var string
-     */
-    public $buildDevice;
-    /**
-     * Value of Build.BRAND.
-     *
-     * @param string $buildBrand
-     */
-    public function setBuildBrand($buildBrand)
+namespace Google\Service\Playdeveloperreporting {
+    class GooglePlayDeveloperReportingV1beta1DeviceId extends \Google\Model
     {
+        /**
+         * Value of Build.BRAND.
+         *
+         * @var string
+         */
+        public $buildBrand;
+        /**
+         * Value of Build.DEVICE.
+         *
+         * @var string
+         */
+        public $buildDevice;
+        /**
+         * Value of Build.BRAND.
+         *
+         * @param string $buildBrand
+         */
+        public function setBuildBrand($buildBrand)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBuildBrand()
+        {
+        }
+        /**
+         * Value of Build.DEVICE.
+         *
+         * @param string $buildDevice
+         */
+        public function setBuildDevice($buildDevice)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBuildDevice()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1DeviceId registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBuildBrand()
-    {
-    }
-    /**
-     * Value of Build.DEVICE.
-     *
-     * @param string $buildDevice
-     */
-    public function setBuildDevice($buildDevice)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBuildDevice()
+    class Google_Service_Playdeveloperreporting_GooglePlayDeveloperReportingV1beta1DeviceId extends \Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1DeviceId
     {
     }
 }

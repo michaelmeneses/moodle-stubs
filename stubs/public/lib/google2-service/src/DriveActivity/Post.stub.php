@@ -21,59 +21,68 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveActivity;
-
-class Post extends \Google\Model
-{
-    /**
-     * Subtype not available.
-     */
-    public const SUBTYPE_SUBTYPE_UNSPECIFIED = 'SUBTYPE_UNSPECIFIED';
-    /**
-     * A post was added.
-     */
-    public const SUBTYPE_ADDED = 'ADDED';
-    /**
-     * A post was deleted.
-     */
-    public const SUBTYPE_DELETED = 'DELETED';
-    /**
-     * A reply was added.
-     */
-    public const SUBTYPE_REPLY_ADDED = 'REPLY_ADDED';
-    /**
-     * A reply was deleted.
-     */
-    public const SUBTYPE_REPLY_DELETED = 'REPLY_DELETED';
-    /**
-     * A posted comment was resolved.
-     */
-    public const SUBTYPE_RESOLVED = 'RESOLVED';
-    /**
-     * A posted comment was reopened.
-     */
-    public const SUBTYPE_REOPENED = 'REOPENED';
-    /**
-     * The sub-type of this event.
-     *
-     * @var string
-     */
-    public $subtype;
-    /**
-     * The sub-type of this event.
-     *
-     * Accepted values: SUBTYPE_UNSPECIFIED, ADDED, DELETED, REPLY_ADDED,
-     * REPLY_DELETED, RESOLVED, REOPENED
-     *
-     * @param self::SUBTYPE_* $subtype
-     */
-    public function setSubtype($subtype)
+namespace Google\Service\DriveActivity {
+    class Post extends \Google\Model
     {
+        /**
+         * Subtype not available.
+         */
+        public const SUBTYPE_SUBTYPE_UNSPECIFIED = 'SUBTYPE_UNSPECIFIED';
+        /**
+         * A post was added.
+         */
+        public const SUBTYPE_ADDED = 'ADDED';
+        /**
+         * A post was deleted.
+         */
+        public const SUBTYPE_DELETED = 'DELETED';
+        /**
+         * A reply was added.
+         */
+        public const SUBTYPE_REPLY_ADDED = 'REPLY_ADDED';
+        /**
+         * A reply was deleted.
+         */
+        public const SUBTYPE_REPLY_DELETED = 'REPLY_DELETED';
+        /**
+         * A posted comment was resolved.
+         */
+        public const SUBTYPE_RESOLVED = 'RESOLVED';
+        /**
+         * A posted comment was reopened.
+         */
+        public const SUBTYPE_REOPENED = 'REOPENED';
+        /**
+         * The sub-type of this event.
+         *
+         * @var string
+         */
+        public $subtype;
+        /**
+         * The sub-type of this event.
+         *
+         * Accepted values: SUBTYPE_UNSPECIFIED, ADDED, DELETED, REPLY_ADDED,
+         * REPLY_DELETED, RESOLVED, REOPENED
+         *
+         * @param self::SUBTYPE_* $subtype
+         */
+        public function setSubtype($subtype)
+        {
+        }
+        /**
+         * @return self::SUBTYPE_*
+         */
+        public function getSubtype()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::SUBTYPE_*
+     * Runtime class alias of \Google\Service\DriveActivity\Post registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSubtype()
+    class Google_Service_DriveActivity_Post extends \Google\Service\DriveActivity\Post
     {
     }
 }

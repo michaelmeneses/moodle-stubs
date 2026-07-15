@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class HttpFaultInjection extends \Google\Model
-{
-    protected $abortType = HttpFaultAbort::class;
-    protected $abortDataType = '';
-    protected $delayType = HttpFaultDelay::class;
-    protected $delayDataType = '';
-    /**
-     * The specification for how client requests are aborted as part of fault
-     * injection.
-     *
-     * @param HttpFaultAbort $abort
-     */
-    public function setAbort(HttpFaultAbort $abort)
+namespace Google\Service\Compute {
+    class HttpFaultInjection extends \Google\Model
     {
+        protected $abortType = HttpFaultAbort::class;
+        protected $abortDataType = '';
+        protected $delayType = HttpFaultDelay::class;
+        protected $delayDataType = '';
+        /**
+         * The specification for how client requests are aborted as part of fault
+         * injection.
+         *
+         * @param HttpFaultAbort $abort
+         */
+        public function setAbort(HttpFaultAbort $abort)
+        {
+        }
+        /**
+         * @return HttpFaultAbort
+         */
+        public function getAbort()
+        {
+        }
+        /**
+         * The specification for how client requests are delayed as part of fault
+         * injection, before being sent to a backend service.
+         *
+         * @param HttpFaultDelay $delay
+         */
+        public function setDelay(HttpFaultDelay $delay)
+        {
+        }
+        /**
+         * @return HttpFaultDelay
+         */
+        public function getDelay()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return HttpFaultAbort
+     * Runtime class alias of \Google\Service\Compute\HttpFaultInjection registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAbort()
-    {
-    }
-    /**
-     * The specification for how client requests are delayed as part of fault
-     * injection, before being sent to a backend service.
-     *
-     * @param HttpFaultDelay $delay
-     */
-    public function setDelay(HttpFaultDelay $delay)
-    {
-    }
-    /**
-     * @return HttpFaultDelay
-     */
-    public function getDelay()
+    class Google_Service_Compute_HttpFaultInjection extends \Google\Service\Compute\HttpFaultInjection
     {
     }
 }

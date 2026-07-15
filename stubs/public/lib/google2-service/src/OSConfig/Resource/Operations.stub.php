@@ -21,51 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OSConfig\Resource;
-
-/**
- * The "operations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $osconfigService = new Google\Service\OSConfig(...);
- *   $operations = $osconfigService->operations;
- *  </code>
- */
-class Operations extends \Google\Service\Resource
-{
+namespace Google\Service\OSConfig\Resource {
+    use Google\Service\OSConfig\ListOperationsResponse;
+    use Google\Service\OSConfig\OsconfigEmpty;
     /**
-     * Deletes a long-running operation. This method indicates that the client is no
-     * longer interested in the operation result. It does not cancel the operation.
-     * If the server doesn't support this method, it returns
-     * `google.rpc.Code.UNIMPLEMENTED`. (operations.delete)
-     *
-     * @param string $name The name of the operation resource to be deleted.
-     * @param array $optParams Optional parameters.
-     * @return OsconfigEmpty
+     * The "operations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $osconfigService = new Google\Service\OSConfig(...);
+     *   $operations = $osconfigService->operations;
+     *  </code>
      */
-    public function delete($name, $optParams = [])
+    class Operations extends \Google\Service\Resource
     {
+        /**
+         * Deletes a long-running operation. This method indicates that the client is no
+         * longer interested in the operation result. It does not cancel the operation.
+         * If the server doesn't support this method, it returns
+         * `google.rpc.Code.UNIMPLEMENTED`. (operations.delete)
+         *
+         * @param string $name The name of the operation resource to be deleted.
+         * @param array $optParams Optional parameters.
+         * @return OsconfigEmpty
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists operations that match the specified filter in the request. If the
+         * server doesn't support this method, it returns `UNIMPLEMENTED`. NOTE: the
+         * `name` binding allows API services to override the binding to use different
+         * resource name schemes, such as `users/operations`. To override the binding,
+         * API services can add a binding such as `"/v1/{name=users}/operations"` to
+         * their service configuration. For backwards compatibility, the default name
+         * includes the operations collection id, however overriding users must ensure
+         * the name binding is the parent resource, without the operations collection
+         * id. (operations.listOperations)
+         *
+         * @param string $name The name of the operation's parent resource.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter The standard list filter.
+         * @opt_param int pageSize The standard list page size.
+         * @opt_param string pageToken The standard list page token.
+         * @return ListOperationsResponse
+         */
+        public function listOperations($name, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists operations that match the specified filter in the request. If the
-     * server doesn't support this method, it returns `UNIMPLEMENTED`. NOTE: the
-     * `name` binding allows API services to override the binding to use different
-     * resource name schemes, such as `users/operations`. To override the binding,
-     * API services can add a binding such as `"/v1/{name=users}/operations"` to
-     * their service configuration. For backwards compatibility, the default name
-     * includes the operations collection id, however overriding users must ensure
-     * the name binding is the parent resource, without the operations collection
-     * id. (operations.listOperations)
-     *
-     * @param string $name The name of the operation's parent resource.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter The standard list filter.
-     * @opt_param int pageSize The standard list page size.
-     * @opt_param string pageToken The standard list page token.
-     * @return ListOperationsResponse
+     * Runtime class alias of \Google\Service\OSConfig\Resource\Operations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listOperations($name, $optParams = [])
+    class Google_Service_OSConfig_Resource_Operations extends \Google\Service\OSConfig\Resource\Operations
     {
     }
 }

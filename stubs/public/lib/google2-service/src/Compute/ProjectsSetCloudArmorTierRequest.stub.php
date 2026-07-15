@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class ProjectsSetCloudArmorTierRequest extends \Google\Model
-{
-    /**
-     * Enterprise tier protection billed annually.
-     */
-    public const CLOUD_ARMOR_TIER_CA_ENTERPRISE_ANNUAL = 'CA_ENTERPRISE_ANNUAL';
-    /**
-     * Enterprise tier protection billed monthly.
-     */
-    public const CLOUD_ARMOR_TIER_CA_ENTERPRISE_PAYGO = 'CA_ENTERPRISE_PAYGO';
-    /**
-     * Standard protection.
-     */
-    public const CLOUD_ARMOR_TIER_CA_STANDARD = 'CA_STANDARD';
-    /**
-     * Managed protection tier to be set.
-     *
-     * @var string
-     */
-    public $cloudArmorTier;
-    /**
-     * Managed protection tier to be set.
-     *
-     * Accepted values: CA_ENTERPRISE_ANNUAL, CA_ENTERPRISE_PAYGO, CA_STANDARD
-     *
-     * @param self::CLOUD_ARMOR_TIER_* $cloudArmorTier
-     */
-    public function setCloudArmorTier($cloudArmorTier)
+namespace Google\Service\Compute {
+    class ProjectsSetCloudArmorTierRequest extends \Google\Model
     {
+        /**
+         * Enterprise tier protection billed annually.
+         */
+        public const CLOUD_ARMOR_TIER_CA_ENTERPRISE_ANNUAL = 'CA_ENTERPRISE_ANNUAL';
+        /**
+         * Enterprise tier protection billed monthly.
+         */
+        public const CLOUD_ARMOR_TIER_CA_ENTERPRISE_PAYGO = 'CA_ENTERPRISE_PAYGO';
+        /**
+         * Standard protection.
+         */
+        public const CLOUD_ARMOR_TIER_CA_STANDARD = 'CA_STANDARD';
+        /**
+         * Managed protection tier to be set.
+         *
+         * @var string
+         */
+        public $cloudArmorTier;
+        /**
+         * Managed protection tier to be set.
+         *
+         * Accepted values: CA_ENTERPRISE_ANNUAL, CA_ENTERPRISE_PAYGO, CA_STANDARD
+         *
+         * @param self::CLOUD_ARMOR_TIER_* $cloudArmorTier
+         */
+        public function setCloudArmorTier($cloudArmorTier)
+        {
+        }
+        /**
+         * @return self::CLOUD_ARMOR_TIER_*
+         */
+        public function getCloudArmorTier()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::CLOUD_ARMOR_TIER_*
+     * Runtime class alias of \Google\Service\Compute\ProjectsSetCloudArmorTierRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCloudArmorTier()
+    class Google_Service_Compute_ProjectsSetCloudArmorTierRequest extends \Google\Service\Compute\ProjectsSetCloudArmorTierRequest
     {
     }
 }

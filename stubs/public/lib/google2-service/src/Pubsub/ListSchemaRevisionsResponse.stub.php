@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Pubsub;
-
-class ListSchemaRevisionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'schemas';
-    /**
-     * A token that can be sent as `page_token` to retrieve the next page. If this
-     * field is empty, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $schemasType = Schema::class;
-    protected $schemasDataType = 'array';
-    /**
-     * A token that can be sent as `page_token` to retrieve the next page. If this
-     * field is empty, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Pubsub {
+    class ListSchemaRevisionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'schemas';
+        /**
+         * A token that can be sent as `page_token` to retrieve the next page. If this
+         * field is empty, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $schemasType = Schema::class;
+        protected $schemasDataType = 'array';
+        /**
+         * A token that can be sent as `page_token` to retrieve the next page. If this
+         * field is empty, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The revisions of the schema.
+         *
+         * @param Schema[] $schemas
+         */
+        public function setSchemas($schemas)
+        {
+        }
+        /**
+         * @return Schema[]
+         */
+        public function getSchemas()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Pubsub\ListSchemaRevisionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The revisions of the schema.
-     *
-     * @param Schema[] $schemas
-     */
-    public function setSchemas($schemas)
-    {
-    }
-    /**
-     * @return Schema[]
-     */
-    public function getSchemas()
+    class Google_Service_Pubsub_ListSchemaRevisionsResponse extends \Google\Service\Pubsub\ListSchemaRevisionsResponse
     {
     }
 }

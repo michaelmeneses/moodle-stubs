@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GameServices;
-
-class CounterOptions extends \Google\Collection
-{
-    protected $collection_key = 'customFields';
-    protected $customFieldsType = CustomField::class;
-    protected $customFieldsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $field;
-    /**
-     * @var string
-     */
-    public $metric;
-    /**
-     * @param CustomField[]
-     */
-    public function setCustomFields($customFields)
+namespace Google\Service\GameServices {
+    class CounterOptions extends \Google\Collection
     {
+        protected $collection_key = 'customFields';
+        protected $customFieldsType = CustomField::class;
+        protected $customFieldsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $field;
+        /**
+         * @var string
+         */
+        public $metric;
+        /**
+         * @param CustomField[]
+         */
+        public function setCustomFields($customFields)
+        {
+        }
+        /**
+         * @return CustomField[]
+         */
+        public function getCustomFields()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setField($field)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getField()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMetric($metric)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMetric()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CustomField[]
+     * Runtime class alias of \Google\Service\GameServices\CounterOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomFields()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setField($field)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getField()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMetric($metric)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMetric()
+    class Google_Service_GameServices_CounterOptions extends \Google\Service\GameServices\CounterOptions
     {
     }
 }

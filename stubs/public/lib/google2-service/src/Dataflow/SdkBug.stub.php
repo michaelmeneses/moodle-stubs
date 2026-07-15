@@ -21,107 +21,116 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class SdkBug extends \Google\Model
-{
-    /**
-     * A bug of unknown severity.
-     */
-    public const SEVERITY_SEVERITY_UNSPECIFIED = 'SEVERITY_UNSPECIFIED';
-    /**
-     * A minor bug that that may reduce reliability or performance for some jobs.
-     * Impact will be minimal or non-existent for most jobs.
-     */
-    public const SEVERITY_NOTICE = 'NOTICE';
-    /**
-     * A bug that has some likelihood of causing performance degradation, data
-     * loss, or job failures.
-     */
-    public const SEVERITY_WARNING = 'WARNING';
-    /**
-     * A bug with extremely significant impact. Jobs may fail erroneously,
-     * performance may be severely degraded, and data loss may be very likely.
-     */
-    public const SEVERITY_SEVERE = 'SEVERE';
-    /**
-     * Unknown issue with this SDK.
-     */
-    public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
-    /**
-     * Catch-all for SDK bugs that don't fit in the below categories.
-     */
-    public const TYPE_GENERAL = 'GENERAL';
-    /**
-     * Using this version of the SDK may result in degraded performance.
-     */
-    public const TYPE_PERFORMANCE = 'PERFORMANCE';
-    /**
-     * Using this version of the SDK may cause data loss.
-     */
-    public const TYPE_DATALOSS = 'DATALOSS';
-    /**
-     * Output only. How severe the SDK bug is.
-     *
-     * @var string
-     */
-    public $severity;
-    /**
-     * Output only. Describes the impact of this SDK bug.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Output only. Link to more information on the bug.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * Output only. How severe the SDK bug is.
-     *
-     * Accepted values: SEVERITY_UNSPECIFIED, NOTICE, WARNING, SEVERE
-     *
-     * @param self::SEVERITY_* $severity
-     */
-    public function setSeverity($severity)
+namespace Google\Service\Dataflow {
+    class SdkBug extends \Google\Model
     {
+        /**
+         * A bug of unknown severity.
+         */
+        public const SEVERITY_SEVERITY_UNSPECIFIED = 'SEVERITY_UNSPECIFIED';
+        /**
+         * A minor bug that that may reduce reliability or performance for some jobs.
+         * Impact will be minimal or non-existent for most jobs.
+         */
+        public const SEVERITY_NOTICE = 'NOTICE';
+        /**
+         * A bug that has some likelihood of causing performance degradation, data
+         * loss, or job failures.
+         */
+        public const SEVERITY_WARNING = 'WARNING';
+        /**
+         * A bug with extremely significant impact. Jobs may fail erroneously,
+         * performance may be severely degraded, and data loss may be very likely.
+         */
+        public const SEVERITY_SEVERE = 'SEVERE';
+        /**
+         * Unknown issue with this SDK.
+         */
+        public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
+        /**
+         * Catch-all for SDK bugs that don't fit in the below categories.
+         */
+        public const TYPE_GENERAL = 'GENERAL';
+        /**
+         * Using this version of the SDK may result in degraded performance.
+         */
+        public const TYPE_PERFORMANCE = 'PERFORMANCE';
+        /**
+         * Using this version of the SDK may cause data loss.
+         */
+        public const TYPE_DATALOSS = 'DATALOSS';
+        /**
+         * Output only. How severe the SDK bug is.
+         *
+         * @var string
+         */
+        public $severity;
+        /**
+         * Output only. Describes the impact of this SDK bug.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Output only. Link to more information on the bug.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * Output only. How severe the SDK bug is.
+         *
+         * Accepted values: SEVERITY_UNSPECIFIED, NOTICE, WARNING, SEVERE
+         *
+         * @param self::SEVERITY_* $severity
+         */
+        public function setSeverity($severity)
+        {
+        }
+        /**
+         * @return self::SEVERITY_*
+         */
+        public function getSeverity()
+        {
+        }
+        /**
+         * Output only. Describes the impact of this SDK bug.
+         *
+         * Accepted values: TYPE_UNSPECIFIED, GENERAL, PERFORMANCE, DATALOSS
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
+        /**
+         * Output only. Link to more information on the bug.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::SEVERITY_*
+     * Runtime class alias of \Google\Service\Dataflow\SdkBug registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSeverity()
-    {
-    }
-    /**
-     * Output only. Describes the impact of this SDK bug.
-     *
-     * Accepted values: TYPE_UNSPECIFIED, GENERAL, PERFORMANCE, DATALOSS
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
-    {
-    }
-    /**
-     * Output only. Link to more information on the bug.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_Dataflow_SdkBug extends \Google\Service\Dataflow\SdkBug
     {
     }
 }

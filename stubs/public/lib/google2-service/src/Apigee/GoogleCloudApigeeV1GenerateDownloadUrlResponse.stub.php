@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1GenerateDownloadUrlResponse extends \Google\Model
-{
-    /**
-     * The Google Cloud Storage signed URL that can be used to download the
-     * Archive zip file.
-     *
-     * @var string
-     */
-    public $downloadUri;
-    /**
-     * The Google Cloud Storage signed URL that can be used to download the
-     * Archive zip file.
-     *
-     * @param string $downloadUri
-     */
-    public function setDownloadUri($downloadUri)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1GenerateDownloadUrlResponse extends \Google\Model
     {
+        /**
+         * The Google Cloud Storage signed URL that can be used to download the
+         * Archive zip file.
+         *
+         * @var string
+         */
+        public $downloadUri;
+        /**
+         * The Google Cloud Storage signed URL that can be used to download the
+         * Archive zip file.
+         *
+         * @param string $downloadUri
+         */
+        public function setDownloadUri($downloadUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDownloadUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1GenerateDownloadUrlResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDownloadUri()
+    class Google_Service_Apigee_GoogleCloudApigeeV1GenerateDownloadUrlResponse extends \Google\Service\Apigee\GoogleCloudApigeeV1GenerateDownloadUrlResponse
     {
     }
 }

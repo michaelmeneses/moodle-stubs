@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBillingBudget;
-
-class GoogleCloudBillingBudgetsV1CustomPeriod extends \Google\Model
-{
-    protected $endDateType = GoogleTypeDate::class;
-    protected $endDateDataType = '';
-    protected $startDateType = GoogleTypeDate::class;
-    protected $startDateDataType = '';
-    /**
-     * Optional. The end date of the time period. Budgets with elapsed end date
-     * won't be processed. If unset, specifies to track all usage incurred since
-     * the start_date.
-     *
-     * @param GoogleTypeDate $endDate
-     */
-    public function setEndDate(GoogleTypeDate $endDate)
+namespace Google\Service\CloudBillingBudget {
+    class GoogleCloudBillingBudgetsV1CustomPeriod extends \Google\Model
     {
+        protected $endDateType = GoogleTypeDate::class;
+        protected $endDateDataType = '';
+        protected $startDateType = GoogleTypeDate::class;
+        protected $startDateDataType = '';
+        /**
+         * Optional. The end date of the time period. Budgets with elapsed end date
+         * won't be processed. If unset, specifies to track all usage incurred since
+         * the start_date.
+         *
+         * @param GoogleTypeDate $endDate
+         */
+        public function setEndDate(GoogleTypeDate $endDate)
+        {
+        }
+        /**
+         * @return GoogleTypeDate
+         */
+        public function getEndDate()
+        {
+        }
+        /**
+         * Required. The start date must be after January 1, 2017.
+         *
+         * @param GoogleTypeDate $startDate
+         */
+        public function setStartDate(GoogleTypeDate $startDate)
+        {
+        }
+        /**
+         * @return GoogleTypeDate
+         */
+        public function getStartDate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleTypeDate
+     * Runtime class alias of \Google\Service\CloudBillingBudget\GoogleCloudBillingBudgetsV1CustomPeriod registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndDate()
-    {
-    }
-    /**
-     * Required. The start date must be after January 1, 2017.
-     *
-     * @param GoogleTypeDate $startDate
-     */
-    public function setStartDate(GoogleTypeDate $startDate)
-    {
-    }
-    /**
-     * @return GoogleTypeDate
-     */
-    public function getStartDate()
+    class Google_Service_CloudBillingBudget_GoogleCloudBillingBudgetsV1CustomPeriod extends \Google\Service\CloudBillingBudget\GoogleCloudBillingBudgetsV1CustomPeriod
     {
     }
 }

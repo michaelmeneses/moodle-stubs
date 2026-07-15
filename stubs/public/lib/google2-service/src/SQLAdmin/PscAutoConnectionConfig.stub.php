@@ -21,120 +21,129 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class PscAutoConnectionConfig extends \Google\Model
-{
-    /**
-     * Optional. The consumer network of this consumer endpoint. This must be a
-     * resource path that includes both the host project and the network name. For
-     * example, `projects/project1/global/networks/network1`. The consumer host
-     * project of this network might be different from the consumer service
-     * project.
-     *
-     * @var string
-     */
-    public $consumerNetwork;
-    /**
-     * The connection policy status of the consumer network.
-     *
-     * @var string
-     */
-    public $consumerNetworkStatus;
-    /**
-     * Optional. This is the project ID of consumer service project of this
-     * consumer endpoint. Optional. This is only applicable if consumer_network is
-     * a shared vpc network.
-     *
-     * @var string
-     */
-    public $consumerProject;
-    /**
-     * The IP address of the consumer endpoint.
-     *
-     * @var string
-     */
-    public $ipAddress;
-    /**
-     * The connection status of the consumer endpoint.
-     *
-     * @var string
-     */
-    public $status;
-    /**
-     * Optional. The consumer network of this consumer endpoint. This must be a
-     * resource path that includes both the host project and the network name. For
-     * example, `projects/project1/global/networks/network1`. The consumer host
-     * project of this network might be different from the consumer service
-     * project.
-     *
-     * @param string $consumerNetwork
-     */
-    public function setConsumerNetwork($consumerNetwork)
+namespace Google\Service\SQLAdmin {
+    class PscAutoConnectionConfig extends \Google\Model
     {
+        /**
+         * Optional. The consumer network of this consumer endpoint. This must be a
+         * resource path that includes both the host project and the network name. For
+         * example, `projects/project1/global/networks/network1`. The consumer host
+         * project of this network might be different from the consumer service
+         * project.
+         *
+         * @var string
+         */
+        public $consumerNetwork;
+        /**
+         * The connection policy status of the consumer network.
+         *
+         * @var string
+         */
+        public $consumerNetworkStatus;
+        /**
+         * Optional. This is the project ID of consumer service project of this
+         * consumer endpoint. Optional. This is only applicable if consumer_network is
+         * a shared vpc network.
+         *
+         * @var string
+         */
+        public $consumerProject;
+        /**
+         * The IP address of the consumer endpoint.
+         *
+         * @var string
+         */
+        public $ipAddress;
+        /**
+         * The connection status of the consumer endpoint.
+         *
+         * @var string
+         */
+        public $status;
+        /**
+         * Optional. The consumer network of this consumer endpoint. This must be a
+         * resource path that includes both the host project and the network name. For
+         * example, `projects/project1/global/networks/network1`. The consumer host
+         * project of this network might be different from the consumer service
+         * project.
+         *
+         * @param string $consumerNetwork
+         */
+        public function setConsumerNetwork($consumerNetwork)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConsumerNetwork()
+        {
+        }
+        /**
+         * The connection policy status of the consumer network.
+         *
+         * @param string $consumerNetworkStatus
+         */
+        public function setConsumerNetworkStatus($consumerNetworkStatus)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConsumerNetworkStatus()
+        {
+        }
+        /**
+         * Optional. This is the project ID of consumer service project of this
+         * consumer endpoint. Optional. This is only applicable if consumer_network is
+         * a shared vpc network.
+         *
+         * @param string $consumerProject
+         */
+        public function setConsumerProject($consumerProject)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConsumerProject()
+        {
+        }
+        /**
+         * The IP address of the consumer endpoint.
+         *
+         * @param string $ipAddress
+         */
+        public function setIpAddress($ipAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIpAddress()
+        {
+        }
+        /**
+         * The connection status of the consumer endpoint.
+         *
+         * @param string $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SQLAdmin\PscAutoConnectionConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConsumerNetwork()
-    {
-    }
-    /**
-     * The connection policy status of the consumer network.
-     *
-     * @param string $consumerNetworkStatus
-     */
-    public function setConsumerNetworkStatus($consumerNetworkStatus)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getConsumerNetworkStatus()
-    {
-    }
-    /**
-     * Optional. This is the project ID of consumer service project of this
-     * consumer endpoint. Optional. This is only applicable if consumer_network is
-     * a shared vpc network.
-     *
-     * @param string $consumerProject
-     */
-    public function setConsumerProject($consumerProject)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getConsumerProject()
-    {
-    }
-    /**
-     * The IP address of the consumer endpoint.
-     *
-     * @param string $ipAddress
-     */
-    public function setIpAddress($ipAddress)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIpAddress()
-    {
-    }
-    /**
-     * The connection status of the consumer endpoint.
-     *
-     * @param string $status
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStatus()
+    class Google_Service_SQLAdmin_PscAutoConnectionConfig extends \Google\Service\SQLAdmin\PscAutoConnectionConfig
     {
     }
 }

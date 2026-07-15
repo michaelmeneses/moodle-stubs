@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class BackendServiceUsedBy extends \Google\Model
-{
-    /**
-     * Output only. [Output Only] Server-defined URL for resources referencing
-     * given BackendService like UrlMaps, TargetTcpProxies, TargetSslProxies and
-     * ForwardingRule.
-     *
-     * @var string
-     */
-    public $reference;
-    /**
-     * Output only. [Output Only] Server-defined URL for resources referencing
-     * given BackendService like UrlMaps, TargetTcpProxies, TargetSslProxies and
-     * ForwardingRule.
-     *
-     * @param string $reference
-     */
-    public function setReference($reference)
+namespace Google\Service\Compute {
+    class BackendServiceUsedBy extends \Google\Model
     {
+        /**
+         * Output only. [Output Only] Server-defined URL for resources referencing
+         * given BackendService like UrlMaps, TargetTcpProxies, TargetSslProxies and
+         * ForwardingRule.
+         *
+         * @var string
+         */
+        public $reference;
+        /**
+         * Output only. [Output Only] Server-defined URL for resources referencing
+         * given BackendService like UrlMaps, TargetTcpProxies, TargetSslProxies and
+         * ForwardingRule.
+         *
+         * @param string $reference
+         */
+        public function setReference($reference)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReference()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\BackendServiceUsedBy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReference()
+    class Google_Service_Compute_BackendServiceUsedBy extends \Google\Service\Compute\BackendServiceUsedBy
     {
     }
 }

@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AppHub;
-
-class Scope extends \Google\Model
-{
-    /**
-     * Unspecified type.
-     */
-    public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
-    /**
-     * Regional type.
-     */
-    public const TYPE_REGIONAL = 'REGIONAL';
-    /**
-     * Global type.
-     */
-    public const TYPE_GLOBAL = 'GLOBAL';
-    /**
-     * Required. Scope Type.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Required. Scope Type.
-     *
-     * Accepted values: TYPE_UNSPECIFIED, REGIONAL, GLOBAL
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
+namespace Google\Service\AppHub {
+    class Scope extends \Google\Model
     {
+        /**
+         * Unspecified type.
+         */
+        public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
+        /**
+         * Regional type.
+         */
+        public const TYPE_REGIONAL = 'REGIONAL';
+        /**
+         * Global type.
+         */
+        public const TYPE_GLOBAL = 'GLOBAL';
+        /**
+         * Required. Scope Type.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Required. Scope Type.
+         *
+         * Accepted values: TYPE_UNSPECIFIED, REGIONAL, GLOBAL
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::TYPE_*
+     * Runtime class alias of \Google\Service\AppHub\Scope registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getType()
+    class Google_Service_AppHub_Scope extends \Google\Service\AppHub\Scope
     {
     }
 }

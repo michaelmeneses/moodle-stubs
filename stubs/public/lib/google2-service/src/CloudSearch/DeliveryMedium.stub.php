@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class DeliveryMedium extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $mediumType;
-    protected $selfPhoneType = VoicePhoneNumber::class;
-    protected $selfPhoneDataType = '';
-    /**
-     * @param string
-     */
-    public function setMediumType($mediumType)
+namespace Google\Service\CloudSearch {
+    class DeliveryMedium extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $mediumType;
+        protected $selfPhoneType = VoicePhoneNumber::class;
+        protected $selfPhoneDataType = '';
+        /**
+         * @param string
+         */
+        public function setMediumType($mediumType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMediumType()
+        {
+        }
+        /**
+         * @param VoicePhoneNumber
+         */
+        public function setSelfPhone(VoicePhoneNumber $selfPhone)
+        {
+        }
+        /**
+         * @return VoicePhoneNumber
+         */
+        public function getSelfPhone()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\DeliveryMedium registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMediumType()
-    {
-    }
-    /**
-     * @param VoicePhoneNumber
-     */
-    public function setSelfPhone(VoicePhoneNumber $selfPhone)
-    {
-    }
-    /**
-     * @return VoicePhoneNumber
-     */
-    public function getSelfPhone()
+    class Google_Service_CloudSearch_DeliveryMedium extends \Google\Service\CloudSearch\DeliveryMedium
     {
     }
 }

@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2IntentMessageCarouselSelect extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    protected $itemsType = GoogleCloudDialogflowV2IntentMessageCarouselSelectItem::class;
-    protected $itemsDataType = 'array';
-    /**
-     * Required. Carousel items.
-     *
-     * @param GoogleCloudDialogflowV2IntentMessageCarouselSelectItem[] $items
-     */
-    public function setItems($items)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2IntentMessageCarouselSelect extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        protected $itemsType = GoogleCloudDialogflowV2IntentMessageCarouselSelectItem::class;
+        protected $itemsDataType = 'array';
+        /**
+         * Required. Carousel items.
+         *
+         * @param GoogleCloudDialogflowV2IntentMessageCarouselSelectItem[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2IntentMessageCarouselSelectItem[]
+         */
+        public function getItems()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowV2IntentMessageCarouselSelectItem[]
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2IntentMessageCarouselSelect registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItems()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2IntentMessageCarouselSelect extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2IntentMessageCarouselSelect
     {
     }
 }

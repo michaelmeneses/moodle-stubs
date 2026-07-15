@@ -21,102 +21,111 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaRecommendRequest extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $filter;
-    /**
-     * @var int
-     */
-    public $pageSize;
-    /**
-     * @var array[]
-     */
-    public $params;
-    protected $userEventType = GoogleCloudDiscoveryengineV1betaUserEvent::class;
-    protected $userEventDataType = '';
-    /**
-     * @var string[]
-     */
-    public $userLabels;
-    /**
-     * @var bool
-     */
-    public $validateOnly;
-    /**
-     * @param string
-     */
-    public function setFilter($filter)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaRecommendRequest extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $filter;
+        /**
+         * @var int
+         */
+        public $pageSize;
+        /**
+         * @var array[]
+         */
+        public $params;
+        protected $userEventType = GoogleCloudDiscoveryengineV1betaUserEvent::class;
+        protected $userEventDataType = '';
+        /**
+         * @var string[]
+         */
+        public $userLabels;
+        /**
+         * @var bool
+         */
+        public $validateOnly;
+        /**
+         * @param string
+         */
+        public function setFilter($filter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilter()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setPageSize($pageSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPageSize()
+        {
+        }
+        /**
+         * @param array[]
+         */
+        public function setParams($params)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getParams()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaUserEvent
+         */
+        public function setUserEvent(GoogleCloudDiscoveryengineV1betaUserEvent $userEvent)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaUserEvent
+         */
+        public function getUserEvent()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setUserLabels($userLabels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUserLabels()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setValidateOnly($validateOnly)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getValidateOnly()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaRecommendRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFilter()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setPageSize($pageSize)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPageSize()
-    {
-    }
-    /**
-     * @param array[]
-     */
-    public function setParams($params)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getParams()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaUserEvent
-     */
-    public function setUserEvent(GoogleCloudDiscoveryengineV1betaUserEvent $userEvent)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaUserEvent
-     */
-    public function getUserEvent()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setUserLabels($userLabels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUserLabels()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setValidateOnly($validateOnly)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getValidateOnly()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaRecommendRequest extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaRecommendRequest
     {
     }
 }

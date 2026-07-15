@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2KnowledgeAssistAnswerKnowledgeAnswerGenerativeSource extends \Google\Collection
-{
-    protected $collection_key = 'snippets';
-    protected $snippetsType = GoogleCloudDialogflowV2KnowledgeAssistAnswerKnowledgeAnswerGenerativeSourceSnippet::class;
-    protected $snippetsDataType = 'array';
-    /**
-     * All snippets used for this Generative Prediction, with their source URI and
-     * data.
-     *
-     * @param GoogleCloudDialogflowV2KnowledgeAssistAnswerKnowledgeAnswerGenerativeSourceSnippet[] $snippets
-     */
-    public function setSnippets($snippets)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2KnowledgeAssistAnswerKnowledgeAnswerGenerativeSource extends \Google\Collection
     {
+        protected $collection_key = 'snippets';
+        protected $snippetsType = GoogleCloudDialogflowV2KnowledgeAssistAnswerKnowledgeAnswerGenerativeSourceSnippet::class;
+        protected $snippetsDataType = 'array';
+        /**
+         * All snippets used for this Generative Prediction, with their source URI and
+         * data.
+         *
+         * @param GoogleCloudDialogflowV2KnowledgeAssistAnswerKnowledgeAnswerGenerativeSourceSnippet[] $snippets
+         */
+        public function setSnippets($snippets)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2KnowledgeAssistAnswerKnowledgeAnswerGenerativeSourceSnippet[]
+         */
+        public function getSnippets()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowV2KnowledgeAssistAnswerKnowledgeAnswerGenerativeSourceSnippet[]
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2KnowledgeAssistAnswerKnowledgeAnswerGenerativeSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSnippets()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2KnowledgeAssistAnswerKnowledgeAnswerGenerativeSource extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2KnowledgeAssistAnswerKnowledgeAnswerGenerativeSource
     {
     }
 }

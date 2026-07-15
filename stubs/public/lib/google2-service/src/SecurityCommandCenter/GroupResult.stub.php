@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GroupResult extends \Google\Model
-{
-    /**
-     * Total count of resources for the given properties.
-     *
-     * @var string
-     */
-    public $count;
-    /**
-     * Properties matching the groupBy fields in the request.
-     *
-     * @var array[]
-     */
-    public $properties;
-    /**
-     * Total count of resources for the given properties.
-     *
-     * @param string $count
-     */
-    public function setCount($count)
+namespace Google\Service\SecurityCommandCenter {
+    class GroupResult extends \Google\Model
     {
+        /**
+         * Total count of resources for the given properties.
+         *
+         * @var string
+         */
+        public $count;
+        /**
+         * Properties matching the groupBy fields in the request.
+         *
+         * @var array[]
+         */
+        public $properties;
+        /**
+         * Total count of resources for the given properties.
+         *
+         * @param string $count
+         */
+        public function setCount($count)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCount()
+        {
+        }
+        /**
+         * Properties matching the groupBy fields in the request.
+         *
+         * @param array[] $properties
+         */
+        public function setProperties($properties)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getProperties()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GroupResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCount()
-    {
-    }
-    /**
-     * Properties matching the groupBy fields in the request.
-     *
-     * @param array[] $properties
-     */
-    public function setProperties($properties)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getProperties()
+    class Google_Service_SecurityCommandCenter_GroupResult extends \Google\Service\SecurityCommandCenter\GroupResult
     {
     }
 }

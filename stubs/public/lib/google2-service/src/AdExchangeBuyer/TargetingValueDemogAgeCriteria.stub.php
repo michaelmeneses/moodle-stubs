@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer;
-
-class TargetingValueDemogAgeCriteria extends \Google\Collection
-{
-    protected $collection_key = 'demogAgeCriteriaIds';
-    public $demogAgeCriteriaIds;
-    public function setDemogAgeCriteriaIds($demogAgeCriteriaIds)
+namespace Google\Service\AdExchangeBuyer {
+    class TargetingValueDemogAgeCriteria extends \Google\Collection
     {
+        protected $collection_key = 'demogAgeCriteriaIds';
+        public $demogAgeCriteriaIds;
+        public function setDemogAgeCriteriaIds($demogAgeCriteriaIds)
+        {
+        }
+        public function getDemogAgeCriteriaIds()
+        {
+        }
     }
-    public function getDemogAgeCriteriaIds()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\TargetingValueDemogAgeCriteria registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AdExchangeBuyer_TargetingValueDemogAgeCriteria extends \Google\Service\AdExchangeBuyer\TargetingValueDemogAgeCriteria
     {
     }
 }

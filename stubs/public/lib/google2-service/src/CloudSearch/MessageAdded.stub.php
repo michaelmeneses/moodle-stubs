@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class MessageAdded extends \Google\Collection
-{
-    protected $collection_key = 'syncIds';
-    /**
-     * @var string[]
-     */
-    public $attributeIds;
-    /**
-     * @var string[]
-     */
-    public $labelIds;
-    protected $messageKeyType = MultiKey::class;
-    protected $messageKeyDataType = '';
-    /**
-     * @var string[]
-     */
-    public $syncIds;
-    /**
-     * @param string[]
-     */
-    public function setAttributeIds($attributeIds)
+namespace Google\Service\CloudSearch {
+    class MessageAdded extends \Google\Collection
     {
+        protected $collection_key = 'syncIds';
+        /**
+         * @var string[]
+         */
+        public $attributeIds;
+        /**
+         * @var string[]
+         */
+        public $labelIds;
+        protected $messageKeyType = MultiKey::class;
+        protected $messageKeyDataType = '';
+        /**
+         * @var string[]
+         */
+        public $syncIds;
+        /**
+         * @param string[]
+         */
+        public function setAttributeIds($attributeIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAttributeIds()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setLabelIds($labelIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabelIds()
+        {
+        }
+        /**
+         * @param MultiKey
+         */
+        public function setMessageKey(MultiKey $messageKey)
+        {
+        }
+        /**
+         * @return MultiKey
+         */
+        public function getMessageKey()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setSyncIds($syncIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSyncIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudSearch\MessageAdded registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttributeIds()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setLabelIds($labelIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabelIds()
-    {
-    }
-    /**
-     * @param MultiKey
-     */
-    public function setMessageKey(MultiKey $messageKey)
-    {
-    }
-    /**
-     * @return MultiKey
-     */
-    public function getMessageKey()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setSyncIds($syncIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSyncIds()
+    class Google_Service_CloudSearch_MessageAdded extends \Google\Service\CloudSearch\MessageAdded
     {
     }
 }

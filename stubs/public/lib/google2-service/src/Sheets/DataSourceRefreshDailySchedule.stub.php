@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class DataSourceRefreshDailySchedule extends \Google\Model
-{
-    protected $startTimeType = TimeOfDay::class;
-    protected $startTimeDataType = '';
-    /**
-     * The start time of a time interval in which a data source refresh is
-     * scheduled. Only `hours` part is used. The time interval size defaults to
-     * that in the Sheets editor.
-     *
-     * @param TimeOfDay $startTime
-     */
-    public function setStartTime(TimeOfDay $startTime)
+namespace Google\Service\Sheets {
+    class DataSourceRefreshDailySchedule extends \Google\Model
     {
+        protected $startTimeType = TimeOfDay::class;
+        protected $startTimeDataType = '';
+        /**
+         * The start time of a time interval in which a data source refresh is
+         * scheduled. Only `hours` part is used. The time interval size defaults to
+         * that in the Sheets editor.
+         *
+         * @param TimeOfDay $startTime
+         */
+        public function setStartTime(TimeOfDay $startTime)
+        {
+        }
+        /**
+         * @return TimeOfDay
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TimeOfDay
+     * Runtime class alias of \Google\Service\Sheets\DataSourceRefreshDailySchedule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStartTime()
+    class Google_Service_Sheets_DataSourceRefreshDailySchedule extends \Google\Service\Sheets\DataSourceRefreshDailySchedule
     {
     }
 }

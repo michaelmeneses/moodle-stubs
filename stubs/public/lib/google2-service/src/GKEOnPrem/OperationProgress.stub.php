@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class OperationProgress extends \Google\Collection
-{
-    protected $collection_key = 'stages';
-    protected $stagesType = OperationStage::class;
-    protected $stagesDataType = 'array';
-    /**
-     * The stages of the operation.
-     *
-     * @param OperationStage[] $stages
-     */
-    public function setStages($stages)
+namespace Google\Service\GKEOnPrem {
+    class OperationProgress extends \Google\Collection
     {
+        protected $collection_key = 'stages';
+        protected $stagesType = OperationStage::class;
+        protected $stagesDataType = 'array';
+        /**
+         * The stages of the operation.
+         *
+         * @param OperationStage[] $stages
+         */
+        public function setStages($stages)
+        {
+        }
+        /**
+         * @return OperationStage[]
+         */
+        public function getStages()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return OperationStage[]
+     * Runtime class alias of \Google\Service\GKEOnPrem\OperationProgress registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStages()
+    class Google_Service_GKEOnPrem_OperationProgress extends \Google\Service\GKEOnPrem\OperationProgress
     {
     }
 }

@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Appengine;
-
-class NetworkUtilization extends \Google\Model
-{
-    /**
-     * Target bytes received per second.
-     *
-     * @var int
-     */
-    public $targetReceivedBytesPerSecond;
-    /**
-     * Target packets received per second.
-     *
-     * @var int
-     */
-    public $targetReceivedPacketsPerSecond;
-    /**
-     * Target bytes sent per second.
-     *
-     * @var int
-     */
-    public $targetSentBytesPerSecond;
-    /**
-     * Target packets sent per second.
-     *
-     * @var int
-     */
-    public $targetSentPacketsPerSecond;
-    /**
-     * Target bytes received per second.
-     *
-     * @param int $targetReceivedBytesPerSecond
-     */
-    public function setTargetReceivedBytesPerSecond($targetReceivedBytesPerSecond)
+namespace Google\Service\Appengine {
+    class NetworkUtilization extends \Google\Model
     {
+        /**
+         * Target bytes received per second.
+         *
+         * @var int
+         */
+        public $targetReceivedBytesPerSecond;
+        /**
+         * Target packets received per second.
+         *
+         * @var int
+         */
+        public $targetReceivedPacketsPerSecond;
+        /**
+         * Target bytes sent per second.
+         *
+         * @var int
+         */
+        public $targetSentBytesPerSecond;
+        /**
+         * Target packets sent per second.
+         *
+         * @var int
+         */
+        public $targetSentPacketsPerSecond;
+        /**
+         * Target bytes received per second.
+         *
+         * @param int $targetReceivedBytesPerSecond
+         */
+        public function setTargetReceivedBytesPerSecond($targetReceivedBytesPerSecond)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTargetReceivedBytesPerSecond()
+        {
+        }
+        /**
+         * Target packets received per second.
+         *
+         * @param int $targetReceivedPacketsPerSecond
+         */
+        public function setTargetReceivedPacketsPerSecond($targetReceivedPacketsPerSecond)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTargetReceivedPacketsPerSecond()
+        {
+        }
+        /**
+         * Target bytes sent per second.
+         *
+         * @param int $targetSentBytesPerSecond
+         */
+        public function setTargetSentBytesPerSecond($targetSentBytesPerSecond)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTargetSentBytesPerSecond()
+        {
+        }
+        /**
+         * Target packets sent per second.
+         *
+         * @param int $targetSentPacketsPerSecond
+         */
+        public function setTargetSentPacketsPerSecond($targetSentPacketsPerSecond)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTargetSentPacketsPerSecond()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Appengine\NetworkUtilization registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTargetReceivedBytesPerSecond()
-    {
-    }
-    /**
-     * Target packets received per second.
-     *
-     * @param int $targetReceivedPacketsPerSecond
-     */
-    public function setTargetReceivedPacketsPerSecond($targetReceivedPacketsPerSecond)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTargetReceivedPacketsPerSecond()
-    {
-    }
-    /**
-     * Target bytes sent per second.
-     *
-     * @param int $targetSentBytesPerSecond
-     */
-    public function setTargetSentBytesPerSecond($targetSentBytesPerSecond)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTargetSentBytesPerSecond()
-    {
-    }
-    /**
-     * Target packets sent per second.
-     *
-     * @param int $targetSentPacketsPerSecond
-     */
-    public function setTargetSentPacketsPerSecond($targetSentPacketsPerSecond)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTargetSentPacketsPerSecond()
+    class Google_Service_Appengine_NetworkUtilization extends \Google\Service\Appengine\NetworkUtilization
     {
     }
 }

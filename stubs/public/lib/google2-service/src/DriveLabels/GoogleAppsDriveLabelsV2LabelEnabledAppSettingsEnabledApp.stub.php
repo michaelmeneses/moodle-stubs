@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveLabels;
-
-class GoogleAppsDriveLabelsV2LabelEnabledAppSettingsEnabledApp extends \Google\Model
-{
-    /**
-     * Unspecified
-     */
-    public const APP_APP_UNSPECIFIED = 'APP_UNSPECIFIED';
-    /**
-     * Drive
-     */
-    public const APP_DRIVE = 'DRIVE';
-    /**
-     * Gmail
-     */
-    public const APP_GMAIL = 'GMAIL';
-    /**
-     * Optional. The name of the app.
-     *
-     * @var string
-     */
-    public $app;
-    /**
-     * Optional. The name of the app.
-     *
-     * Accepted values: APP_UNSPECIFIED, DRIVE, GMAIL
-     *
-     * @param self::APP_* $app
-     */
-    public function setApp($app)
+namespace Google\Service\DriveLabels {
+    class GoogleAppsDriveLabelsV2LabelEnabledAppSettingsEnabledApp extends \Google\Model
     {
+        /**
+         * Unspecified
+         */
+        public const APP_APP_UNSPECIFIED = 'APP_UNSPECIFIED';
+        /**
+         * Drive
+         */
+        public const APP_DRIVE = 'DRIVE';
+        /**
+         * Gmail
+         */
+        public const APP_GMAIL = 'GMAIL';
+        /**
+         * Optional. The name of the app.
+         *
+         * @var string
+         */
+        public $app;
+        /**
+         * Optional. The name of the app.
+         *
+         * Accepted values: APP_UNSPECIFIED, DRIVE, GMAIL
+         *
+         * @param self::APP_* $app
+         */
+        public function setApp($app)
+        {
+        }
+        /**
+         * @return self::APP_*
+         */
+        public function getApp()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::APP_*
+     * Runtime class alias of \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2LabelEnabledAppSettingsEnabledApp registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApp()
+    class Google_Service_DriveLabels_GoogleAppsDriveLabelsV2LabelEnabledAppSettingsEnabledApp extends \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2LabelEnabledAppSettingsEnabledApp
     {
     }
 }

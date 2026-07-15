@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1CalculateStatsResponseTimeSeries extends \Google\Collection
-{
-    protected $collection_key = 'points';
-    /**
-     * The duration of each interval.
-     *
-     * @var string
-     */
-    public $intervalDuration;
-    protected $pointsType = GoogleCloudContactcenterinsightsV1CalculateStatsResponseTimeSeriesInterval::class;
-    protected $pointsDataType = 'array';
-    /**
-     * The duration of each interval.
-     *
-     * @param string $intervalDuration
-     */
-    public function setIntervalDuration($intervalDuration)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1CalculateStatsResponseTimeSeries extends \Google\Collection
     {
+        protected $collection_key = 'points';
+        /**
+         * The duration of each interval.
+         *
+         * @var string
+         */
+        public $intervalDuration;
+        protected $pointsType = GoogleCloudContactcenterinsightsV1CalculateStatsResponseTimeSeriesInterval::class;
+        protected $pointsDataType = 'array';
+        /**
+         * The duration of each interval.
+         *
+         * @param string $intervalDuration
+         */
+        public function setIntervalDuration($intervalDuration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIntervalDuration()
+        {
+        }
+        /**
+         * An ordered list of intervals from earliest to latest, where each interval
+         * represents the number of conversations that transpired during the time
+         * window.
+         *
+         * @param GoogleCloudContactcenterinsightsV1CalculateStatsResponseTimeSeriesInterval[] $points
+         */
+        public function setPoints($points)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1CalculateStatsResponseTimeSeriesInterval[]
+         */
+        public function getPoints()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1CalculateStatsResponseTimeSeries registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIntervalDuration()
-    {
-    }
-    /**
-     * An ordered list of intervals from earliest to latest, where each interval
-     * represents the number of conversations that transpired during the time
-     * window.
-     *
-     * @param GoogleCloudContactcenterinsightsV1CalculateStatsResponseTimeSeriesInterval[] $points
-     */
-    public function setPoints($points)
-    {
-    }
-    /**
-     * @return GoogleCloudContactcenterinsightsV1CalculateStatsResponseTimeSeriesInterval[]
-     */
-    public function getPoints()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1CalculateStatsResponseTimeSeries extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1CalculateStatsResponseTimeSeries
     {
     }
 }

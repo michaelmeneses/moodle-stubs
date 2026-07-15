@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveLabels;
-
-class GoogleAppsDriveLabelsV2ListLabelPermissionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'labelPermissions';
-    protected $labelPermissionsType = GoogleAppsDriveLabelsV2LabelPermission::class;
-    protected $labelPermissionsDataType = 'array';
-    /**
-     * The token of the next page in the response.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Label permissions.
-     *
-     * @param GoogleAppsDriveLabelsV2LabelPermission[] $labelPermissions
-     */
-    public function setLabelPermissions($labelPermissions)
+namespace Google\Service\DriveLabels {
+    class GoogleAppsDriveLabelsV2ListLabelPermissionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'labelPermissions';
+        protected $labelPermissionsType = GoogleAppsDriveLabelsV2LabelPermission::class;
+        protected $labelPermissionsDataType = 'array';
+        /**
+         * The token of the next page in the response.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Label permissions.
+         *
+         * @param GoogleAppsDriveLabelsV2LabelPermission[] $labelPermissions
+         */
+        public function setLabelPermissions($labelPermissions)
+        {
+        }
+        /**
+         * @return GoogleAppsDriveLabelsV2LabelPermission[]
+         */
+        public function getLabelPermissions()
+        {
+        }
+        /**
+         * The token of the next page in the response.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAppsDriveLabelsV2LabelPermission[]
+     * Runtime class alias of \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2ListLabelPermissionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLabelPermissions()
-    {
-    }
-    /**
-     * The token of the next page in the response.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_DriveLabels_GoogleAppsDriveLabelsV2ListLabelPermissionsResponse extends \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2ListLabelPermissionsResponse
     {
     }
 }

@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GameServices;
-
-class RealmSelector extends \Google\Collection
-{
-    protected $collection_key = 'realms';
-    /**
-     * @var string[]
-     */
-    public $realms;
-    /**
-     * @param string[]
-     */
-    public function setRealms($realms)
+namespace Google\Service\GameServices {
+    class RealmSelector extends \Google\Collection
     {
+        protected $collection_key = 'realms';
+        /**
+         * @var string[]
+         */
+        public $realms;
+        /**
+         * @param string[]
+         */
+        public function setRealms($realms)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRealms()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\GameServices\RealmSelector registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRealms()
+    class Google_Service_GameServices_RealmSelector extends \Google\Service\GameServices\RealmSelector
     {
     }
 }

@@ -21,107 +21,119 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Gmail\Resource;
-
-/**
- * The "drafts" collection of methods.
- * Typical usage is:
- *  <code>
- *   $gmailService = new Google\Service\Gmail(...);
- *   $drafts = $gmailService->users_drafts;
- *  </code>
- */
-class UsersDrafts extends \Google\Service\Resource
-{
+namespace Google\Service\Gmail\Resource {
+    use Google\Service\Gmail\Draft;
+    use Google\Service\Gmail\ListDraftsResponse;
+    use Google\Service\Gmail\Message;
     /**
-     * Creates a new draft with the `DRAFT` label. (drafts.create)
-     *
-     * @param string $userId The user's email address. The special value `me` can be
-     * used to indicate the authenticated user.
-     * @param Draft $postBody
-     * @param array $optParams Optional parameters.
-     * @return Draft
-     * @throws \Google\Service\Exception
+     * The "drafts" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $gmailService = new Google\Service\Gmail(...);
+     *   $drafts = $gmailService->users_drafts;
+     *  </code>
      */
-    public function create($userId, Draft $postBody, $optParams = [])
+    class UsersDrafts extends \Google\Service\Resource
     {
+        /**
+         * Creates a new draft with the `DRAFT` label. (drafts.create)
+         *
+         * @param string $userId The user's email address. The special value `me` can be
+         * used to indicate the authenticated user.
+         * @param Draft $postBody
+         * @param array $optParams Optional parameters.
+         * @return Draft
+         * @throws \Google\Service\Exception
+         */
+        public function create($userId, Draft $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Immediately and permanently deletes the specified draft. Does not simply
+         * trash it. (drafts.delete)
+         *
+         * @param string $userId The user's email address. The special value `me` can be
+         * used to indicate the authenticated user.
+         * @param string $id The ID of the draft to delete.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($userId, $id, $optParams = [])
+        {
+        }
+        /**
+         * Gets the specified draft. (drafts.get)
+         *
+         * @param string $userId The user's email address. The special value `me` can be
+         * used to indicate the authenticated user.
+         * @param string $id The ID of the draft to retrieve.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string format The format to return the draft in.
+         * @return Draft
+         * @throws \Google\Service\Exception
+         */
+        public function get($userId, $id, $optParams = [])
+        {
+        }
+        /**
+         * Lists the drafts in the user's mailbox. (drafts.listUsersDrafts)
+         *
+         * @param string $userId The user's email address. The special value `me` can be
+         * used to indicate the authenticated user.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool includeSpamTrash Include drafts from `SPAM` and `TRASH` in
+         * the results.
+         * @opt_param string maxResults Maximum number of drafts to return. This field
+         * defaults to 100. The maximum allowed value for this field is 500.
+         * @opt_param string pageToken Page token to retrieve a specific page of results
+         * in the list.
+         * @opt_param string q Only return draft messages matching the specified query.
+         * Supports the same query format as the Gmail search box. For example,
+         * `"from:someuser@example.com rfc822msgid: is:unread"`.
+         * @return ListDraftsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listUsersDrafts($userId, $optParams = [])
+        {
+        }
+        /**
+         * Sends the specified, existing draft to the recipients in the `To`, `Cc`, and
+         * `Bcc` headers. (drafts.send)
+         *
+         * @param string $userId The user's email address. The special value `me` can be
+         * used to indicate the authenticated user.
+         * @param Draft $postBody
+         * @param array $optParams Optional parameters.
+         * @return Message
+         * @throws \Google\Service\Exception
+         */
+        public function send($userId, Draft $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Replaces a draft's content. (drafts.update)
+         *
+         * @param string $userId The user's email address. The special value `me` can be
+         * used to indicate the authenticated user.
+         * @param string $id The ID of the draft to update.
+         * @param Draft $postBody
+         * @param array $optParams Optional parameters.
+         * @return Draft
+         * @throws \Google\Service\Exception
+         */
+        public function update($userId, $id, Draft $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Immediately and permanently deletes the specified draft. Does not simply
-     * trash it. (drafts.delete)
-     *
-     * @param string $userId The user's email address. The special value `me` can be
-     * used to indicate the authenticated user.
-     * @param string $id The ID of the draft to delete.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Gmail\Resource\UsersDrafts registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($userId, $id, $optParams = [])
-    {
-    }
-    /**
-     * Gets the specified draft. (drafts.get)
-     *
-     * @param string $userId The user's email address. The special value `me` can be
-     * used to indicate the authenticated user.
-     * @param string $id The ID of the draft to retrieve.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string format The format to return the draft in.
-     * @return Draft
-     * @throws \Google\Service\Exception
-     */
-    public function get($userId, $id, $optParams = [])
-    {
-    }
-    /**
-     * Lists the drafts in the user's mailbox. (drafts.listUsersDrafts)
-     *
-     * @param string $userId The user's email address. The special value `me` can be
-     * used to indicate the authenticated user.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool includeSpamTrash Include drafts from `SPAM` and `TRASH` in
-     * the results.
-     * @opt_param string maxResults Maximum number of drafts to return. This field
-     * defaults to 100. The maximum allowed value for this field is 500.
-     * @opt_param string pageToken Page token to retrieve a specific page of results
-     * in the list.
-     * @opt_param string q Only return draft messages matching the specified query.
-     * Supports the same query format as the Gmail search box. For example,
-     * `"from:someuser@example.com rfc822msgid: is:unread"`.
-     * @return ListDraftsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listUsersDrafts($userId, $optParams = [])
-    {
-    }
-    /**
-     * Sends the specified, existing draft to the recipients in the `To`, `Cc`, and
-     * `Bcc` headers. (drafts.send)
-     *
-     * @param string $userId The user's email address. The special value `me` can be
-     * used to indicate the authenticated user.
-     * @param Draft $postBody
-     * @param array $optParams Optional parameters.
-     * @return Message
-     * @throws \Google\Service\Exception
-     */
-    public function send($userId, Draft $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Replaces a draft's content. (drafts.update)
-     *
-     * @param string $userId The user's email address. The special value `me` can be
-     * used to indicate the authenticated user.
-     * @param string $id The ID of the draft to update.
-     * @param Draft $postBody
-     * @param array $optParams Optional parameters.
-     * @return Draft
-     * @throws \Google\Service\Exception
-     */
-    public function update($userId, $id, Draft $postBody, $optParams = [])
+    class Google_Service_Gmail_Resource_UsersDrafts extends \Google\Service\Gmail\Resource\UsersDrafts
     {
     }
 }

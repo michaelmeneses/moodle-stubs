@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsReporting;
-
-class CohortGroup extends \Google\Collection
-{
-    protected $collection_key = 'cohorts';
-    protected $cohortsType = Cohort::class;
-    protected $cohortsDataType = 'array';
-    /**
-     * @var bool
-     */
-    public $lifetimeValue;
-    /**
-     * @param Cohort[]
-     */
-    public function setCohorts($cohorts)
+namespace Google\Service\AnalyticsReporting {
+    class CohortGroup extends \Google\Collection
     {
+        protected $collection_key = 'cohorts';
+        protected $cohortsType = Cohort::class;
+        protected $cohortsDataType = 'array';
+        /**
+         * @var bool
+         */
+        public $lifetimeValue;
+        /**
+         * @param Cohort[]
+         */
+        public function setCohorts($cohorts)
+        {
+        }
+        /**
+         * @return Cohort[]
+         */
+        public function getCohorts()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setLifetimeValue($lifetimeValue)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getLifetimeValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Cohort[]
+     * Runtime class alias of \Google\Service\AnalyticsReporting\CohortGroup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCohorts()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setLifetimeValue($lifetimeValue)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getLifetimeValue()
+    class Google_Service_AnalyticsReporting_CohortGroup extends \Google\Service\AnalyticsReporting\CohortGroup
     {
     }
 }

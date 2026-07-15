@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity;
-
-class ListRegionalEndpointsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    /**
-     * The next pagination token in the List response. It should be used as
-     * page_token for the following request. An empty value means no more result.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $regionalEndpointsType = RegionalEndpoint::class;
-    protected $regionalEndpointsDataType = 'array';
-    /**
-     * Locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * The next pagination token in the List response. It should be used as
-     * page_token for the following request. An empty value means no more result.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Networkconnectivity {
+    class ListRegionalEndpointsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        /**
+         * The next pagination token in the List response. It should be used as
+         * page_token for the following request. An empty value means no more result.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $regionalEndpointsType = RegionalEndpoint::class;
+        protected $regionalEndpointsDataType = 'array';
+        /**
+         * Locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * The next pagination token in the List response. It should be used as
+         * page_token for the following request. An empty value means no more result.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Regional endpoints to be returned.
+         *
+         * @param RegionalEndpoint[] $regionalEndpoints
+         */
+        public function setRegionalEndpoints($regionalEndpoints)
+        {
+        }
+        /**
+         * @return RegionalEndpoint[]
+         */
+        public function getRegionalEndpoints()
+        {
+        }
+        /**
+         * Locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Networkconnectivity\ListRegionalEndpointsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Regional endpoints to be returned.
-     *
-     * @param RegionalEndpoint[] $regionalEndpoints
-     */
-    public function setRegionalEndpoints($regionalEndpoints)
-    {
-    }
-    /**
-     * @return RegionalEndpoint[]
-     */
-    public function getRegionalEndpoints()
-    {
-    }
-    /**
-     * Locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_Networkconnectivity_ListRegionalEndpointsResponse extends \Google\Service\Networkconnectivity\ListRegionalEndpointsResponse
     {
     }
 }

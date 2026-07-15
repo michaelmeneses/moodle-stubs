@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2AmazonS3BucketConditions extends \Google\Collection
-{
-    protected $collection_key = 'objectStorageClasses';
-    /**
-     * Optional. Bucket types that should be profiled. Optional. Defaults to
-     * TYPE_ALL_SUPPORTED if unspecified.
-     *
-     * @var string[]
-     */
-    public $bucketTypes;
-    /**
-     * Optional. Object classes that should be profiled. Optional. Defaults to
-     * ALL_SUPPORTED_CLASSES if unspecified.
-     *
-     * @var string[]
-     */
-    public $objectStorageClasses;
-    /**
-     * Optional. Bucket types that should be profiled. Optional. Defaults to
-     * TYPE_ALL_SUPPORTED if unspecified.
-     *
-     * @param string[] $bucketTypes
-     */
-    public function setBucketTypes($bucketTypes)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2AmazonS3BucketConditions extends \Google\Collection
     {
+        protected $collection_key = 'objectStorageClasses';
+        /**
+         * Optional. Bucket types that should be profiled. Optional. Defaults to
+         * TYPE_ALL_SUPPORTED if unspecified.
+         *
+         * @var string[]
+         */
+        public $bucketTypes;
+        /**
+         * Optional. Object classes that should be profiled. Optional. Defaults to
+         * ALL_SUPPORTED_CLASSES if unspecified.
+         *
+         * @var string[]
+         */
+        public $objectStorageClasses;
+        /**
+         * Optional. Bucket types that should be profiled. Optional. Defaults to
+         * TYPE_ALL_SUPPORTED if unspecified.
+         *
+         * @param string[] $bucketTypes
+         */
+        public function setBucketTypes($bucketTypes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getBucketTypes()
+        {
+        }
+        /**
+         * Optional. Object classes that should be profiled. Optional. Defaults to
+         * ALL_SUPPORTED_CLASSES if unspecified.
+         *
+         * @param string[] $objectStorageClasses
+         */
+        public function setObjectStorageClasses($objectStorageClasses)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getObjectStorageClasses()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2AmazonS3BucketConditions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBucketTypes()
-    {
-    }
-    /**
-     * Optional. Object classes that should be profiled. Optional. Defaults to
-     * ALL_SUPPORTED_CLASSES if unspecified.
-     *
-     * @param string[] $objectStorageClasses
-     */
-    public function setObjectStorageClasses($objectStorageClasses)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getObjectStorageClasses()
+    class Google_Service_DLP_GooglePrivacyDlpV2AmazonS3BucketConditions extends \Google\Service\DLP\GooglePrivacyDlpV2AmazonS3BucketConditions
     {
     }
 }

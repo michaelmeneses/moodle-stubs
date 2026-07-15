@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1DataplexSpec extends \Google\Model
-{
-    /**
-     * Fully qualified resource name of an asset in Dataplex Universal Catalog, to
-     * which the underlying data source (Cloud Storage bucket or BigQuery dataset)
-     * of the entity is attached.
-     *
-     * @var string
-     */
-    public $asset;
-    /**
-     * Compression format of the data, e.g., zip, gzip etc.
-     *
-     * @var string
-     */
-    public $compressionFormat;
-    protected $dataFormatType = GoogleCloudDatacatalogV1PhysicalSchema::class;
-    protected $dataFormatDataType = '';
-    /**
-     * Project ID of the underlying Cloud Storage or BigQuery data. Note that this
-     * may not be the same project as the corresponding Dataplex Universal Catalog
-     * lake / zone / asset.
-     *
-     * @var string
-     */
-    public $projectId;
-    /**
-     * Fully qualified resource name of an asset in Dataplex Universal Catalog, to
-     * which the underlying data source (Cloud Storage bucket or BigQuery dataset)
-     * of the entity is attached.
-     *
-     * @param string $asset
-     */
-    public function setAsset($asset)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1DataplexSpec extends \Google\Model
     {
+        /**
+         * Fully qualified resource name of an asset in Dataplex Universal Catalog, to
+         * which the underlying data source (Cloud Storage bucket or BigQuery dataset)
+         * of the entity is attached.
+         *
+         * @var string
+         */
+        public $asset;
+        /**
+         * Compression format of the data, e.g., zip, gzip etc.
+         *
+         * @var string
+         */
+        public $compressionFormat;
+        protected $dataFormatType = GoogleCloudDatacatalogV1PhysicalSchema::class;
+        protected $dataFormatDataType = '';
+        /**
+         * Project ID of the underlying Cloud Storage or BigQuery data. Note that this
+         * may not be the same project as the corresponding Dataplex Universal Catalog
+         * lake / zone / asset.
+         *
+         * @var string
+         */
+        public $projectId;
+        /**
+         * Fully qualified resource name of an asset in Dataplex Universal Catalog, to
+         * which the underlying data source (Cloud Storage bucket or BigQuery dataset)
+         * of the entity is attached.
+         *
+         * @param string $asset
+         */
+        public function setAsset($asset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAsset()
+        {
+        }
+        /**
+         * Compression format of the data, e.g., zip, gzip etc.
+         *
+         * @param string $compressionFormat
+         */
+        public function setCompressionFormat($compressionFormat)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCompressionFormat()
+        {
+        }
+        /**
+         * Format of the data.
+         *
+         * @param GoogleCloudDatacatalogV1PhysicalSchema $dataFormat
+         */
+        public function setDataFormat(GoogleCloudDatacatalogV1PhysicalSchema $dataFormat)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1PhysicalSchema
+         */
+        public function getDataFormat()
+        {
+        }
+        /**
+         * Project ID of the underlying Cloud Storage or BigQuery data. Note that this
+         * may not be the same project as the corresponding Dataplex Universal Catalog
+         * lake / zone / asset.
+         *
+         * @param string $projectId
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1DataplexSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAsset()
-    {
-    }
-    /**
-     * Compression format of the data, e.g., zip, gzip etc.
-     *
-     * @param string $compressionFormat
-     */
-    public function setCompressionFormat($compressionFormat)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCompressionFormat()
-    {
-    }
-    /**
-     * Format of the data.
-     *
-     * @param GoogleCloudDatacatalogV1PhysicalSchema $dataFormat
-     */
-    public function setDataFormat(GoogleCloudDatacatalogV1PhysicalSchema $dataFormat)
-    {
-    }
-    /**
-     * @return GoogleCloudDatacatalogV1PhysicalSchema
-     */
-    public function getDataFormat()
-    {
-    }
-    /**
-     * Project ID of the underlying Cloud Storage or BigQuery data. Note that this
-     * may not be the same project as the corresponding Dataplex Universal Catalog
-     * lake / zone / asset.
-     *
-     * @param string $projectId
-     */
-    public function setProjectId($projectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProjectId()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1DataplexSpec extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1DataplexSpec
     {
     }
 }

@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIAP;
-
-class CorsSettings extends \Google\Model
-{
-    /**
-     * Configuration to allow HTTP `OPTIONS` calls to skip authentication and
-     * authorization. If undefined, IAP will not apply any special logic to
-     * `OPTIONS` requests.
-     *
-     * @var bool
-     */
-    public $allowHttpOptions;
-    /**
-     * Configuration to allow HTTP `OPTIONS` calls to skip authentication and
-     * authorization. If undefined, IAP will not apply any special logic to
-     * `OPTIONS` requests.
-     *
-     * @param bool $allowHttpOptions
-     */
-    public function setAllowHttpOptions($allowHttpOptions)
+namespace Google\Service\CloudIAP {
+    class CorsSettings extends \Google\Model
     {
+        /**
+         * Configuration to allow HTTP `OPTIONS` calls to skip authentication and
+         * authorization. If undefined, IAP will not apply any special logic to
+         * `OPTIONS` requests.
+         *
+         * @var bool
+         */
+        public $allowHttpOptions;
+        /**
+         * Configuration to allow HTTP `OPTIONS` calls to skip authentication and
+         * authorization. If undefined, IAP will not apply any special logic to
+         * `OPTIONS` requests.
+         *
+         * @param bool $allowHttpOptions
+         */
+        public function setAllowHttpOptions($allowHttpOptions)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAllowHttpOptions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudIAP\CorsSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowHttpOptions()
+    class Google_Service_CloudIAP_CorsSettings extends \Google\Service\CloudIAP\CorsSettings
     {
     }
 }

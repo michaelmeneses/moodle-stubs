@@ -21,91 +21,100 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataform;
-
-class DataPreparationAction extends \Google\Model
-{
-    protected $contentsSqlType = ActionSqlDefinition::class;
-    protected $contentsSqlDataType = '';
-    /**
-     * Output only. YAML representing the contents of the data preparation. Can be
-     * used to show the customer what the input was to their workflow.
-     *
-     * @var string
-     */
-    public $contentsYaml;
-    /**
-     * Output only. The generated BigQuery SQL script that will be executed. For
-     * reference only.
-     *
-     * @var string
-     */
-    public $generatedSql;
-    /**
-     * Output only. The ID of the BigQuery job that executed the SQL in
-     * sql_script. Only set once the job has started to run.
-     *
-     * @var string
-     */
-    public $jobId;
-    /**
-     * SQL definition for a Data Preparation. Contains a SQL query and additional
-     * context information.
-     *
-     * @param ActionSqlDefinition $contentsSql
-     */
-    public function setContentsSql(ActionSqlDefinition $contentsSql)
+namespace Google\Service\Dataform {
+    class DataPreparationAction extends \Google\Model
     {
+        protected $contentsSqlType = ActionSqlDefinition::class;
+        protected $contentsSqlDataType = '';
+        /**
+         * Output only. YAML representing the contents of the data preparation. Can be
+         * used to show the customer what the input was to their workflow.
+         *
+         * @var string
+         */
+        public $contentsYaml;
+        /**
+         * Output only. The generated BigQuery SQL script that will be executed. For
+         * reference only.
+         *
+         * @var string
+         */
+        public $generatedSql;
+        /**
+         * Output only. The ID of the BigQuery job that executed the SQL in
+         * sql_script. Only set once the job has started to run.
+         *
+         * @var string
+         */
+        public $jobId;
+        /**
+         * SQL definition for a Data Preparation. Contains a SQL query and additional
+         * context information.
+         *
+         * @param ActionSqlDefinition $contentsSql
+         */
+        public function setContentsSql(ActionSqlDefinition $contentsSql)
+        {
+        }
+        /**
+         * @return ActionSqlDefinition
+         */
+        public function getContentsSql()
+        {
+        }
+        /**
+         * Output only. YAML representing the contents of the data preparation. Can be
+         * used to show the customer what the input was to their workflow.
+         *
+         * @param string $contentsYaml
+         */
+        public function setContentsYaml($contentsYaml)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContentsYaml()
+        {
+        }
+        /**
+         * Output only. The generated BigQuery SQL script that will be executed. For
+         * reference only.
+         *
+         * @param string $generatedSql
+         */
+        public function setGeneratedSql($generatedSql)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGeneratedSql()
+        {
+        }
+        /**
+         * Output only. The ID of the BigQuery job that executed the SQL in
+         * sql_script. Only set once the job has started to run.
+         *
+         * @param string $jobId
+         */
+        public function setJobId($jobId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getJobId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ActionSqlDefinition
+     * Runtime class alias of \Google\Service\Dataform\DataPreparationAction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContentsSql()
-    {
-    }
-    /**
-     * Output only. YAML representing the contents of the data preparation. Can be
-     * used to show the customer what the input was to their workflow.
-     *
-     * @param string $contentsYaml
-     */
-    public function setContentsYaml($contentsYaml)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContentsYaml()
-    {
-    }
-    /**
-     * Output only. The generated BigQuery SQL script that will be executed. For
-     * reference only.
-     *
-     * @param string $generatedSql
-     */
-    public function setGeneratedSql($generatedSql)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGeneratedSql()
-    {
-    }
-    /**
-     * Output only. The ID of the BigQuery job that executed the SQL in
-     * sql_script. Only set once the job has started to run.
-     *
-     * @param string $jobId
-     */
-    public function setJobId($jobId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getJobId()
+    class Google_Service_Dataform_DataPreparationAction extends \Google\Service\Dataform\DataPreparationAction
     {
     }
 }

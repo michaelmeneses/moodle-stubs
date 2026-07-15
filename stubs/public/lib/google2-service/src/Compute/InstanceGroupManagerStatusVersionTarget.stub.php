@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InstanceGroupManagerStatusVersionTarget extends \Google\Model
-{
-    /**
-     * Output only. [Output Only] A bit indicating whether version target has been
-     * reached in this managed instance group, i.e. all instances are in their
-     * target version. Instances' target version are specified byversion field on
-     * Instance Group Manager.
-     *
-     * @var bool
-     */
-    public $isReached;
-    /**
-     * Output only. [Output Only] A bit indicating whether version target has been
-     * reached in this managed instance group, i.e. all instances are in their
-     * target version. Instances' target version are specified byversion field on
-     * Instance Group Manager.
-     *
-     * @param bool $isReached
-     */
-    public function setIsReached($isReached)
+namespace Google\Service\Compute {
+    class InstanceGroupManagerStatusVersionTarget extends \Google\Model
     {
+        /**
+         * Output only. [Output Only] A bit indicating whether version target has been
+         * reached in this managed instance group, i.e. all instances are in their
+         * target version. Instances' target version are specified byversion field on
+         * Instance Group Manager.
+         *
+         * @var bool
+         */
+        public $isReached;
+        /**
+         * Output only. [Output Only] A bit indicating whether version target has been
+         * reached in this managed instance group, i.e. all instances are in their
+         * target version. Instances' target version are specified byversion field on
+         * Instance Group Manager.
+         *
+         * @param bool $isReached
+         */
+        public function setIsReached($isReached)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsReached()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Compute\InstanceGroupManagerStatusVersionTarget registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIsReached()
+    class Google_Service_Compute_InstanceGroupManagerStatusVersionTarget extends \Google\Service\Compute\InstanceGroupManagerStatusVersionTarget
     {
     }
 }

@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class RestoreDatabaseRequest extends \Google\Model
-{
-    /**
-     * Name of the backup from which to restore. Values are of the form
-     * `projects//instances//backups/`.
-     *
-     * @var string
-     */
-    public $backup;
-    /**
-     * Required. The id of the database to create and restore to. This database
-     * must not already exist. The `database_id` appended to `parent` forms the
-     * full database name of the form `projects//instances//databases/`.
-     *
-     * @var string
-     */
-    public $databaseId;
-    protected $encryptionConfigType = RestoreDatabaseEncryptionConfig::class;
-    protected $encryptionConfigDataType = '';
-    /**
-     * Name of the backup from which to restore. Values are of the form
-     * `projects//instances//backups/`.
-     *
-     * @param string $backup
-     */
-    public function setBackup($backup)
+namespace Google\Service\Spanner {
+    class RestoreDatabaseRequest extends \Google\Model
     {
+        /**
+         * Name of the backup from which to restore. Values are of the form
+         * `projects//instances//backups/`.
+         *
+         * @var string
+         */
+        public $backup;
+        /**
+         * Required. The id of the database to create and restore to. This database
+         * must not already exist. The `database_id` appended to `parent` forms the
+         * full database name of the form `projects//instances//databases/`.
+         *
+         * @var string
+         */
+        public $databaseId;
+        protected $encryptionConfigType = RestoreDatabaseEncryptionConfig::class;
+        protected $encryptionConfigDataType = '';
+        /**
+         * Name of the backup from which to restore. Values are of the form
+         * `projects//instances//backups/`.
+         *
+         * @param string $backup
+         */
+        public function setBackup($backup)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBackup()
+        {
+        }
+        /**
+         * Required. The id of the database to create and restore to. This database
+         * must not already exist. The `database_id` appended to `parent` forms the
+         * full database name of the form `projects//instances//databases/`.
+         *
+         * @param string $databaseId
+         */
+        public function setDatabaseId($databaseId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatabaseId()
+        {
+        }
+        /**
+         * Optional. An encryption configuration describing the encryption type and
+         * key resources in Cloud KMS used to encrypt/decrypt the database to restore
+         * to. If this field is not specified, the restored database will use the same
+         * encryption configuration as the backup by default, namely encryption_type =
+         * `USE_CONFIG_DEFAULT_OR_BACKUP_ENCRYPTION`.
+         *
+         * @param RestoreDatabaseEncryptionConfig $encryptionConfig
+         */
+        public function setEncryptionConfig(RestoreDatabaseEncryptionConfig $encryptionConfig)
+        {
+        }
+        /**
+         * @return RestoreDatabaseEncryptionConfig
+         */
+        public function getEncryptionConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Spanner\RestoreDatabaseRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackup()
-    {
-    }
-    /**
-     * Required. The id of the database to create and restore to. This database
-     * must not already exist. The `database_id` appended to `parent` forms the
-     * full database name of the form `projects//instances//databases/`.
-     *
-     * @param string $databaseId
-     */
-    public function setDatabaseId($databaseId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDatabaseId()
-    {
-    }
-    /**
-     * Optional. An encryption configuration describing the encryption type and
-     * key resources in Cloud KMS used to encrypt/decrypt the database to restore
-     * to. If this field is not specified, the restored database will use the same
-     * encryption configuration as the backup by default, namely encryption_type =
-     * `USE_CONFIG_DEFAULT_OR_BACKUP_ENCRYPTION`.
-     *
-     * @param RestoreDatabaseEncryptionConfig $encryptionConfig
-     */
-    public function setEncryptionConfig(RestoreDatabaseEncryptionConfig $encryptionConfig)
-    {
-    }
-    /**
-     * @return RestoreDatabaseEncryptionConfig
-     */
-    public function getEncryptionConfig()
+    class Google_Service_Spanner_RestoreDatabaseRequest extends \Google\Service\Spanner\RestoreDatabaseRequest
     {
     }
 }

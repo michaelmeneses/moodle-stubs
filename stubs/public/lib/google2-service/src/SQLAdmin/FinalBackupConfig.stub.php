@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class FinalBackupConfig extends \Google\Model
-{
-    /**
-     * Whether the final backup is enabled for the instance.
-     *
-     * @var bool
-     */
-    public $enabled;
-    /**
-     * The number of days to retain the final backup after the instance deletion.
-     * The final backup will be purged at (time_of_instance_deletion +
-     * retention_days).
-     *
-     * @var int
-     */
-    public $retentionDays;
-    /**
-     * Whether the final backup is enabled for the instance.
-     *
-     * @param bool $enabled
-     */
-    public function setEnabled($enabled)
+namespace Google\Service\SQLAdmin {
+    class FinalBackupConfig extends \Google\Model
     {
+        /**
+         * Whether the final backup is enabled for the instance.
+         *
+         * @var bool
+         */
+        public $enabled;
+        /**
+         * The number of days to retain the final backup after the instance deletion.
+         * The final backup will be purged at (time_of_instance_deletion +
+         * retention_days).
+         *
+         * @var int
+         */
+        public $retentionDays;
+        /**
+         * Whether the final backup is enabled for the instance.
+         *
+         * @param bool $enabled
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
+        /**
+         * The number of days to retain the final backup after the instance deletion.
+         * The final backup will be purged at (time_of_instance_deletion +
+         * retention_days).
+         *
+         * @param int $retentionDays
+         */
+        public function setRetentionDays($retentionDays)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRetentionDays()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\SQLAdmin\FinalBackupConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnabled()
-    {
-    }
-    /**
-     * The number of days to retain the final backup after the instance deletion.
-     * The final backup will be purged at (time_of_instance_deletion +
-     * retention_days).
-     *
-     * @param int $retentionDays
-     */
-    public function setRetentionDays($retentionDays)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getRetentionDays()
+    class Google_Service_SQLAdmin_FinalBackupConfig extends \Google\Service\SQLAdmin\FinalBackupConfig
     {
     }
 }

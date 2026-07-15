@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1beta1DocumentPageMatrix extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $cols;
-    /**
-     * @var string
-     */
-    public $data;
-    /**
-     * @var int
-     */
-    public $rows;
-    /**
-     * @var int
-     */
-    public $type;
-    /**
-     * @param int
-     */
-    public function setCols($cols)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1beta1DocumentPageMatrix extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $cols;
+        /**
+         * @var string
+         */
+        public $data;
+        /**
+         * @var int
+         */
+        public $rows;
+        /**
+         * @var int
+         */
+        public $type;
+        /**
+         * @param int
+         */
+        public function setCols($cols)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCols()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setData($data)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getData()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setRows($rows)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRows()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1beta1DocumentPageMatrix registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCols()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setData($data)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getData()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setRows($rows)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getRows()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getType()
+    class Google_Service_Document_GoogleCloudDocumentaiV1beta1DocumentPageMatrix extends \Google\Service\Document\GoogleCloudDocumentaiV1beta1DocumentPageMatrix
     {
     }
 }

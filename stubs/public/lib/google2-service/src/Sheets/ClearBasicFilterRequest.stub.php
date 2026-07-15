@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class ClearBasicFilterRequest extends \Google\Model
-{
-    /**
-     * The sheet ID on which the basic filter should be cleared.
-     *
-     * @var int
-     */
-    public $sheetId;
-    /**
-     * The sheet ID on which the basic filter should be cleared.
-     *
-     * @param int $sheetId
-     */
-    public function setSheetId($sheetId)
+namespace Google\Service\Sheets {
+    class ClearBasicFilterRequest extends \Google\Model
     {
+        /**
+         * The sheet ID on which the basic filter should be cleared.
+         *
+         * @var int
+         */
+        public $sheetId;
+        /**
+         * The sheet ID on which the basic filter should be cleared.
+         *
+         * @param int $sheetId
+         */
+        public function setSheetId($sheetId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSheetId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Sheets\ClearBasicFilterRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSheetId()
+    class Google_Service_Sheets_ClearBasicFilterRequest extends \Google\Service\Sheets\ClearBasicFilterRequest
     {
     }
 }

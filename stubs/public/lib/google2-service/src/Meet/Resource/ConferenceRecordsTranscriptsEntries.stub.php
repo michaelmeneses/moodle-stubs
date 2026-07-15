@@ -21,54 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Meet\Resource;
-
-/**
- * The "entries" collection of methods.
- * Typical usage is:
- *  <code>
- *   $meetService = new Google\Service\Meet(...);
- *   $entries = $meetService->conferenceRecords_transcripts_entries;
- *  </code>
- */
-class ConferenceRecordsTranscriptsEntries extends \Google\Service\Resource
-{
+namespace Google\Service\Meet\Resource {
+    use Google\Service\Meet\ListTranscriptEntriesResponse;
+    use Google\Service\Meet\TranscriptEntry;
     /**
-     * Gets a `TranscriptEntry` resource by entry ID. Note: The transcript entries
-     * returned by the Google Meet API might not match the transcription found in
-     * the Google Docs transcript file. This can occur when 1) we have interleaved
-     * speakers within milliseconds, or 2) the Google Docs transcript file is
-     * modified after generation. (entries.get)
-     *
-     * @param string $name Required. Resource name of the `TranscriptEntry`.
-     * @param array $optParams Optional parameters.
-     * @return TranscriptEntry
-     * @throws \Google\Service\Exception
+     * The "entries" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $meetService = new Google\Service\Meet(...);
+     *   $entries = $meetService->conferenceRecords_transcripts_entries;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class ConferenceRecordsTranscriptsEntries extends \Google\Service\Resource
     {
+        /**
+         * Gets a `TranscriptEntry` resource by entry ID. Note: The transcript entries
+         * returned by the Google Meet API might not match the transcription found in
+         * the Google Docs transcript file. This can occur when 1) we have interleaved
+         * speakers within milliseconds, or 2) the Google Docs transcript file is
+         * modified after generation. (entries.get)
+         *
+         * @param string $name Required. Resource name of the `TranscriptEntry`.
+         * @param array $optParams Optional parameters.
+         * @return TranscriptEntry
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists the structured transcript entries per transcript. By default, ordered
+         * by start time and in ascending order. Note: The transcript entries returned
+         * by the Google Meet API might not match the transcription found in the Google
+         * Docs transcript file. This can occur when 1) we have interleaved speakers
+         * within milliseconds, or 2) the Google Docs transcript file is modified after
+         * generation. (entries.listConferenceRecordsTranscriptsEntries)
+         *
+         * @param string $parent Required. Format:
+         * `conferenceRecords/{conference_record}/transcripts/{transcript}`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Maximum number of entries to return. The service
+         * might return fewer than this value. If unspecified, at most 10 entries are
+         * returned. The maximum value is 100; values above 100 are coerced to 100.
+         * Maximum might change in the future.
+         * @opt_param string pageToken Page token returned from previous List Call.
+         * @return ListTranscriptEntriesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listConferenceRecordsTranscriptsEntries($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists the structured transcript entries per transcript. By default, ordered
-     * by start time and in ascending order. Note: The transcript entries returned
-     * by the Google Meet API might not match the transcription found in the Google
-     * Docs transcript file. This can occur when 1) we have interleaved speakers
-     * within milliseconds, or 2) the Google Docs transcript file is modified after
-     * generation. (entries.listConferenceRecordsTranscriptsEntries)
-     *
-     * @param string $parent Required. Format:
-     * `conferenceRecords/{conference_record}/transcripts/{transcript}`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Maximum number of entries to return. The service
-     * might return fewer than this value. If unspecified, at most 10 entries are
-     * returned. The maximum value is 100; values above 100 are coerced to 100.
-     * Maximum might change in the future.
-     * @opt_param string pageToken Page token returned from previous List Call.
-     * @return ListTranscriptEntriesResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Meet\Resource\ConferenceRecordsTranscriptsEntries registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listConferenceRecordsTranscriptsEntries($parent, $optParams = [])
+    class Google_Service_Meet_Resource_ConferenceRecordsTranscriptsEntries extends \Google\Service\Meet\Resource\ConferenceRecordsTranscriptsEntries
     {
     }
 }

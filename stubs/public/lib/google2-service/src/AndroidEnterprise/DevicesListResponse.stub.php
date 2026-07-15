@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise;
-
-class DevicesListResponse extends \Google\Collection
-{
-    protected $collection_key = 'device';
-    protected $deviceType = Device::class;
-    protected $deviceDataType = 'array';
-    /**
-     * A managed device.
-     *
-     * @param Device[] $device
-     */
-    public function setDevice($device)
+namespace Google\Service\AndroidEnterprise {
+    class DevicesListResponse extends \Google\Collection
     {
+        protected $collection_key = 'device';
+        protected $deviceType = Device::class;
+        protected $deviceDataType = 'array';
+        /**
+         * A managed device.
+         *
+         * @param Device[] $device
+         */
+        public function setDevice($device)
+        {
+        }
+        /**
+         * @return Device[]
+         */
+        public function getDevice()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Device[]
+     * Runtime class alias of \Google\Service\AndroidEnterprise\DevicesListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDevice()
+    class Google_Service_AndroidEnterprise_DevicesListResponse extends \Google\Service\AndroidEnterprise\DevicesListResponse
     {
     }
 }

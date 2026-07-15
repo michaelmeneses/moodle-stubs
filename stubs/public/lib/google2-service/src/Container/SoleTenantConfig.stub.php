@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class SoleTenantConfig extends \Google\Collection
-{
-    protected $collection_key = 'nodeAffinities';
-    /**
-     * Optional. The minimum number of virtual CPUs this instance will consume
-     * when running on a sole-tenant node. This field can only be set if the node
-     * pool is created in a shared sole-tenant node group.
-     *
-     * @var int
-     */
-    public $minNodeCpus;
-    protected $nodeAffinitiesType = NodeAffinity::class;
-    protected $nodeAffinitiesDataType = 'array';
-    /**
-     * Optional. The minimum number of virtual CPUs this instance will consume
-     * when running on a sole-tenant node. This field can only be set if the node
-     * pool is created in a shared sole-tenant node group.
-     *
-     * @param int $minNodeCpus
-     */
-    public function setMinNodeCpus($minNodeCpus)
+namespace Google\Service\Container {
+    class SoleTenantConfig extends \Google\Collection
     {
+        protected $collection_key = 'nodeAffinities';
+        /**
+         * Optional. The minimum number of virtual CPUs this instance will consume
+         * when running on a sole-tenant node. This field can only be set if the node
+         * pool is created in a shared sole-tenant node group.
+         *
+         * @var int
+         */
+        public $minNodeCpus;
+        protected $nodeAffinitiesType = NodeAffinity::class;
+        protected $nodeAffinitiesDataType = 'array';
+        /**
+         * Optional. The minimum number of virtual CPUs this instance will consume
+         * when running on a sole-tenant node. This field can only be set if the node
+         * pool is created in a shared sole-tenant node group.
+         *
+         * @param int $minNodeCpus
+         */
+        public function setMinNodeCpus($minNodeCpus)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMinNodeCpus()
+        {
+        }
+        /**
+         * NodeAffinities used to match to a shared sole tenant node group.
+         *
+         * @param NodeAffinity[] $nodeAffinities
+         */
+        public function setNodeAffinities($nodeAffinities)
+        {
+        }
+        /**
+         * @return NodeAffinity[]
+         */
+        public function getNodeAffinities()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Container\SoleTenantConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMinNodeCpus()
-    {
-    }
-    /**
-     * NodeAffinities used to match to a shared sole tenant node group.
-     *
-     * @param NodeAffinity[] $nodeAffinities
-     */
-    public function setNodeAffinities($nodeAffinities)
-    {
-    }
-    /**
-     * @return NodeAffinity[]
-     */
-    public function getNodeAffinities()
+    class Google_Service_Container_SoleTenantConfig extends \Google\Service\Container\SoleTenantConfig
     {
     }
 }

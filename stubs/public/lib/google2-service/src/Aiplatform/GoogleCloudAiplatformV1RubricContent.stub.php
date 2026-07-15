@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1RubricContent extends \Google\Model
-{
-    protected $propertyType = GoogleCloudAiplatformV1RubricContentProperty::class;
-    protected $propertyDataType = '';
-    /**
-     * Evaluation criteria based on a specific property.
-     *
-     * @param GoogleCloudAiplatformV1RubricContentProperty $property
-     */
-    public function setProperty(GoogleCloudAiplatformV1RubricContentProperty $property)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1RubricContent extends \Google\Model
     {
+        protected $propertyType = GoogleCloudAiplatformV1RubricContentProperty::class;
+        protected $propertyDataType = '';
+        /**
+         * Evaluation criteria based on a specific property.
+         *
+         * @param GoogleCloudAiplatformV1RubricContentProperty $property
+         */
+        public function setProperty(GoogleCloudAiplatformV1RubricContentProperty $property)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1RubricContentProperty
+         */
+        public function getProperty()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1RubricContentProperty
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1RubricContent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProperty()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1RubricContent extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1RubricContent
     {
     }
 }

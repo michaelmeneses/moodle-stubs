@@ -21,115 +21,128 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessBusinessInformation\Resource;
-
-/**
- * The "locations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $mybusinessbusinessinformationService = new Google\Service\MyBusinessBusinessInformation(...);
- *   $locations = $mybusinessbusinessinformationService->locations;
- *  </code>
- */
-class Locations extends \Google\Service\Resource
-{
+namespace Google\Service\MyBusinessBusinessInformation\Resource {
+    use Google\Service\MyBusinessBusinessInformation\Attributes as AttributesModel;
+    use Google\Service\MyBusinessBusinessInformation\GoogleUpdatedLocation;
+    use Google\Service\MyBusinessBusinessInformation\Location;
+    use Google\Service\MyBusinessBusinessInformation\MybusinessbusinessinformationEmpty;
     /**
-     * Deletes a location. If this location cannot be deleted using the API and it
-     * is marked so in the `google.mybusiness.businessinformation.v1.LocationState`,
-     * use the [Google Business Profile](https://business.google.com/manage/)
-     * website. (locations.delete)
-     *
-     * @param string $name Required. The name of the location to delete.
-     * @param array $optParams Optional parameters.
-     * @return MybusinessbusinessinformationEmpty
-     * @throws \Google\Service\Exception
+     * The "locations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $mybusinessbusinessinformationService = new Google\Service\MyBusinessBusinessInformation(...);
+     *   $locations = $mybusinessbusinessinformationService->locations;
+     *  </code>
      */
-    public function delete($name, $optParams = [])
+    class Locations extends \Google\Service\Resource
     {
+        /**
+         * Deletes a location. If this location cannot be deleted using the API and it
+         * is marked so in the `google.mybusiness.businessinformation.v1.LocationState`,
+         * use the [Google Business Profile](https://business.google.com/manage/)
+         * website. (locations.delete)
+         *
+         * @param string $name Required. The name of the location to delete.
+         * @param array $optParams Optional parameters.
+         * @return MybusinessbusinessinformationEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Returns the specified location. (locations.get)
+         *
+         * @param string $name Required. The name of the location to fetch.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string readMask Required. Read mask to specify what fields will be
+         * returned in the response.
+         * @return Location
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Looks up all the attributes set for a given location.
+         * (locations.getAttributes)
+         *
+         * @param string $name Required. Google identifier for this location in the form
+         * of `locations/{location_id}/attributes`.
+         * @param array $optParams Optional parameters.
+         * @return AttributesModel
+         * @throws \Google\Service\Exception
+         */
+        public function getAttributes($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets the Google-updated version of the specified location.
+         * (locations.getGoogleUpdated)
+         *
+         * @param string $name Required. The name of the location to fetch.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string readMask Required. Read mask to specify what fields will be
+         * returned in the response.
+         * @return GoogleUpdatedLocation
+         * @throws \Google\Service\Exception
+         */
+        public function getGoogleUpdated($name, $optParams = [])
+        {
+        }
+        /**
+         * Updates the specified location. (locations.patch)
+         *
+         * @param string $name Google identifier for this location in the form:
+         * `locations/{location_id}`.
+         * @param Location $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Required. The specific fields to update.
+         * @opt_param bool validateOnly Optional. If true, the request is validated
+         * without actually updating the location. When this field is set, we will only
+         * return validation errors if there were any. The response will be empty if no
+         * errors were found.
+         * @return Location
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, Location $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Update attributes for a given location. (locations.updateAttributes)
+         *
+         * @param string $name Required. Google identifier for this location in the form
+         * of `locations/{location_id}/attributes`.
+         * @param AttributesModel $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string attributeMask Required. Attribute name of attributes that
+         * you'd like to update. Represented by `attributes/{attribute}`. Updates: All
+         * attributes provided in the attributes field that you would like to update
+         * must be set in the `attribute_mask`. Attributes set in the above list but not
+         * in the `attribute_mask` will be ignored. Deletes: If you'd like to delete
+         * certain attributes, they must be specified in the `attribute_mask` with no
+         * matching entry in the attributes list. If you'd like to delete all attributes
+         * set on a location, you should look up all the applicable attributes for the
+         * location and then add them to the `attribute_mask` with an empty attributes
+         * field.
+         * @return AttributesModel
+         * @throws \Google\Service\Exception
+         */
+        public function updateAttributes($name, AttributesModel $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Returns the specified location. (locations.get)
-     *
-     * @param string $name Required. The name of the location to fetch.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string readMask Required. Read mask to specify what fields will be
-     * returned in the response.
-     * @return Location
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\MyBusinessBusinessInformation\Resource\Locations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Looks up all the attributes set for a given location.
-     * (locations.getAttributes)
-     *
-     * @param string $name Required. Google identifier for this location in the form
-     * of `locations/{location_id}/attributes`.
-     * @param array $optParams Optional parameters.
-     * @return AttributesModel
-     * @throws \Google\Service\Exception
-     */
-    public function getAttributes($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets the Google-updated version of the specified location.
-     * (locations.getGoogleUpdated)
-     *
-     * @param string $name Required. The name of the location to fetch.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string readMask Required. Read mask to specify what fields will be
-     * returned in the response.
-     * @return GoogleUpdatedLocation
-     * @throws \Google\Service\Exception
-     */
-    public function getGoogleUpdated($name, $optParams = [])
-    {
-    }
-    /**
-     * Updates the specified location. (locations.patch)
-     *
-     * @param string $name Google identifier for this location in the form:
-     * `locations/{location_id}`.
-     * @param Location $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Required. The specific fields to update.
-     * @opt_param bool validateOnly Optional. If true, the request is validated
-     * without actually updating the location. When this field is set, we will only
-     * return validation errors if there were any. The response will be empty if no
-     * errors were found.
-     * @return Location
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, Location $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Update attributes for a given location. (locations.updateAttributes)
-     *
-     * @param string $name Required. Google identifier for this location in the form
-     * of `locations/{location_id}/attributes`.
-     * @param AttributesModel $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string attributeMask Required. Attribute name of attributes that
-     * you'd like to update. Represented by `attributes/{attribute}`. Updates: All
-     * attributes provided in the attributes field that you would like to update
-     * must be set in the `attribute_mask`. Attributes set in the above list but not
-     * in the `attribute_mask` will be ignored. Deletes: If you'd like to delete
-     * certain attributes, they must be specified in the `attribute_mask` with no
-     * matching entry in the attributes list. If you'd like to delete all attributes
-     * set on a location, you should look up all the applicable attributes for the
-     * location and then add them to the `attribute_mask` with an empty attributes
-     * field.
-     * @return AttributesModel
-     * @throws \Google\Service\Exception
-     */
-    public function updateAttributes($name, AttributesModel $postBody, $optParams = [])
+    class Google_Service_MyBusinessBusinessInformation_Resource_Locations extends \Google\Service\MyBusinessBusinessInformation\Resource\Locations
     {
     }
 }

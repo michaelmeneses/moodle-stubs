@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class CloudAiPlatformTenantresourceTenantProjectConfig extends \Google\Collection
-{
-    protected $collection_key = 'services';
-    protected $billingConfigType = GoogleApiServiceconsumermanagementV1BillingConfig::class;
-    protected $billingConfigDataType = '';
-    /**
-     * Input/Output [Required]. The folder that holds tenant projects and folder-
-     * level permissions will be automatically granted to all tenant projects
-     * under the folder. Note: the valid folder format is
-     * `folders/{folder_number}`.
-     *
-     * @var string
-     */
-    public $folder;
-    protected $policyBindingsType = GoogleApiServiceconsumermanagementV1PolicyBinding::class;
-    protected $policyBindingsDataType = 'array';
-    /**
-     * Input/Output [Required]. The API services that are enabled on the tenant
-     * project during creation.
-     *
-     * @var string[]
-     */
-    public $services;
-    /**
-     * Input/Output [Required]. The billing account properties to create the
-     * tenant project.
-     *
-     * @param GoogleApiServiceconsumermanagementV1BillingConfig $billingConfig
-     */
-    public function setBillingConfig(GoogleApiServiceconsumermanagementV1BillingConfig $billingConfig)
+namespace Google\Service\Contentwarehouse {
+    class CloudAiPlatformTenantresourceTenantProjectConfig extends \Google\Collection
     {
+        protected $collection_key = 'services';
+        protected $billingConfigType = GoogleApiServiceconsumermanagementV1BillingConfig::class;
+        protected $billingConfigDataType = '';
+        /**
+         * Input/Output [Required]. The folder that holds tenant projects and folder-
+         * level permissions will be automatically granted to all tenant projects
+         * under the folder. Note: the valid folder format is
+         * `folders/{folder_number}`.
+         *
+         * @var string
+         */
+        public $folder;
+        protected $policyBindingsType = GoogleApiServiceconsumermanagementV1PolicyBinding::class;
+        protected $policyBindingsDataType = 'array';
+        /**
+         * Input/Output [Required]. The API services that are enabled on the tenant
+         * project during creation.
+         *
+         * @var string[]
+         */
+        public $services;
+        /**
+         * Input/Output [Required]. The billing account properties to create the
+         * tenant project.
+         *
+         * @param GoogleApiServiceconsumermanagementV1BillingConfig $billingConfig
+         */
+        public function setBillingConfig(GoogleApiServiceconsumermanagementV1BillingConfig $billingConfig)
+        {
+        }
+        /**
+         * @return GoogleApiServiceconsumermanagementV1BillingConfig
+         */
+        public function getBillingConfig()
+        {
+        }
+        /**
+         * Input/Output [Required]. The folder that holds tenant projects and folder-
+         * level permissions will be automatically granted to all tenant projects
+         * under the folder. Note: the valid folder format is
+         * `folders/{folder_number}`.
+         *
+         * @param string $folder
+         */
+        public function setFolder($folder)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFolder()
+        {
+        }
+        /**
+         * Input/Output [Required]. The policy bindings that are applied to the tenant
+         * project during creation. At least one binding must have the role
+         * `roles/owner` with either `user` or `group` type.
+         *
+         * @param GoogleApiServiceconsumermanagementV1PolicyBinding[] $policyBindings
+         */
+        public function setPolicyBindings($policyBindings)
+        {
+        }
+        /**
+         * @return GoogleApiServiceconsumermanagementV1PolicyBinding[]
+         */
+        public function getPolicyBindings()
+        {
+        }
+        /**
+         * Input/Output [Required]. The API services that are enabled on the tenant
+         * project during creation.
+         *
+         * @param string[] $services
+         */
+        public function setServices($services)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getServices()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleApiServiceconsumermanagementV1BillingConfig
+     * Runtime class alias of \Google\Service\Contentwarehouse\CloudAiPlatformTenantresourceTenantProjectConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBillingConfig()
-    {
-    }
-    /**
-     * Input/Output [Required]. The folder that holds tenant projects and folder-
-     * level permissions will be automatically granted to all tenant projects
-     * under the folder. Note: the valid folder format is
-     * `folders/{folder_number}`.
-     *
-     * @param string $folder
-     */
-    public function setFolder($folder)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFolder()
-    {
-    }
-    /**
-     * Input/Output [Required]. The policy bindings that are applied to the tenant
-     * project during creation. At least one binding must have the role
-     * `roles/owner` with either `user` or `group` type.
-     *
-     * @param GoogleApiServiceconsumermanagementV1PolicyBinding[] $policyBindings
-     */
-    public function setPolicyBindings($policyBindings)
-    {
-    }
-    /**
-     * @return GoogleApiServiceconsumermanagementV1PolicyBinding[]
-     */
-    public function getPolicyBindings()
-    {
-    }
-    /**
-     * Input/Output [Required]. The API services that are enabled on the tenant
-     * project during creation.
-     *
-     * @param string[] $services
-     */
-    public function setServices($services)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getServices()
+    class Google_Service_Contentwarehouse_CloudAiPlatformTenantresourceTenantProjectConfig extends \Google\Service\Contentwarehouse\CloudAiPlatformTenantresourceTenantProjectConfig
     {
     }
 }

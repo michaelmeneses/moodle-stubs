@@ -21,126 +21,135 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyerII;
-
-class Note extends \Google\Model
-{
-    /**
-     * A placeholder for an undefined buyer/seller role.
-     */
-    public const CREATOR_ROLE_BUYER_SELLER_ROLE_UNSPECIFIED = 'BUYER_SELLER_ROLE_UNSPECIFIED';
-    /**
-     * Specifies the role as buyer.
-     */
-    public const CREATOR_ROLE_BUYER = 'BUYER';
-    /**
-     * Specifies the role as seller.
-     */
-    public const CREATOR_ROLE_SELLER = 'SELLER';
-    /**
-     * Output only. The timestamp for when this note was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Output only. The role of the person (buyer/seller) creating the note.
-     *
-     * @var string
-     */
-    public $creatorRole;
-    /**
-     * The actual note to attach. (max-length: 1024 unicode code units) Note: This
-     * field may be set only when creating the resource. Modifying this field
-     * while updating the resource will result in an error.
-     *
-     * @var string
-     */
-    public $note;
-    /**
-     * Output only. The unique ID for the note.
-     *
-     * @var string
-     */
-    public $noteId;
-    /**
-     * Output only. The revision number of the proposal when the note is created.
-     *
-     * @var string
-     */
-    public $proposalRevision;
-    /**
-     * Output only. The timestamp for when this note was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\AdExchangeBuyerII {
+    class Note extends \Google\Model
     {
+        /**
+         * A placeholder for an undefined buyer/seller role.
+         */
+        public const CREATOR_ROLE_BUYER_SELLER_ROLE_UNSPECIFIED = 'BUYER_SELLER_ROLE_UNSPECIFIED';
+        /**
+         * Specifies the role as buyer.
+         */
+        public const CREATOR_ROLE_BUYER = 'BUYER';
+        /**
+         * Specifies the role as seller.
+         */
+        public const CREATOR_ROLE_SELLER = 'SELLER';
+        /**
+         * Output only. The timestamp for when this note was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Output only. The role of the person (buyer/seller) creating the note.
+         *
+         * @var string
+         */
+        public $creatorRole;
+        /**
+         * The actual note to attach. (max-length: 1024 unicode code units) Note: This
+         * field may be set only when creating the resource. Modifying this field
+         * while updating the resource will result in an error.
+         *
+         * @var string
+         */
+        public $note;
+        /**
+         * Output only. The unique ID for the note.
+         *
+         * @var string
+         */
+        public $noteId;
+        /**
+         * Output only. The revision number of the proposal when the note is created.
+         *
+         * @var string
+         */
+        public $proposalRevision;
+        /**
+         * Output only. The timestamp for when this note was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. The role of the person (buyer/seller) creating the note.
+         *
+         * Accepted values: BUYER_SELLER_ROLE_UNSPECIFIED, BUYER, SELLER
+         *
+         * @param self::CREATOR_ROLE_* $creatorRole
+         */
+        public function setCreatorRole($creatorRole)
+        {
+        }
+        /**
+         * @return self::CREATOR_ROLE_*
+         */
+        public function getCreatorRole()
+        {
+        }
+        /**
+         * The actual note to attach. (max-length: 1024 unicode code units) Note: This
+         * field may be set only when creating the resource. Modifying this field
+         * while updating the resource will result in an error.
+         *
+         * @param string $note
+         */
+        public function setNote($note)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNote()
+        {
+        }
+        /**
+         * Output only. The unique ID for the note.
+         *
+         * @param string $noteId
+         */
+        public function setNoteId($noteId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNoteId()
+        {
+        }
+        /**
+         * Output only. The revision number of the proposal when the note is created.
+         *
+         * @param string $proposalRevision
+         */
+        public function setProposalRevision($proposalRevision)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProposalRevision()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AdExchangeBuyerII\Note registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. The role of the person (buyer/seller) creating the note.
-     *
-     * Accepted values: BUYER_SELLER_ROLE_UNSPECIFIED, BUYER, SELLER
-     *
-     * @param self::CREATOR_ROLE_* $creatorRole
-     */
-    public function setCreatorRole($creatorRole)
-    {
-    }
-    /**
-     * @return self::CREATOR_ROLE_*
-     */
-    public function getCreatorRole()
-    {
-    }
-    /**
-     * The actual note to attach. (max-length: 1024 unicode code units) Note: This
-     * field may be set only when creating the resource. Modifying this field
-     * while updating the resource will result in an error.
-     *
-     * @param string $note
-     */
-    public function setNote($note)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNote()
-    {
-    }
-    /**
-     * Output only. The unique ID for the note.
-     *
-     * @param string $noteId
-     */
-    public function setNoteId($noteId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNoteId()
-    {
-    }
-    /**
-     * Output only. The revision number of the proposal when the note is created.
-     *
-     * @param string $proposalRevision
-     */
-    public function setProposalRevision($proposalRevision)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProposalRevision()
+    class Google_Service_AdExchangeBuyerII_Note extends \Google\Service\AdExchangeBuyerII\Note
     {
     }
 }

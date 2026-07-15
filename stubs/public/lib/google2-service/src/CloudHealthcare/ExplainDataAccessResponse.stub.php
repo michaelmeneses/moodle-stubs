@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class ExplainDataAccessResponse extends \Google\Collection
-{
-    protected $collection_key = 'consentScopes';
-    protected $consentScopesType = ExplainDataAccessConsentScope::class;
-    protected $consentScopesDataType = 'array';
-    /**
-     * Warnings associated with this response. It inform user with exceeded scope
-     * limit errors.
-     *
-     * @var string
-     */
-    public $warning;
-    /**
-     * List of applicable consent scopes. Sorted in order of actor such that
-     * scopes belonging to the same actor will be adjacent to each other in the
-     * list.
-     *
-     * @param ExplainDataAccessConsentScope[] $consentScopes
-     */
-    public function setConsentScopes($consentScopes)
+namespace Google\Service\CloudHealthcare {
+    class ExplainDataAccessResponse extends \Google\Collection
     {
+        protected $collection_key = 'consentScopes';
+        protected $consentScopesType = ExplainDataAccessConsentScope::class;
+        protected $consentScopesDataType = 'array';
+        /**
+         * Warnings associated with this response. It inform user with exceeded scope
+         * limit errors.
+         *
+         * @var string
+         */
+        public $warning;
+        /**
+         * List of applicable consent scopes. Sorted in order of actor such that
+         * scopes belonging to the same actor will be adjacent to each other in the
+         * list.
+         *
+         * @param ExplainDataAccessConsentScope[] $consentScopes
+         */
+        public function setConsentScopes($consentScopes)
+        {
+        }
+        /**
+         * @return ExplainDataAccessConsentScope[]
+         */
+        public function getConsentScopes()
+        {
+        }
+        /**
+         * Warnings associated with this response. It inform user with exceeded scope
+         * limit errors.
+         *
+         * @param string $warning
+         */
+        public function setWarning($warning)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWarning()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ExplainDataAccessConsentScope[]
+     * Runtime class alias of \Google\Service\CloudHealthcare\ExplainDataAccessResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConsentScopes()
-    {
-    }
-    /**
-     * Warnings associated with this response. It inform user with exceeded scope
-     * limit errors.
-     *
-     * @param string $warning
-     */
-    public function setWarning($warning)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWarning()
+    class Google_Service_CloudHealthcare_ExplainDataAccessResponse extends \Google\Service\CloudHealthcare\ExplainDataAccessResponse
     {
     }
 }

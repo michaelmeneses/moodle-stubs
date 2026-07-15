@@ -21,253 +21,262 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0CommonUnifiedCallAsset extends \Google\Collection
-{
-    /**
-     * Not specified.
-     */
-    public const CALL_CONVERSION_REPORTING_STATE_UNSPECIFIED = 'UNSPECIFIED';
-    /**
-     * Used for return value only. Represents value unknown in this version.
-     */
-    public const CALL_CONVERSION_REPORTING_STATE_UNKNOWN = 'UNKNOWN';
-    /**
-     * Call conversion action is disabled.
-     */
-    public const CALL_CONVERSION_REPORTING_STATE_DISABLED = 'DISABLED';
-    /**
-     * Call conversion action will use call conversion type set at the account
-     * level.
-     */
-    public const CALL_CONVERSION_REPORTING_STATE_USE_ACCOUNT_LEVEL_CALL_CONVERSION_ACTION = 'USE_ACCOUNT_LEVEL_CALL_CONVERSION_ACTION';
-    /**
-     * Call conversion action will use call conversion type set at the resource
-     * (call only ads/call extensions) level.
-     */
-    public const CALL_CONVERSION_REPORTING_STATE_USE_RESOURCE_LEVEL_CALL_CONVERSION_ACTION = 'USE_RESOURCE_LEVEL_CALL_CONVERSION_ACTION';
-    protected $collection_key = 'adScheduleTargets';
-    protected $adScheduleTargetsType = GoogleAdsSearchads360V0CommonAdScheduleInfo::class;
-    protected $adScheduleTargetsDataType = 'array';
-    /**
-     * The conversion action to attribute a call conversion to. If not set, the
-     * default conversion action is used. This field only has effect if
-     * call_conversion_reporting_state is set to
-     * USE_RESOURCE_LEVEL_CALL_CONVERSION_ACTION.
-     *
-     * @var string
-     */
-    public $callConversionAction;
-    /**
-     * Output only. Indicates whether this CallAsset should use its own call
-     * conversion setting, follow the account level setting, or disable call
-     * conversion.
-     *
-     * @var string
-     */
-    public $callConversionReportingState;
-    /**
-     * Whether the call only shows the phone number without a link to the website.
-     * Applies to Microsoft Ads.
-     *
-     * @var bool
-     */
-    public $callOnly;
-    /**
-     * Whether the call should be enabled on call tracking. Applies to Microsoft
-     * Ads.
-     *
-     * @var bool
-     */
-    public $callTrackingEnabled;
-    /**
-     * Two-letter country code of the phone number. Examples: 'US', 'us'.
-     *
-     * @var string
-     */
-    public $countryCode;
-    /**
-     * Last date of when this asset is effective and still serving, in yyyy-MM-dd
-     * format.
-     *
-     * @var string
-     */
-    public $endDate;
-    /**
-     * The advertiser's raw phone number. Examples: '1234567890', '(123)456-7890'
-     *
-     * @var string
-     */
-    public $phoneNumber;
-    /**
-     * Start date of when this asset is effective and can begin serving, in yyyy-
-     * MM-dd format.
-     *
-     * @var string
-     */
-    public $startDate;
-    /**
-     * Whether to show the call extension in search user's time zone. Applies to
-     * Microsoft Ads.
-     *
-     * @var bool
-     */
-    public $useSearcherTimeZone;
-    /**
-     * List of non-overlapping schedules specifying all time intervals for which
-     * the asset may serve. There can be a maximum of 6 schedules per day, 42 in
-     * total.
-     *
-     * @param GoogleAdsSearchads360V0CommonAdScheduleInfo[] $adScheduleTargets
-     */
-    public function setAdScheduleTargets($adScheduleTargets)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0CommonUnifiedCallAsset extends \Google\Collection
     {
+        /**
+         * Not specified.
+         */
+        public const CALL_CONVERSION_REPORTING_STATE_UNSPECIFIED = 'UNSPECIFIED';
+        /**
+         * Used for return value only. Represents value unknown in this version.
+         */
+        public const CALL_CONVERSION_REPORTING_STATE_UNKNOWN = 'UNKNOWN';
+        /**
+         * Call conversion action is disabled.
+         */
+        public const CALL_CONVERSION_REPORTING_STATE_DISABLED = 'DISABLED';
+        /**
+         * Call conversion action will use call conversion type set at the account
+         * level.
+         */
+        public const CALL_CONVERSION_REPORTING_STATE_USE_ACCOUNT_LEVEL_CALL_CONVERSION_ACTION = 'USE_ACCOUNT_LEVEL_CALL_CONVERSION_ACTION';
+        /**
+         * Call conversion action will use call conversion type set at the resource
+         * (call only ads/call extensions) level.
+         */
+        public const CALL_CONVERSION_REPORTING_STATE_USE_RESOURCE_LEVEL_CALL_CONVERSION_ACTION = 'USE_RESOURCE_LEVEL_CALL_CONVERSION_ACTION';
+        protected $collection_key = 'adScheduleTargets';
+        protected $adScheduleTargetsType = GoogleAdsSearchads360V0CommonAdScheduleInfo::class;
+        protected $adScheduleTargetsDataType = 'array';
+        /**
+         * The conversion action to attribute a call conversion to. If not set, the
+         * default conversion action is used. This field only has effect if
+         * call_conversion_reporting_state is set to
+         * USE_RESOURCE_LEVEL_CALL_CONVERSION_ACTION.
+         *
+         * @var string
+         */
+        public $callConversionAction;
+        /**
+         * Output only. Indicates whether this CallAsset should use its own call
+         * conversion setting, follow the account level setting, or disable call
+         * conversion.
+         *
+         * @var string
+         */
+        public $callConversionReportingState;
+        /**
+         * Whether the call only shows the phone number without a link to the website.
+         * Applies to Microsoft Ads.
+         *
+         * @var bool
+         */
+        public $callOnly;
+        /**
+         * Whether the call should be enabled on call tracking. Applies to Microsoft
+         * Ads.
+         *
+         * @var bool
+         */
+        public $callTrackingEnabled;
+        /**
+         * Two-letter country code of the phone number. Examples: 'US', 'us'.
+         *
+         * @var string
+         */
+        public $countryCode;
+        /**
+         * Last date of when this asset is effective and still serving, in yyyy-MM-dd
+         * format.
+         *
+         * @var string
+         */
+        public $endDate;
+        /**
+         * The advertiser's raw phone number. Examples: '1234567890', '(123)456-7890'
+         *
+         * @var string
+         */
+        public $phoneNumber;
+        /**
+         * Start date of when this asset is effective and can begin serving, in yyyy-
+         * MM-dd format.
+         *
+         * @var string
+         */
+        public $startDate;
+        /**
+         * Whether to show the call extension in search user's time zone. Applies to
+         * Microsoft Ads.
+         *
+         * @var bool
+         */
+        public $useSearcherTimeZone;
+        /**
+         * List of non-overlapping schedules specifying all time intervals for which
+         * the asset may serve. There can be a maximum of 6 schedules per day, 42 in
+         * total.
+         *
+         * @param GoogleAdsSearchads360V0CommonAdScheduleInfo[] $adScheduleTargets
+         */
+        public function setAdScheduleTargets($adScheduleTargets)
+        {
+        }
+        /**
+         * @return GoogleAdsSearchads360V0CommonAdScheduleInfo[]
+         */
+        public function getAdScheduleTargets()
+        {
+        }
+        /**
+         * The conversion action to attribute a call conversion to. If not set, the
+         * default conversion action is used. This field only has effect if
+         * call_conversion_reporting_state is set to
+         * USE_RESOURCE_LEVEL_CALL_CONVERSION_ACTION.
+         *
+         * @param string $callConversionAction
+         */
+        public function setCallConversionAction($callConversionAction)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCallConversionAction()
+        {
+        }
+        /**
+         * Output only. Indicates whether this CallAsset should use its own call
+         * conversion setting, follow the account level setting, or disable call
+         * conversion.
+         *
+         * Accepted values: UNSPECIFIED, UNKNOWN, DISABLED,
+         * USE_ACCOUNT_LEVEL_CALL_CONVERSION_ACTION,
+         * USE_RESOURCE_LEVEL_CALL_CONVERSION_ACTION
+         *
+         * @param self::CALL_CONVERSION_REPORTING_STATE_* $callConversionReportingState
+         */
+        public function setCallConversionReportingState($callConversionReportingState)
+        {
+        }
+        /**
+         * @return self::CALL_CONVERSION_REPORTING_STATE_*
+         */
+        public function getCallConversionReportingState()
+        {
+        }
+        /**
+         * Whether the call only shows the phone number without a link to the website.
+         * Applies to Microsoft Ads.
+         *
+         * @param bool $callOnly
+         */
+        public function setCallOnly($callOnly)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCallOnly()
+        {
+        }
+        /**
+         * Whether the call should be enabled on call tracking. Applies to Microsoft
+         * Ads.
+         *
+         * @param bool $callTrackingEnabled
+         */
+        public function setCallTrackingEnabled($callTrackingEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCallTrackingEnabled()
+        {
+        }
+        /**
+         * Two-letter country code of the phone number. Examples: 'US', 'us'.
+         *
+         * @param string $countryCode
+         */
+        public function setCountryCode($countryCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCountryCode()
+        {
+        }
+        /**
+         * Last date of when this asset is effective and still serving, in yyyy-MM-dd
+         * format.
+         *
+         * @param string $endDate
+         */
+        public function setEndDate($endDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndDate()
+        {
+        }
+        /**
+         * The advertiser's raw phone number. Examples: '1234567890', '(123)456-7890'
+         *
+         * @param string $phoneNumber
+         */
+        public function setPhoneNumber($phoneNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPhoneNumber()
+        {
+        }
+        /**
+         * Start date of when this asset is effective and can begin serving, in yyyy-
+         * MM-dd format.
+         *
+         * @param string $startDate
+         */
+        public function setStartDate($startDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartDate()
+        {
+        }
+        /**
+         * Whether to show the call extension in search user's time zone. Applies to
+         * Microsoft Ads.
+         *
+         * @param bool $useSearcherTimeZone
+         */
+        public function setUseSearcherTimeZone($useSearcherTimeZone)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUseSearcherTimeZone()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAdsSearchads360V0CommonAdScheduleInfo[]
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0CommonUnifiedCallAsset registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdScheduleTargets()
-    {
-    }
-    /**
-     * The conversion action to attribute a call conversion to. If not set, the
-     * default conversion action is used. This field only has effect if
-     * call_conversion_reporting_state is set to
-     * USE_RESOURCE_LEVEL_CALL_CONVERSION_ACTION.
-     *
-     * @param string $callConversionAction
-     */
-    public function setCallConversionAction($callConversionAction)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCallConversionAction()
-    {
-    }
-    /**
-     * Output only. Indicates whether this CallAsset should use its own call
-     * conversion setting, follow the account level setting, or disable call
-     * conversion.
-     *
-     * Accepted values: UNSPECIFIED, UNKNOWN, DISABLED,
-     * USE_ACCOUNT_LEVEL_CALL_CONVERSION_ACTION,
-     * USE_RESOURCE_LEVEL_CALL_CONVERSION_ACTION
-     *
-     * @param self::CALL_CONVERSION_REPORTING_STATE_* $callConversionReportingState
-     */
-    public function setCallConversionReportingState($callConversionReportingState)
-    {
-    }
-    /**
-     * @return self::CALL_CONVERSION_REPORTING_STATE_*
-     */
-    public function getCallConversionReportingState()
-    {
-    }
-    /**
-     * Whether the call only shows the phone number without a link to the website.
-     * Applies to Microsoft Ads.
-     *
-     * @param bool $callOnly
-     */
-    public function setCallOnly($callOnly)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCallOnly()
-    {
-    }
-    /**
-     * Whether the call should be enabled on call tracking. Applies to Microsoft
-     * Ads.
-     *
-     * @param bool $callTrackingEnabled
-     */
-    public function setCallTrackingEnabled($callTrackingEnabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCallTrackingEnabled()
-    {
-    }
-    /**
-     * Two-letter country code of the phone number. Examples: 'US', 'us'.
-     *
-     * @param string $countryCode
-     */
-    public function setCountryCode($countryCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCountryCode()
-    {
-    }
-    /**
-     * Last date of when this asset is effective and still serving, in yyyy-MM-dd
-     * format.
-     *
-     * @param string $endDate
-     */
-    public function setEndDate($endDate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndDate()
-    {
-    }
-    /**
-     * The advertiser's raw phone number. Examples: '1234567890', '(123)456-7890'
-     *
-     * @param string $phoneNumber
-     */
-    public function setPhoneNumber($phoneNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPhoneNumber()
-    {
-    }
-    /**
-     * Start date of when this asset is effective and can begin serving, in yyyy-
-     * MM-dd format.
-     *
-     * @param string $startDate
-     */
-    public function setStartDate($startDate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartDate()
-    {
-    }
-    /**
-     * Whether to show the call extension in search user's time zone. Applies to
-     * Microsoft Ads.
-     *
-     * @param bool $useSearcherTimeZone
-     */
-    public function setUseSearcherTimeZone($useSearcherTimeZone)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUseSearcherTimeZone()
+    class Google_Service_SA360_GoogleAdsSearchads360V0CommonUnifiedCallAsset extends \Google\Service\SA360\GoogleAdsSearchads360V0CommonUnifiedCallAsset
     {
     }
 }

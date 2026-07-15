@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PeopleService;
-
-class ListContactGroupsResponse extends \Google\Collection
-{
-    protected $collection_key = 'contactGroups';
-    protected $contactGroupsType = ContactGroup::class;
-    protected $contactGroupsDataType = 'array';
-    /**
-     * The token that can be used to retrieve the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The token that can be used to retrieve changes since the last request.
-     *
-     * @var string
-     */
-    public $nextSyncToken;
-    /**
-     * The total number of items in the list without pagination.
-     *
-     * @var int
-     */
-    public $totalItems;
-    /**
-     * The list of contact groups. Members of the contact groups are not
-     * populated.
-     *
-     * @param ContactGroup[] $contactGroups
-     */
-    public function setContactGroups($contactGroups)
+namespace Google\Service\PeopleService {
+    class ListContactGroupsResponse extends \Google\Collection
     {
+        protected $collection_key = 'contactGroups';
+        protected $contactGroupsType = ContactGroup::class;
+        protected $contactGroupsDataType = 'array';
+        /**
+         * The token that can be used to retrieve the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The token that can be used to retrieve changes since the last request.
+         *
+         * @var string
+         */
+        public $nextSyncToken;
+        /**
+         * The total number of items in the list without pagination.
+         *
+         * @var int
+         */
+        public $totalItems;
+        /**
+         * The list of contact groups. Members of the contact groups are not
+         * populated.
+         *
+         * @param ContactGroup[] $contactGroups
+         */
+        public function setContactGroups($contactGroups)
+        {
+        }
+        /**
+         * @return ContactGroup[]
+         */
+        public function getContactGroups()
+        {
+        }
+        /**
+         * The token that can be used to retrieve the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The token that can be used to retrieve changes since the last request.
+         *
+         * @param string $nextSyncToken
+         */
+        public function setNextSyncToken($nextSyncToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextSyncToken()
+        {
+        }
+        /**
+         * The total number of items in the list without pagination.
+         *
+         * @param int $totalItems
+         */
+        public function setTotalItems($totalItems)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalItems()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ContactGroup[]
+     * Runtime class alias of \Google\Service\PeopleService\ListContactGroupsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContactGroups()
-    {
-    }
-    /**
-     * The token that can be used to retrieve the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The token that can be used to retrieve changes since the last request.
-     *
-     * @param string $nextSyncToken
-     */
-    public function setNextSyncToken($nextSyncToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextSyncToken()
-    {
-    }
-    /**
-     * The total number of items in the list without pagination.
-     *
-     * @param int $totalItems
-     */
-    public function setTotalItems($totalItems)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalItems()
+    class Google_Service_PeopleService_ListContactGroupsResponse extends \Google\Service\PeopleService\ListContactGroupsResponse
     {
     }
 }

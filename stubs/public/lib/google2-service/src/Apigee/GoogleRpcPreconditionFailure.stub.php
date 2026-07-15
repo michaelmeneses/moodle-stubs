@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleRpcPreconditionFailure extends \Google\Collection
-{
-    protected $collection_key = 'violations';
-    protected $violationsType = GoogleRpcPreconditionFailureViolation::class;
-    protected $violationsDataType = 'array';
-    /**
-     * Describes all precondition violations.
-     *
-     * @param GoogleRpcPreconditionFailureViolation[] $violations
-     */
-    public function setViolations($violations)
+namespace Google\Service\Apigee {
+    class GoogleRpcPreconditionFailure extends \Google\Collection
     {
+        protected $collection_key = 'violations';
+        protected $violationsType = GoogleRpcPreconditionFailureViolation::class;
+        protected $violationsDataType = 'array';
+        /**
+         * Describes all precondition violations.
+         *
+         * @param GoogleRpcPreconditionFailureViolation[] $violations
+         */
+        public function setViolations($violations)
+        {
+        }
+        /**
+         * @return GoogleRpcPreconditionFailureViolation[]
+         */
+        public function getViolations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleRpcPreconditionFailureViolation[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleRpcPreconditionFailure registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getViolations()
+    class Google_Service_Apigee_GoogleRpcPreconditionFailure extends \Google\Service\Apigee\GoogleRpcPreconditionFailure
     {
     }
 }

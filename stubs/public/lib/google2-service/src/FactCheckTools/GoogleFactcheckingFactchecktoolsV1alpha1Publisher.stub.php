@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FactCheckTools;
-
-class GoogleFactcheckingFactchecktoolsV1alpha1Publisher extends \Google\Model
-{
-    /**
-     * The name of this publisher. For instance, "Awesome Fact Checks".
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Host-level site name, without the protocol or "www" prefix. For instance,
-     * "awesomefactchecks.com". This value of this field is based purely on the
-     * claim review URL.
-     *
-     * @var string
-     */
-    public $site;
-    /**
-     * The name of this publisher. For instance, "Awesome Fact Checks".
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\FactCheckTools {
+    class GoogleFactcheckingFactchecktoolsV1alpha1Publisher extends \Google\Model
     {
+        /**
+         * The name of this publisher. For instance, "Awesome Fact Checks".
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Host-level site name, without the protocol or "www" prefix. For instance,
+         * "awesomefactchecks.com". This value of this field is based purely on the
+         * claim review URL.
+         *
+         * @var string
+         */
+        public $site;
+        /**
+         * The name of this publisher. For instance, "Awesome Fact Checks".
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Host-level site name, without the protocol or "www" prefix. For instance,
+         * "awesomefactchecks.com". This value of this field is based purely on the
+         * claim review URL.
+         *
+         * @param string $site
+         */
+        public function setSite($site)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSite()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\FactCheckTools\GoogleFactcheckingFactchecktoolsV1alpha1Publisher registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Host-level site name, without the protocol or "www" prefix. For instance,
-     * "awesomefactchecks.com". This value of this field is based purely on the
-     * claim review URL.
-     *
-     * @param string $site
-     */
-    public function setSite($site)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSite()
+    class Google_Service_FactCheckTools_GoogleFactcheckingFactchecktoolsV1alpha1Publisher extends \Google\Service\FactCheckTools\GoogleFactcheckingFactchecktoolsV1alpha1Publisher
     {
     }
 }

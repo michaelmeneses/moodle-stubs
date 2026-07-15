@@ -21,137 +21,146 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class PermissionSettings extends \Google\Model
-{
-    protected $manageAppsType = PermissionSetting::class;
-    protected $manageAppsDataType = '';
-    protected $manageMembersAndGroupsType = PermissionSetting::class;
-    protected $manageMembersAndGroupsDataType = '';
-    protected $manageWebhooksType = PermissionSetting::class;
-    protected $manageWebhooksDataType = '';
-    protected $modifySpaceDetailsType = PermissionSetting::class;
-    protected $modifySpaceDetailsDataType = '';
-    protected $postMessagesType = PermissionSetting::class;
-    protected $postMessagesDataType = '';
-    protected $replyMessagesType = PermissionSetting::class;
-    protected $replyMessagesDataType = '';
-    protected $toggleHistoryType = PermissionSetting::class;
-    protected $toggleHistoryDataType = '';
-    protected $useAtMentionAllType = PermissionSetting::class;
-    protected $useAtMentionAllDataType = '';
-    /**
-     * Optional. Setting for managing apps in a space.
-     *
-     * @param PermissionSetting $manageApps
-     */
-    public function setManageApps(PermissionSetting $manageApps)
+namespace Google\Service\HangoutsChat {
+    class PermissionSettings extends \Google\Model
     {
+        protected $manageAppsType = PermissionSetting::class;
+        protected $manageAppsDataType = '';
+        protected $manageMembersAndGroupsType = PermissionSetting::class;
+        protected $manageMembersAndGroupsDataType = '';
+        protected $manageWebhooksType = PermissionSetting::class;
+        protected $manageWebhooksDataType = '';
+        protected $modifySpaceDetailsType = PermissionSetting::class;
+        protected $modifySpaceDetailsDataType = '';
+        protected $postMessagesType = PermissionSetting::class;
+        protected $postMessagesDataType = '';
+        protected $replyMessagesType = PermissionSetting::class;
+        protected $replyMessagesDataType = '';
+        protected $toggleHistoryType = PermissionSetting::class;
+        protected $toggleHistoryDataType = '';
+        protected $useAtMentionAllType = PermissionSetting::class;
+        protected $useAtMentionAllDataType = '';
+        /**
+         * Optional. Setting for managing apps in a space.
+         *
+         * @param PermissionSetting $manageApps
+         */
+        public function setManageApps(PermissionSetting $manageApps)
+        {
+        }
+        /**
+         * @return PermissionSetting
+         */
+        public function getManageApps()
+        {
+        }
+        /**
+         * Optional. Setting for managing members and groups in a space.
+         *
+         * @param PermissionSetting $manageMembersAndGroups
+         */
+        public function setManageMembersAndGroups(PermissionSetting $manageMembersAndGroups)
+        {
+        }
+        /**
+         * @return PermissionSetting
+         */
+        public function getManageMembersAndGroups()
+        {
+        }
+        /**
+         * Optional. Setting for managing webhooks in a space.
+         *
+         * @param PermissionSetting $manageWebhooks
+         */
+        public function setManageWebhooks(PermissionSetting $manageWebhooks)
+        {
+        }
+        /**
+         * @return PermissionSetting
+         */
+        public function getManageWebhooks()
+        {
+        }
+        /**
+         * Optional. Setting for updating space name, avatar, description and
+         * guidelines.
+         *
+         * @param PermissionSetting $modifySpaceDetails
+         */
+        public function setModifySpaceDetails(PermissionSetting $modifySpaceDetails)
+        {
+        }
+        /**
+         * @return PermissionSetting
+         */
+        public function getModifySpaceDetails()
+        {
+        }
+        /**
+         * Output only. Setting for posting messages in a space.
+         *
+         * @param PermissionSetting $postMessages
+         */
+        public function setPostMessages(PermissionSetting $postMessages)
+        {
+        }
+        /**
+         * @return PermissionSetting
+         */
+        public function getPostMessages()
+        {
+        }
+        /**
+         * Optional. Setting for replying to messages in a space.
+         *
+         * @param PermissionSetting $replyMessages
+         */
+        public function setReplyMessages(PermissionSetting $replyMessages)
+        {
+        }
+        /**
+         * @return PermissionSetting
+         */
+        public function getReplyMessages()
+        {
+        }
+        /**
+         * Optional. Setting for toggling space history on and off.
+         *
+         * @param PermissionSetting $toggleHistory
+         */
+        public function setToggleHistory(PermissionSetting $toggleHistory)
+        {
+        }
+        /**
+         * @return PermissionSetting
+         */
+        public function getToggleHistory()
+        {
+        }
+        /**
+         * Optional. Setting for using @all in a space.
+         *
+         * @param PermissionSetting $useAtMentionAll
+         */
+        public function setUseAtMentionAll(PermissionSetting $useAtMentionAll)
+        {
+        }
+        /**
+         * @return PermissionSetting
+         */
+        public function getUseAtMentionAll()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PermissionSetting
+     * Runtime class alias of \Google\Service\HangoutsChat\PermissionSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getManageApps()
-    {
-    }
-    /**
-     * Optional. Setting for managing members and groups in a space.
-     *
-     * @param PermissionSetting $manageMembersAndGroups
-     */
-    public function setManageMembersAndGroups(PermissionSetting $manageMembersAndGroups)
-    {
-    }
-    /**
-     * @return PermissionSetting
-     */
-    public function getManageMembersAndGroups()
-    {
-    }
-    /**
-     * Optional. Setting for managing webhooks in a space.
-     *
-     * @param PermissionSetting $manageWebhooks
-     */
-    public function setManageWebhooks(PermissionSetting $manageWebhooks)
-    {
-    }
-    /**
-     * @return PermissionSetting
-     */
-    public function getManageWebhooks()
-    {
-    }
-    /**
-     * Optional. Setting for updating space name, avatar, description and
-     * guidelines.
-     *
-     * @param PermissionSetting $modifySpaceDetails
-     */
-    public function setModifySpaceDetails(PermissionSetting $modifySpaceDetails)
-    {
-    }
-    /**
-     * @return PermissionSetting
-     */
-    public function getModifySpaceDetails()
-    {
-    }
-    /**
-     * Output only. Setting for posting messages in a space.
-     *
-     * @param PermissionSetting $postMessages
-     */
-    public function setPostMessages(PermissionSetting $postMessages)
-    {
-    }
-    /**
-     * @return PermissionSetting
-     */
-    public function getPostMessages()
-    {
-    }
-    /**
-     * Optional. Setting for replying to messages in a space.
-     *
-     * @param PermissionSetting $replyMessages
-     */
-    public function setReplyMessages(PermissionSetting $replyMessages)
-    {
-    }
-    /**
-     * @return PermissionSetting
-     */
-    public function getReplyMessages()
-    {
-    }
-    /**
-     * Optional. Setting for toggling space history on and off.
-     *
-     * @param PermissionSetting $toggleHistory
-     */
-    public function setToggleHistory(PermissionSetting $toggleHistory)
-    {
-    }
-    /**
-     * @return PermissionSetting
-     */
-    public function getToggleHistory()
-    {
-    }
-    /**
-     * Optional. Setting for using @all in a space.
-     *
-     * @param PermissionSetting $useAtMentionAll
-     */
-    public function setUseAtMentionAll(PermissionSetting $useAtMentionAll)
-    {
-    }
-    /**
-     * @return PermissionSetting
-     */
-    public function getUseAtMentionAll()
+    class Google_Service_HangoutsChat_PermissionSettings extends \Google\Service\HangoutsChat\PermissionSettings
     {
     }
 }

@@ -21,122 +21,131 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class MembershipEndpoint extends \Google\Model
-{
-    protected $applianceClusterType = ApplianceCluster::class;
-    protected $applianceClusterDataType = '';
-    protected $edgeClusterType = EdgeCluster::class;
-    protected $edgeClusterDataType = '';
-    protected $gkeClusterType = GkeCluster::class;
-    protected $gkeClusterDataType = '';
-    /**
-     * @var bool
-     */
-    public $googleManaged;
-    protected $kubernetesMetadataType = KubernetesMetadata::class;
-    protected $kubernetesMetadataDataType = '';
-    protected $kubernetesResourceType = KubernetesResource::class;
-    protected $kubernetesResourceDataType = '';
-    protected $multiCloudClusterType = MultiCloudCluster::class;
-    protected $multiCloudClusterDataType = '';
-    protected $onPremClusterType = OnPremCluster::class;
-    protected $onPremClusterDataType = '';
-    /**
-     * @param ApplianceCluster
-     */
-    public function setApplianceCluster(ApplianceCluster $applianceCluster)
+namespace Google\Service\GKEHub {
+    class MembershipEndpoint extends \Google\Model
     {
+        protected $applianceClusterType = ApplianceCluster::class;
+        protected $applianceClusterDataType = '';
+        protected $edgeClusterType = EdgeCluster::class;
+        protected $edgeClusterDataType = '';
+        protected $gkeClusterType = GkeCluster::class;
+        protected $gkeClusterDataType = '';
+        /**
+         * @var bool
+         */
+        public $googleManaged;
+        protected $kubernetesMetadataType = KubernetesMetadata::class;
+        protected $kubernetesMetadataDataType = '';
+        protected $kubernetesResourceType = KubernetesResource::class;
+        protected $kubernetesResourceDataType = '';
+        protected $multiCloudClusterType = MultiCloudCluster::class;
+        protected $multiCloudClusterDataType = '';
+        protected $onPremClusterType = OnPremCluster::class;
+        protected $onPremClusterDataType = '';
+        /**
+         * @param ApplianceCluster
+         */
+        public function setApplianceCluster(ApplianceCluster $applianceCluster)
+        {
+        }
+        /**
+         * @return ApplianceCluster
+         */
+        public function getApplianceCluster()
+        {
+        }
+        /**
+         * @param EdgeCluster
+         */
+        public function setEdgeCluster(EdgeCluster $edgeCluster)
+        {
+        }
+        /**
+         * @return EdgeCluster
+         */
+        public function getEdgeCluster()
+        {
+        }
+        /**
+         * @param GkeCluster
+         */
+        public function setGkeCluster(GkeCluster $gkeCluster)
+        {
+        }
+        /**
+         * @return GkeCluster
+         */
+        public function getGkeCluster()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setGoogleManaged($googleManaged)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getGoogleManaged()
+        {
+        }
+        /**
+         * @param KubernetesMetadata
+         */
+        public function setKubernetesMetadata(KubernetesMetadata $kubernetesMetadata)
+        {
+        }
+        /**
+         * @return KubernetesMetadata
+         */
+        public function getKubernetesMetadata()
+        {
+        }
+        /**
+         * @param KubernetesResource
+         */
+        public function setKubernetesResource(KubernetesResource $kubernetesResource)
+        {
+        }
+        /**
+         * @return KubernetesResource
+         */
+        public function getKubernetesResource()
+        {
+        }
+        /**
+         * @param MultiCloudCluster
+         */
+        public function setMultiCloudCluster(MultiCloudCluster $multiCloudCluster)
+        {
+        }
+        /**
+         * @return MultiCloudCluster
+         */
+        public function getMultiCloudCluster()
+        {
+        }
+        /**
+         * @param OnPremCluster
+         */
+        public function setOnPremCluster(OnPremCluster $onPremCluster)
+        {
+        }
+        /**
+         * @return OnPremCluster
+         */
+        public function getOnPremCluster()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ApplianceCluster
+     * Runtime class alias of \Google\Service\GKEHub\MembershipEndpoint registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApplianceCluster()
-    {
-    }
-    /**
-     * @param EdgeCluster
-     */
-    public function setEdgeCluster(EdgeCluster $edgeCluster)
-    {
-    }
-    /**
-     * @return EdgeCluster
-     */
-    public function getEdgeCluster()
-    {
-    }
-    /**
-     * @param GkeCluster
-     */
-    public function setGkeCluster(GkeCluster $gkeCluster)
-    {
-    }
-    /**
-     * @return GkeCluster
-     */
-    public function getGkeCluster()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setGoogleManaged($googleManaged)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getGoogleManaged()
-    {
-    }
-    /**
-     * @param KubernetesMetadata
-     */
-    public function setKubernetesMetadata(KubernetesMetadata $kubernetesMetadata)
-    {
-    }
-    /**
-     * @return KubernetesMetadata
-     */
-    public function getKubernetesMetadata()
-    {
-    }
-    /**
-     * @param KubernetesResource
-     */
-    public function setKubernetesResource(KubernetesResource $kubernetesResource)
-    {
-    }
-    /**
-     * @return KubernetesResource
-     */
-    public function getKubernetesResource()
-    {
-    }
-    /**
-     * @param MultiCloudCluster
-     */
-    public function setMultiCloudCluster(MultiCloudCluster $multiCloudCluster)
-    {
-    }
-    /**
-     * @return MultiCloudCluster
-     */
-    public function getMultiCloudCluster()
-    {
-    }
-    /**
-     * @param OnPremCluster
-     */
-    public function setOnPremCluster(OnPremCluster $onPremCluster)
-    {
-    }
-    /**
-     * @return OnPremCluster
-     */
-    public function getOnPremCluster()
+    class Google_Service_GKEHub_MembershipEndpoint extends \Google\Service\GKEHub\MembershipEndpoint
     {
     }
 }

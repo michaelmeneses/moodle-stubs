@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class LinksModuleData extends \Google\Collection
-{
-    protected $collection_key = 'uris';
-    protected $urisType = Uri::class;
-    protected $urisDataType = 'array';
-    /**
-     * The list of URIs.
-     *
-     * @param Uri[] $uris
-     */
-    public function setUris($uris)
+namespace Google\Service\Walletobjects {
+    class LinksModuleData extends \Google\Collection
     {
+        protected $collection_key = 'uris';
+        protected $urisType = Uri::class;
+        protected $urisDataType = 'array';
+        /**
+         * The list of URIs.
+         *
+         * @param Uri[] $uris
+         */
+        public function setUris($uris)
+        {
+        }
+        /**
+         * @return Uri[]
+         */
+        public function getUris()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Uri[]
+     * Runtime class alias of \Google\Service\Walletobjects\LinksModuleData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUris()
+    class Google_Service_Walletobjects_LinksModuleData extends \Google\Service\Walletobjects\LinksModuleData
     {
     }
 }

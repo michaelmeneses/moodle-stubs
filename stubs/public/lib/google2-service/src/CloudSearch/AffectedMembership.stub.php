@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AffectedMembership extends \Google\Model
-{
-    protected $affectedMemberType = MemberId::class;
-    protected $affectedMemberDataType = '';
-    /**
-     * @var string
-     */
-    public $priorMembershipRole;
-    /**
-     * @var string
-     */
-    public $priorMembershipState;
-    /**
-     * @var string
-     */
-    public $targetMembershipRole;
-    /**
-     * @param MemberId
-     */
-    public function setAffectedMember(MemberId $affectedMember)
+namespace Google\Service\CloudSearch {
+    class AffectedMembership extends \Google\Model
     {
+        protected $affectedMemberType = MemberId::class;
+        protected $affectedMemberDataType = '';
+        /**
+         * @var string
+         */
+        public $priorMembershipRole;
+        /**
+         * @var string
+         */
+        public $priorMembershipState;
+        /**
+         * @var string
+         */
+        public $targetMembershipRole;
+        /**
+         * @param MemberId
+         */
+        public function setAffectedMember(MemberId $affectedMember)
+        {
+        }
+        /**
+         * @return MemberId
+         */
+        public function getAffectedMember()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPriorMembershipRole($priorMembershipRole)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPriorMembershipRole()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPriorMembershipState($priorMembershipState)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPriorMembershipState()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTargetMembershipRole($targetMembershipRole)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetMembershipRole()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MemberId
+     * Runtime class alias of \Google\Service\CloudSearch\AffectedMembership registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAffectedMember()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPriorMembershipRole($priorMembershipRole)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPriorMembershipRole()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPriorMembershipState($priorMembershipState)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPriorMembershipState()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTargetMembershipRole($targetMembershipRole)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetMembershipRole()
+    class Google_Service_CloudSearch_AffectedMembership extends \Google\Service\CloudSearch\AffectedMembership
     {
     }
 }

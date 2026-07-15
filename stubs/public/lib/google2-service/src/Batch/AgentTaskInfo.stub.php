@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Batch;
-
-class AgentTaskInfo extends \Google\Model
-{
-    /**
-     * The highest index of a runnable started by the agent for this task. The
-     * runnables are indexed from 1. Value 0 is undefined.
-     *
-     * @var string
-     */
-    public $runnable;
-    /**
-     * ID of the Task
-     *
-     * @var string
-     */
-    public $taskId;
-    protected $taskStatusType = TaskStatus::class;
-    protected $taskStatusDataType = '';
-    /**
-     * The highest index of a runnable started by the agent for this task. The
-     * runnables are indexed from 1. Value 0 is undefined.
-     *
-     * @param string $runnable
-     */
-    public function setRunnable($runnable)
+namespace Google\Service\Batch {
+    class AgentTaskInfo extends \Google\Model
     {
+        /**
+         * The highest index of a runnable started by the agent for this task. The
+         * runnables are indexed from 1. Value 0 is undefined.
+         *
+         * @var string
+         */
+        public $runnable;
+        /**
+         * ID of the Task
+         *
+         * @var string
+         */
+        public $taskId;
+        protected $taskStatusType = TaskStatus::class;
+        protected $taskStatusDataType = '';
+        /**
+         * The highest index of a runnable started by the agent for this task. The
+         * runnables are indexed from 1. Value 0 is undefined.
+         *
+         * @param string $runnable
+         */
+        public function setRunnable($runnable)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRunnable()
+        {
+        }
+        /**
+         * ID of the Task
+         *
+         * @param string $taskId
+         */
+        public function setTaskId($taskId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTaskId()
+        {
+        }
+        /**
+         * The status of the Task. If we need agent specific fields we should fork the
+         * public TaskStatus into an agent specific one. Or add them below.
+         *
+         * @param TaskStatus $taskStatus
+         */
+        public function setTaskStatus(TaskStatus $taskStatus)
+        {
+        }
+        /**
+         * @return TaskStatus
+         */
+        public function getTaskStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Batch\AgentTaskInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRunnable()
-    {
-    }
-    /**
-     * ID of the Task
-     *
-     * @param string $taskId
-     */
-    public function setTaskId($taskId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTaskId()
-    {
-    }
-    /**
-     * The status of the Task. If we need agent specific fields we should fork the
-     * public TaskStatus into an agent specific one. Or add them below.
-     *
-     * @param TaskStatus $taskStatus
-     */
-    public function setTaskStatus(TaskStatus $taskStatus)
-    {
-    }
-    /**
-     * @return TaskStatus
-     */
-    public function getTaskStatus()
+    class Google_Service_Batch_AgentTaskInfo extends \Google\Service\Batch\AgentTaskInfo
     {
     }
 }

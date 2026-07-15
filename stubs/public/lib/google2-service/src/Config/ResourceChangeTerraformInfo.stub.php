@@ -21,109 +21,118 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Config;
-
-class ResourceChangeTerraformInfo extends \Google\Collection
-{
-    protected $collection_key = 'actions';
-    /**
-     * Output only. TF resource actions.
-     *
-     * @var string[]
-     */
-    public $actions;
-    /**
-     * Output only. TF resource address that uniquely identifies the resource.
-     *
-     * @var string
-     */
-    public $address;
-    /**
-     * Output only. TF resource provider.
-     *
-     * @var string
-     */
-    public $provider;
-    /**
-     * Output only. TF resource name.
-     *
-     * @var string
-     */
-    public $resourceName;
-    /**
-     * Output only. TF resource type.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Output only. TF resource actions.
-     *
-     * @param string[] $actions
-     */
-    public function setActions($actions)
+namespace Google\Service\Config {
+    class ResourceChangeTerraformInfo extends \Google\Collection
     {
+        protected $collection_key = 'actions';
+        /**
+         * Output only. TF resource actions.
+         *
+         * @var string[]
+         */
+        public $actions;
+        /**
+         * Output only. TF resource address that uniquely identifies the resource.
+         *
+         * @var string
+         */
+        public $address;
+        /**
+         * Output only. TF resource provider.
+         *
+         * @var string
+         */
+        public $provider;
+        /**
+         * Output only. TF resource name.
+         *
+         * @var string
+         */
+        public $resourceName;
+        /**
+         * Output only. TF resource type.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Output only. TF resource actions.
+         *
+         * @param string[] $actions
+         */
+        public function setActions($actions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getActions()
+        {
+        }
+        /**
+         * Output only. TF resource address that uniquely identifies the resource.
+         *
+         * @param string $address
+         */
+        public function setAddress($address)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAddress()
+        {
+        }
+        /**
+         * Output only. TF resource provider.
+         *
+         * @param string $provider
+         */
+        public function setProvider($provider)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProvider()
+        {
+        }
+        /**
+         * Output only. TF resource name.
+         *
+         * @param string $resourceName
+         */
+        public function setResourceName($resourceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceName()
+        {
+        }
+        /**
+         * Output only. TF resource type.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Config\ResourceChangeTerraformInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActions()
-    {
-    }
-    /**
-     * Output only. TF resource address that uniquely identifies the resource.
-     *
-     * @param string $address
-     */
-    public function setAddress($address)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAddress()
-    {
-    }
-    /**
-     * Output only. TF resource provider.
-     *
-     * @param string $provider
-     */
-    public function setProvider($provider)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProvider()
-    {
-    }
-    /**
-     * Output only. TF resource name.
-     *
-     * @param string $resourceName
-     */
-    public function setResourceName($resourceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceName()
-    {
-    }
-    /**
-     * Output only. TF resource type.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_Config_ResourceChangeTerraformInfo extends \Google\Service\Config\ResourceChangeTerraformInfo
     {
     }
 }

@@ -21,63 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides;
-
-class DeleteParagraphBulletsRequest extends \Google\Model
-{
-    protected $cellLocationType = TableCellLocation::class;
-    protected $cellLocationDataType = '';
-    /**
-     * The object ID of the shape or table containing the text to delete bullets
-     * from.
-     *
-     * @var string
-     */
-    public $objectId;
-    protected $textRangeType = Range::class;
-    protected $textRangeDataType = '';
-    /**
-     * The optional table cell location if the text to be modified is in a table
-     * cell. If present, the object_id must refer to a table.
-     *
-     * @param TableCellLocation $cellLocation
-     */
-    public function setCellLocation(TableCellLocation $cellLocation)
+namespace Google\Service\Slides {
+    class DeleteParagraphBulletsRequest extends \Google\Model
     {
+        protected $cellLocationType = TableCellLocation::class;
+        protected $cellLocationDataType = '';
+        /**
+         * The object ID of the shape or table containing the text to delete bullets
+         * from.
+         *
+         * @var string
+         */
+        public $objectId;
+        protected $textRangeType = Range::class;
+        protected $textRangeDataType = '';
+        /**
+         * The optional table cell location if the text to be modified is in a table
+         * cell. If present, the object_id must refer to a table.
+         *
+         * @param TableCellLocation $cellLocation
+         */
+        public function setCellLocation(TableCellLocation $cellLocation)
+        {
+        }
+        /**
+         * @return TableCellLocation
+         */
+        public function getCellLocation()
+        {
+        }
+        /**
+         * The object ID of the shape or table containing the text to delete bullets
+         * from.
+         *
+         * @param string $objectId
+         */
+        public function setObjectId($objectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectId()
+        {
+        }
+        /**
+         * The range of text to delete bullets from, based on TextElement indexes.
+         *
+         * @param Range $textRange
+         */
+        public function setTextRange(Range $textRange)
+        {
+        }
+        /**
+         * @return Range
+         */
+        public function getTextRange()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TableCellLocation
+     * Runtime class alias of \Google\Service\Slides\DeleteParagraphBulletsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCellLocation()
-    {
-    }
-    /**
-     * The object ID of the shape or table containing the text to delete bullets
-     * from.
-     *
-     * @param string $objectId
-     */
-    public function setObjectId($objectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObjectId()
-    {
-    }
-    /**
-     * The range of text to delete bullets from, based on TextElement indexes.
-     *
-     * @param Range $textRange
-     */
-    public function setTextRange(Range $textRange)
-    {
-    }
-    /**
-     * @return Range
-     */
-    public function getTextRange()
+    class Google_Service_Slides_DeleteParagraphBulletsRequest extends \Google\Service\Slides\DeleteParagraphBulletsRequest
     {
     }
 }

@@ -21,110 +21,119 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMMigrationService;
-
-class TargetProject extends \Google\Model
-{
-    /**
-     * Output only. The time this target project resource was created (not related
-     * to when the Compute Engine project it points to was created).
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * The target project's description.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Output only. The name of the target project.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. The target project ID (number) or project name.
-     *
-     * @var string
-     */
-    public $project;
-    /**
-     * Output only. The last time the target project resource was updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. The time this target project resource was created (not related
-     * to when the Compute Engine project it points to was created).
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\VMMigrationService {
+    class TargetProject extends \Google\Model
     {
+        /**
+         * Output only. The time this target project resource was created (not related
+         * to when the Compute Engine project it points to was created).
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * The target project's description.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Output only. The name of the target project.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. The target project ID (number) or project name.
+         *
+         * @var string
+         */
+        public $project;
+        /**
+         * Output only. The last time the target project resource was updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. The time this target project resource was created (not related
+         * to when the Compute Engine project it points to was created).
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * The target project's description.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Output only. The name of the target project.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Required. The target project ID (number) or project name.
+         *
+         * @param string $project
+         */
+        public function setProject($project)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProject()
+        {
+        }
+        /**
+         * Output only. The last time the target project resource was updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\VMMigrationService\TargetProject registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * The target project's description.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Output only. The name of the target project.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Required. The target project ID (number) or project name.
-     *
-     * @param string $project
-     */
-    public function setProject($project)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProject()
-    {
-    }
-    /**
-     * Output only. The last time the target project resource was updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_VMMigrationService_TargetProject extends \Google\Service\VMMigrationService\TargetProject
     {
     }
 }

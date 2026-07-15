@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaRuntimeEntitySchema extends \Google\Model
-{
-    /**
-     * The above schema, but for an array of the associated entity.
-     *
-     * @var string
-     */
-    public $arrayFieldSchema;
-    /**
-     * Name of the entity.
-     *
-     * @var string
-     */
-    public $entity;
-    /**
-     * List of fields in the entity.
-     *
-     * @var string
-     */
-    public $fieldSchema;
-    /**
-     * The above schema, but for an array of the associated entity.
-     *
-     * @param string $arrayFieldSchema
-     */
-    public function setArrayFieldSchema($arrayFieldSchema)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaRuntimeEntitySchema extends \Google\Model
     {
+        /**
+         * The above schema, but for an array of the associated entity.
+         *
+         * @var string
+         */
+        public $arrayFieldSchema;
+        /**
+         * Name of the entity.
+         *
+         * @var string
+         */
+        public $entity;
+        /**
+         * List of fields in the entity.
+         *
+         * @var string
+         */
+        public $fieldSchema;
+        /**
+         * The above schema, but for an array of the associated entity.
+         *
+         * @param string $arrayFieldSchema
+         */
+        public function setArrayFieldSchema($arrayFieldSchema)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getArrayFieldSchema()
+        {
+        }
+        /**
+         * Name of the entity.
+         *
+         * @param string $entity
+         */
+        public function setEntity($entity)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEntity()
+        {
+        }
+        /**
+         * List of fields in the entity.
+         *
+         * @param string $fieldSchema
+         */
+        public function setFieldSchema($fieldSchema)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFieldSchema()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaRuntimeEntitySchema registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArrayFieldSchema()
-    {
-    }
-    /**
-     * Name of the entity.
-     *
-     * @param string $entity
-     */
-    public function setEntity($entity)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEntity()
-    {
-    }
-    /**
-     * List of fields in the entity.
-     *
-     * @param string $fieldSchema
-     */
-    public function setFieldSchema($fieldSchema)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFieldSchema()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaRuntimeEntitySchema extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaRuntimeEntitySchema
     {
     }
 }

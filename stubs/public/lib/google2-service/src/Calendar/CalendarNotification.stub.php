@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Calendar;
-
-class CalendarNotification extends \Google\Model
-{
-    /**
-     * The method used to deliver the notification. The possible value is: -
-     * "email" - Notifications are sent via email.   Required when adding a
-     * notification.
-     *
-     * @var string
-     */
-    public $method;
-    /**
-     * The type of notification. Possible values are: - "eventCreation" -
-     * Notification sent when a new event is put on the calendar.  - "eventChange"
-     * - Notification sent when an event is changed.  - "eventCancellation" -
-     * Notification sent when an event is cancelled.  - "eventResponse" -
-     * Notification sent when an attendee responds to the event invitation.  -
-     * "agenda" - An agenda with the events of the day (sent out in the morning).
-     * Required when adding a notification.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The method used to deliver the notification. The possible value is: -
-     * "email" - Notifications are sent via email.   Required when adding a
-     * notification.
-     *
-     * @param string $method
-     */
-    public function setMethod($method)
+namespace Google\Service\Calendar {
+    class CalendarNotification extends \Google\Model
     {
+        /**
+         * The method used to deliver the notification. The possible value is: -
+         * "email" - Notifications are sent via email.   Required when adding a
+         * notification.
+         *
+         * @var string
+         */
+        public $method;
+        /**
+         * The type of notification. Possible values are: - "eventCreation" -
+         * Notification sent when a new event is put on the calendar.  - "eventChange"
+         * - Notification sent when an event is changed.  - "eventCancellation" -
+         * Notification sent when an event is cancelled.  - "eventResponse" -
+         * Notification sent when an attendee responds to the event invitation.  -
+         * "agenda" - An agenda with the events of the day (sent out in the morning).
+         * Required when adding a notification.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The method used to deliver the notification. The possible value is: -
+         * "email" - Notifications are sent via email.   Required when adding a
+         * notification.
+         *
+         * @param string $method
+         */
+        public function setMethod($method)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMethod()
+        {
+        }
+        /**
+         * The type of notification. Possible values are: - "eventCreation" -
+         * Notification sent when a new event is put on the calendar.  - "eventChange"
+         * - Notification sent when an event is changed.  - "eventCancellation" -
+         * Notification sent when an event is cancelled.  - "eventResponse" -
+         * Notification sent when an attendee responds to the event invitation.  -
+         * "agenda" - An agenda with the events of the day (sent out in the morning).
+         * Required when adding a notification.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Calendar\CalendarNotification registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMethod()
-    {
-    }
-    /**
-     * The type of notification. Possible values are: - "eventCreation" -
-     * Notification sent when a new event is put on the calendar.  - "eventChange"
-     * - Notification sent when an event is changed.  - "eventCancellation" -
-     * Notification sent when an event is cancelled.  - "eventResponse" -
-     * Notification sent when an attendee responds to the event invitation.  -
-     * "agenda" - An agenda with the events of the day (sent out in the morning).
-     * Required when adding a notification.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_Calendar_CalendarNotification extends \Google\Service\Calendar\CalendarNotification
     {
     }
 }

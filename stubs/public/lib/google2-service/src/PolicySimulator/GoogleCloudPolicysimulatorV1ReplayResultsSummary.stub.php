@@ -21,124 +21,133 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PolicySimulator;
-
-class GoogleCloudPolicysimulatorV1ReplayResultsSummary extends \Google\Model
-{
-    /**
-     * The number of replayed log entries with a difference between baseline and
-     * simulated policies.
-     *
-     * @var int
-     */
-    public $differenceCount;
-    /**
-     * The number of log entries that could not be replayed.
-     *
-     * @var int
-     */
-    public $errorCount;
-    /**
-     * The total number of log entries replayed.
-     *
-     * @var int
-     */
-    public $logCount;
-    protected $newestDateType = GoogleTypeDate::class;
-    protected $newestDateDataType = '';
-    protected $oldestDateType = GoogleTypeDate::class;
-    protected $oldestDateDataType = '';
-    /**
-     * The number of replayed log entries with no difference between baseline and
-     * simulated policies.
-     *
-     * @var int
-     */
-    public $unchangedCount;
-    /**
-     * The number of replayed log entries with a difference between baseline and
-     * simulated policies.
-     *
-     * @param int $differenceCount
-     */
-    public function setDifferenceCount($differenceCount)
+namespace Google\Service\PolicySimulator {
+    class GoogleCloudPolicysimulatorV1ReplayResultsSummary extends \Google\Model
     {
+        /**
+         * The number of replayed log entries with a difference between baseline and
+         * simulated policies.
+         *
+         * @var int
+         */
+        public $differenceCount;
+        /**
+         * The number of log entries that could not be replayed.
+         *
+         * @var int
+         */
+        public $errorCount;
+        /**
+         * The total number of log entries replayed.
+         *
+         * @var int
+         */
+        public $logCount;
+        protected $newestDateType = GoogleTypeDate::class;
+        protected $newestDateDataType = '';
+        protected $oldestDateType = GoogleTypeDate::class;
+        protected $oldestDateDataType = '';
+        /**
+         * The number of replayed log entries with no difference between baseline and
+         * simulated policies.
+         *
+         * @var int
+         */
+        public $unchangedCount;
+        /**
+         * The number of replayed log entries with a difference between baseline and
+         * simulated policies.
+         *
+         * @param int $differenceCount
+         */
+        public function setDifferenceCount($differenceCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getDifferenceCount()
+        {
+        }
+        /**
+         * The number of log entries that could not be replayed.
+         *
+         * @param int $errorCount
+         */
+        public function setErrorCount($errorCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getErrorCount()
+        {
+        }
+        /**
+         * The total number of log entries replayed.
+         *
+         * @param int $logCount
+         */
+        public function setLogCount($logCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getLogCount()
+        {
+        }
+        /**
+         * The date of the newest log entry replayed.
+         *
+         * @param GoogleTypeDate $newestDate
+         */
+        public function setNewestDate(GoogleTypeDate $newestDate)
+        {
+        }
+        /**
+         * @return GoogleTypeDate
+         */
+        public function getNewestDate()
+        {
+        }
+        /**
+         * The date of the oldest log entry replayed.
+         *
+         * @param GoogleTypeDate $oldestDate
+         */
+        public function setOldestDate(GoogleTypeDate $oldestDate)
+        {
+        }
+        /**
+         * @return GoogleTypeDate
+         */
+        public function getOldestDate()
+        {
+        }
+        /**
+         * The number of replayed log entries with no difference between baseline and
+         * simulated policies.
+         *
+         * @param int $unchangedCount
+         */
+        public function setUnchangedCount($unchangedCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getUnchangedCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\PolicySimulator\GoogleCloudPolicysimulatorV1ReplayResultsSummary registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDifferenceCount()
-    {
-    }
-    /**
-     * The number of log entries that could not be replayed.
-     *
-     * @param int $errorCount
-     */
-    public function setErrorCount($errorCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getErrorCount()
-    {
-    }
-    /**
-     * The total number of log entries replayed.
-     *
-     * @param int $logCount
-     */
-    public function setLogCount($logCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getLogCount()
-    {
-    }
-    /**
-     * The date of the newest log entry replayed.
-     *
-     * @param GoogleTypeDate $newestDate
-     */
-    public function setNewestDate(GoogleTypeDate $newestDate)
-    {
-    }
-    /**
-     * @return GoogleTypeDate
-     */
-    public function getNewestDate()
-    {
-    }
-    /**
-     * The date of the oldest log entry replayed.
-     *
-     * @param GoogleTypeDate $oldestDate
-     */
-    public function setOldestDate(GoogleTypeDate $oldestDate)
-    {
-    }
-    /**
-     * @return GoogleTypeDate
-     */
-    public function getOldestDate()
-    {
-    }
-    /**
-     * The number of replayed log entries with no difference between baseline and
-     * simulated policies.
-     *
-     * @param int $unchangedCount
-     */
-    public function setUnchangedCount($unchangedCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getUnchangedCount()
+    class Google_Service_PolicySimulator_GoogleCloudPolicysimulatorV1ReplayResultsSummary extends \Google\Service\PolicySimulator\GoogleCloudPolicysimulatorV1ReplayResultsSummary
     {
     }
 }

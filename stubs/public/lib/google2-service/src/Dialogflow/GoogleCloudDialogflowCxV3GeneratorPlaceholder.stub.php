@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3GeneratorPlaceholder extends \Google\Model
-{
-    /**
-     * Unique ID used to map custom placeholder to parameters in fulfillment.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Custom placeholder value in the prompt text.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Unique ID used to map custom placeholder to parameters in fulfillment.
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3GeneratorPlaceholder extends \Google\Model
     {
+        /**
+         * Unique ID used to map custom placeholder to parameters in fulfillment.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Custom placeholder value in the prompt text.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Unique ID used to map custom placeholder to parameters in fulfillment.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Custom placeholder value in the prompt text.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3GeneratorPlaceholder registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * Custom placeholder value in the prompt text.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3GeneratorPlaceholder extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3GeneratorPlaceholder
     {
     }
 }

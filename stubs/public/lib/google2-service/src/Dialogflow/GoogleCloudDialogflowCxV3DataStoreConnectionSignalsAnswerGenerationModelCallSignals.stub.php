@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3DataStoreConnectionSignalsAnswerGenerationModelCallSignals extends \Google\Model
-{
-    /**
-     * Name of the generative model. For example, "gemini-ultra", "gemini-pro",
-     * "gemini-1.5-flash" etc. Defaults to "Other" if the model is unknown.
-     *
-     * @var string
-     */
-    public $model;
-    /**
-     * Output of the generative model.
-     *
-     * @var string
-     */
-    public $modelOutput;
-    /**
-     * Prompt as sent to the model.
-     *
-     * @var string
-     */
-    public $renderedPrompt;
-    /**
-     * Name of the generative model. For example, "gemini-ultra", "gemini-pro",
-     * "gemini-1.5-flash" etc. Defaults to "Other" if the model is unknown.
-     *
-     * @param string $model
-     */
-    public function setModel($model)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3DataStoreConnectionSignalsAnswerGenerationModelCallSignals extends \Google\Model
     {
+        /**
+         * Name of the generative model. For example, "gemini-ultra", "gemini-pro",
+         * "gemini-1.5-flash" etc. Defaults to "Other" if the model is unknown.
+         *
+         * @var string
+         */
+        public $model;
+        /**
+         * Output of the generative model.
+         *
+         * @var string
+         */
+        public $modelOutput;
+        /**
+         * Prompt as sent to the model.
+         *
+         * @var string
+         */
+        public $renderedPrompt;
+        /**
+         * Name of the generative model. For example, "gemini-ultra", "gemini-pro",
+         * "gemini-1.5-flash" etc. Defaults to "Other" if the model is unknown.
+         *
+         * @param string $model
+         */
+        public function setModel($model)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getModel()
+        {
+        }
+        /**
+         * Output of the generative model.
+         *
+         * @param string $modelOutput
+         */
+        public function setModelOutput($modelOutput)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getModelOutput()
+        {
+        }
+        /**
+         * Prompt as sent to the model.
+         *
+         * @param string $renderedPrompt
+         */
+        public function setRenderedPrompt($renderedPrompt)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRenderedPrompt()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3DataStoreConnectionSignalsAnswerGenerationModelCallSignals registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getModel()
-    {
-    }
-    /**
-     * Output of the generative model.
-     *
-     * @param string $modelOutput
-     */
-    public function setModelOutput($modelOutput)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getModelOutput()
-    {
-    }
-    /**
-     * Prompt as sent to the model.
-     *
-     * @param string $renderedPrompt
-     */
-    public function setRenderedPrompt($renderedPrompt)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRenderedPrompt()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3DataStoreConnectionSignalsAnswerGenerationModelCallSignals extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3DataStoreConnectionSignalsAnswerGenerationModelCallSignals
     {
     }
 }

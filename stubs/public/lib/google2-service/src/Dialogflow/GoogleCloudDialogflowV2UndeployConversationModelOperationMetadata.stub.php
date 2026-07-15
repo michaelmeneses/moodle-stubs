@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2UndeployConversationModelOperationMetadata extends \Google\Model
-{
-    /**
-     * The resource name of the conversation model. Format:
-     * `projects//conversationModels/`
-     *
-     * @var string
-     */
-    public $conversationModel;
-    /**
-     * Timestamp when the request to undeploy conversation model was submitted.
-     * The time is measured on server side.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * The time when the operation finished.
-     *
-     * @var string
-     */
-    public $doneTime;
-    /**
-     * The resource name of the conversation model. Format:
-     * `projects//conversationModels/`
-     *
-     * @param string $conversationModel
-     */
-    public function setConversationModel($conversationModel)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2UndeployConversationModelOperationMetadata extends \Google\Model
     {
+        /**
+         * The resource name of the conversation model. Format:
+         * `projects//conversationModels/`
+         *
+         * @var string
+         */
+        public $conversationModel;
+        /**
+         * Timestamp when the request to undeploy conversation model was submitted.
+         * The time is measured on server side.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * The time when the operation finished.
+         *
+         * @var string
+         */
+        public $doneTime;
+        /**
+         * The resource name of the conversation model. Format:
+         * `projects//conversationModels/`
+         *
+         * @param string $conversationModel
+         */
+        public function setConversationModel($conversationModel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConversationModel()
+        {
+        }
+        /**
+         * Timestamp when the request to undeploy conversation model was submitted.
+         * The time is measured on server side.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * The time when the operation finished.
+         *
+         * @param string $doneTime
+         */
+        public function setDoneTime($doneTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDoneTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2UndeployConversationModelOperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConversationModel()
-    {
-    }
-    /**
-     * Timestamp when the request to undeploy conversation model was submitted.
-     * The time is measured on server side.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * The time when the operation finished.
-     *
-     * @param string $doneTime
-     */
-    public function setDoneTime($doneTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDoneTime()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2UndeployConversationModelOperationMetadata extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2UndeployConversationModelOperationMetadata
     {
     }
 }

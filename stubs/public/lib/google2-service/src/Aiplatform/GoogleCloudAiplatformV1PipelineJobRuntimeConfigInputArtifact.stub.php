@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1PipelineJobRuntimeConfigInputArtifact extends \Google\Model
-{
-    /**
-     * Artifact resource id from MLMD. Which is the last portion of an artifact
-     * resource name: `projects/{project}/locations/{location}/metadataStores/defa
-     * ult/artifacts/{artifact_id}`. The artifact must stay within the same
-     * project, location and default metadatastore as the pipeline.
-     *
-     * @var string
-     */
-    public $artifactId;
-    /**
-     * Artifact resource id from MLMD. Which is the last portion of an artifact
-     * resource name: `projects/{project}/locations/{location}/metadataStores/defa
-     * ult/artifacts/{artifact_id}`. The artifact must stay within the same
-     * project, location and default metadatastore as the pipeline.
-     *
-     * @param string $artifactId
-     */
-    public function setArtifactId($artifactId)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1PipelineJobRuntimeConfigInputArtifact extends \Google\Model
     {
+        /**
+         * Artifact resource id from MLMD. Which is the last portion of an artifact
+         * resource name: `projects/{project}/locations/{location}/metadataStores/defa
+         * ult/artifacts/{artifact_id}`. The artifact must stay within the same
+         * project, location and default metadatastore as the pipeline.
+         *
+         * @var string
+         */
+        public $artifactId;
+        /**
+         * Artifact resource id from MLMD. Which is the last portion of an artifact
+         * resource name: `projects/{project}/locations/{location}/metadataStores/defa
+         * ult/artifacts/{artifact_id}`. The artifact must stay within the same
+         * project, location and default metadatastore as the pipeline.
+         *
+         * @param string $artifactId
+         */
+        public function setArtifactId($artifactId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getArtifactId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1PipelineJobRuntimeConfigInputArtifact registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArtifactId()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1PipelineJobRuntimeConfigInputArtifact extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1PipelineJobRuntimeConfigInputArtifact
     {
     }
 }

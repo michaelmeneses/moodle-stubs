@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1ScannedData extends \Google\Model
-{
-    protected $incrementalFieldType = GoogleCloudDataplexV1ScannedDataIncrementalField::class;
-    protected $incrementalFieldDataType = '';
-    /**
-     * The range denoted by values of an incremental field
-     *
-     * @param GoogleCloudDataplexV1ScannedDataIncrementalField $incrementalField
-     */
-    public function setIncrementalField(GoogleCloudDataplexV1ScannedDataIncrementalField $incrementalField)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1ScannedData extends \Google\Model
     {
+        protected $incrementalFieldType = GoogleCloudDataplexV1ScannedDataIncrementalField::class;
+        protected $incrementalFieldDataType = '';
+        /**
+         * The range denoted by values of an incremental field
+         *
+         * @param GoogleCloudDataplexV1ScannedDataIncrementalField $incrementalField
+         */
+        public function setIncrementalField(GoogleCloudDataplexV1ScannedDataIncrementalField $incrementalField)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1ScannedDataIncrementalField
+         */
+        public function getIncrementalField()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDataplexV1ScannedDataIncrementalField
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1ScannedData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIncrementalField()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1ScannedData extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1ScannedData
     {
     }
 }

@@ -21,126 +21,135 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIManagement;
-
-class ObservationSource extends \Google\Model
-{
-    /**
-     * Unspecified state
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * Source is in the creating state
-     */
-    public const STATE_CREATING = 'CREATING';
-    /**
-     * Source has been created and is ready to use
-     */
-    public const STATE_CREATED = 'CREATED';
-    /**
-     * Source is being deleted
-     */
-    public const STATE_DELETING = 'DELETING';
-    /**
-     * Source is in an error state
-     */
-    public const STATE_ERROR = 'ERROR';
-    /**
-     * Output only. [Output only] Create time stamp
-     *
-     * @var string
-     */
-    public $createTime;
-    protected $gclbObservationSourceType = GclbObservationSource::class;
-    protected $gclbObservationSourceDataType = '';
-    /**
-     * Identifier. name of resource For MVP, each region can only have 1 source.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The observation source state
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Output only. [Output only] Update time stamp
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. [Output only] Create time stamp
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\APIManagement {
+    class ObservationSource extends \Google\Model
     {
+        /**
+         * Unspecified state
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * Source is in the creating state
+         */
+        public const STATE_CREATING = 'CREATING';
+        /**
+         * Source has been created and is ready to use
+         */
+        public const STATE_CREATED = 'CREATED';
+        /**
+         * Source is being deleted
+         */
+        public const STATE_DELETING = 'DELETING';
+        /**
+         * Source is in an error state
+         */
+        public const STATE_ERROR = 'ERROR';
+        /**
+         * Output only. [Output only] Create time stamp
+         *
+         * @var string
+         */
+        public $createTime;
+        protected $gclbObservationSourceType = GclbObservationSource::class;
+        protected $gclbObservationSourceDataType = '';
+        /**
+         * Identifier. name of resource For MVP, each region can only have 1 source.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The observation source state
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Output only. [Output only] Update time stamp
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. [Output only] Create time stamp
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * The GCLB observation source
+         *
+         * @param GclbObservationSource $gclbObservationSource
+         */
+        public function setGclbObservationSource(GclbObservationSource $gclbObservationSource)
+        {
+        }
+        /**
+         * @return GclbObservationSource
+         */
+        public function getGclbObservationSource()
+        {
+        }
+        /**
+         * Identifier. name of resource For MVP, each region can only have 1 source.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The observation source state
+         *
+         * Accepted values: STATE_UNSPECIFIED, CREATING, CREATED, DELETING, ERROR
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Output only. [Output only] Update time stamp
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\APIManagement\ObservationSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * The GCLB observation source
-     *
-     * @param GclbObservationSource $gclbObservationSource
-     */
-    public function setGclbObservationSource(GclbObservationSource $gclbObservationSource)
-    {
-    }
-    /**
-     * @return GclbObservationSource
-     */
-    public function getGclbObservationSource()
-    {
-    }
-    /**
-     * Identifier. name of resource For MVP, each region can only have 1 source.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The observation source state
-     *
-     * Accepted values: STATE_UNSPECIFIED, CREATING, CREATED, DELETING, ERROR
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Output only. [Output only] Update time stamp
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_APIManagement_ObservationSource extends \Google\Service\APIManagement\ObservationSource
     {
     }
 }

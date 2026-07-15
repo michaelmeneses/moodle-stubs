@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vault;
-
-class CountArtifactsResponse extends \Google\Model
-{
-    protected $groupsCountResultType = GroupsCountResult::class;
-    protected $groupsCountResultDataType = '';
-    protected $mailCountResultType = MailCountResult::class;
-    protected $mailCountResultDataType = '';
-    /**
-     * Total count of messages.
-     *
-     * @var string
-     */
-    public $totalCount;
-    /**
-     * Count metrics for Groups.
-     *
-     * @param GroupsCountResult $groupsCountResult
-     */
-    public function setGroupsCountResult(GroupsCountResult $groupsCountResult)
+namespace Google\Service\Vault {
+    class CountArtifactsResponse extends \Google\Model
     {
+        protected $groupsCountResultType = GroupsCountResult::class;
+        protected $groupsCountResultDataType = '';
+        protected $mailCountResultType = MailCountResult::class;
+        protected $mailCountResultDataType = '';
+        /**
+         * Total count of messages.
+         *
+         * @var string
+         */
+        public $totalCount;
+        /**
+         * Count metrics for Groups.
+         *
+         * @param GroupsCountResult $groupsCountResult
+         */
+        public function setGroupsCountResult(GroupsCountResult $groupsCountResult)
+        {
+        }
+        /**
+         * @return GroupsCountResult
+         */
+        public function getGroupsCountResult()
+        {
+        }
+        /**
+         * Count metrics for Gmail and classic Hangouts.
+         *
+         * @param MailCountResult $mailCountResult
+         */
+        public function setMailCountResult(MailCountResult $mailCountResult)
+        {
+        }
+        /**
+         * @return MailCountResult
+         */
+        public function getMailCountResult()
+        {
+        }
+        /**
+         * Total count of messages.
+         *
+         * @param string $totalCount
+         */
+        public function setTotalCount($totalCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GroupsCountResult
+     * Runtime class alias of \Google\Service\Vault\CountArtifactsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGroupsCountResult()
-    {
-    }
-    /**
-     * Count metrics for Gmail and classic Hangouts.
-     *
-     * @param MailCountResult $mailCountResult
-     */
-    public function setMailCountResult(MailCountResult $mailCountResult)
-    {
-    }
-    /**
-     * @return MailCountResult
-     */
-    public function getMailCountResult()
-    {
-    }
-    /**
-     * Total count of messages.
-     *
-     * @param string $totalCount
-     */
-    public function setTotalCount($totalCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalCount()
+    class Google_Service_Vault_CountArtifactsResponse extends \Google\Service\Vault\CountArtifactsResponse
     {
     }
 }

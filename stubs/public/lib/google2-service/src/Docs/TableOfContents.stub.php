@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class TableOfContents extends \Google\Collection
-{
-    protected $collection_key = 'suggestedInsertionIds';
-    protected $contentType = StructuralElement::class;
-    protected $contentDataType = 'array';
-    /**
-     * The suggested deletion IDs. If empty, then there are no suggested deletions
-     * of this content.
-     *
-     * @var string[]
-     */
-    public $suggestedDeletionIds;
-    /**
-     * The suggested insertion IDs. A TableOfContents may have multiple insertion
-     * IDs if it is a nested suggested change. If empty, then this is not a
-     * suggested insertion.
-     *
-     * @var string[]
-     */
-    public $suggestedInsertionIds;
-    /**
-     * The content of the table of contents.
-     *
-     * @param StructuralElement[] $content
-     */
-    public function setContent($content)
+namespace Google\Service\Docs {
+    class TableOfContents extends \Google\Collection
     {
+        protected $collection_key = 'suggestedInsertionIds';
+        protected $contentType = StructuralElement::class;
+        protected $contentDataType = 'array';
+        /**
+         * The suggested deletion IDs. If empty, then there are no suggested deletions
+         * of this content.
+         *
+         * @var string[]
+         */
+        public $suggestedDeletionIds;
+        /**
+         * The suggested insertion IDs. A TableOfContents may have multiple insertion
+         * IDs if it is a nested suggested change. If empty, then this is not a
+         * suggested insertion.
+         *
+         * @var string[]
+         */
+        public $suggestedInsertionIds;
+        /**
+         * The content of the table of contents.
+         *
+         * @param StructuralElement[] $content
+         */
+        public function setContent($content)
+        {
+        }
+        /**
+         * @return StructuralElement[]
+         */
+        public function getContent()
+        {
+        }
+        /**
+         * The suggested deletion IDs. If empty, then there are no suggested deletions
+         * of this content.
+         *
+         * @param string[] $suggestedDeletionIds
+         */
+        public function setSuggestedDeletionIds($suggestedDeletionIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSuggestedDeletionIds()
+        {
+        }
+        /**
+         * The suggested insertion IDs. A TableOfContents may have multiple insertion
+         * IDs if it is a nested suggested change. If empty, then this is not a
+         * suggested insertion.
+         *
+         * @param string[] $suggestedInsertionIds
+         */
+        public function setSuggestedInsertionIds($suggestedInsertionIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSuggestedInsertionIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return StructuralElement[]
+     * Runtime class alias of \Google\Service\Docs\TableOfContents registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContent()
-    {
-    }
-    /**
-     * The suggested deletion IDs. If empty, then there are no suggested deletions
-     * of this content.
-     *
-     * @param string[] $suggestedDeletionIds
-     */
-    public function setSuggestedDeletionIds($suggestedDeletionIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSuggestedDeletionIds()
-    {
-    }
-    /**
-     * The suggested insertion IDs. A TableOfContents may have multiple insertion
-     * IDs if it is a nested suggested change. If empty, then this is not a
-     * suggested insertion.
-     *
-     * @param string[] $suggestedInsertionIds
-     */
-    public function setSuggestedInsertionIds($suggestedInsertionIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSuggestedInsertionIds()
+    class Google_Service_Docs_TableOfContents extends \Google\Service\Docs\TableOfContents
     {
     }
 }

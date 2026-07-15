@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution;
-
-class GoogleDevtoolsRemotebuildexecutionAdminV1alphaListInstancesResponse extends \Google\Collection
-{
-    protected $collection_key = 'instances';
-    protected $instancesType = GoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance::class;
-    protected $instancesDataType = 'array';
-    /**
-     * @param GoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance[]
-     */
-    public function setInstances($instances)
+namespace Google\Service\RemoteBuildExecution {
+    class GoogleDevtoolsRemotebuildexecutionAdminV1alphaListInstancesResponse extends \Google\Collection
     {
+        protected $collection_key = 'instances';
+        protected $instancesType = GoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance::class;
+        protected $instancesDataType = 'array';
+        /**
+         * @param GoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance[]
+         */
+        public function setInstances($instances)
+        {
+        }
+        /**
+         * @return GoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance[]
+         */
+        public function getInstances()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance[]
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\GoogleDevtoolsRemotebuildexecutionAdminV1alphaListInstancesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstances()
+    class Google_Service_RemoteBuildExecution_GoogleDevtoolsRemotebuildexecutionAdminV1alphaListInstancesResponse extends \Google\Service\RemoteBuildExecution\GoogleDevtoolsRemotebuildexecutionAdminV1alphaListInstancesResponse
     {
     }
 }

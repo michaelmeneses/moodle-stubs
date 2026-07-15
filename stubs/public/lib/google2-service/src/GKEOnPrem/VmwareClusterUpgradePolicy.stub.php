@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class VmwareClusterUpgradePolicy extends \Google\Model
-{
-    /**
-     * Controls whether the upgrade applies to the control plane only.
-     *
-     * @var bool
-     */
-    public $controlPlaneOnly;
-    /**
-     * Controls whether the upgrade applies to the control plane only.
-     *
-     * @param bool $controlPlaneOnly
-     */
-    public function setControlPlaneOnly($controlPlaneOnly)
+namespace Google\Service\GKEOnPrem {
+    class VmwareClusterUpgradePolicy extends \Google\Model
     {
+        /**
+         * Controls whether the upgrade applies to the control plane only.
+         *
+         * @var bool
+         */
+        public $controlPlaneOnly;
+        /**
+         * Controls whether the upgrade applies to the control plane only.
+         *
+         * @param bool $controlPlaneOnly
+         */
+        public function setControlPlaneOnly($controlPlaneOnly)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getControlPlaneOnly()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\GKEOnPrem\VmwareClusterUpgradePolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getControlPlaneOnly()
+    class Google_Service_GKEOnPrem_VmwareClusterUpgradePolicy extends \Google\Service\GKEOnPrem\VmwareClusterUpgradePolicy
     {
     }
 }

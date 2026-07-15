@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CertificateManager;
-
-class IpConfig extends \Google\Collection
-{
-    protected $collection_key = 'ports';
-    /**
-     * Output only. An external IP address.
-     *
-     * @var string
-     */
-    public $ipAddress;
-    /**
-     * Output only. Ports.
-     *
-     * @var string[]
-     */
-    public $ports;
-    /**
-     * Output only. An external IP address.
-     *
-     * @param string $ipAddress
-     */
-    public function setIpAddress($ipAddress)
+namespace Google\Service\CertificateManager {
+    class IpConfig extends \Google\Collection
     {
+        protected $collection_key = 'ports';
+        /**
+         * Output only. An external IP address.
+         *
+         * @var string
+         */
+        public $ipAddress;
+        /**
+         * Output only. Ports.
+         *
+         * @var string[]
+         */
+        public $ports;
+        /**
+         * Output only. An external IP address.
+         *
+         * @param string $ipAddress
+         */
+        public function setIpAddress($ipAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIpAddress()
+        {
+        }
+        /**
+         * Output only. Ports.
+         *
+         * @param string[] $ports
+         */
+        public function setPorts($ports)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPorts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CertificateManager\IpConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIpAddress()
-    {
-    }
-    /**
-     * Output only. Ports.
-     *
-     * @param string[] $ports
-     */
-    public function setPorts($ports)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPorts()
+    class Google_Service_CertificateManager_IpConfig extends \Google\Service\CertificateManager\IpConfig
     {
     }
 }

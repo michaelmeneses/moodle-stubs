@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1ImportIdentityMappingsRequestInlineSource extends \Google\Collection
-{
-    protected $collection_key = 'identityMappingEntries';
-    protected $identityMappingEntriesType = GoogleCloudDiscoveryengineV1IdentityMappingEntry::class;
-    protected $identityMappingEntriesDataType = 'array';
-    /**
-     * A maximum of 10000 entries can be imported at one time
-     *
-     * @param GoogleCloudDiscoveryengineV1IdentityMappingEntry[] $identityMappingEntries
-     */
-    public function setIdentityMappingEntries($identityMappingEntries)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1ImportIdentityMappingsRequestInlineSource extends \Google\Collection
     {
+        protected $collection_key = 'identityMappingEntries';
+        protected $identityMappingEntriesType = GoogleCloudDiscoveryengineV1IdentityMappingEntry::class;
+        protected $identityMappingEntriesDataType = 'array';
+        /**
+         * A maximum of 10000 entries can be imported at one time
+         *
+         * @param GoogleCloudDiscoveryengineV1IdentityMappingEntry[] $identityMappingEntries
+         */
+        public function setIdentityMappingEntries($identityMappingEntries)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1IdentityMappingEntry[]
+         */
+        public function getIdentityMappingEntries()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1IdentityMappingEntry[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ImportIdentityMappingsRequestInlineSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIdentityMappingEntries()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1ImportIdentityMappingsRequestInlineSource extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ImportIdentityMappingsRequestInlineSource
     {
     }
 }

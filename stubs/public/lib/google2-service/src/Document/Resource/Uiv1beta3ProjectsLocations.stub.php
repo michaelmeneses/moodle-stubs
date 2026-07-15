@@ -21,46 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document\Resource;
-
-/**
- * The "locations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $documentaiService = new Google\Service\Document(...);
- *   $locations = $documentaiService->locations;
- *  </code>
- */
-class Uiv1beta3ProjectsLocations extends \Google\Service\Resource
-{
+namespace Google\Service\Document\Resource {
+    use Google\Service\Document\GoogleCloudLocationListLocationsResponse;
+    use Google\Service\Document\GoogleCloudLocationLocation;
     /**
-     * Gets information about a location. (locations.get)
-     *
-     * @param string $name Resource name for the location.
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudLocationLocation
+     * The "locations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $documentaiService = new Google\Service\Document(...);
+     *   $locations = $documentaiService->locations;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class Uiv1beta3ProjectsLocations extends \Google\Service\Resource
     {
+        /**
+         * Gets information about a location. (locations.get)
+         *
+         * @param string $name Resource name for the location.
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudLocationLocation
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists information about the supported locations for this service.
+         * (locations.listUiv1beta3ProjectsLocations)
+         *
+         * @param string $name The resource that owns the locations collection, if
+         * applicable.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter A filter to narrow down results to a preferred
+         * subset. The filtering language accepts strings like `"displayName=tokyo"`,
+         * and is documented in more detail in [AIP-160](https://google.aip.dev/160).
+         * @opt_param int pageSize The maximum number of results to return. If not set,
+         * the service selects a default.
+         * @opt_param string pageToken A page token received from the `next_page_token`
+         * field in the response. Send that page token to receive the subsequent page.
+         * @return GoogleCloudLocationListLocationsResponse
+         */
+        public function listUiv1beta3ProjectsLocations($name, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists information about the supported locations for this service.
-     * (locations.listUiv1beta3ProjectsLocations)
-     *
-     * @param string $name The resource that owns the locations collection, if
-     * applicable.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter A filter to narrow down results to a preferred
-     * subset. The filtering language accepts strings like `"displayName=tokyo"`,
-     * and is documented in more detail in [AIP-160](https://google.aip.dev/160).
-     * @opt_param int pageSize The maximum number of results to return. If not set,
-     * the service selects a default.
-     * @opt_param string pageToken A page token received from the `next_page_token`
-     * field in the response. Send that page token to receive the subsequent page.
-     * @return GoogleCloudLocationListLocationsResponse
+     * Runtime class alias of \Google\Service\Document\Resource\Uiv1beta3ProjectsLocations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listUiv1beta3ProjectsLocations($name, $optParams = [])
+    class Google_Service_Document_Resource_Uiv1beta3ProjectsLocations extends \Google\Service\Document\Resource\Uiv1beta3ProjectsLocations
     {
     }
 }

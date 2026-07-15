@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsHub;
-
-class SubscribeListingResponse extends \Google\Model
-{
-    protected $subscriptionType = Subscription::class;
-    protected $subscriptionDataType = '';
-    /**
-     * Subscription object created from this subscribe action.
-     *
-     * @param Subscription $subscription
-     */
-    public function setSubscription(Subscription $subscription)
+namespace Google\Service\AnalyticsHub {
+    class SubscribeListingResponse extends \Google\Model
     {
+        protected $subscriptionType = Subscription::class;
+        protected $subscriptionDataType = '';
+        /**
+         * Subscription object created from this subscribe action.
+         *
+         * @param Subscription $subscription
+         */
+        public function setSubscription(Subscription $subscription)
+        {
+        }
+        /**
+         * @return Subscription
+         */
+        public function getSubscription()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Subscription
+     * Runtime class alias of \Google\Service\AnalyticsHub\SubscribeListingResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSubscription()
+    class Google_Service_AnalyticsHub_SubscribeListingResponse extends \Google\Service\AnalyticsHub\SubscribeListingResponse
     {
     }
 }

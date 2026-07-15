@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsReporting;
-
-class GetReportsRequest extends \Google\Collection
-{
-    protected $collection_key = 'reportRequests';
-    protected $reportRequestsType = ReportRequest::class;
-    protected $reportRequestsDataType = 'array';
-    /**
-     * @var bool
-     */
-    public $useResourceQuotas;
-    /**
-     * @param ReportRequest[]
-     */
-    public function setReportRequests($reportRequests)
+namespace Google\Service\AnalyticsReporting {
+    class GetReportsRequest extends \Google\Collection
     {
+        protected $collection_key = 'reportRequests';
+        protected $reportRequestsType = ReportRequest::class;
+        protected $reportRequestsDataType = 'array';
+        /**
+         * @var bool
+         */
+        public $useResourceQuotas;
+        /**
+         * @param ReportRequest[]
+         */
+        public function setReportRequests($reportRequests)
+        {
+        }
+        /**
+         * @return ReportRequest[]
+         */
+        public function getReportRequests()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setUseResourceQuotas($useResourceQuotas)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUseResourceQuotas()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ReportRequest[]
+     * Runtime class alias of \Google\Service\AnalyticsReporting\GetReportsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReportRequests()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setUseResourceQuotas($useResourceQuotas)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUseResourceQuotas()
+    class Google_Service_AnalyticsReporting_GetReportsRequest extends \Google\Service\AnalyticsReporting\GetReportsRequest
     {
     }
 }

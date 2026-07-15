@@ -16,6 +16,8 @@
  */
 namespace Mustache\Cache;
 
+use Mustache\Exception\RuntimeException;
+use Mustache\Logger;
 /**
  * Mustache Cache filesystem implementation.
  *

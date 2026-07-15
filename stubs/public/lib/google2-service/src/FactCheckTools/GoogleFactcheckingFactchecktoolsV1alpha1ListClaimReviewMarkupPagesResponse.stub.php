@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FactCheckTools;
-
-class GoogleFactcheckingFactchecktoolsV1alpha1ListClaimReviewMarkupPagesResponse extends \Google\Collection
-{
-    protected $collection_key = 'claimReviewMarkupPages';
-    protected $claimReviewMarkupPagesType = GoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkupPage::class;
-    protected $claimReviewMarkupPagesDataType = 'array';
-    /**
-     * The next pagination token in the Search response. It should be used as the
-     * `page_token` for the following request. An empty value means no more
-     * results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The result list of pages of `ClaimReview` markup.
-     *
-     * @param GoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkupPage[] $claimReviewMarkupPages
-     */
-    public function setClaimReviewMarkupPages($claimReviewMarkupPages)
+namespace Google\Service\FactCheckTools {
+    class GoogleFactcheckingFactchecktoolsV1alpha1ListClaimReviewMarkupPagesResponse extends \Google\Collection
     {
+        protected $collection_key = 'claimReviewMarkupPages';
+        protected $claimReviewMarkupPagesType = GoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkupPage::class;
+        protected $claimReviewMarkupPagesDataType = 'array';
+        /**
+         * The next pagination token in the Search response. It should be used as the
+         * `page_token` for the following request. An empty value means no more
+         * results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The result list of pages of `ClaimReview` markup.
+         *
+         * @param GoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkupPage[] $claimReviewMarkupPages
+         */
+        public function setClaimReviewMarkupPages($claimReviewMarkupPages)
+        {
+        }
+        /**
+         * @return GoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkupPage[]
+         */
+        public function getClaimReviewMarkupPages()
+        {
+        }
+        /**
+         * The next pagination token in the Search response. It should be used as the
+         * `page_token` for the following request. An empty value means no more
+         * results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkupPage[]
+     * Runtime class alias of \Google\Service\FactCheckTools\GoogleFactcheckingFactchecktoolsV1alpha1ListClaimReviewMarkupPagesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClaimReviewMarkupPages()
-    {
-    }
-    /**
-     * The next pagination token in the Search response. It should be used as the
-     * `page_token` for the following request. An empty value means no more
-     * results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_FactCheckTools_GoogleFactcheckingFactchecktoolsV1alpha1ListClaimReviewMarkupPagesResponse extends \Google\Service\FactCheckTools\GoogleFactcheckingFactchecktoolsV1alpha1ListClaimReviewMarkupPagesResponse
     {
     }
 }

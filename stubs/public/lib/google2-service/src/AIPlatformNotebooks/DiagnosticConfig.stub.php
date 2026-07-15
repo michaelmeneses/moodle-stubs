@@ -21,128 +21,137 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AIPlatformNotebooks;
-
-class DiagnosticConfig extends \Google\Model
-{
-    /**
-     * Optional. Enables flag to copy all `/home/jupyter` folder contents
-     *
-     * @var bool
-     */
-    public $enableCopyHomeFilesFlag;
-    /**
-     * Optional. Enables flag to capture packets from the instance for 30 seconds
-     *
-     * @var bool
-     */
-    public $enablePacketCaptureFlag;
-    /**
-     * Optional. Enables flag to repair service for instance
-     *
-     * @var bool
-     */
-    public $enableRepairFlag;
-    /**
-     * Required. User Cloud Storage bucket location (REQUIRED). Must be formatted
-     * with path prefix (`gs://$GCS_BUCKET`). Permissions: User Managed Notebooks:
-     * - storage.buckets.writer: Must be given to the project's service account
-     * attached to VM. Google Managed Notebooks: - storage.buckets.writer: Must be
-     * given to the project's service account or user credentials attached to VM
-     * depending on authentication mode. Cloud Storage bucket Log file will be
-     * written to `gs://$GCS_BUCKET/$RELATIVE_PATH/$VM_DATE_$TIME.tar.gz`
-     *
-     * @var string
-     */
-    public $gcsBucket;
-    /**
-     * Optional. Defines the relative storage path in the Cloud Storage bucket
-     * where the diagnostic logs will be written: Default path will be the root
-     * directory of the Cloud Storage bucket
-     * (`gs://$GCS_BUCKET/$DATE_$TIME.tar.gz`) Example of full path where Log file
-     * will be written: `gs://$GCS_BUCKET/$RELATIVE_PATH/`
-     *
-     * @var string
-     */
-    public $relativePath;
-    /**
-     * Optional. Enables flag to copy all `/home/jupyter` folder contents
-     *
-     * @param bool $enableCopyHomeFilesFlag
-     */
-    public function setEnableCopyHomeFilesFlag($enableCopyHomeFilesFlag)
+namespace Google\Service\AIPlatformNotebooks {
+    class DiagnosticConfig extends \Google\Model
     {
+        /**
+         * Optional. Enables flag to copy all `/home/jupyter` folder contents
+         *
+         * @var bool
+         */
+        public $enableCopyHomeFilesFlag;
+        /**
+         * Optional. Enables flag to capture packets from the instance for 30 seconds
+         *
+         * @var bool
+         */
+        public $enablePacketCaptureFlag;
+        /**
+         * Optional. Enables flag to repair service for instance
+         *
+         * @var bool
+         */
+        public $enableRepairFlag;
+        /**
+         * Required. User Cloud Storage bucket location (REQUIRED). Must be formatted
+         * with path prefix (`gs://$GCS_BUCKET`). Permissions: User Managed Notebooks:
+         * - storage.buckets.writer: Must be given to the project's service account
+         * attached to VM. Google Managed Notebooks: - storage.buckets.writer: Must be
+         * given to the project's service account or user credentials attached to VM
+         * depending on authentication mode. Cloud Storage bucket Log file will be
+         * written to `gs://$GCS_BUCKET/$RELATIVE_PATH/$VM_DATE_$TIME.tar.gz`
+         *
+         * @var string
+         */
+        public $gcsBucket;
+        /**
+         * Optional. Defines the relative storage path in the Cloud Storage bucket
+         * where the diagnostic logs will be written: Default path will be the root
+         * directory of the Cloud Storage bucket
+         * (`gs://$GCS_BUCKET/$DATE_$TIME.tar.gz`) Example of full path where Log file
+         * will be written: `gs://$GCS_BUCKET/$RELATIVE_PATH/`
+         *
+         * @var string
+         */
+        public $relativePath;
+        /**
+         * Optional. Enables flag to copy all `/home/jupyter` folder contents
+         *
+         * @param bool $enableCopyHomeFilesFlag
+         */
+        public function setEnableCopyHomeFilesFlag($enableCopyHomeFilesFlag)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableCopyHomeFilesFlag()
+        {
+        }
+        /**
+         * Optional. Enables flag to capture packets from the instance for 30 seconds
+         *
+         * @param bool $enablePacketCaptureFlag
+         */
+        public function setEnablePacketCaptureFlag($enablePacketCaptureFlag)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnablePacketCaptureFlag()
+        {
+        }
+        /**
+         * Optional. Enables flag to repair service for instance
+         *
+         * @param bool $enableRepairFlag
+         */
+        public function setEnableRepairFlag($enableRepairFlag)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableRepairFlag()
+        {
+        }
+        /**
+         * Required. User Cloud Storage bucket location (REQUIRED). Must be formatted
+         * with path prefix (`gs://$GCS_BUCKET`). Permissions: User Managed Notebooks:
+         * - storage.buckets.writer: Must be given to the project's service account
+         * attached to VM. Google Managed Notebooks: - storage.buckets.writer: Must be
+         * given to the project's service account or user credentials attached to VM
+         * depending on authentication mode. Cloud Storage bucket Log file will be
+         * written to `gs://$GCS_BUCKET/$RELATIVE_PATH/$VM_DATE_$TIME.tar.gz`
+         *
+         * @param string $gcsBucket
+         */
+        public function setGcsBucket($gcsBucket)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGcsBucket()
+        {
+        }
+        /**
+         * Optional. Defines the relative storage path in the Cloud Storage bucket
+         * where the diagnostic logs will be written: Default path will be the root
+         * directory of the Cloud Storage bucket
+         * (`gs://$GCS_BUCKET/$DATE_$TIME.tar.gz`) Example of full path where Log file
+         * will be written: `gs://$GCS_BUCKET/$RELATIVE_PATH/`
+         *
+         * @param string $relativePath
+         */
+        public function setRelativePath($relativePath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRelativePath()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\AIPlatformNotebooks\DiagnosticConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnableCopyHomeFilesFlag()
-    {
-    }
-    /**
-     * Optional. Enables flag to capture packets from the instance for 30 seconds
-     *
-     * @param bool $enablePacketCaptureFlag
-     */
-    public function setEnablePacketCaptureFlag($enablePacketCaptureFlag)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnablePacketCaptureFlag()
-    {
-    }
-    /**
-     * Optional. Enables flag to repair service for instance
-     *
-     * @param bool $enableRepairFlag
-     */
-    public function setEnableRepairFlag($enableRepairFlag)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnableRepairFlag()
-    {
-    }
-    /**
-     * Required. User Cloud Storage bucket location (REQUIRED). Must be formatted
-     * with path prefix (`gs://$GCS_BUCKET`). Permissions: User Managed Notebooks:
-     * - storage.buckets.writer: Must be given to the project's service account
-     * attached to VM. Google Managed Notebooks: - storage.buckets.writer: Must be
-     * given to the project's service account or user credentials attached to VM
-     * depending on authentication mode. Cloud Storage bucket Log file will be
-     * written to `gs://$GCS_BUCKET/$RELATIVE_PATH/$VM_DATE_$TIME.tar.gz`
-     *
-     * @param string $gcsBucket
-     */
-    public function setGcsBucket($gcsBucket)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGcsBucket()
-    {
-    }
-    /**
-     * Optional. Defines the relative storage path in the Cloud Storage bucket
-     * where the diagnostic logs will be written: Default path will be the root
-     * directory of the Cloud Storage bucket
-     * (`gs://$GCS_BUCKET/$DATE_$TIME.tar.gz`) Example of full path where Log file
-     * will be written: `gs://$GCS_BUCKET/$RELATIVE_PATH/`
-     *
-     * @param string $relativePath
-     */
-    public function setRelativePath($relativePath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRelativePath()
+    class Google_Service_AIPlatformNotebooks_DiagnosticConfig extends \Google\Service\AIPlatformNotebooks\DiagnosticConfig
     {
     }
 }

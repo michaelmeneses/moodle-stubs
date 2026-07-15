@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSupport;
-
-class DiffDownloadResponse extends \Google\Model
-{
-    protected $objectLocationType = CompositeMedia::class;
-    protected $objectLocationDataType = '';
-    /**
-     * # gdata.* are outside protos with mising documentation
-     *
-     * @param CompositeMedia $objectLocation
-     */
-    public function setObjectLocation(CompositeMedia $objectLocation)
+namespace Google\Service\CloudSupport {
+    class DiffDownloadResponse extends \Google\Model
     {
+        protected $objectLocationType = CompositeMedia::class;
+        protected $objectLocationDataType = '';
+        /**
+         * # gdata.* are outside protos with mising documentation
+         *
+         * @param CompositeMedia $objectLocation
+         */
+        public function setObjectLocation(CompositeMedia $objectLocation)
+        {
+        }
+        /**
+         * @return CompositeMedia
+         */
+        public function getObjectLocation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CompositeMedia
+     * Runtime class alias of \Google\Service\CloudSupport\DiffDownloadResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getObjectLocation()
+    class Google_Service_CloudSupport_DiffDownloadResponse extends \Google\Service\CloudSupport\DiffDownloadResponse
     {
     }
 }

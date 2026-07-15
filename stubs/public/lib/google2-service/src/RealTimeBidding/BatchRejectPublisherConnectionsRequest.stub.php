@@ -21,37 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RealTimeBidding;
-
-class BatchRejectPublisherConnectionsRequest extends \Google\Collection
-{
-    protected $collection_key = 'names';
-    /**
-     * Required. The names of the publishers with whom connection will be
-     * rejected. In the pattern
-     * `bidders/{bidder}/publisherConnections/{publisher}` where `{bidder}` is the
-     * account ID of the bidder, and `{publisher}` is the ads.txt/app-ads.txt
-     * publisher ID.
-     *
-     * @var string[]
-     */
-    public $names;
-    /**
-     * Required. The names of the publishers with whom connection will be
-     * rejected. In the pattern
-     * `bidders/{bidder}/publisherConnections/{publisher}` where `{bidder}` is the
-     * account ID of the bidder, and `{publisher}` is the ads.txt/app-ads.txt
-     * publisher ID.
-     *
-     * @param string[] $names
-     */
-    public function setNames($names)
+namespace Google\Service\RealTimeBidding {
+    class BatchRejectPublisherConnectionsRequest extends \Google\Collection
     {
+        protected $collection_key = 'names';
+        /**
+         * Required. The names of the publishers with whom connection will be
+         * rejected. In the pattern
+         * `bidders/{bidder}/publisherConnections/{publisher}` where `{bidder}` is the
+         * account ID of the bidder, and `{publisher}` is the ads.txt/app-ads.txt
+         * publisher ID.
+         *
+         * @var string[]
+         */
+        public $names;
+        /**
+         * Required. The names of the publishers with whom connection will be
+         * rejected. In the pattern
+         * `bidders/{bidder}/publisherConnections/{publisher}` where `{bidder}` is the
+         * account ID of the bidder, and `{publisher}` is the ads.txt/app-ads.txt
+         * publisher ID.
+         *
+         * @param string[] $names
+         */
+        public function setNames($names)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getNames()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\RealTimeBidding\BatchRejectPublisherConnectionsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNames()
+    class Google_Service_RealTimeBidding_BatchRejectPublisherConnectionsRequest extends \Google\Service\RealTimeBidding\BatchRejectPublisherConnectionsRequest
     {
     }
 }

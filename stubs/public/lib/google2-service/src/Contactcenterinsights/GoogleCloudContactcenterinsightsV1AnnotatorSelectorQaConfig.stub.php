@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1AnnotatorSelectorQaConfig extends \Google\Model
-{
-    protected $scorecardListType = GoogleCloudContactcenterinsightsV1AnnotatorSelectorQaConfigScorecardList::class;
-    protected $scorecardListDataType = '';
-    /**
-     * A manual list of scorecards to score.
-     *
-     * @param GoogleCloudContactcenterinsightsV1AnnotatorSelectorQaConfigScorecardList $scorecardList
-     */
-    public function setScorecardList(GoogleCloudContactcenterinsightsV1AnnotatorSelectorQaConfigScorecardList $scorecardList)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1AnnotatorSelectorQaConfig extends \Google\Model
     {
+        protected $scorecardListType = GoogleCloudContactcenterinsightsV1AnnotatorSelectorQaConfigScorecardList::class;
+        protected $scorecardListDataType = '';
+        /**
+         * A manual list of scorecards to score.
+         *
+         * @param GoogleCloudContactcenterinsightsV1AnnotatorSelectorQaConfigScorecardList $scorecardList
+         */
+        public function setScorecardList(GoogleCloudContactcenterinsightsV1AnnotatorSelectorQaConfigScorecardList $scorecardList)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1AnnotatorSelectorQaConfigScorecardList
+         */
+        public function getScorecardList()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudContactcenterinsightsV1AnnotatorSelectorQaConfigScorecardList
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1AnnotatorSelectorQaConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getScorecardList()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1AnnotatorSelectorQaConfig extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1AnnotatorSelectorQaConfig
     {
     }
 }

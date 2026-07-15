@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class AutoFillRequest extends \Google\Model
-{
-    protected $rangeType = GridRange::class;
-    protected $rangeDataType = '';
-    protected $sourceAndDestinationType = SourceAndDestination::class;
-    protected $sourceAndDestinationDataType = '';
-    /**
-     * True if we should generate data with the "alternate" series. This differs
-     * based on the type and amount of source data.
-     *
-     * @var bool
-     */
-    public $useAlternateSeries;
-    /**
-     * The range to autofill. This will examine the range and detect the location
-     * that has data and automatically fill that data in to the rest of the range.
-     *
-     * @param GridRange $range
-     */
-    public function setRange(GridRange $range)
+namespace Google\Service\Sheets {
+    class AutoFillRequest extends \Google\Model
     {
+        protected $rangeType = GridRange::class;
+        protected $rangeDataType = '';
+        protected $sourceAndDestinationType = SourceAndDestination::class;
+        protected $sourceAndDestinationDataType = '';
+        /**
+         * True if we should generate data with the "alternate" series. This differs
+         * based on the type and amount of source data.
+         *
+         * @var bool
+         */
+        public $useAlternateSeries;
+        /**
+         * The range to autofill. This will examine the range and detect the location
+         * that has data and automatically fill that data in to the rest of the range.
+         *
+         * @param GridRange $range
+         */
+        public function setRange(GridRange $range)
+        {
+        }
+        /**
+         * @return GridRange
+         */
+        public function getRange()
+        {
+        }
+        /**
+         * The source and destination areas to autofill. This explicitly lists the
+         * source of the autofill and where to extend that data.
+         *
+         * @param SourceAndDestination $sourceAndDestination
+         */
+        public function setSourceAndDestination(SourceAndDestination $sourceAndDestination)
+        {
+        }
+        /**
+         * @return SourceAndDestination
+         */
+        public function getSourceAndDestination()
+        {
+        }
+        /**
+         * True if we should generate data with the "alternate" series. This differs
+         * based on the type and amount of source data.
+         *
+         * @param bool $useAlternateSeries
+         */
+        public function setUseAlternateSeries($useAlternateSeries)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUseAlternateSeries()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GridRange
+     * Runtime class alias of \Google\Service\Sheets\AutoFillRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRange()
-    {
-    }
-    /**
-     * The source and destination areas to autofill. This explicitly lists the
-     * source of the autofill and where to extend that data.
-     *
-     * @param SourceAndDestination $sourceAndDestination
-     */
-    public function setSourceAndDestination(SourceAndDestination $sourceAndDestination)
-    {
-    }
-    /**
-     * @return SourceAndDestination
-     */
-    public function getSourceAndDestination()
-    {
-    }
-    /**
-     * True if we should generate data with the "alternate" series. This differs
-     * based on the type and amount of source data.
-     *
-     * @param bool $useAlternateSeries
-     */
-    public function setUseAlternateSeries($useAlternateSeries)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUseAlternateSeries()
+    class Google_Service_Sheets_AutoFillRequest extends \Google\Service\Sheets\AutoFillRequest
     {
     }
 }

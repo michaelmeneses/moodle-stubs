@@ -21,109 +21,118 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class LicensesListResponse extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    /**
-     * [Output Only] Unique identifier for the resource; defined by the server.
-     *
-     * @var string
-     */
-    public $id;
-    protected $itemsType = License::class;
-    protected $itemsDataType = 'array';
-    /**
-     * [Output Only] This token allows you to get the next page of results for
-     * list requests. If the number of results is larger thanmaxResults, use the
-     * nextPageToken as a value for the query parameter pageToken in the next list
-     * request. Subsequent list requests will have their own nextPageToken to
-     * continue paging through the results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Output only. [Output Only] Server-defined URL for this resource.
-     *
-     * @var string
-     */
-    public $selfLink;
-    protected $warningType = LicensesListResponseWarning::class;
-    protected $warningDataType = '';
-    /**
-     * [Output Only] Unique identifier for the resource; defined by the server.
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\Compute {
+    class LicensesListResponse extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        /**
+         * [Output Only] Unique identifier for the resource; defined by the server.
+         *
+         * @var string
+         */
+        public $id;
+        protected $itemsType = License::class;
+        protected $itemsDataType = 'array';
+        /**
+         * [Output Only] This token allows you to get the next page of results for
+         * list requests. If the number of results is larger thanmaxResults, use the
+         * nextPageToken as a value for the query parameter pageToken in the next list
+         * request. Subsequent list requests will have their own nextPageToken to
+         * continue paging through the results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Output only. [Output Only] Server-defined URL for this resource.
+         *
+         * @var string
+         */
+        public $selfLink;
+        protected $warningType = LicensesListResponseWarning::class;
+        protected $warningDataType = '';
+        /**
+         * [Output Only] Unique identifier for the resource; defined by the server.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * A list of License resources.
+         *
+         * @param License[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return License[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * [Output Only] This token allows you to get the next page of results for
+         * list requests. If the number of results is larger thanmaxResults, use the
+         * nextPageToken as a value for the query parameter pageToken in the next list
+         * request. Subsequent list requests will have their own nextPageToken to
+         * continue paging through the results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Output only. [Output Only] Server-defined URL for this resource.
+         *
+         * @param string $selfLink
+         */
+        public function setSelfLink($selfLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelfLink()
+        {
+        }
+        /**
+         * [Output Only] Informational warning message.
+         *
+         * @param LicensesListResponseWarning $warning
+         */
+        public function setWarning(LicensesListResponseWarning $warning)
+        {
+        }
+        /**
+         * @return LicensesListResponseWarning
+         */
+        public function getWarning()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\LicensesListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * A list of License resources.
-     *
-     * @param License[] $items
-     */
-    public function setItems($items)
-    {
-    }
-    /**
-     * @return License[]
-     */
-    public function getItems()
-    {
-    }
-    /**
-     * [Output Only] This token allows you to get the next page of results for
-     * list requests. If the number of results is larger thanmaxResults, use the
-     * nextPageToken as a value for the query parameter pageToken in the next list
-     * request. Subsequent list requests will have their own nextPageToken to
-     * continue paging through the results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Output only. [Output Only] Server-defined URL for this resource.
-     *
-     * @param string $selfLink
-     */
-    public function setSelfLink($selfLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelfLink()
-    {
-    }
-    /**
-     * [Output Only] Informational warning message.
-     *
-     * @param LicensesListResponseWarning $warning
-     */
-    public function setWarning(LicensesListResponseWarning $warning)
-    {
-    }
-    /**
-     * @return LicensesListResponseWarning
-     */
-    public function getWarning()
+    class Google_Service_Compute_LicensesListResponse extends \Google\Service\Compute\LicensesListResponse
     {
     }
 }

@@ -8,6 +8,12 @@
  */
 namespace Aws\Api\Serializer;
 
+use Aws\Api\Service;
+use Aws\CommandInterface;
+use Aws\EndpointV2\EndpointV2SerializerTrait;
+use Aws\EndpointV2\Ruleset\RulesetEndpoint;
+use GuzzleHttp\Psr7\Request;
+use Psr\Http\Message\RequestInterface;
 /**
  * Prepares a JSON-RPC request for transfer.
  * @internal

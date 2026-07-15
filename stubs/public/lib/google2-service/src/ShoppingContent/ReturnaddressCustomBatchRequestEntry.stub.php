@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class ReturnaddressCustomBatchRequestEntry extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $batchId;
-    /**
-     * @var string
-     */
-    public $merchantId;
-    /**
-     * @var string
-     */
-    public $method;
-    protected $returnAddressType = ReturnAddress::class;
-    protected $returnAddressDataType = '';
-    /**
-     * @var string
-     */
-    public $returnAddressId;
-    /**
-     * @param string
-     */
-    public function setBatchId($batchId)
+namespace Google\Service\ShoppingContent {
+    class ReturnaddressCustomBatchRequestEntry extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $batchId;
+        /**
+         * @var string
+         */
+        public $merchantId;
+        /**
+         * @var string
+         */
+        public $method;
+        protected $returnAddressType = ReturnAddress::class;
+        protected $returnAddressDataType = '';
+        /**
+         * @var string
+         */
+        public $returnAddressId;
+        /**
+         * @param string
+         */
+        public function setBatchId($batchId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBatchId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMerchantId($merchantId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMerchantId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMethod($method)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMethod()
+        {
+        }
+        /**
+         * @param ReturnAddress
+         */
+        public function setReturnAddress(ReturnAddress $returnAddress)
+        {
+        }
+        /**
+         * @return ReturnAddress
+         */
+        public function getReturnAddress()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReturnAddressId($returnAddressId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReturnAddressId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\ReturnaddressCustomBatchRequestEntry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBatchId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMerchantId($merchantId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMerchantId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMethod($method)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMethod()
-    {
-    }
-    /**
-     * @param ReturnAddress
-     */
-    public function setReturnAddress(ReturnAddress $returnAddress)
-    {
-    }
-    /**
-     * @return ReturnAddress
-     */
-    public function getReturnAddress()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReturnAddressId($returnAddressId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReturnAddressId()
+    class Google_Service_ShoppingContent_ReturnaddressCustomBatchRequestEntry extends \Google\Service\ShoppingContent\ReturnaddressCustomBatchRequestEntry
     {
     }
 }

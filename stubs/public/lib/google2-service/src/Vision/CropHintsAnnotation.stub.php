@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class CropHintsAnnotation extends \Google\Collection
-{
-    protected $collection_key = 'cropHints';
-    protected $cropHintsType = CropHint::class;
-    protected $cropHintsDataType = 'array';
-    /**
-     * Crop hint results.
-     *
-     * @param CropHint[] $cropHints
-     */
-    public function setCropHints($cropHints)
+namespace Google\Service\Vision {
+    class CropHintsAnnotation extends \Google\Collection
     {
+        protected $collection_key = 'cropHints';
+        protected $cropHintsType = CropHint::class;
+        protected $cropHintsDataType = 'array';
+        /**
+         * Crop hint results.
+         *
+         * @param CropHint[] $cropHints
+         */
+        public function setCropHints($cropHints)
+        {
+        }
+        /**
+         * @return CropHint[]
+         */
+        public function getCropHints()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CropHint[]
+     * Runtime class alias of \Google\Service\Vision\CropHintsAnnotation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCropHints()
+    class Google_Service_Vision_CropHintsAnnotation extends \Google\Service\Vision\CropHintsAnnotation
     {
     }
 }

@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class MergeCellsRequest extends \Google\Model
-{
-    /**
-     * Create a single merge from the range
-     */
-    public const MERGE_TYPE_MERGE_ALL = 'MERGE_ALL';
-    /**
-     * Create a merge for each column in the range
-     */
-    public const MERGE_TYPE_MERGE_COLUMNS = 'MERGE_COLUMNS';
-    /**
-     * Create a merge for each row in the range
-     */
-    public const MERGE_TYPE_MERGE_ROWS = 'MERGE_ROWS';
-    /**
-     * How the cells should be merged.
-     *
-     * @var string
-     */
-    public $mergeType;
-    protected $rangeType = GridRange::class;
-    protected $rangeDataType = '';
-    /**
-     * How the cells should be merged.
-     *
-     * Accepted values: MERGE_ALL, MERGE_COLUMNS, MERGE_ROWS
-     *
-     * @param self::MERGE_TYPE_* $mergeType
-     */
-    public function setMergeType($mergeType)
+namespace Google\Service\Sheets {
+    class MergeCellsRequest extends \Google\Model
     {
+        /**
+         * Create a single merge from the range
+         */
+        public const MERGE_TYPE_MERGE_ALL = 'MERGE_ALL';
+        /**
+         * Create a merge for each column in the range
+         */
+        public const MERGE_TYPE_MERGE_COLUMNS = 'MERGE_COLUMNS';
+        /**
+         * Create a merge for each row in the range
+         */
+        public const MERGE_TYPE_MERGE_ROWS = 'MERGE_ROWS';
+        /**
+         * How the cells should be merged.
+         *
+         * @var string
+         */
+        public $mergeType;
+        protected $rangeType = GridRange::class;
+        protected $rangeDataType = '';
+        /**
+         * How the cells should be merged.
+         *
+         * Accepted values: MERGE_ALL, MERGE_COLUMNS, MERGE_ROWS
+         *
+         * @param self::MERGE_TYPE_* $mergeType
+         */
+        public function setMergeType($mergeType)
+        {
+        }
+        /**
+         * @return self::MERGE_TYPE_*
+         */
+        public function getMergeType()
+        {
+        }
+        /**
+         * The range of cells to merge.
+         *
+         * @param GridRange $range
+         */
+        public function setRange(GridRange $range)
+        {
+        }
+        /**
+         * @return GridRange
+         */
+        public function getRange()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::MERGE_TYPE_*
+     * Runtime class alias of \Google\Service\Sheets\MergeCellsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMergeType()
-    {
-    }
-    /**
-     * The range of cells to merge.
-     *
-     * @param GridRange $range
-     */
-    public function setRange(GridRange $range)
-    {
-    }
-    /**
-     * @return GridRange
-     */
-    public function getRange()
+    class Google_Service_Sheets_MergeCellsRequest extends \Google\Service\Sheets\MergeCellsRequest
     {
     }
 }

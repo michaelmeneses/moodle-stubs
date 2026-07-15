@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class ListAssetsResponse extends \Google\Collection
-{
-    protected $collection_key = 'assets';
-    protected $assetsType = Asset::class;
-    protected $assetsDataType = 'array';
-    /**
-     * Token to retrieve the next page of results. It expires 72 hours after the
-     * page token for the first page is generated. Set to empty if there are no
-     * remaining results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Time the snapshot was taken.
-     *
-     * @var string
-     */
-    public $readTime;
-    /**
-     * Assets.
-     *
-     * @param Asset[] $assets
-     */
-    public function setAssets($assets)
+namespace Google\Service\CloudAsset {
+    class ListAssetsResponse extends \Google\Collection
     {
+        protected $collection_key = 'assets';
+        protected $assetsType = Asset::class;
+        protected $assetsDataType = 'array';
+        /**
+         * Token to retrieve the next page of results. It expires 72 hours after the
+         * page token for the first page is generated. Set to empty if there are no
+         * remaining results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Time the snapshot was taken.
+         *
+         * @var string
+         */
+        public $readTime;
+        /**
+         * Assets.
+         *
+         * @param Asset[] $assets
+         */
+        public function setAssets($assets)
+        {
+        }
+        /**
+         * @return Asset[]
+         */
+        public function getAssets()
+        {
+        }
+        /**
+         * Token to retrieve the next page of results. It expires 72 hours after the
+         * page token for the first page is generated. Set to empty if there are no
+         * remaining results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Time the snapshot was taken.
+         *
+         * @param string $readTime
+         */
+        public function setReadTime($readTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReadTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Asset[]
+     * Runtime class alias of \Google\Service\CloudAsset\ListAssetsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssets()
-    {
-    }
-    /**
-     * Token to retrieve the next page of results. It expires 72 hours after the
-     * page token for the first page is generated. Set to empty if there are no
-     * remaining results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Time the snapshot was taken.
-     *
-     * @param string $readTime
-     */
-    public function setReadTime($readTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReadTime()
+    class Google_Service_CloudAsset_ListAssetsResponse extends \Google\Service\CloudAsset\ListAssetsResponse
     {
     }
 }

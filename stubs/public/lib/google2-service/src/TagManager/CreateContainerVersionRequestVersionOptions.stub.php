@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager;
-
-class CreateContainerVersionRequestVersionOptions extends \Google\Model
-{
-    /**
-     * The name of the container version to be created.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The notes of the container version to be created.
-     *
-     * @var string
-     */
-    public $notes;
-    /**
-     * The name of the container version to be created.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\TagManager {
+    class CreateContainerVersionRequestVersionOptions extends \Google\Model
     {
+        /**
+         * The name of the container version to be created.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The notes of the container version to be created.
+         *
+         * @var string
+         */
+        public $notes;
+        /**
+         * The name of the container version to be created.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The notes of the container version to be created.
+         *
+         * @param string $notes
+         */
+        public function setNotes($notes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNotes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\TagManager\CreateContainerVersionRequestVersionOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * The notes of the container version to be created.
-     *
-     * @param string $notes
-     */
-    public function setNotes($notes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNotes()
+    class Google_Service_TagManager_CreateContainerVersionRequestVersionOptions extends \Google\Service\TagManager\CreateContainerVersionRequestVersionOptions
     {
     }
 }

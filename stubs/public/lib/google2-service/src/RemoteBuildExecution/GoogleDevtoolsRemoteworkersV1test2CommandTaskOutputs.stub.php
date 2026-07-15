@@ -21,37 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution;
-
-class GoogleDevtoolsRemoteworkersV1test2CommandTaskOutputs extends \Google\Collection
-{
-    protected $collection_key = 'files';
-    public $directories;
-    public $files;
-    public $stderrDestination;
-    public $stdoutDestination;
-    public function setDirectories($directories)
+namespace Google\Service\RemoteBuildExecution {
+    class GoogleDevtoolsRemoteworkersV1test2CommandTaskOutputs extends \Google\Collection
     {
+        protected $collection_key = 'files';
+        public $directories;
+        public $files;
+        public $stderrDestination;
+        public $stdoutDestination;
+        public function setDirectories($directories)
+        {
+        }
+        public function getDirectories()
+        {
+        }
+        public function setFiles($files)
+        {
+        }
+        public function getFiles()
+        {
+        }
+        public function setStderrDestination($stderrDestination)
+        {
+        }
+        public function getStderrDestination()
+        {
+        }
+        public function setStdoutDestination($stdoutDestination)
+        {
+        }
+        public function getStdoutDestination()
+        {
+        }
     }
-    public function getDirectories()
-    {
-    }
-    public function setFiles($files)
-    {
-    }
-    public function getFiles()
-    {
-    }
-    public function setStderrDestination($stderrDestination)
-    {
-    }
-    public function getStderrDestination()
-    {
-    }
-    public function setStdoutDestination($stdoutDestination)
-    {
-    }
-    public function getStdoutDestination()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\GoogleDevtoolsRemoteworkersV1test2CommandTaskOutputs registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_RemoteBuildExecution_GoogleDevtoolsRemoteworkersV1test2CommandTaskOutputs extends \Google\Service\RemoteBuildExecution\GoogleDevtoolsRemoteworkersV1test2CommandTaskOutputs
     {
     }
 }

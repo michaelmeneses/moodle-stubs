@@ -21,117 +21,126 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudLifeSciences;
-
-class Metadata extends \Google\Collection
-{
-    protected $collection_key = 'events';
-    /**
-     * @var string
-     */
-    public $createTime;
-    /**
-     * @var string
-     */
-    public $endTime;
-    protected $eventsType = Event::class;
-    protected $eventsDataType = 'array';
-    /**
-     * @var string[]
-     */
-    public $labels;
-    protected $pipelineType = Pipeline::class;
-    protected $pipelineDataType = '';
-    /**
-     * @var string
-     */
-    public $pubSubTopic;
-    /**
-     * @var string
-     */
-    public $startTime;
-    /**
-     * @param string
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\CloudLifeSciences {
+    class Metadata extends \Google\Collection
     {
+        protected $collection_key = 'events';
+        /**
+         * @var string
+         */
+        public $createTime;
+        /**
+         * @var string
+         */
+        public $endTime;
+        protected $eventsType = Event::class;
+        protected $eventsDataType = 'array';
+        /**
+         * @var string[]
+         */
+        public $labels;
+        protected $pipelineType = Pipeline::class;
+        protected $pipelineDataType = '';
+        /**
+         * @var string
+         */
+        public $pubSubTopic;
+        /**
+         * @var string
+         */
+        public $startTime;
+        /**
+         * @param string
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * @param Event[]
+         */
+        public function setEvents($events)
+        {
+        }
+        /**
+         * @return Event[]
+         */
+        public function getEvents()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * @param Pipeline
+         */
+        public function setPipeline(Pipeline $pipeline)
+        {
+        }
+        /**
+         * @return Pipeline
+         */
+        public function getPipeline()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPubSubTopic($pubSubTopic)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPubSubTopic()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudLifeSciences\Metadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEndTime($endTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndTime()
-    {
-    }
-    /**
-     * @param Event[]
-     */
-    public function setEvents($events)
-    {
-    }
-    /**
-     * @return Event[]
-     */
-    public function getEvents()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * @param Pipeline
-     */
-    public function setPipeline(Pipeline $pipeline)
-    {
-    }
-    /**
-     * @return Pipeline
-     */
-    public function getPipeline()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPubSubTopic($pubSubTopic)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPubSubTopic()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
+    class Google_Service_CloudLifeSciences_Metadata extends \Google\Service\CloudLifeSciences\Metadata
     {
     }
 }

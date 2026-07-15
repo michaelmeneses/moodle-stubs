@@ -29,6 +29,10 @@
  */
 namespace quiz_overview\privacy;
 
+use core_privacy\local\request\writer;
+use core_privacy\local\request\transform;
+use core_privacy\local\metadata\collection;
+use core_privacy\manager;
 /**
  * Privacy Subsystem implementation for quiz_overview..
  *

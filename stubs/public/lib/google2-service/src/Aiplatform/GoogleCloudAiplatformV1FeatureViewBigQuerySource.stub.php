@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1FeatureViewBigQuerySource extends \Google\Collection
-{
-    protected $collection_key = 'entityIdColumns';
-    /**
-     * Required. Columns to construct entity_id / row keys.
-     *
-     * @var string[]
-     */
-    public $entityIdColumns;
-    /**
-     * Required. The BigQuery view URI that will be materialized on each sync
-     * trigger based on FeatureView.SyncConfig.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * Required. Columns to construct entity_id / row keys.
-     *
-     * @param string[] $entityIdColumns
-     */
-    public function setEntityIdColumns($entityIdColumns)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1FeatureViewBigQuerySource extends \Google\Collection
     {
+        protected $collection_key = 'entityIdColumns';
+        /**
+         * Required. Columns to construct entity_id / row keys.
+         *
+         * @var string[]
+         */
+        public $entityIdColumns;
+        /**
+         * Required. The BigQuery view URI that will be materialized on each sync
+         * trigger based on FeatureView.SyncConfig.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * Required. Columns to construct entity_id / row keys.
+         *
+         * @param string[] $entityIdColumns
+         */
+        public function setEntityIdColumns($entityIdColumns)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getEntityIdColumns()
+        {
+        }
+        /**
+         * Required. The BigQuery view URI that will be materialized on each sync
+         * trigger based on FeatureView.SyncConfig.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1FeatureViewBigQuerySource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntityIdColumns()
-    {
-    }
-    /**
-     * Required. The BigQuery view URI that will be materialized on each sync
-     * trigger based on FeatureView.SyncConfig.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1FeatureViewBigQuerySource extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1FeatureViewBigQuerySource
     {
     }
 }

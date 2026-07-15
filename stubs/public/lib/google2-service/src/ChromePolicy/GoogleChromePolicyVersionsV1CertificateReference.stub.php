@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromePolicy;
-
-class GoogleChromePolicyVersionsV1CertificateReference extends \Google\Model
-{
-    /**
-     * Output only. The name of the referencing network.
-     *
-     * @var string
-     */
-    public $network;
-    /**
-     * Output only. The obfuscated id of the org unit the referencing network is
-     * in.
-     *
-     * @var string
-     */
-    public $orgUnitId;
-    /**
-     * Output only. The name of the referencing network.
-     *
-     * @param string $network
-     */
-    public function setNetwork($network)
+namespace Google\Service\ChromePolicy {
+    class GoogleChromePolicyVersionsV1CertificateReference extends \Google\Model
     {
+        /**
+         * Output only. The name of the referencing network.
+         *
+         * @var string
+         */
+        public $network;
+        /**
+         * Output only. The obfuscated id of the org unit the referencing network is
+         * in.
+         *
+         * @var string
+         */
+        public $orgUnitId;
+        /**
+         * Output only. The name of the referencing network.
+         *
+         * @param string $network
+         */
+        public function setNetwork($network)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNetwork()
+        {
+        }
+        /**
+         * Output only. The obfuscated id of the org unit the referencing network is
+         * in.
+         *
+         * @param string $orgUnitId
+         */
+        public function setOrgUnitId($orgUnitId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOrgUnitId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1CertificateReference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNetwork()
-    {
-    }
-    /**
-     * Output only. The obfuscated id of the org unit the referencing network is
-     * in.
-     *
-     * @param string $orgUnitId
-     */
-    public function setOrgUnitId($orgUnitId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOrgUnitId()
+    class Google_Service_ChromePolicy_GoogleChromePolicyVersionsV1CertificateReference extends \Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1CertificateReference
     {
     }
 }

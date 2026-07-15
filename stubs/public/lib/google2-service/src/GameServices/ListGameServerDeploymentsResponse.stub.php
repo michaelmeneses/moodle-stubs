@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GameServices;
-
-class ListGameServerDeploymentsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $gameServerDeploymentsType = GameServerDeployment::class;
-    protected $gameServerDeploymentsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * @param GameServerDeployment[]
-     */
-    public function setGameServerDeployments($gameServerDeployments)
+namespace Google\Service\GameServices {
+    class ListGameServerDeploymentsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $gameServerDeploymentsType = GameServerDeployment::class;
+        protected $gameServerDeploymentsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * @param GameServerDeployment[]
+         */
+        public function setGameServerDeployments($gameServerDeployments)
+        {
+        }
+        /**
+         * @return GameServerDeployment[]
+         */
+        public function getGameServerDeployments()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GameServerDeployment[]
+     * Runtime class alias of \Google\Service\GameServices\ListGameServerDeploymentsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGameServerDeployments()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_GameServices_ListGameServerDeploymentsResponse extends \Google\Service\GameServices\ListGameServerDeploymentsResponse
     {
     }
 }

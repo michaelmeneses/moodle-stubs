@@ -21,109 +21,118 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Reports;
-
-class UsageReports extends \Google\Collection
-{
-    protected $collection_key = 'warnings';
-    /**
-     * ETag of the resource.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * The type of API resource. For a usage report, the value is
-     * `admin#reports#usageReports`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Token to specify next page. A report with multiple pages has a
-     * `nextPageToken` property in the response. For your follow-on requests
-     * getting all of the report's pages, enter the `nextPageToken` value in the
-     * `pageToken` query string.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $usageReportsType = UsageReport::class;
-    protected $usageReportsDataType = 'array';
-    protected $warningsType = UsageReportsWarnings::class;
-    protected $warningsDataType = 'array';
-    /**
-     * ETag of the resource.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
+namespace Google\Service\Reports {
+    class UsageReports extends \Google\Collection
     {
+        protected $collection_key = 'warnings';
+        /**
+         * ETag of the resource.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * The type of API resource. For a usage report, the value is
+         * `admin#reports#usageReports`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Token to specify next page. A report with multiple pages has a
+         * `nextPageToken` property in the response. For your follow-on requests
+         * getting all of the report's pages, enter the `nextPageToken` value in the
+         * `pageToken` query string.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $usageReportsType = UsageReport::class;
+        protected $usageReportsDataType = 'array';
+        protected $warningsType = UsageReportsWarnings::class;
+        protected $warningsDataType = 'array';
+        /**
+         * ETag of the resource.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * The type of API resource. For a usage report, the value is
+         * `admin#reports#usageReports`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Token to specify next page. A report with multiple pages has a
+         * `nextPageToken` property in the response. For your follow-on requests
+         * getting all of the report's pages, enter the `nextPageToken` value in the
+         * `pageToken` query string.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Various application parameter records.
+         *
+         * @param UsageReport[] $usageReports
+         */
+        public function setUsageReports($usageReports)
+        {
+        }
+        /**
+         * @return UsageReport[]
+         */
+        public function getUsageReports()
+        {
+        }
+        /**
+         * Warnings, if any.
+         *
+         * @param UsageReportsWarnings[] $warnings
+         */
+        public function setWarnings($warnings)
+        {
+        }
+        /**
+         * @return UsageReportsWarnings[]
+         */
+        public function getWarnings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Reports\UsageReports registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
-    {
-    }
-    /**
-     * The type of API resource. For a usage report, the value is
-     * `admin#reports#usageReports`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Token to specify next page. A report with multiple pages has a
-     * `nextPageToken` property in the response. For your follow-on requests
-     * getting all of the report's pages, enter the `nextPageToken` value in the
-     * `pageToken` query string.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Various application parameter records.
-     *
-     * @param UsageReport[] $usageReports
-     */
-    public function setUsageReports($usageReports)
-    {
-    }
-    /**
-     * @return UsageReport[]
-     */
-    public function getUsageReports()
-    {
-    }
-    /**
-     * Warnings, if any.
-     *
-     * @param UsageReportsWarnings[] $warnings
-     */
-    public function setWarnings($warnings)
-    {
-    }
-    /**
-     * @return UsageReportsWarnings[]
-     */
-    public function getWarnings()
+    class Google_Service_Reports_UsageReports extends \Google\Service\Reports\UsageReports
     {
     }
 }

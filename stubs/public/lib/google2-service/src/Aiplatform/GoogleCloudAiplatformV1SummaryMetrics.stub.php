@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SummaryMetrics extends \Google\Model
-{
-    /**
-     * Optional. The number of items that failed to be evaluated.
-     *
-     * @var int
-     */
-    public $failedItems;
-    /**
-     * Optional. Map of metric name to metric value.
-     *
-     * @var array[]
-     */
-    public $metrics;
-    /**
-     * Optional. The total number of items that were evaluated.
-     *
-     * @var int
-     */
-    public $totalItems;
-    /**
-     * Optional. The number of items that failed to be evaluated.
-     *
-     * @param int $failedItems
-     */
-    public function setFailedItems($failedItems)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SummaryMetrics extends \Google\Model
     {
+        /**
+         * Optional. The number of items that failed to be evaluated.
+         *
+         * @var int
+         */
+        public $failedItems;
+        /**
+         * Optional. Map of metric name to metric value.
+         *
+         * @var array[]
+         */
+        public $metrics;
+        /**
+         * Optional. The total number of items that were evaluated.
+         *
+         * @var int
+         */
+        public $totalItems;
+        /**
+         * Optional. The number of items that failed to be evaluated.
+         *
+         * @param int $failedItems
+         */
+        public function setFailedItems($failedItems)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getFailedItems()
+        {
+        }
+        /**
+         * Optional. Map of metric name to metric value.
+         *
+         * @param array[] $metrics
+         */
+        public function setMetrics($metrics)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getMetrics()
+        {
+        }
+        /**
+         * Optional. The total number of items that were evaluated.
+         *
+         * @param int $totalItems
+         */
+        public function setTotalItems($totalItems)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalItems()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SummaryMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFailedItems()
-    {
-    }
-    /**
-     * Optional. Map of metric name to metric value.
-     *
-     * @param array[] $metrics
-     */
-    public function setMetrics($metrics)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getMetrics()
-    {
-    }
-    /**
-     * Optional. The total number of items that were evaluated.
-     *
-     * @param int $totalItems
-     */
-    public function setTotalItems($totalItems)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalItems()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SummaryMetrics extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SummaryMetrics
     {
     }
 }

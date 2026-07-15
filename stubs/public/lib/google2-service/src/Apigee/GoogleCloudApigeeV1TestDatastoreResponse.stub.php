@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1TestDatastoreResponse extends \Google\Model
-{
-    /**
-     * Output only. Error message of test connection failure
-     *
-     * @var string
-     */
-    public $error;
-    /**
-     * Output only. It could be `completed` or `failed`
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Output only. Error message of test connection failure
-     *
-     * @param string $error
-     */
-    public function setError($error)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1TestDatastoreResponse extends \Google\Model
     {
+        /**
+         * Output only. Error message of test connection failure
+         *
+         * @var string
+         */
+        public $error;
+        /**
+         * Output only. It could be `completed` or `failed`
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Output only. Error message of test connection failure
+         *
+         * @param string $error
+         */
+        public function setError($error)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getError()
+        {
+        }
+        /**
+         * Output only. It could be `completed` or `failed`
+         *
+         * @param string $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1TestDatastoreResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getError()
-    {
-    }
-    /**
-     * Output only. It could be `completed` or `failed`
-     *
-     * @param string $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getState()
+    class Google_Service_Apigee_GoogleCloudApigeeV1TestDatastoreResponse extends \Google\Service\Apigee\GoogleCloudApigeeV1TestDatastoreResponse
     {
     }
 }

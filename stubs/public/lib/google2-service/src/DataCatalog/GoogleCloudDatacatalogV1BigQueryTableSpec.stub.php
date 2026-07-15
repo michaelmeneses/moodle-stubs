@@ -21,81 +21,90 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1BigQueryTableSpec extends \Google\Model
-{
-    /**
-     * Default unknown type.
-     */
-    public const TABLE_SOURCE_TYPE_TABLE_SOURCE_TYPE_UNSPECIFIED = 'TABLE_SOURCE_TYPE_UNSPECIFIED';
-    /**
-     * Table view.
-     */
-    public const TABLE_SOURCE_TYPE_BIGQUERY_VIEW = 'BIGQUERY_VIEW';
-    /**
-     * BigQuery native table.
-     */
-    public const TABLE_SOURCE_TYPE_BIGQUERY_TABLE = 'BIGQUERY_TABLE';
-    /**
-     * BigQuery materialized view.
-     */
-    public const TABLE_SOURCE_TYPE_BIGQUERY_MATERIALIZED_VIEW = 'BIGQUERY_MATERIALIZED_VIEW';
-    /**
-     * Output only. The table source type.
-     *
-     * @var string
-     */
-    public $tableSourceType;
-    protected $tableSpecType = GoogleCloudDatacatalogV1TableSpec::class;
-    protected $tableSpecDataType = '';
-    protected $viewSpecType = GoogleCloudDatacatalogV1ViewSpec::class;
-    protected $viewSpecDataType = '';
-    /**
-     * Output only. The table source type.
-     *
-     * Accepted values: TABLE_SOURCE_TYPE_UNSPECIFIED, BIGQUERY_VIEW,
-     * BIGQUERY_TABLE, BIGQUERY_MATERIALIZED_VIEW
-     *
-     * @param self::TABLE_SOURCE_TYPE_* $tableSourceType
-     */
-    public function setTableSourceType($tableSourceType)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1BigQueryTableSpec extends \Google\Model
     {
+        /**
+         * Default unknown type.
+         */
+        public const TABLE_SOURCE_TYPE_TABLE_SOURCE_TYPE_UNSPECIFIED = 'TABLE_SOURCE_TYPE_UNSPECIFIED';
+        /**
+         * Table view.
+         */
+        public const TABLE_SOURCE_TYPE_BIGQUERY_VIEW = 'BIGQUERY_VIEW';
+        /**
+         * BigQuery native table.
+         */
+        public const TABLE_SOURCE_TYPE_BIGQUERY_TABLE = 'BIGQUERY_TABLE';
+        /**
+         * BigQuery materialized view.
+         */
+        public const TABLE_SOURCE_TYPE_BIGQUERY_MATERIALIZED_VIEW = 'BIGQUERY_MATERIALIZED_VIEW';
+        /**
+         * Output only. The table source type.
+         *
+         * @var string
+         */
+        public $tableSourceType;
+        protected $tableSpecType = GoogleCloudDatacatalogV1TableSpec::class;
+        protected $tableSpecDataType = '';
+        protected $viewSpecType = GoogleCloudDatacatalogV1ViewSpec::class;
+        protected $viewSpecDataType = '';
+        /**
+         * Output only. The table source type.
+         *
+         * Accepted values: TABLE_SOURCE_TYPE_UNSPECIFIED, BIGQUERY_VIEW,
+         * BIGQUERY_TABLE, BIGQUERY_MATERIALIZED_VIEW
+         *
+         * @param self::TABLE_SOURCE_TYPE_* $tableSourceType
+         */
+        public function setTableSourceType($tableSourceType)
+        {
+        }
+        /**
+         * @return self::TABLE_SOURCE_TYPE_*
+         */
+        public function getTableSourceType()
+        {
+        }
+        /**
+         * Specification of a BigQuery table. Populated only if the
+         * `table_source_type` is `BIGQUERY_TABLE`.
+         *
+         * @param GoogleCloudDatacatalogV1TableSpec $tableSpec
+         */
+        public function setTableSpec(GoogleCloudDatacatalogV1TableSpec $tableSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1TableSpec
+         */
+        public function getTableSpec()
+        {
+        }
+        /**
+         * Table view specification. Populated only if the `table_source_type` is
+         * `BIGQUERY_VIEW`.
+         *
+         * @param GoogleCloudDatacatalogV1ViewSpec $viewSpec
+         */
+        public function setViewSpec(GoogleCloudDatacatalogV1ViewSpec $viewSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1ViewSpec
+         */
+        public function getViewSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::TABLE_SOURCE_TYPE_*
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1BigQueryTableSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTableSourceType()
-    {
-    }
-    /**
-     * Specification of a BigQuery table. Populated only if the
-     * `table_source_type` is `BIGQUERY_TABLE`.
-     *
-     * @param GoogleCloudDatacatalogV1TableSpec $tableSpec
-     */
-    public function setTableSpec(GoogleCloudDatacatalogV1TableSpec $tableSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudDatacatalogV1TableSpec
-     */
-    public function getTableSpec()
-    {
-    }
-    /**
-     * Table view specification. Populated only if the `table_source_type` is
-     * `BIGQUERY_VIEW`.
-     *
-     * @param GoogleCloudDatacatalogV1ViewSpec $viewSpec
-     */
-    public function setViewSpec(GoogleCloudDatacatalogV1ViewSpec $viewSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudDatacatalogV1ViewSpec
-     */
-    public function getViewSpec()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1BigQueryTableSpec extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1BigQueryTableSpec
     {
     }
 }

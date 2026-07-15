@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1beta3PropertyMetadata extends \Google\Model
-{
-    protected $fieldExtractionMetadataType = GoogleCloudDocumentaiV1beta3FieldExtractionMetadata::class;
-    protected $fieldExtractionMetadataDataType = '';
-    /**
-     * Whether the property should be considered as "inactive".
-     *
-     * @var bool
-     */
-    public $inactive;
-    /**
-     * Field extraction metadata on the property.
-     *
-     * @param GoogleCloudDocumentaiV1beta3FieldExtractionMetadata $fieldExtractionMetadata
-     */
-    public function setFieldExtractionMetadata(GoogleCloudDocumentaiV1beta3FieldExtractionMetadata $fieldExtractionMetadata)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1beta3PropertyMetadata extends \Google\Model
     {
+        protected $fieldExtractionMetadataType = GoogleCloudDocumentaiV1beta3FieldExtractionMetadata::class;
+        protected $fieldExtractionMetadataDataType = '';
+        /**
+         * Whether the property should be considered as "inactive".
+         *
+         * @var bool
+         */
+        public $inactive;
+        /**
+         * Field extraction metadata on the property.
+         *
+         * @param GoogleCloudDocumentaiV1beta3FieldExtractionMetadata $fieldExtractionMetadata
+         */
+        public function setFieldExtractionMetadata(GoogleCloudDocumentaiV1beta3FieldExtractionMetadata $fieldExtractionMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta3FieldExtractionMetadata
+         */
+        public function getFieldExtractionMetadata()
+        {
+        }
+        /**
+         * Whether the property should be considered as "inactive".
+         *
+         * @param bool $inactive
+         */
+        public function setInactive($inactive)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getInactive()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiV1beta3FieldExtractionMetadata
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1beta3PropertyMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFieldExtractionMetadata()
-    {
-    }
-    /**
-     * Whether the property should be considered as "inactive".
-     *
-     * @param bool $inactive
-     */
-    public function setInactive($inactive)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getInactive()
+    class Google_Service_Document_GoogleCloudDocumentaiV1beta3PropertyMetadata extends \Google\Service\Document\GoogleCloudDocumentaiV1beta3PropertyMetadata
     {
     }
 }

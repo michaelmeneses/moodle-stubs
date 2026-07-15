@@ -21,196 +21,205 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class MongodbProfile extends \Google\Collection
-{
-    protected $collection_key = 'hostAddresses';
-    /**
-     * Optional. Specifies additional options for the MongoDB connection. The
-     * options should be sent as key-value pairs, for example: `additional_options
-     * = {"serverSelectionTimeoutMS": "10000", "directConnection": "true"}`. Keys
-     * are case-sensitive and should match the official MongoDB connection string
-     * options: https://www.mongodb.com/docs/manual/reference/connection-string-
-     * options/ The server will not modify the values provided by the user.
-     *
-     * @var string[]
-     */
-    public $additionalOptions;
-    protected $hostAddressesType = HostAddress::class;
-    protected $hostAddressesDataType = 'array';
-    /**
-     * Optional. Password for the MongoDB connection. Mutually exclusive with the
-     * `secret_manager_stored_password` field.
-     *
-     * @var string
-     */
-    public $password;
-    /**
-     * Optional. Name of the replica set. Only needed for self hosted replica set
-     * type MongoDB cluster. For SRV connection format, this field must be empty.
-     * For Standard connection format, this field must be specified.
-     *
-     * @var string
-     */
-    public $replicaSet;
-    /**
-     * Optional. A reference to a Secret Manager resource name storing the
-     * SQLServer connection password. Mutually exclusive with the `password`
-     * field.
-     *
-     * @var string
-     */
-    public $secretManagerStoredPassword;
-    protected $srvConnectionFormatType = SrvConnectionFormat::class;
-    protected $srvConnectionFormatDataType = '';
-    protected $sslConfigType = MongodbSslConfig::class;
-    protected $sslConfigDataType = '';
-    protected $standardConnectionFormatType = StandardConnectionFormat::class;
-    protected $standardConnectionFormatDataType = '';
-    /**
-     * Required. Username for the MongoDB connection.
-     *
-     * @var string
-     */
-    public $username;
-    /**
-     * Optional. Specifies additional options for the MongoDB connection. The
-     * options should be sent as key-value pairs, for example: `additional_options
-     * = {"serverSelectionTimeoutMS": "10000", "directConnection": "true"}`. Keys
-     * are case-sensitive and should match the official MongoDB connection string
-     * options: https://www.mongodb.com/docs/manual/reference/connection-string-
-     * options/ The server will not modify the values provided by the user.
-     *
-     * @param string[] $additionalOptions
-     */
-    public function setAdditionalOptions($additionalOptions)
+namespace Google\Service\Datastream {
+    class MongodbProfile extends \Google\Collection
     {
+        protected $collection_key = 'hostAddresses';
+        /**
+         * Optional. Specifies additional options for the MongoDB connection. The
+         * options should be sent as key-value pairs, for example: `additional_options
+         * = {"serverSelectionTimeoutMS": "10000", "directConnection": "true"}`. Keys
+         * are case-sensitive and should match the official MongoDB connection string
+         * options: https://www.mongodb.com/docs/manual/reference/connection-string-
+         * options/ The server will not modify the values provided by the user.
+         *
+         * @var string[]
+         */
+        public $additionalOptions;
+        protected $hostAddressesType = HostAddress::class;
+        protected $hostAddressesDataType = 'array';
+        /**
+         * Optional. Password for the MongoDB connection. Mutually exclusive with the
+         * `secret_manager_stored_password` field.
+         *
+         * @var string
+         */
+        public $password;
+        /**
+         * Optional. Name of the replica set. Only needed for self hosted replica set
+         * type MongoDB cluster. For SRV connection format, this field must be empty.
+         * For Standard connection format, this field must be specified.
+         *
+         * @var string
+         */
+        public $replicaSet;
+        /**
+         * Optional. A reference to a Secret Manager resource name storing the
+         * SQLServer connection password. Mutually exclusive with the `password`
+         * field.
+         *
+         * @var string
+         */
+        public $secretManagerStoredPassword;
+        protected $srvConnectionFormatType = SrvConnectionFormat::class;
+        protected $srvConnectionFormatDataType = '';
+        protected $sslConfigType = MongodbSslConfig::class;
+        protected $sslConfigDataType = '';
+        protected $standardConnectionFormatType = StandardConnectionFormat::class;
+        protected $standardConnectionFormatDataType = '';
+        /**
+         * Required. Username for the MongoDB connection.
+         *
+         * @var string
+         */
+        public $username;
+        /**
+         * Optional. Specifies additional options for the MongoDB connection. The
+         * options should be sent as key-value pairs, for example: `additional_options
+         * = {"serverSelectionTimeoutMS": "10000", "directConnection": "true"}`. Keys
+         * are case-sensitive and should match the official MongoDB connection string
+         * options: https://www.mongodb.com/docs/manual/reference/connection-string-
+         * options/ The server will not modify the values provided by the user.
+         *
+         * @param string[] $additionalOptions
+         */
+        public function setAdditionalOptions($additionalOptions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAdditionalOptions()
+        {
+        }
+        /**
+         * Required. List of host addresses for a MongoDB cluster. For SRV connection
+         * format, this list must contain exactly one DNS host without a port. For
+         * Standard connection format, this list must contain all the required hosts
+         * in the cluster with their respective ports.
+         *
+         * @param HostAddress[] $hostAddresses
+         */
+        public function setHostAddresses($hostAddresses)
+        {
+        }
+        /**
+         * @return HostAddress[]
+         */
+        public function getHostAddresses()
+        {
+        }
+        /**
+         * Optional. Password for the MongoDB connection. Mutually exclusive with the
+         * `secret_manager_stored_password` field.
+         *
+         * @param string $password
+         */
+        public function setPassword($password)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPassword()
+        {
+        }
+        /**
+         * Optional. Name of the replica set. Only needed for self hosted replica set
+         * type MongoDB cluster. For SRV connection format, this field must be empty.
+         * For Standard connection format, this field must be specified.
+         *
+         * @param string $replicaSet
+         */
+        public function setReplicaSet($replicaSet)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReplicaSet()
+        {
+        }
+        /**
+         * Optional. A reference to a Secret Manager resource name storing the
+         * SQLServer connection password. Mutually exclusive with the `password`
+         * field.
+         *
+         * @param string $secretManagerStoredPassword
+         */
+        public function setSecretManagerStoredPassword($secretManagerStoredPassword)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSecretManagerStoredPassword()
+        {
+        }
+        /**
+         * Srv connection format.
+         *
+         * @param SrvConnectionFormat $srvConnectionFormat
+         */
+        public function setSrvConnectionFormat(SrvConnectionFormat $srvConnectionFormat)
+        {
+        }
+        /**
+         * @return SrvConnectionFormat
+         */
+        public function getSrvConnectionFormat()
+        {
+        }
+        /**
+         * Optional. SSL configuration for the MongoDB connection.
+         *
+         * @param MongodbSslConfig $sslConfig
+         */
+        public function setSslConfig(MongodbSslConfig $sslConfig)
+        {
+        }
+        /**
+         * @return MongodbSslConfig
+         */
+        public function getSslConfig()
+        {
+        }
+        /**
+         * Standard connection format.
+         *
+         * @param StandardConnectionFormat $standardConnectionFormat
+         */
+        public function setStandardConnectionFormat(StandardConnectionFormat $standardConnectionFormat)
+        {
+        }
+        /**
+         * @return StandardConnectionFormat
+         */
+        public function getStandardConnectionFormat()
+        {
+        }
+        /**
+         * Required. Username for the MongoDB connection.
+         *
+         * @param string $username
+         */
+        public function setUsername($username)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUsername()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Datastream\MongodbProfile registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdditionalOptions()
-    {
-    }
-    /**
-     * Required. List of host addresses for a MongoDB cluster. For SRV connection
-     * format, this list must contain exactly one DNS host without a port. For
-     * Standard connection format, this list must contain all the required hosts
-     * in the cluster with their respective ports.
-     *
-     * @param HostAddress[] $hostAddresses
-     */
-    public function setHostAddresses($hostAddresses)
-    {
-    }
-    /**
-     * @return HostAddress[]
-     */
-    public function getHostAddresses()
-    {
-    }
-    /**
-     * Optional. Password for the MongoDB connection. Mutually exclusive with the
-     * `secret_manager_stored_password` field.
-     *
-     * @param string $password
-     */
-    public function setPassword($password)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPassword()
-    {
-    }
-    /**
-     * Optional. Name of the replica set. Only needed for self hosted replica set
-     * type MongoDB cluster. For SRV connection format, this field must be empty.
-     * For Standard connection format, this field must be specified.
-     *
-     * @param string $replicaSet
-     */
-    public function setReplicaSet($replicaSet)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReplicaSet()
-    {
-    }
-    /**
-     * Optional. A reference to a Secret Manager resource name storing the
-     * SQLServer connection password. Mutually exclusive with the `password`
-     * field.
-     *
-     * @param string $secretManagerStoredPassword
-     */
-    public function setSecretManagerStoredPassword($secretManagerStoredPassword)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSecretManagerStoredPassword()
-    {
-    }
-    /**
-     * Srv connection format.
-     *
-     * @param SrvConnectionFormat $srvConnectionFormat
-     */
-    public function setSrvConnectionFormat(SrvConnectionFormat $srvConnectionFormat)
-    {
-    }
-    /**
-     * @return SrvConnectionFormat
-     */
-    public function getSrvConnectionFormat()
-    {
-    }
-    /**
-     * Optional. SSL configuration for the MongoDB connection.
-     *
-     * @param MongodbSslConfig $sslConfig
-     */
-    public function setSslConfig(MongodbSslConfig $sslConfig)
-    {
-    }
-    /**
-     * @return MongodbSslConfig
-     */
-    public function getSslConfig()
-    {
-    }
-    /**
-     * Standard connection format.
-     *
-     * @param StandardConnectionFormat $standardConnectionFormat
-     */
-    public function setStandardConnectionFormat(StandardConnectionFormat $standardConnectionFormat)
-    {
-    }
-    /**
-     * @return StandardConnectionFormat
-     */
-    public function getStandardConnectionFormat()
-    {
-    }
-    /**
-     * Required. Username for the MongoDB connection.
-     *
-     * @param string $username
-     */
-    public function setUsername($username)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUsername()
+    class Google_Service_Datastream_MongodbProfile extends \Google\Service\Datastream\MongodbProfile
     {
     }
 }

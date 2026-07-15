@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmEventbusProtoTeardown extends \Google\Collection
-{
-    protected $collection_key = 'teardownTaskConfigs';
-    protected $teardownTaskConfigsType = EnterpriseCrmEventbusProtoTeardownTaskConfig::class;
-    protected $teardownTaskConfigsDataType = 'array';
-    /**
-     * Required.
-     *
-     * @param EnterpriseCrmEventbusProtoTeardownTaskConfig[] $teardownTaskConfigs
-     */
-    public function setTeardownTaskConfigs($teardownTaskConfigs)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmEventbusProtoTeardown extends \Google\Collection
     {
+        protected $collection_key = 'teardownTaskConfigs';
+        protected $teardownTaskConfigsType = EnterpriseCrmEventbusProtoTeardownTaskConfig::class;
+        protected $teardownTaskConfigsDataType = 'array';
+        /**
+         * Required.
+         *
+         * @param EnterpriseCrmEventbusProtoTeardownTaskConfig[] $teardownTaskConfigs
+         */
+        public function setTeardownTaskConfigs($teardownTaskConfigs)
+        {
+        }
+        /**
+         * @return EnterpriseCrmEventbusProtoTeardownTaskConfig[]
+         */
+        public function getTeardownTaskConfigs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EnterpriseCrmEventbusProtoTeardownTaskConfig[]
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmEventbusProtoTeardown registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTeardownTaskConfigs()
+    class Google_Service_Integrations_EnterpriseCrmEventbusProtoTeardown extends \Google\Service\Integrations\EnterpriseCrmEventbusProtoTeardown
     {
     }
 }

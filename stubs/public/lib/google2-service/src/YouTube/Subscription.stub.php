@@ -21,119 +21,128 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class Subscription extends \Google\Model
-{
-    protected $contentDetailsType = SubscriptionContentDetails::class;
-    protected $contentDetailsDataType = '';
-    /**
-     * Etag of this resource.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * The ID that YouTube uses to uniquely identify the subscription.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "youtube#subscription".
-     *
-     * @var string
-     */
-    public $kind;
-    protected $snippetType = SubscriptionSnippet::class;
-    protected $snippetDataType = '';
-    protected $subscriberSnippetType = SubscriptionSubscriberSnippet::class;
-    protected $subscriberSnippetDataType = '';
-    /**
-     * The contentDetails object contains basic statistics about the subscription.
-     *
-     * @param SubscriptionContentDetails $contentDetails
-     */
-    public function setContentDetails(SubscriptionContentDetails $contentDetails)
+namespace Google\Service\YouTube {
+    class Subscription extends \Google\Model
     {
+        protected $contentDetailsType = SubscriptionContentDetails::class;
+        protected $contentDetailsDataType = '';
+        /**
+         * Etag of this resource.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * The ID that YouTube uses to uniquely identify the subscription.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "youtube#subscription".
+         *
+         * @var string
+         */
+        public $kind;
+        protected $snippetType = SubscriptionSnippet::class;
+        protected $snippetDataType = '';
+        protected $subscriberSnippetType = SubscriptionSubscriberSnippet::class;
+        protected $subscriberSnippetDataType = '';
+        /**
+         * The contentDetails object contains basic statistics about the subscription.
+         *
+         * @param SubscriptionContentDetails $contentDetails
+         */
+        public function setContentDetails(SubscriptionContentDetails $contentDetails)
+        {
+        }
+        /**
+         * @return SubscriptionContentDetails
+         */
+        public function getContentDetails()
+        {
+        }
+        /**
+         * Etag of this resource.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * The ID that YouTube uses to uniquely identify the subscription.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "youtube#subscription".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The snippet object contains basic details about the subscription, including
+         * its title and the channel that the user subscribed to.
+         *
+         * @param SubscriptionSnippet $snippet
+         */
+        public function setSnippet(SubscriptionSnippet $snippet)
+        {
+        }
+        /**
+         * @return SubscriptionSnippet
+         */
+        public function getSnippet()
+        {
+        }
+        /**
+         * The subscriberSnippet object contains basic details about the subscriber.
+         *
+         * @param SubscriptionSubscriberSnippet $subscriberSnippet
+         */
+        public function setSubscriberSnippet(SubscriptionSubscriberSnippet $subscriberSnippet)
+        {
+        }
+        /**
+         * @return SubscriptionSubscriberSnippet
+         */
+        public function getSubscriberSnippet()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SubscriptionContentDetails
+     * Runtime class alias of \Google\Service\YouTube\Subscription registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContentDetails()
-    {
-    }
-    /**
-     * Etag of this resource.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * The ID that YouTube uses to uniquely identify the subscription.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "youtube#subscription".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The snippet object contains basic details about the subscription, including
-     * its title and the channel that the user subscribed to.
-     *
-     * @param SubscriptionSnippet $snippet
-     */
-    public function setSnippet(SubscriptionSnippet $snippet)
-    {
-    }
-    /**
-     * @return SubscriptionSnippet
-     */
-    public function getSnippet()
-    {
-    }
-    /**
-     * The subscriberSnippet object contains basic details about the subscriber.
-     *
-     * @param SubscriptionSubscriberSnippet $subscriberSnippet
-     */
-    public function setSubscriberSnippet(SubscriptionSubscriberSnippet $subscriberSnippet)
-    {
-    }
-    /**
-     * @return SubscriptionSubscriberSnippet
-     */
-    public function getSubscriberSnippet()
+    class Google_Service_YouTube_Subscription extends \Google\Service\YouTube\Subscription
     {
     }
 }

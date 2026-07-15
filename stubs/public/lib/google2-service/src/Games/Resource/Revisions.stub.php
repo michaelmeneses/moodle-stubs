@@ -21,31 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Games\Resource;
-
-/**
- * The "revisions" collection of methods.
- * Typical usage is:
- *  <code>
- *   $gamesService = new Google\Service\Games(...);
- *   $revisions = $gamesService->revisions;
- *  </code>
- */
-class Revisions extends \Google\Service\Resource
-{
+namespace Google\Service\Games\Resource {
+    use Google\Service\Games\RevisionCheckResponse;
     /**
-     * Checks whether the games client is out of date. (revisions.check)
-     *
-     * @param string $clientRevision Required. The revision of the client SDK used
-     * by your application. Format: `[PLATFORM_TYPE]:[VERSION_NUMBER]`. Possible
-     * values of `PLATFORM_TYPE` are: * `ANDROID` - Client is running the Android
-     * SDK. * `IOS` - Client is running the iOS SDK. * `WEB_APP` - Client is running
-     * as a Web App.
-     * @param array $optParams Optional parameters.
-     * @return RevisionCheckResponse
-     * @throws \Google\Service\Exception
+     * The "revisions" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $gamesService = new Google\Service\Games(...);
+     *   $revisions = $gamesService->revisions;
+     *  </code>
      */
-    public function check($clientRevision, $optParams = [])
+    class Revisions extends \Google\Service\Resource
+    {
+        /**
+         * Checks whether the games client is out of date. (revisions.check)
+         *
+         * @param string $clientRevision Required. The revision of the client SDK used
+         * by your application. Format: `[PLATFORM_TYPE]:[VERSION_NUMBER]`. Possible
+         * values of `PLATFORM_TYPE` are: * `ANDROID` - Client is running the Android
+         * SDK. * `IOS` - Client is running the iOS SDK. * `WEB_APP` - Client is running
+         * as a Web App.
+         * @param array $optParams Optional parameters.
+         * @return RevisionCheckResponse
+         * @throws \Google\Service\Exception
+         */
+        public function check($clientRevision, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Games\Resource\Revisions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Games_Resource_Revisions extends \Google\Service\Games\Resource\Revisions
     {
     }
 }

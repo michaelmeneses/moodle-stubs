@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleCloudRunV2ContainerPort extends \Google\Model
-{
-    /**
-     * Port number the container listens on. This must be a valid TCP port number,
-     * 0 < container_port < 65536.
-     *
-     * @var int
-     */
-    public $containerPort;
-    /**
-     * If specified, used to specify which protocol to use. Allowed values are
-     * "http1" and "h2c".
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Port number the container listens on. This must be a valid TCP port number,
-     * 0 < container_port < 65536.
-     *
-     * @param int $containerPort
-     */
-    public function setContainerPort($containerPort)
+namespace Google\Service\CloudRun {
+    class GoogleCloudRunV2ContainerPort extends \Google\Model
     {
+        /**
+         * Port number the container listens on. This must be a valid TCP port number,
+         * 0 < container_port < 65536.
+         *
+         * @var int
+         */
+        public $containerPort;
+        /**
+         * If specified, used to specify which protocol to use. Allowed values are
+         * "http1" and "h2c".
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Port number the container listens on. This must be a valid TCP port number,
+         * 0 < container_port < 65536.
+         *
+         * @param int $containerPort
+         */
+        public function setContainerPort($containerPort)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getContainerPort()
+        {
+        }
+        /**
+         * If specified, used to specify which protocol to use. Allowed values are
+         * "http1" and "h2c".
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudRun\GoogleCloudRunV2ContainerPort registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContainerPort()
-    {
-    }
-    /**
-     * If specified, used to specify which protocol to use. Allowed values are
-     * "http1" and "h2c".
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_CloudRun_GoogleCloudRunV2ContainerPort extends \Google\Service\CloudRun\GoogleCloudRunV2ContainerPort
     {
     }
 }

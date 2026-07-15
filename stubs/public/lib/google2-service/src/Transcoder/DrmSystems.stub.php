@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Transcoder;
-
-class DrmSystems extends \Google\Model
-{
-    protected $clearkeyType = Clearkey::class;
-    protected $clearkeyDataType = '';
-    protected $fairplayType = Fairplay::class;
-    protected $fairplayDataType = '';
-    protected $playreadyType = Playready::class;
-    protected $playreadyDataType = '';
-    protected $widevineType = Widevine::class;
-    protected $widevineDataType = '';
-    /**
-     * Clearkey configuration.
-     *
-     * @param Clearkey $clearkey
-     */
-    public function setClearkey(Clearkey $clearkey)
+namespace Google\Service\Transcoder {
+    class DrmSystems extends \Google\Model
     {
+        protected $clearkeyType = Clearkey::class;
+        protected $clearkeyDataType = '';
+        protected $fairplayType = Fairplay::class;
+        protected $fairplayDataType = '';
+        protected $playreadyType = Playready::class;
+        protected $playreadyDataType = '';
+        protected $widevineType = Widevine::class;
+        protected $widevineDataType = '';
+        /**
+         * Clearkey configuration.
+         *
+         * @param Clearkey $clearkey
+         */
+        public function setClearkey(Clearkey $clearkey)
+        {
+        }
+        /**
+         * @return Clearkey
+         */
+        public function getClearkey()
+        {
+        }
+        /**
+         * Fairplay configuration.
+         *
+         * @param Fairplay $fairplay
+         */
+        public function setFairplay(Fairplay $fairplay)
+        {
+        }
+        /**
+         * @return Fairplay
+         */
+        public function getFairplay()
+        {
+        }
+        /**
+         * Playready configuration.
+         *
+         * @param Playready $playready
+         */
+        public function setPlayready(Playready $playready)
+        {
+        }
+        /**
+         * @return Playready
+         */
+        public function getPlayready()
+        {
+        }
+        /**
+         * Widevine configuration.
+         *
+         * @param Widevine $widevine
+         */
+        public function setWidevine(Widevine $widevine)
+        {
+        }
+        /**
+         * @return Widevine
+         */
+        public function getWidevine()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Clearkey
+     * Runtime class alias of \Google\Service\Transcoder\DrmSystems registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClearkey()
-    {
-    }
-    /**
-     * Fairplay configuration.
-     *
-     * @param Fairplay $fairplay
-     */
-    public function setFairplay(Fairplay $fairplay)
-    {
-    }
-    /**
-     * @return Fairplay
-     */
-    public function getFairplay()
-    {
-    }
-    /**
-     * Playready configuration.
-     *
-     * @param Playready $playready
-     */
-    public function setPlayready(Playready $playready)
-    {
-    }
-    /**
-     * @return Playready
-     */
-    public function getPlayready()
-    {
-    }
-    /**
-     * Widevine configuration.
-     *
-     * @param Widevine $widevine
-     */
-    public function setWidevine(Widevine $widevine)
-    {
-    }
-    /**
-     * @return Widevine
-     */
-    public function getWidevine()
+    class Google_Service_Transcoder_DrmSystems extends \Google\Service\Transcoder\DrmSystems
     {
     }
 }

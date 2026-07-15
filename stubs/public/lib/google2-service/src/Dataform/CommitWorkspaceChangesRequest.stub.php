@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataform;
-
-class CommitWorkspaceChangesRequest extends \Google\Collection
-{
-    protected $collection_key = 'paths';
-    protected $authorType = CommitAuthor::class;
-    protected $authorDataType = '';
-    /**
-     * Optional. The commit's message.
-     *
-     * @var string
-     */
-    public $commitMessage;
-    /**
-     * Optional. Full file paths to commit including filename, rooted at workspace
-     * root. If left empty, all files will be committed.
-     *
-     * @var string[]
-     */
-    public $paths;
-    /**
-     * Required. The commit's author.
-     *
-     * @param CommitAuthor $author
-     */
-    public function setAuthor(CommitAuthor $author)
+namespace Google\Service\Dataform {
+    class CommitWorkspaceChangesRequest extends \Google\Collection
     {
+        protected $collection_key = 'paths';
+        protected $authorType = CommitAuthor::class;
+        protected $authorDataType = '';
+        /**
+         * Optional. The commit's message.
+         *
+         * @var string
+         */
+        public $commitMessage;
+        /**
+         * Optional. Full file paths to commit including filename, rooted at workspace
+         * root. If left empty, all files will be committed.
+         *
+         * @var string[]
+         */
+        public $paths;
+        /**
+         * Required. The commit's author.
+         *
+         * @param CommitAuthor $author
+         */
+        public function setAuthor(CommitAuthor $author)
+        {
+        }
+        /**
+         * @return CommitAuthor
+         */
+        public function getAuthor()
+        {
+        }
+        /**
+         * Optional. The commit's message.
+         *
+         * @param string $commitMessage
+         */
+        public function setCommitMessage($commitMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCommitMessage()
+        {
+        }
+        /**
+         * Optional. Full file paths to commit including filename, rooted at workspace
+         * root. If left empty, all files will be committed.
+         *
+         * @param string[] $paths
+         */
+        public function setPaths($paths)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPaths()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CommitAuthor
+     * Runtime class alias of \Google\Service\Dataform\CommitWorkspaceChangesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuthor()
-    {
-    }
-    /**
-     * Optional. The commit's message.
-     *
-     * @param string $commitMessage
-     */
-    public function setCommitMessage($commitMessage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCommitMessage()
-    {
-    }
-    /**
-     * Optional. Full file paths to commit including filename, rooted at workspace
-     * root. If left empty, all files will be committed.
-     *
-     * @param string[] $paths
-     */
-    public function setPaths($paths)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPaths()
+    class Google_Service_Dataform_CommitWorkspaceChangesRequest extends \Google\Service\Dataform\CommitWorkspaceChangesRequest
     {
     }
 }

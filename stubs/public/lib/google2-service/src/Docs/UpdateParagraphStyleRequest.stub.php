@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class UpdateParagraphStyleRequest extends \Google\Model
-{
-    /**
-     * The fields that should be updated. At least one field must be specified.
-     * The root `paragraph_style` is implied and should not be specified. A single
-     * `"*"` can be used as short-hand for listing every field. For example, to
-     * update the paragraph style's alignment property, set `fields` to
-     * `"alignment"`. To reset a property to its default value, include its field
-     * name in the field mask but leave the field itself unset.
-     *
-     * @var string
-     */
-    public $fields;
-    protected $paragraphStyleType = ParagraphStyle::class;
-    protected $paragraphStyleDataType = '';
-    protected $rangeType = Range::class;
-    protected $rangeDataType = '';
-    /**
-     * The fields that should be updated. At least one field must be specified.
-     * The root `paragraph_style` is implied and should not be specified. A single
-     * `"*"` can be used as short-hand for listing every field. For example, to
-     * update the paragraph style's alignment property, set `fields` to
-     * `"alignment"`. To reset a property to its default value, include its field
-     * name in the field mask but leave the field itself unset.
-     *
-     * @param string $fields
-     */
-    public function setFields($fields)
+namespace Google\Service\Docs {
+    class UpdateParagraphStyleRequest extends \Google\Model
     {
+        /**
+         * The fields that should be updated. At least one field must be specified.
+         * The root `paragraph_style` is implied and should not be specified. A single
+         * `"*"` can be used as short-hand for listing every field. For example, to
+         * update the paragraph style's alignment property, set `fields` to
+         * `"alignment"`. To reset a property to its default value, include its field
+         * name in the field mask but leave the field itself unset.
+         *
+         * @var string
+         */
+        public $fields;
+        protected $paragraphStyleType = ParagraphStyle::class;
+        protected $paragraphStyleDataType = '';
+        protected $rangeType = Range::class;
+        protected $rangeDataType = '';
+        /**
+         * The fields that should be updated. At least one field must be specified.
+         * The root `paragraph_style` is implied and should not be specified. A single
+         * `"*"` can be used as short-hand for listing every field. For example, to
+         * update the paragraph style's alignment property, set `fields` to
+         * `"alignment"`. To reset a property to its default value, include its field
+         * name in the field mask but leave the field itself unset.
+         *
+         * @param string $fields
+         */
+        public function setFields($fields)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFields()
+        {
+        }
+        /**
+         * The styles to set on the paragraphs. Certain paragraph style changes may
+         * cause other changes in order to mirror the behavior of the Docs editor. See
+         * the documentation of ParagraphStyle for more information.
+         *
+         * @param ParagraphStyle $paragraphStyle
+         */
+        public function setParagraphStyle(ParagraphStyle $paragraphStyle)
+        {
+        }
+        /**
+         * @return ParagraphStyle
+         */
+        public function getParagraphStyle()
+        {
+        }
+        /**
+         * The range overlapping the paragraphs to style.
+         *
+         * @param Range $range
+         */
+        public function setRange(Range $range)
+        {
+        }
+        /**
+         * @return Range
+         */
+        public function getRange()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Docs\UpdateParagraphStyleRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFields()
-    {
-    }
-    /**
-     * The styles to set on the paragraphs. Certain paragraph style changes may
-     * cause other changes in order to mirror the behavior of the Docs editor. See
-     * the documentation of ParagraphStyle for more information.
-     *
-     * @param ParagraphStyle $paragraphStyle
-     */
-    public function setParagraphStyle(ParagraphStyle $paragraphStyle)
-    {
-    }
-    /**
-     * @return ParagraphStyle
-     */
-    public function getParagraphStyle()
-    {
-    }
-    /**
-     * The range overlapping the paragraphs to style.
-     *
-     * @param Range $range
-     */
-    public function setRange(Range $range)
-    {
-    }
-    /**
-     * @return Range
-     */
-    public function getRange()
+    class Google_Service_Docs_UpdateParagraphStyleRequest extends \Google\Service\Docs\UpdateParagraphStyleRequest
     {
     }
 }

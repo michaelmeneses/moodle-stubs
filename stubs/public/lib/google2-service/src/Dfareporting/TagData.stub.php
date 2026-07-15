@@ -21,146 +21,155 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class TagData extends \Google\Model
-{
-    public const FORMAT_PLACEMENT_TAG_STANDARD = 'PLACEMENT_TAG_STANDARD';
-    public const FORMAT_PLACEMENT_TAG_IFRAME_JAVASCRIPT = 'PLACEMENT_TAG_IFRAME_JAVASCRIPT';
-    public const FORMAT_PLACEMENT_TAG_IFRAME_ILAYER = 'PLACEMENT_TAG_IFRAME_ILAYER';
-    public const FORMAT_PLACEMENT_TAG_INTERNAL_REDIRECT = 'PLACEMENT_TAG_INTERNAL_REDIRECT';
-    public const FORMAT_PLACEMENT_TAG_JAVASCRIPT = 'PLACEMENT_TAG_JAVASCRIPT';
-    public const FORMAT_PLACEMENT_TAG_INTERSTITIAL_IFRAME_JAVASCRIPT = 'PLACEMENT_TAG_INTERSTITIAL_IFRAME_JAVASCRIPT';
-    public const FORMAT_PLACEMENT_TAG_INTERSTITIAL_INTERNAL_REDIRECT = 'PLACEMENT_TAG_INTERSTITIAL_INTERNAL_REDIRECT';
-    public const FORMAT_PLACEMENT_TAG_INTERSTITIAL_JAVASCRIPT = 'PLACEMENT_TAG_INTERSTITIAL_JAVASCRIPT';
-    public const FORMAT_PLACEMENT_TAG_CLICK_COMMANDS = 'PLACEMENT_TAG_CLICK_COMMANDS';
-    public const FORMAT_PLACEMENT_TAG_INSTREAM_VIDEO_PREFETCH = 'PLACEMENT_TAG_INSTREAM_VIDEO_PREFETCH';
-    public const FORMAT_PLACEMENT_TAG_TRACKING = 'PLACEMENT_TAG_TRACKING';
-    public const FORMAT_PLACEMENT_TAG_TRACKING_IFRAME = 'PLACEMENT_TAG_TRACKING_IFRAME';
-    public const FORMAT_PLACEMENT_TAG_TRACKING_JAVASCRIPT = 'PLACEMENT_TAG_TRACKING_JAVASCRIPT';
-    public const FORMAT_PLACEMENT_TAG_INSTREAM_VIDEO_PREFETCH_VAST_3 = 'PLACEMENT_TAG_INSTREAM_VIDEO_PREFETCH_VAST_3';
-    public const FORMAT_PLACEMENT_TAG_IFRAME_JAVASCRIPT_LEGACY = 'PLACEMENT_TAG_IFRAME_JAVASCRIPT_LEGACY';
-    public const FORMAT_PLACEMENT_TAG_JAVASCRIPT_LEGACY = 'PLACEMENT_TAG_JAVASCRIPT_LEGACY';
-    public const FORMAT_PLACEMENT_TAG_INTERSTITIAL_IFRAME_JAVASCRIPT_LEGACY = 'PLACEMENT_TAG_INTERSTITIAL_IFRAME_JAVASCRIPT_LEGACY';
-    public const FORMAT_PLACEMENT_TAG_INTERSTITIAL_JAVASCRIPT_LEGACY = 'PLACEMENT_TAG_INTERSTITIAL_JAVASCRIPT_LEGACY';
-    public const FORMAT_PLACEMENT_TAG_INSTREAM_VIDEO_PREFETCH_VAST_4 = 'PLACEMENT_TAG_INSTREAM_VIDEO_PREFETCH_VAST_4';
-    public const FORMAT_PLACEMENT_TAG_TRACKING_THIRD_PARTY_MEASUREMENT = 'PLACEMENT_TAG_TRACKING_THIRD_PARTY_MEASUREMENT';
-    /**
-     * Ad associated with this placement tag. Applicable only when format is
-     * PLACEMENT_TAG_TRACKING.
-     *
-     * @var string
-     */
-    public $adId;
-    /**
-     * Tag string to record a click.
-     *
-     * @var string
-     */
-    public $clickTag;
-    /**
-     * Creative associated with this placement tag. Applicable only when format is
-     * PLACEMENT_TAG_TRACKING.
-     *
-     * @var string
-     */
-    public $creativeId;
-    /**
-     * TagData tag format of this tag.
-     *
-     * @var string
-     */
-    public $format;
-    /**
-     * Tag string for serving an ad.
-     *
-     * @var string
-     */
-    public $impressionTag;
-    /**
-     * Ad associated with this placement tag. Applicable only when format is
-     * PLACEMENT_TAG_TRACKING.
-     *
-     * @param string $adId
-     */
-    public function setAdId($adId)
+namespace Google\Service\Dfareporting {
+    class TagData extends \Google\Model
     {
+        public const FORMAT_PLACEMENT_TAG_STANDARD = 'PLACEMENT_TAG_STANDARD';
+        public const FORMAT_PLACEMENT_TAG_IFRAME_JAVASCRIPT = 'PLACEMENT_TAG_IFRAME_JAVASCRIPT';
+        public const FORMAT_PLACEMENT_TAG_IFRAME_ILAYER = 'PLACEMENT_TAG_IFRAME_ILAYER';
+        public const FORMAT_PLACEMENT_TAG_INTERNAL_REDIRECT = 'PLACEMENT_TAG_INTERNAL_REDIRECT';
+        public const FORMAT_PLACEMENT_TAG_JAVASCRIPT = 'PLACEMENT_TAG_JAVASCRIPT';
+        public const FORMAT_PLACEMENT_TAG_INTERSTITIAL_IFRAME_JAVASCRIPT = 'PLACEMENT_TAG_INTERSTITIAL_IFRAME_JAVASCRIPT';
+        public const FORMAT_PLACEMENT_TAG_INTERSTITIAL_INTERNAL_REDIRECT = 'PLACEMENT_TAG_INTERSTITIAL_INTERNAL_REDIRECT';
+        public const FORMAT_PLACEMENT_TAG_INTERSTITIAL_JAVASCRIPT = 'PLACEMENT_TAG_INTERSTITIAL_JAVASCRIPT';
+        public const FORMAT_PLACEMENT_TAG_CLICK_COMMANDS = 'PLACEMENT_TAG_CLICK_COMMANDS';
+        public const FORMAT_PLACEMENT_TAG_INSTREAM_VIDEO_PREFETCH = 'PLACEMENT_TAG_INSTREAM_VIDEO_PREFETCH';
+        public const FORMAT_PLACEMENT_TAG_TRACKING = 'PLACEMENT_TAG_TRACKING';
+        public const FORMAT_PLACEMENT_TAG_TRACKING_IFRAME = 'PLACEMENT_TAG_TRACKING_IFRAME';
+        public const FORMAT_PLACEMENT_TAG_TRACKING_JAVASCRIPT = 'PLACEMENT_TAG_TRACKING_JAVASCRIPT';
+        public const FORMAT_PLACEMENT_TAG_INSTREAM_VIDEO_PREFETCH_VAST_3 = 'PLACEMENT_TAG_INSTREAM_VIDEO_PREFETCH_VAST_3';
+        public const FORMAT_PLACEMENT_TAG_IFRAME_JAVASCRIPT_LEGACY = 'PLACEMENT_TAG_IFRAME_JAVASCRIPT_LEGACY';
+        public const FORMAT_PLACEMENT_TAG_JAVASCRIPT_LEGACY = 'PLACEMENT_TAG_JAVASCRIPT_LEGACY';
+        public const FORMAT_PLACEMENT_TAG_INTERSTITIAL_IFRAME_JAVASCRIPT_LEGACY = 'PLACEMENT_TAG_INTERSTITIAL_IFRAME_JAVASCRIPT_LEGACY';
+        public const FORMAT_PLACEMENT_TAG_INTERSTITIAL_JAVASCRIPT_LEGACY = 'PLACEMENT_TAG_INTERSTITIAL_JAVASCRIPT_LEGACY';
+        public const FORMAT_PLACEMENT_TAG_INSTREAM_VIDEO_PREFETCH_VAST_4 = 'PLACEMENT_TAG_INSTREAM_VIDEO_PREFETCH_VAST_4';
+        public const FORMAT_PLACEMENT_TAG_TRACKING_THIRD_PARTY_MEASUREMENT = 'PLACEMENT_TAG_TRACKING_THIRD_PARTY_MEASUREMENT';
+        /**
+         * Ad associated with this placement tag. Applicable only when format is
+         * PLACEMENT_TAG_TRACKING.
+         *
+         * @var string
+         */
+        public $adId;
+        /**
+         * Tag string to record a click.
+         *
+         * @var string
+         */
+        public $clickTag;
+        /**
+         * Creative associated with this placement tag. Applicable only when format is
+         * PLACEMENT_TAG_TRACKING.
+         *
+         * @var string
+         */
+        public $creativeId;
+        /**
+         * TagData tag format of this tag.
+         *
+         * @var string
+         */
+        public $format;
+        /**
+         * Tag string for serving an ad.
+         *
+         * @var string
+         */
+        public $impressionTag;
+        /**
+         * Ad associated with this placement tag. Applicable only when format is
+         * PLACEMENT_TAG_TRACKING.
+         *
+         * @param string $adId
+         */
+        public function setAdId($adId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdId()
+        {
+        }
+        /**
+         * Tag string to record a click.
+         *
+         * @param string $clickTag
+         */
+        public function setClickTag($clickTag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClickTag()
+        {
+        }
+        /**
+         * Creative associated with this placement tag. Applicable only when format is
+         * PLACEMENT_TAG_TRACKING.
+         *
+         * @param string $creativeId
+         */
+        public function setCreativeId($creativeId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreativeId()
+        {
+        }
+        /**
+         * TagData tag format of this tag.
+         *
+         * Accepted values: PLACEMENT_TAG_STANDARD, PLACEMENT_TAG_IFRAME_JAVASCRIPT,
+         * PLACEMENT_TAG_IFRAME_ILAYER, PLACEMENT_TAG_INTERNAL_REDIRECT,
+         * PLACEMENT_TAG_JAVASCRIPT, PLACEMENT_TAG_INTERSTITIAL_IFRAME_JAVASCRIPT,
+         * PLACEMENT_TAG_INTERSTITIAL_INTERNAL_REDIRECT,
+         * PLACEMENT_TAG_INTERSTITIAL_JAVASCRIPT, PLACEMENT_TAG_CLICK_COMMANDS,
+         * PLACEMENT_TAG_INSTREAM_VIDEO_PREFETCH, PLACEMENT_TAG_TRACKING,
+         * PLACEMENT_TAG_TRACKING_IFRAME, PLACEMENT_TAG_TRACKING_JAVASCRIPT,
+         * PLACEMENT_TAG_INSTREAM_VIDEO_PREFETCH_VAST_3,
+         * PLACEMENT_TAG_IFRAME_JAVASCRIPT_LEGACY, PLACEMENT_TAG_JAVASCRIPT_LEGACY,
+         * PLACEMENT_TAG_INTERSTITIAL_IFRAME_JAVASCRIPT_LEGACY,
+         * PLACEMENT_TAG_INTERSTITIAL_JAVASCRIPT_LEGACY,
+         * PLACEMENT_TAG_INSTREAM_VIDEO_PREFETCH_VAST_4,
+         * PLACEMENT_TAG_TRACKING_THIRD_PARTY_MEASUREMENT
+         *
+         * @param self::FORMAT_* $format
+         */
+        public function setFormat($format)
+        {
+        }
+        /**
+         * @return self::FORMAT_*
+         */
+        public function getFormat()
+        {
+        }
+        /**
+         * Tag string for serving an ad.
+         *
+         * @param string $impressionTag
+         */
+        public function setImpressionTag($impressionTag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImpressionTag()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\TagData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdId()
-    {
-    }
-    /**
-     * Tag string to record a click.
-     *
-     * @param string $clickTag
-     */
-    public function setClickTag($clickTag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getClickTag()
-    {
-    }
-    /**
-     * Creative associated with this placement tag. Applicable only when format is
-     * PLACEMENT_TAG_TRACKING.
-     *
-     * @param string $creativeId
-     */
-    public function setCreativeId($creativeId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreativeId()
-    {
-    }
-    /**
-     * TagData tag format of this tag.
-     *
-     * Accepted values: PLACEMENT_TAG_STANDARD, PLACEMENT_TAG_IFRAME_JAVASCRIPT,
-     * PLACEMENT_TAG_IFRAME_ILAYER, PLACEMENT_TAG_INTERNAL_REDIRECT,
-     * PLACEMENT_TAG_JAVASCRIPT, PLACEMENT_TAG_INTERSTITIAL_IFRAME_JAVASCRIPT,
-     * PLACEMENT_TAG_INTERSTITIAL_INTERNAL_REDIRECT,
-     * PLACEMENT_TAG_INTERSTITIAL_JAVASCRIPT, PLACEMENT_TAG_CLICK_COMMANDS,
-     * PLACEMENT_TAG_INSTREAM_VIDEO_PREFETCH, PLACEMENT_TAG_TRACKING,
-     * PLACEMENT_TAG_TRACKING_IFRAME, PLACEMENT_TAG_TRACKING_JAVASCRIPT,
-     * PLACEMENT_TAG_INSTREAM_VIDEO_PREFETCH_VAST_3,
-     * PLACEMENT_TAG_IFRAME_JAVASCRIPT_LEGACY, PLACEMENT_TAG_JAVASCRIPT_LEGACY,
-     * PLACEMENT_TAG_INTERSTITIAL_IFRAME_JAVASCRIPT_LEGACY,
-     * PLACEMENT_TAG_INTERSTITIAL_JAVASCRIPT_LEGACY,
-     * PLACEMENT_TAG_INSTREAM_VIDEO_PREFETCH_VAST_4,
-     * PLACEMENT_TAG_TRACKING_THIRD_PARTY_MEASUREMENT
-     *
-     * @param self::FORMAT_* $format
-     */
-    public function setFormat($format)
-    {
-    }
-    /**
-     * @return self::FORMAT_*
-     */
-    public function getFormat()
-    {
-    }
-    /**
-     * Tag string for serving an ad.
-     *
-     * @param string $impressionTag
-     */
-    public function setImpressionTag($impressionTag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImpressionTag()
+    class Google_Service_Dfareporting_TagData extends \Google\Service\Dfareporting\TagData
     {
     }
 }

@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BackupforGKE;
-
-class GroupKindDependency extends \Google\Model
-{
-    protected $requiringType = GroupKind::class;
-    protected $requiringDataType = '';
-    protected $satisfyingType = GroupKind::class;
-    protected $satisfyingDataType = '';
-    /**
-     * Required. The requiring group kind requires that the other group kind be
-     * restored first.
-     *
-     * @param GroupKind $requiring
-     */
-    public function setRequiring(GroupKind $requiring)
+namespace Google\Service\BackupforGKE {
+    class GroupKindDependency extends \Google\Model
     {
+        protected $requiringType = GroupKind::class;
+        protected $requiringDataType = '';
+        protected $satisfyingType = GroupKind::class;
+        protected $satisfyingDataType = '';
+        /**
+         * Required. The requiring group kind requires that the other group kind be
+         * restored first.
+         *
+         * @param GroupKind $requiring
+         */
+        public function setRequiring(GroupKind $requiring)
+        {
+        }
+        /**
+         * @return GroupKind
+         */
+        public function getRequiring()
+        {
+        }
+        /**
+         * Required. The satisfying group kind must be restored first in order to
+         * satisfy the dependency.
+         *
+         * @param GroupKind $satisfying
+         */
+        public function setSatisfying(GroupKind $satisfying)
+        {
+        }
+        /**
+         * @return GroupKind
+         */
+        public function getSatisfying()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GroupKind
+     * Runtime class alias of \Google\Service\BackupforGKE\GroupKindDependency registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequiring()
-    {
-    }
-    /**
-     * Required. The satisfying group kind must be restored first in order to
-     * satisfy the dependency.
-     *
-     * @param GroupKind $satisfying
-     */
-    public function setSatisfying(GroupKind $satisfying)
-    {
-    }
-    /**
-     * @return GroupKind
-     */
-    public function getSatisfying()
+    class Google_Service_BackupforGKE_GroupKindDependency extends \Google\Service\BackupforGKE\GroupKindDependency
     {
     }
 }

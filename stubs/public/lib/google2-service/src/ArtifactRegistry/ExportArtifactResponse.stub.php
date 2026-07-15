@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ArtifactRegistry;
-
-class ExportArtifactResponse extends \Google\Model
-{
-    protected $exportedVersionType = Version::class;
-    protected $exportedVersionDataType = '';
-    /**
-     * The exported version. Should be the same as the request version with
-     * fingerprint resource name.
-     *
-     * @param Version $exportedVersion
-     */
-    public function setExportedVersion(Version $exportedVersion)
+namespace Google\Service\ArtifactRegistry {
+    class ExportArtifactResponse extends \Google\Model
     {
+        protected $exportedVersionType = Version::class;
+        protected $exportedVersionDataType = '';
+        /**
+         * The exported version. Should be the same as the request version with
+         * fingerprint resource name.
+         *
+         * @param Version $exportedVersion
+         */
+        public function setExportedVersion(Version $exportedVersion)
+        {
+        }
+        /**
+         * @return Version
+         */
+        public function getExportedVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Version
+     * Runtime class alias of \Google\Service\ArtifactRegistry\ExportArtifactResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExportedVersion()
+    class Google_Service_ArtifactRegistry_ExportArtifactResponse extends \Google\Service\ArtifactRegistry\ExportArtifactResponse
     {
     }
 }

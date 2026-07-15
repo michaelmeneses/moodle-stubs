@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1PurgeUserEventsRequest extends \Google\Model
-{
-    /**
-     * Required. The filter string to specify the events to be deleted with a
-     * length limit of 5,000 characters. The eligible fields for filtering are: *
-     * `eventType`: Double quoted UserEvent.event_type string. * `eventTime`: in
-     * ISO 8601 "zulu" format. * `userPseudoId`: Double quoted string. Specifying
-     * this will delete all events associated with a visitor. * `userId`: Double
-     * quoted string. Specifying this will delete all events associated with a
-     * user. Note: This API only supports purging a max range of 30 days.
-     * Examples: * Deleting all events in a time range: `eventTime >
-     * "2012-04-23T18:25:43.511Z" eventTime < "2012-04-23T18:30:43.511Z"` *
-     * Deleting specific eventType in a time range: `eventTime >
-     * "2012-04-23T18:25:43.511Z" eventTime < "2012-04-23T18:30:43.511Z" eventType
-     * = "search"` * Deleting all events for a specific visitor in a time range:
-     * `eventTime > "2012-04-23T18:25:43.511Z" eventTime <
-     * "2012-04-23T18:30:43.511Z" userPseudoId = "visitor1024"` * Deleting the
-     * past 30 days of events inside a DataStore: `*` The filtering fields are
-     * assumed to have an implicit AND.
-     *
-     * @var string
-     */
-    public $filter;
-    /**
-     * The `force` field is currently not supported. Purge user event requests
-     * will permanently delete all purgeable events. Once the development is
-     * complete: If `force` is set to false, the method will return the expected
-     * purge count without deleting any user events. This field will default to
-     * false if not included in the request.
-     *
-     * @var bool
-     */
-    public $force;
-    /**
-     * Required. The filter string to specify the events to be deleted with a
-     * length limit of 5,000 characters. The eligible fields for filtering are: *
-     * `eventType`: Double quoted UserEvent.event_type string. * `eventTime`: in
-     * ISO 8601 "zulu" format. * `userPseudoId`: Double quoted string. Specifying
-     * this will delete all events associated with a visitor. * `userId`: Double
-     * quoted string. Specifying this will delete all events associated with a
-     * user. Note: This API only supports purging a max range of 30 days.
-     * Examples: * Deleting all events in a time range: `eventTime >
-     * "2012-04-23T18:25:43.511Z" eventTime < "2012-04-23T18:30:43.511Z"` *
-     * Deleting specific eventType in a time range: `eventTime >
-     * "2012-04-23T18:25:43.511Z" eventTime < "2012-04-23T18:30:43.511Z" eventType
-     * = "search"` * Deleting all events for a specific visitor in a time range:
-     * `eventTime > "2012-04-23T18:25:43.511Z" eventTime <
-     * "2012-04-23T18:30:43.511Z" userPseudoId = "visitor1024"` * Deleting the
-     * past 30 days of events inside a DataStore: `*` The filtering fields are
-     * assumed to have an implicit AND.
-     *
-     * @param string $filter
-     */
-    public function setFilter($filter)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1PurgeUserEventsRequest extends \Google\Model
     {
+        /**
+         * Required. The filter string to specify the events to be deleted with a
+         * length limit of 5,000 characters. The eligible fields for filtering are: *
+         * `eventType`: Double quoted UserEvent.event_type string. * `eventTime`: in
+         * ISO 8601 "zulu" format. * `userPseudoId`: Double quoted string. Specifying
+         * this will delete all events associated with a visitor. * `userId`: Double
+         * quoted string. Specifying this will delete all events associated with a
+         * user. Note: This API only supports purging a max range of 30 days.
+         * Examples: * Deleting all events in a time range: `eventTime >
+         * "2012-04-23T18:25:43.511Z" eventTime < "2012-04-23T18:30:43.511Z"` *
+         * Deleting specific eventType in a time range: `eventTime >
+         * "2012-04-23T18:25:43.511Z" eventTime < "2012-04-23T18:30:43.511Z" eventType
+         * = "search"` * Deleting all events for a specific visitor in a time range:
+         * `eventTime > "2012-04-23T18:25:43.511Z" eventTime <
+         * "2012-04-23T18:30:43.511Z" userPseudoId = "visitor1024"` * Deleting the
+         * past 30 days of events inside a DataStore: `*` The filtering fields are
+         * assumed to have an implicit AND.
+         *
+         * @var string
+         */
+        public $filter;
+        /**
+         * The `force` field is currently not supported. Purge user event requests
+         * will permanently delete all purgeable events. Once the development is
+         * complete: If `force` is set to false, the method will return the expected
+         * purge count without deleting any user events. This field will default to
+         * false if not included in the request.
+         *
+         * @var bool
+         */
+        public $force;
+        /**
+         * Required. The filter string to specify the events to be deleted with a
+         * length limit of 5,000 characters. The eligible fields for filtering are: *
+         * `eventType`: Double quoted UserEvent.event_type string. * `eventTime`: in
+         * ISO 8601 "zulu" format. * `userPseudoId`: Double quoted string. Specifying
+         * this will delete all events associated with a visitor. * `userId`: Double
+         * quoted string. Specifying this will delete all events associated with a
+         * user. Note: This API only supports purging a max range of 30 days.
+         * Examples: * Deleting all events in a time range: `eventTime >
+         * "2012-04-23T18:25:43.511Z" eventTime < "2012-04-23T18:30:43.511Z"` *
+         * Deleting specific eventType in a time range: `eventTime >
+         * "2012-04-23T18:25:43.511Z" eventTime < "2012-04-23T18:30:43.511Z" eventType
+         * = "search"` * Deleting all events for a specific visitor in a time range:
+         * `eventTime > "2012-04-23T18:25:43.511Z" eventTime <
+         * "2012-04-23T18:30:43.511Z" userPseudoId = "visitor1024"` * Deleting the
+         * past 30 days of events inside a DataStore: `*` The filtering fields are
+         * assumed to have an implicit AND.
+         *
+         * @param string $filter
+         */
+        public function setFilter($filter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilter()
+        {
+        }
+        /**
+         * The `force` field is currently not supported. Purge user event requests
+         * will permanently delete all purgeable events. Once the development is
+         * complete: If `force` is set to false, the method will return the expected
+         * purge count without deleting any user events. This field will default to
+         * false if not included in the request.
+         *
+         * @param bool $force
+         */
+        public function setForce($force)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getForce()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1PurgeUserEventsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFilter()
-    {
-    }
-    /**
-     * The `force` field is currently not supported. Purge user event requests
-     * will permanently delete all purgeable events. Once the development is
-     * complete: If `force` is set to false, the method will return the expected
-     * purge count without deleting any user events. This field will default to
-     * false if not included in the request.
-     *
-     * @param bool $force
-     */
-    public function setForce($force)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getForce()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1PurgeUserEventsRequest extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1PurgeUserEventsRequest
     {
     }
 }

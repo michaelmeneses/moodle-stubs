@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class Projection extends \Google\Collection
-{
-    protected $collection_key = 'fields';
-    protected $fieldsType = FieldReference::class;
-    protected $fieldsDataType = 'array';
-    /**
-     * The fields to return. If empty, all fields are returned. To only return the
-     * name of the document, use `['__name__']`.
-     *
-     * @param FieldReference[] $fields
-     */
-    public function setFields($fields)
+namespace Google\Service\Firestore {
+    class Projection extends \Google\Collection
     {
+        protected $collection_key = 'fields';
+        protected $fieldsType = FieldReference::class;
+        protected $fieldsDataType = 'array';
+        /**
+         * The fields to return. If empty, all fields are returned. To only return the
+         * name of the document, use `['__name__']`.
+         *
+         * @param FieldReference[] $fields
+         */
+        public function setFields($fields)
+        {
+        }
+        /**
+         * @return FieldReference[]
+         */
+        public function getFields()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FieldReference[]
+     * Runtime class alias of \Google\Service\Firestore\Projection registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFields()
+    class Google_Service_Firestore_Projection extends \Google\Service\Firestore\Projection
     {
     }
 }

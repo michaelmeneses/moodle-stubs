@@ -21,149 +21,158 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class ContactInfo extends \Google\Collection
-{
-    protected $collection_key = 'zipCodes';
-    /**
-     * Country code of the member. Must also be set with the following fields: *
-     * hashed_first_name * hashed_last_name * zip_codes
-     *
-     * @var string
-     */
-    public $countryCode;
-    /**
-     * A list of SHA256 hashed email of the member. Before hashing, remove all
-     * whitespace and make sure the string is all lowercase.
-     *
-     * @var string[]
-     */
-    public $hashedEmails;
-    /**
-     * SHA256 hashed first name of the member. Before hashing, remove all
-     * whitespace and make sure the string is all lowercase. Must also be set with
-     * the following fields: * country_code * hashed_last_name * zip_codes
-     *
-     * @var string
-     */
-    public $hashedFirstName;
-    /**
-     * SHA256 hashed last name of the member. Before hashing, remove all
-     * whitespace and make sure the string is all lowercase. Must also be set with
-     * the following fields: * country_code * hashed_first_name * zip_codes
-     *
-     * @var string
-     */
-    public $hashedLastName;
-    /**
-     * A list of SHA256 hashed phone numbers of the member. Before hashing, all
-     * phone numbers must be formatted using the [E.164
-     * format](//en.wikipedia.org/wiki/E.164) and include the country calling
-     * code.
-     *
-     * @var string[]
-     */
-    public $hashedPhoneNumbers;
-    /**
-     * A list of zip codes of the member. Must also be set with the following
-     * fields: * country_code * hashed_first_name * hashed_last_name
-     *
-     * @var string[]
-     */
-    public $zipCodes;
-    /**
-     * Country code of the member. Must also be set with the following fields: *
-     * hashed_first_name * hashed_last_name * zip_codes
-     *
-     * @param string $countryCode
-     */
-    public function setCountryCode($countryCode)
+namespace Google\Service\DisplayVideo {
+    class ContactInfo extends \Google\Collection
     {
+        protected $collection_key = 'zipCodes';
+        /**
+         * Country code of the member. Must also be set with the following fields: *
+         * hashed_first_name * hashed_last_name * zip_codes
+         *
+         * @var string
+         */
+        public $countryCode;
+        /**
+         * A list of SHA256 hashed email of the member. Before hashing, remove all
+         * whitespace and make sure the string is all lowercase.
+         *
+         * @var string[]
+         */
+        public $hashedEmails;
+        /**
+         * SHA256 hashed first name of the member. Before hashing, remove all
+         * whitespace and make sure the string is all lowercase. Must also be set with
+         * the following fields: * country_code * hashed_last_name * zip_codes
+         *
+         * @var string
+         */
+        public $hashedFirstName;
+        /**
+         * SHA256 hashed last name of the member. Before hashing, remove all
+         * whitespace and make sure the string is all lowercase. Must also be set with
+         * the following fields: * country_code * hashed_first_name * zip_codes
+         *
+         * @var string
+         */
+        public $hashedLastName;
+        /**
+         * A list of SHA256 hashed phone numbers of the member. Before hashing, all
+         * phone numbers must be formatted using the [E.164
+         * format](//en.wikipedia.org/wiki/E.164) and include the country calling
+         * code.
+         *
+         * @var string[]
+         */
+        public $hashedPhoneNumbers;
+        /**
+         * A list of zip codes of the member. Must also be set with the following
+         * fields: * country_code * hashed_first_name * hashed_last_name
+         *
+         * @var string[]
+         */
+        public $zipCodes;
+        /**
+         * Country code of the member. Must also be set with the following fields: *
+         * hashed_first_name * hashed_last_name * zip_codes
+         *
+         * @param string $countryCode
+         */
+        public function setCountryCode($countryCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCountryCode()
+        {
+        }
+        /**
+         * A list of SHA256 hashed email of the member. Before hashing, remove all
+         * whitespace and make sure the string is all lowercase.
+         *
+         * @param string[] $hashedEmails
+         */
+        public function setHashedEmails($hashedEmails)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getHashedEmails()
+        {
+        }
+        /**
+         * SHA256 hashed first name of the member. Before hashing, remove all
+         * whitespace and make sure the string is all lowercase. Must also be set with
+         * the following fields: * country_code * hashed_last_name * zip_codes
+         *
+         * @param string $hashedFirstName
+         */
+        public function setHashedFirstName($hashedFirstName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHashedFirstName()
+        {
+        }
+        /**
+         * SHA256 hashed last name of the member. Before hashing, remove all
+         * whitespace and make sure the string is all lowercase. Must also be set with
+         * the following fields: * country_code * hashed_first_name * zip_codes
+         *
+         * @param string $hashedLastName
+         */
+        public function setHashedLastName($hashedLastName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHashedLastName()
+        {
+        }
+        /**
+         * A list of SHA256 hashed phone numbers of the member. Before hashing, all
+         * phone numbers must be formatted using the [E.164
+         * format](//en.wikipedia.org/wiki/E.164) and include the country calling
+         * code.
+         *
+         * @param string[] $hashedPhoneNumbers
+         */
+        public function setHashedPhoneNumbers($hashedPhoneNumbers)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getHashedPhoneNumbers()
+        {
+        }
+        /**
+         * A list of zip codes of the member. Must also be set with the following
+         * fields: * country_code * hashed_first_name * hashed_last_name
+         *
+         * @param string[] $zipCodes
+         */
+        public function setZipCodes($zipCodes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getZipCodes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\ContactInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCountryCode()
-    {
-    }
-    /**
-     * A list of SHA256 hashed email of the member. Before hashing, remove all
-     * whitespace and make sure the string is all lowercase.
-     *
-     * @param string[] $hashedEmails
-     */
-    public function setHashedEmails($hashedEmails)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getHashedEmails()
-    {
-    }
-    /**
-     * SHA256 hashed first name of the member. Before hashing, remove all
-     * whitespace and make sure the string is all lowercase. Must also be set with
-     * the following fields: * country_code * hashed_last_name * zip_codes
-     *
-     * @param string $hashedFirstName
-     */
-    public function setHashedFirstName($hashedFirstName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHashedFirstName()
-    {
-    }
-    /**
-     * SHA256 hashed last name of the member. Before hashing, remove all
-     * whitespace and make sure the string is all lowercase. Must also be set with
-     * the following fields: * country_code * hashed_first_name * zip_codes
-     *
-     * @param string $hashedLastName
-     */
-    public function setHashedLastName($hashedLastName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHashedLastName()
-    {
-    }
-    /**
-     * A list of SHA256 hashed phone numbers of the member. Before hashing, all
-     * phone numbers must be formatted using the [E.164
-     * format](//en.wikipedia.org/wiki/E.164) and include the country calling
-     * code.
-     *
-     * @param string[] $hashedPhoneNumbers
-     */
-    public function setHashedPhoneNumbers($hashedPhoneNumbers)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getHashedPhoneNumbers()
-    {
-    }
-    /**
-     * A list of zip codes of the member. Must also be set with the following
-     * fields: * country_code * hashed_first_name * hashed_last_name
-     *
-     * @param string[] $zipCodes
-     */
-    public function setZipCodes($zipCodes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getZipCodes()
+    class Google_Service_DisplayVideo_ContactInfo extends \Google\Service\DisplayVideo\ContactInfo
     {
     }
 }

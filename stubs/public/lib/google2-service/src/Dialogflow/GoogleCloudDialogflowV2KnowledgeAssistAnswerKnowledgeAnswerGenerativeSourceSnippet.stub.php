@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2KnowledgeAssistAnswerKnowledgeAnswerGenerativeSourceSnippet extends \Google\Model
-{
-    /**
-     * Metadata of the document.
-     *
-     * @var array[]
-     */
-    public $metadata;
-    /**
-     * Text taken from that URI.
-     *
-     * @var string
-     */
-    public $text;
-    /**
-     * Title of the document.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * URI the data is sourced from.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * Metadata of the document.
-     *
-     * @param array[] $metadata
-     */
-    public function setMetadata($metadata)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2KnowledgeAssistAnswerKnowledgeAnswerGenerativeSourceSnippet extends \Google\Model
     {
+        /**
+         * Metadata of the document.
+         *
+         * @var array[]
+         */
+        public $metadata;
+        /**
+         * Text taken from that URI.
+         *
+         * @var string
+         */
+        public $text;
+        /**
+         * Title of the document.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * URI the data is sourced from.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * Metadata of the document.
+         *
+         * @param array[] $metadata
+         */
+        public function setMetadata($metadata)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * Text taken from that URI.
+         *
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
+        /**
+         * Title of the document.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * URI the data is sourced from.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2KnowledgeAssistAnswerKnowledgeAnswerGenerativeSourceSnippet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetadata()
-    {
-    }
-    /**
-     * Text taken from that URI.
-     *
-     * @param string $text
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
-    {
-    }
-    /**
-     * Title of the document.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
-    {
-    }
-    /**
-     * URI the data is sourced from.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2KnowledgeAssistAnswerKnowledgeAnswerGenerativeSourceSnippet extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2KnowledgeAssistAnswerKnowledgeAnswerGenerativeSourceSnippet
     {
     }
 }

@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GetIamPolicyRequest extends \Google\Model
-{
-    protected $optionsType = GetPolicyOptions::class;
-    protected $optionsDataType = '';
-    /**
-     * OPTIONAL: A `GetPolicyOptions` object for specifying options to
-     * `GetIamPolicy`.
-     *
-     * @param GetPolicyOptions $options
-     */
-    public function setOptions(GetPolicyOptions $options)
+namespace Google\Service\SecurityCommandCenter {
+    class GetIamPolicyRequest extends \Google\Model
     {
+        protected $optionsType = GetPolicyOptions::class;
+        protected $optionsDataType = '';
+        /**
+         * OPTIONAL: A `GetPolicyOptions` object for specifying options to
+         * `GetIamPolicy`.
+         *
+         * @param GetPolicyOptions $options
+         */
+        public function setOptions(GetPolicyOptions $options)
+        {
+        }
+        /**
+         * @return GetPolicyOptions
+         */
+        public function getOptions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GetPolicyOptions
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GetIamPolicyRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOptions()
+    class Google_Service_SecurityCommandCenter_GetIamPolicyRequest extends \Google\Service\SecurityCommandCenter\GetIamPolicyRequest
     {
     }
 }

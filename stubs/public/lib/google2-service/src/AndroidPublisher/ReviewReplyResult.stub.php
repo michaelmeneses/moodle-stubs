@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class ReviewReplyResult extends \Google\Model
-{
-    protected $lastEditedType = Timestamp::class;
-    protected $lastEditedDataType = '';
-    /**
-     * The reply text that was applied.
-     *
-     * @var string
-     */
-    public $replyText;
-    /**
-     * The time at which the reply took effect.
-     *
-     * @param Timestamp $lastEdited
-     */
-    public function setLastEdited(Timestamp $lastEdited)
+namespace Google\Service\AndroidPublisher {
+    class ReviewReplyResult extends \Google\Model
     {
+        protected $lastEditedType = Timestamp::class;
+        protected $lastEditedDataType = '';
+        /**
+         * The reply text that was applied.
+         *
+         * @var string
+         */
+        public $replyText;
+        /**
+         * The time at which the reply took effect.
+         *
+         * @param Timestamp $lastEdited
+         */
+        public function setLastEdited(Timestamp $lastEdited)
+        {
+        }
+        /**
+         * @return Timestamp
+         */
+        public function getLastEdited()
+        {
+        }
+        /**
+         * The reply text that was applied.
+         *
+         * @param string $replyText
+         */
+        public function setReplyText($replyText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReplyText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Timestamp
+     * Runtime class alias of \Google\Service\AndroidPublisher\ReviewReplyResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLastEdited()
-    {
-    }
-    /**
-     * The reply text that was applied.
-     *
-     * @param string $replyText
-     */
-    public function setReplyText($replyText)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReplyText()
+    class Google_Service_AndroidPublisher_ReviewReplyResult extends \Google\Service\AndroidPublisher\ReviewReplyResult
     {
     }
 }

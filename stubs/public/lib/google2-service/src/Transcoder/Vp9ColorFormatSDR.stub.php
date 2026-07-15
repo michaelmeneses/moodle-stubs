@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Transcoder;
-
-class Vp9ColorFormatSDR extends \Google\Model
-{
+namespace Google\Service\Transcoder {
+    class Vp9ColorFormatSDR extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Transcoder\Vp9ColorFormatSDR registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Transcoder_Vp9ColorFormatSDR extends \Google\Service\Transcoder\Vp9ColorFormatSDR
+    {
+    }
 }

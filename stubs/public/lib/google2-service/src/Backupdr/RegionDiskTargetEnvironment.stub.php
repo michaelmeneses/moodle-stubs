@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Backupdr;
-
-class RegionDiskTargetEnvironment extends \Google\Collection
-{
-    protected $collection_key = 'replicaZones';
-    /**
-     * Required. Target project for the disk.
-     *
-     * @var string
-     */
-    public $project;
-    /**
-     * Required. Target region for the disk.
-     *
-     * @var string
-     */
-    public $region;
-    /**
-     * Required. Target URLs of the replica zones for the disk.
-     *
-     * @var string[]
-     */
-    public $replicaZones;
-    /**
-     * Required. Target project for the disk.
-     *
-     * @param string $project
-     */
-    public function setProject($project)
+namespace Google\Service\Backupdr {
+    class RegionDiskTargetEnvironment extends \Google\Collection
     {
+        protected $collection_key = 'replicaZones';
+        /**
+         * Required. Target project for the disk.
+         *
+         * @var string
+         */
+        public $project;
+        /**
+         * Required. Target region for the disk.
+         *
+         * @var string
+         */
+        public $region;
+        /**
+         * Required. Target URLs of the replica zones for the disk.
+         *
+         * @var string[]
+         */
+        public $replicaZones;
+        /**
+         * Required. Target project for the disk.
+         *
+         * @param string $project
+         */
+        public function setProject($project)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProject()
+        {
+        }
+        /**
+         * Required. Target region for the disk.
+         *
+         * @param string $region
+         */
+        public function setRegion($region)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegion()
+        {
+        }
+        /**
+         * Required. Target URLs of the replica zones for the disk.
+         *
+         * @param string[] $replicaZones
+         */
+        public function setReplicaZones($replicaZones)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getReplicaZones()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Backupdr\RegionDiskTargetEnvironment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProject()
-    {
-    }
-    /**
-     * Required. Target region for the disk.
-     *
-     * @param string $region
-     */
-    public function setRegion($region)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegion()
-    {
-    }
-    /**
-     * Required. Target URLs of the replica zones for the disk.
-     *
-     * @param string[] $replicaZones
-     */
-    public function setReplicaZones($replicaZones)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getReplicaZones()
+    class Google_Service_Backupdr_RegionDiskTargetEnvironment extends \Google\Service\Backupdr\RegionDiskTargetEnvironment
     {
     }
 }

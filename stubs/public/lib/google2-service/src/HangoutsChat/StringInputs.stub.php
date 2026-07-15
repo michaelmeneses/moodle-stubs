@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class StringInputs extends \Google\Collection
-{
-    protected $collection_key = 'value';
-    /**
-     * An list of strings entered by the user.
-     *
-     * @var string[]
-     */
-    public $value;
-    /**
-     * An list of strings entered by the user.
-     *
-     * @param string[] $value
-     */
-    public function setValue($value)
+namespace Google\Service\HangoutsChat {
+    class StringInputs extends \Google\Collection
     {
+        protected $collection_key = 'value';
+        /**
+         * An list of strings entered by the user.
+         *
+         * @var string[]
+         */
+        public $value;
+        /**
+         * An list of strings entered by the user.
+         *
+         * @param string[] $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\HangoutsChat\StringInputs registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getValue()
+    class Google_Service_HangoutsChat_StringInputs extends \Google\Service\HangoutsChat\StringInputs
     {
     }
 }

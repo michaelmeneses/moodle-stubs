@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GameServices;
-
-class ScalingConfig extends \Google\Collection
-{
-    protected $collection_key = 'selectors';
-    /**
-     * @var string
-     */
-    public $fleetAutoscalerSpec;
-    /**
-     * @var string
-     */
-    public $name;
-    protected $schedulesType = Schedule::class;
-    protected $schedulesDataType = 'array';
-    protected $selectorsType = LabelSelector::class;
-    protected $selectorsDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setFleetAutoscalerSpec($fleetAutoscalerSpec)
+namespace Google\Service\GameServices {
+    class ScalingConfig extends \Google\Collection
     {
+        protected $collection_key = 'selectors';
+        /**
+         * @var string
+         */
+        public $fleetAutoscalerSpec;
+        /**
+         * @var string
+         */
+        public $name;
+        protected $schedulesType = Schedule::class;
+        protected $schedulesDataType = 'array';
+        protected $selectorsType = LabelSelector::class;
+        protected $selectorsDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setFleetAutoscalerSpec($fleetAutoscalerSpec)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFleetAutoscalerSpec()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param Schedule[]
+         */
+        public function setSchedules($schedules)
+        {
+        }
+        /**
+         * @return Schedule[]
+         */
+        public function getSchedules()
+        {
+        }
+        /**
+         * @param LabelSelector[]
+         */
+        public function setSelectors($selectors)
+        {
+        }
+        /**
+         * @return LabelSelector[]
+         */
+        public function getSelectors()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GameServices\ScalingConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFleetAutoscalerSpec()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param Schedule[]
-     */
-    public function setSchedules($schedules)
-    {
-    }
-    /**
-     * @return Schedule[]
-     */
-    public function getSchedules()
-    {
-    }
-    /**
-     * @param LabelSelector[]
-     */
-    public function setSelectors($selectors)
-    {
-    }
-    /**
-     * @return LabelSelector[]
-     */
-    public function getSelectors()
+    class Google_Service_GameServices_ScalingConfig extends \Google\Service\GameServices\ScalingConfig
     {
     }
 }

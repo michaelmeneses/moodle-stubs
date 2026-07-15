@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CCAIPlatform;
-
-class WeeklySchedule extends \Google\Collection
-{
-    protected $collection_key = 'days';
-    /**
-     * Required. Days of the week this schedule applies to.
-     *
-     * @var string[]
-     */
-    public $days;
-    /**
-     * Optional. Duration of the schedule.
-     *
-     * @var string
-     */
-    public $duration;
-    protected $endTimeType = TimeOfDay::class;
-    protected $endTimeDataType = '';
-    protected $startTimeType = TimeOfDay::class;
-    protected $startTimeDataType = '';
-    /**
-     * Required. Days of the week this schedule applies to.
-     *
-     * @param string[] $days
-     */
-    public function setDays($days)
+namespace Google\Service\CCAIPlatform {
+    class WeeklySchedule extends \Google\Collection
     {
+        protected $collection_key = 'days';
+        /**
+         * Required. Days of the week this schedule applies to.
+         *
+         * @var string[]
+         */
+        public $days;
+        /**
+         * Optional. Duration of the schedule.
+         *
+         * @var string
+         */
+        public $duration;
+        protected $endTimeType = TimeOfDay::class;
+        protected $endTimeDataType = '';
+        protected $startTimeType = TimeOfDay::class;
+        protected $startTimeDataType = '';
+        /**
+         * Required. Days of the week this schedule applies to.
+         *
+         * @param string[] $days
+         */
+        public function setDays($days)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDays()
+        {
+        }
+        /**
+         * Optional. Duration of the schedule.
+         *
+         * @param string $duration
+         */
+        public function setDuration($duration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDuration()
+        {
+        }
+        /**
+         * Optional. Daily end time of the schedule. If `end_time` is before
+         * `start_time`, the schedule will be considered as ending on the next day.
+         *
+         * @param TimeOfDay $endTime
+         */
+        public function setEndTime(TimeOfDay $endTime)
+        {
+        }
+        /**
+         * @return TimeOfDay
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * Required. Daily start time of the schedule.
+         *
+         * @param TimeOfDay $startTime
+         */
+        public function setStartTime(TimeOfDay $startTime)
+        {
+        }
+        /**
+         * @return TimeOfDay
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CCAIPlatform\WeeklySchedule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDays()
-    {
-    }
-    /**
-     * Optional. Duration of the schedule.
-     *
-     * @param string $duration
-     */
-    public function setDuration($duration)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDuration()
-    {
-    }
-    /**
-     * Optional. Daily end time of the schedule. If `end_time` is before
-     * `start_time`, the schedule will be considered as ending on the next day.
-     *
-     * @param TimeOfDay $endTime
-     */
-    public function setEndTime(TimeOfDay $endTime)
-    {
-    }
-    /**
-     * @return TimeOfDay
-     */
-    public function getEndTime()
-    {
-    }
-    /**
-     * Required. Daily start time of the schedule.
-     *
-     * @param TimeOfDay $startTime
-     */
-    public function setStartTime(TimeOfDay $startTime)
-    {
-    }
-    /**
-     * @return TimeOfDay
-     */
-    public function getStartTime()
+    class Google_Service_CCAIPlatform_WeeklySchedule extends \Google\Service\CCAIPlatform\WeeklySchedule
     {
     }
 }

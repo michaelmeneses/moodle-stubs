@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class FlagsListResponse extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    protected $itemsType = Flag::class;
-    protected $itemsDataType = 'array';
-    /**
-     * This is always `sql#flagsList`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * List of flags.
-     *
-     * @param Flag[] $items
-     */
-    public function setItems($items)
+namespace Google\Service\SQLAdmin {
+    class FlagsListResponse extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        protected $itemsType = Flag::class;
+        protected $itemsDataType = 'array';
+        /**
+         * This is always `sql#flagsList`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * List of flags.
+         *
+         * @param Flag[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return Flag[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * This is always `sql#flagsList`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Flag[]
+     * Runtime class alias of \Google\Service\SQLAdmin\FlagsListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItems()
-    {
-    }
-    /**
-     * This is always `sql#flagsList`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_SQLAdmin_FlagsListResponse extends \Google\Service\SQLAdmin\FlagsListResponse
     {
     }
 }

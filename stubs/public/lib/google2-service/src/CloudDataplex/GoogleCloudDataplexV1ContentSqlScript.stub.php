@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1ContentSqlScript extends \Google\Model
-{
-    /**
-     * Value was unspecified.
-     */
-    public const ENGINE_QUERY_ENGINE_UNSPECIFIED = 'QUERY_ENGINE_UNSPECIFIED';
-    /**
-     * Spark SQL Query.
-     */
-    public const ENGINE_SPARK = 'SPARK';
-    /**
-     * Required. Query Engine to be used for the Sql Query.
-     *
-     * @var string
-     */
-    public $engine;
-    /**
-     * Required. Query Engine to be used for the Sql Query.
-     *
-     * Accepted values: QUERY_ENGINE_UNSPECIFIED, SPARK
-     *
-     * @param self::ENGINE_* $engine
-     */
-    public function setEngine($engine)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1ContentSqlScript extends \Google\Model
     {
+        /**
+         * Value was unspecified.
+         */
+        public const ENGINE_QUERY_ENGINE_UNSPECIFIED = 'QUERY_ENGINE_UNSPECIFIED';
+        /**
+         * Spark SQL Query.
+         */
+        public const ENGINE_SPARK = 'SPARK';
+        /**
+         * Required. Query Engine to be used for the Sql Query.
+         *
+         * @var string
+         */
+        public $engine;
+        /**
+         * Required. Query Engine to be used for the Sql Query.
+         *
+         * Accepted values: QUERY_ENGINE_UNSPECIFIED, SPARK
+         *
+         * @param self::ENGINE_* $engine
+         */
+        public function setEngine($engine)
+        {
+        }
+        /**
+         * @return self::ENGINE_*
+         */
+        public function getEngine()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::ENGINE_*
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1ContentSqlScript registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEngine()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1ContentSqlScript extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1ContentSqlScript
     {
     }
 }

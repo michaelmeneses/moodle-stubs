@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class JobExecutionInfo extends \Google\Model
-{
-    protected $stagesType = JobExecutionStageInfo::class;
-    protected $stagesDataType = 'map';
-    /**
-     * A mapping from each stage to the information about that stage.
-     *
-     * @param JobExecutionStageInfo[] $stages
-     */
-    public function setStages($stages)
+namespace Google\Service\Dataflow {
+    class JobExecutionInfo extends \Google\Model
     {
+        protected $stagesType = JobExecutionStageInfo::class;
+        protected $stagesDataType = 'map';
+        /**
+         * A mapping from each stage to the information about that stage.
+         *
+         * @param JobExecutionStageInfo[] $stages
+         */
+        public function setStages($stages)
+        {
+        }
+        /**
+         * @return JobExecutionStageInfo[]
+         */
+        public function getStages()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return JobExecutionStageInfo[]
+     * Runtime class alias of \Google\Service\Dataflow\JobExecutionInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStages()
+    class Google_Service_Dataflow_JobExecutionInfo extends \Google\Service\Dataflow\JobExecutionInfo
     {
     }
 }

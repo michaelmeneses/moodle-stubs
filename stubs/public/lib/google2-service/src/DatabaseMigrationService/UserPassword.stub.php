@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class UserPassword extends \Google\Model
-{
-    /**
-     * The initial password for the user.
-     *
-     * @var string
-     */
-    public $password;
-    /**
-     * Output only. Indicates if the initial_user.password field has been set.
-     *
-     * @var bool
-     */
-    public $passwordSet;
-    /**
-     * The database username.
-     *
-     * @var string
-     */
-    public $user;
-    /**
-     * The initial password for the user.
-     *
-     * @param string $password
-     */
-    public function setPassword($password)
+namespace Google\Service\DatabaseMigrationService {
+    class UserPassword extends \Google\Model
     {
+        /**
+         * The initial password for the user.
+         *
+         * @var string
+         */
+        public $password;
+        /**
+         * Output only. Indicates if the initial_user.password field has been set.
+         *
+         * @var bool
+         */
+        public $passwordSet;
+        /**
+         * The database username.
+         *
+         * @var string
+         */
+        public $user;
+        /**
+         * The initial password for the user.
+         *
+         * @param string $password
+         */
+        public function setPassword($password)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPassword()
+        {
+        }
+        /**
+         * Output only. Indicates if the initial_user.password field has been set.
+         *
+         * @param bool $passwordSet
+         */
+        public function setPasswordSet($passwordSet)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPasswordSet()
+        {
+        }
+        /**
+         * The database username.
+         *
+         * @param string $user
+         */
+        public function setUser($user)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUser()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\UserPassword registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPassword()
-    {
-    }
-    /**
-     * Output only. Indicates if the initial_user.password field has been set.
-     *
-     * @param bool $passwordSet
-     */
-    public function setPasswordSet($passwordSet)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPasswordSet()
-    {
-    }
-    /**
-     * The database username.
-     *
-     * @param string $user
-     */
-    public function setUser($user)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUser()
+    class Google_Service_DatabaseMigrationService_UserPassword extends \Google\Service\DatabaseMigrationService\UserPassword
     {
     }
 }

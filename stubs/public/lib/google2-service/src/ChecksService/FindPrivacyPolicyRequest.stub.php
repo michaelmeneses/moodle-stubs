@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChecksService;
-
-class FindPrivacyPolicyRequest extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $websiteUri;
-    /**
-     * @param string
-     */
-    public function setWebsiteUri($websiteUri)
+namespace Google\Service\ChecksService {
+    class FindPrivacyPolicyRequest extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $websiteUri;
+        /**
+         * @param string
+         */
+        public function setWebsiteUri($websiteUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWebsiteUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChecksService\FindPrivacyPolicyRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getWebsiteUri()
+    class Google_Service_ChecksService_FindPrivacyPolicyRequest extends \Google\Service\ChecksService\FindPrivacyPolicyRequest
     {
     }
 }

@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkspaceEvents;
-
-class OAuthFlows extends \Google\Model
-{
-    protected $authorizationCodeType = AuthorizationCodeOAuthFlow::class;
-    protected $authorizationCodeDataType = '';
-    protected $clientCredentialsType = ClientCredentialsOAuthFlow::class;
-    protected $clientCredentialsDataType = '';
-    protected $implicitType = ImplicitOAuthFlow::class;
-    protected $implicitDataType = '';
-    protected $passwordType = PasswordOAuthFlow::class;
-    protected $passwordDataType = '';
-    /**
-     * @param AuthorizationCodeOAuthFlow $authorizationCode
-     */
-    public function setAuthorizationCode(AuthorizationCodeOAuthFlow $authorizationCode)
+namespace Google\Service\WorkspaceEvents {
+    class OAuthFlows extends \Google\Model
     {
+        protected $authorizationCodeType = AuthorizationCodeOAuthFlow::class;
+        protected $authorizationCodeDataType = '';
+        protected $clientCredentialsType = ClientCredentialsOAuthFlow::class;
+        protected $clientCredentialsDataType = '';
+        protected $implicitType = ImplicitOAuthFlow::class;
+        protected $implicitDataType = '';
+        protected $passwordType = PasswordOAuthFlow::class;
+        protected $passwordDataType = '';
+        /**
+         * @param AuthorizationCodeOAuthFlow $authorizationCode
+         */
+        public function setAuthorizationCode(AuthorizationCodeOAuthFlow $authorizationCode)
+        {
+        }
+        /**
+         * @return AuthorizationCodeOAuthFlow
+         */
+        public function getAuthorizationCode()
+        {
+        }
+        /**
+         * @param ClientCredentialsOAuthFlow $clientCredentials
+         */
+        public function setClientCredentials(ClientCredentialsOAuthFlow $clientCredentials)
+        {
+        }
+        /**
+         * @return ClientCredentialsOAuthFlow
+         */
+        public function getClientCredentials()
+        {
+        }
+        /**
+         * @param ImplicitOAuthFlow $implicit
+         */
+        public function setImplicit(ImplicitOAuthFlow $implicit)
+        {
+        }
+        /**
+         * @return ImplicitOAuthFlow
+         */
+        public function getImplicit()
+        {
+        }
+        /**
+         * @param PasswordOAuthFlow $password
+         */
+        public function setPassword(PasswordOAuthFlow $password)
+        {
+        }
+        /**
+         * @return PasswordOAuthFlow
+         */
+        public function getPassword()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AuthorizationCodeOAuthFlow
+     * Runtime class alias of \Google\Service\WorkspaceEvents\OAuthFlows registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuthorizationCode()
-    {
-    }
-    /**
-     * @param ClientCredentialsOAuthFlow $clientCredentials
-     */
-    public function setClientCredentials(ClientCredentialsOAuthFlow $clientCredentials)
-    {
-    }
-    /**
-     * @return ClientCredentialsOAuthFlow
-     */
-    public function getClientCredentials()
-    {
-    }
-    /**
-     * @param ImplicitOAuthFlow $implicit
-     */
-    public function setImplicit(ImplicitOAuthFlow $implicit)
-    {
-    }
-    /**
-     * @return ImplicitOAuthFlow
-     */
-    public function getImplicit()
-    {
-    }
-    /**
-     * @param PasswordOAuthFlow $password
-     */
-    public function setPassword(PasswordOAuthFlow $password)
-    {
-    }
-    /**
-     * @return PasswordOAuthFlow
-     */
-    public function getPassword()
+    class Google_Service_WorkspaceEvents_OAuthFlows extends \Google\Service\WorkspaceEvents\OAuthFlows
     {
     }
 }

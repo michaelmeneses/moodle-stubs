@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1FasterDeploymentConfig extends \Google\Model
-{
-    /**
-     * If true, enable fast tryout feature for this deployed model.
-     *
-     * @var bool
-     */
-    public $fastTryoutEnabled;
-    /**
-     * If true, enable fast tryout feature for this deployed model.
-     *
-     * @param bool $fastTryoutEnabled
-     */
-    public function setFastTryoutEnabled($fastTryoutEnabled)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1FasterDeploymentConfig extends \Google\Model
     {
+        /**
+         * If true, enable fast tryout feature for this deployed model.
+         *
+         * @var bool
+         */
+        public $fastTryoutEnabled;
+        /**
+         * If true, enable fast tryout feature for this deployed model.
+         *
+         * @param bool $fastTryoutEnabled
+         */
+        public function setFastTryoutEnabled($fastTryoutEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getFastTryoutEnabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1FasterDeploymentConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFastTryoutEnabled()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1FasterDeploymentConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1FasterDeploymentConfig
     {
     }
 }

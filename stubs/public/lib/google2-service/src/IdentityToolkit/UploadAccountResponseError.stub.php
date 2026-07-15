@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\IdentityToolkit;
-
-class UploadAccountResponseError extends \Google\Model
-{
-    /**
-     * The index of the malformed account, starting from 0.
-     *
-     * @var int
-     */
-    public $index;
-    /**
-     * Detailed error message for the account info.
-     *
-     * @var string
-     */
-    public $message;
-    /**
-     * The index of the malformed account, starting from 0.
-     *
-     * @param int $index
-     */
-    public function setIndex($index)
+namespace Google\Service\IdentityToolkit {
+    class UploadAccountResponseError extends \Google\Model
     {
+        /**
+         * The index of the malformed account, starting from 0.
+         *
+         * @var int
+         */
+        public $index;
+        /**
+         * Detailed error message for the account info.
+         *
+         * @var string
+         */
+        public $message;
+        /**
+         * The index of the malformed account, starting from 0.
+         *
+         * @param int $index
+         */
+        public function setIndex($index)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getIndex()
+        {
+        }
+        /**
+         * Detailed error message for the account info.
+         *
+         * @param string $message
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\IdentityToolkit\UploadAccountResponseError registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIndex()
-    {
-    }
-    /**
-     * Detailed error message for the account info.
-     *
-     * @param string $message
-     */
-    public function setMessage($message)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMessage()
+    class Google_Service_IdentityToolkit_UploadAccountResponseError extends \Google\Service\IdentityToolkit\UploadAccountResponseError
     {
     }
 }

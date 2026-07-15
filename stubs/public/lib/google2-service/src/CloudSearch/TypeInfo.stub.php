@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class TypeInfo extends \Google\Model
-{
-    protected $videoInfoType = VideoInfo::class;
-    protected $videoInfoDataType = '';
-    /**
-     * @param VideoInfo
-     */
-    public function setVideoInfo(VideoInfo $videoInfo)
+namespace Google\Service\CloudSearch {
+    class TypeInfo extends \Google\Model
     {
+        protected $videoInfoType = VideoInfo::class;
+        protected $videoInfoDataType = '';
+        /**
+         * @param VideoInfo
+         */
+        public function setVideoInfo(VideoInfo $videoInfo)
+        {
+        }
+        /**
+         * @return VideoInfo
+         */
+        public function getVideoInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return VideoInfo
+     * Runtime class alias of \Google\Service\CloudSearch\TypeInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getVideoInfo()
+    class Google_Service_CloudSearch_TypeInfo extends \Google\Service\CloudSearch\TypeInfo
     {
     }
 }

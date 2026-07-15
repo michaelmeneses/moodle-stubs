@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DeveloperConnect;
-
-class ListDeploymentEventsResponse extends \Google\Collection
-{
-    protected $collection_key = 'deploymentEvents';
-    protected $deploymentEventsType = DeploymentEvent::class;
-    protected $deploymentEventsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of DeploymentEvents.
-     *
-     * @param DeploymentEvent[] $deploymentEvents
-     */
-    public function setDeploymentEvents($deploymentEvents)
+namespace Google\Service\DeveloperConnect {
+    class ListDeploymentEventsResponse extends \Google\Collection
     {
+        protected $collection_key = 'deploymentEvents';
+        protected $deploymentEventsType = DeploymentEvent::class;
+        protected $deploymentEventsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of DeploymentEvents.
+         *
+         * @param DeploymentEvent[] $deploymentEvents
+         */
+        public function setDeploymentEvents($deploymentEvents)
+        {
+        }
+        /**
+         * @return DeploymentEvent[]
+         */
+        public function getDeploymentEvents()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DeploymentEvent[]
+     * Runtime class alias of \Google\Service\DeveloperConnect\ListDeploymentEventsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeploymentEvents()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_DeveloperConnect_ListDeploymentEventsResponse extends \Google\Service\DeveloperConnect\ListDeploymentEventsResponse
     {
     }
 }

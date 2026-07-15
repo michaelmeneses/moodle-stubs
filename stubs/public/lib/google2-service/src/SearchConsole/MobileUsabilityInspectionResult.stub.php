@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SearchConsole;
-
-class MobileUsabilityInspectionResult extends \Google\Collection
-{
-    /**
-     * Unknown verdict.
-     */
-    public const VERDICT_VERDICT_UNSPECIFIED = 'VERDICT_UNSPECIFIED';
-    /**
-     * Equivalent to "Valid" for the page or item in Search Console.
-     */
-    public const VERDICT_PASS = 'PASS';
-    /**
-     * Reserved, no longer in use.
-     */
-    public const VERDICT_PARTIAL = 'PARTIAL';
-    /**
-     * Equivalent to "Error" or "Invalid" for the page or item in Search Console.
-     */
-    public const VERDICT_FAIL = 'FAIL';
-    /**
-     * Equivalent to "Excluded" for the page or item in Search Console.
-     */
-    public const VERDICT_NEUTRAL = 'NEUTRAL';
-    protected $collection_key = 'issues';
-    protected $issuesType = MobileUsabilityIssue::class;
-    protected $issuesDataType = 'array';
-    /**
-     * High-level mobile-usability inspection result for this URL.
-     *
-     * @var string
-     */
-    public $verdict;
-    /**
-     * A list of zero or more mobile-usability issues detected for this URL.
-     *
-     * @param MobileUsabilityIssue[] $issues
-     */
-    public function setIssues($issues)
+namespace Google\Service\SearchConsole {
+    class MobileUsabilityInspectionResult extends \Google\Collection
     {
+        /**
+         * Unknown verdict.
+         */
+        public const VERDICT_VERDICT_UNSPECIFIED = 'VERDICT_UNSPECIFIED';
+        /**
+         * Equivalent to "Valid" for the page or item in Search Console.
+         */
+        public const VERDICT_PASS = 'PASS';
+        /**
+         * Reserved, no longer in use.
+         */
+        public const VERDICT_PARTIAL = 'PARTIAL';
+        /**
+         * Equivalent to "Error" or "Invalid" for the page or item in Search Console.
+         */
+        public const VERDICT_FAIL = 'FAIL';
+        /**
+         * Equivalent to "Excluded" for the page or item in Search Console.
+         */
+        public const VERDICT_NEUTRAL = 'NEUTRAL';
+        protected $collection_key = 'issues';
+        protected $issuesType = MobileUsabilityIssue::class;
+        protected $issuesDataType = 'array';
+        /**
+         * High-level mobile-usability inspection result for this URL.
+         *
+         * @var string
+         */
+        public $verdict;
+        /**
+         * A list of zero or more mobile-usability issues detected for this URL.
+         *
+         * @param MobileUsabilityIssue[] $issues
+         */
+        public function setIssues($issues)
+        {
+        }
+        /**
+         * @return MobileUsabilityIssue[]
+         */
+        public function getIssues()
+        {
+        }
+        /**
+         * High-level mobile-usability inspection result for this URL.
+         *
+         * Accepted values: VERDICT_UNSPECIFIED, PASS, PARTIAL, FAIL, NEUTRAL
+         *
+         * @param self::VERDICT_* $verdict
+         */
+        public function setVerdict($verdict)
+        {
+        }
+        /**
+         * @return self::VERDICT_*
+         */
+        public function getVerdict()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MobileUsabilityIssue[]
+     * Runtime class alias of \Google\Service\SearchConsole\MobileUsabilityInspectionResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIssues()
-    {
-    }
-    /**
-     * High-level mobile-usability inspection result for this URL.
-     *
-     * Accepted values: VERDICT_UNSPECIFIED, PASS, PARTIAL, FAIL, NEUTRAL
-     *
-     * @param self::VERDICT_* $verdict
-     */
-    public function setVerdict($verdict)
-    {
-    }
-    /**
-     * @return self::VERDICT_*
-     */
-    public function getVerdict()
+    class Google_Service_SearchConsole_MobileUsabilityInspectionResult extends \Google\Service\SearchConsole\MobileUsabilityInspectionResult
     {
     }
 }

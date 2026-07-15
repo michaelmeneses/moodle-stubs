@@ -21,93 +21,102 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1SearchCatalogResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    /**
-     * Pagination token that can be used in subsequent calls to retrieve the next
-     * page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $resultsType = GoogleCloudDatacatalogV1SearchCatalogResult::class;
-    protected $resultsDataType = 'array';
-    /**
-     * The approximate total number of entries matched by the query.
-     *
-     * @var int
-     */
-    public $totalSize;
-    /**
-     * Unreachable locations. Search results don't include data from those
-     * locations. To get additional information on an error, repeat the search
-     * request and restrict it to specific locations by setting the
-     * `SearchCatalogRequest.scope.restricted_locations` parameter.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * Pagination token that can be used in subsequent calls to retrieve the next
-     * page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1SearchCatalogResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        /**
+         * Pagination token that can be used in subsequent calls to retrieve the next
+         * page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $resultsType = GoogleCloudDatacatalogV1SearchCatalogResult::class;
+        protected $resultsDataType = 'array';
+        /**
+         * The approximate total number of entries matched by the query.
+         *
+         * @var int
+         */
+        public $totalSize;
+        /**
+         * Unreachable locations. Search results don't include data from those
+         * locations. To get additional information on an error, repeat the search
+         * request and restrict it to specific locations by setting the
+         * `SearchCatalogRequest.scope.restricted_locations` parameter.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * Pagination token that can be used in subsequent calls to retrieve the next
+         * page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Search results.
+         *
+         * @param GoogleCloudDatacatalogV1SearchCatalogResult[] $results
+         */
+        public function setResults($results)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1SearchCatalogResult[]
+         */
+        public function getResults()
+        {
+        }
+        /**
+         * The approximate total number of entries matched by the query.
+         *
+         * @param int $totalSize
+         */
+        public function setTotalSize($totalSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalSize()
+        {
+        }
+        /**
+         * Unreachable locations. Search results don't include data from those
+         * locations. To get additional information on an error, repeat the search
+         * request and restrict it to specific locations by setting the
+         * `SearchCatalogRequest.scope.restricted_locations` parameter.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1SearchCatalogResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Search results.
-     *
-     * @param GoogleCloudDatacatalogV1SearchCatalogResult[] $results
-     */
-    public function setResults($results)
-    {
-    }
-    /**
-     * @return GoogleCloudDatacatalogV1SearchCatalogResult[]
-     */
-    public function getResults()
-    {
-    }
-    /**
-     * The approximate total number of entries matched by the query.
-     *
-     * @param int $totalSize
-     */
-    public function setTotalSize($totalSize)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalSize()
-    {
-    }
-    /**
-     * Unreachable locations. Search results don't include data from those
-     * locations. To get additional information on an error, repeat the search
-     * request and restrict it to specific locations by setting the
-     * `SearchCatalogRequest.scope.restricted_locations` parameter.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1SearchCatalogResponse extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1SearchCatalogResponse
     {
     }
 }

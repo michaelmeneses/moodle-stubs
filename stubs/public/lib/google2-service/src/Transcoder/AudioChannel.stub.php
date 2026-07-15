@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Transcoder;
-
-class AudioChannel extends \Google\Collection
-{
-    protected $collection_key = 'inputs';
-    protected $inputsType = AudioChannelInput::class;
-    protected $inputsDataType = 'array';
-    /**
-     * @param AudioChannelInput[]
-     */
-    public function setInputs($inputs)
+namespace Google\Service\Transcoder {
+    class AudioChannel extends \Google\Collection
     {
+        protected $collection_key = 'inputs';
+        protected $inputsType = AudioChannelInput::class;
+        protected $inputsDataType = 'array';
+        /**
+         * @param AudioChannelInput[]
+         */
+        public function setInputs($inputs)
+        {
+        }
+        /**
+         * @return AudioChannelInput[]
+         */
+        public function getInputs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AudioChannelInput[]
+     * Runtime class alias of \Google\Service\Transcoder\AudioChannel registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInputs()
+    class Google_Service_Transcoder_AudioChannel extends \Google\Service\Transcoder\AudioChannel
     {
     }
 }

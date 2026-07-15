@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2betaModelServingConfigList extends \Google\Collection
-{
-    protected $collection_key = 'servingConfigIds';
-    /**
-     * Optional. A set of valid serving configs that may be used for
-     * `PAGE_OPTIMIZATION`.
-     *
-     * @var string[]
-     */
-    public $servingConfigIds;
-    /**
-     * Optional. A set of valid serving configs that may be used for
-     * `PAGE_OPTIMIZATION`.
-     *
-     * @param string[] $servingConfigIds
-     */
-    public function setServingConfigIds($servingConfigIds)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2betaModelServingConfigList extends \Google\Collection
     {
+        protected $collection_key = 'servingConfigIds';
+        /**
+         * Optional. A set of valid serving configs that may be used for
+         * `PAGE_OPTIMIZATION`.
+         *
+         * @var string[]
+         */
+        public $servingConfigIds;
+        /**
+         * Optional. A set of valid serving configs that may be used for
+         * `PAGE_OPTIMIZATION`.
+         *
+         * @param string[] $servingConfigIds
+         */
+        public function setServingConfigIds($servingConfigIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getServingConfigIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2betaModelServingConfigList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getServingConfigIds()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2betaModelServingConfigList extends \Google\Service\CloudRetail\GoogleCloudRetailV2betaModelServingConfigList
     {
     }
 }

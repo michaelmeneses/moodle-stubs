@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudMachineLearningEngine;
-
-class GoogleCloudMlV1StudyConfigParameterSpecDoubleValueSpec extends \Google\Model
-{
+namespace Google\Service\CloudMachineLearningEngine {
+    class GoogleCloudMlV1StudyConfigParameterSpecDoubleValueSpec extends \Google\Model
+    {
+        /**
+         * Must be specified if type is `DOUBLE`. Maximum value of the parameter.
+         *
+         * @var 
+         */
+        public $maxValue;
+        /**
+         * Must be specified if type is `DOUBLE`. Minimum value of the parameter.
+         *
+         * @var 
+         */
+        public $minValue;
+        public function setMaxValue($maxValue)
+        {
+        }
+        public function getMaxValue()
+        {
+        }
+        public function setMinValue($minValue)
+        {
+        }
+        public function getMinValue()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * Must be specified if type is `DOUBLE`. Maximum value of the parameter.
-     *
-     * @var 
+     * Runtime class alias of \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1StudyConfigParameterSpecDoubleValueSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public $maxValue;
-    /**
-     * Must be specified if type is `DOUBLE`. Minimum value of the parameter.
-     *
-     * @var 
-     */
-    public $minValue;
-    public function setMaxValue($maxValue)
-    {
-    }
-    public function getMaxValue()
-    {
-    }
-    public function setMinValue($minValue)
-    {
-    }
-    public function getMinValue()
+    class Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1StudyConfigParameterSpecDoubleValueSpec extends \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1StudyConfigParameterSpecDoubleValueSpec
     {
     }
 }

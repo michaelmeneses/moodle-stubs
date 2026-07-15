@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PolicySimulator;
-
-class GoogleCloudPolicysimulatorV1beta1Replay extends \Google\Model
-{
-    protected $configType = GoogleCloudPolicysimulatorV1beta1ReplayConfig::class;
-    protected $configDataType = '';
-    /**
-     * @var string
-     */
-    public $name;
-    protected $resultsSummaryType = GoogleCloudPolicysimulatorV1beta1ReplayResultsSummary::class;
-    protected $resultsSummaryDataType = '';
-    /**
-     * @var string
-     */
-    public $state;
-    /**
-     * @param GoogleCloudPolicysimulatorV1beta1ReplayConfig
-     */
-    public function setConfig(GoogleCloudPolicysimulatorV1beta1ReplayConfig $config)
+namespace Google\Service\PolicySimulator {
+    class GoogleCloudPolicysimulatorV1beta1Replay extends \Google\Model
     {
+        protected $configType = GoogleCloudPolicysimulatorV1beta1ReplayConfig::class;
+        protected $configDataType = '';
+        /**
+         * @var string
+         */
+        public $name;
+        protected $resultsSummaryType = GoogleCloudPolicysimulatorV1beta1ReplayResultsSummary::class;
+        protected $resultsSummaryDataType = '';
+        /**
+         * @var string
+         */
+        public $state;
+        /**
+         * @param GoogleCloudPolicysimulatorV1beta1ReplayConfig
+         */
+        public function setConfig(GoogleCloudPolicysimulatorV1beta1ReplayConfig $config)
+        {
+        }
+        /**
+         * @return GoogleCloudPolicysimulatorV1beta1ReplayConfig
+         */
+        public function getConfig()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param GoogleCloudPolicysimulatorV1beta1ReplayResultsSummary
+         */
+        public function setResultsSummary(GoogleCloudPolicysimulatorV1beta1ReplayResultsSummary $resultsSummary)
+        {
+        }
+        /**
+         * @return GoogleCloudPolicysimulatorV1beta1ReplayResultsSummary
+         */
+        public function getResultsSummary()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudPolicysimulatorV1beta1ReplayConfig
+     * Runtime class alias of \Google\Service\PolicySimulator\GoogleCloudPolicysimulatorV1beta1Replay registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfig()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param GoogleCloudPolicysimulatorV1beta1ReplayResultsSummary
-     */
-    public function setResultsSummary(GoogleCloudPolicysimulatorV1beta1ReplayResultsSummary $resultsSummary)
-    {
-    }
-    /**
-     * @return GoogleCloudPolicysimulatorV1beta1ReplayResultsSummary
-     */
-    public function getResultsSummary()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getState()
+    class Google_Service_PolicySimulator_GoogleCloudPolicysimulatorV1beta1Replay extends \Google\Service\PolicySimulator\GoogleCloudPolicysimulatorV1beta1Replay
     {
     }
 }

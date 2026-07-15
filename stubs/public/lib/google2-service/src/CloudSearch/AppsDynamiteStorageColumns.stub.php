@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteStorageColumns extends \Google\Collection
-{
-    protected $collection_key = 'columnItems';
-    protected $columnItemsType = AppsDynamiteStorageColumnsColumn::class;
-    protected $columnItemsDataType = 'array';
-    /**
-     * @param AppsDynamiteStorageColumnsColumn[]
-     */
-    public function setColumnItems($columnItems)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteStorageColumns extends \Google\Collection
     {
+        protected $collection_key = 'columnItems';
+        protected $columnItemsType = AppsDynamiteStorageColumnsColumn::class;
+        protected $columnItemsDataType = 'array';
+        /**
+         * @param AppsDynamiteStorageColumnsColumn[]
+         */
+        public function setColumnItems($columnItems)
+        {
+        }
+        /**
+         * @return AppsDynamiteStorageColumnsColumn[]
+         */
+        public function getColumnItems()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppsDynamiteStorageColumnsColumn[]
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteStorageColumns registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumnItems()
+    class Google_Service_CloudSearch_AppsDynamiteStorageColumns extends \Google\Service\CloudSearch\AppsDynamiteStorageColumns
     {
     }
 }

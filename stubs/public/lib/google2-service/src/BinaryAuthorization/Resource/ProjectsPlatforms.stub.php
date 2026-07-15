@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BinaryAuthorization\Resource;
-
-/**
- * The "platforms" collection of methods.
- * Typical usage is:
- *  <code>
- *   $binaryauthorizationService = new Google\Service\BinaryAuthorization(...);
- *   $platforms = $binaryauthorizationService->projects_platforms;
- *  </code>
- */
-class ProjectsPlatforms extends \Google\Service\Resource
-{
+namespace Google\Service\BinaryAuthorization\Resource {
+    /**
+     * The "platforms" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $binaryauthorizationService = new Google\Service\BinaryAuthorization(...);
+     *   $platforms = $binaryauthorizationService->projects_platforms;
+     *  </code>
+     */
+    class ProjectsPlatforms extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\BinaryAuthorization\Resource\ProjectsPlatforms registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_BinaryAuthorization_Resource_ProjectsPlatforms extends \Google\Service\BinaryAuthorization\Resource\ProjectsPlatforms
+    {
+    }
 }

@@ -21,167 +21,176 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AIPlatformNotebooks;
-
-class Schedule extends \Google\Collection
-{
-    protected $collection_key = 'recentExecutions';
-    /**
-     * @var string
-     */
-    public $createTime;
-    /**
-     * @var string
-     */
-    public $cronSchedule;
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var string
-     */
-    public $displayName;
-    protected $executionTemplateType = ExecutionTemplate::class;
-    protected $executionTemplateDataType = '';
-    public $executionTemplate;
-    /**
-     * @var string
-     */
-    public $name;
-    protected $recentExecutionsType = Execution::class;
-    protected $recentExecutionsDataType = 'array';
-    public $recentExecutions = [];
-    /**
-     * @var string
-     */
-    public $state;
-    /**
-     * @var string
-     */
-    public $timeZone;
-    /**
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * @param string
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\AIPlatformNotebooks {
+    class Schedule extends \Google\Collection
     {
+        protected $collection_key = 'recentExecutions';
+        /**
+         * @var string
+         */
+        public $createTime;
+        /**
+         * @var string
+         */
+        public $cronSchedule;
+        /**
+         * @var string
+         */
+        public $description;
+        /**
+         * @var string
+         */
+        public $displayName;
+        protected $executionTemplateType = ExecutionTemplate::class;
+        protected $executionTemplateDataType = '';
+        public $executionTemplate;
+        /**
+         * @var string
+         */
+        public $name;
+        protected $recentExecutionsType = Execution::class;
+        protected $recentExecutionsDataType = 'array';
+        public $recentExecutions = [];
+        /**
+         * @var string
+         */
+        public $state;
+        /**
+         * @var string
+         */
+        public $timeZone;
+        /**
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * @param string
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCronSchedule($cronSchedule)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCronSchedule()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * @param ExecutionTemplate
+         */
+        public function setExecutionTemplate(ExecutionTemplate $executionTemplate)
+        {
+        }
+        /**
+         * @return ExecutionTemplate
+         */
+        public function getExecutionTemplate()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param Execution[]
+         */
+        public function setRecentExecutions($recentExecutions)
+        {
+        }
+        /**
+         * @return Execution[]
+         */
+        public function getRecentExecutions()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getState()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTimeZone($timeZone)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimeZone()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AIPlatformNotebooks\Schedule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCronSchedule($cronSchedule)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCronSchedule()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * @param ExecutionTemplate
-     */
-    public function setExecutionTemplate(ExecutionTemplate $executionTemplate)
-    {
-    }
-    /**
-     * @return ExecutionTemplate
-     */
-    public function getExecutionTemplate()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param Execution[]
-     */
-    public function setRecentExecutions($recentExecutions)
-    {
-    }
-    /**
-     * @return Execution[]
-     */
-    public function getRecentExecutions()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getState()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTimeZone($timeZone)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimeZone()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_AIPlatformNotebooks_Schedule extends \Google\Service\AIPlatformNotebooks\Schedule
     {
     }
 }

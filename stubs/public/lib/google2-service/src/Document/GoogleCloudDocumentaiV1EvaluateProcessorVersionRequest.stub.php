@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1EvaluateProcessorVersionRequest extends \Google\Model
-{
-    protected $evaluationDocumentsType = GoogleCloudDocumentaiV1BatchDocumentsInputConfig::class;
-    protected $evaluationDocumentsDataType = '';
-    /**
-     * Optional. The documents used in the evaluation. If unspecified, use the
-     * processor's dataset as evaluation input.
-     *
-     * @param GoogleCloudDocumentaiV1BatchDocumentsInputConfig $evaluationDocuments
-     */
-    public function setEvaluationDocuments(GoogleCloudDocumentaiV1BatchDocumentsInputConfig $evaluationDocuments)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1EvaluateProcessorVersionRequest extends \Google\Model
     {
+        protected $evaluationDocumentsType = GoogleCloudDocumentaiV1BatchDocumentsInputConfig::class;
+        protected $evaluationDocumentsDataType = '';
+        /**
+         * Optional. The documents used in the evaluation. If unspecified, use the
+         * processor's dataset as evaluation input.
+         *
+         * @param GoogleCloudDocumentaiV1BatchDocumentsInputConfig $evaluationDocuments
+         */
+        public function setEvaluationDocuments(GoogleCloudDocumentaiV1BatchDocumentsInputConfig $evaluationDocuments)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1BatchDocumentsInputConfig
+         */
+        public function getEvaluationDocuments()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiV1BatchDocumentsInputConfig
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1EvaluateProcessorVersionRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEvaluationDocuments()
+    class Google_Service_Document_GoogleCloudDocumentaiV1EvaluateProcessorVersionRequest extends \Google\Service\Document\GoogleCloudDocumentaiV1EvaluateProcessorVersionRequest
     {
     }
 }

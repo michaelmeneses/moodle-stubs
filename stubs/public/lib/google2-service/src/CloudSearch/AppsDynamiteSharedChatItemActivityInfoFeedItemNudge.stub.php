@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedChatItemActivityInfoFeedItemNudge extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $nudgeType;
-    /**
-     * @param string
-     */
-    public function setNudgeType($nudgeType)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedChatItemActivityInfoFeedItemNudge extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $nudgeType;
+        /**
+         * @param string
+         */
+        public function setNudgeType($nudgeType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNudgeType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedChatItemActivityInfoFeedItemNudge registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNudgeType()
+    class Google_Service_CloudSearch_AppsDynamiteSharedChatItemActivityInfoFeedItemNudge extends \Google\Service\CloudSearch\AppsDynamiteSharedChatItemActivityInfoFeedItemNudge
     {
     }
 }

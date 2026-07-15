@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TrafficDirectorService;
-
-class SemanticVersion extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $majorNumber;
-    /**
-     * @var string
-     */
-    public $minorNumber;
-    /**
-     * @var string
-     */
-    public $patch;
-    /**
-     * @param string $majorNumber
-     */
-    public function setMajorNumber($majorNumber)
+namespace Google\Service\TrafficDirectorService {
+    class SemanticVersion extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $majorNumber;
+        /**
+         * @var string
+         */
+        public $minorNumber;
+        /**
+         * @var string
+         */
+        public $patch;
+        /**
+         * @param string $majorNumber
+         */
+        public function setMajorNumber($majorNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMajorNumber()
+        {
+        }
+        /**
+         * @param string $minorNumber
+         */
+        public function setMinorNumber($minorNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMinorNumber()
+        {
+        }
+        /**
+         * @param string $patch
+         */
+        public function setPatch($patch)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPatch()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\TrafficDirectorService\SemanticVersion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMajorNumber()
-    {
-    }
-    /**
-     * @param string $minorNumber
-     */
-    public function setMinorNumber($minorNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMinorNumber()
-    {
-    }
-    /**
-     * @param string $patch
-     */
-    public function setPatch($patch)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPatch()
+    class Google_Service_TrafficDirectorService_SemanticVersion extends \Google\Service\TrafficDirectorService\SemanticVersion
     {
     }
 }

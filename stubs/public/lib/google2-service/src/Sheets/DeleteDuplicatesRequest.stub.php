@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class DeleteDuplicatesRequest extends \Google\Collection
-{
-    protected $collection_key = 'comparisonColumns';
-    protected $comparisonColumnsType = DimensionRange::class;
-    protected $comparisonColumnsDataType = 'array';
-    protected $rangeType = GridRange::class;
-    protected $rangeDataType = '';
-    /**
-     * The columns in the range to analyze for duplicate values. If no columns are
-     * selected then all columns are analyzed for duplicates.
-     *
-     * @param DimensionRange[] $comparisonColumns
-     */
-    public function setComparisonColumns($comparisonColumns)
+namespace Google\Service\Sheets {
+    class DeleteDuplicatesRequest extends \Google\Collection
     {
+        protected $collection_key = 'comparisonColumns';
+        protected $comparisonColumnsType = DimensionRange::class;
+        protected $comparisonColumnsDataType = 'array';
+        protected $rangeType = GridRange::class;
+        protected $rangeDataType = '';
+        /**
+         * The columns in the range to analyze for duplicate values. If no columns are
+         * selected then all columns are analyzed for duplicates.
+         *
+         * @param DimensionRange[] $comparisonColumns
+         */
+        public function setComparisonColumns($comparisonColumns)
+        {
+        }
+        /**
+         * @return DimensionRange[]
+         */
+        public function getComparisonColumns()
+        {
+        }
+        /**
+         * The range to remove duplicates rows from.
+         *
+         * @param GridRange $range
+         */
+        public function setRange(GridRange $range)
+        {
+        }
+        /**
+         * @return GridRange
+         */
+        public function getRange()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DimensionRange[]
+     * Runtime class alias of \Google\Service\Sheets\DeleteDuplicatesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getComparisonColumns()
-    {
-    }
-    /**
-     * The range to remove duplicates rows from.
-     *
-     * @param GridRange $range
-     */
-    public function setRange(GridRange $range)
-    {
-    }
-    /**
-     * @return GridRange
-     */
-    public function getRange()
+    class Google_Service_Sheets_DeleteDuplicatesRequest extends \Google\Service\Sheets\DeleteDuplicatesRequest
     {
     }
 }

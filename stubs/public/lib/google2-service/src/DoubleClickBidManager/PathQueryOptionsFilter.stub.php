@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DoubleClickBidManager;
-
-class PathQueryOptionsFilter extends \Google\Collection
-{
-    protected $collection_key = 'values';
-    /**
-     * @var string
-     */
-    public $filter;
-    /**
-     * @var string
-     */
-    public $match;
-    /**
-     * @var string[]
-     */
-    public $values;
-    /**
-     * @param string
-     */
-    public function setFilter($filter)
+namespace Google\Service\DoubleClickBidManager {
+    class PathQueryOptionsFilter extends \Google\Collection
     {
+        protected $collection_key = 'values';
+        /**
+         * @var string
+         */
+        public $filter;
+        /**
+         * @var string
+         */
+        public $match;
+        /**
+         * @var string[]
+         */
+        public $values;
+        /**
+         * @param string
+         */
+        public function setFilter($filter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilter()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMatch($match)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMatch()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DoubleClickBidManager\PathQueryOptionsFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFilter()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMatch($match)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMatch()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setValues($values)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getValues()
+    class Google_Service_DoubleClickBidManager_PathQueryOptionsFilter extends \Google\Service\DoubleClickBidManager\PathQueryOptionsFilter
     {
     }
 }

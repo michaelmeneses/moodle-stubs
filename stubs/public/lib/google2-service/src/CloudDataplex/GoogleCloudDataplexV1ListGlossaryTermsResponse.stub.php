@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1ListGlossaryTermsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachableLocations';
-    /**
-     * A token, which can be sent as page_token to retrieve the next page. If this
-     * field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $termsType = GoogleCloudDataplexV1GlossaryTerm::class;
-    protected $termsDataType = 'array';
-    /**
-     * Locations that the service couldn't reach.
-     *
-     * @var string[]
-     */
-    public $unreachableLocations;
-    /**
-     * A token, which can be sent as page_token to retrieve the next page. If this
-     * field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1ListGlossaryTermsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachableLocations';
+        /**
+         * A token, which can be sent as page_token to retrieve the next page. If this
+         * field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $termsType = GoogleCloudDataplexV1GlossaryTerm::class;
+        protected $termsDataType = 'array';
+        /**
+         * Locations that the service couldn't reach.
+         *
+         * @var string[]
+         */
+        public $unreachableLocations;
+        /**
+         * A token, which can be sent as page_token to retrieve the next page. If this
+         * field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Lists the GlossaryTerms in the specified parent.
+         *
+         * @param GoogleCloudDataplexV1GlossaryTerm[] $terms
+         */
+        public function setTerms($terms)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1GlossaryTerm[]
+         */
+        public function getTerms()
+        {
+        }
+        /**
+         * Locations that the service couldn't reach.
+         *
+         * @param string[] $unreachableLocations
+         */
+        public function setUnreachableLocations($unreachableLocations)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachableLocations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1ListGlossaryTermsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Lists the GlossaryTerms in the specified parent.
-     *
-     * @param GoogleCloudDataplexV1GlossaryTerm[] $terms
-     */
-    public function setTerms($terms)
-    {
-    }
-    /**
-     * @return GoogleCloudDataplexV1GlossaryTerm[]
-     */
-    public function getTerms()
-    {
-    }
-    /**
-     * Locations that the service couldn't reach.
-     *
-     * @param string[] $unreachableLocations
-     */
-    public function setUnreachableLocations($unreachableLocations)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachableLocations()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1ListGlossaryTermsResponse extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1ListGlossaryTermsResponse
     {
     }
 }

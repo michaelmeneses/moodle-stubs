@@ -21,243 +21,252 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DeploymentManager;
-
-class DeploymentmanagerResource extends \Google\Collection
-{
-    protected $collection_key = 'warnings';
-    protected $accessControlType = ResourceAccessControl::class;
-    protected $accessControlDataType = '';
-    /**
-     * Output only. The evaluated properties of the resource with references
-     * expanded. Returned as serialized YAML.
-     *
-     * @var string
-     */
-    public $finalProperties;
-    /**
-     * @var string
-     */
-    public $id;
-    /**
-     * Output only. Creation timestamp in RFC3339 text format.
-     *
-     * @var string
-     */
-    public $insertTime;
-    /**
-     * Output only. URL of the manifest representing the current configuration of
-     * this resource.
-     *
-     * @var string
-     */
-    public $manifest;
-    /**
-     * Output only. The name of the resource as it appears in the YAML config.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The current properties of the resource before any references
-     * have been filled in. Returned as serialized YAML.
-     *
-     * @var string
-     */
-    public $properties;
-    /**
-     * Output only. The type of the resource, for example `compute.v1.instance`,
-     * or `cloudfunctions.v1beta1.function`.
-     *
-     * @var string
-     */
-    public $type;
-    protected $updateType = ResourceUpdate::class;
-    protected $updateDataType = '';
-    /**
-     * Output only. Update timestamp in RFC3339 text format.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. The URL of the actual resource.
-     *
-     * @var string
-     */
-    public $url;
-    protected $warningsType = DeploymentmanagerResourceWarnings::class;
-    protected $warningsDataType = 'array';
-    /**
-     * The Access Control Policy set on this resource.
-     *
-     * @param ResourceAccessControl $accessControl
-     */
-    public function setAccessControl(ResourceAccessControl $accessControl)
+namespace Google\Service\DeploymentManager {
+    class DeploymentmanagerResource extends \Google\Collection
     {
+        protected $collection_key = 'warnings';
+        protected $accessControlType = ResourceAccessControl::class;
+        protected $accessControlDataType = '';
+        /**
+         * Output only. The evaluated properties of the resource with references
+         * expanded. Returned as serialized YAML.
+         *
+         * @var string
+         */
+        public $finalProperties;
+        /**
+         * @var string
+         */
+        public $id;
+        /**
+         * Output only. Creation timestamp in RFC3339 text format.
+         *
+         * @var string
+         */
+        public $insertTime;
+        /**
+         * Output only. URL of the manifest representing the current configuration of
+         * this resource.
+         *
+         * @var string
+         */
+        public $manifest;
+        /**
+         * Output only. The name of the resource as it appears in the YAML config.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The current properties of the resource before any references
+         * have been filled in. Returned as serialized YAML.
+         *
+         * @var string
+         */
+        public $properties;
+        /**
+         * Output only. The type of the resource, for example `compute.v1.instance`,
+         * or `cloudfunctions.v1beta1.function`.
+         *
+         * @var string
+         */
+        public $type;
+        protected $updateType = ResourceUpdate::class;
+        protected $updateDataType = '';
+        /**
+         * Output only. Update timestamp in RFC3339 text format.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. The URL of the actual resource.
+         *
+         * @var string
+         */
+        public $url;
+        protected $warningsType = DeploymentmanagerResourceWarnings::class;
+        protected $warningsDataType = 'array';
+        /**
+         * The Access Control Policy set on this resource.
+         *
+         * @param ResourceAccessControl $accessControl
+         */
+        public function setAccessControl(ResourceAccessControl $accessControl)
+        {
+        }
+        /**
+         * @return ResourceAccessControl
+         */
+        public function getAccessControl()
+        {
+        }
+        /**
+         * Output only. The evaluated properties of the resource with references
+         * expanded. Returned as serialized YAML.
+         *
+         * @param string $finalProperties
+         */
+        public function setFinalProperties($finalProperties)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFinalProperties()
+        {
+        }
+        /**
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Output only. Creation timestamp in RFC3339 text format.
+         *
+         * @param string $insertTime
+         */
+        public function setInsertTime($insertTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInsertTime()
+        {
+        }
+        /**
+         * Output only. URL of the manifest representing the current configuration of
+         * this resource.
+         *
+         * @param string $manifest
+         */
+        public function setManifest($manifest)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getManifest()
+        {
+        }
+        /**
+         * Output only. The name of the resource as it appears in the YAML config.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The current properties of the resource before any references
+         * have been filled in. Returned as serialized YAML.
+         *
+         * @param string $properties
+         */
+        public function setProperties($properties)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProperties()
+        {
+        }
+        /**
+         * Output only. The type of the resource, for example `compute.v1.instance`,
+         * or `cloudfunctions.v1beta1.function`.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
+        /**
+         * Output only. If Deployment Manager is currently updating or previewing an
+         * update to this resource, the updated configuration appears here.
+         *
+         * @param ResourceUpdate $update
+         */
+        public function setUpdate(ResourceUpdate $update)
+        {
+        }
+        /**
+         * @return ResourceUpdate
+         */
+        public function getUpdate()
+        {
+        }
+        /**
+         * Output only. Update timestamp in RFC3339 text format.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
+        /**
+         * Output only. The URL of the actual resource.
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
+        /**
+         * Output only. If warning messages are generated during processing of this
+         * resource, this field will be populated.
+         *
+         * @param DeploymentmanagerResourceWarnings[] $warnings
+         */
+        public function setWarnings($warnings)
+        {
+        }
+        /**
+         * @return DeploymentmanagerResourceWarnings[]
+         */
+        public function getWarnings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ResourceAccessControl
+     * Runtime class alias of \Google\Service\DeploymentManager\DeploymentmanagerResource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccessControl()
-    {
-    }
-    /**
-     * Output only. The evaluated properties of the resource with references
-     * expanded. Returned as serialized YAML.
-     *
-     * @param string $finalProperties
-     */
-    public function setFinalProperties($finalProperties)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFinalProperties()
-    {
-    }
-    /**
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Output only. Creation timestamp in RFC3339 text format.
-     *
-     * @param string $insertTime
-     */
-    public function setInsertTime($insertTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInsertTime()
-    {
-    }
-    /**
-     * Output only. URL of the manifest representing the current configuration of
-     * this resource.
-     *
-     * @param string $manifest
-     */
-    public function setManifest($manifest)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getManifest()
-    {
-    }
-    /**
-     * Output only. The name of the resource as it appears in the YAML config.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The current properties of the resource before any references
-     * have been filled in. Returned as serialized YAML.
-     *
-     * @param string $properties
-     */
-    public function setProperties($properties)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProperties()
-    {
-    }
-    /**
-     * Output only. The type of the resource, for example `compute.v1.instance`,
-     * or `cloudfunctions.v1beta1.function`.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
-    {
-    }
-    /**
-     * Output only. If Deployment Manager is currently updating or previewing an
-     * update to this resource, the updated configuration appears here.
-     *
-     * @param ResourceUpdate $update
-     */
-    public function setUpdate(ResourceUpdate $update)
-    {
-    }
-    /**
-     * @return ResourceUpdate
-     */
-    public function getUpdate()
-    {
-    }
-    /**
-     * Output only. Update timestamp in RFC3339 text format.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
-    {
-    }
-    /**
-     * Output only. The URL of the actual resource.
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
-    {
-    }
-    /**
-     * Output only. If warning messages are generated during processing of this
-     * resource, this field will be populated.
-     *
-     * @param DeploymentmanagerResourceWarnings[] $warnings
-     */
-    public function setWarnings($warnings)
-    {
-    }
-    /**
-     * @return DeploymentmanagerResourceWarnings[]
-     */
-    public function getWarnings()
+    class Google_Service_DeploymentManager_DeploymentmanagerResource extends \Google\Service\DeploymentManager\DeploymentmanagerResource
     {
     }
 }

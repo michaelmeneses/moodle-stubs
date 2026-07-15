@@ -21,100 +21,109 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class ResourcePolicyGroupPlacementPolicy extends \Google\Model
-{
-    public const COLLOCATION_COLLOCATED = 'COLLOCATED';
-    public const COLLOCATION_UNSPECIFIED_COLLOCATION = 'UNSPECIFIED_COLLOCATION';
-    /**
-     * The number of availability domains to spread instances across. If two
-     * instances are in different availability domain, they are not in the same
-     * low latency network.
-     *
-     * @var int
-     */
-    public $availabilityDomainCount;
-    /**
-     * Specifies network collocation
-     *
-     * @var string
-     */
-    public $collocation;
-    /**
-     * Specifies the shape of the GPU slice, in slice based GPU families eg. A4X.
-     *
-     * @var string
-     */
-    public $gpuTopology;
-    /**
-     * Number of VMs in this placement group. Google does not recommend that you
-     * use this field unless you use a compact policy and you want your policy to
-     * work only if it contains this exact number of VMs.
-     *
-     * @var int
-     */
-    public $vmCount;
-    /**
-     * The number of availability domains to spread instances across. If two
-     * instances are in different availability domain, they are not in the same
-     * low latency network.
-     *
-     * @param int $availabilityDomainCount
-     */
-    public function setAvailabilityDomainCount($availabilityDomainCount)
+namespace Google\Service\Compute {
+    class ResourcePolicyGroupPlacementPolicy extends \Google\Model
     {
+        public const COLLOCATION_COLLOCATED = 'COLLOCATED';
+        public const COLLOCATION_UNSPECIFIED_COLLOCATION = 'UNSPECIFIED_COLLOCATION';
+        /**
+         * The number of availability domains to spread instances across. If two
+         * instances are in different availability domain, they are not in the same
+         * low latency network.
+         *
+         * @var int
+         */
+        public $availabilityDomainCount;
+        /**
+         * Specifies network collocation
+         *
+         * @var string
+         */
+        public $collocation;
+        /**
+         * Specifies the shape of the GPU slice, in slice based GPU families eg. A4X.
+         *
+         * @var string
+         */
+        public $gpuTopology;
+        /**
+         * Number of VMs in this placement group. Google does not recommend that you
+         * use this field unless you use a compact policy and you want your policy to
+         * work only if it contains this exact number of VMs.
+         *
+         * @var int
+         */
+        public $vmCount;
+        /**
+         * The number of availability domains to spread instances across. If two
+         * instances are in different availability domain, they are not in the same
+         * low latency network.
+         *
+         * @param int $availabilityDomainCount
+         */
+        public function setAvailabilityDomainCount($availabilityDomainCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getAvailabilityDomainCount()
+        {
+        }
+        /**
+         * Specifies network collocation
+         *
+         * Accepted values: COLLOCATED, UNSPECIFIED_COLLOCATION
+         *
+         * @param self::COLLOCATION_* $collocation
+         */
+        public function setCollocation($collocation)
+        {
+        }
+        /**
+         * @return self::COLLOCATION_*
+         */
+        public function getCollocation()
+        {
+        }
+        /**
+         * Specifies the shape of the GPU slice, in slice based GPU families eg. A4X.
+         *
+         * @param string $gpuTopology
+         */
+        public function setGpuTopology($gpuTopology)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGpuTopology()
+        {
+        }
+        /**
+         * Number of VMs in this placement group. Google does not recommend that you
+         * use this field unless you use a compact policy and you want your policy to
+         * work only if it contains this exact number of VMs.
+         *
+         * @param int $vmCount
+         */
+        public function setVmCount($vmCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getVmCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Compute\ResourcePolicyGroupPlacementPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAvailabilityDomainCount()
-    {
-    }
-    /**
-     * Specifies network collocation
-     *
-     * Accepted values: COLLOCATED, UNSPECIFIED_COLLOCATION
-     *
-     * @param self::COLLOCATION_* $collocation
-     */
-    public function setCollocation($collocation)
-    {
-    }
-    /**
-     * @return self::COLLOCATION_*
-     */
-    public function getCollocation()
-    {
-    }
-    /**
-     * Specifies the shape of the GPU slice, in slice based GPU families eg. A4X.
-     *
-     * @param string $gpuTopology
-     */
-    public function setGpuTopology($gpuTopology)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGpuTopology()
-    {
-    }
-    /**
-     * Number of VMs in this placement group. Google does not recommend that you
-     * use this field unless you use a compact policy and you want your policy to
-     * work only if it contains this exact number of VMs.
-     *
-     * @param int $vmCount
-     */
-    public function setVmCount($vmCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getVmCount()
+    class Google_Service_Compute_ResourcePolicyGroupPlacementPolicy extends \Google\Service\Compute\ResourcePolicyGroupPlacementPolicy
     {
     }
 }

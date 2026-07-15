@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class ImageKeyValue extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $icon;
-    /**
-     * @var string
-     */
-    public $iconUrl;
-    protected $onClickType = OnClick::class;
-    protected $onClickDataType = '';
-    /**
-     * @var string
-     */
-    public $text;
-    /**
-     * @param string
-     */
-    public function setIcon($icon)
+namespace Google\Service\CloudSearch {
+    class ImageKeyValue extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $icon;
+        /**
+         * @var string
+         */
+        public $iconUrl;
+        protected $onClickType = OnClick::class;
+        protected $onClickDataType = '';
+        /**
+         * @var string
+         */
+        public $text;
+        /**
+         * @param string
+         */
+        public function setIcon($icon)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIcon()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setIconUrl($iconUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIconUrl()
+        {
+        }
+        /**
+         * @param OnClick
+         */
+        public function setOnClick(OnClick $onClick)
+        {
+        }
+        /**
+         * @return OnClick
+         */
+        public function getOnClick()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\ImageKeyValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIcon()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setIconUrl($iconUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIconUrl()
-    {
-    }
-    /**
-     * @param OnClick
-     */
-    public function setOnClick(OnClick $onClick)
-    {
-    }
-    /**
-     * @return OnClick
-     */
-    public function getOnClick()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
+    class Google_Service_CloudSearch_ImageKeyValue extends \Google\Service\CloudSearch\ImageKeyValue
     {
     }
 }

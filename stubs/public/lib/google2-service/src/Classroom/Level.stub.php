@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Classroom;
-
-class Level extends \Google\Model
-{
-    /**
-     * The description of the level.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * The level ID. On creation, an ID is assigned.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Optional points associated with this level. If set, all levels within the
-     * rubric must specify points and the value must be distinct across all levels
-     * within a single criterion. 0 is distinct from no points.
-     *
-     * @var 
-     */
-    public $points;
-    /**
-     * The title of the level. If the level has no points set, title must be set.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * The description of the level.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\Classroom {
+    class Level extends \Google\Model
     {
+        /**
+         * The description of the level.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * The level ID. On creation, an ID is assigned.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Optional points associated with this level. If set, all levels within the
+         * rubric must specify points and the value must be distinct across all levels
+         * within a single criterion. 0 is distinct from no points.
+         *
+         * @var 
+         */
+        public $points;
+        /**
+         * The title of the level. If the level has no points set, title must be set.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * The description of the level.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * The level ID. On creation, an ID is assigned.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        public function setPoints($points)
+        {
+        }
+        public function getPoints()
+        {
+        }
+        /**
+         * The title of the level. If the level has no points set, title must be set.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Classroom\Level registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * The level ID. On creation, an ID is assigned.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    public function setPoints($points)
-    {
-    }
-    public function getPoints()
-    {
-    }
-    /**
-     * The title of the level. If the level has no points set, title must be set.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_Classroom_Level extends \Google\Service\Classroom\Level
     {
     }
 }

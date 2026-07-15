@@ -21,97 +21,106 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudContentwarehouseV1SearchDocumentsResponseMatchingDocument extends \Google\Collection
-{
-    protected $collection_key = 'matchedTokenPageIndices';
-    protected $documentType = GoogleCloudContentwarehouseV1Document::class;
-    protected $documentDataType = '';
-    /**
-     * Return the 1-based page indices where those pages have one or more matched
-     * tokens.
-     *
-     * @var string[]
-     */
-    public $matchedTokenPageIndices;
-    protected $qaResultType = GoogleCloudContentwarehouseV1QAResult::class;
-    protected $qaResultDataType = '';
-    /**
-     * Contains snippets of text from the document full raw text that most closely
-     * match a search query's keywords, if available. All HTML tags in the
-     * original fields are stripped when returned in this field, and matching
-     * query keywords are enclosed in HTML bold tags. If the question-answering
-     * feature is enabled, this field will instead contain a snippet that answers
-     * the user's natural-language query. No HTML bold tags will be present, and
-     * highlights in the answer snippet can be found in QAResult.highlights.
-     *
-     * @var string
-     */
-    public $searchTextSnippet;
-    /**
-     * Document that matches the specified SearchDocumentsRequest. This document
-     * only contains indexed metadata information.
-     *
-     * @param GoogleCloudContentwarehouseV1Document $document
-     */
-    public function setDocument(GoogleCloudContentwarehouseV1Document $document)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudContentwarehouseV1SearchDocumentsResponseMatchingDocument extends \Google\Collection
     {
+        protected $collection_key = 'matchedTokenPageIndices';
+        protected $documentType = GoogleCloudContentwarehouseV1Document::class;
+        protected $documentDataType = '';
+        /**
+         * Return the 1-based page indices where those pages have one or more matched
+         * tokens.
+         *
+         * @var string[]
+         */
+        public $matchedTokenPageIndices;
+        protected $qaResultType = GoogleCloudContentwarehouseV1QAResult::class;
+        protected $qaResultDataType = '';
+        /**
+         * Contains snippets of text from the document full raw text that most closely
+         * match a search query's keywords, if available. All HTML tags in the
+         * original fields are stripped when returned in this field, and matching
+         * query keywords are enclosed in HTML bold tags. If the question-answering
+         * feature is enabled, this field will instead contain a snippet that answers
+         * the user's natural-language query. No HTML bold tags will be present, and
+         * highlights in the answer snippet can be found in QAResult.highlights.
+         *
+         * @var string
+         */
+        public $searchTextSnippet;
+        /**
+         * Document that matches the specified SearchDocumentsRequest. This document
+         * only contains indexed metadata information.
+         *
+         * @param GoogleCloudContentwarehouseV1Document $document
+         */
+        public function setDocument(GoogleCloudContentwarehouseV1Document $document)
+        {
+        }
+        /**
+         * @return GoogleCloudContentwarehouseV1Document
+         */
+        public function getDocument()
+        {
+        }
+        /**
+         * Return the 1-based page indices where those pages have one or more matched
+         * tokens.
+         *
+         * @param string[] $matchedTokenPageIndices
+         */
+        public function setMatchedTokenPageIndices($matchedTokenPageIndices)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMatchedTokenPageIndices()
+        {
+        }
+        /**
+         * Experimental. Additional result info if the question-answering feature is
+         * enabled.
+         *
+         * @param GoogleCloudContentwarehouseV1QAResult $qaResult
+         */
+        public function setQaResult(GoogleCloudContentwarehouseV1QAResult $qaResult)
+        {
+        }
+        /**
+         * @return GoogleCloudContentwarehouseV1QAResult
+         */
+        public function getQaResult()
+        {
+        }
+        /**
+         * Contains snippets of text from the document full raw text that most closely
+         * match a search query's keywords, if available. All HTML tags in the
+         * original fields are stripped when returned in this field, and matching
+         * query keywords are enclosed in HTML bold tags. If the question-answering
+         * feature is enabled, this field will instead contain a snippet that answers
+         * the user's natural-language query. No HTML bold tags will be present, and
+         * highlights in the answer snippet can be found in QAResult.highlights.
+         *
+         * @param string $searchTextSnippet
+         */
+        public function setSearchTextSnippet($searchTextSnippet)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSearchTextSnippet()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudContentwarehouseV1Document
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1SearchDocumentsResponseMatchingDocument registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDocument()
-    {
-    }
-    /**
-     * Return the 1-based page indices where those pages have one or more matched
-     * tokens.
-     *
-     * @param string[] $matchedTokenPageIndices
-     */
-    public function setMatchedTokenPageIndices($matchedTokenPageIndices)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getMatchedTokenPageIndices()
-    {
-    }
-    /**
-     * Experimental. Additional result info if the question-answering feature is
-     * enabled.
-     *
-     * @param GoogleCloudContentwarehouseV1QAResult $qaResult
-     */
-    public function setQaResult(GoogleCloudContentwarehouseV1QAResult $qaResult)
-    {
-    }
-    /**
-     * @return GoogleCloudContentwarehouseV1QAResult
-     */
-    public function getQaResult()
-    {
-    }
-    /**
-     * Contains snippets of text from the document full raw text that most closely
-     * match a search query's keywords, if available. All HTML tags in the
-     * original fields are stripped when returned in this field, and matching
-     * query keywords are enclosed in HTML bold tags. If the question-answering
-     * feature is enabled, this field will instead contain a snippet that answers
-     * the user's natural-language query. No HTML bold tags will be present, and
-     * highlights in the answer snippet can be found in QAResult.highlights.
-     *
-     * @param string $searchTextSnippet
-     */
-    public function setSearchTextSnippet($searchTextSnippet)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSearchTextSnippet()
+    class Google_Service_Contentwarehouse_GoogleCloudContentwarehouseV1SearchDocumentsResponseMatchingDocument extends \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1SearchDocumentsResponseMatchingDocument
     {
     }
 }

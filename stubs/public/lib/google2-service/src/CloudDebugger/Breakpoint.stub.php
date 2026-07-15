@@ -21,287 +21,296 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDebugger;
-
-class Breakpoint extends \Google\Collection
-{
-    protected $collection_key = 'variableTable';
-    /**
-     * @var string
-     */
-    public $action;
-    /**
-     * @var string
-     */
-    public $canaryExpireTime;
-    /**
-     * @var string
-     */
-    public $condition;
-    /**
-     * @var string
-     */
-    public $createTime;
-    protected $evaluatedExpressionsType = Variable::class;
-    protected $evaluatedExpressionsDataType = 'array';
-    /**
-     * @var string[]
-     */
-    public $expressions;
-    /**
-     * @var string
-     */
-    public $finalTime;
-    /**
-     * @var string
-     */
-    public $id;
-    /**
-     * @var bool
-     */
-    public $isFinalState;
-    /**
-     * @var string[]
-     */
-    public $labels;
-    protected $locationType = SourceLocation::class;
-    protected $locationDataType = '';
-    /**
-     * @var string
-     */
-    public $logLevel;
-    /**
-     * @var string
-     */
-    public $logMessageFormat;
-    protected $stackFramesType = StackFrame::class;
-    protected $stackFramesDataType = 'array';
-    /**
-     * @var string
-     */
-    public $state;
-    protected $statusType = StatusMessage::class;
-    protected $statusDataType = '';
-    /**
-     * @var string
-     */
-    public $userEmail;
-    protected $variableTableType = Variable::class;
-    protected $variableTableDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setAction($action)
+namespace Google\Service\CloudDebugger {
+    class Breakpoint extends \Google\Collection
     {
+        protected $collection_key = 'variableTable';
+        /**
+         * @var string
+         */
+        public $action;
+        /**
+         * @var string
+         */
+        public $canaryExpireTime;
+        /**
+         * @var string
+         */
+        public $condition;
+        /**
+         * @var string
+         */
+        public $createTime;
+        protected $evaluatedExpressionsType = Variable::class;
+        protected $evaluatedExpressionsDataType = 'array';
+        /**
+         * @var string[]
+         */
+        public $expressions;
+        /**
+         * @var string
+         */
+        public $finalTime;
+        /**
+         * @var string
+         */
+        public $id;
+        /**
+         * @var bool
+         */
+        public $isFinalState;
+        /**
+         * @var string[]
+         */
+        public $labels;
+        protected $locationType = SourceLocation::class;
+        protected $locationDataType = '';
+        /**
+         * @var string
+         */
+        public $logLevel;
+        /**
+         * @var string
+         */
+        public $logMessageFormat;
+        protected $stackFramesType = StackFrame::class;
+        protected $stackFramesDataType = 'array';
+        /**
+         * @var string
+         */
+        public $state;
+        protected $statusType = StatusMessage::class;
+        protected $statusDataType = '';
+        /**
+         * @var string
+         */
+        public $userEmail;
+        protected $variableTableType = Variable::class;
+        protected $variableTableDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setAction($action)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAction()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCanaryExpireTime($canaryExpireTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCanaryExpireTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCondition($condition)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCondition()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * @param Variable[]
+         */
+        public function setEvaluatedExpressions($evaluatedExpressions)
+        {
+        }
+        /**
+         * @return Variable[]
+         */
+        public function getEvaluatedExpressions()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setExpressions($expressions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getExpressions()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setFinalTime($finalTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFinalTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setIsFinalState($isFinalState)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsFinalState()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * @param SourceLocation
+         */
+        public function setLocation(SourceLocation $location)
+        {
+        }
+        /**
+         * @return SourceLocation
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLogLevel($logLevel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLogLevel()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLogMessageFormat($logMessageFormat)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLogMessageFormat()
+        {
+        }
+        /**
+         * @param StackFrame[]
+         */
+        public function setStackFrames($stackFrames)
+        {
+        }
+        /**
+         * @return StackFrame[]
+         */
+        public function getStackFrames()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getState()
+        {
+        }
+        /**
+         * @param StatusMessage
+         */
+        public function setStatus(StatusMessage $status)
+        {
+        }
+        /**
+         * @return StatusMessage
+         */
+        public function getStatus()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUserEmail($userEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserEmail()
+        {
+        }
+        /**
+         * @param Variable[]
+         */
+        public function setVariableTable($variableTable)
+        {
+        }
+        /**
+         * @return Variable[]
+         */
+        public function getVariableTable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDebugger\Breakpoint registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAction()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCanaryExpireTime($canaryExpireTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCanaryExpireTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCondition($condition)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCondition()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * @param Variable[]
-     */
-    public function setEvaluatedExpressions($evaluatedExpressions)
-    {
-    }
-    /**
-     * @return Variable[]
-     */
-    public function getEvaluatedExpressions()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setExpressions($expressions)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getExpressions()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setFinalTime($finalTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFinalTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setIsFinalState($isFinalState)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsFinalState()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * @param SourceLocation
-     */
-    public function setLocation(SourceLocation $location)
-    {
-    }
-    /**
-     * @return SourceLocation
-     */
-    public function getLocation()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLogLevel($logLevel)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLogLevel()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLogMessageFormat($logMessageFormat)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLogMessageFormat()
-    {
-    }
-    /**
-     * @param StackFrame[]
-     */
-    public function setStackFrames($stackFrames)
-    {
-    }
-    /**
-     * @return StackFrame[]
-     */
-    public function getStackFrames()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getState()
-    {
-    }
-    /**
-     * @param StatusMessage
-     */
-    public function setStatus(StatusMessage $status)
-    {
-    }
-    /**
-     * @return StatusMessage
-     */
-    public function getStatus()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUserEmail($userEmail)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserEmail()
-    {
-    }
-    /**
-     * @param Variable[]
-     */
-    public function setVariableTable($variableTable)
-    {
-    }
-    /**
-     * @return Variable[]
-     */
-    public function getVariableTable()
+    class Google_Service_CloudDebugger_Breakpoint extends \Google\Service\CloudDebugger\Breakpoint
     {
     }
 }

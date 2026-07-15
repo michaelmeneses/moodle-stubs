@@ -21,108 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class OverlayPosition extends \Google\Model
-{
-    protected $anchorCellType = GridCoordinate::class;
-    protected $anchorCellDataType = '';
-    /**
-     * The height of the object, in pixels. Defaults to 371.
-     *
-     * @var int
-     */
-    public $heightPixels;
-    /**
-     * The horizontal offset, in pixels, that the object is offset from the anchor
-     * cell.
-     *
-     * @var int
-     */
-    public $offsetXPixels;
-    /**
-     * The vertical offset, in pixels, that the object is offset from the anchor
-     * cell.
-     *
-     * @var int
-     */
-    public $offsetYPixels;
-    /**
-     * The width of the object, in pixels. Defaults to 600.
-     *
-     * @var int
-     */
-    public $widthPixels;
-    /**
-     * The cell the object is anchored to.
-     *
-     * @param GridCoordinate $anchorCell
-     */
-    public function setAnchorCell(GridCoordinate $anchorCell)
+namespace Google\Service\Sheets {
+    class OverlayPosition extends \Google\Model
     {
+        protected $anchorCellType = GridCoordinate::class;
+        protected $anchorCellDataType = '';
+        /**
+         * The height of the object, in pixels. Defaults to 371.
+         *
+         * @var int
+         */
+        public $heightPixels;
+        /**
+         * The horizontal offset, in pixels, that the object is offset from the anchor
+         * cell.
+         *
+         * @var int
+         */
+        public $offsetXPixels;
+        /**
+         * The vertical offset, in pixels, that the object is offset from the anchor
+         * cell.
+         *
+         * @var int
+         */
+        public $offsetYPixels;
+        /**
+         * The width of the object, in pixels. Defaults to 600.
+         *
+         * @var int
+         */
+        public $widthPixels;
+        /**
+         * The cell the object is anchored to.
+         *
+         * @param GridCoordinate $anchorCell
+         */
+        public function setAnchorCell(GridCoordinate $anchorCell)
+        {
+        }
+        /**
+         * @return GridCoordinate
+         */
+        public function getAnchorCell()
+        {
+        }
+        /**
+         * The height of the object, in pixels. Defaults to 371.
+         *
+         * @param int $heightPixels
+         */
+        public function setHeightPixels($heightPixels)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getHeightPixels()
+        {
+        }
+        /**
+         * The horizontal offset, in pixels, that the object is offset from the anchor
+         * cell.
+         *
+         * @param int $offsetXPixels
+         */
+        public function setOffsetXPixels($offsetXPixels)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getOffsetXPixels()
+        {
+        }
+        /**
+         * The vertical offset, in pixels, that the object is offset from the anchor
+         * cell.
+         *
+         * @param int $offsetYPixels
+         */
+        public function setOffsetYPixels($offsetYPixels)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getOffsetYPixels()
+        {
+        }
+        /**
+         * The width of the object, in pixels. Defaults to 600.
+         *
+         * @param int $widthPixels
+         */
+        public function setWidthPixels($widthPixels)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getWidthPixels()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GridCoordinate
+     * Runtime class alias of \Google\Service\Sheets\OverlayPosition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnchorCell()
-    {
-    }
-    /**
-     * The height of the object, in pixels. Defaults to 371.
-     *
-     * @param int $heightPixels
-     */
-    public function setHeightPixels($heightPixels)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getHeightPixels()
-    {
-    }
-    /**
-     * The horizontal offset, in pixels, that the object is offset from the anchor
-     * cell.
-     *
-     * @param int $offsetXPixels
-     */
-    public function setOffsetXPixels($offsetXPixels)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getOffsetXPixels()
-    {
-    }
-    /**
-     * The vertical offset, in pixels, that the object is offset from the anchor
-     * cell.
-     *
-     * @param int $offsetYPixels
-     */
-    public function setOffsetYPixels($offsetYPixels)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getOffsetYPixels()
-    {
-    }
-    /**
-     * The width of the object, in pixels. Defaults to 600.
-     *
-     * @param int $widthPixels
-     */
-    public function setWidthPixels($widthPixels)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getWidthPixels()
+    class Google_Service_Sheets_OverlayPosition extends \Google\Service\Sheets\OverlayPosition
     {
     }
 }

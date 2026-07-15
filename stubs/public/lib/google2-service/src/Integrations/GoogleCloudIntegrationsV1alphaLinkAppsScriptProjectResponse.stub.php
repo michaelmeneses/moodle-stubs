@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaLinkAppsScriptProjectResponse extends \Google\Model
-{
-    /**
-     * The id of the linked Apps Script project.
-     *
-     * @var string
-     */
-    public $scriptId;
-    /**
-     * The id of the linked Apps Script project.
-     *
-     * @param string $scriptId
-     */
-    public function setScriptId($scriptId)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaLinkAppsScriptProjectResponse extends \Google\Model
     {
+        /**
+         * The id of the linked Apps Script project.
+         *
+         * @var string
+         */
+        public $scriptId;
+        /**
+         * The id of the linked Apps Script project.
+         *
+         * @param string $scriptId
+         */
+        public function setScriptId($scriptId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScriptId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaLinkAppsScriptProjectResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getScriptId()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaLinkAppsScriptProjectResponse extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaLinkAppsScriptProjectResponse
     {
     }
 }

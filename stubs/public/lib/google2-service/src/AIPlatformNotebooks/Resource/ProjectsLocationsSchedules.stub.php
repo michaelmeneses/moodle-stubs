@@ -21,84 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AIPlatformNotebooks\Resource;
-
-/**
- * The "schedules" collection of methods.
- * Typical usage is:
- *  <code>
- *   $notebooksService = new Google\Service\AIPlatformNotebooks(...);
- *   $schedules = $notebooksService->projects_locations_schedules;
- *  </code>
- */
-class ProjectsLocationsSchedules extends \Google\Service\Resource
-{
+namespace Google\Service\AIPlatformNotebooks\Resource {
+    use Google\Service\AIPlatformNotebooks\ListSchedulesResponse;
+    use Google\Service\AIPlatformNotebooks\Operation;
+    use Google\Service\AIPlatformNotebooks\Schedule;
+    use Google\Service\AIPlatformNotebooks\TriggerScheduleRequest;
     /**
-     * Creates a new Scheduled Notebook in a given project and location.
-     * (schedules.create)
-     *
-     * @param string $parent Required. Format:
-     * `parent=projects/{project_id}/locations/{location}`
-     * @param Schedule $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string scheduleId Required. User-defined unique ID of this
-     * schedule.
-     * @return Operation
+     * The "schedules" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $notebooksService = new Google\Service\AIPlatformNotebooks(...);
+     *   $schedules = $notebooksService->projects_locations_schedules;
+     *  </code>
      */
-    public function create($parent, Schedule $postBody, $optParams = [])
+    class ProjectsLocationsSchedules extends \Google\Service\Resource
     {
+        /**
+         * Creates a new Scheduled Notebook in a given project and location.
+         * (schedules.create)
+         *
+         * @param string $parent Required. Format:
+         * `parent=projects/{project_id}/locations/{location}`
+         * @param Schedule $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string scheduleId Required. User-defined unique ID of this
+         * schedule.
+         * @return Operation
+         */
+        public function create($parent, Schedule $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes schedule and all underlying jobs (schedules.delete)
+         *
+         * @param string $name Required. Format:
+         * `projects/{project_id}/locations/{location}/schedules/{schedule_id}`
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets details of schedule (schedules.get)
+         *
+         * @param string $name Required. Format:
+         * `projects/{project_id}/locations/{location}/schedules/{schedule_id}`
+         * @param array $optParams Optional parameters.
+         * @return Schedule
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists schedules in a given project and location.
+         * (schedules.listProjectsLocationsSchedules)
+         *
+         * @param string $parent Required. Format:
+         * `parent=projects/{project_id}/locations/{location}`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Filter applied to resulting schedules.
+         * @opt_param string orderBy Field to order results by.
+         * @opt_param int pageSize Maximum return size of the list call.
+         * @opt_param string pageToken A previous returned page token that can be used
+         * to continue listing from the last result.
+         * @return ListSchedulesResponse
+         */
+        public function listProjectsLocationsSchedules($parent, $optParams = [])
+        {
+        }
+        /**
+         * Triggers execution of an existing schedule. (schedules.trigger)
+         *
+         * @param string $name Required. Format:
+         * `parent=projects/{project_id}/locations/{location}/schedules/{schedule_id}`
+         * @param TriggerScheduleRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         */
+        public function trigger($name, TriggerScheduleRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes schedule and all underlying jobs (schedules.delete)
-     *
-     * @param string $name Required. Format:
-     * `projects/{project_id}/locations/{location}/schedules/{schedule_id}`
-     * @param array $optParams Optional parameters.
-     * @return Operation
+     * Runtime class alias of \Google\Service\AIPlatformNotebooks\Resource\ProjectsLocationsSchedules registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets details of schedule (schedules.get)
-     *
-     * @param string $name Required. Format:
-     * `projects/{project_id}/locations/{location}/schedules/{schedule_id}`
-     * @param array $optParams Optional parameters.
-     * @return Schedule
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists schedules in a given project and location.
-     * (schedules.listProjectsLocationsSchedules)
-     *
-     * @param string $parent Required. Format:
-     * `parent=projects/{project_id}/locations/{location}`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Filter applied to resulting schedules.
-     * @opt_param string orderBy Field to order results by.
-     * @opt_param int pageSize Maximum return size of the list call.
-     * @opt_param string pageToken A previous returned page token that can be used
-     * to continue listing from the last result.
-     * @return ListSchedulesResponse
-     */
-    public function listProjectsLocationsSchedules($parent, $optParams = [])
-    {
-    }
-    /**
-     * Triggers execution of an existing schedule. (schedules.trigger)
-     *
-     * @param string $name Required. Format:
-     * `parent=projects/{project_id}/locations/{location}/schedules/{schedule_id}`
-     * @param TriggerScheduleRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     */
-    public function trigger($name, TriggerScheduleRequest $postBody, $optParams = [])
+    class Google_Service_AIPlatformNotebooks_Resource_ProjectsLocationsSchedules extends \Google\Service\AIPlatformNotebooks\Resource\ProjectsLocationsSchedules
     {
     }
 }

@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsData;
-
-class V1betaAudienceRow extends \Google\Collection
-{
-    protected $collection_key = 'dimensionValues';
-    protected $dimensionValuesType = V1betaAudienceDimensionValue::class;
-    protected $dimensionValuesDataType = 'array';
-    /**
-     * Each dimension value attribute for an audience user. One dimension value
-     * will be added for each dimension column requested.
-     *
-     * @param V1betaAudienceDimensionValue[] $dimensionValues
-     */
-    public function setDimensionValues($dimensionValues)
+namespace Google\Service\AnalyticsData {
+    class V1betaAudienceRow extends \Google\Collection
     {
+        protected $collection_key = 'dimensionValues';
+        protected $dimensionValuesType = V1betaAudienceDimensionValue::class;
+        protected $dimensionValuesDataType = 'array';
+        /**
+         * Each dimension value attribute for an audience user. One dimension value
+         * will be added for each dimension column requested.
+         *
+         * @param V1betaAudienceDimensionValue[] $dimensionValues
+         */
+        public function setDimensionValues($dimensionValues)
+        {
+        }
+        /**
+         * @return V1betaAudienceDimensionValue[]
+         */
+        public function getDimensionValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return V1betaAudienceDimensionValue[]
+     * Runtime class alias of \Google\Service\AnalyticsData\V1betaAudienceRow registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDimensionValues()
+    class Google_Service_AnalyticsData_V1betaAudienceRow extends \Google\Service\AnalyticsData\V1betaAudienceRow
     {
     }
 }

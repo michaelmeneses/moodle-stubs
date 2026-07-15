@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class ExecutorPeakMetricsDistributions extends \Google\Collection
-{
-    protected $collection_key = 'quantiles';
-    protected $executorMetricsType = ExecutorMetrics::class;
-    protected $executorMetricsDataType = 'array';
-    public $quantiles;
+namespace Google\Service\Dataproc {
+    class ExecutorPeakMetricsDistributions extends \Google\Collection
+    {
+        protected $collection_key = 'quantiles';
+        protected $executorMetricsType = ExecutorMetrics::class;
+        protected $executorMetricsDataType = 'array';
+        public $quantiles;
+        /**
+         * @param ExecutorMetrics[] $executorMetrics
+         */
+        public function setExecutorMetrics($executorMetrics)
+        {
+        }
+        /**
+         * @return ExecutorMetrics[]
+         */
+        public function getExecutorMetrics()
+        {
+        }
+        public function setQuantiles($quantiles)
+        {
+        }
+        public function getQuantiles()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @param ExecutorMetrics[] $executorMetrics
+     * Runtime class alias of \Google\Service\Dataproc\ExecutorPeakMetricsDistributions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setExecutorMetrics($executorMetrics)
-    {
-    }
-    /**
-     * @return ExecutorMetrics[]
-     */
-    public function getExecutorMetrics()
-    {
-    }
-    public function setQuantiles($quantiles)
-    {
-    }
-    public function getQuantiles()
+    class Google_Service_Dataproc_ExecutorPeakMetricsDistributions extends \Google\Service\Dataproc\ExecutorPeakMetricsDistributions
     {
     }
 }

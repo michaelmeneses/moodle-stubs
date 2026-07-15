@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OracleDatabase;
-
-class ListPluggableDatabasesResponse extends \Google\Collection
-{
-    protected $collection_key = 'pluggableDatabases';
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $pluggableDatabasesType = PluggableDatabase::class;
-    protected $pluggableDatabasesDataType = 'array';
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\OracleDatabase {
+    class ListPluggableDatabasesResponse extends \Google\Collection
     {
+        protected $collection_key = 'pluggableDatabases';
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $pluggableDatabasesType = PluggableDatabase::class;
+        protected $pluggableDatabasesDataType = 'array';
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of PluggableDatabases.
+         *
+         * @param PluggableDatabase[] $pluggableDatabases
+         */
+        public function setPluggableDatabases($pluggableDatabases)
+        {
+        }
+        /**
+         * @return PluggableDatabase[]
+         */
+        public function getPluggableDatabases()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OracleDatabase\ListPluggableDatabasesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of PluggableDatabases.
-     *
-     * @param PluggableDatabase[] $pluggableDatabases
-     */
-    public function setPluggableDatabases($pluggableDatabases)
-    {
-    }
-    /**
-     * @return PluggableDatabase[]
-     */
-    public function getPluggableDatabases()
+    class Google_Service_OracleDatabase_ListPluggableDatabasesResponse extends \Google\Service\OracleDatabase\ListPluggableDatabasesResponse
     {
     }
 }

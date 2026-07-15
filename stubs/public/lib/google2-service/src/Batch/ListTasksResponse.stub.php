@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Batch;
-
-class ListTasksResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    /**
-     * Next page token.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $tasksType = Task::class;
-    protected $tasksDataType = 'array';
-    /**
-     * Locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * Next page token.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Batch {
+    class ListTasksResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        /**
+         * Next page token.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $tasksType = Task::class;
+        protected $tasksDataType = 'array';
+        /**
+         * Locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * Next page token.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Tasks.
+         *
+         * @param Task[] $tasks
+         */
+        public function setTasks($tasks)
+        {
+        }
+        /**
+         * @return Task[]
+         */
+        public function getTasks()
+        {
+        }
+        /**
+         * Locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Batch\ListTasksResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Tasks.
-     *
-     * @param Task[] $tasks
-     */
-    public function setTasks($tasks)
-    {
-    }
-    /**
-     * @return Task[]
-     */
-    public function getTasks()
-    {
-    }
-    /**
-     * Locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_Batch_ListTasksResponse extends \Google\Service\Batch\ListTasksResponse
     {
     }
 }

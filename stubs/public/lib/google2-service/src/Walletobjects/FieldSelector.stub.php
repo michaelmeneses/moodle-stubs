@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class FieldSelector extends \Google\Collection
-{
-    protected $collection_key = 'fields';
-    protected $fieldsType = FieldReference::class;
-    protected $fieldsDataType = 'array';
-    /**
-     * If more than one reference is supplied, then the first one that references
-     * a non-empty field will be displayed.
-     *
-     * @param FieldReference[] $fields
-     */
-    public function setFields($fields)
+namespace Google\Service\Walletobjects {
+    class FieldSelector extends \Google\Collection
     {
+        protected $collection_key = 'fields';
+        protected $fieldsType = FieldReference::class;
+        protected $fieldsDataType = 'array';
+        /**
+         * If more than one reference is supplied, then the first one that references
+         * a non-empty field will be displayed.
+         *
+         * @param FieldReference[] $fields
+         */
+        public function setFields($fields)
+        {
+        }
+        /**
+         * @return FieldReference[]
+         */
+        public function getFields()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FieldReference[]
+     * Runtime class alias of \Google\Service\Walletobjects\FieldSelector registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFields()
+    class Google_Service_Walletobjects_FieldSelector extends \Google\Service\Walletobjects\FieldSelector
     {
     }
 }

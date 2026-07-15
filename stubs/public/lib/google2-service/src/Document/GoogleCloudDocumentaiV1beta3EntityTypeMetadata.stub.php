@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1beta3EntityTypeMetadata extends \Google\Model
-{
-    /**
-     * Whether the entity type should be considered inactive.
-     *
-     * @var bool
-     */
-    public $inactive;
-    /**
-     * Whether the entity type should be considered inactive.
-     *
-     * @param bool $inactive
-     */
-    public function setInactive($inactive)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1beta3EntityTypeMetadata extends \Google\Model
     {
+        /**
+         * Whether the entity type should be considered inactive.
+         *
+         * @var bool
+         */
+        public $inactive;
+        /**
+         * Whether the entity type should be considered inactive.
+         *
+         * @param bool $inactive
+         */
+        public function setInactive($inactive)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getInactive()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1beta3EntityTypeMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInactive()
+    class Google_Service_Document_GoogleCloudDocumentaiV1beta3EntityTypeMetadata extends \Google\Service\Document\GoogleCloudDocumentaiV1beta3EntityTypeMetadata
     {
     }
 }

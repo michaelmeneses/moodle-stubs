@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSStructStats extends \Google\Model
-{
-    protected $commonStatsType = XPSCommonStats::class;
-    protected $commonStatsDataType = '';
-    protected $fieldStatsType = XPSDataStats::class;
-    protected $fieldStatsDataType = 'map';
-    /**
-     * @param XPSCommonStats $commonStats
-     */
-    public function setCommonStats(XPSCommonStats $commonStats)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSStructStats extends \Google\Model
     {
+        protected $commonStatsType = XPSCommonStats::class;
+        protected $commonStatsDataType = '';
+        protected $fieldStatsType = XPSDataStats::class;
+        protected $fieldStatsDataType = 'map';
+        /**
+         * @param XPSCommonStats $commonStats
+         */
+        public function setCommonStats(XPSCommonStats $commonStats)
+        {
+        }
+        /**
+         * @return XPSCommonStats
+         */
+        public function getCommonStats()
+        {
+        }
+        /**
+         * Map from a field name of the struct to data stats aggregated over series of
+         * all data in that field across all the structs.
+         *
+         * @param XPSDataStats[] $fieldStats
+         */
+        public function setFieldStats($fieldStats)
+        {
+        }
+        /**
+         * @return XPSDataStats[]
+         */
+        public function getFieldStats()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return XPSCommonStats
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSStructStats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCommonStats()
-    {
-    }
-    /**
-     * Map from a field name of the struct to data stats aggregated over series of
-     * all data in that field across all the structs.
-     *
-     * @param XPSDataStats[] $fieldStats
-     */
-    public function setFieldStats($fieldStats)
-    {
-    }
-    /**
-     * @return XPSDataStats[]
-     */
-    public function getFieldStats()
+    class Google_Service_CloudNaturalLanguage_XPSStructStats extends \Google\Service\CloudNaturalLanguage\XPSStructStats
     {
     }
 }

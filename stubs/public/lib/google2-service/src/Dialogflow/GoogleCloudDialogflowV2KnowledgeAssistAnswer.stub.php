@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2KnowledgeAssistAnswer extends \Google\Model
-{
-    /**
-     * The name of the answer record. Format: `projects//locations//answer
-     * Records/`.
-     *
-     * @var string
-     */
-    public $answerRecord;
-    protected $suggestedQueryType = GoogleCloudDialogflowV2KnowledgeAssistAnswerSuggestedQuery::class;
-    protected $suggestedQueryDataType = '';
-    protected $suggestedQueryAnswerType = GoogleCloudDialogflowV2KnowledgeAssistAnswerKnowledgeAnswer::class;
-    protected $suggestedQueryAnswerDataType = '';
-    /**
-     * The name of the answer record. Format: `projects//locations//answer
-     * Records/`.
-     *
-     * @param string $answerRecord
-     */
-    public function setAnswerRecord($answerRecord)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2KnowledgeAssistAnswer extends \Google\Model
     {
+        /**
+         * The name of the answer record. Format: `projects//locations//answer
+         * Records/`.
+         *
+         * @var string
+         */
+        public $answerRecord;
+        protected $suggestedQueryType = GoogleCloudDialogflowV2KnowledgeAssistAnswerSuggestedQuery::class;
+        protected $suggestedQueryDataType = '';
+        protected $suggestedQueryAnswerType = GoogleCloudDialogflowV2KnowledgeAssistAnswerKnowledgeAnswer::class;
+        protected $suggestedQueryAnswerDataType = '';
+        /**
+         * The name of the answer record. Format: `projects//locations//answer
+         * Records/`.
+         *
+         * @param string $answerRecord
+         */
+        public function setAnswerRecord($answerRecord)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnswerRecord()
+        {
+        }
+        /**
+         * The query suggested based on the context. Suggestion is made only if it is
+         * different from the previous suggestion.
+         *
+         * @param GoogleCloudDialogflowV2KnowledgeAssistAnswerSuggestedQuery $suggestedQuery
+         */
+        public function setSuggestedQuery(GoogleCloudDialogflowV2KnowledgeAssistAnswerSuggestedQuery $suggestedQuery)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2KnowledgeAssistAnswerSuggestedQuery
+         */
+        public function getSuggestedQuery()
+        {
+        }
+        /**
+         * The answer generated for the suggested query. Whether or not an answer is
+         * generated depends on how confident we are about the generated query.
+         *
+         * @param GoogleCloudDialogflowV2KnowledgeAssistAnswerKnowledgeAnswer $suggestedQueryAnswer
+         */
+        public function setSuggestedQueryAnswer(GoogleCloudDialogflowV2KnowledgeAssistAnswerKnowledgeAnswer $suggestedQueryAnswer)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2KnowledgeAssistAnswerKnowledgeAnswer
+         */
+        public function getSuggestedQueryAnswer()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2KnowledgeAssistAnswer registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnswerRecord()
-    {
-    }
-    /**
-     * The query suggested based on the context. Suggestion is made only if it is
-     * different from the previous suggestion.
-     *
-     * @param GoogleCloudDialogflowV2KnowledgeAssistAnswerSuggestedQuery $suggestedQuery
-     */
-    public function setSuggestedQuery(GoogleCloudDialogflowV2KnowledgeAssistAnswerSuggestedQuery $suggestedQuery)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowV2KnowledgeAssistAnswerSuggestedQuery
-     */
-    public function getSuggestedQuery()
-    {
-    }
-    /**
-     * The answer generated for the suggested query. Whether or not an answer is
-     * generated depends on how confident we are about the generated query.
-     *
-     * @param GoogleCloudDialogflowV2KnowledgeAssistAnswerKnowledgeAnswer $suggestedQueryAnswer
-     */
-    public function setSuggestedQueryAnswer(GoogleCloudDialogflowV2KnowledgeAssistAnswerKnowledgeAnswer $suggestedQueryAnswer)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowV2KnowledgeAssistAnswerKnowledgeAnswer
-     */
-    public function getSuggestedQueryAnswer()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2KnowledgeAssistAnswer extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2KnowledgeAssistAnswer
     {
     }
 }

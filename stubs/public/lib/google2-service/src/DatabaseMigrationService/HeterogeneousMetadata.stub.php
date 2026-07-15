@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class HeterogeneousMetadata extends \Google\Model
-{
-    /**
-     * The number of unsupported events.
-     *
-     * @var string
-     */
-    public $unsupportedEventsCount;
-    /**
-     * The number of unsupported events.
-     *
-     * @param string $unsupportedEventsCount
-     */
-    public function setUnsupportedEventsCount($unsupportedEventsCount)
+namespace Google\Service\DatabaseMigrationService {
+    class HeterogeneousMetadata extends \Google\Model
     {
+        /**
+         * The number of unsupported events.
+         *
+         * @var string
+         */
+        public $unsupportedEventsCount;
+        /**
+         * The number of unsupported events.
+         *
+         * @param string $unsupportedEventsCount
+         */
+        public function setUnsupportedEventsCount($unsupportedEventsCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUnsupportedEventsCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\HeterogeneousMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUnsupportedEventsCount()
+    class Google_Service_DatabaseMigrationService_HeterogeneousMetadata extends \Google\Service\DatabaseMigrationService\HeterogeneousMetadata
     {
     }
 }

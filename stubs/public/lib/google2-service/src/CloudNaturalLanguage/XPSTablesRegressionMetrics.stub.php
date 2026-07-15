@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSTablesRegressionMetrics extends \Google\Collection
-{
-    protected $collection_key = 'regressionMetricsEntries';
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSTablesRegressionMetrics extends \Google\Collection
+    {
+        protected $collection_key = 'regressionMetricsEntries';
+        /**
+         * Mean absolute error.
+         *
+         * @var 
+         */
+        public $meanAbsoluteError;
+        /**
+         * Mean absolute percentage error, only set if all of the target column's
+         * values are positive.
+         *
+         * @var 
+         */
+        public $meanAbsolutePercentageError;
+        /**
+         * R squared.
+         *
+         * @var 
+         */
+        public $rSquared;
+        protected $regressionMetricsEntriesType = XPSRegressionMetricsEntry::class;
+        protected $regressionMetricsEntriesDataType = 'array';
+        /**
+         * Root mean squared error.
+         *
+         * @var 
+         */
+        public $rootMeanSquaredError;
+        /**
+         * Root mean squared log error.
+         *
+         * @var 
+         */
+        public $rootMeanSquaredLogError;
+        public function setMeanAbsoluteError($meanAbsoluteError)
+        {
+        }
+        public function getMeanAbsoluteError()
+        {
+        }
+        public function setMeanAbsolutePercentageError($meanAbsolutePercentageError)
+        {
+        }
+        public function getMeanAbsolutePercentageError()
+        {
+        }
+        public function setRSquared($rSquared)
+        {
+        }
+        public function getRSquared()
+        {
+        }
+        /**
+         * A list of actual versus predicted points for the model being evaluated.
+         *
+         * @param XPSRegressionMetricsEntry[] $regressionMetricsEntries
+         */
+        public function setRegressionMetricsEntries($regressionMetricsEntries)
+        {
+        }
+        /**
+         * @return XPSRegressionMetricsEntry[]
+         */
+        public function getRegressionMetricsEntries()
+        {
+        }
+        public function setRootMeanSquaredError($rootMeanSquaredError)
+        {
+        }
+        public function getRootMeanSquaredError()
+        {
+        }
+        public function setRootMeanSquaredLogError($rootMeanSquaredLogError)
+        {
+        }
+        public function getRootMeanSquaredLogError()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * Mean absolute error.
-     *
-     * @var 
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSTablesRegressionMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public $meanAbsoluteError;
-    /**
-     * Mean absolute percentage error, only set if all of the target column's
-     * values are positive.
-     *
-     * @var 
-     */
-    public $meanAbsolutePercentageError;
-    /**
-     * R squared.
-     *
-     * @var 
-     */
-    public $rSquared;
-    protected $regressionMetricsEntriesType = XPSRegressionMetricsEntry::class;
-    protected $regressionMetricsEntriesDataType = 'array';
-    /**
-     * Root mean squared error.
-     *
-     * @var 
-     */
-    public $rootMeanSquaredError;
-    /**
-     * Root mean squared log error.
-     *
-     * @var 
-     */
-    public $rootMeanSquaredLogError;
-    public function setMeanAbsoluteError($meanAbsoluteError)
-    {
-    }
-    public function getMeanAbsoluteError()
-    {
-    }
-    public function setMeanAbsolutePercentageError($meanAbsolutePercentageError)
-    {
-    }
-    public function getMeanAbsolutePercentageError()
-    {
-    }
-    public function setRSquared($rSquared)
-    {
-    }
-    public function getRSquared()
-    {
-    }
-    /**
-     * A list of actual versus predicted points for the model being evaluated.
-     *
-     * @param XPSRegressionMetricsEntry[] $regressionMetricsEntries
-     */
-    public function setRegressionMetricsEntries($regressionMetricsEntries)
-    {
-    }
-    /**
-     * @return XPSRegressionMetricsEntry[]
-     */
-    public function getRegressionMetricsEntries()
-    {
-    }
-    public function setRootMeanSquaredError($rootMeanSquaredError)
-    {
-    }
-    public function getRootMeanSquaredError()
-    {
-    }
-    public function setRootMeanSquaredLogError($rootMeanSquaredLogError)
-    {
-    }
-    public function getRootMeanSquaredLogError()
+    class Google_Service_CloudNaturalLanguage_XPSTablesRegressionMetrics extends \Google\Service\CloudNaturalLanguage\XPSTablesRegressionMetrics
     {
     }
 }

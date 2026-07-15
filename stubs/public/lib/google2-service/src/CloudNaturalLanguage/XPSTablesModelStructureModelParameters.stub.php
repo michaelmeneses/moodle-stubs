@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSTablesModelStructureModelParameters extends \Google\Collection
-{
-    protected $collection_key = 'hyperparameters';
-    protected $hyperparametersType = XPSTablesModelStructureModelParametersParameter::class;
-    protected $hyperparametersDataType = 'array';
-    /**
-     * @param XPSTablesModelStructureModelParametersParameter[] $hyperparameters
-     */
-    public function setHyperparameters($hyperparameters)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSTablesModelStructureModelParameters extends \Google\Collection
     {
+        protected $collection_key = 'hyperparameters';
+        protected $hyperparametersType = XPSTablesModelStructureModelParametersParameter::class;
+        protected $hyperparametersDataType = 'array';
+        /**
+         * @param XPSTablesModelStructureModelParametersParameter[] $hyperparameters
+         */
+        public function setHyperparameters($hyperparameters)
+        {
+        }
+        /**
+         * @return XPSTablesModelStructureModelParametersParameter[]
+         */
+        public function getHyperparameters()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return XPSTablesModelStructureModelParametersParameter[]
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSTablesModelStructureModelParameters registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHyperparameters()
+    class Google_Service_CloudNaturalLanguage_XPSTablesModelStructureModelParameters extends \Google\Service\CloudNaturalLanguage\XPSTablesModelStructureModelParameters
     {
     }
 }

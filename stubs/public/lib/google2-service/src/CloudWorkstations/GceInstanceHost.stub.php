@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudWorkstations;
-
-class GceInstanceHost extends \Google\Model
-{
-    /**
-     * Optional. Output only. The ID of the Compute Engine instance.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Optional. Output only. The name of the Compute Engine instance.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optional. Output only. The zone of the Compute Engine instance.
-     *
-     * @var string
-     */
-    public $zone;
-    /**
-     * Optional. Output only. The ID of the Compute Engine instance.
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\CloudWorkstations {
+    class GceInstanceHost extends \Google\Model
     {
+        /**
+         * Optional. Output only. The ID of the Compute Engine instance.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Optional. Output only. The name of the Compute Engine instance.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optional. Output only. The zone of the Compute Engine instance.
+         *
+         * @var string
+         */
+        public $zone;
+        /**
+         * Optional. Output only. The ID of the Compute Engine instance.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Optional. Output only. The name of the Compute Engine instance.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. Output only. The zone of the Compute Engine instance.
+         *
+         * @param string $zone
+         */
+        public function setZone($zone)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getZone()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudWorkstations\GceInstanceHost registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * Optional. Output only. The name of the Compute Engine instance.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. Output only. The zone of the Compute Engine instance.
-     *
-     * @param string $zone
-     */
-    public function setZone($zone)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getZone()
+    class Google_Service_CloudWorkstations_GceInstanceHost extends \Google\Service\CloudWorkstations\GceInstanceHost
     {
     }
 }

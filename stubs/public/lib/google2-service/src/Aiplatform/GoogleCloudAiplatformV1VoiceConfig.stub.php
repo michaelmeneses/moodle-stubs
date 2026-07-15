@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1VoiceConfig extends \Google\Model
-{
-    protected $prebuiltVoiceConfigType = GoogleCloudAiplatformV1PrebuiltVoiceConfig::class;
-    protected $prebuiltVoiceConfigDataType = '';
-    protected $replicatedVoiceConfigType = GoogleCloudAiplatformV1ReplicatedVoiceConfig::class;
-    protected $replicatedVoiceConfigDataType = '';
-    /**
-     * The configuration for a prebuilt voice.
-     *
-     * @param GoogleCloudAiplatformV1PrebuiltVoiceConfig $prebuiltVoiceConfig
-     */
-    public function setPrebuiltVoiceConfig(GoogleCloudAiplatformV1PrebuiltVoiceConfig $prebuiltVoiceConfig)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1VoiceConfig extends \Google\Model
     {
+        protected $prebuiltVoiceConfigType = GoogleCloudAiplatformV1PrebuiltVoiceConfig::class;
+        protected $prebuiltVoiceConfigDataType = '';
+        protected $replicatedVoiceConfigType = GoogleCloudAiplatformV1ReplicatedVoiceConfig::class;
+        protected $replicatedVoiceConfigDataType = '';
+        /**
+         * The configuration for a prebuilt voice.
+         *
+         * @param GoogleCloudAiplatformV1PrebuiltVoiceConfig $prebuiltVoiceConfig
+         */
+        public function setPrebuiltVoiceConfig(GoogleCloudAiplatformV1PrebuiltVoiceConfig $prebuiltVoiceConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1PrebuiltVoiceConfig
+         */
+        public function getPrebuiltVoiceConfig()
+        {
+        }
+        /**
+         * Optional. The configuration for a replicated voice. This enables users to
+         * replicate a voice from an audio sample.
+         *
+         * @param GoogleCloudAiplatformV1ReplicatedVoiceConfig $replicatedVoiceConfig
+         */
+        public function setReplicatedVoiceConfig(GoogleCloudAiplatformV1ReplicatedVoiceConfig $replicatedVoiceConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ReplicatedVoiceConfig
+         */
+        public function getReplicatedVoiceConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1PrebuiltVoiceConfig
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1VoiceConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPrebuiltVoiceConfig()
-    {
-    }
-    /**
-     * Optional. The configuration for a replicated voice. This enables users to
-     * replicate a voice from an audio sample.
-     *
-     * @param GoogleCloudAiplatformV1ReplicatedVoiceConfig $replicatedVoiceConfig
-     */
-    public function setReplicatedVoiceConfig(GoogleCloudAiplatformV1ReplicatedVoiceConfig $replicatedVoiceConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1ReplicatedVoiceConfig
-     */
-    public function getReplicatedVoiceConfig()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1VoiceConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1VoiceConfig
     {
     }
 }

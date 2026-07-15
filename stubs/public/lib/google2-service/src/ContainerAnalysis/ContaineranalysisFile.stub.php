@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class ContaineranalysisFile extends \Google\Model
-{
-    /**
-     * @var string[]
-     */
-    public $digest;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @param string[] $digest
-     */
-    public function setDigest($digest)
+namespace Google\Service\ContainerAnalysis {
+    class ContaineranalysisFile extends \Google\Model
     {
+        /**
+         * @var string[]
+         */
+        public $digest;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @param string[] $digest
+         */
+        public function setDigest($digest)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDigest()
+        {
+        }
+        /**
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\ContainerAnalysis\ContaineranalysisFile registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDigest()
-    {
-    }
-    /**
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_ContainerAnalysis_ContaineranalysisFile extends \Google\Service\ContainerAnalysis\ContaineranalysisFile
     {
     }
 }

@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class DirectorySiteSettings extends \Google\Model
-{
-    /**
-     * Whether this directory site has disabled active view creatives.
-     *
-     * @var bool
-     */
-    public $activeViewOptOut;
-    protected $dfpSettingsType = DfpSettings::class;
-    protected $dfpSettingsDataType = '';
-    /**
-     * Whether this site accepts in-stream video ads.
-     *
-     * @var bool
-     */
-    public $instreamVideoPlacementAccepted;
-    /**
-     * Whether this site accepts interstitial ads.
-     *
-     * @var bool
-     */
-    public $interstitialPlacementAccepted;
-    /**
-     * Whether this directory site has disabled active view creatives.
-     *
-     * @param bool $activeViewOptOut
-     */
-    public function setActiveViewOptOut($activeViewOptOut)
+namespace Google\Service\Dfareporting {
+    class DirectorySiteSettings extends \Google\Model
     {
+        /**
+         * Whether this directory site has disabled active view creatives.
+         *
+         * @var bool
+         */
+        public $activeViewOptOut;
+        protected $dfpSettingsType = DfpSettings::class;
+        protected $dfpSettingsDataType = '';
+        /**
+         * Whether this site accepts in-stream video ads.
+         *
+         * @var bool
+         */
+        public $instreamVideoPlacementAccepted;
+        /**
+         * Whether this site accepts interstitial ads.
+         *
+         * @var bool
+         */
+        public $interstitialPlacementAccepted;
+        /**
+         * Whether this directory site has disabled active view creatives.
+         *
+         * @param bool $activeViewOptOut
+         */
+        public function setActiveViewOptOut($activeViewOptOut)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getActiveViewOptOut()
+        {
+        }
+        /**
+         * Directory site Ad Manager settings.
+         *
+         * @param DfpSettings $dfpSettings
+         */
+        public function setDfpSettings(DfpSettings $dfpSettings)
+        {
+        }
+        /**
+         * @return DfpSettings
+         */
+        public function getDfpSettings()
+        {
+        }
+        /**
+         * Whether this site accepts in-stream video ads.
+         *
+         * @param bool $instreamVideoPlacementAccepted
+         */
+        public function setInstreamVideoPlacementAccepted($instreamVideoPlacementAccepted)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getInstreamVideoPlacementAccepted()
+        {
+        }
+        /**
+         * Whether this site accepts interstitial ads.
+         *
+         * @param bool $interstitialPlacementAccepted
+         */
+        public function setInterstitialPlacementAccepted($interstitialPlacementAccepted)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getInterstitialPlacementAccepted()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Dfareporting\DirectorySiteSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActiveViewOptOut()
-    {
-    }
-    /**
-     * Directory site Ad Manager settings.
-     *
-     * @param DfpSettings $dfpSettings
-     */
-    public function setDfpSettings(DfpSettings $dfpSettings)
-    {
-    }
-    /**
-     * @return DfpSettings
-     */
-    public function getDfpSettings()
-    {
-    }
-    /**
-     * Whether this site accepts in-stream video ads.
-     *
-     * @param bool $instreamVideoPlacementAccepted
-     */
-    public function setInstreamVideoPlacementAccepted($instreamVideoPlacementAccepted)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getInstreamVideoPlacementAccepted()
-    {
-    }
-    /**
-     * Whether this site accepts interstitial ads.
-     *
-     * @param bool $interstitialPlacementAccepted
-     */
-    public function setInterstitialPlacementAccepted($interstitialPlacementAccepted)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getInterstitialPlacementAccepted()
+    class Google_Service_Dfareporting_DirectorySiteSettings extends \Google\Service\Dfareporting\DirectorySiteSettings
     {
     }
 }

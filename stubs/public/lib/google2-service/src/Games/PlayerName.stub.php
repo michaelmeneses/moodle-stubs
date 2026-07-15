@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Games;
-
-class PlayerName extends \Google\Model
-{
-    /**
-     * The family name of this player. In some places, this is known as the last
-     * name.
-     *
-     * @var string
-     */
-    public $familyName;
-    /**
-     * The given name of this player. In some places, this is known as the first
-     * name.
-     *
-     * @var string
-     */
-    public $givenName;
-    /**
-     * The family name of this player. In some places, this is known as the last
-     * name.
-     *
-     * @param string $familyName
-     */
-    public function setFamilyName($familyName)
+namespace Google\Service\Games {
+    class PlayerName extends \Google\Model
     {
+        /**
+         * The family name of this player. In some places, this is known as the last
+         * name.
+         *
+         * @var string
+         */
+        public $familyName;
+        /**
+         * The given name of this player. In some places, this is known as the first
+         * name.
+         *
+         * @var string
+         */
+        public $givenName;
+        /**
+         * The family name of this player. In some places, this is known as the last
+         * name.
+         *
+         * @param string $familyName
+         */
+        public function setFamilyName($familyName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFamilyName()
+        {
+        }
+        /**
+         * The given name of this player. In some places, this is known as the first
+         * name.
+         *
+         * @param string $givenName
+         */
+        public function setGivenName($givenName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGivenName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Games\PlayerName registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFamilyName()
-    {
-    }
-    /**
-     * The given name of this player. In some places, this is known as the first
-     * name.
-     *
-     * @param string $givenName
-     */
-    public function setGivenName($givenName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGivenName()
+    class Google_Service_Games_PlayerName extends \Google\Service\Games\PlayerName
     {
     }
 }

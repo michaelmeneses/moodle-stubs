@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Speech;
-
-class SpeechAdaptation extends \Google\Collection
-{
-    protected $collection_key = 'phraseSets';
-    protected $abnfGrammarType = ABNFGrammar::class;
-    protected $abnfGrammarDataType = '';
-    protected $customClassesType = CustomClass::class;
-    protected $customClassesDataType = 'array';
-    /**
-     * A collection of phrase set resource names to use.
-     *
-     * @var string[]
-     */
-    public $phraseSetReferences;
-    protected $phraseSetsType = PhraseSet::class;
-    protected $phraseSetsDataType = 'array';
-    /**
-     * Augmented Backus-Naur form (ABNF) is a standardized grammar notation
-     * comprised by a set of derivation rules. See specifications:
-     * https://www.w3.org/TR/speech-grammar
-     *
-     * @param ABNFGrammar $abnfGrammar
-     */
-    public function setAbnfGrammar(ABNFGrammar $abnfGrammar)
+namespace Google\Service\Speech {
+    class SpeechAdaptation extends \Google\Collection
     {
+        protected $collection_key = 'phraseSets';
+        protected $abnfGrammarType = ABNFGrammar::class;
+        protected $abnfGrammarDataType = '';
+        protected $customClassesType = CustomClass::class;
+        protected $customClassesDataType = 'array';
+        /**
+         * A collection of phrase set resource names to use.
+         *
+         * @var string[]
+         */
+        public $phraseSetReferences;
+        protected $phraseSetsType = PhraseSet::class;
+        protected $phraseSetsDataType = 'array';
+        /**
+         * Augmented Backus-Naur form (ABNF) is a standardized grammar notation
+         * comprised by a set of derivation rules. See specifications:
+         * https://www.w3.org/TR/speech-grammar
+         *
+         * @param ABNFGrammar $abnfGrammar
+         */
+        public function setAbnfGrammar(ABNFGrammar $abnfGrammar)
+        {
+        }
+        /**
+         * @return ABNFGrammar
+         */
+        public function getAbnfGrammar()
+        {
+        }
+        /**
+         * A collection of custom classes. To specify the classes inline, leave the
+         * class' `name` blank and fill in the rest of its fields, giving it a unique
+         * `custom_class_id`. Refer to the inline defined class in phrase hints by its
+         * `custom_class_id`.
+         *
+         * @param CustomClass[] $customClasses
+         */
+        public function setCustomClasses($customClasses)
+        {
+        }
+        /**
+         * @return CustomClass[]
+         */
+        public function getCustomClasses()
+        {
+        }
+        /**
+         * A collection of phrase set resource names to use.
+         *
+         * @param string[] $phraseSetReferences
+         */
+        public function setPhraseSetReferences($phraseSetReferences)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPhraseSetReferences()
+        {
+        }
+        /**
+         * A collection of phrase sets. To specify the hints inline, leave the phrase
+         * set's `name` blank and fill in the rest of its fields. Any phrase set can
+         * use any custom class.
+         *
+         * @param PhraseSet[] $phraseSets
+         */
+        public function setPhraseSets($phraseSets)
+        {
+        }
+        /**
+         * @return PhraseSet[]
+         */
+        public function getPhraseSets()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ABNFGrammar
+     * Runtime class alias of \Google\Service\Speech\SpeechAdaptation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAbnfGrammar()
-    {
-    }
-    /**
-     * A collection of custom classes. To specify the classes inline, leave the
-     * class' `name` blank and fill in the rest of its fields, giving it a unique
-     * `custom_class_id`. Refer to the inline defined class in phrase hints by its
-     * `custom_class_id`.
-     *
-     * @param CustomClass[] $customClasses
-     */
-    public function setCustomClasses($customClasses)
-    {
-    }
-    /**
-     * @return CustomClass[]
-     */
-    public function getCustomClasses()
-    {
-    }
-    /**
-     * A collection of phrase set resource names to use.
-     *
-     * @param string[] $phraseSetReferences
-     */
-    public function setPhraseSetReferences($phraseSetReferences)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPhraseSetReferences()
-    {
-    }
-    /**
-     * A collection of phrase sets. To specify the hints inline, leave the phrase
-     * set's `name` blank and fill in the rest of its fields. Any phrase set can
-     * use any custom class.
-     *
-     * @param PhraseSet[] $phraseSets
-     */
-    public function setPhraseSets($phraseSets)
-    {
-    }
-    /**
-     * @return PhraseSet[]
-     */
-    public function getPhraseSets()
+    class Google_Service_Speech_SpeechAdaptation extends \Google\Service\Speech\SpeechAdaptation
     {
     }
 }

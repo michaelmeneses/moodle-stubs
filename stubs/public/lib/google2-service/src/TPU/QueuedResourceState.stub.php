@@ -21,254 +21,263 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TPU;
-
-class QueuedResourceState extends \Google\Model
-{
-    /**
-     * State of the QueuedResource request is not known/set.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * The QueuedResource request has been received. We're still working on
-     * determining if we will be able to honor this request.
-     */
-    public const STATE_CREATING = 'CREATING';
-    /**
-     * The QueuedResource request has passed initial validation/admission control
-     * and has been persisted in the queue.
-     */
-    public const STATE_ACCEPTED = 'ACCEPTED';
-    /**
-     * The QueuedResource request has been selected. The associated resources are
-     * currently being provisioned (or very soon will begin provisioning).
-     */
-    public const STATE_PROVISIONING = 'PROVISIONING';
-    /**
-     * The request could not be completed. This may be due to some late-discovered
-     * problem with the request itself, or due to unavailability of resources
-     * within the constraints of the request (e.g., the 'valid until' start timing
-     * constraint expired).
-     */
-    public const STATE_FAILED = 'FAILED';
-    /**
-     * The QueuedResource is being deleted.
-     */
-    public const STATE_DELETING = 'DELETING';
-    /**
-     * The resources specified in the QueuedResource request have been provisioned
-     * and are ready for use by the end-user/consumer.
-     */
-    public const STATE_ACTIVE = 'ACTIVE';
-    /**
-     * The resources specified in the QueuedResource request are being deleted.
-     * This may have been initiated by the user, or the Cloud TPU service. Inspect
-     * the state data for more details.
-     */
-    public const STATE_SUSPENDING = 'SUSPENDING';
-    /**
-     * The resources specified in the QueuedResource request have been deleted.
-     */
-    public const STATE_SUSPENDED = 'SUSPENDED';
-    /**
-     * The QueuedResource request has passed initial validation and has been
-     * persisted in the queue. It will remain in this state until there are
-     * sufficient free resources to begin provisioning your request. Wait times
-     * will vary significantly depending on demand levels. When demand is high,
-     * not all requests can be immediately provisioned. If you need more reliable
-     * obtainability of TPUs consider purchasing a reservation. To put a limit on
-     * how long you are willing to wait, use [timing
-     * constraints](https://cloud.google.com/tpu/docs/queued-
-     * resources#request_a_queued_resource_before_a_specified_time).
-     */
-    public const STATE_WAITING_FOR_RESOURCES = 'WAITING_FOR_RESOURCES';
-    /**
-     * The state initiator is unspecified.
-     */
-    public const STATE_INITIATOR_STATE_INITIATOR_UNSPECIFIED = 'STATE_INITIATOR_UNSPECIFIED';
-    /**
-     * The current QueuedResource state was initiated by the user.
-     */
-    public const STATE_INITIATOR_USER = 'USER';
-    /**
-     * The current QueuedResource state was initiated by the service.
-     */
-    public const STATE_INITIATOR_SERVICE = 'SERVICE';
-    protected $acceptedDataType = AcceptedData::class;
-    protected $acceptedDataDataType = '';
-    protected $activeDataType = ActiveData::class;
-    protected $activeDataDataType = '';
-    protected $creatingDataType = CreatingData::class;
-    protected $creatingDataDataType = '';
-    protected $deletingDataType = DeletingData::class;
-    protected $deletingDataDataType = '';
-    protected $failedDataType = FailedData::class;
-    protected $failedDataDataType = '';
-    protected $provisioningDataType = ProvisioningData::class;
-    protected $provisioningDataDataType = '';
-    /**
-     * Output only. State of the QueuedResource request.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Output only. The initiator of the QueuedResources's current state. Used to
-     * indicate whether the SUSPENDING/SUSPENDED state was initiated by the user
-     * or the service.
-     *
-     * @var string
-     */
-    public $stateInitiator;
-    protected $suspendedDataType = SuspendedData::class;
-    protected $suspendedDataDataType = '';
-    protected $suspendingDataType = SuspendingData::class;
-    protected $suspendingDataDataType = '';
-    /**
-     * Output only. Further data for the accepted state.
-     *
-     * @param AcceptedData $acceptedData
-     */
-    public function setAcceptedData(AcceptedData $acceptedData)
+namespace Google\Service\TPU {
+    class QueuedResourceState extends \Google\Model
     {
+        /**
+         * State of the QueuedResource request is not known/set.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * The QueuedResource request has been received. We're still working on
+         * determining if we will be able to honor this request.
+         */
+        public const STATE_CREATING = 'CREATING';
+        /**
+         * The QueuedResource request has passed initial validation/admission control
+         * and has been persisted in the queue.
+         */
+        public const STATE_ACCEPTED = 'ACCEPTED';
+        /**
+         * The QueuedResource request has been selected. The associated resources are
+         * currently being provisioned (or very soon will begin provisioning).
+         */
+        public const STATE_PROVISIONING = 'PROVISIONING';
+        /**
+         * The request could not be completed. This may be due to some late-discovered
+         * problem with the request itself, or due to unavailability of resources
+         * within the constraints of the request (e.g., the 'valid until' start timing
+         * constraint expired).
+         */
+        public const STATE_FAILED = 'FAILED';
+        /**
+         * The QueuedResource is being deleted.
+         */
+        public const STATE_DELETING = 'DELETING';
+        /**
+         * The resources specified in the QueuedResource request have been provisioned
+         * and are ready for use by the end-user/consumer.
+         */
+        public const STATE_ACTIVE = 'ACTIVE';
+        /**
+         * The resources specified in the QueuedResource request are being deleted.
+         * This may have been initiated by the user, or the Cloud TPU service. Inspect
+         * the state data for more details.
+         */
+        public const STATE_SUSPENDING = 'SUSPENDING';
+        /**
+         * The resources specified in the QueuedResource request have been deleted.
+         */
+        public const STATE_SUSPENDED = 'SUSPENDED';
+        /**
+         * The QueuedResource request has passed initial validation and has been
+         * persisted in the queue. It will remain in this state until there are
+         * sufficient free resources to begin provisioning your request. Wait times
+         * will vary significantly depending on demand levels. When demand is high,
+         * not all requests can be immediately provisioned. If you need more reliable
+         * obtainability of TPUs consider purchasing a reservation. To put a limit on
+         * how long you are willing to wait, use [timing
+         * constraints](https://cloud.google.com/tpu/docs/queued-
+         * resources#request_a_queued_resource_before_a_specified_time).
+         */
+        public const STATE_WAITING_FOR_RESOURCES = 'WAITING_FOR_RESOURCES';
+        /**
+         * The state initiator is unspecified.
+         */
+        public const STATE_INITIATOR_STATE_INITIATOR_UNSPECIFIED = 'STATE_INITIATOR_UNSPECIFIED';
+        /**
+         * The current QueuedResource state was initiated by the user.
+         */
+        public const STATE_INITIATOR_USER = 'USER';
+        /**
+         * The current QueuedResource state was initiated by the service.
+         */
+        public const STATE_INITIATOR_SERVICE = 'SERVICE';
+        protected $acceptedDataType = AcceptedData::class;
+        protected $acceptedDataDataType = '';
+        protected $activeDataType = ActiveData::class;
+        protected $activeDataDataType = '';
+        protected $creatingDataType = CreatingData::class;
+        protected $creatingDataDataType = '';
+        protected $deletingDataType = DeletingData::class;
+        protected $deletingDataDataType = '';
+        protected $failedDataType = FailedData::class;
+        protected $failedDataDataType = '';
+        protected $provisioningDataType = ProvisioningData::class;
+        protected $provisioningDataDataType = '';
+        /**
+         * Output only. State of the QueuedResource request.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Output only. The initiator of the QueuedResources's current state. Used to
+         * indicate whether the SUSPENDING/SUSPENDED state was initiated by the user
+         * or the service.
+         *
+         * @var string
+         */
+        public $stateInitiator;
+        protected $suspendedDataType = SuspendedData::class;
+        protected $suspendedDataDataType = '';
+        protected $suspendingDataType = SuspendingData::class;
+        protected $suspendingDataDataType = '';
+        /**
+         * Output only. Further data for the accepted state.
+         *
+         * @param AcceptedData $acceptedData
+         */
+        public function setAcceptedData(AcceptedData $acceptedData)
+        {
+        }
+        /**
+         * @return AcceptedData
+         */
+        public function getAcceptedData()
+        {
+        }
+        /**
+         * Output only. Further data for the active state.
+         *
+         * @param ActiveData $activeData
+         */
+        public function setActiveData(ActiveData $activeData)
+        {
+        }
+        /**
+         * @return ActiveData
+         */
+        public function getActiveData()
+        {
+        }
+        /**
+         * Output only. Further data for the creating state.
+         *
+         * @param CreatingData $creatingData
+         */
+        public function setCreatingData(CreatingData $creatingData)
+        {
+        }
+        /**
+         * @return CreatingData
+         */
+        public function getCreatingData()
+        {
+        }
+        /**
+         * Output only. Further data for the deleting state.
+         *
+         * @param DeletingData $deletingData
+         */
+        public function setDeletingData(DeletingData $deletingData)
+        {
+        }
+        /**
+         * @return DeletingData
+         */
+        public function getDeletingData()
+        {
+        }
+        /**
+         * Output only. Further data for the failed state.
+         *
+         * @param FailedData $failedData
+         */
+        public function setFailedData(FailedData $failedData)
+        {
+        }
+        /**
+         * @return FailedData
+         */
+        public function getFailedData()
+        {
+        }
+        /**
+         * Output only. Further data for the provisioning state.
+         *
+         * @param ProvisioningData $provisioningData
+         */
+        public function setProvisioningData(ProvisioningData $provisioningData)
+        {
+        }
+        /**
+         * @return ProvisioningData
+         */
+        public function getProvisioningData()
+        {
+        }
+        /**
+         * Output only. State of the QueuedResource request.
+         *
+         * Accepted values: STATE_UNSPECIFIED, CREATING, ACCEPTED, PROVISIONING,
+         * FAILED, DELETING, ACTIVE, SUSPENDING, SUSPENDED, WAITING_FOR_RESOURCES
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Output only. The initiator of the QueuedResources's current state. Used to
+         * indicate whether the SUSPENDING/SUSPENDED state was initiated by the user
+         * or the service.
+         *
+         * Accepted values: STATE_INITIATOR_UNSPECIFIED, USER, SERVICE
+         *
+         * @param self::STATE_INITIATOR_* $stateInitiator
+         */
+        public function setStateInitiator($stateInitiator)
+        {
+        }
+        /**
+         * @return self::STATE_INITIATOR_*
+         */
+        public function getStateInitiator()
+        {
+        }
+        /**
+         * Output only. Further data for the suspended state.
+         *
+         * @param SuspendedData $suspendedData
+         */
+        public function setSuspendedData(SuspendedData $suspendedData)
+        {
+        }
+        /**
+         * @return SuspendedData
+         */
+        public function getSuspendedData()
+        {
+        }
+        /**
+         * Output only. Further data for the suspending state.
+         *
+         * @param SuspendingData $suspendingData
+         */
+        public function setSuspendingData(SuspendingData $suspendingData)
+        {
+        }
+        /**
+         * @return SuspendingData
+         */
+        public function getSuspendingData()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AcceptedData
+     * Runtime class alias of \Google\Service\TPU\QueuedResourceState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAcceptedData()
-    {
-    }
-    /**
-     * Output only. Further data for the active state.
-     *
-     * @param ActiveData $activeData
-     */
-    public function setActiveData(ActiveData $activeData)
-    {
-    }
-    /**
-     * @return ActiveData
-     */
-    public function getActiveData()
-    {
-    }
-    /**
-     * Output only. Further data for the creating state.
-     *
-     * @param CreatingData $creatingData
-     */
-    public function setCreatingData(CreatingData $creatingData)
-    {
-    }
-    /**
-     * @return CreatingData
-     */
-    public function getCreatingData()
-    {
-    }
-    /**
-     * Output only. Further data for the deleting state.
-     *
-     * @param DeletingData $deletingData
-     */
-    public function setDeletingData(DeletingData $deletingData)
-    {
-    }
-    /**
-     * @return DeletingData
-     */
-    public function getDeletingData()
-    {
-    }
-    /**
-     * Output only. Further data for the failed state.
-     *
-     * @param FailedData $failedData
-     */
-    public function setFailedData(FailedData $failedData)
-    {
-    }
-    /**
-     * @return FailedData
-     */
-    public function getFailedData()
-    {
-    }
-    /**
-     * Output only. Further data for the provisioning state.
-     *
-     * @param ProvisioningData $provisioningData
-     */
-    public function setProvisioningData(ProvisioningData $provisioningData)
-    {
-    }
-    /**
-     * @return ProvisioningData
-     */
-    public function getProvisioningData()
-    {
-    }
-    /**
-     * Output only. State of the QueuedResource request.
-     *
-     * Accepted values: STATE_UNSPECIFIED, CREATING, ACCEPTED, PROVISIONING,
-     * FAILED, DELETING, ACTIVE, SUSPENDING, SUSPENDED, WAITING_FOR_RESOURCES
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Output only. The initiator of the QueuedResources's current state. Used to
-     * indicate whether the SUSPENDING/SUSPENDED state was initiated by the user
-     * or the service.
-     *
-     * Accepted values: STATE_INITIATOR_UNSPECIFIED, USER, SERVICE
-     *
-     * @param self::STATE_INITIATOR_* $stateInitiator
-     */
-    public function setStateInitiator($stateInitiator)
-    {
-    }
-    /**
-     * @return self::STATE_INITIATOR_*
-     */
-    public function getStateInitiator()
-    {
-    }
-    /**
-     * Output only. Further data for the suspended state.
-     *
-     * @param SuspendedData $suspendedData
-     */
-    public function setSuspendedData(SuspendedData $suspendedData)
-    {
-    }
-    /**
-     * @return SuspendedData
-     */
-    public function getSuspendedData()
-    {
-    }
-    /**
-     * Output only. Further data for the suspending state.
-     *
-     * @param SuspendingData $suspendingData
-     */
-    public function setSuspendingData(SuspendingData $suspendingData)
-    {
-    }
-    /**
-     * @return SuspendingData
-     */
-    public function getSuspendingData()
+    class Google_Service_TPU_QueuedResourceState extends \Google\Service\TPU\QueuedResourceState
     {
     }
 }

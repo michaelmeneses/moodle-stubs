@@ -21,278 +21,287 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1DeveloperApp extends \Google\Collection
-{
-    protected $collection_key = 'scopes';
-    /**
-     * List of API products associated with the developer app.
-     *
-     * @var string[]
-     */
-    public $apiProducts;
-    /**
-     * Developer app family.
-     *
-     * @var string
-     */
-    public $appFamily;
-    /**
-     * ID of the developer app. This ID is not user specified but is automatically
-     * generated on app creation. appId is a UUID.
-     *
-     * @var string
-     */
-    public $appId;
-    protected $attributesType = GoogleCloudApigeeV1Attribute::class;
-    protected $attributesDataType = 'array';
-    /**
-     * Callback URL used by OAuth 2.0 authorization servers to communicate
-     * authorization codes back to developer apps.
-     *
-     * @var string
-     */
-    public $callbackUrl;
-    /**
-     * Output only. Time the developer app was created in milliseconds since
-     * epoch.
-     *
-     * @var string
-     */
-    public $createdAt;
-    protected $credentialsType = GoogleCloudApigeeV1Credential::class;
-    protected $credentialsDataType = 'array';
-    /**
-     * ID of the developer.
-     *
-     * @var string
-     */
-    public $developerId;
-    /**
-     * Expiration time, in milliseconds, for the consumer key that is generated
-     * for the developer app. If not set or left to the default value of `-1`, the
-     * API key never expires. The expiration time can't be updated after it is
-     * set.
-     *
-     * @var string
-     */
-    public $keyExpiresIn;
-    /**
-     * Output only. Time the developer app was modified in milliseconds since
-     * epoch.
-     *
-     * @var string
-     */
-    public $lastModifiedAt;
-    /**
-     * Name of the developer app.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Scopes to apply to the developer app. The specified scopes must already
-     * exist for the API product that you associate with the developer app.
-     *
-     * @var string[]
-     */
-    public $scopes;
-    /**
-     * Status of the credential. Valid values include `approved` or `revoked`.
-     *
-     * @var string
-     */
-    public $status;
-    /**
-     * List of API products associated with the developer app.
-     *
-     * @param string[] $apiProducts
-     */
-    public function setApiProducts($apiProducts)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1DeveloperApp extends \Google\Collection
     {
+        protected $collection_key = 'scopes';
+        /**
+         * List of API products associated with the developer app.
+         *
+         * @var string[]
+         */
+        public $apiProducts;
+        /**
+         * Developer app family.
+         *
+         * @var string
+         */
+        public $appFamily;
+        /**
+         * ID of the developer app. This ID is not user specified but is automatically
+         * generated on app creation. appId is a UUID.
+         *
+         * @var string
+         */
+        public $appId;
+        protected $attributesType = GoogleCloudApigeeV1Attribute::class;
+        protected $attributesDataType = 'array';
+        /**
+         * Callback URL used by OAuth 2.0 authorization servers to communicate
+         * authorization codes back to developer apps.
+         *
+         * @var string
+         */
+        public $callbackUrl;
+        /**
+         * Output only. Time the developer app was created in milliseconds since
+         * epoch.
+         *
+         * @var string
+         */
+        public $createdAt;
+        protected $credentialsType = GoogleCloudApigeeV1Credential::class;
+        protected $credentialsDataType = 'array';
+        /**
+         * ID of the developer.
+         *
+         * @var string
+         */
+        public $developerId;
+        /**
+         * Expiration time, in milliseconds, for the consumer key that is generated
+         * for the developer app. If not set or left to the default value of `-1`, the
+         * API key never expires. The expiration time can't be updated after it is
+         * set.
+         *
+         * @var string
+         */
+        public $keyExpiresIn;
+        /**
+         * Output only. Time the developer app was modified in milliseconds since
+         * epoch.
+         *
+         * @var string
+         */
+        public $lastModifiedAt;
+        /**
+         * Name of the developer app.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Scopes to apply to the developer app. The specified scopes must already
+         * exist for the API product that you associate with the developer app.
+         *
+         * @var string[]
+         */
+        public $scopes;
+        /**
+         * Status of the credential. Valid values include `approved` or `revoked`.
+         *
+         * @var string
+         */
+        public $status;
+        /**
+         * List of API products associated with the developer app.
+         *
+         * @param string[] $apiProducts
+         */
+        public function setApiProducts($apiProducts)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getApiProducts()
+        {
+        }
+        /**
+         * Developer app family.
+         *
+         * @param string $appFamily
+         */
+        public function setAppFamily($appFamily)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAppFamily()
+        {
+        }
+        /**
+         * ID of the developer app. This ID is not user specified but is automatically
+         * generated on app creation. appId is a UUID.
+         *
+         * @param string $appId
+         */
+        public function setAppId($appId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAppId()
+        {
+        }
+        /**
+         * List of attributes for the developer app.
+         *
+         * @param GoogleCloudApigeeV1Attribute[] $attributes
+         */
+        public function setAttributes($attributes)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1Attribute[]
+         */
+        public function getAttributes()
+        {
+        }
+        /**
+         * Callback URL used by OAuth 2.0 authorization servers to communicate
+         * authorization codes back to developer apps.
+         *
+         * @param string $callbackUrl
+         */
+        public function setCallbackUrl($callbackUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCallbackUrl()
+        {
+        }
+        /**
+         * Output only. Time the developer app was created in milliseconds since
+         * epoch.
+         *
+         * @param string $createdAt
+         */
+        public function setCreatedAt($createdAt)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreatedAt()
+        {
+        }
+        /**
+         * Output only. Set of credentials for the developer app consisting of the
+         * consumer key/secret pairs associated with the API products.
+         *
+         * @param GoogleCloudApigeeV1Credential[] $credentials
+         */
+        public function setCredentials($credentials)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1Credential[]
+         */
+        public function getCredentials()
+        {
+        }
+        /**
+         * ID of the developer.
+         *
+         * @param string $developerId
+         */
+        public function setDeveloperId($developerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeveloperId()
+        {
+        }
+        /**
+         * Expiration time, in milliseconds, for the consumer key that is generated
+         * for the developer app. If not set or left to the default value of `-1`, the
+         * API key never expires. The expiration time can't be updated after it is
+         * set.
+         *
+         * @param string $keyExpiresIn
+         */
+        public function setKeyExpiresIn($keyExpiresIn)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKeyExpiresIn()
+        {
+        }
+        /**
+         * Output only. Time the developer app was modified in milliseconds since
+         * epoch.
+         *
+         * @param string $lastModifiedAt
+         */
+        public function setLastModifiedAt($lastModifiedAt)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastModifiedAt()
+        {
+        }
+        /**
+         * Name of the developer app.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Scopes to apply to the developer app. The specified scopes must already
+         * exist for the API product that you associate with the developer app.
+         *
+         * @param string[] $scopes
+         */
+        public function setScopes($scopes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getScopes()
+        {
+        }
+        /**
+         * Status of the credential. Valid values include `approved` or `revoked`.
+         *
+         * @param string $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1DeveloperApp registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiProducts()
-    {
-    }
-    /**
-     * Developer app family.
-     *
-     * @param string $appFamily
-     */
-    public function setAppFamily($appFamily)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAppFamily()
-    {
-    }
-    /**
-     * ID of the developer app. This ID is not user specified but is automatically
-     * generated on app creation. appId is a UUID.
-     *
-     * @param string $appId
-     */
-    public function setAppId($appId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAppId()
-    {
-    }
-    /**
-     * List of attributes for the developer app.
-     *
-     * @param GoogleCloudApigeeV1Attribute[] $attributes
-     */
-    public function setAttributes($attributes)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1Attribute[]
-     */
-    public function getAttributes()
-    {
-    }
-    /**
-     * Callback URL used by OAuth 2.0 authorization servers to communicate
-     * authorization codes back to developer apps.
-     *
-     * @param string $callbackUrl
-     */
-    public function setCallbackUrl($callbackUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCallbackUrl()
-    {
-    }
-    /**
-     * Output only. Time the developer app was created in milliseconds since
-     * epoch.
-     *
-     * @param string $createdAt
-     */
-    public function setCreatedAt($createdAt)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreatedAt()
-    {
-    }
-    /**
-     * Output only. Set of credentials for the developer app consisting of the
-     * consumer key/secret pairs associated with the API products.
-     *
-     * @param GoogleCloudApigeeV1Credential[] $credentials
-     */
-    public function setCredentials($credentials)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1Credential[]
-     */
-    public function getCredentials()
-    {
-    }
-    /**
-     * ID of the developer.
-     *
-     * @param string $developerId
-     */
-    public function setDeveloperId($developerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeveloperId()
-    {
-    }
-    /**
-     * Expiration time, in milliseconds, for the consumer key that is generated
-     * for the developer app. If not set or left to the default value of `-1`, the
-     * API key never expires. The expiration time can't be updated after it is
-     * set.
-     *
-     * @param string $keyExpiresIn
-     */
-    public function setKeyExpiresIn($keyExpiresIn)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKeyExpiresIn()
-    {
-    }
-    /**
-     * Output only. Time the developer app was modified in milliseconds since
-     * epoch.
-     *
-     * @param string $lastModifiedAt
-     */
-    public function setLastModifiedAt($lastModifiedAt)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastModifiedAt()
-    {
-    }
-    /**
-     * Name of the developer app.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Scopes to apply to the developer app. The specified scopes must already
-     * exist for the API product that you associate with the developer app.
-     *
-     * @param string[] $scopes
-     */
-    public function setScopes($scopes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getScopes()
-    {
-    }
-    /**
-     * Status of the credential. Valid values include `approved` or `revoked`.
-     *
-     * @param string $status
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStatus()
+    class Google_Service_Apigee_GoogleCloudApigeeV1DeveloperApp extends \Google\Service\Apigee\GoogleCloudApigeeV1DeveloperApp
     {
     }
 }

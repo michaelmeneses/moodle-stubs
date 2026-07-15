@@ -21,64 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BeyondCorp\Resource;
-
-/**
- * The "clientGateways" collection of methods.
- * Typical usage is:
- *  <code>
- *   $beyondcorpService = new Google\Service\BeyondCorp(...);
- *   $clientGateways = $beyondcorpService->projects_locations_clientGateways;
- *  </code>
- */
-class ProjectsLocationsClientGateways extends \Google\Service\Resource
-{
+namespace Google\Service\BeyondCorp\Resource {
+    use Google\Service\BeyondCorp\GoogleIamV1Policy;
+    use Google\Service\BeyondCorp\GoogleIamV1TestIamPermissionsRequest;
+    use Google\Service\BeyondCorp\GoogleIamV1TestIamPermissionsResponse;
     /**
-     * Gets the access control policy for a resource. Returns an empty policy if the
-     * resource exists and does not have a policy set. (clientGateways.getIamPolicy)
-     *
-     * @param string $resource REQUIRED: The resource for which the policy is being
-     * requested. See [Resource
-     * names](https://cloud.google.com/apis/design/resource_names) for the
-     * appropriate value for this field.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int options.requestedPolicyVersion Optional. The maximum policy
-     * version that will be used to format the policy. Valid values are 0, 1, and 3.
-     * Requests specifying an invalid value will be rejected. Requests for policies
-     * with any conditional role bindings must specify version 3. Policies with no
-     * conditional role bindings may specify any valid value or leave the field
-     * unset. The policy in the response might use the policy version that you
-     * specified, or it might use a lower policy version. For example, if you
-     * specify version 3, but the policy has no conditional role bindings, the
-     * response uses version 1. To learn which resources support conditions in their
-     * IAM policies, see the [IAM
-     * documentation](https://cloud.google.com/iam/help/conditions/resource-
-     * policies).
-     * @return GoogleIamV1Policy
-     * @throws \Google\Service\Exception
+     * The "clientGateways" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $beyondcorpService = new Google\Service\BeyondCorp(...);
+     *   $clientGateways = $beyondcorpService->projects_locations_clientGateways;
+     *  </code>
      */
-    public function getIamPolicy($resource, $optParams = [])
+    class ProjectsLocationsClientGateways extends \Google\Service\Resource
     {
+        /**
+         * Gets the access control policy for a resource. Returns an empty policy if the
+         * resource exists and does not have a policy set. (clientGateways.getIamPolicy)
+         *
+         * @param string $resource REQUIRED: The resource for which the policy is being
+         * requested. See [Resource
+         * names](https://cloud.google.com/apis/design/resource_names) for the
+         * appropriate value for this field.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int options.requestedPolicyVersion Optional. The maximum policy
+         * version that will be used to format the policy. Valid values are 0, 1, and 3.
+         * Requests specifying an invalid value will be rejected. Requests for policies
+         * with any conditional role bindings must specify version 3. Policies with no
+         * conditional role bindings may specify any valid value or leave the field
+         * unset. The policy in the response might use the policy version that you
+         * specified, or it might use a lower policy version. For example, if you
+         * specify version 3, but the policy has no conditional role bindings, the
+         * response uses version 1. To learn which resources support conditions in their
+         * IAM policies, see the [IAM
+         * documentation](https://cloud.google.com/iam/help/conditions/resource-
+         * policies).
+         * @return GoogleIamV1Policy
+         * @throws \Google\Service\Exception
+         */
+        public function getIamPolicy($resource, $optParams = [])
+        {
+        }
+        /**
+         * Returns permissions that a caller has on the specified resource. If the
+         * resource does not exist, this will return an empty set of permissions, not a
+         * `NOT_FOUND` error. Note: This operation is designed to be used for building
+         * permission-aware UIs and command-line tools, not for authorization checking.
+         * This operation may "fail open" without warning.
+         * (clientGateways.testIamPermissions)
+         *
+         * @param string $resource REQUIRED: The resource for which the policy detail is
+         * being requested. See [Resource
+         * names](https://cloud.google.com/apis/design/resource_names) for the
+         * appropriate value for this field.
+         * @param GoogleIamV1TestIamPermissionsRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleIamV1TestIamPermissionsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function testIamPermissions($resource, GoogleIamV1TestIamPermissionsRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Returns permissions that a caller has on the specified resource. If the
-     * resource does not exist, this will return an empty set of permissions, not a
-     * `NOT_FOUND` error. Note: This operation is designed to be used for building
-     * permission-aware UIs and command-line tools, not for authorization checking.
-     * This operation may "fail open" without warning.
-     * (clientGateways.testIamPermissions)
-     *
-     * @param string $resource REQUIRED: The resource for which the policy detail is
-     * being requested. See [Resource
-     * names](https://cloud.google.com/apis/design/resource_names) for the
-     * appropriate value for this field.
-     * @param GoogleIamV1TestIamPermissionsRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleIamV1TestIamPermissionsResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\BeyondCorp\Resource\ProjectsLocationsClientGateways registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function testIamPermissions($resource, GoogleIamV1TestIamPermissionsRequest $postBody, $optParams = [])
+    class Google_Service_BeyondCorp_Resource_ProjectsLocationsClientGateways extends \Google\Service\BeyondCorp\Resource\ProjectsLocationsClientGateways
     {
     }
 }

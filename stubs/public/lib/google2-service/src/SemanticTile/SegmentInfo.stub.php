@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SemanticTile;
-
-class SegmentInfo extends \Google\Model
-{
-    protected $roadInfoType = RoadInfo::class;
-    protected $roadInfoDataType = '';
-    /**
-     * @param RoadInfo
-     */
-    public function setRoadInfo(RoadInfo $roadInfo)
+namespace Google\Service\SemanticTile {
+    class SegmentInfo extends \Google\Model
     {
+        protected $roadInfoType = RoadInfo::class;
+        protected $roadInfoDataType = '';
+        /**
+         * @param RoadInfo
+         */
+        public function setRoadInfo(RoadInfo $roadInfo)
+        {
+        }
+        /**
+         * @return RoadInfo
+         */
+        public function getRoadInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RoadInfo
+     * Runtime class alias of \Google\Service\SemanticTile\SegmentInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRoadInfo()
+    class Google_Service_SemanticTile_SegmentInfo extends \Google\Service\SemanticTile\SegmentInfo
     {
     }
 }

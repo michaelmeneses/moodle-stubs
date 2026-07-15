@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIdentity;
-
-class ModifyMembershipRolesResponse extends \Google\Model
-{
-    protected $membershipType = Membership::class;
-    protected $membershipDataType = '';
-    /**
-     * The `Membership` resource after modifying its `MembershipRole`s.
-     *
-     * @param Membership $membership
-     */
-    public function setMembership(Membership $membership)
+namespace Google\Service\CloudIdentity {
+    class ModifyMembershipRolesResponse extends \Google\Model
     {
+        protected $membershipType = Membership::class;
+        protected $membershipDataType = '';
+        /**
+         * The `Membership` resource after modifying its `MembershipRole`s.
+         *
+         * @param Membership $membership
+         */
+        public function setMembership(Membership $membership)
+        {
+        }
+        /**
+         * @return Membership
+         */
+        public function getMembership()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Membership
+     * Runtime class alias of \Google\Service\CloudIdentity\ModifyMembershipRolesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMembership()
+    class Google_Service_CloudIdentity_ModifyMembershipRolesResponse extends \Google\Service\CloudIdentity\ModifyMembershipRolesResponse
     {
     }
 }

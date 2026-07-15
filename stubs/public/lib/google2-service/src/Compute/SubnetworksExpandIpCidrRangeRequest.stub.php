@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class SubnetworksExpandIpCidrRangeRequest extends \Google\Model
-{
-    /**
-     * The IP (in CIDR format or netmask) of internal addresses that are legal on
-     * this Subnetwork. This range should be disjoint from other subnetworks
-     * within this network. This range can only be larger than (i.e. a superset
-     * of) the range previously defined before the update.
-     *
-     * @var string
-     */
-    public $ipCidrRange;
-    /**
-     * The IP (in CIDR format or netmask) of internal addresses that are legal on
-     * this Subnetwork. This range should be disjoint from other subnetworks
-     * within this network. This range can only be larger than (i.e. a superset
-     * of) the range previously defined before the update.
-     *
-     * @param string $ipCidrRange
-     */
-    public function setIpCidrRange($ipCidrRange)
+namespace Google\Service\Compute {
+    class SubnetworksExpandIpCidrRangeRequest extends \Google\Model
     {
+        /**
+         * The IP (in CIDR format or netmask) of internal addresses that are legal on
+         * this Subnetwork. This range should be disjoint from other subnetworks
+         * within this network. This range can only be larger than (i.e. a superset
+         * of) the range previously defined before the update.
+         *
+         * @var string
+         */
+        public $ipCidrRange;
+        /**
+         * The IP (in CIDR format or netmask) of internal addresses that are legal on
+         * this Subnetwork. This range should be disjoint from other subnetworks
+         * within this network. This range can only be larger than (i.e. a superset
+         * of) the range previously defined before the update.
+         *
+         * @param string $ipCidrRange
+         */
+        public function setIpCidrRange($ipCidrRange)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIpCidrRange()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\SubnetworksExpandIpCidrRangeRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIpCidrRange()
+    class Google_Service_Compute_SubnetworksExpandIpCidrRangeRequest extends \Google\Service\Compute\SubnetworksExpandIpCidrRangeRequest
     {
     }
 }

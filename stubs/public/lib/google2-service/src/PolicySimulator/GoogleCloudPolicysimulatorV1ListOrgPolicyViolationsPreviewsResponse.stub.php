@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PolicySimulator;
-
-class GoogleCloudPolicysimulatorV1ListOrgPolicyViolationsPreviewsResponse extends \Google\Collection
-{
-    protected $collection_key = 'orgPolicyViolationsPreviews';
-    /**
-     * A token that you can use to retrieve the next page of results. If this
-     * field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $orgPolicyViolationsPreviewsType = GoogleCloudPolicysimulatorV1OrgPolicyViolationsPreview::class;
-    protected $orgPolicyViolationsPreviewsDataType = 'array';
-    /**
-     * A token that you can use to retrieve the next page of results. If this
-     * field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\PolicySimulator {
+    class GoogleCloudPolicysimulatorV1ListOrgPolicyViolationsPreviewsResponse extends \Google\Collection
     {
+        protected $collection_key = 'orgPolicyViolationsPreviews';
+        /**
+         * A token that you can use to retrieve the next page of results. If this
+         * field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $orgPolicyViolationsPreviewsType = GoogleCloudPolicysimulatorV1OrgPolicyViolationsPreview::class;
+        protected $orgPolicyViolationsPreviewsDataType = 'array';
+        /**
+         * A token that you can use to retrieve the next page of results. If this
+         * field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of OrgPolicyViolationsPreview
+         *
+         * @param GoogleCloudPolicysimulatorV1OrgPolicyViolationsPreview[] $orgPolicyViolationsPreviews
+         */
+        public function setOrgPolicyViolationsPreviews($orgPolicyViolationsPreviews)
+        {
+        }
+        /**
+         * @return GoogleCloudPolicysimulatorV1OrgPolicyViolationsPreview[]
+         */
+        public function getOrgPolicyViolationsPreviews()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PolicySimulator\GoogleCloudPolicysimulatorV1ListOrgPolicyViolationsPreviewsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of OrgPolicyViolationsPreview
-     *
-     * @param GoogleCloudPolicysimulatorV1OrgPolicyViolationsPreview[] $orgPolicyViolationsPreviews
-     */
-    public function setOrgPolicyViolationsPreviews($orgPolicyViolationsPreviews)
-    {
-    }
-    /**
-     * @return GoogleCloudPolicysimulatorV1OrgPolicyViolationsPreview[]
-     */
-    public function getOrgPolicyViolationsPreviews()
+    class Google_Service_PolicySimulator_GoogleCloudPolicysimulatorV1ListOrgPolicyViolationsPreviewsResponse extends \Google\Service\PolicySimulator\GoogleCloudPolicysimulatorV1ListOrgPolicyViolationsPreviewsResponse
     {
     }
 }

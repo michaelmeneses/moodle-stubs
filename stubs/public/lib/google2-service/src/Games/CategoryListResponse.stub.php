@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Games;
-
-class CategoryListResponse extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    protected $itemsType = Category::class;
-    protected $itemsDataType = 'array';
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#categoryListResponse`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Token corresponding to the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of categories with usage data.
-     *
-     * @param Category[] $items
-     */
-    public function setItems($items)
+namespace Google\Service\Games {
+    class CategoryListResponse extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        protected $itemsType = Category::class;
+        protected $itemsDataType = 'array';
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#categoryListResponse`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Token corresponding to the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of categories with usage data.
+         *
+         * @param Category[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return Category[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#categoryListResponse`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Token corresponding to the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Category[]
+     * Runtime class alias of \Google\Service\Games\CategoryListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItems()
-    {
-    }
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#categoryListResponse`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Token corresponding to the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Games_CategoryListResponse extends \Google\Service\Games\CategoryListResponse
     {
     }
 }

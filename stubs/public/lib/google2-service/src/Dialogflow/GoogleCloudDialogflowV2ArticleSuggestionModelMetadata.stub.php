@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2ArticleSuggestionModelMetadata extends \Google\Model
-{
-    /**
-     * ModelType unspecified.
-     */
-    public const TRAINING_MODEL_TYPE_MODEL_TYPE_UNSPECIFIED = 'MODEL_TYPE_UNSPECIFIED';
-    /**
-     * ModelType smart reply dual encoder model.
-     */
-    public const TRAINING_MODEL_TYPE_SMART_REPLY_DUAL_ENCODER_MODEL = 'SMART_REPLY_DUAL_ENCODER_MODEL';
-    /**
-     * ModelType smart reply bert model.
-     */
-    public const TRAINING_MODEL_TYPE_SMART_REPLY_BERT_MODEL = 'SMART_REPLY_BERT_MODEL';
-    /**
-     * Optional. Type of the article suggestion model. If not provided, model_type
-     * is used.
-     *
-     * @var string
-     */
-    public $trainingModelType;
-    /**
-     * Optional. Type of the article suggestion model. If not provided, model_type
-     * is used.
-     *
-     * Accepted values: MODEL_TYPE_UNSPECIFIED, SMART_REPLY_DUAL_ENCODER_MODEL,
-     * SMART_REPLY_BERT_MODEL
-     *
-     * @param self::TRAINING_MODEL_TYPE_* $trainingModelType
-     */
-    public function setTrainingModelType($trainingModelType)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2ArticleSuggestionModelMetadata extends \Google\Model
     {
+        /**
+         * ModelType unspecified.
+         */
+        public const TRAINING_MODEL_TYPE_MODEL_TYPE_UNSPECIFIED = 'MODEL_TYPE_UNSPECIFIED';
+        /**
+         * ModelType smart reply dual encoder model.
+         */
+        public const TRAINING_MODEL_TYPE_SMART_REPLY_DUAL_ENCODER_MODEL = 'SMART_REPLY_DUAL_ENCODER_MODEL';
+        /**
+         * ModelType smart reply bert model.
+         */
+        public const TRAINING_MODEL_TYPE_SMART_REPLY_BERT_MODEL = 'SMART_REPLY_BERT_MODEL';
+        /**
+         * Optional. Type of the article suggestion model. If not provided, model_type
+         * is used.
+         *
+         * @var string
+         */
+        public $trainingModelType;
+        /**
+         * Optional. Type of the article suggestion model. If not provided, model_type
+         * is used.
+         *
+         * Accepted values: MODEL_TYPE_UNSPECIFIED, SMART_REPLY_DUAL_ENCODER_MODEL,
+         * SMART_REPLY_BERT_MODEL
+         *
+         * @param self::TRAINING_MODEL_TYPE_* $trainingModelType
+         */
+        public function setTrainingModelType($trainingModelType)
+        {
+        }
+        /**
+         * @return self::TRAINING_MODEL_TYPE_*
+         */
+        public function getTrainingModelType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::TRAINING_MODEL_TYPE_*
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2ArticleSuggestionModelMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTrainingModelType()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2ArticleSuggestionModelMetadata extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2ArticleSuggestionModelMetadata
     {
     }
 }

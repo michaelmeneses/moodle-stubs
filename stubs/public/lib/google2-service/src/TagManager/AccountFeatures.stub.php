@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager;
-
-class AccountFeatures extends \Google\Model
-{
-    /**
-     * Whether this Account supports multiple Containers.
-     *
-     * @var bool
-     */
-    public $supportMultipleContainers;
-    /**
-     * Whether this Account supports user permissions managed by GTM.
-     *
-     * @var bool
-     */
-    public $supportUserPermissions;
-    /**
-     * Whether this Account supports multiple Containers.
-     *
-     * @param bool $supportMultipleContainers
-     */
-    public function setSupportMultipleContainers($supportMultipleContainers)
+namespace Google\Service\TagManager {
+    class AccountFeatures extends \Google\Model
     {
+        /**
+         * Whether this Account supports multiple Containers.
+         *
+         * @var bool
+         */
+        public $supportMultipleContainers;
+        /**
+         * Whether this Account supports user permissions managed by GTM.
+         *
+         * @var bool
+         */
+        public $supportUserPermissions;
+        /**
+         * Whether this Account supports multiple Containers.
+         *
+         * @param bool $supportMultipleContainers
+         */
+        public function setSupportMultipleContainers($supportMultipleContainers)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSupportMultipleContainers()
+        {
+        }
+        /**
+         * Whether this Account supports user permissions managed by GTM.
+         *
+         * @param bool $supportUserPermissions
+         */
+        public function setSupportUserPermissions($supportUserPermissions)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSupportUserPermissions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\TagManager\AccountFeatures registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSupportMultipleContainers()
-    {
-    }
-    /**
-     * Whether this Account supports user permissions managed by GTM.
-     *
-     * @param bool $supportUserPermissions
-     */
-    public function setSupportUserPermissions($supportUserPermissions)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSupportUserPermissions()
+    class Google_Service_TagManager_AccountFeatures extends \Google\Service\TagManager\AccountFeatures
     {
     }
 }

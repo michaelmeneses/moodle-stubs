@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class SecurityPolicyRuleMatcherConfig extends \Google\Collection
-{
-    protected $collection_key = 'srcIpRanges';
-    /**
-     * CIDR IP address range. Maximum number of src_ip_ranges allowed is 10.
-     *
-     * @var string[]
-     */
-    public $srcIpRanges;
-    /**
-     * CIDR IP address range. Maximum number of src_ip_ranges allowed is 10.
-     *
-     * @param string[] $srcIpRanges
-     */
-    public function setSrcIpRanges($srcIpRanges)
+namespace Google\Service\Compute {
+    class SecurityPolicyRuleMatcherConfig extends \Google\Collection
     {
+        protected $collection_key = 'srcIpRanges';
+        /**
+         * CIDR IP address range. Maximum number of src_ip_ranges allowed is 10.
+         *
+         * @var string[]
+         */
+        public $srcIpRanges;
+        /**
+         * CIDR IP address range. Maximum number of src_ip_ranges allowed is 10.
+         *
+         * @param string[] $srcIpRanges
+         */
+        public function setSrcIpRanges($srcIpRanges)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSrcIpRanges()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Compute\SecurityPolicyRuleMatcherConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSrcIpRanges()
+    class Google_Service_Compute_SecurityPolicyRuleMatcherConfig extends \Google\Service\Compute\SecurityPolicyRuleMatcherConfig
     {
     }
 }

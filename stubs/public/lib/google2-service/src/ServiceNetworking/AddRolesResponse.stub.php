@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceNetworking;
-
-class AddRolesResponse extends \Google\Collection
-{
-    protected $collection_key = 'policyBinding';
-    protected $policyBindingType = PolicyBinding::class;
-    protected $policyBindingDataType = 'array';
-    /**
-     * Required. List of policy bindings that were added to the shared VPC host
-     * project.
-     *
-     * @param PolicyBinding[] $policyBinding
-     */
-    public function setPolicyBinding($policyBinding)
+namespace Google\Service\ServiceNetworking {
+    class AddRolesResponse extends \Google\Collection
     {
+        protected $collection_key = 'policyBinding';
+        protected $policyBindingType = PolicyBinding::class;
+        protected $policyBindingDataType = 'array';
+        /**
+         * Required. List of policy bindings that were added to the shared VPC host
+         * project.
+         *
+         * @param PolicyBinding[] $policyBinding
+         */
+        public function setPolicyBinding($policyBinding)
+        {
+        }
+        /**
+         * @return PolicyBinding[]
+         */
+        public function getPolicyBinding()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PolicyBinding[]
+     * Runtime class alias of \Google\Service\ServiceNetworking\AddRolesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPolicyBinding()
+    class Google_Service_ServiceNetworking_AddRolesResponse extends \Google\Service\ServiceNetworking\AddRolesResponse
     {
     }
 }

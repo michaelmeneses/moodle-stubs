@@ -21,99 +21,108 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMMigrationService;
-
-class ComputeEngineDisksTargetDefaults extends \Google\Collection
-{
-    protected $collection_key = 'disks';
-    protected $disksType = PersistentDiskDefaults::class;
-    protected $disksDataType = 'array';
-    protected $disksTargetDefaultsType = DisksMigrationDisksTargetDefaults::class;
-    protected $disksTargetDefaultsDataType = '';
-    /**
-     * The full path of the resource of type TargetProject which represents the
-     * Compute Engine project in which to create the Persistent Disks.
-     *
-     * @var string
-     */
-    public $targetProject;
-    protected $vmTargetDefaultsType = DisksMigrationVmTargetDefaults::class;
-    protected $vmTargetDefaultsDataType = '';
-    /**
-     * The zone in which to create the Persistent Disks.
-     *
-     * @var string
-     */
-    public $zone;
-    /**
-     * The details of each Persistent Disk to create.
-     *
-     * @param PersistentDiskDefaults[] $disks
-     */
-    public function setDisks($disks)
+namespace Google\Service\VMMigrationService {
+    class ComputeEngineDisksTargetDefaults extends \Google\Collection
     {
+        protected $collection_key = 'disks';
+        protected $disksType = PersistentDiskDefaults::class;
+        protected $disksDataType = 'array';
+        protected $disksTargetDefaultsType = DisksMigrationDisksTargetDefaults::class;
+        protected $disksTargetDefaultsDataType = '';
+        /**
+         * The full path of the resource of type TargetProject which represents the
+         * Compute Engine project in which to create the Persistent Disks.
+         *
+         * @var string
+         */
+        public $targetProject;
+        protected $vmTargetDefaultsType = DisksMigrationVmTargetDefaults::class;
+        protected $vmTargetDefaultsDataType = '';
+        /**
+         * The zone in which to create the Persistent Disks.
+         *
+         * @var string
+         */
+        public $zone;
+        /**
+         * The details of each Persistent Disk to create.
+         *
+         * @param PersistentDiskDefaults[] $disks
+         */
+        public function setDisks($disks)
+        {
+        }
+        /**
+         * @return PersistentDiskDefaults[]
+         */
+        public function getDisks()
+        {
+        }
+        /**
+         * Details of the disk only migration target.
+         *
+         * @param DisksMigrationDisksTargetDefaults $disksTargetDefaults
+         */
+        public function setDisksTargetDefaults(DisksMigrationDisksTargetDefaults $disksTargetDefaults)
+        {
+        }
+        /**
+         * @return DisksMigrationDisksTargetDefaults
+         */
+        public function getDisksTargetDefaults()
+        {
+        }
+        /**
+         * The full path of the resource of type TargetProject which represents the
+         * Compute Engine project in which to create the Persistent Disks.
+         *
+         * @param string $targetProject
+         */
+        public function setTargetProject($targetProject)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetProject()
+        {
+        }
+        /**
+         * Details of the VM migration target.
+         *
+         * @param DisksMigrationVmTargetDefaults $vmTargetDefaults
+         */
+        public function setVmTargetDefaults(DisksMigrationVmTargetDefaults $vmTargetDefaults)
+        {
+        }
+        /**
+         * @return DisksMigrationVmTargetDefaults
+         */
+        public function getVmTargetDefaults()
+        {
+        }
+        /**
+         * The zone in which to create the Persistent Disks.
+         *
+         * @param string $zone
+         */
+        public function setZone($zone)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getZone()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PersistentDiskDefaults[]
+     * Runtime class alias of \Google\Service\VMMigrationService\ComputeEngineDisksTargetDefaults registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisks()
-    {
-    }
-    /**
-     * Details of the disk only migration target.
-     *
-     * @param DisksMigrationDisksTargetDefaults $disksTargetDefaults
-     */
-    public function setDisksTargetDefaults(DisksMigrationDisksTargetDefaults $disksTargetDefaults)
-    {
-    }
-    /**
-     * @return DisksMigrationDisksTargetDefaults
-     */
-    public function getDisksTargetDefaults()
-    {
-    }
-    /**
-     * The full path of the resource of type TargetProject which represents the
-     * Compute Engine project in which to create the Persistent Disks.
-     *
-     * @param string $targetProject
-     */
-    public function setTargetProject($targetProject)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetProject()
-    {
-    }
-    /**
-     * Details of the VM migration target.
-     *
-     * @param DisksMigrationVmTargetDefaults $vmTargetDefaults
-     */
-    public function setVmTargetDefaults(DisksMigrationVmTargetDefaults $vmTargetDefaults)
-    {
-    }
-    /**
-     * @return DisksMigrationVmTargetDefaults
-     */
-    public function getVmTargetDefaults()
-    {
-    }
-    /**
-     * The zone in which to create the Persistent Disks.
-     *
-     * @param string $zone
-     */
-    public function setZone($zone)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getZone()
+    class Google_Service_VMMigrationService_ComputeEngineDisksTargetDefaults extends \Google\Service\VMMigrationService\ComputeEngineDisksTargetDefaults
     {
     }
 }

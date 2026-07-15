@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0CommonLanguageInfo extends \Google\Model
-{
-    /**
-     * The language constant resource name.
-     *
-     * @var string
-     */
-    public $languageConstant;
-    /**
-     * The language constant resource name.
-     *
-     * @param string $languageConstant
-     */
-    public function setLanguageConstant($languageConstant)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0CommonLanguageInfo extends \Google\Model
     {
+        /**
+         * The language constant resource name.
+         *
+         * @var string
+         */
+        public $languageConstant;
+        /**
+         * The language constant resource name.
+         *
+         * @param string $languageConstant
+         */
+        public function setLanguageConstant($languageConstant)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLanguageConstant()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0CommonLanguageInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLanguageConstant()
+    class Google_Service_SA360_GoogleAdsSearchads360V0CommonLanguageInfo extends \Google\Service\SA360\GoogleAdsSearchads360V0CommonLanguageInfo
     {
     }
 }

@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class LookbackWindow extends \Google\Model
-{
-    /**
-     * Lookback window, in days, from the last time a given user clicked on one of
-     * your ads.
-     *
-     * @var int
-     */
-    public $clickDays;
-    /**
-     * Lookback window, in days, from the last time a given user viewed one of
-     * your ads.
-     *
-     * @var int
-     */
-    public $impressionDays;
-    /**
-     * Lookback window, in days, from the last time a given user clicked on one of
-     * your ads.
-     *
-     * @param int $clickDays
-     */
-    public function setClickDays($clickDays)
+namespace Google\Service\DisplayVideo {
+    class LookbackWindow extends \Google\Model
     {
+        /**
+         * Lookback window, in days, from the last time a given user clicked on one of
+         * your ads.
+         *
+         * @var int
+         */
+        public $clickDays;
+        /**
+         * Lookback window, in days, from the last time a given user viewed one of
+         * your ads.
+         *
+         * @var int
+         */
+        public $impressionDays;
+        /**
+         * Lookback window, in days, from the last time a given user clicked on one of
+         * your ads.
+         *
+         * @param int $clickDays
+         */
+        public function setClickDays($clickDays)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getClickDays()
+        {
+        }
+        /**
+         * Lookback window, in days, from the last time a given user viewed one of
+         * your ads.
+         *
+         * @param int $impressionDays
+         */
+        public function setImpressionDays($impressionDays)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getImpressionDays()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\DisplayVideo\LookbackWindow registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClickDays()
-    {
-    }
-    /**
-     * Lookback window, in days, from the last time a given user viewed one of
-     * your ads.
-     *
-     * @param int $impressionDays
-     */
-    public function setImpressionDays($impressionDays)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getImpressionDays()
+    class Google_Service_DisplayVideo_LookbackWindow extends \Google\Service\DisplayVideo\LookbackWindow
     {
     }
 }

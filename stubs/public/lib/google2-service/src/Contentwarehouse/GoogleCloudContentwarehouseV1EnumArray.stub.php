@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudContentwarehouseV1EnumArray extends \Google\Collection
-{
-    protected $collection_key = 'values';
-    /**
-     * List of enum values.
-     *
-     * @var string[]
-     */
-    public $values;
-    /**
-     * List of enum values.
-     *
-     * @param string[] $values
-     */
-    public function setValues($values)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudContentwarehouseV1EnumArray extends \Google\Collection
     {
+        protected $collection_key = 'values';
+        /**
+         * List of enum values.
+         *
+         * @var string[]
+         */
+        public $values;
+        /**
+         * List of enum values.
+         *
+         * @param string[] $values
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1EnumArray registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getValues()
+    class Google_Service_Contentwarehouse_GoogleCloudContentwarehouseV1EnumArray extends \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1EnumArray
     {
     }
 }

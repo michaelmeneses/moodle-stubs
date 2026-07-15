@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaBooleanParameterArray extends \Google\Collection
-{
-    protected $collection_key = 'booleanValues';
-    /**
-     * Boolean array.
-     *
-     * @var bool[]
-     */
-    public $booleanValues;
-    /**
-     * Boolean array.
-     *
-     * @param bool[] $booleanValues
-     */
-    public function setBooleanValues($booleanValues)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaBooleanParameterArray extends \Google\Collection
     {
+        protected $collection_key = 'booleanValues';
+        /**
+         * Boolean array.
+         *
+         * @var bool[]
+         */
+        public $booleanValues;
+        /**
+         * Boolean array.
+         *
+         * @param bool[] $booleanValues
+         */
+        public function setBooleanValues($booleanValues)
+        {
+        }
+        /**
+         * @return bool[]
+         */
+        public function getBooleanValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool[]
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaBooleanParameterArray registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBooleanValues()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaBooleanParameterArray extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaBooleanParameterArray
     {
     }
 }

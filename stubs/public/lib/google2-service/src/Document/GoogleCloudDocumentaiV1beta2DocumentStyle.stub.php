@@ -21,128 +21,137 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1beta2DocumentStyle extends \Google\Model
-{
-    protected $backgroundColorType = GoogleTypeColor::class;
-    protected $backgroundColorDataType = '';
-    protected $colorType = GoogleTypeColor::class;
-    protected $colorDataType = '';
-    /**
-     * @var string
-     */
-    public $fontFamily;
-    protected $fontSizeType = GoogleCloudDocumentaiV1beta2DocumentStyleFontSize::class;
-    protected $fontSizeDataType = '';
-    /**
-     * @var string
-     */
-    public $fontWeight;
-    protected $textAnchorType = GoogleCloudDocumentaiV1beta2DocumentTextAnchor::class;
-    protected $textAnchorDataType = '';
-    /**
-     * @var string
-     */
-    public $textDecoration;
-    /**
-     * @var string
-     */
-    public $textStyle;
-    /**
-     * @param GoogleTypeColor
-     */
-    public function setBackgroundColor(GoogleTypeColor $backgroundColor)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1beta2DocumentStyle extends \Google\Model
     {
+        protected $backgroundColorType = GoogleTypeColor::class;
+        protected $backgroundColorDataType = '';
+        protected $colorType = GoogleTypeColor::class;
+        protected $colorDataType = '';
+        /**
+         * @var string
+         */
+        public $fontFamily;
+        protected $fontSizeType = GoogleCloudDocumentaiV1beta2DocumentStyleFontSize::class;
+        protected $fontSizeDataType = '';
+        /**
+         * @var string
+         */
+        public $fontWeight;
+        protected $textAnchorType = GoogleCloudDocumentaiV1beta2DocumentTextAnchor::class;
+        protected $textAnchorDataType = '';
+        /**
+         * @var string
+         */
+        public $textDecoration;
+        /**
+         * @var string
+         */
+        public $textStyle;
+        /**
+         * @param GoogleTypeColor
+         */
+        public function setBackgroundColor(GoogleTypeColor $backgroundColor)
+        {
+        }
+        /**
+         * @return GoogleTypeColor
+         */
+        public function getBackgroundColor()
+        {
+        }
+        /**
+         * @param GoogleTypeColor
+         */
+        public function setColor(GoogleTypeColor $color)
+        {
+        }
+        /**
+         * @return GoogleTypeColor
+         */
+        public function getColor()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setFontFamily($fontFamily)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFontFamily()
+        {
+        }
+        /**
+         * @param GoogleCloudDocumentaiV1beta2DocumentStyleFontSize
+         */
+        public function setFontSize(GoogleCloudDocumentaiV1beta2DocumentStyleFontSize $fontSize)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta2DocumentStyleFontSize
+         */
+        public function getFontSize()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setFontWeight($fontWeight)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFontWeight()
+        {
+        }
+        /**
+         * @param GoogleCloudDocumentaiV1beta2DocumentTextAnchor
+         */
+        public function setTextAnchor(GoogleCloudDocumentaiV1beta2DocumentTextAnchor $textAnchor)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta2DocumentTextAnchor
+         */
+        public function getTextAnchor()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTextDecoration($textDecoration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTextDecoration()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTextStyle($textStyle)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTextStyle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleTypeColor
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1beta2DocumentStyle registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackgroundColor()
-    {
-    }
-    /**
-     * @param GoogleTypeColor
-     */
-    public function setColor(GoogleTypeColor $color)
-    {
-    }
-    /**
-     * @return GoogleTypeColor
-     */
-    public function getColor()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setFontFamily($fontFamily)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFontFamily()
-    {
-    }
-    /**
-     * @param GoogleCloudDocumentaiV1beta2DocumentStyleFontSize
-     */
-    public function setFontSize(GoogleCloudDocumentaiV1beta2DocumentStyleFontSize $fontSize)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1beta2DocumentStyleFontSize
-     */
-    public function getFontSize()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setFontWeight($fontWeight)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFontWeight()
-    {
-    }
-    /**
-     * @param GoogleCloudDocumentaiV1beta2DocumentTextAnchor
-     */
-    public function setTextAnchor(GoogleCloudDocumentaiV1beta2DocumentTextAnchor $textAnchor)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1beta2DocumentTextAnchor
-     */
-    public function getTextAnchor()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTextDecoration($textDecoration)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTextDecoration()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTextStyle($textStyle)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTextStyle()
+    class Google_Service_Document_GoogleCloudDocumentaiV1beta2DocumentStyle extends \Google\Service\Document\GoogleCloudDocumentaiV1beta2DocumentStyle
     {
     }
 }

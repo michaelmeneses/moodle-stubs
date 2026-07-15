@@ -21,58 +21,70 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow\Resource;
-
-/**
- * The "snapshots" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dataflowService = new Google\Service\Dataflow(...);
- *   $snapshots = $dataflowService->projects_locations_snapshots;
- *  </code>
- */
-class ProjectsLocationsSnapshots extends \Google\Service\Resource
-{
+namespace Google\Service\Dataflow\Resource {
+    use Google\Service\Dataflow\DeleteSnapshotResponse;
+    use Google\Service\Dataflow\ListSnapshotsResponse;
+    use Google\Service\Dataflow\Snapshot;
     /**
-     * Deletes a snapshot. (snapshots.delete)
-     *
-     * @param string $projectId The ID of the Cloud Platform project that the
-     * snapshot belongs to.
-     * @param string $location The location that contains this snapshot.
-     * @param string $snapshotId The ID of the snapshot.
-     * @param array $optParams Optional parameters.
-     * @return DeleteSnapshotResponse
-     * @throws \Google\Service\Exception
+     * The "snapshots" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dataflowService = new Google\Service\Dataflow(...);
+     *   $snapshots = $dataflowService->projects_locations_snapshots;
+     *  </code>
      */
-    public function delete($projectId, $location, $snapshotId, $optParams = [])
+    class ProjectsLocationsSnapshots extends \Google\Service\Resource
     {
+        /**
+         * Deletes a snapshot. (snapshots.delete)
+         *
+         * @param string $projectId The ID of the Cloud Platform project that the
+         * snapshot belongs to.
+         * @param string $location The location that contains this snapshot.
+         * @param string $snapshotId The ID of the snapshot.
+         * @param array $optParams Optional parameters.
+         * @return DeleteSnapshotResponse
+         * @throws \Google\Service\Exception
+         */
+        public function delete($projectId, $location, $snapshotId, $optParams = [])
+        {
+        }
+        /**
+         * Gets information about a snapshot. (snapshots.get)
+         *
+         * @param string $projectId The ID of the Cloud Platform project that the
+         * snapshot belongs to.
+         * @param string $location The location that contains this snapshot.
+         * @param string $snapshotId The ID of the snapshot.
+         * @param array $optParams Optional parameters.
+         * @return Snapshot
+         * @throws \Google\Service\Exception
+         */
+        public function get($projectId, $location, $snapshotId, $optParams = [])
+        {
+        }
+        /**
+         * Lists snapshots. (snapshots.listProjectsLocationsSnapshots)
+         *
+         * @param string $projectId The project ID to list snapshots for.
+         * @param string $location The location to list snapshots in.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string jobId If specified, list snapshots created from this job.
+         * @return ListSnapshotsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsSnapshots($projectId, $location, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets information about a snapshot. (snapshots.get)
-     *
-     * @param string $projectId The ID of the Cloud Platform project that the
-     * snapshot belongs to.
-     * @param string $location The location that contains this snapshot.
-     * @param string $snapshotId The ID of the snapshot.
-     * @param array $optParams Optional parameters.
-     * @return Snapshot
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Dataflow\Resource\ProjectsLocationsSnapshots registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($projectId, $location, $snapshotId, $optParams = [])
-    {
-    }
-    /**
-     * Lists snapshots. (snapshots.listProjectsLocationsSnapshots)
-     *
-     * @param string $projectId The project ID to list snapshots for.
-     * @param string $location The location to list snapshots in.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string jobId If specified, list snapshots created from this job.
-     * @return ListSnapshotsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsSnapshots($projectId, $location, $optParams = [])
+    class Google_Service_Dataflow_Resource_ProjectsLocationsSnapshots extends \Google\Service\Dataflow\Resource\ProjectsLocationsSnapshots
     {
     }
 }

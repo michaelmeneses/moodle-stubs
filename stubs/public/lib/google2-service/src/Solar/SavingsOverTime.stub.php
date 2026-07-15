@@ -21,112 +21,121 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Solar;
-
-class SavingsOverTime extends \Google\Model
-{
-    /**
-     * Indicates whether this scenario is financially viable. Will be false for
-     * scenarios with poor financial viability (e.g., money-losing).
-     *
-     * @var bool
-     */
-    public $financiallyViable;
-    protected $presentValueOfSavingsLifetimeType = Money::class;
-    protected $presentValueOfSavingsLifetimeDataType = '';
-    protected $presentValueOfSavingsYear20Type = Money::class;
-    protected $presentValueOfSavingsYear20DataType = '';
-    protected $savingsLifetimeType = Money::class;
-    protected $savingsLifetimeDataType = '';
-    protected $savingsYear1Type = Money::class;
-    protected $savingsYear1DataType = '';
-    protected $savingsYear20Type = Money::class;
-    protected $savingsYear20DataType = '';
-    /**
-     * Indicates whether this scenario is financially viable. Will be false for
-     * scenarios with poor financial viability (e.g., money-losing).
-     *
-     * @param bool $financiallyViable
-     */
-    public function setFinanciallyViable($financiallyViable)
+namespace Google\Service\Solar {
+    class SavingsOverTime extends \Google\Model
     {
+        /**
+         * Indicates whether this scenario is financially viable. Will be false for
+         * scenarios with poor financial viability (e.g., money-losing).
+         *
+         * @var bool
+         */
+        public $financiallyViable;
+        protected $presentValueOfSavingsLifetimeType = Money::class;
+        protected $presentValueOfSavingsLifetimeDataType = '';
+        protected $presentValueOfSavingsYear20Type = Money::class;
+        protected $presentValueOfSavingsYear20DataType = '';
+        protected $savingsLifetimeType = Money::class;
+        protected $savingsLifetimeDataType = '';
+        protected $savingsYear1Type = Money::class;
+        protected $savingsYear1DataType = '';
+        protected $savingsYear20Type = Money::class;
+        protected $savingsYear20DataType = '';
+        /**
+         * Indicates whether this scenario is financially viable. Will be false for
+         * scenarios with poor financial viability (e.g., money-losing).
+         *
+         * @param bool $financiallyViable
+         */
+        public function setFinanciallyViable($financiallyViable)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getFinanciallyViable()
+        {
+        }
+        /**
+         * Using the assumed discount rate, what is the present value of the
+         * cumulative lifetime savings?
+         *
+         * @param Money $presentValueOfSavingsLifetime
+         */
+        public function setPresentValueOfSavingsLifetime(Money $presentValueOfSavingsLifetime)
+        {
+        }
+        /**
+         * @return Money
+         */
+        public function getPresentValueOfSavingsLifetime()
+        {
+        }
+        /**
+         * Using the assumed discount rate, what is the present value of the
+         * cumulative 20-year savings?
+         *
+         * @param Money $presentValueOfSavingsYear20
+         */
+        public function setPresentValueOfSavingsYear20(Money $presentValueOfSavingsYear20)
+        {
+        }
+        /**
+         * @return Money
+         */
+        public function getPresentValueOfSavingsYear20()
+        {
+        }
+        /**
+         * Savings in the entire panel lifetime.
+         *
+         * @param Money $savingsLifetime
+         */
+        public function setSavingsLifetime(Money $savingsLifetime)
+        {
+        }
+        /**
+         * @return Money
+         */
+        public function getSavingsLifetime()
+        {
+        }
+        /**
+         * Savings in the first year after panel installation.
+         *
+         * @param Money $savingsYear1
+         */
+        public function setSavingsYear1(Money $savingsYear1)
+        {
+        }
+        /**
+         * @return Money
+         */
+        public function getSavingsYear1()
+        {
+        }
+        /**
+         * Savings in the first twenty years after panel installation.
+         *
+         * @param Money $savingsYear20
+         */
+        public function setSavingsYear20(Money $savingsYear20)
+        {
+        }
+        /**
+         * @return Money
+         */
+        public function getSavingsYear20()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Solar\SavingsOverTime registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFinanciallyViable()
-    {
-    }
-    /**
-     * Using the assumed discount rate, what is the present value of the
-     * cumulative lifetime savings?
-     *
-     * @param Money $presentValueOfSavingsLifetime
-     */
-    public function setPresentValueOfSavingsLifetime(Money $presentValueOfSavingsLifetime)
-    {
-    }
-    /**
-     * @return Money
-     */
-    public function getPresentValueOfSavingsLifetime()
-    {
-    }
-    /**
-     * Using the assumed discount rate, what is the present value of the
-     * cumulative 20-year savings?
-     *
-     * @param Money $presentValueOfSavingsYear20
-     */
-    public function setPresentValueOfSavingsYear20(Money $presentValueOfSavingsYear20)
-    {
-    }
-    /**
-     * @return Money
-     */
-    public function getPresentValueOfSavingsYear20()
-    {
-    }
-    /**
-     * Savings in the entire panel lifetime.
-     *
-     * @param Money $savingsLifetime
-     */
-    public function setSavingsLifetime(Money $savingsLifetime)
-    {
-    }
-    /**
-     * @return Money
-     */
-    public function getSavingsLifetime()
-    {
-    }
-    /**
-     * Savings in the first year after panel installation.
-     *
-     * @param Money $savingsYear1
-     */
-    public function setSavingsYear1(Money $savingsYear1)
-    {
-    }
-    /**
-     * @return Money
-     */
-    public function getSavingsYear1()
-    {
-    }
-    /**
-     * Savings in the first twenty years after panel installation.
-     *
-     * @param Money $savingsYear20
-     */
-    public function setSavingsYear20(Money $savingsYear20)
-    {
-    }
-    /**
-     * @return Money
-     */
-    public function getSavingsYear20()
+    class Google_Service_Solar_SavingsOverTime extends \Google\Service\Solar\SavingsOverTime
     {
     }
 }

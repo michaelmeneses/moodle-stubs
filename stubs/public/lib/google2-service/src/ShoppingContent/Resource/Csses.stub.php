@@ -21,67 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent\Resource;
-
-/**
- * The "csses" collection of methods.
- * Typical usage is:
- *  <code>
- *   $contentService = new Google\Service\ShoppingContent(...);
- *   $csses = $contentService->csses;
- *  </code>
- */
-class Csses extends \Google\Service\Resource
-{
+namespace Google\Service\ShoppingContent\Resource {
+    use Google\Service\ShoppingContent\Css;
+    use Google\Service\ShoppingContent\LabelIds;
+    use Google\Service\ShoppingContent\ListCssesResponse;
     /**
-     * Retrieves a single CSS domain by ID. (csses.get)
-     *
-     * @param string $cssGroupId Required. The ID of the managing account. If this
-     * parameter is not the same as [cssDomainId](#cssDomainId), then this ID must
-     * be a CSS group ID and `cssDomainId` must be the ID of a CSS domain affiliated
-     * with this group.
-     * @param string $cssDomainId Required. The ID of the CSS domain to return.
-     * @param array $optParams Optional parameters.
-     * @return Css
-     * @throws \Google\Service\Exception
+     * The "csses" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $contentService = new Google\Service\ShoppingContent(...);
+     *   $csses = $contentService->csses;
+     *  </code>
      */
-    public function get($cssGroupId, $cssDomainId, $optParams = [])
+    class Csses extends \Google\Service\Resource
     {
+        /**
+         * Retrieves a single CSS domain by ID. (csses.get)
+         *
+         * @param string $cssGroupId Required. The ID of the managing account. If this
+         * parameter is not the same as [cssDomainId](#cssDomainId), then this ID must
+         * be a CSS group ID and `cssDomainId` must be the ID of a CSS domain affiliated
+         * with this group.
+         * @param string $cssDomainId Required. The ID of the CSS domain to return.
+         * @param array $optParams Optional parameters.
+         * @return Css
+         * @throws \Google\Service\Exception
+         */
+        public function get($cssGroupId, $cssDomainId, $optParams = [])
+        {
+        }
+        /**
+         * Lists CSS domains affiliated with a CSS group. (csses.listCsses)
+         *
+         * @param string $cssGroupId Required. The CSS group ID of CSS domains to be
+         * listed.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The maximum number of CSS domains to return. The
+         * service may return fewer than this value. If unspecified, at most 50 CSS
+         * domains will be returned. The maximum value is 1000; values above 1000 will
+         * be coerced to 1000.
+         * @opt_param string pageToken A page token, received from a previous
+         * `ListCsses` call. Provide this to retrieve the subsequent page. When
+         * paginating, all other parameters provided to `ListCsses` must match the call
+         * that provided the page token.
+         * @return ListCssesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listCsses($cssGroupId, $optParams = [])
+        {
+        }
+        /**
+         * Updates labels that are assigned to a CSS domain by its CSS group.
+         * (csses.updatelabels)
+         *
+         * @param string $cssGroupId Required. The CSS group ID of the updated CSS
+         * domain.
+         * @param string $cssDomainId Required. The ID of the updated CSS domain.
+         * @param LabelIds $postBody
+         * @param array $optParams Optional parameters.
+         * @return Css
+         * @throws \Google\Service\Exception
+         */
+        public function updatelabels($cssGroupId, $cssDomainId, LabelIds $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists CSS domains affiliated with a CSS group. (csses.listCsses)
-     *
-     * @param string $cssGroupId Required. The CSS group ID of CSS domains to be
-     * listed.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The maximum number of CSS domains to return. The
-     * service may return fewer than this value. If unspecified, at most 50 CSS
-     * domains will be returned. The maximum value is 1000; values above 1000 will
-     * be coerced to 1000.
-     * @opt_param string pageToken A page token, received from a previous
-     * `ListCsses` call. Provide this to retrieve the subsequent page. When
-     * paginating, all other parameters provided to `ListCsses` must match the call
-     * that provided the page token.
-     * @return ListCssesResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\ShoppingContent\Resource\Csses registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listCsses($cssGroupId, $optParams = [])
-    {
-    }
-    /**
-     * Updates labels that are assigned to a CSS domain by its CSS group.
-     * (csses.updatelabels)
-     *
-     * @param string $cssGroupId Required. The CSS group ID of the updated CSS
-     * domain.
-     * @param string $cssDomainId Required. The ID of the updated CSS domain.
-     * @param LabelIds $postBody
-     * @param array $optParams Optional parameters.
-     * @return Css
-     * @throws \Google\Service\Exception
-     */
-    public function updatelabels($cssGroupId, $cssDomainId, LabelIds $postBody, $optParams = [])
+    class Google_Service_ShoppingContent_Resource_Csses extends \Google\Service\ShoppingContent\Resource\Csses
     {
     }
 }

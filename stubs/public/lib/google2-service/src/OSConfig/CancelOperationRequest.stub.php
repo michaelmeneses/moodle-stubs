@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OSConfig;
-
-class CancelOperationRequest extends \Google\Model
-{
+namespace Google\Service\OSConfig {
+    class CancelOperationRequest extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\OSConfig\CancelOperationRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_OSConfig_CancelOperationRequest extends \Google\Service\OSConfig\CancelOperationRequest
+    {
+    }
 }

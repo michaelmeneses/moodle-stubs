@@ -21,120 +21,129 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1IngestConversationsMetadata extends \Google\Collection
-{
-    protected $collection_key = 'sampledConversations';
-    /**
-     * Output only. The time the operation was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Output only. The time the operation finished running.
-     *
-     * @var string
-     */
-    public $endTime;
-    protected $ingestConversationsStatsType = GoogleCloudContactcenterinsightsV1IngestConversationsMetadataIngestConversationsStats::class;
-    protected $ingestConversationsStatsDataType = '';
-    protected $partialErrorsType = GoogleRpcStatus::class;
-    protected $partialErrorsDataType = 'array';
-    protected $requestType = GoogleCloudContactcenterinsightsV1IngestConversationsRequest::class;
-    protected $requestDataType = '';
-    /**
-     * Output only. Stores the conversation resources produced by ingest sampling
-     * operations.
-     *
-     * @var string[]
-     */
-    public $sampledConversations;
-    /**
-     * Output only. The time the operation was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1IngestConversationsMetadata extends \Google\Collection
     {
+        protected $collection_key = 'sampledConversations';
+        /**
+         * Output only. The time the operation was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Output only. The time the operation finished running.
+         *
+         * @var string
+         */
+        public $endTime;
+        protected $ingestConversationsStatsType = GoogleCloudContactcenterinsightsV1IngestConversationsMetadataIngestConversationsStats::class;
+        protected $ingestConversationsStatsDataType = '';
+        protected $partialErrorsType = GoogleRpcStatus::class;
+        protected $partialErrorsDataType = 'array';
+        protected $requestType = GoogleCloudContactcenterinsightsV1IngestConversationsRequest::class;
+        protected $requestDataType = '';
+        /**
+         * Output only. Stores the conversation resources produced by ingest sampling
+         * operations.
+         *
+         * @var string[]
+         */
+        public $sampledConversations;
+        /**
+         * Output only. The time the operation was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. The time the operation finished running.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * Output only. Statistics for IngestConversations operation.
+         *
+         * @param GoogleCloudContactcenterinsightsV1IngestConversationsMetadataIngestConversationsStats $ingestConversationsStats
+         */
+        public function setIngestConversationsStats(GoogleCloudContactcenterinsightsV1IngestConversationsMetadataIngestConversationsStats $ingestConversationsStats)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1IngestConversationsMetadataIngestConversationsStats
+         */
+        public function getIngestConversationsStats()
+        {
+        }
+        /**
+         * Output only. Partial errors during ingest operation that might cause the
+         * operation output to be incomplete.
+         *
+         * @param GoogleRpcStatus[] $partialErrors
+         */
+        public function setPartialErrors($partialErrors)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus[]
+         */
+        public function getPartialErrors()
+        {
+        }
+        /**
+         * Output only. The original request for ingest.
+         *
+         * @param GoogleCloudContactcenterinsightsV1IngestConversationsRequest $request
+         */
+        public function setRequest(GoogleCloudContactcenterinsightsV1IngestConversationsRequest $request)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1IngestConversationsRequest
+         */
+        public function getRequest()
+        {
+        }
+        /**
+         * Output only. Stores the conversation resources produced by ingest sampling
+         * operations.
+         *
+         * @param string[] $sampledConversations
+         */
+        public function setSampledConversations($sampledConversations)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSampledConversations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1IngestConversationsMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. The time the operation finished running.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndTime()
-    {
-    }
-    /**
-     * Output only. Statistics for IngestConversations operation.
-     *
-     * @param GoogleCloudContactcenterinsightsV1IngestConversationsMetadataIngestConversationsStats $ingestConversationsStats
-     */
-    public function setIngestConversationsStats(GoogleCloudContactcenterinsightsV1IngestConversationsMetadataIngestConversationsStats $ingestConversationsStats)
-    {
-    }
-    /**
-     * @return GoogleCloudContactcenterinsightsV1IngestConversationsMetadataIngestConversationsStats
-     */
-    public function getIngestConversationsStats()
-    {
-    }
-    /**
-     * Output only. Partial errors during ingest operation that might cause the
-     * operation output to be incomplete.
-     *
-     * @param GoogleRpcStatus[] $partialErrors
-     */
-    public function setPartialErrors($partialErrors)
-    {
-    }
-    /**
-     * @return GoogleRpcStatus[]
-     */
-    public function getPartialErrors()
-    {
-    }
-    /**
-     * Output only. The original request for ingest.
-     *
-     * @param GoogleCloudContactcenterinsightsV1IngestConversationsRequest $request
-     */
-    public function setRequest(GoogleCloudContactcenterinsightsV1IngestConversationsRequest $request)
-    {
-    }
-    /**
-     * @return GoogleCloudContactcenterinsightsV1IngestConversationsRequest
-     */
-    public function getRequest()
-    {
-    }
-    /**
-     * Output only. Stores the conversation resources produced by ingest sampling
-     * operations.
-     *
-     * @param string[] $sampledConversations
-     */
-    public function setSampledConversations($sampledConversations)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSampledConversations()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1IngestConversationsMetadata extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1IngestConversationsMetadata
     {
     }
 }

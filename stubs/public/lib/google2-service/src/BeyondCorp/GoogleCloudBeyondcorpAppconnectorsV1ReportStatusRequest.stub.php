@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BeyondCorp;
-
-class GoogleCloudBeyondcorpAppconnectorsV1ReportStatusRequest extends \Google\Model
-{
-    /**
-     * Optional. An optional request ID to identify requests. Specify a unique
-     * request ID so that if you must retry your request, the server will know to
-     * ignore the request if it has already been completed. The server will
-     * guarantee that for at least 60 minutes since the first request. For
-     * example, consider a situation where you make an initial request and the
-     * request times out. If you make the request again with the same request ID,
-     * the server can check if original operation with the same request ID was
-     * received, and if so, will ignore the second request. This prevents clients
-     * from accidentally creating duplicate commitments. The request ID must be a
-     * valid UUID with the exception that zero UUID is not supported
-     * (00000000-0000-0000-0000-000000000000).
-     *
-     * @var string
-     */
-    public $requestId;
-    protected $resourceInfoType = GoogleCloudBeyondcorpAppconnectorsV1ResourceInfo::class;
-    protected $resourceInfoDataType = '';
-    /**
-     * Optional. If set, validates request by executing a dry-run which would not
-     * alter the resource in any way.
-     *
-     * @var bool
-     */
-    public $validateOnly;
-    /**
-     * Optional. An optional request ID to identify requests. Specify a unique
-     * request ID so that if you must retry your request, the server will know to
-     * ignore the request if it has already been completed. The server will
-     * guarantee that for at least 60 minutes since the first request. For
-     * example, consider a situation where you make an initial request and the
-     * request times out. If you make the request again with the same request ID,
-     * the server can check if original operation with the same request ID was
-     * received, and if so, will ignore the second request. This prevents clients
-     * from accidentally creating duplicate commitments. The request ID must be a
-     * valid UUID with the exception that zero UUID is not supported
-     * (00000000-0000-0000-0000-000000000000).
-     *
-     * @param string $requestId
-     */
-    public function setRequestId($requestId)
+namespace Google\Service\BeyondCorp {
+    class GoogleCloudBeyondcorpAppconnectorsV1ReportStatusRequest extends \Google\Model
     {
+        /**
+         * Optional. An optional request ID to identify requests. Specify a unique
+         * request ID so that if you must retry your request, the server will know to
+         * ignore the request if it has already been completed. The server will
+         * guarantee that for at least 60 minutes since the first request. For
+         * example, consider a situation where you make an initial request and the
+         * request times out. If you make the request again with the same request ID,
+         * the server can check if original operation with the same request ID was
+         * received, and if so, will ignore the second request. This prevents clients
+         * from accidentally creating duplicate commitments. The request ID must be a
+         * valid UUID with the exception that zero UUID is not supported
+         * (00000000-0000-0000-0000-000000000000).
+         *
+         * @var string
+         */
+        public $requestId;
+        protected $resourceInfoType = GoogleCloudBeyondcorpAppconnectorsV1ResourceInfo::class;
+        protected $resourceInfoDataType = '';
+        /**
+         * Optional. If set, validates request by executing a dry-run which would not
+         * alter the resource in any way.
+         *
+         * @var bool
+         */
+        public $validateOnly;
+        /**
+         * Optional. An optional request ID to identify requests. Specify a unique
+         * request ID so that if you must retry your request, the server will know to
+         * ignore the request if it has already been completed. The server will
+         * guarantee that for at least 60 minutes since the first request. For
+         * example, consider a situation where you make an initial request and the
+         * request times out. If you make the request again with the same request ID,
+         * the server can check if original operation with the same request ID was
+         * received, and if so, will ignore the second request. This prevents clients
+         * from accidentally creating duplicate commitments. The request ID must be a
+         * valid UUID with the exception that zero UUID is not supported
+         * (00000000-0000-0000-0000-000000000000).
+         *
+         * @param string $requestId
+         */
+        public function setRequestId($requestId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestId()
+        {
+        }
+        /**
+         * Required. Resource info of the connector.
+         *
+         * @param GoogleCloudBeyondcorpAppconnectorsV1ResourceInfo $resourceInfo
+         */
+        public function setResourceInfo(GoogleCloudBeyondcorpAppconnectorsV1ResourceInfo $resourceInfo)
+        {
+        }
+        /**
+         * @return GoogleCloudBeyondcorpAppconnectorsV1ResourceInfo
+         */
+        public function getResourceInfo()
+        {
+        }
+        /**
+         * Optional. If set, validates request by executing a dry-run which would not
+         * alter the resource in any way.
+         *
+         * @param bool $validateOnly
+         */
+        public function setValidateOnly($validateOnly)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getValidateOnly()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BeyondCorp\GoogleCloudBeyondcorpAppconnectorsV1ReportStatusRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequestId()
-    {
-    }
-    /**
-     * Required. Resource info of the connector.
-     *
-     * @param GoogleCloudBeyondcorpAppconnectorsV1ResourceInfo $resourceInfo
-     */
-    public function setResourceInfo(GoogleCloudBeyondcorpAppconnectorsV1ResourceInfo $resourceInfo)
-    {
-    }
-    /**
-     * @return GoogleCloudBeyondcorpAppconnectorsV1ResourceInfo
-     */
-    public function getResourceInfo()
-    {
-    }
-    /**
-     * Optional. If set, validates request by executing a dry-run which would not
-     * alter the resource in any way.
-     *
-     * @param bool $validateOnly
-     */
-    public function setValidateOnly($validateOnly)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getValidateOnly()
+    class Google_Service_BeyondCorp_GoogleCloudBeyondcorpAppconnectorsV1ReportStatusRequest extends \Google\Service\BeyondCorp\GoogleCloudBeyondcorpAppconnectorsV1ReportStatusRequest
     {
     }
 }

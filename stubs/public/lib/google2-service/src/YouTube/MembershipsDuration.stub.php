@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class MembershipsDuration extends \Google\Model
-{
-    /**
-     * The date and time when the user became a continuous member across all
-     * levels.
-     *
-     * @var string
-     */
-    public $memberSince;
-    /**
-     * The cumulative time the user has been a member across all levels in
-     * complete months (the time is rounded down to the nearest integer).
-     *
-     * @var int
-     */
-    public $memberTotalDurationMonths;
-    /**
-     * The date and time when the user became a continuous member across all
-     * levels.
-     *
-     * @param string $memberSince
-     */
-    public function setMemberSince($memberSince)
+namespace Google\Service\YouTube {
+    class MembershipsDuration extends \Google\Model
     {
+        /**
+         * The date and time when the user became a continuous member across all
+         * levels.
+         *
+         * @var string
+         */
+        public $memberSince;
+        /**
+         * The cumulative time the user has been a member across all levels in
+         * complete months (the time is rounded down to the nearest integer).
+         *
+         * @var int
+         */
+        public $memberTotalDurationMonths;
+        /**
+         * The date and time when the user became a continuous member across all
+         * levels.
+         *
+         * @param string $memberSince
+         */
+        public function setMemberSince($memberSince)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMemberSince()
+        {
+        }
+        /**
+         * The cumulative time the user has been a member across all levels in
+         * complete months (the time is rounded down to the nearest integer).
+         *
+         * @param int $memberTotalDurationMonths
+         */
+        public function setMemberTotalDurationMonths($memberTotalDurationMonths)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMemberTotalDurationMonths()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\MembershipsDuration registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMemberSince()
-    {
-    }
-    /**
-     * The cumulative time the user has been a member across all levels in
-     * complete months (the time is rounded down to the nearest integer).
-     *
-     * @param int $memberTotalDurationMonths
-     */
-    public function setMemberTotalDurationMonths($memberTotalDurationMonths)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMemberTotalDurationMonths()
+    class Google_Service_YouTube_MembershipsDuration extends \Google\Service\YouTube\MembershipsDuration
     {
     }
 }

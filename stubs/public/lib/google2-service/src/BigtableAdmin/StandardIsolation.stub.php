@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class StandardIsolation extends \Google\Model
-{
-    /**
-     * Default value. Mapped to PRIORITY_HIGH (the legacy behavior) on creation.
-     */
-    public const PRIORITY_PRIORITY_UNSPECIFIED = 'PRIORITY_UNSPECIFIED';
-    public const PRIORITY_PRIORITY_LOW = 'PRIORITY_LOW';
-    public const PRIORITY_PRIORITY_MEDIUM = 'PRIORITY_MEDIUM';
-    public const PRIORITY_PRIORITY_HIGH = 'PRIORITY_HIGH';
-    /**
-     * The priority of requests sent using this app profile.
-     *
-     * @var string
-     */
-    public $priority;
-    /**
-     * The priority of requests sent using this app profile.
-     *
-     * Accepted values: PRIORITY_UNSPECIFIED, PRIORITY_LOW, PRIORITY_MEDIUM,
-     * PRIORITY_HIGH
-     *
-     * @param self::PRIORITY_* $priority
-     */
-    public function setPriority($priority)
+namespace Google\Service\BigtableAdmin {
+    class StandardIsolation extends \Google\Model
     {
+        /**
+         * Default value. Mapped to PRIORITY_HIGH (the legacy behavior) on creation.
+         */
+        public const PRIORITY_PRIORITY_UNSPECIFIED = 'PRIORITY_UNSPECIFIED';
+        public const PRIORITY_PRIORITY_LOW = 'PRIORITY_LOW';
+        public const PRIORITY_PRIORITY_MEDIUM = 'PRIORITY_MEDIUM';
+        public const PRIORITY_PRIORITY_HIGH = 'PRIORITY_HIGH';
+        /**
+         * The priority of requests sent using this app profile.
+         *
+         * @var string
+         */
+        public $priority;
+        /**
+         * The priority of requests sent using this app profile.
+         *
+         * Accepted values: PRIORITY_UNSPECIFIED, PRIORITY_LOW, PRIORITY_MEDIUM,
+         * PRIORITY_HIGH
+         *
+         * @param self::PRIORITY_* $priority
+         */
+        public function setPriority($priority)
+        {
+        }
+        /**
+         * @return self::PRIORITY_*
+         */
+        public function getPriority()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::PRIORITY_*
+     * Runtime class alias of \Google\Service\BigtableAdmin\StandardIsolation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPriority()
+    class Google_Service_BigtableAdmin_StandardIsolation extends \Google\Service\BigtableAdmin\StandardIsolation
     {
     }
 }

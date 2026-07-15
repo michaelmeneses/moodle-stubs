@@ -21,56 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceNetworking\Resource;
-
-/**
- * The "dnsZones" collection of methods.
- * Typical usage is:
- *  <code>
- *   $servicenetworkingService = new Google\Service\ServiceNetworking(...);
- *   $dnsZones = $servicenetworkingService->services_projects_global_networks_dnsZones;
- *  </code>
- */
-class ServicesProjectsServicenetworkingGlobalNetworksDnsZones extends \Google\Service\Resource
-{
+namespace Google\Service\ServiceNetworking\Resource {
+    use Google\Service\ServiceNetworking\GetDnsZoneResponse;
+    use Google\Service\ServiceNetworking\ListDnsZonesResponse;
     /**
-     * Service producers can use this method to retrieve a DNS zone in the shared
-     * producer host project and the matching peering zones in consumer project
-     * (dnsZones.get)
-     *
-     * @param string $name Required. The network that the consumer is using to
-     * connect with services. Must be in the form of services/{service}/projects/{pr
-     * oject}/global/networks/{network}/dnsZones/{zoneName} Where {service} is the
-     * peering service that is managing connectivity for the service producer's
-     * organization. For Google services that support this {project} is the project
-     * number, as in '12345' {network} is the network name. {zoneName} is the DNS
-     * zone name
-     * @param array $optParams Optional parameters.
-     * @return GetDnsZoneResponse
-     * @throws \Google\Service\Exception
+     * The "dnsZones" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $servicenetworkingService = new Google\Service\ServiceNetworking(...);
+     *   $dnsZones = $servicenetworkingService->services_projects_global_networks_dnsZones;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class ServicesProjectsServicenetworkingGlobalNetworksDnsZones extends \Google\Service\Resource
     {
+        /**
+         * Service producers can use this method to retrieve a DNS zone in the shared
+         * producer host project and the matching peering zones in consumer project
+         * (dnsZones.get)
+         *
+         * @param string $name Required. The network that the consumer is using to
+         * connect with services. Must be in the form of services/{service}/projects/{pr
+         * oject}/global/networks/{network}/dnsZones/{zoneName} Where {service} is the
+         * peering service that is managing connectivity for the service producer's
+         * organization. For Google services that support this {project} is the project
+         * number, as in '12345' {network} is the network name. {zoneName} is the DNS
+         * zone name
+         * @param array $optParams Optional parameters.
+         * @return GetDnsZoneResponse
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * * Service producers can use this method to retrieve a list of available DNS
+         * zones in the shared producer host project and the matching peering zones in
+         * the consumer project. *
+         * (dnsZones.listServicesProjectsServicenetworkingGlobalNetworksDnsZones)
+         *
+         * @param string $parent Required. Parent resource identifying the connection
+         * which owns this collection of DNS zones in the format
+         * services/{service}/projects/{project}/global/networks/{network} Service: The
+         * service that is managing connectivity for the service producer's
+         * organization. For Google services that support this functionality, this value
+         * is `servicenetworking.googleapis.com`. Projects: the consumer project
+         * containing the consumer network. Network: The consumer network accessible
+         * from the tenant project.
+         * @param array $optParams Optional parameters.
+         * @return ListDnsZonesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listServicesProjectsServicenetworkingGlobalNetworksDnsZones($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * * Service producers can use this method to retrieve a list of available DNS
-     * zones in the shared producer host project and the matching peering zones in
-     * the consumer project. *
-     * (dnsZones.listServicesProjectsServicenetworkingGlobalNetworksDnsZones)
-     *
-     * @param string $parent Required. Parent resource identifying the connection
-     * which owns this collection of DNS zones in the format
-     * services/{service}/projects/{project}/global/networks/{network} Service: The
-     * service that is managing connectivity for the service producer's
-     * organization. For Google services that support this functionality, this value
-     * is `servicenetworking.googleapis.com`. Projects: the consumer project
-     * containing the consumer network. Network: The consumer network accessible
-     * from the tenant project.
-     * @param array $optParams Optional parameters.
-     * @return ListDnsZonesResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\ServiceNetworking\Resource\ServicesProjectsServicenetworkingGlobalNetworksDnsZones registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listServicesProjectsServicenetworkingGlobalNetworksDnsZones($parent, $optParams = [])
+    class Google_Service_ServiceNetworking_Resource_ServicesProjectsServicenetworkingGlobalNetworksDnsZones extends \Google\Service\ServiceNetworking\Resource\ServicesProjectsServicenetworkingGlobalNetworksDnsZones
     {
     }
 }

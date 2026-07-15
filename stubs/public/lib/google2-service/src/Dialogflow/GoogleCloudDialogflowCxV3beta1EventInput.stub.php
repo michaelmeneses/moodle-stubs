@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3beta1EventInput extends \Google\Model
-{
-    /**
-     * Name of the event.
-     *
-     * @var string
-     */
-    public $event;
-    /**
-     * Name of the event.
-     *
-     * @param string $event
-     */
-    public function setEvent($event)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3beta1EventInput extends \Google\Model
     {
+        /**
+         * Name of the event.
+         *
+         * @var string
+         */
+        public $event;
+        /**
+         * Name of the event.
+         *
+         * @param string $event
+         */
+        public function setEvent($event)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEvent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3beta1EventInput registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEvent()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3beta1EventInput extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3beta1EventInput
     {
     }
 }

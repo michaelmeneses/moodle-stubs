@@ -21,107 +21,116 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceNetworking;
-
-class GoogleCloudServicenetworkingV1betaConnection extends \Google\Collection
-{
-    protected $collection_key = 'reservedPeeringRanges';
-    /**
-     * The name of service consumer's VPC network that's connected with service
-     * producer network, in the following format:
-     * `projects/{project}/global/networks/{network}`. `{project}` is a project
-     * number, such as in `12345` that includes the VPC service consumer's VPC
-     * network. `{network}` is the name of the service consumer's VPC network.
-     *
-     * @var string
-     */
-    public $network;
-    /**
-     * Output only. The name of the VPC Network Peering connection that was
-     * created by the service producer.
-     *
-     * @var string
-     */
-    public $peering;
-    /**
-     * The name of one or more allocated IP address ranges for this service
-     * producer of type `PEERING`. Note that invoking this method with a different
-     * range when connection is already established will not modify already
-     * provisioned service producer subnetworks.
-     *
-     * @var string[]
-     */
-    public $reservedPeeringRanges;
-    /**
-     * Output only. The name of the peering service that's associated with this
-     * connection, in the following format: `services/{service name}`.
-     *
-     * @var string
-     */
-    public $service;
-    /**
-     * The name of service consumer's VPC network that's connected with service
-     * producer network, in the following format:
-     * `projects/{project}/global/networks/{network}`. `{project}` is a project
-     * number, such as in `12345` that includes the VPC service consumer's VPC
-     * network. `{network}` is the name of the service consumer's VPC network.
-     *
-     * @param string $network
-     */
-    public function setNetwork($network)
+namespace Google\Service\ServiceNetworking {
+    class GoogleCloudServicenetworkingV1betaConnection extends \Google\Collection
     {
+        protected $collection_key = 'reservedPeeringRanges';
+        /**
+         * The name of service consumer's VPC network that's connected with service
+         * producer network, in the following format:
+         * `projects/{project}/global/networks/{network}`. `{project}` is a project
+         * number, such as in `12345` that includes the VPC service consumer's VPC
+         * network. `{network}` is the name of the service consumer's VPC network.
+         *
+         * @var string
+         */
+        public $network;
+        /**
+         * Output only. The name of the VPC Network Peering connection that was
+         * created by the service producer.
+         *
+         * @var string
+         */
+        public $peering;
+        /**
+         * The name of one or more allocated IP address ranges for this service
+         * producer of type `PEERING`. Note that invoking this method with a different
+         * range when connection is already established will not modify already
+         * provisioned service producer subnetworks.
+         *
+         * @var string[]
+         */
+        public $reservedPeeringRanges;
+        /**
+         * Output only. The name of the peering service that's associated with this
+         * connection, in the following format: `services/{service name}`.
+         *
+         * @var string
+         */
+        public $service;
+        /**
+         * The name of service consumer's VPC network that's connected with service
+         * producer network, in the following format:
+         * `projects/{project}/global/networks/{network}`. `{project}` is a project
+         * number, such as in `12345` that includes the VPC service consumer's VPC
+         * network. `{network}` is the name of the service consumer's VPC network.
+         *
+         * @param string $network
+         */
+        public function setNetwork($network)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNetwork()
+        {
+        }
+        /**
+         * Output only. The name of the VPC Network Peering connection that was
+         * created by the service producer.
+         *
+         * @param string $peering
+         */
+        public function setPeering($peering)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPeering()
+        {
+        }
+        /**
+         * The name of one or more allocated IP address ranges for this service
+         * producer of type `PEERING`. Note that invoking this method with a different
+         * range when connection is already established will not modify already
+         * provisioned service producer subnetworks.
+         *
+         * @param string[] $reservedPeeringRanges
+         */
+        public function setReservedPeeringRanges($reservedPeeringRanges)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getReservedPeeringRanges()
+        {
+        }
+        /**
+         * Output only. The name of the peering service that's associated with this
+         * connection, in the following format: `services/{service name}`.
+         *
+         * @param string $service
+         */
+        public function setService($service)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getService()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ServiceNetworking\GoogleCloudServicenetworkingV1betaConnection registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNetwork()
-    {
-    }
-    /**
-     * Output only. The name of the VPC Network Peering connection that was
-     * created by the service producer.
-     *
-     * @param string $peering
-     */
-    public function setPeering($peering)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPeering()
-    {
-    }
-    /**
-     * The name of one or more allocated IP address ranges for this service
-     * producer of type `PEERING`. Note that invoking this method with a different
-     * range when connection is already established will not modify already
-     * provisioned service producer subnetworks.
-     *
-     * @param string[] $reservedPeeringRanges
-     */
-    public function setReservedPeeringRanges($reservedPeeringRanges)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getReservedPeeringRanges()
-    {
-    }
-    /**
-     * Output only. The name of the peering service that's associated with this
-     * connection, in the following format: `services/{service name}`.
-     *
-     * @param string $service
-     */
-    public function setService($service)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getService()
+    class Google_Service_ServiceNetworking_GoogleCloudServicenetworkingV1betaConnection extends \Google\Service\ServiceNetworking\GoogleCloudServicenetworkingV1betaConnection
     {
     }
 }

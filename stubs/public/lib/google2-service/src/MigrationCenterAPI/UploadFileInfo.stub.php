@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class UploadFileInfo extends \Google\Model
-{
-    /**
-     * Output only. The headers that were used to sign the URI.
-     *
-     * @var string[]
-     */
-    public $headers;
-    /**
-     * Output only. Upload URI for the file.
-     *
-     * @var string
-     */
-    public $signedUri;
-    /**
-     * Output only. Expiration time of the upload URI.
-     *
-     * @var string
-     */
-    public $uriExpirationTime;
-    /**
-     * Output only. The headers that were used to sign the URI.
-     *
-     * @param string[] $headers
-     */
-    public function setHeaders($headers)
+namespace Google\Service\MigrationCenterAPI {
+    class UploadFileInfo extends \Google\Model
     {
+        /**
+         * Output only. The headers that were used to sign the URI.
+         *
+         * @var string[]
+         */
+        public $headers;
+        /**
+         * Output only. Upload URI for the file.
+         *
+         * @var string
+         */
+        public $signedUri;
+        /**
+         * Output only. Expiration time of the upload URI.
+         *
+         * @var string
+         */
+        public $uriExpirationTime;
+        /**
+         * Output only. The headers that were used to sign the URI.
+         *
+         * @param string[] $headers
+         */
+        public function setHeaders($headers)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getHeaders()
+        {
+        }
+        /**
+         * Output only. Upload URI for the file.
+         *
+         * @param string $signedUri
+         */
+        public function setSignedUri($signedUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSignedUri()
+        {
+        }
+        /**
+         * Output only. Expiration time of the upload URI.
+         *
+         * @param string $uriExpirationTime
+         */
+        public function setUriExpirationTime($uriExpirationTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUriExpirationTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\UploadFileInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHeaders()
-    {
-    }
-    /**
-     * Output only. Upload URI for the file.
-     *
-     * @param string $signedUri
-     */
-    public function setSignedUri($signedUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSignedUri()
-    {
-    }
-    /**
-     * Output only. Expiration time of the upload URI.
-     *
-     * @param string $uriExpirationTime
-     */
-    public function setUriExpirationTime($uriExpirationTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUriExpirationTime()
+    class Google_Service_MigrationCenterAPI_UploadFileInfo extends \Google\Service\MigrationCenterAPI\UploadFileInfo
     {
     }
 }

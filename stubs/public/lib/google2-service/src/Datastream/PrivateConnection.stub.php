@@ -21,244 +21,253 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class PrivateConnection extends \Google\Model
-{
-    /**
-     * Unspecified state.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * The private connection is in creation state - creating resources.
-     */
-    public const STATE_CREATING = 'CREATING';
-    /**
-     * The private connection has been created with all of its resources.
-     */
-    public const STATE_CREATED = 'CREATED';
-    /**
-     * The private connection creation has failed.
-     */
-    public const STATE_FAILED = 'FAILED';
-    /**
-     * The private connection is being deleted.
-     */
-    public const STATE_DELETING = 'DELETING';
-    /**
-     * Delete request has failed, resource is in invalid state.
-     */
-    public const STATE_FAILED_TO_DELETE = 'FAILED_TO_DELETE';
-    /**
-     * Output only. The create time of the resource.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Required. Display name.
-     *
-     * @var string
-     */
-    public $displayName;
-    protected $errorType = Error::class;
-    protected $errorDataType = '';
-    /**
-     * Labels.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Output only. Identifier. The resource's name.
-     *
-     * @var string
-     */
-    public $name;
-    protected $pscInterfaceConfigType = PscInterfaceConfig::class;
-    protected $pscInterfaceConfigDataType = '';
-    /**
-     * Output only. Reserved for future use.
-     *
-     * @var bool
-     */
-    public $satisfiesPzi;
-    /**
-     * Output only. Reserved for future use.
-     *
-     * @var bool
-     */
-    public $satisfiesPzs;
-    /**
-     * Output only. The state of the Private Connection.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Output only. The update time of the resource.
-     *
-     * @var string
-     */
-    public $updateTime;
-    protected $vpcPeeringConfigType = VpcPeeringConfig::class;
-    protected $vpcPeeringConfigDataType = '';
-    /**
-     * Output only. The create time of the resource.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\Datastream {
+    class PrivateConnection extends \Google\Model
     {
+        /**
+         * Unspecified state.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * The private connection is in creation state - creating resources.
+         */
+        public const STATE_CREATING = 'CREATING';
+        /**
+         * The private connection has been created with all of its resources.
+         */
+        public const STATE_CREATED = 'CREATED';
+        /**
+         * The private connection creation has failed.
+         */
+        public const STATE_FAILED = 'FAILED';
+        /**
+         * The private connection is being deleted.
+         */
+        public const STATE_DELETING = 'DELETING';
+        /**
+         * Delete request has failed, resource is in invalid state.
+         */
+        public const STATE_FAILED_TO_DELETE = 'FAILED_TO_DELETE';
+        /**
+         * Output only. The create time of the resource.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Required. Display name.
+         *
+         * @var string
+         */
+        public $displayName;
+        protected $errorType = Error::class;
+        protected $errorDataType = '';
+        /**
+         * Labels.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Output only. Identifier. The resource's name.
+         *
+         * @var string
+         */
+        public $name;
+        protected $pscInterfaceConfigType = PscInterfaceConfig::class;
+        protected $pscInterfaceConfigDataType = '';
+        /**
+         * Output only. Reserved for future use.
+         *
+         * @var bool
+         */
+        public $satisfiesPzi;
+        /**
+         * Output only. Reserved for future use.
+         *
+         * @var bool
+         */
+        public $satisfiesPzs;
+        /**
+         * Output only. The state of the Private Connection.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Output only. The update time of the resource.
+         *
+         * @var string
+         */
+        public $updateTime;
+        protected $vpcPeeringConfigType = VpcPeeringConfig::class;
+        protected $vpcPeeringConfigDataType = '';
+        /**
+         * Output only. The create time of the resource.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Required. Display name.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Output only. In case of error, the details of the error in a user-friendly
+         * format.
+         *
+         * @param Error $error
+         */
+        public function setError(Error $error)
+        {
+        }
+        /**
+         * @return Error
+         */
+        public function getError()
+        {
+        }
+        /**
+         * Labels.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Output only. Identifier. The resource's name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * PSC Interface Config.
+         *
+         * @param PscInterfaceConfig $pscInterfaceConfig
+         */
+        public function setPscInterfaceConfig(PscInterfaceConfig $pscInterfaceConfig)
+        {
+        }
+        /**
+         * @return PscInterfaceConfig
+         */
+        public function getPscInterfaceConfig()
+        {
+        }
+        /**
+         * Output only. Reserved for future use.
+         *
+         * @param bool $satisfiesPzi
+         */
+        public function setSatisfiesPzi($satisfiesPzi)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSatisfiesPzi()
+        {
+        }
+        /**
+         * Output only. Reserved for future use.
+         *
+         * @param bool $satisfiesPzs
+         */
+        public function setSatisfiesPzs($satisfiesPzs)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSatisfiesPzs()
+        {
+        }
+        /**
+         * Output only. The state of the Private Connection.
+         *
+         * Accepted values: STATE_UNSPECIFIED, CREATING, CREATED, FAILED, DELETING,
+         * FAILED_TO_DELETE
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Output only. The update time of the resource.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
+        /**
+         * VPC Peering Config.
+         *
+         * @param VpcPeeringConfig $vpcPeeringConfig
+         */
+        public function setVpcPeeringConfig(VpcPeeringConfig $vpcPeeringConfig)
+        {
+        }
+        /**
+         * @return VpcPeeringConfig
+         */
+        public function getVpcPeeringConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Datastream\PrivateConnection registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Required. Display name.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Output only. In case of error, the details of the error in a user-friendly
-     * format.
-     *
-     * @param Error $error
-     */
-    public function setError(Error $error)
-    {
-    }
-    /**
-     * @return Error
-     */
-    public function getError()
-    {
-    }
-    /**
-     * Labels.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Output only. Identifier. The resource's name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * PSC Interface Config.
-     *
-     * @param PscInterfaceConfig $pscInterfaceConfig
-     */
-    public function setPscInterfaceConfig(PscInterfaceConfig $pscInterfaceConfig)
-    {
-    }
-    /**
-     * @return PscInterfaceConfig
-     */
-    public function getPscInterfaceConfig()
-    {
-    }
-    /**
-     * Output only. Reserved for future use.
-     *
-     * @param bool $satisfiesPzi
-     */
-    public function setSatisfiesPzi($satisfiesPzi)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSatisfiesPzi()
-    {
-    }
-    /**
-     * Output only. Reserved for future use.
-     *
-     * @param bool $satisfiesPzs
-     */
-    public function setSatisfiesPzs($satisfiesPzs)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSatisfiesPzs()
-    {
-    }
-    /**
-     * Output only. The state of the Private Connection.
-     *
-     * Accepted values: STATE_UNSPECIFIED, CREATING, CREATED, FAILED, DELETING,
-     * FAILED_TO_DELETE
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Output only. The update time of the resource.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
-    {
-    }
-    /**
-     * VPC Peering Config.
-     *
-     * @param VpcPeeringConfig $vpcPeeringConfig
-     */
-    public function setVpcPeeringConfig(VpcPeeringConfig $vpcPeeringConfig)
-    {
-    }
-    /**
-     * @return VpcPeeringConfig
-     */
-    public function getVpcPeeringConfig()
+    class Google_Service_Datastream_PrivateConnection extends \Google\Service\Datastream\PrivateConnection
     {
     }
 }

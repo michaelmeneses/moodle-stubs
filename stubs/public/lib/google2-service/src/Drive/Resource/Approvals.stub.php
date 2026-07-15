@@ -21,45 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Drive\Resource;
-
-/**
- * The "approvals" collection of methods.
- * Typical usage is:
- *  <code>
- *   $driveService = new Google\Service\Drive(...);
- *   $approvals = $driveService->approvals;
- *  </code>
- */
-class Approvals extends \Google\Service\Resource
-{
+namespace Google\Service\Drive\Resource {
+    use Google\Service\Drive\Approval;
+    use Google\Service\Drive\ApprovalList;
     /**
-     * Gets an Approval by ID. (approvals.get)
-     *
-     * @param string $fileId Required. The ID of the file the Approval is on.
-     * @param string $approvalId Required. The ID of the Approval.
-     * @param array $optParams Optional parameters.
-     * @return Approval
-     * @throws \Google\Service\Exception
+     * The "approvals" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $driveService = new Google\Service\Drive(...);
+     *   $approvals = $driveService->approvals;
+     *  </code>
      */
-    public function get($fileId, $approvalId, $optParams = [])
+    class Approvals extends \Google\Service\Resource
     {
+        /**
+         * Gets an Approval by ID. (approvals.get)
+         *
+         * @param string $fileId Required. The ID of the file the Approval is on.
+         * @param string $approvalId Required. The ID of the Approval.
+         * @param array $optParams Optional parameters.
+         * @return Approval
+         * @throws \Google\Service\Exception
+         */
+        public function get($fileId, $approvalId, $optParams = [])
+        {
+        }
+        /**
+         * Lists the Approvals on a file. (approvals.listApprovals)
+         *
+         * @param string $fileId Required. The ID of the file the Approval is on.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The maximum number of Approvals to return. When not
+         * set, at most 100 Approvals will be returned.
+         * @opt_param string pageToken The token for continuing a previous list request
+         * on the next page. This should be set to the value of nextPageToken from a
+         * previous response.
+         * @return ApprovalList
+         * @throws \Google\Service\Exception
+         */
+        public function listApprovals($fileId, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists the Approvals on a file. (approvals.listApprovals)
-     *
-     * @param string $fileId Required. The ID of the file the Approval is on.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The maximum number of Approvals to return. When not
-     * set, at most 100 Approvals will be returned.
-     * @opt_param string pageToken The token for continuing a previous list request
-     * on the next page. This should be set to the value of nextPageToken from a
-     * previous response.
-     * @return ApprovalList
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Drive\Resource\Approvals registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listApprovals($fileId, $optParams = [])
+    class Google_Service_Drive_Resource_Approvals extends \Google\Service\Drive\Resource\Approvals
     {
     }
 }

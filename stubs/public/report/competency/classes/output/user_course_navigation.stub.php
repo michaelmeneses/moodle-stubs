@@ -29,6 +29,13 @@
  */
 namespace report_competency\output;
 
+use renderable;
+use renderer_base;
+use templatable;
+use context_course;
+use core_user\external\user_summary_exporter;
+use core_course\external\course_module_summary_exporter;
+use stdClass;
 /**
  * User course navigation class.
  *

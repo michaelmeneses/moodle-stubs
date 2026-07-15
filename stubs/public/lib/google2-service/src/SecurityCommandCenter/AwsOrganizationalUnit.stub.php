@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class AwsOrganizationalUnit extends \Google\Model
-{
-    /**
-     * The unique identifier (ID) associated with this OU. The regex pattern for
-     * an organizational unit ID string requires "ou-" followed by from 4 to 32
-     * lowercase letters or digits (the ID of the root that contains the OU). This
-     * string is followed by a second "-" dash and from 8 to 32 additional
-     * lowercase letters or digits. For example, "ou-ab12-cd34ef56".
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * The friendly name of the OU.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The unique identifier (ID) associated with this OU. The regex pattern for
-     * an organizational unit ID string requires "ou-" followed by from 4 to 32
-     * lowercase letters or digits (the ID of the root that contains the OU). This
-     * string is followed by a second "-" dash and from 8 to 32 additional
-     * lowercase letters or digits. For example, "ou-ab12-cd34ef56".
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\SecurityCommandCenter {
+    class AwsOrganizationalUnit extends \Google\Model
     {
+        /**
+         * The unique identifier (ID) associated with this OU. The regex pattern for
+         * an organizational unit ID string requires "ou-" followed by from 4 to 32
+         * lowercase letters or digits (the ID of the root that contains the OU). This
+         * string is followed by a second "-" dash and from 8 to 32 additional
+         * lowercase letters or digits. For example, "ou-ab12-cd34ef56".
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * The friendly name of the OU.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The unique identifier (ID) associated with this OU. The regex pattern for
+         * an organizational unit ID string requires "ou-" followed by from 4 to 32
+         * lowercase letters or digits (the ID of the root that contains the OU). This
+         * string is followed by a second "-" dash and from 8 to 32 additional
+         * lowercase letters or digits. For example, "ou-ab12-cd34ef56".
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * The friendly name of the OU.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\AwsOrganizationalUnit registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * The friendly name of the OU.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_SecurityCommandCenter_AwsOrganizationalUnit extends \Google\Service\SecurityCommandCenter\AwsOrganizationalUnit
     {
     }
 }

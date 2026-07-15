@@ -21,127 +21,136 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class UpdateOneTimeProductRequest extends \Google\Model
-{
-    /**
-     * Defaults to PRODUCT_UPDATE_LATENCY_TOLERANCE_LATENCY_SENSITIVE.
-     */
-    public const LATENCY_TOLERANCE_PRODUCT_UPDATE_LATENCY_TOLERANCE_UNSPECIFIED = 'PRODUCT_UPDATE_LATENCY_TOLERANCE_UNSPECIFIED';
-    /**
-     * The update will propagate to clients within several minutes on average and
-     * up to a few hours in rare cases. Throughput is limited to 7,200 updates per
-     * app per hour.
-     */
-    public const LATENCY_TOLERANCE_PRODUCT_UPDATE_LATENCY_TOLERANCE_LATENCY_SENSITIVE = 'PRODUCT_UPDATE_LATENCY_TOLERANCE_LATENCY_SENSITIVE';
-    /**
-     * The update will propagate to clients within 24 hours. Supports high
-     * throughput of up to 720,000 updates per app per hour using batch
-     * modification methods.
-     */
-    public const LATENCY_TOLERANCE_PRODUCT_UPDATE_LATENCY_TOLERANCE_LATENCY_TOLERANT = 'PRODUCT_UPDATE_LATENCY_TOLERANCE_LATENCY_TOLERANT';
-    /**
-     * Optional. If set to true, and the one-time product with the given
-     * package_name and product_id doesn't exist, the one-time product will be
-     * created. If a new one-time product is created, update_mask is ignored.
-     *
-     * @var bool
-     */
-    public $allowMissing;
-    /**
-     * Optional. The latency tolerance for the propagation of this product upsert.
-     * Defaults to latency-sensitive.
-     *
-     * @var string
-     */
-    public $latencyTolerance;
-    protected $oneTimeProductType = OneTimeProduct::class;
-    protected $oneTimeProductDataType = '';
-    protected $regionsVersionType = RegionsVersion::class;
-    protected $regionsVersionDataType = '';
-    /**
-     * Required. The list of fields to be updated.
-     *
-     * @var string
-     */
-    public $updateMask;
-    /**
-     * Optional. If set to true, and the one-time product with the given
-     * package_name and product_id doesn't exist, the one-time product will be
-     * created. If a new one-time product is created, update_mask is ignored.
-     *
-     * @param bool $allowMissing
-     */
-    public function setAllowMissing($allowMissing)
+namespace Google\Service\AndroidPublisher {
+    class UpdateOneTimeProductRequest extends \Google\Model
     {
+        /**
+         * Defaults to PRODUCT_UPDATE_LATENCY_TOLERANCE_LATENCY_SENSITIVE.
+         */
+        public const LATENCY_TOLERANCE_PRODUCT_UPDATE_LATENCY_TOLERANCE_UNSPECIFIED = 'PRODUCT_UPDATE_LATENCY_TOLERANCE_UNSPECIFIED';
+        /**
+         * The update will propagate to clients within several minutes on average and
+         * up to a few hours in rare cases. Throughput is limited to 7,200 updates per
+         * app per hour.
+         */
+        public const LATENCY_TOLERANCE_PRODUCT_UPDATE_LATENCY_TOLERANCE_LATENCY_SENSITIVE = 'PRODUCT_UPDATE_LATENCY_TOLERANCE_LATENCY_SENSITIVE';
+        /**
+         * The update will propagate to clients within 24 hours. Supports high
+         * throughput of up to 720,000 updates per app per hour using batch
+         * modification methods.
+         */
+        public const LATENCY_TOLERANCE_PRODUCT_UPDATE_LATENCY_TOLERANCE_LATENCY_TOLERANT = 'PRODUCT_UPDATE_LATENCY_TOLERANCE_LATENCY_TOLERANT';
+        /**
+         * Optional. If set to true, and the one-time product with the given
+         * package_name and product_id doesn't exist, the one-time product will be
+         * created. If a new one-time product is created, update_mask is ignored.
+         *
+         * @var bool
+         */
+        public $allowMissing;
+        /**
+         * Optional. The latency tolerance for the propagation of this product upsert.
+         * Defaults to latency-sensitive.
+         *
+         * @var string
+         */
+        public $latencyTolerance;
+        protected $oneTimeProductType = OneTimeProduct::class;
+        protected $oneTimeProductDataType = '';
+        protected $regionsVersionType = RegionsVersion::class;
+        protected $regionsVersionDataType = '';
+        /**
+         * Required. The list of fields to be updated.
+         *
+         * @var string
+         */
+        public $updateMask;
+        /**
+         * Optional. If set to true, and the one-time product with the given
+         * package_name and product_id doesn't exist, the one-time product will be
+         * created. If a new one-time product is created, update_mask is ignored.
+         *
+         * @param bool $allowMissing
+         */
+        public function setAllowMissing($allowMissing)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAllowMissing()
+        {
+        }
+        /**
+         * Optional. The latency tolerance for the propagation of this product upsert.
+         * Defaults to latency-sensitive.
+         *
+         * Accepted values: PRODUCT_UPDATE_LATENCY_TOLERANCE_UNSPECIFIED,
+         * PRODUCT_UPDATE_LATENCY_TOLERANCE_LATENCY_SENSITIVE,
+         * PRODUCT_UPDATE_LATENCY_TOLERANCE_LATENCY_TOLERANT
+         *
+         * @param self::LATENCY_TOLERANCE_* $latencyTolerance
+         */
+        public function setLatencyTolerance($latencyTolerance)
+        {
+        }
+        /**
+         * @return self::LATENCY_TOLERANCE_*
+         */
+        public function getLatencyTolerance()
+        {
+        }
+        /**
+         * Required. The one-time product to upsert.
+         *
+         * @param OneTimeProduct $oneTimeProduct
+         */
+        public function setOneTimeProduct(OneTimeProduct $oneTimeProduct)
+        {
+        }
+        /**
+         * @return OneTimeProduct
+         */
+        public function getOneTimeProduct()
+        {
+        }
+        /**
+         * Required. The version of the available regions being used for the one-time
+         * product.
+         *
+         * @param RegionsVersion $regionsVersion
+         */
+        public function setRegionsVersion(RegionsVersion $regionsVersion)
+        {
+        }
+        /**
+         * @return RegionsVersion
+         */
+        public function getRegionsVersion()
+        {
+        }
+        /**
+         * Required. The list of fields to be updated.
+         *
+         * @param string $updateMask
+         */
+        public function setUpdateMask($updateMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateMask()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\AndroidPublisher\UpdateOneTimeProductRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowMissing()
-    {
-    }
-    /**
-     * Optional. The latency tolerance for the propagation of this product upsert.
-     * Defaults to latency-sensitive.
-     *
-     * Accepted values: PRODUCT_UPDATE_LATENCY_TOLERANCE_UNSPECIFIED,
-     * PRODUCT_UPDATE_LATENCY_TOLERANCE_LATENCY_SENSITIVE,
-     * PRODUCT_UPDATE_LATENCY_TOLERANCE_LATENCY_TOLERANT
-     *
-     * @param self::LATENCY_TOLERANCE_* $latencyTolerance
-     */
-    public function setLatencyTolerance($latencyTolerance)
-    {
-    }
-    /**
-     * @return self::LATENCY_TOLERANCE_*
-     */
-    public function getLatencyTolerance()
-    {
-    }
-    /**
-     * Required. The one-time product to upsert.
-     *
-     * @param OneTimeProduct $oneTimeProduct
-     */
-    public function setOneTimeProduct(OneTimeProduct $oneTimeProduct)
-    {
-    }
-    /**
-     * @return OneTimeProduct
-     */
-    public function getOneTimeProduct()
-    {
-    }
-    /**
-     * Required. The version of the available regions being used for the one-time
-     * product.
-     *
-     * @param RegionsVersion $regionsVersion
-     */
-    public function setRegionsVersion(RegionsVersion $regionsVersion)
-    {
-    }
-    /**
-     * @return RegionsVersion
-     */
-    public function getRegionsVersion()
-    {
-    }
-    /**
-     * Required. The list of fields to be updated.
-     *
-     * @param string $updateMask
-     */
-    public function setUpdateMask($updateMask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateMask()
+    class Google_Service_AndroidPublisher_UpdateOneTimeProductRequest extends \Google\Service\AndroidPublisher\UpdateOneTimeProductRequest
     {
     }
 }

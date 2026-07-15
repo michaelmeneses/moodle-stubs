@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkSecurity;
-
-class ListAuthzPoliciesResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $authzPoliciesType = AuthzPolicy::class;
-    protected $authzPoliciesDataType = 'array';
-    /**
-     * A token identifying a page of results that the server returns.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * The list of `AuthzPolicy` resources.
-     *
-     * @param AuthzPolicy[] $authzPolicies
-     */
-    public function setAuthzPolicies($authzPolicies)
+namespace Google\Service\NetworkSecurity {
+    class ListAuthzPoliciesResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $authzPoliciesType = AuthzPolicy::class;
+        protected $authzPoliciesDataType = 'array';
+        /**
+         * A token identifying a page of results that the server returns.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * The list of `AuthzPolicy` resources.
+         *
+         * @param AuthzPolicy[] $authzPolicies
+         */
+        public function setAuthzPolicies($authzPolicies)
+        {
+        }
+        /**
+         * @return AuthzPolicy[]
+         */
+        public function getAuthzPolicies()
+        {
+        }
+        /**
+         * A token identifying a page of results that the server returns.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AuthzPolicy[]
+     * Runtime class alias of \Google\Service\NetworkSecurity\ListAuthzPoliciesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuthzPolicies()
-    {
-    }
-    /**
-     * A token identifying a page of results that the server returns.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_NetworkSecurity_ListAuthzPoliciesResponse extends \Google\Service\NetworkSecurity\ListAuthzPoliciesResponse
     {
     }
 }

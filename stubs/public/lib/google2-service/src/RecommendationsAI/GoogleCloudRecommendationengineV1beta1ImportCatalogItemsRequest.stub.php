@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecommendationsAI;
-
-class GoogleCloudRecommendationengineV1beta1ImportCatalogItemsRequest extends \Google\Model
-{
-    protected $errorsConfigType = GoogleCloudRecommendationengineV1beta1ImportErrorsConfig::class;
-    protected $errorsConfigDataType = '';
-    protected $inputConfigType = GoogleCloudRecommendationengineV1beta1InputConfig::class;
-    protected $inputConfigDataType = '';
-    /**
-     * Optional. Unique identifier provided by client, within the ancestor dataset
-     * scope. Ensures idempotency and used for request deduplication. Server-
-     * generated if unspecified. Up to 128 characters long. This is returned as
-     * google.longrunning.Operation.name in the response.
-     *
-     * @var string
-     */
-    public $requestId;
-    /**
-     * Optional. Indicates which fields in the provided imported 'items' to
-     * update. If not set, will by default update all fields.
-     *
-     * @var string
-     */
-    public $updateMask;
-    /**
-     * Optional. The desired location of errors incurred during the Import.
-     *
-     * @param GoogleCloudRecommendationengineV1beta1ImportErrorsConfig $errorsConfig
-     */
-    public function setErrorsConfig(GoogleCloudRecommendationengineV1beta1ImportErrorsConfig $errorsConfig)
+namespace Google\Service\RecommendationsAI {
+    class GoogleCloudRecommendationengineV1beta1ImportCatalogItemsRequest extends \Google\Model
     {
+        protected $errorsConfigType = GoogleCloudRecommendationengineV1beta1ImportErrorsConfig::class;
+        protected $errorsConfigDataType = '';
+        protected $inputConfigType = GoogleCloudRecommendationengineV1beta1InputConfig::class;
+        protected $inputConfigDataType = '';
+        /**
+         * Optional. Unique identifier provided by client, within the ancestor dataset
+         * scope. Ensures idempotency and used for request deduplication. Server-
+         * generated if unspecified. Up to 128 characters long. This is returned as
+         * google.longrunning.Operation.name in the response.
+         *
+         * @var string
+         */
+        public $requestId;
+        /**
+         * Optional. Indicates which fields in the provided imported 'items' to
+         * update. If not set, will by default update all fields.
+         *
+         * @var string
+         */
+        public $updateMask;
+        /**
+         * Optional. The desired location of errors incurred during the Import.
+         *
+         * @param GoogleCloudRecommendationengineV1beta1ImportErrorsConfig $errorsConfig
+         */
+        public function setErrorsConfig(GoogleCloudRecommendationengineV1beta1ImportErrorsConfig $errorsConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudRecommendationengineV1beta1ImportErrorsConfig
+         */
+        public function getErrorsConfig()
+        {
+        }
+        /**
+         * Required. The desired input location of the data.
+         *
+         * @param GoogleCloudRecommendationengineV1beta1InputConfig $inputConfig
+         */
+        public function setInputConfig(GoogleCloudRecommendationengineV1beta1InputConfig $inputConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudRecommendationengineV1beta1InputConfig
+         */
+        public function getInputConfig()
+        {
+        }
+        /**
+         * Optional. Unique identifier provided by client, within the ancestor dataset
+         * scope. Ensures idempotency and used for request deduplication. Server-
+         * generated if unspecified. Up to 128 characters long. This is returned as
+         * google.longrunning.Operation.name in the response.
+         *
+         * @param string $requestId
+         */
+        public function setRequestId($requestId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestId()
+        {
+        }
+        /**
+         * Optional. Indicates which fields in the provided imported 'items' to
+         * update. If not set, will by default update all fields.
+         *
+         * @param string $updateMask
+         */
+        public function setUpdateMask($updateMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateMask()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRecommendationengineV1beta1ImportErrorsConfig
+     * Runtime class alias of \Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1ImportCatalogItemsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrorsConfig()
-    {
-    }
-    /**
-     * Required. The desired input location of the data.
-     *
-     * @param GoogleCloudRecommendationengineV1beta1InputConfig $inputConfig
-     */
-    public function setInputConfig(GoogleCloudRecommendationengineV1beta1InputConfig $inputConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudRecommendationengineV1beta1InputConfig
-     */
-    public function getInputConfig()
-    {
-    }
-    /**
-     * Optional. Unique identifier provided by client, within the ancestor dataset
-     * scope. Ensures idempotency and used for request deduplication. Server-
-     * generated if unspecified. Up to 128 characters long. This is returned as
-     * google.longrunning.Operation.name in the response.
-     *
-     * @param string $requestId
-     */
-    public function setRequestId($requestId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestId()
-    {
-    }
-    /**
-     * Optional. Indicates which fields in the provided imported 'items' to
-     * update. If not set, will by default update all fields.
-     *
-     * @param string $updateMask
-     */
-    public function setUpdateMask($updateMask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateMask()
+    class Google_Service_RecommendationsAI_GoogleCloudRecommendationengineV1beta1ImportCatalogItemsRequest extends \Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1ImportCatalogItemsRequest
     {
     }
 }

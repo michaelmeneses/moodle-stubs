@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\output;
 
+use Mustache\LambdaHelper;
 /**
  * Mustache helper that will convert a timestamp to a date string.
  *

@@ -21,177 +21,186 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaAnswer extends \Google\Collection
-{
-    protected $collection_key = 'steps';
-    /**
-     * @var string[]
-     */
-    public $answerSkippedReasons;
-    /**
-     * @var string
-     */
-    public $answerText;
-    protected $citationsType = GoogleCloudDiscoveryengineV1betaAnswerCitation::class;
-    protected $citationsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $completeTime;
-    /**
-     * @var string
-     */
-    public $createTime;
-    /**
-     * @var string
-     */
-    public $name;
-    protected $queryUnderstandingInfoType = GoogleCloudDiscoveryengineV1betaAnswerQueryUnderstandingInfo::class;
-    protected $queryUnderstandingInfoDataType = '';
-    protected $referencesType = GoogleCloudDiscoveryengineV1betaAnswerReference::class;
-    protected $referencesDataType = 'array';
-    /**
-     * @var string[]
-     */
-    public $relatedQuestions;
-    /**
-     * @var string
-     */
-    public $state;
-    protected $stepsType = GoogleCloudDiscoveryengineV1betaAnswerStep::class;
-    protected $stepsDataType = 'array';
-    /**
-     * @param string[]
-     */
-    public function setAnswerSkippedReasons($answerSkippedReasons)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaAnswer extends \Google\Collection
     {
+        protected $collection_key = 'steps';
+        /**
+         * @var string[]
+         */
+        public $answerSkippedReasons;
+        /**
+         * @var string
+         */
+        public $answerText;
+        protected $citationsType = GoogleCloudDiscoveryengineV1betaAnswerCitation::class;
+        protected $citationsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $completeTime;
+        /**
+         * @var string
+         */
+        public $createTime;
+        /**
+         * @var string
+         */
+        public $name;
+        protected $queryUnderstandingInfoType = GoogleCloudDiscoveryengineV1betaAnswerQueryUnderstandingInfo::class;
+        protected $queryUnderstandingInfoDataType = '';
+        protected $referencesType = GoogleCloudDiscoveryengineV1betaAnswerReference::class;
+        protected $referencesDataType = 'array';
+        /**
+         * @var string[]
+         */
+        public $relatedQuestions;
+        /**
+         * @var string
+         */
+        public $state;
+        protected $stepsType = GoogleCloudDiscoveryengineV1betaAnswerStep::class;
+        protected $stepsDataType = 'array';
+        /**
+         * @param string[]
+         */
+        public function setAnswerSkippedReasons($answerSkippedReasons)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAnswerSkippedReasons()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setAnswerText($answerText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnswerText()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaAnswerCitation[]
+         */
+        public function setCitations($citations)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaAnswerCitation[]
+         */
+        public function getCitations()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCompleteTime($completeTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCompleteTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaAnswerQueryUnderstandingInfo
+         */
+        public function setQueryUnderstandingInfo(GoogleCloudDiscoveryengineV1betaAnswerQueryUnderstandingInfo $queryUnderstandingInfo)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaAnswerQueryUnderstandingInfo
+         */
+        public function getQueryUnderstandingInfo()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaAnswerReference[]
+         */
+        public function setReferences($references)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaAnswerReference[]
+         */
+        public function getReferences()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setRelatedQuestions($relatedQuestions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRelatedQuestions()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getState()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaAnswerStep[]
+         */
+        public function setSteps($steps)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaAnswerStep[]
+         */
+        public function getSteps()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaAnswer registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnswerSkippedReasons()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setAnswerText($answerText)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAnswerText()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaAnswerCitation[]
-     */
-    public function setCitations($citations)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaAnswerCitation[]
-     */
-    public function getCitations()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCompleteTime($completeTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCompleteTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaAnswerQueryUnderstandingInfo
-     */
-    public function setQueryUnderstandingInfo(GoogleCloudDiscoveryengineV1betaAnswerQueryUnderstandingInfo $queryUnderstandingInfo)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaAnswerQueryUnderstandingInfo
-     */
-    public function getQueryUnderstandingInfo()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaAnswerReference[]
-     */
-    public function setReferences($references)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaAnswerReference[]
-     */
-    public function getReferences()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setRelatedQuestions($relatedQuestions)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRelatedQuestions()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getState()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaAnswerStep[]
-     */
-    public function setSteps($steps)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaAnswerStep[]
-     */
-    public function getSteps()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaAnswer extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaAnswer
     {
     }
 }

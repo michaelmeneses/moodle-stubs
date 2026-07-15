@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class DoubleVerifyFraudInvalidTraffic extends \Google\Model
-{
-    /**
-     * This enum is only a placeholder and it doesn't specify any fraud and
-     * invalid traffic options.
-     */
-    public const AVOIDED_FRAUD_OPTION_FRAUD_UNSPECIFIED = 'FRAUD_UNSPECIFIED';
-    /**
-     * 100% Fraud & IVT.
-     */
-    public const AVOIDED_FRAUD_OPTION_AD_IMPRESSION_FRAUD_100 = 'AD_IMPRESSION_FRAUD_100';
-    /**
-     * 50% or Higher Fraud & IVT.
-     */
-    public const AVOIDED_FRAUD_OPTION_AD_IMPRESSION_FRAUD_50 = 'AD_IMPRESSION_FRAUD_50';
-    /**
-     * 25% or Higher Fraud & IVT.
-     */
-    public const AVOIDED_FRAUD_OPTION_AD_IMPRESSION_FRAUD_25 = 'AD_IMPRESSION_FRAUD_25';
-    /**
-     * 10% or Higher Fraud & IVT.
-     */
-    public const AVOIDED_FRAUD_OPTION_AD_IMPRESSION_FRAUD_10 = 'AD_IMPRESSION_FRAUD_10';
-    /**
-     * 8% or Higher Fraud & IVT.
-     */
-    public const AVOIDED_FRAUD_OPTION_AD_IMPRESSION_FRAUD_8 = 'AD_IMPRESSION_FRAUD_8';
-    /**
-     * 6% or Higher Fraud & IVT.
-     */
-    public const AVOIDED_FRAUD_OPTION_AD_IMPRESSION_FRAUD_6 = 'AD_IMPRESSION_FRAUD_6';
-    /**
-     * 4% or Higher Fraud & IVT.
-     */
-    public const AVOIDED_FRAUD_OPTION_AD_IMPRESSION_FRAUD_4 = 'AD_IMPRESSION_FRAUD_4';
-    /**
-     * 2% or Higher Fraud & IVT.
-     */
-    public const AVOIDED_FRAUD_OPTION_AD_IMPRESSION_FRAUD_2 = 'AD_IMPRESSION_FRAUD_2';
-    /**
-     * Insufficient Historical Fraud & IVT Stats.
-     *
-     * @var bool
-     */
-    public $avoidInsufficientOption;
-    /**
-     * Avoid Sites and Apps with historical Fraud & IVT.
-     *
-     * @var string
-     */
-    public $avoidedFraudOption;
-    /**
-     * Insufficient Historical Fraud & IVT Stats.
-     *
-     * @param bool $avoidInsufficientOption
-     */
-    public function setAvoidInsufficientOption($avoidInsufficientOption)
+namespace Google\Service\DisplayVideo {
+    class DoubleVerifyFraudInvalidTraffic extends \Google\Model
     {
+        /**
+         * This enum is only a placeholder and it doesn't specify any fraud and
+         * invalid traffic options.
+         */
+        public const AVOIDED_FRAUD_OPTION_FRAUD_UNSPECIFIED = 'FRAUD_UNSPECIFIED';
+        /**
+         * 100% Fraud & IVT.
+         */
+        public const AVOIDED_FRAUD_OPTION_AD_IMPRESSION_FRAUD_100 = 'AD_IMPRESSION_FRAUD_100';
+        /**
+         * 50% or Higher Fraud & IVT.
+         */
+        public const AVOIDED_FRAUD_OPTION_AD_IMPRESSION_FRAUD_50 = 'AD_IMPRESSION_FRAUD_50';
+        /**
+         * 25% or Higher Fraud & IVT.
+         */
+        public const AVOIDED_FRAUD_OPTION_AD_IMPRESSION_FRAUD_25 = 'AD_IMPRESSION_FRAUD_25';
+        /**
+         * 10% or Higher Fraud & IVT.
+         */
+        public const AVOIDED_FRAUD_OPTION_AD_IMPRESSION_FRAUD_10 = 'AD_IMPRESSION_FRAUD_10';
+        /**
+         * 8% or Higher Fraud & IVT.
+         */
+        public const AVOIDED_FRAUD_OPTION_AD_IMPRESSION_FRAUD_8 = 'AD_IMPRESSION_FRAUD_8';
+        /**
+         * 6% or Higher Fraud & IVT.
+         */
+        public const AVOIDED_FRAUD_OPTION_AD_IMPRESSION_FRAUD_6 = 'AD_IMPRESSION_FRAUD_6';
+        /**
+         * 4% or Higher Fraud & IVT.
+         */
+        public const AVOIDED_FRAUD_OPTION_AD_IMPRESSION_FRAUD_4 = 'AD_IMPRESSION_FRAUD_4';
+        /**
+         * 2% or Higher Fraud & IVT.
+         */
+        public const AVOIDED_FRAUD_OPTION_AD_IMPRESSION_FRAUD_2 = 'AD_IMPRESSION_FRAUD_2';
+        /**
+         * Insufficient Historical Fraud & IVT Stats.
+         *
+         * @var bool
+         */
+        public $avoidInsufficientOption;
+        /**
+         * Avoid Sites and Apps with historical Fraud & IVT.
+         *
+         * @var string
+         */
+        public $avoidedFraudOption;
+        /**
+         * Insufficient Historical Fraud & IVT Stats.
+         *
+         * @param bool $avoidInsufficientOption
+         */
+        public function setAvoidInsufficientOption($avoidInsufficientOption)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAvoidInsufficientOption()
+        {
+        }
+        /**
+         * Avoid Sites and Apps with historical Fraud & IVT.
+         *
+         * Accepted values: FRAUD_UNSPECIFIED, AD_IMPRESSION_FRAUD_100,
+         * AD_IMPRESSION_FRAUD_50, AD_IMPRESSION_FRAUD_25, AD_IMPRESSION_FRAUD_10,
+         * AD_IMPRESSION_FRAUD_8, AD_IMPRESSION_FRAUD_6, AD_IMPRESSION_FRAUD_4,
+         * AD_IMPRESSION_FRAUD_2
+         *
+         * @param self::AVOIDED_FRAUD_OPTION_* $avoidedFraudOption
+         */
+        public function setAvoidedFraudOption($avoidedFraudOption)
+        {
+        }
+        /**
+         * @return self::AVOIDED_FRAUD_OPTION_*
+         */
+        public function getAvoidedFraudOption()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DisplayVideo\DoubleVerifyFraudInvalidTraffic registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAvoidInsufficientOption()
-    {
-    }
-    /**
-     * Avoid Sites and Apps with historical Fraud & IVT.
-     *
-     * Accepted values: FRAUD_UNSPECIFIED, AD_IMPRESSION_FRAUD_100,
-     * AD_IMPRESSION_FRAUD_50, AD_IMPRESSION_FRAUD_25, AD_IMPRESSION_FRAUD_10,
-     * AD_IMPRESSION_FRAUD_8, AD_IMPRESSION_FRAUD_6, AD_IMPRESSION_FRAUD_4,
-     * AD_IMPRESSION_FRAUD_2
-     *
-     * @param self::AVOIDED_FRAUD_OPTION_* $avoidedFraudOption
-     */
-    public function setAvoidedFraudOption($avoidedFraudOption)
-    {
-    }
-    /**
-     * @return self::AVOIDED_FRAUD_OPTION_*
-     */
-    public function getAvoidedFraudOption()
+    class Google_Service_DisplayVideo_DoubleVerifyFraudInvalidTraffic extends \Google\Service\DisplayVideo\DoubleVerifyFraudInvalidTraffic
     {
     }
 }

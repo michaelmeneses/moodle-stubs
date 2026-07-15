@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceUsage;
-
-class ValueInfo extends \Google\Model
-{
-    protected $groupValueType = GroupValue::class;
-    protected $groupValueDataType = '';
-    /**
-     * @var string
-     */
-    public $learnmoreLink;
-    protected $serviceValueType = ServiceValue::class;
-    protected $serviceValueDataType = '';
-    /**
-     * @var string
-     */
-    public $summary;
-    /**
-     * @var string
-     */
-    public $title;
-    /**
-     * @param GroupValue
-     */
-    public function setGroupValue(GroupValue $groupValue)
+namespace Google\Service\ServiceUsage {
+    class ValueInfo extends \Google\Model
     {
+        protected $groupValueType = GroupValue::class;
+        protected $groupValueDataType = '';
+        /**
+         * @var string
+         */
+        public $learnmoreLink;
+        protected $serviceValueType = ServiceValue::class;
+        protected $serviceValueDataType = '';
+        /**
+         * @var string
+         */
+        public $summary;
+        /**
+         * @var string
+         */
+        public $title;
+        /**
+         * @param GroupValue
+         */
+        public function setGroupValue(GroupValue $groupValue)
+        {
+        }
+        /**
+         * @return GroupValue
+         */
+        public function getGroupValue()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLearnmoreLink($learnmoreLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLearnmoreLink()
+        {
+        }
+        /**
+         * @param ServiceValue
+         */
+        public function setServiceValue(ServiceValue $serviceValue)
+        {
+        }
+        /**
+         * @return ServiceValue
+         */
+        public function getServiceValue()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSummary($summary)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSummary()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GroupValue
+     * Runtime class alias of \Google\Service\ServiceUsage\ValueInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGroupValue()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLearnmoreLink($learnmoreLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLearnmoreLink()
-    {
-    }
-    /**
-     * @param ServiceValue
-     */
-    public function setServiceValue(ServiceValue $serviceValue)
-    {
-    }
-    /**
-     * @return ServiceValue
-     */
-    public function getServiceValue()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSummary($summary)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSummary()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_ServiceUsage_ValueInfo extends \Google\Service\ServiceUsage\ValueInfo
     {
     }
 }

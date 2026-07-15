@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudbilling;
-
-class GeoTaxonomy extends \Google\Collection
-{
-    /**
-     * The type is not specified.
-     */
-    public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
-    /**
-     * The sku is global in nature, e.g. a license sku. Global skus are available
-     * in all regions, and so have an empty region list.
-     */
-    public const TYPE_GLOBAL = 'GLOBAL';
-    /**
-     * The sku is available in a specific region, e.g. "us-west2".
-     */
-    public const TYPE_REGIONAL = 'REGIONAL';
-    /**
-     * The sku is associated with multiple regions, e.g. "us-west2" and "us-
-     * east1".
-     */
-    public const TYPE_MULTI_REGIONAL = 'MULTI_REGIONAL';
-    protected $collection_key = 'regions';
-    /**
-     * The list of regions associated with a sku. Empty for Global skus, which are
-     * associated with all Google Cloud regions.
-     *
-     * @var string[]
-     */
-    public $regions;
-    /**
-     * The type of Geo Taxonomy: GLOBAL, REGIONAL, or MULTI_REGIONAL.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The list of regions associated with a sku. Empty for Global skus, which are
-     * associated with all Google Cloud regions.
-     *
-     * @param string[] $regions
-     */
-    public function setRegions($regions)
+namespace Google\Service\Cloudbilling {
+    class GeoTaxonomy extends \Google\Collection
     {
+        /**
+         * The type is not specified.
+         */
+        public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
+        /**
+         * The sku is global in nature, e.g. a license sku. Global skus are available
+         * in all regions, and so have an empty region list.
+         */
+        public const TYPE_GLOBAL = 'GLOBAL';
+        /**
+         * The sku is available in a specific region, e.g. "us-west2".
+         */
+        public const TYPE_REGIONAL = 'REGIONAL';
+        /**
+         * The sku is associated with multiple regions, e.g. "us-west2" and "us-
+         * east1".
+         */
+        public const TYPE_MULTI_REGIONAL = 'MULTI_REGIONAL';
+        protected $collection_key = 'regions';
+        /**
+         * The list of regions associated with a sku. Empty for Global skus, which are
+         * associated with all Google Cloud regions.
+         *
+         * @var string[]
+         */
+        public $regions;
+        /**
+         * The type of Geo Taxonomy: GLOBAL, REGIONAL, or MULTI_REGIONAL.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The list of regions associated with a sku. Empty for Global skus, which are
+         * associated with all Google Cloud regions.
+         *
+         * @param string[] $regions
+         */
+        public function setRegions($regions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRegions()
+        {
+        }
+        /**
+         * The type of Geo Taxonomy: GLOBAL, REGIONAL, or MULTI_REGIONAL.
+         *
+         * Accepted values: TYPE_UNSPECIFIED, GLOBAL, REGIONAL, MULTI_REGIONAL
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Cloudbilling\GeoTaxonomy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRegions()
-    {
-    }
-    /**
-     * The type of Geo Taxonomy: GLOBAL, REGIONAL, or MULTI_REGIONAL.
-     *
-     * Accepted values: TYPE_UNSPECIFIED, GLOBAL, REGIONAL, MULTI_REGIONAL
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_Cloudbilling_GeoTaxonomy extends \Google\Service\Cloudbilling\GeoTaxonomy
     {
     }
 }

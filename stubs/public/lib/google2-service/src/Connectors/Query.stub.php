@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors;
-
-class Query extends \Google\Collection
-{
-    protected $collection_key = 'queryParameters';
-    /**
-     * Sets the limit for the maximum number of rows returned after the query
-     * execution.
-     *
-     * @var string
-     */
-    public $maxRows;
-    /**
-     * Required. Sql query to execute.
-     *
-     * @var string
-     */
-    public $query;
-    protected $queryParametersType = QueryParameter::class;
-    protected $queryParametersDataType = 'array';
-    /**
-     * Sets the number of seconds the driver will wait for a query to execute.
-     *
-     * @var string
-     */
-    public $timeout;
-    /**
-     * Sets the limit for the maximum number of rows returned after the query
-     * execution.
-     *
-     * @param string $maxRows
-     */
-    public function setMaxRows($maxRows)
+namespace Google\Service\Connectors {
+    class Query extends \Google\Collection
     {
+        protected $collection_key = 'queryParameters';
+        /**
+         * Sets the limit for the maximum number of rows returned after the query
+         * execution.
+         *
+         * @var string
+         */
+        public $maxRows;
+        /**
+         * Required. Sql query to execute.
+         *
+         * @var string
+         */
+        public $query;
+        protected $queryParametersType = QueryParameter::class;
+        protected $queryParametersDataType = 'array';
+        /**
+         * Sets the number of seconds the driver will wait for a query to execute.
+         *
+         * @var string
+         */
+        public $timeout;
+        /**
+         * Sets the limit for the maximum number of rows returned after the query
+         * execution.
+         *
+         * @param string $maxRows
+         */
+        public function setMaxRows($maxRows)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaxRows()
+        {
+        }
+        /**
+         * Required. Sql query to execute.
+         *
+         * @param string $query
+         */
+        public function setQuery($query)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQuery()
+        {
+        }
+        /**
+         * In the struct, the value corresponds to the value of query parameter and
+         * date type corresponds to the date type of the query parameter.
+         *
+         * @param QueryParameter[] $queryParameters
+         */
+        public function setQueryParameters($queryParameters)
+        {
+        }
+        /**
+         * @return QueryParameter[]
+         */
+        public function getQueryParameters()
+        {
+        }
+        /**
+         * Sets the number of seconds the driver will wait for a query to execute.
+         *
+         * @param string $timeout
+         */
+        public function setTimeout($timeout)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimeout()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Connectors\Query registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaxRows()
-    {
-    }
-    /**
-     * Required. Sql query to execute.
-     *
-     * @param string $query
-     */
-    public function setQuery($query)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQuery()
-    {
-    }
-    /**
-     * In the struct, the value corresponds to the value of query parameter and
-     * date type corresponds to the date type of the query parameter.
-     *
-     * @param QueryParameter[] $queryParameters
-     */
-    public function setQueryParameters($queryParameters)
-    {
-    }
-    /**
-     * @return QueryParameter[]
-     */
-    public function getQueryParameters()
-    {
-    }
-    /**
-     * Sets the number of seconds the driver will wait for a query to execute.
-     *
-     * @param string $timeout
-     */
-    public function setTimeout($timeout)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimeout()
+    class Google_Service_Connectors_Query extends \Google\Service\Connectors\Query
     {
     }
 }

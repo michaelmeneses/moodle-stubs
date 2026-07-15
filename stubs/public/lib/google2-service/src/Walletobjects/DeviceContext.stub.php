@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class DeviceContext extends \Google\Model
-{
-    /**
-     * If set, redemption information will only be returned to the given device
-     * upon activation of the object. This should not be used as a stable
-     * identifier to trace a user's device. It can change across different passes
-     * for the same device or even across different activations for the same
-     * device. When setting this, callers must also set has_linked_device on the
-     * object being activated.
-     *
-     * @var string
-     */
-    public $deviceToken;
-    /**
-     * If set, redemption information will only be returned to the given device
-     * upon activation of the object. This should not be used as a stable
-     * identifier to trace a user's device. It can change across different passes
-     * for the same device or even across different activations for the same
-     * device. When setting this, callers must also set has_linked_device on the
-     * object being activated.
-     *
-     * @param string $deviceToken
-     */
-    public function setDeviceToken($deviceToken)
+namespace Google\Service\Walletobjects {
+    class DeviceContext extends \Google\Model
     {
+        /**
+         * If set, redemption information will only be returned to the given device
+         * upon activation of the object. This should not be used as a stable
+         * identifier to trace a user's device. It can change across different passes
+         * for the same device or even across different activations for the same
+         * device. When setting this, callers must also set has_linked_device on the
+         * object being activated.
+         *
+         * @var string
+         */
+        public $deviceToken;
+        /**
+         * If set, redemption information will only be returned to the given device
+         * upon activation of the object. This should not be used as a stable
+         * identifier to trace a user's device. It can change across different passes
+         * for the same device or even across different activations for the same
+         * device. When setting this, callers must also set has_linked_device on the
+         * object being activated.
+         *
+         * @param string $deviceToken
+         */
+        public function setDeviceToken($deviceToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeviceToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Walletobjects\DeviceContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeviceToken()
+    class Google_Service_Walletobjects_DeviceContext extends \Google\Service\Walletobjects\DeviceContext
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1Vertex extends \Google\Model
-{
-    /**
-     * X coordinate.
-     *
-     * @var int
-     */
-    public $x;
-    /**
-     * Y coordinate.
-     *
-     * @var int
-     */
-    public $y;
-    /**
-     * X coordinate.
-     *
-     * @param int $x
-     */
-    public function setX($x)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1Vertex extends \Google\Model
     {
+        /**
+         * X coordinate.
+         *
+         * @var int
+         */
+        public $x;
+        /**
+         * Y coordinate.
+         *
+         * @var int
+         */
+        public $y;
+        /**
+         * X coordinate.
+         *
+         * @param int $x
+         */
+        public function setX($x)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getX()
+        {
+        }
+        /**
+         * Y coordinate.
+         *
+         * @param int $y
+         */
+        public function setY($y)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getY()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1Vertex registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getX()
-    {
-    }
-    /**
-     * Y coordinate.
-     *
-     * @param int $y
-     */
-    public function setY($y)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getY()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1Vertex extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1Vertex
     {
     }
 }

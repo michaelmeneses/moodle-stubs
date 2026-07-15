@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides;
-
-class RgbColor extends \Google\Model
-{
-    /**
-     * The blue component of the color, from 0.0 to 1.0.
-     *
-     * @var float
-     */
-    public $blue;
-    /**
-     * The green component of the color, from 0.0 to 1.0.
-     *
-     * @var float
-     */
-    public $green;
-    /**
-     * The red component of the color, from 0.0 to 1.0.
-     *
-     * @var float
-     */
-    public $red;
-    /**
-     * The blue component of the color, from 0.0 to 1.0.
-     *
-     * @param float $blue
-     */
-    public function setBlue($blue)
+namespace Google\Service\Slides {
+    class RgbColor extends \Google\Model
     {
+        /**
+         * The blue component of the color, from 0.0 to 1.0.
+         *
+         * @var float
+         */
+        public $blue;
+        /**
+         * The green component of the color, from 0.0 to 1.0.
+         *
+         * @var float
+         */
+        public $green;
+        /**
+         * The red component of the color, from 0.0 to 1.0.
+         *
+         * @var float
+         */
+        public $red;
+        /**
+         * The blue component of the color, from 0.0 to 1.0.
+         *
+         * @param float $blue
+         */
+        public function setBlue($blue)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getBlue()
+        {
+        }
+        /**
+         * The green component of the color, from 0.0 to 1.0.
+         *
+         * @param float $green
+         */
+        public function setGreen($green)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getGreen()
+        {
+        }
+        /**
+         * The red component of the color, from 0.0 to 1.0.
+         *
+         * @param float $red
+         */
+        public function setRed($red)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getRed()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\Slides\RgbColor registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBlue()
-    {
-    }
-    /**
-     * The green component of the color, from 0.0 to 1.0.
-     *
-     * @param float $green
-     */
-    public function setGreen($green)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getGreen()
-    {
-    }
-    /**
-     * The red component of the color, from 0.0 to 1.0.
-     *
-     * @param float $red
-     */
-    public function setRed($red)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getRed()
+    class Google_Service_Slides_RgbColor extends \Google\Service\Slides\RgbColor
     {
     }
 }

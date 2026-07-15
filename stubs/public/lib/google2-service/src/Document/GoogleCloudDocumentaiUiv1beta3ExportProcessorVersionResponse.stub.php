@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiUiv1beta3ExportProcessorVersionResponse extends \Google\Model
-{
-    /**
-     * The Cloud Storage URI containing the output artifacts.
-     *
-     * @var string
-     */
-    public $gcsUri;
-    /**
-     * The Cloud Storage URI containing the output artifacts.
-     *
-     * @param string $gcsUri
-     */
-    public function setGcsUri($gcsUri)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiUiv1beta3ExportProcessorVersionResponse extends \Google\Model
     {
+        /**
+         * The Cloud Storage URI containing the output artifacts.
+         *
+         * @var string
+         */
+        public $gcsUri;
+        /**
+         * The Cloud Storage URI containing the output artifacts.
+         *
+         * @param string $gcsUri
+         */
+        public function setGcsUri($gcsUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGcsUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiUiv1beta3ExportProcessorVersionResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGcsUri()
+    class Google_Service_Document_GoogleCloudDocumentaiUiv1beta3ExportProcessorVersionResponse extends \Google\Service\Document\GoogleCloudDocumentaiUiv1beta3ExportProcessorVersionResponse
     {
     }
 }

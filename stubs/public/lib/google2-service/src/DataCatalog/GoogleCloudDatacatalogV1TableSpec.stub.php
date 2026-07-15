@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1TableSpec extends \Google\Model
-{
-    /**
-     * Output only. If the table is date-sharded, that is, it matches the
-     * `[prefix]YYYYMMDD` name pattern, this field is the Data Catalog resource
-     * name of the date-sharded grouped entry. For example: `projects/{PROJECT_ID}
-     * /locations/{LOCATION}/entrygroups/{ENTRY_GROUP_ID}/entries/{ENTRY_ID}`.
-     * Otherwise, `grouped_entry` is empty.
-     *
-     * @var string
-     */
-    public $groupedEntry;
-    /**
-     * Output only. If the table is date-sharded, that is, it matches the
-     * `[prefix]YYYYMMDD` name pattern, this field is the Data Catalog resource
-     * name of the date-sharded grouped entry. For example: `projects/{PROJECT_ID}
-     * /locations/{LOCATION}/entrygroups/{ENTRY_GROUP_ID}/entries/{ENTRY_ID}`.
-     * Otherwise, `grouped_entry` is empty.
-     *
-     * @param string $groupedEntry
-     */
-    public function setGroupedEntry($groupedEntry)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1TableSpec extends \Google\Model
     {
+        /**
+         * Output only. If the table is date-sharded, that is, it matches the
+         * `[prefix]YYYYMMDD` name pattern, this field is the Data Catalog resource
+         * name of the date-sharded grouped entry. For example: `projects/{PROJECT_ID}
+         * /locations/{LOCATION}/entrygroups/{ENTRY_GROUP_ID}/entries/{ENTRY_ID}`.
+         * Otherwise, `grouped_entry` is empty.
+         *
+         * @var string
+         */
+        public $groupedEntry;
+        /**
+         * Output only. If the table is date-sharded, that is, it matches the
+         * `[prefix]YYYYMMDD` name pattern, this field is the Data Catalog resource
+         * name of the date-sharded grouped entry. For example: `projects/{PROJECT_ID}
+         * /locations/{LOCATION}/entrygroups/{ENTRY_GROUP_ID}/entries/{ENTRY_ID}`.
+         * Otherwise, `grouped_entry` is empty.
+         *
+         * @param string $groupedEntry
+         */
+        public function setGroupedEntry($groupedEntry)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGroupedEntry()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1TableSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGroupedEntry()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1TableSpec extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1TableSpec
     {
     }
 }

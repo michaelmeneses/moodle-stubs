@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class GroupedResult extends \Google\Collection
-{
-    protected $collection_key = 'results';
-    protected $boundingPolyType = BoundingPoly::class;
-    protected $boundingPolyDataType = '';
-    protected $objectAnnotationsType = ObjectAnnotation::class;
-    protected $objectAnnotationsDataType = 'array';
-    protected $resultsType = Result::class;
-    protected $resultsDataType = 'array';
-    /**
-     * The bounding polygon around the product detected in the query image.
-     *
-     * @param BoundingPoly $boundingPoly
-     */
-    public function setBoundingPoly(BoundingPoly $boundingPoly)
+namespace Google\Service\Vision {
+    class GroupedResult extends \Google\Collection
     {
+        protected $collection_key = 'results';
+        protected $boundingPolyType = BoundingPoly::class;
+        protected $boundingPolyDataType = '';
+        protected $objectAnnotationsType = ObjectAnnotation::class;
+        protected $objectAnnotationsDataType = 'array';
+        protected $resultsType = Result::class;
+        protected $resultsDataType = 'array';
+        /**
+         * The bounding polygon around the product detected in the query image.
+         *
+         * @param BoundingPoly $boundingPoly
+         */
+        public function setBoundingPoly(BoundingPoly $boundingPoly)
+        {
+        }
+        /**
+         * @return BoundingPoly
+         */
+        public function getBoundingPoly()
+        {
+        }
+        /**
+         * List of generic predictions for the object in the bounding box.
+         *
+         * @param ObjectAnnotation[] $objectAnnotations
+         */
+        public function setObjectAnnotations($objectAnnotations)
+        {
+        }
+        /**
+         * @return ObjectAnnotation[]
+         */
+        public function getObjectAnnotations()
+        {
+        }
+        /**
+         * List of results, one for each product match.
+         *
+         * @param Result[] $results
+         */
+        public function setResults($results)
+        {
+        }
+        /**
+         * @return Result[]
+         */
+        public function getResults()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BoundingPoly
+     * Runtime class alias of \Google\Service\Vision\GroupedResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBoundingPoly()
-    {
-    }
-    /**
-     * List of generic predictions for the object in the bounding box.
-     *
-     * @param ObjectAnnotation[] $objectAnnotations
-     */
-    public function setObjectAnnotations($objectAnnotations)
-    {
-    }
-    /**
-     * @return ObjectAnnotation[]
-     */
-    public function getObjectAnnotations()
-    {
-    }
-    /**
-     * List of results, one for each product match.
-     *
-     * @param Result[] $results
-     */
-    public function setResults($results)
-    {
-    }
-    /**
-     * @return Result[]
-     */
-    public function getResults()
+    class Google_Service_Vision_GroupedResult extends \Google\Service\Vision\GroupedResult
     {
     }
 }

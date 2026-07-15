@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2ProcessingLocation extends \Google\Model
-{
-    protected $documentFallbackLocationType = GooglePrivacyDlpV2DocumentFallbackLocation::class;
-    protected $documentFallbackLocationDataType = '';
-    protected $imageFallbackLocationType = GooglePrivacyDlpV2ImageFallbackLocation::class;
-    protected $imageFallbackLocationDataType = '';
-    /**
-     * Document processing falls back using this configuration.
-     *
-     * @param GooglePrivacyDlpV2DocumentFallbackLocation $documentFallbackLocation
-     */
-    public function setDocumentFallbackLocation(GooglePrivacyDlpV2DocumentFallbackLocation $documentFallbackLocation)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2ProcessingLocation extends \Google\Model
     {
+        protected $documentFallbackLocationType = GooglePrivacyDlpV2DocumentFallbackLocation::class;
+        protected $documentFallbackLocationDataType = '';
+        protected $imageFallbackLocationType = GooglePrivacyDlpV2ImageFallbackLocation::class;
+        protected $imageFallbackLocationDataType = '';
+        /**
+         * Document processing falls back using this configuration.
+         *
+         * @param GooglePrivacyDlpV2DocumentFallbackLocation $documentFallbackLocation
+         */
+        public function setDocumentFallbackLocation(GooglePrivacyDlpV2DocumentFallbackLocation $documentFallbackLocation)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2DocumentFallbackLocation
+         */
+        public function getDocumentFallbackLocation()
+        {
+        }
+        /**
+         * Image processing falls back using this configuration.
+         *
+         * @param GooglePrivacyDlpV2ImageFallbackLocation $imageFallbackLocation
+         */
+        public function setImageFallbackLocation(GooglePrivacyDlpV2ImageFallbackLocation $imageFallbackLocation)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2ImageFallbackLocation
+         */
+        public function getImageFallbackLocation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2DocumentFallbackLocation
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2ProcessingLocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDocumentFallbackLocation()
-    {
-    }
-    /**
-     * Image processing falls back using this configuration.
-     *
-     * @param GooglePrivacyDlpV2ImageFallbackLocation $imageFallbackLocation
-     */
-    public function setImageFallbackLocation(GooglePrivacyDlpV2ImageFallbackLocation $imageFallbackLocation)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2ImageFallbackLocation
-     */
-    public function getImageFallbackLocation()
+    class Google_Service_DLP_GooglePrivacyDlpV2ProcessingLocation extends \Google\Service\DLP\GooglePrivacyDlpV2ProcessingLocation
     {
     }
 }

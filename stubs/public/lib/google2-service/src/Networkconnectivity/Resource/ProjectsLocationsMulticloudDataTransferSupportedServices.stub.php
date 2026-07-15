@@ -21,45 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity\Resource;
-
-/**
- * The "multicloudDataTransferSupportedServices" collection of methods.
- * Typical usage is:
- *  <code>
- *   $networkconnectivityService = new Google\Service\Networkconnectivity(...);
- *   $multicloudDataTransferSupportedServices = $networkconnectivityService->projects_locations_multicloudDataTransferSupportedServices;
- *  </code>
- */
-class ProjectsLocationsMulticloudDataTransferSupportedServices extends \Google\Service\Resource
-{
+namespace Google\Service\Networkconnectivity\Resource {
+    use Google\Service\Networkconnectivity\ListMulticloudDataTransferSupportedServicesResponse;
+    use Google\Service\Networkconnectivity\MulticloudDataTransferSupportedService;
     /**
-     * Gets the details of a service that is supported for Data Transfer Essentials.
-     * (multicloudDataTransferSupportedServices.get)
-     *
-     * @param string $name Required. The name of the service.
-     * @param array $optParams Optional parameters.
-     * @return MulticloudDataTransferSupportedService
-     * @throws \Google\Service\Exception
+     * The "multicloudDataTransferSupportedServices" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $networkconnectivityService = new Google\Service\Networkconnectivity(...);
+     *   $multicloudDataTransferSupportedServices = $networkconnectivityService->projects_locations_multicloudDataTransferSupportedServices;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class ProjectsLocationsMulticloudDataTransferSupportedServices extends \Google\Service\Resource
     {
+        /**
+         * Gets the details of a service that is supported for Data Transfer Essentials.
+         * (multicloudDataTransferSupportedServices.get)
+         *
+         * @param string $name Required. The name of the service.
+         * @param array $optParams Optional parameters.
+         * @return MulticloudDataTransferSupportedService
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists the services in the project for a region that are supported for Data
+         * Transfer Essentials. (multicloudDataTransferSupportedServices.listProjectsLoc
+         * ationsMulticloudDataTransferSupportedServices)
+         *
+         * @param string $parent Required. The name of the parent resource.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Optional. The maximum number of results listed per
+         * page.
+         * @opt_param string pageToken Optional. The page token.
+         * @return ListMulticloudDataTransferSupportedServicesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsMulticloudDataTransferSupportedServices($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists the services in the project for a region that are supported for Data
-     * Transfer Essentials. (multicloudDataTransferSupportedServices.listProjectsLoc
-     * ationsMulticloudDataTransferSupportedServices)
-     *
-     * @param string $parent Required. The name of the parent resource.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Optional. The maximum number of results listed per
-     * page.
-     * @opt_param string pageToken Optional. The page token.
-     * @return ListMulticloudDataTransferSupportedServicesResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Networkconnectivity\Resource\ProjectsLocationsMulticloudDataTransferSupportedServices registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listProjectsLocationsMulticloudDataTransferSupportedServices($parent, $optParams = [])
+    class Google_Service_Networkconnectivity_Resource_ProjectsLocationsMulticloudDataTransferSupportedServices extends \Google\Service\Networkconnectivity\Resource\ProjectsLocationsMulticloudDataTransferSupportedServices
     {
     }
 }

@@ -21,41 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Playdeveloperreporting\Resource;
-
-/**
- * The "lmkrate" collection of methods.
- * Typical usage is:
- *  <code>
- *   $playdeveloperreportingService = new Google\Service\Playdeveloperreporting(...);
- *   $lmkrate = $playdeveloperreportingService->vitals_lmkrate;
- *  </code>
- */
-class VitalsLmkrate extends \Google\Service\Resource
-{
+namespace Google\Service\Playdeveloperreporting\Resource {
+    use Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1LmkRateMetricSet;
+    use Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1QueryLmkRateMetricSetRequest;
+    use Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1QueryLmkRateMetricSetResponse;
     /**
-     * Describes the properties of the metric set. (lmkrate.get)
-     *
-     * @param string $name Required. The resource name. Format:
-     * apps/{app}/lmkRateMetricSet
-     * @param array $optParams Optional parameters.
-     * @return GooglePlayDeveloperReportingV1beta1LmkRateMetricSet
-     * @throws \Google\Service\Exception
+     * The "lmkrate" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $playdeveloperreportingService = new Google\Service\Playdeveloperreporting(...);
+     *   $lmkrate = $playdeveloperreportingService->vitals_lmkrate;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class VitalsLmkrate extends \Google\Service\Resource
     {
+        /**
+         * Describes the properties of the metric set. (lmkrate.get)
+         *
+         * @param string $name Required. The resource name. Format:
+         * apps/{app}/lmkRateMetricSet
+         * @param array $optParams Optional parameters.
+         * @return GooglePlayDeveloperReportingV1beta1LmkRateMetricSet
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Queries the metrics in the metric set. (lmkrate.query)
+         *
+         * @param string $name Required. The resource name. Format:
+         * apps/{app}/lmkRateMetricSet
+         * @param GooglePlayDeveloperReportingV1beta1QueryLmkRateMetricSetRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GooglePlayDeveloperReportingV1beta1QueryLmkRateMetricSetResponse
+         * @throws \Google\Service\Exception
+         */
+        public function query($name, GooglePlayDeveloperReportingV1beta1QueryLmkRateMetricSetRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Queries the metrics in the metric set. (lmkrate.query)
-     *
-     * @param string $name Required. The resource name. Format:
-     * apps/{app}/lmkRateMetricSet
-     * @param GooglePlayDeveloperReportingV1beta1QueryLmkRateMetricSetRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GooglePlayDeveloperReportingV1beta1QueryLmkRateMetricSetResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Playdeveloperreporting\Resource\VitalsLmkrate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function query($name, GooglePlayDeveloperReportingV1beta1QueryLmkRateMetricSetRequest $postBody, $optParams = [])
+    class Google_Service_Playdeveloperreporting_Resource_VitalsLmkrate extends \Google\Service\Playdeveloperreporting\Resource\VitalsLmkrate
     {
     }
 }

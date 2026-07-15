@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMwareEngine;
-
-class ListUpgradesResponse extends \Google\Collection
-{
-    protected $collection_key = 'upgrades';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of unreachable resources.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    protected $upgradesType = Upgrade::class;
-    protected $upgradesDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\VMwareEngine {
+    class ListUpgradesResponse extends \Google\Collection
     {
+        protected $collection_key = 'upgrades';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of unreachable resources.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        protected $upgradesType = Upgrade::class;
+        protected $upgradesDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * List of unreachable resources.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
+        /**
+         * A list of `Upgrades`.
+         *
+         * @param Upgrade[] $upgrades
+         */
+        public function setUpgrades($upgrades)
+        {
+        }
+        /**
+         * @return Upgrade[]
+         */
+        public function getUpgrades()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\VMwareEngine\ListUpgradesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * List of unreachable resources.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
-    {
-    }
-    /**
-     * A list of `Upgrades`.
-     *
-     * @param Upgrade[] $upgrades
-     */
-    public function setUpgrades($upgrades)
-    {
-    }
-    /**
-     * @return Upgrade[]
-     */
-    public function getUpgrades()
+    class Google_Service_VMwareEngine_ListUpgradesResponse extends \Google\Service\VMwareEngine\ListUpgradesResponse
     {
     }
 }

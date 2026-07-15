@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceNetworking;
-
-class ListDnsRecordSetsResponse extends \Google\Collection
-{
-    protected $collection_key = 'dnsRecordSets';
-    protected $dnsRecordSetsType = DnsRecordSet::class;
-    protected $dnsRecordSetsDataType = 'array';
-    /**
-     * DNS record Set Resource
-     *
-     * @param DnsRecordSet[] $dnsRecordSets
-     */
-    public function setDnsRecordSets($dnsRecordSets)
+namespace Google\Service\ServiceNetworking {
+    class ListDnsRecordSetsResponse extends \Google\Collection
     {
+        protected $collection_key = 'dnsRecordSets';
+        protected $dnsRecordSetsType = DnsRecordSet::class;
+        protected $dnsRecordSetsDataType = 'array';
+        /**
+         * DNS record Set Resource
+         *
+         * @param DnsRecordSet[] $dnsRecordSets
+         */
+        public function setDnsRecordSets($dnsRecordSets)
+        {
+        }
+        /**
+         * @return DnsRecordSet[]
+         */
+        public function getDnsRecordSets()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DnsRecordSet[]
+     * Runtime class alias of \Google\Service\ServiceNetworking\ListDnsRecordSetsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDnsRecordSets()
+    class Google_Service_ServiceNetworking_ListDnsRecordSetsResponse extends \Google\Service\ServiceNetworking\ListDnsRecordSetsResponse
     {
     }
 }

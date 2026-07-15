@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AppHub;
-
-class LookupServiceProjectAttachmentResponse extends \Google\Model
-{
-    protected $serviceProjectAttachmentType = ServiceProjectAttachment::class;
-    protected $serviceProjectAttachmentDataType = '';
-    /**
-     * Service project attachment for a project if exists, empty otherwise.
-     *
-     * @param ServiceProjectAttachment $serviceProjectAttachment
-     */
-    public function setServiceProjectAttachment(ServiceProjectAttachment $serviceProjectAttachment)
+namespace Google\Service\AppHub {
+    class LookupServiceProjectAttachmentResponse extends \Google\Model
     {
+        protected $serviceProjectAttachmentType = ServiceProjectAttachment::class;
+        protected $serviceProjectAttachmentDataType = '';
+        /**
+         * Service project attachment for a project if exists, empty otherwise.
+         *
+         * @param ServiceProjectAttachment $serviceProjectAttachment
+         */
+        public function setServiceProjectAttachment(ServiceProjectAttachment $serviceProjectAttachment)
+        {
+        }
+        /**
+         * @return ServiceProjectAttachment
+         */
+        public function getServiceProjectAttachment()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ServiceProjectAttachment
+     * Runtime class alias of \Google\Service\AppHub\LookupServiceProjectAttachmentResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getServiceProjectAttachment()
+    class Google_Service_AppHub_LookupServiceProjectAttachmentResponse extends \Google\Service\AppHub\LookupServiceProjectAttachmentResponse
     {
     }
 }

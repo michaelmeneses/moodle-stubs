@@ -21,121 +21,130 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1AdditionalSpecContent extends \Google\Model
-{
-    /**
-     * Unspecified spec content type. Defaults to spec content uploaded by the
-     * user.
-     */
-    public const SPEC_CONTENT_TYPE_SPEC_CONTENT_TYPE_UNSPECIFIED = 'SPEC_CONTENT_TYPE_UNSPECIFIED';
-    /**
-     * The spec content type for boosted spec.
-     */
-    public const SPEC_CONTENT_TYPE_BOOSTED_SPEC_CONTENT = 'BOOSTED_SPEC_CONTENT';
-    /**
-     * The spec content type for OpenAPI spec. This enum is used for OpenAPI specs
-     * ingested via APIGEE X Gateway.
-     */
-    public const SPEC_CONTENT_TYPE_GATEWAY_OPEN_API_SPEC = 'GATEWAY_OPEN_API_SPEC';
-    /**
-     * Output only. The time at which the spec content was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Optional. The labels of the spec content e.g. specboost addon version.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Required. The type of the spec content.
-     *
-     * @var string
-     */
-    public $specContentType;
-    protected $specContentsType = GoogleCloudApihubV1SpecContents::class;
-    protected $specContentsDataType = '';
-    /**
-     * Output only. The time at which the spec content was last updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. The time at which the spec content was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1AdditionalSpecContent extends \Google\Model
     {
+        /**
+         * Unspecified spec content type. Defaults to spec content uploaded by the
+         * user.
+         */
+        public const SPEC_CONTENT_TYPE_SPEC_CONTENT_TYPE_UNSPECIFIED = 'SPEC_CONTENT_TYPE_UNSPECIFIED';
+        /**
+         * The spec content type for boosted spec.
+         */
+        public const SPEC_CONTENT_TYPE_BOOSTED_SPEC_CONTENT = 'BOOSTED_SPEC_CONTENT';
+        /**
+         * The spec content type for OpenAPI spec. This enum is used for OpenAPI specs
+         * ingested via APIGEE X Gateway.
+         */
+        public const SPEC_CONTENT_TYPE_GATEWAY_OPEN_API_SPEC = 'GATEWAY_OPEN_API_SPEC';
+        /**
+         * Output only. The time at which the spec content was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Optional. The labels of the spec content e.g. specboost addon version.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Required. The type of the spec content.
+         *
+         * @var string
+         */
+        public $specContentType;
+        protected $specContentsType = GoogleCloudApihubV1SpecContents::class;
+        protected $specContentsDataType = '';
+        /**
+         * Output only. The time at which the spec content was last updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. The time at which the spec content was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Optional. The labels of the spec content e.g. specboost addon version.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Required. The type of the spec content.
+         *
+         * Accepted values: SPEC_CONTENT_TYPE_UNSPECIFIED, BOOSTED_SPEC_CONTENT,
+         * GATEWAY_OPEN_API_SPEC
+         *
+         * @param self::SPEC_CONTENT_TYPE_* $specContentType
+         */
+        public function setSpecContentType($specContentType)
+        {
+        }
+        /**
+         * @return self::SPEC_CONTENT_TYPE_*
+         */
+        public function getSpecContentType()
+        {
+        }
+        /**
+         * Optional. The additional spec contents.
+         *
+         * @param GoogleCloudApihubV1SpecContents $specContents
+         */
+        public function setSpecContents(GoogleCloudApihubV1SpecContents $specContents)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1SpecContents
+         */
+        public function getSpecContents()
+        {
+        }
+        /**
+         * Output only. The time at which the spec content was last updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1AdditionalSpecContent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Optional. The labels of the spec content e.g. specboost addon version.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Required. The type of the spec content.
-     *
-     * Accepted values: SPEC_CONTENT_TYPE_UNSPECIFIED, BOOSTED_SPEC_CONTENT,
-     * GATEWAY_OPEN_API_SPEC
-     *
-     * @param self::SPEC_CONTENT_TYPE_* $specContentType
-     */
-    public function setSpecContentType($specContentType)
-    {
-    }
-    /**
-     * @return self::SPEC_CONTENT_TYPE_*
-     */
-    public function getSpecContentType()
-    {
-    }
-    /**
-     * Optional. The additional spec contents.
-     *
-     * @param GoogleCloudApihubV1SpecContents $specContents
-     */
-    public function setSpecContents(GoogleCloudApihubV1SpecContents $specContents)
-    {
-    }
-    /**
-     * @return GoogleCloudApihubV1SpecContents
-     */
-    public function getSpecContents()
-    {
-    }
-    /**
-     * Output only. The time at which the spec content was last updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_APIhub_GoogleCloudApihubV1AdditionalSpecContent extends \Google\Service\APIhub\GoogleCloudApihubV1AdditionalSpecContent
     {
     }
 }

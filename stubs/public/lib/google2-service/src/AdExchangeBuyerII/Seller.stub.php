@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyerII;
-
-class Seller extends \Google\Model
-{
-    /**
-     * The unique ID for the seller. The seller fills in this field. The seller
-     * account ID is then available to buyer in the product.
-     *
-     * @var string
-     */
-    public $accountId;
-    /**
-     * Output only. Ad manager network code for the seller.
-     *
-     * @var string
-     */
-    public $subAccountId;
-    /**
-     * The unique ID for the seller. The seller fills in this field. The seller
-     * account ID is then available to buyer in the product.
-     *
-     * @param string $accountId
-     */
-    public function setAccountId($accountId)
+namespace Google\Service\AdExchangeBuyerII {
+    class Seller extends \Google\Model
     {
+        /**
+         * The unique ID for the seller. The seller fills in this field. The seller
+         * account ID is then available to buyer in the product.
+         *
+         * @var string
+         */
+        public $accountId;
+        /**
+         * Output only. Ad manager network code for the seller.
+         *
+         * @var string
+         */
+        public $subAccountId;
+        /**
+         * The unique ID for the seller. The seller fills in this field. The seller
+         * account ID is then available to buyer in the product.
+         *
+         * @param string $accountId
+         */
+        public function setAccountId($accountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccountId()
+        {
+        }
+        /**
+         * Output only. Ad manager network code for the seller.
+         *
+         * @param string $subAccountId
+         */
+        public function setSubAccountId($subAccountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubAccountId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AdExchangeBuyerII\Seller registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountId()
-    {
-    }
-    /**
-     * Output only. Ad manager network code for the seller.
-     *
-     * @param string $subAccountId
-     */
-    public function setSubAccountId($subAccountId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubAccountId()
+    class Google_Service_AdExchangeBuyerII_Seller extends \Google\Service\AdExchangeBuyerII\Seller
     {
     }
 }

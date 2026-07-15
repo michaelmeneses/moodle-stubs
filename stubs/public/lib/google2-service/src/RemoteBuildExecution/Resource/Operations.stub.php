@@ -21,33 +21,44 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution\Resource;
-
-/**
- * The "operations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $remotebuildexecutionService = new Google\Service\RemoteBuildExecution(...);
- *   $operations = $remotebuildexecutionService->operations;
- *  </code>
- */
-class Operations extends \Google\Service\Resource
-{
+namespace Google\Service\RemoteBuildExecution\Resource {
+    use Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2WaitExecutionRequest;
+    use Google\Service\RemoteBuildExecution\GoogleLongrunningOperation;
     /**
-     * Wait for an execution operation to complete. When the client initially makes
-     * the request, the server immediately responds with the current status of the
-     * execution. The server will leave the request stream open until the operation
-     * completes, and then respond with the completed operation. The server MAY
-     * choose to stream additional updates as execution progresses, such as to
-     * provide an update as to the state of the execution.
-     * (operations.waitExecution)
-     *
-     * @param string $name The name of the Operation returned by Execute.
-     * @param BuildBazelRemoteExecutionV2WaitExecutionRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
+     * The "operations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $remotebuildexecutionService = new Google\Service\RemoteBuildExecution(...);
+     *   $operations = $remotebuildexecutionService->operations;
+     *  </code>
      */
-    public function waitExecution($name, BuildBazelRemoteExecutionV2WaitExecutionRequest $postBody, $optParams = [])
+    class Operations extends \Google\Service\Resource
+    {
+        /**
+         * Wait for an execution operation to complete. When the client initially makes
+         * the request, the server immediately responds with the current status of the
+         * execution. The server will leave the request stream open until the operation
+         * completes, and then respond with the completed operation. The server MAY
+         * choose to stream additional updates as execution progresses, such as to
+         * provide an update as to the state of the execution.
+         * (operations.waitExecution)
+         *
+         * @param string $name The name of the Operation returned by Execute.
+         * @param BuildBazelRemoteExecutionV2WaitExecutionRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         */
+        public function waitExecution($name, BuildBazelRemoteExecutionV2WaitExecutionRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\Resource\Operations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_RemoteBuildExecution_Resource_Operations extends \Google\Service\RemoteBuildExecution\Resource\Operations
     {
     }
 }

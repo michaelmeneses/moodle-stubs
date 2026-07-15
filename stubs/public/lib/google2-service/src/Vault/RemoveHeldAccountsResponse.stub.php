@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vault;
-
-class RemoveHeldAccountsResponse extends \Google\Collection
-{
-    protected $collection_key = 'statuses';
-    protected $statusesType = Status::class;
-    protected $statusesDataType = 'array';
-    /**
-     * A list of statuses for the deleted accounts. Results have the same order as
-     * the request.
-     *
-     * @param Status[] $statuses
-     */
-    public function setStatuses($statuses)
+namespace Google\Service\Vault {
+    class RemoveHeldAccountsResponse extends \Google\Collection
     {
+        protected $collection_key = 'statuses';
+        protected $statusesType = Status::class;
+        protected $statusesDataType = 'array';
+        /**
+         * A list of statuses for the deleted accounts. Results have the same order as
+         * the request.
+         *
+         * @param Status[] $statuses
+         */
+        public function setStatuses($statuses)
+        {
+        }
+        /**
+         * @return Status[]
+         */
+        public function getStatuses()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Status[]
+     * Runtime class alias of \Google\Service\Vault\RemoveHeldAccountsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStatuses()
+    class Google_Service_Vault_RemoveHeldAccountsResponse extends \Google\Service\Vault\RemoveHeldAccountsResponse
     {
     }
 }

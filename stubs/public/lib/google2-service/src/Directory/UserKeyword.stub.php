@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class UserKeyword extends \Google\Model
-{
-    /**
-     * Custom Type.
-     *
-     * @var string
-     */
-    public $customType;
-    /**
-     * Each entry can have a type which indicates standard type of that entry. For
-     * example keyword could be of type occupation or outlook. In addition to the
-     * standard type an entry can have a custom type and can give it any name.
-     * Such types should have the CUSTOM value as type and also have a customType
-     * value.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Keyword.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Custom Type.
-     *
-     * @param string $customType
-     */
-    public function setCustomType($customType)
+namespace Google\Service\Directory {
+    class UserKeyword extends \Google\Model
     {
+        /**
+         * Custom Type.
+         *
+         * @var string
+         */
+        public $customType;
+        /**
+         * Each entry can have a type which indicates standard type of that entry. For
+         * example keyword could be of type occupation or outlook. In addition to the
+         * standard type an entry can have a custom type and can give it any name.
+         * Such types should have the CUSTOM value as type and also have a customType
+         * value.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Keyword.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Custom Type.
+         *
+         * @param string $customType
+         */
+        public function setCustomType($customType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomType()
+        {
+        }
+        /**
+         * Each entry can have a type which indicates standard type of that entry. For
+         * example keyword could be of type occupation or outlook. In addition to the
+         * standard type an entry can have a custom type and can give it any name.
+         * Such types should have the CUSTOM value as type and also have a customType
+         * value.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
+        /**
+         * Keyword.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Directory\UserKeyword registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomType()
-    {
-    }
-    /**
-     * Each entry can have a type which indicates standard type of that entry. For
-     * example keyword could be of type occupation or outlook. In addition to the
-     * standard type an entry can have a custom type and can give it any name.
-     * Such types should have the CUSTOM value as type and also have a customType
-     * value.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
-    {
-    }
-    /**
-     * Keyword.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_Directory_UserKeyword extends \Google\Service\Directory\UserKeyword
     {
     }
 }

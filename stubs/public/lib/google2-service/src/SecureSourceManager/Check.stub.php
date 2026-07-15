@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecureSourceManager;
-
-class Check extends \Google\Model
-{
-    /**
-     * Required. The context of the check.
-     *
-     * @var string
-     */
-    public $context;
-    /**
-     * Required. The context of the check.
-     *
-     * @param string $context
-     */
-    public function setContext($context)
+namespace Google\Service\SecureSourceManager {
+    class Check extends \Google\Model
     {
+        /**
+         * Required. The context of the check.
+         *
+         * @var string
+         */
+        public $context;
+        /**
+         * Required. The context of the check.
+         *
+         * @param string $context
+         */
+        public function setContext($context)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContext()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecureSourceManager\Check registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContext()
+    class Google_Service_SecureSourceManager_Check extends \Google\Service\SecureSourceManager\Check
     {
     }
 }

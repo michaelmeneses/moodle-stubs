@@ -21,63 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class ConversionStatus extends \Google\Collection
-{
-    protected $collection_key = 'errors';
-    protected $conversionType = Conversion::class;
-    protected $conversionDataType = '';
-    protected $errorsType = ConversionError::class;
-    protected $errorsDataType = 'array';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#conversionStatus".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The original conversion that was inserted or updated.
-     *
-     * @param Conversion $conversion
-     */
-    public function setConversion(Conversion $conversion)
+namespace Google\Service\Dfareporting {
+    class ConversionStatus extends \Google\Collection
     {
+        protected $collection_key = 'errors';
+        protected $conversionType = Conversion::class;
+        protected $conversionDataType = '';
+        protected $errorsType = ConversionError::class;
+        protected $errorsDataType = 'array';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#conversionStatus".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The original conversion that was inserted or updated.
+         *
+         * @param Conversion $conversion
+         */
+        public function setConversion(Conversion $conversion)
+        {
+        }
+        /**
+         * @return Conversion
+         */
+        public function getConversion()
+        {
+        }
+        /**
+         * A list of errors related to this conversion.
+         *
+         * @param ConversionError[] $errors
+         */
+        public function setErrors($errors)
+        {
+        }
+        /**
+         * @return ConversionError[]
+         */
+        public function getErrors()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#conversionStatus".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Conversion
+     * Runtime class alias of \Google\Service\Dfareporting\ConversionStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConversion()
-    {
-    }
-    /**
-     * A list of errors related to this conversion.
-     *
-     * @param ConversionError[] $errors
-     */
-    public function setErrors($errors)
-    {
-    }
-    /**
-     * @return ConversionError[]
-     */
-    public function getErrors()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#conversionStatus".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_Dfareporting_ConversionStatus extends \Google\Service\Dfareporting\ConversionStatus
     {
     }
 }

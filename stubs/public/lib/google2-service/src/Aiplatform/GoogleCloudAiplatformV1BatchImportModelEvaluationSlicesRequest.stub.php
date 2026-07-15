@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1BatchImportModelEvaluationSlicesRequest extends \Google\Collection
-{
-    protected $collection_key = 'modelEvaluationSlices';
-    protected $modelEvaluationSlicesType = GoogleCloudAiplatformV1ModelEvaluationSlice::class;
-    protected $modelEvaluationSlicesDataType = 'array';
-    /**
-     * Required. Model evaluation slice resource to be imported.
-     *
-     * @param GoogleCloudAiplatformV1ModelEvaluationSlice[] $modelEvaluationSlices
-     */
-    public function setModelEvaluationSlices($modelEvaluationSlices)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1BatchImportModelEvaluationSlicesRequest extends \Google\Collection
     {
+        protected $collection_key = 'modelEvaluationSlices';
+        protected $modelEvaluationSlicesType = GoogleCloudAiplatformV1ModelEvaluationSlice::class;
+        protected $modelEvaluationSlicesDataType = 'array';
+        /**
+         * Required. Model evaluation slice resource to be imported.
+         *
+         * @param GoogleCloudAiplatformV1ModelEvaluationSlice[] $modelEvaluationSlices
+         */
+        public function setModelEvaluationSlices($modelEvaluationSlices)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ModelEvaluationSlice[]
+         */
+        public function getModelEvaluationSlices()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1ModelEvaluationSlice[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1BatchImportModelEvaluationSlicesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getModelEvaluationSlices()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1BatchImportModelEvaluationSlicesRequest extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1BatchImportModelEvaluationSlicesRequest
     {
     }
 }

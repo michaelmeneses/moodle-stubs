@@ -8,6 +8,7 @@
  */
 namespace Aws\SocialMessaging;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS End User Messaging Social** service.
  * @method \Aws\Result associateWhatsAppBusinessAccount(array $args = [])

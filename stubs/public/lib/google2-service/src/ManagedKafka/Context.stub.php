@@ -21,59 +21,68 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManagedKafka;
-
-class Context extends \Google\Collection
-{
-    protected $collection_key = 'subjects';
-    /**
-     * Identifier. The name of the context. Structured like: `projects/{project}/l
-     * ocations/{location}/schemaRegistries/{schema_registry}/contexts/{context}`
-     * The context name {context} can contain the following: * Up to 255
-     * characters. * Allowed characters: letters (uppercase or lowercase),
-     * numbers, and the following special characters: `.`, `-`, `_`, `+`, `%`, and
-     * `~`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optional. The subjects of the context.
-     *
-     * @var string[]
-     */
-    public $subjects;
-    /**
-     * Identifier. The name of the context. Structured like: `projects/{project}/l
-     * ocations/{location}/schemaRegistries/{schema_registry}/contexts/{context}`
-     * The context name {context} can contain the following: * Up to 255
-     * characters. * Allowed characters: letters (uppercase or lowercase),
-     * numbers, and the following special characters: `.`, `-`, `_`, `+`, `%`, and
-     * `~`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\ManagedKafka {
+    class Context extends \Google\Collection
     {
+        protected $collection_key = 'subjects';
+        /**
+         * Identifier. The name of the context. Structured like: `projects/{project}/l
+         * ocations/{location}/schemaRegistries/{schema_registry}/contexts/{context}`
+         * The context name {context} can contain the following: * Up to 255
+         * characters. * Allowed characters: letters (uppercase or lowercase),
+         * numbers, and the following special characters: `.`, `-`, `_`, `+`, `%`, and
+         * `~`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optional. The subjects of the context.
+         *
+         * @var string[]
+         */
+        public $subjects;
+        /**
+         * Identifier. The name of the context. Structured like: `projects/{project}/l
+         * ocations/{location}/schemaRegistries/{schema_registry}/contexts/{context}`
+         * The context name {context} can contain the following: * Up to 255
+         * characters. * Allowed characters: letters (uppercase or lowercase),
+         * numbers, and the following special characters: `.`, `-`, `_`, `+`, `%`, and
+         * `~`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. The subjects of the context.
+         *
+         * @param string[] $subjects
+         */
+        public function setSubjects($subjects)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSubjects()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ManagedKafka\Context registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. The subjects of the context.
-     *
-     * @param string[] $subjects
-     */
-    public function setSubjects($subjects)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSubjects()
+    class Google_Service_ManagedKafka_Context extends \Google\Service\ManagedKafka\Context
     {
     }
 }

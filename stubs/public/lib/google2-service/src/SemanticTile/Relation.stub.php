@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SemanticTile;
-
-class Relation extends \Google\Model
-{
-    public $relatedFeatureIndex;
-    public $relationType;
-    public function setRelatedFeatureIndex($relatedFeatureIndex)
+namespace Google\Service\SemanticTile {
+    class Relation extends \Google\Model
     {
+        public $relatedFeatureIndex;
+        public $relationType;
+        public function setRelatedFeatureIndex($relatedFeatureIndex)
+        {
+        }
+        public function getRelatedFeatureIndex()
+        {
+        }
+        public function setRelationType($relationType)
+        {
+        }
+        public function getRelationType()
+        {
+        }
     }
-    public function getRelatedFeatureIndex()
-    {
-    }
-    public function setRelationType($relationType)
-    {
-    }
-    public function getRelationType()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\SemanticTile\Relation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_SemanticTile_Relation extends \Google\Service\SemanticTile\Relation
     {
     }
 }

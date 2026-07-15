@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedOrganizationInfo extends \Google\Model
-{
-    protected $consumerInfoType = AppsDynamiteSharedOrganizationInfoConsumerInfo::class;
-    protected $consumerInfoDataType = '';
-    protected $customerInfoType = AppsDynamiteSharedOrganizationInfoCustomerInfo::class;
-    protected $customerInfoDataType = '';
-    /**
-     * @param AppsDynamiteSharedOrganizationInfoConsumerInfo
-     */
-    public function setConsumerInfo(AppsDynamiteSharedOrganizationInfoConsumerInfo $consumerInfo)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedOrganizationInfo extends \Google\Model
     {
+        protected $consumerInfoType = AppsDynamiteSharedOrganizationInfoConsumerInfo::class;
+        protected $consumerInfoDataType = '';
+        protected $customerInfoType = AppsDynamiteSharedOrganizationInfoCustomerInfo::class;
+        protected $customerInfoDataType = '';
+        /**
+         * @param AppsDynamiteSharedOrganizationInfoConsumerInfo
+         */
+        public function setConsumerInfo(AppsDynamiteSharedOrganizationInfoConsumerInfo $consumerInfo)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedOrganizationInfoConsumerInfo
+         */
+        public function getConsumerInfo()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedOrganizationInfoCustomerInfo
+         */
+        public function setCustomerInfo(AppsDynamiteSharedOrganizationInfoCustomerInfo $customerInfo)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedOrganizationInfoCustomerInfo
+         */
+        public function getCustomerInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppsDynamiteSharedOrganizationInfoConsumerInfo
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedOrganizationInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConsumerInfo()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedOrganizationInfoCustomerInfo
-     */
-    public function setCustomerInfo(AppsDynamiteSharedOrganizationInfoCustomerInfo $customerInfo)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedOrganizationInfoCustomerInfo
-     */
-    public function getCustomerInfo()
+    class Google_Service_CloudSearch_AppsDynamiteSharedOrganizationInfo extends \Google\Service\CloudSearch\AppsDynamiteSharedOrganizationInfo
     {
     }
 }

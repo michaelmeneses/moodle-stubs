@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class ComplianceStandard extends \Google\Model
-{
-    /**
-     * Name of the compliance standard.
-     *
-     * @var string
-     */
-    public $standard;
-    /**
-     * Name of the compliance standard.
-     *
-     * @param string $standard
-     */
-    public function setStandard($standard)
+namespace Google\Service\Container {
+    class ComplianceStandard extends \Google\Model
     {
+        /**
+         * Name of the compliance standard.
+         *
+         * @var string
+         */
+        public $standard;
+        /**
+         * Name of the compliance standard.
+         *
+         * @param string $standard
+         */
+        public function setStandard($standard)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStandard()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Container\ComplianceStandard registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStandard()
+    class Google_Service_Container_ComplianceStandard extends \Google\Service\Container\ComplianceStandard
     {
     }
 }

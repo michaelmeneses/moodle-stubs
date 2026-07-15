@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1TagFieldEnumValue extends \Google\Model
-{
-    /**
-     * The display name of the enum value.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The display name of the enum value.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1TagFieldEnumValue extends \Google\Model
     {
+        /**
+         * The display name of the enum value.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The display name of the enum value.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1TagFieldEnumValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1TagFieldEnumValue extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1TagFieldEnumValue
     {
     }
 }

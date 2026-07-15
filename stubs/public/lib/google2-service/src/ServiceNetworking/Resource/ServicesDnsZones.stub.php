@@ -21,50 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceNetworking\Resource;
-
-/**
- * The "dnsZones" collection of methods.
- * Typical usage is:
- *  <code>
- *   $servicenetworkingService = new Google\Service\ServiceNetworking(...);
- *   $dnsZones = $servicenetworkingService->services_dnsZones;
- *  </code>
- */
-class ServicesDnsZones extends \Google\Service\Resource
-{
+namespace Google\Service\ServiceNetworking\Resource {
+    use Google\Service\ServiceNetworking\AddDnsZoneRequest;
+    use Google\Service\ServiceNetworking\Operation;
+    use Google\Service\ServiceNetworking\RemoveDnsZoneRequest;
     /**
-     * Service producers can use this method to add private DNS zones in the shared
-     * producer host project and matching peering zones in the consumer project.
-     * (dnsZones.add)
-     *
-     * @param string $parent Required. The service that is managing peering
-     * connectivity for a service producer's organization. For Google services that
-     * support this functionality, this value is
-     * `services/servicenetworking.googleapis.com`.
-     * @param AddDnsZoneRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * The "dnsZones" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $servicenetworkingService = new Google\Service\ServiceNetworking(...);
+     *   $dnsZones = $servicenetworkingService->services_dnsZones;
+     *  </code>
      */
-    public function add($parent, AddDnsZoneRequest $postBody, $optParams = [])
+    class ServicesDnsZones extends \Google\Service\Resource
     {
+        /**
+         * Service producers can use this method to add private DNS zones in the shared
+         * producer host project and matching peering zones in the consumer project.
+         * (dnsZones.add)
+         *
+         * @param string $parent Required. The service that is managing peering
+         * connectivity for a service producer's organization. For Google services that
+         * support this functionality, this value is
+         * `services/servicenetworking.googleapis.com`.
+         * @param AddDnsZoneRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function add($parent, AddDnsZoneRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Service producers can use this method to remove private DNS zones in the
+         * shared producer host project and matching peering zones in the consumer
+         * project. (dnsZones.remove)
+         *
+         * @param string $parent Required. The service that is managing peering
+         * connectivity for a service producer's organization. For Google services that
+         * support this functionality, this value is
+         * `services/servicenetworking.googleapis.com`.
+         * @param RemoveDnsZoneRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function remove($parent, RemoveDnsZoneRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Service producers can use this method to remove private DNS zones in the
-     * shared producer host project and matching peering zones in the consumer
-     * project. (dnsZones.remove)
-     *
-     * @param string $parent Required. The service that is managing peering
-     * connectivity for a service producer's organization. For Google services that
-     * support this functionality, this value is
-     * `services/servicenetworking.googleapis.com`.
-     * @param RemoveDnsZoneRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\ServiceNetworking\Resource\ServicesDnsZones registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function remove($parent, RemoveDnsZoneRequest $postBody, $optParams = [])
+    class Google_Service_ServiceNetworking_Resource_ServicesDnsZones extends \Google\Service\ServiceNetworking\Resource\ServicesDnsZones
     {
     }
 }

@@ -20,26 +20,35 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\exception;
-
-/**
- * Exception indicating programming error, must be fixed by a programer. For example
- * a core API might throw this type of exception if a plugin calls it incorrectly.
- *
- * @package    core
- * @subpackage exception
- * @copyright  2008 Petr Skoda  {@link http://skodak.org}
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-class coding_exception extends moodle_exception
-{
+namespace core\exception {
     /**
-     * Constructor.
+     * Exception indicating programming error, must be fixed by a programer. For example
+     * a core API might throw this type of exception if a plugin calls it incorrectly.
      *
-     * @param string $hint short description of problem
-     * @param string $debuginfo detailed information how to fix problem
+     * @package    core
+     * @subpackage exception
+     * @copyright  2008 Petr Skoda  {@link http://skodak.org}
+     * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
      */
-    public function __construct($hint, $debuginfo = null)
+    class coding_exception extends moodle_exception
+    {
+        /**
+         * Constructor.
+         *
+         * @param string $hint short description of problem
+         * @param string $debuginfo detailed information how to fix problem
+         */
+        public function __construct($hint, $debuginfo = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \core\exception\coding_exception registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class coding_exception extends \core\exception\coding_exception
     {
     }
 }

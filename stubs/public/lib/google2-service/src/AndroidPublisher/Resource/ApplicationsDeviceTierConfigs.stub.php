@@ -21,64 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher\Resource;
-
-/**
- * The "deviceTierConfigs" collection of methods.
- * Typical usage is:
- *  <code>
- *   $androidpublisherService = new Google\Service\AndroidPublisher(...);
- *   $deviceTierConfigs = $androidpublisherService->applications_deviceTierConfigs;
- *  </code>
- */
-class ApplicationsDeviceTierConfigs extends \Google\Service\Resource
-{
+namespace Google\Service\AndroidPublisher\Resource {
+    use Google\Service\AndroidPublisher\DeviceTierConfig;
+    use Google\Service\AndroidPublisher\ListDeviceTierConfigsResponse;
     /**
-     * Creates a new device tier config for an app. (deviceTierConfigs.create)
-     *
-     * @param string $packageName Package name of the app.
-     * @param DeviceTierConfig $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool allowUnknownDevices Whether the service should accept device
-     * IDs that are unknown to Play's device catalog.
-     * @return DeviceTierConfig
-     * @throws \Google\Service\Exception
+     * The "deviceTierConfigs" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $androidpublisherService = new Google\Service\AndroidPublisher(...);
+     *   $deviceTierConfigs = $androidpublisherService->applications_deviceTierConfigs;
+     *  </code>
      */
-    public function create($packageName, DeviceTierConfig $postBody, $optParams = [])
+    class ApplicationsDeviceTierConfigs extends \Google\Service\Resource
     {
+        /**
+         * Creates a new device tier config for an app. (deviceTierConfigs.create)
+         *
+         * @param string $packageName Package name of the app.
+         * @param DeviceTierConfig $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool allowUnknownDevices Whether the service should accept device
+         * IDs that are unknown to Play's device catalog.
+         * @return DeviceTierConfig
+         * @throws \Google\Service\Exception
+         */
+        public function create($packageName, DeviceTierConfig $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Returns a particular device tier config. (deviceTierConfigs.get)
+         *
+         * @param string $packageName Package name of the app.
+         * @param string $deviceTierConfigId Required. Id of an existing device tier
+         * config.
+         * @param array $optParams Optional parameters.
+         * @return DeviceTierConfig
+         * @throws \Google\Service\Exception
+         */
+        public function get($packageName, $deviceTierConfigId, $optParams = [])
+        {
+        }
+        /**
+         * Returns created device tier configs, ordered by descending creation time.
+         * (deviceTierConfigs.listApplicationsDeviceTierConfigs)
+         *
+         * @param string $packageName Package name of the app.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The maximum number of device tier configs to return.
+         * The service may return fewer than this value. If unspecified, at most 10
+         * device tier configs will be returned. The maximum value for this field is
+         * 100; values above 100 will be coerced to 100. Device tier configs will be
+         * ordered by descending creation time.
+         * @opt_param string pageToken A page token, received from a previous
+         * `ListDeviceTierConfigs` call. Provide this to retrieve the subsequent page.
+         * @return ListDeviceTierConfigsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listApplicationsDeviceTierConfigs($packageName, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Returns a particular device tier config. (deviceTierConfigs.get)
-     *
-     * @param string $packageName Package name of the app.
-     * @param string $deviceTierConfigId Required. Id of an existing device tier
-     * config.
-     * @param array $optParams Optional parameters.
-     * @return DeviceTierConfig
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\AndroidPublisher\Resource\ApplicationsDeviceTierConfigs registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($packageName, $deviceTierConfigId, $optParams = [])
-    {
-    }
-    /**
-     * Returns created device tier configs, ordered by descending creation time.
-     * (deviceTierConfigs.listApplicationsDeviceTierConfigs)
-     *
-     * @param string $packageName Package name of the app.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The maximum number of device tier configs to return.
-     * The service may return fewer than this value. If unspecified, at most 10
-     * device tier configs will be returned. The maximum value for this field is
-     * 100; values above 100 will be coerced to 100. Device tier configs will be
-     * ordered by descending creation time.
-     * @opt_param string pageToken A page token, received from a previous
-     * `ListDeviceTierConfigs` call. Provide this to retrieve the subsequent page.
-     * @return ListDeviceTierConfigsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listApplicationsDeviceTierConfigs($packageName, $optParams = [])
+    class Google_Service_AndroidPublisher_Resource_ApplicationsDeviceTierConfigs extends \Google\Service\AndroidPublisher\Resource\ApplicationsDeviceTierConfigs
     {
     }
 }

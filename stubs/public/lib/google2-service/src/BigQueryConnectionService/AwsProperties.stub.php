@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigQueryConnectionService;
-
-class AwsProperties extends \Google\Model
-{
-    protected $accessRoleType = AwsAccessRole::class;
-    protected $accessRoleDataType = '';
-    /**
-     * Authentication using Google owned service account to assume into customer's
-     * AWS IAM Role.
-     *
-     * @param AwsAccessRole $accessRole
-     */
-    public function setAccessRole(AwsAccessRole $accessRole)
+namespace Google\Service\BigQueryConnectionService {
+    class AwsProperties extends \Google\Model
     {
+        protected $accessRoleType = AwsAccessRole::class;
+        protected $accessRoleDataType = '';
+        /**
+         * Authentication using Google owned service account to assume into customer's
+         * AWS IAM Role.
+         *
+         * @param AwsAccessRole $accessRole
+         */
+        public function setAccessRole(AwsAccessRole $accessRole)
+        {
+        }
+        /**
+         * @return AwsAccessRole
+         */
+        public function getAccessRole()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AwsAccessRole
+     * Runtime class alias of \Google\Service\BigQueryConnectionService\AwsProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccessRole()
+    class Google_Service_BigQueryConnectionService_AwsProperties extends \Google\Service\BigQueryConnectionService\AwsProperties
     {
     }
 }

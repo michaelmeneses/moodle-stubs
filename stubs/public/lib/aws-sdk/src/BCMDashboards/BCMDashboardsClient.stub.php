@@ -8,6 +8,7 @@
  */
 namespace Aws\BCMDashboards;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Billing and Cost Management Dashboards** service.
  * @method \Aws\Result createDashboard(array $args = [])

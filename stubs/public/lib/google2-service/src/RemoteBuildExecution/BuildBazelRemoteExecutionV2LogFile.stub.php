@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution;
-
-class BuildBazelRemoteExecutionV2LogFile extends \Google\Model
-{
-    protected $digestType = BuildBazelRemoteExecutionV2Digest::class;
-    protected $digestDataType = '';
-    public $humanReadable;
+namespace Google\Service\RemoteBuildExecution {
+    class BuildBazelRemoteExecutionV2LogFile extends \Google\Model
+    {
+        protected $digestType = BuildBazelRemoteExecutionV2Digest::class;
+        protected $digestDataType = '';
+        public $humanReadable;
+        /**
+         * @param BuildBazelRemoteExecutionV2Digest
+         */
+        public function setDigest(BuildBazelRemoteExecutionV2Digest $digest)
+        {
+        }
+        /**
+         * @return BuildBazelRemoteExecutionV2Digest
+         */
+        public function getDigest()
+        {
+        }
+        public function setHumanReadable($humanReadable)
+        {
+        }
+        public function getHumanReadable()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @param BuildBazelRemoteExecutionV2Digest
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2LogFile registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setDigest(BuildBazelRemoteExecutionV2Digest $digest)
-    {
-    }
-    /**
-     * @return BuildBazelRemoteExecutionV2Digest
-     */
-    public function getDigest()
-    {
-    }
-    public function setHumanReadable($humanReadable)
-    {
-    }
-    public function getHumanReadable()
+    class Google_Service_RemoteBuildExecution_BuildBazelRemoteExecutionV2LogFile extends \Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2LogFile
     {
     }
 }

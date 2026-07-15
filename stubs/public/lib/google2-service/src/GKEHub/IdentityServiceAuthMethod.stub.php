@@ -21,128 +21,137 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class IdentityServiceAuthMethod extends \Google\Model
-{
-    protected $azureadConfigType = IdentityServiceAzureADConfig::class;
-    protected $azureadConfigDataType = '';
-    protected $googleConfigType = IdentityServiceGoogleConfig::class;
-    protected $googleConfigDataType = '';
-    protected $ldapConfigType = IdentityServiceLdapConfig::class;
-    protected $ldapConfigDataType = '';
-    /**
-     * Identifier for auth config.
-     *
-     * @var string
-     */
-    public $name;
-    protected $oidcConfigType = IdentityServiceOidcConfig::class;
-    protected $oidcConfigDataType = '';
-    /**
-     * Proxy server address to use for auth method.
-     *
-     * @var string
-     */
-    public $proxy;
-    protected $samlConfigType = IdentityServiceSamlConfig::class;
-    protected $samlConfigDataType = '';
-    /**
-     * AzureAD specific Configuration.
-     *
-     * @param IdentityServiceAzureADConfig $azureadConfig
-     */
-    public function setAzureadConfig(IdentityServiceAzureADConfig $azureadConfig)
+namespace Google\Service\GKEHub {
+    class IdentityServiceAuthMethod extends \Google\Model
     {
+        protected $azureadConfigType = IdentityServiceAzureADConfig::class;
+        protected $azureadConfigDataType = '';
+        protected $googleConfigType = IdentityServiceGoogleConfig::class;
+        protected $googleConfigDataType = '';
+        protected $ldapConfigType = IdentityServiceLdapConfig::class;
+        protected $ldapConfigDataType = '';
+        /**
+         * Identifier for auth config.
+         *
+         * @var string
+         */
+        public $name;
+        protected $oidcConfigType = IdentityServiceOidcConfig::class;
+        protected $oidcConfigDataType = '';
+        /**
+         * Proxy server address to use for auth method.
+         *
+         * @var string
+         */
+        public $proxy;
+        protected $samlConfigType = IdentityServiceSamlConfig::class;
+        protected $samlConfigDataType = '';
+        /**
+         * AzureAD specific Configuration.
+         *
+         * @param IdentityServiceAzureADConfig $azureadConfig
+         */
+        public function setAzureadConfig(IdentityServiceAzureADConfig $azureadConfig)
+        {
+        }
+        /**
+         * @return IdentityServiceAzureADConfig
+         */
+        public function getAzureadConfig()
+        {
+        }
+        /**
+         * GoogleConfig specific configuration
+         *
+         * @param IdentityServiceGoogleConfig $googleConfig
+         */
+        public function setGoogleConfig(IdentityServiceGoogleConfig $googleConfig)
+        {
+        }
+        /**
+         * @return IdentityServiceGoogleConfig
+         */
+        public function getGoogleConfig()
+        {
+        }
+        /**
+         * LDAP specific configuration.
+         *
+         * @param IdentityServiceLdapConfig $ldapConfig
+         */
+        public function setLdapConfig(IdentityServiceLdapConfig $ldapConfig)
+        {
+        }
+        /**
+         * @return IdentityServiceLdapConfig
+         */
+        public function getLdapConfig()
+        {
+        }
+        /**
+         * Identifier for auth config.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * OIDC specific configuration.
+         *
+         * @param IdentityServiceOidcConfig $oidcConfig
+         */
+        public function setOidcConfig(IdentityServiceOidcConfig $oidcConfig)
+        {
+        }
+        /**
+         * @return IdentityServiceOidcConfig
+         */
+        public function getOidcConfig()
+        {
+        }
+        /**
+         * Proxy server address to use for auth method.
+         *
+         * @param string $proxy
+         */
+        public function setProxy($proxy)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProxy()
+        {
+        }
+        /**
+         * SAML specific configuration.
+         *
+         * @param IdentityServiceSamlConfig $samlConfig
+         */
+        public function setSamlConfig(IdentityServiceSamlConfig $samlConfig)
+        {
+        }
+        /**
+         * @return IdentityServiceSamlConfig
+         */
+        public function getSamlConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return IdentityServiceAzureADConfig
+     * Runtime class alias of \Google\Service\GKEHub\IdentityServiceAuthMethod registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAzureadConfig()
-    {
-    }
-    /**
-     * GoogleConfig specific configuration
-     *
-     * @param IdentityServiceGoogleConfig $googleConfig
-     */
-    public function setGoogleConfig(IdentityServiceGoogleConfig $googleConfig)
-    {
-    }
-    /**
-     * @return IdentityServiceGoogleConfig
-     */
-    public function getGoogleConfig()
-    {
-    }
-    /**
-     * LDAP specific configuration.
-     *
-     * @param IdentityServiceLdapConfig $ldapConfig
-     */
-    public function setLdapConfig(IdentityServiceLdapConfig $ldapConfig)
-    {
-    }
-    /**
-     * @return IdentityServiceLdapConfig
-     */
-    public function getLdapConfig()
-    {
-    }
-    /**
-     * Identifier for auth config.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * OIDC specific configuration.
-     *
-     * @param IdentityServiceOidcConfig $oidcConfig
-     */
-    public function setOidcConfig(IdentityServiceOidcConfig $oidcConfig)
-    {
-    }
-    /**
-     * @return IdentityServiceOidcConfig
-     */
-    public function getOidcConfig()
-    {
-    }
-    /**
-     * Proxy server address to use for auth method.
-     *
-     * @param string $proxy
-     */
-    public function setProxy($proxy)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProxy()
-    {
-    }
-    /**
-     * SAML specific configuration.
-     *
-     * @param IdentityServiceSamlConfig $samlConfig
-     */
-    public function setSamlConfig(IdentityServiceSamlConfig $samlConfig)
-    {
-    }
-    /**
-     * @return IdentityServiceSamlConfig
-     */
-    public function getSamlConfig()
+    class Google_Service_GKEHub_IdentityServiceAuthMethod extends \Google\Service\GKEHub\IdentityServiceAuthMethod
     {
     }
 }

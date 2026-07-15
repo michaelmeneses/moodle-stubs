@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseDataConnect;
-
-class Source extends \Google\Collection
-{
-    protected $collection_key = 'files';
-    protected $filesType = FirebasedataconnectFile::class;
-    protected $filesDataType = 'array';
-    /**
-     * Required. The files that comprise the source set.
-     *
-     * @param FirebasedataconnectFile[] $files
-     */
-    public function setFiles($files)
+namespace Google\Service\FirebaseDataConnect {
+    class Source extends \Google\Collection
     {
+        protected $collection_key = 'files';
+        protected $filesType = FirebasedataconnectFile::class;
+        protected $filesDataType = 'array';
+        /**
+         * Required. The files that comprise the source set.
+         *
+         * @param FirebasedataconnectFile[] $files
+         */
+        public function setFiles($files)
+        {
+        }
+        /**
+         * @return FirebasedataconnectFile[]
+         */
+        public function getFiles()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FirebasedataconnectFile[]
+     * Runtime class alias of \Google\Service\FirebaseDataConnect\Source registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFiles()
+    class Google_Service_FirebaseDataConnect_Source extends \Google\Service\FirebaseDataConnect\Source
     {
     }
 }

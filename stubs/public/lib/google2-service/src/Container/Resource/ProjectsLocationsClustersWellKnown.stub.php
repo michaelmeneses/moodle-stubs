@@ -21,31 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container\Resource;
-
-/**
- * The "well-known" collection of methods.
- * Typical usage is:
- *  <code>
- *   $containerService = new Google\Service\Container(...);
- *   $well_known = $containerService->projects_locations_clusters_well_known;
- *  </code>
- */
-class ProjectsLocationsClustersWellKnown extends \Google\Service\Resource
-{
+namespace Google\Service\Container\Resource {
+    use Google\Service\Container\GetOpenIDConfigResponse;
     /**
-     * Gets the OIDC discovery document for the cluster. See the [OpenID Connect
-     * Discovery 1.0 specification](https://openid.net/specs/openid-connect-
-     * discovery-1_0.html) for details. (well-known.getOpenidConfiguration)
-     *
-     * @param string $parent The cluster (project, location, cluster name) to get
-     * the discovery document for. Specified in the format
-     * `projects/locations/clusters`.
-     * @param array $optParams Optional parameters.
-     * @return GetOpenIDConfigResponse
-     * @throws \Google\Service\Exception
+     * The "well-known" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $containerService = new Google\Service\Container(...);
+     *   $well_known = $containerService->projects_locations_clusters_well_known;
+     *  </code>
      */
-    public function getOpenidConfiguration($parent, $optParams = [])
+    class ProjectsLocationsClustersWellKnown extends \Google\Service\Resource
+    {
+        /**
+         * Gets the OIDC discovery document for the cluster. See the [OpenID Connect
+         * Discovery 1.0 specification](https://openid.net/specs/openid-connect-
+         * discovery-1_0.html) for details. (well-known.getOpenidConfiguration)
+         *
+         * @param string $parent The cluster (project, location, cluster name) to get
+         * the discovery document for. Specified in the format
+         * `projects/locations/clusters`.
+         * @param array $optParams Optional parameters.
+         * @return GetOpenIDConfigResponse
+         * @throws \Google\Service\Exception
+         */
+        public function getOpenidConfiguration($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Container\Resource\ProjectsLocationsClustersWellKnown registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Container_Resource_ProjectsLocationsClustersWellKnown extends \Google\Service\Container\Resource\ProjectsLocationsClustersWellKnown
     {
     }
 }

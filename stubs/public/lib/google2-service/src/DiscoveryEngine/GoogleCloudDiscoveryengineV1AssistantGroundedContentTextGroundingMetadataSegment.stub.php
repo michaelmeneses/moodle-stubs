@@ -21,113 +21,122 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1AssistantGroundedContentTextGroundingMetadataSegment extends \Google\Collection
-{
-    protected $collection_key = 'referenceIndices';
-    /**
-     * End of the segment, exclusive.
-     *
-     * @var string
-     */
-    public $endIndex;
-    /**
-     * Score for the segment.
-     *
-     * @var float
-     */
-    public $groundingScore;
-    /**
-     * References for the segment.
-     *
-     * @var int[]
-     */
-    public $referenceIndices;
-    /**
-     * Zero-based index indicating the start of the segment, measured in bytes of
-     * a UTF-8 string (i.e. characters encoded on multiple bytes have a length of
-     * more than one).
-     *
-     * @var string
-     */
-    public $startIndex;
-    /**
-     * The text segment itself.
-     *
-     * @var string
-     */
-    public $text;
-    /**
-     * End of the segment, exclusive.
-     *
-     * @param string $endIndex
-     */
-    public function setEndIndex($endIndex)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1AssistantGroundedContentTextGroundingMetadataSegment extends \Google\Collection
     {
+        protected $collection_key = 'referenceIndices';
+        /**
+         * End of the segment, exclusive.
+         *
+         * @var string
+         */
+        public $endIndex;
+        /**
+         * Score for the segment.
+         *
+         * @var float
+         */
+        public $groundingScore;
+        /**
+         * References for the segment.
+         *
+         * @var int[]
+         */
+        public $referenceIndices;
+        /**
+         * Zero-based index indicating the start of the segment, measured in bytes of
+         * a UTF-8 string (i.e. characters encoded on multiple bytes have a length of
+         * more than one).
+         *
+         * @var string
+         */
+        public $startIndex;
+        /**
+         * The text segment itself.
+         *
+         * @var string
+         */
+        public $text;
+        /**
+         * End of the segment, exclusive.
+         *
+         * @param string $endIndex
+         */
+        public function setEndIndex($endIndex)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndIndex()
+        {
+        }
+        /**
+         * Score for the segment.
+         *
+         * @param float $groundingScore
+         */
+        public function setGroundingScore($groundingScore)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getGroundingScore()
+        {
+        }
+        /**
+         * References for the segment.
+         *
+         * @param int[] $referenceIndices
+         */
+        public function setReferenceIndices($referenceIndices)
+        {
+        }
+        /**
+         * @return int[]
+         */
+        public function getReferenceIndices()
+        {
+        }
+        /**
+         * Zero-based index indicating the start of the segment, measured in bytes of
+         * a UTF-8 string (i.e. characters encoded on multiple bytes have a length of
+         * more than one).
+         *
+         * @param string $startIndex
+         */
+        public function setStartIndex($startIndex)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartIndex()
+        {
+        }
+        /**
+         * The text segment itself.
+         *
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AssistantGroundedContentTextGroundingMetadataSegment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndIndex()
-    {
-    }
-    /**
-     * Score for the segment.
-     *
-     * @param float $groundingScore
-     */
-    public function setGroundingScore($groundingScore)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getGroundingScore()
-    {
-    }
-    /**
-     * References for the segment.
-     *
-     * @param int[] $referenceIndices
-     */
-    public function setReferenceIndices($referenceIndices)
-    {
-    }
-    /**
-     * @return int[]
-     */
-    public function getReferenceIndices()
-    {
-    }
-    /**
-     * Zero-based index indicating the start of the segment, measured in bytes of
-     * a UTF-8 string (i.e. characters encoded on multiple bytes have a length of
-     * more than one).
-     *
-     * @param string $startIndex
-     */
-    public function setStartIndex($startIndex)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartIndex()
-    {
-    }
-    /**
-     * The text segment itself.
-     *
-     * @param string $text
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1AssistantGroundedContentTextGroundingMetadataSegment extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AssistantGroundedContentTextGroundingMetadataSegment
     {
     }
 }

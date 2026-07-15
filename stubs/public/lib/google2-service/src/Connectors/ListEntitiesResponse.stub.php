@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors;
-
-class ListEntitiesResponse extends \Google\Collection
-{
-    protected $collection_key = 'entities';
-    protected $entitiesType = Entity::class;
-    protected $entitiesDataType = 'array';
-    /**
-     * Metadata like service latency, etc.
-     *
-     * @var array[]
-     */
-    public $metadata;
-    /**
-     * Next page token if more records are available.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List containing entity rows.
-     *
-     * @param Entity[] $entities
-     */
-    public function setEntities($entities)
+namespace Google\Service\Connectors {
+    class ListEntitiesResponse extends \Google\Collection
     {
+        protected $collection_key = 'entities';
+        protected $entitiesType = Entity::class;
+        protected $entitiesDataType = 'array';
+        /**
+         * Metadata like service latency, etc.
+         *
+         * @var array[]
+         */
+        public $metadata;
+        /**
+         * Next page token if more records are available.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List containing entity rows.
+         *
+         * @param Entity[] $entities
+         */
+        public function setEntities($entities)
+        {
+        }
+        /**
+         * @return Entity[]
+         */
+        public function getEntities()
+        {
+        }
+        /**
+         * Metadata like service latency, etc.
+         *
+         * @param array[] $metadata
+         */
+        public function setMetadata($metadata)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * Next page token if more records are available.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Entity[]
+     * Runtime class alias of \Google\Service\Connectors\ListEntitiesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntities()
-    {
-    }
-    /**
-     * Metadata like service latency, etc.
-     *
-     * @param array[] $metadata
-     */
-    public function setMetadata($metadata)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * Next page token if more records are available.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Connectors_ListEntitiesResponse extends \Google\Service\Connectors\ListEntitiesResponse
     {
     }
 }

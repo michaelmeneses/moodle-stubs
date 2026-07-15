@@ -21,63 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1AnswerQueryResponse extends \Google\Model
-{
-    protected $answerType = GoogleCloudDiscoveryengineV1Answer::class;
-    protected $answerDataType = '';
-    /**
-     * A global unique ID used for logging.
-     *
-     * @var string
-     */
-    public $answerQueryToken;
-    protected $sessionType = GoogleCloudDiscoveryengineV1Session::class;
-    protected $sessionDataType = '';
-    /**
-     * Answer resource object. If AnswerQueryRequest.QueryUnderstandingSpec.QueryR
-     * ephraserSpec.max_rephrase_steps is greater than 1, use Answer.name to fetch
-     * answer information using ConversationalSearchService.GetAnswer API.
-     *
-     * @param GoogleCloudDiscoveryengineV1Answer $answer
-     */
-    public function setAnswer(GoogleCloudDiscoveryengineV1Answer $answer)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1AnswerQueryResponse extends \Google\Model
     {
+        protected $answerType = GoogleCloudDiscoveryengineV1Answer::class;
+        protected $answerDataType = '';
+        /**
+         * A global unique ID used for logging.
+         *
+         * @var string
+         */
+        public $answerQueryToken;
+        protected $sessionType = GoogleCloudDiscoveryengineV1Session::class;
+        protected $sessionDataType = '';
+        /**
+         * Answer resource object. If AnswerQueryRequest.QueryUnderstandingSpec.QueryR
+         * ephraserSpec.max_rephrase_steps is greater than 1, use Answer.name to fetch
+         * answer information using ConversationalSearchService.GetAnswer API.
+         *
+         * @param GoogleCloudDiscoveryengineV1Answer $answer
+         */
+        public function setAnswer(GoogleCloudDiscoveryengineV1Answer $answer)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1Answer
+         */
+        public function getAnswer()
+        {
+        }
+        /**
+         * A global unique ID used for logging.
+         *
+         * @param string $answerQueryToken
+         */
+        public function setAnswerQueryToken($answerQueryToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnswerQueryToken()
+        {
+        }
+        /**
+         * Session resource object. It will be only available when session field is
+         * set and valid in the AnswerQueryRequest request.
+         *
+         * @param GoogleCloudDiscoveryengineV1Session $session
+         */
+        public function setSession(GoogleCloudDiscoveryengineV1Session $session)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1Session
+         */
+        public function getSession()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1Answer
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AnswerQueryResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnswer()
-    {
-    }
-    /**
-     * A global unique ID used for logging.
-     *
-     * @param string $answerQueryToken
-     */
-    public function setAnswerQueryToken($answerQueryToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAnswerQueryToken()
-    {
-    }
-    /**
-     * Session resource object. It will be only available when session field is
-     * set and valid in the AnswerQueryRequest request.
-     *
-     * @param GoogleCloudDiscoveryengineV1Session $session
-     */
-    public function setSession(GoogleCloudDiscoveryengineV1Session $session)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1Session
-     */
-    public function getSession()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1AnswerQueryResponse extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AnswerQueryResponse
     {
     }
 }

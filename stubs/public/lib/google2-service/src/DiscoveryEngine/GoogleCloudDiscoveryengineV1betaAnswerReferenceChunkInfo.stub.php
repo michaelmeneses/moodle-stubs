@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaAnswerReferenceChunkInfo extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $chunk;
-    /**
-     * @var string
-     */
-    public $content;
-    protected $documentMetadataType = GoogleCloudDiscoveryengineV1betaAnswerReferenceChunkInfoDocumentMetadata::class;
-    protected $documentMetadataDataType = '';
-    /**
-     * @var float
-     */
-    public $relevanceScore;
-    /**
-     * @param string
-     */
-    public function setChunk($chunk)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaAnswerReferenceChunkInfo extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $chunk;
+        /**
+         * @var string
+         */
+        public $content;
+        protected $documentMetadataType = GoogleCloudDiscoveryengineV1betaAnswerReferenceChunkInfoDocumentMetadata::class;
+        protected $documentMetadataDataType = '';
+        /**
+         * @var float
+         */
+        public $relevanceScore;
+        /**
+         * @param string
+         */
+        public function setChunk($chunk)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChunk()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setContent($content)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContent()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaAnswerReferenceChunkInfoDocumentMetadata
+         */
+        public function setDocumentMetadata(GoogleCloudDiscoveryengineV1betaAnswerReferenceChunkInfoDocumentMetadata $documentMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaAnswerReferenceChunkInfoDocumentMetadata
+         */
+        public function getDocumentMetadata()
+        {
+        }
+        /**
+         * @param float
+         */
+        public function setRelevanceScore($relevanceScore)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getRelevanceScore()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaAnswerReferenceChunkInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChunk()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setContent($content)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContent()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaAnswerReferenceChunkInfoDocumentMetadata
-     */
-    public function setDocumentMetadata(GoogleCloudDiscoveryengineV1betaAnswerReferenceChunkInfoDocumentMetadata $documentMetadata)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaAnswerReferenceChunkInfoDocumentMetadata
-     */
-    public function getDocumentMetadata()
-    {
-    }
-    /**
-     * @param float
-     */
-    public function setRelevanceScore($relevanceScore)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getRelevanceScore()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaAnswerReferenceChunkInfo extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaAnswerReferenceChunkInfo
     {
     }
 }

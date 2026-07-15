@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace aiprovider_awsbedrock;
 
+use Aws\Result;
+use core_ai\ai_image;
 /**
  * Class process image generation.
  *

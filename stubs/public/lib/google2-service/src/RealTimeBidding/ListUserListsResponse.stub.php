@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RealTimeBidding;
-
-class ListUserListsResponse extends \Google\Collection
-{
-    protected $collection_key = 'userLists';
-    /**
-     * The continuation page token to send back to the server in a subsequent
-     * request. Due to a currently known issue, it is recommended that the caller
-     * keep invoking the list method until the time a next page token is not
-     * returned, even if the result set is empty.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $userListsType = UserList::class;
-    protected $userListsDataType = 'array';
-    /**
-     * The continuation page token to send back to the server in a subsequent
-     * request. Due to a currently known issue, it is recommended that the caller
-     * keep invoking the list method until the time a next page token is not
-     * returned, even if the result set is empty.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\RealTimeBidding {
+    class ListUserListsResponse extends \Google\Collection
     {
+        protected $collection_key = 'userLists';
+        /**
+         * The continuation page token to send back to the server in a subsequent
+         * request. Due to a currently known issue, it is recommended that the caller
+         * keep invoking the list method until the time a next page token is not
+         * returned, even if the result set is empty.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $userListsType = UserList::class;
+        protected $userListsDataType = 'array';
+        /**
+         * The continuation page token to send back to the server in a subsequent
+         * request. Due to a currently known issue, it is recommended that the caller
+         * keep invoking the list method until the time a next page token is not
+         * returned, even if the result set is empty.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * List of user lists from the search.
+         *
+         * @param UserList[] $userLists
+         */
+        public function setUserLists($userLists)
+        {
+        }
+        /**
+         * @return UserList[]
+         */
+        public function getUserLists()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\RealTimeBidding\ListUserListsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * List of user lists from the search.
-     *
-     * @param UserList[] $userLists
-     */
-    public function setUserLists($userLists)
-    {
-    }
-    /**
-     * @return UserList[]
-     */
-    public function getUserLists()
+    class Google_Service_RealTimeBidding_ListUserListsResponse extends \Google\Service\RealTimeBidding\ListUserListsResponse
     {
     }
 }

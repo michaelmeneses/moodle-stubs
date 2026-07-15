@@ -21,85 +21,94 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DeveloperConnect;
-
-class FetchAccessTokenResponse extends \Google\Collection
-{
-    protected $collection_key = 'scopes';
-    protected $exchangeErrorType = ExchangeError::class;
-    protected $exchangeErrorDataType = '';
-    /**
-     * Expiration timestamp. Can be empty if unknown or non-expiring.
-     *
-     * @var string
-     */
-    public $expirationTime;
-    /**
-     * The scopes of the access token.
-     *
-     * @var string[]
-     */
-    public $scopes;
-    /**
-     * The token content.
-     *
-     * @var string
-     */
-    public $token;
-    /**
-     * The error resulted from exchanging OAuth tokens from the service provider.
-     *
-     * @param ExchangeError $exchangeError
-     */
-    public function setExchangeError(ExchangeError $exchangeError)
+namespace Google\Service\DeveloperConnect {
+    class FetchAccessTokenResponse extends \Google\Collection
     {
+        protected $collection_key = 'scopes';
+        protected $exchangeErrorType = ExchangeError::class;
+        protected $exchangeErrorDataType = '';
+        /**
+         * Expiration timestamp. Can be empty if unknown or non-expiring.
+         *
+         * @var string
+         */
+        public $expirationTime;
+        /**
+         * The scopes of the access token.
+         *
+         * @var string[]
+         */
+        public $scopes;
+        /**
+         * The token content.
+         *
+         * @var string
+         */
+        public $token;
+        /**
+         * The error resulted from exchanging OAuth tokens from the service provider.
+         *
+         * @param ExchangeError $exchangeError
+         */
+        public function setExchangeError(ExchangeError $exchangeError)
+        {
+        }
+        /**
+         * @return ExchangeError
+         */
+        public function getExchangeError()
+        {
+        }
+        /**
+         * Expiration timestamp. Can be empty if unknown or non-expiring.
+         *
+         * @param string $expirationTime
+         */
+        public function setExpirationTime($expirationTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpirationTime()
+        {
+        }
+        /**
+         * The scopes of the access token.
+         *
+         * @param string[] $scopes
+         */
+        public function setScopes($scopes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getScopes()
+        {
+        }
+        /**
+         * The token content.
+         *
+         * @param string $token
+         */
+        public function setToken($token)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ExchangeError
+     * Runtime class alias of \Google\Service\DeveloperConnect\FetchAccessTokenResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExchangeError()
-    {
-    }
-    /**
-     * Expiration timestamp. Can be empty if unknown or non-expiring.
-     *
-     * @param string $expirationTime
-     */
-    public function setExpirationTime($expirationTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExpirationTime()
-    {
-    }
-    /**
-     * The scopes of the access token.
-     *
-     * @param string[] $scopes
-     */
-    public function setScopes($scopes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getScopes()
-    {
-    }
-    /**
-     * The token content.
-     *
-     * @param string $token
-     */
-    public function setToken($token)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getToken()
+    class Google_Service_DeveloperConnect_FetchAccessTokenResponse extends \Google\Service\DeveloperConnect\FetchAccessTokenResponse
     {
     }
 }

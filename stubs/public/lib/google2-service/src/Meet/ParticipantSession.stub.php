@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Meet;
-
-class ParticipantSession extends \Google\Model
-{
-    /**
-     * Output only. Timestamp when the user session ends. Unset if the user
-     * session hasn’t ended.
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * Identifier. Session id.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. Timestamp when the user session starts.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * Output only. Timestamp when the user session ends. Unset if the user
-     * session hasn’t ended.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
+namespace Google\Service\Meet {
+    class ParticipantSession extends \Google\Model
     {
+        /**
+         * Output only. Timestamp when the user session ends. Unset if the user
+         * session hasn’t ended.
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * Identifier. Session id.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. Timestamp when the user session starts.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * Output only. Timestamp when the user session ends. Unset if the user
+         * session hasn’t ended.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * Identifier. Session id.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. Timestamp when the user session starts.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Meet\ParticipantSession registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndTime()
-    {
-    }
-    /**
-     * Identifier. Session id.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. Timestamp when the user session starts.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
+    class Google_Service_Meet_ParticipantSession extends \Google\Service\Meet\ParticipantSession
     {
     }
 }

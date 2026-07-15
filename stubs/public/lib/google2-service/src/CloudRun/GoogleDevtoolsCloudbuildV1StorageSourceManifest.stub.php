@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleDevtoolsCloudbuildV1StorageSourceManifest extends \Google\Model
-{
-    /**
-     * Required. Cloud Storage bucket containing the source manifest (see [Bucket
-     * Name Requirements](https://cloud.google.com/storage/docs/bucket-
-     * naming#requirements)).
-     *
-     * @var string
-     */
-    public $bucket;
-    /**
-     * Cloud Storage generation for the object. If the generation is omitted, the
-     * latest generation will be used.
-     *
-     * @var string
-     */
-    public $generation;
-    /**
-     * Required. Cloud Storage object containing the source manifest. This object
-     * must be a JSON file.
-     *
-     * @var string
-     */
-    public $object;
-    /**
-     * Required. Cloud Storage bucket containing the source manifest (see [Bucket
-     * Name Requirements](https://cloud.google.com/storage/docs/bucket-
-     * naming#requirements)).
-     *
-     * @param string $bucket
-     */
-    public function setBucket($bucket)
+namespace Google\Service\CloudRun {
+    class GoogleDevtoolsCloudbuildV1StorageSourceManifest extends \Google\Model
     {
+        /**
+         * Required. Cloud Storage bucket containing the source manifest (see [Bucket
+         * Name Requirements](https://cloud.google.com/storage/docs/bucket-
+         * naming#requirements)).
+         *
+         * @var string
+         */
+        public $bucket;
+        /**
+         * Cloud Storage generation for the object. If the generation is omitted, the
+         * latest generation will be used.
+         *
+         * @var string
+         */
+        public $generation;
+        /**
+         * Required. Cloud Storage object containing the source manifest. This object
+         * must be a JSON file.
+         *
+         * @var string
+         */
+        public $object;
+        /**
+         * Required. Cloud Storage bucket containing the source manifest (see [Bucket
+         * Name Requirements](https://cloud.google.com/storage/docs/bucket-
+         * naming#requirements)).
+         *
+         * @param string $bucket
+         */
+        public function setBucket($bucket)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBucket()
+        {
+        }
+        /**
+         * Cloud Storage generation for the object. If the generation is omitted, the
+         * latest generation will be used.
+         *
+         * @param string $generation
+         */
+        public function setGeneration($generation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGeneration()
+        {
+        }
+        /**
+         * Required. Cloud Storage object containing the source manifest. This object
+         * must be a JSON file.
+         *
+         * @param string $object
+         */
+        public function setObject($object)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObject()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRun\GoogleDevtoolsCloudbuildV1StorageSourceManifest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBucket()
-    {
-    }
-    /**
-     * Cloud Storage generation for the object. If the generation is omitted, the
-     * latest generation will be used.
-     *
-     * @param string $generation
-     */
-    public function setGeneration($generation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGeneration()
-    {
-    }
-    /**
-     * Required. Cloud Storage object containing the source manifest. This object
-     * must be a JSON file.
-     *
-     * @param string $object
-     */
-    public function setObject($object)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObject()
+    class Google_Service_CloudRun_GoogleDevtoolsCloudbuildV1StorageSourceManifest extends \Google\Service\CloudRun\GoogleDevtoolsCloudbuildV1StorageSourceManifest
     {
     }
 }

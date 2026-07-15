@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CivicInfo;
-
-class CivicinfoApiprotosV2RepresentativeInfoData extends \Google\Collection
-{
-    protected $collection_key = 'officials';
-    protected $divisionsType = CivicinfoSchemaV2GeographicDivision::class;
-    protected $divisionsDataType = 'map';
-    protected $officesType = CivicinfoSchemaV2Office::class;
-    protected $officesDataType = 'array';
-    protected $officialsType = CivicinfoSchemaV2Official::class;
-    protected $officialsDataType = 'array';
-    /**
-     * @param CivicinfoSchemaV2GeographicDivision[]
-     */
-    public function setDivisions($divisions)
+namespace Google\Service\CivicInfo {
+    class CivicinfoApiprotosV2RepresentativeInfoData extends \Google\Collection
     {
+        protected $collection_key = 'officials';
+        protected $divisionsType = CivicinfoSchemaV2GeographicDivision::class;
+        protected $divisionsDataType = 'map';
+        protected $officesType = CivicinfoSchemaV2Office::class;
+        protected $officesDataType = 'array';
+        protected $officialsType = CivicinfoSchemaV2Official::class;
+        protected $officialsDataType = 'array';
+        /**
+         * @param CivicinfoSchemaV2GeographicDivision[]
+         */
+        public function setDivisions($divisions)
+        {
+        }
+        /**
+         * @return CivicinfoSchemaV2GeographicDivision[]
+         */
+        public function getDivisions()
+        {
+        }
+        /**
+         * @param CivicinfoSchemaV2Office[]
+         */
+        public function setOffices($offices)
+        {
+        }
+        /**
+         * @return CivicinfoSchemaV2Office[]
+         */
+        public function getOffices()
+        {
+        }
+        /**
+         * @param CivicinfoSchemaV2Official[]
+         */
+        public function setOfficials($officials)
+        {
+        }
+        /**
+         * @return CivicinfoSchemaV2Official[]
+         */
+        public function getOfficials()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CivicinfoSchemaV2GeographicDivision[]
+     * Runtime class alias of \Google\Service\CivicInfo\CivicinfoApiprotosV2RepresentativeInfoData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDivisions()
-    {
-    }
-    /**
-     * @param CivicinfoSchemaV2Office[]
-     */
-    public function setOffices($offices)
-    {
-    }
-    /**
-     * @return CivicinfoSchemaV2Office[]
-     */
-    public function getOffices()
-    {
-    }
-    /**
-     * @param CivicinfoSchemaV2Official[]
-     */
-    public function setOfficials($officials)
-    {
-    }
-    /**
-     * @return CivicinfoSchemaV2Official[]
-     */
-    public function getOfficials()
+    class Google_Service_CivicInfo_CivicinfoApiprotosV2RepresentativeInfoData extends \Google\Service\CivicInfo\CivicinfoApiprotosV2RepresentativeInfoData
     {
     }
 }

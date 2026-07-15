@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class RevocationContextItemBasedRefund extends \Google\Model
-{
-    /**
-     * Required. If the subscription is a subscription with add-ons, the product
-     * id of the subscription item to revoke.
-     *
-     * @var string
-     */
-    public $productId;
-    /**
-     * Required. If the subscription is a subscription with add-ons, the product
-     * id of the subscription item to revoke.
-     *
-     * @param string $productId
-     */
-    public function setProductId($productId)
+namespace Google\Service\AndroidPublisher {
+    class RevocationContextItemBasedRefund extends \Google\Model
     {
+        /**
+         * Required. If the subscription is a subscription with add-ons, the product
+         * id of the subscription item to revoke.
+         *
+         * @var string
+         */
+        public $productId;
+        /**
+         * Required. If the subscription is a subscription with add-ons, the product
+         * id of the subscription item to revoke.
+         *
+         * @param string $productId
+         */
+        public function setProductId($productId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProductId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidPublisher\RevocationContextItemBasedRefund registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProductId()
+    class Google_Service_AndroidPublisher_RevocationContextItemBasedRefund extends \Google\Service\AndroidPublisher\RevocationContextItemBasedRefund
     {
     }
 }

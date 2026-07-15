@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DeveloperConnect;
-
-class FetchGitRefsResponse extends \Google\Collection
-{
-    protected $collection_key = 'refNames';
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Name of the refs fetched.
-     *
-     * @var string[]
-     */
-    public $refNames;
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\DeveloperConnect {
+    class FetchGitRefsResponse extends \Google\Collection
     {
+        protected $collection_key = 'refNames';
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Name of the refs fetched.
+         *
+         * @var string[]
+         */
+        public $refNames;
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Name of the refs fetched.
+         *
+         * @param string[] $refNames
+         */
+        public function setRefNames($refNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRefNames()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DeveloperConnect\FetchGitRefsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Name of the refs fetched.
-     *
-     * @param string[] $refNames
-     */
-    public function setRefNames($refNames)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRefNames()
+    class Google_Service_DeveloperConnect_FetchGitRefsResponse extends \Google\Service\DeveloperConnect\FetchGitRefsResponse
     {
     }
 }

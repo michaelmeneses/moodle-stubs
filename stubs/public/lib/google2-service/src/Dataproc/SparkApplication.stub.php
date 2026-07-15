@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class SparkApplication extends \Google\Model
-{
-    protected $applicationType = ApplicationInfo::class;
-    protected $applicationDataType = '';
-    /**
-     * Identifier. Name of the spark application
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. High level information corresponding to an application.
-     *
-     * @param ApplicationInfo $application
-     */
-    public function setApplication(ApplicationInfo $application)
+namespace Google\Service\Dataproc {
+    class SparkApplication extends \Google\Model
     {
+        protected $applicationType = ApplicationInfo::class;
+        protected $applicationDataType = '';
+        /**
+         * Identifier. Name of the spark application
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. High level information corresponding to an application.
+         *
+         * @param ApplicationInfo $application
+         */
+        public function setApplication(ApplicationInfo $application)
+        {
+        }
+        /**
+         * @return ApplicationInfo
+         */
+        public function getApplication()
+        {
+        }
+        /**
+         * Identifier. Name of the spark application
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ApplicationInfo
+     * Runtime class alias of \Google\Service\Dataproc\SparkApplication registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApplication()
-    {
-    }
-    /**
-     * Identifier. Name of the spark application
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Dataproc_SparkApplication extends \Google\Service\Dataproc\SparkApplication
     {
     }
 }

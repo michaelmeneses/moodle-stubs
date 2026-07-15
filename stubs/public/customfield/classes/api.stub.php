@@ -29,6 +29,13 @@
  */
 namespace core_customfield;
 
+use core\output\inplace_editable;
+use core_customfield\event\category_created;
+use core_customfield\event\category_deleted;
+use core_customfield\event\category_updated;
+use core_customfield\event\field_created;
+use core_customfield\event\field_deleted;
+use core_customfield\event\field_updated;
 /**
  * Class api
  *

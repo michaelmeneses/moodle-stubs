@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BeyondCorp;
-
-class GoogleCloudBeyondcorpSecuritygatewaysV1EgressPolicy extends \Google\Collection
-{
-    protected $collection_key = 'regions';
-    /**
-     * Required. List of the regions where the application sends traffic.
-     *
-     * @var string[]
-     */
-    public $regions;
-    /**
-     * Required. List of the regions where the application sends traffic.
-     *
-     * @param string[] $regions
-     */
-    public function setRegions($regions)
+namespace Google\Service\BeyondCorp {
+    class GoogleCloudBeyondcorpSecuritygatewaysV1EgressPolicy extends \Google\Collection
     {
+        protected $collection_key = 'regions';
+        /**
+         * Required. List of the regions where the application sends traffic.
+         *
+         * @var string[]
+         */
+        public $regions;
+        /**
+         * Required. List of the regions where the application sends traffic.
+         *
+         * @param string[] $regions
+         */
+        public function setRegions($regions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRegions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\BeyondCorp\GoogleCloudBeyondcorpSecuritygatewaysV1EgressPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRegions()
+    class Google_Service_BeyondCorp_GoogleCloudBeyondcorpSecuritygatewaysV1EgressPolicy extends \Google\Service\BeyondCorp\GoogleCloudBeyondcorpSecuritygatewaysV1EgressPolicy
     {
     }
 }

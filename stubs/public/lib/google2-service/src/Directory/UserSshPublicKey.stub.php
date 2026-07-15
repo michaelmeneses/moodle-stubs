@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class UserSshPublicKey extends \Google\Model
-{
-    /**
-     * An expiration time in microseconds since epoch.
-     *
-     * @var string
-     */
-    public $expirationTimeUsec;
-    /**
-     * A SHA-256 fingerprint of the SSH public key. (Read-only)
-     *
-     * @var string
-     */
-    public $fingerprint;
-    /**
-     * An SSH public key.
-     *
-     * @var string
-     */
-    public $key;
-    /**
-     * An expiration time in microseconds since epoch.
-     *
-     * @param string $expirationTimeUsec
-     */
-    public function setExpirationTimeUsec($expirationTimeUsec)
+namespace Google\Service\Directory {
+    class UserSshPublicKey extends \Google\Model
     {
+        /**
+         * An expiration time in microseconds since epoch.
+         *
+         * @var string
+         */
+        public $expirationTimeUsec;
+        /**
+         * A SHA-256 fingerprint of the SSH public key. (Read-only)
+         *
+         * @var string
+         */
+        public $fingerprint;
+        /**
+         * An SSH public key.
+         *
+         * @var string
+         */
+        public $key;
+        /**
+         * An expiration time in microseconds since epoch.
+         *
+         * @param string $expirationTimeUsec
+         */
+        public function setExpirationTimeUsec($expirationTimeUsec)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpirationTimeUsec()
+        {
+        }
+        /**
+         * A SHA-256 fingerprint of the SSH public key. (Read-only)
+         *
+         * @param string $fingerprint
+         */
+        public function setFingerprint($fingerprint)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFingerprint()
+        {
+        }
+        /**
+         * An SSH public key.
+         *
+         * @param string $key
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Directory\UserSshPublicKey registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExpirationTimeUsec()
-    {
-    }
-    /**
-     * A SHA-256 fingerprint of the SSH public key. (Read-only)
-     *
-     * @param string $fingerprint
-     */
-    public function setFingerprint($fingerprint)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFingerprint()
-    {
-    }
-    /**
-     * An SSH public key.
-     *
-     * @param string $key
-     */
-    public function setKey($key)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKey()
+    class Google_Service_Directory_UserSshPublicKey extends \Google\Service\Directory\UserSshPublicKey
     {
     }
 }

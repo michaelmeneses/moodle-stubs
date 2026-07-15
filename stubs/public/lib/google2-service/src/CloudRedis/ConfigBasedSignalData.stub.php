@@ -21,139 +21,148 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRedis;
-
-class ConfigBasedSignalData extends \Google\Model
-{
-    /**
-     * Unspecified signal type.
-     */
-    public const SIGNAL_TYPE_SIGNAL_TYPE_UNSPECIFIED = 'SIGNAL_TYPE_UNSPECIFIED';
-    /**
-     * Outdated Minor Version
-     */
-    public const SIGNAL_TYPE_SIGNAL_TYPE_OUTDATED_MINOR_VERSION = 'SIGNAL_TYPE_OUTDATED_MINOR_VERSION';
-    /**
-     * Represents database auditing is disabled.
-     */
-    public const SIGNAL_TYPE_SIGNAL_TYPE_DATABASE_AUDITING_DISABLED = 'SIGNAL_TYPE_DATABASE_AUDITING_DISABLED';
-    /**
-     * Represents if a database has a password configured for the root account or
-     * not.
-     */
-    public const SIGNAL_TYPE_SIGNAL_TYPE_NO_ROOT_PASSWORD = 'SIGNAL_TYPE_NO_ROOT_PASSWORD';
-    /**
-     * Represents if a resource is exposed to public access.
-     */
-    public const SIGNAL_TYPE_SIGNAL_TYPE_EXPOSED_TO_PUBLIC_ACCESS = 'SIGNAL_TYPE_EXPOSED_TO_PUBLIC_ACCESS';
-    /**
-     * Represents if a resources requires all incoming connections to use SSL or
-     * not.
-     */
-    public const SIGNAL_TYPE_SIGNAL_TYPE_UNENCRYPTED_CONNECTIONS = 'SIGNAL_TYPE_UNENCRYPTED_CONNECTIONS';
-    /**
-     * Represents if a resource version is in extended support.
-     */
-    public const SIGNAL_TYPE_SIGNAL_TYPE_EXTENDED_SUPPORT = 'SIGNAL_TYPE_EXTENDED_SUPPORT';
-    /**
-     * Required. Full Resource name of the source resource.
-     *
-     * @var string
-     */
-    public $fullResourceName;
-    /**
-     * Required. Last time signal was refreshed
-     *
-     * @var string
-     */
-    public $lastRefreshTime;
-    protected $resourceIdType = DatabaseResourceId::class;
-    protected $resourceIdDataType = '';
-    /**
-     * Signal data for boolean signals.
-     *
-     * @var bool
-     */
-    public $signalBoolValue;
-    /**
-     * Required. Signal type of the signal
-     *
-     * @var string
-     */
-    public $signalType;
-    /**
-     * Required. Full Resource name of the source resource.
-     *
-     * @param string $fullResourceName
-     */
-    public function setFullResourceName($fullResourceName)
+namespace Google\Service\CloudRedis {
+    class ConfigBasedSignalData extends \Google\Model
     {
+        /**
+         * Unspecified signal type.
+         */
+        public const SIGNAL_TYPE_SIGNAL_TYPE_UNSPECIFIED = 'SIGNAL_TYPE_UNSPECIFIED';
+        /**
+         * Outdated Minor Version
+         */
+        public const SIGNAL_TYPE_SIGNAL_TYPE_OUTDATED_MINOR_VERSION = 'SIGNAL_TYPE_OUTDATED_MINOR_VERSION';
+        /**
+         * Represents database auditing is disabled.
+         */
+        public const SIGNAL_TYPE_SIGNAL_TYPE_DATABASE_AUDITING_DISABLED = 'SIGNAL_TYPE_DATABASE_AUDITING_DISABLED';
+        /**
+         * Represents if a database has a password configured for the root account or
+         * not.
+         */
+        public const SIGNAL_TYPE_SIGNAL_TYPE_NO_ROOT_PASSWORD = 'SIGNAL_TYPE_NO_ROOT_PASSWORD';
+        /**
+         * Represents if a resource is exposed to public access.
+         */
+        public const SIGNAL_TYPE_SIGNAL_TYPE_EXPOSED_TO_PUBLIC_ACCESS = 'SIGNAL_TYPE_EXPOSED_TO_PUBLIC_ACCESS';
+        /**
+         * Represents if a resources requires all incoming connections to use SSL or
+         * not.
+         */
+        public const SIGNAL_TYPE_SIGNAL_TYPE_UNENCRYPTED_CONNECTIONS = 'SIGNAL_TYPE_UNENCRYPTED_CONNECTIONS';
+        /**
+         * Represents if a resource version is in extended support.
+         */
+        public const SIGNAL_TYPE_SIGNAL_TYPE_EXTENDED_SUPPORT = 'SIGNAL_TYPE_EXTENDED_SUPPORT';
+        /**
+         * Required. Full Resource name of the source resource.
+         *
+         * @var string
+         */
+        public $fullResourceName;
+        /**
+         * Required. Last time signal was refreshed
+         *
+         * @var string
+         */
+        public $lastRefreshTime;
+        protected $resourceIdType = DatabaseResourceId::class;
+        protected $resourceIdDataType = '';
+        /**
+         * Signal data for boolean signals.
+         *
+         * @var bool
+         */
+        public $signalBoolValue;
+        /**
+         * Required. Signal type of the signal
+         *
+         * @var string
+         */
+        public $signalType;
+        /**
+         * Required. Full Resource name of the source resource.
+         *
+         * @param string $fullResourceName
+         */
+        public function setFullResourceName($fullResourceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFullResourceName()
+        {
+        }
+        /**
+         * Required. Last time signal was refreshed
+         *
+         * @param string $lastRefreshTime
+         */
+        public function setLastRefreshTime($lastRefreshTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastRefreshTime()
+        {
+        }
+        /**
+         * Database resource id.
+         *
+         * @param DatabaseResourceId $resourceId
+         */
+        public function setResourceId(DatabaseResourceId $resourceId)
+        {
+        }
+        /**
+         * @return DatabaseResourceId
+         */
+        public function getResourceId()
+        {
+        }
+        /**
+         * Signal data for boolean signals.
+         *
+         * @param bool $signalBoolValue
+         */
+        public function setSignalBoolValue($signalBoolValue)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSignalBoolValue()
+        {
+        }
+        /**
+         * Required. Signal type of the signal
+         *
+         * Accepted values: SIGNAL_TYPE_UNSPECIFIED,
+         * SIGNAL_TYPE_OUTDATED_MINOR_VERSION, SIGNAL_TYPE_DATABASE_AUDITING_DISABLED,
+         * SIGNAL_TYPE_NO_ROOT_PASSWORD, SIGNAL_TYPE_EXPOSED_TO_PUBLIC_ACCESS,
+         * SIGNAL_TYPE_UNENCRYPTED_CONNECTIONS, SIGNAL_TYPE_EXTENDED_SUPPORT
+         *
+         * @param self::SIGNAL_TYPE_* $signalType
+         */
+        public function setSignalType($signalType)
+        {
+        }
+        /**
+         * @return self::SIGNAL_TYPE_*
+         */
+        public function getSignalType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRedis\ConfigBasedSignalData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFullResourceName()
-    {
-    }
-    /**
-     * Required. Last time signal was refreshed
-     *
-     * @param string $lastRefreshTime
-     */
-    public function setLastRefreshTime($lastRefreshTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastRefreshTime()
-    {
-    }
-    /**
-     * Database resource id.
-     *
-     * @param DatabaseResourceId $resourceId
-     */
-    public function setResourceId(DatabaseResourceId $resourceId)
-    {
-    }
-    /**
-     * @return DatabaseResourceId
-     */
-    public function getResourceId()
-    {
-    }
-    /**
-     * Signal data for boolean signals.
-     *
-     * @param bool $signalBoolValue
-     */
-    public function setSignalBoolValue($signalBoolValue)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSignalBoolValue()
-    {
-    }
-    /**
-     * Required. Signal type of the signal
-     *
-     * Accepted values: SIGNAL_TYPE_UNSPECIFIED,
-     * SIGNAL_TYPE_OUTDATED_MINOR_VERSION, SIGNAL_TYPE_DATABASE_AUDITING_DISABLED,
-     * SIGNAL_TYPE_NO_ROOT_PASSWORD, SIGNAL_TYPE_EXPOSED_TO_PUBLIC_ACCESS,
-     * SIGNAL_TYPE_UNENCRYPTED_CONNECTIONS, SIGNAL_TYPE_EXTENDED_SUPPORT
-     *
-     * @param self::SIGNAL_TYPE_* $signalType
-     */
-    public function setSignalType($signalType)
-    {
-    }
-    /**
-     * @return self::SIGNAL_TYPE_*
-     */
-    public function getSignalType()
+    class Google_Service_CloudRedis_ConfigBasedSignalData extends \Google\Service\CloudRedis\ConfigBasedSignalData
     {
     }
 }

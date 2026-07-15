@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Translate;
-
-class TranslateDocumentResponse extends \Google\Model
-{
-    protected $documentTranslationType = DocumentTranslation::class;
-    protected $documentTranslationDataType = '';
-    protected $glossaryConfigType = TranslateTextGlossaryConfig::class;
-    protected $glossaryConfigDataType = '';
-    protected $glossaryDocumentTranslationType = DocumentTranslation::class;
-    protected $glossaryDocumentTranslationDataType = '';
-    /**
-     * Only present when 'model' is present in the request. 'model' is normalized
-     * to have a project number. For example: If the 'model' field in
-     * TranslateDocumentRequest is: `projects/{project-id}/locations/{location-
-     * id}/models/general/nmt` then `model` here would be normalized to
-     * `projects/{project-number}/locations/{location-id}/models/general/nmt`.
-     *
-     * @var string
-     */
-    public $model;
-    /**
-     * Translated document.
-     *
-     * @param DocumentTranslation $documentTranslation
-     */
-    public function setDocumentTranslation(DocumentTranslation $documentTranslation)
+namespace Google\Service\Translate {
+    class TranslateDocumentResponse extends \Google\Model
     {
+        protected $documentTranslationType = DocumentTranslation::class;
+        protected $documentTranslationDataType = '';
+        protected $glossaryConfigType = TranslateTextGlossaryConfig::class;
+        protected $glossaryConfigDataType = '';
+        protected $glossaryDocumentTranslationType = DocumentTranslation::class;
+        protected $glossaryDocumentTranslationDataType = '';
+        /**
+         * Only present when 'model' is present in the request. 'model' is normalized
+         * to have a project number. For example: If the 'model' field in
+         * TranslateDocumentRequest is: `projects/{project-id}/locations/{location-
+         * id}/models/general/nmt` then `model` here would be normalized to
+         * `projects/{project-number}/locations/{location-id}/models/general/nmt`.
+         *
+         * @var string
+         */
+        public $model;
+        /**
+         * Translated document.
+         *
+         * @param DocumentTranslation $documentTranslation
+         */
+        public function setDocumentTranslation(DocumentTranslation $documentTranslation)
+        {
+        }
+        /**
+         * @return DocumentTranslation
+         */
+        public function getDocumentTranslation()
+        {
+        }
+        /**
+         * The `glossary_config` used for this translation.
+         *
+         * @param TranslateTextGlossaryConfig $glossaryConfig
+         */
+        public function setGlossaryConfig(TranslateTextGlossaryConfig $glossaryConfig)
+        {
+        }
+        /**
+         * @return TranslateTextGlossaryConfig
+         */
+        public function getGlossaryConfig()
+        {
+        }
+        /**
+         * The document's translation output if a glossary is provided in the request.
+         * This can be the same as [TranslateDocumentResponse.document_translation] if
+         * no glossary terms apply.
+         *
+         * @param DocumentTranslation $glossaryDocumentTranslation
+         */
+        public function setGlossaryDocumentTranslation(DocumentTranslation $glossaryDocumentTranslation)
+        {
+        }
+        /**
+         * @return DocumentTranslation
+         */
+        public function getGlossaryDocumentTranslation()
+        {
+        }
+        /**
+         * Only present when 'model' is present in the request. 'model' is normalized
+         * to have a project number. For example: If the 'model' field in
+         * TranslateDocumentRequest is: `projects/{project-id}/locations/{location-
+         * id}/models/general/nmt` then `model` here would be normalized to
+         * `projects/{project-number}/locations/{location-id}/models/general/nmt`.
+         *
+         * @param string $model
+         */
+        public function setModel($model)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getModel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DocumentTranslation
+     * Runtime class alias of \Google\Service\Translate\TranslateDocumentResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDocumentTranslation()
-    {
-    }
-    /**
-     * The `glossary_config` used for this translation.
-     *
-     * @param TranslateTextGlossaryConfig $glossaryConfig
-     */
-    public function setGlossaryConfig(TranslateTextGlossaryConfig $glossaryConfig)
-    {
-    }
-    /**
-     * @return TranslateTextGlossaryConfig
-     */
-    public function getGlossaryConfig()
-    {
-    }
-    /**
-     * The document's translation output if a glossary is provided in the request.
-     * This can be the same as [TranslateDocumentResponse.document_translation] if
-     * no glossary terms apply.
-     *
-     * @param DocumentTranslation $glossaryDocumentTranslation
-     */
-    public function setGlossaryDocumentTranslation(DocumentTranslation $glossaryDocumentTranslation)
-    {
-    }
-    /**
-     * @return DocumentTranslation
-     */
-    public function getGlossaryDocumentTranslation()
-    {
-    }
-    /**
-     * Only present when 'model' is present in the request. 'model' is normalized
-     * to have a project number. For example: If the 'model' field in
-     * TranslateDocumentRequest is: `projects/{project-id}/locations/{location-
-     * id}/models/general/nmt` then `model` here would be normalized to
-     * `projects/{project-number}/locations/{location-id}/models/general/nmt`.
-     *
-     * @param string $model
-     */
-    public function setModel($model)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getModel()
+    class Google_Service_Translate_TranslateDocumentResponse extends \Google\Service\Translate\TranslateDocumentResponse
     {
     }
 }

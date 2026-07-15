@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1AugmentPromptRequest extends \Google\Collection
-{
-    protected $collection_key = 'contents';
-    protected $contentsType = GoogleCloudAiplatformV1Content::class;
-    protected $contentsDataType = 'array';
-    protected $modelType = GoogleCloudAiplatformV1AugmentPromptRequestModel::class;
-    protected $modelDataType = '';
-    protected $vertexRagStoreType = GoogleCloudAiplatformV1VertexRagStore::class;
-    protected $vertexRagStoreDataType = '';
-    /**
-     * Optional. Input content to augment, only text format is supported for now.
-     *
-     * @param GoogleCloudAiplatformV1Content[] $contents
-     */
-    public function setContents($contents)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1AugmentPromptRequest extends \Google\Collection
     {
+        protected $collection_key = 'contents';
+        protected $contentsType = GoogleCloudAiplatformV1Content::class;
+        protected $contentsDataType = 'array';
+        protected $modelType = GoogleCloudAiplatformV1AugmentPromptRequestModel::class;
+        protected $modelDataType = '';
+        protected $vertexRagStoreType = GoogleCloudAiplatformV1VertexRagStore::class;
+        protected $vertexRagStoreDataType = '';
+        /**
+         * Optional. Input content to augment, only text format is supported for now.
+         *
+         * @param GoogleCloudAiplatformV1Content[] $contents
+         */
+        public function setContents($contents)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1Content[]
+         */
+        public function getContents()
+        {
+        }
+        /**
+         * Optional. Metadata of the backend deployed model.
+         *
+         * @param GoogleCloudAiplatformV1AugmentPromptRequestModel $model
+         */
+        public function setModel(GoogleCloudAiplatformV1AugmentPromptRequestModel $model)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1AugmentPromptRequestModel
+         */
+        public function getModel()
+        {
+        }
+        /**
+         * Optional. Retrieves contexts from the Vertex RagStore.
+         *
+         * @param GoogleCloudAiplatformV1VertexRagStore $vertexRagStore
+         */
+        public function setVertexRagStore(GoogleCloudAiplatformV1VertexRagStore $vertexRagStore)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1VertexRagStore
+         */
+        public function getVertexRagStore()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1Content[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1AugmentPromptRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContents()
-    {
-    }
-    /**
-     * Optional. Metadata of the backend deployed model.
-     *
-     * @param GoogleCloudAiplatformV1AugmentPromptRequestModel $model
-     */
-    public function setModel(GoogleCloudAiplatformV1AugmentPromptRequestModel $model)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1AugmentPromptRequestModel
-     */
-    public function getModel()
-    {
-    }
-    /**
-     * Optional. Retrieves contexts from the Vertex RagStore.
-     *
-     * @param GoogleCloudAiplatformV1VertexRagStore $vertexRagStore
-     */
-    public function setVertexRagStore(GoogleCloudAiplatformV1VertexRagStore $vertexRagStore)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1VertexRagStore
-     */
-    public function getVertexRagStore()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1AugmentPromptRequest extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1AugmentPromptRequest
     {
     }
 }

@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseAppHosting;
-
-class ManagedResource extends \Google\Model
-{
-    protected $runServiceType = RunService::class;
-    protected $runServiceDataType = '';
-    /**
-     * A Cloud Run [`service`](https://cloud.google.com/run/docs/reference/rest/v2
-     * /projects.locations.services#resource:-service), managed by App Hosting.
-     *
-     * @param RunService $runService
-     */
-    public function setRunService(RunService $runService)
+namespace Google\Service\FirebaseAppHosting {
+    class ManagedResource extends \Google\Model
     {
+        protected $runServiceType = RunService::class;
+        protected $runServiceDataType = '';
+        /**
+         * A Cloud Run [`service`](https://cloud.google.com/run/docs/reference/rest/v2
+         * /projects.locations.services#resource:-service), managed by App Hosting.
+         *
+         * @param RunService $runService
+         */
+        public function setRunService(RunService $runService)
+        {
+        }
+        /**
+         * @return RunService
+         */
+        public function getRunService()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RunService
+     * Runtime class alias of \Google\Service\FirebaseAppHosting\ManagedResource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRunService()
+    class Google_Service_FirebaseAppHosting_ManagedResource extends \Google\Service\FirebaseAppHosting\ManagedResource
     {
     }
 }

@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Looker;
-
-class RestoreInstanceRequest extends \Google\Model
-{
-    /**
-     * Required. Backup being used to restore the instance Format: projects/{proje
-     * ct}/locations/{location}/instances/{instance}/backups/{backup}
-     *
-     * @var string
-     */
-    public $backup;
-    /**
-     * Required. Backup being used to restore the instance Format: projects/{proje
-     * ct}/locations/{location}/instances/{instance}/backups/{backup}
-     *
-     * @param string $backup
-     */
-    public function setBackup($backup)
+namespace Google\Service\Looker {
+    class RestoreInstanceRequest extends \Google\Model
     {
+        /**
+         * Required. Backup being used to restore the instance Format: projects/{proje
+         * ct}/locations/{location}/instances/{instance}/backups/{backup}
+         *
+         * @var string
+         */
+        public $backup;
+        /**
+         * Required. Backup being used to restore the instance Format: projects/{proje
+         * ct}/locations/{location}/instances/{instance}/backups/{backup}
+         *
+         * @param string $backup
+         */
+        public function setBackup($backup)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBackup()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Looker\RestoreInstanceRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackup()
+    class Google_Service_Looker_RestoreInstanceRequest extends \Google\Service\Looker\RestoreInstanceRequest
     {
     }
 }

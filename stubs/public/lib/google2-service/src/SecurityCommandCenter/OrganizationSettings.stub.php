@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class OrganizationSettings extends \Google\Model
-{
-    protected $assetDiscoveryConfigType = AssetDiscoveryConfig::class;
-    protected $assetDiscoveryConfigDataType = '';
-    /**
-     * A flag that indicates if Asset Discovery should be enabled. If the flag is
-     * set to `true`, then discovery of assets will occur. If it is set to
-     * `false`, all historical assets will remain, but discovery of future assets
-     * will not occur.
-     *
-     * @var bool
-     */
-    public $enableAssetDiscovery;
-    /**
-     * The relative resource name of the settings. See:
-     * https://cloud.google.com/apis/design/resource_names#relative_resource_name
-     * Example: "organizations/{organization_id}/organizationSettings".
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The configuration used for Asset Discovery runs.
-     *
-     * @param AssetDiscoveryConfig $assetDiscoveryConfig
-     */
-    public function setAssetDiscoveryConfig(AssetDiscoveryConfig $assetDiscoveryConfig)
+namespace Google\Service\SecurityCommandCenter {
+    class OrganizationSettings extends \Google\Model
     {
+        protected $assetDiscoveryConfigType = AssetDiscoveryConfig::class;
+        protected $assetDiscoveryConfigDataType = '';
+        /**
+         * A flag that indicates if Asset Discovery should be enabled. If the flag is
+         * set to `true`, then discovery of assets will occur. If it is set to
+         * `false`, all historical assets will remain, but discovery of future assets
+         * will not occur.
+         *
+         * @var bool
+         */
+        public $enableAssetDiscovery;
+        /**
+         * The relative resource name of the settings. See:
+         * https://cloud.google.com/apis/design/resource_names#relative_resource_name
+         * Example: "organizations/{organization_id}/organizationSettings".
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The configuration used for Asset Discovery runs.
+         *
+         * @param AssetDiscoveryConfig $assetDiscoveryConfig
+         */
+        public function setAssetDiscoveryConfig(AssetDiscoveryConfig $assetDiscoveryConfig)
+        {
+        }
+        /**
+         * @return AssetDiscoveryConfig
+         */
+        public function getAssetDiscoveryConfig()
+        {
+        }
+        /**
+         * A flag that indicates if Asset Discovery should be enabled. If the flag is
+         * set to `true`, then discovery of assets will occur. If it is set to
+         * `false`, all historical assets will remain, but discovery of future assets
+         * will not occur.
+         *
+         * @param bool $enableAssetDiscovery
+         */
+        public function setEnableAssetDiscovery($enableAssetDiscovery)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableAssetDiscovery()
+        {
+        }
+        /**
+         * The relative resource name of the settings. See:
+         * https://cloud.google.com/apis/design/resource_names#relative_resource_name
+         * Example: "organizations/{organization_id}/organizationSettings".
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AssetDiscoveryConfig
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\OrganizationSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssetDiscoveryConfig()
-    {
-    }
-    /**
-     * A flag that indicates if Asset Discovery should be enabled. If the flag is
-     * set to `true`, then discovery of assets will occur. If it is set to
-     * `false`, all historical assets will remain, but discovery of future assets
-     * will not occur.
-     *
-     * @param bool $enableAssetDiscovery
-     */
-    public function setEnableAssetDiscovery($enableAssetDiscovery)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnableAssetDiscovery()
-    {
-    }
-    /**
-     * The relative resource name of the settings. See:
-     * https://cloud.google.com/apis/design/resource_names#relative_resource_name
-     * Example: "organizations/{organization_id}/organizationSettings".
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_SecurityCommandCenter_OrganizationSettings extends \Google\Service\SecurityCommandCenter\OrganizationSettings
     {
     }
 }

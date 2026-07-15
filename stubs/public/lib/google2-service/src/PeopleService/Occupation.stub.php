@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PeopleService;
-
-class Occupation extends \Google\Model
-{
-    protected $metadataType = FieldMetadata::class;
-    protected $metadataDataType = '';
-    /**
-     * The occupation; for example, `carpenter`.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Metadata about the occupation.
-     *
-     * @param FieldMetadata $metadata
-     */
-    public function setMetadata(FieldMetadata $metadata)
+namespace Google\Service\PeopleService {
+    class Occupation extends \Google\Model
     {
+        protected $metadataType = FieldMetadata::class;
+        protected $metadataDataType = '';
+        /**
+         * The occupation; for example, `carpenter`.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Metadata about the occupation.
+         *
+         * @param FieldMetadata $metadata
+         */
+        public function setMetadata(FieldMetadata $metadata)
+        {
+        }
+        /**
+         * @return FieldMetadata
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * The occupation; for example, `carpenter`.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FieldMetadata
+     * Runtime class alias of \Google\Service\PeopleService\Occupation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetadata()
-    {
-    }
-    /**
-     * The occupation; for example, `carpenter`.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_PeopleService_Occupation extends \Google\Service\PeopleService\Occupation
     {
     }
 }

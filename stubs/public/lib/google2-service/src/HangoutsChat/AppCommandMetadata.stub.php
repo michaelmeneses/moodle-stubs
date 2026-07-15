@@ -21,63 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class AppCommandMetadata extends \Google\Model
-{
-    /**
-     * Default value. Unspecified.
-     */
-    public const APP_COMMAND_TYPE_APP_COMMAND_TYPE_UNSPECIFIED = 'APP_COMMAND_TYPE_UNSPECIFIED';
-    /**
-     * A slash command. The user sends the command in a Chat message.
-     */
-    public const APP_COMMAND_TYPE_SLASH_COMMAND = 'SLASH_COMMAND';
-    /**
-     * A quick command. The user selects the command from the Chat menu in the
-     * message reply area.
-     */
-    public const APP_COMMAND_TYPE_QUICK_COMMAND = 'QUICK_COMMAND';
-    /**
-     * The ID for the command specified in the Chat API configuration.
-     *
-     * @var int
-     */
-    public $appCommandId;
-    /**
-     * The type of Chat app command.
-     *
-     * @var string
-     */
-    public $appCommandType;
-    /**
-     * The ID for the command specified in the Chat API configuration.
-     *
-     * @param int $appCommandId
-     */
-    public function setAppCommandId($appCommandId)
+namespace Google\Service\HangoutsChat {
+    class AppCommandMetadata extends \Google\Model
     {
+        /**
+         * Default value. Unspecified.
+         */
+        public const APP_COMMAND_TYPE_APP_COMMAND_TYPE_UNSPECIFIED = 'APP_COMMAND_TYPE_UNSPECIFIED';
+        /**
+         * A slash command. The user sends the command in a Chat message.
+         */
+        public const APP_COMMAND_TYPE_SLASH_COMMAND = 'SLASH_COMMAND';
+        /**
+         * A quick command. The user selects the command from the Chat menu in the
+         * message reply area.
+         */
+        public const APP_COMMAND_TYPE_QUICK_COMMAND = 'QUICK_COMMAND';
+        /**
+         * The ID for the command specified in the Chat API configuration.
+         *
+         * @var int
+         */
+        public $appCommandId;
+        /**
+         * The type of Chat app command.
+         *
+         * @var string
+         */
+        public $appCommandType;
+        /**
+         * The ID for the command specified in the Chat API configuration.
+         *
+         * @param int $appCommandId
+         */
+        public function setAppCommandId($appCommandId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getAppCommandId()
+        {
+        }
+        /**
+         * The type of Chat app command.
+         *
+         * Accepted values: APP_COMMAND_TYPE_UNSPECIFIED, SLASH_COMMAND, QUICK_COMMAND
+         *
+         * @param self::APP_COMMAND_TYPE_* $appCommandType
+         */
+        public function setAppCommandType($appCommandType)
+        {
+        }
+        /**
+         * @return self::APP_COMMAND_TYPE_*
+         */
+        public function getAppCommandType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\HangoutsChat\AppCommandMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAppCommandId()
-    {
-    }
-    /**
-     * The type of Chat app command.
-     *
-     * Accepted values: APP_COMMAND_TYPE_UNSPECIFIED, SLASH_COMMAND, QUICK_COMMAND
-     *
-     * @param self::APP_COMMAND_TYPE_* $appCommandType
-     */
-    public function setAppCommandType($appCommandType)
-    {
-    }
-    /**
-     * @return self::APP_COMMAND_TYPE_*
-     */
-    public function getAppCommandType()
+    class Google_Service_HangoutsChat_AppCommandMetadata extends \Google\Service\HangoutsChat\AppCommandMetadata
     {
     }
 }

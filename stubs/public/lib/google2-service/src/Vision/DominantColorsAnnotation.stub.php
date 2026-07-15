@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class DominantColorsAnnotation extends \Google\Collection
-{
-    protected $collection_key = 'colors';
-    protected $colorsType = ColorInfo::class;
-    protected $colorsDataType = 'array';
-    /**
-     * RGB color values with their score and pixel fraction.
-     *
-     * @param ColorInfo[] $colors
-     */
-    public function setColors($colors)
+namespace Google\Service\Vision {
+    class DominantColorsAnnotation extends \Google\Collection
     {
+        protected $collection_key = 'colors';
+        protected $colorsType = ColorInfo::class;
+        protected $colorsDataType = 'array';
+        /**
+         * RGB color values with their score and pixel fraction.
+         *
+         * @param ColorInfo[] $colors
+         */
+        public function setColors($colors)
+        {
+        }
+        /**
+         * @return ColorInfo[]
+         */
+        public function getColors()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ColorInfo[]
+     * Runtime class alias of \Google\Service\Vision\DominantColorsAnnotation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColors()
+    class Google_Service_Vision_DominantColorsAnnotation extends \Google\Service\Vision\DominantColorsAnnotation
     {
     }
 }

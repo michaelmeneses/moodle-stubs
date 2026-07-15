@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OnDemandScanning;
-
-class SlsaProvenanceV1 extends \Google\Model
-{
-    protected $buildDefinitionType = BuildDefinition::class;
-    protected $buildDefinitionDataType = '';
-    protected $runDetailsType = RunDetails::class;
-    protected $runDetailsDataType = '';
-    /**
-     * @param BuildDefinition $buildDefinition
-     */
-    public function setBuildDefinition(BuildDefinition $buildDefinition)
+namespace Google\Service\OnDemandScanning {
+    class SlsaProvenanceV1 extends \Google\Model
     {
+        protected $buildDefinitionType = BuildDefinition::class;
+        protected $buildDefinitionDataType = '';
+        protected $runDetailsType = RunDetails::class;
+        protected $runDetailsDataType = '';
+        /**
+         * @param BuildDefinition $buildDefinition
+         */
+        public function setBuildDefinition(BuildDefinition $buildDefinition)
+        {
+        }
+        /**
+         * @return BuildDefinition
+         */
+        public function getBuildDefinition()
+        {
+        }
+        /**
+         * @param RunDetails $runDetails
+         */
+        public function setRunDetails(RunDetails $runDetails)
+        {
+        }
+        /**
+         * @return RunDetails
+         */
+        public function getRunDetails()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BuildDefinition
+     * Runtime class alias of \Google\Service\OnDemandScanning\SlsaProvenanceV1 registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBuildDefinition()
-    {
-    }
-    /**
-     * @param RunDetails $runDetails
-     */
-    public function setRunDetails(RunDetails $runDetails)
-    {
-    }
-    /**
-     * @return RunDetails
-     */
-    public function getRunDetails()
+    class Google_Service_OnDemandScanning_SlsaProvenanceV1 extends \Google\Service\OnDemandScanning\SlsaProvenanceV1
     {
     }
 }

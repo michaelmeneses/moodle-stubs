@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class MemberSnippet extends \Google\Model
-{
-    /**
-     * The id of the channel that's offering memberships.
-     *
-     * @var string
-     */
-    public $creatorChannelId;
-    protected $memberDetailsType = ChannelProfileDetails::class;
-    protected $memberDetailsDataType = '';
-    protected $membershipsDetailsType = MembershipsDetails::class;
-    protected $membershipsDetailsDataType = '';
-    /**
-     * The id of the channel that's offering memberships.
-     *
-     * @param string $creatorChannelId
-     */
-    public function setCreatorChannelId($creatorChannelId)
+namespace Google\Service\YouTube {
+    class MemberSnippet extends \Google\Model
     {
+        /**
+         * The id of the channel that's offering memberships.
+         *
+         * @var string
+         */
+        public $creatorChannelId;
+        protected $memberDetailsType = ChannelProfileDetails::class;
+        protected $memberDetailsDataType = '';
+        protected $membershipsDetailsType = MembershipsDetails::class;
+        protected $membershipsDetailsDataType = '';
+        /**
+         * The id of the channel that's offering memberships.
+         *
+         * @param string $creatorChannelId
+         */
+        public function setCreatorChannelId($creatorChannelId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreatorChannelId()
+        {
+        }
+        /**
+         * Details about the member.
+         *
+         * @param ChannelProfileDetails $memberDetails
+         */
+        public function setMemberDetails(ChannelProfileDetails $memberDetails)
+        {
+        }
+        /**
+         * @return ChannelProfileDetails
+         */
+        public function getMemberDetails()
+        {
+        }
+        /**
+         * Details about the user's membership.
+         *
+         * @param MembershipsDetails $membershipsDetails
+         */
+        public function setMembershipsDetails(MembershipsDetails $membershipsDetails)
+        {
+        }
+        /**
+         * @return MembershipsDetails
+         */
+        public function getMembershipsDetails()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\MemberSnippet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreatorChannelId()
-    {
-    }
-    /**
-     * Details about the member.
-     *
-     * @param ChannelProfileDetails $memberDetails
-     */
-    public function setMemberDetails(ChannelProfileDetails $memberDetails)
-    {
-    }
-    /**
-     * @return ChannelProfileDetails
-     */
-    public function getMemberDetails()
-    {
-    }
-    /**
-     * Details about the user's membership.
-     *
-     * @param MembershipsDetails $membershipsDetails
-     */
-    public function setMembershipsDetails(MembershipsDetails $membershipsDetails)
-    {
-    }
-    /**
-     * @return MembershipsDetails
-     */
-    public function getMembershipsDetails()
+    class Google_Service_YouTube_MemberSnippet extends \Google\Service\YouTube\MemberSnippet
     {
     }
 }

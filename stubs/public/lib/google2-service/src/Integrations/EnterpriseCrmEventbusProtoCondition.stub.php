@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmEventbusProtoCondition extends \Google\Model
-{
-    public const OPERATOR_UNSET = 'UNSET';
-    public const OPERATOR_EQUALS = 'EQUALS';
-    public const OPERATOR_CONTAINS = 'CONTAINS';
-    public const OPERATOR_LESS_THAN = 'LESS_THAN';
-    public const OPERATOR_GREATER_THAN = 'GREATER_THAN';
-    public const OPERATOR_EXISTS = 'EXISTS';
-    public const OPERATOR_DOES_NOT_EXIST = 'DOES_NOT_EXIST';
-    public const OPERATOR_IS_EMPTY = 'IS_EMPTY';
-    public const OPERATOR_IS_NOT_EMPTY = 'IS_NOT_EMPTY';
-    /**
-     * Key that's evaluated against the `value`. Please note the data type of the
-     * runtime value associated with the key should match the data type of
-     * `value`, else an IllegalArgumentException is thrown.
-     *
-     * @var string
-     */
-    public $eventPropertyKey;
-    /**
-     * Operator used to evaluate the condition. Please note that an operator with
-     * an inappropriate key/value operand will result in IllegalArgumentException,
-     * e.g. CONTAINS with boolean key/value pair.
-     *
-     * @var string
-     */
-    public $operator;
-    protected $valueType = EnterpriseCrmEventbusProtoValueType::class;
-    protected $valueDataType = '';
-    /**
-     * Key that's evaluated against the `value`. Please note the data type of the
-     * runtime value associated with the key should match the data type of
-     * `value`, else an IllegalArgumentException is thrown.
-     *
-     * @param string $eventPropertyKey
-     */
-    public function setEventPropertyKey($eventPropertyKey)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmEventbusProtoCondition extends \Google\Model
     {
+        public const OPERATOR_UNSET = 'UNSET';
+        public const OPERATOR_EQUALS = 'EQUALS';
+        public const OPERATOR_CONTAINS = 'CONTAINS';
+        public const OPERATOR_LESS_THAN = 'LESS_THAN';
+        public const OPERATOR_GREATER_THAN = 'GREATER_THAN';
+        public const OPERATOR_EXISTS = 'EXISTS';
+        public const OPERATOR_DOES_NOT_EXIST = 'DOES_NOT_EXIST';
+        public const OPERATOR_IS_EMPTY = 'IS_EMPTY';
+        public const OPERATOR_IS_NOT_EMPTY = 'IS_NOT_EMPTY';
+        /**
+         * Key that's evaluated against the `value`. Please note the data type of the
+         * runtime value associated with the key should match the data type of
+         * `value`, else an IllegalArgumentException is thrown.
+         *
+         * @var string
+         */
+        public $eventPropertyKey;
+        /**
+         * Operator used to evaluate the condition. Please note that an operator with
+         * an inappropriate key/value operand will result in IllegalArgumentException,
+         * e.g. CONTAINS with boolean key/value pair.
+         *
+         * @var string
+         */
+        public $operator;
+        protected $valueType = EnterpriseCrmEventbusProtoValueType::class;
+        protected $valueDataType = '';
+        /**
+         * Key that's evaluated against the `value`. Please note the data type of the
+         * runtime value associated with the key should match the data type of
+         * `value`, else an IllegalArgumentException is thrown.
+         *
+         * @param string $eventPropertyKey
+         */
+        public function setEventPropertyKey($eventPropertyKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEventPropertyKey()
+        {
+        }
+        /**
+         * Operator used to evaluate the condition. Please note that an operator with
+         * an inappropriate key/value operand will result in IllegalArgumentException,
+         * e.g. CONTAINS with boolean key/value pair.
+         *
+         * Accepted values: UNSET, EQUALS, CONTAINS, LESS_THAN, GREATER_THAN, EXISTS,
+         * DOES_NOT_EXIST, IS_EMPTY, IS_NOT_EMPTY
+         *
+         * @param self::OPERATOR_* $operator
+         */
+        public function setOperator($operator)
+        {
+        }
+        /**
+         * @return self::OPERATOR_*
+         */
+        public function getOperator()
+        {
+        }
+        /**
+         * Value that's checked for the key.
+         *
+         * @param EnterpriseCrmEventbusProtoValueType $value
+         */
+        public function setValue(EnterpriseCrmEventbusProtoValueType $value)
+        {
+        }
+        /**
+         * @return EnterpriseCrmEventbusProtoValueType
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmEventbusProtoCondition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEventPropertyKey()
-    {
-    }
-    /**
-     * Operator used to evaluate the condition. Please note that an operator with
-     * an inappropriate key/value operand will result in IllegalArgumentException,
-     * e.g. CONTAINS with boolean key/value pair.
-     *
-     * Accepted values: UNSET, EQUALS, CONTAINS, LESS_THAN, GREATER_THAN, EXISTS,
-     * DOES_NOT_EXIST, IS_EMPTY, IS_NOT_EMPTY
-     *
-     * @param self::OPERATOR_* $operator
-     */
-    public function setOperator($operator)
-    {
-    }
-    /**
-     * @return self::OPERATOR_*
-     */
-    public function getOperator()
-    {
-    }
-    /**
-     * Value that's checked for the key.
-     *
-     * @param EnterpriseCrmEventbusProtoValueType $value
-     */
-    public function setValue(EnterpriseCrmEventbusProtoValueType $value)
-    {
-    }
-    /**
-     * @return EnterpriseCrmEventbusProtoValueType
-     */
-    public function getValue()
+    class Google_Service_Integrations_EnterpriseCrmEventbusProtoCondition extends \Google\Service\Integrations\EnterpriseCrmEventbusProtoCondition
     {
     }
 }

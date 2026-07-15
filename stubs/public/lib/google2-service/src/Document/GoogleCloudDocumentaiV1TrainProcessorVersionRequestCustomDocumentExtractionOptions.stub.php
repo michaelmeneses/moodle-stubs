@@ -21,33 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1TrainProcessorVersionRequestCustomDocumentExtractionOptions extends \Google\Model
-{
-    public const TRAINING_METHOD_TRAINING_METHOD_UNSPECIFIED = 'TRAINING_METHOD_UNSPECIFIED';
-    public const TRAINING_METHOD_MODEL_BASED = 'MODEL_BASED';
-    public const TRAINING_METHOD_TEMPLATE_BASED = 'TEMPLATE_BASED';
-    /**
-     * Optional. Training method to use for CDE training.
-     *
-     * @var string
-     */
-    public $trainingMethod;
-    /**
-     * Optional. Training method to use for CDE training.
-     *
-     * Accepted values: TRAINING_METHOD_UNSPECIFIED, MODEL_BASED, TEMPLATE_BASED
-     *
-     * @param self::TRAINING_METHOD_* $trainingMethod
-     */
-    public function setTrainingMethod($trainingMethod)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1TrainProcessorVersionRequestCustomDocumentExtractionOptions extends \Google\Model
     {
+        public const TRAINING_METHOD_TRAINING_METHOD_UNSPECIFIED = 'TRAINING_METHOD_UNSPECIFIED';
+        public const TRAINING_METHOD_MODEL_BASED = 'MODEL_BASED';
+        public const TRAINING_METHOD_TEMPLATE_BASED = 'TEMPLATE_BASED';
+        /**
+         * Optional. Training method to use for CDE training.
+         *
+         * @var string
+         */
+        public $trainingMethod;
+        /**
+         * Optional. Training method to use for CDE training.
+         *
+         * Accepted values: TRAINING_METHOD_UNSPECIFIED, MODEL_BASED, TEMPLATE_BASED
+         *
+         * @param self::TRAINING_METHOD_* $trainingMethod
+         */
+        public function setTrainingMethod($trainingMethod)
+        {
+        }
+        /**
+         * @return self::TRAINING_METHOD_*
+         */
+        public function getTrainingMethod()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::TRAINING_METHOD_*
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1TrainProcessorVersionRequestCustomDocumentExtractionOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTrainingMethod()
+    class Google_Service_Document_GoogleCloudDocumentaiV1TrainProcessorVersionRequestCustomDocumentExtractionOptions extends \Google\Service\Document\GoogleCloudDocumentaiV1TrainProcessorVersionRequestCustomDocumentExtractionOptions
     {
     }
 }

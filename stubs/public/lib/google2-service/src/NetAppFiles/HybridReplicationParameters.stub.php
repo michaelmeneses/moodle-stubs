@@ -21,281 +21,290 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetAppFiles;
-
-class HybridReplicationParameters extends \Google\Collection
-{
-    /**
-     * Unspecified hybrid replication type.
-     */
-    public const HYBRID_REPLICATION_TYPE_VOLUME_HYBRID_REPLICATION_TYPE_UNSPECIFIED = 'VOLUME_HYBRID_REPLICATION_TYPE_UNSPECIFIED';
-    /**
-     * Hybrid replication type for migration.
-     */
-    public const HYBRID_REPLICATION_TYPE_MIGRATION = 'MIGRATION';
-    /**
-     * Hybrid replication type for continuous replication.
-     */
-    public const HYBRID_REPLICATION_TYPE_CONTINUOUS_REPLICATION = 'CONTINUOUS_REPLICATION';
-    /**
-     * New field for reversible OnPrem replication, to be used for data
-     * protection.
-     */
-    public const HYBRID_REPLICATION_TYPE_ONPREM_REPLICATION = 'ONPREM_REPLICATION';
-    /**
-     * New field for reversible OnPrem replication, to be used for data
-     * protection.
-     */
-    public const HYBRID_REPLICATION_TYPE_REVERSE_ONPREM_REPLICATION = 'REVERSE_ONPREM_REPLICATION';
-    /**
-     * Unspecified HybridReplicationSchedule
-     */
-    public const REPLICATION_SCHEDULE_HYBRID_REPLICATION_SCHEDULE_UNSPECIFIED = 'HYBRID_REPLICATION_SCHEDULE_UNSPECIFIED';
-    /**
-     * Replication happens once every 10 minutes.
-     */
-    public const REPLICATION_SCHEDULE_EVERY_10_MINUTES = 'EVERY_10_MINUTES';
-    /**
-     * Replication happens once every hour.
-     */
-    public const REPLICATION_SCHEDULE_HOURLY = 'HOURLY';
-    /**
-     * Replication happens once every day.
-     */
-    public const REPLICATION_SCHEDULE_DAILY = 'DAILY';
-    protected $collection_key = 'peerIpAddresses';
-    /**
-     * Optional. Name of source cluster location associated with the Hybrid
-     * replication. This is a free-form field for the display purpose only.
-     *
-     * @var string
-     */
-    public $clusterLocation;
-    /**
-     * Optional. Description of the replication.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Optional. Type of the hybrid replication.
-     *
-     * @var string
-     */
-    public $hybridReplicationType;
-    /**
-     * Optional. Labels to be added to the replication as the key value pairs.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Optional. Constituent volume count for large volume.
-     *
-     * @var int
-     */
-    public $largeVolumeConstituentCount;
-    /**
-     * Required. Name of the user's local source cluster to be peered with the
-     * destination cluster.
-     *
-     * @var string
-     */
-    public $peerClusterName;
-    /**
-     * Required. List of node ip addresses to be peered with.
-     *
-     * @var string[]
-     */
-    public $peerIpAddresses;
-    /**
-     * Required. Name of the user's local source vserver svm to be peered with the
-     * destination vserver svm.
-     *
-     * @var string
-     */
-    public $peerSvmName;
-    /**
-     * Required. Name of the user's local source volume to be peered with the
-     * destination volume.
-     *
-     * @var string
-     */
-    public $peerVolumeName;
-    /**
-     * Required. Desired name for the replication of this volume.
-     *
-     * @var string
-     */
-    public $replication;
-    /**
-     * Optional. Replication Schedule for the replication created.
-     *
-     * @var string
-     */
-    public $replicationSchedule;
-    /**
-     * Optional. Name of source cluster location associated with the Hybrid
-     * replication. This is a free-form field for the display purpose only.
-     *
-     * @param string $clusterLocation
-     */
-    public function setClusterLocation($clusterLocation)
+namespace Google\Service\NetAppFiles {
+    class HybridReplicationParameters extends \Google\Collection
     {
+        /**
+         * Unspecified hybrid replication type.
+         */
+        public const HYBRID_REPLICATION_TYPE_VOLUME_HYBRID_REPLICATION_TYPE_UNSPECIFIED = 'VOLUME_HYBRID_REPLICATION_TYPE_UNSPECIFIED';
+        /**
+         * Hybrid replication type for migration.
+         */
+        public const HYBRID_REPLICATION_TYPE_MIGRATION = 'MIGRATION';
+        /**
+         * Hybrid replication type for continuous replication.
+         */
+        public const HYBRID_REPLICATION_TYPE_CONTINUOUS_REPLICATION = 'CONTINUOUS_REPLICATION';
+        /**
+         * New field for reversible OnPrem replication, to be used for data
+         * protection.
+         */
+        public const HYBRID_REPLICATION_TYPE_ONPREM_REPLICATION = 'ONPREM_REPLICATION';
+        /**
+         * New field for reversible OnPrem replication, to be used for data
+         * protection.
+         */
+        public const HYBRID_REPLICATION_TYPE_REVERSE_ONPREM_REPLICATION = 'REVERSE_ONPREM_REPLICATION';
+        /**
+         * Unspecified HybridReplicationSchedule
+         */
+        public const REPLICATION_SCHEDULE_HYBRID_REPLICATION_SCHEDULE_UNSPECIFIED = 'HYBRID_REPLICATION_SCHEDULE_UNSPECIFIED';
+        /**
+         * Replication happens once every 10 minutes.
+         */
+        public const REPLICATION_SCHEDULE_EVERY_10_MINUTES = 'EVERY_10_MINUTES';
+        /**
+         * Replication happens once every hour.
+         */
+        public const REPLICATION_SCHEDULE_HOURLY = 'HOURLY';
+        /**
+         * Replication happens once every day.
+         */
+        public const REPLICATION_SCHEDULE_DAILY = 'DAILY';
+        protected $collection_key = 'peerIpAddresses';
+        /**
+         * Optional. Name of source cluster location associated with the Hybrid
+         * replication. This is a free-form field for the display purpose only.
+         *
+         * @var string
+         */
+        public $clusterLocation;
+        /**
+         * Optional. Description of the replication.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Optional. Type of the hybrid replication.
+         *
+         * @var string
+         */
+        public $hybridReplicationType;
+        /**
+         * Optional. Labels to be added to the replication as the key value pairs.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Optional. Constituent volume count for large volume.
+         *
+         * @var int
+         */
+        public $largeVolumeConstituentCount;
+        /**
+         * Required. Name of the user's local source cluster to be peered with the
+         * destination cluster.
+         *
+         * @var string
+         */
+        public $peerClusterName;
+        /**
+         * Required. List of node ip addresses to be peered with.
+         *
+         * @var string[]
+         */
+        public $peerIpAddresses;
+        /**
+         * Required. Name of the user's local source vserver svm to be peered with the
+         * destination vserver svm.
+         *
+         * @var string
+         */
+        public $peerSvmName;
+        /**
+         * Required. Name of the user's local source volume to be peered with the
+         * destination volume.
+         *
+         * @var string
+         */
+        public $peerVolumeName;
+        /**
+         * Required. Desired name for the replication of this volume.
+         *
+         * @var string
+         */
+        public $replication;
+        /**
+         * Optional. Replication Schedule for the replication created.
+         *
+         * @var string
+         */
+        public $replicationSchedule;
+        /**
+         * Optional. Name of source cluster location associated with the Hybrid
+         * replication. This is a free-form field for the display purpose only.
+         *
+         * @param string $clusterLocation
+         */
+        public function setClusterLocation($clusterLocation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClusterLocation()
+        {
+        }
+        /**
+         * Optional. Description of the replication.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Optional. Type of the hybrid replication.
+         *
+         * Accepted values: VOLUME_HYBRID_REPLICATION_TYPE_UNSPECIFIED, MIGRATION,
+         * CONTINUOUS_REPLICATION, ONPREM_REPLICATION, REVERSE_ONPREM_REPLICATION
+         *
+         * @param self::HYBRID_REPLICATION_TYPE_* $hybridReplicationType
+         */
+        public function setHybridReplicationType($hybridReplicationType)
+        {
+        }
+        /**
+         * @return self::HYBRID_REPLICATION_TYPE_*
+         */
+        public function getHybridReplicationType()
+        {
+        }
+        /**
+         * Optional. Labels to be added to the replication as the key value pairs.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Optional. Constituent volume count for large volume.
+         *
+         * @param int $largeVolumeConstituentCount
+         */
+        public function setLargeVolumeConstituentCount($largeVolumeConstituentCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getLargeVolumeConstituentCount()
+        {
+        }
+        /**
+         * Required. Name of the user's local source cluster to be peered with the
+         * destination cluster.
+         *
+         * @param string $peerClusterName
+         */
+        public function setPeerClusterName($peerClusterName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPeerClusterName()
+        {
+        }
+        /**
+         * Required. List of node ip addresses to be peered with.
+         *
+         * @param string[] $peerIpAddresses
+         */
+        public function setPeerIpAddresses($peerIpAddresses)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPeerIpAddresses()
+        {
+        }
+        /**
+         * Required. Name of the user's local source vserver svm to be peered with the
+         * destination vserver svm.
+         *
+         * @param string $peerSvmName
+         */
+        public function setPeerSvmName($peerSvmName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPeerSvmName()
+        {
+        }
+        /**
+         * Required. Name of the user's local source volume to be peered with the
+         * destination volume.
+         *
+         * @param string $peerVolumeName
+         */
+        public function setPeerVolumeName($peerVolumeName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPeerVolumeName()
+        {
+        }
+        /**
+         * Required. Desired name for the replication of this volume.
+         *
+         * @param string $replication
+         */
+        public function setReplication($replication)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReplication()
+        {
+        }
+        /**
+         * Optional. Replication Schedule for the replication created.
+         *
+         * Accepted values: HYBRID_REPLICATION_SCHEDULE_UNSPECIFIED, EVERY_10_MINUTES,
+         * HOURLY, DAILY
+         *
+         * @param self::REPLICATION_SCHEDULE_* $replicationSchedule
+         */
+        public function setReplicationSchedule($replicationSchedule)
+        {
+        }
+        /**
+         * @return self::REPLICATION_SCHEDULE_*
+         */
+        public function getReplicationSchedule()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetAppFiles\HybridReplicationParameters registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClusterLocation()
-    {
-    }
-    /**
-     * Optional. Description of the replication.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Optional. Type of the hybrid replication.
-     *
-     * Accepted values: VOLUME_HYBRID_REPLICATION_TYPE_UNSPECIFIED, MIGRATION,
-     * CONTINUOUS_REPLICATION, ONPREM_REPLICATION, REVERSE_ONPREM_REPLICATION
-     *
-     * @param self::HYBRID_REPLICATION_TYPE_* $hybridReplicationType
-     */
-    public function setHybridReplicationType($hybridReplicationType)
-    {
-    }
-    /**
-     * @return self::HYBRID_REPLICATION_TYPE_*
-     */
-    public function getHybridReplicationType()
-    {
-    }
-    /**
-     * Optional. Labels to be added to the replication as the key value pairs.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Optional. Constituent volume count for large volume.
-     *
-     * @param int $largeVolumeConstituentCount
-     */
-    public function setLargeVolumeConstituentCount($largeVolumeConstituentCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getLargeVolumeConstituentCount()
-    {
-    }
-    /**
-     * Required. Name of the user's local source cluster to be peered with the
-     * destination cluster.
-     *
-     * @param string $peerClusterName
-     */
-    public function setPeerClusterName($peerClusterName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPeerClusterName()
-    {
-    }
-    /**
-     * Required. List of node ip addresses to be peered with.
-     *
-     * @param string[] $peerIpAddresses
-     */
-    public function setPeerIpAddresses($peerIpAddresses)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPeerIpAddresses()
-    {
-    }
-    /**
-     * Required. Name of the user's local source vserver svm to be peered with the
-     * destination vserver svm.
-     *
-     * @param string $peerSvmName
-     */
-    public function setPeerSvmName($peerSvmName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPeerSvmName()
-    {
-    }
-    /**
-     * Required. Name of the user's local source volume to be peered with the
-     * destination volume.
-     *
-     * @param string $peerVolumeName
-     */
-    public function setPeerVolumeName($peerVolumeName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPeerVolumeName()
-    {
-    }
-    /**
-     * Required. Desired name for the replication of this volume.
-     *
-     * @param string $replication
-     */
-    public function setReplication($replication)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReplication()
-    {
-    }
-    /**
-     * Optional. Replication Schedule for the replication created.
-     *
-     * Accepted values: HYBRID_REPLICATION_SCHEDULE_UNSPECIFIED, EVERY_10_MINUTES,
-     * HOURLY, DAILY
-     *
-     * @param self::REPLICATION_SCHEDULE_* $replicationSchedule
-     */
-    public function setReplicationSchedule($replicationSchedule)
-    {
-    }
-    /**
-     * @return self::REPLICATION_SCHEDULE_*
-     */
-    public function getReplicationSchedule()
+    class Google_Service_NetAppFiles_HybridReplicationParameters extends \Google\Service\NetAppFiles\HybridReplicationParameters
     {
     }
 }

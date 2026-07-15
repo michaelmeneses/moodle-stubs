@@ -21,41 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360\Resource;
-
-/**
- * The "customColumns" collection of methods.
- * Typical usage is:
- *  <code>
- *   $searchads360Service = new Google\Service\SA360(...);
- *   $customColumns = $searchads360Service->customers_customColumns;
- *  </code>
- */
-class CustomersCustomColumns extends \Google\Service\Resource
-{
+namespace Google\Service\SA360\Resource {
+    use Google\Service\SA360\GoogleAdsSearchads360V0ResourcesCustomColumn;
+    use Google\Service\SA360\GoogleAdsSearchads360V0ServicesListCustomColumnsResponse;
     /**
-     * Returns the requested custom column in full detail. (customColumns.get)
-     *
-     * @param string $resourceName Required. The resource name of the custom column
-     * to fetch.
-     * @param array $optParams Optional parameters.
-     * @return GoogleAdsSearchads360V0ResourcesCustomColumn
-     * @throws \Google\Service\Exception
+     * The "customColumns" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $searchads360Service = new Google\Service\SA360(...);
+     *   $customColumns = $searchads360Service->customers_customColumns;
+     *  </code>
      */
-    public function get($resourceName, $optParams = [])
+    class CustomersCustomColumns extends \Google\Service\Resource
     {
+        /**
+         * Returns the requested custom column in full detail. (customColumns.get)
+         *
+         * @param string $resourceName Required. The resource name of the custom column
+         * to fetch.
+         * @param array $optParams Optional parameters.
+         * @return GoogleAdsSearchads360V0ResourcesCustomColumn
+         * @throws \Google\Service\Exception
+         */
+        public function get($resourceName, $optParams = [])
+        {
+        }
+        /**
+         * Returns all the custom columns associated with the customer in full detail.
+         * (customColumns.listCustomersCustomColumns)
+         *
+         * @param string $customerId Required. The ID of the customer to apply the
+         * CustomColumn list operation to.
+         * @param array $optParams Optional parameters.
+         * @return GoogleAdsSearchads360V0ServicesListCustomColumnsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listCustomersCustomColumns($customerId, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Returns all the custom columns associated with the customer in full detail.
-     * (customColumns.listCustomersCustomColumns)
-     *
-     * @param string $customerId Required. The ID of the customer to apply the
-     * CustomColumn list operation to.
-     * @param array $optParams Optional parameters.
-     * @return GoogleAdsSearchads360V0ServicesListCustomColumnsResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\SA360\Resource\CustomersCustomColumns registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listCustomersCustomColumns($customerId, $optParams = [])
+    class Google_Service_SA360_Resource_CustomersCustomColumns extends \Google\Service\SA360\Resource\CustomersCustomColumns
     {
     }
 }

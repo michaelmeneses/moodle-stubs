@@ -8,6 +8,10 @@
  */
 namespace Aws\Pinpoint;
 
+use Aws\Api\ApiProvider;
+use Aws\Api\DocModel;
+use Aws\Api\Service;
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon Pinpoint** service.
  * @method \Aws\Result createApp(array $args = [])

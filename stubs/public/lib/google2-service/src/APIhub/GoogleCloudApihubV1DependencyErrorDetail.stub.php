@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1DependencyErrorDetail extends \Google\Model
-{
-    /**
-     * Default value used for no error in the dependency.
-     */
-    public const ERROR_ERROR_UNSPECIFIED = 'ERROR_UNSPECIFIED';
-    /**
-     * Supplier entity has been deleted.
-     */
-    public const ERROR_SUPPLIER_NOT_FOUND = 'SUPPLIER_NOT_FOUND';
-    /**
-     * Supplier entity has been recreated.
-     */
-    public const ERROR_SUPPLIER_RECREATED = 'SUPPLIER_RECREATED';
-    /**
-     * Optional. Error in the dependency.
-     *
-     * @var string
-     */
-    public $error;
-    /**
-     * Optional. Timestamp at which the error was found.
-     *
-     * @var string
-     */
-    public $errorTime;
-    /**
-     * Optional. Error in the dependency.
-     *
-     * Accepted values: ERROR_UNSPECIFIED, SUPPLIER_NOT_FOUND, SUPPLIER_RECREATED
-     *
-     * @param self::ERROR_* $error
-     */
-    public function setError($error)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1DependencyErrorDetail extends \Google\Model
     {
+        /**
+         * Default value used for no error in the dependency.
+         */
+        public const ERROR_ERROR_UNSPECIFIED = 'ERROR_UNSPECIFIED';
+        /**
+         * Supplier entity has been deleted.
+         */
+        public const ERROR_SUPPLIER_NOT_FOUND = 'SUPPLIER_NOT_FOUND';
+        /**
+         * Supplier entity has been recreated.
+         */
+        public const ERROR_SUPPLIER_RECREATED = 'SUPPLIER_RECREATED';
+        /**
+         * Optional. Error in the dependency.
+         *
+         * @var string
+         */
+        public $error;
+        /**
+         * Optional. Timestamp at which the error was found.
+         *
+         * @var string
+         */
+        public $errorTime;
+        /**
+         * Optional. Error in the dependency.
+         *
+         * Accepted values: ERROR_UNSPECIFIED, SUPPLIER_NOT_FOUND, SUPPLIER_RECREATED
+         *
+         * @param self::ERROR_* $error
+         */
+        public function setError($error)
+        {
+        }
+        /**
+         * @return self::ERROR_*
+         */
+        public function getError()
+        {
+        }
+        /**
+         * Optional. Timestamp at which the error was found.
+         *
+         * @param string $errorTime
+         */
+        public function setErrorTime($errorTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getErrorTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::ERROR_*
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1DependencyErrorDetail registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getError()
-    {
-    }
-    /**
-     * Optional. Timestamp at which the error was found.
-     *
-     * @param string $errorTime
-     */
-    public function setErrorTime($errorTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getErrorTime()
+    class Google_Service_APIhub_GoogleCloudApihubV1DependencyErrorDetail extends \Google\Service\APIhub\GoogleCloudApihubV1DependencyErrorDetail
     {
     }
 }

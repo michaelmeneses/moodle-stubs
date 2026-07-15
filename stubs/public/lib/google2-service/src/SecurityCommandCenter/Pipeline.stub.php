@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class Pipeline extends \Google\Model
-{
-    /**
-     * The user defined display name of pipeline, e.g. plants-classification
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Resource name of the pipeline, e.g. projects/{project}/locations/{location}
-     * /trainingPipelines/5253428229225578496
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The user defined display name of pipeline, e.g. plants-classification
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\SecurityCommandCenter {
+    class Pipeline extends \Google\Model
     {
+        /**
+         * The user defined display name of pipeline, e.g. plants-classification
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Resource name of the pipeline, e.g. projects/{project}/locations/{location}
+         * /trainingPipelines/5253428229225578496
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The user defined display name of pipeline, e.g. plants-classification
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Resource name of the pipeline, e.g. projects/{project}/locations/{location}
+         * /trainingPipelines/5253428229225578496
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\Pipeline registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Resource name of the pipeline, e.g. projects/{project}/locations/{location}
-     * /trainingPipelines/5253428229225578496
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_SecurityCommandCenter_Pipeline extends \Google\Service\SecurityCommandCenter\Pipeline
     {
     }
 }

@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecaptchaEnterprise\Resource;
-
-/**
- * The "projects" collection of methods.
- * Typical usage is:
- *  <code>
- *   $recaptchaenterpriseService = new Google\Service\RecaptchaEnterprise(...);
- *   $projects = $recaptchaenterpriseService->projects;
- *  </code>
- */
-class Projects extends \Google\Service\Resource
-{
+namespace Google\Service\RecaptchaEnterprise\Resource {
+    /**
+     * The "projects" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $recaptchaenterpriseService = new Google\Service\RecaptchaEnterprise(...);
+     *   $projects = $recaptchaenterpriseService->projects;
+     *  </code>
+     */
+    class Projects extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\RecaptchaEnterprise\Resource\Projects registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_RecaptchaEnterprise_Resource_Projects extends \Google\Service\RecaptchaEnterprise\Resource\Projects
+    {
+    }
 }

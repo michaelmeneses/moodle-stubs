@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CertificateManager;
-
-class GclbTarget extends \Google\Collection
-{
-    protected $collection_key = 'ipConfigs';
-    protected $ipConfigsType = IpConfig::class;
-    protected $ipConfigsDataType = 'array';
-    /**
-     * Output only. This field returns the resource name in the following format:
-     * `//compute.googleapis.com/projects/global/targetHttpsProxies`.
-     *
-     * @var string
-     */
-    public $targetHttpsProxy;
-    /**
-     * Output only. This field returns the resource name in the following format:
-     * `//compute.googleapis.com/projects/global/targetSslProxies`.
-     *
-     * @var string
-     */
-    public $targetSslProxy;
-    /**
-     * Output only. IP configurations for this Target Proxy where the Certificate
-     * Map is serving.
-     *
-     * @param IpConfig[] $ipConfigs
-     */
-    public function setIpConfigs($ipConfigs)
+namespace Google\Service\CertificateManager {
+    class GclbTarget extends \Google\Collection
     {
+        protected $collection_key = 'ipConfigs';
+        protected $ipConfigsType = IpConfig::class;
+        protected $ipConfigsDataType = 'array';
+        /**
+         * Output only. This field returns the resource name in the following format:
+         * `//compute.googleapis.com/projects/global/targetHttpsProxies`.
+         *
+         * @var string
+         */
+        public $targetHttpsProxy;
+        /**
+         * Output only. This field returns the resource name in the following format:
+         * `//compute.googleapis.com/projects/global/targetSslProxies`.
+         *
+         * @var string
+         */
+        public $targetSslProxy;
+        /**
+         * Output only. IP configurations for this Target Proxy where the Certificate
+         * Map is serving.
+         *
+         * @param IpConfig[] $ipConfigs
+         */
+        public function setIpConfigs($ipConfigs)
+        {
+        }
+        /**
+         * @return IpConfig[]
+         */
+        public function getIpConfigs()
+        {
+        }
+        /**
+         * Output only. This field returns the resource name in the following format:
+         * `//compute.googleapis.com/projects/global/targetHttpsProxies`.
+         *
+         * @param string $targetHttpsProxy
+         */
+        public function setTargetHttpsProxy($targetHttpsProxy)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetHttpsProxy()
+        {
+        }
+        /**
+         * Output only. This field returns the resource name in the following format:
+         * `//compute.googleapis.com/projects/global/targetSslProxies`.
+         *
+         * @param string $targetSslProxy
+         */
+        public function setTargetSslProxy($targetSslProxy)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetSslProxy()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return IpConfig[]
+     * Runtime class alias of \Google\Service\CertificateManager\GclbTarget registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIpConfigs()
-    {
-    }
-    /**
-     * Output only. This field returns the resource name in the following format:
-     * `//compute.googleapis.com/projects/global/targetHttpsProxies`.
-     *
-     * @param string $targetHttpsProxy
-     */
-    public function setTargetHttpsProxy($targetHttpsProxy)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetHttpsProxy()
-    {
-    }
-    /**
-     * Output only. This field returns the resource name in the following format:
-     * `//compute.googleapis.com/projects/global/targetSslProxies`.
-     *
-     * @param string $targetSslProxy
-     */
-    public function setTargetSslProxy($targetSslProxy)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetSslProxy()
+    class Google_Service_CertificateManager_GclbTarget extends \Google\Service\CertificateManager\GclbTarget
     {
     }
 }

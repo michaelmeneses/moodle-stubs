@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors;
-
-class Oauth2ClientCredentials extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $clientId;
-    protected $clientSecretType = Secret::class;
-    protected $clientSecretDataType = '';
-    /**
-     * @param string
-     */
-    public function setClientId($clientId)
+namespace Google\Service\Connectors {
+    class Oauth2ClientCredentials extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $clientId;
+        protected $clientSecretType = Secret::class;
+        protected $clientSecretDataType = '';
+        /**
+         * @param string
+         */
+        public function setClientId($clientId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClientId()
+        {
+        }
+        /**
+         * @param Secret
+         */
+        public function setClientSecret(Secret $clientSecret)
+        {
+        }
+        /**
+         * @return Secret
+         */
+        public function getClientSecret()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Connectors\Oauth2ClientCredentials registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClientId()
-    {
-    }
-    /**
-     * @param Secret
-     */
-    public function setClientSecret(Secret $clientSecret)
-    {
-    }
-    /**
-     * @return Secret
-     */
-    public function getClientSecret()
+    class Google_Service_Connectors_Oauth2ClientCredentials extends \Google\Service\Connectors\Oauth2ClientCredentials
     {
     }
 }

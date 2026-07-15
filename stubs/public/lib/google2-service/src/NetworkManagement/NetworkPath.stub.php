@@ -21,245 +21,254 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkManagement;
-
-class NetworkPath extends \Google\Collection
-{
-    protected $collection_key = 'providerTags';
-    /**
-     * @var string
-     */
-    public $createTime;
-    /**
-     * @var string
-     */
-    public $destination;
-    protected $destinationGeoLocationType = GeoLocation::class;
-    protected $destinationGeoLocationDataType = '';
-    /**
-     * @var string
-     */
-    public $displayName;
-    /**
-     * @var bool
-     */
-    public $dualEnded;
-    /**
-     * @var bool
-     */
-    public $monitoringEnabled;
-    /**
-     * @var string
-     */
-    public $monitoringPolicyDisplayName;
-    /**
-     * @var string
-     */
-    public $monitoringPolicyId;
-    /**
-     * @var string
-     */
-    public $monitoringStatus;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $networkProtocol;
-    protected $providerTagsType = ProviderTag::class;
-    protected $providerTagsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $providerUiUri;
-    /**
-     * @var string
-     */
-    public $sourceMonitoringPointId;
-    /**
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * @param string
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\NetworkManagement {
+    class NetworkPath extends \Google\Collection
     {
+        protected $collection_key = 'providerTags';
+        /**
+         * @var string
+         */
+        public $createTime;
+        /**
+         * @var string
+         */
+        public $destination;
+        protected $destinationGeoLocationType = GeoLocation::class;
+        protected $destinationGeoLocationDataType = '';
+        /**
+         * @var string
+         */
+        public $displayName;
+        /**
+         * @var bool
+         */
+        public $dualEnded;
+        /**
+         * @var bool
+         */
+        public $monitoringEnabled;
+        /**
+         * @var string
+         */
+        public $monitoringPolicyDisplayName;
+        /**
+         * @var string
+         */
+        public $monitoringPolicyId;
+        /**
+         * @var string
+         */
+        public $monitoringStatus;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $networkProtocol;
+        protected $providerTagsType = ProviderTag::class;
+        protected $providerTagsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $providerUiUri;
+        /**
+         * @var string
+         */
+        public $sourceMonitoringPointId;
+        /**
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * @param string
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDestination($destination)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDestination()
+        {
+        }
+        /**
+         * @param GeoLocation
+         */
+        public function setDestinationGeoLocation(GeoLocation $destinationGeoLocation)
+        {
+        }
+        /**
+         * @return GeoLocation
+         */
+        public function getDestinationGeoLocation()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setDualEnded($dualEnded)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDualEnded()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setMonitoringEnabled($monitoringEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getMonitoringEnabled()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMonitoringPolicyDisplayName($monitoringPolicyDisplayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMonitoringPolicyDisplayName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMonitoringPolicyId($monitoringPolicyId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMonitoringPolicyId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMonitoringStatus($monitoringStatus)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMonitoringStatus()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNetworkProtocol($networkProtocol)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNetworkProtocol()
+        {
+        }
+        /**
+         * @param ProviderTag[]
+         */
+        public function setProviderTags($providerTags)
+        {
+        }
+        /**
+         * @return ProviderTag[]
+         */
+        public function getProviderTags()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setProviderUiUri($providerUiUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProviderUiUri()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSourceMonitoringPointId($sourceMonitoringPointId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceMonitoringPointId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetworkManagement\NetworkPath registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDestination($destination)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDestination()
-    {
-    }
-    /**
-     * @param GeoLocation
-     */
-    public function setDestinationGeoLocation(GeoLocation $destinationGeoLocation)
-    {
-    }
-    /**
-     * @return GeoLocation
-     */
-    public function getDestinationGeoLocation()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setDualEnded($dualEnded)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDualEnded()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setMonitoringEnabled($monitoringEnabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getMonitoringEnabled()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMonitoringPolicyDisplayName($monitoringPolicyDisplayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMonitoringPolicyDisplayName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMonitoringPolicyId($monitoringPolicyId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMonitoringPolicyId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMonitoringStatus($monitoringStatus)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMonitoringStatus()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNetworkProtocol($networkProtocol)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNetworkProtocol()
-    {
-    }
-    /**
-     * @param ProviderTag[]
-     */
-    public function setProviderTags($providerTags)
-    {
-    }
-    /**
-     * @return ProviderTag[]
-     */
-    public function getProviderTags()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setProviderUiUri($providerUiUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProviderUiUri()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSourceMonitoringPointId($sourceMonitoringPointId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourceMonitoringPointId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_NetworkManagement_NetworkPath extends \Google\Service\NetworkManagement\NetworkPath
     {
     }
 }

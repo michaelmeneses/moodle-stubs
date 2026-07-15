@@ -21,93 +21,102 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class EditGuaranteedOrderReadAccessorsRequest extends \Google\Collection
-{
-    protected $collection_key = 'removedAdvertisers';
-    /**
-     * The advertisers to add as read accessors to the guaranteed order.
-     *
-     * @var string[]
-     */
-    public $addedAdvertisers;
-    /**
-     * Required. The partner context in which the change is being made.
-     *
-     * @var string
-     */
-    public $partnerId;
-    /**
-     * Whether to give all advertisers of the read/write accessor partner read
-     * access to the guaranteed order. Only applicable if read_write_partner_id is
-     * set in the guaranteed order.
-     *
-     * @var bool
-     */
-    public $readAccessInherited;
-    /**
-     * The advertisers to remove as read accessors to the guaranteed order.
-     *
-     * @var string[]
-     */
-    public $removedAdvertisers;
-    /**
-     * The advertisers to add as read accessors to the guaranteed order.
-     *
-     * @param string[] $addedAdvertisers
-     */
-    public function setAddedAdvertisers($addedAdvertisers)
+namespace Google\Service\DisplayVideo {
+    class EditGuaranteedOrderReadAccessorsRequest extends \Google\Collection
     {
+        protected $collection_key = 'removedAdvertisers';
+        /**
+         * The advertisers to add as read accessors to the guaranteed order.
+         *
+         * @var string[]
+         */
+        public $addedAdvertisers;
+        /**
+         * Required. The partner context in which the change is being made.
+         *
+         * @var string
+         */
+        public $partnerId;
+        /**
+         * Whether to give all advertisers of the read/write accessor partner read
+         * access to the guaranteed order. Only applicable if read_write_partner_id is
+         * set in the guaranteed order.
+         *
+         * @var bool
+         */
+        public $readAccessInherited;
+        /**
+         * The advertisers to remove as read accessors to the guaranteed order.
+         *
+         * @var string[]
+         */
+        public $removedAdvertisers;
+        /**
+         * The advertisers to add as read accessors to the guaranteed order.
+         *
+         * @param string[] $addedAdvertisers
+         */
+        public function setAddedAdvertisers($addedAdvertisers)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAddedAdvertisers()
+        {
+        }
+        /**
+         * Required. The partner context in which the change is being made.
+         *
+         * @param string $partnerId
+         */
+        public function setPartnerId($partnerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPartnerId()
+        {
+        }
+        /**
+         * Whether to give all advertisers of the read/write accessor partner read
+         * access to the guaranteed order. Only applicable if read_write_partner_id is
+         * set in the guaranteed order.
+         *
+         * @param bool $readAccessInherited
+         */
+        public function setReadAccessInherited($readAccessInherited)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getReadAccessInherited()
+        {
+        }
+        /**
+         * The advertisers to remove as read accessors to the guaranteed order.
+         *
+         * @param string[] $removedAdvertisers
+         */
+        public function setRemovedAdvertisers($removedAdvertisers)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRemovedAdvertisers()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\DisplayVideo\EditGuaranteedOrderReadAccessorsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddedAdvertisers()
-    {
-    }
-    /**
-     * Required. The partner context in which the change is being made.
-     *
-     * @param string $partnerId
-     */
-    public function setPartnerId($partnerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPartnerId()
-    {
-    }
-    /**
-     * Whether to give all advertisers of the read/write accessor partner read
-     * access to the guaranteed order. Only applicable if read_write_partner_id is
-     * set in the guaranteed order.
-     *
-     * @param bool $readAccessInherited
-     */
-    public function setReadAccessInherited($readAccessInherited)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getReadAccessInherited()
-    {
-    }
-    /**
-     * The advertisers to remove as read accessors to the guaranteed order.
-     *
-     * @param string[] $removedAdvertisers
-     */
-    public function setRemovedAdvertisers($removedAdvertisers)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRemovedAdvertisers()
+    class Google_Service_DisplayVideo_EditGuaranteedOrderReadAccessorsRequest extends \Google\Service\DisplayVideo\EditGuaranteedOrderReadAccessorsRequest
     {
     }
 }

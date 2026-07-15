@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1Access extends \Google\Model
-{
-    protected $internal_gapi_mappings = ["get" => "Get", "remove" => "Remove", "set" => "Set"];
-    protected $getType = GoogleCloudApigeeV1AccessGet::class;
-    protected $getDataType = '';
-    protected $removeType = GoogleCloudApigeeV1AccessRemove::class;
-    protected $removeDataType = '';
-    protected $setType = GoogleCloudApigeeV1AccessSet::class;
-    protected $setDataType = '';
-    /**
-     * @param GoogleCloudApigeeV1AccessGet $get
-     */
-    public function setGet(GoogleCloudApigeeV1AccessGet $get)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1Access extends \Google\Model
     {
+        protected $internal_gapi_mappings = ["get" => "Get", "remove" => "Remove", "set" => "Set"];
+        protected $getType = GoogleCloudApigeeV1AccessGet::class;
+        protected $getDataType = '';
+        protected $removeType = GoogleCloudApigeeV1AccessRemove::class;
+        protected $removeDataType = '';
+        protected $setType = GoogleCloudApigeeV1AccessSet::class;
+        protected $setDataType = '';
+        /**
+         * @param GoogleCloudApigeeV1AccessGet $get
+         */
+        public function setGet(GoogleCloudApigeeV1AccessGet $get)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1AccessGet
+         */
+        public function getGet()
+        {
+        }
+        /**
+         * @param GoogleCloudApigeeV1AccessRemove $remove
+         */
+        public function setRemove(GoogleCloudApigeeV1AccessRemove $remove)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1AccessRemove
+         */
+        public function getRemove()
+        {
+        }
+        /**
+         * @param GoogleCloudApigeeV1AccessSet $set
+         */
+        public function setSet(GoogleCloudApigeeV1AccessSet $set)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1AccessSet
+         */
+        public function getSet()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApigeeV1AccessGet
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1Access registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGet()
-    {
-    }
-    /**
-     * @param GoogleCloudApigeeV1AccessRemove $remove
-     */
-    public function setRemove(GoogleCloudApigeeV1AccessRemove $remove)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1AccessRemove
-     */
-    public function getRemove()
-    {
-    }
-    /**
-     * @param GoogleCloudApigeeV1AccessSet $set
-     */
-    public function setSet(GoogleCloudApigeeV1AccessSet $set)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1AccessSet
-     */
-    public function getSet()
+    class Google_Service_Apigee_GoogleCloudApigeeV1Access extends \Google\Service\Apigee\GoogleCloudApigeeV1Access
     {
     }
 }

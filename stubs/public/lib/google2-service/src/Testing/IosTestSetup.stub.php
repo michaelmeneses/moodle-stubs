@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Testing;
-
-class IosTestSetup extends \Google\Collection
-{
-    protected $collection_key = 'pushFiles';
-    protected $additionalIpasType = FileReference::class;
-    protected $additionalIpasDataType = 'array';
-    /**
-     * The network traffic profile used for running the test. Available network
-     * profiles can be queried by using the NETWORK_CONFIGURATION environment type
-     * when calling TestEnvironmentDiscoveryService.GetTestEnvironmentCatalog.
-     *
-     * @var string
-     */
-    public $networkProfile;
-    protected $pullDirectoriesType = IosDeviceFile::class;
-    protected $pullDirectoriesDataType = 'array';
-    protected $pushFilesType = IosDeviceFile::class;
-    protected $pushFilesDataType = 'array';
-    /**
-     * iOS apps to install in addition to those being directly tested.
-     *
-     * @param FileReference[] $additionalIpas
-     */
-    public function setAdditionalIpas($additionalIpas)
+namespace Google\Service\Testing {
+    class IosTestSetup extends \Google\Collection
     {
+        protected $collection_key = 'pushFiles';
+        protected $additionalIpasType = FileReference::class;
+        protected $additionalIpasDataType = 'array';
+        /**
+         * The network traffic profile used for running the test. Available network
+         * profiles can be queried by using the NETWORK_CONFIGURATION environment type
+         * when calling TestEnvironmentDiscoveryService.GetTestEnvironmentCatalog.
+         *
+         * @var string
+         */
+        public $networkProfile;
+        protected $pullDirectoriesType = IosDeviceFile::class;
+        protected $pullDirectoriesDataType = 'array';
+        protected $pushFilesType = IosDeviceFile::class;
+        protected $pushFilesDataType = 'array';
+        /**
+         * iOS apps to install in addition to those being directly tested.
+         *
+         * @param FileReference[] $additionalIpas
+         */
+        public function setAdditionalIpas($additionalIpas)
+        {
+        }
+        /**
+         * @return FileReference[]
+         */
+        public function getAdditionalIpas()
+        {
+        }
+        /**
+         * The network traffic profile used for running the test. Available network
+         * profiles can be queried by using the NETWORK_CONFIGURATION environment type
+         * when calling TestEnvironmentDiscoveryService.GetTestEnvironmentCatalog.
+         *
+         * @param string $networkProfile
+         */
+        public function setNetworkProfile($networkProfile)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNetworkProfile()
+        {
+        }
+        /**
+         * List of directories on the device to upload to Cloud Storage at the end of
+         * the test. Directories should either be in a shared directory (such as
+         * /private/var/mobile/Media) or within an accessible directory inside the
+         * app's filesystem (such as /Documents) by specifying the bundle ID.
+         *
+         * @param IosDeviceFile[] $pullDirectories
+         */
+        public function setPullDirectories($pullDirectories)
+        {
+        }
+        /**
+         * @return IosDeviceFile[]
+         */
+        public function getPullDirectories()
+        {
+        }
+        /**
+         * List of files to push to the device before starting the test.
+         *
+         * @param IosDeviceFile[] $pushFiles
+         */
+        public function setPushFiles($pushFiles)
+        {
+        }
+        /**
+         * @return IosDeviceFile[]
+         */
+        public function getPushFiles()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FileReference[]
+     * Runtime class alias of \Google\Service\Testing\IosTestSetup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdditionalIpas()
-    {
-    }
-    /**
-     * The network traffic profile used for running the test. Available network
-     * profiles can be queried by using the NETWORK_CONFIGURATION environment type
-     * when calling TestEnvironmentDiscoveryService.GetTestEnvironmentCatalog.
-     *
-     * @param string $networkProfile
-     */
-    public function setNetworkProfile($networkProfile)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNetworkProfile()
-    {
-    }
-    /**
-     * List of directories on the device to upload to Cloud Storage at the end of
-     * the test. Directories should either be in a shared directory (such as
-     * /private/var/mobile/Media) or within an accessible directory inside the
-     * app's filesystem (such as /Documents) by specifying the bundle ID.
-     *
-     * @param IosDeviceFile[] $pullDirectories
-     */
-    public function setPullDirectories($pullDirectories)
-    {
-    }
-    /**
-     * @return IosDeviceFile[]
-     */
-    public function getPullDirectories()
-    {
-    }
-    /**
-     * List of files to push to the device before starting the test.
-     *
-     * @param IosDeviceFile[] $pushFiles
-     */
-    public function setPushFiles($pushFiles)
-    {
-    }
-    /**
-     * @return IosDeviceFile[]
-     */
-    public function getPushFiles()
+    class Google_Service_Testing_IosTestSetup extends \Google\Service\Testing\IosTestSetup
     {
     }
 }

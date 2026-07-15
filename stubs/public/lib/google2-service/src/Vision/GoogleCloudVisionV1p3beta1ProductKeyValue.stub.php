@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class GoogleCloudVisionV1p3beta1ProductKeyValue extends \Google\Model
-{
-    /**
-     * The key of the label attached to the product. Cannot be empty and cannot
-     * exceed 128 bytes.
-     *
-     * @var string
-     */
-    public $key;
-    /**
-     * The value of the label attached to the product. Cannot be empty and cannot
-     * exceed 128 bytes.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * The key of the label attached to the product. Cannot be empty and cannot
-     * exceed 128 bytes.
-     *
-     * @param string $key
-     */
-    public function setKey($key)
+namespace Google\Service\Vision {
+    class GoogleCloudVisionV1p3beta1ProductKeyValue extends \Google\Model
     {
+        /**
+         * The key of the label attached to the product. Cannot be empty and cannot
+         * exceed 128 bytes.
+         *
+         * @var string
+         */
+        public $key;
+        /**
+         * The value of the label attached to the product. Cannot be empty and cannot
+         * exceed 128 bytes.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * The key of the label attached to the product. Cannot be empty and cannot
+         * exceed 128 bytes.
+         *
+         * @param string $key
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * The value of the label attached to the product. Cannot be empty and cannot
+         * exceed 128 bytes.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Vision\GoogleCloudVisionV1p3beta1ProductKeyValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKey()
-    {
-    }
-    /**
-     * The value of the label attached to the product. Cannot be empty and cannot
-     * exceed 128 bytes.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_Vision_GoogleCloudVisionV1p3beta1ProductKeyValue extends \Google\Service\Vision\GoogleCloudVisionV1p3beta1ProductKeyValue
     {
     }
 }

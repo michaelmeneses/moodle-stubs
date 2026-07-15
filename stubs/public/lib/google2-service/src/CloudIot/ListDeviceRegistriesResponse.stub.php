@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIot;
-
-class ListDeviceRegistriesResponse extends \Google\Collection
-{
-    protected $collection_key = 'deviceRegistries';
-    protected $deviceRegistriesType = DeviceRegistry::class;
-    protected $deviceRegistriesDataType = 'array';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * @param DeviceRegistry[]
-     */
-    public function setDeviceRegistries($deviceRegistries)
+namespace Google\Service\CloudIot {
+    class ListDeviceRegistriesResponse extends \Google\Collection
     {
+        protected $collection_key = 'deviceRegistries';
+        protected $deviceRegistriesType = DeviceRegistry::class;
+        protected $deviceRegistriesDataType = 'array';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * @param DeviceRegistry[]
+         */
+        public function setDeviceRegistries($deviceRegistries)
+        {
+        }
+        /**
+         * @return DeviceRegistry[]
+         */
+        public function getDeviceRegistries()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DeviceRegistry[]
+     * Runtime class alias of \Google\Service\CloudIot\ListDeviceRegistriesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeviceRegistries()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_CloudIot_ListDeviceRegistriesResponse extends \Google\Service\CloudIot\ListDeviceRegistriesResponse
     {
     }
 }

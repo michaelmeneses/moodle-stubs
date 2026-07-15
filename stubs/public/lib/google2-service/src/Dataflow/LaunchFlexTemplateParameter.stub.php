@@ -21,170 +21,179 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class LaunchFlexTemplateParameter extends \Google\Model
-{
-    protected $containerSpecType = ContainerSpec::class;
-    protected $containerSpecDataType = '';
-    /**
-     * Cloud Storage path to a file with json serialized ContainerSpec as content.
-     *
-     * @var string
-     */
-    public $containerSpecGcsPath;
-    protected $environmentType = FlexTemplateRuntimeEnvironment::class;
-    protected $environmentDataType = '';
-    /**
-     * Required. The job name to use for the created job. For update job request,
-     * job name should be same as the existing running job.
-     *
-     * @var string
-     */
-    public $jobName;
-    /**
-     * Launch options for this flex template job. This is a common set of options
-     * across languages and templates. This should not be used to pass job
-     * parameters.
-     *
-     * @var string[]
-     */
-    public $launchOptions;
-    /**
-     * The parameters for FlexTemplate. Ex. {"num_workers":"5"}
-     *
-     * @var string[]
-     */
-    public $parameters;
-    /**
-     * Use this to pass transform_name_mappings for streaming update jobs.
-     * Ex:{"oldTransformName":"newTransformName",...}'
-     *
-     * @var string[]
-     */
-    public $transformNameMappings;
-    /**
-     * Set this to true if you are sending a request to update a running streaming
-     * job. When set, the job name should be the same as the running job.
-     *
-     * @var bool
-     */
-    public $update;
-    /**
-     * Spec about the container image to launch.
-     *
-     * @param ContainerSpec $containerSpec
-     */
-    public function setContainerSpec(ContainerSpec $containerSpec)
+namespace Google\Service\Dataflow {
+    class LaunchFlexTemplateParameter extends \Google\Model
     {
+        protected $containerSpecType = ContainerSpec::class;
+        protected $containerSpecDataType = '';
+        /**
+         * Cloud Storage path to a file with json serialized ContainerSpec as content.
+         *
+         * @var string
+         */
+        public $containerSpecGcsPath;
+        protected $environmentType = FlexTemplateRuntimeEnvironment::class;
+        protected $environmentDataType = '';
+        /**
+         * Required. The job name to use for the created job. For update job request,
+         * job name should be same as the existing running job.
+         *
+         * @var string
+         */
+        public $jobName;
+        /**
+         * Launch options for this flex template job. This is a common set of options
+         * across languages and templates. This should not be used to pass job
+         * parameters.
+         *
+         * @var string[]
+         */
+        public $launchOptions;
+        /**
+         * The parameters for FlexTemplate. Ex. {"num_workers":"5"}
+         *
+         * @var string[]
+         */
+        public $parameters;
+        /**
+         * Use this to pass transform_name_mappings for streaming update jobs.
+         * Ex:{"oldTransformName":"newTransformName",...}'
+         *
+         * @var string[]
+         */
+        public $transformNameMappings;
+        /**
+         * Set this to true if you are sending a request to update a running streaming
+         * job. When set, the job name should be the same as the running job.
+         *
+         * @var bool
+         */
+        public $update;
+        /**
+         * Spec about the container image to launch.
+         *
+         * @param ContainerSpec $containerSpec
+         */
+        public function setContainerSpec(ContainerSpec $containerSpec)
+        {
+        }
+        /**
+         * @return ContainerSpec
+         */
+        public function getContainerSpec()
+        {
+        }
+        /**
+         * Cloud Storage path to a file with json serialized ContainerSpec as content.
+         *
+         * @param string $containerSpecGcsPath
+         */
+        public function setContainerSpecGcsPath($containerSpecGcsPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContainerSpecGcsPath()
+        {
+        }
+        /**
+         * The runtime environment for the FlexTemplate job
+         *
+         * @param FlexTemplateRuntimeEnvironment $environment
+         */
+        public function setEnvironment(FlexTemplateRuntimeEnvironment $environment)
+        {
+        }
+        /**
+         * @return FlexTemplateRuntimeEnvironment
+         */
+        public function getEnvironment()
+        {
+        }
+        /**
+         * Required. The job name to use for the created job. For update job request,
+         * job name should be same as the existing running job.
+         *
+         * @param string $jobName
+         */
+        public function setJobName($jobName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getJobName()
+        {
+        }
+        /**
+         * Launch options for this flex template job. This is a common set of options
+         * across languages and templates. This should not be used to pass job
+         * parameters.
+         *
+         * @param string[] $launchOptions
+         */
+        public function setLaunchOptions($launchOptions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLaunchOptions()
+        {
+        }
+        /**
+         * The parameters for FlexTemplate. Ex. {"num_workers":"5"}
+         *
+         * @param string[] $parameters
+         */
+        public function setParameters($parameters)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getParameters()
+        {
+        }
+        /**
+         * Use this to pass transform_name_mappings for streaming update jobs.
+         * Ex:{"oldTransformName":"newTransformName",...}'
+         *
+         * @param string[] $transformNameMappings
+         */
+        public function setTransformNameMappings($transformNameMappings)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTransformNameMappings()
+        {
+        }
+        /**
+         * Set this to true if you are sending a request to update a running streaming
+         * job. When set, the job name should be the same as the running job.
+         *
+         * @param bool $update
+         */
+        public function setUpdate($update)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUpdate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ContainerSpec
+     * Runtime class alias of \Google\Service\Dataflow\LaunchFlexTemplateParameter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContainerSpec()
-    {
-    }
-    /**
-     * Cloud Storage path to a file with json serialized ContainerSpec as content.
-     *
-     * @param string $containerSpecGcsPath
-     */
-    public function setContainerSpecGcsPath($containerSpecGcsPath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContainerSpecGcsPath()
-    {
-    }
-    /**
-     * The runtime environment for the FlexTemplate job
-     *
-     * @param FlexTemplateRuntimeEnvironment $environment
-     */
-    public function setEnvironment(FlexTemplateRuntimeEnvironment $environment)
-    {
-    }
-    /**
-     * @return FlexTemplateRuntimeEnvironment
-     */
-    public function getEnvironment()
-    {
-    }
-    /**
-     * Required. The job name to use for the created job. For update job request,
-     * job name should be same as the existing running job.
-     *
-     * @param string $jobName
-     */
-    public function setJobName($jobName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getJobName()
-    {
-    }
-    /**
-     * Launch options for this flex template job. This is a common set of options
-     * across languages and templates. This should not be used to pass job
-     * parameters.
-     *
-     * @param string[] $launchOptions
-     */
-    public function setLaunchOptions($launchOptions)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLaunchOptions()
-    {
-    }
-    /**
-     * The parameters for FlexTemplate. Ex. {"num_workers":"5"}
-     *
-     * @param string[] $parameters
-     */
-    public function setParameters($parameters)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getParameters()
-    {
-    }
-    /**
-     * Use this to pass transform_name_mappings for streaming update jobs.
-     * Ex:{"oldTransformName":"newTransformName",...}'
-     *
-     * @param string[] $transformNameMappings
-     */
-    public function setTransformNameMappings($transformNameMappings)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTransformNameMappings()
-    {
-    }
-    /**
-     * Set this to true if you are sending a request to update a running streaming
-     * job. When set, the job name should be the same as the running job.
-     *
-     * @param bool $update
-     */
-    public function setUpdate($update)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUpdate()
+    class Google_Service_Dataflow_LaunchFlexTemplateParameter extends \Google\Service\Dataflow\LaunchFlexTemplateParameter
     {
     }
 }

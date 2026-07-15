@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class ConfigManagementContainerResourceRequirements extends \Google\Model
-{
-    public $containerName;
-    protected $cpuLimitType = ConfigManagementQuantity::class;
-    protected $cpuLimitDataType = '';
-    protected $memoryLimitType = ConfigManagementQuantity::class;
-    protected $memoryLimitDataType = '';
-    public function setContainerName($containerName)
+namespace Google\Service\GKEHub {
+    class ConfigManagementContainerResourceRequirements extends \Google\Model
     {
+        public $containerName;
+        protected $cpuLimitType = ConfigManagementQuantity::class;
+        protected $cpuLimitDataType = '';
+        protected $memoryLimitType = ConfigManagementQuantity::class;
+        protected $memoryLimitDataType = '';
+        public function setContainerName($containerName)
+        {
+        }
+        public function getContainerName()
+        {
+        }
+        /**
+         * @param ConfigManagementQuantity
+         */
+        public function setCpuLimit(ConfigManagementQuantity $cpuLimit)
+        {
+        }
+        /**
+         * @return ConfigManagementQuantity
+         */
+        public function getCpuLimit()
+        {
+        }
+        /**
+         * @param ConfigManagementQuantity
+         */
+        public function setMemoryLimit(ConfigManagementQuantity $memoryLimit)
+        {
+        }
+        /**
+         * @return ConfigManagementQuantity
+         */
+        public function getMemoryLimit()
+        {
+        }
     }
-    public function getContainerName()
-    {
-    }
+}
+namespace {
     /**
-     * @param ConfigManagementQuantity
+     * Runtime class alias of \Google\Service\GKEHub\ConfigManagementContainerResourceRequirements registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setCpuLimit(ConfigManagementQuantity $cpuLimit)
-    {
-    }
-    /**
-     * @return ConfigManagementQuantity
-     */
-    public function getCpuLimit()
-    {
-    }
-    /**
-     * @param ConfigManagementQuantity
-     */
-    public function setMemoryLimit(ConfigManagementQuantity $memoryLimit)
-    {
-    }
-    /**
-     * @return ConfigManagementQuantity
-     */
-    public function getMemoryLimit()
+    class Google_Service_GKEHub_ConfigManagementContainerResourceRequirements extends \Google\Service\GKEHub\ConfigManagementContainerResourceRequirements
     {
     }
 }

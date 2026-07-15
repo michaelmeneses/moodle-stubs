@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class BatchCreateBitbucketServerConnectedRepositoriesRequest extends \Google\Collection
-{
-    protected $collection_key = 'requests';
-    protected $requestsType = CreateBitbucketServerConnectedRepositoryRequest::class;
-    protected $requestsDataType = 'array';
-    /**
-     * @param CreateBitbucketServerConnectedRepositoryRequest[]
-     */
-    public function setRequests($requests)
+namespace Google\Service\CloudBuild {
+    class BatchCreateBitbucketServerConnectedRepositoriesRequest extends \Google\Collection
     {
+        protected $collection_key = 'requests';
+        protected $requestsType = CreateBitbucketServerConnectedRepositoryRequest::class;
+        protected $requestsDataType = 'array';
+        /**
+         * @param CreateBitbucketServerConnectedRepositoryRequest[]
+         */
+        public function setRequests($requests)
+        {
+        }
+        /**
+         * @return CreateBitbucketServerConnectedRepositoryRequest[]
+         */
+        public function getRequests()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CreateBitbucketServerConnectedRepositoryRequest[]
+     * Runtime class alias of \Google\Service\CloudBuild\BatchCreateBitbucketServerConnectedRepositoriesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequests()
+    class Google_Service_CloudBuild_BatchCreateBitbucketServerConnectedRepositoriesRequest extends \Google\Service\CloudBuild\BatchCreateBitbucketServerConnectedRepositoriesRequest
     {
     }
 }

@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceUsage;
-
-class ImportAdminQuotaPoliciesResponse extends \Google\Collection
-{
-    protected $collection_key = 'policies';
-    protected $policiesType = AdminQuotaPolicy::class;
-    protected $policiesDataType = 'array';
-    /**
-     * The policies that were created from the imported data.
-     *
-     * @param AdminQuotaPolicy[] $policies
-     */
-    public function setPolicies($policies)
+namespace Google\Service\ServiceUsage {
+    class ImportAdminQuotaPoliciesResponse extends \Google\Collection
     {
+        protected $collection_key = 'policies';
+        protected $policiesType = AdminQuotaPolicy::class;
+        protected $policiesDataType = 'array';
+        /**
+         * The policies that were created from the imported data.
+         *
+         * @param AdminQuotaPolicy[] $policies
+         */
+        public function setPolicies($policies)
+        {
+        }
+        /**
+         * @return AdminQuotaPolicy[]
+         */
+        public function getPolicies()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AdminQuotaPolicy[]
+     * Runtime class alias of \Google\Service\ServiceUsage\ImportAdminQuotaPoliciesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPolicies()
+    class Google_Service_ServiceUsage_ImportAdminQuotaPoliciesResponse extends \Google\Service\ServiceUsage\ImportAdminQuotaPoliciesResponse
     {
     }
 }

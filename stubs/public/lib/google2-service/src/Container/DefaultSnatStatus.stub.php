@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class DefaultSnatStatus extends \Google\Model
-{
-    /**
-     * Disables cluster default sNAT rules.
-     *
-     * @var bool
-     */
-    public $disabled;
-    /**
-     * Disables cluster default sNAT rules.
-     *
-     * @param bool $disabled
-     */
-    public function setDisabled($disabled)
+namespace Google\Service\Container {
+    class DefaultSnatStatus extends \Google\Model
     {
+        /**
+         * Disables cluster default sNAT rules.
+         *
+         * @var bool
+         */
+        public $disabled;
+        /**
+         * Disables cluster default sNAT rules.
+         *
+         * @param bool $disabled
+         */
+        public function setDisabled($disabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Container\DefaultSnatStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisabled()
+    class Google_Service_Container_DefaultSnatStatus extends \Google\Service\Container\DefaultSnatStatus
     {
     }
 }

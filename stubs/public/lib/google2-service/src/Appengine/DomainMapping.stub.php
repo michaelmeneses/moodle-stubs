@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Appengine;
-
-class DomainMapping extends \Google\Collection
-{
-    protected $collection_key = 'resourceRecords';
-    /**
-     * Relative name of the domain serving the application. Example: example.com.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Output only. Full path to the DomainMapping resource in the API. Example:
-     * apps/myapp/domainMapping/example.com.@OutputOnly
-     *
-     * @var string
-     */
-    public $name;
-    protected $resourceRecordsType = ResourceRecord::class;
-    protected $resourceRecordsDataType = 'array';
-    protected $sslSettingsType = SslSettings::class;
-    protected $sslSettingsDataType = '';
-    /**
-     * Relative name of the domain serving the application. Example: example.com.
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\Appengine {
+    class DomainMapping extends \Google\Collection
     {
+        protected $collection_key = 'resourceRecords';
+        /**
+         * Relative name of the domain serving the application. Example: example.com.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Output only. Full path to the DomainMapping resource in the API. Example:
+         * apps/myapp/domainMapping/example.com.@OutputOnly
+         *
+         * @var string
+         */
+        public $name;
+        protected $resourceRecordsType = ResourceRecord::class;
+        protected $resourceRecordsDataType = 'array';
+        protected $sslSettingsType = SslSettings::class;
+        protected $sslSettingsDataType = '';
+        /**
+         * Relative name of the domain serving the application. Example: example.com.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Output only. Full path to the DomainMapping resource in the API. Example:
+         * apps/myapp/domainMapping/example.com.@OutputOnly
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The resource records required to configure this domain
+         * mapping. These records must be added to the domain's DNS configuration in
+         * order to serve the application via this domain mapping.@OutputOnly
+         *
+         * @param ResourceRecord[] $resourceRecords
+         */
+        public function setResourceRecords($resourceRecords)
+        {
+        }
+        /**
+         * @return ResourceRecord[]
+         */
+        public function getResourceRecords()
+        {
+        }
+        /**
+         * SSL configuration for this domain. If unconfigured, this domain will not
+         * serve with SSL.
+         *
+         * @param SslSettings $sslSettings
+         */
+        public function setSslSettings(SslSettings $sslSettings)
+        {
+        }
+        /**
+         * @return SslSettings
+         */
+        public function getSslSettings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Appengine\DomainMapping registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * Output only. Full path to the DomainMapping resource in the API. Example:
-     * apps/myapp/domainMapping/example.com.@OutputOnly
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The resource records required to configure this domain
-     * mapping. These records must be added to the domain's DNS configuration in
-     * order to serve the application via this domain mapping.@OutputOnly
-     *
-     * @param ResourceRecord[] $resourceRecords
-     */
-    public function setResourceRecords($resourceRecords)
-    {
-    }
-    /**
-     * @return ResourceRecord[]
-     */
-    public function getResourceRecords()
-    {
-    }
-    /**
-     * SSL configuration for this domain. If unconfigured, this domain will not
-     * serve with SSL.
-     *
-     * @param SslSettings $sslSettings
-     */
-    public function setSslSettings(SslSettings $sslSettings)
-    {
-    }
-    /**
-     * @return SslSettings
-     */
-    public function getSslSettings()
+    class Google_Service_Appengine_DomainMapping extends \Google\Service\Appengine\DomainMapping
     {
     }
 }

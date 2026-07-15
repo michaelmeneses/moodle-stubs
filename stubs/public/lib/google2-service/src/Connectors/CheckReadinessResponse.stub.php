@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors;
-
-class CheckReadinessResponse extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $status;
-    /**
-     * @param string $status
-     */
-    public function setStatus($status)
+namespace Google\Service\Connectors {
+    class CheckReadinessResponse extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $status;
+        /**
+         * @param string $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Connectors\CheckReadinessResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStatus()
+    class Google_Service_Connectors_CheckReadinessResponse extends \Google\Service\Connectors\CheckReadinessResponse
     {
     }
 }

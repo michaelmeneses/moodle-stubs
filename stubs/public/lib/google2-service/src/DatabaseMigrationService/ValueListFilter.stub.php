@@ -21,89 +21,98 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class ValueListFilter extends \Google\Collection
-{
-    /**
-     * Value present in list unspecified
-     */
-    public const VALUE_PRESENT_LIST_VALUE_PRESENT_IN_LIST_UNSPECIFIED = 'VALUE_PRESENT_IN_LIST_UNSPECIFIED';
-    /**
-     * If the source value is in the supplied list at value_list
-     */
-    public const VALUE_PRESENT_LIST_VALUE_PRESENT_IN_LIST_IF_VALUE_LIST = 'VALUE_PRESENT_IN_LIST_IF_VALUE_LIST';
-    /**
-     * If the source value is not in the supplied list at value_list
-     */
-    public const VALUE_PRESENT_LIST_VALUE_PRESENT_IN_LIST_IF_VALUE_NOT_LIST = 'VALUE_PRESENT_IN_LIST_IF_VALUE_NOT_LIST';
-    protected $collection_key = 'values';
-    /**
-     * Required. Whether to ignore case when filtering by values. Defaults to
-     * false
-     *
-     * @var bool
-     */
-    public $ignoreCase;
-    /**
-     * Required. Indicates whether the filter matches rows with values that are
-     * present in the list or those with values not present in it.
-     *
-     * @var string
-     */
-    public $valuePresentList;
-    /**
-     * Required. The list to be used to filter by
-     *
-     * @var string[]
-     */
-    public $values;
-    /**
-     * Required. Whether to ignore case when filtering by values. Defaults to
-     * false
-     *
-     * @param bool $ignoreCase
-     */
-    public function setIgnoreCase($ignoreCase)
+namespace Google\Service\DatabaseMigrationService {
+    class ValueListFilter extends \Google\Collection
     {
+        /**
+         * Value present in list unspecified
+         */
+        public const VALUE_PRESENT_LIST_VALUE_PRESENT_IN_LIST_UNSPECIFIED = 'VALUE_PRESENT_IN_LIST_UNSPECIFIED';
+        /**
+         * If the source value is in the supplied list at value_list
+         */
+        public const VALUE_PRESENT_LIST_VALUE_PRESENT_IN_LIST_IF_VALUE_LIST = 'VALUE_PRESENT_IN_LIST_IF_VALUE_LIST';
+        /**
+         * If the source value is not in the supplied list at value_list
+         */
+        public const VALUE_PRESENT_LIST_VALUE_PRESENT_IN_LIST_IF_VALUE_NOT_LIST = 'VALUE_PRESENT_IN_LIST_IF_VALUE_NOT_LIST';
+        protected $collection_key = 'values';
+        /**
+         * Required. Whether to ignore case when filtering by values. Defaults to
+         * false
+         *
+         * @var bool
+         */
+        public $ignoreCase;
+        /**
+         * Required. Indicates whether the filter matches rows with values that are
+         * present in the list or those with values not present in it.
+         *
+         * @var string
+         */
+        public $valuePresentList;
+        /**
+         * Required. The list to be used to filter by
+         *
+         * @var string[]
+         */
+        public $values;
+        /**
+         * Required. Whether to ignore case when filtering by values. Defaults to
+         * false
+         *
+         * @param bool $ignoreCase
+         */
+        public function setIgnoreCase($ignoreCase)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIgnoreCase()
+        {
+        }
+        /**
+         * Required. Indicates whether the filter matches rows with values that are
+         * present in the list or those with values not present in it.
+         *
+         * Accepted values: VALUE_PRESENT_IN_LIST_UNSPECIFIED,
+         * VALUE_PRESENT_IN_LIST_IF_VALUE_LIST,
+         * VALUE_PRESENT_IN_LIST_IF_VALUE_NOT_LIST
+         *
+         * @param self::VALUE_PRESENT_LIST_* $valuePresentList
+         */
+        public function setValuePresentList($valuePresentList)
+        {
+        }
+        /**
+         * @return self::VALUE_PRESENT_LIST_*
+         */
+        public function getValuePresentList()
+        {
+        }
+        /**
+         * Required. The list to be used to filter by
+         *
+         * @param string[] $values
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\ValueListFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIgnoreCase()
-    {
-    }
-    /**
-     * Required. Indicates whether the filter matches rows with values that are
-     * present in the list or those with values not present in it.
-     *
-     * Accepted values: VALUE_PRESENT_IN_LIST_UNSPECIFIED,
-     * VALUE_PRESENT_IN_LIST_IF_VALUE_LIST,
-     * VALUE_PRESENT_IN_LIST_IF_VALUE_NOT_LIST
-     *
-     * @param self::VALUE_PRESENT_LIST_* $valuePresentList
-     */
-    public function setValuePresentList($valuePresentList)
-    {
-    }
-    /**
-     * @return self::VALUE_PRESENT_LIST_*
-     */
-    public function getValuePresentList()
-    {
-    }
-    /**
-     * Required. The list to be used to filter by
-     *
-     * @param string[] $values
-     */
-    public function setValues($values)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getValues()
+    class Google_Service_DatabaseMigrationService_ValueListFilter extends \Google\Service\DatabaseMigrationService\ValueListFilter
     {
     }
 }

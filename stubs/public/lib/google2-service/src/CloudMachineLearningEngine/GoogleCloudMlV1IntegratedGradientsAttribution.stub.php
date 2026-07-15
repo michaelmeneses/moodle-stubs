@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudMachineLearningEngine;
-
-class GoogleCloudMlV1IntegratedGradientsAttribution extends \Google\Model
-{
-    /**
-     * Number of steps for approximating the path integral. A good value to start
-     * is 50 and gradually increase until the sum to diff property is met within
-     * the desired error range.
-     *
-     * @var int
-     */
-    public $numIntegralSteps;
-    /**
-     * Number of steps for approximating the path integral. A good value to start
-     * is 50 and gradually increase until the sum to diff property is met within
-     * the desired error range.
-     *
-     * @param int $numIntegralSteps
-     */
-    public function setNumIntegralSteps($numIntegralSteps)
+namespace Google\Service\CloudMachineLearningEngine {
+    class GoogleCloudMlV1IntegratedGradientsAttribution extends \Google\Model
     {
+        /**
+         * Number of steps for approximating the path integral. A good value to start
+         * is 50 and gradually increase until the sum to diff property is met within
+         * the desired error range.
+         *
+         * @var int
+         */
+        public $numIntegralSteps;
+        /**
+         * Number of steps for approximating the path integral. A good value to start
+         * is 50 and gradually increase until the sum to diff property is met within
+         * the desired error range.
+         *
+         * @param int $numIntegralSteps
+         */
+        public function setNumIntegralSteps($numIntegralSteps)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumIntegralSteps()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1IntegratedGradientsAttribution registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNumIntegralSteps()
+    class Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1IntegratedGradientsAttribution extends \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1IntegratedGradientsAttribution
     {
     }
 }

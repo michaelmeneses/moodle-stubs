@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSupport;
-
-class DiffUploadResponse extends \Google\Model
-{
-    /**
-     * # gdata.* are outside protos with mising documentation
-     *
-     * @var string
-     */
-    public $objectVersion;
-    protected $originalObjectType = CompositeMedia::class;
-    protected $originalObjectDataType = '';
-    /**
-     * # gdata.* are outside protos with mising documentation
-     *
-     * @param string $objectVersion
-     */
-    public function setObjectVersion($objectVersion)
+namespace Google\Service\CloudSupport {
+    class DiffUploadResponse extends \Google\Model
     {
+        /**
+         * # gdata.* are outside protos with mising documentation
+         *
+         * @var string
+         */
+        public $objectVersion;
+        protected $originalObjectType = CompositeMedia::class;
+        protected $originalObjectDataType = '';
+        /**
+         * # gdata.* are outside protos with mising documentation
+         *
+         * @param string $objectVersion
+         */
+        public function setObjectVersion($objectVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectVersion()
+        {
+        }
+        /**
+         * # gdata.* are outside protos with mising documentation
+         *
+         * @param CompositeMedia $originalObject
+         */
+        public function setOriginalObject(CompositeMedia $originalObject)
+        {
+        }
+        /**
+         * @return CompositeMedia
+         */
+        public function getOriginalObject()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSupport\DiffUploadResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getObjectVersion()
-    {
-    }
-    /**
-     * # gdata.* are outside protos with mising documentation
-     *
-     * @param CompositeMedia $originalObject
-     */
-    public function setOriginalObject(CompositeMedia $originalObject)
-    {
-    }
-    /**
-     * @return CompositeMedia
-     */
-    public function getOriginalObject()
+    class Google_Service_CloudSupport_DiffUploadResponse extends \Google\Service\CloudSupport\DiffUploadResponse
     {
     }
 }

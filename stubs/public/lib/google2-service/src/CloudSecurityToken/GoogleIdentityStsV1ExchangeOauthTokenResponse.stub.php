@@ -21,105 +21,114 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSecurityToken;
-
-class GoogleIdentityStsV1ExchangeOauthTokenResponse extends \Google\Model
-{
-    protected $internal_gapi_mappings = ["accessToken" => "access_token", "expiresIn" => "expires_in", "idToken" => "id_token", "refreshToken" => "refresh_token", "tokenType" => "token_type"];
-    /**
-     * @var string
-     */
-    public $accessToken;
-    /**
-     * @var int
-     */
-    public $expiresIn;
-    /**
-     * @var string
-     */
-    public $idToken;
-    /**
-     * @var string
-     */
-    public $refreshToken;
-    /**
-     * @var string
-     */
-    public $scope;
-    /**
-     * @var string
-     */
-    public $tokenType;
-    /**
-     * @param string
-     */
-    public function setAccessToken($accessToken)
+namespace Google\Service\CloudSecurityToken {
+    class GoogleIdentityStsV1ExchangeOauthTokenResponse extends \Google\Model
     {
+        protected $internal_gapi_mappings = ["accessToken" => "access_token", "expiresIn" => "expires_in", "idToken" => "id_token", "refreshToken" => "refresh_token", "tokenType" => "token_type"];
+        /**
+         * @var string
+         */
+        public $accessToken;
+        /**
+         * @var int
+         */
+        public $expiresIn;
+        /**
+         * @var string
+         */
+        public $idToken;
+        /**
+         * @var string
+         */
+        public $refreshToken;
+        /**
+         * @var string
+         */
+        public $scope;
+        /**
+         * @var string
+         */
+        public $tokenType;
+        /**
+         * @param string
+         */
+        public function setAccessToken($accessToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccessToken()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setExpiresIn($expiresIn)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getExpiresIn()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setIdToken($idToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIdToken()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRefreshToken($refreshToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRefreshToken()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setScope($scope)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScope()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTokenType($tokenType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTokenType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSecurityToken\GoogleIdentityStsV1ExchangeOauthTokenResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccessToken()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setExpiresIn($expiresIn)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getExpiresIn()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setIdToken($idToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIdToken()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRefreshToken($refreshToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRefreshToken()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setScope($scope)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getScope()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTokenType($tokenType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTokenType()
+    class Google_Service_CloudSecurityToken_GoogleIdentityStsV1ExchangeOauthTokenResponse extends \Google\Service\CloudSecurityToken\GoogleIdentityStsV1ExchangeOauthTokenResponse
     {
     }
 }

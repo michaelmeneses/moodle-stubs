@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaUsernameAndPassword extends \Google\Model
-{
-    /**
-     * Password to be used
-     *
-     * @var string
-     */
-    public $password;
-    /**
-     * Username to be used
-     *
-     * @var string
-     */
-    public $username;
-    /**
-     * Password to be used
-     *
-     * @param string $password
-     */
-    public function setPassword($password)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaUsernameAndPassword extends \Google\Model
     {
+        /**
+         * Password to be used
+         *
+         * @var string
+         */
+        public $password;
+        /**
+         * Username to be used
+         *
+         * @var string
+         */
+        public $username;
+        /**
+         * Password to be used
+         *
+         * @param string $password
+         */
+        public function setPassword($password)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPassword()
+        {
+        }
+        /**
+         * Username to be used
+         *
+         * @param string $username
+         */
+        public function setUsername($username)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUsername()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaUsernameAndPassword registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPassword()
-    {
-    }
-    /**
-     * Username to be used
-     *
-     * @param string $username
-     */
-    public function setUsername($username)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUsername()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaUsernameAndPassword extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaUsernameAndPassword
     {
     }
 }

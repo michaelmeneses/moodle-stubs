@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ToolComputerUse extends \Google\Collection
-{
-    /**
-     * Defaults to browser.
-     */
-    public const ENVIRONMENT_ENVIRONMENT_UNSPECIFIED = 'ENVIRONMENT_UNSPECIFIED';
-    /**
-     * Operates in a web browser.
-     */
-    public const ENVIRONMENT_ENVIRONMENT_BROWSER = 'ENVIRONMENT_BROWSER';
-    protected $collection_key = 'excludedPredefinedFunctions';
-    /**
-     * Required. The environment being operated.
-     *
-     * @var string
-     */
-    public $environment;
-    /**
-     * Optional. By default, [predefined
-     * functions](https://cloud.google.com/vertex-ai/generative-ai/docs/computer-
-     * use#supported-actions) are included in the final model call. Some of them
-     * can be explicitly excluded from being automatically included. This can
-     * serve two purposes: 1. Using a more restricted / different action space. 2.
-     * Improving the definitions / instructions of predefined functions.
-     *
-     * @var string[]
-     */
-    public $excludedPredefinedFunctions;
-    /**
-     * Required. The environment being operated.
-     *
-     * Accepted values: ENVIRONMENT_UNSPECIFIED, ENVIRONMENT_BROWSER
-     *
-     * @param self::ENVIRONMENT_* $environment
-     */
-    public function setEnvironment($environment)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ToolComputerUse extends \Google\Collection
     {
+        /**
+         * Defaults to browser.
+         */
+        public const ENVIRONMENT_ENVIRONMENT_UNSPECIFIED = 'ENVIRONMENT_UNSPECIFIED';
+        /**
+         * Operates in a web browser.
+         */
+        public const ENVIRONMENT_ENVIRONMENT_BROWSER = 'ENVIRONMENT_BROWSER';
+        protected $collection_key = 'excludedPredefinedFunctions';
+        /**
+         * Required. The environment being operated.
+         *
+         * @var string
+         */
+        public $environment;
+        /**
+         * Optional. By default, [predefined
+         * functions](https://cloud.google.com/vertex-ai/generative-ai/docs/computer-
+         * use#supported-actions) are included in the final model call. Some of them
+         * can be explicitly excluded from being automatically included. This can
+         * serve two purposes: 1. Using a more restricted / different action space. 2.
+         * Improving the definitions / instructions of predefined functions.
+         *
+         * @var string[]
+         */
+        public $excludedPredefinedFunctions;
+        /**
+         * Required. The environment being operated.
+         *
+         * Accepted values: ENVIRONMENT_UNSPECIFIED, ENVIRONMENT_BROWSER
+         *
+         * @param self::ENVIRONMENT_* $environment
+         */
+        public function setEnvironment($environment)
+        {
+        }
+        /**
+         * @return self::ENVIRONMENT_*
+         */
+        public function getEnvironment()
+        {
+        }
+        /**
+         * Optional. By default, [predefined
+         * functions](https://cloud.google.com/vertex-ai/generative-ai/docs/computer-
+         * use#supported-actions) are included in the final model call. Some of them
+         * can be explicitly excluded from being automatically included. This can
+         * serve two purposes: 1. Using a more restricted / different action space. 2.
+         * Improving the definitions / instructions of predefined functions.
+         *
+         * @param string[] $excludedPredefinedFunctions
+         */
+        public function setExcludedPredefinedFunctions($excludedPredefinedFunctions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getExcludedPredefinedFunctions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::ENVIRONMENT_*
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ToolComputerUse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnvironment()
-    {
-    }
-    /**
-     * Optional. By default, [predefined
-     * functions](https://cloud.google.com/vertex-ai/generative-ai/docs/computer-
-     * use#supported-actions) are included in the final model call. Some of them
-     * can be explicitly excluded from being automatically included. This can
-     * serve two purposes: 1. Using a more restricted / different action space. 2.
-     * Improving the definitions / instructions of predefined functions.
-     *
-     * @param string[] $excludedPredefinedFunctions
-     */
-    public function setExcludedPredefinedFunctions($excludedPredefinedFunctions)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getExcludedPredefinedFunctions()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ToolComputerUse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ToolComputerUse
     {
     }
 }

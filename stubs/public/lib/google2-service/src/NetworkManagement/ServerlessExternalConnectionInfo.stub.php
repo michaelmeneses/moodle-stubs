@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkManagement;
-
-class ServerlessExternalConnectionInfo extends \Google\Model
-{
-    /**
-     * Selected starting IP address, from the Google dynamic address pool.
-     *
-     * @var string
-     */
-    public $selectedIpAddress;
-    /**
-     * Selected starting IP address, from the Google dynamic address pool.
-     *
-     * @param string $selectedIpAddress
-     */
-    public function setSelectedIpAddress($selectedIpAddress)
+namespace Google\Service\NetworkManagement {
+    class ServerlessExternalConnectionInfo extends \Google\Model
     {
+        /**
+         * Selected starting IP address, from the Google dynamic address pool.
+         *
+         * @var string
+         */
+        public $selectedIpAddress;
+        /**
+         * Selected starting IP address, from the Google dynamic address pool.
+         *
+         * @param string $selectedIpAddress
+         */
+        public function setSelectedIpAddress($selectedIpAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelectedIpAddress()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetworkManagement\ServerlessExternalConnectionInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSelectedIpAddress()
+    class Google_Service_NetworkManagement_ServerlessExternalConnectionInfo extends \Google\Service\NetworkManagement\ServerlessExternalConnectionInfo
     {
     }
 }

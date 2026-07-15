@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class ListVmwareNodePoolsResponse extends \Google\Collection
-{
-    protected $collection_key = 'vmwareNodePools';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    protected $vmwareNodePoolsType = VmwareNodePool::class;
-    protected $vmwareNodePoolsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\GKEOnPrem {
+    class ListVmwareNodePoolsResponse extends \Google\Collection
     {
+        protected $collection_key = 'vmwareNodePools';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        protected $vmwareNodePoolsType = VmwareNodePool::class;
+        protected $vmwareNodePoolsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
+        /**
+         * The node pools from the specified parent resource.
+         *
+         * @param VmwareNodePool[] $vmwareNodePools
+         */
+        public function setVmwareNodePools($vmwareNodePools)
+        {
+        }
+        /**
+         * @return VmwareNodePool[]
+         */
+        public function getVmwareNodePools()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEOnPrem\ListVmwareNodePoolsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
-    {
-    }
-    /**
-     * The node pools from the specified parent resource.
-     *
-     * @param VmwareNodePool[] $vmwareNodePools
-     */
-    public function setVmwareNodePools($vmwareNodePools)
-    {
-    }
-    /**
-     * @return VmwareNodePool[]
-     */
-    public function getVmwareNodePools()
+    class Google_Service_GKEOnPrem_ListVmwareNodePoolsResponse extends \Google\Service\GKEOnPrem\ListVmwareNodePoolsResponse
     {
     }
 }

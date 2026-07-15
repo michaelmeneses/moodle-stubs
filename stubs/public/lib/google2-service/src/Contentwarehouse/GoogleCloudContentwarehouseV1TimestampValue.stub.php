@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudContentwarehouseV1TimestampValue extends \Google\Model
-{
-    /**
-     * The string must represent a valid instant in UTC and is parsed using
-     * java.time.format.DateTimeFormatter.ISO_INSTANT. e.g. "2013-09-29T18:46:19Z"
-     *
-     * @var string
-     */
-    public $textValue;
-    /**
-     * Timestamp value
-     *
-     * @var string
-     */
-    public $timestampValue;
-    /**
-     * The string must represent a valid instant in UTC and is parsed using
-     * java.time.format.DateTimeFormatter.ISO_INSTANT. e.g. "2013-09-29T18:46:19Z"
-     *
-     * @param string $textValue
-     */
-    public function setTextValue($textValue)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudContentwarehouseV1TimestampValue extends \Google\Model
     {
+        /**
+         * The string must represent a valid instant in UTC and is parsed using
+         * java.time.format.DateTimeFormatter.ISO_INSTANT. e.g. "2013-09-29T18:46:19Z"
+         *
+         * @var string
+         */
+        public $textValue;
+        /**
+         * Timestamp value
+         *
+         * @var string
+         */
+        public $timestampValue;
+        /**
+         * The string must represent a valid instant in UTC and is parsed using
+         * java.time.format.DateTimeFormatter.ISO_INSTANT. e.g. "2013-09-29T18:46:19Z"
+         *
+         * @param string $textValue
+         */
+        public function setTextValue($textValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTextValue()
+        {
+        }
+        /**
+         * Timestamp value
+         *
+         * @param string $timestampValue
+         */
+        public function setTimestampValue($timestampValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimestampValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1TimestampValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTextValue()
-    {
-    }
-    /**
-     * Timestamp value
-     *
-     * @param string $timestampValue
-     */
-    public function setTimestampValue($timestampValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimestampValue()
+    class Google_Service_Contentwarehouse_GoogleCloudContentwarehouseV1TimestampValue extends \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1TimestampValue
     {
     }
 }

@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementV1TelemetryNotificationConfig extends \Google\Model
-{
-    /**
-     * Output only. Google Workspace customer that owns the resource.
-     *
-     * @var string
-     */
-    public $customer;
-    protected $filterType = GoogleChromeManagementV1TelemetryNotificationFilter::class;
-    protected $filterDataType = '';
-    /**
-     * The pubsub topic to which notifications are published to.
-     *
-     * @var string
-     */
-    public $googleCloudPubsubTopic;
-    /**
-     * Output only. Resource name of the notification configuration.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. Google Workspace customer that owns the resource.
-     *
-     * @param string $customer
-     */
-    public function setCustomer($customer)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementV1TelemetryNotificationConfig extends \Google\Model
     {
+        /**
+         * Output only. Google Workspace customer that owns the resource.
+         *
+         * @var string
+         */
+        public $customer;
+        protected $filterType = GoogleChromeManagementV1TelemetryNotificationFilter::class;
+        protected $filterDataType = '';
+        /**
+         * The pubsub topic to which notifications are published to.
+         *
+         * @var string
+         */
+        public $googleCloudPubsubTopic;
+        /**
+         * Output only. Resource name of the notification configuration.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. Google Workspace customer that owns the resource.
+         *
+         * @param string $customer
+         */
+        public function setCustomer($customer)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomer()
+        {
+        }
+        /**
+         * Only send notifications for telemetry data matching this filter.
+         *
+         * @param GoogleChromeManagementV1TelemetryNotificationFilter $filter
+         */
+        public function setFilter(GoogleChromeManagementV1TelemetryNotificationFilter $filter)
+        {
+        }
+        /**
+         * @return GoogleChromeManagementV1TelemetryNotificationFilter
+         */
+        public function getFilter()
+        {
+        }
+        /**
+         * The pubsub topic to which notifications are published to.
+         *
+         * @param string $googleCloudPubsubTopic
+         */
+        public function setGoogleCloudPubsubTopic($googleCloudPubsubTopic)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGoogleCloudPubsubTopic()
+        {
+        }
+        /**
+         * Output only. Resource name of the notification configuration.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementV1TelemetryNotificationConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomer()
-    {
-    }
-    /**
-     * Only send notifications for telemetry data matching this filter.
-     *
-     * @param GoogleChromeManagementV1TelemetryNotificationFilter $filter
-     */
-    public function setFilter(GoogleChromeManagementV1TelemetryNotificationFilter $filter)
-    {
-    }
-    /**
-     * @return GoogleChromeManagementV1TelemetryNotificationFilter
-     */
-    public function getFilter()
-    {
-    }
-    /**
-     * The pubsub topic to which notifications are published to.
-     *
-     * @param string $googleCloudPubsubTopic
-     */
-    public function setGoogleCloudPubsubTopic($googleCloudPubsubTopic)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGoogleCloudPubsubTopic()
-    {
-    }
-    /**
-     * Output only. Resource name of the notification configuration.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_ChromeManagement_GoogleChromeManagementV1TelemetryNotificationConfig extends \Google\Service\ChromeManagement\GoogleChromeManagementV1TelemetryNotificationConfig
     {
     }
 }

@@ -21,261 +21,270 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Reports;
-
-class FieldValue extends \Google\Model
-{
-    protected $dateValueType = Date::class;
-    protected $dateValueDataType = '';
-    /**
-     * Display name of the field
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Identifier of the field
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Setting an integer value.
-     *
-     * @var string
-     */
-    public $integerValue;
-    /**
-     * Setting a long text value.
-     *
-     * @var string
-     */
-    public $longTextValue;
-    protected $reasonType = Reason::class;
-    protected $reasonDataType = '';
-    protected $selectionListValueType = FieldValueSelectionListValue::class;
-    protected $selectionListValueDataType = '';
-    protected $selectionValueType = FieldValueSelectionValue::class;
-    protected $selectionValueDataType = '';
-    protected $textListValueType = FieldValueTextListValue::class;
-    protected $textListValueDataType = '';
-    /**
-     * Setting a text value.
-     *
-     * @var string
-     */
-    public $textValue;
-    /**
-     * Type of the field
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * If the field is unset, this will be true.
-     *
-     * @var bool
-     */
-    public $unsetValue;
-    protected $userListValueType = FieldValueUserListValue::class;
-    protected $userListValueDataType = '';
-    protected $userValueType = FieldValueUserValue::class;
-    protected $userValueDataType = '';
-    /**
-     * Setting a date value.
-     *
-     * @param Date $dateValue
-     */
-    public function setDateValue(Date $dateValue)
+namespace Google\Service\Reports {
+    class FieldValue extends \Google\Model
     {
+        protected $dateValueType = Date::class;
+        protected $dateValueDataType = '';
+        /**
+         * Display name of the field
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Identifier of the field
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Setting an integer value.
+         *
+         * @var string
+         */
+        public $integerValue;
+        /**
+         * Setting a long text value.
+         *
+         * @var string
+         */
+        public $longTextValue;
+        protected $reasonType = Reason::class;
+        protected $reasonDataType = '';
+        protected $selectionListValueType = FieldValueSelectionListValue::class;
+        protected $selectionListValueDataType = '';
+        protected $selectionValueType = FieldValueSelectionValue::class;
+        protected $selectionValueDataType = '';
+        protected $textListValueType = FieldValueTextListValue::class;
+        protected $textListValueDataType = '';
+        /**
+         * Setting a text value.
+         *
+         * @var string
+         */
+        public $textValue;
+        /**
+         * Type of the field
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * If the field is unset, this will be true.
+         *
+         * @var bool
+         */
+        public $unsetValue;
+        protected $userListValueType = FieldValueUserListValue::class;
+        protected $userListValueDataType = '';
+        protected $userValueType = FieldValueUserValue::class;
+        protected $userValueDataType = '';
+        /**
+         * Setting a date value.
+         *
+         * @param Date $dateValue
+         */
+        public function setDateValue(Date $dateValue)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getDateValue()
+        {
+        }
+        /**
+         * Display name of the field
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Identifier of the field
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Setting an integer value.
+         *
+         * @param string $integerValue
+         */
+        public function setIntegerValue($integerValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIntegerValue()
+        {
+        }
+        /**
+         * Setting a long text value.
+         *
+         * @param string $longTextValue
+         */
+        public function setLongTextValue($longTextValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLongTextValue()
+        {
+        }
+        /**
+         * The reason why the field was applied to the label.
+         *
+         * @param Reason $reason
+         */
+        public function setReason(Reason $reason)
+        {
+        }
+        /**
+         * @return Reason
+         */
+        public function getReason()
+        {
+        }
+        /**
+         * Setting a selection list value by selecting multiple values from a
+         * dropdown.
+         *
+         * @param FieldValueSelectionListValue $selectionListValue
+         */
+        public function setSelectionListValue(FieldValueSelectionListValue $selectionListValue)
+        {
+        }
+        /**
+         * @return FieldValueSelectionListValue
+         */
+        public function getSelectionListValue()
+        {
+        }
+        /**
+         * Setting a selection value by selecting a single value from a dropdown.
+         *
+         * @param FieldValueSelectionValue $selectionValue
+         */
+        public function setSelectionValue(FieldValueSelectionValue $selectionValue)
+        {
+        }
+        /**
+         * @return FieldValueSelectionValue
+         */
+        public function getSelectionValue()
+        {
+        }
+        /**
+         * Setting a text list value.
+         *
+         * @param FieldValueTextListValue $textListValue
+         */
+        public function setTextListValue(FieldValueTextListValue $textListValue)
+        {
+        }
+        /**
+         * @return FieldValueTextListValue
+         */
+        public function getTextListValue()
+        {
+        }
+        /**
+         * Setting a text value.
+         *
+         * @param string $textValue
+         */
+        public function setTextValue($textValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTextValue()
+        {
+        }
+        /**
+         * Type of the field
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
+        /**
+         * If the field is unset, this will be true.
+         *
+         * @param bool $unsetValue
+         */
+        public function setUnsetValue($unsetValue)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUnsetValue()
+        {
+        }
+        /**
+         * Setting a user list value by selecting multiple users.
+         *
+         * @param FieldValueUserListValue $userListValue
+         */
+        public function setUserListValue(FieldValueUserListValue $userListValue)
+        {
+        }
+        /**
+         * @return FieldValueUserListValue
+         */
+        public function getUserListValue()
+        {
+        }
+        /**
+         * Setting a user value by selecting a single user.
+         *
+         * @param FieldValueUserValue $userValue
+         */
+        public function setUserValue(FieldValueUserValue $userValue)
+        {
+        }
+        /**
+         * @return FieldValueUserValue
+         */
+        public function getUserValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Date
+     * Runtime class alias of \Google\Service\Reports\FieldValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDateValue()
-    {
-    }
-    /**
-     * Display name of the field
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Identifier of the field
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Setting an integer value.
-     *
-     * @param string $integerValue
-     */
-    public function setIntegerValue($integerValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIntegerValue()
-    {
-    }
-    /**
-     * Setting a long text value.
-     *
-     * @param string $longTextValue
-     */
-    public function setLongTextValue($longTextValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLongTextValue()
-    {
-    }
-    /**
-     * The reason why the field was applied to the label.
-     *
-     * @param Reason $reason
-     */
-    public function setReason(Reason $reason)
-    {
-    }
-    /**
-     * @return Reason
-     */
-    public function getReason()
-    {
-    }
-    /**
-     * Setting a selection list value by selecting multiple values from a
-     * dropdown.
-     *
-     * @param FieldValueSelectionListValue $selectionListValue
-     */
-    public function setSelectionListValue(FieldValueSelectionListValue $selectionListValue)
-    {
-    }
-    /**
-     * @return FieldValueSelectionListValue
-     */
-    public function getSelectionListValue()
-    {
-    }
-    /**
-     * Setting a selection value by selecting a single value from a dropdown.
-     *
-     * @param FieldValueSelectionValue $selectionValue
-     */
-    public function setSelectionValue(FieldValueSelectionValue $selectionValue)
-    {
-    }
-    /**
-     * @return FieldValueSelectionValue
-     */
-    public function getSelectionValue()
-    {
-    }
-    /**
-     * Setting a text list value.
-     *
-     * @param FieldValueTextListValue $textListValue
-     */
-    public function setTextListValue(FieldValueTextListValue $textListValue)
-    {
-    }
-    /**
-     * @return FieldValueTextListValue
-     */
-    public function getTextListValue()
-    {
-    }
-    /**
-     * Setting a text value.
-     *
-     * @param string $textValue
-     */
-    public function setTextValue($textValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTextValue()
-    {
-    }
-    /**
-     * Type of the field
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
-    {
-    }
-    /**
-     * If the field is unset, this will be true.
-     *
-     * @param bool $unsetValue
-     */
-    public function setUnsetValue($unsetValue)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUnsetValue()
-    {
-    }
-    /**
-     * Setting a user list value by selecting multiple users.
-     *
-     * @param FieldValueUserListValue $userListValue
-     */
-    public function setUserListValue(FieldValueUserListValue $userListValue)
-    {
-    }
-    /**
-     * @return FieldValueUserListValue
-     */
-    public function getUserListValue()
-    {
-    }
-    /**
-     * Setting a user value by selecting a single user.
-     *
-     * @param FieldValueUserValue $userValue
-     */
-    public function setUserValue(FieldValueUserValue $userValue)
-    {
-    }
-    /**
-     * @return FieldValueUserValue
-     */
-    public function getUserValue()
+    class Google_Service_Reports_FieldValue extends \Google\Service\Reports\FieldValue
     {
     }
 }

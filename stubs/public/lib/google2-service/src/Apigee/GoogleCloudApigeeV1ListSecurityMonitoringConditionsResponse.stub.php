@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1ListSecurityMonitoringConditionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'securityMonitoringConditions';
-    /**
-     * A token that can be sent as `page_token` to retrieve the next page. If this
-     * field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $securityMonitoringConditionsType = GoogleCloudApigeeV1SecurityMonitoringCondition::class;
-    protected $securityMonitoringConditionsDataType = 'array';
-    /**
-     * A token that can be sent as `page_token` to retrieve the next page. If this
-     * field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1ListSecurityMonitoringConditionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'securityMonitoringConditions';
+        /**
+         * A token that can be sent as `page_token` to retrieve the next page. If this
+         * field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $securityMonitoringConditionsType = GoogleCloudApigeeV1SecurityMonitoringCondition::class;
+        protected $securityMonitoringConditionsDataType = 'array';
+        /**
+         * A token that can be sent as `page_token` to retrieve the next page. If this
+         * field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * List of security monitoring conditions in the organization.
+         *
+         * @param GoogleCloudApigeeV1SecurityMonitoringCondition[] $securityMonitoringConditions
+         */
+        public function setSecurityMonitoringConditions($securityMonitoringConditions)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1SecurityMonitoringCondition[]
+         */
+        public function getSecurityMonitoringConditions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1ListSecurityMonitoringConditionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * List of security monitoring conditions in the organization.
-     *
-     * @param GoogleCloudApigeeV1SecurityMonitoringCondition[] $securityMonitoringConditions
-     */
-    public function setSecurityMonitoringConditions($securityMonitoringConditions)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1SecurityMonitoringCondition[]
-     */
-    public function getSecurityMonitoringConditions()
+    class Google_Service_Apigee_GoogleCloudApigeeV1ListSecurityMonitoringConditionsResponse extends \Google\Service\Apigee\GoogleCloudApigeeV1ListSecurityMonitoringConditionsResponse
     {
     }
 }

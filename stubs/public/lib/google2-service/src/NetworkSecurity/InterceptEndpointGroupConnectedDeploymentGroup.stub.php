@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkSecurity;
-
-class InterceptEndpointGroupConnectedDeploymentGroup extends \Google\Collection
-{
-    protected $collection_key = 'locations';
-    protected $locationsType = InterceptLocation::class;
-    protected $locationsDataType = 'array';
-    /**
-     * Output only. The connected deployment group's resource name, for example:
-     * `projects/123456789/locations/global/interceptDeploymentGroups/my-dg`. See
-     * https://google.aip.dev/124.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The list of locations where the deployment group is present.
-     *
-     * @param InterceptLocation[] $locations
-     */
-    public function setLocations($locations)
+namespace Google\Service\NetworkSecurity {
+    class InterceptEndpointGroupConnectedDeploymentGroup extends \Google\Collection
     {
+        protected $collection_key = 'locations';
+        protected $locationsType = InterceptLocation::class;
+        protected $locationsDataType = 'array';
+        /**
+         * Output only. The connected deployment group's resource name, for example:
+         * `projects/123456789/locations/global/interceptDeploymentGroups/my-dg`. See
+         * https://google.aip.dev/124.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The list of locations where the deployment group is present.
+         *
+         * @param InterceptLocation[] $locations
+         */
+        public function setLocations($locations)
+        {
+        }
+        /**
+         * @return InterceptLocation[]
+         */
+        public function getLocations()
+        {
+        }
+        /**
+         * Output only. The connected deployment group's resource name, for example:
+         * `projects/123456789/locations/global/interceptDeploymentGroups/my-dg`. See
+         * https://google.aip.dev/124.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InterceptLocation[]
+     * Runtime class alias of \Google\Service\NetworkSecurity\InterceptEndpointGroupConnectedDeploymentGroup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLocations()
-    {
-    }
-    /**
-     * Output only. The connected deployment group's resource name, for example:
-     * `projects/123456789/locations/global/interceptDeploymentGroups/my-dg`. See
-     * https://google.aip.dev/124.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_NetworkSecurity_InterceptEndpointGroupConnectedDeploymentGroup extends \Google\Service\NetworkSecurity\InterceptEndpointGroupConnectedDeploymentGroup
     {
     }
 }

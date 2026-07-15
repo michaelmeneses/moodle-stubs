@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class ObjectPropertyOptions extends \Google\Collection
-{
-    protected $collection_key = 'subobjectProperties';
-    protected $subobjectPropertiesType = PropertyDefinition::class;
-    protected $subobjectPropertiesDataType = 'array';
-    /**
-     * The properties of the sub-object. These properties represent a nested
-     * object. For example, if this property represents a postal address, the
-     * subobjectProperties might be named *street*, *city*, and *state*. The
-     * maximum number of elements is 1000.
-     *
-     * @param PropertyDefinition[] $subobjectProperties
-     */
-    public function setSubobjectProperties($subobjectProperties)
+namespace Google\Service\CloudSearch {
+    class ObjectPropertyOptions extends \Google\Collection
     {
+        protected $collection_key = 'subobjectProperties';
+        protected $subobjectPropertiesType = PropertyDefinition::class;
+        protected $subobjectPropertiesDataType = 'array';
+        /**
+         * The properties of the sub-object. These properties represent a nested
+         * object. For example, if this property represents a postal address, the
+         * subobjectProperties might be named *street*, *city*, and *state*. The
+         * maximum number of elements is 1000.
+         *
+         * @param PropertyDefinition[] $subobjectProperties
+         */
+        public function setSubobjectProperties($subobjectProperties)
+        {
+        }
+        /**
+         * @return PropertyDefinition[]
+         */
+        public function getSubobjectProperties()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PropertyDefinition[]
+     * Runtime class alias of \Google\Service\CloudSearch\ObjectPropertyOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSubobjectProperties()
+    class Google_Service_CloudSearch_ObjectPropertyOptions extends \Google\Service\CloudSearch\ObjectPropertyOptions
     {
     }
 }

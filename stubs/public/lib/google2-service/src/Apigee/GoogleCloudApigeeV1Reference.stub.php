@@ -21,96 +21,105 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1Reference extends \Google\Model
-{
-    /**
-     * Optional. A human-readable description of this reference.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Required. The resource id of this reference. Values must match the regular
-     * expression [\w\s\-.]+.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. The id of the resource to which this reference refers. Must be
-     * the id of a resource that exists in the parent environment and is of the
-     * given resource_type.
-     *
-     * @var string
-     */
-    public $refers;
-    /**
-     * The type of resource referred to by this reference. Valid values are
-     * 'KeyStore' or 'TrustStore'.
-     *
-     * @var string
-     */
-    public $resourceType;
-    /**
-     * Optional. A human-readable description of this reference.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1Reference extends \Google\Model
     {
+        /**
+         * Optional. A human-readable description of this reference.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Required. The resource id of this reference. Values must match the regular
+         * expression [\w\s\-.]+.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. The id of the resource to which this reference refers. Must be
+         * the id of a resource that exists in the parent environment and is of the
+         * given resource_type.
+         *
+         * @var string
+         */
+        public $refers;
+        /**
+         * The type of resource referred to by this reference. Valid values are
+         * 'KeyStore' or 'TrustStore'.
+         *
+         * @var string
+         */
+        public $resourceType;
+        /**
+         * Optional. A human-readable description of this reference.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Required. The resource id of this reference. Values must match the regular
+         * expression [\w\s\-.]+.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Required. The id of the resource to which this reference refers. Must be
+         * the id of a resource that exists in the parent environment and is of the
+         * given resource_type.
+         *
+         * @param string $refers
+         */
+        public function setRefers($refers)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRefers()
+        {
+        }
+        /**
+         * The type of resource referred to by this reference. Valid values are
+         * 'KeyStore' or 'TrustStore'.
+         *
+         * @param string $resourceType
+         */
+        public function setResourceType($resourceType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1Reference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * Required. The resource id of this reference. Values must match the regular
-     * expression [\w\s\-.]+.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Required. The id of the resource to which this reference refers. Must be
-     * the id of a resource that exists in the parent environment and is of the
-     * given resource_type.
-     *
-     * @param string $refers
-     */
-    public function setRefers($refers)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRefers()
-    {
-    }
-    /**
-     * The type of resource referred to by this reference. Valid values are
-     * 'KeyStore' or 'TrustStore'.
-     *
-     * @param string $resourceType
-     */
-    public function setResourceType($resourceType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceType()
+    class Google_Service_Apigee_GoogleCloudApigeeV1Reference extends \Google\Service\Apigee\GoogleCloudApigeeV1Reference
     {
     }
 }

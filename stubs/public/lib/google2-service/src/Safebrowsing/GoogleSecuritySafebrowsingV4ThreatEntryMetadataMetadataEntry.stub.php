@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Safebrowsing;
-
-class GoogleSecuritySafebrowsingV4ThreatEntryMetadataMetadataEntry extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $key;
-    /**
-     * @var string
-     */
-    public $value;
-    /**
-     * @param string
-     */
-    public function setKey($key)
+namespace Google\Service\Safebrowsing {
+    class GoogleSecuritySafebrowsingV4ThreatEntryMetadataMetadataEntry extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $key;
+        /**
+         * @var string
+         */
+        public $value;
+        /**
+         * @param string
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Safebrowsing\GoogleSecuritySafebrowsingV4ThreatEntryMetadataMetadataEntry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKey()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_Safebrowsing_GoogleSecuritySafebrowsingV4ThreatEntryMetadataMetadataEntry extends \Google\Service\Safebrowsing\GoogleSecuritySafebrowsingV4ThreatEntryMetadataMetadataEntry
     {
     }
 }

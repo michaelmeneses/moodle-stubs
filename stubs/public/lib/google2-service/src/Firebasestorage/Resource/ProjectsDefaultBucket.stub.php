@@ -21,32 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firebasestorage\Resource;
-
-/**
- * The "defaultBucket" collection of methods.
- * Typical usage is:
- *  <code>
- *   $firebasestorageService = new Google\Service\Firebasestorage(...);
- *   $defaultBucket = $firebasestorageService->projects_defaultBucket;
- *  </code>
- */
-class ProjectsDefaultBucket extends \Google\Service\Resource
-{
+namespace Google\Service\Firebasestorage\Resource {
+    use Google\Service\Firebasestorage\DefaultBucket;
     /**
-     * Creates a Spark tier-eligible Cloud Storage bucket and links it to your
-     * Firebase project. If the default bucket already exists, this method will re-
-     * link it to your Firebase project. See https://firebase.google.com/pricing for
-     * pricing details. (defaultBucket.create)
-     *
-     * @param string $parent Required. The parent resource where the default bucket
-     * will be created, `projects/{project_id_or_number}`.
-     * @param DefaultBucket $postBody
-     * @param array $optParams Optional parameters.
-     * @return DefaultBucket
-     * @throws \Google\Service\Exception
+     * The "defaultBucket" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $firebasestorageService = new Google\Service\Firebasestorage(...);
+     *   $defaultBucket = $firebasestorageService->projects_defaultBucket;
+     *  </code>
      */
-    public function create($parent, DefaultBucket $postBody, $optParams = [])
+    class ProjectsDefaultBucket extends \Google\Service\Resource
+    {
+        /**
+         * Creates a Spark tier-eligible Cloud Storage bucket and links it to your
+         * Firebase project. If the default bucket already exists, this method will re-
+         * link it to your Firebase project. See https://firebase.google.com/pricing for
+         * pricing details. (defaultBucket.create)
+         *
+         * @param string $parent Required. The parent resource where the default bucket
+         * will be created, `projects/{project_id_or_number}`.
+         * @param DefaultBucket $postBody
+         * @param array $optParams Optional parameters.
+         * @return DefaultBucket
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, DefaultBucket $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Firebasestorage\Resource\ProjectsDefaultBucket registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Firebasestorage_Resource_ProjectsDefaultBucket extends \Google\Service\Firebasestorage\Resource\ProjectsDefaultBucket
     {
     }
 }

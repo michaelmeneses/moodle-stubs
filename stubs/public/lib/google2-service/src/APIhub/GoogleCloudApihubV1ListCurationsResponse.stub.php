@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1ListCurationsResponse extends \Google\Collection
-{
-    protected $collection_key = 'curations';
-    protected $curationsType = GoogleCloudApihubV1Curation::class;
-    protected $curationsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The curation resources present in the API hub.
-     *
-     * @param GoogleCloudApihubV1Curation[] $curations
-     */
-    public function setCurations($curations)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1ListCurationsResponse extends \Google\Collection
     {
+        protected $collection_key = 'curations';
+        protected $curationsType = GoogleCloudApihubV1Curation::class;
+        protected $curationsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The curation resources present in the API hub.
+         *
+         * @param GoogleCloudApihubV1Curation[] $curations
+         */
+        public function setCurations($curations)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1Curation[]
+         */
+        public function getCurations()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApihubV1Curation[]
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1ListCurationsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCurations()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_APIhub_GoogleCloudApihubV1ListCurationsResponse extends \Google\Service\APIhub\GoogleCloudApihubV1ListCurationsResponse
     {
     }
 }

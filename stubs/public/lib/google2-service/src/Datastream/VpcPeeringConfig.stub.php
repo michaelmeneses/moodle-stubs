@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class VpcPeeringConfig extends \Google\Model
-{
-    /**
-     * Required. A free subnet for peering. (CIDR of /29)
-     *
-     * @var string
-     */
-    public $subnet;
-    /**
-     * Required. Fully qualified name of the VPC that Datastream will peer to.
-     * Format: `projects/{project}/global/{networks}/{name}`
-     *
-     * @var string
-     */
-    public $vpc;
-    /**
-     * Required. A free subnet for peering. (CIDR of /29)
-     *
-     * @param string $subnet
-     */
-    public function setSubnet($subnet)
+namespace Google\Service\Datastream {
+    class VpcPeeringConfig extends \Google\Model
     {
+        /**
+         * Required. A free subnet for peering. (CIDR of /29)
+         *
+         * @var string
+         */
+        public $subnet;
+        /**
+         * Required. Fully qualified name of the VPC that Datastream will peer to.
+         * Format: `projects/{project}/global/{networks}/{name}`
+         *
+         * @var string
+         */
+        public $vpc;
+        /**
+         * Required. A free subnet for peering. (CIDR of /29)
+         *
+         * @param string $subnet
+         */
+        public function setSubnet($subnet)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubnet()
+        {
+        }
+        /**
+         * Required. Fully qualified name of the VPC that Datastream will peer to.
+         * Format: `projects/{project}/global/{networks}/{name}`
+         *
+         * @param string $vpc
+         */
+        public function setVpc($vpc)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVpc()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Datastream\VpcPeeringConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSubnet()
-    {
-    }
-    /**
-     * Required. Fully qualified name of the VPC that Datastream will peer to.
-     * Format: `projects/{project}/global/{networks}/{name}`
-     *
-     * @param string $vpc
-     */
-    public function setVpc($vpc)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVpc()
+    class Google_Service_Datastream_VpcPeeringConfig extends \Google\Service\Datastream\VpcPeeringConfig
     {
     }
 }

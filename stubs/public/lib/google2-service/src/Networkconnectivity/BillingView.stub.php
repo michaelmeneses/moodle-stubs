@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity;
-
-class BillingView extends \Google\Collection
-{
-    protected $collection_key = 'reportRequests';
-    protected $reportRequestsType = ReportRequest::class;
-    protected $reportRequestsDataType = 'array';
-    /**
-     * @param ReportRequest[]
-     */
-    public function setReportRequests($reportRequests)
+namespace Google\Service\Networkconnectivity {
+    class BillingView extends \Google\Collection
     {
+        protected $collection_key = 'reportRequests';
+        protected $reportRequestsType = ReportRequest::class;
+        protected $reportRequestsDataType = 'array';
+        /**
+         * @param ReportRequest[]
+         */
+        public function setReportRequests($reportRequests)
+        {
+        }
+        /**
+         * @return ReportRequest[]
+         */
+        public function getReportRequests()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ReportRequest[]
+     * Runtime class alias of \Google\Service\Networkconnectivity\BillingView registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReportRequests()
+    class Google_Service_Networkconnectivity_BillingView extends \Google\Service\Networkconnectivity\BillingView
     {
     }
 }

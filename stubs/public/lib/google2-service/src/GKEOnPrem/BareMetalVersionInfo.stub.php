@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class BareMetalVersionInfo extends \Google\Collection
-{
-    protected $collection_key = 'dependencies';
-    protected $dependenciesType = UpgradeDependency::class;
-    protected $dependenciesDataType = 'array';
-    /**
-     * If set, the cluster dependencies (e.g. the admin cluster, other user
-     * clusters managed by the same admin cluster, version skew policy, etc) must
-     * be upgraded before this version can be installed or upgraded to.
-     *
-     * @var bool
-     */
-    public $hasDependencies;
-    /**
-     * Version number e.g. 1.13.1.
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * The list of upgrade dependencies for this version.
-     *
-     * @param UpgradeDependency[] $dependencies
-     */
-    public function setDependencies($dependencies)
+namespace Google\Service\GKEOnPrem {
+    class BareMetalVersionInfo extends \Google\Collection
     {
+        protected $collection_key = 'dependencies';
+        protected $dependenciesType = UpgradeDependency::class;
+        protected $dependenciesDataType = 'array';
+        /**
+         * If set, the cluster dependencies (e.g. the admin cluster, other user
+         * clusters managed by the same admin cluster, version skew policy, etc) must
+         * be upgraded before this version can be installed or upgraded to.
+         *
+         * @var bool
+         */
+        public $hasDependencies;
+        /**
+         * Version number e.g. 1.13.1.
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * The list of upgrade dependencies for this version.
+         *
+         * @param UpgradeDependency[] $dependencies
+         */
+        public function setDependencies($dependencies)
+        {
+        }
+        /**
+         * @return UpgradeDependency[]
+         */
+        public function getDependencies()
+        {
+        }
+        /**
+         * If set, the cluster dependencies (e.g. the admin cluster, other user
+         * clusters managed by the same admin cluster, version skew policy, etc) must
+         * be upgraded before this version can be installed or upgraded to.
+         *
+         * @param bool $hasDependencies
+         */
+        public function setHasDependencies($hasDependencies)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getHasDependencies()
+        {
+        }
+        /**
+         * Version number e.g. 1.13.1.
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return UpgradeDependency[]
+     * Runtime class alias of \Google\Service\GKEOnPrem\BareMetalVersionInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDependencies()
-    {
-    }
-    /**
-     * If set, the cluster dependencies (e.g. the admin cluster, other user
-     * clusters managed by the same admin cluster, version skew policy, etc) must
-     * be upgraded before this version can be installed or upgraded to.
-     *
-     * @param bool $hasDependencies
-     */
-    public function setHasDependencies($hasDependencies)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getHasDependencies()
-    {
-    }
-    /**
-     * Version number e.g. 1.13.1.
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_GKEOnPrem_BareMetalVersionInfo extends \Google\Service\GKEOnPrem\BareMetalVersionInfo
     {
     }
 }

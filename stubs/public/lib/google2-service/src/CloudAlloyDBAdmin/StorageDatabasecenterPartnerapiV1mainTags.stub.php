@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAlloyDBAdmin;
-
-class StorageDatabasecenterPartnerapiV1mainTags extends \Google\Model
-{
-    /**
-     * The Tag key/value mappings.
-     *
-     * @var string[]
-     */
-    public $tags;
-    /**
-     * The Tag key/value mappings.
-     *
-     * @param string[] $tags
-     */
-    public function setTags($tags)
+namespace Google\Service\CloudAlloyDBAdmin {
+    class StorageDatabasecenterPartnerapiV1mainTags extends \Google\Model
     {
+        /**
+         * The Tag key/value mappings.
+         *
+         * @var string[]
+         */
+        public $tags;
+        /**
+         * The Tag key/value mappings.
+         *
+         * @param string[] $tags
+         */
+        public function setTags($tags)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTags()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudAlloyDBAdmin\StorageDatabasecenterPartnerapiV1mainTags registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTags()
+    class Google_Service_CloudAlloyDBAdmin_StorageDatabasecenterPartnerapiV1mainTags extends \Google\Service\CloudAlloyDBAdmin\StorageDatabasecenterPartnerapiV1mainTags
     {
     }
 }

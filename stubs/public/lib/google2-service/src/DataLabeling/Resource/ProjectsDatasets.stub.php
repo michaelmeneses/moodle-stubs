@@ -21,105 +21,121 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling\Resource;
-
-/**
- * The "datasets" collection of methods.
- * Typical usage is:
- *  <code>
- *   $datalabelingService = new Google\Service\DataLabeling(...);
- *   $datasets = $datalabelingService->projects_datasets;
- *  </code>
- */
-class ProjectsDatasets extends \Google\Service\Resource
-{
+namespace Google\Service\DataLabeling\Resource {
+    use Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1CreateDatasetRequest;
+    use Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1Dataset;
+    use Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1ExportDataRequest;
+    use Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1ImportDataRequest;
+    use Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1ListDatasetsResponse;
+    use Google\Service\DataLabeling\GoogleLongrunningOperation;
+    use Google\Service\DataLabeling\GoogleProtobufEmpty;
     /**
-     * Creates dataset. If success return a Dataset resource. (datasets.create)
-     *
-     * @param string $parent Required. Dataset resource parent, format:
-     * projects/{project_id}
-     * @param GoogleCloudDatalabelingV1beta1CreateDatasetRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudDatalabelingV1beta1Dataset
-     * @throws \Google\Service\Exception
+     * The "datasets" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $datalabelingService = new Google\Service\DataLabeling(...);
+     *   $datasets = $datalabelingService->projects_datasets;
+     *  </code>
      */
-    public function create($parent, GoogleCloudDatalabelingV1beta1CreateDatasetRequest $postBody, $optParams = [])
+    class ProjectsDatasets extends \Google\Service\Resource
     {
+        /**
+         * Creates dataset. If success return a Dataset resource. (datasets.create)
+         *
+         * @param string $parent Required. Dataset resource parent, format:
+         * projects/{project_id}
+         * @param GoogleCloudDatalabelingV1beta1CreateDatasetRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudDatalabelingV1beta1Dataset
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, GoogleCloudDatalabelingV1beta1CreateDatasetRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a dataset by resource name. (datasets.delete)
+         *
+         * @param string $name Required. Dataset resource name, format:
+         * projects/{project_id}/datasets/{dataset_id}
+         * @param array $optParams Optional parameters.
+         * @return GoogleProtobufEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Exports data and annotations from dataset. (datasets.exportData)
+         *
+         * @param string $name Required. Dataset resource name, format:
+         * projects/{project_id}/datasets/{dataset_id}
+         * @param GoogleCloudDatalabelingV1beta1ExportDataRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function exportData($name, GoogleCloudDatalabelingV1beta1ExportDataRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Gets dataset by resource name. (datasets.get)
+         *
+         * @param string $name Required. Dataset resource name, format:
+         * projects/{project_id}/datasets/{dataset_id}
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudDatalabelingV1beta1Dataset
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Imports data into dataset based on source locations defined in request. It
+         * can be called multiple times for the same dataset. Each dataset can only have
+         * one long running operation running on it. For example, no labeling task (also
+         * long running operation) can be started while importing is still ongoing. Vice
+         * versa. (datasets.importData)
+         *
+         * @param string $name Required. Dataset resource name, format:
+         * projects/{project_id}/datasets/{dataset_id}
+         * @param GoogleCloudDatalabelingV1beta1ImportDataRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function importData($name, GoogleCloudDatalabelingV1beta1ImportDataRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Lists datasets under a project. Pagination is supported.
+         * (datasets.listProjectsDatasets)
+         *
+         * @param string $parent Required. Dataset resource parent, format:
+         * projects/{project_id}
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Optional. Filter on dataset is not supported at this
+         * moment.
+         * @opt_param int pageSize Optional. Requested page size. Server may return
+         * fewer results than requested. Default value is 100.
+         * @opt_param string pageToken Optional. A token identifying a page of results
+         * for the server to return. Typically obtained by
+         * ListDatasetsResponse.next_page_token of the previous
+         * [DataLabelingService.ListDatasets] call. Returns the first page if empty.
+         * @return GoogleCloudDatalabelingV1beta1ListDatasetsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsDatasets($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a dataset by resource name. (datasets.delete)
-     *
-     * @param string $name Required. Dataset resource name, format:
-     * projects/{project_id}/datasets/{dataset_id}
-     * @param array $optParams Optional parameters.
-     * @return GoogleProtobufEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\DataLabeling\Resource\ProjectsDatasets registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Exports data and annotations from dataset. (datasets.exportData)
-     *
-     * @param string $name Required. Dataset resource name, format:
-     * projects/{project_id}/datasets/{dataset_id}
-     * @param GoogleCloudDatalabelingV1beta1ExportDataRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
-     */
-    public function exportData($name, GoogleCloudDatalabelingV1beta1ExportDataRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Gets dataset by resource name. (datasets.get)
-     *
-     * @param string $name Required. Dataset resource name, format:
-     * projects/{project_id}/datasets/{dataset_id}
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudDatalabelingV1beta1Dataset
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Imports data into dataset based on source locations defined in request. It
-     * can be called multiple times for the same dataset. Each dataset can only have
-     * one long running operation running on it. For example, no labeling task (also
-     * long running operation) can be started while importing is still ongoing. Vice
-     * versa. (datasets.importData)
-     *
-     * @param string $name Required. Dataset resource name, format:
-     * projects/{project_id}/datasets/{dataset_id}
-     * @param GoogleCloudDatalabelingV1beta1ImportDataRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
-     */
-    public function importData($name, GoogleCloudDatalabelingV1beta1ImportDataRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Lists datasets under a project. Pagination is supported.
-     * (datasets.listProjectsDatasets)
-     *
-     * @param string $parent Required. Dataset resource parent, format:
-     * projects/{project_id}
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Optional. Filter on dataset is not supported at this
-     * moment.
-     * @opt_param int pageSize Optional. Requested page size. Server may return
-     * fewer results than requested. Default value is 100.
-     * @opt_param string pageToken Optional. A token identifying a page of results
-     * for the server to return. Typically obtained by
-     * ListDatasetsResponse.next_page_token of the previous
-     * [DataLabelingService.ListDatasets] call. Returns the first page if empty.
-     * @return GoogleCloudDatalabelingV1beta1ListDatasetsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsDatasets($parent, $optParams = [])
+    class Google_Service_DataLabeling_Resource_ProjectsDatasets extends \Google\Service\DataLabeling\Resource\ProjectsDatasets
     {
     }
 }

@@ -21,98 +21,111 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SiteVerification\Resource;
-
-/**
- * The "webResource" collection of methods.
- * Typical usage is:
- *  <code>
- *   $siteVerificationService = new Google\Service\SiteVerification(...);
- *   $webResource = $siteVerificationService->webResource;
- *  </code>
- */
-class WebResource extends \Google\Service\Resource
-{
+namespace Google\Service\SiteVerification\Resource {
+    use Google\Service\SiteVerification\SiteVerificationWebResourceGettokenRequest;
+    use Google\Service\SiteVerification\SiteVerificationWebResourceGettokenResponse;
+    use Google\Service\SiteVerification\SiteVerificationWebResourceListResponse;
+    use Google\Service\SiteVerification\SiteVerificationWebResourceResource;
     /**
-     * Relinquish ownership of a website or domain. (webResource.delete)
-     *
-     * @param string $id The id of a verified site or domain.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * The "webResource" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $siteVerificationService = new Google\Service\SiteVerification(...);
+     *   $webResource = $siteVerificationService->webResource;
+     *  </code>
      */
-    public function delete($id, $optParams = [])
+    class WebResource extends \Google\Service\Resource
     {
+        /**
+         * Relinquish ownership of a website or domain. (webResource.delete)
+         *
+         * @param string $id The id of a verified site or domain.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($id, $optParams = [])
+        {
+        }
+        /**
+         * Get the most current data for a website or domain. (webResource.get)
+         *
+         * @param string $id The id of a verified site or domain.
+         * @param array $optParams Optional parameters.
+         * @return SiteVerificationWebResourceResource
+         * @throws \Google\Service\Exception
+         */
+        public function get($id, $optParams = [])
+        {
+        }
+        /**
+         * Get a verification token for placing on a website or domain.
+         * (webResource.getToken)
+         *
+         * @param SiteVerificationWebResourceGettokenRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return SiteVerificationWebResourceGettokenResponse
+         * @throws \Google\Service\Exception
+         */
+        public function getToken(SiteVerificationWebResourceGettokenRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Attempt verification of a website or domain. (webResource.insert)
+         *
+         * @param string $verificationMethod The method to use for verifying a site or
+         * domain.
+         * @param SiteVerificationWebResourceResource $postBody
+         * @param array $optParams Optional parameters.
+         * @return SiteVerificationWebResourceResource
+         * @throws \Google\Service\Exception
+         */
+        public function insert($verificationMethod, SiteVerificationWebResourceResource $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Get the list of your verified websites and domains.
+         * (webResource.listWebResource)
+         *
+         * @param array $optParams Optional parameters.
+         * @return SiteVerificationWebResourceListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listWebResource($optParams = [])
+        {
+        }
+        /**
+         * Modify the list of owners for your website or domain. This method supports
+         * patch semantics. (webResource.patch)
+         *
+         * @param string $id The id of a verified site or domain.
+         * @param SiteVerificationWebResourceResource $postBody
+         * @param array $optParams Optional parameters.
+         * @return SiteVerificationWebResourceResource
+         * @throws \Google\Service\Exception
+         */
+        public function patch($id, SiteVerificationWebResourceResource $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Modify the list of owners for your website or domain. (webResource.update)
+         *
+         * @param string $id The id of a verified site or domain.
+         * @param SiteVerificationWebResourceResource $postBody
+         * @param array $optParams Optional parameters.
+         * @return SiteVerificationWebResourceResource
+         * @throws \Google\Service\Exception
+         */
+        public function update($id, SiteVerificationWebResourceResource $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Get the most current data for a website or domain. (webResource.get)
-     *
-     * @param string $id The id of a verified site or domain.
-     * @param array $optParams Optional parameters.
-     * @return SiteVerificationWebResourceResource
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\SiteVerification\Resource\WebResource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($id, $optParams = [])
-    {
-    }
-    /**
-     * Get a verification token for placing on a website or domain.
-     * (webResource.getToken)
-     *
-     * @param SiteVerificationWebResourceGettokenRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return SiteVerificationWebResourceGettokenResponse
-     * @throws \Google\Service\Exception
-     */
-    public function getToken(SiteVerificationWebResourceGettokenRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Attempt verification of a website or domain. (webResource.insert)
-     *
-     * @param string $verificationMethod The method to use for verifying a site or
-     * domain.
-     * @param SiteVerificationWebResourceResource $postBody
-     * @param array $optParams Optional parameters.
-     * @return SiteVerificationWebResourceResource
-     * @throws \Google\Service\Exception
-     */
-    public function insert($verificationMethod, SiteVerificationWebResourceResource $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Get the list of your verified websites and domains.
-     * (webResource.listWebResource)
-     *
-     * @param array $optParams Optional parameters.
-     * @return SiteVerificationWebResourceListResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listWebResource($optParams = [])
-    {
-    }
-    /**
-     * Modify the list of owners for your website or domain. This method supports
-     * patch semantics. (webResource.patch)
-     *
-     * @param string $id The id of a verified site or domain.
-     * @param SiteVerificationWebResourceResource $postBody
-     * @param array $optParams Optional parameters.
-     * @return SiteVerificationWebResourceResource
-     * @throws \Google\Service\Exception
-     */
-    public function patch($id, SiteVerificationWebResourceResource $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Modify the list of owners for your website or domain. (webResource.update)
-     *
-     * @param string $id The id of a verified site or domain.
-     * @param SiteVerificationWebResourceResource $postBody
-     * @param array $optParams Optional parameters.
-     * @return SiteVerificationWebResourceResource
-     * @throws \Google\Service\Exception
-     */
-    public function update($id, SiteVerificationWebResourceResource $postBody, $optParams = [])
+    class Google_Service_SiteVerification_Resource_WebResource extends \Google\Service\SiteVerification\Resource\WebResource
     {
     }
 }

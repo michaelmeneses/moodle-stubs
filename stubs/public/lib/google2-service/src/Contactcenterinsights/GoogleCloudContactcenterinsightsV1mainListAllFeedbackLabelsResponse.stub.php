@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1mainListAllFeedbackLabelsResponse extends \Google\Collection
-{
-    protected $collection_key = 'feedbackLabels';
-    protected $feedbackLabelsType = GoogleCloudContactcenterinsightsV1mainFeedbackLabel::class;
-    protected $feedbackLabelsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The feedback labels that match the request.
-     *
-     * @param GoogleCloudContactcenterinsightsV1mainFeedbackLabel[] $feedbackLabels
-     */
-    public function setFeedbackLabels($feedbackLabels)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1mainListAllFeedbackLabelsResponse extends \Google\Collection
     {
+        protected $collection_key = 'feedbackLabels';
+        protected $feedbackLabelsType = GoogleCloudContactcenterinsightsV1mainFeedbackLabel::class;
+        protected $feedbackLabelsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The feedback labels that match the request.
+         *
+         * @param GoogleCloudContactcenterinsightsV1mainFeedbackLabel[] $feedbackLabels
+         */
+        public function setFeedbackLabels($feedbackLabels)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1mainFeedbackLabel[]
+         */
+        public function getFeedbackLabels()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudContactcenterinsightsV1mainFeedbackLabel[]
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainListAllFeedbackLabelsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFeedbackLabels()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1mainListAllFeedbackLabelsResponse extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainListAllFeedbackLabelsResponse
     {
     }
 }

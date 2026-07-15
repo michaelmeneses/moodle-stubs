@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class Metadata extends \Google\Model
-{
-    /**
-     * The time taken to execute the SQL statements.
-     *
-     * @var string
-     */
-    public $sqlStatementExecutionTime;
-    /**
-     * The time taken to execute the SQL statements.
-     *
-     * @param string $sqlStatementExecutionTime
-     */
-    public function setSqlStatementExecutionTime($sqlStatementExecutionTime)
+namespace Google\Service\SQLAdmin {
+    class Metadata extends \Google\Model
     {
+        /**
+         * The time taken to execute the SQL statements.
+         *
+         * @var string
+         */
+        public $sqlStatementExecutionTime;
+        /**
+         * The time taken to execute the SQL statements.
+         *
+         * @param string $sqlStatementExecutionTime
+         */
+        public function setSqlStatementExecutionTime($sqlStatementExecutionTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSqlStatementExecutionTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SQLAdmin\Metadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSqlStatementExecutionTime()
+    class Google_Service_SQLAdmin_Metadata extends \Google\Service\SQLAdmin\Metadata
     {
     }
 }

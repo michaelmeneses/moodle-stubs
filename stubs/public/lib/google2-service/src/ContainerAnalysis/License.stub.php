@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class License extends \Google\Model
-{
-    /**
-     * Comments
-     *
-     * @var string
-     */
-    public $comments;
-    /**
-     * Often a single license can be used to represent the licensing terms.
-     * Sometimes it is necessary to include a choice of one or more licenses or
-     * some combination of license identifiers. Examples: "LGPL-2.1-only OR MIT",
-     * "LGPL-2.1-only AND MIT", "GPL-2.0-or-later WITH Bison-exception-2.2".
-     *
-     * @var string
-     */
-    public $expression;
-    /**
-     * Comments
-     *
-     * @param string $comments
-     */
-    public function setComments($comments)
+namespace Google\Service\ContainerAnalysis {
+    class License extends \Google\Model
     {
+        /**
+         * Comments
+         *
+         * @var string
+         */
+        public $comments;
+        /**
+         * Often a single license can be used to represent the licensing terms.
+         * Sometimes it is necessary to include a choice of one or more licenses or
+         * some combination of license identifiers. Examples: "LGPL-2.1-only OR MIT",
+         * "LGPL-2.1-only AND MIT", "GPL-2.0-or-later WITH Bison-exception-2.2".
+         *
+         * @var string
+         */
+        public $expression;
+        /**
+         * Comments
+         *
+         * @param string $comments
+         */
+        public function setComments($comments)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getComments()
+        {
+        }
+        /**
+         * Often a single license can be used to represent the licensing terms.
+         * Sometimes it is necessary to include a choice of one or more licenses or
+         * some combination of license identifiers. Examples: "LGPL-2.1-only OR MIT",
+         * "LGPL-2.1-only AND MIT", "GPL-2.0-or-later WITH Bison-exception-2.2".
+         *
+         * @param string $expression
+         */
+        public function setExpression($expression)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpression()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ContainerAnalysis\License registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getComments()
-    {
-    }
-    /**
-     * Often a single license can be used to represent the licensing terms.
-     * Sometimes it is necessary to include a choice of one or more licenses or
-     * some combination of license identifiers. Examples: "LGPL-2.1-only OR MIT",
-     * "LGPL-2.1-only AND MIT", "GPL-2.0-or-later WITH Bison-exception-2.2".
-     *
-     * @param string $expression
-     */
-    public function setExpression($expression)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExpression()
+    class Google_Service_ContainerAnalysis_License extends \Google\Service\ContainerAnalysis\License
     {
     }
 }

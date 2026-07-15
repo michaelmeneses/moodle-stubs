@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyerII;
-
-class ListCreativesResponse extends \Google\Collection
-{
-    protected $collection_key = 'creatives';
-    protected $creativesType = Creative::class;
-    protected $creativesDataType = 'array';
-    /**
-     * A token to retrieve the next page of results. Pass this value in the
-     * ListCreativesRequest.page_token field in the subsequent call to
-     * `ListCreatives` method to retrieve the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of creatives.
-     *
-     * @param Creative[] $creatives
-     */
-    public function setCreatives($creatives)
+namespace Google\Service\AdExchangeBuyerII {
+    class ListCreativesResponse extends \Google\Collection
     {
+        protected $collection_key = 'creatives';
+        protected $creativesType = Creative::class;
+        protected $creativesDataType = 'array';
+        /**
+         * A token to retrieve the next page of results. Pass this value in the
+         * ListCreativesRequest.page_token field in the subsequent call to
+         * `ListCreatives` method to retrieve the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of creatives.
+         *
+         * @param Creative[] $creatives
+         */
+        public function setCreatives($creatives)
+        {
+        }
+        /**
+         * @return Creative[]
+         */
+        public function getCreatives()
+        {
+        }
+        /**
+         * A token to retrieve the next page of results. Pass this value in the
+         * ListCreativesRequest.page_token field in the subsequent call to
+         * `ListCreatives` method to retrieve the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Creative[]
+     * Runtime class alias of \Google\Service\AdExchangeBuyerII\ListCreativesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreatives()
-    {
-    }
-    /**
-     * A token to retrieve the next page of results. Pass this value in the
-     * ListCreativesRequest.page_token field in the subsequent call to
-     * `ListCreatives` method to retrieve the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_AdExchangeBuyerII_ListCreativesResponse extends \Google\Service\AdExchangeBuyerII\ListCreativesResponse
     {
     }
 }

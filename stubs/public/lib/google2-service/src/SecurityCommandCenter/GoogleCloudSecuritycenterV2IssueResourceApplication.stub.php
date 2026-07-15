@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GoogleCloudSecuritycenterV2IssueResourceApplication extends \Google\Model
-{
-    protected $attributesType = GoogleCloudSecuritycenterV2IssueResourceApplicationAttributes::class;
-    protected $attributesDataType = '';
-    /**
-     * The resource name of an Application. Format: `projects/{host-project-
-     * id}/locations/{location}/applications/{application-id}`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Consumer provided attributes for the application
-     *
-     * @param GoogleCloudSecuritycenterV2IssueResourceApplicationAttributes $attributes
-     */
-    public function setAttributes(GoogleCloudSecuritycenterV2IssueResourceApplicationAttributes $attributes)
+namespace Google\Service\SecurityCommandCenter {
+    class GoogleCloudSecuritycenterV2IssueResourceApplication extends \Google\Model
     {
+        protected $attributesType = GoogleCloudSecuritycenterV2IssueResourceApplicationAttributes::class;
+        protected $attributesDataType = '';
+        /**
+         * The resource name of an Application. Format: `projects/{host-project-
+         * id}/locations/{location}/applications/{application-id}`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Consumer provided attributes for the application
+         *
+         * @param GoogleCloudSecuritycenterV2IssueResourceApplicationAttributes $attributes
+         */
+        public function setAttributes(GoogleCloudSecuritycenterV2IssueResourceApplicationAttributes $attributes)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV2IssueResourceApplicationAttributes
+         */
+        public function getAttributes()
+        {
+        }
+        /**
+         * The resource name of an Application. Format: `projects/{host-project-
+         * id}/locations/{location}/applications/{application-id}`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudSecuritycenterV2IssueResourceApplicationAttributes
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2IssueResourceApplication registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttributes()
-    {
-    }
-    /**
-     * The resource name of an Application. Format: `projects/{host-project-
-     * id}/locations/{location}/applications/{application-id}`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_SecurityCommandCenter_GoogleCloudSecuritycenterV2IssueResourceApplication extends \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2IssueResourceApplication
     {
     }
 }

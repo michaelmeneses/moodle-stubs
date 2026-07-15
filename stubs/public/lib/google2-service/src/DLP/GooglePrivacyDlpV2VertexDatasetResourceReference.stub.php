@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2VertexDatasetResourceReference extends \Google\Model
-{
-    /**
-     * Required. The name of the Vertex AI resource. If set within a project-level
-     * configuration, the specified resource must be within the project. Examples:
-     * * `projects/{project}/locations/{location}/datasets/{dataset}`
-     *
-     * @var string
-     */
-    public $datasetResourceName;
-    /**
-     * Required. The name of the Vertex AI resource. If set within a project-level
-     * configuration, the specified resource must be within the project. Examples:
-     * * `projects/{project}/locations/{location}/datasets/{dataset}`
-     *
-     * @param string $datasetResourceName
-     */
-    public function setDatasetResourceName($datasetResourceName)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2VertexDatasetResourceReference extends \Google\Model
     {
+        /**
+         * Required. The name of the Vertex AI resource. If set within a project-level
+         * configuration, the specified resource must be within the project. Examples:
+         * * `projects/{project}/locations/{location}/datasets/{dataset}`
+         *
+         * @var string
+         */
+        public $datasetResourceName;
+        /**
+         * Required. The name of the Vertex AI resource. If set within a project-level
+         * configuration, the specified resource must be within the project. Examples:
+         * * `projects/{project}/locations/{location}/datasets/{dataset}`
+         *
+         * @param string $datasetResourceName
+         */
+        public function setDatasetResourceName($datasetResourceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatasetResourceName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2VertexDatasetResourceReference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatasetResourceName()
+    class Google_Service_DLP_GooglePrivacyDlpV2VertexDatasetResourceReference extends \Google\Service\DLP\GooglePrivacyDlpV2VertexDatasetResourceReference
     {
     }
 }

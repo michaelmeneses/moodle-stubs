@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class WaterfallChartColumnStyle extends \Google\Model
-{
-    protected $colorType = Color::class;
-    protected $colorDataType = '';
-    protected $colorStyleType = ColorStyle::class;
-    protected $colorStyleDataType = '';
-    /**
-     * The label of the column's legend.
-     *
-     * @var string
-     */
-    public $label;
-    /**
-     * The color of the column. Deprecated: Use color_style.
-     *
-     * @deprecated
-     * @param Color $color
-     */
-    public function setColor(Color $color)
+namespace Google\Service\Sheets {
+    class WaterfallChartColumnStyle extends \Google\Model
     {
+        protected $colorType = Color::class;
+        protected $colorDataType = '';
+        protected $colorStyleType = ColorStyle::class;
+        protected $colorStyleDataType = '';
+        /**
+         * The label of the column's legend.
+         *
+         * @var string
+         */
+        public $label;
+        /**
+         * The color of the column. Deprecated: Use color_style.
+         *
+         * @deprecated
+         * @param Color $color
+         */
+        public function setColor(Color $color)
+        {
+        }
+        /**
+         * @deprecated
+         * @return Color
+         */
+        public function getColor()
+        {
+        }
+        /**
+         * The color of the column. If color is also set, this field takes precedence.
+         *
+         * @param ColorStyle $colorStyle
+         */
+        public function setColorStyle(ColorStyle $colorStyle)
+        {
+        }
+        /**
+         * @return ColorStyle
+         */
+        public function getColorStyle()
+        {
+        }
+        /**
+         * The label of the column's legend.
+         *
+         * @param string $label
+         */
+        public function setLabel($label)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLabel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return Color
+     * Runtime class alias of \Google\Service\Sheets\WaterfallChartColumnStyle registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColor()
-    {
-    }
-    /**
-     * The color of the column. If color is also set, this field takes precedence.
-     *
-     * @param ColorStyle $colorStyle
-     */
-    public function setColorStyle(ColorStyle $colorStyle)
-    {
-    }
-    /**
-     * @return ColorStyle
-     */
-    public function getColorStyle()
-    {
-    }
-    /**
-     * The label of the column's legend.
-     *
-     * @param string $label
-     */
-    public function setLabel($label)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLabel()
+    class Google_Service_Sheets_WaterfallChartColumnStyle extends \Google\Service\Sheets\WaterfallChartColumnStyle
     {
     }
 }

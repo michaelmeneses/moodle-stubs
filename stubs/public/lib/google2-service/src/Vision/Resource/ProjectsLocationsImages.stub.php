@@ -21,54 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision\Resource;
-
-/**
- * The "images" collection of methods.
- * Typical usage is:
- *  <code>
- *   $visionService = new Google\Service\Vision(...);
- *   $images = $visionService->projects_locations_images;
- *  </code>
- */
-class ProjectsLocationsImages extends \Google\Service\Resource
-{
+namespace Google\Service\Vision\Resource {
+    use Google\Service\Vision\AsyncBatchAnnotateImagesRequest;
+    use Google\Service\Vision\BatchAnnotateImagesRequest;
+    use Google\Service\Vision\BatchAnnotateImagesResponse;
+    use Google\Service\Vision\Operation;
     /**
-     * Run image detection and annotation for a batch of images. (images.annotate)
-     *
-     * @param string $parent Optional. Target project and location to make a call.
-     * Format: `projects/{project-id}/locations/{location-id}`. If no parent is
-     * specified, a region will be chosen automatically. Supported location-ids:
-     * `us`: USA country only, `asia`: East asia areas, like Japan, Taiwan, `eu`:
-     * The European Union. Example: `projects/project-A/locations/eu`.
-     * @param BatchAnnotateImagesRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return BatchAnnotateImagesResponse
-     * @throws \Google\Service\Exception
+     * The "images" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $visionService = new Google\Service\Vision(...);
+     *   $images = $visionService->projects_locations_images;
+     *  </code>
      */
-    public function annotate($parent, BatchAnnotateImagesRequest $postBody, $optParams = [])
+    class ProjectsLocationsImages extends \Google\Service\Resource
     {
+        /**
+         * Run image detection and annotation for a batch of images. (images.annotate)
+         *
+         * @param string $parent Optional. Target project and location to make a call.
+         * Format: `projects/{project-id}/locations/{location-id}`. If no parent is
+         * specified, a region will be chosen automatically. Supported location-ids:
+         * `us`: USA country only, `asia`: East asia areas, like Japan, Taiwan, `eu`:
+         * The European Union. Example: `projects/project-A/locations/eu`.
+         * @param BatchAnnotateImagesRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return BatchAnnotateImagesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function annotate($parent, BatchAnnotateImagesRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Run asynchronous image detection and annotation for a list of images.
+         * Progress and results can be retrieved through the
+         * `google.longrunning.Operations` interface. `Operation.metadata` contains
+         * `OperationMetadata` (metadata). `Operation.response` contains
+         * `AsyncBatchAnnotateImagesResponse` (results). This service will write image
+         * annotation outputs to json files in customer GCS bucket, each json file
+         * containing BatchAnnotateImagesResponse proto. (images.asyncBatchAnnotate)
+         *
+         * @param string $parent Optional. Target project and location to make a call.
+         * Format: `projects/{project-id}/locations/{location-id}`. If no parent is
+         * specified, a region will be chosen automatically. Supported location-ids:
+         * `us`: USA country only, `asia`: East asia areas, like Japan, Taiwan, `eu`:
+         * The European Union. Example: `projects/project-A/locations/eu`.
+         * @param AsyncBatchAnnotateImagesRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function asyncBatchAnnotate($parent, AsyncBatchAnnotateImagesRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Run asynchronous image detection and annotation for a list of images.
-     * Progress and results can be retrieved through the
-     * `google.longrunning.Operations` interface. `Operation.metadata` contains
-     * `OperationMetadata` (metadata). `Operation.response` contains
-     * `AsyncBatchAnnotateImagesResponse` (results). This service will write image
-     * annotation outputs to json files in customer GCS bucket, each json file
-     * containing BatchAnnotateImagesResponse proto. (images.asyncBatchAnnotate)
-     *
-     * @param string $parent Optional. Target project and location to make a call.
-     * Format: `projects/{project-id}/locations/{location-id}`. If no parent is
-     * specified, a region will be chosen automatically. Supported location-ids:
-     * `us`: USA country only, `asia`: East asia areas, like Japan, Taiwan, `eu`:
-     * The European Union. Example: `projects/project-A/locations/eu`.
-     * @param AsyncBatchAnnotateImagesRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Vision\Resource\ProjectsLocationsImages registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function asyncBatchAnnotate($parent, AsyncBatchAnnotateImagesRequest $postBody, $optParams = [])
+    class Google_Service_Vision_Resource_ProjectsLocationsImages extends \Google\Service\Vision\Resource\ProjectsLocationsImages
     {
     }
 }

@@ -21,45 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecaptchaEnterprise\Resource;
-
-/**
- * The "assessments" collection of methods.
- * Typical usage is:
- *  <code>
- *   $recaptchaenterpriseService = new Google\Service\RecaptchaEnterprise(...);
- *   $assessments = $recaptchaenterpriseService->projects_assessments;
- *  </code>
- */
-class ProjectsAssessments extends \Google\Service\Resource
-{
+namespace Google\Service\RecaptchaEnterprise\Resource {
+    use Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1AnnotateAssessmentRequest;
+    use Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1AnnotateAssessmentResponse;
+    use Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1Assessment;
     /**
-     * Annotates a previously created Assessment to provide additional information
-     * on whether the event turned out to be authentic or fraudulent.
-     * (assessments.annotate)
-     *
-     * @param string $name Required. The resource name of the Assessment, in the
-     * format `projects/{project}/assessments/{assessment}`.
-     * @param GoogleCloudRecaptchaenterpriseV1AnnotateAssessmentRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudRecaptchaenterpriseV1AnnotateAssessmentResponse
-     * @throws \Google\Service\Exception
+     * The "assessments" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $recaptchaenterpriseService = new Google\Service\RecaptchaEnterprise(...);
+     *   $assessments = $recaptchaenterpriseService->projects_assessments;
+     *  </code>
      */
-    public function annotate($name, GoogleCloudRecaptchaenterpriseV1AnnotateAssessmentRequest $postBody, $optParams = [])
+    class ProjectsAssessments extends \Google\Service\Resource
     {
+        /**
+         * Annotates a previously created Assessment to provide additional information
+         * on whether the event turned out to be authentic or fraudulent.
+         * (assessments.annotate)
+         *
+         * @param string $name Required. The resource name of the Assessment, in the
+         * format `projects/{project}/assessments/{assessment}`.
+         * @param GoogleCloudRecaptchaenterpriseV1AnnotateAssessmentRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudRecaptchaenterpriseV1AnnotateAssessmentResponse
+         * @throws \Google\Service\Exception
+         */
+        public function annotate($name, GoogleCloudRecaptchaenterpriseV1AnnotateAssessmentRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Creates an Assessment of the likelihood an event is legitimate.
+         * (assessments.create)
+         *
+         * @param string $parent Required. The name of the project in which the
+         * assessment is created, in the format `projects/{project}`.
+         * @param GoogleCloudRecaptchaenterpriseV1Assessment $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudRecaptchaenterpriseV1Assessment
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, GoogleCloudRecaptchaenterpriseV1Assessment $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Creates an Assessment of the likelihood an event is legitimate.
-     * (assessments.create)
-     *
-     * @param string $parent Required. The name of the project in which the
-     * assessment is created, in the format `projects/{project}`.
-     * @param GoogleCloudRecaptchaenterpriseV1Assessment $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudRecaptchaenterpriseV1Assessment
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\RecaptchaEnterprise\Resource\ProjectsAssessments registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function create($parent, GoogleCloudRecaptchaenterpriseV1Assessment $postBody, $optParams = [])
+    class Google_Service_RecaptchaEnterprise_Resource_ProjectsAssessments extends \Google\Service\RecaptchaEnterprise\Resource\ProjectsAssessments
     {
     }
 }

@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class SafetyLabelsUpdateRequest extends \Google\Model
-{
-    /**
-     * Required. Contents of the CSV file containing Data Safety responses. For
-     * the format of this file, see the Help Center documentation at
-     * https://support.google.com/googleplay/android-
-     * developer/answer/10787469?#zippy=%2Cunderstand-the-csv-format To download
-     * an up to date template, follow the steps at
-     * https://support.google.com/googleplay/android-
-     * developer/answer/10787469?#zippy=%2Cexport-to-a-csv-file
-     *
-     * @var string
-     */
-    public $safetyLabels;
-    /**
-     * Required. Contents of the CSV file containing Data Safety responses. For
-     * the format of this file, see the Help Center documentation at
-     * https://support.google.com/googleplay/android-
-     * developer/answer/10787469?#zippy=%2Cunderstand-the-csv-format To download
-     * an up to date template, follow the steps at
-     * https://support.google.com/googleplay/android-
-     * developer/answer/10787469?#zippy=%2Cexport-to-a-csv-file
-     *
-     * @param string $safetyLabels
-     */
-    public function setSafetyLabels($safetyLabels)
+namespace Google\Service\AndroidPublisher {
+    class SafetyLabelsUpdateRequest extends \Google\Model
     {
+        /**
+         * Required. Contents of the CSV file containing Data Safety responses. For
+         * the format of this file, see the Help Center documentation at
+         * https://support.google.com/googleplay/android-
+         * developer/answer/10787469?#zippy=%2Cunderstand-the-csv-format To download
+         * an up to date template, follow the steps at
+         * https://support.google.com/googleplay/android-
+         * developer/answer/10787469?#zippy=%2Cexport-to-a-csv-file
+         *
+         * @var string
+         */
+        public $safetyLabels;
+        /**
+         * Required. Contents of the CSV file containing Data Safety responses. For
+         * the format of this file, see the Help Center documentation at
+         * https://support.google.com/googleplay/android-
+         * developer/answer/10787469?#zippy=%2Cunderstand-the-csv-format To download
+         * an up to date template, follow the steps at
+         * https://support.google.com/googleplay/android-
+         * developer/answer/10787469?#zippy=%2Cexport-to-a-csv-file
+         *
+         * @param string $safetyLabels
+         */
+        public function setSafetyLabels($safetyLabels)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSafetyLabels()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidPublisher\SafetyLabelsUpdateRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSafetyLabels()
+    class Google_Service_AndroidPublisher_SafetyLabelsUpdateRequest extends \Google\Service\AndroidPublisher\SafetyLabelsUpdateRequest
     {
     }
 }

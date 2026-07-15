@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudConnectorsV1EnrichmentConfig extends \Google\Model
-{
-    /**
-     * Optional. Append ACL to the event.
-     *
-     * @var bool
-     */
-    public $appendAcl;
-    /**
-     * Optional. Append ACL to the event.
-     *
-     * @param bool $appendAcl
-     */
-    public function setAppendAcl($appendAcl)
+namespace Google\Service\Integrations {
+    class GoogleCloudConnectorsV1EnrichmentConfig extends \Google\Model
     {
+        /**
+         * Optional. Append ACL to the event.
+         *
+         * @var bool
+         */
+        public $appendAcl;
+        /**
+         * Optional. Append ACL to the event.
+         *
+         * @param bool $appendAcl
+         */
+        public function setAppendAcl($appendAcl)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAppendAcl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudConnectorsV1EnrichmentConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAppendAcl()
+    class Google_Service_Integrations_GoogleCloudConnectorsV1EnrichmentConfig extends \Google\Service\Integrations\GoogleCloudConnectorsV1EnrichmentConfig
     {
     }
 }

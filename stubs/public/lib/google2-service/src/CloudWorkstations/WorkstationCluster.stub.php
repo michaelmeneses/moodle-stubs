@@ -21,408 +21,417 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudWorkstations;
-
-class WorkstationCluster extends \Google\Collection
-{
-    protected $collection_key = 'conditions';
-    /**
-     * Optional. Client-specified annotations.
-     *
-     * @var string[]
-     */
-    public $annotations;
-    protected $conditionsType = Status::class;
-    protected $conditionsDataType = 'array';
-    /**
-     * Output only. The private IP address of the control plane for this
-     * workstation cluster. Workstation VMs need access to this IP address to work
-     * with the service, so make sure that your firewall rules allow egress from
-     * the workstation VMs to this address.
-     *
-     * @var string
-     */
-    public $controlPlaneIp;
-    /**
-     * Output only. Time when this workstation cluster was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Output only. Whether this workstation cluster is in degraded mode, in which
-     * case it may require user action to restore full functionality. The
-     * conditions field contains detailed information about the status of the
-     * cluster.
-     *
-     * @var bool
-     */
-    public $degraded;
-    /**
-     * Output only. Time when this workstation cluster was soft-deleted.
-     *
-     * @var string
-     */
-    public $deleteTime;
-    /**
-     * Optional. Human-readable name for this workstation cluster.
-     *
-     * @var string
-     */
-    public $displayName;
-    protected $domainConfigType = DomainConfig::class;
-    protected $domainConfigDataType = '';
-    /**
-     * Optional. Checksum computed by the server. May be sent on update and delete
-     * requests to make sure that the client has an up-to-date value before
-     * proceeding.
-     *
-     * @var string
-     */
-    public $etag;
-    protected $gatewayConfigType = GatewayConfig::class;
-    protected $gatewayConfigDataType = '';
-    /**
-     * Optional. [Labels](https://cloud.google.com/workstations/docs/label-
-     * resources) that are applied to the workstation cluster and that are also
-     * propagated to the underlying Compute Engine resources.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Identifier. Full name of this workstation cluster.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Immutable. Name of the Compute Engine network in which instances associated
-     * with this workstation cluster will be created.
-     *
-     * @var string
-     */
-    public $network;
-    protected $privateClusterConfigType = PrivateClusterConfig::class;
-    protected $privateClusterConfigDataType = '';
-    /**
-     * Output only. Indicates whether this workstation cluster is currently being
-     * updated to match its intended state.
-     *
-     * @var bool
-     */
-    public $reconciling;
-    /**
-     * Immutable. Name of the Compute Engine subnetwork in which instances
-     * associated with this workstation cluster will be created. Must be part of
-     * the subnetwork specified for this workstation cluster.
-     *
-     * @var string
-     */
-    public $subnetwork;
-    /**
-     * Optional. Input only. Immutable. Tag keys/values directly bound to this
-     * resource. For example: "123/environment": "production", "123/costCenter":
-     * "marketing"
-     *
-     * @var string[]
-     */
-    public $tags;
-    /**
-     * Output only. A system-assigned unique identifier for this workstation
-     * cluster.
-     *
-     * @var string
-     */
-    public $uid;
-    /**
-     * Output only. Time when this workstation cluster was most recently updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Optional. Client-specified annotations.
-     *
-     * @param string[] $annotations
-     */
-    public function setAnnotations($annotations)
+namespace Google\Service\CloudWorkstations {
+    class WorkstationCluster extends \Google\Collection
     {
+        protected $collection_key = 'conditions';
+        /**
+         * Optional. Client-specified annotations.
+         *
+         * @var string[]
+         */
+        public $annotations;
+        protected $conditionsType = Status::class;
+        protected $conditionsDataType = 'array';
+        /**
+         * Output only. The private IP address of the control plane for this
+         * workstation cluster. Workstation VMs need access to this IP address to work
+         * with the service, so make sure that your firewall rules allow egress from
+         * the workstation VMs to this address.
+         *
+         * @var string
+         */
+        public $controlPlaneIp;
+        /**
+         * Output only. Time when this workstation cluster was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Output only. Whether this workstation cluster is in degraded mode, in which
+         * case it may require user action to restore full functionality. The
+         * conditions field contains detailed information about the status of the
+         * cluster.
+         *
+         * @var bool
+         */
+        public $degraded;
+        /**
+         * Output only. Time when this workstation cluster was soft-deleted.
+         *
+         * @var string
+         */
+        public $deleteTime;
+        /**
+         * Optional. Human-readable name for this workstation cluster.
+         *
+         * @var string
+         */
+        public $displayName;
+        protected $domainConfigType = DomainConfig::class;
+        protected $domainConfigDataType = '';
+        /**
+         * Optional. Checksum computed by the server. May be sent on update and delete
+         * requests to make sure that the client has an up-to-date value before
+         * proceeding.
+         *
+         * @var string
+         */
+        public $etag;
+        protected $gatewayConfigType = GatewayConfig::class;
+        protected $gatewayConfigDataType = '';
+        /**
+         * Optional. [Labels](https://cloud.google.com/workstations/docs/label-
+         * resources) that are applied to the workstation cluster and that are also
+         * propagated to the underlying Compute Engine resources.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Identifier. Full name of this workstation cluster.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Immutable. Name of the Compute Engine network in which instances associated
+         * with this workstation cluster will be created.
+         *
+         * @var string
+         */
+        public $network;
+        protected $privateClusterConfigType = PrivateClusterConfig::class;
+        protected $privateClusterConfigDataType = '';
+        /**
+         * Output only. Indicates whether this workstation cluster is currently being
+         * updated to match its intended state.
+         *
+         * @var bool
+         */
+        public $reconciling;
+        /**
+         * Immutable. Name of the Compute Engine subnetwork in which instances
+         * associated with this workstation cluster will be created. Must be part of
+         * the subnetwork specified for this workstation cluster.
+         *
+         * @var string
+         */
+        public $subnetwork;
+        /**
+         * Optional. Input only. Immutable. Tag keys/values directly bound to this
+         * resource. For example: "123/environment": "production", "123/costCenter":
+         * "marketing"
+         *
+         * @var string[]
+         */
+        public $tags;
+        /**
+         * Output only. A system-assigned unique identifier for this workstation
+         * cluster.
+         *
+         * @var string
+         */
+        public $uid;
+        /**
+         * Output only. Time when this workstation cluster was most recently updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Optional. Client-specified annotations.
+         *
+         * @param string[] $annotations
+         */
+        public function setAnnotations($annotations)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAnnotations()
+        {
+        }
+        /**
+         * Output only. Status conditions describing the workstation cluster's current
+         * state.
+         *
+         * @param Status[] $conditions
+         */
+        public function setConditions($conditions)
+        {
+        }
+        /**
+         * @return Status[]
+         */
+        public function getConditions()
+        {
+        }
+        /**
+         * Output only. The private IP address of the control plane for this
+         * workstation cluster. Workstation VMs need access to this IP address to work
+         * with the service, so make sure that your firewall rules allow egress from
+         * the workstation VMs to this address.
+         *
+         * @param string $controlPlaneIp
+         */
+        public function setControlPlaneIp($controlPlaneIp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getControlPlaneIp()
+        {
+        }
+        /**
+         * Output only. Time when this workstation cluster was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. Whether this workstation cluster is in degraded mode, in which
+         * case it may require user action to restore full functionality. The
+         * conditions field contains detailed information about the status of the
+         * cluster.
+         *
+         * @param bool $degraded
+         */
+        public function setDegraded($degraded)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDegraded()
+        {
+        }
+        /**
+         * Output only. Time when this workstation cluster was soft-deleted.
+         *
+         * @param string $deleteTime
+         */
+        public function setDeleteTime($deleteTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeleteTime()
+        {
+        }
+        /**
+         * Optional. Human-readable name for this workstation cluster.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Optional. Configuration options for a custom domain.
+         *
+         * @param DomainConfig $domainConfig
+         */
+        public function setDomainConfig(DomainConfig $domainConfig)
+        {
+        }
+        /**
+         * @return DomainConfig
+         */
+        public function getDomainConfig()
+        {
+        }
+        /**
+         * Optional. Checksum computed by the server. May be sent on update and delete
+         * requests to make sure that the client has an up-to-date value before
+         * proceeding.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * Optional. Configuration options for Cluster HTTP Gateway.
+         *
+         * @param GatewayConfig $gatewayConfig
+         */
+        public function setGatewayConfig(GatewayConfig $gatewayConfig)
+        {
+        }
+        /**
+         * @return GatewayConfig
+         */
+        public function getGatewayConfig()
+        {
+        }
+        /**
+         * Optional. [Labels](https://cloud.google.com/workstations/docs/label-
+         * resources) that are applied to the workstation cluster and that are also
+         * propagated to the underlying Compute Engine resources.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Identifier. Full name of this workstation cluster.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Immutable. Name of the Compute Engine network in which instances associated
+         * with this workstation cluster will be created.
+         *
+         * @param string $network
+         */
+        public function setNetwork($network)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNetwork()
+        {
+        }
+        /**
+         * Optional. Configuration for private workstation cluster.
+         *
+         * @param PrivateClusterConfig $privateClusterConfig
+         */
+        public function setPrivateClusterConfig(PrivateClusterConfig $privateClusterConfig)
+        {
+        }
+        /**
+         * @return PrivateClusterConfig
+         */
+        public function getPrivateClusterConfig()
+        {
+        }
+        /**
+         * Output only. Indicates whether this workstation cluster is currently being
+         * updated to match its intended state.
+         *
+         * @param bool $reconciling
+         */
+        public function setReconciling($reconciling)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getReconciling()
+        {
+        }
+        /**
+         * Immutable. Name of the Compute Engine subnetwork in which instances
+         * associated with this workstation cluster will be created. Must be part of
+         * the subnetwork specified for this workstation cluster.
+         *
+         * @param string $subnetwork
+         */
+        public function setSubnetwork($subnetwork)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubnetwork()
+        {
+        }
+        /**
+         * Optional. Input only. Immutable. Tag keys/values directly bound to this
+         * resource. For example: "123/environment": "production", "123/costCenter":
+         * "marketing"
+         *
+         * @param string[] $tags
+         */
+        public function setTags($tags)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTags()
+        {
+        }
+        /**
+         * Output only. A system-assigned unique identifier for this workstation
+         * cluster.
+         *
+         * @param string $uid
+         */
+        public function setUid($uid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUid()
+        {
+        }
+        /**
+         * Output only. Time when this workstation cluster was most recently updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudWorkstations\WorkstationCluster registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotations()
-    {
-    }
-    /**
-     * Output only. Status conditions describing the workstation cluster's current
-     * state.
-     *
-     * @param Status[] $conditions
-     */
-    public function setConditions($conditions)
-    {
-    }
-    /**
-     * @return Status[]
-     */
-    public function getConditions()
-    {
-    }
-    /**
-     * Output only. The private IP address of the control plane for this
-     * workstation cluster. Workstation VMs need access to this IP address to work
-     * with the service, so make sure that your firewall rules allow egress from
-     * the workstation VMs to this address.
-     *
-     * @param string $controlPlaneIp
-     */
-    public function setControlPlaneIp($controlPlaneIp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getControlPlaneIp()
-    {
-    }
-    /**
-     * Output only. Time when this workstation cluster was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. Whether this workstation cluster is in degraded mode, in which
-     * case it may require user action to restore full functionality. The
-     * conditions field contains detailed information about the status of the
-     * cluster.
-     *
-     * @param bool $degraded
-     */
-    public function setDegraded($degraded)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDegraded()
-    {
-    }
-    /**
-     * Output only. Time when this workstation cluster was soft-deleted.
-     *
-     * @param string $deleteTime
-     */
-    public function setDeleteTime($deleteTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeleteTime()
-    {
-    }
-    /**
-     * Optional. Human-readable name for this workstation cluster.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Optional. Configuration options for a custom domain.
-     *
-     * @param DomainConfig $domainConfig
-     */
-    public function setDomainConfig(DomainConfig $domainConfig)
-    {
-    }
-    /**
-     * @return DomainConfig
-     */
-    public function getDomainConfig()
-    {
-    }
-    /**
-     * Optional. Checksum computed by the server. May be sent on update and delete
-     * requests to make sure that the client has an up-to-date value before
-     * proceeding.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * Optional. Configuration options for Cluster HTTP Gateway.
-     *
-     * @param GatewayConfig $gatewayConfig
-     */
-    public function setGatewayConfig(GatewayConfig $gatewayConfig)
-    {
-    }
-    /**
-     * @return GatewayConfig
-     */
-    public function getGatewayConfig()
-    {
-    }
-    /**
-     * Optional. [Labels](https://cloud.google.com/workstations/docs/label-
-     * resources) that are applied to the workstation cluster and that are also
-     * propagated to the underlying Compute Engine resources.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Identifier. Full name of this workstation cluster.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Immutable. Name of the Compute Engine network in which instances associated
-     * with this workstation cluster will be created.
-     *
-     * @param string $network
-     */
-    public function setNetwork($network)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNetwork()
-    {
-    }
-    /**
-     * Optional. Configuration for private workstation cluster.
-     *
-     * @param PrivateClusterConfig $privateClusterConfig
-     */
-    public function setPrivateClusterConfig(PrivateClusterConfig $privateClusterConfig)
-    {
-    }
-    /**
-     * @return PrivateClusterConfig
-     */
-    public function getPrivateClusterConfig()
-    {
-    }
-    /**
-     * Output only. Indicates whether this workstation cluster is currently being
-     * updated to match its intended state.
-     *
-     * @param bool $reconciling
-     */
-    public function setReconciling($reconciling)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getReconciling()
-    {
-    }
-    /**
-     * Immutable. Name of the Compute Engine subnetwork in which instances
-     * associated with this workstation cluster will be created. Must be part of
-     * the subnetwork specified for this workstation cluster.
-     *
-     * @param string $subnetwork
-     */
-    public function setSubnetwork($subnetwork)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubnetwork()
-    {
-    }
-    /**
-     * Optional. Input only. Immutable. Tag keys/values directly bound to this
-     * resource. For example: "123/environment": "production", "123/costCenter":
-     * "marketing"
-     *
-     * @param string[] $tags
-     */
-    public function setTags($tags)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTags()
-    {
-    }
-    /**
-     * Output only. A system-assigned unique identifier for this workstation
-     * cluster.
-     *
-     * @param string $uid
-     */
-    public function setUid($uid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUid()
-    {
-    }
-    /**
-     * Output only. Time when this workstation cluster was most recently updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_CloudWorkstations_WorkstationCluster extends \Google\Service\CloudWorkstations\WorkstationCluster
     {
     }
 }

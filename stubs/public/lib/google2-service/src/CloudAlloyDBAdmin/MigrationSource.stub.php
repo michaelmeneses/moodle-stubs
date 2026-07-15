@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAlloyDBAdmin;
-
-class MigrationSource extends \Google\Model
-{
-    /**
-     * Migration source is unknown.
-     */
-    public const SOURCE_TYPE_MIGRATION_SOURCE_TYPE_UNSPECIFIED = 'MIGRATION_SOURCE_TYPE_UNSPECIFIED';
-    /**
-     * DMS source means the cluster was created via DMS migration job.
-     */
-    public const SOURCE_TYPE_DMS = 'DMS';
-    /**
-     * Output only. The host and port of the on-premises instance in host:port
-     * format
-     *
-     * @var string
-     */
-    public $hostPort;
-    /**
-     * Output only. Place holder for the external source identifier(e.g DMS job
-     * name) that created the cluster.
-     *
-     * @var string
-     */
-    public $referenceId;
-    /**
-     * Output only. Type of migration source.
-     *
-     * @var string
-     */
-    public $sourceType;
-    /**
-     * Output only. The host and port of the on-premises instance in host:port
-     * format
-     *
-     * @param string $hostPort
-     */
-    public function setHostPort($hostPort)
+namespace Google\Service\CloudAlloyDBAdmin {
+    class MigrationSource extends \Google\Model
     {
+        /**
+         * Migration source is unknown.
+         */
+        public const SOURCE_TYPE_MIGRATION_SOURCE_TYPE_UNSPECIFIED = 'MIGRATION_SOURCE_TYPE_UNSPECIFIED';
+        /**
+         * DMS source means the cluster was created via DMS migration job.
+         */
+        public const SOURCE_TYPE_DMS = 'DMS';
+        /**
+         * Output only. The host and port of the on-premises instance in host:port
+         * format
+         *
+         * @var string
+         */
+        public $hostPort;
+        /**
+         * Output only. Place holder for the external source identifier(e.g DMS job
+         * name) that created the cluster.
+         *
+         * @var string
+         */
+        public $referenceId;
+        /**
+         * Output only. Type of migration source.
+         *
+         * @var string
+         */
+        public $sourceType;
+        /**
+         * Output only. The host and port of the on-premises instance in host:port
+         * format
+         *
+         * @param string $hostPort
+         */
+        public function setHostPort($hostPort)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHostPort()
+        {
+        }
+        /**
+         * Output only. Place holder for the external source identifier(e.g DMS job
+         * name) that created the cluster.
+         *
+         * @param string $referenceId
+         */
+        public function setReferenceId($referenceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReferenceId()
+        {
+        }
+        /**
+         * Output only. Type of migration source.
+         *
+         * Accepted values: MIGRATION_SOURCE_TYPE_UNSPECIFIED, DMS
+         *
+         * @param self::SOURCE_TYPE_* $sourceType
+         */
+        public function setSourceType($sourceType)
+        {
+        }
+        /**
+         * @return self::SOURCE_TYPE_*
+         */
+        public function getSourceType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudAlloyDBAdmin\MigrationSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHostPort()
-    {
-    }
-    /**
-     * Output only. Place holder for the external source identifier(e.g DMS job
-     * name) that created the cluster.
-     *
-     * @param string $referenceId
-     */
-    public function setReferenceId($referenceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReferenceId()
-    {
-    }
-    /**
-     * Output only. Type of migration source.
-     *
-     * Accepted values: MIGRATION_SOURCE_TYPE_UNSPECIFIED, DMS
-     *
-     * @param self::SOURCE_TYPE_* $sourceType
-     */
-    public function setSourceType($sourceType)
-    {
-    }
-    /**
-     * @return self::SOURCE_TYPE_*
-     */
-    public function getSourceType()
+    class Google_Service_CloudAlloyDBAdmin_MigrationSource extends \Google\Service\CloudAlloyDBAdmin\MigrationSource
     {
     }
 }

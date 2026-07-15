@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class Minutes extends \Google\Model
-{
-    /**
-     * Required. Number of minutes between runs. The interval must be greater than
-     * or equal to 5 minutes and less than or equal to 1440 minutes.
-     *
-     * @var int
-     */
-    public $periodicity;
-    /**
-     * Required. Number of minutes between runs. The interval must be greater than
-     * or equal to 5 minutes and less than or equal to 1440 minutes.
-     *
-     * @param int $periodicity
-     */
-    public function setPeriodicity($periodicity)
+namespace Google\Service\Monitoring {
+    class Minutes extends \Google\Model
     {
+        /**
+         * Required. Number of minutes between runs. The interval must be greater than
+         * or equal to 5 minutes and less than or equal to 1440 minutes.
+         *
+         * @var int
+         */
+        public $periodicity;
+        /**
+         * Required. Number of minutes between runs. The interval must be greater than
+         * or equal to 5 minutes and less than or equal to 1440 minutes.
+         *
+         * @param int $periodicity
+         */
+        public function setPeriodicity($periodicity)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPeriodicity()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Monitoring\Minutes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPeriodicity()
+    class Google_Service_Monitoring_Minutes extends \Google\Service\Monitoring\Minutes
     {
     }
 }

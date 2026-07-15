@@ -21,27 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsReporting\Resource;
-
-/**
- * The "reports" collection of methods.
- * Typical usage is:
- *  <code>
- *   $analyticsreportingService = new Google\Service\AnalyticsReporting(...);
- *   $reports = $analyticsreportingService->reports;
- *  </code>
- */
-class Reports extends \Google\Service\Resource
-{
+namespace Google\Service\AnalyticsReporting\Resource {
+    use Google\Service\AnalyticsReporting\GetReportsRequest;
+    use Google\Service\AnalyticsReporting\GetReportsResponse;
     /**
-     * Returns the Analytics data. (reports.batchGet)
-     *
-     * @param GetReportsRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GetReportsResponse
-     * @throws \Google\Service\Exception
+     * The "reports" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $analyticsreportingService = new Google\Service\AnalyticsReporting(...);
+     *   $reports = $analyticsreportingService->reports;
+     *  </code>
      */
-    public function batchGet(GetReportsRequest $postBody, $optParams = [])
+    class Reports extends \Google\Service\Resource
+    {
+        /**
+         * Returns the Analytics data. (reports.batchGet)
+         *
+         * @param GetReportsRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GetReportsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function batchGet(GetReportsRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AnalyticsReporting\Resource\Reports registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AnalyticsReporting_Resource_Reports extends \Google\Service\AnalyticsReporting\Resource\Reports
     {
     }
 }

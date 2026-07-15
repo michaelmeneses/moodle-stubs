@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager;
-
-class SapWorkloadOverview extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $appSid;
-    /**
-     * @var string
-     */
-    public $dbSid;
-    /**
-     * @var string
-     */
-    public $sapSystemId;
-    /**
-     * @param string
-     */
-    public function setAppSid($appSid)
+namespace Google\Service\WorkloadManager {
+    class SapWorkloadOverview extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $appSid;
+        /**
+         * @var string
+         */
+        public $dbSid;
+        /**
+         * @var string
+         */
+        public $sapSystemId;
+        /**
+         * @param string
+         */
+        public function setAppSid($appSid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAppSid()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDbSid($dbSid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDbSid()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSapSystemId($sapSystemId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSapSystemId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\WorkloadManager\SapWorkloadOverview registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAppSid()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDbSid($dbSid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDbSid()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSapSystemId($sapSystemId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSapSystemId()
+    class Google_Service_WorkloadManager_SapWorkloadOverview extends \Google\Service\WorkloadManager\SapWorkloadOverview
     {
     }
 }

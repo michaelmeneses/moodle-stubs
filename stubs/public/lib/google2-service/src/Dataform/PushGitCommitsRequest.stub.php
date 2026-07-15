@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataform;
-
-class PushGitCommitsRequest extends \Google\Model
-{
-    /**
-     * Optional. The name of the branch in the Git remote to which commits should
-     * be pushed. If left unset, the repository's default branch name will be
-     * used.
-     *
-     * @var string
-     */
-    public $remoteBranch;
-    /**
-     * Optional. The name of the branch in the Git remote to which commits should
-     * be pushed. If left unset, the repository's default branch name will be
-     * used.
-     *
-     * @param string $remoteBranch
-     */
-    public function setRemoteBranch($remoteBranch)
+namespace Google\Service\Dataform {
+    class PushGitCommitsRequest extends \Google\Model
     {
+        /**
+         * Optional. The name of the branch in the Git remote to which commits should
+         * be pushed. If left unset, the repository's default branch name will be
+         * used.
+         *
+         * @var string
+         */
+        public $remoteBranch;
+        /**
+         * Optional. The name of the branch in the Git remote to which commits should
+         * be pushed. If left unset, the repository's default branch name will be
+         * used.
+         *
+         * @param string $remoteBranch
+         */
+        public function setRemoteBranch($remoteBranch)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRemoteBranch()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataform\PushGitCommitsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRemoteBranch()
+    class Google_Service_Dataform_PushGitCommitsRequest extends \Google\Service\Dataform\PushGitCommitsRequest
     {
     }
 }

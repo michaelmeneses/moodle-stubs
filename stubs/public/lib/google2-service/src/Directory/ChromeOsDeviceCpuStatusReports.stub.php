@@ -21,61 +21,70 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class ChromeOsDeviceCpuStatusReports extends \Google\Collection
-{
-    protected $collection_key = 'cpuUtilizationPercentageInfo';
-    protected $cpuTemperatureInfoType = ChromeOsDeviceCpuStatusReportsCpuTemperatureInfo::class;
-    protected $cpuTemperatureInfoDataType = 'array';
-    /**
-     * @var int[]
-     */
-    public $cpuUtilizationPercentageInfo;
-    /**
-     * Date and time the report was received.
-     *
-     * @var string
-     */
-    public $reportTime;
-    /**
-     * A list of CPU temperature samples.
-     *
-     * @param ChromeOsDeviceCpuStatusReportsCpuTemperatureInfo[] $cpuTemperatureInfo
-     */
-    public function setCpuTemperatureInfo($cpuTemperatureInfo)
+namespace Google\Service\Directory {
+    class ChromeOsDeviceCpuStatusReports extends \Google\Collection
     {
+        protected $collection_key = 'cpuUtilizationPercentageInfo';
+        protected $cpuTemperatureInfoType = ChromeOsDeviceCpuStatusReportsCpuTemperatureInfo::class;
+        protected $cpuTemperatureInfoDataType = 'array';
+        /**
+         * @var int[]
+         */
+        public $cpuUtilizationPercentageInfo;
+        /**
+         * Date and time the report was received.
+         *
+         * @var string
+         */
+        public $reportTime;
+        /**
+         * A list of CPU temperature samples.
+         *
+         * @param ChromeOsDeviceCpuStatusReportsCpuTemperatureInfo[] $cpuTemperatureInfo
+         */
+        public function setCpuTemperatureInfo($cpuTemperatureInfo)
+        {
+        }
+        /**
+         * @return ChromeOsDeviceCpuStatusReportsCpuTemperatureInfo[]
+         */
+        public function getCpuTemperatureInfo()
+        {
+        }
+        /**
+         * @param int[] $cpuUtilizationPercentageInfo
+         */
+        public function setCpuUtilizationPercentageInfo($cpuUtilizationPercentageInfo)
+        {
+        }
+        /**
+         * @return int[]
+         */
+        public function getCpuUtilizationPercentageInfo()
+        {
+        }
+        /**
+         * Date and time the report was received.
+         *
+         * @param string $reportTime
+         */
+        public function setReportTime($reportTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReportTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ChromeOsDeviceCpuStatusReportsCpuTemperatureInfo[]
+     * Runtime class alias of \Google\Service\Directory\ChromeOsDeviceCpuStatusReports registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCpuTemperatureInfo()
-    {
-    }
-    /**
-     * @param int[] $cpuUtilizationPercentageInfo
-     */
-    public function setCpuUtilizationPercentageInfo($cpuUtilizationPercentageInfo)
-    {
-    }
-    /**
-     * @return int[]
-     */
-    public function getCpuUtilizationPercentageInfo()
-    {
-    }
-    /**
-     * Date and time the report was received.
-     *
-     * @param string $reportTime
-     */
-    public function setReportTime($reportTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReportTime()
+    class Google_Service_Directory_ChromeOsDeviceCpuStatusReports extends \Google\Service\Directory\ChromeOsDeviceCpuStatusReports
     {
     }
 }

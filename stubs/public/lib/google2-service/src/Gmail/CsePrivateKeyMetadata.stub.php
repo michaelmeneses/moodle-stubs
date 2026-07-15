@@ -21,61 +21,70 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Gmail;
-
-class CsePrivateKeyMetadata extends \Google\Model
-{
-    protected $hardwareKeyMetadataType = HardwareKeyMetadata::class;
-    protected $hardwareKeyMetadataDataType = '';
-    protected $kaclsKeyMetadataType = KaclsKeyMetadata::class;
-    protected $kaclsKeyMetadataDataType = '';
-    /**
-     * Output only. The immutable ID for the private key metadata instance.
-     *
-     * @var string
-     */
-    public $privateKeyMetadataId;
-    /**
-     * Metadata for hardware keys.
-     *
-     * @param HardwareKeyMetadata $hardwareKeyMetadata
-     */
-    public function setHardwareKeyMetadata(HardwareKeyMetadata $hardwareKeyMetadata)
+namespace Google\Service\Gmail {
+    class CsePrivateKeyMetadata extends \Google\Model
     {
+        protected $hardwareKeyMetadataType = HardwareKeyMetadata::class;
+        protected $hardwareKeyMetadataDataType = '';
+        protected $kaclsKeyMetadataType = KaclsKeyMetadata::class;
+        protected $kaclsKeyMetadataDataType = '';
+        /**
+         * Output only. The immutable ID for the private key metadata instance.
+         *
+         * @var string
+         */
+        public $privateKeyMetadataId;
+        /**
+         * Metadata for hardware keys.
+         *
+         * @param HardwareKeyMetadata $hardwareKeyMetadata
+         */
+        public function setHardwareKeyMetadata(HardwareKeyMetadata $hardwareKeyMetadata)
+        {
+        }
+        /**
+         * @return HardwareKeyMetadata
+         */
+        public function getHardwareKeyMetadata()
+        {
+        }
+        /**
+         * Metadata for a private key instance managed by an external key access
+         * control list service.
+         *
+         * @param KaclsKeyMetadata $kaclsKeyMetadata
+         */
+        public function setKaclsKeyMetadata(KaclsKeyMetadata $kaclsKeyMetadata)
+        {
+        }
+        /**
+         * @return KaclsKeyMetadata
+         */
+        public function getKaclsKeyMetadata()
+        {
+        }
+        /**
+         * Output only. The immutable ID for the private key metadata instance.
+         *
+         * @param string $privateKeyMetadataId
+         */
+        public function setPrivateKeyMetadataId($privateKeyMetadataId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrivateKeyMetadataId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return HardwareKeyMetadata
+     * Runtime class alias of \Google\Service\Gmail\CsePrivateKeyMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHardwareKeyMetadata()
-    {
-    }
-    /**
-     * Metadata for a private key instance managed by an external key access
-     * control list service.
-     *
-     * @param KaclsKeyMetadata $kaclsKeyMetadata
-     */
-    public function setKaclsKeyMetadata(KaclsKeyMetadata $kaclsKeyMetadata)
-    {
-    }
-    /**
-     * @return KaclsKeyMetadata
-     */
-    public function getKaclsKeyMetadata()
-    {
-    }
-    /**
-     * Output only. The immutable ID for the private key metadata instance.
-     *
-     * @param string $privateKeyMetadataId
-     */
-    public function setPrivateKeyMetadataId($privateKeyMetadataId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrivateKeyMetadataId()
+    class Google_Service_Gmail_CsePrivateKeyMetadata extends \Google\Service\Gmail\CsePrivateKeyMetadata
     {
     }
 }

@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OSConfig;
-
-class OSPolicyAssignmentInstanceFilterInventory extends \Google\Model
-{
-    /**
-     * Required. The OS short name
-     *
-     * @var string
-     */
-    public $osShortName;
-    /**
-     * The OS version Prefix matches are supported if asterisk(*) is provided as
-     * the last character. For example, to match all versions with a major version
-     * of `7`, specify the following value for this field `7.*` An empty string
-     * matches all OS versions.
-     *
-     * @var string
-     */
-    public $osVersion;
-    /**
-     * Required. The OS short name
-     *
-     * @param string $osShortName
-     */
-    public function setOsShortName($osShortName)
+namespace Google\Service\OSConfig {
+    class OSPolicyAssignmentInstanceFilterInventory extends \Google\Model
     {
+        /**
+         * Required. The OS short name
+         *
+         * @var string
+         */
+        public $osShortName;
+        /**
+         * The OS version Prefix matches are supported if asterisk(*) is provided as
+         * the last character. For example, to match all versions with a major version
+         * of `7`, specify the following value for this field `7.*` An empty string
+         * matches all OS versions.
+         *
+         * @var string
+         */
+        public $osVersion;
+        /**
+         * Required. The OS short name
+         *
+         * @param string $osShortName
+         */
+        public function setOsShortName($osShortName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOsShortName()
+        {
+        }
+        /**
+         * The OS version Prefix matches are supported if asterisk(*) is provided as
+         * the last character. For example, to match all versions with a major version
+         * of `7`, specify the following value for this field `7.*` An empty string
+         * matches all OS versions.
+         *
+         * @param string $osVersion
+         */
+        public function setOsVersion($osVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOsVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OSConfig\OSPolicyAssignmentInstanceFilterInventory registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOsShortName()
-    {
-    }
-    /**
-     * The OS version Prefix matches are supported if asterisk(*) is provided as
-     * the last character. For example, to match all versions with a major version
-     * of `7`, specify the following value for this field `7.*` An empty string
-     * matches all OS versions.
-     *
-     * @param string $osVersion
-     */
-    public function setOsVersion($osVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOsVersion()
+    class Google_Service_OSConfig_OSPolicyAssignmentInstanceFilterInventory extends \Google\Service\OSConfig\OSPolicyAssignmentInstanceFilterInventory
     {
     }
 }

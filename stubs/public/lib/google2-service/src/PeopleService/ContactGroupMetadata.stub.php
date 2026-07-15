@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PeopleService;
-
-class ContactGroupMetadata extends \Google\Model
-{
-    /**
-     * Output only. True if the contact group resource has been deleted. Populated
-     * only for [`ListContactGroups`](/people/api/rest/v1/contactgroups/list)
-     * requests that include a sync token.
-     *
-     * @var bool
-     */
-    public $deleted;
-    /**
-     * Output only. The time the group was last updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. True if the contact group resource has been deleted. Populated
-     * only for [`ListContactGroups`](/people/api/rest/v1/contactgroups/list)
-     * requests that include a sync token.
-     *
-     * @param bool $deleted
-     */
-    public function setDeleted($deleted)
+namespace Google\Service\PeopleService {
+    class ContactGroupMetadata extends \Google\Model
     {
+        /**
+         * Output only. True if the contact group resource has been deleted. Populated
+         * only for [`ListContactGroups`](/people/api/rest/v1/contactgroups/list)
+         * requests that include a sync token.
+         *
+         * @var bool
+         */
+        public $deleted;
+        /**
+         * Output only. The time the group was last updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. True if the contact group resource has been deleted. Populated
+         * only for [`ListContactGroups`](/people/api/rest/v1/contactgroups/list)
+         * requests that include a sync token.
+         *
+         * @param bool $deleted
+         */
+        public function setDeleted($deleted)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDeleted()
+        {
+        }
+        /**
+         * Output only. The time the group was last updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\PeopleService\ContactGroupMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeleted()
-    {
-    }
-    /**
-     * Output only. The time the group was last updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_PeopleService_ContactGroupMetadata extends \Google\Service\PeopleService\ContactGroupMetadata
     {
     }
 }

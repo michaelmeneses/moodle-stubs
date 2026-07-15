@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class GoogleAppsCardV1Condition extends \Google\Model
-{
-    /**
-     * The unique identifier of the ActionRule.
-     *
-     * @var string
-     */
-    public $actionRuleId;
-    protected $expressionDataConditionType = GoogleAppsCardV1ExpressionDataCondition::class;
-    protected $expressionDataConditionDataType = '';
-    /**
-     * The unique identifier of the ActionRule.
-     *
-     * @param string $actionRuleId
-     */
-    public function setActionRuleId($actionRuleId)
+namespace Google\Service\HangoutsChat {
+    class GoogleAppsCardV1Condition extends \Google\Model
     {
+        /**
+         * The unique identifier of the ActionRule.
+         *
+         * @var string
+         */
+        public $actionRuleId;
+        protected $expressionDataConditionType = GoogleAppsCardV1ExpressionDataCondition::class;
+        protected $expressionDataConditionDataType = '';
+        /**
+         * The unique identifier of the ActionRule.
+         *
+         * @param string $actionRuleId
+         */
+        public function setActionRuleId($actionRuleId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getActionRuleId()
+        {
+        }
+        /**
+         * The condition that is determined by the expression data.
+         *
+         * @param GoogleAppsCardV1ExpressionDataCondition $expressionDataCondition
+         */
+        public function setExpressionDataCondition(GoogleAppsCardV1ExpressionDataCondition $expressionDataCondition)
+        {
+        }
+        /**
+         * @return GoogleAppsCardV1ExpressionDataCondition
+         */
+        public function getExpressionDataCondition()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\HangoutsChat\GoogleAppsCardV1Condition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActionRuleId()
-    {
-    }
-    /**
-     * The condition that is determined by the expression data.
-     *
-     * @param GoogleAppsCardV1ExpressionDataCondition $expressionDataCondition
-     */
-    public function setExpressionDataCondition(GoogleAppsCardV1ExpressionDataCondition $expressionDataCondition)
-    {
-    }
-    /**
-     * @return GoogleAppsCardV1ExpressionDataCondition
-     */
-    public function getExpressionDataCondition()
+    class Google_Service_HangoutsChat_GoogleAppsCardV1Condition extends \Google\Service\HangoutsChat\GoogleAppsCardV1Condition
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIdentity;
-
-class Setting extends \Google\Model
-{
-    /**
-     * Required. Immutable. The type of the Setting. .
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Required. The value of the Setting.
-     *
-     * @var array[]
-     */
-    public $value;
-    /**
-     * Required. Immutable. The type of the Setting. .
-     *
-     * @param string $type
-     */
-    public function setType($type)
+namespace Google\Service\CloudIdentity {
+    class Setting extends \Google\Model
     {
+        /**
+         * Required. Immutable. The type of the Setting. .
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Required. The value of the Setting.
+         *
+         * @var array[]
+         */
+        public $value;
+        /**
+         * Required. Immutable. The type of the Setting. .
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
+        /**
+         * Required. The value of the Setting.
+         *
+         * @param array[] $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudIdentity\Setting registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getType()
-    {
-    }
-    /**
-     * Required. The value of the Setting.
-     *
-     * @param array[] $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getValue()
+    class Google_Service_CloudIdentity_Setting extends \Google\Service\CloudIdentity\Setting
     {
     }
 }

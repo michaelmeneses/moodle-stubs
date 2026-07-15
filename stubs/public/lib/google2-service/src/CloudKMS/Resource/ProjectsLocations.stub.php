@@ -21,94 +21,108 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudKMS\Resource;
-
-/**
- * The "locations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $cloudkmsService = new Google\Service\CloudKMS(...);
- *   $locations = $cloudkmsService->projects_locations;
- *  </code>
- */
-class ProjectsLocations extends \Google\Service\Resource
-{
+namespace Google\Service\CloudKMS\Resource {
+    use Google\Service\CloudKMS\EkmConfig;
+    use Google\Service\CloudKMS\GenerateRandomBytesRequest;
+    use Google\Service\CloudKMS\GenerateRandomBytesResponse;
+    use Google\Service\CloudKMS\ListLocationsResponse;
+    use Google\Service\CloudKMS\Location;
     /**
-     * Generate random bytes using the Cloud KMS randomness source in the provided
-     * location. (locations.generateRandomBytes)
-     *
-     * @param string $location The project-specific location in which to generate
-     * random bytes. For example, "projects/my-project/locations/us-central1".
-     * @param GenerateRandomBytesRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GenerateRandomBytesResponse
-     * @throws \Google\Service\Exception
+     * The "locations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $cloudkmsService = new Google\Service\CloudKMS(...);
+     *   $locations = $cloudkmsService->projects_locations;
+     *  </code>
      */
-    public function generateRandomBytes($location, GenerateRandomBytesRequest $postBody, $optParams = [])
+    class ProjectsLocations extends \Google\Service\Resource
     {
+        /**
+         * Generate random bytes using the Cloud KMS randomness source in the provided
+         * location. (locations.generateRandomBytes)
+         *
+         * @param string $location The project-specific location in which to generate
+         * random bytes. For example, "projects/my-project/locations/us-central1".
+         * @param GenerateRandomBytesRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GenerateRandomBytesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function generateRandomBytes($location, GenerateRandomBytesRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Gets information about a location. (locations.get)
+         *
+         * @param string $name Resource name for the location.
+         * @param array $optParams Optional parameters.
+         * @return Location
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Returns the EkmConfig singleton resource for a given project and location.
+         * (locations.getEkmConfig)
+         *
+         * @param string $name Required. The name of the EkmConfig to get.
+         * @param array $optParams Optional parameters.
+         * @return EkmConfig
+         * @throws \Google\Service\Exception
+         */
+        public function getEkmConfig($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists information about the supported locations for this service.
+         * (locations.listProjectsLocations)
+         *
+         * @param string $name The resource that owns the locations collection, if
+         * applicable.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string extraLocationTypes Optional. Do not use this field. It is
+         * unsupported and is ignored unless explicitly documented otherwise. This is
+         * primarily for internal usage.
+         * @opt_param string filter A filter to narrow down results to a preferred
+         * subset. The filtering language accepts strings like `"displayName=tokyo"`,
+         * and is documented in more detail in [AIP-160](https://google.aip.dev/160).
+         * @opt_param int pageSize The maximum number of results to return. If not set,
+         * the service selects a default.
+         * @opt_param string pageToken A page token received from the `next_page_token`
+         * field in the response. Send that page token to receive the subsequent page.
+         * @return ListLocationsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocations($name, $optParams = [])
+        {
+        }
+        /**
+         * Updates the EkmConfig singleton resource for a given project and location.
+         * (locations.updateEkmConfig)
+         *
+         * @param string $name Output only. The resource name for the EkmConfig in the
+         * format `projects/locations/ekmConfig`.
+         * @param EkmConfig $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Required. List of fields to be updated in this
+         * request.
+         * @return EkmConfig
+         * @throws \Google\Service\Exception
+         */
+        public function updateEkmConfig($name, EkmConfig $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets information about a location. (locations.get)
-     *
-     * @param string $name Resource name for the location.
-     * @param array $optParams Optional parameters.
-     * @return Location
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\CloudKMS\Resource\ProjectsLocations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Returns the EkmConfig singleton resource for a given project and location.
-     * (locations.getEkmConfig)
-     *
-     * @param string $name Required. The name of the EkmConfig to get.
-     * @param array $optParams Optional parameters.
-     * @return EkmConfig
-     * @throws \Google\Service\Exception
-     */
-    public function getEkmConfig($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists information about the supported locations for this service.
-     * (locations.listProjectsLocations)
-     *
-     * @param string $name The resource that owns the locations collection, if
-     * applicable.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string extraLocationTypes Optional. Do not use this field. It is
-     * unsupported and is ignored unless explicitly documented otherwise. This is
-     * primarily for internal usage.
-     * @opt_param string filter A filter to narrow down results to a preferred
-     * subset. The filtering language accepts strings like `"displayName=tokyo"`,
-     * and is documented in more detail in [AIP-160](https://google.aip.dev/160).
-     * @opt_param int pageSize The maximum number of results to return. If not set,
-     * the service selects a default.
-     * @opt_param string pageToken A page token received from the `next_page_token`
-     * field in the response. Send that page token to receive the subsequent page.
-     * @return ListLocationsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocations($name, $optParams = [])
-    {
-    }
-    /**
-     * Updates the EkmConfig singleton resource for a given project and location.
-     * (locations.updateEkmConfig)
-     *
-     * @param string $name Output only. The resource name for the EkmConfig in the
-     * format `projects/locations/ekmConfig`.
-     * @param EkmConfig $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Required. List of fields to be updated in this
-     * request.
-     * @return EkmConfig
-     * @throws \Google\Service\Exception
-     */
-    public function updateEkmConfig($name, EkmConfig $postBody, $optParams = [])
+    class Google_Service_CloudKMS_Resource_ProjectsLocations extends \Google\Service\CloudKMS\Resource\ProjectsLocations
     {
     }
 }

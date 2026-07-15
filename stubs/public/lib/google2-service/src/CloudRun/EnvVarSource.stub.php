@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class EnvVarSource extends \Google\Model
-{
-    protected $configMapKeyRefType = ConfigMapKeySelector::class;
-    protected $configMapKeyRefDataType = '';
-    protected $secretKeyRefType = SecretKeySelector::class;
-    protected $secretKeyRefDataType = '';
-    /**
-     * @param ConfigMapKeySelector
-     */
-    public function setConfigMapKeyRef(ConfigMapKeySelector $configMapKeyRef)
+namespace Google\Service\CloudRun {
+    class EnvVarSource extends \Google\Model
     {
+        protected $configMapKeyRefType = ConfigMapKeySelector::class;
+        protected $configMapKeyRefDataType = '';
+        protected $secretKeyRefType = SecretKeySelector::class;
+        protected $secretKeyRefDataType = '';
+        /**
+         * @param ConfigMapKeySelector
+         */
+        public function setConfigMapKeyRef(ConfigMapKeySelector $configMapKeyRef)
+        {
+        }
+        /**
+         * @return ConfigMapKeySelector
+         */
+        public function getConfigMapKeyRef()
+        {
+        }
+        /**
+         * @param SecretKeySelector
+         */
+        public function setSecretKeyRef(SecretKeySelector $secretKeyRef)
+        {
+        }
+        /**
+         * @return SecretKeySelector
+         */
+        public function getSecretKeyRef()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ConfigMapKeySelector
+     * Runtime class alias of \Google\Service\CloudRun\EnvVarSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfigMapKeyRef()
-    {
-    }
-    /**
-     * @param SecretKeySelector
-     */
-    public function setSecretKeyRef(SecretKeySelector $secretKeyRef)
-    {
-    }
-    /**
-     * @return SecretKeySelector
-     */
-    public function getSecretKeyRef()
+    class Google_Service_CloudRun_EnvVarSource extends \Google\Service\CloudRun\EnvVarSource
     {
     }
 }

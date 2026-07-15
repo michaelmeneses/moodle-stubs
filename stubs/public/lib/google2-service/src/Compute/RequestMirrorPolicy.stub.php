@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class RequestMirrorPolicy extends \Google\Model
-{
-    /**
-     * The full or partial URL to the BackendService resource being mirrored to.
-     *
-     * The backend service configured for a mirroring policy must reference
-     * backends that are of the same type as the original backend service matched
-     * in the URL map.
-     *
-     * Serverless NEG backends are not currently supported as a mirrored backend
-     * service.
-     *
-     * @var string
-     */
-    public $backendService;
-    /**
-     * The percentage of requests to be mirrored to `backend_service`.
-     *
-     * @var 
-     */
-    public $mirrorPercent;
-    /**
-     * The full or partial URL to the BackendService resource being mirrored to.
-     *
-     * The backend service configured for a mirroring policy must reference
-     * backends that are of the same type as the original backend service matched
-     * in the URL map.
-     *
-     * Serverless NEG backends are not currently supported as a mirrored backend
-     * service.
-     *
-     * @param string $backendService
-     */
-    public function setBackendService($backendService)
+namespace Google\Service\Compute {
+    class RequestMirrorPolicy extends \Google\Model
     {
+        /**
+         * The full or partial URL to the BackendService resource being mirrored to.
+         *
+         * The backend service configured for a mirroring policy must reference
+         * backends that are of the same type as the original backend service matched
+         * in the URL map.
+         *
+         * Serverless NEG backends are not currently supported as a mirrored backend
+         * service.
+         *
+         * @var string
+         */
+        public $backendService;
+        /**
+         * The percentage of requests to be mirrored to `backend_service`.
+         *
+         * @var 
+         */
+        public $mirrorPercent;
+        /**
+         * The full or partial URL to the BackendService resource being mirrored to.
+         *
+         * The backend service configured for a mirroring policy must reference
+         * backends that are of the same type as the original backend service matched
+         * in the URL map.
+         *
+         * Serverless NEG backends are not currently supported as a mirrored backend
+         * service.
+         *
+         * @param string $backendService
+         */
+        public function setBackendService($backendService)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBackendService()
+        {
+        }
+        public function setMirrorPercent($mirrorPercent)
+        {
+        }
+        public function getMirrorPercent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\RequestMirrorPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackendService()
-    {
-    }
-    public function setMirrorPercent($mirrorPercent)
-    {
-    }
-    public function getMirrorPercent()
+    class Google_Service_Compute_RequestMirrorPolicy extends \Google\Service\Compute\RequestMirrorPolicy
     {
     }
 }

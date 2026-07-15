@@ -21,75 +21,84 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OracleDatabase;
-
-class IdentityConnector extends \Google\Model
-{
-    /**
-     * Default unspecified value.
-     */
-    public const CONNECTION_STATE_CONNECTION_STATE_UNSPECIFIED = 'CONNECTION_STATE_UNSPECIFIED';
-    /**
-     * The identity pool connection is connected.
-     */
-    public const CONNECTION_STATE_CONNECTED = 'CONNECTED';
-    /**
-     * The identity pool connection is partially connected.
-     */
-    public const CONNECTION_STATE_PARTIALLY_CONNECTED = 'PARTIALLY_CONNECTED';
-    /**
-     * The identity pool connection is disconnected.
-     */
-    public const CONNECTION_STATE_DISCONNECTED = 'DISCONNECTED';
-    /**
-     * The identity pool connection is in an unknown state.
-     */
-    public const CONNECTION_STATE_UNKNOWN = 'UNKNOWN';
-    /**
-     * Output only. The connection state of the identity connector.
-     *
-     * @var string
-     */
-    public $connectionState;
-    /**
-     * Output only. A google managed service account on which customers can grant
-     * roles to access resources in the customer project. Example:
-     * `p176944527254-55-75119d87fd8f@gcp-sa-oci.iam.gserviceaccount.com`
-     *
-     * @var string
-     */
-    public $serviceAgentEmail;
-    /**
-     * Output only. The connection state of the identity connector.
-     *
-     * Accepted values: CONNECTION_STATE_UNSPECIFIED, CONNECTED,
-     * PARTIALLY_CONNECTED, DISCONNECTED, UNKNOWN
-     *
-     * @param self::CONNECTION_STATE_* $connectionState
-     */
-    public function setConnectionState($connectionState)
+namespace Google\Service\OracleDatabase {
+    class IdentityConnector extends \Google\Model
     {
+        /**
+         * Default unspecified value.
+         */
+        public const CONNECTION_STATE_CONNECTION_STATE_UNSPECIFIED = 'CONNECTION_STATE_UNSPECIFIED';
+        /**
+         * The identity pool connection is connected.
+         */
+        public const CONNECTION_STATE_CONNECTED = 'CONNECTED';
+        /**
+         * The identity pool connection is partially connected.
+         */
+        public const CONNECTION_STATE_PARTIALLY_CONNECTED = 'PARTIALLY_CONNECTED';
+        /**
+         * The identity pool connection is disconnected.
+         */
+        public const CONNECTION_STATE_DISCONNECTED = 'DISCONNECTED';
+        /**
+         * The identity pool connection is in an unknown state.
+         */
+        public const CONNECTION_STATE_UNKNOWN = 'UNKNOWN';
+        /**
+         * Output only. The connection state of the identity connector.
+         *
+         * @var string
+         */
+        public $connectionState;
+        /**
+         * Output only. A google managed service account on which customers can grant
+         * roles to access resources in the customer project. Example:
+         * `p176944527254-55-75119d87fd8f@gcp-sa-oci.iam.gserviceaccount.com`
+         *
+         * @var string
+         */
+        public $serviceAgentEmail;
+        /**
+         * Output only. The connection state of the identity connector.
+         *
+         * Accepted values: CONNECTION_STATE_UNSPECIFIED, CONNECTED,
+         * PARTIALLY_CONNECTED, DISCONNECTED, UNKNOWN
+         *
+         * @param self::CONNECTION_STATE_* $connectionState
+         */
+        public function setConnectionState($connectionState)
+        {
+        }
+        /**
+         * @return self::CONNECTION_STATE_*
+         */
+        public function getConnectionState()
+        {
+        }
+        /**
+         * Output only. A google managed service account on which customers can grant
+         * roles to access resources in the customer project. Example:
+         * `p176944527254-55-75119d87fd8f@gcp-sa-oci.iam.gserviceaccount.com`
+         *
+         * @param string $serviceAgentEmail
+         */
+        public function setServiceAgentEmail($serviceAgentEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceAgentEmail()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::CONNECTION_STATE_*
+     * Runtime class alias of \Google\Service\OracleDatabase\IdentityConnector registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConnectionState()
-    {
-    }
-    /**
-     * Output only. A google managed service account on which customers can grant
-     * roles to access resources in the customer project. Example:
-     * `p176944527254-55-75119d87fd8f@gcp-sa-oci.iam.gserviceaccount.com`
-     *
-     * @param string $serviceAgentEmail
-     */
-    public function setServiceAgentEmail($serviceAgentEmail)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceAgentEmail()
+    class Google_Service_OracleDatabase_IdentityConnector extends \Google\Service\OracleDatabase\IdentityConnector
     {
     }
 }

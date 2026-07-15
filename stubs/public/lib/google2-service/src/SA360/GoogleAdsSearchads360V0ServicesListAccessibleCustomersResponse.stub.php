@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0ServicesListAccessibleCustomersResponse extends \Google\Collection
-{
-    protected $collection_key = 'resourceNames';
-    /**
-     * Resource name of customers directly accessible by the user authenticating
-     * the call.
-     *
-     * @var string[]
-     */
-    public $resourceNames;
-    /**
-     * Resource name of customers directly accessible by the user authenticating
-     * the call.
-     *
-     * @param string[] $resourceNames
-     */
-    public function setResourceNames($resourceNames)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0ServicesListAccessibleCustomersResponse extends \Google\Collection
     {
+        protected $collection_key = 'resourceNames';
+        /**
+         * Resource name of customers directly accessible by the user authenticating
+         * the call.
+         *
+         * @var string[]
+         */
+        public $resourceNames;
+        /**
+         * Resource name of customers directly accessible by the user authenticating
+         * the call.
+         *
+         * @param string[] $resourceNames
+         */
+        public function setResourceNames($resourceNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getResourceNames()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0ServicesListAccessibleCustomersResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResourceNames()
+    class Google_Service_SA360_GoogleAdsSearchads360V0ServicesListAccessibleCustomersResponse extends \Google\Service\SA360\GoogleAdsSearchads360V0ServicesListAccessibleCustomersResponse
     {
     }
 }

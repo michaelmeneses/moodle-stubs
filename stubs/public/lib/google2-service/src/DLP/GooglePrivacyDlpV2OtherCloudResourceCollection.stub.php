@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2OtherCloudResourceCollection extends \Google\Model
-{
-    protected $includeRegexesType = GooglePrivacyDlpV2OtherCloudResourceRegexes::class;
-    protected $includeRegexesDataType = '';
-    /**
-     * A collection of regular expressions to match a resource against.
-     *
-     * @param GooglePrivacyDlpV2OtherCloudResourceRegexes $includeRegexes
-     */
-    public function setIncludeRegexes(GooglePrivacyDlpV2OtherCloudResourceRegexes $includeRegexes)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2OtherCloudResourceCollection extends \Google\Model
     {
+        protected $includeRegexesType = GooglePrivacyDlpV2OtherCloudResourceRegexes::class;
+        protected $includeRegexesDataType = '';
+        /**
+         * A collection of regular expressions to match a resource against.
+         *
+         * @param GooglePrivacyDlpV2OtherCloudResourceRegexes $includeRegexes
+         */
+        public function setIncludeRegexes(GooglePrivacyDlpV2OtherCloudResourceRegexes $includeRegexes)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2OtherCloudResourceRegexes
+         */
+        public function getIncludeRegexes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2OtherCloudResourceRegexes
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2OtherCloudResourceCollection registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIncludeRegexes()
+    class Google_Service_DLP_GooglePrivacyDlpV2OtherCloudResourceCollection extends \Google\Service\DLP\GooglePrivacyDlpV2OtherCloudResourceCollection
     {
     }
 }

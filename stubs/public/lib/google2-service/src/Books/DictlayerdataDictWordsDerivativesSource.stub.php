@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class DictlayerdataDictWordsDerivativesSource extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $attribution;
-    /**
-     * @var string
-     */
-    public $url;
-    /**
-     * @param string $attribution
-     */
-    public function setAttribution($attribution)
+namespace Google\Service\Books {
+    class DictlayerdataDictWordsDerivativesSource extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $attribution;
+        /**
+         * @var string
+         */
+        public $url;
+        /**
+         * @param string $attribution
+         */
+        public function setAttribution($attribution)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAttribution()
+        {
+        }
+        /**
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Books\DictlayerdataDictWordsDerivativesSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttribution()
-    {
-    }
-    /**
-     * @param string $url
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
+    class Google_Service_Books_DictlayerdataDictWordsDerivativesSource extends \Google\Service\Books\DictlayerdataDictWordsDerivativesSource
     {
     }
 }

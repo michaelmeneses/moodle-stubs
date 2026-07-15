@@ -21,30 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storage\Resource;
-
-/**
- * The "serviceAccount" collection of methods.
- * Typical usage is:
- *  <code>
- *   $storageService = new Google\Service\Storage(...);
- *   $serviceAccount = $storageService->projects_serviceAccount;
- *  </code>
- */
-class ProjectsServiceAccount extends \Google\Service\Resource
-{
+namespace Google\Service\Storage\Resource {
+    use Google\Service\Storage\ServiceAccount;
     /**
-     * Get the email address of this project's Google Cloud Storage service account.
-     * (serviceAccount.get)
-     *
-     * @param string $projectId Project ID
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string userProject The project to be billed for this request.
-     * @return ServiceAccount
-     * @throws \Google\Service\Exception
+     * The "serviceAccount" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $storageService = new Google\Service\Storage(...);
+     *   $serviceAccount = $storageService->projects_serviceAccount;
+     *  </code>
      */
-    public function get($projectId, $optParams = [])
+    class ProjectsServiceAccount extends \Google\Service\Resource
+    {
+        /**
+         * Get the email address of this project's Google Cloud Storage service account.
+         * (serviceAccount.get)
+         *
+         * @param string $projectId Project ID
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string userProject The project to be billed for this request.
+         * @return ServiceAccount
+         * @throws \Google\Service\Exception
+         */
+        public function get($projectId, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Storage\Resource\ProjectsServiceAccount registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Storage_Resource_ProjectsServiceAccount extends \Google\Service\Storage\Resource\ProjectsServiceAccount
     {
     }
 }

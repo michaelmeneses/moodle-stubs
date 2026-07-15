@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaPredictInstanceImageSegmentationPredictionInstance extends \Google\Model
-{
-    /**
-     * The image bytes to make the predictions on.
-     *
-     * @var string
-     */
-    public $content;
-    /**
-     * The MIME type of the content of the image. Only the images in below listed
-     * MIME types are supported. - image/jpeg - image/png
-     *
-     * @var string
-     */
-    public $mimeType;
-    /**
-     * The image bytes to make the predictions on.
-     *
-     * @param string $content
-     */
-    public function setContent($content)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaPredictInstanceImageSegmentationPredictionInstance extends \Google\Model
     {
+        /**
+         * The image bytes to make the predictions on.
+         *
+         * @var string
+         */
+        public $content;
+        /**
+         * The MIME type of the content of the image. Only the images in below listed
+         * MIME types are supported. - image/jpeg - image/png
+         *
+         * @var string
+         */
+        public $mimeType;
+        /**
+         * The image bytes to make the predictions on.
+         *
+         * @param string $content
+         */
+        public function setContent($content)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContent()
+        {
+        }
+        /**
+         * The MIME type of the content of the image. Only the images in below listed
+         * MIME types are supported. - image/jpeg - image/png
+         *
+         * @param string $mimeType
+         */
+        public function setMimeType($mimeType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMimeType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaPredictInstanceImageSegmentationPredictionInstance registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContent()
-    {
-    }
-    /**
-     * The MIME type of the content of the image. Only the images in below listed
-     * MIME types are supported. - image/jpeg - image/png
-     *
-     * @param string $mimeType
-     */
-    public function setMimeType($mimeType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMimeType()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaPredictInstanceImageSegmentationPredictionInstance extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaPredictInstanceImageSegmentationPredictionInstance
     {
     }
 }

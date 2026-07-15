@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GoogleCloudSecuritycenterV2IpRule extends \Google\Collection
-{
-    protected $collection_key = 'portRanges';
-    protected $portRangesType = GoogleCloudSecuritycenterV2PortRange::class;
-    protected $portRangesDataType = 'array';
-    /**
-     * The IP protocol this rule applies to. This value can either be one of the
-     * following well known protocol strings (TCP, UDP, ICMP, ESP, AH, IPIP, SCTP)
-     * or a string representation of the integer value.
-     *
-     * @var string
-     */
-    public $protocol;
-    /**
-     * Optional. An optional list of ports to which this rule applies. This field
-     * is only applicable for the UDP or (S)TCP protocols. Each entry must be
-     * either an integer or a range including a min and max port number.
-     *
-     * @param GoogleCloudSecuritycenterV2PortRange[] $portRanges
-     */
-    public function setPortRanges($portRanges)
+namespace Google\Service\SecurityCommandCenter {
+    class GoogleCloudSecuritycenterV2IpRule extends \Google\Collection
     {
+        protected $collection_key = 'portRanges';
+        protected $portRangesType = GoogleCloudSecuritycenterV2PortRange::class;
+        protected $portRangesDataType = 'array';
+        /**
+         * The IP protocol this rule applies to. This value can either be one of the
+         * following well known protocol strings (TCP, UDP, ICMP, ESP, AH, IPIP, SCTP)
+         * or a string representation of the integer value.
+         *
+         * @var string
+         */
+        public $protocol;
+        /**
+         * Optional. An optional list of ports to which this rule applies. This field
+         * is only applicable for the UDP or (S)TCP protocols. Each entry must be
+         * either an integer or a range including a min and max port number.
+         *
+         * @param GoogleCloudSecuritycenterV2PortRange[] $portRanges
+         */
+        public function setPortRanges($portRanges)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV2PortRange[]
+         */
+        public function getPortRanges()
+        {
+        }
+        /**
+         * The IP protocol this rule applies to. This value can either be one of the
+         * following well known protocol strings (TCP, UDP, ICMP, ESP, AH, IPIP, SCTP)
+         * or a string representation of the integer value.
+         *
+         * @param string $protocol
+         */
+        public function setProtocol($protocol)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProtocol()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudSecuritycenterV2PortRange[]
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2IpRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPortRanges()
-    {
-    }
-    /**
-     * The IP protocol this rule applies to. This value can either be one of the
-     * following well known protocol strings (TCP, UDP, ICMP, ESP, AH, IPIP, SCTP)
-     * or a string representation of the integer value.
-     *
-     * @param string $protocol
-     */
-    public function setProtocol($protocol)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProtocol()
+    class Google_Service_SecurityCommandCenter_GoogleCloudSecuritycenterV2IpRule extends \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2IpRule
     {
     }
 }

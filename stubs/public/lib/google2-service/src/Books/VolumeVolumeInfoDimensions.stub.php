@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class VolumeVolumeInfoDimensions extends \Google\Model
-{
-    /**
-     * Height or length of this volume (in cm).
-     *
-     * @var string
-     */
-    public $height;
-    /**
-     * Thickness of this volume (in cm).
-     *
-     * @var string
-     */
-    public $thickness;
-    /**
-     * Width of this volume (in cm).
-     *
-     * @var string
-     */
-    public $width;
-    /**
-     * Height or length of this volume (in cm).
-     *
-     * @param string $height
-     */
-    public function setHeight($height)
+namespace Google\Service\Books {
+    class VolumeVolumeInfoDimensions extends \Google\Model
     {
+        /**
+         * Height or length of this volume (in cm).
+         *
+         * @var string
+         */
+        public $height;
+        /**
+         * Thickness of this volume (in cm).
+         *
+         * @var string
+         */
+        public $thickness;
+        /**
+         * Width of this volume (in cm).
+         *
+         * @var string
+         */
+        public $width;
+        /**
+         * Height or length of this volume (in cm).
+         *
+         * @param string $height
+         */
+        public function setHeight($height)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHeight()
+        {
+        }
+        /**
+         * Thickness of this volume (in cm).
+         *
+         * @param string $thickness
+         */
+        public function setThickness($thickness)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getThickness()
+        {
+        }
+        /**
+         * Width of this volume (in cm).
+         *
+         * @param string $width
+         */
+        public function setWidth($width)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWidth()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Books\VolumeVolumeInfoDimensions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHeight()
-    {
-    }
-    /**
-     * Thickness of this volume (in cm).
-     *
-     * @param string $thickness
-     */
-    public function setThickness($thickness)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getThickness()
-    {
-    }
-    /**
-     * Width of this volume (in cm).
-     *
-     * @param string $width
-     */
-    public function setWidth($width)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWidth()
+    class Google_Service_Books_VolumeVolumeInfoDimensions extends \Google\Service\Books\VolumeVolumeInfoDimensions
     {
     }
 }

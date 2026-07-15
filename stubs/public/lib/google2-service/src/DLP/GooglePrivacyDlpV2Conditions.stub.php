@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2Conditions extends \Google\Collection
-{
-    protected $collection_key = 'conditions';
-    protected $conditionsType = GooglePrivacyDlpV2Condition::class;
-    protected $conditionsDataType = 'array';
-    /**
-     * A collection of conditions.
-     *
-     * @param GooglePrivacyDlpV2Condition[] $conditions
-     */
-    public function setConditions($conditions)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2Conditions extends \Google\Collection
     {
+        protected $collection_key = 'conditions';
+        protected $conditionsType = GooglePrivacyDlpV2Condition::class;
+        protected $conditionsDataType = 'array';
+        /**
+         * A collection of conditions.
+         *
+         * @param GooglePrivacyDlpV2Condition[] $conditions
+         */
+        public function setConditions($conditions)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2Condition[]
+         */
+        public function getConditions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2Condition[]
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2Conditions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConditions()
+    class Google_Service_DLP_GooglePrivacyDlpV2Conditions extends \Google\Service\DLP\GooglePrivacyDlpV2Conditions
     {
     }
 }

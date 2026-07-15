@@ -21,233 +21,242 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CertificateAuthorityService;
-
-class NameConstraints extends \Google\Collection
-{
-    protected $collection_key = 'permittedUris';
-    /**
-     * Indicates whether or not the name constraints are marked critical.
-     *
-     * @var bool
-     */
-    public $critical;
-    /**
-     * Contains excluded DNS names. Any DNS name that can be constructed by simply
-     * adding zero or more labels to the left-hand side of the name satisfies the
-     * name constraint. For example, `example.com`, `www.example.com`,
-     * `www.sub.example.com` would satisfy `example.com` while `example1.com` does
-     * not.
-     *
-     * @var string[]
-     */
-    public $excludedDnsNames;
-    /**
-     * Contains the excluded email addresses. The value can be a particular email
-     * address, a hostname to indicate all email addresses on that host or a
-     * domain with a leading period (e.g. `.example.com`) to indicate all email
-     * addresses in that domain.
-     *
-     * @var string[]
-     */
-    public $excludedEmailAddresses;
-    /**
-     * Contains the excluded IP ranges. For IPv4 addresses, the ranges are
-     * expressed using CIDR notation as specified in RFC 4632. For IPv6 addresses,
-     * the ranges are expressed in similar encoding as IPv4 addresses.
-     *
-     * @var string[]
-     */
-    public $excludedIpRanges;
-    /**
-     * Contains the excluded URIs that apply to the host part of the name. The
-     * value can be a hostname or a domain with a leading period (like
-     * `.example.com`)
-     *
-     * @var string[]
-     */
-    public $excludedUris;
-    /**
-     * Contains permitted DNS names. Any DNS name that can be constructed by
-     * simply adding zero or more labels to the left-hand side of the name
-     * satisfies the name constraint. For example, `example.com`,
-     * `www.example.com`, `www.sub.example.com` would satisfy `example.com` while
-     * `example1.com` does not.
-     *
-     * @var string[]
-     */
-    public $permittedDnsNames;
-    /**
-     * Contains the permitted email addresses. The value can be a particular email
-     * address, a hostname to indicate all email addresses on that host or a
-     * domain with a leading period (e.g. `.example.com`) to indicate all email
-     * addresses in that domain.
-     *
-     * @var string[]
-     */
-    public $permittedEmailAddresses;
-    /**
-     * Contains the permitted IP ranges. For IPv4 addresses, the ranges are
-     * expressed using CIDR notation as specified in RFC 4632. For IPv6 addresses,
-     * the ranges are expressed in similar encoding as IPv4 addresses.
-     *
-     * @var string[]
-     */
-    public $permittedIpRanges;
-    /**
-     * Contains the permitted URIs that apply to the host part of the name. The
-     * value can be a hostname or a domain with a leading period (like
-     * `.example.com`)
-     *
-     * @var string[]
-     */
-    public $permittedUris;
-    /**
-     * Indicates whether or not the name constraints are marked critical.
-     *
-     * @param bool $critical
-     */
-    public function setCritical($critical)
+namespace Google\Service\CertificateAuthorityService {
+    class NameConstraints extends \Google\Collection
     {
+        protected $collection_key = 'permittedUris';
+        /**
+         * Indicates whether or not the name constraints are marked critical.
+         *
+         * @var bool
+         */
+        public $critical;
+        /**
+         * Contains excluded DNS names. Any DNS name that can be constructed by simply
+         * adding zero or more labels to the left-hand side of the name satisfies the
+         * name constraint. For example, `example.com`, `www.example.com`,
+         * `www.sub.example.com` would satisfy `example.com` while `example1.com` does
+         * not.
+         *
+         * @var string[]
+         */
+        public $excludedDnsNames;
+        /**
+         * Contains the excluded email addresses. The value can be a particular email
+         * address, a hostname to indicate all email addresses on that host or a
+         * domain with a leading period (e.g. `.example.com`) to indicate all email
+         * addresses in that domain.
+         *
+         * @var string[]
+         */
+        public $excludedEmailAddresses;
+        /**
+         * Contains the excluded IP ranges. For IPv4 addresses, the ranges are
+         * expressed using CIDR notation as specified in RFC 4632. For IPv6 addresses,
+         * the ranges are expressed in similar encoding as IPv4 addresses.
+         *
+         * @var string[]
+         */
+        public $excludedIpRanges;
+        /**
+         * Contains the excluded URIs that apply to the host part of the name. The
+         * value can be a hostname or a domain with a leading period (like
+         * `.example.com`)
+         *
+         * @var string[]
+         */
+        public $excludedUris;
+        /**
+         * Contains permitted DNS names. Any DNS name that can be constructed by
+         * simply adding zero or more labels to the left-hand side of the name
+         * satisfies the name constraint. For example, `example.com`,
+         * `www.example.com`, `www.sub.example.com` would satisfy `example.com` while
+         * `example1.com` does not.
+         *
+         * @var string[]
+         */
+        public $permittedDnsNames;
+        /**
+         * Contains the permitted email addresses. The value can be a particular email
+         * address, a hostname to indicate all email addresses on that host or a
+         * domain with a leading period (e.g. `.example.com`) to indicate all email
+         * addresses in that domain.
+         *
+         * @var string[]
+         */
+        public $permittedEmailAddresses;
+        /**
+         * Contains the permitted IP ranges. For IPv4 addresses, the ranges are
+         * expressed using CIDR notation as specified in RFC 4632. For IPv6 addresses,
+         * the ranges are expressed in similar encoding as IPv4 addresses.
+         *
+         * @var string[]
+         */
+        public $permittedIpRanges;
+        /**
+         * Contains the permitted URIs that apply to the host part of the name. The
+         * value can be a hostname or a domain with a leading period (like
+         * `.example.com`)
+         *
+         * @var string[]
+         */
+        public $permittedUris;
+        /**
+         * Indicates whether or not the name constraints are marked critical.
+         *
+         * @param bool $critical
+         */
+        public function setCritical($critical)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCritical()
+        {
+        }
+        /**
+         * Contains excluded DNS names. Any DNS name that can be constructed by simply
+         * adding zero or more labels to the left-hand side of the name satisfies the
+         * name constraint. For example, `example.com`, `www.example.com`,
+         * `www.sub.example.com` would satisfy `example.com` while `example1.com` does
+         * not.
+         *
+         * @param string[] $excludedDnsNames
+         */
+        public function setExcludedDnsNames($excludedDnsNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getExcludedDnsNames()
+        {
+        }
+        /**
+         * Contains the excluded email addresses. The value can be a particular email
+         * address, a hostname to indicate all email addresses on that host or a
+         * domain with a leading period (e.g. `.example.com`) to indicate all email
+         * addresses in that domain.
+         *
+         * @param string[] $excludedEmailAddresses
+         */
+        public function setExcludedEmailAddresses($excludedEmailAddresses)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getExcludedEmailAddresses()
+        {
+        }
+        /**
+         * Contains the excluded IP ranges. For IPv4 addresses, the ranges are
+         * expressed using CIDR notation as specified in RFC 4632. For IPv6 addresses,
+         * the ranges are expressed in similar encoding as IPv4 addresses.
+         *
+         * @param string[] $excludedIpRanges
+         */
+        public function setExcludedIpRanges($excludedIpRanges)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getExcludedIpRanges()
+        {
+        }
+        /**
+         * Contains the excluded URIs that apply to the host part of the name. The
+         * value can be a hostname or a domain with a leading period (like
+         * `.example.com`)
+         *
+         * @param string[] $excludedUris
+         */
+        public function setExcludedUris($excludedUris)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getExcludedUris()
+        {
+        }
+        /**
+         * Contains permitted DNS names. Any DNS name that can be constructed by
+         * simply adding zero or more labels to the left-hand side of the name
+         * satisfies the name constraint. For example, `example.com`,
+         * `www.example.com`, `www.sub.example.com` would satisfy `example.com` while
+         * `example1.com` does not.
+         *
+         * @param string[] $permittedDnsNames
+         */
+        public function setPermittedDnsNames($permittedDnsNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPermittedDnsNames()
+        {
+        }
+        /**
+         * Contains the permitted email addresses. The value can be a particular email
+         * address, a hostname to indicate all email addresses on that host or a
+         * domain with a leading period (e.g. `.example.com`) to indicate all email
+         * addresses in that domain.
+         *
+         * @param string[] $permittedEmailAddresses
+         */
+        public function setPermittedEmailAddresses($permittedEmailAddresses)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPermittedEmailAddresses()
+        {
+        }
+        /**
+         * Contains the permitted IP ranges. For IPv4 addresses, the ranges are
+         * expressed using CIDR notation as specified in RFC 4632. For IPv6 addresses,
+         * the ranges are expressed in similar encoding as IPv4 addresses.
+         *
+         * @param string[] $permittedIpRanges
+         */
+        public function setPermittedIpRanges($permittedIpRanges)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPermittedIpRanges()
+        {
+        }
+        /**
+         * Contains the permitted URIs that apply to the host part of the name. The
+         * value can be a hostname or a domain with a leading period (like
+         * `.example.com`)
+         *
+         * @param string[] $permittedUris
+         */
+        public function setPermittedUris($permittedUris)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPermittedUris()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CertificateAuthorityService\NameConstraints registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCritical()
-    {
-    }
-    /**
-     * Contains excluded DNS names. Any DNS name that can be constructed by simply
-     * adding zero or more labels to the left-hand side of the name satisfies the
-     * name constraint. For example, `example.com`, `www.example.com`,
-     * `www.sub.example.com` would satisfy `example.com` while `example1.com` does
-     * not.
-     *
-     * @param string[] $excludedDnsNames
-     */
-    public function setExcludedDnsNames($excludedDnsNames)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getExcludedDnsNames()
-    {
-    }
-    /**
-     * Contains the excluded email addresses. The value can be a particular email
-     * address, a hostname to indicate all email addresses on that host or a
-     * domain with a leading period (e.g. `.example.com`) to indicate all email
-     * addresses in that domain.
-     *
-     * @param string[] $excludedEmailAddresses
-     */
-    public function setExcludedEmailAddresses($excludedEmailAddresses)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getExcludedEmailAddresses()
-    {
-    }
-    /**
-     * Contains the excluded IP ranges. For IPv4 addresses, the ranges are
-     * expressed using CIDR notation as specified in RFC 4632. For IPv6 addresses,
-     * the ranges are expressed in similar encoding as IPv4 addresses.
-     *
-     * @param string[] $excludedIpRanges
-     */
-    public function setExcludedIpRanges($excludedIpRanges)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getExcludedIpRanges()
-    {
-    }
-    /**
-     * Contains the excluded URIs that apply to the host part of the name. The
-     * value can be a hostname or a domain with a leading period (like
-     * `.example.com`)
-     *
-     * @param string[] $excludedUris
-     */
-    public function setExcludedUris($excludedUris)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getExcludedUris()
-    {
-    }
-    /**
-     * Contains permitted DNS names. Any DNS name that can be constructed by
-     * simply adding zero or more labels to the left-hand side of the name
-     * satisfies the name constraint. For example, `example.com`,
-     * `www.example.com`, `www.sub.example.com` would satisfy `example.com` while
-     * `example1.com` does not.
-     *
-     * @param string[] $permittedDnsNames
-     */
-    public function setPermittedDnsNames($permittedDnsNames)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPermittedDnsNames()
-    {
-    }
-    /**
-     * Contains the permitted email addresses. The value can be a particular email
-     * address, a hostname to indicate all email addresses on that host or a
-     * domain with a leading period (e.g. `.example.com`) to indicate all email
-     * addresses in that domain.
-     *
-     * @param string[] $permittedEmailAddresses
-     */
-    public function setPermittedEmailAddresses($permittedEmailAddresses)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPermittedEmailAddresses()
-    {
-    }
-    /**
-     * Contains the permitted IP ranges. For IPv4 addresses, the ranges are
-     * expressed using CIDR notation as specified in RFC 4632. For IPv6 addresses,
-     * the ranges are expressed in similar encoding as IPv4 addresses.
-     *
-     * @param string[] $permittedIpRanges
-     */
-    public function setPermittedIpRanges($permittedIpRanges)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPermittedIpRanges()
-    {
-    }
-    /**
-     * Contains the permitted URIs that apply to the host part of the name. The
-     * value can be a hostname or a domain with a leading period (like
-     * `.example.com`)
-     *
-     * @param string[] $permittedUris
-     */
-    public function setPermittedUris($permittedUris)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPermittedUris()
+    class Google_Service_CertificateAuthorityService_NameConstraints extends \Google\Service\CertificateAuthorityService\NameConstraints
     {
     }
 }

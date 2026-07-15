@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class EventFilter extends \Google\Model
-{
-    /**
-     * An SQL-query Where clause selecting which data should be included, not
-     * including the "WHERE" keyword. E.g., "t.key1 = 'value1' AND t.key2 =
-     * 'value2'".
-     *
-     * @var string
-     */
-    public $sqlWhereClause;
-    /**
-     * An SQL-query Where clause selecting which data should be included, not
-     * including the "WHERE" keyword. E.g., "t.key1 = 'value1' AND t.key2 =
-     * 'value2'".
-     *
-     * @param string $sqlWhereClause
-     */
-    public function setSqlWhereClause($sqlWhereClause)
+namespace Google\Service\Datastream {
+    class EventFilter extends \Google\Model
     {
+        /**
+         * An SQL-query Where clause selecting which data should be included, not
+         * including the "WHERE" keyword. E.g., "t.key1 = 'value1' AND t.key2 =
+         * 'value2'".
+         *
+         * @var string
+         */
+        public $sqlWhereClause;
+        /**
+         * An SQL-query Where clause selecting which data should be included, not
+         * including the "WHERE" keyword. E.g., "t.key1 = 'value1' AND t.key2 =
+         * 'value2'".
+         *
+         * @param string $sqlWhereClause
+         */
+        public function setSqlWhereClause($sqlWhereClause)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSqlWhereClause()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Datastream\EventFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSqlWhereClause()
+    class Google_Service_Datastream_EventFilter extends \Google\Service\Datastream\EventFilter
     {
     }
 }

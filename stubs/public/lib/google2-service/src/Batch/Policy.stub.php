@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Batch;
-
-class Policy extends \Google\Collection
-{
-    protected $collection_key = 'bindings';
-    protected $auditConfigsType = AuditConfig::class;
-    protected $auditConfigsDataType = 'array';
-    public $auditConfigs;
-    protected $bindingsType = Binding::class;
-    protected $bindingsDataType = 'array';
-    public $bindings;
-    /**
-     * @var string
-     */
-    public $etag;
-    /**
-     * @var int
-     */
-    public $version;
-    /**
-     * @param AuditConfig[]
-     */
-    public function setAuditConfigs($auditConfigs)
+namespace Google\Service\Batch {
+    class Policy extends \Google\Collection
     {
+        protected $collection_key = 'bindings';
+        protected $auditConfigsType = AuditConfig::class;
+        protected $auditConfigsDataType = 'array';
+        public $auditConfigs;
+        protected $bindingsType = Binding::class;
+        protected $bindingsDataType = 'array';
+        public $bindings;
+        /**
+         * @var string
+         */
+        public $etag;
+        /**
+         * @var int
+         */
+        public $version;
+        /**
+         * @param AuditConfig[]
+         */
+        public function setAuditConfigs($auditConfigs)
+        {
+        }
+        /**
+         * @return AuditConfig[]
+         */
+        public function getAuditConfigs()
+        {
+        }
+        /**
+         * @param Binding[]
+         */
+        public function setBindings($bindings)
+        {
+        }
+        /**
+         * @return Binding[]
+         */
+        public function getBindings()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AuditConfig[]
+     * Runtime class alias of \Google\Service\Batch\Policy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuditConfigs()
-    {
-    }
-    /**
-     * @param Binding[]
-     */
-    public function setBindings($bindings)
-    {
-    }
-    /**
-     * @return Binding[]
-     */
-    public function getBindings()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getVersion()
+    class Google_Service_Batch_Policy extends \Google\Service\Batch\Policy
     {
     }
 }

@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmEventbusProtoCloudSchedulerConfig extends \Google\Model
-{
-    /**
-     * Required. The cron tab of cloud scheduler trigger.
-     *
-     * @var string
-     */
-    public $cronTab;
-    /**
-     * Optional. When the job was deleted from Pantheon UI, error_message will be
-     * populated when Get/List integrations
-     *
-     * @var string
-     */
-    public $errorMessage;
-    /**
-     * Required. The location where associated cloud scheduler job will be created
-     *
-     * @var string
-     */
-    public $location;
-    /**
-     * Required. Service account used by Cloud Scheduler to trigger the
-     * integration at scheduled time
-     *
-     * @var string
-     */
-    public $serviceAccountEmail;
-    /**
-     * Required. The cron tab of cloud scheduler trigger.
-     *
-     * @param string $cronTab
-     */
-    public function setCronTab($cronTab)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmEventbusProtoCloudSchedulerConfig extends \Google\Model
     {
+        /**
+         * Required. The cron tab of cloud scheduler trigger.
+         *
+         * @var string
+         */
+        public $cronTab;
+        /**
+         * Optional. When the job was deleted from Pantheon UI, error_message will be
+         * populated when Get/List integrations
+         *
+         * @var string
+         */
+        public $errorMessage;
+        /**
+         * Required. The location where associated cloud scheduler job will be created
+         *
+         * @var string
+         */
+        public $location;
+        /**
+         * Required. Service account used by Cloud Scheduler to trigger the
+         * integration at scheduled time
+         *
+         * @var string
+         */
+        public $serviceAccountEmail;
+        /**
+         * Required. The cron tab of cloud scheduler trigger.
+         *
+         * @param string $cronTab
+         */
+        public function setCronTab($cronTab)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCronTab()
+        {
+        }
+        /**
+         * Optional. When the job was deleted from Pantheon UI, error_message will be
+         * populated when Get/List integrations
+         *
+         * @param string $errorMessage
+         */
+        public function setErrorMessage($errorMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getErrorMessage()
+        {
+        }
+        /**
+         * Required. The location where associated cloud scheduler job will be created
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * Required. Service account used by Cloud Scheduler to trigger the
+         * integration at scheduled time
+         *
+         * @param string $serviceAccountEmail
+         */
+        public function setServiceAccountEmail($serviceAccountEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceAccountEmail()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmEventbusProtoCloudSchedulerConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCronTab()
-    {
-    }
-    /**
-     * Optional. When the job was deleted from Pantheon UI, error_message will be
-     * populated when Get/List integrations
-     *
-     * @param string $errorMessage
-     */
-    public function setErrorMessage($errorMessage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getErrorMessage()
-    {
-    }
-    /**
-     * Required. The location where associated cloud scheduler job will be created
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocation()
-    {
-    }
-    /**
-     * Required. Service account used by Cloud Scheduler to trigger the
-     * integration at scheduled time
-     *
-     * @param string $serviceAccountEmail
-     */
-    public function setServiceAccountEmail($serviceAccountEmail)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceAccountEmail()
+    class Google_Service_Integrations_EnterpriseCrmEventbusProtoCloudSchedulerConfig extends \Google\Service\Integrations\EnterpriseCrmEventbusProtoCloudSchedulerConfig
     {
     }
 }

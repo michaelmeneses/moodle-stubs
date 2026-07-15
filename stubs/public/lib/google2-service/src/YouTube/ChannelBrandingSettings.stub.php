@@ -21,77 +21,86 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class ChannelBrandingSettings extends \Google\Collection
-{
-    protected $collection_key = 'hints';
-    protected $channelType = ChannelSettings::class;
-    protected $channelDataType = '';
-    protected $hintsType = PropertyValue::class;
-    protected $hintsDataType = 'array';
-    protected $imageType = ImageSettings::class;
-    protected $imageDataType = '';
-    protected $watchType = WatchSettings::class;
-    protected $watchDataType = '';
-    /**
-     * Branding properties for the channel view.
-     *
-     * @param ChannelSettings $channel
-     */
-    public function setChannel(ChannelSettings $channel)
+namespace Google\Service\YouTube {
+    class ChannelBrandingSettings extends \Google\Collection
     {
+        protected $collection_key = 'hints';
+        protected $channelType = ChannelSettings::class;
+        protected $channelDataType = '';
+        protected $hintsType = PropertyValue::class;
+        protected $hintsDataType = 'array';
+        protected $imageType = ImageSettings::class;
+        protected $imageDataType = '';
+        protected $watchType = WatchSettings::class;
+        protected $watchDataType = '';
+        /**
+         * Branding properties for the channel view.
+         *
+         * @param ChannelSettings $channel
+         */
+        public function setChannel(ChannelSettings $channel)
+        {
+        }
+        /**
+         * @return ChannelSettings
+         */
+        public function getChannel()
+        {
+        }
+        /**
+         * Additional experimental branding properties.
+         *
+         * @deprecated
+         * @param PropertyValue[] $hints
+         */
+        public function setHints($hints)
+        {
+        }
+        /**
+         * @deprecated
+         * @return PropertyValue[]
+         */
+        public function getHints()
+        {
+        }
+        /**
+         * Branding properties for branding images.
+         *
+         * @param ImageSettings $image
+         */
+        public function setImage(ImageSettings $image)
+        {
+        }
+        /**
+         * @return ImageSettings
+         */
+        public function getImage()
+        {
+        }
+        /**
+         * Branding properties for the watch page.
+         *
+         * @deprecated
+         * @param WatchSettings $watch
+         */
+        public function setWatch(WatchSettings $watch)
+        {
+        }
+        /**
+         * @deprecated
+         * @return WatchSettings
+         */
+        public function getWatch()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ChannelSettings
+     * Runtime class alias of \Google\Service\YouTube\ChannelBrandingSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChannel()
-    {
-    }
-    /**
-     * Additional experimental branding properties.
-     *
-     * @deprecated
-     * @param PropertyValue[] $hints
-     */
-    public function setHints($hints)
-    {
-    }
-    /**
-     * @deprecated
-     * @return PropertyValue[]
-     */
-    public function getHints()
-    {
-    }
-    /**
-     * Branding properties for branding images.
-     *
-     * @param ImageSettings $image
-     */
-    public function setImage(ImageSettings $image)
-    {
-    }
-    /**
-     * @return ImageSettings
-     */
-    public function getImage()
-    {
-    }
-    /**
-     * Branding properties for the watch page.
-     *
-     * @deprecated
-     * @param WatchSettings $watch
-     */
-    public function setWatch(WatchSettings $watch)
-    {
-    }
-    /**
-     * @deprecated
-     * @return WatchSettings
-     */
-    public function getWatch()
+    class Google_Service_YouTube_ChannelBrandingSettings extends \Google\Service\YouTube\ChannelBrandingSettings
     {
     }
 }

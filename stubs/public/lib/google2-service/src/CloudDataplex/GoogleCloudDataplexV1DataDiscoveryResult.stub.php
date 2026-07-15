@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1DataDiscoveryResult extends \Google\Model
-{
-    protected $bigqueryPublishingType = GoogleCloudDataplexV1DataDiscoveryResultBigQueryPublishing::class;
-    protected $bigqueryPublishingDataType = '';
-    protected $scanStatisticsType = GoogleCloudDataplexV1DataDiscoveryResultScanStatistics::class;
-    protected $scanStatisticsDataType = '';
-    /**
-     * Output only. Configuration for metadata publishing.
-     *
-     * @param GoogleCloudDataplexV1DataDiscoveryResultBigQueryPublishing $bigqueryPublishing
-     */
-    public function setBigqueryPublishing(GoogleCloudDataplexV1DataDiscoveryResultBigQueryPublishing $bigqueryPublishing)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1DataDiscoveryResult extends \Google\Model
     {
+        protected $bigqueryPublishingType = GoogleCloudDataplexV1DataDiscoveryResultBigQueryPublishing::class;
+        protected $bigqueryPublishingDataType = '';
+        protected $scanStatisticsType = GoogleCloudDataplexV1DataDiscoveryResultScanStatistics::class;
+        protected $scanStatisticsDataType = '';
+        /**
+         * Output only. Configuration for metadata publishing.
+         *
+         * @param GoogleCloudDataplexV1DataDiscoveryResultBigQueryPublishing $bigqueryPublishing
+         */
+        public function setBigqueryPublishing(GoogleCloudDataplexV1DataDiscoveryResultBigQueryPublishing $bigqueryPublishing)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1DataDiscoveryResultBigQueryPublishing
+         */
+        public function getBigqueryPublishing()
+        {
+        }
+        /**
+         * Output only. Describes result statistics of a data scan discovery job.
+         *
+         * @param GoogleCloudDataplexV1DataDiscoveryResultScanStatistics $scanStatistics
+         */
+        public function setScanStatistics(GoogleCloudDataplexV1DataDiscoveryResultScanStatistics $scanStatistics)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1DataDiscoveryResultScanStatistics
+         */
+        public function getScanStatistics()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDataplexV1DataDiscoveryResultBigQueryPublishing
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataDiscoveryResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBigqueryPublishing()
-    {
-    }
-    /**
-     * Output only. Describes result statistics of a data scan discovery job.
-     *
-     * @param GoogleCloudDataplexV1DataDiscoveryResultScanStatistics $scanStatistics
-     */
-    public function setScanStatistics(GoogleCloudDataplexV1DataDiscoveryResultScanStatistics $scanStatistics)
-    {
-    }
-    /**
-     * @return GoogleCloudDataplexV1DataDiscoveryResultScanStatistics
-     */
-    public function getScanStatistics()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1DataDiscoveryResult extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataDiscoveryResult
     {
     }
 }

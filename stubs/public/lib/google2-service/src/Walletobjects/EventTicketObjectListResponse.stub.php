@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class EventTicketObjectListResponse extends \Google\Collection
-{
-    protected $collection_key = 'resources';
-    protected $paginationType = Pagination::class;
-    protected $paginationDataType = '';
-    protected $resourcesType = EventTicketObject::class;
-    protected $resourcesDataType = 'array';
-    /**
-     * Pagination of the response.
-     *
-     * @param Pagination $pagination
-     */
-    public function setPagination(Pagination $pagination)
+namespace Google\Service\Walletobjects {
+    class EventTicketObjectListResponse extends \Google\Collection
     {
+        protected $collection_key = 'resources';
+        protected $paginationType = Pagination::class;
+        protected $paginationDataType = '';
+        protected $resourcesType = EventTicketObject::class;
+        protected $resourcesDataType = 'array';
+        /**
+         * Pagination of the response.
+         *
+         * @param Pagination $pagination
+         */
+        public function setPagination(Pagination $pagination)
+        {
+        }
+        /**
+         * @return Pagination
+         */
+        public function getPagination()
+        {
+        }
+        /**
+         * Resources corresponding to the list request.
+         *
+         * @param EventTicketObject[] $resources
+         */
+        public function setResources($resources)
+        {
+        }
+        /**
+         * @return EventTicketObject[]
+         */
+        public function getResources()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Pagination
+     * Runtime class alias of \Google\Service\Walletobjects\EventTicketObjectListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPagination()
-    {
-    }
-    /**
-     * Resources corresponding to the list request.
-     *
-     * @param EventTicketObject[] $resources
-     */
-    public function setResources($resources)
-    {
-    }
-    /**
-     * @return EventTicketObject[]
-     */
-    public function getResources()
+    class Google_Service_Walletobjects_EventTicketObjectListResponse extends \Google\Service\Walletobjects\EventTicketObjectListResponse
     {
     }
 }

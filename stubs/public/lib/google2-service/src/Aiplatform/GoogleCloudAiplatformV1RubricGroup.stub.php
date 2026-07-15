@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1RubricGroup extends \Google\Collection
-{
-    protected $collection_key = 'rubrics';
-    /**
-     * Human-readable name for the group. This should be unique within a given
-     * context if used for display or selection. Example: "Instruction Following
-     * V1", "Content Quality - Summarization Task".
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Unique identifier for the group.
-     *
-     * @var string
-     */
-    public $groupId;
-    protected $rubricsType = GoogleCloudAiplatformV1Rubric::class;
-    protected $rubricsDataType = 'array';
-    /**
-     * Human-readable name for the group. This should be unique within a given
-     * context if used for display or selection. Example: "Instruction Following
-     * V1", "Content Quality - Summarization Task".
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1RubricGroup extends \Google\Collection
     {
+        protected $collection_key = 'rubrics';
+        /**
+         * Human-readable name for the group. This should be unique within a given
+         * context if used for display or selection. Example: "Instruction Following
+         * V1", "Content Quality - Summarization Task".
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Unique identifier for the group.
+         *
+         * @var string
+         */
+        public $groupId;
+        protected $rubricsType = GoogleCloudAiplatformV1Rubric::class;
+        protected $rubricsDataType = 'array';
+        /**
+         * Human-readable name for the group. This should be unique within a given
+         * context if used for display or selection. Example: "Instruction Following
+         * V1", "Content Quality - Summarization Task".
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Unique identifier for the group.
+         *
+         * @param string $groupId
+         */
+        public function setGroupId($groupId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGroupId()
+        {
+        }
+        /**
+         * Rubrics that are part of this group.
+         *
+         * @param GoogleCloudAiplatformV1Rubric[] $rubrics
+         */
+        public function setRubrics($rubrics)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1Rubric[]
+         */
+        public function getRubrics()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1RubricGroup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Unique identifier for the group.
-     *
-     * @param string $groupId
-     */
-    public function setGroupId($groupId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGroupId()
-    {
-    }
-    /**
-     * Rubrics that are part of this group.
-     *
-     * @param GoogleCloudAiplatformV1Rubric[] $rubrics
-     */
-    public function setRubrics($rubrics)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1Rubric[]
-     */
-    public function getRubrics()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1RubricGroup extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1RubricGroup
     {
     }
 }

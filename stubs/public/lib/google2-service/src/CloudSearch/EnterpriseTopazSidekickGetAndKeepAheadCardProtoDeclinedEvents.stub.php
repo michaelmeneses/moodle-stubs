@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class EnterpriseTopazSidekickGetAndKeepAheadCardProtoDeclinedEvents extends \Google\Collection
-{
-    protected $collection_key = 'events';
-    protected $eventsType = EnterpriseTopazSidekickAgendaEntry::class;
-    protected $eventsDataType = 'array';
-    /**
-     * @param EnterpriseTopazSidekickAgendaEntry[] $events
-     */
-    public function setEvents($events)
+namespace Google\Service\CloudSearch {
+    class EnterpriseTopazSidekickGetAndKeepAheadCardProtoDeclinedEvents extends \Google\Collection
     {
+        protected $collection_key = 'events';
+        protected $eventsType = EnterpriseTopazSidekickAgendaEntry::class;
+        protected $eventsDataType = 'array';
+        /**
+         * @param EnterpriseTopazSidekickAgendaEntry[] $events
+         */
+        public function setEvents($events)
+        {
+        }
+        /**
+         * @return EnterpriseTopazSidekickAgendaEntry[]
+         */
+        public function getEvents()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EnterpriseTopazSidekickAgendaEntry[]
+     * Runtime class alias of \Google\Service\CloudSearch\EnterpriseTopazSidekickGetAndKeepAheadCardProtoDeclinedEvents registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEvents()
+    class Google_Service_CloudSearch_EnterpriseTopazSidekickGetAndKeepAheadCardProtoDeclinedEvents extends \Google\Service\CloudSearch\EnterpriseTopazSidekickGetAndKeepAheadCardProtoDeclinedEvents
     {
     }
 }

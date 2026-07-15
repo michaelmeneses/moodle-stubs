@@ -21,594 +21,603 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1EvaluateInstancesRequest extends \Google\Collection
-{
-    protected $collection_key = 'metrics';
-    protected $autoraterConfigType = GoogleCloudAiplatformV1AutoraterConfig::class;
-    protected $autoraterConfigDataType = '';
-    protected $bleuInputType = GoogleCloudAiplatformV1BleuInput::class;
-    protected $bleuInputDataType = '';
-    protected $coherenceInputType = GoogleCloudAiplatformV1CoherenceInput::class;
-    protected $coherenceInputDataType = '';
-    protected $cometInputType = GoogleCloudAiplatformV1CometInput::class;
-    protected $cometInputDataType = '';
-    protected $exactMatchInputType = GoogleCloudAiplatformV1ExactMatchInput::class;
-    protected $exactMatchInputDataType = '';
-    protected $fluencyInputType = GoogleCloudAiplatformV1FluencyInput::class;
-    protected $fluencyInputDataType = '';
-    protected $fulfillmentInputType = GoogleCloudAiplatformV1FulfillmentInput::class;
-    protected $fulfillmentInputDataType = '';
-    protected $groundednessInputType = GoogleCloudAiplatformV1GroundednessInput::class;
-    protected $groundednessInputDataType = '';
-    protected $instanceType = GoogleCloudAiplatformV1EvaluationInstance::class;
-    protected $instanceDataType = '';
-    /**
-     * Required. The resource name of the Location to evaluate the instances.
-     * Format: `projects/{project}/locations/{location}`
-     *
-     * @var string
-     */
-    public $location;
-    protected $metricsType = GoogleCloudAiplatformV1Metric::class;
-    protected $metricsDataType = 'array';
-    protected $metricxInputType = GoogleCloudAiplatformV1MetricxInput::class;
-    protected $metricxInputDataType = '';
-    protected $pairwiseMetricInputType = GoogleCloudAiplatformV1PairwiseMetricInput::class;
-    protected $pairwiseMetricInputDataType = '';
-    protected $pairwiseQuestionAnsweringQualityInputType = GoogleCloudAiplatformV1PairwiseQuestionAnsweringQualityInput::class;
-    protected $pairwiseQuestionAnsweringQualityInputDataType = '';
-    protected $pairwiseSummarizationQualityInputType = GoogleCloudAiplatformV1PairwiseSummarizationQualityInput::class;
-    protected $pairwiseSummarizationQualityInputDataType = '';
-    protected $pointwiseMetricInputType = GoogleCloudAiplatformV1PointwiseMetricInput::class;
-    protected $pointwiseMetricInputDataType = '';
-    protected $questionAnsweringCorrectnessInputType = GoogleCloudAiplatformV1QuestionAnsweringCorrectnessInput::class;
-    protected $questionAnsweringCorrectnessInputDataType = '';
-    protected $questionAnsweringHelpfulnessInputType = GoogleCloudAiplatformV1QuestionAnsweringHelpfulnessInput::class;
-    protected $questionAnsweringHelpfulnessInputDataType = '';
-    protected $questionAnsweringQualityInputType = GoogleCloudAiplatformV1QuestionAnsweringQualityInput::class;
-    protected $questionAnsweringQualityInputDataType = '';
-    protected $questionAnsweringRelevanceInputType = GoogleCloudAiplatformV1QuestionAnsweringRelevanceInput::class;
-    protected $questionAnsweringRelevanceInputDataType = '';
-    protected $rougeInputType = GoogleCloudAiplatformV1RougeInput::class;
-    protected $rougeInputDataType = '';
-    protected $rubricBasedInstructionFollowingInputType = GoogleCloudAiplatformV1RubricBasedInstructionFollowingInput::class;
-    protected $rubricBasedInstructionFollowingInputDataType = '';
-    protected $safetyInputType = GoogleCloudAiplatformV1SafetyInput::class;
-    protected $safetyInputDataType = '';
-    protected $summarizationHelpfulnessInputType = GoogleCloudAiplatformV1SummarizationHelpfulnessInput::class;
-    protected $summarizationHelpfulnessInputDataType = '';
-    protected $summarizationQualityInputType = GoogleCloudAiplatformV1SummarizationQualityInput::class;
-    protected $summarizationQualityInputDataType = '';
-    protected $summarizationVerbosityInputType = GoogleCloudAiplatformV1SummarizationVerbosityInput::class;
-    protected $summarizationVerbosityInputDataType = '';
-    protected $toolCallValidInputType = GoogleCloudAiplatformV1ToolCallValidInput::class;
-    protected $toolCallValidInputDataType = '';
-    protected $toolNameMatchInputType = GoogleCloudAiplatformV1ToolNameMatchInput::class;
-    protected $toolNameMatchInputDataType = '';
-    protected $toolParameterKeyMatchInputType = GoogleCloudAiplatformV1ToolParameterKeyMatchInput::class;
-    protected $toolParameterKeyMatchInputDataType = '';
-    protected $toolParameterKvMatchInputType = GoogleCloudAiplatformV1ToolParameterKVMatchInput::class;
-    protected $toolParameterKvMatchInputDataType = '';
-    protected $trajectoryAnyOrderMatchInputType = GoogleCloudAiplatformV1TrajectoryAnyOrderMatchInput::class;
-    protected $trajectoryAnyOrderMatchInputDataType = '';
-    protected $trajectoryExactMatchInputType = GoogleCloudAiplatformV1TrajectoryExactMatchInput::class;
-    protected $trajectoryExactMatchInputDataType = '';
-    protected $trajectoryInOrderMatchInputType = GoogleCloudAiplatformV1TrajectoryInOrderMatchInput::class;
-    protected $trajectoryInOrderMatchInputDataType = '';
-    protected $trajectoryPrecisionInputType = GoogleCloudAiplatformV1TrajectoryPrecisionInput::class;
-    protected $trajectoryPrecisionInputDataType = '';
-    protected $trajectoryRecallInputType = GoogleCloudAiplatformV1TrajectoryRecallInput::class;
-    protected $trajectoryRecallInputDataType = '';
-    protected $trajectorySingleToolUseInputType = GoogleCloudAiplatformV1TrajectorySingleToolUseInput::class;
-    protected $trajectorySingleToolUseInputDataType = '';
-    /**
-     * Optional. Autorater config used for evaluation.
-     *
-     * @param GoogleCloudAiplatformV1AutoraterConfig $autoraterConfig
-     */
-    public function setAutoraterConfig(GoogleCloudAiplatformV1AutoraterConfig $autoraterConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1AutoraterConfig
-     */
-    public function getAutoraterConfig()
-    {
-    }
-    /**
-     * Instances and metric spec for bleu metric.
-     *
-     * @param GoogleCloudAiplatformV1BleuInput $bleuInput
-     */
-    public function setBleuInput(GoogleCloudAiplatformV1BleuInput $bleuInput)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1BleuInput
-     */
-    public function getBleuInput()
-    {
-    }
-    /**
-     * Input for coherence metric.
-     *
-     * @param GoogleCloudAiplatformV1CoherenceInput $coherenceInput
-     */
-    public function setCoherenceInput(GoogleCloudAiplatformV1CoherenceInput $coherenceInput)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1CoherenceInput
-     */
-    public function getCoherenceInput()
-    {
-    }
-    /**
-     * Translation metrics. Input for Comet metric.
-     *
-     * @param GoogleCloudAiplatformV1CometInput $cometInput
-     */
-    public function setCometInput(GoogleCloudAiplatformV1CometInput $cometInput)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1CometInput
-     */
-    public function getCometInput()
-    {
-    }
-    /**
-     * Auto metric instances. Instances and metric spec for exact match metric.
-     *
-     * @param GoogleCloudAiplatformV1ExactMatchInput $exactMatchInput
-     */
-    public function setExactMatchInput(GoogleCloudAiplatformV1ExactMatchInput $exactMatchInput)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1ExactMatchInput
-     */
-    public function getExactMatchInput()
-    {
-    }
-    /**
-     * LLM-based metric instance. General text generation metrics, applicable to
-     * other categories. Input for fluency metric.
-     *
-     * @param GoogleCloudAiplatformV1FluencyInput $fluencyInput
-     */
-    public function setFluencyInput(GoogleCloudAiplatformV1FluencyInput $fluencyInput)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1FluencyInput
-     */
-    public function getFluencyInput()
-    {
-    }
-    /**
-     * Input for fulfillment metric.
-     *
-     * @param GoogleCloudAiplatformV1FulfillmentInput $fulfillmentInput
-     */
-    public function setFulfillmentInput(GoogleCloudAiplatformV1FulfillmentInput $fulfillmentInput)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1FulfillmentInput
-     */
-    public function getFulfillmentInput()
-    {
-    }
-    /**
-     * Input for groundedness metric.
-     *
-     * @param GoogleCloudAiplatformV1GroundednessInput $groundednessInput
-     */
-    public function setGroundednessInput(GoogleCloudAiplatformV1GroundednessInput $groundednessInput)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1GroundednessInput
-     */
-    public function getGroundednessInput()
-    {
-    }
-    /**
-     * The instance to be evaluated.
-     *
-     * @param GoogleCloudAiplatformV1EvaluationInstance $instance
-     */
-    public function setInstance(GoogleCloudAiplatformV1EvaluationInstance $instance)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1EvaluationInstance
-     */
-    public function getInstance()
-    {
-    }
-    /**
-     * Required. The resource name of the Location to evaluate the instances.
-     * Format: `projects/{project}/locations/{location}`
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocation()
-    {
-    }
-    /**
-     * The metrics used for evaluation. Currently, we only support evaluating a
-     * single metric. If multiple metrics are provided, only the first one will be
-     * evaluated.
-     *
-     * @param GoogleCloudAiplatformV1Metric[] $metrics
-     */
-    public function setMetrics($metrics)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1Metric[]
-     */
-    public function getMetrics()
-    {
-    }
-    /**
-     * Input for Metricx metric.
-     *
-     * @param GoogleCloudAiplatformV1MetricxInput $metricxInput
-     */
-    public function setMetricxInput(GoogleCloudAiplatformV1MetricxInput $metricxInput)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1MetricxInput
-     */
-    public function getMetricxInput()
-    {
-    }
-    /**
-     * Input for pairwise metric.
-     *
-     * @param GoogleCloudAiplatformV1PairwiseMetricInput $pairwiseMetricInput
-     */
-    public function setPairwiseMetricInput(GoogleCloudAiplatformV1PairwiseMetricInput $pairwiseMetricInput)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1PairwiseMetricInput
-     */
-    public function getPairwiseMetricInput()
-    {
-    }
-    /**
-     * Input for pairwise question answering quality metric.
-     *
-     * @param GoogleCloudAiplatformV1PairwiseQuestionAnsweringQualityInput $pairwiseQuestionAnsweringQualityInput
-     */
-    public function setPairwiseQuestionAnsweringQualityInput(GoogleCloudAiplatformV1PairwiseQuestionAnsweringQualityInput $pairwiseQuestionAnsweringQualityInput)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1PairwiseQuestionAnsweringQualityInput
-     */
-    public function getPairwiseQuestionAnsweringQualityInput()
-    {
-    }
-    /**
-     * Input for pairwise summarization quality metric.
-     *
-     * @param GoogleCloudAiplatformV1PairwiseSummarizationQualityInput $pairwiseSummarizationQualityInput
-     */
-    public function setPairwiseSummarizationQualityInput(GoogleCloudAiplatformV1PairwiseSummarizationQualityInput $pairwiseSummarizationQualityInput)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1PairwiseSummarizationQualityInput
-     */
-    public function getPairwiseSummarizationQualityInput()
-    {
-    }
-    /**
-     * Input for pointwise metric.
-     *
-     * @param GoogleCloudAiplatformV1PointwiseMetricInput $pointwiseMetricInput
-     */
-    public function setPointwiseMetricInput(GoogleCloudAiplatformV1PointwiseMetricInput $pointwiseMetricInput)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1PointwiseMetricInput
-     */
-    public function getPointwiseMetricInput()
-    {
-    }
-    /**
-     * Input for question answering correctness metric.
-     *
-     * @param GoogleCloudAiplatformV1QuestionAnsweringCorrectnessInput $questionAnsweringCorrectnessInput
-     */
-    public function setQuestionAnsweringCorrectnessInput(GoogleCloudAiplatformV1QuestionAnsweringCorrectnessInput $questionAnsweringCorrectnessInput)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1QuestionAnsweringCorrectnessInput
-     */
-    public function getQuestionAnsweringCorrectnessInput()
-    {
-    }
-    /**
-     * Input for question answering helpfulness metric.
-     *
-     * @param GoogleCloudAiplatformV1QuestionAnsweringHelpfulnessInput $questionAnsweringHelpfulnessInput
-     */
-    public function setQuestionAnsweringHelpfulnessInput(GoogleCloudAiplatformV1QuestionAnsweringHelpfulnessInput $questionAnsweringHelpfulnessInput)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1QuestionAnsweringHelpfulnessInput
-     */
-    public function getQuestionAnsweringHelpfulnessInput()
-    {
-    }
-    /**
-     * Input for question answering quality metric.
-     *
-     * @param GoogleCloudAiplatformV1QuestionAnsweringQualityInput $questionAnsweringQualityInput
-     */
-    public function setQuestionAnsweringQualityInput(GoogleCloudAiplatformV1QuestionAnsweringQualityInput $questionAnsweringQualityInput)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1QuestionAnsweringQualityInput
-     */
-    public function getQuestionAnsweringQualityInput()
-    {
-    }
-    /**
-     * Input for question answering relevance metric.
-     *
-     * @param GoogleCloudAiplatformV1QuestionAnsweringRelevanceInput $questionAnsweringRelevanceInput
-     */
-    public function setQuestionAnsweringRelevanceInput(GoogleCloudAiplatformV1QuestionAnsweringRelevanceInput $questionAnsweringRelevanceInput)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1QuestionAnsweringRelevanceInput
-     */
-    public function getQuestionAnsweringRelevanceInput()
-    {
-    }
-    /**
-     * Instances and metric spec for rouge metric.
-     *
-     * @param GoogleCloudAiplatformV1RougeInput $rougeInput
-     */
-    public function setRougeInput(GoogleCloudAiplatformV1RougeInput $rougeInput)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1RougeInput
-     */
-    public function getRougeInput()
-    {
-    }
-    /**
-     * Rubric Based Instruction Following metric.
-     *
-     * @param GoogleCloudAiplatformV1RubricBasedInstructionFollowingInput $rubricBasedInstructionFollowingInput
-     */
-    public function setRubricBasedInstructionFollowingInput(GoogleCloudAiplatformV1RubricBasedInstructionFollowingInput $rubricBasedInstructionFollowingInput)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1RubricBasedInstructionFollowingInput
-     */
-    public function getRubricBasedInstructionFollowingInput()
-    {
-    }
-    /**
-     * Input for safety metric.
-     *
-     * @param GoogleCloudAiplatformV1SafetyInput $safetyInput
-     */
-    public function setSafetyInput(GoogleCloudAiplatformV1SafetyInput $safetyInput)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1SafetyInput
-     */
-    public function getSafetyInput()
-    {
-    }
-    /**
-     * Input for summarization helpfulness metric.
-     *
-     * @param GoogleCloudAiplatformV1SummarizationHelpfulnessInput $summarizationHelpfulnessInput
-     */
-    public function setSummarizationHelpfulnessInput(GoogleCloudAiplatformV1SummarizationHelpfulnessInput $summarizationHelpfulnessInput)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1SummarizationHelpfulnessInput
-     */
-    public function getSummarizationHelpfulnessInput()
-    {
-    }
-    /**
-     * Input for summarization quality metric.
-     *
-     * @param GoogleCloudAiplatformV1SummarizationQualityInput $summarizationQualityInput
-     */
-    public function setSummarizationQualityInput(GoogleCloudAiplatformV1SummarizationQualityInput $summarizationQualityInput)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1SummarizationQualityInput
-     */
-    public function getSummarizationQualityInput()
-    {
-    }
-    /**
-     * Input for summarization verbosity metric.
-     *
-     * @param GoogleCloudAiplatformV1SummarizationVerbosityInput $summarizationVerbosityInput
-     */
-    public function setSummarizationVerbosityInput(GoogleCloudAiplatformV1SummarizationVerbosityInput $summarizationVerbosityInput)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1SummarizationVerbosityInput
-     */
-    public function getSummarizationVerbosityInput()
-    {
-    }
-    /**
-     * Tool call metric instances. Input for tool call valid metric.
-     *
-     * @param GoogleCloudAiplatformV1ToolCallValidInput $toolCallValidInput
-     */
-    public function setToolCallValidInput(GoogleCloudAiplatformV1ToolCallValidInput $toolCallValidInput)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1ToolCallValidInput
-     */
-    public function getToolCallValidInput()
-    {
-    }
-    /**
-     * Input for tool name match metric.
-     *
-     * @param GoogleCloudAiplatformV1ToolNameMatchInput $toolNameMatchInput
-     */
-    public function setToolNameMatchInput(GoogleCloudAiplatformV1ToolNameMatchInput $toolNameMatchInput)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1ToolNameMatchInput
-     */
-    public function getToolNameMatchInput()
-    {
-    }
-    /**
-     * Input for tool parameter key match metric.
-     *
-     * @param GoogleCloudAiplatformV1ToolParameterKeyMatchInput $toolParameterKeyMatchInput
-     */
-    public function setToolParameterKeyMatchInput(GoogleCloudAiplatformV1ToolParameterKeyMatchInput $toolParameterKeyMatchInput)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1ToolParameterKeyMatchInput
-     */
-    public function getToolParameterKeyMatchInput()
-    {
-    }
-    /**
-     * Input for tool parameter key value match metric.
-     *
-     * @param GoogleCloudAiplatformV1ToolParameterKVMatchInput $toolParameterKvMatchInput
-     */
-    public function setToolParameterKvMatchInput(GoogleCloudAiplatformV1ToolParameterKVMatchInput $toolParameterKvMatchInput)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1ToolParameterKVMatchInput
-     */
-    public function getToolParameterKvMatchInput()
-    {
-    }
-    /**
-     * Input for trajectory match any order metric.
-     *
-     * @param GoogleCloudAiplatformV1TrajectoryAnyOrderMatchInput $trajectoryAnyOrderMatchInput
-     */
-    public function setTrajectoryAnyOrderMatchInput(GoogleCloudAiplatformV1TrajectoryAnyOrderMatchInput $trajectoryAnyOrderMatchInput)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1TrajectoryAnyOrderMatchInput
-     */
-    public function getTrajectoryAnyOrderMatchInput()
-    {
-    }
-    /**
-     * Input for trajectory exact match metric.
-     *
-     * @param GoogleCloudAiplatformV1TrajectoryExactMatchInput $trajectoryExactMatchInput
-     */
-    public function setTrajectoryExactMatchInput(GoogleCloudAiplatformV1TrajectoryExactMatchInput $trajectoryExactMatchInput)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1TrajectoryExactMatchInput
-     */
-    public function getTrajectoryExactMatchInput()
-    {
-    }
-    /**
-     * Input for trajectory in order match metric.
-     *
-     * @param GoogleCloudAiplatformV1TrajectoryInOrderMatchInput $trajectoryInOrderMatchInput
-     */
-    public function setTrajectoryInOrderMatchInput(GoogleCloudAiplatformV1TrajectoryInOrderMatchInput $trajectoryInOrderMatchInput)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1TrajectoryInOrderMatchInput
-     */
-    public function getTrajectoryInOrderMatchInput()
-    {
-    }
-    /**
-     * Input for trajectory precision metric.
-     *
-     * @param GoogleCloudAiplatformV1TrajectoryPrecisionInput $trajectoryPrecisionInput
-     */
-    public function setTrajectoryPrecisionInput(GoogleCloudAiplatformV1TrajectoryPrecisionInput $trajectoryPrecisionInput)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1TrajectoryPrecisionInput
-     */
-    public function getTrajectoryPrecisionInput()
-    {
-    }
-    /**
-     * Input for trajectory recall metric.
-     *
-     * @param GoogleCloudAiplatformV1TrajectoryRecallInput $trajectoryRecallInput
-     */
-    public function setTrajectoryRecallInput(GoogleCloudAiplatformV1TrajectoryRecallInput $trajectoryRecallInput)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1TrajectoryRecallInput
-     */
-    public function getTrajectoryRecallInput()
-    {
-    }
-    /**
-     * Input for trajectory single tool use metric.
-     *
-     * @param GoogleCloudAiplatformV1TrajectorySingleToolUseInput $trajectorySingleToolUseInput
-     */
-    public function setTrajectorySingleToolUseInput(GoogleCloudAiplatformV1TrajectorySingleToolUseInput $trajectorySingleToolUseInput)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1TrajectorySingleToolUseInput
-     */
-    public function getTrajectorySingleToolUseInput()
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1EvaluateInstancesRequest extends \Google\Collection
+    {
+        protected $collection_key = 'metrics';
+        protected $autoraterConfigType = GoogleCloudAiplatformV1AutoraterConfig::class;
+        protected $autoraterConfigDataType = '';
+        protected $bleuInputType = GoogleCloudAiplatformV1BleuInput::class;
+        protected $bleuInputDataType = '';
+        protected $coherenceInputType = GoogleCloudAiplatformV1CoherenceInput::class;
+        protected $coherenceInputDataType = '';
+        protected $cometInputType = GoogleCloudAiplatformV1CometInput::class;
+        protected $cometInputDataType = '';
+        protected $exactMatchInputType = GoogleCloudAiplatformV1ExactMatchInput::class;
+        protected $exactMatchInputDataType = '';
+        protected $fluencyInputType = GoogleCloudAiplatformV1FluencyInput::class;
+        protected $fluencyInputDataType = '';
+        protected $fulfillmentInputType = GoogleCloudAiplatformV1FulfillmentInput::class;
+        protected $fulfillmentInputDataType = '';
+        protected $groundednessInputType = GoogleCloudAiplatformV1GroundednessInput::class;
+        protected $groundednessInputDataType = '';
+        protected $instanceType = GoogleCloudAiplatformV1EvaluationInstance::class;
+        protected $instanceDataType = '';
+        /**
+         * Required. The resource name of the Location to evaluate the instances.
+         * Format: `projects/{project}/locations/{location}`
+         *
+         * @var string
+         */
+        public $location;
+        protected $metricsType = GoogleCloudAiplatformV1Metric::class;
+        protected $metricsDataType = 'array';
+        protected $metricxInputType = GoogleCloudAiplatformV1MetricxInput::class;
+        protected $metricxInputDataType = '';
+        protected $pairwiseMetricInputType = GoogleCloudAiplatformV1PairwiseMetricInput::class;
+        protected $pairwiseMetricInputDataType = '';
+        protected $pairwiseQuestionAnsweringQualityInputType = GoogleCloudAiplatformV1PairwiseQuestionAnsweringQualityInput::class;
+        protected $pairwiseQuestionAnsweringQualityInputDataType = '';
+        protected $pairwiseSummarizationQualityInputType = GoogleCloudAiplatformV1PairwiseSummarizationQualityInput::class;
+        protected $pairwiseSummarizationQualityInputDataType = '';
+        protected $pointwiseMetricInputType = GoogleCloudAiplatformV1PointwiseMetricInput::class;
+        protected $pointwiseMetricInputDataType = '';
+        protected $questionAnsweringCorrectnessInputType = GoogleCloudAiplatformV1QuestionAnsweringCorrectnessInput::class;
+        protected $questionAnsweringCorrectnessInputDataType = '';
+        protected $questionAnsweringHelpfulnessInputType = GoogleCloudAiplatformV1QuestionAnsweringHelpfulnessInput::class;
+        protected $questionAnsweringHelpfulnessInputDataType = '';
+        protected $questionAnsweringQualityInputType = GoogleCloudAiplatformV1QuestionAnsweringQualityInput::class;
+        protected $questionAnsweringQualityInputDataType = '';
+        protected $questionAnsweringRelevanceInputType = GoogleCloudAiplatformV1QuestionAnsweringRelevanceInput::class;
+        protected $questionAnsweringRelevanceInputDataType = '';
+        protected $rougeInputType = GoogleCloudAiplatformV1RougeInput::class;
+        protected $rougeInputDataType = '';
+        protected $rubricBasedInstructionFollowingInputType = GoogleCloudAiplatformV1RubricBasedInstructionFollowingInput::class;
+        protected $rubricBasedInstructionFollowingInputDataType = '';
+        protected $safetyInputType = GoogleCloudAiplatformV1SafetyInput::class;
+        protected $safetyInputDataType = '';
+        protected $summarizationHelpfulnessInputType = GoogleCloudAiplatformV1SummarizationHelpfulnessInput::class;
+        protected $summarizationHelpfulnessInputDataType = '';
+        protected $summarizationQualityInputType = GoogleCloudAiplatformV1SummarizationQualityInput::class;
+        protected $summarizationQualityInputDataType = '';
+        protected $summarizationVerbosityInputType = GoogleCloudAiplatformV1SummarizationVerbosityInput::class;
+        protected $summarizationVerbosityInputDataType = '';
+        protected $toolCallValidInputType = GoogleCloudAiplatformV1ToolCallValidInput::class;
+        protected $toolCallValidInputDataType = '';
+        protected $toolNameMatchInputType = GoogleCloudAiplatformV1ToolNameMatchInput::class;
+        protected $toolNameMatchInputDataType = '';
+        protected $toolParameterKeyMatchInputType = GoogleCloudAiplatformV1ToolParameterKeyMatchInput::class;
+        protected $toolParameterKeyMatchInputDataType = '';
+        protected $toolParameterKvMatchInputType = GoogleCloudAiplatformV1ToolParameterKVMatchInput::class;
+        protected $toolParameterKvMatchInputDataType = '';
+        protected $trajectoryAnyOrderMatchInputType = GoogleCloudAiplatformV1TrajectoryAnyOrderMatchInput::class;
+        protected $trajectoryAnyOrderMatchInputDataType = '';
+        protected $trajectoryExactMatchInputType = GoogleCloudAiplatformV1TrajectoryExactMatchInput::class;
+        protected $trajectoryExactMatchInputDataType = '';
+        protected $trajectoryInOrderMatchInputType = GoogleCloudAiplatformV1TrajectoryInOrderMatchInput::class;
+        protected $trajectoryInOrderMatchInputDataType = '';
+        protected $trajectoryPrecisionInputType = GoogleCloudAiplatformV1TrajectoryPrecisionInput::class;
+        protected $trajectoryPrecisionInputDataType = '';
+        protected $trajectoryRecallInputType = GoogleCloudAiplatformV1TrajectoryRecallInput::class;
+        protected $trajectoryRecallInputDataType = '';
+        protected $trajectorySingleToolUseInputType = GoogleCloudAiplatformV1TrajectorySingleToolUseInput::class;
+        protected $trajectorySingleToolUseInputDataType = '';
+        /**
+         * Optional. Autorater config used for evaluation.
+         *
+         * @param GoogleCloudAiplatformV1AutoraterConfig $autoraterConfig
+         */
+        public function setAutoraterConfig(GoogleCloudAiplatformV1AutoraterConfig $autoraterConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1AutoraterConfig
+         */
+        public function getAutoraterConfig()
+        {
+        }
+        /**
+         * Instances and metric spec for bleu metric.
+         *
+         * @param GoogleCloudAiplatformV1BleuInput $bleuInput
+         */
+        public function setBleuInput(GoogleCloudAiplatformV1BleuInput $bleuInput)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1BleuInput
+         */
+        public function getBleuInput()
+        {
+        }
+        /**
+         * Input for coherence metric.
+         *
+         * @param GoogleCloudAiplatformV1CoherenceInput $coherenceInput
+         */
+        public function setCoherenceInput(GoogleCloudAiplatformV1CoherenceInput $coherenceInput)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1CoherenceInput
+         */
+        public function getCoherenceInput()
+        {
+        }
+        /**
+         * Translation metrics. Input for Comet metric.
+         *
+         * @param GoogleCloudAiplatformV1CometInput $cometInput
+         */
+        public function setCometInput(GoogleCloudAiplatformV1CometInput $cometInput)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1CometInput
+         */
+        public function getCometInput()
+        {
+        }
+        /**
+         * Auto metric instances. Instances and metric spec for exact match metric.
+         *
+         * @param GoogleCloudAiplatformV1ExactMatchInput $exactMatchInput
+         */
+        public function setExactMatchInput(GoogleCloudAiplatformV1ExactMatchInput $exactMatchInput)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ExactMatchInput
+         */
+        public function getExactMatchInput()
+        {
+        }
+        /**
+         * LLM-based metric instance. General text generation metrics, applicable to
+         * other categories. Input for fluency metric.
+         *
+         * @param GoogleCloudAiplatformV1FluencyInput $fluencyInput
+         */
+        public function setFluencyInput(GoogleCloudAiplatformV1FluencyInput $fluencyInput)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1FluencyInput
+         */
+        public function getFluencyInput()
+        {
+        }
+        /**
+         * Input for fulfillment metric.
+         *
+         * @param GoogleCloudAiplatformV1FulfillmentInput $fulfillmentInput
+         */
+        public function setFulfillmentInput(GoogleCloudAiplatformV1FulfillmentInput $fulfillmentInput)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1FulfillmentInput
+         */
+        public function getFulfillmentInput()
+        {
+        }
+        /**
+         * Input for groundedness metric.
+         *
+         * @param GoogleCloudAiplatformV1GroundednessInput $groundednessInput
+         */
+        public function setGroundednessInput(GoogleCloudAiplatformV1GroundednessInput $groundednessInput)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1GroundednessInput
+         */
+        public function getGroundednessInput()
+        {
+        }
+        /**
+         * The instance to be evaluated.
+         *
+         * @param GoogleCloudAiplatformV1EvaluationInstance $instance
+         */
+        public function setInstance(GoogleCloudAiplatformV1EvaluationInstance $instance)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1EvaluationInstance
+         */
+        public function getInstance()
+        {
+        }
+        /**
+         * Required. The resource name of the Location to evaluate the instances.
+         * Format: `projects/{project}/locations/{location}`
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * The metrics used for evaluation. Currently, we only support evaluating a
+         * single metric. If multiple metrics are provided, only the first one will be
+         * evaluated.
+         *
+         * @param GoogleCloudAiplatformV1Metric[] $metrics
+         */
+        public function setMetrics($metrics)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1Metric[]
+         */
+        public function getMetrics()
+        {
+        }
+        /**
+         * Input for Metricx metric.
+         *
+         * @param GoogleCloudAiplatformV1MetricxInput $metricxInput
+         */
+        public function setMetricxInput(GoogleCloudAiplatformV1MetricxInput $metricxInput)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1MetricxInput
+         */
+        public function getMetricxInput()
+        {
+        }
+        /**
+         * Input for pairwise metric.
+         *
+         * @param GoogleCloudAiplatformV1PairwiseMetricInput $pairwiseMetricInput
+         */
+        public function setPairwiseMetricInput(GoogleCloudAiplatformV1PairwiseMetricInput $pairwiseMetricInput)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1PairwiseMetricInput
+         */
+        public function getPairwiseMetricInput()
+        {
+        }
+        /**
+         * Input for pairwise question answering quality metric.
+         *
+         * @param GoogleCloudAiplatformV1PairwiseQuestionAnsweringQualityInput $pairwiseQuestionAnsweringQualityInput
+         */
+        public function setPairwiseQuestionAnsweringQualityInput(GoogleCloudAiplatformV1PairwiseQuestionAnsweringQualityInput $pairwiseQuestionAnsweringQualityInput)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1PairwiseQuestionAnsweringQualityInput
+         */
+        public function getPairwiseQuestionAnsweringQualityInput()
+        {
+        }
+        /**
+         * Input for pairwise summarization quality metric.
+         *
+         * @param GoogleCloudAiplatformV1PairwiseSummarizationQualityInput $pairwiseSummarizationQualityInput
+         */
+        public function setPairwiseSummarizationQualityInput(GoogleCloudAiplatformV1PairwiseSummarizationQualityInput $pairwiseSummarizationQualityInput)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1PairwiseSummarizationQualityInput
+         */
+        public function getPairwiseSummarizationQualityInput()
+        {
+        }
+        /**
+         * Input for pointwise metric.
+         *
+         * @param GoogleCloudAiplatformV1PointwiseMetricInput $pointwiseMetricInput
+         */
+        public function setPointwiseMetricInput(GoogleCloudAiplatformV1PointwiseMetricInput $pointwiseMetricInput)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1PointwiseMetricInput
+         */
+        public function getPointwiseMetricInput()
+        {
+        }
+        /**
+         * Input for question answering correctness metric.
+         *
+         * @param GoogleCloudAiplatformV1QuestionAnsweringCorrectnessInput $questionAnsweringCorrectnessInput
+         */
+        public function setQuestionAnsweringCorrectnessInput(GoogleCloudAiplatformV1QuestionAnsweringCorrectnessInput $questionAnsweringCorrectnessInput)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1QuestionAnsweringCorrectnessInput
+         */
+        public function getQuestionAnsweringCorrectnessInput()
+        {
+        }
+        /**
+         * Input for question answering helpfulness metric.
+         *
+         * @param GoogleCloudAiplatformV1QuestionAnsweringHelpfulnessInput $questionAnsweringHelpfulnessInput
+         */
+        public function setQuestionAnsweringHelpfulnessInput(GoogleCloudAiplatformV1QuestionAnsweringHelpfulnessInput $questionAnsweringHelpfulnessInput)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1QuestionAnsweringHelpfulnessInput
+         */
+        public function getQuestionAnsweringHelpfulnessInput()
+        {
+        }
+        /**
+         * Input for question answering quality metric.
+         *
+         * @param GoogleCloudAiplatformV1QuestionAnsweringQualityInput $questionAnsweringQualityInput
+         */
+        public function setQuestionAnsweringQualityInput(GoogleCloudAiplatformV1QuestionAnsweringQualityInput $questionAnsweringQualityInput)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1QuestionAnsweringQualityInput
+         */
+        public function getQuestionAnsweringQualityInput()
+        {
+        }
+        /**
+         * Input for question answering relevance metric.
+         *
+         * @param GoogleCloudAiplatformV1QuestionAnsweringRelevanceInput $questionAnsweringRelevanceInput
+         */
+        public function setQuestionAnsweringRelevanceInput(GoogleCloudAiplatformV1QuestionAnsweringRelevanceInput $questionAnsweringRelevanceInput)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1QuestionAnsweringRelevanceInput
+         */
+        public function getQuestionAnsweringRelevanceInput()
+        {
+        }
+        /**
+         * Instances and metric spec for rouge metric.
+         *
+         * @param GoogleCloudAiplatformV1RougeInput $rougeInput
+         */
+        public function setRougeInput(GoogleCloudAiplatformV1RougeInput $rougeInput)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1RougeInput
+         */
+        public function getRougeInput()
+        {
+        }
+        /**
+         * Rubric Based Instruction Following metric.
+         *
+         * @param GoogleCloudAiplatformV1RubricBasedInstructionFollowingInput $rubricBasedInstructionFollowingInput
+         */
+        public function setRubricBasedInstructionFollowingInput(GoogleCloudAiplatformV1RubricBasedInstructionFollowingInput $rubricBasedInstructionFollowingInput)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1RubricBasedInstructionFollowingInput
+         */
+        public function getRubricBasedInstructionFollowingInput()
+        {
+        }
+        /**
+         * Input for safety metric.
+         *
+         * @param GoogleCloudAiplatformV1SafetyInput $safetyInput
+         */
+        public function setSafetyInput(GoogleCloudAiplatformV1SafetyInput $safetyInput)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SafetyInput
+         */
+        public function getSafetyInput()
+        {
+        }
+        /**
+         * Input for summarization helpfulness metric.
+         *
+         * @param GoogleCloudAiplatformV1SummarizationHelpfulnessInput $summarizationHelpfulnessInput
+         */
+        public function setSummarizationHelpfulnessInput(GoogleCloudAiplatformV1SummarizationHelpfulnessInput $summarizationHelpfulnessInput)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SummarizationHelpfulnessInput
+         */
+        public function getSummarizationHelpfulnessInput()
+        {
+        }
+        /**
+         * Input for summarization quality metric.
+         *
+         * @param GoogleCloudAiplatformV1SummarizationQualityInput $summarizationQualityInput
+         */
+        public function setSummarizationQualityInput(GoogleCloudAiplatformV1SummarizationQualityInput $summarizationQualityInput)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SummarizationQualityInput
+         */
+        public function getSummarizationQualityInput()
+        {
+        }
+        /**
+         * Input for summarization verbosity metric.
+         *
+         * @param GoogleCloudAiplatformV1SummarizationVerbosityInput $summarizationVerbosityInput
+         */
+        public function setSummarizationVerbosityInput(GoogleCloudAiplatformV1SummarizationVerbosityInput $summarizationVerbosityInput)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SummarizationVerbosityInput
+         */
+        public function getSummarizationVerbosityInput()
+        {
+        }
+        /**
+         * Tool call metric instances. Input for tool call valid metric.
+         *
+         * @param GoogleCloudAiplatformV1ToolCallValidInput $toolCallValidInput
+         */
+        public function setToolCallValidInput(GoogleCloudAiplatformV1ToolCallValidInput $toolCallValidInput)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ToolCallValidInput
+         */
+        public function getToolCallValidInput()
+        {
+        }
+        /**
+         * Input for tool name match metric.
+         *
+         * @param GoogleCloudAiplatformV1ToolNameMatchInput $toolNameMatchInput
+         */
+        public function setToolNameMatchInput(GoogleCloudAiplatformV1ToolNameMatchInput $toolNameMatchInput)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ToolNameMatchInput
+         */
+        public function getToolNameMatchInput()
+        {
+        }
+        /**
+         * Input for tool parameter key match metric.
+         *
+         * @param GoogleCloudAiplatformV1ToolParameterKeyMatchInput $toolParameterKeyMatchInput
+         */
+        public function setToolParameterKeyMatchInput(GoogleCloudAiplatformV1ToolParameterKeyMatchInput $toolParameterKeyMatchInput)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ToolParameterKeyMatchInput
+         */
+        public function getToolParameterKeyMatchInput()
+        {
+        }
+        /**
+         * Input for tool parameter key value match metric.
+         *
+         * @param GoogleCloudAiplatformV1ToolParameterKVMatchInput $toolParameterKvMatchInput
+         */
+        public function setToolParameterKvMatchInput(GoogleCloudAiplatformV1ToolParameterKVMatchInput $toolParameterKvMatchInput)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ToolParameterKVMatchInput
+         */
+        public function getToolParameterKvMatchInput()
+        {
+        }
+        /**
+         * Input for trajectory match any order metric.
+         *
+         * @param GoogleCloudAiplatformV1TrajectoryAnyOrderMatchInput $trajectoryAnyOrderMatchInput
+         */
+        public function setTrajectoryAnyOrderMatchInput(GoogleCloudAiplatformV1TrajectoryAnyOrderMatchInput $trajectoryAnyOrderMatchInput)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1TrajectoryAnyOrderMatchInput
+         */
+        public function getTrajectoryAnyOrderMatchInput()
+        {
+        }
+        /**
+         * Input for trajectory exact match metric.
+         *
+         * @param GoogleCloudAiplatformV1TrajectoryExactMatchInput $trajectoryExactMatchInput
+         */
+        public function setTrajectoryExactMatchInput(GoogleCloudAiplatformV1TrajectoryExactMatchInput $trajectoryExactMatchInput)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1TrajectoryExactMatchInput
+         */
+        public function getTrajectoryExactMatchInput()
+        {
+        }
+        /**
+         * Input for trajectory in order match metric.
+         *
+         * @param GoogleCloudAiplatformV1TrajectoryInOrderMatchInput $trajectoryInOrderMatchInput
+         */
+        public function setTrajectoryInOrderMatchInput(GoogleCloudAiplatformV1TrajectoryInOrderMatchInput $trajectoryInOrderMatchInput)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1TrajectoryInOrderMatchInput
+         */
+        public function getTrajectoryInOrderMatchInput()
+        {
+        }
+        /**
+         * Input for trajectory precision metric.
+         *
+         * @param GoogleCloudAiplatformV1TrajectoryPrecisionInput $trajectoryPrecisionInput
+         */
+        public function setTrajectoryPrecisionInput(GoogleCloudAiplatformV1TrajectoryPrecisionInput $trajectoryPrecisionInput)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1TrajectoryPrecisionInput
+         */
+        public function getTrajectoryPrecisionInput()
+        {
+        }
+        /**
+         * Input for trajectory recall metric.
+         *
+         * @param GoogleCloudAiplatformV1TrajectoryRecallInput $trajectoryRecallInput
+         */
+        public function setTrajectoryRecallInput(GoogleCloudAiplatformV1TrajectoryRecallInput $trajectoryRecallInput)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1TrajectoryRecallInput
+         */
+        public function getTrajectoryRecallInput()
+        {
+        }
+        /**
+         * Input for trajectory single tool use metric.
+         *
+         * @param GoogleCloudAiplatformV1TrajectorySingleToolUseInput $trajectorySingleToolUseInput
+         */
+        public function setTrajectorySingleToolUseInput(GoogleCloudAiplatformV1TrajectorySingleToolUseInput $trajectorySingleToolUseInput)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1TrajectorySingleToolUseInput
+         */
+        public function getTrajectorySingleToolUseInput()
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1EvaluateInstancesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1EvaluateInstancesRequest extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1EvaluateInstancesRequest
     {
     }
 }

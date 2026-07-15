@@ -21,64 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManagedKafka\Resource;
-
-/**
- * The "config" collection of methods.
- * Typical usage is:
- *  <code>
- *   $managedkafkaService = new Google\Service\ManagedKafka(...);
- *   $config = $managedkafkaService->projects_locations_schemaRegistries_config;
- *  </code>
- */
-class ProjectsLocationsSchemaRegistriesConfig extends \Google\Service\Resource
-{
+namespace Google\Service\ManagedKafka\Resource {
+    use Google\Service\ManagedKafka\SchemaConfig;
+    use Google\Service\ManagedKafka\UpdateSchemaConfigRequest;
     /**
-     * Delete schema config for a subject. (config.delete)
-     *
-     * @param string $name Required. The resource name of subject to delete the
-     * config for. The format is * projects/{project}/locations/{location}/schemaReg
-     * istries/{schema_registry}/config/{subject}
-     * @param array $optParams Optional parameters.
-     * @return SchemaConfig
-     * @throws \Google\Service\Exception
+     * The "config" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $managedkafkaService = new Google\Service\ManagedKafka(...);
+     *   $config = $managedkafkaService->projects_locations_schemaRegistries_config;
+     *  </code>
      */
-    public function delete($name, $optParams = [])
+    class ProjectsLocationsSchemaRegistriesConfig extends \Google\Service\Resource
     {
+        /**
+         * Delete schema config for a subject. (config.delete)
+         *
+         * @param string $name Required. The resource name of subject to delete the
+         * config for. The format is * projects/{project}/locations/{location}/schemaReg
+         * istries/{schema_registry}/config/{subject}
+         * @param array $optParams Optional parameters.
+         * @return SchemaConfig
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Get schema config at global level or for a subject. (config.get)
+         *
+         * @param string $name Required. The resource name to get the config for. It can
+         * be either of following: * projects/{project}/locations/{location}/schemaRegis
+         * tries/{schema_registry}/config: Get config at global level. * projects/{proje
+         * ct}/locations/{location}/schemaRegistries/{schema_registry}/config/{subject}:
+         * Get config for a specific subject.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool defaultToGlobal Optional. If true, the config will fall back
+         * to the config at the global level if no subject level config is found.
+         * @return SchemaConfig
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Update config at global level or for a subject. Creates a SchemaSubject-level
+         * SchemaConfig if it does not exist. (config.update)
+         *
+         * @param string $name Required. The resource name to update the config for. It
+         * can be either of following: * projects/{project}/locations/{location}/schemaR
+         * egistries/{schema_registry}/config: Update config at global level. * projects
+         * /{project}/locations/{location}/schemaRegistries/{schema_registry}/config/{su
+         * bject}: Update config for a specific subject.
+         * @param UpdateSchemaConfigRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return SchemaConfig
+         * @throws \Google\Service\Exception
+         */
+        public function update($name, UpdateSchemaConfigRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Get schema config at global level or for a subject. (config.get)
-     *
-     * @param string $name Required. The resource name to get the config for. It can
-     * be either of following: * projects/{project}/locations/{location}/schemaRegis
-     * tries/{schema_registry}/config: Get config at global level. * projects/{proje
-     * ct}/locations/{location}/schemaRegistries/{schema_registry}/config/{subject}:
-     * Get config for a specific subject.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool defaultToGlobal Optional. If true, the config will fall back
-     * to the config at the global level if no subject level config is found.
-     * @return SchemaConfig
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\ManagedKafka\Resource\ProjectsLocationsSchemaRegistriesConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Update config at global level or for a subject. Creates a SchemaSubject-level
-     * SchemaConfig if it does not exist. (config.update)
-     *
-     * @param string $name Required. The resource name to update the config for. It
-     * can be either of following: * projects/{project}/locations/{location}/schemaR
-     * egistries/{schema_registry}/config: Update config at global level. * projects
-     * /{project}/locations/{location}/schemaRegistries/{schema_registry}/config/{su
-     * bject}: Update config for a specific subject.
-     * @param UpdateSchemaConfigRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return SchemaConfig
-     * @throws \Google\Service\Exception
-     */
-    public function update($name, UpdateSchemaConfigRequest $postBody, $optParams = [])
+    class Google_Service_ManagedKafka_Resource_ProjectsLocationsSchemaRegistriesConfig extends \Google\Service\ManagedKafka\Resource\ProjectsLocationsSchemaRegistriesConfig
     {
     }
 }

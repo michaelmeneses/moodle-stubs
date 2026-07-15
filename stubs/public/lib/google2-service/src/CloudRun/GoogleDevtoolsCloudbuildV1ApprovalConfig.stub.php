@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleDevtoolsCloudbuildV1ApprovalConfig extends \Google\Model
-{
-    /**
-     * Whether or not approval is needed. If this is set on a build, it will
-     * become pending when created, and will need to be explicitly approved to
-     * start.
-     *
-     * @var bool
-     */
-    public $approvalRequired;
-    /**
-     * Whether or not approval is needed. If this is set on a build, it will
-     * become pending when created, and will need to be explicitly approved to
-     * start.
-     *
-     * @param bool $approvalRequired
-     */
-    public function setApprovalRequired($approvalRequired)
+namespace Google\Service\CloudRun {
+    class GoogleDevtoolsCloudbuildV1ApprovalConfig extends \Google\Model
     {
+        /**
+         * Whether or not approval is needed. If this is set on a build, it will
+         * become pending when created, and will need to be explicitly approved to
+         * start.
+         *
+         * @var bool
+         */
+        public $approvalRequired;
+        /**
+         * Whether or not approval is needed. If this is set on a build, it will
+         * become pending when created, and will need to be explicitly approved to
+         * start.
+         *
+         * @param bool $approvalRequired
+         */
+        public function setApprovalRequired($approvalRequired)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getApprovalRequired()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudRun\GoogleDevtoolsCloudbuildV1ApprovalConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApprovalRequired()
+    class Google_Service_CloudRun_GoogleDevtoolsCloudbuildV1ApprovalConfig extends \Google\Service\CloudRun\GoogleDevtoolsCloudbuildV1ApprovalConfig
     {
     }
 }

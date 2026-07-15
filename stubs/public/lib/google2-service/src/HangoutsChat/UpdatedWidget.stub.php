@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class UpdatedWidget extends \Google\Model
-{
-    protected $suggestionsType = SelectionItems::class;
-    protected $suggestionsDataType = '';
-    /**
-     * The ID of the updated widget. The ID must match the one for the widget that
-     * triggered the update request.
-     *
-     * @var string
-     */
-    public $widget;
-    /**
-     * List of widget autocomplete results
-     *
-     * @param SelectionItems $suggestions
-     */
-    public function setSuggestions(SelectionItems $suggestions)
+namespace Google\Service\HangoutsChat {
+    class UpdatedWidget extends \Google\Model
     {
+        protected $suggestionsType = SelectionItems::class;
+        protected $suggestionsDataType = '';
+        /**
+         * The ID of the updated widget. The ID must match the one for the widget that
+         * triggered the update request.
+         *
+         * @var string
+         */
+        public $widget;
+        /**
+         * List of widget autocomplete results
+         *
+         * @param SelectionItems $suggestions
+         */
+        public function setSuggestions(SelectionItems $suggestions)
+        {
+        }
+        /**
+         * @return SelectionItems
+         */
+        public function getSuggestions()
+        {
+        }
+        /**
+         * The ID of the updated widget. The ID must match the one for the widget that
+         * triggered the update request.
+         *
+         * @param string $widget
+         */
+        public function setWidget($widget)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWidget()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SelectionItems
+     * Runtime class alias of \Google\Service\HangoutsChat\UpdatedWidget registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSuggestions()
-    {
-    }
-    /**
-     * The ID of the updated widget. The ID must match the one for the widget that
-     * triggered the update request.
-     *
-     * @param string $widget
-     */
-    public function setWidget($widget)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWidget()
+    class Google_Service_HangoutsChat_UpdatedWidget extends \Google\Service\HangoutsChat\UpdatedWidget
     {
     }
 }

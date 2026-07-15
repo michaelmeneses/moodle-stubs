@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager;
-
-class SyncStatus extends \Google\Model
-{
-    /**
-     * Synchornization operation detected a merge conflict.
-     *
-     * @var bool
-     */
-    public $mergeConflict;
-    /**
-     * An error occurred during the synchronization operation.
-     *
-     * @var bool
-     */
-    public $syncError;
-    /**
-     * Synchornization operation detected a merge conflict.
-     *
-     * @param bool $mergeConflict
-     */
-    public function setMergeConflict($mergeConflict)
+namespace Google\Service\TagManager {
+    class SyncStatus extends \Google\Model
     {
+        /**
+         * Synchornization operation detected a merge conflict.
+         *
+         * @var bool
+         */
+        public $mergeConflict;
+        /**
+         * An error occurred during the synchronization operation.
+         *
+         * @var bool
+         */
+        public $syncError;
+        /**
+         * Synchornization operation detected a merge conflict.
+         *
+         * @param bool $mergeConflict
+         */
+        public function setMergeConflict($mergeConflict)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getMergeConflict()
+        {
+        }
+        /**
+         * An error occurred during the synchronization operation.
+         *
+         * @param bool $syncError
+         */
+        public function setSyncError($syncError)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSyncError()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\TagManager\SyncStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMergeConflict()
-    {
-    }
-    /**
-     * An error occurred during the synchronization operation.
-     *
-     * @param bool $syncError
-     */
-    public function setSyncError($syncError)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSyncError()
+    class Google_Service_TagManager_SyncStatus extends \Google\Service\TagManager\SyncStatus
     {
     }
 }

@@ -21,123 +21,132 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class NetworkAddress extends \Google\Model
-{
-    /**
-     * Unknown (default value).
-     */
-    public const ASSIGNMENT_ADDRESS_ASSIGNMENT_UNSPECIFIED = 'ADDRESS_ASSIGNMENT_UNSPECIFIED';
-    /**
-     * Statically assigned IP.
-     */
-    public const ASSIGNMENT_ADDRESS_ASSIGNMENT_STATIC = 'ADDRESS_ASSIGNMENT_STATIC';
-    /**
-     * Dynamically assigned IP (DHCP).
-     */
-    public const ASSIGNMENT_ADDRESS_ASSIGNMENT_DHCP = 'ADDRESS_ASSIGNMENT_DHCP';
-    /**
-     * Whether DHCP is used to assign addresses.
-     *
-     * @var string
-     */
-    public $assignment;
-    /**
-     * Broadcast address.
-     *
-     * @var string
-     */
-    public $bcast;
-    /**
-     * Fully qualified domain name.
-     *
-     * @var string
-     */
-    public $fqdn;
-    /**
-     * Assigned or configured IP Address.
-     *
-     * @var string
-     */
-    public $ipAddress;
-    /**
-     * Subnet mask.
-     *
-     * @var string
-     */
-    public $subnetMask;
-    /**
-     * Whether DHCP is used to assign addresses.
-     *
-     * Accepted values: ADDRESS_ASSIGNMENT_UNSPECIFIED, ADDRESS_ASSIGNMENT_STATIC,
-     * ADDRESS_ASSIGNMENT_DHCP
-     *
-     * @param self::ASSIGNMENT_* $assignment
-     */
-    public function setAssignment($assignment)
+namespace Google\Service\MigrationCenterAPI {
+    class NetworkAddress extends \Google\Model
     {
+        /**
+         * Unknown (default value).
+         */
+        public const ASSIGNMENT_ADDRESS_ASSIGNMENT_UNSPECIFIED = 'ADDRESS_ASSIGNMENT_UNSPECIFIED';
+        /**
+         * Statically assigned IP.
+         */
+        public const ASSIGNMENT_ADDRESS_ASSIGNMENT_STATIC = 'ADDRESS_ASSIGNMENT_STATIC';
+        /**
+         * Dynamically assigned IP (DHCP).
+         */
+        public const ASSIGNMENT_ADDRESS_ASSIGNMENT_DHCP = 'ADDRESS_ASSIGNMENT_DHCP';
+        /**
+         * Whether DHCP is used to assign addresses.
+         *
+         * @var string
+         */
+        public $assignment;
+        /**
+         * Broadcast address.
+         *
+         * @var string
+         */
+        public $bcast;
+        /**
+         * Fully qualified domain name.
+         *
+         * @var string
+         */
+        public $fqdn;
+        /**
+         * Assigned or configured IP Address.
+         *
+         * @var string
+         */
+        public $ipAddress;
+        /**
+         * Subnet mask.
+         *
+         * @var string
+         */
+        public $subnetMask;
+        /**
+         * Whether DHCP is used to assign addresses.
+         *
+         * Accepted values: ADDRESS_ASSIGNMENT_UNSPECIFIED, ADDRESS_ASSIGNMENT_STATIC,
+         * ADDRESS_ASSIGNMENT_DHCP
+         *
+         * @param self::ASSIGNMENT_* $assignment
+         */
+        public function setAssignment($assignment)
+        {
+        }
+        /**
+         * @return self::ASSIGNMENT_*
+         */
+        public function getAssignment()
+        {
+        }
+        /**
+         * Broadcast address.
+         *
+         * @param string $bcast
+         */
+        public function setBcast($bcast)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBcast()
+        {
+        }
+        /**
+         * Fully qualified domain name.
+         *
+         * @param string $fqdn
+         */
+        public function setFqdn($fqdn)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFqdn()
+        {
+        }
+        /**
+         * Assigned or configured IP Address.
+         *
+         * @param string $ipAddress
+         */
+        public function setIpAddress($ipAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIpAddress()
+        {
+        }
+        /**
+         * Subnet mask.
+         *
+         * @param string $subnetMask
+         */
+        public function setSubnetMask($subnetMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubnetMask()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::ASSIGNMENT_*
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\NetworkAddress registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssignment()
-    {
-    }
-    /**
-     * Broadcast address.
-     *
-     * @param string $bcast
-     */
-    public function setBcast($bcast)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBcast()
-    {
-    }
-    /**
-     * Fully qualified domain name.
-     *
-     * @param string $fqdn
-     */
-    public function setFqdn($fqdn)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFqdn()
-    {
-    }
-    /**
-     * Assigned or configured IP Address.
-     *
-     * @param string $ipAddress
-     */
-    public function setIpAddress($ipAddress)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIpAddress()
-    {
-    }
-    /**
-     * Subnet mask.
-     *
-     * @param string $subnetMask
-     */
-    public function setSubnetMask($subnetMask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubnetMask()
+    class Google_Service_MigrationCenterAPI_NetworkAddress extends \Google\Service\MigrationCenterAPI\NetworkAddress
     {
     }
 }

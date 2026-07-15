@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class GrafeasV1beta1BuildDetails extends \Google\Model
-{
-    protected $provenanceType = BuildProvenance::class;
-    protected $provenanceDataType = '';
-    public $provenanceBytes;
+namespace Google\Service\ContainerAnalysis {
+    class GrafeasV1beta1BuildDetails extends \Google\Model
+    {
+        protected $provenanceType = BuildProvenance::class;
+        protected $provenanceDataType = '';
+        public $provenanceBytes;
+        /**
+         * @param BuildProvenance
+         */
+        public function setProvenance(BuildProvenance $provenance)
+        {
+        }
+        /**
+         * @return BuildProvenance
+         */
+        public function getProvenance()
+        {
+        }
+        public function setProvenanceBytes($provenanceBytes)
+        {
+        }
+        public function getProvenanceBytes()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @param BuildProvenance
+     * Runtime class alias of \Google\Service\ContainerAnalysis\GrafeasV1beta1BuildDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setProvenance(BuildProvenance $provenance)
-    {
-    }
-    /**
-     * @return BuildProvenance
-     */
-    public function getProvenance()
-    {
-    }
-    public function setProvenanceBytes($provenanceBytes)
-    {
-    }
-    public function getProvenanceBytes()
+    class Google_Service_ContainerAnalysis_GrafeasV1beta1BuildDetails extends \Google\Service\ContainerAnalysis\GrafeasV1beta1BuildDetails
     {
     }
 }

@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2PublishToDataplexCatalog extends \Google\Model
-{
-    /**
-     * Whether creating a Dataplex Universal Catalog aspect for a profiled
-     * resource should lower the risk of the profile for that resource. This also
-     * lowers the data risk of resources at the lower levels of the resource
-     * hierarchy. For example, reducing the data risk of a table data profile also
-     * reduces the data risk of the constituent column data profiles.
-     *
-     * @var bool
-     */
-    public $lowerDataRiskToLow;
-    /**
-     * Whether creating a Dataplex Universal Catalog aspect for a profiled
-     * resource should lower the risk of the profile for that resource. This also
-     * lowers the data risk of resources at the lower levels of the resource
-     * hierarchy. For example, reducing the data risk of a table data profile also
-     * reduces the data risk of the constituent column data profiles.
-     *
-     * @param bool $lowerDataRiskToLow
-     */
-    public function setLowerDataRiskToLow($lowerDataRiskToLow)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2PublishToDataplexCatalog extends \Google\Model
     {
+        /**
+         * Whether creating a Dataplex Universal Catalog aspect for a profiled
+         * resource should lower the risk of the profile for that resource. This also
+         * lowers the data risk of resources at the lower levels of the resource
+         * hierarchy. For example, reducing the data risk of a table data profile also
+         * reduces the data risk of the constituent column data profiles.
+         *
+         * @var bool
+         */
+        public $lowerDataRiskToLow;
+        /**
+         * Whether creating a Dataplex Universal Catalog aspect for a profiled
+         * resource should lower the risk of the profile for that resource. This also
+         * lowers the data risk of resources at the lower levels of the resource
+         * hierarchy. For example, reducing the data risk of a table data profile also
+         * reduces the data risk of the constituent column data profiles.
+         *
+         * @param bool $lowerDataRiskToLow
+         */
+        public function setLowerDataRiskToLow($lowerDataRiskToLow)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getLowerDataRiskToLow()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2PublishToDataplexCatalog registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLowerDataRiskToLow()
+    class Google_Service_DLP_GooglePrivacyDlpV2PublishToDataplexCatalog extends \Google\Service\DLP\GooglePrivacyDlpV2PublishToDataplexCatalog
     {
     }
 }

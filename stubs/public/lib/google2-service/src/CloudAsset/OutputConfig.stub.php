@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class OutputConfig extends \Google\Model
-{
-    protected $bigqueryDestinationType = BigQueryDestination::class;
-    protected $bigqueryDestinationDataType = '';
-    protected $gcsDestinationType = GcsDestination::class;
-    protected $gcsDestinationDataType = '';
-    /**
-     * Destination on BigQuery. The output table stores the fields in asset
-     * Protobuf as columns in BigQuery.
-     *
-     * @param BigQueryDestination $bigqueryDestination
-     */
-    public function setBigqueryDestination(BigQueryDestination $bigqueryDestination)
+namespace Google\Service\CloudAsset {
+    class OutputConfig extends \Google\Model
     {
+        protected $bigqueryDestinationType = BigQueryDestination::class;
+        protected $bigqueryDestinationDataType = '';
+        protected $gcsDestinationType = GcsDestination::class;
+        protected $gcsDestinationDataType = '';
+        /**
+         * Destination on BigQuery. The output table stores the fields in asset
+         * Protobuf as columns in BigQuery.
+         *
+         * @param BigQueryDestination $bigqueryDestination
+         */
+        public function setBigqueryDestination(BigQueryDestination $bigqueryDestination)
+        {
+        }
+        /**
+         * @return BigQueryDestination
+         */
+        public function getBigqueryDestination()
+        {
+        }
+        /**
+         * Destination on Cloud Storage.
+         *
+         * @param GcsDestination $gcsDestination
+         */
+        public function setGcsDestination(GcsDestination $gcsDestination)
+        {
+        }
+        /**
+         * @return GcsDestination
+         */
+        public function getGcsDestination()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BigQueryDestination
+     * Runtime class alias of \Google\Service\CloudAsset\OutputConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBigqueryDestination()
-    {
-    }
-    /**
-     * Destination on Cloud Storage.
-     *
-     * @param GcsDestination $gcsDestination
-     */
-    public function setGcsDestination(GcsDestination $gcsDestination)
-    {
-    }
-    /**
-     * @return GcsDestination
-     */
-    public function getGcsDestination()
+    class Google_Service_CloudAsset_OutputConfig extends \Google\Service\CloudAsset\OutputConfig
     {
     }
 }

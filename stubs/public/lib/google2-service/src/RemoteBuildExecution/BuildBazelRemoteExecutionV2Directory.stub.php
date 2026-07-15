@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution;
-
-class BuildBazelRemoteExecutionV2Directory extends \Google\Collection
-{
-    protected $collection_key = 'symlinks';
-    protected $directoriesType = BuildBazelRemoteExecutionV2DirectoryNode::class;
-    protected $directoriesDataType = 'array';
-    protected $filesType = BuildBazelRemoteExecutionV2FileNode::class;
-    protected $filesDataType = 'array';
-    protected $nodePropertiesType = BuildBazelRemoteExecutionV2NodeProperties::class;
-    protected $nodePropertiesDataType = '';
-    protected $symlinksType = BuildBazelRemoteExecutionV2SymlinkNode::class;
-    protected $symlinksDataType = 'array';
-    /**
-     * @param BuildBazelRemoteExecutionV2DirectoryNode[]
-     */
-    public function setDirectories($directories)
+namespace Google\Service\RemoteBuildExecution {
+    class BuildBazelRemoteExecutionV2Directory extends \Google\Collection
     {
+        protected $collection_key = 'symlinks';
+        protected $directoriesType = BuildBazelRemoteExecutionV2DirectoryNode::class;
+        protected $directoriesDataType = 'array';
+        protected $filesType = BuildBazelRemoteExecutionV2FileNode::class;
+        protected $filesDataType = 'array';
+        protected $nodePropertiesType = BuildBazelRemoteExecutionV2NodeProperties::class;
+        protected $nodePropertiesDataType = '';
+        protected $symlinksType = BuildBazelRemoteExecutionV2SymlinkNode::class;
+        protected $symlinksDataType = 'array';
+        /**
+         * @param BuildBazelRemoteExecutionV2DirectoryNode[]
+         */
+        public function setDirectories($directories)
+        {
+        }
+        /**
+         * @return BuildBazelRemoteExecutionV2DirectoryNode[]
+         */
+        public function getDirectories()
+        {
+        }
+        /**
+         * @param BuildBazelRemoteExecutionV2FileNode[]
+         */
+        public function setFiles($files)
+        {
+        }
+        /**
+         * @return BuildBazelRemoteExecutionV2FileNode[]
+         */
+        public function getFiles()
+        {
+        }
+        /**
+         * @param BuildBazelRemoteExecutionV2NodeProperties
+         */
+        public function setNodeProperties(BuildBazelRemoteExecutionV2NodeProperties $nodeProperties)
+        {
+        }
+        /**
+         * @return BuildBazelRemoteExecutionV2NodeProperties
+         */
+        public function getNodeProperties()
+        {
+        }
+        /**
+         * @param BuildBazelRemoteExecutionV2SymlinkNode[]
+         */
+        public function setSymlinks($symlinks)
+        {
+        }
+        /**
+         * @return BuildBazelRemoteExecutionV2SymlinkNode[]
+         */
+        public function getSymlinks()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BuildBazelRemoteExecutionV2DirectoryNode[]
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2Directory registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDirectories()
-    {
-    }
-    /**
-     * @param BuildBazelRemoteExecutionV2FileNode[]
-     */
-    public function setFiles($files)
-    {
-    }
-    /**
-     * @return BuildBazelRemoteExecutionV2FileNode[]
-     */
-    public function getFiles()
-    {
-    }
-    /**
-     * @param BuildBazelRemoteExecutionV2NodeProperties
-     */
-    public function setNodeProperties(BuildBazelRemoteExecutionV2NodeProperties $nodeProperties)
-    {
-    }
-    /**
-     * @return BuildBazelRemoteExecutionV2NodeProperties
-     */
-    public function getNodeProperties()
-    {
-    }
-    /**
-     * @param BuildBazelRemoteExecutionV2SymlinkNode[]
-     */
-    public function setSymlinks($symlinks)
-    {
-    }
-    /**
-     * @return BuildBazelRemoteExecutionV2SymlinkNode[]
-     */
-    public function getSymlinks()
+    class Google_Service_RemoteBuildExecution_BuildBazelRemoteExecutionV2Directory extends \Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2Directory
     {
     }
 }

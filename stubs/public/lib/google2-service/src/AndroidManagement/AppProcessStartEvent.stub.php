@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class AppProcessStartEvent extends \Google\Model
-{
-    protected $processInfoType = AppProcessInfo::class;
-    protected $processInfoDataType = '';
-    /**
-     * Information about a process.
-     *
-     * @param AppProcessInfo $processInfo
-     */
-    public function setProcessInfo(AppProcessInfo $processInfo)
+namespace Google\Service\AndroidManagement {
+    class AppProcessStartEvent extends \Google\Model
     {
+        protected $processInfoType = AppProcessInfo::class;
+        protected $processInfoDataType = '';
+        /**
+         * Information about a process.
+         *
+         * @param AppProcessInfo $processInfo
+         */
+        public function setProcessInfo(AppProcessInfo $processInfo)
+        {
+        }
+        /**
+         * @return AppProcessInfo
+         */
+        public function getProcessInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppProcessInfo
+     * Runtime class alias of \Google\Service\AndroidManagement\AppProcessStartEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProcessInfo()
+    class Google_Service_AndroidManagement_AppProcessStartEvent extends \Google\Service\AndroidManagement\AppProcessStartEvent
     {
     }
 }

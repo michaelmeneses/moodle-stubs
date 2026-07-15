@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class AddNamedRangeResponse extends \Google\Model
-{
-    protected $namedRangeType = NamedRange::class;
-    protected $namedRangeDataType = '';
-    /**
-     * The named range to add.
-     *
-     * @param NamedRange $namedRange
-     */
-    public function setNamedRange(NamedRange $namedRange)
+namespace Google\Service\Sheets {
+    class AddNamedRangeResponse extends \Google\Model
     {
+        protected $namedRangeType = NamedRange::class;
+        protected $namedRangeDataType = '';
+        /**
+         * The named range to add.
+         *
+         * @param NamedRange $namedRange
+         */
+        public function setNamedRange(NamedRange $namedRange)
+        {
+        }
+        /**
+         * @return NamedRange
+         */
+        public function getNamedRange()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return NamedRange
+     * Runtime class alias of \Google\Service\Sheets\AddNamedRangeResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNamedRange()
+    class Google_Service_Sheets_AddNamedRangeResponse extends \Google\Service\Sheets\AddNamedRangeResponse
     {
     }
 }

@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDebugger;
-
-class SourceLocation extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $column;
-    /**
-     * @var int
-     */
-    public $line;
-    /**
-     * @var string
-     */
-    public $path;
-    /**
-     * @param int
-     */
-    public function setColumn($column)
+namespace Google\Service\CloudDebugger {
+    class SourceLocation extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $column;
+        /**
+         * @var int
+         */
+        public $line;
+        /**
+         * @var string
+         */
+        public $path;
+        /**
+         * @param int
+         */
+        public function setColumn($column)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getColumn()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setLine($line)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getLine()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudDebugger\SourceLocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumn()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setLine($line)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getLine()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPath($path)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPath()
+    class Google_Service_CloudDebugger_SourceLocation extends \Google\Service\CloudDebugger\SourceLocation
     {
     }
 }

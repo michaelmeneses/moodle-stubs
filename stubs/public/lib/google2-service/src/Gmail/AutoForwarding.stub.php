@@ -21,93 +21,102 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Gmail;
-
-class AutoForwarding extends \Google\Model
-{
-    /**
-     * Unspecified disposition.
-     */
-    public const DISPOSITION_dispositionUnspecified = 'dispositionUnspecified';
-    /**
-     * Leave the message in the `INBOX`.
-     */
-    public const DISPOSITION_leaveInInbox = 'leaveInInbox';
-    /**
-     * Archive the message.
-     */
-    public const DISPOSITION_archive = 'archive';
-    /**
-     * Move the message to the `TRASH`.
-     */
-    public const DISPOSITION_trash = 'trash';
-    /**
-     * Leave the message in the `INBOX` and mark it as read.
-     */
-    public const DISPOSITION_markRead = 'markRead';
-    /**
-     * The state that a message should be left in after it has been forwarded.
-     *
-     * @var string
-     */
-    public $disposition;
-    /**
-     * Email address to which all incoming messages are forwarded. This email
-     * address must be a verified member of the forwarding addresses.
-     *
-     * @var string
-     */
-    public $emailAddress;
-    /**
-     * Whether all incoming mail is automatically forwarded to another address.
-     *
-     * @var bool
-     */
-    public $enabled;
-    /**
-     * The state that a message should be left in after it has been forwarded.
-     *
-     * Accepted values: dispositionUnspecified, leaveInInbox, archive, trash,
-     * markRead
-     *
-     * @param self::DISPOSITION_* $disposition
-     */
-    public function setDisposition($disposition)
+namespace Google\Service\Gmail {
+    class AutoForwarding extends \Google\Model
     {
+        /**
+         * Unspecified disposition.
+         */
+        public const DISPOSITION_dispositionUnspecified = 'dispositionUnspecified';
+        /**
+         * Leave the message in the `INBOX`.
+         */
+        public const DISPOSITION_leaveInInbox = 'leaveInInbox';
+        /**
+         * Archive the message.
+         */
+        public const DISPOSITION_archive = 'archive';
+        /**
+         * Move the message to the `TRASH`.
+         */
+        public const DISPOSITION_trash = 'trash';
+        /**
+         * Leave the message in the `INBOX` and mark it as read.
+         */
+        public const DISPOSITION_markRead = 'markRead';
+        /**
+         * The state that a message should be left in after it has been forwarded.
+         *
+         * @var string
+         */
+        public $disposition;
+        /**
+         * Email address to which all incoming messages are forwarded. This email
+         * address must be a verified member of the forwarding addresses.
+         *
+         * @var string
+         */
+        public $emailAddress;
+        /**
+         * Whether all incoming mail is automatically forwarded to another address.
+         *
+         * @var bool
+         */
+        public $enabled;
+        /**
+         * The state that a message should be left in after it has been forwarded.
+         *
+         * Accepted values: dispositionUnspecified, leaveInInbox, archive, trash,
+         * markRead
+         *
+         * @param self::DISPOSITION_* $disposition
+         */
+        public function setDisposition($disposition)
+        {
+        }
+        /**
+         * @return self::DISPOSITION_*
+         */
+        public function getDisposition()
+        {
+        }
+        /**
+         * Email address to which all incoming messages are forwarded. This email
+         * address must be a verified member of the forwarding addresses.
+         *
+         * @param string $emailAddress
+         */
+        public function setEmailAddress($emailAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmailAddress()
+        {
+        }
+        /**
+         * Whether all incoming mail is automatically forwarded to another address.
+         *
+         * @param bool $enabled
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::DISPOSITION_*
+     * Runtime class alias of \Google\Service\Gmail\AutoForwarding registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisposition()
-    {
-    }
-    /**
-     * Email address to which all incoming messages are forwarded. This email
-     * address must be a verified member of the forwarding addresses.
-     *
-     * @param string $emailAddress
-     */
-    public function setEmailAddress($emailAddress)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEmailAddress()
-    {
-    }
-    /**
-     * Whether all incoming mail is automatically forwarded to another address.
-     *
-     * @param bool $enabled
-     */
-    public function setEnabled($enabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnabled()
+    class Google_Service_Gmail_AutoForwarding extends \Google\Service\Gmail\AutoForwarding
     {
     }
 }

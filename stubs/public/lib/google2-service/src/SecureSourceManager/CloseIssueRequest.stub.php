@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecureSourceManager;
-
-class CloseIssueRequest extends \Google\Model
-{
-    /**
-     * Optional. The current etag of the issue. If the etag is provided and does
-     * not match the current etag of the issue, closing will be blocked and an
-     * ABORTED error will be returned.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * Optional. The current etag of the issue. If the etag is provided and does
-     * not match the current etag of the issue, closing will be blocked and an
-     * ABORTED error will be returned.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
+namespace Google\Service\SecureSourceManager {
+    class CloseIssueRequest extends \Google\Model
     {
+        /**
+         * Optional. The current etag of the issue. If the etag is provided and does
+         * not match the current etag of the issue, closing will be blocked and an
+         * ABORTED error will be returned.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * Optional. The current etag of the issue. If the etag is provided and does
+         * not match the current etag of the issue, closing will be blocked and an
+         * ABORTED error will be returned.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecureSourceManager\CloseIssueRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
+    class Google_Service_SecureSourceManager_CloseIssueRequest extends \Google\Service\SecureSourceManager\CloseIssueRequest
     {
     }
 }

@@ -21,31 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine\Resource;
-
-/**
- * The "rankingConfigs" collection of methods.
- * Typical usage is:
- *  <code>
- *   $discoveryengineService = new Google\Service\DiscoveryEngine(...);
- *   $rankingConfigs = $discoveryengineService->projects_locations_rankingConfigs;
- *  </code>
- */
-class ProjectsLocationsRankingConfigs extends \Google\Service\Resource
-{
+namespace Google\Service\DiscoveryEngine\Resource {
+    use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1RankRequest;
+    use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1RankResponse;
     /**
-     * Ranks a list of text records based on the given input query.
-     * (rankingConfigs.rank)
-     *
-     * @param string $rankingConfig Required. The resource name of the rank service
-     * config, such as `projects/{project_num}/locations/{location}/rankingConfigs/d
-     * efault_ranking_config`.
-     * @param GoogleCloudDiscoveryengineV1RankRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudDiscoveryengineV1RankResponse
-     * @throws \Google\Service\Exception
+     * The "rankingConfigs" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $discoveryengineService = new Google\Service\DiscoveryEngine(...);
+     *   $rankingConfigs = $discoveryengineService->projects_locations_rankingConfigs;
+     *  </code>
      */
-    public function rank($rankingConfig, GoogleCloudDiscoveryengineV1RankRequest $postBody, $optParams = [])
+    class ProjectsLocationsRankingConfigs extends \Google\Service\Resource
+    {
+        /**
+         * Ranks a list of text records based on the given input query.
+         * (rankingConfigs.rank)
+         *
+         * @param string $rankingConfig Required. The resource name of the rank service
+         * config, such as `projects/{project_num}/locations/{location}/rankingConfigs/d
+         * efault_ranking_config`.
+         * @param GoogleCloudDiscoveryengineV1RankRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudDiscoveryengineV1RankResponse
+         * @throws \Google\Service\Exception
+         */
+        public function rank($rankingConfig, GoogleCloudDiscoveryengineV1RankRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\DiscoveryEngine\Resource\ProjectsLocationsRankingConfigs registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_DiscoveryEngine_Resource_ProjectsLocationsRankingConfigs extends \Google\Service\DiscoveryEngine\Resource\ProjectsLocationsRankingConfigs
     {
     }
 }

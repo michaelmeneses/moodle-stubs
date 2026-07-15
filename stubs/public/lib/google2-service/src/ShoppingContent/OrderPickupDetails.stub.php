@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class OrderPickupDetails extends \Google\Collection
-{
-    protected $collection_key = 'collectors';
-    protected $addressType = OrderAddress::class;
-    protected $addressDataType = '';
-    protected $collectorsType = OrderPickupDetailsCollector::class;
-    protected $collectorsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $locationId;
-    /**
-     * @var string
-     */
-    public $pickupType;
-    /**
-     * @param OrderAddress
-     */
-    public function setAddress(OrderAddress $address)
+namespace Google\Service\ShoppingContent {
+    class OrderPickupDetails extends \Google\Collection
     {
+        protected $collection_key = 'collectors';
+        protected $addressType = OrderAddress::class;
+        protected $addressDataType = '';
+        protected $collectorsType = OrderPickupDetailsCollector::class;
+        protected $collectorsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $locationId;
+        /**
+         * @var string
+         */
+        public $pickupType;
+        /**
+         * @param OrderAddress
+         */
+        public function setAddress(OrderAddress $address)
+        {
+        }
+        /**
+         * @return OrderAddress
+         */
+        public function getAddress()
+        {
+        }
+        /**
+         * @param OrderPickupDetailsCollector[]
+         */
+        public function setCollectors($collectors)
+        {
+        }
+        /**
+         * @return OrderPickupDetailsCollector[]
+         */
+        public function getCollectors()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLocationId($locationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocationId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPickupType($pickupType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPickupType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return OrderAddress
+     * Runtime class alias of \Google\Service\ShoppingContent\OrderPickupDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddress()
-    {
-    }
-    /**
-     * @param OrderPickupDetailsCollector[]
-     */
-    public function setCollectors($collectors)
-    {
-    }
-    /**
-     * @return OrderPickupDetailsCollector[]
-     */
-    public function getCollectors()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLocationId($locationId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocationId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPickupType($pickupType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPickupType()
+    class Google_Service_ShoppingContent_OrderPickupDetails extends \Google\Service\ShoppingContent\OrderPickupDetails
     {
     }
 }

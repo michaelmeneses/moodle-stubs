@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0CommonYoutubeVideoAsset extends \Google\Model
-{
-    /**
-     * YouTube video id. This is the 11 character string value used in the YouTube
-     * video URL.
-     *
-     * @var string
-     */
-    public $youtubeVideoId;
-    /**
-     * YouTube video title.
-     *
-     * @var string
-     */
-    public $youtubeVideoTitle;
-    /**
-     * YouTube video id. This is the 11 character string value used in the YouTube
-     * video URL.
-     *
-     * @param string $youtubeVideoId
-     */
-    public function setYoutubeVideoId($youtubeVideoId)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0CommonYoutubeVideoAsset extends \Google\Model
     {
+        /**
+         * YouTube video id. This is the 11 character string value used in the YouTube
+         * video URL.
+         *
+         * @var string
+         */
+        public $youtubeVideoId;
+        /**
+         * YouTube video title.
+         *
+         * @var string
+         */
+        public $youtubeVideoTitle;
+        /**
+         * YouTube video id. This is the 11 character string value used in the YouTube
+         * video URL.
+         *
+         * @param string $youtubeVideoId
+         */
+        public function setYoutubeVideoId($youtubeVideoId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getYoutubeVideoId()
+        {
+        }
+        /**
+         * YouTube video title.
+         *
+         * @param string $youtubeVideoTitle
+         */
+        public function setYoutubeVideoTitle($youtubeVideoTitle)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getYoutubeVideoTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0CommonYoutubeVideoAsset registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getYoutubeVideoId()
-    {
-    }
-    /**
-     * YouTube video title.
-     *
-     * @param string $youtubeVideoTitle
-     */
-    public function setYoutubeVideoTitle($youtubeVideoTitle)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getYoutubeVideoTitle()
+    class Google_Service_SA360_GoogleAdsSearchads360V0CommonYoutubeVideoAsset extends \Google\Service\SA360\GoogleAdsSearchads360V0CommonYoutubeVideoAsset
     {
     }
 }

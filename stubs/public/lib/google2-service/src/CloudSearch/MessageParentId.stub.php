@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class MessageParentId extends \Google\Model
-{
-    protected $topicIdType = TopicId::class;
-    protected $topicIdDataType = '';
-    /**
-     * @param TopicId
-     */
-    public function setTopicId(TopicId $topicId)
+namespace Google\Service\CloudSearch {
+    class MessageParentId extends \Google\Model
     {
+        protected $topicIdType = TopicId::class;
+        protected $topicIdDataType = '';
+        /**
+         * @param TopicId
+         */
+        public function setTopicId(TopicId $topicId)
+        {
+        }
+        /**
+         * @return TopicId
+         */
+        public function getTopicId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TopicId
+     * Runtime class alias of \Google\Service\CloudSearch\MessageParentId registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTopicId()
+    class Google_Service_CloudSearch_MessageParentId extends \Google\Service\CloudSearch\MessageParentId
     {
     }
 }

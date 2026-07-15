@@ -21,306 +21,315 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1App extends \Google\Collection
-{
-    protected $collection_key = 'scopes';
-    protected $apiProductsType = GoogleCloudApigeeV1ApiProductRef::class;
-    protected $apiProductsDataType = 'array';
-    /**
-     * Name of the AppGroup
-     *
-     * @var string
-     */
-    public $appGroup;
-    /**
-     * ID of the app.
-     *
-     * @var string
-     */
-    public $appId;
-    protected $attributesType = GoogleCloudApigeeV1Attribute::class;
-    protected $attributesDataType = 'array';
-    /**
-     * Callback URL used by OAuth 2.0 authorization servers to communicate
-     * authorization codes back to apps.
-     *
-     * @var string
-     */
-    public $callbackUrl;
-    /**
-     * Name of the company that owns the app.
-     *
-     * @var string
-     */
-    public $companyName;
-    /**
-     * Output only. Unix time when the app was created.
-     *
-     * @var string
-     */
-    public $createdAt;
-    protected $credentialsType = GoogleCloudApigeeV1Credential::class;
-    protected $credentialsDataType = 'array';
-    /**
-     * Email of the developer.
-     *
-     * @var string
-     */
-    public $developerEmail;
-    /**
-     * ID of the developer.
-     *
-     * @var string
-     */
-    public $developerId;
-    /**
-     * Duration, in milliseconds, of the consumer key that will be generated for
-     * the app. The default value, -1, indicates an infinite validity period. Once
-     * set, the expiration can't be updated. json key: keyExpiresIn
-     *
-     * @var string
-     */
-    public $keyExpiresIn;
-    /**
-     * Output only. Last modified time as milliseconds since epoch.
-     *
-     * @var string
-     */
-    public $lastModifiedAt;
-    /**
-     * Name of the app.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Scopes to apply to the app. The specified scope names must already exist on
-     * the API product that you associate with the app.
-     *
-     * @var string[]
-     */
-    public $scopes;
-    /**
-     * Status of the credential.
-     *
-     * @var string
-     */
-    public $status;
-    /**
-     * List of API products associated with the app.
-     *
-     * @param GoogleCloudApigeeV1ApiProductRef[] $apiProducts
-     */
-    public function setApiProducts($apiProducts)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1App extends \Google\Collection
     {
+        protected $collection_key = 'scopes';
+        protected $apiProductsType = GoogleCloudApigeeV1ApiProductRef::class;
+        protected $apiProductsDataType = 'array';
+        /**
+         * Name of the AppGroup
+         *
+         * @var string
+         */
+        public $appGroup;
+        /**
+         * ID of the app.
+         *
+         * @var string
+         */
+        public $appId;
+        protected $attributesType = GoogleCloudApigeeV1Attribute::class;
+        protected $attributesDataType = 'array';
+        /**
+         * Callback URL used by OAuth 2.0 authorization servers to communicate
+         * authorization codes back to apps.
+         *
+         * @var string
+         */
+        public $callbackUrl;
+        /**
+         * Name of the company that owns the app.
+         *
+         * @var string
+         */
+        public $companyName;
+        /**
+         * Output only. Unix time when the app was created.
+         *
+         * @var string
+         */
+        public $createdAt;
+        protected $credentialsType = GoogleCloudApigeeV1Credential::class;
+        protected $credentialsDataType = 'array';
+        /**
+         * Email of the developer.
+         *
+         * @var string
+         */
+        public $developerEmail;
+        /**
+         * ID of the developer.
+         *
+         * @var string
+         */
+        public $developerId;
+        /**
+         * Duration, in milliseconds, of the consumer key that will be generated for
+         * the app. The default value, -1, indicates an infinite validity period. Once
+         * set, the expiration can't be updated. json key: keyExpiresIn
+         *
+         * @var string
+         */
+        public $keyExpiresIn;
+        /**
+         * Output only. Last modified time as milliseconds since epoch.
+         *
+         * @var string
+         */
+        public $lastModifiedAt;
+        /**
+         * Name of the app.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Scopes to apply to the app. The specified scope names must already exist on
+         * the API product that you associate with the app.
+         *
+         * @var string[]
+         */
+        public $scopes;
+        /**
+         * Status of the credential.
+         *
+         * @var string
+         */
+        public $status;
+        /**
+         * List of API products associated with the app.
+         *
+         * @param GoogleCloudApigeeV1ApiProductRef[] $apiProducts
+         */
+        public function setApiProducts($apiProducts)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1ApiProductRef[]
+         */
+        public function getApiProducts()
+        {
+        }
+        /**
+         * Name of the AppGroup
+         *
+         * @param string $appGroup
+         */
+        public function setAppGroup($appGroup)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAppGroup()
+        {
+        }
+        /**
+         * ID of the app.
+         *
+         * @param string $appId
+         */
+        public function setAppId($appId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAppId()
+        {
+        }
+        /**
+         * List of attributes.
+         *
+         * @param GoogleCloudApigeeV1Attribute[] $attributes
+         */
+        public function setAttributes($attributes)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1Attribute[]
+         */
+        public function getAttributes()
+        {
+        }
+        /**
+         * Callback URL used by OAuth 2.0 authorization servers to communicate
+         * authorization codes back to apps.
+         *
+         * @param string $callbackUrl
+         */
+        public function setCallbackUrl($callbackUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCallbackUrl()
+        {
+        }
+        /**
+         * Name of the company that owns the app.
+         *
+         * @param string $companyName
+         */
+        public function setCompanyName($companyName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCompanyName()
+        {
+        }
+        /**
+         * Output only. Unix time when the app was created.
+         *
+         * @param string $createdAt
+         */
+        public function setCreatedAt($createdAt)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreatedAt()
+        {
+        }
+        /**
+         * Output only. Set of credentials for the app. Credentials are API key/secret
+         * pairs associated with API products.
+         *
+         * @param GoogleCloudApigeeV1Credential[] $credentials
+         */
+        public function setCredentials($credentials)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1Credential[]
+         */
+        public function getCredentials()
+        {
+        }
+        /**
+         * Email of the developer.
+         *
+         * @param string $developerEmail
+         */
+        public function setDeveloperEmail($developerEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeveloperEmail()
+        {
+        }
+        /**
+         * ID of the developer.
+         *
+         * @param string $developerId
+         */
+        public function setDeveloperId($developerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeveloperId()
+        {
+        }
+        /**
+         * Duration, in milliseconds, of the consumer key that will be generated for
+         * the app. The default value, -1, indicates an infinite validity period. Once
+         * set, the expiration can't be updated. json key: keyExpiresIn
+         *
+         * @param string $keyExpiresIn
+         */
+        public function setKeyExpiresIn($keyExpiresIn)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKeyExpiresIn()
+        {
+        }
+        /**
+         * Output only. Last modified time as milliseconds since epoch.
+         *
+         * @param string $lastModifiedAt
+         */
+        public function setLastModifiedAt($lastModifiedAt)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastModifiedAt()
+        {
+        }
+        /**
+         * Name of the app.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Scopes to apply to the app. The specified scope names must already exist on
+         * the API product that you associate with the app.
+         *
+         * @param string[] $scopes
+         */
+        public function setScopes($scopes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getScopes()
+        {
+        }
+        /**
+         * Status of the credential.
+         *
+         * @param string $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApigeeV1ApiProductRef[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1App registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiProducts()
-    {
-    }
-    /**
-     * Name of the AppGroup
-     *
-     * @param string $appGroup
-     */
-    public function setAppGroup($appGroup)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAppGroup()
-    {
-    }
-    /**
-     * ID of the app.
-     *
-     * @param string $appId
-     */
-    public function setAppId($appId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAppId()
-    {
-    }
-    /**
-     * List of attributes.
-     *
-     * @param GoogleCloudApigeeV1Attribute[] $attributes
-     */
-    public function setAttributes($attributes)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1Attribute[]
-     */
-    public function getAttributes()
-    {
-    }
-    /**
-     * Callback URL used by OAuth 2.0 authorization servers to communicate
-     * authorization codes back to apps.
-     *
-     * @param string $callbackUrl
-     */
-    public function setCallbackUrl($callbackUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCallbackUrl()
-    {
-    }
-    /**
-     * Name of the company that owns the app.
-     *
-     * @param string $companyName
-     */
-    public function setCompanyName($companyName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCompanyName()
-    {
-    }
-    /**
-     * Output only. Unix time when the app was created.
-     *
-     * @param string $createdAt
-     */
-    public function setCreatedAt($createdAt)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreatedAt()
-    {
-    }
-    /**
-     * Output only. Set of credentials for the app. Credentials are API key/secret
-     * pairs associated with API products.
-     *
-     * @param GoogleCloudApigeeV1Credential[] $credentials
-     */
-    public function setCredentials($credentials)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1Credential[]
-     */
-    public function getCredentials()
-    {
-    }
-    /**
-     * Email of the developer.
-     *
-     * @param string $developerEmail
-     */
-    public function setDeveloperEmail($developerEmail)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeveloperEmail()
-    {
-    }
-    /**
-     * ID of the developer.
-     *
-     * @param string $developerId
-     */
-    public function setDeveloperId($developerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeveloperId()
-    {
-    }
-    /**
-     * Duration, in milliseconds, of the consumer key that will be generated for
-     * the app. The default value, -1, indicates an infinite validity period. Once
-     * set, the expiration can't be updated. json key: keyExpiresIn
-     *
-     * @param string $keyExpiresIn
-     */
-    public function setKeyExpiresIn($keyExpiresIn)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKeyExpiresIn()
-    {
-    }
-    /**
-     * Output only. Last modified time as milliseconds since epoch.
-     *
-     * @param string $lastModifiedAt
-     */
-    public function setLastModifiedAt($lastModifiedAt)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastModifiedAt()
-    {
-    }
-    /**
-     * Name of the app.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Scopes to apply to the app. The specified scope names must already exist on
-     * the API product that you associate with the app.
-     *
-     * @param string[] $scopes
-     */
-    public function setScopes($scopes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getScopes()
-    {
-    }
-    /**
-     * Status of the credential.
-     *
-     * @param string $status
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStatus()
+    class Google_Service_Apigee_GoogleCloudApigeeV1App extends \Google\Service\Apigee\GoogleCloudApigeeV1App
     {
     }
 }

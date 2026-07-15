@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CCAIPlatform;
-
-class PscSetting extends \Google\Collection
-{
-    protected $collection_key = 'producerProjectIds';
-    /**
-     * The list of project ids that are allowed to send traffic to the service
-     * attachment. This field should be filled only for the ingress components.
-     *
-     * @var string[]
-     */
-    public $allowedConsumerProjectIds;
-    /**
-     * Output only. The CCAIP tenant project ids.
-     *
-     * @var string[]
-     */
-    public $producerProjectIds;
-    /**
-     * The list of project ids that are allowed to send traffic to the service
-     * attachment. This field should be filled only for the ingress components.
-     *
-     * @param string[] $allowedConsumerProjectIds
-     */
-    public function setAllowedConsumerProjectIds($allowedConsumerProjectIds)
+namespace Google\Service\CCAIPlatform {
+    class PscSetting extends \Google\Collection
     {
+        protected $collection_key = 'producerProjectIds';
+        /**
+         * The list of project ids that are allowed to send traffic to the service
+         * attachment. This field should be filled only for the ingress components.
+         *
+         * @var string[]
+         */
+        public $allowedConsumerProjectIds;
+        /**
+         * Output only. The CCAIP tenant project ids.
+         *
+         * @var string[]
+         */
+        public $producerProjectIds;
+        /**
+         * The list of project ids that are allowed to send traffic to the service
+         * attachment. This field should be filled only for the ingress components.
+         *
+         * @param string[] $allowedConsumerProjectIds
+         */
+        public function setAllowedConsumerProjectIds($allowedConsumerProjectIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAllowedConsumerProjectIds()
+        {
+        }
+        /**
+         * Output only. The CCAIP tenant project ids.
+         *
+         * @param string[] $producerProjectIds
+         */
+        public function setProducerProjectIds($producerProjectIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getProducerProjectIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CCAIPlatform\PscSetting registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowedConsumerProjectIds()
-    {
-    }
-    /**
-     * Output only. The CCAIP tenant project ids.
-     *
-     * @param string[] $producerProjectIds
-     */
-    public function setProducerProjectIds($producerProjectIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getProducerProjectIds()
+    class Google_Service_CCAIPlatform_PscSetting extends \Google\Service\CCAIPlatform\PscSetting
     {
     }
 }

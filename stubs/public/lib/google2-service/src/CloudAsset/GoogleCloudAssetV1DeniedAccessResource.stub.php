@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class GoogleCloudAssetV1DeniedAccessResource extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $fullResourceName;
-    /**
-     * @param string
-     */
-    public function setFullResourceName($fullResourceName)
+namespace Google\Service\CloudAsset {
+    class GoogleCloudAssetV1DeniedAccessResource extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $fullResourceName;
+        /**
+         * @param string
+         */
+        public function setFullResourceName($fullResourceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFullResourceName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudAsset\GoogleCloudAssetV1DeniedAccessResource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFullResourceName()
+    class Google_Service_CloudAsset_GoogleCloudAssetV1DeniedAccessResource extends \Google\Service\CloudAsset\GoogleCloudAssetV1DeniedAccessResource
     {
     }
 }

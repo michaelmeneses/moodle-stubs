@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\StreetViewPublish;
-
-class NoOverlapGpsFailureDetails extends \Google\Model
-{
-    /**
-     * Time of last recorded GPS point.
-     *
-     * @var string
-     */
-    public $gpsEndTime;
-    /**
-     * Time of first recorded GPS point.
-     *
-     * @var string
-     */
-    public $gpsStartTime;
-    /**
-     * End time of video.
-     *
-     * @var string
-     */
-    public $videoEndTime;
-    /**
-     * Start time of video.
-     *
-     * @var string
-     */
-    public $videoStartTime;
-    /**
-     * Time of last recorded GPS point.
-     *
-     * @param string $gpsEndTime
-     */
-    public function setGpsEndTime($gpsEndTime)
+namespace Google\Service\StreetViewPublish {
+    class NoOverlapGpsFailureDetails extends \Google\Model
     {
+        /**
+         * Time of last recorded GPS point.
+         *
+         * @var string
+         */
+        public $gpsEndTime;
+        /**
+         * Time of first recorded GPS point.
+         *
+         * @var string
+         */
+        public $gpsStartTime;
+        /**
+         * End time of video.
+         *
+         * @var string
+         */
+        public $videoEndTime;
+        /**
+         * Start time of video.
+         *
+         * @var string
+         */
+        public $videoStartTime;
+        /**
+         * Time of last recorded GPS point.
+         *
+         * @param string $gpsEndTime
+         */
+        public function setGpsEndTime($gpsEndTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGpsEndTime()
+        {
+        }
+        /**
+         * Time of first recorded GPS point.
+         *
+         * @param string $gpsStartTime
+         */
+        public function setGpsStartTime($gpsStartTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGpsStartTime()
+        {
+        }
+        /**
+         * End time of video.
+         *
+         * @param string $videoEndTime
+         */
+        public function setVideoEndTime($videoEndTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVideoEndTime()
+        {
+        }
+        /**
+         * Start time of video.
+         *
+         * @param string $videoStartTime
+         */
+        public function setVideoStartTime($videoStartTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVideoStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\StreetViewPublish\NoOverlapGpsFailureDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGpsEndTime()
-    {
-    }
-    /**
-     * Time of first recorded GPS point.
-     *
-     * @param string $gpsStartTime
-     */
-    public function setGpsStartTime($gpsStartTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGpsStartTime()
-    {
-    }
-    /**
-     * End time of video.
-     *
-     * @param string $videoEndTime
-     */
-    public function setVideoEndTime($videoEndTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVideoEndTime()
-    {
-    }
-    /**
-     * Start time of video.
-     *
-     * @param string $videoStartTime
-     */
-    public function setVideoStartTime($videoStartTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVideoStartTime()
+    class Google_Service_StreetViewPublish_NoOverlapGpsFailureDetails extends \Google\Service\StreetViewPublish\NoOverlapGpsFailureDetails
     {
     }
 }

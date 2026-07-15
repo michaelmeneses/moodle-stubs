@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Transcoder;
-
-class AdBreak extends \Google\Model
-{
-    /**
-     * Start time in seconds for the ad break, relative to the output file
-     * timeline. The default is `0s`.
-     *
-     * @var string
-     */
-    public $startTimeOffset;
-    /**
-     * Start time in seconds for the ad break, relative to the output file
-     * timeline. The default is `0s`.
-     *
-     * @param string $startTimeOffset
-     */
-    public function setStartTimeOffset($startTimeOffset)
+namespace Google\Service\Transcoder {
+    class AdBreak extends \Google\Model
     {
+        /**
+         * Start time in seconds for the ad break, relative to the output file
+         * timeline. The default is `0s`.
+         *
+         * @var string
+         */
+        public $startTimeOffset;
+        /**
+         * Start time in seconds for the ad break, relative to the output file
+         * timeline. The default is `0s`.
+         *
+         * @param string $startTimeOffset
+         */
+        public function setStartTimeOffset($startTimeOffset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTimeOffset()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Transcoder\AdBreak registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStartTimeOffset()
+    class Google_Service_Transcoder_AdBreak extends \Google\Service\Transcoder\AdBreak
     {
     }
 }

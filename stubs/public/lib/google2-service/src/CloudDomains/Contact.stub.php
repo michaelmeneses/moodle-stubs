@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDomains;
-
-class Contact extends \Google\Model
-{
-    /**
-     * Required. Email address of the contact.
-     *
-     * @var string
-     */
-    public $email;
-    /**
-     * Fax number of the contact in international format. For example,
-     * `"+1-800-555-0123"`.
-     *
-     * @var string
-     */
-    public $faxNumber;
-    /**
-     * Required. Phone number of the contact in international format. For example,
-     * `"+1-800-555-0123"`.
-     *
-     * @var string
-     */
-    public $phoneNumber;
-    protected $postalAddressType = PostalAddress::class;
-    protected $postalAddressDataType = '';
-    /**
-     * Required. Email address of the contact.
-     *
-     * @param string $email
-     */
-    public function setEmail($email)
+namespace Google\Service\CloudDomains {
+    class Contact extends \Google\Model
     {
+        /**
+         * Required. Email address of the contact.
+         *
+         * @var string
+         */
+        public $email;
+        /**
+         * Fax number of the contact in international format. For example,
+         * `"+1-800-555-0123"`.
+         *
+         * @var string
+         */
+        public $faxNumber;
+        /**
+         * Required. Phone number of the contact in international format. For example,
+         * `"+1-800-555-0123"`.
+         *
+         * @var string
+         */
+        public $phoneNumber;
+        protected $postalAddressType = PostalAddress::class;
+        protected $postalAddressDataType = '';
+        /**
+         * Required. Email address of the contact.
+         *
+         * @param string $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
+        /**
+         * Fax number of the contact in international format. For example,
+         * `"+1-800-555-0123"`.
+         *
+         * @param string $faxNumber
+         */
+        public function setFaxNumber($faxNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFaxNumber()
+        {
+        }
+        /**
+         * Required. Phone number of the contact in international format. For example,
+         * `"+1-800-555-0123"`.
+         *
+         * @param string $phoneNumber
+         */
+        public function setPhoneNumber($phoneNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPhoneNumber()
+        {
+        }
+        /**
+         * Required. Postal address of the contact.
+         *
+         * @param PostalAddress $postalAddress
+         */
+        public function setPostalAddress(PostalAddress $postalAddress)
+        {
+        }
+        /**
+         * @return PostalAddress
+         */
+        public function getPostalAddress()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDomains\Contact registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmail()
-    {
-    }
-    /**
-     * Fax number of the contact in international format. For example,
-     * `"+1-800-555-0123"`.
-     *
-     * @param string $faxNumber
-     */
-    public function setFaxNumber($faxNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFaxNumber()
-    {
-    }
-    /**
-     * Required. Phone number of the contact in international format. For example,
-     * `"+1-800-555-0123"`.
-     *
-     * @param string $phoneNumber
-     */
-    public function setPhoneNumber($phoneNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPhoneNumber()
-    {
-    }
-    /**
-     * Required. Postal address of the contact.
-     *
-     * @param PostalAddress $postalAddress
-     */
-    public function setPostalAddress(PostalAddress $postalAddress)
-    {
-    }
-    /**
-     * @return PostalAddress
-     */
-    public function getPostalAddress()
+    class Google_Service_CloudDomains_Contact extends \Google\Service\CloudDomains\Contact
     {
     }
 }

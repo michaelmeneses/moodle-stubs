@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Backupdr;
-
-class DiskTargetEnvironment extends \Google\Model
-{
-    /**
-     * Required. Target project for the disk.
-     *
-     * @var string
-     */
-    public $project;
-    /**
-     * Required. Target zone for the disk.
-     *
-     * @var string
-     */
-    public $zone;
-    /**
-     * Required. Target project for the disk.
-     *
-     * @param string $project
-     */
-    public function setProject($project)
+namespace Google\Service\Backupdr {
+    class DiskTargetEnvironment extends \Google\Model
     {
+        /**
+         * Required. Target project for the disk.
+         *
+         * @var string
+         */
+        public $project;
+        /**
+         * Required. Target zone for the disk.
+         *
+         * @var string
+         */
+        public $zone;
+        /**
+         * Required. Target project for the disk.
+         *
+         * @param string $project
+         */
+        public function setProject($project)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProject()
+        {
+        }
+        /**
+         * Required. Target zone for the disk.
+         *
+         * @param string $zone
+         */
+        public function setZone($zone)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getZone()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Backupdr\DiskTargetEnvironment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProject()
-    {
-    }
-    /**
-     * Required. Target zone for the disk.
-     *
-     * @param string $zone
-     */
-    public function setZone($zone)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getZone()
+    class Google_Service_Backupdr_DiskTargetEnvironment extends \Google\Service\Backupdr\DiskTargetEnvironment
     {
     }
 }

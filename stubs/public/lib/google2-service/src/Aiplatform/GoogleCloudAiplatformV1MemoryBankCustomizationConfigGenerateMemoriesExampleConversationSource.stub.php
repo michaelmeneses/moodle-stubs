@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1MemoryBankCustomizationConfigGenerateMemoriesExampleConversationSource extends \Google\Collection
-{
-    protected $collection_key = 'events';
-    protected $eventsType = GoogleCloudAiplatformV1MemoryBankCustomizationConfigGenerateMemoriesExampleConversationSourceEvent::class;
-    protected $eventsDataType = 'array';
-    /**
-     * Optional. The input conversation events for the example.
-     *
-     * @param GoogleCloudAiplatformV1MemoryBankCustomizationConfigGenerateMemoriesExampleConversationSourceEvent[] $events
-     */
-    public function setEvents($events)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1MemoryBankCustomizationConfigGenerateMemoriesExampleConversationSource extends \Google\Collection
     {
+        protected $collection_key = 'events';
+        protected $eventsType = GoogleCloudAiplatformV1MemoryBankCustomizationConfigGenerateMemoriesExampleConversationSourceEvent::class;
+        protected $eventsDataType = 'array';
+        /**
+         * Optional. The input conversation events for the example.
+         *
+         * @param GoogleCloudAiplatformV1MemoryBankCustomizationConfigGenerateMemoriesExampleConversationSourceEvent[] $events
+         */
+        public function setEvents($events)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1MemoryBankCustomizationConfigGenerateMemoriesExampleConversationSourceEvent[]
+         */
+        public function getEvents()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1MemoryBankCustomizationConfigGenerateMemoriesExampleConversationSourceEvent[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1MemoryBankCustomizationConfigGenerateMemoriesExampleConversationSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEvents()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1MemoryBankCustomizationConfigGenerateMemoriesExampleConversationSource extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1MemoryBankCustomizationConfigGenerateMemoriesExampleConversationSource
     {
     }
 }

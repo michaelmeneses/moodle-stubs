@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class Compliance extends \Google\Collection
-{
-    protected $collection_key = 'ids';
-    /**
-     * Policies within the standard or benchmark, for example, A.12.4.1
-     *
-     * @var string[]
-     */
-    public $ids;
-    /**
-     * Industry-wide compliance standards or benchmarks, such as CIS, PCI, and
-     * OWASP.
-     *
-     * @var string
-     */
-    public $standard;
-    /**
-     * Version of the standard or benchmark, for example, 1.1
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * Policies within the standard or benchmark, for example, A.12.4.1
-     *
-     * @param string[] $ids
-     */
-    public function setIds($ids)
+namespace Google\Service\SecurityCommandCenter {
+    class Compliance extends \Google\Collection
     {
+        protected $collection_key = 'ids';
+        /**
+         * Policies within the standard or benchmark, for example, A.12.4.1
+         *
+         * @var string[]
+         */
+        public $ids;
+        /**
+         * Industry-wide compliance standards or benchmarks, such as CIS, PCI, and
+         * OWASP.
+         *
+         * @var string
+         */
+        public $standard;
+        /**
+         * Version of the standard or benchmark, for example, 1.1
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * Policies within the standard or benchmark, for example, A.12.4.1
+         *
+         * @param string[] $ids
+         */
+        public function setIds($ids)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getIds()
+        {
+        }
+        /**
+         * Industry-wide compliance standards or benchmarks, such as CIS, PCI, and
+         * OWASP.
+         *
+         * @param string $standard
+         */
+        public function setStandard($standard)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStandard()
+        {
+        }
+        /**
+         * Version of the standard or benchmark, for example, 1.1
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\Compliance registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIds()
-    {
-    }
-    /**
-     * Industry-wide compliance standards or benchmarks, such as CIS, PCI, and
-     * OWASP.
-     *
-     * @param string $standard
-     */
-    public function setStandard($standard)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStandard()
-    {
-    }
-    /**
-     * Version of the standard or benchmark, for example, 1.1
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_SecurityCommandCenter_Compliance extends \Google\Service\SecurityCommandCenter\Compliance
     {
     }
 }

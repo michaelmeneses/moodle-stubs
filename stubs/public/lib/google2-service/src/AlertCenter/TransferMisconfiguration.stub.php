@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AlertCenter;
-
-class TransferMisconfiguration extends \Google\Collection
-{
-    protected $collection_key = 'errors';
-    protected $errorsType = TransferError::class;
-    protected $errorsDataType = 'array';
-    /**
-     * Details for each invalid transfer or forward.
-     *
-     * @param TransferError[] $errors
-     */
-    public function setErrors($errors)
+namespace Google\Service\AlertCenter {
+    class TransferMisconfiguration extends \Google\Collection
     {
+        protected $collection_key = 'errors';
+        protected $errorsType = TransferError::class;
+        protected $errorsDataType = 'array';
+        /**
+         * Details for each invalid transfer or forward.
+         *
+         * @param TransferError[] $errors
+         */
+        public function setErrors($errors)
+        {
+        }
+        /**
+         * @return TransferError[]
+         */
+        public function getErrors()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TransferError[]
+     * Runtime class alias of \Google\Service\AlertCenter\TransferMisconfiguration registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrors()
+    class Google_Service_AlertCenter_TransferMisconfiguration extends \Google\Service\AlertCenter\TransferMisconfiguration
     {
     }
 }

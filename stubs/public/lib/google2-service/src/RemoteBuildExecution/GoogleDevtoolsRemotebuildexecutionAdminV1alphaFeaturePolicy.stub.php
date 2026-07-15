@@ -21,127 +21,136 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution;
-
-class GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicy extends \Google\Model
-{
-    protected $containerImageSourcesType = GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature::class;
-    protected $containerImageSourcesDataType = '';
-    protected $dockerAddCapabilitiesType = GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature::class;
-    protected $dockerAddCapabilitiesDataType = '';
-    protected $dockerChrootPathType = GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature::class;
-    protected $dockerChrootPathDataType = '';
-    protected $dockerNetworkType = GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature::class;
-    protected $dockerNetworkDataType = '';
-    protected $dockerPrivilegedType = GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature::class;
-    protected $dockerPrivilegedDataType = '';
-    protected $dockerRunAsRootType = GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature::class;
-    protected $dockerRunAsRootDataType = '';
-    protected $dockerRuntimeType = GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature::class;
-    protected $dockerRuntimeDataType = '';
-    protected $dockerSiblingContainersType = GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature::class;
-    protected $dockerSiblingContainersDataType = '';
-    public $linuxIsolation;
+namespace Google\Service\RemoteBuildExecution {
+    class GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicy extends \Google\Model
+    {
+        protected $containerImageSourcesType = GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature::class;
+        protected $containerImageSourcesDataType = '';
+        protected $dockerAddCapabilitiesType = GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature::class;
+        protected $dockerAddCapabilitiesDataType = '';
+        protected $dockerChrootPathType = GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature::class;
+        protected $dockerChrootPathDataType = '';
+        protected $dockerNetworkType = GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature::class;
+        protected $dockerNetworkDataType = '';
+        protected $dockerPrivilegedType = GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature::class;
+        protected $dockerPrivilegedDataType = '';
+        protected $dockerRunAsRootType = GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature::class;
+        protected $dockerRunAsRootDataType = '';
+        protected $dockerRuntimeType = GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature::class;
+        protected $dockerRuntimeDataType = '';
+        protected $dockerSiblingContainersType = GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature::class;
+        protected $dockerSiblingContainersDataType = '';
+        public $linuxIsolation;
+        /**
+         * @param GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature
+         */
+        public function setContainerImageSources(GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature $containerImageSources)
+        {
+        }
+        /**
+         * @return GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature
+         */
+        public function getContainerImageSources()
+        {
+        }
+        /**
+         * @param GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature
+         */
+        public function setDockerAddCapabilities(GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature $dockerAddCapabilities)
+        {
+        }
+        /**
+         * @return GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature
+         */
+        public function getDockerAddCapabilities()
+        {
+        }
+        /**
+         * @param GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature
+         */
+        public function setDockerChrootPath(GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature $dockerChrootPath)
+        {
+        }
+        /**
+         * @return GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature
+         */
+        public function getDockerChrootPath()
+        {
+        }
+        /**
+         * @param GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature
+         */
+        public function setDockerNetwork(GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature $dockerNetwork)
+        {
+        }
+        /**
+         * @return GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature
+         */
+        public function getDockerNetwork()
+        {
+        }
+        /**
+         * @param GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature
+         */
+        public function setDockerPrivileged(GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature $dockerPrivileged)
+        {
+        }
+        /**
+         * @return GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature
+         */
+        public function getDockerPrivileged()
+        {
+        }
+        /**
+         * @param GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature
+         */
+        public function setDockerRunAsRoot(GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature $dockerRunAsRoot)
+        {
+        }
+        /**
+         * @return GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature
+         */
+        public function getDockerRunAsRoot()
+        {
+        }
+        /**
+         * @param GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature
+         */
+        public function setDockerRuntime(GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature $dockerRuntime)
+        {
+        }
+        /**
+         * @return GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature
+         */
+        public function getDockerRuntime()
+        {
+        }
+        /**
+         * @param GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature
+         */
+        public function setDockerSiblingContainers(GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature $dockerSiblingContainers)
+        {
+        }
+        /**
+         * @return GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature
+         */
+        public function getDockerSiblingContainers()
+        {
+        }
+        public function setLinuxIsolation($linuxIsolation)
+        {
+        }
+        public function getLinuxIsolation()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @param GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setContainerImageSources(GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature $containerImageSources)
-    {
-    }
-    /**
-     * @return GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature
-     */
-    public function getContainerImageSources()
-    {
-    }
-    /**
-     * @param GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature
-     */
-    public function setDockerAddCapabilities(GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature $dockerAddCapabilities)
-    {
-    }
-    /**
-     * @return GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature
-     */
-    public function getDockerAddCapabilities()
-    {
-    }
-    /**
-     * @param GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature
-     */
-    public function setDockerChrootPath(GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature $dockerChrootPath)
-    {
-    }
-    /**
-     * @return GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature
-     */
-    public function getDockerChrootPath()
-    {
-    }
-    /**
-     * @param GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature
-     */
-    public function setDockerNetwork(GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature $dockerNetwork)
-    {
-    }
-    /**
-     * @return GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature
-     */
-    public function getDockerNetwork()
-    {
-    }
-    /**
-     * @param GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature
-     */
-    public function setDockerPrivileged(GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature $dockerPrivileged)
-    {
-    }
-    /**
-     * @return GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature
-     */
-    public function getDockerPrivileged()
-    {
-    }
-    /**
-     * @param GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature
-     */
-    public function setDockerRunAsRoot(GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature $dockerRunAsRoot)
-    {
-    }
-    /**
-     * @return GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature
-     */
-    public function getDockerRunAsRoot()
-    {
-    }
-    /**
-     * @param GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature
-     */
-    public function setDockerRuntime(GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature $dockerRuntime)
-    {
-    }
-    /**
-     * @return GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature
-     */
-    public function getDockerRuntime()
-    {
-    }
-    /**
-     * @param GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature
-     */
-    public function setDockerSiblingContainers(GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature $dockerSiblingContainers)
-    {
-    }
-    /**
-     * @return GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature
-     */
-    public function getDockerSiblingContainers()
-    {
-    }
-    public function setLinuxIsolation($linuxIsolation)
-    {
-    }
-    public function getLinuxIsolation()
+    class Google_Service_RemoteBuildExecution_GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicy extends \Google\Service\RemoteBuildExecution\GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicy
     {
     }
 }

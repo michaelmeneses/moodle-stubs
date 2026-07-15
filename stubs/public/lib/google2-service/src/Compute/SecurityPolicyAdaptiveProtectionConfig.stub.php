@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class SecurityPolicyAdaptiveProtectionConfig extends \Google\Model
-{
-    protected $layer7DdosDefenseConfigType = SecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfig::class;
-    protected $layer7DdosDefenseConfigDataType = '';
-    /**
-     * If set to true, enables Cloud Armor Machine Learning.
-     *
-     * @param SecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfig $layer7DdosDefenseConfig
-     */
-    public function setLayer7DdosDefenseConfig(SecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfig $layer7DdosDefenseConfig)
+namespace Google\Service\Compute {
+    class SecurityPolicyAdaptiveProtectionConfig extends \Google\Model
     {
+        protected $layer7DdosDefenseConfigType = SecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfig::class;
+        protected $layer7DdosDefenseConfigDataType = '';
+        /**
+         * If set to true, enables Cloud Armor Machine Learning.
+         *
+         * @param SecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfig $layer7DdosDefenseConfig
+         */
+        public function setLayer7DdosDefenseConfig(SecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfig $layer7DdosDefenseConfig)
+        {
+        }
+        /**
+         * @return SecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfig
+         */
+        public function getLayer7DdosDefenseConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfig
+     * Runtime class alias of \Google\Service\Compute\SecurityPolicyAdaptiveProtectionConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLayer7DdosDefenseConfig()
+    class Google_Service_Compute_SecurityPolicyAdaptiveProtectionConfig extends \Google\Service\Compute\SecurityPolicyAdaptiveProtectionConfig
     {
     }
 }

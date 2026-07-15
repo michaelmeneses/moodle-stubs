@@ -21,27 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting\Resource;
-
-/**
- * The "metros" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dfareportingService = new Google\Service\Dfareporting(...);
- *   $metros = $dfareportingService->metros;
- *  </code>
- */
-class Metros extends \Google\Service\Resource
-{
+namespace Google\Service\Dfareporting\Resource {
+    use Google\Service\Dfareporting\MetrosListResponse;
     /**
-     * Retrieves a list of metros. (metros.listMetros)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param array $optParams Optional parameters.
-     * @return MetrosListResponse
-     * @throws \Google\Service\Exception
+     * The "metros" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dfareportingService = new Google\Service\Dfareporting(...);
+     *   $metros = $dfareportingService->metros;
+     *  </code>
      */
-    public function listMetros($profileId, $optParams = [])
+    class Metros extends \Google\Service\Resource
+    {
+        /**
+         * Retrieves a list of metros. (metros.listMetros)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param array $optParams Optional parameters.
+         * @return MetrosListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listMetros($profileId, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Dfareporting\Resource\Metros registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Dfareporting_Resource_Metros extends \Google\Service\Dfareporting\Resource\Metros
     {
     }
 }

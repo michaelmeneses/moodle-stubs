@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class SecurityContext extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $runAsUser;
-    /**
-     * @param int
-     */
-    public function setRunAsUser($runAsUser)
+namespace Google\Service\CloudRun {
+    class SecurityContext extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $runAsUser;
+        /**
+         * @param int
+         */
+        public function setRunAsUser($runAsUser)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRunAsUser()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudRun\SecurityContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRunAsUser()
+    class Google_Service_CloudRun_SecurityContext extends \Google\Service\CloudRun\SecurityContext
     {
     }
 }

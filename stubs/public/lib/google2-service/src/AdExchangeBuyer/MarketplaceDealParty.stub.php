@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer;
-
-class MarketplaceDealParty extends \Google\Model
-{
-    protected $buyerType = Buyer::class;
-    protected $buyerDataType = '';
-    protected $sellerType = Seller::class;
-    protected $sellerDataType = '';
-    /**
-     * @param Buyer
-     */
-    public function setBuyer(Buyer $buyer)
+namespace Google\Service\AdExchangeBuyer {
+    class MarketplaceDealParty extends \Google\Model
     {
+        protected $buyerType = Buyer::class;
+        protected $buyerDataType = '';
+        protected $sellerType = Seller::class;
+        protected $sellerDataType = '';
+        /**
+         * @param Buyer
+         */
+        public function setBuyer(Buyer $buyer)
+        {
+        }
+        /**
+         * @return Buyer
+         */
+        public function getBuyer()
+        {
+        }
+        /**
+         * @param Seller
+         */
+        public function setSeller(Seller $seller)
+        {
+        }
+        /**
+         * @return Seller
+         */
+        public function getSeller()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Buyer
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\MarketplaceDealParty registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBuyer()
-    {
-    }
-    /**
-     * @param Seller
-     */
-    public function setSeller(Seller $seller)
-    {
-    }
-    /**
-     * @return Seller
-     */
-    public function getSeller()
+    class Google_Service_AdExchangeBuyer_MarketplaceDealParty extends \Google\Service\AdExchangeBuyer\MarketplaceDealParty
     {
     }
 }

@@ -22,6 +22,15 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_courseformat\output\local\content;
 
+use action_link;
+use cm_info;
+use renderable;
+use renderer_base;
+use section_info;
+use stdClass;
+use core\output\named_templatable;
+use core\di;
+use core\hook;
 /**
  * Class to render a activity chooser button.
  *
@@ -73,4 +82,13 @@ class activitychooserbutton implements named_templatable, renderable
     public function get_template_name(renderer_base $renderer): string
     {
     }
+}
+namespace core_course\output;
+
+/**
+ * Runtime class alias of \core_courseformat\output\local\content\activitychooserbutton registered by the original source,
+ * re-emitted as a declaration so static analysers can resolve the name.
+ */
+class activitychooserbutton extends \core_courseformat\output\local\content\activitychooserbutton
+{
 }

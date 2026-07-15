@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIManagement;
-
-class GclbObservationSourcePscNetworkConfig extends \Google\Model
-{
-    /**
-     * Required. The VPC network. Format:
-     * `projects/{project_id}/global/networks/{network}`
-     *
-     * @var string
-     */
-    public $network;
-    /**
-     * Required. The subnetwork in the source region that will be used to connect
-     * to the Cloud Load Balancers via PSC NEGs. Must belong to `network`. Format:
-     * projects/{project_id}/regions/{region}/subnetworks/{subnet}
-     *
-     * @var string
-     */
-    public $subnetwork;
-    /**
-     * Required. The VPC network. Format:
-     * `projects/{project_id}/global/networks/{network}`
-     *
-     * @param string $network
-     */
-    public function setNetwork($network)
+namespace Google\Service\APIManagement {
+    class GclbObservationSourcePscNetworkConfig extends \Google\Model
     {
+        /**
+         * Required. The VPC network. Format:
+         * `projects/{project_id}/global/networks/{network}`
+         *
+         * @var string
+         */
+        public $network;
+        /**
+         * Required. The subnetwork in the source region that will be used to connect
+         * to the Cloud Load Balancers via PSC NEGs. Must belong to `network`. Format:
+         * projects/{project_id}/regions/{region}/subnetworks/{subnet}
+         *
+         * @var string
+         */
+        public $subnetwork;
+        /**
+         * Required. The VPC network. Format:
+         * `projects/{project_id}/global/networks/{network}`
+         *
+         * @param string $network
+         */
+        public function setNetwork($network)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNetwork()
+        {
+        }
+        /**
+         * Required. The subnetwork in the source region that will be used to connect
+         * to the Cloud Load Balancers via PSC NEGs. Must belong to `network`. Format:
+         * projects/{project_id}/regions/{region}/subnetworks/{subnet}
+         *
+         * @param string $subnetwork
+         */
+        public function setSubnetwork($subnetwork)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubnetwork()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\APIManagement\GclbObservationSourcePscNetworkConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNetwork()
-    {
-    }
-    /**
-     * Required. The subnetwork in the source region that will be used to connect
-     * to the Cloud Load Balancers via PSC NEGs. Must belong to `network`. Format:
-     * projects/{project_id}/regions/{region}/subnetworks/{subnet}
-     *
-     * @param string $subnetwork
-     */
-    public function setSubnetwork($subnetwork)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubnetwork()
+    class Google_Service_APIManagement_GclbObservationSourcePscNetworkConfig extends \Google\Service\APIManagement\GclbObservationSourcePscNetworkConfig
     {
     }
 }

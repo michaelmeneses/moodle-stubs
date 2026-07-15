@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAlloyDBAdmin;
-
-class TimeBasedRetention extends \Google\Model
-{
-    /**
-     * The retention period.
-     *
-     * @var string
-     */
-    public $retentionPeriod;
-    /**
-     * The retention period.
-     *
-     * @param string $retentionPeriod
-     */
-    public function setRetentionPeriod($retentionPeriod)
+namespace Google\Service\CloudAlloyDBAdmin {
+    class TimeBasedRetention extends \Google\Model
     {
+        /**
+         * The retention period.
+         *
+         * @var string
+         */
+        public $retentionPeriod;
+        /**
+         * The retention period.
+         *
+         * @param string $retentionPeriod
+         */
+        public function setRetentionPeriod($retentionPeriod)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRetentionPeriod()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudAlloyDBAdmin\TimeBasedRetention registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRetentionPeriod()
+    class Google_Service_CloudAlloyDBAdmin_TimeBasedRetention extends \Google\Service\CloudAlloyDBAdmin\TimeBasedRetention
     {
     }
 }

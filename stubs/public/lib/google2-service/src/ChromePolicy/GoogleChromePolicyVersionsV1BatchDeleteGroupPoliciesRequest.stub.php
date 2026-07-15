@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromePolicy;
-
-class GoogleChromePolicyVersionsV1BatchDeleteGroupPoliciesRequest extends \Google\Collection
-{
-    protected $collection_key = 'requests';
-    protected $requestsType = GoogleChromePolicyVersionsV1DeleteGroupPolicyRequest::class;
-    protected $requestsDataType = 'array';
-    /**
-     * List of policies that will be deleted as defined by the `requests`. All
-     * requests in the list must follow these restrictions: 1. All schemas in the
-     * list must have the same root namespace. 2. All
-     * `policyTargetKey.targetResource` values must point to a group resource. 3.
-     * All `policyTargetKey` values must have the same `app_id` key name in the
-     * `additionalTargetKeys`. 4. No two modification requests can reference the
-     * same `policySchema` + ` policyTargetKey` pair.
-     *
-     * @param GoogleChromePolicyVersionsV1DeleteGroupPolicyRequest[] $requests
-     */
-    public function setRequests($requests)
+namespace Google\Service\ChromePolicy {
+    class GoogleChromePolicyVersionsV1BatchDeleteGroupPoliciesRequest extends \Google\Collection
     {
+        protected $collection_key = 'requests';
+        protected $requestsType = GoogleChromePolicyVersionsV1DeleteGroupPolicyRequest::class;
+        protected $requestsDataType = 'array';
+        /**
+         * List of policies that will be deleted as defined by the `requests`. All
+         * requests in the list must follow these restrictions: 1. All schemas in the
+         * list must have the same root namespace. 2. All
+         * `policyTargetKey.targetResource` values must point to a group resource. 3.
+         * All `policyTargetKey` values must have the same `app_id` key name in the
+         * `additionalTargetKeys`. 4. No two modification requests can reference the
+         * same `policySchema` + ` policyTargetKey` pair.
+         *
+         * @param GoogleChromePolicyVersionsV1DeleteGroupPolicyRequest[] $requests
+         */
+        public function setRequests($requests)
+        {
+        }
+        /**
+         * @return GoogleChromePolicyVersionsV1DeleteGroupPolicyRequest[]
+         */
+        public function getRequests()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleChromePolicyVersionsV1DeleteGroupPolicyRequest[]
+     * Runtime class alias of \Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1BatchDeleteGroupPoliciesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequests()
+    class Google_Service_ChromePolicy_GoogleChromePolicyVersionsV1BatchDeleteGroupPoliciesRequest extends \Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1BatchDeleteGroupPoliciesRequest
     {
     }
 }

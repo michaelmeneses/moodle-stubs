@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Texttospeech;
-
-class ImportDataRequest extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $csvCloudStorageUri;
-    /**
-     * @param string
-     */
-    public function setCsvCloudStorageUri($csvCloudStorageUri)
+namespace Google\Service\Texttospeech {
+    class ImportDataRequest extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $csvCloudStorageUri;
+        /**
+         * @param string
+         */
+        public function setCsvCloudStorageUri($csvCloudStorageUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCsvCloudStorageUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Texttospeech\ImportDataRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCsvCloudStorageUri()
+    class Google_Service_Texttospeech_ImportDataRequest extends \Google\Service\Texttospeech\ImportDataRequest
     {
     }
 }

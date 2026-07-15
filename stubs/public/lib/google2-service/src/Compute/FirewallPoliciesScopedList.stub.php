@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class FirewallPoliciesScopedList extends \Google\Collection
-{
-    protected $collection_key = 'firewallPolicies';
-    protected $firewallPoliciesType = FirewallPolicy::class;
-    protected $firewallPoliciesDataType = 'array';
-    protected $warningType = FirewallPoliciesScopedListWarning::class;
-    protected $warningDataType = '';
-    /**
-     * A list of firewall policies contained in this scope.
-     *
-     * @param FirewallPolicy[] $firewallPolicies
-     */
-    public function setFirewallPolicies($firewallPolicies)
+namespace Google\Service\Compute {
+    class FirewallPoliciesScopedList extends \Google\Collection
     {
+        protected $collection_key = 'firewallPolicies';
+        protected $firewallPoliciesType = FirewallPolicy::class;
+        protected $firewallPoliciesDataType = 'array';
+        protected $warningType = FirewallPoliciesScopedListWarning::class;
+        protected $warningDataType = '';
+        /**
+         * A list of firewall policies contained in this scope.
+         *
+         * @param FirewallPolicy[] $firewallPolicies
+         */
+        public function setFirewallPolicies($firewallPolicies)
+        {
+        }
+        /**
+         * @return FirewallPolicy[]
+         */
+        public function getFirewallPolicies()
+        {
+        }
+        /**
+         * Informational warning which replaces the list of firewall policies when the
+         * list is empty.
+         *
+         * @param FirewallPoliciesScopedListWarning $warning
+         */
+        public function setWarning(FirewallPoliciesScopedListWarning $warning)
+        {
+        }
+        /**
+         * @return FirewallPoliciesScopedListWarning
+         */
+        public function getWarning()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FirewallPolicy[]
+     * Runtime class alias of \Google\Service\Compute\FirewallPoliciesScopedList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFirewallPolicies()
-    {
-    }
-    /**
-     * Informational warning which replaces the list of firewall policies when the
-     * list is empty.
-     *
-     * @param FirewallPoliciesScopedListWarning $warning
-     */
-    public function setWarning(FirewallPoliciesScopedListWarning $warning)
-    {
-    }
-    /**
-     * @return FirewallPoliciesScopedListWarning
-     */
-    public function getWarning()
+    class Google_Service_Compute_FirewallPoliciesScopedList extends \Google\Service\Compute\FirewallPoliciesScopedList
     {
     }
 }

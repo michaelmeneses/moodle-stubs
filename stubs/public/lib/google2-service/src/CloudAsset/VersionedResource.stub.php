@@ -21,85 +21,94 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class VersionedResource extends \Google\Collection
-{
-    protected $collection_key = 'assetExceptions';
-    protected $assetExceptionsType = AssetException::class;
-    protected $assetExceptionsDataType = 'array';
-    /**
-     * JSON representation of the resource as defined by the corresponding service
-     * providing this resource. Example: If the resource is an instance provided
-     * by Compute Engine, this field will contain the JSON representation of the
-     * instance as defined by Compute Engine:
-     * `https://cloud.google.com/compute/docs/reference/rest/v1/instances`. You
-     * can find the resource definition for each supported resource type in this
-     * table: `https://cloud.google.com/asset-inventory/docs/supported-asset-
-     * types`
-     *
-     * @var array[]
-     */
-    public $resource;
-    /**
-     * API version of the resource. Example: If the resource is an instance
-     * provided by Compute Engine v1 API as defined in
-     * `https://cloud.google.com/compute/docs/reference/rest/v1/instances`,
-     * version will be "v1".
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * The exceptions of a resource.
-     *
-     * @param AssetException[] $assetExceptions
-     */
-    public function setAssetExceptions($assetExceptions)
+namespace Google\Service\CloudAsset {
+    class VersionedResource extends \Google\Collection
     {
+        protected $collection_key = 'assetExceptions';
+        protected $assetExceptionsType = AssetException::class;
+        protected $assetExceptionsDataType = 'array';
+        /**
+         * JSON representation of the resource as defined by the corresponding service
+         * providing this resource. Example: If the resource is an instance provided
+         * by Compute Engine, this field will contain the JSON representation of the
+         * instance as defined by Compute Engine:
+         * `https://cloud.google.com/compute/docs/reference/rest/v1/instances`. You
+         * can find the resource definition for each supported resource type in this
+         * table: `https://cloud.google.com/asset-inventory/docs/supported-asset-
+         * types`
+         *
+         * @var array[]
+         */
+        public $resource;
+        /**
+         * API version of the resource. Example: If the resource is an instance
+         * provided by Compute Engine v1 API as defined in
+         * `https://cloud.google.com/compute/docs/reference/rest/v1/instances`,
+         * version will be "v1".
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * The exceptions of a resource.
+         *
+         * @param AssetException[] $assetExceptions
+         */
+        public function setAssetExceptions($assetExceptions)
+        {
+        }
+        /**
+         * @return AssetException[]
+         */
+        public function getAssetExceptions()
+        {
+        }
+        /**
+         * JSON representation of the resource as defined by the corresponding service
+         * providing this resource. Example: If the resource is an instance provided
+         * by Compute Engine, this field will contain the JSON representation of the
+         * instance as defined by Compute Engine:
+         * `https://cloud.google.com/compute/docs/reference/rest/v1/instances`. You
+         * can find the resource definition for each supported resource type in this
+         * table: `https://cloud.google.com/asset-inventory/docs/supported-asset-
+         * types`
+         *
+         * @param array[] $resource
+         */
+        public function setResource($resource)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getResource()
+        {
+        }
+        /**
+         * API version of the resource. Example: If the resource is an instance
+         * provided by Compute Engine v1 API as defined in
+         * `https://cloud.google.com/compute/docs/reference/rest/v1/instances`,
+         * version will be "v1".
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AssetException[]
+     * Runtime class alias of \Google\Service\CloudAsset\VersionedResource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssetExceptions()
-    {
-    }
-    /**
-     * JSON representation of the resource as defined by the corresponding service
-     * providing this resource. Example: If the resource is an instance provided
-     * by Compute Engine, this field will contain the JSON representation of the
-     * instance as defined by Compute Engine:
-     * `https://cloud.google.com/compute/docs/reference/rest/v1/instances`. You
-     * can find the resource definition for each supported resource type in this
-     * table: `https://cloud.google.com/asset-inventory/docs/supported-asset-
-     * types`
-     *
-     * @param array[] $resource
-     */
-    public function setResource($resource)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getResource()
-    {
-    }
-    /**
-     * API version of the resource. Example: If the resource is an instance
-     * provided by Compute Engine v1 API as defined in
-     * `https://cloud.google.com/compute/docs/reference/rest/v1/instances`,
-     * version will be "v1".
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_CloudAsset_VersionedResource extends \Google\Service\CloudAsset\VersionedResource
     {
     }
 }

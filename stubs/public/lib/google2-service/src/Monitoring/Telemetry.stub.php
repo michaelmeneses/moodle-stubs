@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class Telemetry extends \Google\Model
-{
-    /**
-     * The full name of the resource that defines this service. Formatted as
-     * described in https://cloud.google.com/apis/design/resource_names.
-     *
-     * @var string
-     */
-    public $resourceName;
-    /**
-     * The full name of the resource that defines this service. Formatted as
-     * described in https://cloud.google.com/apis/design/resource_names.
-     *
-     * @param string $resourceName
-     */
-    public function setResourceName($resourceName)
+namespace Google\Service\Monitoring {
+    class Telemetry extends \Google\Model
     {
+        /**
+         * The full name of the resource that defines this service. Formatted as
+         * described in https://cloud.google.com/apis/design/resource_names.
+         *
+         * @var string
+         */
+        public $resourceName;
+        /**
+         * The full name of the resource that defines this service. Formatted as
+         * described in https://cloud.google.com/apis/design/resource_names.
+         *
+         * @param string $resourceName
+         */
+        public function setResourceName($resourceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Monitoring\Telemetry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResourceName()
+    class Google_Service_Monitoring_Telemetry extends \Google\Service\Monitoring\Telemetry
     {
     }
 }

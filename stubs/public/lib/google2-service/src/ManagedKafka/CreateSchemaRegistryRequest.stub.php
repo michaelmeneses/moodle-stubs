@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManagedKafka;
-
-class CreateSchemaRegistryRequest extends \Google\Model
-{
-    protected $schemaRegistryType = SchemaRegistry::class;
-    protected $schemaRegistryDataType = '';
-    /**
-     * Required. The schema registry instance ID to use for this schema registry.
-     * The ID must contain only letters (a-z, A-Z), numbers (0-9), and underscores
-     * (-). The maximum length is 63 characters. The ID must not start with a
-     * number.
-     *
-     * @var string
-     */
-    public $schemaRegistryId;
-    /**
-     * Required. The schema registry instance to create. The name field is
-     * ignored.
-     *
-     * @param SchemaRegistry $schemaRegistry
-     */
-    public function setSchemaRegistry(SchemaRegistry $schemaRegistry)
+namespace Google\Service\ManagedKafka {
+    class CreateSchemaRegistryRequest extends \Google\Model
     {
+        protected $schemaRegistryType = SchemaRegistry::class;
+        protected $schemaRegistryDataType = '';
+        /**
+         * Required. The schema registry instance ID to use for this schema registry.
+         * The ID must contain only letters (a-z, A-Z), numbers (0-9), and underscores
+         * (-). The maximum length is 63 characters. The ID must not start with a
+         * number.
+         *
+         * @var string
+         */
+        public $schemaRegistryId;
+        /**
+         * Required. The schema registry instance to create. The name field is
+         * ignored.
+         *
+         * @param SchemaRegistry $schemaRegistry
+         */
+        public function setSchemaRegistry(SchemaRegistry $schemaRegistry)
+        {
+        }
+        /**
+         * @return SchemaRegistry
+         */
+        public function getSchemaRegistry()
+        {
+        }
+        /**
+         * Required. The schema registry instance ID to use for this schema registry.
+         * The ID must contain only letters (a-z, A-Z), numbers (0-9), and underscores
+         * (-). The maximum length is 63 characters. The ID must not start with a
+         * number.
+         *
+         * @param string $schemaRegistryId
+         */
+        public function setSchemaRegistryId($schemaRegistryId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSchemaRegistryId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SchemaRegistry
+     * Runtime class alias of \Google\Service\ManagedKafka\CreateSchemaRegistryRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSchemaRegistry()
-    {
-    }
-    /**
-     * Required. The schema registry instance ID to use for this schema registry.
-     * The ID must contain only letters (a-z, A-Z), numbers (0-9), and underscores
-     * (-). The maximum length is 63 characters. The ID must not start with a
-     * number.
-     *
-     * @param string $schemaRegistryId
-     */
-    public function setSchemaRegistryId($schemaRegistryId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSchemaRegistryId()
+    class Google_Service_ManagedKafka_CreateSchemaRegistryRequest extends \Google\Service\ManagedKafka\CreateSchemaRegistryRequest
     {
     }
 }

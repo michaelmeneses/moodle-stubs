@@ -21,35 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager\Resource;
-
-/**
- * The "results" collection of methods.
- * Typical usage is:
- *  <code>
- *   $workloadmanagerService = new Google\Service\WorkloadManager(...);
- *   $results = $workloadmanagerService->projects_locations_evaluations_executions_results;
- *  </code>
- */
-class ProjectsLocationsEvaluationsExecutionsResults extends \Google\Service\Resource
-{
+namespace Google\Service\WorkloadManager\Resource {
+    use Google\Service\WorkloadManager\ListExecutionResultsResponse;
     /**
-     * Lists the result of a single evaluation.
-     * (results.listProjectsLocationsEvaluationsExecutionsResults)
-     *
-     * @param string $parent Required. The execution results. Format:
-     * {parent}/evaluations/executions/results
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Filtering results
-     * @opt_param int pageSize Requested page size. Server may return fewer items
-     * than requested. If unspecified, server will pick an appropriate default.
-     * @opt_param string pageToken A token identifying a page of results the server
-     * should return.
-     * @return ListExecutionResultsResponse
-     * @throws \Google\Service\Exception
+     * The "results" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $workloadmanagerService = new Google\Service\WorkloadManager(...);
+     *   $results = $workloadmanagerService->projects_locations_evaluations_executions_results;
+     *  </code>
      */
-    public function listProjectsLocationsEvaluationsExecutionsResults($parent, $optParams = [])
+    class ProjectsLocationsEvaluationsExecutionsResults extends \Google\Service\Resource
+    {
+        /**
+         * Lists the result of a single evaluation.
+         * (results.listProjectsLocationsEvaluationsExecutionsResults)
+         *
+         * @param string $parent Required. The execution results. Format:
+         * {parent}/evaluations/executions/results
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Filtering results
+         * @opt_param int pageSize Requested page size. Server may return fewer items
+         * than requested. If unspecified, server will pick an appropriate default.
+         * @opt_param string pageToken A token identifying a page of results the server
+         * should return.
+         * @return ListExecutionResultsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsEvaluationsExecutionsResults($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\WorkloadManager\Resource\ProjectsLocationsEvaluationsExecutionsResults registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_WorkloadManager_Resource_ProjectsLocationsEvaluationsExecutionsResults extends \Google\Service\WorkloadManager\Resource\ProjectsLocationsEvaluationsExecutionsResults
     {
     }
 }

@@ -21,31 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdMob\Resource;
-
-/**
- * The "mediationReport" collection of methods.
- * Typical usage is:
- *  <code>
- *   $admobService = new Google\Service\AdMob(...);
- *   $mediationReport = $admobService->accounts_mediationReport;
- *  </code>
- */
-class AccountsMediationReport extends \Google\Service\Resource
-{
+namespace Google\Service\AdMob\Resource {
+    use Google\Service\AdMob\GenerateMediationReportRequest;
+    use Google\Service\AdMob\GenerateMediationReportResponse;
     /**
-     * Generates an AdMob Mediation report based on the provided report
-     * specification. Returns result of a server-side streaming RPC. The result is
-     * returned in a sequence of responses. (mediationReport.generate)
-     *
-     * @param string $parent Resource name of the account to generate the report
-     * for. Example: accounts/pub-9876543210987654
-     * @param GenerateMediationReportRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GenerateMediationReportResponse
-     * @throws \Google\Service\Exception
+     * The "mediationReport" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $admobService = new Google\Service\AdMob(...);
+     *   $mediationReport = $admobService->accounts_mediationReport;
+     *  </code>
      */
-    public function generate($parent, GenerateMediationReportRequest $postBody, $optParams = [])
+    class AccountsMediationReport extends \Google\Service\Resource
+    {
+        /**
+         * Generates an AdMob Mediation report based on the provided report
+         * specification. Returns result of a server-side streaming RPC. The result is
+         * returned in a sequence of responses. (mediationReport.generate)
+         *
+         * @param string $parent Resource name of the account to generate the report
+         * for. Example: accounts/pub-9876543210987654
+         * @param GenerateMediationReportRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GenerateMediationReportResponse
+         * @throws \Google\Service\Exception
+         */
+        public function generate($parent, GenerateMediationReportRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AdMob\Resource\AccountsMediationReport registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AdMob_Resource_AccountsMediationReport extends \Google\Service\AdMob\Resource\AccountsMediationReport
     {
     }
 }

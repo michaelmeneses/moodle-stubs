@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveLabels;
-
-class GoogleAppsDriveLabelsV2FieldListOptions extends \Google\Model
-{
-    /**
-     * Maximum number of entries permitted.
-     *
-     * @var int
-     */
-    public $maxEntries;
-    /**
-     * Maximum number of entries permitted.
-     *
-     * @param int $maxEntries
-     */
-    public function setMaxEntries($maxEntries)
+namespace Google\Service\DriveLabels {
+    class GoogleAppsDriveLabelsV2FieldListOptions extends \Google\Model
     {
+        /**
+         * Maximum number of entries permitted.
+         *
+         * @var int
+         */
+        public $maxEntries;
+        /**
+         * Maximum number of entries permitted.
+         *
+         * @param int $maxEntries
+         */
+        public function setMaxEntries($maxEntries)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxEntries()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2FieldListOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaxEntries()
+    class Google_Service_DriveLabels_GoogleAppsDriveLabelsV2FieldListOptions extends \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2FieldListOptions
     {
     }
 }

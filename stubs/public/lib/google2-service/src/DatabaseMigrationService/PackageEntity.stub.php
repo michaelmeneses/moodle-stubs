@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class PackageEntity extends \Google\Model
-{
-    /**
-     * Custom engine specific features.
-     *
-     * @var array[]
-     */
-    public $customFeatures;
-    /**
-     * The SQL code which creates the package body. If the package specification
-     * has cursors or subprograms, then the package body is mandatory.
-     *
-     * @var string
-     */
-    public $packageBody;
-    /**
-     * The SQL code which creates the package.
-     *
-     * @var string
-     */
-    public $packageSqlCode;
-    /**
-     * Custom engine specific features.
-     *
-     * @param array[] $customFeatures
-     */
-    public function setCustomFeatures($customFeatures)
+namespace Google\Service\DatabaseMigrationService {
+    class PackageEntity extends \Google\Model
     {
+        /**
+         * Custom engine specific features.
+         *
+         * @var array[]
+         */
+        public $customFeatures;
+        /**
+         * The SQL code which creates the package body. If the package specification
+         * has cursors or subprograms, then the package body is mandatory.
+         *
+         * @var string
+         */
+        public $packageBody;
+        /**
+         * The SQL code which creates the package.
+         *
+         * @var string
+         */
+        public $packageSqlCode;
+        /**
+         * Custom engine specific features.
+         *
+         * @param array[] $customFeatures
+         */
+        public function setCustomFeatures($customFeatures)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getCustomFeatures()
+        {
+        }
+        /**
+         * The SQL code which creates the package body. If the package specification
+         * has cursors or subprograms, then the package body is mandatory.
+         *
+         * @param string $packageBody
+         */
+        public function setPackageBody($packageBody)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPackageBody()
+        {
+        }
+        /**
+         * The SQL code which creates the package.
+         *
+         * @param string $packageSqlCode
+         */
+        public function setPackageSqlCode($packageSqlCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPackageSqlCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\PackageEntity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomFeatures()
-    {
-    }
-    /**
-     * The SQL code which creates the package body. If the package specification
-     * has cursors or subprograms, then the package body is mandatory.
-     *
-     * @param string $packageBody
-     */
-    public function setPackageBody($packageBody)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPackageBody()
-    {
-    }
-    /**
-     * The SQL code which creates the package.
-     *
-     * @param string $packageSqlCode
-     */
-    public function setPackageSqlCode($packageSqlCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPackageSqlCode()
+    class Google_Service_DatabaseMigrationService_PackageEntity extends \Google\Service\DatabaseMigrationService\PackageEntity
     {
     }
 }

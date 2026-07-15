@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigQueryReservation;
-
-class ReservationGroup extends \Google\Model
-{
-    /**
-     * Identifier. The resource name of the reservation group, e.g.,
-     * `projects/locations/reservationGroups/team1-prod`. The reservation_group_id
-     * must only contain lower case alphanumeric characters or dashes. It must
-     * start with a letter and must not end with a dash. Its maximum length is 64
-     * characters.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Identifier. The resource name of the reservation group, e.g.,
-     * `projects/locations/reservationGroups/team1-prod`. The reservation_group_id
-     * must only contain lower case alphanumeric characters or dashes. It must
-     * start with a letter and must not end with a dash. Its maximum length is 64
-     * characters.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\BigQueryReservation {
+    class ReservationGroup extends \Google\Model
     {
+        /**
+         * Identifier. The resource name of the reservation group, e.g.,
+         * `projects/locations/reservationGroups/team1-prod`. The reservation_group_id
+         * must only contain lower case alphanumeric characters or dashes. It must
+         * start with a letter and must not end with a dash. Its maximum length is 64
+         * characters.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Identifier. The resource name of the reservation group, e.g.,
+         * `projects/locations/reservationGroups/team1-prod`. The reservation_group_id
+         * must only contain lower case alphanumeric characters or dashes. It must
+         * start with a letter and must not end with a dash. Its maximum length is 64
+         * characters.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BigQueryReservation\ReservationGroup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
+    class Google_Service_BigQueryReservation_ReservationGroup extends \Google\Service\BigQueryReservation\ReservationGroup
     {
     }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BeyondCorp;
-
-class GoogleCloudBeyondcorpAppconnectorsV1ResolveInstanceConfigResponse extends \Google\Model
-{
-    protected $instanceConfigType = GoogleCloudBeyondcorpAppconnectorsV1AppConnectorInstanceConfig::class;
-    protected $instanceConfigDataType = '';
-    /**
-     * AppConnectorInstanceConfig.
-     *
-     * @param GoogleCloudBeyondcorpAppconnectorsV1AppConnectorInstanceConfig $instanceConfig
-     */
-    public function setInstanceConfig(GoogleCloudBeyondcorpAppconnectorsV1AppConnectorInstanceConfig $instanceConfig)
+namespace Google\Service\BeyondCorp {
+    class GoogleCloudBeyondcorpAppconnectorsV1ResolveInstanceConfigResponse extends \Google\Model
     {
+        protected $instanceConfigType = GoogleCloudBeyondcorpAppconnectorsV1AppConnectorInstanceConfig::class;
+        protected $instanceConfigDataType = '';
+        /**
+         * AppConnectorInstanceConfig.
+         *
+         * @param GoogleCloudBeyondcorpAppconnectorsV1AppConnectorInstanceConfig $instanceConfig
+         */
+        public function setInstanceConfig(GoogleCloudBeyondcorpAppconnectorsV1AppConnectorInstanceConfig $instanceConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudBeyondcorpAppconnectorsV1AppConnectorInstanceConfig
+         */
+        public function getInstanceConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudBeyondcorpAppconnectorsV1AppConnectorInstanceConfig
+     * Runtime class alias of \Google\Service\BeyondCorp\GoogleCloudBeyondcorpAppconnectorsV1ResolveInstanceConfigResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstanceConfig()
+    class Google_Service_BeyondCorp_GoogleCloudBeyondcorpAppconnectorsV1ResolveInstanceConfigResponse extends \Google\Service\BeyondCorp\GoogleCloudBeyondcorpAppconnectorsV1ResolveInstanceConfigResponse
     {
     }
 }

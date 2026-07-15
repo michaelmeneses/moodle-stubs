@@ -21,205 +21,214 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer;
-
-class PublisherProfileApiProto extends \Google\Collection
-{
-    protected $collection_key = 'topHeadlines';
-    public $audience;
-    public $buyerPitchStatement;
-    public $directContact;
-    public $exchange;
-    public $forecastInventory;
-    public $googlePlusLink;
-    public $isParent;
-    public $isPublished;
-    public $kind;
-    public $logoUrl;
-    public $mediaKitLink;
-    public $name;
-    public $overview;
-    public $profileId;
-    public $programmaticContact;
-    public $publisherAppIds;
-    protected $publisherAppsType = MobileApplication::class;
-    protected $publisherAppsDataType = 'array';
-    public $publisherDomains;
-    public $publisherProfileId;
-    protected $publisherProvidedForecastType = PublisherProvidedForecast::class;
-    protected $publisherProvidedForecastDataType = '';
-    public $rateCardInfoLink;
-    public $samplePageLink;
-    protected $sellerType = Seller::class;
-    protected $sellerDataType = '';
-    public $state;
-    public $topHeadlines;
-    public function setAudience($audience)
+namespace Google\Service\AdExchangeBuyer {
+    class PublisherProfileApiProto extends \Google\Collection
     {
+        protected $collection_key = 'topHeadlines';
+        public $audience;
+        public $buyerPitchStatement;
+        public $directContact;
+        public $exchange;
+        public $forecastInventory;
+        public $googlePlusLink;
+        public $isParent;
+        public $isPublished;
+        public $kind;
+        public $logoUrl;
+        public $mediaKitLink;
+        public $name;
+        public $overview;
+        public $profileId;
+        public $programmaticContact;
+        public $publisherAppIds;
+        protected $publisherAppsType = MobileApplication::class;
+        protected $publisherAppsDataType = 'array';
+        public $publisherDomains;
+        public $publisherProfileId;
+        protected $publisherProvidedForecastType = PublisherProvidedForecast::class;
+        protected $publisherProvidedForecastDataType = '';
+        public $rateCardInfoLink;
+        public $samplePageLink;
+        protected $sellerType = Seller::class;
+        protected $sellerDataType = '';
+        public $state;
+        public $topHeadlines;
+        public function setAudience($audience)
+        {
+        }
+        public function getAudience()
+        {
+        }
+        public function setBuyerPitchStatement($buyerPitchStatement)
+        {
+        }
+        public function getBuyerPitchStatement()
+        {
+        }
+        public function setDirectContact($directContact)
+        {
+        }
+        public function getDirectContact()
+        {
+        }
+        public function setExchange($exchange)
+        {
+        }
+        public function getExchange()
+        {
+        }
+        public function setForecastInventory($forecastInventory)
+        {
+        }
+        public function getForecastInventory()
+        {
+        }
+        public function setGooglePlusLink($googlePlusLink)
+        {
+        }
+        public function getGooglePlusLink()
+        {
+        }
+        public function setIsParent($isParent)
+        {
+        }
+        public function getIsParent()
+        {
+        }
+        public function setIsPublished($isPublished)
+        {
+        }
+        public function getIsPublished()
+        {
+        }
+        public function setKind($kind)
+        {
+        }
+        public function getKind()
+        {
+        }
+        public function setLogoUrl($logoUrl)
+        {
+        }
+        public function getLogoUrl()
+        {
+        }
+        public function setMediaKitLink($mediaKitLink)
+        {
+        }
+        public function getMediaKitLink()
+        {
+        }
+        public function setName($name)
+        {
+        }
+        public function getName()
+        {
+        }
+        public function setOverview($overview)
+        {
+        }
+        public function getOverview()
+        {
+        }
+        public function setProfileId($profileId)
+        {
+        }
+        public function getProfileId()
+        {
+        }
+        public function setProgrammaticContact($programmaticContact)
+        {
+        }
+        public function getProgrammaticContact()
+        {
+        }
+        public function setPublisherAppIds($publisherAppIds)
+        {
+        }
+        public function getPublisherAppIds()
+        {
+        }
+        /**
+         * @param MobileApplication[]
+         */
+        public function setPublisherApps($publisherApps)
+        {
+        }
+        /**
+         * @return MobileApplication[]
+         */
+        public function getPublisherApps()
+        {
+        }
+        public function setPublisherDomains($publisherDomains)
+        {
+        }
+        public function getPublisherDomains()
+        {
+        }
+        public function setPublisherProfileId($publisherProfileId)
+        {
+        }
+        public function getPublisherProfileId()
+        {
+        }
+        /**
+         * @param PublisherProvidedForecast
+         */
+        public function setPublisherProvidedForecast(PublisherProvidedForecast $publisherProvidedForecast)
+        {
+        }
+        /**
+         * @return PublisherProvidedForecast
+         */
+        public function getPublisherProvidedForecast()
+        {
+        }
+        public function setRateCardInfoLink($rateCardInfoLink)
+        {
+        }
+        public function getRateCardInfoLink()
+        {
+        }
+        public function setSamplePageLink($samplePageLink)
+        {
+        }
+        public function getSamplePageLink()
+        {
+        }
+        /**
+         * @param Seller
+         */
+        public function setSeller(Seller $seller)
+        {
+        }
+        /**
+         * @return Seller
+         */
+        public function getSeller()
+        {
+        }
+        public function setState($state)
+        {
+        }
+        public function getState()
+        {
+        }
+        public function setTopHeadlines($topHeadlines)
+        {
+        }
+        public function getTopHeadlines()
+        {
+        }
     }
-    public function getAudience()
-    {
-    }
-    public function setBuyerPitchStatement($buyerPitchStatement)
-    {
-    }
-    public function getBuyerPitchStatement()
-    {
-    }
-    public function setDirectContact($directContact)
-    {
-    }
-    public function getDirectContact()
-    {
-    }
-    public function setExchange($exchange)
-    {
-    }
-    public function getExchange()
-    {
-    }
-    public function setForecastInventory($forecastInventory)
-    {
-    }
-    public function getForecastInventory()
-    {
-    }
-    public function setGooglePlusLink($googlePlusLink)
-    {
-    }
-    public function getGooglePlusLink()
-    {
-    }
-    public function setIsParent($isParent)
-    {
-    }
-    public function getIsParent()
-    {
-    }
-    public function setIsPublished($isPublished)
-    {
-    }
-    public function getIsPublished()
-    {
-    }
-    public function setKind($kind)
-    {
-    }
-    public function getKind()
-    {
-    }
-    public function setLogoUrl($logoUrl)
-    {
-    }
-    public function getLogoUrl()
-    {
-    }
-    public function setMediaKitLink($mediaKitLink)
-    {
-    }
-    public function getMediaKitLink()
-    {
-    }
-    public function setName($name)
-    {
-    }
-    public function getName()
-    {
-    }
-    public function setOverview($overview)
-    {
-    }
-    public function getOverview()
-    {
-    }
-    public function setProfileId($profileId)
-    {
-    }
-    public function getProfileId()
-    {
-    }
-    public function setProgrammaticContact($programmaticContact)
-    {
-    }
-    public function getProgrammaticContact()
-    {
-    }
-    public function setPublisherAppIds($publisherAppIds)
-    {
-    }
-    public function getPublisherAppIds()
-    {
-    }
+}
+namespace {
     /**
-     * @param MobileApplication[]
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\PublisherProfileApiProto registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setPublisherApps($publisherApps)
-    {
-    }
-    /**
-     * @return MobileApplication[]
-     */
-    public function getPublisherApps()
-    {
-    }
-    public function setPublisherDomains($publisherDomains)
-    {
-    }
-    public function getPublisherDomains()
-    {
-    }
-    public function setPublisherProfileId($publisherProfileId)
-    {
-    }
-    public function getPublisherProfileId()
-    {
-    }
-    /**
-     * @param PublisherProvidedForecast
-     */
-    public function setPublisherProvidedForecast(PublisherProvidedForecast $publisherProvidedForecast)
-    {
-    }
-    /**
-     * @return PublisherProvidedForecast
-     */
-    public function getPublisherProvidedForecast()
-    {
-    }
-    public function setRateCardInfoLink($rateCardInfoLink)
-    {
-    }
-    public function getRateCardInfoLink()
-    {
-    }
-    public function setSamplePageLink($samplePageLink)
-    {
-    }
-    public function getSamplePageLink()
-    {
-    }
-    /**
-     * @param Seller
-     */
-    public function setSeller(Seller $seller)
-    {
-    }
-    /**
-     * @return Seller
-     */
-    public function getSeller()
-    {
-    }
-    public function setState($state)
-    {
-    }
-    public function getState()
-    {
-    }
-    public function setTopHeadlines($topHeadlines)
-    {
-    }
-    public function getTopHeadlines()
+    class Google_Service_AdExchangeBuyer_PublisherProfileApiProto extends \Google\Service\AdExchangeBuyer\PublisherProfileApiProto
     {
     }
 }

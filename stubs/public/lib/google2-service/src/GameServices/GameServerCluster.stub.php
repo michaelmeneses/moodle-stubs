@@ -21,132 +21,141 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GameServices;
-
-class GameServerCluster extends \Google\Model
-{
-    protected $clusterStateType = KubernetesClusterState::class;
-    protected $clusterStateDataType = '';
-    protected $connectionInfoType = GameServerClusterConnectionInfo::class;
-    protected $connectionInfoDataType = '';
-    /**
-     * @var string
-     */
-    public $createTime;
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var string
-     */
-    public $etag;
-    /**
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * @param KubernetesClusterState
-     */
-    public function setClusterState(KubernetesClusterState $clusterState)
+namespace Google\Service\GameServices {
+    class GameServerCluster extends \Google\Model
     {
+        protected $clusterStateType = KubernetesClusterState::class;
+        protected $clusterStateDataType = '';
+        protected $connectionInfoType = GameServerClusterConnectionInfo::class;
+        protected $connectionInfoDataType = '';
+        /**
+         * @var string
+         */
+        public $createTime;
+        /**
+         * @var string
+         */
+        public $description;
+        /**
+         * @var string
+         */
+        public $etag;
+        /**
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * @param KubernetesClusterState
+         */
+        public function setClusterState(KubernetesClusterState $clusterState)
+        {
+        }
+        /**
+         * @return KubernetesClusterState
+         */
+        public function getClusterState()
+        {
+        }
+        /**
+         * @param GameServerClusterConnectionInfo
+         */
+        public function setConnectionInfo(GameServerClusterConnectionInfo $connectionInfo)
+        {
+        }
+        /**
+         * @return GameServerClusterConnectionInfo
+         */
+        public function getConnectionInfo()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return KubernetesClusterState
+     * Runtime class alias of \Google\Service\GameServices\GameServerCluster registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClusterState()
-    {
-    }
-    /**
-     * @param GameServerClusterConnectionInfo
-     */
-    public function setConnectionInfo(GameServerClusterConnectionInfo $connectionInfo)
-    {
-    }
-    /**
-     * @return GameServerClusterConnectionInfo
-     */
-    public function getConnectionInfo()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_GameServices_GameServerCluster extends \Google\Service\GameServices\GameServerCluster
     {
     }
 }

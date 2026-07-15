@@ -21,102 +21,111 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class TextButton extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $altText;
-    /**
-     * @var string
-     */
-    public $backgroundColor;
-    /**
-     * @var bool
-     */
-    public $disabled;
-    protected $onClickType = OnClick::class;
-    protected $onClickDataType = '';
-    /**
-     * @var string
-     */
-    public $style;
-    /**
-     * @var string
-     */
-    public $text;
-    /**
-     * @param string
-     */
-    public function setAltText($altText)
+namespace Google\Service\CloudSearch {
+    class TextButton extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $altText;
+        /**
+         * @var string
+         */
+        public $backgroundColor;
+        /**
+         * @var bool
+         */
+        public $disabled;
+        protected $onClickType = OnClick::class;
+        protected $onClickDataType = '';
+        /**
+         * @var string
+         */
+        public $style;
+        /**
+         * @var string
+         */
+        public $text;
+        /**
+         * @param string
+         */
+        public function setAltText($altText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAltText()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setBackgroundColor($backgroundColor)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBackgroundColor()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setDisabled($disabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisabled()
+        {
+        }
+        /**
+         * @param OnClick
+         */
+        public function setOnClick(OnClick $onClick)
+        {
+        }
+        /**
+         * @return OnClick
+         */
+        public function getOnClick()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setStyle($style)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStyle()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\TextButton registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAltText()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setBackgroundColor($backgroundColor)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBackgroundColor()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setDisabled($disabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDisabled()
-    {
-    }
-    /**
-     * @param OnClick
-     */
-    public function setOnClick(OnClick $onClick)
-    {
-    }
-    /**
-     * @return OnClick
-     */
-    public function getOnClick()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setStyle($style)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStyle()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
+    class Google_Service_CloudSearch_TextButton extends \Google\Service\CloudSearch\TextButton
     {
     }
 }

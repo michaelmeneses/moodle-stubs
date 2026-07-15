@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExperienceReport;
-
-class SiteSummaryResponse extends \Google\Model
-{
-    protected $desktopSummaryType = PlatformSummary::class;
-    protected $desktopSummaryDataType = '';
-    protected $mobileSummaryType = PlatformSummary::class;
-    protected $mobileSummaryDataType = '';
-    /**
-     * The name of the reviewed site, e.g. `google.com`.
-     *
-     * @var string
-     */
-    public $reviewedSite;
-    /**
-     * The site's Ad Experience Report summary on desktop.
-     *
-     * @param PlatformSummary $desktopSummary
-     */
-    public function setDesktopSummary(PlatformSummary $desktopSummary)
+namespace Google\Service\AdExperienceReport {
+    class SiteSummaryResponse extends \Google\Model
     {
+        protected $desktopSummaryType = PlatformSummary::class;
+        protected $desktopSummaryDataType = '';
+        protected $mobileSummaryType = PlatformSummary::class;
+        protected $mobileSummaryDataType = '';
+        /**
+         * The name of the reviewed site, e.g. `google.com`.
+         *
+         * @var string
+         */
+        public $reviewedSite;
+        /**
+         * The site's Ad Experience Report summary on desktop.
+         *
+         * @param PlatformSummary $desktopSummary
+         */
+        public function setDesktopSummary(PlatformSummary $desktopSummary)
+        {
+        }
+        /**
+         * @return PlatformSummary
+         */
+        public function getDesktopSummary()
+        {
+        }
+        /**
+         * The site's Ad Experience Report summary on mobile.
+         *
+         * @param PlatformSummary $mobileSummary
+         */
+        public function setMobileSummary(PlatformSummary $mobileSummary)
+        {
+        }
+        /**
+         * @return PlatformSummary
+         */
+        public function getMobileSummary()
+        {
+        }
+        /**
+         * The name of the reviewed site, e.g. `google.com`.
+         *
+         * @param string $reviewedSite
+         */
+        public function setReviewedSite($reviewedSite)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReviewedSite()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PlatformSummary
+     * Runtime class alias of \Google\Service\AdExperienceReport\SiteSummaryResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDesktopSummary()
-    {
-    }
-    /**
-     * The site's Ad Experience Report summary on mobile.
-     *
-     * @param PlatformSummary $mobileSummary
-     */
-    public function setMobileSummary(PlatformSummary $mobileSummary)
-    {
-    }
-    /**
-     * @return PlatformSummary
-     */
-    public function getMobileSummary()
-    {
-    }
-    /**
-     * The name of the reviewed site, e.g. `google.com`.
-     *
-     * @param string $reviewedSite
-     */
-    public function setReviewedSite($reviewedSite)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReviewedSite()
+    class Google_Service_AdExperienceReport_SiteSummaryResponse extends \Google\Service\AdExperienceReport\SiteSummaryResponse
     {
     }
 }

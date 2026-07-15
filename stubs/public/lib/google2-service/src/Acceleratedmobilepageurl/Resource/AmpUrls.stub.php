@@ -21,28 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Acceleratedmobilepageurl\Resource;
-
-/**
- * The "ampUrls" collection of methods.
- * Typical usage is:
- *  <code>
- *   $acceleratedmobilepageurlService = new Google\Service\Acceleratedmobilepageurl(...);
- *   $ampUrls = $acceleratedmobilepageurlService->ampUrls;
- *  </code>
- */
-class AmpUrls extends \Google\Service\Resource
-{
+namespace Google\Service\Acceleratedmobilepageurl\Resource {
+    use Google\Service\Acceleratedmobilepageurl\BatchGetAmpUrlsRequest;
+    use Google\Service\Acceleratedmobilepageurl\BatchGetAmpUrlsResponse;
     /**
-     * Returns AMP URL(s) and equivalent [AMP Cache URL(s)](/amp/cache/overview#amp-
-     * cache-url-format). (ampUrls.batchGet)
-     *
-     * @param BatchGetAmpUrlsRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return BatchGetAmpUrlsResponse
-     * @throws \Google\Service\Exception
+     * The "ampUrls" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $acceleratedmobilepageurlService = new Google\Service\Acceleratedmobilepageurl(...);
+     *   $ampUrls = $acceleratedmobilepageurlService->ampUrls;
+     *  </code>
      */
-    public function batchGet(BatchGetAmpUrlsRequest $postBody, $optParams = [])
+    class AmpUrls extends \Google\Service\Resource
+    {
+        /**
+         * Returns AMP URL(s) and equivalent [AMP Cache URL(s)](/amp/cache/overview#amp-
+         * cache-url-format). (ampUrls.batchGet)
+         *
+         * @param BatchGetAmpUrlsRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return BatchGetAmpUrlsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function batchGet(BatchGetAmpUrlsRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Acceleratedmobilepageurl\Resource\AmpUrls registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Acceleratedmobilepageurl_Resource_AmpUrls extends \Google\Service\Acceleratedmobilepageurl\Resource\AmpUrls
     {
     }
 }

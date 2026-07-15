@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class SecurityPoliciesListPreconfiguredExpressionSetsResponse extends \Google\Model
-{
-    protected $preconfiguredExpressionSetsType = SecurityPoliciesWafConfig::class;
-    protected $preconfiguredExpressionSetsDataType = '';
-    /**
-     * @param SecurityPoliciesWafConfig $preconfiguredExpressionSets
-     */
-    public function setPreconfiguredExpressionSets(SecurityPoliciesWafConfig $preconfiguredExpressionSets)
+namespace Google\Service\Compute {
+    class SecurityPoliciesListPreconfiguredExpressionSetsResponse extends \Google\Model
     {
+        protected $preconfiguredExpressionSetsType = SecurityPoliciesWafConfig::class;
+        protected $preconfiguredExpressionSetsDataType = '';
+        /**
+         * @param SecurityPoliciesWafConfig $preconfiguredExpressionSets
+         */
+        public function setPreconfiguredExpressionSets(SecurityPoliciesWafConfig $preconfiguredExpressionSets)
+        {
+        }
+        /**
+         * @return SecurityPoliciesWafConfig
+         */
+        public function getPreconfiguredExpressionSets()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SecurityPoliciesWafConfig
+     * Runtime class alias of \Google\Service\Compute\SecurityPoliciesListPreconfiguredExpressionSetsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPreconfiguredExpressionSets()
+    class Google_Service_Compute_SecurityPoliciesListPreconfiguredExpressionSetsResponse extends \Google\Service\Compute\SecurityPoliciesListPreconfiguredExpressionSetsResponse
     {
     }
 }

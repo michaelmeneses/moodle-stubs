@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class StartBackfillJobResponse extends \Google\Model
-{
-    protected $objectType = StreamObject::class;
-    protected $objectDataType = '';
-    /**
-     * The stream object resource a backfill job was started for.
-     *
-     * @param StreamObject $object
-     */
-    public function setObject(StreamObject $object)
+namespace Google\Service\Datastream {
+    class StartBackfillJobResponse extends \Google\Model
     {
+        protected $objectType = StreamObject::class;
+        protected $objectDataType = '';
+        /**
+         * The stream object resource a backfill job was started for.
+         *
+         * @param StreamObject $object
+         */
+        public function setObject(StreamObject $object)
+        {
+        }
+        /**
+         * @return StreamObject
+         */
+        public function getObject()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return StreamObject
+     * Runtime class alias of \Google\Service\Datastream\StartBackfillJobResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getObject()
+    class Google_Service_Datastream_StartBackfillJobResponse extends \Google\Service\Datastream\StartBackfillJobResponse
     {
     }
 }

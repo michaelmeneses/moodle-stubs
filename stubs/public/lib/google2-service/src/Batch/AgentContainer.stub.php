@@ -21,119 +21,128 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Batch;
-
-class AgentContainer extends \Google\Collection
-{
-    protected $collection_key = 'volumes';
-    /**
-     * Overrides the `CMD` specified in the container. If there is an ENTRYPOINT
-     * (either in the container image or with the entrypoint field below) then
-     * commands are appended as arguments to the ENTRYPOINT.
-     *
-     * @var string[]
-     */
-    public $commands;
-    /**
-     * Overrides the `ENTRYPOINT` specified in the container.
-     *
-     * @var string
-     */
-    public $entrypoint;
-    /**
-     * The URI to pull the container image from.
-     *
-     * @var string
-     */
-    public $imageUri;
-    /**
-     * Arbitrary additional options to include in the "docker run" command when
-     * running this container, e.g. "--network host".
-     *
-     * @var string
-     */
-    public $options;
-    /**
-     * Volumes to mount (bind mount) from the host machine files or directories
-     * into the container, formatted to match docker run's --volume option, e.g.
-     * /foo:/bar, or /foo:/bar:ro
-     *
-     * @var string[]
-     */
-    public $volumes;
-    /**
-     * Overrides the `CMD` specified in the container. If there is an ENTRYPOINT
-     * (either in the container image or with the entrypoint field below) then
-     * commands are appended as arguments to the ENTRYPOINT.
-     *
-     * @param string[] $commands
-     */
-    public function setCommands($commands)
+namespace Google\Service\Batch {
+    class AgentContainer extends \Google\Collection
     {
+        protected $collection_key = 'volumes';
+        /**
+         * Overrides the `CMD` specified in the container. If there is an ENTRYPOINT
+         * (either in the container image or with the entrypoint field below) then
+         * commands are appended as arguments to the ENTRYPOINT.
+         *
+         * @var string[]
+         */
+        public $commands;
+        /**
+         * Overrides the `ENTRYPOINT` specified in the container.
+         *
+         * @var string
+         */
+        public $entrypoint;
+        /**
+         * The URI to pull the container image from.
+         *
+         * @var string
+         */
+        public $imageUri;
+        /**
+         * Arbitrary additional options to include in the "docker run" command when
+         * running this container, e.g. "--network host".
+         *
+         * @var string
+         */
+        public $options;
+        /**
+         * Volumes to mount (bind mount) from the host machine files or directories
+         * into the container, formatted to match docker run's --volume option, e.g.
+         * /foo:/bar, or /foo:/bar:ro
+         *
+         * @var string[]
+         */
+        public $volumes;
+        /**
+         * Overrides the `CMD` specified in the container. If there is an ENTRYPOINT
+         * (either in the container image or with the entrypoint field below) then
+         * commands are appended as arguments to the ENTRYPOINT.
+         *
+         * @param string[] $commands
+         */
+        public function setCommands($commands)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCommands()
+        {
+        }
+        /**
+         * Overrides the `ENTRYPOINT` specified in the container.
+         *
+         * @param string $entrypoint
+         */
+        public function setEntrypoint($entrypoint)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEntrypoint()
+        {
+        }
+        /**
+         * The URI to pull the container image from.
+         *
+         * @param string $imageUri
+         */
+        public function setImageUri($imageUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImageUri()
+        {
+        }
+        /**
+         * Arbitrary additional options to include in the "docker run" command when
+         * running this container, e.g. "--network host".
+         *
+         * @param string $options
+         */
+        public function setOptions($options)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOptions()
+        {
+        }
+        /**
+         * Volumes to mount (bind mount) from the host machine files or directories
+         * into the container, formatted to match docker run's --volume option, e.g.
+         * /foo:/bar, or /foo:/bar:ro
+         *
+         * @param string[] $volumes
+         */
+        public function setVolumes($volumes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getVolumes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Batch\AgentContainer registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCommands()
-    {
-    }
-    /**
-     * Overrides the `ENTRYPOINT` specified in the container.
-     *
-     * @param string $entrypoint
-     */
-    public function setEntrypoint($entrypoint)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEntrypoint()
-    {
-    }
-    /**
-     * The URI to pull the container image from.
-     *
-     * @param string $imageUri
-     */
-    public function setImageUri($imageUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImageUri()
-    {
-    }
-    /**
-     * Arbitrary additional options to include in the "docker run" command when
-     * running this container, e.g. "--network host".
-     *
-     * @param string $options
-     */
-    public function setOptions($options)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOptions()
-    {
-    }
-    /**
-     * Volumes to mount (bind mount) from the host machine files or directories
-     * into the container, formatted to match docker run's --volume option, e.g.
-     * /foo:/bar, or /foo:/bar:ro
-     *
-     * @param string[] $volumes
-     */
-    public function setVolumes($volumes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getVolumes()
+    class Google_Service_Batch_AgentContainer extends \Google\Service\Batch\AgentContainer
     {
     }
 }

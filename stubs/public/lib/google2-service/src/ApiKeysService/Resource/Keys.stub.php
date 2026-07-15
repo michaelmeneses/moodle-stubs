@@ -21,32 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ApiKeysService\Resource;
-
-/**
- * The "keys" collection of methods.
- * Typical usage is:
- *  <code>
- *   $apikeysService = new Google\Service\ApiKeysService(...);
- *   $keys = $apikeysService->keys;
- *  </code>
- */
-class Keys extends \Google\Service\Resource
-{
+namespace Google\Service\ApiKeysService\Resource {
+    use Google\Service\ApiKeysService\V2LookupKeyResponse;
     /**
-     * Find the parent project and resource name of the API key that matches the key
-     * string in the request. If the API key has been purged, resource name will not
-     * be set. The service account must have the `apikeys.keys.lookup` permission on
-     * the parent project. (keys.lookupKey)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string keyString Required. Finds the project that owns the key
-     * string value.
-     * @return V2LookupKeyResponse
-     * @throws \Google\Service\Exception
+     * The "keys" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $apikeysService = new Google\Service\ApiKeysService(...);
+     *   $keys = $apikeysService->keys;
+     *  </code>
      */
-    public function lookupKey($optParams = [])
+    class Keys extends \Google\Service\Resource
+    {
+        /**
+         * Find the parent project and resource name of the API key that matches the key
+         * string in the request. If the API key has been purged, resource name will not
+         * be set. The service account must have the `apikeys.keys.lookup` permission on
+         * the parent project. (keys.lookupKey)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string keyString Required. Finds the project that owns the key
+         * string value.
+         * @return V2LookupKeyResponse
+         * @throws \Google\Service\Exception
+         */
+        public function lookupKey($optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ApiKeysService\Resource\Keys registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ApiKeysService_Resource_Keys extends \Google\Service\ApiKeysService\Resource\Keys
     {
     }
 }

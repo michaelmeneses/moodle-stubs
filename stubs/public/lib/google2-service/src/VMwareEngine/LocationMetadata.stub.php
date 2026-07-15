@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMwareEngine;
-
-class LocationMetadata extends \Google\Collection
-{
-    protected $collection_key = 'capabilities';
-    /**
-     * Output only. Capabilities of this location.
-     *
-     * @var string[]
-     */
-    public $capabilities;
-    /**
-     * Output only. Capabilities of this location.
-     *
-     * @param string[] $capabilities
-     */
-    public function setCapabilities($capabilities)
+namespace Google\Service\VMwareEngine {
+    class LocationMetadata extends \Google\Collection
     {
+        protected $collection_key = 'capabilities';
+        /**
+         * Output only. Capabilities of this location.
+         *
+         * @var string[]
+         */
+        public $capabilities;
+        /**
+         * Output only. Capabilities of this location.
+         *
+         * @param string[] $capabilities
+         */
+        public function setCapabilities($capabilities)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCapabilities()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\VMwareEngine\LocationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCapabilities()
+    class Google_Service_VMwareEngine_LocationMetadata extends \Google\Service\VMwareEngine\LocationMetadata
     {
     }
 }

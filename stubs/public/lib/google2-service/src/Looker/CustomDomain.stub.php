@@ -21,79 +21,88 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Looker;
-
-class CustomDomain extends \Google\Model
-{
-    /**
-     * Unspecified state.
-     */
-    public const STATE_CUSTOM_DOMAIN_STATE_UNSPECIFIED = 'CUSTOM_DOMAIN_STATE_UNSPECIFIED';
-    /**
-     * DNS record is not created.
-     */
-    public const STATE_UNVERIFIED = 'UNVERIFIED';
-    /**
-     * DNS record is created.
-     */
-    public const STATE_VERIFIED = 'VERIFIED';
-    /**
-     * Calling SLM to update.
-     */
-    public const STATE_MODIFYING = 'MODIFYING';
-    /**
-     * ManagedCertificate is ready.
-     */
-    public const STATE_AVAILABLE = 'AVAILABLE';
-    /**
-     * ManagedCertificate is not ready.
-     */
-    public const STATE_UNAVAILABLE = 'UNAVAILABLE';
-    /**
-     * Status is not known.
-     */
-    public const STATE_UNKNOWN = 'UNKNOWN';
-    /**
-     * Domain name.
-     *
-     * @var string
-     */
-    public $domain;
-    /**
-     * Domain state.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Domain name.
-     *
-     * @param string $domain
-     */
-    public function setDomain($domain)
+namespace Google\Service\Looker {
+    class CustomDomain extends \Google\Model
     {
+        /**
+         * Unspecified state.
+         */
+        public const STATE_CUSTOM_DOMAIN_STATE_UNSPECIFIED = 'CUSTOM_DOMAIN_STATE_UNSPECIFIED';
+        /**
+         * DNS record is not created.
+         */
+        public const STATE_UNVERIFIED = 'UNVERIFIED';
+        /**
+         * DNS record is created.
+         */
+        public const STATE_VERIFIED = 'VERIFIED';
+        /**
+         * Calling SLM to update.
+         */
+        public const STATE_MODIFYING = 'MODIFYING';
+        /**
+         * ManagedCertificate is ready.
+         */
+        public const STATE_AVAILABLE = 'AVAILABLE';
+        /**
+         * ManagedCertificate is not ready.
+         */
+        public const STATE_UNAVAILABLE = 'UNAVAILABLE';
+        /**
+         * Status is not known.
+         */
+        public const STATE_UNKNOWN = 'UNKNOWN';
+        /**
+         * Domain name.
+         *
+         * @var string
+         */
+        public $domain;
+        /**
+         * Domain state.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Domain name.
+         *
+         * @param string $domain
+         */
+        public function setDomain($domain)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDomain()
+        {
+        }
+        /**
+         * Domain state.
+         *
+         * Accepted values: CUSTOM_DOMAIN_STATE_UNSPECIFIED, UNVERIFIED, VERIFIED,
+         * MODIFYING, AVAILABLE, UNAVAILABLE, UNKNOWN
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Looker\CustomDomain registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDomain()
-    {
-    }
-    /**
-     * Domain state.
-     *
-     * Accepted values: CUSTOM_DOMAIN_STATE_UNSPECIFIED, UNVERIFIED, VERIFIED,
-     * MODIFYING, AVAILABLE, UNAVAILABLE, UNKNOWN
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
+    class Google_Service_Looker_CustomDomain extends \Google\Service\Looker\CustomDomain
     {
     }
 }

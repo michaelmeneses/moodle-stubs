@@ -21,110 +21,119 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class MemInfo extends \Google\Model
-{
-    /**
-     * Instantenous memory limit in bytes.
-     *
-     * @var string
-     */
-    public $currentLimitBytes;
-    /**
-     * Number of Out of Memory (OOM) events recorded since the previous
-     * measurement.
-     *
-     * @var string
-     */
-    public $currentOoms;
-    /**
-     * Instantenous memory (RSS) size in bytes.
-     *
-     * @var string
-     */
-    public $currentRssBytes;
-    /**
-     * Timestamp of the measurement.
-     *
-     * @var string
-     */
-    public $timestamp;
-    /**
-     * Total memory (RSS) usage since start up in GB * ms.
-     *
-     * @var string
-     */
-    public $totalGbMs;
-    /**
-     * Instantenous memory limit in bytes.
-     *
-     * @param string $currentLimitBytes
-     */
-    public function setCurrentLimitBytes($currentLimitBytes)
+namespace Google\Service\Dataflow {
+    class MemInfo extends \Google\Model
     {
+        /**
+         * Instantenous memory limit in bytes.
+         *
+         * @var string
+         */
+        public $currentLimitBytes;
+        /**
+         * Number of Out of Memory (OOM) events recorded since the previous
+         * measurement.
+         *
+         * @var string
+         */
+        public $currentOoms;
+        /**
+         * Instantenous memory (RSS) size in bytes.
+         *
+         * @var string
+         */
+        public $currentRssBytes;
+        /**
+         * Timestamp of the measurement.
+         *
+         * @var string
+         */
+        public $timestamp;
+        /**
+         * Total memory (RSS) usage since start up in GB * ms.
+         *
+         * @var string
+         */
+        public $totalGbMs;
+        /**
+         * Instantenous memory limit in bytes.
+         *
+         * @param string $currentLimitBytes
+         */
+        public function setCurrentLimitBytes($currentLimitBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCurrentLimitBytes()
+        {
+        }
+        /**
+         * Number of Out of Memory (OOM) events recorded since the previous
+         * measurement.
+         *
+         * @param string $currentOoms
+         */
+        public function setCurrentOoms($currentOoms)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCurrentOoms()
+        {
+        }
+        /**
+         * Instantenous memory (RSS) size in bytes.
+         *
+         * @param string $currentRssBytes
+         */
+        public function setCurrentRssBytes($currentRssBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCurrentRssBytes()
+        {
+        }
+        /**
+         * Timestamp of the measurement.
+         *
+         * @param string $timestamp
+         */
+        public function setTimestamp($timestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimestamp()
+        {
+        }
+        /**
+         * Total memory (RSS) usage since start up in GB * ms.
+         *
+         * @param string $totalGbMs
+         */
+        public function setTotalGbMs($totalGbMs)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalGbMs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataflow\MemInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCurrentLimitBytes()
-    {
-    }
-    /**
-     * Number of Out of Memory (OOM) events recorded since the previous
-     * measurement.
-     *
-     * @param string $currentOoms
-     */
-    public function setCurrentOoms($currentOoms)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCurrentOoms()
-    {
-    }
-    /**
-     * Instantenous memory (RSS) size in bytes.
-     *
-     * @param string $currentRssBytes
-     */
-    public function setCurrentRssBytes($currentRssBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCurrentRssBytes()
-    {
-    }
-    /**
-     * Timestamp of the measurement.
-     *
-     * @param string $timestamp
-     */
-    public function setTimestamp($timestamp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimestamp()
-    {
-    }
-    /**
-     * Total memory (RSS) usage since start up in GB * ms.
-     *
-     * @param string $totalGbMs
-     */
-    public function setTotalGbMs($totalGbMs)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalGbMs()
+    class Google_Service_Dataflow_MemInfo extends \Google\Service\Dataflow\MemInfo
     {
     }
 }

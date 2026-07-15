@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class OrderreturnsCreateOrderReturnRequest extends \Google\Collection
-{
-    protected $collection_key = 'lineItems';
-    protected $lineItemsType = OrderreturnsLineItem::class;
-    protected $lineItemsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $operationId;
-    /**
-     * @var string
-     */
-    public $orderId;
-    /**
-     * @var string
-     */
-    public $returnMethodType;
-    /**
-     * @param OrderreturnsLineItem[]
-     */
-    public function setLineItems($lineItems)
+namespace Google\Service\ShoppingContent {
+    class OrderreturnsCreateOrderReturnRequest extends \Google\Collection
     {
+        protected $collection_key = 'lineItems';
+        protected $lineItemsType = OrderreturnsLineItem::class;
+        protected $lineItemsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $operationId;
+        /**
+         * @var string
+         */
+        public $orderId;
+        /**
+         * @var string
+         */
+        public $returnMethodType;
+        /**
+         * @param OrderreturnsLineItem[]
+         */
+        public function setLineItems($lineItems)
+        {
+        }
+        /**
+         * @return OrderreturnsLineItem[]
+         */
+        public function getLineItems()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOperationId($operationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOperationId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOrderId($orderId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOrderId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReturnMethodType($returnMethodType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReturnMethodType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return OrderreturnsLineItem[]
+     * Runtime class alias of \Google\Service\ShoppingContent\OrderreturnsCreateOrderReturnRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLineItems()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOperationId($operationId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOperationId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOrderId($orderId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOrderId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReturnMethodType($returnMethodType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReturnMethodType()
+    class Google_Service_ShoppingContent_OrderreturnsCreateOrderReturnRequest extends \Google\Service\ShoppingContent\OrderreturnsCreateOrderReturnRequest
     {
     }
 }

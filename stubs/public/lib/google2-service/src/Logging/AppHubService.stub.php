@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Logging;
-
-class AppHubService extends \Google\Model
-{
-    /**
-     * Service criticality type Example: "CRITICAL"
-     *
-     * @var string
-     */
-    public $criticalityType;
-    /**
-     * Service environment type Example: "DEV"
-     *
-     * @var string
-     */
-    public $environmentType;
-    /**
-     * Service Id. Example: "my-service"
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Service criticality type Example: "CRITICAL"
-     *
-     * @param string $criticalityType
-     */
-    public function setCriticalityType($criticalityType)
+namespace Google\Service\Logging {
+    class AppHubService extends \Google\Model
     {
+        /**
+         * Service criticality type Example: "CRITICAL"
+         *
+         * @var string
+         */
+        public $criticalityType;
+        /**
+         * Service environment type Example: "DEV"
+         *
+         * @var string
+         */
+        public $environmentType;
+        /**
+         * Service Id. Example: "my-service"
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Service criticality type Example: "CRITICAL"
+         *
+         * @param string $criticalityType
+         */
+        public function setCriticalityType($criticalityType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCriticalityType()
+        {
+        }
+        /**
+         * Service environment type Example: "DEV"
+         *
+         * @param string $environmentType
+         */
+        public function setEnvironmentType($environmentType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEnvironmentType()
+        {
+        }
+        /**
+         * Service Id. Example: "my-service"
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Logging\AppHubService registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCriticalityType()
-    {
-    }
-    /**
-     * Service environment type Example: "DEV"
-     *
-     * @param string $environmentType
-     */
-    public function setEnvironmentType($environmentType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEnvironmentType()
-    {
-    }
-    /**
-     * Service Id. Example: "my-service"
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
+    class Google_Service_Logging_AppHubService extends \Google\Service\Logging\AppHubService
     {
     }
 }

@@ -21,106 +21,115 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1mainAnalysis extends \Google\Model
-{
-    protected $analysisResultType = GoogleCloudContactcenterinsightsV1mainAnalysisResult::class;
-    protected $analysisResultDataType = '';
-    protected $annotatorSelectorType = GoogleCloudContactcenterinsightsV1mainAnnotatorSelector::class;
-    protected $annotatorSelectorDataType = '';
-    /**
-     * Output only. The time at which the analysis was created, which occurs when
-     * the long-running operation completes.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Immutable. The resource name of the analysis. Format: projects/{project}/lo
-     * cations/{location}/conversations/{conversation}/analyses/{analysis}
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The time at which the analysis was requested.
-     *
-     * @var string
-     */
-    public $requestTime;
-    /**
-     * Output only. The result of the analysis, which is populated when the
-     * analysis finishes.
-     *
-     * @param GoogleCloudContactcenterinsightsV1mainAnalysisResult $analysisResult
-     */
-    public function setAnalysisResult(GoogleCloudContactcenterinsightsV1mainAnalysisResult $analysisResult)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1mainAnalysis extends \Google\Model
     {
+        protected $analysisResultType = GoogleCloudContactcenterinsightsV1mainAnalysisResult::class;
+        protected $analysisResultDataType = '';
+        protected $annotatorSelectorType = GoogleCloudContactcenterinsightsV1mainAnnotatorSelector::class;
+        protected $annotatorSelectorDataType = '';
+        /**
+         * Output only. The time at which the analysis was created, which occurs when
+         * the long-running operation completes.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Immutable. The resource name of the analysis. Format: projects/{project}/lo
+         * cations/{location}/conversations/{conversation}/analyses/{analysis}
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The time at which the analysis was requested.
+         *
+         * @var string
+         */
+        public $requestTime;
+        /**
+         * Output only. The result of the analysis, which is populated when the
+         * analysis finishes.
+         *
+         * @param GoogleCloudContactcenterinsightsV1mainAnalysisResult $analysisResult
+         */
+        public function setAnalysisResult(GoogleCloudContactcenterinsightsV1mainAnalysisResult $analysisResult)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1mainAnalysisResult
+         */
+        public function getAnalysisResult()
+        {
+        }
+        /**
+         * To select the annotators to run and the phrase matchers to use (if any). If
+         * not specified, all annotators will be run.
+         *
+         * @param GoogleCloudContactcenterinsightsV1mainAnnotatorSelector $annotatorSelector
+         */
+        public function setAnnotatorSelector(GoogleCloudContactcenterinsightsV1mainAnnotatorSelector $annotatorSelector)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1mainAnnotatorSelector
+         */
+        public function getAnnotatorSelector()
+        {
+        }
+        /**
+         * Output only. The time at which the analysis was created, which occurs when
+         * the long-running operation completes.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Immutable. The resource name of the analysis. Format: projects/{project}/lo
+         * cations/{location}/conversations/{conversation}/analyses/{analysis}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The time at which the analysis was requested.
+         *
+         * @param string $requestTime
+         */
+        public function setRequestTime($requestTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudContactcenterinsightsV1mainAnalysisResult
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainAnalysis registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnalysisResult()
-    {
-    }
-    /**
-     * To select the annotators to run and the phrase matchers to use (if any). If
-     * not specified, all annotators will be run.
-     *
-     * @param GoogleCloudContactcenterinsightsV1mainAnnotatorSelector $annotatorSelector
-     */
-    public function setAnnotatorSelector(GoogleCloudContactcenterinsightsV1mainAnnotatorSelector $annotatorSelector)
-    {
-    }
-    /**
-     * @return GoogleCloudContactcenterinsightsV1mainAnnotatorSelector
-     */
-    public function getAnnotatorSelector()
-    {
-    }
-    /**
-     * Output only. The time at which the analysis was created, which occurs when
-     * the long-running operation completes.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Immutable. The resource name of the analysis. Format: projects/{project}/lo
-     * cations/{location}/conversations/{conversation}/analyses/{analysis}
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The time at which the analysis was requested.
-     *
-     * @param string $requestTime
-     */
-    public function setRequestTime($requestTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestTime()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1mainAnalysis extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainAnalysis
     {
     }
 }

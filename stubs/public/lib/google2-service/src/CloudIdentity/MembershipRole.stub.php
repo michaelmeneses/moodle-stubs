@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIdentity;
-
-class MembershipRole extends \Google\Model
-{
-    protected $expiryDetailType = ExpiryDetail::class;
-    protected $expiryDetailDataType = '';
-    /**
-     * The name of the `MembershipRole`. Must be one of `OWNER`, `MANAGER`,
-     * `MEMBER`.
-     *
-     * @var string
-     */
-    public $name;
-    protected $restrictionEvaluationsType = RestrictionEvaluations::class;
-    protected $restrictionEvaluationsDataType = '';
-    /**
-     * The expiry details of the `MembershipRole`. Expiry details are only
-     * supported for `MEMBER` `MembershipRoles`. May be set if `name` is `MEMBER`.
-     * Must not be set if `name` is any other value.
-     *
-     * @param ExpiryDetail $expiryDetail
-     */
-    public function setExpiryDetail(ExpiryDetail $expiryDetail)
+namespace Google\Service\CloudIdentity {
+    class MembershipRole extends \Google\Model
     {
+        protected $expiryDetailType = ExpiryDetail::class;
+        protected $expiryDetailDataType = '';
+        /**
+         * The name of the `MembershipRole`. Must be one of `OWNER`, `MANAGER`,
+         * `MEMBER`.
+         *
+         * @var string
+         */
+        public $name;
+        protected $restrictionEvaluationsType = RestrictionEvaluations::class;
+        protected $restrictionEvaluationsDataType = '';
+        /**
+         * The expiry details of the `MembershipRole`. Expiry details are only
+         * supported for `MEMBER` `MembershipRoles`. May be set if `name` is `MEMBER`.
+         * Must not be set if `name` is any other value.
+         *
+         * @param ExpiryDetail $expiryDetail
+         */
+        public function setExpiryDetail(ExpiryDetail $expiryDetail)
+        {
+        }
+        /**
+         * @return ExpiryDetail
+         */
+        public function getExpiryDetail()
+        {
+        }
+        /**
+         * The name of the `MembershipRole`. Must be one of `OWNER`, `MANAGER`,
+         * `MEMBER`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Evaluations of restrictions applied to parent group on this membership.
+         *
+         * @param RestrictionEvaluations $restrictionEvaluations
+         */
+        public function setRestrictionEvaluations(RestrictionEvaluations $restrictionEvaluations)
+        {
+        }
+        /**
+         * @return RestrictionEvaluations
+         */
+        public function getRestrictionEvaluations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ExpiryDetail
+     * Runtime class alias of \Google\Service\CloudIdentity\MembershipRole registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExpiryDetail()
-    {
-    }
-    /**
-     * The name of the `MembershipRole`. Must be one of `OWNER`, `MANAGER`,
-     * `MEMBER`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Evaluations of restrictions applied to parent group on this membership.
-     *
-     * @param RestrictionEvaluations $restrictionEvaluations
-     */
-    public function setRestrictionEvaluations(RestrictionEvaluations $restrictionEvaluations)
-    {
-    }
-    /**
-     * @return RestrictionEvaluations
-     */
-    public function getRestrictionEvaluations()
+    class Google_Service_CloudIdentity_MembershipRole extends \Google\Service\CloudIdentity\MembershipRole
     {
     }
 }

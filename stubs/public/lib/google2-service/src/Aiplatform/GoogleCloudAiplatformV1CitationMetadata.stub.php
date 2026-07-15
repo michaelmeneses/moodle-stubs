@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1CitationMetadata extends \Google\Collection
-{
-    protected $collection_key = 'citations';
-    protected $citationsType = GoogleCloudAiplatformV1Citation::class;
-    protected $citationsDataType = 'array';
-    /**
-     * Output only. A list of citations for the content.
-     *
-     * @param GoogleCloudAiplatformV1Citation[] $citations
-     */
-    public function setCitations($citations)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1CitationMetadata extends \Google\Collection
     {
+        protected $collection_key = 'citations';
+        protected $citationsType = GoogleCloudAiplatformV1Citation::class;
+        protected $citationsDataType = 'array';
+        /**
+         * Output only. A list of citations for the content.
+         *
+         * @param GoogleCloudAiplatformV1Citation[] $citations
+         */
+        public function setCitations($citations)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1Citation[]
+         */
+        public function getCitations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1Citation[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1CitationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCitations()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1CitationMetadata extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1CitationMetadata
     {
     }
 }

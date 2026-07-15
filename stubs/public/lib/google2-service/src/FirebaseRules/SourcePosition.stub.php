@@ -21,108 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseRules;
-
-class SourcePosition extends \Google\Model
-{
-    /**
-     * First column on the source line associated with the source fragment.
-     *
-     * @var int
-     */
-    public $column;
-    /**
-     * Start position relative to the beginning of the file.
-     *
-     * @var int
-     */
-    public $currentOffset;
-    /**
-     * End position relative to the beginning of the file.
-     *
-     * @var int
-     */
-    public $endOffset;
-    /**
-     * Name of the `File`.
-     *
-     * @var string
-     */
-    public $fileName;
-    /**
-     * Line number of the source fragment. 1-based.
-     *
-     * @var int
-     */
-    public $line;
-    /**
-     * First column on the source line associated with the source fragment.
-     *
-     * @param int $column
-     */
-    public function setColumn($column)
+namespace Google\Service\FirebaseRules {
+    class SourcePosition extends \Google\Model
     {
+        /**
+         * First column on the source line associated with the source fragment.
+         *
+         * @var int
+         */
+        public $column;
+        /**
+         * Start position relative to the beginning of the file.
+         *
+         * @var int
+         */
+        public $currentOffset;
+        /**
+         * End position relative to the beginning of the file.
+         *
+         * @var int
+         */
+        public $endOffset;
+        /**
+         * Name of the `File`.
+         *
+         * @var string
+         */
+        public $fileName;
+        /**
+         * Line number of the source fragment. 1-based.
+         *
+         * @var int
+         */
+        public $line;
+        /**
+         * First column on the source line associated with the source fragment.
+         *
+         * @param int $column
+         */
+        public function setColumn($column)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getColumn()
+        {
+        }
+        /**
+         * Start position relative to the beginning of the file.
+         *
+         * @param int $currentOffset
+         */
+        public function setCurrentOffset($currentOffset)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCurrentOffset()
+        {
+        }
+        /**
+         * End position relative to the beginning of the file.
+         *
+         * @param int $endOffset
+         */
+        public function setEndOffset($endOffset)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getEndOffset()
+        {
+        }
+        /**
+         * Name of the `File`.
+         *
+         * @param string $fileName
+         */
+        public function setFileName($fileName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFileName()
+        {
+        }
+        /**
+         * Line number of the source fragment. 1-based.
+         *
+         * @param int $line
+         */
+        public function setLine($line)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getLine()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\FirebaseRules\SourcePosition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumn()
-    {
-    }
-    /**
-     * Start position relative to the beginning of the file.
-     *
-     * @param int $currentOffset
-     */
-    public function setCurrentOffset($currentOffset)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getCurrentOffset()
-    {
-    }
-    /**
-     * End position relative to the beginning of the file.
-     *
-     * @param int $endOffset
-     */
-    public function setEndOffset($endOffset)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getEndOffset()
-    {
-    }
-    /**
-     * Name of the `File`.
-     *
-     * @param string $fileName
-     */
-    public function setFileName($fileName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFileName()
-    {
-    }
-    /**
-     * Line number of the source fragment. 1-based.
-     *
-     * @param int $line
-     */
-    public function setLine($line)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getLine()
+    class Google_Service_FirebaseRules_SourcePosition extends \Google\Service\FirebaseRules\SourcePosition
     {
     }
 }

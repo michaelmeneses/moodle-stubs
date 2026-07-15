@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class SourceMetadata extends \Google\Model
-{
-    /**
-     * An estimate of the total size (in bytes) of the data that would be read
-     * from this source. This estimate is in terms of external storage size,
-     * before any decompression or other processing done by the reader.
-     *
-     * @var string
-     */
-    public $estimatedSizeBytes;
-    /**
-     * Specifies that the size of this source is known to be infinite (this is a
-     * streaming source).
-     *
-     * @var bool
-     */
-    public $infinite;
-    /**
-     * Whether this source is known to produce key/value pairs with the (encoded)
-     * keys in lexicographically sorted order.
-     *
-     * @var bool
-     */
-    public $producesSortedKeys;
-    /**
-     * An estimate of the total size (in bytes) of the data that would be read
-     * from this source. This estimate is in terms of external storage size,
-     * before any decompression or other processing done by the reader.
-     *
-     * @param string $estimatedSizeBytes
-     */
-    public function setEstimatedSizeBytes($estimatedSizeBytes)
+namespace Google\Service\Dataflow {
+    class SourceMetadata extends \Google\Model
     {
+        /**
+         * An estimate of the total size (in bytes) of the data that would be read
+         * from this source. This estimate is in terms of external storage size,
+         * before any decompression or other processing done by the reader.
+         *
+         * @var string
+         */
+        public $estimatedSizeBytes;
+        /**
+         * Specifies that the size of this source is known to be infinite (this is a
+         * streaming source).
+         *
+         * @var bool
+         */
+        public $infinite;
+        /**
+         * Whether this source is known to produce key/value pairs with the (encoded)
+         * keys in lexicographically sorted order.
+         *
+         * @var bool
+         */
+        public $producesSortedKeys;
+        /**
+         * An estimate of the total size (in bytes) of the data that would be read
+         * from this source. This estimate is in terms of external storage size,
+         * before any decompression or other processing done by the reader.
+         *
+         * @param string $estimatedSizeBytes
+         */
+        public function setEstimatedSizeBytes($estimatedSizeBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEstimatedSizeBytes()
+        {
+        }
+        /**
+         * Specifies that the size of this source is known to be infinite (this is a
+         * streaming source).
+         *
+         * @param bool $infinite
+         */
+        public function setInfinite($infinite)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getInfinite()
+        {
+        }
+        /**
+         * Whether this source is known to produce key/value pairs with the (encoded)
+         * keys in lexicographically sorted order.
+         *
+         * @param bool $producesSortedKeys
+         */
+        public function setProducesSortedKeys($producesSortedKeys)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getProducesSortedKeys()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataflow\SourceMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEstimatedSizeBytes()
-    {
-    }
-    /**
-     * Specifies that the size of this source is known to be infinite (this is a
-     * streaming source).
-     *
-     * @param bool $infinite
-     */
-    public function setInfinite($infinite)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getInfinite()
-    {
-    }
-    /**
-     * Whether this source is known to produce key/value pairs with the (encoded)
-     * keys in lexicographically sorted order.
-     *
-     * @param bool $producesSortedKeys
-     */
-    public function setProducesSortedKeys($producesSortedKeys)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getProducesSortedKeys()
+    class Google_Service_Dataflow_SourceMetadata extends \Google\Service\Dataflow\SourceMetadata
     {
     }
 }

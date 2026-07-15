@@ -21,89 +21,98 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class IssuerContactInfo extends \Google\Collection
-{
-    protected $collection_key = 'alertsEmails';
-    /**
-     * Email addresses which will receive alerts.
-     *
-     * @var string[]
-     */
-    public $alertsEmails;
-    /**
-     * The primary contact email address.
-     *
-     * @var string
-     */
-    public $email;
-    /**
-     * The primary contact name.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The primary contact phone number.
-     *
-     * @var string
-     */
-    public $phone;
-    /**
-     * Email addresses which will receive alerts.
-     *
-     * @param string[] $alertsEmails
-     */
-    public function setAlertsEmails($alertsEmails)
+namespace Google\Service\Walletobjects {
+    class IssuerContactInfo extends \Google\Collection
     {
+        protected $collection_key = 'alertsEmails';
+        /**
+         * Email addresses which will receive alerts.
+         *
+         * @var string[]
+         */
+        public $alertsEmails;
+        /**
+         * The primary contact email address.
+         *
+         * @var string
+         */
+        public $email;
+        /**
+         * The primary contact name.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The primary contact phone number.
+         *
+         * @var string
+         */
+        public $phone;
+        /**
+         * Email addresses which will receive alerts.
+         *
+         * @param string[] $alertsEmails
+         */
+        public function setAlertsEmails($alertsEmails)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAlertsEmails()
+        {
+        }
+        /**
+         * The primary contact email address.
+         *
+         * @param string $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
+        /**
+         * The primary contact name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The primary contact phone number.
+         *
+         * @param string $phone
+         */
+        public function setPhone($phone)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPhone()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Walletobjects\IssuerContactInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAlertsEmails()
-    {
-    }
-    /**
-     * The primary contact email address.
-     *
-     * @param string $email
-     */
-    public function setEmail($email)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEmail()
-    {
-    }
-    /**
-     * The primary contact name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The primary contact phone number.
-     *
-     * @param string $phone
-     */
-    public function setPhone($phone)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPhone()
+    class Google_Service_Walletobjects_IssuerContactInfo extends \Google\Service\Walletobjects\IssuerContactInfo
     {
     }
 }

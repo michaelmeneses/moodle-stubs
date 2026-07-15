@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Reports;
-
-class ActivityActorApplicationInfo extends \Google\Model
-{
-    /**
-     * Name of the application used to perform the action.
-     *
-     * @var string
-     */
-    public $applicationName;
-    /**
-     * Whether the application was impersonating a user.
-     *
-     * @var bool
-     */
-    public $impersonation;
-    /**
-     * OAuth client id of the third party application used to perform the action.
-     *
-     * @var string
-     */
-    public $oauthClientId;
-    /**
-     * Name of the application used to perform the action.
-     *
-     * @param string $applicationName
-     */
-    public function setApplicationName($applicationName)
+namespace Google\Service\Reports {
+    class ActivityActorApplicationInfo extends \Google\Model
     {
+        /**
+         * Name of the application used to perform the action.
+         *
+         * @var string
+         */
+        public $applicationName;
+        /**
+         * Whether the application was impersonating a user.
+         *
+         * @var bool
+         */
+        public $impersonation;
+        /**
+         * OAuth client id of the third party application used to perform the action.
+         *
+         * @var string
+         */
+        public $oauthClientId;
+        /**
+         * Name of the application used to perform the action.
+         *
+         * @param string $applicationName
+         */
+        public function setApplicationName($applicationName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApplicationName()
+        {
+        }
+        /**
+         * Whether the application was impersonating a user.
+         *
+         * @param bool $impersonation
+         */
+        public function setImpersonation($impersonation)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getImpersonation()
+        {
+        }
+        /**
+         * OAuth client id of the third party application used to perform the action.
+         *
+         * @param string $oauthClientId
+         */
+        public function setOauthClientId($oauthClientId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOauthClientId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Reports\ActivityActorApplicationInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApplicationName()
-    {
-    }
-    /**
-     * Whether the application was impersonating a user.
-     *
-     * @param bool $impersonation
-     */
-    public function setImpersonation($impersonation)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getImpersonation()
-    {
-    }
-    /**
-     * OAuth client id of the third party application used to perform the action.
-     *
-     * @param string $oauthClientId
-     */
-    public function setOauthClientId($oauthClientId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOauthClientId()
+    class Google_Service_Reports_ActivityActorApplicationInfo extends \Google\Service\Reports\ActivityActorApplicationInfo
     {
     }
 }

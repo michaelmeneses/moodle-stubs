@@ -21,108 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmEventbusProtoScatterResponse extends \Google\Collection
-{
-    protected $collection_key = 'responseParams';
-    /**
-     * The error message of the failure if applicable.
-     *
-     * @var string
-     */
-    public $errorMsg;
-    /**
-     * The execution ids of each Subworkflow fired by this scatter.
-     *
-     * @var string[]
-     */
-    public $executionIds;
-    /**
-     * If execution is sync, this is true if the execution passed and false if it
-     * failed. If the execution is async, this is true if the WF was fired off
-     * successfully, and false if it failed to execute. The success or failure of
-     * the subworkflows executed are not captured.
-     *
-     * @var bool
-     */
-    public $isSuccessful;
-    protected $responseParamsType = EnterpriseCrmEventbusProtoParameterEntry::class;
-    protected $responseParamsDataType = 'array';
-    protected $scatterElementType = EnterpriseCrmEventbusProtoParameterValueType::class;
-    protected $scatterElementDataType = '';
-    /**
-     * The error message of the failure if applicable.
-     *
-     * @param string $errorMsg
-     */
-    public function setErrorMsg($errorMsg)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmEventbusProtoScatterResponse extends \Google\Collection
     {
+        protected $collection_key = 'responseParams';
+        /**
+         * The error message of the failure if applicable.
+         *
+         * @var string
+         */
+        public $errorMsg;
+        /**
+         * The execution ids of each Subworkflow fired by this scatter.
+         *
+         * @var string[]
+         */
+        public $executionIds;
+        /**
+         * If execution is sync, this is true if the execution passed and false if it
+         * failed. If the execution is async, this is true if the WF was fired off
+         * successfully, and false if it failed to execute. The success or failure of
+         * the subworkflows executed are not captured.
+         *
+         * @var bool
+         */
+        public $isSuccessful;
+        protected $responseParamsType = EnterpriseCrmEventbusProtoParameterEntry::class;
+        protected $responseParamsDataType = 'array';
+        protected $scatterElementType = EnterpriseCrmEventbusProtoParameterValueType::class;
+        protected $scatterElementDataType = '';
+        /**
+         * The error message of the failure if applicable.
+         *
+         * @param string $errorMsg
+         */
+        public function setErrorMsg($errorMsg)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getErrorMsg()
+        {
+        }
+        /**
+         * The execution ids of each Subworkflow fired by this scatter.
+         *
+         * @param string[] $executionIds
+         */
+        public function setExecutionIds($executionIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getExecutionIds()
+        {
+        }
+        /**
+         * If execution is sync, this is true if the execution passed and false if it
+         * failed. If the execution is async, this is true if the WF was fired off
+         * successfully, and false if it failed to execute. The success or failure of
+         * the subworkflows executed are not captured.
+         *
+         * @param bool $isSuccessful
+         */
+        public function setIsSuccessful($isSuccessful)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsSuccessful()
+        {
+        }
+        /**
+         * A list of all the response parameters in the aggregtorMap stored with the
+         * remapped key.
+         *
+         * @param EnterpriseCrmEventbusProtoParameterEntry[] $responseParams
+         */
+        public function setResponseParams($responseParams)
+        {
+        }
+        /**
+         * @return EnterpriseCrmEventbusProtoParameterEntry[]
+         */
+        public function getResponseParams()
+        {
+        }
+        /**
+         * The element that was scattered for this execution.
+         *
+         * @param EnterpriseCrmEventbusProtoParameterValueType $scatterElement
+         */
+        public function setScatterElement(EnterpriseCrmEventbusProtoParameterValueType $scatterElement)
+        {
+        }
+        /**
+         * @return EnterpriseCrmEventbusProtoParameterValueType
+         */
+        public function getScatterElement()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmEventbusProtoScatterResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrorMsg()
-    {
-    }
-    /**
-     * The execution ids of each Subworkflow fired by this scatter.
-     *
-     * @param string[] $executionIds
-     */
-    public function setExecutionIds($executionIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getExecutionIds()
-    {
-    }
-    /**
-     * If execution is sync, this is true if the execution passed and false if it
-     * failed. If the execution is async, this is true if the WF was fired off
-     * successfully, and false if it failed to execute. The success or failure of
-     * the subworkflows executed are not captured.
-     *
-     * @param bool $isSuccessful
-     */
-    public function setIsSuccessful($isSuccessful)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsSuccessful()
-    {
-    }
-    /**
-     * A list of all the response parameters in the aggregtorMap stored with the
-     * remapped key.
-     *
-     * @param EnterpriseCrmEventbusProtoParameterEntry[] $responseParams
-     */
-    public function setResponseParams($responseParams)
-    {
-    }
-    /**
-     * @return EnterpriseCrmEventbusProtoParameterEntry[]
-     */
-    public function getResponseParams()
-    {
-    }
-    /**
-     * The element that was scattered for this execution.
-     *
-     * @param EnterpriseCrmEventbusProtoParameterValueType $scatterElement
-     */
-    public function setScatterElement(EnterpriseCrmEventbusProtoParameterValueType $scatterElement)
-    {
-    }
-    /**
-     * @return EnterpriseCrmEventbusProtoParameterValueType
-     */
-    public function getScatterElement()
+    class Google_Service_Integrations_EnterpriseCrmEventbusProtoScatterResponse extends \Google\Service\Integrations\EnterpriseCrmEventbusProtoScatterResponse
     {
     }
 }

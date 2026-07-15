@@ -21,37 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer\Resource;
-
-/**
- * The "products" collection of methods.
- * Typical usage is:
- *  <code>
- *   $adexchangebuyerService = new Google\Service\AdExchangeBuyer(...);
- *   $products = $adexchangebuyerService->products;
- *  </code>
- */
-class Products extends \Google\Service\Resource
-{
+namespace Google\Service\AdExchangeBuyer\Resource {
+    use Google\Service\AdExchangeBuyer\GetOffersResponse;
+    use Google\Service\AdExchangeBuyer\Product;
     /**
-     * Gets the requested product by id. (products.get)
-     *
-     * @param string $productId The id for the product to get the head revision for.
-     * @param array $optParams Optional parameters.
-     * @return Product
+     * The "products" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $adexchangebuyerService = new Google\Service\AdExchangeBuyer(...);
+     *   $products = $adexchangebuyerService->products;
+     *  </code>
      */
-    public function get($productId, $optParams = [])
+    class Products extends \Google\Service\Resource
     {
+        /**
+         * Gets the requested product by id. (products.get)
+         *
+         * @param string $productId The id for the product to get the head revision for.
+         * @param array $optParams Optional parameters.
+         * @return Product
+         */
+        public function get($productId, $optParams = [])
+        {
+        }
+        /**
+         * Gets the requested product. (products.search)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string pqlQuery The pql query used to query for products.
+         * @return GetOffersResponse
+         */
+        public function search($optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets the requested product. (products.search)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string pqlQuery The pql query used to query for products.
-     * @return GetOffersResponse
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\Resource\Products registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function search($optParams = [])
+    class Google_Service_AdExchangeBuyer_Resource_Products extends \Google\Service\AdExchangeBuyer\Resource\Products
     {
     }
 }

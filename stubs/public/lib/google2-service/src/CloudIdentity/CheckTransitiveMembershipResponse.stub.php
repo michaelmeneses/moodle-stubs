@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIdentity;
-
-class CheckTransitiveMembershipResponse extends \Google\Model
-{
-    /**
-     * Response does not include the possible roles of a member since the behavior
-     * of this rpc is not all-or-nothing unlike the other rpcs. So, it may not be
-     * possible to list all the roles definitively, due to possible lack of
-     * authorization in some of the paths.
-     *
-     * @var bool
-     */
-    public $hasMembership;
-    /**
-     * Response does not include the possible roles of a member since the behavior
-     * of this rpc is not all-or-nothing unlike the other rpcs. So, it may not be
-     * possible to list all the roles definitively, due to possible lack of
-     * authorization in some of the paths.
-     *
-     * @param bool $hasMembership
-     */
-    public function setHasMembership($hasMembership)
+namespace Google\Service\CloudIdentity {
+    class CheckTransitiveMembershipResponse extends \Google\Model
     {
+        /**
+         * Response does not include the possible roles of a member since the behavior
+         * of this rpc is not all-or-nothing unlike the other rpcs. So, it may not be
+         * possible to list all the roles definitively, due to possible lack of
+         * authorization in some of the paths.
+         *
+         * @var bool
+         */
+        public $hasMembership;
+        /**
+         * Response does not include the possible roles of a member since the behavior
+         * of this rpc is not all-or-nothing unlike the other rpcs. So, it may not be
+         * possible to list all the roles definitively, due to possible lack of
+         * authorization in some of the paths.
+         *
+         * @param bool $hasMembership
+         */
+        public function setHasMembership($hasMembership)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getHasMembership()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudIdentity\CheckTransitiveMembershipResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHasMembership()
+    class Google_Service_CloudIdentity_CheckTransitiveMembershipResponse extends \Google\Service\CloudIdentity\CheckTransitiveMembershipResponse
     {
     }
 }

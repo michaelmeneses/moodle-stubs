@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BeyondCorp;
-
-class GoogleCloudBeyondcorpAppconnectorsV1alphaNotificationConfig extends \Google\Model
-{
-    protected $pubsubNotificationType = GoogleCloudBeyondcorpAppconnectorsV1alphaNotificationConfigCloudPubSubNotificationConfig::class;
-    protected $pubsubNotificationDataType = '';
-    /**
-     * @param GoogleCloudBeyondcorpAppconnectorsV1alphaNotificationConfigCloudPubSubNotificationConfig
-     */
-    public function setPubsubNotification(GoogleCloudBeyondcorpAppconnectorsV1alphaNotificationConfigCloudPubSubNotificationConfig $pubsubNotification)
+namespace Google\Service\BeyondCorp {
+    class GoogleCloudBeyondcorpAppconnectorsV1alphaNotificationConfig extends \Google\Model
     {
+        protected $pubsubNotificationType = GoogleCloudBeyondcorpAppconnectorsV1alphaNotificationConfigCloudPubSubNotificationConfig::class;
+        protected $pubsubNotificationDataType = '';
+        /**
+         * @param GoogleCloudBeyondcorpAppconnectorsV1alphaNotificationConfigCloudPubSubNotificationConfig
+         */
+        public function setPubsubNotification(GoogleCloudBeyondcorpAppconnectorsV1alphaNotificationConfigCloudPubSubNotificationConfig $pubsubNotification)
+        {
+        }
+        /**
+         * @return GoogleCloudBeyondcorpAppconnectorsV1alphaNotificationConfigCloudPubSubNotificationConfig
+         */
+        public function getPubsubNotification()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudBeyondcorpAppconnectorsV1alphaNotificationConfigCloudPubSubNotificationConfig
+     * Runtime class alias of \Google\Service\BeyondCorp\GoogleCloudBeyondcorpAppconnectorsV1alphaNotificationConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPubsubNotification()
+    class Google_Service_BeyondCorp_GoogleCloudBeyondcorpAppconnectorsV1alphaNotificationConfig extends \Google\Service\BeyondCorp\GoogleCloudBeyondcorpAppconnectorsV1alphaNotificationConfig
     {
     }
 }

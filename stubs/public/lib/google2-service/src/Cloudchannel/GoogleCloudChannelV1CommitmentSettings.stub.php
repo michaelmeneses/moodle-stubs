@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1CommitmentSettings extends \Google\Model
-{
-    /**
-     * Output only. Commitment end timestamp.
-     *
-     * @var string
-     */
-    public $endTime;
-    protected $renewalSettingsType = GoogleCloudChannelV1RenewalSettings::class;
-    protected $renewalSettingsDataType = '';
-    /**
-     * Output only. Commitment start timestamp.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * Output only. Commitment end timestamp.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1CommitmentSettings extends \Google\Model
     {
+        /**
+         * Output only. Commitment end timestamp.
+         *
+         * @var string
+         */
+        public $endTime;
+        protected $renewalSettingsType = GoogleCloudChannelV1RenewalSettings::class;
+        protected $renewalSettingsDataType = '';
+        /**
+         * Output only. Commitment start timestamp.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * Output only. Commitment end timestamp.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * Optional. Renewal settings applicable for a commitment-based Offer.
+         *
+         * @param GoogleCloudChannelV1RenewalSettings $renewalSettings
+         */
+        public function setRenewalSettings(GoogleCloudChannelV1RenewalSettings $renewalSettings)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1RenewalSettings
+         */
+        public function getRenewalSettings()
+        {
+        }
+        /**
+         * Output only. Commitment start timestamp.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1CommitmentSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndTime()
-    {
-    }
-    /**
-     * Optional. Renewal settings applicable for a commitment-based Offer.
-     *
-     * @param GoogleCloudChannelV1RenewalSettings $renewalSettings
-     */
-    public function setRenewalSettings(GoogleCloudChannelV1RenewalSettings $renewalSettings)
-    {
-    }
-    /**
-     * @return GoogleCloudChannelV1RenewalSettings
-     */
-    public function getRenewalSettings()
-    {
-    }
-    /**
-     * Output only. Commitment start timestamp.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1CommitmentSettings extends \Google\Service\Cloudchannel\GoogleCloudChannelV1CommitmentSettings
     {
     }
 }

@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class MuteInfo extends \Google\Collection
-{
-    protected $collection_key = 'dynamicMuteRecords';
-    protected $dynamicMuteRecordsType = DynamicMuteRecord::class;
-    protected $dynamicMuteRecordsDataType = 'array';
-    protected $staticMuteType = StaticMute::class;
-    protected $staticMuteDataType = '';
-    /**
-     * The list of dynamic mute rules that currently match the finding.
-     *
-     * @param DynamicMuteRecord[] $dynamicMuteRecords
-     */
-    public function setDynamicMuteRecords($dynamicMuteRecords)
+namespace Google\Service\SecurityCommandCenter {
+    class MuteInfo extends \Google\Collection
     {
+        protected $collection_key = 'dynamicMuteRecords';
+        protected $dynamicMuteRecordsType = DynamicMuteRecord::class;
+        protected $dynamicMuteRecordsDataType = 'array';
+        protected $staticMuteType = StaticMute::class;
+        protected $staticMuteDataType = '';
+        /**
+         * The list of dynamic mute rules that currently match the finding.
+         *
+         * @param DynamicMuteRecord[] $dynamicMuteRecords
+         */
+        public function setDynamicMuteRecords($dynamicMuteRecords)
+        {
+        }
+        /**
+         * @return DynamicMuteRecord[]
+         */
+        public function getDynamicMuteRecords()
+        {
+        }
+        /**
+         * If set, the static mute applied to this finding. Static mutes override
+         * dynamic mutes. If unset, there is no static mute.
+         *
+         * @param StaticMute $staticMute
+         */
+        public function setStaticMute(StaticMute $staticMute)
+        {
+        }
+        /**
+         * @return StaticMute
+         */
+        public function getStaticMute()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DynamicMuteRecord[]
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\MuteInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDynamicMuteRecords()
-    {
-    }
-    /**
-     * If set, the static mute applied to this finding. Static mutes override
-     * dynamic mutes. If unset, there is no static mute.
-     *
-     * @param StaticMute $staticMute
-     */
-    public function setStaticMute(StaticMute $staticMute)
-    {
-    }
-    /**
-     * @return StaticMute
-     */
-    public function getStaticMute()
+    class Google_Service_SecurityCommandCenter_MuteInfo extends \Google\Service\SecurityCommandCenter\MuteInfo
     {
     }
 }

@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class ConnectionDraining extends \Google\Model
-{
-    /**
-     * Configures a duration timeout for existing requests on a removed backend
-     * instance. For supported load balancers and protocols, as described
-     * inEnabling connection draining.
-     *
-     * @var int
-     */
-    public $drainingTimeoutSec;
-    /**
-     * Configures a duration timeout for existing requests on a removed backend
-     * instance. For supported load balancers and protocols, as described
-     * inEnabling connection draining.
-     *
-     * @param int $drainingTimeoutSec
-     */
-    public function setDrainingTimeoutSec($drainingTimeoutSec)
+namespace Google\Service\Compute {
+    class ConnectionDraining extends \Google\Model
     {
+        /**
+         * Configures a duration timeout for existing requests on a removed backend
+         * instance. For supported load balancers and protocols, as described
+         * inEnabling connection draining.
+         *
+         * @var int
+         */
+        public $drainingTimeoutSec;
+        /**
+         * Configures a duration timeout for existing requests on a removed backend
+         * instance. For supported load balancers and protocols, as described
+         * inEnabling connection draining.
+         *
+         * @param int $drainingTimeoutSec
+         */
+        public function setDrainingTimeoutSec($drainingTimeoutSec)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getDrainingTimeoutSec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Compute\ConnectionDraining registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDrainingTimeoutSec()
+    class Google_Service_Compute_ConnectionDraining extends \Google\Service\Compute\ConnectionDraining
     {
     }
 }

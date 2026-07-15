@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1ListSubscribersResponse extends \Google\Collection
-{
-    protected $collection_key = 'serviceAccounts';
-    /**
-     * A token that can be sent as `page_token` to retrieve the next page. If this
-     * field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of service accounts which have subscriber access to the topic.
-     *
-     * @var string[]
-     */
-    public $serviceAccounts;
-    /**
-     * Name of the topic registered with the reseller.
-     *
-     * @var string
-     */
-    public $topic;
-    /**
-     * A token that can be sent as `page_token` to retrieve the next page. If this
-     * field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1ListSubscribersResponse extends \Google\Collection
     {
+        protected $collection_key = 'serviceAccounts';
+        /**
+         * A token that can be sent as `page_token` to retrieve the next page. If this
+         * field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of service accounts which have subscriber access to the topic.
+         *
+         * @var string[]
+         */
+        public $serviceAccounts;
+        /**
+         * Name of the topic registered with the reseller.
+         *
+         * @var string
+         */
+        public $topic;
+        /**
+         * A token that can be sent as `page_token` to retrieve the next page. If this
+         * field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * List of service accounts which have subscriber access to the topic.
+         *
+         * @param string[] $serviceAccounts
+         */
+        public function setServiceAccounts($serviceAccounts)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getServiceAccounts()
+        {
+        }
+        /**
+         * Name of the topic registered with the reseller.
+         *
+         * @param string $topic
+         */
+        public function setTopic($topic)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTopic()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1ListSubscribersResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * List of service accounts which have subscriber access to the topic.
-     *
-     * @param string[] $serviceAccounts
-     */
-    public function setServiceAccounts($serviceAccounts)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getServiceAccounts()
-    {
-    }
-    /**
-     * Name of the topic registered with the reseller.
-     *
-     * @param string $topic
-     */
-    public function setTopic($topic)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTopic()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1ListSubscribersResponse extends \Google\Service\Cloudchannel\GoogleCloudChannelV1ListSubscribersResponse
     {
     }
 }

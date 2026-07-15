@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class GoogleBigtableAdminV2TypeInt64Encoding extends \Google\Model
-{
-    protected $bigEndianBytesType = GoogleBigtableAdminV2TypeInt64EncodingBigEndianBytes::class;
-    protected $bigEndianBytesDataType = '';
-    protected $orderedCodeBytesType = GoogleBigtableAdminV2TypeInt64EncodingOrderedCodeBytes::class;
-    protected $orderedCodeBytesDataType = '';
-    /**
-     * Use `BigEndianBytes` encoding.
-     *
-     * @param GoogleBigtableAdminV2TypeInt64EncodingBigEndianBytes $bigEndianBytes
-     */
-    public function setBigEndianBytes(GoogleBigtableAdminV2TypeInt64EncodingBigEndianBytes $bigEndianBytes)
+namespace Google\Service\BigtableAdmin {
+    class GoogleBigtableAdminV2TypeInt64Encoding extends \Google\Model
     {
+        protected $bigEndianBytesType = GoogleBigtableAdminV2TypeInt64EncodingBigEndianBytes::class;
+        protected $bigEndianBytesDataType = '';
+        protected $orderedCodeBytesType = GoogleBigtableAdminV2TypeInt64EncodingOrderedCodeBytes::class;
+        protected $orderedCodeBytesDataType = '';
+        /**
+         * Use `BigEndianBytes` encoding.
+         *
+         * @param GoogleBigtableAdminV2TypeInt64EncodingBigEndianBytes $bigEndianBytes
+         */
+        public function setBigEndianBytes(GoogleBigtableAdminV2TypeInt64EncodingBigEndianBytes $bigEndianBytes)
+        {
+        }
+        /**
+         * @return GoogleBigtableAdminV2TypeInt64EncodingBigEndianBytes
+         */
+        public function getBigEndianBytes()
+        {
+        }
+        /**
+         * Use `OrderedCodeBytes` encoding.
+         *
+         * @param GoogleBigtableAdminV2TypeInt64EncodingOrderedCodeBytes $orderedCodeBytes
+         */
+        public function setOrderedCodeBytes(GoogleBigtableAdminV2TypeInt64EncodingOrderedCodeBytes $orderedCodeBytes)
+        {
+        }
+        /**
+         * @return GoogleBigtableAdminV2TypeInt64EncodingOrderedCodeBytes
+         */
+        public function getOrderedCodeBytes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleBigtableAdminV2TypeInt64EncodingBigEndianBytes
+     * Runtime class alias of \Google\Service\BigtableAdmin\GoogleBigtableAdminV2TypeInt64Encoding registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBigEndianBytes()
-    {
-    }
-    /**
-     * Use `OrderedCodeBytes` encoding.
-     *
-     * @param GoogleBigtableAdminV2TypeInt64EncodingOrderedCodeBytes $orderedCodeBytes
-     */
-    public function setOrderedCodeBytes(GoogleBigtableAdminV2TypeInt64EncodingOrderedCodeBytes $orderedCodeBytes)
-    {
-    }
-    /**
-     * @return GoogleBigtableAdminV2TypeInt64EncodingOrderedCodeBytes
-     */
-    public function getOrderedCodeBytes()
+    class Google_Service_BigtableAdmin_GoogleBigtableAdminV2TypeInt64Encoding extends \Google\Service\BigtableAdmin\GoogleBigtableAdminV2TypeInt64Encoding
     {
     }
 }

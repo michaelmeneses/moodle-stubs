@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2DeidentifyConfig extends \Google\Model
-{
-    protected $imageTransformationsType = GooglePrivacyDlpV2ImageTransformations::class;
-    protected $imageTransformationsDataType = '';
-    protected $infoTypeTransformationsType = GooglePrivacyDlpV2InfoTypeTransformations::class;
-    protected $infoTypeTransformationsDataType = '';
-    protected $recordTransformationsType = GooglePrivacyDlpV2RecordTransformations::class;
-    protected $recordTransformationsDataType = '';
-    protected $transformationErrorHandlingType = GooglePrivacyDlpV2TransformationErrorHandling::class;
-    protected $transformationErrorHandlingDataType = '';
-    /**
-     * Treat the dataset as an image and redact.
-     *
-     * @param GooglePrivacyDlpV2ImageTransformations $imageTransformations
-     */
-    public function setImageTransformations(GooglePrivacyDlpV2ImageTransformations $imageTransformations)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2DeidentifyConfig extends \Google\Model
     {
+        protected $imageTransformationsType = GooglePrivacyDlpV2ImageTransformations::class;
+        protected $imageTransformationsDataType = '';
+        protected $infoTypeTransformationsType = GooglePrivacyDlpV2InfoTypeTransformations::class;
+        protected $infoTypeTransformationsDataType = '';
+        protected $recordTransformationsType = GooglePrivacyDlpV2RecordTransformations::class;
+        protected $recordTransformationsDataType = '';
+        protected $transformationErrorHandlingType = GooglePrivacyDlpV2TransformationErrorHandling::class;
+        protected $transformationErrorHandlingDataType = '';
+        /**
+         * Treat the dataset as an image and redact.
+         *
+         * @param GooglePrivacyDlpV2ImageTransformations $imageTransformations
+         */
+        public function setImageTransformations(GooglePrivacyDlpV2ImageTransformations $imageTransformations)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2ImageTransformations
+         */
+        public function getImageTransformations()
+        {
+        }
+        /**
+         * Treat the dataset as free-form text and apply the same free text
+         * transformation everywhere.
+         *
+         * @param GooglePrivacyDlpV2InfoTypeTransformations $infoTypeTransformations
+         */
+        public function setInfoTypeTransformations(GooglePrivacyDlpV2InfoTypeTransformations $infoTypeTransformations)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2InfoTypeTransformations
+         */
+        public function getInfoTypeTransformations()
+        {
+        }
+        /**
+         * Treat the dataset as structured. Transformations can be applied to specific
+         * locations within structured datasets, such as transforming a column within
+         * a table.
+         *
+         * @param GooglePrivacyDlpV2RecordTransformations $recordTransformations
+         */
+        public function setRecordTransformations(GooglePrivacyDlpV2RecordTransformations $recordTransformations)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2RecordTransformations
+         */
+        public function getRecordTransformations()
+        {
+        }
+        /**
+         * Mode for handling transformation errors. If left unspecified, the default
+         * mode is `TransformationErrorHandling.ThrowError`.
+         *
+         * @param GooglePrivacyDlpV2TransformationErrorHandling $transformationErrorHandling
+         */
+        public function setTransformationErrorHandling(GooglePrivacyDlpV2TransformationErrorHandling $transformationErrorHandling)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2TransformationErrorHandling
+         */
+        public function getTransformationErrorHandling()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2ImageTransformations
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2DeidentifyConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getImageTransformations()
-    {
-    }
-    /**
-     * Treat the dataset as free-form text and apply the same free text
-     * transformation everywhere.
-     *
-     * @param GooglePrivacyDlpV2InfoTypeTransformations $infoTypeTransformations
-     */
-    public function setInfoTypeTransformations(GooglePrivacyDlpV2InfoTypeTransformations $infoTypeTransformations)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2InfoTypeTransformations
-     */
-    public function getInfoTypeTransformations()
-    {
-    }
-    /**
-     * Treat the dataset as structured. Transformations can be applied to specific
-     * locations within structured datasets, such as transforming a column within
-     * a table.
-     *
-     * @param GooglePrivacyDlpV2RecordTransformations $recordTransformations
-     */
-    public function setRecordTransformations(GooglePrivacyDlpV2RecordTransformations $recordTransformations)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2RecordTransformations
-     */
-    public function getRecordTransformations()
-    {
-    }
-    /**
-     * Mode for handling transformation errors. If left unspecified, the default
-     * mode is `TransformationErrorHandling.ThrowError`.
-     *
-     * @param GooglePrivacyDlpV2TransformationErrorHandling $transformationErrorHandling
-     */
-    public function setTransformationErrorHandling(GooglePrivacyDlpV2TransformationErrorHandling $transformationErrorHandling)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2TransformationErrorHandling
-     */
-    public function getTransformationErrorHandling()
+    class Google_Service_DLP_GooglePrivacyDlpV2DeidentifyConfig extends \Google\Service\DLP\GooglePrivacyDlpV2DeidentifyConfig
     {
     }
 }

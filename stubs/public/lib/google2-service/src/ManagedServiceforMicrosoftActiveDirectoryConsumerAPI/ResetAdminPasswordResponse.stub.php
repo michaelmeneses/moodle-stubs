@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI;
-
-class ResetAdminPasswordResponse extends \Google\Model
-{
-    /**
-     * A random password. See admin for more information.
-     *
-     * @var string
-     */
-    public $password;
-    /**
-     * A random password. See admin for more information.
-     *
-     * @param string $password
-     */
-    public function setPassword($password)
+namespace Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI {
+    class ResetAdminPasswordResponse extends \Google\Model
     {
+        /**
+         * A random password. See admin for more information.
+         *
+         * @var string
+         */
+        public $password;
+        /**
+         * A random password. See admin for more information.
+         *
+         * @param string $password
+         */
+        public function setPassword($password)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPassword()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\ResetAdminPasswordResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPassword()
+    class Google_Service_ManagedServiceforMicrosoftActiveDirectoryConsumerAPI_ResetAdminPasswordResponse extends \Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\ResetAdminPasswordResponse
     {
     }
 }

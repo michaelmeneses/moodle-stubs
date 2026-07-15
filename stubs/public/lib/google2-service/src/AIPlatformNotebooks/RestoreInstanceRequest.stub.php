@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AIPlatformNotebooks;
-
-class RestoreInstanceRequest extends \Google\Model
-{
-    protected $snapshotType = Snapshot::class;
-    protected $snapshotDataType = '';
-    /**
-     * Snapshot to be used for restore.
-     *
-     * @param Snapshot $snapshot
-     */
-    public function setSnapshot(Snapshot $snapshot)
+namespace Google\Service\AIPlatformNotebooks {
+    class RestoreInstanceRequest extends \Google\Model
     {
+        protected $snapshotType = Snapshot::class;
+        protected $snapshotDataType = '';
+        /**
+         * Snapshot to be used for restore.
+         *
+         * @param Snapshot $snapshot
+         */
+        public function setSnapshot(Snapshot $snapshot)
+        {
+        }
+        /**
+         * @return Snapshot
+         */
+        public function getSnapshot()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Snapshot
+     * Runtime class alias of \Google\Service\AIPlatformNotebooks\RestoreInstanceRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSnapshot()
+    class Google_Service_AIPlatformNotebooks_RestoreInstanceRequest extends \Google\Service\AIPlatformNotebooks\RestoreInstanceRequest
     {
     }
 }

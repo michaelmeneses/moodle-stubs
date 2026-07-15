@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1AssistUserMetadata extends \Google\Model
-{
-    /**
-     * Optional. Preferred language to be used for answering if language detection
-     * fails. Also used as the language of error messages created by actions,
-     * regardless of language detection results.
-     *
-     * @var string
-     */
-    public $preferredLanguageCode;
-    /**
-     * Optional. IANA time zone, e.g. Europe/Budapest.
-     *
-     * @var string
-     */
-    public $timeZone;
-    /**
-     * Optional. Preferred language to be used for answering if language detection
-     * fails. Also used as the language of error messages created by actions,
-     * regardless of language detection results.
-     *
-     * @param string $preferredLanguageCode
-     */
-    public function setPreferredLanguageCode($preferredLanguageCode)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1AssistUserMetadata extends \Google\Model
     {
+        /**
+         * Optional. Preferred language to be used for answering if language detection
+         * fails. Also used as the language of error messages created by actions,
+         * regardless of language detection results.
+         *
+         * @var string
+         */
+        public $preferredLanguageCode;
+        /**
+         * Optional. IANA time zone, e.g. Europe/Budapest.
+         *
+         * @var string
+         */
+        public $timeZone;
+        /**
+         * Optional. Preferred language to be used for answering if language detection
+         * fails. Also used as the language of error messages created by actions,
+         * regardless of language detection results.
+         *
+         * @param string $preferredLanguageCode
+         */
+        public function setPreferredLanguageCode($preferredLanguageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPreferredLanguageCode()
+        {
+        }
+        /**
+         * Optional. IANA time zone, e.g. Europe/Budapest.
+         *
+         * @param string $timeZone
+         */
+        public function setTimeZone($timeZone)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimeZone()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AssistUserMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPreferredLanguageCode()
-    {
-    }
-    /**
-     * Optional. IANA time zone, e.g. Europe/Budapest.
-     *
-     * @param string $timeZone
-     */
-    public function setTimeZone($timeZone)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimeZone()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1AssistUserMetadata extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AssistUserMetadata
     {
     }
 }

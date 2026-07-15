@@ -21,109 +21,118 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2beta1WebhookRequest extends \Google\Collection
-{
-    protected $collection_key = 'alternativeQueryResults';
-    protected $alternativeQueryResultsType = GoogleCloudDialogflowV2beta1QueryResult::class;
-    protected $alternativeQueryResultsDataType = 'array';
-    protected $originalDetectIntentRequestType = GoogleCloudDialogflowV2beta1OriginalDetectIntentRequest::class;
-    protected $originalDetectIntentRequestDataType = '';
-    protected $queryResultType = GoogleCloudDialogflowV2beta1QueryResult::class;
-    protected $queryResultDataType = '';
-    /**
-     * The unique identifier of the response. Contains the same value as
-     * `[Streaming]DetectIntentResponse.response_id`.
-     *
-     * @var string
-     */
-    public $responseId;
-    /**
-     * The unique identifier of detectIntent request session. Can be used to
-     * identify end-user inside webhook implementation. Supported formats: -
-     * `projects//agent/sessions/, - `projects//locations//agent/sessions/`, -
-     * `projects//agent/environments//users//sessions/`, -
-     * `projects//locations//agent/environments//users//sessions/`,
-     *
-     * @var string
-     */
-    public $session;
-    /**
-     * Alternative query results from KnowledgeService.
-     *
-     * @param GoogleCloudDialogflowV2beta1QueryResult[] $alternativeQueryResults
-     */
-    public function setAlternativeQueryResults($alternativeQueryResults)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2beta1WebhookRequest extends \Google\Collection
     {
+        protected $collection_key = 'alternativeQueryResults';
+        protected $alternativeQueryResultsType = GoogleCloudDialogflowV2beta1QueryResult::class;
+        protected $alternativeQueryResultsDataType = 'array';
+        protected $originalDetectIntentRequestType = GoogleCloudDialogflowV2beta1OriginalDetectIntentRequest::class;
+        protected $originalDetectIntentRequestDataType = '';
+        protected $queryResultType = GoogleCloudDialogflowV2beta1QueryResult::class;
+        protected $queryResultDataType = '';
+        /**
+         * The unique identifier of the response. Contains the same value as
+         * `[Streaming]DetectIntentResponse.response_id`.
+         *
+         * @var string
+         */
+        public $responseId;
+        /**
+         * The unique identifier of detectIntent request session. Can be used to
+         * identify end-user inside webhook implementation. Supported formats: -
+         * `projects//agent/sessions/, - `projects//locations//agent/sessions/`, -
+         * `projects//agent/environments//users//sessions/`, -
+         * `projects//locations//agent/environments//users//sessions/`,
+         *
+         * @var string
+         */
+        public $session;
+        /**
+         * Alternative query results from KnowledgeService.
+         *
+         * @param GoogleCloudDialogflowV2beta1QueryResult[] $alternativeQueryResults
+         */
+        public function setAlternativeQueryResults($alternativeQueryResults)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2beta1QueryResult[]
+         */
+        public function getAlternativeQueryResults()
+        {
+        }
+        /**
+         * Optional. The contents of the original request that was passed to
+         * `[Streaming]DetectIntent` call.
+         *
+         * @param GoogleCloudDialogflowV2beta1OriginalDetectIntentRequest $originalDetectIntentRequest
+         */
+        public function setOriginalDetectIntentRequest(GoogleCloudDialogflowV2beta1OriginalDetectIntentRequest $originalDetectIntentRequest)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2beta1OriginalDetectIntentRequest
+         */
+        public function getOriginalDetectIntentRequest()
+        {
+        }
+        /**
+         * The result of the conversational query or event processing. Contains the
+         * same value as `[Streaming]DetectIntentResponse.query_result`.
+         *
+         * @param GoogleCloudDialogflowV2beta1QueryResult $queryResult
+         */
+        public function setQueryResult(GoogleCloudDialogflowV2beta1QueryResult $queryResult)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2beta1QueryResult
+         */
+        public function getQueryResult()
+        {
+        }
+        /**
+         * The unique identifier of the response. Contains the same value as
+         * `[Streaming]DetectIntentResponse.response_id`.
+         *
+         * @param string $responseId
+         */
+        public function setResponseId($responseId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResponseId()
+        {
+        }
+        /**
+         * The unique identifier of detectIntent request session. Can be used to
+         * identify end-user inside webhook implementation. Supported formats: -
+         * `projects//agent/sessions/, - `projects//locations//agent/sessions/`, -
+         * `projects//agent/environments//users//sessions/`, -
+         * `projects//locations//agent/environments//users//sessions/`,
+         *
+         * @param string $session
+         */
+        public function setSession($session)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSession()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowV2beta1QueryResult[]
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1WebhookRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAlternativeQueryResults()
-    {
-    }
-    /**
-     * Optional. The contents of the original request that was passed to
-     * `[Streaming]DetectIntent` call.
-     *
-     * @param GoogleCloudDialogflowV2beta1OriginalDetectIntentRequest $originalDetectIntentRequest
-     */
-    public function setOriginalDetectIntentRequest(GoogleCloudDialogflowV2beta1OriginalDetectIntentRequest $originalDetectIntentRequest)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowV2beta1OriginalDetectIntentRequest
-     */
-    public function getOriginalDetectIntentRequest()
-    {
-    }
-    /**
-     * The result of the conversational query or event processing. Contains the
-     * same value as `[Streaming]DetectIntentResponse.query_result`.
-     *
-     * @param GoogleCloudDialogflowV2beta1QueryResult $queryResult
-     */
-    public function setQueryResult(GoogleCloudDialogflowV2beta1QueryResult $queryResult)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowV2beta1QueryResult
-     */
-    public function getQueryResult()
-    {
-    }
-    /**
-     * The unique identifier of the response. Contains the same value as
-     * `[Streaming]DetectIntentResponse.response_id`.
-     *
-     * @param string $responseId
-     */
-    public function setResponseId($responseId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResponseId()
-    {
-    }
-    /**
-     * The unique identifier of detectIntent request session. Can be used to
-     * identify end-user inside webhook implementation. Supported formats: -
-     * `projects//agent/sessions/, - `projects//locations//agent/sessions/`, -
-     * `projects//agent/environments//users//sessions/`, -
-     * `projects//locations//agent/environments//users//sessions/`,
-     *
-     * @param string $session
-     */
-    public function setSession($session)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSession()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1WebhookRequest extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1WebhookRequest
     {
     }
 }

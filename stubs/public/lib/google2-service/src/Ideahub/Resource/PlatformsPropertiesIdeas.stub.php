@@ -21,44 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Ideahub\Resource;
-
-/**
- * The "ideas" collection of methods.
- * Typical usage is:
- *  <code>
- *   $ideahubService = new Google\Service\Ideahub(...);
- *   $ideas = $ideahubService->platforms_properties_ideas;
- *  </code>
- */
-class PlatformsPropertiesIdeas extends \Google\Service\Resource
-{
+namespace Google\Service\Ideahub\Resource {
+    use Google\Service\Ideahub\GoogleSearchIdeahubV1betaListIdeasResponse;
     /**
-     * List ideas for a given Creator and filter and sort options.
-     * (ideas.listPlatformsPropertiesIdeas)
-     *
-     * @param string $parent Required. If defined, specifies the creator for which
-     * to filter by. Format: publishers/{publisher}/properties/{property}
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Allows filtering. Supported syntax: * Filter
-     * expressions are made up of one or more restrictions. * Restrictions are
-     * implicitly combined, as if the `AND` operator was always used. The `OR`
-     * operator is currently unsupported. * Supported functions: - `saved(bool)`: If
-     * set to true, fetches only saved ideas. If set to false, fetches all except
-     * saved ideas. Can't be simultaneously used with `dismissed(bool)`. -
-     * `dismissed(bool)`: If set to true, fetches only dismissed ideas. Can't be
-     * simultaneously used with `saved(bool)`. The `false` value is currently
-     * unsupported. Examples: * `saved(true)` * `saved(false)` * `dismissed(true)`
-     * The length of this field should be no more than 500 characters.
-     * @opt_param string orderBy Order semantics described below.
-     * @opt_param int pageSize The maximum number of ideas per page. If unspecified,
-     * at most 10 ideas will be returned. The maximum value is 2000; values above
-     * 2000 will be coerced to 2000.
-     * @opt_param string pageToken Used to fetch next page.
-     * @return GoogleSearchIdeahubV1betaListIdeasResponse
+     * The "ideas" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $ideahubService = new Google\Service\Ideahub(...);
+     *   $ideas = $ideahubService->platforms_properties_ideas;
+     *  </code>
      */
-    public function listPlatformsPropertiesIdeas($parent, $optParams = [])
+    class PlatformsPropertiesIdeas extends \Google\Service\Resource
+    {
+        /**
+         * List ideas for a given Creator and filter and sort options.
+         * (ideas.listPlatformsPropertiesIdeas)
+         *
+         * @param string $parent Required. If defined, specifies the creator for which
+         * to filter by. Format: publishers/{publisher}/properties/{property}
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Allows filtering. Supported syntax: * Filter
+         * expressions are made up of one or more restrictions. * Restrictions are
+         * implicitly combined, as if the `AND` operator was always used. The `OR`
+         * operator is currently unsupported. * Supported functions: - `saved(bool)`: If
+         * set to true, fetches only saved ideas. If set to false, fetches all except
+         * saved ideas. Can't be simultaneously used with `dismissed(bool)`. -
+         * `dismissed(bool)`: If set to true, fetches only dismissed ideas. Can't be
+         * simultaneously used with `saved(bool)`. The `false` value is currently
+         * unsupported. Examples: * `saved(true)` * `saved(false)` * `dismissed(true)`
+         * The length of this field should be no more than 500 characters.
+         * @opt_param string orderBy Order semantics described below.
+         * @opt_param int pageSize The maximum number of ideas per page. If unspecified,
+         * at most 10 ideas will be returned. The maximum value is 2000; values above
+         * 2000 will be coerced to 2000.
+         * @opt_param string pageToken Used to fetch next page.
+         * @return GoogleSearchIdeahubV1betaListIdeasResponse
+         */
+        public function listPlatformsPropertiesIdeas($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Ideahub\Resource\PlatformsPropertiesIdeas registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Ideahub_Resource_PlatformsPropertiesIdeas extends \Google\Service\Ideahub\Resource\PlatformsPropertiesIdeas
     {
     }
 }

@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataform;
-
-class QueryDirectoryContentsResponse extends \Google\Collection
-{
-    protected $collection_key = 'directoryEntries';
-    protected $directoryEntriesType = DirectoryEntry::class;
-    protected $directoryEntriesDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of entries in the directory.
-     *
-     * @param DirectoryEntry[] $directoryEntries
-     */
-    public function setDirectoryEntries($directoryEntries)
+namespace Google\Service\Dataform {
+    class QueryDirectoryContentsResponse extends \Google\Collection
     {
+        protected $collection_key = 'directoryEntries';
+        protected $directoryEntriesType = DirectoryEntry::class;
+        protected $directoryEntriesDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of entries in the directory.
+         *
+         * @param DirectoryEntry[] $directoryEntries
+         */
+        public function setDirectoryEntries($directoryEntries)
+        {
+        }
+        /**
+         * @return DirectoryEntry[]
+         */
+        public function getDirectoryEntries()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DirectoryEntry[]
+     * Runtime class alias of \Google\Service\Dataform\QueryDirectoryContentsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDirectoryEntries()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Dataform_QueryDirectoryContentsResponse extends \Google\Service\Dataform\QueryDirectoryContentsResponse
     {
     }
 }

@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaSwitchVariableMaskingRequest extends \Google\Model
-{
-    /**
-     * Required. REQUIRED: True if variable masking feature should be turned on
-     * for this region
-     *
-     * @var bool
-     */
-    public $enableVariableMasking;
-    /**
-     * Required. REQUIRED: True if variable masking feature should be turned on
-     * for this region
-     *
-     * @param bool $enableVariableMasking
-     */
-    public function setEnableVariableMasking($enableVariableMasking)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaSwitchVariableMaskingRequest extends \Google\Model
     {
+        /**
+         * Required. REQUIRED: True if variable masking feature should be turned on
+         * for this region
+         *
+         * @var bool
+         */
+        public $enableVariableMasking;
+        /**
+         * Required. REQUIRED: True if variable masking feature should be turned on
+         * for this region
+         *
+         * @param bool $enableVariableMasking
+         */
+        public function setEnableVariableMasking($enableVariableMasking)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableVariableMasking()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaSwitchVariableMaskingRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnableVariableMasking()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaSwitchVariableMaskingRequest extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaSwitchVariableMaskingRequest
     {
     }
 }

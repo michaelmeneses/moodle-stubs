@@ -21,77 +21,86 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementV1CountChromeHardwareFleetDevicesResponse extends \Google\Collection
-{
-    protected $collection_key = 'storageReports';
-    protected $cpuReportsType = GoogleChromeManagementV1DeviceHardwareCountReport::class;
-    protected $cpuReportsDataType = 'array';
-    protected $memoryReportsType = GoogleChromeManagementV1DeviceHardwareCountReport::class;
-    protected $memoryReportsDataType = 'array';
-    protected $modelReportsType = GoogleChromeManagementV1DeviceHardwareCountReport::class;
-    protected $modelReportsDataType = 'array';
-    protected $storageReportsType = GoogleChromeManagementV1DeviceHardwareCountReport::class;
-    protected $storageReportsDataType = 'array';
-    /**
-     * The DeviceHardwareCountReport for device cpu type (for example Intel(R)
-     * Core(TM) i7-10610U CPU @ 1.80GHz).
-     *
-     * @param GoogleChromeManagementV1DeviceHardwareCountReport[] $cpuReports
-     */
-    public function setCpuReports($cpuReports)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementV1CountChromeHardwareFleetDevicesResponse extends \Google\Collection
     {
+        protected $collection_key = 'storageReports';
+        protected $cpuReportsType = GoogleChromeManagementV1DeviceHardwareCountReport::class;
+        protected $cpuReportsDataType = 'array';
+        protected $memoryReportsType = GoogleChromeManagementV1DeviceHardwareCountReport::class;
+        protected $memoryReportsDataType = 'array';
+        protected $modelReportsType = GoogleChromeManagementV1DeviceHardwareCountReport::class;
+        protected $modelReportsDataType = 'array';
+        protected $storageReportsType = GoogleChromeManagementV1DeviceHardwareCountReport::class;
+        protected $storageReportsDataType = 'array';
+        /**
+         * The DeviceHardwareCountReport for device cpu type (for example Intel(R)
+         * Core(TM) i7-10610U CPU @ 1.80GHz).
+         *
+         * @param GoogleChromeManagementV1DeviceHardwareCountReport[] $cpuReports
+         */
+        public function setCpuReports($cpuReports)
+        {
+        }
+        /**
+         * @return GoogleChromeManagementV1DeviceHardwareCountReport[]
+         */
+        public function getCpuReports()
+        {
+        }
+        /**
+         * The DeviceHardwareCountReport for device memory amount in gigabytes (for
+         * example 16).
+         *
+         * @param GoogleChromeManagementV1DeviceHardwareCountReport[] $memoryReports
+         */
+        public function setMemoryReports($memoryReports)
+        {
+        }
+        /**
+         * @return GoogleChromeManagementV1DeviceHardwareCountReport[]
+         */
+        public function getMemoryReports()
+        {
+        }
+        /**
+         * The DeviceHardwareCountReport for device model type (for example Acer C7
+         * Chromebook).
+         *
+         * @param GoogleChromeManagementV1DeviceHardwareCountReport[] $modelReports
+         */
+        public function setModelReports($modelReports)
+        {
+        }
+        /**
+         * @return GoogleChromeManagementV1DeviceHardwareCountReport[]
+         */
+        public function getModelReports()
+        {
+        }
+        /**
+         * The DeviceHardwareCountReport for device storage amount in gigabytes (for
+         * example 128).
+         *
+         * @param GoogleChromeManagementV1DeviceHardwareCountReport[] $storageReports
+         */
+        public function setStorageReports($storageReports)
+        {
+        }
+        /**
+         * @return GoogleChromeManagementV1DeviceHardwareCountReport[]
+         */
+        public function getStorageReports()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleChromeManagementV1DeviceHardwareCountReport[]
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementV1CountChromeHardwareFleetDevicesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCpuReports()
-    {
-    }
-    /**
-     * The DeviceHardwareCountReport for device memory amount in gigabytes (for
-     * example 16).
-     *
-     * @param GoogleChromeManagementV1DeviceHardwareCountReport[] $memoryReports
-     */
-    public function setMemoryReports($memoryReports)
-    {
-    }
-    /**
-     * @return GoogleChromeManagementV1DeviceHardwareCountReport[]
-     */
-    public function getMemoryReports()
-    {
-    }
-    /**
-     * The DeviceHardwareCountReport for device model type (for example Acer C7
-     * Chromebook).
-     *
-     * @param GoogleChromeManagementV1DeviceHardwareCountReport[] $modelReports
-     */
-    public function setModelReports($modelReports)
-    {
-    }
-    /**
-     * @return GoogleChromeManagementV1DeviceHardwareCountReport[]
-     */
-    public function getModelReports()
-    {
-    }
-    /**
-     * The DeviceHardwareCountReport for device storage amount in gigabytes (for
-     * example 128).
-     *
-     * @param GoogleChromeManagementV1DeviceHardwareCountReport[] $storageReports
-     */
-    public function setStorageReports($storageReports)
-    {
-    }
-    /**
-     * @return GoogleChromeManagementV1DeviceHardwareCountReport[]
-     */
-    public function getStorageReports()
+    class Google_Service_ChromeManagement_GoogleChromeManagementV1CountChromeHardwareFleetDevicesResponse extends \Google\Service\ChromeManagement\GoogleChromeManagementV1CountChromeHardwareFleetDevicesResponse
     {
     }
 }

@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteDriveMetadataAclFixRequest extends \Google\Collection
-{
-    protected $collection_key = 'recipientEmails';
-    /**
-     * @var string[]
-     */
-    public $recipientEmails;
-    /**
-     * @var string
-     */
-    public $role;
-    /**
-     * @var bool
-     */
-    public $shouldFix;
-    /**
-     * @param string[]
-     */
-    public function setRecipientEmails($recipientEmails)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteDriveMetadataAclFixRequest extends \Google\Collection
     {
+        protected $collection_key = 'recipientEmails';
+        /**
+         * @var string[]
+         */
+        public $recipientEmails;
+        /**
+         * @var string
+         */
+        public $role;
+        /**
+         * @var bool
+         */
+        public $shouldFix;
+        /**
+         * @param string[]
+         */
+        public function setRecipientEmails($recipientEmails)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRecipientEmails()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRole($role)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRole()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setShouldFix($shouldFix)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getShouldFix()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteDriveMetadataAclFixRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRecipientEmails()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRole($role)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRole()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setShouldFix($shouldFix)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getShouldFix()
+    class Google_Service_CloudSearch_AppsDynamiteDriveMetadataAclFixRequest extends \Google\Service\CloudSearch\AppsDynamiteDriveMetadataAclFixRequest
     {
     }
 }

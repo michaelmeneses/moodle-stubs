@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AppHub;
-
-class DiscoveredService extends \Google\Model
-{
-    /**
-     * Identifier. The resource name of the discovered service. Format:
-     * `"projects/{host-project-
-     * id}/locations/{location}/discoveredServices/{uuid}"`
-     *
-     * @var string
-     */
-    public $name;
-    protected $servicePropertiesType = ServiceProperties::class;
-    protected $servicePropertiesDataType = '';
-    protected $serviceReferenceType = ServiceReference::class;
-    protected $serviceReferenceDataType = '';
-    /**
-     * Identifier. The resource name of the discovered service. Format:
-     * `"projects/{host-project-
-     * id}/locations/{location}/discoveredServices/{uuid}"`
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\AppHub {
+    class DiscoveredService extends \Google\Model
     {
+        /**
+         * Identifier. The resource name of the discovered service. Format:
+         * `"projects/{host-project-
+         * id}/locations/{location}/discoveredServices/{uuid}"`
+         *
+         * @var string
+         */
+        public $name;
+        protected $servicePropertiesType = ServiceProperties::class;
+        protected $servicePropertiesDataType = '';
+        protected $serviceReferenceType = ServiceReference::class;
+        protected $serviceReferenceDataType = '';
+        /**
+         * Identifier. The resource name of the discovered service. Format:
+         * `"projects/{host-project-
+         * id}/locations/{location}/discoveredServices/{uuid}"`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. Properties of an underlying compute resource that can comprise
+         * a Service. These are immutable.
+         *
+         * @param ServiceProperties $serviceProperties
+         */
+        public function setServiceProperties(ServiceProperties $serviceProperties)
+        {
+        }
+        /**
+         * @return ServiceProperties
+         */
+        public function getServiceProperties()
+        {
+        }
+        /**
+         * Output only. Reference to an underlying networking resource that can
+         * comprise a Service. These are immutable.
+         *
+         * @param ServiceReference $serviceReference
+         */
+        public function setServiceReference(ServiceReference $serviceReference)
+        {
+        }
+        /**
+         * @return ServiceReference
+         */
+        public function getServiceReference()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AppHub\DiscoveredService registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. Properties of an underlying compute resource that can comprise
-     * a Service. These are immutable.
-     *
-     * @param ServiceProperties $serviceProperties
-     */
-    public function setServiceProperties(ServiceProperties $serviceProperties)
-    {
-    }
-    /**
-     * @return ServiceProperties
-     */
-    public function getServiceProperties()
-    {
-    }
-    /**
-     * Output only. Reference to an underlying networking resource that can
-     * comprise a Service. These are immutable.
-     *
-     * @param ServiceReference $serviceReference
-     */
-    public function setServiceReference(ServiceReference $serviceReference)
-    {
-    }
-    /**
-     * @return ServiceReference
-     */
-    public function getServiceReference()
+    class Google_Service_AppHub_DiscoveredService extends \Google\Service\AppHub\DiscoveredService
     {
     }
 }

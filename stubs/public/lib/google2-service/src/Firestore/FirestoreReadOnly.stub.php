@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class FirestoreReadOnly extends \Google\Model
-{
-    /**
-     * Reads documents at the given time. This must be a microsecond precision
-     * timestamp within the past one hour, or if Point-in-Time Recovery is
-     * enabled, can additionally be a whole minute timestamp within the past 7
-     * days.
-     *
-     * @var string
-     */
-    public $readTime;
-    /**
-     * Reads documents at the given time. This must be a microsecond precision
-     * timestamp within the past one hour, or if Point-in-Time Recovery is
-     * enabled, can additionally be a whole minute timestamp within the past 7
-     * days.
-     *
-     * @param string $readTime
-     */
-    public function setReadTime($readTime)
+namespace Google\Service\Firestore {
+    class FirestoreReadOnly extends \Google\Model
     {
+        /**
+         * Reads documents at the given time. This must be a microsecond precision
+         * timestamp within the past one hour, or if Point-in-Time Recovery is
+         * enabled, can additionally be a whole minute timestamp within the past 7
+         * days.
+         *
+         * @var string
+         */
+        public $readTime;
+        /**
+         * Reads documents at the given time. This must be a microsecond precision
+         * timestamp within the past one hour, or if Point-in-Time Recovery is
+         * enabled, can additionally be a whole minute timestamp within the past 7
+         * days.
+         *
+         * @param string $readTime
+         */
+        public function setReadTime($readTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReadTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Firestore\FirestoreReadOnly registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReadTime()
+    class Google_Service_Firestore_FirestoreReadOnly extends \Google\Service\Firestore\FirestoreReadOnly
     {
     }
 }

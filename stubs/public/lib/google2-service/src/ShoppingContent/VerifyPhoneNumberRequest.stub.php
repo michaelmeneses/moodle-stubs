@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class VerifyPhoneNumberRequest extends \Google\Model
-{
-    /**
-     * Unknown method.
-     */
-    public const PHONE_VERIFICATION_METHOD_PHONE_VERIFICATION_METHOD_UNSPECIFIED = 'PHONE_VERIFICATION_METHOD_UNSPECIFIED';
-    /**
-     * Receive verification code by SMS.
-     */
-    public const PHONE_VERIFICATION_METHOD_SMS = 'SMS';
-    /**
-     * Receive verification code by phone call.
-     */
-    public const PHONE_VERIFICATION_METHOD_PHONE_CALL = 'PHONE_CALL';
-    /**
-     * Verification method used to receive verification code.
-     *
-     * @var string
-     */
-    public $phoneVerificationMethod;
-    /**
-     * The verification code that was sent to the phone number for validation.
-     *
-     * @var string
-     */
-    public $verificationCode;
-    /**
-     * The verification ID returned by `requestphoneverification`.
-     *
-     * @var string
-     */
-    public $verificationId;
-    /**
-     * Verification method used to receive verification code.
-     *
-     * Accepted values: PHONE_VERIFICATION_METHOD_UNSPECIFIED, SMS, PHONE_CALL
-     *
-     * @param self::PHONE_VERIFICATION_METHOD_* $phoneVerificationMethod
-     */
-    public function setPhoneVerificationMethod($phoneVerificationMethod)
+namespace Google\Service\ShoppingContent {
+    class VerifyPhoneNumberRequest extends \Google\Model
     {
+        /**
+         * Unknown method.
+         */
+        public const PHONE_VERIFICATION_METHOD_PHONE_VERIFICATION_METHOD_UNSPECIFIED = 'PHONE_VERIFICATION_METHOD_UNSPECIFIED';
+        /**
+         * Receive verification code by SMS.
+         */
+        public const PHONE_VERIFICATION_METHOD_SMS = 'SMS';
+        /**
+         * Receive verification code by phone call.
+         */
+        public const PHONE_VERIFICATION_METHOD_PHONE_CALL = 'PHONE_CALL';
+        /**
+         * Verification method used to receive verification code.
+         *
+         * @var string
+         */
+        public $phoneVerificationMethod;
+        /**
+         * The verification code that was sent to the phone number for validation.
+         *
+         * @var string
+         */
+        public $verificationCode;
+        /**
+         * The verification ID returned by `requestphoneverification`.
+         *
+         * @var string
+         */
+        public $verificationId;
+        /**
+         * Verification method used to receive verification code.
+         *
+         * Accepted values: PHONE_VERIFICATION_METHOD_UNSPECIFIED, SMS, PHONE_CALL
+         *
+         * @param self::PHONE_VERIFICATION_METHOD_* $phoneVerificationMethod
+         */
+        public function setPhoneVerificationMethod($phoneVerificationMethod)
+        {
+        }
+        /**
+         * @return self::PHONE_VERIFICATION_METHOD_*
+         */
+        public function getPhoneVerificationMethod()
+        {
+        }
+        /**
+         * The verification code that was sent to the phone number for validation.
+         *
+         * @param string $verificationCode
+         */
+        public function setVerificationCode($verificationCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVerificationCode()
+        {
+        }
+        /**
+         * The verification ID returned by `requestphoneverification`.
+         *
+         * @param string $verificationId
+         */
+        public function setVerificationId($verificationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVerificationId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::PHONE_VERIFICATION_METHOD_*
+     * Runtime class alias of \Google\Service\ShoppingContent\VerifyPhoneNumberRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPhoneVerificationMethod()
-    {
-    }
-    /**
-     * The verification code that was sent to the phone number for validation.
-     *
-     * @param string $verificationCode
-     */
-    public function setVerificationCode($verificationCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVerificationCode()
-    {
-    }
-    /**
-     * The verification ID returned by `requestphoneverification`.
-     *
-     * @param string $verificationId
-     */
-    public function setVerificationId($verificationId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVerificationId()
+    class Google_Service_ShoppingContent_VerifyPhoneNumberRequest extends \Google\Service\ShoppingContent\VerifyPhoneNumberRequest
     {
     }
 }

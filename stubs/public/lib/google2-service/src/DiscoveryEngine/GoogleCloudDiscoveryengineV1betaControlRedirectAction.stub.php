@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaControlRedirectAction extends \Google\Model
-{
-    /**
-     * Required. The URI to which the shopper will be redirected. Required. URI
-     * must have length equal or less than 2000 characters. Otherwise an INVALID
-     * ARGUMENT error is thrown.
-     *
-     * @var string
-     */
-    public $redirectUri;
-    /**
-     * Required. The URI to which the shopper will be redirected. Required. URI
-     * must have length equal or less than 2000 characters. Otherwise an INVALID
-     * ARGUMENT error is thrown.
-     *
-     * @param string $redirectUri
-     */
-    public function setRedirectUri($redirectUri)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaControlRedirectAction extends \Google\Model
     {
+        /**
+         * Required. The URI to which the shopper will be redirected. Required. URI
+         * must have length equal or less than 2000 characters. Otherwise an INVALID
+         * ARGUMENT error is thrown.
+         *
+         * @var string
+         */
+        public $redirectUri;
+        /**
+         * Required. The URI to which the shopper will be redirected. Required. URI
+         * must have length equal or less than 2000 characters. Otherwise an INVALID
+         * ARGUMENT error is thrown.
+         *
+         * @param string $redirectUri
+         */
+        public function setRedirectUri($redirectUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRedirectUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaControlRedirectAction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRedirectUri()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaControlRedirectAction extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaControlRedirectAction
     {
     }
 }

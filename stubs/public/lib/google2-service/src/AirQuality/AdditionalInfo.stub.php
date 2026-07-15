@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AirQuality;
-
-class AdditionalInfo extends \Google\Model
-{
-    /**
-     * Text representing the pollutant's main health effects.
-     *
-     * @var string
-     */
-    public $effects;
-    /**
-     * Text representing the pollutant's main emission sources.
-     *
-     * @var string
-     */
-    public $sources;
-    /**
-     * Text representing the pollutant's main health effects.
-     *
-     * @param string $effects
-     */
-    public function setEffects($effects)
+namespace Google\Service\AirQuality {
+    class AdditionalInfo extends \Google\Model
     {
+        /**
+         * Text representing the pollutant's main health effects.
+         *
+         * @var string
+         */
+        public $effects;
+        /**
+         * Text representing the pollutant's main emission sources.
+         *
+         * @var string
+         */
+        public $sources;
+        /**
+         * Text representing the pollutant's main health effects.
+         *
+         * @param string $effects
+         */
+        public function setEffects($effects)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEffects()
+        {
+        }
+        /**
+         * Text representing the pollutant's main emission sources.
+         *
+         * @param string $sources
+         */
+        public function setSources($sources)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSources()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AirQuality\AdditionalInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEffects()
-    {
-    }
-    /**
-     * Text representing the pollutant's main emission sources.
-     *
-     * @param string $sources
-     */
-    public function setSources($sources)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSources()
+    class Google_Service_AirQuality_AdditionalInfo extends \Google\Service\AirQuality\AdditionalInfo
     {
     }
 }

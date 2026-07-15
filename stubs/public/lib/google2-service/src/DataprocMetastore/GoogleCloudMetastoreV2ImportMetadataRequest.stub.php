@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataprocMetastore;
-
-class GoogleCloudMetastoreV2ImportMetadataRequest extends \Google\Model
-{
-    protected $databaseDumpType = GoogleCloudMetastoreV2DatabaseDump::class;
-    protected $databaseDumpDataType = '';
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var string
-     */
-    public $requestId;
-    /**
-     * @param GoogleCloudMetastoreV2DatabaseDump
-     */
-    public function setDatabaseDump(GoogleCloudMetastoreV2DatabaseDump $databaseDump)
+namespace Google\Service\DataprocMetastore {
+    class GoogleCloudMetastoreV2ImportMetadataRequest extends \Google\Model
     {
+        protected $databaseDumpType = GoogleCloudMetastoreV2DatabaseDump::class;
+        protected $databaseDumpDataType = '';
+        /**
+         * @var string
+         */
+        public $description;
+        /**
+         * @var string
+         */
+        public $requestId;
+        /**
+         * @param GoogleCloudMetastoreV2DatabaseDump
+         */
+        public function setDatabaseDump(GoogleCloudMetastoreV2DatabaseDump $databaseDump)
+        {
+        }
+        /**
+         * @return GoogleCloudMetastoreV2DatabaseDump
+         */
+        public function getDatabaseDump()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRequestId($requestId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudMetastoreV2DatabaseDump
+     * Runtime class alias of \Google\Service\DataprocMetastore\GoogleCloudMetastoreV2ImportMetadataRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatabaseDump()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRequestId($requestId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestId()
+    class Google_Service_DataprocMetastore_GoogleCloudMetastoreV2ImportMetadataRequest extends \Google\Service\DataprocMetastore\GoogleCloudMetastoreV2ImportMetadataRequest
     {
     }
 }

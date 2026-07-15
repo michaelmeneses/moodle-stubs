@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class GoogleBigtableAdminV2TypeMap extends \Google\Model
-{
-    protected $keyTypeType = Type::class;
-    protected $keyTypeDataType = '';
-    protected $valueTypeType = Type::class;
-    protected $valueTypeDataType = '';
-    /**
-     * The type of a map key. Only `Bytes`, `String`, and `Int64` are allowed as
-     * key types.
-     *
-     * @param Type $keyType
-     */
-    public function setKeyType(Type $keyType)
+namespace Google\Service\BigtableAdmin {
+    class GoogleBigtableAdminV2TypeMap extends \Google\Model
     {
+        protected $keyTypeType = Type::class;
+        protected $keyTypeDataType = '';
+        protected $valueTypeType = Type::class;
+        protected $valueTypeDataType = '';
+        /**
+         * The type of a map key. Only `Bytes`, `String`, and `Int64` are allowed as
+         * key types.
+         *
+         * @param Type $keyType
+         */
+        public function setKeyType(Type $keyType)
+        {
+        }
+        /**
+         * @return Type
+         */
+        public function getKeyType()
+        {
+        }
+        /**
+         * The type of the values in a map.
+         *
+         * @param Type $valueType
+         */
+        public function setValueType(Type $valueType)
+        {
+        }
+        /**
+         * @return Type
+         */
+        public function getValueType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Type
+     * Runtime class alias of \Google\Service\BigtableAdmin\GoogleBigtableAdminV2TypeMap registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKeyType()
-    {
-    }
-    /**
-     * The type of the values in a map.
-     *
-     * @param Type $valueType
-     */
-    public function setValueType(Type $valueType)
-    {
-    }
-    /**
-     * @return Type
-     */
-    public function getValueType()
+    class Google_Service_BigtableAdmin_GoogleBigtableAdminV2TypeMap extends \Google\Service\BigtableAdmin\GoogleBigtableAdminV2TypeMap
     {
     }
 }

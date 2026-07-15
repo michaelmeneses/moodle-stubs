@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides;
-
-class TableRange extends \Google\Model
-{
-    /**
-     * The column span of the table range.
-     *
-     * @var int
-     */
-    public $columnSpan;
-    protected $locationType = TableCellLocation::class;
-    protected $locationDataType = '';
-    /**
-     * The row span of the table range.
-     *
-     * @var int
-     */
-    public $rowSpan;
-    /**
-     * The column span of the table range.
-     *
-     * @param int $columnSpan
-     */
-    public function setColumnSpan($columnSpan)
+namespace Google\Service\Slides {
+    class TableRange extends \Google\Model
     {
+        /**
+         * The column span of the table range.
+         *
+         * @var int
+         */
+        public $columnSpan;
+        protected $locationType = TableCellLocation::class;
+        protected $locationDataType = '';
+        /**
+         * The row span of the table range.
+         *
+         * @var int
+         */
+        public $rowSpan;
+        /**
+         * The column span of the table range.
+         *
+         * @param int $columnSpan
+         */
+        public function setColumnSpan($columnSpan)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getColumnSpan()
+        {
+        }
+        /**
+         * The starting location of the table range.
+         *
+         * @param TableCellLocation $location
+         */
+        public function setLocation(TableCellLocation $location)
+        {
+        }
+        /**
+         * @return TableCellLocation
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * The row span of the table range.
+         *
+         * @param int $rowSpan
+         */
+        public function setRowSpan($rowSpan)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRowSpan()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Slides\TableRange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumnSpan()
-    {
-    }
-    /**
-     * The starting location of the table range.
-     *
-     * @param TableCellLocation $location
-     */
-    public function setLocation(TableCellLocation $location)
-    {
-    }
-    /**
-     * @return TableCellLocation
-     */
-    public function getLocation()
-    {
-    }
-    /**
-     * The row span of the table range.
-     *
-     * @param int $rowSpan
-     */
-    public function setRowSpan($rowSpan)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getRowSpan()
+    class Google_Service_Slides_TableRange extends \Google\Service\Slides\TableRange
     {
     }
 }

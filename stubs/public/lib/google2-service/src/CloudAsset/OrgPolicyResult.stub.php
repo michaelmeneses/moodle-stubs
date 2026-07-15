@@ -21,120 +21,129 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class OrgPolicyResult extends \Google\Collection
-{
-    protected $collection_key = 'policyBundle';
-    protected $consolidatedPolicyType = AnalyzerOrgPolicy::class;
-    protected $consolidatedPolicyDataType = '';
-    /**
-     * The folder(s) that this consolidated policy belongs to, in the format of
-     * folders/{FOLDER_NUMBER}. This field is available when the consolidated
-     * policy belongs (directly or cascadingly) to one or more folders.
-     *
-     * @var string[]
-     */
-    public $folders;
-    /**
-     * The organization that this consolidated policy belongs to, in the format of
-     * organizations/{ORGANIZATION_NUMBER}. This field is available when the
-     * consolidated policy belongs (directly or cascadingly) to an organization.
-     *
-     * @var string
-     */
-    public $organization;
-    protected $policyBundleType = AnalyzerOrgPolicy::class;
-    protected $policyBundleDataType = 'array';
-    /**
-     * The project that this consolidated policy belongs to, in the format of
-     * projects/{PROJECT_NUMBER}. This field is available when the consolidated
-     * policy belongs to a project.
-     *
-     * @var string
-     */
-    public $project;
-    /**
-     * The consolidated organization policy for the analyzed resource. The
-     * consolidated organization policy is computed by merging and evaluating
-     * policy_bundle. The evaluation will respect the organization policy
-     * [hierarchy rules](https://cloud.google.com/resource-
-     * manager/docs/organization-policy/understanding-hierarchy).
-     *
-     * @param AnalyzerOrgPolicy $consolidatedPolicy
-     */
-    public function setConsolidatedPolicy(AnalyzerOrgPolicy $consolidatedPolicy)
+namespace Google\Service\CloudAsset {
+    class OrgPolicyResult extends \Google\Collection
     {
+        protected $collection_key = 'policyBundle';
+        protected $consolidatedPolicyType = AnalyzerOrgPolicy::class;
+        protected $consolidatedPolicyDataType = '';
+        /**
+         * The folder(s) that this consolidated policy belongs to, in the format of
+         * folders/{FOLDER_NUMBER}. This field is available when the consolidated
+         * policy belongs (directly or cascadingly) to one or more folders.
+         *
+         * @var string[]
+         */
+        public $folders;
+        /**
+         * The organization that this consolidated policy belongs to, in the format of
+         * organizations/{ORGANIZATION_NUMBER}. This field is available when the
+         * consolidated policy belongs (directly or cascadingly) to an organization.
+         *
+         * @var string
+         */
+        public $organization;
+        protected $policyBundleType = AnalyzerOrgPolicy::class;
+        protected $policyBundleDataType = 'array';
+        /**
+         * The project that this consolidated policy belongs to, in the format of
+         * projects/{PROJECT_NUMBER}. This field is available when the consolidated
+         * policy belongs to a project.
+         *
+         * @var string
+         */
+        public $project;
+        /**
+         * The consolidated organization policy for the analyzed resource. The
+         * consolidated organization policy is computed by merging and evaluating
+         * policy_bundle. The evaluation will respect the organization policy
+         * [hierarchy rules](https://cloud.google.com/resource-
+         * manager/docs/organization-policy/understanding-hierarchy).
+         *
+         * @param AnalyzerOrgPolicy $consolidatedPolicy
+         */
+        public function setConsolidatedPolicy(AnalyzerOrgPolicy $consolidatedPolicy)
+        {
+        }
+        /**
+         * @return AnalyzerOrgPolicy
+         */
+        public function getConsolidatedPolicy()
+        {
+        }
+        /**
+         * The folder(s) that this consolidated policy belongs to, in the format of
+         * folders/{FOLDER_NUMBER}. This field is available when the consolidated
+         * policy belongs (directly or cascadingly) to one or more folders.
+         *
+         * @param string[] $folders
+         */
+        public function setFolders($folders)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getFolders()
+        {
+        }
+        /**
+         * The organization that this consolidated policy belongs to, in the format of
+         * organizations/{ORGANIZATION_NUMBER}. This field is available when the
+         * consolidated policy belongs (directly or cascadingly) to an organization.
+         *
+         * @param string $organization
+         */
+        public function setOrganization($organization)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOrganization()
+        {
+        }
+        /**
+         * The ordered list of all organization policies from the
+         * consolidated_policy.attached_resource. to the scope specified in the
+         * request. If the constraint is defined with default policy, it will also
+         * appear in the list.
+         *
+         * @param AnalyzerOrgPolicy[] $policyBundle
+         */
+        public function setPolicyBundle($policyBundle)
+        {
+        }
+        /**
+         * @return AnalyzerOrgPolicy[]
+         */
+        public function getPolicyBundle()
+        {
+        }
+        /**
+         * The project that this consolidated policy belongs to, in the format of
+         * projects/{PROJECT_NUMBER}. This field is available when the consolidated
+         * policy belongs to a project.
+         *
+         * @param string $project
+         */
+        public function setProject($project)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProject()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AnalyzerOrgPolicy
+     * Runtime class alias of \Google\Service\CloudAsset\OrgPolicyResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConsolidatedPolicy()
-    {
-    }
-    /**
-     * The folder(s) that this consolidated policy belongs to, in the format of
-     * folders/{FOLDER_NUMBER}. This field is available when the consolidated
-     * policy belongs (directly or cascadingly) to one or more folders.
-     *
-     * @param string[] $folders
-     */
-    public function setFolders($folders)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getFolders()
-    {
-    }
-    /**
-     * The organization that this consolidated policy belongs to, in the format of
-     * organizations/{ORGANIZATION_NUMBER}. This field is available when the
-     * consolidated policy belongs (directly or cascadingly) to an organization.
-     *
-     * @param string $organization
-     */
-    public function setOrganization($organization)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOrganization()
-    {
-    }
-    /**
-     * The ordered list of all organization policies from the
-     * consolidated_policy.attached_resource. to the scope specified in the
-     * request. If the constraint is defined with default policy, it will also
-     * appear in the list.
-     *
-     * @param AnalyzerOrgPolicy[] $policyBundle
-     */
-    public function setPolicyBundle($policyBundle)
-    {
-    }
-    /**
-     * @return AnalyzerOrgPolicy[]
-     */
-    public function getPolicyBundle()
-    {
-    }
-    /**
-     * The project that this consolidated policy belongs to, in the format of
-     * projects/{PROJECT_NUMBER}. This field is available when the consolidated
-     * policy belongs to a project.
-     *
-     * @param string $project
-     */
-    public function setProject($project)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProject()
+    class Google_Service_CloudAsset_OrgPolicyResult extends \Google\Service\CloudAsset\OrgPolicyResult
     {
     }
 }

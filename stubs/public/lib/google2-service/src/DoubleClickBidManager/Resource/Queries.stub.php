@@ -21,86 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DoubleClickBidManager\Resource;
-
-/**
- * The "queries" collection of methods.
- * Typical usage is:
- *  <code>
- *   $doubleclickbidmanagerService = new Google\Service\DoubleClickBidManager(...);
- *   $queries = $doubleclickbidmanagerService->queries;
- *  </code>
- */
-class Queries extends \Google\Service\Resource
-{
+namespace Google\Service\DoubleClickBidManager\Resource {
+    use Google\Service\DoubleClickBidManager\ListQueriesResponse;
+    use Google\Service\DoubleClickBidManager\Query;
+    use Google\Service\DoubleClickBidManager\Report;
+    use Google\Service\DoubleClickBidManager\RunQueryRequest;
     /**
-     * Creates a new query. (queries.create)
-     *
-     * @param Query $postBody
-     * @param array $optParams Optional parameters.
-     * @return Query
-     * @throws \Google\Service\Exception
+     * The "queries" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $doubleclickbidmanagerService = new Google\Service\DoubleClickBidManager(...);
+     *   $queries = $doubleclickbidmanagerService->queries;
+     *  </code>
      */
-    public function create(Query $postBody, $optParams = [])
+    class Queries extends \Google\Service\Resource
     {
+        /**
+         * Creates a new query. (queries.create)
+         *
+         * @param Query $postBody
+         * @param array $optParams Optional parameters.
+         * @return Query
+         * @throws \Google\Service\Exception
+         */
+        public function create(Query $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes an existing query as well as its generated reports. (queries.delete)
+         *
+         * @param string $queryId Required. The ID of the query to delete.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($queryId, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves a query. (queries.get)
+         *
+         * @param string $queryId Required. The ID of the query to retrieve.
+         * @param array $optParams Optional parameters.
+         * @return Query
+         * @throws \Google\Service\Exception
+         */
+        public function get($queryId, $optParams = [])
+        {
+        }
+        /**
+         * Lists queries created by the current user. (queries.listQueries)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string orderBy Field to sort the list by. Accepts the following
+         * values: * `queryId` (default) * `metadata.title` The default sorting order is
+         * ascending. To specify descending order for a field, add the suffix `desc` to
+         * the field name. For example, `queryId desc`.
+         * @opt_param int pageSize Maximum number of results per page. Must be between
+         * `1` and `100`. Defaults to `100` if unspecified.
+         * @opt_param string pageToken A token identifying which page of results the
+         * server should return. Typically, this is the value of nextPageToken, returned
+         * from the previous call to the `queries.list` method. If unspecified, the
+         * first page of results is returned.
+         * @return ListQueriesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listQueries($optParams = [])
+        {
+        }
+        /**
+         * Runs an existing query to generate a report. (queries.run)
+         *
+         * @param string $queryId Required. The ID of the query to run.
+         * @param RunQueryRequest $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool synchronous Whether the query should be run synchronously.
+         * When `true`, the request won't return until the resulting report has finished
+         * running. This parameter is `false` by default. Setting this parameter to
+         * `true` is **not recommended**.
+         * @return Report
+         * @throws \Google\Service\Exception
+         */
+        public function run($queryId, RunQueryRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes an existing query as well as its generated reports. (queries.delete)
-     *
-     * @param string $queryId Required. The ID of the query to delete.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\DoubleClickBidManager\Resource\Queries registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($queryId, $optParams = [])
-    {
-    }
-    /**
-     * Retrieves a query. (queries.get)
-     *
-     * @param string $queryId Required. The ID of the query to retrieve.
-     * @param array $optParams Optional parameters.
-     * @return Query
-     * @throws \Google\Service\Exception
-     */
-    public function get($queryId, $optParams = [])
-    {
-    }
-    /**
-     * Lists queries created by the current user. (queries.listQueries)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string orderBy Field to sort the list by. Accepts the following
-     * values: * `queryId` (default) * `metadata.title` The default sorting order is
-     * ascending. To specify descending order for a field, add the suffix `desc` to
-     * the field name. For example, `queryId desc`.
-     * @opt_param int pageSize Maximum number of results per page. Must be between
-     * `1` and `100`. Defaults to `100` if unspecified.
-     * @opt_param string pageToken A token identifying which page of results the
-     * server should return. Typically, this is the value of nextPageToken, returned
-     * from the previous call to the `queries.list` method. If unspecified, the
-     * first page of results is returned.
-     * @return ListQueriesResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listQueries($optParams = [])
-    {
-    }
-    /**
-     * Runs an existing query to generate a report. (queries.run)
-     *
-     * @param string $queryId Required. The ID of the query to run.
-     * @param RunQueryRequest $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool synchronous Whether the query should be run synchronously.
-     * When `true`, the request won't return until the resulting report has finished
-     * running. This parameter is `false` by default. Setting this parameter to
-     * `true` is **not recommended**.
-     * @return Report
-     * @throws \Google\Service\Exception
-     */
-    public function run($queryId, RunQueryRequest $postBody, $optParams = [])
+    class Google_Service_DoubleClickBidManager_Resource_Queries extends \Google\Service\DoubleClickBidManager\Resource\Queries
     {
     }
 }

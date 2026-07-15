@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class ResponseDebugInfo extends \Google\Model
-{
-    /**
-     * General debug info formatted for display.
-     *
-     * @var string
-     */
-    public $formattedDebugInfo;
-    /**
-     * General debug info formatted for display.
-     *
-     * @param string $formattedDebugInfo
-     */
-    public function setFormattedDebugInfo($formattedDebugInfo)
+namespace Google\Service\CloudSearch {
+    class ResponseDebugInfo extends \Google\Model
     {
+        /**
+         * General debug info formatted for display.
+         *
+         * @var string
+         */
+        public $formattedDebugInfo;
+        /**
+         * General debug info formatted for display.
+         *
+         * @param string $formattedDebugInfo
+         */
+        public function setFormattedDebugInfo($formattedDebugInfo)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFormattedDebugInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\ResponseDebugInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFormattedDebugInfo()
+    class Google_Service_CloudSearch_ResponseDebugInfo extends \Google\Service\CloudSearch\ResponseDebugInfo
     {
     }
 }

@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2ReplaceDictionaryConfig extends \Google\Model
-{
-    protected $wordListType = GooglePrivacyDlpV2WordList::class;
-    protected $wordListDataType = '';
-    /**
-     * A list of words to select from for random replacement. The
-     * [limits](https://cloud.google.com/sensitive-data-protection/limits) page
-     * contains details about the size limits of dictionaries.
-     *
-     * @param GooglePrivacyDlpV2WordList $wordList
-     */
-    public function setWordList(GooglePrivacyDlpV2WordList $wordList)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2ReplaceDictionaryConfig extends \Google\Model
     {
+        protected $wordListType = GooglePrivacyDlpV2WordList::class;
+        protected $wordListDataType = '';
+        /**
+         * A list of words to select from for random replacement. The
+         * [limits](https://cloud.google.com/sensitive-data-protection/limits) page
+         * contains details about the size limits of dictionaries.
+         *
+         * @param GooglePrivacyDlpV2WordList $wordList
+         */
+        public function setWordList(GooglePrivacyDlpV2WordList $wordList)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2WordList
+         */
+        public function getWordList()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2WordList
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2ReplaceDictionaryConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getWordList()
+    class Google_Service_DLP_GooglePrivacyDlpV2ReplaceDictionaryConfig extends \Google\Service\DLP\GooglePrivacyDlpV2ReplaceDictionaryConfig
     {
     }
 }

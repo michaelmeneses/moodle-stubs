@@ -21,199 +21,208 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1betaSearchChangeHistoryEventsRequest extends \Google\Collection
-{
-    protected $collection_key = 'resourceType';
-    /**
-     * Optional. If set, only return changes that match one or more of these types
-     * of actions.
-     *
-     * @var string[]
-     */
-    public $action;
-    /**
-     * Optional. If set, only return changes if they are made by a user in this
-     * list.
-     *
-     * @var string[]
-     */
-    public $actorEmail;
-    /**
-     * Optional. If set, only return changes made after this time (inclusive).
-     *
-     * @var string
-     */
-    public $earliestChangeTime;
-    /**
-     * Optional. If set, only return changes made before this time (inclusive).
-     *
-     * @var string
-     */
-    public $latestChangeTime;
-    /**
-     * Optional. The maximum number of ChangeHistoryEvent items to return. If
-     * unspecified, at most 50 items will be returned. The maximum value is 200
-     * (higher values will be coerced to the maximum). Note that the service may
-     * return a page with fewer items than this value specifies (potentially even
-     * zero), and that there still may be additional pages. If you want a
-     * particular number of items, you'll need to continue requesting additional
-     * pages using `page_token` until you get the needed number.
-     *
-     * @var int
-     */
-    public $pageSize;
-    /**
-     * Optional. A page token, received from a previous
-     * `SearchChangeHistoryEvents` call. Provide this to retrieve the subsequent
-     * page. When paginating, all other parameters provided to
-     * `SearchChangeHistoryEvents` must match the call that provided the page
-     * token.
-     *
-     * @var string
-     */
-    public $pageToken;
-    /**
-     * Optional. Resource name for a child property. If set, only return changes
-     * made to this property or its child resources. Format:
-     * properties/{propertyId} Example: `properties/100`
-     *
-     * @var string
-     */
-    public $property;
-    /**
-     * Optional. If set, only return changes if they are for a resource that
-     * matches at least one of these types.
-     *
-     * @var string[]
-     */
-    public $resourceType;
-    /**
-     * Optional. If set, only return changes that match one or more of these types
-     * of actions.
-     *
-     * @param string[] $action
-     */
-    public function setAction($action)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1betaSearchChangeHistoryEventsRequest extends \Google\Collection
     {
+        protected $collection_key = 'resourceType';
+        /**
+         * Optional. If set, only return changes that match one or more of these types
+         * of actions.
+         *
+         * @var string[]
+         */
+        public $action;
+        /**
+         * Optional. If set, only return changes if they are made by a user in this
+         * list.
+         *
+         * @var string[]
+         */
+        public $actorEmail;
+        /**
+         * Optional. If set, only return changes made after this time (inclusive).
+         *
+         * @var string
+         */
+        public $earliestChangeTime;
+        /**
+         * Optional. If set, only return changes made before this time (inclusive).
+         *
+         * @var string
+         */
+        public $latestChangeTime;
+        /**
+         * Optional. The maximum number of ChangeHistoryEvent items to return. If
+         * unspecified, at most 50 items will be returned. The maximum value is 200
+         * (higher values will be coerced to the maximum). Note that the service may
+         * return a page with fewer items than this value specifies (potentially even
+         * zero), and that there still may be additional pages. If you want a
+         * particular number of items, you'll need to continue requesting additional
+         * pages using `page_token` until you get the needed number.
+         *
+         * @var int
+         */
+        public $pageSize;
+        /**
+         * Optional. A page token, received from a previous
+         * `SearchChangeHistoryEvents` call. Provide this to retrieve the subsequent
+         * page. When paginating, all other parameters provided to
+         * `SearchChangeHistoryEvents` must match the call that provided the page
+         * token.
+         *
+         * @var string
+         */
+        public $pageToken;
+        /**
+         * Optional. Resource name for a child property. If set, only return changes
+         * made to this property or its child resources. Format:
+         * properties/{propertyId} Example: `properties/100`
+         *
+         * @var string
+         */
+        public $property;
+        /**
+         * Optional. If set, only return changes if they are for a resource that
+         * matches at least one of these types.
+         *
+         * @var string[]
+         */
+        public $resourceType;
+        /**
+         * Optional. If set, only return changes that match one or more of these types
+         * of actions.
+         *
+         * @param string[] $action
+         */
+        public function setAction($action)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAction()
+        {
+        }
+        /**
+         * Optional. If set, only return changes if they are made by a user in this
+         * list.
+         *
+         * @param string[] $actorEmail
+         */
+        public function setActorEmail($actorEmail)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getActorEmail()
+        {
+        }
+        /**
+         * Optional. If set, only return changes made after this time (inclusive).
+         *
+         * @param string $earliestChangeTime
+         */
+        public function setEarliestChangeTime($earliestChangeTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEarliestChangeTime()
+        {
+        }
+        /**
+         * Optional. If set, only return changes made before this time (inclusive).
+         *
+         * @param string $latestChangeTime
+         */
+        public function setLatestChangeTime($latestChangeTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLatestChangeTime()
+        {
+        }
+        /**
+         * Optional. The maximum number of ChangeHistoryEvent items to return. If
+         * unspecified, at most 50 items will be returned. The maximum value is 200
+         * (higher values will be coerced to the maximum). Note that the service may
+         * return a page with fewer items than this value specifies (potentially even
+         * zero), and that there still may be additional pages. If you want a
+         * particular number of items, you'll need to continue requesting additional
+         * pages using `page_token` until you get the needed number.
+         *
+         * @param int $pageSize
+         */
+        public function setPageSize($pageSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPageSize()
+        {
+        }
+        /**
+         * Optional. A page token, received from a previous
+         * `SearchChangeHistoryEvents` call. Provide this to retrieve the subsequent
+         * page. When paginating, all other parameters provided to
+         * `SearchChangeHistoryEvents` must match the call that provided the page
+         * token.
+         *
+         * @param string $pageToken
+         */
+        public function setPageToken($pageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPageToken()
+        {
+        }
+        /**
+         * Optional. Resource name for a child property. If set, only return changes
+         * made to this property or its child resources. Format:
+         * properties/{propertyId} Example: `properties/100`
+         *
+         * @param string $property
+         */
+        public function setProperty($property)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProperty()
+        {
+        }
+        /**
+         * Optional. If set, only return changes if they are for a resource that
+         * matches at least one of these types.
+         *
+         * @param string[] $resourceType
+         */
+        public function setResourceType($resourceType)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getResourceType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaSearchChangeHistoryEventsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAction()
-    {
-    }
-    /**
-     * Optional. If set, only return changes if they are made by a user in this
-     * list.
-     *
-     * @param string[] $actorEmail
-     */
-    public function setActorEmail($actorEmail)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getActorEmail()
-    {
-    }
-    /**
-     * Optional. If set, only return changes made after this time (inclusive).
-     *
-     * @param string $earliestChangeTime
-     */
-    public function setEarliestChangeTime($earliestChangeTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEarliestChangeTime()
-    {
-    }
-    /**
-     * Optional. If set, only return changes made before this time (inclusive).
-     *
-     * @param string $latestChangeTime
-     */
-    public function setLatestChangeTime($latestChangeTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLatestChangeTime()
-    {
-    }
-    /**
-     * Optional. The maximum number of ChangeHistoryEvent items to return. If
-     * unspecified, at most 50 items will be returned. The maximum value is 200
-     * (higher values will be coerced to the maximum). Note that the service may
-     * return a page with fewer items than this value specifies (potentially even
-     * zero), and that there still may be additional pages. If you want a
-     * particular number of items, you'll need to continue requesting additional
-     * pages using `page_token` until you get the needed number.
-     *
-     * @param int $pageSize
-     */
-    public function setPageSize($pageSize)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPageSize()
-    {
-    }
-    /**
-     * Optional. A page token, received from a previous
-     * `SearchChangeHistoryEvents` call. Provide this to retrieve the subsequent
-     * page. When paginating, all other parameters provided to
-     * `SearchChangeHistoryEvents` must match the call that provided the page
-     * token.
-     *
-     * @param string $pageToken
-     */
-    public function setPageToken($pageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPageToken()
-    {
-    }
-    /**
-     * Optional. Resource name for a child property. If set, only return changes
-     * made to this property or its child resources. Format:
-     * properties/{propertyId} Example: `properties/100`
-     *
-     * @param string $property
-     */
-    public function setProperty($property)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProperty()
-    {
-    }
-    /**
-     * Optional. If set, only return changes if they are for a resource that
-     * matches at least one of these types.
-     *
-     * @param string[] $resourceType
-     */
-    public function setResourceType($resourceType)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getResourceType()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1betaSearchChangeHistoryEventsRequest extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaSearchChangeHistoryEventsRequest
     {
     }
 }

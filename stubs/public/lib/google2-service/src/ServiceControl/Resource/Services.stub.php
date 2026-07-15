@@ -21,72 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceControl\Resource;
-
-/**
- * The "services" collection of methods.
- * Typical usage is:
- *  <code>
- *   $servicecontrolService = new Google\Service\ServiceControl(...);
- *   $services = $servicecontrolService->services;
- *  </code>
- */
-class Services extends \Google\Service\Resource
-{
+namespace Google\Service\ServiceControl\Resource {
+    use Google\Service\ServiceControl\CheckRequest;
+    use Google\Service\ServiceControl\CheckResponse;
+    use Google\Service\ServiceControl\ReportRequest;
+    use Google\Service\ServiceControl\ReportResponse;
     /**
-     * This method provides admission control for services that are integrated with
-     * [Service Infrastructure](https://cloud.google.com/service-infrastructure). It
-     * checks whether an operation should be allowed based on the service
-     * configuration and relevant policies. It must be called before the operation
-     * is executed. For more information, see [Admission
-     * Control](https://cloud.google.com/service-infrastructure/docs/admission-
-     * control). NOTE: The admission control has an expected policy propagation
-     * delay of 60s. The caller **must** not depend on the most recent policy
-     * changes. NOTE: The admission control has a hard limit of 1 referenced
-     * resources per call. If an operation refers to more than 1 resources, the
-     * caller must call the Check method multiple times. This method requires the
-     * `servicemanagement.services.check` permission on the specified service. For
-     * more information, see [Service Control API Access
-     * Control](https://cloud.google.com/service-infrastructure/docs/service-
-     * control/access-control). (services.check)
-     *
-     * @param string $serviceName The service name as specified in its service
-     * configuration. For example, `"pubsub.googleapis.com"`. See
-     * [google.api.Service](https://cloud.google.com/service-
-     * management/reference/rpc/google.api#google.api.Service) for the definition of
-     * a service name.
-     * @param CheckRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return CheckResponse
-     * @throws \Google\Service\Exception
+     * The "services" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $servicecontrolService = new Google\Service\ServiceControl(...);
+     *   $services = $servicecontrolService->services;
+     *  </code>
      */
-    public function check($serviceName, CheckRequest $postBody, $optParams = [])
+    class Services extends \Google\Service\Resource
     {
+        /**
+         * This method provides admission control for services that are integrated with
+         * [Service Infrastructure](https://cloud.google.com/service-infrastructure). It
+         * checks whether an operation should be allowed based on the service
+         * configuration and relevant policies. It must be called before the operation
+         * is executed. For more information, see [Admission
+         * Control](https://cloud.google.com/service-infrastructure/docs/admission-
+         * control). NOTE: The admission control has an expected policy propagation
+         * delay of 60s. The caller **must** not depend on the most recent policy
+         * changes. NOTE: The admission control has a hard limit of 1 referenced
+         * resources per call. If an operation refers to more than 1 resources, the
+         * caller must call the Check method multiple times. This method requires the
+         * `servicemanagement.services.check` permission on the specified service. For
+         * more information, see [Service Control API Access
+         * Control](https://cloud.google.com/service-infrastructure/docs/service-
+         * control/access-control). (services.check)
+         *
+         * @param string $serviceName The service name as specified in its service
+         * configuration. For example, `"pubsub.googleapis.com"`. See
+         * [google.api.Service](https://cloud.google.com/service-
+         * management/reference/rpc/google.api#google.api.Service) for the definition of
+         * a service name.
+         * @param CheckRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return CheckResponse
+         * @throws \Google\Service\Exception
+         */
+        public function check($serviceName, CheckRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * This method provides telemetry reporting for services that are integrated
+         * with [Service Infrastructure](https://cloud.google.com/service-
+         * infrastructure). It reports a list of operations that have occurred on a
+         * service. It must be called after the operations have been executed. For more
+         * information, see [Telemetry Reporting](https://cloud.google.com/service-
+         * infrastructure/docs/telemetry-reporting). NOTE: The telemetry reporting has a
+         * hard limit of 100 operations and 1MB per Report call. This method requires
+         * the `servicemanagement.services.report` permission on the specified service.
+         * For more information, see [Service Control API Access
+         * Control](https://cloud.google.com/service-infrastructure/docs/service-
+         * control/access-control). (services.report)
+         *
+         * @param string $serviceName The service name as specified in its service
+         * configuration. For example, `"pubsub.googleapis.com"`. See
+         * [google.api.Service](https://cloud.google.com/service-
+         * management/reference/rpc/google.api#google.api.Service) for the definition of
+         * a service name.
+         * @param ReportRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return ReportResponse
+         * @throws \Google\Service\Exception
+         */
+        public function report($serviceName, ReportRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * This method provides telemetry reporting for services that are integrated
-     * with [Service Infrastructure](https://cloud.google.com/service-
-     * infrastructure). It reports a list of operations that have occurred on a
-     * service. It must be called after the operations have been executed. For more
-     * information, see [Telemetry Reporting](https://cloud.google.com/service-
-     * infrastructure/docs/telemetry-reporting). NOTE: The telemetry reporting has a
-     * hard limit of 100 operations and 1MB per Report call. This method requires
-     * the `servicemanagement.services.report` permission on the specified service.
-     * For more information, see [Service Control API Access
-     * Control](https://cloud.google.com/service-infrastructure/docs/service-
-     * control/access-control). (services.report)
-     *
-     * @param string $serviceName The service name as specified in its service
-     * configuration. For example, `"pubsub.googleapis.com"`. See
-     * [google.api.Service](https://cloud.google.com/service-
-     * management/reference/rpc/google.api#google.api.Service) for the definition of
-     * a service name.
-     * @param ReportRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return ReportResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\ServiceControl\Resource\Services registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function report($serviceName, ReportRequest $postBody, $optParams = [])
+    class Google_Service_ServiceControl_Resource_Services extends \Google\Service\ServiceControl\Resource\Services
     {
     }
 }

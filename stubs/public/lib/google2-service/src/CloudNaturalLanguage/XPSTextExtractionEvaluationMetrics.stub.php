@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSTextExtractionEvaluationMetrics extends \Google\Collection
-{
-    protected $collection_key = 'confidenceMetricsEntries';
-    protected $bestF1ConfidenceMetricsType = XPSConfidenceMetricsEntry::class;
-    protected $bestF1ConfidenceMetricsDataType = '';
-    protected $confidenceMetricsEntriesType = XPSConfidenceMetricsEntry::class;
-    protected $confidenceMetricsEntriesDataType = 'array';
-    protected $confusionMatrixType = XPSConfusionMatrix::class;
-    protected $confusionMatrixDataType = '';
-    protected $perLabelConfidenceMetricsType = XPSConfidenceMetricsEntry::class;
-    protected $perLabelConfidenceMetricsDataType = 'map';
-    /**
-     * Values are at the highest F1 score on the precision-recall curve. Only
-     * confidence_threshold, recall, precision, and f1_score will be set.
-     *
-     * @deprecated
-     * @param XPSConfidenceMetricsEntry $bestF1ConfidenceMetrics
-     */
-    public function setBestF1ConfidenceMetrics(XPSConfidenceMetricsEntry $bestF1ConfidenceMetrics)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSTextExtractionEvaluationMetrics extends \Google\Collection
     {
+        protected $collection_key = 'confidenceMetricsEntries';
+        protected $bestF1ConfidenceMetricsType = XPSConfidenceMetricsEntry::class;
+        protected $bestF1ConfidenceMetricsDataType = '';
+        protected $confidenceMetricsEntriesType = XPSConfidenceMetricsEntry::class;
+        protected $confidenceMetricsEntriesDataType = 'array';
+        protected $confusionMatrixType = XPSConfusionMatrix::class;
+        protected $confusionMatrixDataType = '';
+        protected $perLabelConfidenceMetricsType = XPSConfidenceMetricsEntry::class;
+        protected $perLabelConfidenceMetricsDataType = 'map';
+        /**
+         * Values are at the highest F1 score on the precision-recall curve. Only
+         * confidence_threshold, recall, precision, and f1_score will be set.
+         *
+         * @deprecated
+         * @param XPSConfidenceMetricsEntry $bestF1ConfidenceMetrics
+         */
+        public function setBestF1ConfidenceMetrics(XPSConfidenceMetricsEntry $bestF1ConfidenceMetrics)
+        {
+        }
+        /**
+         * @deprecated
+         * @return XPSConfidenceMetricsEntry
+         */
+        public function getBestF1ConfidenceMetrics()
+        {
+        }
+        /**
+         * If the enclosing EvaluationMetrics.label is empty,
+         * confidence_metrics_entries is an evaluation of the entire model across all
+         * labels. If the enclosing EvaluationMetrics.label is set,
+         * confidence_metrics_entries applies to that label.
+         *
+         * @param XPSConfidenceMetricsEntry[] $confidenceMetricsEntries
+         */
+        public function setConfidenceMetricsEntries($confidenceMetricsEntries)
+        {
+        }
+        /**
+         * @return XPSConfidenceMetricsEntry[]
+         */
+        public function getConfidenceMetricsEntries()
+        {
+        }
+        /**
+         * Confusion matrix of the model, at the default confidence threshold (0.0).
+         * Only set for whole-model evaluation, not for evaluation per label.
+         *
+         * @param XPSConfusionMatrix $confusionMatrix
+         */
+        public function setConfusionMatrix(XPSConfusionMatrix $confusionMatrix)
+        {
+        }
+        /**
+         * @return XPSConfusionMatrix
+         */
+        public function getConfusionMatrix()
+        {
+        }
+        /**
+         * Only recall, precision, and f1_score will be set.
+         *
+         * @deprecated
+         * @param XPSConfidenceMetricsEntry[] $perLabelConfidenceMetrics
+         */
+        public function setPerLabelConfidenceMetrics($perLabelConfidenceMetrics)
+        {
+        }
+        /**
+         * @deprecated
+         * @return XPSConfidenceMetricsEntry[]
+         */
+        public function getPerLabelConfidenceMetrics()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return XPSConfidenceMetricsEntry
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSTextExtractionEvaluationMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBestF1ConfidenceMetrics()
-    {
-    }
-    /**
-     * If the enclosing EvaluationMetrics.label is empty,
-     * confidence_metrics_entries is an evaluation of the entire model across all
-     * labels. If the enclosing EvaluationMetrics.label is set,
-     * confidence_metrics_entries applies to that label.
-     *
-     * @param XPSConfidenceMetricsEntry[] $confidenceMetricsEntries
-     */
-    public function setConfidenceMetricsEntries($confidenceMetricsEntries)
-    {
-    }
-    /**
-     * @return XPSConfidenceMetricsEntry[]
-     */
-    public function getConfidenceMetricsEntries()
-    {
-    }
-    /**
-     * Confusion matrix of the model, at the default confidence threshold (0.0).
-     * Only set for whole-model evaluation, not for evaluation per label.
-     *
-     * @param XPSConfusionMatrix $confusionMatrix
-     */
-    public function setConfusionMatrix(XPSConfusionMatrix $confusionMatrix)
-    {
-    }
-    /**
-     * @return XPSConfusionMatrix
-     */
-    public function getConfusionMatrix()
-    {
-    }
-    /**
-     * Only recall, precision, and f1_score will be set.
-     *
-     * @deprecated
-     * @param XPSConfidenceMetricsEntry[] $perLabelConfidenceMetrics
-     */
-    public function setPerLabelConfidenceMetrics($perLabelConfidenceMetrics)
-    {
-    }
-    /**
-     * @deprecated
-     * @return XPSConfidenceMetricsEntry[]
-     */
-    public function getPerLabelConfidenceMetrics()
+    class Google_Service_CloudNaturalLanguage_XPSTextExtractionEvaluationMetrics extends \Google\Service\CloudNaturalLanguage\XPSTextExtractionEvaluationMetrics
     {
     }
 }

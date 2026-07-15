@@ -21,83 +21,92 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class ShippingsettingsCustomBatchResponseEntry extends \Google\Model
-{
-    /**
-     * The ID of the request entry to which this entry responds.
-     *
-     * @var string
-     */
-    public $batchId;
-    protected $errorsType = Errors::class;
-    protected $errorsDataType = '';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "`content#shippingsettingsCustomBatchResponseEntry`"
-     *
-     * @var string
-     */
-    public $kind;
-    protected $shippingSettingsType = ShippingSettings::class;
-    protected $shippingSettingsDataType = '';
-    /**
-     * The ID of the request entry to which this entry responds.
-     *
-     * @param string $batchId
-     */
-    public function setBatchId($batchId)
+namespace Google\Service\ShoppingContent {
+    class ShippingsettingsCustomBatchResponseEntry extends \Google\Model
     {
+        /**
+         * The ID of the request entry to which this entry responds.
+         *
+         * @var string
+         */
+        public $batchId;
+        protected $errorsType = Errors::class;
+        protected $errorsDataType = '';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "`content#shippingsettingsCustomBatchResponseEntry`"
+         *
+         * @var string
+         */
+        public $kind;
+        protected $shippingSettingsType = ShippingSettings::class;
+        protected $shippingSettingsDataType = '';
+        /**
+         * The ID of the request entry to which this entry responds.
+         *
+         * @param string $batchId
+         */
+        public function setBatchId($batchId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBatchId()
+        {
+        }
+        /**
+         * A list of errors for failed custombatch entries. *Note:* Schema errors fail
+         * the whole request.
+         *
+         * @param Errors $errors
+         */
+        public function setErrors(Errors $errors)
+        {
+        }
+        /**
+         * @return Errors
+         */
+        public function getErrors()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "`content#shippingsettingsCustomBatchResponseEntry`"
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The retrieved or updated account shipping settings.
+         *
+         * @param ShippingSettings $shippingSettings
+         */
+        public function setShippingSettings(ShippingSettings $shippingSettings)
+        {
+        }
+        /**
+         * @return ShippingSettings
+         */
+        public function getShippingSettings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\ShippingsettingsCustomBatchResponseEntry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBatchId()
-    {
-    }
-    /**
-     * A list of errors for failed custombatch entries. *Note:* Schema errors fail
-     * the whole request.
-     *
-     * @param Errors $errors
-     */
-    public function setErrors(Errors $errors)
-    {
-    }
-    /**
-     * @return Errors
-     */
-    public function getErrors()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "`content#shippingsettingsCustomBatchResponseEntry`"
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The retrieved or updated account shipping settings.
-     *
-     * @param ShippingSettings $shippingSettings
-     */
-    public function setShippingSettings(ShippingSettings $shippingSettings)
-    {
-    }
-    /**
-     * @return ShippingSettings
-     */
-    public function getShippingSettings()
+    class Google_Service_ShoppingContent_ShippingsettingsCustomBatchResponseEntry extends \Google\Service\ShoppingContent\ShippingsettingsCustomBatchResponseEntry
     {
     }
 }

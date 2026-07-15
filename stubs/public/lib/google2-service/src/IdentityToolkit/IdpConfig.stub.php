@@ -21,131 +21,140 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\IdentityToolkit;
-
-class IdpConfig extends \Google\Collection
-{
-    protected $collection_key = 'whitelistedAudiences';
-    /**
-     * OAuth2 client ID.
-     *
-     * @var string
-     */
-    public $clientId;
-    /**
-     * Whether this IDP is enabled.
-     *
-     * @var bool
-     */
-    public $enabled;
-    /**
-     * Percent of users who will be prompted/redirected federated login for this
-     * IDP.
-     *
-     * @var int
-     */
-    public $experimentPercent;
-    /**
-     * OAuth2 provider.
-     *
-     * @var string
-     */
-    public $provider;
-    /**
-     * OAuth2 client secret.
-     *
-     * @var string
-     */
-    public $secret;
-    /**
-     * Whitelisted client IDs for audience check.
-     *
-     * @var string[]
-     */
-    public $whitelistedAudiences;
-    /**
-     * OAuth2 client ID.
-     *
-     * @param string $clientId
-     */
-    public function setClientId($clientId)
+namespace Google\Service\IdentityToolkit {
+    class IdpConfig extends \Google\Collection
     {
+        protected $collection_key = 'whitelistedAudiences';
+        /**
+         * OAuth2 client ID.
+         *
+         * @var string
+         */
+        public $clientId;
+        /**
+         * Whether this IDP is enabled.
+         *
+         * @var bool
+         */
+        public $enabled;
+        /**
+         * Percent of users who will be prompted/redirected federated login for this
+         * IDP.
+         *
+         * @var int
+         */
+        public $experimentPercent;
+        /**
+         * OAuth2 provider.
+         *
+         * @var string
+         */
+        public $provider;
+        /**
+         * OAuth2 client secret.
+         *
+         * @var string
+         */
+        public $secret;
+        /**
+         * Whitelisted client IDs for audience check.
+         *
+         * @var string[]
+         */
+        public $whitelistedAudiences;
+        /**
+         * OAuth2 client ID.
+         *
+         * @param string $clientId
+         */
+        public function setClientId($clientId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClientId()
+        {
+        }
+        /**
+         * Whether this IDP is enabled.
+         *
+         * @param bool $enabled
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
+        /**
+         * Percent of users who will be prompted/redirected federated login for this
+         * IDP.
+         *
+         * @param int $experimentPercent
+         */
+        public function setExperimentPercent($experimentPercent)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getExperimentPercent()
+        {
+        }
+        /**
+         * OAuth2 provider.
+         *
+         * @param string $provider
+         */
+        public function setProvider($provider)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProvider()
+        {
+        }
+        /**
+         * OAuth2 client secret.
+         *
+         * @param string $secret
+         */
+        public function setSecret($secret)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSecret()
+        {
+        }
+        /**
+         * Whitelisted client IDs for audience check.
+         *
+         * @param string[] $whitelistedAudiences
+         */
+        public function setWhitelistedAudiences($whitelistedAudiences)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getWhitelistedAudiences()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\IdentityToolkit\IdpConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClientId()
-    {
-    }
-    /**
-     * Whether this IDP is enabled.
-     *
-     * @param bool $enabled
-     */
-    public function setEnabled($enabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnabled()
-    {
-    }
-    /**
-     * Percent of users who will be prompted/redirected federated login for this
-     * IDP.
-     *
-     * @param int $experimentPercent
-     */
-    public function setExperimentPercent($experimentPercent)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getExperimentPercent()
-    {
-    }
-    /**
-     * OAuth2 provider.
-     *
-     * @param string $provider
-     */
-    public function setProvider($provider)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProvider()
-    {
-    }
-    /**
-     * OAuth2 client secret.
-     *
-     * @param string $secret
-     */
-    public function setSecret($secret)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSecret()
-    {
-    }
-    /**
-     * Whitelisted client IDs for audience check.
-     *
-     * @param string[] $whitelistedAudiences
-     */
-    public function setWhitelistedAudiences($whitelistedAudiences)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getWhitelistedAudiences()
+    class Google_Service_IdentityToolkit_IdpConfig extends \Google\Service\IdentityToolkit\IdpConfig
     {
     }
 }

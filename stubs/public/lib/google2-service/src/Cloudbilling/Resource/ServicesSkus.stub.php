@@ -21,47 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudbilling\Resource;
-
-/**
- * The "skus" collection of methods.
- * Typical usage is:
- *  <code>
- *   $cloudbillingService = new Google\Service\Cloudbilling(...);
- *   $skus = $cloudbillingService->services_skus;
- *  </code>
- */
-class ServicesSkus extends \Google\Service\Resource
-{
+namespace Google\Service\Cloudbilling\Resource {
+    use Google\Service\Cloudbilling\ListSkusResponse;
     /**
-     * Lists all publicly available SKUs for a given cloud service.
-     * (skus.listServicesSkus)
-     *
-     * @param string $parent Required. The name of the service. Example:
-     * "services/6F81-5844-456A"
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string currencyCode The ISO 4217 currency code for the pricing
-     * info in the response proto. Will use the conversion rate as of start_time.
-     * Optional. If not specified USD will be used.
-     * @opt_param string endTime Optional exclusive end time of the time range for
-     * which the pricing versions will be returned. Timestamps in the future are not
-     * allowed. The time range has to be within a single calendar month in
-     * America/Los_Angeles timezone. Time range as a whole is optional. If not
-     * specified, the latest pricing will be returned (up to 12 hours old at most).
-     * @opt_param int pageSize Requested page size. Defaults to 5000.
-     * @opt_param string pageToken A token identifying a page of results to return.
-     * This should be a `next_page_token` value returned from a previous `ListSkus`
-     * call. If unspecified, the first page of results is returned.
-     * @opt_param string startTime Optional inclusive start time of the time range
-     * for which the pricing versions will be returned. Timestamps in the future are
-     * not allowed. The time range has to be within a single calendar month in
-     * America/Los_Angeles timezone. Time range as a whole is optional. If not
-     * specified, the latest pricing will be returned (up to 12 hours old at most).
-     * @return ListSkusResponse
-     * @throws \Google\Service\Exception
+     * The "skus" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $cloudbillingService = new Google\Service\Cloudbilling(...);
+     *   $skus = $cloudbillingService->services_skus;
+     *  </code>
      */
-    public function listServicesSkus($parent, $optParams = [])
+    class ServicesSkus extends \Google\Service\Resource
+    {
+        /**
+         * Lists all publicly available SKUs for a given cloud service.
+         * (skus.listServicesSkus)
+         *
+         * @param string $parent Required. The name of the service. Example:
+         * "services/6F81-5844-456A"
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string currencyCode The ISO 4217 currency code for the pricing
+         * info in the response proto. Will use the conversion rate as of start_time.
+         * Optional. If not specified USD will be used.
+         * @opt_param string endTime Optional exclusive end time of the time range for
+         * which the pricing versions will be returned. Timestamps in the future are not
+         * allowed. The time range has to be within a single calendar month in
+         * America/Los_Angeles timezone. Time range as a whole is optional. If not
+         * specified, the latest pricing will be returned (up to 12 hours old at most).
+         * @opt_param int pageSize Requested page size. Defaults to 5000.
+         * @opt_param string pageToken A token identifying a page of results to return.
+         * This should be a `next_page_token` value returned from a previous `ListSkus`
+         * call. If unspecified, the first page of results is returned.
+         * @opt_param string startTime Optional inclusive start time of the time range
+         * for which the pricing versions will be returned. Timestamps in the future are
+         * not allowed. The time range has to be within a single calendar month in
+         * America/Los_Angeles timezone. Time range as a whole is optional. If not
+         * specified, the latest pricing will be returned (up to 12 hours old at most).
+         * @return ListSkusResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listServicesSkus($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Cloudbilling\Resource\ServicesSkus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Cloudbilling_Resource_ServicesSkus extends \Google\Service\Cloudbilling\Resource\ServicesSkus
     {
     }
 }

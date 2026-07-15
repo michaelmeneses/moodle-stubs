@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataFusion;
-
-class PersistentDiskData extends \Google\Collection
-{
-    protected $collection_key = 'gcsBucketNames';
-    /**
-     * @var string[]
-     */
-    public $cfsRoots;
-    /**
-     * @var string[]
-     */
-    public $gcsBucketNames;
-    /**
-     * @param string[]
-     */
-    public function setCfsRoots($cfsRoots)
+namespace Google\Service\DataFusion {
+    class PersistentDiskData extends \Google\Collection
     {
+        protected $collection_key = 'gcsBucketNames';
+        /**
+         * @var string[]
+         */
+        public $cfsRoots;
+        /**
+         * @var string[]
+         */
+        public $gcsBucketNames;
+        /**
+         * @param string[]
+         */
+        public function setCfsRoots($cfsRoots)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCfsRoots()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setGcsBucketNames($gcsBucketNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getGcsBucketNames()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\DataFusion\PersistentDiskData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCfsRoots()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setGcsBucketNames($gcsBucketNames)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getGcsBucketNames()
+    class Google_Service_DataFusion_PersistentDiskData extends \Google\Service\DataFusion\PersistentDiskData
     {
     }
 }

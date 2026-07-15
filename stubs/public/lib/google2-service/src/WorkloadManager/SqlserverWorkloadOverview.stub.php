@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager;
-
-class SqlserverWorkloadOverview extends \Google\Collection
-{
-    protected $collection_key = 'availabilityGroup';
-    /**
-     * @var string[]
-     */
-    public $availabilityGroup;
-    /**
-     * @var string
-     */
-    public $sqlserverSystemId;
-    /**
-     * @param string[]
-     */
-    public function setAvailabilityGroup($availabilityGroup)
+namespace Google\Service\WorkloadManager {
+    class SqlserverWorkloadOverview extends \Google\Collection
     {
+        protected $collection_key = 'availabilityGroup';
+        /**
+         * @var string[]
+         */
+        public $availabilityGroup;
+        /**
+         * @var string
+         */
+        public $sqlserverSystemId;
+        /**
+         * @param string[]
+         */
+        public function setAvailabilityGroup($availabilityGroup)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAvailabilityGroup()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSqlserverSystemId($sqlserverSystemId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSqlserverSystemId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\WorkloadManager\SqlserverWorkloadOverview registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAvailabilityGroup()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSqlserverSystemId($sqlserverSystemId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSqlserverSystemId()
+    class Google_Service_WorkloadManager_SqlserverWorkloadOverview extends \Google\Service\WorkloadManager\SqlserverWorkloadOverview
     {
     }
 }

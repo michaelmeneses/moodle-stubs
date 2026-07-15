@@ -21,61 +21,70 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class ListJobMessagesResponse extends \Google\Collection
-{
-    protected $collection_key = 'jobMessages';
-    protected $autoscalingEventsType = AutoscalingEvent::class;
-    protected $autoscalingEventsDataType = 'array';
-    protected $jobMessagesType = JobMessage::class;
-    protected $jobMessagesDataType = 'array';
-    /**
-     * The token to obtain the next page of results if there are more.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Autoscaling events in ascending timestamp order.
-     *
-     * @param AutoscalingEvent[] $autoscalingEvents
-     */
-    public function setAutoscalingEvents($autoscalingEvents)
+namespace Google\Service\Dataflow {
+    class ListJobMessagesResponse extends \Google\Collection
     {
+        protected $collection_key = 'jobMessages';
+        protected $autoscalingEventsType = AutoscalingEvent::class;
+        protected $autoscalingEventsDataType = 'array';
+        protected $jobMessagesType = JobMessage::class;
+        protected $jobMessagesDataType = 'array';
+        /**
+         * The token to obtain the next page of results if there are more.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Autoscaling events in ascending timestamp order.
+         *
+         * @param AutoscalingEvent[] $autoscalingEvents
+         */
+        public function setAutoscalingEvents($autoscalingEvents)
+        {
+        }
+        /**
+         * @return AutoscalingEvent[]
+         */
+        public function getAutoscalingEvents()
+        {
+        }
+        /**
+         * Messages in ascending timestamp order.
+         *
+         * @param JobMessage[] $jobMessages
+         */
+        public function setJobMessages($jobMessages)
+        {
+        }
+        /**
+         * @return JobMessage[]
+         */
+        public function getJobMessages()
+        {
+        }
+        /**
+         * The token to obtain the next page of results if there are more.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AutoscalingEvent[]
+     * Runtime class alias of \Google\Service\Dataflow\ListJobMessagesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAutoscalingEvents()
-    {
-    }
-    /**
-     * Messages in ascending timestamp order.
-     *
-     * @param JobMessage[] $jobMessages
-     */
-    public function setJobMessages($jobMessages)
-    {
-    }
-    /**
-     * @return JobMessage[]
-     */
-    public function getJobMessages()
-    {
-    }
-    /**
-     * The token to obtain the next page of results if there are more.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Dataflow_ListJobMessagesResponse extends \Google\Service\Dataflow\ListJobMessagesResponse
     {
     }
 }

@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecaptchaEnterprise;
-
-class GoogleCloudRecaptchaenterpriseV1ListIpOverridesResponse extends \Google\Collection
-{
-    protected $collection_key = 'ipOverrides';
-    protected $ipOverridesType = GoogleCloudRecaptchaenterpriseV1IpOverrideData::class;
-    protected $ipOverridesDataType = 'array';
-    /**
-     * Token to retrieve the next page of results. If this field is empty, no keys
-     * remain in the results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * IP Overrides details.
-     *
-     * @param GoogleCloudRecaptchaenterpriseV1IpOverrideData[] $ipOverrides
-     */
-    public function setIpOverrides($ipOverrides)
+namespace Google\Service\RecaptchaEnterprise {
+    class GoogleCloudRecaptchaenterpriseV1ListIpOverridesResponse extends \Google\Collection
     {
+        protected $collection_key = 'ipOverrides';
+        protected $ipOverridesType = GoogleCloudRecaptchaenterpriseV1IpOverrideData::class;
+        protected $ipOverridesDataType = 'array';
+        /**
+         * Token to retrieve the next page of results. If this field is empty, no keys
+         * remain in the results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * IP Overrides details.
+         *
+         * @param GoogleCloudRecaptchaenterpriseV1IpOverrideData[] $ipOverrides
+         */
+        public function setIpOverrides($ipOverrides)
+        {
+        }
+        /**
+         * @return GoogleCloudRecaptchaenterpriseV1IpOverrideData[]
+         */
+        public function getIpOverrides()
+        {
+        }
+        /**
+         * Token to retrieve the next page of results. If this field is empty, no keys
+         * remain in the results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRecaptchaenterpriseV1IpOverrideData[]
+     * Runtime class alias of \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1ListIpOverridesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIpOverrides()
-    {
-    }
-    /**
-     * Token to retrieve the next page of results. If this field is empty, no keys
-     * remain in the results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_RecaptchaEnterprise_GoogleCloudRecaptchaenterpriseV1ListIpOverridesResponse extends \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1ListIpOverridesResponse
     {
     }
 }

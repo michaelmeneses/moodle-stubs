@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class ListCollectionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'resources';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $resourcesType = Collection::class;
-    protected $resourcesDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\ShoppingContent {
+    class ListCollectionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'resources';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $resourcesType = Collection::class;
+        protected $resourcesDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The collections listed.
+         *
+         * @param Collection[] $resources
+         */
+        public function setResources($resources)
+        {
+        }
+        /**
+         * @return Collection[]
+         */
+        public function getResources()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\ListCollectionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The collections listed.
-     *
-     * @param Collection[] $resources
-     */
-    public function setResources($resources)
-    {
-    }
-    /**
-     * @return Collection[]
-     */
-    public function getResources()
+    class Google_Service_ShoppingContent_ListCollectionsResponse extends \Google\Service\ShoppingContent\ListCollectionsResponse
     {
     }
 }

@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecommendationsAI;
-
-class GoogleCloudRecommendationengineV1beta1CatalogInlineSource extends \Google\Collection
-{
-    protected $collection_key = 'catalogItems';
-    protected $catalogItemsType = GoogleCloudRecommendationengineV1beta1CatalogItem::class;
-    protected $catalogItemsDataType = 'array';
-    /**
-     * Optional. A list of catalog items to update/create. Recommended max of 10k
-     * items.
-     *
-     * @param GoogleCloudRecommendationengineV1beta1CatalogItem[] $catalogItems
-     */
-    public function setCatalogItems($catalogItems)
+namespace Google\Service\RecommendationsAI {
+    class GoogleCloudRecommendationengineV1beta1CatalogInlineSource extends \Google\Collection
     {
+        protected $collection_key = 'catalogItems';
+        protected $catalogItemsType = GoogleCloudRecommendationengineV1beta1CatalogItem::class;
+        protected $catalogItemsDataType = 'array';
+        /**
+         * Optional. A list of catalog items to update/create. Recommended max of 10k
+         * items.
+         *
+         * @param GoogleCloudRecommendationengineV1beta1CatalogItem[] $catalogItems
+         */
+        public function setCatalogItems($catalogItems)
+        {
+        }
+        /**
+         * @return GoogleCloudRecommendationengineV1beta1CatalogItem[]
+         */
+        public function getCatalogItems()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRecommendationengineV1beta1CatalogItem[]
+     * Runtime class alias of \Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1CatalogInlineSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCatalogItems()
+    class Google_Service_RecommendationsAI_GoogleCloudRecommendationengineV1beta1CatalogInlineSource extends \Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1CatalogInlineSource
     {
     }
 }

@@ -21,34 +21,44 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee\Resource;
-
-/**
- * The "deployments" collection of methods.
- * Typical usage is:
- *  <code>
- *   $apigeeService = new Google\Service\Apigee(...);
- *   $deployments = $apigeeService->organizations_sharedflows_revisions_deployments;
- *  </code>
- */
-class OrganizationsSharedflowsRevisionsDeployments extends \Google\Service\Resource
-{
+namespace Google\Service\Apigee\Resource {
+    use Google\Service\Apigee\GoogleCloudApigeeV1ListDeploymentsResponse;
     /**
-     * Lists all deployments of a shared flow revision.
-     * (deployments.listOrganizationsSharedflowsRevisionsDeployments)
-     *
-     * @param string $parent Required. Name of the API proxy revision for which to
-     * return deployment information in the following format:
-     * `organizations/{org}/sharedflows/{sharedflow}/revisions/{rev}`. If the shared
-     * flow resource has the `space` attribute set, IAM permissions are checked
-     * differently . To learn more, read the [Apigee Spaces
-     * Overview](https://cloud.google.com/apigee/docs/api-platform/system-
-     * administration/spaces/apigee-spaces-overview).
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudApigeeV1ListDeploymentsResponse
-     * @throws \Google\Service\Exception
+     * The "deployments" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $apigeeService = new Google\Service\Apigee(...);
+     *   $deployments = $apigeeService->organizations_sharedflows_revisions_deployments;
+     *  </code>
      */
-    public function listOrganizationsSharedflowsRevisionsDeployments($parent, $optParams = [])
+    class OrganizationsSharedflowsRevisionsDeployments extends \Google\Service\Resource
+    {
+        /**
+         * Lists all deployments of a shared flow revision.
+         * (deployments.listOrganizationsSharedflowsRevisionsDeployments)
+         *
+         * @param string $parent Required. Name of the API proxy revision for which to
+         * return deployment information in the following format:
+         * `organizations/{org}/sharedflows/{sharedflow}/revisions/{rev}`. If the shared
+         * flow resource has the `space` attribute set, IAM permissions are checked
+         * differently . To learn more, read the [Apigee Spaces
+         * Overview](https://cloud.google.com/apigee/docs/api-platform/system-
+         * administration/spaces/apigee-spaces-overview).
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudApigeeV1ListDeploymentsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listOrganizationsSharedflowsRevisionsDeployments($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Apigee\Resource\OrganizationsSharedflowsRevisionsDeployments registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Apigee_Resource_OrganizationsSharedflowsRevisionsDeployments extends \Google\Service\Apigee\Resource\OrganizationsSharedflowsRevisionsDeployments
     {
     }
 }

@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class Point extends \Google\Model
-{
-    /**
-     * The timestamp of the point.
-     *
-     * @var string
-     */
-    public $time;
-    /**
-     * The value of the point.
-     *
-     * @var 
-     */
-    public $value;
-    /**
-     * The timestamp of the point.
-     *
-     * @param string $time
-     */
-    public function setTime($time)
+namespace Google\Service\Dataflow {
+    class Point extends \Google\Model
     {
+        /**
+         * The timestamp of the point.
+         *
+         * @var string
+         */
+        public $time;
+        /**
+         * The value of the point.
+         *
+         * @var 
+         */
+        public $value;
+        /**
+         * The timestamp of the point.
+         *
+         * @param string $time
+         */
+        public function setTime($time)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTime()
+        {
+        }
+        public function setValue($value)
+        {
+        }
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataflow\Point registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTime()
-    {
-    }
-    public function setValue($value)
-    {
-    }
-    public function getValue()
+    class Google_Service_Dataflow_Point extends \Google\Service\Dataflow\Point
     {
     }
 }

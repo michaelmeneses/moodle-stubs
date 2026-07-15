@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\IdentityToolkit;
-
-class IdentitytoolkitRelyingpartyEmailLinkSigninRequest extends \Google\Model
-{
-    /**
-     * The email address of the user.
-     *
-     * @var string
-     */
-    public $email;
-    /**
-     * Token for linking flow.
-     *
-     * @var string
-     */
-    public $idToken;
-    /**
-     * The confirmation code.
-     *
-     * @var string
-     */
-    public $oobCode;
-    /**
-     * The email address of the user.
-     *
-     * @param string $email
-     */
-    public function setEmail($email)
+namespace Google\Service\IdentityToolkit {
+    class IdentitytoolkitRelyingpartyEmailLinkSigninRequest extends \Google\Model
     {
+        /**
+         * The email address of the user.
+         *
+         * @var string
+         */
+        public $email;
+        /**
+         * Token for linking flow.
+         *
+         * @var string
+         */
+        public $idToken;
+        /**
+         * The confirmation code.
+         *
+         * @var string
+         */
+        public $oobCode;
+        /**
+         * The email address of the user.
+         *
+         * @param string $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
+        /**
+         * Token for linking flow.
+         *
+         * @param string $idToken
+         */
+        public function setIdToken($idToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIdToken()
+        {
+        }
+        /**
+         * The confirmation code.
+         *
+         * @param string $oobCode
+         */
+        public function setOobCode($oobCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOobCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\IdentityToolkit\IdentitytoolkitRelyingpartyEmailLinkSigninRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmail()
-    {
-    }
-    /**
-     * Token for linking flow.
-     *
-     * @param string $idToken
-     */
-    public function setIdToken($idToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIdToken()
-    {
-    }
-    /**
-     * The confirmation code.
-     *
-     * @param string $oobCode
-     */
-    public function setOobCode($oobCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOobCode()
+    class Google_Service_IdentityToolkit_IdentitytoolkitRelyingpartyEmailLinkSigninRequest extends \Google\Service\IdentityToolkit\IdentitytoolkitRelyingpartyEmailLinkSigninRequest
     {
     }
 }

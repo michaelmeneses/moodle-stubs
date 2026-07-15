@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PubsubLite;
-
-class ComputeTimeCursorResponse extends \Google\Model
-{
-    protected $cursorType = Cursor::class;
-    protected $cursorDataType = '';
-    /**
-     * If present, the cursor references the first message with time greater than
-     * or equal to the specified target time. If such a message cannot be found,
-     * the cursor will be unset (i.e. `cursor` is not present).
-     *
-     * @param Cursor $cursor
-     */
-    public function setCursor(Cursor $cursor)
+namespace Google\Service\PubsubLite {
+    class ComputeTimeCursorResponse extends \Google\Model
     {
+        protected $cursorType = Cursor::class;
+        protected $cursorDataType = '';
+        /**
+         * If present, the cursor references the first message with time greater than
+         * or equal to the specified target time. If such a message cannot be found,
+         * the cursor will be unset (i.e. `cursor` is not present).
+         *
+         * @param Cursor $cursor
+         */
+        public function setCursor(Cursor $cursor)
+        {
+        }
+        /**
+         * @return Cursor
+         */
+        public function getCursor()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Cursor
+     * Runtime class alias of \Google\Service\PubsubLite\ComputeTimeCursorResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCursor()
+    class Google_Service_PubsubLite_ComputeTimeCursorResponse extends \Google\Service\PubsubLite\ComputeTimeCursorResponse
     {
     }
 }

@@ -21,37 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics;
-
-class GaDataDataTable extends \Google\Collection
-{
-    protected $collection_key = 'rows';
-    protected $colsType = GaDataDataTableCols::class;
-    protected $colsDataType = 'array';
-    protected $rowsType = GaDataDataTableRows::class;
-    protected $rowsDataType = 'array';
-    /**
-     * @param GaDataDataTableCols[] $cols
-     */
-    public function setCols($cols)
+namespace Google\Service\Analytics {
+    class GaDataDataTable extends \Google\Collection
     {
+        protected $collection_key = 'rows';
+        protected $colsType = GaDataDataTableCols::class;
+        protected $colsDataType = 'array';
+        protected $rowsType = GaDataDataTableRows::class;
+        protected $rowsDataType = 'array';
+        /**
+         * @param GaDataDataTableCols[] $cols
+         */
+        public function setCols($cols)
+        {
+        }
+        /**
+         * @return GaDataDataTableCols[]
+         */
+        public function getCols()
+        {
+        }
+        /**
+         * @param GaDataDataTableRows[] $rows
+         */
+        public function setRows($rows)
+        {
+        }
+        /**
+         * @return GaDataDataTableRows[]
+         */
+        public function getRows()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GaDataDataTableCols[]
+     * Runtime class alias of \Google\Service\Analytics\GaDataDataTable registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCols()
-    {
-    }
-    /**
-     * @param GaDataDataTableRows[] $rows
-     */
-    public function setRows($rows)
-    {
-    }
-    /**
-     * @return GaDataDataTableRows[]
-     */
-    public function getRows()
+    class Google_Service_Analytics_GaDataDataTable extends \Google\Service\Analytics\GaDataDataTable
     {
     }
 }

@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OnDemandScanning;
-
-class Envelope extends \Google\Collection
-{
-    protected $collection_key = 'signatures';
-    /**
-     * @var string
-     */
-    public $payload;
-    /**
-     * @var string
-     */
-    public $payloadType;
-    protected $signaturesType = EnvelopeSignature::class;
-    protected $signaturesDataType = 'array';
-    /**
-     * @param string $payload
-     */
-    public function setPayload($payload)
+namespace Google\Service\OnDemandScanning {
+    class Envelope extends \Google\Collection
     {
+        protected $collection_key = 'signatures';
+        /**
+         * @var string
+         */
+        public $payload;
+        /**
+         * @var string
+         */
+        public $payloadType;
+        protected $signaturesType = EnvelopeSignature::class;
+        protected $signaturesDataType = 'array';
+        /**
+         * @param string $payload
+         */
+        public function setPayload($payload)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPayload()
+        {
+        }
+        /**
+         * @param string $payloadType
+         */
+        public function setPayloadType($payloadType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPayloadType()
+        {
+        }
+        /**
+         * @param EnvelopeSignature[] $signatures
+         */
+        public function setSignatures($signatures)
+        {
+        }
+        /**
+         * @return EnvelopeSignature[]
+         */
+        public function getSignatures()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OnDemandScanning\Envelope registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPayload()
-    {
-    }
-    /**
-     * @param string $payloadType
-     */
-    public function setPayloadType($payloadType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPayloadType()
-    {
-    }
-    /**
-     * @param EnvelopeSignature[] $signatures
-     */
-    public function setSignatures($signatures)
-    {
-    }
-    /**
-     * @return EnvelopeSignature[]
-     */
-    public function getSignatures()
+    class Google_Service_OnDemandScanning_Envelope extends \Google\Service\OnDemandScanning\Envelope
     {
     }
 }

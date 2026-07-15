@@ -21,120 +21,129 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class GoogleAppsCardV1MaterialIcon extends \Google\Model
-{
-    /**
-     * Whether the icon renders as filled. Default value is false. To preview
-     * different icon settings, go to [Google Font
-     * Icons](https://fonts.google.com/icons) and adjust the settings under
-     * **Customize**.
-     *
-     * @var bool
-     */
-    public $fill;
-    /**
-     * Weight and grade affect a symbol’s thickness. Adjustments to grade are more
-     * granular than adjustments to weight and have a small impact on the size of
-     * the symbol. Choose from {-25, 0, 200}. If absent, default value is 0. If
-     * any other value is specified, the default value is used. To preview
-     * different icon settings, go to [Google Font
-     * Icons](https://fonts.google.com/icons) and adjust the settings under
-     * **Customize**.
-     *
-     * @var int
-     */
-    public $grade;
-    /**
-     * The icon name defined in the [Google Material
-     * Icon](https://fonts.google.com/icons), for example, `check_box`. Any
-     * invalid names are abandoned and replaced with empty string and results in
-     * the icon failing to render.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The stroke weight of the icon. Choose from {100, 200, 300, 400, 500, 600,
-     * 700}. If absent, default value is 400. If any other value is specified, the
-     * default value is used. To preview different icon settings, go to [Google
-     * Font Icons](https://fonts.google.com/icons) and adjust the settings under
-     * **Customize**.
-     *
-     * @var int
-     */
-    public $weight;
-    /**
-     * Whether the icon renders as filled. Default value is false. To preview
-     * different icon settings, go to [Google Font
-     * Icons](https://fonts.google.com/icons) and adjust the settings under
-     * **Customize**.
-     *
-     * @param bool $fill
-     */
-    public function setFill($fill)
+namespace Google\Service\HangoutsChat {
+    class GoogleAppsCardV1MaterialIcon extends \Google\Model
     {
+        /**
+         * Whether the icon renders as filled. Default value is false. To preview
+         * different icon settings, go to [Google Font
+         * Icons](https://fonts.google.com/icons) and adjust the settings under
+         * **Customize**.
+         *
+         * @var bool
+         */
+        public $fill;
+        /**
+         * Weight and grade affect a symbol’s thickness. Adjustments to grade are more
+         * granular than adjustments to weight and have a small impact on the size of
+         * the symbol. Choose from {-25, 0, 200}. If absent, default value is 0. If
+         * any other value is specified, the default value is used. To preview
+         * different icon settings, go to [Google Font
+         * Icons](https://fonts.google.com/icons) and adjust the settings under
+         * **Customize**.
+         *
+         * @var int
+         */
+        public $grade;
+        /**
+         * The icon name defined in the [Google Material
+         * Icon](https://fonts.google.com/icons), for example, `check_box`. Any
+         * invalid names are abandoned and replaced with empty string and results in
+         * the icon failing to render.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The stroke weight of the icon. Choose from {100, 200, 300, 400, 500, 600,
+         * 700}. If absent, default value is 400. If any other value is specified, the
+         * default value is used. To preview different icon settings, go to [Google
+         * Font Icons](https://fonts.google.com/icons) and adjust the settings under
+         * **Customize**.
+         *
+         * @var int
+         */
+        public $weight;
+        /**
+         * Whether the icon renders as filled. Default value is false. To preview
+         * different icon settings, go to [Google Font
+         * Icons](https://fonts.google.com/icons) and adjust the settings under
+         * **Customize**.
+         *
+         * @param bool $fill
+         */
+        public function setFill($fill)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getFill()
+        {
+        }
+        /**
+         * Weight and grade affect a symbol’s thickness. Adjustments to grade are more
+         * granular than adjustments to weight and have a small impact on the size of
+         * the symbol. Choose from {-25, 0, 200}. If absent, default value is 0. If
+         * any other value is specified, the default value is used. To preview
+         * different icon settings, go to [Google Font
+         * Icons](https://fonts.google.com/icons) and adjust the settings under
+         * **Customize**.
+         *
+         * @param int $grade
+         */
+        public function setGrade($grade)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getGrade()
+        {
+        }
+        /**
+         * The icon name defined in the [Google Material
+         * Icon](https://fonts.google.com/icons), for example, `check_box`. Any
+         * invalid names are abandoned and replaced with empty string and results in
+         * the icon failing to render.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The stroke weight of the icon. Choose from {100, 200, 300, 400, 500, 600,
+         * 700}. If absent, default value is 400. If any other value is specified, the
+         * default value is used. To preview different icon settings, go to [Google
+         * Font Icons](https://fonts.google.com/icons) and adjust the settings under
+         * **Customize**.
+         *
+         * @param int $weight
+         */
+        public function setWeight($weight)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getWeight()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\HangoutsChat\GoogleAppsCardV1MaterialIcon registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFill()
-    {
-    }
-    /**
-     * Weight and grade affect a symbol’s thickness. Adjustments to grade are more
-     * granular than adjustments to weight and have a small impact on the size of
-     * the symbol. Choose from {-25, 0, 200}. If absent, default value is 0. If
-     * any other value is specified, the default value is used. To preview
-     * different icon settings, go to [Google Font
-     * Icons](https://fonts.google.com/icons) and adjust the settings under
-     * **Customize**.
-     *
-     * @param int $grade
-     */
-    public function setGrade($grade)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getGrade()
-    {
-    }
-    /**
-     * The icon name defined in the [Google Material
-     * Icon](https://fonts.google.com/icons), for example, `check_box`. Any
-     * invalid names are abandoned and replaced with empty string and results in
-     * the icon failing to render.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The stroke weight of the icon. Choose from {100, 200, 300, 400, 500, 600,
-     * 700}. If absent, default value is 400. If any other value is specified, the
-     * default value is used. To preview different icon settings, go to [Google
-     * Font Icons](https://fonts.google.com/icons) and adjust the settings under
-     * **Customize**.
-     *
-     * @param int $weight
-     */
-    public function setWeight($weight)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getWeight()
+    class Google_Service_HangoutsChat_GoogleAppsCardV1MaterialIcon extends \Google\Service\HangoutsChat\GoogleAppsCardV1MaterialIcon
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TPU;
-
-class RuntimeVersion extends \Google\Model
-{
-    /**
-     * The resource name.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The runtime version.
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * The resource name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\TPU {
+    class RuntimeVersion extends \Google\Model
     {
+        /**
+         * The resource name.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The runtime version.
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * The resource name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The runtime version.
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\TPU\RuntimeVersion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * The runtime version.
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_TPU_RuntimeVersion extends \Google\Service\TPU\RuntimeVersion
     {
     }
 }

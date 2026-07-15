@@ -21,133 +21,142 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class GceNodePoolOperationMetadata extends \Google\Collection
-{
-    protected $collection_key = 'warnings';
-    /**
-     * @var string
-     */
-    public $clusterUuid;
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var string
-     */
-    public $gceNodePoolId;
-    /**
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * @var string
-     */
-    public $operationType;
-    protected $statusType = ClusterOperationStatus::class;
-    protected $statusDataType = '';
-    protected $statusHistoryType = ClusterOperationStatus::class;
-    protected $statusHistoryDataType = 'array';
-    /**
-     * @var string[]
-     */
-    public $warnings;
-    /**
-     * @param string
-     */
-    public function setClusterUuid($clusterUuid)
+namespace Google\Service\Dataproc {
+    class GceNodePoolOperationMetadata extends \Google\Collection
     {
+        protected $collection_key = 'warnings';
+        /**
+         * @var string
+         */
+        public $clusterUuid;
+        /**
+         * @var string
+         */
+        public $description;
+        /**
+         * @var string
+         */
+        public $gceNodePoolId;
+        /**
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * @var string
+         */
+        public $operationType;
+        protected $statusType = ClusterOperationStatus::class;
+        protected $statusDataType = '';
+        protected $statusHistoryType = ClusterOperationStatus::class;
+        protected $statusHistoryDataType = 'array';
+        /**
+         * @var string[]
+         */
+        public $warnings;
+        /**
+         * @param string
+         */
+        public function setClusterUuid($clusterUuid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClusterUuid()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setGceNodePoolId($gceNodePoolId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGceNodePoolId()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOperationType($operationType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOperationType()
+        {
+        }
+        /**
+         * @param ClusterOperationStatus
+         */
+        public function setStatus(ClusterOperationStatus $status)
+        {
+        }
+        /**
+         * @return ClusterOperationStatus
+         */
+        public function getStatus()
+        {
+        }
+        /**
+         * @param ClusterOperationStatus[]
+         */
+        public function setStatusHistory($statusHistory)
+        {
+        }
+        /**
+         * @return ClusterOperationStatus[]
+         */
+        public function getStatusHistory()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setWarnings($warnings)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getWarnings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\GceNodePoolOperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClusterUuid()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setGceNodePoolId($gceNodePoolId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGceNodePoolId()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOperationType($operationType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOperationType()
-    {
-    }
-    /**
-     * @param ClusterOperationStatus
-     */
-    public function setStatus(ClusterOperationStatus $status)
-    {
-    }
-    /**
-     * @return ClusterOperationStatus
-     */
-    public function getStatus()
-    {
-    }
-    /**
-     * @param ClusterOperationStatus[]
-     */
-    public function setStatusHistory($statusHistory)
-    {
-    }
-    /**
-     * @return ClusterOperationStatus[]
-     */
-    public function getStatusHistory()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setWarnings($warnings)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getWarnings()
+    class Google_Service_Dataproc_GceNodePoolOperationMetadata extends \Google\Service\Dataproc\GceNodePoolOperationMetadata
     {
     }
 }

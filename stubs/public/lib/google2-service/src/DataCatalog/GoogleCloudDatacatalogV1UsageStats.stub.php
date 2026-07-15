@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1UsageStats extends \Google\Model
-{
-    /**
-     * The number of cancelled attempts to use the underlying entry.
-     *
-     * @var float
-     */
-    public $totalCancellations;
-    /**
-     * The number of successful uses of the underlying entry.
-     *
-     * @var float
-     */
-    public $totalCompletions;
-    /**
-     * Total time spent only on successful uses, in milliseconds.
-     *
-     * @var float
-     */
-    public $totalExecutionTimeForCompletionsMillis;
-    /**
-     * The number of failed attempts to use the underlying entry.
-     *
-     * @var float
-     */
-    public $totalFailures;
-    /**
-     * The number of cancelled attempts to use the underlying entry.
-     *
-     * @param float $totalCancellations
-     */
-    public function setTotalCancellations($totalCancellations)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1UsageStats extends \Google\Model
     {
+        /**
+         * The number of cancelled attempts to use the underlying entry.
+         *
+         * @var float
+         */
+        public $totalCancellations;
+        /**
+         * The number of successful uses of the underlying entry.
+         *
+         * @var float
+         */
+        public $totalCompletions;
+        /**
+         * Total time spent only on successful uses, in milliseconds.
+         *
+         * @var float
+         */
+        public $totalExecutionTimeForCompletionsMillis;
+        /**
+         * The number of failed attempts to use the underlying entry.
+         *
+         * @var float
+         */
+        public $totalFailures;
+        /**
+         * The number of cancelled attempts to use the underlying entry.
+         *
+         * @param float $totalCancellations
+         */
+        public function setTotalCancellations($totalCancellations)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getTotalCancellations()
+        {
+        }
+        /**
+         * The number of successful uses of the underlying entry.
+         *
+         * @param float $totalCompletions
+         */
+        public function setTotalCompletions($totalCompletions)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getTotalCompletions()
+        {
+        }
+        /**
+         * Total time spent only on successful uses, in milliseconds.
+         *
+         * @param float $totalExecutionTimeForCompletionsMillis
+         */
+        public function setTotalExecutionTimeForCompletionsMillis($totalExecutionTimeForCompletionsMillis)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getTotalExecutionTimeForCompletionsMillis()
+        {
+        }
+        /**
+         * The number of failed attempts to use the underlying entry.
+         *
+         * @param float $totalFailures
+         */
+        public function setTotalFailures($totalFailures)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getTotalFailures()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1UsageStats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTotalCancellations()
-    {
-    }
-    /**
-     * The number of successful uses of the underlying entry.
-     *
-     * @param float $totalCompletions
-     */
-    public function setTotalCompletions($totalCompletions)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getTotalCompletions()
-    {
-    }
-    /**
-     * Total time spent only on successful uses, in milliseconds.
-     *
-     * @param float $totalExecutionTimeForCompletionsMillis
-     */
-    public function setTotalExecutionTimeForCompletionsMillis($totalExecutionTimeForCompletionsMillis)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getTotalExecutionTimeForCompletionsMillis()
-    {
-    }
-    /**
-     * The number of failed attempts to use the underlying entry.
-     *
-     * @param float $totalFailures
-     */
-    public function setTotalFailures($totalFailures)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getTotalFailures()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1UsageStats extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1UsageStats
     {
     }
 }

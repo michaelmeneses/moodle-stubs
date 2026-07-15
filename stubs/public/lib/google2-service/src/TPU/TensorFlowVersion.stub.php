@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TPU;
-
-class TensorFlowVersion extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $version;
-    /**
-     * @param string
-     */
-    public function setName($name)
+namespace Google\Service\TPU {
+    class TensorFlowVersion extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $version;
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\TPU\TensorFlowVersion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_TPU_TensorFlowVersion extends \Google\Service\TPU\TensorFlowVersion
     {
     }
 }

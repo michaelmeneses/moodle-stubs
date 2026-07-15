@@ -21,93 +21,102 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class AdvancedMachineFeatures extends \Google\Model
-{
-    /**
-     * PMU not enabled.
-     */
-    public const PERFORMANCE_MONITORING_UNIT_PERFORMANCE_MONITORING_UNIT_UNSPECIFIED = 'PERFORMANCE_MONITORING_UNIT_UNSPECIFIED';
-    /**
-     * Architecturally defined non-LLC events.
-     */
-    public const PERFORMANCE_MONITORING_UNIT_ARCHITECTURAL = 'ARCHITECTURAL';
-    /**
-     * Most documented core/L2 events.
-     */
-    public const PERFORMANCE_MONITORING_UNIT_STANDARD = 'STANDARD';
-    /**
-     * Most documented core/L2 and LLC events.
-     */
-    public const PERFORMANCE_MONITORING_UNIT_ENHANCED = 'ENHANCED';
-    /**
-     * Whether or not to enable nested virtualization (defaults to false).
-     *
-     * @var bool
-     */
-    public $enableNestedVirtualization;
-    /**
-     * Type of Performance Monitoring Unit (PMU) requested on node pool instances.
-     * If unset, PMU will not be available to the node.
-     *
-     * @var string
-     */
-    public $performanceMonitoringUnit;
-    /**
-     * The number of threads per physical core. To disable simultaneous
-     * multithreading (SMT) set this to 1. If unset, the maximum number of threads
-     * supported per core by the underlying processor is assumed.
-     *
-     * @var string
-     */
-    public $threadsPerCore;
-    /**
-     * Whether or not to enable nested virtualization (defaults to false).
-     *
-     * @param bool $enableNestedVirtualization
-     */
-    public function setEnableNestedVirtualization($enableNestedVirtualization)
+namespace Google\Service\Container {
+    class AdvancedMachineFeatures extends \Google\Model
     {
+        /**
+         * PMU not enabled.
+         */
+        public const PERFORMANCE_MONITORING_UNIT_PERFORMANCE_MONITORING_UNIT_UNSPECIFIED = 'PERFORMANCE_MONITORING_UNIT_UNSPECIFIED';
+        /**
+         * Architecturally defined non-LLC events.
+         */
+        public const PERFORMANCE_MONITORING_UNIT_ARCHITECTURAL = 'ARCHITECTURAL';
+        /**
+         * Most documented core/L2 events.
+         */
+        public const PERFORMANCE_MONITORING_UNIT_STANDARD = 'STANDARD';
+        /**
+         * Most documented core/L2 and LLC events.
+         */
+        public const PERFORMANCE_MONITORING_UNIT_ENHANCED = 'ENHANCED';
+        /**
+         * Whether or not to enable nested virtualization (defaults to false).
+         *
+         * @var bool
+         */
+        public $enableNestedVirtualization;
+        /**
+         * Type of Performance Monitoring Unit (PMU) requested on node pool instances.
+         * If unset, PMU will not be available to the node.
+         *
+         * @var string
+         */
+        public $performanceMonitoringUnit;
+        /**
+         * The number of threads per physical core. To disable simultaneous
+         * multithreading (SMT) set this to 1. If unset, the maximum number of threads
+         * supported per core by the underlying processor is assumed.
+         *
+         * @var string
+         */
+        public $threadsPerCore;
+        /**
+         * Whether or not to enable nested virtualization (defaults to false).
+         *
+         * @param bool $enableNestedVirtualization
+         */
+        public function setEnableNestedVirtualization($enableNestedVirtualization)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableNestedVirtualization()
+        {
+        }
+        /**
+         * Type of Performance Monitoring Unit (PMU) requested on node pool instances.
+         * If unset, PMU will not be available to the node.
+         *
+         * Accepted values: PERFORMANCE_MONITORING_UNIT_UNSPECIFIED, ARCHITECTURAL,
+         * STANDARD, ENHANCED
+         *
+         * @param self::PERFORMANCE_MONITORING_UNIT_* $performanceMonitoringUnit
+         */
+        public function setPerformanceMonitoringUnit($performanceMonitoringUnit)
+        {
+        }
+        /**
+         * @return self::PERFORMANCE_MONITORING_UNIT_*
+         */
+        public function getPerformanceMonitoringUnit()
+        {
+        }
+        /**
+         * The number of threads per physical core. To disable simultaneous
+         * multithreading (SMT) set this to 1. If unset, the maximum number of threads
+         * supported per core by the underlying processor is assumed.
+         *
+         * @param string $threadsPerCore
+         */
+        public function setThreadsPerCore($threadsPerCore)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getThreadsPerCore()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Container\AdvancedMachineFeatures registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnableNestedVirtualization()
-    {
-    }
-    /**
-     * Type of Performance Monitoring Unit (PMU) requested on node pool instances.
-     * If unset, PMU will not be available to the node.
-     *
-     * Accepted values: PERFORMANCE_MONITORING_UNIT_UNSPECIFIED, ARCHITECTURAL,
-     * STANDARD, ENHANCED
-     *
-     * @param self::PERFORMANCE_MONITORING_UNIT_* $performanceMonitoringUnit
-     */
-    public function setPerformanceMonitoringUnit($performanceMonitoringUnit)
-    {
-    }
-    /**
-     * @return self::PERFORMANCE_MONITORING_UNIT_*
-     */
-    public function getPerformanceMonitoringUnit()
-    {
-    }
-    /**
-     * The number of threads per physical core. To disable simultaneous
-     * multithreading (SMT) set this to 1. If unset, the maximum number of threads
-     * supported per core by the underlying processor is assumed.
-     *
-     * @param string $threadsPerCore
-     */
-    public function setThreadsPerCore($threadsPerCore)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getThreadsPerCore()
+    class Google_Service_Container_AdvancedMachineFeatures extends \Google\Service\Container\AdvancedMachineFeatures
     {
     }
 }

@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TPU;
-
-class SchedulingConfig extends \Google\Model
-{
-    /**
-     * Defines whether the node is preemptible.
-     *
-     * @var bool
-     */
-    public $preemptible;
-    /**
-     * Whether the node is created under a reservation.
-     *
-     * @var bool
-     */
-    public $reserved;
-    /**
-     * Optional. Defines whether the node is Spot VM.
-     *
-     * @var bool
-     */
-    public $spot;
-    /**
-     * Defines whether the node is preemptible.
-     *
-     * @param bool $preemptible
-     */
-    public function setPreemptible($preemptible)
+namespace Google\Service\TPU {
+    class SchedulingConfig extends \Google\Model
     {
+        /**
+         * Defines whether the node is preemptible.
+         *
+         * @var bool
+         */
+        public $preemptible;
+        /**
+         * Whether the node is created under a reservation.
+         *
+         * @var bool
+         */
+        public $reserved;
+        /**
+         * Optional. Defines whether the node is Spot VM.
+         *
+         * @var bool
+         */
+        public $spot;
+        /**
+         * Defines whether the node is preemptible.
+         *
+         * @param bool $preemptible
+         */
+        public function setPreemptible($preemptible)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPreemptible()
+        {
+        }
+        /**
+         * Whether the node is created under a reservation.
+         *
+         * @param bool $reserved
+         */
+        public function setReserved($reserved)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getReserved()
+        {
+        }
+        /**
+         * Optional. Defines whether the node is Spot VM.
+         *
+         * @param bool $spot
+         */
+        public function setSpot($spot)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSpot()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\TPU\SchedulingConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPreemptible()
-    {
-    }
-    /**
-     * Whether the node is created under a reservation.
-     *
-     * @param bool $reserved
-     */
-    public function setReserved($reserved)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getReserved()
-    {
-    }
-    /**
-     * Optional. Defines whether the node is Spot VM.
-     *
-     * @param bool $spot
-     */
-    public function setSpot($spot)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSpot()
+    class Google_Service_TPU_SchedulingConfig extends \Google\Service\TPU\SchedulingConfig
     {
     }
 }

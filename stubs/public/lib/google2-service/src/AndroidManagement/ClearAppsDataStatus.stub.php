@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class ClearAppsDataStatus extends \Google\Model
-{
-    protected $resultsType = PerAppResult::class;
-    protected $resultsDataType = 'map';
-    /**
-     * The per-app results, a mapping from package names to the respective
-     * clearing result.
-     *
-     * @param PerAppResult[] $results
-     */
-    public function setResults($results)
+namespace Google\Service\AndroidManagement {
+    class ClearAppsDataStatus extends \Google\Model
     {
+        protected $resultsType = PerAppResult::class;
+        protected $resultsDataType = 'map';
+        /**
+         * The per-app results, a mapping from package names to the respective
+         * clearing result.
+         *
+         * @param PerAppResult[] $results
+         */
+        public function setResults($results)
+        {
+        }
+        /**
+         * @return PerAppResult[]
+         */
+        public function getResults()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PerAppResult[]
+     * Runtime class alias of \Google\Service\AndroidManagement\ClearAppsDataStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResults()
+    class Google_Service_AndroidManagement_ClearAppsDataStatus extends \Google\Service\AndroidManagement\ClearAppsDataStatus
     {
     }
 }

@@ -21,85 +21,94 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class BulkEditSitesRequest extends \Google\Collection
-{
-    protected $collection_key = 'deletedSites';
-    /**
-     * The ID of the advertiser that owns the parent channel.
-     *
-     * @var string
-     */
-    public $advertiserId;
-    protected $createdSitesType = Site::class;
-    protected $createdSitesDataType = 'array';
-    /**
-     * The sites to delete in batch, specified as a list of site url_or_app_ids.
-     *
-     * @var string[]
-     */
-    public $deletedSites;
-    /**
-     * The ID of the partner that owns the parent channel.
-     *
-     * @var string
-     */
-    public $partnerId;
-    /**
-     * The ID of the advertiser that owns the parent channel.
-     *
-     * @param string $advertiserId
-     */
-    public function setAdvertiserId($advertiserId)
+namespace Google\Service\DisplayVideo {
+    class BulkEditSitesRequest extends \Google\Collection
     {
+        protected $collection_key = 'deletedSites';
+        /**
+         * The ID of the advertiser that owns the parent channel.
+         *
+         * @var string
+         */
+        public $advertiserId;
+        protected $createdSitesType = Site::class;
+        protected $createdSitesDataType = 'array';
+        /**
+         * The sites to delete in batch, specified as a list of site url_or_app_ids.
+         *
+         * @var string[]
+         */
+        public $deletedSites;
+        /**
+         * The ID of the partner that owns the parent channel.
+         *
+         * @var string
+         */
+        public $partnerId;
+        /**
+         * The ID of the advertiser that owns the parent channel.
+         *
+         * @param string $advertiserId
+         */
+        public function setAdvertiserId($advertiserId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdvertiserId()
+        {
+        }
+        /**
+         * The sites to create in batch, specified as a list of Sites.
+         *
+         * @param Site[] $createdSites
+         */
+        public function setCreatedSites($createdSites)
+        {
+        }
+        /**
+         * @return Site[]
+         */
+        public function getCreatedSites()
+        {
+        }
+        /**
+         * The sites to delete in batch, specified as a list of site url_or_app_ids.
+         *
+         * @param string[] $deletedSites
+         */
+        public function setDeletedSites($deletedSites)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDeletedSites()
+        {
+        }
+        /**
+         * The ID of the partner that owns the parent channel.
+         *
+         * @param string $partnerId
+         */
+        public function setPartnerId($partnerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPartnerId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\BulkEditSitesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdvertiserId()
-    {
-    }
-    /**
-     * The sites to create in batch, specified as a list of Sites.
-     *
-     * @param Site[] $createdSites
-     */
-    public function setCreatedSites($createdSites)
-    {
-    }
-    /**
-     * @return Site[]
-     */
-    public function getCreatedSites()
-    {
-    }
-    /**
-     * The sites to delete in batch, specified as a list of site url_or_app_ids.
-     *
-     * @param string[] $deletedSites
-     */
-    public function setDeletedSites($deletedSites)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getDeletedSites()
-    {
-    }
-    /**
-     * The ID of the partner that owns the parent channel.
-     *
-     * @param string $partnerId
-     */
-    public function setPartnerId($partnerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPartnerId()
+    class Google_Service_DisplayVideo_BulkEditSitesRequest extends \Google\Service\DisplayVideo\BulkEditSitesRequest
     {
     }
 }

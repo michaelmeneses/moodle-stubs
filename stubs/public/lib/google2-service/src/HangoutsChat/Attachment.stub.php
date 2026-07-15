@@ -21,187 +21,196 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class Attachment extends \Google\Model
-{
-    /**
-     * Reserved.
-     */
-    public const SOURCE_SOURCE_UNSPECIFIED = 'SOURCE_UNSPECIFIED';
-    /**
-     * The file is a Google Drive file.
-     */
-    public const SOURCE_DRIVE_FILE = 'DRIVE_FILE';
-    /**
-     * The file is uploaded to Chat.
-     */
-    public const SOURCE_UPLOADED_CONTENT = 'UPLOADED_CONTENT';
-    protected $attachmentDataRefType = AttachmentDataRef::class;
-    protected $attachmentDataRefDataType = '';
-    /**
-     * Output only. The original file name for the content, not the full path.
-     *
-     * @var string
-     */
-    public $contentName;
-    /**
-     * Output only. The content type (MIME type) of the file.
-     *
-     * @var string
-     */
-    public $contentType;
-    /**
-     * Output only. The download URL which should be used to allow a human user to
-     * download the attachment. Chat apps shouldn't use this URL to download
-     * attachment content.
-     *
-     * @var string
-     */
-    public $downloadUri;
-    protected $driveDataRefType = DriveDataRef::class;
-    protected $driveDataRefDataType = '';
-    /**
-     * Identifier. Resource name of the attachment. Format:
-     * `spaces/{space}/messages/{message}/attachments/{attachment}`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The source of the attachment.
-     *
-     * @var string
-     */
-    public $source;
-    /**
-     * Output only. The thumbnail URL which should be used to preview the
-     * attachment to a human user. Chat apps shouldn't use this URL to download
-     * attachment content.
-     *
-     * @var string
-     */
-    public $thumbnailUri;
-    /**
-     * Optional. A reference to the attachment data. This field is used to create
-     * or update messages with attachments, or with the media API to download the
-     * attachment data.
-     *
-     * @param AttachmentDataRef $attachmentDataRef
-     */
-    public function setAttachmentDataRef(AttachmentDataRef $attachmentDataRef)
+namespace Google\Service\HangoutsChat {
+    class Attachment extends \Google\Model
     {
+        /**
+         * Reserved.
+         */
+        public const SOURCE_SOURCE_UNSPECIFIED = 'SOURCE_UNSPECIFIED';
+        /**
+         * The file is a Google Drive file.
+         */
+        public const SOURCE_DRIVE_FILE = 'DRIVE_FILE';
+        /**
+         * The file is uploaded to Chat.
+         */
+        public const SOURCE_UPLOADED_CONTENT = 'UPLOADED_CONTENT';
+        protected $attachmentDataRefType = AttachmentDataRef::class;
+        protected $attachmentDataRefDataType = '';
+        /**
+         * Output only. The original file name for the content, not the full path.
+         *
+         * @var string
+         */
+        public $contentName;
+        /**
+         * Output only. The content type (MIME type) of the file.
+         *
+         * @var string
+         */
+        public $contentType;
+        /**
+         * Output only. The download URL which should be used to allow a human user to
+         * download the attachment. Chat apps shouldn't use this URL to download
+         * attachment content.
+         *
+         * @var string
+         */
+        public $downloadUri;
+        protected $driveDataRefType = DriveDataRef::class;
+        protected $driveDataRefDataType = '';
+        /**
+         * Identifier. Resource name of the attachment. Format:
+         * `spaces/{space}/messages/{message}/attachments/{attachment}`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The source of the attachment.
+         *
+         * @var string
+         */
+        public $source;
+        /**
+         * Output only. The thumbnail URL which should be used to preview the
+         * attachment to a human user. Chat apps shouldn't use this URL to download
+         * attachment content.
+         *
+         * @var string
+         */
+        public $thumbnailUri;
+        /**
+         * Optional. A reference to the attachment data. This field is used to create
+         * or update messages with attachments, or with the media API to download the
+         * attachment data.
+         *
+         * @param AttachmentDataRef $attachmentDataRef
+         */
+        public function setAttachmentDataRef(AttachmentDataRef $attachmentDataRef)
+        {
+        }
+        /**
+         * @return AttachmentDataRef
+         */
+        public function getAttachmentDataRef()
+        {
+        }
+        /**
+         * Output only. The original file name for the content, not the full path.
+         *
+         * @param string $contentName
+         */
+        public function setContentName($contentName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContentName()
+        {
+        }
+        /**
+         * Output only. The content type (MIME type) of the file.
+         *
+         * @param string $contentType
+         */
+        public function setContentType($contentType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContentType()
+        {
+        }
+        /**
+         * Output only. The download URL which should be used to allow a human user to
+         * download the attachment. Chat apps shouldn't use this URL to download
+         * attachment content.
+         *
+         * @param string $downloadUri
+         */
+        public function setDownloadUri($downloadUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDownloadUri()
+        {
+        }
+        /**
+         * Output only. A reference to the Google Drive attachment. This field is used
+         * with the Google Drive API.
+         *
+         * @param DriveDataRef $driveDataRef
+         */
+        public function setDriveDataRef(DriveDataRef $driveDataRef)
+        {
+        }
+        /**
+         * @return DriveDataRef
+         */
+        public function getDriveDataRef()
+        {
+        }
+        /**
+         * Identifier. Resource name of the attachment. Format:
+         * `spaces/{space}/messages/{message}/attachments/{attachment}`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The source of the attachment.
+         *
+         * Accepted values: SOURCE_UNSPECIFIED, DRIVE_FILE, UPLOADED_CONTENT
+         *
+         * @param self::SOURCE_* $source
+         */
+        public function setSource($source)
+        {
+        }
+        /**
+         * @return self::SOURCE_*
+         */
+        public function getSource()
+        {
+        }
+        /**
+         * Output only. The thumbnail URL which should be used to preview the
+         * attachment to a human user. Chat apps shouldn't use this URL to download
+         * attachment content.
+         *
+         * @param string $thumbnailUri
+         */
+        public function setThumbnailUri($thumbnailUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getThumbnailUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AttachmentDataRef
+     * Runtime class alias of \Google\Service\HangoutsChat\Attachment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttachmentDataRef()
-    {
-    }
-    /**
-     * Output only. The original file name for the content, not the full path.
-     *
-     * @param string $contentName
-     */
-    public function setContentName($contentName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContentName()
-    {
-    }
-    /**
-     * Output only. The content type (MIME type) of the file.
-     *
-     * @param string $contentType
-     */
-    public function setContentType($contentType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContentType()
-    {
-    }
-    /**
-     * Output only. The download URL which should be used to allow a human user to
-     * download the attachment. Chat apps shouldn't use this URL to download
-     * attachment content.
-     *
-     * @param string $downloadUri
-     */
-    public function setDownloadUri($downloadUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDownloadUri()
-    {
-    }
-    /**
-     * Output only. A reference to the Google Drive attachment. This field is used
-     * with the Google Drive API.
-     *
-     * @param DriveDataRef $driveDataRef
-     */
-    public function setDriveDataRef(DriveDataRef $driveDataRef)
-    {
-    }
-    /**
-     * @return DriveDataRef
-     */
-    public function getDriveDataRef()
-    {
-    }
-    /**
-     * Identifier. Resource name of the attachment. Format:
-     * `spaces/{space}/messages/{message}/attachments/{attachment}`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The source of the attachment.
-     *
-     * Accepted values: SOURCE_UNSPECIFIED, DRIVE_FILE, UPLOADED_CONTENT
-     *
-     * @param self::SOURCE_* $source
-     */
-    public function setSource($source)
-    {
-    }
-    /**
-     * @return self::SOURCE_*
-     */
-    public function getSource()
-    {
-    }
-    /**
-     * Output only. The thumbnail URL which should be used to preview the
-     * attachment to a human user. Chat apps shouldn't use this URL to download
-     * attachment content.
-     *
-     * @param string $thumbnailUri
-     */
-    public function setThumbnailUri($thumbnailUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getThumbnailUri()
+    class Google_Service_HangoutsChat_Attachment extends \Google\Service\HangoutsChat\Attachment
     {
     }
 }

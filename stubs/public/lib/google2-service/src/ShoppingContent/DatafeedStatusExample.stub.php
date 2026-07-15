@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class DatafeedStatusExample extends \Google\Model
-{
-    /**
-     * The ID of the example item.
-     *
-     * @var string
-     */
-    public $itemId;
-    /**
-     * Line number in the data feed where the example is found.
-     *
-     * @var string
-     */
-    public $lineNumber;
-    /**
-     * The problematic value.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * The ID of the example item.
-     *
-     * @param string $itemId
-     */
-    public function setItemId($itemId)
+namespace Google\Service\ShoppingContent {
+    class DatafeedStatusExample extends \Google\Model
     {
+        /**
+         * The ID of the example item.
+         *
+         * @var string
+         */
+        public $itemId;
+        /**
+         * Line number in the data feed where the example is found.
+         *
+         * @var string
+         */
+        public $lineNumber;
+        /**
+         * The problematic value.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * The ID of the example item.
+         *
+         * @param string $itemId
+         */
+        public function setItemId($itemId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getItemId()
+        {
+        }
+        /**
+         * Line number in the data feed where the example is found.
+         *
+         * @param string $lineNumber
+         */
+        public function setLineNumber($lineNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLineNumber()
+        {
+        }
+        /**
+         * The problematic value.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\DatafeedStatusExample registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItemId()
-    {
-    }
-    /**
-     * Line number in the data feed where the example is found.
-     *
-     * @param string $lineNumber
-     */
-    public function setLineNumber($lineNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLineNumber()
-    {
-    }
-    /**
-     * The problematic value.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_ShoppingContent_DatafeedStatusExample extends \Google\Service\ShoppingContent\DatafeedStatusExample
     {
     }
 }

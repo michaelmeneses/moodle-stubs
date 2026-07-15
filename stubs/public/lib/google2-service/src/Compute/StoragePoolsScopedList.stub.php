@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class StoragePoolsScopedList extends \Google\Collection
-{
-    protected $collection_key = 'storagePools';
-    protected $storagePoolsType = StoragePool::class;
-    protected $storagePoolsDataType = 'array';
-    protected $warningType = StoragePoolsScopedListWarning::class;
-    protected $warningDataType = '';
-    /**
-     * [Output Only] A list of storage pool contained in this scope.
-     *
-     * @param StoragePool[] $storagePools
-     */
-    public function setStoragePools($storagePools)
+namespace Google\Service\Compute {
+    class StoragePoolsScopedList extends \Google\Collection
     {
+        protected $collection_key = 'storagePools';
+        protected $storagePoolsType = StoragePool::class;
+        protected $storagePoolsDataType = 'array';
+        protected $warningType = StoragePoolsScopedListWarning::class;
+        protected $warningDataType = '';
+        /**
+         * [Output Only] A list of storage pool contained in this scope.
+         *
+         * @param StoragePool[] $storagePools
+         */
+        public function setStoragePools($storagePools)
+        {
+        }
+        /**
+         * @return StoragePool[]
+         */
+        public function getStoragePools()
+        {
+        }
+        /**
+         * [Output Only] Informational warning which replaces the list of storage pool
+         * when the list is empty.
+         *
+         * @param StoragePoolsScopedListWarning $warning
+         */
+        public function setWarning(StoragePoolsScopedListWarning $warning)
+        {
+        }
+        /**
+         * @return StoragePoolsScopedListWarning
+         */
+        public function getWarning()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return StoragePool[]
+     * Runtime class alias of \Google\Service\Compute\StoragePoolsScopedList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStoragePools()
-    {
-    }
-    /**
-     * [Output Only] Informational warning which replaces the list of storage pool
-     * when the list is empty.
-     *
-     * @param StoragePoolsScopedListWarning $warning
-     */
-    public function setWarning(StoragePoolsScopedListWarning $warning)
-    {
-    }
-    /**
-     * @return StoragePoolsScopedListWarning
-     */
-    public function getWarning()
+    class Google_Service_Compute_StoragePoolsScopedList extends \Google\Service\Compute\StoragePoolsScopedList
     {
     }
 }

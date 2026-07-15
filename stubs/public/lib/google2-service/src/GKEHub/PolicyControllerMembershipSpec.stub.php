@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class PolicyControllerMembershipSpec extends \Google\Model
-{
-    protected $policyControllerHubConfigType = PolicyControllerHubConfig::class;
-    protected $policyControllerHubConfigDataType = '';
-    /**
-     * @var string
-     */
-    public $version;
-    /**
-     * @param PolicyControllerHubConfig
-     */
-    public function setPolicyControllerHubConfig(PolicyControllerHubConfig $policyControllerHubConfig)
+namespace Google\Service\GKEHub {
+    class PolicyControllerMembershipSpec extends \Google\Model
     {
+        protected $policyControllerHubConfigType = PolicyControllerHubConfig::class;
+        protected $policyControllerHubConfigDataType = '';
+        /**
+         * @var string
+         */
+        public $version;
+        /**
+         * @param PolicyControllerHubConfig
+         */
+        public function setPolicyControllerHubConfig(PolicyControllerHubConfig $policyControllerHubConfig)
+        {
+        }
+        /**
+         * @return PolicyControllerHubConfig
+         */
+        public function getPolicyControllerHubConfig()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PolicyControllerHubConfig
+     * Runtime class alias of \Google\Service\GKEHub\PolicyControllerMembershipSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPolicyControllerHubConfig()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_GKEHub_PolicyControllerMembershipSpec extends \Google\Service\GKEHub\PolicyControllerMembershipSpec
     {
     }
 }

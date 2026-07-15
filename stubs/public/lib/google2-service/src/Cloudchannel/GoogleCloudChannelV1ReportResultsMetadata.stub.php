@@ -21,79 +21,88 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1ReportResultsMetadata extends \Google\Model
-{
-    protected $dateRangeType = GoogleCloudChannelV1DateRange::class;
-    protected $dateRangeDataType = '';
-    protected $precedingDateRangeType = GoogleCloudChannelV1DateRange::class;
-    protected $precedingDateRangeDataType = '';
-    protected $reportType = GoogleCloudChannelV1Report::class;
-    protected $reportDataType = '';
-    /**
-     * The total number of rows of data in the final report.
-     *
-     * @var string
-     */
-    public $rowCount;
-    /**
-     * The date range of reported usage.
-     *
-     * @param GoogleCloudChannelV1DateRange $dateRange
-     */
-    public function setDateRange(GoogleCloudChannelV1DateRange $dateRange)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1ReportResultsMetadata extends \Google\Model
     {
+        protected $dateRangeType = GoogleCloudChannelV1DateRange::class;
+        protected $dateRangeDataType = '';
+        protected $precedingDateRangeType = GoogleCloudChannelV1DateRange::class;
+        protected $precedingDateRangeDataType = '';
+        protected $reportType = GoogleCloudChannelV1Report::class;
+        protected $reportDataType = '';
+        /**
+         * The total number of rows of data in the final report.
+         *
+         * @var string
+         */
+        public $rowCount;
+        /**
+         * The date range of reported usage.
+         *
+         * @param GoogleCloudChannelV1DateRange $dateRange
+         */
+        public function setDateRange(GoogleCloudChannelV1DateRange $dateRange)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1DateRange
+         */
+        public function getDateRange()
+        {
+        }
+        /**
+         * The usage dates immediately preceding `date_range` with the same duration.
+         * Use this to calculate trending usage and costs. This is only populated if
+         * you request trending data. For example, if `date_range` is July 1-15,
+         * `preceding_date_range` will be June 16-30.
+         *
+         * @param GoogleCloudChannelV1DateRange $precedingDateRange
+         */
+        public function setPrecedingDateRange(GoogleCloudChannelV1DateRange $precedingDateRange)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1DateRange
+         */
+        public function getPrecedingDateRange()
+        {
+        }
+        /**
+         * Details of the completed report.
+         *
+         * @param GoogleCloudChannelV1Report $report
+         */
+        public function setReport(GoogleCloudChannelV1Report $report)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1Report
+         */
+        public function getReport()
+        {
+        }
+        /**
+         * The total number of rows of data in the final report.
+         *
+         * @param string $rowCount
+         */
+        public function setRowCount($rowCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRowCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudChannelV1DateRange
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1ReportResultsMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDateRange()
-    {
-    }
-    /**
-     * The usage dates immediately preceding `date_range` with the same duration.
-     * Use this to calculate trending usage and costs. This is only populated if
-     * you request trending data. For example, if `date_range` is July 1-15,
-     * `preceding_date_range` will be June 16-30.
-     *
-     * @param GoogleCloudChannelV1DateRange $precedingDateRange
-     */
-    public function setPrecedingDateRange(GoogleCloudChannelV1DateRange $precedingDateRange)
-    {
-    }
-    /**
-     * @return GoogleCloudChannelV1DateRange
-     */
-    public function getPrecedingDateRange()
-    {
-    }
-    /**
-     * Details of the completed report.
-     *
-     * @param GoogleCloudChannelV1Report $report
-     */
-    public function setReport(GoogleCloudChannelV1Report $report)
-    {
-    }
-    /**
-     * @return GoogleCloudChannelV1Report
-     */
-    public function getReport()
-    {
-    }
-    /**
-     * The total number of rows of data in the final report.
-     *
-     * @param string $rowCount
-     */
-    public function setRowCount($rowCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRowCount()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1ReportResultsMetadata extends \Google\Service\Cloudchannel\GoogleCloudChannelV1ReportResultsMetadata
     {
     }
 }

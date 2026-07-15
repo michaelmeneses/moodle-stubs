@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceManagement;
-
-class Page extends \Google\Collection
-{
-    protected $collection_key = 'subpages';
-    /**
-     * The Markdown content of the page. You can use ```(== include {path} ==)```
-     * to include content from a Markdown file. The content can be used to produce
-     * the documentation page such as HTML format page.
-     *
-     * @var string
-     */
-    public $content;
-    /**
-     * The name of the page. It will be used as an identity of the page to
-     * generate URI of the page, text of the link to this page in navigation, etc.
-     * The full page name (start from the root page name to this page concatenated
-     * with `.`) can be used as reference to the page in your documentation. For
-     * example: pages: - name: Tutorial content: (== include tutorial.md ==)
-     * subpages: - name: Java content: (== include tutorial_java.md ==) You can
-     * reference `Java` page using Markdown reference link syntax: `Java`.
-     *
-     * @var string
-     */
-    public $name;
-    protected $subpagesType = Page::class;
-    protected $subpagesDataType = 'array';
-    /**
-     * The Markdown content of the page. You can use ```(== include {path} ==)```
-     * to include content from a Markdown file. The content can be used to produce
-     * the documentation page such as HTML format page.
-     *
-     * @param string $content
-     */
-    public function setContent($content)
+namespace Google\Service\ServiceManagement {
+    class Page extends \Google\Collection
     {
+        protected $collection_key = 'subpages';
+        /**
+         * The Markdown content of the page. You can use ```(== include {path} ==)```
+         * to include content from a Markdown file. The content can be used to produce
+         * the documentation page such as HTML format page.
+         *
+         * @var string
+         */
+        public $content;
+        /**
+         * The name of the page. It will be used as an identity of the page to
+         * generate URI of the page, text of the link to this page in navigation, etc.
+         * The full page name (start from the root page name to this page concatenated
+         * with `.`) can be used as reference to the page in your documentation. For
+         * example: pages: - name: Tutorial content: (== include tutorial.md ==)
+         * subpages: - name: Java content: (== include tutorial_java.md ==) You can
+         * reference `Java` page using Markdown reference link syntax: `Java`.
+         *
+         * @var string
+         */
+        public $name;
+        protected $subpagesType = Page::class;
+        protected $subpagesDataType = 'array';
+        /**
+         * The Markdown content of the page. You can use ```(== include {path} ==)```
+         * to include content from a Markdown file. The content can be used to produce
+         * the documentation page such as HTML format page.
+         *
+         * @param string $content
+         */
+        public function setContent($content)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContent()
+        {
+        }
+        /**
+         * The name of the page. It will be used as an identity of the page to
+         * generate URI of the page, text of the link to this page in navigation, etc.
+         * The full page name (start from the root page name to this page concatenated
+         * with `.`) can be used as reference to the page in your documentation. For
+         * example: pages: - name: Tutorial content: (== include tutorial.md ==)
+         * subpages: - name: Java content: (== include tutorial_java.md ==) You can
+         * reference `Java` page using Markdown reference link syntax: `Java`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Subpages of this page. The order of subpages specified here will be honored
+         * in the generated docset.
+         *
+         * @param Page[] $subpages
+         */
+        public function setSubpages($subpages)
+        {
+        }
+        /**
+         * @return Page[]
+         */
+        public function getSubpages()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ServiceManagement\Page registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContent()
-    {
-    }
-    /**
-     * The name of the page. It will be used as an identity of the page to
-     * generate URI of the page, text of the link to this page in navigation, etc.
-     * The full page name (start from the root page name to this page concatenated
-     * with `.`) can be used as reference to the page in your documentation. For
-     * example: pages: - name: Tutorial content: (== include tutorial.md ==)
-     * subpages: - name: Java content: (== include tutorial_java.md ==) You can
-     * reference `Java` page using Markdown reference link syntax: `Java`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Subpages of this page. The order of subpages specified here will be honored
-     * in the generated docset.
-     *
-     * @param Page[] $subpages
-     */
-    public function setSubpages($subpages)
-    {
-    }
-    /**
-     * @return Page[]
-     */
-    public function getSubpages()
+    class Google_Service_ServiceManagement_Page extends \Google\Service\ServiceManagement\Page
     {
     }
 }

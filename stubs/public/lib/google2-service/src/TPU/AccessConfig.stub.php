@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TPU;
-
-class AccessConfig extends \Google\Model
-{
-    /**
-     * Output only. An external IP address associated with the TPU worker.
-     *
-     * @var string
-     */
-    public $externalIp;
-    /**
-     * Output only. An external IP address associated with the TPU worker.
-     *
-     * @param string $externalIp
-     */
-    public function setExternalIp($externalIp)
+namespace Google\Service\TPU {
+    class AccessConfig extends \Google\Model
     {
+        /**
+         * Output only. An external IP address associated with the TPU worker.
+         *
+         * @var string
+         */
+        public $externalIp;
+        /**
+         * Output only. An external IP address associated with the TPU worker.
+         *
+         * @param string $externalIp
+         */
+        public function setExternalIp($externalIp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExternalIp()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\TPU\AccessConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExternalIp()
+    class Google_Service_TPU_AccessConfig extends \Google\Service\TPU\AccessConfig
     {
     }
 }

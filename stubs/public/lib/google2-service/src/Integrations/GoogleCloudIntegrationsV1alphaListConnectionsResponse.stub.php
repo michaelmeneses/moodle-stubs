@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaListConnectionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'connections';
-    protected $connectionsType = GoogleCloudConnectorsV1Connection::class;
-    protected $connectionsDataType = 'array';
-    /**
-     * Next page token.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Connections.
-     *
-     * @param GoogleCloudConnectorsV1Connection[] $connections
-     */
-    public function setConnections($connections)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaListConnectionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'connections';
+        protected $connectionsType = GoogleCloudConnectorsV1Connection::class;
+        protected $connectionsDataType = 'array';
+        /**
+         * Next page token.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Connections.
+         *
+         * @param GoogleCloudConnectorsV1Connection[] $connections
+         */
+        public function setConnections($connections)
+        {
+        }
+        /**
+         * @return GoogleCloudConnectorsV1Connection[]
+         */
+        public function getConnections()
+        {
+        }
+        /**
+         * Next page token.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudConnectorsV1Connection[]
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaListConnectionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConnections()
-    {
-    }
-    /**
-     * Next page token.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaListConnectionsResponse extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaListConnectionsResponse
     {
     }
 }

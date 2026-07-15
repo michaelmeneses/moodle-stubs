@@ -21,100 +21,109 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ReasoningEngineSpecSourceCodeSpecPythonSpec extends \Google\Model
-{
-    /**
-     * Optional. The Python module to load as the entrypoint, specified as a fully
-     * qualified module name. For example: path.to.agent. If not specified,
-     * defaults to "agent". The project root will be added to Python sys.path,
-     * allowing imports to be specified relative to the root.
-     *
-     * @var string
-     */
-    public $entrypointModule;
-    /**
-     * Optional. The name of the callable object within the `entrypoint_module` to
-     * use as the application If not specified, defaults to "root_agent".
-     *
-     * @var string
-     */
-    public $entrypointObject;
-    /**
-     * Optional. The path to the requirements file, relative to the source root.
-     * If not specified, defaults to "requirements.txt".
-     *
-     * @var string
-     */
-    public $requirementsFile;
-    /**
-     * Optional. The version of Python to use. Support version includes 3.9, 3.10,
-     * 3.11, 3.12, 3.13. If not specified, default value is 3.10.
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * Optional. The Python module to load as the entrypoint, specified as a fully
-     * qualified module name. For example: path.to.agent. If not specified,
-     * defaults to "agent". The project root will be added to Python sys.path,
-     * allowing imports to be specified relative to the root.
-     *
-     * @param string $entrypointModule
-     */
-    public function setEntrypointModule($entrypointModule)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ReasoningEngineSpecSourceCodeSpecPythonSpec extends \Google\Model
     {
+        /**
+         * Optional. The Python module to load as the entrypoint, specified as a fully
+         * qualified module name. For example: path.to.agent. If not specified,
+         * defaults to "agent". The project root will be added to Python sys.path,
+         * allowing imports to be specified relative to the root.
+         *
+         * @var string
+         */
+        public $entrypointModule;
+        /**
+         * Optional. The name of the callable object within the `entrypoint_module` to
+         * use as the application If not specified, defaults to "root_agent".
+         *
+         * @var string
+         */
+        public $entrypointObject;
+        /**
+         * Optional. The path to the requirements file, relative to the source root.
+         * If not specified, defaults to "requirements.txt".
+         *
+         * @var string
+         */
+        public $requirementsFile;
+        /**
+         * Optional. The version of Python to use. Support version includes 3.9, 3.10,
+         * 3.11, 3.12, 3.13. If not specified, default value is 3.10.
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * Optional. The Python module to load as the entrypoint, specified as a fully
+         * qualified module name. For example: path.to.agent. If not specified,
+         * defaults to "agent". The project root will be added to Python sys.path,
+         * allowing imports to be specified relative to the root.
+         *
+         * @param string $entrypointModule
+         */
+        public function setEntrypointModule($entrypointModule)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEntrypointModule()
+        {
+        }
+        /**
+         * Optional. The name of the callable object within the `entrypoint_module` to
+         * use as the application If not specified, defaults to "root_agent".
+         *
+         * @param string $entrypointObject
+         */
+        public function setEntrypointObject($entrypointObject)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEntrypointObject()
+        {
+        }
+        /**
+         * Optional. The path to the requirements file, relative to the source root.
+         * If not specified, defaults to "requirements.txt".
+         *
+         * @param string $requirementsFile
+         */
+        public function setRequirementsFile($requirementsFile)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequirementsFile()
+        {
+        }
+        /**
+         * Optional. The version of Python to use. Support version includes 3.9, 3.10,
+         * 3.11, 3.12, 3.13. If not specified, default value is 3.10.
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ReasoningEngineSpecSourceCodeSpecPythonSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntrypointModule()
-    {
-    }
-    /**
-     * Optional. The name of the callable object within the `entrypoint_module` to
-     * use as the application If not specified, defaults to "root_agent".
-     *
-     * @param string $entrypointObject
-     */
-    public function setEntrypointObject($entrypointObject)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEntrypointObject()
-    {
-    }
-    /**
-     * Optional. The path to the requirements file, relative to the source root.
-     * If not specified, defaults to "requirements.txt".
-     *
-     * @param string $requirementsFile
-     */
-    public function setRequirementsFile($requirementsFile)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequirementsFile()
-    {
-    }
-    /**
-     * Optional. The version of Python to use. Support version includes 3.9, 3.10,
-     * 3.11, 3.12, 3.13. If not specified, default value is 3.10.
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ReasoningEngineSpecSourceCodeSpecPythonSpec extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ReasoningEngineSpecSourceCodeSpecPythonSpec
     {
     }
 }

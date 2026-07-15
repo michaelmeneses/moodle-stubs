@@ -21,75 +21,84 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class Grant extends \Google\Collection
-{
-    protected $collection_key = 'appLevelPermissions';
-    /**
-     * The permissions granted to the user for this app.
-     *
-     * @var string[]
-     */
-    public $appLevelPermissions;
-    /**
-     * Required. Resource name for this grant, following the pattern
-     * "developers/{developer}/users/{email}/grants/{package_name}". If this grant
-     * is for a draft app, the app ID will be used in this resource name instead
-     * of the package name.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Immutable. The package name of the app. This will be empty for draft apps.
-     *
-     * @var string
-     */
-    public $packageName;
-    /**
-     * The permissions granted to the user for this app.
-     *
-     * @param string[] $appLevelPermissions
-     */
-    public function setAppLevelPermissions($appLevelPermissions)
+namespace Google\Service\AndroidPublisher {
+    class Grant extends \Google\Collection
     {
+        protected $collection_key = 'appLevelPermissions';
+        /**
+         * The permissions granted to the user for this app.
+         *
+         * @var string[]
+         */
+        public $appLevelPermissions;
+        /**
+         * Required. Resource name for this grant, following the pattern
+         * "developers/{developer}/users/{email}/grants/{package_name}". If this grant
+         * is for a draft app, the app ID will be used in this resource name instead
+         * of the package name.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Immutable. The package name of the app. This will be empty for draft apps.
+         *
+         * @var string
+         */
+        public $packageName;
+        /**
+         * The permissions granted to the user for this app.
+         *
+         * @param string[] $appLevelPermissions
+         */
+        public function setAppLevelPermissions($appLevelPermissions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAppLevelPermissions()
+        {
+        }
+        /**
+         * Required. Resource name for this grant, following the pattern
+         * "developers/{developer}/users/{email}/grants/{package_name}". If this grant
+         * is for a draft app, the app ID will be used in this resource name instead
+         * of the package name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Immutable. The package name of the app. This will be empty for draft apps.
+         *
+         * @param string $packageName
+         */
+        public function setPackageName($packageName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPackageName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\AndroidPublisher\Grant registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAppLevelPermissions()
-    {
-    }
-    /**
-     * Required. Resource name for this grant, following the pattern
-     * "developers/{developer}/users/{email}/grants/{package_name}". If this grant
-     * is for a draft app, the app ID will be used in this resource name instead
-     * of the package name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Immutable. The package name of the app. This will be empty for draft apps.
-     *
-     * @param string $packageName
-     */
-    public function setPackageName($packageName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPackageName()
+    class Google_Service_AndroidPublisher_Grant extends \Google\Service\AndroidPublisher\Grant
     {
     }
 }

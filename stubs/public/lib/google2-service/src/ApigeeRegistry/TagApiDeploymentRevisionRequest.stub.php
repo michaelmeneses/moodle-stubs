@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ApigeeRegistry;
-
-class TagApiDeploymentRevisionRequest extends \Google\Model
-{
-    /**
-     * Required. The tag to apply. The tag should be at most 40 characters, and
-     * match `a-z{3,39}`.
-     *
-     * @var string
-     */
-    public $tag;
-    /**
-     * Required. The tag to apply. The tag should be at most 40 characters, and
-     * match `a-z{3,39}`.
-     *
-     * @param string $tag
-     */
-    public function setTag($tag)
+namespace Google\Service\ApigeeRegistry {
+    class TagApiDeploymentRevisionRequest extends \Google\Model
     {
+        /**
+         * Required. The tag to apply. The tag should be at most 40 characters, and
+         * match `a-z{3,39}`.
+         *
+         * @var string
+         */
+        public $tag;
+        /**
+         * Required. The tag to apply. The tag should be at most 40 characters, and
+         * match `a-z{3,39}`.
+         *
+         * @param string $tag
+         */
+        public function setTag($tag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTag()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ApigeeRegistry\TagApiDeploymentRevisionRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTag()
+    class Google_Service_ApigeeRegistry_TagApiDeploymentRevisionRequest extends \Google\Service\ApigeeRegistry\TagApiDeploymentRevisionRequest
     {
     }
 }

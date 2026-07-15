@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube\Resource;
-
-/**
- * The "liveBroadcasts" collection of methods.
- * Typical usage is:
- *  <code>
- *   $youtubeService = new Google\Service\YouTube(...);
- *   $liveBroadcasts = $youtubeService->liveBroadcasts;
- *  </code>
- */
-class YoutubeV3LiveBroadcasts extends \Google\Service\Resource
-{
+namespace Google\Service\YouTube\Resource {
+    /**
+     * The "liveBroadcasts" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $youtubeService = new Google\Service\YouTube(...);
+     *   $liveBroadcasts = $youtubeService->liveBroadcasts;
+     *  </code>
+     */
+    class YoutubeV3LiveBroadcasts extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\YouTube\Resource\YoutubeV3LiveBroadcasts registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_YouTube_Resource_YoutubeV3LiveBroadcasts extends \Google\Service\YouTube\Resource\YoutubeV3LiveBroadcasts
+    {
+    }
 }

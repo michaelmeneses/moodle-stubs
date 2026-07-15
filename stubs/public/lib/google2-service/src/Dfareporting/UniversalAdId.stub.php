@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class UniversalAdId extends \Google\Model
-{
-    public const REGISTRY_OTHER = 'OTHER';
-    public const REGISTRY_AD_ID_OFFICIAL = 'AD_ID_OFFICIAL';
-    public const REGISTRY_CLEARCAST = 'CLEARCAST';
-    public const REGISTRY_DCM = 'DCM';
-    public const REGISTRY_ARPP = 'ARPP';
-    public const REGISTRY_CUSV = 'CUSV';
-    /**
-     * Registry used for the Ad ID value.
-     *
-     * @var string
-     */
-    public $registry;
-    /**
-     * ID value for this creative. Only alphanumeric characters and the following
-     * symbols are valid: "_/\-". Maximum length is 64 characters. Read only when
-     * registry is DCM.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Registry used for the Ad ID value.
-     *
-     * Accepted values: OTHER, AD_ID_OFFICIAL, CLEARCAST, DCM, ARPP, CUSV
-     *
-     * @param self::REGISTRY_* $registry
-     */
-    public function setRegistry($registry)
+namespace Google\Service\Dfareporting {
+    class UniversalAdId extends \Google\Model
     {
+        public const REGISTRY_OTHER = 'OTHER';
+        public const REGISTRY_AD_ID_OFFICIAL = 'AD_ID_OFFICIAL';
+        public const REGISTRY_CLEARCAST = 'CLEARCAST';
+        public const REGISTRY_DCM = 'DCM';
+        public const REGISTRY_ARPP = 'ARPP';
+        public const REGISTRY_CUSV = 'CUSV';
+        /**
+         * Registry used for the Ad ID value.
+         *
+         * @var string
+         */
+        public $registry;
+        /**
+         * ID value for this creative. Only alphanumeric characters and the following
+         * symbols are valid: "_/\-". Maximum length is 64 characters. Read only when
+         * registry is DCM.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Registry used for the Ad ID value.
+         *
+         * Accepted values: OTHER, AD_ID_OFFICIAL, CLEARCAST, DCM, ARPP, CUSV
+         *
+         * @param self::REGISTRY_* $registry
+         */
+        public function setRegistry($registry)
+        {
+        }
+        /**
+         * @return self::REGISTRY_*
+         */
+        public function getRegistry()
+        {
+        }
+        /**
+         * ID value for this creative. Only alphanumeric characters and the following
+         * symbols are valid: "_/\-". Maximum length is 64 characters. Read only when
+         * registry is DCM.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::REGISTRY_*
+     * Runtime class alias of \Google\Service\Dfareporting\UniversalAdId registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRegistry()
-    {
-    }
-    /**
-     * ID value for this creative. Only alphanumeric characters and the following
-     * symbols are valid: "_/\-". Maximum length is 64 characters. Read only when
-     * registry is DCM.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_Dfareporting_UniversalAdId extends \Google\Service\Dfareporting\UniversalAdId
     {
     }
 }

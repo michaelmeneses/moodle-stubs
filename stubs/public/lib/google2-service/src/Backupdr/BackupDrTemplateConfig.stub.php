@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Backupdr;
-
-class BackupDrTemplateConfig extends \Google\Model
-{
-    /**
-     * Output only. The URI of the BackupDr template resource for the first party
-     * identity users.
-     *
-     * @var string
-     */
-    public $firstPartyManagementUri;
-    /**
-     * Output only. The URI of the BackupDr template resource for the third party
-     * identity users.
-     *
-     * @var string
-     */
-    public $thirdPartyManagementUri;
-    /**
-     * Output only. The URI of the BackupDr template resource for the first party
-     * identity users.
-     *
-     * @param string $firstPartyManagementUri
-     */
-    public function setFirstPartyManagementUri($firstPartyManagementUri)
+namespace Google\Service\Backupdr {
+    class BackupDrTemplateConfig extends \Google\Model
     {
+        /**
+         * Output only. The URI of the BackupDr template resource for the first party
+         * identity users.
+         *
+         * @var string
+         */
+        public $firstPartyManagementUri;
+        /**
+         * Output only. The URI of the BackupDr template resource for the third party
+         * identity users.
+         *
+         * @var string
+         */
+        public $thirdPartyManagementUri;
+        /**
+         * Output only. The URI of the BackupDr template resource for the first party
+         * identity users.
+         *
+         * @param string $firstPartyManagementUri
+         */
+        public function setFirstPartyManagementUri($firstPartyManagementUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFirstPartyManagementUri()
+        {
+        }
+        /**
+         * Output only. The URI of the BackupDr template resource for the third party
+         * identity users.
+         *
+         * @param string $thirdPartyManagementUri
+         */
+        public function setThirdPartyManagementUri($thirdPartyManagementUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getThirdPartyManagementUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Backupdr\BackupDrTemplateConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFirstPartyManagementUri()
-    {
-    }
-    /**
-     * Output only. The URI of the BackupDr template resource for the third party
-     * identity users.
-     *
-     * @param string $thirdPartyManagementUri
-     */
-    public function setThirdPartyManagementUri($thirdPartyManagementUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getThirdPartyManagementUri()
+    class Google_Service_Backupdr_BackupDrTemplateConfig extends \Google\Service\Backupdr\BackupDrTemplateConfig
     {
     }
 }

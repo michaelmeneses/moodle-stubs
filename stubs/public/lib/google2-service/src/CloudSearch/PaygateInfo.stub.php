@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class PaygateInfo extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $callEndingSoonWarningTime;
-    /**
-     * @var string
-     */
-    public $callEndingTime;
-    /**
-     * @var bool
-     */
-    public $showUpgradePromos;
-    /**
-     * @param string
-     */
-    public function setCallEndingSoonWarningTime($callEndingSoonWarningTime)
+namespace Google\Service\CloudSearch {
+    class PaygateInfo extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $callEndingSoonWarningTime;
+        /**
+         * @var string
+         */
+        public $callEndingTime;
+        /**
+         * @var bool
+         */
+        public $showUpgradePromos;
+        /**
+         * @param string
+         */
+        public function setCallEndingSoonWarningTime($callEndingSoonWarningTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCallEndingSoonWarningTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCallEndingTime($callEndingTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCallEndingTime()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setShowUpgradePromos($showUpgradePromos)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getShowUpgradePromos()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\PaygateInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCallEndingSoonWarningTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCallEndingTime($callEndingTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCallEndingTime()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setShowUpgradePromos($showUpgradePromos)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getShowUpgradePromos()
+    class Google_Service_CloudSearch_PaygateInfo extends \Google\Service\CloudSearch\PaygateInfo
     {
     }
 }

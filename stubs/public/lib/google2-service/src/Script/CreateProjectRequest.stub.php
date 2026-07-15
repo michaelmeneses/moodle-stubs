@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Script;
-
-class CreateProjectRequest extends \Google\Model
-{
-    /**
-     * The Drive ID of a parent file that the created script project is bound to.
-     * This is usually the ID of a Google Doc, Google Sheet, Google Form, or
-     * Google Slides file. If not set, a standalone script project is created.
-     *
-     * @var string
-     */
-    public $parentId;
-    /**
-     * The title for the project.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * The Drive ID of a parent file that the created script project is bound to.
-     * This is usually the ID of a Google Doc, Google Sheet, Google Form, or
-     * Google Slides file. If not set, a standalone script project is created.
-     *
-     * @param string $parentId
-     */
-    public function setParentId($parentId)
+namespace Google\Service\Script {
+    class CreateProjectRequest extends \Google\Model
     {
+        /**
+         * The Drive ID of a parent file that the created script project is bound to.
+         * This is usually the ID of a Google Doc, Google Sheet, Google Form, or
+         * Google Slides file. If not set, a standalone script project is created.
+         *
+         * @var string
+         */
+        public $parentId;
+        /**
+         * The title for the project.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * The Drive ID of a parent file that the created script project is bound to.
+         * This is usually the ID of a Google Doc, Google Sheet, Google Form, or
+         * Google Slides file. If not set, a standalone script project is created.
+         *
+         * @param string $parentId
+         */
+        public function setParentId($parentId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParentId()
+        {
+        }
+        /**
+         * The title for the project.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Script\CreateProjectRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getParentId()
-    {
-    }
-    /**
-     * The title for the project.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_Script_CreateProjectRequest extends \Google\Service\Script\CreateProjectRequest
     {
     }
 }

@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\output;
 
+use Mustache\HelperCollection;
+use Mustache\LambdaHelper;
+use Mustache\Tokenizer;
 /**
  * Custom Moodle helper collection for mustache.
  *

@@ -21,106 +21,115 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity;
-
-class TraceSpan extends \Google\Model
-{
-    protected $attributesType = Attributes::class;
-    protected $attributesDataType = '';
-    public $childSpanCount;
-    protected $displayNameType = TruncatableString::class;
-    protected $displayNameDataType = '';
-    public $endTime;
-    public $name;
-    public $parentSpanId;
-    public $sameProcessAsParentSpan;
-    public $spanId;
-    public $spanKind;
-    public $startTime;
-    protected $statusType = GoogleRpcStatus::class;
-    protected $statusDataType = '';
+namespace Google\Service\Networkconnectivity {
+    class TraceSpan extends \Google\Model
+    {
+        protected $attributesType = Attributes::class;
+        protected $attributesDataType = '';
+        public $childSpanCount;
+        protected $displayNameType = TruncatableString::class;
+        protected $displayNameDataType = '';
+        public $endTime;
+        public $name;
+        public $parentSpanId;
+        public $sameProcessAsParentSpan;
+        public $spanId;
+        public $spanKind;
+        public $startTime;
+        protected $statusType = GoogleRpcStatus::class;
+        protected $statusDataType = '';
+        /**
+         * @param Attributes
+         */
+        public function setAttributes(Attributes $attributes)
+        {
+        }
+        /**
+         * @return Attributes
+         */
+        public function getAttributes()
+        {
+        }
+        public function setChildSpanCount($childSpanCount)
+        {
+        }
+        public function getChildSpanCount()
+        {
+        }
+        /**
+         * @param TruncatableString
+         */
+        public function setDisplayName(TruncatableString $displayName)
+        {
+        }
+        /**
+         * @return TruncatableString
+         */
+        public function getDisplayName()
+        {
+        }
+        public function setEndTime($endTime)
+        {
+        }
+        public function getEndTime()
+        {
+        }
+        public function setName($name)
+        {
+        }
+        public function getName()
+        {
+        }
+        public function setParentSpanId($parentSpanId)
+        {
+        }
+        public function getParentSpanId()
+        {
+        }
+        public function setSameProcessAsParentSpan($sameProcessAsParentSpan)
+        {
+        }
+        public function getSameProcessAsParentSpan()
+        {
+        }
+        public function setSpanId($spanId)
+        {
+        }
+        public function getSpanId()
+        {
+        }
+        public function setSpanKind($spanKind)
+        {
+        }
+        public function getSpanKind()
+        {
+        }
+        public function setStartTime($startTime)
+        {
+        }
+        public function getStartTime()
+        {
+        }
+        /**
+         * @param GoogleRpcStatus
+         */
+        public function setStatus(GoogleRpcStatus $status)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus
+         */
+        public function getStatus()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @param Attributes
+     * Runtime class alias of \Google\Service\Networkconnectivity\TraceSpan registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setAttributes(Attributes $attributes)
-    {
-    }
-    /**
-     * @return Attributes
-     */
-    public function getAttributes()
-    {
-    }
-    public function setChildSpanCount($childSpanCount)
-    {
-    }
-    public function getChildSpanCount()
-    {
-    }
-    /**
-     * @param TruncatableString
-     */
-    public function setDisplayName(TruncatableString $displayName)
-    {
-    }
-    /**
-     * @return TruncatableString
-     */
-    public function getDisplayName()
-    {
-    }
-    public function setEndTime($endTime)
-    {
-    }
-    public function getEndTime()
-    {
-    }
-    public function setName($name)
-    {
-    }
-    public function getName()
-    {
-    }
-    public function setParentSpanId($parentSpanId)
-    {
-    }
-    public function getParentSpanId()
-    {
-    }
-    public function setSameProcessAsParentSpan($sameProcessAsParentSpan)
-    {
-    }
-    public function getSameProcessAsParentSpan()
-    {
-    }
-    public function setSpanId($spanId)
-    {
-    }
-    public function getSpanId()
-    {
-    }
-    public function setSpanKind($spanKind)
-    {
-    }
-    public function getSpanKind()
-    {
-    }
-    public function setStartTime($startTime)
-    {
-    }
-    public function getStartTime()
-    {
-    }
-    /**
-     * @param GoogleRpcStatus
-     */
-    public function setStatus(GoogleRpcStatus $status)
-    {
-    }
-    /**
-     * @return GoogleRpcStatus
-     */
-    public function getStatus()
+    class Google_Service_Networkconnectivity_TraceSpan extends \Google\Service\Networkconnectivity\TraceSpan
     {
     }
 }

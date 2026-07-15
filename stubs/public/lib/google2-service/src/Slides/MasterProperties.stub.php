@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides;
-
-class MasterProperties extends \Google\Model
-{
-    /**
-     * The human-readable name of the master.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The human-readable name of the master.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\Slides {
+    class MasterProperties extends \Google\Model
     {
+        /**
+         * The human-readable name of the master.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The human-readable name of the master.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Slides\MasterProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
+    class Google_Service_Slides_MasterProperties extends \Google\Service\Slides\MasterProperties
     {
     }
 }

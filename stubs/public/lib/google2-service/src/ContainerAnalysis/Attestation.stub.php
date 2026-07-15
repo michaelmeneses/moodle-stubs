@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class Attestation extends \Google\Model
-{
-    protected $genericSignedAttestationType = GenericSignedAttestation::class;
-    protected $genericSignedAttestationDataType = '';
-    protected $pgpSignedAttestationType = PgpSignedAttestation::class;
-    protected $pgpSignedAttestationDataType = '';
-    /**
-     * @param GenericSignedAttestation
-     */
-    public function setGenericSignedAttestation(GenericSignedAttestation $genericSignedAttestation)
+namespace Google\Service\ContainerAnalysis {
+    class Attestation extends \Google\Model
     {
+        protected $genericSignedAttestationType = GenericSignedAttestation::class;
+        protected $genericSignedAttestationDataType = '';
+        protected $pgpSignedAttestationType = PgpSignedAttestation::class;
+        protected $pgpSignedAttestationDataType = '';
+        /**
+         * @param GenericSignedAttestation
+         */
+        public function setGenericSignedAttestation(GenericSignedAttestation $genericSignedAttestation)
+        {
+        }
+        /**
+         * @return GenericSignedAttestation
+         */
+        public function getGenericSignedAttestation()
+        {
+        }
+        /**
+         * @param PgpSignedAttestation
+         */
+        public function setPgpSignedAttestation(PgpSignedAttestation $pgpSignedAttestation)
+        {
+        }
+        /**
+         * @return PgpSignedAttestation
+         */
+        public function getPgpSignedAttestation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GenericSignedAttestation
+     * Runtime class alias of \Google\Service\ContainerAnalysis\Attestation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGenericSignedAttestation()
-    {
-    }
-    /**
-     * @param PgpSignedAttestation
-     */
-    public function setPgpSignedAttestation(PgpSignedAttestation $pgpSignedAttestation)
-    {
-    }
-    /**
-     * @return PgpSignedAttestation
-     */
-    public function getPgpSignedAttestation()
+    class Google_Service_ContainerAnalysis_Attestation extends \Google\Service\ContainerAnalysis\Attestation
     {
     }
 }

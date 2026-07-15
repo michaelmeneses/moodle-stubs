@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyerII;
-
-class PlatformContext extends \Google\Collection
-{
-    protected $collection_key = 'platforms';
-    /**
-     * The platforms this restriction applies to.
-     *
-     * @var string[]
-     */
-    public $platforms;
-    /**
-     * The platforms this restriction applies to.
-     *
-     * @param string[] $platforms
-     */
-    public function setPlatforms($platforms)
+namespace Google\Service\AdExchangeBuyerII {
+    class PlatformContext extends \Google\Collection
     {
+        protected $collection_key = 'platforms';
+        /**
+         * The platforms this restriction applies to.
+         *
+         * @var string[]
+         */
+        public $platforms;
+        /**
+         * The platforms this restriction applies to.
+         *
+         * @param string[] $platforms
+         */
+        public function setPlatforms($platforms)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPlatforms()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\AdExchangeBuyerII\PlatformContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPlatforms()
+    class Google_Service_AdExchangeBuyerII_PlatformContext extends \Google\Service\AdExchangeBuyerII\PlatformContext
     {
     }
 }

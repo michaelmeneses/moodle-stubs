@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AirQuality;
-
-class LookupForecastResponse extends \Google\Collection
-{
-    protected $collection_key = 'hourlyForecasts';
-    protected $hourlyForecastsType = HourlyForecast::class;
-    protected $hourlyForecastsDataType = 'array';
-    /**
-     * Optional. The token to retrieve the next page.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Optional. The ISO_3166-1 alpha-2 code of the country/region corresponding
-     * to the location provided in the request. This field might be omitted from
-     * the response if the location provided in the request resides in a disputed
-     * territory.
-     *
-     * @var string
-     */
-    public $regionCode;
-    /**
-     * Optional. Contains the air quality information for each hour in the
-     * requested range. For example, if the request is for 48 hours of forecast
-     * there will be 48 elements of hourly forecasts.
-     *
-     * @param HourlyForecast[] $hourlyForecasts
-     */
-    public function setHourlyForecasts($hourlyForecasts)
+namespace Google\Service\AirQuality {
+    class LookupForecastResponse extends \Google\Collection
     {
+        protected $collection_key = 'hourlyForecasts';
+        protected $hourlyForecastsType = HourlyForecast::class;
+        protected $hourlyForecastsDataType = 'array';
+        /**
+         * Optional. The token to retrieve the next page.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Optional. The ISO_3166-1 alpha-2 code of the country/region corresponding
+         * to the location provided in the request. This field might be omitted from
+         * the response if the location provided in the request resides in a disputed
+         * territory.
+         *
+         * @var string
+         */
+        public $regionCode;
+        /**
+         * Optional. Contains the air quality information for each hour in the
+         * requested range. For example, if the request is for 48 hours of forecast
+         * there will be 48 elements of hourly forecasts.
+         *
+         * @param HourlyForecast[] $hourlyForecasts
+         */
+        public function setHourlyForecasts($hourlyForecasts)
+        {
+        }
+        /**
+         * @return HourlyForecast[]
+         */
+        public function getHourlyForecasts()
+        {
+        }
+        /**
+         * Optional. The token to retrieve the next page.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Optional. The ISO_3166-1 alpha-2 code of the country/region corresponding
+         * to the location provided in the request. This field might be omitted from
+         * the response if the location provided in the request resides in a disputed
+         * territory.
+         *
+         * @param string $regionCode
+         */
+        public function setRegionCode($regionCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegionCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return HourlyForecast[]
+     * Runtime class alias of \Google\Service\AirQuality\LookupForecastResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHourlyForecasts()
-    {
-    }
-    /**
-     * Optional. The token to retrieve the next page.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Optional. The ISO_3166-1 alpha-2 code of the country/region corresponding
-     * to the location provided in the request. This field might be omitted from
-     * the response if the location provided in the request resides in a disputed
-     * territory.
-     *
-     * @param string $regionCode
-     */
-    public function setRegionCode($regionCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegionCode()
+    class Google_Service_AirQuality_LookupForecastResponse extends \Google\Service\AirQuality\LookupForecastResponse
     {
     }
 }

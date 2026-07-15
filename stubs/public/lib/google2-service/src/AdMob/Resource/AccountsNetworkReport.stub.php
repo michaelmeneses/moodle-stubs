@@ -21,31 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdMob\Resource;
-
-/**
- * The "networkReport" collection of methods.
- * Typical usage is:
- *  <code>
- *   $admobService = new Google\Service\AdMob(...);
- *   $networkReport = $admobService->accounts_networkReport;
- *  </code>
- */
-class AccountsNetworkReport extends \Google\Service\Resource
-{
+namespace Google\Service\AdMob\Resource {
+    use Google\Service\AdMob\GenerateNetworkReportRequest;
+    use Google\Service\AdMob\GenerateNetworkReportResponse;
     /**
-     * Generates an AdMob Network report based on the provided report specification.
-     * Returns result of a server-side streaming RPC. The result is returned in a
-     * sequence of responses. (networkReport.generate)
-     *
-     * @param string $parent Resource name of the account to generate the report
-     * for. Example: accounts/pub-9876543210987654
-     * @param GenerateNetworkReportRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GenerateNetworkReportResponse
-     * @throws \Google\Service\Exception
+     * The "networkReport" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $admobService = new Google\Service\AdMob(...);
+     *   $networkReport = $admobService->accounts_networkReport;
+     *  </code>
      */
-    public function generate($parent, GenerateNetworkReportRequest $postBody, $optParams = [])
+    class AccountsNetworkReport extends \Google\Service\Resource
+    {
+        /**
+         * Generates an AdMob Network report based on the provided report specification.
+         * Returns result of a server-side streaming RPC. The result is returned in a
+         * sequence of responses. (networkReport.generate)
+         *
+         * @param string $parent Resource name of the account to generate the report
+         * for. Example: accounts/pub-9876543210987654
+         * @param GenerateNetworkReportRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GenerateNetworkReportResponse
+         * @throws \Google\Service\Exception
+         */
+        public function generate($parent, GenerateNetworkReportRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AdMob\Resource\AccountsNetworkReport registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AdMob_Resource_AccountsNetworkReport extends \Google\Service\AdMob\Resource\AccountsNetworkReport
     {
     }
 }

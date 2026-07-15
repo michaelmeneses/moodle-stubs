@@ -21,123 +21,132 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaPredictPredictionTextExtractionPredictionResult extends \Google\Collection
-{
-    protected $collection_key = 'textSegmentStartOffsets';
-    /**
-     * The Model's confidences in correctness of the predicted IDs, higher value
-     * means higher confidence. Order matches the Ids.
-     *
-     * @var float[]
-     */
-    public $confidences;
-    /**
-     * The display names of the AnnotationSpecs that had been identified, order
-     * matches the IDs.
-     *
-     * @var string[]
-     */
-    public $displayNames;
-    /**
-     * The resource IDs of the AnnotationSpecs that had been identified, ordered
-     * by the confidence score descendingly.
-     *
-     * @var string[]
-     */
-    public $ids;
-    /**
-     * The end offsets, inclusive, of the text segment in which the AnnotationSpec
-     * has been identified. Expressed as a zero-based number of characters as
-     * measured from the start of the text snippet.
-     *
-     * @var string[]
-     */
-    public $textSegmentEndOffsets;
-    /**
-     * The start offsets, inclusive, of the text segment in which the
-     * AnnotationSpec has been identified. Expressed as a zero-based number of
-     * characters as measured from the start of the text snippet.
-     *
-     * @var string[]
-     */
-    public $textSegmentStartOffsets;
-    /**
-     * The Model's confidences in correctness of the predicted IDs, higher value
-     * means higher confidence. Order matches the Ids.
-     *
-     * @param float[] $confidences
-     */
-    public function setConfidences($confidences)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaPredictPredictionTextExtractionPredictionResult extends \Google\Collection
     {
+        protected $collection_key = 'textSegmentStartOffsets';
+        /**
+         * The Model's confidences in correctness of the predicted IDs, higher value
+         * means higher confidence. Order matches the Ids.
+         *
+         * @var float[]
+         */
+        public $confidences;
+        /**
+         * The display names of the AnnotationSpecs that had been identified, order
+         * matches the IDs.
+         *
+         * @var string[]
+         */
+        public $displayNames;
+        /**
+         * The resource IDs of the AnnotationSpecs that had been identified, ordered
+         * by the confidence score descendingly.
+         *
+         * @var string[]
+         */
+        public $ids;
+        /**
+         * The end offsets, inclusive, of the text segment in which the AnnotationSpec
+         * has been identified. Expressed as a zero-based number of characters as
+         * measured from the start of the text snippet.
+         *
+         * @var string[]
+         */
+        public $textSegmentEndOffsets;
+        /**
+         * The start offsets, inclusive, of the text segment in which the
+         * AnnotationSpec has been identified. Expressed as a zero-based number of
+         * characters as measured from the start of the text snippet.
+         *
+         * @var string[]
+         */
+        public $textSegmentStartOffsets;
+        /**
+         * The Model's confidences in correctness of the predicted IDs, higher value
+         * means higher confidence. Order matches the Ids.
+         *
+         * @param float[] $confidences
+         */
+        public function setConfidences($confidences)
+        {
+        }
+        /**
+         * @return float[]
+         */
+        public function getConfidences()
+        {
+        }
+        /**
+         * The display names of the AnnotationSpecs that had been identified, order
+         * matches the IDs.
+         *
+         * @param string[] $displayNames
+         */
+        public function setDisplayNames($displayNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDisplayNames()
+        {
+        }
+        /**
+         * The resource IDs of the AnnotationSpecs that had been identified, ordered
+         * by the confidence score descendingly.
+         *
+         * @param string[] $ids
+         */
+        public function setIds($ids)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getIds()
+        {
+        }
+        /**
+         * The end offsets, inclusive, of the text segment in which the AnnotationSpec
+         * has been identified. Expressed as a zero-based number of characters as
+         * measured from the start of the text snippet.
+         *
+         * @param string[] $textSegmentEndOffsets
+         */
+        public function setTextSegmentEndOffsets($textSegmentEndOffsets)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTextSegmentEndOffsets()
+        {
+        }
+        /**
+         * The start offsets, inclusive, of the text segment in which the
+         * AnnotationSpec has been identified. Expressed as a zero-based number of
+         * characters as measured from the start of the text snippet.
+         *
+         * @param string[] $textSegmentStartOffsets
+         */
+        public function setTextSegmentStartOffsets($textSegmentStartOffsets)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTextSegmentStartOffsets()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaPredictPredictionTextExtractionPredictionResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfidences()
-    {
-    }
-    /**
-     * The display names of the AnnotationSpecs that had been identified, order
-     * matches the IDs.
-     *
-     * @param string[] $displayNames
-     */
-    public function setDisplayNames($displayNames)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getDisplayNames()
-    {
-    }
-    /**
-     * The resource IDs of the AnnotationSpecs that had been identified, ordered
-     * by the confidence score descendingly.
-     *
-     * @param string[] $ids
-     */
-    public function setIds($ids)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getIds()
-    {
-    }
-    /**
-     * The end offsets, inclusive, of the text segment in which the AnnotationSpec
-     * has been identified. Expressed as a zero-based number of characters as
-     * measured from the start of the text snippet.
-     *
-     * @param string[] $textSegmentEndOffsets
-     */
-    public function setTextSegmentEndOffsets($textSegmentEndOffsets)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTextSegmentEndOffsets()
-    {
-    }
-    /**
-     * The start offsets, inclusive, of the text segment in which the
-     * AnnotationSpec has been identified. Expressed as a zero-based number of
-     * characters as measured from the start of the text snippet.
-     *
-     * @param string[] $textSegmentStartOffsets
-     */
-    public function setTextSegmentStartOffsets($textSegmentStartOffsets)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTextSegmentStartOffsets()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaPredictPredictionTextExtractionPredictionResult extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaPredictPredictionTextExtractionPredictionResult
     {
     }
 }

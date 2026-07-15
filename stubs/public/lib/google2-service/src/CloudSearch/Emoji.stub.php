@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class Emoji extends \Google\Model
-{
-    protected $customEmojiType = CustomEmoji::class;
-    protected $customEmojiDataType = '';
-    /**
-     * @var string
-     */
-    public $unicode;
-    /**
-     * @param CustomEmoji
-     */
-    public function setCustomEmoji(CustomEmoji $customEmoji)
+namespace Google\Service\CloudSearch {
+    class Emoji extends \Google\Model
     {
+        protected $customEmojiType = CustomEmoji::class;
+        protected $customEmojiDataType = '';
+        /**
+         * @var string
+         */
+        public $unicode;
+        /**
+         * @param CustomEmoji
+         */
+        public function setCustomEmoji(CustomEmoji $customEmoji)
+        {
+        }
+        /**
+         * @return CustomEmoji
+         */
+        public function getCustomEmoji()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUnicode($unicode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUnicode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CustomEmoji
+     * Runtime class alias of \Google\Service\CloudSearch\Emoji registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomEmoji()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUnicode($unicode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUnicode()
+    class Google_Service_CloudSearch_Emoji extends \Google\Service\CloudSearch\Emoji
     {
     }
 }

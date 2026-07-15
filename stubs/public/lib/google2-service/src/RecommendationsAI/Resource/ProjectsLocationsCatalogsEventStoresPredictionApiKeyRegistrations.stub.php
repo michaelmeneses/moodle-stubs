@@ -21,64 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecommendationsAI\Resource;
-
-/**
- * The "predictionApiKeyRegistrations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $recommendationengineService = new Google\Service\RecommendationsAI(...);
- *   $predictionApiKeyRegistrations = $recommendationengineService->projects_locations_catalogs_eventStores_predictionApiKeyRegistrations;
- *  </code>
- */
-class ProjectsLocationsCatalogsEventStoresPredictionApiKeyRegistrations extends \Google\Service\Resource
-{
+namespace Google\Service\RecommendationsAI\Resource {
+    use Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1CreatePredictionApiKeyRegistrationRequest;
+    use Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1ListPredictionApiKeyRegistrationsResponse;
+    use Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1PredictionApiKeyRegistration;
+    use Google\Service\RecommendationsAI\GoogleProtobufEmpty;
     /**
-     * Register an API key for use with predict method.
-     * (predictionApiKeyRegistrations.create)
-     *
-     * @param string $parent Required. The parent resource path. `projects/locations
-     * /global/catalogs/default_catalog/eventStores/default_event_store`.
-     * @param GoogleCloudRecommendationengineV1beta1CreatePredictionApiKeyRegistrationRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudRecommendationengineV1beta1PredictionApiKeyRegistration
-     * @throws \Google\Service\Exception
+     * The "predictionApiKeyRegistrations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $recommendationengineService = new Google\Service\RecommendationsAI(...);
+     *   $predictionApiKeyRegistrations = $recommendationengineService->projects_locations_catalogs_eventStores_predictionApiKeyRegistrations;
+     *  </code>
      */
-    public function create($parent, GoogleCloudRecommendationengineV1beta1CreatePredictionApiKeyRegistrationRequest $postBody, $optParams = [])
+    class ProjectsLocationsCatalogsEventStoresPredictionApiKeyRegistrations extends \Google\Service\Resource
     {
+        /**
+         * Register an API key for use with predict method.
+         * (predictionApiKeyRegistrations.create)
+         *
+         * @param string $parent Required. The parent resource path. `projects/locations
+         * /global/catalogs/default_catalog/eventStores/default_event_store`.
+         * @param GoogleCloudRecommendationengineV1beta1CreatePredictionApiKeyRegistrationRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudRecommendationengineV1beta1PredictionApiKeyRegistration
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, GoogleCloudRecommendationengineV1beta1CreatePredictionApiKeyRegistrationRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Unregister an apiKey from using for predict method.
+         * (predictionApiKeyRegistrations.delete)
+         *
+         * @param string $name Required. The API key to unregister including full
+         * resource path. `projects/locations/global/catalogs/default_catalog/eventStore
+         * s/default_event_store/predictionApiKeyRegistrations/`
+         * @param array $optParams Optional parameters.
+         * @return GoogleProtobufEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * List the registered apiKeys for use with predict method. (predictionApiKeyReg
+         * istrations.listProjectsLocationsCatalogsEventStoresPredictionApiKeyRegistrati
+         * ons)
+         *
+         * @param string $parent Required. The parent placement resource name such as `p
+         * rojects/1234/locations/global/catalogs/default_catalog/eventStores/default_ev
+         * ent_store`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Optional. Maximum number of results to return per
+         * page. If unset, the service will choose a reasonable default.
+         * @opt_param string pageToken Optional. The previous
+         * `ListPredictionApiKeyRegistration.nextPageToken`.
+         * @return GoogleCloudRecommendationengineV1beta1ListPredictionApiKeyRegistrationsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsCatalogsEventStoresPredictionApiKeyRegistrations($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Unregister an apiKey from using for predict method.
-     * (predictionApiKeyRegistrations.delete)
-     *
-     * @param string $name Required. The API key to unregister including full
-     * resource path. `projects/locations/global/catalogs/default_catalog/eventStore
-     * s/default_event_store/predictionApiKeyRegistrations/`
-     * @param array $optParams Optional parameters.
-     * @return GoogleProtobufEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\RecommendationsAI\Resource\ProjectsLocationsCatalogsEventStoresPredictionApiKeyRegistrations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * List the registered apiKeys for use with predict method. (predictionApiKeyReg
-     * istrations.listProjectsLocationsCatalogsEventStoresPredictionApiKeyRegistrati
-     * ons)
-     *
-     * @param string $parent Required. The parent placement resource name such as `p
-     * rojects/1234/locations/global/catalogs/default_catalog/eventStores/default_ev
-     * ent_store`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Optional. Maximum number of results to return per
-     * page. If unset, the service will choose a reasonable default.
-     * @opt_param string pageToken Optional. The previous
-     * `ListPredictionApiKeyRegistration.nextPageToken`.
-     * @return GoogleCloudRecommendationengineV1beta1ListPredictionApiKeyRegistrationsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsCatalogsEventStoresPredictionApiKeyRegistrations($parent, $optParams = [])
+    class Google_Service_RecommendationsAI_Resource_ProjectsLocationsCatalogsEventStoresPredictionApiKeyRegistrations extends \Google\Service\RecommendationsAI\Resource\ProjectsLocationsCatalogsEventStoresPredictionApiKeyRegistrations
     {
     }
 }

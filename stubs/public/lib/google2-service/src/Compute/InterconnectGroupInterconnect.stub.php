@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InterconnectGroupInterconnect extends \Google\Model
-{
-    /**
-     * The URL of an Interconnect in this group. All Interconnects in the group
-     * are unique.
-     *
-     * @var string
-     */
-    public $interconnect;
-    /**
-     * The URL of an Interconnect in this group. All Interconnects in the group
-     * are unique.
-     *
-     * @param string $interconnect
-     */
-    public function setInterconnect($interconnect)
+namespace Google\Service\Compute {
+    class InterconnectGroupInterconnect extends \Google\Model
     {
+        /**
+         * The URL of an Interconnect in this group. All Interconnects in the group
+         * are unique.
+         *
+         * @var string
+         */
+        public $interconnect;
+        /**
+         * The URL of an Interconnect in this group. All Interconnects in the group
+         * are unique.
+         *
+         * @param string $interconnect
+         */
+        public function setInterconnect($interconnect)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInterconnect()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\InterconnectGroupInterconnect registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInterconnect()
+    class Google_Service_Compute_InterconnectGroupInterconnect extends \Google\Service\Compute\InterconnectGroupInterconnect
     {
     }
 }

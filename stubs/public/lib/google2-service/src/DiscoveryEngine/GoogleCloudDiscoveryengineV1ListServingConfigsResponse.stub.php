@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1ListServingConfigsResponse extends \Google\Collection
-{
-    protected $collection_key = 'servingConfigs';
-    /**
-     * Pagination token, if not returned indicates the last page.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $servingConfigsType = GoogleCloudDiscoveryengineV1ServingConfig::class;
-    protected $servingConfigsDataType = 'array';
-    /**
-     * Pagination token, if not returned indicates the last page.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1ListServingConfigsResponse extends \Google\Collection
     {
+        protected $collection_key = 'servingConfigs';
+        /**
+         * Pagination token, if not returned indicates the last page.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $servingConfigsType = GoogleCloudDiscoveryengineV1ServingConfig::class;
+        protected $servingConfigsDataType = 'array';
+        /**
+         * Pagination token, if not returned indicates the last page.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * All the ServingConfigs for a given dataStore.
+         *
+         * @param GoogleCloudDiscoveryengineV1ServingConfig[] $servingConfigs
+         */
+        public function setServingConfigs($servingConfigs)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1ServingConfig[]
+         */
+        public function getServingConfigs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ListServingConfigsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * All the ServingConfigs for a given dataStore.
-     *
-     * @param GoogleCloudDiscoveryengineV1ServingConfig[] $servingConfigs
-     */
-    public function setServingConfigs($servingConfigs)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1ServingConfig[]
-     */
-    public function getServingConfigs()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1ListServingConfigsResponse extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ListServingConfigsResponse
     {
     }
 }

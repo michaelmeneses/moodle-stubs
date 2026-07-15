@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storage;
-
-class ObjectAccessControls extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    protected $itemsType = ObjectAccessControl::class;
-    protected $itemsDataType = 'array';
-    /**
-     * The kind of item this is. For lists of object access control entries, this
-     * is always storage#objectAccessControls.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The list of items.
-     *
-     * @param ObjectAccessControl[] $items
-     */
-    public function setItems($items)
+namespace Google\Service\Storage {
+    class ObjectAccessControls extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        protected $itemsType = ObjectAccessControl::class;
+        protected $itemsDataType = 'array';
+        /**
+         * The kind of item this is. For lists of object access control entries, this
+         * is always storage#objectAccessControls.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The list of items.
+         *
+         * @param ObjectAccessControl[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return ObjectAccessControl[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * The kind of item this is. For lists of object access control entries, this
+         * is always storage#objectAccessControls.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ObjectAccessControl[]
+     * Runtime class alias of \Google\Service\Storage\ObjectAccessControls registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItems()
-    {
-    }
-    /**
-     * The kind of item this is. For lists of object access control entries, this
-     * is always storage#objectAccessControls.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_Storage_ObjectAccessControls extends \Google\Service\Storage\ObjectAccessControls
     {
     }
 }

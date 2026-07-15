@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2ListGenerativeQuestionConfigsResponse extends \Google\Collection
-{
-    protected $collection_key = 'generativeQuestionConfigs';
-    protected $generativeQuestionConfigsType = GoogleCloudRetailV2GenerativeQuestionConfig::class;
-    protected $generativeQuestionConfigsDataType = 'array';
-    /**
-     * All the questions for a given catalog.
-     *
-     * @param GoogleCloudRetailV2GenerativeQuestionConfig[] $generativeQuestionConfigs
-     */
-    public function setGenerativeQuestionConfigs($generativeQuestionConfigs)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2ListGenerativeQuestionConfigsResponse extends \Google\Collection
     {
+        protected $collection_key = 'generativeQuestionConfigs';
+        protected $generativeQuestionConfigsType = GoogleCloudRetailV2GenerativeQuestionConfig::class;
+        protected $generativeQuestionConfigsDataType = 'array';
+        /**
+         * All the questions for a given catalog.
+         *
+         * @param GoogleCloudRetailV2GenerativeQuestionConfig[] $generativeQuestionConfigs
+         */
+        public function setGenerativeQuestionConfigs($generativeQuestionConfigs)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2GenerativeQuestionConfig[]
+         */
+        public function getGenerativeQuestionConfigs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRetailV2GenerativeQuestionConfig[]
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2ListGenerativeQuestionConfigsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGenerativeQuestionConfigs()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2ListGenerativeQuestionConfigsResponse extends \Google\Service\CloudRetail\GoogleCloudRetailV2ListGenerativeQuestionConfigsResponse
     {
     }
 }

@@ -21,83 +21,92 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class GoogleCloudAssetV1AnalyzeOrgPolicyGovernedAssetsResponseGovernedAsset extends \Google\Collection
-{
-    protected $collection_key = 'policyBundle';
-    protected $consolidatedPolicyType = AnalyzerOrgPolicy::class;
-    protected $consolidatedPolicyDataType = '';
-    protected $governedIamPolicyType = GoogleCloudAssetV1AnalyzeOrgPolicyGovernedAssetsResponseGovernedIamPolicy::class;
-    protected $governedIamPolicyDataType = '';
-    protected $governedResourceType = GoogleCloudAssetV1AnalyzeOrgPolicyGovernedAssetsResponseGovernedResource::class;
-    protected $governedResourceDataType = '';
-    protected $policyBundleType = AnalyzerOrgPolicy::class;
-    protected $policyBundleDataType = 'array';
-    /**
-     * The consolidated policy for the analyzed asset. The consolidated policy is
-     * computed by merging and evaluating
-     * AnalyzeOrgPolicyGovernedAssetsResponse.GovernedAsset.policy_bundle. The
-     * evaluation will respect the organization policy [hierarchy
-     * rules](https://cloud.google.com/resource-manager/docs/organization-
-     * policy/understanding-hierarchy).
-     *
-     * @param AnalyzerOrgPolicy $consolidatedPolicy
-     */
-    public function setConsolidatedPolicy(AnalyzerOrgPolicy $consolidatedPolicy)
+namespace Google\Service\CloudAsset {
+    class GoogleCloudAssetV1AnalyzeOrgPolicyGovernedAssetsResponseGovernedAsset extends \Google\Collection
     {
+        protected $collection_key = 'policyBundle';
+        protected $consolidatedPolicyType = AnalyzerOrgPolicy::class;
+        protected $consolidatedPolicyDataType = '';
+        protected $governedIamPolicyType = GoogleCloudAssetV1AnalyzeOrgPolicyGovernedAssetsResponseGovernedIamPolicy::class;
+        protected $governedIamPolicyDataType = '';
+        protected $governedResourceType = GoogleCloudAssetV1AnalyzeOrgPolicyGovernedAssetsResponseGovernedResource::class;
+        protected $governedResourceDataType = '';
+        protected $policyBundleType = AnalyzerOrgPolicy::class;
+        protected $policyBundleDataType = 'array';
+        /**
+         * The consolidated policy for the analyzed asset. The consolidated policy is
+         * computed by merging and evaluating
+         * AnalyzeOrgPolicyGovernedAssetsResponse.GovernedAsset.policy_bundle. The
+         * evaluation will respect the organization policy [hierarchy
+         * rules](https://cloud.google.com/resource-manager/docs/organization-
+         * policy/understanding-hierarchy).
+         *
+         * @param AnalyzerOrgPolicy $consolidatedPolicy
+         */
+        public function setConsolidatedPolicy(AnalyzerOrgPolicy $consolidatedPolicy)
+        {
+        }
+        /**
+         * @return AnalyzerOrgPolicy
+         */
+        public function getConsolidatedPolicy()
+        {
+        }
+        /**
+         * An IAM policy governed by the organization policies of the
+         * AnalyzeOrgPolicyGovernedAssetsRequest.constraint.
+         *
+         * @param GoogleCloudAssetV1AnalyzeOrgPolicyGovernedAssetsResponseGovernedIamPolicy $governedIamPolicy
+         */
+        public function setGovernedIamPolicy(GoogleCloudAssetV1AnalyzeOrgPolicyGovernedAssetsResponseGovernedIamPolicy $governedIamPolicy)
+        {
+        }
+        /**
+         * @return GoogleCloudAssetV1AnalyzeOrgPolicyGovernedAssetsResponseGovernedIamPolicy
+         */
+        public function getGovernedIamPolicy()
+        {
+        }
+        /**
+         * A Google Cloud resource governed by the organization policies of the
+         * AnalyzeOrgPolicyGovernedAssetsRequest.constraint.
+         *
+         * @param GoogleCloudAssetV1AnalyzeOrgPolicyGovernedAssetsResponseGovernedResource $governedResource
+         */
+        public function setGovernedResource(GoogleCloudAssetV1AnalyzeOrgPolicyGovernedAssetsResponseGovernedResource $governedResource)
+        {
+        }
+        /**
+         * @return GoogleCloudAssetV1AnalyzeOrgPolicyGovernedAssetsResponseGovernedResource
+         */
+        public function getGovernedResource()
+        {
+        }
+        /**
+         * The ordered list of all organization policies from the
+         * consolidated_policy.attached_resource to the scope specified in the
+         * request. If the constraint is defined with default policy, it will also
+         * appear in the list.
+         *
+         * @param AnalyzerOrgPolicy[] $policyBundle
+         */
+        public function setPolicyBundle($policyBundle)
+        {
+        }
+        /**
+         * @return AnalyzerOrgPolicy[]
+         */
+        public function getPolicyBundle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AnalyzerOrgPolicy
+     * Runtime class alias of \Google\Service\CloudAsset\GoogleCloudAssetV1AnalyzeOrgPolicyGovernedAssetsResponseGovernedAsset registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConsolidatedPolicy()
-    {
-    }
-    /**
-     * An IAM policy governed by the organization policies of the
-     * AnalyzeOrgPolicyGovernedAssetsRequest.constraint.
-     *
-     * @param GoogleCloudAssetV1AnalyzeOrgPolicyGovernedAssetsResponseGovernedIamPolicy $governedIamPolicy
-     */
-    public function setGovernedIamPolicy(GoogleCloudAssetV1AnalyzeOrgPolicyGovernedAssetsResponseGovernedIamPolicy $governedIamPolicy)
-    {
-    }
-    /**
-     * @return GoogleCloudAssetV1AnalyzeOrgPolicyGovernedAssetsResponseGovernedIamPolicy
-     */
-    public function getGovernedIamPolicy()
-    {
-    }
-    /**
-     * A Google Cloud resource governed by the organization policies of the
-     * AnalyzeOrgPolicyGovernedAssetsRequest.constraint.
-     *
-     * @param GoogleCloudAssetV1AnalyzeOrgPolicyGovernedAssetsResponseGovernedResource $governedResource
-     */
-    public function setGovernedResource(GoogleCloudAssetV1AnalyzeOrgPolicyGovernedAssetsResponseGovernedResource $governedResource)
-    {
-    }
-    /**
-     * @return GoogleCloudAssetV1AnalyzeOrgPolicyGovernedAssetsResponseGovernedResource
-     */
-    public function getGovernedResource()
-    {
-    }
-    /**
-     * The ordered list of all organization policies from the
-     * consolidated_policy.attached_resource to the scope specified in the
-     * request. If the constraint is defined with default policy, it will also
-     * appear in the list.
-     *
-     * @param AnalyzerOrgPolicy[] $policyBundle
-     */
-    public function setPolicyBundle($policyBundle)
-    {
-    }
-    /**
-     * @return AnalyzerOrgPolicy[]
-     */
-    public function getPolicyBundle()
+    class Google_Service_CloudAsset_GoogleCloudAssetV1AnalyzeOrgPolicyGovernedAssetsResponseGovernedAsset extends \Google\Service\CloudAsset\GoogleCloudAssetV1AnalyzeOrgPolicyGovernedAssetsResponseGovernedAsset
     {
     }
 }

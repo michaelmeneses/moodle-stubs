@@ -21,100 +21,109 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2IntentMessageMediaContentResponseMediaObject extends \Google\Model
-{
-    /**
-     * Required. Url where the media is stored.
-     *
-     * @var string
-     */
-    public $contentUrl;
-    /**
-     * Optional. Description of media card.
-     *
-     * @var string
-     */
-    public $description;
-    protected $iconType = GoogleCloudDialogflowV2IntentMessageImage::class;
-    protected $iconDataType = '';
-    protected $largeImageType = GoogleCloudDialogflowV2IntentMessageImage::class;
-    protected $largeImageDataType = '';
-    /**
-     * Required. Name of media card.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. Url where the media is stored.
-     *
-     * @param string $contentUrl
-     */
-    public function setContentUrl($contentUrl)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2IntentMessageMediaContentResponseMediaObject extends \Google\Model
     {
+        /**
+         * Required. Url where the media is stored.
+         *
+         * @var string
+         */
+        public $contentUrl;
+        /**
+         * Optional. Description of media card.
+         *
+         * @var string
+         */
+        public $description;
+        protected $iconType = GoogleCloudDialogflowV2IntentMessageImage::class;
+        protected $iconDataType = '';
+        protected $largeImageType = GoogleCloudDialogflowV2IntentMessageImage::class;
+        protected $largeImageDataType = '';
+        /**
+         * Required. Name of media card.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. Url where the media is stored.
+         *
+         * @param string $contentUrl
+         */
+        public function setContentUrl($contentUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContentUrl()
+        {
+        }
+        /**
+         * Optional. Description of media card.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Optional. Icon to display above media content.
+         *
+         * @param GoogleCloudDialogflowV2IntentMessageImage $icon
+         */
+        public function setIcon(GoogleCloudDialogflowV2IntentMessageImage $icon)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2IntentMessageImage
+         */
+        public function getIcon()
+        {
+        }
+        /**
+         * Optional. Image to display above media content.
+         *
+         * @param GoogleCloudDialogflowV2IntentMessageImage $largeImage
+         */
+        public function setLargeImage(GoogleCloudDialogflowV2IntentMessageImage $largeImage)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2IntentMessageImage
+         */
+        public function getLargeImage()
+        {
+        }
+        /**
+         * Required. Name of media card.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2IntentMessageMediaContentResponseMediaObject registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContentUrl()
-    {
-    }
-    /**
-     * Optional. Description of media card.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Optional. Icon to display above media content.
-     *
-     * @param GoogleCloudDialogflowV2IntentMessageImage $icon
-     */
-    public function setIcon(GoogleCloudDialogflowV2IntentMessageImage $icon)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowV2IntentMessageImage
-     */
-    public function getIcon()
-    {
-    }
-    /**
-     * Optional. Image to display above media content.
-     *
-     * @param GoogleCloudDialogflowV2IntentMessageImage $largeImage
-     */
-    public function setLargeImage(GoogleCloudDialogflowV2IntentMessageImage $largeImage)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowV2IntentMessageImage
-     */
-    public function getLargeImage()
-    {
-    }
-    /**
-     * Required. Name of media card.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2IntentMessageMediaContentResponseMediaObject extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2IntentMessageMediaContentResponseMediaObject
     {
     }
 }

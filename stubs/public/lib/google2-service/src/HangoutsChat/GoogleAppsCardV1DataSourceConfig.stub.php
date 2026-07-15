@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class GoogleAppsCardV1DataSourceConfig extends \Google\Model
-{
-    protected $platformDataSourceType = GoogleAppsCardV1PlatformDataSource::class;
-    protected $platformDataSourceDataType = '';
-    protected $remoteDataSourceType = GoogleAppsCardV1Action::class;
-    protected $remoteDataSourceDataType = '';
-    /**
-     * The data is from a Google Workspace application.
-     *
-     * @param GoogleAppsCardV1PlatformDataSource $platformDataSource
-     */
-    public function setPlatformDataSource(GoogleAppsCardV1PlatformDataSource $platformDataSource)
+namespace Google\Service\HangoutsChat {
+    class GoogleAppsCardV1DataSourceConfig extends \Google\Model
     {
+        protected $platformDataSourceType = GoogleAppsCardV1PlatformDataSource::class;
+        protected $platformDataSourceDataType = '';
+        protected $remoteDataSourceType = GoogleAppsCardV1Action::class;
+        protected $remoteDataSourceDataType = '';
+        /**
+         * The data is from a Google Workspace application.
+         *
+         * @param GoogleAppsCardV1PlatformDataSource $platformDataSource
+         */
+        public function setPlatformDataSource(GoogleAppsCardV1PlatformDataSource $platformDataSource)
+        {
+        }
+        /**
+         * @return GoogleAppsCardV1PlatformDataSource
+         */
+        public function getPlatformDataSource()
+        {
+        }
+        /**
+         * The data is from a remote data provider.
+         *
+         * @param GoogleAppsCardV1Action $remoteDataSource
+         */
+        public function setRemoteDataSource(GoogleAppsCardV1Action $remoteDataSource)
+        {
+        }
+        /**
+         * @return GoogleAppsCardV1Action
+         */
+        public function getRemoteDataSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAppsCardV1PlatformDataSource
+     * Runtime class alias of \Google\Service\HangoutsChat\GoogleAppsCardV1DataSourceConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPlatformDataSource()
-    {
-    }
-    /**
-     * The data is from a remote data provider.
-     *
-     * @param GoogleAppsCardV1Action $remoteDataSource
-     */
-    public function setRemoteDataSource(GoogleAppsCardV1Action $remoteDataSource)
-    {
-    }
-    /**
-     * @return GoogleAppsCardV1Action
-     */
-    public function getRemoteDataSource()
+    class Google_Service_HangoutsChat_GoogleAppsCardV1DataSourceConfig extends \Google\Service\HangoutsChat\GoogleAppsCardV1DataSourceConfig
     {
     }
 }

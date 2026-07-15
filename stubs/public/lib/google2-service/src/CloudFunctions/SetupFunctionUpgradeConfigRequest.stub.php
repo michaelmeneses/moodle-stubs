@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudFunctions;
-
-class SetupFunctionUpgradeConfigRequest extends \Google\Model
-{
-    /**
-     * Optional. The trigger's service account. The service account must have
-     * permission to invoke Cloud Run services, the permission is
-     * `run.routes.invoke`. If empty, defaults to the Compute Engine default
-     * service account: `{project_number}-compute@developer.gserviceaccount.com`.
-     *
-     * @var string
-     */
-    public $triggerServiceAccount;
-    /**
-     * Optional. The trigger's service account. The service account must have
-     * permission to invoke Cloud Run services, the permission is
-     * `run.routes.invoke`. If empty, defaults to the Compute Engine default
-     * service account: `{project_number}-compute@developer.gserviceaccount.com`.
-     *
-     * @param string $triggerServiceAccount
-     */
-    public function setTriggerServiceAccount($triggerServiceAccount)
+namespace Google\Service\CloudFunctions {
+    class SetupFunctionUpgradeConfigRequest extends \Google\Model
     {
+        /**
+         * Optional. The trigger's service account. The service account must have
+         * permission to invoke Cloud Run services, the permission is
+         * `run.routes.invoke`. If empty, defaults to the Compute Engine default
+         * service account: `{project_number}-compute@developer.gserviceaccount.com`.
+         *
+         * @var string
+         */
+        public $triggerServiceAccount;
+        /**
+         * Optional. The trigger's service account. The service account must have
+         * permission to invoke Cloud Run services, the permission is
+         * `run.routes.invoke`. If empty, defaults to the Compute Engine default
+         * service account: `{project_number}-compute@developer.gserviceaccount.com`.
+         *
+         * @param string $triggerServiceAccount
+         */
+        public function setTriggerServiceAccount($triggerServiceAccount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTriggerServiceAccount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudFunctions\SetupFunctionUpgradeConfigRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTriggerServiceAccount()
+    class Google_Service_CloudFunctions_SetupFunctionUpgradeConfigRequest extends \Google\Service\CloudFunctions\SetupFunctionUpgradeConfigRequest
     {
     }
 }

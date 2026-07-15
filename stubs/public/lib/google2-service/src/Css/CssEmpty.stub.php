@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Css;
-
-class CssEmpty extends \Google\Model
-{
+namespace Google\Service\Css {
+    class CssEmpty extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Css\CssEmpty registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Css_CssEmpty extends \Google\Service\Css\CssEmpty
+    {
+    }
 }

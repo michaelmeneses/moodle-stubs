@@ -21,106 +21,118 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AppHub\Resource;
-
-/**
- * The "serviceProjectAttachments" collection of methods.
- * Typical usage is:
- *  <code>
- *   $apphubService = new Google\Service\AppHub(...);
- *   $serviceProjectAttachments = $apphubService->projects_locations_serviceProjectAttachments;
- *  </code>
- */
-class ProjectsLocationsServiceProjectAttachments extends \Google\Service\Resource
-{
+namespace Google\Service\AppHub\Resource {
+    use Google\Service\AppHub\ListServiceProjectAttachmentsResponse;
+    use Google\Service\AppHub\Operation;
+    use Google\Service\AppHub\ServiceProjectAttachment;
     /**
-     * Attaches a service project to the host project.
-     * (serviceProjectAttachments.create)
-     *
-     * @param string $parent Required. Host project ID and location to which service
-     * project is being attached. Only global location is supported. Expected
-     * format: `projects/{project}/locations/{location}`.
-     * @param ServiceProjectAttachment $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string requestId Optional. An optional request ID to identify
-     * requests. Specify a unique request ID so that if you must retry your request,
-     * the server will know to ignore the request if it has already been completed.
-     * The server will guarantee that for at least 60 minutes since the first
-     * request. For example, consider a situation where you make an initial request
-     * and the request times out. If you make the request again with the same
-     * request ID, the server can check if original operation with the same request
-     * ID was received, and if so, will ignore the second request. This prevents
-     * clients from accidentally creating duplicate commitments. The request ID must
-     * be a valid UUID with the exception that zero UUID is not supported
-     * (00000000-0000-0000-0000-000000000000).
-     * @opt_param string serviceProjectAttachmentId Required. The service project
-     * attachment identifier must contain the project id of the service project
-     * specified in the service_project_attachment.service_project field.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * The "serviceProjectAttachments" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $apphubService = new Google\Service\AppHub(...);
+     *   $serviceProjectAttachments = $apphubService->projects_locations_serviceProjectAttachments;
+     *  </code>
      */
-    public function create($parent, ServiceProjectAttachment $postBody, $optParams = [])
+    class ProjectsLocationsServiceProjectAttachments extends \Google\Service\Resource
     {
+        /**
+         * Attaches a service project to the host project.
+         * (serviceProjectAttachments.create)
+         *
+         * @param string $parent Required. Host project ID and location to which service
+         * project is being attached. Only global location is supported. Expected
+         * format: `projects/{project}/locations/{location}`.
+         * @param ServiceProjectAttachment $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string requestId Optional. An optional request ID to identify
+         * requests. Specify a unique request ID so that if you must retry your request,
+         * the server will know to ignore the request if it has already been completed.
+         * The server will guarantee that for at least 60 minutes since the first
+         * request. For example, consider a situation where you make an initial request
+         * and the request times out. If you make the request again with the same
+         * request ID, the server can check if original operation with the same request
+         * ID was received, and if so, will ignore the second request. This prevents
+         * clients from accidentally creating duplicate commitments. The request ID must
+         * be a valid UUID with the exception that zero UUID is not supported
+         * (00000000-0000-0000-0000-000000000000).
+         * @opt_param string serviceProjectAttachmentId Required. The service project
+         * attachment identifier must contain the project id of the service project
+         * specified in the service_project_attachment.service_project field.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, ServiceProjectAttachment $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a service project attachment. (serviceProjectAttachments.delete)
+         *
+         * @param string $name Required. Fully qualified name of the service project
+         * attachment to delete. Expected format: `projects/{project}/locations/{locatio
+         * n}/serviceProjectAttachments/{serviceProjectAttachment}`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string requestId Optional. An optional request ID to identify
+         * requests. Specify a unique request ID so that if you must retry your request,
+         * the server will know to ignore the request if it has already been completed.
+         * The server will guarantee that for at least 60 minutes after the first
+         * request. For example, consider a situation where you make an initial request
+         * and the request times out. If you make the request again with the same
+         * request ID, the server can check if original operation with the same request
+         * ID was received, and if so, will ignore the second request. This prevents
+         * clients from accidentally creating duplicate commitments. The request ID must
+         * be a valid UUID with the exception that zero UUID is not supported
+         * (00000000-0000-0000-0000-000000000000).
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets a service project attachment. (serviceProjectAttachments.get)
+         *
+         * @param string $name Required. Fully qualified name of the service project
+         * attachment to retrieve. Expected format: `projects/{project}/locations/{locat
+         * ion}/serviceProjectAttachments/{serviceProjectAttachment}`.
+         * @param array $optParams Optional parameters.
+         * @return ServiceProjectAttachment
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists service projects attached to the host project.
+         * (serviceProjectAttachments.listProjectsLocationsServiceProjectAttachments)
+         *
+         * @param string $parent Required. Host project ID and location to list service
+         * project attachments. Only global location is supported. Expected format:
+         * `projects/{project}/locations/{location}`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Optional. Filtering results.
+         * @opt_param string orderBy Optional. Hint for how to order the results.
+         * @opt_param int pageSize Optional. Requested page size. Server may return
+         * fewer items than requested. If unspecified, server will pick an appropriate
+         * default.
+         * @opt_param string pageToken Optional. A token identifying a page of results
+         * the server should return.
+         * @return ListServiceProjectAttachmentsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsServiceProjectAttachments($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a service project attachment. (serviceProjectAttachments.delete)
-     *
-     * @param string $name Required. Fully qualified name of the service project
-     * attachment to delete. Expected format: `projects/{project}/locations/{locatio
-     * n}/serviceProjectAttachments/{serviceProjectAttachment}`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string requestId Optional. An optional request ID to identify
-     * requests. Specify a unique request ID so that if you must retry your request,
-     * the server will know to ignore the request if it has already been completed.
-     * The server will guarantee that for at least 60 minutes after the first
-     * request. For example, consider a situation where you make an initial request
-     * and the request times out. If you make the request again with the same
-     * request ID, the server can check if original operation with the same request
-     * ID was received, and if so, will ignore the second request. This prevents
-     * clients from accidentally creating duplicate commitments. The request ID must
-     * be a valid UUID with the exception that zero UUID is not supported
-     * (00000000-0000-0000-0000-000000000000).
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\AppHub\Resource\ProjectsLocationsServiceProjectAttachments registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets a service project attachment. (serviceProjectAttachments.get)
-     *
-     * @param string $name Required. Fully qualified name of the service project
-     * attachment to retrieve. Expected format: `projects/{project}/locations/{locat
-     * ion}/serviceProjectAttachments/{serviceProjectAttachment}`.
-     * @param array $optParams Optional parameters.
-     * @return ServiceProjectAttachment
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists service projects attached to the host project.
-     * (serviceProjectAttachments.listProjectsLocationsServiceProjectAttachments)
-     *
-     * @param string $parent Required. Host project ID and location to list service
-     * project attachments. Only global location is supported. Expected format:
-     * `projects/{project}/locations/{location}`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Optional. Filtering results.
-     * @opt_param string orderBy Optional. Hint for how to order the results.
-     * @opt_param int pageSize Optional. Requested page size. Server may return
-     * fewer items than requested. If unspecified, server will pick an appropriate
-     * default.
-     * @opt_param string pageToken Optional. A token identifying a page of results
-     * the server should return.
-     * @return ListServiceProjectAttachmentsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsServiceProjectAttachments($parent, $optParams = [])
+    class Google_Service_AppHub_Resource_ProjectsLocationsServiceProjectAttachments extends \Google\Service\AppHub\Resource\ProjectsLocationsServiceProjectAttachments
     {
     }
 }

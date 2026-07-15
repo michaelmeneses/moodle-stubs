@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRedis;
-
-class ManagedBackupSource extends \Google\Model
-{
-    /**
-     * Optional. Example: //redis.googleapis.com/projects/{project}/locations/{loc
-     * ation}/backupCollections/{collection}/backups/{backup} A shorter version
-     * (without the prefix) of the backup name is also supported, like projects/{p
-     * roject}/locations/{location}/backupCollections/{collection}/backups/{backup
-     * _id} In this case, it assumes the backup is under redis.googleapis.com.
-     *
-     * @var string
-     */
-    public $backup;
-    /**
-     * Optional. Example: //redis.googleapis.com/projects/{project}/locations/{loc
-     * ation}/backupCollections/{collection}/backups/{backup} A shorter version
-     * (without the prefix) of the backup name is also supported, like projects/{p
-     * roject}/locations/{location}/backupCollections/{collection}/backups/{backup
-     * _id} In this case, it assumes the backup is under redis.googleapis.com.
-     *
-     * @param string $backup
-     */
-    public function setBackup($backup)
+namespace Google\Service\CloudRedis {
+    class ManagedBackupSource extends \Google\Model
     {
+        /**
+         * Optional. Example: //redis.googleapis.com/projects/{project}/locations/{loc
+         * ation}/backupCollections/{collection}/backups/{backup} A shorter version
+         * (without the prefix) of the backup name is also supported, like projects/{p
+         * roject}/locations/{location}/backupCollections/{collection}/backups/{backup
+         * _id} In this case, it assumes the backup is under redis.googleapis.com.
+         *
+         * @var string
+         */
+        public $backup;
+        /**
+         * Optional. Example: //redis.googleapis.com/projects/{project}/locations/{loc
+         * ation}/backupCollections/{collection}/backups/{backup} A shorter version
+         * (without the prefix) of the backup name is also supported, like projects/{p
+         * roject}/locations/{location}/backupCollections/{collection}/backups/{backup
+         * _id} In this case, it assumes the backup is under redis.googleapis.com.
+         *
+         * @param string $backup
+         */
+        public function setBackup($backup)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBackup()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRedis\ManagedBackupSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackup()
+    class Google_Service_CloudRedis_ManagedBackupSource extends \Google\Service\CloudRedis\ManagedBackupSource
     {
     }
 }

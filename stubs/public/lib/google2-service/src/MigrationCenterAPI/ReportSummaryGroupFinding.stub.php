@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class ReportSummaryGroupFinding extends \Google\Collection
-{
-    protected $collection_key = 'preferenceSetFindings';
-    protected $assetAggregateStatsType = ReportSummaryAssetAggregateStats::class;
-    protected $assetAggregateStatsDataType = '';
-    /**
-     * Description for the Group.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Display Name for the Group.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * This field is deprecated, do not rely on it having a value.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $overlappingAssetCount;
-    protected $preferenceSetFindingsType = ReportSummaryGroupPreferenceSetFinding::class;
-    protected $preferenceSetFindingsDataType = 'array';
-    /**
-     * Summary statistics for all the assets in this group.
-     *
-     * @param ReportSummaryAssetAggregateStats $assetAggregateStats
-     */
-    public function setAssetAggregateStats(ReportSummaryAssetAggregateStats $assetAggregateStats)
+namespace Google\Service\MigrationCenterAPI {
+    class ReportSummaryGroupFinding extends \Google\Collection
     {
+        protected $collection_key = 'preferenceSetFindings';
+        protected $assetAggregateStatsType = ReportSummaryAssetAggregateStats::class;
+        protected $assetAggregateStatsDataType = '';
+        /**
+         * Description for the Group.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Display Name for the Group.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * This field is deprecated, do not rely on it having a value.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $overlappingAssetCount;
+        protected $preferenceSetFindingsType = ReportSummaryGroupPreferenceSetFinding::class;
+        protected $preferenceSetFindingsDataType = 'array';
+        /**
+         * Summary statistics for all the assets in this group.
+         *
+         * @param ReportSummaryAssetAggregateStats $assetAggregateStats
+         */
+        public function setAssetAggregateStats(ReportSummaryAssetAggregateStats $assetAggregateStats)
+        {
+        }
+        /**
+         * @return ReportSummaryAssetAggregateStats
+         */
+        public function getAssetAggregateStats()
+        {
+        }
+        /**
+         * Description for the Group.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Display Name for the Group.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * This field is deprecated, do not rely on it having a value.
+         *
+         * @deprecated
+         * @param string $overlappingAssetCount
+         */
+        public function setOverlappingAssetCount($overlappingAssetCount)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getOverlappingAssetCount()
+        {
+        }
+        /**
+         * Findings for each of the PreferenceSets for this group.
+         *
+         * @param ReportSummaryGroupPreferenceSetFinding[] $preferenceSetFindings
+         */
+        public function setPreferenceSetFindings($preferenceSetFindings)
+        {
+        }
+        /**
+         * @return ReportSummaryGroupPreferenceSetFinding[]
+         */
+        public function getPreferenceSetFindings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ReportSummaryAssetAggregateStats
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\ReportSummaryGroupFinding registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssetAggregateStats()
-    {
-    }
-    /**
-     * Description for the Group.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Display Name for the Group.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * This field is deprecated, do not rely on it having a value.
-     *
-     * @deprecated
-     * @param string $overlappingAssetCount
-     */
-    public function setOverlappingAssetCount($overlappingAssetCount)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getOverlappingAssetCount()
-    {
-    }
-    /**
-     * Findings for each of the PreferenceSets for this group.
-     *
-     * @param ReportSummaryGroupPreferenceSetFinding[] $preferenceSetFindings
-     */
-    public function setPreferenceSetFindings($preferenceSetFindings)
-    {
-    }
-    /**
-     * @return ReportSummaryGroupPreferenceSetFinding[]
-     */
-    public function getPreferenceSetFindings()
+    class Google_Service_MigrationCenterAPI_ReportSummaryGroupFinding extends \Google\Service\MigrationCenterAPI\ReportSummaryGroupFinding
     {
     }
 }

@@ -29,6 +29,7 @@
  */
 namespace mod_feedback\external;
 
+use core\external\exporter;
 /**
  * Class for exporting a feedback tmp response.
  *

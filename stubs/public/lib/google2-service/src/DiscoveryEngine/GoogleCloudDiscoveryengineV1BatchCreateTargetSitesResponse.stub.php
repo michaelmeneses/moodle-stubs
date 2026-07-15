@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1BatchCreateTargetSitesResponse extends \Google\Collection
-{
-    protected $collection_key = 'targetSites';
-    protected $targetSitesType = GoogleCloudDiscoveryengineV1TargetSite::class;
-    protected $targetSitesDataType = 'array';
-    /**
-     * TargetSites created.
-     *
-     * @param GoogleCloudDiscoveryengineV1TargetSite[] $targetSites
-     */
-    public function setTargetSites($targetSites)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1BatchCreateTargetSitesResponse extends \Google\Collection
     {
+        protected $collection_key = 'targetSites';
+        protected $targetSitesType = GoogleCloudDiscoveryengineV1TargetSite::class;
+        protected $targetSitesDataType = 'array';
+        /**
+         * TargetSites created.
+         *
+         * @param GoogleCloudDiscoveryengineV1TargetSite[] $targetSites
+         */
+        public function setTargetSites($targetSites)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1TargetSite[]
+         */
+        public function getTargetSites()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1TargetSite[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1BatchCreateTargetSitesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTargetSites()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1BatchCreateTargetSitesResponse extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1BatchCreateTargetSitesResponse
     {
     }
 }

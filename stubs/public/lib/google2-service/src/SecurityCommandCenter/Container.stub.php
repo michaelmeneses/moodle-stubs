@@ -21,109 +21,118 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class Container extends \Google\Collection
-{
-    protected $collection_key = 'labels';
-    /**
-     * The time that the container was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Optional container image ID, if provided by the container runtime. Uniquely
-     * identifies the container image launched using a container image digest.
-     *
-     * @var string
-     */
-    public $imageId;
-    protected $labelsType = Label::class;
-    protected $labelsDataType = 'array';
-    /**
-     * Name of the container.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Container image URI provided when configuring a pod or container. This
-     * string can identify a container image version using mutable tags.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * The time that the container was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\SecurityCommandCenter {
+    class Container extends \Google\Collection
     {
+        protected $collection_key = 'labels';
+        /**
+         * The time that the container was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Optional container image ID, if provided by the container runtime. Uniquely
+         * identifies the container image launched using a container image digest.
+         *
+         * @var string
+         */
+        public $imageId;
+        protected $labelsType = Label::class;
+        protected $labelsDataType = 'array';
+        /**
+         * Name of the container.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Container image URI provided when configuring a pod or container. This
+         * string can identify a container image version using mutable tags.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * The time that the container was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Optional container image ID, if provided by the container runtime. Uniquely
+         * identifies the container image launched using a container image digest.
+         *
+         * @param string $imageId
+         */
+        public function setImageId($imageId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImageId()
+        {
+        }
+        /**
+         * Container labels, as provided by the container runtime.
+         *
+         * @param Label[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return Label[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Name of the container.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Container image URI provided when configuring a pod or container. This
+         * string can identify a container image version using mutable tags.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\Container registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Optional container image ID, if provided by the container runtime. Uniquely
-     * identifies the container image launched using a container image digest.
-     *
-     * @param string $imageId
-     */
-    public function setImageId($imageId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImageId()
-    {
-    }
-    /**
-     * Container labels, as provided by the container runtime.
-     *
-     * @param Label[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return Label[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Name of the container.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Container image URI provided when configuring a pod or container. This
-     * string can identify a container image version using mutable tags.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_SecurityCommandCenter_Container extends \Google\Service\SecurityCommandCenter\Container
     {
     }
 }

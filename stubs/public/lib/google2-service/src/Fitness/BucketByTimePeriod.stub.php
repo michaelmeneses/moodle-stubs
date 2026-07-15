@@ -21,63 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Fitness;
-
-class BucketByTimePeriod extends \Google\Model
-{
-    public const TYPE_day = 'day';
-    public const TYPE_week = 'week';
-    public const TYPE_month = 'month';
-    /**
-     * org.joda.timezone.DateTimeZone
-     *
-     * @var string
-     */
-    public $timeZoneId;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @var int
-     */
-    public $value;
-    /**
-     * org.joda.timezone.DateTimeZone
-     *
-     * @param string $timeZoneId
-     */
-    public function setTimeZoneId($timeZoneId)
+namespace Google\Service\Fitness {
+    class BucketByTimePeriod extends \Google\Model
     {
+        public const TYPE_day = 'day';
+        public const TYPE_week = 'week';
+        public const TYPE_month = 'month';
+        /**
+         * org.joda.timezone.DateTimeZone
+         *
+         * @var string
+         */
+        public $timeZoneId;
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @var int
+         */
+        public $value;
+        /**
+         * org.joda.timezone.DateTimeZone
+         *
+         * @param string $timeZoneId
+         */
+        public function setTimeZoneId($timeZoneId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimeZoneId()
+        {
+        }
+        /**
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
+        /**
+         * @param int $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Fitness\BucketByTimePeriod registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTimeZoneId()
-    {
-    }
-    /**
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
-    {
-    }
-    /**
-     * @param int $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getValue()
+    class Google_Service_Fitness_BucketByTimePeriod extends \Google\Service\Fitness\BucketByTimePeriod
     {
     }
 }

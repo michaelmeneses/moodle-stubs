@@ -29,6 +29,10 @@
  */
 namespace mod_assign\output;
 
+use renderer_base;
+use renderable;
+use templatable;
+use stdClass;
 /**
  * Grading app renderable.
  *

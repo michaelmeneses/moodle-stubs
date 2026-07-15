@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise;
-
-class SignupInfo extends \Google\Model
-{
-    /**
-     * An opaque token that will be required, along with the Enterprise Token, for
-     * obtaining the enterprise resource from CompleteSignup.
-     *
-     * @var string
-     */
-    public $completionToken;
-    /**
-     * Deprecated.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * A URL under which the Admin can sign up for an enterprise. The page pointed
-     * to cannot be rendered in an iframe.
-     *
-     * @var string
-     */
-    public $url;
-    /**
-     * An opaque token that will be required, along with the Enterprise Token, for
-     * obtaining the enterprise resource from CompleteSignup.
-     *
-     * @param string $completionToken
-     */
-    public function setCompletionToken($completionToken)
+namespace Google\Service\AndroidEnterprise {
+    class SignupInfo extends \Google\Model
     {
+        /**
+         * An opaque token that will be required, along with the Enterprise Token, for
+         * obtaining the enterprise resource from CompleteSignup.
+         *
+         * @var string
+         */
+        public $completionToken;
+        /**
+         * Deprecated.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * A URL under which the Admin can sign up for an enterprise. The page pointed
+         * to cannot be rendered in an iframe.
+         *
+         * @var string
+         */
+        public $url;
+        /**
+         * An opaque token that will be required, along with the Enterprise Token, for
+         * obtaining the enterprise resource from CompleteSignup.
+         *
+         * @param string $completionToken
+         */
+        public function setCompletionToken($completionToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCompletionToken()
+        {
+        }
+        /**
+         * Deprecated.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * A URL under which the Admin can sign up for an enterprise. The page pointed
+         * to cannot be rendered in an iframe.
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidEnterprise\SignupInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCompletionToken()
-    {
-    }
-    /**
-     * Deprecated.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * A URL under which the Admin can sign up for an enterprise. The page pointed
-     * to cannot be rendered in an iframe.
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
+    class Google_Service_AndroidEnterprise_SignupInfo extends \Google\Service\AndroidEnterprise\SignupInfo
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Looker;
-
-class ExportMetadataEncryptionKey extends \Google\Model
-{
-    /**
-     * Name of the CMEK.
-     *
-     * @var string
-     */
-    public $cmek;
-    /**
-     * Version of the CMEK.
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * Name of the CMEK.
-     *
-     * @param string $cmek
-     */
-    public function setCmek($cmek)
+namespace Google\Service\Looker {
+    class ExportMetadataEncryptionKey extends \Google\Model
     {
+        /**
+         * Name of the CMEK.
+         *
+         * @var string
+         */
+        public $cmek;
+        /**
+         * Version of the CMEK.
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * Name of the CMEK.
+         *
+         * @param string $cmek
+         */
+        public function setCmek($cmek)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCmek()
+        {
+        }
+        /**
+         * Version of the CMEK.
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Looker\ExportMetadataEncryptionKey registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCmek()
-    {
-    }
-    /**
-     * Version of the CMEK.
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_Looker_ExportMetadataEncryptionKey extends \Google\Service\Looker\ExportMetadataEncryptionKey
     {
     }
 }

@@ -21,150 +21,159 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class BinaryConfusionMatrix extends \Google\Model
-{
-    /**
-     * The fraction of predictions given the correct label.
-     *
-     * @var 
-     */
-    public $accuracy;
-    /**
-     * The equally weighted average of recall and precision.
-     *
-     * @var 
-     */
-    public $f1Score;
-    /**
-     * Number of false samples predicted as false.
-     *
-     * @var string
-     */
-    public $falseNegatives;
-    /**
-     * Number of false samples predicted as true.
-     *
-     * @var string
-     */
-    public $falsePositives;
-    /**
-     * Threshold value used when computing each of the following metric.
-     *
-     * @var 
-     */
-    public $positiveClassThreshold;
-    /**
-     * The fraction of actual positive predictions that had positive actual
-     * labels.
-     *
-     * @var 
-     */
-    public $precision;
-    /**
-     * The fraction of actual positive labels that were given a positive
-     * prediction.
-     *
-     * @var 
-     */
-    public $recall;
-    /**
-     * Number of true samples predicted as false.
-     *
-     * @var string
-     */
-    public $trueNegatives;
-    /**
-     * Number of true samples predicted as true.
-     *
-     * @var string
-     */
-    public $truePositives;
-    public function setAccuracy($accuracy)
+namespace Google\Service\Bigquery {
+    class BinaryConfusionMatrix extends \Google\Model
     {
+        /**
+         * The fraction of predictions given the correct label.
+         *
+         * @var 
+         */
+        public $accuracy;
+        /**
+         * The equally weighted average of recall and precision.
+         *
+         * @var 
+         */
+        public $f1Score;
+        /**
+         * Number of false samples predicted as false.
+         *
+         * @var string
+         */
+        public $falseNegatives;
+        /**
+         * Number of false samples predicted as true.
+         *
+         * @var string
+         */
+        public $falsePositives;
+        /**
+         * Threshold value used when computing each of the following metric.
+         *
+         * @var 
+         */
+        public $positiveClassThreshold;
+        /**
+         * The fraction of actual positive predictions that had positive actual
+         * labels.
+         *
+         * @var 
+         */
+        public $precision;
+        /**
+         * The fraction of actual positive labels that were given a positive
+         * prediction.
+         *
+         * @var 
+         */
+        public $recall;
+        /**
+         * Number of true samples predicted as false.
+         *
+         * @var string
+         */
+        public $trueNegatives;
+        /**
+         * Number of true samples predicted as true.
+         *
+         * @var string
+         */
+        public $truePositives;
+        public function setAccuracy($accuracy)
+        {
+        }
+        public function getAccuracy()
+        {
+        }
+        public function setF1Score($f1Score)
+        {
+        }
+        public function getF1Score()
+        {
+        }
+        /**
+         * Number of false samples predicted as false.
+         *
+         * @param string $falseNegatives
+         */
+        public function setFalseNegatives($falseNegatives)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFalseNegatives()
+        {
+        }
+        /**
+         * Number of false samples predicted as true.
+         *
+         * @param string $falsePositives
+         */
+        public function setFalsePositives($falsePositives)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFalsePositives()
+        {
+        }
+        public function setPositiveClassThreshold($positiveClassThreshold)
+        {
+        }
+        public function getPositiveClassThreshold()
+        {
+        }
+        public function setPrecision($precision)
+        {
+        }
+        public function getPrecision()
+        {
+        }
+        public function setRecall($recall)
+        {
+        }
+        public function getRecall()
+        {
+        }
+        /**
+         * Number of true samples predicted as false.
+         *
+         * @param string $trueNegatives
+         */
+        public function setTrueNegatives($trueNegatives)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTrueNegatives()
+        {
+        }
+        /**
+         * Number of true samples predicted as true.
+         *
+         * @param string $truePositives
+         */
+        public function setTruePositives($truePositives)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTruePositives()
+        {
+        }
     }
-    public function getAccuracy()
-    {
-    }
-    public function setF1Score($f1Score)
-    {
-    }
-    public function getF1Score()
-    {
-    }
+}
+namespace {
     /**
-     * Number of false samples predicted as false.
-     *
-     * @param string $falseNegatives
+     * Runtime class alias of \Google\Service\Bigquery\BinaryConfusionMatrix registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setFalseNegatives($falseNegatives)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFalseNegatives()
-    {
-    }
-    /**
-     * Number of false samples predicted as true.
-     *
-     * @param string $falsePositives
-     */
-    public function setFalsePositives($falsePositives)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFalsePositives()
-    {
-    }
-    public function setPositiveClassThreshold($positiveClassThreshold)
-    {
-    }
-    public function getPositiveClassThreshold()
-    {
-    }
-    public function setPrecision($precision)
-    {
-    }
-    public function getPrecision()
-    {
-    }
-    public function setRecall($recall)
-    {
-    }
-    public function getRecall()
-    {
-    }
-    /**
-     * Number of true samples predicted as false.
-     *
-     * @param string $trueNegatives
-     */
-    public function setTrueNegatives($trueNegatives)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTrueNegatives()
-    {
-    }
-    /**
-     * Number of true samples predicted as true.
-     *
-     * @param string $truePositives
-     */
-    public function setTruePositives($truePositives)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTruePositives()
+    class Google_Service_Bigquery_BinaryConfusionMatrix extends \Google\Service\Bigquery\BinaryConfusionMatrix
     {
     }
 }

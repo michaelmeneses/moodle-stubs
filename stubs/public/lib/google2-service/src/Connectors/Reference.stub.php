@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors;
-
-class Reference extends \Google\Model
-{
-    /**
-     * Name of the reference field.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Name of reference entity type.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Name of the reference field.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Connectors {
+    class Reference extends \Google\Model
     {
+        /**
+         * Name of the reference field.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Name of reference entity type.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Name of the reference field.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Name of reference entity type.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Connectors\Reference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Name of reference entity type.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_Connectors_Reference extends \Google\Service\Connectors\Reference
     {
     }
 }

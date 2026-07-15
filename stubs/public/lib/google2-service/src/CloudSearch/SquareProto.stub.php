@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class SquareProto extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $memberType;
-    /**
-     * @var string
-     */
-    public $squareId;
-    /**
-     * @param int
-     */
-    public function setMemberType($memberType)
+namespace Google\Service\CloudSearch {
+    class SquareProto extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $memberType;
+        /**
+         * @var string
+         */
+        public $squareId;
+        /**
+         * @param int
+         */
+        public function setMemberType($memberType)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMemberType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSquareId($squareId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSquareId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudSearch\SquareProto registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMemberType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSquareId($squareId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSquareId()
+    class Google_Service_CloudSearch_SquareProto extends \Google\Service\CloudSearch\SquareProto
     {
     }
 }

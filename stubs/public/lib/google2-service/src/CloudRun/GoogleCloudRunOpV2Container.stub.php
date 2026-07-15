@@ -21,129 +21,138 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleCloudRunOpV2Container extends \Google\Collection
-{
-    protected $collection_key = 'volumeMounts';
-    /**
-     * @var string[]
-     */
-    public $args;
-    /**
-     * @var string[]
-     */
-    public $command;
-    protected $envType = GoogleCloudRunOpV2EnvVar::class;
-    protected $envDataType = 'array';
-    /**
-     * @var string
-     */
-    public $image;
-    /**
-     * @var string
-     */
-    public $name;
-    protected $portsType = GoogleCloudRunOpV2ContainerPort::class;
-    protected $portsDataType = 'array';
-    protected $resourcesType = GoogleCloudRunOpV2ResourceRequirements::class;
-    protected $resourcesDataType = '';
-    protected $volumeMountsType = GoogleCloudRunOpV2VolumeMount::class;
-    protected $volumeMountsDataType = 'array';
-    /**
-     * @param string[]
-     */
-    public function setArgs($args)
+namespace Google\Service\CloudRun {
+    class GoogleCloudRunOpV2Container extends \Google\Collection
     {
+        protected $collection_key = 'volumeMounts';
+        /**
+         * @var string[]
+         */
+        public $args;
+        /**
+         * @var string[]
+         */
+        public $command;
+        protected $envType = GoogleCloudRunOpV2EnvVar::class;
+        protected $envDataType = 'array';
+        /**
+         * @var string
+         */
+        public $image;
+        /**
+         * @var string
+         */
+        public $name;
+        protected $portsType = GoogleCloudRunOpV2ContainerPort::class;
+        protected $portsDataType = 'array';
+        protected $resourcesType = GoogleCloudRunOpV2ResourceRequirements::class;
+        protected $resourcesDataType = '';
+        protected $volumeMountsType = GoogleCloudRunOpV2VolumeMount::class;
+        protected $volumeMountsDataType = 'array';
+        /**
+         * @param string[]
+         */
+        public function setArgs($args)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getArgs()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setCommand($command)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCommand()
+        {
+        }
+        /**
+         * @param GoogleCloudRunOpV2EnvVar[]
+         */
+        public function setEnv($env)
+        {
+        }
+        /**
+         * @return GoogleCloudRunOpV2EnvVar[]
+         */
+        public function getEnv()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setImage($image)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImage()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param GoogleCloudRunOpV2ContainerPort[]
+         */
+        public function setPorts($ports)
+        {
+        }
+        /**
+         * @return GoogleCloudRunOpV2ContainerPort[]
+         */
+        public function getPorts()
+        {
+        }
+        /**
+         * @param GoogleCloudRunOpV2ResourceRequirements
+         */
+        public function setResources(GoogleCloudRunOpV2ResourceRequirements $resources)
+        {
+        }
+        /**
+         * @return GoogleCloudRunOpV2ResourceRequirements
+         */
+        public function getResources()
+        {
+        }
+        /**
+         * @param GoogleCloudRunOpV2VolumeMount[]
+         */
+        public function setVolumeMounts($volumeMounts)
+        {
+        }
+        /**
+         * @return GoogleCloudRunOpV2VolumeMount[]
+         */
+        public function getVolumeMounts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudRun\GoogleCloudRunOpV2Container registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArgs()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setCommand($command)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getCommand()
-    {
-    }
-    /**
-     * @param GoogleCloudRunOpV2EnvVar[]
-     */
-    public function setEnv($env)
-    {
-    }
-    /**
-     * @return GoogleCloudRunOpV2EnvVar[]
-     */
-    public function getEnv()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setImage($image)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImage()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param GoogleCloudRunOpV2ContainerPort[]
-     */
-    public function setPorts($ports)
-    {
-    }
-    /**
-     * @return GoogleCloudRunOpV2ContainerPort[]
-     */
-    public function getPorts()
-    {
-    }
-    /**
-     * @param GoogleCloudRunOpV2ResourceRequirements
-     */
-    public function setResources(GoogleCloudRunOpV2ResourceRequirements $resources)
-    {
-    }
-    /**
-     * @return GoogleCloudRunOpV2ResourceRequirements
-     */
-    public function getResources()
-    {
-    }
-    /**
-     * @param GoogleCloudRunOpV2VolumeMount[]
-     */
-    public function setVolumeMounts($volumeMounts)
-    {
-    }
-    /**
-     * @return GoogleCloudRunOpV2VolumeMount[]
-     */
-    public function getVolumeMounts()
+    class Google_Service_CloudRun_GoogleCloudRunOpV2Container extends \Google\Service\CloudRun\GoogleCloudRunOpV2Container
     {
     }
 }

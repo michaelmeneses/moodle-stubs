@@ -21,122 +21,131 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class PlaylistItem extends \Google\Model
-{
-    protected $contentDetailsType = PlaylistItemContentDetails::class;
-    protected $contentDetailsDataType = '';
-    /**
-     * Etag of this resource.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * The ID that YouTube uses to uniquely identify the playlist item.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "youtube#playlistItem".
-     *
-     * @var string
-     */
-    public $kind;
-    protected $snippetType = PlaylistItemSnippet::class;
-    protected $snippetDataType = '';
-    protected $statusType = PlaylistItemStatus::class;
-    protected $statusDataType = '';
-    /**
-     * The contentDetails object is included in the resource if the included item
-     * is a YouTube video. The object contains additional information about the
-     * video.
-     *
-     * @param PlaylistItemContentDetails $contentDetails
-     */
-    public function setContentDetails(PlaylistItemContentDetails $contentDetails)
+namespace Google\Service\YouTube {
+    class PlaylistItem extends \Google\Model
     {
+        protected $contentDetailsType = PlaylistItemContentDetails::class;
+        protected $contentDetailsDataType = '';
+        /**
+         * Etag of this resource.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * The ID that YouTube uses to uniquely identify the playlist item.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "youtube#playlistItem".
+         *
+         * @var string
+         */
+        public $kind;
+        protected $snippetType = PlaylistItemSnippet::class;
+        protected $snippetDataType = '';
+        protected $statusType = PlaylistItemStatus::class;
+        protected $statusDataType = '';
+        /**
+         * The contentDetails object is included in the resource if the included item
+         * is a YouTube video. The object contains additional information about the
+         * video.
+         *
+         * @param PlaylistItemContentDetails $contentDetails
+         */
+        public function setContentDetails(PlaylistItemContentDetails $contentDetails)
+        {
+        }
+        /**
+         * @return PlaylistItemContentDetails
+         */
+        public function getContentDetails()
+        {
+        }
+        /**
+         * Etag of this resource.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * The ID that YouTube uses to uniquely identify the playlist item.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "youtube#playlistItem".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The snippet object contains basic details about the playlist item, such as
+         * its title and position in the playlist.
+         *
+         * @param PlaylistItemSnippet $snippet
+         */
+        public function setSnippet(PlaylistItemSnippet $snippet)
+        {
+        }
+        /**
+         * @return PlaylistItemSnippet
+         */
+        public function getSnippet()
+        {
+        }
+        /**
+         * The status object contains information about the playlist item's privacy
+         * status.
+         *
+         * @param PlaylistItemStatus $status
+         */
+        public function setStatus(PlaylistItemStatus $status)
+        {
+        }
+        /**
+         * @return PlaylistItemStatus
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PlaylistItemContentDetails
+     * Runtime class alias of \Google\Service\YouTube\PlaylistItem registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContentDetails()
-    {
-    }
-    /**
-     * Etag of this resource.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * The ID that YouTube uses to uniquely identify the playlist item.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "youtube#playlistItem".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The snippet object contains basic details about the playlist item, such as
-     * its title and position in the playlist.
-     *
-     * @param PlaylistItemSnippet $snippet
-     */
-    public function setSnippet(PlaylistItemSnippet $snippet)
-    {
-    }
-    /**
-     * @return PlaylistItemSnippet
-     */
-    public function getSnippet()
-    {
-    }
-    /**
-     * The status object contains information about the playlist item's privacy
-     * status.
-     *
-     * @param PlaylistItemStatus $status
-     */
-    public function setStatus(PlaylistItemStatus $status)
-    {
-    }
-    /**
-     * @return PlaylistItemStatus
-     */
-    public function getStatus()
+    class Google_Service_YouTube_PlaylistItem extends \Google\Service\YouTube\PlaylistItem
     {
     }
 }

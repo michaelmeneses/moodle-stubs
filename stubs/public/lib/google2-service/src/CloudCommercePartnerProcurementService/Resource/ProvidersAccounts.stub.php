@@ -21,83 +21,98 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudCommercePartnerProcurementService\Resource;
-
-/**
- * The "accounts" collection of methods.
- * Typical usage is:
- *  <code>
- *   $cloudcommerceprocurementService = new Google\Service\CloudCommercePartnerProcurementService(...);
- *   $accounts = $cloudcommerceprocurementService->providers_accounts;
- *  </code>
- */
-class ProvidersAccounts extends \Google\Service\Resource
-{
+namespace Google\Service\CloudCommercePartnerProcurementService\Resource {
+    use Google\Service\CloudCommercePartnerProcurementService\Account;
+    use Google\Service\CloudCommercePartnerProcurementService\ApproveAccountRequest;
+    use Google\Service\CloudCommercePartnerProcurementService\CloudcommerceprocurementEmpty;
+    use Google\Service\CloudCommercePartnerProcurementService\ListAccountsResponse;
+    use Google\Service\CloudCommercePartnerProcurementService\RejectAccountRequest;
+    use Google\Service\CloudCommercePartnerProcurementService\ResetAccountRequest;
     /**
-     * Grants an approval on an Account. (accounts.approve)
-     *
-     * @param string $name Required. The resource name of the account, with the
-     * format `providers/{providerId}/accounts/{accountId}`.
-     * @param ApproveAccountRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return CloudcommerceprocurementEmpty
-     * @throws \Google\Service\Exception
+     * The "accounts" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $cloudcommerceprocurementService = new Google\Service\CloudCommercePartnerProcurementService(...);
+     *   $accounts = $cloudcommerceprocurementService->providers_accounts;
+     *  </code>
      */
-    public function approve($name, ApproveAccountRequest $postBody, $optParams = [])
+    class ProvidersAccounts extends \Google\Service\Resource
     {
+        /**
+         * Grants an approval on an Account. (accounts.approve)
+         *
+         * @param string $name Required. The resource name of the account, with the
+         * format `providers/{providerId}/accounts/{accountId}`.
+         * @param ApproveAccountRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return CloudcommerceprocurementEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function approve($name, ApproveAccountRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Gets a requested Account resource. (accounts.get)
+         *
+         * @param string $name Required. The name of the account to retrieve.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string view Optional. What information to include in the response.
+         * @return Account
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists Accounts that the provider has access to.
+         * (accounts.listProvidersAccounts)
+         *
+         * @param string $parent Required. The parent resource name.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The maximum number of entries that are requested. The
+         * default page size is 25 and the maximum page size is 200.
+         * @opt_param string pageToken The token for fetching the next page.
+         * @return ListAccountsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProvidersAccounts($parent, $optParams = [])
+        {
+        }
+        /**
+         * Rejects an approval on an Account. (accounts.reject)
+         *
+         * @param string $name Required. The resource name of the account.
+         * @param RejectAccountRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return CloudcommerceprocurementEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function reject($name, RejectAccountRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Resets an Account and cancels all associated Entitlements. Partner can only
+         * reset accounts they own rather than customer accounts. (accounts.reset)
+         *
+         * @param string $name Required. The resource name of the account.
+         * @param ResetAccountRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return CloudcommerceprocurementEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function reset($name, ResetAccountRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets a requested Account resource. (accounts.get)
-     *
-     * @param string $name Required. The name of the account to retrieve.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string view Optional. What information to include in the response.
-     * @return Account
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\CloudCommercePartnerProcurementService\Resource\ProvidersAccounts registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists Accounts that the provider has access to.
-     * (accounts.listProvidersAccounts)
-     *
-     * @param string $parent Required. The parent resource name.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The maximum number of entries that are requested. The
-     * default page size is 25 and the maximum page size is 200.
-     * @opt_param string pageToken The token for fetching the next page.
-     * @return ListAccountsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProvidersAccounts($parent, $optParams = [])
-    {
-    }
-    /**
-     * Rejects an approval on an Account. (accounts.reject)
-     *
-     * @param string $name Required. The resource name of the account.
-     * @param RejectAccountRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return CloudcommerceprocurementEmpty
-     * @throws \Google\Service\Exception
-     */
-    public function reject($name, RejectAccountRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Resets an Account and cancels all associated Entitlements. Partner can only
-     * reset accounts they own rather than customer accounts. (accounts.reset)
-     *
-     * @param string $name Required. The resource name of the account.
-     * @param ResetAccountRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return CloudcommerceprocurementEmpty
-     * @throws \Google\Service\Exception
-     */
-    public function reset($name, ResetAccountRequest $postBody, $optParams = [])
+    class Google_Service_CloudCommercePartnerProcurementService_Resource_ProvidersAccounts extends \Google\Service\CloudCommercePartnerProcurementService\Resource\ProvidersAccounts
     {
     }
 }

@@ -21,27 +21,36 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class InappproductsBatchUpdateRequest extends \Google\Collection
-{
-    protected $collection_key = 'requests';
-    protected $requestsType = InappproductsUpdateRequest::class;
-    protected $requestsDataType = 'array';
-    /**
-     * Required. Individual update requests. At least one request is required. Can
-     * contain up to 100 requests. All requests must correspond to different in-
-     * app products.
-     *
-     * @param InappproductsUpdateRequest[] $requests
-     */
-    public function setRequests($requests)
+namespace Google\Service\AndroidPublisher {
+    class InappproductsBatchUpdateRequest extends \Google\Collection
     {
+        protected $collection_key = 'requests';
+        protected $requestsType = InappproductsUpdateRequest::class;
+        protected $requestsDataType = 'array';
+        /**
+         * Required. Individual update requests. At least one request is required. Can
+         * contain up to 100 requests. All requests must correspond to different in-
+         * app products.
+         *
+         * @param InappproductsUpdateRequest[] $requests
+         */
+        public function setRequests($requests)
+        {
+        }
+        /**
+         * @return InappproductsUpdateRequest[]
+         */
+        public function getRequests()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InappproductsUpdateRequest[]
+     * Runtime class alias of \Google\Service\AndroidPublisher\InappproductsBatchUpdateRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequests()
+    class Google_Service_AndroidPublisher_InappproductsBatchUpdateRequest extends \Google\Service\AndroidPublisher\InappproductsBatchUpdateRequest
     {
     }
 }

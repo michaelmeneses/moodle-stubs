@@ -21,106 +21,118 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CertificateManager\Resource;
-
-/**
- * The "certificateIssuanceConfigs" collection of methods.
- * Typical usage is:
- *  <code>
- *   $certificatemanagerService = new Google\Service\CertificateManager(...);
- *   $certificateIssuanceConfigs = $certificatemanagerService->projects_locations_certificateIssuanceConfigs;
- *  </code>
- */
-class ProjectsLocationsCertificateIssuanceConfigs extends \Google\Service\Resource
-{
+namespace Google\Service\CertificateManager\Resource {
+    use Google\Service\CertificateManager\CertificateIssuanceConfig;
+    use Google\Service\CertificateManager\ListCertificateIssuanceConfigsResponse;
+    use Google\Service\CertificateManager\Operation;
     /**
-     * Creates a new CertificateIssuanceConfig in a given project and location.
-     * (certificateIssuanceConfigs.create)
-     *
-     * @param string $parent Required. The parent resource of the certificate
-     * issuance config. Must be in the format `projects/locations`.
-     * @param CertificateIssuanceConfig $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string certificateIssuanceConfigId Required. A user-provided name
-     * of the certificate config.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * The "certificateIssuanceConfigs" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $certificatemanagerService = new Google\Service\CertificateManager(...);
+     *   $certificateIssuanceConfigs = $certificatemanagerService->projects_locations_certificateIssuanceConfigs;
+     *  </code>
      */
-    public function create($parent, CertificateIssuanceConfig $postBody, $optParams = [])
+    class ProjectsLocationsCertificateIssuanceConfigs extends \Google\Service\Resource
     {
+        /**
+         * Creates a new CertificateIssuanceConfig in a given project and location.
+         * (certificateIssuanceConfigs.create)
+         *
+         * @param string $parent Required. The parent resource of the certificate
+         * issuance config. Must be in the format `projects/locations`.
+         * @param CertificateIssuanceConfig $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string certificateIssuanceConfigId Required. A user-provided name
+         * of the certificate config.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, CertificateIssuanceConfig $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a single CertificateIssuanceConfig.
+         * (certificateIssuanceConfigs.delete)
+         *
+         * @param string $name Required. A name of the certificate issuance config to
+         * delete. Must be in the format
+         * `projects/locations/certificateIssuanceConfigs`.
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets details of a single CertificateIssuanceConfig.
+         * (certificateIssuanceConfigs.get)
+         *
+         * @param string $name Required. A name of the certificate issuance config to
+         * describe. Must be in the format
+         * `projects/locations/certificateIssuanceConfigs`.
+         * @param array $optParams Optional parameters.
+         * @return CertificateIssuanceConfig
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists CertificateIssuanceConfigs in a given project and location.
+         * (certificateIssuanceConfigs.listProjectsLocationsCertificateIssuanceConfigs)
+         *
+         * @param string $parent Required. The project and location from which the
+         * certificate should be listed, specified in the format `projects/locations`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Optional. Filter expression to restrict the
+         * Certificates Configs returned.
+         * @opt_param string orderBy Optional. A list of Certificate Config field names
+         * used to specify the order of the returned results. The default sorting order
+         * is ascending. To specify descending order for a field, add a suffix `"
+         * desc"`.
+         * @opt_param int pageSize Optional. Maximum number of certificate configs to
+         * return per call.
+         * @opt_param string pageToken Optional. The value returned by the last
+         * `ListCertificateIssuanceConfigsResponse`. Indicates that this is a
+         * continuation of a prior `ListCertificateIssuanceConfigs` call, and that the
+         * system should return the next page of data.
+         * @return ListCertificateIssuanceConfigsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsCertificateIssuanceConfigs($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates a CertificateIssuanceConfig. (certificateIssuanceConfigs.patch)
+         *
+         * @param string $name Identifier. A user-defined name of the certificate
+         * issuance config. CertificateIssuanceConfig names must be unique globally and
+         * match pattern `projects/locations/certificateIssuanceConfigs`.
+         * @param CertificateIssuanceConfig $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Required. The update mask applies to the
+         * resource. For the `FieldMask` definition, see
+         * https://developers.google.com/protocol-
+         * buffers/docs/reference/google.protobuf#fieldmask.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, CertificateIssuanceConfig $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a single CertificateIssuanceConfig.
-     * (certificateIssuanceConfigs.delete)
-     *
-     * @param string $name Required. A name of the certificate issuance config to
-     * delete. Must be in the format
-     * `projects/locations/certificateIssuanceConfigs`.
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\CertificateManager\Resource\ProjectsLocationsCertificateIssuanceConfigs registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets details of a single CertificateIssuanceConfig.
-     * (certificateIssuanceConfigs.get)
-     *
-     * @param string $name Required. A name of the certificate issuance config to
-     * describe. Must be in the format
-     * `projects/locations/certificateIssuanceConfigs`.
-     * @param array $optParams Optional parameters.
-     * @return CertificateIssuanceConfig
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists CertificateIssuanceConfigs in a given project and location.
-     * (certificateIssuanceConfigs.listProjectsLocationsCertificateIssuanceConfigs)
-     *
-     * @param string $parent Required. The project and location from which the
-     * certificate should be listed, specified in the format `projects/locations`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Optional. Filter expression to restrict the
-     * Certificates Configs returned.
-     * @opt_param string orderBy Optional. A list of Certificate Config field names
-     * used to specify the order of the returned results. The default sorting order
-     * is ascending. To specify descending order for a field, add a suffix `"
-     * desc"`.
-     * @opt_param int pageSize Optional. Maximum number of certificate configs to
-     * return per call.
-     * @opt_param string pageToken Optional. The value returned by the last
-     * `ListCertificateIssuanceConfigsResponse`. Indicates that this is a
-     * continuation of a prior `ListCertificateIssuanceConfigs` call, and that the
-     * system should return the next page of data.
-     * @return ListCertificateIssuanceConfigsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsCertificateIssuanceConfigs($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates a CertificateIssuanceConfig. (certificateIssuanceConfigs.patch)
-     *
-     * @param string $name Identifier. A user-defined name of the certificate
-     * issuance config. CertificateIssuanceConfig names must be unique globally and
-     * match pattern `projects/locations/certificateIssuanceConfigs`.
-     * @param CertificateIssuanceConfig $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Required. The update mask applies to the
-     * resource. For the `FieldMask` definition, see
-     * https://developers.google.com/protocol-
-     * buffers/docs/reference/google.protobuf#fieldmask.
-     * @return Operation
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, CertificateIssuanceConfig $postBody, $optParams = [])
+    class Google_Service_CertificateManager_Resource_ProjectsLocationsCertificateIssuanceConfigs extends \Google\Service\CertificateManager\Resource\ProjectsLocationsCertificateIssuanceConfigs
     {
     }
 }

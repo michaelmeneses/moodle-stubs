@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class SecurityPolicyRulePreconfiguredWafConfig extends \Google\Collection
-{
-    protected $collection_key = 'exclusions';
-    protected $exclusionsType = SecurityPolicyRulePreconfiguredWafConfigExclusion::class;
-    protected $exclusionsDataType = 'array';
-    /**
-     * A list of exclusions to apply during preconfigured WAF evaluation.
-     *
-     * @param SecurityPolicyRulePreconfiguredWafConfigExclusion[] $exclusions
-     */
-    public function setExclusions($exclusions)
+namespace Google\Service\Compute {
+    class SecurityPolicyRulePreconfiguredWafConfig extends \Google\Collection
     {
+        protected $collection_key = 'exclusions';
+        protected $exclusionsType = SecurityPolicyRulePreconfiguredWafConfigExclusion::class;
+        protected $exclusionsDataType = 'array';
+        /**
+         * A list of exclusions to apply during preconfigured WAF evaluation.
+         *
+         * @param SecurityPolicyRulePreconfiguredWafConfigExclusion[] $exclusions
+         */
+        public function setExclusions($exclusions)
+        {
+        }
+        /**
+         * @return SecurityPolicyRulePreconfiguredWafConfigExclusion[]
+         */
+        public function getExclusions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SecurityPolicyRulePreconfiguredWafConfigExclusion[]
+     * Runtime class alias of \Google\Service\Compute\SecurityPolicyRulePreconfiguredWafConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExclusions()
+    class Google_Service_Compute_SecurityPolicyRulePreconfiguredWafConfig extends \Google\Service\Compute\SecurityPolicyRulePreconfiguredWafConfig
     {
     }
 }

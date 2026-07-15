@@ -21,188 +21,197 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class PosSaleRequest extends \Google\Model
-{
-    /**
-     * Required. The two-letter ISO 639-1 language code for the item.
-     *
-     * @var string
-     */
-    public $contentLanguage;
-    /**
-     * Global Trade Item Number.
-     *
-     * @var string
-     */
-    public $gtin;
-    /**
-     * Required. A unique identifier for the item.
-     *
-     * @var string
-     */
-    public $itemId;
-    protected $priceType = Price::class;
-    protected $priceDataType = '';
-    /**
-     * Required. The relative change of the available quantity. Negative for items
-     * returned.
-     *
-     * @var string
-     */
-    public $quantity;
-    /**
-     * A unique ID to group items from the same sale event.
-     *
-     * @var string
-     */
-    public $saleId;
-    /**
-     * Required. The identifier of the merchant's store. Either a `storeCode`
-     * inserted through the API or the code of the store in a Business Profile.
-     *
-     * @var string
-     */
-    public $storeCode;
-    /**
-     * Required. The CLDR territory code for the item.
-     *
-     * @var string
-     */
-    public $targetCountry;
-    /**
-     * Required. The inventory timestamp, in ISO 8601 format.
-     *
-     * @var string
-     */
-    public $timestamp;
-    /**
-     * Required. The two-letter ISO 639-1 language code for the item.
-     *
-     * @param string $contentLanguage
-     */
-    public function setContentLanguage($contentLanguage)
+namespace Google\Service\ShoppingContent {
+    class PosSaleRequest extends \Google\Model
     {
+        /**
+         * Required. The two-letter ISO 639-1 language code for the item.
+         *
+         * @var string
+         */
+        public $contentLanguage;
+        /**
+         * Global Trade Item Number.
+         *
+         * @var string
+         */
+        public $gtin;
+        /**
+         * Required. A unique identifier for the item.
+         *
+         * @var string
+         */
+        public $itemId;
+        protected $priceType = Price::class;
+        protected $priceDataType = '';
+        /**
+         * Required. The relative change of the available quantity. Negative for items
+         * returned.
+         *
+         * @var string
+         */
+        public $quantity;
+        /**
+         * A unique ID to group items from the same sale event.
+         *
+         * @var string
+         */
+        public $saleId;
+        /**
+         * Required. The identifier of the merchant's store. Either a `storeCode`
+         * inserted through the API or the code of the store in a Business Profile.
+         *
+         * @var string
+         */
+        public $storeCode;
+        /**
+         * Required. The CLDR territory code for the item.
+         *
+         * @var string
+         */
+        public $targetCountry;
+        /**
+         * Required. The inventory timestamp, in ISO 8601 format.
+         *
+         * @var string
+         */
+        public $timestamp;
+        /**
+         * Required. The two-letter ISO 639-1 language code for the item.
+         *
+         * @param string $contentLanguage
+         */
+        public function setContentLanguage($contentLanguage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContentLanguage()
+        {
+        }
+        /**
+         * Global Trade Item Number.
+         *
+         * @param string $gtin
+         */
+        public function setGtin($gtin)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGtin()
+        {
+        }
+        /**
+         * Required. A unique identifier for the item.
+         *
+         * @param string $itemId
+         */
+        public function setItemId($itemId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getItemId()
+        {
+        }
+        /**
+         * Required. The price of the item.
+         *
+         * @param Price $price
+         */
+        public function setPrice(Price $price)
+        {
+        }
+        /**
+         * @return Price
+         */
+        public function getPrice()
+        {
+        }
+        /**
+         * Required. The relative change of the available quantity. Negative for items
+         * returned.
+         *
+         * @param string $quantity
+         */
+        public function setQuantity($quantity)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQuantity()
+        {
+        }
+        /**
+         * A unique ID to group items from the same sale event.
+         *
+         * @param string $saleId
+         */
+        public function setSaleId($saleId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSaleId()
+        {
+        }
+        /**
+         * Required. The identifier of the merchant's store. Either a `storeCode`
+         * inserted through the API or the code of the store in a Business Profile.
+         *
+         * @param string $storeCode
+         */
+        public function setStoreCode($storeCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStoreCode()
+        {
+        }
+        /**
+         * Required. The CLDR territory code for the item.
+         *
+         * @param string $targetCountry
+         */
+        public function setTargetCountry($targetCountry)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetCountry()
+        {
+        }
+        /**
+         * Required. The inventory timestamp, in ISO 8601 format.
+         *
+         * @param string $timestamp
+         */
+        public function setTimestamp($timestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimestamp()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\PosSaleRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContentLanguage()
-    {
-    }
-    /**
-     * Global Trade Item Number.
-     *
-     * @param string $gtin
-     */
-    public function setGtin($gtin)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGtin()
-    {
-    }
-    /**
-     * Required. A unique identifier for the item.
-     *
-     * @param string $itemId
-     */
-    public function setItemId($itemId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getItemId()
-    {
-    }
-    /**
-     * Required. The price of the item.
-     *
-     * @param Price $price
-     */
-    public function setPrice(Price $price)
-    {
-    }
-    /**
-     * @return Price
-     */
-    public function getPrice()
-    {
-    }
-    /**
-     * Required. The relative change of the available quantity. Negative for items
-     * returned.
-     *
-     * @param string $quantity
-     */
-    public function setQuantity($quantity)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQuantity()
-    {
-    }
-    /**
-     * A unique ID to group items from the same sale event.
-     *
-     * @param string $saleId
-     */
-    public function setSaleId($saleId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSaleId()
-    {
-    }
-    /**
-     * Required. The identifier of the merchant's store. Either a `storeCode`
-     * inserted through the API or the code of the store in a Business Profile.
-     *
-     * @param string $storeCode
-     */
-    public function setStoreCode($storeCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStoreCode()
-    {
-    }
-    /**
-     * Required. The CLDR territory code for the item.
-     *
-     * @param string $targetCountry
-     */
-    public function setTargetCountry($targetCountry)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetCountry()
-    {
-    }
-    /**
-     * Required. The inventory timestamp, in ISO 8601 format.
-     *
-     * @param string $timestamp
-     */
-    public function setTimestamp($timestamp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimestamp()
+    class Google_Service_ShoppingContent_PosSaleRequest extends \Google\Service\ShoppingContent\PosSaleRequest
     {
     }
 }

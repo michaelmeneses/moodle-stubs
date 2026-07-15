@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1AdjustDeveloperBalanceRequest extends \Google\Model
-{
-    protected $adjustmentType = GoogleTypeMoney::class;
-    protected $adjustmentDataType = '';
-    /**
-     * * A positive value of `adjustment` means that that the API provider wants
-     * to adjust the balance for an under-charged developer i.e. the balance of
-     * the developer will decrease. * A negative value of `adjustment` means that
-     * that the API provider wants to adjust the balance for an over-charged
-     * developer i.e. the balance of the developer will increase. NOTE: An
-     * adjustment cannot increase the balance of the developer beyond the balance
-     * as of the most recent credit. For example, if a developer's balance is
-     * updated to be $100, and they spend $10, a negative adjustment can only
-     * increase the balance of the developer to $100.
-     *
-     * @param GoogleTypeMoney $adjustment
-     */
-    public function setAdjustment(GoogleTypeMoney $adjustment)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1AdjustDeveloperBalanceRequest extends \Google\Model
     {
+        protected $adjustmentType = GoogleTypeMoney::class;
+        protected $adjustmentDataType = '';
+        /**
+         * * A positive value of `adjustment` means that that the API provider wants
+         * to adjust the balance for an under-charged developer i.e. the balance of
+         * the developer will decrease. * A negative value of `adjustment` means that
+         * that the API provider wants to adjust the balance for an over-charged
+         * developer i.e. the balance of the developer will increase. NOTE: An
+         * adjustment cannot increase the balance of the developer beyond the balance
+         * as of the most recent credit. For example, if a developer's balance is
+         * updated to be $100, and they spend $10, a negative adjustment can only
+         * increase the balance of the developer to $100.
+         *
+         * @param GoogleTypeMoney $adjustment
+         */
+        public function setAdjustment(GoogleTypeMoney $adjustment)
+        {
+        }
+        /**
+         * @return GoogleTypeMoney
+         */
+        public function getAdjustment()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleTypeMoney
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1AdjustDeveloperBalanceRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdjustment()
+    class Google_Service_Apigee_GoogleCloudApigeeV1AdjustDeveloperBalanceRequest extends \Google\Service\Apigee\GoogleCloudApigeeV1AdjustDeveloperBalanceRequest
     {
     }
 }

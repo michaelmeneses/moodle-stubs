@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class Thumbnail extends \Google\Model
-{
-    /**
-     * The thumbnail's content type, i.e. "image/png". Always set.
-     *
-     * @var string
-     */
-    public $contentType;
-    /**
-     * The thumbnail file itself. That is, the bytes here are precisely the bytes
-     * that make up the thumbnail file; they can be served as an image as-is (with
-     * the appropriate content type.) Always set.
-     *
-     * @var string
-     */
-    public $data;
-    /**
-     * The height of the thumbnail, in pixels. Always set.
-     *
-     * @var int
-     */
-    public $heightPx;
-    /**
-     * The width of the thumbnail, in pixels. Always set.
-     *
-     * @var int
-     */
-    public $widthPx;
-    /**
-     * The thumbnail's content type, i.e. "image/png". Always set.
-     *
-     * @param string $contentType
-     */
-    public function setContentType($contentType)
+namespace Google\Service\ToolResults {
+    class Thumbnail extends \Google\Model
     {
+        /**
+         * The thumbnail's content type, i.e. "image/png". Always set.
+         *
+         * @var string
+         */
+        public $contentType;
+        /**
+         * The thumbnail file itself. That is, the bytes here are precisely the bytes
+         * that make up the thumbnail file; they can be served as an image as-is (with
+         * the appropriate content type.) Always set.
+         *
+         * @var string
+         */
+        public $data;
+        /**
+         * The height of the thumbnail, in pixels. Always set.
+         *
+         * @var int
+         */
+        public $heightPx;
+        /**
+         * The width of the thumbnail, in pixels. Always set.
+         *
+         * @var int
+         */
+        public $widthPx;
+        /**
+         * The thumbnail's content type, i.e. "image/png". Always set.
+         *
+         * @param string $contentType
+         */
+        public function setContentType($contentType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContentType()
+        {
+        }
+        /**
+         * The thumbnail file itself. That is, the bytes here are precisely the bytes
+         * that make up the thumbnail file; they can be served as an image as-is (with
+         * the appropriate content type.) Always set.
+         *
+         * @param string $data
+         */
+        public function setData($data)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getData()
+        {
+        }
+        /**
+         * The height of the thumbnail, in pixels. Always set.
+         *
+         * @param int $heightPx
+         */
+        public function setHeightPx($heightPx)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getHeightPx()
+        {
+        }
+        /**
+         * The width of the thumbnail, in pixels. Always set.
+         *
+         * @param int $widthPx
+         */
+        public function setWidthPx($widthPx)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getWidthPx()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ToolResults\Thumbnail registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContentType()
-    {
-    }
-    /**
-     * The thumbnail file itself. That is, the bytes here are precisely the bytes
-     * that make up the thumbnail file; they can be served as an image as-is (with
-     * the appropriate content type.) Always set.
-     *
-     * @param string $data
-     */
-    public function setData($data)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getData()
-    {
-    }
-    /**
-     * The height of the thumbnail, in pixels. Always set.
-     *
-     * @param int $heightPx
-     */
-    public function setHeightPx($heightPx)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getHeightPx()
-    {
-    }
-    /**
-     * The width of the thumbnail, in pixels. Always set.
-     *
-     * @param int $widthPx
-     */
-    public function setWidthPx($widthPx)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getWidthPx()
+    class Google_Service_ToolResults_Thumbnail extends \Google\Service\ToolResults\Thumbnail
     {
     }
 }

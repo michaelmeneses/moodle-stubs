@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2SaveFindings extends \Google\Model
-{
-    protected $outputConfigType = GooglePrivacyDlpV2OutputStorageConfig::class;
-    protected $outputConfigDataType = '';
-    /**
-     * Location to store findings outside of DLP.
-     *
-     * @param GooglePrivacyDlpV2OutputStorageConfig $outputConfig
-     */
-    public function setOutputConfig(GooglePrivacyDlpV2OutputStorageConfig $outputConfig)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2SaveFindings extends \Google\Model
     {
+        protected $outputConfigType = GooglePrivacyDlpV2OutputStorageConfig::class;
+        protected $outputConfigDataType = '';
+        /**
+         * Location to store findings outside of DLP.
+         *
+         * @param GooglePrivacyDlpV2OutputStorageConfig $outputConfig
+         */
+        public function setOutputConfig(GooglePrivacyDlpV2OutputStorageConfig $outputConfig)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2OutputStorageConfig
+         */
+        public function getOutputConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2OutputStorageConfig
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2SaveFindings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOutputConfig()
+    class Google_Service_DLP_GooglePrivacyDlpV2SaveFindings extends \Google\Service\DLP\GooglePrivacyDlpV2SaveFindings
     {
     }
 }

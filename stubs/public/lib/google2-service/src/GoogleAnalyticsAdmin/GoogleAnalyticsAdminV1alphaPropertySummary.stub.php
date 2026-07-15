@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaPropertySummary extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $displayName;
-    /**
-     * @var string
-     */
-    public $parent;
-    /**
-     * @var string
-     */
-    public $property;
-    /**
-     * @var string
-     */
-    public $propertyType;
-    /**
-     * @param string
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaPropertySummary extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $displayName;
+        /**
+         * @var string
+         */
+        public $parent;
+        /**
+         * @var string
+         */
+        public $property;
+        /**
+         * @var string
+         */
+        public $propertyType;
+        /**
+         * @param string
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setParent($parent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParent()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setProperty($property)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProperty()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPropertyType($propertyType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPropertyType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaPropertySummary registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setParent($parent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParent()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setProperty($property)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProperty()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPropertyType($propertyType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPropertyType()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaPropertySummary extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaPropertySummary
     {
     }
 }

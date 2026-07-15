@@ -21,189 +21,198 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\IdentityToolkit;
-
-class CreateAuthUriResponse extends \Google\Collection
-{
-    protected $collection_key = 'signinMethods';
-    /**
-     * all providers the user has once used to do federated login
-     *
-     * @var string[]
-     */
-    public $allProviders;
-    /**
-     * The URI used by the IDP to authenticate the user.
-     *
-     * @var string
-     */
-    public $authUri;
-    /**
-     * True if captcha is required.
-     *
-     * @var bool
-     */
-    public $captchaRequired;
-    /**
-     * True if the authUri is for user's existing provider.
-     *
-     * @var bool
-     */
-    public $forExistingProvider;
-    /**
-     * The fixed string identitytoolkit#CreateAuthUriResponse".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The provider ID of the auth URI.
-     *
-     * @var string
-     */
-    public $providerId;
-    /**
-     * Whether the user is registered if the identifier is an email.
-     *
-     * @var bool
-     */
-    public $registered;
-    /**
-     * Session ID which should be passed in the following verifyAssertion request.
-     *
-     * @var string
-     */
-    public $sessionId;
-    /**
-     * All sign-in methods this user has used.
-     *
-     * @var string[]
-     */
-    public $signinMethods;
-    /**
-     * all providers the user has once used to do federated login
-     *
-     * @param string[] $allProviders
-     */
-    public function setAllProviders($allProviders)
+namespace Google\Service\IdentityToolkit {
+    class CreateAuthUriResponse extends \Google\Collection
     {
+        protected $collection_key = 'signinMethods';
+        /**
+         * all providers the user has once used to do federated login
+         *
+         * @var string[]
+         */
+        public $allProviders;
+        /**
+         * The URI used by the IDP to authenticate the user.
+         *
+         * @var string
+         */
+        public $authUri;
+        /**
+         * True if captcha is required.
+         *
+         * @var bool
+         */
+        public $captchaRequired;
+        /**
+         * True if the authUri is for user's existing provider.
+         *
+         * @var bool
+         */
+        public $forExistingProvider;
+        /**
+         * The fixed string identitytoolkit#CreateAuthUriResponse".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The provider ID of the auth URI.
+         *
+         * @var string
+         */
+        public $providerId;
+        /**
+         * Whether the user is registered if the identifier is an email.
+         *
+         * @var bool
+         */
+        public $registered;
+        /**
+         * Session ID which should be passed in the following verifyAssertion request.
+         *
+         * @var string
+         */
+        public $sessionId;
+        /**
+         * All sign-in methods this user has used.
+         *
+         * @var string[]
+         */
+        public $signinMethods;
+        /**
+         * all providers the user has once used to do federated login
+         *
+         * @param string[] $allProviders
+         */
+        public function setAllProviders($allProviders)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAllProviders()
+        {
+        }
+        /**
+         * The URI used by the IDP to authenticate the user.
+         *
+         * @param string $authUri
+         */
+        public function setAuthUri($authUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAuthUri()
+        {
+        }
+        /**
+         * True if captcha is required.
+         *
+         * @param bool $captchaRequired
+         */
+        public function setCaptchaRequired($captchaRequired)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCaptchaRequired()
+        {
+        }
+        /**
+         * True if the authUri is for user's existing provider.
+         *
+         * @param bool $forExistingProvider
+         */
+        public function setForExistingProvider($forExistingProvider)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getForExistingProvider()
+        {
+        }
+        /**
+         * The fixed string identitytoolkit#CreateAuthUriResponse".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The provider ID of the auth URI.
+         *
+         * @param string $providerId
+         */
+        public function setProviderId($providerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProviderId()
+        {
+        }
+        /**
+         * Whether the user is registered if the identifier is an email.
+         *
+         * @param bool $registered
+         */
+        public function setRegistered($registered)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getRegistered()
+        {
+        }
+        /**
+         * Session ID which should be passed in the following verifyAssertion request.
+         *
+         * @param string $sessionId
+         */
+        public function setSessionId($sessionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSessionId()
+        {
+        }
+        /**
+         * All sign-in methods this user has used.
+         *
+         * @param string[] $signinMethods
+         */
+        public function setSigninMethods($signinMethods)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSigninMethods()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\IdentityToolkit\CreateAuthUriResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllProviders()
-    {
-    }
-    /**
-     * The URI used by the IDP to authenticate the user.
-     *
-     * @param string $authUri
-     */
-    public function setAuthUri($authUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAuthUri()
-    {
-    }
-    /**
-     * True if captcha is required.
-     *
-     * @param bool $captchaRequired
-     */
-    public function setCaptchaRequired($captchaRequired)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCaptchaRequired()
-    {
-    }
-    /**
-     * True if the authUri is for user's existing provider.
-     *
-     * @param bool $forExistingProvider
-     */
-    public function setForExistingProvider($forExistingProvider)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getForExistingProvider()
-    {
-    }
-    /**
-     * The fixed string identitytoolkit#CreateAuthUriResponse".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The provider ID of the auth URI.
-     *
-     * @param string $providerId
-     */
-    public function setProviderId($providerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProviderId()
-    {
-    }
-    /**
-     * Whether the user is registered if the identifier is an email.
-     *
-     * @param bool $registered
-     */
-    public function setRegistered($registered)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getRegistered()
-    {
-    }
-    /**
-     * Session ID which should be passed in the following verifyAssertion request.
-     *
-     * @param string $sessionId
-     */
-    public function setSessionId($sessionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSessionId()
-    {
-    }
-    /**
-     * All sign-in methods this user has used.
-     *
-     * @param string[] $signinMethods
-     */
-    public function setSigninMethods($signinMethods)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSigninMethods()
+    class Google_Service_IdentityToolkit_CreateAuthUriResponse extends \Google\Service\IdentityToolkit\CreateAuthUriResponse
     {
     }
 }

@@ -21,27 +21,36 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudMachineLearningEngine;
-
-class GoogleCloudMlV1ListOptimalTrialsResponse extends \Google\Collection
-{
-    protected $collection_key = 'trials';
-    protected $trialsType = GoogleCloudMlV1Trial::class;
-    protected $trialsDataType = 'array';
-    /**
-     * The pareto-optimal trials for multiple objective study or the optimal trial
-     * for single objective study. The definition of pareto-optimal can be checked
-     * in wiki page. https://en.wikipedia.org/wiki/Pareto_efficiency
-     *
-     * @param GoogleCloudMlV1Trial[] $trials
-     */
-    public function setTrials($trials)
+namespace Google\Service\CloudMachineLearningEngine {
+    class GoogleCloudMlV1ListOptimalTrialsResponse extends \Google\Collection
     {
+        protected $collection_key = 'trials';
+        protected $trialsType = GoogleCloudMlV1Trial::class;
+        protected $trialsDataType = 'array';
+        /**
+         * The pareto-optimal trials for multiple objective study or the optimal trial
+         * for single objective study. The definition of pareto-optimal can be checked
+         * in wiki page. https://en.wikipedia.org/wiki/Pareto_efficiency
+         *
+         * @param GoogleCloudMlV1Trial[] $trials
+         */
+        public function setTrials($trials)
+        {
+        }
+        /**
+         * @return GoogleCloudMlV1Trial[]
+         */
+        public function getTrials()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudMlV1Trial[]
+     * Runtime class alias of \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1ListOptimalTrialsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTrials()
+    class Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1ListOptimalTrialsResponse extends \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1ListOptimalTrialsResponse
     {
     }
 }

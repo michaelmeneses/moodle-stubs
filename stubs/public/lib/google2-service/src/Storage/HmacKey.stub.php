@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storage;
-
-class HmacKey extends \Google\Model
-{
-    /**
-     * The kind of item this is. For HMAC keys, this is always storage#hmacKey.
-     *
-     * @var string
-     */
-    public $kind;
-    protected $metadataType = HmacKeyMetadata::class;
-    protected $metadataDataType = '';
-    /**
-     * HMAC secret key material.
-     *
-     * @var string
-     */
-    public $secret;
-    /**
-     * The kind of item this is. For HMAC keys, this is always storage#hmacKey.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Storage {
+    class HmacKey extends \Google\Model
     {
+        /**
+         * The kind of item this is. For HMAC keys, this is always storage#hmacKey.
+         *
+         * @var string
+         */
+        public $kind;
+        protected $metadataType = HmacKeyMetadata::class;
+        protected $metadataDataType = '';
+        /**
+         * HMAC secret key material.
+         *
+         * @var string
+         */
+        public $secret;
+        /**
+         * The kind of item this is. For HMAC keys, this is always storage#hmacKey.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Key metadata.
+         *
+         * @param HmacKeyMetadata $metadata
+         */
+        public function setMetadata(HmacKeyMetadata $metadata)
+        {
+        }
+        /**
+         * @return HmacKeyMetadata
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * HMAC secret key material.
+         *
+         * @param string $secret
+         */
+        public function setSecret($secret)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSecret()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Storage\HmacKey registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * Key metadata.
-     *
-     * @param HmacKeyMetadata $metadata
-     */
-    public function setMetadata(HmacKeyMetadata $metadata)
-    {
-    }
-    /**
-     * @return HmacKeyMetadata
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * HMAC secret key material.
-     *
-     * @param string $secret
-     */
-    public function setSecret($secret)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSecret()
+    class Google_Service_Storage_HmacKey extends \Google\Service\Storage\HmacKey
     {
     }
 }

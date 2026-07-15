@@ -21,136 +21,145 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class ComplianceSnapshot extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $category;
-    /**
-     * @var string
-     */
-    public $cloudProvider;
-    /**
-     * @var string
-     */
-    public $complianceStandard;
-    /**
-     * @var string
-     */
-    public $complianceVersion;
-    /**
-     * @var string
-     */
-    public $count;
-    /**
-     * @var string
-     */
-    public $leafContainerResource;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $snapshotTime;
-    /**
-     * @param string
-     */
-    public function setCategory($category)
+namespace Google\Service\SecurityCommandCenter {
+    class ComplianceSnapshot extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $category;
+        /**
+         * @var string
+         */
+        public $cloudProvider;
+        /**
+         * @var string
+         */
+        public $complianceStandard;
+        /**
+         * @var string
+         */
+        public $complianceVersion;
+        /**
+         * @var string
+         */
+        public $count;
+        /**
+         * @var string
+         */
+        public $leafContainerResource;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $snapshotTime;
+        /**
+         * @param string
+         */
+        public function setCategory($category)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCategory()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCloudProvider($cloudProvider)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCloudProvider()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setComplianceStandard($complianceStandard)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getComplianceStandard()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setComplianceVersion($complianceVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getComplianceVersion()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCount($count)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCount()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLeafContainerResource($leafContainerResource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLeafContainerResource()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSnapshotTime($snapshotTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSnapshotTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\ComplianceSnapshot registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCategory()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCloudProvider($cloudProvider)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCloudProvider()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setComplianceStandard($complianceStandard)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getComplianceStandard()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setComplianceVersion($complianceVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getComplianceVersion()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCount($count)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCount()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLeafContainerResource($leafContainerResource)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLeafContainerResource()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSnapshotTime($snapshotTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSnapshotTime()
+    class Google_Service_SecurityCommandCenter_ComplianceSnapshot extends \Google\Service\SecurityCommandCenter\ComplianceSnapshot
     {
     }
 }

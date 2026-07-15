@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class OrdersAcknowledgeRequest extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $operationId;
-    /**
-     * @param string
-     */
-    public function setOperationId($operationId)
+namespace Google\Service\ShoppingContent {
+    class OrdersAcknowledgeRequest extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $operationId;
+        /**
+         * @param string
+         */
+        public function setOperationId($operationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOperationId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\OrdersAcknowledgeRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOperationId()
+    class Google_Service_ShoppingContent_OrdersAcknowledgeRequest extends \Google\Service\ShoppingContent\OrdersAcknowledgeRequest
     {
     }
 }

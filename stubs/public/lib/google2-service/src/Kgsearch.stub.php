@@ -21,33 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for Kgsearch (v1).
- *
- * <p>
- * Searches the Google Knowledge Graph for entities.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://developers.google.com/knowledge-graph/" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class Kgsearch extends \Google\Service
-{
-    public $entities;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the Kgsearch service.
+     * Service definition for Kgsearch (v1).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * Searches the Google Knowledge Graph for entities.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://developers.google.com/knowledge-graph/" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class Kgsearch extends \Google\Service
+    {
+        public $entities;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the Kgsearch service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Kgsearch registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Kgsearch extends \Google\Service\Kgsearch
     {
     }
 }

@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class ShuffleWriteQuantileMetrics extends \Google\Model
-{
-    protected $writeBytesType = Quantiles::class;
-    protected $writeBytesDataType = '';
-    protected $writeRecordsType = Quantiles::class;
-    protected $writeRecordsDataType = '';
-    protected $writeTimeNanosType = Quantiles::class;
-    protected $writeTimeNanosDataType = '';
-    /**
-     * @param Quantiles $writeBytes
-     */
-    public function setWriteBytes(Quantiles $writeBytes)
+namespace Google\Service\Dataproc {
+    class ShuffleWriteQuantileMetrics extends \Google\Model
     {
+        protected $writeBytesType = Quantiles::class;
+        protected $writeBytesDataType = '';
+        protected $writeRecordsType = Quantiles::class;
+        protected $writeRecordsDataType = '';
+        protected $writeTimeNanosType = Quantiles::class;
+        protected $writeTimeNanosDataType = '';
+        /**
+         * @param Quantiles $writeBytes
+         */
+        public function setWriteBytes(Quantiles $writeBytes)
+        {
+        }
+        /**
+         * @return Quantiles
+         */
+        public function getWriteBytes()
+        {
+        }
+        /**
+         * @param Quantiles $writeRecords
+         */
+        public function setWriteRecords(Quantiles $writeRecords)
+        {
+        }
+        /**
+         * @return Quantiles
+         */
+        public function getWriteRecords()
+        {
+        }
+        /**
+         * @param Quantiles $writeTimeNanos
+         */
+        public function setWriteTimeNanos(Quantiles $writeTimeNanos)
+        {
+        }
+        /**
+         * @return Quantiles
+         */
+        public function getWriteTimeNanos()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Quantiles
+     * Runtime class alias of \Google\Service\Dataproc\ShuffleWriteQuantileMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getWriteBytes()
-    {
-    }
-    /**
-     * @param Quantiles $writeRecords
-     */
-    public function setWriteRecords(Quantiles $writeRecords)
-    {
-    }
-    /**
-     * @return Quantiles
-     */
-    public function getWriteRecords()
-    {
-    }
-    /**
-     * @param Quantiles $writeTimeNanos
-     */
-    public function setWriteTimeNanos(Quantiles $writeTimeNanos)
-    {
-    }
-    /**
-     * @return Quantiles
-     */
-    public function getWriteTimeNanos()
+    class Google_Service_Dataproc_ShuffleWriteQuantileMetrics extends \Google\Service\Dataproc\ShuffleWriteQuantileMetrics
     {
     }
 }

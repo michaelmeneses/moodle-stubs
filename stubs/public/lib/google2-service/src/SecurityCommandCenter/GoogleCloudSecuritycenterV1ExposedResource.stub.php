@@ -21,105 +21,114 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GoogleCloudSecuritycenterV1ExposedResource extends \Google\Collection
-{
-    protected $collection_key = 'methods';
-    /**
-     * @var string
-     */
-    public $displayName;
-    /**
-     * @var string[]
-     */
-    public $methods;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $resource;
-    /**
-     * @var string
-     */
-    public $resourceType;
-    /**
-     * @var string
-     */
-    public $resourceValue;
-    /**
-     * @param string
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\SecurityCommandCenter {
+    class GoogleCloudSecuritycenterV1ExposedResource extends \Google\Collection
     {
+        protected $collection_key = 'methods';
+        /**
+         * @var string
+         */
+        public $displayName;
+        /**
+         * @var string[]
+         */
+        public $methods;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $resource;
+        /**
+         * @var string
+         */
+        public $resourceType;
+        /**
+         * @var string
+         */
+        public $resourceValue;
+        /**
+         * @param string
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setMethods($methods)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMethods()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setResource($resource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResource()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setResourceType($resourceType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setResourceValue($resourceValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV1ExposedResource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setMethods($methods)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getMethods()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setResource($resource)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResource()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setResourceType($resourceType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setResourceValue($resourceValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceValue()
+    class Google_Service_SecurityCommandCenter_GoogleCloudSecuritycenterV1ExposedResource extends \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV1ExposedResource
     {
     }
 }

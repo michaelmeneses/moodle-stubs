@@ -23,6 +23,9 @@
  */
 namespace Google\Auth;
 
+use Exception;
+use Google\Auth\HttpHandler\HttpClientCache;
+use Google\Auth\HttpHandler\HttpHandlerFactory;
 trait IamSignerTrait
 {
     /**

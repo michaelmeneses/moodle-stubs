@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Backupdr;
-
-class WorkforceIdentityBasedManagementURI extends \Google\Model
-{
-    /**
-     * Output only. First party Management URI for Google Identities.
-     *
-     * @var string
-     */
-    public $firstPartyManagementUri;
-    /**
-     * Output only. Third party Management URI for External Identity Providers.
-     *
-     * @var string
-     */
-    public $thirdPartyManagementUri;
-    /**
-     * Output only. First party Management URI for Google Identities.
-     *
-     * @param string $firstPartyManagementUri
-     */
-    public function setFirstPartyManagementUri($firstPartyManagementUri)
+namespace Google\Service\Backupdr {
+    class WorkforceIdentityBasedManagementURI extends \Google\Model
     {
+        /**
+         * Output only. First party Management URI for Google Identities.
+         *
+         * @var string
+         */
+        public $firstPartyManagementUri;
+        /**
+         * Output only. Third party Management URI for External Identity Providers.
+         *
+         * @var string
+         */
+        public $thirdPartyManagementUri;
+        /**
+         * Output only. First party Management URI for Google Identities.
+         *
+         * @param string $firstPartyManagementUri
+         */
+        public function setFirstPartyManagementUri($firstPartyManagementUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFirstPartyManagementUri()
+        {
+        }
+        /**
+         * Output only. Third party Management URI for External Identity Providers.
+         *
+         * @param string $thirdPartyManagementUri
+         */
+        public function setThirdPartyManagementUri($thirdPartyManagementUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getThirdPartyManagementUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Backupdr\WorkforceIdentityBasedManagementURI registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFirstPartyManagementUri()
-    {
-    }
-    /**
-     * Output only. Third party Management URI for External Identity Providers.
-     *
-     * @param string $thirdPartyManagementUri
-     */
-    public function setThirdPartyManagementUri($thirdPartyManagementUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getThirdPartyManagementUri()
+    class Google_Service_Backupdr_WorkforceIdentityBasedManagementURI extends \Google\Service\Backupdr\WorkforceIdentityBasedManagementURI
     {
     }
 }

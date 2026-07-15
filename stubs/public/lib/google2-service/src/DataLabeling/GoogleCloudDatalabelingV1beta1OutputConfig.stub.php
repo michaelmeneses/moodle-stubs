@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1OutputConfig extends \Google\Model
-{
-    protected $gcsDestinationType = GoogleCloudDatalabelingV1beta1GcsDestination::class;
-    protected $gcsDestinationDataType = '';
-    protected $gcsFolderDestinationType = GoogleCloudDatalabelingV1beta1GcsFolderDestination::class;
-    protected $gcsFolderDestinationDataType = '';
-    /**
-     * Output to a file in Cloud Storage. Should be used for labeling output other
-     * than image segmentation.
-     *
-     * @param GoogleCloudDatalabelingV1beta1GcsDestination $gcsDestination
-     */
-    public function setGcsDestination(GoogleCloudDatalabelingV1beta1GcsDestination $gcsDestination)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1OutputConfig extends \Google\Model
     {
+        protected $gcsDestinationType = GoogleCloudDatalabelingV1beta1GcsDestination::class;
+        protected $gcsDestinationDataType = '';
+        protected $gcsFolderDestinationType = GoogleCloudDatalabelingV1beta1GcsFolderDestination::class;
+        protected $gcsFolderDestinationDataType = '';
+        /**
+         * Output to a file in Cloud Storage. Should be used for labeling output other
+         * than image segmentation.
+         *
+         * @param GoogleCloudDatalabelingV1beta1GcsDestination $gcsDestination
+         */
+        public function setGcsDestination(GoogleCloudDatalabelingV1beta1GcsDestination $gcsDestination)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1GcsDestination
+         */
+        public function getGcsDestination()
+        {
+        }
+        /**
+         * Output to a folder in Cloud Storage. Should be used for image segmentation
+         * or document de-identification labeling outputs.
+         *
+         * @param GoogleCloudDatalabelingV1beta1GcsFolderDestination $gcsFolderDestination
+         */
+        public function setGcsFolderDestination(GoogleCloudDatalabelingV1beta1GcsFolderDestination $gcsFolderDestination)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1GcsFolderDestination
+         */
+        public function getGcsFolderDestination()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatalabelingV1beta1GcsDestination
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1OutputConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGcsDestination()
-    {
-    }
-    /**
-     * Output to a folder in Cloud Storage. Should be used for image segmentation
-     * or document de-identification labeling outputs.
-     *
-     * @param GoogleCloudDatalabelingV1beta1GcsFolderDestination $gcsFolderDestination
-     */
-    public function setGcsFolderDestination(GoogleCloudDatalabelingV1beta1GcsFolderDestination $gcsFolderDestination)
-    {
-    }
-    /**
-     * @return GoogleCloudDatalabelingV1beta1GcsFolderDestination
-     */
-    public function getGcsFolderDestination()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1OutputConfig extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1OutputConfig
     {
     }
 }

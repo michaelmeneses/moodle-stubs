@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSTimestampStatsGranularStats extends \Google\Model
-{
-    /**
-     * A map from granularity key to example count for that key. E.g. for
-     * hour_of_day `13` means 1pm, or for month_of_year `5` means May).
-     *
-     * @var string[]
-     */
-    public $buckets;
-    /**
-     * A map from granularity key to example count for that key. E.g. for
-     * hour_of_day `13` means 1pm, or for month_of_year `5` means May).
-     *
-     * @param string[] $buckets
-     */
-    public function setBuckets($buckets)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSTimestampStatsGranularStats extends \Google\Model
     {
+        /**
+         * A map from granularity key to example count for that key. E.g. for
+         * hour_of_day `13` means 1pm, or for month_of_year `5` means May).
+         *
+         * @var string[]
+         */
+        public $buckets;
+        /**
+         * A map from granularity key to example count for that key. E.g. for
+         * hour_of_day `13` means 1pm, or for month_of_year `5` means May).
+         *
+         * @param string[] $buckets
+         */
+        public function setBuckets($buckets)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getBuckets()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSTimestampStatsGranularStats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBuckets()
+    class Google_Service_CloudNaturalLanguage_XPSTimestampStatsGranularStats extends \Google\Service\CloudNaturalLanguage\XPSTimestampStatsGranularStats
     {
     }
 }

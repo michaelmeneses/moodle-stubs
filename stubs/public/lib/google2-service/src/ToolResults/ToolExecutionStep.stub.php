@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class ToolExecutionStep extends \Google\Model
-{
-    protected $toolExecutionType = ToolExecution::class;
-    protected $toolExecutionDataType = '';
-    /**
-     * A Tool execution. - In response: present if set by create/update request -
-     * In create/update request: optional
-     *
-     * @param ToolExecution $toolExecution
-     */
-    public function setToolExecution(ToolExecution $toolExecution)
+namespace Google\Service\ToolResults {
+    class ToolExecutionStep extends \Google\Model
     {
+        protected $toolExecutionType = ToolExecution::class;
+        protected $toolExecutionDataType = '';
+        /**
+         * A Tool execution. - In response: present if set by create/update request -
+         * In create/update request: optional
+         *
+         * @param ToolExecution $toolExecution
+         */
+        public function setToolExecution(ToolExecution $toolExecution)
+        {
+        }
+        /**
+         * @return ToolExecution
+         */
+        public function getToolExecution()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ToolExecution
+     * Runtime class alias of \Google\Service\ToolResults\ToolExecutionStep registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getToolExecution()
+    class Google_Service_ToolResults_ToolExecutionStep extends \Google\Service\ToolResults\ToolExecutionStep
     {
     }
 }

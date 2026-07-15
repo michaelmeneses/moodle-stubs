@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics;
-
-class EntityUserLinkEntity extends \Google\Model
-{
-    protected $accountRefType = AccountRef::class;
-    protected $accountRefDataType = '';
-    protected $profileRefType = ProfileRef::class;
-    protected $profileRefDataType = '';
-    protected $webPropertyRefType = WebPropertyRef::class;
-    protected $webPropertyRefDataType = '';
-    /**
-     * Account for this link.
-     *
-     * @param AccountRef $accountRef
-     */
-    public function setAccountRef(AccountRef $accountRef)
+namespace Google\Service\Analytics {
+    class EntityUserLinkEntity extends \Google\Model
     {
+        protected $accountRefType = AccountRef::class;
+        protected $accountRefDataType = '';
+        protected $profileRefType = ProfileRef::class;
+        protected $profileRefDataType = '';
+        protected $webPropertyRefType = WebPropertyRef::class;
+        protected $webPropertyRefDataType = '';
+        /**
+         * Account for this link.
+         *
+         * @param AccountRef $accountRef
+         */
+        public function setAccountRef(AccountRef $accountRef)
+        {
+        }
+        /**
+         * @return AccountRef
+         */
+        public function getAccountRef()
+        {
+        }
+        /**
+         * View (Profile) for this link.
+         *
+         * @param ProfileRef $profileRef
+         */
+        public function setProfileRef(ProfileRef $profileRef)
+        {
+        }
+        /**
+         * @return ProfileRef
+         */
+        public function getProfileRef()
+        {
+        }
+        /**
+         * Web property for this link.
+         *
+         * @param WebPropertyRef $webPropertyRef
+         */
+        public function setWebPropertyRef(WebPropertyRef $webPropertyRef)
+        {
+        }
+        /**
+         * @return WebPropertyRef
+         */
+        public function getWebPropertyRef()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AccountRef
+     * Runtime class alias of \Google\Service\Analytics\EntityUserLinkEntity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountRef()
-    {
-    }
-    /**
-     * View (Profile) for this link.
-     *
-     * @param ProfileRef $profileRef
-     */
-    public function setProfileRef(ProfileRef $profileRef)
-    {
-    }
-    /**
-     * @return ProfileRef
-     */
-    public function getProfileRef()
-    {
-    }
-    /**
-     * Web property for this link.
-     *
-     * @param WebPropertyRef $webPropertyRef
-     */
-    public function setWebPropertyRef(WebPropertyRef $webPropertyRef)
-    {
-    }
-    /**
-     * @return WebPropertyRef
-     */
-    public function getWebPropertyRef()
+    class Google_Service_Analytics_EntityUserLinkEntity extends \Google\Service\Analytics\EntityUserLinkEntity
     {
     }
 }

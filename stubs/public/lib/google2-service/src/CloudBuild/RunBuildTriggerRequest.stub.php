@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class RunBuildTriggerRequest extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $projectId;
-    protected $sourceType = RepoSource::class;
-    protected $sourceDataType = '';
-    /**
-     * @var string
-     */
-    public $triggerId;
-    /**
-     * @param string
-     */
-    public function setProjectId($projectId)
+namespace Google\Service\CloudBuild {
+    class RunBuildTriggerRequest extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $projectId;
+        protected $sourceType = RepoSource::class;
+        protected $sourceDataType = '';
+        /**
+         * @var string
+         */
+        public $triggerId;
+        /**
+         * @param string
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
+        /**
+         * @param RepoSource
+         */
+        public function setSource(RepoSource $source)
+        {
+        }
+        /**
+         * @return RepoSource
+         */
+        public function getSource()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTriggerId($triggerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTriggerId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudBuild\RunBuildTriggerRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProjectId()
-    {
-    }
-    /**
-     * @param RepoSource
-     */
-    public function setSource(RepoSource $source)
-    {
-    }
-    /**
-     * @return RepoSource
-     */
-    public function getSource()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTriggerId($triggerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTriggerId()
+    class Google_Service_CloudBuild_RunBuildTriggerRequest extends \Google\Service\CloudBuild\RunBuildTriggerRequest
     {
     }
 }

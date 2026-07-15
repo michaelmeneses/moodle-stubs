@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class BareMetalNetworkConfig extends \Google\Model
-{
-    /**
-     * Enables the use of advanced Anthos networking features, such as Bundled
-     * Load Balancing with BGP or the egress NAT gateway. Setting configuration
-     * for advanced networking features will automatically set this flag.
-     *
-     * @var bool
-     */
-    public $advancedNetworking;
-    protected $islandModeCidrType = BareMetalIslandModeCidrConfig::class;
-    protected $islandModeCidrDataType = '';
-    protected $multipleNetworkInterfacesConfigType = BareMetalMultipleNetworkInterfacesConfig::class;
-    protected $multipleNetworkInterfacesConfigDataType = '';
-    protected $srIovConfigType = BareMetalSrIovConfig::class;
-    protected $srIovConfigDataType = '';
-    /**
-     * Enables the use of advanced Anthos networking features, such as Bundled
-     * Load Balancing with BGP or the egress NAT gateway. Setting configuration
-     * for advanced networking features will automatically set this flag.
-     *
-     * @param bool $advancedNetworking
-     */
-    public function setAdvancedNetworking($advancedNetworking)
+namespace Google\Service\GKEOnPrem {
+    class BareMetalNetworkConfig extends \Google\Model
     {
+        /**
+         * Enables the use of advanced Anthos networking features, such as Bundled
+         * Load Balancing with BGP or the egress NAT gateway. Setting configuration
+         * for advanced networking features will automatically set this flag.
+         *
+         * @var bool
+         */
+        public $advancedNetworking;
+        protected $islandModeCidrType = BareMetalIslandModeCidrConfig::class;
+        protected $islandModeCidrDataType = '';
+        protected $multipleNetworkInterfacesConfigType = BareMetalMultipleNetworkInterfacesConfig::class;
+        protected $multipleNetworkInterfacesConfigDataType = '';
+        protected $srIovConfigType = BareMetalSrIovConfig::class;
+        protected $srIovConfigDataType = '';
+        /**
+         * Enables the use of advanced Anthos networking features, such as Bundled
+         * Load Balancing with BGP or the egress NAT gateway. Setting configuration
+         * for advanced networking features will automatically set this flag.
+         *
+         * @param bool $advancedNetworking
+         */
+        public function setAdvancedNetworking($advancedNetworking)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAdvancedNetworking()
+        {
+        }
+        /**
+         * Configuration for island mode CIDR. In an island-mode network, nodes have
+         * unique IP addresses, but pods don't have unique addresses across clusters.
+         * This doesn't cause problems because pods in one cluster never directly
+         * communicate with pods in another cluster. Instead, there are gateways that
+         * mediate between a pod in one cluster and a pod in another cluster.
+         *
+         * @param BareMetalIslandModeCidrConfig $islandModeCidr
+         */
+        public function setIslandModeCidr(BareMetalIslandModeCidrConfig $islandModeCidr)
+        {
+        }
+        /**
+         * @return BareMetalIslandModeCidrConfig
+         */
+        public function getIslandModeCidr()
+        {
+        }
+        /**
+         * Configuration for multiple network interfaces.
+         *
+         * @param BareMetalMultipleNetworkInterfacesConfig $multipleNetworkInterfacesConfig
+         */
+        public function setMultipleNetworkInterfacesConfig(BareMetalMultipleNetworkInterfacesConfig $multipleNetworkInterfacesConfig)
+        {
+        }
+        /**
+         * @return BareMetalMultipleNetworkInterfacesConfig
+         */
+        public function getMultipleNetworkInterfacesConfig()
+        {
+        }
+        /**
+         * Configuration for SR-IOV.
+         *
+         * @param BareMetalSrIovConfig $srIovConfig
+         */
+        public function setSrIovConfig(BareMetalSrIovConfig $srIovConfig)
+        {
+        }
+        /**
+         * @return BareMetalSrIovConfig
+         */
+        public function getSrIovConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\GKEOnPrem\BareMetalNetworkConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdvancedNetworking()
-    {
-    }
-    /**
-     * Configuration for island mode CIDR. In an island-mode network, nodes have
-     * unique IP addresses, but pods don't have unique addresses across clusters.
-     * This doesn't cause problems because pods in one cluster never directly
-     * communicate with pods in another cluster. Instead, there are gateways that
-     * mediate between a pod in one cluster and a pod in another cluster.
-     *
-     * @param BareMetalIslandModeCidrConfig $islandModeCidr
-     */
-    public function setIslandModeCidr(BareMetalIslandModeCidrConfig $islandModeCidr)
-    {
-    }
-    /**
-     * @return BareMetalIslandModeCidrConfig
-     */
-    public function getIslandModeCidr()
-    {
-    }
-    /**
-     * Configuration for multiple network interfaces.
-     *
-     * @param BareMetalMultipleNetworkInterfacesConfig $multipleNetworkInterfacesConfig
-     */
-    public function setMultipleNetworkInterfacesConfig(BareMetalMultipleNetworkInterfacesConfig $multipleNetworkInterfacesConfig)
-    {
-    }
-    /**
-     * @return BareMetalMultipleNetworkInterfacesConfig
-     */
-    public function getMultipleNetworkInterfacesConfig()
-    {
-    }
-    /**
-     * Configuration for SR-IOV.
-     *
-     * @param BareMetalSrIovConfig $srIovConfig
-     */
-    public function setSrIovConfig(BareMetalSrIovConfig $srIovConfig)
-    {
-    }
-    /**
-     * @return BareMetalSrIovConfig
-     */
-    public function getSrIovConfig()
+    class Google_Service_GKEOnPrem_BareMetalNetworkConfig extends \Google\Service\GKEOnPrem\BareMetalNetworkConfig
     {
     }
 }

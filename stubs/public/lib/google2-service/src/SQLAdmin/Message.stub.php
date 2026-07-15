@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class Message extends \Google\Model
-{
-    /**
-     * The full message string. For PostgreSQL, this is a formatted string that
-     * may include severity, code, and the notice/warning message. For MySQL, this
-     * contains the warning message.
-     *
-     * @var string
-     */
-    public $message;
-    /**
-     * The severity of the message (e.g., "NOTICE" for PostgreSQL, "WARNING" for
-     * MySQL).
-     *
-     * @var string
-     */
-    public $severity;
-    /**
-     * The full message string. For PostgreSQL, this is a formatted string that
-     * may include severity, code, and the notice/warning message. For MySQL, this
-     * contains the warning message.
-     *
-     * @param string $message
-     */
-    public function setMessage($message)
+namespace Google\Service\SQLAdmin {
+    class Message extends \Google\Model
     {
+        /**
+         * The full message string. For PostgreSQL, this is a formatted string that
+         * may include severity, code, and the notice/warning message. For MySQL, this
+         * contains the warning message.
+         *
+         * @var string
+         */
+        public $message;
+        /**
+         * The severity of the message (e.g., "NOTICE" for PostgreSQL, "WARNING" for
+         * MySQL).
+         *
+         * @var string
+         */
+        public $severity;
+        /**
+         * The full message string. For PostgreSQL, this is a formatted string that
+         * may include severity, code, and the notice/warning message. For MySQL, this
+         * contains the warning message.
+         *
+         * @param string $message
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
+        /**
+         * The severity of the message (e.g., "NOTICE" for PostgreSQL, "WARNING" for
+         * MySQL).
+         *
+         * @param string $severity
+         */
+        public function setSeverity($severity)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSeverity()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SQLAdmin\Message registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMessage()
-    {
-    }
-    /**
-     * The severity of the message (e.g., "NOTICE" for PostgreSQL, "WARNING" for
-     * MySQL).
-     *
-     * @param string $severity
-     */
-    public function setSeverity($severity)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSeverity()
+    class Google_Service_SQLAdmin_Message extends \Google\Service\SQLAdmin\Message
     {
     }
 }

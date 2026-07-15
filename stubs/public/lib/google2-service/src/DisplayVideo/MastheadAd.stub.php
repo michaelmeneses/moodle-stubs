@@ -21,241 +21,250 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class MastheadAd extends \Google\Collection
-{
-    /**
-     * Not specified or unknown.
-     */
-    public const VIDEO_ASPECT_RATIO_VIDEO_ASPECT_RATIO_UNSPECIFIED = 'VIDEO_ASPECT_RATIO_UNSPECIFIED';
-    /**
-     * The video is stretched and the top and bottom are cropped.
-     */
-    public const VIDEO_ASPECT_RATIO_VIDEO_ASPECT_RATIO_WIDESCREEN = 'VIDEO_ASPECT_RATIO_WIDESCREEN';
-    /**
-     * The video uses a fixed 16:9 aspect ratio.
-     */
-    public const VIDEO_ASPECT_RATIO_VIDEO_ASPECT_RATIO_FIXED_16_9 = 'VIDEO_ASPECT_RATIO_FIXED_16_9';
-    protected $collection_key = 'companionYoutubeVideos';
-    /**
-     * The duration of time the video will autoplay.
-     *
-     * @var string
-     */
-    public $autoplayVideoDuration;
-    /**
-     * The amount of time in milliseconds after which the video will start to
-     * play.
-     *
-     * @var string
-     */
-    public $autoplayVideoStartMillisecond;
-    /**
-     * The text on the call-to-action button.
-     *
-     * @var string
-     */
-    public $callToActionButtonLabel;
-    /**
-     * The destination URL for the call-to-action button.
-     *
-     * @var string
-     */
-    public $callToActionFinalUrl;
-    /**
-     * The tracking URL for the call-to-action button.
-     *
-     * @var string
-     */
-    public $callToActionTrackingUrl;
-    protected $companionYoutubeVideosType = YoutubeVideoDetails::class;
-    protected $companionYoutubeVideosDataType = 'array';
-    /**
-     * The description of the ad.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * The headline of the ad.
-     *
-     * @var string
-     */
-    public $headline;
-    /**
-     * Whether to show a background or banner that appears at the top of a YouTube
-     * page.
-     *
-     * @var bool
-     */
-    public $showChannelArt;
-    protected $videoType = YoutubeVideoDetails::class;
-    protected $videoDataType = '';
-    /**
-     * The aspect ratio of the autoplaying YouTube video on the Masthead.
-     *
-     * @var string
-     */
-    public $videoAspectRatio;
-    /**
-     * The duration of time the video will autoplay.
-     *
-     * @param string $autoplayVideoDuration
-     */
-    public function setAutoplayVideoDuration($autoplayVideoDuration)
+namespace Google\Service\DisplayVideo {
+    class MastheadAd extends \Google\Collection
     {
+        /**
+         * Not specified or unknown.
+         */
+        public const VIDEO_ASPECT_RATIO_VIDEO_ASPECT_RATIO_UNSPECIFIED = 'VIDEO_ASPECT_RATIO_UNSPECIFIED';
+        /**
+         * The video is stretched and the top and bottom are cropped.
+         */
+        public const VIDEO_ASPECT_RATIO_VIDEO_ASPECT_RATIO_WIDESCREEN = 'VIDEO_ASPECT_RATIO_WIDESCREEN';
+        /**
+         * The video uses a fixed 16:9 aspect ratio.
+         */
+        public const VIDEO_ASPECT_RATIO_VIDEO_ASPECT_RATIO_FIXED_16_9 = 'VIDEO_ASPECT_RATIO_FIXED_16_9';
+        protected $collection_key = 'companionYoutubeVideos';
+        /**
+         * The duration of time the video will autoplay.
+         *
+         * @var string
+         */
+        public $autoplayVideoDuration;
+        /**
+         * The amount of time in milliseconds after which the video will start to
+         * play.
+         *
+         * @var string
+         */
+        public $autoplayVideoStartMillisecond;
+        /**
+         * The text on the call-to-action button.
+         *
+         * @var string
+         */
+        public $callToActionButtonLabel;
+        /**
+         * The destination URL for the call-to-action button.
+         *
+         * @var string
+         */
+        public $callToActionFinalUrl;
+        /**
+         * The tracking URL for the call-to-action button.
+         *
+         * @var string
+         */
+        public $callToActionTrackingUrl;
+        protected $companionYoutubeVideosType = YoutubeVideoDetails::class;
+        protected $companionYoutubeVideosDataType = 'array';
+        /**
+         * The description of the ad.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * The headline of the ad.
+         *
+         * @var string
+         */
+        public $headline;
+        /**
+         * Whether to show a background or banner that appears at the top of a YouTube
+         * page.
+         *
+         * @var bool
+         */
+        public $showChannelArt;
+        protected $videoType = YoutubeVideoDetails::class;
+        protected $videoDataType = '';
+        /**
+         * The aspect ratio of the autoplaying YouTube video on the Masthead.
+         *
+         * @var string
+         */
+        public $videoAspectRatio;
+        /**
+         * The duration of time the video will autoplay.
+         *
+         * @param string $autoplayVideoDuration
+         */
+        public function setAutoplayVideoDuration($autoplayVideoDuration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAutoplayVideoDuration()
+        {
+        }
+        /**
+         * The amount of time in milliseconds after which the video will start to
+         * play.
+         *
+         * @param string $autoplayVideoStartMillisecond
+         */
+        public function setAutoplayVideoStartMillisecond($autoplayVideoStartMillisecond)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAutoplayVideoStartMillisecond()
+        {
+        }
+        /**
+         * The text on the call-to-action button.
+         *
+         * @param string $callToActionButtonLabel
+         */
+        public function setCallToActionButtonLabel($callToActionButtonLabel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCallToActionButtonLabel()
+        {
+        }
+        /**
+         * The destination URL for the call-to-action button.
+         *
+         * @param string $callToActionFinalUrl
+         */
+        public function setCallToActionFinalUrl($callToActionFinalUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCallToActionFinalUrl()
+        {
+        }
+        /**
+         * The tracking URL for the call-to-action button.
+         *
+         * @param string $callToActionTrackingUrl
+         */
+        public function setCallToActionTrackingUrl($callToActionTrackingUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCallToActionTrackingUrl()
+        {
+        }
+        /**
+         * The videos that appear next to the Masthead Ad on desktop. Can be no more
+         * than two.
+         *
+         * @param YoutubeVideoDetails[] $companionYoutubeVideos
+         */
+        public function setCompanionYoutubeVideos($companionYoutubeVideos)
+        {
+        }
+        /**
+         * @return YoutubeVideoDetails[]
+         */
+        public function getCompanionYoutubeVideos()
+        {
+        }
+        /**
+         * The description of the ad.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * The headline of the ad.
+         *
+         * @param string $headline
+         */
+        public function setHeadline($headline)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHeadline()
+        {
+        }
+        /**
+         * Whether to show a background or banner that appears at the top of a YouTube
+         * page.
+         *
+         * @param bool $showChannelArt
+         */
+        public function setShowChannelArt($showChannelArt)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getShowChannelArt()
+        {
+        }
+        /**
+         * The YouTube video used by the ad.
+         *
+         * @param YoutubeVideoDetails $video
+         */
+        public function setVideo(YoutubeVideoDetails $video)
+        {
+        }
+        /**
+         * @return YoutubeVideoDetails
+         */
+        public function getVideo()
+        {
+        }
+        /**
+         * The aspect ratio of the autoplaying YouTube video on the Masthead.
+         *
+         * Accepted values: VIDEO_ASPECT_RATIO_UNSPECIFIED,
+         * VIDEO_ASPECT_RATIO_WIDESCREEN, VIDEO_ASPECT_RATIO_FIXED_16_9
+         *
+         * @param self::VIDEO_ASPECT_RATIO_* $videoAspectRatio
+         */
+        public function setVideoAspectRatio($videoAspectRatio)
+        {
+        }
+        /**
+         * @return self::VIDEO_ASPECT_RATIO_*
+         */
+        public function getVideoAspectRatio()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\MastheadAd registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAutoplayVideoDuration()
-    {
-    }
-    /**
-     * The amount of time in milliseconds after which the video will start to
-     * play.
-     *
-     * @param string $autoplayVideoStartMillisecond
-     */
-    public function setAutoplayVideoStartMillisecond($autoplayVideoStartMillisecond)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAutoplayVideoStartMillisecond()
-    {
-    }
-    /**
-     * The text on the call-to-action button.
-     *
-     * @param string $callToActionButtonLabel
-     */
-    public function setCallToActionButtonLabel($callToActionButtonLabel)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCallToActionButtonLabel()
-    {
-    }
-    /**
-     * The destination URL for the call-to-action button.
-     *
-     * @param string $callToActionFinalUrl
-     */
-    public function setCallToActionFinalUrl($callToActionFinalUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCallToActionFinalUrl()
-    {
-    }
-    /**
-     * The tracking URL for the call-to-action button.
-     *
-     * @param string $callToActionTrackingUrl
-     */
-    public function setCallToActionTrackingUrl($callToActionTrackingUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCallToActionTrackingUrl()
-    {
-    }
-    /**
-     * The videos that appear next to the Masthead Ad on desktop. Can be no more
-     * than two.
-     *
-     * @param YoutubeVideoDetails[] $companionYoutubeVideos
-     */
-    public function setCompanionYoutubeVideos($companionYoutubeVideos)
-    {
-    }
-    /**
-     * @return YoutubeVideoDetails[]
-     */
-    public function getCompanionYoutubeVideos()
-    {
-    }
-    /**
-     * The description of the ad.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * The headline of the ad.
-     *
-     * @param string $headline
-     */
-    public function setHeadline($headline)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHeadline()
-    {
-    }
-    /**
-     * Whether to show a background or banner that appears at the top of a YouTube
-     * page.
-     *
-     * @param bool $showChannelArt
-     */
-    public function setShowChannelArt($showChannelArt)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getShowChannelArt()
-    {
-    }
-    /**
-     * The YouTube video used by the ad.
-     *
-     * @param YoutubeVideoDetails $video
-     */
-    public function setVideo(YoutubeVideoDetails $video)
-    {
-    }
-    /**
-     * @return YoutubeVideoDetails
-     */
-    public function getVideo()
-    {
-    }
-    /**
-     * The aspect ratio of the autoplaying YouTube video on the Masthead.
-     *
-     * Accepted values: VIDEO_ASPECT_RATIO_UNSPECIFIED,
-     * VIDEO_ASPECT_RATIO_WIDESCREEN, VIDEO_ASPECT_RATIO_FIXED_16_9
-     *
-     * @param self::VIDEO_ASPECT_RATIO_* $videoAspectRatio
-     */
-    public function setVideoAspectRatio($videoAspectRatio)
-    {
-    }
-    /**
-     * @return self::VIDEO_ASPECT_RATIO_*
-     */
-    public function getVideoAspectRatio()
+    class Google_Service_DisplayVideo_MastheadAd extends \Google\Service\DisplayVideo\MastheadAd
     {
     }
 }

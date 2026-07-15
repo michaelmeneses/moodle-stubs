@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Pubsub;
-
-class AnalyticsHubSubscriptionInfo extends \Google\Model
-{
-    /**
-     * Optional. The name of the associated Analytics Hub listing resource.
-     * Pattern: "projects/{project}/locations/{location}/dataExchanges/{data_excha
-     * nge}/listings/{listing}"
-     *
-     * @var string
-     */
-    public $listing;
-    /**
-     * Optional. The name of the associated Analytics Hub subscription resource.
-     * Pattern:
-     * "projects/{project}/locations/{location}/subscriptions/{subscription}"
-     *
-     * @var string
-     */
-    public $subscription;
-    /**
-     * Optional. The name of the associated Analytics Hub listing resource.
-     * Pattern: "projects/{project}/locations/{location}/dataExchanges/{data_excha
-     * nge}/listings/{listing}"
-     *
-     * @param string $listing
-     */
-    public function setListing($listing)
+namespace Google\Service\Pubsub {
+    class AnalyticsHubSubscriptionInfo extends \Google\Model
     {
+        /**
+         * Optional. The name of the associated Analytics Hub listing resource.
+         * Pattern: "projects/{project}/locations/{location}/dataExchanges/{data_excha
+         * nge}/listings/{listing}"
+         *
+         * @var string
+         */
+        public $listing;
+        /**
+         * Optional. The name of the associated Analytics Hub subscription resource.
+         * Pattern:
+         * "projects/{project}/locations/{location}/subscriptions/{subscription}"
+         *
+         * @var string
+         */
+        public $subscription;
+        /**
+         * Optional. The name of the associated Analytics Hub listing resource.
+         * Pattern: "projects/{project}/locations/{location}/dataExchanges/{data_excha
+         * nge}/listings/{listing}"
+         *
+         * @param string $listing
+         */
+        public function setListing($listing)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getListing()
+        {
+        }
+        /**
+         * Optional. The name of the associated Analytics Hub subscription resource.
+         * Pattern:
+         * "projects/{project}/locations/{location}/subscriptions/{subscription}"
+         *
+         * @param string $subscription
+         */
+        public function setSubscription($subscription)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubscription()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Pubsub\AnalyticsHubSubscriptionInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getListing()
-    {
-    }
-    /**
-     * Optional. The name of the associated Analytics Hub subscription resource.
-     * Pattern:
-     * "projects/{project}/locations/{location}/subscriptions/{subscription}"
-     *
-     * @param string $subscription
-     */
-    public function setSubscription($subscription)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubscription()
+    class Google_Service_Pubsub_AnalyticsHubSubscriptionInfo extends \Google\Service\Pubsub\AnalyticsHubSubscriptionInfo
     {
     }
 }

@@ -21,140 +21,149 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CertificateAuthorityService;
-
-class ExtendedKeyUsageOptions extends \Google\Model
-{
-    /**
-     * Corresponds to OID 1.3.6.1.5.5.7.3.2. Officially described as "TLS WWW
-     * client authentication", though regularly used for non-WWW TLS.
-     *
-     * @var bool
-     */
-    public $clientAuth;
-    /**
-     * Corresponds to OID 1.3.6.1.5.5.7.3.3. Officially described as "Signing of
-     * downloadable executable code client authentication".
-     *
-     * @var bool
-     */
-    public $codeSigning;
-    /**
-     * Corresponds to OID 1.3.6.1.5.5.7.3.4. Officially described as "Email
-     * protection".
-     *
-     * @var bool
-     */
-    public $emailProtection;
-    /**
-     * Corresponds to OID 1.3.6.1.5.5.7.3.9. Officially described as "Signing OCSP
-     * responses".
-     *
-     * @var bool
-     */
-    public $ocspSigning;
-    /**
-     * Corresponds to OID 1.3.6.1.5.5.7.3.1. Officially described as "TLS WWW
-     * server authentication", though regularly used for non-WWW TLS.
-     *
-     * @var bool
-     */
-    public $serverAuth;
-    /**
-     * Corresponds to OID 1.3.6.1.5.5.7.3.8. Officially described as "Binding the
-     * hash of an object to a time".
-     *
-     * @var bool
-     */
-    public $timeStamping;
-    /**
-     * Corresponds to OID 1.3.6.1.5.5.7.3.2. Officially described as "TLS WWW
-     * client authentication", though regularly used for non-WWW TLS.
-     *
-     * @param bool $clientAuth
-     */
-    public function setClientAuth($clientAuth)
+namespace Google\Service\CertificateAuthorityService {
+    class ExtendedKeyUsageOptions extends \Google\Model
     {
+        /**
+         * Corresponds to OID 1.3.6.1.5.5.7.3.2. Officially described as "TLS WWW
+         * client authentication", though regularly used for non-WWW TLS.
+         *
+         * @var bool
+         */
+        public $clientAuth;
+        /**
+         * Corresponds to OID 1.3.6.1.5.5.7.3.3. Officially described as "Signing of
+         * downloadable executable code client authentication".
+         *
+         * @var bool
+         */
+        public $codeSigning;
+        /**
+         * Corresponds to OID 1.3.6.1.5.5.7.3.4. Officially described as "Email
+         * protection".
+         *
+         * @var bool
+         */
+        public $emailProtection;
+        /**
+         * Corresponds to OID 1.3.6.1.5.5.7.3.9. Officially described as "Signing OCSP
+         * responses".
+         *
+         * @var bool
+         */
+        public $ocspSigning;
+        /**
+         * Corresponds to OID 1.3.6.1.5.5.7.3.1. Officially described as "TLS WWW
+         * server authentication", though regularly used for non-WWW TLS.
+         *
+         * @var bool
+         */
+        public $serverAuth;
+        /**
+         * Corresponds to OID 1.3.6.1.5.5.7.3.8. Officially described as "Binding the
+         * hash of an object to a time".
+         *
+         * @var bool
+         */
+        public $timeStamping;
+        /**
+         * Corresponds to OID 1.3.6.1.5.5.7.3.2. Officially described as "TLS WWW
+         * client authentication", though regularly used for non-WWW TLS.
+         *
+         * @param bool $clientAuth
+         */
+        public function setClientAuth($clientAuth)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getClientAuth()
+        {
+        }
+        /**
+         * Corresponds to OID 1.3.6.1.5.5.7.3.3. Officially described as "Signing of
+         * downloadable executable code client authentication".
+         *
+         * @param bool $codeSigning
+         */
+        public function setCodeSigning($codeSigning)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCodeSigning()
+        {
+        }
+        /**
+         * Corresponds to OID 1.3.6.1.5.5.7.3.4. Officially described as "Email
+         * protection".
+         *
+         * @param bool $emailProtection
+         */
+        public function setEmailProtection($emailProtection)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEmailProtection()
+        {
+        }
+        /**
+         * Corresponds to OID 1.3.6.1.5.5.7.3.9. Officially described as "Signing OCSP
+         * responses".
+         *
+         * @param bool $ocspSigning
+         */
+        public function setOcspSigning($ocspSigning)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getOcspSigning()
+        {
+        }
+        /**
+         * Corresponds to OID 1.3.6.1.5.5.7.3.1. Officially described as "TLS WWW
+         * server authentication", though regularly used for non-WWW TLS.
+         *
+         * @param bool $serverAuth
+         */
+        public function setServerAuth($serverAuth)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getServerAuth()
+        {
+        }
+        /**
+         * Corresponds to OID 1.3.6.1.5.5.7.3.8. Officially described as "Binding the
+         * hash of an object to a time".
+         *
+         * @param bool $timeStamping
+         */
+        public function setTimeStamping($timeStamping)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getTimeStamping()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CertificateAuthorityService\ExtendedKeyUsageOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClientAuth()
-    {
-    }
-    /**
-     * Corresponds to OID 1.3.6.1.5.5.7.3.3. Officially described as "Signing of
-     * downloadable executable code client authentication".
-     *
-     * @param bool $codeSigning
-     */
-    public function setCodeSigning($codeSigning)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCodeSigning()
-    {
-    }
-    /**
-     * Corresponds to OID 1.3.6.1.5.5.7.3.4. Officially described as "Email
-     * protection".
-     *
-     * @param bool $emailProtection
-     */
-    public function setEmailProtection($emailProtection)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEmailProtection()
-    {
-    }
-    /**
-     * Corresponds to OID 1.3.6.1.5.5.7.3.9. Officially described as "Signing OCSP
-     * responses".
-     *
-     * @param bool $ocspSigning
-     */
-    public function setOcspSigning($ocspSigning)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getOcspSigning()
-    {
-    }
-    /**
-     * Corresponds to OID 1.3.6.1.5.5.7.3.1. Officially described as "TLS WWW
-     * server authentication", though regularly used for non-WWW TLS.
-     *
-     * @param bool $serverAuth
-     */
-    public function setServerAuth($serverAuth)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getServerAuth()
-    {
-    }
-    /**
-     * Corresponds to OID 1.3.6.1.5.5.7.3.8. Officially described as "Binding the
-     * hash of an object to a time".
-     *
-     * @param bool $timeStamping
-     */
-    public function setTimeStamping($timeStamping)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getTimeStamping()
+    class Google_Service_CertificateAuthorityService_ExtendedKeyUsageOptions extends \Google\Service\CertificateAuthorityService\ExtendedKeyUsageOptions
     {
     }
 }

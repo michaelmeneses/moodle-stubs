@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1ActionFailedSecurityPolicyApply extends \Google\Model
-{
-    /**
-     * Resource name of one of the assets with failing security policy
-     * application. Populated for a lake or zone resource only.
-     *
-     * @var string
-     */
-    public $asset;
-    /**
-     * Resource name of one of the assets with failing security policy
-     * application. Populated for a lake or zone resource only.
-     *
-     * @param string $asset
-     */
-    public function setAsset($asset)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1ActionFailedSecurityPolicyApply extends \Google\Model
     {
+        /**
+         * Resource name of one of the assets with failing security policy
+         * application. Populated for a lake or zone resource only.
+         *
+         * @var string
+         */
+        public $asset;
+        /**
+         * Resource name of one of the assets with failing security policy
+         * application. Populated for a lake or zone resource only.
+         *
+         * @param string $asset
+         */
+        public function setAsset($asset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAsset()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1ActionFailedSecurityPolicyApply registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAsset()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1ActionFailedSecurityPolicyApply extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1ActionFailedSecurityPolicyApply
     {
     }
 }

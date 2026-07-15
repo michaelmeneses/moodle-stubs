@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1ContentNotebook extends \Google\Model
-{
-    /**
-     * Kernel Type unspecified.
-     */
-    public const KERNEL_TYPE_KERNEL_TYPE_UNSPECIFIED = 'KERNEL_TYPE_UNSPECIFIED';
-    /**
-     * Python 3 Kernel.
-     */
-    public const KERNEL_TYPE_PYTHON3 = 'PYTHON3';
-    /**
-     * Required. Kernel Type of the notebook.
-     *
-     * @var string
-     */
-    public $kernelType;
-    /**
-     * Required. Kernel Type of the notebook.
-     *
-     * Accepted values: KERNEL_TYPE_UNSPECIFIED, PYTHON3
-     *
-     * @param self::KERNEL_TYPE_* $kernelType
-     */
-    public function setKernelType($kernelType)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1ContentNotebook extends \Google\Model
     {
+        /**
+         * Kernel Type unspecified.
+         */
+        public const KERNEL_TYPE_KERNEL_TYPE_UNSPECIFIED = 'KERNEL_TYPE_UNSPECIFIED';
+        /**
+         * Python 3 Kernel.
+         */
+        public const KERNEL_TYPE_PYTHON3 = 'PYTHON3';
+        /**
+         * Required. Kernel Type of the notebook.
+         *
+         * @var string
+         */
+        public $kernelType;
+        /**
+         * Required. Kernel Type of the notebook.
+         *
+         * Accepted values: KERNEL_TYPE_UNSPECIFIED, PYTHON3
+         *
+         * @param self::KERNEL_TYPE_* $kernelType
+         */
+        public function setKernelType($kernelType)
+        {
+        }
+        /**
+         * @return self::KERNEL_TYPE_*
+         */
+        public function getKernelType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::KERNEL_TYPE_*
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1ContentNotebook registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKernelType()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1ContentNotebook extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1ContentNotebook
     {
     }
 }

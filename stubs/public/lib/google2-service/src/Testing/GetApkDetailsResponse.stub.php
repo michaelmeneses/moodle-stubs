@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Testing;
-
-class GetApkDetailsResponse extends \Google\Model
-{
-    protected $apkDetailType = ApkDetail::class;
-    protected $apkDetailDataType = '';
-    /**
-     * Details of the Android App.
-     *
-     * @param ApkDetail $apkDetail
-     */
-    public function setApkDetail(ApkDetail $apkDetail)
+namespace Google\Service\Testing {
+    class GetApkDetailsResponse extends \Google\Model
     {
+        protected $apkDetailType = ApkDetail::class;
+        protected $apkDetailDataType = '';
+        /**
+         * Details of the Android App.
+         *
+         * @param ApkDetail $apkDetail
+         */
+        public function setApkDetail(ApkDetail $apkDetail)
+        {
+        }
+        /**
+         * @return ApkDetail
+         */
+        public function getApkDetail()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ApkDetail
+     * Runtime class alias of \Google\Service\Testing\GetApkDetailsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApkDetail()
+    class Google_Service_Testing_GetApkDetailsResponse extends \Google\Service\Testing\GetApkDetailsResponse
     {
     }
 }

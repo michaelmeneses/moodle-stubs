@@ -21,37 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog\Resource;
-
-/**
- * The "catalog" collection of methods.
- * Typical usage is:
- *  <code>
- *   $datacatalogService = new Google\Service\DataCatalog(...);
- *   $catalog = $datacatalogService->catalog;
- *  </code>
- */
-class Catalog extends \Google\Service\Resource
-{
+namespace Google\Service\DataCatalog\Resource {
+    use Google\Service\DataCatalog\GoogleCloudDatacatalogV1SearchCatalogRequest;
+    use Google\Service\DataCatalog\GoogleCloudDatacatalogV1SearchCatalogResponse;
     /**
-     * Searches Data Catalog for multiple resources like entries and tags that match
-     * a query. This is a [Custom Method]
-     * (https://cloud.google.com/apis/design/custom_methods) that doesn't return all
-     * information on a resource, only its ID and high level fields. To get more
-     * information, you can subsequently call specific get methods. Note: Data
-     * Catalog search queries don't guarantee full recall. Results that match your
-     * query might not be returned, even in subsequent result pages. Additionally,
-     * returned (and not returned) results can vary if you repeat search queries.
-     * For more information, see [Data Catalog search syntax]
-     * (https://cloud.google.com/data-catalog/docs/how-to/search-reference).
-     * (catalog.search)
-     *
-     * @param GoogleCloudDatacatalogV1SearchCatalogRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudDatacatalogV1SearchCatalogResponse
-     * @throws \Google\Service\Exception
+     * The "catalog" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $datacatalogService = new Google\Service\DataCatalog(...);
+     *   $catalog = $datacatalogService->catalog;
+     *  </code>
      */
-    public function search(GoogleCloudDatacatalogV1SearchCatalogRequest $postBody, $optParams = [])
+    class Catalog extends \Google\Service\Resource
+    {
+        /**
+         * Searches Data Catalog for multiple resources like entries and tags that match
+         * a query. This is a [Custom Method]
+         * (https://cloud.google.com/apis/design/custom_methods) that doesn't return all
+         * information on a resource, only its ID and high level fields. To get more
+         * information, you can subsequently call specific get methods. Note: Data
+         * Catalog search queries don't guarantee full recall. Results that match your
+         * query might not be returned, even in subsequent result pages. Additionally,
+         * returned (and not returned) results can vary if you repeat search queries.
+         * For more information, see [Data Catalog search syntax]
+         * (https://cloud.google.com/data-catalog/docs/how-to/search-reference).
+         * (catalog.search)
+         *
+         * @param GoogleCloudDatacatalogV1SearchCatalogRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudDatacatalogV1SearchCatalogResponse
+         * @throws \Google\Service\Exception
+         */
+        public function search(GoogleCloudDatacatalogV1SearchCatalogRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\DataCatalog\Resource\Catalog registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_DataCatalog_Resource_Catalog extends \Google\Service\DataCatalog\Resource\Catalog
     {
     }
 }

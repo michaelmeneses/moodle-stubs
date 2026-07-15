@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI;
-
-class DailyCycle extends \Google\Model
-{
-    /**
-     * Output only. Duration of the time window, set by service producer.
-     *
-     * @var string
-     */
-    public $duration;
-    protected $startTimeType = TimeOfDay::class;
-    protected $startTimeDataType = '';
-    /**
-     * Output only. Duration of the time window, set by service producer.
-     *
-     * @param string $duration
-     */
-    public function setDuration($duration)
+namespace Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI {
+    class DailyCycle extends \Google\Model
     {
+        /**
+         * Output only. Duration of the time window, set by service producer.
+         *
+         * @var string
+         */
+        public $duration;
+        protected $startTimeType = TimeOfDay::class;
+        protected $startTimeDataType = '';
+        /**
+         * Output only. Duration of the time window, set by service producer.
+         *
+         * @param string $duration
+         */
+        public function setDuration($duration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDuration()
+        {
+        }
+        /**
+         * Time within the day to start the operations.
+         *
+         * @param TimeOfDay $startTime
+         */
+        public function setStartTime(TimeOfDay $startTime)
+        {
+        }
+        /**
+         * @return TimeOfDay
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\DailyCycle registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDuration()
-    {
-    }
-    /**
-     * Time within the day to start the operations.
-     *
-     * @param TimeOfDay $startTime
-     */
-    public function setStartTime(TimeOfDay $startTime)
-    {
-    }
-    /**
-     * @return TimeOfDay
-     */
-    public function getStartTime()
+    class Google_Service_ManagedServiceforMicrosoftActiveDirectoryConsumerAPI_DailyCycle extends \Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\DailyCycle
     {
     }
 }

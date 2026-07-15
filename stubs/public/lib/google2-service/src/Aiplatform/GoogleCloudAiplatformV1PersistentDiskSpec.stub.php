@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1PersistentDiskSpec extends \Google\Model
-{
-    /**
-     * Size in GB of the disk (default is 100GB).
-     *
-     * @var string
-     */
-    public $diskSizeGb;
-    /**
-     * Type of the disk (default is "pd-standard"). Valid values: "pd-ssd"
-     * (Persistent Disk Solid State Drive) "pd-standard" (Persistent Disk Hard
-     * Disk Drive) "pd-balanced" (Balanced Persistent Disk) "pd-extreme" (Extreme
-     * Persistent Disk)
-     *
-     * @var string
-     */
-    public $diskType;
-    /**
-     * Size in GB of the disk (default is 100GB).
-     *
-     * @param string $diskSizeGb
-     */
-    public function setDiskSizeGb($diskSizeGb)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1PersistentDiskSpec extends \Google\Model
     {
+        /**
+         * Size in GB of the disk (default is 100GB).
+         *
+         * @var string
+         */
+        public $diskSizeGb;
+        /**
+         * Type of the disk (default is "pd-standard"). Valid values: "pd-ssd"
+         * (Persistent Disk Solid State Drive) "pd-standard" (Persistent Disk Hard
+         * Disk Drive) "pd-balanced" (Balanced Persistent Disk) "pd-extreme" (Extreme
+         * Persistent Disk)
+         *
+         * @var string
+         */
+        public $diskType;
+        /**
+         * Size in GB of the disk (default is 100GB).
+         *
+         * @param string $diskSizeGb
+         */
+        public function setDiskSizeGb($diskSizeGb)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDiskSizeGb()
+        {
+        }
+        /**
+         * Type of the disk (default is "pd-standard"). Valid values: "pd-ssd"
+         * (Persistent Disk Solid State Drive) "pd-standard" (Persistent Disk Hard
+         * Disk Drive) "pd-balanced" (Balanced Persistent Disk) "pd-extreme" (Extreme
+         * Persistent Disk)
+         *
+         * @param string $diskType
+         */
+        public function setDiskType($diskType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDiskType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1PersistentDiskSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDiskSizeGb()
-    {
-    }
-    /**
-     * Type of the disk (default is "pd-standard"). Valid values: "pd-ssd"
-     * (Persistent Disk Solid State Drive) "pd-standard" (Persistent Disk Hard
-     * Disk Drive) "pd-balanced" (Balanced Persistent Disk) "pd-extreme" (Extreme
-     * Persistent Disk)
-     *
-     * @param string $diskType
-     */
-    public function setDiskType($diskType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDiskType()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1PersistentDiskSpec extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1PersistentDiskSpec
     {
     }
 }

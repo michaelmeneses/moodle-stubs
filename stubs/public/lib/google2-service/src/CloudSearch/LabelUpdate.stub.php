@@ -21,112 +21,121 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class LabelUpdate extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $canonicalName;
-    protected $labelCreatedType = LabelCreated::class;
-    protected $labelCreatedDataType = '';
-    protected $labelDeletedType = LabelDeleted::class;
-    protected $labelDeletedDataType = '';
-    /**
-     * @var string
-     */
-    public $labelId;
-    protected $labelRenamedType = LabelRenamed::class;
-    protected $labelRenamedDataType = '';
-    protected $labelUpdatedType = LabelUpdated::class;
-    protected $labelUpdatedDataType = '';
-    /**
-     * @var string
-     */
-    public $syncId;
-    /**
-     * @param string
-     */
-    public function setCanonicalName($canonicalName)
+namespace Google\Service\CloudSearch {
+    class LabelUpdate extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $canonicalName;
+        protected $labelCreatedType = LabelCreated::class;
+        protected $labelCreatedDataType = '';
+        protected $labelDeletedType = LabelDeleted::class;
+        protected $labelDeletedDataType = '';
+        /**
+         * @var string
+         */
+        public $labelId;
+        protected $labelRenamedType = LabelRenamed::class;
+        protected $labelRenamedDataType = '';
+        protected $labelUpdatedType = LabelUpdated::class;
+        protected $labelUpdatedDataType = '';
+        /**
+         * @var string
+         */
+        public $syncId;
+        /**
+         * @param string
+         */
+        public function setCanonicalName($canonicalName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCanonicalName()
+        {
+        }
+        /**
+         * @param LabelCreated
+         */
+        public function setLabelCreated(LabelCreated $labelCreated)
+        {
+        }
+        /**
+         * @return LabelCreated
+         */
+        public function getLabelCreated()
+        {
+        }
+        /**
+         * @param LabelDeleted
+         */
+        public function setLabelDeleted(LabelDeleted $labelDeleted)
+        {
+        }
+        /**
+         * @return LabelDeleted
+         */
+        public function getLabelDeleted()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLabelId($labelId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLabelId()
+        {
+        }
+        /**
+         * @param LabelRenamed
+         */
+        public function setLabelRenamed(LabelRenamed $labelRenamed)
+        {
+        }
+        /**
+         * @return LabelRenamed
+         */
+        public function getLabelRenamed()
+        {
+        }
+        /**
+         * @param LabelUpdated
+         */
+        public function setLabelUpdated(LabelUpdated $labelUpdated)
+        {
+        }
+        /**
+         * @return LabelUpdated
+         */
+        public function getLabelUpdated()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSyncId($syncId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSyncId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\LabelUpdate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCanonicalName()
-    {
-    }
-    /**
-     * @param LabelCreated
-     */
-    public function setLabelCreated(LabelCreated $labelCreated)
-    {
-    }
-    /**
-     * @return LabelCreated
-     */
-    public function getLabelCreated()
-    {
-    }
-    /**
-     * @param LabelDeleted
-     */
-    public function setLabelDeleted(LabelDeleted $labelDeleted)
-    {
-    }
-    /**
-     * @return LabelDeleted
-     */
-    public function getLabelDeleted()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLabelId($labelId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLabelId()
-    {
-    }
-    /**
-     * @param LabelRenamed
-     */
-    public function setLabelRenamed(LabelRenamed $labelRenamed)
-    {
-    }
-    /**
-     * @return LabelRenamed
-     */
-    public function getLabelRenamed()
-    {
-    }
-    /**
-     * @param LabelUpdated
-     */
-    public function setLabelUpdated(LabelUpdated $labelUpdated)
-    {
-    }
-    /**
-     * @return LabelUpdated
-     */
-    public function getLabelUpdated()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSyncId($syncId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSyncId()
+    class Google_Service_CloudSearch_LabelUpdate extends \Google\Service\CloudSearch\LabelUpdate
     {
     }
 }

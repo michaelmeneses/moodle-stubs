@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class UsageExportLocation extends \Google\Model
-{
-    /**
-     * The name of an existing bucket in Cloud Storage where the usage report
-     * object is stored. The Google Service Account is granted write access to
-     * this bucket. This can either be the bucket name by itself, such asexample-
-     * bucket, or the bucket name with gs:// or https://storage.googleapis.com/ in
-     * front of it, such as gs://example-bucket.
-     *
-     * @var string
-     */
-    public $bucketName;
-    /**
-     * An optional prefix for the name of the usage report object stored
-     * inbucketName. If not supplied, defaults tousage_gce. The report is stored
-     * as a CSV file namedreport_name_prefix_gce_YYYYMMDD.csv whereYYYYMMDD is the
-     * day of the usage according to Pacific Time. If you supply a prefix, it
-     * should conform to Cloud Storageobject naming conventions.
-     *
-     * @var string
-     */
-    public $reportNamePrefix;
-    /**
-     * The name of an existing bucket in Cloud Storage where the usage report
-     * object is stored. The Google Service Account is granted write access to
-     * this bucket. This can either be the bucket name by itself, such asexample-
-     * bucket, or the bucket name with gs:// or https://storage.googleapis.com/ in
-     * front of it, such as gs://example-bucket.
-     *
-     * @param string $bucketName
-     */
-    public function setBucketName($bucketName)
+namespace Google\Service\Compute {
+    class UsageExportLocation extends \Google\Model
     {
+        /**
+         * The name of an existing bucket in Cloud Storage where the usage report
+         * object is stored. The Google Service Account is granted write access to
+         * this bucket. This can either be the bucket name by itself, such asexample-
+         * bucket, or the bucket name with gs:// or https://storage.googleapis.com/ in
+         * front of it, such as gs://example-bucket.
+         *
+         * @var string
+         */
+        public $bucketName;
+        /**
+         * An optional prefix for the name of the usage report object stored
+         * inbucketName. If not supplied, defaults tousage_gce. The report is stored
+         * as a CSV file namedreport_name_prefix_gce_YYYYMMDD.csv whereYYYYMMDD is the
+         * day of the usage according to Pacific Time. If you supply a prefix, it
+         * should conform to Cloud Storageobject naming conventions.
+         *
+         * @var string
+         */
+        public $reportNamePrefix;
+        /**
+         * The name of an existing bucket in Cloud Storage where the usage report
+         * object is stored. The Google Service Account is granted write access to
+         * this bucket. This can either be the bucket name by itself, such asexample-
+         * bucket, or the bucket name with gs:// or https://storage.googleapis.com/ in
+         * front of it, such as gs://example-bucket.
+         *
+         * @param string $bucketName
+         */
+        public function setBucketName($bucketName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBucketName()
+        {
+        }
+        /**
+         * An optional prefix for the name of the usage report object stored
+         * inbucketName. If not supplied, defaults tousage_gce. The report is stored
+         * as a CSV file namedreport_name_prefix_gce_YYYYMMDD.csv whereYYYYMMDD is the
+         * day of the usage according to Pacific Time. If you supply a prefix, it
+         * should conform to Cloud Storageobject naming conventions.
+         *
+         * @param string $reportNamePrefix
+         */
+        public function setReportNamePrefix($reportNamePrefix)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReportNamePrefix()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\UsageExportLocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBucketName()
-    {
-    }
-    /**
-     * An optional prefix for the name of the usage report object stored
-     * inbucketName. If not supplied, defaults tousage_gce. The report is stored
-     * as a CSV file namedreport_name_prefix_gce_YYYYMMDD.csv whereYYYYMMDD is the
-     * day of the usage according to Pacific Time. If you supply a prefix, it
-     * should conform to Cloud Storageobject naming conventions.
-     *
-     * @param string $reportNamePrefix
-     */
-    public function setReportNamePrefix($reportNamePrefix)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReportNamePrefix()
+    class Google_Service_Compute_UsageExportLocation extends \Google\Service\Compute\UsageExportLocation
     {
     }
 }

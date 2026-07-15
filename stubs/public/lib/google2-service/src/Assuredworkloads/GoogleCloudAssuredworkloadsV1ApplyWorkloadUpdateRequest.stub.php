@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Assuredworkloads;
-
-class GoogleCloudAssuredworkloadsV1ApplyWorkloadUpdateRequest extends \Google\Model
-{
-    /**
-     * Unspecified value.
-     */
-    public const ACTION_WORKLOAD_UPDATE_ACTION_UNSPECIFIED = 'WORKLOAD_UPDATE_ACTION_UNSPECIFIED';
-    /**
-     * The update is applied.
-     */
-    public const ACTION_APPLY = 'APPLY';
-    /**
-     * The action to be performed on the update.
-     *
-     * @var string
-     */
-    public $action;
-    /**
-     * The action to be performed on the update.
-     *
-     * Accepted values: WORKLOAD_UPDATE_ACTION_UNSPECIFIED, APPLY
-     *
-     * @param self::ACTION_* $action
-     */
-    public function setAction($action)
+namespace Google\Service\Assuredworkloads {
+    class GoogleCloudAssuredworkloadsV1ApplyWorkloadUpdateRequest extends \Google\Model
     {
+        /**
+         * Unspecified value.
+         */
+        public const ACTION_WORKLOAD_UPDATE_ACTION_UNSPECIFIED = 'WORKLOAD_UPDATE_ACTION_UNSPECIFIED';
+        /**
+         * The update is applied.
+         */
+        public const ACTION_APPLY = 'APPLY';
+        /**
+         * The action to be performed on the update.
+         *
+         * @var string
+         */
+        public $action;
+        /**
+         * The action to be performed on the update.
+         *
+         * Accepted values: WORKLOAD_UPDATE_ACTION_UNSPECIFIED, APPLY
+         *
+         * @param self::ACTION_* $action
+         */
+        public function setAction($action)
+        {
+        }
+        /**
+         * @return self::ACTION_*
+         */
+        public function getAction()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::ACTION_*
+     * Runtime class alias of \Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1ApplyWorkloadUpdateRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAction()
+    class Google_Service_Assuredworkloads_GoogleCloudAssuredworkloadsV1ApplyWorkloadUpdateRequest extends \Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1ApplyWorkloadUpdateRequest
     {
     }
 }

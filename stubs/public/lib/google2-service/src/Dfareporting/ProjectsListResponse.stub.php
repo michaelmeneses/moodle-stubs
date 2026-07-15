@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class ProjectsListResponse extends \Google\Collection
-{
-    protected $collection_key = 'projects';
-    /**
-     * @var string
-     */
-    public $kind;
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    protected $projectsType = Project::class;
-    protected $projectsDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setKind($kind)
+namespace Google\Service\Dfareporting {
+    class ProjectsListResponse extends \Google\Collection
     {
+        protected $collection_key = 'projects';
+        /**
+         * @var string
+         */
+        public $kind;
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        protected $projectsType = Project::class;
+        protected $projectsDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param Project[]
+         */
+        public function setProjects($projects)
+        {
+        }
+        /**
+         * @return Project[]
+         */
+        public function getProjects()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\ProjectsListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param Project[]
-     */
-    public function setProjects($projects)
-    {
-    }
-    /**
-     * @return Project[]
-     */
-    public function getProjects()
+    class Google_Service_Dfareporting_ProjectsListResponse extends \Google\Service\Dfareporting\ProjectsListResponse
     {
     }
 }

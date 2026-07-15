@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class LinkedEntity extends \Google\Model
-{
-    /**
-     * entity_id is a concept unique identifier. These are prefixed by a string
-     * that identifies the entity coding system, followed by the unique identifier
-     * within that system. For example, "UMLS/C0000970". This also supports ad hoc
-     * entities, which are formed by normalizing entity mention content.
-     *
-     * @var string
-     */
-    public $entityId;
-    /**
-     * entity_id is a concept unique identifier. These are prefixed by a string
-     * that identifies the entity coding system, followed by the unique identifier
-     * within that system. For example, "UMLS/C0000970". This also supports ad hoc
-     * entities, which are formed by normalizing entity mention content.
-     *
-     * @param string $entityId
-     */
-    public function setEntityId($entityId)
+namespace Google\Service\CloudHealthcare {
+    class LinkedEntity extends \Google\Model
     {
+        /**
+         * entity_id is a concept unique identifier. These are prefixed by a string
+         * that identifies the entity coding system, followed by the unique identifier
+         * within that system. For example, "UMLS/C0000970". This also supports ad hoc
+         * entities, which are formed by normalizing entity mention content.
+         *
+         * @var string
+         */
+        public $entityId;
+        /**
+         * entity_id is a concept unique identifier. These are prefixed by a string
+         * that identifies the entity coding system, followed by the unique identifier
+         * within that system. For example, "UMLS/C0000970". This also supports ad hoc
+         * entities, which are formed by normalizing entity mention content.
+         *
+         * @param string $entityId
+         */
+        public function setEntityId($entityId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEntityId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudHealthcare\LinkedEntity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntityId()
+    class Google_Service_CloudHealthcare_LinkedEntity extends \Google\Service\CloudHealthcare\LinkedEntity
     {
     }
 }

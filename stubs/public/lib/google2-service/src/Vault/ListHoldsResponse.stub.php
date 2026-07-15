@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vault;
-
-class ListHoldsResponse extends \Google\Collection
-{
-    protected $collection_key = 'holds';
-    protected $holdsType = Hold::class;
-    protected $holdsDataType = 'array';
-    /**
-     * Page token to retrieve the next page of results in the list. If this is
-     * empty, then there are no more holds to list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of holds.
-     *
-     * @param Hold[] $holds
-     */
-    public function setHolds($holds)
+namespace Google\Service\Vault {
+    class ListHoldsResponse extends \Google\Collection
     {
+        protected $collection_key = 'holds';
+        protected $holdsType = Hold::class;
+        protected $holdsDataType = 'array';
+        /**
+         * Page token to retrieve the next page of results in the list. If this is
+         * empty, then there are no more holds to list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of holds.
+         *
+         * @param Hold[] $holds
+         */
+        public function setHolds($holds)
+        {
+        }
+        /**
+         * @return Hold[]
+         */
+        public function getHolds()
+        {
+        }
+        /**
+         * Page token to retrieve the next page of results in the list. If this is
+         * empty, then there are no more holds to list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Hold[]
+     * Runtime class alias of \Google\Service\Vault\ListHoldsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHolds()
-    {
-    }
-    /**
-     * Page token to retrieve the next page of results in the list. If this is
-     * empty, then there are no more holds to list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Vault_ListHoldsResponse extends \Google\Service\Vault\ListHoldsResponse
     {
     }
 }

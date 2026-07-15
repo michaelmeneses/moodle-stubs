@@ -21,28 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics\Resource;
-
-/**
- * The "columns" collection of methods.
- * Typical usage is:
- *  <code>
- *   $analyticsService = new Google\Service\Analytics(...);
- *   $columns = $analyticsService->metadata_columns;
- *  </code>
- */
-class MetadataColumns extends \Google\Service\Resource
-{
+namespace Google\Service\Analytics\Resource {
+    use Google\Service\Analytics\Columns;
     /**
-     * Lists all columns for a report type (columns.listMetadataColumns)
-     *
-     * @param string $reportType Report type. Allowed Values: 'ga'. Where 'ga'
-     * corresponds to the Core Reporting API
-     * @param array $optParams Optional parameters.
-     * @return Columns
-     * @throws \Google\Service\Exception
+     * The "columns" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $analyticsService = new Google\Service\Analytics(...);
+     *   $columns = $analyticsService->metadata_columns;
+     *  </code>
      */
-    public function listMetadataColumns($reportType, $optParams = [])
+    class MetadataColumns extends \Google\Service\Resource
+    {
+        /**
+         * Lists all columns for a report type (columns.listMetadataColumns)
+         *
+         * @param string $reportType Report type. Allowed Values: 'ga'. Where 'ga'
+         * corresponds to the Core Reporting API
+         * @param array $optParams Optional parameters.
+         * @return Columns
+         * @throws \Google\Service\Exception
+         */
+        public function listMetadataColumns($reportType, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Analytics\Resource\MetadataColumns registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Analytics_Resource_MetadataColumns extends \Google\Service\Analytics\Resource\MetadataColumns
     {
     }
 }

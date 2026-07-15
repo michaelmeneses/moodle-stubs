@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1MatchResult extends \Google\Model
-{
-    /**
-     * Output only. The name of the matched API Operation. Format: `projects/{proj
-     * ect}/locations/{location}/apis/{api}/versions/{version}/operations/{operati
-     * on}`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The name of the matched API Operation. Format: `projects/{proj
-     * ect}/locations/{location}/apis/{api}/versions/{version}/operations/{operati
-     * on}`
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1MatchResult extends \Google\Model
     {
+        /**
+         * Output only. The name of the matched API Operation. Format: `projects/{proj
+         * ect}/locations/{location}/apis/{api}/versions/{version}/operations/{operati
+         * on}`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The name of the matched API Operation. Format: `projects/{proj
+         * ect}/locations/{location}/apis/{api}/versions/{version}/operations/{operati
+         * on}`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1MatchResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
+    class Google_Service_APIhub_GoogleCloudApihubV1MatchResult extends \Google\Service\APIhub\GoogleCloudApihubV1MatchResult
     {
     }
 }

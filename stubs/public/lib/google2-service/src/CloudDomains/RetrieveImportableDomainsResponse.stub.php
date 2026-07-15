@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDomains;
-
-class RetrieveImportableDomainsResponse extends \Google\Collection
-{
-    protected $collection_key = 'domains';
-    protected $domainsType = Domain::class;
-    protected $domainsDataType = 'array';
-    /**
-     * When present, there are more results to retrieve. Set `page_token` to this
-     * value on a subsequent call to get the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * A list of domains that the calling user manages in Google Domains.
-     *
-     * @param Domain[] $domains
-     */
-    public function setDomains($domains)
+namespace Google\Service\CloudDomains {
+    class RetrieveImportableDomainsResponse extends \Google\Collection
     {
+        protected $collection_key = 'domains';
+        protected $domainsType = Domain::class;
+        protected $domainsDataType = 'array';
+        /**
+         * When present, there are more results to retrieve. Set `page_token` to this
+         * value on a subsequent call to get the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * A list of domains that the calling user manages in Google Domains.
+         *
+         * @param Domain[] $domains
+         */
+        public function setDomains($domains)
+        {
+        }
+        /**
+         * @return Domain[]
+         */
+        public function getDomains()
+        {
+        }
+        /**
+         * When present, there are more results to retrieve. Set `page_token` to this
+         * value on a subsequent call to get the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Domain[]
+     * Runtime class alias of \Google\Service\CloudDomains\RetrieveImportableDomainsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDomains()
-    {
-    }
-    /**
-     * When present, there are more results to retrieve. Set `page_token` to this
-     * value on a subsequent call to get the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_CloudDomains_RetrieveImportableDomainsResponse extends \Google\Service\CloudDomains\RetrieveImportableDomainsResponse
     {
     }
 }

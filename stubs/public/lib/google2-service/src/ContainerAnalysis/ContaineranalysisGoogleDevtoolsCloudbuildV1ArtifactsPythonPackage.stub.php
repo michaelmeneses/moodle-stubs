@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class ContaineranalysisGoogleDevtoolsCloudbuildV1ArtifactsPythonPackage extends \Google\Collection
-{
-    protected $collection_key = 'paths';
-    /**
-     * Path globs used to match files in the build's workspace. For Python/ Twine,
-     * this is usually `dist`, and sometimes additionally an `.asc` file.
-     *
-     * @var string[]
-     */
-    public $paths;
-    /**
-     * Artifact Registry repository, in the form "https://$REGION-
-     * python.pkg.dev/$PROJECT/$REPOSITORY" Files in the workspace matching any
-     * path pattern will be uploaded to Artifact Registry with this location as a
-     * prefix.
-     *
-     * @var string
-     */
-    public $repository;
-    /**
-     * Path globs used to match files in the build's workspace. For Python/ Twine,
-     * this is usually `dist`, and sometimes additionally an `.asc` file.
-     *
-     * @param string[] $paths
-     */
-    public function setPaths($paths)
+namespace Google\Service\ContainerAnalysis {
+    class ContaineranalysisGoogleDevtoolsCloudbuildV1ArtifactsPythonPackage extends \Google\Collection
     {
+        protected $collection_key = 'paths';
+        /**
+         * Path globs used to match files in the build's workspace. For Python/ Twine,
+         * this is usually `dist`, and sometimes additionally an `.asc` file.
+         *
+         * @var string[]
+         */
+        public $paths;
+        /**
+         * Artifact Registry repository, in the form "https://$REGION-
+         * python.pkg.dev/$PROJECT/$REPOSITORY" Files in the workspace matching any
+         * path pattern will be uploaded to Artifact Registry with this location as a
+         * prefix.
+         *
+         * @var string
+         */
+        public $repository;
+        /**
+         * Path globs used to match files in the build's workspace. For Python/ Twine,
+         * this is usually `dist`, and sometimes additionally an `.asc` file.
+         *
+         * @param string[] $paths
+         */
+        public function setPaths($paths)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPaths()
+        {
+        }
+        /**
+         * Artifact Registry repository, in the form "https://$REGION-
+         * python.pkg.dev/$PROJECT/$REPOSITORY" Files in the workspace matching any
+         * path pattern will be uploaded to Artifact Registry with this location as a
+         * prefix.
+         *
+         * @param string $repository
+         */
+        public function setRepository($repository)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRepository()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\ContainerAnalysis\ContaineranalysisGoogleDevtoolsCloudbuildV1ArtifactsPythonPackage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPaths()
-    {
-    }
-    /**
-     * Artifact Registry repository, in the form "https://$REGION-
-     * python.pkg.dev/$PROJECT/$REPOSITORY" Files in the workspace matching any
-     * path pattern will be uploaded to Artifact Registry with this location as a
-     * prefix.
-     *
-     * @param string $repository
-     */
-    public function setRepository($repository)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRepository()
+    class Google_Service_ContainerAnalysis_ContaineranalysisGoogleDevtoolsCloudbuildV1ArtifactsPythonPackage extends \Google\Service\ContainerAnalysis\ContaineranalysisGoogleDevtoolsCloudbuildV1ArtifactsPythonPackage
     {
     }
 }

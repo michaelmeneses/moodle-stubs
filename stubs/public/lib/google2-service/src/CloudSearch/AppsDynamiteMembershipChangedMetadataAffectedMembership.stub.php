@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteMembershipChangedMetadataAffectedMembership extends \Google\Model
-{
-    protected $affectedMemberType = AppsDynamiteMemberId::class;
-    protected $affectedMemberDataType = '';
-    /**
-     * @var string
-     */
-    public $priorMembershipRole;
-    /**
-     * @var string
-     */
-    public $priorMembershipState;
-    /**
-     * @var string
-     */
-    public $targetMembershipRole;
-    /**
-     * @param AppsDynamiteMemberId
-     */
-    public function setAffectedMember(AppsDynamiteMemberId $affectedMember)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteMembershipChangedMetadataAffectedMembership extends \Google\Model
     {
+        protected $affectedMemberType = AppsDynamiteMemberId::class;
+        protected $affectedMemberDataType = '';
+        /**
+         * @var string
+         */
+        public $priorMembershipRole;
+        /**
+         * @var string
+         */
+        public $priorMembershipState;
+        /**
+         * @var string
+         */
+        public $targetMembershipRole;
+        /**
+         * @param AppsDynamiteMemberId
+         */
+        public function setAffectedMember(AppsDynamiteMemberId $affectedMember)
+        {
+        }
+        /**
+         * @return AppsDynamiteMemberId
+         */
+        public function getAffectedMember()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPriorMembershipRole($priorMembershipRole)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPriorMembershipRole()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPriorMembershipState($priorMembershipState)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPriorMembershipState()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTargetMembershipRole($targetMembershipRole)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetMembershipRole()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppsDynamiteMemberId
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteMembershipChangedMetadataAffectedMembership registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAffectedMember()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPriorMembershipRole($priorMembershipRole)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPriorMembershipRole()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPriorMembershipState($priorMembershipState)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPriorMembershipState()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTargetMembershipRole($targetMembershipRole)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetMembershipRole()
+    class Google_Service_CloudSearch_AppsDynamiteMembershipChangedMetadataAffectedMembership extends \Google\Service\CloudSearch\AppsDynamiteMembershipChangedMetadataAffectedMembership
     {
     }
 }

@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Css;
-
-class ListChildAccountsResponse extends \Google\Collection
-{
-    protected $collection_key = 'accounts';
-    protected $accountsType = Account::class;
-    protected $accountsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The CSS/MC accounts returned for the specified CSS parent account.
-     *
-     * @param Account[] $accounts
-     */
-    public function setAccounts($accounts)
+namespace Google\Service\Css {
+    class ListChildAccountsResponse extends \Google\Collection
     {
+        protected $collection_key = 'accounts';
+        protected $accountsType = Account::class;
+        protected $accountsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The CSS/MC accounts returned for the specified CSS parent account.
+         *
+         * @param Account[] $accounts
+         */
+        public function setAccounts($accounts)
+        {
+        }
+        /**
+         * @return Account[]
+         */
+        public function getAccounts()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Account[]
+     * Runtime class alias of \Google\Service\Css\ListChildAccountsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccounts()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Css_ListChildAccountsResponse extends \Google\Service\Css\ListChildAccountsResponse
     {
     }
 }

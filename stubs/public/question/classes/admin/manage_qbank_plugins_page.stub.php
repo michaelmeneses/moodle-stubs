@@ -30,6 +30,7 @@
  */
 namespace core_question\admin;
 
+use core_admin\admin_search;
 /**
  * Class manage_qbank_plugins_page.
  *

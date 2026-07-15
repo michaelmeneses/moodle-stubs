@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAlloyDBAdmin;
-
-class RestoreFromCloudSQLRequest extends \Google\Model
-{
-    protected $cloudsqlBackupRunSourceType = CloudSQLBackupRunSource::class;
-    protected $cloudsqlBackupRunSourceDataType = '';
-    protected $clusterType = Cluster::class;
-    protected $clusterDataType = '';
-    /**
-     * Required. ID of the requesting object.
-     *
-     * @var string
-     */
-    public $clusterId;
-    /**
-     * Cluster created from CloudSQL backup run.
-     *
-     * @param CloudSQLBackupRunSource $cloudsqlBackupRunSource
-     */
-    public function setCloudsqlBackupRunSource(CloudSQLBackupRunSource $cloudsqlBackupRunSource)
+namespace Google\Service\CloudAlloyDBAdmin {
+    class RestoreFromCloudSQLRequest extends \Google\Model
     {
+        protected $cloudsqlBackupRunSourceType = CloudSQLBackupRunSource::class;
+        protected $cloudsqlBackupRunSourceDataType = '';
+        protected $clusterType = Cluster::class;
+        protected $clusterDataType = '';
+        /**
+         * Required. ID of the requesting object.
+         *
+         * @var string
+         */
+        public $clusterId;
+        /**
+         * Cluster created from CloudSQL backup run.
+         *
+         * @param CloudSQLBackupRunSource $cloudsqlBackupRunSource
+         */
+        public function setCloudsqlBackupRunSource(CloudSQLBackupRunSource $cloudsqlBackupRunSource)
+        {
+        }
+        /**
+         * @return CloudSQLBackupRunSource
+         */
+        public function getCloudsqlBackupRunSource()
+        {
+        }
+        /**
+         * Required. The resource being created
+         *
+         * @param Cluster $cluster
+         */
+        public function setCluster(Cluster $cluster)
+        {
+        }
+        /**
+         * @return Cluster
+         */
+        public function getCluster()
+        {
+        }
+        /**
+         * Required. ID of the requesting object.
+         *
+         * @param string $clusterId
+         */
+        public function setClusterId($clusterId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClusterId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CloudSQLBackupRunSource
+     * Runtime class alias of \Google\Service\CloudAlloyDBAdmin\RestoreFromCloudSQLRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCloudsqlBackupRunSource()
-    {
-    }
-    /**
-     * Required. The resource being created
-     *
-     * @param Cluster $cluster
-     */
-    public function setCluster(Cluster $cluster)
-    {
-    }
-    /**
-     * @return Cluster
-     */
-    public function getCluster()
-    {
-    }
-    /**
-     * Required. ID of the requesting object.
-     *
-     * @param string $clusterId
-     */
-    public function setClusterId($clusterId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getClusterId()
+    class Google_Service_CloudAlloyDBAdmin_RestoreFromCloudSQLRequest extends \Google\Service\CloudAlloyDBAdmin\RestoreFromCloudSQLRequest
     {
     }
 }

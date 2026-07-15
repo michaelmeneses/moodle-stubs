@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storage;
-
-class ObjectAccessControlProjectTeam extends \Google\Model
-{
-    /**
-     * The project number.
-     *
-     * @var string
-     */
-    public $projectNumber;
-    /**
-     * The team.
-     *
-     * @var string
-     */
-    public $team;
-    /**
-     * The project number.
-     *
-     * @param string $projectNumber
-     */
-    public function setProjectNumber($projectNumber)
+namespace Google\Service\Storage {
+    class ObjectAccessControlProjectTeam extends \Google\Model
     {
+        /**
+         * The project number.
+         *
+         * @var string
+         */
+        public $projectNumber;
+        /**
+         * The team.
+         *
+         * @var string
+         */
+        public $team;
+        /**
+         * The project number.
+         *
+         * @param string $projectNumber
+         */
+        public function setProjectNumber($projectNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectNumber()
+        {
+        }
+        /**
+         * The team.
+         *
+         * @param string $team
+         */
+        public function setTeam($team)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTeam()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Storage\ObjectAccessControlProjectTeam registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProjectNumber()
-    {
-    }
-    /**
-     * The team.
-     *
-     * @param string $team
-     */
-    public function setTeam($team)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTeam()
+    class Google_Service_Storage_ObjectAccessControlProjectTeam extends \Google\Service\Storage\ObjectAccessControlProjectTeam
     {
     }
 }

@@ -21,351 +21,360 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaTemplate extends \Google\Collection
-{
-    /**
-     * Visibility is unspecified
-     */
-    public const VISIBILITY_VISIBILITY_UNSPECIFIED = 'VISIBILITY_UNSPECIFIED';
-    /**
-     * Visibility is private
-     */
-    public const VISIBILITY_PRIVATE = 'PRIVATE';
-    /**
-     * Visibility is shared
-     */
-    public const VISIBILITY_SHARED = 'SHARED';
-    /**
-     * Visibility is public
-     */
-    public const VISIBILITY_PUBLIC = 'PUBLIC';
-    protected $collection_key = 'tags';
-    /**
-     * Optional. Creator of the template.
-     *
-     * @var string
-     */
-    public $author;
-    /**
-     * Required. Categories associated with the Template. The categories listed
-     * below will be utilized for the Template listing.
-     *
-     * @var string[]
-     */
-    public $categories;
-    protected $componentsType = GoogleCloudIntegrationsV1alphaTemplateComponent::class;
-    protected $componentsDataType = 'array';
-    /**
-     * Output only. Auto-generated.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Optional. Description of the template. The length should not be more than
-     * 255 characters
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Required. The name of the template
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Optional. Link to template documentation.
-     *
-     * @var string
-     */
-    public $docLink;
-    /**
-     * Optional. Time the template was last used.
-     *
-     * @var string
-     */
-    public $lastUsedTime;
-    /**
-     * Identifier. Resource name of the template.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. Resource names with which the template is shared for example
-     * ProjectNumber/Ord id
-     *
-     * @var string[]
-     */
-    public $sharedWith;
-    /**
-     * Required. Tags which are used to identify templates. These tags could be
-     * for business use case, connectors etc.
-     *
-     * @var string[]
-     */
-    public $tags;
-    protected $templateBundleType = GoogleCloudIntegrationsV1alphaTemplateBundle::class;
-    protected $templateBundleDataType = '';
-    /**
-     * Output only. Auto-generated
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Optional. Number of template usages.
-     *
-     * @var string
-     */
-    public $usageCount;
-    /**
-     * Optional. Information on how to use the template. This should contain
-     * detailed information about usage of the template.
-     *
-     * @var string
-     */
-    public $usageInfo;
-    /**
-     * Required. Visibility of the template.
-     *
-     * @var string
-     */
-    public $visibility;
-    /**
-     * Optional. Creator of the template.
-     *
-     * @param string $author
-     */
-    public function setAuthor($author)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaTemplate extends \Google\Collection
     {
+        /**
+         * Visibility is unspecified
+         */
+        public const VISIBILITY_VISIBILITY_UNSPECIFIED = 'VISIBILITY_UNSPECIFIED';
+        /**
+         * Visibility is private
+         */
+        public const VISIBILITY_PRIVATE = 'PRIVATE';
+        /**
+         * Visibility is shared
+         */
+        public const VISIBILITY_SHARED = 'SHARED';
+        /**
+         * Visibility is public
+         */
+        public const VISIBILITY_PUBLIC = 'PUBLIC';
+        protected $collection_key = 'tags';
+        /**
+         * Optional. Creator of the template.
+         *
+         * @var string
+         */
+        public $author;
+        /**
+         * Required. Categories associated with the Template. The categories listed
+         * below will be utilized for the Template listing.
+         *
+         * @var string[]
+         */
+        public $categories;
+        protected $componentsType = GoogleCloudIntegrationsV1alphaTemplateComponent::class;
+        protected $componentsDataType = 'array';
+        /**
+         * Output only. Auto-generated.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Optional. Description of the template. The length should not be more than
+         * 255 characters
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Required. The name of the template
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Optional. Link to template documentation.
+         *
+         * @var string
+         */
+        public $docLink;
+        /**
+         * Optional. Time the template was last used.
+         *
+         * @var string
+         */
+        public $lastUsedTime;
+        /**
+         * Identifier. Resource name of the template.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. Resource names with which the template is shared for example
+         * ProjectNumber/Ord id
+         *
+         * @var string[]
+         */
+        public $sharedWith;
+        /**
+         * Required. Tags which are used to identify templates. These tags could be
+         * for business use case, connectors etc.
+         *
+         * @var string[]
+         */
+        public $tags;
+        protected $templateBundleType = GoogleCloudIntegrationsV1alphaTemplateBundle::class;
+        protected $templateBundleDataType = '';
+        /**
+         * Output only. Auto-generated
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Optional. Number of template usages.
+         *
+         * @var string
+         */
+        public $usageCount;
+        /**
+         * Optional. Information on how to use the template. This should contain
+         * detailed information about usage of the template.
+         *
+         * @var string
+         */
+        public $usageInfo;
+        /**
+         * Required. Visibility of the template.
+         *
+         * @var string
+         */
+        public $visibility;
+        /**
+         * Optional. Creator of the template.
+         *
+         * @param string $author
+         */
+        public function setAuthor($author)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAuthor()
+        {
+        }
+        /**
+         * Required. Categories associated with the Template. The categories listed
+         * below will be utilized for the Template listing.
+         *
+         * @param string[] $categories
+         */
+        public function setCategories($categories)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCategories()
+        {
+        }
+        /**
+         * Optional. Components being used in the template. This could be used to
+         * categorize and filter.
+         *
+         * @param GoogleCloudIntegrationsV1alphaTemplateComponent[] $components
+         */
+        public function setComponents($components)
+        {
+        }
+        /**
+         * @return GoogleCloudIntegrationsV1alphaTemplateComponent[]
+         */
+        public function getComponents()
+        {
+        }
+        /**
+         * Output only. Auto-generated.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Optional. Description of the template. The length should not be more than
+         * 255 characters
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Required. The name of the template
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Optional. Link to template documentation.
+         *
+         * @param string $docLink
+         */
+        public function setDocLink($docLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDocLink()
+        {
+        }
+        /**
+         * Optional. Time the template was last used.
+         *
+         * @param string $lastUsedTime
+         */
+        public function setLastUsedTime($lastUsedTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastUsedTime()
+        {
+        }
+        /**
+         * Identifier. Resource name of the template.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Required. Resource names with which the template is shared for example
+         * ProjectNumber/Ord id
+         *
+         * @param string[] $sharedWith
+         */
+        public function setSharedWith($sharedWith)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSharedWith()
+        {
+        }
+        /**
+         * Required. Tags which are used to identify templates. These tags could be
+         * for business use case, connectors etc.
+         *
+         * @param string[] $tags
+         */
+        public function setTags($tags)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTags()
+        {
+        }
+        /**
+         * Required. Bundle which is part of the templates. The template entities in
+         * the bundle would be converted to an actual entity.
+         *
+         * @param GoogleCloudIntegrationsV1alphaTemplateBundle $templateBundle
+         */
+        public function setTemplateBundle(GoogleCloudIntegrationsV1alphaTemplateBundle $templateBundle)
+        {
+        }
+        /**
+         * @return GoogleCloudIntegrationsV1alphaTemplateBundle
+         */
+        public function getTemplateBundle()
+        {
+        }
+        /**
+         * Output only. Auto-generated
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
+        /**
+         * Optional. Number of template usages.
+         *
+         * @param string $usageCount
+         */
+        public function setUsageCount($usageCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUsageCount()
+        {
+        }
+        /**
+         * Optional. Information on how to use the template. This should contain
+         * detailed information about usage of the template.
+         *
+         * @param string $usageInfo
+         */
+        public function setUsageInfo($usageInfo)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUsageInfo()
+        {
+        }
+        /**
+         * Required. Visibility of the template.
+         *
+         * Accepted values: VISIBILITY_UNSPECIFIED, PRIVATE, SHARED, PUBLIC
+         *
+         * @param self::VISIBILITY_* $visibility
+         */
+        public function setVisibility($visibility)
+        {
+        }
+        /**
+         * @return self::VISIBILITY_*
+         */
+        public function getVisibility()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaTemplate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuthor()
-    {
-    }
-    /**
-     * Required. Categories associated with the Template. The categories listed
-     * below will be utilized for the Template listing.
-     *
-     * @param string[] $categories
-     */
-    public function setCategories($categories)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getCategories()
-    {
-    }
-    /**
-     * Optional. Components being used in the template. This could be used to
-     * categorize and filter.
-     *
-     * @param GoogleCloudIntegrationsV1alphaTemplateComponent[] $components
-     */
-    public function setComponents($components)
-    {
-    }
-    /**
-     * @return GoogleCloudIntegrationsV1alphaTemplateComponent[]
-     */
-    public function getComponents()
-    {
-    }
-    /**
-     * Output only. Auto-generated.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Optional. Description of the template. The length should not be more than
-     * 255 characters
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Required. The name of the template
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Optional. Link to template documentation.
-     *
-     * @param string $docLink
-     */
-    public function setDocLink($docLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDocLink()
-    {
-    }
-    /**
-     * Optional. Time the template was last used.
-     *
-     * @param string $lastUsedTime
-     */
-    public function setLastUsedTime($lastUsedTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastUsedTime()
-    {
-    }
-    /**
-     * Identifier. Resource name of the template.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Required. Resource names with which the template is shared for example
-     * ProjectNumber/Ord id
-     *
-     * @param string[] $sharedWith
-     */
-    public function setSharedWith($sharedWith)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSharedWith()
-    {
-    }
-    /**
-     * Required. Tags which are used to identify templates. These tags could be
-     * for business use case, connectors etc.
-     *
-     * @param string[] $tags
-     */
-    public function setTags($tags)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTags()
-    {
-    }
-    /**
-     * Required. Bundle which is part of the templates. The template entities in
-     * the bundle would be converted to an actual entity.
-     *
-     * @param GoogleCloudIntegrationsV1alphaTemplateBundle $templateBundle
-     */
-    public function setTemplateBundle(GoogleCloudIntegrationsV1alphaTemplateBundle $templateBundle)
-    {
-    }
-    /**
-     * @return GoogleCloudIntegrationsV1alphaTemplateBundle
-     */
-    public function getTemplateBundle()
-    {
-    }
-    /**
-     * Output only. Auto-generated
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
-    {
-    }
-    /**
-     * Optional. Number of template usages.
-     *
-     * @param string $usageCount
-     */
-    public function setUsageCount($usageCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUsageCount()
-    {
-    }
-    /**
-     * Optional. Information on how to use the template. This should contain
-     * detailed information about usage of the template.
-     *
-     * @param string $usageInfo
-     */
-    public function setUsageInfo($usageInfo)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUsageInfo()
-    {
-    }
-    /**
-     * Required. Visibility of the template.
-     *
-     * Accepted values: VISIBILITY_UNSPECIFIED, PRIVATE, SHARED, PUBLIC
-     *
-     * @param self::VISIBILITY_* $visibility
-     */
-    public function setVisibility($visibility)
-    {
-    }
-    /**
-     * @return self::VISIBILITY_*
-     */
-    public function getVisibility()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaTemplate extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaTemplate
     {
     }
 }

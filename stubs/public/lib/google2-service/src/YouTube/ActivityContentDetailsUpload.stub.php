@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class ActivityContentDetailsUpload extends \Google\Model
-{
-    /**
-     * The ID that YouTube uses to uniquely identify the uploaded video.
-     *
-     * @var string
-     */
-    public $videoId;
-    /**
-     * The ID that YouTube uses to uniquely identify the uploaded video.
-     *
-     * @param string $videoId
-     */
-    public function setVideoId($videoId)
+namespace Google\Service\YouTube {
+    class ActivityContentDetailsUpload extends \Google\Model
     {
+        /**
+         * The ID that YouTube uses to uniquely identify the uploaded video.
+         *
+         * @var string
+         */
+        public $videoId;
+        /**
+         * The ID that YouTube uses to uniquely identify the uploaded video.
+         *
+         * @param string $videoId
+         */
+        public function setVideoId($videoId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVideoId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\ActivityContentDetailsUpload registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getVideoId()
+    class Google_Service_YouTube_ActivityContentDetailsUpload extends \Google\Service\YouTube\ActivityContentDetailsUpload
     {
     }
 }

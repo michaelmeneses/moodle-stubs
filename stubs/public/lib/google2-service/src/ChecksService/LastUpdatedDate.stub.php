@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChecksService;
-
-class LastUpdatedDate extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $endOffset;
-    protected $lastUpdatedDateType = Date::class;
-    protected $lastUpdatedDateDataType = '';
-    /**
-     * @var string
-     */
-    public $startOffset;
-    /**
-     * @var string
-     */
-    public $textContent;
-    /**
-     * @param string
-     */
-    public function setEndOffset($endOffset)
+namespace Google\Service\ChecksService {
+    class LastUpdatedDate extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $endOffset;
+        protected $lastUpdatedDateType = Date::class;
+        protected $lastUpdatedDateDataType = '';
+        /**
+         * @var string
+         */
+        public $startOffset;
+        /**
+         * @var string
+         */
+        public $textContent;
+        /**
+         * @param string
+         */
+        public function setEndOffset($endOffset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndOffset()
+        {
+        }
+        /**
+         * @param Date
+         */
+        public function setLastUpdatedDate(Date $lastUpdatedDate)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getLastUpdatedDate()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setStartOffset($startOffset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartOffset()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTextContent($textContent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTextContent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChecksService\LastUpdatedDate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndOffset()
-    {
-    }
-    /**
-     * @param Date
-     */
-    public function setLastUpdatedDate(Date $lastUpdatedDate)
-    {
-    }
-    /**
-     * @return Date
-     */
-    public function getLastUpdatedDate()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setStartOffset($startOffset)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartOffset()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTextContent($textContent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTextContent()
+    class Google_Service_ChecksService_LastUpdatedDate extends \Google\Service\ChecksService\LastUpdatedDate
     {
     }
 }

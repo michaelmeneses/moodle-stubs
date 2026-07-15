@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1DocumentIndexStatus extends \Google\Collection
-{
-    protected $collection_key = 'errorSamples';
-    protected $errorSamplesType = GoogleRpcStatus::class;
-    protected $errorSamplesDataType = 'array';
-    /**
-     * The time when the document was indexed. If this field is populated, it
-     * means the document has been indexed.
-     *
-     * @var string
-     */
-    public $indexTime;
-    /**
-     * Immutable. The message indicates the document index is in progress. If this
-     * field is populated, the document index is pending.
-     *
-     * @var string
-     */
-    public $pendingMessage;
-    /**
-     * A sample of errors encountered while indexing the document. If this field
-     * is populated, the document is not indexed due to errors.
-     *
-     * @param GoogleRpcStatus[] $errorSamples
-     */
-    public function setErrorSamples($errorSamples)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1DocumentIndexStatus extends \Google\Collection
     {
+        protected $collection_key = 'errorSamples';
+        protected $errorSamplesType = GoogleRpcStatus::class;
+        protected $errorSamplesDataType = 'array';
+        /**
+         * The time when the document was indexed. If this field is populated, it
+         * means the document has been indexed.
+         *
+         * @var string
+         */
+        public $indexTime;
+        /**
+         * Immutable. The message indicates the document index is in progress. If this
+         * field is populated, the document index is pending.
+         *
+         * @var string
+         */
+        public $pendingMessage;
+        /**
+         * A sample of errors encountered while indexing the document. If this field
+         * is populated, the document is not indexed due to errors.
+         *
+         * @param GoogleRpcStatus[] $errorSamples
+         */
+        public function setErrorSamples($errorSamples)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus[]
+         */
+        public function getErrorSamples()
+        {
+        }
+        /**
+         * The time when the document was indexed. If this field is populated, it
+         * means the document has been indexed.
+         *
+         * @param string $indexTime
+         */
+        public function setIndexTime($indexTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIndexTime()
+        {
+        }
+        /**
+         * Immutable. The message indicates the document index is in progress. If this
+         * field is populated, the document index is pending.
+         *
+         * @param string $pendingMessage
+         */
+        public function setPendingMessage($pendingMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPendingMessage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleRpcStatus[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1DocumentIndexStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrorSamples()
-    {
-    }
-    /**
-     * The time when the document was indexed. If this field is populated, it
-     * means the document has been indexed.
-     *
-     * @param string $indexTime
-     */
-    public function setIndexTime($indexTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIndexTime()
-    {
-    }
-    /**
-     * Immutable. The message indicates the document index is in progress. If this
-     * field is populated, the document index is pending.
-     *
-     * @param string $pendingMessage
-     */
-    public function setPendingMessage($pendingMessage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPendingMessage()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1DocumentIndexStatus extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1DocumentIndexStatus
     {
     }
 }

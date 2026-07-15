@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudMemorystoreforMemcached;
-
-class GoogleCloudMemcacheV1LocationMetadata extends \Google\Model
-{
-    protected $availableZonesType = GoogleCloudMemcacheV1ZoneMetadata::class;
-    protected $availableZonesDataType = 'map';
-    /**
-     * Output only. The set of available zones in the location. The map is keyed
-     * by the lowercase ID of each zone, as defined by GCE. These keys can be
-     * specified in the `zones` field when creating a Memcached instance.
-     *
-     * @param GoogleCloudMemcacheV1ZoneMetadata[] $availableZones
-     */
-    public function setAvailableZones($availableZones)
+namespace Google\Service\CloudMemorystoreforMemcached {
+    class GoogleCloudMemcacheV1LocationMetadata extends \Google\Model
     {
+        protected $availableZonesType = GoogleCloudMemcacheV1ZoneMetadata::class;
+        protected $availableZonesDataType = 'map';
+        /**
+         * Output only. The set of available zones in the location. The map is keyed
+         * by the lowercase ID of each zone, as defined by GCE. These keys can be
+         * specified in the `zones` field when creating a Memcached instance.
+         *
+         * @param GoogleCloudMemcacheV1ZoneMetadata[] $availableZones
+         */
+        public function setAvailableZones($availableZones)
+        {
+        }
+        /**
+         * @return GoogleCloudMemcacheV1ZoneMetadata[]
+         */
+        public function getAvailableZones()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudMemcacheV1ZoneMetadata[]
+     * Runtime class alias of \Google\Service\CloudMemorystoreforMemcached\GoogleCloudMemcacheV1LocationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAvailableZones()
+    class Google_Service_CloudMemorystoreforMemcached_GoogleCloudMemcacheV1LocationMetadata extends \Google\Service\CloudMemorystoreforMemcached\GoogleCloudMemcacheV1LocationMetadata
     {
     }
 }

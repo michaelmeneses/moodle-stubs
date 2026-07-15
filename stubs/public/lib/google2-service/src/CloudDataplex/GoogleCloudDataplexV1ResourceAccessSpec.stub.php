@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1ResourceAccessSpec extends \Google\Collection
-{
-    protected $collection_key = 'writers';
-    /**
-     * Optional. The set of principals to be granted owner role on the resource.
-     *
-     * @var string[]
-     */
-    public $owners;
-    /**
-     * Optional. The format of strings follows the pattern followed by IAM in the
-     * bindings. user:{email}, serviceAccount:{email} group:{email}. The set of
-     * principals to be granted reader role on the resource.
-     *
-     * @var string[]
-     */
-    public $readers;
-    /**
-     * Optional. The set of principals to be granted writer role on the resource.
-     *
-     * @var string[]
-     */
-    public $writers;
-    /**
-     * Optional. The set of principals to be granted owner role on the resource.
-     *
-     * @param string[] $owners
-     */
-    public function setOwners($owners)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1ResourceAccessSpec extends \Google\Collection
     {
+        protected $collection_key = 'writers';
+        /**
+         * Optional. The set of principals to be granted owner role on the resource.
+         *
+         * @var string[]
+         */
+        public $owners;
+        /**
+         * Optional. The format of strings follows the pattern followed by IAM in the
+         * bindings. user:{email}, serviceAccount:{email} group:{email}. The set of
+         * principals to be granted reader role on the resource.
+         *
+         * @var string[]
+         */
+        public $readers;
+        /**
+         * Optional. The set of principals to be granted writer role on the resource.
+         *
+         * @var string[]
+         */
+        public $writers;
+        /**
+         * Optional. The set of principals to be granted owner role on the resource.
+         *
+         * @param string[] $owners
+         */
+        public function setOwners($owners)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getOwners()
+        {
+        }
+        /**
+         * Optional. The format of strings follows the pattern followed by IAM in the
+         * bindings. user:{email}, serviceAccount:{email} group:{email}. The set of
+         * principals to be granted reader role on the resource.
+         *
+         * @param string[] $readers
+         */
+        public function setReaders($readers)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getReaders()
+        {
+        }
+        /**
+         * Optional. The set of principals to be granted writer role on the resource.
+         *
+         * @param string[] $writers
+         */
+        public function setWriters($writers)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getWriters()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1ResourceAccessSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOwners()
-    {
-    }
-    /**
-     * Optional. The format of strings follows the pattern followed by IAM in the
-     * bindings. user:{email}, serviceAccount:{email} group:{email}. The set of
-     * principals to be granted reader role on the resource.
-     *
-     * @param string[] $readers
-     */
-    public function setReaders($readers)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getReaders()
-    {
-    }
-    /**
-     * Optional. The set of principals to be granted writer role on the resource.
-     *
-     * @param string[] $writers
-     */
-    public function setWriters($writers)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getWriters()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1ResourceAccessSpec extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1ResourceAccessSpec
     {
     }
 }

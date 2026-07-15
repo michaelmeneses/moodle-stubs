@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAlloyDBAdmin;
-
-class ClientConnectionConfig extends \Google\Model
-{
-    /**
-     * Optional. Configuration to enforce connectors only (ex: AuthProxy)
-     * connections to the database.
-     *
-     * @var bool
-     */
-    public $requireConnectors;
-    protected $sslConfigType = SslConfig::class;
-    protected $sslConfigDataType = '';
-    /**
-     * Optional. Configuration to enforce connectors only (ex: AuthProxy)
-     * connections to the database.
-     *
-     * @param bool $requireConnectors
-     */
-    public function setRequireConnectors($requireConnectors)
+namespace Google\Service\CloudAlloyDBAdmin {
+    class ClientConnectionConfig extends \Google\Model
     {
+        /**
+         * Optional. Configuration to enforce connectors only (ex: AuthProxy)
+         * connections to the database.
+         *
+         * @var bool
+         */
+        public $requireConnectors;
+        protected $sslConfigType = SslConfig::class;
+        protected $sslConfigDataType = '';
+        /**
+         * Optional. Configuration to enforce connectors only (ex: AuthProxy)
+         * connections to the database.
+         *
+         * @param bool $requireConnectors
+         */
+        public function setRequireConnectors($requireConnectors)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getRequireConnectors()
+        {
+        }
+        /**
+         * Optional. SSL configuration option for this instance.
+         *
+         * @param SslConfig $sslConfig
+         */
+        public function setSslConfig(SslConfig $sslConfig)
+        {
+        }
+        /**
+         * @return SslConfig
+         */
+        public function getSslConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudAlloyDBAdmin\ClientConnectionConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequireConnectors()
-    {
-    }
-    /**
-     * Optional. SSL configuration option for this instance.
-     *
-     * @param SslConfig $sslConfig
-     */
-    public function setSslConfig(SslConfig $sslConfig)
-    {
-    }
-    /**
-     * @return SslConfig
-     */
-    public function getSslConfig()
+    class Google_Service_CloudAlloyDBAdmin_ClientConnectionConfig extends \Google\Service\CloudAlloyDBAdmin\ClientConnectionConfig
     {
     }
 }

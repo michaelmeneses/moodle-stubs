@@ -21,79 +21,88 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class InappproductsListResponse extends \Google\Collection
-{
-    protected $collection_key = 'inappproduct';
-    protected $inappproductType = InAppProduct::class;
-    protected $inappproductDataType = 'array';
-    /**
-     * The kind of this response ("androidpublisher#inappproductsListResponse").
-     *
-     * @var string
-     */
-    public $kind;
-    protected $pageInfoType = PageInfo::class;
-    protected $pageInfoDataType = '';
-    protected $tokenPaginationType = TokenPagination::class;
-    protected $tokenPaginationDataType = '';
-    /**
-     * All in-app products.
-     *
-     * @param InAppProduct[] $inappproduct
-     */
-    public function setInappproduct($inappproduct)
+namespace Google\Service\AndroidPublisher {
+    class InappproductsListResponse extends \Google\Collection
     {
+        protected $collection_key = 'inappproduct';
+        protected $inappproductType = InAppProduct::class;
+        protected $inappproductDataType = 'array';
+        /**
+         * The kind of this response ("androidpublisher#inappproductsListResponse").
+         *
+         * @var string
+         */
+        public $kind;
+        protected $pageInfoType = PageInfo::class;
+        protected $pageInfoDataType = '';
+        protected $tokenPaginationType = TokenPagination::class;
+        protected $tokenPaginationDataType = '';
+        /**
+         * All in-app products.
+         *
+         * @param InAppProduct[] $inappproduct
+         */
+        public function setInappproduct($inappproduct)
+        {
+        }
+        /**
+         * @return InAppProduct[]
+         */
+        public function getInappproduct()
+        {
+        }
+        /**
+         * The kind of this response ("androidpublisher#inappproductsListResponse").
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Deprecated and unset.
+         *
+         * @deprecated
+         * @param PageInfo $pageInfo
+         */
+        public function setPageInfo(PageInfo $pageInfo)
+        {
+        }
+        /**
+         * @deprecated
+         * @return PageInfo
+         */
+        public function getPageInfo()
+        {
+        }
+        /**
+         * Pagination token, to handle a number of products that is over one page.
+         *
+         * @param TokenPagination $tokenPagination
+         */
+        public function setTokenPagination(TokenPagination $tokenPagination)
+        {
+        }
+        /**
+         * @return TokenPagination
+         */
+        public function getTokenPagination()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InAppProduct[]
+     * Runtime class alias of \Google\Service\AndroidPublisher\InappproductsListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInappproduct()
-    {
-    }
-    /**
-     * The kind of this response ("androidpublisher#inappproductsListResponse").
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Deprecated and unset.
-     *
-     * @deprecated
-     * @param PageInfo $pageInfo
-     */
-    public function setPageInfo(PageInfo $pageInfo)
-    {
-    }
-    /**
-     * @deprecated
-     * @return PageInfo
-     */
-    public function getPageInfo()
-    {
-    }
-    /**
-     * Pagination token, to handle a number of products that is over one page.
-     *
-     * @param TokenPagination $tokenPagination
-     */
-    public function setTokenPagination(TokenPagination $tokenPagination)
-    {
-    }
-    /**
-     * @return TokenPagination
-     */
-    public function getTokenPagination()
+    class Google_Service_AndroidPublisher_InappproductsListResponse extends \Google\Service\AndroidPublisher\InappproductsListResponse
     {
     }
 }

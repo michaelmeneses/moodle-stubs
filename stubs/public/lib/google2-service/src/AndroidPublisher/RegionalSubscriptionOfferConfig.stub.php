@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class RegionalSubscriptionOfferConfig extends \Google\Model
-{
-    /**
-     * Whether the subscription offer in the specified region is available for new
-     * subscribers. Existing subscribers will not have their subscription
-     * cancelled if this value is set to false. If not specified, this will
-     * default to false.
-     *
-     * @var bool
-     */
-    public $newSubscriberAvailability;
-    /**
-     * Required. Immutable. Region code this configuration applies to, as defined
-     * by ISO 3166-2, e.g. "US".
-     *
-     * @var string
-     */
-    public $regionCode;
-    /**
-     * Whether the subscription offer in the specified region is available for new
-     * subscribers. Existing subscribers will not have their subscription
-     * cancelled if this value is set to false. If not specified, this will
-     * default to false.
-     *
-     * @param bool $newSubscriberAvailability
-     */
-    public function setNewSubscriberAvailability($newSubscriberAvailability)
+namespace Google\Service\AndroidPublisher {
+    class RegionalSubscriptionOfferConfig extends \Google\Model
     {
+        /**
+         * Whether the subscription offer in the specified region is available for new
+         * subscribers. Existing subscribers will not have their subscription
+         * cancelled if this value is set to false. If not specified, this will
+         * default to false.
+         *
+         * @var bool
+         */
+        public $newSubscriberAvailability;
+        /**
+         * Required. Immutable. Region code this configuration applies to, as defined
+         * by ISO 3166-2, e.g. "US".
+         *
+         * @var string
+         */
+        public $regionCode;
+        /**
+         * Whether the subscription offer in the specified region is available for new
+         * subscribers. Existing subscribers will not have their subscription
+         * cancelled if this value is set to false. If not specified, this will
+         * default to false.
+         *
+         * @param bool $newSubscriberAvailability
+         */
+        public function setNewSubscriberAvailability($newSubscriberAvailability)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getNewSubscriberAvailability()
+        {
+        }
+        /**
+         * Required. Immutable. Region code this configuration applies to, as defined
+         * by ISO 3166-2, e.g. "US".
+         *
+         * @param string $regionCode
+         */
+        public function setRegionCode($regionCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegionCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\AndroidPublisher\RegionalSubscriptionOfferConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNewSubscriberAvailability()
-    {
-    }
-    /**
-     * Required. Immutable. Region code this configuration applies to, as defined
-     * by ISO 3166-2, e.g. "US".
-     *
-     * @param string $regionCode
-     */
-    public function setRegionCode($regionCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegionCode()
+    class Google_Service_AndroidPublisher_RegionalSubscriptionOfferConfig extends \Google\Service\AndroidPublisher\RegionalSubscriptionOfferConfig
     {
     }
 }

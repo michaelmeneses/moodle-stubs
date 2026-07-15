@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromePolicy;
-
-class GoogleChromePolicyVersionsV1NetworkSetting extends \Google\Model
-{
-    /**
-     * The fully qualified name of the network setting.
-     *
-     * @var string
-     */
-    public $policySchema;
-    /**
-     * The value of the network setting.
-     *
-     * @var array[]
-     */
-    public $value;
-    /**
-     * The fully qualified name of the network setting.
-     *
-     * @param string $policySchema
-     */
-    public function setPolicySchema($policySchema)
+namespace Google\Service\ChromePolicy {
+    class GoogleChromePolicyVersionsV1NetworkSetting extends \Google\Model
     {
+        /**
+         * The fully qualified name of the network setting.
+         *
+         * @var string
+         */
+        public $policySchema;
+        /**
+         * The value of the network setting.
+         *
+         * @var array[]
+         */
+        public $value;
+        /**
+         * The fully qualified name of the network setting.
+         *
+         * @param string $policySchema
+         */
+        public function setPolicySchema($policySchema)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPolicySchema()
+        {
+        }
+        /**
+         * The value of the network setting.
+         *
+         * @param array[] $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1NetworkSetting registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPolicySchema()
-    {
-    }
-    /**
-     * The value of the network setting.
-     *
-     * @param array[] $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getValue()
+    class Google_Service_ChromePolicy_GoogleChromePolicyVersionsV1NetworkSetting extends \Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1NetworkSetting
     {
     }
 }

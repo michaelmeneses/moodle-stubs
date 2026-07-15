@@ -21,129 +21,138 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class DictlayerdataDictWordsSenses extends \Google\Collection
-{
-    protected $collection_key = 'synonyms';
-    protected $conjugationsType = DictlayerdataDictWordsSensesConjugations::class;
-    protected $conjugationsDataType = 'array';
-    protected $definitionsType = DictlayerdataDictWordsSensesDefinitions::class;
-    protected $definitionsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $partOfSpeech;
-    /**
-     * @var string
-     */
-    public $pronunciation;
-    /**
-     * @var string
-     */
-    public $pronunciationUrl;
-    protected $sourceType = DictlayerdataDictWordsSensesSource::class;
-    protected $sourceDataType = '';
-    /**
-     * @var string
-     */
-    public $syllabification;
-    protected $synonymsType = DictlayerdataDictWordsSensesSynonyms::class;
-    protected $synonymsDataType = 'array';
-    /**
-     * @param DictlayerdataDictWordsSensesConjugations[] $conjugations
-     */
-    public function setConjugations($conjugations)
+namespace Google\Service\Books {
+    class DictlayerdataDictWordsSenses extends \Google\Collection
     {
+        protected $collection_key = 'synonyms';
+        protected $conjugationsType = DictlayerdataDictWordsSensesConjugations::class;
+        protected $conjugationsDataType = 'array';
+        protected $definitionsType = DictlayerdataDictWordsSensesDefinitions::class;
+        protected $definitionsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $partOfSpeech;
+        /**
+         * @var string
+         */
+        public $pronunciation;
+        /**
+         * @var string
+         */
+        public $pronunciationUrl;
+        protected $sourceType = DictlayerdataDictWordsSensesSource::class;
+        protected $sourceDataType = '';
+        /**
+         * @var string
+         */
+        public $syllabification;
+        protected $synonymsType = DictlayerdataDictWordsSensesSynonyms::class;
+        protected $synonymsDataType = 'array';
+        /**
+         * @param DictlayerdataDictWordsSensesConjugations[] $conjugations
+         */
+        public function setConjugations($conjugations)
+        {
+        }
+        /**
+         * @return DictlayerdataDictWordsSensesConjugations[]
+         */
+        public function getConjugations()
+        {
+        }
+        /**
+         * @param DictlayerdataDictWordsSensesDefinitions[] $definitions
+         */
+        public function setDefinitions($definitions)
+        {
+        }
+        /**
+         * @return DictlayerdataDictWordsSensesDefinitions[]
+         */
+        public function getDefinitions()
+        {
+        }
+        /**
+         * @param string $partOfSpeech
+         */
+        public function setPartOfSpeech($partOfSpeech)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPartOfSpeech()
+        {
+        }
+        /**
+         * @param string $pronunciation
+         */
+        public function setPronunciation($pronunciation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPronunciation()
+        {
+        }
+        /**
+         * @param string $pronunciationUrl
+         */
+        public function setPronunciationUrl($pronunciationUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPronunciationUrl()
+        {
+        }
+        /**
+         * @param DictlayerdataDictWordsSensesSource $source
+         */
+        public function setSource(DictlayerdataDictWordsSensesSource $source)
+        {
+        }
+        /**
+         * @return DictlayerdataDictWordsSensesSource
+         */
+        public function getSource()
+        {
+        }
+        /**
+         * @param string $syllabification
+         */
+        public function setSyllabification($syllabification)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSyllabification()
+        {
+        }
+        /**
+         * @param DictlayerdataDictWordsSensesSynonyms[] $synonyms
+         */
+        public function setSynonyms($synonyms)
+        {
+        }
+        /**
+         * @return DictlayerdataDictWordsSensesSynonyms[]
+         */
+        public function getSynonyms()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DictlayerdataDictWordsSensesConjugations[]
+     * Runtime class alias of \Google\Service\Books\DictlayerdataDictWordsSenses registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConjugations()
-    {
-    }
-    /**
-     * @param DictlayerdataDictWordsSensesDefinitions[] $definitions
-     */
-    public function setDefinitions($definitions)
-    {
-    }
-    /**
-     * @return DictlayerdataDictWordsSensesDefinitions[]
-     */
-    public function getDefinitions()
-    {
-    }
-    /**
-     * @param string $partOfSpeech
-     */
-    public function setPartOfSpeech($partOfSpeech)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPartOfSpeech()
-    {
-    }
-    /**
-     * @param string $pronunciation
-     */
-    public function setPronunciation($pronunciation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPronunciation()
-    {
-    }
-    /**
-     * @param string $pronunciationUrl
-     */
-    public function setPronunciationUrl($pronunciationUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPronunciationUrl()
-    {
-    }
-    /**
-     * @param DictlayerdataDictWordsSensesSource $source
-     */
-    public function setSource(DictlayerdataDictWordsSensesSource $source)
-    {
-    }
-    /**
-     * @return DictlayerdataDictWordsSensesSource
-     */
-    public function getSource()
-    {
-    }
-    /**
-     * @param string $syllabification
-     */
-    public function setSyllabification($syllabification)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSyllabification()
-    {
-    }
-    /**
-     * @param DictlayerdataDictWordsSensesSynonyms[] $synonyms
-     */
-    public function setSynonyms($synonyms)
-    {
-    }
-    /**
-     * @return DictlayerdataDictWordsSensesSynonyms[]
-     */
-    public function getSynonyms()
+    class Google_Service_Books_DictlayerdataDictWordsSenses extends \Google\Service\Books\DictlayerdataDictWordsSenses
     {
     }
 }

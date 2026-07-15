@@ -29,6 +29,7 @@
  */
 namespace tool_dataprivacy\form;
 
+use core\form\persistent;
 /**
  * Data purpose form.
  *

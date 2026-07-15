@@ -21,91 +21,100 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Fitness;
-
-class ListSessionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'session';
-    protected $deletedSessionType = Session::class;
-    protected $deletedSessionDataType = 'array';
-    /**
-     * Flag to indicate server has more data to transfer. DO NOT USE THIS FIELD.
-     * It is never populated in responses from the server.
-     *
-     * @deprecated
-     * @var bool
-     */
-    public $hasMoreData;
-    /**
-     * The sync token which is used to sync further changes. This will only be
-     * provided if both startTime and endTime are omitted from the request.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $sessionType = Session::class;
-    protected $sessionDataType = 'array';
-    /**
-     * If includeDeleted is set to true in the request, and startTime and endTime
-     * are omitted, this will include sessions which were deleted since the last
-     * sync.
-     *
-     * @param Session[] $deletedSession
-     */
-    public function setDeletedSession($deletedSession)
+namespace Google\Service\Fitness {
+    class ListSessionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'session';
+        protected $deletedSessionType = Session::class;
+        protected $deletedSessionDataType = 'array';
+        /**
+         * Flag to indicate server has more data to transfer. DO NOT USE THIS FIELD.
+         * It is never populated in responses from the server.
+         *
+         * @deprecated
+         * @var bool
+         */
+        public $hasMoreData;
+        /**
+         * The sync token which is used to sync further changes. This will only be
+         * provided if both startTime and endTime are omitted from the request.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $sessionType = Session::class;
+        protected $sessionDataType = 'array';
+        /**
+         * If includeDeleted is set to true in the request, and startTime and endTime
+         * are omitted, this will include sessions which were deleted since the last
+         * sync.
+         *
+         * @param Session[] $deletedSession
+         */
+        public function setDeletedSession($deletedSession)
+        {
+        }
+        /**
+         * @return Session[]
+         */
+        public function getDeletedSession()
+        {
+        }
+        /**
+         * Flag to indicate server has more data to transfer. DO NOT USE THIS FIELD.
+         * It is never populated in responses from the server.
+         *
+         * @deprecated
+         * @param bool $hasMoreData
+         */
+        public function setHasMoreData($hasMoreData)
+        {
+        }
+        /**
+         * @deprecated
+         * @return bool
+         */
+        public function getHasMoreData()
+        {
+        }
+        /**
+         * The sync token which is used to sync further changes. This will only be
+         * provided if both startTime and endTime are omitted from the request.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Sessions starting before endTime of the request and ending after startTime
+         * of the request up to (endTime of the request + 1 day).
+         *
+         * @param Session[] $session
+         */
+        public function setSession($session)
+        {
+        }
+        /**
+         * @return Session[]
+         */
+        public function getSession()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Session[]
+     * Runtime class alias of \Google\Service\Fitness\ListSessionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeletedSession()
-    {
-    }
-    /**
-     * Flag to indicate server has more data to transfer. DO NOT USE THIS FIELD.
-     * It is never populated in responses from the server.
-     *
-     * @deprecated
-     * @param bool $hasMoreData
-     */
-    public function setHasMoreData($hasMoreData)
-    {
-    }
-    /**
-     * @deprecated
-     * @return bool
-     */
-    public function getHasMoreData()
-    {
-    }
-    /**
-     * The sync token which is used to sync further changes. This will only be
-     * provided if both startTime and endTime are omitted from the request.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Sessions starting before endTime of the request and ending after startTime
-     * of the request up to (endTime of the request + 1 day).
-     *
-     * @param Session[] $session
-     */
-    public function setSession($session)
-    {
-    }
-    /**
-     * @return Session[]
-     */
-    public function getSession()
+    class Google_Service_Fitness_ListSessionsResponse extends \Google\Service\Fitness\ListSessionsResponse
     {
     }
 }

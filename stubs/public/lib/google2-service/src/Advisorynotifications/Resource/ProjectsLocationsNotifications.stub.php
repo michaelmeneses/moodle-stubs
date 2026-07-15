@@ -21,65 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Advisorynotifications\Resource;
-
-/**
- * The "notifications" collection of methods.
- * Typical usage is:
- *  <code>
- *   $advisorynotificationsService = new Google\Service\Advisorynotifications(...);
- *   $notifications = $advisorynotificationsService->projects_locations_notifications;
- *  </code>
- */
-class ProjectsLocationsNotifications extends \Google\Service\Resource
-{
+namespace Google\Service\Advisorynotifications\Resource {
+    use Google\Service\Advisorynotifications\GoogleCloudAdvisorynotificationsV1ListNotificationsResponse;
+    use Google\Service\Advisorynotifications\GoogleCloudAdvisorynotificationsV1Notification;
     /**
-     * Gets a notification. (notifications.get)
-     *
-     * @param string $name Required. A name of the notification to retrieve. Format:
-     * organizations/{organization}/locations/{location}/notifications/{notification
-     * } or projects/{projects}/locations/{location}/notifications/{notification}.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string languageCode ISO code for requested localization language.
-     * If unset, will be interpereted as "en". If the requested language is valid,
-     * but not supported for this notification, English will be returned with an
-     * "Not applicable" LocalizationState. If the ISO code is invalid (i.e. not a
-     * real language), this RPC will throw an error.
-     * @return GoogleCloudAdvisorynotificationsV1Notification
-     * @throws \Google\Service\Exception
+     * The "notifications" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $advisorynotificationsService = new Google\Service\Advisorynotifications(...);
+     *   $notifications = $advisorynotificationsService->projects_locations_notifications;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class ProjectsLocationsNotifications extends \Google\Service\Resource
     {
+        /**
+         * Gets a notification. (notifications.get)
+         *
+         * @param string $name Required. A name of the notification to retrieve. Format:
+         * organizations/{organization}/locations/{location}/notifications/{notification
+         * } or projects/{projects}/locations/{location}/notifications/{notification}.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string languageCode ISO code for requested localization language.
+         * If unset, will be interpereted as "en". If the requested language is valid,
+         * but not supported for this notification, English will be returned with an
+         * "Not applicable" LocalizationState. If the ISO code is invalid (i.e. not a
+         * real language), this RPC will throw an error.
+         * @return GoogleCloudAdvisorynotificationsV1Notification
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists notifications under a given parent.
+         * (notifications.listProjectsLocationsNotifications)
+         *
+         * @param string $parent Required. The parent, which owns this collection of
+         * notifications. Must be of the form
+         * "organizations/{organization}/locations/{location}" or
+         * "projects/{project}/locations/{location}".
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string languageCode ISO code for requested localization language.
+         * If unset, will be interpereted as "en". If the requested language is valid,
+         * but not supported for this notification, English will be returned with an
+         * "Not applicable" LocalizationState. If the ISO code is invalid (i.e. not a
+         * real language), this RPC will throw an error.
+         * @opt_param int pageSize The maximum number of notifications to return. The
+         * service may return fewer than this value. If unspecified or equal to 0, at
+         * most 50 notifications will be returned. The maximum value is 50; values above
+         * 50 will be coerced to 50.
+         * @opt_param string pageToken A page token returned from a previous request.
+         * When paginating, all other parameters provided in the request must match the
+         * call that returned the page token.
+         * @opt_param string view Specifies which parts of the notification resource
+         * should be returned in the response.
+         * @return GoogleCloudAdvisorynotificationsV1ListNotificationsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsNotifications($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists notifications under a given parent.
-     * (notifications.listProjectsLocationsNotifications)
-     *
-     * @param string $parent Required. The parent, which owns this collection of
-     * notifications. Must be of the form
-     * "organizations/{organization}/locations/{location}" or
-     * "projects/{project}/locations/{location}".
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string languageCode ISO code for requested localization language.
-     * If unset, will be interpereted as "en". If the requested language is valid,
-     * but not supported for this notification, English will be returned with an
-     * "Not applicable" LocalizationState. If the ISO code is invalid (i.e. not a
-     * real language), this RPC will throw an error.
-     * @opt_param int pageSize The maximum number of notifications to return. The
-     * service may return fewer than this value. If unspecified or equal to 0, at
-     * most 50 notifications will be returned. The maximum value is 50; values above
-     * 50 will be coerced to 50.
-     * @opt_param string pageToken A page token returned from a previous request.
-     * When paginating, all other parameters provided in the request must match the
-     * call that returned the page token.
-     * @opt_param string view Specifies which parts of the notification resource
-     * should be returned in the response.
-     * @return GoogleCloudAdvisorynotificationsV1ListNotificationsResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Advisorynotifications\Resource\ProjectsLocationsNotifications registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listProjectsLocationsNotifications($parent, $optParams = [])
+    class Google_Service_Advisorynotifications_Resource_ProjectsLocationsNotifications extends \Google\Service\Advisorynotifications\Resource\ProjectsLocationsNotifications
     {
     }
 }

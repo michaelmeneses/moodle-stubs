@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides;
-
-class CreateSlideResponse extends \Google\Model
-{
-    /**
-     * The object ID of the created slide.
-     *
-     * @var string
-     */
-    public $objectId;
-    /**
-     * The object ID of the created slide.
-     *
-     * @param string $objectId
-     */
-    public function setObjectId($objectId)
+namespace Google\Service\Slides {
+    class CreateSlideResponse extends \Google\Model
     {
+        /**
+         * The object ID of the created slide.
+         *
+         * @var string
+         */
+        public $objectId;
+        /**
+         * The object ID of the created slide.
+         *
+         * @param string $objectId
+         */
+        public function setObjectId($objectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Slides\CreateSlideResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getObjectId()
+    class Google_Service_Slides_CreateSlideResponse extends \Google\Service\Slides\CreateSlideResponse
     {
     }
 }

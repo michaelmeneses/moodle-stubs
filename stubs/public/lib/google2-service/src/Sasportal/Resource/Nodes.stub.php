@@ -21,27 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sasportal\Resource;
-
-/**
- * The "nodes" collection of methods.
- * Typical usage is:
- *  <code>
- *   $sasportalService = new Google\Service\Sasportal(...);
- *   $nodes = $sasportalService->nodes;
- *  </code>
- */
-class Nodes extends \Google\Service\Resource
-{
+namespace Google\Service\Sasportal\Resource {
+    use Google\Service\Sasportal\SasPortalNode;
     /**
-     * Returns a requested node. (nodes.get)
-     *
-     * @param string $name Required. The name of the node.
-     * @param array $optParams Optional parameters.
-     * @return SasPortalNode
-     * @throws \Google\Service\Exception
+     * The "nodes" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $sasportalService = new Google\Service\Sasportal(...);
+     *   $nodes = $sasportalService->nodes;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class Nodes extends \Google\Service\Resource
+    {
+        /**
+         * Returns a requested node. (nodes.get)
+         *
+         * @param string $name Required. The name of the node.
+         * @param array $optParams Optional parameters.
+         * @return SasPortalNode
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Sasportal\Resource\Nodes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Sasportal_Resource_Nodes extends \Google\Service\Sasportal\Resource\Nodes
     {
     }
 }

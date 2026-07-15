@@ -21,110 +21,119 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Games;
-
-class LeaderboardScoreRank extends \Google\Model
-{
-    /**
-     * The number of scores in the leaderboard as a string.
-     *
-     * @var string
-     */
-    public $formattedNumScores;
-    /**
-     * The rank in the leaderboard as a string.
-     *
-     * @var string
-     */
-    public $formattedRank;
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#leaderboardScoreRank`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The number of scores in the leaderboard.
-     *
-     * @var string
-     */
-    public $numScores;
-    /**
-     * The rank in the leaderboard.
-     *
-     * @var string
-     */
-    public $rank;
-    /**
-     * The number of scores in the leaderboard as a string.
-     *
-     * @param string $formattedNumScores
-     */
-    public function setFormattedNumScores($formattedNumScores)
+namespace Google\Service\Games {
+    class LeaderboardScoreRank extends \Google\Model
     {
+        /**
+         * The number of scores in the leaderboard as a string.
+         *
+         * @var string
+         */
+        public $formattedNumScores;
+        /**
+         * The rank in the leaderboard as a string.
+         *
+         * @var string
+         */
+        public $formattedRank;
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#leaderboardScoreRank`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The number of scores in the leaderboard.
+         *
+         * @var string
+         */
+        public $numScores;
+        /**
+         * The rank in the leaderboard.
+         *
+         * @var string
+         */
+        public $rank;
+        /**
+         * The number of scores in the leaderboard as a string.
+         *
+         * @param string $formattedNumScores
+         */
+        public function setFormattedNumScores($formattedNumScores)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFormattedNumScores()
+        {
+        }
+        /**
+         * The rank in the leaderboard as a string.
+         *
+         * @param string $formattedRank
+         */
+        public function setFormattedRank($formattedRank)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFormattedRank()
+        {
+        }
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#leaderboardScoreRank`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The number of scores in the leaderboard.
+         *
+         * @param string $numScores
+         */
+        public function setNumScores($numScores)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNumScores()
+        {
+        }
+        /**
+         * The rank in the leaderboard.
+         *
+         * @param string $rank
+         */
+        public function setRank($rank)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRank()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Games\LeaderboardScoreRank registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFormattedNumScores()
-    {
-    }
-    /**
-     * The rank in the leaderboard as a string.
-     *
-     * @param string $formattedRank
-     */
-    public function setFormattedRank($formattedRank)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFormattedRank()
-    {
-    }
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#leaderboardScoreRank`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The number of scores in the leaderboard.
-     *
-     * @param string $numScores
-     */
-    public function setNumScores($numScores)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNumScores()
-    {
-    }
-    /**
-     * The rank in the leaderboard.
-     *
-     * @param string $rank
-     */
-    public function setRank($rank)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRank()
+    class Google_Service_Games_LeaderboardScoreRank extends \Google\Service\Games\LeaderboardScoreRank
     {
     }
 }

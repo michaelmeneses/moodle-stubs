@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAlloyDBAdmin;
-
-class ReadPoolConfig extends \Google\Model
-{
-    /**
-     * Read capacity, i.e. number of nodes in a read pool instance.
-     *
-     * @var int
-     */
-    public $nodeCount;
-    /**
-     * Read capacity, i.e. number of nodes in a read pool instance.
-     *
-     * @param int $nodeCount
-     */
-    public function setNodeCount($nodeCount)
+namespace Google\Service\CloudAlloyDBAdmin {
+    class ReadPoolConfig extends \Google\Model
     {
+        /**
+         * Read capacity, i.e. number of nodes in a read pool instance.
+         *
+         * @var int
+         */
+        public $nodeCount;
+        /**
+         * Read capacity, i.e. number of nodes in a read pool instance.
+         *
+         * @param int $nodeCount
+         */
+        public function setNodeCount($nodeCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNodeCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudAlloyDBAdmin\ReadPoolConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNodeCount()
+    class Google_Service_CloudAlloyDBAdmin_ReadPoolConfig extends \Google\Service\CloudAlloyDBAdmin\ReadPoolConfig
     {
     }
 }

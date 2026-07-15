@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class ConvertedOtherRegionsPrice extends \Google\Model
-{
-    protected $eurPriceType = Money::class;
-    protected $eurPriceDataType = '';
-    protected $usdPriceType = Money::class;
-    protected $usdPriceDataType = '';
-    /**
-     * Price in EUR to use for the "Other regions" location exclusive of taxes.
-     *
-     * @param Money $eurPrice
-     */
-    public function setEurPrice(Money $eurPrice)
+namespace Google\Service\AndroidPublisher {
+    class ConvertedOtherRegionsPrice extends \Google\Model
     {
+        protected $eurPriceType = Money::class;
+        protected $eurPriceDataType = '';
+        protected $usdPriceType = Money::class;
+        protected $usdPriceDataType = '';
+        /**
+         * Price in EUR to use for the "Other regions" location exclusive of taxes.
+         *
+         * @param Money $eurPrice
+         */
+        public function setEurPrice(Money $eurPrice)
+        {
+        }
+        /**
+         * @return Money
+         */
+        public function getEurPrice()
+        {
+        }
+        /**
+         * Price in USD to use for the "Other regions" location exclusive of taxes.
+         *
+         * @param Money $usdPrice
+         */
+        public function setUsdPrice(Money $usdPrice)
+        {
+        }
+        /**
+         * @return Money
+         */
+        public function getUsdPrice()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Money
+     * Runtime class alias of \Google\Service\AndroidPublisher\ConvertedOtherRegionsPrice registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEurPrice()
-    {
-    }
-    /**
-     * Price in USD to use for the "Other regions" location exclusive of taxes.
-     *
-     * @param Money $usdPrice
-     */
-    public function setUsdPrice(Money $usdPrice)
-    {
-    }
-    /**
-     * @return Money
-     */
-    public function getUsdPrice()
+    class Google_Service_AndroidPublisher_ConvertedOtherRegionsPrice extends \Google\Service\AndroidPublisher\ConvertedOtherRegionsPrice
     {
     }
 }

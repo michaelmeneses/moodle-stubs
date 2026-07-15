@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class DeepLinkData extends \Google\Collection
-{
-    protected $collection_key = 'client';
-    /**
-     * @var string
-     */
-    public $appId;
-    protected $clientType = PackagingServiceClient::class;
-    protected $clientDataType = 'array';
-    /**
-     * @var string
-     */
-    public $deepLinkId;
-    /**
-     * @var string
-     */
-    public $url;
-    /**
-     * @param string
-     */
-    public function setAppId($appId)
+namespace Google\Service\CloudSearch {
+    class DeepLinkData extends \Google\Collection
     {
+        protected $collection_key = 'client';
+        /**
+         * @var string
+         */
+        public $appId;
+        protected $clientType = PackagingServiceClient::class;
+        protected $clientDataType = 'array';
+        /**
+         * @var string
+         */
+        public $deepLinkId;
+        /**
+         * @var string
+         */
+        public $url;
+        /**
+         * @param string
+         */
+        public function setAppId($appId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAppId()
+        {
+        }
+        /**
+         * @param PackagingServiceClient[]
+         */
+        public function setClient($client)
+        {
+        }
+        /**
+         * @return PackagingServiceClient[]
+         */
+        public function getClient()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDeepLinkId($deepLinkId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeepLinkId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\DeepLinkData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAppId()
-    {
-    }
-    /**
-     * @param PackagingServiceClient[]
-     */
-    public function setClient($client)
-    {
-    }
-    /**
-     * @return PackagingServiceClient[]
-     */
-    public function getClient()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDeepLinkId($deepLinkId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeepLinkId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
+    class Google_Service_CloudSearch_DeepLinkData extends \Google\Service\CloudSearch\DeepLinkData
     {
     }
 }

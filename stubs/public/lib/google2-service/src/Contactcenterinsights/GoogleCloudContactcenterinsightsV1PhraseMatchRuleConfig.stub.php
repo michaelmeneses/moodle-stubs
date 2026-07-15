@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1PhraseMatchRuleConfig extends \Google\Model
-{
-    protected $exactMatchConfigType = GoogleCloudContactcenterinsightsV1ExactMatchConfig::class;
-    protected $exactMatchConfigDataType = '';
-    protected $regexMatchConfigType = GoogleCloudContactcenterinsightsV1RegexMatchConfig::class;
-    protected $regexMatchConfigDataType = '';
-    /**
-     * The configuration for the exact match rule.
-     *
-     * @param GoogleCloudContactcenterinsightsV1ExactMatchConfig $exactMatchConfig
-     */
-    public function setExactMatchConfig(GoogleCloudContactcenterinsightsV1ExactMatchConfig $exactMatchConfig)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1PhraseMatchRuleConfig extends \Google\Model
     {
+        protected $exactMatchConfigType = GoogleCloudContactcenterinsightsV1ExactMatchConfig::class;
+        protected $exactMatchConfigDataType = '';
+        protected $regexMatchConfigType = GoogleCloudContactcenterinsightsV1RegexMatchConfig::class;
+        protected $regexMatchConfigDataType = '';
+        /**
+         * The configuration for the exact match rule.
+         *
+         * @param GoogleCloudContactcenterinsightsV1ExactMatchConfig $exactMatchConfig
+         */
+        public function setExactMatchConfig(GoogleCloudContactcenterinsightsV1ExactMatchConfig $exactMatchConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1ExactMatchConfig
+         */
+        public function getExactMatchConfig()
+        {
+        }
+        /**
+         * The configuration for the regex match rule.
+         *
+         * @param GoogleCloudContactcenterinsightsV1RegexMatchConfig $regexMatchConfig
+         */
+        public function setRegexMatchConfig(GoogleCloudContactcenterinsightsV1RegexMatchConfig $regexMatchConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1RegexMatchConfig
+         */
+        public function getRegexMatchConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudContactcenterinsightsV1ExactMatchConfig
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1PhraseMatchRuleConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExactMatchConfig()
-    {
-    }
-    /**
-     * The configuration for the regex match rule.
-     *
-     * @param GoogleCloudContactcenterinsightsV1RegexMatchConfig $regexMatchConfig
-     */
-    public function setRegexMatchConfig(GoogleCloudContactcenterinsightsV1RegexMatchConfig $regexMatchConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudContactcenterinsightsV1RegexMatchConfig
-     */
-    public function getRegexMatchConfig()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1PhraseMatchRuleConfig extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1PhraseMatchRuleConfig
     {
     }
 }

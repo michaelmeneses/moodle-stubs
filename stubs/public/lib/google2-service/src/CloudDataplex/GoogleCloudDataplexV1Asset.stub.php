@@ -21,283 +21,292 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1Asset extends \Google\Model
-{
-    /**
-     * State is not specified.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * Resource is active, i.e., ready to use.
-     */
-    public const STATE_ACTIVE = 'ACTIVE';
-    /**
-     * Resource is under creation.
-     */
-    public const STATE_CREATING = 'CREATING';
-    /**
-     * Resource is under deletion.
-     */
-    public const STATE_DELETING = 'DELETING';
-    /**
-     * Resource is active but has unresolved actions.
-     */
-    public const STATE_ACTION_REQUIRED = 'ACTION_REQUIRED';
-    /**
-     * Output only. The time when the asset was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Optional. Description of the asset.
-     *
-     * @var string
-     */
-    public $description;
-    protected $discoverySpecType = GoogleCloudDataplexV1AssetDiscoverySpec::class;
-    protected $discoverySpecDataType = '';
-    protected $discoveryStatusType = GoogleCloudDataplexV1AssetDiscoveryStatus::class;
-    protected $discoveryStatusDataType = '';
-    /**
-     * Optional. User friendly display name.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Optional. User defined labels for the asset.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Output only. The relative resource name of the asset, of the form: projects
-     * /{project_number}/locations/{location_id}/lakes/{lake_id}/zones/{zone_id}/a
-     * ssets/{asset_id}.
-     *
-     * @var string
-     */
-    public $name;
-    protected $resourceSpecType = GoogleCloudDataplexV1AssetResourceSpec::class;
-    protected $resourceSpecDataType = '';
-    protected $resourceStatusType = GoogleCloudDataplexV1AssetResourceStatus::class;
-    protected $resourceStatusDataType = '';
-    protected $securityStatusType = GoogleCloudDataplexV1AssetSecurityStatus::class;
-    protected $securityStatusDataType = '';
-    /**
-     * Output only. Current state of the asset.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Output only. System generated globally unique ID for the asset. This ID
-     * will be different if the asset is deleted and re-created with the same
-     * name.
-     *
-     * @var string
-     */
-    public $uid;
-    /**
-     * Output only. The time when the asset was last updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. The time when the asset was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1Asset extends \Google\Model
     {
+        /**
+         * State is not specified.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * Resource is active, i.e., ready to use.
+         */
+        public const STATE_ACTIVE = 'ACTIVE';
+        /**
+         * Resource is under creation.
+         */
+        public const STATE_CREATING = 'CREATING';
+        /**
+         * Resource is under deletion.
+         */
+        public const STATE_DELETING = 'DELETING';
+        /**
+         * Resource is active but has unresolved actions.
+         */
+        public const STATE_ACTION_REQUIRED = 'ACTION_REQUIRED';
+        /**
+         * Output only. The time when the asset was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Optional. Description of the asset.
+         *
+         * @var string
+         */
+        public $description;
+        protected $discoverySpecType = GoogleCloudDataplexV1AssetDiscoverySpec::class;
+        protected $discoverySpecDataType = '';
+        protected $discoveryStatusType = GoogleCloudDataplexV1AssetDiscoveryStatus::class;
+        protected $discoveryStatusDataType = '';
+        /**
+         * Optional. User friendly display name.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Optional. User defined labels for the asset.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Output only. The relative resource name of the asset, of the form: projects
+         * /{project_number}/locations/{location_id}/lakes/{lake_id}/zones/{zone_id}/a
+         * ssets/{asset_id}.
+         *
+         * @var string
+         */
+        public $name;
+        protected $resourceSpecType = GoogleCloudDataplexV1AssetResourceSpec::class;
+        protected $resourceSpecDataType = '';
+        protected $resourceStatusType = GoogleCloudDataplexV1AssetResourceStatus::class;
+        protected $resourceStatusDataType = '';
+        protected $securityStatusType = GoogleCloudDataplexV1AssetSecurityStatus::class;
+        protected $securityStatusDataType = '';
+        /**
+         * Output only. Current state of the asset.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Output only. System generated globally unique ID for the asset. This ID
+         * will be different if the asset is deleted and re-created with the same
+         * name.
+         *
+         * @var string
+         */
+        public $uid;
+        /**
+         * Output only. The time when the asset was last updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. The time when the asset was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Optional. Description of the asset.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Optional. Specification of the discovery feature applied to data referenced
+         * by this asset. When this spec is left unset, the asset will use the spec
+         * set on the parent zone.
+         *
+         * @param GoogleCloudDataplexV1AssetDiscoverySpec $discoverySpec
+         */
+        public function setDiscoverySpec(GoogleCloudDataplexV1AssetDiscoverySpec $discoverySpec)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1AssetDiscoverySpec
+         */
+        public function getDiscoverySpec()
+        {
+        }
+        /**
+         * Output only. Status of the discovery feature applied to data referenced by
+         * this asset.
+         *
+         * @param GoogleCloudDataplexV1AssetDiscoveryStatus $discoveryStatus
+         */
+        public function setDiscoveryStatus(GoogleCloudDataplexV1AssetDiscoveryStatus $discoveryStatus)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1AssetDiscoveryStatus
+         */
+        public function getDiscoveryStatus()
+        {
+        }
+        /**
+         * Optional. User friendly display name.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Optional. User defined labels for the asset.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Output only. The relative resource name of the asset, of the form: projects
+         * /{project_number}/locations/{location_id}/lakes/{lake_id}/zones/{zone_id}/a
+         * ssets/{asset_id}.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Required. Specification of the resource that is referenced by this asset.
+         *
+         * @param GoogleCloudDataplexV1AssetResourceSpec $resourceSpec
+         */
+        public function setResourceSpec(GoogleCloudDataplexV1AssetResourceSpec $resourceSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1AssetResourceSpec
+         */
+        public function getResourceSpec()
+        {
+        }
+        /**
+         * Output only. Status of the resource referenced by this asset.
+         *
+         * @param GoogleCloudDataplexV1AssetResourceStatus $resourceStatus
+         */
+        public function setResourceStatus(GoogleCloudDataplexV1AssetResourceStatus $resourceStatus)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1AssetResourceStatus
+         */
+        public function getResourceStatus()
+        {
+        }
+        /**
+         * Output only. Status of the security policy applied to resource referenced
+         * by this asset.
+         *
+         * @param GoogleCloudDataplexV1AssetSecurityStatus $securityStatus
+         */
+        public function setSecurityStatus(GoogleCloudDataplexV1AssetSecurityStatus $securityStatus)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1AssetSecurityStatus
+         */
+        public function getSecurityStatus()
+        {
+        }
+        /**
+         * Output only. Current state of the asset.
+         *
+         * Accepted values: STATE_UNSPECIFIED, ACTIVE, CREATING, DELETING,
+         * ACTION_REQUIRED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Output only. System generated globally unique ID for the asset. This ID
+         * will be different if the asset is deleted and re-created with the same
+         * name.
+         *
+         * @param string $uid
+         */
+        public function setUid($uid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUid()
+        {
+        }
+        /**
+         * Output only. The time when the asset was last updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1Asset registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Optional. Description of the asset.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Optional. Specification of the discovery feature applied to data referenced
-     * by this asset. When this spec is left unset, the asset will use the spec
-     * set on the parent zone.
-     *
-     * @param GoogleCloudDataplexV1AssetDiscoverySpec $discoverySpec
-     */
-    public function setDiscoverySpec(GoogleCloudDataplexV1AssetDiscoverySpec $discoverySpec)
-    {
-    }
-    /**
-     * @return GoogleCloudDataplexV1AssetDiscoverySpec
-     */
-    public function getDiscoverySpec()
-    {
-    }
-    /**
-     * Output only. Status of the discovery feature applied to data referenced by
-     * this asset.
-     *
-     * @param GoogleCloudDataplexV1AssetDiscoveryStatus $discoveryStatus
-     */
-    public function setDiscoveryStatus(GoogleCloudDataplexV1AssetDiscoveryStatus $discoveryStatus)
-    {
-    }
-    /**
-     * @return GoogleCloudDataplexV1AssetDiscoveryStatus
-     */
-    public function getDiscoveryStatus()
-    {
-    }
-    /**
-     * Optional. User friendly display name.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Optional. User defined labels for the asset.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Output only. The relative resource name of the asset, of the form: projects
-     * /{project_number}/locations/{location_id}/lakes/{lake_id}/zones/{zone_id}/a
-     * ssets/{asset_id}.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Required. Specification of the resource that is referenced by this asset.
-     *
-     * @param GoogleCloudDataplexV1AssetResourceSpec $resourceSpec
-     */
-    public function setResourceSpec(GoogleCloudDataplexV1AssetResourceSpec $resourceSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudDataplexV1AssetResourceSpec
-     */
-    public function getResourceSpec()
-    {
-    }
-    /**
-     * Output only. Status of the resource referenced by this asset.
-     *
-     * @param GoogleCloudDataplexV1AssetResourceStatus $resourceStatus
-     */
-    public function setResourceStatus(GoogleCloudDataplexV1AssetResourceStatus $resourceStatus)
-    {
-    }
-    /**
-     * @return GoogleCloudDataplexV1AssetResourceStatus
-     */
-    public function getResourceStatus()
-    {
-    }
-    /**
-     * Output only. Status of the security policy applied to resource referenced
-     * by this asset.
-     *
-     * @param GoogleCloudDataplexV1AssetSecurityStatus $securityStatus
-     */
-    public function setSecurityStatus(GoogleCloudDataplexV1AssetSecurityStatus $securityStatus)
-    {
-    }
-    /**
-     * @return GoogleCloudDataplexV1AssetSecurityStatus
-     */
-    public function getSecurityStatus()
-    {
-    }
-    /**
-     * Output only. Current state of the asset.
-     *
-     * Accepted values: STATE_UNSPECIFIED, ACTIVE, CREATING, DELETING,
-     * ACTION_REQUIRED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Output only. System generated globally unique ID for the asset. This ID
-     * will be different if the asset is deleted and re-created with the same
-     * name.
-     *
-     * @param string $uid
-     */
-    public function setUid($uid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUid()
-    {
-    }
-    /**
-     * Output only. The time when the asset was last updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1Asset extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1Asset
     {
     }
 }

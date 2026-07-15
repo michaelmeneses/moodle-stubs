@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class CopyBackupMetadata extends \Google\Model
-{
-    /**
-     * The time at which cancellation of CopyBackup operation was received.
-     * Operations.CancelOperation starts asynchronous cancellation on a long-
-     * running operation. The server makes a best effort to cancel the operation,
-     * but success is not guaranteed. Clients can use Operations.GetOperation or
-     * other methods to check whether the cancellation succeeded or whether the
-     * operation completed despite cancellation. On successful cancellation, the
-     * operation is not deleted; instead, it becomes an operation with an
-     * Operation.error value with a google.rpc.Status.code of 1, corresponding to
-     * `Code.CANCELLED`.
-     *
-     * @var string
-     */
-    public $cancelTime;
-    /**
-     * The name of the backup being created through the copy operation. Values are
-     * of the form `projects//instances//backups/`.
-     *
-     * @var string
-     */
-    public $name;
-    protected $progressType = OperationProgress::class;
-    protected $progressDataType = '';
-    /**
-     * The name of the source backup that is being copied. Values are of the form
-     * `projects//instances//backups/`.
-     *
-     * @var string
-     */
-    public $sourceBackup;
-    /**
-     * The time at which cancellation of CopyBackup operation was received.
-     * Operations.CancelOperation starts asynchronous cancellation on a long-
-     * running operation. The server makes a best effort to cancel the operation,
-     * but success is not guaranteed. Clients can use Operations.GetOperation or
-     * other methods to check whether the cancellation succeeded or whether the
-     * operation completed despite cancellation. On successful cancellation, the
-     * operation is not deleted; instead, it becomes an operation with an
-     * Operation.error value with a google.rpc.Status.code of 1, corresponding to
-     * `Code.CANCELLED`.
-     *
-     * @param string $cancelTime
-     */
-    public function setCancelTime($cancelTime)
+namespace Google\Service\Spanner {
+    class CopyBackupMetadata extends \Google\Model
     {
+        /**
+         * The time at which cancellation of CopyBackup operation was received.
+         * Operations.CancelOperation starts asynchronous cancellation on a long-
+         * running operation. The server makes a best effort to cancel the operation,
+         * but success is not guaranteed. Clients can use Operations.GetOperation or
+         * other methods to check whether the cancellation succeeded or whether the
+         * operation completed despite cancellation. On successful cancellation, the
+         * operation is not deleted; instead, it becomes an operation with an
+         * Operation.error value with a google.rpc.Status.code of 1, corresponding to
+         * `Code.CANCELLED`.
+         *
+         * @var string
+         */
+        public $cancelTime;
+        /**
+         * The name of the backup being created through the copy operation. Values are
+         * of the form `projects//instances//backups/`.
+         *
+         * @var string
+         */
+        public $name;
+        protected $progressType = OperationProgress::class;
+        protected $progressDataType = '';
+        /**
+         * The name of the source backup that is being copied. Values are of the form
+         * `projects//instances//backups/`.
+         *
+         * @var string
+         */
+        public $sourceBackup;
+        /**
+         * The time at which cancellation of CopyBackup operation was received.
+         * Operations.CancelOperation starts asynchronous cancellation on a long-
+         * running operation. The server makes a best effort to cancel the operation,
+         * but success is not guaranteed. Clients can use Operations.GetOperation or
+         * other methods to check whether the cancellation succeeded or whether the
+         * operation completed despite cancellation. On successful cancellation, the
+         * operation is not deleted; instead, it becomes an operation with an
+         * Operation.error value with a google.rpc.Status.code of 1, corresponding to
+         * `Code.CANCELLED`.
+         *
+         * @param string $cancelTime
+         */
+        public function setCancelTime($cancelTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCancelTime()
+        {
+        }
+        /**
+         * The name of the backup being created through the copy operation. Values are
+         * of the form `projects//instances//backups/`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The progress of the CopyBackup operation.
+         *
+         * @param OperationProgress $progress
+         */
+        public function setProgress(OperationProgress $progress)
+        {
+        }
+        /**
+         * @return OperationProgress
+         */
+        public function getProgress()
+        {
+        }
+        /**
+         * The name of the source backup that is being copied. Values are of the form
+         * `projects//instances//backups/`.
+         *
+         * @param string $sourceBackup
+         */
+        public function setSourceBackup($sourceBackup)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceBackup()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Spanner\CopyBackupMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCancelTime()
-    {
-    }
-    /**
-     * The name of the backup being created through the copy operation. Values are
-     * of the form `projects//instances//backups/`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The progress of the CopyBackup operation.
-     *
-     * @param OperationProgress $progress
-     */
-    public function setProgress(OperationProgress $progress)
-    {
-    }
-    /**
-     * @return OperationProgress
-     */
-    public function getProgress()
-    {
-    }
-    /**
-     * The name of the source backup that is being copied. Values are of the form
-     * `projects//instances//backups/`.
-     *
-     * @param string $sourceBackup
-     */
-    public function setSourceBackup($sourceBackup)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourceBackup()
+    class Google_Service_Spanner_CopyBackupMetadata extends \Google\Service\Spanner\CopyBackupMetadata
     {
     }
 }

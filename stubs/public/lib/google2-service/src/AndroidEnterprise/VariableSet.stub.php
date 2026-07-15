@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise;
-
-class VariableSet extends \Google\Model
-{
-    /**
-     * The placeholder string; defined by EMM.
-     *
-     * @var string
-     */
-    public $placeholder;
-    /**
-     * The value of the placeholder, specific to the user.
-     *
-     * @var string
-     */
-    public $userValue;
-    /**
-     * The placeholder string; defined by EMM.
-     *
-     * @param string $placeholder
-     */
-    public function setPlaceholder($placeholder)
+namespace Google\Service\AndroidEnterprise {
+    class VariableSet extends \Google\Model
     {
+        /**
+         * The placeholder string; defined by EMM.
+         *
+         * @var string
+         */
+        public $placeholder;
+        /**
+         * The value of the placeholder, specific to the user.
+         *
+         * @var string
+         */
+        public $userValue;
+        /**
+         * The placeholder string; defined by EMM.
+         *
+         * @param string $placeholder
+         */
+        public function setPlaceholder($placeholder)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPlaceholder()
+        {
+        }
+        /**
+         * The value of the placeholder, specific to the user.
+         *
+         * @param string $userValue
+         */
+        public function setUserValue($userValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidEnterprise\VariableSet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPlaceholder()
-    {
-    }
-    /**
-     * The value of the placeholder, specific to the user.
-     *
-     * @param string $userValue
-     */
-    public function setUserValue($userValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserValue()
+    class Google_Service_AndroidEnterprise_VariableSet extends \Google\Service\AndroidEnterprise\VariableSet
     {
     }
 }

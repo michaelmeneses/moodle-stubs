@@ -21,89 +21,98 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Reports;
-
-class Activities extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    /**
-     * ETag of the resource.
-     *
-     * @var string
-     */
-    public $etag;
-    protected $itemsType = Activity::class;
-    protected $itemsDataType = 'array';
-    /**
-     * The type of API resource. For an activity report, the value is
-     * `reports#activities`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Token for retrieving the follow-on next page of the report. The
-     * `nextPageToken` value is used in the request's `pageToken` query string.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * ETag of the resource.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
+namespace Google\Service\Reports {
+    class Activities extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        /**
+         * ETag of the resource.
+         *
+         * @var string
+         */
+        public $etag;
+        protected $itemsType = Activity::class;
+        protected $itemsDataType = 'array';
+        /**
+         * The type of API resource. For an activity report, the value is
+         * `reports#activities`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Token for retrieving the follow-on next page of the report. The
+         * `nextPageToken` value is used in the request's `pageToken` query string.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * ETag of the resource.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * Each activity record in the response.
+         *
+         * @param Activity[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return Activity[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * The type of API resource. For an activity report, the value is
+         * `reports#activities`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Token for retrieving the follow-on next page of the report. The
+         * `nextPageToken` value is used in the request's `pageToken` query string.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Reports\Activities registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
-    {
-    }
-    /**
-     * Each activity record in the response.
-     *
-     * @param Activity[] $items
-     */
-    public function setItems($items)
-    {
-    }
-    /**
-     * @return Activity[]
-     */
-    public function getItems()
-    {
-    }
-    /**
-     * The type of API resource. For an activity report, the value is
-     * `reports#activities`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Token for retrieving the follow-on next page of the report. The
-     * `nextPageToken` value is used in the request's `pageToken` query string.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Reports_Activities extends \Google\Service\Reports\Activities
     {
     }
 }

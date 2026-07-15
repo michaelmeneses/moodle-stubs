@@ -29,6 +29,10 @@
  */
 namespace fileconverter_googledrive;
 
+use stored_file;
+use moodle_exception;
+use moodle_url;
+use core_files\conversion;
 /**
  * Class for converting files between different formats using unoconv.
  *

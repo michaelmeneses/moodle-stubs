@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class ImportRowErrorXlsxErrorDetails extends \Google\Model
-{
-    /**
-     * The row number where the error was detected.
-     *
-     * @var int
-     */
-    public $rowNumber;
-    /**
-     * The name of the sheet where the error was detected.
-     *
-     * @var string
-     */
-    public $sheet;
-    /**
-     * The row number where the error was detected.
-     *
-     * @param int $rowNumber
-     */
-    public function setRowNumber($rowNumber)
+namespace Google\Service\MigrationCenterAPI {
+    class ImportRowErrorXlsxErrorDetails extends \Google\Model
     {
+        /**
+         * The row number where the error was detected.
+         *
+         * @var int
+         */
+        public $rowNumber;
+        /**
+         * The name of the sheet where the error was detected.
+         *
+         * @var string
+         */
+        public $sheet;
+        /**
+         * The row number where the error was detected.
+         *
+         * @param int $rowNumber
+         */
+        public function setRowNumber($rowNumber)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRowNumber()
+        {
+        }
+        /**
+         * The name of the sheet where the error was detected.
+         *
+         * @param string $sheet
+         */
+        public function setSheet($sheet)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSheet()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\ImportRowErrorXlsxErrorDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRowNumber()
-    {
-    }
-    /**
-     * The name of the sheet where the error was detected.
-     *
-     * @param string $sheet
-     */
-    public function setSheet($sheet)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSheet()
+    class Google_Service_MigrationCenterAPI_ImportRowErrorXlsxErrorDetails extends \Google\Service\MigrationCenterAPI\ImportRowErrorXlsxErrorDetails
     {
     }
 }

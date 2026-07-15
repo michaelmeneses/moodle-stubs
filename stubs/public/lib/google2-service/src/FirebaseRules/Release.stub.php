@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseRules;
-
-class Release extends \Google\Model
-{
-    /**
-     * Output only. Time the release was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Required. Format: `projects/{project_id}/releases/{release_id}`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. Name of the `Ruleset` referred to by this `Release`. The
-     * `Ruleset` must exist for the `Release` to be created.
-     *
-     * @var string
-     */
-    public $rulesetName;
-    /**
-     * Output only. Time the release was updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. Time the release was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\FirebaseRules {
+    class Release extends \Google\Model
     {
+        /**
+         * Output only. Time the release was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Required. Format: `projects/{project_id}/releases/{release_id}`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. Name of the `Ruleset` referred to by this `Release`. The
+         * `Ruleset` must exist for the `Release` to be created.
+         *
+         * @var string
+         */
+        public $rulesetName;
+        /**
+         * Output only. Time the release was updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. Time the release was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Required. Format: `projects/{project_id}/releases/{release_id}`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Required. Name of the `Ruleset` referred to by this `Release`. The
+         * `Ruleset` must exist for the `Release` to be created.
+         *
+         * @param string $rulesetName
+         */
+        public function setRulesetName($rulesetName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRulesetName()
+        {
+        }
+        /**
+         * Output only. Time the release was updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\FirebaseRules\Release registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Required. Format: `projects/{project_id}/releases/{release_id}`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Required. Name of the `Ruleset` referred to by this `Release`. The
-     * `Ruleset` must exist for the `Release` to be created.
-     *
-     * @param string $rulesetName
-     */
-    public function setRulesetName($rulesetName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRulesetName()
-    {
-    }
-    /**
-     * Output only. Time the release was updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_FirebaseRules_Release extends \Google\Service\FirebaseRules\Release
     {
     }
 }

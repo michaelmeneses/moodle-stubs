@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class DeviceTier extends \Google\Collection
-{
-    protected $collection_key = 'deviceGroupNames';
-    /**
-     * Groups of devices included in this tier. These groups must be defined
-     * explicitly under device_groups in this configuration.
-     *
-     * @var string[]
-     */
-    public $deviceGroupNames;
-    /**
-     * The priority level of the tier. Tiers are evaluated in descending order of
-     * level: the highest level tier has the highest priority. The highest tier
-     * matching a given device is selected for that device. You should use a
-     * contiguous range of levels for your tiers in a tier set; tier levels in a
-     * tier set must be unique. For instance, if your tier set has 4 tiers
-     * (including the global fallback), you should define tiers 1, 2 and 3 in this
-     * configuration. Note: tier 0 is implicitly defined as a global fallback and
-     * selected for devices that don't match any of the tiers explicitly defined
-     * here. You mustn't define level 0 explicitly in this configuration.
-     *
-     * @var int
-     */
-    public $level;
-    /**
-     * Groups of devices included in this tier. These groups must be defined
-     * explicitly under device_groups in this configuration.
-     *
-     * @param string[] $deviceGroupNames
-     */
-    public function setDeviceGroupNames($deviceGroupNames)
+namespace Google\Service\AndroidPublisher {
+    class DeviceTier extends \Google\Collection
     {
+        protected $collection_key = 'deviceGroupNames';
+        /**
+         * Groups of devices included in this tier. These groups must be defined
+         * explicitly under device_groups in this configuration.
+         *
+         * @var string[]
+         */
+        public $deviceGroupNames;
+        /**
+         * The priority level of the tier. Tiers are evaluated in descending order of
+         * level: the highest level tier has the highest priority. The highest tier
+         * matching a given device is selected for that device. You should use a
+         * contiguous range of levels for your tiers in a tier set; tier levels in a
+         * tier set must be unique. For instance, if your tier set has 4 tiers
+         * (including the global fallback), you should define tiers 1, 2 and 3 in this
+         * configuration. Note: tier 0 is implicitly defined as a global fallback and
+         * selected for devices that don't match any of the tiers explicitly defined
+         * here. You mustn't define level 0 explicitly in this configuration.
+         *
+         * @var int
+         */
+        public $level;
+        /**
+         * Groups of devices included in this tier. These groups must be defined
+         * explicitly under device_groups in this configuration.
+         *
+         * @param string[] $deviceGroupNames
+         */
+        public function setDeviceGroupNames($deviceGroupNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDeviceGroupNames()
+        {
+        }
+        /**
+         * The priority level of the tier. Tiers are evaluated in descending order of
+         * level: the highest level tier has the highest priority. The highest tier
+         * matching a given device is selected for that device. You should use a
+         * contiguous range of levels for your tiers in a tier set; tier levels in a
+         * tier set must be unique. For instance, if your tier set has 4 tiers
+         * (including the global fallback), you should define tiers 1, 2 and 3 in this
+         * configuration. Note: tier 0 is implicitly defined as a global fallback and
+         * selected for devices that don't match any of the tiers explicitly defined
+         * here. You mustn't define level 0 explicitly in this configuration.
+         *
+         * @param int $level
+         */
+        public function setLevel($level)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getLevel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\AndroidPublisher\DeviceTier registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeviceGroupNames()
-    {
-    }
-    /**
-     * The priority level of the tier. Tiers are evaluated in descending order of
-     * level: the highest level tier has the highest priority. The highest tier
-     * matching a given device is selected for that device. You should use a
-     * contiguous range of levels for your tiers in a tier set; tier levels in a
-     * tier set must be unique. For instance, if your tier set has 4 tiers
-     * (including the global fallback), you should define tiers 1, 2 and 3 in this
-     * configuration. Note: tier 0 is implicitly defined as a global fallback and
-     * selected for devices that don't match any of the tiers explicitly defined
-     * here. You mustn't define level 0 explicitly in this configuration.
-     *
-     * @param int $level
-     */
-    public function setLevel($level)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getLevel()
+    class Google_Service_AndroidPublisher_DeviceTier extends \Google\Service\AndroidPublisher\DeviceTier
     {
     }
 }

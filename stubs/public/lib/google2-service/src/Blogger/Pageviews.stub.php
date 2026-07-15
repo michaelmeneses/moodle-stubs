@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Blogger;
-
-class Pageviews extends \Google\Collection
-{
-    protected $collection_key = 'counts';
-    /**
-     * Blog Id.
-     *
-     * @var string
-     */
-    public $blogId;
-    protected $countsType = PageviewsCounts::class;
-    protected $countsDataType = 'array';
-    /**
-     * The kind of this entry. Always blogger#page_views.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Blog Id.
-     *
-     * @param string $blogId
-     */
-    public function setBlogId($blogId)
+namespace Google\Service\Blogger {
+    class Pageviews extends \Google\Collection
     {
+        protected $collection_key = 'counts';
+        /**
+         * Blog Id.
+         *
+         * @var string
+         */
+        public $blogId;
+        protected $countsType = PageviewsCounts::class;
+        protected $countsDataType = 'array';
+        /**
+         * The kind of this entry. Always blogger#page_views.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Blog Id.
+         *
+         * @param string $blogId
+         */
+        public function setBlogId($blogId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBlogId()
+        {
+        }
+        /**
+         * The container of posts in this blog.
+         *
+         * @param PageviewsCounts[] $counts
+         */
+        public function setCounts($counts)
+        {
+        }
+        /**
+         * @return PageviewsCounts[]
+         */
+        public function getCounts()
+        {
+        }
+        /**
+         * The kind of this entry. Always blogger#page_views.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Blogger\Pageviews registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBlogId()
-    {
-    }
-    /**
-     * The container of posts in this blog.
-     *
-     * @param PageviewsCounts[] $counts
-     */
-    public function setCounts($counts)
-    {
-    }
-    /**
-     * @return PageviewsCounts[]
-     */
-    public function getCounts()
-    {
-    }
-    /**
-     * The kind of this entry. Always blogger#page_views.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_Blogger_Pageviews extends \Google\Service\Blogger\Pageviews
     {
     }
 }

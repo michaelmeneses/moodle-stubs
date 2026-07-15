@@ -21,58 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigLakeService\Resource;
-
-/**
- * The "namespaces" collection of methods.
- * Typical usage is:
- *  <code>
- *   $biglakeService = new Google\Service\BigLakeService(...);
- *   $namespaces = $biglakeService->projects_catalogs_namespaces;
- *  </code>
- */
-class ProjectsCatalogsNamespaces extends \Google\Service\Resource
-{
+namespace Google\Service\BigLakeService\Resource {
+    use Google\Service\BigLakeService\Policy;
+    use Google\Service\BigLakeService\SetIamPolicyRequest;
     /**
-     * Gets the IAM policy for the specified Catalog. (namespaces.getIamPolicy)
-     *
-     * @param string $resource REQUIRED: The resource for which the policy is being
-     * requested. See [Resource
-     * names](https://cloud.google.com/apis/design/resource_names) for the
-     * appropriate value for this field.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int options.requestedPolicyVersion Optional. The maximum policy
-     * version that will be used to format the policy. Valid values are 0, 1, and 3.
-     * Requests specifying an invalid value will be rejected. Requests for policies
-     * with any conditional role bindings must specify version 3. Policies with no
-     * conditional role bindings may specify any valid value or leave the field
-     * unset. The policy in the response might use the policy version that you
-     * specified, or it might use a lower policy version. For example, if you
-     * specify version 3, but the policy has no conditional role bindings, the
-     * response uses version 1. To learn which resources support conditions in their
-     * IAM policies, see the [IAM
-     * documentation](https://cloud.google.com/iam/help/conditions/resource-
-     * policies).
-     * @return Policy
-     * @throws \Google\Service\Exception
+     * The "namespaces" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $biglakeService = new Google\Service\BigLakeService(...);
+     *   $namespaces = $biglakeService->projects_catalogs_namespaces;
+     *  </code>
      */
-    public function getIamPolicy($resource, $optParams = [])
+    class ProjectsCatalogsNamespaces extends \Google\Service\Resource
     {
+        /**
+         * Gets the IAM policy for the specified Catalog. (namespaces.getIamPolicy)
+         *
+         * @param string $resource REQUIRED: The resource for which the policy is being
+         * requested. See [Resource
+         * names](https://cloud.google.com/apis/design/resource_names) for the
+         * appropriate value for this field.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int options.requestedPolicyVersion Optional. The maximum policy
+         * version that will be used to format the policy. Valid values are 0, 1, and 3.
+         * Requests specifying an invalid value will be rejected. Requests for policies
+         * with any conditional role bindings must specify version 3. Policies with no
+         * conditional role bindings may specify any valid value or leave the field
+         * unset. The policy in the response might use the policy version that you
+         * specified, or it might use a lower policy version. For example, if you
+         * specify version 3, but the policy has no conditional role bindings, the
+         * response uses version 1. To learn which resources support conditions in their
+         * IAM policies, see the [IAM
+         * documentation](https://cloud.google.com/iam/help/conditions/resource-
+         * policies).
+         * @return Policy
+         * @throws \Google\Service\Exception
+         */
+        public function getIamPolicy($resource, $optParams = [])
+        {
+        }
+        /**
+         * Sets the IAM policy for the specified catalog. (namespaces.setIamPolicy)
+         *
+         * @param string $resource REQUIRED: The resource for which the policy is being
+         * specified. See [Resource
+         * names](https://cloud.google.com/apis/design/resource_names) for the
+         * appropriate value for this field.
+         * @param SetIamPolicyRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Policy
+         * @throws \Google\Service\Exception
+         */
+        public function setIamPolicy($resource, SetIamPolicyRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Sets the IAM policy for the specified catalog. (namespaces.setIamPolicy)
-     *
-     * @param string $resource REQUIRED: The resource for which the policy is being
-     * specified. See [Resource
-     * names](https://cloud.google.com/apis/design/resource_names) for the
-     * appropriate value for this field.
-     * @param SetIamPolicyRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Policy
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\BigLakeService\Resource\ProjectsCatalogsNamespaces registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setIamPolicy($resource, SetIamPolicyRequest $postBody, $optParams = [])
+    class Google_Service_BigLakeService_Resource_ProjectsCatalogsNamespaces extends \Google\Service\BigLakeService\Resource\ProjectsCatalogsNamespaces
     {
     }
 }

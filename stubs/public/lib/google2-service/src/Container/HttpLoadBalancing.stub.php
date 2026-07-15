@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class HttpLoadBalancing extends \Google\Model
-{
-    /**
-     * Whether the HTTP Load Balancing controller is enabled in the cluster. When
-     * enabled, it runs a small pod in the cluster that manages the load
-     * balancers.
-     *
-     * @var bool
-     */
-    public $disabled;
-    /**
-     * Whether the HTTP Load Balancing controller is enabled in the cluster. When
-     * enabled, it runs a small pod in the cluster that manages the load
-     * balancers.
-     *
-     * @param bool $disabled
-     */
-    public function setDisabled($disabled)
+namespace Google\Service\Container {
+    class HttpLoadBalancing extends \Google\Model
     {
+        /**
+         * Whether the HTTP Load Balancing controller is enabled in the cluster. When
+         * enabled, it runs a small pod in the cluster that manages the load
+         * balancers.
+         *
+         * @var bool
+         */
+        public $disabled;
+        /**
+         * Whether the HTTP Load Balancing controller is enabled in the cluster. When
+         * enabled, it runs a small pod in the cluster that manages the load
+         * balancers.
+         *
+         * @param bool $disabled
+         */
+        public function setDisabled($disabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Container\HttpLoadBalancing registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisabled()
+    class Google_Service_Container_HttpLoadBalancing extends \Google\Service\Container\HttpLoadBalancing
     {
     }
 }

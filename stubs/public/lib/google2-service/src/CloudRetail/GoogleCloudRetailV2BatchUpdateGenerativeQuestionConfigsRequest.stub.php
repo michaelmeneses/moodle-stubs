@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2BatchUpdateGenerativeQuestionConfigsRequest extends \Google\Collection
-{
-    protected $collection_key = 'requests';
-    protected $requestsType = GoogleCloudRetailV2UpdateGenerativeQuestionConfigRequest::class;
-    protected $requestsDataType = 'array';
-    /**
-     * Required. The updates question configs.
-     *
-     * @param GoogleCloudRetailV2UpdateGenerativeQuestionConfigRequest[] $requests
-     */
-    public function setRequests($requests)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2BatchUpdateGenerativeQuestionConfigsRequest extends \Google\Collection
     {
+        protected $collection_key = 'requests';
+        protected $requestsType = GoogleCloudRetailV2UpdateGenerativeQuestionConfigRequest::class;
+        protected $requestsDataType = 'array';
+        /**
+         * Required. The updates question configs.
+         *
+         * @param GoogleCloudRetailV2UpdateGenerativeQuestionConfigRequest[] $requests
+         */
+        public function setRequests($requests)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2UpdateGenerativeQuestionConfigRequest[]
+         */
+        public function getRequests()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRetailV2UpdateGenerativeQuestionConfigRequest[]
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2BatchUpdateGenerativeQuestionConfigsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequests()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2BatchUpdateGenerativeQuestionConfigsRequest extends \Google\Service\CloudRetail\GoogleCloudRetailV2BatchUpdateGenerativeQuestionConfigsRequest
     {
     }
 }

@@ -21,15 +21,24 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SemanticTile;
-
-class ProviderInfo extends \Google\Model
-{
-    public $description;
-    public function setDescription($description)
+namespace Google\Service\SemanticTile {
+    class ProviderInfo extends \Google\Model
     {
+        public $description;
+        public function setDescription($description)
+        {
+        }
+        public function getDescription()
+        {
+        }
     }
-    public function getDescription()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\SemanticTile\ProviderInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_SemanticTile_ProviderInfo extends \Google\Service\SemanticTile\ProviderInfo
     {
     }
 }

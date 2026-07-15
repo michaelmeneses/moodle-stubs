@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteMessageInfo extends \Google\Model
-{
-    protected $messageType = AppsDynamiteMessage::class;
-    protected $messageDataType = '';
-    /**
-     * @var string
-     */
-    public $searcherMembershipState;
-    /**
-     * @param AppsDynamiteMessage
-     */
-    public function setMessage(AppsDynamiteMessage $message)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteMessageInfo extends \Google\Model
     {
+        protected $messageType = AppsDynamiteMessage::class;
+        protected $messageDataType = '';
+        /**
+         * @var string
+         */
+        public $searcherMembershipState;
+        /**
+         * @param AppsDynamiteMessage
+         */
+        public function setMessage(AppsDynamiteMessage $message)
+        {
+        }
+        /**
+         * @return AppsDynamiteMessage
+         */
+        public function getMessage()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSearcherMembershipState($searcherMembershipState)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSearcherMembershipState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppsDynamiteMessage
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteMessageInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMessage()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSearcherMembershipState($searcherMembershipState)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSearcherMembershipState()
+    class Google_Service_CloudSearch_AppsDynamiteMessageInfo extends \Google\Service\CloudSearch\AppsDynamiteMessageInfo
     {
     }
 }

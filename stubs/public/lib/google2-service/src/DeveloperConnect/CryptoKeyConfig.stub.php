@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DeveloperConnect;
-
-class CryptoKeyConfig extends \Google\Model
-{
-    /**
-     * Required. The name of the key which is used to encrypt/decrypt customer
-     * data. For key in Cloud KMS, the key should be in the format of
-     * `projects/locations/keyRings/cryptoKeys`.
-     *
-     * @var string
-     */
-    public $keyReference;
-    /**
-     * Required. The name of the key which is used to encrypt/decrypt customer
-     * data. For key in Cloud KMS, the key should be in the format of
-     * `projects/locations/keyRings/cryptoKeys`.
-     *
-     * @param string $keyReference
-     */
-    public function setKeyReference($keyReference)
+namespace Google\Service\DeveloperConnect {
+    class CryptoKeyConfig extends \Google\Model
     {
+        /**
+         * Required. The name of the key which is used to encrypt/decrypt customer
+         * data. For key in Cloud KMS, the key should be in the format of
+         * `projects/locations/keyRings/cryptoKeys`.
+         *
+         * @var string
+         */
+        public $keyReference;
+        /**
+         * Required. The name of the key which is used to encrypt/decrypt customer
+         * data. For key in Cloud KMS, the key should be in the format of
+         * `projects/locations/keyRings/cryptoKeys`.
+         *
+         * @param string $keyReference
+         */
+        public function setKeyReference($keyReference)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKeyReference()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DeveloperConnect\CryptoKeyConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKeyReference()
+    class Google_Service_DeveloperConnect_CryptoKeyConfig extends \Google\Service\DeveloperConnect\CryptoKeyConfig
     {
     }
 }

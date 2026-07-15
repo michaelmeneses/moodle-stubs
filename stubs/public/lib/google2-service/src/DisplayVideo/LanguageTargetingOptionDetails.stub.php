@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class LanguageTargetingOptionDetails extends \Google\Model
-{
-    /**
-     * Output only. The display name of the language (e.g., "French").
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Output only. The display name of the language (e.g., "French").
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\DisplayVideo {
+    class LanguageTargetingOptionDetails extends \Google\Model
     {
+        /**
+         * Output only. The display name of the language (e.g., "French").
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Output only. The display name of the language (e.g., "French").
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\LanguageTargetingOptionDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
+    class Google_Service_DisplayVideo_LanguageTargetingOptionDetails extends \Google\Service\DisplayVideo\LanguageTargetingOptionDetails
     {
     }
 }

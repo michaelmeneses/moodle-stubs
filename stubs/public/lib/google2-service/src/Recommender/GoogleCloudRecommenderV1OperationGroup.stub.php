@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Recommender;
-
-class GoogleCloudRecommenderV1OperationGroup extends \Google\Collection
-{
-    protected $collection_key = 'operations';
-    protected $operationsType = GoogleCloudRecommenderV1Operation::class;
-    protected $operationsDataType = 'array';
-    /**
-     * List of operations across one or more resources that belong to this group.
-     * Loosely based on RFC6902 and should be performed in the order they appear.
-     *
-     * @param GoogleCloudRecommenderV1Operation[] $operations
-     */
-    public function setOperations($operations)
+namespace Google\Service\Recommender {
+    class GoogleCloudRecommenderV1OperationGroup extends \Google\Collection
     {
+        protected $collection_key = 'operations';
+        protected $operationsType = GoogleCloudRecommenderV1Operation::class;
+        protected $operationsDataType = 'array';
+        /**
+         * List of operations across one or more resources that belong to this group.
+         * Loosely based on RFC6902 and should be performed in the order they appear.
+         *
+         * @param GoogleCloudRecommenderV1Operation[] $operations
+         */
+        public function setOperations($operations)
+        {
+        }
+        /**
+         * @return GoogleCloudRecommenderV1Operation[]
+         */
+        public function getOperations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRecommenderV1Operation[]
+     * Runtime class alias of \Google\Service\Recommender\GoogleCloudRecommenderV1OperationGroup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOperations()
+    class Google_Service_Recommender_GoogleCloudRecommenderV1OperationGroup extends \Google\Service\Recommender\GoogleCloudRecommenderV1OperationGroup
     {
     }
 }

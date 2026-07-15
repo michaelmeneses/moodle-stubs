@@ -21,117 +21,126 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecaptchaEnterprise;
-
-class GoogleCloudRecaptchaenterpriseV1SearchRelatedAccountGroupMembershipsRequest extends \Google\Model
-{
-    /**
-     * Optional. The unique stable account identifier used to search connections.
-     * The identifier should correspond to an `account_id` provided in a previous
-     * `CreateAssessment` or `AnnotateAssessment` call. Either hashed_account_id
-     * or account_id must be set, but not both.
-     *
-     * @var string
-     */
-    public $accountId;
-    /**
-     * Optional. Deprecated: use `account_id` instead. The unique stable hashed
-     * account identifier used to search connections. The identifier should
-     * correspond to a `hashed_account_id` provided in a previous
-     * `CreateAssessment` or `AnnotateAssessment` call. Either hashed_account_id
-     * or account_id must be set, but not both.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $hashedAccountId;
-    /**
-     * Optional. The maximum number of groups to return. The service might return
-     * fewer than this value. If unspecified, at most 50 groups are returned. The
-     * maximum value is 1000; values above 1000 are coerced to 1000.
-     *
-     * @var int
-     */
-    public $pageSize;
-    /**
-     * Optional. A page token, received from a previous
-     * `SearchRelatedAccountGroupMemberships` call. Provide this to retrieve the
-     * subsequent page. When paginating, all other parameters provided to
-     * `SearchRelatedAccountGroupMemberships` must match the call that provided
-     * the page token.
-     *
-     * @var string
-     */
-    public $pageToken;
-    /**
-     * Optional. The unique stable account identifier used to search connections.
-     * The identifier should correspond to an `account_id` provided in a previous
-     * `CreateAssessment` or `AnnotateAssessment` call. Either hashed_account_id
-     * or account_id must be set, but not both.
-     *
-     * @param string $accountId
-     */
-    public function setAccountId($accountId)
+namespace Google\Service\RecaptchaEnterprise {
+    class GoogleCloudRecaptchaenterpriseV1SearchRelatedAccountGroupMembershipsRequest extends \Google\Model
     {
+        /**
+         * Optional. The unique stable account identifier used to search connections.
+         * The identifier should correspond to an `account_id` provided in a previous
+         * `CreateAssessment` or `AnnotateAssessment` call. Either hashed_account_id
+         * or account_id must be set, but not both.
+         *
+         * @var string
+         */
+        public $accountId;
+        /**
+         * Optional. Deprecated: use `account_id` instead. The unique stable hashed
+         * account identifier used to search connections. The identifier should
+         * correspond to a `hashed_account_id` provided in a previous
+         * `CreateAssessment` or `AnnotateAssessment` call. Either hashed_account_id
+         * or account_id must be set, but not both.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $hashedAccountId;
+        /**
+         * Optional. The maximum number of groups to return. The service might return
+         * fewer than this value. If unspecified, at most 50 groups are returned. The
+         * maximum value is 1000; values above 1000 are coerced to 1000.
+         *
+         * @var int
+         */
+        public $pageSize;
+        /**
+         * Optional. A page token, received from a previous
+         * `SearchRelatedAccountGroupMemberships` call. Provide this to retrieve the
+         * subsequent page. When paginating, all other parameters provided to
+         * `SearchRelatedAccountGroupMemberships` must match the call that provided
+         * the page token.
+         *
+         * @var string
+         */
+        public $pageToken;
+        /**
+         * Optional. The unique stable account identifier used to search connections.
+         * The identifier should correspond to an `account_id` provided in a previous
+         * `CreateAssessment` or `AnnotateAssessment` call. Either hashed_account_id
+         * or account_id must be set, but not both.
+         *
+         * @param string $accountId
+         */
+        public function setAccountId($accountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccountId()
+        {
+        }
+        /**
+         * Optional. Deprecated: use `account_id` instead. The unique stable hashed
+         * account identifier used to search connections. The identifier should
+         * correspond to a `hashed_account_id` provided in a previous
+         * `CreateAssessment` or `AnnotateAssessment` call. Either hashed_account_id
+         * or account_id must be set, but not both.
+         *
+         * @deprecated
+         * @param string $hashedAccountId
+         */
+        public function setHashedAccountId($hashedAccountId)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getHashedAccountId()
+        {
+        }
+        /**
+         * Optional. The maximum number of groups to return. The service might return
+         * fewer than this value. If unspecified, at most 50 groups are returned. The
+         * maximum value is 1000; values above 1000 are coerced to 1000.
+         *
+         * @param int $pageSize
+         */
+        public function setPageSize($pageSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPageSize()
+        {
+        }
+        /**
+         * Optional. A page token, received from a previous
+         * `SearchRelatedAccountGroupMemberships` call. Provide this to retrieve the
+         * subsequent page. When paginating, all other parameters provided to
+         * `SearchRelatedAccountGroupMemberships` must match the call that provided
+         * the page token.
+         *
+         * @param string $pageToken
+         */
+        public function setPageToken($pageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1SearchRelatedAccountGroupMembershipsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountId()
-    {
-    }
-    /**
-     * Optional. Deprecated: use `account_id` instead. The unique stable hashed
-     * account identifier used to search connections. The identifier should
-     * correspond to a `hashed_account_id` provided in a previous
-     * `CreateAssessment` or `AnnotateAssessment` call. Either hashed_account_id
-     * or account_id must be set, but not both.
-     *
-     * @deprecated
-     * @param string $hashedAccountId
-     */
-    public function setHashedAccountId($hashedAccountId)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getHashedAccountId()
-    {
-    }
-    /**
-     * Optional. The maximum number of groups to return. The service might return
-     * fewer than this value. If unspecified, at most 50 groups are returned. The
-     * maximum value is 1000; values above 1000 are coerced to 1000.
-     *
-     * @param int $pageSize
-     */
-    public function setPageSize($pageSize)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPageSize()
-    {
-    }
-    /**
-     * Optional. A page token, received from a previous
-     * `SearchRelatedAccountGroupMemberships` call. Provide this to retrieve the
-     * subsequent page. When paginating, all other parameters provided to
-     * `SearchRelatedAccountGroupMemberships` must match the call that provided
-     * the page token.
-     *
-     * @param string $pageToken
-     */
-    public function setPageToken($pageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPageToken()
+    class Google_Service_RecaptchaEnterprise_GoogleCloudRecaptchaenterpriseV1SearchRelatedAccountGroupMembershipsRequest extends \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1SearchRelatedAccountGroupMembershipsRequest
     {
     }
 }

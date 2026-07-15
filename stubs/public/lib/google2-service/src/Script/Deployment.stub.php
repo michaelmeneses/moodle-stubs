@@ -21,81 +21,90 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Script;
-
-class Deployment extends \Google\Collection
-{
-    protected $collection_key = 'entryPoints';
-    protected $deploymentConfigType = DeploymentConfig::class;
-    protected $deploymentConfigDataType = '';
-    /**
-     * The deployment ID for this deployment.
-     *
-     * @var string
-     */
-    public $deploymentId;
-    protected $entryPointsType = EntryPoint::class;
-    protected $entryPointsDataType = 'array';
-    /**
-     * Last modified date time stamp.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * The deployment configuration.
-     *
-     * @param DeploymentConfig $deploymentConfig
-     */
-    public function setDeploymentConfig(DeploymentConfig $deploymentConfig)
+namespace Google\Service\Script {
+    class Deployment extends \Google\Collection
     {
+        protected $collection_key = 'entryPoints';
+        protected $deploymentConfigType = DeploymentConfig::class;
+        protected $deploymentConfigDataType = '';
+        /**
+         * The deployment ID for this deployment.
+         *
+         * @var string
+         */
+        public $deploymentId;
+        protected $entryPointsType = EntryPoint::class;
+        protected $entryPointsDataType = 'array';
+        /**
+         * Last modified date time stamp.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * The deployment configuration.
+         *
+         * @param DeploymentConfig $deploymentConfig
+         */
+        public function setDeploymentConfig(DeploymentConfig $deploymentConfig)
+        {
+        }
+        /**
+         * @return DeploymentConfig
+         */
+        public function getDeploymentConfig()
+        {
+        }
+        /**
+         * The deployment ID for this deployment.
+         *
+         * @param string $deploymentId
+         */
+        public function setDeploymentId($deploymentId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeploymentId()
+        {
+        }
+        /**
+         * The deployment's entry points.
+         *
+         * @param EntryPoint[] $entryPoints
+         */
+        public function setEntryPoints($entryPoints)
+        {
+        }
+        /**
+         * @return EntryPoint[]
+         */
+        public function getEntryPoints()
+        {
+        }
+        /**
+         * Last modified date time stamp.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DeploymentConfig
+     * Runtime class alias of \Google\Service\Script\Deployment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeploymentConfig()
-    {
-    }
-    /**
-     * The deployment ID for this deployment.
-     *
-     * @param string $deploymentId
-     */
-    public function setDeploymentId($deploymentId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeploymentId()
-    {
-    }
-    /**
-     * The deployment's entry points.
-     *
-     * @param EntryPoint[] $entryPoints
-     */
-    public function setEntryPoints($entryPoints)
-    {
-    }
-    /**
-     * @return EntryPoint[]
-     */
-    public function getEntryPoints()
-    {
-    }
-    /**
-     * Last modified date time stamp.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_Script_Deployment extends \Google\Service\Script\Deployment
     {
     }
 }

@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudMachineLearningEngine;
-
-class GoogleCloudMlV1MetricSpec extends \Google\Model
-{
-    /**
-     * Unspecified MetricName.
-     */
-    public const NAME_METRIC_NAME_UNSPECIFIED = 'METRIC_NAME_UNSPECIFIED';
-    /**
-     * CPU usage.
-     */
-    public const NAME_CPU_USAGE = 'CPU_USAGE';
-    /**
-     * GPU duty cycle.
-     */
-    public const NAME_GPU_DUTY_CYCLE = 'GPU_DUTY_CYCLE';
-    /**
-     * metric name.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Target specifies the target value for the given metric; once real metric
-     * deviates from the threshold by a certain percentage, the node count
-     * changes.
-     *
-     * @var int
-     */
-    public $target;
-    /**
-     * metric name.
-     *
-     * Accepted values: METRIC_NAME_UNSPECIFIED, CPU_USAGE, GPU_DUTY_CYCLE
-     *
-     * @param self::NAME_* $name
-     */
-    public function setName($name)
+namespace Google\Service\CloudMachineLearningEngine {
+    class GoogleCloudMlV1MetricSpec extends \Google\Model
     {
+        /**
+         * Unspecified MetricName.
+         */
+        public const NAME_METRIC_NAME_UNSPECIFIED = 'METRIC_NAME_UNSPECIFIED';
+        /**
+         * CPU usage.
+         */
+        public const NAME_CPU_USAGE = 'CPU_USAGE';
+        /**
+         * GPU duty cycle.
+         */
+        public const NAME_GPU_DUTY_CYCLE = 'GPU_DUTY_CYCLE';
+        /**
+         * metric name.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Target specifies the target value for the given metric; once real metric
+         * deviates from the threshold by a certain percentage, the node count
+         * changes.
+         *
+         * @var int
+         */
+        public $target;
+        /**
+         * metric name.
+         *
+         * Accepted values: METRIC_NAME_UNSPECIFIED, CPU_USAGE, GPU_DUTY_CYCLE
+         *
+         * @param self::NAME_* $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return self::NAME_*
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Target specifies the target value for the given metric; once real metric
+         * deviates from the threshold by a certain percentage, the node count
+         * changes.
+         *
+         * @param int $target
+         */
+        public function setTarget($target)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTarget()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::NAME_*
+     * Runtime class alias of \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1MetricSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Target specifies the target value for the given metric; once real metric
-     * deviates from the threshold by a certain percentage, the node count
-     * changes.
-     *
-     * @param int $target
-     */
-    public function setTarget($target)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTarget()
+    class Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1MetricSpec extends \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1MetricSpec
     {
     }
 }

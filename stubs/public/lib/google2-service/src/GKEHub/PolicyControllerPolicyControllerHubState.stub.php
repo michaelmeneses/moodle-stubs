@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class PolicyControllerPolicyControllerHubState extends \Google\Model
-{
-    /**
-     * @var string[]
-     */
-    public $deploymentStates;
-    protected $versionType = PolicyControllerPolicyControllerHubVersion::class;
-    protected $versionDataType = '';
-    /**
-     * @param string[]
-     */
-    public function setDeploymentStates($deploymentStates)
+namespace Google\Service\GKEHub {
+    class PolicyControllerPolicyControllerHubState extends \Google\Model
     {
+        /**
+         * @var string[]
+         */
+        public $deploymentStates;
+        protected $versionType = PolicyControllerPolicyControllerHubVersion::class;
+        protected $versionDataType = '';
+        /**
+         * @param string[]
+         */
+        public function setDeploymentStates($deploymentStates)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDeploymentStates()
+        {
+        }
+        /**
+         * @param PolicyControllerPolicyControllerHubVersion
+         */
+        public function setVersion(PolicyControllerPolicyControllerHubVersion $version)
+        {
+        }
+        /**
+         * @return PolicyControllerPolicyControllerHubVersion
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\GKEHub\PolicyControllerPolicyControllerHubState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeploymentStates()
-    {
-    }
-    /**
-     * @param PolicyControllerPolicyControllerHubVersion
-     */
-    public function setVersion(PolicyControllerPolicyControllerHubVersion $version)
-    {
-    }
-    /**
-     * @return PolicyControllerPolicyControllerHubVersion
-     */
-    public function getVersion()
+    class Google_Service_GKEHub_PolicyControllerPolicyControllerHubState extends \Google\Service\GKEHub\PolicyControllerPolicyControllerHubState
     {
     }
 }

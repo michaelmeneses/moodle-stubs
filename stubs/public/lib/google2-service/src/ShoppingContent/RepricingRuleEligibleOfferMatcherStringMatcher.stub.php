@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class RepricingRuleEligibleOfferMatcherStringMatcher extends \Google\Collection
-{
-    protected $collection_key = 'strAttributes';
-    /**
-     * @var string[]
-     */
-    public $strAttributes;
-    /**
-     * @param string[]
-     */
-    public function setStrAttributes($strAttributes)
+namespace Google\Service\ShoppingContent {
+    class RepricingRuleEligibleOfferMatcherStringMatcher extends \Google\Collection
     {
+        protected $collection_key = 'strAttributes';
+        /**
+         * @var string[]
+         */
+        public $strAttributes;
+        /**
+         * @param string[]
+         */
+        public function setStrAttributes($strAttributes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getStrAttributes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\ShoppingContent\RepricingRuleEligibleOfferMatcherStringMatcher registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStrAttributes()
+    class Google_Service_ShoppingContent_RepricingRuleEligibleOfferMatcherStringMatcher extends \Google\Service\ShoppingContent\RepricingRuleEligibleOfferMatcherStringMatcher
     {
     }
 }

@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class LoyaltyPoints extends \Google\Model
-{
-    protected $balanceType = LoyaltyPointsBalance::class;
-    protected $balanceDataType = '';
-    /**
-     * The loyalty points label, such as "Points". Recommended maximum length is 9
-     * characters.
-     *
-     * @var string
-     */
-    public $label;
-    protected $localizedLabelType = LocalizedString::class;
-    protected $localizedLabelDataType = '';
-    /**
-     * The account holder's loyalty point balance, such as "500" or "$10.00".
-     * Recommended maximum length is 7 characters. This is a required field of
-     * `loyaltyPoints` and `secondaryLoyaltyPoints`.
-     *
-     * @param LoyaltyPointsBalance $balance
-     */
-    public function setBalance(LoyaltyPointsBalance $balance)
+namespace Google\Service\Walletobjects {
+    class LoyaltyPoints extends \Google\Model
     {
+        protected $balanceType = LoyaltyPointsBalance::class;
+        protected $balanceDataType = '';
+        /**
+         * The loyalty points label, such as "Points". Recommended maximum length is 9
+         * characters.
+         *
+         * @var string
+         */
+        public $label;
+        protected $localizedLabelType = LocalizedString::class;
+        protected $localizedLabelDataType = '';
+        /**
+         * The account holder's loyalty point balance, such as "500" or "$10.00".
+         * Recommended maximum length is 7 characters. This is a required field of
+         * `loyaltyPoints` and `secondaryLoyaltyPoints`.
+         *
+         * @param LoyaltyPointsBalance $balance
+         */
+        public function setBalance(LoyaltyPointsBalance $balance)
+        {
+        }
+        /**
+         * @return LoyaltyPointsBalance
+         */
+        public function getBalance()
+        {
+        }
+        /**
+         * The loyalty points label, such as "Points". Recommended maximum length is 9
+         * characters.
+         *
+         * @param string $label
+         */
+        public function setLabel($label)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLabel()
+        {
+        }
+        /**
+         * Translated strings for the label. Recommended maximum length is 9
+         * characters.
+         *
+         * @param LocalizedString $localizedLabel
+         */
+        public function setLocalizedLabel(LocalizedString $localizedLabel)
+        {
+        }
+        /**
+         * @return LocalizedString
+         */
+        public function getLocalizedLabel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LoyaltyPointsBalance
+     * Runtime class alias of \Google\Service\Walletobjects\LoyaltyPoints registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBalance()
-    {
-    }
-    /**
-     * The loyalty points label, such as "Points". Recommended maximum length is 9
-     * characters.
-     *
-     * @param string $label
-     */
-    public function setLabel($label)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLabel()
-    {
-    }
-    /**
-     * Translated strings for the label. Recommended maximum length is 9
-     * characters.
-     *
-     * @param LocalizedString $localizedLabel
-     */
-    public function setLocalizedLabel(LocalizedString $localizedLabel)
-    {
-    }
-    /**
-     * @return LocalizedString
-     */
-    public function getLocalizedLabel()
+    class Google_Service_Walletobjects_LoyaltyPoints extends \Google\Service\Walletobjects\LoyaltyPoints
     {
     }
 }

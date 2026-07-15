@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class Split extends \Google\Model
-{
-    /**
-     * Row key to use as an initial tablet boundary.
-     *
-     * @var string
-     */
-    public $key;
-    /**
-     * Row key to use as an initial tablet boundary.
-     *
-     * @param string $key
-     */
-    public function setKey($key)
+namespace Google\Service\BigtableAdmin {
+    class Split extends \Google\Model
     {
+        /**
+         * Row key to use as an initial tablet boundary.
+         *
+         * @var string
+         */
+        public $key;
+        /**
+         * Row key to use as an initial tablet boundary.
+         *
+         * @param string $key
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BigtableAdmin\Split registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKey()
+    class Google_Service_BigtableAdmin_Split extends \Google\Service\BigtableAdmin\Split
     {
     }
 }

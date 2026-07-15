@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaApiTriggerResource extends \Google\Collection
-{
-    protected $collection_key = 'triggerId';
-    /**
-     * Required. Integration where the API is published
-     *
-     * @var string
-     */
-    public $integrationResource;
-    /**
-     * Required. Trigger Id of the API trigger(s) in the integration
-     *
-     * @var string[]
-     */
-    public $triggerId;
-    /**
-     * Required. Integration where the API is published
-     *
-     * @param string $integrationResource
-     */
-    public function setIntegrationResource($integrationResource)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaApiTriggerResource extends \Google\Collection
     {
+        protected $collection_key = 'triggerId';
+        /**
+         * Required. Integration where the API is published
+         *
+         * @var string
+         */
+        public $integrationResource;
+        /**
+         * Required. Trigger Id of the API trigger(s) in the integration
+         *
+         * @var string[]
+         */
+        public $triggerId;
+        /**
+         * Required. Integration where the API is published
+         *
+         * @param string $integrationResource
+         */
+        public function setIntegrationResource($integrationResource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIntegrationResource()
+        {
+        }
+        /**
+         * Required. Trigger Id of the API trigger(s) in the integration
+         *
+         * @param string[] $triggerId
+         */
+        public function setTriggerId($triggerId)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTriggerId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaApiTriggerResource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIntegrationResource()
-    {
-    }
-    /**
-     * Required. Trigger Id of the API trigger(s) in the integration
-     *
-     * @param string[] $triggerId
-     */
-    public function setTriggerId($triggerId)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTriggerId()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaApiTriggerResource extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaApiTriggerResource
     {
     }
 }

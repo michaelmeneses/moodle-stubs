@@ -21,90 +21,102 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Logging\Resource;
-
-/**
- * The "metrics" collection of methods.
- * Typical usage is:
- *  <code>
- *   $loggingService = new Google\Service\Logging(...);
- *   $metrics = $loggingService->projects_metrics;
- *  </code>
- */
-class ProjectsMetrics extends \Google\Service\Resource
-{
+namespace Google\Service\Logging\Resource {
+    use Google\Service\Logging\ListLogMetricsResponse;
+    use Google\Service\Logging\LogMetric;
+    use Google\Service\Logging\LoggingEmpty;
     /**
-     * Creates a logs-based metric. (metrics.create)
-     *
-     * @param string $parent Required. The resource name of the project in which to
-     * create the metric: "projects/[PROJECT_ID]" The new metric must be provided in
-     * the request.
-     * @param LogMetric $postBody
-     * @param array $optParams Optional parameters.
-     * @return LogMetric
-     * @throws \Google\Service\Exception
+     * The "metrics" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $loggingService = new Google\Service\Logging(...);
+     *   $metrics = $loggingService->projects_metrics;
+     *  </code>
      */
-    public function create($parent, LogMetric $postBody, $optParams = [])
+    class ProjectsMetrics extends \Google\Service\Resource
     {
+        /**
+         * Creates a logs-based metric. (metrics.create)
+         *
+         * @param string $parent Required. The resource name of the project in which to
+         * create the metric: "projects/[PROJECT_ID]" The new metric must be provided in
+         * the request.
+         * @param LogMetric $postBody
+         * @param array $optParams Optional parameters.
+         * @return LogMetric
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, LogMetric $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a logs-based metric. (metrics.delete)
+         *
+         * @param string $metricName Required. The resource name of the metric to
+         * delete: "projects/[PROJECT_ID]/metrics/[METRIC_ID]"
+         * @param array $optParams Optional parameters.
+         * @return LoggingEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($metricName, $optParams = [])
+        {
+        }
+        /**
+         * Gets a logs-based metric. (metrics.get)
+         *
+         * @param string $metricName Required. The resource name of the desired metric:
+         * "projects/[PROJECT_ID]/metrics/[METRIC_ID]"
+         * @param array $optParams Optional parameters.
+         * @return LogMetric
+         * @throws \Google\Service\Exception
+         */
+        public function get($metricName, $optParams = [])
+        {
+        }
+        /**
+         * Lists logs-based metrics. (metrics.listProjectsMetrics)
+         *
+         * @param string $parent Required. The name of the project containing the
+         * metrics: "projects/[PROJECT_ID]"
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Optional. The maximum number of results to return
+         * from this request. Non-positive values are ignored. The presence of
+         * nextPageToken in the response indicates that more results might be available.
+         * @opt_param string pageToken Optional. If present, then retrieve the next
+         * batch of results from the preceding call to this method. pageToken must be
+         * the value of nextPageToken from the previous response. The values of other
+         * method parameters should be identical to those in the previous call.
+         * @return ListLogMetricsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsMetrics($parent, $optParams = [])
+        {
+        }
+        /**
+         * Creates or updates a logs-based metric. (metrics.update)
+         *
+         * @param string $metricName Required. The resource name of the metric to
+         * update: "projects/[PROJECT_ID]/metrics/[METRIC_ID]" The updated metric must
+         * be provided in the request and it's name field must be the same as
+         * [METRIC_ID] If the metric does not exist in [PROJECT_ID], then a new metric
+         * is created.
+         * @param LogMetric $postBody
+         * @param array $optParams Optional parameters.
+         * @return LogMetric
+         * @throws \Google\Service\Exception
+         */
+        public function update($metricName, LogMetric $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a logs-based metric. (metrics.delete)
-     *
-     * @param string $metricName Required. The resource name of the metric to
-     * delete: "projects/[PROJECT_ID]/metrics/[METRIC_ID]"
-     * @param array $optParams Optional parameters.
-     * @return LoggingEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Logging\Resource\ProjectsMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($metricName, $optParams = [])
-    {
-    }
-    /**
-     * Gets a logs-based metric. (metrics.get)
-     *
-     * @param string $metricName Required. The resource name of the desired metric:
-     * "projects/[PROJECT_ID]/metrics/[METRIC_ID]"
-     * @param array $optParams Optional parameters.
-     * @return LogMetric
-     * @throws \Google\Service\Exception
-     */
-    public function get($metricName, $optParams = [])
-    {
-    }
-    /**
-     * Lists logs-based metrics. (metrics.listProjectsMetrics)
-     *
-     * @param string $parent Required. The name of the project containing the
-     * metrics: "projects/[PROJECT_ID]"
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Optional. The maximum number of results to return
-     * from this request. Non-positive values are ignored. The presence of
-     * nextPageToken in the response indicates that more results might be available.
-     * @opt_param string pageToken Optional. If present, then retrieve the next
-     * batch of results from the preceding call to this method. pageToken must be
-     * the value of nextPageToken from the previous response. The values of other
-     * method parameters should be identical to those in the previous call.
-     * @return ListLogMetricsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsMetrics($parent, $optParams = [])
-    {
-    }
-    /**
-     * Creates or updates a logs-based metric. (metrics.update)
-     *
-     * @param string $metricName Required. The resource name of the metric to
-     * update: "projects/[PROJECT_ID]/metrics/[METRIC_ID]" The updated metric must
-     * be provided in the request and it's name field must be the same as
-     * [METRIC_ID] If the metric does not exist in [PROJECT_ID], then a new metric
-     * is created.
-     * @param LogMetric $postBody
-     * @param array $optParams Optional parameters.
-     * @return LogMetric
-     * @throws \Google\Service\Exception
-     */
-    public function update($metricName, LogMetric $postBody, $optParams = [])
+    class Google_Service_Logging_Resource_ProjectsMetrics extends \Google\Service\Logging\Resource\ProjectsMetrics
     {
     }
 }

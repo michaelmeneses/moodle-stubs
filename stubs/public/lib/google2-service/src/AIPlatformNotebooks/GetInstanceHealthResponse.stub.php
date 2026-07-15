@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AIPlatformNotebooks;
-
-class GetInstanceHealthResponse extends \Google\Model
-{
-    /**
-     * @var string[]
-     */
-    public $healthInfo = [];
-    /**
-     * @var string
-     */
-    public $healthState;
-    /**
-     * @param string[]
-     */
-    public function setHealthInfo($healthInfo)
+namespace Google\Service\AIPlatformNotebooks {
+    class GetInstanceHealthResponse extends \Google\Model
     {
+        /**
+         * @var string[]
+         */
+        public $healthInfo = [];
+        /**
+         * @var string
+         */
+        public $healthState;
+        /**
+         * @param string[]
+         */
+        public function setHealthInfo($healthInfo)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getHealthInfo()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setHealthState($healthState)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHealthState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\AIPlatformNotebooks\GetInstanceHealthResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHealthInfo()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setHealthState($healthState)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHealthState()
+    class Google_Service_AIPlatformNotebooks_GetInstanceHealthResponse extends \Google\Service\AIPlatformNotebooks\GetInstanceHealthResponse
     {
     }
 }

@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Transcoder;
-
-class AnimationStatic extends \Google\Model
-{
-    /**
-     * The time to start displaying the overlay object, in seconds. Default: 0
-     *
-     * @var string
-     */
-    public $startTimeOffset;
-    protected $xyType = NormalizedCoordinate::class;
-    protected $xyDataType = '';
-    /**
-     * The time to start displaying the overlay object, in seconds. Default: 0
-     *
-     * @param string $startTimeOffset
-     */
-    public function setStartTimeOffset($startTimeOffset)
+namespace Google\Service\Transcoder {
+    class AnimationStatic extends \Google\Model
     {
+        /**
+         * The time to start displaying the overlay object, in seconds. Default: 0
+         *
+         * @var string
+         */
+        public $startTimeOffset;
+        protected $xyType = NormalizedCoordinate::class;
+        protected $xyDataType = '';
+        /**
+         * The time to start displaying the overlay object, in seconds. Default: 0
+         *
+         * @param string $startTimeOffset
+         */
+        public function setStartTimeOffset($startTimeOffset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTimeOffset()
+        {
+        }
+        /**
+         * Normalized coordinates based on output video resolution. Valid values:
+         * `0.0`–`1.0`. `xy` is the upper-left coordinate of the overlay object. For
+         * example, use the x and y coordinates {0,0} to position the top-left corner
+         * of the overlay animation in the top-left corner of the output video.
+         *
+         * @param NormalizedCoordinate $xy
+         */
+        public function setXy(NormalizedCoordinate $xy)
+        {
+        }
+        /**
+         * @return NormalizedCoordinate
+         */
+        public function getXy()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Transcoder\AnimationStatic registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStartTimeOffset()
-    {
-    }
-    /**
-     * Normalized coordinates based on output video resolution. Valid values:
-     * `0.0`–`1.0`. `xy` is the upper-left coordinate of the overlay object. For
-     * example, use the x and y coordinates {0,0} to position the top-left corner
-     * of the overlay animation in the top-left corner of the output video.
-     *
-     * @param NormalizedCoordinate $xy
-     */
-    public function setXy(NormalizedCoordinate $xy)
-    {
-    }
-    /**
-     * @return NormalizedCoordinate
-     */
-    public function getXy()
+    class Google_Service_Transcoder_AnimationStatic extends \Google\Service\Transcoder\AnimationStatic
     {
     }
 }

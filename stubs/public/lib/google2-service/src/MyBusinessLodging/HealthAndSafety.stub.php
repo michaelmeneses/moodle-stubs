@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessLodging;
-
-class HealthAndSafety extends \Google\Model
-{
-    protected $enhancedCleaningType = EnhancedCleaning::class;
-    protected $enhancedCleaningDataType = '';
-    protected $increasedFoodSafetyType = IncreasedFoodSafety::class;
-    protected $increasedFoodSafetyDataType = '';
-    protected $minimizedContactType = MinimizedContact::class;
-    protected $minimizedContactDataType = '';
-    protected $personalProtectionType = PersonalProtection::class;
-    protected $personalProtectionDataType = '';
-    protected $physicalDistancingType = PhysicalDistancing::class;
-    protected $physicalDistancingDataType = '';
-    /**
-     * Enhanced cleaning measures implemented by the hotel during COVID-19.
-     *
-     * @param EnhancedCleaning $enhancedCleaning
-     */
-    public function setEnhancedCleaning(EnhancedCleaning $enhancedCleaning)
+namespace Google\Service\MyBusinessLodging {
+    class HealthAndSafety extends \Google\Model
     {
+        protected $enhancedCleaningType = EnhancedCleaning::class;
+        protected $enhancedCleaningDataType = '';
+        protected $increasedFoodSafetyType = IncreasedFoodSafety::class;
+        protected $increasedFoodSafetyDataType = '';
+        protected $minimizedContactType = MinimizedContact::class;
+        protected $minimizedContactDataType = '';
+        protected $personalProtectionType = PersonalProtection::class;
+        protected $personalProtectionDataType = '';
+        protected $physicalDistancingType = PhysicalDistancing::class;
+        protected $physicalDistancingDataType = '';
+        /**
+         * Enhanced cleaning measures implemented by the hotel during COVID-19.
+         *
+         * @param EnhancedCleaning $enhancedCleaning
+         */
+        public function setEnhancedCleaning(EnhancedCleaning $enhancedCleaning)
+        {
+        }
+        /**
+         * @return EnhancedCleaning
+         */
+        public function getEnhancedCleaning()
+        {
+        }
+        /**
+         * Increased food safety measures implemented by the hotel during COVID-19.
+         *
+         * @param IncreasedFoodSafety $increasedFoodSafety
+         */
+        public function setIncreasedFoodSafety(IncreasedFoodSafety $increasedFoodSafety)
+        {
+        }
+        /**
+         * @return IncreasedFoodSafety
+         */
+        public function getIncreasedFoodSafety()
+        {
+        }
+        /**
+         * Minimized contact measures implemented by the hotel during COVID-19.
+         *
+         * @param MinimizedContact $minimizedContact
+         */
+        public function setMinimizedContact(MinimizedContact $minimizedContact)
+        {
+        }
+        /**
+         * @return MinimizedContact
+         */
+        public function getMinimizedContact()
+        {
+        }
+        /**
+         * Personal protection measures implemented by the hotel during COVID-19.
+         *
+         * @param PersonalProtection $personalProtection
+         */
+        public function setPersonalProtection(PersonalProtection $personalProtection)
+        {
+        }
+        /**
+         * @return PersonalProtection
+         */
+        public function getPersonalProtection()
+        {
+        }
+        /**
+         * Physical distancing measures implemented by the hotel during COVID-19.
+         *
+         * @param PhysicalDistancing $physicalDistancing
+         */
+        public function setPhysicalDistancing(PhysicalDistancing $physicalDistancing)
+        {
+        }
+        /**
+         * @return PhysicalDistancing
+         */
+        public function getPhysicalDistancing()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EnhancedCleaning
+     * Runtime class alias of \Google\Service\MyBusinessLodging\HealthAndSafety registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnhancedCleaning()
-    {
-    }
-    /**
-     * Increased food safety measures implemented by the hotel during COVID-19.
-     *
-     * @param IncreasedFoodSafety $increasedFoodSafety
-     */
-    public function setIncreasedFoodSafety(IncreasedFoodSafety $increasedFoodSafety)
-    {
-    }
-    /**
-     * @return IncreasedFoodSafety
-     */
-    public function getIncreasedFoodSafety()
-    {
-    }
-    /**
-     * Minimized contact measures implemented by the hotel during COVID-19.
-     *
-     * @param MinimizedContact $minimizedContact
-     */
-    public function setMinimizedContact(MinimizedContact $minimizedContact)
-    {
-    }
-    /**
-     * @return MinimizedContact
-     */
-    public function getMinimizedContact()
-    {
-    }
-    /**
-     * Personal protection measures implemented by the hotel during COVID-19.
-     *
-     * @param PersonalProtection $personalProtection
-     */
-    public function setPersonalProtection(PersonalProtection $personalProtection)
-    {
-    }
-    /**
-     * @return PersonalProtection
-     */
-    public function getPersonalProtection()
-    {
-    }
-    /**
-     * Physical distancing measures implemented by the hotel during COVID-19.
-     *
-     * @param PhysicalDistancing $physicalDistancing
-     */
-    public function setPhysicalDistancing(PhysicalDistancing $physicalDistancing)
-    {
-    }
-    /**
-     * @return PhysicalDistancing
-     */
-    public function getPhysicalDistancing()
+    class Google_Service_MyBusinessLodging_HealthAndSafety extends \Google\Service\MyBusinessLodging\HealthAndSafety
     {
     }
 }

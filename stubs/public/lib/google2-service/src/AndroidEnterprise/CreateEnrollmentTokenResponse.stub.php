@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise;
-
-class CreateEnrollmentTokenResponse extends \Google\Model
-{
-    protected $enrollmentTokenType = EnrollmentToken::class;
-    protected $enrollmentTokenDataType = '';
-    /**
-     * @param EnrollmentToken
-     */
-    public function setEnrollmentToken(EnrollmentToken $enrollmentToken)
+namespace Google\Service\AndroidEnterprise {
+    class CreateEnrollmentTokenResponse extends \Google\Model
     {
+        protected $enrollmentTokenType = EnrollmentToken::class;
+        protected $enrollmentTokenDataType = '';
+        /**
+         * @param EnrollmentToken
+         */
+        public function setEnrollmentToken(EnrollmentToken $enrollmentToken)
+        {
+        }
+        /**
+         * @return EnrollmentToken
+         */
+        public function getEnrollmentToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EnrollmentToken
+     * Runtime class alias of \Google\Service\AndroidEnterprise\CreateEnrollmentTokenResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnrollmentToken()
+    class Google_Service_AndroidEnterprise_CreateEnrollmentTokenResponse extends \Google\Service\AndroidEnterprise\CreateEnrollmentTokenResponse
     {
     }
 }

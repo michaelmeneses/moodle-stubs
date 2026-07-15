@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InstancesReportHostAsFaultyRequestFaultReason extends \Google\Model
-{
-    /**
-     * Public reportable behaviors
-     */
-    public const BEHAVIOR_BEHAVIOR_UNSPECIFIED = 'BEHAVIOR_UNSPECIFIED';
-    public const BEHAVIOR_PERFORMANCE = 'PERFORMANCE';
-    public const BEHAVIOR_SILENT_DATA_CORRUPTION = 'SILENT_DATA_CORRUPTION';
-    public const BEHAVIOR_UNRECOVERABLE_GPU_ERROR = 'UNRECOVERABLE_GPU_ERROR';
-    /**
-     * @var string
-     */
-    public $behavior;
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @param self::BEHAVIOR_* $behavior
-     */
-    public function setBehavior($behavior)
+namespace Google\Service\Compute {
+    class InstancesReportHostAsFaultyRequestFaultReason extends \Google\Model
     {
+        /**
+         * Public reportable behaviors
+         */
+        public const BEHAVIOR_BEHAVIOR_UNSPECIFIED = 'BEHAVIOR_UNSPECIFIED';
+        public const BEHAVIOR_PERFORMANCE = 'PERFORMANCE';
+        public const BEHAVIOR_SILENT_DATA_CORRUPTION = 'SILENT_DATA_CORRUPTION';
+        public const BEHAVIOR_UNRECOVERABLE_GPU_ERROR = 'UNRECOVERABLE_GPU_ERROR';
+        /**
+         * @var string
+         */
+        public $behavior;
+        /**
+         * @var string
+         */
+        public $description;
+        /**
+         * @param self::BEHAVIOR_* $behavior
+         */
+        public function setBehavior($behavior)
+        {
+        }
+        /**
+         * @return self::BEHAVIOR_*
+         */
+        public function getBehavior()
+        {
+        }
+        /**
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::BEHAVIOR_*
+     * Runtime class alias of \Google\Service\Compute\InstancesReportHostAsFaultyRequestFaultReason registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBehavior()
-    {
-    }
-    /**
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
+    class Google_Service_Compute_InstancesReportHostAsFaultyRequestFaultReason extends \Google\Service\Compute\InstancesReportHostAsFaultyRequestFaultReason
     {
     }
 }

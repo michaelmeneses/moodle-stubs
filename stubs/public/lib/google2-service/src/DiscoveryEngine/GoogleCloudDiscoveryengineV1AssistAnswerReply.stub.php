@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1AssistAnswerReply extends \Google\Model
-{
-    protected $groundedContentType = GoogleCloudDiscoveryengineV1AssistantGroundedContent::class;
-    protected $groundedContentDataType = '';
-    /**
-     * Possibly grounded response text or media from the assistant.
-     *
-     * @param GoogleCloudDiscoveryengineV1AssistantGroundedContent $groundedContent
-     */
-    public function setGroundedContent(GoogleCloudDiscoveryengineV1AssistantGroundedContent $groundedContent)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1AssistAnswerReply extends \Google\Model
     {
+        protected $groundedContentType = GoogleCloudDiscoveryengineV1AssistantGroundedContent::class;
+        protected $groundedContentDataType = '';
+        /**
+         * Possibly grounded response text or media from the assistant.
+         *
+         * @param GoogleCloudDiscoveryengineV1AssistantGroundedContent $groundedContent
+         */
+        public function setGroundedContent(GoogleCloudDiscoveryengineV1AssistantGroundedContent $groundedContent)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1AssistantGroundedContent
+         */
+        public function getGroundedContent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1AssistantGroundedContent
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AssistAnswerReply registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGroundedContent()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1AssistAnswerReply extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AssistAnswerReply
     {
     }
 }

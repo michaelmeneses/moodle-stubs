@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1Path extends \Google\Model
-{
-    /**
-     * Optional. A short description for the path applicable to all operations.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Optional. Complete path relative to server endpoint. Note: Even though this
-     * field is optional, it is required for CreateApiOperation API and we will
-     * fail the request if not provided.
-     *
-     * @var string
-     */
-    public $path;
-    /**
-     * Optional. A short description for the path applicable to all operations.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1Path extends \Google\Model
     {
+        /**
+         * Optional. A short description for the path applicable to all operations.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Optional. Complete path relative to server endpoint. Note: Even though this
+         * field is optional, it is required for CreateApiOperation API and we will
+         * fail the request if not provided.
+         *
+         * @var string
+         */
+        public $path;
+        /**
+         * Optional. A short description for the path applicable to all operations.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Optional. Complete path relative to server endpoint. Note: Even though this
+         * field is optional, it is required for CreateApiOperation API and we will
+         * fail the request if not provided.
+         *
+         * @param string $path
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1Path registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * Optional. Complete path relative to server endpoint. Note: Even though this
-     * field is optional, it is required for CreateApiOperation API and we will
-     * fail the request if not provided.
-     *
-     * @param string $path
-     */
-    public function setPath($path)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPath()
+    class Google_Service_APIhub_GoogleCloudApihubV1Path extends \Google\Service\APIhub\GoogleCloudApihubV1Path
     {
     }
 }

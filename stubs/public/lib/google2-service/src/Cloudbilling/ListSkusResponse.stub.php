@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudbilling;
-
-class ListSkusResponse extends \Google\Collection
-{
-    protected $collection_key = 'skus';
-    /**
-     * A token to retrieve the next page of results. To retrieve the next page,
-     * call `ListSkus` again with the `page_token` field set to this value. This
-     * field is empty if there are no more results to retrieve.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $skusType = Sku::class;
-    protected $skusDataType = 'array';
-    /**
-     * A token to retrieve the next page of results. To retrieve the next page,
-     * call `ListSkus` again with the `page_token` field set to this value. This
-     * field is empty if there are no more results to retrieve.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Cloudbilling {
+    class ListSkusResponse extends \Google\Collection
     {
+        protected $collection_key = 'skus';
+        /**
+         * A token to retrieve the next page of results. To retrieve the next page,
+         * call `ListSkus` again with the `page_token` field set to this value. This
+         * field is empty if there are no more results to retrieve.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $skusType = Sku::class;
+        protected $skusDataType = 'array';
+        /**
+         * A token to retrieve the next page of results. To retrieve the next page,
+         * call `ListSkus` again with the `page_token` field set to this value. This
+         * field is empty if there are no more results to retrieve.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of public SKUs of the given service.
+         *
+         * @param Sku[] $skus
+         */
+        public function setSkus($skus)
+        {
+        }
+        /**
+         * @return Sku[]
+         */
+        public function getSkus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Cloudbilling\ListSkusResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of public SKUs of the given service.
-     *
-     * @param Sku[] $skus
-     */
-    public function setSkus($skus)
-    {
-    }
-    /**
-     * @return Sku[]
-     */
-    public function getSkus()
+    class Google_Service_Cloudbilling_ListSkusResponse extends \Google\Service\Cloudbilling\ListSkusResponse
     {
     }
 }

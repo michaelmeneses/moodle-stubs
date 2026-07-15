@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1ImportCompletionSuggestionsRequest extends \Google\Model
-{
-    protected $bigquerySourceType = GoogleCloudDiscoveryengineV1BigQuerySource::class;
-    protected $bigquerySourceDataType = '';
-    protected $errorConfigType = GoogleCloudDiscoveryengineV1ImportErrorConfig::class;
-    protected $errorConfigDataType = '';
-    protected $gcsSourceType = GoogleCloudDiscoveryengineV1GcsSource::class;
-    protected $gcsSourceDataType = '';
-    protected $inlineSourceType = GoogleCloudDiscoveryengineV1ImportCompletionSuggestionsRequestInlineSource::class;
-    protected $inlineSourceDataType = '';
-    /**
-     * BigQuery input source.
-     *
-     * @param GoogleCloudDiscoveryengineV1BigQuerySource $bigquerySource
-     */
-    public function setBigquerySource(GoogleCloudDiscoveryengineV1BigQuerySource $bigquerySource)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1ImportCompletionSuggestionsRequest extends \Google\Model
     {
+        protected $bigquerySourceType = GoogleCloudDiscoveryengineV1BigQuerySource::class;
+        protected $bigquerySourceDataType = '';
+        protected $errorConfigType = GoogleCloudDiscoveryengineV1ImportErrorConfig::class;
+        protected $errorConfigDataType = '';
+        protected $gcsSourceType = GoogleCloudDiscoveryengineV1GcsSource::class;
+        protected $gcsSourceDataType = '';
+        protected $inlineSourceType = GoogleCloudDiscoveryengineV1ImportCompletionSuggestionsRequestInlineSource::class;
+        protected $inlineSourceDataType = '';
+        /**
+         * BigQuery input source.
+         *
+         * @param GoogleCloudDiscoveryengineV1BigQuerySource $bigquerySource
+         */
+        public function setBigquerySource(GoogleCloudDiscoveryengineV1BigQuerySource $bigquerySource)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1BigQuerySource
+         */
+        public function getBigquerySource()
+        {
+        }
+        /**
+         * The desired location of errors incurred during the Import.
+         *
+         * @param GoogleCloudDiscoveryengineV1ImportErrorConfig $errorConfig
+         */
+        public function setErrorConfig(GoogleCloudDiscoveryengineV1ImportErrorConfig $errorConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1ImportErrorConfig
+         */
+        public function getErrorConfig()
+        {
+        }
+        /**
+         * Cloud Storage location for the input content.
+         *
+         * @param GoogleCloudDiscoveryengineV1GcsSource $gcsSource
+         */
+        public function setGcsSource(GoogleCloudDiscoveryengineV1GcsSource $gcsSource)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1GcsSource
+         */
+        public function getGcsSource()
+        {
+        }
+        /**
+         * The Inline source for suggestion entries.
+         *
+         * @param GoogleCloudDiscoveryengineV1ImportCompletionSuggestionsRequestInlineSource $inlineSource
+         */
+        public function setInlineSource(GoogleCloudDiscoveryengineV1ImportCompletionSuggestionsRequestInlineSource $inlineSource)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1ImportCompletionSuggestionsRequestInlineSource
+         */
+        public function getInlineSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1BigQuerySource
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ImportCompletionSuggestionsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBigquerySource()
-    {
-    }
-    /**
-     * The desired location of errors incurred during the Import.
-     *
-     * @param GoogleCloudDiscoveryengineV1ImportErrorConfig $errorConfig
-     */
-    public function setErrorConfig(GoogleCloudDiscoveryengineV1ImportErrorConfig $errorConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1ImportErrorConfig
-     */
-    public function getErrorConfig()
-    {
-    }
-    /**
-     * Cloud Storage location for the input content.
-     *
-     * @param GoogleCloudDiscoveryengineV1GcsSource $gcsSource
-     */
-    public function setGcsSource(GoogleCloudDiscoveryengineV1GcsSource $gcsSource)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1GcsSource
-     */
-    public function getGcsSource()
-    {
-    }
-    /**
-     * The Inline source for suggestion entries.
-     *
-     * @param GoogleCloudDiscoveryengineV1ImportCompletionSuggestionsRequestInlineSource $inlineSource
-     */
-    public function setInlineSource(GoogleCloudDiscoveryengineV1ImportCompletionSuggestionsRequestInlineSource $inlineSource)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1ImportCompletionSuggestionsRequestInlineSource
-     */
-    public function getInlineSource()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1ImportCompletionSuggestionsRequest extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ImportCompletionSuggestionsRequest
     {
     }
 }

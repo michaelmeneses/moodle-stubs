@@ -21,30 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document\Resource;
-
-/**
- * The "humanReviewConfig" collection of methods.
- * Typical usage is:
- *  <code>
- *   $documentaiService = new Google\Service\Document(...);
- *   $humanReviewConfig = $documentaiService->projects_locations_processors_humanReviewConfig;
- *  </code>
- */
-class ProjectsLocationsProcessorsHumanReviewConfig extends \Google\Service\Resource
-{
+namespace Google\Service\Document\Resource {
+    use Google\Service\Document\GoogleCloudDocumentaiV1ReviewDocumentRequest;
+    use Google\Service\Document\GoogleLongrunningOperation;
     /**
-     * Send a document for Human Review. The input document should be processed by
-     * the specified processor. (humanReviewConfig.reviewDocument)
-     *
-     * @param string $humanReviewConfig Required. The resource name of the
-     * HumanReviewConfig that the document will be reviewed with.
-     * @param GoogleCloudDocumentaiV1ReviewDocumentRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
+     * The "humanReviewConfig" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $documentaiService = new Google\Service\Document(...);
+     *   $humanReviewConfig = $documentaiService->projects_locations_processors_humanReviewConfig;
+     *  </code>
      */
-    public function reviewDocument($humanReviewConfig, GoogleCloudDocumentaiV1ReviewDocumentRequest $postBody, $optParams = [])
+    class ProjectsLocationsProcessorsHumanReviewConfig extends \Google\Service\Resource
+    {
+        /**
+         * Send a document for Human Review. The input document should be processed by
+         * the specified processor. (humanReviewConfig.reviewDocument)
+         *
+         * @param string $humanReviewConfig Required. The resource name of the
+         * HumanReviewConfig that the document will be reviewed with.
+         * @param GoogleCloudDocumentaiV1ReviewDocumentRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function reviewDocument($humanReviewConfig, GoogleCloudDocumentaiV1ReviewDocumentRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Document\Resource\ProjectsLocationsProcessorsHumanReviewConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Document_Resource_ProjectsLocationsProcessorsHumanReviewConfig extends \Google\Service\Document\Resource\ProjectsLocationsProcessorsHumanReviewConfig
     {
     }
 }

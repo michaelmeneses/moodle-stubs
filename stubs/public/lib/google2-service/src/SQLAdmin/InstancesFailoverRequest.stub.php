@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class InstancesFailoverRequest extends \Google\Model
-{
-    protected $failoverContextType = FailoverContext::class;
-    protected $failoverContextDataType = '';
-    /**
-     * Failover Context.
-     *
-     * @param FailoverContext $failoverContext
-     */
-    public function setFailoverContext(FailoverContext $failoverContext)
+namespace Google\Service\SQLAdmin {
+    class InstancesFailoverRequest extends \Google\Model
     {
+        protected $failoverContextType = FailoverContext::class;
+        protected $failoverContextDataType = '';
+        /**
+         * Failover Context.
+         *
+         * @param FailoverContext $failoverContext
+         */
+        public function setFailoverContext(FailoverContext $failoverContext)
+        {
+        }
+        /**
+         * @return FailoverContext
+         */
+        public function getFailoverContext()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FailoverContext
+     * Runtime class alias of \Google\Service\SQLAdmin\InstancesFailoverRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFailoverContext()
+    class Google_Service_SQLAdmin_InstancesFailoverRequest extends \Google\Service\SQLAdmin\InstancesFailoverRequest
     {
     }
 }

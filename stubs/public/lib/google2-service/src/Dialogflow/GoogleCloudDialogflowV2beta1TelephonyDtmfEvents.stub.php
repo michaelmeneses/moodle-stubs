@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2beta1TelephonyDtmfEvents extends \Google\Collection
-{
-    protected $collection_key = 'dtmfEvents';
-    /**
-     * A sequence of TelephonyDtmf digits.
-     *
-     * @var string[]
-     */
-    public $dtmfEvents;
-    /**
-     * A sequence of TelephonyDtmf digits.
-     *
-     * @param string[] $dtmfEvents
-     */
-    public function setDtmfEvents($dtmfEvents)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2beta1TelephonyDtmfEvents extends \Google\Collection
     {
+        protected $collection_key = 'dtmfEvents';
+        /**
+         * A sequence of TelephonyDtmf digits.
+         *
+         * @var string[]
+         */
+        public $dtmfEvents;
+        /**
+         * A sequence of TelephonyDtmf digits.
+         *
+         * @param string[] $dtmfEvents
+         */
+        public function setDtmfEvents($dtmfEvents)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDtmfEvents()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1TelephonyDtmfEvents registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDtmfEvents()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1TelephonyDtmfEvents extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1TelephonyDtmfEvents
     {
     }
 }

@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class PivotGroupLimit extends \Google\Model
-{
-    /**
-     * The order in which the group limit is applied to the pivot table. Pivot
-     * group limits are applied from lower to higher order number. Order numbers
-     * are normalized to consecutive integers from 0. For write request, to fully
-     * customize the applying orders, all pivot group limits should have this
-     * field set with an unique number. Otherwise, the order is determined by the
-     * index in the PivotTable.rows list and then the PivotTable.columns list.
-     *
-     * @var int
-     */
-    public $applyOrder;
-    /**
-     * The count limit.
-     *
-     * @var int
-     */
-    public $countLimit;
-    /**
-     * The order in which the group limit is applied to the pivot table. Pivot
-     * group limits are applied from lower to higher order number. Order numbers
-     * are normalized to consecutive integers from 0. For write request, to fully
-     * customize the applying orders, all pivot group limits should have this
-     * field set with an unique number. Otherwise, the order is determined by the
-     * index in the PivotTable.rows list and then the PivotTable.columns list.
-     *
-     * @param int $applyOrder
-     */
-    public function setApplyOrder($applyOrder)
+namespace Google\Service\Sheets {
+    class PivotGroupLimit extends \Google\Model
     {
+        /**
+         * The order in which the group limit is applied to the pivot table. Pivot
+         * group limits are applied from lower to higher order number. Order numbers
+         * are normalized to consecutive integers from 0. For write request, to fully
+         * customize the applying orders, all pivot group limits should have this
+         * field set with an unique number. Otherwise, the order is determined by the
+         * index in the PivotTable.rows list and then the PivotTable.columns list.
+         *
+         * @var int
+         */
+        public $applyOrder;
+        /**
+         * The count limit.
+         *
+         * @var int
+         */
+        public $countLimit;
+        /**
+         * The order in which the group limit is applied to the pivot table. Pivot
+         * group limits are applied from lower to higher order number. Order numbers
+         * are normalized to consecutive integers from 0. For write request, to fully
+         * customize the applying orders, all pivot group limits should have this
+         * field set with an unique number. Otherwise, the order is determined by the
+         * index in the PivotTable.rows list and then the PivotTable.columns list.
+         *
+         * @param int $applyOrder
+         */
+        public function setApplyOrder($applyOrder)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getApplyOrder()
+        {
+        }
+        /**
+         * The count limit.
+         *
+         * @param int $countLimit
+         */
+        public function setCountLimit($countLimit)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCountLimit()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Sheets\PivotGroupLimit registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApplyOrder()
-    {
-    }
-    /**
-     * The count limit.
-     *
-     * @param int $countLimit
-     */
-    public function setCountLimit($countLimit)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getCountLimit()
+    class Google_Service_Sheets_PivotGroupLimit extends \Google\Service\Sheets\PivotGroupLimit
     {
     }
 }

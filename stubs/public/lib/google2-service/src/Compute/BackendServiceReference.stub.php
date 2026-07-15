@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class BackendServiceReference extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $backendService;
-    /**
-     * @param string $backendService
-     */
-    public function setBackendService($backendService)
+namespace Google\Service\Compute {
+    class BackendServiceReference extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $backendService;
+        /**
+         * @param string $backendService
+         */
+        public function setBackendService($backendService)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBackendService()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\BackendServiceReference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackendService()
+    class Google_Service_Compute_BackendServiceReference extends \Google\Service\Compute\BackendServiceReference
     {
     }
 }

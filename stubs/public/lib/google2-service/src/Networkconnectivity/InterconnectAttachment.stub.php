@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity;
-
-class InterconnectAttachment extends \Google\Model
-{
-    /**
-     * Optional. Cloud region to install this policy-based route on interconnect
-     * attachment. Use `all` to install it on all interconnect attachments.
-     *
-     * @var string
-     */
-    public $region;
-    /**
-     * Optional. Cloud region to install this policy-based route on interconnect
-     * attachment. Use `all` to install it on all interconnect attachments.
-     *
-     * @param string $region
-     */
-    public function setRegion($region)
+namespace Google\Service\Networkconnectivity {
+    class InterconnectAttachment extends \Google\Model
     {
+        /**
+         * Optional. Cloud region to install this policy-based route on interconnect
+         * attachment. Use `all` to install it on all interconnect attachments.
+         *
+         * @var string
+         */
+        public $region;
+        /**
+         * Optional. Cloud region to install this policy-based route on interconnect
+         * attachment. Use `all` to install it on all interconnect attachments.
+         *
+         * @param string $region
+         */
+        public function setRegion($region)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Networkconnectivity\InterconnectAttachment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRegion()
+    class Google_Service_Networkconnectivity_InterconnectAttachment extends \Google\Service\Networkconnectivity\InterconnectAttachment
     {
     }
 }

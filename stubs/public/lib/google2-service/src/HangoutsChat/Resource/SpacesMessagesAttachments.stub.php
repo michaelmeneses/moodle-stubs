@@ -21,37 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat\Resource;
-
-/**
- * The "attachments" collection of methods.
- * Typical usage is:
- *  <code>
- *   $chatService = new Google\Service\HangoutsChat(...);
- *   $attachments = $chatService->spaces_messages_attachments;
- *  </code>
- */
-class SpacesMessagesAttachments extends \Google\Service\Resource
-{
+namespace Google\Service\HangoutsChat\Resource {
+    use Google\Service\HangoutsChat\Attachment;
     /**
-     * Gets the metadata of a message attachment. The attachment data is fetched
-     * using the [media API](https://developers.google.com/workspace/chat/api/refere
-     * nce/rest/v1/media/download). For an example, see [Get metadata about a
-     * message attachment](https://developers.google.com/workspace/chat/get-media-
-     * attachments). Requires [app
-     * authentication](https://developers.google.com/workspace/chat/authenticate-
-     * authorize-chat-app) with the [authorization
-     * scope](https://developers.google.com/workspace/chat/authenticate-
-     * authorize#chat-api-scopes): - `https://www.googleapis.com/auth/chat.bot`
-     * (attachments.get)
-     *
-     * @param string $name Required. Resource name of the attachment, in the form
-     * `spaces/{space}/messages/{message}/attachments/{attachment}`.
-     * @param array $optParams Optional parameters.
-     * @return Attachment
-     * @throws \Google\Service\Exception
+     * The "attachments" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $chatService = new Google\Service\HangoutsChat(...);
+     *   $attachments = $chatService->spaces_messages_attachments;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class SpacesMessagesAttachments extends \Google\Service\Resource
+    {
+        /**
+         * Gets the metadata of a message attachment. The attachment data is fetched
+         * using the [media API](https://developers.google.com/workspace/chat/api/refere
+         * nce/rest/v1/media/download). For an example, see [Get metadata about a
+         * message attachment](https://developers.google.com/workspace/chat/get-media-
+         * attachments). Requires [app
+         * authentication](https://developers.google.com/workspace/chat/authenticate-
+         * authorize-chat-app) with the [authorization
+         * scope](https://developers.google.com/workspace/chat/authenticate-
+         * authorize#chat-api-scopes): - `https://www.googleapis.com/auth/chat.bot`
+         * (attachments.get)
+         *
+         * @param string $name Required. Resource name of the attachment, in the form
+         * `spaces/{space}/messages/{message}/attachments/{attachment}`.
+         * @param array $optParams Optional parameters.
+         * @return Attachment
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\HangoutsChat\Resource\SpacesMessagesAttachments registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_HangoutsChat_Resource_SpacesMessagesAttachments extends \Google\Service\HangoutsChat\Resource\SpacesMessagesAttachments
     {
     }
 }

@@ -21,110 +21,119 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaImportSampleQueriesMetadata extends \Google\Model
-{
-    /**
-     * ImportSampleQueries operation create time.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Count of SampleQuerys that failed to be imported.
-     *
-     * @var string
-     */
-    public $failureCount;
-    /**
-     * Count of SampleQuerys successfully imported.
-     *
-     * @var string
-     */
-    public $successCount;
-    /**
-     * Total count of SampleQuerys that were processed.
-     *
-     * @var string
-     */
-    public $totalCount;
-    /**
-     * ImportSampleQueries operation last update time. If the operation is done,
-     * this is also the finish time.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * ImportSampleQueries operation create time.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaImportSampleQueriesMetadata extends \Google\Model
     {
+        /**
+         * ImportSampleQueries operation create time.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Count of SampleQuerys that failed to be imported.
+         *
+         * @var string
+         */
+        public $failureCount;
+        /**
+         * Count of SampleQuerys successfully imported.
+         *
+         * @var string
+         */
+        public $successCount;
+        /**
+         * Total count of SampleQuerys that were processed.
+         *
+         * @var string
+         */
+        public $totalCount;
+        /**
+         * ImportSampleQueries operation last update time. If the operation is done,
+         * this is also the finish time.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * ImportSampleQueries operation create time.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Count of SampleQuerys that failed to be imported.
+         *
+         * @param string $failureCount
+         */
+        public function setFailureCount($failureCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFailureCount()
+        {
+        }
+        /**
+         * Count of SampleQuerys successfully imported.
+         *
+         * @param string $successCount
+         */
+        public function setSuccessCount($successCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSuccessCount()
+        {
+        }
+        /**
+         * Total count of SampleQuerys that were processed.
+         *
+         * @param string $totalCount
+         */
+        public function setTotalCount($totalCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalCount()
+        {
+        }
+        /**
+         * ImportSampleQueries operation last update time. If the operation is done,
+         * this is also the finish time.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaImportSampleQueriesMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Count of SampleQuerys that failed to be imported.
-     *
-     * @param string $failureCount
-     */
-    public function setFailureCount($failureCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFailureCount()
-    {
-    }
-    /**
-     * Count of SampleQuerys successfully imported.
-     *
-     * @param string $successCount
-     */
-    public function setSuccessCount($successCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSuccessCount()
-    {
-    }
-    /**
-     * Total count of SampleQuerys that were processed.
-     *
-     * @param string $totalCount
-     */
-    public function setTotalCount($totalCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalCount()
-    {
-    }
-    /**
-     * ImportSampleQueries operation last update time. If the operation is done,
-     * this is also the finish time.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaImportSampleQueriesMetadata extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaImportSampleQueriesMetadata
     {
     }
 }

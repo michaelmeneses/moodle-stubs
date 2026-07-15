@@ -21,184 +21,193 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class OracleProfile extends \Google\Model
-{
-    /**
-     * Connection string attributes
-     *
-     * @var string[]
-     */
-    public $connectionAttributes;
-    /**
-     * Required. Database for the Oracle connection.
-     *
-     * @var string
-     */
-    public $databaseService;
-    /**
-     * Required. Hostname for the Oracle connection.
-     *
-     * @var string
-     */
-    public $hostname;
-    protected $oracleAsmConfigType = OracleAsmConfig::class;
-    protected $oracleAsmConfigDataType = '';
-    protected $oracleSslConfigType = OracleSslConfig::class;
-    protected $oracleSslConfigDataType = '';
-    /**
-     * Optional. Password for the Oracle connection. Mutually exclusive with the
-     * `secret_manager_stored_password` field.
-     *
-     * @var string
-     */
-    public $password;
-    /**
-     * Port for the Oracle connection, default value is 1521.
-     *
-     * @var int
-     */
-    public $port;
-    /**
-     * Optional. A reference to a Secret Manager resource name storing the Oracle
-     * connection password. Mutually exclusive with the `password` field.
-     *
-     * @var string
-     */
-    public $secretManagerStoredPassword;
-    /**
-     * Required. Username for the Oracle connection.
-     *
-     * @var string
-     */
-    public $username;
-    /**
-     * Connection string attributes
-     *
-     * @param string[] $connectionAttributes
-     */
-    public function setConnectionAttributes($connectionAttributes)
+namespace Google\Service\Datastream {
+    class OracleProfile extends \Google\Model
     {
+        /**
+         * Connection string attributes
+         *
+         * @var string[]
+         */
+        public $connectionAttributes;
+        /**
+         * Required. Database for the Oracle connection.
+         *
+         * @var string
+         */
+        public $databaseService;
+        /**
+         * Required. Hostname for the Oracle connection.
+         *
+         * @var string
+         */
+        public $hostname;
+        protected $oracleAsmConfigType = OracleAsmConfig::class;
+        protected $oracleAsmConfigDataType = '';
+        protected $oracleSslConfigType = OracleSslConfig::class;
+        protected $oracleSslConfigDataType = '';
+        /**
+         * Optional. Password for the Oracle connection. Mutually exclusive with the
+         * `secret_manager_stored_password` field.
+         *
+         * @var string
+         */
+        public $password;
+        /**
+         * Port for the Oracle connection, default value is 1521.
+         *
+         * @var int
+         */
+        public $port;
+        /**
+         * Optional. A reference to a Secret Manager resource name storing the Oracle
+         * connection password. Mutually exclusive with the `password` field.
+         *
+         * @var string
+         */
+        public $secretManagerStoredPassword;
+        /**
+         * Required. Username for the Oracle connection.
+         *
+         * @var string
+         */
+        public $username;
+        /**
+         * Connection string attributes
+         *
+         * @param string[] $connectionAttributes
+         */
+        public function setConnectionAttributes($connectionAttributes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getConnectionAttributes()
+        {
+        }
+        /**
+         * Required. Database for the Oracle connection.
+         *
+         * @param string $databaseService
+         */
+        public function setDatabaseService($databaseService)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatabaseService()
+        {
+        }
+        /**
+         * Required. Hostname for the Oracle connection.
+         *
+         * @param string $hostname
+         */
+        public function setHostname($hostname)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHostname()
+        {
+        }
+        /**
+         * Optional. Configuration for Oracle ASM connection.
+         *
+         * @param OracleAsmConfig $oracleAsmConfig
+         */
+        public function setOracleAsmConfig(OracleAsmConfig $oracleAsmConfig)
+        {
+        }
+        /**
+         * @return OracleAsmConfig
+         */
+        public function getOracleAsmConfig()
+        {
+        }
+        /**
+         * Optional. SSL configuration for the Oracle connection.
+         *
+         * @param OracleSslConfig $oracleSslConfig
+         */
+        public function setOracleSslConfig(OracleSslConfig $oracleSslConfig)
+        {
+        }
+        /**
+         * @return OracleSslConfig
+         */
+        public function getOracleSslConfig()
+        {
+        }
+        /**
+         * Optional. Password for the Oracle connection. Mutually exclusive with the
+         * `secret_manager_stored_password` field.
+         *
+         * @param string $password
+         */
+        public function setPassword($password)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPassword()
+        {
+        }
+        /**
+         * Port for the Oracle connection, default value is 1521.
+         *
+         * @param int $port
+         */
+        public function setPort($port)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPort()
+        {
+        }
+        /**
+         * Optional. A reference to a Secret Manager resource name storing the Oracle
+         * connection password. Mutually exclusive with the `password` field.
+         *
+         * @param string $secretManagerStoredPassword
+         */
+        public function setSecretManagerStoredPassword($secretManagerStoredPassword)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSecretManagerStoredPassword()
+        {
+        }
+        /**
+         * Required. Username for the Oracle connection.
+         *
+         * @param string $username
+         */
+        public function setUsername($username)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUsername()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Datastream\OracleProfile registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConnectionAttributes()
-    {
-    }
-    /**
-     * Required. Database for the Oracle connection.
-     *
-     * @param string $databaseService
-     */
-    public function setDatabaseService($databaseService)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDatabaseService()
-    {
-    }
-    /**
-     * Required. Hostname for the Oracle connection.
-     *
-     * @param string $hostname
-     */
-    public function setHostname($hostname)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHostname()
-    {
-    }
-    /**
-     * Optional. Configuration for Oracle ASM connection.
-     *
-     * @param OracleAsmConfig $oracleAsmConfig
-     */
-    public function setOracleAsmConfig(OracleAsmConfig $oracleAsmConfig)
-    {
-    }
-    /**
-     * @return OracleAsmConfig
-     */
-    public function getOracleAsmConfig()
-    {
-    }
-    /**
-     * Optional. SSL configuration for the Oracle connection.
-     *
-     * @param OracleSslConfig $oracleSslConfig
-     */
-    public function setOracleSslConfig(OracleSslConfig $oracleSslConfig)
-    {
-    }
-    /**
-     * @return OracleSslConfig
-     */
-    public function getOracleSslConfig()
-    {
-    }
-    /**
-     * Optional. Password for the Oracle connection. Mutually exclusive with the
-     * `secret_manager_stored_password` field.
-     *
-     * @param string $password
-     */
-    public function setPassword($password)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPassword()
-    {
-    }
-    /**
-     * Port for the Oracle connection, default value is 1521.
-     *
-     * @param int $port
-     */
-    public function setPort($port)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPort()
-    {
-    }
-    /**
-     * Optional. A reference to a Secret Manager resource name storing the Oracle
-     * connection password. Mutually exclusive with the `password` field.
-     *
-     * @param string $secretManagerStoredPassword
-     */
-    public function setSecretManagerStoredPassword($secretManagerStoredPassword)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSecretManagerStoredPassword()
-    {
-    }
-    /**
-     * Required. Username for the Oracle connection.
-     *
-     * @param string $username
-     */
-    public function setUsername($username)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUsername()
+    class Google_Service_Datastream_OracleProfile extends \Google\Service\Datastream\OracleProfile
     {
     }
 }

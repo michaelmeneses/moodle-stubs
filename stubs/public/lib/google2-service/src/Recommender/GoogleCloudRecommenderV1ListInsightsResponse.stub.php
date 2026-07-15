@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Recommender;
-
-class GoogleCloudRecommenderV1ListInsightsResponse extends \Google\Collection
-{
-    protected $collection_key = 'insights';
-    protected $insightsType = GoogleCloudRecommenderV1Insight::class;
-    protected $insightsDataType = 'array';
-    /**
-     * A token that can be used to request the next page of results. This field is
-     * empty if there are no additional results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The set of insights for the `parent` resource.
-     *
-     * @param GoogleCloudRecommenderV1Insight[] $insights
-     */
-    public function setInsights($insights)
+namespace Google\Service\Recommender {
+    class GoogleCloudRecommenderV1ListInsightsResponse extends \Google\Collection
     {
+        protected $collection_key = 'insights';
+        protected $insightsType = GoogleCloudRecommenderV1Insight::class;
+        protected $insightsDataType = 'array';
+        /**
+         * A token that can be used to request the next page of results. This field is
+         * empty if there are no additional results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The set of insights for the `parent` resource.
+         *
+         * @param GoogleCloudRecommenderV1Insight[] $insights
+         */
+        public function setInsights($insights)
+        {
+        }
+        /**
+         * @return GoogleCloudRecommenderV1Insight[]
+         */
+        public function getInsights()
+        {
+        }
+        /**
+         * A token that can be used to request the next page of results. This field is
+         * empty if there are no additional results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRecommenderV1Insight[]
+     * Runtime class alias of \Google\Service\Recommender\GoogleCloudRecommenderV1ListInsightsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInsights()
-    {
-    }
-    /**
-     * A token that can be used to request the next page of results. This field is
-     * empty if there are no additional results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Recommender_GoogleCloudRecommenderV1ListInsightsResponse extends \Google\Service\Recommender\GoogleCloudRecommenderV1ListInsightsResponse
     {
     }
 }

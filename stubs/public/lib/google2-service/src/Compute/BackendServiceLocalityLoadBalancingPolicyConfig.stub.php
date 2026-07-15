@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class BackendServiceLocalityLoadBalancingPolicyConfig extends \Google\Model
-{
-    protected $customPolicyType = BackendServiceLocalityLoadBalancingPolicyConfigCustomPolicy::class;
-    protected $customPolicyDataType = '';
-    protected $policyType = BackendServiceLocalityLoadBalancingPolicyConfigPolicy::class;
-    protected $policyDataType = '';
-    /**
-     * @param BackendServiceLocalityLoadBalancingPolicyConfigCustomPolicy $customPolicy
-     */
-    public function setCustomPolicy(BackendServiceLocalityLoadBalancingPolicyConfigCustomPolicy $customPolicy)
+namespace Google\Service\Compute {
+    class BackendServiceLocalityLoadBalancingPolicyConfig extends \Google\Model
     {
+        protected $customPolicyType = BackendServiceLocalityLoadBalancingPolicyConfigCustomPolicy::class;
+        protected $customPolicyDataType = '';
+        protected $policyType = BackendServiceLocalityLoadBalancingPolicyConfigPolicy::class;
+        protected $policyDataType = '';
+        /**
+         * @param BackendServiceLocalityLoadBalancingPolicyConfigCustomPolicy $customPolicy
+         */
+        public function setCustomPolicy(BackendServiceLocalityLoadBalancingPolicyConfigCustomPolicy $customPolicy)
+        {
+        }
+        /**
+         * @return BackendServiceLocalityLoadBalancingPolicyConfigCustomPolicy
+         */
+        public function getCustomPolicy()
+        {
+        }
+        /**
+         * @param BackendServiceLocalityLoadBalancingPolicyConfigPolicy $policy
+         */
+        public function setPolicy(BackendServiceLocalityLoadBalancingPolicyConfigPolicy $policy)
+        {
+        }
+        /**
+         * @return BackendServiceLocalityLoadBalancingPolicyConfigPolicy
+         */
+        public function getPolicy()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BackendServiceLocalityLoadBalancingPolicyConfigCustomPolicy
+     * Runtime class alias of \Google\Service\Compute\BackendServiceLocalityLoadBalancingPolicyConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomPolicy()
-    {
-    }
-    /**
-     * @param BackendServiceLocalityLoadBalancingPolicyConfigPolicy $policy
-     */
-    public function setPolicy(BackendServiceLocalityLoadBalancingPolicyConfigPolicy $policy)
-    {
-    }
-    /**
-     * @return BackendServiceLocalityLoadBalancingPolicyConfigPolicy
-     */
-    public function getPolicy()
+    class Google_Service_Compute_BackendServiceLocalityLoadBalancingPolicyConfig extends \Google\Service\Compute\BackendServiceLocalityLoadBalancingPolicyConfig
     {
     }
 }

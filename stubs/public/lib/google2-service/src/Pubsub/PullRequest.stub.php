@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Pubsub;
-
-class PullRequest extends \Google\Model
-{
-    /**
-     * Required. The maximum number of messages to return for this request. Must
-     * be a positive integer. The Pub/Sub system may return fewer than the number
-     * specified.
-     *
-     * @var int
-     */
-    public $maxMessages;
-    /**
-     * Optional. If this field set to true, the system will respond immediately
-     * even if it there are no messages available to return in the `Pull`
-     * response. Otherwise, the system may wait (for a bounded amount of time)
-     * until at least one message is available, rather than returning no messages.
-     * Warning: setting this field to `true` is discouraged because it adversely
-     * impacts the performance of `Pull` operations. We recommend that users do
-     * not set this field.
-     *
-     * @deprecated
-     * @var bool
-     */
-    public $returnImmediately;
-    /**
-     * Required. The maximum number of messages to return for this request. Must
-     * be a positive integer. The Pub/Sub system may return fewer than the number
-     * specified.
-     *
-     * @param int $maxMessages
-     */
-    public function setMaxMessages($maxMessages)
+namespace Google\Service\Pubsub {
+    class PullRequest extends \Google\Model
     {
+        /**
+         * Required. The maximum number of messages to return for this request. Must
+         * be a positive integer. The Pub/Sub system may return fewer than the number
+         * specified.
+         *
+         * @var int
+         */
+        public $maxMessages;
+        /**
+         * Optional. If this field set to true, the system will respond immediately
+         * even if it there are no messages available to return in the `Pull`
+         * response. Otherwise, the system may wait (for a bounded amount of time)
+         * until at least one message is available, rather than returning no messages.
+         * Warning: setting this field to `true` is discouraged because it adversely
+         * impacts the performance of `Pull` operations. We recommend that users do
+         * not set this field.
+         *
+         * @deprecated
+         * @var bool
+         */
+        public $returnImmediately;
+        /**
+         * Required. The maximum number of messages to return for this request. Must
+         * be a positive integer. The Pub/Sub system may return fewer than the number
+         * specified.
+         *
+         * @param int $maxMessages
+         */
+        public function setMaxMessages($maxMessages)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxMessages()
+        {
+        }
+        /**
+         * Optional. If this field set to true, the system will respond immediately
+         * even if it there are no messages available to return in the `Pull`
+         * response. Otherwise, the system may wait (for a bounded amount of time)
+         * until at least one message is available, rather than returning no messages.
+         * Warning: setting this field to `true` is discouraged because it adversely
+         * impacts the performance of `Pull` operations. We recommend that users do
+         * not set this field.
+         *
+         * @deprecated
+         * @param bool $returnImmediately
+         */
+        public function setReturnImmediately($returnImmediately)
+        {
+        }
+        /**
+         * @deprecated
+         * @return bool
+         */
+        public function getReturnImmediately()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Pubsub\PullRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaxMessages()
-    {
-    }
-    /**
-     * Optional. If this field set to true, the system will respond immediately
-     * even if it there are no messages available to return in the `Pull`
-     * response. Otherwise, the system may wait (for a bounded amount of time)
-     * until at least one message is available, rather than returning no messages.
-     * Warning: setting this field to `true` is discouraged because it adversely
-     * impacts the performance of `Pull` operations. We recommend that users do
-     * not set this field.
-     *
-     * @deprecated
-     * @param bool $returnImmediately
-     */
-    public function setReturnImmediately($returnImmediately)
-    {
-    }
-    /**
-     * @deprecated
-     * @return bool
-     */
-    public function getReturnImmediately()
+    class Google_Service_Pubsub_PullRequest extends \Google\Service\Pubsub\PullRequest
     {
     }
 }

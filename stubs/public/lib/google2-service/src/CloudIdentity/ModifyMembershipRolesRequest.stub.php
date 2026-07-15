@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIdentity;
-
-class ModifyMembershipRolesRequest extends \Google\Collection
-{
-    protected $collection_key = 'updateRolesParams';
-    protected $addRolesType = MembershipRole::class;
-    protected $addRolesDataType = 'array';
-    /**
-     * The `name`s of the `MembershipRole`s to be removed. Adding or removing
-     * roles in the same request as updating roles is not supported. It is not
-     * possible to remove the `MEMBER` `MembershipRole`. If you wish to delete a
-     * `Membership`, call MembershipsService.DeleteMembership instead. Must not
-     * contain `MEMBER`. Must not be set if `update_roles_params` is set.
-     *
-     * @var string[]
-     */
-    public $removeRoles;
-    protected $updateRolesParamsType = UpdateMembershipRolesParams::class;
-    protected $updateRolesParamsDataType = 'array';
-    /**
-     * The `MembershipRole`s to be added. Adding or removing roles in the same
-     * request as updating roles is not supported. Must not be set if
-     * `update_roles_params` is set.
-     *
-     * @param MembershipRole[] $addRoles
-     */
-    public function setAddRoles($addRoles)
+namespace Google\Service\CloudIdentity {
+    class ModifyMembershipRolesRequest extends \Google\Collection
     {
+        protected $collection_key = 'updateRolesParams';
+        protected $addRolesType = MembershipRole::class;
+        protected $addRolesDataType = 'array';
+        /**
+         * The `name`s of the `MembershipRole`s to be removed. Adding or removing
+         * roles in the same request as updating roles is not supported. It is not
+         * possible to remove the `MEMBER` `MembershipRole`. If you wish to delete a
+         * `Membership`, call MembershipsService.DeleteMembership instead. Must not
+         * contain `MEMBER`. Must not be set if `update_roles_params` is set.
+         *
+         * @var string[]
+         */
+        public $removeRoles;
+        protected $updateRolesParamsType = UpdateMembershipRolesParams::class;
+        protected $updateRolesParamsDataType = 'array';
+        /**
+         * The `MembershipRole`s to be added. Adding or removing roles in the same
+         * request as updating roles is not supported. Must not be set if
+         * `update_roles_params` is set.
+         *
+         * @param MembershipRole[] $addRoles
+         */
+        public function setAddRoles($addRoles)
+        {
+        }
+        /**
+         * @return MembershipRole[]
+         */
+        public function getAddRoles()
+        {
+        }
+        /**
+         * The `name`s of the `MembershipRole`s to be removed. Adding or removing
+         * roles in the same request as updating roles is not supported. It is not
+         * possible to remove the `MEMBER` `MembershipRole`. If you wish to delete a
+         * `Membership`, call MembershipsService.DeleteMembership instead. Must not
+         * contain `MEMBER`. Must not be set if `update_roles_params` is set.
+         *
+         * @param string[] $removeRoles
+         */
+        public function setRemoveRoles($removeRoles)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRemoveRoles()
+        {
+        }
+        /**
+         * The `MembershipRole`s to be updated. Updating roles in the same request as
+         * adding or removing roles is not supported. Must not be set if either
+         * `add_roles` or `remove_roles` is set.
+         *
+         * @param UpdateMembershipRolesParams[] $updateRolesParams
+         */
+        public function setUpdateRolesParams($updateRolesParams)
+        {
+        }
+        /**
+         * @return UpdateMembershipRolesParams[]
+         */
+        public function getUpdateRolesParams()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MembershipRole[]
+     * Runtime class alias of \Google\Service\CloudIdentity\ModifyMembershipRolesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddRoles()
-    {
-    }
-    /**
-     * The `name`s of the `MembershipRole`s to be removed. Adding or removing
-     * roles in the same request as updating roles is not supported. It is not
-     * possible to remove the `MEMBER` `MembershipRole`. If you wish to delete a
-     * `Membership`, call MembershipsService.DeleteMembership instead. Must not
-     * contain `MEMBER`. Must not be set if `update_roles_params` is set.
-     *
-     * @param string[] $removeRoles
-     */
-    public function setRemoveRoles($removeRoles)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRemoveRoles()
-    {
-    }
-    /**
-     * The `MembershipRole`s to be updated. Updating roles in the same request as
-     * adding or removing roles is not supported. Must not be set if either
-     * `add_roles` or `remove_roles` is set.
-     *
-     * @param UpdateMembershipRolesParams[] $updateRolesParams
-     */
-    public function setUpdateRolesParams($updateRolesParams)
-    {
-    }
-    /**
-     * @return UpdateMembershipRolesParams[]
-     */
-    public function getUpdateRolesParams()
+    class Google_Service_CloudIdentity_ModifyMembershipRolesRequest extends \Google\Service\CloudIdentity\ModifyMembershipRolesRequest
     {
     }
 }

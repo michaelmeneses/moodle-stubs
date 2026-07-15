@@ -21,181 +21,190 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics;
-
-class Account extends \Google\Model
-{
-    protected $childLinkType = AccountChildLink::class;
-    protected $childLinkDataType = '';
-    /**
-     * Time the account was created.
-     *
-     * @var string
-     */
-    public $created;
-    /**
-     * Account ID.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Resource type for Analytics account.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Account name.
-     *
-     * @var string
-     */
-    public $name;
-    protected $permissionsType = AccountPermissions::class;
-    protected $permissionsDataType = '';
-    /**
-     * Link for this account.
-     *
-     * @var string
-     */
-    public $selfLink;
-    /**
-     * Indicates whether this account is starred or not.
-     *
-     * @var bool
-     */
-    public $starred;
-    /**
-     * Time the account was last modified.
-     *
-     * @var string
-     */
-    public $updated;
-    /**
-     * Child link for an account entry. Points to the list of web properties for
-     * this account.
-     *
-     * @param AccountChildLink $childLink
-     */
-    public function setChildLink(AccountChildLink $childLink)
+namespace Google\Service\Analytics {
+    class Account extends \Google\Model
     {
+        protected $childLinkType = AccountChildLink::class;
+        protected $childLinkDataType = '';
+        /**
+         * Time the account was created.
+         *
+         * @var string
+         */
+        public $created;
+        /**
+         * Account ID.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Resource type for Analytics account.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Account name.
+         *
+         * @var string
+         */
+        public $name;
+        protected $permissionsType = AccountPermissions::class;
+        protected $permissionsDataType = '';
+        /**
+         * Link for this account.
+         *
+         * @var string
+         */
+        public $selfLink;
+        /**
+         * Indicates whether this account is starred or not.
+         *
+         * @var bool
+         */
+        public $starred;
+        /**
+         * Time the account was last modified.
+         *
+         * @var string
+         */
+        public $updated;
+        /**
+         * Child link for an account entry. Points to the list of web properties for
+         * this account.
+         *
+         * @param AccountChildLink $childLink
+         */
+        public function setChildLink(AccountChildLink $childLink)
+        {
+        }
+        /**
+         * @return AccountChildLink
+         */
+        public function getChildLink()
+        {
+        }
+        /**
+         * Time the account was created.
+         *
+         * @param string $created
+         */
+        public function setCreated($created)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreated()
+        {
+        }
+        /**
+         * Account ID.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Resource type for Analytics account.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Account name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Permissions the user has for this account.
+         *
+         * @param AccountPermissions $permissions
+         */
+        public function setPermissions(AccountPermissions $permissions)
+        {
+        }
+        /**
+         * @return AccountPermissions
+         */
+        public function getPermissions()
+        {
+        }
+        /**
+         * Link for this account.
+         *
+         * @param string $selfLink
+         */
+        public function setSelfLink($selfLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelfLink()
+        {
+        }
+        /**
+         * Indicates whether this account is starred or not.
+         *
+         * @param bool $starred
+         */
+        public function setStarred($starred)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getStarred()
+        {
+        }
+        /**
+         * Time the account was last modified.
+         *
+         * @param string $updated
+         */
+        public function setUpdated($updated)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdated()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AccountChildLink
+     * Runtime class alias of \Google\Service\Analytics\Account registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChildLink()
-    {
-    }
-    /**
-     * Time the account was created.
-     *
-     * @param string $created
-     */
-    public function setCreated($created)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreated()
-    {
-    }
-    /**
-     * Account ID.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Resource type for Analytics account.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Account name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Permissions the user has for this account.
-     *
-     * @param AccountPermissions $permissions
-     */
-    public function setPermissions(AccountPermissions $permissions)
-    {
-    }
-    /**
-     * @return AccountPermissions
-     */
-    public function getPermissions()
-    {
-    }
-    /**
-     * Link for this account.
-     *
-     * @param string $selfLink
-     */
-    public function setSelfLink($selfLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelfLink()
-    {
-    }
-    /**
-     * Indicates whether this account is starred or not.
-     *
-     * @param bool $starred
-     */
-    public function setStarred($starred)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getStarred()
-    {
-    }
-    /**
-     * Time the account was last modified.
-     *
-     * @param string $updated
-     */
-    public function setUpdated($updated)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdated()
+    class Google_Service_Analytics_Account extends \Google\Service\Analytics\Account
     {
     }
 }

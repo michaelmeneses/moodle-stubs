@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class HtmlValues extends \Google\Collection
-{
-    protected $collection_key = 'values';
-    /**
-     * The maximum allowable length for html values is 2048 characters.
-     *
-     * @var string[]
-     */
-    public $values;
-    /**
-     * The maximum allowable length for html values is 2048 characters.
-     *
-     * @param string[] $values
-     */
-    public function setValues($values)
+namespace Google\Service\CloudSearch {
+    class HtmlValues extends \Google\Collection
     {
+        protected $collection_key = 'values';
+        /**
+         * The maximum allowable length for html values is 2048 characters.
+         *
+         * @var string[]
+         */
+        public $values;
+        /**
+         * The maximum allowable length for html values is 2048 characters.
+         *
+         * @param string[] $values
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudSearch\HtmlValues registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getValues()
+    class Google_Service_CloudSearch_HtmlValues extends \Google\Service\CloudSearch\HtmlValues
     {
     }
 }

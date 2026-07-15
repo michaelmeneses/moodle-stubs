@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ScheduleRunResponse extends \Google\Model
-{
-    /**
-     * The response of the scheduled run.
-     *
-     * @var string
-     */
-    public $runResponse;
-    /**
-     * The scheduled run time based on the user-specified schedule.
-     *
-     * @var string
-     */
-    public $scheduledRunTime;
-    /**
-     * The response of the scheduled run.
-     *
-     * @param string $runResponse
-     */
-    public function setRunResponse($runResponse)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ScheduleRunResponse extends \Google\Model
     {
+        /**
+         * The response of the scheduled run.
+         *
+         * @var string
+         */
+        public $runResponse;
+        /**
+         * The scheduled run time based on the user-specified schedule.
+         *
+         * @var string
+         */
+        public $scheduledRunTime;
+        /**
+         * The response of the scheduled run.
+         *
+         * @param string $runResponse
+         */
+        public function setRunResponse($runResponse)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRunResponse()
+        {
+        }
+        /**
+         * The scheduled run time based on the user-specified schedule.
+         *
+         * @param string $scheduledRunTime
+         */
+        public function setScheduledRunTime($scheduledRunTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScheduledRunTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ScheduleRunResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRunResponse()
-    {
-    }
-    /**
-     * The scheduled run time based on the user-specified schedule.
-     *
-     * @param string $scheduledRunTime
-     */
-    public function setScheduledRunTime($scheduledRunTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getScheduledRunTime()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ScheduleRunResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ScheduleRunResponse
     {
     }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudComposer;
-
-class RecoveryConfig extends \Google\Model
-{
-    protected $scheduledSnapshotsConfigType = ScheduledSnapshotsConfig::class;
-    protected $scheduledSnapshotsConfigDataType = '';
-    /**
-     * Optional. The configuration for scheduled snapshot creation mechanism.
-     *
-     * @param ScheduledSnapshotsConfig $scheduledSnapshotsConfig
-     */
-    public function setScheduledSnapshotsConfig(ScheduledSnapshotsConfig $scheduledSnapshotsConfig)
+namespace Google\Service\CloudComposer {
+    class RecoveryConfig extends \Google\Model
     {
+        protected $scheduledSnapshotsConfigType = ScheduledSnapshotsConfig::class;
+        protected $scheduledSnapshotsConfigDataType = '';
+        /**
+         * Optional. The configuration for scheduled snapshot creation mechanism.
+         *
+         * @param ScheduledSnapshotsConfig $scheduledSnapshotsConfig
+         */
+        public function setScheduledSnapshotsConfig(ScheduledSnapshotsConfig $scheduledSnapshotsConfig)
+        {
+        }
+        /**
+         * @return ScheduledSnapshotsConfig
+         */
+        public function getScheduledSnapshotsConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ScheduledSnapshotsConfig
+     * Runtime class alias of \Google\Service\CloudComposer\RecoveryConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getScheduledSnapshotsConfig()
+    class Google_Service_CloudComposer_RecoveryConfig extends \Google\Service\CloudComposer\RecoveryConfig
     {
     }
 }

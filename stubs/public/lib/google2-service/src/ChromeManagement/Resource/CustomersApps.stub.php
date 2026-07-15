@@ -21,84 +21,96 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement\Resource;
-
-/**
- * The "apps" collection of methods.
- * Typical usage is:
- *  <code>
- *   $chromemanagementService = new Google\Service\ChromeManagement(...);
- *   $apps = $chromemanagementService->customers_apps;
- *  </code>
- */
-class CustomersApps extends \Google\Service\Resource
-{
+namespace Google\Service\ChromeManagement\Resource {
+    use Google\Service\ChromeManagement\GoogleChromeManagementV1CountChromeAppRequestsResponse;
+    use Google\Service\ChromeManagement\GoogleChromeManagementV1FetchDevicesRequestingExtensionResponse;
+    use Google\Service\ChromeManagement\GoogleChromeManagementV1FetchUsersRequestingExtensionResponse;
     /**
-     * Generate summary of app installation requests. (apps.countChromeAppRequests)
-     *
-     * @param string $customer Required. Customer id or "my_customer" to use the
-     * customer associated to the account making the request.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string orderBy Field used to order results. Supported fields: *
-     * request_count * latest_request_time
-     * @opt_param string orgUnitId The ID of the organizational unit.
-     * @opt_param int pageSize Maximum number of results to return. Maximum and
-     * default are 50, anything above will be coerced to 50.
-     * @opt_param string pageToken Token to specify the page of the request to be
-     * returned.
-     * @return GoogleChromeManagementV1CountChromeAppRequestsResponse
-     * @throws \Google\Service\Exception
+     * The "apps" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $chromemanagementService = new Google\Service\ChromeManagement(...);
+     *   $apps = $chromemanagementService->customers_apps;
+     *  </code>
      */
-    public function countChromeAppRequests($customer, $optParams = [])
+    class CustomersApps extends \Google\Service\Resource
     {
+        /**
+         * Generate summary of app installation requests. (apps.countChromeAppRequests)
+         *
+         * @param string $customer Required. Customer id or "my_customer" to use the
+         * customer associated to the account making the request.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string orderBy Field used to order results. Supported fields: *
+         * request_count * latest_request_time
+         * @opt_param string orgUnitId The ID of the organizational unit.
+         * @opt_param int pageSize Maximum number of results to return. Maximum and
+         * default are 50, anything above will be coerced to 50.
+         * @opt_param string pageToken Token to specify the page of the request to be
+         * returned.
+         * @return GoogleChromeManagementV1CountChromeAppRequestsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function countChromeAppRequests($customer, $optParams = [])
+        {
+        }
+        /**
+         * Get a list of devices that have requested to install an extension.
+         * (apps.fetchDevicesRequestingExtension)
+         *
+         * @param string $customer Required. The customer ID or "my_customer" prefixed
+         * with "customers/".
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string extensionId Required. The extension for which we want to
+         * find requesting devices.
+         * @opt_param string orgUnitId The ID of the organizational unit. Only consider
+         * devices that directly belong to this org unit, i.e. sub-orgunits are not
+         * counted. If omitted, all data will be returned.
+         * @opt_param int pageSize Optional. Maximum number of results to return.
+         * Maximum and default are 50. Any page size larger than 50 will be coerced to
+         * 50.
+         * @opt_param string pageToken Optional. Token to specify the page of the
+         * request to be returned. Token expires after 1 day.
+         * @return GoogleChromeManagementV1FetchDevicesRequestingExtensionResponse
+         * @throws \Google\Service\Exception
+         */
+        public function fetchDevicesRequestingExtension($customer, $optParams = [])
+        {
+        }
+        /**
+         * Get a list of users that have requested to install an extension.
+         * (apps.fetchUsersRequestingExtension)
+         *
+         * @param string $customer Required. The customer ID or "my_customer" prefixed
+         * with "customers/".
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string extensionId Required. The extension for which we want to
+         * find the requesting users.
+         * @opt_param string orgUnitId The ID of the organizational unit. Only consider
+         * devices that directly belong to this org unit, i.e. sub-orgunits are not
+         * counted. If omitted, all data will be returned.
+         * @opt_param int pageSize Optional. Maximum number of results to return.
+         * Maximum and default are 50. Any page size larger than 50 will be coerced to
+         * 50.
+         * @opt_param string pageToken Optional. Token to specify the page of the
+         * request to be returned. Token expires after 1 day.
+         * @return GoogleChromeManagementV1FetchUsersRequestingExtensionResponse
+         * @throws \Google\Service\Exception
+         */
+        public function fetchUsersRequestingExtension($customer, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Get a list of devices that have requested to install an extension.
-     * (apps.fetchDevicesRequestingExtension)
-     *
-     * @param string $customer Required. The customer ID or "my_customer" prefixed
-     * with "customers/".
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string extensionId Required. The extension for which we want to
-     * find requesting devices.
-     * @opt_param string orgUnitId The ID of the organizational unit. Only consider
-     * devices that directly belong to this org unit, i.e. sub-orgunits are not
-     * counted. If omitted, all data will be returned.
-     * @opt_param int pageSize Optional. Maximum number of results to return.
-     * Maximum and default are 50. Any page size larger than 50 will be coerced to
-     * 50.
-     * @opt_param string pageToken Optional. Token to specify the page of the
-     * request to be returned. Token expires after 1 day.
-     * @return GoogleChromeManagementV1FetchDevicesRequestingExtensionResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\ChromeManagement\Resource\CustomersApps registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function fetchDevicesRequestingExtension($customer, $optParams = [])
-    {
-    }
-    /**
-     * Get a list of users that have requested to install an extension.
-     * (apps.fetchUsersRequestingExtension)
-     *
-     * @param string $customer Required. The customer ID or "my_customer" prefixed
-     * with "customers/".
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string extensionId Required. The extension for which we want to
-     * find the requesting users.
-     * @opt_param string orgUnitId The ID of the organizational unit. Only consider
-     * devices that directly belong to this org unit, i.e. sub-orgunits are not
-     * counted. If omitted, all data will be returned.
-     * @opt_param int pageSize Optional. Maximum number of results to return.
-     * Maximum and default are 50. Any page size larger than 50 will be coerced to
-     * 50.
-     * @opt_param string pageToken Optional. Token to specify the page of the
-     * request to be returned. Token expires after 1 day.
-     * @return GoogleChromeManagementV1FetchUsersRequestingExtensionResponse
-     * @throws \Google\Service\Exception
-     */
-    public function fetchUsersRequestingExtension($customer, $optParams = [])
+    class Google_Service_ChromeManagement_Resource_CustomersApps extends \Google\Service\ChromeManagement\Resource\CustomersApps
     {
     }
 }

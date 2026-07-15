@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MapsPlaces;
-
-class GoogleMapsPlacesV1ContextualContentJustificationReviewJustification extends \Google\Model
-{
-    protected $highlightedTextType = GoogleMapsPlacesV1ContextualContentJustificationReviewJustificationHighlightedText::class;
-    protected $highlightedTextDataType = '';
-    protected $reviewType = GoogleMapsPlacesV1Review::class;
-    protected $reviewDataType = '';
-    /**
-     * @param GoogleMapsPlacesV1ContextualContentJustificationReviewJustificationHighlightedText $highlightedText
-     */
-    public function setHighlightedText(GoogleMapsPlacesV1ContextualContentJustificationReviewJustificationHighlightedText $highlightedText)
+namespace Google\Service\MapsPlaces {
+    class GoogleMapsPlacesV1ContextualContentJustificationReviewJustification extends \Google\Model
     {
+        protected $highlightedTextType = GoogleMapsPlacesV1ContextualContentJustificationReviewJustificationHighlightedText::class;
+        protected $highlightedTextDataType = '';
+        protected $reviewType = GoogleMapsPlacesV1Review::class;
+        protected $reviewDataType = '';
+        /**
+         * @param GoogleMapsPlacesV1ContextualContentJustificationReviewJustificationHighlightedText $highlightedText
+         */
+        public function setHighlightedText(GoogleMapsPlacesV1ContextualContentJustificationReviewJustificationHighlightedText $highlightedText)
+        {
+        }
+        /**
+         * @return GoogleMapsPlacesV1ContextualContentJustificationReviewJustificationHighlightedText
+         */
+        public function getHighlightedText()
+        {
+        }
+        /**
+         * The review that the highlighted text is generated from.
+         *
+         * @param GoogleMapsPlacesV1Review $review
+         */
+        public function setReview(GoogleMapsPlacesV1Review $review)
+        {
+        }
+        /**
+         * @return GoogleMapsPlacesV1Review
+         */
+        public function getReview()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleMapsPlacesV1ContextualContentJustificationReviewJustificationHighlightedText
+     * Runtime class alias of \Google\Service\MapsPlaces\GoogleMapsPlacesV1ContextualContentJustificationReviewJustification registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHighlightedText()
-    {
-    }
-    /**
-     * The review that the highlighted text is generated from.
-     *
-     * @param GoogleMapsPlacesV1Review $review
-     */
-    public function setReview(GoogleMapsPlacesV1Review $review)
-    {
-    }
-    /**
-     * @return GoogleMapsPlacesV1Review
-     */
-    public function getReview()
+    class Google_Service_MapsPlaces_GoogleMapsPlacesV1ContextualContentJustificationReviewJustification extends \Google\Service\MapsPlaces\GoogleMapsPlacesV1ContextualContentJustificationReviewJustification
     {
     }
 }

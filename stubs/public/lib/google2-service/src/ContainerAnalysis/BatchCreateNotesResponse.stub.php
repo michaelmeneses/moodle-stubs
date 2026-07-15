@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class BatchCreateNotesResponse extends \Google\Collection
-{
-    protected $collection_key = 'notes';
-    protected $notesType = Note::class;
-    protected $notesDataType = 'array';
-    /**
-     * The notes that were created.
-     *
-     * @param Note[] $notes
-     */
-    public function setNotes($notes)
+namespace Google\Service\ContainerAnalysis {
+    class BatchCreateNotesResponse extends \Google\Collection
     {
+        protected $collection_key = 'notes';
+        protected $notesType = Note::class;
+        protected $notesDataType = 'array';
+        /**
+         * The notes that were created.
+         *
+         * @param Note[] $notes
+         */
+        public function setNotes($notes)
+        {
+        }
+        /**
+         * @return Note[]
+         */
+        public function getNotes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Note[]
+     * Runtime class alias of \Google\Service\ContainerAnalysis\BatchCreateNotesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNotes()
+    class Google_Service_ContainerAnalysis_BatchCreateNotesResponse extends \Google\Service\ContainerAnalysis\BatchCreateNotesResponse
     {
     }
 }

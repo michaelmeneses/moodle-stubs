@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Iam;
-
-class PermissionDelta extends \Google\Collection
-{
-    protected $collection_key = 'removedPermissions';
-    /**
-     * @var string[]
-     */
-    public $addedPermissions;
-    /**
-     * @var string[]
-     */
-    public $removedPermissions;
-    /**
-     * @param string[]
-     */
-    public function setAddedPermissions($addedPermissions)
+namespace Google\Service\Iam {
+    class PermissionDelta extends \Google\Collection
     {
+        protected $collection_key = 'removedPermissions';
+        /**
+         * @var string[]
+         */
+        public $addedPermissions;
+        /**
+         * @var string[]
+         */
+        public $removedPermissions;
+        /**
+         * @param string[]
+         */
+        public function setAddedPermissions($addedPermissions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAddedPermissions()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setRemovedPermissions($removedPermissions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRemovedPermissions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Iam\PermissionDelta registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddedPermissions()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setRemovedPermissions($removedPermissions)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRemovedPermissions()
+    class Google_Service_Iam_PermissionDelta extends \Google\Service\Iam\PermissionDelta
     {
     }
 }

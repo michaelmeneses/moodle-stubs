@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1PairwiseMetricInput extends \Google\Model
-{
-    protected $instanceType = GoogleCloudAiplatformV1PairwiseMetricInstance::class;
-    protected $instanceDataType = '';
-    protected $metricSpecType = GoogleCloudAiplatformV1PairwiseMetricSpec::class;
-    protected $metricSpecDataType = '';
-    /**
-     * Required. Pairwise metric instance.
-     *
-     * @param GoogleCloudAiplatformV1PairwiseMetricInstance $instance
-     */
-    public function setInstance(GoogleCloudAiplatformV1PairwiseMetricInstance $instance)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1PairwiseMetricInput extends \Google\Model
     {
+        protected $instanceType = GoogleCloudAiplatformV1PairwiseMetricInstance::class;
+        protected $instanceDataType = '';
+        protected $metricSpecType = GoogleCloudAiplatformV1PairwiseMetricSpec::class;
+        protected $metricSpecDataType = '';
+        /**
+         * Required. Pairwise metric instance.
+         *
+         * @param GoogleCloudAiplatformV1PairwiseMetricInstance $instance
+         */
+        public function setInstance(GoogleCloudAiplatformV1PairwiseMetricInstance $instance)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1PairwiseMetricInstance
+         */
+        public function getInstance()
+        {
+        }
+        /**
+         * Required. Spec for pairwise metric.
+         *
+         * @param GoogleCloudAiplatformV1PairwiseMetricSpec $metricSpec
+         */
+        public function setMetricSpec(GoogleCloudAiplatformV1PairwiseMetricSpec $metricSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1PairwiseMetricSpec
+         */
+        public function getMetricSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1PairwiseMetricInstance
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1PairwiseMetricInput registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstance()
-    {
-    }
-    /**
-     * Required. Spec for pairwise metric.
-     *
-     * @param GoogleCloudAiplatformV1PairwiseMetricSpec $metricSpec
-     */
-    public function setMetricSpec(GoogleCloudAiplatformV1PairwiseMetricSpec $metricSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1PairwiseMetricSpec
-     */
-    public function getMetricSpec()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1PairwiseMetricInput extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1PairwiseMetricInput
     {
     }
 }

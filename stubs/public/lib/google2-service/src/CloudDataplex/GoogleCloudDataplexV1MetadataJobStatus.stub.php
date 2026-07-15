@@ -21,123 +21,132 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1MetadataJobStatus extends \Google\Model
-{
-    /**
-     * State unspecified.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * The job is queued.
-     */
-    public const STATE_QUEUED = 'QUEUED';
-    /**
-     * The job is running.
-     */
-    public const STATE_RUNNING = 'RUNNING';
-    /**
-     * The job is being canceled.
-     */
-    public const STATE_CANCELING = 'CANCELING';
-    /**
-     * The job is canceled.
-     */
-    public const STATE_CANCELED = 'CANCELED';
-    /**
-     * The job succeeded.
-     */
-    public const STATE_SUCCEEDED = 'SUCCEEDED';
-    /**
-     * The job failed.
-     */
-    public const STATE_FAILED = 'FAILED';
-    /**
-     * The job completed with some errors.
-     */
-    public const STATE_SUCCEEDED_WITH_ERRORS = 'SUCCEEDED_WITH_ERRORS';
-    /**
-     * Output only. Progress tracking.
-     *
-     * @var int
-     */
-    public $completionPercent;
-    /**
-     * Output only. Message relating to the progression of a metadata job.
-     *
-     * @var string
-     */
-    public $message;
-    /**
-     * Output only. State of the metadata job.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Output only. The time when the status was updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. Progress tracking.
-     *
-     * @param int $completionPercent
-     */
-    public function setCompletionPercent($completionPercent)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1MetadataJobStatus extends \Google\Model
     {
+        /**
+         * State unspecified.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * The job is queued.
+         */
+        public const STATE_QUEUED = 'QUEUED';
+        /**
+         * The job is running.
+         */
+        public const STATE_RUNNING = 'RUNNING';
+        /**
+         * The job is being canceled.
+         */
+        public const STATE_CANCELING = 'CANCELING';
+        /**
+         * The job is canceled.
+         */
+        public const STATE_CANCELED = 'CANCELED';
+        /**
+         * The job succeeded.
+         */
+        public const STATE_SUCCEEDED = 'SUCCEEDED';
+        /**
+         * The job failed.
+         */
+        public const STATE_FAILED = 'FAILED';
+        /**
+         * The job completed with some errors.
+         */
+        public const STATE_SUCCEEDED_WITH_ERRORS = 'SUCCEEDED_WITH_ERRORS';
+        /**
+         * Output only. Progress tracking.
+         *
+         * @var int
+         */
+        public $completionPercent;
+        /**
+         * Output only. Message relating to the progression of a metadata job.
+         *
+         * @var string
+         */
+        public $message;
+        /**
+         * Output only. State of the metadata job.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Output only. The time when the status was updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. Progress tracking.
+         *
+         * @param int $completionPercent
+         */
+        public function setCompletionPercent($completionPercent)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCompletionPercent()
+        {
+        }
+        /**
+         * Output only. Message relating to the progression of a metadata job.
+         *
+         * @param string $message
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
+        /**
+         * Output only. State of the metadata job.
+         *
+         * Accepted values: STATE_UNSPECIFIED, QUEUED, RUNNING, CANCELING, CANCELED,
+         * SUCCEEDED, FAILED, SUCCEEDED_WITH_ERRORS
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Output only. The time when the status was updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1MetadataJobStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCompletionPercent()
-    {
-    }
-    /**
-     * Output only. Message relating to the progression of a metadata job.
-     *
-     * @param string $message
-     */
-    public function setMessage($message)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMessage()
-    {
-    }
-    /**
-     * Output only. State of the metadata job.
-     *
-     * Accepted values: STATE_UNSPECIFIED, QUEUED, RUNNING, CANCELING, CANCELED,
-     * SUCCEEDED, FAILED, SUCCEEDED_WITH_ERRORS
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Output only. The time when the status was updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1MetadataJobStatus extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1MetadataJobStatus
     {
     }
 }

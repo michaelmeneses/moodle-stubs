@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1mainQaAnswerAnswerSource extends \Google\Model
-{
-    /**
-     * Source type is unspecified.
-     */
-    public const SOURCE_TYPE_SOURCE_TYPE_UNSPECIFIED = 'SOURCE_TYPE_UNSPECIFIED';
-    /**
-     * Answer was system-generated; created during an Insights analysis.
-     */
-    public const SOURCE_TYPE_SYSTEM_GENERATED = 'SYSTEM_GENERATED';
-    /**
-     * Answer was created by a human via manual edit.
-     */
-    public const SOURCE_TYPE_MANUAL_EDIT = 'MANUAL_EDIT';
-    protected $answerValueType = GoogleCloudContactcenterinsightsV1mainQaAnswerAnswerValue::class;
-    protected $answerValueDataType = '';
-    /**
-     * What created the answer.
-     *
-     * @var string
-     */
-    public $sourceType;
-    /**
-     * The answer value from this source.
-     *
-     * @param GoogleCloudContactcenterinsightsV1mainQaAnswerAnswerValue $answerValue
-     */
-    public function setAnswerValue(GoogleCloudContactcenterinsightsV1mainQaAnswerAnswerValue $answerValue)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1mainQaAnswerAnswerSource extends \Google\Model
     {
+        /**
+         * Source type is unspecified.
+         */
+        public const SOURCE_TYPE_SOURCE_TYPE_UNSPECIFIED = 'SOURCE_TYPE_UNSPECIFIED';
+        /**
+         * Answer was system-generated; created during an Insights analysis.
+         */
+        public const SOURCE_TYPE_SYSTEM_GENERATED = 'SYSTEM_GENERATED';
+        /**
+         * Answer was created by a human via manual edit.
+         */
+        public const SOURCE_TYPE_MANUAL_EDIT = 'MANUAL_EDIT';
+        protected $answerValueType = GoogleCloudContactcenterinsightsV1mainQaAnswerAnswerValue::class;
+        protected $answerValueDataType = '';
+        /**
+         * What created the answer.
+         *
+         * @var string
+         */
+        public $sourceType;
+        /**
+         * The answer value from this source.
+         *
+         * @param GoogleCloudContactcenterinsightsV1mainQaAnswerAnswerValue $answerValue
+         */
+        public function setAnswerValue(GoogleCloudContactcenterinsightsV1mainQaAnswerAnswerValue $answerValue)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1mainQaAnswerAnswerValue
+         */
+        public function getAnswerValue()
+        {
+        }
+        /**
+         * What created the answer.
+         *
+         * Accepted values: SOURCE_TYPE_UNSPECIFIED, SYSTEM_GENERATED, MANUAL_EDIT
+         *
+         * @param self::SOURCE_TYPE_* $sourceType
+         */
+        public function setSourceType($sourceType)
+        {
+        }
+        /**
+         * @return self::SOURCE_TYPE_*
+         */
+        public function getSourceType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudContactcenterinsightsV1mainQaAnswerAnswerValue
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainQaAnswerAnswerSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnswerValue()
-    {
-    }
-    /**
-     * What created the answer.
-     *
-     * Accepted values: SOURCE_TYPE_UNSPECIFIED, SYSTEM_GENERATED, MANUAL_EDIT
-     *
-     * @param self::SOURCE_TYPE_* $sourceType
-     */
-    public function setSourceType($sourceType)
-    {
-    }
-    /**
-     * @return self::SOURCE_TYPE_*
-     */
-    public function getSourceType()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1mainQaAnswerAnswerSource extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainQaAnswerAnswerSource
     {
     }
 }

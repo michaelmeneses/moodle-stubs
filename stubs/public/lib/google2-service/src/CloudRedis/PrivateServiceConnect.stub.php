@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRedis;
-
-class PrivateServiceConnect extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $pscService;
-    /**
-     * @var string
-     */
-    public $pscServiceRoute;
-    /**
-     * @param string
-     */
-    public function setPscService($pscService)
+namespace Google\Service\CloudRedis {
+    class PrivateServiceConnect extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $pscService;
+        /**
+         * @var string
+         */
+        public $pscServiceRoute;
+        /**
+         * @param string
+         */
+        public function setPscService($pscService)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPscService()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPscServiceRoute($pscServiceRoute)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPscServiceRoute()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRedis\PrivateServiceConnect registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPscService()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPscServiceRoute($pscServiceRoute)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPscServiceRoute()
+    class Google_Service_CloudRedis_PrivateServiceConnect extends \Google\Service\CloudRedis\PrivateServiceConnect
     {
     }
 }

@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class CustomerIndexStats extends \Google\Collection
-{
-    protected $collection_key = 'itemCountByStatus';
-    protected $dateType = Date::class;
-    protected $dateDataType = '';
-    protected $itemCountByStatusType = ItemCountByStatus::class;
-    protected $itemCountByStatusDataType = 'array';
-    /**
-     * The date for which statistics were calculated.
-     *
-     * @param Date $date
-     */
-    public function setDate(Date $date)
+namespace Google\Service\CloudSearch {
+    class CustomerIndexStats extends \Google\Collection
     {
+        protected $collection_key = 'itemCountByStatus';
+        protected $dateType = Date::class;
+        protected $dateDataType = '';
+        protected $itemCountByStatusType = ItemCountByStatus::class;
+        protected $itemCountByStatusDataType = 'array';
+        /**
+         * The date for which statistics were calculated.
+         *
+         * @param Date $date
+         */
+        public function setDate(Date $date)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getDate()
+        {
+        }
+        /**
+         * Number of items aggregrated by status code.
+         *
+         * @param ItemCountByStatus[] $itemCountByStatus
+         */
+        public function setItemCountByStatus($itemCountByStatus)
+        {
+        }
+        /**
+         * @return ItemCountByStatus[]
+         */
+        public function getItemCountByStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Date
+     * Runtime class alias of \Google\Service\CloudSearch\CustomerIndexStats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDate()
-    {
-    }
-    /**
-     * Number of items aggregrated by status code.
-     *
-     * @param ItemCountByStatus[] $itemCountByStatus
-     */
-    public function setItemCountByStatus($itemCountByStatus)
-    {
-    }
-    /**
-     * @return ItemCountByStatus[]
-     */
-    public function getItemCountByStatus()
+    class Google_Service_CloudSearch_CustomerIndexStats extends \Google\Service\CloudSearch\CustomerIndexStats
     {
     }
 }

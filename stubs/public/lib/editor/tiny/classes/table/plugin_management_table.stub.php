@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace editor_tiny\table;
 
+use moodle_url;
 /**
  * Tiny admin settings.
  *

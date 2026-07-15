@@ -21,143 +21,152 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1SecurityAssessmentResultScoringResultAssessmentRecommendation extends \Google\Collection
-{
-    /**
-     * The verdict is unspecified.
-     */
-    public const VERDICT_VERDICT_UNSPECIFIED = 'VERDICT_UNSPECIFIED';
-    /**
-     * The assessment has passed.
-     */
-    public const VERDICT_PASS = 'PASS';
-    /**
-     * The assessment has failed.
-     */
-    public const VERDICT_FAIL = 'FAIL';
-    /**
-     * The verdict is not applicable.
-     */
-    public const VERDICT_NOT_APPLICABLE = 'NOT_APPLICABLE';
-    /**
-     * The weight is unspecified.
-     */
-    public const WEIGHT_WEIGHT_UNSPECIFIED = 'WEIGHT_UNSPECIFIED';
-    /**
-     * The weight is minor.
-     */
-    public const WEIGHT_MINOR = 'MINOR';
-    /**
-     * The weight is moderate.
-     */
-    public const WEIGHT_MODERATE = 'MODERATE';
-    /**
-     * The weight is major.
-     */
-    public const WEIGHT_MAJOR = 'MAJOR';
-    protected $collection_key = 'recommendations';
-    /**
-     * The display name of the assessment.
-     *
-     * @var string
-     */
-    public $displayName;
-    protected $recommendationsType = GoogleCloudApigeeV1SecurityAssessmentResultScoringResultAssessmentRecommendationRecommendation::class;
-    protected $recommendationsDataType = 'array';
-    /**
-     * Score impact indicates the impact on the overall score if the assessment
-     * were to pass.
-     *
-     * @var int
-     */
-    public $scoreImpact;
-    /**
-     * Verdict indicates the assessment result.
-     *
-     * @var string
-     */
-    public $verdict;
-    /**
-     * The weight of the assessment which was set in the profile.
-     *
-     * @var string
-     */
-    public $weight;
-    /**
-     * The display name of the assessment.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1SecurityAssessmentResultScoringResultAssessmentRecommendation extends \Google\Collection
     {
+        /**
+         * The verdict is unspecified.
+         */
+        public const VERDICT_VERDICT_UNSPECIFIED = 'VERDICT_UNSPECIFIED';
+        /**
+         * The assessment has passed.
+         */
+        public const VERDICT_PASS = 'PASS';
+        /**
+         * The assessment has failed.
+         */
+        public const VERDICT_FAIL = 'FAIL';
+        /**
+         * The verdict is not applicable.
+         */
+        public const VERDICT_NOT_APPLICABLE = 'NOT_APPLICABLE';
+        /**
+         * The weight is unspecified.
+         */
+        public const WEIGHT_WEIGHT_UNSPECIFIED = 'WEIGHT_UNSPECIFIED';
+        /**
+         * The weight is minor.
+         */
+        public const WEIGHT_MINOR = 'MINOR';
+        /**
+         * The weight is moderate.
+         */
+        public const WEIGHT_MODERATE = 'MODERATE';
+        /**
+         * The weight is major.
+         */
+        public const WEIGHT_MAJOR = 'MAJOR';
+        protected $collection_key = 'recommendations';
+        /**
+         * The display name of the assessment.
+         *
+         * @var string
+         */
+        public $displayName;
+        protected $recommendationsType = GoogleCloudApigeeV1SecurityAssessmentResultScoringResultAssessmentRecommendationRecommendation::class;
+        protected $recommendationsDataType = 'array';
+        /**
+         * Score impact indicates the impact on the overall score if the assessment
+         * were to pass.
+         *
+         * @var int
+         */
+        public $scoreImpact;
+        /**
+         * Verdict indicates the assessment result.
+         *
+         * @var string
+         */
+        public $verdict;
+        /**
+         * The weight of the assessment which was set in the profile.
+         *
+         * @var string
+         */
+        public $weight;
+        /**
+         * The display name of the assessment.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The recommended steps of the assessment.
+         *
+         * @param GoogleCloudApigeeV1SecurityAssessmentResultScoringResultAssessmentRecommendationRecommendation[] $recommendations
+         */
+        public function setRecommendations($recommendations)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1SecurityAssessmentResultScoringResultAssessmentRecommendationRecommendation[]
+         */
+        public function getRecommendations()
+        {
+        }
+        /**
+         * Score impact indicates the impact on the overall score if the assessment
+         * were to pass.
+         *
+         * @param int $scoreImpact
+         */
+        public function setScoreImpact($scoreImpact)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getScoreImpact()
+        {
+        }
+        /**
+         * Verdict indicates the assessment result.
+         *
+         * Accepted values: VERDICT_UNSPECIFIED, PASS, FAIL, NOT_APPLICABLE
+         *
+         * @param self::VERDICT_* $verdict
+         */
+        public function setVerdict($verdict)
+        {
+        }
+        /**
+         * @return self::VERDICT_*
+         */
+        public function getVerdict()
+        {
+        }
+        /**
+         * The weight of the assessment which was set in the profile.
+         *
+         * Accepted values: WEIGHT_UNSPECIFIED, MINOR, MODERATE, MAJOR
+         *
+         * @param self::WEIGHT_* $weight
+         */
+        public function setWeight($weight)
+        {
+        }
+        /**
+         * @return self::WEIGHT_*
+         */
+        public function getWeight()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1SecurityAssessmentResultScoringResultAssessmentRecommendation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The recommended steps of the assessment.
-     *
-     * @param GoogleCloudApigeeV1SecurityAssessmentResultScoringResultAssessmentRecommendationRecommendation[] $recommendations
-     */
-    public function setRecommendations($recommendations)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1SecurityAssessmentResultScoringResultAssessmentRecommendationRecommendation[]
-     */
-    public function getRecommendations()
-    {
-    }
-    /**
-     * Score impact indicates the impact on the overall score if the assessment
-     * were to pass.
-     *
-     * @param int $scoreImpact
-     */
-    public function setScoreImpact($scoreImpact)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getScoreImpact()
-    {
-    }
-    /**
-     * Verdict indicates the assessment result.
-     *
-     * Accepted values: VERDICT_UNSPECIFIED, PASS, FAIL, NOT_APPLICABLE
-     *
-     * @param self::VERDICT_* $verdict
-     */
-    public function setVerdict($verdict)
-    {
-    }
-    /**
-     * @return self::VERDICT_*
-     */
-    public function getVerdict()
-    {
-    }
-    /**
-     * The weight of the assessment which was set in the profile.
-     *
-     * Accepted values: WEIGHT_UNSPECIFIED, MINOR, MODERATE, MAJOR
-     *
-     * @param self::WEIGHT_* $weight
-     */
-    public function setWeight($weight)
-    {
-    }
-    /**
-     * @return self::WEIGHT_*
-     */
-    public function getWeight()
+    class Google_Service_Apigee_GoogleCloudApigeeV1SecurityAssessmentResultScoringResultAssessmentRecommendation extends \Google\Service\Apigee\GoogleCloudApigeeV1SecurityAssessmentResultScoringResultAssessmentRecommendation
     {
     }
 }

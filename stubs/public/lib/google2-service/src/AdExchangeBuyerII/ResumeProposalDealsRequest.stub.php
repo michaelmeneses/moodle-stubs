@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyerII;
-
-class ResumeProposalDealsRequest extends \Google\Collection
-{
-    protected $collection_key = 'externalDealIds';
-    /**
-     * The external_deal_id's of the deals to resume. If empty, all the deals in
-     * the proposal will be resumed.
-     *
-     * @var string[]
-     */
-    public $externalDealIds;
-    /**
-     * The external_deal_id's of the deals to resume. If empty, all the deals in
-     * the proposal will be resumed.
-     *
-     * @param string[] $externalDealIds
-     */
-    public function setExternalDealIds($externalDealIds)
+namespace Google\Service\AdExchangeBuyerII {
+    class ResumeProposalDealsRequest extends \Google\Collection
     {
+        protected $collection_key = 'externalDealIds';
+        /**
+         * The external_deal_id's of the deals to resume. If empty, all the deals in
+         * the proposal will be resumed.
+         *
+         * @var string[]
+         */
+        public $externalDealIds;
+        /**
+         * The external_deal_id's of the deals to resume. If empty, all the deals in
+         * the proposal will be resumed.
+         *
+         * @param string[] $externalDealIds
+         */
+        public function setExternalDealIds($externalDealIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getExternalDealIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\AdExchangeBuyerII\ResumeProposalDealsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExternalDealIds()
+    class Google_Service_AdExchangeBuyerII_ResumeProposalDealsRequest extends \Google\Service\AdExchangeBuyerII\ResumeProposalDealsRequest
     {
     }
 }

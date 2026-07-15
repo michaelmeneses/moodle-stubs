@@ -21,76 +21,86 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee\Resource;
-
-/**
- * The "targetservers" collection of methods.
- * Typical usage is:
- *  <code>
- *   $apigeeService = new Google\Service\Apigee(...);
- *   $targetservers = $apigeeService->organizations_environments_targetservers;
- *  </code>
- */
-class OrganizationsEnvironmentsTargetservers extends \Google\Service\Resource
-{
+namespace Google\Service\Apigee\Resource {
+    use Google\Service\Apigee\GoogleCloudApigeeV1TargetServer;
     /**
-     * Creates a TargetServer in the specified environment. (targetservers.create)
-     *
-     * @param string $parent Required. The parent environment name under which the
-     * TargetServer will be created. Must be of the form
-     * `organizations/{org}/environments/{env}`.
-     * @param GoogleCloudApigeeV1TargetServer $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string name Optional. The ID to give the TargetServer. This will
-     * overwrite the value in TargetServer.
-     * @return GoogleCloudApigeeV1TargetServer
-     * @throws \Google\Service\Exception
+     * The "targetservers" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $apigeeService = new Google\Service\Apigee(...);
+     *   $targetservers = $apigeeService->organizations_environments_targetservers;
+     *  </code>
      */
-    public function create($parent, GoogleCloudApigeeV1TargetServer $postBody, $optParams = [])
+    class OrganizationsEnvironmentsTargetservers extends \Google\Service\Resource
     {
+        /**
+         * Creates a TargetServer in the specified environment. (targetservers.create)
+         *
+         * @param string $parent Required. The parent environment name under which the
+         * TargetServer will be created. Must be of the form
+         * `organizations/{org}/environments/{env}`.
+         * @param GoogleCloudApigeeV1TargetServer $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string name Optional. The ID to give the TargetServer. This will
+         * overwrite the value in TargetServer.
+         * @return GoogleCloudApigeeV1TargetServer
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, GoogleCloudApigeeV1TargetServer $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a TargetServer from an environment. Returns the deleted TargetServer
+         * resource. (targetservers.delete)
+         *
+         * @param string $name Required. The name of the TargetServer to delete. Must be
+         * of the form
+         * `organizations/{org}/environments/{env}/targetservers/{target_server_id}`.
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudApigeeV1TargetServer
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets a TargetServer resource. (targetservers.get)
+         *
+         * @param string $name Required. The name of the TargetServer to get. Must be of
+         * the form
+         * `organizations/{org}/environments/{env}/targetservers/{target_server_id}`.
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudApigeeV1TargetServer
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Updates an existing TargetServer. Note that this operation has PUT semantics;
+         * it will replace the entirety of the existing TargetServer with the resource
+         * in the request body. (targetservers.update)
+         *
+         * @param string $name Required. The name of the TargetServer to replace. Must
+         * be of the form
+         * `organizations/{org}/environments/{env}/targetservers/{target_server_id}`.
+         * @param GoogleCloudApigeeV1TargetServer $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudApigeeV1TargetServer
+         * @throws \Google\Service\Exception
+         */
+        public function update($name, GoogleCloudApigeeV1TargetServer $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a TargetServer from an environment. Returns the deleted TargetServer
-     * resource. (targetservers.delete)
-     *
-     * @param string $name Required. The name of the TargetServer to delete. Must be
-     * of the form
-     * `organizations/{org}/environments/{env}/targetservers/{target_server_id}`.
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudApigeeV1TargetServer
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Apigee\Resource\OrganizationsEnvironmentsTargetservers registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets a TargetServer resource. (targetservers.get)
-     *
-     * @param string $name Required. The name of the TargetServer to get. Must be of
-     * the form
-     * `organizations/{org}/environments/{env}/targetservers/{target_server_id}`.
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudApigeeV1TargetServer
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Updates an existing TargetServer. Note that this operation has PUT semantics;
-     * it will replace the entirety of the existing TargetServer with the resource
-     * in the request body. (targetservers.update)
-     *
-     * @param string $name Required. The name of the TargetServer to replace. Must
-     * be of the form
-     * `organizations/{org}/environments/{env}/targetservers/{target_server_id}`.
-     * @param GoogleCloudApigeeV1TargetServer $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudApigeeV1TargetServer
-     * @throws \Google\Service\Exception
-     */
-    public function update($name, GoogleCloudApigeeV1TargetServer $postBody, $optParams = [])
+    class Google_Service_Apigee_Resource_OrganizationsEnvironmentsTargetservers extends \Google\Service\Apigee\Resource\OrganizationsEnvironmentsTargetservers
     {
     }
 }

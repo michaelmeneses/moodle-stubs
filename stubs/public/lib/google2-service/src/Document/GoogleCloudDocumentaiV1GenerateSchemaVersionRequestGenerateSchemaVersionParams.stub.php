@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1GenerateSchemaVersionRequestGenerateSchemaVersionParams extends \Google\Model
-{
-    protected $historyType = GoogleCloudDocumentaiV1SchemaGenerationHistory::class;
-    protected $historyDataType = '';
-    /**
-     * Optional. The prompt used for the schema generation.
-     *
-     * @var string
-     */
-    public $prompt;
-    /**
-     * Optional. Previous prompt-answers in a chronological order.
-     *
-     * @param GoogleCloudDocumentaiV1SchemaGenerationHistory $history
-     */
-    public function setHistory(GoogleCloudDocumentaiV1SchemaGenerationHistory $history)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1GenerateSchemaVersionRequestGenerateSchemaVersionParams extends \Google\Model
     {
+        protected $historyType = GoogleCloudDocumentaiV1SchemaGenerationHistory::class;
+        protected $historyDataType = '';
+        /**
+         * Optional. The prompt used for the schema generation.
+         *
+         * @var string
+         */
+        public $prompt;
+        /**
+         * Optional. Previous prompt-answers in a chronological order.
+         *
+         * @param GoogleCloudDocumentaiV1SchemaGenerationHistory $history
+         */
+        public function setHistory(GoogleCloudDocumentaiV1SchemaGenerationHistory $history)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1SchemaGenerationHistory
+         */
+        public function getHistory()
+        {
+        }
+        /**
+         * Optional. The prompt used for the schema generation.
+         *
+         * @param string $prompt
+         */
+        public function setPrompt($prompt)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrompt()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiV1SchemaGenerationHistory
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1GenerateSchemaVersionRequestGenerateSchemaVersionParams registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHistory()
-    {
-    }
-    /**
-     * Optional. The prompt used for the schema generation.
-     *
-     * @param string $prompt
-     */
-    public function setPrompt($prompt)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrompt()
+    class Google_Service_Document_GoogleCloudDocumentaiV1GenerateSchemaVersionRequestGenerateSchemaVersionParams extends \Google\Service\Document\GoogleCloudDocumentaiV1GenerateSchemaVersionRequestGenerateSchemaVersionParams
     {
     }
 }

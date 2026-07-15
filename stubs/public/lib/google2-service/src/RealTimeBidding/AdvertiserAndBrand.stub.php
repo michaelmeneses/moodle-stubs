@@ -21,102 +21,111 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RealTimeBidding;
-
-class AdvertiserAndBrand extends \Google\Model
-{
-    /**
-     * See https://storage.googleapis.com/adx-rtb-dictionaries/advertisers.txt for
-     * the list of possible values. Can be used to filter the response of the
-     * creatives.list method.
-     *
-     * @var string
-     */
-    public $advertiserId;
-    /**
-     * Advertiser name. Can be used to filter the response of the creatives.list
-     * method.
-     *
-     * @var string
-     */
-    public $advertiserName;
-    /**
-     * Detected brand ID or zero if no brand has been detected. See
-     * https://storage.googleapis.com/adx-rtb-dictionaries/brands.txt for the list
-     * of possible values. Can be used to filter the response of the
-     * creatives.list method.
-     *
-     * @var string
-     */
-    public $brandId;
-    /**
-     * Brand name. Can be used to filter the response of the creatives.list
-     * method.
-     *
-     * @var string
-     */
-    public $brandName;
-    /**
-     * See https://storage.googleapis.com/adx-rtb-dictionaries/advertisers.txt for
-     * the list of possible values. Can be used to filter the response of the
-     * creatives.list method.
-     *
-     * @param string $advertiserId
-     */
-    public function setAdvertiserId($advertiserId)
+namespace Google\Service\RealTimeBidding {
+    class AdvertiserAndBrand extends \Google\Model
     {
+        /**
+         * See https://storage.googleapis.com/adx-rtb-dictionaries/advertisers.txt for
+         * the list of possible values. Can be used to filter the response of the
+         * creatives.list method.
+         *
+         * @var string
+         */
+        public $advertiserId;
+        /**
+         * Advertiser name. Can be used to filter the response of the creatives.list
+         * method.
+         *
+         * @var string
+         */
+        public $advertiserName;
+        /**
+         * Detected brand ID or zero if no brand has been detected. See
+         * https://storage.googleapis.com/adx-rtb-dictionaries/brands.txt for the list
+         * of possible values. Can be used to filter the response of the
+         * creatives.list method.
+         *
+         * @var string
+         */
+        public $brandId;
+        /**
+         * Brand name. Can be used to filter the response of the creatives.list
+         * method.
+         *
+         * @var string
+         */
+        public $brandName;
+        /**
+         * See https://storage.googleapis.com/adx-rtb-dictionaries/advertisers.txt for
+         * the list of possible values. Can be used to filter the response of the
+         * creatives.list method.
+         *
+         * @param string $advertiserId
+         */
+        public function setAdvertiserId($advertiserId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdvertiserId()
+        {
+        }
+        /**
+         * Advertiser name. Can be used to filter the response of the creatives.list
+         * method.
+         *
+         * @param string $advertiserName
+         */
+        public function setAdvertiserName($advertiserName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdvertiserName()
+        {
+        }
+        /**
+         * Detected brand ID or zero if no brand has been detected. See
+         * https://storage.googleapis.com/adx-rtb-dictionaries/brands.txt for the list
+         * of possible values. Can be used to filter the response of the
+         * creatives.list method.
+         *
+         * @param string $brandId
+         */
+        public function setBrandId($brandId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBrandId()
+        {
+        }
+        /**
+         * Brand name. Can be used to filter the response of the creatives.list
+         * method.
+         *
+         * @param string $brandName
+         */
+        public function setBrandName($brandName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBrandName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\RealTimeBidding\AdvertiserAndBrand registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdvertiserId()
-    {
-    }
-    /**
-     * Advertiser name. Can be used to filter the response of the creatives.list
-     * method.
-     *
-     * @param string $advertiserName
-     */
-    public function setAdvertiserName($advertiserName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAdvertiserName()
-    {
-    }
-    /**
-     * Detected brand ID or zero if no brand has been detected. See
-     * https://storage.googleapis.com/adx-rtb-dictionaries/brands.txt for the list
-     * of possible values. Can be used to filter the response of the
-     * creatives.list method.
-     *
-     * @param string $brandId
-     */
-    public function setBrandId($brandId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBrandId()
-    {
-    }
-    /**
-     * Brand name. Can be used to filter the response of the creatives.list
-     * method.
-     *
-     * @param string $brandName
-     */
-    public function setBrandName($brandName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBrandName()
+    class Google_Service_RealTimeBidding_AdvertiserAndBrand extends \Google\Service\RealTimeBidding\AdvertiserAndBrand
     {
     }
 }

@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudFilestore;
-
-class PromoteReplicaRequest extends \Google\Model
-{
-    /**
-     * Optional. The resource name of the peer instance to promote, in the format
-     * `projects/{project_id}/locations/{location_id}/instances/{instance_id}`.
-     * The peer instance is required if the operation is called on an active
-     * instance.
-     *
-     * @var string
-     */
-    public $peerInstance;
-    /**
-     * Optional. The resource name of the peer instance to promote, in the format
-     * `projects/{project_id}/locations/{location_id}/instances/{instance_id}`.
-     * The peer instance is required if the operation is called on an active
-     * instance.
-     *
-     * @param string $peerInstance
-     */
-    public function setPeerInstance($peerInstance)
+namespace Google\Service\CloudFilestore {
+    class PromoteReplicaRequest extends \Google\Model
     {
+        /**
+         * Optional. The resource name of the peer instance to promote, in the format
+         * `projects/{project_id}/locations/{location_id}/instances/{instance_id}`.
+         * The peer instance is required if the operation is called on an active
+         * instance.
+         *
+         * @var string
+         */
+        public $peerInstance;
+        /**
+         * Optional. The resource name of the peer instance to promote, in the format
+         * `projects/{project_id}/locations/{location_id}/instances/{instance_id}`.
+         * The peer instance is required if the operation is called on an active
+         * instance.
+         *
+         * @param string $peerInstance
+         */
+        public function setPeerInstance($peerInstance)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPeerInstance()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudFilestore\PromoteReplicaRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPeerInstance()
+    class Google_Service_CloudFilestore_PromoteReplicaRequest extends \Google\Service\CloudFilestore\PromoteReplicaRequest
     {
     }
 }

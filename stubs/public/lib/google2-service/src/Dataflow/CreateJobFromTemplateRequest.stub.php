@@ -21,110 +21,119 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class CreateJobFromTemplateRequest extends \Google\Model
-{
-    protected $environmentType = RuntimeEnvironment::class;
-    protected $environmentDataType = '';
-    /**
-     * Required. A Cloud Storage path to the template from which to create the
-     * job. Must be a valid Cloud Storage URL, beginning with `gs://`.
-     *
-     * @var string
-     */
-    public $gcsPath;
-    /**
-     * Required. The job name to use for the created job.
-     *
-     * @var string
-     */
-    public $jobName;
-    /**
-     * The [regional endpoint]
-     * (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) to
-     * which to direct the request.
-     *
-     * @var string
-     */
-    public $location;
-    /**
-     * The runtime parameters to pass to the job.
-     *
-     * @var string[]
-     */
-    public $parameters;
-    /**
-     * The runtime environment for the job.
-     *
-     * @param RuntimeEnvironment $environment
-     */
-    public function setEnvironment(RuntimeEnvironment $environment)
+namespace Google\Service\Dataflow {
+    class CreateJobFromTemplateRequest extends \Google\Model
     {
+        protected $environmentType = RuntimeEnvironment::class;
+        protected $environmentDataType = '';
+        /**
+         * Required. A Cloud Storage path to the template from which to create the
+         * job. Must be a valid Cloud Storage URL, beginning with `gs://`.
+         *
+         * @var string
+         */
+        public $gcsPath;
+        /**
+         * Required. The job name to use for the created job.
+         *
+         * @var string
+         */
+        public $jobName;
+        /**
+         * The [regional endpoint]
+         * (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) to
+         * which to direct the request.
+         *
+         * @var string
+         */
+        public $location;
+        /**
+         * The runtime parameters to pass to the job.
+         *
+         * @var string[]
+         */
+        public $parameters;
+        /**
+         * The runtime environment for the job.
+         *
+         * @param RuntimeEnvironment $environment
+         */
+        public function setEnvironment(RuntimeEnvironment $environment)
+        {
+        }
+        /**
+         * @return RuntimeEnvironment
+         */
+        public function getEnvironment()
+        {
+        }
+        /**
+         * Required. A Cloud Storage path to the template from which to create the
+         * job. Must be a valid Cloud Storage URL, beginning with `gs://`.
+         *
+         * @param string $gcsPath
+         */
+        public function setGcsPath($gcsPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGcsPath()
+        {
+        }
+        /**
+         * Required. The job name to use for the created job.
+         *
+         * @param string $jobName
+         */
+        public function setJobName($jobName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getJobName()
+        {
+        }
+        /**
+         * The [regional endpoint]
+         * (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) to
+         * which to direct the request.
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * The runtime parameters to pass to the job.
+         *
+         * @param string[] $parameters
+         */
+        public function setParameters($parameters)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getParameters()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RuntimeEnvironment
+     * Runtime class alias of \Google\Service\Dataflow\CreateJobFromTemplateRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnvironment()
-    {
-    }
-    /**
-     * Required. A Cloud Storage path to the template from which to create the
-     * job. Must be a valid Cloud Storage URL, beginning with `gs://`.
-     *
-     * @param string $gcsPath
-     */
-    public function setGcsPath($gcsPath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGcsPath()
-    {
-    }
-    /**
-     * Required. The job name to use for the created job.
-     *
-     * @param string $jobName
-     */
-    public function setJobName($jobName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getJobName()
-    {
-    }
-    /**
-     * The [regional endpoint]
-     * (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) to
-     * which to direct the request.
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocation()
-    {
-    }
-    /**
-     * The runtime parameters to pass to the job.
-     *
-     * @param string[] $parameters
-     */
-    public function setParameters($parameters)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getParameters()
+    class Google_Service_Dataflow_CreateJobFromTemplateRequest extends \Google\Service\Dataflow\CreateJobFromTemplateRequest
     {
     }
 }

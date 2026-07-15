@@ -21,154 +21,163 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class SetNodePoolManagementRequest extends \Google\Model
-{
-    /**
-     * Deprecated. The name of the cluster to update. This field has been
-     * deprecated and replaced by the name field.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $clusterId;
-    protected $managementType = NodeManagement::class;
-    protected $managementDataType = '';
-    /**
-     * The name (project, location, cluster, node pool id) of the node pool to set
-     * management properties. Specified in the format
-     * `projects/locations/clusters/nodePools`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Deprecated. The name of the node pool to update. This field has been
-     * deprecated and replaced by the name field.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $nodePoolId;
-    /**
-     * Deprecated. The Google Developers Console [project ID or project
-     * number](https://cloud.google.com/resource-manager/docs/creating-managing-
-     * projects). This field has been deprecated and replaced by the name field.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $projectId;
-    /**
-     * Deprecated. The name of the Google Compute Engine
-     * [zone](https://cloud.google.com/compute/docs/zones#available) in which the
-     * cluster resides. This field has been deprecated and replaced by the name
-     * field.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $zone;
-    /**
-     * Deprecated. The name of the cluster to update. This field has been
-     * deprecated and replaced by the name field.
-     *
-     * @deprecated
-     * @param string $clusterId
-     */
-    public function setClusterId($clusterId)
+namespace Google\Service\Container {
+    class SetNodePoolManagementRequest extends \Google\Model
     {
+        /**
+         * Deprecated. The name of the cluster to update. This field has been
+         * deprecated and replaced by the name field.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $clusterId;
+        protected $managementType = NodeManagement::class;
+        protected $managementDataType = '';
+        /**
+         * The name (project, location, cluster, node pool id) of the node pool to set
+         * management properties. Specified in the format
+         * `projects/locations/clusters/nodePools`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Deprecated. The name of the node pool to update. This field has been
+         * deprecated and replaced by the name field.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $nodePoolId;
+        /**
+         * Deprecated. The Google Developers Console [project ID or project
+         * number](https://cloud.google.com/resource-manager/docs/creating-managing-
+         * projects). This field has been deprecated and replaced by the name field.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $projectId;
+        /**
+         * Deprecated. The name of the Google Compute Engine
+         * [zone](https://cloud.google.com/compute/docs/zones#available) in which the
+         * cluster resides. This field has been deprecated and replaced by the name
+         * field.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $zone;
+        /**
+         * Deprecated. The name of the cluster to update. This field has been
+         * deprecated and replaced by the name field.
+         *
+         * @deprecated
+         * @param string $clusterId
+         */
+        public function setClusterId($clusterId)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getClusterId()
+        {
+        }
+        /**
+         * Required. NodeManagement configuration for the node pool.
+         *
+         * @param NodeManagement $management
+         */
+        public function setManagement(NodeManagement $management)
+        {
+        }
+        /**
+         * @return NodeManagement
+         */
+        public function getManagement()
+        {
+        }
+        /**
+         * The name (project, location, cluster, node pool id) of the node pool to set
+         * management properties. Specified in the format
+         * `projects/locations/clusters/nodePools`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Deprecated. The name of the node pool to update. This field has been
+         * deprecated and replaced by the name field.
+         *
+         * @deprecated
+         * @param string $nodePoolId
+         */
+        public function setNodePoolId($nodePoolId)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getNodePoolId()
+        {
+        }
+        /**
+         * Deprecated. The Google Developers Console [project ID or project
+         * number](https://cloud.google.com/resource-manager/docs/creating-managing-
+         * projects). This field has been deprecated and replaced by the name field.
+         *
+         * @deprecated
+         * @param string $projectId
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
+        /**
+         * Deprecated. The name of the Google Compute Engine
+         * [zone](https://cloud.google.com/compute/docs/zones#available) in which the
+         * cluster resides. This field has been deprecated and replaced by the name
+         * field.
+         *
+         * @deprecated
+         * @param string $zone
+         */
+        public function setZone($zone)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getZone()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return string
+     * Runtime class alias of \Google\Service\Container\SetNodePoolManagementRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClusterId()
-    {
-    }
-    /**
-     * Required. NodeManagement configuration for the node pool.
-     *
-     * @param NodeManagement $management
-     */
-    public function setManagement(NodeManagement $management)
-    {
-    }
-    /**
-     * @return NodeManagement
-     */
-    public function getManagement()
-    {
-    }
-    /**
-     * The name (project, location, cluster, node pool id) of the node pool to set
-     * management properties. Specified in the format
-     * `projects/locations/clusters/nodePools`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Deprecated. The name of the node pool to update. This field has been
-     * deprecated and replaced by the name field.
-     *
-     * @deprecated
-     * @param string $nodePoolId
-     */
-    public function setNodePoolId($nodePoolId)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getNodePoolId()
-    {
-    }
-    /**
-     * Deprecated. The Google Developers Console [project ID or project
-     * number](https://cloud.google.com/resource-manager/docs/creating-managing-
-     * projects). This field has been deprecated and replaced by the name field.
-     *
-     * @deprecated
-     * @param string $projectId
-     */
-    public function setProjectId($projectId)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getProjectId()
-    {
-    }
-    /**
-     * Deprecated. The name of the Google Compute Engine
-     * [zone](https://cloud.google.com/compute/docs/zones#available) in which the
-     * cluster resides. This field has been deprecated and replaced by the name
-     * field.
-     *
-     * @deprecated
-     * @param string $zone
-     */
-    public function setZone($zone)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getZone()
+    class Google_Service_Container_SetNodePoolManagementRequest extends \Google\Service\Container\SetNodePoolManagementRequest
     {
     }
 }

@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class Build extends \Google\Model
-{
-    public $builderVersion;
-    protected $signatureType = BuildSignature::class;
-    protected $signatureDataType = '';
-    public function setBuilderVersion($builderVersion)
+namespace Google\Service\ContainerAnalysis {
+    class Build extends \Google\Model
     {
+        public $builderVersion;
+        protected $signatureType = BuildSignature::class;
+        protected $signatureDataType = '';
+        public function setBuilderVersion($builderVersion)
+        {
+        }
+        public function getBuilderVersion()
+        {
+        }
+        /**
+         * @param BuildSignature
+         */
+        public function setSignature(BuildSignature $signature)
+        {
+        }
+        /**
+         * @return BuildSignature
+         */
+        public function getSignature()
+        {
+        }
     }
-    public function getBuilderVersion()
-    {
-    }
+}
+namespace {
     /**
-     * @param BuildSignature
+     * Runtime class alias of \Google\Service\ContainerAnalysis\Build registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setSignature(BuildSignature $signature)
-    {
-    }
-    /**
-     * @return BuildSignature
-     */
-    public function getSignature()
+    class Google_Service_ContainerAnalysis_Build extends \Google\Service\ContainerAnalysis\Build
     {
     }
 }

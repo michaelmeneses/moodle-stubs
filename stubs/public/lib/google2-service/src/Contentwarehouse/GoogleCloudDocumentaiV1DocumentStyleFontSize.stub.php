@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudDocumentaiV1DocumentStyleFontSize extends \Google\Model
-{
-    /**
-     * Font size for the text.
-     *
-     * @var float
-     */
-    public $size;
-    /**
-     * Unit for the font size. Follows CSS naming (such as `in`, `px`, and `pt`).
-     *
-     * @var string
-     */
-    public $unit;
-    /**
-     * Font size for the text.
-     *
-     * @param float $size
-     */
-    public function setSize($size)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudDocumentaiV1DocumentStyleFontSize extends \Google\Model
     {
+        /**
+         * Font size for the text.
+         *
+         * @var float
+         */
+        public $size;
+        /**
+         * Unit for the font size. Follows CSS naming (such as `in`, `px`, and `pt`).
+         *
+         * @var string
+         */
+        public $unit;
+        /**
+         * Font size for the text.
+         *
+         * @param float $size
+         */
+        public function setSize($size)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getSize()
+        {
+        }
+        /**
+         * Unit for the font size. Follows CSS naming (such as `in`, `px`, and `pt`).
+         *
+         * @param string $unit
+         */
+        public function setUnit($unit)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUnit()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudDocumentaiV1DocumentStyleFontSize registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSize()
-    {
-    }
-    /**
-     * Unit for the font size. Follows CSS naming (such as `in`, `px`, and `pt`).
-     *
-     * @param string $unit
-     */
-    public function setUnit($unit)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUnit()
+    class Google_Service_Contentwarehouse_GoogleCloudDocumentaiV1DocumentStyleFontSize extends \Google\Service\Contentwarehouse\GoogleCloudDocumentaiV1DocumentStyleFontSize
     {
     }
 }

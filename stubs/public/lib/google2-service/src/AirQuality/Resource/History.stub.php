@@ -21,28 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AirQuality\Resource;
-
-/**
- * The "history" collection of methods.
- * Typical usage is:
- *  <code>
- *   $airqualityService = new Google\Service\AirQuality(...);
- *   $history = $airqualityService->history;
- *  </code>
- */
-class History extends \Google\Service\Resource
-{
+namespace Google\Service\AirQuality\Resource {
+    use Google\Service\AirQuality\LookupHistoryRequest;
+    use Google\Service\AirQuality\LookupHistoryResponse;
     /**
-     * Returns air quality history for a specific location for a given time range.
-     * (history.lookup)
-     *
-     * @param LookupHistoryRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return LookupHistoryResponse
-     * @throws \Google\Service\Exception
+     * The "history" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $airqualityService = new Google\Service\AirQuality(...);
+     *   $history = $airqualityService->history;
+     *  </code>
      */
-    public function lookup(LookupHistoryRequest $postBody, $optParams = [])
+    class History extends \Google\Service\Resource
+    {
+        /**
+         * Returns air quality history for a specific location for a given time range.
+         * (history.lookup)
+         *
+         * @param LookupHistoryRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return LookupHistoryResponse
+         * @throws \Google\Service\Exception
+         */
+        public function lookup(LookupHistoryRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AirQuality\Resource\History registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AirQuality_Resource_History extends \Google\Service\AirQuality\Resource\History
     {
     }
 }

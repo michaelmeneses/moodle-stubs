@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firebaseappcheck;
-
-class GoogleFirebaseAppcheckV1ExchangeRecaptchaEnterpriseTokenRequest extends \Google\Model
-{
-    /**
-     * Specifies whether this attestation is for use in a *limited use* (`true`)
-     * or *session based* (`false`) context. To enable this attestation to be used
-     * with the *replay protection* feature, set this to `true`. The default value
-     * is `false`.
-     *
-     * @var bool
-     */
-    public $limitedUse;
-    /**
-     * Required. The reCAPTCHA token as returned by the [reCAPTCHA Enterprise
-     * JavaScript API](https://cloud.google.com/recaptcha-
-     * enterprise/docs/instrument-web-pages).
-     *
-     * @var string
-     */
-    public $recaptchaEnterpriseToken;
-    /**
-     * Specifies whether this attestation is for use in a *limited use* (`true`)
-     * or *session based* (`false`) context. To enable this attestation to be used
-     * with the *replay protection* feature, set this to `true`. The default value
-     * is `false`.
-     *
-     * @param bool $limitedUse
-     */
-    public function setLimitedUse($limitedUse)
+namespace Google\Service\Firebaseappcheck {
+    class GoogleFirebaseAppcheckV1ExchangeRecaptchaEnterpriseTokenRequest extends \Google\Model
     {
+        /**
+         * Specifies whether this attestation is for use in a *limited use* (`true`)
+         * or *session based* (`false`) context. To enable this attestation to be used
+         * with the *replay protection* feature, set this to `true`. The default value
+         * is `false`.
+         *
+         * @var bool
+         */
+        public $limitedUse;
+        /**
+         * Required. The reCAPTCHA token as returned by the [reCAPTCHA Enterprise
+         * JavaScript API](https://cloud.google.com/recaptcha-
+         * enterprise/docs/instrument-web-pages).
+         *
+         * @var string
+         */
+        public $recaptchaEnterpriseToken;
+        /**
+         * Specifies whether this attestation is for use in a *limited use* (`true`)
+         * or *session based* (`false`) context. To enable this attestation to be used
+         * with the *replay protection* feature, set this to `true`. The default value
+         * is `false`.
+         *
+         * @param bool $limitedUse
+         */
+        public function setLimitedUse($limitedUse)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getLimitedUse()
+        {
+        }
+        /**
+         * Required. The reCAPTCHA token as returned by the [reCAPTCHA Enterprise
+         * JavaScript API](https://cloud.google.com/recaptcha-
+         * enterprise/docs/instrument-web-pages).
+         *
+         * @param string $recaptchaEnterpriseToken
+         */
+        public function setRecaptchaEnterpriseToken($recaptchaEnterpriseToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRecaptchaEnterpriseToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1ExchangeRecaptchaEnterpriseTokenRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLimitedUse()
-    {
-    }
-    /**
-     * Required. The reCAPTCHA token as returned by the [reCAPTCHA Enterprise
-     * JavaScript API](https://cloud.google.com/recaptcha-
-     * enterprise/docs/instrument-web-pages).
-     *
-     * @param string $recaptchaEnterpriseToken
-     */
-    public function setRecaptchaEnterpriseToken($recaptchaEnterpriseToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRecaptchaEnterpriseToken()
+    class Google_Service_Firebaseappcheck_GoogleFirebaseAppcheckV1ExchangeRecaptchaEnterpriseTokenRequest extends \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1ExchangeRecaptchaEnterpriseTokenRequest
     {
     }
 }

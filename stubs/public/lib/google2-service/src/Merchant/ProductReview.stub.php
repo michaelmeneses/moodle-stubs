@@ -21,122 +21,131 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Merchant;
-
-class ProductReview extends \Google\Collection
-{
-    protected $collection_key = 'customAttributes';
-    protected $customAttributesType = CustomAttribute::class;
-    protected $customAttributesDataType = 'array';
-    /**
-     * Output only. The primary data source of the product review.
-     *
-     * @var string
-     */
-    public $dataSource;
-    /**
-     * Identifier. The name of the product review. Format:
-     * `"{productreview.name=accounts/{account}/productReviews/{productReview}}"`
-     *
-     * @var string
-     */
-    public $name;
-    protected $productReviewAttributesType = ProductReviewAttributes::class;
-    protected $productReviewAttributesDataType = '';
-    /**
-     * Required. The permanent, unique identifier for the product review in the
-     * publisher’s system.
-     *
-     * @var string
-     */
-    public $productReviewId;
-    protected $productReviewStatusType = ProductReviewStatus::class;
-    protected $productReviewStatusDataType = '';
-    /**
-     * Optional. A list of custom (merchant-provided) attributes.
-     *
-     * @param CustomAttribute[] $customAttributes
-     */
-    public function setCustomAttributes($customAttributes)
+namespace Google\Service\Merchant {
+    class ProductReview extends \Google\Collection
     {
+        protected $collection_key = 'customAttributes';
+        protected $customAttributesType = CustomAttribute::class;
+        protected $customAttributesDataType = 'array';
+        /**
+         * Output only. The primary data source of the product review.
+         *
+         * @var string
+         */
+        public $dataSource;
+        /**
+         * Identifier. The name of the product review. Format:
+         * `"{productreview.name=accounts/{account}/productReviews/{productReview}}"`
+         *
+         * @var string
+         */
+        public $name;
+        protected $productReviewAttributesType = ProductReviewAttributes::class;
+        protected $productReviewAttributesDataType = '';
+        /**
+         * Required. The permanent, unique identifier for the product review in the
+         * publisher’s system.
+         *
+         * @var string
+         */
+        public $productReviewId;
+        protected $productReviewStatusType = ProductReviewStatus::class;
+        protected $productReviewStatusDataType = '';
+        /**
+         * Optional. A list of custom (merchant-provided) attributes.
+         *
+         * @param CustomAttribute[] $customAttributes
+         */
+        public function setCustomAttributes($customAttributes)
+        {
+        }
+        /**
+         * @return CustomAttribute[]
+         */
+        public function getCustomAttributes()
+        {
+        }
+        /**
+         * Output only. The primary data source of the product review.
+         *
+         * @param string $dataSource
+         */
+        public function setDataSource($dataSource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataSource()
+        {
+        }
+        /**
+         * Identifier. The name of the product review. Format:
+         * `"{productreview.name=accounts/{account}/productReviews/{productReview}}"`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. A list of product review attributes.
+         *
+         * @param ProductReviewAttributes $productReviewAttributes
+         */
+        public function setProductReviewAttributes(ProductReviewAttributes $productReviewAttributes)
+        {
+        }
+        /**
+         * @return ProductReviewAttributes
+         */
+        public function getProductReviewAttributes()
+        {
+        }
+        /**
+         * Required. The permanent, unique identifier for the product review in the
+         * publisher’s system.
+         *
+         * @param string $productReviewId
+         */
+        public function setProductReviewId($productReviewId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProductReviewId()
+        {
+        }
+        /**
+         * Output only. The status of a product review, data validation issues, that
+         * is, information about a product review computed asynchronously.
+         *
+         * @param ProductReviewStatus $productReviewStatus
+         */
+        public function setProductReviewStatus(ProductReviewStatus $productReviewStatus)
+        {
+        }
+        /**
+         * @return ProductReviewStatus
+         */
+        public function getProductReviewStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CustomAttribute[]
+     * Runtime class alias of \Google\Service\Merchant\ProductReview registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomAttributes()
-    {
-    }
-    /**
-     * Output only. The primary data source of the product review.
-     *
-     * @param string $dataSource
-     */
-    public function setDataSource($dataSource)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDataSource()
-    {
-    }
-    /**
-     * Identifier. The name of the product review. Format:
-     * `"{productreview.name=accounts/{account}/productReviews/{productReview}}"`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. A list of product review attributes.
-     *
-     * @param ProductReviewAttributes $productReviewAttributes
-     */
-    public function setProductReviewAttributes(ProductReviewAttributes $productReviewAttributes)
-    {
-    }
-    /**
-     * @return ProductReviewAttributes
-     */
-    public function getProductReviewAttributes()
-    {
-    }
-    /**
-     * Required. The permanent, unique identifier for the product review in the
-     * publisher’s system.
-     *
-     * @param string $productReviewId
-     */
-    public function setProductReviewId($productReviewId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProductReviewId()
-    {
-    }
-    /**
-     * Output only. The status of a product review, data validation issues, that
-     * is, information about a product review computed asynchronously.
-     *
-     * @param ProductReviewStatus $productReviewStatus
-     */
-    public function setProductReviewStatus(ProductReviewStatus $productReviewStatus)
-    {
-    }
-    /**
-     * @return ProductReviewStatus
-     */
-    public function getProductReviewStatus()
+    class Google_Service_Merchant_ProductReview extends \Google\Service\Merchant\ProductReview
     {
     }
 }

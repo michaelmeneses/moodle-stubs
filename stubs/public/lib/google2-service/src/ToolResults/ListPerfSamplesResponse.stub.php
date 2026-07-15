@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class ListPerfSamplesResponse extends \Google\Collection
-{
-    protected $collection_key = 'perfSamples';
-    /**
-     * Optional, returned if result size exceeds the page size specified in the
-     * request (or the default page size, 500, if unspecified). It indicates the
-     * last sample timestamp to be used as page_token in subsequent request
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $perfSamplesType = PerfSample::class;
-    protected $perfSamplesDataType = 'array';
-    /**
-     * Optional, returned if result size exceeds the page size specified in the
-     * request (or the default page size, 500, if unspecified). It indicates the
-     * last sample timestamp to be used as page_token in subsequent request
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\ToolResults {
+    class ListPerfSamplesResponse extends \Google\Collection
     {
+        protected $collection_key = 'perfSamples';
+        /**
+         * Optional, returned if result size exceeds the page size specified in the
+         * request (or the default page size, 500, if unspecified). It indicates the
+         * last sample timestamp to be used as page_token in subsequent request
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $perfSamplesType = PerfSample::class;
+        protected $perfSamplesDataType = 'array';
+        /**
+         * Optional, returned if result size exceeds the page size specified in the
+         * request (or the default page size, 500, if unspecified). It indicates the
+         * last sample timestamp to be used as page_token in subsequent request
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param PerfSample[] $perfSamples
+         */
+        public function setPerfSamples($perfSamples)
+        {
+        }
+        /**
+         * @return PerfSample[]
+         */
+        public function getPerfSamples()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ToolResults\ListPerfSamplesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param PerfSample[] $perfSamples
-     */
-    public function setPerfSamples($perfSamples)
-    {
-    }
-    /**
-     * @return PerfSample[]
-     */
-    public function getPerfSamples()
+    class Google_Service_ToolResults_ListPerfSamplesResponse extends \Google\Service\ToolResults\ListPerfSamplesResponse
     {
     }
 }

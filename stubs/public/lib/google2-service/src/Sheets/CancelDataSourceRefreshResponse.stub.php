@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class CancelDataSourceRefreshResponse extends \Google\Collection
-{
-    protected $collection_key = 'statuses';
-    protected $statusesType = CancelDataSourceRefreshStatus::class;
-    protected $statusesDataType = 'array';
-    /**
-     * The cancellation statuses of refreshes of all data source objects specified
-     * in the request. If is_all is specified, the field contains only those in
-     * failure status. Refreshing and canceling refresh the same data source
-     * object is also not allowed in the same `batchUpdate`.
-     *
-     * @param CancelDataSourceRefreshStatus[] $statuses
-     */
-    public function setStatuses($statuses)
+namespace Google\Service\Sheets {
+    class CancelDataSourceRefreshResponse extends \Google\Collection
     {
+        protected $collection_key = 'statuses';
+        protected $statusesType = CancelDataSourceRefreshStatus::class;
+        protected $statusesDataType = 'array';
+        /**
+         * The cancellation statuses of refreshes of all data source objects specified
+         * in the request. If is_all is specified, the field contains only those in
+         * failure status. Refreshing and canceling refresh the same data source
+         * object is also not allowed in the same `batchUpdate`.
+         *
+         * @param CancelDataSourceRefreshStatus[] $statuses
+         */
+        public function setStatuses($statuses)
+        {
+        }
+        /**
+         * @return CancelDataSourceRefreshStatus[]
+         */
+        public function getStatuses()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CancelDataSourceRefreshStatus[]
+     * Runtime class alias of \Google\Service\Sheets\CancelDataSourceRefreshResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStatuses()
+    class Google_Service_Sheets_CancelDataSourceRefreshResponse extends \Google\Service\Sheets\CancelDataSourceRefreshResponse
     {
     }
 }

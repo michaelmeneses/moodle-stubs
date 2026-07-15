@@ -21,45 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch\Resource;
-
-/**
- * The "settings" collection of methods.
- * Typical usage is:
- *  <code>
- *   $cloudsearchService = new Google\Service\CloudSearch(...);
- *   $settings = $cloudsearchService->settings;
- *  </code>
- */
-class Settings extends \Google\Service\Resource
-{
+namespace Google\Service\CloudSearch\Resource {
+    use Google\Service\CloudSearch\CustomerSettings;
+    use Google\Service\CloudSearch\Operation;
     /**
-     * Get customer settings. **Note:** This API requires an admin account to
-     * execute. (settings.getCustomer)
-     *
-     * @param array $optParams Optional parameters.
-     * @return CustomerSettings
-     * @throws \Google\Service\Exception
+     * The "settings" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $cloudsearchService = new Google\Service\CloudSearch(...);
+     *   $settings = $cloudsearchService->settings;
+     *  </code>
      */
-    public function getCustomer($optParams = [])
+    class Settings extends \Google\Service\Resource
     {
+        /**
+         * Get customer settings. **Note:** This API requires an admin account to
+         * execute. (settings.getCustomer)
+         *
+         * @param array $optParams Optional parameters.
+         * @return CustomerSettings
+         * @throws \Google\Service\Exception
+         */
+        public function getCustomer($optParams = [])
+        {
+        }
+        /**
+         * Update customer settings. **Note:** This API requires an admin account to
+         * execute. (settings.updateCustomer)
+         *
+         * @param CustomerSettings $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Update mask to control which fields get updated.
+         * If you specify a field in the update_mask but don't specify its value here,
+         * that field will be cleared. If the mask is not present or empty, all fields
+         * will be updated. Currently supported field paths: vpc_settings and
+         * audit_logging_settings
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function updateCustomer(CustomerSettings $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Update customer settings. **Note:** This API requires an admin account to
-     * execute. (settings.updateCustomer)
-     *
-     * @param CustomerSettings $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Update mask to control which fields get updated.
-     * If you specify a field in the update_mask but don't specify its value here,
-     * that field will be cleared. If the mask is not present or empty, all fields
-     * will be updated. Currently supported field paths: vpc_settings and
-     * audit_logging_settings
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\CloudSearch\Resource\Settings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function updateCustomer(CustomerSettings $postBody, $optParams = [])
+    class Google_Service_CloudSearch_Resource_Settings extends \Google\Service\CloudSearch\Resource\Settings
     {
     }
 }

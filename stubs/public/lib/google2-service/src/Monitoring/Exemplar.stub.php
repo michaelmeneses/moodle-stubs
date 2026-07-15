@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class Exemplar extends \Google\Collection
-{
-    protected $collection_key = 'attachments';
-    /**
-     * Contextual information about the example value. Examples are:Trace:
-     * type.googleapis.com/google.monitoring.v3.SpanContextLiteral string:
-     * type.googleapis.com/google.protobuf.StringValueLabels dropped during
-     * aggregation: type.googleapis.com/google.monitoring.v3.DroppedLabelsThere
-     * may be only a single attachment of any given message type in a single
-     * exemplar, and this is enforced by the system.
-     *
-     * @var array[]
-     */
-    public $attachments;
-    /**
-     * The observation (sampling) time of the above value.
-     *
-     * @var string
-     */
-    public $timestamp;
-    /**
-     * Value of the exemplar point. This value determines to which bucket the
-     * exemplar belongs.
-     *
-     * @var 
-     */
-    public $value;
-    /**
-     * Contextual information about the example value. Examples are:Trace:
-     * type.googleapis.com/google.monitoring.v3.SpanContextLiteral string:
-     * type.googleapis.com/google.protobuf.StringValueLabels dropped during
-     * aggregation: type.googleapis.com/google.monitoring.v3.DroppedLabelsThere
-     * may be only a single attachment of any given message type in a single
-     * exemplar, and this is enforced by the system.
-     *
-     * @param array[] $attachments
-     */
-    public function setAttachments($attachments)
+namespace Google\Service\Monitoring {
+    class Exemplar extends \Google\Collection
     {
+        protected $collection_key = 'attachments';
+        /**
+         * Contextual information about the example value. Examples are:Trace:
+         * type.googleapis.com/google.monitoring.v3.SpanContextLiteral string:
+         * type.googleapis.com/google.protobuf.StringValueLabels dropped during
+         * aggregation: type.googleapis.com/google.monitoring.v3.DroppedLabelsThere
+         * may be only a single attachment of any given message type in a single
+         * exemplar, and this is enforced by the system.
+         *
+         * @var array[]
+         */
+        public $attachments;
+        /**
+         * The observation (sampling) time of the above value.
+         *
+         * @var string
+         */
+        public $timestamp;
+        /**
+         * Value of the exemplar point. This value determines to which bucket the
+         * exemplar belongs.
+         *
+         * @var 
+         */
+        public $value;
+        /**
+         * Contextual information about the example value. Examples are:Trace:
+         * type.googleapis.com/google.monitoring.v3.SpanContextLiteral string:
+         * type.googleapis.com/google.protobuf.StringValueLabels dropped during
+         * aggregation: type.googleapis.com/google.monitoring.v3.DroppedLabelsThere
+         * may be only a single attachment of any given message type in a single
+         * exemplar, and this is enforced by the system.
+         *
+         * @param array[] $attachments
+         */
+        public function setAttachments($attachments)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getAttachments()
+        {
+        }
+        /**
+         * The observation (sampling) time of the above value.
+         *
+         * @param string $timestamp
+         */
+        public function setTimestamp($timestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimestamp()
+        {
+        }
+        public function setValue($value)
+        {
+        }
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\Monitoring\Exemplar registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttachments()
-    {
-    }
-    /**
-     * The observation (sampling) time of the above value.
-     *
-     * @param string $timestamp
-     */
-    public function setTimestamp($timestamp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimestamp()
-    {
-    }
-    public function setValue($value)
-    {
-    }
-    public function getValue()
+    class Google_Service_Monitoring_Exemplar extends \Google\Service\Monitoring\Exemplar
     {
     }
 }

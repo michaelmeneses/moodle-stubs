@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class FanInfo extends \Google\Model
-{
-    /**
-     * Output only. Fan speed in RPM.
-     *
-     * @var int
-     */
-    public $speedRpm;
-    /**
-     * Output only. Fan speed in RPM.
-     *
-     * @param int $speedRpm
-     */
-    public function setSpeedRpm($speedRpm)
+namespace Google\Service\Directory {
+    class FanInfo extends \Google\Model
     {
+        /**
+         * Output only. Fan speed in RPM.
+         *
+         * @var int
+         */
+        public $speedRpm;
+        /**
+         * Output only. Fan speed in RPM.
+         *
+         * @param int $speedRpm
+         */
+        public function setSpeedRpm($speedRpm)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSpeedRpm()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Directory\FanInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSpeedRpm()
+    class Google_Service_Directory_FanInfo extends \Google\Service\Directory\FanInfo
     {
     }
 }

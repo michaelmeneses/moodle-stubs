@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1SearchKnowledgeAnswerAnswerSource extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $document;
-    /**
-     * @var string
-     */
-    public $snippet;
-    /**
-     * @var string
-     */
-    public $title;
-    /**
-     * @var string
-     */
-    public $uri;
-    /**
-     * @param string
-     */
-    public function setDocument($document)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1SearchKnowledgeAnswerAnswerSource extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $document;
+        /**
+         * @var string
+         */
+        public $snippet;
+        /**
+         * @var string
+         */
+        public $title;
+        /**
+         * @var string
+         */
+        public $uri;
+        /**
+         * @param string
+         */
+        public function setDocument($document)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDocument()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSnippet($snippet)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSnippet()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1SearchKnowledgeAnswerAnswerSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDocument()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSnippet($snippet)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSnippet()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1SearchKnowledgeAnswerAnswerSource extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1SearchKnowledgeAnswerAnswerSource
     {
     }
 }

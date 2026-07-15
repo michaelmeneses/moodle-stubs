@@ -8,6 +8,9 @@
  */
 namespace Aws\S3\S3Transfer\Models;
 
+use Aws\S3\S3ClientInterface;
+use Aws\S3\S3Transfer\Progress\AbstractTransferListener;
+use InvalidArgumentException;
 abstract class AbstractTransferRequest
 {
     public static array $configKeys = ['track_progress' => 'bool'];

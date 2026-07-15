@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveLabels;
-
-class GoogleAppsDriveLabelsV2DeltaUpdateLabelRequestUpdateSelectionChoicePropertiesRequest extends \Google\Model
-{
-    /**
-     * Required. The selection field to update.
-     *
-     * @var string
-     */
-    public $fieldId;
-    /**
-     * Required. The choice to update.
-     *
-     * @var string
-     */
-    public $id;
-    protected $propertiesType = GoogleAppsDriveLabelsV2FieldSelectionOptionsChoiceProperties::class;
-    protected $propertiesDataType = '';
-    /**
-     * The fields that should be updated. At least one field must be specified.
-     * The root `properties` is implied and should not be specified. A single `*`
-     * can be used as a short-hand for updating every field.
-     *
-     * @var string
-     */
-    public $updateMask;
-    /**
-     * Required. The selection field to update.
-     *
-     * @param string $fieldId
-     */
-    public function setFieldId($fieldId)
+namespace Google\Service\DriveLabels {
+    class GoogleAppsDriveLabelsV2DeltaUpdateLabelRequestUpdateSelectionChoicePropertiesRequest extends \Google\Model
     {
+        /**
+         * Required. The selection field to update.
+         *
+         * @var string
+         */
+        public $fieldId;
+        /**
+         * Required. The choice to update.
+         *
+         * @var string
+         */
+        public $id;
+        protected $propertiesType = GoogleAppsDriveLabelsV2FieldSelectionOptionsChoiceProperties::class;
+        protected $propertiesDataType = '';
+        /**
+         * The fields that should be updated. At least one field must be specified.
+         * The root `properties` is implied and should not be specified. A single `*`
+         * can be used as a short-hand for updating every field.
+         *
+         * @var string
+         */
+        public $updateMask;
+        /**
+         * Required. The selection field to update.
+         *
+         * @param string $fieldId
+         */
+        public function setFieldId($fieldId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFieldId()
+        {
+        }
+        /**
+         * Required. The choice to update.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Required. The choice properties to update.
+         *
+         * @param GoogleAppsDriveLabelsV2FieldSelectionOptionsChoiceProperties $properties
+         */
+        public function setProperties(GoogleAppsDriveLabelsV2FieldSelectionOptionsChoiceProperties $properties)
+        {
+        }
+        /**
+         * @return GoogleAppsDriveLabelsV2FieldSelectionOptionsChoiceProperties
+         */
+        public function getProperties()
+        {
+        }
+        /**
+         * The fields that should be updated. At least one field must be specified.
+         * The root `properties` is implied and should not be specified. A single `*`
+         * can be used as a short-hand for updating every field.
+         *
+         * @param string $updateMask
+         */
+        public function setUpdateMask($updateMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateMask()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2DeltaUpdateLabelRequestUpdateSelectionChoicePropertiesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFieldId()
-    {
-    }
-    /**
-     * Required. The choice to update.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Required. The choice properties to update.
-     *
-     * @param GoogleAppsDriveLabelsV2FieldSelectionOptionsChoiceProperties $properties
-     */
-    public function setProperties(GoogleAppsDriveLabelsV2FieldSelectionOptionsChoiceProperties $properties)
-    {
-    }
-    /**
-     * @return GoogleAppsDriveLabelsV2FieldSelectionOptionsChoiceProperties
-     */
-    public function getProperties()
-    {
-    }
-    /**
-     * The fields that should be updated. At least one field must be specified.
-     * The root `properties` is implied and should not be specified. A single `*`
-     * can be used as a short-hand for updating every field.
-     *
-     * @param string $updateMask
-     */
-    public function setUpdateMask($updateMask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateMask()
+    class Google_Service_DriveLabels_GoogleAppsDriveLabelsV2DeltaUpdateLabelRequestUpdateSelectionChoicePropertiesRequest extends \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2DeltaUpdateLabelRequestUpdateSelectionChoicePropertiesRequest
     {
     }
 }

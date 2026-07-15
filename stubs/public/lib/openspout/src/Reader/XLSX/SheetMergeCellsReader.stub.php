@@ -8,6 +8,10 @@
  */
 namespace OpenSpout\Reader\XLSX;
 
+use OpenSpout\Common\Exception\IOException;
+use OpenSpout\Reader\Common\XMLProcessor;
+use OpenSpout\Reader\Wrapper\XMLReader;
+use function ltrim;
 /**
  * @internal
  */

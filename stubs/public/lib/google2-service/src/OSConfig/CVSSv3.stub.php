@@ -21,184 +21,193 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OSConfig;
-
-class CVSSv3 extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $attackComplexity;
-    /**
-     * @var string
-     */
-    public $attackVector;
-    /**
-     * @var string
-     */
-    public $availabilityImpact;
-    /**
-     * @var float
-     */
-    public $baseScore;
-    /**
-     * @var string
-     */
-    public $confidentialityImpact;
-    /**
-     * @var float
-     */
-    public $exploitabilityScore;
-    /**
-     * @var float
-     */
-    public $impactScore;
-    /**
-     * @var string
-     */
-    public $integrityImpact;
-    /**
-     * @var string
-     */
-    public $privilegesRequired;
-    /**
-     * @var string
-     */
-    public $scope;
-    /**
-     * @var string
-     */
-    public $userInteraction;
-    /**
-     * @param string
-     */
-    public function setAttackComplexity($attackComplexity)
+namespace Google\Service\OSConfig {
+    class CVSSv3 extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $attackComplexity;
+        /**
+         * @var string
+         */
+        public $attackVector;
+        /**
+         * @var string
+         */
+        public $availabilityImpact;
+        /**
+         * @var float
+         */
+        public $baseScore;
+        /**
+         * @var string
+         */
+        public $confidentialityImpact;
+        /**
+         * @var float
+         */
+        public $exploitabilityScore;
+        /**
+         * @var float
+         */
+        public $impactScore;
+        /**
+         * @var string
+         */
+        public $integrityImpact;
+        /**
+         * @var string
+         */
+        public $privilegesRequired;
+        /**
+         * @var string
+         */
+        public $scope;
+        /**
+         * @var string
+         */
+        public $userInteraction;
+        /**
+         * @param string
+         */
+        public function setAttackComplexity($attackComplexity)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAttackComplexity()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setAttackVector($attackVector)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAttackVector()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setAvailabilityImpact($availabilityImpact)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAvailabilityImpact()
+        {
+        }
+        /**
+         * @param float
+         */
+        public function setBaseScore($baseScore)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getBaseScore()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setConfidentialityImpact($confidentialityImpact)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConfidentialityImpact()
+        {
+        }
+        /**
+         * @param float
+         */
+        public function setExploitabilityScore($exploitabilityScore)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getExploitabilityScore()
+        {
+        }
+        /**
+         * @param float
+         */
+        public function setImpactScore($impactScore)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getImpactScore()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setIntegrityImpact($integrityImpact)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIntegrityImpact()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPrivilegesRequired($privilegesRequired)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrivilegesRequired()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setScope($scope)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScope()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUserInteraction($userInteraction)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserInteraction()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OSConfig\CVSSv3 registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttackComplexity()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setAttackVector($attackVector)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAttackVector()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setAvailabilityImpact($availabilityImpact)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAvailabilityImpact()
-    {
-    }
-    /**
-     * @param float
-     */
-    public function setBaseScore($baseScore)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getBaseScore()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setConfidentialityImpact($confidentialityImpact)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getConfidentialityImpact()
-    {
-    }
-    /**
-     * @param float
-     */
-    public function setExploitabilityScore($exploitabilityScore)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getExploitabilityScore()
-    {
-    }
-    /**
-     * @param float
-     */
-    public function setImpactScore($impactScore)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getImpactScore()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setIntegrityImpact($integrityImpact)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIntegrityImpact()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPrivilegesRequired($privilegesRequired)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrivilegesRequired()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setScope($scope)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getScope()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUserInteraction($userInteraction)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserInteraction()
+    class Google_Service_OSConfig_CVSSv3 extends \Google\Service\OSConfig\CVSSv3
     {
     }
 }

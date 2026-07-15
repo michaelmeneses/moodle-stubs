@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1DataSource extends \Google\Model
-{
-    /**
-     * Immutable. The Dataplex Universal Catalog entity that represents the data
-     * source (e.g. BigQuery table) for DataScan, of the form: projects/{project_n
-     * umber}/locations/{location_id}/lakes/{lake_id}/zones/{zone_id}/entities/{en
-     * tity_id}.
-     *
-     * @var string
-     */
-    public $entity;
-    /**
-     * Immutable. The service-qualified full resource name of the cloud resource
-     * for a DataScan job to scan against. The field could either be: Cloud
-     * Storage bucket for DataDiscoveryScan Format:
-     * //storage.googleapis.com/projects/PROJECT_ID/buckets/BUCKET_ID or BigQuery
-     * table of type "TABLE" for
-     * DataProfileScan/DataQualityScan/DataDocumentationScan Format: //bigquery.go
-     * ogleapis.com/projects/PROJECT_ID/datasets/DATASET_ID/tables/TABLE_ID
-     *
-     * @var string
-     */
-    public $resource;
-    /**
-     * Immutable. The Dataplex Universal Catalog entity that represents the data
-     * source (e.g. BigQuery table) for DataScan, of the form: projects/{project_n
-     * umber}/locations/{location_id}/lakes/{lake_id}/zones/{zone_id}/entities/{en
-     * tity_id}.
-     *
-     * @param string $entity
-     */
-    public function setEntity($entity)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1DataSource extends \Google\Model
     {
+        /**
+         * Immutable. The Dataplex Universal Catalog entity that represents the data
+         * source (e.g. BigQuery table) for DataScan, of the form: projects/{project_n
+         * umber}/locations/{location_id}/lakes/{lake_id}/zones/{zone_id}/entities/{en
+         * tity_id}.
+         *
+         * @var string
+         */
+        public $entity;
+        /**
+         * Immutable. The service-qualified full resource name of the cloud resource
+         * for a DataScan job to scan against. The field could either be: Cloud
+         * Storage bucket for DataDiscoveryScan Format:
+         * //storage.googleapis.com/projects/PROJECT_ID/buckets/BUCKET_ID or BigQuery
+         * table of type "TABLE" for
+         * DataProfileScan/DataQualityScan/DataDocumentationScan Format: //bigquery.go
+         * ogleapis.com/projects/PROJECT_ID/datasets/DATASET_ID/tables/TABLE_ID
+         *
+         * @var string
+         */
+        public $resource;
+        /**
+         * Immutable. The Dataplex Universal Catalog entity that represents the data
+         * source (e.g. BigQuery table) for DataScan, of the form: projects/{project_n
+         * umber}/locations/{location_id}/lakes/{lake_id}/zones/{zone_id}/entities/{en
+         * tity_id}.
+         *
+         * @param string $entity
+         */
+        public function setEntity($entity)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEntity()
+        {
+        }
+        /**
+         * Immutable. The service-qualified full resource name of the cloud resource
+         * for a DataScan job to scan against. The field could either be: Cloud
+         * Storage bucket for DataDiscoveryScan Format:
+         * //storage.googleapis.com/projects/PROJECT_ID/buckets/BUCKET_ID or BigQuery
+         * table of type "TABLE" for
+         * DataProfileScan/DataQualityScan/DataDocumentationScan Format: //bigquery.go
+         * ogleapis.com/projects/PROJECT_ID/datasets/DATASET_ID/tables/TABLE_ID
+         *
+         * @param string $resource
+         */
+        public function setResource($resource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntity()
-    {
-    }
-    /**
-     * Immutable. The service-qualified full resource name of the cloud resource
-     * for a DataScan job to scan against. The field could either be: Cloud
-     * Storage bucket for DataDiscoveryScan Format:
-     * //storage.googleapis.com/projects/PROJECT_ID/buckets/BUCKET_ID or BigQuery
-     * table of type "TABLE" for
-     * DataProfileScan/DataQualityScan/DataDocumentationScan Format: //bigquery.go
-     * ogleapis.com/projects/PROJECT_ID/datasets/DATASET_ID/tables/TABLE_ID
-     *
-     * @param string $resource
-     */
-    public function setResource($resource)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResource()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1DataSource extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataSource
     {
     }
 }

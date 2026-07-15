@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudTasks;
-
-class ListTasksResponse extends \Google\Collection
-{
-    protected $collection_key = 'tasks';
-    /**
-     * A token to retrieve next page of results. To return the next page of
-     * results, call ListTasks with this value as the page_token. If the
-     * next_page_token is empty, there are no more results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $tasksType = Task::class;
-    protected $tasksDataType = 'array';
-    /**
-     * A token to retrieve next page of results. To return the next page of
-     * results, call ListTasks with this value as the page_token. If the
-     * next_page_token is empty, there are no more results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\CloudTasks {
+    class ListTasksResponse extends \Google\Collection
     {
+        protected $collection_key = 'tasks';
+        /**
+         * A token to retrieve next page of results. To return the next page of
+         * results, call ListTasks with this value as the page_token. If the
+         * next_page_token is empty, there are no more results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $tasksType = Task::class;
+        protected $tasksDataType = 'array';
+        /**
+         * A token to retrieve next page of results. To return the next page of
+         * results, call ListTasks with this value as the page_token. If the
+         * next_page_token is empty, there are no more results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of tasks.
+         *
+         * @param Task[] $tasks
+         */
+        public function setTasks($tasks)
+        {
+        }
+        /**
+         * @return Task[]
+         */
+        public function getTasks()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudTasks\ListTasksResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of tasks.
-     *
-     * @param Task[] $tasks
-     */
-    public function setTasks($tasks)
-    {
-    }
-    /**
-     * @return Task[]
-     */
-    public function getTasks()
+    class Google_Service_CloudTasks_ListTasksResponse extends \Google\Service\CloudTasks\ListTasksResponse
     {
     }
 }

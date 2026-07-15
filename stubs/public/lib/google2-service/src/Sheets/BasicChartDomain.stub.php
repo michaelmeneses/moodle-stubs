@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class BasicChartDomain extends \Google\Model
-{
-    protected $domainType = ChartData::class;
-    protected $domainDataType = '';
-    /**
-     * True to reverse the order of the domain values (horizontal axis).
-     *
-     * @var bool
-     */
-    public $reversed;
-    /**
-     * The data of the domain. For example, if charting stock prices over time,
-     * this is the data representing the dates.
-     *
-     * @param ChartData $domain
-     */
-    public function setDomain(ChartData $domain)
+namespace Google\Service\Sheets {
+    class BasicChartDomain extends \Google\Model
     {
+        protected $domainType = ChartData::class;
+        protected $domainDataType = '';
+        /**
+         * True to reverse the order of the domain values (horizontal axis).
+         *
+         * @var bool
+         */
+        public $reversed;
+        /**
+         * The data of the domain. For example, if charting stock prices over time,
+         * this is the data representing the dates.
+         *
+         * @param ChartData $domain
+         */
+        public function setDomain(ChartData $domain)
+        {
+        }
+        /**
+         * @return ChartData
+         */
+        public function getDomain()
+        {
+        }
+        /**
+         * True to reverse the order of the domain values (horizontal axis).
+         *
+         * @param bool $reversed
+         */
+        public function setReversed($reversed)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getReversed()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ChartData
+     * Runtime class alias of \Google\Service\Sheets\BasicChartDomain registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDomain()
-    {
-    }
-    /**
-     * True to reverse the order of the domain values (horizontal axis).
-     *
-     * @param bool $reversed
-     */
-    public function setReversed($reversed)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getReversed()
+    class Google_Service_Sheets_BasicChartDomain extends \Google\Service\Sheets\BasicChartDomain
     {
     }
 }

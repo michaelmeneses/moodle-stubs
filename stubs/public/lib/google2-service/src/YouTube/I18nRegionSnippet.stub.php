@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class I18nRegionSnippet extends \Google\Model
-{
-    /**
-     * The region code as a 2-letter ISO country code.
-     *
-     * @var string
-     */
-    public $gl;
-    /**
-     * The human-readable name of the region.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The region code as a 2-letter ISO country code.
-     *
-     * @param string $gl
-     */
-    public function setGl($gl)
+namespace Google\Service\YouTube {
+    class I18nRegionSnippet extends \Google\Model
     {
+        /**
+         * The region code as a 2-letter ISO country code.
+         *
+         * @var string
+         */
+        public $gl;
+        /**
+         * The human-readable name of the region.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The region code as a 2-letter ISO country code.
+         *
+         * @param string $gl
+         */
+        public function setGl($gl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGl()
+        {
+        }
+        /**
+         * The human-readable name of the region.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\I18nRegionSnippet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGl()
-    {
-    }
-    /**
-     * The human-readable name of the region.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_YouTube_I18nRegionSnippet extends \Google\Service\YouTube\I18nRegionSnippet
     {
     }
 }

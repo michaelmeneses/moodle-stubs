@@ -21,100 +21,109 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudFunctions;
-
-class StorageSource extends \Google\Model
-{
-    /**
-     * Google Cloud Storage bucket containing the source (see [Bucket Name
-     * Requirements](https://cloud.google.com/storage/docs/bucket-
-     * naming#requirements)).
-     *
-     * @var string
-     */
-    public $bucket;
-    /**
-     * Google Cloud Storage generation for the object. If the generation is
-     * omitted, the latest generation will be used.
-     *
-     * @var string
-     */
-    public $generation;
-    /**
-     * Google Cloud Storage object containing the source. This object must be a
-     * gzipped archive file (`.tar.gz`) containing source to build.
-     *
-     * @var string
-     */
-    public $object;
-    /**
-     * When the specified storage bucket is a 1st gen function uploard url bucket,
-     * this field should be set as the generated upload url for 1st gen
-     * deployment.
-     *
-     * @var string
-     */
-    public $sourceUploadUrl;
-    /**
-     * Google Cloud Storage bucket containing the source (see [Bucket Name
-     * Requirements](https://cloud.google.com/storage/docs/bucket-
-     * naming#requirements)).
-     *
-     * @param string $bucket
-     */
-    public function setBucket($bucket)
+namespace Google\Service\CloudFunctions {
+    class StorageSource extends \Google\Model
     {
+        /**
+         * Google Cloud Storage bucket containing the source (see [Bucket Name
+         * Requirements](https://cloud.google.com/storage/docs/bucket-
+         * naming#requirements)).
+         *
+         * @var string
+         */
+        public $bucket;
+        /**
+         * Google Cloud Storage generation for the object. If the generation is
+         * omitted, the latest generation will be used.
+         *
+         * @var string
+         */
+        public $generation;
+        /**
+         * Google Cloud Storage object containing the source. This object must be a
+         * gzipped archive file (`.tar.gz`) containing source to build.
+         *
+         * @var string
+         */
+        public $object;
+        /**
+         * When the specified storage bucket is a 1st gen function uploard url bucket,
+         * this field should be set as the generated upload url for 1st gen
+         * deployment.
+         *
+         * @var string
+         */
+        public $sourceUploadUrl;
+        /**
+         * Google Cloud Storage bucket containing the source (see [Bucket Name
+         * Requirements](https://cloud.google.com/storage/docs/bucket-
+         * naming#requirements)).
+         *
+         * @param string $bucket
+         */
+        public function setBucket($bucket)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBucket()
+        {
+        }
+        /**
+         * Google Cloud Storage generation for the object. If the generation is
+         * omitted, the latest generation will be used.
+         *
+         * @param string $generation
+         */
+        public function setGeneration($generation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGeneration()
+        {
+        }
+        /**
+         * Google Cloud Storage object containing the source. This object must be a
+         * gzipped archive file (`.tar.gz`) containing source to build.
+         *
+         * @param string $object
+         */
+        public function setObject($object)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObject()
+        {
+        }
+        /**
+         * When the specified storage bucket is a 1st gen function uploard url bucket,
+         * this field should be set as the generated upload url for 1st gen
+         * deployment.
+         *
+         * @param string $sourceUploadUrl
+         */
+        public function setSourceUploadUrl($sourceUploadUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceUploadUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudFunctions\StorageSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBucket()
-    {
-    }
-    /**
-     * Google Cloud Storage generation for the object. If the generation is
-     * omitted, the latest generation will be used.
-     *
-     * @param string $generation
-     */
-    public function setGeneration($generation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGeneration()
-    {
-    }
-    /**
-     * Google Cloud Storage object containing the source. This object must be a
-     * gzipped archive file (`.tar.gz`) containing source to build.
-     *
-     * @param string $object
-     */
-    public function setObject($object)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObject()
-    {
-    }
-    /**
-     * When the specified storage bucket is a 1st gen function uploard url bucket,
-     * this field should be set as the generated upload url for 1st gen
-     * deployment.
-     *
-     * @param string $sourceUploadUrl
-     */
-    public function setSourceUploadUrl($sourceUploadUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourceUploadUrl()
+    class Google_Service_CloudFunctions_StorageSource extends \Google\Service\CloudFunctions\StorageSource
     {
     }
 }

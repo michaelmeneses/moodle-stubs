@@ -21,210 +21,219 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdSensePlatform;
-
-class Address extends \Google\Model
-{
-    /**
-     * First line of address. Max length 64 bytes or 30 characters.
-     *
-     * @var string
-     */
-    public $address1;
-    /**
-     * Second line of address. Max length 64 bytes or 30 characters.
-     *
-     * @var string
-     */
-    public $address2;
-    /**
-     * City. Max length 60 bytes or 30 characters.
-     *
-     * @var string
-     */
-    public $city;
-    /**
-     * Name of the company. Max length 255 bytes or 34 characters.
-     *
-     * @var string
-     */
-    public $company;
-    /**
-     * Contact name of the company. Max length 128 bytes or 34 characters.
-     *
-     * @var string
-     */
-    public $contact;
-    /**
-     * Fax number with international code (i.e. +441234567890).
-     *
-     * @var string
-     */
-    public $fax;
-    /**
-     * Phone number with international code (i.e. +441234567890).
-     *
-     * @var string
-     */
-    public $phone;
-    /**
-     * Country/Region code. The region is specified as a CLDR region code (e.g.
-     * "US", "FR").
-     *
-     * @var string
-     */
-    public $regionCode;
-    /**
-     * State. Max length 60 bytes or 30 characters.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Zip/post code. Max length 10 bytes or 10 characters.
-     *
-     * @var string
-     */
-    public $zip;
-    /**
-     * First line of address. Max length 64 bytes or 30 characters.
-     *
-     * @param string $address1
-     */
-    public function setAddress1($address1)
+namespace Google\Service\AdSensePlatform {
+    class Address extends \Google\Model
     {
+        /**
+         * First line of address. Max length 64 bytes or 30 characters.
+         *
+         * @var string
+         */
+        public $address1;
+        /**
+         * Second line of address. Max length 64 bytes or 30 characters.
+         *
+         * @var string
+         */
+        public $address2;
+        /**
+         * City. Max length 60 bytes or 30 characters.
+         *
+         * @var string
+         */
+        public $city;
+        /**
+         * Name of the company. Max length 255 bytes or 34 characters.
+         *
+         * @var string
+         */
+        public $company;
+        /**
+         * Contact name of the company. Max length 128 bytes or 34 characters.
+         *
+         * @var string
+         */
+        public $contact;
+        /**
+         * Fax number with international code (i.e. +441234567890).
+         *
+         * @var string
+         */
+        public $fax;
+        /**
+         * Phone number with international code (i.e. +441234567890).
+         *
+         * @var string
+         */
+        public $phone;
+        /**
+         * Country/Region code. The region is specified as a CLDR region code (e.g.
+         * "US", "FR").
+         *
+         * @var string
+         */
+        public $regionCode;
+        /**
+         * State. Max length 60 bytes or 30 characters.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Zip/post code. Max length 10 bytes or 10 characters.
+         *
+         * @var string
+         */
+        public $zip;
+        /**
+         * First line of address. Max length 64 bytes or 30 characters.
+         *
+         * @param string $address1
+         */
+        public function setAddress1($address1)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAddress1()
+        {
+        }
+        /**
+         * Second line of address. Max length 64 bytes or 30 characters.
+         *
+         * @param string $address2
+         */
+        public function setAddress2($address2)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAddress2()
+        {
+        }
+        /**
+         * City. Max length 60 bytes or 30 characters.
+         *
+         * @param string $city
+         */
+        public function setCity($city)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCity()
+        {
+        }
+        /**
+         * Name of the company. Max length 255 bytes or 34 characters.
+         *
+         * @param string $company
+         */
+        public function setCompany($company)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCompany()
+        {
+        }
+        /**
+         * Contact name of the company. Max length 128 bytes or 34 characters.
+         *
+         * @param string $contact
+         */
+        public function setContact($contact)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContact()
+        {
+        }
+        /**
+         * Fax number with international code (i.e. +441234567890).
+         *
+         * @param string $fax
+         */
+        public function setFax($fax)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFax()
+        {
+        }
+        /**
+         * Phone number with international code (i.e. +441234567890).
+         *
+         * @param string $phone
+         */
+        public function setPhone($phone)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPhone()
+        {
+        }
+        /**
+         * Country/Region code. The region is specified as a CLDR region code (e.g.
+         * "US", "FR").
+         *
+         * @param string $regionCode
+         */
+        public function setRegionCode($regionCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegionCode()
+        {
+        }
+        /**
+         * State. Max length 60 bytes or 30 characters.
+         *
+         * @param string $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Zip/post code. Max length 10 bytes or 10 characters.
+         *
+         * @param string $zip
+         */
+        public function setZip($zip)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getZip()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AdSensePlatform\Address registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddress1()
-    {
-    }
-    /**
-     * Second line of address. Max length 64 bytes or 30 characters.
-     *
-     * @param string $address2
-     */
-    public function setAddress2($address2)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAddress2()
-    {
-    }
-    /**
-     * City. Max length 60 bytes or 30 characters.
-     *
-     * @param string $city
-     */
-    public function setCity($city)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCity()
-    {
-    }
-    /**
-     * Name of the company. Max length 255 bytes or 34 characters.
-     *
-     * @param string $company
-     */
-    public function setCompany($company)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCompany()
-    {
-    }
-    /**
-     * Contact name of the company. Max length 128 bytes or 34 characters.
-     *
-     * @param string $contact
-     */
-    public function setContact($contact)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContact()
-    {
-    }
-    /**
-     * Fax number with international code (i.e. +441234567890).
-     *
-     * @param string $fax
-     */
-    public function setFax($fax)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFax()
-    {
-    }
-    /**
-     * Phone number with international code (i.e. +441234567890).
-     *
-     * @param string $phone
-     */
-    public function setPhone($phone)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPhone()
-    {
-    }
-    /**
-     * Country/Region code. The region is specified as a CLDR region code (e.g.
-     * "US", "FR").
-     *
-     * @param string $regionCode
-     */
-    public function setRegionCode($regionCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegionCode()
-    {
-    }
-    /**
-     * State. Max length 60 bytes or 30 characters.
-     *
-     * @param string $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Zip/post code. Max length 10 bytes or 10 characters.
-     *
-     * @param string $zip
-     */
-    public function setZip($zip)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getZip()
+    class Google_Service_AdSensePlatform_Address extends \Google\Service\AdSensePlatform\Address
     {
     }
 }

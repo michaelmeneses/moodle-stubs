@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Fcmdata\Resource;
-
-/**
- * The "androidApps" collection of methods.
- * Typical usage is:
- *  <code>
- *   $fcmdataService = new Google\Service\Fcmdata(...);
- *   $androidApps = $fcmdataService->projects_androidApps;
- *  </code>
- */
-class ProjectsAndroidApps extends \Google\Service\Resource
-{
+namespace Google\Service\Fcmdata\Resource {
+    /**
+     * The "androidApps" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $fcmdataService = new Google\Service\Fcmdata(...);
+     *   $androidApps = $fcmdataService->projects_androidApps;
+     *  </code>
+     */
+    class ProjectsAndroidApps extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Fcmdata\Resource\ProjectsAndroidApps registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Fcmdata_Resource_ProjectsAndroidApps extends \Google\Service\Fcmdata\Resource\ProjectsAndroidApps
+    {
+    }
 }

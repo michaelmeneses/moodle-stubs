@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WebRisk;
-
-class GoogleCloudWebriskV1SearchUrisResponseThreatUri extends \Google\Collection
-{
-    protected $collection_key = 'threatTypes';
-    /**
-     * The cache lifetime for the returned match. Clients must not cache this
-     * response past this timestamp to avoid false positives.
-     *
-     * @var string
-     */
-    public $expireTime;
-    /**
-     * The ThreatList this threat belongs to.
-     *
-     * @var string[]
-     */
-    public $threatTypes;
-    /**
-     * The cache lifetime for the returned match. Clients must not cache this
-     * response past this timestamp to avoid false positives.
-     *
-     * @param string $expireTime
-     */
-    public function setExpireTime($expireTime)
+namespace Google\Service\WebRisk {
+    class GoogleCloudWebriskV1SearchUrisResponseThreatUri extends \Google\Collection
     {
+        protected $collection_key = 'threatTypes';
+        /**
+         * The cache lifetime for the returned match. Clients must not cache this
+         * response past this timestamp to avoid false positives.
+         *
+         * @var string
+         */
+        public $expireTime;
+        /**
+         * The ThreatList this threat belongs to.
+         *
+         * @var string[]
+         */
+        public $threatTypes;
+        /**
+         * The cache lifetime for the returned match. Clients must not cache this
+         * response past this timestamp to avoid false positives.
+         *
+         * @param string $expireTime
+         */
+        public function setExpireTime($expireTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpireTime()
+        {
+        }
+        /**
+         * The ThreatList this threat belongs to.
+         *
+         * @param string[] $threatTypes
+         */
+        public function setThreatTypes($threatTypes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getThreatTypes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\WebRisk\GoogleCloudWebriskV1SearchUrisResponseThreatUri registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExpireTime()
-    {
-    }
-    /**
-     * The ThreatList this threat belongs to.
-     *
-     * @param string[] $threatTypes
-     */
-    public function setThreatTypes($threatTypes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getThreatTypes()
+    class Google_Service_WebRisk_GoogleCloudWebriskV1SearchUrisResponseThreatUri extends \Google\Service\WebRisk\GoogleCloudWebriskV1SearchUrisResponseThreatUri
     {
     }
 }

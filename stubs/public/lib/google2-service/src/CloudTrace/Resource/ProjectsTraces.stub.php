@@ -21,31 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudTrace\Resource;
-
-/**
- * The "traces" collection of methods.
- * Typical usage is:
- *  <code>
- *   $cloudtraceService = new Google\Service\CloudTrace(...);
- *   $traces = $cloudtraceService->projects_traces;
- *  </code>
- */
-class ProjectsTraces extends \Google\Service\Resource
-{
+namespace Google\Service\CloudTrace\Resource {
+    use Google\Service\CloudTrace\BatchWriteSpansRequest;
+    use Google\Service\CloudTrace\CloudtraceEmpty;
     /**
-     * Batch writes new spans to new or existing traces. You cannot update existing
-     * spans. If a span ID already exists, an additional copy of the span will be
-     * stored. (traces.batchWrite)
-     *
-     * @param string $name Required. The name of the project where the spans belong.
-     * The format is `projects/[PROJECT_ID]`.
-     * @param BatchWriteSpansRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return CloudtraceEmpty
-     * @throws \Google\Service\Exception
+     * The "traces" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $cloudtraceService = new Google\Service\CloudTrace(...);
+     *   $traces = $cloudtraceService->projects_traces;
+     *  </code>
      */
-    public function batchWrite($name, BatchWriteSpansRequest $postBody, $optParams = [])
+    class ProjectsTraces extends \Google\Service\Resource
+    {
+        /**
+         * Batch writes new spans to new or existing traces. You cannot update existing
+         * spans. If a span ID already exists, an additional copy of the span will be
+         * stored. (traces.batchWrite)
+         *
+         * @param string $name Required. The name of the project where the spans belong.
+         * The format is `projects/[PROJECT_ID]`.
+         * @param BatchWriteSpansRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return CloudtraceEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function batchWrite($name, BatchWriteSpansRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudTrace\Resource\ProjectsTraces registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudTrace_Resource_ProjectsTraces extends \Google\Service\CloudTrace\Resource\ProjectsTraces
     {
     }
 }

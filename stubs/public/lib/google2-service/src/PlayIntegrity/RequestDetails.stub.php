@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PlayIntegrity;
-
-class RequestDetails extends \Google\Model
-{
-    /**
-     * Nonce that was provided in the request (which is base64 web-safe no-wrap).
-     *
-     * @var string
-     */
-    public $nonce;
-    /**
-     * Request hash that was provided in the request.
-     *
-     * @var string
-     */
-    public $requestHash;
-    /**
-     * Required. Application package name this attestation was requested for.
-     * Note: This field makes no guarantees or promises on the caller integrity.
-     * For details on application integrity, check application_integrity.
-     *
-     * @var string
-     */
-    public $requestPackageName;
-    /**
-     * Required. Timestamp, in milliseconds, of the integrity application request.
-     *
-     * @var string
-     */
-    public $timestampMillis;
-    /**
-     * Nonce that was provided in the request (which is base64 web-safe no-wrap).
-     *
-     * @param string $nonce
-     */
-    public function setNonce($nonce)
+namespace Google\Service\PlayIntegrity {
+    class RequestDetails extends \Google\Model
     {
+        /**
+         * Nonce that was provided in the request (which is base64 web-safe no-wrap).
+         *
+         * @var string
+         */
+        public $nonce;
+        /**
+         * Request hash that was provided in the request.
+         *
+         * @var string
+         */
+        public $requestHash;
+        /**
+         * Required. Application package name this attestation was requested for.
+         * Note: This field makes no guarantees or promises on the caller integrity.
+         * For details on application integrity, check application_integrity.
+         *
+         * @var string
+         */
+        public $requestPackageName;
+        /**
+         * Required. Timestamp, in milliseconds, of the integrity application request.
+         *
+         * @var string
+         */
+        public $timestampMillis;
+        /**
+         * Nonce that was provided in the request (which is base64 web-safe no-wrap).
+         *
+         * @param string $nonce
+         */
+        public function setNonce($nonce)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNonce()
+        {
+        }
+        /**
+         * Request hash that was provided in the request.
+         *
+         * @param string $requestHash
+         */
+        public function setRequestHash($requestHash)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestHash()
+        {
+        }
+        /**
+         * Required. Application package name this attestation was requested for.
+         * Note: This field makes no guarantees or promises on the caller integrity.
+         * For details on application integrity, check application_integrity.
+         *
+         * @param string $requestPackageName
+         */
+        public function setRequestPackageName($requestPackageName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestPackageName()
+        {
+        }
+        /**
+         * Required. Timestamp, in milliseconds, of the integrity application request.
+         *
+         * @param string $timestampMillis
+         */
+        public function setTimestampMillis($timestampMillis)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimestampMillis()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PlayIntegrity\RequestDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNonce()
-    {
-    }
-    /**
-     * Request hash that was provided in the request.
-     *
-     * @param string $requestHash
-     */
-    public function setRequestHash($requestHash)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestHash()
-    {
-    }
-    /**
-     * Required. Application package name this attestation was requested for.
-     * Note: This field makes no guarantees or promises on the caller integrity.
-     * For details on application integrity, check application_integrity.
-     *
-     * @param string $requestPackageName
-     */
-    public function setRequestPackageName($requestPackageName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestPackageName()
-    {
-    }
-    /**
-     * Required. Timestamp, in milliseconds, of the integrity application request.
-     *
-     * @param string $timestampMillis
-     */
-    public function setTimestampMillis($timestampMillis)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimestampMillis()
+    class Google_Service_PlayIntegrity_RequestDetails extends \Google\Service\PlayIntegrity\RequestDetails
     {
     }
 }

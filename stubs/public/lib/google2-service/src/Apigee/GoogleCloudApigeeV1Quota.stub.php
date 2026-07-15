@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1Quota extends \Google\Model
-{
-    /**
-     * Required. Time interval over which the number of request messages is
-     * calculated.
-     *
-     * @var string
-     */
-    public $interval;
-    /**
-     * Required. Upper limit allowed for the time interval and time unit
-     * specified. Requests exceeding this limit will be rejected.
-     *
-     * @var string
-     */
-    public $limit;
-    /**
-     * Time unit defined for the `interval`. Valid values include `minute`,
-     * `hour`, `day`, or `month`. If `limit` and `interval` are valid, the default
-     * value is `hour`; otherwise, the default is null.
-     *
-     * @var string
-     */
-    public $timeUnit;
-    /**
-     * Required. Time interval over which the number of request messages is
-     * calculated.
-     *
-     * @param string $interval
-     */
-    public function setInterval($interval)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1Quota extends \Google\Model
     {
+        /**
+         * Required. Time interval over which the number of request messages is
+         * calculated.
+         *
+         * @var string
+         */
+        public $interval;
+        /**
+         * Required. Upper limit allowed for the time interval and time unit
+         * specified. Requests exceeding this limit will be rejected.
+         *
+         * @var string
+         */
+        public $limit;
+        /**
+         * Time unit defined for the `interval`. Valid values include `minute`,
+         * `hour`, `day`, or `month`. If `limit` and `interval` are valid, the default
+         * value is `hour`; otherwise, the default is null.
+         *
+         * @var string
+         */
+        public $timeUnit;
+        /**
+         * Required. Time interval over which the number of request messages is
+         * calculated.
+         *
+         * @param string $interval
+         */
+        public function setInterval($interval)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInterval()
+        {
+        }
+        /**
+         * Required. Upper limit allowed for the time interval and time unit
+         * specified. Requests exceeding this limit will be rejected.
+         *
+         * @param string $limit
+         */
+        public function setLimit($limit)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLimit()
+        {
+        }
+        /**
+         * Time unit defined for the `interval`. Valid values include `minute`,
+         * `hour`, `day`, or `month`. If `limit` and `interval` are valid, the default
+         * value is `hour`; otherwise, the default is null.
+         *
+         * @param string $timeUnit
+         */
+        public function setTimeUnit($timeUnit)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimeUnit()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1Quota registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInterval()
-    {
-    }
-    /**
-     * Required. Upper limit allowed for the time interval and time unit
-     * specified. Requests exceeding this limit will be rejected.
-     *
-     * @param string $limit
-     */
-    public function setLimit($limit)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLimit()
-    {
-    }
-    /**
-     * Time unit defined for the `interval`. Valid values include `minute`,
-     * `hour`, `day`, or `month`. If `limit` and `interval` are valid, the default
-     * value is `hour`; otherwise, the default is null.
-     *
-     * @param string $timeUnit
-     */
-    public function setTimeUnit($timeUnit)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimeUnit()
+    class Google_Service_Apigee_GoogleCloudApigeeV1Quota extends \Google\Service\Apigee\GoogleCloudApigeeV1Quota
     {
     }
 }

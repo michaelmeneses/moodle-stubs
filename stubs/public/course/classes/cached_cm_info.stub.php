@@ -20,68 +20,77 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core_course;
-
-/**
- * Class that is the return value for the _get_coursemodule_info module API function.
- *
- * Note: For backward compatibility, you can also return a stdclass object from that function.
- * The difference is that the stdclass object may contain an 'extra' field (deprecated,
- * use extraclasses and onclick instead). The stdclass object may not contain
- * the new fields defined here (content, extraclasses, customdata).
- *
- * @package     core_course
- * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @copyright   Sam Marshall
- */
-class cached_cm_info
-{
+namespace core_course {
     /**
-     * Name (text of link) for this activity; Leave unset to accept default name
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string Name of icon for this activity.
+     * Class that is the return value for the _get_coursemodule_info module API function.
      *
-     * Normally, this should be used together with $iconcomponent to define the icon, as per image_url function.
+     * Note: For backward compatibility, you can also return a stdclass object from that function.
+     * The difference is that the stdclass object may contain an 'extra' field (deprecated,
+     * use extraclasses and onclick instead). The stdclass object may not contain
+     * the new fields defined here (content, extraclasses, customdata).
      *
-     * For backward compatibility, if this value is of the form 'mod/forum/icon' then an icon
-     * within that module will be used.
-     *
-     * @see cm_info::get_icon_url()
-     * @see \core\output\renderer_base::image_url()
+     * @package     core_course
+     * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+     * @copyright   Sam Marshall
      */
-    public $icon;
+    class cached_cm_info
+    {
+        /**
+         * Name (text of link) for this activity; Leave unset to accept default name
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string Name of icon for this activity.
+         *
+         * Normally, this should be used together with $iconcomponent to define the icon, as per image_url function.
+         *
+         * For backward compatibility, if this value is of the form 'mod/forum/icon' then an icon
+         * within that module will be used.
+         *
+         * @see cm_info::get_icon_url()
+         * @see \core\output\renderer_base::image_url()
+         */
+        public $icon;
+        /**
+         * @var string Component for icon for this activity, as per image_url; leave blank to use default 'moodle' component
+         * @see \core\output\renderer_base::image_url()
+         */
+        public $iconcomponent;
+        /** @var string HTML content to be displayed on the main page below the link (if any) for this course-module */
+        public $content;
+        /**
+         * Custom data to be stored in modinfo for this activity; useful if there are cases when
+         * internal information for this activity type needs to be accessible from elsewhere on the
+         * course without making database queries. May be of any type but should be short.
+         * @var mixed
+         */
+        public $customdata;
+        /**
+         * Extra CSS class or classes to be added when this activity is displayed on the main page;
+         * space-separated string
+         * @var string
+         */
+        public $extraclasses;
+        /**
+         * External URL image to be used by activity as icon, useful for some external-tool modules
+         * like lti. If set, takes precedence over $icon and $iconcomponent
+         * @var \moodle_url
+         */
+        public $iconurl;
+        /**
+         * Content of onclick JavaScript; escaped HTML to be inserted as attribute value
+         * @var string
+         */
+        public $onclick;
+    }
+}
+namespace {
     /**
-     * @var string Component for icon for this activity, as per image_url; leave blank to use default 'moodle' component
-     * @see \core\output\renderer_base::image_url()
+     * Runtime class alias of \core_course\cached_cm_info registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public $iconcomponent;
-    /** @var string HTML content to be displayed on the main page below the link (if any) for this course-module */
-    public $content;
-    /**
-     * Custom data to be stored in modinfo for this activity; useful if there are cases when
-     * internal information for this activity type needs to be accessible from elsewhere on the
-     * course without making database queries. May be of any type but should be short.
-     * @var mixed
-     */
-    public $customdata;
-    /**
-     * Extra CSS class or classes to be added when this activity is displayed on the main page;
-     * space-separated string
-     * @var string
-     */
-    public $extraclasses;
-    /**
-     * External URL image to be used by activity as icon, useful for some external-tool modules
-     * like lti. If set, takes precedence over $icon and $iconcomponent
-     * @var \moodle_url
-     */
-    public $iconurl;
-    /**
-     * Content of onclick JavaScript; escaped HTML to be inserted as attribute value
-     * @var string
-     */
-    public $onclick;
+    class cached_cm_info extends \core_course\cached_cm_info
+    {
+    }
 }

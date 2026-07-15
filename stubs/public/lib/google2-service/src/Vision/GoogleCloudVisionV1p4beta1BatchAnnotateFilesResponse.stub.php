@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class GoogleCloudVisionV1p4beta1BatchAnnotateFilesResponse extends \Google\Collection
-{
-    protected $collection_key = 'responses';
-    protected $responsesType = GoogleCloudVisionV1p4beta1AnnotateFileResponse::class;
-    protected $responsesDataType = 'array';
-    /**
-     * The list of file annotation responses, each response corresponding to each
-     * AnnotateFileRequest in BatchAnnotateFilesRequest.
-     *
-     * @param GoogleCloudVisionV1p4beta1AnnotateFileResponse[] $responses
-     */
-    public function setResponses($responses)
+namespace Google\Service\Vision {
+    class GoogleCloudVisionV1p4beta1BatchAnnotateFilesResponse extends \Google\Collection
     {
+        protected $collection_key = 'responses';
+        protected $responsesType = GoogleCloudVisionV1p4beta1AnnotateFileResponse::class;
+        protected $responsesDataType = 'array';
+        /**
+         * The list of file annotation responses, each response corresponding to each
+         * AnnotateFileRequest in BatchAnnotateFilesRequest.
+         *
+         * @param GoogleCloudVisionV1p4beta1AnnotateFileResponse[] $responses
+         */
+        public function setResponses($responses)
+        {
+        }
+        /**
+         * @return GoogleCloudVisionV1p4beta1AnnotateFileResponse[]
+         */
+        public function getResponses()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudVisionV1p4beta1AnnotateFileResponse[]
+     * Runtime class alias of \Google\Service\Vision\GoogleCloudVisionV1p4beta1BatchAnnotateFilesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResponses()
+    class Google_Service_Vision_GoogleCloudVisionV1p4beta1BatchAnnotateFilesResponse extends \Google\Service\Vision\GoogleCloudVisionV1p4beta1BatchAnnotateFilesResponse
     {
     }
 }

@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1FlattenedApiVersionOperationDeploymentView extends \Google\Model
-{
-    protected $apiType = GoogleCloudApihubV1Api::class;
-    protected $apiDataType = '';
-    protected $apiOperationType = GoogleCloudApihubV1ApiOperation::class;
-    protected $apiOperationDataType = '';
-    protected $deploymentType = GoogleCloudApihubV1Deployment::class;
-    protected $deploymentDataType = '';
-    protected $versionType = GoogleCloudApihubV1Version::class;
-    protected $versionDataType = '';
-    /**
-     * The API.
-     *
-     * @param GoogleCloudApihubV1Api $api
-     */
-    public function setApi(GoogleCloudApihubV1Api $api)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1FlattenedApiVersionOperationDeploymentView extends \Google\Model
     {
+        protected $apiType = GoogleCloudApihubV1Api::class;
+        protected $apiDataType = '';
+        protected $apiOperationType = GoogleCloudApihubV1ApiOperation::class;
+        protected $apiOperationDataType = '';
+        protected $deploymentType = GoogleCloudApihubV1Deployment::class;
+        protected $deploymentDataType = '';
+        protected $versionType = GoogleCloudApihubV1Version::class;
+        protected $versionDataType = '';
+        /**
+         * The API.
+         *
+         * @param GoogleCloudApihubV1Api $api
+         */
+        public function setApi(GoogleCloudApihubV1Api $api)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1Api
+         */
+        public function getApi()
+        {
+        }
+        /**
+         * The API operation.
+         *
+         * @param GoogleCloudApihubV1ApiOperation $apiOperation
+         */
+        public function setApiOperation(GoogleCloudApihubV1ApiOperation $apiOperation)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1ApiOperation
+         */
+        public function getApiOperation()
+        {
+        }
+        /**
+         * The deployment.
+         *
+         * @param GoogleCloudApihubV1Deployment $deployment
+         */
+        public function setDeployment(GoogleCloudApihubV1Deployment $deployment)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1Deployment
+         */
+        public function getDeployment()
+        {
+        }
+        /**
+         * The version.
+         *
+         * @param GoogleCloudApihubV1Version $version
+         */
+        public function setVersion(GoogleCloudApihubV1Version $version)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1Version
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApihubV1Api
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1FlattenedApiVersionOperationDeploymentView registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApi()
-    {
-    }
-    /**
-     * The API operation.
-     *
-     * @param GoogleCloudApihubV1ApiOperation $apiOperation
-     */
-    public function setApiOperation(GoogleCloudApihubV1ApiOperation $apiOperation)
-    {
-    }
-    /**
-     * @return GoogleCloudApihubV1ApiOperation
-     */
-    public function getApiOperation()
-    {
-    }
-    /**
-     * The deployment.
-     *
-     * @param GoogleCloudApihubV1Deployment $deployment
-     */
-    public function setDeployment(GoogleCloudApihubV1Deployment $deployment)
-    {
-    }
-    /**
-     * @return GoogleCloudApihubV1Deployment
-     */
-    public function getDeployment()
-    {
-    }
-    /**
-     * The version.
-     *
-     * @param GoogleCloudApihubV1Version $version
-     */
-    public function setVersion(GoogleCloudApihubV1Version $version)
-    {
-    }
-    /**
-     * @return GoogleCloudApihubV1Version
-     */
-    public function getVersion()
+    class Google_Service_APIhub_GoogleCloudApihubV1FlattenedApiVersionOperationDeploymentView extends \Google\Service\APIhub\GoogleCloudApihubV1FlattenedApiVersionOperationDeploymentView
     {
     }
 }

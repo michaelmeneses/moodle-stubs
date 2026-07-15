@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1GenerationConfigRoutingConfig extends \Google\Model
-{
-    protected $autoModeType = GoogleCloudAiplatformV1GenerationConfigRoutingConfigAutoRoutingMode::class;
-    protected $autoModeDataType = '';
-    protected $manualModeType = GoogleCloudAiplatformV1GenerationConfigRoutingConfigManualRoutingMode::class;
-    protected $manualModeDataType = '';
-    /**
-     * In this mode, the model is selected automatically based on the content of
-     * the request.
-     *
-     * @param GoogleCloudAiplatformV1GenerationConfigRoutingConfigAutoRoutingMode $autoMode
-     */
-    public function setAutoMode(GoogleCloudAiplatformV1GenerationConfigRoutingConfigAutoRoutingMode $autoMode)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1GenerationConfigRoutingConfig extends \Google\Model
     {
+        protected $autoModeType = GoogleCloudAiplatformV1GenerationConfigRoutingConfigAutoRoutingMode::class;
+        protected $autoModeDataType = '';
+        protected $manualModeType = GoogleCloudAiplatformV1GenerationConfigRoutingConfigManualRoutingMode::class;
+        protected $manualModeDataType = '';
+        /**
+         * In this mode, the model is selected automatically based on the content of
+         * the request.
+         *
+         * @param GoogleCloudAiplatformV1GenerationConfigRoutingConfigAutoRoutingMode $autoMode
+         */
+        public function setAutoMode(GoogleCloudAiplatformV1GenerationConfigRoutingConfigAutoRoutingMode $autoMode)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1GenerationConfigRoutingConfigAutoRoutingMode
+         */
+        public function getAutoMode()
+        {
+        }
+        /**
+         * In this mode, the model is specified manually.
+         *
+         * @param GoogleCloudAiplatformV1GenerationConfigRoutingConfigManualRoutingMode $manualMode
+         */
+        public function setManualMode(GoogleCloudAiplatformV1GenerationConfigRoutingConfigManualRoutingMode $manualMode)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1GenerationConfigRoutingConfigManualRoutingMode
+         */
+        public function getManualMode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1GenerationConfigRoutingConfigAutoRoutingMode
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1GenerationConfigRoutingConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAutoMode()
-    {
-    }
-    /**
-     * In this mode, the model is specified manually.
-     *
-     * @param GoogleCloudAiplatformV1GenerationConfigRoutingConfigManualRoutingMode $manualMode
-     */
-    public function setManualMode(GoogleCloudAiplatformV1GenerationConfigRoutingConfigManualRoutingMode $manualMode)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1GenerationConfigRoutingConfigManualRoutingMode
-     */
-    public function getManualMode()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1GenerationConfigRoutingConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1GenerationConfigRoutingConfig
     {
     }
 }

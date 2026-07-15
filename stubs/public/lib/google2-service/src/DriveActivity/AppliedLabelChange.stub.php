@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveActivity;
-
-class AppliedLabelChange extends \Google\Collection
-{
-    protected $collection_key = 'changes';
-    protected $changesType = AppliedLabelChangeDetail::class;
-    protected $changesDataType = 'array';
-    /**
-     * Changes that were made to the Label on the Target.
-     *
-     * @param AppliedLabelChangeDetail[] $changes
-     */
-    public function setChanges($changes)
+namespace Google\Service\DriveActivity {
+    class AppliedLabelChange extends \Google\Collection
     {
+        protected $collection_key = 'changes';
+        protected $changesType = AppliedLabelChangeDetail::class;
+        protected $changesDataType = 'array';
+        /**
+         * Changes that were made to the Label on the Target.
+         *
+         * @param AppliedLabelChangeDetail[] $changes
+         */
+        public function setChanges($changes)
+        {
+        }
+        /**
+         * @return AppliedLabelChangeDetail[]
+         */
+        public function getChanges()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppliedLabelChangeDetail[]
+     * Runtime class alias of \Google\Service\DriveActivity\AppliedLabelChange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChanges()
+    class Google_Service_DriveActivity_AppliedLabelChange extends \Google\Service\DriveActivity\AppliedLabelChange
     {
     }
 }

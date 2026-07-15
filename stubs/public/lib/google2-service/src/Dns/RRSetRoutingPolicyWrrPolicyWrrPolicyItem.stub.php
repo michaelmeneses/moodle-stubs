@@ -21,100 +21,109 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dns;
-
-class RRSetRoutingPolicyWrrPolicyWrrPolicyItem extends \Google\Collection
-{
-    protected $collection_key = 'signatureRrdatas';
-    protected $healthCheckedTargetsType = RRSetRoutingPolicyHealthCheckTargets::class;
-    protected $healthCheckedTargetsDataType = '';
-    /**
-     * @var string
-     */
-    public $kind;
-    /**
-     * @var string[]
-     */
-    public $rrdatas;
-    /**
-     * DNSSEC generated signatures for all the `rrdata` within this item. When
-     * using health-checked targets for DNSSEC-enabled zones, you can only use at
-     * most one health-checked IP address per item.
-     *
-     * @var string[]
-     */
-    public $signatureRrdatas;
-    /**
-     * The weight corresponding to this `WrrPolicyItem` object. When multiple
-     * `WrrPolicyItem` objects are configured, the probability of returning an
-     * `WrrPolicyItem` object's data is proportional to its weight relative to the
-     * sum of weights configured for all items. This weight must be non-negative.
-     *
-     * @var 
-     */
-    public $weight;
-    /**
-     * Endpoints that are health checked before making the routing decision. The
-     * unhealthy endpoints are omitted from the result. If all endpoints within a
-     * bucket are unhealthy, we choose a different bucket (sampled with respect to
-     * its weight) for responding. If DNSSEC is enabled for this zone, only one of
-     * `rrdata` or `health_checked_targets` can be set.
-     *
-     * @param RRSetRoutingPolicyHealthCheckTargets $healthCheckedTargets
-     */
-    public function setHealthCheckedTargets(RRSetRoutingPolicyHealthCheckTargets $healthCheckedTargets)
+namespace Google\Service\Dns {
+    class RRSetRoutingPolicyWrrPolicyWrrPolicyItem extends \Google\Collection
     {
+        protected $collection_key = 'signatureRrdatas';
+        protected $healthCheckedTargetsType = RRSetRoutingPolicyHealthCheckTargets::class;
+        protected $healthCheckedTargetsDataType = '';
+        /**
+         * @var string
+         */
+        public $kind;
+        /**
+         * @var string[]
+         */
+        public $rrdatas;
+        /**
+         * DNSSEC generated signatures for all the `rrdata` within this item. When
+         * using health-checked targets for DNSSEC-enabled zones, you can only use at
+         * most one health-checked IP address per item.
+         *
+         * @var string[]
+         */
+        public $signatureRrdatas;
+        /**
+         * The weight corresponding to this `WrrPolicyItem` object. When multiple
+         * `WrrPolicyItem` objects are configured, the probability of returning an
+         * `WrrPolicyItem` object's data is proportional to its weight relative to the
+         * sum of weights configured for all items. This weight must be non-negative.
+         *
+         * @var 
+         */
+        public $weight;
+        /**
+         * Endpoints that are health checked before making the routing decision. The
+         * unhealthy endpoints are omitted from the result. If all endpoints within a
+         * bucket are unhealthy, we choose a different bucket (sampled with respect to
+         * its weight) for responding. If DNSSEC is enabled for this zone, only one of
+         * `rrdata` or `health_checked_targets` can be set.
+         *
+         * @param RRSetRoutingPolicyHealthCheckTargets $healthCheckedTargets
+         */
+        public function setHealthCheckedTargets(RRSetRoutingPolicyHealthCheckTargets $healthCheckedTargets)
+        {
+        }
+        /**
+         * @return RRSetRoutingPolicyHealthCheckTargets
+         */
+        public function getHealthCheckedTargets()
+        {
+        }
+        /**
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * @param string[] $rrdatas
+         */
+        public function setRrdatas($rrdatas)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRrdatas()
+        {
+        }
+        /**
+         * DNSSEC generated signatures for all the `rrdata` within this item. When
+         * using health-checked targets for DNSSEC-enabled zones, you can only use at
+         * most one health-checked IP address per item.
+         *
+         * @param string[] $signatureRrdatas
+         */
+        public function setSignatureRrdatas($signatureRrdatas)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSignatureRrdatas()
+        {
+        }
+        public function setWeight($weight)
+        {
+        }
+        public function getWeight()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RRSetRoutingPolicyHealthCheckTargets
+     * Runtime class alias of \Google\Service\Dns\RRSetRoutingPolicyWrrPolicyWrrPolicyItem registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHealthCheckedTargets()
-    {
-    }
-    /**
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * @param string[] $rrdatas
-     */
-    public function setRrdatas($rrdatas)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRrdatas()
-    {
-    }
-    /**
-     * DNSSEC generated signatures for all the `rrdata` within this item. When
-     * using health-checked targets for DNSSEC-enabled zones, you can only use at
-     * most one health-checked IP address per item.
-     *
-     * @param string[] $signatureRrdatas
-     */
-    public function setSignatureRrdatas($signatureRrdatas)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSignatureRrdatas()
-    {
-    }
-    public function setWeight($weight)
-    {
-    }
-    public function getWeight()
+    class Google_Service_Dns_RRSetRoutingPolicyWrrPolicyWrrPolicyItem extends \Google\Service\Dns\RRSetRoutingPolicyWrrPolicyWrrPolicyItem
     {
     }
 }

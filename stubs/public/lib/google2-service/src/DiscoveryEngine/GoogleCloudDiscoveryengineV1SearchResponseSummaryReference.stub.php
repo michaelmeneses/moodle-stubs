@@ -21,89 +21,98 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1SearchResponseSummaryReference extends \Google\Collection
-{
-    protected $collection_key = 'chunkContents';
-    protected $chunkContentsType = GoogleCloudDiscoveryengineV1SearchResponseSummaryReferenceChunkContent::class;
-    protected $chunkContentsDataType = 'array';
-    /**
-     * Required. Document.name of the document. Full resource name of the
-     * referenced document, in the format
-     * `projects/locations/collections/dataStores/branches/documents`.
-     *
-     * @var string
-     */
-    public $document;
-    /**
-     * Title of the document.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * Cloud Storage or HTTP uri for the document.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * List of cited chunk contents derived from document content.
-     *
-     * @param GoogleCloudDiscoveryengineV1SearchResponseSummaryReferenceChunkContent[] $chunkContents
-     */
-    public function setChunkContents($chunkContents)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1SearchResponseSummaryReference extends \Google\Collection
     {
+        protected $collection_key = 'chunkContents';
+        protected $chunkContentsType = GoogleCloudDiscoveryengineV1SearchResponseSummaryReferenceChunkContent::class;
+        protected $chunkContentsDataType = 'array';
+        /**
+         * Required. Document.name of the document. Full resource name of the
+         * referenced document, in the format
+         * `projects/locations/collections/dataStores/branches/documents`.
+         *
+         * @var string
+         */
+        public $document;
+        /**
+         * Title of the document.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * Cloud Storage or HTTP uri for the document.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * List of cited chunk contents derived from document content.
+         *
+         * @param GoogleCloudDiscoveryengineV1SearchResponseSummaryReferenceChunkContent[] $chunkContents
+         */
+        public function setChunkContents($chunkContents)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1SearchResponseSummaryReferenceChunkContent[]
+         */
+        public function getChunkContents()
+        {
+        }
+        /**
+         * Required. Document.name of the document. Full resource name of the
+         * referenced document, in the format
+         * `projects/locations/collections/dataStores/branches/documents`.
+         *
+         * @param string $document
+         */
+        public function setDocument($document)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDocument()
+        {
+        }
+        /**
+         * Title of the document.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * Cloud Storage or HTTP uri for the document.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1SearchResponseSummaryReferenceChunkContent[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1SearchResponseSummaryReference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChunkContents()
-    {
-    }
-    /**
-     * Required. Document.name of the document. Full resource name of the
-     * referenced document, in the format
-     * `projects/locations/collections/dataStores/branches/documents`.
-     *
-     * @param string $document
-     */
-    public function setDocument($document)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDocument()
-    {
-    }
-    /**
-     * Title of the document.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
-    {
-    }
-    /**
-     * Cloud Storage or HTTP uri for the document.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1SearchResponseSummaryReference extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1SearchResponseSummaryReference
     {
     }
 }

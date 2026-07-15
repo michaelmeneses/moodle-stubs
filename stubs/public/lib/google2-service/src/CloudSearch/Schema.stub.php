@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class Schema extends \Google\Collection
-{
-    protected $collection_key = 'operationIds';
-    protected $objectDefinitionsType = ObjectDefinition::class;
-    protected $objectDefinitionsDataType = 'array';
-    /**
-     * IDs of the Long Running Operations (LROs) currently running for this
-     * schema. After modifying the schema, wait for operations to complete before
-     * indexing additional content.
-     *
-     * @var string[]
-     */
-    public $operationIds;
-    /**
-     * The list of top-level objects for the data source. The maximum number of
-     * elements is 10.
-     *
-     * @param ObjectDefinition[] $objectDefinitions
-     */
-    public function setObjectDefinitions($objectDefinitions)
+namespace Google\Service\CloudSearch {
+    class Schema extends \Google\Collection
     {
+        protected $collection_key = 'operationIds';
+        protected $objectDefinitionsType = ObjectDefinition::class;
+        protected $objectDefinitionsDataType = 'array';
+        /**
+         * IDs of the Long Running Operations (LROs) currently running for this
+         * schema. After modifying the schema, wait for operations to complete before
+         * indexing additional content.
+         *
+         * @var string[]
+         */
+        public $operationIds;
+        /**
+         * The list of top-level objects for the data source. The maximum number of
+         * elements is 10.
+         *
+         * @param ObjectDefinition[] $objectDefinitions
+         */
+        public function setObjectDefinitions($objectDefinitions)
+        {
+        }
+        /**
+         * @return ObjectDefinition[]
+         */
+        public function getObjectDefinitions()
+        {
+        }
+        /**
+         * IDs of the Long Running Operations (LROs) currently running for this
+         * schema. After modifying the schema, wait for operations to complete before
+         * indexing additional content.
+         *
+         * @param string[] $operationIds
+         */
+        public function setOperationIds($operationIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getOperationIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ObjectDefinition[]
+     * Runtime class alias of \Google\Service\CloudSearch\Schema registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getObjectDefinitions()
-    {
-    }
-    /**
-     * IDs of the Long Running Operations (LROs) currently running for this
-     * schema. After modifying the schema, wait for operations to complete before
-     * indexing additional content.
-     *
-     * @param string[] $operationIds
-     */
-    public function setOperationIds($operationIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getOperationIds()
+    class Google_Service_CloudSearch_Schema extends \Google\Service\CloudSearch\Schema
     {
     }
 }

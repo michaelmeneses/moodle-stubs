@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1DocumentPageImage extends \Google\Model
-{
-    /**
-     * Raw byte content of the image.
-     *
-     * @var string
-     */
-    public $content;
-    /**
-     * Height of the image in pixels.
-     *
-     * @var int
-     */
-    public $height;
-    /**
-     * Encoding [media type (MIME type)](https://www.iana.org/assignments/media-
-     * types/media-types.xhtml) for the image.
-     *
-     * @var string
-     */
-    public $mimeType;
-    /**
-     * Width of the image in pixels.
-     *
-     * @var int
-     */
-    public $width;
-    /**
-     * Raw byte content of the image.
-     *
-     * @param string $content
-     */
-    public function setContent($content)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1DocumentPageImage extends \Google\Model
     {
+        /**
+         * Raw byte content of the image.
+         *
+         * @var string
+         */
+        public $content;
+        /**
+         * Height of the image in pixels.
+         *
+         * @var int
+         */
+        public $height;
+        /**
+         * Encoding [media type (MIME type)](https://www.iana.org/assignments/media-
+         * types/media-types.xhtml) for the image.
+         *
+         * @var string
+         */
+        public $mimeType;
+        /**
+         * Width of the image in pixels.
+         *
+         * @var int
+         */
+        public $width;
+        /**
+         * Raw byte content of the image.
+         *
+         * @param string $content
+         */
+        public function setContent($content)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContent()
+        {
+        }
+        /**
+         * Height of the image in pixels.
+         *
+         * @param int $height
+         */
+        public function setHeight($height)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getHeight()
+        {
+        }
+        /**
+         * Encoding [media type (MIME type)](https://www.iana.org/assignments/media-
+         * types/media-types.xhtml) for the image.
+         *
+         * @param string $mimeType
+         */
+        public function setMimeType($mimeType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMimeType()
+        {
+        }
+        /**
+         * Width of the image in pixels.
+         *
+         * @param int $width
+         */
+        public function setWidth($width)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getWidth()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1DocumentPageImage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContent()
-    {
-    }
-    /**
-     * Height of the image in pixels.
-     *
-     * @param int $height
-     */
-    public function setHeight($height)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getHeight()
-    {
-    }
-    /**
-     * Encoding [media type (MIME type)](https://www.iana.org/assignments/media-
-     * types/media-types.xhtml) for the image.
-     *
-     * @param string $mimeType
-     */
-    public function setMimeType($mimeType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMimeType()
-    {
-    }
-    /**
-     * Width of the image in pixels.
-     *
-     * @param int $width
-     */
-    public function setWidth($width)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getWidth()
+    class Google_Service_Document_GoogleCloudDocumentaiV1DocumentPageImage extends \Google\Service\Document\GoogleCloudDocumentaiV1DocumentPageImage
     {
     }
 }

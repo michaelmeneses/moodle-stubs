@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RealTimeBidding;
-
-class WatchCreativesResponse extends \Google\Model
-{
-    /**
-     * The Pub/Sub subscription that can be used to pull creative status
-     * notifications. This would be of the format
-     * `projects/{project_id}/subscriptions/{subscription_id}`. Subscription is
-     * created with pull delivery. All service accounts belonging to the bidder
-     * will have read access to this subscription. Subscriptions that are inactive
-     * for more than 90 days will be disabled. Use watchCreatives to re-enable the
-     * subscription.
-     *
-     * @var string
-     */
-    public $subscription;
-    /**
-     * The Pub/Sub topic that will be used to publish creative serving status
-     * notifications. This would be of the format
-     * `projects/{project_id}/topics/{topic_id}`.
-     *
-     * @var string
-     */
-    public $topic;
-    /**
-     * The Pub/Sub subscription that can be used to pull creative status
-     * notifications. This would be of the format
-     * `projects/{project_id}/subscriptions/{subscription_id}`. Subscription is
-     * created with pull delivery. All service accounts belonging to the bidder
-     * will have read access to this subscription. Subscriptions that are inactive
-     * for more than 90 days will be disabled. Use watchCreatives to re-enable the
-     * subscription.
-     *
-     * @param string $subscription
-     */
-    public function setSubscription($subscription)
+namespace Google\Service\RealTimeBidding {
+    class WatchCreativesResponse extends \Google\Model
     {
+        /**
+         * The Pub/Sub subscription that can be used to pull creative status
+         * notifications. This would be of the format
+         * `projects/{project_id}/subscriptions/{subscription_id}`. Subscription is
+         * created with pull delivery. All service accounts belonging to the bidder
+         * will have read access to this subscription. Subscriptions that are inactive
+         * for more than 90 days will be disabled. Use watchCreatives to re-enable the
+         * subscription.
+         *
+         * @var string
+         */
+        public $subscription;
+        /**
+         * The Pub/Sub topic that will be used to publish creative serving status
+         * notifications. This would be of the format
+         * `projects/{project_id}/topics/{topic_id}`.
+         *
+         * @var string
+         */
+        public $topic;
+        /**
+         * The Pub/Sub subscription that can be used to pull creative status
+         * notifications. This would be of the format
+         * `projects/{project_id}/subscriptions/{subscription_id}`. Subscription is
+         * created with pull delivery. All service accounts belonging to the bidder
+         * will have read access to this subscription. Subscriptions that are inactive
+         * for more than 90 days will be disabled. Use watchCreatives to re-enable the
+         * subscription.
+         *
+         * @param string $subscription
+         */
+        public function setSubscription($subscription)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubscription()
+        {
+        }
+        /**
+         * The Pub/Sub topic that will be used to publish creative serving status
+         * notifications. This would be of the format
+         * `projects/{project_id}/topics/{topic_id}`.
+         *
+         * @param string $topic
+         */
+        public function setTopic($topic)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTopic()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\RealTimeBidding\WatchCreativesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSubscription()
-    {
-    }
-    /**
-     * The Pub/Sub topic that will be used to publish creative serving status
-     * notifications. This would be of the format
-     * `projects/{project_id}/topics/{topic_id}`.
-     *
-     * @param string $topic
-     */
-    public function setTopic($topic)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTopic()
+    class Google_Service_RealTimeBidding_WatchCreativesResponse extends \Google\Service\RealTimeBidding\WatchCreativesResponse
     {
     }
 }

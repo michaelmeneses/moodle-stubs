@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AreaInsights;
-
-class Circle extends \Google\Model
-{
-    protected $latLngType = LatLng::class;
-    protected $latLngDataType = '';
-    /**
-     * **Format:** Must be in the format `places/PLACE_ID`, where `PLACE_ID` is
-     * the unique identifier of a place. For example:
-     * `places/ChIJgUbEo8cfqokR5lP9_Wh_DaM`.
-     *
-     * @var string
-     */
-    public $place;
-    /**
-     * Optional. The radius of the circle in meters
-     *
-     * @var int
-     */
-    public $radius;
-    /**
-     * The latitude and longitude of the center of the circle.
-     *
-     * @param LatLng $latLng
-     */
-    public function setLatLng(LatLng $latLng)
+namespace Google\Service\AreaInsights {
+    class Circle extends \Google\Model
     {
+        protected $latLngType = LatLng::class;
+        protected $latLngDataType = '';
+        /**
+         * **Format:** Must be in the format `places/PLACE_ID`, where `PLACE_ID` is
+         * the unique identifier of a place. For example:
+         * `places/ChIJgUbEo8cfqokR5lP9_Wh_DaM`.
+         *
+         * @var string
+         */
+        public $place;
+        /**
+         * Optional. The radius of the circle in meters
+         *
+         * @var int
+         */
+        public $radius;
+        /**
+         * The latitude and longitude of the center of the circle.
+         *
+         * @param LatLng $latLng
+         */
+        public function setLatLng(LatLng $latLng)
+        {
+        }
+        /**
+         * @return LatLng
+         */
+        public function getLatLng()
+        {
+        }
+        /**
+         * **Format:** Must be in the format `places/PLACE_ID`, where `PLACE_ID` is
+         * the unique identifier of a place. For example:
+         * `places/ChIJgUbEo8cfqokR5lP9_Wh_DaM`.
+         *
+         * @param string $place
+         */
+        public function setPlace($place)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPlace()
+        {
+        }
+        /**
+         * Optional. The radius of the circle in meters
+         *
+         * @param int $radius
+         */
+        public function setRadius($radius)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRadius()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LatLng
+     * Runtime class alias of \Google\Service\AreaInsights\Circle registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLatLng()
-    {
-    }
-    /**
-     * **Format:** Must be in the format `places/PLACE_ID`, where `PLACE_ID` is
-     * the unique identifier of a place. For example:
-     * `places/ChIJgUbEo8cfqokR5lP9_Wh_DaM`.
-     *
-     * @param string $place
-     */
-    public function setPlace($place)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPlace()
-    {
-    }
-    /**
-     * Optional. The radius of the circle in meters
-     *
-     * @param int $radius
-     */
-    public function setRadius($radius)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getRadius()
+    class Google_Service_AreaInsights_Circle extends \Google\Service\AreaInsights\Circle
     {
     }
 }

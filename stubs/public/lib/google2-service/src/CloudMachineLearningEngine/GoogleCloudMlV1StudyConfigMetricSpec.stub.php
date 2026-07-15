@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudMachineLearningEngine;
-
-class GoogleCloudMlV1StudyConfigMetricSpec extends \Google\Model
-{
-    /**
-     * Goal Type will default to maximize.
-     */
-    public const GOAL_GOAL_TYPE_UNSPECIFIED = 'GOAL_TYPE_UNSPECIFIED';
-    /**
-     * Maximize the goal metric.
-     */
-    public const GOAL_MAXIMIZE = 'MAXIMIZE';
-    /**
-     * Minimize the goal metric.
-     */
-    public const GOAL_MINIMIZE = 'MINIMIZE';
-    /**
-     * Required. The optimization goal of the metric.
-     *
-     * @var string
-     */
-    public $goal;
-    /**
-     * Required. The name of the metric.
-     *
-     * @var string
-     */
-    public $metric;
-    /**
-     * Required. The optimization goal of the metric.
-     *
-     * Accepted values: GOAL_TYPE_UNSPECIFIED, MAXIMIZE, MINIMIZE
-     *
-     * @param self::GOAL_* $goal
-     */
-    public function setGoal($goal)
+namespace Google\Service\CloudMachineLearningEngine {
+    class GoogleCloudMlV1StudyConfigMetricSpec extends \Google\Model
     {
+        /**
+         * Goal Type will default to maximize.
+         */
+        public const GOAL_GOAL_TYPE_UNSPECIFIED = 'GOAL_TYPE_UNSPECIFIED';
+        /**
+         * Maximize the goal metric.
+         */
+        public const GOAL_MAXIMIZE = 'MAXIMIZE';
+        /**
+         * Minimize the goal metric.
+         */
+        public const GOAL_MINIMIZE = 'MINIMIZE';
+        /**
+         * Required. The optimization goal of the metric.
+         *
+         * @var string
+         */
+        public $goal;
+        /**
+         * Required. The name of the metric.
+         *
+         * @var string
+         */
+        public $metric;
+        /**
+         * Required. The optimization goal of the metric.
+         *
+         * Accepted values: GOAL_TYPE_UNSPECIFIED, MAXIMIZE, MINIMIZE
+         *
+         * @param self::GOAL_* $goal
+         */
+        public function setGoal($goal)
+        {
+        }
+        /**
+         * @return self::GOAL_*
+         */
+        public function getGoal()
+        {
+        }
+        /**
+         * Required. The name of the metric.
+         *
+         * @param string $metric
+         */
+        public function setMetric($metric)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMetric()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::GOAL_*
+     * Runtime class alias of \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1StudyConfigMetricSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGoal()
-    {
-    }
-    /**
-     * Required. The name of the metric.
-     *
-     * @param string $metric
-     */
-    public function setMetric($metric)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMetric()
+    class Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1StudyConfigMetricSpec extends \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1StudyConfigMetricSpec
     {
     }
 }

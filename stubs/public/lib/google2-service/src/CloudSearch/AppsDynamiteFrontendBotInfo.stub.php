@@ -21,165 +21,174 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteFrontendBotInfo extends \Google\Collection
-{
-    protected $collection_key = 'supportedUses';
-    protected $appIdType = AppsDynamiteAppId::class;
-    protected $appIdDataType = '';
-    /**
-     * @var string
-     */
-    public $botAvatarUrl;
-    /**
-     * @var string
-     */
-    public $botName;
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var string
-     */
-    public $developerName;
-    /**
-     * @var string
-     */
-    public $marketPlaceBannerUrl;
-    /**
-     * @var string
-     */
-    public $status;
-    protected $supportUrlsType = AppsDynamiteFrontendBotInfoSupportUrls::class;
-    protected $supportUrlsDataType = '';
-    /**
-     * @var string[]
-     */
-    public $supportedUses;
-    /**
-     * @var string
-     */
-    public $whitelistStatus;
-    /**
-     * @param AppsDynamiteAppId
-     */
-    public function setAppId(AppsDynamiteAppId $appId)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteFrontendBotInfo extends \Google\Collection
     {
+        protected $collection_key = 'supportedUses';
+        protected $appIdType = AppsDynamiteAppId::class;
+        protected $appIdDataType = '';
+        /**
+         * @var string
+         */
+        public $botAvatarUrl;
+        /**
+         * @var string
+         */
+        public $botName;
+        /**
+         * @var string
+         */
+        public $description;
+        /**
+         * @var string
+         */
+        public $developerName;
+        /**
+         * @var string
+         */
+        public $marketPlaceBannerUrl;
+        /**
+         * @var string
+         */
+        public $status;
+        protected $supportUrlsType = AppsDynamiteFrontendBotInfoSupportUrls::class;
+        protected $supportUrlsDataType = '';
+        /**
+         * @var string[]
+         */
+        public $supportedUses;
+        /**
+         * @var string
+         */
+        public $whitelistStatus;
+        /**
+         * @param AppsDynamiteAppId
+         */
+        public function setAppId(AppsDynamiteAppId $appId)
+        {
+        }
+        /**
+         * @return AppsDynamiteAppId
+         */
+        public function getAppId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setBotAvatarUrl($botAvatarUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBotAvatarUrl()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setBotName($botName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBotName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDeveloperName($developerName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeveloperName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMarketPlaceBannerUrl($marketPlaceBannerUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMarketPlaceBannerUrl()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStatus()
+        {
+        }
+        /**
+         * @param AppsDynamiteFrontendBotInfoSupportUrls
+         */
+        public function setSupportUrls(AppsDynamiteFrontendBotInfoSupportUrls $supportUrls)
+        {
+        }
+        /**
+         * @return AppsDynamiteFrontendBotInfoSupportUrls
+         */
+        public function getSupportUrls()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setSupportedUses($supportedUses)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSupportedUses()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setWhitelistStatus($whitelistStatus)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWhitelistStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppsDynamiteAppId
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteFrontendBotInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAppId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setBotAvatarUrl($botAvatarUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBotAvatarUrl()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setBotName($botName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBotName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDeveloperName($developerName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeveloperName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMarketPlaceBannerUrl($marketPlaceBannerUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMarketPlaceBannerUrl()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStatus()
-    {
-    }
-    /**
-     * @param AppsDynamiteFrontendBotInfoSupportUrls
-     */
-    public function setSupportUrls(AppsDynamiteFrontendBotInfoSupportUrls $supportUrls)
-    {
-    }
-    /**
-     * @return AppsDynamiteFrontendBotInfoSupportUrls
-     */
-    public function getSupportUrls()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setSupportedUses($supportedUses)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSupportedUses()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setWhitelistStatus($whitelistStatus)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWhitelistStatus()
+    class Google_Service_CloudSearch_AppsDynamiteFrontendBotInfo extends \Google\Service\CloudSearch\AppsDynamiteFrontendBotInfo
     {
     }
 }

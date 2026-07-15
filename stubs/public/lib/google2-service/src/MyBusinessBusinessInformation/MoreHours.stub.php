@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessBusinessInformation;
-
-class MoreHours extends \Google\Collection
-{
-    protected $collection_key = 'periods';
-    /**
-     * Required. Type of hours. Clients should call {#link
-     * businessCategories:BatchGet} to get supported hours types for categories of
-     * their locations.
-     *
-     * @var string
-     */
-    public $hoursTypeId;
-    protected $periodsType = TimePeriod::class;
-    protected $periodsDataType = 'array';
-    /**
-     * Required. Type of hours. Clients should call {#link
-     * businessCategories:BatchGet} to get supported hours types for categories of
-     * their locations.
-     *
-     * @param string $hoursTypeId
-     */
-    public function setHoursTypeId($hoursTypeId)
+namespace Google\Service\MyBusinessBusinessInformation {
+    class MoreHours extends \Google\Collection
     {
+        protected $collection_key = 'periods';
+        /**
+         * Required. Type of hours. Clients should call {#link
+         * businessCategories:BatchGet} to get supported hours types for categories of
+         * their locations.
+         *
+         * @var string
+         */
+        public $hoursTypeId;
+        protected $periodsType = TimePeriod::class;
+        protected $periodsDataType = 'array';
+        /**
+         * Required. Type of hours. Clients should call {#link
+         * businessCategories:BatchGet} to get supported hours types for categories of
+         * their locations.
+         *
+         * @param string $hoursTypeId
+         */
+        public function setHoursTypeId($hoursTypeId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHoursTypeId()
+        {
+        }
+        /**
+         * Required. A collection of times that this location is open. Each period
+         * represents a range of hours when the location is open during the week.
+         *
+         * @param TimePeriod[] $periods
+         */
+        public function setPeriods($periods)
+        {
+        }
+        /**
+         * @return TimePeriod[]
+         */
+        public function getPeriods()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MyBusinessBusinessInformation\MoreHours registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHoursTypeId()
-    {
-    }
-    /**
-     * Required. A collection of times that this location is open. Each period
-     * represents a range of hours when the location is open during the week.
-     *
-     * @param TimePeriod[] $periods
-     */
-    public function setPeriods($periods)
-    {
-    }
-    /**
-     * @return TimePeriod[]
-     */
-    public function getPeriods()
+    class Google_Service_MyBusinessBusinessInformation_MoreHours extends \Google\Service\MyBusinessBusinessInformation\MoreHours
     {
     }
 }

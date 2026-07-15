@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class CreateCollectdTimeSeriesResponse extends \Google\Collection
-{
-    protected $collection_key = 'payloadErrors';
-    protected $payloadErrorsType = CollectdPayloadError::class;
-    protected $payloadErrorsDataType = 'array';
-    protected $summaryType = CreateTimeSeriesSummary::class;
-    protected $summaryDataType = '';
-    /**
-     * Records the error status for points that were not written due to an error
-     * in the request.Failed requests for which nothing is written will return an
-     * error response instead. Requests where data points were rejected by the
-     * backend will set summary instead.
-     *
-     * @param CollectdPayloadError[] $payloadErrors
-     */
-    public function setPayloadErrors($payloadErrors)
+namespace Google\Service\Monitoring {
+    class CreateCollectdTimeSeriesResponse extends \Google\Collection
     {
+        protected $collection_key = 'payloadErrors';
+        protected $payloadErrorsType = CollectdPayloadError::class;
+        protected $payloadErrorsDataType = 'array';
+        protected $summaryType = CreateTimeSeriesSummary::class;
+        protected $summaryDataType = '';
+        /**
+         * Records the error status for points that were not written due to an error
+         * in the request.Failed requests for which nothing is written will return an
+         * error response instead. Requests where data points were rejected by the
+         * backend will set summary instead.
+         *
+         * @param CollectdPayloadError[] $payloadErrors
+         */
+        public function setPayloadErrors($payloadErrors)
+        {
+        }
+        /**
+         * @return CollectdPayloadError[]
+         */
+        public function getPayloadErrors()
+        {
+        }
+        /**
+         * Aggregate statistics from writing the payloads. This field is omitted if
+         * all points were successfully written, so that the response is empty. This
+         * is for backwards compatibility with clients that log errors on any non-
+         * empty response.
+         *
+         * @param CreateTimeSeriesSummary $summary
+         */
+        public function setSummary(CreateTimeSeriesSummary $summary)
+        {
+        }
+        /**
+         * @return CreateTimeSeriesSummary
+         */
+        public function getSummary()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CollectdPayloadError[]
+     * Runtime class alias of \Google\Service\Monitoring\CreateCollectdTimeSeriesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPayloadErrors()
-    {
-    }
-    /**
-     * Aggregate statistics from writing the payloads. This field is omitted if
-     * all points were successfully written, so that the response is empty. This
-     * is for backwards compatibility with clients that log errors on any non-
-     * empty response.
-     *
-     * @param CreateTimeSeriesSummary $summary
-     */
-    public function setSummary(CreateTimeSeriesSummary $summary)
-    {
-    }
-    /**
-     * @return CreateTimeSeriesSummary
-     */
-    public function getSummary()
+    class Google_Service_Monitoring_CreateCollectdTimeSeriesResponse extends \Google\Service\Monitoring\CreateCollectdTimeSeriesResponse
     {
     }
 }

@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InstanceReference extends \Google\Model
-{
-    /**
-     * The URL for a specific instance. @required
-     * compute.instancegroups.addInstances/removeInstances
-     *
-     * @var string
-     */
-    public $instance;
-    /**
-     * The URL for a specific instance. @required
-     * compute.instancegroups.addInstances/removeInstances
-     *
-     * @param string $instance
-     */
-    public function setInstance($instance)
+namespace Google\Service\Compute {
+    class InstanceReference extends \Google\Model
     {
+        /**
+         * The URL for a specific instance. @required
+         * compute.instancegroups.addInstances/removeInstances
+         *
+         * @var string
+         */
+        public $instance;
+        /**
+         * The URL for a specific instance. @required
+         * compute.instancegroups.addInstances/removeInstances
+         *
+         * @param string $instance
+         */
+        public function setInstance($instance)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstance()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\InstanceReference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstance()
+    class Google_Service_Compute_InstanceReference extends \Google\Service\Compute\InstanceReference
     {
     }
 }

@@ -21,87 +21,96 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InstanceGroupManagerVersion extends \Google\Model
-{
-    /**
-     * The URL of the instance template that is specified for this managed
-     * instance group. The group uses this template to create new instances in the
-     * managed instance group until the `targetSize` for this version is reached.
-     * The templates for existing instances in the group do not change unless you
-     * run recreateInstances, runapplyUpdatesToInstances, or set the
-     * group'supdatePolicy.type to PROACTIVE; in those cases, existing instances
-     * are updated until the `targetSize` for this version is reached.
-     *
-     * @var string
-     */
-    public $instanceTemplate;
-    /**
-     * Name of the version. Unique among all versions in the scope of this managed
-     * instance group.
-     *
-     * @var string
-     */
-    public $name;
-    protected $targetSizeType = FixedOrPercent::class;
-    protected $targetSizeDataType = '';
-    /**
-     * The URL of the instance template that is specified for this managed
-     * instance group. The group uses this template to create new instances in the
-     * managed instance group until the `targetSize` for this version is reached.
-     * The templates for existing instances in the group do not change unless you
-     * run recreateInstances, runapplyUpdatesToInstances, or set the
-     * group'supdatePolicy.type to PROACTIVE; in those cases, existing instances
-     * are updated until the `targetSize` for this version is reached.
-     *
-     * @param string $instanceTemplate
-     */
-    public function setInstanceTemplate($instanceTemplate)
+namespace Google\Service\Compute {
+    class InstanceGroupManagerVersion extends \Google\Model
     {
+        /**
+         * The URL of the instance template that is specified for this managed
+         * instance group. The group uses this template to create new instances in the
+         * managed instance group until the `targetSize` for this version is reached.
+         * The templates for existing instances in the group do not change unless you
+         * run recreateInstances, runapplyUpdatesToInstances, or set the
+         * group'supdatePolicy.type to PROACTIVE; in those cases, existing instances
+         * are updated until the `targetSize` for this version is reached.
+         *
+         * @var string
+         */
+        public $instanceTemplate;
+        /**
+         * Name of the version. Unique among all versions in the scope of this managed
+         * instance group.
+         *
+         * @var string
+         */
+        public $name;
+        protected $targetSizeType = FixedOrPercent::class;
+        protected $targetSizeDataType = '';
+        /**
+         * The URL of the instance template that is specified for this managed
+         * instance group. The group uses this template to create new instances in the
+         * managed instance group until the `targetSize` for this version is reached.
+         * The templates for existing instances in the group do not change unless you
+         * run recreateInstances, runapplyUpdatesToInstances, or set the
+         * group'supdatePolicy.type to PROACTIVE; in those cases, existing instances
+         * are updated until the `targetSize` for this version is reached.
+         *
+         * @param string $instanceTemplate
+         */
+        public function setInstanceTemplate($instanceTemplate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstanceTemplate()
+        {
+        }
+        /**
+         * Name of the version. Unique among all versions in the scope of this managed
+         * instance group.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Specifies the intended number of instances to be created from
+         * theinstanceTemplate. The final number of instances created from the
+         * template will be equal to:              - If expressed as a fixed number,
+         * the minimum of either       targetSize.fixed or
+         * instanceGroupManager.targetSize is used.      - if expressed as a percent,
+         * the targetSize      would be (targetSize.percent/100 *
+         * InstanceGroupManager.targetSize) If there is a remainder, the      number
+         * is rounded.       If unset, this version will update any remaining
+         * instances not updated by another version. ReadStarting a canary update for
+         * more information.
+         *
+         * @param FixedOrPercent $targetSize
+         */
+        public function setTargetSize(FixedOrPercent $targetSize)
+        {
+        }
+        /**
+         * @return FixedOrPercent
+         */
+        public function getTargetSize()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\InstanceGroupManagerVersion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstanceTemplate()
-    {
-    }
-    /**
-     * Name of the version. Unique among all versions in the scope of this managed
-     * instance group.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Specifies the intended number of instances to be created from
-     * theinstanceTemplate. The final number of instances created from the
-     * template will be equal to:              - If expressed as a fixed number,
-     * the minimum of either       targetSize.fixed or
-     * instanceGroupManager.targetSize is used.      - if expressed as a percent,
-     * the targetSize      would be (targetSize.percent/100 *
-     * InstanceGroupManager.targetSize) If there is a remainder, the      number
-     * is rounded.       If unset, this version will update any remaining
-     * instances not updated by another version. ReadStarting a canary update for
-     * more information.
-     *
-     * @param FixedOrPercent $targetSize
-     */
-    public function setTargetSize(FixedOrPercent $targetSize)
-    {
-    }
-    /**
-     * @return FixedOrPercent
-     */
-    public function getTargetSize()
+    class Google_Service_Compute_InstanceGroupManagerVersion extends \Google\Service\Compute\InstanceGroupManagerVersion
     {
     }
 }

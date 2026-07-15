@@ -21,118 +21,127 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PeopleService;
-
-class ListConnectionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'connections';
-    protected $connectionsType = Person::class;
-    protected $connectionsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * A token, which can be sent as `sync_token` to retrieve changes since the
-     * last request. Request must set `request_sync_token` to return the sync
-     * token. When the response is paginated, only the last page will contain
-     * `nextSyncToken`.
-     *
-     * @var string
-     */
-    public $nextSyncToken;
-    /**
-     * The total number of items in the list without pagination.
-     *
-     * @var int
-     */
-    public $totalItems;
-    /**
-     * **DEPRECATED** (Please use totalItems) The total number of people in the
-     * list without pagination.
-     *
-     * @deprecated
-     * @var int
-     */
-    public $totalPeople;
-    /**
-     * The list of people that the requestor is connected to.
-     *
-     * @param Person[] $connections
-     */
-    public function setConnections($connections)
+namespace Google\Service\PeopleService {
+    class ListConnectionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'connections';
+        protected $connectionsType = Person::class;
+        protected $connectionsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * A token, which can be sent as `sync_token` to retrieve changes since the
+         * last request. Request must set `request_sync_token` to return the sync
+         * token. When the response is paginated, only the last page will contain
+         * `nextSyncToken`.
+         *
+         * @var string
+         */
+        public $nextSyncToken;
+        /**
+         * The total number of items in the list without pagination.
+         *
+         * @var int
+         */
+        public $totalItems;
+        /**
+         * **DEPRECATED** (Please use totalItems) The total number of people in the
+         * list without pagination.
+         *
+         * @deprecated
+         * @var int
+         */
+        public $totalPeople;
+        /**
+         * The list of people that the requestor is connected to.
+         *
+         * @param Person[] $connections
+         */
+        public function setConnections($connections)
+        {
+        }
+        /**
+         * @return Person[]
+         */
+        public function getConnections()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * A token, which can be sent as `sync_token` to retrieve changes since the
+         * last request. Request must set `request_sync_token` to return the sync
+         * token. When the response is paginated, only the last page will contain
+         * `nextSyncToken`.
+         *
+         * @param string $nextSyncToken
+         */
+        public function setNextSyncToken($nextSyncToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextSyncToken()
+        {
+        }
+        /**
+         * The total number of items in the list without pagination.
+         *
+         * @param int $totalItems
+         */
+        public function setTotalItems($totalItems)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalItems()
+        {
+        }
+        /**
+         * **DEPRECATED** (Please use totalItems) The total number of people in the
+         * list without pagination.
+         *
+         * @deprecated
+         * @param int $totalPeople
+         */
+        public function setTotalPeople($totalPeople)
+        {
+        }
+        /**
+         * @deprecated
+         * @return int
+         */
+        public function getTotalPeople()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Person[]
+     * Runtime class alias of \Google\Service\PeopleService\ListConnectionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConnections()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * A token, which can be sent as `sync_token` to retrieve changes since the
-     * last request. Request must set `request_sync_token` to return the sync
-     * token. When the response is paginated, only the last page will contain
-     * `nextSyncToken`.
-     *
-     * @param string $nextSyncToken
-     */
-    public function setNextSyncToken($nextSyncToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextSyncToken()
-    {
-    }
-    /**
-     * The total number of items in the list without pagination.
-     *
-     * @param int $totalItems
-     */
-    public function setTotalItems($totalItems)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalItems()
-    {
-    }
-    /**
-     * **DEPRECATED** (Please use totalItems) The total number of people in the
-     * list without pagination.
-     *
-     * @deprecated
-     * @param int $totalPeople
-     */
-    public function setTotalPeople($totalPeople)
-    {
-    }
-    /**
-     * @deprecated
-     * @return int
-     */
-    public function getTotalPeople()
+    class Google_Service_PeopleService_ListConnectionsResponse extends \Google\Service\PeopleService\ListConnectionsResponse
     {
     }
 }

@@ -21,120 +21,129 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storage;
-
-class Policy extends \Google\Collection
-{
-    protected $collection_key = 'bindings';
-    protected $bindingsType = PolicyBindings::class;
-    protected $bindingsDataType = 'array';
-    /**
-     * HTTP 1.1  Entity tag for the policy.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * The kind of item this is. For policies, this is always storage#policy. This
-     * field is ignored on input.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The ID of the resource to which this policy belongs. Will be of the form
-     * projects/_/buckets/bucket for buckets,
-     * projects/_/buckets/bucket/objects/object for objects, and
-     * projects/_/buckets/bucket/managedFolders/managedFolder. A specific
-     * generation may be specified by appending #generationNumber to the end of
-     * the object name, e.g. projects/_/buckets/my-bucket/objects/data.txt#17. The
-     * current generation can be denoted with #0. This field is ignored on input.
-     *
-     * @var string
-     */
-    public $resourceId;
-    /**
-     * The IAM policy format version.
-     *
-     * @var int
-     */
-    public $version;
-    /**
-     * An association between a role, which comes with a set of permissions, and
-     * members who may assume that role.
-     *
-     * @param PolicyBindings[] $bindings
-     */
-    public function setBindings($bindings)
+namespace Google\Service\Storage {
+    class Policy extends \Google\Collection
     {
+        protected $collection_key = 'bindings';
+        protected $bindingsType = PolicyBindings::class;
+        protected $bindingsDataType = 'array';
+        /**
+         * HTTP 1.1  Entity tag for the policy.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * The kind of item this is. For policies, this is always storage#policy. This
+         * field is ignored on input.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The ID of the resource to which this policy belongs. Will be of the form
+         * projects/_/buckets/bucket for buckets,
+         * projects/_/buckets/bucket/objects/object for objects, and
+         * projects/_/buckets/bucket/managedFolders/managedFolder. A specific
+         * generation may be specified by appending #generationNumber to the end of
+         * the object name, e.g. projects/_/buckets/my-bucket/objects/data.txt#17. The
+         * current generation can be denoted with #0. This field is ignored on input.
+         *
+         * @var string
+         */
+        public $resourceId;
+        /**
+         * The IAM policy format version.
+         *
+         * @var int
+         */
+        public $version;
+        /**
+         * An association between a role, which comes with a set of permissions, and
+         * members who may assume that role.
+         *
+         * @param PolicyBindings[] $bindings
+         */
+        public function setBindings($bindings)
+        {
+        }
+        /**
+         * @return PolicyBindings[]
+         */
+        public function getBindings()
+        {
+        }
+        /**
+         * HTTP 1.1  Entity tag for the policy.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * The kind of item this is. For policies, this is always storage#policy. This
+         * field is ignored on input.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The ID of the resource to which this policy belongs. Will be of the form
+         * projects/_/buckets/bucket for buckets,
+         * projects/_/buckets/bucket/objects/object for objects, and
+         * projects/_/buckets/bucket/managedFolders/managedFolder. A specific
+         * generation may be specified by appending #generationNumber to the end of
+         * the object name, e.g. projects/_/buckets/my-bucket/objects/data.txt#17. The
+         * current generation can be denoted with #0. This field is ignored on input.
+         *
+         * @param string $resourceId
+         */
+        public function setResourceId($resourceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceId()
+        {
+        }
+        /**
+         * The IAM policy format version.
+         *
+         * @param int $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PolicyBindings[]
+     * Runtime class alias of \Google\Service\Storage\Policy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBindings()
-    {
-    }
-    /**
-     * HTTP 1.1  Entity tag for the policy.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * The kind of item this is. For policies, this is always storage#policy. This
-     * field is ignored on input.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The ID of the resource to which this policy belongs. Will be of the form
-     * projects/_/buckets/bucket for buckets,
-     * projects/_/buckets/bucket/objects/object for objects, and
-     * projects/_/buckets/bucket/managedFolders/managedFolder. A specific
-     * generation may be specified by appending #generationNumber to the end of
-     * the object name, e.g. projects/_/buckets/my-bucket/objects/data.txt#17. The
-     * current generation can be denoted with #0. This field is ignored on input.
-     *
-     * @param string $resourceId
-     */
-    public function setResourceId($resourceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceId()
-    {
-    }
-    /**
-     * The IAM policy format version.
-     *
-     * @param int $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getVersion()
+    class Google_Service_Storage_Policy extends \Google\Service\Storage\Policy
     {
     }
 }

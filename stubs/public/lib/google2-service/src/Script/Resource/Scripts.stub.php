@@ -21,32 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Script\Resource;
-
-/**
- * The "scripts" collection of methods.
- * Typical usage is:
- *  <code>
- *   $scriptService = new Google\Service\Script(...);
- *   $scripts = $scriptService->scripts;
- *  </code>
- */
-class Scripts extends \Google\Service\Resource
-{
+namespace Google\Service\Script\Resource {
+    use Google\Service\Script\ExecutionRequest;
+    use Google\Service\Script\Operation;
     /**
-     * (scripts.run)
-     *
-     * @param string $scriptId The script ID of the script to be executed. Find the
-     * script ID on the **Project settings** page under "IDs." As multiple
-     * executable APIs can be deployed in new IDE for same script, this field should
-     * be populated with DeploymentID generated while deploying in new IDE instead
-     * of script ID.
-     * @param ExecutionRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * The "scripts" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $scriptService = new Google\Service\Script(...);
+     *   $scripts = $scriptService->scripts;
+     *  </code>
      */
-    public function run($scriptId, ExecutionRequest $postBody, $optParams = [])
+    class Scripts extends \Google\Service\Resource
+    {
+        /**
+         * (scripts.run)
+         *
+         * @param string $scriptId The script ID of the script to be executed. Find the
+         * script ID on the **Project settings** page under "IDs." As multiple
+         * executable APIs can be deployed in new IDE for same script, this field should
+         * be populated with DeploymentID generated while deploying in new IDE instead
+         * of script ID.
+         * @param ExecutionRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function run($scriptId, ExecutionRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Script\Resource\Scripts registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Script_Resource_Scripts extends \Google\Service\Script\Resource\Scripts
     {
     }
 }

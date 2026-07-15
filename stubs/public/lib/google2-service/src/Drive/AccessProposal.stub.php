@@ -21,148 +21,157 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Drive;
-
-class AccessProposal extends \Google\Collection
-{
-    protected $collection_key = 'rolesAndViews';
-    /**
-     * The creation time.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * The file ID that the proposal for access is on.
-     *
-     * @var string
-     */
-    public $fileId;
-    /**
-     * The ID of the access proposal.
-     *
-     * @var string
-     */
-    public $proposalId;
-    /**
-     * The email address of the user that will receive permissions, if accepted.
-     *
-     * @var string
-     */
-    public $recipientEmailAddress;
-    /**
-     * The message that the requester added to the proposal.
-     *
-     * @var string
-     */
-    public $requestMessage;
-    /**
-     * The email address of the requesting user.
-     *
-     * @var string
-     */
-    public $requesterEmailAddress;
-    protected $rolesAndViewsType = AccessProposalRoleAndView::class;
-    protected $rolesAndViewsDataType = 'array';
-    /**
-     * The creation time.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\Drive {
+    class AccessProposal extends \Google\Collection
     {
+        protected $collection_key = 'rolesAndViews';
+        /**
+         * The creation time.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * The file ID that the proposal for access is on.
+         *
+         * @var string
+         */
+        public $fileId;
+        /**
+         * The ID of the access proposal.
+         *
+         * @var string
+         */
+        public $proposalId;
+        /**
+         * The email address of the user that will receive permissions, if accepted.
+         *
+         * @var string
+         */
+        public $recipientEmailAddress;
+        /**
+         * The message that the requester added to the proposal.
+         *
+         * @var string
+         */
+        public $requestMessage;
+        /**
+         * The email address of the requesting user.
+         *
+         * @var string
+         */
+        public $requesterEmailAddress;
+        protected $rolesAndViewsType = AccessProposalRoleAndView::class;
+        protected $rolesAndViewsDataType = 'array';
+        /**
+         * The creation time.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * The file ID that the proposal for access is on.
+         *
+         * @param string $fileId
+         */
+        public function setFileId($fileId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFileId()
+        {
+        }
+        /**
+         * The ID of the access proposal.
+         *
+         * @param string $proposalId
+         */
+        public function setProposalId($proposalId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProposalId()
+        {
+        }
+        /**
+         * The email address of the user that will receive permissions, if accepted.
+         *
+         * @param string $recipientEmailAddress
+         */
+        public function setRecipientEmailAddress($recipientEmailAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRecipientEmailAddress()
+        {
+        }
+        /**
+         * The message that the requester added to the proposal.
+         *
+         * @param string $requestMessage
+         */
+        public function setRequestMessage($requestMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestMessage()
+        {
+        }
+        /**
+         * The email address of the requesting user.
+         *
+         * @param string $requesterEmailAddress
+         */
+        public function setRequesterEmailAddress($requesterEmailAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequesterEmailAddress()
+        {
+        }
+        /**
+         * A wrapper for the role and view of an access proposal. For more
+         * information, see [Roles and
+         * permissions](https://developers.google.com/workspace/drive/api/guides/ref-
+         * roles).
+         *
+         * @param AccessProposalRoleAndView[] $rolesAndViews
+         */
+        public function setRolesAndViews($rolesAndViews)
+        {
+        }
+        /**
+         * @return AccessProposalRoleAndView[]
+         */
+        public function getRolesAndViews()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Drive\AccessProposal registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * The file ID that the proposal for access is on.
-     *
-     * @param string $fileId
-     */
-    public function setFileId($fileId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFileId()
-    {
-    }
-    /**
-     * The ID of the access proposal.
-     *
-     * @param string $proposalId
-     */
-    public function setProposalId($proposalId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProposalId()
-    {
-    }
-    /**
-     * The email address of the user that will receive permissions, if accepted.
-     *
-     * @param string $recipientEmailAddress
-     */
-    public function setRecipientEmailAddress($recipientEmailAddress)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRecipientEmailAddress()
-    {
-    }
-    /**
-     * The message that the requester added to the proposal.
-     *
-     * @param string $requestMessage
-     */
-    public function setRequestMessage($requestMessage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestMessage()
-    {
-    }
-    /**
-     * The email address of the requesting user.
-     *
-     * @param string $requesterEmailAddress
-     */
-    public function setRequesterEmailAddress($requesterEmailAddress)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequesterEmailAddress()
-    {
-    }
-    /**
-     * A wrapper for the role and view of an access proposal. For more
-     * information, see [Roles and
-     * permissions](https://developers.google.com/workspace/drive/api/guides/ref-
-     * roles).
-     *
-     * @param AccessProposalRoleAndView[] $rolesAndViews
-     */
-    public function setRolesAndViews($rolesAndViews)
-    {
-    }
-    /**
-     * @return AccessProposalRoleAndView[]
-     */
-    public function getRolesAndViews()
+    class Google_Service_Drive_AccessProposal extends \Google\Service\Drive\AccessProposal
     {
     }
 }

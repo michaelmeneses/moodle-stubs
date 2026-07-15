@@ -21,81 +21,90 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2RemoveLocalInventoriesRequest extends \Google\Collection
-{
-    protected $collection_key = 'placeIds';
-    /**
-     * If set to true, and the Product is not found, the local inventory removal
-     * request will still be processed and retained for at most 1 day and
-     * processed once the Product is created. If set to false, a NOT_FOUND error
-     * is returned if the Product is not found.
-     *
-     * @var bool
-     */
-    public $allowMissing;
-    /**
-     * Required. A list of place IDs to have their inventory deleted. At most 3000
-     * place IDs are allowed per request.
-     *
-     * @var string[]
-     */
-    public $placeIds;
-    /**
-     * The time when the inventory deletions are issued. Used to prevent out-of-
-     * order updates and deletions on local inventory fields. If not provided, the
-     * internal system time will be used.
-     *
-     * @var string
-     */
-    public $removeTime;
-    /**
-     * If set to true, and the Product is not found, the local inventory removal
-     * request will still be processed and retained for at most 1 day and
-     * processed once the Product is created. If set to false, a NOT_FOUND error
-     * is returned if the Product is not found.
-     *
-     * @param bool $allowMissing
-     */
-    public function setAllowMissing($allowMissing)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2RemoveLocalInventoriesRequest extends \Google\Collection
     {
+        protected $collection_key = 'placeIds';
+        /**
+         * If set to true, and the Product is not found, the local inventory removal
+         * request will still be processed and retained for at most 1 day and
+         * processed once the Product is created. If set to false, a NOT_FOUND error
+         * is returned if the Product is not found.
+         *
+         * @var bool
+         */
+        public $allowMissing;
+        /**
+         * Required. A list of place IDs to have their inventory deleted. At most 3000
+         * place IDs are allowed per request.
+         *
+         * @var string[]
+         */
+        public $placeIds;
+        /**
+         * The time when the inventory deletions are issued. Used to prevent out-of-
+         * order updates and deletions on local inventory fields. If not provided, the
+         * internal system time will be used.
+         *
+         * @var string
+         */
+        public $removeTime;
+        /**
+         * If set to true, and the Product is not found, the local inventory removal
+         * request will still be processed and retained for at most 1 day and
+         * processed once the Product is created. If set to false, a NOT_FOUND error
+         * is returned if the Product is not found.
+         *
+         * @param bool $allowMissing
+         */
+        public function setAllowMissing($allowMissing)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAllowMissing()
+        {
+        }
+        /**
+         * Required. A list of place IDs to have their inventory deleted. At most 3000
+         * place IDs are allowed per request.
+         *
+         * @param string[] $placeIds
+         */
+        public function setPlaceIds($placeIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPlaceIds()
+        {
+        }
+        /**
+         * The time when the inventory deletions are issued. Used to prevent out-of-
+         * order updates and deletions on local inventory fields. If not provided, the
+         * internal system time will be used.
+         *
+         * @param string $removeTime
+         */
+        public function setRemoveTime($removeTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRemoveTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2RemoveLocalInventoriesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowMissing()
-    {
-    }
-    /**
-     * Required. A list of place IDs to have their inventory deleted. At most 3000
-     * place IDs are allowed per request.
-     *
-     * @param string[] $placeIds
-     */
-    public function setPlaceIds($placeIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPlaceIds()
-    {
-    }
-    /**
-     * The time when the inventory deletions are issued. Used to prevent out-of-
-     * order updates and deletions on local inventory fields. If not provided, the
-     * internal system time will be used.
-     *
-     * @param string $removeTime
-     */
-    public function setRemoveTime($removeTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRemoveTime()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2RemoveLocalInventoriesRequest extends \Google\Service\CloudRetail\GoogleCloudRetailV2RemoveLocalInventoriesRequest
     {
     }
 }

@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromePolicy;
-
-class GoogleChromePolicyV1BatchModifyGroupPoliciesRequest extends \Google\Collection
-{
-    protected $collection_key = 'requests';
-    protected $requestsType = GoogleChromePolicyV1ModifyGroupPolicyRequest::class;
-    protected $requestsDataType = 'array';
-    /**
-     * @param GoogleChromePolicyV1ModifyGroupPolicyRequest[]
-     */
-    public function setRequests($requests)
+namespace Google\Service\ChromePolicy {
+    class GoogleChromePolicyV1BatchModifyGroupPoliciesRequest extends \Google\Collection
     {
+        protected $collection_key = 'requests';
+        protected $requestsType = GoogleChromePolicyV1ModifyGroupPolicyRequest::class;
+        protected $requestsDataType = 'array';
+        /**
+         * @param GoogleChromePolicyV1ModifyGroupPolicyRequest[]
+         */
+        public function setRequests($requests)
+        {
+        }
+        /**
+         * @return GoogleChromePolicyV1ModifyGroupPolicyRequest[]
+         */
+        public function getRequests()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleChromePolicyV1ModifyGroupPolicyRequest[]
+     * Runtime class alias of \Google\Service\ChromePolicy\GoogleChromePolicyV1BatchModifyGroupPoliciesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequests()
+    class Google_Service_ChromePolicy_GoogleChromePolicyV1BatchModifyGroupPoliciesRequest extends \Google\Service\ChromePolicy\GoogleChromePolicyV1BatchModifyGroupPoliciesRequest
     {
     }
 }

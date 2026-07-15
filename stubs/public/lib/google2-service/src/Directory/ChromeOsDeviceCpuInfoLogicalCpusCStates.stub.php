@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class ChromeOsDeviceCpuInfoLogicalCpusCStates extends \Google\Model
-{
-    /**
-     * Name of the state.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Time spent in the state since the last reboot.
-     *
-     * @var string
-     */
-    public $sessionDuration;
-    /**
-     * Name of the state.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\Directory {
+    class ChromeOsDeviceCpuInfoLogicalCpusCStates extends \Google\Model
     {
+        /**
+         * Name of the state.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Time spent in the state since the last reboot.
+         *
+         * @var string
+         */
+        public $sessionDuration;
+        /**
+         * Name of the state.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Time spent in the state since the last reboot.
+         *
+         * @param string $sessionDuration
+         */
+        public function setSessionDuration($sessionDuration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSessionDuration()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Directory\ChromeOsDeviceCpuInfoLogicalCpusCStates registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Time spent in the state since the last reboot.
-     *
-     * @param string $sessionDuration
-     */
-    public function setSessionDuration($sessionDuration)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSessionDuration()
+    class Google_Service_Directory_ChromeOsDeviceCpuInfoLogicalCpusCStates extends \Google\Service\Directory\ChromeOsDeviceCpuInfoLogicalCpusCStates
     {
     }
 }

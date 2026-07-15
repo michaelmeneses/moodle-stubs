@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudFilestore;
-
-class IOPSPerGB extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $maxReadIopsPerGb;
-    /**
-     * @param string
-     */
-    public function setMaxReadIopsPerGb($maxReadIopsPerGb)
+namespace Google\Service\CloudFilestore {
+    class IOPSPerGB extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $maxReadIopsPerGb;
+        /**
+         * @param string
+         */
+        public function setMaxReadIopsPerGb($maxReadIopsPerGb)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaxReadIopsPerGb()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudFilestore\IOPSPerGB registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaxReadIopsPerGb()
+    class Google_Service_CloudFilestore_IOPSPerGB extends \Google\Service\CloudFilestore\IOPSPerGB
     {
     }
 }

@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Assuredworkloads;
-
-class GoogleCloudAssuredworkloadsV1beta1WorkloadFedrampHighSettings extends \Google\Model
-{
-    protected $kmsSettingsType = GoogleCloudAssuredworkloadsV1beta1WorkloadKMSSettings::class;
-    protected $kmsSettingsDataType = '';
-    /**
-     * @param GoogleCloudAssuredworkloadsV1beta1WorkloadKMSSettings
-     */
-    public function setKmsSettings(GoogleCloudAssuredworkloadsV1beta1WorkloadKMSSettings $kmsSettings)
+namespace Google\Service\Assuredworkloads {
+    class GoogleCloudAssuredworkloadsV1beta1WorkloadFedrampHighSettings extends \Google\Model
     {
+        protected $kmsSettingsType = GoogleCloudAssuredworkloadsV1beta1WorkloadKMSSettings::class;
+        protected $kmsSettingsDataType = '';
+        /**
+         * @param GoogleCloudAssuredworkloadsV1beta1WorkloadKMSSettings
+         */
+        public function setKmsSettings(GoogleCloudAssuredworkloadsV1beta1WorkloadKMSSettings $kmsSettings)
+        {
+        }
+        /**
+         * @return GoogleCloudAssuredworkloadsV1beta1WorkloadKMSSettings
+         */
+        public function getKmsSettings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAssuredworkloadsV1beta1WorkloadKMSSettings
+     * Runtime class alias of \Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1beta1WorkloadFedrampHighSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKmsSettings()
+    class Google_Service_Assuredworkloads_GoogleCloudAssuredworkloadsV1beta1WorkloadFedrampHighSettings extends \Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1beta1WorkloadFedrampHighSettings
     {
     }
 }

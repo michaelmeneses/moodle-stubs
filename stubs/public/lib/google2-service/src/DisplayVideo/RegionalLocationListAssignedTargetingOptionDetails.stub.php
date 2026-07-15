@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class RegionalLocationListAssignedTargetingOptionDetails extends \Google\Model
-{
-    /**
-     * Indicates if this option is being negatively targeted.
-     *
-     * @var bool
-     */
-    public $negative;
-    /**
-     * Required. ID of the regional location list. Should refer to the
-     * location_list_id field of a LocationList resource whose type is
-     * `TARGETING_LOCATION_TYPE_REGIONAL`.
-     *
-     * @var string
-     */
-    public $regionalLocationListId;
-    /**
-     * Indicates if this option is being negatively targeted.
-     *
-     * @param bool $negative
-     */
-    public function setNegative($negative)
+namespace Google\Service\DisplayVideo {
+    class RegionalLocationListAssignedTargetingOptionDetails extends \Google\Model
     {
+        /**
+         * Indicates if this option is being negatively targeted.
+         *
+         * @var bool
+         */
+        public $negative;
+        /**
+         * Required. ID of the regional location list. Should refer to the
+         * location_list_id field of a LocationList resource whose type is
+         * `TARGETING_LOCATION_TYPE_REGIONAL`.
+         *
+         * @var string
+         */
+        public $regionalLocationListId;
+        /**
+         * Indicates if this option is being negatively targeted.
+         *
+         * @param bool $negative
+         */
+        public function setNegative($negative)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getNegative()
+        {
+        }
+        /**
+         * Required. ID of the regional location list. Should refer to the
+         * location_list_id field of a LocationList resource whose type is
+         * `TARGETING_LOCATION_TYPE_REGIONAL`.
+         *
+         * @param string $regionalLocationListId
+         */
+        public function setRegionalLocationListId($regionalLocationListId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegionalLocationListId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DisplayVideo\RegionalLocationListAssignedTargetingOptionDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNegative()
-    {
-    }
-    /**
-     * Required. ID of the regional location list. Should refer to the
-     * location_list_id field of a LocationList resource whose type is
-     * `TARGETING_LOCATION_TYPE_REGIONAL`.
-     *
-     * @param string $regionalLocationListId
-     */
-    public function setRegionalLocationListId($regionalLocationListId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegionalLocationListId()
+    class Google_Service_DisplayVideo_RegionalLocationListAssignedTargetingOptionDetails extends \Google\Service\DisplayVideo\RegionalLocationListAssignedTargetingOptionDetails
     {
     }
 }

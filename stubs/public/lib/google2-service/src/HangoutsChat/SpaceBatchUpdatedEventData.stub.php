@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class SpaceBatchUpdatedEventData extends \Google\Collection
-{
-    protected $collection_key = 'spaces';
-    protected $spacesType = SpaceUpdatedEventData::class;
-    protected $spacesDataType = 'array';
-    /**
-     * A list of updated spaces.
-     *
-     * @param SpaceUpdatedEventData[] $spaces
-     */
-    public function setSpaces($spaces)
+namespace Google\Service\HangoutsChat {
+    class SpaceBatchUpdatedEventData extends \Google\Collection
     {
+        protected $collection_key = 'spaces';
+        protected $spacesType = SpaceUpdatedEventData::class;
+        protected $spacesDataType = 'array';
+        /**
+         * A list of updated spaces.
+         *
+         * @param SpaceUpdatedEventData[] $spaces
+         */
+        public function setSpaces($spaces)
+        {
+        }
+        /**
+         * @return SpaceUpdatedEventData[]
+         */
+        public function getSpaces()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SpaceUpdatedEventData[]
+     * Runtime class alias of \Google\Service\HangoutsChat\SpaceBatchUpdatedEventData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSpaces()
+    class Google_Service_HangoutsChat_SpaceBatchUpdatedEventData extends \Google\Service\HangoutsChat\SpaceBatchUpdatedEventData
     {
     }
 }

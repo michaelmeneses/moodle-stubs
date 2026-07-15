@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Appengine;
-
-class GoogleAppengineV1betaLocationMetadata extends \Google\Model
-{
-    /**
-     * App Engine flexible environment is available in the given
-     * location.@OutputOnly
-     *
-     * @var bool
-     */
-    public $flexibleEnvironmentAvailable;
-    /**
-     * Output only. Search API
-     * (https://cloud.google.com/appengine/docs/standard/python/search) is
-     * available in the given location.
-     *
-     * @var bool
-     */
-    public $searchApiAvailable;
-    /**
-     * App Engine standard environment is available in the given
-     * location.@OutputOnly
-     *
-     * @var bool
-     */
-    public $standardEnvironmentAvailable;
-    /**
-     * App Engine flexible environment is available in the given
-     * location.@OutputOnly
-     *
-     * @param bool $flexibleEnvironmentAvailable
-     */
-    public function setFlexibleEnvironmentAvailable($flexibleEnvironmentAvailable)
+namespace Google\Service\Appengine {
+    class GoogleAppengineV1betaLocationMetadata extends \Google\Model
     {
+        /**
+         * App Engine flexible environment is available in the given
+         * location.@OutputOnly
+         *
+         * @var bool
+         */
+        public $flexibleEnvironmentAvailable;
+        /**
+         * Output only. Search API
+         * (https://cloud.google.com/appengine/docs/standard/python/search) is
+         * available in the given location.
+         *
+         * @var bool
+         */
+        public $searchApiAvailable;
+        /**
+         * App Engine standard environment is available in the given
+         * location.@OutputOnly
+         *
+         * @var bool
+         */
+        public $standardEnvironmentAvailable;
+        /**
+         * App Engine flexible environment is available in the given
+         * location.@OutputOnly
+         *
+         * @param bool $flexibleEnvironmentAvailable
+         */
+        public function setFlexibleEnvironmentAvailable($flexibleEnvironmentAvailable)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getFlexibleEnvironmentAvailable()
+        {
+        }
+        /**
+         * Output only. Search API
+         * (https://cloud.google.com/appengine/docs/standard/python/search) is
+         * available in the given location.
+         *
+         * @param bool $searchApiAvailable
+         */
+        public function setSearchApiAvailable($searchApiAvailable)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSearchApiAvailable()
+        {
+        }
+        /**
+         * App Engine standard environment is available in the given
+         * location.@OutputOnly
+         *
+         * @param bool $standardEnvironmentAvailable
+         */
+        public function setStandardEnvironmentAvailable($standardEnvironmentAvailable)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getStandardEnvironmentAvailable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Appengine\GoogleAppengineV1betaLocationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFlexibleEnvironmentAvailable()
-    {
-    }
-    /**
-     * Output only. Search API
-     * (https://cloud.google.com/appengine/docs/standard/python/search) is
-     * available in the given location.
-     *
-     * @param bool $searchApiAvailable
-     */
-    public function setSearchApiAvailable($searchApiAvailable)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSearchApiAvailable()
-    {
-    }
-    /**
-     * App Engine standard environment is available in the given
-     * location.@OutputOnly
-     *
-     * @param bool $standardEnvironmentAvailable
-     */
-    public function setStandardEnvironmentAvailable($standardEnvironmentAvailable)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getStandardEnvironmentAvailable()
+    class Google_Service_Appengine_GoogleAppengineV1betaLocationMetadata extends \Google\Service\Appengine\GoogleAppengineV1betaLocationMetadata
     {
     }
 }

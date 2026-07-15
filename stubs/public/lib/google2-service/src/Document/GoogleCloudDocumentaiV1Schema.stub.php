@@ -21,37 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1Schema extends \Google\Collection
-{
-    protected $collection_key = 'entityTypes';
-    public $description;
-    public $displayName;
-    protected $entityTypesType = GoogleCloudDocumentaiV1SchemaEntityType::class;
-    protected $entityTypesDataType = 'array';
-    public function setDescription($description)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1Schema extends \Google\Collection
     {
+        protected $collection_key = 'entityTypes';
+        public $description;
+        public $displayName;
+        protected $entityTypesType = GoogleCloudDocumentaiV1SchemaEntityType::class;
+        protected $entityTypesDataType = 'array';
+        public function setDescription($description)
+        {
+        }
+        public function getDescription()
+        {
+        }
+        public function setDisplayName($displayName)
+        {
+        }
+        public function getDisplayName()
+        {
+        }
+        /**
+         * @param GoogleCloudDocumentaiV1SchemaEntityType[]
+         */
+        public function setEntityTypes($entityTypes)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1SchemaEntityType[]
+         */
+        public function getEntityTypes()
+        {
+        }
     }
-    public function getDescription()
-    {
-    }
-    public function setDisplayName($displayName)
-    {
-    }
-    public function getDisplayName()
-    {
-    }
+}
+namespace {
     /**
-     * @param GoogleCloudDocumentaiV1SchemaEntityType[]
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1Schema registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setEntityTypes($entityTypes)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1SchemaEntityType[]
-     */
-    public function getEntityTypes()
+    class Google_Service_Document_GoogleCloudDocumentaiV1Schema extends \Google\Service\Document\GoogleCloudDocumentaiV1Schema
     {
     }
 }

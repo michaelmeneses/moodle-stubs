@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaDataStreamIosAppStreamData extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $bundleId;
-    /**
-     * @var string
-     */
-    public $firebaseAppId;
-    /**
-     * @param string
-     */
-    public function setBundleId($bundleId)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaDataStreamIosAppStreamData extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $bundleId;
+        /**
+         * @var string
+         */
+        public $firebaseAppId;
+        /**
+         * @param string
+         */
+        public function setBundleId($bundleId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBundleId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setFirebaseAppId($firebaseAppId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFirebaseAppId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaDataStreamIosAppStreamData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBundleId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setFirebaseAppId($firebaseAppId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFirebaseAppId()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaDataStreamIosAppStreamData extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaDataStreamIosAppStreamData
     {
     }
 }

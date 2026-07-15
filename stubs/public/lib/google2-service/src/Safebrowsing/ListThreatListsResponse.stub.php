@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Safebrowsing;
-
-class ListThreatListsResponse extends \Google\Collection
-{
-    protected $collection_key = 'threatLists';
-    protected $threatListsType = ThreatListDescriptor::class;
-    protected $threatListsDataType = 'array';
-    public $threatLists;
-    /**
-     * @param ThreatListDescriptor[]
-     */
-    public function setThreatLists($threatLists)
+namespace Google\Service\Safebrowsing {
+    class ListThreatListsResponse extends \Google\Collection
     {
+        protected $collection_key = 'threatLists';
+        protected $threatListsType = ThreatListDescriptor::class;
+        protected $threatListsDataType = 'array';
+        public $threatLists;
+        /**
+         * @param ThreatListDescriptor[]
+         */
+        public function setThreatLists($threatLists)
+        {
+        }
+        /**
+         * @return ThreatListDescriptor[]
+         */
+        public function getThreatLists()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ThreatListDescriptor[]
+     * Runtime class alias of \Google\Service\Safebrowsing\ListThreatListsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getThreatLists()
+    class Google_Service_Safebrowsing_ListThreatListsResponse extends \Google\Service\Safebrowsing\ListThreatListsResponse
     {
     }
 }

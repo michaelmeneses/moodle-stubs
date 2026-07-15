@@ -21,96 +21,105 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GamesManagement;
-
-class AchievementResetResponse extends \Google\Model
-{
-    /**
-     * The current state of the achievement. This is the same as the initial state
-     * of the achievement. Possible values are: - "`HIDDEN`"- Achievement is
-     * hidden. - "`REVEALED`" - Achievement is revealed. - "`UNLOCKED`" -
-     * Achievement is unlocked.
-     *
-     * @var string
-     */
-    public $currentState;
-    /**
-     * The ID of an achievement for which player state has been updated.
-     *
-     * @var string
-     */
-    public $definitionId;
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `gamesManagement#achievementResetResponse`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Flag to indicate if the requested update actually occurred.
-     *
-     * @var bool
-     */
-    public $updateOccurred;
-    /**
-     * The current state of the achievement. This is the same as the initial state
-     * of the achievement. Possible values are: - "`HIDDEN`"- Achievement is
-     * hidden. - "`REVEALED`" - Achievement is revealed. - "`UNLOCKED`" -
-     * Achievement is unlocked.
-     *
-     * @param string $currentState
-     */
-    public function setCurrentState($currentState)
+namespace Google\Service\GamesManagement {
+    class AchievementResetResponse extends \Google\Model
     {
+        /**
+         * The current state of the achievement. This is the same as the initial state
+         * of the achievement. Possible values are: - "`HIDDEN`"- Achievement is
+         * hidden. - "`REVEALED`" - Achievement is revealed. - "`UNLOCKED`" -
+         * Achievement is unlocked.
+         *
+         * @var string
+         */
+        public $currentState;
+        /**
+         * The ID of an achievement for which player state has been updated.
+         *
+         * @var string
+         */
+        public $definitionId;
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `gamesManagement#achievementResetResponse`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Flag to indicate if the requested update actually occurred.
+         *
+         * @var bool
+         */
+        public $updateOccurred;
+        /**
+         * The current state of the achievement. This is the same as the initial state
+         * of the achievement. Possible values are: - "`HIDDEN`"- Achievement is
+         * hidden. - "`REVEALED`" - Achievement is revealed. - "`UNLOCKED`" -
+         * Achievement is unlocked.
+         *
+         * @param string $currentState
+         */
+        public function setCurrentState($currentState)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCurrentState()
+        {
+        }
+        /**
+         * The ID of an achievement for which player state has been updated.
+         *
+         * @param string $definitionId
+         */
+        public function setDefinitionId($definitionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDefinitionId()
+        {
+        }
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `gamesManagement#achievementResetResponse`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Flag to indicate if the requested update actually occurred.
+         *
+         * @param bool $updateOccurred
+         */
+        public function setUpdateOccurred($updateOccurred)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUpdateOccurred()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GamesManagement\AchievementResetResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCurrentState()
-    {
-    }
-    /**
-     * The ID of an achievement for which player state has been updated.
-     *
-     * @param string $definitionId
-     */
-    public function setDefinitionId($definitionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDefinitionId()
-    {
-    }
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `gamesManagement#achievementResetResponse`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Flag to indicate if the requested update actually occurred.
-     *
-     * @param bool $updateOccurred
-     */
-    public function setUpdateOccurred($updateOccurred)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUpdateOccurred()
+    class Google_Service_GamesManagement_AchievementResetResponse extends \Google\Service\GamesManagement\AchievementResetResponse
     {
     }
 }

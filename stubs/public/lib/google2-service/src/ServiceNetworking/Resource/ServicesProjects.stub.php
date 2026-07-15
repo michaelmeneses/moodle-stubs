@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceNetworking\Resource;
-
-/**
- * The "projects" collection of methods.
- * Typical usage is:
- *  <code>
- *   $servicenetworkingService = new Google\Service\ServiceNetworking(...);
- *   $projects = $servicenetworkingService->services_projects;
- *  </code>
- */
-class ServicesProjects extends \Google\Service\Resource
-{
+namespace Google\Service\ServiceNetworking\Resource {
+    /**
+     * The "projects" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $servicenetworkingService = new Google\Service\ServiceNetworking(...);
+     *   $projects = $servicenetworkingService->services_projects;
+     *  </code>
+     */
+    class ServicesProjects extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ServiceNetworking\Resource\ServicesProjects registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ServiceNetworking_Resource_ServicesProjects extends \Google\Service\ServiceNetworking\Resource\ServicesProjects
+    {
+    }
 }

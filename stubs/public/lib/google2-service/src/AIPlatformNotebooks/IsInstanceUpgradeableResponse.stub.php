@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AIPlatformNotebooks;
-
-class IsInstanceUpgradeableResponse extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $upgradeImage;
-    /**
-     * @var string
-     */
-    public $upgradeInfo;
-    /**
-     * @var string
-     */
-    public $upgradeVersion;
-    /**
-     * @var bool
-     */
-    public $upgradeable;
-    /**
-     * @param string
-     */
-    public function setUpgradeImage($upgradeImage)
+namespace Google\Service\AIPlatformNotebooks {
+    class IsInstanceUpgradeableResponse extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $upgradeImage;
+        /**
+         * @var string
+         */
+        public $upgradeInfo;
+        /**
+         * @var string
+         */
+        public $upgradeVersion;
+        /**
+         * @var bool
+         */
+        public $upgradeable;
+        /**
+         * @param string
+         */
+        public function setUpgradeImage($upgradeImage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpgradeImage()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUpgradeInfo($upgradeInfo)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpgradeInfo()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUpgradeVersion($upgradeVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpgradeVersion()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setUpgradeable($upgradeable)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUpgradeable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AIPlatformNotebooks\IsInstanceUpgradeableResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUpgradeImage()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUpgradeInfo($upgradeInfo)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpgradeInfo()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUpgradeVersion($upgradeVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpgradeVersion()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setUpgradeable($upgradeable)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUpgradeable()
+    class Google_Service_AIPlatformNotebooks_IsInstanceUpgradeableResponse extends \Google\Service\AIPlatformNotebooks\IsInstanceUpgradeableResponse
     {
     }
 }

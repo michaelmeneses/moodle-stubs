@@ -21,30 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveLabels\Resource;
-
-/**
- * The "limits" collection of methods.
- * Typical usage is:
- *  <code>
- *   $drivelabelsService = new Google\Service\DriveLabels(...);
- *   $limits = $drivelabelsService->limits;
- *  </code>
- */
-class Limits extends \Google\Service\Resource
-{
+namespace Google\Service\DriveLabels\Resource {
+    use Google\Service\DriveLabels\GoogleAppsDriveLabelsV2LabelLimits;
     /**
-     * Get the constraints on the structure of a label; such as, the maximum number
-     * of fields allowed and maximum length of the label title. (limits.getLabel)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string name Required. Label revision resource name must be:
-     * "limits/label".
-     * @return GoogleAppsDriveLabelsV2LabelLimits
-     * @throws \Google\Service\Exception
+     * The "limits" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $drivelabelsService = new Google\Service\DriveLabels(...);
+     *   $limits = $drivelabelsService->limits;
+     *  </code>
      */
-    public function getLabel($optParams = [])
+    class Limits extends \Google\Service\Resource
+    {
+        /**
+         * Get the constraints on the structure of a label; such as, the maximum number
+         * of fields allowed and maximum length of the label title. (limits.getLabel)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string name Required. Label revision resource name must be:
+         * "limits/label".
+         * @return GoogleAppsDriveLabelsV2LabelLimits
+         * @throws \Google\Service\Exception
+         */
+        public function getLabel($optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\DriveLabels\Resource\Limits registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_DriveLabels_Resource_Limits extends \Google\Service\DriveLabels\Resource\Limits
     {
     }
 }

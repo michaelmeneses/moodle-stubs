@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaConversionEvent extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $createTime;
-    /**
-     * @var bool
-     */
-    public $custom;
-    /**
-     * @var bool
-     */
-    public $deletable;
-    /**
-     * @var string
-     */
-    public $eventName;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @param string
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaConversionEvent extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $createTime;
+        /**
+         * @var bool
+         */
+        public $custom;
+        /**
+         * @var bool
+         */
+        public $deletable;
+        /**
+         * @var string
+         */
+        public $eventName;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @param string
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setCustom($custom)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCustom()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setDeletable($deletable)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDeletable()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEventName($eventName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEventName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaConversionEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setCustom($custom)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCustom()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setDeletable($deletable)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDeletable()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEventName($eventName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEventName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaConversionEvent extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaConversionEvent
     {
     }
 }

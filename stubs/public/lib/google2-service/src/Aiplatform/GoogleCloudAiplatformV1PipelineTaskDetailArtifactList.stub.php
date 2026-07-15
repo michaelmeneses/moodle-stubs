@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1PipelineTaskDetailArtifactList extends \Google\Collection
-{
-    protected $collection_key = 'artifacts';
-    protected $artifactsType = GoogleCloudAiplatformV1Artifact::class;
-    protected $artifactsDataType = 'array';
-    /**
-     * Output only. A list of artifact metadata.
-     *
-     * @param GoogleCloudAiplatformV1Artifact[] $artifacts
-     */
-    public function setArtifacts($artifacts)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1PipelineTaskDetailArtifactList extends \Google\Collection
     {
+        protected $collection_key = 'artifacts';
+        protected $artifactsType = GoogleCloudAiplatformV1Artifact::class;
+        protected $artifactsDataType = 'array';
+        /**
+         * Output only. A list of artifact metadata.
+         *
+         * @param GoogleCloudAiplatformV1Artifact[] $artifacts
+         */
+        public function setArtifacts($artifacts)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1Artifact[]
+         */
+        public function getArtifacts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1Artifact[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1PipelineTaskDetailArtifactList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArtifacts()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1PipelineTaskDetailArtifactList extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1PipelineTaskDetailArtifactList
     {
     }
 }

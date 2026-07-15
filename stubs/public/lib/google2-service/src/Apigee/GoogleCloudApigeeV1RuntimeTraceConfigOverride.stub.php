@@ -21,132 +21,141 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1RuntimeTraceConfigOverride extends \Google\Model
-{
-    /**
-     * Name of the API proxy that will have its trace configuration overridden
-     * following format: `organizations/{org}/apis/{api}`
-     *
-     * @var string
-     */
-    public $apiProxy;
-    /**
-     * Name of the trace config override in the following format:
-     * `organizations/{org}/environment/{env}/traceConfig/overrides/{override}`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The timestamp that the revision was created or updated.
-     *
-     * @var string
-     */
-    public $revisionCreateTime;
-    /**
-     * Revision number which can be used by the runtime to detect if the trace
-     * config override has changed between two versions.
-     *
-     * @var string
-     */
-    public $revisionId;
-    protected $samplingConfigType = GoogleCloudApigeeV1RuntimeTraceSamplingConfig::class;
-    protected $samplingConfigDataType = '';
-    /**
-     * Unique ID for the configuration override. The ID will only change if the
-     * override is deleted and recreated. Corresponds to name's "override" field.
-     *
-     * @var string
-     */
-    public $uid;
-    /**
-     * Name of the API proxy that will have its trace configuration overridden
-     * following format: `organizations/{org}/apis/{api}`
-     *
-     * @param string $apiProxy
-     */
-    public function setApiProxy($apiProxy)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1RuntimeTraceConfigOverride extends \Google\Model
     {
+        /**
+         * Name of the API proxy that will have its trace configuration overridden
+         * following format: `organizations/{org}/apis/{api}`
+         *
+         * @var string
+         */
+        public $apiProxy;
+        /**
+         * Name of the trace config override in the following format:
+         * `organizations/{org}/environment/{env}/traceConfig/overrides/{override}`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The timestamp that the revision was created or updated.
+         *
+         * @var string
+         */
+        public $revisionCreateTime;
+        /**
+         * Revision number which can be used by the runtime to detect if the trace
+         * config override has changed between two versions.
+         *
+         * @var string
+         */
+        public $revisionId;
+        protected $samplingConfigType = GoogleCloudApigeeV1RuntimeTraceSamplingConfig::class;
+        protected $samplingConfigDataType = '';
+        /**
+         * Unique ID for the configuration override. The ID will only change if the
+         * override is deleted and recreated. Corresponds to name's "override" field.
+         *
+         * @var string
+         */
+        public $uid;
+        /**
+         * Name of the API proxy that will have its trace configuration overridden
+         * following format: `organizations/{org}/apis/{api}`
+         *
+         * @param string $apiProxy
+         */
+        public function setApiProxy($apiProxy)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApiProxy()
+        {
+        }
+        /**
+         * Name of the trace config override in the following format:
+         * `organizations/{org}/environment/{env}/traceConfig/overrides/{override}`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The timestamp that the revision was created or updated.
+         *
+         * @param string $revisionCreateTime
+         */
+        public function setRevisionCreateTime($revisionCreateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRevisionCreateTime()
+        {
+        }
+        /**
+         * Revision number which can be used by the runtime to detect if the trace
+         * config override has changed between two versions.
+         *
+         * @param string $revisionId
+         */
+        public function setRevisionId($revisionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRevisionId()
+        {
+        }
+        /**
+         * Trace configuration override for a specific API proxy in an environment.
+         *
+         * @param GoogleCloudApigeeV1RuntimeTraceSamplingConfig $samplingConfig
+         */
+        public function setSamplingConfig(GoogleCloudApigeeV1RuntimeTraceSamplingConfig $samplingConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1RuntimeTraceSamplingConfig
+         */
+        public function getSamplingConfig()
+        {
+        }
+        /**
+         * Unique ID for the configuration override. The ID will only change if the
+         * override is deleted and recreated. Corresponds to name's "override" field.
+         *
+         * @param string $uid
+         */
+        public function setUid($uid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUid()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1RuntimeTraceConfigOverride registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiProxy()
-    {
-    }
-    /**
-     * Name of the trace config override in the following format:
-     * `organizations/{org}/environment/{env}/traceConfig/overrides/{override}`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The timestamp that the revision was created or updated.
-     *
-     * @param string $revisionCreateTime
-     */
-    public function setRevisionCreateTime($revisionCreateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRevisionCreateTime()
-    {
-    }
-    /**
-     * Revision number which can be used by the runtime to detect if the trace
-     * config override has changed between two versions.
-     *
-     * @param string $revisionId
-     */
-    public function setRevisionId($revisionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRevisionId()
-    {
-    }
-    /**
-     * Trace configuration override for a specific API proxy in an environment.
-     *
-     * @param GoogleCloudApigeeV1RuntimeTraceSamplingConfig $samplingConfig
-     */
-    public function setSamplingConfig(GoogleCloudApigeeV1RuntimeTraceSamplingConfig $samplingConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1RuntimeTraceSamplingConfig
-     */
-    public function getSamplingConfig()
-    {
-    }
-    /**
-     * Unique ID for the configuration override. The ID will only change if the
-     * override is deleted and recreated. Corresponds to name's "override" field.
-     *
-     * @param string $uid
-     */
-    public function setUid($uid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUid()
+    class Google_Service_Apigee_GoogleCloudApigeeV1RuntimeTraceConfigOverride extends \Google\Service\Apigee\GoogleCloudApigeeV1RuntimeTraceConfigOverride
     {
     }
 }

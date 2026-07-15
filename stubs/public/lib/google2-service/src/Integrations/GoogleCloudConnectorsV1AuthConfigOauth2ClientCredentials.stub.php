@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudConnectorsV1AuthConfigOauth2ClientCredentials extends \Google\Model
-{
-    /**
-     * Optional. The client identifier.
-     *
-     * @var string
-     */
-    public $clientId;
-    protected $clientSecretType = GoogleCloudConnectorsV1Secret::class;
-    protected $clientSecretDataType = '';
-    /**
-     * Optional. The client identifier.
-     *
-     * @param string $clientId
-     */
-    public function setClientId($clientId)
+namespace Google\Service\Integrations {
+    class GoogleCloudConnectorsV1AuthConfigOauth2ClientCredentials extends \Google\Model
     {
+        /**
+         * Optional. The client identifier.
+         *
+         * @var string
+         */
+        public $clientId;
+        protected $clientSecretType = GoogleCloudConnectorsV1Secret::class;
+        protected $clientSecretDataType = '';
+        /**
+         * Optional. The client identifier.
+         *
+         * @param string $clientId
+         */
+        public function setClientId($clientId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClientId()
+        {
+        }
+        /**
+         * Optional. Secret version reference containing the client secret.
+         *
+         * @param GoogleCloudConnectorsV1Secret $clientSecret
+         */
+        public function setClientSecret(GoogleCloudConnectorsV1Secret $clientSecret)
+        {
+        }
+        /**
+         * @return GoogleCloudConnectorsV1Secret
+         */
+        public function getClientSecret()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudConnectorsV1AuthConfigOauth2ClientCredentials registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClientId()
-    {
-    }
-    /**
-     * Optional. Secret version reference containing the client secret.
-     *
-     * @param GoogleCloudConnectorsV1Secret $clientSecret
-     */
-    public function setClientSecret(GoogleCloudConnectorsV1Secret $clientSecret)
-    {
-    }
-    /**
-     * @return GoogleCloudConnectorsV1Secret
-     */
-    public function getClientSecret()
+    class Google_Service_Integrations_GoogleCloudConnectorsV1AuthConfigOauth2ClientCredentials extends \Google\Service\Integrations\GoogleCloudConnectorsV1AuthConfigOauth2ClientCredentials
     {
     }
 }

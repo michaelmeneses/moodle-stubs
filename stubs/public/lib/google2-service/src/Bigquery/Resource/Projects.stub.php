@@ -21,50 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery\Resource;
-
-/**
- * The "projects" collection of methods.
- * Typical usage is:
- *  <code>
- *   $bigqueryService = new Google\Service\Bigquery(...);
- *   $projects = $bigqueryService->projects;
- *  </code>
- */
-class Projects extends \Google\Service\Resource
-{
+namespace Google\Service\Bigquery\Resource {
+    use Google\Service\Bigquery\GetServiceAccountResponse;
+    use Google\Service\Bigquery\ProjectList;
     /**
-     * RPC to get the service account for a project used for interactions with
-     * Google Cloud KMS (projects.getServiceAccount)
-     *
-     * @param string $projectId Required. ID of the project.
-     * @param array $optParams Optional parameters.
-     * @return GetServiceAccountResponse
-     * @throws \Google\Service\Exception
+     * The "projects" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $bigqueryService = new Google\Service\Bigquery(...);
+     *   $projects = $bigqueryService->projects;
+     *  </code>
      */
-    public function getServiceAccount($projectId, $optParams = [])
+    class Projects extends \Google\Service\Resource
     {
+        /**
+         * RPC to get the service account for a project used for interactions with
+         * Google Cloud KMS (projects.getServiceAccount)
+         *
+         * @param string $projectId Required. ID of the project.
+         * @param array $optParams Optional parameters.
+         * @return GetServiceAccountResponse
+         * @throws \Google\Service\Exception
+         */
+        public function getServiceAccount($projectId, $optParams = [])
+        {
+        }
+        /**
+         * RPC to list projects to which the user has been granted any project role.
+         * Users of this method are encouraged to consider the [Resource
+         * Manager](https://cloud.google.com/resource-manager/docs/) API, which provides
+         * the underlying data for this method and has more capabilities.
+         * (projects.listProjects)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string maxResults `maxResults` unset returns all results, up to 50
+         * per page. Additionally, the number of projects in a page may be fewer than
+         * `maxResults` because projects are retrieved and then filtered to only
+         * projects with the BigQuery API enabled.
+         * @opt_param string pageToken Page token, returned by a previous call, to
+         * request the next page of results. If not present, no further pages are
+         * present.
+         * @return ProjectList
+         * @throws \Google\Service\Exception
+         */
+        public function listProjects($optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * RPC to list projects to which the user has been granted any project role.
-     * Users of this method are encouraged to consider the [Resource
-     * Manager](https://cloud.google.com/resource-manager/docs/) API, which provides
-     * the underlying data for this method and has more capabilities.
-     * (projects.listProjects)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string maxResults `maxResults` unset returns all results, up to 50
-     * per page. Additionally, the number of projects in a page may be fewer than
-     * `maxResults` because projects are retrieved and then filtered to only
-     * projects with the BigQuery API enabled.
-     * @opt_param string pageToken Page token, returned by a previous call, to
-     * request the next page of results. If not present, no further pages are
-     * present.
-     * @return ProjectList
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Bigquery\Resource\Projects registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listProjects($optParams = [])
+    class Google_Service_Bigquery_Resource_Projects extends \Google\Service\Bigquery\Resource\Projects
     {
     }
 }

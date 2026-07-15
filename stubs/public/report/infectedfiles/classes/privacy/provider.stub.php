@@ -30,6 +30,8 @@
  */
 namespace report_infectedfiles\privacy;
 
+use core_privacy\local\metadata\collection;
+use core_privacy\local\request;
 /**
  * Infected file report
  *

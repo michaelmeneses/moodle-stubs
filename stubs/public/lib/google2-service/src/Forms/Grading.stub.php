@@ -21,101 +21,110 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Forms;
-
-class Grading extends \Google\Model
-{
-    protected $correctAnswersType = CorrectAnswers::class;
-    protected $correctAnswersDataType = '';
-    protected $generalFeedbackType = Feedback::class;
-    protected $generalFeedbackDataType = '';
-    /**
-     * Required. The maximum number of points a respondent can automatically get
-     * for a correct answer. This must not be negative.
-     *
-     * @var int
-     */
-    public $pointValue;
-    protected $whenRightType = Feedback::class;
-    protected $whenRightDataType = '';
-    protected $whenWrongType = Feedback::class;
-    protected $whenWrongDataType = '';
-    /**
-     * Required. The answer key for the question. Responses are automatically
-     * graded based on this field.
-     *
-     * @param CorrectAnswers $correctAnswers
-     */
-    public function setCorrectAnswers(CorrectAnswers $correctAnswers)
+namespace Google\Service\Forms {
+    class Grading extends \Google\Model
     {
+        protected $correctAnswersType = CorrectAnswers::class;
+        protected $correctAnswersDataType = '';
+        protected $generalFeedbackType = Feedback::class;
+        protected $generalFeedbackDataType = '';
+        /**
+         * Required. The maximum number of points a respondent can automatically get
+         * for a correct answer. This must not be negative.
+         *
+         * @var int
+         */
+        public $pointValue;
+        protected $whenRightType = Feedback::class;
+        protected $whenRightDataType = '';
+        protected $whenWrongType = Feedback::class;
+        protected $whenWrongDataType = '';
+        /**
+         * Required. The answer key for the question. Responses are automatically
+         * graded based on this field.
+         *
+         * @param CorrectAnswers $correctAnswers
+         */
+        public function setCorrectAnswers(CorrectAnswers $correctAnswers)
+        {
+        }
+        /**
+         * @return CorrectAnswers
+         */
+        public function getCorrectAnswers()
+        {
+        }
+        /**
+         * The feedback displayed for all answers. This is commonly used for short
+         * answer questions when a quiz owner wants to quickly give respondents some
+         * sense of whether they answered the question correctly before they've had a
+         * chance to officially grade the response. General feedback cannot be set for
+         * automatically graded multiple choice questions.
+         *
+         * @param Feedback $generalFeedback
+         */
+        public function setGeneralFeedback(Feedback $generalFeedback)
+        {
+        }
+        /**
+         * @return Feedback
+         */
+        public function getGeneralFeedback()
+        {
+        }
+        /**
+         * Required. The maximum number of points a respondent can automatically get
+         * for a correct answer. This must not be negative.
+         *
+         * @param int $pointValue
+         */
+        public function setPointValue($pointValue)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPointValue()
+        {
+        }
+        /**
+         * The feedback displayed for correct responses. This feedback can only be set
+         * for multiple choice questions that have correct answers provided.
+         *
+         * @param Feedback $whenRight
+         */
+        public function setWhenRight(Feedback $whenRight)
+        {
+        }
+        /**
+         * @return Feedback
+         */
+        public function getWhenRight()
+        {
+        }
+        /**
+         * The feedback displayed for incorrect responses. This feedback can only be
+         * set for multiple choice questions that have correct answers provided.
+         *
+         * @param Feedback $whenWrong
+         */
+        public function setWhenWrong(Feedback $whenWrong)
+        {
+        }
+        /**
+         * @return Feedback
+         */
+        public function getWhenWrong()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CorrectAnswers
+     * Runtime class alias of \Google\Service\Forms\Grading registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCorrectAnswers()
-    {
-    }
-    /**
-     * The feedback displayed for all answers. This is commonly used for short
-     * answer questions when a quiz owner wants to quickly give respondents some
-     * sense of whether they answered the question correctly before they've had a
-     * chance to officially grade the response. General feedback cannot be set for
-     * automatically graded multiple choice questions.
-     *
-     * @param Feedback $generalFeedback
-     */
-    public function setGeneralFeedback(Feedback $generalFeedback)
-    {
-    }
-    /**
-     * @return Feedback
-     */
-    public function getGeneralFeedback()
-    {
-    }
-    /**
-     * Required. The maximum number of points a respondent can automatically get
-     * for a correct answer. This must not be negative.
-     *
-     * @param int $pointValue
-     */
-    public function setPointValue($pointValue)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPointValue()
-    {
-    }
-    /**
-     * The feedback displayed for correct responses. This feedback can only be set
-     * for multiple choice questions that have correct answers provided.
-     *
-     * @param Feedback $whenRight
-     */
-    public function setWhenRight(Feedback $whenRight)
-    {
-    }
-    /**
-     * @return Feedback
-     */
-    public function getWhenRight()
-    {
-    }
-    /**
-     * The feedback displayed for incorrect responses. This feedback can only be
-     * set for multiple choice questions that have correct answers provided.
-     *
-     * @param Feedback $whenWrong
-     */
-    public function setWhenWrong(Feedback $whenWrong)
-    {
-    }
-    /**
-     * @return Feedback
-     */
-    public function getWhenWrong()
+    class Google_Service_Forms_Grading extends \Google\Service\Forms\Grading
     {
     }
 }

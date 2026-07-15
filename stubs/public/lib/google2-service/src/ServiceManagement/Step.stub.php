@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceManagement;
-
-class Step extends \Google\Model
-{
-    /**
-     * Unspecified code.
-     */
-    public const STATUS_STATUS_UNSPECIFIED = 'STATUS_UNSPECIFIED';
-    /**
-     * The operation or step has completed without errors.
-     */
-    public const STATUS_DONE = 'DONE';
-    /**
-     * The operation or step has not started yet.
-     */
-    public const STATUS_NOT_STARTED = 'NOT_STARTED';
-    /**
-     * The operation or step is in progress.
-     */
-    public const STATUS_IN_PROGRESS = 'IN_PROGRESS';
-    /**
-     * The operation or step has completed with errors. If the operation is
-     * rollbackable, the rollback completed with errors too.
-     */
-    public const STATUS_FAILED = 'FAILED';
-    /**
-     * The operation or step has completed with cancellation.
-     */
-    public const STATUS_CANCELLED = 'CANCELLED';
-    /**
-     * The short description of the step.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * The status code.
-     *
-     * @var string
-     */
-    public $status;
-    /**
-     * The short description of the step.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\ServiceManagement {
+    class Step extends \Google\Model
     {
+        /**
+         * Unspecified code.
+         */
+        public const STATUS_STATUS_UNSPECIFIED = 'STATUS_UNSPECIFIED';
+        /**
+         * The operation or step has completed without errors.
+         */
+        public const STATUS_DONE = 'DONE';
+        /**
+         * The operation or step has not started yet.
+         */
+        public const STATUS_NOT_STARTED = 'NOT_STARTED';
+        /**
+         * The operation or step is in progress.
+         */
+        public const STATUS_IN_PROGRESS = 'IN_PROGRESS';
+        /**
+         * The operation or step has completed with errors. If the operation is
+         * rollbackable, the rollback completed with errors too.
+         */
+        public const STATUS_FAILED = 'FAILED';
+        /**
+         * The operation or step has completed with cancellation.
+         */
+        public const STATUS_CANCELLED = 'CANCELLED';
+        /**
+         * The short description of the step.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * The status code.
+         *
+         * @var string
+         */
+        public $status;
+        /**
+         * The short description of the step.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * The status code.
+         *
+         * Accepted values: STATUS_UNSPECIFIED, DONE, NOT_STARTED, IN_PROGRESS,
+         * FAILED, CANCELLED
+         *
+         * @param self::STATUS_* $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return self::STATUS_*
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ServiceManagement\Step registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * The status code.
-     *
-     * Accepted values: STATUS_UNSPECIFIED, DONE, NOT_STARTED, IN_PROGRESS,
-     * FAILED, CANCELLED
-     *
-     * @param self::STATUS_* $status
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return self::STATUS_*
-     */
-    public function getStatus()
+    class Google_Service_ServiceManagement_Step extends \Google\Service\ServiceManagement\Step
     {
     }
 }

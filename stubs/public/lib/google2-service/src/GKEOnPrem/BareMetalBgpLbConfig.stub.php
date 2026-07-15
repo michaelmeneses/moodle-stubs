@@ -21,87 +21,96 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class BareMetalBgpLbConfig extends \Google\Collection
-{
-    protected $collection_key = 'bgpPeerConfigs';
-    protected $addressPoolsType = BareMetalLoadBalancerAddressPool::class;
-    protected $addressPoolsDataType = 'array';
-    /**
-     * Required. BGP autonomous system number (ASN) of the cluster. This field can
-     * be updated after cluster creation.
-     *
-     * @var string
-     */
-    public $asn;
-    protected $bgpPeerConfigsType = BareMetalBgpPeerConfig::class;
-    protected $bgpPeerConfigsDataType = 'array';
-    protected $loadBalancerNodePoolConfigType = BareMetalLoadBalancerNodePoolConfig::class;
-    protected $loadBalancerNodePoolConfigDataType = '';
-    /**
-     * Required. AddressPools is a list of non-overlapping IP pools used by load
-     * balancer typed services. All addresses must be routable to load balancer
-     * nodes. IngressVIP must be included in the pools.
-     *
-     * @param BareMetalLoadBalancerAddressPool[] $addressPools
-     */
-    public function setAddressPools($addressPools)
+namespace Google\Service\GKEOnPrem {
+    class BareMetalBgpLbConfig extends \Google\Collection
     {
+        protected $collection_key = 'bgpPeerConfigs';
+        protected $addressPoolsType = BareMetalLoadBalancerAddressPool::class;
+        protected $addressPoolsDataType = 'array';
+        /**
+         * Required. BGP autonomous system number (ASN) of the cluster. This field can
+         * be updated after cluster creation.
+         *
+         * @var string
+         */
+        public $asn;
+        protected $bgpPeerConfigsType = BareMetalBgpPeerConfig::class;
+        protected $bgpPeerConfigsDataType = 'array';
+        protected $loadBalancerNodePoolConfigType = BareMetalLoadBalancerNodePoolConfig::class;
+        protected $loadBalancerNodePoolConfigDataType = '';
+        /**
+         * Required. AddressPools is a list of non-overlapping IP pools used by load
+         * balancer typed services. All addresses must be routable to load balancer
+         * nodes. IngressVIP must be included in the pools.
+         *
+         * @param BareMetalLoadBalancerAddressPool[] $addressPools
+         */
+        public function setAddressPools($addressPools)
+        {
+        }
+        /**
+         * @return BareMetalLoadBalancerAddressPool[]
+         */
+        public function getAddressPools()
+        {
+        }
+        /**
+         * Required. BGP autonomous system number (ASN) of the cluster. This field can
+         * be updated after cluster creation.
+         *
+         * @param string $asn
+         */
+        public function setAsn($asn)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAsn()
+        {
+        }
+        /**
+         * Required. The list of BGP peers that the cluster will connect to. At least
+         * one peer must be configured for each control plane node. Control plane
+         * nodes will connect to these peers to advertise the control plane VIP. The
+         * Services load balancer also uses these peers by default. This field can be
+         * updated after cluster creation.
+         *
+         * @param BareMetalBgpPeerConfig[] $bgpPeerConfigs
+         */
+        public function setBgpPeerConfigs($bgpPeerConfigs)
+        {
+        }
+        /**
+         * @return BareMetalBgpPeerConfig[]
+         */
+        public function getBgpPeerConfigs()
+        {
+        }
+        /**
+         * Specifies the node pool running data plane load balancing. L2 connectivity
+         * is required among nodes in this pool. If missing, the control plane node
+         * pool is used for data plane load balancing.
+         *
+         * @param BareMetalLoadBalancerNodePoolConfig $loadBalancerNodePoolConfig
+         */
+        public function setLoadBalancerNodePoolConfig(BareMetalLoadBalancerNodePoolConfig $loadBalancerNodePoolConfig)
+        {
+        }
+        /**
+         * @return BareMetalLoadBalancerNodePoolConfig
+         */
+        public function getLoadBalancerNodePoolConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BareMetalLoadBalancerAddressPool[]
+     * Runtime class alias of \Google\Service\GKEOnPrem\BareMetalBgpLbConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddressPools()
-    {
-    }
-    /**
-     * Required. BGP autonomous system number (ASN) of the cluster. This field can
-     * be updated after cluster creation.
-     *
-     * @param string $asn
-     */
-    public function setAsn($asn)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAsn()
-    {
-    }
-    /**
-     * Required. The list of BGP peers that the cluster will connect to. At least
-     * one peer must be configured for each control plane node. Control plane
-     * nodes will connect to these peers to advertise the control plane VIP. The
-     * Services load balancer also uses these peers by default. This field can be
-     * updated after cluster creation.
-     *
-     * @param BareMetalBgpPeerConfig[] $bgpPeerConfigs
-     */
-    public function setBgpPeerConfigs($bgpPeerConfigs)
-    {
-    }
-    /**
-     * @return BareMetalBgpPeerConfig[]
-     */
-    public function getBgpPeerConfigs()
-    {
-    }
-    /**
-     * Specifies the node pool running data plane load balancing. L2 connectivity
-     * is required among nodes in this pool. If missing, the control plane node
-     * pool is used for data plane load balancing.
-     *
-     * @param BareMetalLoadBalancerNodePoolConfig $loadBalancerNodePoolConfig
-     */
-    public function setLoadBalancerNodePoolConfig(BareMetalLoadBalancerNodePoolConfig $loadBalancerNodePoolConfig)
-    {
-    }
-    /**
-     * @return BareMetalLoadBalancerNodePoolConfig
-     */
-    public function getLoadBalancerNodePoolConfig()
+    class Google_Service_GKEOnPrem_BareMetalBgpLbConfig extends \Google\Service\GKEOnPrem\BareMetalBgpLbConfig
     {
     }
 }

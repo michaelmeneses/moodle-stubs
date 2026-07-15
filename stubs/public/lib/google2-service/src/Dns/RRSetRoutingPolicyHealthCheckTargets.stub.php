@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dns;
-
-class RRSetRoutingPolicyHealthCheckTargets extends \Google\Collection
-{
-    protected $collection_key = 'internalLoadBalancers';
-    /**
-     * The Internet IP addresses to be health checked. The format matches the
-     * format of ResourceRecordSet.rrdata as defined in RFC 1035 (section 5) and
-     * RFC 1034 (section 3.6.1)
-     *
-     * @var string[]
-     */
-    public $externalEndpoints;
-    protected $internalLoadBalancersType = RRSetRoutingPolicyLoadBalancerTarget::class;
-    protected $internalLoadBalancersDataType = 'array';
-    /**
-     * The Internet IP addresses to be health checked. The format matches the
-     * format of ResourceRecordSet.rrdata as defined in RFC 1035 (section 5) and
-     * RFC 1034 (section 3.6.1)
-     *
-     * @param string[] $externalEndpoints
-     */
-    public function setExternalEndpoints($externalEndpoints)
+namespace Google\Service\Dns {
+    class RRSetRoutingPolicyHealthCheckTargets extends \Google\Collection
     {
+        protected $collection_key = 'internalLoadBalancers';
+        /**
+         * The Internet IP addresses to be health checked. The format matches the
+         * format of ResourceRecordSet.rrdata as defined in RFC 1035 (section 5) and
+         * RFC 1034 (section 3.6.1)
+         *
+         * @var string[]
+         */
+        public $externalEndpoints;
+        protected $internalLoadBalancersType = RRSetRoutingPolicyLoadBalancerTarget::class;
+        protected $internalLoadBalancersDataType = 'array';
+        /**
+         * The Internet IP addresses to be health checked. The format matches the
+         * format of ResourceRecordSet.rrdata as defined in RFC 1035 (section 5) and
+         * RFC 1034 (section 3.6.1)
+         *
+         * @param string[] $externalEndpoints
+         */
+        public function setExternalEndpoints($externalEndpoints)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getExternalEndpoints()
+        {
+        }
+        /**
+         * Configuration for internal load balancers to be health checked.
+         *
+         * @param RRSetRoutingPolicyLoadBalancerTarget[] $internalLoadBalancers
+         */
+        public function setInternalLoadBalancers($internalLoadBalancers)
+        {
+        }
+        /**
+         * @return RRSetRoutingPolicyLoadBalancerTarget[]
+         */
+        public function getInternalLoadBalancers()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Dns\RRSetRoutingPolicyHealthCheckTargets registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExternalEndpoints()
-    {
-    }
-    /**
-     * Configuration for internal load balancers to be health checked.
-     *
-     * @param RRSetRoutingPolicyLoadBalancerTarget[] $internalLoadBalancers
-     */
-    public function setInternalLoadBalancers($internalLoadBalancers)
-    {
-    }
-    /**
-     * @return RRSetRoutingPolicyLoadBalancerTarget[]
-     */
-    public function getInternalLoadBalancers()
+    class Google_Service_Dns_RRSetRoutingPolicyHealthCheckTargets extends \Google\Service\Dns\RRSetRoutingPolicyHealthCheckTargets
     {
     }
 }

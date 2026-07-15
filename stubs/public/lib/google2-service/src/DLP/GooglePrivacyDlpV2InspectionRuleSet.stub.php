@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2InspectionRuleSet extends \Google\Collection
-{
-    protected $collection_key = 'rules';
-    protected $infoTypesType = GooglePrivacyDlpV2InfoType::class;
-    protected $infoTypesDataType = 'array';
-    protected $rulesType = GooglePrivacyDlpV2InspectionRule::class;
-    protected $rulesDataType = 'array';
-    /**
-     * List of infoTypes this rule set is applied to.
-     *
-     * @param GooglePrivacyDlpV2InfoType[] $infoTypes
-     */
-    public function setInfoTypes($infoTypes)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2InspectionRuleSet extends \Google\Collection
     {
+        protected $collection_key = 'rules';
+        protected $infoTypesType = GooglePrivacyDlpV2InfoType::class;
+        protected $infoTypesDataType = 'array';
+        protected $rulesType = GooglePrivacyDlpV2InspectionRule::class;
+        protected $rulesDataType = 'array';
+        /**
+         * List of infoTypes this rule set is applied to.
+         *
+         * @param GooglePrivacyDlpV2InfoType[] $infoTypes
+         */
+        public function setInfoTypes($infoTypes)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2InfoType[]
+         */
+        public function getInfoTypes()
+        {
+        }
+        /**
+         * Set of rules to be applied to infoTypes. The rules are applied in order.
+         *
+         * @param GooglePrivacyDlpV2InspectionRule[] $rules
+         */
+        public function setRules($rules)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2InspectionRule[]
+         */
+        public function getRules()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2InfoType[]
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2InspectionRuleSet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInfoTypes()
-    {
-    }
-    /**
-     * Set of rules to be applied to infoTypes. The rules are applied in order.
-     *
-     * @param GooglePrivacyDlpV2InspectionRule[] $rules
-     */
-    public function setRules($rules)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2InspectionRule[]
-     */
-    public function getRules()
+    class Google_Service_DLP_GooglePrivacyDlpV2InspectionRuleSet extends \Google\Service\DLP\GooglePrivacyDlpV2InspectionRuleSet
     {
     }
 }

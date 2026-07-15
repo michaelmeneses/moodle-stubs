@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class DescribeConversionWorkspaceRevisionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'revisions';
-    protected $revisionsType = ConversionWorkspace::class;
-    protected $revisionsDataType = 'array';
-    /**
-     * The list of conversion workspace revisions.
-     *
-     * @param ConversionWorkspace[] $revisions
-     */
-    public function setRevisions($revisions)
+namespace Google\Service\DatabaseMigrationService {
+    class DescribeConversionWorkspaceRevisionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'revisions';
+        protected $revisionsType = ConversionWorkspace::class;
+        protected $revisionsDataType = 'array';
+        /**
+         * The list of conversion workspace revisions.
+         *
+         * @param ConversionWorkspace[] $revisions
+         */
+        public function setRevisions($revisions)
+        {
+        }
+        /**
+         * @return ConversionWorkspace[]
+         */
+        public function getRevisions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ConversionWorkspace[]
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\DescribeConversionWorkspaceRevisionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRevisions()
+    class Google_Service_DatabaseMigrationService_DescribeConversionWorkspaceRevisionsResponse extends \Google\Service\DatabaseMigrationService\DescribeConversionWorkspaceRevisionsResponse
     {
     }
 }

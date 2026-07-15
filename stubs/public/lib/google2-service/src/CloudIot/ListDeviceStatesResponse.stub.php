@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIot;
-
-class ListDeviceStatesResponse extends \Google\Collection
-{
-    protected $collection_key = 'deviceStates';
-    protected $deviceStatesType = DeviceState::class;
-    protected $deviceStatesDataType = 'array';
-    /**
-     * @param DeviceState[]
-     */
-    public function setDeviceStates($deviceStates)
+namespace Google\Service\CloudIot {
+    class ListDeviceStatesResponse extends \Google\Collection
     {
+        protected $collection_key = 'deviceStates';
+        protected $deviceStatesType = DeviceState::class;
+        protected $deviceStatesDataType = 'array';
+        /**
+         * @param DeviceState[]
+         */
+        public function setDeviceStates($deviceStates)
+        {
+        }
+        /**
+         * @return DeviceState[]
+         */
+        public function getDeviceStates()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DeviceState[]
+     * Runtime class alias of \Google\Service\CloudIot\ListDeviceStatesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeviceStates()
+    class Google_Service_CloudIot_ListDeviceStatesResponse extends \Google\Service\CloudIot\ListDeviceStatesResponse
     {
     }
 }

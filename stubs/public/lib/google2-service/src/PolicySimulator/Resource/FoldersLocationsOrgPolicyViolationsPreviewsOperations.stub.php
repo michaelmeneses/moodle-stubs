@@ -21,29 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PolicySimulator\Resource;
-
-/**
- * The "operations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $policysimulatorService = new Google\Service\PolicySimulator(...);
- *   $operations = $policysimulatorService->folders_locations_orgPolicyViolationsPreviews_operations;
- *  </code>
- */
-class FoldersLocationsOrgPolicyViolationsPreviewsOperations extends \Google\Service\Resource
-{
+namespace Google\Service\PolicySimulator\Resource {
+    use Google\Service\PolicySimulator\GoogleLongrunningOperation;
     /**
-     * Gets the latest state of a long-running operation. Clients can use this
-     * method to poll the operation result at intervals as recommended by the API
-     * service. (operations.get)
-     *
-     * @param string $name The name of the operation resource.
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
+     * The "operations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $policysimulatorService = new Google\Service\PolicySimulator(...);
+     *   $operations = $policysimulatorService->folders_locations_orgPolicyViolationsPreviews_operations;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class FoldersLocationsOrgPolicyViolationsPreviewsOperations extends \Google\Service\Resource
+    {
+        /**
+         * Gets the latest state of a long-running operation. Clients can use this
+         * method to poll the operation result at intervals as recommended by the API
+         * service. (operations.get)
+         *
+         * @param string $name The name of the operation resource.
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\PolicySimulator\Resource\FoldersLocationsOrgPolicyViolationsPreviewsOperations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_PolicySimulator_Resource_FoldersLocationsOrgPolicyViolationsPreviewsOperations extends \Google\Service\PolicySimulator\Resource\FoldersLocationsOrgPolicyViolationsPreviewsOperations
     {
     }
 }

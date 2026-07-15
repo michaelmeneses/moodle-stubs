@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2alphaModelPageOptimizationConfigCandidate extends \Google\Model
-{
-    /**
-     * This has to be a valid ServingConfig identifier. For example, for a
-     * ServingConfig with full name: `projects/locations/global/catalogs/default_c
-     * atalog/servingConfigs/my_candidate_config`, this would be
-     * `my_candidate_config`.
-     *
-     * @var string
-     */
-    public $servingConfigId;
-    /**
-     * This has to be a valid ServingConfig identifier. For example, for a
-     * ServingConfig with full name: `projects/locations/global/catalogs/default_c
-     * atalog/servingConfigs/my_candidate_config`, this would be
-     * `my_candidate_config`.
-     *
-     * @param string $servingConfigId
-     */
-    public function setServingConfigId($servingConfigId)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2alphaModelPageOptimizationConfigCandidate extends \Google\Model
     {
+        /**
+         * This has to be a valid ServingConfig identifier. For example, for a
+         * ServingConfig with full name: `projects/locations/global/catalogs/default_c
+         * atalog/servingConfigs/my_candidate_config`, this would be
+         * `my_candidate_config`.
+         *
+         * @var string
+         */
+        public $servingConfigId;
+        /**
+         * This has to be a valid ServingConfig identifier. For example, for a
+         * ServingConfig with full name: `projects/locations/global/catalogs/default_c
+         * atalog/servingConfigs/my_candidate_config`, this would be
+         * `my_candidate_config`.
+         *
+         * @param string $servingConfigId
+         */
+        public function setServingConfigId($servingConfigId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServingConfigId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2alphaModelPageOptimizationConfigCandidate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getServingConfigId()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2alphaModelPageOptimizationConfigCandidate extends \Google\Service\CloudRetail\GoogleCloudRetailV2alphaModelPageOptimizationConfigCandidate
     {
     }
 }

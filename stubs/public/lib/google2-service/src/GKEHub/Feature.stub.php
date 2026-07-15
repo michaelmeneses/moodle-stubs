@@ -21,217 +21,226 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class Feature extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    /**
-     * @var string
-     */
-    public $createTime;
-    /**
-     * @var string
-     */
-    public $deleteTime;
-    protected $fleetDefaultMemberConfigType = CommonFleetDefaultMemberConfigSpec::class;
-    protected $fleetDefaultMemberConfigDataType = '';
-    /**
-     * @var string[]
-     */
-    public $labels;
-    protected $membershipSpecsType = MembershipFeatureSpec::class;
-    protected $membershipSpecsDataType = 'map';
-    protected $membershipStatesType = MembershipFeatureState::class;
-    protected $membershipStatesDataType = 'map';
-    /**
-     * @var string
-     */
-    public $name;
-    protected $resourceStateType = FeatureResourceState::class;
-    protected $resourceStateDataType = '';
-    protected $scopeSpecsType = ScopeFeatureSpec::class;
-    protected $scopeSpecsDataType = 'map';
-    protected $scopeStatesType = ScopeFeatureState::class;
-    protected $scopeStatesDataType = 'map';
-    protected $specType = CommonFeatureSpec::class;
-    protected $specDataType = '';
-    protected $stateType = CommonFeatureState::class;
-    protected $stateDataType = '';
-    /**
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * @param string
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\GKEHub {
+    class Feature extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        /**
+         * @var string
+         */
+        public $createTime;
+        /**
+         * @var string
+         */
+        public $deleteTime;
+        protected $fleetDefaultMemberConfigType = CommonFleetDefaultMemberConfigSpec::class;
+        protected $fleetDefaultMemberConfigDataType = '';
+        /**
+         * @var string[]
+         */
+        public $labels;
+        protected $membershipSpecsType = MembershipFeatureSpec::class;
+        protected $membershipSpecsDataType = 'map';
+        protected $membershipStatesType = MembershipFeatureState::class;
+        protected $membershipStatesDataType = 'map';
+        /**
+         * @var string
+         */
+        public $name;
+        protected $resourceStateType = FeatureResourceState::class;
+        protected $resourceStateDataType = '';
+        protected $scopeSpecsType = ScopeFeatureSpec::class;
+        protected $scopeSpecsDataType = 'map';
+        protected $scopeStatesType = ScopeFeatureState::class;
+        protected $scopeStatesDataType = 'map';
+        protected $specType = CommonFeatureSpec::class;
+        protected $specDataType = '';
+        protected $stateType = CommonFeatureState::class;
+        protected $stateDataType = '';
+        /**
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * @param string
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDeleteTime($deleteTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeleteTime()
+        {
+        }
+        /**
+         * @param CommonFleetDefaultMemberConfigSpec
+         */
+        public function setFleetDefaultMemberConfig(CommonFleetDefaultMemberConfigSpec $fleetDefaultMemberConfig)
+        {
+        }
+        /**
+         * @return CommonFleetDefaultMemberConfigSpec
+         */
+        public function getFleetDefaultMemberConfig()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * @param MembershipFeatureSpec[]
+         */
+        public function setMembershipSpecs($membershipSpecs)
+        {
+        }
+        /**
+         * @return MembershipFeatureSpec[]
+         */
+        public function getMembershipSpecs()
+        {
+        }
+        /**
+         * @param MembershipFeatureState[]
+         */
+        public function setMembershipStates($membershipStates)
+        {
+        }
+        /**
+         * @return MembershipFeatureState[]
+         */
+        public function getMembershipStates()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param FeatureResourceState
+         */
+        public function setResourceState(FeatureResourceState $resourceState)
+        {
+        }
+        /**
+         * @return FeatureResourceState
+         */
+        public function getResourceState()
+        {
+        }
+        /**
+         * @param ScopeFeatureSpec[]
+         */
+        public function setScopeSpecs($scopeSpecs)
+        {
+        }
+        /**
+         * @return ScopeFeatureSpec[]
+         */
+        public function getScopeSpecs()
+        {
+        }
+        /**
+         * @param ScopeFeatureState[]
+         */
+        public function setScopeStates($scopeStates)
+        {
+        }
+        /**
+         * @return ScopeFeatureState[]
+         */
+        public function getScopeStates()
+        {
+        }
+        /**
+         * @param CommonFeatureSpec
+         */
+        public function setSpec(CommonFeatureSpec $spec)
+        {
+        }
+        /**
+         * @return CommonFeatureSpec
+         */
+        public function getSpec()
+        {
+        }
+        /**
+         * @param CommonFeatureState
+         */
+        public function setState(CommonFeatureState $state)
+        {
+        }
+        /**
+         * @return CommonFeatureState
+         */
+        public function getState()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEHub\Feature registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDeleteTime($deleteTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeleteTime()
-    {
-    }
-    /**
-     * @param CommonFleetDefaultMemberConfigSpec
-     */
-    public function setFleetDefaultMemberConfig(CommonFleetDefaultMemberConfigSpec $fleetDefaultMemberConfig)
-    {
-    }
-    /**
-     * @return CommonFleetDefaultMemberConfigSpec
-     */
-    public function getFleetDefaultMemberConfig()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * @param MembershipFeatureSpec[]
-     */
-    public function setMembershipSpecs($membershipSpecs)
-    {
-    }
-    /**
-     * @return MembershipFeatureSpec[]
-     */
-    public function getMembershipSpecs()
-    {
-    }
-    /**
-     * @param MembershipFeatureState[]
-     */
-    public function setMembershipStates($membershipStates)
-    {
-    }
-    /**
-     * @return MembershipFeatureState[]
-     */
-    public function getMembershipStates()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param FeatureResourceState
-     */
-    public function setResourceState(FeatureResourceState $resourceState)
-    {
-    }
-    /**
-     * @return FeatureResourceState
-     */
-    public function getResourceState()
-    {
-    }
-    /**
-     * @param ScopeFeatureSpec[]
-     */
-    public function setScopeSpecs($scopeSpecs)
-    {
-    }
-    /**
-     * @return ScopeFeatureSpec[]
-     */
-    public function getScopeSpecs()
-    {
-    }
-    /**
-     * @param ScopeFeatureState[]
-     */
-    public function setScopeStates($scopeStates)
-    {
-    }
-    /**
-     * @return ScopeFeatureState[]
-     */
-    public function getScopeStates()
-    {
-    }
-    /**
-     * @param CommonFeatureSpec
-     */
-    public function setSpec(CommonFeatureSpec $spec)
-    {
-    }
-    /**
-     * @return CommonFeatureSpec
-     */
-    public function getSpec()
-    {
-    }
-    /**
-     * @param CommonFeatureState
-     */
-    public function setState(CommonFeatureState $state)
-    {
-    }
-    /**
-     * @return CommonFeatureState
-     */
-    public function getState()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_GKEHub_Feature extends \Google\Service\GKEHub\Feature
     {
     }
 }

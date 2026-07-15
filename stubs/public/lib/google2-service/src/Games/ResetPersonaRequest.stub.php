@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Games;
-
-class ResetPersonaRequest extends \Google\Model
-{
-    /**
-     * Value of the 'persona' field as it was provided by the client in
-     * LinkPersona RPC
-     *
-     * @var string
-     */
-    public $persona;
-    /**
-     * Value of the 'persona' field as it was provided by the client in
-     * LinkPersona RPC
-     *
-     * @param string $persona
-     */
-    public function setPersona($persona)
+namespace Google\Service\Games {
+    class ResetPersonaRequest extends \Google\Model
     {
+        /**
+         * Value of the 'persona' field as it was provided by the client in
+         * LinkPersona RPC
+         *
+         * @var string
+         */
+        public $persona;
+        /**
+         * Value of the 'persona' field as it was provided by the client in
+         * LinkPersona RPC
+         *
+         * @param string $persona
+         */
+        public function setPersona($persona)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPersona()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Games\ResetPersonaRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPersona()
+    class Google_Service_Games_ResetPersonaRequest extends \Google\Service\Games\ResetPersonaRequest
     {
     }
 }

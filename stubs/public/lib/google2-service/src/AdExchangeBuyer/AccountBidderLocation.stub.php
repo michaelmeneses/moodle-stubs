@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer;
-
-class AccountBidderLocation extends \Google\Model
-{
-    public $bidProtocol;
-    public $maximumQps;
-    public $region;
-    public $url;
-    public function setBidProtocol($bidProtocol)
+namespace Google\Service\AdExchangeBuyer {
+    class AccountBidderLocation extends \Google\Model
     {
+        public $bidProtocol;
+        public $maximumQps;
+        public $region;
+        public $url;
+        public function setBidProtocol($bidProtocol)
+        {
+        }
+        public function getBidProtocol()
+        {
+        }
+        public function setMaximumQps($maximumQps)
+        {
+        }
+        public function getMaximumQps()
+        {
+        }
+        public function setRegion($region)
+        {
+        }
+        public function getRegion()
+        {
+        }
+        public function setUrl($url)
+        {
+        }
+        public function getUrl()
+        {
+        }
     }
-    public function getBidProtocol()
-    {
-    }
-    public function setMaximumQps($maximumQps)
-    {
-    }
-    public function getMaximumQps()
-    {
-    }
-    public function setRegion($region)
-    {
-    }
-    public function getRegion()
-    {
-    }
-    public function setUrl($url)
-    {
-    }
-    public function getUrl()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\AccountBidderLocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AdExchangeBuyer_AccountBidderLocation extends \Google\Service\AdExchangeBuyer\AccountBidderLocation
     {
     }
 }

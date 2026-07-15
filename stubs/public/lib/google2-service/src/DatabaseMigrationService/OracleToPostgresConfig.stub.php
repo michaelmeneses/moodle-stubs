@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class OracleToPostgresConfig extends \Google\Model
-{
-    protected $oracleSourceConfigType = OracleSourceConfig::class;
-    protected $oracleSourceConfigDataType = '';
-    protected $postgresDestinationConfigType = PostgresDestinationConfig::class;
-    protected $postgresDestinationConfigDataType = '';
-    /**
-     * Optional. Configuration for Oracle source.
-     *
-     * @param OracleSourceConfig $oracleSourceConfig
-     */
-    public function setOracleSourceConfig(OracleSourceConfig $oracleSourceConfig)
+namespace Google\Service\DatabaseMigrationService {
+    class OracleToPostgresConfig extends \Google\Model
     {
+        protected $oracleSourceConfigType = OracleSourceConfig::class;
+        protected $oracleSourceConfigDataType = '';
+        protected $postgresDestinationConfigType = PostgresDestinationConfig::class;
+        protected $postgresDestinationConfigDataType = '';
+        /**
+         * Optional. Configuration for Oracle source.
+         *
+         * @param OracleSourceConfig $oracleSourceConfig
+         */
+        public function setOracleSourceConfig(OracleSourceConfig $oracleSourceConfig)
+        {
+        }
+        /**
+         * @return OracleSourceConfig
+         */
+        public function getOracleSourceConfig()
+        {
+        }
+        /**
+         * Optional. Configuration for Postgres destination.
+         *
+         * @param PostgresDestinationConfig $postgresDestinationConfig
+         */
+        public function setPostgresDestinationConfig(PostgresDestinationConfig $postgresDestinationConfig)
+        {
+        }
+        /**
+         * @return PostgresDestinationConfig
+         */
+        public function getPostgresDestinationConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return OracleSourceConfig
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\OracleToPostgresConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOracleSourceConfig()
-    {
-    }
-    /**
-     * Optional. Configuration for Postgres destination.
-     *
-     * @param PostgresDestinationConfig $postgresDestinationConfig
-     */
-    public function setPostgresDestinationConfig(PostgresDestinationConfig $postgresDestinationConfig)
-    {
-    }
-    /**
-     * @return PostgresDestinationConfig
-     */
-    public function getPostgresDestinationConfig()
+    class Google_Service_DatabaseMigrationService_OracleToPostgresConfig extends \Google\Service\DatabaseMigrationService\OracleToPostgresConfig
     {
     }
 }

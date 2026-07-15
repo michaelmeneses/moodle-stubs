@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceConsumerManagement;
-
-class SystemParameter extends \Google\Model
-{
-    /**
-     * Define the HTTP header name to use for the parameter. It is case
-     * insensitive.
-     *
-     * @var string
-     */
-    public $httpHeader;
-    /**
-     * Define the name of the parameter, such as "api_key" . It is case sensitive.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Define the URL query parameter name to use for the parameter. It is case
-     * sensitive.
-     *
-     * @var string
-     */
-    public $urlQueryParameter;
-    /**
-     * Define the HTTP header name to use for the parameter. It is case
-     * insensitive.
-     *
-     * @param string $httpHeader
-     */
-    public function setHttpHeader($httpHeader)
+namespace Google\Service\ServiceConsumerManagement {
+    class SystemParameter extends \Google\Model
     {
+        /**
+         * Define the HTTP header name to use for the parameter. It is case
+         * insensitive.
+         *
+         * @var string
+         */
+        public $httpHeader;
+        /**
+         * Define the name of the parameter, such as "api_key" . It is case sensitive.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Define the URL query parameter name to use for the parameter. It is case
+         * sensitive.
+         *
+         * @var string
+         */
+        public $urlQueryParameter;
+        /**
+         * Define the HTTP header name to use for the parameter. It is case
+         * insensitive.
+         *
+         * @param string $httpHeader
+         */
+        public function setHttpHeader($httpHeader)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHttpHeader()
+        {
+        }
+        /**
+         * Define the name of the parameter, such as "api_key" . It is case sensitive.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Define the URL query parameter name to use for the parameter. It is case
+         * sensitive.
+         *
+         * @param string $urlQueryParameter
+         */
+        public function setUrlQueryParameter($urlQueryParameter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrlQueryParameter()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ServiceConsumerManagement\SystemParameter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHttpHeader()
-    {
-    }
-    /**
-     * Define the name of the parameter, such as "api_key" . It is case sensitive.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Define the URL query parameter name to use for the parameter. It is case
-     * sensitive.
-     *
-     * @param string $urlQueryParameter
-     */
-    public function setUrlQueryParameter($urlQueryParameter)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrlQueryParameter()
+    class Google_Service_ServiceConsumerManagement_SystemParameter extends \Google\Service\ServiceConsumerManagement\SystemParameter
     {
     }
 }

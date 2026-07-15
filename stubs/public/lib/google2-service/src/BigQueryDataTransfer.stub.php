@@ -21,49 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for BigQueryDataTransfer (v1).
- *
- * <p>
- * Schedule queries or transfer external data from SaaS applications to Google
- * BigQuery on a regular basis.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://cloud.google.com/bigquery-transfer/" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class BigQueryDataTransfer extends \Google\Service
-{
-    /** View and manage your data in Google BigQuery and see the email address for your Google Account. */
-    const BIGQUERY = "https://www.googleapis.com/auth/bigquery";
-    /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
-    const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
-    /** View your data across Google Cloud services and see the email address of your Google Account. */
-    const CLOUD_PLATFORM_READ_ONLY = "https://www.googleapis.com/auth/cloud-platform.read-only";
-    public $projects;
-    public $projects_dataSources;
-    public $projects_locations;
-    public $projects_locations_dataSources;
-    public $projects_locations_transferConfigs;
-    public $projects_locations_transferConfigs_runs;
-    public $projects_locations_transferConfigs_runs_transferLogs;
-    public $projects_transferConfigs;
-    public $projects_transferConfigs_runs;
-    public $projects_transferConfigs_runs_transferLogs;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the BigQueryDataTransfer service.
+     * Service definition for BigQueryDataTransfer (v1).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * Schedule queries or transfer external data from SaaS applications to Google
+     * BigQuery on a regular basis.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://cloud.google.com/bigquery-transfer/" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class BigQueryDataTransfer extends \Google\Service
+    {
+        /** View and manage your data in Google BigQuery and see the email address for your Google Account. */
+        const BIGQUERY = "https://www.googleapis.com/auth/bigquery";
+        /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
+        const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
+        /** View your data across Google Cloud services and see the email address of your Google Account. */
+        const CLOUD_PLATFORM_READ_ONLY = "https://www.googleapis.com/auth/cloud-platform.read-only";
+        public $projects;
+        public $projects_dataSources;
+        public $projects_locations;
+        public $projects_locations_dataSources;
+        public $projects_locations_transferConfigs;
+        public $projects_locations_transferConfigs_runs;
+        public $projects_locations_transferConfigs_runs_transferLogs;
+        public $projects_transferConfigs;
+        public $projects_transferConfigs_runs;
+        public $projects_transferConfigs_runs_transferLogs;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the BigQueryDataTransfer service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\BigQueryDataTransfer registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_BigQueryDataTransfer extends \Google\Service\BigQueryDataTransfer
     {
     }
 }

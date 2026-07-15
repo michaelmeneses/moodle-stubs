@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class CommonFeatureState extends \Google\Model
-{
-    protected $appdevexperienceType = AppDevExperienceFeatureState::class;
-    protected $appdevexperienceDataType = '';
-    protected $clusterupgradeType = ClusterUpgradeFleetState::class;
-    protected $clusterupgradeDataType = '';
-    protected $fleetobservabilityType = FleetObservabilityFeatureState::class;
-    protected $fleetobservabilityDataType = '';
-    protected $stateType = FeatureState::class;
-    protected $stateDataType = '';
-    /**
-     * @param AppDevExperienceFeatureState
-     */
-    public function setAppdevexperience(AppDevExperienceFeatureState $appdevexperience)
+namespace Google\Service\GKEHub {
+    class CommonFeatureState extends \Google\Model
     {
+        protected $appdevexperienceType = AppDevExperienceFeatureState::class;
+        protected $appdevexperienceDataType = '';
+        protected $clusterupgradeType = ClusterUpgradeFleetState::class;
+        protected $clusterupgradeDataType = '';
+        protected $fleetobservabilityType = FleetObservabilityFeatureState::class;
+        protected $fleetobservabilityDataType = '';
+        protected $stateType = FeatureState::class;
+        protected $stateDataType = '';
+        /**
+         * @param AppDevExperienceFeatureState
+         */
+        public function setAppdevexperience(AppDevExperienceFeatureState $appdevexperience)
+        {
+        }
+        /**
+         * @return AppDevExperienceFeatureState
+         */
+        public function getAppdevexperience()
+        {
+        }
+        /**
+         * @param ClusterUpgradeFleetState
+         */
+        public function setClusterupgrade(ClusterUpgradeFleetState $clusterupgrade)
+        {
+        }
+        /**
+         * @return ClusterUpgradeFleetState
+         */
+        public function getClusterupgrade()
+        {
+        }
+        /**
+         * @param FleetObservabilityFeatureState
+         */
+        public function setFleetobservability(FleetObservabilityFeatureState $fleetobservability)
+        {
+        }
+        /**
+         * @return FleetObservabilityFeatureState
+         */
+        public function getFleetobservability()
+        {
+        }
+        /**
+         * @param FeatureState
+         */
+        public function setState(FeatureState $state)
+        {
+        }
+        /**
+         * @return FeatureState
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppDevExperienceFeatureState
+     * Runtime class alias of \Google\Service\GKEHub\CommonFeatureState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAppdevexperience()
-    {
-    }
-    /**
-     * @param ClusterUpgradeFleetState
-     */
-    public function setClusterupgrade(ClusterUpgradeFleetState $clusterupgrade)
-    {
-    }
-    /**
-     * @return ClusterUpgradeFleetState
-     */
-    public function getClusterupgrade()
-    {
-    }
-    /**
-     * @param FleetObservabilityFeatureState
-     */
-    public function setFleetobservability(FleetObservabilityFeatureState $fleetobservability)
-    {
-    }
-    /**
-     * @return FleetObservabilityFeatureState
-     */
-    public function getFleetobservability()
-    {
-    }
-    /**
-     * @param FeatureState
-     */
-    public function setState(FeatureState $state)
-    {
-    }
-    /**
-     * @return FeatureState
-     */
-    public function getState()
+    class Google_Service_GKEHub_CommonFeatureState extends \Google\Service\GKEHub\CommonFeatureState
     {
     }
 }

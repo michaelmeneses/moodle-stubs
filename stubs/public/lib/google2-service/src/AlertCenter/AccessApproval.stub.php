@@ -21,130 +21,139 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AlertCenter;
-
-class AccessApproval extends \Google\Collection
-{
-    protected $collection_key = 'tickets';
-    /**
-     * Justification for data access based on justification enums.
-     *
-     * @var string[]
-     */
-    public $justificationReason;
-    /**
-     * Office location of Google staff requesting access such as "US".
-     *
-     * @var string
-     */
-    public $officeLocation;
-    /**
-     * Products within scope of the Access Approvals request.
-     *
-     * @var string[]
-     */
-    public $products;
-    /**
-     * ID of the Access Approvals request. This is a helpful field when requesting
-     * support from Google.
-     *
-     * @var string
-     */
-    public $requestId;
-    /**
-     * Scope of access, also known as a resource. This is further narrowed down by
-     * the product field.
-     *
-     * @var string
-     */
-    public $scope;
-    protected $ticketsType = SupportTicket::class;
-    protected $ticketsDataType = 'array';
-    /**
-     * Justification for data access based on justification enums.
-     *
-     * @param string[] $justificationReason
-     */
-    public function setJustificationReason($justificationReason)
+namespace Google\Service\AlertCenter {
+    class AccessApproval extends \Google\Collection
     {
+        protected $collection_key = 'tickets';
+        /**
+         * Justification for data access based on justification enums.
+         *
+         * @var string[]
+         */
+        public $justificationReason;
+        /**
+         * Office location of Google staff requesting access such as "US".
+         *
+         * @var string
+         */
+        public $officeLocation;
+        /**
+         * Products within scope of the Access Approvals request.
+         *
+         * @var string[]
+         */
+        public $products;
+        /**
+         * ID of the Access Approvals request. This is a helpful field when requesting
+         * support from Google.
+         *
+         * @var string
+         */
+        public $requestId;
+        /**
+         * Scope of access, also known as a resource. This is further narrowed down by
+         * the product field.
+         *
+         * @var string
+         */
+        public $scope;
+        protected $ticketsType = SupportTicket::class;
+        protected $ticketsDataType = 'array';
+        /**
+         * Justification for data access based on justification enums.
+         *
+         * @param string[] $justificationReason
+         */
+        public function setJustificationReason($justificationReason)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getJustificationReason()
+        {
+        }
+        /**
+         * Office location of Google staff requesting access such as "US".
+         *
+         * @param string $officeLocation
+         */
+        public function setOfficeLocation($officeLocation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOfficeLocation()
+        {
+        }
+        /**
+         * Products within scope of the Access Approvals request.
+         *
+         * @param string[] $products
+         */
+        public function setProducts($products)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getProducts()
+        {
+        }
+        /**
+         * ID of the Access Approvals request. This is a helpful field when requesting
+         * support from Google.
+         *
+         * @param string $requestId
+         */
+        public function setRequestId($requestId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestId()
+        {
+        }
+        /**
+         * Scope of access, also known as a resource. This is further narrowed down by
+         * the product field.
+         *
+         * @param string $scope
+         */
+        public function setScope($scope)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScope()
+        {
+        }
+        /**
+         * Support tickets related to this Access Approvals request. Populated if
+         * there is an associated case number.
+         *
+         * @param SupportTicket[] $tickets
+         */
+        public function setTickets($tickets)
+        {
+        }
+        /**
+         * @return SupportTicket[]
+         */
+        public function getTickets()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\AlertCenter\AccessApproval registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getJustificationReason()
-    {
-    }
-    /**
-     * Office location of Google staff requesting access such as "US".
-     *
-     * @param string $officeLocation
-     */
-    public function setOfficeLocation($officeLocation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOfficeLocation()
-    {
-    }
-    /**
-     * Products within scope of the Access Approvals request.
-     *
-     * @param string[] $products
-     */
-    public function setProducts($products)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getProducts()
-    {
-    }
-    /**
-     * ID of the Access Approvals request. This is a helpful field when requesting
-     * support from Google.
-     *
-     * @param string $requestId
-     */
-    public function setRequestId($requestId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestId()
-    {
-    }
-    /**
-     * Scope of access, also known as a resource. This is further narrowed down by
-     * the product field.
-     *
-     * @param string $scope
-     */
-    public function setScope($scope)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getScope()
-    {
-    }
-    /**
-     * Support tickets related to this Access Approvals request. Populated if
-     * there is an associated case number.
-     *
-     * @param SupportTicket[] $tickets
-     */
-    public function setTickets($tickets)
-    {
-    }
-    /**
-     * @return SupportTicket[]
-     */
-    public function getTickets()
+    class Google_Service_AlertCenter_AccessApproval extends \Google\Service\AlertCenter\AccessApproval
     {
     }
 }

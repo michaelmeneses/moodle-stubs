@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1AnswerReferenceUnstructuredDocumentInfoChunkContent extends \Google\Model
-{
-    /**
-     * Chunk textual content.
-     *
-     * @var string
-     */
-    public $content;
-    /**
-     * Page identifier.
-     *
-     * @var string
-     */
-    public $pageIdentifier;
-    /**
-     * The relevance of the chunk for a given query. Values range from 0.0
-     * (completely irrelevant) to 1.0 (completely relevant). This value is for
-     * informational purpose only. It may change for the same query and chunk at
-     * any time due to a model retraining or change in implementation.
-     *
-     * @var float
-     */
-    public $relevanceScore;
-    /**
-     * Chunk textual content.
-     *
-     * @param string $content
-     */
-    public function setContent($content)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1AnswerReferenceUnstructuredDocumentInfoChunkContent extends \Google\Model
     {
+        /**
+         * Chunk textual content.
+         *
+         * @var string
+         */
+        public $content;
+        /**
+         * Page identifier.
+         *
+         * @var string
+         */
+        public $pageIdentifier;
+        /**
+         * The relevance of the chunk for a given query. Values range from 0.0
+         * (completely irrelevant) to 1.0 (completely relevant). This value is for
+         * informational purpose only. It may change for the same query and chunk at
+         * any time due to a model retraining or change in implementation.
+         *
+         * @var float
+         */
+        public $relevanceScore;
+        /**
+         * Chunk textual content.
+         *
+         * @param string $content
+         */
+        public function setContent($content)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContent()
+        {
+        }
+        /**
+         * Page identifier.
+         *
+         * @param string $pageIdentifier
+         */
+        public function setPageIdentifier($pageIdentifier)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPageIdentifier()
+        {
+        }
+        /**
+         * The relevance of the chunk for a given query. Values range from 0.0
+         * (completely irrelevant) to 1.0 (completely relevant). This value is for
+         * informational purpose only. It may change for the same query and chunk at
+         * any time due to a model retraining or change in implementation.
+         *
+         * @param float $relevanceScore
+         */
+        public function setRelevanceScore($relevanceScore)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getRelevanceScore()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AnswerReferenceUnstructuredDocumentInfoChunkContent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContent()
-    {
-    }
-    /**
-     * Page identifier.
-     *
-     * @param string $pageIdentifier
-     */
-    public function setPageIdentifier($pageIdentifier)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPageIdentifier()
-    {
-    }
-    /**
-     * The relevance of the chunk for a given query. Values range from 0.0
-     * (completely irrelevant) to 1.0 (completely relevant). This value is for
-     * informational purpose only. It may change for the same query and chunk at
-     * any time due to a model retraining or change in implementation.
-     *
-     * @param float $relevanceScore
-     */
-    public function setRelevanceScore($relevanceScore)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getRelevanceScore()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1AnswerReferenceUnstructuredDocumentInfoChunkContent extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AnswerReferenceUnstructuredDocumentInfoChunkContent
     {
     }
 }

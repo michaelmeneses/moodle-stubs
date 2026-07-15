@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SemanticTile;
-
-class TileCoordinates extends \Google\Model
-{
-    public $x;
-    public $y;
-    public $zoom;
-    public function setX($x)
+namespace Google\Service\SemanticTile {
+    class TileCoordinates extends \Google\Model
     {
+        public $x;
+        public $y;
+        public $zoom;
+        public function setX($x)
+        {
+        }
+        public function getX()
+        {
+        }
+        public function setY($y)
+        {
+        }
+        public function getY()
+        {
+        }
+        public function setZoom($zoom)
+        {
+        }
+        public function getZoom()
+        {
+        }
     }
-    public function getX()
-    {
-    }
-    public function setY($y)
-    {
-    }
-    public function getY()
-    {
-    }
-    public function setZoom($zoom)
-    {
-    }
-    public function getZoom()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\SemanticTile\TileCoordinates registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_SemanticTile_TileCoordinates extends \Google\Service\SemanticTile\TileCoordinates
     {
     }
 }

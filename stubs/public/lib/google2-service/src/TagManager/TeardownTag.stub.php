@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager;
-
-class TeardownTag extends \Google\Model
-{
-    /**
-     * If true, fire the teardown tag if and only if the main tag fires
-     * successfully. If false, fire the teardown tag regardless of main tag firing
-     * status.
-     *
-     * @var bool
-     */
-    public $stopTeardownOnFailure;
-    /**
-     * The name of the teardown tag.
-     *
-     * @var string
-     */
-    public $tagName;
-    /**
-     * If true, fire the teardown tag if and only if the main tag fires
-     * successfully. If false, fire the teardown tag regardless of main tag firing
-     * status.
-     *
-     * @param bool $stopTeardownOnFailure
-     */
-    public function setStopTeardownOnFailure($stopTeardownOnFailure)
+namespace Google\Service\TagManager {
+    class TeardownTag extends \Google\Model
     {
+        /**
+         * If true, fire the teardown tag if and only if the main tag fires
+         * successfully. If false, fire the teardown tag regardless of main tag firing
+         * status.
+         *
+         * @var bool
+         */
+        public $stopTeardownOnFailure;
+        /**
+         * The name of the teardown tag.
+         *
+         * @var string
+         */
+        public $tagName;
+        /**
+         * If true, fire the teardown tag if and only if the main tag fires
+         * successfully. If false, fire the teardown tag regardless of main tag firing
+         * status.
+         *
+         * @param bool $stopTeardownOnFailure
+         */
+        public function setStopTeardownOnFailure($stopTeardownOnFailure)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getStopTeardownOnFailure()
+        {
+        }
+        /**
+         * The name of the teardown tag.
+         *
+         * @param string $tagName
+         */
+        public function setTagName($tagName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTagName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\TagManager\TeardownTag registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStopTeardownOnFailure()
-    {
-    }
-    /**
-     * The name of the teardown tag.
-     *
-     * @param string $tagName
-     */
-    public function setTagName($tagName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTagName()
+    class Google_Service_TagManager_TeardownTag extends \Google\Service\TagManager\TeardownTag
     {
     }
 }

@@ -21,78 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Assuredworkloads;
-
-class GoogleCloudAssuredworkloadsV1ApplyWorkloadUpdateOperationMetadata extends \Google\Model
-{
-    /**
-     * Unspecified value.
-     */
-    public const ACTION_WORKLOAD_UPDATE_ACTION_UNSPECIFIED = 'WORKLOAD_UPDATE_ACTION_UNSPECIFIED';
-    /**
-     * The update is applied.
-     */
-    public const ACTION_APPLY = 'APPLY';
-    /**
-     * Optional. The time the operation was created.
-     *
-     * @var string
-     */
-    public $action;
-    /**
-     * Optional. Output only. The time the operation was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Required. The resource name of the update
-     *
-     * @var string
-     */
-    public $updateName;
-    /**
-     * Optional. The time the operation was created.
-     *
-     * Accepted values: WORKLOAD_UPDATE_ACTION_UNSPECIFIED, APPLY
-     *
-     * @param self::ACTION_* $action
-     */
-    public function setAction($action)
+namespace Google\Service\Assuredworkloads {
+    class GoogleCloudAssuredworkloadsV1ApplyWorkloadUpdateOperationMetadata extends \Google\Model
     {
+        /**
+         * Unspecified value.
+         */
+        public const ACTION_WORKLOAD_UPDATE_ACTION_UNSPECIFIED = 'WORKLOAD_UPDATE_ACTION_UNSPECIFIED';
+        /**
+         * The update is applied.
+         */
+        public const ACTION_APPLY = 'APPLY';
+        /**
+         * Optional. The time the operation was created.
+         *
+         * @var string
+         */
+        public $action;
+        /**
+         * Optional. Output only. The time the operation was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Required. The resource name of the update
+         *
+         * @var string
+         */
+        public $updateName;
+        /**
+         * Optional. The time the operation was created.
+         *
+         * Accepted values: WORKLOAD_UPDATE_ACTION_UNSPECIFIED, APPLY
+         *
+         * @param self::ACTION_* $action
+         */
+        public function setAction($action)
+        {
+        }
+        /**
+         * @return self::ACTION_*
+         */
+        public function getAction()
+        {
+        }
+        /**
+         * Optional. Output only. The time the operation was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Required. The resource name of the update
+         *
+         * @param string $updateName
+         */
+        public function setUpdateName($updateName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::ACTION_*
+     * Runtime class alias of \Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1ApplyWorkloadUpdateOperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAction()
-    {
-    }
-    /**
-     * Optional. Output only. The time the operation was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Required. The resource name of the update
-     *
-     * @param string $updateName
-     */
-    public function setUpdateName($updateName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateName()
+    class Google_Service_Assuredworkloads_GoogleCloudAssuredworkloadsV1ApplyWorkloadUpdateOperationMetadata extends \Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1ApplyWorkloadUpdateOperationMetadata
     {
     }
 }

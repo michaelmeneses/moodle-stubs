@@ -21,89 +21,98 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CertificateManager;
-
-class ManagedIdentityCertificate extends \Google\Model
-{
-    /**
-     * State is unspecified.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * Certificate Manager attempts to provision or renew the certificate. If the
-     * process takes longer than expected, consult the `provisioning_issue` field.
-     */
-    public const STATE_PROVISIONING = 'PROVISIONING';
-    /**
-     * Multiple certificate provisioning attempts failed and Certificate Manager
-     * gave up. To try again, delete and create a new managed Certificate
-     * resource. For details see the `provisioning_issue` field.
-     */
-    public const STATE_FAILED = 'FAILED';
-    /**
-     * The certificate management is working, and a certificate has been
-     * provisioned.
-     */
-    public const STATE_ACTIVE = 'ACTIVE';
-    /**
-     * Required. Immutable. SPIFFE ID of the Managed Identity used for this
-     * certificate.
-     *
-     * @var string
-     */
-    public $identity;
-    protected $provisioningIssueType = ProvisioningIssue::class;
-    protected $provisioningIssueDataType = '';
-    /**
-     * Output only. State of the managed certificate resource.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Required. Immutable. SPIFFE ID of the Managed Identity used for this
-     * certificate.
-     *
-     * @param string $identity
-     */
-    public function setIdentity($identity)
+namespace Google\Service\CertificateManager {
+    class ManagedIdentityCertificate extends \Google\Model
     {
+        /**
+         * State is unspecified.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * Certificate Manager attempts to provision or renew the certificate. If the
+         * process takes longer than expected, consult the `provisioning_issue` field.
+         */
+        public const STATE_PROVISIONING = 'PROVISIONING';
+        /**
+         * Multiple certificate provisioning attempts failed and Certificate Manager
+         * gave up. To try again, delete and create a new managed Certificate
+         * resource. For details see the `provisioning_issue` field.
+         */
+        public const STATE_FAILED = 'FAILED';
+        /**
+         * The certificate management is working, and a certificate has been
+         * provisioned.
+         */
+        public const STATE_ACTIVE = 'ACTIVE';
+        /**
+         * Required. Immutable. SPIFFE ID of the Managed Identity used for this
+         * certificate.
+         *
+         * @var string
+         */
+        public $identity;
+        protected $provisioningIssueType = ProvisioningIssue::class;
+        protected $provisioningIssueDataType = '';
+        /**
+         * Output only. State of the managed certificate resource.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Required. Immutable. SPIFFE ID of the Managed Identity used for this
+         * certificate.
+         *
+         * @param string $identity
+         */
+        public function setIdentity($identity)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIdentity()
+        {
+        }
+        /**
+         * Output only. Information about issues with provisioning a managed
+         * certificate.
+         *
+         * @param ProvisioningIssue $provisioningIssue
+         */
+        public function setProvisioningIssue(ProvisioningIssue $provisioningIssue)
+        {
+        }
+        /**
+         * @return ProvisioningIssue
+         */
+        public function getProvisioningIssue()
+        {
+        }
+        /**
+         * Output only. State of the managed certificate resource.
+         *
+         * Accepted values: STATE_UNSPECIFIED, PROVISIONING, FAILED, ACTIVE
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CertificateManager\ManagedIdentityCertificate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIdentity()
-    {
-    }
-    /**
-     * Output only. Information about issues with provisioning a managed
-     * certificate.
-     *
-     * @param ProvisioningIssue $provisioningIssue
-     */
-    public function setProvisioningIssue(ProvisioningIssue $provisioningIssue)
-    {
-    }
-    /**
-     * @return ProvisioningIssue
-     */
-    public function getProvisioningIssue()
-    {
-    }
-    /**
-     * Output only. State of the managed certificate resource.
-     *
-     * Accepted values: STATE_UNSPECIFIED, PROVISIONING, FAILED, ACTIVE
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
+    class Google_Service_CertificateManager_ManagedIdentityCertificate extends \Google\Service\CertificateManager\ManagedIdentityCertificate
     {
     }
 }

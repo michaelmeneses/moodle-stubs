@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BackupforGKE;
-
-class NamespacedNames extends \Google\Collection
-{
-    protected $collection_key = 'namespacedNames';
-    protected $namespacedNamesType = NamespacedName::class;
-    protected $namespacedNamesDataType = 'array';
-    /**
-     * Optional. A list of namespaced Kubernetes resources.
-     *
-     * @param NamespacedName[] $namespacedNames
-     */
-    public function setNamespacedNames($namespacedNames)
+namespace Google\Service\BackupforGKE {
+    class NamespacedNames extends \Google\Collection
     {
+        protected $collection_key = 'namespacedNames';
+        protected $namespacedNamesType = NamespacedName::class;
+        protected $namespacedNamesDataType = 'array';
+        /**
+         * Optional. A list of namespaced Kubernetes resources.
+         *
+         * @param NamespacedName[] $namespacedNames
+         */
+        public function setNamespacedNames($namespacedNames)
+        {
+        }
+        /**
+         * @return NamespacedName[]
+         */
+        public function getNamespacedNames()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return NamespacedName[]
+     * Runtime class alias of \Google\Service\BackupforGKE\NamespacedNames registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNamespacedNames()
+    class Google_Service_BackupforGKE_NamespacedNames extends \Google\Service\BackupforGKE\NamespacedNames
     {
     }
 }

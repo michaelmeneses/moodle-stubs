@@ -21,114 +21,123 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class ReportInteractionRequest extends \Google\Model
-{
-    /**
-     * Default value. If provided, the service will throw ApiError with
-     * description "Required parameter: interactionType".
-     */
-    public const INTERACTION_TYPE_INTERACTION_TYPE_UNSPECIFIED = 'INTERACTION_TYPE_UNSPECIFIED';
-    /**
-     * When a recommendation is dismissed.
-     */
-    public const INTERACTION_TYPE_INTERACTION_DISMISS = 'INTERACTION_DISMISS';
-    /**
-     * When a recommendation is clicked.
-     */
-    public const INTERACTION_TYPE_INTERACTION_CLICK = 'INTERACTION_CLICK';
-    /**
-     * Required. Type of the interaction that is reported, for example
-     * INTERACTION_CLICK.
-     *
-     * @var string
-     */
-    public $interactionType;
-    /**
-     * Required. Token of the response when recommendation was returned.
-     *
-     * @var string
-     */
-    public $responseToken;
-    /**
-     * Optional. Subtype of the recommendations this interaction happened on. This
-     * field must be set only to the value that is returned by {@link
-     * `RecommendationsService.GenerateRecommendations`} call.
-     *
-     * @var string
-     */
-    public $subtype;
-    /**
-     * Required. Type of the recommendations on which this interaction happened.
-     * This field must be set only to the value that is returned by {@link
-     * `GenerateRecommendationsResponse`} call.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Required. Type of the interaction that is reported, for example
-     * INTERACTION_CLICK.
-     *
-     * Accepted values: INTERACTION_TYPE_UNSPECIFIED, INTERACTION_DISMISS,
-     * INTERACTION_CLICK
-     *
-     * @param self::INTERACTION_TYPE_* $interactionType
-     */
-    public function setInteractionType($interactionType)
+namespace Google\Service\ShoppingContent {
+    class ReportInteractionRequest extends \Google\Model
     {
+        /**
+         * Default value. If provided, the service will throw ApiError with
+         * description "Required parameter: interactionType".
+         */
+        public const INTERACTION_TYPE_INTERACTION_TYPE_UNSPECIFIED = 'INTERACTION_TYPE_UNSPECIFIED';
+        /**
+         * When a recommendation is dismissed.
+         */
+        public const INTERACTION_TYPE_INTERACTION_DISMISS = 'INTERACTION_DISMISS';
+        /**
+         * When a recommendation is clicked.
+         */
+        public const INTERACTION_TYPE_INTERACTION_CLICK = 'INTERACTION_CLICK';
+        /**
+         * Required. Type of the interaction that is reported, for example
+         * INTERACTION_CLICK.
+         *
+         * @var string
+         */
+        public $interactionType;
+        /**
+         * Required. Token of the response when recommendation was returned.
+         *
+         * @var string
+         */
+        public $responseToken;
+        /**
+         * Optional. Subtype of the recommendations this interaction happened on. This
+         * field must be set only to the value that is returned by {@link
+         * `RecommendationsService.GenerateRecommendations`} call.
+         *
+         * @var string
+         */
+        public $subtype;
+        /**
+         * Required. Type of the recommendations on which this interaction happened.
+         * This field must be set only to the value that is returned by {@link
+         * `GenerateRecommendationsResponse`} call.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Required. Type of the interaction that is reported, for example
+         * INTERACTION_CLICK.
+         *
+         * Accepted values: INTERACTION_TYPE_UNSPECIFIED, INTERACTION_DISMISS,
+         * INTERACTION_CLICK
+         *
+         * @param self::INTERACTION_TYPE_* $interactionType
+         */
+        public function setInteractionType($interactionType)
+        {
+        }
+        /**
+         * @return self::INTERACTION_TYPE_*
+         */
+        public function getInteractionType()
+        {
+        }
+        /**
+         * Required. Token of the response when recommendation was returned.
+         *
+         * @param string $responseToken
+         */
+        public function setResponseToken($responseToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResponseToken()
+        {
+        }
+        /**
+         * Optional. Subtype of the recommendations this interaction happened on. This
+         * field must be set only to the value that is returned by {@link
+         * `RecommendationsService.GenerateRecommendations`} call.
+         *
+         * @param string $subtype
+         */
+        public function setSubtype($subtype)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubtype()
+        {
+        }
+        /**
+         * Required. Type of the recommendations on which this interaction happened.
+         * This field must be set only to the value that is returned by {@link
+         * `GenerateRecommendationsResponse`} call.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::INTERACTION_TYPE_*
+     * Runtime class alias of \Google\Service\ShoppingContent\ReportInteractionRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInteractionType()
-    {
-    }
-    /**
-     * Required. Token of the response when recommendation was returned.
-     *
-     * @param string $responseToken
-     */
-    public function setResponseToken($responseToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResponseToken()
-    {
-    }
-    /**
-     * Optional. Subtype of the recommendations this interaction happened on. This
-     * field must be set only to the value that is returned by {@link
-     * `RecommendationsService.GenerateRecommendations`} call.
-     *
-     * @param string $subtype
-     */
-    public function setSubtype($subtype)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubtype()
-    {
-    }
-    /**
-     * Required. Type of the recommendations on which this interaction happened.
-     * This field must be set only to the value that is returned by {@link
-     * `GenerateRecommendationsResponse`} call.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_ShoppingContent_ReportInteractionRequest extends \Google\Service\ShoppingContent\ReportInteractionRequest
     {
     }
 }

@@ -21,89 +21,102 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdSensePlatform\Resource;
-
-/**
- * The "sites" collection of methods.
- * Typical usage is:
- *  <code>
- *   $adsenseplatformService = new Google\Service\AdSensePlatform(...);
- *   $sites = $adsenseplatformService->platforms_accounts_sites;
- *  </code>
- */
-class PlatformsAccountsSites extends \Google\Service\Resource
-{
+namespace Google\Service\AdSensePlatform\Resource {
+    use Google\Service\AdSensePlatform\AdsenseplatformEmpty;
+    use Google\Service\AdSensePlatform\ListSitesResponse;
+    use Google\Service\AdSensePlatform\RequestSiteReviewResponse;
+    use Google\Service\AdSensePlatform\Site;
     /**
-     * Creates a site for a specified account. (sites.create)
-     *
-     * @param string $parent Required. Account to create site. Format:
-     * platforms/{platform}/accounts/{account_id}
-     * @param Site $postBody
-     * @param array $optParams Optional parameters.
-     * @return Site
-     * @throws \Google\Service\Exception
+     * The "sites" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $adsenseplatformService = new Google\Service\AdSensePlatform(...);
+     *   $sites = $adsenseplatformService->platforms_accounts_sites;
+     *  </code>
      */
-    public function create($parent, Site $postBody, $optParams = [])
+    class PlatformsAccountsSites extends \Google\Service\Resource
     {
+        /**
+         * Creates a site for a specified account. (sites.create)
+         *
+         * @param string $parent Required. Account to create site. Format:
+         * platforms/{platform}/accounts/{account_id}
+         * @param Site $postBody
+         * @param array $optParams Optional parameters.
+         * @return Site
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, Site $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a site from a specified account. (sites.delete)
+         *
+         * @param string $name Required. The name of the site to delete. Format:
+         * platforms/{platform}/accounts/{account}/sites/{site}
+         * @param array $optParams Optional parameters.
+         * @return AdsenseplatformEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets a site from a specified sub-account. (sites.get)
+         *
+         * @param string $name Required. The name of the site to retrieve. Format:
+         * platforms/{platform}/accounts/{account}/sites/{site}
+         * @param array $optParams Optional parameters.
+         * @return Site
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists sites for a specific account. (sites.listPlatformsAccountsSites)
+         *
+         * @param string $parent Required. The account which owns the sites. Format:
+         * platforms/{platform}/accounts/{account}
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The maximum number of sites to include in the
+         * response, used for paging. If unspecified, at most 10000 sites will be
+         * returned. The maximum value is 10000; values above 10000 will be coerced to
+         * 10000.
+         * @opt_param string pageToken A page token, received from a previous
+         * `ListSites` call. Provide this to retrieve the subsequent page. When
+         * paginating, all other parameters provided to `ListSites` must match the call
+         * that provided the page token.
+         * @return ListSitesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listPlatformsAccountsSites($parent, $optParams = [])
+        {
+        }
+        /**
+         * Requests the review of a site. The site should be in REQUIRES_REVIEW or
+         * NEEDS_ATTENTION state. Note: Make sure you place an [ad
+         * tag](https://developers.google.com/adsense/platforms/direct/ad-tags) on your
+         * site before requesting a review. (sites.requestReview)
+         *
+         * @param string $name Required. The name of the site to submit for review.
+         * Format: platforms/{platform}/accounts/{account}/sites/{site}
+         * @param array $optParams Optional parameters.
+         * @return RequestSiteReviewResponse
+         * @throws \Google\Service\Exception
+         */
+        public function requestReview($name, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a site from a specified account. (sites.delete)
-     *
-     * @param string $name Required. The name of the site to delete. Format:
-     * platforms/{platform}/accounts/{account}/sites/{site}
-     * @param array $optParams Optional parameters.
-     * @return AdsenseplatformEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\AdSensePlatform\Resource\PlatformsAccountsSites registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets a site from a specified sub-account. (sites.get)
-     *
-     * @param string $name Required. The name of the site to retrieve. Format:
-     * platforms/{platform}/accounts/{account}/sites/{site}
-     * @param array $optParams Optional parameters.
-     * @return Site
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists sites for a specific account. (sites.listPlatformsAccountsSites)
-     *
-     * @param string $parent Required. The account which owns the sites. Format:
-     * platforms/{platform}/accounts/{account}
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The maximum number of sites to include in the
-     * response, used for paging. If unspecified, at most 10000 sites will be
-     * returned. The maximum value is 10000; values above 10000 will be coerced to
-     * 10000.
-     * @opt_param string pageToken A page token, received from a previous
-     * `ListSites` call. Provide this to retrieve the subsequent page. When
-     * paginating, all other parameters provided to `ListSites` must match the call
-     * that provided the page token.
-     * @return ListSitesResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listPlatformsAccountsSites($parent, $optParams = [])
-    {
-    }
-    /**
-     * Requests the review of a site. The site should be in REQUIRES_REVIEW or
-     * NEEDS_ATTENTION state. Note: Make sure you place an [ad
-     * tag](https://developers.google.com/adsense/platforms/direct/ad-tags) on your
-     * site before requesting a review. (sites.requestReview)
-     *
-     * @param string $name Required. The name of the site to submit for review.
-     * Format: platforms/{platform}/accounts/{account}/sites/{site}
-     * @param array $optParams Optional parameters.
-     * @return RequestSiteReviewResponse
-     * @throws \Google\Service\Exception
-     */
-    public function requestReview($name, $optParams = [])
+    class Google_Service_AdSensePlatform_Resource_PlatformsAccountsSites extends \Google\Service\AdSensePlatform\Resource\PlatformsAccountsSites
     {
     }
 }

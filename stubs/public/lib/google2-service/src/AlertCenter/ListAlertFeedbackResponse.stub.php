@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AlertCenter;
-
-class ListAlertFeedbackResponse extends \Google\Collection
-{
-    protected $collection_key = 'feedback';
-    protected $feedbackType = AlertFeedback::class;
-    protected $feedbackDataType = 'array';
-    /**
-     * The list of alert feedback. Feedback entries for each alert are ordered by
-     * creation time descending.
-     *
-     * @param AlertFeedback[] $feedback
-     */
-    public function setFeedback($feedback)
+namespace Google\Service\AlertCenter {
+    class ListAlertFeedbackResponse extends \Google\Collection
     {
+        protected $collection_key = 'feedback';
+        protected $feedbackType = AlertFeedback::class;
+        protected $feedbackDataType = 'array';
+        /**
+         * The list of alert feedback. Feedback entries for each alert are ordered by
+         * creation time descending.
+         *
+         * @param AlertFeedback[] $feedback
+         */
+        public function setFeedback($feedback)
+        {
+        }
+        /**
+         * @return AlertFeedback[]
+         */
+        public function getFeedback()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AlertFeedback[]
+     * Runtime class alias of \Google\Service\AlertCenter\ListAlertFeedbackResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFeedback()
+    class Google_Service_AlertCenter_ListAlertFeedbackResponse extends \Google\Service\AlertCenter\ListAlertFeedbackResponse
     {
     }
 }

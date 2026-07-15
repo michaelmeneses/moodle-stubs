@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudFilestore;
-
-class RevertInstanceRequest extends \Google\Model
-{
-    /**
-     * Required. The snapshot resource ID, in the format 'my-snapshot', where the
-     * specified ID is the {snapshot_id} of the fully qualified name like `project
-     * s/{project_id}/locations/{location_id}/instances/{instance_id}/snapshots/{s
-     * napshot_id}`
-     *
-     * @var string
-     */
-    public $targetSnapshotId;
-    /**
-     * Required. The snapshot resource ID, in the format 'my-snapshot', where the
-     * specified ID is the {snapshot_id} of the fully qualified name like `project
-     * s/{project_id}/locations/{location_id}/instances/{instance_id}/snapshots/{s
-     * napshot_id}`
-     *
-     * @param string $targetSnapshotId
-     */
-    public function setTargetSnapshotId($targetSnapshotId)
+namespace Google\Service\CloudFilestore {
+    class RevertInstanceRequest extends \Google\Model
     {
+        /**
+         * Required. The snapshot resource ID, in the format 'my-snapshot', where the
+         * specified ID is the {snapshot_id} of the fully qualified name like `project
+         * s/{project_id}/locations/{location_id}/instances/{instance_id}/snapshots/{s
+         * napshot_id}`
+         *
+         * @var string
+         */
+        public $targetSnapshotId;
+        /**
+         * Required. The snapshot resource ID, in the format 'my-snapshot', where the
+         * specified ID is the {snapshot_id} of the fully qualified name like `project
+         * s/{project_id}/locations/{location_id}/instances/{instance_id}/snapshots/{s
+         * napshot_id}`
+         *
+         * @param string $targetSnapshotId
+         */
+        public function setTargetSnapshotId($targetSnapshotId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetSnapshotId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudFilestore\RevertInstanceRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTargetSnapshotId()
+    class Google_Service_CloudFilestore_RevertInstanceRequest extends \Google\Service\CloudFilestore\RevertInstanceRequest
     {
     }
 }

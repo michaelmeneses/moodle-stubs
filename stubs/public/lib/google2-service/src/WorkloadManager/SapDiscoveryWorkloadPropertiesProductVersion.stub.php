@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager;
-
-class SapDiscoveryWorkloadPropertiesProductVersion extends \Google\Model
-{
-    /**
-     * Optional. Name of the product.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optional. Version of the product.
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * Optional. Name of the product.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\WorkloadManager {
+    class SapDiscoveryWorkloadPropertiesProductVersion extends \Google\Model
     {
+        /**
+         * Optional. Name of the product.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optional. Version of the product.
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * Optional. Name of the product.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. Version of the product.
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\WorkloadManager\SapDiscoveryWorkloadPropertiesProductVersion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. Version of the product.
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_WorkloadManager_SapDiscoveryWorkloadPropertiesProductVersion extends \Google\Service\WorkloadManager\SapDiscoveryWorkloadPropertiesProductVersion
     {
     }
 }

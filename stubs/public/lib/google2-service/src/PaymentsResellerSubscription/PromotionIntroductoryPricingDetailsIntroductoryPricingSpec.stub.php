@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PaymentsResellerSubscription;
-
-class PromotionIntroductoryPricingDetailsIntroductoryPricingSpec extends \Google\Model
-{
-    protected $discountAmountType = Amount::class;
-    protected $discountAmountDataType = '';
-    /**
-     * Output only. The discount percentage in micros. For example, 50,000
-     * represents 5%.
-     *
-     * @var string
-     */
-    public $discountRatioMicros;
-    /**
-     * Output only. The duration of an introductory offer in billing cycles.
-     *
-     * @var int
-     */
-    public $recurrenceCount;
-    /**
-     * Output only. 2-letter ISO region code where the product is available in.
-     * Ex. "US".
-     *
-     * @var string
-     */
-    public $regionCode;
-    /**
-     * Output only. The discount amount. The value is positive.
-     *
-     * @param Amount $discountAmount
-     */
-    public function setDiscountAmount(Amount $discountAmount)
+namespace Google\Service\PaymentsResellerSubscription {
+    class PromotionIntroductoryPricingDetailsIntroductoryPricingSpec extends \Google\Model
     {
+        protected $discountAmountType = Amount::class;
+        protected $discountAmountDataType = '';
+        /**
+         * Output only. The discount percentage in micros. For example, 50,000
+         * represents 5%.
+         *
+         * @var string
+         */
+        public $discountRatioMicros;
+        /**
+         * Output only. The duration of an introductory offer in billing cycles.
+         *
+         * @var int
+         */
+        public $recurrenceCount;
+        /**
+         * Output only. 2-letter ISO region code where the product is available in.
+         * Ex. "US".
+         *
+         * @var string
+         */
+        public $regionCode;
+        /**
+         * Output only. The discount amount. The value is positive.
+         *
+         * @param Amount $discountAmount
+         */
+        public function setDiscountAmount(Amount $discountAmount)
+        {
+        }
+        /**
+         * @return Amount
+         */
+        public function getDiscountAmount()
+        {
+        }
+        /**
+         * Output only. The discount percentage in micros. For example, 50,000
+         * represents 5%.
+         *
+         * @param string $discountRatioMicros
+         */
+        public function setDiscountRatioMicros($discountRatioMicros)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDiscountRatioMicros()
+        {
+        }
+        /**
+         * Output only. The duration of an introductory offer in billing cycles.
+         *
+         * @param int $recurrenceCount
+         */
+        public function setRecurrenceCount($recurrenceCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRecurrenceCount()
+        {
+        }
+        /**
+         * Output only. 2-letter ISO region code where the product is available in.
+         * Ex. "US".
+         *
+         * @param string $regionCode
+         */
+        public function setRegionCode($regionCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegionCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Amount
+     * Runtime class alias of \Google\Service\PaymentsResellerSubscription\PromotionIntroductoryPricingDetailsIntroductoryPricingSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDiscountAmount()
-    {
-    }
-    /**
-     * Output only. The discount percentage in micros. For example, 50,000
-     * represents 5%.
-     *
-     * @param string $discountRatioMicros
-     */
-    public function setDiscountRatioMicros($discountRatioMicros)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDiscountRatioMicros()
-    {
-    }
-    /**
-     * Output only. The duration of an introductory offer in billing cycles.
-     *
-     * @param int $recurrenceCount
-     */
-    public function setRecurrenceCount($recurrenceCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getRecurrenceCount()
-    {
-    }
-    /**
-     * Output only. 2-letter ISO region code where the product is available in.
-     * Ex. "US".
-     *
-     * @param string $regionCode
-     */
-    public function setRegionCode($regionCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegionCode()
+    class Google_Service_PaymentsResellerSubscription_PromotionIntroductoryPricingDetailsIntroductoryPricingSpec extends \Google\Service\PaymentsResellerSubscription\PromotionIntroductoryPricingDetailsIntroductoryPricingSpec
     {
     }
 }

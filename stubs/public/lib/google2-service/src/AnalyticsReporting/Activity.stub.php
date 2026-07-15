@@ -21,237 +21,246 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsReporting;
-
-class Activity extends \Google\Collection
-{
-    protected $collection_key = 'customDimension';
-    /**
-     * @var string
-     */
-    public $activityTime;
-    /**
-     * @var string
-     */
-    public $activityType;
-    protected $appviewType = ScreenviewData::class;
-    protected $appviewDataType = '';
-    /**
-     * @var string
-     */
-    public $campaign;
-    /**
-     * @var string
-     */
-    public $channelGrouping;
-    protected $customDimensionType = CustomDimension::class;
-    protected $customDimensionDataType = 'array';
-    protected $ecommerceType = EcommerceData::class;
-    protected $ecommerceDataType = '';
-    protected $eventType = EventData::class;
-    protected $eventDataType = '';
-    protected $goalsType = GoalSetData::class;
-    protected $goalsDataType = '';
-    /**
-     * @var string
-     */
-    public $hostname;
-    /**
-     * @var string
-     */
-    public $keyword;
-    /**
-     * @var string
-     */
-    public $landingPagePath;
-    /**
-     * @var string
-     */
-    public $medium;
-    protected $pageviewType = PageviewData::class;
-    protected $pageviewDataType = '';
-    /**
-     * @var string
-     */
-    public $source;
-    /**
-     * @param string
-     */
-    public function setActivityTime($activityTime)
+namespace Google\Service\AnalyticsReporting {
+    class Activity extends \Google\Collection
     {
+        protected $collection_key = 'customDimension';
+        /**
+         * @var string
+         */
+        public $activityTime;
+        /**
+         * @var string
+         */
+        public $activityType;
+        protected $appviewType = ScreenviewData::class;
+        protected $appviewDataType = '';
+        /**
+         * @var string
+         */
+        public $campaign;
+        /**
+         * @var string
+         */
+        public $channelGrouping;
+        protected $customDimensionType = CustomDimension::class;
+        protected $customDimensionDataType = 'array';
+        protected $ecommerceType = EcommerceData::class;
+        protected $ecommerceDataType = '';
+        protected $eventType = EventData::class;
+        protected $eventDataType = '';
+        protected $goalsType = GoalSetData::class;
+        protected $goalsDataType = '';
+        /**
+         * @var string
+         */
+        public $hostname;
+        /**
+         * @var string
+         */
+        public $keyword;
+        /**
+         * @var string
+         */
+        public $landingPagePath;
+        /**
+         * @var string
+         */
+        public $medium;
+        protected $pageviewType = PageviewData::class;
+        protected $pageviewDataType = '';
+        /**
+         * @var string
+         */
+        public $source;
+        /**
+         * @param string
+         */
+        public function setActivityTime($activityTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getActivityTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setActivityType($activityType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getActivityType()
+        {
+        }
+        /**
+         * @param ScreenviewData
+         */
+        public function setAppview(ScreenviewData $appview)
+        {
+        }
+        /**
+         * @return ScreenviewData
+         */
+        public function getAppview()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCampaign($campaign)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCampaign()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setChannelGrouping($channelGrouping)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChannelGrouping()
+        {
+        }
+        /**
+         * @param CustomDimension[]
+         */
+        public function setCustomDimension($customDimension)
+        {
+        }
+        /**
+         * @return CustomDimension[]
+         */
+        public function getCustomDimension()
+        {
+        }
+        /**
+         * @param EcommerceData
+         */
+        public function setEcommerce(EcommerceData $ecommerce)
+        {
+        }
+        /**
+         * @return EcommerceData
+         */
+        public function getEcommerce()
+        {
+        }
+        /**
+         * @param EventData
+         */
+        public function setEvent(EventData $event)
+        {
+        }
+        /**
+         * @return EventData
+         */
+        public function getEvent()
+        {
+        }
+        /**
+         * @param GoalSetData
+         */
+        public function setGoals(GoalSetData $goals)
+        {
+        }
+        /**
+         * @return GoalSetData
+         */
+        public function getGoals()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setHostname($hostname)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHostname()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKeyword($keyword)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKeyword()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLandingPagePath($landingPagePath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLandingPagePath()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMedium($medium)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMedium()
+        {
+        }
+        /**
+         * @param PageviewData
+         */
+        public function setPageview(PageviewData $pageview)
+        {
+        }
+        /**
+         * @return PageviewData
+         */
+        public function getPageview()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSource($source)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AnalyticsReporting\Activity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActivityTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setActivityType($activityType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getActivityType()
-    {
-    }
-    /**
-     * @param ScreenviewData
-     */
-    public function setAppview(ScreenviewData $appview)
-    {
-    }
-    /**
-     * @return ScreenviewData
-     */
-    public function getAppview()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCampaign($campaign)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCampaign()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setChannelGrouping($channelGrouping)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getChannelGrouping()
-    {
-    }
-    /**
-     * @param CustomDimension[]
-     */
-    public function setCustomDimension($customDimension)
-    {
-    }
-    /**
-     * @return CustomDimension[]
-     */
-    public function getCustomDimension()
-    {
-    }
-    /**
-     * @param EcommerceData
-     */
-    public function setEcommerce(EcommerceData $ecommerce)
-    {
-    }
-    /**
-     * @return EcommerceData
-     */
-    public function getEcommerce()
-    {
-    }
-    /**
-     * @param EventData
-     */
-    public function setEvent(EventData $event)
-    {
-    }
-    /**
-     * @return EventData
-     */
-    public function getEvent()
-    {
-    }
-    /**
-     * @param GoalSetData
-     */
-    public function setGoals(GoalSetData $goals)
-    {
-    }
-    /**
-     * @return GoalSetData
-     */
-    public function getGoals()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setHostname($hostname)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHostname()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKeyword($keyword)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKeyword()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLandingPagePath($landingPagePath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLandingPagePath()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMedium($medium)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMedium()
-    {
-    }
-    /**
-     * @param PageviewData
-     */
-    public function setPageview(PageviewData $pageview)
-    {
-    }
-    /**
-     * @return PageviewData
-     */
-    public function getPageview()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSource($source)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSource()
+    class Google_Service_AnalyticsReporting_Activity extends \Google\Service\AnalyticsReporting\Activity
     {
     }
 }

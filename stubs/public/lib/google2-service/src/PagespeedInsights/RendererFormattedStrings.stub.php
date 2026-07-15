@@ -21,1034 +21,1043 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PagespeedInsights;
-
-class RendererFormattedStrings extends \Google\Model
-{
-    /**
-     * The tooltip text on an expandable chevron icon.
-     *
-     * @var string
-     */
-    public $auditGroupExpandTooltip;
-    /**
-     * Text link pointing to the Lighthouse scoring calculator. This link
-     * immediately follows a sentence stating the performance score is calculated
-     * from the perf metrics.
-     *
-     * @var string
-     */
-    public $calculatorLink;
-    /**
-     * The label for the initial request in a critical request chain.
-     *
-     * @var string
-     */
-    public $crcInitialNavigation;
-    /**
-     * The label for values shown in the summary of critical request chains.
-     *
-     * @var string
-     */
-    public $crcLongestDurationLabel;
-    /**
-     * Option in a dropdown menu that copies the Lighthouse JSON object to the
-     * system clipboard.
-     *
-     * @var string
-     */
-    public $dropdownCopyJSON;
-    /**
-     * Option in a dropdown menu that toggles the themeing of the report between
-     * Light(default) and Dark themes.
-     *
-     * @var string
-     */
-    public $dropdownDarkTheme;
-    /**
-     * Option in a dropdown menu that opens a full Lighthouse report in a print
-     * dialog.
-     *
-     * @var string
-     */
-    public $dropdownPrintExpanded;
-    /**
-     * Option in a dropdown menu that opens a small, summary report in a print
-     * dialog.
-     *
-     * @var string
-     */
-    public $dropdownPrintSummary;
-    /**
-     * Option in a dropdown menu that saves the current report as a new GitHub
-     * Gist.
-     *
-     * @var string
-     */
-    public $dropdownSaveGist;
-    /**
-     * Option in a dropdown menu that saves the Lighthouse report HTML locally to
-     * the system as a '.html' file.
-     *
-     * @var string
-     */
-    public $dropdownSaveHTML;
-    /**
-     * Option in a dropdown menu that saves the Lighthouse JSON object to the
-     * local system as a '.json' file.
-     *
-     * @var string
-     */
-    public $dropdownSaveJSON;
-    /**
-     * Option in a dropdown menu that opens the current report in the Lighthouse
-     * Viewer Application.
-     *
-     * @var string
-     */
-    public $dropdownViewer;
-    /**
-     * The label shown next to an audit or metric that has had an error.
-     *
-     * @var string
-     */
-    public $errorLabel;
-    /**
-     * The error string shown next to an erroring audit.
-     *
-     * @var string
-     */
-    public $errorMissingAuditInfo;
-    /**
-     * Label for button to create an issue against the Lighthouse GitHub project.
-     *
-     * @var string
-     */
-    public $footerIssue;
-    /**
-     * The title of the lab data performance category.
-     *
-     * @var string
-     */
-    public $labDataTitle;
-    /**
-     * The disclaimer shown under performance explaining that the network can
-     * vary.
-     *
-     * @var string
-     */
-    public $lsPerformanceCategoryDescription;
-    /**
-     * The heading shown above a list of audits that were not computerd in the
-     * run.
-     *
-     * @var string
-     */
-    public $manualAuditsGroupTitle;
-    /**
-     * The heading shown above a list of audits that do not apply to a page.
-     *
-     * @var string
-     */
-    public $notApplicableAuditsGroupTitle;
-    /**
-     * The heading for the estimated page load savings opportunity of an audit.
-     *
-     * @var string
-     */
-    public $opportunityResourceColumnLabel;
-    /**
-     * The heading for the estimated page load savings of opportunity audits.
-     *
-     * @var string
-     */
-    public $opportunitySavingsColumnLabel;
-    /**
-     * The heading that is shown above a list of audits that are passing.
-     *
-     * @var string
-     */
-    public $passedAuditsGroupTitle;
-    /**
-     * Descriptive explanation for emulation setting when emulating a generic
-     * desktop form factor, as opposed to a mobile-device like form factor.
-     *
-     * @var string
-     */
-    public $runtimeDesktopEmulation;
-    /**
-     * Descriptive explanation for emulation setting when emulating a Nexus 5X
-     * mobile device.
-     *
-     * @var string
-     */
-    public $runtimeMobileEmulation;
-    /**
-     * Descriptive explanation for emulation setting when no device emulation is
-     * set.
-     *
-     * @var string
-     */
-    public $runtimeNoEmulation;
-    /**
-     * Label for a row in a table that shows the version of the Axe library used
-     *
-     * @var string
-     */
-    public $runtimeSettingsAxeVersion;
-    /**
-     * Label for a row in a table that shows the estimated CPU power of the
-     * machine running Lighthouse. Example row values: 532, 1492, 783.
-     *
-     * @var string
-     */
-    public $runtimeSettingsBenchmark;
-    /**
-     * Label for a row in a table that describes the CPU throttling conditions
-     * that were used during a Lighthouse run, if any.
-     *
-     * @var string
-     */
-    public $runtimeSettingsCPUThrottling;
-    /**
-     * Label for a row in a table that shows in what tool Lighthouse is being run
-     * (e.g. The lighthouse CLI, Chrome DevTools, Lightrider, WebPageTest, etc).
-     *
-     * @var string
-     */
-    public $runtimeSettingsChannel;
-    /**
-     * Label for a row in a table that describes the kind of device that was
-     * emulated for the Lighthouse run. Example values for row elements: 'No
-     * Emulation', 'Emulated Desktop', etc.
-     *
-     * @var string
-     */
-    public $runtimeSettingsDevice;
-    /**
-     * Label for a row in a table that shows the time at which a Lighthouse run
-     * was conducted; formatted as a timestamp, e.g. Jan 1, 1970 12:00 AM UTC.
-     *
-     * @var string
-     */
-    public $runtimeSettingsFetchTime;
-    /**
-     * Label for a row in a table that describes the network throttling conditions
-     * that were used during a Lighthouse run, if any.
-     *
-     * @var string
-     */
-    public $runtimeSettingsNetworkThrottling;
-    /**
-     * Title of the Runtime settings table in a Lighthouse report. Runtime
-     * settings are the environment configurations that a specific report used at
-     * auditing time.
-     *
-     * @var string
-     */
-    public $runtimeSettingsTitle;
-    /**
-     * Label for a row in a table that shows the User Agent that was detected on
-     * the Host machine that ran Lighthouse.
-     *
-     * @var string
-     */
-    public $runtimeSettingsUA;
-    /**
-     * Label for a row in a table that shows the User Agent that was used to send
-     * out all network requests during the Lighthouse run.
-     *
-     * @var string
-     */
-    public $runtimeSettingsUANetwork;
-    /**
-     * Label for a row in a table that shows the URL that was audited during a
-     * Lighthouse run.
-     *
-     * @var string
-     */
-    public $runtimeSettingsUrl;
-    /**
-     * Descriptive explanation for a runtime setting that is set to an unknown
-     * value.
-     *
-     * @var string
-     */
-    public $runtimeUnknown;
-    /**
-     * The label that explains the score gauges scale (0-49, 50-89, 90-100).
-     *
-     * @var string
-     */
-    public $scorescaleLabel;
-    /**
-     * Label preceding a radio control for filtering the list of audits. The radio
-     * choices are various performance metrics (FCP, LCP, TBT), and if chosen, the
-     * audits in the report are hidden if they are not relevant to the selected
-     * metric.
-     *
-     * @var string
-     */
-    public $showRelevantAudits;
-    /**
-     * The label for the button to show only a few lines of a snippet
-     *
-     * @var string
-     */
-    public $snippetCollapseButtonLabel;
-    /**
-     * The label for the button to show all lines of a snippet
-     *
-     * @var string
-     */
-    public $snippetExpandButtonLabel;
-    /**
-     * This label is for a filter checkbox above a table of items
-     *
-     * @var string
-     */
-    public $thirdPartyResourcesLabel;
-    /**
-     * Descriptive explanation for environment throttling that was provided by the
-     * runtime environment instead of provided by Lighthouse throttling.
-     *
-     * @var string
-     */
-    public $throttlingProvided;
-    /**
-     * The label shown preceding important warnings that may have invalidated an
-     * entire report.
-     *
-     * @var string
-     */
-    public $toplevelWarningsMessage;
-    /**
-     * The disclaimer shown below a performance metric value.
-     *
-     * @var string
-     */
-    public $varianceDisclaimer;
-    /**
-     * Label for a button that opens the Treemap App
-     *
-     * @var string
-     */
-    public $viewTreemapLabel;
-    /**
-     * The heading that is shown above a list of audits that have warnings
-     *
-     * @var string
-     */
-    public $warningAuditsGroupTitle;
-    /**
-     * The label shown above a bulleted list of warnings.
-     *
-     * @var string
-     */
-    public $warningHeader;
-    /**
-     * The tooltip text on an expandable chevron icon.
-     *
-     * @param string $auditGroupExpandTooltip
-     */
-    public function setAuditGroupExpandTooltip($auditGroupExpandTooltip)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAuditGroupExpandTooltip()
-    {
-    }
-    /**
-     * Text link pointing to the Lighthouse scoring calculator. This link
-     * immediately follows a sentence stating the performance score is calculated
-     * from the perf metrics.
-     *
-     * @param string $calculatorLink
-     */
-    public function setCalculatorLink($calculatorLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCalculatorLink()
-    {
-    }
-    /**
-     * The label for the initial request in a critical request chain.
-     *
-     * @param string $crcInitialNavigation
-     */
-    public function setCrcInitialNavigation($crcInitialNavigation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCrcInitialNavigation()
-    {
-    }
-    /**
-     * The label for values shown in the summary of critical request chains.
-     *
-     * @param string $crcLongestDurationLabel
-     */
-    public function setCrcLongestDurationLabel($crcLongestDurationLabel)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCrcLongestDurationLabel()
-    {
-    }
-    /**
-     * Option in a dropdown menu that copies the Lighthouse JSON object to the
-     * system clipboard.
-     *
-     * @param string $dropdownCopyJSON
-     */
-    public function setDropdownCopyJSON($dropdownCopyJSON)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDropdownCopyJSON()
-    {
-    }
-    /**
-     * Option in a dropdown menu that toggles the themeing of the report between
-     * Light(default) and Dark themes.
-     *
-     * @param string $dropdownDarkTheme
-     */
-    public function setDropdownDarkTheme($dropdownDarkTheme)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDropdownDarkTheme()
-    {
-    }
-    /**
-     * Option in a dropdown menu that opens a full Lighthouse report in a print
-     * dialog.
-     *
-     * @param string $dropdownPrintExpanded
-     */
-    public function setDropdownPrintExpanded($dropdownPrintExpanded)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDropdownPrintExpanded()
-    {
-    }
-    /**
-     * Option in a dropdown menu that opens a small, summary report in a print
-     * dialog.
-     *
-     * @param string $dropdownPrintSummary
-     */
-    public function setDropdownPrintSummary($dropdownPrintSummary)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDropdownPrintSummary()
-    {
-    }
-    /**
-     * Option in a dropdown menu that saves the current report as a new GitHub
-     * Gist.
-     *
-     * @param string $dropdownSaveGist
-     */
-    public function setDropdownSaveGist($dropdownSaveGist)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDropdownSaveGist()
-    {
-    }
-    /**
-     * Option in a dropdown menu that saves the Lighthouse report HTML locally to
-     * the system as a '.html' file.
-     *
-     * @param string $dropdownSaveHTML
-     */
-    public function setDropdownSaveHTML($dropdownSaveHTML)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDropdownSaveHTML()
-    {
-    }
-    /**
-     * Option in a dropdown menu that saves the Lighthouse JSON object to the
-     * local system as a '.json' file.
-     *
-     * @param string $dropdownSaveJSON
-     */
-    public function setDropdownSaveJSON($dropdownSaveJSON)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDropdownSaveJSON()
-    {
-    }
-    /**
-     * Option in a dropdown menu that opens the current report in the Lighthouse
-     * Viewer Application.
-     *
-     * @param string $dropdownViewer
-     */
-    public function setDropdownViewer($dropdownViewer)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDropdownViewer()
-    {
-    }
-    /**
-     * The label shown next to an audit or metric that has had an error.
-     *
-     * @param string $errorLabel
-     */
-    public function setErrorLabel($errorLabel)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getErrorLabel()
-    {
-    }
-    /**
-     * The error string shown next to an erroring audit.
-     *
-     * @param string $errorMissingAuditInfo
-     */
-    public function setErrorMissingAuditInfo($errorMissingAuditInfo)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getErrorMissingAuditInfo()
-    {
-    }
-    /**
-     * Label for button to create an issue against the Lighthouse GitHub project.
-     *
-     * @param string $footerIssue
-     */
-    public function setFooterIssue($footerIssue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFooterIssue()
-    {
-    }
-    /**
-     * The title of the lab data performance category.
-     *
-     * @param string $labDataTitle
-     */
-    public function setLabDataTitle($labDataTitle)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLabDataTitle()
-    {
-    }
-    /**
-     * The disclaimer shown under performance explaining that the network can
-     * vary.
-     *
-     * @param string $lsPerformanceCategoryDescription
-     */
-    public function setLsPerformanceCategoryDescription($lsPerformanceCategoryDescription)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLsPerformanceCategoryDescription()
-    {
-    }
-    /**
-     * The heading shown above a list of audits that were not computerd in the
-     * run.
-     *
-     * @param string $manualAuditsGroupTitle
-     */
-    public function setManualAuditsGroupTitle($manualAuditsGroupTitle)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getManualAuditsGroupTitle()
-    {
-    }
-    /**
-     * The heading shown above a list of audits that do not apply to a page.
-     *
-     * @param string $notApplicableAuditsGroupTitle
-     */
-    public function setNotApplicableAuditsGroupTitle($notApplicableAuditsGroupTitle)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNotApplicableAuditsGroupTitle()
-    {
-    }
-    /**
-     * The heading for the estimated page load savings opportunity of an audit.
-     *
-     * @param string $opportunityResourceColumnLabel
-     */
-    public function setOpportunityResourceColumnLabel($opportunityResourceColumnLabel)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOpportunityResourceColumnLabel()
-    {
-    }
-    /**
-     * The heading for the estimated page load savings of opportunity audits.
-     *
-     * @param string $opportunitySavingsColumnLabel
-     */
-    public function setOpportunitySavingsColumnLabel($opportunitySavingsColumnLabel)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOpportunitySavingsColumnLabel()
-    {
-    }
-    /**
-     * The heading that is shown above a list of audits that are passing.
-     *
-     * @param string $passedAuditsGroupTitle
-     */
-    public function setPassedAuditsGroupTitle($passedAuditsGroupTitle)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPassedAuditsGroupTitle()
-    {
-    }
-    /**
-     * Descriptive explanation for emulation setting when emulating a generic
-     * desktop form factor, as opposed to a mobile-device like form factor.
-     *
-     * @param string $runtimeDesktopEmulation
-     */
-    public function setRuntimeDesktopEmulation($runtimeDesktopEmulation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRuntimeDesktopEmulation()
-    {
-    }
-    /**
-     * Descriptive explanation for emulation setting when emulating a Nexus 5X
-     * mobile device.
-     *
-     * @param string $runtimeMobileEmulation
-     */
-    public function setRuntimeMobileEmulation($runtimeMobileEmulation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRuntimeMobileEmulation()
-    {
-    }
-    /**
-     * Descriptive explanation for emulation setting when no device emulation is
-     * set.
-     *
-     * @param string $runtimeNoEmulation
-     */
-    public function setRuntimeNoEmulation($runtimeNoEmulation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRuntimeNoEmulation()
-    {
-    }
-    /**
-     * Label for a row in a table that shows the version of the Axe library used
-     *
-     * @param string $runtimeSettingsAxeVersion
-     */
-    public function setRuntimeSettingsAxeVersion($runtimeSettingsAxeVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRuntimeSettingsAxeVersion()
-    {
-    }
-    /**
-     * Label for a row in a table that shows the estimated CPU power of the
-     * machine running Lighthouse. Example row values: 532, 1492, 783.
-     *
-     * @param string $runtimeSettingsBenchmark
-     */
-    public function setRuntimeSettingsBenchmark($runtimeSettingsBenchmark)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRuntimeSettingsBenchmark()
-    {
-    }
-    /**
-     * Label for a row in a table that describes the CPU throttling conditions
-     * that were used during a Lighthouse run, if any.
-     *
-     * @param string $runtimeSettingsCPUThrottling
-     */
-    public function setRuntimeSettingsCPUThrottling($runtimeSettingsCPUThrottling)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRuntimeSettingsCPUThrottling()
-    {
-    }
-    /**
-     * Label for a row in a table that shows in what tool Lighthouse is being run
-     * (e.g. The lighthouse CLI, Chrome DevTools, Lightrider, WebPageTest, etc).
-     *
-     * @param string $runtimeSettingsChannel
-     */
-    public function setRuntimeSettingsChannel($runtimeSettingsChannel)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRuntimeSettingsChannel()
-    {
-    }
-    /**
-     * Label for a row in a table that describes the kind of device that was
-     * emulated for the Lighthouse run. Example values for row elements: 'No
-     * Emulation', 'Emulated Desktop', etc.
-     *
-     * @param string $runtimeSettingsDevice
-     */
-    public function setRuntimeSettingsDevice($runtimeSettingsDevice)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRuntimeSettingsDevice()
-    {
-    }
-    /**
-     * Label for a row in a table that shows the time at which a Lighthouse run
-     * was conducted; formatted as a timestamp, e.g. Jan 1, 1970 12:00 AM UTC.
-     *
-     * @param string $runtimeSettingsFetchTime
-     */
-    public function setRuntimeSettingsFetchTime($runtimeSettingsFetchTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRuntimeSettingsFetchTime()
-    {
-    }
-    /**
-     * Label for a row in a table that describes the network throttling conditions
-     * that were used during a Lighthouse run, if any.
-     *
-     * @param string $runtimeSettingsNetworkThrottling
-     */
-    public function setRuntimeSettingsNetworkThrottling($runtimeSettingsNetworkThrottling)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRuntimeSettingsNetworkThrottling()
-    {
-    }
-    /**
-     * Title of the Runtime settings table in a Lighthouse report. Runtime
-     * settings are the environment configurations that a specific report used at
-     * auditing time.
-     *
-     * @param string $runtimeSettingsTitle
-     */
-    public function setRuntimeSettingsTitle($runtimeSettingsTitle)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRuntimeSettingsTitle()
-    {
-    }
-    /**
-     * Label for a row in a table that shows the User Agent that was detected on
-     * the Host machine that ran Lighthouse.
-     *
-     * @param string $runtimeSettingsUA
-     */
-    public function setRuntimeSettingsUA($runtimeSettingsUA)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRuntimeSettingsUA()
-    {
-    }
-    /**
-     * Label for a row in a table that shows the User Agent that was used to send
-     * out all network requests during the Lighthouse run.
-     *
-     * @param string $runtimeSettingsUANetwork
-     */
-    public function setRuntimeSettingsUANetwork($runtimeSettingsUANetwork)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRuntimeSettingsUANetwork()
-    {
-    }
-    /**
-     * Label for a row in a table that shows the URL that was audited during a
-     * Lighthouse run.
-     *
-     * @param string $runtimeSettingsUrl
-     */
-    public function setRuntimeSettingsUrl($runtimeSettingsUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRuntimeSettingsUrl()
-    {
-    }
-    /**
-     * Descriptive explanation for a runtime setting that is set to an unknown
-     * value.
-     *
-     * @param string $runtimeUnknown
-     */
-    public function setRuntimeUnknown($runtimeUnknown)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRuntimeUnknown()
-    {
-    }
-    /**
-     * The label that explains the score gauges scale (0-49, 50-89, 90-100).
-     *
-     * @param string $scorescaleLabel
-     */
-    public function setScorescaleLabel($scorescaleLabel)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getScorescaleLabel()
-    {
-    }
-    /**
-     * Label preceding a radio control for filtering the list of audits. The radio
-     * choices are various performance metrics (FCP, LCP, TBT), and if chosen, the
-     * audits in the report are hidden if they are not relevant to the selected
-     * metric.
-     *
-     * @param string $showRelevantAudits
-     */
-    public function setShowRelevantAudits($showRelevantAudits)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getShowRelevantAudits()
-    {
-    }
-    /**
-     * The label for the button to show only a few lines of a snippet
-     *
-     * @param string $snippetCollapseButtonLabel
-     */
-    public function setSnippetCollapseButtonLabel($snippetCollapseButtonLabel)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSnippetCollapseButtonLabel()
-    {
-    }
-    /**
-     * The label for the button to show all lines of a snippet
-     *
-     * @param string $snippetExpandButtonLabel
-     */
-    public function setSnippetExpandButtonLabel($snippetExpandButtonLabel)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSnippetExpandButtonLabel()
-    {
-    }
-    /**
-     * This label is for a filter checkbox above a table of items
-     *
-     * @param string $thirdPartyResourcesLabel
-     */
-    public function setThirdPartyResourcesLabel($thirdPartyResourcesLabel)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getThirdPartyResourcesLabel()
-    {
-    }
-    /**
-     * Descriptive explanation for environment throttling that was provided by the
-     * runtime environment instead of provided by Lighthouse throttling.
-     *
-     * @param string $throttlingProvided
-     */
-    public function setThrottlingProvided($throttlingProvided)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getThrottlingProvided()
-    {
-    }
-    /**
-     * The label shown preceding important warnings that may have invalidated an
-     * entire report.
-     *
-     * @param string $toplevelWarningsMessage
-     */
-    public function setToplevelWarningsMessage($toplevelWarningsMessage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getToplevelWarningsMessage()
-    {
-    }
-    /**
-     * The disclaimer shown below a performance metric value.
-     *
-     * @param string $varianceDisclaimer
-     */
-    public function setVarianceDisclaimer($varianceDisclaimer)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVarianceDisclaimer()
-    {
-    }
-    /**
-     * Label for a button that opens the Treemap App
-     *
-     * @param string $viewTreemapLabel
-     */
-    public function setViewTreemapLabel($viewTreemapLabel)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getViewTreemapLabel()
-    {
-    }
-    /**
-     * The heading that is shown above a list of audits that have warnings
-     *
-     * @param string $warningAuditsGroupTitle
-     */
-    public function setWarningAuditsGroupTitle($warningAuditsGroupTitle)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWarningAuditsGroupTitle()
-    {
-    }
-    /**
-     * The label shown above a bulleted list of warnings.
-     *
-     * @param string $warningHeader
-     */
-    public function setWarningHeader($warningHeader)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWarningHeader()
+namespace Google\Service\PagespeedInsights {
+    class RendererFormattedStrings extends \Google\Model
+    {
+        /**
+         * The tooltip text on an expandable chevron icon.
+         *
+         * @var string
+         */
+        public $auditGroupExpandTooltip;
+        /**
+         * Text link pointing to the Lighthouse scoring calculator. This link
+         * immediately follows a sentence stating the performance score is calculated
+         * from the perf metrics.
+         *
+         * @var string
+         */
+        public $calculatorLink;
+        /**
+         * The label for the initial request in a critical request chain.
+         *
+         * @var string
+         */
+        public $crcInitialNavigation;
+        /**
+         * The label for values shown in the summary of critical request chains.
+         *
+         * @var string
+         */
+        public $crcLongestDurationLabel;
+        /**
+         * Option in a dropdown menu that copies the Lighthouse JSON object to the
+         * system clipboard.
+         *
+         * @var string
+         */
+        public $dropdownCopyJSON;
+        /**
+         * Option in a dropdown menu that toggles the themeing of the report between
+         * Light(default) and Dark themes.
+         *
+         * @var string
+         */
+        public $dropdownDarkTheme;
+        /**
+         * Option in a dropdown menu that opens a full Lighthouse report in a print
+         * dialog.
+         *
+         * @var string
+         */
+        public $dropdownPrintExpanded;
+        /**
+         * Option in a dropdown menu that opens a small, summary report in a print
+         * dialog.
+         *
+         * @var string
+         */
+        public $dropdownPrintSummary;
+        /**
+         * Option in a dropdown menu that saves the current report as a new GitHub
+         * Gist.
+         *
+         * @var string
+         */
+        public $dropdownSaveGist;
+        /**
+         * Option in a dropdown menu that saves the Lighthouse report HTML locally to
+         * the system as a '.html' file.
+         *
+         * @var string
+         */
+        public $dropdownSaveHTML;
+        /**
+         * Option in a dropdown menu that saves the Lighthouse JSON object to the
+         * local system as a '.json' file.
+         *
+         * @var string
+         */
+        public $dropdownSaveJSON;
+        /**
+         * Option in a dropdown menu that opens the current report in the Lighthouse
+         * Viewer Application.
+         *
+         * @var string
+         */
+        public $dropdownViewer;
+        /**
+         * The label shown next to an audit or metric that has had an error.
+         *
+         * @var string
+         */
+        public $errorLabel;
+        /**
+         * The error string shown next to an erroring audit.
+         *
+         * @var string
+         */
+        public $errorMissingAuditInfo;
+        /**
+         * Label for button to create an issue against the Lighthouse GitHub project.
+         *
+         * @var string
+         */
+        public $footerIssue;
+        /**
+         * The title of the lab data performance category.
+         *
+         * @var string
+         */
+        public $labDataTitle;
+        /**
+         * The disclaimer shown under performance explaining that the network can
+         * vary.
+         *
+         * @var string
+         */
+        public $lsPerformanceCategoryDescription;
+        /**
+         * The heading shown above a list of audits that were not computerd in the
+         * run.
+         *
+         * @var string
+         */
+        public $manualAuditsGroupTitle;
+        /**
+         * The heading shown above a list of audits that do not apply to a page.
+         *
+         * @var string
+         */
+        public $notApplicableAuditsGroupTitle;
+        /**
+         * The heading for the estimated page load savings opportunity of an audit.
+         *
+         * @var string
+         */
+        public $opportunityResourceColumnLabel;
+        /**
+         * The heading for the estimated page load savings of opportunity audits.
+         *
+         * @var string
+         */
+        public $opportunitySavingsColumnLabel;
+        /**
+         * The heading that is shown above a list of audits that are passing.
+         *
+         * @var string
+         */
+        public $passedAuditsGroupTitle;
+        /**
+         * Descriptive explanation for emulation setting when emulating a generic
+         * desktop form factor, as opposed to a mobile-device like form factor.
+         *
+         * @var string
+         */
+        public $runtimeDesktopEmulation;
+        /**
+         * Descriptive explanation for emulation setting when emulating a Nexus 5X
+         * mobile device.
+         *
+         * @var string
+         */
+        public $runtimeMobileEmulation;
+        /**
+         * Descriptive explanation for emulation setting when no device emulation is
+         * set.
+         *
+         * @var string
+         */
+        public $runtimeNoEmulation;
+        /**
+         * Label for a row in a table that shows the version of the Axe library used
+         *
+         * @var string
+         */
+        public $runtimeSettingsAxeVersion;
+        /**
+         * Label for a row in a table that shows the estimated CPU power of the
+         * machine running Lighthouse. Example row values: 532, 1492, 783.
+         *
+         * @var string
+         */
+        public $runtimeSettingsBenchmark;
+        /**
+         * Label for a row in a table that describes the CPU throttling conditions
+         * that were used during a Lighthouse run, if any.
+         *
+         * @var string
+         */
+        public $runtimeSettingsCPUThrottling;
+        /**
+         * Label for a row in a table that shows in what tool Lighthouse is being run
+         * (e.g. The lighthouse CLI, Chrome DevTools, Lightrider, WebPageTest, etc).
+         *
+         * @var string
+         */
+        public $runtimeSettingsChannel;
+        /**
+         * Label for a row in a table that describes the kind of device that was
+         * emulated for the Lighthouse run. Example values for row elements: 'No
+         * Emulation', 'Emulated Desktop', etc.
+         *
+         * @var string
+         */
+        public $runtimeSettingsDevice;
+        /**
+         * Label for a row in a table that shows the time at which a Lighthouse run
+         * was conducted; formatted as a timestamp, e.g. Jan 1, 1970 12:00 AM UTC.
+         *
+         * @var string
+         */
+        public $runtimeSettingsFetchTime;
+        /**
+         * Label for a row in a table that describes the network throttling conditions
+         * that were used during a Lighthouse run, if any.
+         *
+         * @var string
+         */
+        public $runtimeSettingsNetworkThrottling;
+        /**
+         * Title of the Runtime settings table in a Lighthouse report. Runtime
+         * settings are the environment configurations that a specific report used at
+         * auditing time.
+         *
+         * @var string
+         */
+        public $runtimeSettingsTitle;
+        /**
+         * Label for a row in a table that shows the User Agent that was detected on
+         * the Host machine that ran Lighthouse.
+         *
+         * @var string
+         */
+        public $runtimeSettingsUA;
+        /**
+         * Label for a row in a table that shows the User Agent that was used to send
+         * out all network requests during the Lighthouse run.
+         *
+         * @var string
+         */
+        public $runtimeSettingsUANetwork;
+        /**
+         * Label for a row in a table that shows the URL that was audited during a
+         * Lighthouse run.
+         *
+         * @var string
+         */
+        public $runtimeSettingsUrl;
+        /**
+         * Descriptive explanation for a runtime setting that is set to an unknown
+         * value.
+         *
+         * @var string
+         */
+        public $runtimeUnknown;
+        /**
+         * The label that explains the score gauges scale (0-49, 50-89, 90-100).
+         *
+         * @var string
+         */
+        public $scorescaleLabel;
+        /**
+         * Label preceding a radio control for filtering the list of audits. The radio
+         * choices are various performance metrics (FCP, LCP, TBT), and if chosen, the
+         * audits in the report are hidden if they are not relevant to the selected
+         * metric.
+         *
+         * @var string
+         */
+        public $showRelevantAudits;
+        /**
+         * The label for the button to show only a few lines of a snippet
+         *
+         * @var string
+         */
+        public $snippetCollapseButtonLabel;
+        /**
+         * The label for the button to show all lines of a snippet
+         *
+         * @var string
+         */
+        public $snippetExpandButtonLabel;
+        /**
+         * This label is for a filter checkbox above a table of items
+         *
+         * @var string
+         */
+        public $thirdPartyResourcesLabel;
+        /**
+         * Descriptive explanation for environment throttling that was provided by the
+         * runtime environment instead of provided by Lighthouse throttling.
+         *
+         * @var string
+         */
+        public $throttlingProvided;
+        /**
+         * The label shown preceding important warnings that may have invalidated an
+         * entire report.
+         *
+         * @var string
+         */
+        public $toplevelWarningsMessage;
+        /**
+         * The disclaimer shown below a performance metric value.
+         *
+         * @var string
+         */
+        public $varianceDisclaimer;
+        /**
+         * Label for a button that opens the Treemap App
+         *
+         * @var string
+         */
+        public $viewTreemapLabel;
+        /**
+         * The heading that is shown above a list of audits that have warnings
+         *
+         * @var string
+         */
+        public $warningAuditsGroupTitle;
+        /**
+         * The label shown above a bulleted list of warnings.
+         *
+         * @var string
+         */
+        public $warningHeader;
+        /**
+         * The tooltip text on an expandable chevron icon.
+         *
+         * @param string $auditGroupExpandTooltip
+         */
+        public function setAuditGroupExpandTooltip($auditGroupExpandTooltip)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAuditGroupExpandTooltip()
+        {
+        }
+        /**
+         * Text link pointing to the Lighthouse scoring calculator. This link
+         * immediately follows a sentence stating the performance score is calculated
+         * from the perf metrics.
+         *
+         * @param string $calculatorLink
+         */
+        public function setCalculatorLink($calculatorLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCalculatorLink()
+        {
+        }
+        /**
+         * The label for the initial request in a critical request chain.
+         *
+         * @param string $crcInitialNavigation
+         */
+        public function setCrcInitialNavigation($crcInitialNavigation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCrcInitialNavigation()
+        {
+        }
+        /**
+         * The label for values shown in the summary of critical request chains.
+         *
+         * @param string $crcLongestDurationLabel
+         */
+        public function setCrcLongestDurationLabel($crcLongestDurationLabel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCrcLongestDurationLabel()
+        {
+        }
+        /**
+         * Option in a dropdown menu that copies the Lighthouse JSON object to the
+         * system clipboard.
+         *
+         * @param string $dropdownCopyJSON
+         */
+        public function setDropdownCopyJSON($dropdownCopyJSON)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDropdownCopyJSON()
+        {
+        }
+        /**
+         * Option in a dropdown menu that toggles the themeing of the report between
+         * Light(default) and Dark themes.
+         *
+         * @param string $dropdownDarkTheme
+         */
+        public function setDropdownDarkTheme($dropdownDarkTheme)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDropdownDarkTheme()
+        {
+        }
+        /**
+         * Option in a dropdown menu that opens a full Lighthouse report in a print
+         * dialog.
+         *
+         * @param string $dropdownPrintExpanded
+         */
+        public function setDropdownPrintExpanded($dropdownPrintExpanded)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDropdownPrintExpanded()
+        {
+        }
+        /**
+         * Option in a dropdown menu that opens a small, summary report in a print
+         * dialog.
+         *
+         * @param string $dropdownPrintSummary
+         */
+        public function setDropdownPrintSummary($dropdownPrintSummary)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDropdownPrintSummary()
+        {
+        }
+        /**
+         * Option in a dropdown menu that saves the current report as a new GitHub
+         * Gist.
+         *
+         * @param string $dropdownSaveGist
+         */
+        public function setDropdownSaveGist($dropdownSaveGist)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDropdownSaveGist()
+        {
+        }
+        /**
+         * Option in a dropdown menu that saves the Lighthouse report HTML locally to
+         * the system as a '.html' file.
+         *
+         * @param string $dropdownSaveHTML
+         */
+        public function setDropdownSaveHTML($dropdownSaveHTML)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDropdownSaveHTML()
+        {
+        }
+        /**
+         * Option in a dropdown menu that saves the Lighthouse JSON object to the
+         * local system as a '.json' file.
+         *
+         * @param string $dropdownSaveJSON
+         */
+        public function setDropdownSaveJSON($dropdownSaveJSON)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDropdownSaveJSON()
+        {
+        }
+        /**
+         * Option in a dropdown menu that opens the current report in the Lighthouse
+         * Viewer Application.
+         *
+         * @param string $dropdownViewer
+         */
+        public function setDropdownViewer($dropdownViewer)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDropdownViewer()
+        {
+        }
+        /**
+         * The label shown next to an audit or metric that has had an error.
+         *
+         * @param string $errorLabel
+         */
+        public function setErrorLabel($errorLabel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getErrorLabel()
+        {
+        }
+        /**
+         * The error string shown next to an erroring audit.
+         *
+         * @param string $errorMissingAuditInfo
+         */
+        public function setErrorMissingAuditInfo($errorMissingAuditInfo)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getErrorMissingAuditInfo()
+        {
+        }
+        /**
+         * Label for button to create an issue against the Lighthouse GitHub project.
+         *
+         * @param string $footerIssue
+         */
+        public function setFooterIssue($footerIssue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFooterIssue()
+        {
+        }
+        /**
+         * The title of the lab data performance category.
+         *
+         * @param string $labDataTitle
+         */
+        public function setLabDataTitle($labDataTitle)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLabDataTitle()
+        {
+        }
+        /**
+         * The disclaimer shown under performance explaining that the network can
+         * vary.
+         *
+         * @param string $lsPerformanceCategoryDescription
+         */
+        public function setLsPerformanceCategoryDescription($lsPerformanceCategoryDescription)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLsPerformanceCategoryDescription()
+        {
+        }
+        /**
+         * The heading shown above a list of audits that were not computerd in the
+         * run.
+         *
+         * @param string $manualAuditsGroupTitle
+         */
+        public function setManualAuditsGroupTitle($manualAuditsGroupTitle)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getManualAuditsGroupTitle()
+        {
+        }
+        /**
+         * The heading shown above a list of audits that do not apply to a page.
+         *
+         * @param string $notApplicableAuditsGroupTitle
+         */
+        public function setNotApplicableAuditsGroupTitle($notApplicableAuditsGroupTitle)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNotApplicableAuditsGroupTitle()
+        {
+        }
+        /**
+         * The heading for the estimated page load savings opportunity of an audit.
+         *
+         * @param string $opportunityResourceColumnLabel
+         */
+        public function setOpportunityResourceColumnLabel($opportunityResourceColumnLabel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOpportunityResourceColumnLabel()
+        {
+        }
+        /**
+         * The heading for the estimated page load savings of opportunity audits.
+         *
+         * @param string $opportunitySavingsColumnLabel
+         */
+        public function setOpportunitySavingsColumnLabel($opportunitySavingsColumnLabel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOpportunitySavingsColumnLabel()
+        {
+        }
+        /**
+         * The heading that is shown above a list of audits that are passing.
+         *
+         * @param string $passedAuditsGroupTitle
+         */
+        public function setPassedAuditsGroupTitle($passedAuditsGroupTitle)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPassedAuditsGroupTitle()
+        {
+        }
+        /**
+         * Descriptive explanation for emulation setting when emulating a generic
+         * desktop form factor, as opposed to a mobile-device like form factor.
+         *
+         * @param string $runtimeDesktopEmulation
+         */
+        public function setRuntimeDesktopEmulation($runtimeDesktopEmulation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRuntimeDesktopEmulation()
+        {
+        }
+        /**
+         * Descriptive explanation for emulation setting when emulating a Nexus 5X
+         * mobile device.
+         *
+         * @param string $runtimeMobileEmulation
+         */
+        public function setRuntimeMobileEmulation($runtimeMobileEmulation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRuntimeMobileEmulation()
+        {
+        }
+        /**
+         * Descriptive explanation for emulation setting when no device emulation is
+         * set.
+         *
+         * @param string $runtimeNoEmulation
+         */
+        public function setRuntimeNoEmulation($runtimeNoEmulation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRuntimeNoEmulation()
+        {
+        }
+        /**
+         * Label for a row in a table that shows the version of the Axe library used
+         *
+         * @param string $runtimeSettingsAxeVersion
+         */
+        public function setRuntimeSettingsAxeVersion($runtimeSettingsAxeVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRuntimeSettingsAxeVersion()
+        {
+        }
+        /**
+         * Label for a row in a table that shows the estimated CPU power of the
+         * machine running Lighthouse. Example row values: 532, 1492, 783.
+         *
+         * @param string $runtimeSettingsBenchmark
+         */
+        public function setRuntimeSettingsBenchmark($runtimeSettingsBenchmark)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRuntimeSettingsBenchmark()
+        {
+        }
+        /**
+         * Label for a row in a table that describes the CPU throttling conditions
+         * that were used during a Lighthouse run, if any.
+         *
+         * @param string $runtimeSettingsCPUThrottling
+         */
+        public function setRuntimeSettingsCPUThrottling($runtimeSettingsCPUThrottling)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRuntimeSettingsCPUThrottling()
+        {
+        }
+        /**
+         * Label for a row in a table that shows in what tool Lighthouse is being run
+         * (e.g. The lighthouse CLI, Chrome DevTools, Lightrider, WebPageTest, etc).
+         *
+         * @param string $runtimeSettingsChannel
+         */
+        public function setRuntimeSettingsChannel($runtimeSettingsChannel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRuntimeSettingsChannel()
+        {
+        }
+        /**
+         * Label for a row in a table that describes the kind of device that was
+         * emulated for the Lighthouse run. Example values for row elements: 'No
+         * Emulation', 'Emulated Desktop', etc.
+         *
+         * @param string $runtimeSettingsDevice
+         */
+        public function setRuntimeSettingsDevice($runtimeSettingsDevice)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRuntimeSettingsDevice()
+        {
+        }
+        /**
+         * Label for a row in a table that shows the time at which a Lighthouse run
+         * was conducted; formatted as a timestamp, e.g. Jan 1, 1970 12:00 AM UTC.
+         *
+         * @param string $runtimeSettingsFetchTime
+         */
+        public function setRuntimeSettingsFetchTime($runtimeSettingsFetchTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRuntimeSettingsFetchTime()
+        {
+        }
+        /**
+         * Label for a row in a table that describes the network throttling conditions
+         * that were used during a Lighthouse run, if any.
+         *
+         * @param string $runtimeSettingsNetworkThrottling
+         */
+        public function setRuntimeSettingsNetworkThrottling($runtimeSettingsNetworkThrottling)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRuntimeSettingsNetworkThrottling()
+        {
+        }
+        /**
+         * Title of the Runtime settings table in a Lighthouse report. Runtime
+         * settings are the environment configurations that a specific report used at
+         * auditing time.
+         *
+         * @param string $runtimeSettingsTitle
+         */
+        public function setRuntimeSettingsTitle($runtimeSettingsTitle)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRuntimeSettingsTitle()
+        {
+        }
+        /**
+         * Label for a row in a table that shows the User Agent that was detected on
+         * the Host machine that ran Lighthouse.
+         *
+         * @param string $runtimeSettingsUA
+         */
+        public function setRuntimeSettingsUA($runtimeSettingsUA)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRuntimeSettingsUA()
+        {
+        }
+        /**
+         * Label for a row in a table that shows the User Agent that was used to send
+         * out all network requests during the Lighthouse run.
+         *
+         * @param string $runtimeSettingsUANetwork
+         */
+        public function setRuntimeSettingsUANetwork($runtimeSettingsUANetwork)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRuntimeSettingsUANetwork()
+        {
+        }
+        /**
+         * Label for a row in a table that shows the URL that was audited during a
+         * Lighthouse run.
+         *
+         * @param string $runtimeSettingsUrl
+         */
+        public function setRuntimeSettingsUrl($runtimeSettingsUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRuntimeSettingsUrl()
+        {
+        }
+        /**
+         * Descriptive explanation for a runtime setting that is set to an unknown
+         * value.
+         *
+         * @param string $runtimeUnknown
+         */
+        public function setRuntimeUnknown($runtimeUnknown)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRuntimeUnknown()
+        {
+        }
+        /**
+         * The label that explains the score gauges scale (0-49, 50-89, 90-100).
+         *
+         * @param string $scorescaleLabel
+         */
+        public function setScorescaleLabel($scorescaleLabel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScorescaleLabel()
+        {
+        }
+        /**
+         * Label preceding a radio control for filtering the list of audits. The radio
+         * choices are various performance metrics (FCP, LCP, TBT), and if chosen, the
+         * audits in the report are hidden if they are not relevant to the selected
+         * metric.
+         *
+         * @param string $showRelevantAudits
+         */
+        public function setShowRelevantAudits($showRelevantAudits)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getShowRelevantAudits()
+        {
+        }
+        /**
+         * The label for the button to show only a few lines of a snippet
+         *
+         * @param string $snippetCollapseButtonLabel
+         */
+        public function setSnippetCollapseButtonLabel($snippetCollapseButtonLabel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSnippetCollapseButtonLabel()
+        {
+        }
+        /**
+         * The label for the button to show all lines of a snippet
+         *
+         * @param string $snippetExpandButtonLabel
+         */
+        public function setSnippetExpandButtonLabel($snippetExpandButtonLabel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSnippetExpandButtonLabel()
+        {
+        }
+        /**
+         * This label is for a filter checkbox above a table of items
+         *
+         * @param string $thirdPartyResourcesLabel
+         */
+        public function setThirdPartyResourcesLabel($thirdPartyResourcesLabel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getThirdPartyResourcesLabel()
+        {
+        }
+        /**
+         * Descriptive explanation for environment throttling that was provided by the
+         * runtime environment instead of provided by Lighthouse throttling.
+         *
+         * @param string $throttlingProvided
+         */
+        public function setThrottlingProvided($throttlingProvided)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getThrottlingProvided()
+        {
+        }
+        /**
+         * The label shown preceding important warnings that may have invalidated an
+         * entire report.
+         *
+         * @param string $toplevelWarningsMessage
+         */
+        public function setToplevelWarningsMessage($toplevelWarningsMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getToplevelWarningsMessage()
+        {
+        }
+        /**
+         * The disclaimer shown below a performance metric value.
+         *
+         * @param string $varianceDisclaimer
+         */
+        public function setVarianceDisclaimer($varianceDisclaimer)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVarianceDisclaimer()
+        {
+        }
+        /**
+         * Label for a button that opens the Treemap App
+         *
+         * @param string $viewTreemapLabel
+         */
+        public function setViewTreemapLabel($viewTreemapLabel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getViewTreemapLabel()
+        {
+        }
+        /**
+         * The heading that is shown above a list of audits that have warnings
+         *
+         * @param string $warningAuditsGroupTitle
+         */
+        public function setWarningAuditsGroupTitle($warningAuditsGroupTitle)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWarningAuditsGroupTitle()
+        {
+        }
+        /**
+         * The label shown above a bulleted list of warnings.
+         *
+         * @param string $warningHeader
+         */
+        public function setWarningHeader($warningHeader)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWarningHeader()
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\PagespeedInsights\RendererFormattedStrings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_PagespeedInsights_RendererFormattedStrings extends \Google\Service\PagespeedInsights\RendererFormattedStrings
     {
     }
 }

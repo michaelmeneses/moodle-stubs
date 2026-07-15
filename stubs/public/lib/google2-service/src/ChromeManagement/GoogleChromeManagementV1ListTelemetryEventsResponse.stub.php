@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementV1ListTelemetryEventsResponse extends \Google\Collection
-{
-    protected $collection_key = 'telemetryEvents';
-    /**
-     * Token to specify next page in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $telemetryEventsType = GoogleChromeManagementV1TelemetryEvent::class;
-    protected $telemetryEventsDataType = 'array';
-    /**
-     * Token to specify next page in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementV1ListTelemetryEventsResponse extends \Google\Collection
     {
+        protected $collection_key = 'telemetryEvents';
+        /**
+         * Token to specify next page in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $telemetryEventsType = GoogleChromeManagementV1TelemetryEvent::class;
+        protected $telemetryEventsDataType = 'array';
+        /**
+         * Token to specify next page in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Telemetry events returned in the response.
+         *
+         * @param GoogleChromeManagementV1TelemetryEvent[] $telemetryEvents
+         */
+        public function setTelemetryEvents($telemetryEvents)
+        {
+        }
+        /**
+         * @return GoogleChromeManagementV1TelemetryEvent[]
+         */
+        public function getTelemetryEvents()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementV1ListTelemetryEventsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Telemetry events returned in the response.
-     *
-     * @param GoogleChromeManagementV1TelemetryEvent[] $telemetryEvents
-     */
-    public function setTelemetryEvents($telemetryEvents)
-    {
-    }
-    /**
-     * @return GoogleChromeManagementV1TelemetryEvent[]
-     */
-    public function getTelemetryEvents()
+    class Google_Service_ChromeManagement_GoogleChromeManagementV1ListTelemetryEventsResponse extends \Google\Service\ChromeManagement\GoogleChromeManagementV1ListTelemetryEventsResponse
     {
     }
 }

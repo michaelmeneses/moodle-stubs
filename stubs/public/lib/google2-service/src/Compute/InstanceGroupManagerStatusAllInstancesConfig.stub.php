@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InstanceGroupManagerStatusAllInstancesConfig extends \Google\Model
-{
-    /**
-     * Output only. [Output Only] Current all-instances configuration revision.
-     * This value is in RFC3339 text format.
-     *
-     * @var string
-     */
-    public $currentRevision;
-    /**
-     * Output only. [Output Only] A bit indicating whether this configuration has
-     * been applied to all managed instances in the group.
-     *
-     * @var bool
-     */
-    public $effective;
-    /**
-     * Output only. [Output Only] Current all-instances configuration revision.
-     * This value is in RFC3339 text format.
-     *
-     * @param string $currentRevision
-     */
-    public function setCurrentRevision($currentRevision)
+namespace Google\Service\Compute {
+    class InstanceGroupManagerStatusAllInstancesConfig extends \Google\Model
     {
+        /**
+         * Output only. [Output Only] Current all-instances configuration revision.
+         * This value is in RFC3339 text format.
+         *
+         * @var string
+         */
+        public $currentRevision;
+        /**
+         * Output only. [Output Only] A bit indicating whether this configuration has
+         * been applied to all managed instances in the group.
+         *
+         * @var bool
+         */
+        public $effective;
+        /**
+         * Output only. [Output Only] Current all-instances configuration revision.
+         * This value is in RFC3339 text format.
+         *
+         * @param string $currentRevision
+         */
+        public function setCurrentRevision($currentRevision)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCurrentRevision()
+        {
+        }
+        /**
+         * Output only. [Output Only] A bit indicating whether this configuration has
+         * been applied to all managed instances in the group.
+         *
+         * @param bool $effective
+         */
+        public function setEffective($effective)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEffective()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\InstanceGroupManagerStatusAllInstancesConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCurrentRevision()
-    {
-    }
-    /**
-     * Output only. [Output Only] A bit indicating whether this configuration has
-     * been applied to all managed instances in the group.
-     *
-     * @param bool $effective
-     */
-    public function setEffective($effective)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEffective()
+    class Google_Service_Compute_InstanceGroupManagerStatusAllInstancesConfig extends \Google\Service\Compute\InstanceGroupManagerStatusAllInstancesConfig
     {
     }
 }

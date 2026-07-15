@@ -21,94 +21,103 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceNetworking;
-
-class GoogleCloudServicenetworkingV1betaSubnetwork extends \Google\Model
-{
-    /**
-     * Subnetwork CIDR range in `10.x.x.x/y` format.
-     *
-     * @var string
-     */
-    public $ipCidrRange;
-    /**
-     * Subnetwork name. See https://cloud.google.com/compute/docs/vpc/
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * In the Shared VPC host project, the VPC network that's peered with the
-     * consumer network. For example: `projects/1234321/global/networks/host-
-     * network`
-     *
-     * @var string
-     */
-    public $network;
-    /**
-     * This is a discovered subnet that is not within the current consumer
-     * allocated ranges.
-     *
-     * @var bool
-     */
-    public $outsideAllocation;
-    /**
-     * Subnetwork CIDR range in `10.x.x.x/y` format.
-     *
-     * @param string $ipCidrRange
-     */
-    public function setIpCidrRange($ipCidrRange)
+namespace Google\Service\ServiceNetworking {
+    class GoogleCloudServicenetworkingV1betaSubnetwork extends \Google\Model
     {
+        /**
+         * Subnetwork CIDR range in `10.x.x.x/y` format.
+         *
+         * @var string
+         */
+        public $ipCidrRange;
+        /**
+         * Subnetwork name. See https://cloud.google.com/compute/docs/vpc/
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * In the Shared VPC host project, the VPC network that's peered with the
+         * consumer network. For example: `projects/1234321/global/networks/host-
+         * network`
+         *
+         * @var string
+         */
+        public $network;
+        /**
+         * This is a discovered subnet that is not within the current consumer
+         * allocated ranges.
+         *
+         * @var bool
+         */
+        public $outsideAllocation;
+        /**
+         * Subnetwork CIDR range in `10.x.x.x/y` format.
+         *
+         * @param string $ipCidrRange
+         */
+        public function setIpCidrRange($ipCidrRange)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIpCidrRange()
+        {
+        }
+        /**
+         * Subnetwork name. See https://cloud.google.com/compute/docs/vpc/
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * In the Shared VPC host project, the VPC network that's peered with the
+         * consumer network. For example: `projects/1234321/global/networks/host-
+         * network`
+         *
+         * @param string $network
+         */
+        public function setNetwork($network)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNetwork()
+        {
+        }
+        /**
+         * This is a discovered subnet that is not within the current consumer
+         * allocated ranges.
+         *
+         * @param bool $outsideAllocation
+         */
+        public function setOutsideAllocation($outsideAllocation)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getOutsideAllocation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ServiceNetworking\GoogleCloudServicenetworkingV1betaSubnetwork registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIpCidrRange()
-    {
-    }
-    /**
-     * Subnetwork name. See https://cloud.google.com/compute/docs/vpc/
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * In the Shared VPC host project, the VPC network that's peered with the
-     * consumer network. For example: `projects/1234321/global/networks/host-
-     * network`
-     *
-     * @param string $network
-     */
-    public function setNetwork($network)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNetwork()
-    {
-    }
-    /**
-     * This is a discovered subnet that is not within the current consumer
-     * allocated ranges.
-     *
-     * @param bool $outsideAllocation
-     */
-    public function setOutsideAllocation($outsideAllocation)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getOutsideAllocation()
+    class Google_Service_ServiceNetworking_GoogleCloudServicenetworkingV1betaSubnetwork extends \Google\Service\ServiceNetworking\GoogleCloudServicenetworkingV1betaSubnetwork
     {
     }
 }

@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Baremetalsolution;
-
-class GoogleCloudBaremetalsolutionV2LogicalInterface extends \Google\Collection
-{
-    protected $collection_key = 'logicalNetworkInterfaces';
-    /**
-     * The index of the logical interface mapping to the index of the hardware
-     * bond or nic on the chosen network template. This field is deprecated.
-     *
-     * @deprecated
-     * @var int
-     */
-    public $interfaceIndex;
-    protected $logicalNetworkInterfacesType = LogicalNetworkInterface::class;
-    protected $logicalNetworkInterfacesDataType = 'array';
-    /**
-     * Interface name. This is of syntax or and forms part of the network template
-     * name.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The index of the logical interface mapping to the index of the hardware
-     * bond or nic on the chosen network template. This field is deprecated.
-     *
-     * @deprecated
-     * @param int $interfaceIndex
-     */
-    public function setInterfaceIndex($interfaceIndex)
+namespace Google\Service\Baremetalsolution {
+    class GoogleCloudBaremetalsolutionV2LogicalInterface extends \Google\Collection
     {
+        protected $collection_key = 'logicalNetworkInterfaces';
+        /**
+         * The index of the logical interface mapping to the index of the hardware
+         * bond or nic on the chosen network template. This field is deprecated.
+         *
+         * @deprecated
+         * @var int
+         */
+        public $interfaceIndex;
+        protected $logicalNetworkInterfacesType = LogicalNetworkInterface::class;
+        protected $logicalNetworkInterfacesDataType = 'array';
+        /**
+         * Interface name. This is of syntax or and forms part of the network template
+         * name.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The index of the logical interface mapping to the index of the hardware
+         * bond or nic on the chosen network template. This field is deprecated.
+         *
+         * @deprecated
+         * @param int $interfaceIndex
+         */
+        public function setInterfaceIndex($interfaceIndex)
+        {
+        }
+        /**
+         * @deprecated
+         * @return int
+         */
+        public function getInterfaceIndex()
+        {
+        }
+        /**
+         * List of logical network interfaces within a logical interface.
+         *
+         * @param LogicalNetworkInterface[] $logicalNetworkInterfaces
+         */
+        public function setLogicalNetworkInterfaces($logicalNetworkInterfaces)
+        {
+        }
+        /**
+         * @return LogicalNetworkInterface[]
+         */
+        public function getLogicalNetworkInterfaces()
+        {
+        }
+        /**
+         * Interface name. This is of syntax or and forms part of the network template
+         * name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return int
+     * Runtime class alias of \Google\Service\Baremetalsolution\GoogleCloudBaremetalsolutionV2LogicalInterface registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInterfaceIndex()
-    {
-    }
-    /**
-     * List of logical network interfaces within a logical interface.
-     *
-     * @param LogicalNetworkInterface[] $logicalNetworkInterfaces
-     */
-    public function setLogicalNetworkInterfaces($logicalNetworkInterfaces)
-    {
-    }
-    /**
-     * @return LogicalNetworkInterface[]
-     */
-    public function getLogicalNetworkInterfaces()
-    {
-    }
-    /**
-     * Interface name. This is of syntax or and forms part of the network template
-     * name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Baremetalsolution_GoogleCloudBaremetalsolutionV2LogicalInterface extends \Google\Service\Baremetalsolution\GoogleCloudBaremetalsolutionV2LogicalInterface
     {
     }
 }

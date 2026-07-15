@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager;
-
-class SapValidation extends \Google\Collection
-{
-    protected $collection_key = 'validationDetails';
-    /**
-     * Required. The project_id of the cloud project that the Insight data comes
-     * from.
-     *
-     * @var string
-     */
-    public $projectId;
-    protected $validationDetailsType = SapValidationValidationDetail::class;
-    protected $validationDetailsDataType = 'array';
-    /**
-     * Optional. The zone of the instance that the Insight data comes from.
-     *
-     * @var string
-     */
-    public $zone;
-    /**
-     * Required. The project_id of the cloud project that the Insight data comes
-     * from.
-     *
-     * @param string $projectId
-     */
-    public function setProjectId($projectId)
+namespace Google\Service\WorkloadManager {
+    class SapValidation extends \Google\Collection
     {
+        protected $collection_key = 'validationDetails';
+        /**
+         * Required. The project_id of the cloud project that the Insight data comes
+         * from.
+         *
+         * @var string
+         */
+        public $projectId;
+        protected $validationDetailsType = SapValidationValidationDetail::class;
+        protected $validationDetailsDataType = 'array';
+        /**
+         * Optional. The zone of the instance that the Insight data comes from.
+         *
+         * @var string
+         */
+        public $zone;
+        /**
+         * Required. The project_id of the cloud project that the Insight data comes
+         * from.
+         *
+         * @param string $projectId
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
+        /**
+         * Optional. A list of SAP validation metrics data.
+         *
+         * @param SapValidationValidationDetail[] $validationDetails
+         */
+        public function setValidationDetails($validationDetails)
+        {
+        }
+        /**
+         * @return SapValidationValidationDetail[]
+         */
+        public function getValidationDetails()
+        {
+        }
+        /**
+         * Optional. The zone of the instance that the Insight data comes from.
+         *
+         * @param string $zone
+         */
+        public function setZone($zone)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getZone()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\WorkloadManager\SapValidation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProjectId()
-    {
-    }
-    /**
-     * Optional. A list of SAP validation metrics data.
-     *
-     * @param SapValidationValidationDetail[] $validationDetails
-     */
-    public function setValidationDetails($validationDetails)
-    {
-    }
-    /**
-     * @return SapValidationValidationDetail[]
-     */
-    public function getValidationDetails()
-    {
-    }
-    /**
-     * Optional. The zone of the instance that the Insight data comes from.
-     *
-     * @param string $zone
-     */
-    public function setZone($zone)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getZone()
+    class Google_Service_WorkloadManager_SapValidation extends \Google\Service\WorkloadManager\SapValidation
     {
     }
 }

@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dns;
-
-class Project extends \Google\Model
-{
-    /**
-     * User assigned unique identifier for the resource (output only).
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * @var string
-     */
-    public $kind;
-    /**
-     * Unique numeric identifier for the resource; defined by the server (output
-     * only).
-     *
-     * @var string
-     */
-    public $number;
-    protected $quotaType = Quota::class;
-    protected $quotaDataType = '';
-    /**
-     * User assigned unique identifier for the resource (output only).
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\Dns {
+    class Project extends \Google\Model
     {
+        /**
+         * User assigned unique identifier for the resource (output only).
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * @var string
+         */
+        public $kind;
+        /**
+         * Unique numeric identifier for the resource; defined by the server (output
+         * only).
+         *
+         * @var string
+         */
+        public $number;
+        protected $quotaType = Quota::class;
+        protected $quotaDataType = '';
+        /**
+         * User assigned unique identifier for the resource (output only).
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Unique numeric identifier for the resource; defined by the server (output
+         * only).
+         *
+         * @param string $number
+         */
+        public function setNumber($number)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNumber()
+        {
+        }
+        /**
+         * Quotas assigned to this project (output only).
+         *
+         * @param Quota $quota
+         */
+        public function setQuota(Quota $quota)
+        {
+        }
+        /**
+         * @return Quota
+         */
+        public function getQuota()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dns\Project registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Unique numeric identifier for the resource; defined by the server (output
-     * only).
-     *
-     * @param string $number
-     */
-    public function setNumber($number)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNumber()
-    {
-    }
-    /**
-     * Quotas assigned to this project (output only).
-     *
-     * @param Quota $quota
-     */
-    public function setQuota(Quota $quota)
-    {
-    }
-    /**
-     * @return Quota
-     */
-    public function getQuota()
+    class Google_Service_Dns_Project extends \Google\Service\Dns\Project
     {
     }
 }

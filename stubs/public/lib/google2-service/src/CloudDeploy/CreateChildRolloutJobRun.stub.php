@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class CreateChildRolloutJobRun extends \Google\Model
-{
-    /**
-     * Output only. Name of the `ChildRollout`. Format is `projects/{project}/loca
-     * tions/{location}/deliveryPipelines/{deliveryPipeline}/releases/{release}/ro
-     * llouts/{rollout}`.
-     *
-     * @var string
-     */
-    public $rollout;
-    /**
-     * Output only. The ID of the childRollout Phase initiated by this JobRun.
-     *
-     * @var string
-     */
-    public $rolloutPhaseId;
-    /**
-     * Output only. Name of the `ChildRollout`. Format is `projects/{project}/loca
-     * tions/{location}/deliveryPipelines/{deliveryPipeline}/releases/{release}/ro
-     * llouts/{rollout}`.
-     *
-     * @param string $rollout
-     */
-    public function setRollout($rollout)
+namespace Google\Service\CloudDeploy {
+    class CreateChildRolloutJobRun extends \Google\Model
     {
+        /**
+         * Output only. Name of the `ChildRollout`. Format is `projects/{project}/loca
+         * tions/{location}/deliveryPipelines/{deliveryPipeline}/releases/{release}/ro
+         * llouts/{rollout}`.
+         *
+         * @var string
+         */
+        public $rollout;
+        /**
+         * Output only. The ID of the childRollout Phase initiated by this JobRun.
+         *
+         * @var string
+         */
+        public $rolloutPhaseId;
+        /**
+         * Output only. Name of the `ChildRollout`. Format is `projects/{project}/loca
+         * tions/{location}/deliveryPipelines/{deliveryPipeline}/releases/{release}/ro
+         * llouts/{rollout}`.
+         *
+         * @param string $rollout
+         */
+        public function setRollout($rollout)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRollout()
+        {
+        }
+        /**
+         * Output only. The ID of the childRollout Phase initiated by this JobRun.
+         *
+         * @param string $rolloutPhaseId
+         */
+        public function setRolloutPhaseId($rolloutPhaseId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRolloutPhaseId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDeploy\CreateChildRolloutJobRun registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRollout()
-    {
-    }
-    /**
-     * Output only. The ID of the childRollout Phase initiated by this JobRun.
-     *
-     * @param string $rolloutPhaseId
-     */
-    public function setRolloutPhaseId($rolloutPhaseId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRolloutPhaseId()
+    class Google_Service_CloudDeploy_CreateChildRolloutJobRun extends \Google\Service\CloudDeploy\CreateChildRolloutJobRun
     {
     }
 }

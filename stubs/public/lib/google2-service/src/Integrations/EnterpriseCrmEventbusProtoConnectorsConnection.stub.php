@@ -21,94 +21,103 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmEventbusProtoConnectorsConnection extends \Google\Model
-{
-    /**
-     * Connection name Format:
-     * projects/{project}/locations/{location}/connections/{connection}
-     *
-     * @var string
-     */
-    public $connectionName;
-    /**
-     * Connector version Format: projects/{project}/locations/{location}/providers
-     * /{provider}/connectors/{connector}/versions/{version}
-     *
-     * @var string
-     */
-    public $connectorVersion;
-    /**
-     * The name of the Hostname of the Service Directory service with TLS if used.
-     *
-     * @var string
-     */
-    public $host;
-    /**
-     * Service name Format: projects/{project}/locations/{location}/namespaces/{na
-     * mespace}/services/{service}
-     *
-     * @var string
-     */
-    public $serviceName;
-    /**
-     * Connection name Format:
-     * projects/{project}/locations/{location}/connections/{connection}
-     *
-     * @param string $connectionName
-     */
-    public function setConnectionName($connectionName)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmEventbusProtoConnectorsConnection extends \Google\Model
     {
+        /**
+         * Connection name Format:
+         * projects/{project}/locations/{location}/connections/{connection}
+         *
+         * @var string
+         */
+        public $connectionName;
+        /**
+         * Connector version Format: projects/{project}/locations/{location}/providers
+         * /{provider}/connectors/{connector}/versions/{version}
+         *
+         * @var string
+         */
+        public $connectorVersion;
+        /**
+         * The name of the Hostname of the Service Directory service with TLS if used.
+         *
+         * @var string
+         */
+        public $host;
+        /**
+         * Service name Format: projects/{project}/locations/{location}/namespaces/{na
+         * mespace}/services/{service}
+         *
+         * @var string
+         */
+        public $serviceName;
+        /**
+         * Connection name Format:
+         * projects/{project}/locations/{location}/connections/{connection}
+         *
+         * @param string $connectionName
+         */
+        public function setConnectionName($connectionName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConnectionName()
+        {
+        }
+        /**
+         * Connector version Format: projects/{project}/locations/{location}/providers
+         * /{provider}/connectors/{connector}/versions/{version}
+         *
+         * @param string $connectorVersion
+         */
+        public function setConnectorVersion($connectorVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConnectorVersion()
+        {
+        }
+        /**
+         * The name of the Hostname of the Service Directory service with TLS if used.
+         *
+         * @param string $host
+         */
+        public function setHost($host)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHost()
+        {
+        }
+        /**
+         * Service name Format: projects/{project}/locations/{location}/namespaces/{na
+         * mespace}/services/{service}
+         *
+         * @param string $serviceName
+         */
+        public function setServiceName($serviceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmEventbusProtoConnectorsConnection registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConnectionName()
-    {
-    }
-    /**
-     * Connector version Format: projects/{project}/locations/{location}/providers
-     * /{provider}/connectors/{connector}/versions/{version}
-     *
-     * @param string $connectorVersion
-     */
-    public function setConnectorVersion($connectorVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getConnectorVersion()
-    {
-    }
-    /**
-     * The name of the Hostname of the Service Directory service with TLS if used.
-     *
-     * @param string $host
-     */
-    public function setHost($host)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHost()
-    {
-    }
-    /**
-     * Service name Format: projects/{project}/locations/{location}/namespaces/{na
-     * mespace}/services/{service}
-     *
-     * @param string $serviceName
-     */
-    public function setServiceName($serviceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceName()
+    class Google_Service_Integrations_EnterpriseCrmEventbusProtoConnectorsConnection extends \Google\Service\Integrations\EnterpriseCrmEventbusProtoConnectorsConnection
     {
     }
 }

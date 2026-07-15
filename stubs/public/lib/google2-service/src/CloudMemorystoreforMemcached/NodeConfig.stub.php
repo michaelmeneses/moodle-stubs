@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudMemorystoreforMemcached;
-
-class NodeConfig extends \Google\Model
-{
-    /**
-     * Required. Number of cpus per Memcached node.
-     *
-     * @var int
-     */
-    public $cpuCount;
-    /**
-     * Required. Memory size in MiB for each Memcached node.
-     *
-     * @var int
-     */
-    public $memorySizeMb;
-    /**
-     * Required. Number of cpus per Memcached node.
-     *
-     * @param int $cpuCount
-     */
-    public function setCpuCount($cpuCount)
+namespace Google\Service\CloudMemorystoreforMemcached {
+    class NodeConfig extends \Google\Model
     {
+        /**
+         * Required. Number of cpus per Memcached node.
+         *
+         * @var int
+         */
+        public $cpuCount;
+        /**
+         * Required. Memory size in MiB for each Memcached node.
+         *
+         * @var int
+         */
+        public $memorySizeMb;
+        /**
+         * Required. Number of cpus per Memcached node.
+         *
+         * @param int $cpuCount
+         */
+        public function setCpuCount($cpuCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCpuCount()
+        {
+        }
+        /**
+         * Required. Memory size in MiB for each Memcached node.
+         *
+         * @param int $memorySizeMb
+         */
+        public function setMemorySizeMb($memorySizeMb)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMemorySizeMb()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudMemorystoreforMemcached\NodeConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCpuCount()
-    {
-    }
-    /**
-     * Required. Memory size in MiB for each Memcached node.
-     *
-     * @param int $memorySizeMb
-     */
-    public function setMemorySizeMb($memorySizeMb)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMemorySizeMb()
+    class Google_Service_CloudMemorystoreforMemcached_NodeConfig extends \Google\Service\CloudMemorystoreforMemcached\NodeConfig
     {
     }
 }

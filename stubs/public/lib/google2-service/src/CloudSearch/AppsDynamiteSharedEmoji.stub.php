@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedEmoji extends \Google\Model
-{
-    protected $customEmojiType = AppsDynamiteSharedCustomEmoji::class;
-    protected $customEmojiDataType = '';
-    /**
-     * @var string
-     */
-    public $unicode;
-    /**
-     * @param AppsDynamiteSharedCustomEmoji
-     */
-    public function setCustomEmoji(AppsDynamiteSharedCustomEmoji $customEmoji)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedEmoji extends \Google\Model
     {
+        protected $customEmojiType = AppsDynamiteSharedCustomEmoji::class;
+        protected $customEmojiDataType = '';
+        /**
+         * @var string
+         */
+        public $unicode;
+        /**
+         * @param AppsDynamiteSharedCustomEmoji
+         */
+        public function setCustomEmoji(AppsDynamiteSharedCustomEmoji $customEmoji)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedCustomEmoji
+         */
+        public function getCustomEmoji()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUnicode($unicode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUnicode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppsDynamiteSharedCustomEmoji
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedEmoji registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomEmoji()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUnicode($unicode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUnicode()
+    class Google_Service_CloudSearch_AppsDynamiteSharedEmoji extends \Google\Service\CloudSearch\AppsDynamiteSharedEmoji
     {
     }
 }

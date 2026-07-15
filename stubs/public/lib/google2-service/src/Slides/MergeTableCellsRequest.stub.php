@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides;
-
-class MergeTableCellsRequest extends \Google\Model
-{
-    /**
-     * The object ID of the table.
-     *
-     * @var string
-     */
-    public $objectId;
-    protected $tableRangeType = TableRange::class;
-    protected $tableRangeDataType = '';
-    /**
-     * The object ID of the table.
-     *
-     * @param string $objectId
-     */
-    public function setObjectId($objectId)
+namespace Google\Service\Slides {
+    class MergeTableCellsRequest extends \Google\Model
     {
+        /**
+         * The object ID of the table.
+         *
+         * @var string
+         */
+        public $objectId;
+        protected $tableRangeType = TableRange::class;
+        protected $tableRangeDataType = '';
+        /**
+         * The object ID of the table.
+         *
+         * @param string $objectId
+         */
+        public function setObjectId($objectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectId()
+        {
+        }
+        /**
+         * The table range specifying which cells of the table to merge. Any text in
+         * the cells being merged will be concatenated and stored in the upper-left
+         * ("head") cell of the range. If the range is non-rectangular (which can
+         * occur in some cases where the range covers cells that are already merged),
+         * a 400 bad request error is returned.
+         *
+         * @param TableRange $tableRange
+         */
+        public function setTableRange(TableRange $tableRange)
+        {
+        }
+        /**
+         * @return TableRange
+         */
+        public function getTableRange()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Slides\MergeTableCellsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getObjectId()
-    {
-    }
-    /**
-     * The table range specifying which cells of the table to merge. Any text in
-     * the cells being merged will be concatenated and stored in the upper-left
-     * ("head") cell of the range. If the range is non-rectangular (which can
-     * occur in some cases where the range covers cells that are already merged),
-     * a 400 bad request error is returned.
-     *
-     * @param TableRange $tableRange
-     */
-    public function setTableRange(TableRange $tableRange)
-    {
-    }
-    /**
-     * @return TableRange
-     */
-    public function getTableRange()
+    class Google_Service_Slides_MergeTableCellsRequest extends \Google\Service\Slides\MergeTableCellsRequest
     {
     }
 }

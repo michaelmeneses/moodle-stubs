@@ -21,173 +21,182 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Drive;
-
-class LabelFieldModification extends \Google\Collection
-{
-    protected $collection_key = 'setUserValues';
-    /**
-     * The ID of the field to be modified.
-     *
-     * @var string
-     */
-    public $fieldId;
-    /**
-     * This is always `"drive#labelFieldModification"`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Replaces the value of a dateString Field with these new values. The string
-     * must be in the RFC 3339 full-date format: YYYY-MM-DD.
-     *
-     * @var string[]
-     */
-    public $setDateValues;
-    /**
-     * Replaces the value of an `integer` field with these new values.
-     *
-     * @var string[]
-     */
-    public $setIntegerValues;
-    /**
-     * Replaces a `selection` field with these new values.
-     *
-     * @var string[]
-     */
-    public $setSelectionValues;
-    /**
-     * Sets the value of a `text` field.
-     *
-     * @var string[]
-     */
-    public $setTextValues;
-    /**
-     * Replaces a `user` field with these new values. The values must be a valid
-     * email addresses.
-     *
-     * @var string[]
-     */
-    public $setUserValues;
-    /**
-     * Unsets the values for this field.
-     *
-     * @var bool
-     */
-    public $unsetValues;
-    /**
-     * The ID of the field to be modified.
-     *
-     * @param string $fieldId
-     */
-    public function setFieldId($fieldId)
+namespace Google\Service\Drive {
+    class LabelFieldModification extends \Google\Collection
     {
+        protected $collection_key = 'setUserValues';
+        /**
+         * The ID of the field to be modified.
+         *
+         * @var string
+         */
+        public $fieldId;
+        /**
+         * This is always `"drive#labelFieldModification"`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Replaces the value of a dateString Field with these new values. The string
+         * must be in the RFC 3339 full-date format: YYYY-MM-DD.
+         *
+         * @var string[]
+         */
+        public $setDateValues;
+        /**
+         * Replaces the value of an `integer` field with these new values.
+         *
+         * @var string[]
+         */
+        public $setIntegerValues;
+        /**
+         * Replaces a `selection` field with these new values.
+         *
+         * @var string[]
+         */
+        public $setSelectionValues;
+        /**
+         * Sets the value of a `text` field.
+         *
+         * @var string[]
+         */
+        public $setTextValues;
+        /**
+         * Replaces a `user` field with these new values. The values must be a valid
+         * email addresses.
+         *
+         * @var string[]
+         */
+        public $setUserValues;
+        /**
+         * Unsets the values for this field.
+         *
+         * @var bool
+         */
+        public $unsetValues;
+        /**
+         * The ID of the field to be modified.
+         *
+         * @param string $fieldId
+         */
+        public function setFieldId($fieldId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFieldId()
+        {
+        }
+        /**
+         * This is always `"drive#labelFieldModification"`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Replaces the value of a dateString Field with these new values. The string
+         * must be in the RFC 3339 full-date format: YYYY-MM-DD.
+         *
+         * @param string[] $setDateValues
+         */
+        public function setSetDateValues($setDateValues)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSetDateValues()
+        {
+        }
+        /**
+         * Replaces the value of an `integer` field with these new values.
+         *
+         * @param string[] $setIntegerValues
+         */
+        public function setSetIntegerValues($setIntegerValues)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSetIntegerValues()
+        {
+        }
+        /**
+         * Replaces a `selection` field with these new values.
+         *
+         * @param string[] $setSelectionValues
+         */
+        public function setSetSelectionValues($setSelectionValues)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSetSelectionValues()
+        {
+        }
+        /**
+         * Sets the value of a `text` field.
+         *
+         * @param string[] $setTextValues
+         */
+        public function setSetTextValues($setTextValues)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSetTextValues()
+        {
+        }
+        /**
+         * Replaces a `user` field with these new values. The values must be a valid
+         * email addresses.
+         *
+         * @param string[] $setUserValues
+         */
+        public function setSetUserValues($setUserValues)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSetUserValues()
+        {
+        }
+        /**
+         * Unsets the values for this field.
+         *
+         * @param bool $unsetValues
+         */
+        public function setUnsetValues($unsetValues)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUnsetValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Drive\LabelFieldModification registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFieldId()
-    {
-    }
-    /**
-     * This is always `"drive#labelFieldModification"`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Replaces the value of a dateString Field with these new values. The string
-     * must be in the RFC 3339 full-date format: YYYY-MM-DD.
-     *
-     * @param string[] $setDateValues
-     */
-    public function setSetDateValues($setDateValues)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSetDateValues()
-    {
-    }
-    /**
-     * Replaces the value of an `integer` field with these new values.
-     *
-     * @param string[] $setIntegerValues
-     */
-    public function setSetIntegerValues($setIntegerValues)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSetIntegerValues()
-    {
-    }
-    /**
-     * Replaces a `selection` field with these new values.
-     *
-     * @param string[] $setSelectionValues
-     */
-    public function setSetSelectionValues($setSelectionValues)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSetSelectionValues()
-    {
-    }
-    /**
-     * Sets the value of a `text` field.
-     *
-     * @param string[] $setTextValues
-     */
-    public function setSetTextValues($setTextValues)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSetTextValues()
-    {
-    }
-    /**
-     * Replaces a `user` field with these new values. The values must be a valid
-     * email addresses.
-     *
-     * @param string[] $setUserValues
-     */
-    public function setSetUserValues($setUserValues)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSetUserValues()
-    {
-    }
-    /**
-     * Unsets the values for this field.
-     *
-     * @param bool $unsetValues
-     */
-    public function setUnsetValues($unsetValues)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUnsetValues()
+    class Google_Service_Drive_LabelFieldModification extends \Google\Service\Drive\LabelFieldModification
     {
     }
 }

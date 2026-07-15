@@ -21,127 +21,136 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsReporting;
-
-class GoalData extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $goalCompletionLocation;
-    /**
-     * @var string
-     */
-    public $goalCompletions;
-    /**
-     * @var int
-     */
-    public $goalIndex;
-    /**
-     * @var string
-     */
-    public $goalName;
-    /**
-     * @var string
-     */
-    public $goalPreviousStep1;
-    /**
-     * @var string
-     */
-    public $goalPreviousStep2;
-    /**
-     * @var string
-     */
-    public $goalPreviousStep3;
-    public $goalValue;
-    /**
-     * @param string
-     */
-    public function setGoalCompletionLocation($goalCompletionLocation)
+namespace Google\Service\AnalyticsReporting {
+    class GoalData extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $goalCompletionLocation;
+        /**
+         * @var string
+         */
+        public $goalCompletions;
+        /**
+         * @var int
+         */
+        public $goalIndex;
+        /**
+         * @var string
+         */
+        public $goalName;
+        /**
+         * @var string
+         */
+        public $goalPreviousStep1;
+        /**
+         * @var string
+         */
+        public $goalPreviousStep2;
+        /**
+         * @var string
+         */
+        public $goalPreviousStep3;
+        public $goalValue;
+        /**
+         * @param string
+         */
+        public function setGoalCompletionLocation($goalCompletionLocation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGoalCompletionLocation()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setGoalCompletions($goalCompletions)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGoalCompletions()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setGoalIndex($goalIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getGoalIndex()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setGoalName($goalName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGoalName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setGoalPreviousStep1($goalPreviousStep1)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGoalPreviousStep1()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setGoalPreviousStep2($goalPreviousStep2)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGoalPreviousStep2()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setGoalPreviousStep3($goalPreviousStep3)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGoalPreviousStep3()
+        {
+        }
+        public function setGoalValue($goalValue)
+        {
+        }
+        public function getGoalValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AnalyticsReporting\GoalData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGoalCompletionLocation()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setGoalCompletions($goalCompletions)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGoalCompletions()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setGoalIndex($goalIndex)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getGoalIndex()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setGoalName($goalName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGoalName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setGoalPreviousStep1($goalPreviousStep1)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGoalPreviousStep1()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setGoalPreviousStep2($goalPreviousStep2)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGoalPreviousStep2()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setGoalPreviousStep3($goalPreviousStep3)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGoalPreviousStep3()
-    {
-    }
-    public function setGoalValue($goalValue)
-    {
-    }
-    public function getGoalValue()
+    class Google_Service_AnalyticsReporting_GoalData extends \Google\Service\AnalyticsReporting\GoalData
     {
     }
 }

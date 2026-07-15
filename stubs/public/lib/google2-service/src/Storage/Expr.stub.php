@@ -21,98 +21,107 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storage;
-
-class Expr extends \Google\Model
-{
-    /**
-     * An optional description of the expression. This is a longer text which
-     * describes the expression, e.g. when hovered over it in a UI.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Textual representation of an expression in Common Expression Language
-     * syntax. The application context of the containing message determines which
-     * well-known feature set of CEL is supported.
-     *
-     * @var string
-     */
-    public $expression;
-    /**
-     * An optional string indicating the location of the expression for error
-     * reporting, e.g. a file name and a position in the file.
-     *
-     * @var string
-     */
-    public $location;
-    /**
-     * An optional title for the expression, i.e. a short string describing its
-     * purpose. This can be used e.g. in UIs which allow to enter the expression.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * An optional description of the expression. This is a longer text which
-     * describes the expression, e.g. when hovered over it in a UI.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\Storage {
+    class Expr extends \Google\Model
     {
+        /**
+         * An optional description of the expression. This is a longer text which
+         * describes the expression, e.g. when hovered over it in a UI.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Textual representation of an expression in Common Expression Language
+         * syntax. The application context of the containing message determines which
+         * well-known feature set of CEL is supported.
+         *
+         * @var string
+         */
+        public $expression;
+        /**
+         * An optional string indicating the location of the expression for error
+         * reporting, e.g. a file name and a position in the file.
+         *
+         * @var string
+         */
+        public $location;
+        /**
+         * An optional title for the expression, i.e. a short string describing its
+         * purpose. This can be used e.g. in UIs which allow to enter the expression.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * An optional description of the expression. This is a longer text which
+         * describes the expression, e.g. when hovered over it in a UI.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Textual representation of an expression in Common Expression Language
+         * syntax. The application context of the containing message determines which
+         * well-known feature set of CEL is supported.
+         *
+         * @param string $expression
+         */
+        public function setExpression($expression)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpression()
+        {
+        }
+        /**
+         * An optional string indicating the location of the expression for error
+         * reporting, e.g. a file name and a position in the file.
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * An optional title for the expression, i.e. a short string describing its
+         * purpose. This can be used e.g. in UIs which allow to enter the expression.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Storage\Expr registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * Textual representation of an expression in Common Expression Language
-     * syntax. The application context of the containing message determines which
-     * well-known feature set of CEL is supported.
-     *
-     * @param string $expression
-     */
-    public function setExpression($expression)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExpression()
-    {
-    }
-    /**
-     * An optional string indicating the location of the expression for error
-     * reporting, e.g. a file name and a position in the file.
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocation()
-    {
-    }
-    /**
-     * An optional title for the expression, i.e. a short string describing its
-     * purpose. This can be used e.g. in UIs which allow to enter the expression.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_Storage_Expr extends \Google\Service\Storage\Expr
     {
     }
 }

@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class BulkListLineItemAssignedTargetingOptionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'assignedTargetingOptions';
-    protected $assignedTargetingOptionsType = AssignedTargetingOption::class;
-    protected $assignedTargetingOptionsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * @param AssignedTargetingOption[]
-     */
-    public function setAssignedTargetingOptions($assignedTargetingOptions)
+namespace Google\Service\DisplayVideo {
+    class BulkListLineItemAssignedTargetingOptionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'assignedTargetingOptions';
+        protected $assignedTargetingOptionsType = AssignedTargetingOption::class;
+        protected $assignedTargetingOptionsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * @param AssignedTargetingOption[]
+         */
+        public function setAssignedTargetingOptions($assignedTargetingOptions)
+        {
+        }
+        /**
+         * @return AssignedTargetingOption[]
+         */
+        public function getAssignedTargetingOptions()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AssignedTargetingOption[]
+     * Runtime class alias of \Google\Service\DisplayVideo\BulkListLineItemAssignedTargetingOptionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssignedTargetingOptions()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_DisplayVideo_BulkListLineItemAssignedTargetingOptionsResponse extends \Google\Service\DisplayVideo\BulkListLineItemAssignedTargetingOptionsResponse
     {
     }
 }

@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ListModelsResponse extends \Google\Collection
-{
-    protected $collection_key = 'models';
-    protected $modelsType = GoogleCloudAiplatformV1Model::class;
-    protected $modelsDataType = 'array';
-    /**
-     * A token to retrieve next page of results. Pass to
-     * ListModelsRequest.page_token to obtain that page.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of Models in the requested page.
-     *
-     * @param GoogleCloudAiplatformV1Model[] $models
-     */
-    public function setModels($models)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ListModelsResponse extends \Google\Collection
     {
+        protected $collection_key = 'models';
+        protected $modelsType = GoogleCloudAiplatformV1Model::class;
+        protected $modelsDataType = 'array';
+        /**
+         * A token to retrieve next page of results. Pass to
+         * ListModelsRequest.page_token to obtain that page.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of Models in the requested page.
+         *
+         * @param GoogleCloudAiplatformV1Model[] $models
+         */
+        public function setModels($models)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1Model[]
+         */
+        public function getModels()
+        {
+        }
+        /**
+         * A token to retrieve next page of results. Pass to
+         * ListModelsRequest.page_token to obtain that page.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1Model[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListModelsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getModels()
-    {
-    }
-    /**
-     * A token to retrieve next page of results. Pass to
-     * ListModelsRequest.page_token to obtain that page.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ListModelsResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListModelsResponse
     {
     }
 }

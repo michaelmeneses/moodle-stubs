@@ -21,161 +21,170 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class PosCustomBatchRequestEntry extends \Google\Model
-{
-    /**
-     * An entry ID, unique within the batch request.
-     *
-     * @var string
-     */
-    public $batchId;
-    protected $inventoryType = PosInventory::class;
-    protected $inventoryDataType = '';
-    /**
-     * The ID of the POS data provider.
-     *
-     * @var string
-     */
-    public $merchantId;
-    /**
-     * The method of the batch entry. Acceptable values are: - "`delete`" -
-     * "`get`" - "`insert`" - "`inventory`" - "`sale`"
-     *
-     * @var string
-     */
-    public $method;
-    protected $saleType = PosSale::class;
-    protected $saleDataType = '';
-    protected $storeType = PosStore::class;
-    protected $storeDataType = '';
-    /**
-     * The store code. This should be set only if the method is `delete` or `get`.
-     *
-     * @var string
-     */
-    public $storeCode;
-    /**
-     * The ID of the account for which to get/submit data.
-     *
-     * @var string
-     */
-    public $targetMerchantId;
-    /**
-     * An entry ID, unique within the batch request.
-     *
-     * @param string $batchId
-     */
-    public function setBatchId($batchId)
+namespace Google\Service\ShoppingContent {
+    class PosCustomBatchRequestEntry extends \Google\Model
     {
+        /**
+         * An entry ID, unique within the batch request.
+         *
+         * @var string
+         */
+        public $batchId;
+        protected $inventoryType = PosInventory::class;
+        protected $inventoryDataType = '';
+        /**
+         * The ID of the POS data provider.
+         *
+         * @var string
+         */
+        public $merchantId;
+        /**
+         * The method of the batch entry. Acceptable values are: - "`delete`" -
+         * "`get`" - "`insert`" - "`inventory`" - "`sale`"
+         *
+         * @var string
+         */
+        public $method;
+        protected $saleType = PosSale::class;
+        protected $saleDataType = '';
+        protected $storeType = PosStore::class;
+        protected $storeDataType = '';
+        /**
+         * The store code. This should be set only if the method is `delete` or `get`.
+         *
+         * @var string
+         */
+        public $storeCode;
+        /**
+         * The ID of the account for which to get/submit data.
+         *
+         * @var string
+         */
+        public $targetMerchantId;
+        /**
+         * An entry ID, unique within the batch request.
+         *
+         * @param string $batchId
+         */
+        public function setBatchId($batchId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBatchId()
+        {
+        }
+        /**
+         * The inventory to submit. This should be set only if the method is
+         * `inventory`.
+         *
+         * @param PosInventory $inventory
+         */
+        public function setInventory(PosInventory $inventory)
+        {
+        }
+        /**
+         * @return PosInventory
+         */
+        public function getInventory()
+        {
+        }
+        /**
+         * The ID of the POS data provider.
+         *
+         * @param string $merchantId
+         */
+        public function setMerchantId($merchantId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMerchantId()
+        {
+        }
+        /**
+         * The method of the batch entry. Acceptable values are: - "`delete`" -
+         * "`get`" - "`insert`" - "`inventory`" - "`sale`"
+         *
+         * @param string $method
+         */
+        public function setMethod($method)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMethod()
+        {
+        }
+        /**
+         * The sale information to submit. This should be set only if the method is
+         * `sale`.
+         *
+         * @param PosSale $sale
+         */
+        public function setSale(PosSale $sale)
+        {
+        }
+        /**
+         * @return PosSale
+         */
+        public function getSale()
+        {
+        }
+        /**
+         * The store information to submit. This should be set only if the method is
+         * `insert`.
+         *
+         * @param PosStore $store
+         */
+        public function setStore(PosStore $store)
+        {
+        }
+        /**
+         * @return PosStore
+         */
+        public function getStore()
+        {
+        }
+        /**
+         * The store code. This should be set only if the method is `delete` or `get`.
+         *
+         * @param string $storeCode
+         */
+        public function setStoreCode($storeCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStoreCode()
+        {
+        }
+        /**
+         * The ID of the account for which to get/submit data.
+         *
+         * @param string $targetMerchantId
+         */
+        public function setTargetMerchantId($targetMerchantId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetMerchantId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\PosCustomBatchRequestEntry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBatchId()
-    {
-    }
-    /**
-     * The inventory to submit. This should be set only if the method is
-     * `inventory`.
-     *
-     * @param PosInventory $inventory
-     */
-    public function setInventory(PosInventory $inventory)
-    {
-    }
-    /**
-     * @return PosInventory
-     */
-    public function getInventory()
-    {
-    }
-    /**
-     * The ID of the POS data provider.
-     *
-     * @param string $merchantId
-     */
-    public function setMerchantId($merchantId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMerchantId()
-    {
-    }
-    /**
-     * The method of the batch entry. Acceptable values are: - "`delete`" -
-     * "`get`" - "`insert`" - "`inventory`" - "`sale`"
-     *
-     * @param string $method
-     */
-    public function setMethod($method)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMethod()
-    {
-    }
-    /**
-     * The sale information to submit. This should be set only if the method is
-     * `sale`.
-     *
-     * @param PosSale $sale
-     */
-    public function setSale(PosSale $sale)
-    {
-    }
-    /**
-     * @return PosSale
-     */
-    public function getSale()
-    {
-    }
-    /**
-     * The store information to submit. This should be set only if the method is
-     * `insert`.
-     *
-     * @param PosStore $store
-     */
-    public function setStore(PosStore $store)
-    {
-    }
-    /**
-     * @return PosStore
-     */
-    public function getStore()
-    {
-    }
-    /**
-     * The store code. This should be set only if the method is `delete` or `get`.
-     *
-     * @param string $storeCode
-     */
-    public function setStoreCode($storeCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStoreCode()
-    {
-    }
-    /**
-     * The ID of the account for which to get/submit data.
-     *
-     * @param string $targetMerchantId
-     */
-    public function setTargetMerchantId($targetMerchantId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetMerchantId()
+    class Google_Service_ShoppingContent_PosCustomBatchRequestEntry extends \Google\Service\ShoppingContent\PosCustomBatchRequestEntry
     {
     }
 }

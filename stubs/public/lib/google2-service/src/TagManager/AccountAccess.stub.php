@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager;
-
-class AccountAccess extends \Google\Model
-{
-    public const PERMISSION_accountPermissionUnspecified = 'accountPermissionUnspecified';
-    public const PERMISSION_noAccess = 'noAccess';
-    public const PERMISSION_user = 'user';
-    public const PERMISSION_admin = 'admin';
-    /**
-     * Whether the user has no access, user access, or admin access to an account.
-     *
-     * @var string
-     */
-    public $permission;
-    /**
-     * Whether the user has no access, user access, or admin access to an account.
-     *
-     * Accepted values: accountPermissionUnspecified, noAccess, user, admin
-     *
-     * @param self::PERMISSION_* $permission
-     */
-    public function setPermission($permission)
+namespace Google\Service\TagManager {
+    class AccountAccess extends \Google\Model
     {
+        public const PERMISSION_accountPermissionUnspecified = 'accountPermissionUnspecified';
+        public const PERMISSION_noAccess = 'noAccess';
+        public const PERMISSION_user = 'user';
+        public const PERMISSION_admin = 'admin';
+        /**
+         * Whether the user has no access, user access, or admin access to an account.
+         *
+         * @var string
+         */
+        public $permission;
+        /**
+         * Whether the user has no access, user access, or admin access to an account.
+         *
+         * Accepted values: accountPermissionUnspecified, noAccess, user, admin
+         *
+         * @param self::PERMISSION_* $permission
+         */
+        public function setPermission($permission)
+        {
+        }
+        /**
+         * @return self::PERMISSION_*
+         */
+        public function getPermission()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::PERMISSION_*
+     * Runtime class alias of \Google\Service\TagManager\AccountAccess registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPermission()
+    class Google_Service_TagManager_AccountAccess extends \Google\Service\TagManager\AccountAccess
     {
     }
 }

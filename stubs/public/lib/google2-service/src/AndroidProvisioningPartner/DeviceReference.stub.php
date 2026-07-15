@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidProvisioningPartner;
-
-class DeviceReference extends \Google\Model
-{
-    /**
-     * The ID of the device.
-     *
-     * @var string
-     */
-    public $deviceId;
-    protected $deviceIdentifierType = DeviceIdentifier::class;
-    protected $deviceIdentifierDataType = '';
-    /**
-     * The ID of the device.
-     *
-     * @param string $deviceId
-     */
-    public function setDeviceId($deviceId)
+namespace Google\Service\AndroidProvisioningPartner {
+    class DeviceReference extends \Google\Model
     {
+        /**
+         * The ID of the device.
+         *
+         * @var string
+         */
+        public $deviceId;
+        protected $deviceIdentifierType = DeviceIdentifier::class;
+        protected $deviceIdentifierDataType = '';
+        /**
+         * The ID of the device.
+         *
+         * @param string $deviceId
+         */
+        public function setDeviceId($deviceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeviceId()
+        {
+        }
+        /**
+         * The hardware IDs of the device.
+         *
+         * @param DeviceIdentifier $deviceIdentifier
+         */
+        public function setDeviceIdentifier(DeviceIdentifier $deviceIdentifier)
+        {
+        }
+        /**
+         * @return DeviceIdentifier
+         */
+        public function getDeviceIdentifier()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidProvisioningPartner\DeviceReference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeviceId()
-    {
-    }
-    /**
-     * The hardware IDs of the device.
-     *
-     * @param DeviceIdentifier $deviceIdentifier
-     */
-    public function setDeviceIdentifier(DeviceIdentifier $deviceIdentifier)
-    {
-    }
-    /**
-     * @return DeviceIdentifier
-     */
-    public function getDeviceIdentifier()
+    class Google_Service_AndroidProvisioningPartner_DeviceReference extends \Google\Service\AndroidProvisioningPartner\DeviceReference
     {
     }
 }

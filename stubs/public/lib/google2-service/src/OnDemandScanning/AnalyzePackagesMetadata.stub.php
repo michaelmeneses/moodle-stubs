@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OnDemandScanning;
-
-class AnalyzePackagesMetadata extends \Google\Model
-{
-    /**
-     * When the scan was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * The resource URI of the container image being scanned.
-     *
-     * @var string
-     */
-    public $resourceUri;
-    /**
-     * When the scan was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\OnDemandScanning {
+    class AnalyzePackagesMetadata extends \Google\Model
     {
+        /**
+         * When the scan was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * The resource URI of the container image being scanned.
+         *
+         * @var string
+         */
+        public $resourceUri;
+        /**
+         * When the scan was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * The resource URI of the container image being scanned.
+         *
+         * @param string $resourceUri
+         */
+        public function setResourceUri($resourceUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OnDemandScanning\AnalyzePackagesMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * The resource URI of the container image being scanned.
-     *
-     * @param string $resourceUri
-     */
-    public function setResourceUri($resourceUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceUri()
+    class Google_Service_OnDemandScanning_AnalyzePackagesMetadata extends \Google\Service\OnDemandScanning\AnalyzePackagesMetadata
     {
     }
 }

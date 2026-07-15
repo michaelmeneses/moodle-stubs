@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaPromptSpecAppBuilderData extends \Google\Collection
-{
-    protected $collection_key = 'linkedResources';
-    /**
-     * Serialized state of the code repository. This string will typically contain
-     * a JSON representation of the UI's CodeRepositoryService state (files,
-     * folders, content, and any metadata). The UI is responsible for
-     * serialization and deserialization.
-     *
-     * @var string
-     */
-    public $codeRepositoryState;
-    protected $linkedResourcesType = GoogleCloudAiplatformV1SchemaPromptSpecAppBuilderDataLinkedResource::class;
-    protected $linkedResourcesDataType = 'array';
-    /**
-     * Serialized state of the code repository. This string will typically contain
-     * a JSON representation of the UI's CodeRepositoryService state (files,
-     * folders, content, and any metadata). The UI is responsible for
-     * serialization and deserialization.
-     *
-     * @param string $codeRepositoryState
-     */
-    public function setCodeRepositoryState($codeRepositoryState)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaPromptSpecAppBuilderData extends \Google\Collection
     {
+        protected $collection_key = 'linkedResources';
+        /**
+         * Serialized state of the code repository. This string will typically contain
+         * a JSON representation of the UI's CodeRepositoryService state (files,
+         * folders, content, and any metadata). The UI is responsible for
+         * serialization and deserialization.
+         *
+         * @var string
+         */
+        public $codeRepositoryState;
+        protected $linkedResourcesType = GoogleCloudAiplatformV1SchemaPromptSpecAppBuilderDataLinkedResource::class;
+        protected $linkedResourcesDataType = 'array';
+        /**
+         * Serialized state of the code repository. This string will typically contain
+         * a JSON representation of the UI's CodeRepositoryService state (files,
+         * folders, content, and any metadata). The UI is responsible for
+         * serialization and deserialization.
+         *
+         * @param string $codeRepositoryState
+         */
+        public function setCodeRepositoryState($codeRepositoryState)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCodeRepositoryState()
+        {
+        }
+        /**
+         * Linked resources attached to the application by the user.
+         *
+         * @param GoogleCloudAiplatformV1SchemaPromptSpecAppBuilderDataLinkedResource[] $linkedResources
+         */
+        public function setLinkedResources($linkedResources)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SchemaPromptSpecAppBuilderDataLinkedResource[]
+         */
+        public function getLinkedResources()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaPromptSpecAppBuilderData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCodeRepositoryState()
-    {
-    }
-    /**
-     * Linked resources attached to the application by the user.
-     *
-     * @param GoogleCloudAiplatformV1SchemaPromptSpecAppBuilderDataLinkedResource[] $linkedResources
-     */
-    public function setLinkedResources($linkedResources)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1SchemaPromptSpecAppBuilderDataLinkedResource[]
-     */
-    public function getLinkedResources()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaPromptSpecAppBuilderData extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaPromptSpecAppBuilderData
     {
     }
 }

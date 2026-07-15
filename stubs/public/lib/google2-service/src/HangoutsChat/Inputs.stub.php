@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class Inputs extends \Google\Model
-{
-    protected $dateInputType = DateInput::class;
-    protected $dateInputDataType = '';
-    protected $dateTimeInputType = DateTimeInput::class;
-    protected $dateTimeInputDataType = '';
-    protected $stringInputsType = StringInputs::class;
-    protected $stringInputsDataType = '';
-    protected $timeInputType = TimeInput::class;
-    protected $timeInputDataType = '';
-    /**
-     * Date input values from a [`DateTimePicker`](https://developers.google.com/c
-     * hat/api/reference/rest/v1/cards#DateTimePicker) widget that only accepts
-     * date values.
-     *
-     * @param DateInput $dateInput
-     */
-    public function setDateInput(DateInput $dateInput)
+namespace Google\Service\HangoutsChat {
+    class Inputs extends \Google\Model
     {
+        protected $dateInputType = DateInput::class;
+        protected $dateInputDataType = '';
+        protected $dateTimeInputType = DateTimeInput::class;
+        protected $dateTimeInputDataType = '';
+        protected $stringInputsType = StringInputs::class;
+        protected $stringInputsDataType = '';
+        protected $timeInputType = TimeInput::class;
+        protected $timeInputDataType = '';
+        /**
+         * Date input values from a [`DateTimePicker`](https://developers.google.com/c
+         * hat/api/reference/rest/v1/cards#DateTimePicker) widget that only accepts
+         * date values.
+         *
+         * @param DateInput $dateInput
+         */
+        public function setDateInput(DateInput $dateInput)
+        {
+        }
+        /**
+         * @return DateInput
+         */
+        public function getDateInput()
+        {
+        }
+        /**
+         * Date and time input values from a [`DateTimePicker`](https://developers.goo
+         * gle.com/chat/api/reference/rest/v1/cards#DateTimePicker) widget that
+         * accepts both a date and time.
+         *
+         * @param DateTimeInput $dateTimeInput
+         */
+        public function setDateTimeInput(DateTimeInput $dateTimeInput)
+        {
+        }
+        /**
+         * @return DateTimeInput
+         */
+        public function getDateTimeInput()
+        {
+        }
+        /**
+         * A list of strings that represent the values that the user inputs in a
+         * widget. If the widget only accepts one value, such as a [`TextInput`](https
+         * ://developers.google.com/chat/api/reference/rest/v1/cards#TextInput)
+         * widget, the list contains one string object. If the widget accepts multiple
+         * values, such as a [`SelectionInput`](https://developers.google.com/chat/api
+         * /reference/rest/v1/cards#selectioninput) widget of checkboxes, the list
+         * contains a string object for each value that the user inputs or selects.
+         *
+         * @param StringInputs $stringInputs
+         */
+        public function setStringInputs(StringInputs $stringInputs)
+        {
+        }
+        /**
+         * @return StringInputs
+         */
+        public function getStringInputs()
+        {
+        }
+        /**
+         * Time input values from a [`DateTimePicker`](https://developers.google.com/c
+         * hat/api/reference/rest/v1/cards#DateTimePicker) widget that only accepts
+         * time values.
+         *
+         * @param TimeInput $timeInput
+         */
+        public function setTimeInput(TimeInput $timeInput)
+        {
+        }
+        /**
+         * @return TimeInput
+         */
+        public function getTimeInput()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DateInput
+     * Runtime class alias of \Google\Service\HangoutsChat\Inputs registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDateInput()
-    {
-    }
-    /**
-     * Date and time input values from a [`DateTimePicker`](https://developers.goo
-     * gle.com/chat/api/reference/rest/v1/cards#DateTimePicker) widget that
-     * accepts both a date and time.
-     *
-     * @param DateTimeInput $dateTimeInput
-     */
-    public function setDateTimeInput(DateTimeInput $dateTimeInput)
-    {
-    }
-    /**
-     * @return DateTimeInput
-     */
-    public function getDateTimeInput()
-    {
-    }
-    /**
-     * A list of strings that represent the values that the user inputs in a
-     * widget. If the widget only accepts one value, such as a [`TextInput`](https
-     * ://developers.google.com/chat/api/reference/rest/v1/cards#TextInput)
-     * widget, the list contains one string object. If the widget accepts multiple
-     * values, such as a [`SelectionInput`](https://developers.google.com/chat/api
-     * /reference/rest/v1/cards#selectioninput) widget of checkboxes, the list
-     * contains a string object for each value that the user inputs or selects.
-     *
-     * @param StringInputs $stringInputs
-     */
-    public function setStringInputs(StringInputs $stringInputs)
-    {
-    }
-    /**
-     * @return StringInputs
-     */
-    public function getStringInputs()
-    {
-    }
-    /**
-     * Time input values from a [`DateTimePicker`](https://developers.google.com/c
-     * hat/api/reference/rest/v1/cards#DateTimePicker) widget that only accepts
-     * time values.
-     *
-     * @param TimeInput $timeInput
-     */
-    public function setTimeInput(TimeInput $timeInput)
-    {
-    }
-    /**
-     * @return TimeInput
-     */
-    public function getTimeInput()
+    class Google_Service_HangoutsChat_Inputs extends \Google\Service\HangoutsChat\Inputs
     {
     }
 }

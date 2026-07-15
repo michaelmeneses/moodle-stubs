@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class OwnerReference extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $apiVersion;
-    /**
-     * @var bool
-     */
-    public $blockOwnerDeletion;
-    /**
-     * @var bool
-     */
-    public $controller;
-    /**
-     * @var string
-     */
-    public $kind;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $uid;
-    /**
-     * @param string
-     */
-    public function setApiVersion($apiVersion)
+namespace Google\Service\CloudRun {
+    class OwnerReference extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $apiVersion;
+        /**
+         * @var bool
+         */
+        public $blockOwnerDeletion;
+        /**
+         * @var bool
+         */
+        public $controller;
+        /**
+         * @var string
+         */
+        public $kind;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $uid;
+        /**
+         * @param string
+         */
+        public function setApiVersion($apiVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApiVersion()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setBlockOwnerDeletion($blockOwnerDeletion)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getBlockOwnerDeletion()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setController($controller)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getController()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUid($uid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUid()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRun\OwnerReference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiVersion()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setBlockOwnerDeletion($blockOwnerDeletion)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getBlockOwnerDeletion()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setController($controller)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getController()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUid($uid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUid()
+    class Google_Service_CloudRun_OwnerReference extends \Google\Service\CloudRun\OwnerReference
     {
     }
 }

@@ -21,44 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights\Resource;
-
-/**
- * The "authorizedView" collection of methods.
- * Typical usage is:
- *  <code>
- *   $contactcenterinsightsService = new Google\Service\Contactcenterinsights(...);
- *   $authorizedView = $contactcenterinsightsService->projects_locations_authorizedViewSet_authorizedView;
- *  </code>
- */
-class ProjectsLocationsAuthorizedViewSetAuthorizedView extends \Google\Service\Resource
-{
+namespace Google\Service\Contactcenterinsights\Resource {
+    use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1CalculateStatsResponse;
+    use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1QueryMetricsRequest;
+    use Google\Service\Contactcenterinsights\GoogleLongrunningOperation;
     /**
-     * Gets conversation statistics. (authorizedView.calculateStats)
-     *
-     * @param string $location Required. The location of the conversations.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter A filter to reduce results to a specific subset.
-     * This field is useful for getting statistics about conversations with specific
-     * properties.
-     * @return GoogleCloudContactcenterinsightsV1CalculateStatsResponse
-     * @throws \Google\Service\Exception
+     * The "authorizedView" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $contactcenterinsightsService = new Google\Service\Contactcenterinsights(...);
+     *   $authorizedView = $contactcenterinsightsService->projects_locations_authorizedViewSet_authorizedView;
+     *  </code>
      */
-    public function calculateStats($location, $optParams = [])
+    class ProjectsLocationsAuthorizedViewSetAuthorizedView extends \Google\Service\Resource
     {
+        /**
+         * Gets conversation statistics. (authorizedView.calculateStats)
+         *
+         * @param string $location Required. The location of the conversations.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter A filter to reduce results to a specific subset.
+         * This field is useful for getting statistics about conversations with specific
+         * properties.
+         * @return GoogleCloudContactcenterinsightsV1CalculateStatsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function calculateStats($location, $optParams = [])
+        {
+        }
+        /**
+         * Query metrics. (authorizedView.queryMetrics)
+         *
+         * @param string $location Required. The location of the data.
+         * "projects/{project}/locations/{location}"
+         * @param GoogleCloudContactcenterinsightsV1QueryMetricsRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function queryMetrics($location, GoogleCloudContactcenterinsightsV1QueryMetricsRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Query metrics. (authorizedView.queryMetrics)
-     *
-     * @param string $location Required. The location of the data.
-     * "projects/{project}/locations/{location}"
-     * @param GoogleCloudContactcenterinsightsV1QueryMetricsRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Contactcenterinsights\Resource\ProjectsLocationsAuthorizedViewSetAuthorizedView registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function queryMetrics($location, GoogleCloudContactcenterinsightsV1QueryMetricsRequest $postBody, $optParams = [])
+    class Google_Service_Contactcenterinsights_Resource_ProjectsLocationsAuthorizedViewSetAuthorizedView extends \Google\Service\Contactcenterinsights\Resource\ProjectsLocationsAuthorizedViewSetAuthorizedView
     {
     }
 }

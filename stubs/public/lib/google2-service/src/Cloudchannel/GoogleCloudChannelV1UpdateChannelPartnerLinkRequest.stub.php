@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1UpdateChannelPartnerLinkRequest extends \Google\Model
-{
-    protected $channelPartnerLinkType = GoogleCloudChannelV1ChannelPartnerLink::class;
-    protected $channelPartnerLinkDataType = '';
-    /**
-     * Required. The update mask that applies to the resource. The only allowable
-     * value for an update mask is channel_partner_link.link_state.
-     *
-     * @var string
-     */
-    public $updateMask;
-    /**
-     * Required. The channel partner link to update. Only
-     * channel_partner_link.link_state is allowed for updates.
-     *
-     * @param GoogleCloudChannelV1ChannelPartnerLink $channelPartnerLink
-     */
-    public function setChannelPartnerLink(GoogleCloudChannelV1ChannelPartnerLink $channelPartnerLink)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1UpdateChannelPartnerLinkRequest extends \Google\Model
     {
+        protected $channelPartnerLinkType = GoogleCloudChannelV1ChannelPartnerLink::class;
+        protected $channelPartnerLinkDataType = '';
+        /**
+         * Required. The update mask that applies to the resource. The only allowable
+         * value for an update mask is channel_partner_link.link_state.
+         *
+         * @var string
+         */
+        public $updateMask;
+        /**
+         * Required. The channel partner link to update. Only
+         * channel_partner_link.link_state is allowed for updates.
+         *
+         * @param GoogleCloudChannelV1ChannelPartnerLink $channelPartnerLink
+         */
+        public function setChannelPartnerLink(GoogleCloudChannelV1ChannelPartnerLink $channelPartnerLink)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1ChannelPartnerLink
+         */
+        public function getChannelPartnerLink()
+        {
+        }
+        /**
+         * Required. The update mask that applies to the resource. The only allowable
+         * value for an update mask is channel_partner_link.link_state.
+         *
+         * @param string $updateMask
+         */
+        public function setUpdateMask($updateMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateMask()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudChannelV1ChannelPartnerLink
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1UpdateChannelPartnerLinkRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChannelPartnerLink()
-    {
-    }
-    /**
-     * Required. The update mask that applies to the resource. The only allowable
-     * value for an update mask is channel_partner_link.link_state.
-     *
-     * @param string $updateMask
-     */
-    public function setUpdateMask($updateMask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateMask()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1UpdateChannelPartnerLinkRequest extends \Google\Service\Cloudchannel\GoogleCloudChannelV1UpdateChannelPartnerLinkRequest
     {
     }
 }

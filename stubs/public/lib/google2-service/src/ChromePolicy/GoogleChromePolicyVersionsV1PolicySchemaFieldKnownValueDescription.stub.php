@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromePolicy;
-
-class GoogleChromePolicyVersionsV1PolicySchemaFieldKnownValueDescription extends \Google\Collection
-{
-    protected $collection_key = 'fieldDependencies';
-    /**
-     * Output only. Additional description for this value.
-     *
-     * @var string
-     */
-    public $description;
-    protected $fieldDependenciesType = GoogleChromePolicyVersionsV1PolicySchemaFieldDependencies::class;
-    protected $fieldDependenciesDataType = 'array';
-    /**
-     * Output only. The string represenstation of the value that can be set for
-     * the field.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Output only. Additional description for this value.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\ChromePolicy {
+    class GoogleChromePolicyVersionsV1PolicySchemaFieldKnownValueDescription extends \Google\Collection
     {
+        protected $collection_key = 'fieldDependencies';
+        /**
+         * Output only. Additional description for this value.
+         *
+         * @var string
+         */
+        public $description;
+        protected $fieldDependenciesType = GoogleChromePolicyVersionsV1PolicySchemaFieldDependencies::class;
+        protected $fieldDependenciesDataType = 'array';
+        /**
+         * Output only. The string represenstation of the value that can be set for
+         * the field.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Output only. Additional description for this value.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Output only. Field conditions required for this value to be valid.
+         *
+         * @param GoogleChromePolicyVersionsV1PolicySchemaFieldDependencies[] $fieldDependencies
+         */
+        public function setFieldDependencies($fieldDependencies)
+        {
+        }
+        /**
+         * @return GoogleChromePolicyVersionsV1PolicySchemaFieldDependencies[]
+         */
+        public function getFieldDependencies()
+        {
+        }
+        /**
+         * Output only. The string represenstation of the value that can be set for
+         * the field.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1PolicySchemaFieldKnownValueDescription registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * Output only. Field conditions required for this value to be valid.
-     *
-     * @param GoogleChromePolicyVersionsV1PolicySchemaFieldDependencies[] $fieldDependencies
-     */
-    public function setFieldDependencies($fieldDependencies)
-    {
-    }
-    /**
-     * @return GoogleChromePolicyVersionsV1PolicySchemaFieldDependencies[]
-     */
-    public function getFieldDependencies()
-    {
-    }
-    /**
-     * Output only. The string represenstation of the value that can be set for
-     * the field.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_ChromePolicy_GoogleChromePolicyVersionsV1PolicySchemaFieldKnownValueDescription extends \Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1PolicySchemaFieldKnownValueDescription
     {
     }
 }

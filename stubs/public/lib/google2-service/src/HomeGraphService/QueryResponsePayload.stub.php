@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HomeGraphService;
-
-class QueryResponsePayload extends \Google\Model
-{
-    /**
-     * States of the devices. Map of third-party device ID to struct of device
-     * states.
-     *
-     * @var array[]
-     */
-    public $devices;
-    /**
-     * States of the devices. Map of third-party device ID to struct of device
-     * states.
-     *
-     * @param array[] $devices
-     */
-    public function setDevices($devices)
+namespace Google\Service\HomeGraphService {
+    class QueryResponsePayload extends \Google\Model
     {
+        /**
+         * States of the devices. Map of third-party device ID to struct of device
+         * states.
+         *
+         * @var array[]
+         */
+        public $devices;
+        /**
+         * States of the devices. Map of third-party device ID to struct of device
+         * states.
+         *
+         * @param array[] $devices
+         */
+        public function setDevices($devices)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getDevices()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\HomeGraphService\QueryResponsePayload registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDevices()
+    class Google_Service_HomeGraphService_QueryResponsePayload extends \Google\Service\HomeGraphService\QueryResponsePayload
     {
     }
 }

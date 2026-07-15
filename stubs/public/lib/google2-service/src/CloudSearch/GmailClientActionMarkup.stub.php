@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class GmailClientActionMarkup extends \Google\Model
-{
-    protected $addonComposeUiActionMarkupType = AddonComposeUiActionMarkup::class;
-    protected $addonComposeUiActionMarkupDataType = '';
-    protected $openCreatedDraftActionMarkupType = OpenCreatedDraftActionMarkup::class;
-    protected $openCreatedDraftActionMarkupDataType = '';
-    protected $taskActionType = TaskActionMarkup::class;
-    protected $taskActionDataType = '';
-    protected $updateDraftActionMarkupType = UpdateDraftActionMarkup::class;
-    protected $updateDraftActionMarkupDataType = '';
-    /**
-     * @param AddonComposeUiActionMarkup
-     */
-    public function setAddonComposeUiActionMarkup(AddonComposeUiActionMarkup $addonComposeUiActionMarkup)
+namespace Google\Service\CloudSearch {
+    class GmailClientActionMarkup extends \Google\Model
     {
+        protected $addonComposeUiActionMarkupType = AddonComposeUiActionMarkup::class;
+        protected $addonComposeUiActionMarkupDataType = '';
+        protected $openCreatedDraftActionMarkupType = OpenCreatedDraftActionMarkup::class;
+        protected $openCreatedDraftActionMarkupDataType = '';
+        protected $taskActionType = TaskActionMarkup::class;
+        protected $taskActionDataType = '';
+        protected $updateDraftActionMarkupType = UpdateDraftActionMarkup::class;
+        protected $updateDraftActionMarkupDataType = '';
+        /**
+         * @param AddonComposeUiActionMarkup
+         */
+        public function setAddonComposeUiActionMarkup(AddonComposeUiActionMarkup $addonComposeUiActionMarkup)
+        {
+        }
+        /**
+         * @return AddonComposeUiActionMarkup
+         */
+        public function getAddonComposeUiActionMarkup()
+        {
+        }
+        /**
+         * @param OpenCreatedDraftActionMarkup
+         */
+        public function setOpenCreatedDraftActionMarkup(OpenCreatedDraftActionMarkup $openCreatedDraftActionMarkup)
+        {
+        }
+        /**
+         * @return OpenCreatedDraftActionMarkup
+         */
+        public function getOpenCreatedDraftActionMarkup()
+        {
+        }
+        /**
+         * @param TaskActionMarkup
+         */
+        public function setTaskAction(TaskActionMarkup $taskAction)
+        {
+        }
+        /**
+         * @return TaskActionMarkup
+         */
+        public function getTaskAction()
+        {
+        }
+        /**
+         * @param UpdateDraftActionMarkup
+         */
+        public function setUpdateDraftActionMarkup(UpdateDraftActionMarkup $updateDraftActionMarkup)
+        {
+        }
+        /**
+         * @return UpdateDraftActionMarkup
+         */
+        public function getUpdateDraftActionMarkup()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AddonComposeUiActionMarkup
+     * Runtime class alias of \Google\Service\CloudSearch\GmailClientActionMarkup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddonComposeUiActionMarkup()
-    {
-    }
-    /**
-     * @param OpenCreatedDraftActionMarkup
-     */
-    public function setOpenCreatedDraftActionMarkup(OpenCreatedDraftActionMarkup $openCreatedDraftActionMarkup)
-    {
-    }
-    /**
-     * @return OpenCreatedDraftActionMarkup
-     */
-    public function getOpenCreatedDraftActionMarkup()
-    {
-    }
-    /**
-     * @param TaskActionMarkup
-     */
-    public function setTaskAction(TaskActionMarkup $taskAction)
-    {
-    }
-    /**
-     * @return TaskActionMarkup
-     */
-    public function getTaskAction()
-    {
-    }
-    /**
-     * @param UpdateDraftActionMarkup
-     */
-    public function setUpdateDraftActionMarkup(UpdateDraftActionMarkup $updateDraftActionMarkup)
-    {
-    }
-    /**
-     * @return UpdateDraftActionMarkup
-     */
-    public function getUpdateDraftActionMarkup()
+    class Google_Service_CloudSearch_GmailClientActionMarkup extends \Google\Service\CloudSearch\GmailClientActionMarkup
     {
     }
 }

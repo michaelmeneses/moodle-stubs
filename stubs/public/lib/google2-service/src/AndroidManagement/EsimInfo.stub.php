@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class EsimInfo extends \Google\Model
-{
-    /**
-     * Output only. ICC ID of the eSIM.
-     *
-     * @var string
-     */
-    public $iccId;
-    /**
-     * Output only. ICC ID of the eSIM.
-     *
-     * @param string $iccId
-     */
-    public function setIccId($iccId)
+namespace Google\Service\AndroidManagement {
+    class EsimInfo extends \Google\Model
     {
+        /**
+         * Output only. ICC ID of the eSIM.
+         *
+         * @var string
+         */
+        public $iccId;
+        /**
+         * Output only. ICC ID of the eSIM.
+         *
+         * @param string $iccId
+         */
+        public function setIccId($iccId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIccId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidManagement\EsimInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIccId()
+    class Google_Service_AndroidManagement_EsimInfo extends \Google\Service\AndroidManagement\EsimInfo
     {
     }
 }

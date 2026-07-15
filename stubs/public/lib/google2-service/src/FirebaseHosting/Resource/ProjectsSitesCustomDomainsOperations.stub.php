@@ -21,41 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseHosting\Resource;
-
-/**
- * The "operations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $firebasehostingService = new Google\Service\FirebaseHosting(...);
- *   $operations = $firebasehostingService->projects_sites_customDomains_operations;
- *  </code>
- */
-class ProjectsSitesCustomDomainsOperations extends \Google\Service\Resource
-{
+namespace Google\Service\FirebaseHosting\Resource {
+    use Google\Service\FirebaseHosting\CancelOperationRequest;
+    use Google\Service\FirebaseHosting\FirebasehostingEmpty;
     /**
-     * CancelOperation is a part of the google.longrunning.Operations interface, but
-     * is not implemented for CustomDomain resources. (operations.cancel)
-     *
-     * @param string $name The name of the operation resource to be cancelled.
-     * @param CancelOperationRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return FirebasehostingEmpty
-     * @throws \Google\Service\Exception
+     * The "operations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $firebasehostingService = new Google\Service\FirebaseHosting(...);
+     *   $operations = $firebasehostingService->projects_sites_customDomains_operations;
+     *  </code>
      */
-    public function cancel($name, CancelOperationRequest $postBody, $optParams = [])
+    class ProjectsSitesCustomDomainsOperations extends \Google\Service\Resource
     {
+        /**
+         * CancelOperation is a part of the google.longrunning.Operations interface, but
+         * is not implemented for CustomDomain resources. (operations.cancel)
+         *
+         * @param string $name The name of the operation resource to be cancelled.
+         * @param CancelOperationRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return FirebasehostingEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function cancel($name, CancelOperationRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * DeleteOperation is a part of the google.longrunning.Operations interface, but
+         * is not implemented for CustomDomain resources. (operations.delete)
+         *
+         * @param string $name The name of the operation resource to be deleted.
+         * @param array $optParams Optional parameters.
+         * @return FirebasehostingEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * DeleteOperation is a part of the google.longrunning.Operations interface, but
-     * is not implemented for CustomDomain resources. (operations.delete)
-     *
-     * @param string $name The name of the operation resource to be deleted.
-     * @param array $optParams Optional parameters.
-     * @return FirebasehostingEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\FirebaseHosting\Resource\ProjectsSitesCustomDomainsOperations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
+    class Google_Service_FirebaseHosting_Resource_ProjectsSitesCustomDomainsOperations extends \Google\Service\FirebaseHosting\Resource\ProjectsSitesCustomDomainsOperations
     {
     }
 }

@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1WriteTensorboardExperimentDataRequest extends \Google\Collection
-{
-    protected $collection_key = 'writeRunDataRequests';
-    protected $writeRunDataRequestsType = GoogleCloudAiplatformV1WriteTensorboardRunDataRequest::class;
-    protected $writeRunDataRequestsDataType = 'array';
-    /**
-     * Required. Requests containing per-run TensorboardTimeSeries data to write.
-     *
-     * @param GoogleCloudAiplatformV1WriteTensorboardRunDataRequest[] $writeRunDataRequests
-     */
-    public function setWriteRunDataRequests($writeRunDataRequests)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1WriteTensorboardExperimentDataRequest extends \Google\Collection
     {
+        protected $collection_key = 'writeRunDataRequests';
+        protected $writeRunDataRequestsType = GoogleCloudAiplatformV1WriteTensorboardRunDataRequest::class;
+        protected $writeRunDataRequestsDataType = 'array';
+        /**
+         * Required. Requests containing per-run TensorboardTimeSeries data to write.
+         *
+         * @param GoogleCloudAiplatformV1WriteTensorboardRunDataRequest[] $writeRunDataRequests
+         */
+        public function setWriteRunDataRequests($writeRunDataRequests)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1WriteTensorboardRunDataRequest[]
+         */
+        public function getWriteRunDataRequests()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1WriteTensorboardRunDataRequest[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1WriteTensorboardExperimentDataRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getWriteRunDataRequests()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1WriteTensorboardExperimentDataRequest extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1WriteTensorboardExperimentDataRequest
     {
     }
 }

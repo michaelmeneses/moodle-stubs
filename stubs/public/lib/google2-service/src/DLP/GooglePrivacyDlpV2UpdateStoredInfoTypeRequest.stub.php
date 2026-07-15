@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2UpdateStoredInfoTypeRequest extends \Google\Model
-{
-    protected $configType = GooglePrivacyDlpV2StoredInfoTypeConfig::class;
-    protected $configDataType = '';
-    /**
-     * Mask to control which fields get updated.
-     *
-     * @var string
-     */
-    public $updateMask;
-    /**
-     * Updated configuration for the storedInfoType. If not provided, a new
-     * version of the storedInfoType will be created with the existing
-     * configuration.
-     *
-     * @param GooglePrivacyDlpV2StoredInfoTypeConfig $config
-     */
-    public function setConfig(GooglePrivacyDlpV2StoredInfoTypeConfig $config)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2UpdateStoredInfoTypeRequest extends \Google\Model
     {
+        protected $configType = GooglePrivacyDlpV2StoredInfoTypeConfig::class;
+        protected $configDataType = '';
+        /**
+         * Mask to control which fields get updated.
+         *
+         * @var string
+         */
+        public $updateMask;
+        /**
+         * Updated configuration for the storedInfoType. If not provided, a new
+         * version of the storedInfoType will be created with the existing
+         * configuration.
+         *
+         * @param GooglePrivacyDlpV2StoredInfoTypeConfig $config
+         */
+        public function setConfig(GooglePrivacyDlpV2StoredInfoTypeConfig $config)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2StoredInfoTypeConfig
+         */
+        public function getConfig()
+        {
+        }
+        /**
+         * Mask to control which fields get updated.
+         *
+         * @param string $updateMask
+         */
+        public function setUpdateMask($updateMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateMask()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2StoredInfoTypeConfig
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2UpdateStoredInfoTypeRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfig()
-    {
-    }
-    /**
-     * Mask to control which fields get updated.
-     *
-     * @param string $updateMask
-     */
-    public function setUpdateMask($updateMask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateMask()
+    class Google_Service_DLP_GooglePrivacyDlpV2UpdateStoredInfoTypeRequest extends \Google\Service\DLP\GooglePrivacyDlpV2UpdateStoredInfoTypeRequest
     {
     }
 }

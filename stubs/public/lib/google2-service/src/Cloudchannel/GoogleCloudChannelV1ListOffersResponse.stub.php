@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1ListOffersResponse extends \Google\Collection
-{
-    protected $collection_key = 'offers';
-    /**
-     * A token to retrieve the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $offersType = GoogleCloudChannelV1Offer::class;
-    protected $offersDataType = 'array';
-    /**
-     * A token to retrieve the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1ListOffersResponse extends \Google\Collection
     {
+        protected $collection_key = 'offers';
+        /**
+         * A token to retrieve the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $offersType = GoogleCloudChannelV1Offer::class;
+        protected $offersDataType = 'array';
+        /**
+         * A token to retrieve the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of Offers requested. The pricing information for each Offer only
+         * includes the base price. Effective prices and discounts aren't populated.
+         *
+         * @param GoogleCloudChannelV1Offer[] $offers
+         */
+        public function setOffers($offers)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1Offer[]
+         */
+        public function getOffers()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1ListOffersResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of Offers requested. The pricing information for each Offer only
-     * includes the base price. Effective prices and discounts aren't populated.
-     *
-     * @param GoogleCloudChannelV1Offer[] $offers
-     */
-    public function setOffers($offers)
-    {
-    }
-    /**
-     * @return GoogleCloudChannelV1Offer[]
-     */
-    public function getOffers()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1ListOffersResponse extends \Google\Service\Cloudchannel\GoogleCloudChannelV1ListOffersResponse
     {
     }
 }

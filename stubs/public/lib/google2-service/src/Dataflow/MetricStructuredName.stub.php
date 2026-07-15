@@ -21,78 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class MetricStructuredName extends \Google\Model
-{
-    /**
-     * Zero or more labeled fields which identify the part of the job this metric
-     * is associated with, such as the name of a step or collection. For example,
-     * built-in counters associated with steps will have context['step'] = .
-     * Counters associated with PCollections in the SDK will have
-     * context['pcollection'] = .
-     *
-     * @var string[]
-     */
-    public $context;
-    /**
-     * Worker-defined metric name.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Origin (namespace) of metric name. May be blank for user-define metrics;
-     * will be "dataflow" for metrics defined by the Dataflow service or SDK.
-     *
-     * @var string
-     */
-    public $origin;
-    /**
-     * Zero or more labeled fields which identify the part of the job this metric
-     * is associated with, such as the name of a step or collection. For example,
-     * built-in counters associated with steps will have context['step'] = .
-     * Counters associated with PCollections in the SDK will have
-     * context['pcollection'] = .
-     *
-     * @param string[] $context
-     */
-    public function setContext($context)
+namespace Google\Service\Dataflow {
+    class MetricStructuredName extends \Google\Model
     {
+        /**
+         * Zero or more labeled fields which identify the part of the job this metric
+         * is associated with, such as the name of a step or collection. For example,
+         * built-in counters associated with steps will have context['step'] = .
+         * Counters associated with PCollections in the SDK will have
+         * context['pcollection'] = .
+         *
+         * @var string[]
+         */
+        public $context;
+        /**
+         * Worker-defined metric name.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Origin (namespace) of metric name. May be blank for user-define metrics;
+         * will be "dataflow" for metrics defined by the Dataflow service or SDK.
+         *
+         * @var string
+         */
+        public $origin;
+        /**
+         * Zero or more labeled fields which identify the part of the job this metric
+         * is associated with, such as the name of a step or collection. For example,
+         * built-in counters associated with steps will have context['step'] = .
+         * Counters associated with PCollections in the SDK will have
+         * context['pcollection'] = .
+         *
+         * @param string[] $context
+         */
+        public function setContext($context)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getContext()
+        {
+        }
+        /**
+         * Worker-defined metric name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Origin (namespace) of metric name. May be blank for user-define metrics;
+         * will be "dataflow" for metrics defined by the Dataflow service or SDK.
+         *
+         * @param string $origin
+         */
+        public function setOrigin($origin)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOrigin()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Dataflow\MetricStructuredName registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContext()
-    {
-    }
-    /**
-     * Worker-defined metric name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Origin (namespace) of metric name. May be blank for user-define metrics;
-     * will be "dataflow" for metrics defined by the Dataflow service or SDK.
-     *
-     * @param string $origin
-     */
-    public function setOrigin($origin)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOrigin()
+    class Google_Service_Dataflow_MetricStructuredName extends \Google\Service\Dataflow\MetricStructuredName
     {
     }
 }

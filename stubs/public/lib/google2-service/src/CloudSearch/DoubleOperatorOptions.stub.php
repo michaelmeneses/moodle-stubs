@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class DoubleOperatorOptions extends \Google\Model
-{
-    /**
-     * Indicates the operator name required in the query in order to use the
-     * double property in sorting or as a facet. The operator name can only
-     * contain lowercase letters (a-z). The maximum length is 32 characters.
-     *
-     * @var string
-     */
-    public $operatorName;
-    /**
-     * Indicates the operator name required in the query in order to use the
-     * double property in sorting or as a facet. The operator name can only
-     * contain lowercase letters (a-z). The maximum length is 32 characters.
-     *
-     * @param string $operatorName
-     */
-    public function setOperatorName($operatorName)
+namespace Google\Service\CloudSearch {
+    class DoubleOperatorOptions extends \Google\Model
     {
+        /**
+         * Indicates the operator name required in the query in order to use the
+         * double property in sorting or as a facet. The operator name can only
+         * contain lowercase letters (a-z). The maximum length is 32 characters.
+         *
+         * @var string
+         */
+        public $operatorName;
+        /**
+         * Indicates the operator name required in the query in order to use the
+         * double property in sorting or as a facet. The operator name can only
+         * contain lowercase letters (a-z). The maximum length is 32 characters.
+         *
+         * @param string $operatorName
+         */
+        public function setOperatorName($operatorName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOperatorName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\DoubleOperatorOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOperatorName()
+    class Google_Service_CloudSearch_DoubleOperatorOptions extends \Google\Service\CloudSearch\DoubleOperatorOptions
     {
     }
 }

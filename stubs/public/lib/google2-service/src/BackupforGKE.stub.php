@@ -21,47 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for BackupforGKE (v1).
- *
- * <p>
- * Backup for GKE is a managed Kubernetes workload backup and restore service
- * for GKE clusters.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://cloud.google.com/kubernetes-engine/docs/add-on/backup-for-gke" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class BackupforGKE extends \Google\Service
-{
-    /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
-    const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
-    public $projects_locations;
-    public $projects_locations_backupChannels;
-    public $projects_locations_backupChannels_backupPlanBindings;
-    public $projects_locations_backupPlans;
-    public $projects_locations_backupPlans_backups;
-    public $projects_locations_backupPlans_backups_volumeBackups;
-    public $projects_locations_operations;
-    public $projects_locations_restoreChannels;
-    public $projects_locations_restoreChannels_restorePlanBindings;
-    public $projects_locations_restorePlans;
-    public $projects_locations_restorePlans_restores;
-    public $projects_locations_restorePlans_restores_volumeRestores;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the BackupforGKE service.
+     * Service definition for BackupforGKE (v1).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * Backup for GKE is a managed Kubernetes workload backup and restore service
+     * for GKE clusters.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://cloud.google.com/kubernetes-engine/docs/add-on/backup-for-gke" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class BackupforGKE extends \Google\Service
+    {
+        /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
+        const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
+        public $projects_locations;
+        public $projects_locations_backupChannels;
+        public $projects_locations_backupChannels_backupPlanBindings;
+        public $projects_locations_backupPlans;
+        public $projects_locations_backupPlans_backups;
+        public $projects_locations_backupPlans_backups_volumeBackups;
+        public $projects_locations_operations;
+        public $projects_locations_restoreChannels;
+        public $projects_locations_restoreChannels_restorePlanBindings;
+        public $projects_locations_restorePlans;
+        public $projects_locations_restorePlans_restores;
+        public $projects_locations_restorePlans_restores_volumeRestores;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the BackupforGKE service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\BackupforGKE registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_BackupforGKE extends \Google\Service\BackupforGKE
     {
     }
 }

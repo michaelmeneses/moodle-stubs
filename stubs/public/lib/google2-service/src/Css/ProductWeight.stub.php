@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Css;
-
-class ProductWeight extends \Google\Model
-{
-    /**
-     * Required. The weight unit. Acceptable values are: * "`g`" * "`kg`" * "`oz`"
-     * * "`lb`"
-     *
-     * @var string
-     */
-    public $unit;
-    /**
-     * Required. The weight represented as a number. The weight can have a maximum
-     * precision of four decimal places.
-     *
-     * @var 
-     */
-    public $value;
-    /**
-     * Required. The weight unit. Acceptable values are: * "`g`" * "`kg`" * "`oz`"
-     * * "`lb`"
-     *
-     * @param string $unit
-     */
-    public function setUnit($unit)
+namespace Google\Service\Css {
+    class ProductWeight extends \Google\Model
     {
+        /**
+         * Required. The weight unit. Acceptable values are: * "`g`" * "`kg`" * "`oz`"
+         * * "`lb`"
+         *
+         * @var string
+         */
+        public $unit;
+        /**
+         * Required. The weight represented as a number. The weight can have a maximum
+         * precision of four decimal places.
+         *
+         * @var 
+         */
+        public $value;
+        /**
+         * Required. The weight unit. Acceptable values are: * "`g`" * "`kg`" * "`oz`"
+         * * "`lb`"
+         *
+         * @param string $unit
+         */
+        public function setUnit($unit)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUnit()
+        {
+        }
+        public function setValue($value)
+        {
+        }
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Css\ProductWeight registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUnit()
-    {
-    }
-    public function setValue($value)
-    {
-    }
-    public function getValue()
+    class Google_Service_Css_ProductWeight extends \Google\Service\Css\ProductWeight
     {
     }
 }

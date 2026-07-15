@@ -21,118 +21,127 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class DayAndTime extends \Google\Model
-{
-    /**
-     * The day of the week is unspecified.
-     */
-    public const DAY_OF_WEEK_DAY_OF_WEEK_UNSPECIFIED = 'DAY_OF_WEEK_UNSPECIFIED';
-    /**
-     * Monday
-     */
-    public const DAY_OF_WEEK_MONDAY = 'MONDAY';
-    /**
-     * Tuesday
-     */
-    public const DAY_OF_WEEK_TUESDAY = 'TUESDAY';
-    /**
-     * Wednesday
-     */
-    public const DAY_OF_WEEK_WEDNESDAY = 'WEDNESDAY';
-    /**
-     * Thursday
-     */
-    public const DAY_OF_WEEK_THURSDAY = 'THURSDAY';
-    /**
-     * Friday
-     */
-    public const DAY_OF_WEEK_FRIDAY = 'FRIDAY';
-    /**
-     * Saturday
-     */
-    public const DAY_OF_WEEK_SATURDAY = 'SATURDAY';
-    /**
-     * Sunday
-     */
-    public const DAY_OF_WEEK_SUNDAY = 'SUNDAY';
-    /**
-     * Time zone resolution is either unspecific or unknown.
-     */
-    public const TIME_ZONE_RESOLUTION_TIME_ZONE_RESOLUTION_UNSPECIFIED = 'TIME_ZONE_RESOLUTION_UNSPECIFIED';
-    /**
-     * Times are resolved in the time zone of the user that saw the ad.
-     */
-    public const TIME_ZONE_RESOLUTION_TIME_ZONE_RESOLUTION_END_USER = 'TIME_ZONE_RESOLUTION_END_USER';
-    /**
-     * Times are resolved in the time zone of the advertiser that served the ad.
-     */
-    public const TIME_ZONE_RESOLUTION_TIME_ZONE_RESOLUTION_ADVERTISER = 'TIME_ZONE_RESOLUTION_ADVERTISER';
-    /**
-     * Required. Day of the week.
-     *
-     * @var string
-     */
-    public $dayOfWeek;
-    /**
-     * Required. Hour of the day.
-     *
-     * @var int
-     */
-    public $hourOfDay;
-    /**
-     * Required. The mechanism used to determine the relevant timezone.
-     *
-     * @var string
-     */
-    public $timeZoneResolution;
-    /**
-     * Required. Day of the week.
-     *
-     * Accepted values: DAY_OF_WEEK_UNSPECIFIED, MONDAY, TUESDAY, WEDNESDAY,
-     * THURSDAY, FRIDAY, SATURDAY, SUNDAY
-     *
-     * @param self::DAY_OF_WEEK_* $dayOfWeek
-     */
-    public function setDayOfWeek($dayOfWeek)
+namespace Google\Service\DisplayVideo {
+    class DayAndTime extends \Google\Model
     {
+        /**
+         * The day of the week is unspecified.
+         */
+        public const DAY_OF_WEEK_DAY_OF_WEEK_UNSPECIFIED = 'DAY_OF_WEEK_UNSPECIFIED';
+        /**
+         * Monday
+         */
+        public const DAY_OF_WEEK_MONDAY = 'MONDAY';
+        /**
+         * Tuesday
+         */
+        public const DAY_OF_WEEK_TUESDAY = 'TUESDAY';
+        /**
+         * Wednesday
+         */
+        public const DAY_OF_WEEK_WEDNESDAY = 'WEDNESDAY';
+        /**
+         * Thursday
+         */
+        public const DAY_OF_WEEK_THURSDAY = 'THURSDAY';
+        /**
+         * Friday
+         */
+        public const DAY_OF_WEEK_FRIDAY = 'FRIDAY';
+        /**
+         * Saturday
+         */
+        public const DAY_OF_WEEK_SATURDAY = 'SATURDAY';
+        /**
+         * Sunday
+         */
+        public const DAY_OF_WEEK_SUNDAY = 'SUNDAY';
+        /**
+         * Time zone resolution is either unspecific or unknown.
+         */
+        public const TIME_ZONE_RESOLUTION_TIME_ZONE_RESOLUTION_UNSPECIFIED = 'TIME_ZONE_RESOLUTION_UNSPECIFIED';
+        /**
+         * Times are resolved in the time zone of the user that saw the ad.
+         */
+        public const TIME_ZONE_RESOLUTION_TIME_ZONE_RESOLUTION_END_USER = 'TIME_ZONE_RESOLUTION_END_USER';
+        /**
+         * Times are resolved in the time zone of the advertiser that served the ad.
+         */
+        public const TIME_ZONE_RESOLUTION_TIME_ZONE_RESOLUTION_ADVERTISER = 'TIME_ZONE_RESOLUTION_ADVERTISER';
+        /**
+         * Required. Day of the week.
+         *
+         * @var string
+         */
+        public $dayOfWeek;
+        /**
+         * Required. Hour of the day.
+         *
+         * @var int
+         */
+        public $hourOfDay;
+        /**
+         * Required. The mechanism used to determine the relevant timezone.
+         *
+         * @var string
+         */
+        public $timeZoneResolution;
+        /**
+         * Required. Day of the week.
+         *
+         * Accepted values: DAY_OF_WEEK_UNSPECIFIED, MONDAY, TUESDAY, WEDNESDAY,
+         * THURSDAY, FRIDAY, SATURDAY, SUNDAY
+         *
+         * @param self::DAY_OF_WEEK_* $dayOfWeek
+         */
+        public function setDayOfWeek($dayOfWeek)
+        {
+        }
+        /**
+         * @return self::DAY_OF_WEEK_*
+         */
+        public function getDayOfWeek()
+        {
+        }
+        /**
+         * Required. Hour of the day.
+         *
+         * @param int $hourOfDay
+         */
+        public function setHourOfDay($hourOfDay)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getHourOfDay()
+        {
+        }
+        /**
+         * Required. The mechanism used to determine the relevant timezone.
+         *
+         * Accepted values: TIME_ZONE_RESOLUTION_UNSPECIFIED,
+         * TIME_ZONE_RESOLUTION_END_USER, TIME_ZONE_RESOLUTION_ADVERTISER
+         *
+         * @param self::TIME_ZONE_RESOLUTION_* $timeZoneResolution
+         */
+        public function setTimeZoneResolution($timeZoneResolution)
+        {
+        }
+        /**
+         * @return self::TIME_ZONE_RESOLUTION_*
+         */
+        public function getTimeZoneResolution()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::DAY_OF_WEEK_*
+     * Runtime class alias of \Google\Service\DisplayVideo\DayAndTime registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDayOfWeek()
-    {
-    }
-    /**
-     * Required. Hour of the day.
-     *
-     * @param int $hourOfDay
-     */
-    public function setHourOfDay($hourOfDay)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getHourOfDay()
-    {
-    }
-    /**
-     * Required. The mechanism used to determine the relevant timezone.
-     *
-     * Accepted values: TIME_ZONE_RESOLUTION_UNSPECIFIED,
-     * TIME_ZONE_RESOLUTION_END_USER, TIME_ZONE_RESOLUTION_ADVERTISER
-     *
-     * @param self::TIME_ZONE_RESOLUTION_* $timeZoneResolution
-     */
-    public function setTimeZoneResolution($timeZoneResolution)
-    {
-    }
-    /**
-     * @return self::TIME_ZONE_RESOLUTION_*
-     */
-    public function getTimeZoneResolution()
+    class Google_Service_DisplayVideo_DayAndTime extends \Google\Service\DisplayVideo\DayAndTime
     {
     }
 }

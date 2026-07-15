@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeUXReport;
-
-class TimeseriesBin extends \Google\Collection
-{
-    protected $collection_key = 'densities';
-    /**
-     * The proportion of users that experienced this bin's value for the given
-     * metric in a given collection period; the index for each of these entries
-     * corresponds to an entry in the CollectionPeriods field in the HistoryRecord
-     * message, which describes when the density was observed in the field. Thus,
-     * the length of this list of densities is equal to the length of the
-     * CollectionPeriods field in the HistoryRecord message.
-     *
-     * @var []
-     */
-    public $densities;
-    /**
-     * End is the end of the data bin. If end is not populated, then the bin has
-     * no end and is valid from start to +inf.
-     *
-     * @var array
-     */
-    public $end;
-    /**
-     * Start is the beginning of the data bin.
-     *
-     * @var array
-     */
-    public $start;
-    public function setDensities($densities)
+namespace Google\Service\ChromeUXReport {
+    class TimeseriesBin extends \Google\Collection
     {
+        protected $collection_key = 'densities';
+        /**
+         * The proportion of users that experienced this bin's value for the given
+         * metric in a given collection period; the index for each of these entries
+         * corresponds to an entry in the CollectionPeriods field in the HistoryRecord
+         * message, which describes when the density was observed in the field. Thus,
+         * the length of this list of densities is equal to the length of the
+         * CollectionPeriods field in the HistoryRecord message.
+         *
+         * @var []
+         */
+        public $densities;
+        /**
+         * End is the end of the data bin. If end is not populated, then the bin has
+         * no end and is valid from start to +inf.
+         *
+         * @var array
+         */
+        public $end;
+        /**
+         * Start is the beginning of the data bin.
+         *
+         * @var array
+         */
+        public $start;
+        public function setDensities($densities)
+        {
+        }
+        public function getDensities()
+        {
+        }
+        /**
+         * End is the end of the data bin. If end is not populated, then the bin has
+         * no end and is valid from start to +inf.
+         *
+         * @param array $end
+         */
+        public function setEnd($end)
+        {
+        }
+        /**
+         * @return array
+         */
+        public function getEnd()
+        {
+        }
+        /**
+         * Start is the beginning of the data bin.
+         *
+         * @param array $start
+         */
+        public function setStart($start)
+        {
+        }
+        /**
+         * @return array
+         */
+        public function getStart()
+        {
+        }
     }
-    public function getDensities()
-    {
-    }
+}
+namespace {
     /**
-     * End is the end of the data bin. If end is not populated, then the bin has
-     * no end and is valid from start to +inf.
-     *
-     * @param array $end
+     * Runtime class alias of \Google\Service\ChromeUXReport\TimeseriesBin registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setEnd($end)
-    {
-    }
-    /**
-     * @return array
-     */
-    public function getEnd()
-    {
-    }
-    /**
-     * Start is the beginning of the data bin.
-     *
-     * @param array $start
-     */
-    public function setStart($start)
-    {
-    }
-    /**
-     * @return array
-     */
-    public function getStart()
+    class Google_Service_ChromeUXReport_TimeseriesBin extends \Google\Service\ChromeUXReport\TimeseriesBin
     {
     }
 }

@@ -21,103 +21,112 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2DiscoveryBigQueryConditions extends \Google\Model
-{
-    /**
-     * Unused.
-     */
-    public const TYPE_COLLECTION_BIG_QUERY_COLLECTION_UNSPECIFIED = 'BIG_QUERY_COLLECTION_UNSPECIFIED';
-    /**
-     * Automatically generate profiles for all tables, even if the table type is
-     * not yet fully supported for analysis. Profiles for unsupported tables will
-     * be generated with errors to indicate their partial support. When full
-     * support is added, the tables will automatically be profiled during the next
-     * scheduled run.
-     */
-    public const TYPE_COLLECTION_BIG_QUERY_COLLECTION_ALL_TYPES = 'BIG_QUERY_COLLECTION_ALL_TYPES';
-    /**
-     * Only those types fully supported will be profiled. Will expand
-     * automatically as Cloud DLP adds support for new table types. Unsupported
-     * table types will not have partial profiles generated.
-     */
-    public const TYPE_COLLECTION_BIG_QUERY_COLLECTION_ONLY_SUPPORTED_TYPES = 'BIG_QUERY_COLLECTION_ONLY_SUPPORTED_TYPES';
-    /**
-     * BigQuery table must have been created after this date. Used to avoid
-     * backfilling.
-     *
-     * @var string
-     */
-    public $createdAfter;
-    protected $orConditionsType = GooglePrivacyDlpV2OrConditions::class;
-    protected $orConditionsDataType = '';
-    /**
-     * Restrict discovery to categories of table types.
-     *
-     * @var string
-     */
-    public $typeCollection;
-    protected $typesType = GooglePrivacyDlpV2BigQueryTableTypes::class;
-    protected $typesDataType = '';
-    /**
-     * BigQuery table must have been created after this date. Used to avoid
-     * backfilling.
-     *
-     * @param string $createdAfter
-     */
-    public function setCreatedAfter($createdAfter)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2DiscoveryBigQueryConditions extends \Google\Model
     {
+        /**
+         * Unused.
+         */
+        public const TYPE_COLLECTION_BIG_QUERY_COLLECTION_UNSPECIFIED = 'BIG_QUERY_COLLECTION_UNSPECIFIED';
+        /**
+         * Automatically generate profiles for all tables, even if the table type is
+         * not yet fully supported for analysis. Profiles for unsupported tables will
+         * be generated with errors to indicate their partial support. When full
+         * support is added, the tables will automatically be profiled during the next
+         * scheduled run.
+         */
+        public const TYPE_COLLECTION_BIG_QUERY_COLLECTION_ALL_TYPES = 'BIG_QUERY_COLLECTION_ALL_TYPES';
+        /**
+         * Only those types fully supported will be profiled. Will expand
+         * automatically as Cloud DLP adds support for new table types. Unsupported
+         * table types will not have partial profiles generated.
+         */
+        public const TYPE_COLLECTION_BIG_QUERY_COLLECTION_ONLY_SUPPORTED_TYPES = 'BIG_QUERY_COLLECTION_ONLY_SUPPORTED_TYPES';
+        /**
+         * BigQuery table must have been created after this date. Used to avoid
+         * backfilling.
+         *
+         * @var string
+         */
+        public $createdAfter;
+        protected $orConditionsType = GooglePrivacyDlpV2OrConditions::class;
+        protected $orConditionsDataType = '';
+        /**
+         * Restrict discovery to categories of table types.
+         *
+         * @var string
+         */
+        public $typeCollection;
+        protected $typesType = GooglePrivacyDlpV2BigQueryTableTypes::class;
+        protected $typesDataType = '';
+        /**
+         * BigQuery table must have been created after this date. Used to avoid
+         * backfilling.
+         *
+         * @param string $createdAfter
+         */
+        public function setCreatedAfter($createdAfter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreatedAfter()
+        {
+        }
+        /**
+         * At least one of the conditions must be true for a table to be scanned.
+         *
+         * @param GooglePrivacyDlpV2OrConditions $orConditions
+         */
+        public function setOrConditions(GooglePrivacyDlpV2OrConditions $orConditions)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2OrConditions
+         */
+        public function getOrConditions()
+        {
+        }
+        /**
+         * Restrict discovery to categories of table types.
+         *
+         * Accepted values: BIG_QUERY_COLLECTION_UNSPECIFIED,
+         * BIG_QUERY_COLLECTION_ALL_TYPES, BIG_QUERY_COLLECTION_ONLY_SUPPORTED_TYPES
+         *
+         * @param self::TYPE_COLLECTION_* $typeCollection
+         */
+        public function setTypeCollection($typeCollection)
+        {
+        }
+        /**
+         * @return self::TYPE_COLLECTION_*
+         */
+        public function getTypeCollection()
+        {
+        }
+        /**
+         * Restrict discovery to specific table types.
+         *
+         * @param GooglePrivacyDlpV2BigQueryTableTypes $types
+         */
+        public function setTypes(GooglePrivacyDlpV2BigQueryTableTypes $types)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2BigQueryTableTypes
+         */
+        public function getTypes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2DiscoveryBigQueryConditions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreatedAfter()
-    {
-    }
-    /**
-     * At least one of the conditions must be true for a table to be scanned.
-     *
-     * @param GooglePrivacyDlpV2OrConditions $orConditions
-     */
-    public function setOrConditions(GooglePrivacyDlpV2OrConditions $orConditions)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2OrConditions
-     */
-    public function getOrConditions()
-    {
-    }
-    /**
-     * Restrict discovery to categories of table types.
-     *
-     * Accepted values: BIG_QUERY_COLLECTION_UNSPECIFIED,
-     * BIG_QUERY_COLLECTION_ALL_TYPES, BIG_QUERY_COLLECTION_ONLY_SUPPORTED_TYPES
-     *
-     * @param self::TYPE_COLLECTION_* $typeCollection
-     */
-    public function setTypeCollection($typeCollection)
-    {
-    }
-    /**
-     * @return self::TYPE_COLLECTION_*
-     */
-    public function getTypeCollection()
-    {
-    }
-    /**
-     * Restrict discovery to specific table types.
-     *
-     * @param GooglePrivacyDlpV2BigQueryTableTypes $types
-     */
-    public function setTypes(GooglePrivacyDlpV2BigQueryTableTypes $types)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2BigQueryTableTypes
-     */
-    public function getTypes()
+    class Google_Service_DLP_GooglePrivacyDlpV2DiscoveryBigQueryConditions extends \Google\Service\DLP\GooglePrivacyDlpV2DiscoveryBigQueryConditions
     {
     }
 }

@@ -21,138 +21,147 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class CreateBackupMetadata extends \Google\Model
-{
-    /**
-     * If set, the time at which this operation finished or was cancelled.
-     * DEPRECATED: Use finish_time instead.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $endTime;
-    /**
-     * The time at which the operation failed or was completed successfully.
-     *
-     * @var string
-     */
-    public $finishTime;
-    /**
-     * The name of the backup being created.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The time at which the original request was received.
-     *
-     * @var string
-     */
-    public $requestTime;
-    /**
-     * The name of the table the backup is created from.
-     *
-     * @var string
-     */
-    public $sourceTable;
-    /**
-     * The time at which this operation started. DEPRECATED: Use request_time
-     * instead.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $startTime;
-    /**
-     * If set, the time at which this operation finished or was cancelled.
-     * DEPRECATED: Use finish_time instead.
-     *
-     * @deprecated
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
+namespace Google\Service\BigtableAdmin {
+    class CreateBackupMetadata extends \Google\Model
     {
+        /**
+         * If set, the time at which this operation finished or was cancelled.
+         * DEPRECATED: Use finish_time instead.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $endTime;
+        /**
+         * The time at which the operation failed or was completed successfully.
+         *
+         * @var string
+         */
+        public $finishTime;
+        /**
+         * The name of the backup being created.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The time at which the original request was received.
+         *
+         * @var string
+         */
+        public $requestTime;
+        /**
+         * The name of the table the backup is created from.
+         *
+         * @var string
+         */
+        public $sourceTable;
+        /**
+         * The time at which this operation started. DEPRECATED: Use request_time
+         * instead.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $startTime;
+        /**
+         * If set, the time at which this operation finished or was cancelled.
+         * DEPRECATED: Use finish_time instead.
+         *
+         * @deprecated
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * The time at which the operation failed or was completed successfully.
+         *
+         * @param string $finishTime
+         */
+        public function setFinishTime($finishTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFinishTime()
+        {
+        }
+        /**
+         * The name of the backup being created.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The time at which the original request was received.
+         *
+         * @param string $requestTime
+         */
+        public function setRequestTime($requestTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestTime()
+        {
+        }
+        /**
+         * The name of the table the backup is created from.
+         *
+         * @param string $sourceTable
+         */
+        public function setSourceTable($sourceTable)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceTable()
+        {
+        }
+        /**
+         * The time at which this operation started. DEPRECATED: Use request_time
+         * instead.
+         *
+         * @deprecated
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return string
+     * Runtime class alias of \Google\Service\BigtableAdmin\CreateBackupMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndTime()
-    {
-    }
-    /**
-     * The time at which the operation failed or was completed successfully.
-     *
-     * @param string $finishTime
-     */
-    public function setFinishTime($finishTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFinishTime()
-    {
-    }
-    /**
-     * The name of the backup being created.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The time at which the original request was received.
-     *
-     * @param string $requestTime
-     */
-    public function setRequestTime($requestTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestTime()
-    {
-    }
-    /**
-     * The name of the table the backup is created from.
-     *
-     * @param string $sourceTable
-     */
-    public function setSourceTable($sourceTable)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourceTable()
-    {
-    }
-    /**
-     * The time at which this operation started. DEPRECATED: Use request_time
-     * instead.
-     *
-     * @deprecated
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getStartTime()
+    class Google_Service_BigtableAdmin_CreateBackupMetadata extends \Google\Service\BigtableAdmin\CreateBackupMetadata
     {
     }
 }

@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TravelImpactModel;
-
-class ComputeFlightEmissionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'flightEmissions';
-    protected $flightEmissionsType = FlightWithEmissions::class;
-    protected $flightEmissionsDataType = 'array';
-    protected $modelVersionType = ModelVersion::class;
-    protected $modelVersionDataType = '';
-    /**
-     * List of flight legs with emission estimates.
-     *
-     * @param FlightWithEmissions[] $flightEmissions
-     */
-    public function setFlightEmissions($flightEmissions)
+namespace Google\Service\TravelImpactModel {
+    class ComputeFlightEmissionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'flightEmissions';
+        protected $flightEmissionsType = FlightWithEmissions::class;
+        protected $flightEmissionsDataType = 'array';
+        protected $modelVersionType = ModelVersion::class;
+        protected $modelVersionDataType = '';
+        /**
+         * List of flight legs with emission estimates.
+         *
+         * @param FlightWithEmissions[] $flightEmissions
+         */
+        public function setFlightEmissions($flightEmissions)
+        {
+        }
+        /**
+         * @return FlightWithEmissions[]
+         */
+        public function getFlightEmissions()
+        {
+        }
+        /**
+         * The model version under which emission estimates for all flights in this
+         * response were computed.
+         *
+         * @param ModelVersion $modelVersion
+         */
+        public function setModelVersion(ModelVersion $modelVersion)
+        {
+        }
+        /**
+         * @return ModelVersion
+         */
+        public function getModelVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FlightWithEmissions[]
+     * Runtime class alias of \Google\Service\TravelImpactModel\ComputeFlightEmissionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFlightEmissions()
-    {
-    }
-    /**
-     * The model version under which emission estimates for all flights in this
-     * response were computed.
-     *
-     * @param ModelVersion $modelVersion
-     */
-    public function setModelVersion(ModelVersion $modelVersion)
-    {
-    }
-    /**
-     * @return ModelVersion
-     */
-    public function getModelVersion()
+    class Google_Service_TravelImpactModel_ComputeFlightEmissionsResponse extends \Google\Service\TravelImpactModel\ComputeFlightEmissionsResponse
     {
     }
 }

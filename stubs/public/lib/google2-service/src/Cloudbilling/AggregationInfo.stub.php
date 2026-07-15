@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudbilling;
-
-class AggregationInfo extends \Google\Model
-{
-    public const AGGREGATION_INTERVAL_AGGREGATION_INTERVAL_UNSPECIFIED = 'AGGREGATION_INTERVAL_UNSPECIFIED';
-    public const AGGREGATION_INTERVAL_DAILY = 'DAILY';
-    public const AGGREGATION_INTERVAL_MONTHLY = 'MONTHLY';
-    public const AGGREGATION_LEVEL_AGGREGATION_LEVEL_UNSPECIFIED = 'AGGREGATION_LEVEL_UNSPECIFIED';
-    public const AGGREGATION_LEVEL_ACCOUNT = 'ACCOUNT';
-    public const AGGREGATION_LEVEL_PROJECT = 'PROJECT';
-    /**
-     * The number of intervals to aggregate over. Example: If aggregation_level is
-     * "DAILY" and aggregation_count is 14, aggregation will be over 14 days.
-     *
-     * @var int
-     */
-    public $aggregationCount;
-    /**
-     * @var string
-     */
-    public $aggregationInterval;
-    /**
-     * @var string
-     */
-    public $aggregationLevel;
-    /**
-     * The number of intervals to aggregate over. Example: If aggregation_level is
-     * "DAILY" and aggregation_count is 14, aggregation will be over 14 days.
-     *
-     * @param int $aggregationCount
-     */
-    public function setAggregationCount($aggregationCount)
+namespace Google\Service\Cloudbilling {
+    class AggregationInfo extends \Google\Model
     {
+        public const AGGREGATION_INTERVAL_AGGREGATION_INTERVAL_UNSPECIFIED = 'AGGREGATION_INTERVAL_UNSPECIFIED';
+        public const AGGREGATION_INTERVAL_DAILY = 'DAILY';
+        public const AGGREGATION_INTERVAL_MONTHLY = 'MONTHLY';
+        public const AGGREGATION_LEVEL_AGGREGATION_LEVEL_UNSPECIFIED = 'AGGREGATION_LEVEL_UNSPECIFIED';
+        public const AGGREGATION_LEVEL_ACCOUNT = 'ACCOUNT';
+        public const AGGREGATION_LEVEL_PROJECT = 'PROJECT';
+        /**
+         * The number of intervals to aggregate over. Example: If aggregation_level is
+         * "DAILY" and aggregation_count is 14, aggregation will be over 14 days.
+         *
+         * @var int
+         */
+        public $aggregationCount;
+        /**
+         * @var string
+         */
+        public $aggregationInterval;
+        /**
+         * @var string
+         */
+        public $aggregationLevel;
+        /**
+         * The number of intervals to aggregate over. Example: If aggregation_level is
+         * "DAILY" and aggregation_count is 14, aggregation will be over 14 days.
+         *
+         * @param int $aggregationCount
+         */
+        public function setAggregationCount($aggregationCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getAggregationCount()
+        {
+        }
+        /**
+         * @param self::AGGREGATION_INTERVAL_* $aggregationInterval
+         */
+        public function setAggregationInterval($aggregationInterval)
+        {
+        }
+        /**
+         * @return self::AGGREGATION_INTERVAL_*
+         */
+        public function getAggregationInterval()
+        {
+        }
+        /**
+         * @param self::AGGREGATION_LEVEL_* $aggregationLevel
+         */
+        public function setAggregationLevel($aggregationLevel)
+        {
+        }
+        /**
+         * @return self::AGGREGATION_LEVEL_*
+         */
+        public function getAggregationLevel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Cloudbilling\AggregationInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAggregationCount()
-    {
-    }
-    /**
-     * @param self::AGGREGATION_INTERVAL_* $aggregationInterval
-     */
-    public function setAggregationInterval($aggregationInterval)
-    {
-    }
-    /**
-     * @return self::AGGREGATION_INTERVAL_*
-     */
-    public function getAggregationInterval()
-    {
-    }
-    /**
-     * @param self::AGGREGATION_LEVEL_* $aggregationLevel
-     */
-    public function setAggregationLevel($aggregationLevel)
-    {
-    }
-    /**
-     * @return self::AGGREGATION_LEVEL_*
-     */
-    public function getAggregationLevel()
+    class Google_Service_Cloudbilling_AggregationInfo extends \Google\Service\Cloudbilling\AggregationInfo
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class CreativeFieldAssignment extends \Google\Model
-{
-    /**
-     * ID of the creative field.
-     *
-     * @var string
-     */
-    public $creativeFieldId;
-    /**
-     * ID of the creative field value.
-     *
-     * @var string
-     */
-    public $creativeFieldValueId;
-    /**
-     * ID of the creative field.
-     *
-     * @param string $creativeFieldId
-     */
-    public function setCreativeFieldId($creativeFieldId)
+namespace Google\Service\Dfareporting {
+    class CreativeFieldAssignment extends \Google\Model
     {
+        /**
+         * ID of the creative field.
+         *
+         * @var string
+         */
+        public $creativeFieldId;
+        /**
+         * ID of the creative field value.
+         *
+         * @var string
+         */
+        public $creativeFieldValueId;
+        /**
+         * ID of the creative field.
+         *
+         * @param string $creativeFieldId
+         */
+        public function setCreativeFieldId($creativeFieldId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreativeFieldId()
+        {
+        }
+        /**
+         * ID of the creative field value.
+         *
+         * @param string $creativeFieldValueId
+         */
+        public function setCreativeFieldValueId($creativeFieldValueId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreativeFieldValueId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\CreativeFieldAssignment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreativeFieldId()
-    {
-    }
-    /**
-     * ID of the creative field value.
-     *
-     * @param string $creativeFieldValueId
-     */
-    public function setCreativeFieldValueId($creativeFieldValueId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreativeFieldValueId()
+    class Google_Service_Dfareporting_CreativeFieldAssignment extends \Google\Service\Dfareporting\CreativeFieldAssignment
     {
     }
 }

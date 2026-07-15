@@ -21,106 +21,115 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class UserPasswordValidationPolicy extends \Google\Model
-{
-    /**
-     * Number of failed login attempts allowed before user get locked.
-     *
-     * @var int
-     */
-    public $allowedFailedAttempts;
-    /**
-     * If true, failed login attempts check will be enabled.
-     *
-     * @var bool
-     */
-    public $enableFailedAttemptsCheck;
-    /**
-     * If true, the user must specify the current password before changing the
-     * password. This flag is supported only for MySQL.
-     *
-     * @var bool
-     */
-    public $enablePasswordVerification;
-    /**
-     * Expiration duration after password is updated.
-     *
-     * @var string
-     */
-    public $passwordExpirationDuration;
-    protected $statusType = PasswordStatus::class;
-    protected $statusDataType = '';
-    /**
-     * Number of failed login attempts allowed before user get locked.
-     *
-     * @param int $allowedFailedAttempts
-     */
-    public function setAllowedFailedAttempts($allowedFailedAttempts)
+namespace Google\Service\SQLAdmin {
+    class UserPasswordValidationPolicy extends \Google\Model
     {
+        /**
+         * Number of failed login attempts allowed before user get locked.
+         *
+         * @var int
+         */
+        public $allowedFailedAttempts;
+        /**
+         * If true, failed login attempts check will be enabled.
+         *
+         * @var bool
+         */
+        public $enableFailedAttemptsCheck;
+        /**
+         * If true, the user must specify the current password before changing the
+         * password. This flag is supported only for MySQL.
+         *
+         * @var bool
+         */
+        public $enablePasswordVerification;
+        /**
+         * Expiration duration after password is updated.
+         *
+         * @var string
+         */
+        public $passwordExpirationDuration;
+        protected $statusType = PasswordStatus::class;
+        protected $statusDataType = '';
+        /**
+         * Number of failed login attempts allowed before user get locked.
+         *
+         * @param int $allowedFailedAttempts
+         */
+        public function setAllowedFailedAttempts($allowedFailedAttempts)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getAllowedFailedAttempts()
+        {
+        }
+        /**
+         * If true, failed login attempts check will be enabled.
+         *
+         * @param bool $enableFailedAttemptsCheck
+         */
+        public function setEnableFailedAttemptsCheck($enableFailedAttemptsCheck)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableFailedAttemptsCheck()
+        {
+        }
+        /**
+         * If true, the user must specify the current password before changing the
+         * password. This flag is supported only for MySQL.
+         *
+         * @param bool $enablePasswordVerification
+         */
+        public function setEnablePasswordVerification($enablePasswordVerification)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnablePasswordVerification()
+        {
+        }
+        /**
+         * Expiration duration after password is updated.
+         *
+         * @param string $passwordExpirationDuration
+         */
+        public function setPasswordExpirationDuration($passwordExpirationDuration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPasswordExpirationDuration()
+        {
+        }
+        /**
+         * Output only. Read-only password status.
+         *
+         * @param PasswordStatus $status
+         */
+        public function setStatus(PasswordStatus $status)
+        {
+        }
+        /**
+         * @return PasswordStatus
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\SQLAdmin\UserPasswordValidationPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowedFailedAttempts()
-    {
-    }
-    /**
-     * If true, failed login attempts check will be enabled.
-     *
-     * @param bool $enableFailedAttemptsCheck
-     */
-    public function setEnableFailedAttemptsCheck($enableFailedAttemptsCheck)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnableFailedAttemptsCheck()
-    {
-    }
-    /**
-     * If true, the user must specify the current password before changing the
-     * password. This flag is supported only for MySQL.
-     *
-     * @param bool $enablePasswordVerification
-     */
-    public function setEnablePasswordVerification($enablePasswordVerification)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnablePasswordVerification()
-    {
-    }
-    /**
-     * Expiration duration after password is updated.
-     *
-     * @param string $passwordExpirationDuration
-     */
-    public function setPasswordExpirationDuration($passwordExpirationDuration)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPasswordExpirationDuration()
-    {
-    }
-    /**
-     * Output only. Read-only password status.
-     *
-     * @param PasswordStatus $status
-     */
-    public function setStatus(PasswordStatus $status)
-    {
-    }
-    /**
-     * @return PasswordStatus
-     */
-    public function getStatus()
+    class Google_Service_SQLAdmin_UserPasswordValidationPolicy extends \Google\Service\SQLAdmin\UserPasswordValidationPolicy
     {
     }
 }

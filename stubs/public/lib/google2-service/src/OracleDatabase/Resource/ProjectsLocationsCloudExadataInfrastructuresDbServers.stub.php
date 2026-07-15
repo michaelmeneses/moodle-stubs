@@ -21,36 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OracleDatabase\Resource;
-
-/**
- * The "dbServers" collection of methods.
- * Typical usage is:
- *  <code>
- *   $oracledatabaseService = new Google\Service\OracleDatabase(...);
- *   $dbServers = $oracledatabaseService->projects_locations_cloudExadataInfrastructures_dbServers;
- *  </code>
- */
-class ProjectsLocationsCloudExadataInfrastructuresDbServers extends \Google\Service\Resource
-{
+namespace Google\Service\OracleDatabase\Resource {
+    use Google\Service\OracleDatabase\ListDbServersResponse;
     /**
-     * Lists the database servers of an Exadata Infrastructure instance.
-     * (dbServers.listProjectsLocationsCloudExadataInfrastructuresDbServers)
-     *
-     * @param string $parent Required. The parent value for database server in the
-     * following format: projects/{project}/locations/{location}/cloudExadataInfrast
-     * ructures/{cloudExadataInfrastructure}.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Optional. The maximum number of items to return. If
-     * unspecified, a maximum of 50 db servers will be returned. The maximum value
-     * is 1000; values above 1000 will be reset to 1000.
-     * @opt_param string pageToken Optional. A token identifying a page of results
-     * the server should return.
-     * @return ListDbServersResponse
-     * @throws \Google\Service\Exception
+     * The "dbServers" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $oracledatabaseService = new Google\Service\OracleDatabase(...);
+     *   $dbServers = $oracledatabaseService->projects_locations_cloudExadataInfrastructures_dbServers;
+     *  </code>
      */
-    public function listProjectsLocationsCloudExadataInfrastructuresDbServers($parent, $optParams = [])
+    class ProjectsLocationsCloudExadataInfrastructuresDbServers extends \Google\Service\Resource
+    {
+        /**
+         * Lists the database servers of an Exadata Infrastructure instance.
+         * (dbServers.listProjectsLocationsCloudExadataInfrastructuresDbServers)
+         *
+         * @param string $parent Required. The parent value for database server in the
+         * following format: projects/{project}/locations/{location}/cloudExadataInfrast
+         * ructures/{cloudExadataInfrastructure}.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Optional. The maximum number of items to return. If
+         * unspecified, a maximum of 50 db servers will be returned. The maximum value
+         * is 1000; values above 1000 will be reset to 1000.
+         * @opt_param string pageToken Optional. A token identifying a page of results
+         * the server should return.
+         * @return ListDbServersResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsCloudExadataInfrastructuresDbServers($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\OracleDatabase\Resource\ProjectsLocationsCloudExadataInfrastructuresDbServers registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_OracleDatabase_Resource_ProjectsLocationsCloudExadataInfrastructuresDbServers extends \Google\Service\OracleDatabase\Resource\ProjectsLocationsCloudExadataInfrastructuresDbServers
     {
     }
 }

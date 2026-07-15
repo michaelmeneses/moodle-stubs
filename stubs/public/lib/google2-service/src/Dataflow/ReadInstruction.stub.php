@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class ReadInstruction extends \Google\Model
-{
-    protected $sourceType = Source::class;
-    protected $sourceDataType = '';
-    /**
-     * The source to read from.
-     *
-     * @param Source $source
-     */
-    public function setSource(Source $source)
+namespace Google\Service\Dataflow {
+    class ReadInstruction extends \Google\Model
     {
+        protected $sourceType = Source::class;
+        protected $sourceDataType = '';
+        /**
+         * The source to read from.
+         *
+         * @param Source $source
+         */
+        public function setSource(Source $source)
+        {
+        }
+        /**
+         * @return Source
+         */
+        public function getSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Source
+     * Runtime class alias of \Google\Service\Dataflow\ReadInstruction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSource()
+    class Google_Service_Dataflow_ReadInstruction extends \Google\Service\Dataflow\ReadInstruction
     {
     }
 }

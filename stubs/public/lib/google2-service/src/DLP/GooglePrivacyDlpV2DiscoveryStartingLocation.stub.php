@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2DiscoveryStartingLocation extends \Google\Model
-{
-    /**
-     * The ID of the folder within an organization to be scanned.
-     *
-     * @var string
-     */
-    public $folderId;
-    /**
-     * The ID of an organization to scan.
-     *
-     * @var string
-     */
-    public $organizationId;
-    /**
-     * The ID of the folder within an organization to be scanned.
-     *
-     * @param string $folderId
-     */
-    public function setFolderId($folderId)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2DiscoveryStartingLocation extends \Google\Model
     {
+        /**
+         * The ID of the folder within an organization to be scanned.
+         *
+         * @var string
+         */
+        public $folderId;
+        /**
+         * The ID of an organization to scan.
+         *
+         * @var string
+         */
+        public $organizationId;
+        /**
+         * The ID of the folder within an organization to be scanned.
+         *
+         * @param string $folderId
+         */
+        public function setFolderId($folderId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFolderId()
+        {
+        }
+        /**
+         * The ID of an organization to scan.
+         *
+         * @param string $organizationId
+         */
+        public function setOrganizationId($organizationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOrganizationId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2DiscoveryStartingLocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFolderId()
-    {
-    }
-    /**
-     * The ID of an organization to scan.
-     *
-     * @param string $organizationId
-     */
-    public function setOrganizationId($organizationId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOrganizationId()
+    class Google_Service_DLP_GooglePrivacyDlpV2DiscoveryStartingLocation extends \Google\Service\DLP\GooglePrivacyDlpV2DiscoveryStartingLocation
     {
     }
 }

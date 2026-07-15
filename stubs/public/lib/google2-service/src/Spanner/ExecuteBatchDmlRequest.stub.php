@@ -21,130 +21,139 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class ExecuteBatchDmlRequest extends \Google\Collection
-{
-    protected $collection_key = 'statements';
-    /**
-     * Optional. If set to `true`, this request marks the end of the transaction.
-     * After these statements execute, you must commit or abort the transaction.
-     * Attempts to execute any other requests against this transaction (including
-     * reads and queries) are rejected. Setting this option might cause some error
-     * reporting to be deferred until commit time (for example, validation of
-     * unique constraints). Given this, successful execution of statements
-     * shouldn't be assumed until a subsequent `Commit` call completes
-     * successfully.
-     *
-     * @var bool
-     */
-    public $lastStatements;
-    protected $requestOptionsType = RequestOptions::class;
-    protected $requestOptionsDataType = '';
-    /**
-     * Required. A per-transaction sequence number used to identify this request.
-     * This field makes each request idempotent such that if the request is
-     * received multiple times, at most one succeeds. The sequence number must be
-     * monotonically increasing within the transaction. If a request arrives for
-     * the first time with an out-of-order sequence number, the transaction might
-     * be aborted. Replays of previously handled requests yield the same response
-     * as the first execution.
-     *
-     * @var string
-     */
-    public $seqno;
-    protected $statementsType = Statement::class;
-    protected $statementsDataType = 'array';
-    protected $transactionType = TransactionSelector::class;
-    protected $transactionDataType = '';
-    /**
-     * Optional. If set to `true`, this request marks the end of the transaction.
-     * After these statements execute, you must commit or abort the transaction.
-     * Attempts to execute any other requests against this transaction (including
-     * reads and queries) are rejected. Setting this option might cause some error
-     * reporting to be deferred until commit time (for example, validation of
-     * unique constraints). Given this, successful execution of statements
-     * shouldn't be assumed until a subsequent `Commit` call completes
-     * successfully.
-     *
-     * @param bool $lastStatements
-     */
-    public function setLastStatements($lastStatements)
+namespace Google\Service\Spanner {
+    class ExecuteBatchDmlRequest extends \Google\Collection
     {
+        protected $collection_key = 'statements';
+        /**
+         * Optional. If set to `true`, this request marks the end of the transaction.
+         * After these statements execute, you must commit or abort the transaction.
+         * Attempts to execute any other requests against this transaction (including
+         * reads and queries) are rejected. Setting this option might cause some error
+         * reporting to be deferred until commit time (for example, validation of
+         * unique constraints). Given this, successful execution of statements
+         * shouldn't be assumed until a subsequent `Commit` call completes
+         * successfully.
+         *
+         * @var bool
+         */
+        public $lastStatements;
+        protected $requestOptionsType = RequestOptions::class;
+        protected $requestOptionsDataType = '';
+        /**
+         * Required. A per-transaction sequence number used to identify this request.
+         * This field makes each request idempotent such that if the request is
+         * received multiple times, at most one succeeds. The sequence number must be
+         * monotonically increasing within the transaction. If a request arrives for
+         * the first time with an out-of-order sequence number, the transaction might
+         * be aborted. Replays of previously handled requests yield the same response
+         * as the first execution.
+         *
+         * @var string
+         */
+        public $seqno;
+        protected $statementsType = Statement::class;
+        protected $statementsDataType = 'array';
+        protected $transactionType = TransactionSelector::class;
+        protected $transactionDataType = '';
+        /**
+         * Optional. If set to `true`, this request marks the end of the transaction.
+         * After these statements execute, you must commit or abort the transaction.
+         * Attempts to execute any other requests against this transaction (including
+         * reads and queries) are rejected. Setting this option might cause some error
+         * reporting to be deferred until commit time (for example, validation of
+         * unique constraints). Given this, successful execution of statements
+         * shouldn't be assumed until a subsequent `Commit` call completes
+         * successfully.
+         *
+         * @param bool $lastStatements
+         */
+        public function setLastStatements($lastStatements)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getLastStatements()
+        {
+        }
+        /**
+         * Common options for this request.
+         *
+         * @param RequestOptions $requestOptions
+         */
+        public function setRequestOptions(RequestOptions $requestOptions)
+        {
+        }
+        /**
+         * @return RequestOptions
+         */
+        public function getRequestOptions()
+        {
+        }
+        /**
+         * Required. A per-transaction sequence number used to identify this request.
+         * This field makes each request idempotent such that if the request is
+         * received multiple times, at most one succeeds. The sequence number must be
+         * monotonically increasing within the transaction. If a request arrives for
+         * the first time with an out-of-order sequence number, the transaction might
+         * be aborted. Replays of previously handled requests yield the same response
+         * as the first execution.
+         *
+         * @param string $seqno
+         */
+        public function setSeqno($seqno)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSeqno()
+        {
+        }
+        /**
+         * Required. The list of statements to execute in this batch. Statements are
+         * executed serially, such that the effects of statement `i` are visible to
+         * statement `i+1`. Each statement must be a DML statement. Execution stops at
+         * the first failed statement; the remaining statements are not executed.
+         * Callers must provide at least one statement.
+         *
+         * @param Statement[] $statements
+         */
+        public function setStatements($statements)
+        {
+        }
+        /**
+         * @return Statement[]
+         */
+        public function getStatements()
+        {
+        }
+        /**
+         * Required. The transaction to use. Must be a read-write transaction. To
+         * protect against replays, single-use transactions are not supported. The
+         * caller must either supply an existing transaction ID or begin a new
+         * transaction.
+         *
+         * @param TransactionSelector $transaction
+         */
+        public function setTransaction(TransactionSelector $transaction)
+        {
+        }
+        /**
+         * @return TransactionSelector
+         */
+        public function getTransaction()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Spanner\ExecuteBatchDmlRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLastStatements()
-    {
-    }
-    /**
-     * Common options for this request.
-     *
-     * @param RequestOptions $requestOptions
-     */
-    public function setRequestOptions(RequestOptions $requestOptions)
-    {
-    }
-    /**
-     * @return RequestOptions
-     */
-    public function getRequestOptions()
-    {
-    }
-    /**
-     * Required. A per-transaction sequence number used to identify this request.
-     * This field makes each request idempotent such that if the request is
-     * received multiple times, at most one succeeds. The sequence number must be
-     * monotonically increasing within the transaction. If a request arrives for
-     * the first time with an out-of-order sequence number, the transaction might
-     * be aborted. Replays of previously handled requests yield the same response
-     * as the first execution.
-     *
-     * @param string $seqno
-     */
-    public function setSeqno($seqno)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSeqno()
-    {
-    }
-    /**
-     * Required. The list of statements to execute in this batch. Statements are
-     * executed serially, such that the effects of statement `i` are visible to
-     * statement `i+1`. Each statement must be a DML statement. Execution stops at
-     * the first failed statement; the remaining statements are not executed.
-     * Callers must provide at least one statement.
-     *
-     * @param Statement[] $statements
-     */
-    public function setStatements($statements)
-    {
-    }
-    /**
-     * @return Statement[]
-     */
-    public function getStatements()
-    {
-    }
-    /**
-     * Required. The transaction to use. Must be a read-write transaction. To
-     * protect against replays, single-use transactions are not supported. The
-     * caller must either supply an existing transaction ID or begin a new
-     * transaction.
-     *
-     * @param TransactionSelector $transaction
-     */
-    public function setTransaction(TransactionSelector $transaction)
-    {
-    }
-    /**
-     * @return TransactionSelector
-     */
-    public function getTransaction()
+    class Google_Service_Spanner_ExecuteBatchDmlRequest extends \Google\Service\Spanner\ExecuteBatchDmlRequest
     {
     }
 }

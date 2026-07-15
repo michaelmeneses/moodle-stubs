@@ -21,29 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement\Resource;
-
-/**
- * The "operations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $chromemanagementService = new Google\Service\ChromeManagement(...);
- *   $operations = $chromemanagementService->customers_certificateProvisioningProcesses_operations;
- *  </code>
- */
-class CustomersCertificateProvisioningProcessesOperations extends \Google\Service\Resource
-{
+namespace Google\Service\ChromeManagement\Resource {
+    use Google\Service\ChromeManagement\GoogleLongrunningOperation;
     /**
-     * Gets the latest state of a long-running operation. Clients can use this
-     * method to poll the operation result at intervals as recommended by the API
-     * service. (operations.get)
-     *
-     * @param string $name The name of the operation resource.
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
+     * The "operations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $chromemanagementService = new Google\Service\ChromeManagement(...);
+     *   $operations = $chromemanagementService->customers_certificateProvisioningProcesses_operations;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class CustomersCertificateProvisioningProcessesOperations extends \Google\Service\Resource
+    {
+        /**
+         * Gets the latest state of a long-running operation. Clients can use this
+         * method to poll the operation result at intervals as recommended by the API
+         * service. (operations.get)
+         *
+         * @param string $name The name of the operation resource.
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ChromeManagement\Resource\CustomersCertificateProvisioningProcessesOperations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ChromeManagement_Resource_CustomersCertificateProvisioningProcessesOperations extends \Google\Service\ChromeManagement\Resource\CustomersCertificateProvisioningProcessesOperations
     {
     }
 }

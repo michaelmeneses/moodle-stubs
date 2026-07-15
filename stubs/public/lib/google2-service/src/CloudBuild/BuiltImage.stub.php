@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class BuiltImage extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $digest;
-    /**
-     * @var string
-     */
-    public $name;
-    protected $pushTimingType = TimeSpan::class;
-    protected $pushTimingDataType = '';
-    /**
-     * @param string
-     */
-    public function setDigest($digest)
+namespace Google\Service\CloudBuild {
+    class BuiltImage extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $digest;
+        /**
+         * @var string
+         */
+        public $name;
+        protected $pushTimingType = TimeSpan::class;
+        protected $pushTimingDataType = '';
+        /**
+         * @param string
+         */
+        public function setDigest($digest)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDigest()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param TimeSpan
+         */
+        public function setPushTiming(TimeSpan $pushTiming)
+        {
+        }
+        /**
+         * @return TimeSpan
+         */
+        public function getPushTiming()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudBuild\BuiltImage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDigest()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param TimeSpan
-     */
-    public function setPushTiming(TimeSpan $pushTiming)
-    {
-    }
-    /**
-     * @return TimeSpan
-     */
-    public function getPushTiming()
+    class Google_Service_CloudBuild_BuiltImage extends \Google\Service\CloudBuild\BuiltImage
     {
     }
 }

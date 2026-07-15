@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AIPlatformNotebooks;
-
-class UpdateInstanceMetadataItemsRequest extends \Google\Model
-{
-    /**
-     * @var string[]
-     */
-    public $items = [];
-    /**
-     * @param string[]
-     */
-    public function setItems($items)
+namespace Google\Service\AIPlatformNotebooks {
+    class UpdateInstanceMetadataItemsRequest extends \Google\Model
     {
+        /**
+         * @var string[]
+         */
+        public $items = [];
+        /**
+         * @param string[]
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getItems()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\AIPlatformNotebooks\UpdateInstanceMetadataItemsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItems()
+    class Google_Service_AIPlatformNotebooks_UpdateInstanceMetadataItemsRequest extends \Google\Service\AIPlatformNotebooks\UpdateInstanceMetadataItemsRequest
     {
     }
 }

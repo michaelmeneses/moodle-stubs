@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDomains;
-
-class RenewDomainRequest extends \Google\Model
-{
-    /**
-     * Optional. When true, only validation is performed, without actually
-     * renewing the domain. For more information, see [Request validation](https:/
-     * /cloud.google.com/apis/design/design_patterns#request_validation)
-     *
-     * @var bool
-     */
-    public $validateOnly;
-    protected $yearlyPriceType = Money::class;
-    protected $yearlyPriceDataType = '';
-    /**
-     * Optional. When true, only validation is performed, without actually
-     * renewing the domain. For more information, see [Request validation](https:/
-     * /cloud.google.com/apis/design/design_patterns#request_validation)
-     *
-     * @param bool $validateOnly
-     */
-    public function setValidateOnly($validateOnly)
+namespace Google\Service\CloudDomains {
+    class RenewDomainRequest extends \Google\Model
     {
+        /**
+         * Optional. When true, only validation is performed, without actually
+         * renewing the domain. For more information, see [Request validation](https:/
+         * /cloud.google.com/apis/design/design_patterns#request_validation)
+         *
+         * @var bool
+         */
+        public $validateOnly;
+        protected $yearlyPriceType = Money::class;
+        protected $yearlyPriceDataType = '';
+        /**
+         * Optional. When true, only validation is performed, without actually
+         * renewing the domain. For more information, see [Request validation](https:/
+         * /cloud.google.com/apis/design/design_patterns#request_validation)
+         *
+         * @param bool $validateOnly
+         */
+        public function setValidateOnly($validateOnly)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getValidateOnly()
+        {
+        }
+        /**
+         * Required. Acknowledgement of the price to renew the domain for one year. To
+         * get the price, see [Cloud Domains
+         * pricing](https://cloud.google.com/domains/pricing). If not provided, the
+         * expected price is returned in the error message.
+         *
+         * @param Money $yearlyPrice
+         */
+        public function setYearlyPrice(Money $yearlyPrice)
+        {
+        }
+        /**
+         * @return Money
+         */
+        public function getYearlyPrice()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudDomains\RenewDomainRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getValidateOnly()
-    {
-    }
-    /**
-     * Required. Acknowledgement of the price to renew the domain for one year. To
-     * get the price, see [Cloud Domains
-     * pricing](https://cloud.google.com/domains/pricing). If not provided, the
-     * expected price is returned in the error message.
-     *
-     * @param Money $yearlyPrice
-     */
-    public function setYearlyPrice(Money $yearlyPrice)
-    {
-    }
-    /**
-     * @return Money
-     */
-    public function getYearlyPrice()
+    class Google_Service_CloudDomains_RenewDomainRequest extends \Google\Service\CloudDomains\RenewDomainRequest
     {
     }
 }

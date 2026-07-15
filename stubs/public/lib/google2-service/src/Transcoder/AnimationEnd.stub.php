@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Transcoder;
-
-class AnimationEnd extends \Google\Model
-{
-    /**
-     * The time to end overlay object, in seconds. Default: 0
-     *
-     * @var string
-     */
-    public $startTimeOffset;
-    /**
-     * The time to end overlay object, in seconds. Default: 0
-     *
-     * @param string $startTimeOffset
-     */
-    public function setStartTimeOffset($startTimeOffset)
+namespace Google\Service\Transcoder {
+    class AnimationEnd extends \Google\Model
     {
+        /**
+         * The time to end overlay object, in seconds. Default: 0
+         *
+         * @var string
+         */
+        public $startTimeOffset;
+        /**
+         * The time to end overlay object, in seconds. Default: 0
+         *
+         * @param string $startTimeOffset
+         */
+        public function setStartTimeOffset($startTimeOffset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTimeOffset()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Transcoder\AnimationEnd registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStartTimeOffset()
+    class Google_Service_Transcoder_AnimationEnd extends \Google\Service\Transcoder\AnimationEnd
     {
     }
 }

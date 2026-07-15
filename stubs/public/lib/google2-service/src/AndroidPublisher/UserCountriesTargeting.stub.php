@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class UserCountriesTargeting extends \Google\Collection
-{
-    protected $collection_key = 'countryCodes';
-    /**
-     * List of country codes in the two-letter CLDR territory format.
-     *
-     * @var string[]
-     */
-    public $countryCodes;
-    /**
-     * Indicates if the list above is exclusive.
-     *
-     * @var bool
-     */
-    public $exclude;
-    /**
-     * List of country codes in the two-letter CLDR territory format.
-     *
-     * @param string[] $countryCodes
-     */
-    public function setCountryCodes($countryCodes)
+namespace Google\Service\AndroidPublisher {
+    class UserCountriesTargeting extends \Google\Collection
     {
+        protected $collection_key = 'countryCodes';
+        /**
+         * List of country codes in the two-letter CLDR territory format.
+         *
+         * @var string[]
+         */
+        public $countryCodes;
+        /**
+         * Indicates if the list above is exclusive.
+         *
+         * @var bool
+         */
+        public $exclude;
+        /**
+         * List of country codes in the two-letter CLDR territory format.
+         *
+         * @param string[] $countryCodes
+         */
+        public function setCountryCodes($countryCodes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCountryCodes()
+        {
+        }
+        /**
+         * Indicates if the list above is exclusive.
+         *
+         * @param bool $exclude
+         */
+        public function setExclude($exclude)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getExclude()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\AndroidPublisher\UserCountriesTargeting registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCountryCodes()
-    {
-    }
-    /**
-     * Indicates if the list above is exclusive.
-     *
-     * @param bool $exclude
-     */
-    public function setExclude($exclude)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getExclude()
+    class Google_Service_AndroidPublisher_UserCountriesTargeting extends \Google\Service\AndroidPublisher\UserCountriesTargeting
     {
     }
 }

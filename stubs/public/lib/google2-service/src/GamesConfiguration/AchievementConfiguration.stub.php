@@ -21,190 +21,199 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GamesConfiguration;
-
-class AchievementConfiguration extends \Google\Model
-{
-    /**
-     * Default value. This value is unused.
-     */
-    public const ACHIEVEMENT_TYPE_ACHIEVEMENT_TYPE_UNSPECIFIED = 'ACHIEVEMENT_TYPE_UNSPECIFIED';
-    /**
-     * Achievement is either locked or unlocked.
-     */
-    public const ACHIEVEMENT_TYPE_STANDARD = 'STANDARD';
-    /**
-     * Achievement is incremental.
-     */
-    public const ACHIEVEMENT_TYPE_INCREMENTAL = 'INCREMENTAL';
-    /**
-     * Default value. This value is unused.
-     */
-    public const INITIAL_STATE_INITIAL_STATE_UNSPECIFIED = 'INITIAL_STATE_UNSPECIFIED';
-    /**
-     * Achievement is hidden.
-     */
-    public const INITIAL_STATE_HIDDEN = 'HIDDEN';
-    /**
-     * Achievement is revealed.
-     */
-    public const INITIAL_STATE_REVEALED = 'REVEALED';
-    /**
-     * The type of the achievement.
-     *
-     * @var string
-     */
-    public $achievementType;
-    protected $draftType = AchievementConfigurationDetail::class;
-    protected $draftDataType = '';
-    /**
-     * The ID of the achievement.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * The initial state of the achievement.
-     *
-     * @var string
-     */
-    public $initialState;
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `gamesConfiguration#achievementConfiguration`.
-     *
-     * @var string
-     */
-    public $kind;
-    protected $publishedType = AchievementConfigurationDetail::class;
-    protected $publishedDataType = '';
-    /**
-     * Steps to unlock. Only applicable to incremental achievements.
-     *
-     * @var int
-     */
-    public $stepsToUnlock;
-    /**
-     * The token for this resource.
-     *
-     * @var string
-     */
-    public $token;
-    /**
-     * The type of the achievement.
-     *
-     * Accepted values: ACHIEVEMENT_TYPE_UNSPECIFIED, STANDARD, INCREMENTAL
-     *
-     * @param self::ACHIEVEMENT_TYPE_* $achievementType
-     */
-    public function setAchievementType($achievementType)
+namespace Google\Service\GamesConfiguration {
+    class AchievementConfiguration extends \Google\Model
     {
+        /**
+         * Default value. This value is unused.
+         */
+        public const ACHIEVEMENT_TYPE_ACHIEVEMENT_TYPE_UNSPECIFIED = 'ACHIEVEMENT_TYPE_UNSPECIFIED';
+        /**
+         * Achievement is either locked or unlocked.
+         */
+        public const ACHIEVEMENT_TYPE_STANDARD = 'STANDARD';
+        /**
+         * Achievement is incremental.
+         */
+        public const ACHIEVEMENT_TYPE_INCREMENTAL = 'INCREMENTAL';
+        /**
+         * Default value. This value is unused.
+         */
+        public const INITIAL_STATE_INITIAL_STATE_UNSPECIFIED = 'INITIAL_STATE_UNSPECIFIED';
+        /**
+         * Achievement is hidden.
+         */
+        public const INITIAL_STATE_HIDDEN = 'HIDDEN';
+        /**
+         * Achievement is revealed.
+         */
+        public const INITIAL_STATE_REVEALED = 'REVEALED';
+        /**
+         * The type of the achievement.
+         *
+         * @var string
+         */
+        public $achievementType;
+        protected $draftType = AchievementConfigurationDetail::class;
+        protected $draftDataType = '';
+        /**
+         * The ID of the achievement.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * The initial state of the achievement.
+         *
+         * @var string
+         */
+        public $initialState;
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `gamesConfiguration#achievementConfiguration`.
+         *
+         * @var string
+         */
+        public $kind;
+        protected $publishedType = AchievementConfigurationDetail::class;
+        protected $publishedDataType = '';
+        /**
+         * Steps to unlock. Only applicable to incremental achievements.
+         *
+         * @var int
+         */
+        public $stepsToUnlock;
+        /**
+         * The token for this resource.
+         *
+         * @var string
+         */
+        public $token;
+        /**
+         * The type of the achievement.
+         *
+         * Accepted values: ACHIEVEMENT_TYPE_UNSPECIFIED, STANDARD, INCREMENTAL
+         *
+         * @param self::ACHIEVEMENT_TYPE_* $achievementType
+         */
+        public function setAchievementType($achievementType)
+        {
+        }
+        /**
+         * @return self::ACHIEVEMENT_TYPE_*
+         */
+        public function getAchievementType()
+        {
+        }
+        /**
+         * The draft data of the achievement.
+         *
+         * @param AchievementConfigurationDetail $draft
+         */
+        public function setDraft(AchievementConfigurationDetail $draft)
+        {
+        }
+        /**
+         * @return AchievementConfigurationDetail
+         */
+        public function getDraft()
+        {
+        }
+        /**
+         * The ID of the achievement.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * The initial state of the achievement.
+         *
+         * Accepted values: INITIAL_STATE_UNSPECIFIED, HIDDEN, REVEALED
+         *
+         * @param self::INITIAL_STATE_* $initialState
+         */
+        public function setInitialState($initialState)
+        {
+        }
+        /**
+         * @return self::INITIAL_STATE_*
+         */
+        public function getInitialState()
+        {
+        }
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `gamesConfiguration#achievementConfiguration`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The read-only published data of the achievement.
+         *
+         * @param AchievementConfigurationDetail $published
+         */
+        public function setPublished(AchievementConfigurationDetail $published)
+        {
+        }
+        /**
+         * @return AchievementConfigurationDetail
+         */
+        public function getPublished()
+        {
+        }
+        /**
+         * Steps to unlock. Only applicable to incremental achievements.
+         *
+         * @param int $stepsToUnlock
+         */
+        public function setStepsToUnlock($stepsToUnlock)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getStepsToUnlock()
+        {
+        }
+        /**
+         * The token for this resource.
+         *
+         * @param string $token
+         */
+        public function setToken($token)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::ACHIEVEMENT_TYPE_*
+     * Runtime class alias of \Google\Service\GamesConfiguration\AchievementConfiguration registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAchievementType()
-    {
-    }
-    /**
-     * The draft data of the achievement.
-     *
-     * @param AchievementConfigurationDetail $draft
-     */
-    public function setDraft(AchievementConfigurationDetail $draft)
-    {
-    }
-    /**
-     * @return AchievementConfigurationDetail
-     */
-    public function getDraft()
-    {
-    }
-    /**
-     * The ID of the achievement.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * The initial state of the achievement.
-     *
-     * Accepted values: INITIAL_STATE_UNSPECIFIED, HIDDEN, REVEALED
-     *
-     * @param self::INITIAL_STATE_* $initialState
-     */
-    public function setInitialState($initialState)
-    {
-    }
-    /**
-     * @return self::INITIAL_STATE_*
-     */
-    public function getInitialState()
-    {
-    }
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `gamesConfiguration#achievementConfiguration`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The read-only published data of the achievement.
-     *
-     * @param AchievementConfigurationDetail $published
-     */
-    public function setPublished(AchievementConfigurationDetail $published)
-    {
-    }
-    /**
-     * @return AchievementConfigurationDetail
-     */
-    public function getPublished()
-    {
-    }
-    /**
-     * Steps to unlock. Only applicable to incremental achievements.
-     *
-     * @param int $stepsToUnlock
-     */
-    public function setStepsToUnlock($stepsToUnlock)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getStepsToUnlock()
-    {
-    }
-    /**
-     * The token for this resource.
-     *
-     * @param string $token
-     */
-    public function setToken($token)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getToken()
+    class Google_Service_GamesConfiguration_AchievementConfiguration extends \Google\Service\GamesConfiguration\AchievementConfiguration
     {
     }
 }

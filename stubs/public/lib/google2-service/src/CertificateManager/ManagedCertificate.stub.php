@@ -21,161 +21,170 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CertificateManager;
-
-class ManagedCertificate extends \Google\Collection
-{
-    /**
-     * State is unspecified.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * Certificate Manager attempts to provision or renew the certificate. If the
-     * process takes longer than expected, consult the `provisioning_issue` field.
-     */
-    public const STATE_PROVISIONING = 'PROVISIONING';
-    /**
-     * Multiple certificate provisioning attempts failed and Certificate Manager
-     * gave up. To try again, delete and create a new managed Certificate
-     * resource. For details see the `provisioning_issue` field.
-     */
-    public const STATE_FAILED = 'FAILED';
-    /**
-     * The certificate management is working, and a certificate has been
-     * provisioned.
-     */
-    public const STATE_ACTIVE = 'ACTIVE';
-    protected $collection_key = 'domains';
-    protected $authorizationAttemptInfoType = AuthorizationAttemptInfo::class;
-    protected $authorizationAttemptInfoDataType = 'array';
-    /**
-     * Optional. Immutable. Authorizations that will be used for performing domain
-     * authorization.
-     *
-     * @var string[]
-     */
-    public $dnsAuthorizations;
-    /**
-     * Optional. Immutable. The domains for which a managed SSL certificate will
-     * be generated. Wildcard domains are only supported with DNS challenge
-     * resolution.
-     *
-     * @var string[]
-     */
-    public $domains;
-    /**
-     * Optional. Immutable. The resource name for a CertificateIssuanceConfig used
-     * to configure private PKI certificates in the format
-     * `projects/locations/certificateIssuanceConfigs`. If this field is not set,
-     * the certificates will instead be publicly signed as documented at
-     * https://cloud.google.com/load-balancing/docs/ssl-certificates/google-
-     * managed-certs#caa.
-     *
-     * @var string
-     */
-    public $issuanceConfig;
-    protected $provisioningIssueType = ProvisioningIssue::class;
-    protected $provisioningIssueDataType = '';
-    /**
-     * Output only. State of the managed certificate resource.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Output only. Detailed state of the latest authorization attempt for each
-     * domain specified for managed certificate resource.
-     *
-     * @param AuthorizationAttemptInfo[] $authorizationAttemptInfo
-     */
-    public function setAuthorizationAttemptInfo($authorizationAttemptInfo)
+namespace Google\Service\CertificateManager {
+    class ManagedCertificate extends \Google\Collection
     {
+        /**
+         * State is unspecified.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * Certificate Manager attempts to provision or renew the certificate. If the
+         * process takes longer than expected, consult the `provisioning_issue` field.
+         */
+        public const STATE_PROVISIONING = 'PROVISIONING';
+        /**
+         * Multiple certificate provisioning attempts failed and Certificate Manager
+         * gave up. To try again, delete and create a new managed Certificate
+         * resource. For details see the `provisioning_issue` field.
+         */
+        public const STATE_FAILED = 'FAILED';
+        /**
+         * The certificate management is working, and a certificate has been
+         * provisioned.
+         */
+        public const STATE_ACTIVE = 'ACTIVE';
+        protected $collection_key = 'domains';
+        protected $authorizationAttemptInfoType = AuthorizationAttemptInfo::class;
+        protected $authorizationAttemptInfoDataType = 'array';
+        /**
+         * Optional. Immutable. Authorizations that will be used for performing domain
+         * authorization.
+         *
+         * @var string[]
+         */
+        public $dnsAuthorizations;
+        /**
+         * Optional. Immutable. The domains for which a managed SSL certificate will
+         * be generated. Wildcard domains are only supported with DNS challenge
+         * resolution.
+         *
+         * @var string[]
+         */
+        public $domains;
+        /**
+         * Optional. Immutable. The resource name for a CertificateIssuanceConfig used
+         * to configure private PKI certificates in the format
+         * `projects/locations/certificateIssuanceConfigs`. If this field is not set,
+         * the certificates will instead be publicly signed as documented at
+         * https://cloud.google.com/load-balancing/docs/ssl-certificates/google-
+         * managed-certs#caa.
+         *
+         * @var string
+         */
+        public $issuanceConfig;
+        protected $provisioningIssueType = ProvisioningIssue::class;
+        protected $provisioningIssueDataType = '';
+        /**
+         * Output only. State of the managed certificate resource.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Output only. Detailed state of the latest authorization attempt for each
+         * domain specified for managed certificate resource.
+         *
+         * @param AuthorizationAttemptInfo[] $authorizationAttemptInfo
+         */
+        public function setAuthorizationAttemptInfo($authorizationAttemptInfo)
+        {
+        }
+        /**
+         * @return AuthorizationAttemptInfo[]
+         */
+        public function getAuthorizationAttemptInfo()
+        {
+        }
+        /**
+         * Optional. Immutable. Authorizations that will be used for performing domain
+         * authorization.
+         *
+         * @param string[] $dnsAuthorizations
+         */
+        public function setDnsAuthorizations($dnsAuthorizations)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDnsAuthorizations()
+        {
+        }
+        /**
+         * Optional. Immutable. The domains for which a managed SSL certificate will
+         * be generated. Wildcard domains are only supported with DNS challenge
+         * resolution.
+         *
+         * @param string[] $domains
+         */
+        public function setDomains($domains)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDomains()
+        {
+        }
+        /**
+         * Optional. Immutable. The resource name for a CertificateIssuanceConfig used
+         * to configure private PKI certificates in the format
+         * `projects/locations/certificateIssuanceConfigs`. If this field is not set,
+         * the certificates will instead be publicly signed as documented at
+         * https://cloud.google.com/load-balancing/docs/ssl-certificates/google-
+         * managed-certs#caa.
+         *
+         * @param string $issuanceConfig
+         */
+        public function setIssuanceConfig($issuanceConfig)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIssuanceConfig()
+        {
+        }
+        /**
+         * Output only. Information about issues with provisioning a Managed
+         * Certificate.
+         *
+         * @param ProvisioningIssue $provisioningIssue
+         */
+        public function setProvisioningIssue(ProvisioningIssue $provisioningIssue)
+        {
+        }
+        /**
+         * @return ProvisioningIssue
+         */
+        public function getProvisioningIssue()
+        {
+        }
+        /**
+         * Output only. State of the managed certificate resource.
+         *
+         * Accepted values: STATE_UNSPECIFIED, PROVISIONING, FAILED, ACTIVE
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AuthorizationAttemptInfo[]
+     * Runtime class alias of \Google\Service\CertificateManager\ManagedCertificate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuthorizationAttemptInfo()
-    {
-    }
-    /**
-     * Optional. Immutable. Authorizations that will be used for performing domain
-     * authorization.
-     *
-     * @param string[] $dnsAuthorizations
-     */
-    public function setDnsAuthorizations($dnsAuthorizations)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getDnsAuthorizations()
-    {
-    }
-    /**
-     * Optional. Immutable. The domains for which a managed SSL certificate will
-     * be generated. Wildcard domains are only supported with DNS challenge
-     * resolution.
-     *
-     * @param string[] $domains
-     */
-    public function setDomains($domains)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getDomains()
-    {
-    }
-    /**
-     * Optional. Immutable. The resource name for a CertificateIssuanceConfig used
-     * to configure private PKI certificates in the format
-     * `projects/locations/certificateIssuanceConfigs`. If this field is not set,
-     * the certificates will instead be publicly signed as documented at
-     * https://cloud.google.com/load-balancing/docs/ssl-certificates/google-
-     * managed-certs#caa.
-     *
-     * @param string $issuanceConfig
-     */
-    public function setIssuanceConfig($issuanceConfig)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIssuanceConfig()
-    {
-    }
-    /**
-     * Output only. Information about issues with provisioning a Managed
-     * Certificate.
-     *
-     * @param ProvisioningIssue $provisioningIssue
-     */
-    public function setProvisioningIssue(ProvisioningIssue $provisioningIssue)
-    {
-    }
-    /**
-     * @return ProvisioningIssue
-     */
-    public function getProvisioningIssue()
-    {
-    }
-    /**
-     * Output only. State of the managed certificate resource.
-     *
-     * Accepted values: STATE_UNSPECIFIED, PROVISIONING, FAILED, ACTIVE
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
+    class Google_Service_CertificateManager_ManagedCertificate extends \Google\Service\CertificateManager\ManagedCertificate
     {
     }
 }

@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedSegmentedMembershipCount extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $memberType;
-    /**
-     * @var int
-     */
-    public $membershipCount;
-    /**
-     * @var string
-     */
-    public $membershipState;
-    /**
-     * @param string
-     */
-    public function setMemberType($memberType)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedSegmentedMembershipCount extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $memberType;
+        /**
+         * @var int
+         */
+        public $membershipCount;
+        /**
+         * @var string
+         */
+        public $membershipState;
+        /**
+         * @param string
+         */
+        public function setMemberType($memberType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMemberType()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setMembershipCount($membershipCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMembershipCount()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMembershipState($membershipState)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMembershipState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedSegmentedMembershipCount registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMemberType()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setMembershipCount($membershipCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMembershipCount()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMembershipState($membershipState)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMembershipState()
+    class Google_Service_CloudSearch_AppsDynamiteSharedSegmentedMembershipCount extends \Google\Service\CloudSearch\AppsDynamiteSharedSegmentedMembershipCount
     {
     }
 }

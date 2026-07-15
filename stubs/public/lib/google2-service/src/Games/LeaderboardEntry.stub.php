@@ -21,204 +21,213 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Games;
-
-class LeaderboardEntry extends \Google\Model
-{
-    /**
-     * The score is an all-time score.
-     */
-    public const TIME_SPAN_ALL_TIME = 'ALL_TIME';
-    /**
-     * The score is a weekly score.
-     */
-    public const TIME_SPAN_WEEKLY = 'WEEKLY';
-    /**
-     * The score is a daily score.
-     */
-    public const TIME_SPAN_DAILY = 'DAILY';
-    /**
-     * The localized string for the numerical value of this score.
-     *
-     * @var string
-     */
-    public $formattedScore;
-    /**
-     * The localized string for the rank of this score for this leaderboard.
-     *
-     * @var string
-     */
-    public $formattedScoreRank;
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#leaderboardEntry`.
-     *
-     * @var string
-     */
-    public $kind;
-    protected $playerType = Player::class;
-    protected $playerDataType = '';
-    /**
-     * The rank of this score for this leaderboard.
-     *
-     * @var string
-     */
-    public $scoreRank;
-    /**
-     * Additional information about the score. Values must contain no more than 64
-     * URI-safe characters as defined by section 2.3 of RFC 3986.
-     *
-     * @var string
-     */
-    public $scoreTag;
-    /**
-     * The numerical value of this score.
-     *
-     * @var string
-     */
-    public $scoreValue;
-    /**
-     * The time span of this high score.
-     *
-     * @var string
-     */
-    public $timeSpan;
-    /**
-     * The timestamp at which this score was recorded, in milliseconds since the
-     * epoch in UTC.
-     *
-     * @var string
-     */
-    public $writeTimestampMillis;
-    /**
-     * The localized string for the numerical value of this score.
-     *
-     * @param string $formattedScore
-     */
-    public function setFormattedScore($formattedScore)
+namespace Google\Service\Games {
+    class LeaderboardEntry extends \Google\Model
     {
+        /**
+         * The score is an all-time score.
+         */
+        public const TIME_SPAN_ALL_TIME = 'ALL_TIME';
+        /**
+         * The score is a weekly score.
+         */
+        public const TIME_SPAN_WEEKLY = 'WEEKLY';
+        /**
+         * The score is a daily score.
+         */
+        public const TIME_SPAN_DAILY = 'DAILY';
+        /**
+         * The localized string for the numerical value of this score.
+         *
+         * @var string
+         */
+        public $formattedScore;
+        /**
+         * The localized string for the rank of this score for this leaderboard.
+         *
+         * @var string
+         */
+        public $formattedScoreRank;
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#leaderboardEntry`.
+         *
+         * @var string
+         */
+        public $kind;
+        protected $playerType = Player::class;
+        protected $playerDataType = '';
+        /**
+         * The rank of this score for this leaderboard.
+         *
+         * @var string
+         */
+        public $scoreRank;
+        /**
+         * Additional information about the score. Values must contain no more than 64
+         * URI-safe characters as defined by section 2.3 of RFC 3986.
+         *
+         * @var string
+         */
+        public $scoreTag;
+        /**
+         * The numerical value of this score.
+         *
+         * @var string
+         */
+        public $scoreValue;
+        /**
+         * The time span of this high score.
+         *
+         * @var string
+         */
+        public $timeSpan;
+        /**
+         * The timestamp at which this score was recorded, in milliseconds since the
+         * epoch in UTC.
+         *
+         * @var string
+         */
+        public $writeTimestampMillis;
+        /**
+         * The localized string for the numerical value of this score.
+         *
+         * @param string $formattedScore
+         */
+        public function setFormattedScore($formattedScore)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFormattedScore()
+        {
+        }
+        /**
+         * The localized string for the rank of this score for this leaderboard.
+         *
+         * @param string $formattedScoreRank
+         */
+        public function setFormattedScoreRank($formattedScoreRank)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFormattedScoreRank()
+        {
+        }
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#leaderboardEntry`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The player who holds this score.
+         *
+         * @param Player $player
+         */
+        public function setPlayer(Player $player)
+        {
+        }
+        /**
+         * @return Player
+         */
+        public function getPlayer()
+        {
+        }
+        /**
+         * The rank of this score for this leaderboard.
+         *
+         * @param string $scoreRank
+         */
+        public function setScoreRank($scoreRank)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScoreRank()
+        {
+        }
+        /**
+         * Additional information about the score. Values must contain no more than 64
+         * URI-safe characters as defined by section 2.3 of RFC 3986.
+         *
+         * @param string $scoreTag
+         */
+        public function setScoreTag($scoreTag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScoreTag()
+        {
+        }
+        /**
+         * The numerical value of this score.
+         *
+         * @param string $scoreValue
+         */
+        public function setScoreValue($scoreValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScoreValue()
+        {
+        }
+        /**
+         * The time span of this high score.
+         *
+         * Accepted values: ALL_TIME, WEEKLY, DAILY
+         *
+         * @param self::TIME_SPAN_* $timeSpan
+         */
+        public function setTimeSpan($timeSpan)
+        {
+        }
+        /**
+         * @return self::TIME_SPAN_*
+         */
+        public function getTimeSpan()
+        {
+        }
+        /**
+         * The timestamp at which this score was recorded, in milliseconds since the
+         * epoch in UTC.
+         *
+         * @param string $writeTimestampMillis
+         */
+        public function setWriteTimestampMillis($writeTimestampMillis)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWriteTimestampMillis()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Games\LeaderboardEntry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFormattedScore()
-    {
-    }
-    /**
-     * The localized string for the rank of this score for this leaderboard.
-     *
-     * @param string $formattedScoreRank
-     */
-    public function setFormattedScoreRank($formattedScoreRank)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFormattedScoreRank()
-    {
-    }
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#leaderboardEntry`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The player who holds this score.
-     *
-     * @param Player $player
-     */
-    public function setPlayer(Player $player)
-    {
-    }
-    /**
-     * @return Player
-     */
-    public function getPlayer()
-    {
-    }
-    /**
-     * The rank of this score for this leaderboard.
-     *
-     * @param string $scoreRank
-     */
-    public function setScoreRank($scoreRank)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getScoreRank()
-    {
-    }
-    /**
-     * Additional information about the score. Values must contain no more than 64
-     * URI-safe characters as defined by section 2.3 of RFC 3986.
-     *
-     * @param string $scoreTag
-     */
-    public function setScoreTag($scoreTag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getScoreTag()
-    {
-    }
-    /**
-     * The numerical value of this score.
-     *
-     * @param string $scoreValue
-     */
-    public function setScoreValue($scoreValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getScoreValue()
-    {
-    }
-    /**
-     * The time span of this high score.
-     *
-     * Accepted values: ALL_TIME, WEEKLY, DAILY
-     *
-     * @param self::TIME_SPAN_* $timeSpan
-     */
-    public function setTimeSpan($timeSpan)
-    {
-    }
-    /**
-     * @return self::TIME_SPAN_*
-     */
-    public function getTimeSpan()
-    {
-    }
-    /**
-     * The timestamp at which this score was recorded, in milliseconds since the
-     * epoch in UTC.
-     *
-     * @param string $writeTimestampMillis
-     */
-    public function setWriteTimestampMillis($writeTimestampMillis)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWriteTimestampMillis()
+    class Google_Service_Games_LeaderboardEntry extends \Google\Service\Games\LeaderboardEntry
     {
     }
 }

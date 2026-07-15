@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_bigbluebuttonbn\local\helpers;
 
+use calendar_event;
+use mod_bigbluebuttonbn\instance;
+use mod_bigbluebuttonbn\logger;
+use mod_bigbluebuttonbn\plugin;
+use stdClass;
 /**
  * Utility class for all instance (module) routines helper.
  *

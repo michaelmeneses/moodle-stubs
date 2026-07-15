@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager;
-
-class RevertTemplateResponse extends \Google\Model
-{
-    protected $templateType = CustomTemplate::class;
-    protected $templateDataType = '';
-    /**
-     * Template as it appears in the latest container version since the last
-     * workspace synchronization operation. If no template is present, that means
-     * the template was deleted in the latest container version.
-     *
-     * @param CustomTemplate $template
-     */
-    public function setTemplate(CustomTemplate $template)
+namespace Google\Service\TagManager {
+    class RevertTemplateResponse extends \Google\Model
     {
+        protected $templateType = CustomTemplate::class;
+        protected $templateDataType = '';
+        /**
+         * Template as it appears in the latest container version since the last
+         * workspace synchronization operation. If no template is present, that means
+         * the template was deleted in the latest container version.
+         *
+         * @param CustomTemplate $template
+         */
+        public function setTemplate(CustomTemplate $template)
+        {
+        }
+        /**
+         * @return CustomTemplate
+         */
+        public function getTemplate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CustomTemplate
+     * Runtime class alias of \Google\Service\TagManager\RevertTemplateResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTemplate()
+    class Google_Service_TagManager_RevertTemplateResponse extends \Google\Service\TagManager\RevertTemplateResponse
     {
     }
 }

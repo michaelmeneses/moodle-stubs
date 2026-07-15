@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class MoveInEvent extends \Google\Model
-{
-    /**
-     * An unique partition identifier describing the source change stream
-     * partition that recorded changes for the key range that is moving into this
-     * partition.
-     *
-     * @var string
-     */
-    public $sourcePartitionToken;
-    /**
-     * An unique partition identifier describing the source change stream
-     * partition that recorded changes for the key range that is moving into this
-     * partition.
-     *
-     * @param string $sourcePartitionToken
-     */
-    public function setSourcePartitionToken($sourcePartitionToken)
+namespace Google\Service\Spanner {
+    class MoveInEvent extends \Google\Model
     {
+        /**
+         * An unique partition identifier describing the source change stream
+         * partition that recorded changes for the key range that is moving into this
+         * partition.
+         *
+         * @var string
+         */
+        public $sourcePartitionToken;
+        /**
+         * An unique partition identifier describing the source change stream
+         * partition that recorded changes for the key range that is moving into this
+         * partition.
+         *
+         * @param string $sourcePartitionToken
+         */
+        public function setSourcePartitionToken($sourcePartitionToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourcePartitionToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Spanner\MoveInEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSourcePartitionToken()
+    class Google_Service_Spanner_MoveInEvent extends \Google\Service\Spanner\MoveInEvent
     {
     }
 }

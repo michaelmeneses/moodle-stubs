@@ -8,6 +8,15 @@
  */
 namespace DI\Definition\Source;
 
+use DI\Definition\ArrayDefinition;
+use DI\Definition\AutowireDefinition;
+use DI\Definition\DecoratorDefinition;
+use DI\Definition\Definition;
+use DI\Definition\Exception\InvalidDefinition;
+use DI\Definition\FactoryDefinition;
+use DI\Definition\Helper\DefinitionHelper;
+use DI\Definition\ObjectDefinition;
+use DI\Definition\ValueDefinition;
 /**
  * Turns raw definitions/definition helpers into definitions ready
  * to be resolved or compiled.

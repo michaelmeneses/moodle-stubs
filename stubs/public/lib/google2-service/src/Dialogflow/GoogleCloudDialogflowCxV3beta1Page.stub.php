@@ -21,223 +21,232 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3beta1Page extends \Google\Collection
-{
-    protected $collection_key = 'transitionRoutes';
-    protected $advancedSettingsType = GoogleCloudDialogflowCxV3beta1AdvancedSettings::class;
-    protected $advancedSettingsDataType = '';
-    /**
-     * The description of the page. The maximum length is 500 characters.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Required. The human-readable name of the page, unique within the flow.
-     *
-     * @var string
-     */
-    public $displayName;
-    protected $entryFulfillmentType = GoogleCloudDialogflowCxV3beta1Fulfillment::class;
-    protected $entryFulfillmentDataType = '';
-    protected $eventHandlersType = GoogleCloudDialogflowCxV3beta1EventHandler::class;
-    protected $eventHandlersDataType = 'array';
-    protected $formType = GoogleCloudDialogflowCxV3beta1Form::class;
-    protected $formDataType = '';
-    protected $knowledgeConnectorSettingsType = GoogleCloudDialogflowCxV3beta1KnowledgeConnectorSettings::class;
-    protected $knowledgeConnectorSettingsDataType = '';
-    /**
-     * The unique identifier of the page. Required for the Pages.UpdatePage
-     * method. Pages.CreatePage populates the name automatically. Format:
-     * `projects//locations//agents//flows//pages/`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Ordered list of `TransitionRouteGroups` added to the page. Transition route
-     * groups must be unique within a page. If the page links both flow-level
-     * transition route groups and agent-level transition route groups, the flow-
-     * level ones will have higher priority and will be put before the agent-level
-     * ones. * If multiple transition routes within a page scope refer to the same
-     * intent, then the precedence order is: page's transition route -> page's
-     * transition route group -> flow's transition routes. * If multiple
-     * transition route groups within a page contain the same intent, then the
-     * first group in the ordered list takes precedence.
-     * Format:`projects//locations//agents//flows//transitionRouteGroups/` or
-     * `projects//locations//agents//transitionRouteGroups/` for agent-level
-     * groups.
-     *
-     * @var string[]
-     */
-    public $transitionRouteGroups;
-    protected $transitionRoutesType = GoogleCloudDialogflowCxV3beta1TransitionRoute::class;
-    protected $transitionRoutesDataType = 'array';
-    /**
-     * Hierarchical advanced settings for this page. The settings exposed at the
-     * lower level overrides the settings exposed at the higher level.
-     *
-     * @param GoogleCloudDialogflowCxV3beta1AdvancedSettings $advancedSettings
-     */
-    public function setAdvancedSettings(GoogleCloudDialogflowCxV3beta1AdvancedSettings $advancedSettings)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3beta1Page extends \Google\Collection
     {
+        protected $collection_key = 'transitionRoutes';
+        protected $advancedSettingsType = GoogleCloudDialogflowCxV3beta1AdvancedSettings::class;
+        protected $advancedSettingsDataType = '';
+        /**
+         * The description of the page. The maximum length is 500 characters.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Required. The human-readable name of the page, unique within the flow.
+         *
+         * @var string
+         */
+        public $displayName;
+        protected $entryFulfillmentType = GoogleCloudDialogflowCxV3beta1Fulfillment::class;
+        protected $entryFulfillmentDataType = '';
+        protected $eventHandlersType = GoogleCloudDialogflowCxV3beta1EventHandler::class;
+        protected $eventHandlersDataType = 'array';
+        protected $formType = GoogleCloudDialogflowCxV3beta1Form::class;
+        protected $formDataType = '';
+        protected $knowledgeConnectorSettingsType = GoogleCloudDialogflowCxV3beta1KnowledgeConnectorSettings::class;
+        protected $knowledgeConnectorSettingsDataType = '';
+        /**
+         * The unique identifier of the page. Required for the Pages.UpdatePage
+         * method. Pages.CreatePage populates the name automatically. Format:
+         * `projects//locations//agents//flows//pages/`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Ordered list of `TransitionRouteGroups` added to the page. Transition route
+         * groups must be unique within a page. If the page links both flow-level
+         * transition route groups and agent-level transition route groups, the flow-
+         * level ones will have higher priority and will be put before the agent-level
+         * ones. * If multiple transition routes within a page scope refer to the same
+         * intent, then the precedence order is: page's transition route -> page's
+         * transition route group -> flow's transition routes. * If multiple
+         * transition route groups within a page contain the same intent, then the
+         * first group in the ordered list takes precedence.
+         * Format:`projects//locations//agents//flows//transitionRouteGroups/` or
+         * `projects//locations//agents//transitionRouteGroups/` for agent-level
+         * groups.
+         *
+         * @var string[]
+         */
+        public $transitionRouteGroups;
+        protected $transitionRoutesType = GoogleCloudDialogflowCxV3beta1TransitionRoute::class;
+        protected $transitionRoutesDataType = 'array';
+        /**
+         * Hierarchical advanced settings for this page. The settings exposed at the
+         * lower level overrides the settings exposed at the higher level.
+         *
+         * @param GoogleCloudDialogflowCxV3beta1AdvancedSettings $advancedSettings
+         */
+        public function setAdvancedSettings(GoogleCloudDialogflowCxV3beta1AdvancedSettings $advancedSettings)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3beta1AdvancedSettings
+         */
+        public function getAdvancedSettings()
+        {
+        }
+        /**
+         * The description of the page. The maximum length is 500 characters.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Required. The human-readable name of the page, unique within the flow.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The fulfillment to call when the session is entering the page.
+         *
+         * @param GoogleCloudDialogflowCxV3beta1Fulfillment $entryFulfillment
+         */
+        public function setEntryFulfillment(GoogleCloudDialogflowCxV3beta1Fulfillment $entryFulfillment)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3beta1Fulfillment
+         */
+        public function getEntryFulfillment()
+        {
+        }
+        /**
+         * Handlers associated with the page to handle events such as webhook errors,
+         * no match or no input.
+         *
+         * @param GoogleCloudDialogflowCxV3beta1EventHandler[] $eventHandlers
+         */
+        public function setEventHandlers($eventHandlers)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3beta1EventHandler[]
+         */
+        public function getEventHandlers()
+        {
+        }
+        /**
+         * The form associated with the page, used for collecting parameters relevant
+         * to the page.
+         *
+         * @param GoogleCloudDialogflowCxV3beta1Form $form
+         */
+        public function setForm(GoogleCloudDialogflowCxV3beta1Form $form)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3beta1Form
+         */
+        public function getForm()
+        {
+        }
+        /**
+         * Optional. Knowledge connector configuration.
+         *
+         * @param GoogleCloudDialogflowCxV3beta1KnowledgeConnectorSettings $knowledgeConnectorSettings
+         */
+        public function setKnowledgeConnectorSettings(GoogleCloudDialogflowCxV3beta1KnowledgeConnectorSettings $knowledgeConnectorSettings)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3beta1KnowledgeConnectorSettings
+         */
+        public function getKnowledgeConnectorSettings()
+        {
+        }
+        /**
+         * The unique identifier of the page. Required for the Pages.UpdatePage
+         * method. Pages.CreatePage populates the name automatically. Format:
+         * `projects//locations//agents//flows//pages/`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Ordered list of `TransitionRouteGroups` added to the page. Transition route
+         * groups must be unique within a page. If the page links both flow-level
+         * transition route groups and agent-level transition route groups, the flow-
+         * level ones will have higher priority and will be put before the agent-level
+         * ones. * If multiple transition routes within a page scope refer to the same
+         * intent, then the precedence order is: page's transition route -> page's
+         * transition route group -> flow's transition routes. * If multiple
+         * transition route groups within a page contain the same intent, then the
+         * first group in the ordered list takes precedence.
+         * Format:`projects//locations//agents//flows//transitionRouteGroups/` or
+         * `projects//locations//agents//transitionRouteGroups/` for agent-level
+         * groups.
+         *
+         * @param string[] $transitionRouteGroups
+         */
+        public function setTransitionRouteGroups($transitionRouteGroups)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTransitionRouteGroups()
+        {
+        }
+        /**
+         * A list of transitions for the transition rules of this page. They route the
+         * conversation to another page in the same flow, or another flow. When we are
+         * in a certain page, the TransitionRoutes are evaluated in the following
+         * order: * TransitionRoutes defined in the page with intent specified. *
+         * TransitionRoutes defined in the transition route groups with intent
+         * specified. * TransitionRoutes defined in flow with intent specified. *
+         * TransitionRoutes defined in the transition route groups with intent
+         * specified. * TransitionRoutes defined in the page with only condition
+         * specified. * TransitionRoutes defined in the transition route groups with
+         * only condition specified.
+         *
+         * @param GoogleCloudDialogflowCxV3beta1TransitionRoute[] $transitionRoutes
+         */
+        public function setTransitionRoutes($transitionRoutes)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3beta1TransitionRoute[]
+         */
+        public function getTransitionRoutes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowCxV3beta1AdvancedSettings
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3beta1Page registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdvancedSettings()
-    {
-    }
-    /**
-     * The description of the page. The maximum length is 500 characters.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Required. The human-readable name of the page, unique within the flow.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The fulfillment to call when the session is entering the page.
-     *
-     * @param GoogleCloudDialogflowCxV3beta1Fulfillment $entryFulfillment
-     */
-    public function setEntryFulfillment(GoogleCloudDialogflowCxV3beta1Fulfillment $entryFulfillment)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3beta1Fulfillment
-     */
-    public function getEntryFulfillment()
-    {
-    }
-    /**
-     * Handlers associated with the page to handle events such as webhook errors,
-     * no match or no input.
-     *
-     * @param GoogleCloudDialogflowCxV3beta1EventHandler[] $eventHandlers
-     */
-    public function setEventHandlers($eventHandlers)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3beta1EventHandler[]
-     */
-    public function getEventHandlers()
-    {
-    }
-    /**
-     * The form associated with the page, used for collecting parameters relevant
-     * to the page.
-     *
-     * @param GoogleCloudDialogflowCxV3beta1Form $form
-     */
-    public function setForm(GoogleCloudDialogflowCxV3beta1Form $form)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3beta1Form
-     */
-    public function getForm()
-    {
-    }
-    /**
-     * Optional. Knowledge connector configuration.
-     *
-     * @param GoogleCloudDialogflowCxV3beta1KnowledgeConnectorSettings $knowledgeConnectorSettings
-     */
-    public function setKnowledgeConnectorSettings(GoogleCloudDialogflowCxV3beta1KnowledgeConnectorSettings $knowledgeConnectorSettings)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3beta1KnowledgeConnectorSettings
-     */
-    public function getKnowledgeConnectorSettings()
-    {
-    }
-    /**
-     * The unique identifier of the page. Required for the Pages.UpdatePage
-     * method. Pages.CreatePage populates the name automatically. Format:
-     * `projects//locations//agents//flows//pages/`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Ordered list of `TransitionRouteGroups` added to the page. Transition route
-     * groups must be unique within a page. If the page links both flow-level
-     * transition route groups and agent-level transition route groups, the flow-
-     * level ones will have higher priority and will be put before the agent-level
-     * ones. * If multiple transition routes within a page scope refer to the same
-     * intent, then the precedence order is: page's transition route -> page's
-     * transition route group -> flow's transition routes. * If multiple
-     * transition route groups within a page contain the same intent, then the
-     * first group in the ordered list takes precedence.
-     * Format:`projects//locations//agents//flows//transitionRouteGroups/` or
-     * `projects//locations//agents//transitionRouteGroups/` for agent-level
-     * groups.
-     *
-     * @param string[] $transitionRouteGroups
-     */
-    public function setTransitionRouteGroups($transitionRouteGroups)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTransitionRouteGroups()
-    {
-    }
-    /**
-     * A list of transitions for the transition rules of this page. They route the
-     * conversation to another page in the same flow, or another flow. When we are
-     * in a certain page, the TransitionRoutes are evaluated in the following
-     * order: * TransitionRoutes defined in the page with intent specified. *
-     * TransitionRoutes defined in the transition route groups with intent
-     * specified. * TransitionRoutes defined in flow with intent specified. *
-     * TransitionRoutes defined in the transition route groups with intent
-     * specified. * TransitionRoutes defined in the page with only condition
-     * specified. * TransitionRoutes defined in the transition route groups with
-     * only condition specified.
-     *
-     * @param GoogleCloudDialogflowCxV3beta1TransitionRoute[] $transitionRoutes
-     */
-    public function setTransitionRoutes($transitionRoutes)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3beta1TransitionRoute[]
-     */
-    public function getTransitionRoutes()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3beta1Page extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3beta1Page
     {
     }
 }

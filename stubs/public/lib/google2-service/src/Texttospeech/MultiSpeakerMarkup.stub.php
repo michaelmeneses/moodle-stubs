@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Texttospeech;
-
-class MultiSpeakerMarkup extends \Google\Collection
-{
-    protected $collection_key = 'turns';
-    protected $turnsType = Turn::class;
-    protected $turnsDataType = 'array';
-    /**
-     * Required. Speaker turns.
-     *
-     * @param Turn[] $turns
-     */
-    public function setTurns($turns)
+namespace Google\Service\Texttospeech {
+    class MultiSpeakerMarkup extends \Google\Collection
     {
+        protected $collection_key = 'turns';
+        protected $turnsType = Turn::class;
+        protected $turnsDataType = 'array';
+        /**
+         * Required. Speaker turns.
+         *
+         * @param Turn[] $turns
+         */
+        public function setTurns($turns)
+        {
+        }
+        /**
+         * @return Turn[]
+         */
+        public function getTurns()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Turn[]
+     * Runtime class alias of \Google\Service\Texttospeech\MultiSpeakerMarkup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTurns()
+    class Google_Service_Texttospeech_MultiSpeakerMarkup extends \Google\Service\Texttospeech\MultiSpeakerMarkup
     {
     }
 }

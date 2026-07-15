@@ -20,60 +20,70 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core_cache;
-
-/**
- * Cache Loader supporting locking.
- *
- * This interface should be given to classes already implementing core_cache\loader_interface that also wish to support locking.
- * It outlines the required structure for utilising locking functionality when using a cache.
- *
- * Can be implemented by any class already implementing the core_cache\loader_interface interface.
- * @package core_cache
- * @copyright Sam Hemelryk
- * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-interface loader_with_locking_interface
-{
+namespace core_cache {
+    use core\exception\moodle_exception;
     /**
-     * Acquires a lock for the given key.
+     * Cache Loader supporting locking.
      *
-     * Please note that this happens automatically if the cache definition requires locking.
-     * it is still made a public method so that adhoc caches can use it if they choose.
-     * However this doesn't guarantee consistent access. It will become the responsibility of the calling code to ensure
-     * locks are acquired, checked, and released.
+     * This interface should be given to classes already implementing core_cache\loader_interface that also wish to support locking.
+     * It outlines the required structure for utilising locking functionality when using a cache.
      *
-     * Prior to Moodle 4,3 this function used to return false if the lock cannot be obtained. It
-     * now always returns true, and throws an exception if the lock cannot be obtained.
-     *
-     * @param string|int $key
-     * @return bool Always returns true (for backwards compatibility)
-     * @throws moodle_exception If the lock cannot be obtained after a timeout
+     * Can be implemented by any class already implementing the core_cache\loader_interface interface.
+     * @package core_cache
+     * @copyright Sam Hemelryk
+     * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
      */
-    public function acquire_lock($key);
+    interface loader_with_locking_interface
+    {
+        /**
+         * Acquires a lock for the given key.
+         *
+         * Please note that this happens automatically if the cache definition requires locking.
+         * it is still made a public method so that adhoc caches can use it if they choose.
+         * However this doesn't guarantee consistent access. It will become the responsibility of the calling code to ensure
+         * locks are acquired, checked, and released.
+         *
+         * Prior to Moodle 4,3 this function used to return false if the lock cannot be obtained. It
+         * now always returns true, and throws an exception if the lock cannot be obtained.
+         *
+         * @param string|int $key
+         * @return bool Always returns true (for backwards compatibility)
+         * @throws moodle_exception If the lock cannot be obtained after a timeout
+         */
+        public function acquire_lock($key);
+        /**
+         * Checks if the cache loader owns the lock for the given key.
+         *
+         * Please note that this happens automatically if the cache definition requires locking.
+         * it is still made a public method so that adhoc caches can use it if they choose.
+         * However this doesn't guarantee consistent access. It will become the responsibility of the calling code to ensure
+         * locks are acquired, checked, and released.
+         *
+         * @param string|int $key
+         * @return bool True if this code has the lock, false if there is a lock but this code doesn't have it,
+         *      null if there is no lock.
+         */
+        public function check_lock_state($key);
+        /**
+         * Releases the lock for the given key.
+         *
+         * Please note that this happens automatically if the cache definition requires locking.
+         * it is still made a public method so that adhoc caches can use it if they choose.
+         * However this doesn't guarantee consistent access. It will become the responsibility of the calling code to ensure
+         * locks are acquired, checked, and released.
+         *
+         * @param string|int $key
+         * @return bool True if the lock has been released, false if there was a problem releasing the lock.
+         */
+        public function release_lock($key);
+    }
+}
+namespace {
     /**
-     * Checks if the cache loader owns the lock for the given key.
-     *
-     * Please note that this happens automatically if the cache definition requires locking.
-     * it is still made a public method so that adhoc caches can use it if they choose.
-     * However this doesn't guarantee consistent access. It will become the responsibility of the calling code to ensure
-     * locks are acquired, checked, and released.
-     *
-     * @param string|int $key
-     * @return bool True if this code has the lock, false if there is a lock but this code doesn't have it,
-     *      null if there is no lock.
+     * Runtime class alias of \core_cache\loader_with_locking_interface registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function check_lock_state($key);
-    /**
-     * Releases the lock for the given key.
-     *
-     * Please note that this happens automatically if the cache definition requires locking.
-     * it is still made a public method so that adhoc caches can use it if they choose.
-     * However this doesn't guarantee consistent access. It will become the responsibility of the calling code to ensure
-     * locks are acquired, checked, and released.
-     *
-     * @param string|int $key
-     * @return bool True if the lock has been released, false if there was a problem releasing the lock.
-     */
-    public function release_lock($key);
+    interface cache_loader_with_locking extends \core_cache\loader_with_locking_interface
+    {
+    }
 }

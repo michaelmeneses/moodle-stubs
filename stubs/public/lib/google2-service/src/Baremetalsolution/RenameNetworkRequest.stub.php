@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Baremetalsolution;
-
-class RenameNetworkRequest extends \Google\Model
-{
-    /**
-     * Required. The new `id` of the network.
-     *
-     * @var string
-     */
-    public $newNetworkId;
-    /**
-     * Required. The new `id` of the network.
-     *
-     * @param string $newNetworkId
-     */
-    public function setNewNetworkId($newNetworkId)
+namespace Google\Service\Baremetalsolution {
+    class RenameNetworkRequest extends \Google\Model
     {
+        /**
+         * Required. The new `id` of the network.
+         *
+         * @var string
+         */
+        public $newNetworkId;
+        /**
+         * Required. The new `id` of the network.
+         *
+         * @param string $newNetworkId
+         */
+        public function setNewNetworkId($newNetworkId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNewNetworkId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Baremetalsolution\RenameNetworkRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNewNetworkId()
+    class Google_Service_Baremetalsolution_RenameNetworkRequest extends \Google\Service\Baremetalsolution\RenameNetworkRequest
     {
     }
 }

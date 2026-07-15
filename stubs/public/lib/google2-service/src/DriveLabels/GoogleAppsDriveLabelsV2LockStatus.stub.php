@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveLabels;
-
-class GoogleAppsDriveLabelsV2LockStatus extends \Google\Model
-{
-    /**
-     * Output only. Indicates whether this label component is the (direct) target
-     * of a label lock. A label component can be implicitly locked even if it's
-     * not the direct target of a label lock, in which case this field is set to
-     * false.
-     *
-     * @var bool
-     */
-    public $locked;
-    /**
-     * Output only. Indicates whether this label component is the (direct) target
-     * of a label lock. A label component can be implicitly locked even if it's
-     * not the direct target of a label lock, in which case this field is set to
-     * false.
-     *
-     * @param bool $locked
-     */
-    public function setLocked($locked)
+namespace Google\Service\DriveLabels {
+    class GoogleAppsDriveLabelsV2LockStatus extends \Google\Model
     {
+        /**
+         * Output only. Indicates whether this label component is the (direct) target
+         * of a label lock. A label component can be implicitly locked even if it's
+         * not the direct target of a label lock, in which case this field is set to
+         * false.
+         *
+         * @var bool
+         */
+        public $locked;
+        /**
+         * Output only. Indicates whether this label component is the (direct) target
+         * of a label lock. A label component can be implicitly locked even if it's
+         * not the direct target of a label lock, in which case this field is set to
+         * false.
+         *
+         * @param bool $locked
+         */
+        public function setLocked($locked)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getLocked()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2LockStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLocked()
+    class Google_Service_DriveLabels_GoogleAppsDriveLabelsV2LockStatus extends \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2LockStatus
     {
     }
 }

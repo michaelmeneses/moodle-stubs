@@ -21,132 +21,141 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class PlaylistItemContentDetails extends \Google\Model
-{
-    /**
-     * The time, measured in seconds from the start of the video, when the video
-     * should stop playing. (The playlist owner can specify the times when the
-     * video should start and stop playing when the video is played in the context
-     * of the playlist.) By default, assume that the video.endTime is the end of
-     * the video.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $endAt;
-    /**
-     * A user-generated note for this item.
-     *
-     * @var string
-     */
-    public $note;
-    /**
-     * The time, measured in seconds from the start of the video, when the video
-     * should start playing. (The playlist owner can specify the times when the
-     * video should start and stop playing when the video is played in the context
-     * of the playlist.) The default value is 0.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $startAt;
-    /**
-     * The ID that YouTube uses to uniquely identify a video. To retrieve the
-     * video resource, set the id query parameter to this value in your API
-     * request.
-     *
-     * @var string
-     */
-    public $videoId;
-    /**
-     * The date and time that the video was published to YouTube.
-     *
-     * @var string
-     */
-    public $videoPublishedAt;
-    /**
-     * The time, measured in seconds from the start of the video, when the video
-     * should stop playing. (The playlist owner can specify the times when the
-     * video should start and stop playing when the video is played in the context
-     * of the playlist.) By default, assume that the video.endTime is the end of
-     * the video.
-     *
-     * @deprecated
-     * @param string $endAt
-     */
-    public function setEndAt($endAt)
+namespace Google\Service\YouTube {
+    class PlaylistItemContentDetails extends \Google\Model
     {
+        /**
+         * The time, measured in seconds from the start of the video, when the video
+         * should stop playing. (The playlist owner can specify the times when the
+         * video should start and stop playing when the video is played in the context
+         * of the playlist.) By default, assume that the video.endTime is the end of
+         * the video.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $endAt;
+        /**
+         * A user-generated note for this item.
+         *
+         * @var string
+         */
+        public $note;
+        /**
+         * The time, measured in seconds from the start of the video, when the video
+         * should start playing. (The playlist owner can specify the times when the
+         * video should start and stop playing when the video is played in the context
+         * of the playlist.) The default value is 0.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $startAt;
+        /**
+         * The ID that YouTube uses to uniquely identify a video. To retrieve the
+         * video resource, set the id query parameter to this value in your API
+         * request.
+         *
+         * @var string
+         */
+        public $videoId;
+        /**
+         * The date and time that the video was published to YouTube.
+         *
+         * @var string
+         */
+        public $videoPublishedAt;
+        /**
+         * The time, measured in seconds from the start of the video, when the video
+         * should stop playing. (The playlist owner can specify the times when the
+         * video should start and stop playing when the video is played in the context
+         * of the playlist.) By default, assume that the video.endTime is the end of
+         * the video.
+         *
+         * @deprecated
+         * @param string $endAt
+         */
+        public function setEndAt($endAt)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getEndAt()
+        {
+        }
+        /**
+         * A user-generated note for this item.
+         *
+         * @param string $note
+         */
+        public function setNote($note)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNote()
+        {
+        }
+        /**
+         * The time, measured in seconds from the start of the video, when the video
+         * should start playing. (The playlist owner can specify the times when the
+         * video should start and stop playing when the video is played in the context
+         * of the playlist.) The default value is 0.
+         *
+         * @deprecated
+         * @param string $startAt
+         */
+        public function setStartAt($startAt)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getStartAt()
+        {
+        }
+        /**
+         * The ID that YouTube uses to uniquely identify a video. To retrieve the
+         * video resource, set the id query parameter to this value in your API
+         * request.
+         *
+         * @param string $videoId
+         */
+        public function setVideoId($videoId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVideoId()
+        {
+        }
+        /**
+         * The date and time that the video was published to YouTube.
+         *
+         * @param string $videoPublishedAt
+         */
+        public function setVideoPublishedAt($videoPublishedAt)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVideoPublishedAt()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\PlaylistItemContentDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndAt()
-    {
-    }
-    /**
-     * A user-generated note for this item.
-     *
-     * @param string $note
-     */
-    public function setNote($note)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNote()
-    {
-    }
-    /**
-     * The time, measured in seconds from the start of the video, when the video
-     * should start playing. (The playlist owner can specify the times when the
-     * video should start and stop playing when the video is played in the context
-     * of the playlist.) The default value is 0.
-     *
-     * @deprecated
-     * @param string $startAt
-     */
-    public function setStartAt($startAt)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getStartAt()
-    {
-    }
-    /**
-     * The ID that YouTube uses to uniquely identify a video. To retrieve the
-     * video resource, set the id query parameter to this value in your API
-     * request.
-     *
-     * @param string $videoId
-     */
-    public function setVideoId($videoId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVideoId()
-    {
-    }
-    /**
-     * The date and time that the video was published to YouTube.
-     *
-     * @param string $videoPublishedAt
-     */
-    public function setVideoPublishedAt($videoPublishedAt)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVideoPublishedAt()
+    class Google_Service_YouTube_PlaylistItemContentDetails extends \Google\Service\YouTube\PlaylistItemContentDetails
     {
     }
 }

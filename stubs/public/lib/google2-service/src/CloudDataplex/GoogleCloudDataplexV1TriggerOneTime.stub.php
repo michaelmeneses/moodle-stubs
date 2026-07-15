@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1TriggerOneTime extends \Google\Model
-{
-    /**
-     * Optional. Time to live for OneTime scans. default value is 24 hours,
-     * minimum value is 0 seconds, and maximum value is 365 days. The time is
-     * calculated from the data scan job completion time. If value is set as 0
-     * seconds, the scan will be immediately deleted upon job completion,
-     * regardless of whether the job succeeded or failed.
-     *
-     * @var string
-     */
-    public $ttlAfterScanCompletion;
-    /**
-     * Optional. Time to live for OneTime scans. default value is 24 hours,
-     * minimum value is 0 seconds, and maximum value is 365 days. The time is
-     * calculated from the data scan job completion time. If value is set as 0
-     * seconds, the scan will be immediately deleted upon job completion,
-     * regardless of whether the job succeeded or failed.
-     *
-     * @param string $ttlAfterScanCompletion
-     */
-    public function setTtlAfterScanCompletion($ttlAfterScanCompletion)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1TriggerOneTime extends \Google\Model
     {
+        /**
+         * Optional. Time to live for OneTime scans. default value is 24 hours,
+         * minimum value is 0 seconds, and maximum value is 365 days. The time is
+         * calculated from the data scan job completion time. If value is set as 0
+         * seconds, the scan will be immediately deleted upon job completion,
+         * regardless of whether the job succeeded or failed.
+         *
+         * @var string
+         */
+        public $ttlAfterScanCompletion;
+        /**
+         * Optional. Time to live for OneTime scans. default value is 24 hours,
+         * minimum value is 0 seconds, and maximum value is 365 days. The time is
+         * calculated from the data scan job completion time. If value is set as 0
+         * seconds, the scan will be immediately deleted upon job completion,
+         * regardless of whether the job succeeded or failed.
+         *
+         * @param string $ttlAfterScanCompletion
+         */
+        public function setTtlAfterScanCompletion($ttlAfterScanCompletion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTtlAfterScanCompletion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1TriggerOneTime registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTtlAfterScanCompletion()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1TriggerOneTime extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1TriggerOneTime
     {
     }
 }

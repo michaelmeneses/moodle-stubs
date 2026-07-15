@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMMigrationService;
-
-class DiskMigrationJobTargetDetails extends \Google\Model
-{
-    protected $encryptionType = Encryption::class;
-    protected $encryptionDataType = '';
-    /**
-     * Optional. A map of labels to associate with the disk.
-     *
-     * @var string[]
-     */
-    public $labels;
-    protected $targetDiskType = ComputeEngineDisk::class;
-    protected $targetDiskDataType = '';
-    /**
-     * Required. The name of the resource of type TargetProject which represents
-     * the Compute Engine project in which to create the disk. Should be of the
-     * form: projects/{project}/locations/global/targetProjects/{target-project}
-     *
-     * @var string
-     */
-    public $targetProject;
-    /**
-     * Optional. The encryption to apply to the disk. If the DiskMigrationJob
-     * parent Source resource has an encryption, this field must be set to the
-     * same encryption key.
-     *
-     * @param Encryption $encryption
-     */
-    public function setEncryption(Encryption $encryption)
+namespace Google\Service\VMMigrationService {
+    class DiskMigrationJobTargetDetails extends \Google\Model
     {
+        protected $encryptionType = Encryption::class;
+        protected $encryptionDataType = '';
+        /**
+         * Optional. A map of labels to associate with the disk.
+         *
+         * @var string[]
+         */
+        public $labels;
+        protected $targetDiskType = ComputeEngineDisk::class;
+        protected $targetDiskDataType = '';
+        /**
+         * Required. The name of the resource of type TargetProject which represents
+         * the Compute Engine project in which to create the disk. Should be of the
+         * form: projects/{project}/locations/global/targetProjects/{target-project}
+         *
+         * @var string
+         */
+        public $targetProject;
+        /**
+         * Optional. The encryption to apply to the disk. If the DiskMigrationJob
+         * parent Source resource has an encryption, this field must be set to the
+         * same encryption key.
+         *
+         * @param Encryption $encryption
+         */
+        public function setEncryption(Encryption $encryption)
+        {
+        }
+        /**
+         * @return Encryption
+         */
+        public function getEncryption()
+        {
+        }
+        /**
+         * Optional. A map of labels to associate with the disk.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Required. The target disk.
+         *
+         * @param ComputeEngineDisk $targetDisk
+         */
+        public function setTargetDisk(ComputeEngineDisk $targetDisk)
+        {
+        }
+        /**
+         * @return ComputeEngineDisk
+         */
+        public function getTargetDisk()
+        {
+        }
+        /**
+         * Required. The name of the resource of type TargetProject which represents
+         * the Compute Engine project in which to create the disk. Should be of the
+         * form: projects/{project}/locations/global/targetProjects/{target-project}
+         *
+         * @param string $targetProject
+         */
+        public function setTargetProject($targetProject)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetProject()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Encryption
+     * Runtime class alias of \Google\Service\VMMigrationService\DiskMigrationJobTargetDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEncryption()
-    {
-    }
-    /**
-     * Optional. A map of labels to associate with the disk.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Required. The target disk.
-     *
-     * @param ComputeEngineDisk $targetDisk
-     */
-    public function setTargetDisk(ComputeEngineDisk $targetDisk)
-    {
-    }
-    /**
-     * @return ComputeEngineDisk
-     */
-    public function getTargetDisk()
-    {
-    }
-    /**
-     * Required. The name of the resource of type TargetProject which represents
-     * the Compute Engine project in which to create the disk. Should be of the
-     * form: projects/{project}/locations/global/targetProjects/{target-project}
-     *
-     * @param string $targetProject
-     */
-    public function setTargetProject($targetProject)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetProject()
+    class Google_Service_VMMigrationService_DiskMigrationJobTargetDetails extends \Google\Service\VMMigrationService\DiskMigrationJobTargetDetails
     {
     }
 }

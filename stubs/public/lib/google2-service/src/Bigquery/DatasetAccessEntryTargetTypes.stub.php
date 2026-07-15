@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class DatasetAccessEntryTargetTypes extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $targetType;
-    /**
-     * @param string
-     */
-    public function setTargetType($targetType)
+namespace Google\Service\Bigquery {
+    class DatasetAccessEntryTargetTypes extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $targetType;
+        /**
+         * @param string
+         */
+        public function setTargetType($targetType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Bigquery\DatasetAccessEntryTargetTypes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTargetType()
+    class Google_Service_Bigquery_DatasetAccessEntryTargetTypes extends \Google\Service\Bigquery\DatasetAccessEntryTargetTypes
     {
     }
 }

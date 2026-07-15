@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class EnterpriseTopazSidekickConflictingEventsCardProto extends \Google\Collection
-{
-    protected $collection_key = 'conflictingEvent';
-    protected $conflictingEventType = EnterpriseTopazSidekickAgendaEntry::class;
-    protected $conflictingEventDataType = 'array';
-    protected $mainEventType = EnterpriseTopazSidekickAgendaEntry::class;
-    protected $mainEventDataType = '';
-    /**
-     * All the events that conflict with main_event.
-     *
-     * @param EnterpriseTopazSidekickAgendaEntry[] $conflictingEvent
-     */
-    public function setConflictingEvent($conflictingEvent)
+namespace Google\Service\CloudSearch {
+    class EnterpriseTopazSidekickConflictingEventsCardProto extends \Google\Collection
     {
+        protected $collection_key = 'conflictingEvent';
+        protected $conflictingEventType = EnterpriseTopazSidekickAgendaEntry::class;
+        protected $conflictingEventDataType = 'array';
+        protected $mainEventType = EnterpriseTopazSidekickAgendaEntry::class;
+        protected $mainEventDataType = '';
+        /**
+         * All the events that conflict with main_event.
+         *
+         * @param EnterpriseTopazSidekickAgendaEntry[] $conflictingEvent
+         */
+        public function setConflictingEvent($conflictingEvent)
+        {
+        }
+        /**
+         * @return EnterpriseTopazSidekickAgendaEntry[]
+         */
+        public function getConflictingEvent()
+        {
+        }
+        /**
+         * The event identified as being the most important.
+         *
+         * @param EnterpriseTopazSidekickAgendaEntry $mainEvent
+         */
+        public function setMainEvent(EnterpriseTopazSidekickAgendaEntry $mainEvent)
+        {
+        }
+        /**
+         * @return EnterpriseTopazSidekickAgendaEntry
+         */
+        public function getMainEvent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EnterpriseTopazSidekickAgendaEntry[]
+     * Runtime class alias of \Google\Service\CloudSearch\EnterpriseTopazSidekickConflictingEventsCardProto registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConflictingEvent()
-    {
-    }
-    /**
-     * The event identified as being the most important.
-     *
-     * @param EnterpriseTopazSidekickAgendaEntry $mainEvent
-     */
-    public function setMainEvent(EnterpriseTopazSidekickAgendaEntry $mainEvent)
-    {
-    }
-    /**
-     * @return EnterpriseTopazSidekickAgendaEntry
-     */
-    public function getMainEvent()
+    class Google_Service_CloudSearch_EnterpriseTopazSidekickConflictingEventsCardProto extends \Google\Service\CloudSearch\EnterpriseTopazSidekickConflictingEventsCardProto
     {
     }
 }

@@ -21,98 +21,107 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteStorageButton extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $altText;
-    protected $colorType = Color::class;
-    protected $colorDataType = '';
-    /**
-     * @var bool
-     */
-    public $disabled;
-    protected $iconType = AppsDynamiteStorageIcon::class;
-    protected $iconDataType = '';
-    protected $onClickType = AppsDynamiteStorageOnClick::class;
-    protected $onClickDataType = '';
-    /**
-     * @var string
-     */
-    public $text;
-    /**
-     * @param string
-     */
-    public function setAltText($altText)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteStorageButton extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $altText;
+        protected $colorType = Color::class;
+        protected $colorDataType = '';
+        /**
+         * @var bool
+         */
+        public $disabled;
+        protected $iconType = AppsDynamiteStorageIcon::class;
+        protected $iconDataType = '';
+        protected $onClickType = AppsDynamiteStorageOnClick::class;
+        protected $onClickDataType = '';
+        /**
+         * @var string
+         */
+        public $text;
+        /**
+         * @param string
+         */
+        public function setAltText($altText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAltText()
+        {
+        }
+        /**
+         * @param Color
+         */
+        public function setColor(Color $color)
+        {
+        }
+        /**
+         * @return Color
+         */
+        public function getColor()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setDisabled($disabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisabled()
+        {
+        }
+        /**
+         * @param AppsDynamiteStorageIcon
+         */
+        public function setIcon(AppsDynamiteStorageIcon $icon)
+        {
+        }
+        /**
+         * @return AppsDynamiteStorageIcon
+         */
+        public function getIcon()
+        {
+        }
+        /**
+         * @param AppsDynamiteStorageOnClick
+         */
+        public function setOnClick(AppsDynamiteStorageOnClick $onClick)
+        {
+        }
+        /**
+         * @return AppsDynamiteStorageOnClick
+         */
+        public function getOnClick()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteStorageButton registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAltText()
-    {
-    }
-    /**
-     * @param Color
-     */
-    public function setColor(Color $color)
-    {
-    }
-    /**
-     * @return Color
-     */
-    public function getColor()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setDisabled($disabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDisabled()
-    {
-    }
-    /**
-     * @param AppsDynamiteStorageIcon
-     */
-    public function setIcon(AppsDynamiteStorageIcon $icon)
-    {
-    }
-    /**
-     * @return AppsDynamiteStorageIcon
-     */
-    public function getIcon()
-    {
-    }
-    /**
-     * @param AppsDynamiteStorageOnClick
-     */
-    public function setOnClick(AppsDynamiteStorageOnClick $onClick)
-    {
-    }
-    /**
-     * @return AppsDynamiteStorageOnClick
-     */
-    public function getOnClick()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
+    class Google_Service_CloudSearch_AppsDynamiteStorageButton extends \Google\Service\CloudSearch\AppsDynamiteStorageButton
     {
     }
 }

@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1GenerateMemoriesRequestDirectContentsSource extends \Google\Collection
-{
-    protected $collection_key = 'events';
-    protected $eventsType = GoogleCloudAiplatformV1GenerateMemoriesRequestDirectContentsSourceEvent::class;
-    protected $eventsDataType = 'array';
-    /**
-     * Required. The source content (i.e. chat history) to generate memories from.
-     *
-     * @param GoogleCloudAiplatformV1GenerateMemoriesRequestDirectContentsSourceEvent[] $events
-     */
-    public function setEvents($events)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1GenerateMemoriesRequestDirectContentsSource extends \Google\Collection
     {
+        protected $collection_key = 'events';
+        protected $eventsType = GoogleCloudAiplatformV1GenerateMemoriesRequestDirectContentsSourceEvent::class;
+        protected $eventsDataType = 'array';
+        /**
+         * Required. The source content (i.e. chat history) to generate memories from.
+         *
+         * @param GoogleCloudAiplatformV1GenerateMemoriesRequestDirectContentsSourceEvent[] $events
+         */
+        public function setEvents($events)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1GenerateMemoriesRequestDirectContentsSourceEvent[]
+         */
+        public function getEvents()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1GenerateMemoriesRequestDirectContentsSourceEvent[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1GenerateMemoriesRequestDirectContentsSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEvents()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1GenerateMemoriesRequestDirectContentsSource extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1GenerateMemoriesRequestDirectContentsSource
     {
     }
 }

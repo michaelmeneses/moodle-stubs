@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1BatchCreateTensorboardRunsResponse extends \Google\Collection
-{
-    protected $collection_key = 'tensorboardRuns';
-    protected $tensorboardRunsType = GoogleCloudAiplatformV1TensorboardRun::class;
-    protected $tensorboardRunsDataType = 'array';
-    /**
-     * The created TensorboardRuns.
-     *
-     * @param GoogleCloudAiplatformV1TensorboardRun[] $tensorboardRuns
-     */
-    public function setTensorboardRuns($tensorboardRuns)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1BatchCreateTensorboardRunsResponse extends \Google\Collection
     {
+        protected $collection_key = 'tensorboardRuns';
+        protected $tensorboardRunsType = GoogleCloudAiplatformV1TensorboardRun::class;
+        protected $tensorboardRunsDataType = 'array';
+        /**
+         * The created TensorboardRuns.
+         *
+         * @param GoogleCloudAiplatformV1TensorboardRun[] $tensorboardRuns
+         */
+        public function setTensorboardRuns($tensorboardRuns)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1TensorboardRun[]
+         */
+        public function getTensorboardRuns()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1TensorboardRun[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1BatchCreateTensorboardRunsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTensorboardRuns()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1BatchCreateTensorboardRunsResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1BatchCreateTensorboardRunsResponse
     {
     }
 }

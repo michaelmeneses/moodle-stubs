@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Assuredworkloads;
-
-class GoogleCloudAssuredworkloadsV1MoveAnalysisGroup extends \Google\Model
-{
-    protected $analysisResultType = GoogleCloudAssuredworkloadsV1MoveAnalysisResult::class;
-    protected $analysisResultDataType = '';
-    /**
-     * Name of the analysis group.
-     *
-     * @var string
-     */
-    public $displayName;
-    protected $errorType = GoogleRpcStatus::class;
-    protected $errorDataType = '';
-    /**
-     * Result of a successful analysis.
-     *
-     * @param GoogleCloudAssuredworkloadsV1MoveAnalysisResult $analysisResult
-     */
-    public function setAnalysisResult(GoogleCloudAssuredworkloadsV1MoveAnalysisResult $analysisResult)
+namespace Google\Service\Assuredworkloads {
+    class GoogleCloudAssuredworkloadsV1MoveAnalysisGroup extends \Google\Model
     {
+        protected $analysisResultType = GoogleCloudAssuredworkloadsV1MoveAnalysisResult::class;
+        protected $analysisResultDataType = '';
+        /**
+         * Name of the analysis group.
+         *
+         * @var string
+         */
+        public $displayName;
+        protected $errorType = GoogleRpcStatus::class;
+        protected $errorDataType = '';
+        /**
+         * Result of a successful analysis.
+         *
+         * @param GoogleCloudAssuredworkloadsV1MoveAnalysisResult $analysisResult
+         */
+        public function setAnalysisResult(GoogleCloudAssuredworkloadsV1MoveAnalysisResult $analysisResult)
+        {
+        }
+        /**
+         * @return GoogleCloudAssuredworkloadsV1MoveAnalysisResult
+         */
+        public function getAnalysisResult()
+        {
+        }
+        /**
+         * Name of the analysis group.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Error details for a failed analysis.
+         *
+         * @param GoogleRpcStatus $error
+         */
+        public function setError(GoogleRpcStatus $error)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus
+         */
+        public function getError()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAssuredworkloadsV1MoveAnalysisResult
+     * Runtime class alias of \Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1MoveAnalysisGroup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnalysisResult()
-    {
-    }
-    /**
-     * Name of the analysis group.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Error details for a failed analysis.
-     *
-     * @param GoogleRpcStatus $error
-     */
-    public function setError(GoogleRpcStatus $error)
-    {
-    }
-    /**
-     * @return GoogleRpcStatus
-     */
-    public function getError()
+    class Google_Service_Assuredworkloads_GoogleCloudAssuredworkloadsV1MoveAnalysisGroup extends \Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1MoveAnalysisGroup
     {
     }
 }

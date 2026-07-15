@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class UpdateDimensionGroupRequest extends \Google\Model
-{
-    protected $dimensionGroupType = DimensionGroup::class;
-    protected $dimensionGroupDataType = '';
-    /**
-     * The fields that should be updated. At least one field must be specified.
-     * The root `dimensionGroup` is implied and should not be specified. A single
-     * `"*"` can be used as short-hand for listing every field.
-     *
-     * @var string
-     */
-    public $fields;
-    /**
-     * The group whose state should be updated. The range and depth of the group
-     * should specify a valid group on the sheet, and all other fields updated.
-     *
-     * @param DimensionGroup $dimensionGroup
-     */
-    public function setDimensionGroup(DimensionGroup $dimensionGroup)
+namespace Google\Service\Sheets {
+    class UpdateDimensionGroupRequest extends \Google\Model
     {
+        protected $dimensionGroupType = DimensionGroup::class;
+        protected $dimensionGroupDataType = '';
+        /**
+         * The fields that should be updated. At least one field must be specified.
+         * The root `dimensionGroup` is implied and should not be specified. A single
+         * `"*"` can be used as short-hand for listing every field.
+         *
+         * @var string
+         */
+        public $fields;
+        /**
+         * The group whose state should be updated. The range and depth of the group
+         * should specify a valid group on the sheet, and all other fields updated.
+         *
+         * @param DimensionGroup $dimensionGroup
+         */
+        public function setDimensionGroup(DimensionGroup $dimensionGroup)
+        {
+        }
+        /**
+         * @return DimensionGroup
+         */
+        public function getDimensionGroup()
+        {
+        }
+        /**
+         * The fields that should be updated. At least one field must be specified.
+         * The root `dimensionGroup` is implied and should not be specified. A single
+         * `"*"` can be used as short-hand for listing every field.
+         *
+         * @param string $fields
+         */
+        public function setFields($fields)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFields()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DimensionGroup
+     * Runtime class alias of \Google\Service\Sheets\UpdateDimensionGroupRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDimensionGroup()
-    {
-    }
-    /**
-     * The fields that should be updated. At least one field must be specified.
-     * The root `dimensionGroup` is implied and should not be specified. A single
-     * `"*"` can be used as short-hand for listing every field.
-     *
-     * @param string $fields
-     */
-    public function setFields($fields)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFields()
+    class Google_Service_Sheets_UpdateDimensionGroupRequest extends \Google\Service\Sheets\UpdateDimensionGroupRequest
     {
     }
 }

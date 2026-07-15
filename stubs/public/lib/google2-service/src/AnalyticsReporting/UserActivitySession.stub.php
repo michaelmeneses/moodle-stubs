@@ -21,103 +21,112 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsReporting;
-
-class UserActivitySession extends \Google\Collection
-{
-    protected $collection_key = 'activities';
-    protected $activitiesType = Activity::class;
-    protected $activitiesDataType = 'array';
-    /**
-     * @var string
-     */
-    public $dataSource;
-    /**
-     * @var string
-     */
-    public $deviceCategory;
-    /**
-     * @var string
-     */
-    public $platform;
-    /**
-     * @var string
-     */
-    public $sessionDate;
-    /**
-     * @var string
-     */
-    public $sessionId;
-    /**
-     * @param Activity[]
-     */
-    public function setActivities($activities)
+namespace Google\Service\AnalyticsReporting {
+    class UserActivitySession extends \Google\Collection
     {
+        protected $collection_key = 'activities';
+        protected $activitiesType = Activity::class;
+        protected $activitiesDataType = 'array';
+        /**
+         * @var string
+         */
+        public $dataSource;
+        /**
+         * @var string
+         */
+        public $deviceCategory;
+        /**
+         * @var string
+         */
+        public $platform;
+        /**
+         * @var string
+         */
+        public $sessionDate;
+        /**
+         * @var string
+         */
+        public $sessionId;
+        /**
+         * @param Activity[]
+         */
+        public function setActivities($activities)
+        {
+        }
+        /**
+         * @return Activity[]
+         */
+        public function getActivities()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDataSource($dataSource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataSource()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDeviceCategory($deviceCategory)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeviceCategory()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPlatform($platform)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPlatform()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSessionDate($sessionDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSessionDate()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSessionId($sessionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSessionId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Activity[]
+     * Runtime class alias of \Google\Service\AnalyticsReporting\UserActivitySession registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActivities()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDataSource($dataSource)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDataSource()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDeviceCategory($deviceCategory)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeviceCategory()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPlatform($platform)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPlatform()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSessionDate($sessionDate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSessionDate()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSessionId($sessionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSessionId()
+    class Google_Service_AnalyticsReporting_UserActivitySession extends \Google\Service\AnalyticsReporting\UserActivitySession
     {
     }
 }

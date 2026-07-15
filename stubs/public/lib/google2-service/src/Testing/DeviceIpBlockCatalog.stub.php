@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Testing;
-
-class DeviceIpBlockCatalog extends \Google\Collection
-{
-    protected $collection_key = 'ipBlocks';
-    protected $ipBlocksType = DeviceIpBlock::class;
-    protected $ipBlocksDataType = 'array';
-    /**
-     * The device IP blocks used by Firebase Test Lab
-     *
-     * @param DeviceIpBlock[] $ipBlocks
-     */
-    public function setIpBlocks($ipBlocks)
+namespace Google\Service\Testing {
+    class DeviceIpBlockCatalog extends \Google\Collection
     {
+        protected $collection_key = 'ipBlocks';
+        protected $ipBlocksType = DeviceIpBlock::class;
+        protected $ipBlocksDataType = 'array';
+        /**
+         * The device IP blocks used by Firebase Test Lab
+         *
+         * @param DeviceIpBlock[] $ipBlocks
+         */
+        public function setIpBlocks($ipBlocks)
+        {
+        }
+        /**
+         * @return DeviceIpBlock[]
+         */
+        public function getIpBlocks()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DeviceIpBlock[]
+     * Runtime class alias of \Google\Service\Testing\DeviceIpBlockCatalog registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIpBlocks()
+    class Google_Service_Testing_DeviceIpBlockCatalog extends \Google\Service\Testing\DeviceIpBlockCatalog
     {
     }
 }

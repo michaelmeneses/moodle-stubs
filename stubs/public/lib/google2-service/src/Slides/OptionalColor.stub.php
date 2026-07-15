@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides;
-
-class OptionalColor extends \Google\Model
-{
-    protected $opaqueColorType = OpaqueColor::class;
-    protected $opaqueColorDataType = '';
-    /**
-     * If set, this will be used as an opaque color. If unset, this represents a
-     * transparent color.
-     *
-     * @param OpaqueColor $opaqueColor
-     */
-    public function setOpaqueColor(OpaqueColor $opaqueColor)
+namespace Google\Service\Slides {
+    class OptionalColor extends \Google\Model
     {
+        protected $opaqueColorType = OpaqueColor::class;
+        protected $opaqueColorDataType = '';
+        /**
+         * If set, this will be used as an opaque color. If unset, this represents a
+         * transparent color.
+         *
+         * @param OpaqueColor $opaqueColor
+         */
+        public function setOpaqueColor(OpaqueColor $opaqueColor)
+        {
+        }
+        /**
+         * @return OpaqueColor
+         */
+        public function getOpaqueColor()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return OpaqueColor
+     * Runtime class alias of \Google\Service\Slides\OptionalColor registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOpaqueColor()
+    class Google_Service_Slides_OptionalColor extends \Google\Service\Slides\OptionalColor
     {
     }
 }

@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class BatchChangeChromeOsDeviceStatusResponse extends \Google\Collection
-{
-    protected $collection_key = 'changeChromeOsDeviceStatusResults';
-    protected $changeChromeOsDeviceStatusResultsType = ChangeChromeOsDeviceStatusResult::class;
-    protected $changeChromeOsDeviceStatusResultsDataType = 'array';
-    /**
-     * The results for each of the ChromeOS devices provided in the request.
-     *
-     * @param ChangeChromeOsDeviceStatusResult[] $changeChromeOsDeviceStatusResults
-     */
-    public function setChangeChromeOsDeviceStatusResults($changeChromeOsDeviceStatusResults)
+namespace Google\Service\Directory {
+    class BatchChangeChromeOsDeviceStatusResponse extends \Google\Collection
     {
+        protected $collection_key = 'changeChromeOsDeviceStatusResults';
+        protected $changeChromeOsDeviceStatusResultsType = ChangeChromeOsDeviceStatusResult::class;
+        protected $changeChromeOsDeviceStatusResultsDataType = 'array';
+        /**
+         * The results for each of the ChromeOS devices provided in the request.
+         *
+         * @param ChangeChromeOsDeviceStatusResult[] $changeChromeOsDeviceStatusResults
+         */
+        public function setChangeChromeOsDeviceStatusResults($changeChromeOsDeviceStatusResults)
+        {
+        }
+        /**
+         * @return ChangeChromeOsDeviceStatusResult[]
+         */
+        public function getChangeChromeOsDeviceStatusResults()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ChangeChromeOsDeviceStatusResult[]
+     * Runtime class alias of \Google\Service\Directory\BatchChangeChromeOsDeviceStatusResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChangeChromeOsDeviceStatusResults()
+    class Google_Service_Directory_BatchChangeChromeOsDeviceStatusResponse extends \Google\Service\Directory\BatchChangeChromeOsDeviceStatusResponse
     {
     }
 }

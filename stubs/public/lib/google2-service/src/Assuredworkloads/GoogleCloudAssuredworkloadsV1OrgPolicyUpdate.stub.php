@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Assuredworkloads;
-
-class GoogleCloudAssuredworkloadsV1OrgPolicyUpdate extends \Google\Model
-{
-    protected $appliedPolicyType = GoogleCloudAssuredworkloadsV1OrgPolicy::class;
-    protected $appliedPolicyDataType = '';
-    protected $suggestedPolicyType = GoogleCloudAssuredworkloadsV1OrgPolicy::class;
-    protected $suggestedPolicyDataType = '';
-    /**
-     * The org policy currently applied on the assured workload resource.
-     *
-     * @param GoogleCloudAssuredworkloadsV1OrgPolicy $appliedPolicy
-     */
-    public function setAppliedPolicy(GoogleCloudAssuredworkloadsV1OrgPolicy $appliedPolicy)
+namespace Google\Service\Assuredworkloads {
+    class GoogleCloudAssuredworkloadsV1OrgPolicyUpdate extends \Google\Model
     {
+        protected $appliedPolicyType = GoogleCloudAssuredworkloadsV1OrgPolicy::class;
+        protected $appliedPolicyDataType = '';
+        protected $suggestedPolicyType = GoogleCloudAssuredworkloadsV1OrgPolicy::class;
+        protected $suggestedPolicyDataType = '';
+        /**
+         * The org policy currently applied on the assured workload resource.
+         *
+         * @param GoogleCloudAssuredworkloadsV1OrgPolicy $appliedPolicy
+         */
+        public function setAppliedPolicy(GoogleCloudAssuredworkloadsV1OrgPolicy $appliedPolicy)
+        {
+        }
+        /**
+         * @return GoogleCloudAssuredworkloadsV1OrgPolicy
+         */
+        public function getAppliedPolicy()
+        {
+        }
+        /**
+         * The suggested org policy that replaces the applied policy.
+         *
+         * @param GoogleCloudAssuredworkloadsV1OrgPolicy $suggestedPolicy
+         */
+        public function setSuggestedPolicy(GoogleCloudAssuredworkloadsV1OrgPolicy $suggestedPolicy)
+        {
+        }
+        /**
+         * @return GoogleCloudAssuredworkloadsV1OrgPolicy
+         */
+        public function getSuggestedPolicy()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAssuredworkloadsV1OrgPolicy
+     * Runtime class alias of \Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1OrgPolicyUpdate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAppliedPolicy()
-    {
-    }
-    /**
-     * The suggested org policy that replaces the applied policy.
-     *
-     * @param GoogleCloudAssuredworkloadsV1OrgPolicy $suggestedPolicy
-     */
-    public function setSuggestedPolicy(GoogleCloudAssuredworkloadsV1OrgPolicy $suggestedPolicy)
-    {
-    }
-    /**
-     * @return GoogleCloudAssuredworkloadsV1OrgPolicy
-     */
-    public function getSuggestedPolicy()
+    class Google_Service_Assuredworkloads_GoogleCloudAssuredworkloadsV1OrgPolicyUpdate extends \Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1OrgPolicyUpdate
     {
     }
 }

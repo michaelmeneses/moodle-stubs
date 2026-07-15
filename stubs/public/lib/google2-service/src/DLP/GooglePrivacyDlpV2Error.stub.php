@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2Error extends \Google\Collection
-{
-    /**
-     * Unused.
-     */
-    public const EXTRA_INFO_ERROR_INFO_UNSPECIFIED = 'ERROR_INFO_UNSPECIFIED';
-    /**
-     * Image scan is not available in the region.
-     */
-    public const EXTRA_INFO_IMAGE_SCAN_UNAVAILABLE_IN_REGION = 'IMAGE_SCAN_UNAVAILABLE_IN_REGION';
-    /**
-     * File store cluster is not supported for profile generation.
-     */
-    public const EXTRA_INFO_FILE_STORE_CLUSTER_UNSUPPORTED = 'FILE_STORE_CLUSTER_UNSUPPORTED';
-    protected $collection_key = 'timestamps';
-    protected $detailsType = GoogleRpcStatus::class;
-    protected $detailsDataType = '';
-    /**
-     * Additional information about the error.
-     *
-     * @var string
-     */
-    public $extraInfo;
-    /**
-     * The times the error occurred. List includes the oldest timestamp and the
-     * last 9 timestamps.
-     *
-     * @var string[]
-     */
-    public $timestamps;
-    /**
-     * Detailed error codes and messages.
-     *
-     * @param GoogleRpcStatus $details
-     */
-    public function setDetails(GoogleRpcStatus $details)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2Error extends \Google\Collection
     {
+        /**
+         * Unused.
+         */
+        public const EXTRA_INFO_ERROR_INFO_UNSPECIFIED = 'ERROR_INFO_UNSPECIFIED';
+        /**
+         * Image scan is not available in the region.
+         */
+        public const EXTRA_INFO_IMAGE_SCAN_UNAVAILABLE_IN_REGION = 'IMAGE_SCAN_UNAVAILABLE_IN_REGION';
+        /**
+         * File store cluster is not supported for profile generation.
+         */
+        public const EXTRA_INFO_FILE_STORE_CLUSTER_UNSUPPORTED = 'FILE_STORE_CLUSTER_UNSUPPORTED';
+        protected $collection_key = 'timestamps';
+        protected $detailsType = GoogleRpcStatus::class;
+        protected $detailsDataType = '';
+        /**
+         * Additional information about the error.
+         *
+         * @var string
+         */
+        public $extraInfo;
+        /**
+         * The times the error occurred. List includes the oldest timestamp and the
+         * last 9 timestamps.
+         *
+         * @var string[]
+         */
+        public $timestamps;
+        /**
+         * Detailed error codes and messages.
+         *
+         * @param GoogleRpcStatus $details
+         */
+        public function setDetails(GoogleRpcStatus $details)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus
+         */
+        public function getDetails()
+        {
+        }
+        /**
+         * Additional information about the error.
+         *
+         * Accepted values: ERROR_INFO_UNSPECIFIED, IMAGE_SCAN_UNAVAILABLE_IN_REGION,
+         * FILE_STORE_CLUSTER_UNSUPPORTED
+         *
+         * @param self::EXTRA_INFO_* $extraInfo
+         */
+        public function setExtraInfo($extraInfo)
+        {
+        }
+        /**
+         * @return self::EXTRA_INFO_*
+         */
+        public function getExtraInfo()
+        {
+        }
+        /**
+         * The times the error occurred. List includes the oldest timestamp and the
+         * last 9 timestamps.
+         *
+         * @param string[] $timestamps
+         */
+        public function setTimestamps($timestamps)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTimestamps()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleRpcStatus
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2Error registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDetails()
-    {
-    }
-    /**
-     * Additional information about the error.
-     *
-     * Accepted values: ERROR_INFO_UNSPECIFIED, IMAGE_SCAN_UNAVAILABLE_IN_REGION,
-     * FILE_STORE_CLUSTER_UNSUPPORTED
-     *
-     * @param self::EXTRA_INFO_* $extraInfo
-     */
-    public function setExtraInfo($extraInfo)
-    {
-    }
-    /**
-     * @return self::EXTRA_INFO_*
-     */
-    public function getExtraInfo()
-    {
-    }
-    /**
-     * The times the error occurred. List includes the oldest timestamp and the
-     * last 9 timestamps.
-     *
-     * @param string[] $timestamps
-     */
-    public function setTimestamps($timestamps)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTimestamps()
+    class Google_Service_DLP_GooglePrivacyDlpV2Error extends \Google\Service\DLP\GooglePrivacyDlpV2Error
     {
     }
 }

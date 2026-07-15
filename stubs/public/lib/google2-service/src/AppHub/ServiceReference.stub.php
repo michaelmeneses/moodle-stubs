@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AppHub;
-
-class ServiceReference extends \Google\Model
-{
-    /**
-     * Output only. The underlying resource URI. For example, URI of Forwarding
-     * Rule, URL Map, and Backend Service.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * Output only. The underlying resource URI. For example, URI of Forwarding
-     * Rule, URL Map, and Backend Service.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
+namespace Google\Service\AppHub {
+    class ServiceReference extends \Google\Model
     {
+        /**
+         * Output only. The underlying resource URI. For example, URI of Forwarding
+         * Rule, URL Map, and Backend Service.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * Output only. The underlying resource URI. For example, URI of Forwarding
+         * Rule, URL Map, and Backend Service.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AppHub\ServiceReference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUri()
+    class Google_Service_AppHub_ServiceReference extends \Google\Service\AppHub\ServiceReference
     {
     }
 }

@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class PubsubDestination extends \Google\Model
-{
-    /**
-     * The name of the Pub/Sub topic to publish to. Example:
-     * `projects/PROJECT_ID/topics/TOPIC_ID`.
-     *
-     * @var string
-     */
-    public $topic;
-    /**
-     * The name of the Pub/Sub topic to publish to. Example:
-     * `projects/PROJECT_ID/topics/TOPIC_ID`.
-     *
-     * @param string $topic
-     */
-    public function setTopic($topic)
+namespace Google\Service\CloudAsset {
+    class PubsubDestination extends \Google\Model
     {
+        /**
+         * The name of the Pub/Sub topic to publish to. Example:
+         * `projects/PROJECT_ID/topics/TOPIC_ID`.
+         *
+         * @var string
+         */
+        public $topic;
+        /**
+         * The name of the Pub/Sub topic to publish to. Example:
+         * `projects/PROJECT_ID/topics/TOPIC_ID`.
+         *
+         * @param string $topic
+         */
+        public function setTopic($topic)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTopic()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudAsset\PubsubDestination registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTopic()
+    class Google_Service_CloudAsset_PubsubDestination extends \Google\Service\CloudAsset\PubsubDestination
     {
     }
 }

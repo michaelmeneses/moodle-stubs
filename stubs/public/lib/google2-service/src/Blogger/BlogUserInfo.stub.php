@@ -21,61 +21,70 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Blogger;
-
-class BlogUserInfo extends \Google\Model
-{
-    protected $internal_gapi_mappings = ["blogUserInfo" => "blog_user_info"];
-    protected $blogType = Blog::class;
-    protected $blogDataType = '';
-    protected $blogUserInfoType = BlogPerUserInfo::class;
-    protected $blogUserInfoDataType = '';
-    /**
-     * The kind of this entity. Always blogger#blogUserInfo.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The Blog resource.
-     *
-     * @param Blog $blog
-     */
-    public function setBlog(Blog $blog)
+namespace Google\Service\Blogger {
+    class BlogUserInfo extends \Google\Model
     {
+        protected $internal_gapi_mappings = ["blogUserInfo" => "blog_user_info"];
+        protected $blogType = Blog::class;
+        protected $blogDataType = '';
+        protected $blogUserInfoType = BlogPerUserInfo::class;
+        protected $blogUserInfoDataType = '';
+        /**
+         * The kind of this entity. Always blogger#blogUserInfo.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The Blog resource.
+         *
+         * @param Blog $blog
+         */
+        public function setBlog(Blog $blog)
+        {
+        }
+        /**
+         * @return Blog
+         */
+        public function getBlog()
+        {
+        }
+        /**
+         * Information about a User for the Blog.
+         *
+         * @param BlogPerUserInfo $blogUserInfo
+         */
+        public function setBlogUserInfo(BlogPerUserInfo $blogUserInfo)
+        {
+        }
+        /**
+         * @return BlogPerUserInfo
+         */
+        public function getBlogUserInfo()
+        {
+        }
+        /**
+         * The kind of this entity. Always blogger#blogUserInfo.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Blog
+     * Runtime class alias of \Google\Service\Blogger\BlogUserInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBlog()
-    {
-    }
-    /**
-     * Information about a User for the Blog.
-     *
-     * @param BlogPerUserInfo $blogUserInfo
-     */
-    public function setBlogUserInfo(BlogPerUserInfo $blogUserInfo)
-    {
-    }
-    /**
-     * @return BlogPerUserInfo
-     */
-    public function getBlogUserInfo()
-    {
-    }
-    /**
-     * The kind of this entity. Always blogger#blogUserInfo.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_Blogger_BlogUserInfo extends \Google\Service\Blogger\BlogUserInfo
     {
     }
 }

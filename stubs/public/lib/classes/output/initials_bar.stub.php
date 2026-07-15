@@ -20,68 +20,79 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\output;
-
-/**
- * Component representing initials bar.
- *
- * @copyright 2017 Ilya Tregubov
- * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @since Moodle 3.3
- * @package core
- * @category output
- */
-class initials_bar implements renderable, templatable
-{
+namespace core\output {
+    use moodle_url;
+    use stdClass;
     /**
-     * @var string Currently selected letter.
-     */
-    public $current;
-    /**
-     * @var string Class name to add to this initial bar.
-     */
-    public $class;
-    /**
-     * @var string The name to put in front of this initial bar.
-     */
-    public $title;
-    /**
-     * @var string URL parameter name for this initial.
-     */
-    public $urlvar;
-    /**
-     * @var moodle_url URL object.
-     */
-    public $url;
-    /**
-     * @var array An array of letters in the alphabet.
-     */
-    public $alpha;
-    /**
-     * @var bool Omit links if we are doing a mini render.
-     */
-    public $minirender;
-    /**
-     * Constructor initials_bar with only the required params.
+     * Component representing initials bar.
      *
-     * @param string $current the currently selected letter.
-     * @param string $class class name to add to this initial bar.
-     * @param string $title the name to put in front of this initial bar.
-     * @param string $urlvar URL parameter name for this initial.
-     * @param string $url URL object.
-     * @param array $alpha of letters in the alphabet.
-     * @param bool $minirender Return a trimmed down view of the initials bar.
+     * @copyright 2017 Ilya Tregubov
+     * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+     * @since Moodle 3.3
+     * @package core
+     * @category output
      */
-    public function __construct($current, $class, $title, $urlvar, $url, $alpha = null, bool $minirender = false)
+    class initials_bar implements renderable, templatable
     {
+        /**
+         * @var string Currently selected letter.
+         */
+        public $current;
+        /**
+         * @var string Class name to add to this initial bar.
+         */
+        public $class;
+        /**
+         * @var string The name to put in front of this initial bar.
+         */
+        public $title;
+        /**
+         * @var string URL parameter name for this initial.
+         */
+        public $urlvar;
+        /**
+         * @var moodle_url URL object.
+         */
+        public $url;
+        /**
+         * @var array An array of letters in the alphabet.
+         */
+        public $alpha;
+        /**
+         * @var bool Omit links if we are doing a mini render.
+         */
+        public $minirender;
+        /**
+         * Constructor initials_bar with only the required params.
+         *
+         * @param string $current the currently selected letter.
+         * @param string $class class name to add to this initial bar.
+         * @param string $title the name to put in front of this initial bar.
+         * @param string $urlvar URL parameter name for this initial.
+         * @param string $url URL object.
+         * @param array $alpha of letters in the alphabet.
+         * @param bool $minirender Return a trimmed down view of the initials bar.
+         */
+        public function __construct($current, $class, $title, $urlvar, $url, $alpha = null, bool $minirender = false)
+        {
+        }
+        /**
+         * Export for template.
+         *
+         * @param renderer_base $output The renderer.
+         * @return stdClass
+         */
+        public function export_for_template(renderer_base $output)
+        {
+        }
     }
+}
+namespace {
     /**
-     * Export for template.
-     *
-     * @param renderer_base $output The renderer.
-     * @return stdClass
+     * Runtime class alias of \core\output\initials_bar registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function export_for_template(renderer_base $output)
+    class initials_bar extends \core\output\initials_bar
     {
     }
 }

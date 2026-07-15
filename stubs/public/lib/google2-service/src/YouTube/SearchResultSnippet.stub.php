@@ -21,171 +21,180 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class SearchResultSnippet extends \Google\Model
-{
-    public const LIVE_BROADCAST_CONTENT_none = 'none';
-    /**
-     * The live broadcast is upcoming.
-     */
-    public const LIVE_BROADCAST_CONTENT_upcoming = 'upcoming';
-    /**
-     * The live broadcast is active.
-     */
-    public const LIVE_BROADCAST_CONTENT_live = 'live';
-    /**
-     * The live broadcast has been completed.
-     */
-    public const LIVE_BROADCAST_CONTENT_completed = 'completed';
-    /**
-     * The value that YouTube uses to uniquely identify the channel that published
-     * the resource that the search result identifies.
-     *
-     * @var string
-     */
-    public $channelId;
-    /**
-     * The title of the channel that published the resource that the search result
-     * identifies.
-     *
-     * @var string
-     */
-    public $channelTitle;
-    /**
-     * A description of the search result.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * It indicates if the resource (video or channel) has upcoming/active live
-     * broadcast content. Or it's "none" if there is not any upcoming/active live
-     * broadcasts.
-     *
-     * @var string
-     */
-    public $liveBroadcastContent;
-    /**
-     * The creation date and time of the resource that the search result
-     * identifies.
-     *
-     * @var string
-     */
-    public $publishedAt;
-    protected $thumbnailsType = ThumbnailDetails::class;
-    protected $thumbnailsDataType = '';
-    /**
-     * The title of the search result.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * The value that YouTube uses to uniquely identify the channel that published
-     * the resource that the search result identifies.
-     *
-     * @param string $channelId
-     */
-    public function setChannelId($channelId)
+namespace Google\Service\YouTube {
+    class SearchResultSnippet extends \Google\Model
     {
+        public const LIVE_BROADCAST_CONTENT_none = 'none';
+        /**
+         * The live broadcast is upcoming.
+         */
+        public const LIVE_BROADCAST_CONTENT_upcoming = 'upcoming';
+        /**
+         * The live broadcast is active.
+         */
+        public const LIVE_BROADCAST_CONTENT_live = 'live';
+        /**
+         * The live broadcast has been completed.
+         */
+        public const LIVE_BROADCAST_CONTENT_completed = 'completed';
+        /**
+         * The value that YouTube uses to uniquely identify the channel that published
+         * the resource that the search result identifies.
+         *
+         * @var string
+         */
+        public $channelId;
+        /**
+         * The title of the channel that published the resource that the search result
+         * identifies.
+         *
+         * @var string
+         */
+        public $channelTitle;
+        /**
+         * A description of the search result.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * It indicates if the resource (video or channel) has upcoming/active live
+         * broadcast content. Or it's "none" if there is not any upcoming/active live
+         * broadcasts.
+         *
+         * @var string
+         */
+        public $liveBroadcastContent;
+        /**
+         * The creation date and time of the resource that the search result
+         * identifies.
+         *
+         * @var string
+         */
+        public $publishedAt;
+        protected $thumbnailsType = ThumbnailDetails::class;
+        protected $thumbnailsDataType = '';
+        /**
+         * The title of the search result.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * The value that YouTube uses to uniquely identify the channel that published
+         * the resource that the search result identifies.
+         *
+         * @param string $channelId
+         */
+        public function setChannelId($channelId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChannelId()
+        {
+        }
+        /**
+         * The title of the channel that published the resource that the search result
+         * identifies.
+         *
+         * @param string $channelTitle
+         */
+        public function setChannelTitle($channelTitle)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChannelTitle()
+        {
+        }
+        /**
+         * A description of the search result.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * It indicates if the resource (video or channel) has upcoming/active live
+         * broadcast content. Or it's "none" if there is not any upcoming/active live
+         * broadcasts.
+         *
+         * Accepted values: none, upcoming, live, completed
+         *
+         * @param self::LIVE_BROADCAST_CONTENT_* $liveBroadcastContent
+         */
+        public function setLiveBroadcastContent($liveBroadcastContent)
+        {
+        }
+        /**
+         * @return self::LIVE_BROADCAST_CONTENT_*
+         */
+        public function getLiveBroadcastContent()
+        {
+        }
+        /**
+         * The creation date and time of the resource that the search result
+         * identifies.
+         *
+         * @param string $publishedAt
+         */
+        public function setPublishedAt($publishedAt)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPublishedAt()
+        {
+        }
+        /**
+         * A map of thumbnail images associated with the search result. For each
+         * object in the map, the key is the name of the thumbnail image, and the
+         * value is an object that contains other information about the thumbnail.
+         *
+         * @param ThumbnailDetails $thumbnails
+         */
+        public function setThumbnails(ThumbnailDetails $thumbnails)
+        {
+        }
+        /**
+         * @return ThumbnailDetails
+         */
+        public function getThumbnails()
+        {
+        }
+        /**
+         * The title of the search result.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\SearchResultSnippet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChannelId()
-    {
-    }
-    /**
-     * The title of the channel that published the resource that the search result
-     * identifies.
-     *
-     * @param string $channelTitle
-     */
-    public function setChannelTitle($channelTitle)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getChannelTitle()
-    {
-    }
-    /**
-     * A description of the search result.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * It indicates if the resource (video or channel) has upcoming/active live
-     * broadcast content. Or it's "none" if there is not any upcoming/active live
-     * broadcasts.
-     *
-     * Accepted values: none, upcoming, live, completed
-     *
-     * @param self::LIVE_BROADCAST_CONTENT_* $liveBroadcastContent
-     */
-    public function setLiveBroadcastContent($liveBroadcastContent)
-    {
-    }
-    /**
-     * @return self::LIVE_BROADCAST_CONTENT_*
-     */
-    public function getLiveBroadcastContent()
-    {
-    }
-    /**
-     * The creation date and time of the resource that the search result
-     * identifies.
-     *
-     * @param string $publishedAt
-     */
-    public function setPublishedAt($publishedAt)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPublishedAt()
-    {
-    }
-    /**
-     * A map of thumbnail images associated with the search result. For each
-     * object in the map, the key is the name of the thumbnail image, and the
-     * value is an object that contains other information about the thumbnail.
-     *
-     * @param ThumbnailDetails $thumbnails
-     */
-    public function setThumbnails(ThumbnailDetails $thumbnails)
-    {
-    }
-    /**
-     * @return ThumbnailDetails
-     */
-    public function getThumbnails()
-    {
-    }
-    /**
-     * The title of the search result.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_YouTube_SearchResultSnippet extends \Google\Service\YouTube\SearchResultSnippet
     {
     }
 }

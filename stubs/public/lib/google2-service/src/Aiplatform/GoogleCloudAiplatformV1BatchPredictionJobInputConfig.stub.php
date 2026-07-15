@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1BatchPredictionJobInputConfig extends \Google\Model
-{
-    protected $bigquerySourceType = GoogleCloudAiplatformV1BigQuerySource::class;
-    protected $bigquerySourceDataType = '';
-    protected $gcsSourceType = GoogleCloudAiplatformV1GcsSource::class;
-    protected $gcsSourceDataType = '';
-    /**
-     * Required. The format in which instances are given, must be one of the
-     * Model's supported_input_storage_formats.
-     *
-     * @var string
-     */
-    public $instancesFormat;
-    /**
-     * The BigQuery location of the input table. The schema of the table should be
-     * in the format described by the given context OpenAPI Schema, if one is
-     * provided. The table may contain additional columns that are not described
-     * by the schema, and they will be ignored.
-     *
-     * @param GoogleCloudAiplatformV1BigQuerySource $bigquerySource
-     */
-    public function setBigquerySource(GoogleCloudAiplatformV1BigQuerySource $bigquerySource)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1BatchPredictionJobInputConfig extends \Google\Model
     {
+        protected $bigquerySourceType = GoogleCloudAiplatformV1BigQuerySource::class;
+        protected $bigquerySourceDataType = '';
+        protected $gcsSourceType = GoogleCloudAiplatformV1GcsSource::class;
+        protected $gcsSourceDataType = '';
+        /**
+         * Required. The format in which instances are given, must be one of the
+         * Model's supported_input_storage_formats.
+         *
+         * @var string
+         */
+        public $instancesFormat;
+        /**
+         * The BigQuery location of the input table. The schema of the table should be
+         * in the format described by the given context OpenAPI Schema, if one is
+         * provided. The table may contain additional columns that are not described
+         * by the schema, and they will be ignored.
+         *
+         * @param GoogleCloudAiplatformV1BigQuerySource $bigquerySource
+         */
+        public function setBigquerySource(GoogleCloudAiplatformV1BigQuerySource $bigquerySource)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1BigQuerySource
+         */
+        public function getBigquerySource()
+        {
+        }
+        /**
+         * The Cloud Storage location for the input instances.
+         *
+         * @param GoogleCloudAiplatformV1GcsSource $gcsSource
+         */
+        public function setGcsSource(GoogleCloudAiplatformV1GcsSource $gcsSource)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1GcsSource
+         */
+        public function getGcsSource()
+        {
+        }
+        /**
+         * Required. The format in which instances are given, must be one of the
+         * Model's supported_input_storage_formats.
+         *
+         * @param string $instancesFormat
+         */
+        public function setInstancesFormat($instancesFormat)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstancesFormat()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1BigQuerySource
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1BatchPredictionJobInputConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBigquerySource()
-    {
-    }
-    /**
-     * The Cloud Storage location for the input instances.
-     *
-     * @param GoogleCloudAiplatformV1GcsSource $gcsSource
-     */
-    public function setGcsSource(GoogleCloudAiplatformV1GcsSource $gcsSource)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1GcsSource
-     */
-    public function getGcsSource()
-    {
-    }
-    /**
-     * Required. The format in which instances are given, must be one of the
-     * Model's supported_input_storage_formats.
-     *
-     * @param string $instancesFormat
-     */
-    public function setInstancesFormat($instancesFormat)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInstancesFormat()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1BatchPredictionJobInputConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1BatchPredictionJobInputConfig
     {
     }
 }

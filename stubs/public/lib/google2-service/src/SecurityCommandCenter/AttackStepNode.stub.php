@@ -21,131 +21,140 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class AttackStepNode extends \Google\Model
-{
-    /**
-     * Type not specified
-     */
-    public const TYPE_NODE_TYPE_UNSPECIFIED = 'NODE_TYPE_UNSPECIFIED';
-    /**
-     * Incoming edge joined with AND
-     */
-    public const TYPE_NODE_TYPE_AND = 'NODE_TYPE_AND';
-    /**
-     * Incoming edge joined with OR
-     */
-    public const TYPE_NODE_TYPE_OR = 'NODE_TYPE_OR';
-    /**
-     * Incoming edge is defense
-     */
-    public const TYPE_NODE_TYPE_DEFENSE = 'NODE_TYPE_DEFENSE';
-    /**
-     * Incoming edge is attacker
-     */
-    public const TYPE_NODE_TYPE_ATTACKER = 'NODE_TYPE_ATTACKER';
-    /**
-     * Attack step description
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * User friendly name of the attack step
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Attack step labels for metadata
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Attack step type. Can be either AND, OR or DEFENSE
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Unique ID for one Node
-     *
-     * @var string
-     */
-    public $uuid;
-    /**
-     * Attack step description
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\SecurityCommandCenter {
+    class AttackStepNode extends \Google\Model
     {
+        /**
+         * Type not specified
+         */
+        public const TYPE_NODE_TYPE_UNSPECIFIED = 'NODE_TYPE_UNSPECIFIED';
+        /**
+         * Incoming edge joined with AND
+         */
+        public const TYPE_NODE_TYPE_AND = 'NODE_TYPE_AND';
+        /**
+         * Incoming edge joined with OR
+         */
+        public const TYPE_NODE_TYPE_OR = 'NODE_TYPE_OR';
+        /**
+         * Incoming edge is defense
+         */
+        public const TYPE_NODE_TYPE_DEFENSE = 'NODE_TYPE_DEFENSE';
+        /**
+         * Incoming edge is attacker
+         */
+        public const TYPE_NODE_TYPE_ATTACKER = 'NODE_TYPE_ATTACKER';
+        /**
+         * Attack step description
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * User friendly name of the attack step
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Attack step labels for metadata
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Attack step type. Can be either AND, OR or DEFENSE
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Unique ID for one Node
+         *
+         * @var string
+         */
+        public $uuid;
+        /**
+         * Attack step description
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * User friendly name of the attack step
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Attack step labels for metadata
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Attack step type. Can be either AND, OR or DEFENSE
+         *
+         * Accepted values: NODE_TYPE_UNSPECIFIED, NODE_TYPE_AND, NODE_TYPE_OR,
+         * NODE_TYPE_DEFENSE, NODE_TYPE_ATTACKER
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
+        /**
+         * Unique ID for one Node
+         *
+         * @param string $uuid
+         */
+        public function setUuid($uuid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUuid()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\AttackStepNode registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * User friendly name of the attack step
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Attack step labels for metadata
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Attack step type. Can be either AND, OR or DEFENSE
-     *
-     * Accepted values: NODE_TYPE_UNSPECIFIED, NODE_TYPE_AND, NODE_TYPE_OR,
-     * NODE_TYPE_DEFENSE, NODE_TYPE_ATTACKER
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
-    {
-    }
-    /**
-     * Unique ID for one Node
-     *
-     * @param string $uuid
-     */
-    public function setUuid($uuid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUuid()
+    class Google_Service_SecurityCommandCenter_AttackStepNode extends \Google\Service\SecurityCommandCenter\AttackStepNode
     {
     }
 }

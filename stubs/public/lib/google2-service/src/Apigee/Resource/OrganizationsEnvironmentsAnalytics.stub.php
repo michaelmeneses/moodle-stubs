@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee\Resource;
-
-/**
- * The "analytics" collection of methods.
- * Typical usage is:
- *  <code>
- *   $apigeeService = new Google\Service\Apigee(...);
- *   $analytics = $apigeeService->organizations_environments_analytics;
- *  </code>
- */
-class OrganizationsEnvironmentsAnalytics extends \Google\Service\Resource
-{
+namespace Google\Service\Apigee\Resource {
+    /**
+     * The "analytics" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $apigeeService = new Google\Service\Apigee(...);
+     *   $analytics = $apigeeService->organizations_environments_analytics;
+     *  </code>
+     */
+    class OrganizationsEnvironmentsAnalytics extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Apigee\Resource\OrganizationsEnvironmentsAnalytics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Apigee_Resource_OrganizationsEnvironmentsAnalytics extends \Google\Service\Apigee\Resource\OrganizationsEnvironmentsAnalytics
+    {
+    }
 }

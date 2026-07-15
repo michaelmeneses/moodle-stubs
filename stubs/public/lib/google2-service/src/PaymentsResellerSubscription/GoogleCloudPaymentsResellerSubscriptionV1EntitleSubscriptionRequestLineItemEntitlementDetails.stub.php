@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PaymentsResellerSubscription;
-
-class GoogleCloudPaymentsResellerSubscriptionV1EntitleSubscriptionRequestLineItemEntitlementDetails extends \Google\Collection
-{
-    protected $collection_key = 'products';
-    /**
-     * @var int
-     */
-    public $lineItemIndex;
-    /**
-     * @var string[]
-     */
-    public $products;
-    /**
-     * @param int
-     */
-    public function setLineItemIndex($lineItemIndex)
+namespace Google\Service\PaymentsResellerSubscription {
+    class GoogleCloudPaymentsResellerSubscriptionV1EntitleSubscriptionRequestLineItemEntitlementDetails extends \Google\Collection
     {
+        protected $collection_key = 'products';
+        /**
+         * @var int
+         */
+        public $lineItemIndex;
+        /**
+         * @var string[]
+         */
+        public $products;
+        /**
+         * @param int
+         */
+        public function setLineItemIndex($lineItemIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getLineItemIndex()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setProducts($products)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getProducts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1EntitleSubscriptionRequestLineItemEntitlementDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLineItemIndex()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setProducts($products)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getProducts()
+    class Google_Service_PaymentsResellerSubscription_GoogleCloudPaymentsResellerSubscriptionV1EntitleSubscriptionRequestLineItemEntitlementDetails extends \Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1EntitleSubscriptionRequestLineItemEntitlementDetails
     {
     }
 }

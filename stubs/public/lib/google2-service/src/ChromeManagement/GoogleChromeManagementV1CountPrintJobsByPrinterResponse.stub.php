@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementV1CountPrintJobsByPrinterResponse extends \Google\Collection
-{
-    protected $collection_key = 'printerReports';
-    /**
-     * Pagination token for requesting the next page.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $printerReportsType = GoogleChromeManagementV1PrinterReport::class;
-    protected $printerReportsDataType = 'array';
-    /**
-     * Total number of printers matching request.
-     *
-     * @var string
-     */
-    public $totalSize;
-    /**
-     * Pagination token for requesting the next page.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementV1CountPrintJobsByPrinterResponse extends \Google\Collection
     {
+        protected $collection_key = 'printerReports';
+        /**
+         * Pagination token for requesting the next page.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $printerReportsType = GoogleChromeManagementV1PrinterReport::class;
+        protected $printerReportsDataType = 'array';
+        /**
+         * Total number of printers matching request.
+         *
+         * @var string
+         */
+        public $totalSize;
+        /**
+         * Pagination token for requesting the next page.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * List of PrinterReports matching request.
+         *
+         * @param GoogleChromeManagementV1PrinterReport[] $printerReports
+         */
+        public function setPrinterReports($printerReports)
+        {
+        }
+        /**
+         * @return GoogleChromeManagementV1PrinterReport[]
+         */
+        public function getPrinterReports()
+        {
+        }
+        /**
+         * Total number of printers matching request.
+         *
+         * @param string $totalSize
+         */
+        public function setTotalSize($totalSize)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalSize()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementV1CountPrintJobsByPrinterResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * List of PrinterReports matching request.
-     *
-     * @param GoogleChromeManagementV1PrinterReport[] $printerReports
-     */
-    public function setPrinterReports($printerReports)
-    {
-    }
-    /**
-     * @return GoogleChromeManagementV1PrinterReport[]
-     */
-    public function getPrinterReports()
-    {
-    }
-    /**
-     * Total number of printers matching request.
-     *
-     * @param string $totalSize
-     */
-    public function setTotalSize($totalSize)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalSize()
+    class Google_Service_ChromeManagement_GoogleChromeManagementV1CountPrintJobsByPrinterResponse extends \Google\Service\ChromeManagement\GoogleChromeManagementV1CountPrintJobsByPrinterResponse
     {
     }
 }

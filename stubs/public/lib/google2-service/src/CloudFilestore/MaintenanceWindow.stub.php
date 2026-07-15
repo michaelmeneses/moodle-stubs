@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudFilestore;
-
-class MaintenanceWindow extends \Google\Model
-{
-    protected $dailyCycleType = DailyCycle::class;
-    protected $dailyCycleDataType = '';
-    protected $weeklyCycleType = WeeklyCycle::class;
-    protected $weeklyCycleDataType = '';
-    /**
-     * Daily cycle.
-     *
-     * @param DailyCycle $dailyCycle
-     */
-    public function setDailyCycle(DailyCycle $dailyCycle)
+namespace Google\Service\CloudFilestore {
+    class MaintenanceWindow extends \Google\Model
     {
+        protected $dailyCycleType = DailyCycle::class;
+        protected $dailyCycleDataType = '';
+        protected $weeklyCycleType = WeeklyCycle::class;
+        protected $weeklyCycleDataType = '';
+        /**
+         * Daily cycle.
+         *
+         * @param DailyCycle $dailyCycle
+         */
+        public function setDailyCycle(DailyCycle $dailyCycle)
+        {
+        }
+        /**
+         * @return DailyCycle
+         */
+        public function getDailyCycle()
+        {
+        }
+        /**
+         * Weekly cycle.
+         *
+         * @param WeeklyCycle $weeklyCycle
+         */
+        public function setWeeklyCycle(WeeklyCycle $weeklyCycle)
+        {
+        }
+        /**
+         * @return WeeklyCycle
+         */
+        public function getWeeklyCycle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DailyCycle
+     * Runtime class alias of \Google\Service\CloudFilestore\MaintenanceWindow registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDailyCycle()
-    {
-    }
-    /**
-     * Weekly cycle.
-     *
-     * @param WeeklyCycle $weeklyCycle
-     */
-    public function setWeeklyCycle(WeeklyCycle $weeklyCycle)
-    {
-    }
-    /**
-     * @return WeeklyCycle
-     */
-    public function getWeeklyCycle()
+    class Google_Service_CloudFilestore_MaintenanceWindow extends \Google\Service\CloudFilestore\MaintenanceWindow
     {
     }
 }

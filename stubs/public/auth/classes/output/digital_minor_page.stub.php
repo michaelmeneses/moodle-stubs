@@ -29,6 +29,9 @@
  */
 namespace core_auth\output;
 
+use renderable;
+use renderer_base;
+use templatable;
 /**
  * Digital minor renderable class.
  *

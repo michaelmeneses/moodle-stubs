@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedJustificationPerson extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $isRecipient;
-    protected $userType = UserId::class;
-    protected $userDataType = '';
-    /**
-     * @param bool
-     */
-    public function setIsRecipient($isRecipient)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedJustificationPerson extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $isRecipient;
+        protected $userType = UserId::class;
+        protected $userDataType = '';
+        /**
+         * @param bool
+         */
+        public function setIsRecipient($isRecipient)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsRecipient()
+        {
+        }
+        /**
+         * @param UserId
+         */
+        public function setUser(UserId $user)
+        {
+        }
+        /**
+         * @return UserId
+         */
+        public function getUser()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedJustificationPerson registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIsRecipient()
-    {
-    }
-    /**
-     * @param UserId
-     */
-    public function setUser(UserId $user)
-    {
-    }
-    /**
-     * @return UserId
-     */
-    public function getUser()
+    class Google_Service_CloudSearch_AppsDynamiteSharedJustificationPerson extends \Google\Service\CloudSearch\AppsDynamiteSharedJustificationPerson
     {
     }
 }

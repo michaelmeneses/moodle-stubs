@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyerII;
-
-class NonGuaranteedAuctionTerms extends \Google\Collection
-{
-    protected $collection_key = 'reservePricesPerBuyer';
-    /**
-     * True if open auction buyers are allowed to compete with invited buyers in
-     * this private auction.
-     *
-     * @var bool
-     */
-    public $autoOptimizePrivateAuction;
-    protected $reservePricesPerBuyerType = PricePerBuyer::class;
-    protected $reservePricesPerBuyerDataType = 'array';
-    /**
-     * True if open auction buyers are allowed to compete with invited buyers in
-     * this private auction.
-     *
-     * @param bool $autoOptimizePrivateAuction
-     */
-    public function setAutoOptimizePrivateAuction($autoOptimizePrivateAuction)
+namespace Google\Service\AdExchangeBuyerII {
+    class NonGuaranteedAuctionTerms extends \Google\Collection
     {
+        protected $collection_key = 'reservePricesPerBuyer';
+        /**
+         * True if open auction buyers are allowed to compete with invited buyers in
+         * this private auction.
+         *
+         * @var bool
+         */
+        public $autoOptimizePrivateAuction;
+        protected $reservePricesPerBuyerType = PricePerBuyer::class;
+        protected $reservePricesPerBuyerDataType = 'array';
+        /**
+         * True if open auction buyers are allowed to compete with invited buyers in
+         * this private auction.
+         *
+         * @param bool $autoOptimizePrivateAuction
+         */
+        public function setAutoOptimizePrivateAuction($autoOptimizePrivateAuction)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAutoOptimizePrivateAuction()
+        {
+        }
+        /**
+         * Reserve price for the specified buyer.
+         *
+         * @param PricePerBuyer[] $reservePricesPerBuyer
+         */
+        public function setReservePricesPerBuyer($reservePricesPerBuyer)
+        {
+        }
+        /**
+         * @return PricePerBuyer[]
+         */
+        public function getReservePricesPerBuyer()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\AdExchangeBuyerII\NonGuaranteedAuctionTerms registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAutoOptimizePrivateAuction()
-    {
-    }
-    /**
-     * Reserve price for the specified buyer.
-     *
-     * @param PricePerBuyer[] $reservePricesPerBuyer
-     */
-    public function setReservePricesPerBuyer($reservePricesPerBuyer)
-    {
-    }
-    /**
-     * @return PricePerBuyer[]
-     */
-    public function getReservePricesPerBuyer()
+    class Google_Service_AdExchangeBuyerII_NonGuaranteedAuctionTerms extends \Google\Service\AdExchangeBuyerII\NonGuaranteedAuctionTerms
     {
     }
 }

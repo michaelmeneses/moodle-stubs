@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class OffersItems extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    /**
-     * @var string
-     */
-    public $artUrl;
-    /**
-     * @var string
-     */
-    public $gservicesKey;
-    /**
-     * @var string
-     */
-    public $id;
-    protected $itemsType = OffersItemsItems::class;
-    protected $itemsDataType = 'array';
-    /**
-     * @param string $artUrl
-     */
-    public function setArtUrl($artUrl)
+namespace Google\Service\Books {
+    class OffersItems extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        /**
+         * @var string
+         */
+        public $artUrl;
+        /**
+         * @var string
+         */
+        public $gservicesKey;
+        /**
+         * @var string
+         */
+        public $id;
+        protected $itemsType = OffersItemsItems::class;
+        protected $itemsDataType = 'array';
+        /**
+         * @param string $artUrl
+         */
+        public function setArtUrl($artUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getArtUrl()
+        {
+        }
+        /**
+         * @param string $gservicesKey
+         */
+        public function setGservicesKey($gservicesKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGservicesKey()
+        {
+        }
+        /**
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * @param OffersItemsItems[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return OffersItemsItems[]
+         */
+        public function getItems()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Books\OffersItems registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArtUrl()
-    {
-    }
-    /**
-     * @param string $gservicesKey
-     */
-    public function setGservicesKey($gservicesKey)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGservicesKey()
-    {
-    }
-    /**
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * @param OffersItemsItems[] $items
-     */
-    public function setItems($items)
-    {
-    }
-    /**
-     * @return OffersItemsItems[]
-     */
-    public function getItems()
+    class Google_Service_Books_OffersItems extends \Google\Service\Books\OffersItems
     {
     }
 }

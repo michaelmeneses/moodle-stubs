@@ -21,77 +21,88 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory\Resource;
-
-/**
- * The "domainAliases" collection of methods.
- * Typical usage is:
- *  <code>
- *   $adminService = new Google\Service\Directory(...);
- *   $domainAliases = $adminService->domainAliases;
- *  </code>
- */
-class DomainAliases extends \Google\Service\Resource
-{
+namespace Google\Service\Directory\Resource {
+    use Google\Service\Directory\DomainAlias;
+    use Google\Service\Directory\DomainAliases as DomainAliasesModel;
     /**
-     * Deletes a domain Alias of the customer. (domainAliases.delete)
-     *
-     * @param string $customer Immutable ID of the Google Workspace account.
-     * @param string $domainAliasName Name of domain alias to be retrieved.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * The "domainAliases" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $adminService = new Google\Service\Directory(...);
+     *   $domainAliases = $adminService->domainAliases;
+     *  </code>
      */
-    public function delete($customer, $domainAliasName, $optParams = [])
+    class DomainAliases extends \Google\Service\Resource
     {
+        /**
+         * Deletes a domain Alias of the customer. (domainAliases.delete)
+         *
+         * @param string $customer Immutable ID of the Google Workspace account.
+         * @param string $domainAliasName Name of domain alias to be retrieved.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($customer, $domainAliasName, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves a domain alias of the customer. (domainAliases.get)
+         *
+         * @param string $customer The unique ID for the customer's Google Workspace
+         * account. In case of a multi-domain account, to fetch all groups for a
+         * customer, use this field instead of `domain`. You can also use the
+         * `my_customer` alias to represent your account's `customerId`. The
+         * `customerId` is also returned as part of the [Users](https://developers.googl
+         * e.com/workspace/admin/directory/v1/reference/users) resource. You must
+         * provide either the `customer` or the `domain` parameter.
+         * @param string $domainAliasName Name of domain alias to be retrieved.
+         * @param array $optParams Optional parameters.
+         * @return DomainAlias
+         * @throws \Google\Service\Exception
+         */
+        public function get($customer, $domainAliasName, $optParams = [])
+        {
+        }
+        /**
+         * Inserts a domain alias of the customer. (domainAliases.insert)
+         *
+         * @param string $customer Immutable ID of the Google Workspace account.
+         * @param DomainAlias $postBody
+         * @param array $optParams Optional parameters.
+         * @return DomainAlias
+         * @throws \Google\Service\Exception
+         */
+        public function insert($customer, DomainAlias $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Lists the domain aliases of the customer. (domainAliases.listDomainAliases)
+         *
+         * @param string $customer The unique ID for the customer's Google Workspace
+         * account. In case of a multi-domain account, to fetch all groups for a
+         * customer, use this field instead of `domain`. You can also use the
+         * `my_customer` alias to represent your account's `customerId`. The
+         * `customerId` is also returned as part of the [Users](https://developers.googl
+         * e.com/workspace/admin/directory/v1/reference/users) resource. You must
+         * provide either the `customer` or the `domain` parameter.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string parentDomainName Name of the parent domain for which domain
+         * aliases are to be fetched.
+         * @return DomainAliasesModel
+         * @throws \Google\Service\Exception
+         */
+        public function listDomainAliases($customer, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Retrieves a domain alias of the customer. (domainAliases.get)
-     *
-     * @param string $customer The unique ID for the customer's Google Workspace
-     * account. In case of a multi-domain account, to fetch all groups for a
-     * customer, use this field instead of `domain`. You can also use the
-     * `my_customer` alias to represent your account's `customerId`. The
-     * `customerId` is also returned as part of the [Users](https://developers.googl
-     * e.com/workspace/admin/directory/v1/reference/users) resource. You must
-     * provide either the `customer` or the `domain` parameter.
-     * @param string $domainAliasName Name of domain alias to be retrieved.
-     * @param array $optParams Optional parameters.
-     * @return DomainAlias
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Directory\Resource\DomainAliases registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($customer, $domainAliasName, $optParams = [])
-    {
-    }
-    /**
-     * Inserts a domain alias of the customer. (domainAliases.insert)
-     *
-     * @param string $customer Immutable ID of the Google Workspace account.
-     * @param DomainAlias $postBody
-     * @param array $optParams Optional parameters.
-     * @return DomainAlias
-     * @throws \Google\Service\Exception
-     */
-    public function insert($customer, DomainAlias $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Lists the domain aliases of the customer. (domainAliases.listDomainAliases)
-     *
-     * @param string $customer The unique ID for the customer's Google Workspace
-     * account. In case of a multi-domain account, to fetch all groups for a
-     * customer, use this field instead of `domain`. You can also use the
-     * `my_customer` alias to represent your account's `customerId`. The
-     * `customerId` is also returned as part of the [Users](https://developers.googl
-     * e.com/workspace/admin/directory/v1/reference/users) resource. You must
-     * provide either the `customer` or the `domain` parameter.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string parentDomainName Name of the parent domain for which domain
-     * aliases are to be fetched.
-     * @return DomainAliasesModel
-     * @throws \Google\Service\Exception
-     */
-    public function listDomainAliases($customer, $optParams = [])
+    class Google_Service_Directory_Resource_DomainAliases extends \Google\Service\Directory\Resource\DomainAliases
     {
     }
 }

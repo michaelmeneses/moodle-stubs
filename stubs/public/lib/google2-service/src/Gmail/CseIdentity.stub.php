@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Gmail;
-
-class CseIdentity extends \Google\Model
-{
-    /**
-     * The email address for the sending identity. The email address must be the
-     * primary email address of the authenticated user.
-     *
-     * @var string
-     */
-    public $emailAddress;
-    /**
-     * If a key pair is associated, the ID of the key pair, CseKeyPair.
-     *
-     * @var string
-     */
-    public $primaryKeyPairId;
-    protected $signAndEncryptKeyPairsType = SignAndEncryptKeyPairs::class;
-    protected $signAndEncryptKeyPairsDataType = '';
-    /**
-     * The email address for the sending identity. The email address must be the
-     * primary email address of the authenticated user.
-     *
-     * @param string $emailAddress
-     */
-    public function setEmailAddress($emailAddress)
+namespace Google\Service\Gmail {
+    class CseIdentity extends \Google\Model
     {
+        /**
+         * The email address for the sending identity. The email address must be the
+         * primary email address of the authenticated user.
+         *
+         * @var string
+         */
+        public $emailAddress;
+        /**
+         * If a key pair is associated, the ID of the key pair, CseKeyPair.
+         *
+         * @var string
+         */
+        public $primaryKeyPairId;
+        protected $signAndEncryptKeyPairsType = SignAndEncryptKeyPairs::class;
+        protected $signAndEncryptKeyPairsDataType = '';
+        /**
+         * The email address for the sending identity. The email address must be the
+         * primary email address of the authenticated user.
+         *
+         * @param string $emailAddress
+         */
+        public function setEmailAddress($emailAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmailAddress()
+        {
+        }
+        /**
+         * If a key pair is associated, the ID of the key pair, CseKeyPair.
+         *
+         * @param string $primaryKeyPairId
+         */
+        public function setPrimaryKeyPairId($primaryKeyPairId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrimaryKeyPairId()
+        {
+        }
+        /**
+         * The configuration of a CSE identity that uses different key pairs for
+         * signing and encryption.
+         *
+         * @param SignAndEncryptKeyPairs $signAndEncryptKeyPairs
+         */
+        public function setSignAndEncryptKeyPairs(SignAndEncryptKeyPairs $signAndEncryptKeyPairs)
+        {
+        }
+        /**
+         * @return SignAndEncryptKeyPairs
+         */
+        public function getSignAndEncryptKeyPairs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Gmail\CseIdentity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmailAddress()
-    {
-    }
-    /**
-     * If a key pair is associated, the ID of the key pair, CseKeyPair.
-     *
-     * @param string $primaryKeyPairId
-     */
-    public function setPrimaryKeyPairId($primaryKeyPairId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrimaryKeyPairId()
-    {
-    }
-    /**
-     * The configuration of a CSE identity that uses different key pairs for
-     * signing and encryption.
-     *
-     * @param SignAndEncryptKeyPairs $signAndEncryptKeyPairs
-     */
-    public function setSignAndEncryptKeyPairs(SignAndEncryptKeyPairs $signAndEncryptKeyPairs)
-    {
-    }
-    /**
-     * @return SignAndEncryptKeyPairs
-     */
-    public function getSignAndEncryptKeyPairs()
+    class Google_Service_Gmail_CseIdentity extends \Google\Service\Gmail\CseIdentity
     {
     }
 }

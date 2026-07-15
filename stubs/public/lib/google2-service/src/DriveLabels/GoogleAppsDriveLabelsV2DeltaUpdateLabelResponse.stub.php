@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveLabels;
-
-class GoogleAppsDriveLabelsV2DeltaUpdateLabelResponse extends \Google\Collection
-{
-    protected $collection_key = 'responses';
-    protected $responsesType = GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseResponse::class;
-    protected $responsesDataType = 'array';
-    protected $updatedLabelType = GoogleAppsDriveLabelsV2Label::class;
-    protected $updatedLabelDataType = '';
-    /**
-     * The reply of the updates. This maps 1:1 with the updates, although
-     * responses to some requests may be empty.
-     *
-     * @param GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseResponse[] $responses
-     */
-    public function setResponses($responses)
+namespace Google\Service\DriveLabels {
+    class GoogleAppsDriveLabelsV2DeltaUpdateLabelResponse extends \Google\Collection
     {
+        protected $collection_key = 'responses';
+        protected $responsesType = GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseResponse::class;
+        protected $responsesDataType = 'array';
+        protected $updatedLabelType = GoogleAppsDriveLabelsV2Label::class;
+        protected $updatedLabelDataType = '';
+        /**
+         * The reply of the updates. This maps 1:1 with the updates, although
+         * responses to some requests may be empty.
+         *
+         * @param GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseResponse[] $responses
+         */
+        public function setResponses($responses)
+        {
+        }
+        /**
+         * @return GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseResponse[]
+         */
+        public function getResponses()
+        {
+        }
+        /**
+         * The label after updates were applied. This is only set if
+         * `include_label_in_response` is `true` and there were no errors.
+         *
+         * @param GoogleAppsDriveLabelsV2Label $updatedLabel
+         */
+        public function setUpdatedLabel(GoogleAppsDriveLabelsV2Label $updatedLabel)
+        {
+        }
+        /**
+         * @return GoogleAppsDriveLabelsV2Label
+         */
+        public function getUpdatedLabel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAppsDriveLabelsV2DeltaUpdateLabelResponseResponse[]
+     * Runtime class alias of \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2DeltaUpdateLabelResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResponses()
-    {
-    }
-    /**
-     * The label after updates were applied. This is only set if
-     * `include_label_in_response` is `true` and there were no errors.
-     *
-     * @param GoogleAppsDriveLabelsV2Label $updatedLabel
-     */
-    public function setUpdatedLabel(GoogleAppsDriveLabelsV2Label $updatedLabel)
-    {
-    }
-    /**
-     * @return GoogleAppsDriveLabelsV2Label
-     */
-    public function getUpdatedLabel()
+    class Google_Service_DriveLabels_GoogleAppsDriveLabelsV2DeltaUpdateLabelResponse extends \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2DeltaUpdateLabelResponse
     {
     }
 }

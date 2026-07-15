@@ -21,102 +21,111 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteFrontendRoster extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $avatarUrl;
-    protected $idType = AppsDynamiteRosterId::class;
-    protected $idDataType = '';
-    /**
-     * @var int
-     */
-    public $membershipCount;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $rosterGaiaKey;
-    /**
-     * @var string
-     */
-    public $rosterState;
-    /**
-     * @param string
-     */
-    public function setAvatarUrl($avatarUrl)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteFrontendRoster extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $avatarUrl;
+        protected $idType = AppsDynamiteRosterId::class;
+        protected $idDataType = '';
+        /**
+         * @var int
+         */
+        public $membershipCount;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $rosterGaiaKey;
+        /**
+         * @var string
+         */
+        public $rosterState;
+        /**
+         * @param string
+         */
+        public function setAvatarUrl($avatarUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAvatarUrl()
+        {
+        }
+        /**
+         * @param AppsDynamiteRosterId
+         */
+        public function setId(AppsDynamiteRosterId $id)
+        {
+        }
+        /**
+         * @return AppsDynamiteRosterId
+         */
+        public function getId()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setMembershipCount($membershipCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMembershipCount()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRosterGaiaKey($rosterGaiaKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRosterGaiaKey()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRosterState($rosterState)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRosterState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteFrontendRoster registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAvatarUrl()
-    {
-    }
-    /**
-     * @param AppsDynamiteRosterId
-     */
-    public function setId(AppsDynamiteRosterId $id)
-    {
-    }
-    /**
-     * @return AppsDynamiteRosterId
-     */
-    public function getId()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setMembershipCount($membershipCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMembershipCount()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRosterGaiaKey($rosterGaiaKey)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRosterGaiaKey()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRosterState($rosterState)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRosterState()
+    class Google_Service_CloudSearch_AppsDynamiteFrontendRoster extends \Google\Service\CloudSearch\AppsDynamiteFrontendRoster
     {
     }
 }

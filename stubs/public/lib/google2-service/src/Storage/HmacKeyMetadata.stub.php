@@ -21,210 +21,219 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storage;
-
-class HmacKeyMetadata extends \Google\Model
-{
-    /**
-     * The ID of the HMAC Key.
-     *
-     * @var string
-     */
-    public $accessId;
-    /**
-     * HTTP 1.1 Entity tag for the HMAC key.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * The ID of the HMAC key, including the Project ID and the Access ID.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * The kind of item this is. For HMAC Key metadata, this is always
-     * storage#hmacKeyMetadata.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Project ID owning the service account to which the key authenticates.
-     *
-     * @var string
-     */
-    public $projectId;
-    /**
-     * The link to this resource.
-     *
-     * @var string
-     */
-    public $selfLink;
-    /**
-     * The email address of the key's associated service account.
-     *
-     * @var string
-     */
-    public $serviceAccountEmail;
-    /**
-     * The state of the key. Can be one of ACTIVE, INACTIVE, or DELETED.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * The creation time of the HMAC key in RFC 3339 format.
-     *
-     * @var string
-     */
-    public $timeCreated;
-    /**
-     * The last modification time of the HMAC key metadata in RFC 3339 format.
-     *
-     * @var string
-     */
-    public $updated;
-    /**
-     * The ID of the HMAC Key.
-     *
-     * @param string $accessId
-     */
-    public function setAccessId($accessId)
+namespace Google\Service\Storage {
+    class HmacKeyMetadata extends \Google\Model
     {
+        /**
+         * The ID of the HMAC Key.
+         *
+         * @var string
+         */
+        public $accessId;
+        /**
+         * HTTP 1.1 Entity tag for the HMAC key.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * The ID of the HMAC key, including the Project ID and the Access ID.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * The kind of item this is. For HMAC Key metadata, this is always
+         * storage#hmacKeyMetadata.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Project ID owning the service account to which the key authenticates.
+         *
+         * @var string
+         */
+        public $projectId;
+        /**
+         * The link to this resource.
+         *
+         * @var string
+         */
+        public $selfLink;
+        /**
+         * The email address of the key's associated service account.
+         *
+         * @var string
+         */
+        public $serviceAccountEmail;
+        /**
+         * The state of the key. Can be one of ACTIVE, INACTIVE, or DELETED.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * The creation time of the HMAC key in RFC 3339 format.
+         *
+         * @var string
+         */
+        public $timeCreated;
+        /**
+         * The last modification time of the HMAC key metadata in RFC 3339 format.
+         *
+         * @var string
+         */
+        public $updated;
+        /**
+         * The ID of the HMAC Key.
+         *
+         * @param string $accessId
+         */
+        public function setAccessId($accessId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccessId()
+        {
+        }
+        /**
+         * HTTP 1.1 Entity tag for the HMAC key.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * The ID of the HMAC key, including the Project ID and the Access ID.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * The kind of item this is. For HMAC Key metadata, this is always
+         * storage#hmacKeyMetadata.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Project ID owning the service account to which the key authenticates.
+         *
+         * @param string $projectId
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
+        /**
+         * The link to this resource.
+         *
+         * @param string $selfLink
+         */
+        public function setSelfLink($selfLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelfLink()
+        {
+        }
+        /**
+         * The email address of the key's associated service account.
+         *
+         * @param string $serviceAccountEmail
+         */
+        public function setServiceAccountEmail($serviceAccountEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceAccountEmail()
+        {
+        }
+        /**
+         * The state of the key. Can be one of ACTIVE, INACTIVE, or DELETED.
+         *
+         * @param string $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getState()
+        {
+        }
+        /**
+         * The creation time of the HMAC key in RFC 3339 format.
+         *
+         * @param string $timeCreated
+         */
+        public function setTimeCreated($timeCreated)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimeCreated()
+        {
+        }
+        /**
+         * The last modification time of the HMAC key metadata in RFC 3339 format.
+         *
+         * @param string $updated
+         */
+        public function setUpdated($updated)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdated()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Storage\HmacKeyMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccessId()
-    {
-    }
-    /**
-     * HTTP 1.1 Entity tag for the HMAC key.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * The ID of the HMAC key, including the Project ID and the Access ID.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * The kind of item this is. For HMAC Key metadata, this is always
-     * storage#hmacKeyMetadata.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Project ID owning the service account to which the key authenticates.
-     *
-     * @param string $projectId
-     */
-    public function setProjectId($projectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProjectId()
-    {
-    }
-    /**
-     * The link to this resource.
-     *
-     * @param string $selfLink
-     */
-    public function setSelfLink($selfLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelfLink()
-    {
-    }
-    /**
-     * The email address of the key's associated service account.
-     *
-     * @param string $serviceAccountEmail
-     */
-    public function setServiceAccountEmail($serviceAccountEmail)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceAccountEmail()
-    {
-    }
-    /**
-     * The state of the key. Can be one of ACTIVE, INACTIVE, or DELETED.
-     *
-     * @param string $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getState()
-    {
-    }
-    /**
-     * The creation time of the HMAC key in RFC 3339 format.
-     *
-     * @param string $timeCreated
-     */
-    public function setTimeCreated($timeCreated)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimeCreated()
-    {
-    }
-    /**
-     * The last modification time of the HMAC key metadata in RFC 3339 format.
-     *
-     * @param string $updated
-     */
-    public function setUpdated($updated)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdated()
+    class Google_Service_Storage_HmacKeyMetadata extends \Google\Service\Storage\HmacKeyMetadata
     {
     }
 }

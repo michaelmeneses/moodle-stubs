@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class ListSessionTemplatesResponse extends \Google\Collection
-{
-    protected $collection_key = 'sessionTemplates';
-    /**
-     * A token, which can be sent as page_token to retrieve the next page. If this
-     * field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $sessionTemplatesType = SessionTemplate::class;
-    protected $sessionTemplatesDataType = 'array';
-    /**
-     * A token, which can be sent as page_token to retrieve the next page. If this
-     * field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Dataproc {
+    class ListSessionTemplatesResponse extends \Google\Collection
     {
+        protected $collection_key = 'sessionTemplates';
+        /**
+         * A token, which can be sent as page_token to retrieve the next page. If this
+         * field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $sessionTemplatesType = SessionTemplate::class;
+        protected $sessionTemplatesDataType = 'array';
+        /**
+         * A token, which can be sent as page_token to retrieve the next page. If this
+         * field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Output only. Session template list
+         *
+         * @param SessionTemplate[] $sessionTemplates
+         */
+        public function setSessionTemplates($sessionTemplates)
+        {
+        }
+        /**
+         * @return SessionTemplate[]
+         */
+        public function getSessionTemplates()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\ListSessionTemplatesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Output only. Session template list
-     *
-     * @param SessionTemplate[] $sessionTemplates
-     */
-    public function setSessionTemplates($sessionTemplates)
-    {
-    }
-    /**
-     * @return SessionTemplate[]
-     */
-    public function getSessionTemplates()
+    class Google_Service_Dataproc_ListSessionTemplatesResponse extends \Google\Service\Dataproc\ListSessionTemplatesResponse
     {
     }
 }

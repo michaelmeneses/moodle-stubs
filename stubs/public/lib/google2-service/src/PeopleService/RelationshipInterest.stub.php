@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PeopleService;
-
-class RelationshipInterest extends \Google\Model
-{
-    /**
-     * Output only. The value of the relationship interest translated and
-     * formatted in the viewer's account locale or the locale specified in the
-     * Accept-Language HTTP header.
-     *
-     * @var string
-     */
-    public $formattedValue;
-    protected $metadataType = FieldMetadata::class;
-    protected $metadataDataType = '';
-    /**
-     * The kind of relationship the person is looking for. The value can be custom
-     * or one of these predefined values: * `friend` * `date` * `relationship` *
-     * `networking`
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Output only. The value of the relationship interest translated and
-     * formatted in the viewer's account locale or the locale specified in the
-     * Accept-Language HTTP header.
-     *
-     * @param string $formattedValue
-     */
-    public function setFormattedValue($formattedValue)
+namespace Google\Service\PeopleService {
+    class RelationshipInterest extends \Google\Model
     {
+        /**
+         * Output only. The value of the relationship interest translated and
+         * formatted in the viewer's account locale or the locale specified in the
+         * Accept-Language HTTP header.
+         *
+         * @var string
+         */
+        public $formattedValue;
+        protected $metadataType = FieldMetadata::class;
+        protected $metadataDataType = '';
+        /**
+         * The kind of relationship the person is looking for. The value can be custom
+         * or one of these predefined values: * `friend` * `date` * `relationship` *
+         * `networking`
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Output only. The value of the relationship interest translated and
+         * formatted in the viewer's account locale or the locale specified in the
+         * Accept-Language HTTP header.
+         *
+         * @param string $formattedValue
+         */
+        public function setFormattedValue($formattedValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFormattedValue()
+        {
+        }
+        /**
+         * Metadata about the relationship interest.
+         *
+         * @param FieldMetadata $metadata
+         */
+        public function setMetadata(FieldMetadata $metadata)
+        {
+        }
+        /**
+         * @return FieldMetadata
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * The kind of relationship the person is looking for. The value can be custom
+         * or one of these predefined values: * `friend` * `date` * `relationship` *
+         * `networking`
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PeopleService\RelationshipInterest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFormattedValue()
-    {
-    }
-    /**
-     * Metadata about the relationship interest.
-     *
-     * @param FieldMetadata $metadata
-     */
-    public function setMetadata(FieldMetadata $metadata)
-    {
-    }
-    /**
-     * @return FieldMetadata
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * The kind of relationship the person is looking for. The value can be custom
-     * or one of these predefined values: * `friend` * `date` * `relationship` *
-     * `networking`
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_PeopleService_RelationshipInterest extends \Google\Service\PeopleService\RelationshipInterest
     {
     }
 }

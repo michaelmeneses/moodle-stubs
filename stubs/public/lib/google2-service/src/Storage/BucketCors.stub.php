@@ -21,99 +21,108 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storage;
-
-class BucketCors extends \Google\Collection
-{
-    protected $collection_key = 'responseHeader';
-    /**
-     * The value, in seconds, to return in the  Access-Control-Max-Age header used
-     * in preflight responses.
-     *
-     * @var int
-     */
-    public $maxAgeSeconds;
-    /**
-     * The list of HTTP methods on which to include CORS response headers, (GET,
-     * OPTIONS, POST, etc) Note: "*" is permitted in the list of methods, and
-     * means "any method".
-     *
-     * @var string[]
-     */
-    public $method;
-    /**
-     * The list of Origins eligible to receive CORS response headers. Note: "*" is
-     * permitted in the list of origins, and means "any Origin".
-     *
-     * @var string[]
-     */
-    public $origin;
-    /**
-     * The list of HTTP headers other than the simple response headers to give
-     * permission for the user-agent to share across domains.
-     *
-     * @var string[]
-     */
-    public $responseHeader;
-    /**
-     * The value, in seconds, to return in the  Access-Control-Max-Age header used
-     * in preflight responses.
-     *
-     * @param int $maxAgeSeconds
-     */
-    public function setMaxAgeSeconds($maxAgeSeconds)
+namespace Google\Service\Storage {
+    class BucketCors extends \Google\Collection
     {
+        protected $collection_key = 'responseHeader';
+        /**
+         * The value, in seconds, to return in the  Access-Control-Max-Age header used
+         * in preflight responses.
+         *
+         * @var int
+         */
+        public $maxAgeSeconds;
+        /**
+         * The list of HTTP methods on which to include CORS response headers, (GET,
+         * OPTIONS, POST, etc) Note: "*" is permitted in the list of methods, and
+         * means "any method".
+         *
+         * @var string[]
+         */
+        public $method;
+        /**
+         * The list of Origins eligible to receive CORS response headers. Note: "*" is
+         * permitted in the list of origins, and means "any Origin".
+         *
+         * @var string[]
+         */
+        public $origin;
+        /**
+         * The list of HTTP headers other than the simple response headers to give
+         * permission for the user-agent to share across domains.
+         *
+         * @var string[]
+         */
+        public $responseHeader;
+        /**
+         * The value, in seconds, to return in the  Access-Control-Max-Age header used
+         * in preflight responses.
+         *
+         * @param int $maxAgeSeconds
+         */
+        public function setMaxAgeSeconds($maxAgeSeconds)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxAgeSeconds()
+        {
+        }
+        /**
+         * The list of HTTP methods on which to include CORS response headers, (GET,
+         * OPTIONS, POST, etc) Note: "*" is permitted in the list of methods, and
+         * means "any method".
+         *
+         * @param string[] $method
+         */
+        public function setMethod($method)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMethod()
+        {
+        }
+        /**
+         * The list of Origins eligible to receive CORS response headers. Note: "*" is
+         * permitted in the list of origins, and means "any Origin".
+         *
+         * @param string[] $origin
+         */
+        public function setOrigin($origin)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getOrigin()
+        {
+        }
+        /**
+         * The list of HTTP headers other than the simple response headers to give
+         * permission for the user-agent to share across domains.
+         *
+         * @param string[] $responseHeader
+         */
+        public function setResponseHeader($responseHeader)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getResponseHeader()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Storage\BucketCors registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaxAgeSeconds()
-    {
-    }
-    /**
-     * The list of HTTP methods on which to include CORS response headers, (GET,
-     * OPTIONS, POST, etc) Note: "*" is permitted in the list of methods, and
-     * means "any method".
-     *
-     * @param string[] $method
-     */
-    public function setMethod($method)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getMethod()
-    {
-    }
-    /**
-     * The list of Origins eligible to receive CORS response headers. Note: "*" is
-     * permitted in the list of origins, and means "any Origin".
-     *
-     * @param string[] $origin
-     */
-    public function setOrigin($origin)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getOrigin()
-    {
-    }
-    /**
-     * The list of HTTP headers other than the simple response headers to give
-     * permission for the user-agent to share across domains.
-     *
-     * @param string[] $responseHeader
-     */
-    public function setResponseHeader($responseHeader)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getResponseHeader()
+    class Google_Service_Storage_BucketCors extends \Google\Service\Storage\BucketCors
     {
     }
 }

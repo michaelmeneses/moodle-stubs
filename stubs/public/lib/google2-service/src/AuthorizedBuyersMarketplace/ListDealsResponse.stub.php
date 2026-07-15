@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AuthorizedBuyersMarketplace;
-
-class ListDealsResponse extends \Google\Collection
-{
-    protected $collection_key = 'deals';
-    protected $dealsType = Deal::class;
-    protected $dealsDataType = 'array';
-    /**
-     * Token to fetch the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of deals.
-     *
-     * @param Deal[] $deals
-     */
-    public function setDeals($deals)
+namespace Google\Service\AuthorizedBuyersMarketplace {
+    class ListDealsResponse extends \Google\Collection
     {
+        protected $collection_key = 'deals';
+        protected $dealsType = Deal::class;
+        protected $dealsDataType = 'array';
+        /**
+         * Token to fetch the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of deals.
+         *
+         * @param Deal[] $deals
+         */
+        public function setDeals($deals)
+        {
+        }
+        /**
+         * @return Deal[]
+         */
+        public function getDeals()
+        {
+        }
+        /**
+         * Token to fetch the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Deal[]
+     * Runtime class alias of \Google\Service\AuthorizedBuyersMarketplace\ListDealsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeals()
-    {
-    }
-    /**
-     * Token to fetch the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_AuthorizedBuyersMarketplace_ListDealsResponse extends \Google\Service\AuthorizedBuyersMarketplace\ListDealsResponse
     {
     }
 }

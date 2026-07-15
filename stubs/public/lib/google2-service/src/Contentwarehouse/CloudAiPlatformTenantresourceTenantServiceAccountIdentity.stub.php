@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class CloudAiPlatformTenantresourceTenantServiceAccountIdentity extends \Google\Model
-{
-    /**
-     * Output only. The email address of the generated service account.
-     *
-     * @var string
-     */
-    public $serviceAccountEmail;
-    /**
-     * Input/Output [Required]. The service that the service account belongs to.
-     * (e.g. cloudbuild.googleapis.com for GCB service accounts)
-     *
-     * @var string
-     */
-    public $serviceName;
-    /**
-     * Output only. The email address of the generated service account.
-     *
-     * @param string $serviceAccountEmail
-     */
-    public function setServiceAccountEmail($serviceAccountEmail)
+namespace Google\Service\Contentwarehouse {
+    class CloudAiPlatformTenantresourceTenantServiceAccountIdentity extends \Google\Model
     {
+        /**
+         * Output only. The email address of the generated service account.
+         *
+         * @var string
+         */
+        public $serviceAccountEmail;
+        /**
+         * Input/Output [Required]. The service that the service account belongs to.
+         * (e.g. cloudbuild.googleapis.com for GCB service accounts)
+         *
+         * @var string
+         */
+        public $serviceName;
+        /**
+         * Output only. The email address of the generated service account.
+         *
+         * @param string $serviceAccountEmail
+         */
+        public function setServiceAccountEmail($serviceAccountEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceAccountEmail()
+        {
+        }
+        /**
+         * Input/Output [Required]. The service that the service account belongs to.
+         * (e.g. cloudbuild.googleapis.com for GCB service accounts)
+         *
+         * @param string $serviceName
+         */
+        public function setServiceName($serviceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contentwarehouse\CloudAiPlatformTenantresourceTenantServiceAccountIdentity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getServiceAccountEmail()
-    {
-    }
-    /**
-     * Input/Output [Required]. The service that the service account belongs to.
-     * (e.g. cloudbuild.googleapis.com for GCB service accounts)
-     *
-     * @param string $serviceName
-     */
-    public function setServiceName($serviceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceName()
+    class Google_Service_Contentwarehouse_CloudAiPlatformTenantresourceTenantServiceAccountIdentity extends \Google\Service\Contentwarehouse\CloudAiPlatformTenantresourceTenantServiceAccountIdentity
     {
     }
 }

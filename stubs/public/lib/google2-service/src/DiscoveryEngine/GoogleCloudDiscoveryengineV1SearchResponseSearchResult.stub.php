@@ -21,94 +21,103 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1SearchResponseSearchResult extends \Google\Model
-{
-    protected $chunkType = GoogleCloudDiscoveryengineV1Chunk::class;
-    protected $chunkDataType = '';
-    protected $documentType = GoogleCloudDiscoveryengineV1Document::class;
-    protected $documentDataType = '';
-    /**
-     * Document.id of the searched Document.
-     *
-     * @var string
-     */
-    public $id;
-    protected $modelScoresType = GoogleCloudDiscoveryengineV1DoubleList::class;
-    protected $modelScoresDataType = 'map';
-    protected $rankSignalsType = GoogleCloudDiscoveryengineV1SearchResponseSearchResultRankSignals::class;
-    protected $rankSignalsDataType = '';
-    /**
-     * The chunk data in the search response if the
-     * SearchRequest.ContentSearchSpec.search_result_mode is set to CHUNKS.
-     *
-     * @param GoogleCloudDiscoveryengineV1Chunk $chunk
-     */
-    public function setChunk(GoogleCloudDiscoveryengineV1Chunk $chunk)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1SearchResponseSearchResult extends \Google\Model
     {
+        protected $chunkType = GoogleCloudDiscoveryengineV1Chunk::class;
+        protected $chunkDataType = '';
+        protected $documentType = GoogleCloudDiscoveryengineV1Document::class;
+        protected $documentDataType = '';
+        /**
+         * Document.id of the searched Document.
+         *
+         * @var string
+         */
+        public $id;
+        protected $modelScoresType = GoogleCloudDiscoveryengineV1DoubleList::class;
+        protected $modelScoresDataType = 'map';
+        protected $rankSignalsType = GoogleCloudDiscoveryengineV1SearchResponseSearchResultRankSignals::class;
+        protected $rankSignalsDataType = '';
+        /**
+         * The chunk data in the search response if the
+         * SearchRequest.ContentSearchSpec.search_result_mode is set to CHUNKS.
+         *
+         * @param GoogleCloudDiscoveryengineV1Chunk $chunk
+         */
+        public function setChunk(GoogleCloudDiscoveryengineV1Chunk $chunk)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1Chunk
+         */
+        public function getChunk()
+        {
+        }
+        /**
+         * The document data snippet in the search response. Only fields that are
+         * marked as `retrievable` are populated.
+         *
+         * @param GoogleCloudDiscoveryengineV1Document $document
+         */
+        public function setDocument(GoogleCloudDiscoveryengineV1Document $document)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1Document
+         */
+        public function getDocument()
+        {
+        }
+        /**
+         * Document.id of the searched Document.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Output only. Google provided available scores.
+         *
+         * @param GoogleCloudDiscoveryengineV1DoubleList[] $modelScores
+         */
+        public function setModelScores($modelScores)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1DoubleList[]
+         */
+        public function getModelScores()
+        {
+        }
+        /**
+         * Optional. A set of ranking signals associated with the result.
+         *
+         * @param GoogleCloudDiscoveryengineV1SearchResponseSearchResultRankSignals $rankSignals
+         */
+        public function setRankSignals(GoogleCloudDiscoveryengineV1SearchResponseSearchResultRankSignals $rankSignals)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1SearchResponseSearchResultRankSignals
+         */
+        public function getRankSignals()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1Chunk
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1SearchResponseSearchResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChunk()
-    {
-    }
-    /**
-     * The document data snippet in the search response. Only fields that are
-     * marked as `retrievable` are populated.
-     *
-     * @param GoogleCloudDiscoveryengineV1Document $document
-     */
-    public function setDocument(GoogleCloudDiscoveryengineV1Document $document)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1Document
-     */
-    public function getDocument()
-    {
-    }
-    /**
-     * Document.id of the searched Document.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Output only. Google provided available scores.
-     *
-     * @param GoogleCloudDiscoveryengineV1DoubleList[] $modelScores
-     */
-    public function setModelScores($modelScores)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1DoubleList[]
-     */
-    public function getModelScores()
-    {
-    }
-    /**
-     * Optional. A set of ranking signals associated with the result.
-     *
-     * @param GoogleCloudDiscoveryengineV1SearchResponseSearchResultRankSignals $rankSignals
-     */
-    public function setRankSignals(GoogleCloudDiscoveryengineV1SearchResponseSearchResultRankSignals $rankSignals)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1SearchResponseSearchResultRankSignals
-     */
-    public function getRankSignals()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1SearchResponseSearchResult extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1SearchResponseSearchResult
     {
     }
 }

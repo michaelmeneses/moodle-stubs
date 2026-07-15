@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceManagement;
-
-class GenerateConfigReportRequest extends \Google\Model
-{
-    /**
-     * Required. Service configuration for which we want to generate the report.
-     * For this version of API, the supported types are
-     * google.api.servicemanagement.v1.ConfigRef,
-     * google.api.servicemanagement.v1.ConfigSource, and google.api.Service
-     *
-     * @var array[]
-     */
-    public $newConfig;
-    /**
-     * Optional. Service configuration against which the comparison will be done.
-     * For this version of API, the supported types are
-     * google.api.servicemanagement.v1.ConfigRef,
-     * google.api.servicemanagement.v1.ConfigSource, and google.api.Service
-     *
-     * @var array[]
-     */
-    public $oldConfig;
-    /**
-     * Required. Service configuration for which we want to generate the report.
-     * For this version of API, the supported types are
-     * google.api.servicemanagement.v1.ConfigRef,
-     * google.api.servicemanagement.v1.ConfigSource, and google.api.Service
-     *
-     * @param array[] $newConfig
-     */
-    public function setNewConfig($newConfig)
+namespace Google\Service\ServiceManagement {
+    class GenerateConfigReportRequest extends \Google\Model
     {
+        /**
+         * Required. Service configuration for which we want to generate the report.
+         * For this version of API, the supported types are
+         * google.api.servicemanagement.v1.ConfigRef,
+         * google.api.servicemanagement.v1.ConfigSource, and google.api.Service
+         *
+         * @var array[]
+         */
+        public $newConfig;
+        /**
+         * Optional. Service configuration against which the comparison will be done.
+         * For this version of API, the supported types are
+         * google.api.servicemanagement.v1.ConfigRef,
+         * google.api.servicemanagement.v1.ConfigSource, and google.api.Service
+         *
+         * @var array[]
+         */
+        public $oldConfig;
+        /**
+         * Required. Service configuration for which we want to generate the report.
+         * For this version of API, the supported types are
+         * google.api.servicemanagement.v1.ConfigRef,
+         * google.api.servicemanagement.v1.ConfigSource, and google.api.Service
+         *
+         * @param array[] $newConfig
+         */
+        public function setNewConfig($newConfig)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getNewConfig()
+        {
+        }
+        /**
+         * Optional. Service configuration against which the comparison will be done.
+         * For this version of API, the supported types are
+         * google.api.servicemanagement.v1.ConfigRef,
+         * google.api.servicemanagement.v1.ConfigSource, and google.api.Service
+         *
+         * @param array[] $oldConfig
+         */
+        public function setOldConfig($oldConfig)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getOldConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\ServiceManagement\GenerateConfigReportRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNewConfig()
-    {
-    }
-    /**
-     * Optional. Service configuration against which the comparison will be done.
-     * For this version of API, the supported types are
-     * google.api.servicemanagement.v1.ConfigRef,
-     * google.api.servicemanagement.v1.ConfigSource, and google.api.Service
-     *
-     * @param array[] $oldConfig
-     */
-    public function setOldConfig($oldConfig)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getOldConfig()
+    class Google_Service_ServiceManagement_GenerateConfigReportRequest extends \Google\Service\ServiceManagement\GenerateConfigReportRequest
     {
     }
 }

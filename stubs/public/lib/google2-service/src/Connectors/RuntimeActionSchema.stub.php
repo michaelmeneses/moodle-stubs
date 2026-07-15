@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors;
-
-class RuntimeActionSchema extends \Google\Collection
-{
-    protected $collection_key = 'resultMetadata';
-    /**
-     * @var string
-     */
-    public $action;
-    protected $inputParametersType = InputParameter::class;
-    protected $inputParametersDataType = 'array';
-    protected $resultMetadataType = ResultMetadata::class;
-    protected $resultMetadataDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setAction($action)
+namespace Google\Service\Connectors {
+    class RuntimeActionSchema extends \Google\Collection
     {
+        protected $collection_key = 'resultMetadata';
+        /**
+         * @var string
+         */
+        public $action;
+        protected $inputParametersType = InputParameter::class;
+        protected $inputParametersDataType = 'array';
+        protected $resultMetadataType = ResultMetadata::class;
+        protected $resultMetadataDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setAction($action)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAction()
+        {
+        }
+        /**
+         * @param InputParameter[]
+         */
+        public function setInputParameters($inputParameters)
+        {
+        }
+        /**
+         * @return InputParameter[]
+         */
+        public function getInputParameters()
+        {
+        }
+        /**
+         * @param ResultMetadata[]
+         */
+        public function setResultMetadata($resultMetadata)
+        {
+        }
+        /**
+         * @return ResultMetadata[]
+         */
+        public function getResultMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Connectors\RuntimeActionSchema registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAction()
-    {
-    }
-    /**
-     * @param InputParameter[]
-     */
-    public function setInputParameters($inputParameters)
-    {
-    }
-    /**
-     * @return InputParameter[]
-     */
-    public function getInputParameters()
-    {
-    }
-    /**
-     * @param ResultMetadata[]
-     */
-    public function setResultMetadata($resultMetadata)
-    {
-    }
-    /**
-     * @return ResultMetadata[]
-     */
-    public function getResultMetadata()
+    class Google_Service_Connectors_RuntimeActionSchema extends \Google\Service\Connectors\RuntimeActionSchema
     {
     }
 }

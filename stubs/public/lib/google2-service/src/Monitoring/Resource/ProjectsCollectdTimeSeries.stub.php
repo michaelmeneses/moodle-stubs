@@ -21,32 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring\Resource;
-
-/**
- * The "collectdTimeSeries" collection of methods.
- * Typical usage is:
- *  <code>
- *   $monitoringService = new Google\Service\Monitoring(...);
- *   $collectdTimeSeries = $monitoringService->projects_collectdTimeSeries;
- *  </code>
- */
-class ProjectsCollectdTimeSeries extends \Google\Service\Resource
-{
+namespace Google\Service\Monitoring\Resource {
+    use Google\Service\Monitoring\CreateCollectdTimeSeriesRequest;
+    use Google\Service\Monitoring\CreateCollectdTimeSeriesResponse;
     /**
-     * Cloud Monitoring Agent only: Creates a new time series.This method is only
-     * for use by the Cloud Monitoring Agent. Use projects.timeSeries.create
-     * instead. (collectdTimeSeries.create)
-     *
-     * @param string $name The project
-     * (https://cloud.google.com/monitoring/api/v3#project_name) in which to create
-     * the time series. The format is: projects/[PROJECT_ID_OR_NUMBER]
-     * @param CreateCollectdTimeSeriesRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return CreateCollectdTimeSeriesResponse
-     * @throws \Google\Service\Exception
+     * The "collectdTimeSeries" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $monitoringService = new Google\Service\Monitoring(...);
+     *   $collectdTimeSeries = $monitoringService->projects_collectdTimeSeries;
+     *  </code>
      */
-    public function create($name, CreateCollectdTimeSeriesRequest $postBody, $optParams = [])
+    class ProjectsCollectdTimeSeries extends \Google\Service\Resource
+    {
+        /**
+         * Cloud Monitoring Agent only: Creates a new time series.This method is only
+         * for use by the Cloud Monitoring Agent. Use projects.timeSeries.create
+         * instead. (collectdTimeSeries.create)
+         *
+         * @param string $name The project
+         * (https://cloud.google.com/monitoring/api/v3#project_name) in which to create
+         * the time series. The format is: projects/[PROJECT_ID_OR_NUMBER]
+         * @param CreateCollectdTimeSeriesRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return CreateCollectdTimeSeriesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function create($name, CreateCollectdTimeSeriesRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Monitoring\Resource\ProjectsCollectdTimeSeries registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Monitoring_Resource_ProjectsCollectdTimeSeries extends \Google\Service\Monitoring\Resource\ProjectsCollectdTimeSeries
     {
     }
 }

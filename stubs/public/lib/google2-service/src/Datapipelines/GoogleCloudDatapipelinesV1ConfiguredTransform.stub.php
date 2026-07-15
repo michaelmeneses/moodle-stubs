@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datapipelines;
-
-class GoogleCloudDatapipelinesV1ConfiguredTransform extends \Google\Model
-{
-    protected $configType = GoogleCloudDatapipelinesV1Row::class;
-    protected $configDataType = '';
-    /**
-     * @var string
-     */
-    public $uniformResourceName;
-    /**
-     * @param GoogleCloudDatapipelinesV1Row
-     */
-    public function setConfig(GoogleCloudDatapipelinesV1Row $config)
+namespace Google\Service\Datapipelines {
+    class GoogleCloudDatapipelinesV1ConfiguredTransform extends \Google\Model
     {
+        protected $configType = GoogleCloudDatapipelinesV1Row::class;
+        protected $configDataType = '';
+        /**
+         * @var string
+         */
+        public $uniformResourceName;
+        /**
+         * @param GoogleCloudDatapipelinesV1Row
+         */
+        public function setConfig(GoogleCloudDatapipelinesV1Row $config)
+        {
+        }
+        /**
+         * @return GoogleCloudDatapipelinesV1Row
+         */
+        public function getConfig()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUniformResourceName($uniformResourceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUniformResourceName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatapipelinesV1Row
+     * Runtime class alias of \Google\Service\Datapipelines\GoogleCloudDatapipelinesV1ConfiguredTransform registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfig()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUniformResourceName($uniformResourceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUniformResourceName()
+    class Google_Service_Datapipelines_GoogleCloudDatapipelinesV1ConfiguredTransform extends \Google\Service\Datapipelines\GoogleCloudDatapipelinesV1ConfiguredTransform
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CertificateAuthorityService;
-
-class CertificateFingerprint extends \Google\Model
-{
-    /**
-     * The SHA 256 hash, encoded in hexadecimal, of the DER x509 certificate.
-     *
-     * @var string
-     */
-    public $sha256Hash;
-    /**
-     * The SHA 256 hash, encoded in hexadecimal, of the DER x509 certificate.
-     *
-     * @param string $sha256Hash
-     */
-    public function setSha256Hash($sha256Hash)
+namespace Google\Service\CertificateAuthorityService {
+    class CertificateFingerprint extends \Google\Model
     {
+        /**
+         * The SHA 256 hash, encoded in hexadecimal, of the DER x509 certificate.
+         *
+         * @var string
+         */
+        public $sha256Hash;
+        /**
+         * The SHA 256 hash, encoded in hexadecimal, of the DER x509 certificate.
+         *
+         * @param string $sha256Hash
+         */
+        public function setSha256Hash($sha256Hash)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSha256Hash()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CertificateAuthorityService\CertificateFingerprint registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSha256Hash()
+    class Google_Service_CertificateAuthorityService_CertificateFingerprint extends \Google\Service\CertificateAuthorityService\CertificateFingerprint
     {
     }
 }

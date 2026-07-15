@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class IntCandidates extends \Google\Collection
-{
-    protected $collection_key = 'candidates';
-    /**
-     * Candidates for the int parameter in increasing order.
-     *
-     * @var string[]
-     */
-    public $candidates;
-    /**
-     * Candidates for the int parameter in increasing order.
-     *
-     * @param string[] $candidates
-     */
-    public function setCandidates($candidates)
+namespace Google\Service\Bigquery {
+    class IntCandidates extends \Google\Collection
     {
+        protected $collection_key = 'candidates';
+        /**
+         * Candidates for the int parameter in increasing order.
+         *
+         * @var string[]
+         */
+        public $candidates;
+        /**
+         * Candidates for the int parameter in increasing order.
+         *
+         * @param string[] $candidates
+         */
+        public function setCandidates($candidates)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCandidates()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Bigquery\IntCandidates registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCandidates()
+    class Google_Service_Bigquery_IntCandidates extends \Google\Service\Bigquery\IntCandidates
     {
     }
 }

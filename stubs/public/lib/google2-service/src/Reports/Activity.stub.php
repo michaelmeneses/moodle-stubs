@@ -21,181 +21,190 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Reports;
-
-class Activity extends \Google\Collection
-{
-    protected $collection_key = 'resourceDetails';
-    protected $actorType = ActivityActor::class;
-    protected $actorDataType = '';
-    /**
-     * ETag of the entry.
-     *
-     * @var string
-     */
-    public $etag;
-    protected $eventsType = ActivityEvents::class;
-    protected $eventsDataType = 'array';
-    protected $idType = ActivityId::class;
-    protected $idDataType = '';
-    /**
-     * IP address of the user doing the action. This is the Internet Protocol (IP)
-     * address of the user when logging into Google Workspace, which may or may
-     * not reflect the user's physical location. For example, the IP address can
-     * be the user's proxy server's address or a virtual private network (VPN)
-     * address. The API supports IPv4 and IPv6.
-     *
-     * @var string
-     */
-    public $ipAddress;
-    /**
-     * The type of API resource. For an activity report, the value is
-     * `audit#activity`.
-     *
-     * @var string
-     */
-    public $kind;
-    protected $networkInfoType = ActivityNetworkInfo::class;
-    protected $networkInfoDataType = '';
-    /**
-     * This is the domain that is affected by the report's event. For example
-     * domain of Admin console or the Drive application's document owner.
-     *
-     * @var string
-     */
-    public $ownerDomain;
-    protected $resourceDetailsType = ResourceDetails::class;
-    protected $resourceDetailsDataType = 'array';
-    /**
-     * User doing the action.
-     *
-     * @param ActivityActor $actor
-     */
-    public function setActor(ActivityActor $actor)
+namespace Google\Service\Reports {
+    class Activity extends \Google\Collection
     {
+        protected $collection_key = 'resourceDetails';
+        protected $actorType = ActivityActor::class;
+        protected $actorDataType = '';
+        /**
+         * ETag of the entry.
+         *
+         * @var string
+         */
+        public $etag;
+        protected $eventsType = ActivityEvents::class;
+        protected $eventsDataType = 'array';
+        protected $idType = ActivityId::class;
+        protected $idDataType = '';
+        /**
+         * IP address of the user doing the action. This is the Internet Protocol (IP)
+         * address of the user when logging into Google Workspace, which may or may
+         * not reflect the user's physical location. For example, the IP address can
+         * be the user's proxy server's address or a virtual private network (VPN)
+         * address. The API supports IPv4 and IPv6.
+         *
+         * @var string
+         */
+        public $ipAddress;
+        /**
+         * The type of API resource. For an activity report, the value is
+         * `audit#activity`.
+         *
+         * @var string
+         */
+        public $kind;
+        protected $networkInfoType = ActivityNetworkInfo::class;
+        protected $networkInfoDataType = '';
+        /**
+         * This is the domain that is affected by the report's event. For example
+         * domain of Admin console or the Drive application's document owner.
+         *
+         * @var string
+         */
+        public $ownerDomain;
+        protected $resourceDetailsType = ResourceDetails::class;
+        protected $resourceDetailsDataType = 'array';
+        /**
+         * User doing the action.
+         *
+         * @param ActivityActor $actor
+         */
+        public function setActor(ActivityActor $actor)
+        {
+        }
+        /**
+         * @return ActivityActor
+         */
+        public function getActor()
+        {
+        }
+        /**
+         * ETag of the entry.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * Activity events in the report.
+         *
+         * @param ActivityEvents[] $events
+         */
+        public function setEvents($events)
+        {
+        }
+        /**
+         * @return ActivityEvents[]
+         */
+        public function getEvents()
+        {
+        }
+        /**
+         * Unique identifier for each activity record.
+         *
+         * @param ActivityId $id
+         */
+        public function setId(ActivityId $id)
+        {
+        }
+        /**
+         * @return ActivityId
+         */
+        public function getId()
+        {
+        }
+        /**
+         * IP address of the user doing the action. This is the Internet Protocol (IP)
+         * address of the user when logging into Google Workspace, which may or may
+         * not reflect the user's physical location. For example, the IP address can
+         * be the user's proxy server's address or a virtual private network (VPN)
+         * address. The API supports IPv4 and IPv6.
+         *
+         * @param string $ipAddress
+         */
+        public function setIpAddress($ipAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIpAddress()
+        {
+        }
+        /**
+         * The type of API resource. For an activity report, the value is
+         * `audit#activity`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Network information of the user doing the action.
+         *
+         * @param ActivityNetworkInfo $networkInfo
+         */
+        public function setNetworkInfo(ActivityNetworkInfo $networkInfo)
+        {
+        }
+        /**
+         * @return ActivityNetworkInfo
+         */
+        public function getNetworkInfo()
+        {
+        }
+        /**
+         * This is the domain that is affected by the report's event. For example
+         * domain of Admin console or the Drive application's document owner.
+         *
+         * @param string $ownerDomain
+         */
+        public function setOwnerDomain($ownerDomain)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOwnerDomain()
+        {
+        }
+        /**
+         * Details of the resource on which the action was performed.
+         *
+         * @param ResourceDetails[] $resourceDetails
+         */
+        public function setResourceDetails($resourceDetails)
+        {
+        }
+        /**
+         * @return ResourceDetails[]
+         */
+        public function getResourceDetails()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ActivityActor
+     * Runtime class alias of \Google\Service\Reports\Activity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActor()
-    {
-    }
-    /**
-     * ETag of the entry.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * Activity events in the report.
-     *
-     * @param ActivityEvents[] $events
-     */
-    public function setEvents($events)
-    {
-    }
-    /**
-     * @return ActivityEvents[]
-     */
-    public function getEvents()
-    {
-    }
-    /**
-     * Unique identifier for each activity record.
-     *
-     * @param ActivityId $id
-     */
-    public function setId(ActivityId $id)
-    {
-    }
-    /**
-     * @return ActivityId
-     */
-    public function getId()
-    {
-    }
-    /**
-     * IP address of the user doing the action. This is the Internet Protocol (IP)
-     * address of the user when logging into Google Workspace, which may or may
-     * not reflect the user's physical location. For example, the IP address can
-     * be the user's proxy server's address or a virtual private network (VPN)
-     * address. The API supports IPv4 and IPv6.
-     *
-     * @param string $ipAddress
-     */
-    public function setIpAddress($ipAddress)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIpAddress()
-    {
-    }
-    /**
-     * The type of API resource. For an activity report, the value is
-     * `audit#activity`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Network information of the user doing the action.
-     *
-     * @param ActivityNetworkInfo $networkInfo
-     */
-    public function setNetworkInfo(ActivityNetworkInfo $networkInfo)
-    {
-    }
-    /**
-     * @return ActivityNetworkInfo
-     */
-    public function getNetworkInfo()
-    {
-    }
-    /**
-     * This is the domain that is affected by the report's event. For example
-     * domain of Admin console or the Drive application's document owner.
-     *
-     * @param string $ownerDomain
-     */
-    public function setOwnerDomain($ownerDomain)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOwnerDomain()
-    {
-    }
-    /**
-     * Details of the resource on which the action was performed.
-     *
-     * @param ResourceDetails[] $resourceDetails
-     */
-    public function setResourceDetails($resourceDetails)
-    {
-    }
-    /**
-     * @return ResourceDetails[]
-     */
-    public function getResourceDetails()
+    class Google_Service_Reports_Activity extends \Google\Service\Reports\Activity
     {
     }
 }

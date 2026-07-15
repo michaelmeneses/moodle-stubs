@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataManager;
-
-class UserProperty extends \Google\Model
-{
-    /**
-     * Required. The name of the user property to use.
-     *
-     * @var string
-     */
-    public $propertyName;
-    /**
-     * Required. The string representation of the value of the user property to
-     * use.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Required. The name of the user property to use.
-     *
-     * @param string $propertyName
-     */
-    public function setPropertyName($propertyName)
+namespace Google\Service\DataManager {
+    class UserProperty extends \Google\Model
     {
+        /**
+         * Required. The name of the user property to use.
+         *
+         * @var string
+         */
+        public $propertyName;
+        /**
+         * Required. The string representation of the value of the user property to
+         * use.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Required. The name of the user property to use.
+         *
+         * @param string $propertyName
+         */
+        public function setPropertyName($propertyName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPropertyName()
+        {
+        }
+        /**
+         * Required. The string representation of the value of the user property to
+         * use.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataManager\UserProperty registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPropertyName()
-    {
-    }
-    /**
-     * Required. The string representation of the value of the user property to
-     * use.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_DataManager_UserProperty extends \Google\Service\DataManager\UserProperty
     {
     }
 }

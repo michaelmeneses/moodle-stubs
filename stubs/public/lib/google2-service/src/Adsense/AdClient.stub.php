@@ -21,115 +21,124 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Adsense;
-
-class AdClient extends \Google\Model
-{
-    /**
-     * State unspecified.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * The ad client is ready to show ads.
-     */
-    public const STATE_READY = 'READY';
-    /**
-     * Running some checks on the ad client before it is ready to serve ads.
-     */
-    public const STATE_GETTING_READY = 'GETTING_READY';
-    /**
-     * The ad client hasn't been checked yet. There are tasks pending before
-     * AdSense will start the review.
-     */
-    public const STATE_REQUIRES_REVIEW = 'REQUIRES_REVIEW';
-    /**
-     * Output only. Resource name of the ad client. Format:
-     * accounts/{account}/adclients/{adclient}
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. Reporting product code of the ad client. For example, "AFC"
-     * for AdSense for Content. Corresponds to the `PRODUCT_CODE` dimension, and
-     * present only if the ad client supports reporting.
-     *
-     * @var string
-     */
-    public $productCode;
-    /**
-     * Output only. Unique ID of the ad client as used in the `AD_CLIENT_ID`
-     * reporting dimension. Present only if the ad client supports reporting.
-     *
-     * @var string
-     */
-    public $reportingDimensionId;
-    /**
-     * Output only. State of the ad client.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Output only. Resource name of the ad client. Format:
-     * accounts/{account}/adclients/{adclient}
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Adsense {
+    class AdClient extends \Google\Model
     {
+        /**
+         * State unspecified.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * The ad client is ready to show ads.
+         */
+        public const STATE_READY = 'READY';
+        /**
+         * Running some checks on the ad client before it is ready to serve ads.
+         */
+        public const STATE_GETTING_READY = 'GETTING_READY';
+        /**
+         * The ad client hasn't been checked yet. There are tasks pending before
+         * AdSense will start the review.
+         */
+        public const STATE_REQUIRES_REVIEW = 'REQUIRES_REVIEW';
+        /**
+         * Output only. Resource name of the ad client. Format:
+         * accounts/{account}/adclients/{adclient}
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. Reporting product code of the ad client. For example, "AFC"
+         * for AdSense for Content. Corresponds to the `PRODUCT_CODE` dimension, and
+         * present only if the ad client supports reporting.
+         *
+         * @var string
+         */
+        public $productCode;
+        /**
+         * Output only. Unique ID of the ad client as used in the `AD_CLIENT_ID`
+         * reporting dimension. Present only if the ad client supports reporting.
+         *
+         * @var string
+         */
+        public $reportingDimensionId;
+        /**
+         * Output only. State of the ad client.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Output only. Resource name of the ad client. Format:
+         * accounts/{account}/adclients/{adclient}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. Reporting product code of the ad client. For example, "AFC"
+         * for AdSense for Content. Corresponds to the `PRODUCT_CODE` dimension, and
+         * present only if the ad client supports reporting.
+         *
+         * @param string $productCode
+         */
+        public function setProductCode($productCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProductCode()
+        {
+        }
+        /**
+         * Output only. Unique ID of the ad client as used in the `AD_CLIENT_ID`
+         * reporting dimension. Present only if the ad client supports reporting.
+         *
+         * @param string $reportingDimensionId
+         */
+        public function setReportingDimensionId($reportingDimensionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReportingDimensionId()
+        {
+        }
+        /**
+         * Output only. State of the ad client.
+         *
+         * Accepted values: STATE_UNSPECIFIED, READY, GETTING_READY, REQUIRES_REVIEW
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Adsense\AdClient registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. Reporting product code of the ad client. For example, "AFC"
-     * for AdSense for Content. Corresponds to the `PRODUCT_CODE` dimension, and
-     * present only if the ad client supports reporting.
-     *
-     * @param string $productCode
-     */
-    public function setProductCode($productCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProductCode()
-    {
-    }
-    /**
-     * Output only. Unique ID of the ad client as used in the `AD_CLIENT_ID`
-     * reporting dimension. Present only if the ad client supports reporting.
-     *
-     * @param string $reportingDimensionId
-     */
-    public function setReportingDimensionId($reportingDimensionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReportingDimensionId()
-    {
-    }
-    /**
-     * Output only. State of the ad client.
-     *
-     * Accepted values: STATE_UNSPECIFIED, READY, GETTING_READY, REQUIRES_REVIEW
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
+    class Google_Service_Adsense_AdClient extends \Google\Service\Adsense\AdClient
     {
     }
 }

@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AuthorizedBuyersMarketplace;
-
-class UriTargeting extends \Google\Collection
-{
-    protected $collection_key = 'targetedUris';
-    /**
-     * A list of URLs to be excluded.
-     *
-     * @var string[]
-     */
-    public $excludedUris;
-    /**
-     * A list of URLs to be included.
-     *
-     * @var string[]
-     */
-    public $targetedUris;
-    /**
-     * A list of URLs to be excluded.
-     *
-     * @param string[] $excludedUris
-     */
-    public function setExcludedUris($excludedUris)
+namespace Google\Service\AuthorizedBuyersMarketplace {
+    class UriTargeting extends \Google\Collection
     {
+        protected $collection_key = 'targetedUris';
+        /**
+         * A list of URLs to be excluded.
+         *
+         * @var string[]
+         */
+        public $excludedUris;
+        /**
+         * A list of URLs to be included.
+         *
+         * @var string[]
+         */
+        public $targetedUris;
+        /**
+         * A list of URLs to be excluded.
+         *
+         * @param string[] $excludedUris
+         */
+        public function setExcludedUris($excludedUris)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getExcludedUris()
+        {
+        }
+        /**
+         * A list of URLs to be included.
+         *
+         * @param string[] $targetedUris
+         */
+        public function setTargetedUris($targetedUris)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTargetedUris()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\AuthorizedBuyersMarketplace\UriTargeting registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExcludedUris()
-    {
-    }
-    /**
-     * A list of URLs to be included.
-     *
-     * @param string[] $targetedUris
-     */
-    public function setTargetedUris($targetedUris)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTargetedUris()
+    class Google_Service_AuthorizedBuyersMarketplace_UriTargeting extends \Google\Service\AuthorizedBuyersMarketplace\UriTargeting
     {
     }
 }

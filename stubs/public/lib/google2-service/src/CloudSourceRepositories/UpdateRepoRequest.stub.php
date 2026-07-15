@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSourceRepositories;
-
-class UpdateRepoRequest extends \Google\Model
-{
-    protected $repoType = Repo::class;
-    protected $repoDataType = '';
-    /**
-     * @var string
-     */
-    public $updateMask;
-    /**
-     * @param Repo
-     */
-    public function setRepo(Repo $repo)
+namespace Google\Service\CloudSourceRepositories {
+    class UpdateRepoRequest extends \Google\Model
     {
+        protected $repoType = Repo::class;
+        protected $repoDataType = '';
+        /**
+         * @var string
+         */
+        public $updateMask;
+        /**
+         * @param Repo
+         */
+        public function setRepo(Repo $repo)
+        {
+        }
+        /**
+         * @return Repo
+         */
+        public function getRepo()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUpdateMask($updateMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateMask()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Repo
+     * Runtime class alias of \Google\Service\CloudSourceRepositories\UpdateRepoRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRepo()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUpdateMask($updateMask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateMask()
+    class Google_Service_CloudSourceRepositories_UpdateRepoRequest extends \Google\Service\CloudSourceRepositories\UpdateRepoRequest
     {
     }
 }

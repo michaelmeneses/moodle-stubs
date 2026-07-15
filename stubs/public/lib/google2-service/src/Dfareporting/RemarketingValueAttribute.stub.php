@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class RemarketingValueAttribute extends \Google\Collection
-{
-    protected $collection_key = 'userAttributeIds';
-    /**
-     * Optional. Field ID in the element.
-     *
-     * @var int
-     */
-    public $fieldId;
-    /**
-     * Optional. Remarketing user attribute IDs for auto filtering.
-     *
-     * @var string[]
-     */
-    public $userAttributeIds;
-    /**
-     * Optional. Field ID in the element.
-     *
-     * @param int $fieldId
-     */
-    public function setFieldId($fieldId)
+namespace Google\Service\Dfareporting {
+    class RemarketingValueAttribute extends \Google\Collection
     {
+        protected $collection_key = 'userAttributeIds';
+        /**
+         * Optional. Field ID in the element.
+         *
+         * @var int
+         */
+        public $fieldId;
+        /**
+         * Optional. Remarketing user attribute IDs for auto filtering.
+         *
+         * @var string[]
+         */
+        public $userAttributeIds;
+        /**
+         * Optional. Field ID in the element.
+         *
+         * @param int $fieldId
+         */
+        public function setFieldId($fieldId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getFieldId()
+        {
+        }
+        /**
+         * Optional. Remarketing user attribute IDs for auto filtering.
+         *
+         * @param string[] $userAttributeIds
+         */
+        public function setUserAttributeIds($userAttributeIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUserAttributeIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Dfareporting\RemarketingValueAttribute registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFieldId()
-    {
-    }
-    /**
-     * Optional. Remarketing user attribute IDs for auto filtering.
-     *
-     * @param string[] $userAttributeIds
-     */
-    public function setUserAttributeIds($userAttributeIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUserAttributeIds()
+    class Google_Service_Dfareporting_RemarketingValueAttribute extends \Google\Service\Dfareporting\RemarketingValueAttribute
     {
     }
 }

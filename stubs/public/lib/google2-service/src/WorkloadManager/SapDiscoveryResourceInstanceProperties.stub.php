@@ -21,239 +21,248 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager;
-
-class SapDiscoveryResourceInstanceProperties extends \Google\Collection
-{
-    /**
-     * Unspecified instance role.
-     */
-    public const INSTANCE_ROLE_INSTANCE_ROLE_UNSPECIFIED = 'INSTANCE_ROLE_UNSPECIFIED';
-    /**
-     * Application central services.
-     */
-    public const INSTANCE_ROLE_INSTANCE_ROLE_ASCS = 'INSTANCE_ROLE_ASCS';
-    /**
-     * Enqueue replication server.
-     */
-    public const INSTANCE_ROLE_INSTANCE_ROLE_ERS = 'INSTANCE_ROLE_ERS';
-    /**
-     * Application server.
-     */
-    public const INSTANCE_ROLE_INSTANCE_ROLE_APP_SERVER = 'INSTANCE_ROLE_APP_SERVER';
-    /**
-     * Database node.
-     */
-    public const INSTANCE_ROLE_INSTANCE_ROLE_DATABASE = 'INSTANCE_ROLE_DATABASE';
-    /**
-     * Combinations of roles. Application central services and enqueue replication
-     * server.
-     */
-    public const INSTANCE_ROLE_INSTANCE_ROLE_ASCS_ERS = 'INSTANCE_ROLE_ASCS_ERS';
-    /**
-     * Application central services and application server.
-     */
-    public const INSTANCE_ROLE_INSTANCE_ROLE_ASCS_APP_SERVER = 'INSTANCE_ROLE_ASCS_APP_SERVER';
-    /**
-     * Application central services and database.
-     */
-    public const INSTANCE_ROLE_INSTANCE_ROLE_ASCS_DATABASE = 'INSTANCE_ROLE_ASCS_DATABASE';
-    /**
-     * Enqueue replication server and application server.
-     */
-    public const INSTANCE_ROLE_INSTANCE_ROLE_ERS_APP_SERVER = 'INSTANCE_ROLE_ERS_APP_SERVER';
-    /**
-     * Enqueue replication server and database.
-     */
-    public const INSTANCE_ROLE_INSTANCE_ROLE_ERS_DATABASE = 'INSTANCE_ROLE_ERS_DATABASE';
-    /**
-     * Application server and database.
-     */
-    public const INSTANCE_ROLE_INSTANCE_ROLE_APP_SERVER_DATABASE = 'INSTANCE_ROLE_APP_SERVER_DATABASE';
-    /**
-     * Application central services, enqueue replication server and application
-     * server.
-     */
-    public const INSTANCE_ROLE_INSTANCE_ROLE_ASCS_ERS_APP_SERVER = 'INSTANCE_ROLE_ASCS_ERS_APP_SERVER';
-    /**
-     * Application central services, enqueue replication server and database.
-     */
-    public const INSTANCE_ROLE_INSTANCE_ROLE_ASCS_ERS_DATABASE = 'INSTANCE_ROLE_ASCS_ERS_DATABASE';
-    /**
-     * Application central services, application server and database.
-     */
-    public const INSTANCE_ROLE_INSTANCE_ROLE_ASCS_APP_SERVER_DATABASE = 'INSTANCE_ROLE_ASCS_APP_SERVER_DATABASE';
-    /**
-     * Enqueue replication server, application server and database.
-     */
-    public const INSTANCE_ROLE_INSTANCE_ROLE_ERS_APP_SERVER_DATABASE = 'INSTANCE_ROLE_ERS_APP_SERVER_DATABASE';
-    /**
-     * Application central services, enqueue replication server, application
-     * server and database.
-     */
-    public const INSTANCE_ROLE_INSTANCE_ROLE_ASCS_ERS_APP_SERVER_DATABASE = 'INSTANCE_ROLE_ASCS_ERS_APP_SERVER_DATABASE';
-    protected $collection_key = 'diskMounts';
-    protected $appInstancesType = SapDiscoveryResourceInstancePropertiesAppInstance::class;
-    protected $appInstancesDataType = 'array';
-    /**
-     * Optional. A list of instance URIs that are part of a cluster with this one.
-     *
-     * @var string[]
-     */
-    public $clusterInstances;
-    protected $diskMountsType = SapDiscoveryResourceInstancePropertiesDiskMount::class;
-    protected $diskMountsDataType = 'array';
-    /**
-     * Optional. The VM's instance number.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $instanceNumber;
-    /**
-     * Optional. Bitmask of instance role, a resource may have multiple roles at
-     * once.
-     *
-     * @var string
-     */
-    public $instanceRole;
-    /**
-     * Optional. Instance is part of a DR site.
-     *
-     * @var bool
-     */
-    public $isDrSite;
-    protected $osKernelVersionType = SapDiscoveryResourceInstancePropertiesKernelVersion::class;
-    protected $osKernelVersionDataType = '';
-    /**
-     * Optional. A virtual hostname of the instance if it has one.
-     *
-     * @var string
-     */
-    public $virtualHostname;
-    /**
-     * Optional. App server instances on the host
-     *
-     * @param SapDiscoveryResourceInstancePropertiesAppInstance[] $appInstances
-     */
-    public function setAppInstances($appInstances)
+namespace Google\Service\WorkloadManager {
+    class SapDiscoveryResourceInstanceProperties extends \Google\Collection
     {
+        /**
+         * Unspecified instance role.
+         */
+        public const INSTANCE_ROLE_INSTANCE_ROLE_UNSPECIFIED = 'INSTANCE_ROLE_UNSPECIFIED';
+        /**
+         * Application central services.
+         */
+        public const INSTANCE_ROLE_INSTANCE_ROLE_ASCS = 'INSTANCE_ROLE_ASCS';
+        /**
+         * Enqueue replication server.
+         */
+        public const INSTANCE_ROLE_INSTANCE_ROLE_ERS = 'INSTANCE_ROLE_ERS';
+        /**
+         * Application server.
+         */
+        public const INSTANCE_ROLE_INSTANCE_ROLE_APP_SERVER = 'INSTANCE_ROLE_APP_SERVER';
+        /**
+         * Database node.
+         */
+        public const INSTANCE_ROLE_INSTANCE_ROLE_DATABASE = 'INSTANCE_ROLE_DATABASE';
+        /**
+         * Combinations of roles. Application central services and enqueue replication
+         * server.
+         */
+        public const INSTANCE_ROLE_INSTANCE_ROLE_ASCS_ERS = 'INSTANCE_ROLE_ASCS_ERS';
+        /**
+         * Application central services and application server.
+         */
+        public const INSTANCE_ROLE_INSTANCE_ROLE_ASCS_APP_SERVER = 'INSTANCE_ROLE_ASCS_APP_SERVER';
+        /**
+         * Application central services and database.
+         */
+        public const INSTANCE_ROLE_INSTANCE_ROLE_ASCS_DATABASE = 'INSTANCE_ROLE_ASCS_DATABASE';
+        /**
+         * Enqueue replication server and application server.
+         */
+        public const INSTANCE_ROLE_INSTANCE_ROLE_ERS_APP_SERVER = 'INSTANCE_ROLE_ERS_APP_SERVER';
+        /**
+         * Enqueue replication server and database.
+         */
+        public const INSTANCE_ROLE_INSTANCE_ROLE_ERS_DATABASE = 'INSTANCE_ROLE_ERS_DATABASE';
+        /**
+         * Application server and database.
+         */
+        public const INSTANCE_ROLE_INSTANCE_ROLE_APP_SERVER_DATABASE = 'INSTANCE_ROLE_APP_SERVER_DATABASE';
+        /**
+         * Application central services, enqueue replication server and application
+         * server.
+         */
+        public const INSTANCE_ROLE_INSTANCE_ROLE_ASCS_ERS_APP_SERVER = 'INSTANCE_ROLE_ASCS_ERS_APP_SERVER';
+        /**
+         * Application central services, enqueue replication server and database.
+         */
+        public const INSTANCE_ROLE_INSTANCE_ROLE_ASCS_ERS_DATABASE = 'INSTANCE_ROLE_ASCS_ERS_DATABASE';
+        /**
+         * Application central services, application server and database.
+         */
+        public const INSTANCE_ROLE_INSTANCE_ROLE_ASCS_APP_SERVER_DATABASE = 'INSTANCE_ROLE_ASCS_APP_SERVER_DATABASE';
+        /**
+         * Enqueue replication server, application server and database.
+         */
+        public const INSTANCE_ROLE_INSTANCE_ROLE_ERS_APP_SERVER_DATABASE = 'INSTANCE_ROLE_ERS_APP_SERVER_DATABASE';
+        /**
+         * Application central services, enqueue replication server, application
+         * server and database.
+         */
+        public const INSTANCE_ROLE_INSTANCE_ROLE_ASCS_ERS_APP_SERVER_DATABASE = 'INSTANCE_ROLE_ASCS_ERS_APP_SERVER_DATABASE';
+        protected $collection_key = 'diskMounts';
+        protected $appInstancesType = SapDiscoveryResourceInstancePropertiesAppInstance::class;
+        protected $appInstancesDataType = 'array';
+        /**
+         * Optional. A list of instance URIs that are part of a cluster with this one.
+         *
+         * @var string[]
+         */
+        public $clusterInstances;
+        protected $diskMountsType = SapDiscoveryResourceInstancePropertiesDiskMount::class;
+        protected $diskMountsDataType = 'array';
+        /**
+         * Optional. The VM's instance number.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $instanceNumber;
+        /**
+         * Optional. Bitmask of instance role, a resource may have multiple roles at
+         * once.
+         *
+         * @var string
+         */
+        public $instanceRole;
+        /**
+         * Optional. Instance is part of a DR site.
+         *
+         * @var bool
+         */
+        public $isDrSite;
+        protected $osKernelVersionType = SapDiscoveryResourceInstancePropertiesKernelVersion::class;
+        protected $osKernelVersionDataType = '';
+        /**
+         * Optional. A virtual hostname of the instance if it has one.
+         *
+         * @var string
+         */
+        public $virtualHostname;
+        /**
+         * Optional. App server instances on the host
+         *
+         * @param SapDiscoveryResourceInstancePropertiesAppInstance[] $appInstances
+         */
+        public function setAppInstances($appInstances)
+        {
+        }
+        /**
+         * @return SapDiscoveryResourceInstancePropertiesAppInstance[]
+         */
+        public function getAppInstances()
+        {
+        }
+        /**
+         * Optional. A list of instance URIs that are part of a cluster with this one.
+         *
+         * @param string[] $clusterInstances
+         */
+        public function setClusterInstances($clusterInstances)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getClusterInstances()
+        {
+        }
+        /**
+         * Optional. Disk mounts on the instance.
+         *
+         * @param SapDiscoveryResourceInstancePropertiesDiskMount[] $diskMounts
+         */
+        public function setDiskMounts($diskMounts)
+        {
+        }
+        /**
+         * @return SapDiscoveryResourceInstancePropertiesDiskMount[]
+         */
+        public function getDiskMounts()
+        {
+        }
+        /**
+         * Optional. The VM's instance number.
+         *
+         * @deprecated
+         * @param string $instanceNumber
+         */
+        public function setInstanceNumber($instanceNumber)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getInstanceNumber()
+        {
+        }
+        /**
+         * Optional. Bitmask of instance role, a resource may have multiple roles at
+         * once.
+         *
+         * Accepted values: INSTANCE_ROLE_UNSPECIFIED, INSTANCE_ROLE_ASCS,
+         * INSTANCE_ROLE_ERS, INSTANCE_ROLE_APP_SERVER, INSTANCE_ROLE_DATABASE,
+         * INSTANCE_ROLE_ASCS_ERS, INSTANCE_ROLE_ASCS_APP_SERVER,
+         * INSTANCE_ROLE_ASCS_DATABASE, INSTANCE_ROLE_ERS_APP_SERVER,
+         * INSTANCE_ROLE_ERS_DATABASE, INSTANCE_ROLE_APP_SERVER_DATABASE,
+         * INSTANCE_ROLE_ASCS_ERS_APP_SERVER, INSTANCE_ROLE_ASCS_ERS_DATABASE,
+         * INSTANCE_ROLE_ASCS_APP_SERVER_DATABASE,
+         * INSTANCE_ROLE_ERS_APP_SERVER_DATABASE,
+         * INSTANCE_ROLE_ASCS_ERS_APP_SERVER_DATABASE
+         *
+         * @param self::INSTANCE_ROLE_* $instanceRole
+         */
+        public function setInstanceRole($instanceRole)
+        {
+        }
+        /**
+         * @return self::INSTANCE_ROLE_*
+         */
+        public function getInstanceRole()
+        {
+        }
+        /**
+         * Optional. Instance is part of a DR site.
+         *
+         * @param bool $isDrSite
+         */
+        public function setIsDrSite($isDrSite)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsDrSite()
+        {
+        }
+        /**
+         * Optional. The kernel version of the instance.
+         *
+         * @param SapDiscoveryResourceInstancePropertiesKernelVersion $osKernelVersion
+         */
+        public function setOsKernelVersion(SapDiscoveryResourceInstancePropertiesKernelVersion $osKernelVersion)
+        {
+        }
+        /**
+         * @return SapDiscoveryResourceInstancePropertiesKernelVersion
+         */
+        public function getOsKernelVersion()
+        {
+        }
+        /**
+         * Optional. A virtual hostname of the instance if it has one.
+         *
+         * @param string $virtualHostname
+         */
+        public function setVirtualHostname($virtualHostname)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVirtualHostname()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SapDiscoveryResourceInstancePropertiesAppInstance[]
+     * Runtime class alias of \Google\Service\WorkloadManager\SapDiscoveryResourceInstanceProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAppInstances()
-    {
-    }
-    /**
-     * Optional. A list of instance URIs that are part of a cluster with this one.
-     *
-     * @param string[] $clusterInstances
-     */
-    public function setClusterInstances($clusterInstances)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getClusterInstances()
-    {
-    }
-    /**
-     * Optional. Disk mounts on the instance.
-     *
-     * @param SapDiscoveryResourceInstancePropertiesDiskMount[] $diskMounts
-     */
-    public function setDiskMounts($diskMounts)
-    {
-    }
-    /**
-     * @return SapDiscoveryResourceInstancePropertiesDiskMount[]
-     */
-    public function getDiskMounts()
-    {
-    }
-    /**
-     * Optional. The VM's instance number.
-     *
-     * @deprecated
-     * @param string $instanceNumber
-     */
-    public function setInstanceNumber($instanceNumber)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getInstanceNumber()
-    {
-    }
-    /**
-     * Optional. Bitmask of instance role, a resource may have multiple roles at
-     * once.
-     *
-     * Accepted values: INSTANCE_ROLE_UNSPECIFIED, INSTANCE_ROLE_ASCS,
-     * INSTANCE_ROLE_ERS, INSTANCE_ROLE_APP_SERVER, INSTANCE_ROLE_DATABASE,
-     * INSTANCE_ROLE_ASCS_ERS, INSTANCE_ROLE_ASCS_APP_SERVER,
-     * INSTANCE_ROLE_ASCS_DATABASE, INSTANCE_ROLE_ERS_APP_SERVER,
-     * INSTANCE_ROLE_ERS_DATABASE, INSTANCE_ROLE_APP_SERVER_DATABASE,
-     * INSTANCE_ROLE_ASCS_ERS_APP_SERVER, INSTANCE_ROLE_ASCS_ERS_DATABASE,
-     * INSTANCE_ROLE_ASCS_APP_SERVER_DATABASE,
-     * INSTANCE_ROLE_ERS_APP_SERVER_DATABASE,
-     * INSTANCE_ROLE_ASCS_ERS_APP_SERVER_DATABASE
-     *
-     * @param self::INSTANCE_ROLE_* $instanceRole
-     */
-    public function setInstanceRole($instanceRole)
-    {
-    }
-    /**
-     * @return self::INSTANCE_ROLE_*
-     */
-    public function getInstanceRole()
-    {
-    }
-    /**
-     * Optional. Instance is part of a DR site.
-     *
-     * @param bool $isDrSite
-     */
-    public function setIsDrSite($isDrSite)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsDrSite()
-    {
-    }
-    /**
-     * Optional. The kernel version of the instance.
-     *
-     * @param SapDiscoveryResourceInstancePropertiesKernelVersion $osKernelVersion
-     */
-    public function setOsKernelVersion(SapDiscoveryResourceInstancePropertiesKernelVersion $osKernelVersion)
-    {
-    }
-    /**
-     * @return SapDiscoveryResourceInstancePropertiesKernelVersion
-     */
-    public function getOsKernelVersion()
-    {
-    }
-    /**
-     * Optional. A virtual hostname of the instance if it has one.
-     *
-     * @param string $virtualHostname
-     */
-    public function setVirtualHostname($virtualHostname)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVirtualHostname()
+    class Google_Service_WorkloadManager_SapDiscoveryResourceInstanceProperties extends \Google\Service\WorkloadManager\SapDiscoveryResourceInstanceProperties
     {
     }
 }

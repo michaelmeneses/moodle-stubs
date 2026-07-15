@@ -21,106 +21,115 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1Partition extends \Google\Collection
-{
-    protected $collection_key = 'values';
-    /**
-     * Optional. The etag for this partition.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $etag;
-    /**
-     * Required. Immutable. The location of the entity data within the partition,
-     * for example, gs://bucket/path/to/entity/key1=value1/key2=value2. Or
-     * projects//datasets//tables/
-     *
-     * @var string
-     */
-    public $location;
-    /**
-     * Output only. Partition values used in the HTTP URL must be double encoded.
-     * For example, url_encode(url_encode(value)) can be used to encode
-     * "US:CA/CA#Sunnyvale so that the request URL ends with
-     * "/partitions/US%253ACA/CA%2523Sunnyvale". The name field in the response
-     * retains the encoded format.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. Immutable. The set of values representing the partition, which
-     * correspond to the partition schema defined in the parent entity.
-     *
-     * @var string[]
-     */
-    public $values;
-    /**
-     * Optional. The etag for this partition.
-     *
-     * @deprecated
-     * @param string $etag
-     */
-    public function setEtag($etag)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1Partition extends \Google\Collection
     {
+        protected $collection_key = 'values';
+        /**
+         * Optional. The etag for this partition.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $etag;
+        /**
+         * Required. Immutable. The location of the entity data within the partition,
+         * for example, gs://bucket/path/to/entity/key1=value1/key2=value2. Or
+         * projects//datasets//tables/
+         *
+         * @var string
+         */
+        public $location;
+        /**
+         * Output only. Partition values used in the HTTP URL must be double encoded.
+         * For example, url_encode(url_encode(value)) can be used to encode
+         * "US:CA/CA#Sunnyvale so that the request URL ends with
+         * "/partitions/US%253ACA/CA%2523Sunnyvale". The name field in the response
+         * retains the encoded format.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. Immutable. The set of values representing the partition, which
+         * correspond to the partition schema defined in the parent entity.
+         *
+         * @var string[]
+         */
+        public $values;
+        /**
+         * Optional. The etag for this partition.
+         *
+         * @deprecated
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * Required. Immutable. The location of the entity data within the partition,
+         * for example, gs://bucket/path/to/entity/key1=value1/key2=value2. Or
+         * projects//datasets//tables/
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * Output only. Partition values used in the HTTP URL must be double encoded.
+         * For example, url_encode(url_encode(value)) can be used to encode
+         * "US:CA/CA#Sunnyvale so that the request URL ends with
+         * "/partitions/US%253ACA/CA%2523Sunnyvale". The name field in the response
+         * retains the encoded format.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Required. Immutable. The set of values representing the partition, which
+         * correspond to the partition schema defined in the parent entity.
+         *
+         * @param string[] $values
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1Partition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
-    {
-    }
-    /**
-     * Required. Immutable. The location of the entity data within the partition,
-     * for example, gs://bucket/path/to/entity/key1=value1/key2=value2. Or
-     * projects//datasets//tables/
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocation()
-    {
-    }
-    /**
-     * Output only. Partition values used in the HTTP URL must be double encoded.
-     * For example, url_encode(url_encode(value)) can be used to encode
-     * "US:CA/CA#Sunnyvale so that the request URL ends with
-     * "/partitions/US%253ACA/CA%2523Sunnyvale". The name field in the response
-     * retains the encoded format.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Required. Immutable. The set of values representing the partition, which
-     * correspond to the partition schema defined in the parent entity.
-     *
-     * @param string[] $values
-     */
-    public function setValues($values)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getValues()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1Partition extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1Partition
     {
     }
 }

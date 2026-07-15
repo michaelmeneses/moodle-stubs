@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class OrdersCreateTestReturnResponse extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $kind;
-    /**
-     * @var string
-     */
-    public $returnId;
-    /**
-     * @param string
-     */
-    public function setKind($kind)
+namespace Google\Service\ShoppingContent {
+    class OrdersCreateTestReturnResponse extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $kind;
+        /**
+         * @var string
+         */
+        public $returnId;
+        /**
+         * @param string
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReturnId($returnId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReturnId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\OrdersCreateTestReturnResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReturnId($returnId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReturnId()
+    class Google_Service_ShoppingContent_OrdersCreateTestReturnResponse extends \Google\Service\ShoppingContent\OrdersCreateTestReturnResponse
     {
     }
 }

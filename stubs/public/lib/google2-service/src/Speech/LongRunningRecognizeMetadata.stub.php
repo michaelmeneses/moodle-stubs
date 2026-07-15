@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Speech;
-
-class LongRunningRecognizeMetadata extends \Google\Model
-{
-    /**
-     * Time of the most recent processing update.
-     *
-     * @var string
-     */
-    public $lastUpdateTime;
-    /**
-     * Approximate percentage of audio processed thus far. Guaranteed to be 100
-     * when the audio is fully processed and the results are available.
-     *
-     * @var int
-     */
-    public $progressPercent;
-    /**
-     * Time when the request was received.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * Output only. The URI of the audio file being transcribed. Empty if the
-     * audio was sent as byte content.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * Time of the most recent processing update.
-     *
-     * @param string $lastUpdateTime
-     */
-    public function setLastUpdateTime($lastUpdateTime)
+namespace Google\Service\Speech {
+    class LongRunningRecognizeMetadata extends \Google\Model
     {
+        /**
+         * Time of the most recent processing update.
+         *
+         * @var string
+         */
+        public $lastUpdateTime;
+        /**
+         * Approximate percentage of audio processed thus far. Guaranteed to be 100
+         * when the audio is fully processed and the results are available.
+         *
+         * @var int
+         */
+        public $progressPercent;
+        /**
+         * Time when the request was received.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * Output only. The URI of the audio file being transcribed. Empty if the
+         * audio was sent as byte content.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * Time of the most recent processing update.
+         *
+         * @param string $lastUpdateTime
+         */
+        public function setLastUpdateTime($lastUpdateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastUpdateTime()
+        {
+        }
+        /**
+         * Approximate percentage of audio processed thus far. Guaranteed to be 100
+         * when the audio is fully processed and the results are available.
+         *
+         * @param int $progressPercent
+         */
+        public function setProgressPercent($progressPercent)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getProgressPercent()
+        {
+        }
+        /**
+         * Time when the request was received.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
+        /**
+         * Output only. The URI of the audio file being transcribed. Empty if the
+         * audio was sent as byte content.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Speech\LongRunningRecognizeMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLastUpdateTime()
-    {
-    }
-    /**
-     * Approximate percentage of audio processed thus far. Guaranteed to be 100
-     * when the audio is fully processed and the results are available.
-     *
-     * @param int $progressPercent
-     */
-    public function setProgressPercent($progressPercent)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getProgressPercent()
-    {
-    }
-    /**
-     * Time when the request was received.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
-    {
-    }
-    /**
-     * Output only. The URI of the audio file being transcribed. Empty if the
-     * audio was sent as byte content.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_Speech_LongRunningRecognizeMetadata extends \Google\Service\Speech\LongRunningRecognizeMetadata
     {
     }
 }

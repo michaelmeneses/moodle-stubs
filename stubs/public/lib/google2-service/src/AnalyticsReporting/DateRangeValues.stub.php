@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsReporting;
-
-class DateRangeValues extends \Google\Collection
-{
-    protected $collection_key = 'values';
-    protected $pivotValueRegionsType = PivotValueRegion::class;
-    protected $pivotValueRegionsDataType = 'array';
-    /**
-     * @var string[]
-     */
-    public $values;
-    /**
-     * @param PivotValueRegion[]
-     */
-    public function setPivotValueRegions($pivotValueRegions)
+namespace Google\Service\AnalyticsReporting {
+    class DateRangeValues extends \Google\Collection
     {
+        protected $collection_key = 'values';
+        protected $pivotValueRegionsType = PivotValueRegion::class;
+        protected $pivotValueRegionsDataType = 'array';
+        /**
+         * @var string[]
+         */
+        public $values;
+        /**
+         * @param PivotValueRegion[]
+         */
+        public function setPivotValueRegions($pivotValueRegions)
+        {
+        }
+        /**
+         * @return PivotValueRegion[]
+         */
+        public function getPivotValueRegions()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PivotValueRegion[]
+     * Runtime class alias of \Google\Service\AnalyticsReporting\DateRangeValues registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPivotValueRegions()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setValues($values)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getValues()
+    class Google_Service_AnalyticsReporting_DateRangeValues extends \Google\Service\AnalyticsReporting\DateRangeValues
     {
     }
 }

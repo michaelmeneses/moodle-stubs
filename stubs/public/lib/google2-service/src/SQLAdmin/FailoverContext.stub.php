@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class FailoverContext extends \Google\Model
-{
-    /**
-     * This is always `sql#failoverContext`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The current settings version of this instance. Request will be rejected if
-     * this version doesn't match the current settings version.
-     *
-     * @var string
-     */
-    public $settingsVersion;
-    /**
-     * This is always `sql#failoverContext`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\SQLAdmin {
+    class FailoverContext extends \Google\Model
     {
+        /**
+         * This is always `sql#failoverContext`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The current settings version of this instance. Request will be rejected if
+         * this version doesn't match the current settings version.
+         *
+         * @var string
+         */
+        public $settingsVersion;
+        /**
+         * This is always `sql#failoverContext`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The current settings version of this instance. Request will be rejected if
+         * this version doesn't match the current settings version.
+         *
+         * @param string $settingsVersion
+         */
+        public function setSettingsVersion($settingsVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSettingsVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SQLAdmin\FailoverContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * The current settings version of this instance. Request will be rejected if
-     * this version doesn't match the current settings version.
-     *
-     * @param string $settingsVersion
-     */
-    public function setSettingsVersion($settingsVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSettingsVersion()
+    class Google_Service_SQLAdmin_FailoverContext extends \Google\Service\SQLAdmin\FailoverContext
     {
     }
 }

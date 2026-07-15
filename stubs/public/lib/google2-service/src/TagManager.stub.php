@@ -21,64 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for TagManager (v2).
- *
- * <p>
- * This API allows clients to access and modify container and tag configuration.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://developers.google.com/tag-manager" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class TagManager extends \Google\Service
-{
-    /** Delete your Google Tag Manager containers. */
-    const TAGMANAGER_DELETE_CONTAINERS = "https://www.googleapis.com/auth/tagmanager.delete.containers";
-    /** Manage your Google Tag Manager container and its subcomponents, excluding versioning and publishing. */
-    const TAGMANAGER_EDIT_CONTAINERS = "https://www.googleapis.com/auth/tagmanager.edit.containers";
-    /** Manage your Google Tag Manager container versions. */
-    const TAGMANAGER_EDIT_CONTAINERVERSIONS = "https://www.googleapis.com/auth/tagmanager.edit.containerversions";
-    /** View and manage your Google Tag Manager accounts. */
-    const TAGMANAGER_MANAGE_ACCOUNTS = "https://www.googleapis.com/auth/tagmanager.manage.accounts";
-    /** Manage user permissions of your Google Tag Manager account and container. */
-    const TAGMANAGER_MANAGE_USERS = "https://www.googleapis.com/auth/tagmanager.manage.users";
-    /** Publish your Google Tag Manager container versions. */
-    const TAGMANAGER_PUBLISH = "https://www.googleapis.com/auth/tagmanager.publish";
-    /** View your Google Tag Manager container and its subcomponents. */
-    const TAGMANAGER_READONLY = "https://www.googleapis.com/auth/tagmanager.readonly";
-    public $accounts;
-    public $accounts_containers;
-    public $accounts_containers_destinations;
-    public $accounts_containers_environments;
-    public $accounts_containers_version_headers;
-    public $accounts_containers_versions;
-    public $accounts_containers_workspaces;
-    public $accounts_containers_workspaces_built_in_variables;
-    public $accounts_containers_workspaces_clients;
-    public $accounts_containers_workspaces_folders;
-    public $accounts_containers_workspaces_gtag_config;
-    public $accounts_containers_workspaces_tags;
-    public $accounts_containers_workspaces_templates;
-    public $accounts_containers_workspaces_transformations;
-    public $accounts_containers_workspaces_triggers;
-    public $accounts_containers_workspaces_variables;
-    public $accounts_containers_workspaces_zones;
-    public $accounts_user_permissions;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the TagManager service.
+     * Service definition for TagManager (v2).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * This API allows clients to access and modify container and tag configuration.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://developers.google.com/tag-manager" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class TagManager extends \Google\Service
+    {
+        /** Delete your Google Tag Manager containers. */
+        const TAGMANAGER_DELETE_CONTAINERS = "https://www.googleapis.com/auth/tagmanager.delete.containers";
+        /** Manage your Google Tag Manager container and its subcomponents, excluding versioning and publishing. */
+        const TAGMANAGER_EDIT_CONTAINERS = "https://www.googleapis.com/auth/tagmanager.edit.containers";
+        /** Manage your Google Tag Manager container versions. */
+        const TAGMANAGER_EDIT_CONTAINERVERSIONS = "https://www.googleapis.com/auth/tagmanager.edit.containerversions";
+        /** View and manage your Google Tag Manager accounts. */
+        const TAGMANAGER_MANAGE_ACCOUNTS = "https://www.googleapis.com/auth/tagmanager.manage.accounts";
+        /** Manage user permissions of your Google Tag Manager account and container. */
+        const TAGMANAGER_MANAGE_USERS = "https://www.googleapis.com/auth/tagmanager.manage.users";
+        /** Publish your Google Tag Manager container versions. */
+        const TAGMANAGER_PUBLISH = "https://www.googleapis.com/auth/tagmanager.publish";
+        /** View your Google Tag Manager container and its subcomponents. */
+        const TAGMANAGER_READONLY = "https://www.googleapis.com/auth/tagmanager.readonly";
+        public $accounts;
+        public $accounts_containers;
+        public $accounts_containers_destinations;
+        public $accounts_containers_environments;
+        public $accounts_containers_version_headers;
+        public $accounts_containers_versions;
+        public $accounts_containers_workspaces;
+        public $accounts_containers_workspaces_built_in_variables;
+        public $accounts_containers_workspaces_clients;
+        public $accounts_containers_workspaces_folders;
+        public $accounts_containers_workspaces_gtag_config;
+        public $accounts_containers_workspaces_tags;
+        public $accounts_containers_workspaces_templates;
+        public $accounts_containers_workspaces_transformations;
+        public $accounts_containers_workspaces_triggers;
+        public $accounts_containers_workspaces_variables;
+        public $accounts_containers_workspaces_zones;
+        public $accounts_user_permissions;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the TagManager service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\TagManager registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_TagManager extends \Google\Service\TagManager
     {
     }
 }

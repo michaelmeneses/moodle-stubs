@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAlloyDBAdmin;
-
-class AuthorizedNetwork extends \Google\Model
-{
-    /**
-     * CIDR range for one authorzied network of the instance.
-     *
-     * @var string
-     */
-    public $cidrRange;
-    /**
-     * CIDR range for one authorzied network of the instance.
-     *
-     * @param string $cidrRange
-     */
-    public function setCidrRange($cidrRange)
+namespace Google\Service\CloudAlloyDBAdmin {
+    class AuthorizedNetwork extends \Google\Model
     {
+        /**
+         * CIDR range for one authorzied network of the instance.
+         *
+         * @var string
+         */
+        public $cidrRange;
+        /**
+         * CIDR range for one authorzied network of the instance.
+         *
+         * @param string $cidrRange
+         */
+        public function setCidrRange($cidrRange)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCidrRange()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudAlloyDBAdmin\AuthorizedNetwork registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCidrRange()
+    class Google_Service_CloudAlloyDBAdmin_AuthorizedNetwork extends \Google\Service\CloudAlloyDBAdmin\AuthorizedNetwork
     {
     }
 }

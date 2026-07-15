@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class EnvFromSource extends \Google\Model
-{
-    protected $configMapRefType = ConfigMapEnvSource::class;
-    protected $configMapRefDataType = '';
-    /**
-     * @var string
-     */
-    public $prefix;
-    protected $secretRefType = SecretEnvSource::class;
-    protected $secretRefDataType = '';
-    /**
-     * @param ConfigMapEnvSource
-     */
-    public function setConfigMapRef(ConfigMapEnvSource $configMapRef)
+namespace Google\Service\CloudRun {
+    class EnvFromSource extends \Google\Model
     {
+        protected $configMapRefType = ConfigMapEnvSource::class;
+        protected $configMapRefDataType = '';
+        /**
+         * @var string
+         */
+        public $prefix;
+        protected $secretRefType = SecretEnvSource::class;
+        protected $secretRefDataType = '';
+        /**
+         * @param ConfigMapEnvSource
+         */
+        public function setConfigMapRef(ConfigMapEnvSource $configMapRef)
+        {
+        }
+        /**
+         * @return ConfigMapEnvSource
+         */
+        public function getConfigMapRef()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPrefix($prefix)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrefix()
+        {
+        }
+        /**
+         * @param SecretEnvSource
+         */
+        public function setSecretRef(SecretEnvSource $secretRef)
+        {
+        }
+        /**
+         * @return SecretEnvSource
+         */
+        public function getSecretRef()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ConfigMapEnvSource
+     * Runtime class alias of \Google\Service\CloudRun\EnvFromSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfigMapRef()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPrefix($prefix)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrefix()
-    {
-    }
-    /**
-     * @param SecretEnvSource
-     */
-    public function setSecretRef(SecretEnvSource $secretRef)
-    {
-    }
-    /**
-     * @return SecretEnvSource
-     */
-    public function getSecretRef()
+    class Google_Service_CloudRun_EnvFromSource extends \Google\Service\CloudRun\EnvFromSource
     {
     }
 }

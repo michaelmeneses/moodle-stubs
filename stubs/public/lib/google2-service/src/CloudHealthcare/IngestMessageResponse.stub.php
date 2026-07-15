@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class IngestMessageResponse extends \Google\Model
-{
-    /**
-     * HL7v2 ACK message.
-     *
-     * @var string
-     */
-    public $hl7Ack;
-    protected $messageType = Message::class;
-    protected $messageDataType = '';
-    /**
-     * HL7v2 ACK message.
-     *
-     * @param string $hl7Ack
-     */
-    public function setHl7Ack($hl7Ack)
+namespace Google\Service\CloudHealthcare {
+    class IngestMessageResponse extends \Google\Model
     {
+        /**
+         * HL7v2 ACK message.
+         *
+         * @var string
+         */
+        public $hl7Ack;
+        protected $messageType = Message::class;
+        protected $messageDataType = '';
+        /**
+         * HL7v2 ACK message.
+         *
+         * @param string $hl7Ack
+         */
+        public function setHl7Ack($hl7Ack)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHl7Ack()
+        {
+        }
+        /**
+         * Created message resource.
+         *
+         * @param Message $message
+         */
+        public function setMessage(Message $message)
+        {
+        }
+        /**
+         * @return Message
+         */
+        public function getMessage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudHealthcare\IngestMessageResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHl7Ack()
-    {
-    }
-    /**
-     * Created message resource.
-     *
-     * @param Message $message
-     */
-    public function setMessage(Message $message)
-    {
-    }
-    /**
-     * @return Message
-     */
-    public function getMessage()
+    class Google_Service_CloudHealthcare_IngestMessageResponse extends \Google\Service\CloudHealthcare\IngestMessageResponse
     {
     }
 }

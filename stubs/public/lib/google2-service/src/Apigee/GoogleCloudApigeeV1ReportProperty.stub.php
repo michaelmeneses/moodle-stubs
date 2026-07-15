@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1ReportProperty extends \Google\Collection
-{
-    protected $collection_key = 'value';
-    /**
-     * name of the property
-     *
-     * @var string
-     */
-    public $property;
-    protected $valueType = GoogleCloudApigeeV1Attribute::class;
-    protected $valueDataType = 'array';
-    /**
-     * name of the property
-     *
-     * @param string $property
-     */
-    public function setProperty($property)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1ReportProperty extends \Google\Collection
     {
+        protected $collection_key = 'value';
+        /**
+         * name of the property
+         *
+         * @var string
+         */
+        public $property;
+        protected $valueType = GoogleCloudApigeeV1Attribute::class;
+        protected $valueDataType = 'array';
+        /**
+         * name of the property
+         *
+         * @param string $property
+         */
+        public function setProperty($property)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProperty()
+        {
+        }
+        /**
+         * property values
+         *
+         * @param GoogleCloudApigeeV1Attribute[] $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1Attribute[]
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1ReportProperty registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProperty()
-    {
-    }
-    /**
-     * property values
-     *
-     * @param GoogleCloudApigeeV1Attribute[] $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1Attribute[]
-     */
-    public function getValue()
+    class Google_Service_Apigee_GoogleCloudApigeeV1ReportProperty extends \Google\Service\Apigee\GoogleCloudApigeeV1ReportProperty
     {
     }
 }

@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Transcoder;
-
-class Fmp4Config extends \Google\Model
-{
-    /**
-     * Optional. Specify the codec tag string that will be used in the media
-     * bitstream. When not specified, the codec appropriate value is used.
-     * Supported H265 codec tags: - `hvc1` (default) - `hev1`
-     *
-     * @var string
-     */
-    public $codecTag;
-    /**
-     * Optional. Specify the codec tag string that will be used in the media
-     * bitstream. When not specified, the codec appropriate value is used.
-     * Supported H265 codec tags: - `hvc1` (default) - `hev1`
-     *
-     * @param string $codecTag
-     */
-    public function setCodecTag($codecTag)
+namespace Google\Service\Transcoder {
+    class Fmp4Config extends \Google\Model
     {
+        /**
+         * Optional. Specify the codec tag string that will be used in the media
+         * bitstream. When not specified, the codec appropriate value is used.
+         * Supported H265 codec tags: - `hvc1` (default) - `hev1`
+         *
+         * @var string
+         */
+        public $codecTag;
+        /**
+         * Optional. Specify the codec tag string that will be used in the media
+         * bitstream. When not specified, the codec appropriate value is used.
+         * Supported H265 codec tags: - `hvc1` (default) - `hev1`
+         *
+         * @param string $codecTag
+         */
+        public function setCodecTag($codecTag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCodecTag()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Transcoder\Fmp4Config registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCodecTag()
+    class Google_Service_Transcoder_Fmp4Config extends \Google\Service\Transcoder\Fmp4Config
     {
     }
 }

@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class SitesListResponse extends \Google\Collection
-{
-    protected $collection_key = 'sites';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#sitesListResponse".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Pagination token to be used for the next list operation.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $sitesType = Site::class;
-    protected $sitesDataType = 'array';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#sitesListResponse".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Dfareporting {
+    class SitesListResponse extends \Google\Collection
     {
+        protected $collection_key = 'sites';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#sitesListResponse".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Pagination token to be used for the next list operation.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $sitesType = Site::class;
+        protected $sitesDataType = 'array';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#sitesListResponse".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Pagination token to be used for the next list operation.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Site collection.
+         *
+         * @param Site[] $sites
+         */
+        public function setSites($sites)
+        {
+        }
+        /**
+         * @return Site[]
+         */
+        public function getSites()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\SitesListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * Pagination token to be used for the next list operation.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Site collection.
-     *
-     * @param Site[] $sites
-     */
-    public function setSites($sites)
-    {
-    }
-    /**
-     * @return Site[]
-     */
-    public function getSites()
+    class Google_Service_Dfareporting_SitesListResponse extends \Google\Service\Dfareporting\SitesListResponse
     {
     }
 }

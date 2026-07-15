@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1ConversationMessage extends \Google\Model
-{
-    /**
-     * Output only. Message creation timestamp.
-     *
-     * @var string
-     */
-    public $createTime;
-    protected $replyType = GoogleCloudDiscoveryengineV1Reply::class;
-    protected $replyDataType = '';
-    protected $userInputType = GoogleCloudDiscoveryengineV1TextInput::class;
-    protected $userInputDataType = '';
-    /**
-     * Output only. Message creation timestamp.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1ConversationMessage extends \Google\Model
     {
+        /**
+         * Output only. Message creation timestamp.
+         *
+         * @var string
+         */
+        public $createTime;
+        protected $replyType = GoogleCloudDiscoveryengineV1Reply::class;
+        protected $replyDataType = '';
+        protected $userInputType = GoogleCloudDiscoveryengineV1TextInput::class;
+        protected $userInputDataType = '';
+        /**
+         * Output only. Message creation timestamp.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Search reply.
+         *
+         * @param GoogleCloudDiscoveryengineV1Reply $reply
+         */
+        public function setReply(GoogleCloudDiscoveryengineV1Reply $reply)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1Reply
+         */
+        public function getReply()
+        {
+        }
+        /**
+         * User text input.
+         *
+         * @param GoogleCloudDiscoveryengineV1TextInput $userInput
+         */
+        public function setUserInput(GoogleCloudDiscoveryengineV1TextInput $userInput)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1TextInput
+         */
+        public function getUserInput()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ConversationMessage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Search reply.
-     *
-     * @param GoogleCloudDiscoveryengineV1Reply $reply
-     */
-    public function setReply(GoogleCloudDiscoveryengineV1Reply $reply)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1Reply
-     */
-    public function getReply()
-    {
-    }
-    /**
-     * User text input.
-     *
-     * @param GoogleCloudDiscoveryengineV1TextInput $userInput
-     */
-    public function setUserInput(GoogleCloudDiscoveryengineV1TextInput $userInput)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1TextInput
-     */
-    public function getUserInput()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1ConversationMessage extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ConversationMessage
     {
     }
 }

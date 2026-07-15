@@ -21,105 +21,114 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Classroom;
-
-class Material extends \Google\Model
-{
-    protected $driveFileType = SharedDriveFile::class;
-    protected $driveFileDataType = '';
-    protected $formType = Form::class;
-    protected $formDataType = '';
-    protected $gemType = GeminiGem::class;
-    protected $gemDataType = '';
-    protected $linkType = Link::class;
-    protected $linkDataType = '';
-    protected $notebookType = NotebookLmNotebook::class;
-    protected $notebookDataType = '';
-    protected $youtubeVideoType = YouTubeVideo::class;
-    protected $youtubeVideoDataType = '';
-    /**
-     * Google Drive file material.
-     *
-     * @param SharedDriveFile $driveFile
-     */
-    public function setDriveFile(SharedDriveFile $driveFile)
+namespace Google\Service\Classroom {
+    class Material extends \Google\Model
     {
+        protected $driveFileType = SharedDriveFile::class;
+        protected $driveFileDataType = '';
+        protected $formType = Form::class;
+        protected $formDataType = '';
+        protected $gemType = GeminiGem::class;
+        protected $gemDataType = '';
+        protected $linkType = Link::class;
+        protected $linkDataType = '';
+        protected $notebookType = NotebookLmNotebook::class;
+        protected $notebookDataType = '';
+        protected $youtubeVideoType = YouTubeVideo::class;
+        protected $youtubeVideoDataType = '';
+        /**
+         * Google Drive file material.
+         *
+         * @param SharedDriveFile $driveFile
+         */
+        public function setDriveFile(SharedDriveFile $driveFile)
+        {
+        }
+        /**
+         * @return SharedDriveFile
+         */
+        public function getDriveFile()
+        {
+        }
+        /**
+         * Google Forms material. Read-only.
+         *
+         * @param Form $form
+         */
+        public function setForm(Form $form)
+        {
+        }
+        /**
+         * @return Form
+         */
+        public function getForm()
+        {
+        }
+        /**
+         * Gemini Gem material. Read-only.
+         *
+         * @param GeminiGem $gem
+         */
+        public function setGem(GeminiGem $gem)
+        {
+        }
+        /**
+         * @return GeminiGem
+         */
+        public function getGem()
+        {
+        }
+        /**
+         * Link material. On creation, this is upgraded to a more appropriate type if
+         * possible, and this is reflected in the response.
+         *
+         * @param Link $link
+         */
+        public function setLink(Link $link)
+        {
+        }
+        /**
+         * @return Link
+         */
+        public function getLink()
+        {
+        }
+        /**
+         * NotebookLM Notebook material. Read-only.
+         *
+         * @param NotebookLmNotebook $notebook
+         */
+        public function setNotebook(NotebookLmNotebook $notebook)
+        {
+        }
+        /**
+         * @return NotebookLmNotebook
+         */
+        public function getNotebook()
+        {
+        }
+        /**
+         * YouTube video material.
+         *
+         * @param YouTubeVideo $youtubeVideo
+         */
+        public function setYoutubeVideo(YouTubeVideo $youtubeVideo)
+        {
+        }
+        /**
+         * @return YouTubeVideo
+         */
+        public function getYoutubeVideo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SharedDriveFile
+     * Runtime class alias of \Google\Service\Classroom\Material registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDriveFile()
-    {
-    }
-    /**
-     * Google Forms material. Read-only.
-     *
-     * @param Form $form
-     */
-    public function setForm(Form $form)
-    {
-    }
-    /**
-     * @return Form
-     */
-    public function getForm()
-    {
-    }
-    /**
-     * Gemini Gem material. Read-only.
-     *
-     * @param GeminiGem $gem
-     */
-    public function setGem(GeminiGem $gem)
-    {
-    }
-    /**
-     * @return GeminiGem
-     */
-    public function getGem()
-    {
-    }
-    /**
-     * Link material. On creation, this is upgraded to a more appropriate type if
-     * possible, and this is reflected in the response.
-     *
-     * @param Link $link
-     */
-    public function setLink(Link $link)
-    {
-    }
-    /**
-     * @return Link
-     */
-    public function getLink()
-    {
-    }
-    /**
-     * NotebookLM Notebook material. Read-only.
-     *
-     * @param NotebookLmNotebook $notebook
-     */
-    public function setNotebook(NotebookLmNotebook $notebook)
-    {
-    }
-    /**
-     * @return NotebookLmNotebook
-     */
-    public function getNotebook()
-    {
-    }
-    /**
-     * YouTube video material.
-     *
-     * @param YouTubeVideo $youtubeVideo
-     */
-    public function setYoutubeVideo(YouTubeVideo $youtubeVideo)
-    {
-    }
-    /**
-     * @return YouTubeVideo
-     */
-    public function getYoutubeVideo()
+    class Google_Service_Classroom_Material extends \Google\Service\Classroom\Material
     {
     }
 }

@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AuthorizedBuyersMarketplace;
-
-class ListPublisherProfilesResponse extends \Google\Collection
-{
-    protected $collection_key = 'publisherProfiles';
-    /**
-     * Token to fetch the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $publisherProfilesType = PublisherProfile::class;
-    protected $publisherProfilesDataType = 'array';
-    /**
-     * Token to fetch the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\AuthorizedBuyersMarketplace {
+    class ListPublisherProfilesResponse extends \Google\Collection
     {
+        protected $collection_key = 'publisherProfiles';
+        /**
+         * Token to fetch the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $publisherProfilesType = PublisherProfile::class;
+        protected $publisherProfilesDataType = 'array';
+        /**
+         * Token to fetch the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of matching publisher profiles.
+         *
+         * @param PublisherProfile[] $publisherProfiles
+         */
+        public function setPublisherProfiles($publisherProfiles)
+        {
+        }
+        /**
+         * @return PublisherProfile[]
+         */
+        public function getPublisherProfiles()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AuthorizedBuyersMarketplace\ListPublisherProfilesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of matching publisher profiles.
-     *
-     * @param PublisherProfile[] $publisherProfiles
-     */
-    public function setPublisherProfiles($publisherProfiles)
-    {
-    }
-    /**
-     * @return PublisherProfile[]
-     */
-    public function getPublisherProfiles()
+    class Google_Service_AuthorizedBuyersMarketplace_ListPublisherProfilesResponse extends \Google\Service\AuthorizedBuyersMarketplace\ListPublisherProfilesResponse
     {
     }
 }

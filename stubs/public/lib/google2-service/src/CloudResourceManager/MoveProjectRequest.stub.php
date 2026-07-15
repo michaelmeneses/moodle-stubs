@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudResourceManager;
-
-class MoveProjectRequest extends \Google\Model
-{
-    /**
-     * Required. The new parent to move the Project under.
-     *
-     * @var string
-     */
-    public $destinationParent;
-    /**
-     * Required. The new parent to move the Project under.
-     *
-     * @param string $destinationParent
-     */
-    public function setDestinationParent($destinationParent)
+namespace Google\Service\CloudResourceManager {
+    class MoveProjectRequest extends \Google\Model
     {
+        /**
+         * Required. The new parent to move the Project under.
+         *
+         * @var string
+         */
+        public $destinationParent;
+        /**
+         * Required. The new parent to move the Project under.
+         *
+         * @param string $destinationParent
+         */
+        public function setDestinationParent($destinationParent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDestinationParent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudResourceManager\MoveProjectRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDestinationParent()
+    class Google_Service_CloudResourceManager_MoveProjectRequest extends \Google\Service\CloudResourceManager\MoveProjectRequest
     {
     }
 }

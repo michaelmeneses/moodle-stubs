@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GoogleCloudSecuritycenterV2IssueResourceApplicationAttributesCriticality extends \Google\Model
-{
-    /**
-     * Unspecified type.
-     */
-    public const TYPE_CRITICALITY_TYPE_UNSPECIFIED = 'CRITICALITY_TYPE_UNSPECIFIED';
-    /**
-     * Mission critical service, application or workload.
-     */
-    public const TYPE_MISSION_CRITICAL = 'MISSION_CRITICAL';
-    /**
-     * High impact.
-     */
-    public const TYPE_HIGH = 'HIGH';
-    /**
-     * Medium impact.
-     */
-    public const TYPE_MEDIUM = 'MEDIUM';
-    /**
-     * Low impact.
-     */
-    public const TYPE_LOW = 'LOW';
-    /**
-     * Criticality Type.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Criticality Type.
-     *
-     * Accepted values: CRITICALITY_TYPE_UNSPECIFIED, MISSION_CRITICAL, HIGH,
-     * MEDIUM, LOW
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
+namespace Google\Service\SecurityCommandCenter {
+    class GoogleCloudSecuritycenterV2IssueResourceApplicationAttributesCriticality extends \Google\Model
     {
+        /**
+         * Unspecified type.
+         */
+        public const TYPE_CRITICALITY_TYPE_UNSPECIFIED = 'CRITICALITY_TYPE_UNSPECIFIED';
+        /**
+         * Mission critical service, application or workload.
+         */
+        public const TYPE_MISSION_CRITICAL = 'MISSION_CRITICAL';
+        /**
+         * High impact.
+         */
+        public const TYPE_HIGH = 'HIGH';
+        /**
+         * Medium impact.
+         */
+        public const TYPE_MEDIUM = 'MEDIUM';
+        /**
+         * Low impact.
+         */
+        public const TYPE_LOW = 'LOW';
+        /**
+         * Criticality Type.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Criticality Type.
+         *
+         * Accepted values: CRITICALITY_TYPE_UNSPECIFIED, MISSION_CRITICAL, HIGH,
+         * MEDIUM, LOW
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::TYPE_*
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2IssueResourceApplicationAttributesCriticality registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getType()
+    class Google_Service_SecurityCommandCenter_GoogleCloudSecuritycenterV2IssueResourceApplicationAttributesCriticality extends \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2IssueResourceApplicationAttributesCriticality
     {
     }
 }

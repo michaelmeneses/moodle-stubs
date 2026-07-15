@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1ImportCompletionSuggestionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'errorSamples';
-    protected $errorConfigType = GoogleCloudDiscoveryengineV1ImportErrorConfig::class;
-    protected $errorConfigDataType = '';
-    protected $errorSamplesType = GoogleRpcStatus::class;
-    protected $errorSamplesDataType = 'array';
-    /**
-     * The desired location of errors incurred during the Import.
-     *
-     * @param GoogleCloudDiscoveryengineV1ImportErrorConfig $errorConfig
-     */
-    public function setErrorConfig(GoogleCloudDiscoveryengineV1ImportErrorConfig $errorConfig)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1ImportCompletionSuggestionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'errorSamples';
+        protected $errorConfigType = GoogleCloudDiscoveryengineV1ImportErrorConfig::class;
+        protected $errorConfigDataType = '';
+        protected $errorSamplesType = GoogleRpcStatus::class;
+        protected $errorSamplesDataType = 'array';
+        /**
+         * The desired location of errors incurred during the Import.
+         *
+         * @param GoogleCloudDiscoveryengineV1ImportErrorConfig $errorConfig
+         */
+        public function setErrorConfig(GoogleCloudDiscoveryengineV1ImportErrorConfig $errorConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1ImportErrorConfig
+         */
+        public function getErrorConfig()
+        {
+        }
+        /**
+         * A sample of errors encountered while processing the request.
+         *
+         * @param GoogleRpcStatus[] $errorSamples
+         */
+        public function setErrorSamples($errorSamples)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus[]
+         */
+        public function getErrorSamples()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1ImportErrorConfig
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ImportCompletionSuggestionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrorConfig()
-    {
-    }
-    /**
-     * A sample of errors encountered while processing the request.
-     *
-     * @param GoogleRpcStatus[] $errorSamples
-     */
-    public function setErrorSamples($errorSamples)
-    {
-    }
-    /**
-     * @return GoogleRpcStatus[]
-     */
-    public function getErrorSamples()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1ImportCompletionSuggestionsResponse extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ImportCompletionSuggestionsResponse
     {
     }
 }

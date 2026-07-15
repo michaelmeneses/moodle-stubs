@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PolyService;
-
-class UserAsset extends \Google\Model
-{
-    /**
-     * @var Asset
-     */
-    public $asset;
-    protected $assetType = Asset::class;
-    protected $assetDataType = '';
-    /**
-     * @param Asset
-     */
-    public function setAsset(Asset $asset)
+namespace Google\Service\PolyService {
+    class UserAsset extends \Google\Model
     {
+        /**
+         * @var Asset
+         */
+        public $asset;
+        protected $assetType = Asset::class;
+        protected $assetDataType = '';
+        /**
+         * @param Asset
+         */
+        public function setAsset(Asset $asset)
+        {
+        }
+        /**
+         * @return Asset
+         */
+        public function getAsset()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Asset
+     * Runtime class alias of \Google\Service\PolyService\UserAsset registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAsset()
+    class Google_Service_PolyService_UserAsset extends \Google\Service\PolyService\UserAsset
     {
     }
 }

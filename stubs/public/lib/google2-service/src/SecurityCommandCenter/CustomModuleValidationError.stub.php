@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class CustomModuleValidationError extends \Google\Model
-{
-    /**
-     * A description of the error, suitable for human consumption. Required.
-     *
-     * @var string
-     */
-    public $description;
-    protected $endType = Position::class;
-    protected $endDataType = '';
-    /**
-     * The path, in RFC 8901 JSON Pointer format, to the field that failed
-     * validation. This may be left empty if no specific field is affected.
-     *
-     * @var string
-     */
-    public $fieldPath;
-    protected $startType = Position::class;
-    protected $startDataType = '';
-    /**
-     * A description of the error, suitable for human consumption. Required.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\SecurityCommandCenter {
+    class CustomModuleValidationError extends \Google\Model
     {
+        /**
+         * A description of the error, suitable for human consumption. Required.
+         *
+         * @var string
+         */
+        public $description;
+        protected $endType = Position::class;
+        protected $endDataType = '';
+        /**
+         * The path, in RFC 8901 JSON Pointer format, to the field that failed
+         * validation. This may be left empty if no specific field is affected.
+         *
+         * @var string
+         */
+        public $fieldPath;
+        protected $startType = Position::class;
+        protected $startDataType = '';
+        /**
+         * A description of the error, suitable for human consumption. Required.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * The end position of the error in the uploaded text version of the module.
+         * This field may be omitted if no specific position applies, or if one could
+         * not be computed.
+         *
+         * @param Position $end
+         */
+        public function setEnd(Position $end)
+        {
+        }
+        /**
+         * @return Position
+         */
+        public function getEnd()
+        {
+        }
+        /**
+         * The path, in RFC 8901 JSON Pointer format, to the field that failed
+         * validation. This may be left empty if no specific field is affected.
+         *
+         * @param string $fieldPath
+         */
+        public function setFieldPath($fieldPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFieldPath()
+        {
+        }
+        /**
+         * The initial position of the error in the uploaded text version of the
+         * module. This field may be omitted if no specific position applies, or if
+         * one could not be computed.
+         *
+         * @param Position $start
+         */
+        public function setStart(Position $start)
+        {
+        }
+        /**
+         * @return Position
+         */
+        public function getStart()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\CustomModuleValidationError registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * The end position of the error in the uploaded text version of the module.
-     * This field may be omitted if no specific position applies, or if one could
-     * not be computed.
-     *
-     * @param Position $end
-     */
-    public function setEnd(Position $end)
-    {
-    }
-    /**
-     * @return Position
-     */
-    public function getEnd()
-    {
-    }
-    /**
-     * The path, in RFC 8901 JSON Pointer format, to the field that failed
-     * validation. This may be left empty if no specific field is affected.
-     *
-     * @param string $fieldPath
-     */
-    public function setFieldPath($fieldPath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFieldPath()
-    {
-    }
-    /**
-     * The initial position of the error in the uploaded text version of the
-     * module. This field may be omitted if no specific position applies, or if
-     * one could not be computed.
-     *
-     * @param Position $start
-     */
-    public function setStart(Position $start)
-    {
-    }
-    /**
-     * @return Position
-     */
-    public function getStart()
+    class Google_Service_SecurityCommandCenter_CustomModuleValidationError extends \Google\Service\SecurityCommandCenter\CustomModuleValidationError
     {
     }
 }

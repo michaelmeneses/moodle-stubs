@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class DeployArtifact extends \Google\Collection
-{
-    protected $collection_key = 'manifestPaths';
-    /**
-     * Output only. URI of a directory containing the artifacts. All paths are
-     * relative to this location.
-     *
-     * @var string
-     */
-    public $artifactUri;
-    /**
-     * Output only. File paths of the manifests applied during the deploy
-     * operation relative to the URI.
-     *
-     * @var string[]
-     */
-    public $manifestPaths;
-    /**
-     * Output only. URI of a directory containing the artifacts. All paths are
-     * relative to this location.
-     *
-     * @param string $artifactUri
-     */
-    public function setArtifactUri($artifactUri)
+namespace Google\Service\CloudDeploy {
+    class DeployArtifact extends \Google\Collection
     {
+        protected $collection_key = 'manifestPaths';
+        /**
+         * Output only. URI of a directory containing the artifacts. All paths are
+         * relative to this location.
+         *
+         * @var string
+         */
+        public $artifactUri;
+        /**
+         * Output only. File paths of the manifests applied during the deploy
+         * operation relative to the URI.
+         *
+         * @var string[]
+         */
+        public $manifestPaths;
+        /**
+         * Output only. URI of a directory containing the artifacts. All paths are
+         * relative to this location.
+         *
+         * @param string $artifactUri
+         */
+        public function setArtifactUri($artifactUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getArtifactUri()
+        {
+        }
+        /**
+         * Output only. File paths of the manifests applied during the deploy
+         * operation relative to the URI.
+         *
+         * @param string[] $manifestPaths
+         */
+        public function setManifestPaths($manifestPaths)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getManifestPaths()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDeploy\DeployArtifact registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArtifactUri()
-    {
-    }
-    /**
-     * Output only. File paths of the manifests applied during the deploy
-     * operation relative to the URI.
-     *
-     * @param string[] $manifestPaths
-     */
-    public function setManifestPaths($manifestPaths)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getManifestPaths()
+    class Google_Service_CloudDeploy_DeployArtifact extends \Google\Service\CloudDeploy\DeployArtifact
     {
     }
 }

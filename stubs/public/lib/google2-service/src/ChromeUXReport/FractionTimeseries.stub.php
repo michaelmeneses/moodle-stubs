@@ -21,21 +21,30 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeUXReport;
-
-class FractionTimeseries extends \Google\Collection
-{
-    protected $collection_key = 'fractions';
-    /**
-     * Values between 0.0 and 1.0 (inclusive) and NaN.
-     *
-     * @var []
-     */
-    public $fractions;
-    public function setFractions($fractions)
+namespace Google\Service\ChromeUXReport {
+    class FractionTimeseries extends \Google\Collection
     {
+        protected $collection_key = 'fractions';
+        /**
+         * Values between 0.0 and 1.0 (inclusive) and NaN.
+         *
+         * @var []
+         */
+        public $fractions;
+        public function setFractions($fractions)
+        {
+        }
+        public function getFractions()
+        {
+        }
     }
-    public function getFractions()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ChromeUXReport\FractionTimeseries registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ChromeUXReport_FractionTimeseries extends \Google\Service\ChromeUXReport\FractionTimeseries
     {
     }
 }

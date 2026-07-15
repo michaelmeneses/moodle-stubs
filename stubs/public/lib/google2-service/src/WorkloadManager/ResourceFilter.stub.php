@@ -21,85 +21,94 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager;
-
-class ResourceFilter extends \Google\Collection
-{
-    protected $collection_key = 'scopes';
-    protected $gceInstanceFilterType = GceInstanceFilter::class;
-    protected $gceInstanceFilterDataType = '';
-    /**
-     * The label used for filter resource
-     *
-     * @var string[]
-     */
-    public $inclusionLabels;
-    /**
-     * The id pattern for filter resource
-     *
-     * @var string[]
-     */
-    public $resourceIdPatterns;
-    /**
-     * The scopes of evaluation resource
-     *
-     * @var string[]
-     */
-    public $scopes;
-    /**
-     * Filter compute engine resource
-     *
-     * @param GceInstanceFilter $gceInstanceFilter
-     */
-    public function setGceInstanceFilter(GceInstanceFilter $gceInstanceFilter)
+namespace Google\Service\WorkloadManager {
+    class ResourceFilter extends \Google\Collection
     {
+        protected $collection_key = 'scopes';
+        protected $gceInstanceFilterType = GceInstanceFilter::class;
+        protected $gceInstanceFilterDataType = '';
+        /**
+         * The label used for filter resource
+         *
+         * @var string[]
+         */
+        public $inclusionLabels;
+        /**
+         * The id pattern for filter resource
+         *
+         * @var string[]
+         */
+        public $resourceIdPatterns;
+        /**
+         * The scopes of evaluation resource
+         *
+         * @var string[]
+         */
+        public $scopes;
+        /**
+         * Filter compute engine resource
+         *
+         * @param GceInstanceFilter $gceInstanceFilter
+         */
+        public function setGceInstanceFilter(GceInstanceFilter $gceInstanceFilter)
+        {
+        }
+        /**
+         * @return GceInstanceFilter
+         */
+        public function getGceInstanceFilter()
+        {
+        }
+        /**
+         * The label used for filter resource
+         *
+         * @param string[] $inclusionLabels
+         */
+        public function setInclusionLabels($inclusionLabels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getInclusionLabels()
+        {
+        }
+        /**
+         * The id pattern for filter resource
+         *
+         * @param string[] $resourceIdPatterns
+         */
+        public function setResourceIdPatterns($resourceIdPatterns)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getResourceIdPatterns()
+        {
+        }
+        /**
+         * The scopes of evaluation resource
+         *
+         * @param string[] $scopes
+         */
+        public function setScopes($scopes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getScopes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GceInstanceFilter
+     * Runtime class alias of \Google\Service\WorkloadManager\ResourceFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGceInstanceFilter()
-    {
-    }
-    /**
-     * The label used for filter resource
-     *
-     * @param string[] $inclusionLabels
-     */
-    public function setInclusionLabels($inclusionLabels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getInclusionLabels()
-    {
-    }
-    /**
-     * The id pattern for filter resource
-     *
-     * @param string[] $resourceIdPatterns
-     */
-    public function setResourceIdPatterns($resourceIdPatterns)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getResourceIdPatterns()
-    {
-    }
-    /**
-     * The scopes of evaluation resource
-     *
-     * @param string[] $scopes
-     */
-    public function setScopes($scopes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getScopes()
+    class Google_Service_WorkloadManager_ResourceFilter extends \Google\Service\WorkloadManager\ResourceFilter
     {
     }
 }

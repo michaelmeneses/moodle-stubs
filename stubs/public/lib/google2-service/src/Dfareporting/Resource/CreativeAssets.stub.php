@@ -21,30 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting\Resource;
-
-/**
- * The "creativeAssets" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dfareportingService = new Google\Service\Dfareporting(...);
- *   $creativeAssets = $dfareportingService->creativeAssets;
- *  </code>
- */
-class CreativeAssets extends \Google\Service\Resource
-{
+namespace Google\Service\Dfareporting\Resource {
+    use Google\Service\Dfareporting\CreativeAssetMetadata;
     /**
-     * Inserts a new creative asset. (creativeAssets.insert)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param string $advertiserId Advertiser ID of this creative. This is a
-     * required field.
-     * @param CreativeAssetMetadata $postBody
-     * @param array $optParams Optional parameters.
-     * @return CreativeAssetMetadata
-     * @throws \Google\Service\Exception
+     * The "creativeAssets" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dfareportingService = new Google\Service\Dfareporting(...);
+     *   $creativeAssets = $dfareportingService->creativeAssets;
+     *  </code>
      */
-    public function insert($profileId, $advertiserId, CreativeAssetMetadata $postBody, $optParams = [])
+    class CreativeAssets extends \Google\Service\Resource
+    {
+        /**
+         * Inserts a new creative asset. (creativeAssets.insert)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param string $advertiserId Advertiser ID of this creative. This is a
+         * required field.
+         * @param CreativeAssetMetadata $postBody
+         * @param array $optParams Optional parameters.
+         * @return CreativeAssetMetadata
+         * @throws \Google\Service\Exception
+         */
+        public function insert($profileId, $advertiserId, CreativeAssetMetadata $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Dfareporting\Resource\CreativeAssets registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Dfareporting_Resource_CreativeAssets extends \Google\Service\Dfareporting\Resource\CreativeAssets
     {
     }
 }

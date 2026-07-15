@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class ProvenanceBuilder extends \Google\Collection
-{
-    protected $collection_key = 'builderDependencies';
-    protected $builderDependenciesType = ResourceDescriptor::class;
-    protected $builderDependenciesDataType = 'array';
-    /**
-     * @var string
-     */
-    public $id;
-    /**
-     * @var string[]
-     */
-    public $version;
-    /**
-     * @param ResourceDescriptor[] $builderDependencies
-     */
-    public function setBuilderDependencies($builderDependencies)
+namespace Google\Service\ContainerAnalysis {
+    class ProvenanceBuilder extends \Google\Collection
     {
+        protected $collection_key = 'builderDependencies';
+        protected $builderDependenciesType = ResourceDescriptor::class;
+        protected $builderDependenciesDataType = 'array';
+        /**
+         * @var string
+         */
+        public $id;
+        /**
+         * @var string[]
+         */
+        public $version;
+        /**
+         * @param ResourceDescriptor[] $builderDependencies
+         */
+        public function setBuilderDependencies($builderDependencies)
+        {
+        }
+        /**
+         * @return ResourceDescriptor[]
+         */
+        public function getBuilderDependencies()
+        {
+        }
+        /**
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * @param string[] $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ResourceDescriptor[]
+     * Runtime class alias of \Google\Service\ContainerAnalysis\ProvenanceBuilder registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBuilderDependencies()
-    {
-    }
-    /**
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * @param string[] $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getVersion()
+    class Google_Service_ContainerAnalysis_ProvenanceBuilder extends \Google\Service\ContainerAnalysis\ProvenanceBuilder
     {
     }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1mainIssueMatchData extends \Google\Model
-{
-    protected $issueAssignmentType = GoogleCloudContactcenterinsightsV1mainIssueAssignment::class;
-    protected $issueAssignmentDataType = '';
-    /**
-     * Information about the issue's assignment.
-     *
-     * @param GoogleCloudContactcenterinsightsV1mainIssueAssignment $issueAssignment
-     */
-    public function setIssueAssignment(GoogleCloudContactcenterinsightsV1mainIssueAssignment $issueAssignment)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1mainIssueMatchData extends \Google\Model
     {
+        protected $issueAssignmentType = GoogleCloudContactcenterinsightsV1mainIssueAssignment::class;
+        protected $issueAssignmentDataType = '';
+        /**
+         * Information about the issue's assignment.
+         *
+         * @param GoogleCloudContactcenterinsightsV1mainIssueAssignment $issueAssignment
+         */
+        public function setIssueAssignment(GoogleCloudContactcenterinsightsV1mainIssueAssignment $issueAssignment)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1mainIssueAssignment
+         */
+        public function getIssueAssignment()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudContactcenterinsightsV1mainIssueAssignment
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainIssueMatchData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIssueAssignment()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1mainIssueMatchData extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainIssueMatchData
     {
     }
 }

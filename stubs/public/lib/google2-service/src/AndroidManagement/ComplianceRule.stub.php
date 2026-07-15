@@ -21,91 +21,100 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class ComplianceRule extends \Google\Collection
-{
-    protected $collection_key = 'packageNamesToDisable';
-    protected $apiLevelConditionType = ApiLevelCondition::class;
-    protected $apiLevelConditionDataType = '';
-    /**
-     * If set to true, the rule includes a mitigating action to disable apps so
-     * that the device is effectively disabled, but app data is preserved. If the
-     * device is running an app in locked task mode, the app will be closed and a
-     * UI showing the reason for non-compliance will be displayed.
-     *
-     * @var bool
-     */
-    public $disableApps;
-    protected $nonComplianceDetailConditionType = NonComplianceDetailCondition::class;
-    protected $nonComplianceDetailConditionDataType = '';
-    /**
-     * If set, the rule includes a mitigating action to disable apps specified in
-     * the list, but app data is preserved.
-     *
-     * @var string[]
-     */
-    public $packageNamesToDisable;
-    /**
-     * A condition which is satisfied if the Android Framework API level on the
-     * device doesn't meet a minimum requirement.
-     *
-     * @param ApiLevelCondition $apiLevelCondition
-     */
-    public function setApiLevelCondition(ApiLevelCondition $apiLevelCondition)
+namespace Google\Service\AndroidManagement {
+    class ComplianceRule extends \Google\Collection
     {
+        protected $collection_key = 'packageNamesToDisable';
+        protected $apiLevelConditionType = ApiLevelCondition::class;
+        protected $apiLevelConditionDataType = '';
+        /**
+         * If set to true, the rule includes a mitigating action to disable apps so
+         * that the device is effectively disabled, but app data is preserved. If the
+         * device is running an app in locked task mode, the app will be closed and a
+         * UI showing the reason for non-compliance will be displayed.
+         *
+         * @var bool
+         */
+        public $disableApps;
+        protected $nonComplianceDetailConditionType = NonComplianceDetailCondition::class;
+        protected $nonComplianceDetailConditionDataType = '';
+        /**
+         * If set, the rule includes a mitigating action to disable apps specified in
+         * the list, but app data is preserved.
+         *
+         * @var string[]
+         */
+        public $packageNamesToDisable;
+        /**
+         * A condition which is satisfied if the Android Framework API level on the
+         * device doesn't meet a minimum requirement.
+         *
+         * @param ApiLevelCondition $apiLevelCondition
+         */
+        public function setApiLevelCondition(ApiLevelCondition $apiLevelCondition)
+        {
+        }
+        /**
+         * @return ApiLevelCondition
+         */
+        public function getApiLevelCondition()
+        {
+        }
+        /**
+         * If set to true, the rule includes a mitigating action to disable apps so
+         * that the device is effectively disabled, but app data is preserved. If the
+         * device is running an app in locked task mode, the app will be closed and a
+         * UI showing the reason for non-compliance will be displayed.
+         *
+         * @param bool $disableApps
+         */
+        public function setDisableApps($disableApps)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisableApps()
+        {
+        }
+        /**
+         * A condition which is satisfied if there exists any matching
+         * NonComplianceDetail for the device.
+         *
+         * @param NonComplianceDetailCondition $nonComplianceDetailCondition
+         */
+        public function setNonComplianceDetailCondition(NonComplianceDetailCondition $nonComplianceDetailCondition)
+        {
+        }
+        /**
+         * @return NonComplianceDetailCondition
+         */
+        public function getNonComplianceDetailCondition()
+        {
+        }
+        /**
+         * If set, the rule includes a mitigating action to disable apps specified in
+         * the list, but app data is preserved.
+         *
+         * @param string[] $packageNamesToDisable
+         */
+        public function setPackageNamesToDisable($packageNamesToDisable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPackageNamesToDisable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ApiLevelCondition
+     * Runtime class alias of \Google\Service\AndroidManagement\ComplianceRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiLevelCondition()
-    {
-    }
-    /**
-     * If set to true, the rule includes a mitigating action to disable apps so
-     * that the device is effectively disabled, but app data is preserved. If the
-     * device is running an app in locked task mode, the app will be closed and a
-     * UI showing the reason for non-compliance will be displayed.
-     *
-     * @param bool $disableApps
-     */
-    public function setDisableApps($disableApps)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDisableApps()
-    {
-    }
-    /**
-     * A condition which is satisfied if there exists any matching
-     * NonComplianceDetail for the device.
-     *
-     * @param NonComplianceDetailCondition $nonComplianceDetailCondition
-     */
-    public function setNonComplianceDetailCondition(NonComplianceDetailCondition $nonComplianceDetailCondition)
-    {
-    }
-    /**
-     * @return NonComplianceDetailCondition
-     */
-    public function getNonComplianceDetailCondition()
-    {
-    }
-    /**
-     * If set, the rule includes a mitigating action to disable apps specified in
-     * the list, but app data is preserved.
-     *
-     * @param string[] $packageNamesToDisable
-     */
-    public function setPackageNamesToDisable($packageNamesToDisable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPackageNamesToDisable()
+    class Google_Service_AndroidManagement_ComplianceRule extends \Google\Service\AndroidManagement\ComplianceRule
     {
     }
 }

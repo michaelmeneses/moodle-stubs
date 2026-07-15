@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qbank_managecategories;
 
+use context;
+use core\context\module;
+use core\exception\coding_exception;
+use moodle_url;
 /**
  * Builds a tree for categories for rendering the category management page.
  *

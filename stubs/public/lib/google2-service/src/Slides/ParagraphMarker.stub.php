@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides;
-
-class ParagraphMarker extends \Google\Model
-{
-    protected $bulletType = Bullet::class;
-    protected $bulletDataType = '';
-    protected $styleType = ParagraphStyle::class;
-    protected $styleDataType = '';
-    /**
-     * The bullet for this paragraph. If not present, the paragraph does not
-     * belong to a list.
-     *
-     * @param Bullet $bullet
-     */
-    public function setBullet(Bullet $bullet)
+namespace Google\Service\Slides {
+    class ParagraphMarker extends \Google\Model
     {
+        protected $bulletType = Bullet::class;
+        protected $bulletDataType = '';
+        protected $styleType = ParagraphStyle::class;
+        protected $styleDataType = '';
+        /**
+         * The bullet for this paragraph. If not present, the paragraph does not
+         * belong to a list.
+         *
+         * @param Bullet $bullet
+         */
+        public function setBullet(Bullet $bullet)
+        {
+        }
+        /**
+         * @return Bullet
+         */
+        public function getBullet()
+        {
+        }
+        /**
+         * The paragraph's style
+         *
+         * @param ParagraphStyle $style
+         */
+        public function setStyle(ParagraphStyle $style)
+        {
+        }
+        /**
+         * @return ParagraphStyle
+         */
+        public function getStyle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Bullet
+     * Runtime class alias of \Google\Service\Slides\ParagraphMarker registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBullet()
-    {
-    }
-    /**
-     * The paragraph's style
-     *
-     * @param ParagraphStyle $style
-     */
-    public function setStyle(ParagraphStyle $style)
-    {
-    }
-    /**
-     * @return ParagraphStyle
-     */
-    public function getStyle()
+    class Google_Service_Slides_ParagraphMarker extends \Google\Service\Slides\ParagraphMarker
     {
     }
 }

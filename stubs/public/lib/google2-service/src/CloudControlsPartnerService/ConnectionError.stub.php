@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudControlsPartnerService;
-
-class ConnectionError extends \Google\Model
-{
-    /**
-     * The error domain for the error
-     *
-     * @var string
-     */
-    public $errorDomain;
-    /**
-     * The error message for the error
-     *
-     * @var string
-     */
-    public $errorMessage;
-    /**
-     * The error domain for the error
-     *
-     * @param string $errorDomain
-     */
-    public function setErrorDomain($errorDomain)
+namespace Google\Service\CloudControlsPartnerService {
+    class ConnectionError extends \Google\Model
     {
+        /**
+         * The error domain for the error
+         *
+         * @var string
+         */
+        public $errorDomain;
+        /**
+         * The error message for the error
+         *
+         * @var string
+         */
+        public $errorMessage;
+        /**
+         * The error domain for the error
+         *
+         * @param string $errorDomain
+         */
+        public function setErrorDomain($errorDomain)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getErrorDomain()
+        {
+        }
+        /**
+         * The error message for the error
+         *
+         * @param string $errorMessage
+         */
+        public function setErrorMessage($errorMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getErrorMessage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudControlsPartnerService\ConnectionError registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrorDomain()
-    {
-    }
-    /**
-     * The error message for the error
-     *
-     * @param string $errorMessage
-     */
-    public function setErrorMessage($errorMessage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getErrorMessage()
+    class Google_Service_CloudControlsPartnerService_ConnectionError extends \Google\Service\CloudControlsPartnerService\ConnectionError
     {
     }
 }

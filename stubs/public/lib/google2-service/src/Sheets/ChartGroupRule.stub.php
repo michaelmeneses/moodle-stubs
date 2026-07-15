@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class ChartGroupRule extends \Google\Model
-{
-    protected $dateTimeRuleType = ChartDateTimeRule::class;
-    protected $dateTimeRuleDataType = '';
-    protected $histogramRuleType = ChartHistogramRule::class;
-    protected $histogramRuleDataType = '';
-    /**
-     * A ChartDateTimeRule.
-     *
-     * @param ChartDateTimeRule $dateTimeRule
-     */
-    public function setDateTimeRule(ChartDateTimeRule $dateTimeRule)
+namespace Google\Service\Sheets {
+    class ChartGroupRule extends \Google\Model
     {
+        protected $dateTimeRuleType = ChartDateTimeRule::class;
+        protected $dateTimeRuleDataType = '';
+        protected $histogramRuleType = ChartHistogramRule::class;
+        protected $histogramRuleDataType = '';
+        /**
+         * A ChartDateTimeRule.
+         *
+         * @param ChartDateTimeRule $dateTimeRule
+         */
+        public function setDateTimeRule(ChartDateTimeRule $dateTimeRule)
+        {
+        }
+        /**
+         * @return ChartDateTimeRule
+         */
+        public function getDateTimeRule()
+        {
+        }
+        /**
+         * A ChartHistogramRule
+         *
+         * @param ChartHistogramRule $histogramRule
+         */
+        public function setHistogramRule(ChartHistogramRule $histogramRule)
+        {
+        }
+        /**
+         * @return ChartHistogramRule
+         */
+        public function getHistogramRule()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ChartDateTimeRule
+     * Runtime class alias of \Google\Service\Sheets\ChartGroupRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDateTimeRule()
-    {
-    }
-    /**
-     * A ChartHistogramRule
-     *
-     * @param ChartHistogramRule $histogramRule
-     */
-    public function setHistogramRule(ChartHistogramRule $histogramRule)
-    {
-    }
-    /**
-     * @return ChartHistogramRule
-     */
-    public function getHistogramRule()
+    class Google_Service_Sheets_ChartGroupRule extends \Google\Service\Sheets\ChartGroupRule
     {
     }
 }

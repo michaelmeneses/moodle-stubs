@@ -22,6 +22,15 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\router\response;
 
+use core\param;
+use core\router\schema\objects\scalar_type;
+use core\router\schema\objects\schema_object;
+use core\router\schema\objects\stacktrace;
+use core\router\schema\referenced_object;
+use core\router\schema\response\content\payload_response_type;
+use core\router\schema\response\payload_response;
+use GuzzleHttp\Psr7\Response;
+use Psr\Http\Message\ServerRequestInterface;
 /**
  * A standard response for user preferences.
  *

@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class ReturnPolicyOnlineRestockingFee extends \Google\Model
-{
-    protected $fixedFeeType = PriceAmount::class;
-    protected $fixedFeeDataType = '';
-    /**
-     * Percent of total price in micros. 15,000,000 means 15% of the total price
-     * would be charged.
-     *
-     * @var int
-     */
-    public $microPercent;
-    /**
-     * Fixed restocking fee.
-     *
-     * @param PriceAmount $fixedFee
-     */
-    public function setFixedFee(PriceAmount $fixedFee)
+namespace Google\Service\ShoppingContent {
+    class ReturnPolicyOnlineRestockingFee extends \Google\Model
     {
+        protected $fixedFeeType = PriceAmount::class;
+        protected $fixedFeeDataType = '';
+        /**
+         * Percent of total price in micros. 15,000,000 means 15% of the total price
+         * would be charged.
+         *
+         * @var int
+         */
+        public $microPercent;
+        /**
+         * Fixed restocking fee.
+         *
+         * @param PriceAmount $fixedFee
+         */
+        public function setFixedFee(PriceAmount $fixedFee)
+        {
+        }
+        /**
+         * @return PriceAmount
+         */
+        public function getFixedFee()
+        {
+        }
+        /**
+         * Percent of total price in micros. 15,000,000 means 15% of the total price
+         * would be charged.
+         *
+         * @param int $microPercent
+         */
+        public function setMicroPercent($microPercent)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMicroPercent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PriceAmount
+     * Runtime class alias of \Google\Service\ShoppingContent\ReturnPolicyOnlineRestockingFee registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFixedFee()
-    {
-    }
-    /**
-     * Percent of total price in micros. 15,000,000 means 15% of the total price
-     * would be charged.
-     *
-     * @param int $microPercent
-     */
-    public function setMicroPercent($microPercent)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMicroPercent()
+    class Google_Service_ShoppingContent_ReturnPolicyOnlineRestockingFee extends \Google\Service\ShoppingContent\ReturnPolicyOnlineRestockingFee
     {
     }
 }

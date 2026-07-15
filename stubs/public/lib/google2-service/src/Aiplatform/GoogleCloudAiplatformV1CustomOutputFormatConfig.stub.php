@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1CustomOutputFormatConfig extends \Google\Model
-{
-    /**
-     * Optional. Whether to return raw output.
-     *
-     * @var bool
-     */
-    public $returnRawOutput;
-    /**
-     * Optional. Whether to return raw output.
-     *
-     * @param bool $returnRawOutput
-     */
-    public function setReturnRawOutput($returnRawOutput)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1CustomOutputFormatConfig extends \Google\Model
     {
+        /**
+         * Optional. Whether to return raw output.
+         *
+         * @var bool
+         */
+        public $returnRawOutput;
+        /**
+         * Optional. Whether to return raw output.
+         *
+         * @param bool $returnRawOutput
+         */
+        public function setReturnRawOutput($returnRawOutput)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getReturnRawOutput()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1CustomOutputFormatConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReturnRawOutput()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1CustomOutputFormatConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1CustomOutputFormatConfig
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class DependentFieldValue extends \Google\Model
-{
-    /**
-     * Optional. The ID of the element that value's field will match against.
-     *
-     * @var string
-     */
-    public $elementId;
-    /**
-     * Optional. The field id of the dependent field.
-     *
-     * @var int
-     */
-    public $fieldId;
-    /**
-     * Optional. The ID of the element that value's field will match against.
-     *
-     * @param string $elementId
-     */
-    public function setElementId($elementId)
+namespace Google\Service\Dfareporting {
+    class DependentFieldValue extends \Google\Model
     {
+        /**
+         * Optional. The ID of the element that value's field will match against.
+         *
+         * @var string
+         */
+        public $elementId;
+        /**
+         * Optional. The field id of the dependent field.
+         *
+         * @var int
+         */
+        public $fieldId;
+        /**
+         * Optional. The ID of the element that value's field will match against.
+         *
+         * @param string $elementId
+         */
+        public function setElementId($elementId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getElementId()
+        {
+        }
+        /**
+         * Optional. The field id of the dependent field.
+         *
+         * @param int $fieldId
+         */
+        public function setFieldId($fieldId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getFieldId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\DependentFieldValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getElementId()
-    {
-    }
-    /**
-     * Optional. The field id of the dependent field.
-     *
-     * @param int $fieldId
-     */
-    public function setFieldId($fieldId)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getFieldId()
+    class Google_Service_Dfareporting_DependentFieldValue extends \Google\Service\Dfareporting\DependentFieldValue
     {
     }
 }

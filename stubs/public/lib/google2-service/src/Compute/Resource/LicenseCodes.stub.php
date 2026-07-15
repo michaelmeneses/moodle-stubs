@@ -21,47 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute\Resource;
-
-/**
- * The "licenseCodes" collection of methods.
- * Typical usage is:
- *  <code>
- *   $computeService = new Google\Service\Compute(...);
- *   $licenseCodes = $computeService->licenseCodes;
- *  </code>
- */
-class LicenseCodes extends \Google\Service\Resource
-{
+namespace Google\Service\Compute\Resource {
+    use Google\Service\Compute\LicenseCode;
+    use Google\Service\Compute\TestPermissionsRequest;
+    use Google\Service\Compute\TestPermissionsResponse;
     /**
-     * Return a specified license code. License codes are mirrored across all
-     * projects that have permissions to read the License Code. Caution* This
-     * resource is intended for use only by third-party partners who are
-     * creatingCloud Marketplace images. (licenseCodes.get)
-     *
-     * @param string $project Project ID for this request.
-     * @param string $licenseCode Number corresponding to the License code resource
-     * to return.
-     * @param array $optParams Optional parameters.
-     * @return LicenseCode
-     * @throws \Google\Service\Exception
+     * The "licenseCodes" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $computeService = new Google\Service\Compute(...);
+     *   $licenseCodes = $computeService->licenseCodes;
+     *  </code>
      */
-    public function get($project, $licenseCode, $optParams = [])
+    class LicenseCodes extends \Google\Service\Resource
     {
+        /**
+         * Return a specified license code. License codes are mirrored across all
+         * projects that have permissions to read the License Code. Caution* This
+         * resource is intended for use only by third-party partners who are
+         * creatingCloud Marketplace images. (licenseCodes.get)
+         *
+         * @param string $project Project ID for this request.
+         * @param string $licenseCode Number corresponding to the License code resource
+         * to return.
+         * @param array $optParams Optional parameters.
+         * @return LicenseCode
+         * @throws \Google\Service\Exception
+         */
+        public function get($project, $licenseCode, $optParams = [])
+        {
+        }
+        /**
+         * Returns permissions that a caller has on the specified resource. Caution*
+         * This resource is intended for use only by third-party partners who are
+         * creatingCloud Marketplace images. (licenseCodes.testIamPermissions)
+         *
+         * @param string $project Project ID for this request.
+         * @param string $resource Name or id of the resource for this request.
+         * @param TestPermissionsRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return TestPermissionsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function testIamPermissions($project, $resource, TestPermissionsRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Returns permissions that a caller has on the specified resource. Caution*
-     * This resource is intended for use only by third-party partners who are
-     * creatingCloud Marketplace images. (licenseCodes.testIamPermissions)
-     *
-     * @param string $project Project ID for this request.
-     * @param string $resource Name or id of the resource for this request.
-     * @param TestPermissionsRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return TestPermissionsResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Compute\Resource\LicenseCodes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function testIamPermissions($project, $resource, TestPermissionsRequest $postBody, $optParams = [])
+    class Google_Service_Compute_Resource_LicenseCodes extends \Google\Service\Compute\Resource\LicenseCodes
     {
     }
 }

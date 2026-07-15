@@ -21,109 +21,118 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class DisruptionEvent extends \Google\Collection
-{
-    /**
-     * DISRUPTION_TYPE_UNSPECIFIED indicates the disruption type is unspecified.
-     */
-    public const DISRUPTION_TYPE_DISRUPTION_TYPE_UNSPECIFIED = 'DISRUPTION_TYPE_UNSPECIFIED';
-    /**
-     * POD_NOT_ENOUGH_PDB indicates there are still running pods on the node
-     * during node drain because their evictions are blocked by PDB.
-     */
-    public const DISRUPTION_TYPE_POD_NOT_ENOUGH_PDB = 'POD_NOT_ENOUGH_PDB';
-    /**
-     * POD_PDB_VIOLATION indicates that there are force pod evictions during node
-     * drain which violate the PDB.
-     */
-    public const DISRUPTION_TYPE_POD_PDB_VIOLATION = 'POD_PDB_VIOLATION';
-    protected $collection_key = 'pdbBlockedPod';
-    /**
-     * The type of the disruption event.
-     *
-     * @var string
-     */
-    public $disruptionType;
-    /**
-     * The node whose drain is blocked by PDB. This field is set for both
-     * POD_PDB_VIOLATION and POD_NOT_ENOUGH_PDB event.
-     *
-     * @var string
-     */
-    public $pdbBlockedNode;
-    protected $pdbBlockedPodType = PdbBlockedPod::class;
-    protected $pdbBlockedPodDataType = 'array';
-    /**
-     * The timeout in seconds for which the node drain is blocked by PDB. After
-     * this timeout, pods are forcefully evicted. This field is only populated
-     * when event_type is POD_PDB_VIOLATION.
-     *
-     * @var string
-     */
-    public $pdbViolationTimeout;
-    /**
-     * The type of the disruption event.
-     *
-     * Accepted values: DISRUPTION_TYPE_UNSPECIFIED, POD_NOT_ENOUGH_PDB,
-     * POD_PDB_VIOLATION
-     *
-     * @param self::DISRUPTION_TYPE_* $disruptionType
-     */
-    public function setDisruptionType($disruptionType)
+namespace Google\Service\Container {
+    class DisruptionEvent extends \Google\Collection
     {
+        /**
+         * DISRUPTION_TYPE_UNSPECIFIED indicates the disruption type is unspecified.
+         */
+        public const DISRUPTION_TYPE_DISRUPTION_TYPE_UNSPECIFIED = 'DISRUPTION_TYPE_UNSPECIFIED';
+        /**
+         * POD_NOT_ENOUGH_PDB indicates there are still running pods on the node
+         * during node drain because their evictions are blocked by PDB.
+         */
+        public const DISRUPTION_TYPE_POD_NOT_ENOUGH_PDB = 'POD_NOT_ENOUGH_PDB';
+        /**
+         * POD_PDB_VIOLATION indicates that there are force pod evictions during node
+         * drain which violate the PDB.
+         */
+        public const DISRUPTION_TYPE_POD_PDB_VIOLATION = 'POD_PDB_VIOLATION';
+        protected $collection_key = 'pdbBlockedPod';
+        /**
+         * The type of the disruption event.
+         *
+         * @var string
+         */
+        public $disruptionType;
+        /**
+         * The node whose drain is blocked by PDB. This field is set for both
+         * POD_PDB_VIOLATION and POD_NOT_ENOUGH_PDB event.
+         *
+         * @var string
+         */
+        public $pdbBlockedNode;
+        protected $pdbBlockedPodType = PdbBlockedPod::class;
+        protected $pdbBlockedPodDataType = 'array';
+        /**
+         * The timeout in seconds for which the node drain is blocked by PDB. After
+         * this timeout, pods are forcefully evicted. This field is only populated
+         * when event_type is POD_PDB_VIOLATION.
+         *
+         * @var string
+         */
+        public $pdbViolationTimeout;
+        /**
+         * The type of the disruption event.
+         *
+         * Accepted values: DISRUPTION_TYPE_UNSPECIFIED, POD_NOT_ENOUGH_PDB,
+         * POD_PDB_VIOLATION
+         *
+         * @param self::DISRUPTION_TYPE_* $disruptionType
+         */
+        public function setDisruptionType($disruptionType)
+        {
+        }
+        /**
+         * @return self::DISRUPTION_TYPE_*
+         */
+        public function getDisruptionType()
+        {
+        }
+        /**
+         * The node whose drain is blocked by PDB. This field is set for both
+         * POD_PDB_VIOLATION and POD_NOT_ENOUGH_PDB event.
+         *
+         * @param string $pdbBlockedNode
+         */
+        public function setPdbBlockedNode($pdbBlockedNode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPdbBlockedNode()
+        {
+        }
+        /**
+         * The pods whose evictions are blocked by PDB. This field is set for both
+         * POD_PDB_VIOLATION and POD_NOT_ENOUGH_PDB event.
+         *
+         * @param PdbBlockedPod[] $pdbBlockedPod
+         */
+        public function setPdbBlockedPod($pdbBlockedPod)
+        {
+        }
+        /**
+         * @return PdbBlockedPod[]
+         */
+        public function getPdbBlockedPod()
+        {
+        }
+        /**
+         * The timeout in seconds for which the node drain is blocked by PDB. After
+         * this timeout, pods are forcefully evicted. This field is only populated
+         * when event_type is POD_PDB_VIOLATION.
+         *
+         * @param string $pdbViolationTimeout
+         */
+        public function setPdbViolationTimeout($pdbViolationTimeout)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPdbViolationTimeout()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::DISRUPTION_TYPE_*
+     * Runtime class alias of \Google\Service\Container\DisruptionEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisruptionType()
-    {
-    }
-    /**
-     * The node whose drain is blocked by PDB. This field is set for both
-     * POD_PDB_VIOLATION and POD_NOT_ENOUGH_PDB event.
-     *
-     * @param string $pdbBlockedNode
-     */
-    public function setPdbBlockedNode($pdbBlockedNode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPdbBlockedNode()
-    {
-    }
-    /**
-     * The pods whose evictions are blocked by PDB. This field is set for both
-     * POD_PDB_VIOLATION and POD_NOT_ENOUGH_PDB event.
-     *
-     * @param PdbBlockedPod[] $pdbBlockedPod
-     */
-    public function setPdbBlockedPod($pdbBlockedPod)
-    {
-    }
-    /**
-     * @return PdbBlockedPod[]
-     */
-    public function getPdbBlockedPod()
-    {
-    }
-    /**
-     * The timeout in seconds for which the node drain is blocked by PDB. After
-     * this timeout, pods are forcefully evicted. This field is only populated
-     * when event_type is POD_PDB_VIOLATION.
-     *
-     * @param string $pdbViolationTimeout
-     */
-    public function setPdbViolationTimeout($pdbViolationTimeout)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPdbViolationTimeout()
+    class Google_Service_Container_DisruptionEvent extends \Google\Service\Container\DisruptionEvent
     {
     }
 }

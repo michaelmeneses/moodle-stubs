@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaListDataStoresResponse extends \Google\Collection
-{
-    protected $collection_key = 'dataStores';
-    protected $dataStoresType = GoogleCloudDiscoveryengineV1betaDataStore::class;
-    protected $dataStoresDataType = 'array';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaDataStore[]
-     */
-    public function setDataStores($dataStores)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaListDataStoresResponse extends \Google\Collection
     {
+        protected $collection_key = 'dataStores';
+        protected $dataStoresType = GoogleCloudDiscoveryengineV1betaDataStore::class;
+        protected $dataStoresDataType = 'array';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaDataStore[]
+         */
+        public function setDataStores($dataStores)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaDataStore[]
+         */
+        public function getDataStores()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1betaDataStore[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaListDataStoresResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataStores()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaListDataStoresResponse extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaListDataStoresResponse
     {
     }
 }

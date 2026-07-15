@@ -23,6 +23,10 @@
  */
 namespace Google\Auth\Cache;
 
+use Psr\Cache\CacheItemInterface;
+use Psr\Cache\CacheItemPoolInterface;
+use SysvSemaphore;
+use SysvSharedMemory;
 /**
  * SystemV shared memory based CacheItemPool implementation.
  *

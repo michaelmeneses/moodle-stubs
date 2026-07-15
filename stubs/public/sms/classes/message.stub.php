@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_sms;
 
+use libphonenumber\NumberParseException;
+use Spatie\Cloneable\Cloneable;
+use ValueError;
 /**
  * A Message used in an SMS.
  *

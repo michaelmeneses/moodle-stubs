@@ -21,146 +21,155 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1SearchRequestContentSearchSpecExtractiveContentSpec extends \Google\Model
-{
-    /**
-     * The maximum number of extractive answers returned in each search result. An
-     * extractive answer is a verbatim answer extracted from the original
-     * document, which provides a precise and contextually relevant answer to the
-     * search query. If the number of matching answers is less than the
-     * `max_extractive_answer_count`, return all of the answers. Otherwise, return
-     * the `max_extractive_answer_count`. At most five answers are returned for
-     * each SearchResult.
-     *
-     * @var int
-     */
-    public $maxExtractiveAnswerCount;
-    /**
-     * The max number of extractive segments returned in each search result. Only
-     * applied if the DataStore is set to DataStore.ContentConfig.CONTENT_REQUIRED
-     * or DataStore.solution_types is SOLUTION_TYPE_CHAT. An extractive segment is
-     * a text segment extracted from the original document that is relevant to the
-     * search query, and, in general, more verbose than an extractive answer. The
-     * segment could then be used as input for LLMs to generate summaries and
-     * answers. If the number of matching segments is less than
-     * `max_extractive_segment_count`, return all of the segments. Otherwise,
-     * return the `max_extractive_segment_count`.
-     *
-     * @var int
-     */
-    public $maxExtractiveSegmentCount;
-    /**
-     * Return at most `num_next_segments` segments after each selected segments.
-     *
-     * @var int
-     */
-    public $numNextSegments;
-    /**
-     * Specifies whether to also include the adjacent from each selected segments.
-     * Return at most `num_previous_segments` segments before each selected
-     * segments.
-     *
-     * @var int
-     */
-    public $numPreviousSegments;
-    /**
-     * Specifies whether to return the confidence score from the extractive
-     * segments in each search result. This feature is available only for new or
-     * allowlisted data stores. To allowlist your data store, contact your
-     * Customer Engineer. The default value is `false`.
-     *
-     * @var bool
-     */
-    public $returnExtractiveSegmentScore;
-    /**
-     * The maximum number of extractive answers returned in each search result. An
-     * extractive answer is a verbatim answer extracted from the original
-     * document, which provides a precise and contextually relevant answer to the
-     * search query. If the number of matching answers is less than the
-     * `max_extractive_answer_count`, return all of the answers. Otherwise, return
-     * the `max_extractive_answer_count`. At most five answers are returned for
-     * each SearchResult.
-     *
-     * @param int $maxExtractiveAnswerCount
-     */
-    public function setMaxExtractiveAnswerCount($maxExtractiveAnswerCount)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1SearchRequestContentSearchSpecExtractiveContentSpec extends \Google\Model
     {
+        /**
+         * The maximum number of extractive answers returned in each search result. An
+         * extractive answer is a verbatim answer extracted from the original
+         * document, which provides a precise and contextually relevant answer to the
+         * search query. If the number of matching answers is less than the
+         * `max_extractive_answer_count`, return all of the answers. Otherwise, return
+         * the `max_extractive_answer_count`. At most five answers are returned for
+         * each SearchResult.
+         *
+         * @var int
+         */
+        public $maxExtractiveAnswerCount;
+        /**
+         * The max number of extractive segments returned in each search result. Only
+         * applied if the DataStore is set to DataStore.ContentConfig.CONTENT_REQUIRED
+         * or DataStore.solution_types is SOLUTION_TYPE_CHAT. An extractive segment is
+         * a text segment extracted from the original document that is relevant to the
+         * search query, and, in general, more verbose than an extractive answer. The
+         * segment could then be used as input for LLMs to generate summaries and
+         * answers. If the number of matching segments is less than
+         * `max_extractive_segment_count`, return all of the segments. Otherwise,
+         * return the `max_extractive_segment_count`.
+         *
+         * @var int
+         */
+        public $maxExtractiveSegmentCount;
+        /**
+         * Return at most `num_next_segments` segments after each selected segments.
+         *
+         * @var int
+         */
+        public $numNextSegments;
+        /**
+         * Specifies whether to also include the adjacent from each selected segments.
+         * Return at most `num_previous_segments` segments before each selected
+         * segments.
+         *
+         * @var int
+         */
+        public $numPreviousSegments;
+        /**
+         * Specifies whether to return the confidence score from the extractive
+         * segments in each search result. This feature is available only for new or
+         * allowlisted data stores. To allowlist your data store, contact your
+         * Customer Engineer. The default value is `false`.
+         *
+         * @var bool
+         */
+        public $returnExtractiveSegmentScore;
+        /**
+         * The maximum number of extractive answers returned in each search result. An
+         * extractive answer is a verbatim answer extracted from the original
+         * document, which provides a precise and contextually relevant answer to the
+         * search query. If the number of matching answers is less than the
+         * `max_extractive_answer_count`, return all of the answers. Otherwise, return
+         * the `max_extractive_answer_count`. At most five answers are returned for
+         * each SearchResult.
+         *
+         * @param int $maxExtractiveAnswerCount
+         */
+        public function setMaxExtractiveAnswerCount($maxExtractiveAnswerCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxExtractiveAnswerCount()
+        {
+        }
+        /**
+         * The max number of extractive segments returned in each search result. Only
+         * applied if the DataStore is set to DataStore.ContentConfig.CONTENT_REQUIRED
+         * or DataStore.solution_types is SOLUTION_TYPE_CHAT. An extractive segment is
+         * a text segment extracted from the original document that is relevant to the
+         * search query, and, in general, more verbose than an extractive answer. The
+         * segment could then be used as input for LLMs to generate summaries and
+         * answers. If the number of matching segments is less than
+         * `max_extractive_segment_count`, return all of the segments. Otherwise,
+         * return the `max_extractive_segment_count`.
+         *
+         * @param int $maxExtractiveSegmentCount
+         */
+        public function setMaxExtractiveSegmentCount($maxExtractiveSegmentCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxExtractiveSegmentCount()
+        {
+        }
+        /**
+         * Return at most `num_next_segments` segments after each selected segments.
+         *
+         * @param int $numNextSegments
+         */
+        public function setNumNextSegments($numNextSegments)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumNextSegments()
+        {
+        }
+        /**
+         * Specifies whether to also include the adjacent from each selected segments.
+         * Return at most `num_previous_segments` segments before each selected
+         * segments.
+         *
+         * @param int $numPreviousSegments
+         */
+        public function setNumPreviousSegments($numPreviousSegments)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumPreviousSegments()
+        {
+        }
+        /**
+         * Specifies whether to return the confidence score from the extractive
+         * segments in each search result. This feature is available only for new or
+         * allowlisted data stores. To allowlist your data store, contact your
+         * Customer Engineer. The default value is `false`.
+         *
+         * @param bool $returnExtractiveSegmentScore
+         */
+        public function setReturnExtractiveSegmentScore($returnExtractiveSegmentScore)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getReturnExtractiveSegmentScore()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1SearchRequestContentSearchSpecExtractiveContentSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaxExtractiveAnswerCount()
-    {
-    }
-    /**
-     * The max number of extractive segments returned in each search result. Only
-     * applied if the DataStore is set to DataStore.ContentConfig.CONTENT_REQUIRED
-     * or DataStore.solution_types is SOLUTION_TYPE_CHAT. An extractive segment is
-     * a text segment extracted from the original document that is relevant to the
-     * search query, and, in general, more verbose than an extractive answer. The
-     * segment could then be used as input for LLMs to generate summaries and
-     * answers. If the number of matching segments is less than
-     * `max_extractive_segment_count`, return all of the segments. Otherwise,
-     * return the `max_extractive_segment_count`.
-     *
-     * @param int $maxExtractiveSegmentCount
-     */
-    public function setMaxExtractiveSegmentCount($maxExtractiveSegmentCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxExtractiveSegmentCount()
-    {
-    }
-    /**
-     * Return at most `num_next_segments` segments after each selected segments.
-     *
-     * @param int $numNextSegments
-     */
-    public function setNumNextSegments($numNextSegments)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNumNextSegments()
-    {
-    }
-    /**
-     * Specifies whether to also include the adjacent from each selected segments.
-     * Return at most `num_previous_segments` segments before each selected
-     * segments.
-     *
-     * @param int $numPreviousSegments
-     */
-    public function setNumPreviousSegments($numPreviousSegments)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNumPreviousSegments()
-    {
-    }
-    /**
-     * Specifies whether to return the confidence score from the extractive
-     * segments in each search result. This feature is available only for new or
-     * allowlisted data stores. To allowlist your data store, contact your
-     * Customer Engineer. The default value is `false`.
-     *
-     * @param bool $returnExtractiveSegmentScore
-     */
-    public function setReturnExtractiveSegmentScore($returnExtractiveSegmentScore)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getReturnExtractiveSegmentScore()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1SearchRequestContentSearchSpecExtractiveContentSpec extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1SearchRequestContentSearchSpecExtractiveContentSpec
     {
     }
 }

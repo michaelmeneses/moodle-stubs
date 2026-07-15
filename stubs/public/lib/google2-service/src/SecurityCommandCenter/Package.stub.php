@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class Package extends \Google\Model
-{
-    /**
-     * The CPE URI where the vulnerability was detected.
-     *
-     * @var string
-     */
-    public $cpeUri;
-    /**
-     * The name of the package where the vulnerability was detected.
-     *
-     * @var string
-     */
-    public $packageName;
-    /**
-     * Type of package, for example, os, maven, or go.
-     *
-     * @var string
-     */
-    public $packageType;
-    /**
-     * The version of the package.
-     *
-     * @var string
-     */
-    public $packageVersion;
-    /**
-     * The CPE URI where the vulnerability was detected.
-     *
-     * @param string $cpeUri
-     */
-    public function setCpeUri($cpeUri)
+namespace Google\Service\SecurityCommandCenter {
+    class Package extends \Google\Model
     {
+        /**
+         * The CPE URI where the vulnerability was detected.
+         *
+         * @var string
+         */
+        public $cpeUri;
+        /**
+         * The name of the package where the vulnerability was detected.
+         *
+         * @var string
+         */
+        public $packageName;
+        /**
+         * Type of package, for example, os, maven, or go.
+         *
+         * @var string
+         */
+        public $packageType;
+        /**
+         * The version of the package.
+         *
+         * @var string
+         */
+        public $packageVersion;
+        /**
+         * The CPE URI where the vulnerability was detected.
+         *
+         * @param string $cpeUri
+         */
+        public function setCpeUri($cpeUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCpeUri()
+        {
+        }
+        /**
+         * The name of the package where the vulnerability was detected.
+         *
+         * @param string $packageName
+         */
+        public function setPackageName($packageName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPackageName()
+        {
+        }
+        /**
+         * Type of package, for example, os, maven, or go.
+         *
+         * @param string $packageType
+         */
+        public function setPackageType($packageType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPackageType()
+        {
+        }
+        /**
+         * The version of the package.
+         *
+         * @param string $packageVersion
+         */
+        public function setPackageVersion($packageVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPackageVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\Package registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCpeUri()
-    {
-    }
-    /**
-     * The name of the package where the vulnerability was detected.
-     *
-     * @param string $packageName
-     */
-    public function setPackageName($packageName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPackageName()
-    {
-    }
-    /**
-     * Type of package, for example, os, maven, or go.
-     *
-     * @param string $packageType
-     */
-    public function setPackageType($packageType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPackageType()
-    {
-    }
-    /**
-     * The version of the package.
-     *
-     * @param string $packageVersion
-     */
-    public function setPackageVersion($packageVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPackageVersion()
+    class Google_Service_SecurityCommandCenter_Package extends \Google\Service\SecurityCommandCenter\Package
     {
     }
 }

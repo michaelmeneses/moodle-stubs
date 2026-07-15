@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmCardsRow extends \Google\Collection
-{
-    protected $collection_key = 'cells';
-    protected $cellsType = EnterpriseCrmCardsCellValue::class;
-    protected $cellsDataType = 'array';
-    public $cells;
-    /**
-     * @param EnterpriseCrmCardsCellValue[]
-     */
-    public function setCells($cells)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmCardsRow extends \Google\Collection
     {
+        protected $collection_key = 'cells';
+        protected $cellsType = EnterpriseCrmCardsCellValue::class;
+        protected $cellsDataType = 'array';
+        public $cells;
+        /**
+         * @param EnterpriseCrmCardsCellValue[]
+         */
+        public function setCells($cells)
+        {
+        }
+        /**
+         * @return EnterpriseCrmCardsCellValue[]
+         */
+        public function getCells()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EnterpriseCrmCardsCellValue[]
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmCardsRow registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCells()
+    class Google_Service_Integrations_EnterpriseCrmCardsRow extends \Google\Service\Integrations\EnterpriseCrmCardsRow
     {
     }
 }

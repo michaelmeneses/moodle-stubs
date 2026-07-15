@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataprocMetastore;
-
-class GoogleLongrunningOperation extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $done;
-    protected $errorType = GoogleRpcStatus::class;
-    protected $errorDataType = '';
-    /**
-     * @var array[]
-     */
-    public $metadata;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var array[]
-     */
-    public $response;
-    /**
-     * @param bool
-     */
-    public function setDone($done)
+namespace Google\Service\DataprocMetastore {
+    class GoogleLongrunningOperation extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $done;
+        protected $errorType = GoogleRpcStatus::class;
+        protected $errorDataType = '';
+        /**
+         * @var array[]
+         */
+        public $metadata;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var array[]
+         */
+        public $response;
+        /**
+         * @param bool
+         */
+        public function setDone($done)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDone()
+        {
+        }
+        /**
+         * @param GoogleRpcStatus
+         */
+        public function setError(GoogleRpcStatus $error)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus
+         */
+        public function getError()
+        {
+        }
+        /**
+         * @param array[]
+         */
+        public function setMetadata($metadata)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param array[]
+         */
+        public function setResponse($response)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getResponse()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DataprocMetastore\GoogleLongrunningOperation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDone()
-    {
-    }
-    /**
-     * @param GoogleRpcStatus
-     */
-    public function setError(GoogleRpcStatus $error)
-    {
-    }
-    /**
-     * @return GoogleRpcStatus
-     */
-    public function getError()
-    {
-    }
-    /**
-     * @param array[]
-     */
-    public function setMetadata($metadata)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param array[]
-     */
-    public function setResponse($response)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getResponse()
+    class Google_Service_DataprocMetastore_GoogleLongrunningOperation extends \Google\Service\DataprocMetastore\GoogleLongrunningOperation
     {
     }
 }

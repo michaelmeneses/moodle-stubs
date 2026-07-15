@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OSConfig;
-
-class PatchJobInstanceDetails extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $attemptCount;
-    /**
-     * @var string
-     */
-    public $failureReason;
-    /**
-     * @var string
-     */
-    public $instanceSystemId;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $state;
-    /**
-     * @param string
-     */
-    public function setAttemptCount($attemptCount)
+namespace Google\Service\OSConfig {
+    class PatchJobInstanceDetails extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $attemptCount;
+        /**
+         * @var string
+         */
+        public $failureReason;
+        /**
+         * @var string
+         */
+        public $instanceSystemId;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $state;
+        /**
+         * @param string
+         */
+        public function setAttemptCount($attemptCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAttemptCount()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setFailureReason($failureReason)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFailureReason()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setInstanceSystemId($instanceSystemId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstanceSystemId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OSConfig\PatchJobInstanceDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttemptCount()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setFailureReason($failureReason)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFailureReason()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setInstanceSystemId($instanceSystemId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInstanceSystemId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getState()
+    class Google_Service_OSConfig_PatchJobInstanceDetails extends \Google\Service\OSConfig\PatchJobInstanceDetails
     {
     }
 }

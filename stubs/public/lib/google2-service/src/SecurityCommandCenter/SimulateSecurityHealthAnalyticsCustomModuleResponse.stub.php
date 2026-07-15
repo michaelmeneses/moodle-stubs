@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class SimulateSecurityHealthAnalyticsCustomModuleResponse extends \Google\Model
-{
-    protected $resultType = SimulatedResult::class;
-    protected $resultDataType = '';
-    /**
-     * Result for test case in the corresponding request.
-     *
-     * @param SimulatedResult $result
-     */
-    public function setResult(SimulatedResult $result)
+namespace Google\Service\SecurityCommandCenter {
+    class SimulateSecurityHealthAnalyticsCustomModuleResponse extends \Google\Model
     {
+        protected $resultType = SimulatedResult::class;
+        protected $resultDataType = '';
+        /**
+         * Result for test case in the corresponding request.
+         *
+         * @param SimulatedResult $result
+         */
+        public function setResult(SimulatedResult $result)
+        {
+        }
+        /**
+         * @return SimulatedResult
+         */
+        public function getResult()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SimulatedResult
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\SimulateSecurityHealthAnalyticsCustomModuleResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResult()
+    class Google_Service_SecurityCommandCenter_SimulateSecurityHealthAnalyticsCustomModuleResponse extends \Google\Service\SecurityCommandCenter\SimulateSecurityHealthAnalyticsCustomModuleResponse
     {
     }
 }

@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSupport;
-
-class DiffUploadRequest extends \Google\Model
-{
-    protected $checksumsInfoType = CompositeMedia::class;
-    protected $checksumsInfoDataType = '';
-    protected $objectInfoType = CompositeMedia::class;
-    protected $objectInfoDataType = '';
-    /**
-     * # gdata.* are outside protos with mising documentation
-     *
-     * @var string
-     */
-    public $objectVersion;
-    /**
-     * # gdata.* are outside protos with mising documentation
-     *
-     * @param CompositeMedia $checksumsInfo
-     */
-    public function setChecksumsInfo(CompositeMedia $checksumsInfo)
+namespace Google\Service\CloudSupport {
+    class DiffUploadRequest extends \Google\Model
     {
+        protected $checksumsInfoType = CompositeMedia::class;
+        protected $checksumsInfoDataType = '';
+        protected $objectInfoType = CompositeMedia::class;
+        protected $objectInfoDataType = '';
+        /**
+         * # gdata.* are outside protos with mising documentation
+         *
+         * @var string
+         */
+        public $objectVersion;
+        /**
+         * # gdata.* are outside protos with mising documentation
+         *
+         * @param CompositeMedia $checksumsInfo
+         */
+        public function setChecksumsInfo(CompositeMedia $checksumsInfo)
+        {
+        }
+        /**
+         * @return CompositeMedia
+         */
+        public function getChecksumsInfo()
+        {
+        }
+        /**
+         * # gdata.* are outside protos with mising documentation
+         *
+         * @param CompositeMedia $objectInfo
+         */
+        public function setObjectInfo(CompositeMedia $objectInfo)
+        {
+        }
+        /**
+         * @return CompositeMedia
+         */
+        public function getObjectInfo()
+        {
+        }
+        /**
+         * # gdata.* are outside protos with mising documentation
+         *
+         * @param string $objectVersion
+         */
+        public function setObjectVersion($objectVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CompositeMedia
+     * Runtime class alias of \Google\Service\CloudSupport\DiffUploadRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChecksumsInfo()
-    {
-    }
-    /**
-     * # gdata.* are outside protos with mising documentation
-     *
-     * @param CompositeMedia $objectInfo
-     */
-    public function setObjectInfo(CompositeMedia $objectInfo)
-    {
-    }
-    /**
-     * @return CompositeMedia
-     */
-    public function getObjectInfo()
-    {
-    }
-    /**
-     * # gdata.* are outside protos with mising documentation
-     *
-     * @param string $objectVersion
-     */
-    public function setObjectVersion($objectVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObjectVersion()
+    class Google_Service_CloudSupport_DiffUploadRequest extends \Google\Service\CloudSupport\DiffUploadRequest
     {
     }
 }

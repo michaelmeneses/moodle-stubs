@@ -21,58 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Baremetalsolution\Resource;
-
-/**
- * The "luns" collection of methods.
- * Typical usage is:
- *  <code>
- *   $baremetalsolutionService = new Google\Service\Baremetalsolution(...);
- *   $luns = $baremetalsolutionService->projects_locations_volumes_luns;
- *  </code>
- */
-class ProjectsLocationsVolumesLuns extends \Google\Service\Resource
-{
+namespace Google\Service\Baremetalsolution\Resource {
+    use Google\Service\Baremetalsolution\EvictLunRequest;
+    use Google\Service\Baremetalsolution\ListLunsResponse;
+    use Google\Service\Baremetalsolution\Lun;
+    use Google\Service\Baremetalsolution\Operation;
     /**
-     * Skips lun's cooloff and deletes it now. Lun must be in cooloff state.
-     * (luns.evict)
-     *
-     * @param string $name Required. The name of the lun.
-     * @param EvictLunRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * The "luns" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $baremetalsolutionService = new Google\Service\Baremetalsolution(...);
+     *   $luns = $baremetalsolutionService->projects_locations_volumes_luns;
+     *  </code>
      */
-    public function evict($name, EvictLunRequest $postBody, $optParams = [])
+    class ProjectsLocationsVolumesLuns extends \Google\Service\Resource
     {
+        /**
+         * Skips lun's cooloff and deletes it now. Lun must be in cooloff state.
+         * (luns.evict)
+         *
+         * @param string $name Required. The name of the lun.
+         * @param EvictLunRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function evict($name, EvictLunRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Get details of a single storage logical unit number(LUN). (luns.get)
+         *
+         * @param string $name Required. Name of the resource.
+         * @param array $optParams Optional parameters.
+         * @return Lun
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * List storage volume luns for given storage volume.
+         * (luns.listProjectsLocationsVolumesLuns)
+         *
+         * @param string $parent Required. Parent value for ListLunsRequest.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Requested page size. The server might return fewer
+         * items than requested. If unspecified, server will pick an appropriate
+         * default.
+         * @opt_param string pageToken A token identifying a page of results from the
+         * server.
+         * @return ListLunsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsVolumesLuns($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Get details of a single storage logical unit number(LUN). (luns.get)
-     *
-     * @param string $name Required. Name of the resource.
-     * @param array $optParams Optional parameters.
-     * @return Lun
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Baremetalsolution\Resource\ProjectsLocationsVolumesLuns registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * List storage volume luns for given storage volume.
-     * (luns.listProjectsLocationsVolumesLuns)
-     *
-     * @param string $parent Required. Parent value for ListLunsRequest.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Requested page size. The server might return fewer
-     * items than requested. If unspecified, server will pick an appropriate
-     * default.
-     * @opt_param string pageToken A token identifying a page of results from the
-     * server.
-     * @return ListLunsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsVolumesLuns($parent, $optParams = [])
+    class Google_Service_Baremetalsolution_Resource_ProjectsLocationsVolumesLuns extends \Google\Service\Baremetalsolution\Resource\ProjectsLocationsVolumesLuns
     {
     }
 }

@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastore;
-
-class GoogleDatastoreAdminV1ListIndexesResponse extends \Google\Collection
-{
-    protected $collection_key = 'indexes';
-    protected $indexesType = GoogleDatastoreAdminV1Index::class;
-    protected $indexesDataType = 'array';
-    /**
-     * The standard List next-page token.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The indexes.
-     *
-     * @param GoogleDatastoreAdminV1Index[] $indexes
-     */
-    public function setIndexes($indexes)
+namespace Google\Service\Datastore {
+    class GoogleDatastoreAdminV1ListIndexesResponse extends \Google\Collection
     {
+        protected $collection_key = 'indexes';
+        protected $indexesType = GoogleDatastoreAdminV1Index::class;
+        protected $indexesDataType = 'array';
+        /**
+         * The standard List next-page token.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The indexes.
+         *
+         * @param GoogleDatastoreAdminV1Index[] $indexes
+         */
+        public function setIndexes($indexes)
+        {
+        }
+        /**
+         * @return GoogleDatastoreAdminV1Index[]
+         */
+        public function getIndexes()
+        {
+        }
+        /**
+         * The standard List next-page token.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleDatastoreAdminV1Index[]
+     * Runtime class alias of \Google\Service\Datastore\GoogleDatastoreAdminV1ListIndexesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIndexes()
-    {
-    }
-    /**
-     * The standard List next-page token.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Datastore_GoogleDatastoreAdminV1ListIndexesResponse extends \Google\Service\Datastore\GoogleDatastoreAdminV1ListIndexesResponse
     {
     }
 }

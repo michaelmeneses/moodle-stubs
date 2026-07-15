@@ -23,6 +23,13 @@
  */
 namespace Google\Auth\HttpHandler;
 
+use Google\Auth\ApplicationDefaultCredentials;
+use GuzzleHttp\BodySummarizer;
+use GuzzleHttp\Client;
+use GuzzleHttp\ClientInterface;
+use GuzzleHttp\HandlerStack;
+use GuzzleHttp\Middleware;
+use Psr\Log\LoggerInterface;
 class HttpHandlerFactory
 {
     /**

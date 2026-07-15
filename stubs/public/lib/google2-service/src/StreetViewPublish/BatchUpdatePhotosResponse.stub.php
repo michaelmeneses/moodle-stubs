@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\StreetViewPublish;
-
-class BatchUpdatePhotosResponse extends \Google\Collection
-{
-    protected $collection_key = 'results';
-    protected $resultsType = PhotoResponse::class;
-    protected $resultsDataType = 'array';
-    /**
-     * List of results for each individual Photo updated, in the same order as the
-     * request.
-     *
-     * @param PhotoResponse[] $results
-     */
-    public function setResults($results)
+namespace Google\Service\StreetViewPublish {
+    class BatchUpdatePhotosResponse extends \Google\Collection
     {
+        protected $collection_key = 'results';
+        protected $resultsType = PhotoResponse::class;
+        protected $resultsDataType = 'array';
+        /**
+         * List of results for each individual Photo updated, in the same order as the
+         * request.
+         *
+         * @param PhotoResponse[] $results
+         */
+        public function setResults($results)
+        {
+        }
+        /**
+         * @return PhotoResponse[]
+         */
+        public function getResults()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PhotoResponse[]
+     * Runtime class alias of \Google\Service\StreetViewPublish\BatchUpdatePhotosResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResults()
+    class Google_Service_StreetViewPublish_BatchUpdatePhotosResponse extends \Google\Service\StreetViewPublish\BatchUpdatePhotosResponse
     {
     }
 }

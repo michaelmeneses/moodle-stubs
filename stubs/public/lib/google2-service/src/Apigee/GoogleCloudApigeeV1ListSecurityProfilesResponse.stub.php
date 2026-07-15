@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1ListSecurityProfilesResponse extends \Google\Collection
-{
-    protected $collection_key = 'securityProfiles';
-    /**
-     * A token that can be sent as `page_token` to retrieve the next page. If this
-     * field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $securityProfilesType = GoogleCloudApigeeV1SecurityProfile::class;
-    protected $securityProfilesDataType = 'array';
-    /**
-     * A token that can be sent as `page_token` to retrieve the next page. If this
-     * field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1ListSecurityProfilesResponse extends \Google\Collection
     {
+        protected $collection_key = 'securityProfiles';
+        /**
+         * A token that can be sent as `page_token` to retrieve the next page. If this
+         * field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $securityProfilesType = GoogleCloudApigeeV1SecurityProfile::class;
+        protected $securityProfilesDataType = 'array';
+        /**
+         * A token that can be sent as `page_token` to retrieve the next page. If this
+         * field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * List of security profiles in the organization. The profiles may be attached
+         * or unattached to any environment. This will return latest revision of each
+         * profile.
+         *
+         * @param GoogleCloudApigeeV1SecurityProfile[] $securityProfiles
+         */
+        public function setSecurityProfiles($securityProfiles)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1SecurityProfile[]
+         */
+        public function getSecurityProfiles()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1ListSecurityProfilesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * List of security profiles in the organization. The profiles may be attached
-     * or unattached to any environment. This will return latest revision of each
-     * profile.
-     *
-     * @param GoogleCloudApigeeV1SecurityProfile[] $securityProfiles
-     */
-    public function setSecurityProfiles($securityProfiles)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1SecurityProfile[]
-     */
-    public function getSecurityProfiles()
+    class Google_Service_Apigee_GoogleCloudApigeeV1ListSecurityProfilesResponse extends \Google\Service\Apigee\GoogleCloudApigeeV1ListSecurityProfilesResponse
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIdentity;
-
-class IsInvitableUserResponse extends \Google\Model
-{
-    /**
-     * Returns true if the email address is invitable.
-     *
-     * @var bool
-     */
-    public $isInvitableUser;
-    /**
-     * Returns true if the email address is invitable.
-     *
-     * @param bool $isInvitableUser
-     */
-    public function setIsInvitableUser($isInvitableUser)
+namespace Google\Service\CloudIdentity {
+    class IsInvitableUserResponse extends \Google\Model
     {
+        /**
+         * Returns true if the email address is invitable.
+         *
+         * @var bool
+         */
+        public $isInvitableUser;
+        /**
+         * Returns true if the email address is invitable.
+         *
+         * @param bool $isInvitableUser
+         */
+        public function setIsInvitableUser($isInvitableUser)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsInvitableUser()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudIdentity\IsInvitableUserResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIsInvitableUser()
+    class Google_Service_CloudIdentity_IsInvitableUserResponse extends \Google\Service\CloudIdentity\IsInvitableUserResponse
     {
     }
 }

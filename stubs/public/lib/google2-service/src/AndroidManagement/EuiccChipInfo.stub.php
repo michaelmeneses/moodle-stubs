@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class EuiccChipInfo extends \Google\Model
-{
-    /**
-     * Output only. The Embedded Identity Document (EID) that identifies the eUICC
-     * chip for each eUICC chip on the device. This is available on company owned
-     * devices running Android 13 and above.
-     *
-     * @var string
-     */
-    public $eid;
-    /**
-     * Output only. The Embedded Identity Document (EID) that identifies the eUICC
-     * chip for each eUICC chip on the device. This is available on company owned
-     * devices running Android 13 and above.
-     *
-     * @param string $eid
-     */
-    public function setEid($eid)
+namespace Google\Service\AndroidManagement {
+    class EuiccChipInfo extends \Google\Model
     {
+        /**
+         * Output only. The Embedded Identity Document (EID) that identifies the eUICC
+         * chip for each eUICC chip on the device. This is available on company owned
+         * devices running Android 13 and above.
+         *
+         * @var string
+         */
+        public $eid;
+        /**
+         * Output only. The Embedded Identity Document (EID) that identifies the eUICC
+         * chip for each eUICC chip on the device. This is available on company owned
+         * devices running Android 13 and above.
+         *
+         * @param string $eid
+         */
+        public function setEid($eid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEid()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidManagement\EuiccChipInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEid()
+    class Google_Service_AndroidManagement_EuiccChipInfo extends \Google\Service\AndroidManagement\EuiccChipInfo
     {
     }
 }

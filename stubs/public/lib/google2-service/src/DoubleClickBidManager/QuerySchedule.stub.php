@@ -21,124 +21,133 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DoubleClickBidManager;
-
-class QuerySchedule extends \Google\Model
-{
-    /**
-     * Default value when frequency is not specified or is unknown in this
-     * version.
-     */
-    public const FREQUENCY_FREQUENCY_UNSPECIFIED = 'FREQUENCY_UNSPECIFIED';
-    /**
-     * Only when the query is run manually.
-     */
-    public const FREQUENCY_ONE_TIME = 'ONE_TIME';
-    /**
-     * Once a day.
-     */
-    public const FREQUENCY_DAILY = 'DAILY';
-    /**
-     * Once a week.
-     */
-    public const FREQUENCY_WEEKLY = 'WEEKLY';
-    /**
-     * Twice a month.
-     */
-    public const FREQUENCY_SEMI_MONTHLY = 'SEMI_MONTHLY';
-    /**
-     * Once a month.
-     */
-    public const FREQUENCY_MONTHLY = 'MONTHLY';
-    /**
-     * Once a quarter.
-     */
-    public const FREQUENCY_QUARTERLY = 'QUARTERLY';
-    /**
-     * Once a year.
-     */
-    public const FREQUENCY_YEARLY = 'YEARLY';
-    protected $endDateType = Date::class;
-    protected $endDateDataType = '';
-    /**
-     * How frequently to run the query. If set to `ONE_TIME`, the query will only
-     * be run when queries.run is called.
-     *
-     * @var string
-     */
-    public $frequency;
-    /**
-     * The canonical code for the timezone the query schedule is based on.
-     * Scheduled runs are usually conducted in the morning of a given day.
-     * Defaults to `America/New_York`.
-     *
-     * @var string
-     */
-    public $nextRunTimezoneCode;
-    protected $startDateType = Date::class;
-    protected $startDateDataType = '';
-    /**
-     * The date on which to end the scheduled runs. This field is required if
-     * frequency is not set to `ONE_TIME`. Otherwise, it will be ignored.
-     *
-     * @param Date $endDate
-     */
-    public function setEndDate(Date $endDate)
+namespace Google\Service\DoubleClickBidManager {
+    class QuerySchedule extends \Google\Model
     {
+        /**
+         * Default value when frequency is not specified or is unknown in this
+         * version.
+         */
+        public const FREQUENCY_FREQUENCY_UNSPECIFIED = 'FREQUENCY_UNSPECIFIED';
+        /**
+         * Only when the query is run manually.
+         */
+        public const FREQUENCY_ONE_TIME = 'ONE_TIME';
+        /**
+         * Once a day.
+         */
+        public const FREQUENCY_DAILY = 'DAILY';
+        /**
+         * Once a week.
+         */
+        public const FREQUENCY_WEEKLY = 'WEEKLY';
+        /**
+         * Twice a month.
+         */
+        public const FREQUENCY_SEMI_MONTHLY = 'SEMI_MONTHLY';
+        /**
+         * Once a month.
+         */
+        public const FREQUENCY_MONTHLY = 'MONTHLY';
+        /**
+         * Once a quarter.
+         */
+        public const FREQUENCY_QUARTERLY = 'QUARTERLY';
+        /**
+         * Once a year.
+         */
+        public const FREQUENCY_YEARLY = 'YEARLY';
+        protected $endDateType = Date::class;
+        protected $endDateDataType = '';
+        /**
+         * How frequently to run the query. If set to `ONE_TIME`, the query will only
+         * be run when queries.run is called.
+         *
+         * @var string
+         */
+        public $frequency;
+        /**
+         * The canonical code for the timezone the query schedule is based on.
+         * Scheduled runs are usually conducted in the morning of a given day.
+         * Defaults to `America/New_York`.
+         *
+         * @var string
+         */
+        public $nextRunTimezoneCode;
+        protected $startDateType = Date::class;
+        protected $startDateDataType = '';
+        /**
+         * The date on which to end the scheduled runs. This field is required if
+         * frequency is not set to `ONE_TIME`. Otherwise, it will be ignored.
+         *
+         * @param Date $endDate
+         */
+        public function setEndDate(Date $endDate)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getEndDate()
+        {
+        }
+        /**
+         * How frequently to run the query. If set to `ONE_TIME`, the query will only
+         * be run when queries.run is called.
+         *
+         * Accepted values: FREQUENCY_UNSPECIFIED, ONE_TIME, DAILY, WEEKLY,
+         * SEMI_MONTHLY, MONTHLY, QUARTERLY, YEARLY
+         *
+         * @param self::FREQUENCY_* $frequency
+         */
+        public function setFrequency($frequency)
+        {
+        }
+        /**
+         * @return self::FREQUENCY_*
+         */
+        public function getFrequency()
+        {
+        }
+        /**
+         * The canonical code for the timezone the query schedule is based on.
+         * Scheduled runs are usually conducted in the morning of a given day.
+         * Defaults to `America/New_York`.
+         *
+         * @param string $nextRunTimezoneCode
+         */
+        public function setNextRunTimezoneCode($nextRunTimezoneCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextRunTimezoneCode()
+        {
+        }
+        /**
+         * The date on which to begin the scheduled runs. This field is required if
+         * frequency is not set to `ONE_TIME`. Otherwise, it will be ignored.
+         *
+         * @param Date $startDate
+         */
+        public function setStartDate(Date $startDate)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getStartDate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Date
+     * Runtime class alias of \Google\Service\DoubleClickBidManager\QuerySchedule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndDate()
-    {
-    }
-    /**
-     * How frequently to run the query. If set to `ONE_TIME`, the query will only
-     * be run when queries.run is called.
-     *
-     * Accepted values: FREQUENCY_UNSPECIFIED, ONE_TIME, DAILY, WEEKLY,
-     * SEMI_MONTHLY, MONTHLY, QUARTERLY, YEARLY
-     *
-     * @param self::FREQUENCY_* $frequency
-     */
-    public function setFrequency($frequency)
-    {
-    }
-    /**
-     * @return self::FREQUENCY_*
-     */
-    public function getFrequency()
-    {
-    }
-    /**
-     * The canonical code for the timezone the query schedule is based on.
-     * Scheduled runs are usually conducted in the morning of a given day.
-     * Defaults to `America/New_York`.
-     *
-     * @param string $nextRunTimezoneCode
-     */
-    public function setNextRunTimezoneCode($nextRunTimezoneCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextRunTimezoneCode()
-    {
-    }
-    /**
-     * The date on which to begin the scheduled runs. This field is required if
-     * frequency is not set to `ONE_TIME`. Otherwise, it will be ignored.
-     *
-     * @param Date $startDate
-     */
-    public function setStartDate(Date $startDate)
-    {
-    }
-    /**
-     * @return Date
-     */
-    public function getStartDate()
+    class Google_Service_DoubleClickBidManager_QuerySchedule extends \Google\Service\DoubleClickBidManager\QuerySchedule
     {
     }
 }

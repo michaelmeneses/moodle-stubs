@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class ValidateEventThreatDetectionCustomModuleRequest extends \Google\Model
-{
-    /**
-     * Required. The raw text of the module's contents. Used to generate error
-     * messages.
-     *
-     * @var string
-     */
-    public $rawText;
-    /**
-     * Required. The type of the module (e.g. CONFIGURABLE_BAD_IP).
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Required. The raw text of the module's contents. Used to generate error
-     * messages.
-     *
-     * @param string $rawText
-     */
-    public function setRawText($rawText)
+namespace Google\Service\SecurityCommandCenter {
+    class ValidateEventThreatDetectionCustomModuleRequest extends \Google\Model
     {
+        /**
+         * Required. The raw text of the module's contents. Used to generate error
+         * messages.
+         *
+         * @var string
+         */
+        public $rawText;
+        /**
+         * Required. The type of the module (e.g. CONFIGURABLE_BAD_IP).
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Required. The raw text of the module's contents. Used to generate error
+         * messages.
+         *
+         * @param string $rawText
+         */
+        public function setRawText($rawText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRawText()
+        {
+        }
+        /**
+         * Required. The type of the module (e.g. CONFIGURABLE_BAD_IP).
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\ValidateEventThreatDetectionCustomModuleRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRawText()
-    {
-    }
-    /**
-     * Required. The type of the module (e.g. CONFIGURABLE_BAD_IP).
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_SecurityCommandCenter_ValidateEventThreatDetectionCustomModuleRequest extends \Google\Service\SecurityCommandCenter\ValidateEventThreatDetectionCustomModuleRequest
     {
     }
 }

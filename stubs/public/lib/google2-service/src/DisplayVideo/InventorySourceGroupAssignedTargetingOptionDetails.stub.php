@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class InventorySourceGroupAssignedTargetingOptionDetails extends \Google\Model
-{
-    /**
-     * Required. ID of the inventory source group. Should refer to the
-     * inventory_source_group_id field of an InventorySourceGroup resource.
-     *
-     * @var string
-     */
-    public $inventorySourceGroupId;
-    /**
-     * Required. ID of the inventory source group. Should refer to the
-     * inventory_source_group_id field of an InventorySourceGroup resource.
-     *
-     * @param string $inventorySourceGroupId
-     */
-    public function setInventorySourceGroupId($inventorySourceGroupId)
+namespace Google\Service\DisplayVideo {
+    class InventorySourceGroupAssignedTargetingOptionDetails extends \Google\Model
     {
+        /**
+         * Required. ID of the inventory source group. Should refer to the
+         * inventory_source_group_id field of an InventorySourceGroup resource.
+         *
+         * @var string
+         */
+        public $inventorySourceGroupId;
+        /**
+         * Required. ID of the inventory source group. Should refer to the
+         * inventory_source_group_id field of an InventorySourceGroup resource.
+         *
+         * @param string $inventorySourceGroupId
+         */
+        public function setInventorySourceGroupId($inventorySourceGroupId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInventorySourceGroupId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\InventorySourceGroupAssignedTargetingOptionDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInventorySourceGroupId()
+    class Google_Service_DisplayVideo_InventorySourceGroupAssignedTargetingOptionDetails extends \Google\Service\DisplayVideo\InventorySourceGroupAssignedTargetingOptionDetails
     {
     }
 }

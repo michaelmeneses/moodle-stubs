@@ -21,139 +21,148 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class Source extends \Google\Collection
-{
-    protected $collection_key = 'baseSpecs';
-    /**
-     * While splitting, sources may specify the produced bundles as differences
-     * against another source, in order to save backend-side memory and allow
-     * bigger jobs. For details, see SourceSplitRequest. To support this use case,
-     * the full set of parameters of the source is logically obtained by taking
-     * the latest explicitly specified value of each parameter in the order:
-     * base_specs (later items win), spec (overrides anything in base_specs).
-     *
-     * @var array[]
-     */
-    public $baseSpecs;
-    /**
-     * The codec to use to decode data read from the source.
-     *
-     * @var array[]
-     */
-    public $codec;
-    /**
-     * Setting this value to true hints to the framework that the source doesn't
-     * need splitting, and using SourceSplitRequest on it would yield
-     * SOURCE_SPLIT_OUTCOME_USE_CURRENT. E.g. a file splitter may set this to true
-     * when splitting a single file into a set of byte ranges of appropriate size,
-     * and set this to false when splitting a filepattern into individual files.
-     * However, for efficiency, a file splitter may decide to produce file
-     * subranges directly from the filepattern to avoid a splitting round-trip.
-     * See SourceSplitRequest for an overview of the splitting process. This field
-     * is meaningful only in the Source objects populated by the user (e.g. when
-     * filling in a DerivedSource). Source objects supplied by the framework to
-     * the user don't have this field populated.
-     *
-     * @var bool
-     */
-    public $doesNotNeedSplitting;
-    protected $metadataType = SourceMetadata::class;
-    protected $metadataDataType = '';
-    /**
-     * The source to read from, plus its parameters.
-     *
-     * @var array[]
-     */
-    public $spec;
-    /**
-     * While splitting, sources may specify the produced bundles as differences
-     * against another source, in order to save backend-side memory and allow
-     * bigger jobs. For details, see SourceSplitRequest. To support this use case,
-     * the full set of parameters of the source is logically obtained by taking
-     * the latest explicitly specified value of each parameter in the order:
-     * base_specs (later items win), spec (overrides anything in base_specs).
-     *
-     * @param array[] $baseSpecs
-     */
-    public function setBaseSpecs($baseSpecs)
+namespace Google\Service\Dataflow {
+    class Source extends \Google\Collection
     {
+        protected $collection_key = 'baseSpecs';
+        /**
+         * While splitting, sources may specify the produced bundles as differences
+         * against another source, in order to save backend-side memory and allow
+         * bigger jobs. For details, see SourceSplitRequest. To support this use case,
+         * the full set of parameters of the source is logically obtained by taking
+         * the latest explicitly specified value of each parameter in the order:
+         * base_specs (later items win), spec (overrides anything in base_specs).
+         *
+         * @var array[]
+         */
+        public $baseSpecs;
+        /**
+         * The codec to use to decode data read from the source.
+         *
+         * @var array[]
+         */
+        public $codec;
+        /**
+         * Setting this value to true hints to the framework that the source doesn't
+         * need splitting, and using SourceSplitRequest on it would yield
+         * SOURCE_SPLIT_OUTCOME_USE_CURRENT. E.g. a file splitter may set this to true
+         * when splitting a single file into a set of byte ranges of appropriate size,
+         * and set this to false when splitting a filepattern into individual files.
+         * However, for efficiency, a file splitter may decide to produce file
+         * subranges directly from the filepattern to avoid a splitting round-trip.
+         * See SourceSplitRequest for an overview of the splitting process. This field
+         * is meaningful only in the Source objects populated by the user (e.g. when
+         * filling in a DerivedSource). Source objects supplied by the framework to
+         * the user don't have this field populated.
+         *
+         * @var bool
+         */
+        public $doesNotNeedSplitting;
+        protected $metadataType = SourceMetadata::class;
+        protected $metadataDataType = '';
+        /**
+         * The source to read from, plus its parameters.
+         *
+         * @var array[]
+         */
+        public $spec;
+        /**
+         * While splitting, sources may specify the produced bundles as differences
+         * against another source, in order to save backend-side memory and allow
+         * bigger jobs. For details, see SourceSplitRequest. To support this use case,
+         * the full set of parameters of the source is logically obtained by taking
+         * the latest explicitly specified value of each parameter in the order:
+         * base_specs (later items win), spec (overrides anything in base_specs).
+         *
+         * @param array[] $baseSpecs
+         */
+        public function setBaseSpecs($baseSpecs)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getBaseSpecs()
+        {
+        }
+        /**
+         * The codec to use to decode data read from the source.
+         *
+         * @param array[] $codec
+         */
+        public function setCodec($codec)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getCodec()
+        {
+        }
+        /**
+         * Setting this value to true hints to the framework that the source doesn't
+         * need splitting, and using SourceSplitRequest on it would yield
+         * SOURCE_SPLIT_OUTCOME_USE_CURRENT. E.g. a file splitter may set this to true
+         * when splitting a single file into a set of byte ranges of appropriate size,
+         * and set this to false when splitting a filepattern into individual files.
+         * However, for efficiency, a file splitter may decide to produce file
+         * subranges directly from the filepattern to avoid a splitting round-trip.
+         * See SourceSplitRequest for an overview of the splitting process. This field
+         * is meaningful only in the Source objects populated by the user (e.g. when
+         * filling in a DerivedSource). Source objects supplied by the framework to
+         * the user don't have this field populated.
+         *
+         * @param bool $doesNotNeedSplitting
+         */
+        public function setDoesNotNeedSplitting($doesNotNeedSplitting)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDoesNotNeedSplitting()
+        {
+        }
+        /**
+         * Optionally, metadata for this source can be supplied right away, avoiding a
+         * SourceGetMetadataOperation roundtrip (see SourceOperationRequest). This
+         * field is meaningful only in the Source objects populated by the user (e.g.
+         * when filling in a DerivedSource). Source objects supplied by the framework
+         * to the user don't have this field populated.
+         *
+         * @param SourceMetadata $metadata
+         */
+        public function setMetadata(SourceMetadata $metadata)
+        {
+        }
+        /**
+         * @return SourceMetadata
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * The source to read from, plus its parameters.
+         *
+         * @param array[] $spec
+         */
+        public function setSpec($spec)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\Dataflow\Source registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBaseSpecs()
-    {
-    }
-    /**
-     * The codec to use to decode data read from the source.
-     *
-     * @param array[] $codec
-     */
-    public function setCodec($codec)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getCodec()
-    {
-    }
-    /**
-     * Setting this value to true hints to the framework that the source doesn't
-     * need splitting, and using SourceSplitRequest on it would yield
-     * SOURCE_SPLIT_OUTCOME_USE_CURRENT. E.g. a file splitter may set this to true
-     * when splitting a single file into a set of byte ranges of appropriate size,
-     * and set this to false when splitting a filepattern into individual files.
-     * However, for efficiency, a file splitter may decide to produce file
-     * subranges directly from the filepattern to avoid a splitting round-trip.
-     * See SourceSplitRequest for an overview of the splitting process. This field
-     * is meaningful only in the Source objects populated by the user (e.g. when
-     * filling in a DerivedSource). Source objects supplied by the framework to
-     * the user don't have this field populated.
-     *
-     * @param bool $doesNotNeedSplitting
-     */
-    public function setDoesNotNeedSplitting($doesNotNeedSplitting)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDoesNotNeedSplitting()
-    {
-    }
-    /**
-     * Optionally, metadata for this source can be supplied right away, avoiding a
-     * SourceGetMetadataOperation roundtrip (see SourceOperationRequest). This
-     * field is meaningful only in the Source objects populated by the user (e.g.
-     * when filling in a DerivedSource). Source objects supplied by the framework
-     * to the user don't have this field populated.
-     *
-     * @param SourceMetadata $metadata
-     */
-    public function setMetadata(SourceMetadata $metadata)
-    {
-    }
-    /**
-     * @return SourceMetadata
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * The source to read from, plus its parameters.
-     *
-     * @param array[] $spec
-     */
-    public function setSpec($spec)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getSpec()
+    class Google_Service_Dataflow_Source extends \Google\Service\Dataflow\Source
     {
     }
 }

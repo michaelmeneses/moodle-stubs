@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteGroupRetentionSettingsUpdatedMetaData extends \Google\Model
-{
-    protected $initiatorType = AppsDynamiteUserId::class;
-    protected $initiatorDataType = '';
-    protected $retentionSettingsType = AppsDynamiteSharedRetentionSettings::class;
-    protected $retentionSettingsDataType = '';
-    /**
-     * @param AppsDynamiteUserId
-     */
-    public function setInitiator(AppsDynamiteUserId $initiator)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteGroupRetentionSettingsUpdatedMetaData extends \Google\Model
     {
+        protected $initiatorType = AppsDynamiteUserId::class;
+        protected $initiatorDataType = '';
+        protected $retentionSettingsType = AppsDynamiteSharedRetentionSettings::class;
+        protected $retentionSettingsDataType = '';
+        /**
+         * @param AppsDynamiteUserId
+         */
+        public function setInitiator(AppsDynamiteUserId $initiator)
+        {
+        }
+        /**
+         * @return AppsDynamiteUserId
+         */
+        public function getInitiator()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedRetentionSettings
+         */
+        public function setRetentionSettings(AppsDynamiteSharedRetentionSettings $retentionSettings)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedRetentionSettings
+         */
+        public function getRetentionSettings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppsDynamiteUserId
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteGroupRetentionSettingsUpdatedMetaData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInitiator()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedRetentionSettings
-     */
-    public function setRetentionSettings(AppsDynamiteSharedRetentionSettings $retentionSettings)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedRetentionSettings
-     */
-    public function getRetentionSettings()
+    class Google_Service_CloudSearch_AppsDynamiteGroupRetentionSettingsUpdatedMetaData extends \Google\Service\CloudSearch\AppsDynamiteGroupRetentionSettingsUpdatedMetaData
     {
     }
 }

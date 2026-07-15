@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class LabelValueRow extends \Google\Collection
-{
-    protected $collection_key = 'columns';
-    protected $columnsType = LabelValue::class;
-    protected $columnsDataType = 'array';
-    /**
-     * A list of labels and values. These will be displayed in a singular column,
-     * one after the other, not in multiple columns, despite the field name.
-     *
-     * @param LabelValue[] $columns
-     */
-    public function setColumns($columns)
+namespace Google\Service\Walletobjects {
+    class LabelValueRow extends \Google\Collection
     {
+        protected $collection_key = 'columns';
+        protected $columnsType = LabelValue::class;
+        protected $columnsDataType = 'array';
+        /**
+         * A list of labels and values. These will be displayed in a singular column,
+         * one after the other, not in multiple columns, despite the field name.
+         *
+         * @param LabelValue[] $columns
+         */
+        public function setColumns($columns)
+        {
+        }
+        /**
+         * @return LabelValue[]
+         */
+        public function getColumns()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LabelValue[]
+     * Runtime class alias of \Google\Service\Walletobjects\LabelValueRow registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumns()
+    class Google_Service_Walletobjects_LabelValueRow extends \Google\Service\Walletobjects\LabelValueRow
     {
     }
 }

@@ -23,6 +23,14 @@
  */
 namespace Google\Http;
 
+use Google\Auth\HttpHandler\HttpHandlerFactory;
+use Google\Service\Exception as GoogleServiceException;
+use Google\Task\Runner;
+use GuzzleHttp\ClientInterface;
+use GuzzleHttp\Exception\RequestException;
+use GuzzleHttp\Psr7\Response;
+use Psr\Http\Message\RequestInterface;
+use Psr\Http\Message\ResponseInterface;
 /**
  * This class implements the RESTful transport of apiServiceRequest()'s
  */

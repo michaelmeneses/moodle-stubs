@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ArtifactRegistry;
-
-class UploadFileRequest extends \Google\Model
-{
-    /**
-     * Optional. The ID of the file. If left empty will default to sha256 digest
-     * of the content uploaded.
-     *
-     * @var string
-     */
-    public $fileId;
-    /**
-     * Optional. The ID of the file. If left empty will default to sha256 digest
-     * of the content uploaded.
-     *
-     * @param string $fileId
-     */
-    public function setFileId($fileId)
+namespace Google\Service\ArtifactRegistry {
+    class UploadFileRequest extends \Google\Model
     {
+        /**
+         * Optional. The ID of the file. If left empty will default to sha256 digest
+         * of the content uploaded.
+         *
+         * @var string
+         */
+        public $fileId;
+        /**
+         * Optional. The ID of the file. If left empty will default to sha256 digest
+         * of the content uploaded.
+         *
+         * @param string $fileId
+         */
+        public function setFileId($fileId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFileId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ArtifactRegistry\UploadFileRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFileId()
+    class Google_Service_ArtifactRegistry_UploadFileRequest extends \Google\Service\ArtifactRegistry\UploadFileRequest
     {
     }
 }

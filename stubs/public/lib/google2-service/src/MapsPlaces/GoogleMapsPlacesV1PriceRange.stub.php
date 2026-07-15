@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MapsPlaces;
-
-class GoogleMapsPlacesV1PriceRange extends \Google\Model
-{
-    protected $endPriceType = GoogleTypeMoney::class;
-    protected $endPriceDataType = '';
-    protected $startPriceType = GoogleTypeMoney::class;
-    protected $startPriceDataType = '';
-    /**
-     * The high end of the price range (exclusive). Price should be lower than
-     * this amount.
-     *
-     * @param GoogleTypeMoney $endPrice
-     */
-    public function setEndPrice(GoogleTypeMoney $endPrice)
+namespace Google\Service\MapsPlaces {
+    class GoogleMapsPlacesV1PriceRange extends \Google\Model
     {
+        protected $endPriceType = GoogleTypeMoney::class;
+        protected $endPriceDataType = '';
+        protected $startPriceType = GoogleTypeMoney::class;
+        protected $startPriceDataType = '';
+        /**
+         * The high end of the price range (exclusive). Price should be lower than
+         * this amount.
+         *
+         * @param GoogleTypeMoney $endPrice
+         */
+        public function setEndPrice(GoogleTypeMoney $endPrice)
+        {
+        }
+        /**
+         * @return GoogleTypeMoney
+         */
+        public function getEndPrice()
+        {
+        }
+        /**
+         * The low end of the price range (inclusive). Price should be at or above
+         * this amount.
+         *
+         * @param GoogleTypeMoney $startPrice
+         */
+        public function setStartPrice(GoogleTypeMoney $startPrice)
+        {
+        }
+        /**
+         * @return GoogleTypeMoney
+         */
+        public function getStartPrice()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleTypeMoney
+     * Runtime class alias of \Google\Service\MapsPlaces\GoogleMapsPlacesV1PriceRange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndPrice()
-    {
-    }
-    /**
-     * The low end of the price range (inclusive). Price should be at or above
-     * this amount.
-     *
-     * @param GoogleTypeMoney $startPrice
-     */
-    public function setStartPrice(GoogleTypeMoney $startPrice)
-    {
-    }
-    /**
-     * @return GoogleTypeMoney
-     */
-    public function getStartPrice()
+    class Google_Service_MapsPlaces_GoogleMapsPlacesV1PriceRange extends \Google\Service\MapsPlaces\GoogleMapsPlacesV1PriceRange
     {
     }
 }

@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class AnalyzeEntitySentimentResponse extends \Google\Collection
-{
-    protected $collection_key = 'entities';
-    protected $entitiesType = Entity::class;
-    protected $entitiesDataType = 'array';
-    /**
-     * @var string
-     */
-    public $language;
-    /**
-     * @param Entity[]
-     */
-    public function setEntities($entities)
+namespace Google\Service\CloudNaturalLanguage {
+    class AnalyzeEntitySentimentResponse extends \Google\Collection
     {
+        protected $collection_key = 'entities';
+        protected $entitiesType = Entity::class;
+        protected $entitiesDataType = 'array';
+        /**
+         * @var string
+         */
+        public $language;
+        /**
+         * @param Entity[]
+         */
+        public function setEntities($entities)
+        {
+        }
+        /**
+         * @return Entity[]
+         */
+        public function getEntities()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLanguage($language)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLanguage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Entity[]
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\AnalyzeEntitySentimentResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntities()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLanguage($language)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLanguage()
+    class Google_Service_CloudNaturalLanguage_AnalyzeEntitySentimentResponse extends \Google\Service\CloudNaturalLanguage\AnalyzeEntitySentimentResponse
     {
     }
 }

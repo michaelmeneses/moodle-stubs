@@ -21,105 +21,114 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaTrainCustomModelResponse extends \Google\Collection
-{
-    protected $collection_key = 'errorSamples';
-    protected $errorConfigType = GoogleCloudDiscoveryengineV1betaImportErrorConfig::class;
-    protected $errorConfigDataType = '';
-    protected $errorSamplesType = GoogleRpcStatus::class;
-    protected $errorSamplesDataType = 'array';
-    /**
-     * The metrics of the trained model.
-     *
-     * @var []
-     */
-    public $metrics;
-    /**
-     * Fully qualified name of the CustomTuningModel.
-     *
-     * @var string
-     */
-    public $modelName;
-    /**
-     * The trained model status. Possible values are: * **bad-data**: The training
-     * data quality is bad. * **no-improvement**: Tuning didn't improve
-     * performance. Won't deploy. * **in-progress**: Model training job creation
-     * is in progress. * **training**: Model is actively training. *
-     * **evaluating**: The model is evaluating trained metrics. * **indexing**:
-     * The model trained metrics are indexing. * **ready**: The model is ready for
-     * serving.
-     *
-     * @var string
-     */
-    public $modelStatus;
-    /**
-     * Echoes the destination for the complete errors in the request if set.
-     *
-     * @param GoogleCloudDiscoveryengineV1betaImportErrorConfig $errorConfig
-     */
-    public function setErrorConfig(GoogleCloudDiscoveryengineV1betaImportErrorConfig $errorConfig)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaTrainCustomModelResponse extends \Google\Collection
     {
+        protected $collection_key = 'errorSamples';
+        protected $errorConfigType = GoogleCloudDiscoveryengineV1betaImportErrorConfig::class;
+        protected $errorConfigDataType = '';
+        protected $errorSamplesType = GoogleRpcStatus::class;
+        protected $errorSamplesDataType = 'array';
+        /**
+         * The metrics of the trained model.
+         *
+         * @var []
+         */
+        public $metrics;
+        /**
+         * Fully qualified name of the CustomTuningModel.
+         *
+         * @var string
+         */
+        public $modelName;
+        /**
+         * The trained model status. Possible values are: * **bad-data**: The training
+         * data quality is bad. * **no-improvement**: Tuning didn't improve
+         * performance. Won't deploy. * **in-progress**: Model training job creation
+         * is in progress. * **training**: Model is actively training. *
+         * **evaluating**: The model is evaluating trained metrics. * **indexing**:
+         * The model trained metrics are indexing. * **ready**: The model is ready for
+         * serving.
+         *
+         * @var string
+         */
+        public $modelStatus;
+        /**
+         * Echoes the destination for the complete errors in the request if set.
+         *
+         * @param GoogleCloudDiscoveryengineV1betaImportErrorConfig $errorConfig
+         */
+        public function setErrorConfig(GoogleCloudDiscoveryengineV1betaImportErrorConfig $errorConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaImportErrorConfig
+         */
+        public function getErrorConfig()
+        {
+        }
+        /**
+         * A sample of errors encountered while processing the data.
+         *
+         * @param GoogleRpcStatus[] $errorSamples
+         */
+        public function setErrorSamples($errorSamples)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus[]
+         */
+        public function getErrorSamples()
+        {
+        }
+        public function setMetrics($metrics)
+        {
+        }
+        public function getMetrics()
+        {
+        }
+        /**
+         * Fully qualified name of the CustomTuningModel.
+         *
+         * @param string $modelName
+         */
+        public function setModelName($modelName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getModelName()
+        {
+        }
+        /**
+         * The trained model status. Possible values are: * **bad-data**: The training
+         * data quality is bad. * **no-improvement**: Tuning didn't improve
+         * performance. Won't deploy. * **in-progress**: Model training job creation
+         * is in progress. * **training**: Model is actively training. *
+         * **evaluating**: The model is evaluating trained metrics. * **indexing**:
+         * The model trained metrics are indexing. * **ready**: The model is ready for
+         * serving.
+         *
+         * @param string $modelStatus
+         */
+        public function setModelStatus($modelStatus)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getModelStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1betaImportErrorConfig
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaTrainCustomModelResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrorConfig()
-    {
-    }
-    /**
-     * A sample of errors encountered while processing the data.
-     *
-     * @param GoogleRpcStatus[] $errorSamples
-     */
-    public function setErrorSamples($errorSamples)
-    {
-    }
-    /**
-     * @return GoogleRpcStatus[]
-     */
-    public function getErrorSamples()
-    {
-    }
-    public function setMetrics($metrics)
-    {
-    }
-    public function getMetrics()
-    {
-    }
-    /**
-     * Fully qualified name of the CustomTuningModel.
-     *
-     * @param string $modelName
-     */
-    public function setModelName($modelName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getModelName()
-    {
-    }
-    /**
-     * The trained model status. Possible values are: * **bad-data**: The training
-     * data quality is bad. * **no-improvement**: Tuning didn't improve
-     * performance. Won't deploy. * **in-progress**: Model training job creation
-     * is in progress. * **training**: Model is actively training. *
-     * **evaluating**: The model is evaluating trained metrics. * **indexing**:
-     * The model trained metrics are indexing. * **ready**: The model is ready for
-     * serving.
-     *
-     * @param string $modelStatus
-     */
-    public function setModelStatus($modelStatus)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getModelStatus()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaTrainCustomModelResponse extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaTrainCustomModelResponse
     {
     }
 }

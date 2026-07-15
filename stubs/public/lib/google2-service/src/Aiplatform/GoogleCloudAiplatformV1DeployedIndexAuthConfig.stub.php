@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1DeployedIndexAuthConfig extends \Google\Model
-{
-    protected $authProviderType = GoogleCloudAiplatformV1DeployedIndexAuthConfigAuthProvider::class;
-    protected $authProviderDataType = '';
-    /**
-     * Defines the authentication provider that the DeployedIndex uses.
-     *
-     * @param GoogleCloudAiplatformV1DeployedIndexAuthConfigAuthProvider $authProvider
-     */
-    public function setAuthProvider(GoogleCloudAiplatformV1DeployedIndexAuthConfigAuthProvider $authProvider)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1DeployedIndexAuthConfig extends \Google\Model
     {
+        protected $authProviderType = GoogleCloudAiplatformV1DeployedIndexAuthConfigAuthProvider::class;
+        protected $authProviderDataType = '';
+        /**
+         * Defines the authentication provider that the DeployedIndex uses.
+         *
+         * @param GoogleCloudAiplatformV1DeployedIndexAuthConfigAuthProvider $authProvider
+         */
+        public function setAuthProvider(GoogleCloudAiplatformV1DeployedIndexAuthConfigAuthProvider $authProvider)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1DeployedIndexAuthConfigAuthProvider
+         */
+        public function getAuthProvider()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1DeployedIndexAuthConfigAuthProvider
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1DeployedIndexAuthConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuthProvider()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1DeployedIndexAuthConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1DeployedIndexAuthConfig
     {
     }
 }

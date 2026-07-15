@@ -21,38 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books\Resource;
-
-/**
- * The "mybooks" collection of methods.
- * Typical usage is:
- *  <code>
- *   $booksService = new Google\Service\Books(...);
- *   $mybooks = $booksService->volumes_mybooks;
- *  </code>
- */
-class VolumesMybooks extends \Google\Service\Resource
-{
+namespace Google\Service\Books\Resource {
+    use Google\Service\Books\Volumes as VolumesModel;
     /**
-     * Return a list of books in My Library. (mybooks.listVolumesMybooks)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string acquireMethod How the book was acquired
-     * @opt_param string country ISO-3166-1 code to override the IP-based location.
-     * @opt_param string locale ISO-639-1 language and ISO-3166-1 country code.
-     * Ex:'en_US'. Used for generating recommendations.
-     * @opt_param string maxResults Maximum number of results to return.
-     * @opt_param string processingState The processing state of the user uploaded
-     * volumes to be returned. Applicable only if the UPLOADED is specified in the
-     * acquireMethod.
-     * @opt_param string source String to identify the originator of this request.
-     * @opt_param string startIndex Index of the first result to return (starts at
-     * 0)
-     * @return VolumesModel
-     * @throws \Google\Service\Exception
+     * The "mybooks" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $booksService = new Google\Service\Books(...);
+     *   $mybooks = $booksService->volumes_mybooks;
+     *  </code>
      */
-    public function listVolumesMybooks($optParams = [])
+    class VolumesMybooks extends \Google\Service\Resource
+    {
+        /**
+         * Return a list of books in My Library. (mybooks.listVolumesMybooks)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string acquireMethod How the book was acquired
+         * @opt_param string country ISO-3166-1 code to override the IP-based location.
+         * @opt_param string locale ISO-639-1 language and ISO-3166-1 country code.
+         * Ex:'en_US'. Used for generating recommendations.
+         * @opt_param string maxResults Maximum number of results to return.
+         * @opt_param string processingState The processing state of the user uploaded
+         * volumes to be returned. Applicable only if the UPLOADED is specified in the
+         * acquireMethod.
+         * @opt_param string source String to identify the originator of this request.
+         * @opt_param string startIndex Index of the first result to return (starts at
+         * 0)
+         * @return VolumesModel
+         * @throws \Google\Service\Exception
+         */
+        public function listVolumesMybooks($optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Books\Resource\VolumesMybooks registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Books_Resource_VolumesMybooks extends \Google\Service\Books\Resource\VolumesMybooks
     {
     }
 }

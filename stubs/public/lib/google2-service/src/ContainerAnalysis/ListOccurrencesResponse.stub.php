@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class ListOccurrencesResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    /**
-     * The next pagination token in the list response. It should be used as
-     * `page_token` for the following request. An empty value means no more
-     * results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $occurrencesType = Occurrence::class;
-    protected $occurrencesDataType = 'array';
-    /**
-     * Unordered list. Unreachable regions. Populated for requests from the global
-     * region when `return_partial_success` is set. Format:
-     * `projects/[PROJECT_ID]/locations/[LOCATION]`
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * The next pagination token in the list response. It should be used as
-     * `page_token` for the following request. An empty value means no more
-     * results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\ContainerAnalysis {
+    class ListOccurrencesResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        /**
+         * The next pagination token in the list response. It should be used as
+         * `page_token` for the following request. An empty value means no more
+         * results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $occurrencesType = Occurrence::class;
+        protected $occurrencesDataType = 'array';
+        /**
+         * Unordered list. Unreachable regions. Populated for requests from the global
+         * region when `return_partial_success` is set. Format:
+         * `projects/[PROJECT_ID]/locations/[LOCATION]`
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * The next pagination token in the list response. It should be used as
+         * `page_token` for the following request. An empty value means no more
+         * results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The occurrences requested.
+         *
+         * @param Occurrence[] $occurrences
+         */
+        public function setOccurrences($occurrences)
+        {
+        }
+        /**
+         * @return Occurrence[]
+         */
+        public function getOccurrences()
+        {
+        }
+        /**
+         * Unordered list. Unreachable regions. Populated for requests from the global
+         * region when `return_partial_success` is set. Format:
+         * `projects/[PROJECT_ID]/locations/[LOCATION]`
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ContainerAnalysis\ListOccurrencesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The occurrences requested.
-     *
-     * @param Occurrence[] $occurrences
-     */
-    public function setOccurrences($occurrences)
-    {
-    }
-    /**
-     * @return Occurrence[]
-     */
-    public function getOccurrences()
-    {
-    }
-    /**
-     * Unordered list. Unreachable regions. Populated for requests from the global
-     * region when `return_partial_success` is set. Format:
-     * `projects/[PROJECT_ID]/locations/[LOCATION]`
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_ContainerAnalysis_ListOccurrencesResponse extends \Google\Service\ContainerAnalysis\ListOccurrencesResponse
     {
     }
 }

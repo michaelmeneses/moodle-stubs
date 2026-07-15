@@ -21,20 +21,29 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Baremetalsolution;
-
-class QosPolicy extends \Google\Model
-{
-    /**
-     * The bandwidth permitted by the QOS policy, in gbps.
-     *
-     * @var 
-     */
-    public $bandwidthGbps;
-    public function setBandwidthGbps($bandwidthGbps)
+namespace Google\Service\Baremetalsolution {
+    class QosPolicy extends \Google\Model
     {
+        /**
+         * The bandwidth permitted by the QOS policy, in gbps.
+         *
+         * @var 
+         */
+        public $bandwidthGbps;
+        public function setBandwidthGbps($bandwidthGbps)
+        {
+        }
+        public function getBandwidthGbps()
+        {
+        }
     }
-    public function getBandwidthGbps()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Baremetalsolution\QosPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Baremetalsolution_QosPolicy extends \Google\Service\Baremetalsolution\QosPolicy
     {
     }
 }

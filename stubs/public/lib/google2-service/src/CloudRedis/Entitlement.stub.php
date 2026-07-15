@@ -21,83 +21,92 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRedis;
-
-class Entitlement extends \Google\Model
-{
-    public const ENTITLEMENT_STATE_ENTITLEMENT_STATE_UNSPECIFIED = 'ENTITLEMENT_STATE_UNSPECIFIED';
-    /**
-     * User is entitled to a feature/benefit, but whether it has been successfully
-     * provisioned is decided by provisioning state.
-     */
-    public const ENTITLEMENT_STATE_ENTITLED = 'ENTITLED';
-    /**
-     * User is entitled to a feature/benefit, but it was requested to be revoked.
-     * Whether the revoke has been successful is decided by provisioning state.
-     */
-    public const ENTITLEMENT_STATE_REVOKED = 'REVOKED';
-    /**
-     * The entitlement type is unspecified.
-     */
-    public const TYPE_ENTITLEMENT_TYPE_UNSPECIFIED = 'ENTITLEMENT_TYPE_UNSPECIFIED';
-    /**
-     * The root entitlement representing Gemini package ownership.This will no
-     * longer be supported in the future.
-     *
-     * @deprecated
-     */
-    public const TYPE_GEMINI = 'GEMINI';
-    /**
-     * The entitlement representing Native Tier, This will be the default
-     * Entitlement going forward with GCA Enablement.
-     */
-    public const TYPE_NATIVE = 'NATIVE';
-    /**
-     * The entitlement representing GCA-Standard Tier.
-     */
-    public const TYPE_GCA_STANDARD = 'GCA_STANDARD';
-    /**
-     * The current state of user's accessibility to a feature/benefit.
-     *
-     * @var string
-     */
-    public $entitlementState;
-    /**
-     * An enum that represents the type of this entitlement.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The current state of user's accessibility to a feature/benefit.
-     *
-     * Accepted values: ENTITLEMENT_STATE_UNSPECIFIED, ENTITLED, REVOKED
-     *
-     * @param self::ENTITLEMENT_STATE_* $entitlementState
-     */
-    public function setEntitlementState($entitlementState)
+namespace Google\Service\CloudRedis {
+    class Entitlement extends \Google\Model
     {
+        public const ENTITLEMENT_STATE_ENTITLEMENT_STATE_UNSPECIFIED = 'ENTITLEMENT_STATE_UNSPECIFIED';
+        /**
+         * User is entitled to a feature/benefit, but whether it has been successfully
+         * provisioned is decided by provisioning state.
+         */
+        public const ENTITLEMENT_STATE_ENTITLED = 'ENTITLED';
+        /**
+         * User is entitled to a feature/benefit, but it was requested to be revoked.
+         * Whether the revoke has been successful is decided by provisioning state.
+         */
+        public const ENTITLEMENT_STATE_REVOKED = 'REVOKED';
+        /**
+         * The entitlement type is unspecified.
+         */
+        public const TYPE_ENTITLEMENT_TYPE_UNSPECIFIED = 'ENTITLEMENT_TYPE_UNSPECIFIED';
+        /**
+         * The root entitlement representing Gemini package ownership.This will no
+         * longer be supported in the future.
+         *
+         * @deprecated
+         */
+        public const TYPE_GEMINI = 'GEMINI';
+        /**
+         * The entitlement representing Native Tier, This will be the default
+         * Entitlement going forward with GCA Enablement.
+         */
+        public const TYPE_NATIVE = 'NATIVE';
+        /**
+         * The entitlement representing GCA-Standard Tier.
+         */
+        public const TYPE_GCA_STANDARD = 'GCA_STANDARD';
+        /**
+         * The current state of user's accessibility to a feature/benefit.
+         *
+         * @var string
+         */
+        public $entitlementState;
+        /**
+         * An enum that represents the type of this entitlement.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The current state of user's accessibility to a feature/benefit.
+         *
+         * Accepted values: ENTITLEMENT_STATE_UNSPECIFIED, ENTITLED, REVOKED
+         *
+         * @param self::ENTITLEMENT_STATE_* $entitlementState
+         */
+        public function setEntitlementState($entitlementState)
+        {
+        }
+        /**
+         * @return self::ENTITLEMENT_STATE_*
+         */
+        public function getEntitlementState()
+        {
+        }
+        /**
+         * An enum that represents the type of this entitlement.
+         *
+         * Accepted values: ENTITLEMENT_TYPE_UNSPECIFIED, GEMINI, NATIVE, GCA_STANDARD
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::ENTITLEMENT_STATE_*
+     * Runtime class alias of \Google\Service\CloudRedis\Entitlement registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntitlementState()
-    {
-    }
-    /**
-     * An enum that represents the type of this entitlement.
-     *
-     * Accepted values: ENTITLEMENT_TYPE_UNSPECIFIED, GEMINI, NATIVE, GCA_STANDARD
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_CloudRedis_Entitlement extends \Google\Service\CloudRedis\Entitlement
     {
     }
 }

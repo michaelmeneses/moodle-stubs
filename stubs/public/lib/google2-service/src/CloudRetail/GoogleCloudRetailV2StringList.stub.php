@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2StringList extends \Google\Collection
-{
-    protected $collection_key = 'values';
-    /**
-     * String values.
-     *
-     * @var string[]
-     */
-    public $values;
-    /**
-     * String values.
-     *
-     * @param string[] $values
-     */
-    public function setValues($values)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2StringList extends \Google\Collection
     {
+        protected $collection_key = 'values';
+        /**
+         * String values.
+         *
+         * @var string[]
+         */
+        public $values;
+        /**
+         * String values.
+         *
+         * @param string[] $values
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2StringList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getValues()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2StringList extends \Google\Service\CloudRetail\GoogleCloudRetailV2StringList
     {
     }
 }

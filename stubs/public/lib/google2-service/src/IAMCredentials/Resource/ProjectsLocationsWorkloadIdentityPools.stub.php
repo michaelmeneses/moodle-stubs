@@ -21,28 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\IAMCredentials\Resource;
-
-/**
- * The "workloadIdentityPools" collection of methods.
- * Typical usage is:
- *  <code>
- *   $iamcredentialsService = new Google\Service\IAMCredentials(...);
- *   $workloadIdentityPools = $iamcredentialsService->projects_locations_workloadIdentityPools;
- *  </code>
- */
-class ProjectsLocationsWorkloadIdentityPools extends \Google\Service\Resource
-{
+namespace Google\Service\IAMCredentials\Resource {
+    use Google\Service\IAMCredentials\WorkloadIdentityPoolAllowedLocations;
     /**
-     * Returns the trust boundary info for a given workload identity pool.
-     * (workloadIdentityPools.getAllowedLocations)
-     *
-     * @param string $name Required. Resource name of workload identity pool.
-     * @param array $optParams Optional parameters.
-     * @return WorkloadIdentityPoolAllowedLocations
-     * @throws \Google\Service\Exception
+     * The "workloadIdentityPools" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $iamcredentialsService = new Google\Service\IAMCredentials(...);
+     *   $workloadIdentityPools = $iamcredentialsService->projects_locations_workloadIdentityPools;
+     *  </code>
      */
-    public function getAllowedLocations($name, $optParams = [])
+    class ProjectsLocationsWorkloadIdentityPools extends \Google\Service\Resource
+    {
+        /**
+         * Returns the trust boundary info for a given workload identity pool.
+         * (workloadIdentityPools.getAllowedLocations)
+         *
+         * @param string $name Required. Resource name of workload identity pool.
+         * @param array $optParams Optional parameters.
+         * @return WorkloadIdentityPoolAllowedLocations
+         * @throws \Google\Service\Exception
+         */
+        public function getAllowedLocations($name, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\IAMCredentials\Resource\ProjectsLocationsWorkloadIdentityPools registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_IAMCredentials_Resource_ProjectsLocationsWorkloadIdentityPools extends \Google\Service\IAMCredentials\Resource\ProjectsLocationsWorkloadIdentityPools
     {
     }
 }

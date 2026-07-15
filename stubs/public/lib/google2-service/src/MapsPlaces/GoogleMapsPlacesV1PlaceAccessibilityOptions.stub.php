@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MapsPlaces;
-
-class GoogleMapsPlacesV1PlaceAccessibilityOptions extends \Google\Model
-{
-    /**
-     * Places has wheelchair accessible entrance.
-     *
-     * @var bool
-     */
-    public $wheelchairAccessibleEntrance;
-    /**
-     * Place offers wheelchair accessible parking.
-     *
-     * @var bool
-     */
-    public $wheelchairAccessibleParking;
-    /**
-     * Place has wheelchair accessible restroom.
-     *
-     * @var bool
-     */
-    public $wheelchairAccessibleRestroom;
-    /**
-     * Place has wheelchair accessible seating.
-     *
-     * @var bool
-     */
-    public $wheelchairAccessibleSeating;
-    /**
-     * Places has wheelchair accessible entrance.
-     *
-     * @param bool $wheelchairAccessibleEntrance
-     */
-    public function setWheelchairAccessibleEntrance($wheelchairAccessibleEntrance)
+namespace Google\Service\MapsPlaces {
+    class GoogleMapsPlacesV1PlaceAccessibilityOptions extends \Google\Model
     {
+        /**
+         * Places has wheelchair accessible entrance.
+         *
+         * @var bool
+         */
+        public $wheelchairAccessibleEntrance;
+        /**
+         * Place offers wheelchair accessible parking.
+         *
+         * @var bool
+         */
+        public $wheelchairAccessibleParking;
+        /**
+         * Place has wheelchair accessible restroom.
+         *
+         * @var bool
+         */
+        public $wheelchairAccessibleRestroom;
+        /**
+         * Place has wheelchair accessible seating.
+         *
+         * @var bool
+         */
+        public $wheelchairAccessibleSeating;
+        /**
+         * Places has wheelchair accessible entrance.
+         *
+         * @param bool $wheelchairAccessibleEntrance
+         */
+        public function setWheelchairAccessibleEntrance($wheelchairAccessibleEntrance)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getWheelchairAccessibleEntrance()
+        {
+        }
+        /**
+         * Place offers wheelchair accessible parking.
+         *
+         * @param bool $wheelchairAccessibleParking
+         */
+        public function setWheelchairAccessibleParking($wheelchairAccessibleParking)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getWheelchairAccessibleParking()
+        {
+        }
+        /**
+         * Place has wheelchair accessible restroom.
+         *
+         * @param bool $wheelchairAccessibleRestroom
+         */
+        public function setWheelchairAccessibleRestroom($wheelchairAccessibleRestroom)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getWheelchairAccessibleRestroom()
+        {
+        }
+        /**
+         * Place has wheelchair accessible seating.
+         *
+         * @param bool $wheelchairAccessibleSeating
+         */
+        public function setWheelchairAccessibleSeating($wheelchairAccessibleSeating)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getWheelchairAccessibleSeating()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\MapsPlaces\GoogleMapsPlacesV1PlaceAccessibilityOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getWheelchairAccessibleEntrance()
-    {
-    }
-    /**
-     * Place offers wheelchair accessible parking.
-     *
-     * @param bool $wheelchairAccessibleParking
-     */
-    public function setWheelchairAccessibleParking($wheelchairAccessibleParking)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getWheelchairAccessibleParking()
-    {
-    }
-    /**
-     * Place has wheelchair accessible restroom.
-     *
-     * @param bool $wheelchairAccessibleRestroom
-     */
-    public function setWheelchairAccessibleRestroom($wheelchairAccessibleRestroom)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getWheelchairAccessibleRestroom()
-    {
-    }
-    /**
-     * Place has wheelchair accessible seating.
-     *
-     * @param bool $wheelchairAccessibleSeating
-     */
-    public function setWheelchairAccessibleSeating($wheelchairAccessibleSeating)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getWheelchairAccessibleSeating()
+    class Google_Service_MapsPlaces_GoogleMapsPlacesV1PlaceAccessibilityOptions extends \Google\Service\MapsPlaces\GoogleMapsPlacesV1PlaceAccessibilityOptions
     {
     }
 }

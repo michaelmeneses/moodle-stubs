@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class LabelRemoved extends \Google\Collection
-{
-    protected $collection_key = 'messageKeys';
-    /**
-     * @var string
-     */
-    public $labelId;
-    /**
-     * @var string
-     */
-    public $labelName;
-    protected $messageKeysType = MultiKey::class;
-    protected $messageKeysDataType = 'array';
-    /**
-     * @var string
-     */
-    public $syncId;
-    /**
-     * @param string
-     */
-    public function setLabelId($labelId)
+namespace Google\Service\CloudSearch {
+    class LabelRemoved extends \Google\Collection
     {
+        protected $collection_key = 'messageKeys';
+        /**
+         * @var string
+         */
+        public $labelId;
+        /**
+         * @var string
+         */
+        public $labelName;
+        protected $messageKeysType = MultiKey::class;
+        protected $messageKeysDataType = 'array';
+        /**
+         * @var string
+         */
+        public $syncId;
+        /**
+         * @param string
+         */
+        public function setLabelId($labelId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLabelId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLabelName($labelName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLabelName()
+        {
+        }
+        /**
+         * @param MultiKey[]
+         */
+        public function setMessageKeys($messageKeys)
+        {
+        }
+        /**
+         * @return MultiKey[]
+         */
+        public function getMessageKeys()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSyncId($syncId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSyncId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\LabelRemoved registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLabelId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLabelName($labelName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLabelName()
-    {
-    }
-    /**
-     * @param MultiKey[]
-     */
-    public function setMessageKeys($messageKeys)
-    {
-    }
-    /**
-     * @return MultiKey[]
-     */
-    public function getMessageKeys()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSyncId($syncId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSyncId()
+    class Google_Service_CloudSearch_LabelRemoved extends \Google\Service\CloudSearch\LabelRemoved
     {
     }
 }

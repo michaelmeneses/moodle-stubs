@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class Domains2 extends \Google\Collection
-{
-    protected $collection_key = 'domains';
-    protected $domainsType = Domains::class;
-    protected $domainsDataType = 'array';
-    /**
-     * ETag of the resource.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * Kind of resource this is.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * A list of domain objects.
-     *
-     * @param Domains[] $domains
-     */
-    public function setDomains($domains)
+namespace Google\Service\Directory {
+    class Domains2 extends \Google\Collection
     {
+        protected $collection_key = 'domains';
+        protected $domainsType = Domains::class;
+        protected $domainsDataType = 'array';
+        /**
+         * ETag of the resource.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * Kind of resource this is.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * A list of domain objects.
+         *
+         * @param Domains[] $domains
+         */
+        public function setDomains($domains)
+        {
+        }
+        /**
+         * @return Domains[]
+         */
+        public function getDomains()
+        {
+        }
+        /**
+         * ETag of the resource.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * Kind of resource this is.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Domains[]
+     * Runtime class alias of \Google\Service\Directory\Domains2 registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDomains()
-    {
-    }
-    /**
-     * ETag of the resource.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * Kind of resource this is.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_Directory_Domains2 extends \Google\Service\Directory\Domains2
     {
     }
 }

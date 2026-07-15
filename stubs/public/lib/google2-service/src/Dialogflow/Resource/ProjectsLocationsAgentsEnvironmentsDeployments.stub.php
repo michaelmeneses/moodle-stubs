@@ -21,46 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow\Resource;
-
-/**
- * The "deployments" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dialogflowService = new Google\Service\Dialogflow(...);
- *   $deployments = $dialogflowService->projects_locations_agents_environments_deployments;
- *  </code>
- */
-class ProjectsLocationsAgentsEnvironmentsDeployments extends \Google\Service\Resource
-{
+namespace Google\Service\Dialogflow\Resource {
+    use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3Deployment;
+    use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ListDeploymentsResponse;
     /**
-     * Retrieves the specified Deployment. (deployments.get)
-     *
-     * @param string $name Required. The name of the Deployment. Format:
-     * `projects//locations//agents//environments//deployments/`.
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudDialogflowCxV3Deployment
-     * @throws \Google\Service\Exception
+     * The "deployments" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dialogflowService = new Google\Service\Dialogflow(...);
+     *   $deployments = $dialogflowService->projects_locations_agents_environments_deployments;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class ProjectsLocationsAgentsEnvironmentsDeployments extends \Google\Service\Resource
     {
+        /**
+         * Retrieves the specified Deployment. (deployments.get)
+         *
+         * @param string $name Required. The name of the Deployment. Format:
+         * `projects//locations//agents//environments//deployments/`.
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudDialogflowCxV3Deployment
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Returns the list of all deployments in the specified Environment.
+         * (deployments.listProjectsLocationsAgentsEnvironmentsDeployments)
+         *
+         * @param string $parent Required. The Environment to list all environments for.
+         * Format: `projects//locations//agents//environments/`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The maximum number of items to return in a single
+         * page. By default 20 and at most 100.
+         * @opt_param string pageToken The next_page_token value returned from a
+         * previous list request.
+         * @return GoogleCloudDialogflowCxV3ListDeploymentsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsAgentsEnvironmentsDeployments($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Returns the list of all deployments in the specified Environment.
-     * (deployments.listProjectsLocationsAgentsEnvironmentsDeployments)
-     *
-     * @param string $parent Required. The Environment to list all environments for.
-     * Format: `projects//locations//agents//environments/`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The maximum number of items to return in a single
-     * page. By default 20 and at most 100.
-     * @opt_param string pageToken The next_page_token value returned from a
-     * previous list request.
-     * @return GoogleCloudDialogflowCxV3ListDeploymentsResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Dialogflow\Resource\ProjectsLocationsAgentsEnvironmentsDeployments registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listProjectsLocationsAgentsEnvironmentsDeployments($parent, $optParams = [])
+    class Google_Service_Dialogflow_Resource_ProjectsLocationsAgentsEnvironmentsDeployments extends \Google\Service\Dialogflow\Resource\ProjectsLocationsAgentsEnvironmentsDeployments
     {
     }
 }

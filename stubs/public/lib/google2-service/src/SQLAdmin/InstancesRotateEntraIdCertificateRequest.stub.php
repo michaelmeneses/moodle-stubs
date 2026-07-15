@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class InstancesRotateEntraIdCertificateRequest extends \Google\Model
-{
-    protected $rotateEntraIdCertificateContextType = RotateEntraIdCertificateContext::class;
-    protected $rotateEntraIdCertificateContextDataType = '';
-    /**
-     * Optional. Contains details about the rotate server certificate operation.
-     *
-     * @param RotateEntraIdCertificateContext $rotateEntraIdCertificateContext
-     */
-    public function setRotateEntraIdCertificateContext(RotateEntraIdCertificateContext $rotateEntraIdCertificateContext)
+namespace Google\Service\SQLAdmin {
+    class InstancesRotateEntraIdCertificateRequest extends \Google\Model
     {
+        protected $rotateEntraIdCertificateContextType = RotateEntraIdCertificateContext::class;
+        protected $rotateEntraIdCertificateContextDataType = '';
+        /**
+         * Optional. Contains details about the rotate server certificate operation.
+         *
+         * @param RotateEntraIdCertificateContext $rotateEntraIdCertificateContext
+         */
+        public function setRotateEntraIdCertificateContext(RotateEntraIdCertificateContext $rotateEntraIdCertificateContext)
+        {
+        }
+        /**
+         * @return RotateEntraIdCertificateContext
+         */
+        public function getRotateEntraIdCertificateContext()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RotateEntraIdCertificateContext
+     * Runtime class alias of \Google\Service\SQLAdmin\InstancesRotateEntraIdCertificateRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRotateEntraIdCertificateContext()
+    class Google_Service_SQLAdmin_InstancesRotateEntraIdCertificateRequest extends \Google\Service\SQLAdmin\InstancesRotateEntraIdCertificateRequest
     {
     }
 }

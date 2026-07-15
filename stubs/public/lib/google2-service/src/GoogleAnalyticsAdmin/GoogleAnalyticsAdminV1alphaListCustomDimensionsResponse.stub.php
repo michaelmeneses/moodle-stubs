@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaListCustomDimensionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'customDimensions';
-    protected $customDimensionsType = GoogleAnalyticsAdminV1alphaCustomDimension::class;
-    protected $customDimensionsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * @param GoogleAnalyticsAdminV1alphaCustomDimension[]
-     */
-    public function setCustomDimensions($customDimensions)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaListCustomDimensionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'customDimensions';
+        protected $customDimensionsType = GoogleAnalyticsAdminV1alphaCustomDimension::class;
+        protected $customDimensionsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * @param GoogleAnalyticsAdminV1alphaCustomDimension[]
+         */
+        public function setCustomDimensions($customDimensions)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaCustomDimension[]
+         */
+        public function getCustomDimensions()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAnalyticsAdminV1alphaCustomDimension[]
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaListCustomDimensionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomDimensions()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaListCustomDimensionsResponse extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaListCustomDimensionsResponse
     {
     }
 }

@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRedis;
-
-class PscServiceAttachment extends \Google\Model
-{
-    /**
-     * Cluster endpoint Type is not set
-     */
-    public const CONNECTION_TYPE_CONNECTION_TYPE_UNSPECIFIED = 'CONNECTION_TYPE_UNSPECIFIED';
-    /**
-     * Cluster endpoint that will be used as for cluster topology discovery.
-     */
-    public const CONNECTION_TYPE_CONNECTION_TYPE_DISCOVERY = 'CONNECTION_TYPE_DISCOVERY';
-    /**
-     * Cluster endpoint that will be used as primary endpoint to access primary.
-     */
-    public const CONNECTION_TYPE_CONNECTION_TYPE_PRIMARY = 'CONNECTION_TYPE_PRIMARY';
-    /**
-     * Cluster endpoint that will be used as reader endpoint to access replicas.
-     */
-    public const CONNECTION_TYPE_CONNECTION_TYPE_READER = 'CONNECTION_TYPE_READER';
-    /**
-     * Output only. Type of a PSC connection targeting this service attachment.
-     *
-     * @var string
-     */
-    public $connectionType;
-    /**
-     * Output only. Service attachment URI which your self-created PscConnection
-     * should use as target
-     *
-     * @var string
-     */
-    public $serviceAttachment;
-    /**
-     * Output only. Type of a PSC connection targeting this service attachment.
-     *
-     * Accepted values: CONNECTION_TYPE_UNSPECIFIED, CONNECTION_TYPE_DISCOVERY,
-     * CONNECTION_TYPE_PRIMARY, CONNECTION_TYPE_READER
-     *
-     * @param self::CONNECTION_TYPE_* $connectionType
-     */
-    public function setConnectionType($connectionType)
+namespace Google\Service\CloudRedis {
+    class PscServiceAttachment extends \Google\Model
     {
+        /**
+         * Cluster endpoint Type is not set
+         */
+        public const CONNECTION_TYPE_CONNECTION_TYPE_UNSPECIFIED = 'CONNECTION_TYPE_UNSPECIFIED';
+        /**
+         * Cluster endpoint that will be used as for cluster topology discovery.
+         */
+        public const CONNECTION_TYPE_CONNECTION_TYPE_DISCOVERY = 'CONNECTION_TYPE_DISCOVERY';
+        /**
+         * Cluster endpoint that will be used as primary endpoint to access primary.
+         */
+        public const CONNECTION_TYPE_CONNECTION_TYPE_PRIMARY = 'CONNECTION_TYPE_PRIMARY';
+        /**
+         * Cluster endpoint that will be used as reader endpoint to access replicas.
+         */
+        public const CONNECTION_TYPE_CONNECTION_TYPE_READER = 'CONNECTION_TYPE_READER';
+        /**
+         * Output only. Type of a PSC connection targeting this service attachment.
+         *
+         * @var string
+         */
+        public $connectionType;
+        /**
+         * Output only. Service attachment URI which your self-created PscConnection
+         * should use as target
+         *
+         * @var string
+         */
+        public $serviceAttachment;
+        /**
+         * Output only. Type of a PSC connection targeting this service attachment.
+         *
+         * Accepted values: CONNECTION_TYPE_UNSPECIFIED, CONNECTION_TYPE_DISCOVERY,
+         * CONNECTION_TYPE_PRIMARY, CONNECTION_TYPE_READER
+         *
+         * @param self::CONNECTION_TYPE_* $connectionType
+         */
+        public function setConnectionType($connectionType)
+        {
+        }
+        /**
+         * @return self::CONNECTION_TYPE_*
+         */
+        public function getConnectionType()
+        {
+        }
+        /**
+         * Output only. Service attachment URI which your self-created PscConnection
+         * should use as target
+         *
+         * @param string $serviceAttachment
+         */
+        public function setServiceAttachment($serviceAttachment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceAttachment()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::CONNECTION_TYPE_*
+     * Runtime class alias of \Google\Service\CloudRedis\PscServiceAttachment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConnectionType()
-    {
-    }
-    /**
-     * Output only. Service attachment URI which your self-created PscConnection
-     * should use as target
-     *
-     * @param string $serviceAttachment
-     */
-    public function setServiceAttachment($serviceAttachment)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceAttachment()
+    class Google_Service_CloudRedis_PscServiceAttachment extends \Google\Service\CloudRedis\PscServiceAttachment
     {
     }
 }

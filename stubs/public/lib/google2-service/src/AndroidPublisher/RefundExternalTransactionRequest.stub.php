@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class RefundExternalTransactionRequest extends \Google\Model
-{
-    protected $fullRefundType = FullRefund::class;
-    protected $fullRefundDataType = '';
-    protected $partialRefundType = PartialRefund::class;
-    protected $partialRefundDataType = '';
-    /**
-     * Required. The time that the transaction was refunded.
-     *
-     * @var string
-     */
-    public $refundTime;
-    /**
-     * A full-amount refund.
-     *
-     * @param FullRefund $fullRefund
-     */
-    public function setFullRefund(FullRefund $fullRefund)
+namespace Google\Service\AndroidPublisher {
+    class RefundExternalTransactionRequest extends \Google\Model
     {
+        protected $fullRefundType = FullRefund::class;
+        protected $fullRefundDataType = '';
+        protected $partialRefundType = PartialRefund::class;
+        protected $partialRefundDataType = '';
+        /**
+         * Required. The time that the transaction was refunded.
+         *
+         * @var string
+         */
+        public $refundTime;
+        /**
+         * A full-amount refund.
+         *
+         * @param FullRefund $fullRefund
+         */
+        public function setFullRefund(FullRefund $fullRefund)
+        {
+        }
+        /**
+         * @return FullRefund
+         */
+        public function getFullRefund()
+        {
+        }
+        /**
+         * A partial refund.
+         *
+         * @param PartialRefund $partialRefund
+         */
+        public function setPartialRefund(PartialRefund $partialRefund)
+        {
+        }
+        /**
+         * @return PartialRefund
+         */
+        public function getPartialRefund()
+        {
+        }
+        /**
+         * Required. The time that the transaction was refunded.
+         *
+         * @param string $refundTime
+         */
+        public function setRefundTime($refundTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRefundTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FullRefund
+     * Runtime class alias of \Google\Service\AndroidPublisher\RefundExternalTransactionRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFullRefund()
-    {
-    }
-    /**
-     * A partial refund.
-     *
-     * @param PartialRefund $partialRefund
-     */
-    public function setPartialRefund(PartialRefund $partialRefund)
-    {
-    }
-    /**
-     * @return PartialRefund
-     */
-    public function getPartialRefund()
-    {
-    }
-    /**
-     * Required. The time that the transaction was refunded.
-     *
-     * @param string $refundTime
-     */
-    public function setRefundTime($refundTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRefundTime()
+    class Google_Service_AndroidPublisher_RefundExternalTransactionRequest extends \Google\Service\AndroidPublisher\RefundExternalTransactionRequest
     {
     }
 }

@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AccessContextManager;
-
-class IngressPolicy extends \Google\Model
-{
-    protected $ingressFromType = IngressFrom::class;
-    protected $ingressFromDataType = '';
-    protected $ingressToType = IngressTo::class;
-    protected $ingressToDataType = '';
-    /**
-     * Optional. Human-readable title for the ingress rule. The title must be
-     * unique within the perimeter and can not exceed 100 characters. Within the
-     * access policy, the combined length of all rule titles must not exceed
-     * 240,000 characters.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * Defines the conditions on the source of a request causing this
-     * IngressPolicy to apply.
-     *
-     * @param IngressFrom $ingressFrom
-     */
-    public function setIngressFrom(IngressFrom $ingressFrom)
+namespace Google\Service\AccessContextManager {
+    class IngressPolicy extends \Google\Model
     {
+        protected $ingressFromType = IngressFrom::class;
+        protected $ingressFromDataType = '';
+        protected $ingressToType = IngressTo::class;
+        protected $ingressToDataType = '';
+        /**
+         * Optional. Human-readable title for the ingress rule. The title must be
+         * unique within the perimeter and can not exceed 100 characters. Within the
+         * access policy, the combined length of all rule titles must not exceed
+         * 240,000 characters.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * Defines the conditions on the source of a request causing this
+         * IngressPolicy to apply.
+         *
+         * @param IngressFrom $ingressFrom
+         */
+        public function setIngressFrom(IngressFrom $ingressFrom)
+        {
+        }
+        /**
+         * @return IngressFrom
+         */
+        public function getIngressFrom()
+        {
+        }
+        /**
+         * Defines the conditions on the ApiOperation and request destination that
+         * cause this IngressPolicy to apply.
+         *
+         * @param IngressTo $ingressTo
+         */
+        public function setIngressTo(IngressTo $ingressTo)
+        {
+        }
+        /**
+         * @return IngressTo
+         */
+        public function getIngressTo()
+        {
+        }
+        /**
+         * Optional. Human-readable title for the ingress rule. The title must be
+         * unique within the perimeter and can not exceed 100 characters. Within the
+         * access policy, the combined length of all rule titles must not exceed
+         * 240,000 characters.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return IngressFrom
+     * Runtime class alias of \Google\Service\AccessContextManager\IngressPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIngressFrom()
-    {
-    }
-    /**
-     * Defines the conditions on the ApiOperation and request destination that
-     * cause this IngressPolicy to apply.
-     *
-     * @param IngressTo $ingressTo
-     */
-    public function setIngressTo(IngressTo $ingressTo)
-    {
-    }
-    /**
-     * @return IngressTo
-     */
-    public function getIngressTo()
-    {
-    }
-    /**
-     * Optional. Human-readable title for the ingress rule. The title must be
-     * unique within the perimeter and can not exceed 100 characters. Within the
-     * access policy, the combined length of all rule titles must not exceed
-     * 240,000 characters.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_AccessContextManager_IngressPolicy extends \Google\Service\AccessContextManager\IngressPolicy
     {
     }
 }

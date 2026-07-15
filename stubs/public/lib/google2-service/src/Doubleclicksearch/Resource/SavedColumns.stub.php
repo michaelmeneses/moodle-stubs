@@ -21,29 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Doubleclicksearch\Resource;
-
-/**
- * The "savedColumns" collection of methods.
- * Typical usage is:
- *  <code>
- *   $doubleclicksearchService = new Google\Service\Doubleclicksearch(...);
- *   $savedColumns = $doubleclicksearchService->savedColumns;
- *  </code>
- */
-class SavedColumns extends \Google\Service\Resource
-{
+namespace Google\Service\Doubleclicksearch\Resource {
+    use Google\Service\Doubleclicksearch\SavedColumnList;
     /**
-     * Retrieve the list of saved columns for a specified advertiser.
-     * (savedColumns.listSavedColumns)
-     *
-     * @param string $agencyId DS ID of the agency.
-     * @param string $advertiserId DS ID of the advertiser.
-     * @param array $optParams Optional parameters.
-     * @return SavedColumnList
-     * @throws \Google\Service\Exception
+     * The "savedColumns" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $doubleclicksearchService = new Google\Service\Doubleclicksearch(...);
+     *   $savedColumns = $doubleclicksearchService->savedColumns;
+     *  </code>
      */
-    public function listSavedColumns($agencyId, $advertiserId, $optParams = [])
+    class SavedColumns extends \Google\Service\Resource
+    {
+        /**
+         * Retrieve the list of saved columns for a specified advertiser.
+         * (savedColumns.listSavedColumns)
+         *
+         * @param string $agencyId DS ID of the agency.
+         * @param string $advertiserId DS ID of the advertiser.
+         * @param array $optParams Optional parameters.
+         * @return SavedColumnList
+         * @throws \Google\Service\Exception
+         */
+        public function listSavedColumns($agencyId, $advertiserId, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Doubleclicksearch\Resource\SavedColumns registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Doubleclicksearch_Resource_SavedColumns extends \Google\Service\Doubleclicksearch\Resource\SavedColumns
     {
     }
 }

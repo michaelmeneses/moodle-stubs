@@ -29,6 +29,9 @@
  */
 namespace mod_forum\local\exporters;
 
+use mod_forum\local\entities\discussion_summary as discussion_summary_entity;
+use core\external\exporter;
+use renderer_base;
 /**
  * Discussion summary exporter class.
  *

@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PlayIntegrity;
-
-class PcTokenPayloadExternal extends \Google\Model
-{
-    protected $accountDetailsType = PcAccountDetails::class;
-    protected $accountDetailsDataType = '';
-    protected $deviceIntegrityType = PcDeviceIntegrity::class;
-    protected $deviceIntegrityDataType = '';
-    protected $requestDetailsType = PcRequestDetails::class;
-    protected $requestDetailsDataType = '';
-    protected $testingDetailsType = PcTestingDetails::class;
-    protected $testingDetailsDataType = '';
-    /**
-     * Details about the account information such as the licensing status.
-     *
-     * @param PcAccountDetails $accountDetails
-     */
-    public function setAccountDetails(PcAccountDetails $accountDetails)
+namespace Google\Service\PlayIntegrity {
+    class PcTokenPayloadExternal extends \Google\Model
     {
+        protected $accountDetailsType = PcAccountDetails::class;
+        protected $accountDetailsDataType = '';
+        protected $deviceIntegrityType = PcDeviceIntegrity::class;
+        protected $deviceIntegrityDataType = '';
+        protected $requestDetailsType = PcRequestDetails::class;
+        protected $requestDetailsDataType = '';
+        protected $testingDetailsType = PcTestingDetails::class;
+        protected $testingDetailsDataType = '';
+        /**
+         * Details about the account information such as the licensing status.
+         *
+         * @param PcAccountDetails $accountDetails
+         */
+        public function setAccountDetails(PcAccountDetails $accountDetails)
+        {
+        }
+        /**
+         * @return PcAccountDetails
+         */
+        public function getAccountDetails()
+        {
+        }
+        /**
+         * Required. Details about the device integrity.
+         *
+         * @param PcDeviceIntegrity $deviceIntegrity
+         */
+        public function setDeviceIntegrity(PcDeviceIntegrity $deviceIntegrity)
+        {
+        }
+        /**
+         * @return PcDeviceIntegrity
+         */
+        public function getDeviceIntegrity()
+        {
+        }
+        /**
+         * Required. Details about the integrity request.
+         *
+         * @param PcRequestDetails $requestDetails
+         */
+        public function setRequestDetails(PcRequestDetails $requestDetails)
+        {
+        }
+        /**
+         * @return PcRequestDetails
+         */
+        public function getRequestDetails()
+        {
+        }
+        /**
+         * Indicates that this payload is generated for testing purposes and contains
+         * any additional data that is linked with testing status.
+         *
+         * @param PcTestingDetails $testingDetails
+         */
+        public function setTestingDetails(PcTestingDetails $testingDetails)
+        {
+        }
+        /**
+         * @return PcTestingDetails
+         */
+        public function getTestingDetails()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PcAccountDetails
+     * Runtime class alias of \Google\Service\PlayIntegrity\PcTokenPayloadExternal registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountDetails()
-    {
-    }
-    /**
-     * Required. Details about the device integrity.
-     *
-     * @param PcDeviceIntegrity $deviceIntegrity
-     */
-    public function setDeviceIntegrity(PcDeviceIntegrity $deviceIntegrity)
-    {
-    }
-    /**
-     * @return PcDeviceIntegrity
-     */
-    public function getDeviceIntegrity()
-    {
-    }
-    /**
-     * Required. Details about the integrity request.
-     *
-     * @param PcRequestDetails $requestDetails
-     */
-    public function setRequestDetails(PcRequestDetails $requestDetails)
-    {
-    }
-    /**
-     * @return PcRequestDetails
-     */
-    public function getRequestDetails()
-    {
-    }
-    /**
-     * Indicates that this payload is generated for testing purposes and contains
-     * any additional data that is linked with testing status.
-     *
-     * @param PcTestingDetails $testingDetails
-     */
-    public function setTestingDetails(PcTestingDetails $testingDetails)
-    {
-    }
-    /**
-     * @return PcTestingDetails
-     */
-    public function getTestingDetails()
+    class Google_Service_PlayIntegrity_PcTokenPayloadExternal extends \Google\Service\PlayIntegrity\PcTokenPayloadExternal
     {
     }
 }

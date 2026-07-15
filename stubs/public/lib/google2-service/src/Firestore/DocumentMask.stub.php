@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class DocumentMask extends \Google\Collection
-{
-    protected $collection_key = 'fieldPaths';
-    /**
-     * The list of field paths in the mask. See Document.fields for a field path
-     * syntax reference.
-     *
-     * @var string[]
-     */
-    public $fieldPaths;
-    /**
-     * The list of field paths in the mask. See Document.fields for a field path
-     * syntax reference.
-     *
-     * @param string[] $fieldPaths
-     */
-    public function setFieldPaths($fieldPaths)
+namespace Google\Service\Firestore {
+    class DocumentMask extends \Google\Collection
     {
+        protected $collection_key = 'fieldPaths';
+        /**
+         * The list of field paths in the mask. See Document.fields for a field path
+         * syntax reference.
+         *
+         * @var string[]
+         */
+        public $fieldPaths;
+        /**
+         * The list of field paths in the mask. See Document.fields for a field path
+         * syntax reference.
+         *
+         * @param string[] $fieldPaths
+         */
+        public function setFieldPaths($fieldPaths)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getFieldPaths()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Firestore\DocumentMask registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFieldPaths()
+    class Google_Service_Firestore_DocumentMask extends \Google\Service\Firestore\DocumentMask
     {
     }
 }

@@ -21,286 +21,295 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class SecurityPolicyRule extends \Google\Model
-{
-    /**
-     * The Action to perform when the rule is matched. The following are the valid
-     * actions:        - allow: allow access to target.    - deny(STATUS): deny
-     * access to target, returns the    HTTP response code specified. Valid values
-     * for `STATUS`    are 403, 404, and 502.    - rate_based_ban: limit client
-     * traffic to the configured    threshold and ban the client if the traffic
-     * exceeds the threshold.    Configure parameters for this action in
-     * RateLimitOptions. Requires    rate_limit_options to be set.    - redirect:
-     * redirect to a different target. This can    either be an internal reCAPTCHA
-     * redirect, or an external URL-based    redirect via a 302 response.
-     * Parameters for this action can be configured    via redirectOptions. This
-     * action is only supported in Global Security    Policies of type
-     * CLOUD_ARMOR.    - throttle: limit    client traffic to the configured
-     * threshold. Configure parameters for this    action in rateLimitOptions.
-     * Requires rate_limit_options to be set for    this.    - fairshare (preview
-     * only): when traffic reaches the    threshold limit, requests from the
-     * clients matching this rule begin to be    rate-limited using the Fair Share
-     * algorithm. This action is only allowed    in security policies of type
-     * `CLOUD_ARMOR_INTERNAL_SERVICE`.
-     *
-     * @var string
-     */
-    public $action;
-    /**
-     * An optional description of this resource. Provide this property when you
-     * create the resource.
-     *
-     * @var string
-     */
-    public $description;
-    protected $headerActionType = SecurityPolicyRuleHttpHeaderAction::class;
-    protected $headerActionDataType = '';
-    /**
-     * Output only. [Output only] Type of the resource.
-     * Alwayscompute#securityPolicyRule for security policy rules
-     *
-     * @var string
-     */
-    public $kind;
-    protected $matchType = SecurityPolicyRuleMatcher::class;
-    protected $matchDataType = '';
-    protected $networkMatchType = SecurityPolicyRuleNetworkMatcher::class;
-    protected $networkMatchDataType = '';
-    protected $preconfiguredWafConfigType = SecurityPolicyRulePreconfiguredWafConfig::class;
-    protected $preconfiguredWafConfigDataType = '';
-    /**
-     * If set to true, the specified action is not enforced.
-     *
-     * @var bool
-     */
-    public $preview;
-    /**
-     * An integer indicating the priority of a rule in the list. The priority must
-     * be a positive value between 0 and 2147483647. Rules are evaluated from
-     * highest to lowest priority where 0 is the highest priority and 2147483647
-     * is the lowest priority.
-     *
-     * @var int
-     */
-    public $priority;
-    protected $rateLimitOptionsType = SecurityPolicyRuleRateLimitOptions::class;
-    protected $rateLimitOptionsDataType = '';
-    protected $redirectOptionsType = SecurityPolicyRuleRedirectOptions::class;
-    protected $redirectOptionsDataType = '';
-    /**
-     * The Action to perform when the rule is matched. The following are the valid
-     * actions:        - allow: allow access to target.    - deny(STATUS): deny
-     * access to target, returns the    HTTP response code specified. Valid values
-     * for `STATUS`    are 403, 404, and 502.    - rate_based_ban: limit client
-     * traffic to the configured    threshold and ban the client if the traffic
-     * exceeds the threshold.    Configure parameters for this action in
-     * RateLimitOptions. Requires    rate_limit_options to be set.    - redirect:
-     * redirect to a different target. This can    either be an internal reCAPTCHA
-     * redirect, or an external URL-based    redirect via a 302 response.
-     * Parameters for this action can be configured    via redirectOptions. This
-     * action is only supported in Global Security    Policies of type
-     * CLOUD_ARMOR.    - throttle: limit    client traffic to the configured
-     * threshold. Configure parameters for this    action in rateLimitOptions.
-     * Requires rate_limit_options to be set for    this.    - fairshare (preview
-     * only): when traffic reaches the    threshold limit, requests from the
-     * clients matching this rule begin to be    rate-limited using the Fair Share
-     * algorithm. This action is only allowed    in security policies of type
-     * `CLOUD_ARMOR_INTERNAL_SERVICE`.
-     *
-     * @param string $action
-     */
-    public function setAction($action)
+namespace Google\Service\Compute {
+    class SecurityPolicyRule extends \Google\Model
     {
+        /**
+         * The Action to perform when the rule is matched. The following are the valid
+         * actions:        - allow: allow access to target.    - deny(STATUS): deny
+         * access to target, returns the    HTTP response code specified. Valid values
+         * for `STATUS`    are 403, 404, and 502.    - rate_based_ban: limit client
+         * traffic to the configured    threshold and ban the client if the traffic
+         * exceeds the threshold.    Configure parameters for this action in
+         * RateLimitOptions. Requires    rate_limit_options to be set.    - redirect:
+         * redirect to a different target. This can    either be an internal reCAPTCHA
+         * redirect, or an external URL-based    redirect via a 302 response.
+         * Parameters for this action can be configured    via redirectOptions. This
+         * action is only supported in Global Security    Policies of type
+         * CLOUD_ARMOR.    - throttle: limit    client traffic to the configured
+         * threshold. Configure parameters for this    action in rateLimitOptions.
+         * Requires rate_limit_options to be set for    this.    - fairshare (preview
+         * only): when traffic reaches the    threshold limit, requests from the
+         * clients matching this rule begin to be    rate-limited using the Fair Share
+         * algorithm. This action is only allowed    in security policies of type
+         * `CLOUD_ARMOR_INTERNAL_SERVICE`.
+         *
+         * @var string
+         */
+        public $action;
+        /**
+         * An optional description of this resource. Provide this property when you
+         * create the resource.
+         *
+         * @var string
+         */
+        public $description;
+        protected $headerActionType = SecurityPolicyRuleHttpHeaderAction::class;
+        protected $headerActionDataType = '';
+        /**
+         * Output only. [Output only] Type of the resource.
+         * Alwayscompute#securityPolicyRule for security policy rules
+         *
+         * @var string
+         */
+        public $kind;
+        protected $matchType = SecurityPolicyRuleMatcher::class;
+        protected $matchDataType = '';
+        protected $networkMatchType = SecurityPolicyRuleNetworkMatcher::class;
+        protected $networkMatchDataType = '';
+        protected $preconfiguredWafConfigType = SecurityPolicyRulePreconfiguredWafConfig::class;
+        protected $preconfiguredWafConfigDataType = '';
+        /**
+         * If set to true, the specified action is not enforced.
+         *
+         * @var bool
+         */
+        public $preview;
+        /**
+         * An integer indicating the priority of a rule in the list. The priority must
+         * be a positive value between 0 and 2147483647. Rules are evaluated from
+         * highest to lowest priority where 0 is the highest priority and 2147483647
+         * is the lowest priority.
+         *
+         * @var int
+         */
+        public $priority;
+        protected $rateLimitOptionsType = SecurityPolicyRuleRateLimitOptions::class;
+        protected $rateLimitOptionsDataType = '';
+        protected $redirectOptionsType = SecurityPolicyRuleRedirectOptions::class;
+        protected $redirectOptionsDataType = '';
+        /**
+         * The Action to perform when the rule is matched. The following are the valid
+         * actions:        - allow: allow access to target.    - deny(STATUS): deny
+         * access to target, returns the    HTTP response code specified. Valid values
+         * for `STATUS`    are 403, 404, and 502.    - rate_based_ban: limit client
+         * traffic to the configured    threshold and ban the client if the traffic
+         * exceeds the threshold.    Configure parameters for this action in
+         * RateLimitOptions. Requires    rate_limit_options to be set.    - redirect:
+         * redirect to a different target. This can    either be an internal reCAPTCHA
+         * redirect, or an external URL-based    redirect via a 302 response.
+         * Parameters for this action can be configured    via redirectOptions. This
+         * action is only supported in Global Security    Policies of type
+         * CLOUD_ARMOR.    - throttle: limit    client traffic to the configured
+         * threshold. Configure parameters for this    action in rateLimitOptions.
+         * Requires rate_limit_options to be set for    this.    - fairshare (preview
+         * only): when traffic reaches the    threshold limit, requests from the
+         * clients matching this rule begin to be    rate-limited using the Fair Share
+         * algorithm. This action is only allowed    in security policies of type
+         * `CLOUD_ARMOR_INTERNAL_SERVICE`.
+         *
+         * @param string $action
+         */
+        public function setAction($action)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAction()
+        {
+        }
+        /**
+         * An optional description of this resource. Provide this property when you
+         * create the resource.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Optional, additional actions that are performed on headers. This field is
+         * only supported in Global Security Policies of type CLOUD_ARMOR.
+         *
+         * @param SecurityPolicyRuleHttpHeaderAction $headerAction
+         */
+        public function setHeaderAction(SecurityPolicyRuleHttpHeaderAction $headerAction)
+        {
+        }
+        /**
+         * @return SecurityPolicyRuleHttpHeaderAction
+         */
+        public function getHeaderAction()
+        {
+        }
+        /**
+         * Output only. [Output only] Type of the resource.
+         * Alwayscompute#securityPolicyRule for security policy rules
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * A match condition that incoming traffic is evaluated against. If it
+         * evaluates to true, the corresponding 'action' is enforced.
+         *
+         * @param SecurityPolicyRuleMatcher $match
+         */
+        public function setMatch(SecurityPolicyRuleMatcher $match)
+        {
+        }
+        /**
+         * @return SecurityPolicyRuleMatcher
+         */
+        public function getMatch()
+        {
+        }
+        /**
+         * A match condition that incoming packets are evaluated against for
+         * CLOUD_ARMOR_NETWORK security policies. If it matches, the corresponding
+         * 'action' is enforced.
+         *
+         * The match criteria for a rule consists of built-in match fields (like
+         * 'srcIpRanges') and potentially multiple user-defined match fields
+         * ('userDefinedFields').
+         *
+         * Field values may be extracted directly from the packet or derived from it
+         * (e.g. 'srcRegionCodes'). Some fields may not be present in every packet
+         * (e.g. 'srcPorts'). A user-defined field is only present if the base header
+         * is found in the packet and the entire field is in bounds.
+         *
+         * Each match field may specify which values can match it, listing one or more
+         * ranges, prefixes, or exact values that are considered a match for the
+         * field. A field value must be present in order to match a specified match
+         * field. If no match values are specified for a match field, then any field
+         * value is considered to match it, and it's not required to be present. For
+         * strings specifying '*' is also equivalent to match all.
+         *
+         * For a packet to match a rule, all specified match fields must match the
+         * corresponding field values derived from the packet.
+         *
+         * Example:
+         *
+         * networkMatch:   srcIpRanges:   - "192.0.2.0/24"   - "198.51.100.0/24"
+         * userDefinedFields:   - name: "ipv4_fragment_offset"     values:     -
+         * "1-0x1fff"
+         *
+         * The above match condition matches packets with a source IP in 192.0.2.0/24
+         * or 198.51.100.0/24 and a user-defined field named "ipv4_fragment_offset"
+         * with a value between 1 and 0x1fff inclusive.
+         *
+         * @param SecurityPolicyRuleNetworkMatcher $networkMatch
+         */
+        public function setNetworkMatch(SecurityPolicyRuleNetworkMatcher $networkMatch)
+        {
+        }
+        /**
+         * @return SecurityPolicyRuleNetworkMatcher
+         */
+        public function getNetworkMatch()
+        {
+        }
+        /**
+         * Preconfigured WAF configuration to be applied for the rule. If the rule
+         * does not evaluate preconfigured WAF rules, i.e., if
+         * evaluatePreconfiguredWaf() is not used, this field will have no effect.
+         *
+         * @param SecurityPolicyRulePreconfiguredWafConfig $preconfiguredWafConfig
+         */
+        public function setPreconfiguredWafConfig(SecurityPolicyRulePreconfiguredWafConfig $preconfiguredWafConfig)
+        {
+        }
+        /**
+         * @return SecurityPolicyRulePreconfiguredWafConfig
+         */
+        public function getPreconfiguredWafConfig()
+        {
+        }
+        /**
+         * If set to true, the specified action is not enforced.
+         *
+         * @param bool $preview
+         */
+        public function setPreview($preview)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPreview()
+        {
+        }
+        /**
+         * An integer indicating the priority of a rule in the list. The priority must
+         * be a positive value between 0 and 2147483647. Rules are evaluated from
+         * highest to lowest priority where 0 is the highest priority and 2147483647
+         * is the lowest priority.
+         *
+         * @param int $priority
+         */
+        public function setPriority($priority)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPriority()
+        {
+        }
+        /**
+         * Must be specified if the action is "rate_based_ban" or "throttle" or
+         * "fairshare". Cannot be specified for any other actions.
+         *
+         * @param SecurityPolicyRuleRateLimitOptions $rateLimitOptions
+         */
+        public function setRateLimitOptions(SecurityPolicyRuleRateLimitOptions $rateLimitOptions)
+        {
+        }
+        /**
+         * @return SecurityPolicyRuleRateLimitOptions
+         */
+        public function getRateLimitOptions()
+        {
+        }
+        /**
+         * Parameters defining the redirect action. Cannot be specified for any other
+         * actions. This field is only supported in Global Security Policies of type
+         * CLOUD_ARMOR.
+         *
+         * @param SecurityPolicyRuleRedirectOptions $redirectOptions
+         */
+        public function setRedirectOptions(SecurityPolicyRuleRedirectOptions $redirectOptions)
+        {
+        }
+        /**
+         * @return SecurityPolicyRuleRedirectOptions
+         */
+        public function getRedirectOptions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\SecurityPolicyRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAction()
-    {
-    }
-    /**
-     * An optional description of this resource. Provide this property when you
-     * create the resource.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Optional, additional actions that are performed on headers. This field is
-     * only supported in Global Security Policies of type CLOUD_ARMOR.
-     *
-     * @param SecurityPolicyRuleHttpHeaderAction $headerAction
-     */
-    public function setHeaderAction(SecurityPolicyRuleHttpHeaderAction $headerAction)
-    {
-    }
-    /**
-     * @return SecurityPolicyRuleHttpHeaderAction
-     */
-    public function getHeaderAction()
-    {
-    }
-    /**
-     * Output only. [Output only] Type of the resource.
-     * Alwayscompute#securityPolicyRule for security policy rules
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * A match condition that incoming traffic is evaluated against. If it
-     * evaluates to true, the corresponding 'action' is enforced.
-     *
-     * @param SecurityPolicyRuleMatcher $match
-     */
-    public function setMatch(SecurityPolicyRuleMatcher $match)
-    {
-    }
-    /**
-     * @return SecurityPolicyRuleMatcher
-     */
-    public function getMatch()
-    {
-    }
-    /**
-     * A match condition that incoming packets are evaluated against for
-     * CLOUD_ARMOR_NETWORK security policies. If it matches, the corresponding
-     * 'action' is enforced.
-     *
-     * The match criteria for a rule consists of built-in match fields (like
-     * 'srcIpRanges') and potentially multiple user-defined match fields
-     * ('userDefinedFields').
-     *
-     * Field values may be extracted directly from the packet or derived from it
-     * (e.g. 'srcRegionCodes'). Some fields may not be present in every packet
-     * (e.g. 'srcPorts'). A user-defined field is only present if the base header
-     * is found in the packet and the entire field is in bounds.
-     *
-     * Each match field may specify which values can match it, listing one or more
-     * ranges, prefixes, or exact values that are considered a match for the
-     * field. A field value must be present in order to match a specified match
-     * field. If no match values are specified for a match field, then any field
-     * value is considered to match it, and it's not required to be present. For
-     * strings specifying '*' is also equivalent to match all.
-     *
-     * For a packet to match a rule, all specified match fields must match the
-     * corresponding field values derived from the packet.
-     *
-     * Example:
-     *
-     * networkMatch:   srcIpRanges:   - "192.0.2.0/24"   - "198.51.100.0/24"
-     * userDefinedFields:   - name: "ipv4_fragment_offset"     values:     -
-     * "1-0x1fff"
-     *
-     * The above match condition matches packets with a source IP in 192.0.2.0/24
-     * or 198.51.100.0/24 and a user-defined field named "ipv4_fragment_offset"
-     * with a value between 1 and 0x1fff inclusive.
-     *
-     * @param SecurityPolicyRuleNetworkMatcher $networkMatch
-     */
-    public function setNetworkMatch(SecurityPolicyRuleNetworkMatcher $networkMatch)
-    {
-    }
-    /**
-     * @return SecurityPolicyRuleNetworkMatcher
-     */
-    public function getNetworkMatch()
-    {
-    }
-    /**
-     * Preconfigured WAF configuration to be applied for the rule. If the rule
-     * does not evaluate preconfigured WAF rules, i.e., if
-     * evaluatePreconfiguredWaf() is not used, this field will have no effect.
-     *
-     * @param SecurityPolicyRulePreconfiguredWafConfig $preconfiguredWafConfig
-     */
-    public function setPreconfiguredWafConfig(SecurityPolicyRulePreconfiguredWafConfig $preconfiguredWafConfig)
-    {
-    }
-    /**
-     * @return SecurityPolicyRulePreconfiguredWafConfig
-     */
-    public function getPreconfiguredWafConfig()
-    {
-    }
-    /**
-     * If set to true, the specified action is not enforced.
-     *
-     * @param bool $preview
-     */
-    public function setPreview($preview)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPreview()
-    {
-    }
-    /**
-     * An integer indicating the priority of a rule in the list. The priority must
-     * be a positive value between 0 and 2147483647. Rules are evaluated from
-     * highest to lowest priority where 0 is the highest priority and 2147483647
-     * is the lowest priority.
-     *
-     * @param int $priority
-     */
-    public function setPriority($priority)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPriority()
-    {
-    }
-    /**
-     * Must be specified if the action is "rate_based_ban" or "throttle" or
-     * "fairshare". Cannot be specified for any other actions.
-     *
-     * @param SecurityPolicyRuleRateLimitOptions $rateLimitOptions
-     */
-    public function setRateLimitOptions(SecurityPolicyRuleRateLimitOptions $rateLimitOptions)
-    {
-    }
-    /**
-     * @return SecurityPolicyRuleRateLimitOptions
-     */
-    public function getRateLimitOptions()
-    {
-    }
-    /**
-     * Parameters defining the redirect action. Cannot be specified for any other
-     * actions. This field is only supported in Global Security Policies of type
-     * CLOUD_ARMOR.
-     *
-     * @param SecurityPolicyRuleRedirectOptions $redirectOptions
-     */
-    public function setRedirectOptions(SecurityPolicyRuleRedirectOptions $redirectOptions)
-    {
-    }
-    /**
-     * @return SecurityPolicyRuleRedirectOptions
-     */
-    public function getRedirectOptions()
+    class Google_Service_Compute_SecurityPolicyRule extends \Google\Service\Compute\SecurityPolicyRule
     {
     }
 }

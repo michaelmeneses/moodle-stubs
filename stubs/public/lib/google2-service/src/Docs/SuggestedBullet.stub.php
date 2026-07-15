@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class SuggestedBullet extends \Google\Model
-{
-    protected $bulletType = Bullet::class;
-    protected $bulletDataType = '';
-    protected $bulletSuggestionStateType = BulletSuggestionState::class;
-    protected $bulletSuggestionStateDataType = '';
-    /**
-     * A Bullet that only includes the changes made in this suggestion. This can
-     * be used along with the bullet_suggestion_state to see which fields have
-     * changed and their new values.
-     *
-     * @param Bullet $bullet
-     */
-    public function setBullet(Bullet $bullet)
+namespace Google\Service\Docs {
+    class SuggestedBullet extends \Google\Model
     {
+        protected $bulletType = Bullet::class;
+        protected $bulletDataType = '';
+        protected $bulletSuggestionStateType = BulletSuggestionState::class;
+        protected $bulletSuggestionStateDataType = '';
+        /**
+         * A Bullet that only includes the changes made in this suggestion. This can
+         * be used along with the bullet_suggestion_state to see which fields have
+         * changed and their new values.
+         *
+         * @param Bullet $bullet
+         */
+        public function setBullet(Bullet $bullet)
+        {
+        }
+        /**
+         * @return Bullet
+         */
+        public function getBullet()
+        {
+        }
+        /**
+         * A mask that indicates which of the fields on the base Bullet have been
+         * changed in this suggestion.
+         *
+         * @param BulletSuggestionState $bulletSuggestionState
+         */
+        public function setBulletSuggestionState(BulletSuggestionState $bulletSuggestionState)
+        {
+        }
+        /**
+         * @return BulletSuggestionState
+         */
+        public function getBulletSuggestionState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Bullet
+     * Runtime class alias of \Google\Service\Docs\SuggestedBullet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBullet()
-    {
-    }
-    /**
-     * A mask that indicates which of the fields on the base Bullet have been
-     * changed in this suggestion.
-     *
-     * @param BulletSuggestionState $bulletSuggestionState
-     */
-    public function setBulletSuggestionState(BulletSuggestionState $bulletSuggestionState)
-    {
-    }
-    /**
-     * @return BulletSuggestionState
-     */
-    public function getBulletSuggestionState()
+    class Google_Service_Docs_SuggestedBullet extends \Google\Service\Docs\SuggestedBullet
     {
     }
 }

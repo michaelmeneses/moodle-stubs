@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Classroom;
-
-class GradingPeriodSettings extends \Google\Collection
-{
-    protected $collection_key = 'gradingPeriods';
-    /**
-     * Supports toggling the application of grading periods on existing stream
-     * items. Once set, this value is persisted meaning that it does not need to
-     * be set in every request to update `GradingPeriodSettings`. If not
-     * previously set, the default is False.
-     *
-     * @var bool
-     */
-    public $applyToExistingCoursework;
-    protected $gradingPeriodsType = GradingPeriod::class;
-    protected $gradingPeriodsDataType = 'array';
-    /**
-     * Supports toggling the application of grading periods on existing stream
-     * items. Once set, this value is persisted meaning that it does not need to
-     * be set in every request to update `GradingPeriodSettings`. If not
-     * previously set, the default is False.
-     *
-     * @param bool $applyToExistingCoursework
-     */
-    public function setApplyToExistingCoursework($applyToExistingCoursework)
+namespace Google\Service\Classroom {
+    class GradingPeriodSettings extends \Google\Collection
     {
+        protected $collection_key = 'gradingPeriods';
+        /**
+         * Supports toggling the application of grading periods on existing stream
+         * items. Once set, this value is persisted meaning that it does not need to
+         * be set in every request to update `GradingPeriodSettings`. If not
+         * previously set, the default is False.
+         *
+         * @var bool
+         */
+        public $applyToExistingCoursework;
+        protected $gradingPeriodsType = GradingPeriod::class;
+        protected $gradingPeriodsDataType = 'array';
+        /**
+         * Supports toggling the application of grading periods on existing stream
+         * items. Once set, this value is persisted meaning that it does not need to
+         * be set in every request to update `GradingPeriodSettings`. If not
+         * previously set, the default is False.
+         *
+         * @param bool $applyToExistingCoursework
+         */
+        public function setApplyToExistingCoursework($applyToExistingCoursework)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getApplyToExistingCoursework()
+        {
+        }
+        /**
+         * The list of grading periods in a specific course. Grading periods must not
+         * have overlapping date ranges and must be listed in chronological order.
+         * Each grading period must have a unique title within a course.
+         *
+         * @param GradingPeriod[] $gradingPeriods
+         */
+        public function setGradingPeriods($gradingPeriods)
+        {
+        }
+        /**
+         * @return GradingPeriod[]
+         */
+        public function getGradingPeriods()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Classroom\GradingPeriodSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApplyToExistingCoursework()
-    {
-    }
-    /**
-     * The list of grading periods in a specific course. Grading periods must not
-     * have overlapping date ranges and must be listed in chronological order.
-     * Each grading period must have a unique title within a course.
-     *
-     * @param GradingPeriod[] $gradingPeriods
-     */
-    public function setGradingPeriods($gradingPeriods)
-    {
-    }
-    /**
-     * @return GradingPeriod[]
-     */
-    public function getGradingPeriods()
+    class Google_Service_Classroom_GradingPeriodSettings extends \Google\Service\Classroom\GradingPeriodSettings
     {
     }
 }

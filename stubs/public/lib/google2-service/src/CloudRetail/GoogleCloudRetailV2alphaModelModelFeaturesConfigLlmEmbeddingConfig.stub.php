@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2alphaModelModelFeaturesConfigLlmEmbeddingConfig extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $llmEmbeddingVersion;
-    /**
-     * @param string
-     */
-    public function setLlmEmbeddingVersion($llmEmbeddingVersion)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2alphaModelModelFeaturesConfigLlmEmbeddingConfig extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $llmEmbeddingVersion;
+        /**
+         * @param string
+         */
+        public function setLlmEmbeddingVersion($llmEmbeddingVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLlmEmbeddingVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2alphaModelModelFeaturesConfigLlmEmbeddingConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLlmEmbeddingVersion()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2alphaModelModelFeaturesConfigLlmEmbeddingConfig extends \Google\Service\CloudRetail\GoogleCloudRetailV2alphaModelModelFeaturesConfigLlmEmbeddingConfig
     {
     }
 }

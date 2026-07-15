@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class DeviceFeature extends \Google\Model
-{
-    /**
-     * Name of the feature.
-     *
-     * @var string
-     */
-    public $featureName;
-    /**
-     * The feature version specified by android:glEsVersion or android:version in
-     * in the AndroidManifest.
-     *
-     * @var int
-     */
-    public $featureVersion;
-    /**
-     * Name of the feature.
-     *
-     * @param string $featureName
-     */
-    public function setFeatureName($featureName)
+namespace Google\Service\AndroidPublisher {
+    class DeviceFeature extends \Google\Model
     {
+        /**
+         * Name of the feature.
+         *
+         * @var string
+         */
+        public $featureName;
+        /**
+         * The feature version specified by android:glEsVersion or android:version in
+         * in the AndroidManifest.
+         *
+         * @var int
+         */
+        public $featureVersion;
+        /**
+         * Name of the feature.
+         *
+         * @param string $featureName
+         */
+        public function setFeatureName($featureName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFeatureName()
+        {
+        }
+        /**
+         * The feature version specified by android:glEsVersion or android:version in
+         * in the AndroidManifest.
+         *
+         * @param int $featureVersion
+         */
+        public function setFeatureVersion($featureVersion)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getFeatureVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidPublisher\DeviceFeature registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFeatureName()
-    {
-    }
-    /**
-     * The feature version specified by android:glEsVersion or android:version in
-     * in the AndroidManifest.
-     *
-     * @param int $featureVersion
-     */
-    public function setFeatureVersion($featureVersion)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getFeatureVersion()
+    class Google_Service_AndroidPublisher_DeviceFeature extends \Google\Service\AndroidPublisher\DeviceFeature
     {
     }
 }

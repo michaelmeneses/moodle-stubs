@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveLabels;
-
-class GoogleAppsDriveLabelsV2BadgeColors extends \Google\Model
-{
-    protected $backgroundColorType = GoogleTypeColor::class;
-    protected $backgroundColorDataType = '';
-    protected $foregroundColorType = GoogleTypeColor::class;
-    protected $foregroundColorDataType = '';
-    protected $soloColorType = GoogleTypeColor::class;
-    protected $soloColorDataType = '';
-    /**
-     * Output only. Badge background that pairs with the foreground.
-     *
-     * @param GoogleTypeColor $backgroundColor
-     */
-    public function setBackgroundColor(GoogleTypeColor $backgroundColor)
+namespace Google\Service\DriveLabels {
+    class GoogleAppsDriveLabelsV2BadgeColors extends \Google\Model
     {
+        protected $backgroundColorType = GoogleTypeColor::class;
+        protected $backgroundColorDataType = '';
+        protected $foregroundColorType = GoogleTypeColor::class;
+        protected $foregroundColorDataType = '';
+        protected $soloColorType = GoogleTypeColor::class;
+        protected $soloColorDataType = '';
+        /**
+         * Output only. Badge background that pairs with the foreground.
+         *
+         * @param GoogleTypeColor $backgroundColor
+         */
+        public function setBackgroundColor(GoogleTypeColor $backgroundColor)
+        {
+        }
+        /**
+         * @return GoogleTypeColor
+         */
+        public function getBackgroundColor()
+        {
+        }
+        /**
+         * Output only. Badge foreground that pairs with the background.
+         *
+         * @param GoogleTypeColor $foregroundColor
+         */
+        public function setForegroundColor(GoogleTypeColor $foregroundColor)
+        {
+        }
+        /**
+         * @return GoogleTypeColor
+         */
+        public function getForegroundColor()
+        {
+        }
+        /**
+         * Output only. Color that can be used for text without a background.
+         *
+         * @param GoogleTypeColor $soloColor
+         */
+        public function setSoloColor(GoogleTypeColor $soloColor)
+        {
+        }
+        /**
+         * @return GoogleTypeColor
+         */
+        public function getSoloColor()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleTypeColor
+     * Runtime class alias of \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2BadgeColors registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackgroundColor()
-    {
-    }
-    /**
-     * Output only. Badge foreground that pairs with the background.
-     *
-     * @param GoogleTypeColor $foregroundColor
-     */
-    public function setForegroundColor(GoogleTypeColor $foregroundColor)
-    {
-    }
-    /**
-     * @return GoogleTypeColor
-     */
-    public function getForegroundColor()
-    {
-    }
-    /**
-     * Output only. Color that can be used for text without a background.
-     *
-     * @param GoogleTypeColor $soloColor
-     */
-    public function setSoloColor(GoogleTypeColor $soloColor)
-    {
-    }
-    /**
-     * @return GoogleTypeColor
-     */
-    public function getSoloColor()
+    class Google_Service_DriveLabels_GoogleAppsDriveLabelsV2BadgeColors extends \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2BadgeColors
     {
     }
 }

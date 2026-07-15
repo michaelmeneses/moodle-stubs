@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Assuredworkloads;
-
-class GoogleCloudAssuredworkloadsV1WorkloadComplianceStatus extends \Google\Model
-{
-    /**
-     * Number of current resource violations which are not acknowledged.
-     *
-     * @var int
-     */
-    public $acknowledgedResourceViolationCount;
-    /**
-     * Number of current orgPolicy violations which are acknowledged.
-     *
-     * @var int
-     */
-    public $acknowledgedViolationCount;
-    /**
-     * Number of current resource violations which are acknowledged.
-     *
-     * @var int
-     */
-    public $activeResourceViolationCount;
-    /**
-     * Number of current orgPolicy violations which are not acknowledged.
-     *
-     * @var int
-     */
-    public $activeViolationCount;
-    /**
-     * Number of current resource violations which are not acknowledged.
-     *
-     * @param int $acknowledgedResourceViolationCount
-     */
-    public function setAcknowledgedResourceViolationCount($acknowledgedResourceViolationCount)
+namespace Google\Service\Assuredworkloads {
+    class GoogleCloudAssuredworkloadsV1WorkloadComplianceStatus extends \Google\Model
     {
+        /**
+         * Number of current resource violations which are not acknowledged.
+         *
+         * @var int
+         */
+        public $acknowledgedResourceViolationCount;
+        /**
+         * Number of current orgPolicy violations which are acknowledged.
+         *
+         * @var int
+         */
+        public $acknowledgedViolationCount;
+        /**
+         * Number of current resource violations which are acknowledged.
+         *
+         * @var int
+         */
+        public $activeResourceViolationCount;
+        /**
+         * Number of current orgPolicy violations which are not acknowledged.
+         *
+         * @var int
+         */
+        public $activeViolationCount;
+        /**
+         * Number of current resource violations which are not acknowledged.
+         *
+         * @param int $acknowledgedResourceViolationCount
+         */
+        public function setAcknowledgedResourceViolationCount($acknowledgedResourceViolationCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getAcknowledgedResourceViolationCount()
+        {
+        }
+        /**
+         * Number of current orgPolicy violations which are acknowledged.
+         *
+         * @param int $acknowledgedViolationCount
+         */
+        public function setAcknowledgedViolationCount($acknowledgedViolationCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getAcknowledgedViolationCount()
+        {
+        }
+        /**
+         * Number of current resource violations which are acknowledged.
+         *
+         * @param int $activeResourceViolationCount
+         */
+        public function setActiveResourceViolationCount($activeResourceViolationCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getActiveResourceViolationCount()
+        {
+        }
+        /**
+         * Number of current orgPolicy violations which are not acknowledged.
+         *
+         * @param int $activeViolationCount
+         */
+        public function setActiveViolationCount($activeViolationCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getActiveViolationCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1WorkloadComplianceStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAcknowledgedResourceViolationCount()
-    {
-    }
-    /**
-     * Number of current orgPolicy violations which are acknowledged.
-     *
-     * @param int $acknowledgedViolationCount
-     */
-    public function setAcknowledgedViolationCount($acknowledgedViolationCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getAcknowledgedViolationCount()
-    {
-    }
-    /**
-     * Number of current resource violations which are acknowledged.
-     *
-     * @param int $activeResourceViolationCount
-     */
-    public function setActiveResourceViolationCount($activeResourceViolationCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getActiveResourceViolationCount()
-    {
-    }
-    /**
-     * Number of current orgPolicy violations which are not acknowledged.
-     *
-     * @param int $activeViolationCount
-     */
-    public function setActiveViolationCount($activeViolationCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getActiveViolationCount()
+    class Google_Service_Assuredworkloads_GoogleCloudAssuredworkloadsV1WorkloadComplianceStatus extends \Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1WorkloadComplianceStatus
     {
     }
 }

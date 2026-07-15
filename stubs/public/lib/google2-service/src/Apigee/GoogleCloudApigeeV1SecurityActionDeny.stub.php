@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1SecurityActionDeny extends \Google\Model
-{
-    /**
-     * Optional. The HTTP response code if the Action = DENY.
-     *
-     * @var int
-     */
-    public $responseCode;
-    /**
-     * Optional. The HTTP response code if the Action = DENY.
-     *
-     * @param int $responseCode
-     */
-    public function setResponseCode($responseCode)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1SecurityActionDeny extends \Google\Model
     {
+        /**
+         * Optional. The HTTP response code if the Action = DENY.
+         *
+         * @var int
+         */
+        public $responseCode;
+        /**
+         * Optional. The HTTP response code if the Action = DENY.
+         *
+         * @param int $responseCode
+         */
+        public function setResponseCode($responseCode)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getResponseCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1SecurityActionDeny registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResponseCode()
+    class Google_Service_Apigee_GoogleCloudApigeeV1SecurityActionDeny extends \Google\Service\Apigee\GoogleCloudApigeeV1SecurityActionDeny
     {
     }
 }

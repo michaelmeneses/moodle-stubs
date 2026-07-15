@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Translate;
-
-class ReferenceSentencePairList extends \Google\Collection
-{
-    protected $collection_key = 'referenceSentencePairs';
-    protected $referenceSentencePairsType = ReferenceSentencePair::class;
-    protected $referenceSentencePairsDataType = 'array';
-    /**
-     * Reference sentence pairs.
-     *
-     * @param ReferenceSentencePair[] $referenceSentencePairs
-     */
-    public function setReferenceSentencePairs($referenceSentencePairs)
+namespace Google\Service\Translate {
+    class ReferenceSentencePairList extends \Google\Collection
     {
+        protected $collection_key = 'referenceSentencePairs';
+        protected $referenceSentencePairsType = ReferenceSentencePair::class;
+        protected $referenceSentencePairsDataType = 'array';
+        /**
+         * Reference sentence pairs.
+         *
+         * @param ReferenceSentencePair[] $referenceSentencePairs
+         */
+        public function setReferenceSentencePairs($referenceSentencePairs)
+        {
+        }
+        /**
+         * @return ReferenceSentencePair[]
+         */
+        public function getReferenceSentencePairs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ReferenceSentencePair[]
+     * Runtime class alias of \Google\Service\Translate\ReferenceSentencePairList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReferenceSentencePairs()
+    class Google_Service_Translate_ReferenceSentencePairList extends \Google\Service\Translate\ReferenceSentencePairList
     {
     }
 }

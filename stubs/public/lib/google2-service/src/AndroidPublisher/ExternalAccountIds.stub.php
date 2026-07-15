@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class ExternalAccountIds extends \Google\Model
-{
-    /**
-     * Optional. Specifies an optional obfuscated string that is uniquely
-     * associated with the purchaser's user account in your app. If you pass this
-     * value, Google Play can use it to detect irregular activity. Do not use this
-     * field to store any Personally Identifiable Information (PII) such as emails
-     * in cleartext. Attempting to store PII in this field will result in
-     * purchases being blocked. Google Play recommends that you use either
-     * encryption or a one-way hash to generate an obfuscated identifier to send
-     * to Google Play. This identifier is limited to 64 characters. This field can
-     * only be set for resubscription purchases. See https://developer.android.com
-     * /reference/com/android/billingclient/api/BillingFlowParams.Builder#setobfus
-     * catedaccountid to set this field for purchases made using the standard in-
-     * app billing flow.
-     *
-     * @var string
-     */
-    public $obfuscatedAccountId;
-    /**
-     * Optional. Specifies an optional obfuscated string that is uniquely
-     * associated with the purchaser's user profile in your app. If you pass this
-     * value, Google Play can use it to detect irregular activity. Do not use this
-     * field to store any Personally Identifiable Information (PII) such as emails
-     * in cleartext. Attempting to store PII in this field will result in
-     * purchases being blocked. Google Play recommends that you use either
-     * encryption or a one-way hash to generate an obfuscated identifier to send
-     * to Google Play. This identifier is limited to 64 characters. This field can
-     * only be set for resubscription purchases. See https://developer.android.com
-     * /reference/com/android/billingclient/api/BillingFlowParams.Builder#setobfus
-     * catedprofileid to set this field for purchases made using the standard in-
-     * app billing flow.
-     *
-     * @var string
-     */
-    public $obfuscatedProfileId;
-    /**
-     * Optional. Specifies an optional obfuscated string that is uniquely
-     * associated with the purchaser's user account in your app. If you pass this
-     * value, Google Play can use it to detect irregular activity. Do not use this
-     * field to store any Personally Identifiable Information (PII) such as emails
-     * in cleartext. Attempting to store PII in this field will result in
-     * purchases being blocked. Google Play recommends that you use either
-     * encryption or a one-way hash to generate an obfuscated identifier to send
-     * to Google Play. This identifier is limited to 64 characters. This field can
-     * only be set for resubscription purchases. See https://developer.android.com
-     * /reference/com/android/billingclient/api/BillingFlowParams.Builder#setobfus
-     * catedaccountid to set this field for purchases made using the standard in-
-     * app billing flow.
-     *
-     * @param string $obfuscatedAccountId
-     */
-    public function setObfuscatedAccountId($obfuscatedAccountId)
+namespace Google\Service\AndroidPublisher {
+    class ExternalAccountIds extends \Google\Model
     {
+        /**
+         * Optional. Specifies an optional obfuscated string that is uniquely
+         * associated with the purchaser's user account in your app. If you pass this
+         * value, Google Play can use it to detect irregular activity. Do not use this
+         * field to store any Personally Identifiable Information (PII) such as emails
+         * in cleartext. Attempting to store PII in this field will result in
+         * purchases being blocked. Google Play recommends that you use either
+         * encryption or a one-way hash to generate an obfuscated identifier to send
+         * to Google Play. This identifier is limited to 64 characters. This field can
+         * only be set for resubscription purchases. See https://developer.android.com
+         * /reference/com/android/billingclient/api/BillingFlowParams.Builder#setobfus
+         * catedaccountid to set this field for purchases made using the standard in-
+         * app billing flow.
+         *
+         * @var string
+         */
+        public $obfuscatedAccountId;
+        /**
+         * Optional. Specifies an optional obfuscated string that is uniquely
+         * associated with the purchaser's user profile in your app. If you pass this
+         * value, Google Play can use it to detect irregular activity. Do not use this
+         * field to store any Personally Identifiable Information (PII) such as emails
+         * in cleartext. Attempting to store PII in this field will result in
+         * purchases being blocked. Google Play recommends that you use either
+         * encryption or a one-way hash to generate an obfuscated identifier to send
+         * to Google Play. This identifier is limited to 64 characters. This field can
+         * only be set for resubscription purchases. See https://developer.android.com
+         * /reference/com/android/billingclient/api/BillingFlowParams.Builder#setobfus
+         * catedprofileid to set this field for purchases made using the standard in-
+         * app billing flow.
+         *
+         * @var string
+         */
+        public $obfuscatedProfileId;
+        /**
+         * Optional. Specifies an optional obfuscated string that is uniquely
+         * associated with the purchaser's user account in your app. If you pass this
+         * value, Google Play can use it to detect irregular activity. Do not use this
+         * field to store any Personally Identifiable Information (PII) such as emails
+         * in cleartext. Attempting to store PII in this field will result in
+         * purchases being blocked. Google Play recommends that you use either
+         * encryption or a one-way hash to generate an obfuscated identifier to send
+         * to Google Play. This identifier is limited to 64 characters. This field can
+         * only be set for resubscription purchases. See https://developer.android.com
+         * /reference/com/android/billingclient/api/BillingFlowParams.Builder#setobfus
+         * catedaccountid to set this field for purchases made using the standard in-
+         * app billing flow.
+         *
+         * @param string $obfuscatedAccountId
+         */
+        public function setObfuscatedAccountId($obfuscatedAccountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObfuscatedAccountId()
+        {
+        }
+        /**
+         * Optional. Specifies an optional obfuscated string that is uniquely
+         * associated with the purchaser's user profile in your app. If you pass this
+         * value, Google Play can use it to detect irregular activity. Do not use this
+         * field to store any Personally Identifiable Information (PII) such as emails
+         * in cleartext. Attempting to store PII in this field will result in
+         * purchases being blocked. Google Play recommends that you use either
+         * encryption or a one-way hash to generate an obfuscated identifier to send
+         * to Google Play. This identifier is limited to 64 characters. This field can
+         * only be set for resubscription purchases. See https://developer.android.com
+         * /reference/com/android/billingclient/api/BillingFlowParams.Builder#setobfus
+         * catedprofileid to set this field for purchases made using the standard in-
+         * app billing flow.
+         *
+         * @param string $obfuscatedProfileId
+         */
+        public function setObfuscatedProfileId($obfuscatedProfileId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObfuscatedProfileId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidPublisher\ExternalAccountIds registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getObfuscatedAccountId()
-    {
-    }
-    /**
-     * Optional. Specifies an optional obfuscated string that is uniquely
-     * associated with the purchaser's user profile in your app. If you pass this
-     * value, Google Play can use it to detect irregular activity. Do not use this
-     * field to store any Personally Identifiable Information (PII) such as emails
-     * in cleartext. Attempting to store PII in this field will result in
-     * purchases being blocked. Google Play recommends that you use either
-     * encryption or a one-way hash to generate an obfuscated identifier to send
-     * to Google Play. This identifier is limited to 64 characters. This field can
-     * only be set for resubscription purchases. See https://developer.android.com
-     * /reference/com/android/billingclient/api/BillingFlowParams.Builder#setobfus
-     * catedprofileid to set this field for purchases made using the standard in-
-     * app billing flow.
-     *
-     * @param string $obfuscatedProfileId
-     */
-    public function setObfuscatedProfileId($obfuscatedProfileId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObfuscatedProfileId()
+    class Google_Service_AndroidPublisher_ExternalAccountIds extends \Google\Service\AndroidPublisher\ExternalAccountIds
     {
     }
 }

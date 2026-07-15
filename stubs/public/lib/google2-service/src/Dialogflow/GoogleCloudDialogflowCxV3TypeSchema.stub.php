@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3TypeSchema extends \Google\Model
-{
-    protected $inlineSchemaType = GoogleCloudDialogflowCxV3InlineSchema::class;
-    protected $inlineSchemaDataType = '';
-    protected $schemaReferenceType = GoogleCloudDialogflowCxV3TypeSchemaSchemaReference::class;
-    protected $schemaReferenceDataType = '';
-    /**
-     * Set if this is an inline schema definition.
-     *
-     * @param GoogleCloudDialogflowCxV3InlineSchema $inlineSchema
-     */
-    public function setInlineSchema(GoogleCloudDialogflowCxV3InlineSchema $inlineSchema)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3TypeSchema extends \Google\Model
     {
+        protected $inlineSchemaType = GoogleCloudDialogflowCxV3InlineSchema::class;
+        protected $inlineSchemaDataType = '';
+        protected $schemaReferenceType = GoogleCloudDialogflowCxV3TypeSchemaSchemaReference::class;
+        protected $schemaReferenceDataType = '';
+        /**
+         * Set if this is an inline schema definition.
+         *
+         * @param GoogleCloudDialogflowCxV3InlineSchema $inlineSchema
+         */
+        public function setInlineSchema(GoogleCloudDialogflowCxV3InlineSchema $inlineSchema)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3InlineSchema
+         */
+        public function getInlineSchema()
+        {
+        }
+        /**
+         * Set if this is a schema reference.
+         *
+         * @param GoogleCloudDialogflowCxV3TypeSchemaSchemaReference $schemaReference
+         */
+        public function setSchemaReference(GoogleCloudDialogflowCxV3TypeSchemaSchemaReference $schemaReference)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3TypeSchemaSchemaReference
+         */
+        public function getSchemaReference()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowCxV3InlineSchema
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3TypeSchema registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInlineSchema()
-    {
-    }
-    /**
-     * Set if this is a schema reference.
-     *
-     * @param GoogleCloudDialogflowCxV3TypeSchemaSchemaReference $schemaReference
-     */
-    public function setSchemaReference(GoogleCloudDialogflowCxV3TypeSchemaSchemaReference $schemaReference)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3TypeSchemaSchemaReference
-     */
-    public function getSchemaReference()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3TypeSchema extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3TypeSchema
     {
     }
 }

@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InstanceGroupManagersRecreateInstancesRequest extends \Google\Collection
-{
-    protected $collection_key = 'instances';
-    /**
-     * The URLs of one or more instances to recreate. This can be a full URL or a
-     * partial URL, such as zones/[ZONE]/instances/[INSTANCE_NAME].
-     *
-     * @var string[]
-     */
-    public $instances;
-    /**
-     * The URLs of one or more instances to recreate. This can be a full URL or a
-     * partial URL, such as zones/[ZONE]/instances/[INSTANCE_NAME].
-     *
-     * @param string[] $instances
-     */
-    public function setInstances($instances)
+namespace Google\Service\Compute {
+    class InstanceGroupManagersRecreateInstancesRequest extends \Google\Collection
     {
+        protected $collection_key = 'instances';
+        /**
+         * The URLs of one or more instances to recreate. This can be a full URL or a
+         * partial URL, such as zones/[ZONE]/instances/[INSTANCE_NAME].
+         *
+         * @var string[]
+         */
+        public $instances;
+        /**
+         * The URLs of one or more instances to recreate. This can be a full URL or a
+         * partial URL, such as zones/[ZONE]/instances/[INSTANCE_NAME].
+         *
+         * @param string[] $instances
+         */
+        public function setInstances($instances)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getInstances()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Compute\InstanceGroupManagersRecreateInstancesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstances()
+    class Google_Service_Compute_InstanceGroupManagersRecreateInstancesRequest extends \Google\Service\Compute\InstanceGroupManagersRecreateInstancesRequest
     {
     }
 }

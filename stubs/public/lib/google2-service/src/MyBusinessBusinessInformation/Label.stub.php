@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessBusinessInformation;
-
-class Label extends \Google\Model
-{
-    /**
-     * Optional. Description of the price list, section, or item.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Required. Display name for the price list, section, or item.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Optional. The BCP-47 language code that these strings apply for. Only one
-     * set of labels may be set per language.
-     *
-     * @var string
-     */
-    public $languageCode;
-    /**
-     * Optional. Description of the price list, section, or item.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\MyBusinessBusinessInformation {
+    class Label extends \Google\Model
     {
+        /**
+         * Optional. Description of the price list, section, or item.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Required. Display name for the price list, section, or item.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Optional. The BCP-47 language code that these strings apply for. Only one
+         * set of labels may be set per language.
+         *
+         * @var string
+         */
+        public $languageCode;
+        /**
+         * Optional. Description of the price list, section, or item.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Required. Display name for the price list, section, or item.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Optional. The BCP-47 language code that these strings apply for. Only one
+         * set of labels may be set per language.
+         *
+         * @param string $languageCode
+         */
+        public function setLanguageCode($languageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLanguageCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MyBusinessBusinessInformation\Label registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * Required. Display name for the price list, section, or item.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Optional. The BCP-47 language code that these strings apply for. Only one
-     * set of labels may be set per language.
-     *
-     * @param string $languageCode
-     */
-    public function setLanguageCode($languageCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLanguageCode()
+    class Google_Service_MyBusinessBusinessInformation_Label extends \Google\Service\MyBusinessBusinessInformation\Label
     {
     }
 }

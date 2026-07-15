@@ -21,34 +21,44 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storagetransfer\Resource;
-
-/**
- * The "googleServiceAccounts" collection of methods.
- * Typical usage is:
- *  <code>
- *   $storagetransferService = new Google\Service\Storagetransfer(...);
- *   $googleServiceAccounts = $storagetransferService->googleServiceAccounts;
- *  </code>
- */
-class GoogleServiceAccounts extends \Google\Service\Resource
-{
+namespace Google\Service\Storagetransfer\Resource {
+    use Google\Service\Storagetransfer\GoogleServiceAccount;
     /**
-     * Returns the Google service account that is used by Storage Transfer Service
-     * to access buckets in the project where transfers run or in other projects.
-     * Each Google service account is associated with one Google Cloud project.
-     * Users should add this service account to the Google Cloud Storage bucket ACLs
-     * to grant access to Storage Transfer Service. This service account is created
-     * and owned by Storage Transfer Service and can only be used by Storage
-     * Transfer Service. (googleServiceAccounts.get)
-     *
-     * @param string $projectId Required. The ID of the Google Cloud project that
-     * the Google service account is associated with.
-     * @param array $optParams Optional parameters.
-     * @return GoogleServiceAccount
-     * @throws \Google\Service\Exception
+     * The "googleServiceAccounts" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $storagetransferService = new Google\Service\Storagetransfer(...);
+     *   $googleServiceAccounts = $storagetransferService->googleServiceAccounts;
+     *  </code>
      */
-    public function get($projectId, $optParams = [])
+    class GoogleServiceAccounts extends \Google\Service\Resource
+    {
+        /**
+         * Returns the Google service account that is used by Storage Transfer Service
+         * to access buckets in the project where transfers run or in other projects.
+         * Each Google service account is associated with one Google Cloud project.
+         * Users should add this service account to the Google Cloud Storage bucket ACLs
+         * to grant access to Storage Transfer Service. This service account is created
+         * and owned by Storage Transfer Service and can only be used by Storage
+         * Transfer Service. (googleServiceAccounts.get)
+         *
+         * @param string $projectId Required. The ID of the Google Cloud project that
+         * the Google service account is associated with.
+         * @param array $optParams Optional parameters.
+         * @return GoogleServiceAccount
+         * @throws \Google\Service\Exception
+         */
+        public function get($projectId, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Storagetransfer\Resource\GoogleServiceAccounts registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Storagetransfer_Resource_GoogleServiceAccounts extends \Google\Service\Storagetransfer\Resource\GoogleServiceAccounts
     {
     }
 }

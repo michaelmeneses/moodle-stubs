@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PagespeedInsights;
-
-class CategoryGroupV5 extends \Google\Model
-{
-    /**
-     * The description of what the category is grouping
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * The human readable title of the group
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * The description of what the category is grouping
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\PagespeedInsights {
+    class CategoryGroupV5 extends \Google\Model
     {
+        /**
+         * The description of what the category is grouping
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * The human readable title of the group
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * The description of what the category is grouping
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * The human readable title of the group
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PagespeedInsights\CategoryGroupV5 registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * The human readable title of the group
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_PagespeedInsights_CategoryGroupV5 extends \Google\Service\PagespeedInsights\CategoryGroupV5
     {
     }
 }

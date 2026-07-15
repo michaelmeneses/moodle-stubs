@@ -21,183 +21,210 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform\Resource;
-
-/**
- * The "models" collection of methods.
- * Typical usage is:
- *  <code>
- *   $aiplatformService = new Google\Service\Aiplatform(...);
- *   $models = $aiplatformService->projects_locations_publishers_models;
- *  </code>
- */
-class ProjectsLocationsPublishersModels extends \Google\Service\Resource
-{
+namespace Google\Service\Aiplatform\Resource {
+    use Google\Service\Aiplatform\GoogleApiHttpBody;
+    use Google\Service\Aiplatform\GoogleCloudAiplatformV1ComputeTokensRequest;
+    use Google\Service\Aiplatform\GoogleCloudAiplatformV1ComputeTokensResponse;
+    use Google\Service\Aiplatform\GoogleCloudAiplatformV1CountTokensRequest;
+    use Google\Service\Aiplatform\GoogleCloudAiplatformV1CountTokensResponse;
+    use Google\Service\Aiplatform\GoogleCloudAiplatformV1EmbedContentRequest;
+    use Google\Service\Aiplatform\GoogleCloudAiplatformV1EmbedContentResponse;
+    use Google\Service\Aiplatform\GoogleCloudAiplatformV1FetchPredictOperationRequest;
+    use Google\Service\Aiplatform\GoogleCloudAiplatformV1GenerateContentRequest;
+    use Google\Service\Aiplatform\GoogleCloudAiplatformV1GenerateContentResponse;
+    use Google\Service\Aiplatform\GoogleCloudAiplatformV1PredictLongRunningRequest;
+    use Google\Service\Aiplatform\GoogleCloudAiplatformV1PredictRequest;
+    use Google\Service\Aiplatform\GoogleCloudAiplatformV1PredictResponse;
+    use Google\Service\Aiplatform\GoogleCloudAiplatformV1RawPredictRequest;
+    use Google\Service\Aiplatform\GoogleCloudAiplatformV1StreamRawPredictRequest;
+    use Google\Service\Aiplatform\GoogleCloudAiplatformV1StreamingPredictRequest;
+    use Google\Service\Aiplatform\GoogleCloudAiplatformV1StreamingPredictResponse;
+    use Google\Service\Aiplatform\GoogleLongrunningOperation;
     /**
-     * Return a list of tokens based on the input text. (models.computeTokens)
-     *
-     * @param string $endpoint Required. The name of the Endpoint requested to get
-     * lists of tokens and token ids.
-     * @param GoogleCloudAiplatformV1ComputeTokensRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudAiplatformV1ComputeTokensResponse
-     * @throws \Google\Service\Exception
+     * The "models" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $aiplatformService = new Google\Service\Aiplatform(...);
+     *   $models = $aiplatformService->projects_locations_publishers_models;
+     *  </code>
      */
-    public function computeTokens($endpoint, GoogleCloudAiplatformV1ComputeTokensRequest $postBody, $optParams = [])
+    class ProjectsLocationsPublishersModels extends \Google\Service\Resource
     {
+        /**
+         * Return a list of tokens based on the input text. (models.computeTokens)
+         *
+         * @param string $endpoint Required. The name of the Endpoint requested to get
+         * lists of tokens and token ids.
+         * @param GoogleCloudAiplatformV1ComputeTokensRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudAiplatformV1ComputeTokensResponse
+         * @throws \Google\Service\Exception
+         */
+        public function computeTokens($endpoint, GoogleCloudAiplatformV1ComputeTokensRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Perform a token counting. (models.countTokens)
+         *
+         * @param string $endpoint Required. The name of the Endpoint requested to
+         * perform token counting. Format:
+         * `projects/{project}/locations/{location}/endpoints/{endpoint}`
+         * @param GoogleCloudAiplatformV1CountTokensRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudAiplatformV1CountTokensResponse
+         * @throws \Google\Service\Exception
+         */
+        public function countTokens($endpoint, GoogleCloudAiplatformV1CountTokensRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Embed content with multimodal inputs. (models.embedContent)
+         *
+         * @param string $model Required. The name of the publisher model requested to
+         * serve the prediction. Format:
+         * `projects/{project}/locations/{location}/publishers/models`
+         * @param GoogleCloudAiplatformV1EmbedContentRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudAiplatformV1EmbedContentResponse
+         * @throws \Google\Service\Exception
+         */
+        public function embedContent($model, GoogleCloudAiplatformV1EmbedContentRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Fetch an asynchronous online prediction operation.
+         * (models.fetchPredictOperation)
+         *
+         * @param string $endpoint Required. The name of the Endpoint requested to serve
+         * the prediction. Format:
+         * `projects/{project}/locations/{location}/endpoints/{endpoint}` or `projects/{
+         * project}/locations/{location}/publishers/{publisher}/models/{model}`
+         * @param GoogleCloudAiplatformV1FetchPredictOperationRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function fetchPredictOperation($endpoint, GoogleCloudAiplatformV1FetchPredictOperationRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Generate content with multimodal inputs. (models.generateContent)
+         *
+         * @param string $model Required. The fully qualified name of the publisher
+         * model or tuned model endpoint to use. Publisher model format:
+         * `projects/{project}/locations/{location}/publishers/models` Tuned model
+         * endpoint format:
+         * `projects/{project}/locations/{location}/endpoints/{endpoint}`
+         * @param GoogleCloudAiplatformV1GenerateContentRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudAiplatformV1GenerateContentResponse
+         * @throws \Google\Service\Exception
+         */
+        public function generateContent($model, GoogleCloudAiplatformV1GenerateContentRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Perform an online prediction. (models.predict)
+         *
+         * @param string $endpoint Required. The name of the Endpoint requested to serve
+         * the prediction. Format:
+         * `projects/{project}/locations/{location}/endpoints/{endpoint}`
+         * @param GoogleCloudAiplatformV1PredictRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudAiplatformV1PredictResponse
+         * @throws \Google\Service\Exception
+         */
+        public function predict($endpoint, GoogleCloudAiplatformV1PredictRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * (models.predictLongRunning)
+         *
+         * @param string $endpoint Required. The name of the Endpoint requested to serve
+         * the prediction. Format:
+         * `projects/{project}/locations/{location}/endpoints/{endpoint}` or `projects/{
+         * project}/locations/{location}/publishers/{publisher}/models/{model}`
+         * @param GoogleCloudAiplatformV1PredictLongRunningRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function predictLongRunning($endpoint, GoogleCloudAiplatformV1PredictLongRunningRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Perform an online prediction with an arbitrary HTTP payload. The response
+         * includes the following HTTP headers: * `X-Vertex-AI-Endpoint-Id`: ID of the
+         * Endpoint that served this prediction. * `X-Vertex-AI-Deployed-Model-Id`: ID
+         * of the Endpoint's DeployedModel that served this prediction.
+         * (models.rawPredict)
+         *
+         * @param string $endpoint Required. The name of the Endpoint requested to serve
+         * the prediction. Format:
+         * `projects/{project}/locations/{location}/endpoints/{endpoint}`
+         * @param GoogleCloudAiplatformV1RawPredictRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleApiHttpBody
+         * @throws \Google\Service\Exception
+         */
+        public function rawPredict($endpoint, GoogleCloudAiplatformV1RawPredictRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Perform a server-side streaming online prediction request for Vertex LLM
+         * streaming. (models.serverStreamingPredict)
+         *
+         * @param string $endpoint Required. The name of the Endpoint requested to serve
+         * the prediction. Format:
+         * `projects/{project}/locations/{location}/endpoints/{endpoint}`
+         * @param GoogleCloudAiplatformV1StreamingPredictRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudAiplatformV1StreamingPredictResponse
+         * @throws \Google\Service\Exception
+         */
+        public function serverStreamingPredict($endpoint, GoogleCloudAiplatformV1StreamingPredictRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Generate content with multimodal inputs with streaming support.
+         * (models.streamGenerateContent)
+         *
+         * @param string $model Required. The fully qualified name of the publisher
+         * model or tuned model endpoint to use. Publisher model format:
+         * `projects/{project}/locations/{location}/publishers/models` Tuned model
+         * endpoint format:
+         * `projects/{project}/locations/{location}/endpoints/{endpoint}`
+         * @param GoogleCloudAiplatformV1GenerateContentRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudAiplatformV1GenerateContentResponse
+         * @throws \Google\Service\Exception
+         */
+        public function streamGenerateContent($model, GoogleCloudAiplatformV1GenerateContentRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Perform a streaming online prediction with an arbitrary HTTP payload.
+         * (models.streamRawPredict)
+         *
+         * @param string $endpoint Required. The name of the Endpoint requested to serve
+         * the prediction. Format:
+         * `projects/{project}/locations/{location}/endpoints/{endpoint}`
+         * @param GoogleCloudAiplatformV1StreamRawPredictRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleApiHttpBody
+         * @throws \Google\Service\Exception
+         */
+        public function streamRawPredict($endpoint, GoogleCloudAiplatformV1StreamRawPredictRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Perform a token counting. (models.countTokens)
-     *
-     * @param string $endpoint Required. The name of the Endpoint requested to
-     * perform token counting. Format:
-     * `projects/{project}/locations/{location}/endpoints/{endpoint}`
-     * @param GoogleCloudAiplatformV1CountTokensRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudAiplatformV1CountTokensResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Aiplatform\Resource\ProjectsLocationsPublishersModels registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function countTokens($endpoint, GoogleCloudAiplatformV1CountTokensRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Embed content with multimodal inputs. (models.embedContent)
-     *
-     * @param string $model Required. The name of the publisher model requested to
-     * serve the prediction. Format:
-     * `projects/{project}/locations/{location}/publishers/models`
-     * @param GoogleCloudAiplatformV1EmbedContentRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudAiplatformV1EmbedContentResponse
-     * @throws \Google\Service\Exception
-     */
-    public function embedContent($model, GoogleCloudAiplatformV1EmbedContentRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Fetch an asynchronous online prediction operation.
-     * (models.fetchPredictOperation)
-     *
-     * @param string $endpoint Required. The name of the Endpoint requested to serve
-     * the prediction. Format:
-     * `projects/{project}/locations/{location}/endpoints/{endpoint}` or `projects/{
-     * project}/locations/{location}/publishers/{publisher}/models/{model}`
-     * @param GoogleCloudAiplatformV1FetchPredictOperationRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
-     */
-    public function fetchPredictOperation($endpoint, GoogleCloudAiplatformV1FetchPredictOperationRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Generate content with multimodal inputs. (models.generateContent)
-     *
-     * @param string $model Required. The fully qualified name of the publisher
-     * model or tuned model endpoint to use. Publisher model format:
-     * `projects/{project}/locations/{location}/publishers/models` Tuned model
-     * endpoint format:
-     * `projects/{project}/locations/{location}/endpoints/{endpoint}`
-     * @param GoogleCloudAiplatformV1GenerateContentRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudAiplatformV1GenerateContentResponse
-     * @throws \Google\Service\Exception
-     */
-    public function generateContent($model, GoogleCloudAiplatformV1GenerateContentRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Perform an online prediction. (models.predict)
-     *
-     * @param string $endpoint Required. The name of the Endpoint requested to serve
-     * the prediction. Format:
-     * `projects/{project}/locations/{location}/endpoints/{endpoint}`
-     * @param GoogleCloudAiplatformV1PredictRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudAiplatformV1PredictResponse
-     * @throws \Google\Service\Exception
-     */
-    public function predict($endpoint, GoogleCloudAiplatformV1PredictRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * (models.predictLongRunning)
-     *
-     * @param string $endpoint Required. The name of the Endpoint requested to serve
-     * the prediction. Format:
-     * `projects/{project}/locations/{location}/endpoints/{endpoint}` or `projects/{
-     * project}/locations/{location}/publishers/{publisher}/models/{model}`
-     * @param GoogleCloudAiplatformV1PredictLongRunningRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
-     */
-    public function predictLongRunning($endpoint, GoogleCloudAiplatformV1PredictLongRunningRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Perform an online prediction with an arbitrary HTTP payload. The response
-     * includes the following HTTP headers: * `X-Vertex-AI-Endpoint-Id`: ID of the
-     * Endpoint that served this prediction. * `X-Vertex-AI-Deployed-Model-Id`: ID
-     * of the Endpoint's DeployedModel that served this prediction.
-     * (models.rawPredict)
-     *
-     * @param string $endpoint Required. The name of the Endpoint requested to serve
-     * the prediction. Format:
-     * `projects/{project}/locations/{location}/endpoints/{endpoint}`
-     * @param GoogleCloudAiplatformV1RawPredictRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleApiHttpBody
-     * @throws \Google\Service\Exception
-     */
-    public function rawPredict($endpoint, GoogleCloudAiplatformV1RawPredictRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Perform a server-side streaming online prediction request for Vertex LLM
-     * streaming. (models.serverStreamingPredict)
-     *
-     * @param string $endpoint Required. The name of the Endpoint requested to serve
-     * the prediction. Format:
-     * `projects/{project}/locations/{location}/endpoints/{endpoint}`
-     * @param GoogleCloudAiplatformV1StreamingPredictRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudAiplatformV1StreamingPredictResponse
-     * @throws \Google\Service\Exception
-     */
-    public function serverStreamingPredict($endpoint, GoogleCloudAiplatformV1StreamingPredictRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Generate content with multimodal inputs with streaming support.
-     * (models.streamGenerateContent)
-     *
-     * @param string $model Required. The fully qualified name of the publisher
-     * model or tuned model endpoint to use. Publisher model format:
-     * `projects/{project}/locations/{location}/publishers/models` Tuned model
-     * endpoint format:
-     * `projects/{project}/locations/{location}/endpoints/{endpoint}`
-     * @param GoogleCloudAiplatformV1GenerateContentRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudAiplatformV1GenerateContentResponse
-     * @throws \Google\Service\Exception
-     */
-    public function streamGenerateContent($model, GoogleCloudAiplatformV1GenerateContentRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Perform a streaming online prediction with an arbitrary HTTP payload.
-     * (models.streamRawPredict)
-     *
-     * @param string $endpoint Required. The name of the Endpoint requested to serve
-     * the prediction. Format:
-     * `projects/{project}/locations/{location}/endpoints/{endpoint}`
-     * @param GoogleCloudAiplatformV1StreamRawPredictRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleApiHttpBody
-     * @throws \Google\Service\Exception
-     */
-    public function streamRawPredict($endpoint, GoogleCloudAiplatformV1StreamRawPredictRequest $postBody, $optParams = [])
+    class Google_Service_Aiplatform_Resource_ProjectsLocationsPublishersModels extends \Google\Service\Aiplatform\Resource\ProjectsLocationsPublishersModels
     {
     }
 }

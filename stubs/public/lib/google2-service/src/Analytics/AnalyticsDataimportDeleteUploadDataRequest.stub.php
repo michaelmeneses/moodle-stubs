@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics;
-
-class AnalyticsDataimportDeleteUploadDataRequest extends \Google\Collection
-{
-    protected $collection_key = 'customDataImportUids';
-    /**
-     * A list of upload UIDs.
-     *
-     * @var string[]
-     */
-    public $customDataImportUids;
-    /**
-     * A list of upload UIDs.
-     *
-     * @param string[] $customDataImportUids
-     */
-    public function setCustomDataImportUids($customDataImportUids)
+namespace Google\Service\Analytics {
+    class AnalyticsDataimportDeleteUploadDataRequest extends \Google\Collection
     {
+        protected $collection_key = 'customDataImportUids';
+        /**
+         * A list of upload UIDs.
+         *
+         * @var string[]
+         */
+        public $customDataImportUids;
+        /**
+         * A list of upload UIDs.
+         *
+         * @param string[] $customDataImportUids
+         */
+        public function setCustomDataImportUids($customDataImportUids)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCustomDataImportUids()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Analytics\AnalyticsDataimportDeleteUploadDataRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomDataImportUids()
+    class Google_Service_Analytics_AnalyticsDataimportDeleteUploadDataRequest extends \Google\Service\Analytics\AnalyticsDataimportDeleteUploadDataRequest
     {
     }
 }

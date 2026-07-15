@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class AdbShellCommandEvent extends \Google\Model
-{
-    /**
-     * Shell command that was issued over ADB via "adb shell command". Redacted to
-     * empty string on organization-owned managed profile devices.
-     *
-     * @var string
-     */
-    public $shellCmd;
-    /**
-     * Shell command that was issued over ADB via "adb shell command". Redacted to
-     * empty string on organization-owned managed profile devices.
-     *
-     * @param string $shellCmd
-     */
-    public function setShellCmd($shellCmd)
+namespace Google\Service\AndroidManagement {
+    class AdbShellCommandEvent extends \Google\Model
     {
+        /**
+         * Shell command that was issued over ADB via "adb shell command". Redacted to
+         * empty string on organization-owned managed profile devices.
+         *
+         * @var string
+         */
+        public $shellCmd;
+        /**
+         * Shell command that was issued over ADB via "adb shell command". Redacted to
+         * empty string on organization-owned managed profile devices.
+         *
+         * @param string $shellCmd
+         */
+        public function setShellCmd($shellCmd)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getShellCmd()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidManagement\AdbShellCommandEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getShellCmd()
+    class Google_Service_AndroidManagement_AdbShellCommandEvent extends \Google\Service\AndroidManagement\AdbShellCommandEvent
     {
     }
 }

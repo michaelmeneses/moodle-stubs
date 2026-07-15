@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class CloudAiDocumentaiLabHifiaToolsValidationValidatorInput extends \Google\Collection
-{
-    protected $collection_key = 'validationRules';
-    protected $validationRulesType = CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRule::class;
-    protected $validationRulesDataType = 'array';
-    /**
-     * @param CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRule[] $validationRules
-     */
-    public function setValidationRules($validationRules)
+namespace Google\Service\Document {
+    class CloudAiDocumentaiLabHifiaToolsValidationValidatorInput extends \Google\Collection
     {
+        protected $collection_key = 'validationRules';
+        protected $validationRulesType = CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRule::class;
+        protected $validationRulesDataType = 'array';
+        /**
+         * @param CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRule[] $validationRules
+         */
+        public function setValidationRules($validationRules)
+        {
+        }
+        /**
+         * @return CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRule[]
+         */
+        public function getValidationRules()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRule[]
+     * Runtime class alias of \Google\Service\Document\CloudAiDocumentaiLabHifiaToolsValidationValidatorInput registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getValidationRules()
+    class Google_Service_Document_CloudAiDocumentaiLabHifiaToolsValidationValidatorInput extends \Google\Service\Document\CloudAiDocumentaiLabHifiaToolsValidationValidatorInput
     {
     }
 }

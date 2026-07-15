@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1EvaluationInstanceAgentConfig extends \Google\Model
-{
-    protected $developerInstructionType = GoogleCloudAiplatformV1EvaluationInstanceInstanceData::class;
-    protected $developerInstructionDataType = '';
-    protected $toolsType = GoogleCloudAiplatformV1EvaluationInstanceAgentConfigTools::class;
-    protected $toolsDataType = '';
-    /**
-     * A JSON string containing a list of tools available to an agent with info
-     * such as name, description, parameters and required parameters.
-     *
-     * @var string
-     */
-    public $toolsText;
-    /**
-     * Optional. A field containing instructions from the developer for the agent.
-     *
-     * @param GoogleCloudAiplatformV1EvaluationInstanceInstanceData $developerInstruction
-     */
-    public function setDeveloperInstruction(GoogleCloudAiplatformV1EvaluationInstanceInstanceData $developerInstruction)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1EvaluationInstanceAgentConfig extends \Google\Model
     {
+        protected $developerInstructionType = GoogleCloudAiplatformV1EvaluationInstanceInstanceData::class;
+        protected $developerInstructionDataType = '';
+        protected $toolsType = GoogleCloudAiplatformV1EvaluationInstanceAgentConfigTools::class;
+        protected $toolsDataType = '';
+        /**
+         * A JSON string containing a list of tools available to an agent with info
+         * such as name, description, parameters and required parameters.
+         *
+         * @var string
+         */
+        public $toolsText;
+        /**
+         * Optional. A field containing instructions from the developer for the agent.
+         *
+         * @param GoogleCloudAiplatformV1EvaluationInstanceInstanceData $developerInstruction
+         */
+        public function setDeveloperInstruction(GoogleCloudAiplatformV1EvaluationInstanceInstanceData $developerInstruction)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1EvaluationInstanceInstanceData
+         */
+        public function getDeveloperInstruction()
+        {
+        }
+        /**
+         * List of tools.
+         *
+         * @param GoogleCloudAiplatformV1EvaluationInstanceAgentConfigTools $tools
+         */
+        public function setTools(GoogleCloudAiplatformV1EvaluationInstanceAgentConfigTools $tools)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1EvaluationInstanceAgentConfigTools
+         */
+        public function getTools()
+        {
+        }
+        /**
+         * A JSON string containing a list of tools available to an agent with info
+         * such as name, description, parameters and required parameters.
+         *
+         * @param string $toolsText
+         */
+        public function setToolsText($toolsText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getToolsText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1EvaluationInstanceInstanceData
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1EvaluationInstanceAgentConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeveloperInstruction()
-    {
-    }
-    /**
-     * List of tools.
-     *
-     * @param GoogleCloudAiplatformV1EvaluationInstanceAgentConfigTools $tools
-     */
-    public function setTools(GoogleCloudAiplatformV1EvaluationInstanceAgentConfigTools $tools)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1EvaluationInstanceAgentConfigTools
-     */
-    public function getTools()
-    {
-    }
-    /**
-     * A JSON string containing a list of tools available to an agent with info
-     * such as name, description, parameters and required parameters.
-     *
-     * @param string $toolsText
-     */
-    public function setToolsText($toolsText)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getToolsText()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1EvaluationInstanceAgentConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1EvaluationInstanceAgentConfig
     {
     }
 }

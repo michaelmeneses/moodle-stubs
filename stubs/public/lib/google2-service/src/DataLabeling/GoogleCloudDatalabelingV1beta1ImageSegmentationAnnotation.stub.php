@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1ImageSegmentationAnnotation extends \Google\Model
-{
-    protected $annotationColorsType = GoogleCloudDatalabelingV1beta1AnnotationSpec::class;
-    protected $annotationColorsDataType = 'map';
-    /**
-     * A byte string of a full image's color map.
-     *
-     * @var string
-     */
-    public $imageBytes;
-    /**
-     * Image format.
-     *
-     * @var string
-     */
-    public $mimeType;
-    /**
-     * The mapping between rgb color and annotation spec. The key is the rgb color
-     * represented in format of rgb(0, 0, 0). The value is the AnnotationSpec.
-     *
-     * @param GoogleCloudDatalabelingV1beta1AnnotationSpec[] $annotationColors
-     */
-    public function setAnnotationColors($annotationColors)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1ImageSegmentationAnnotation extends \Google\Model
     {
+        protected $annotationColorsType = GoogleCloudDatalabelingV1beta1AnnotationSpec::class;
+        protected $annotationColorsDataType = 'map';
+        /**
+         * A byte string of a full image's color map.
+         *
+         * @var string
+         */
+        public $imageBytes;
+        /**
+         * Image format.
+         *
+         * @var string
+         */
+        public $mimeType;
+        /**
+         * The mapping between rgb color and annotation spec. The key is the rgb color
+         * represented in format of rgb(0, 0, 0). The value is the AnnotationSpec.
+         *
+         * @param GoogleCloudDatalabelingV1beta1AnnotationSpec[] $annotationColors
+         */
+        public function setAnnotationColors($annotationColors)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1AnnotationSpec[]
+         */
+        public function getAnnotationColors()
+        {
+        }
+        /**
+         * A byte string of a full image's color map.
+         *
+         * @param string $imageBytes
+         */
+        public function setImageBytes($imageBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImageBytes()
+        {
+        }
+        /**
+         * Image format.
+         *
+         * @param string $mimeType
+         */
+        public function setMimeType($mimeType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMimeType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatalabelingV1beta1AnnotationSpec[]
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1ImageSegmentationAnnotation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotationColors()
-    {
-    }
-    /**
-     * A byte string of a full image's color map.
-     *
-     * @param string $imageBytes
-     */
-    public function setImageBytes($imageBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImageBytes()
-    {
-    }
-    /**
-     * Image format.
-     *
-     * @param string $mimeType
-     */
-    public function setMimeType($mimeType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMimeType()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1ImageSegmentationAnnotation extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1ImageSegmentationAnnotation
     {
     }
 }

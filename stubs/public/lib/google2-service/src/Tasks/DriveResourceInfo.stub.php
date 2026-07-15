@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Tasks;
-
-class DriveResourceInfo extends \Google\Model
-{
-    /**
-     * Output only. Identifier of the file in the Drive API.
-     *
-     * @var string
-     */
-    public $driveFileId;
-    /**
-     * Output only. Resource key required to access files shared via a shared
-     * link. Not required for all files. See also
-     * developers.google.com/drive/api/guides/resource-keys.
-     *
-     * @var string
-     */
-    public $resourceKey;
-    /**
-     * Output only. Identifier of the file in the Drive API.
-     *
-     * @param string $driveFileId
-     */
-    public function setDriveFileId($driveFileId)
+namespace Google\Service\Tasks {
+    class DriveResourceInfo extends \Google\Model
     {
+        /**
+         * Output only. Identifier of the file in the Drive API.
+         *
+         * @var string
+         */
+        public $driveFileId;
+        /**
+         * Output only. Resource key required to access files shared via a shared
+         * link. Not required for all files. See also
+         * developers.google.com/drive/api/guides/resource-keys.
+         *
+         * @var string
+         */
+        public $resourceKey;
+        /**
+         * Output only. Identifier of the file in the Drive API.
+         *
+         * @param string $driveFileId
+         */
+        public function setDriveFileId($driveFileId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDriveFileId()
+        {
+        }
+        /**
+         * Output only. Resource key required to access files shared via a shared
+         * link. Not required for all files. See also
+         * developers.google.com/drive/api/guides/resource-keys.
+         *
+         * @param string $resourceKey
+         */
+        public function setResourceKey($resourceKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Tasks\DriveResourceInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDriveFileId()
-    {
-    }
-    /**
-     * Output only. Resource key required to access files shared via a shared
-     * link. Not required for all files. See also
-     * developers.google.com/drive/api/guides/resource-keys.
-     *
-     * @param string $resourceKey
-     */
-    public function setResourceKey($resourceKey)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceKey()
+    class Google_Service_Tasks_DriveResourceInfo extends \Google\Service\Tasks\DriveResourceInfo
     {
     }
 }

@@ -21,83 +21,92 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1CheckGroundingResponse extends \Google\Collection
-{
-    protected $collection_key = 'claims';
-    protected $citedChunksType = GoogleCloudDiscoveryengineV1FactChunk::class;
-    protected $citedChunksDataType = 'array';
-    protected $citedFactsType = GoogleCloudDiscoveryengineV1CheckGroundingResponseCheckGroundingFactChunk::class;
-    protected $citedFactsDataType = 'array';
-    protected $claimsType = GoogleCloudDiscoveryengineV1CheckGroundingResponseClaim::class;
-    protected $claimsDataType = 'array';
-    /**
-     * The support score for the input answer candidate. Higher the score, higher
-     * is the fraction of claims that are supported by the provided facts. This is
-     * always set when a response is returned.
-     *
-     * @var float
-     */
-    public $supportScore;
-    /**
-     * List of facts cited across all claims in the answer candidate. These are
-     * derived from the facts supplied in the request.
-     *
-     * @param GoogleCloudDiscoveryengineV1FactChunk[] $citedChunks
-     */
-    public function setCitedChunks($citedChunks)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1CheckGroundingResponse extends \Google\Collection
     {
+        protected $collection_key = 'claims';
+        protected $citedChunksType = GoogleCloudDiscoveryengineV1FactChunk::class;
+        protected $citedChunksDataType = 'array';
+        protected $citedFactsType = GoogleCloudDiscoveryengineV1CheckGroundingResponseCheckGroundingFactChunk::class;
+        protected $citedFactsDataType = 'array';
+        protected $claimsType = GoogleCloudDiscoveryengineV1CheckGroundingResponseClaim::class;
+        protected $claimsDataType = 'array';
+        /**
+         * The support score for the input answer candidate. Higher the score, higher
+         * is the fraction of claims that are supported by the provided facts. This is
+         * always set when a response is returned.
+         *
+         * @var float
+         */
+        public $supportScore;
+        /**
+         * List of facts cited across all claims in the answer candidate. These are
+         * derived from the facts supplied in the request.
+         *
+         * @param GoogleCloudDiscoveryengineV1FactChunk[] $citedChunks
+         */
+        public function setCitedChunks($citedChunks)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1FactChunk[]
+         */
+        public function getCitedChunks()
+        {
+        }
+        /**
+         * List of facts cited across all claims in the answer candidate. These are
+         * derived from the facts supplied in the request.
+         *
+         * @param GoogleCloudDiscoveryengineV1CheckGroundingResponseCheckGroundingFactChunk[] $citedFacts
+         */
+        public function setCitedFacts($citedFacts)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1CheckGroundingResponseCheckGroundingFactChunk[]
+         */
+        public function getCitedFacts()
+        {
+        }
+        /**
+         * Claim texts and citation info across all claims in the answer candidate.
+         *
+         * @param GoogleCloudDiscoveryengineV1CheckGroundingResponseClaim[] $claims
+         */
+        public function setClaims($claims)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1CheckGroundingResponseClaim[]
+         */
+        public function getClaims()
+        {
+        }
+        /**
+         * The support score for the input answer candidate. Higher the score, higher
+         * is the fraction of claims that are supported by the provided facts. This is
+         * always set when a response is returned.
+         *
+         * @param float $supportScore
+         */
+        public function setSupportScore($supportScore)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getSupportScore()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1FactChunk[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1CheckGroundingResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCitedChunks()
-    {
-    }
-    /**
-     * List of facts cited across all claims in the answer candidate. These are
-     * derived from the facts supplied in the request.
-     *
-     * @param GoogleCloudDiscoveryengineV1CheckGroundingResponseCheckGroundingFactChunk[] $citedFacts
-     */
-    public function setCitedFacts($citedFacts)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1CheckGroundingResponseCheckGroundingFactChunk[]
-     */
-    public function getCitedFacts()
-    {
-    }
-    /**
-     * Claim texts and citation info across all claims in the answer candidate.
-     *
-     * @param GoogleCloudDiscoveryengineV1CheckGroundingResponseClaim[] $claims
-     */
-    public function setClaims($claims)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1CheckGroundingResponseClaim[]
-     */
-    public function getClaims()
-    {
-    }
-    /**
-     * The support score for the input answer candidate. Higher the score, higher
-     * is the fraction of claims that are supported by the provided facts. This is
-     * always set when a response is returned.
-     *
-     * @param float $supportScore
-     */
-    public function setSupportScore($supportScore)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getSupportScore()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1CheckGroundingResponse extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1CheckGroundingResponse
     {
     }
 }

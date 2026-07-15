@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GoogleCloudSecuritycenterV2IamBinding extends \Google\Model
-{
-    /**
-     * Unspecified.
-     */
-    public const ACTION_ACTION_UNSPECIFIED = 'ACTION_UNSPECIFIED';
-    /**
-     * Addition of a Binding.
-     */
-    public const ACTION_ADD = 'ADD';
-    /**
-     * Removal of a Binding.
-     */
-    public const ACTION_REMOVE = 'REMOVE';
-    /**
-     * The action that was performed on a Binding.
-     *
-     * @var string
-     */
-    public $action;
-    /**
-     * A single identity requesting access for a Cloud Platform resource, for
-     * example, "foo@google.com".
-     *
-     * @var string
-     */
-    public $member;
-    /**
-     * Role that is assigned to "members". For example, "roles/viewer",
-     * "roles/editor", or "roles/owner".
-     *
-     * @var string
-     */
-    public $role;
-    /**
-     * The action that was performed on a Binding.
-     *
-     * Accepted values: ACTION_UNSPECIFIED, ADD, REMOVE
-     *
-     * @param self::ACTION_* $action
-     */
-    public function setAction($action)
+namespace Google\Service\SecurityCommandCenter {
+    class GoogleCloudSecuritycenterV2IamBinding extends \Google\Model
     {
+        /**
+         * Unspecified.
+         */
+        public const ACTION_ACTION_UNSPECIFIED = 'ACTION_UNSPECIFIED';
+        /**
+         * Addition of a Binding.
+         */
+        public const ACTION_ADD = 'ADD';
+        /**
+         * Removal of a Binding.
+         */
+        public const ACTION_REMOVE = 'REMOVE';
+        /**
+         * The action that was performed on a Binding.
+         *
+         * @var string
+         */
+        public $action;
+        /**
+         * A single identity requesting access for a Cloud Platform resource, for
+         * example, "foo@google.com".
+         *
+         * @var string
+         */
+        public $member;
+        /**
+         * Role that is assigned to "members". For example, "roles/viewer",
+         * "roles/editor", or "roles/owner".
+         *
+         * @var string
+         */
+        public $role;
+        /**
+         * The action that was performed on a Binding.
+         *
+         * Accepted values: ACTION_UNSPECIFIED, ADD, REMOVE
+         *
+         * @param self::ACTION_* $action
+         */
+        public function setAction($action)
+        {
+        }
+        /**
+         * @return self::ACTION_*
+         */
+        public function getAction()
+        {
+        }
+        /**
+         * A single identity requesting access for a Cloud Platform resource, for
+         * example, "foo@google.com".
+         *
+         * @param string $member
+         */
+        public function setMember($member)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMember()
+        {
+        }
+        /**
+         * Role that is assigned to "members". For example, "roles/viewer",
+         * "roles/editor", or "roles/owner".
+         *
+         * @param string $role
+         */
+        public function setRole($role)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRole()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::ACTION_*
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2IamBinding registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAction()
-    {
-    }
-    /**
-     * A single identity requesting access for a Cloud Platform resource, for
-     * example, "foo@google.com".
-     *
-     * @param string $member
-     */
-    public function setMember($member)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMember()
-    {
-    }
-    /**
-     * Role that is assigned to "members". For example, "roles/viewer",
-     * "roles/editor", or "roles/owner".
-     *
-     * @param string $role
-     */
-    public function setRole($role)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRole()
+    class Google_Service_SecurityCommandCenter_GoogleCloudSecuritycenterV2IamBinding extends \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2IamBinding
     {
     }
 }

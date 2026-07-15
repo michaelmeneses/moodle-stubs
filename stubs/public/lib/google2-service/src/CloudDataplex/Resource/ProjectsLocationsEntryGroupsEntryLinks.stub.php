@@ -21,61 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex\Resource;
-
-/**
- * The "entryLinks" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dataplexService = new Google\Service\CloudDataplex(...);
- *   $entryLinks = $dataplexService->projects_locations_entryGroups_entryLinks;
- *  </code>
- */
-class ProjectsLocationsEntryGroupsEntryLinks extends \Google\Service\Resource
-{
+namespace Google\Service\CloudDataplex\Resource {
+    use Google\Service\CloudDataplex\GoogleCloudDataplexV1EntryLink;
     /**
-     * Creates an Entry Link. (entryLinks.create)
-     *
-     * @param string $parent Required. The resource name of the parent Entry Group:
-     * projects/{project_id_or_number}/locations/{location_id}/entryGroups/{entry_gr
-     * oup_id}.
-     * @param GoogleCloudDataplexV1EntryLink $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string entryLinkId Required. Entry Link identifier * Must contain
-     * only lowercase letters, numbers and hyphens. * Must start with a letter. *
-     * Must be between 1-63 characters. * Must end with a number or a letter. * Must
-     * be unique within the EntryGroup.
-     * @return GoogleCloudDataplexV1EntryLink
-     * @throws \Google\Service\Exception
+     * The "entryLinks" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dataplexService = new Google\Service\CloudDataplex(...);
+     *   $entryLinks = $dataplexService->projects_locations_entryGroups_entryLinks;
+     *  </code>
      */
-    public function create($parent, GoogleCloudDataplexV1EntryLink $postBody, $optParams = [])
+    class ProjectsLocationsEntryGroupsEntryLinks extends \Google\Service\Resource
     {
+        /**
+         * Creates an Entry Link. (entryLinks.create)
+         *
+         * @param string $parent Required. The resource name of the parent Entry Group:
+         * projects/{project_id_or_number}/locations/{location_id}/entryGroups/{entry_gr
+         * oup_id}.
+         * @param GoogleCloudDataplexV1EntryLink $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string entryLinkId Required. Entry Link identifier * Must contain
+         * only lowercase letters, numbers and hyphens. * Must start with a letter. *
+         * Must be between 1-63 characters. * Must end with a number or a letter. * Must
+         * be unique within the EntryGroup.
+         * @return GoogleCloudDataplexV1EntryLink
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, GoogleCloudDataplexV1EntryLink $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes an Entry Link. (entryLinks.delete)
+         *
+         * @param string $name Required. The resource name of the Entry Link: projects/{
+         * project_id_or_number}/locations/{location_id}/entryGroups/{entry_group_id}/en
+         * tryLinks/{entry_link_id}.
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudDataplexV1EntryLink
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets an Entry Link. (entryLinks.get)
+         *
+         * @param string $name Required. The resource name of the Entry Link: projects/{
+         * project_id_or_number}/locations/{location_id}/entryGroups/{entry_group_id}/en
+         * tryLinks/{entry_link_id}.
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudDataplexV1EntryLink
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes an Entry Link. (entryLinks.delete)
-     *
-     * @param string $name Required. The resource name of the Entry Link: projects/{
-     * project_id_or_number}/locations/{location_id}/entryGroups/{entry_group_id}/en
-     * tryLinks/{entry_link_id}.
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudDataplexV1EntryLink
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\CloudDataplex\Resource\ProjectsLocationsEntryGroupsEntryLinks registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets an Entry Link. (entryLinks.get)
-     *
-     * @param string $name Required. The resource name of the Entry Link: projects/{
-     * project_id_or_number}/locations/{location_id}/entryGroups/{entry_group_id}/en
-     * tryLinks/{entry_link_id}.
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudDataplexV1EntryLink
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
+    class Google_Service_CloudDataplex_Resource_ProjectsLocationsEntryGroupsEntryLinks extends \Google\Service\CloudDataplex\Resource\ProjectsLocationsEntryGroupsEntryLinks
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class ListConsentStoresResponse extends \Google\Collection
-{
-    protected $collection_key = 'consentStores';
-    protected $consentStoresType = ConsentStore::class;
-    protected $consentStoresDataType = 'array';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The returned consent stores. The maximum number of stores returned is
-     * determined by the value of page_size in the ListConsentStoresRequest.
-     *
-     * @param ConsentStore[] $consentStores
-     */
-    public function setConsentStores($consentStores)
+namespace Google\Service\CloudHealthcare {
+    class ListConsentStoresResponse extends \Google\Collection
     {
+        protected $collection_key = 'consentStores';
+        protected $consentStoresType = ConsentStore::class;
+        protected $consentStoresDataType = 'array';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The returned consent stores. The maximum number of stores returned is
+         * determined by the value of page_size in the ListConsentStoresRequest.
+         *
+         * @param ConsentStore[] $consentStores
+         */
+        public function setConsentStores($consentStores)
+        {
+        }
+        /**
+         * @return ConsentStore[]
+         */
+        public function getConsentStores()
+        {
+        }
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ConsentStore[]
+     * Runtime class alias of \Google\Service\CloudHealthcare\ListConsentStoresResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConsentStores()
-    {
-    }
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_CloudHealthcare_ListConsentStoresResponse extends \Google\Service\CloudHealthcare\ListConsentStoresResponse
     {
     }
 }

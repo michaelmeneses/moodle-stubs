@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class MachineConfig extends \Google\Model
-{
-    /**
-     * The number of CPU's in the VM instance.
-     *
-     * @var int
-     */
-    public $cpuCount;
-    /**
-     * Optional. Machine type of the VM instance. E.g. "n2-highmem-4",
-     * "n2-highmem-8", "c4a-highmem-4-lssd". cpu_count must match the number of
-     * vCPUs in the machine type.
-     *
-     * @var string
-     */
-    public $machineType;
-    /**
-     * The number of CPU's in the VM instance.
-     *
-     * @param int $cpuCount
-     */
-    public function setCpuCount($cpuCount)
+namespace Google\Service\DatabaseMigrationService {
+    class MachineConfig extends \Google\Model
     {
+        /**
+         * The number of CPU's in the VM instance.
+         *
+         * @var int
+         */
+        public $cpuCount;
+        /**
+         * Optional. Machine type of the VM instance. E.g. "n2-highmem-4",
+         * "n2-highmem-8", "c4a-highmem-4-lssd". cpu_count must match the number of
+         * vCPUs in the machine type.
+         *
+         * @var string
+         */
+        public $machineType;
+        /**
+         * The number of CPU's in the VM instance.
+         *
+         * @param int $cpuCount
+         */
+        public function setCpuCount($cpuCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCpuCount()
+        {
+        }
+        /**
+         * Optional. Machine type of the VM instance. E.g. "n2-highmem-4",
+         * "n2-highmem-8", "c4a-highmem-4-lssd". cpu_count must match the number of
+         * vCPUs in the machine type.
+         *
+         * @param string $machineType
+         */
+        public function setMachineType($machineType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMachineType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\MachineConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCpuCount()
-    {
-    }
-    /**
-     * Optional. Machine type of the VM instance. E.g. "n2-highmem-4",
-     * "n2-highmem-8", "c4a-highmem-4-lssd". cpu_count must match the number of
-     * vCPUs in the machine type.
-     *
-     * @param string $machineType
-     */
-    public function setMachineType($machineType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMachineType()
+    class Google_Service_DatabaseMigrationService_MachineConfig extends \Google\Service\DatabaseMigrationService\MachineConfig
     {
     }
 }

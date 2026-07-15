@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class AdvancedMachineFeatures extends \Google\Model
-{
-    /**
-     * The number of threads per physical core.
-     *
-     * @var int
-     */
-    public $threadsPerCore;
-    /**
-     * The number of threads per physical core.
-     *
-     * @param int $threadsPerCore
-     */
-    public function setThreadsPerCore($threadsPerCore)
+namespace Google\Service\SQLAdmin {
+    class AdvancedMachineFeatures extends \Google\Model
     {
+        /**
+         * The number of threads per physical core.
+         *
+         * @var int
+         */
+        public $threadsPerCore;
+        /**
+         * The number of threads per physical core.
+         *
+         * @param int $threadsPerCore
+         */
+        public function setThreadsPerCore($threadsPerCore)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getThreadsPerCore()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\SQLAdmin\AdvancedMachineFeatures registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getThreadsPerCore()
+    class Google_Service_SQLAdmin_AdvancedMachineFeatures extends \Google\Service\SQLAdmin\AdvancedMachineFeatures
     {
     }
 }

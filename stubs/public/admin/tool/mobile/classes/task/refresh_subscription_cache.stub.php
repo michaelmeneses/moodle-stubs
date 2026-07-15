@@ -29,6 +29,7 @@
  */
 namespace tool_mobile\task;
 
+use tool_mobile\api;
 /**
  * Scheduled task to refresh Moodle app subscription information cache.
  *

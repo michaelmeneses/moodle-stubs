@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class TargetSslProxiesSetProxyHeaderRequest extends \Google\Model
-{
-    public const PROXY_HEADER_NONE = 'NONE';
-    public const PROXY_HEADER_PROXY_V1 = 'PROXY_V1';
-    /**
-     * The new type of proxy header to append before sending data to the backend.
-     * NONE or PROXY_V1 are allowed.
-     *
-     * @var string
-     */
-    public $proxyHeader;
-    /**
-     * The new type of proxy header to append before sending data to the backend.
-     * NONE or PROXY_V1 are allowed.
-     *
-     * Accepted values: NONE, PROXY_V1
-     *
-     * @param self::PROXY_HEADER_* $proxyHeader
-     */
-    public function setProxyHeader($proxyHeader)
+namespace Google\Service\Compute {
+    class TargetSslProxiesSetProxyHeaderRequest extends \Google\Model
     {
+        public const PROXY_HEADER_NONE = 'NONE';
+        public const PROXY_HEADER_PROXY_V1 = 'PROXY_V1';
+        /**
+         * The new type of proxy header to append before sending data to the backend.
+         * NONE or PROXY_V1 are allowed.
+         *
+         * @var string
+         */
+        public $proxyHeader;
+        /**
+         * The new type of proxy header to append before sending data to the backend.
+         * NONE or PROXY_V1 are allowed.
+         *
+         * Accepted values: NONE, PROXY_V1
+         *
+         * @param self::PROXY_HEADER_* $proxyHeader
+         */
+        public function setProxyHeader($proxyHeader)
+        {
+        }
+        /**
+         * @return self::PROXY_HEADER_*
+         */
+        public function getProxyHeader()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::PROXY_HEADER_*
+     * Runtime class alias of \Google\Service\Compute\TargetSslProxiesSetProxyHeaderRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProxyHeader()
+    class Google_Service_Compute_TargetSslProxiesSetProxyHeaderRequest extends \Google\Service\Compute\TargetSslProxiesSetProxyHeaderRequest
     {
     }
 }

@@ -21,85 +21,94 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataform;
-
-class Notebook extends \Google\Collection
-{
-    protected $collection_key = 'tags';
-    /**
-     * The contents of the notebook.
-     *
-     * @var string
-     */
-    public $contents;
-    protected $dependencyTargetsType = Target::class;
-    protected $dependencyTargetsDataType = 'array';
-    /**
-     * Whether this action is disabled (i.e. should not be run).
-     *
-     * @var bool
-     */
-    public $disabled;
-    /**
-     * Arbitrary, user-defined tags on this action.
-     *
-     * @var string[]
-     */
-    public $tags;
-    /**
-     * The contents of the notebook.
-     *
-     * @param string $contents
-     */
-    public function setContents($contents)
+namespace Google\Service\Dataform {
+    class Notebook extends \Google\Collection
     {
+        protected $collection_key = 'tags';
+        /**
+         * The contents of the notebook.
+         *
+         * @var string
+         */
+        public $contents;
+        protected $dependencyTargetsType = Target::class;
+        protected $dependencyTargetsDataType = 'array';
+        /**
+         * Whether this action is disabled (i.e. should not be run).
+         *
+         * @var bool
+         */
+        public $disabled;
+        /**
+         * Arbitrary, user-defined tags on this action.
+         *
+         * @var string[]
+         */
+        public $tags;
+        /**
+         * The contents of the notebook.
+         *
+         * @param string $contents
+         */
+        public function setContents($contents)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContents()
+        {
+        }
+        /**
+         * A list of actions that this action depends on.
+         *
+         * @param Target[] $dependencyTargets
+         */
+        public function setDependencyTargets($dependencyTargets)
+        {
+        }
+        /**
+         * @return Target[]
+         */
+        public function getDependencyTargets()
+        {
+        }
+        /**
+         * Whether this action is disabled (i.e. should not be run).
+         *
+         * @param bool $disabled
+         */
+        public function setDisabled($disabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisabled()
+        {
+        }
+        /**
+         * Arbitrary, user-defined tags on this action.
+         *
+         * @param string[] $tags
+         */
+        public function setTags($tags)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTags()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataform\Notebook registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContents()
-    {
-    }
-    /**
-     * A list of actions that this action depends on.
-     *
-     * @param Target[] $dependencyTargets
-     */
-    public function setDependencyTargets($dependencyTargets)
-    {
-    }
-    /**
-     * @return Target[]
-     */
-    public function getDependencyTargets()
-    {
-    }
-    /**
-     * Whether this action is disabled (i.e. should not be run).
-     *
-     * @param bool $disabled
-     */
-    public function setDisabled($disabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDisabled()
-    {
-    }
-    /**
-     * Arbitrary, user-defined tags on this action.
-     *
-     * @param string[] $tags
-     */
-    public function setTags($tags)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTags()
+    class Google_Service_Dataform_Notebook extends \Google\Service\Dataform\Notebook
     {
     }
 }

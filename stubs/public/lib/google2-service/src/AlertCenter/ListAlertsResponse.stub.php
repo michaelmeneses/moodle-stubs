@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AlertCenter;
-
-class ListAlertsResponse extends \Google\Collection
-{
-    protected $collection_key = 'alerts';
-    protected $alertsType = Alert::class;
-    protected $alertsDataType = 'array';
-    /**
-     * The token for the next page. If not empty, indicates that there may be more
-     * alerts that match the listing request; this value can be used in a
-     * subsequent ListAlertsRequest to get alerts continuing from last result of
-     * the current list call.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of alerts.
-     *
-     * @param Alert[] $alerts
-     */
-    public function setAlerts($alerts)
+namespace Google\Service\AlertCenter {
+    class ListAlertsResponse extends \Google\Collection
     {
+        protected $collection_key = 'alerts';
+        protected $alertsType = Alert::class;
+        protected $alertsDataType = 'array';
+        /**
+         * The token for the next page. If not empty, indicates that there may be more
+         * alerts that match the listing request; this value can be used in a
+         * subsequent ListAlertsRequest to get alerts continuing from last result of
+         * the current list call.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of alerts.
+         *
+         * @param Alert[] $alerts
+         */
+        public function setAlerts($alerts)
+        {
+        }
+        /**
+         * @return Alert[]
+         */
+        public function getAlerts()
+        {
+        }
+        /**
+         * The token for the next page. If not empty, indicates that there may be more
+         * alerts that match the listing request; this value can be used in a
+         * subsequent ListAlertsRequest to get alerts continuing from last result of
+         * the current list call.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Alert[]
+     * Runtime class alias of \Google\Service\AlertCenter\ListAlertsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAlerts()
-    {
-    }
-    /**
-     * The token for the next page. If not empty, indicates that there may be more
-     * alerts that match the listing request; this value can be used in a
-     * subsequent ListAlertsRequest to get alerts continuing from last result of
-     * the current list call.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_AlertCenter_ListAlertsResponse extends \Google\Service\AlertCenter\ListAlertsResponse
     {
     }
 }

@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityPosture;
-
-class OrgPolicyConstraintCustom extends \Google\Collection
-{
-    protected $collection_key = 'policyRules';
-    protected $customConstraintType = GoogleCloudSecuritypostureV1CustomConstraint::class;
-    protected $customConstraintDataType = '';
-    protected $policyRulesType = GoogleCloudSecuritypostureV1PolicyRule::class;
-    protected $policyRulesDataType = 'array';
-    /**
-     * Required. Metadata for the constraint.
-     *
-     * @param GoogleCloudSecuritypostureV1CustomConstraint $customConstraint
-     */
-    public function setCustomConstraint(GoogleCloudSecuritypostureV1CustomConstraint $customConstraint)
+namespace Google\Service\SecurityPosture {
+    class OrgPolicyConstraintCustom extends \Google\Collection
     {
+        protected $collection_key = 'policyRules';
+        protected $customConstraintType = GoogleCloudSecuritypostureV1CustomConstraint::class;
+        protected $customConstraintDataType = '';
+        protected $policyRulesType = GoogleCloudSecuritypostureV1PolicyRule::class;
+        protected $policyRulesDataType = 'array';
+        /**
+         * Required. Metadata for the constraint.
+         *
+         * @param GoogleCloudSecuritypostureV1CustomConstraint $customConstraint
+         */
+        public function setCustomConstraint(GoogleCloudSecuritypostureV1CustomConstraint $customConstraint)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritypostureV1CustomConstraint
+         */
+        public function getCustomConstraint()
+        {
+        }
+        /**
+         * Required. The rules enforced by the constraint.
+         *
+         * @param GoogleCloudSecuritypostureV1PolicyRule[] $policyRules
+         */
+        public function setPolicyRules($policyRules)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritypostureV1PolicyRule[]
+         */
+        public function getPolicyRules()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudSecuritypostureV1CustomConstraint
+     * Runtime class alias of \Google\Service\SecurityPosture\OrgPolicyConstraintCustom registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomConstraint()
-    {
-    }
-    /**
-     * Required. The rules enforced by the constraint.
-     *
-     * @param GoogleCloudSecuritypostureV1PolicyRule[] $policyRules
-     */
-    public function setPolicyRules($policyRules)
-    {
-    }
-    /**
-     * @return GoogleCloudSecuritypostureV1PolicyRule[]
-     */
-    public function getPolicyRules()
+    class Google_Service_SecurityPosture_OrgPolicyConstraintCustom extends \Google\Service\SecurityPosture\OrgPolicyConstraintCustom
     {
     }
 }

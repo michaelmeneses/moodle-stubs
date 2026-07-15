@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiUiv1beta3DocumentSchemaEntityTypeEnumValues extends \Google\Collection
-{
-    protected $collection_key = 'values';
-    /**
-     * The individual values that this enum values type can include.
-     *
-     * @var string[]
-     */
-    public $values;
-    /**
-     * The individual values that this enum values type can include.
-     *
-     * @param string[] $values
-     */
-    public function setValues($values)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiUiv1beta3DocumentSchemaEntityTypeEnumValues extends \Google\Collection
     {
+        protected $collection_key = 'values';
+        /**
+         * The individual values that this enum values type can include.
+         *
+         * @var string[]
+         */
+        public $values;
+        /**
+         * The individual values that this enum values type can include.
+         *
+         * @param string[] $values
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiUiv1beta3DocumentSchemaEntityTypeEnumValues registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getValues()
+    class Google_Service_Document_GoogleCloudDocumentaiUiv1beta3DocumentSchemaEntityTypeEnumValues extends \Google\Service\Document\GoogleCloudDocumentaiUiv1beta3DocumentSchemaEntityTypeEnumValues
     {
     }
 }

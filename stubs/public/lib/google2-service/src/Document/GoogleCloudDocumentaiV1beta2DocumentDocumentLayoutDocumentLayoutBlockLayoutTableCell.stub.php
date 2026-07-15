@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1beta2DocumentDocumentLayoutDocumentLayoutBlockLayoutTableCell extends \Google\Collection
-{
-    protected $collection_key = 'blocks';
-    protected $blocksType = GoogleCloudDocumentaiV1beta2DocumentDocumentLayoutDocumentLayoutBlock::class;
-    protected $blocksDataType = 'array';
-    /**
-     * @var int
-     */
-    public $colSpan;
-    /**
-     * @var int
-     */
-    public $rowSpan;
-    /**
-     * @param GoogleCloudDocumentaiV1beta2DocumentDocumentLayoutDocumentLayoutBlock[]
-     */
-    public function setBlocks($blocks)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1beta2DocumentDocumentLayoutDocumentLayoutBlockLayoutTableCell extends \Google\Collection
     {
+        protected $collection_key = 'blocks';
+        protected $blocksType = GoogleCloudDocumentaiV1beta2DocumentDocumentLayoutDocumentLayoutBlock::class;
+        protected $blocksDataType = 'array';
+        /**
+         * @var int
+         */
+        public $colSpan;
+        /**
+         * @var int
+         */
+        public $rowSpan;
+        /**
+         * @param GoogleCloudDocumentaiV1beta2DocumentDocumentLayoutDocumentLayoutBlock[]
+         */
+        public function setBlocks($blocks)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta2DocumentDocumentLayoutDocumentLayoutBlock[]
+         */
+        public function getBlocks()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setColSpan($colSpan)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getColSpan()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setRowSpan($rowSpan)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRowSpan()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiV1beta2DocumentDocumentLayoutDocumentLayoutBlock[]
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1beta2DocumentDocumentLayoutDocumentLayoutBlockLayoutTableCell registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBlocks()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setColSpan($colSpan)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getColSpan()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setRowSpan($rowSpan)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getRowSpan()
+    class Google_Service_Document_GoogleCloudDocumentaiV1beta2DocumentDocumentLayoutDocumentLayoutBlockLayoutTableCell extends \Google\Service\Document\GoogleCloudDocumentaiV1beta2DocumentDocumentLayoutDocumentLayoutBlockLayoutTableCell
     {
     }
 }

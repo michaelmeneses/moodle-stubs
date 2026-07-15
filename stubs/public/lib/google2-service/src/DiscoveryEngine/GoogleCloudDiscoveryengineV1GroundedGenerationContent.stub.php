@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1GroundedGenerationContent extends \Google\Collection
-{
-    protected $collection_key = 'parts';
-    protected $partsType = GoogleCloudDiscoveryengineV1GroundedGenerationContentPart::class;
-    protected $partsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $role;
-    /**
-     * @param GoogleCloudDiscoveryengineV1GroundedGenerationContentPart[]
-     */
-    public function setParts($parts)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1GroundedGenerationContent extends \Google\Collection
     {
+        protected $collection_key = 'parts';
+        protected $partsType = GoogleCloudDiscoveryengineV1GroundedGenerationContentPart::class;
+        protected $partsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $role;
+        /**
+         * @param GoogleCloudDiscoveryengineV1GroundedGenerationContentPart[]
+         */
+        public function setParts($parts)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1GroundedGenerationContentPart[]
+         */
+        public function getParts()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRole($role)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRole()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1GroundedGenerationContentPart[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1GroundedGenerationContent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getParts()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRole($role)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRole()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1GroundedGenerationContent extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1GroundedGenerationContent
     {
     }
 }

@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleCloudRunV2StorageSource extends \Google\Model
-{
-    /**
-     * Required. Google Cloud Storage bucket containing the source (see [Bucket
-     * Name Requirements](https://cloud.google.com/storage/docs/bucket-
-     * naming#requirements)).
-     *
-     * @var string
-     */
-    public $bucket;
-    /**
-     * Optional. Google Cloud Storage generation for the object. If the generation
-     * is omitted, the latest generation will be used.
-     *
-     * @var string
-     */
-    public $generation;
-    /**
-     * Required. Google Cloud Storage object containing the source. This object
-     * must be a gzipped archive file (`.tar.gz`) containing source to build.
-     *
-     * @var string
-     */
-    public $object;
-    /**
-     * Required. Google Cloud Storage bucket containing the source (see [Bucket
-     * Name Requirements](https://cloud.google.com/storage/docs/bucket-
-     * naming#requirements)).
-     *
-     * @param string $bucket
-     */
-    public function setBucket($bucket)
+namespace Google\Service\CloudRun {
+    class GoogleCloudRunV2StorageSource extends \Google\Model
     {
+        /**
+         * Required. Google Cloud Storage bucket containing the source (see [Bucket
+         * Name Requirements](https://cloud.google.com/storage/docs/bucket-
+         * naming#requirements)).
+         *
+         * @var string
+         */
+        public $bucket;
+        /**
+         * Optional. Google Cloud Storage generation for the object. If the generation
+         * is omitted, the latest generation will be used.
+         *
+         * @var string
+         */
+        public $generation;
+        /**
+         * Required. Google Cloud Storage object containing the source. This object
+         * must be a gzipped archive file (`.tar.gz`) containing source to build.
+         *
+         * @var string
+         */
+        public $object;
+        /**
+         * Required. Google Cloud Storage bucket containing the source (see [Bucket
+         * Name Requirements](https://cloud.google.com/storage/docs/bucket-
+         * naming#requirements)).
+         *
+         * @param string $bucket
+         */
+        public function setBucket($bucket)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBucket()
+        {
+        }
+        /**
+         * Optional. Google Cloud Storage generation for the object. If the generation
+         * is omitted, the latest generation will be used.
+         *
+         * @param string $generation
+         */
+        public function setGeneration($generation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGeneration()
+        {
+        }
+        /**
+         * Required. Google Cloud Storage object containing the source. This object
+         * must be a gzipped archive file (`.tar.gz`) containing source to build.
+         *
+         * @param string $object
+         */
+        public function setObject($object)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObject()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRun\GoogleCloudRunV2StorageSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBucket()
-    {
-    }
-    /**
-     * Optional. Google Cloud Storage generation for the object. If the generation
-     * is omitted, the latest generation will be used.
-     *
-     * @param string $generation
-     */
-    public function setGeneration($generation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGeneration()
-    {
-    }
-    /**
-     * Required. Google Cloud Storage object containing the source. This object
-     * must be a gzipped archive file (`.tar.gz`) containing source to build.
-     *
-     * @param string $object
-     */
-    public function setObject($object)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObject()
+    class Google_Service_CloudRun_GoogleCloudRunV2StorageSource extends \Google\Service\CloudRun\GoogleCloudRunV2StorageSource
     {
     }
 }

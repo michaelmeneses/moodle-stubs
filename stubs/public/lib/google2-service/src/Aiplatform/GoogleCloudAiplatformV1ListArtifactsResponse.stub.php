@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ListArtifactsResponse extends \Google\Collection
-{
-    protected $collection_key = 'artifacts';
-    protected $artifactsType = GoogleCloudAiplatformV1Artifact::class;
-    protected $artifactsDataType = 'array';
-    /**
-     * A token, which can be sent as ListArtifactsRequest.page_token to retrieve
-     * the next page. If this field is not populated, there are no subsequent
-     * pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The Artifacts retrieved from the MetadataStore.
-     *
-     * @param GoogleCloudAiplatformV1Artifact[] $artifacts
-     */
-    public function setArtifacts($artifacts)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ListArtifactsResponse extends \Google\Collection
     {
+        protected $collection_key = 'artifacts';
+        protected $artifactsType = GoogleCloudAiplatformV1Artifact::class;
+        protected $artifactsDataType = 'array';
+        /**
+         * A token, which can be sent as ListArtifactsRequest.page_token to retrieve
+         * the next page. If this field is not populated, there are no subsequent
+         * pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The Artifacts retrieved from the MetadataStore.
+         *
+         * @param GoogleCloudAiplatformV1Artifact[] $artifacts
+         */
+        public function setArtifacts($artifacts)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1Artifact[]
+         */
+        public function getArtifacts()
+        {
+        }
+        /**
+         * A token, which can be sent as ListArtifactsRequest.page_token to retrieve
+         * the next page. If this field is not populated, there are no subsequent
+         * pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1Artifact[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListArtifactsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArtifacts()
-    {
-    }
-    /**
-     * A token, which can be sent as ListArtifactsRequest.page_token to retrieve
-     * the next page. If this field is not populated, there are no subsequent
-     * pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ListArtifactsResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListArtifactsResponse
     {
     }
 }

@@ -8,6 +8,11 @@
  */
 namespace Aws\Endpoint\UseDualstackEndpoint;
 
+use Aws\AbstractConfigurationProvider;
+use Aws\CacheInterface;
+use Aws\ConfigurationProviderInterface;
+use Aws\Endpoint\UseDualstackEndpoint\Exception\ConfigurationException;
+use GuzzleHttp\Promise;
 /**
  * A configuration provider is a function that returns a promise that is
  * fulfilled with a {@see \Aws\Endpoint\UseDualstackEndpoint\onfigurationInterface}

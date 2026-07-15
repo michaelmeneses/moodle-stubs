@@ -21,80 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3RolloutConfig extends \Google\Collection
-{
-    protected $collection_key = 'rolloutSteps';
-    /**
-     * The conditions that are used to evaluate the failure of a rollout step. If
-     * not specified, no rollout steps will fail. E.g. "containment_rate < 10% OR
-     * average_turn_count < 3". See the [conditions reference](https://cloud.googl
-     * e.com/dialogflow/cx/docs/reference/condition).
-     *
-     * @var string
-     */
-    public $failureCondition;
-    /**
-     * The conditions that are used to evaluate the success of a rollout step. If
-     * not specified, all rollout steps will proceed to the next one unless
-     * failure conditions are met. E.g. "containment_rate > 60% AND callback_rate
-     * < 20%". See the [conditions reference](https://cloud.google.com/dialogflow/
-     * cx/docs/reference/condition).
-     *
-     * @var string
-     */
-    public $rolloutCondition;
-    protected $rolloutStepsType = GoogleCloudDialogflowCxV3RolloutConfigRolloutStep::class;
-    protected $rolloutStepsDataType = 'array';
-    /**
-     * The conditions that are used to evaluate the failure of a rollout step. If
-     * not specified, no rollout steps will fail. E.g. "containment_rate < 10% OR
-     * average_turn_count < 3". See the [conditions reference](https://cloud.googl
-     * e.com/dialogflow/cx/docs/reference/condition).
-     *
-     * @param string $failureCondition
-     */
-    public function setFailureCondition($failureCondition)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3RolloutConfig extends \Google\Collection
     {
+        protected $collection_key = 'rolloutSteps';
+        /**
+         * The conditions that are used to evaluate the failure of a rollout step. If
+         * not specified, no rollout steps will fail. E.g. "containment_rate < 10% OR
+         * average_turn_count < 3". See the [conditions reference](https://cloud.googl
+         * e.com/dialogflow/cx/docs/reference/condition).
+         *
+         * @var string
+         */
+        public $failureCondition;
+        /**
+         * The conditions that are used to evaluate the success of a rollout step. If
+         * not specified, all rollout steps will proceed to the next one unless
+         * failure conditions are met. E.g. "containment_rate > 60% AND callback_rate
+         * < 20%". See the [conditions reference](https://cloud.google.com/dialogflow/
+         * cx/docs/reference/condition).
+         *
+         * @var string
+         */
+        public $rolloutCondition;
+        protected $rolloutStepsType = GoogleCloudDialogflowCxV3RolloutConfigRolloutStep::class;
+        protected $rolloutStepsDataType = 'array';
+        /**
+         * The conditions that are used to evaluate the failure of a rollout step. If
+         * not specified, no rollout steps will fail. E.g. "containment_rate < 10% OR
+         * average_turn_count < 3". See the [conditions reference](https://cloud.googl
+         * e.com/dialogflow/cx/docs/reference/condition).
+         *
+         * @param string $failureCondition
+         */
+        public function setFailureCondition($failureCondition)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFailureCondition()
+        {
+        }
+        /**
+         * The conditions that are used to evaluate the success of a rollout step. If
+         * not specified, all rollout steps will proceed to the next one unless
+         * failure conditions are met. E.g. "containment_rate > 60% AND callback_rate
+         * < 20%". See the [conditions reference](https://cloud.google.com/dialogflow/
+         * cx/docs/reference/condition).
+         *
+         * @param string $rolloutCondition
+         */
+        public function setRolloutCondition($rolloutCondition)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRolloutCondition()
+        {
+        }
+        /**
+         * Steps to roll out a flow version. Steps should be sorted by percentage in
+         * ascending order.
+         *
+         * @param GoogleCloudDialogflowCxV3RolloutConfigRolloutStep[] $rolloutSteps
+         */
+        public function setRolloutSteps($rolloutSteps)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3RolloutConfigRolloutStep[]
+         */
+        public function getRolloutSteps()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3RolloutConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFailureCondition()
-    {
-    }
-    /**
-     * The conditions that are used to evaluate the success of a rollout step. If
-     * not specified, all rollout steps will proceed to the next one unless
-     * failure conditions are met. E.g. "containment_rate > 60% AND callback_rate
-     * < 20%". See the [conditions reference](https://cloud.google.com/dialogflow/
-     * cx/docs/reference/condition).
-     *
-     * @param string $rolloutCondition
-     */
-    public function setRolloutCondition($rolloutCondition)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRolloutCondition()
-    {
-    }
-    /**
-     * Steps to roll out a flow version. Steps should be sorted by percentage in
-     * ascending order.
-     *
-     * @param GoogleCloudDialogflowCxV3RolloutConfigRolloutStep[] $rolloutSteps
-     */
-    public function setRolloutSteps($rolloutSteps)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3RolloutConfigRolloutStep[]
-     */
-    public function getRolloutSteps()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3RolloutConfig extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3RolloutConfig
     {
     }
 }

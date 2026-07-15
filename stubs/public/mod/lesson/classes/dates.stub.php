@@ -8,6 +8,7 @@
  */
 namespace mod_lesson;
 
+use core\activity_dates;
 /**
  * Class for fetching the important dates in mod_lesson for a given module instance and a user.
  *

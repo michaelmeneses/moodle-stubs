@@ -21,83 +21,92 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class CacheInvalidationRule extends \Google\Collection
-{
-    protected $collection_key = 'cacheTags';
-    /**
-     * A list of cache tags used to identify cached objects.
-     *
-     *        - Cache tags are specified when the response is first cached, by
-     * setting    the `Cache-Tag` response header at the origin.    - Multiple
-     * cache tags in the same invalidation request are treated as    Boolean `OR`
-     * - for example, `tag1 OR tag2 OR tag3`.    - If other fields are also
-     * specified, these are treated as Boolean `AND`    with any tags.
-     *
-     * Up to 10 tags can be specified in a single invalidation request.
-     *
-     * @var string[]
-     */
-    public $cacheTags;
-    /**
-     * If set, this invalidation rule will only apply to requests with a Host
-     * header matching host.
-     *
-     * @var string
-     */
-    public $host;
-    /**
-     * @var string
-     */
-    public $path;
-    /**
-     * A list of cache tags used to identify cached objects.
-     *
-     *        - Cache tags are specified when the response is first cached, by
-     * setting    the `Cache-Tag` response header at the origin.    - Multiple
-     * cache tags in the same invalidation request are treated as    Boolean `OR`
-     * - for example, `tag1 OR tag2 OR tag3`.    - If other fields are also
-     * specified, these are treated as Boolean `AND`    with any tags.
-     *
-     * Up to 10 tags can be specified in a single invalidation request.
-     *
-     * @param string[] $cacheTags
-     */
-    public function setCacheTags($cacheTags)
+namespace Google\Service\Compute {
+    class CacheInvalidationRule extends \Google\Collection
     {
+        protected $collection_key = 'cacheTags';
+        /**
+         * A list of cache tags used to identify cached objects.
+         *
+         *        - Cache tags are specified when the response is first cached, by
+         * setting    the `Cache-Tag` response header at the origin.    - Multiple
+         * cache tags in the same invalidation request are treated as    Boolean `OR`
+         * - for example, `tag1 OR tag2 OR tag3`.    - If other fields are also
+         * specified, these are treated as Boolean `AND`    with any tags.
+         *
+         * Up to 10 tags can be specified in a single invalidation request.
+         *
+         * @var string[]
+         */
+        public $cacheTags;
+        /**
+         * If set, this invalidation rule will only apply to requests with a Host
+         * header matching host.
+         *
+         * @var string
+         */
+        public $host;
+        /**
+         * @var string
+         */
+        public $path;
+        /**
+         * A list of cache tags used to identify cached objects.
+         *
+         *        - Cache tags are specified when the response is first cached, by
+         * setting    the `Cache-Tag` response header at the origin.    - Multiple
+         * cache tags in the same invalidation request are treated as    Boolean `OR`
+         * - for example, `tag1 OR tag2 OR tag3`.    - If other fields are also
+         * specified, these are treated as Boolean `AND`    with any tags.
+         *
+         * Up to 10 tags can be specified in a single invalidation request.
+         *
+         * @param string[] $cacheTags
+         */
+        public function setCacheTags($cacheTags)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCacheTags()
+        {
+        }
+        /**
+         * If set, this invalidation rule will only apply to requests with a Host
+         * header matching host.
+         *
+         * @param string $host
+         */
+        public function setHost($host)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHost()
+        {
+        }
+        /**
+         * @param string $path
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Compute\CacheInvalidationRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCacheTags()
-    {
-    }
-    /**
-     * If set, this invalidation rule will only apply to requests with a Host
-     * header matching host.
-     *
-     * @param string $host
-     */
-    public function setHost($host)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHost()
-    {
-    }
-    /**
-     * @param string $path
-     */
-    public function setPath($path)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPath()
+    class Google_Service_Compute_CacheInvalidationRule extends \Google\Service\Compute\CacheInvalidationRule
     {
     }
 }

@@ -29,6 +29,7 @@
  */
 namespace core_competency;
 
+use lang_string;
 /**
  * Class for managing competencies in the plan (add/remove competencies for given plan).
  *

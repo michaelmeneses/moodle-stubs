@@ -21,59 +21,68 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class TableConstraintsForeignKeys extends \Google\Collection
-{
-    protected $collection_key = 'columnReferences';
-    protected $columnReferencesType = TableConstraintsForeignKeysColumnReferences::class;
-    protected $columnReferencesDataType = 'array';
-    /**
-     * Optional. Set only if the foreign key constraint is named.
-     *
-     * @var string
-     */
-    public $name;
-    protected $referencedTableType = TableConstraintsForeignKeysReferencedTable::class;
-    protected $referencedTableDataType = '';
-    /**
-     * Required. The columns that compose the foreign key.
-     *
-     * @param TableConstraintsForeignKeysColumnReferences[] $columnReferences
-     */
-    public function setColumnReferences($columnReferences)
+namespace Google\Service\Bigquery {
+    class TableConstraintsForeignKeys extends \Google\Collection
     {
+        protected $collection_key = 'columnReferences';
+        protected $columnReferencesType = TableConstraintsForeignKeysColumnReferences::class;
+        protected $columnReferencesDataType = 'array';
+        /**
+         * Optional. Set only if the foreign key constraint is named.
+         *
+         * @var string
+         */
+        public $name;
+        protected $referencedTableType = TableConstraintsForeignKeysReferencedTable::class;
+        protected $referencedTableDataType = '';
+        /**
+         * Required. The columns that compose the foreign key.
+         *
+         * @param TableConstraintsForeignKeysColumnReferences[] $columnReferences
+         */
+        public function setColumnReferences($columnReferences)
+        {
+        }
+        /**
+         * @return TableConstraintsForeignKeysColumnReferences[]
+         */
+        public function getColumnReferences()
+        {
+        }
+        /**
+         * Optional. Set only if the foreign key constraint is named.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param TableConstraintsForeignKeysReferencedTable $referencedTable
+         */
+        public function setReferencedTable(TableConstraintsForeignKeysReferencedTable $referencedTable)
+        {
+        }
+        /**
+         * @return TableConstraintsForeignKeysReferencedTable
+         */
+        public function getReferencedTable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TableConstraintsForeignKeysColumnReferences[]
+     * Runtime class alias of \Google\Service\Bigquery\TableConstraintsForeignKeys registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumnReferences()
-    {
-    }
-    /**
-     * Optional. Set only if the foreign key constraint is named.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param TableConstraintsForeignKeysReferencedTable $referencedTable
-     */
-    public function setReferencedTable(TableConstraintsForeignKeysReferencedTable $referencedTable)
-    {
-    }
-    /**
-     * @return TableConstraintsForeignKeysReferencedTable
-     */
-    public function getReferencedTable()
+    class Google_Service_Bigquery_TableConstraintsForeignKeys extends \Google\Service\Bigquery\TableConstraintsForeignKeys
     {
     }
 }

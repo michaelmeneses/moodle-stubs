@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise;
-
-class EnterprisesListResponse extends \Google\Collection
-{
-    protected $collection_key = 'enterprise';
-    protected $enterpriseType = Enterprise::class;
-    protected $enterpriseDataType = 'array';
-    /**
-     * An enterprise.
-     *
-     * @param Enterprise[] $enterprise
-     */
-    public function setEnterprise($enterprise)
+namespace Google\Service\AndroidEnterprise {
+    class EnterprisesListResponse extends \Google\Collection
     {
+        protected $collection_key = 'enterprise';
+        protected $enterpriseType = Enterprise::class;
+        protected $enterpriseDataType = 'array';
+        /**
+         * An enterprise.
+         *
+         * @param Enterprise[] $enterprise
+         */
+        public function setEnterprise($enterprise)
+        {
+        }
+        /**
+         * @return Enterprise[]
+         */
+        public function getEnterprise()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Enterprise[]
+     * Runtime class alias of \Google\Service\AndroidEnterprise\EnterprisesListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnterprise()
+    class Google_Service_AndroidEnterprise_EnterprisesListResponse extends \Google\Service\AndroidEnterprise\EnterprisesListResponse
     {
     }
 }

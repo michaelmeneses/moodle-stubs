@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class SearchLinkData extends \Google\Model
-{
-    /**
-     * @var float
-     */
-    public $kgEntityConfidence;
-    /**
-     * @var string
-     */
-    public $mid;
-    /**
-     * @var float
-     */
-    public $queryBroadnessScore;
-    /**
-     * @param float
-     */
-    public function setKgEntityConfidence($kgEntityConfidence)
+namespace Google\Service\CloudSearch {
+    class SearchLinkData extends \Google\Model
     {
+        /**
+         * @var float
+         */
+        public $kgEntityConfidence;
+        /**
+         * @var string
+         */
+        public $mid;
+        /**
+         * @var float
+         */
+        public $queryBroadnessScore;
+        /**
+         * @param float
+         */
+        public function setKgEntityConfidence($kgEntityConfidence)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getKgEntityConfidence()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMid($mid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMid()
+        {
+        }
+        /**
+         * @param float
+         */
+        public function setQueryBroadnessScore($queryBroadnessScore)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getQueryBroadnessScore()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\CloudSearch\SearchLinkData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKgEntityConfidence()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMid($mid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMid()
-    {
-    }
-    /**
-     * @param float
-     */
-    public function setQueryBroadnessScore($queryBroadnessScore)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getQueryBroadnessScore()
+    class Google_Service_CloudSearch_SearchLinkData extends \Google\Service\CloudSearch\SearchLinkData
     {
     }
 }

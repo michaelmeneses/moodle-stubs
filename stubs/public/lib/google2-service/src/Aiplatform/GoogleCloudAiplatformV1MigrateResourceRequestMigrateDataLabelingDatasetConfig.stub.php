@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1MigrateResourceRequestMigrateDataLabelingDatasetConfig extends \Google\Collection
-{
-    protected $collection_key = 'migrateDataLabelingAnnotatedDatasetConfigs';
-    /**
-     * Required. Full resource name of data labeling Dataset. Format:
-     * `projects/{project}/datasets/{dataset}`.
-     *
-     * @var string
-     */
-    public $dataset;
-    /**
-     * Optional. Display name of the Dataset in Vertex AI. System will pick a
-     * display name if unspecified.
-     *
-     * @var string
-     */
-    public $datasetDisplayName;
-    protected $migrateDataLabelingAnnotatedDatasetConfigsType = GoogleCloudAiplatformV1MigrateResourceRequestMigrateDataLabelingDatasetConfigMigrateDataLabelingAnnotatedDatasetConfig::class;
-    protected $migrateDataLabelingAnnotatedDatasetConfigsDataType = 'array';
-    /**
-     * Required. Full resource name of data labeling Dataset. Format:
-     * `projects/{project}/datasets/{dataset}`.
-     *
-     * @param string $dataset
-     */
-    public function setDataset($dataset)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1MigrateResourceRequestMigrateDataLabelingDatasetConfig extends \Google\Collection
     {
+        protected $collection_key = 'migrateDataLabelingAnnotatedDatasetConfigs';
+        /**
+         * Required. Full resource name of data labeling Dataset. Format:
+         * `projects/{project}/datasets/{dataset}`.
+         *
+         * @var string
+         */
+        public $dataset;
+        /**
+         * Optional. Display name of the Dataset in Vertex AI. System will pick a
+         * display name if unspecified.
+         *
+         * @var string
+         */
+        public $datasetDisplayName;
+        protected $migrateDataLabelingAnnotatedDatasetConfigsType = GoogleCloudAiplatformV1MigrateResourceRequestMigrateDataLabelingDatasetConfigMigrateDataLabelingAnnotatedDatasetConfig::class;
+        protected $migrateDataLabelingAnnotatedDatasetConfigsDataType = 'array';
+        /**
+         * Required. Full resource name of data labeling Dataset. Format:
+         * `projects/{project}/datasets/{dataset}`.
+         *
+         * @param string $dataset
+         */
+        public function setDataset($dataset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataset()
+        {
+        }
+        /**
+         * Optional. Display name of the Dataset in Vertex AI. System will pick a
+         * display name if unspecified.
+         *
+         * @param string $datasetDisplayName
+         */
+        public function setDatasetDisplayName($datasetDisplayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatasetDisplayName()
+        {
+        }
+        /**
+         * Optional. Configs for migrating AnnotatedDataset in
+         * datalabeling.googleapis.com to Vertex AI's SavedQuery. The specified
+         * AnnotatedDatasets have to belong to the datalabeling Dataset.
+         *
+         * @param GoogleCloudAiplatformV1MigrateResourceRequestMigrateDataLabelingDatasetConfigMigrateDataLabelingAnnotatedDatasetConfig[] $migrateDataLabelingAnnotatedDatasetConfigs
+         */
+        public function setMigrateDataLabelingAnnotatedDatasetConfigs($migrateDataLabelingAnnotatedDatasetConfigs)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1MigrateResourceRequestMigrateDataLabelingDatasetConfigMigrateDataLabelingAnnotatedDatasetConfig[]
+         */
+        public function getMigrateDataLabelingAnnotatedDatasetConfigs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1MigrateResourceRequestMigrateDataLabelingDatasetConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataset()
-    {
-    }
-    /**
-     * Optional. Display name of the Dataset in Vertex AI. System will pick a
-     * display name if unspecified.
-     *
-     * @param string $datasetDisplayName
-     */
-    public function setDatasetDisplayName($datasetDisplayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDatasetDisplayName()
-    {
-    }
-    /**
-     * Optional. Configs for migrating AnnotatedDataset in
-     * datalabeling.googleapis.com to Vertex AI's SavedQuery. The specified
-     * AnnotatedDatasets have to belong to the datalabeling Dataset.
-     *
-     * @param GoogleCloudAiplatformV1MigrateResourceRequestMigrateDataLabelingDatasetConfigMigrateDataLabelingAnnotatedDatasetConfig[] $migrateDataLabelingAnnotatedDatasetConfigs
-     */
-    public function setMigrateDataLabelingAnnotatedDatasetConfigs($migrateDataLabelingAnnotatedDatasetConfigs)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1MigrateResourceRequestMigrateDataLabelingDatasetConfigMigrateDataLabelingAnnotatedDatasetConfig[]
-     */
-    public function getMigrateDataLabelingAnnotatedDatasetConfigs()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1MigrateResourceRequestMigrateDataLabelingDatasetConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1MigrateResourceRequestMigrateDataLabelingDatasetConfig
     {
     }
 }

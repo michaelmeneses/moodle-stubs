@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIdentity;
-
-class GoogleAppsCloudidentityDevicesV1CancelWipeDeviceResponse extends \Google\Model
-{
-    protected $deviceType = GoogleAppsCloudidentityDevicesV1Device::class;
-    protected $deviceDataType = '';
-    /**
-     * Resultant Device object for the action. Note that asset tags will not be
-     * returned in the device object.
-     *
-     * @param GoogleAppsCloudidentityDevicesV1Device $device
-     */
-    public function setDevice(GoogleAppsCloudidentityDevicesV1Device $device)
+namespace Google\Service\CloudIdentity {
+    class GoogleAppsCloudidentityDevicesV1CancelWipeDeviceResponse extends \Google\Model
     {
+        protected $deviceType = GoogleAppsCloudidentityDevicesV1Device::class;
+        protected $deviceDataType = '';
+        /**
+         * Resultant Device object for the action. Note that asset tags will not be
+         * returned in the device object.
+         *
+         * @param GoogleAppsCloudidentityDevicesV1Device $device
+         */
+        public function setDevice(GoogleAppsCloudidentityDevicesV1Device $device)
+        {
+        }
+        /**
+         * @return GoogleAppsCloudidentityDevicesV1Device
+         */
+        public function getDevice()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAppsCloudidentityDevicesV1Device
+     * Runtime class alias of \Google\Service\CloudIdentity\GoogleAppsCloudidentityDevicesV1CancelWipeDeviceResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDevice()
+    class Google_Service_CloudIdentity_GoogleAppsCloudidentityDevicesV1CancelWipeDeviceResponse extends \Google\Service\CloudIdentity\GoogleAppsCloudidentityDevicesV1CancelWipeDeviceResponse
     {
     }
 }

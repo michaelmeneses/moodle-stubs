@@ -21,106 +21,115 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class PositionedObject extends \Google\Collection
-{
-    protected $collection_key = 'suggestedDeletionIds';
-    /**
-     * The ID of this positioned object.
-     *
-     * @var string
-     */
-    public $objectId;
-    protected $positionedObjectPropertiesType = PositionedObjectProperties::class;
-    protected $positionedObjectPropertiesDataType = '';
-    /**
-     * The suggested deletion IDs. If empty, then there are no suggested deletions
-     * of this content.
-     *
-     * @var string[]
-     */
-    public $suggestedDeletionIds;
-    /**
-     * The suggested insertion ID. If empty, then this is not a suggested
-     * insertion.
-     *
-     * @var string
-     */
-    public $suggestedInsertionId;
-    protected $suggestedPositionedObjectPropertiesChangesType = SuggestedPositionedObjectProperties::class;
-    protected $suggestedPositionedObjectPropertiesChangesDataType = 'map';
-    /**
-     * The ID of this positioned object.
-     *
-     * @param string $objectId
-     */
-    public function setObjectId($objectId)
+namespace Google\Service\Docs {
+    class PositionedObject extends \Google\Collection
     {
+        protected $collection_key = 'suggestedDeletionIds';
+        /**
+         * The ID of this positioned object.
+         *
+         * @var string
+         */
+        public $objectId;
+        protected $positionedObjectPropertiesType = PositionedObjectProperties::class;
+        protected $positionedObjectPropertiesDataType = '';
+        /**
+         * The suggested deletion IDs. If empty, then there are no suggested deletions
+         * of this content.
+         *
+         * @var string[]
+         */
+        public $suggestedDeletionIds;
+        /**
+         * The suggested insertion ID. If empty, then this is not a suggested
+         * insertion.
+         *
+         * @var string
+         */
+        public $suggestedInsertionId;
+        protected $suggestedPositionedObjectPropertiesChangesType = SuggestedPositionedObjectProperties::class;
+        protected $suggestedPositionedObjectPropertiesChangesDataType = 'map';
+        /**
+         * The ID of this positioned object.
+         *
+         * @param string $objectId
+         */
+        public function setObjectId($objectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectId()
+        {
+        }
+        /**
+         * The properties of this positioned object.
+         *
+         * @param PositionedObjectProperties $positionedObjectProperties
+         */
+        public function setPositionedObjectProperties(PositionedObjectProperties $positionedObjectProperties)
+        {
+        }
+        /**
+         * @return PositionedObjectProperties
+         */
+        public function getPositionedObjectProperties()
+        {
+        }
+        /**
+         * The suggested deletion IDs. If empty, then there are no suggested deletions
+         * of this content.
+         *
+         * @param string[] $suggestedDeletionIds
+         */
+        public function setSuggestedDeletionIds($suggestedDeletionIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSuggestedDeletionIds()
+        {
+        }
+        /**
+         * The suggested insertion ID. If empty, then this is not a suggested
+         * insertion.
+         *
+         * @param string $suggestedInsertionId
+         */
+        public function setSuggestedInsertionId($suggestedInsertionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSuggestedInsertionId()
+        {
+        }
+        /**
+         * The suggested changes to the positioned object properties, keyed by
+         * suggestion ID.
+         *
+         * @param SuggestedPositionedObjectProperties[] $suggestedPositionedObjectPropertiesChanges
+         */
+        public function setSuggestedPositionedObjectPropertiesChanges($suggestedPositionedObjectPropertiesChanges)
+        {
+        }
+        /**
+         * @return SuggestedPositionedObjectProperties[]
+         */
+        public function getSuggestedPositionedObjectPropertiesChanges()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Docs\PositionedObject registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getObjectId()
-    {
-    }
-    /**
-     * The properties of this positioned object.
-     *
-     * @param PositionedObjectProperties $positionedObjectProperties
-     */
-    public function setPositionedObjectProperties(PositionedObjectProperties $positionedObjectProperties)
-    {
-    }
-    /**
-     * @return PositionedObjectProperties
-     */
-    public function getPositionedObjectProperties()
-    {
-    }
-    /**
-     * The suggested deletion IDs. If empty, then there are no suggested deletions
-     * of this content.
-     *
-     * @param string[] $suggestedDeletionIds
-     */
-    public function setSuggestedDeletionIds($suggestedDeletionIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSuggestedDeletionIds()
-    {
-    }
-    /**
-     * The suggested insertion ID. If empty, then this is not a suggested
-     * insertion.
-     *
-     * @param string $suggestedInsertionId
-     */
-    public function setSuggestedInsertionId($suggestedInsertionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSuggestedInsertionId()
-    {
-    }
-    /**
-     * The suggested changes to the positioned object properties, keyed by
-     * suggestion ID.
-     *
-     * @param SuggestedPositionedObjectProperties[] $suggestedPositionedObjectPropertiesChanges
-     */
-    public function setSuggestedPositionedObjectPropertiesChanges($suggestedPositionedObjectPropertiesChanges)
-    {
-    }
-    /**
-     * @return SuggestedPositionedObjectProperties[]
-     */
-    public function getSuggestedPositionedObjectPropertiesChanges()
+    class Google_Service_Docs_PositionedObject extends \Google\Service\Docs\PositionedObject
     {
     }
 }

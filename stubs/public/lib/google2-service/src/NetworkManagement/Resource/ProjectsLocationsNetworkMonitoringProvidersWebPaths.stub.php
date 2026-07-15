@@ -21,52 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkManagement\Resource;
-
-/**
- * The "webPaths" collection of methods.
- * Typical usage is:
- *  <code>
- *   $networkmanagementService = new Google\Service\NetworkManagement(...);
- *   $webPaths = $networkmanagementService->projects_locations_networkMonitoringProviders_webPaths;
- *  </code>
- */
-class ProjectsLocationsNetworkMonitoringProvidersWebPaths extends \Google\Service\Resource
-{
+namespace Google\Service\NetworkManagement\Resource {
+    use Google\Service\NetworkManagement\ListWebPathsResponse;
+    use Google\Service\NetworkManagement\WebPath;
     /**
-     * Gets the WebPath resource. (webPaths.get)
-     *
-     * @param string $name Required. Name of the resource.. Format: projects/{projec
-     * t}/locations/{location}/networkMonitoringProviders/{network_monitoring_provid
-     * er}/webPaths/{web_path}
-     * @param array $optParams Optional parameters.
-     * @return WebPath
-     * @throws \Google\Service\Exception
+     * The "webPaths" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $networkmanagementService = new Google\Service\NetworkManagement(...);
+     *   $webPaths = $networkmanagementService->projects_locations_networkMonitoringProviders_webPaths;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class ProjectsLocationsNetworkMonitoringProvidersWebPaths extends \Google\Service\Resource
     {
+        /**
+         * Gets the WebPath resource. (webPaths.get)
+         *
+         * @param string $name Required. Name of the resource.. Format: projects/{projec
+         * t}/locations/{location}/networkMonitoringProviders/{network_monitoring_provid
+         * er}/webPaths/{web_path}
+         * @param array $optParams Optional parameters.
+         * @return WebPath
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists WebPaths for a given network monitoring provider.
+         * (webPaths.listProjectsLocationsNetworkMonitoringProvidersWebPaths)
+         *
+         * @param string $parent Required. Parent value for ListWebPathsRequest. Format:
+         * projects/{project}/locations/{location}/networkMonitoringProviders/{network_m
+         * onitoring_provider}
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Optional. The maximum number of web paths to return.
+         * The service may return fewer than this value. If unspecified, at most 20 web
+         * paths will be returned. The maximum value is 1000; values above 1000 will be
+         * coerced to 1000.
+         * @opt_param string pageToken Optional. A page token, received from a previous
+         * `ListWebPaths` call. Provide this to retrieve the subsequent page. When
+         * paginating, all other parameters provided to `ListWebPaths` must match the
+         * call that provided the page token.
+         * @return ListWebPathsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsNetworkMonitoringProvidersWebPaths($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists WebPaths for a given network monitoring provider.
-     * (webPaths.listProjectsLocationsNetworkMonitoringProvidersWebPaths)
-     *
-     * @param string $parent Required. Parent value for ListWebPathsRequest. Format:
-     * projects/{project}/locations/{location}/networkMonitoringProviders/{network_m
-     * onitoring_provider}
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Optional. The maximum number of web paths to return.
-     * The service may return fewer than this value. If unspecified, at most 20 web
-     * paths will be returned. The maximum value is 1000; values above 1000 will be
-     * coerced to 1000.
-     * @opt_param string pageToken Optional. A page token, received from a previous
-     * `ListWebPaths` call. Provide this to retrieve the subsequent page. When
-     * paginating, all other parameters provided to `ListWebPaths` must match the
-     * call that provided the page token.
-     * @return ListWebPathsResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\NetworkManagement\Resource\ProjectsLocationsNetworkMonitoringProvidersWebPaths registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listProjectsLocationsNetworkMonitoringProvidersWebPaths($parent, $optParams = [])
+    class Google_Service_NetworkManagement_Resource_ProjectsLocationsNetworkMonitoringProvidersWebPaths extends \Google\Service\NetworkManagement\Resource\ProjectsLocationsNetworkMonitoringProvidersWebPaths
     {
     }
 }

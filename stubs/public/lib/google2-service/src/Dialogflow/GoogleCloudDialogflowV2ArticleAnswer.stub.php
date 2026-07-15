@@ -21,137 +21,146 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2ArticleAnswer extends \Google\Collection
-{
-    protected $collection_key = 'snippets';
-    /**
-     * The name of answer record, in the format of
-     * "projects//locations//answerRecords/"
-     *
-     * @var string
-     */
-    public $answerRecord;
-    /**
-     * Article match confidence. The system's confidence score that this article
-     * is a good match for this conversation, as a value from 0.0 (completely
-     * uncertain) to 1.0 (completely certain).
-     *
-     * @var float
-     */
-    public $confidence;
-    /**
-     * A map that contains metadata about the answer and the document from which
-     * it originates.
-     *
-     * @var string[]
-     */
-    public $metadata;
-    /**
-     * Article snippets.
-     *
-     * @var string[]
-     */
-    public $snippets;
-    /**
-     * The article title.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * The article URI.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * The name of answer record, in the format of
-     * "projects//locations//answerRecords/"
-     *
-     * @param string $answerRecord
-     */
-    public function setAnswerRecord($answerRecord)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2ArticleAnswer extends \Google\Collection
     {
+        protected $collection_key = 'snippets';
+        /**
+         * The name of answer record, in the format of
+         * "projects//locations//answerRecords/"
+         *
+         * @var string
+         */
+        public $answerRecord;
+        /**
+         * Article match confidence. The system's confidence score that this article
+         * is a good match for this conversation, as a value from 0.0 (completely
+         * uncertain) to 1.0 (completely certain).
+         *
+         * @var float
+         */
+        public $confidence;
+        /**
+         * A map that contains metadata about the answer and the document from which
+         * it originates.
+         *
+         * @var string[]
+         */
+        public $metadata;
+        /**
+         * Article snippets.
+         *
+         * @var string[]
+         */
+        public $snippets;
+        /**
+         * The article title.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * The article URI.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * The name of answer record, in the format of
+         * "projects//locations//answerRecords/"
+         *
+         * @param string $answerRecord
+         */
+        public function setAnswerRecord($answerRecord)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnswerRecord()
+        {
+        }
+        /**
+         * Article match confidence. The system's confidence score that this article
+         * is a good match for this conversation, as a value from 0.0 (completely
+         * uncertain) to 1.0 (completely certain).
+         *
+         * @param float $confidence
+         */
+        public function setConfidence($confidence)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getConfidence()
+        {
+        }
+        /**
+         * A map that contains metadata about the answer and the document from which
+         * it originates.
+         *
+         * @param string[] $metadata
+         */
+        public function setMetadata($metadata)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * Article snippets.
+         *
+         * @param string[] $snippets
+         */
+        public function setSnippets($snippets)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSnippets()
+        {
+        }
+        /**
+         * The article title.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * The article URI.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2ArticleAnswer registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnswerRecord()
-    {
-    }
-    /**
-     * Article match confidence. The system's confidence score that this article
-     * is a good match for this conversation, as a value from 0.0 (completely
-     * uncertain) to 1.0 (completely certain).
-     *
-     * @param float $confidence
-     */
-    public function setConfidence($confidence)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getConfidence()
-    {
-    }
-    /**
-     * A map that contains metadata about the answer and the document from which
-     * it originates.
-     *
-     * @param string[] $metadata
-     */
-    public function setMetadata($metadata)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * Article snippets.
-     *
-     * @param string[] $snippets
-     */
-    public function setSnippets($snippets)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSnippets()
-    {
-    }
-    /**
-     * The article title.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
-    {
-    }
-    /**
-     * The article URI.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2ArticleAnswer extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2ArticleAnswer
     {
     }
 }

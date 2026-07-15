@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class SparkLoggingInfo extends \Google\Model
-{
-    /**
-     * Output only. Project ID where the Spark logs were written.
-     *
-     * @var string
-     */
-    public $projectId;
-    /**
-     * Output only. Resource type used for logging.
-     *
-     * @var string
-     */
-    public $resourceType;
-    /**
-     * Output only. Project ID where the Spark logs were written.
-     *
-     * @param string $projectId
-     */
-    public function setProjectId($projectId)
+namespace Google\Service\Bigquery {
+    class SparkLoggingInfo extends \Google\Model
     {
+        /**
+         * Output only. Project ID where the Spark logs were written.
+         *
+         * @var string
+         */
+        public $projectId;
+        /**
+         * Output only. Resource type used for logging.
+         *
+         * @var string
+         */
+        public $resourceType;
+        /**
+         * Output only. Project ID where the Spark logs were written.
+         *
+         * @param string $projectId
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
+        /**
+         * Output only. Resource type used for logging.
+         *
+         * @param string $resourceType
+         */
+        public function setResourceType($resourceType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Bigquery\SparkLoggingInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProjectId()
-    {
-    }
-    /**
-     * Output only. Resource type used for logging.
-     *
-     * @param string $resourceType
-     */
-    public function setResourceType($resourceType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceType()
+    class Google_Service_Bigquery_SparkLoggingInfo extends \Google\Service\Bigquery\SparkLoggingInfo
     {
     }
 }

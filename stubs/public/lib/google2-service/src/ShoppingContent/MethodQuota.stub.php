@@ -21,94 +21,103 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class MethodQuota extends \Google\Model
-{
-    /**
-     * Output only. The method name, for example `products.list`. Method name does
-     * not contain version because quota can be shared between different API
-     * versions of the same method.
-     *
-     * @var string
-     */
-    public $method;
-    /**
-     * Output only. The maximum number of calls allowed per day for the method.
-     *
-     * @var string
-     */
-    public $quotaLimit;
-    /**
-     * Output only. The maximum number of calls allowed per minute for the method.
-     *
-     * @var string
-     */
-    public $quotaMinuteLimit;
-    /**
-     * Output only. The current quota usage, meaning the number of calls already
-     * made to the method per day. Usage is reset every day at 12 PM midday UTC.
-     *
-     * @var string
-     */
-    public $quotaUsage;
-    /**
-     * Output only. The method name, for example `products.list`. Method name does
-     * not contain version because quota can be shared between different API
-     * versions of the same method.
-     *
-     * @param string $method
-     */
-    public function setMethod($method)
+namespace Google\Service\ShoppingContent {
+    class MethodQuota extends \Google\Model
     {
+        /**
+         * Output only. The method name, for example `products.list`. Method name does
+         * not contain version because quota can be shared between different API
+         * versions of the same method.
+         *
+         * @var string
+         */
+        public $method;
+        /**
+         * Output only. The maximum number of calls allowed per day for the method.
+         *
+         * @var string
+         */
+        public $quotaLimit;
+        /**
+         * Output only. The maximum number of calls allowed per minute for the method.
+         *
+         * @var string
+         */
+        public $quotaMinuteLimit;
+        /**
+         * Output only. The current quota usage, meaning the number of calls already
+         * made to the method per day. Usage is reset every day at 12 PM midday UTC.
+         *
+         * @var string
+         */
+        public $quotaUsage;
+        /**
+         * Output only. The method name, for example `products.list`. Method name does
+         * not contain version because quota can be shared between different API
+         * versions of the same method.
+         *
+         * @param string $method
+         */
+        public function setMethod($method)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMethod()
+        {
+        }
+        /**
+         * Output only. The maximum number of calls allowed per day for the method.
+         *
+         * @param string $quotaLimit
+         */
+        public function setQuotaLimit($quotaLimit)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQuotaLimit()
+        {
+        }
+        /**
+         * Output only. The maximum number of calls allowed per minute for the method.
+         *
+         * @param string $quotaMinuteLimit
+         */
+        public function setQuotaMinuteLimit($quotaMinuteLimit)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQuotaMinuteLimit()
+        {
+        }
+        /**
+         * Output only. The current quota usage, meaning the number of calls already
+         * made to the method per day. Usage is reset every day at 12 PM midday UTC.
+         *
+         * @param string $quotaUsage
+         */
+        public function setQuotaUsage($quotaUsage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQuotaUsage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\MethodQuota registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMethod()
-    {
-    }
-    /**
-     * Output only. The maximum number of calls allowed per day for the method.
-     *
-     * @param string $quotaLimit
-     */
-    public function setQuotaLimit($quotaLimit)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQuotaLimit()
-    {
-    }
-    /**
-     * Output only. The maximum number of calls allowed per minute for the method.
-     *
-     * @param string $quotaMinuteLimit
-     */
-    public function setQuotaMinuteLimit($quotaMinuteLimit)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQuotaMinuteLimit()
-    {
-    }
-    /**
-     * Output only. The current quota usage, meaning the number of calls already
-     * made to the method per day. Usage is reset every day at 12 PM midday UTC.
-     *
-     * @param string $quotaUsage
-     */
-    public function setQuotaUsage($quotaUsage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQuotaUsage()
+    class Google_Service_ShoppingContent_MethodQuota extends \Google\Service\ShoppingContent\MethodQuota
     {
     }
 }

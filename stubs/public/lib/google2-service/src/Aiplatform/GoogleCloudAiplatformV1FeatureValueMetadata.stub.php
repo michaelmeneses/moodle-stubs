@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1FeatureValueMetadata extends \Google\Model
-{
-    /**
-     * Feature generation timestamp. Typically, it is provided by user at feature
-     * ingestion time. If not, feature store will use the system timestamp when
-     * the data is ingested into feature store. Legacy Feature Store: For
-     * streaming ingestion, the time, aligned by days, must be no older than five
-     * years (1825 days) and no later than one year (366 days) in the future.
-     *
-     * @var string
-     */
-    public $generateTime;
-    /**
-     * Feature generation timestamp. Typically, it is provided by user at feature
-     * ingestion time. If not, feature store will use the system timestamp when
-     * the data is ingested into feature store. Legacy Feature Store: For
-     * streaming ingestion, the time, aligned by days, must be no older than five
-     * years (1825 days) and no later than one year (366 days) in the future.
-     *
-     * @param string $generateTime
-     */
-    public function setGenerateTime($generateTime)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1FeatureValueMetadata extends \Google\Model
     {
+        /**
+         * Feature generation timestamp. Typically, it is provided by user at feature
+         * ingestion time. If not, feature store will use the system timestamp when
+         * the data is ingested into feature store. Legacy Feature Store: For
+         * streaming ingestion, the time, aligned by days, must be no older than five
+         * years (1825 days) and no later than one year (366 days) in the future.
+         *
+         * @var string
+         */
+        public $generateTime;
+        /**
+         * Feature generation timestamp. Typically, it is provided by user at feature
+         * ingestion time. If not, feature store will use the system timestamp when
+         * the data is ingested into feature store. Legacy Feature Store: For
+         * streaming ingestion, the time, aligned by days, must be no older than five
+         * years (1825 days) and no later than one year (366 days) in the future.
+         *
+         * @param string $generateTime
+         */
+        public function setGenerateTime($generateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGenerateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1FeatureValueMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGenerateTime()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1FeatureValueMetadata extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1FeatureValueMetadata
     {
     }
 }

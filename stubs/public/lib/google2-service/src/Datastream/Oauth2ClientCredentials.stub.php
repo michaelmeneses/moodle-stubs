@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class Oauth2ClientCredentials extends \Google\Model
-{
-    /**
-     * Required. Client ID for Salesforce OAuth2 Client Credentials.
-     *
-     * @var string
-     */
-    public $clientId;
-    /**
-     * Optional. Client secret for Salesforce OAuth2 Client Credentials. Mutually
-     * exclusive with the `secret_manager_stored_client_secret` field.
-     *
-     * @var string
-     */
-    public $clientSecret;
-    /**
-     * Optional. A reference to a Secret Manager resource name storing the
-     * Salesforce OAuth2 client_secret. Mutually exclusive with the
-     * `client_secret` field.
-     *
-     * @var string
-     */
-    public $secretManagerStoredClientSecret;
-    /**
-     * Required. Client ID for Salesforce OAuth2 Client Credentials.
-     *
-     * @param string $clientId
-     */
-    public function setClientId($clientId)
+namespace Google\Service\Datastream {
+    class Oauth2ClientCredentials extends \Google\Model
     {
+        /**
+         * Required. Client ID for Salesforce OAuth2 Client Credentials.
+         *
+         * @var string
+         */
+        public $clientId;
+        /**
+         * Optional. Client secret for Salesforce OAuth2 Client Credentials. Mutually
+         * exclusive with the `secret_manager_stored_client_secret` field.
+         *
+         * @var string
+         */
+        public $clientSecret;
+        /**
+         * Optional. A reference to a Secret Manager resource name storing the
+         * Salesforce OAuth2 client_secret. Mutually exclusive with the
+         * `client_secret` field.
+         *
+         * @var string
+         */
+        public $secretManagerStoredClientSecret;
+        /**
+         * Required. Client ID for Salesforce OAuth2 Client Credentials.
+         *
+         * @param string $clientId
+         */
+        public function setClientId($clientId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClientId()
+        {
+        }
+        /**
+         * Optional. Client secret for Salesforce OAuth2 Client Credentials. Mutually
+         * exclusive with the `secret_manager_stored_client_secret` field.
+         *
+         * @param string $clientSecret
+         */
+        public function setClientSecret($clientSecret)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClientSecret()
+        {
+        }
+        /**
+         * Optional. A reference to a Secret Manager resource name storing the
+         * Salesforce OAuth2 client_secret. Mutually exclusive with the
+         * `client_secret` field.
+         *
+         * @param string $secretManagerStoredClientSecret
+         */
+        public function setSecretManagerStoredClientSecret($secretManagerStoredClientSecret)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSecretManagerStoredClientSecret()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Datastream\Oauth2ClientCredentials registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClientId()
-    {
-    }
-    /**
-     * Optional. Client secret for Salesforce OAuth2 Client Credentials. Mutually
-     * exclusive with the `secret_manager_stored_client_secret` field.
-     *
-     * @param string $clientSecret
-     */
-    public function setClientSecret($clientSecret)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getClientSecret()
-    {
-    }
-    /**
-     * Optional. A reference to a Secret Manager resource name storing the
-     * Salesforce OAuth2 client_secret. Mutually exclusive with the
-     * `client_secret` field.
-     *
-     * @param string $secretManagerStoredClientSecret
-     */
-    public function setSecretManagerStoredClientSecret($secretManagerStoredClientSecret)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSecretManagerStoredClientSecret()
+    class Google_Service_Datastream_Oauth2ClientCredentials extends \Google\Service\Datastream\Oauth2ClientCredentials
     {
     }
 }

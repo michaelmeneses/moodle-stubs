@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class FutureReservationSpecificSKUProperties extends \Google\Model
-{
-    protected $instancePropertiesType = AllocationSpecificSKUAllocationReservedInstanceProperties::class;
-    protected $instancePropertiesDataType = '';
-    /**
-     * The instance template that will be used to populate the
-     * ReservedInstanceProperties of the future reservation
-     *
-     * @var string
-     */
-    public $sourceInstanceTemplate;
-    /**
-     * Total number of instances for which capacity assurance is requested at a
-     * future time period.
-     *
-     * @var string
-     */
-    public $totalCount;
-    /**
-     * Properties of the SKU instances being reserved.
-     *
-     * @param AllocationSpecificSKUAllocationReservedInstanceProperties $instanceProperties
-     */
-    public function setInstanceProperties(AllocationSpecificSKUAllocationReservedInstanceProperties $instanceProperties)
+namespace Google\Service\Compute {
+    class FutureReservationSpecificSKUProperties extends \Google\Model
     {
+        protected $instancePropertiesType = AllocationSpecificSKUAllocationReservedInstanceProperties::class;
+        protected $instancePropertiesDataType = '';
+        /**
+         * The instance template that will be used to populate the
+         * ReservedInstanceProperties of the future reservation
+         *
+         * @var string
+         */
+        public $sourceInstanceTemplate;
+        /**
+         * Total number of instances for which capacity assurance is requested at a
+         * future time period.
+         *
+         * @var string
+         */
+        public $totalCount;
+        /**
+         * Properties of the SKU instances being reserved.
+         *
+         * @param AllocationSpecificSKUAllocationReservedInstanceProperties $instanceProperties
+         */
+        public function setInstanceProperties(AllocationSpecificSKUAllocationReservedInstanceProperties $instanceProperties)
+        {
+        }
+        /**
+         * @return AllocationSpecificSKUAllocationReservedInstanceProperties
+         */
+        public function getInstanceProperties()
+        {
+        }
+        /**
+         * The instance template that will be used to populate the
+         * ReservedInstanceProperties of the future reservation
+         *
+         * @param string $sourceInstanceTemplate
+         */
+        public function setSourceInstanceTemplate($sourceInstanceTemplate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceInstanceTemplate()
+        {
+        }
+        /**
+         * Total number of instances for which capacity assurance is requested at a
+         * future time period.
+         *
+         * @param string $totalCount
+         */
+        public function setTotalCount($totalCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AllocationSpecificSKUAllocationReservedInstanceProperties
+     * Runtime class alias of \Google\Service\Compute\FutureReservationSpecificSKUProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstanceProperties()
-    {
-    }
-    /**
-     * The instance template that will be used to populate the
-     * ReservedInstanceProperties of the future reservation
-     *
-     * @param string $sourceInstanceTemplate
-     */
-    public function setSourceInstanceTemplate($sourceInstanceTemplate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourceInstanceTemplate()
-    {
-    }
-    /**
-     * Total number of instances for which capacity assurance is requested at a
-     * future time period.
-     *
-     * @param string $totalCount
-     */
-    public function setTotalCount($totalCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalCount()
+    class Google_Service_Compute_FutureReservationSpecificSKUProperties extends \Google\Service\Compute\FutureReservationSpecificSKUProperties
     {
     }
 }

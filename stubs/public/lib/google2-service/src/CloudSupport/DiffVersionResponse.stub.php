@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSupport;
-
-class DiffVersionResponse extends \Google\Model
-{
-    /**
-     * # gdata.* are outside protos with mising documentation
-     *
-     * @var string
-     */
-    public $objectSizeBytes;
-    /**
-     * # gdata.* are outside protos with mising documentation
-     *
-     * @var string
-     */
-    public $objectVersion;
-    /**
-     * # gdata.* are outside protos with mising documentation
-     *
-     * @param string $objectSizeBytes
-     */
-    public function setObjectSizeBytes($objectSizeBytes)
+namespace Google\Service\CloudSupport {
+    class DiffVersionResponse extends \Google\Model
     {
+        /**
+         * # gdata.* are outside protos with mising documentation
+         *
+         * @var string
+         */
+        public $objectSizeBytes;
+        /**
+         * # gdata.* are outside protos with mising documentation
+         *
+         * @var string
+         */
+        public $objectVersion;
+        /**
+         * # gdata.* are outside protos with mising documentation
+         *
+         * @param string $objectSizeBytes
+         */
+        public function setObjectSizeBytes($objectSizeBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectSizeBytes()
+        {
+        }
+        /**
+         * # gdata.* are outside protos with mising documentation
+         *
+         * @param string $objectVersion
+         */
+        public function setObjectVersion($objectVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSupport\DiffVersionResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getObjectSizeBytes()
-    {
-    }
-    /**
-     * # gdata.* are outside protos with mising documentation
-     *
-     * @param string $objectVersion
-     */
-    public function setObjectVersion($objectVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObjectVersion()
+    class Google_Service_CloudSupport_DiffVersionResponse extends \Google\Service\CloudSupport\DiffVersionResponse
     {
     }
 }

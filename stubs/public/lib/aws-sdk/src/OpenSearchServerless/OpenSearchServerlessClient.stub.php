@@ -8,6 +8,7 @@
  */
 namespace Aws\OpenSearchServerless;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **OpenSearch Service Serverless** service.
  * @method \Aws\Result batchGetCollection(array $args = [])

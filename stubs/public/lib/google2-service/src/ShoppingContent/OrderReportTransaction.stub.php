@@ -21,148 +21,157 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class OrderReportTransaction extends \Google\Model
-{
-    protected $disbursementAmountType = Price::class;
-    protected $disbursementAmountDataType = '';
-    /**
-     * @var string
-     */
-    public $disbursementCreationDate;
-    /**
-     * @var string
-     */
-    public $disbursementDate;
-    /**
-     * @var string
-     */
-    public $disbursementId;
-    /**
-     * @var string
-     */
-    public $merchantId;
-    /**
-     * @var string
-     */
-    public $merchantOrderId;
-    /**
-     * @var string
-     */
-    public $orderId;
-    protected $productAmountType = ProductAmount::class;
-    protected $productAmountDataType = '';
-    /**
-     * @var string
-     */
-    public $transactionDate;
-    /**
-     * @param Price
-     */
-    public function setDisbursementAmount(Price $disbursementAmount)
+namespace Google\Service\ShoppingContent {
+    class OrderReportTransaction extends \Google\Model
     {
+        protected $disbursementAmountType = Price::class;
+        protected $disbursementAmountDataType = '';
+        /**
+         * @var string
+         */
+        public $disbursementCreationDate;
+        /**
+         * @var string
+         */
+        public $disbursementDate;
+        /**
+         * @var string
+         */
+        public $disbursementId;
+        /**
+         * @var string
+         */
+        public $merchantId;
+        /**
+         * @var string
+         */
+        public $merchantOrderId;
+        /**
+         * @var string
+         */
+        public $orderId;
+        protected $productAmountType = ProductAmount::class;
+        protected $productAmountDataType = '';
+        /**
+         * @var string
+         */
+        public $transactionDate;
+        /**
+         * @param Price
+         */
+        public function setDisbursementAmount(Price $disbursementAmount)
+        {
+        }
+        /**
+         * @return Price
+         */
+        public function getDisbursementAmount()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDisbursementCreationDate($disbursementCreationDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisbursementCreationDate()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDisbursementDate($disbursementDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisbursementDate()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDisbursementId($disbursementId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisbursementId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMerchantId($merchantId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMerchantId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMerchantOrderId($merchantOrderId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMerchantOrderId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOrderId($orderId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOrderId()
+        {
+        }
+        /**
+         * @param ProductAmount
+         */
+        public function setProductAmount(ProductAmount $productAmount)
+        {
+        }
+        /**
+         * @return ProductAmount
+         */
+        public function getProductAmount()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTransactionDate($transactionDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTransactionDate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Price
+     * Runtime class alias of \Google\Service\ShoppingContent\OrderReportTransaction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisbursementAmount()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDisbursementCreationDate($disbursementCreationDate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisbursementCreationDate()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDisbursementDate($disbursementDate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisbursementDate()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDisbursementId($disbursementId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisbursementId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMerchantId($merchantId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMerchantId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMerchantOrderId($merchantOrderId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMerchantOrderId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOrderId($orderId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOrderId()
-    {
-    }
-    /**
-     * @param ProductAmount
-     */
-    public function setProductAmount(ProductAmount $productAmount)
-    {
-    }
-    /**
-     * @return ProductAmount
-     */
-    public function getProductAmount()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTransactionDate($transactionDate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTransactionDate()
+    class Google_Service_ShoppingContent_OrderReportTransaction extends \Google\Service\ShoppingContent\OrderReportTransaction
     {
     }
 }

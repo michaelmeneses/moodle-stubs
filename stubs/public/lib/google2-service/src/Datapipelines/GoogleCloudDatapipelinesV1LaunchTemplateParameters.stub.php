@@ -21,110 +21,119 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datapipelines;
-
-class GoogleCloudDatapipelinesV1LaunchTemplateParameters extends \Google\Model
-{
-    protected $environmentType = GoogleCloudDatapipelinesV1RuntimeEnvironment::class;
-    protected $environmentDataType = '';
-    /**
-     * Required. The job name to use for the created job.
-     *
-     * @var string
-     */
-    public $jobName;
-    /**
-     * The runtime parameters to pass to the job.
-     *
-     * @var string[]
-     */
-    public $parameters;
-    /**
-     * Map of transform name prefixes of the job to be replaced to the
-     * corresponding name prefixes of the new job. Only applicable when updating a
-     * pipeline.
-     *
-     * @var string[]
-     */
-    public $transformNameMapping;
-    /**
-     * If set, replace the existing pipeline with the name specified by jobName
-     * with this pipeline, preserving state.
-     *
-     * @var bool
-     */
-    public $update;
-    /**
-     * The runtime environment for the job.
-     *
-     * @param GoogleCloudDatapipelinesV1RuntimeEnvironment $environment
-     */
-    public function setEnvironment(GoogleCloudDatapipelinesV1RuntimeEnvironment $environment)
+namespace Google\Service\Datapipelines {
+    class GoogleCloudDatapipelinesV1LaunchTemplateParameters extends \Google\Model
     {
+        protected $environmentType = GoogleCloudDatapipelinesV1RuntimeEnvironment::class;
+        protected $environmentDataType = '';
+        /**
+         * Required. The job name to use for the created job.
+         *
+         * @var string
+         */
+        public $jobName;
+        /**
+         * The runtime parameters to pass to the job.
+         *
+         * @var string[]
+         */
+        public $parameters;
+        /**
+         * Map of transform name prefixes of the job to be replaced to the
+         * corresponding name prefixes of the new job. Only applicable when updating a
+         * pipeline.
+         *
+         * @var string[]
+         */
+        public $transformNameMapping;
+        /**
+         * If set, replace the existing pipeline with the name specified by jobName
+         * with this pipeline, preserving state.
+         *
+         * @var bool
+         */
+        public $update;
+        /**
+         * The runtime environment for the job.
+         *
+         * @param GoogleCloudDatapipelinesV1RuntimeEnvironment $environment
+         */
+        public function setEnvironment(GoogleCloudDatapipelinesV1RuntimeEnvironment $environment)
+        {
+        }
+        /**
+         * @return GoogleCloudDatapipelinesV1RuntimeEnvironment
+         */
+        public function getEnvironment()
+        {
+        }
+        /**
+         * Required. The job name to use for the created job.
+         *
+         * @param string $jobName
+         */
+        public function setJobName($jobName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getJobName()
+        {
+        }
+        /**
+         * The runtime parameters to pass to the job.
+         *
+         * @param string[] $parameters
+         */
+        public function setParameters($parameters)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getParameters()
+        {
+        }
+        /**
+         * Map of transform name prefixes of the job to be replaced to the
+         * corresponding name prefixes of the new job. Only applicable when updating a
+         * pipeline.
+         *
+         * @param string[] $transformNameMapping
+         */
+        public function setTransformNameMapping($transformNameMapping)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTransformNameMapping()
+        {
+        }
+        /**
+         * If set, replace the existing pipeline with the name specified by jobName
+         * with this pipeline, preserving state.
+         *
+         * @param bool $update
+         */
+        public function setUpdate($update)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUpdate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatapipelinesV1RuntimeEnvironment
+     * Runtime class alias of \Google\Service\Datapipelines\GoogleCloudDatapipelinesV1LaunchTemplateParameters registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnvironment()
-    {
-    }
-    /**
-     * Required. The job name to use for the created job.
-     *
-     * @param string $jobName
-     */
-    public function setJobName($jobName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getJobName()
-    {
-    }
-    /**
-     * The runtime parameters to pass to the job.
-     *
-     * @param string[] $parameters
-     */
-    public function setParameters($parameters)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getParameters()
-    {
-    }
-    /**
-     * Map of transform name prefixes of the job to be replaced to the
-     * corresponding name prefixes of the new job. Only applicable when updating a
-     * pipeline.
-     *
-     * @param string[] $transformNameMapping
-     */
-    public function setTransformNameMapping($transformNameMapping)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTransformNameMapping()
-    {
-    }
-    /**
-     * If set, replace the existing pipeline with the name specified by jobName
-     * with this pipeline, preserving state.
-     *
-     * @param bool $update
-     */
-    public function setUpdate($update)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUpdate()
+    class Google_Service_Datapipelines_GoogleCloudDatapipelinesV1LaunchTemplateParameters extends \Google\Service\Datapipelines\GoogleCloudDatapipelinesV1LaunchTemplateParameters
     {
     }
 }

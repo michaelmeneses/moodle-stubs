@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Iam;
-
-class GoogleIamAdminV1AuditDataPermissionDelta extends \Google\Collection
-{
-    protected $collection_key = 'removedPermissions';
-    /**
-     * Added permissions.
-     *
-     * @var string[]
-     */
-    public $addedPermissions;
-    /**
-     * Removed permissions.
-     *
-     * @var string[]
-     */
-    public $removedPermissions;
-    /**
-     * Added permissions.
-     *
-     * @param string[] $addedPermissions
-     */
-    public function setAddedPermissions($addedPermissions)
+namespace Google\Service\Iam {
+    class GoogleIamAdminV1AuditDataPermissionDelta extends \Google\Collection
     {
+        protected $collection_key = 'removedPermissions';
+        /**
+         * Added permissions.
+         *
+         * @var string[]
+         */
+        public $addedPermissions;
+        /**
+         * Removed permissions.
+         *
+         * @var string[]
+         */
+        public $removedPermissions;
+        /**
+         * Added permissions.
+         *
+         * @param string[] $addedPermissions
+         */
+        public function setAddedPermissions($addedPermissions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAddedPermissions()
+        {
+        }
+        /**
+         * Removed permissions.
+         *
+         * @param string[] $removedPermissions
+         */
+        public function setRemovedPermissions($removedPermissions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRemovedPermissions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Iam\GoogleIamAdminV1AuditDataPermissionDelta registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddedPermissions()
-    {
-    }
-    /**
-     * Removed permissions.
-     *
-     * @param string[] $removedPermissions
-     */
-    public function setRemovedPermissions($removedPermissions)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRemovedPermissions()
+    class Google_Service_Iam_GoogleIamAdminV1AuditDataPermissionDelta extends \Google\Service\Iam\GoogleIamAdminV1AuditDataPermissionDelta
     {
     }
 }

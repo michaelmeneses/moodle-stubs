@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CivicInfo;
-
-class GeographicDivision extends \Google\Collection
-{
-    protected $collection_key = 'officeIndices';
-    /**
-     * @var string[]
-     */
-    public $alsoKnownAs;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string[]
-     */
-    public $officeIndices;
-    /**
-     * @param string[]
-     */
-    public function setAlsoKnownAs($alsoKnownAs)
+namespace Google\Service\CivicInfo {
+    class GeographicDivision extends \Google\Collection
     {
+        protected $collection_key = 'officeIndices';
+        /**
+         * @var string[]
+         */
+        public $alsoKnownAs;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string[]
+         */
+        public $officeIndices;
+        /**
+         * @param string[]
+         */
+        public function setAlsoKnownAs($alsoKnownAs)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAlsoKnownAs()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setOfficeIndices($officeIndices)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getOfficeIndices()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CivicInfo\GeographicDivision registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAlsoKnownAs()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setOfficeIndices($officeIndices)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getOfficeIndices()
+    class Google_Service_CivicInfo_GeographicDivision extends \Google\Service\CivicInfo\GeographicDivision
     {
     }
 }

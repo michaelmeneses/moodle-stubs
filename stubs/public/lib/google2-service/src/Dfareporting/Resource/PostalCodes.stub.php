@@ -21,39 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting\Resource;
-
-/**
- * The "postalCodes" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dfareportingService = new Google\Service\Dfareporting(...);
- *   $postalCodes = $dfareportingService->postalCodes;
- *  </code>
- */
-class PostalCodes extends \Google\Service\Resource
-{
+namespace Google\Service\Dfareporting\Resource {
+    use Google\Service\Dfareporting\PostalCode;
+    use Google\Service\Dfareporting\PostalCodesListResponse;
     /**
-     * Gets one postal code by ID. (postalCodes.get)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param string $code Postal code ID.
-     * @param array $optParams Optional parameters.
-     * @return PostalCode
-     * @throws \Google\Service\Exception
+     * The "postalCodes" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dfareportingService = new Google\Service\Dfareporting(...);
+     *   $postalCodes = $dfareportingService->postalCodes;
+     *  </code>
      */
-    public function get($profileId, $code, $optParams = [])
+    class PostalCodes extends \Google\Service\Resource
     {
+        /**
+         * Gets one postal code by ID. (postalCodes.get)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param string $code Postal code ID.
+         * @param array $optParams Optional parameters.
+         * @return PostalCode
+         * @throws \Google\Service\Exception
+         */
+        public function get($profileId, $code, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves a list of postal codes. (postalCodes.listPostalCodes)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param array $optParams Optional parameters.
+         * @return PostalCodesListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listPostalCodes($profileId, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Retrieves a list of postal codes. (postalCodes.listPostalCodes)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param array $optParams Optional parameters.
-     * @return PostalCodesListResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Dfareporting\Resource\PostalCodes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listPostalCodes($profileId, $optParams = [])
+    class Google_Service_Dfareporting_Resource_PostalCodes extends \Google\Service\Dfareporting\Resource\PostalCodes
     {
     }
 }

@@ -21,80 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class IdentityServiceServerConfig extends \Google\Model
-{
-    /**
-     * Optional. Contains a Base64 encoded, PEM formatted certificate authority
-     * certificate for the LDAP server. This must be provided for the "ldaps" and
-     * "startTLS" connections.
-     *
-     * @var string
-     */
-    public $certificateAuthorityData;
-    /**
-     * Optional. Defines the connection type to communicate with the LDAP server.
-     * If `starttls` or `ldaps` is specified, the certificate_authority_data
-     * should not be empty.
-     *
-     * @var string
-     */
-    public $connectionType;
-    /**
-     * Required. Defines the hostname or IP of the LDAP server. Port is optional
-     * and will default to 389, if unspecified. For example, "ldap.server.example"
-     * or "10.10.10.10:389".
-     *
-     * @var string
-     */
-    public $host;
-    /**
-     * Optional. Contains a Base64 encoded, PEM formatted certificate authority
-     * certificate for the LDAP server. This must be provided for the "ldaps" and
-     * "startTLS" connections.
-     *
-     * @param string $certificateAuthorityData
-     */
-    public function setCertificateAuthorityData($certificateAuthorityData)
+namespace Google\Service\GKEHub {
+    class IdentityServiceServerConfig extends \Google\Model
     {
+        /**
+         * Optional. Contains a Base64 encoded, PEM formatted certificate authority
+         * certificate for the LDAP server. This must be provided for the "ldaps" and
+         * "startTLS" connections.
+         *
+         * @var string
+         */
+        public $certificateAuthorityData;
+        /**
+         * Optional. Defines the connection type to communicate with the LDAP server.
+         * If `starttls` or `ldaps` is specified, the certificate_authority_data
+         * should not be empty.
+         *
+         * @var string
+         */
+        public $connectionType;
+        /**
+         * Required. Defines the hostname or IP of the LDAP server. Port is optional
+         * and will default to 389, if unspecified. For example, "ldap.server.example"
+         * or "10.10.10.10:389".
+         *
+         * @var string
+         */
+        public $host;
+        /**
+         * Optional. Contains a Base64 encoded, PEM formatted certificate authority
+         * certificate for the LDAP server. This must be provided for the "ldaps" and
+         * "startTLS" connections.
+         *
+         * @param string $certificateAuthorityData
+         */
+        public function setCertificateAuthorityData($certificateAuthorityData)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCertificateAuthorityData()
+        {
+        }
+        /**
+         * Optional. Defines the connection type to communicate with the LDAP server.
+         * If `starttls` or `ldaps` is specified, the certificate_authority_data
+         * should not be empty.
+         *
+         * @param string $connectionType
+         */
+        public function setConnectionType($connectionType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConnectionType()
+        {
+        }
+        /**
+         * Required. Defines the hostname or IP of the LDAP server. Port is optional
+         * and will default to 389, if unspecified. For example, "ldap.server.example"
+         * or "10.10.10.10:389".
+         *
+         * @param string $host
+         */
+        public function setHost($host)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHost()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEHub\IdentityServiceServerConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCertificateAuthorityData()
-    {
-    }
-    /**
-     * Optional. Defines the connection type to communicate with the LDAP server.
-     * If `starttls` or `ldaps` is specified, the certificate_authority_data
-     * should not be empty.
-     *
-     * @param string $connectionType
-     */
-    public function setConnectionType($connectionType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getConnectionType()
-    {
-    }
-    /**
-     * Required. Defines the hostname or IP of the LDAP server. Port is optional
-     * and will default to 389, if unspecified. For example, "ldap.server.example"
-     * or "10.10.10.10:389".
-     *
-     * @param string $host
-     */
-    public function setHost($host)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHost()
+    class Google_Service_GKEHub_IdentityServiceServerConfig extends \Google\Service\GKEHub\IdentityServiceServerConfig
     {
     }
 }

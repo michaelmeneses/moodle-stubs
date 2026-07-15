@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class MultiKey extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $clientAssignedPermId;
-    /**
-     * @var string
-     */
-    public $serverId;
-    /**
-     * @param string
-     */
-    public function setClientAssignedPermId($clientAssignedPermId)
+namespace Google\Service\CloudSearch {
+    class MultiKey extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $clientAssignedPermId;
+        /**
+         * @var string
+         */
+        public $serverId;
+        /**
+         * @param string
+         */
+        public function setClientAssignedPermId($clientAssignedPermId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClientAssignedPermId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setServerId($serverId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServerId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\MultiKey registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClientAssignedPermId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setServerId($serverId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServerId()
+    class Google_Service_CloudSearch_MultiKey extends \Google\Service\CloudSearch\MultiKey
     {
     }
 }

@@ -21,100 +21,109 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class GridData extends \Google\Collection
-{
-    protected $collection_key = 'rowMetadata';
-    protected $columnMetadataType = DimensionProperties::class;
-    protected $columnMetadataDataType = 'array';
-    protected $rowDataType = RowData::class;
-    protected $rowDataDataType = 'array';
-    protected $rowMetadataType = DimensionProperties::class;
-    protected $rowMetadataDataType = 'array';
-    /**
-     * The first column this GridData refers to, zero-based.
-     *
-     * @var int
-     */
-    public $startColumn;
-    /**
-     * The first row this GridData refers to, zero-based.
-     *
-     * @var int
-     */
-    public $startRow;
-    /**
-     * Metadata about the requested columns in the grid, starting with the column
-     * in start_column.
-     *
-     * @param DimensionProperties[] $columnMetadata
-     */
-    public function setColumnMetadata($columnMetadata)
+namespace Google\Service\Sheets {
+    class GridData extends \Google\Collection
     {
+        protected $collection_key = 'rowMetadata';
+        protected $columnMetadataType = DimensionProperties::class;
+        protected $columnMetadataDataType = 'array';
+        protected $rowDataType = RowData::class;
+        protected $rowDataDataType = 'array';
+        protected $rowMetadataType = DimensionProperties::class;
+        protected $rowMetadataDataType = 'array';
+        /**
+         * The first column this GridData refers to, zero-based.
+         *
+         * @var int
+         */
+        public $startColumn;
+        /**
+         * The first row this GridData refers to, zero-based.
+         *
+         * @var int
+         */
+        public $startRow;
+        /**
+         * Metadata about the requested columns in the grid, starting with the column
+         * in start_column.
+         *
+         * @param DimensionProperties[] $columnMetadata
+         */
+        public function setColumnMetadata($columnMetadata)
+        {
+        }
+        /**
+         * @return DimensionProperties[]
+         */
+        public function getColumnMetadata()
+        {
+        }
+        /**
+         * The data in the grid, one entry per row, starting with the row in startRow.
+         * The values in RowData will correspond to columns starting at start_column.
+         *
+         * @param RowData[] $rowData
+         */
+        public function setRowData($rowData)
+        {
+        }
+        /**
+         * @return RowData[]
+         */
+        public function getRowData()
+        {
+        }
+        /**
+         * Metadata about the requested rows in the grid, starting with the row in
+         * start_row.
+         *
+         * @param DimensionProperties[] $rowMetadata
+         */
+        public function setRowMetadata($rowMetadata)
+        {
+        }
+        /**
+         * @return DimensionProperties[]
+         */
+        public function getRowMetadata()
+        {
+        }
+        /**
+         * The first column this GridData refers to, zero-based.
+         *
+         * @param int $startColumn
+         */
+        public function setStartColumn($startColumn)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getStartColumn()
+        {
+        }
+        /**
+         * The first row this GridData refers to, zero-based.
+         *
+         * @param int $startRow
+         */
+        public function setStartRow($startRow)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getStartRow()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DimensionProperties[]
+     * Runtime class alias of \Google\Service\Sheets\GridData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumnMetadata()
-    {
-    }
-    /**
-     * The data in the grid, one entry per row, starting with the row in startRow.
-     * The values in RowData will correspond to columns starting at start_column.
-     *
-     * @param RowData[] $rowData
-     */
-    public function setRowData($rowData)
-    {
-    }
-    /**
-     * @return RowData[]
-     */
-    public function getRowData()
-    {
-    }
-    /**
-     * Metadata about the requested rows in the grid, starting with the row in
-     * start_row.
-     *
-     * @param DimensionProperties[] $rowMetadata
-     */
-    public function setRowMetadata($rowMetadata)
-    {
-    }
-    /**
-     * @return DimensionProperties[]
-     */
-    public function getRowMetadata()
-    {
-    }
-    /**
-     * The first column this GridData refers to, zero-based.
-     *
-     * @param int $startColumn
-     */
-    public function setStartColumn($startColumn)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getStartColumn()
-    {
-    }
-    /**
-     * The first row this GridData refers to, zero-based.
-     *
-     * @param int $startRow
-     */
-    public function setStartRow($startRow)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getStartRow()
+    class Google_Service_Sheets_GridData extends \Google\Service\Sheets\GridData
     {
     }
 }

@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class Targeting extends \Google\Model
-{
-    protected $allUsersType = AllUsers::class;
-    protected $allUsersDataType = '';
-    protected $androidSdksType = AndroidSdks::class;
-    protected $androidSdksDataType = '';
-    protected $regionsType = Regions::class;
-    protected $regionsDataType = '';
-    protected $versionListType = AppVersionList::class;
-    protected $versionListDataType = '';
-    protected $versionRangeType = AppVersionRange::class;
-    protected $versionRangeDataType = '';
-    /**
-     * All users are targeted.
-     *
-     * @param AllUsers $allUsers
-     */
-    public function setAllUsers(AllUsers $allUsers)
+namespace Google\Service\AndroidPublisher {
+    class Targeting extends \Google\Model
     {
+        protected $allUsersType = AllUsers::class;
+        protected $allUsersDataType = '';
+        protected $androidSdksType = AndroidSdks::class;
+        protected $androidSdksDataType = '';
+        protected $regionsType = Regions::class;
+        protected $regionsDataType = '';
+        protected $versionListType = AppVersionList::class;
+        protected $versionListDataType = '';
+        protected $versionRangeType = AppVersionRange::class;
+        protected $versionRangeDataType = '';
+        /**
+         * All users are targeted.
+         *
+         * @param AllUsers $allUsers
+         */
+        public function setAllUsers(AllUsers $allUsers)
+        {
+        }
+        /**
+         * @return AllUsers
+         */
+        public function getAllUsers()
+        {
+        }
+        /**
+         * Targeting is based on android api levels of devices.
+         *
+         * @param AndroidSdks $androidSdks
+         */
+        public function setAndroidSdks(AndroidSdks $androidSdks)
+        {
+        }
+        /**
+         * @return AndroidSdks
+         */
+        public function getAndroidSdks()
+        {
+        }
+        /**
+         * Targeting is based on the user account region.
+         *
+         * @param Regions $regions
+         */
+        public function setRegions(Regions $regions)
+        {
+        }
+        /**
+         * @return Regions
+         */
+        public function getRegions()
+        {
+        }
+        /**
+         * Target version codes as a list.
+         *
+         * @param AppVersionList $versionList
+         */
+        public function setVersionList(AppVersionList $versionList)
+        {
+        }
+        /**
+         * @return AppVersionList
+         */
+        public function getVersionList()
+        {
+        }
+        /**
+         * Target version codes as a range.
+         *
+         * @param AppVersionRange $versionRange
+         */
+        public function setVersionRange(AppVersionRange $versionRange)
+        {
+        }
+        /**
+         * @return AppVersionRange
+         */
+        public function getVersionRange()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AllUsers
+     * Runtime class alias of \Google\Service\AndroidPublisher\Targeting registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllUsers()
-    {
-    }
-    /**
-     * Targeting is based on android api levels of devices.
-     *
-     * @param AndroidSdks $androidSdks
-     */
-    public function setAndroidSdks(AndroidSdks $androidSdks)
-    {
-    }
-    /**
-     * @return AndroidSdks
-     */
-    public function getAndroidSdks()
-    {
-    }
-    /**
-     * Targeting is based on the user account region.
-     *
-     * @param Regions $regions
-     */
-    public function setRegions(Regions $regions)
-    {
-    }
-    /**
-     * @return Regions
-     */
-    public function getRegions()
-    {
-    }
-    /**
-     * Target version codes as a list.
-     *
-     * @param AppVersionList $versionList
-     */
-    public function setVersionList(AppVersionList $versionList)
-    {
-    }
-    /**
-     * @return AppVersionList
-     */
-    public function getVersionList()
-    {
-    }
-    /**
-     * Target version codes as a range.
-     *
-     * @param AppVersionRange $versionRange
-     */
-    public function setVersionRange(AppVersionRange $versionRange)
-    {
-    }
-    /**
-     * @return AppVersionRange
-     */
-    public function getVersionRange()
+    class Google_Service_AndroidPublisher_Targeting extends \Google\Service\AndroidPublisher\Targeting
     {
     }
 }

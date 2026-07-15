@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class UpdateInfo extends \Google\Model
-{
-    protected $blueGreenInfoType = BlueGreenInfo::class;
-    protected $blueGreenInfoDataType = '';
-    /**
-     * Information of a blue-green upgrade.
-     *
-     * @param BlueGreenInfo $blueGreenInfo
-     */
-    public function setBlueGreenInfo(BlueGreenInfo $blueGreenInfo)
+namespace Google\Service\Container {
+    class UpdateInfo extends \Google\Model
     {
+        protected $blueGreenInfoType = BlueGreenInfo::class;
+        protected $blueGreenInfoDataType = '';
+        /**
+         * Information of a blue-green upgrade.
+         *
+         * @param BlueGreenInfo $blueGreenInfo
+         */
+        public function setBlueGreenInfo(BlueGreenInfo $blueGreenInfo)
+        {
+        }
+        /**
+         * @return BlueGreenInfo
+         */
+        public function getBlueGreenInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BlueGreenInfo
+     * Runtime class alias of \Google\Service\Container\UpdateInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBlueGreenInfo()
+    class Google_Service_Container_UpdateInfo extends \Google\Service\Container\UpdateInfo
     {
     }
 }

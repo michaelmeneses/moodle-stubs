@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleCloudRunV2NFSVolumeSource extends \Google\Model
-{
-    /**
-     * Path that is exported by the NFS server.
-     *
-     * @var string
-     */
-    public $path;
-    /**
-     * If true, the volume will be mounted as read only for all mounts.
-     *
-     * @var bool
-     */
-    public $readOnly;
-    /**
-     * Hostname or IP address of the NFS server
-     *
-     * @var string
-     */
-    public $server;
-    /**
-     * Path that is exported by the NFS server.
-     *
-     * @param string $path
-     */
-    public function setPath($path)
+namespace Google\Service\CloudRun {
+    class GoogleCloudRunV2NFSVolumeSource extends \Google\Model
     {
+        /**
+         * Path that is exported by the NFS server.
+         *
+         * @var string
+         */
+        public $path;
+        /**
+         * If true, the volume will be mounted as read only for all mounts.
+         *
+         * @var bool
+         */
+        public $readOnly;
+        /**
+         * Hostname or IP address of the NFS server
+         *
+         * @var string
+         */
+        public $server;
+        /**
+         * Path that is exported by the NFS server.
+         *
+         * @param string $path
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
+        /**
+         * If true, the volume will be mounted as read only for all mounts.
+         *
+         * @param bool $readOnly
+         */
+        public function setReadOnly($readOnly)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getReadOnly()
+        {
+        }
+        /**
+         * Hostname or IP address of the NFS server
+         *
+         * @param string $server
+         */
+        public function setServer($server)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServer()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRun\GoogleCloudRunV2NFSVolumeSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPath()
-    {
-    }
-    /**
-     * If true, the volume will be mounted as read only for all mounts.
-     *
-     * @param bool $readOnly
-     */
-    public function setReadOnly($readOnly)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getReadOnly()
-    {
-    }
-    /**
-     * Hostname or IP address of the NFS server
-     *
-     * @param string $server
-     */
-    public function setServer($server)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServer()
+    class Google_Service_CloudRun_GoogleCloudRunV2NFSVolumeSource extends \Google\Service\CloudRun\GoogleCloudRunV2NFSVolumeSource
     {
     }
 }

@@ -16,6 +16,9 @@
  */
 namespace Monolog\Handler;
 
+use Monolog\ResettableInterface;
+use Monolog\Processor\ProcessorInterface;
+use Monolog\LogRecord;
 /**
  * Helper trait for implementing ProcessableInterface
  *

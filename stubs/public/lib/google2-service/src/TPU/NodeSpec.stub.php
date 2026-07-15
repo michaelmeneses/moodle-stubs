@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TPU;
-
-class NodeSpec extends \Google\Model
-{
-    protected $multisliceParamsType = MultisliceParams::class;
-    protected $multisliceParamsDataType = '';
-    protected $nodeType = Node::class;
-    protected $nodeDataType = '';
-    /**
-     * Optional. The unqualified resource name. Should follow the
-     * `^[A-Za-z0-9_.~+%-]+$` regex format. This is only specified when requesting
-     * a single node. In case of multislice requests, multislice_params must be
-     * populated instead.
-     *
-     * @var string
-     */
-    public $nodeId;
-    /**
-     * Required. The parent resource name.
-     *
-     * @var string
-     */
-    public $parent;
-    /**
-     * Optional. Fields to specify in case of multislice request.
-     *
-     * @param MultisliceParams $multisliceParams
-     */
-    public function setMultisliceParams(MultisliceParams $multisliceParams)
+namespace Google\Service\TPU {
+    class NodeSpec extends \Google\Model
     {
+        protected $multisliceParamsType = MultisliceParams::class;
+        protected $multisliceParamsDataType = '';
+        protected $nodeType = Node::class;
+        protected $nodeDataType = '';
+        /**
+         * Optional. The unqualified resource name. Should follow the
+         * `^[A-Za-z0-9_.~+%-]+$` regex format. This is only specified when requesting
+         * a single node. In case of multislice requests, multislice_params must be
+         * populated instead.
+         *
+         * @var string
+         */
+        public $nodeId;
+        /**
+         * Required. The parent resource name.
+         *
+         * @var string
+         */
+        public $parent;
+        /**
+         * Optional. Fields to specify in case of multislice request.
+         *
+         * @param MultisliceParams $multisliceParams
+         */
+        public function setMultisliceParams(MultisliceParams $multisliceParams)
+        {
+        }
+        /**
+         * @return MultisliceParams
+         */
+        public function getMultisliceParams()
+        {
+        }
+        /**
+         * Required. The node.
+         *
+         * @param Node $node
+         */
+        public function setNode(Node $node)
+        {
+        }
+        /**
+         * @return Node
+         */
+        public function getNode()
+        {
+        }
+        /**
+         * Optional. The unqualified resource name. Should follow the
+         * `^[A-Za-z0-9_.~+%-]+$` regex format. This is only specified when requesting
+         * a single node. In case of multislice requests, multislice_params must be
+         * populated instead.
+         *
+         * @param string $nodeId
+         */
+        public function setNodeId($nodeId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNodeId()
+        {
+        }
+        /**
+         * Required. The parent resource name.
+         *
+         * @param string $parent
+         */
+        public function setParent($parent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MultisliceParams
+     * Runtime class alias of \Google\Service\TPU\NodeSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMultisliceParams()
-    {
-    }
-    /**
-     * Required. The node.
-     *
-     * @param Node $node
-     */
-    public function setNode(Node $node)
-    {
-    }
-    /**
-     * @return Node
-     */
-    public function getNode()
-    {
-    }
-    /**
-     * Optional. The unqualified resource name. Should follow the
-     * `^[A-Za-z0-9_.~+%-]+$` regex format. This is only specified when requesting
-     * a single node. In case of multislice requests, multislice_params must be
-     * populated instead.
-     *
-     * @param string $nodeId
-     */
-    public function setNodeId($nodeId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNodeId()
-    {
-    }
-    /**
-     * Required. The parent resource name.
-     *
-     * @param string $parent
-     */
-    public function setParent($parent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParent()
+    class Google_Service_TPU_NodeSpec extends \Google\Service\TPU\NodeSpec
     {
     }
 }

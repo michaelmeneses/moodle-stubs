@@ -21,97 +21,109 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkServices\Resource;
-
-/**
- * The "tcpRoutes" collection of methods.
- * Typical usage is:
- *  <code>
- *   $networkservicesService = new Google\Service\NetworkServices(...);
- *   $tcpRoutes = $networkservicesService->projects_locations_tcpRoutes;
- *  </code>
- */
-class ProjectsLocationsTcpRoutes extends \Google\Service\Resource
-{
+namespace Google\Service\NetworkServices\Resource {
+    use Google\Service\NetworkServices\ListTcpRoutesResponse;
+    use Google\Service\NetworkServices\Operation;
+    use Google\Service\NetworkServices\TcpRoute;
     /**
-     * Creates a new TcpRoute in a given project and location. (tcpRoutes.create)
-     *
-     * @param string $parent Required. The parent resource of the TcpRoute. Must be
-     * in the format `projects/locations`.
-     * @param TcpRoute $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string tcpRouteId Required. Short name of the TcpRoute resource to
-     * be created.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * The "tcpRoutes" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $networkservicesService = new Google\Service\NetworkServices(...);
+     *   $tcpRoutes = $networkservicesService->projects_locations_tcpRoutes;
+     *  </code>
      */
-    public function create($parent, TcpRoute $postBody, $optParams = [])
+    class ProjectsLocationsTcpRoutes extends \Google\Service\Resource
     {
+        /**
+         * Creates a new TcpRoute in a given project and location. (tcpRoutes.create)
+         *
+         * @param string $parent Required. The parent resource of the TcpRoute. Must be
+         * in the format `projects/locations`.
+         * @param TcpRoute $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string tcpRouteId Required. Short name of the TcpRoute resource to
+         * be created.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, TcpRoute $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a single TcpRoute. (tcpRoutes.delete)
+         *
+         * @param string $name Required. A name of the TcpRoute to delete. Must be in
+         * the format `projects/locations/tcpRoutes`.
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets details of a single TcpRoute. (tcpRoutes.get)
+         *
+         * @param string $name Required. A name of the TcpRoute to get. Must be in the
+         * format `projects/locations/tcpRoutes`.
+         * @param array $optParams Optional parameters.
+         * @return TcpRoute
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists TcpRoute in a given project and location.
+         * (tcpRoutes.listProjectsLocationsTcpRoutes)
+         *
+         * @param string $parent Required. The project and location from which the
+         * TcpRoutes should be listed, specified in the format `projects/locations`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Maximum number of TcpRoutes to return per call.
+         * @opt_param string pageToken The value returned by the last
+         * `ListTcpRoutesResponse` Indicates that this is a continuation of a prior
+         * `ListTcpRoutes` call, and that the system should return the next page of
+         * data.
+         * @opt_param bool returnPartialSuccess Optional. If true, allow partial
+         * responses for multi-regional Aggregated List requests. Otherwise if one of
+         * the locations is down or unreachable, the Aggregated List request will fail.
+         * @return ListTcpRoutesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsTcpRoutes($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates the parameters of a single TcpRoute. (tcpRoutes.patch)
+         *
+         * @param string $name Identifier. Name of the TcpRoute resource. It matches
+         * pattern `projects/locations/tcpRoutes/tcp_route_name>`.
+         * @param TcpRoute $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Optional. Field mask is used to specify the
+         * fields to be overwritten in the TcpRoute resource by the update. The fields
+         * specified in the update_mask are relative to the resource, not the full
+         * request. A field will be overwritten if it is in the mask. If the user does
+         * not provide a mask then all fields will be overwritten.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, TcpRoute $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a single TcpRoute. (tcpRoutes.delete)
-     *
-     * @param string $name Required. A name of the TcpRoute to delete. Must be in
-     * the format `projects/locations/tcpRoutes`.
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\NetworkServices\Resource\ProjectsLocationsTcpRoutes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets details of a single TcpRoute. (tcpRoutes.get)
-     *
-     * @param string $name Required. A name of the TcpRoute to get. Must be in the
-     * format `projects/locations/tcpRoutes`.
-     * @param array $optParams Optional parameters.
-     * @return TcpRoute
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists TcpRoute in a given project and location.
-     * (tcpRoutes.listProjectsLocationsTcpRoutes)
-     *
-     * @param string $parent Required. The project and location from which the
-     * TcpRoutes should be listed, specified in the format `projects/locations`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Maximum number of TcpRoutes to return per call.
-     * @opt_param string pageToken The value returned by the last
-     * `ListTcpRoutesResponse` Indicates that this is a continuation of a prior
-     * `ListTcpRoutes` call, and that the system should return the next page of
-     * data.
-     * @opt_param bool returnPartialSuccess Optional. If true, allow partial
-     * responses for multi-regional Aggregated List requests. Otherwise if one of
-     * the locations is down or unreachable, the Aggregated List request will fail.
-     * @return ListTcpRoutesResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsTcpRoutes($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates the parameters of a single TcpRoute. (tcpRoutes.patch)
-     *
-     * @param string $name Identifier. Name of the TcpRoute resource. It matches
-     * pattern `projects/locations/tcpRoutes/tcp_route_name>`.
-     * @param TcpRoute $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Optional. Field mask is used to specify the
-     * fields to be overwritten in the TcpRoute resource by the update. The fields
-     * specified in the update_mask are relative to the resource, not the full
-     * request. A field will be overwritten if it is in the mask. If the user does
-     * not provide a mask then all fields will be overwritten.
-     * @return Operation
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, TcpRoute $postBody, $optParams = [])
+    class Google_Service_NetworkServices_Resource_ProjectsLocationsTcpRoutes extends \Google\Service\NetworkServices\Resource\ProjectsLocationsTcpRoutes
     {
     }
 }

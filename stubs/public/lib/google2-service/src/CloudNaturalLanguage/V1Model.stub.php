@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class V1Model extends \Google\Model
-{
+namespace Google\Service\CloudNaturalLanguage {
+    class V1Model extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\V1Model registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudNaturalLanguage_V1Model extends \Google\Service\CloudNaturalLanguage\V1Model
+    {
+    }
 }

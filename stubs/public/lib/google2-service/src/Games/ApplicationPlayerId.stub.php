@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Games;
-
-class ApplicationPlayerId extends \Google\Model
-{
-    /**
-     * The application that this player identifier is for.
-     *
-     * @var string
-     */
-    public $applicationId;
-    /**
-     * The player identifier for the application.
-     *
-     * @var string
-     */
-    public $playerId;
-    /**
-     * The application that this player identifier is for.
-     *
-     * @param string $applicationId
-     */
-    public function setApplicationId($applicationId)
+namespace Google\Service\Games {
+    class ApplicationPlayerId extends \Google\Model
     {
+        /**
+         * The application that this player identifier is for.
+         *
+         * @var string
+         */
+        public $applicationId;
+        /**
+         * The player identifier for the application.
+         *
+         * @var string
+         */
+        public $playerId;
+        /**
+         * The application that this player identifier is for.
+         *
+         * @param string $applicationId
+         */
+        public function setApplicationId($applicationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApplicationId()
+        {
+        }
+        /**
+         * The player identifier for the application.
+         *
+         * @param string $playerId
+         */
+        public function setPlayerId($playerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPlayerId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Games\ApplicationPlayerId registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApplicationId()
-    {
-    }
-    /**
-     * The player identifier for the application.
-     *
-     * @param string $playerId
-     */
-    public function setPlayerId($playerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPlayerId()
+    class Google_Service_Games_ApplicationPlayerId extends \Google\Service\Games\ApplicationPlayerId
     {
     }
 }

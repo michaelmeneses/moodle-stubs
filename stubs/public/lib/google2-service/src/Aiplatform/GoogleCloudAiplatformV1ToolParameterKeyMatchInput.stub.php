@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ToolParameterKeyMatchInput extends \Google\Collection
-{
-    protected $collection_key = 'instances';
-    protected $instancesType = GoogleCloudAiplatformV1ToolParameterKeyMatchInstance::class;
-    protected $instancesDataType = 'array';
-    protected $metricSpecType = GoogleCloudAiplatformV1ToolParameterKeyMatchSpec::class;
-    protected $metricSpecDataType = '';
-    /**
-     * Required. Repeated tool parameter key match instances.
-     *
-     * @param GoogleCloudAiplatformV1ToolParameterKeyMatchInstance[] $instances
-     */
-    public function setInstances($instances)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ToolParameterKeyMatchInput extends \Google\Collection
     {
+        protected $collection_key = 'instances';
+        protected $instancesType = GoogleCloudAiplatformV1ToolParameterKeyMatchInstance::class;
+        protected $instancesDataType = 'array';
+        protected $metricSpecType = GoogleCloudAiplatformV1ToolParameterKeyMatchSpec::class;
+        protected $metricSpecDataType = '';
+        /**
+         * Required. Repeated tool parameter key match instances.
+         *
+         * @param GoogleCloudAiplatformV1ToolParameterKeyMatchInstance[] $instances
+         */
+        public function setInstances($instances)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ToolParameterKeyMatchInstance[]
+         */
+        public function getInstances()
+        {
+        }
+        /**
+         * Required. Spec for tool parameter key match metric.
+         *
+         * @param GoogleCloudAiplatformV1ToolParameterKeyMatchSpec $metricSpec
+         */
+        public function setMetricSpec(GoogleCloudAiplatformV1ToolParameterKeyMatchSpec $metricSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ToolParameterKeyMatchSpec
+         */
+        public function getMetricSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1ToolParameterKeyMatchInstance[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ToolParameterKeyMatchInput registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstances()
-    {
-    }
-    /**
-     * Required. Spec for tool parameter key match metric.
-     *
-     * @param GoogleCloudAiplatformV1ToolParameterKeyMatchSpec $metricSpec
-     */
-    public function setMetricSpec(GoogleCloudAiplatformV1ToolParameterKeyMatchSpec $metricSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1ToolParameterKeyMatchSpec
-     */
-    public function getMetricSpec()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ToolParameterKeyMatchInput extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ToolParameterKeyMatchInput
     {
     }
 }

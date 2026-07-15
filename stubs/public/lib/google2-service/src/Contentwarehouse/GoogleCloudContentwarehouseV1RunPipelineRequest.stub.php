@@ -21,91 +21,100 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudContentwarehouseV1RunPipelineRequest extends \Google\Model
-{
-    protected $exportCdwPipelineType = GoogleCloudContentwarehouseV1ExportToCdwPipeline::class;
-    protected $exportCdwPipelineDataType = '';
-    protected $gcsIngestPipelineType = GoogleCloudContentwarehouseV1GcsIngestPipeline::class;
-    protected $gcsIngestPipelineDataType = '';
-    protected $gcsIngestWithDocAiProcessorsPipelineType = GoogleCloudContentwarehouseV1GcsIngestWithDocAiProcessorsPipeline::class;
-    protected $gcsIngestWithDocAiProcessorsPipelineDataType = '';
-    protected $processWithDocAiPipelineType = GoogleCloudContentwarehouseV1ProcessWithDocAiPipeline::class;
-    protected $processWithDocAiPipelineDataType = '';
-    protected $requestMetadataType = GoogleCloudContentwarehouseV1RequestMetadata::class;
-    protected $requestMetadataDataType = '';
-    /**
-     * Export docuemnts from Document Warehouse to CDW for training purpose.
-     *
-     * @param GoogleCloudContentwarehouseV1ExportToCdwPipeline $exportCdwPipeline
-     */
-    public function setExportCdwPipeline(GoogleCloudContentwarehouseV1ExportToCdwPipeline $exportCdwPipeline)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudContentwarehouseV1RunPipelineRequest extends \Google\Model
     {
+        protected $exportCdwPipelineType = GoogleCloudContentwarehouseV1ExportToCdwPipeline::class;
+        protected $exportCdwPipelineDataType = '';
+        protected $gcsIngestPipelineType = GoogleCloudContentwarehouseV1GcsIngestPipeline::class;
+        protected $gcsIngestPipelineDataType = '';
+        protected $gcsIngestWithDocAiProcessorsPipelineType = GoogleCloudContentwarehouseV1GcsIngestWithDocAiProcessorsPipeline::class;
+        protected $gcsIngestWithDocAiProcessorsPipelineDataType = '';
+        protected $processWithDocAiPipelineType = GoogleCloudContentwarehouseV1ProcessWithDocAiPipeline::class;
+        protected $processWithDocAiPipelineDataType = '';
+        protected $requestMetadataType = GoogleCloudContentwarehouseV1RequestMetadata::class;
+        protected $requestMetadataDataType = '';
+        /**
+         * Export docuemnts from Document Warehouse to CDW for training purpose.
+         *
+         * @param GoogleCloudContentwarehouseV1ExportToCdwPipeline $exportCdwPipeline
+         */
+        public function setExportCdwPipeline(GoogleCloudContentwarehouseV1ExportToCdwPipeline $exportCdwPipeline)
+        {
+        }
+        /**
+         * @return GoogleCloudContentwarehouseV1ExportToCdwPipeline
+         */
+        public function getExportCdwPipeline()
+        {
+        }
+        /**
+         * Cloud Storage ingestion pipeline.
+         *
+         * @param GoogleCloudContentwarehouseV1GcsIngestPipeline $gcsIngestPipeline
+         */
+        public function setGcsIngestPipeline(GoogleCloudContentwarehouseV1GcsIngestPipeline $gcsIngestPipeline)
+        {
+        }
+        /**
+         * @return GoogleCloudContentwarehouseV1GcsIngestPipeline
+         */
+        public function getGcsIngestPipeline()
+        {
+        }
+        /**
+         * Use DocAI processors to process documents in Cloud Storage and ingest them
+         * to Document Warehouse.
+         *
+         * @param GoogleCloudContentwarehouseV1GcsIngestWithDocAiProcessorsPipeline $gcsIngestWithDocAiProcessorsPipeline
+         */
+        public function setGcsIngestWithDocAiProcessorsPipeline(GoogleCloudContentwarehouseV1GcsIngestWithDocAiProcessorsPipeline $gcsIngestWithDocAiProcessorsPipeline)
+        {
+        }
+        /**
+         * @return GoogleCloudContentwarehouseV1GcsIngestWithDocAiProcessorsPipeline
+         */
+        public function getGcsIngestWithDocAiProcessorsPipeline()
+        {
+        }
+        /**
+         * Use a DocAI processor to process documents in Document Warehouse, and re-
+         * ingest the updated results into Document Warehouse.
+         *
+         * @param GoogleCloudContentwarehouseV1ProcessWithDocAiPipeline $processWithDocAiPipeline
+         */
+        public function setProcessWithDocAiPipeline(GoogleCloudContentwarehouseV1ProcessWithDocAiPipeline $processWithDocAiPipeline)
+        {
+        }
+        /**
+         * @return GoogleCloudContentwarehouseV1ProcessWithDocAiPipeline
+         */
+        public function getProcessWithDocAiPipeline()
+        {
+        }
+        /**
+         * The meta information collected about the end user, used to enforce access
+         * control for the service.
+         *
+         * @param GoogleCloudContentwarehouseV1RequestMetadata $requestMetadata
+         */
+        public function setRequestMetadata(GoogleCloudContentwarehouseV1RequestMetadata $requestMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudContentwarehouseV1RequestMetadata
+         */
+        public function getRequestMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudContentwarehouseV1ExportToCdwPipeline
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1RunPipelineRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExportCdwPipeline()
-    {
-    }
-    /**
-     * Cloud Storage ingestion pipeline.
-     *
-     * @param GoogleCloudContentwarehouseV1GcsIngestPipeline $gcsIngestPipeline
-     */
-    public function setGcsIngestPipeline(GoogleCloudContentwarehouseV1GcsIngestPipeline $gcsIngestPipeline)
-    {
-    }
-    /**
-     * @return GoogleCloudContentwarehouseV1GcsIngestPipeline
-     */
-    public function getGcsIngestPipeline()
-    {
-    }
-    /**
-     * Use DocAI processors to process documents in Cloud Storage and ingest them
-     * to Document Warehouse.
-     *
-     * @param GoogleCloudContentwarehouseV1GcsIngestWithDocAiProcessorsPipeline $gcsIngestWithDocAiProcessorsPipeline
-     */
-    public function setGcsIngestWithDocAiProcessorsPipeline(GoogleCloudContentwarehouseV1GcsIngestWithDocAiProcessorsPipeline $gcsIngestWithDocAiProcessorsPipeline)
-    {
-    }
-    /**
-     * @return GoogleCloudContentwarehouseV1GcsIngestWithDocAiProcessorsPipeline
-     */
-    public function getGcsIngestWithDocAiProcessorsPipeline()
-    {
-    }
-    /**
-     * Use a DocAI processor to process documents in Document Warehouse, and re-
-     * ingest the updated results into Document Warehouse.
-     *
-     * @param GoogleCloudContentwarehouseV1ProcessWithDocAiPipeline $processWithDocAiPipeline
-     */
-    public function setProcessWithDocAiPipeline(GoogleCloudContentwarehouseV1ProcessWithDocAiPipeline $processWithDocAiPipeline)
-    {
-    }
-    /**
-     * @return GoogleCloudContentwarehouseV1ProcessWithDocAiPipeline
-     */
-    public function getProcessWithDocAiPipeline()
-    {
-    }
-    /**
-     * The meta information collected about the end user, used to enforce access
-     * control for the service.
-     *
-     * @param GoogleCloudContentwarehouseV1RequestMetadata $requestMetadata
-     */
-    public function setRequestMetadata(GoogleCloudContentwarehouseV1RequestMetadata $requestMetadata)
-    {
-    }
-    /**
-     * @return GoogleCloudContentwarehouseV1RequestMetadata
-     */
-    public function getRequestMetadata()
+    class Google_Service_Contentwarehouse_GoogleCloudContentwarehouseV1RunPipelineRequest extends \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1RunPipelineRequest
     {
     }
 }

@@ -21,112 +21,121 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkServices;
-
-class MeshRouteView extends \Google\Model
-{
-    /**
-     * Output only. Identifier. Full path name of the MeshRouteView resource.
-     * Format: projects/{project_number}/locations/{location}/meshes/{mesh}/routeV
-     * iews/{route_view}
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The resource id for the route.
-     *
-     * @var string
-     */
-    public $routeId;
-    /**
-     * Output only. Location where the route exists.
-     *
-     * @var string
-     */
-    public $routeLocation;
-    /**
-     * Output only. Project number where the route exists.
-     *
-     * @var string
-     */
-    public $routeProjectNumber;
-    /**
-     * Output only. Type of the route: HttpRoute,GrpcRoute,TcpRoute, or TlsRoute
-     *
-     * @var string
-     */
-    public $routeType;
-    /**
-     * Output only. Identifier. Full path name of the MeshRouteView resource.
-     * Format: projects/{project_number}/locations/{location}/meshes/{mesh}/routeV
-     * iews/{route_view}
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\NetworkServices {
+    class MeshRouteView extends \Google\Model
     {
+        /**
+         * Output only. Identifier. Full path name of the MeshRouteView resource.
+         * Format: projects/{project_number}/locations/{location}/meshes/{mesh}/routeV
+         * iews/{route_view}
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The resource id for the route.
+         *
+         * @var string
+         */
+        public $routeId;
+        /**
+         * Output only. Location where the route exists.
+         *
+         * @var string
+         */
+        public $routeLocation;
+        /**
+         * Output only. Project number where the route exists.
+         *
+         * @var string
+         */
+        public $routeProjectNumber;
+        /**
+         * Output only. Type of the route: HttpRoute,GrpcRoute,TcpRoute, or TlsRoute
+         *
+         * @var string
+         */
+        public $routeType;
+        /**
+         * Output only. Identifier. Full path name of the MeshRouteView resource.
+         * Format: projects/{project_number}/locations/{location}/meshes/{mesh}/routeV
+         * iews/{route_view}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The resource id for the route.
+         *
+         * @param string $routeId
+         */
+        public function setRouteId($routeId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRouteId()
+        {
+        }
+        /**
+         * Output only. Location where the route exists.
+         *
+         * @param string $routeLocation
+         */
+        public function setRouteLocation($routeLocation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRouteLocation()
+        {
+        }
+        /**
+         * Output only. Project number where the route exists.
+         *
+         * @param string $routeProjectNumber
+         */
+        public function setRouteProjectNumber($routeProjectNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRouteProjectNumber()
+        {
+        }
+        /**
+         * Output only. Type of the route: HttpRoute,GrpcRoute,TcpRoute, or TlsRoute
+         *
+         * @param string $routeType
+         */
+        public function setRouteType($routeType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRouteType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetworkServices\MeshRouteView registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The resource id for the route.
-     *
-     * @param string $routeId
-     */
-    public function setRouteId($routeId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRouteId()
-    {
-    }
-    /**
-     * Output only. Location where the route exists.
-     *
-     * @param string $routeLocation
-     */
-    public function setRouteLocation($routeLocation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRouteLocation()
-    {
-    }
-    /**
-     * Output only. Project number where the route exists.
-     *
-     * @param string $routeProjectNumber
-     */
-    public function setRouteProjectNumber($routeProjectNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRouteProjectNumber()
-    {
-    }
-    /**
-     * Output only. Type of the route: HttpRoute,GrpcRoute,TcpRoute, or TlsRoute
-     *
-     * @param string $routeType
-     */
-    public function setRouteType($routeType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRouteType()
+    class Google_Service_NetworkServices_MeshRouteView extends \Google\Service\NetworkServices\MeshRouteView
     {
     }
 }

@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PolicySimulator;
-
-class GoogleCloudPolicysimulatorV1OrgPolicyOverlayPolicyOverlay extends \Google\Model
-{
-    protected $policyType = GoogleCloudOrgpolicyV2Policy::class;
-    protected $policyDataType = '';
-    /**
-     * Optional. The parent of the policy we are attaching to. Example:
-     * "projects/123456"
-     *
-     * @var string
-     */
-    public $policyParent;
-    /**
-     * Optional. The new or updated OrgPolicy.
-     *
-     * @param GoogleCloudOrgpolicyV2Policy $policy
-     */
-    public function setPolicy(GoogleCloudOrgpolicyV2Policy $policy)
+namespace Google\Service\PolicySimulator {
+    class GoogleCloudPolicysimulatorV1OrgPolicyOverlayPolicyOverlay extends \Google\Model
     {
+        protected $policyType = GoogleCloudOrgpolicyV2Policy::class;
+        protected $policyDataType = '';
+        /**
+         * Optional. The parent of the policy we are attaching to. Example:
+         * "projects/123456"
+         *
+         * @var string
+         */
+        public $policyParent;
+        /**
+         * Optional. The new or updated OrgPolicy.
+         *
+         * @param GoogleCloudOrgpolicyV2Policy $policy
+         */
+        public function setPolicy(GoogleCloudOrgpolicyV2Policy $policy)
+        {
+        }
+        /**
+         * @return GoogleCloudOrgpolicyV2Policy
+         */
+        public function getPolicy()
+        {
+        }
+        /**
+         * Optional. The parent of the policy we are attaching to. Example:
+         * "projects/123456"
+         *
+         * @param string $policyParent
+         */
+        public function setPolicyParent($policyParent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPolicyParent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudOrgpolicyV2Policy
+     * Runtime class alias of \Google\Service\PolicySimulator\GoogleCloudPolicysimulatorV1OrgPolicyOverlayPolicyOverlay registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPolicy()
-    {
-    }
-    /**
-     * Optional. The parent of the policy we are attaching to. Example:
-     * "projects/123456"
-     *
-     * @param string $policyParent
-     */
-    public function setPolicyParent($policyParent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPolicyParent()
+    class Google_Service_PolicySimulator_GoogleCloudPolicysimulatorV1OrgPolicyOverlayPolicyOverlay extends \Google\Service\PolicySimulator\GoogleCloudPolicysimulatorV1OrgPolicyOverlayPolicyOverlay
     {
     }
 }

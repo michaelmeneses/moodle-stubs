@@ -21,108 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class RddOperationNode extends \Google\Model
-{
-    public const OUTPUT_DETERMINISTIC_LEVEL_DETERMINISTIC_LEVEL_UNSPECIFIED = 'DETERMINISTIC_LEVEL_UNSPECIFIED';
-    public const OUTPUT_DETERMINISTIC_LEVEL_DETERMINISTIC_LEVEL_DETERMINATE = 'DETERMINISTIC_LEVEL_DETERMINATE';
-    public const OUTPUT_DETERMINISTIC_LEVEL_DETERMINISTIC_LEVEL_UNORDERED = 'DETERMINISTIC_LEVEL_UNORDERED';
-    public const OUTPUT_DETERMINISTIC_LEVEL_DETERMINISTIC_LEVEL_INDETERMINATE = 'DETERMINISTIC_LEVEL_INDETERMINATE';
-    /**
-     * @var bool
-     */
-    public $barrier;
-    /**
-     * @var bool
-     */
-    public $cached;
-    /**
-     * @var string
-     */
-    public $callsite;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var int
-     */
-    public $nodeId;
-    /**
-     * @var string
-     */
-    public $outputDeterministicLevel;
-    /**
-     * @param bool $barrier
-     */
-    public function setBarrier($barrier)
+namespace Google\Service\Dataproc {
+    class RddOperationNode extends \Google\Model
     {
+        public const OUTPUT_DETERMINISTIC_LEVEL_DETERMINISTIC_LEVEL_UNSPECIFIED = 'DETERMINISTIC_LEVEL_UNSPECIFIED';
+        public const OUTPUT_DETERMINISTIC_LEVEL_DETERMINISTIC_LEVEL_DETERMINATE = 'DETERMINISTIC_LEVEL_DETERMINATE';
+        public const OUTPUT_DETERMINISTIC_LEVEL_DETERMINISTIC_LEVEL_UNORDERED = 'DETERMINISTIC_LEVEL_UNORDERED';
+        public const OUTPUT_DETERMINISTIC_LEVEL_DETERMINISTIC_LEVEL_INDETERMINATE = 'DETERMINISTIC_LEVEL_INDETERMINATE';
+        /**
+         * @var bool
+         */
+        public $barrier;
+        /**
+         * @var bool
+         */
+        public $cached;
+        /**
+         * @var string
+         */
+        public $callsite;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var int
+         */
+        public $nodeId;
+        /**
+         * @var string
+         */
+        public $outputDeterministicLevel;
+        /**
+         * @param bool $barrier
+         */
+        public function setBarrier($barrier)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getBarrier()
+        {
+        }
+        /**
+         * @param bool $cached
+         */
+        public function setCached($cached)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCached()
+        {
+        }
+        /**
+         * @param string $callsite
+         */
+        public function setCallsite($callsite)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCallsite()
+        {
+        }
+        /**
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param int $nodeId
+         */
+        public function setNodeId($nodeId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNodeId()
+        {
+        }
+        /**
+         * @param self::OUTPUT_DETERMINISTIC_LEVEL_* $outputDeterministicLevel
+         */
+        public function setOutputDeterministicLevel($outputDeterministicLevel)
+        {
+        }
+        /**
+         * @return self::OUTPUT_DETERMINISTIC_LEVEL_*
+         */
+        public function getOutputDeterministicLevel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Dataproc\RddOperationNode registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBarrier()
-    {
-    }
-    /**
-     * @param bool $cached
-     */
-    public function setCached($cached)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCached()
-    {
-    }
-    /**
-     * @param string $callsite
-     */
-    public function setCallsite($callsite)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCallsite()
-    {
-    }
-    /**
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param int $nodeId
-     */
-    public function setNodeId($nodeId)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNodeId()
-    {
-    }
-    /**
-     * @param self::OUTPUT_DETERMINISTIC_LEVEL_* $outputDeterministicLevel
-     */
-    public function setOutputDeterministicLevel($outputDeterministicLevel)
-    {
-    }
-    /**
-     * @return self::OUTPUT_DETERMINISTIC_LEVEL_*
-     */
-    public function getOutputDeterministicLevel()
+    class Google_Service_Dataproc_RddOperationNode extends \Google\Service\Dataproc\RddOperationNode
     {
     }
 }

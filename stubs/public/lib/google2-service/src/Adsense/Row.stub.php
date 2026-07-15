@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Adsense;
-
-class Row extends \Google\Collection
-{
-    protected $collection_key = 'cells';
-    protected $cellsType = Cell::class;
-    protected $cellsDataType = 'array';
-    /**
-     * Cells in the row.
-     *
-     * @param Cell[] $cells
-     */
-    public function setCells($cells)
+namespace Google\Service\Adsense {
+    class Row extends \Google\Collection
     {
+        protected $collection_key = 'cells';
+        protected $cellsType = Cell::class;
+        protected $cellsDataType = 'array';
+        /**
+         * Cells in the row.
+         *
+         * @param Cell[] $cells
+         */
+        public function setCells($cells)
+        {
+        }
+        /**
+         * @return Cell[]
+         */
+        public function getCells()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Cell[]
+     * Runtime class alias of \Google\Service\Adsense\Row registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCells()
+    class Google_Service_Adsense_Row extends \Google\Service\Adsense\Row
     {
     }
 }

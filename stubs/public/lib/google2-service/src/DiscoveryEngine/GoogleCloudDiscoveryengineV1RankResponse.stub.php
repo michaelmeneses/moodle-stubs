@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1RankResponse extends \Google\Collection
-{
-    protected $collection_key = 'records';
-    protected $recordsType = GoogleCloudDiscoveryengineV1RankingRecord::class;
-    protected $recordsDataType = 'array';
-    /**
-     * A list of records sorted by descending score.
-     *
-     * @param GoogleCloudDiscoveryengineV1RankingRecord[] $records
-     */
-    public function setRecords($records)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1RankResponse extends \Google\Collection
     {
+        protected $collection_key = 'records';
+        protected $recordsType = GoogleCloudDiscoveryengineV1RankingRecord::class;
+        protected $recordsDataType = 'array';
+        /**
+         * A list of records sorted by descending score.
+         *
+         * @param GoogleCloudDiscoveryengineV1RankingRecord[] $records
+         */
+        public function setRecords($records)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1RankingRecord[]
+         */
+        public function getRecords()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1RankingRecord[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1RankResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRecords()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1RankResponse extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1RankResponse
     {
     }
 }

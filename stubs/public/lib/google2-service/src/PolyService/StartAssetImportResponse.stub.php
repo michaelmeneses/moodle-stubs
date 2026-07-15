@@ -21,75 +21,84 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PolyService;
-
-class StartAssetImportResponse extends \Google\Collection
-{
-    protected $collection_key = 'assetImportMessages';
-    /**
-     * @var string
-     */
-    public $assetId;
-    /**
-     * @var string
-     */
-    public $assetImportId;
-    /**
-     * @var AssetImportMessage[]
-     */
-    public $assetImportMessages;
-    protected $assetImportMessagesType = AssetImportMessage::class;
-    protected $assetImportMessagesDataType = 'array';
-    /**
-     * @var string
-     */
-    public $publishUrl;
-    /**
-     * @param string
-     */
-    public function setAssetId($assetId)
+namespace Google\Service\PolyService {
+    class StartAssetImportResponse extends \Google\Collection
     {
+        protected $collection_key = 'assetImportMessages';
+        /**
+         * @var string
+         */
+        public $assetId;
+        /**
+         * @var string
+         */
+        public $assetImportId;
+        /**
+         * @var AssetImportMessage[]
+         */
+        public $assetImportMessages;
+        protected $assetImportMessagesType = AssetImportMessage::class;
+        protected $assetImportMessagesDataType = 'array';
+        /**
+         * @var string
+         */
+        public $publishUrl;
+        /**
+         * @param string
+         */
+        public function setAssetId($assetId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAssetId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setAssetImportId($assetImportId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAssetImportId()
+        {
+        }
+        /**
+         * @param AssetImportMessage[]
+         */
+        public function setAssetImportMessages($assetImportMessages)
+        {
+        }
+        /**
+         * @return AssetImportMessage[]
+         */
+        public function getAssetImportMessages()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPublishUrl($publishUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPublishUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PolyService\StartAssetImportResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssetId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setAssetImportId($assetImportId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAssetImportId()
-    {
-    }
-    /**
-     * @param AssetImportMessage[]
-     */
-    public function setAssetImportMessages($assetImportMessages)
-    {
-    }
-    /**
-     * @return AssetImportMessage[]
-     */
-    public function getAssetImportMessages()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPublishUrl($publishUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPublishUrl()
+    class Google_Service_PolyService_StartAssetImportResponse extends \Google\Service\PolyService\StartAssetImportResponse
     {
     }
 }

@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise;
-
-class GroupLicensesListResponse extends \Google\Collection
-{
-    protected $collection_key = 'groupLicense';
-    protected $groupLicenseType = GroupLicense::class;
-    protected $groupLicenseDataType = 'array';
-    /**
-     * A group license for a product approved for use in the enterprise.
-     *
-     * @param GroupLicense[] $groupLicense
-     */
-    public function setGroupLicense($groupLicense)
+namespace Google\Service\AndroidEnterprise {
+    class GroupLicensesListResponse extends \Google\Collection
     {
+        protected $collection_key = 'groupLicense';
+        protected $groupLicenseType = GroupLicense::class;
+        protected $groupLicenseDataType = 'array';
+        /**
+         * A group license for a product approved for use in the enterprise.
+         *
+         * @param GroupLicense[] $groupLicense
+         */
+        public function setGroupLicense($groupLicense)
+        {
+        }
+        /**
+         * @return GroupLicense[]
+         */
+        public function getGroupLicense()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GroupLicense[]
+     * Runtime class alias of \Google\Service\AndroidEnterprise\GroupLicensesListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGroupLicense()
+    class Google_Service_AndroidEnterprise_GroupLicensesListResponse extends \Google\Service\AndroidEnterprise\GroupLicensesListResponse
     {
     }
 }

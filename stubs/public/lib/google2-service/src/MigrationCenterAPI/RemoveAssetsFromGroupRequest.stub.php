@@ -21,91 +21,100 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class RemoveAssetsFromGroupRequest extends \Google\Model
-{
-    /**
-     * Optional. When this value is set to `false` and one of the given assets is
-     * not an existing member of the group, the operation fails with a `Not Found`
-     * error. When set to `true` this situation is silently ignored by the server.
-     * Default value is `false`.
-     *
-     * @var bool
-     */
-    public $allowMissing;
-    protected $assetsType = AssetList::class;
-    protected $assetsDataType = '';
-    /**
-     * Optional. An optional request ID to identify requests. Specify a unique
-     * request ID so that if you must retry your request, the server will know to
-     * ignore the request if it has already been completed. The server will
-     * guarantee that for at least 60 minutes after the first request. For
-     * example, consider a situation where you make an initial request and the
-     * request times out. If you make the request again with the same request ID,
-     * the server can check if original operation with the same request ID was
-     * received, and if so, will ignore the second request. This prevents clients
-     * from accidentally creating duplicate commitments. The request ID must be a
-     * valid UUID with the exception that zero UUID is not supported
-     * (00000000-0000-0000-0000-000000000000).
-     *
-     * @var string
-     */
-    public $requestId;
-    /**
-     * Optional. When this value is set to `false` and one of the given assets is
-     * not an existing member of the group, the operation fails with a `Not Found`
-     * error. When set to `true` this situation is silently ignored by the server.
-     * Default value is `false`.
-     *
-     * @param bool $allowMissing
-     */
-    public function setAllowMissing($allowMissing)
+namespace Google\Service\MigrationCenterAPI {
+    class RemoveAssetsFromGroupRequest extends \Google\Model
     {
+        /**
+         * Optional. When this value is set to `false` and one of the given assets is
+         * not an existing member of the group, the operation fails with a `Not Found`
+         * error. When set to `true` this situation is silently ignored by the server.
+         * Default value is `false`.
+         *
+         * @var bool
+         */
+        public $allowMissing;
+        protected $assetsType = AssetList::class;
+        protected $assetsDataType = '';
+        /**
+         * Optional. An optional request ID to identify requests. Specify a unique
+         * request ID so that if you must retry your request, the server will know to
+         * ignore the request if it has already been completed. The server will
+         * guarantee that for at least 60 minutes after the first request. For
+         * example, consider a situation where you make an initial request and the
+         * request times out. If you make the request again with the same request ID,
+         * the server can check if original operation with the same request ID was
+         * received, and if so, will ignore the second request. This prevents clients
+         * from accidentally creating duplicate commitments. The request ID must be a
+         * valid UUID with the exception that zero UUID is not supported
+         * (00000000-0000-0000-0000-000000000000).
+         *
+         * @var string
+         */
+        public $requestId;
+        /**
+         * Optional. When this value is set to `false` and one of the given assets is
+         * not an existing member of the group, the operation fails with a `Not Found`
+         * error. When set to `true` this situation is silently ignored by the server.
+         * Default value is `false`.
+         *
+         * @param bool $allowMissing
+         */
+        public function setAllowMissing($allowMissing)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAllowMissing()
+        {
+        }
+        /**
+         * Required. List of assets to be removed. The maximum number of assets that
+         * can be removed in a single request is 1000.
+         *
+         * @param AssetList $assets
+         */
+        public function setAssets(AssetList $assets)
+        {
+        }
+        /**
+         * @return AssetList
+         */
+        public function getAssets()
+        {
+        }
+        /**
+         * Optional. An optional request ID to identify requests. Specify a unique
+         * request ID so that if you must retry your request, the server will know to
+         * ignore the request if it has already been completed. The server will
+         * guarantee that for at least 60 minutes after the first request. For
+         * example, consider a situation where you make an initial request and the
+         * request times out. If you make the request again with the same request ID,
+         * the server can check if original operation with the same request ID was
+         * received, and if so, will ignore the second request. This prevents clients
+         * from accidentally creating duplicate commitments. The request ID must be a
+         * valid UUID with the exception that zero UUID is not supported
+         * (00000000-0000-0000-0000-000000000000).
+         *
+         * @param string $requestId
+         */
+        public function setRequestId($requestId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\RemoveAssetsFromGroupRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowMissing()
-    {
-    }
-    /**
-     * Required. List of assets to be removed. The maximum number of assets that
-     * can be removed in a single request is 1000.
-     *
-     * @param AssetList $assets
-     */
-    public function setAssets(AssetList $assets)
-    {
-    }
-    /**
-     * @return AssetList
-     */
-    public function getAssets()
-    {
-    }
-    /**
-     * Optional. An optional request ID to identify requests. Specify a unique
-     * request ID so that if you must retry your request, the server will know to
-     * ignore the request if it has already been completed. The server will
-     * guarantee that for at least 60 minutes after the first request. For
-     * example, consider a situation where you make an initial request and the
-     * request times out. If you make the request again with the same request ID,
-     * the server can check if original operation with the same request ID was
-     * received, and if so, will ignore the second request. This prevents clients
-     * from accidentally creating duplicate commitments. The request ID must be a
-     * valid UUID with the exception that zero UUID is not supported
-     * (00000000-0000-0000-0000-000000000000).
-     *
-     * @param string $requestId
-     */
-    public function setRequestId($requestId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestId()
+    class Google_Service_MigrationCenterAPI_RemoveAssetsFromGroupRequest extends \Google\Service\MigrationCenterAPI\RemoveAssetsFromGroupRequest
     {
     }
 }

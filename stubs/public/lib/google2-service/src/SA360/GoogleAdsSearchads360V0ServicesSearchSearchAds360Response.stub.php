@@ -21,187 +21,196 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0ServicesSearchSearchAds360Response extends \Google\Collection
-{
-    protected $collection_key = 'results';
-    protected $conversionCustomDimensionHeadersType = GoogleAdsSearchads360V0ServicesConversionCustomDimensionHeader::class;
-    protected $conversionCustomDimensionHeadersDataType = 'array';
-    protected $conversionCustomMetricHeadersType = GoogleAdsSearchads360V0ServicesConversionCustomMetricHeader::class;
-    protected $conversionCustomMetricHeadersDataType = 'array';
-    protected $customColumnHeadersType = GoogleAdsSearchads360V0ServicesCustomColumnHeader::class;
-    protected $customColumnHeadersDataType = 'array';
-    /**
-     * FieldMask that represents what fields were requested by the user.
-     *
-     * @var string
-     */
-    public $fieldMask;
-    /**
-     * Pagination token used to retrieve the next page of results. Pass the
-     * content of this string as the `page_token` attribute of the next request.
-     * `next_page_token` is not returned for the last page.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $rawEventConversionDimensionHeadersType = GoogleAdsSearchads360V0ServicesRawEventConversionDimensionHeader::class;
-    protected $rawEventConversionDimensionHeadersDataType = 'array';
-    protected $rawEventConversionMetricHeadersType = GoogleAdsSearchads360V0ServicesRawEventConversionMetricHeader::class;
-    protected $rawEventConversionMetricHeadersDataType = 'array';
-    protected $resultsType = GoogleAdsSearchads360V0ServicesSearchAds360Row::class;
-    protected $resultsDataType = 'array';
-    protected $summaryRowType = GoogleAdsSearchads360V0ServicesSearchAds360Row::class;
-    protected $summaryRowDataType = '';
-    /**
-     * Total number of results that match the query ignoring the LIMIT clause.
-     *
-     * @var string
-     */
-    public $totalResultsCount;
-    /**
-     * The headers of the conversion custom dimensions in the results.
-     *
-     * @param GoogleAdsSearchads360V0ServicesConversionCustomDimensionHeader[] $conversionCustomDimensionHeaders
-     */
-    public function setConversionCustomDimensionHeaders($conversionCustomDimensionHeaders)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0ServicesSearchSearchAds360Response extends \Google\Collection
     {
+        protected $collection_key = 'results';
+        protected $conversionCustomDimensionHeadersType = GoogleAdsSearchads360V0ServicesConversionCustomDimensionHeader::class;
+        protected $conversionCustomDimensionHeadersDataType = 'array';
+        protected $conversionCustomMetricHeadersType = GoogleAdsSearchads360V0ServicesConversionCustomMetricHeader::class;
+        protected $conversionCustomMetricHeadersDataType = 'array';
+        protected $customColumnHeadersType = GoogleAdsSearchads360V0ServicesCustomColumnHeader::class;
+        protected $customColumnHeadersDataType = 'array';
+        /**
+         * FieldMask that represents what fields were requested by the user.
+         *
+         * @var string
+         */
+        public $fieldMask;
+        /**
+         * Pagination token used to retrieve the next page of results. Pass the
+         * content of this string as the `page_token` attribute of the next request.
+         * `next_page_token` is not returned for the last page.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $rawEventConversionDimensionHeadersType = GoogleAdsSearchads360V0ServicesRawEventConversionDimensionHeader::class;
+        protected $rawEventConversionDimensionHeadersDataType = 'array';
+        protected $rawEventConversionMetricHeadersType = GoogleAdsSearchads360V0ServicesRawEventConversionMetricHeader::class;
+        protected $rawEventConversionMetricHeadersDataType = 'array';
+        protected $resultsType = GoogleAdsSearchads360V0ServicesSearchAds360Row::class;
+        protected $resultsDataType = 'array';
+        protected $summaryRowType = GoogleAdsSearchads360V0ServicesSearchAds360Row::class;
+        protected $summaryRowDataType = '';
+        /**
+         * Total number of results that match the query ignoring the LIMIT clause.
+         *
+         * @var string
+         */
+        public $totalResultsCount;
+        /**
+         * The headers of the conversion custom dimensions in the results.
+         *
+         * @param GoogleAdsSearchads360V0ServicesConversionCustomDimensionHeader[] $conversionCustomDimensionHeaders
+         */
+        public function setConversionCustomDimensionHeaders($conversionCustomDimensionHeaders)
+        {
+        }
+        /**
+         * @return GoogleAdsSearchads360V0ServicesConversionCustomDimensionHeader[]
+         */
+        public function getConversionCustomDimensionHeaders()
+        {
+        }
+        /**
+         * The headers of the conversion custom metrics in the results.
+         *
+         * @param GoogleAdsSearchads360V0ServicesConversionCustomMetricHeader[] $conversionCustomMetricHeaders
+         */
+        public function setConversionCustomMetricHeaders($conversionCustomMetricHeaders)
+        {
+        }
+        /**
+         * @return GoogleAdsSearchads360V0ServicesConversionCustomMetricHeader[]
+         */
+        public function getConversionCustomMetricHeaders()
+        {
+        }
+        /**
+         * The headers of the custom columns in the results.
+         *
+         * @param GoogleAdsSearchads360V0ServicesCustomColumnHeader[] $customColumnHeaders
+         */
+        public function setCustomColumnHeaders($customColumnHeaders)
+        {
+        }
+        /**
+         * @return GoogleAdsSearchads360V0ServicesCustomColumnHeader[]
+         */
+        public function getCustomColumnHeaders()
+        {
+        }
+        /**
+         * FieldMask that represents what fields were requested by the user.
+         *
+         * @param string $fieldMask
+         */
+        public function setFieldMask($fieldMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFieldMask()
+        {
+        }
+        /**
+         * Pagination token used to retrieve the next page of results. Pass the
+         * content of this string as the `page_token` attribute of the next request.
+         * `next_page_token` is not returned for the last page.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The headers of the raw event conversion dimensions in the results.
+         *
+         * @param GoogleAdsSearchads360V0ServicesRawEventConversionDimensionHeader[] $rawEventConversionDimensionHeaders
+         */
+        public function setRawEventConversionDimensionHeaders($rawEventConversionDimensionHeaders)
+        {
+        }
+        /**
+         * @return GoogleAdsSearchads360V0ServicesRawEventConversionDimensionHeader[]
+         */
+        public function getRawEventConversionDimensionHeaders()
+        {
+        }
+        /**
+         * The headers of the raw event conversion metrics in the results.
+         *
+         * @param GoogleAdsSearchads360V0ServicesRawEventConversionMetricHeader[] $rawEventConversionMetricHeaders
+         */
+        public function setRawEventConversionMetricHeaders($rawEventConversionMetricHeaders)
+        {
+        }
+        /**
+         * @return GoogleAdsSearchads360V0ServicesRawEventConversionMetricHeader[]
+         */
+        public function getRawEventConversionMetricHeaders()
+        {
+        }
+        /**
+         * The list of rows that matched the query.
+         *
+         * @param GoogleAdsSearchads360V0ServicesSearchAds360Row[] $results
+         */
+        public function setResults($results)
+        {
+        }
+        /**
+         * @return GoogleAdsSearchads360V0ServicesSearchAds360Row[]
+         */
+        public function getResults()
+        {
+        }
+        /**
+         * Summary row that contains summary of metrics in results. Summary of metrics
+         * means aggregation of metrics across all results, here aggregation could be
+         * sum, average, rate, etc.
+         *
+         * @param GoogleAdsSearchads360V0ServicesSearchAds360Row $summaryRow
+         */
+        public function setSummaryRow(GoogleAdsSearchads360V0ServicesSearchAds360Row $summaryRow)
+        {
+        }
+        /**
+         * @return GoogleAdsSearchads360V0ServicesSearchAds360Row
+         */
+        public function getSummaryRow()
+        {
+        }
+        /**
+         * Total number of results that match the query ignoring the LIMIT clause.
+         *
+         * @param string $totalResultsCount
+         */
+        public function setTotalResultsCount($totalResultsCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalResultsCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAdsSearchads360V0ServicesConversionCustomDimensionHeader[]
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0ServicesSearchSearchAds360Response registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConversionCustomDimensionHeaders()
-    {
-    }
-    /**
-     * The headers of the conversion custom metrics in the results.
-     *
-     * @param GoogleAdsSearchads360V0ServicesConversionCustomMetricHeader[] $conversionCustomMetricHeaders
-     */
-    public function setConversionCustomMetricHeaders($conversionCustomMetricHeaders)
-    {
-    }
-    /**
-     * @return GoogleAdsSearchads360V0ServicesConversionCustomMetricHeader[]
-     */
-    public function getConversionCustomMetricHeaders()
-    {
-    }
-    /**
-     * The headers of the custom columns in the results.
-     *
-     * @param GoogleAdsSearchads360V0ServicesCustomColumnHeader[] $customColumnHeaders
-     */
-    public function setCustomColumnHeaders($customColumnHeaders)
-    {
-    }
-    /**
-     * @return GoogleAdsSearchads360V0ServicesCustomColumnHeader[]
-     */
-    public function getCustomColumnHeaders()
-    {
-    }
-    /**
-     * FieldMask that represents what fields were requested by the user.
-     *
-     * @param string $fieldMask
-     */
-    public function setFieldMask($fieldMask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFieldMask()
-    {
-    }
-    /**
-     * Pagination token used to retrieve the next page of results. Pass the
-     * content of this string as the `page_token` attribute of the next request.
-     * `next_page_token` is not returned for the last page.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The headers of the raw event conversion dimensions in the results.
-     *
-     * @param GoogleAdsSearchads360V0ServicesRawEventConversionDimensionHeader[] $rawEventConversionDimensionHeaders
-     */
-    public function setRawEventConversionDimensionHeaders($rawEventConversionDimensionHeaders)
-    {
-    }
-    /**
-     * @return GoogleAdsSearchads360V0ServicesRawEventConversionDimensionHeader[]
-     */
-    public function getRawEventConversionDimensionHeaders()
-    {
-    }
-    /**
-     * The headers of the raw event conversion metrics in the results.
-     *
-     * @param GoogleAdsSearchads360V0ServicesRawEventConversionMetricHeader[] $rawEventConversionMetricHeaders
-     */
-    public function setRawEventConversionMetricHeaders($rawEventConversionMetricHeaders)
-    {
-    }
-    /**
-     * @return GoogleAdsSearchads360V0ServicesRawEventConversionMetricHeader[]
-     */
-    public function getRawEventConversionMetricHeaders()
-    {
-    }
-    /**
-     * The list of rows that matched the query.
-     *
-     * @param GoogleAdsSearchads360V0ServicesSearchAds360Row[] $results
-     */
-    public function setResults($results)
-    {
-    }
-    /**
-     * @return GoogleAdsSearchads360V0ServicesSearchAds360Row[]
-     */
-    public function getResults()
-    {
-    }
-    /**
-     * Summary row that contains summary of metrics in results. Summary of metrics
-     * means aggregation of metrics across all results, here aggregation could be
-     * sum, average, rate, etc.
-     *
-     * @param GoogleAdsSearchads360V0ServicesSearchAds360Row $summaryRow
-     */
-    public function setSummaryRow(GoogleAdsSearchads360V0ServicesSearchAds360Row $summaryRow)
-    {
-    }
-    /**
-     * @return GoogleAdsSearchads360V0ServicesSearchAds360Row
-     */
-    public function getSummaryRow()
-    {
-    }
-    /**
-     * Total number of results that match the query ignoring the LIMIT clause.
-     *
-     * @param string $totalResultsCount
-     */
-    public function setTotalResultsCount($totalResultsCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalResultsCount()
+    class Google_Service_SA360_GoogleAdsSearchads360V0ServicesSearchSearchAds360Response extends \Google\Service\SA360\GoogleAdsSearchads360V0ServicesSearchSearchAds360Response
     {
     }
 }

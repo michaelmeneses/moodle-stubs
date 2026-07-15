@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1StudySpecParameterSpecDoubleValueSpec extends \Google\Model
-{
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1StudySpecParameterSpecDoubleValueSpec extends \Google\Model
+    {
+        /**
+         * A default value for a `DOUBLE` parameter that is assumed to be a relatively
+         * good starting point. Unset value signals that there is no offered starting
+         * point. Currently only supported by the Vertex AI Vizier service. Not
+         * supported by HyperparameterTuningJob or TrainingPipeline.
+         *
+         * @var 
+         */
+        public $defaultValue;
+        /**
+         * Required. Inclusive maximum value of the parameter.
+         *
+         * @var 
+         */
+        public $maxValue;
+        /**
+         * Required. Inclusive minimum value of the parameter.
+         *
+         * @var 
+         */
+        public $minValue;
+        public function setDefaultValue($defaultValue)
+        {
+        }
+        public function getDefaultValue()
+        {
+        }
+        public function setMaxValue($maxValue)
+        {
+        }
+        public function getMaxValue()
+        {
+        }
+        public function setMinValue($minValue)
+        {
+        }
+        public function getMinValue()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * A default value for a `DOUBLE` parameter that is assumed to be a relatively
-     * good starting point. Unset value signals that there is no offered starting
-     * point. Currently only supported by the Vertex AI Vizier service. Not
-     * supported by HyperparameterTuningJob or TrainingPipeline.
-     *
-     * @var 
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1StudySpecParameterSpecDoubleValueSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public $defaultValue;
-    /**
-     * Required. Inclusive maximum value of the parameter.
-     *
-     * @var 
-     */
-    public $maxValue;
-    /**
-     * Required. Inclusive minimum value of the parameter.
-     *
-     * @var 
-     */
-    public $minValue;
-    public function setDefaultValue($defaultValue)
-    {
-    }
-    public function getDefaultValue()
-    {
-    }
-    public function setMaxValue($maxValue)
-    {
-    }
-    public function getMaxValue()
-    {
-    }
-    public function setMinValue($minValue)
-    {
-    }
-    public function getMinValue()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1StudySpecParameterSpecDoubleValueSpec extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1StudySpecParameterSpecDoubleValueSpec
     {
     }
 }

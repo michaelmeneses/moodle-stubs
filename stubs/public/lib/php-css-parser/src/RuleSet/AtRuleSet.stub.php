@@ -8,6 +8,8 @@
  */
 namespace Sabberworm\CSS\RuleSet;
 
+use Sabberworm\CSS\OutputFormat;
+use Sabberworm\CSS\Property\AtRule;
 /**
  * This class represents rule sets for generic at-rules which are not covered by specific classes, i.e., not
  * `@import`, `@charset` or `@media`.

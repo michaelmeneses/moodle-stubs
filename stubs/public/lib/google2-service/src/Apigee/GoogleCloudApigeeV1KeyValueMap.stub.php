@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1KeyValueMap extends \Google\Model
-{
-    /**
-     * Required. Flag that specifies whether entry values will be encrypted. This
-     * field is retained for backward compatibility and the value of encrypted
-     * will always be `true`. Apigee X and hybrid do not support unencrypted key
-     * value maps.
-     *
-     * @var bool
-     */
-    public $encrypted;
-    /**
-     * Optional. Flag that specifies whether entry values will be masked when
-     * returned.
-     *
-     * @var bool
-     */
-    public $maskedValues;
-    /**
-     * Required. ID of the key value map.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. Flag that specifies whether entry values will be encrypted. This
-     * field is retained for backward compatibility and the value of encrypted
-     * will always be `true`. Apigee X and hybrid do not support unencrypted key
-     * value maps.
-     *
-     * @param bool $encrypted
-     */
-    public function setEncrypted($encrypted)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1KeyValueMap extends \Google\Model
     {
+        /**
+         * Required. Flag that specifies whether entry values will be encrypted. This
+         * field is retained for backward compatibility and the value of encrypted
+         * will always be `true`. Apigee X and hybrid do not support unencrypted key
+         * value maps.
+         *
+         * @var bool
+         */
+        public $encrypted;
+        /**
+         * Optional. Flag that specifies whether entry values will be masked when
+         * returned.
+         *
+         * @var bool
+         */
+        public $maskedValues;
+        /**
+         * Required. ID of the key value map.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. Flag that specifies whether entry values will be encrypted. This
+         * field is retained for backward compatibility and the value of encrypted
+         * will always be `true`. Apigee X and hybrid do not support unencrypted key
+         * value maps.
+         *
+         * @param bool $encrypted
+         */
+        public function setEncrypted($encrypted)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEncrypted()
+        {
+        }
+        /**
+         * Optional. Flag that specifies whether entry values will be masked when
+         * returned.
+         *
+         * @param bool $maskedValues
+         */
+        public function setMaskedValues($maskedValues)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getMaskedValues()
+        {
+        }
+        /**
+         * Required. ID of the key value map.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1KeyValueMap registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEncrypted()
-    {
-    }
-    /**
-     * Optional. Flag that specifies whether entry values will be masked when
-     * returned.
-     *
-     * @param bool $maskedValues
-     */
-    public function setMaskedValues($maskedValues)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getMaskedValues()
-    {
-    }
-    /**
-     * Required. ID of the key value map.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Apigee_GoogleCloudApigeeV1KeyValueMap extends \Google\Service\Apigee\GoogleCloudApigeeV1KeyValueMap
     {
     }
 }

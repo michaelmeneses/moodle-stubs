@@ -21,36 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild\Resource;
-
-/**
- * The "repos" collection of methods.
- * Typical usage is:
- *  <code>
- *   $cloudbuildService = new Google\Service\CloudBuild(...);
- *   $repos = $cloudbuildService->projects_locations_bitbucketServerConfigs_repos;
- *  </code>
- */
-class ProjectsLocationsBitbucketServerConfigsRepos extends \Google\Service\Resource
-{
+namespace Google\Service\CloudBuild\Resource {
+    use Google\Service\CloudBuild\ListBitbucketServerRepositoriesResponse;
     /**
-     * List all repositories for a given `BitbucketServerConfig`. This API is
-     * experimental. (repos.listProjectsLocationsBitbucketServerConfigsRepos)
-     *
-     * @param string $parent Required. Name of the parent resource.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The maximum number of configs to return. The service
-     * may return fewer than this value. The maximum value is 1000; values above
-     * 1000 will be coerced to 1000.
-     * @opt_param string pageToken A page token, received from a previous
-     * `ListBitbucketServerRepositoriesRequest` call. Provide this to retrieve the
-     * subsequent page. When paginating, all other parameters provided to
-     * `ListBitbucketServerConfigsRequest` must match the call that provided the
-     * page token.
-     * @return ListBitbucketServerRepositoriesResponse
+     * The "repos" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $cloudbuildService = new Google\Service\CloudBuild(...);
+     *   $repos = $cloudbuildService->projects_locations_bitbucketServerConfigs_repos;
+     *  </code>
      */
-    public function listProjectsLocationsBitbucketServerConfigsRepos($parent, $optParams = [])
+    class ProjectsLocationsBitbucketServerConfigsRepos extends \Google\Service\Resource
+    {
+        /**
+         * List all repositories for a given `BitbucketServerConfig`. This API is
+         * experimental. (repos.listProjectsLocationsBitbucketServerConfigsRepos)
+         *
+         * @param string $parent Required. Name of the parent resource.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The maximum number of configs to return. The service
+         * may return fewer than this value. The maximum value is 1000; values above
+         * 1000 will be coerced to 1000.
+         * @opt_param string pageToken A page token, received from a previous
+         * `ListBitbucketServerRepositoriesRequest` call. Provide this to retrieve the
+         * subsequent page. When paginating, all other parameters provided to
+         * `ListBitbucketServerConfigsRequest` must match the call that provided the
+         * page token.
+         * @return ListBitbucketServerRepositoriesResponse
+         */
+        public function listProjectsLocationsBitbucketServerConfigsRepos($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudBuild\Resource\ProjectsLocationsBitbucketServerConfigsRepos registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudBuild_Resource_ProjectsLocationsBitbucketServerConfigsRepos extends \Google\Service\CloudBuild\Resource\ProjectsLocationsBitbucketServerConfigsRepos
     {
     }
 }

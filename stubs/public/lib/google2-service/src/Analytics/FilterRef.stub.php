@@ -21,108 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics;
-
-class FilterRef extends \Google\Model
-{
-    /**
-     * Account ID to which this filter belongs.
-     *
-     * @var string
-     */
-    public $accountId;
-    /**
-     * Link for this filter.
-     *
-     * @var string
-     */
-    public $href;
-    /**
-     * Filter ID.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Kind value for filter reference.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Name of this filter.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Account ID to which this filter belongs.
-     *
-     * @param string $accountId
-     */
-    public function setAccountId($accountId)
+namespace Google\Service\Analytics {
+    class FilterRef extends \Google\Model
     {
+        /**
+         * Account ID to which this filter belongs.
+         *
+         * @var string
+         */
+        public $accountId;
+        /**
+         * Link for this filter.
+         *
+         * @var string
+         */
+        public $href;
+        /**
+         * Filter ID.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Kind value for filter reference.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Name of this filter.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Account ID to which this filter belongs.
+         *
+         * @param string $accountId
+         */
+        public function setAccountId($accountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccountId()
+        {
+        }
+        /**
+         * Link for this filter.
+         *
+         * @param string $href
+         */
+        public function setHref($href)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHref()
+        {
+        }
+        /**
+         * Filter ID.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Kind value for filter reference.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Name of this filter.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Analytics\FilterRef registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountId()
-    {
-    }
-    /**
-     * Link for this filter.
-     *
-     * @param string $href
-     */
-    public function setHref($href)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHref()
-    {
-    }
-    /**
-     * Filter ID.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Kind value for filter reference.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Name of this filter.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Analytics_FilterRef extends \Google\Service\Analytics\FilterRef
     {
     }
 }

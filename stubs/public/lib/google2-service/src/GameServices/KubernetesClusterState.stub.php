@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GameServices;
-
-class KubernetesClusterState extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $agonesVersionInstalled;
-    /**
-     * @var string
-     */
-    public $agonesVersionTargeted;
-    /**
-     * @var string
-     */
-    public $installationState;
-    /**
-     * @var string
-     */
-    public $kubernetesVersionInstalled;
-    /**
-     * @var string
-     */
-    public $provider;
-    /**
-     * @var string
-     */
-    public $versionInstalledErrorMessage;
-    /**
-     * @param string
-     */
-    public function setAgonesVersionInstalled($agonesVersionInstalled)
+namespace Google\Service\GameServices {
+    class KubernetesClusterState extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $agonesVersionInstalled;
+        /**
+         * @var string
+         */
+        public $agonesVersionTargeted;
+        /**
+         * @var string
+         */
+        public $installationState;
+        /**
+         * @var string
+         */
+        public $kubernetesVersionInstalled;
+        /**
+         * @var string
+         */
+        public $provider;
+        /**
+         * @var string
+         */
+        public $versionInstalledErrorMessage;
+        /**
+         * @param string
+         */
+        public function setAgonesVersionInstalled($agonesVersionInstalled)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAgonesVersionInstalled()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setAgonesVersionTargeted($agonesVersionTargeted)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAgonesVersionTargeted()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setInstallationState($installationState)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstallationState()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKubernetesVersionInstalled($kubernetesVersionInstalled)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKubernetesVersionInstalled()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setProvider($provider)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProvider()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setVersionInstalledErrorMessage($versionInstalledErrorMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersionInstalledErrorMessage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GameServices\KubernetesClusterState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAgonesVersionInstalled()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setAgonesVersionTargeted($agonesVersionTargeted)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAgonesVersionTargeted()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setInstallationState($installationState)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInstallationState()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKubernetesVersionInstalled($kubernetesVersionInstalled)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKubernetesVersionInstalled()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setProvider($provider)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProvider()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setVersionInstalledErrorMessage($versionInstalledErrorMessage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersionInstalledErrorMessage()
+    class Google_Service_GameServices_KubernetesClusterState extends \Google\Service\GameServices\KubernetesClusterState
     {
     }
 }

@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class EventVenue extends \Google\Model
-{
-    protected $addressType = LocalizedString::class;
-    protected $addressDataType = '';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * `"walletobjects#eventVenue"`.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $kind;
-    protected $nameType = LocalizedString::class;
-    protected $nameDataType = '';
-    /**
-     * The address of the venue, such as "24 Willie Mays Plaza\nSan Francisco, CA
-     * 94107". Address lines are separated by line feed (`\n`) characters. This is
-     * required.
-     *
-     * @param LocalizedString $address
-     */
-    public function setAddress(LocalizedString $address)
+namespace Google\Service\Walletobjects {
+    class EventVenue extends \Google\Model
     {
+        protected $addressType = LocalizedString::class;
+        protected $addressDataType = '';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * `"walletobjects#eventVenue"`.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $kind;
+        protected $nameType = LocalizedString::class;
+        protected $nameDataType = '';
+        /**
+         * The address of the venue, such as "24 Willie Mays Plaza\nSan Francisco, CA
+         * 94107". Address lines are separated by line feed (`\n`) characters. This is
+         * required.
+         *
+         * @param LocalizedString $address
+         */
+        public function setAddress(LocalizedString $address)
+        {
+        }
+        /**
+         * @return LocalizedString
+         */
+        public function getAddress()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * `"walletobjects#eventVenue"`.
+         *
+         * @deprecated
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The name of the venue, such as "AT&T Park". This is required.
+         *
+         * @param LocalizedString $name
+         */
+        public function setName(LocalizedString $name)
+        {
+        }
+        /**
+         * @return LocalizedString
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LocalizedString
+     * Runtime class alias of \Google\Service\Walletobjects\EventVenue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddress()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * `"walletobjects#eventVenue"`.
-     *
-     * @deprecated
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The name of the venue, such as "AT&T Park". This is required.
-     *
-     * @param LocalizedString $name
-     */
-    public function setName(LocalizedString $name)
-    {
-    }
-    /**
-     * @return LocalizedString
-     */
-    public function getName()
+    class Google_Service_Walletobjects_EventVenue extends \Google\Service\Walletobjects\EventVenue
     {
     }
 }

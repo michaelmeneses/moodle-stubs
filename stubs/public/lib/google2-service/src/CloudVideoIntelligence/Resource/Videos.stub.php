@@ -21,30 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudVideoIntelligence\Resource;
-
-/**
- * The "videos" collection of methods.
- * Typical usage is:
- *  <code>
- *   $videointelligenceService = new Google\Service\CloudVideoIntelligence(...);
- *   $videos = $videointelligenceService->videos;
- *  </code>
- */
-class Videos extends \Google\Service\Resource
-{
+namespace Google\Service\CloudVideoIntelligence\Resource {
+    use Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1AnnotateVideoRequest;
+    use Google\Service\CloudVideoIntelligence\GoogleLongrunningOperation;
     /**
-     * Performs asynchronous video annotation. Progress and results can be retrieved
-     * through the `google.longrunning.Operations` interface. `Operation.metadata`
-     * contains `AnnotateVideoProgress` (progress). `Operation.response` contains
-     * `AnnotateVideoResponse` (results). (videos.annotate)
-     *
-     * @param GoogleCloudVideointelligenceV1AnnotateVideoRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
+     * The "videos" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $videointelligenceService = new Google\Service\CloudVideoIntelligence(...);
+     *   $videos = $videointelligenceService->videos;
+     *  </code>
      */
-    public function annotate(GoogleCloudVideointelligenceV1AnnotateVideoRequest $postBody, $optParams = [])
+    class Videos extends \Google\Service\Resource
+    {
+        /**
+         * Performs asynchronous video annotation. Progress and results can be retrieved
+         * through the `google.longrunning.Operations` interface. `Operation.metadata`
+         * contains `AnnotateVideoProgress` (progress). `Operation.response` contains
+         * `AnnotateVideoResponse` (results). (videos.annotate)
+         *
+         * @param GoogleCloudVideointelligenceV1AnnotateVideoRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function annotate(GoogleCloudVideointelligenceV1AnnotateVideoRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudVideoIntelligence\Resource\Videos registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudVideoIntelligence_Resource_Videos extends \Google\Service\CloudVideoIntelligence\Resource\Videos
     {
     }
 }

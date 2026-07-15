@@ -21,36 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OracleDatabase\Resource;
-
-/**
- * The "dbNodes" collection of methods.
- * Typical usage is:
- *  <code>
- *   $oracledatabaseService = new Google\Service\OracleDatabase(...);
- *   $dbNodes = $oracledatabaseService->projects_locations_cloudVmClusters_dbNodes;
- *  </code>
- */
-class ProjectsLocationsCloudVmClustersDbNodes extends \Google\Service\Resource
-{
+namespace Google\Service\OracleDatabase\Resource {
+    use Google\Service\OracleDatabase\ListDbNodesResponse;
     /**
-     * Lists the database nodes of a VM Cluster.
-     * (dbNodes.listProjectsLocationsCloudVmClustersDbNodes)
-     *
-     * @param string $parent Required. The parent value for database node in the
-     * following format:
-     * projects/{project}/locations/{location}/cloudVmClusters/{cloudVmCluster}. .
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Optional. The maximum number of items to return. If
-     * unspecified, at most 50 db nodes will be returned. The maximum value is 1000;
-     * values above 1000 will be coerced to 1000.
-     * @opt_param string pageToken Optional. A token identifying a page of results
-     * the node should return.
-     * @return ListDbNodesResponse
-     * @throws \Google\Service\Exception
+     * The "dbNodes" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $oracledatabaseService = new Google\Service\OracleDatabase(...);
+     *   $dbNodes = $oracledatabaseService->projects_locations_cloudVmClusters_dbNodes;
+     *  </code>
      */
-    public function listProjectsLocationsCloudVmClustersDbNodes($parent, $optParams = [])
+    class ProjectsLocationsCloudVmClustersDbNodes extends \Google\Service\Resource
+    {
+        /**
+         * Lists the database nodes of a VM Cluster.
+         * (dbNodes.listProjectsLocationsCloudVmClustersDbNodes)
+         *
+         * @param string $parent Required. The parent value for database node in the
+         * following format:
+         * projects/{project}/locations/{location}/cloudVmClusters/{cloudVmCluster}. .
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Optional. The maximum number of items to return. If
+         * unspecified, at most 50 db nodes will be returned. The maximum value is 1000;
+         * values above 1000 will be coerced to 1000.
+         * @opt_param string pageToken Optional. A token identifying a page of results
+         * the node should return.
+         * @return ListDbNodesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsCloudVmClustersDbNodes($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\OracleDatabase\Resource\ProjectsLocationsCloudVmClustersDbNodes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_OracleDatabase_Resource_ProjectsLocationsCloudVmClustersDbNodes extends \Google\Service\OracleDatabase\Resource\ProjectsLocationsCloudVmClustersDbNodes
     {
     }
 }

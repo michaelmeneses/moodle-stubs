@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AirQuality\Resource;
-
-/**
- * The "mapTypes" collection of methods.
- * Typical usage is:
- *  <code>
- *   $airqualityService = new Google\Service\AirQuality(...);
- *   $mapTypes = $airqualityService->mapTypes;
- *  </code>
- */
-class MapTypes extends \Google\Service\Resource
-{
+namespace Google\Service\AirQuality\Resource {
+    /**
+     * The "mapTypes" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $airqualityService = new Google\Service\AirQuality(...);
+     *   $mapTypes = $airqualityService->mapTypes;
+     *  </code>
+     */
+    class MapTypes extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AirQuality\Resource\MapTypes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AirQuality_Resource_MapTypes extends \Google\Service\AirQuality\Resource\MapTypes
+    {
+    }
 }

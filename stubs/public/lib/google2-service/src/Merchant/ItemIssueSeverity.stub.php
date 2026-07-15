@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Merchant;
-
-class ItemIssueSeverity extends \Google\Collection
-{
-    protected $collection_key = 'severityPerReportingContext';
-    /**
-     * @var string
-     */
-    public $aggregatedSeverity;
-    protected $severityPerReportingContextType = IssueSeverityPerReportingContext::class;
-    protected $severityPerReportingContextDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setAggregatedSeverity($aggregatedSeverity)
+namespace Google\Service\Merchant {
+    class ItemIssueSeverity extends \Google\Collection
     {
+        protected $collection_key = 'severityPerReportingContext';
+        /**
+         * @var string
+         */
+        public $aggregatedSeverity;
+        protected $severityPerReportingContextType = IssueSeverityPerReportingContext::class;
+        protected $severityPerReportingContextDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setAggregatedSeverity($aggregatedSeverity)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAggregatedSeverity()
+        {
+        }
+        /**
+         * @param IssueSeverityPerReportingContext[]
+         */
+        public function setSeverityPerReportingContext($severityPerReportingContext)
+        {
+        }
+        /**
+         * @return IssueSeverityPerReportingContext[]
+         */
+        public function getSeverityPerReportingContext()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Merchant\ItemIssueSeverity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAggregatedSeverity()
-    {
-    }
-    /**
-     * @param IssueSeverityPerReportingContext[]
-     */
-    public function setSeverityPerReportingContext($severityPerReportingContext)
-    {
-    }
-    /**
-     * @return IssueSeverityPerReportingContext[]
-     */
-    public function getSeverityPerReportingContext()
+    class Google_Service_Merchant_ItemIssueSeverity extends \Google\Service\Merchant\ItemIssueSeverity
     {
     }
 }

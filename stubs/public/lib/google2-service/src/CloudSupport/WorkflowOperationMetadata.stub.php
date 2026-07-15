@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSupport;
-
-class WorkflowOperationMetadata extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $namespace;
-    /**
-     * @var string
-     */
-    public $operationAction;
-    /**
-     * @var string
-     */
-    public $workflowOperationType;
-    /**
-     * @param string
-     */
-    public function setNamespace($namespace)
+namespace Google\Service\CloudSupport {
+    class WorkflowOperationMetadata extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $namespace;
+        /**
+         * @var string
+         */
+        public $operationAction;
+        /**
+         * @var string
+         */
+        public $workflowOperationType;
+        /**
+         * @param string
+         */
+        public function setNamespace($namespace)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNamespace()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOperationAction($operationAction)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOperationAction()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setWorkflowOperationType($workflowOperationType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWorkflowOperationType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSupport\WorkflowOperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNamespace()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOperationAction($operationAction)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOperationAction()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setWorkflowOperationType($workflowOperationType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWorkflowOperationType()
+    class Google_Service_CloudSupport_WorkflowOperationMetadata extends \Google\Service\CloudSupport\WorkflowOperationMetadata
     {
     }
 }

@@ -8,6 +8,7 @@
  */
 namespace Aws\Budgets;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Budgets** service.
  * @method \Aws\Result createBudget(array $args = [])

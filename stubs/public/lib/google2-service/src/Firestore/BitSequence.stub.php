@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class BitSequence extends \Google\Model
-{
-    /**
-     * The bytes that encode the bit sequence. May have a length of zero.
-     *
-     * @var string
-     */
-    public $bitmap;
-    /**
-     * The number of bits of the last byte in `bitmap` to ignore as "padding". If
-     * the length of `bitmap` is zero, then this value must be `0`. Otherwise,
-     * this value must be between 0 and 7, inclusive.
-     *
-     * @var int
-     */
-    public $padding;
-    /**
-     * The bytes that encode the bit sequence. May have a length of zero.
-     *
-     * @param string $bitmap
-     */
-    public function setBitmap($bitmap)
+namespace Google\Service\Firestore {
+    class BitSequence extends \Google\Model
     {
+        /**
+         * The bytes that encode the bit sequence. May have a length of zero.
+         *
+         * @var string
+         */
+        public $bitmap;
+        /**
+         * The number of bits of the last byte in `bitmap` to ignore as "padding". If
+         * the length of `bitmap` is zero, then this value must be `0`. Otherwise,
+         * this value must be between 0 and 7, inclusive.
+         *
+         * @var int
+         */
+        public $padding;
+        /**
+         * The bytes that encode the bit sequence. May have a length of zero.
+         *
+         * @param string $bitmap
+         */
+        public function setBitmap($bitmap)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBitmap()
+        {
+        }
+        /**
+         * The number of bits of the last byte in `bitmap` to ignore as "padding". If
+         * the length of `bitmap` is zero, then this value must be `0`. Otherwise,
+         * this value must be between 0 and 7, inclusive.
+         *
+         * @param int $padding
+         */
+        public function setPadding($padding)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPadding()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Firestore\BitSequence registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBitmap()
-    {
-    }
-    /**
-     * The number of bits of the last byte in `bitmap` to ignore as "padding". If
-     * the length of `bitmap` is zero, then this value must be `0`. Otherwise,
-     * this value must be between 0 and 7, inclusive.
-     *
-     * @param int $padding
-     */
-    public function setPadding($padding)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPadding()
+    class Google_Service_Firestore_BitSequence extends \Google\Service\Firestore\BitSequence
     {
     }
 }

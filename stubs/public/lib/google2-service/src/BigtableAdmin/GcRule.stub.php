@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class GcRule extends \Google\Model
-{
-    protected $intersectionType = Intersection::class;
-    protected $intersectionDataType = '';
-    /**
-     * Delete cells in a column older than the given age. Values must be at least
-     * one millisecond, and will be truncated to microsecond granularity.
-     *
-     * @var string
-     */
-    public $maxAge;
-    /**
-     * Delete all cells in a column except the most recent N.
-     *
-     * @var int
-     */
-    public $maxNumVersions;
-    protected $unionType = Union::class;
-    protected $unionDataType = '';
-    /**
-     * Delete cells that would be deleted by every nested rule.
-     *
-     * @param Intersection $intersection
-     */
-    public function setIntersection(Intersection $intersection)
+namespace Google\Service\BigtableAdmin {
+    class GcRule extends \Google\Model
     {
+        protected $intersectionType = Intersection::class;
+        protected $intersectionDataType = '';
+        /**
+         * Delete cells in a column older than the given age. Values must be at least
+         * one millisecond, and will be truncated to microsecond granularity.
+         *
+         * @var string
+         */
+        public $maxAge;
+        /**
+         * Delete all cells in a column except the most recent N.
+         *
+         * @var int
+         */
+        public $maxNumVersions;
+        protected $unionType = Union::class;
+        protected $unionDataType = '';
+        /**
+         * Delete cells that would be deleted by every nested rule.
+         *
+         * @param Intersection $intersection
+         */
+        public function setIntersection(Intersection $intersection)
+        {
+        }
+        /**
+         * @return Intersection
+         */
+        public function getIntersection()
+        {
+        }
+        /**
+         * Delete cells in a column older than the given age. Values must be at least
+         * one millisecond, and will be truncated to microsecond granularity.
+         *
+         * @param string $maxAge
+         */
+        public function setMaxAge($maxAge)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaxAge()
+        {
+        }
+        /**
+         * Delete all cells in a column except the most recent N.
+         *
+         * @param int $maxNumVersions
+         */
+        public function setMaxNumVersions($maxNumVersions)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxNumVersions()
+        {
+        }
+        /**
+         * Delete cells that would be deleted by any nested rule.
+         *
+         * @param Union $union
+         */
+        public function setUnion(Union $union)
+        {
+        }
+        /**
+         * @return Union
+         */
+        public function getUnion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Intersection
+     * Runtime class alias of \Google\Service\BigtableAdmin\GcRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIntersection()
-    {
-    }
-    /**
-     * Delete cells in a column older than the given age. Values must be at least
-     * one millisecond, and will be truncated to microsecond granularity.
-     *
-     * @param string $maxAge
-     */
-    public function setMaxAge($maxAge)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMaxAge()
-    {
-    }
-    /**
-     * Delete all cells in a column except the most recent N.
-     *
-     * @param int $maxNumVersions
-     */
-    public function setMaxNumVersions($maxNumVersions)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxNumVersions()
-    {
-    }
-    /**
-     * Delete cells that would be deleted by any nested rule.
-     *
-     * @param Union $union
-     */
-    public function setUnion(Union $union)
-    {
-    }
-    /**
-     * @return Union
-     */
-    public function getUnion()
+    class Google_Service_BigtableAdmin_GcRule extends \Google\Service\BigtableAdmin\GcRule
     {
     }
 }

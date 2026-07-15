@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataform;
-
-class ScheduledReleaseRecord extends \Google\Model
-{
-    /**
-     * The name of the created compilation result, if one was successfully
-     * created. Must be in the format
-     * `projects/locations/repositories/compilationResults`.
-     *
-     * @var string
-     */
-    public $compilationResult;
-    protected $errorStatusType = Status::class;
-    protected $errorStatusDataType = '';
-    /**
-     * Output only. The timestamp of this release attempt.
-     *
-     * @var string
-     */
-    public $releaseTime;
-    /**
-     * The name of the created compilation result, if one was successfully
-     * created. Must be in the format
-     * `projects/locations/repositories/compilationResults`.
-     *
-     * @param string $compilationResult
-     */
-    public function setCompilationResult($compilationResult)
+namespace Google\Service\Dataform {
+    class ScheduledReleaseRecord extends \Google\Model
     {
+        /**
+         * The name of the created compilation result, if one was successfully
+         * created. Must be in the format
+         * `projects/locations/repositories/compilationResults`.
+         *
+         * @var string
+         */
+        public $compilationResult;
+        protected $errorStatusType = Status::class;
+        protected $errorStatusDataType = '';
+        /**
+         * Output only. The timestamp of this release attempt.
+         *
+         * @var string
+         */
+        public $releaseTime;
+        /**
+         * The name of the created compilation result, if one was successfully
+         * created. Must be in the format
+         * `projects/locations/repositories/compilationResults`.
+         *
+         * @param string $compilationResult
+         */
+        public function setCompilationResult($compilationResult)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCompilationResult()
+        {
+        }
+        /**
+         * The error status encountered upon this attempt to create the compilation
+         * result, if the attempt was unsuccessful.
+         *
+         * @param Status $errorStatus
+         */
+        public function setErrorStatus(Status $errorStatus)
+        {
+        }
+        /**
+         * @return Status
+         */
+        public function getErrorStatus()
+        {
+        }
+        /**
+         * Output only. The timestamp of this release attempt.
+         *
+         * @param string $releaseTime
+         */
+        public function setReleaseTime($releaseTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReleaseTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataform\ScheduledReleaseRecord registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCompilationResult()
-    {
-    }
-    /**
-     * The error status encountered upon this attempt to create the compilation
-     * result, if the attempt was unsuccessful.
-     *
-     * @param Status $errorStatus
-     */
-    public function setErrorStatus(Status $errorStatus)
-    {
-    }
-    /**
-     * @return Status
-     */
-    public function getErrorStatus()
-    {
-    }
-    /**
-     * Output only. The timestamp of this release attempt.
-     *
-     * @param string $releaseTime
-     */
-    public function setReleaseTime($releaseTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReleaseTime()
+    class Google_Service_Dataform_ScheduledReleaseRecord extends \Google\Service\Dataform\ScheduledReleaseRecord
     {
     }
 }

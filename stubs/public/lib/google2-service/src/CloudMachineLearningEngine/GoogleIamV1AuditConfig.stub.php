@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudMachineLearningEngine;
-
-class GoogleIamV1AuditConfig extends \Google\Collection
-{
-    protected $collection_key = 'auditLogConfigs';
-    protected $auditLogConfigsType = GoogleIamV1AuditLogConfig::class;
-    protected $auditLogConfigsDataType = 'array';
-    /**
-     * Specifies a service that will be enabled for audit logging. For example,
-     * `storage.googleapis.com`, `cloudsql.googleapis.com`. `allServices` is a
-     * special value that covers all services.
-     *
-     * @var string
-     */
-    public $service;
-    /**
-     * The configuration for logging of each type of permission.
-     *
-     * @param GoogleIamV1AuditLogConfig[] $auditLogConfigs
-     */
-    public function setAuditLogConfigs($auditLogConfigs)
+namespace Google\Service\CloudMachineLearningEngine {
+    class GoogleIamV1AuditConfig extends \Google\Collection
     {
+        protected $collection_key = 'auditLogConfigs';
+        protected $auditLogConfigsType = GoogleIamV1AuditLogConfig::class;
+        protected $auditLogConfigsDataType = 'array';
+        /**
+         * Specifies a service that will be enabled for audit logging. For example,
+         * `storage.googleapis.com`, `cloudsql.googleapis.com`. `allServices` is a
+         * special value that covers all services.
+         *
+         * @var string
+         */
+        public $service;
+        /**
+         * The configuration for logging of each type of permission.
+         *
+         * @param GoogleIamV1AuditLogConfig[] $auditLogConfigs
+         */
+        public function setAuditLogConfigs($auditLogConfigs)
+        {
+        }
+        /**
+         * @return GoogleIamV1AuditLogConfig[]
+         */
+        public function getAuditLogConfigs()
+        {
+        }
+        /**
+         * Specifies a service that will be enabled for audit logging. For example,
+         * `storage.googleapis.com`, `cloudsql.googleapis.com`. `allServices` is a
+         * special value that covers all services.
+         *
+         * @param string $service
+         */
+        public function setService($service)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getService()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleIamV1AuditLogConfig[]
+     * Runtime class alias of \Google\Service\CloudMachineLearningEngine\GoogleIamV1AuditConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuditLogConfigs()
-    {
-    }
-    /**
-     * Specifies a service that will be enabled for audit logging. For example,
-     * `storage.googleapis.com`, `cloudsql.googleapis.com`. `allServices` is a
-     * special value that covers all services.
-     *
-     * @param string $service
-     */
-    public function setService($service)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getService()
+    class Google_Service_CloudMachineLearningEngine_GoogleIamV1AuditConfig extends \Google\Service\CloudMachineLearningEngine\GoogleIamV1AuditConfig
     {
     }
 }

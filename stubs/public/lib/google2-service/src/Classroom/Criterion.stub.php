@@ -21,85 +21,94 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Classroom;
-
-class Criterion extends \Google\Collection
-{
-    protected $collection_key = 'levels';
-    /**
-     * The description of the criterion.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * The criterion ID. On creation, an ID is assigned.
-     *
-     * @var string
-     */
-    public $id;
-    protected $levelsType = Level::class;
-    protected $levelsDataType = 'array';
-    /**
-     * The title of the criterion.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * The description of the criterion.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\Classroom {
+    class Criterion extends \Google\Collection
     {
+        protected $collection_key = 'levels';
+        /**
+         * The description of the criterion.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * The criterion ID. On creation, an ID is assigned.
+         *
+         * @var string
+         */
+        public $id;
+        protected $levelsType = Level::class;
+        protected $levelsDataType = 'array';
+        /**
+         * The title of the criterion.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * The description of the criterion.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * The criterion ID. On creation, an ID is assigned.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * The list of levels within this criterion.
+         *
+         * @param Level[] $levels
+         */
+        public function setLevels($levels)
+        {
+        }
+        /**
+         * @return Level[]
+         */
+        public function getLevels()
+        {
+        }
+        /**
+         * The title of the criterion.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Classroom\Criterion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * The criterion ID. On creation, an ID is assigned.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * The list of levels within this criterion.
-     *
-     * @param Level[] $levels
-     */
-    public function setLevels($levels)
-    {
-    }
-    /**
-     * @return Level[]
-     */
-    public function getLevels()
-    {
-    }
-    /**
-     * The title of the criterion.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_Classroom_Criterion extends \Google\Service\Classroom\Criterion
     {
     }
 }

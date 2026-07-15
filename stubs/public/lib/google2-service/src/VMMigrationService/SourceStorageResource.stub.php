@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMMigrationService;
-
-class SourceStorageResource extends \Google\Model
-{
-    protected $awsDiskDetailsType = AwsSourceDiskDetails::class;
-    protected $awsDiskDetailsDataType = '';
-    /**
-     * Source AWS volume details.
-     *
-     * @param AwsSourceDiskDetails $awsDiskDetails
-     */
-    public function setAwsDiskDetails(AwsSourceDiskDetails $awsDiskDetails)
+namespace Google\Service\VMMigrationService {
+    class SourceStorageResource extends \Google\Model
     {
+        protected $awsDiskDetailsType = AwsSourceDiskDetails::class;
+        protected $awsDiskDetailsDataType = '';
+        /**
+         * Source AWS volume details.
+         *
+         * @param AwsSourceDiskDetails $awsDiskDetails
+         */
+        public function setAwsDiskDetails(AwsSourceDiskDetails $awsDiskDetails)
+        {
+        }
+        /**
+         * @return AwsSourceDiskDetails
+         */
+        public function getAwsDiskDetails()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AwsSourceDiskDetails
+     * Runtime class alias of \Google\Service\VMMigrationService\SourceStorageResource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAwsDiskDetails()
+    class Google_Service_VMMigrationService_SourceStorageResource extends \Google\Service\VMMigrationService\SourceStorageResource
     {
     }
 }

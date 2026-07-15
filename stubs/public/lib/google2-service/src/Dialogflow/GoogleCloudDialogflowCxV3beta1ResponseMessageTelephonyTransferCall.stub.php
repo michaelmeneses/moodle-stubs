@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3beta1ResponseMessageTelephonyTransferCall extends \Google\Model
-{
-    /**
-     * Transfer the call to a phone number in [E.164
-     * format](https://en.wikipedia.org/wiki/E.164).
-     *
-     * @var string
-     */
-    public $phoneNumber;
-    /**
-     * Transfer the call to a phone number in [E.164
-     * format](https://en.wikipedia.org/wiki/E.164).
-     *
-     * @param string $phoneNumber
-     */
-    public function setPhoneNumber($phoneNumber)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3beta1ResponseMessageTelephonyTransferCall extends \Google\Model
     {
+        /**
+         * Transfer the call to a phone number in [E.164
+         * format](https://en.wikipedia.org/wiki/E.164).
+         *
+         * @var string
+         */
+        public $phoneNumber;
+        /**
+         * Transfer the call to a phone number in [E.164
+         * format](https://en.wikipedia.org/wiki/E.164).
+         *
+         * @param string $phoneNumber
+         */
+        public function setPhoneNumber($phoneNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPhoneNumber()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3beta1ResponseMessageTelephonyTransferCall registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPhoneNumber()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3beta1ResponseMessageTelephonyTransferCall extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3beta1ResponseMessageTelephonyTransferCall
     {
     }
 }

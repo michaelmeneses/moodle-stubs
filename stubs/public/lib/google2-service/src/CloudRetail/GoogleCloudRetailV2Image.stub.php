@@ -21,80 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2Image extends \Google\Model
-{
-    /**
-     * Height of the image in number of pixels. This field must be nonnegative.
-     * Otherwise, an INVALID_ARGUMENT error is returned.
-     *
-     * @var int
-     */
-    public $height;
-    /**
-     * Required. URI of the image. This field must be a valid UTF-8 encoded URI
-     * with a length limit of 5,000 characters. Otherwise, an INVALID_ARGUMENT
-     * error is returned. Google Merchant Center property
-     * [image_link](https://support.google.com/merchants/answer/6324350).
-     * Schema.org property [Product.image](https://schema.org/image).
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * Width of the image in number of pixels. This field must be nonnegative.
-     * Otherwise, an INVALID_ARGUMENT error is returned.
-     *
-     * @var int
-     */
-    public $width;
-    /**
-     * Height of the image in number of pixels. This field must be nonnegative.
-     * Otherwise, an INVALID_ARGUMENT error is returned.
-     *
-     * @param int $height
-     */
-    public function setHeight($height)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2Image extends \Google\Model
     {
+        /**
+         * Height of the image in number of pixels. This field must be nonnegative.
+         * Otherwise, an INVALID_ARGUMENT error is returned.
+         *
+         * @var int
+         */
+        public $height;
+        /**
+         * Required. URI of the image. This field must be a valid UTF-8 encoded URI
+         * with a length limit of 5,000 characters. Otherwise, an INVALID_ARGUMENT
+         * error is returned. Google Merchant Center property
+         * [image_link](https://support.google.com/merchants/answer/6324350).
+         * Schema.org property [Product.image](https://schema.org/image).
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * Width of the image in number of pixels. This field must be nonnegative.
+         * Otherwise, an INVALID_ARGUMENT error is returned.
+         *
+         * @var int
+         */
+        public $width;
+        /**
+         * Height of the image in number of pixels. This field must be nonnegative.
+         * Otherwise, an INVALID_ARGUMENT error is returned.
+         *
+         * @param int $height
+         */
+        public function setHeight($height)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getHeight()
+        {
+        }
+        /**
+         * Required. URI of the image. This field must be a valid UTF-8 encoded URI
+         * with a length limit of 5,000 characters. Otherwise, an INVALID_ARGUMENT
+         * error is returned. Google Merchant Center property
+         * [image_link](https://support.google.com/merchants/answer/6324350).
+         * Schema.org property [Product.image](https://schema.org/image).
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
+        /**
+         * Width of the image in number of pixels. This field must be nonnegative.
+         * Otherwise, an INVALID_ARGUMENT error is returned.
+         *
+         * @param int $width
+         */
+        public function setWidth($width)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getWidth()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2Image registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHeight()
-    {
-    }
-    /**
-     * Required. URI of the image. This field must be a valid UTF-8 encoded URI
-     * with a length limit of 5,000 characters. Otherwise, an INVALID_ARGUMENT
-     * error is returned. Google Merchant Center property
-     * [image_link](https://support.google.com/merchants/answer/6324350).
-     * Schema.org property [Product.image](https://schema.org/image).
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
-    {
-    }
-    /**
-     * Width of the image in number of pixels. This field must be nonnegative.
-     * Otherwise, an INVALID_ARGUMENT error is returned.
-     *
-     * @param int $width
-     */
-    public function setWidth($width)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getWidth()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2Image extends \Google\Service\CloudRetail\GoogleCloudRetailV2Image
     {
     }
 }

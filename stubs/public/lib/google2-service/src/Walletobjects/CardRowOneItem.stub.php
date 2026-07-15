@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class CardRowOneItem extends \Google\Model
-{
-    protected $itemType = TemplateItem::class;
-    protected $itemDataType = '';
-    /**
-     * The item to be displayed in the row. This item will be automatically
-     * centered.
-     *
-     * @param TemplateItem $item
-     */
-    public function setItem(TemplateItem $item)
+namespace Google\Service\Walletobjects {
+    class CardRowOneItem extends \Google\Model
     {
+        protected $itemType = TemplateItem::class;
+        protected $itemDataType = '';
+        /**
+         * The item to be displayed in the row. This item will be automatically
+         * centered.
+         *
+         * @param TemplateItem $item
+         */
+        public function setItem(TemplateItem $item)
+        {
+        }
+        /**
+         * @return TemplateItem
+         */
+        public function getItem()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TemplateItem
+     * Runtime class alias of \Google\Service\Walletobjects\CardRowOneItem registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItem()
+    class Google_Service_Walletobjects_CardRowOneItem extends \Google\Service\Walletobjects\CardRowOneItem
     {
     }
 }

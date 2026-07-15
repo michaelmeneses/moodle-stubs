@@ -21,227 +21,236 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkSecurity;
-
-class AddressGroup extends \Google\Collection
-{
-    /**
-     * Default value.
-     */
-    public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
-    /**
-     * IP v4 ranges.
-     */
-    public const TYPE_IPV4 = 'IPV4';
-    /**
-     * IP v6 ranges.
-     */
-    public const TYPE_IPV6 = 'IPV6';
-    protected $collection_key = 'purpose';
-    /**
-     * Required. Capacity of the Address Group
-     *
-     * @var int
-     */
-    public $capacity;
-    /**
-     * Output only. The timestamp when the resource was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Optional. Free-text description of the resource.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Optional. List of items.
-     *
-     * @var string[]
-     */
-    public $items;
-    /**
-     * Optional. Set of label tags associated with the AddressGroup resource.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Required. Name of the AddressGroup resource. It matches pattern
-     * `projects/locations/{location}/addressGroups/`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optional. List of supported purposes of the Address Group.
-     *
-     * @var string[]
-     */
-    public $purpose;
-    /**
-     * Output only. Server-defined fully-qualified URL for this resource.
-     *
-     * @var string
-     */
-    public $selfLink;
-    /**
-     * Required. The type of the Address Group. Possible values are "IPv4" or
-     * "IPV6".
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Output only. The timestamp when the resource was updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Required. Capacity of the Address Group
-     *
-     * @param int $capacity
-     */
-    public function setCapacity($capacity)
+namespace Google\Service\NetworkSecurity {
+    class AddressGroup extends \Google\Collection
     {
+        /**
+         * Default value.
+         */
+        public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
+        /**
+         * IP v4 ranges.
+         */
+        public const TYPE_IPV4 = 'IPV4';
+        /**
+         * IP v6 ranges.
+         */
+        public const TYPE_IPV6 = 'IPV6';
+        protected $collection_key = 'purpose';
+        /**
+         * Required. Capacity of the Address Group
+         *
+         * @var int
+         */
+        public $capacity;
+        /**
+         * Output only. The timestamp when the resource was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Optional. Free-text description of the resource.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Optional. List of items.
+         *
+         * @var string[]
+         */
+        public $items;
+        /**
+         * Optional. Set of label tags associated with the AddressGroup resource.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Required. Name of the AddressGroup resource. It matches pattern
+         * `projects/locations/{location}/addressGroups/`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optional. List of supported purposes of the Address Group.
+         *
+         * @var string[]
+         */
+        public $purpose;
+        /**
+         * Output only. Server-defined fully-qualified URL for this resource.
+         *
+         * @var string
+         */
+        public $selfLink;
+        /**
+         * Required. The type of the Address Group. Possible values are "IPv4" or
+         * "IPV6".
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Output only. The timestamp when the resource was updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Required. Capacity of the Address Group
+         *
+         * @param int $capacity
+         */
+        public function setCapacity($capacity)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCapacity()
+        {
+        }
+        /**
+         * Output only. The timestamp when the resource was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Optional. Free-text description of the resource.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Optional. List of items.
+         *
+         * @param string[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * Optional. Set of label tags associated with the AddressGroup resource.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Required. Name of the AddressGroup resource. It matches pattern
+         * `projects/locations/{location}/addressGroups/`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. List of supported purposes of the Address Group.
+         *
+         * @param string[] $purpose
+         */
+        public function setPurpose($purpose)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPurpose()
+        {
+        }
+        /**
+         * Output only. Server-defined fully-qualified URL for this resource.
+         *
+         * @param string $selfLink
+         */
+        public function setSelfLink($selfLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelfLink()
+        {
+        }
+        /**
+         * Required. The type of the Address Group. Possible values are "IPv4" or
+         * "IPV6".
+         *
+         * Accepted values: TYPE_UNSPECIFIED, IPV4, IPV6
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
+        /**
+         * Output only. The timestamp when the resource was updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\NetworkSecurity\AddressGroup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCapacity()
-    {
-    }
-    /**
-     * Output only. The timestamp when the resource was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Optional. Free-text description of the resource.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Optional. List of items.
-     *
-     * @param string[] $items
-     */
-    public function setItems($items)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getItems()
-    {
-    }
-    /**
-     * Optional. Set of label tags associated with the AddressGroup resource.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Required. Name of the AddressGroup resource. It matches pattern
-     * `projects/locations/{location}/addressGroups/`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. List of supported purposes of the Address Group.
-     *
-     * @param string[] $purpose
-     */
-    public function setPurpose($purpose)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPurpose()
-    {
-    }
-    /**
-     * Output only. Server-defined fully-qualified URL for this resource.
-     *
-     * @param string $selfLink
-     */
-    public function setSelfLink($selfLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelfLink()
-    {
-    }
-    /**
-     * Required. The type of the Address Group. Possible values are "IPv4" or
-     * "IPV6".
-     *
-     * Accepted values: TYPE_UNSPECIFIED, IPV4, IPV6
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
-    {
-    }
-    /**
-     * Output only. The timestamp when the resource was updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_NetworkSecurity_AddressGroup extends \Google\Service\NetworkSecurity\AddressGroup
     {
     }
 }

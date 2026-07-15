@@ -21,35 +21,44 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataManager;
-
-class PairData extends \Google\Collection
-{
-    protected $collection_key = 'pairIds';
-    /**
-     * Required. Cleanroom-provided PII data, hashed with SHA256, and encrypted
-     * with an EC commutative cipher using publisher key for the
-     * [PAIR]((//support.google.com/admanager/answer/15067908)) user list. At most
-     * 10 `pairIds` can be provided in a single AudienceMember.
-     *
-     * @var string[]
-     */
-    public $pairIds;
-    /**
-     * Required. Cleanroom-provided PII data, hashed with SHA256, and encrypted
-     * with an EC commutative cipher using publisher key for the
-     * [PAIR]((//support.google.com/admanager/answer/15067908)) user list. At most
-     * 10 `pairIds` can be provided in a single AudienceMember.
-     *
-     * @param string[] $pairIds
-     */
-    public function setPairIds($pairIds)
+namespace Google\Service\DataManager {
+    class PairData extends \Google\Collection
     {
+        protected $collection_key = 'pairIds';
+        /**
+         * Required. Cleanroom-provided PII data, hashed with SHA256, and encrypted
+         * with an EC commutative cipher using publisher key for the
+         * [PAIR]((//support.google.com/admanager/answer/15067908)) user list. At most
+         * 10 `pairIds` can be provided in a single AudienceMember.
+         *
+         * @var string[]
+         */
+        public $pairIds;
+        /**
+         * Required. Cleanroom-provided PII data, hashed with SHA256, and encrypted
+         * with an EC commutative cipher using publisher key for the
+         * [PAIR]((//support.google.com/admanager/answer/15067908)) user list. At most
+         * 10 `pairIds` can be provided in a single AudienceMember.
+         *
+         * @param string[] $pairIds
+         */
+        public function setPairIds($pairIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPairIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\DataManager\PairData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPairIds()
+    class Google_Service_DataManager_PairData extends \Google\Service\DataManager\PairData
     {
     }
 }

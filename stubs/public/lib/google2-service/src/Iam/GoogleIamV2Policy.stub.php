@@ -21,238 +21,247 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Iam;
-
-class GoogleIamV2Policy extends \Google\Collection
-{
-    protected $collection_key = 'rules';
-    /**
-     * A key-value map to store arbitrary metadata for the `Policy`. Keys can be
-     * up to 63 characters. Values can be up to 255 characters.
-     *
-     * @var string[]
-     */
-    public $annotations;
-    /**
-     * Output only. The time when the `Policy` was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Output only. The time when the `Policy` was deleted. Empty if the policy is
-     * not deleted.
-     *
-     * @var string
-     */
-    public $deleteTime;
-    /**
-     * A user-specified description of the `Policy`. This value can be up to 63
-     * characters.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * An opaque tag that identifies the current version of the `Policy`. IAM uses
-     * this value to help manage concurrent updates, so they do not cause one
-     * update to be overwritten by another. If this field is present in a
-     * CreatePolicyRequest, the value is ignored.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * Output only. The kind of the `Policy`. Always contains the value
-     * `DenyPolicy`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Immutable. The resource name of the `Policy`, which must be unique. Format:
-     * `policies/{attachment_point}/denypolicies/{policy_id}` The attachment point
-     * is identified by its URL-encoded full resource name, which means that the
-     * forward-slash character, `/`, must be written as `%2F`. For example,
-     * `policies/cloudresourcemanager.googleapis.com%2Fprojects%2Fmy-
-     * project/denypolicies/my-deny-policy`. For organizations and folders, use
-     * the numeric ID in the full resource name. For projects, requests can use
-     * the alphanumeric or the numeric ID. Responses always contain the numeric
-     * ID.
-     *
-     * @var string
-     */
-    public $name;
-    protected $rulesType = GoogleIamV2PolicyRule::class;
-    protected $rulesDataType = 'array';
-    /**
-     * Immutable. The globally unique ID of the `Policy`. Assigned automatically
-     * when the `Policy` is created.
-     *
-     * @var string
-     */
-    public $uid;
-    /**
-     * Output only. The time when the `Policy` was last updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * A key-value map to store arbitrary metadata for the `Policy`. Keys can be
-     * up to 63 characters. Values can be up to 255 characters.
-     *
-     * @param string[] $annotations
-     */
-    public function setAnnotations($annotations)
+namespace Google\Service\Iam {
+    class GoogleIamV2Policy extends \Google\Collection
     {
+        protected $collection_key = 'rules';
+        /**
+         * A key-value map to store arbitrary metadata for the `Policy`. Keys can be
+         * up to 63 characters. Values can be up to 255 characters.
+         *
+         * @var string[]
+         */
+        public $annotations;
+        /**
+         * Output only. The time when the `Policy` was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Output only. The time when the `Policy` was deleted. Empty if the policy is
+         * not deleted.
+         *
+         * @var string
+         */
+        public $deleteTime;
+        /**
+         * A user-specified description of the `Policy`. This value can be up to 63
+         * characters.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * An opaque tag that identifies the current version of the `Policy`. IAM uses
+         * this value to help manage concurrent updates, so they do not cause one
+         * update to be overwritten by another. If this field is present in a
+         * CreatePolicyRequest, the value is ignored.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * Output only. The kind of the `Policy`. Always contains the value
+         * `DenyPolicy`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Immutable. The resource name of the `Policy`, which must be unique. Format:
+         * `policies/{attachment_point}/denypolicies/{policy_id}` The attachment point
+         * is identified by its URL-encoded full resource name, which means that the
+         * forward-slash character, `/`, must be written as `%2F`. For example,
+         * `policies/cloudresourcemanager.googleapis.com%2Fprojects%2Fmy-
+         * project/denypolicies/my-deny-policy`. For organizations and folders, use
+         * the numeric ID in the full resource name. For projects, requests can use
+         * the alphanumeric or the numeric ID. Responses always contain the numeric
+         * ID.
+         *
+         * @var string
+         */
+        public $name;
+        protected $rulesType = GoogleIamV2PolicyRule::class;
+        protected $rulesDataType = 'array';
+        /**
+         * Immutable. The globally unique ID of the `Policy`. Assigned automatically
+         * when the `Policy` is created.
+         *
+         * @var string
+         */
+        public $uid;
+        /**
+         * Output only. The time when the `Policy` was last updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * A key-value map to store arbitrary metadata for the `Policy`. Keys can be
+         * up to 63 characters. Values can be up to 255 characters.
+         *
+         * @param string[] $annotations
+         */
+        public function setAnnotations($annotations)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAnnotations()
+        {
+        }
+        /**
+         * Output only. The time when the `Policy` was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. The time when the `Policy` was deleted. Empty if the policy is
+         * not deleted.
+         *
+         * @param string $deleteTime
+         */
+        public function setDeleteTime($deleteTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeleteTime()
+        {
+        }
+        /**
+         * A user-specified description of the `Policy`. This value can be up to 63
+         * characters.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * An opaque tag that identifies the current version of the `Policy`. IAM uses
+         * this value to help manage concurrent updates, so they do not cause one
+         * update to be overwritten by another. If this field is present in a
+         * CreatePolicyRequest, the value is ignored.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * Output only. The kind of the `Policy`. Always contains the value
+         * `DenyPolicy`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Immutable. The resource name of the `Policy`, which must be unique. Format:
+         * `policies/{attachment_point}/denypolicies/{policy_id}` The attachment point
+         * is identified by its URL-encoded full resource name, which means that the
+         * forward-slash character, `/`, must be written as `%2F`. For example,
+         * `policies/cloudresourcemanager.googleapis.com%2Fprojects%2Fmy-
+         * project/denypolicies/my-deny-policy`. For organizations and folders, use
+         * the numeric ID in the full resource name. For projects, requests can use
+         * the alphanumeric or the numeric ID. Responses always contain the numeric
+         * ID.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * A list of rules that specify the behavior of the `Policy`. All of the rules
+         * should be of the `kind` specified in the `Policy`.
+         *
+         * @param GoogleIamV2PolicyRule[] $rules
+         */
+        public function setRules($rules)
+        {
+        }
+        /**
+         * @return GoogleIamV2PolicyRule[]
+         */
+        public function getRules()
+        {
+        }
+        /**
+         * Immutable. The globally unique ID of the `Policy`. Assigned automatically
+         * when the `Policy` is created.
+         *
+         * @param string $uid
+         */
+        public function setUid($uid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUid()
+        {
+        }
+        /**
+         * Output only. The time when the `Policy` was last updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Iam\GoogleIamV2Policy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotations()
-    {
-    }
-    /**
-     * Output only. The time when the `Policy` was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. The time when the `Policy` was deleted. Empty if the policy is
-     * not deleted.
-     *
-     * @param string $deleteTime
-     */
-    public function setDeleteTime($deleteTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeleteTime()
-    {
-    }
-    /**
-     * A user-specified description of the `Policy`. This value can be up to 63
-     * characters.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * An opaque tag that identifies the current version of the `Policy`. IAM uses
-     * this value to help manage concurrent updates, so they do not cause one
-     * update to be overwritten by another. If this field is present in a
-     * CreatePolicyRequest, the value is ignored.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * Output only. The kind of the `Policy`. Always contains the value
-     * `DenyPolicy`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Immutable. The resource name of the `Policy`, which must be unique. Format:
-     * `policies/{attachment_point}/denypolicies/{policy_id}` The attachment point
-     * is identified by its URL-encoded full resource name, which means that the
-     * forward-slash character, `/`, must be written as `%2F`. For example,
-     * `policies/cloudresourcemanager.googleapis.com%2Fprojects%2Fmy-
-     * project/denypolicies/my-deny-policy`. For organizations and folders, use
-     * the numeric ID in the full resource name. For projects, requests can use
-     * the alphanumeric or the numeric ID. Responses always contain the numeric
-     * ID.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * A list of rules that specify the behavior of the `Policy`. All of the rules
-     * should be of the `kind` specified in the `Policy`.
-     *
-     * @param GoogleIamV2PolicyRule[] $rules
-     */
-    public function setRules($rules)
-    {
-    }
-    /**
-     * @return GoogleIamV2PolicyRule[]
-     */
-    public function getRules()
-    {
-    }
-    /**
-     * Immutable. The globally unique ID of the `Policy`. Assigned automatically
-     * when the `Policy` is created.
-     *
-     * @param string $uid
-     */
-    public function setUid($uid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUid()
-    {
-    }
-    /**
-     * Output only. The time when the `Policy` was last updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_Iam_GoogleIamV2Policy extends \Google\Service\Iam\GoogleIamV2Policy
     {
     }
 }

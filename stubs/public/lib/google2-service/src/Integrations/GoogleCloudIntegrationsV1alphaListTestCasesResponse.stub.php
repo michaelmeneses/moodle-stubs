@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaListTestCasesResponse extends \Google\Collection
-{
-    protected $collection_key = 'testCases';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $testCasesType = GoogleCloudIntegrationsV1alphaTestCase::class;
-    protected $testCasesDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaListTestCasesResponse extends \Google\Collection
     {
+        protected $collection_key = 'testCases';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $testCasesType = GoogleCloudIntegrationsV1alphaTestCase::class;
+        protected $testCasesDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The test cases corresponding to the specified filter
+         *
+         * @param GoogleCloudIntegrationsV1alphaTestCase[] $testCases
+         */
+        public function setTestCases($testCases)
+        {
+        }
+        /**
+         * @return GoogleCloudIntegrationsV1alphaTestCase[]
+         */
+        public function getTestCases()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaListTestCasesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The test cases corresponding to the specified filter
-     *
-     * @param GoogleCloudIntegrationsV1alphaTestCase[] $testCases
-     */
-    public function setTestCases($testCases)
-    {
-    }
-    /**
-     * @return GoogleCloudIntegrationsV1alphaTestCase[]
-     */
-    public function getTestCases()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaListTestCasesResponse extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaListTestCasesResponse
     {
     }
 }

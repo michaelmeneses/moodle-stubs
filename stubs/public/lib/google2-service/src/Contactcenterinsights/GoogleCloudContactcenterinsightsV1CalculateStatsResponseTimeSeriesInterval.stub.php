@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1CalculateStatsResponseTimeSeriesInterval extends \Google\Model
-{
-    /**
-     * The number of conversations created in this interval.
-     *
-     * @var int
-     */
-    public $conversationCount;
-    /**
-     * The start time of this interval.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * The number of conversations created in this interval.
-     *
-     * @param int $conversationCount
-     */
-    public function setConversationCount($conversationCount)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1CalculateStatsResponseTimeSeriesInterval extends \Google\Model
     {
+        /**
+         * The number of conversations created in this interval.
+         *
+         * @var int
+         */
+        public $conversationCount;
+        /**
+         * The start time of this interval.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * The number of conversations created in this interval.
+         *
+         * @param int $conversationCount
+         */
+        public function setConversationCount($conversationCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getConversationCount()
+        {
+        }
+        /**
+         * The start time of this interval.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1CalculateStatsResponseTimeSeriesInterval registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConversationCount()
-    {
-    }
-    /**
-     * The start time of this interval.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1CalculateStatsResponseTimeSeriesInterval extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1CalculateStatsResponseTimeSeriesInterval
     {
     }
 }

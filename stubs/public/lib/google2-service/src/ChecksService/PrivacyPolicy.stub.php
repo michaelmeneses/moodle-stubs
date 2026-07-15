@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChecksService;
-
-class PrivacyPolicy extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $htmlContent;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $privacyPolicyUri;
-    /**
-     * @var float
-     */
-    public $score;
-    /**
-     * @var string
-     */
-    public $websiteUri;
-    /**
-     * @param string
-     */
-    public function setHtmlContent($htmlContent)
+namespace Google\Service\ChecksService {
+    class PrivacyPolicy extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $htmlContent;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $privacyPolicyUri;
+        /**
+         * @var float
+         */
+        public $score;
+        /**
+         * @var string
+         */
+        public $websiteUri;
+        /**
+         * @param string
+         */
+        public function setHtmlContent($htmlContent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHtmlContent()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPrivacyPolicyUri($privacyPolicyUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrivacyPolicyUri()
+        {
+        }
+        /**
+         * @param float
+         */
+        public function setScore($score)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getScore()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setWebsiteUri($websiteUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWebsiteUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChecksService\PrivacyPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHtmlContent()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPrivacyPolicyUri($privacyPolicyUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrivacyPolicyUri()
-    {
-    }
-    /**
-     * @param float
-     */
-    public function setScore($score)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getScore()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setWebsiteUri($websiteUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWebsiteUri()
+    class Google_Service_ChecksService_PrivacyPolicy extends \Google\Service\ChecksService\PrivacyPolicy
     {
     }
 }

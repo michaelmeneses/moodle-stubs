@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class RouteAsPath extends \Google\Collection
-{
-    public const PATH_SEGMENT_TYPE_AS_CONFED_SEQUENCE = 'AS_CONFED_SEQUENCE';
-    public const PATH_SEGMENT_TYPE_AS_CONFED_SET = 'AS_CONFED_SET';
-    public const PATH_SEGMENT_TYPE_AS_SEQUENCE = 'AS_SEQUENCE';
-    public const PATH_SEGMENT_TYPE_AS_SET = 'AS_SET';
-    protected $collection_key = 'asLists';
-    /**
-     * [Output Only] The AS numbers of the AS Path.
-     *
-     * @var string[]
-     */
-    public $asLists;
-    /**
-     * [Output Only] The type of the AS Path, which can be one of the following
-     * values:  - 'AS_SET': unordered set of autonomous systems that the route in
-     * has traversed   - 'AS_SEQUENCE': ordered set of autonomous systems that the
-     * route has traversed   - 'AS_CONFED_SEQUENCE': ordered set of Member
-     * Autonomous Systems in the local confederation that the route has traversed
-     * - 'AS_CONFED_SET': unordered set of Member Autonomous Systems in the local
-     * confederation that the route has traversed
-     *
-     * @var string
-     */
-    public $pathSegmentType;
-    /**
-     * [Output Only] The AS numbers of the AS Path.
-     *
-     * @param string[] $asLists
-     */
-    public function setAsLists($asLists)
+namespace Google\Service\Compute {
+    class RouteAsPath extends \Google\Collection
     {
+        public const PATH_SEGMENT_TYPE_AS_CONFED_SEQUENCE = 'AS_CONFED_SEQUENCE';
+        public const PATH_SEGMENT_TYPE_AS_CONFED_SET = 'AS_CONFED_SET';
+        public const PATH_SEGMENT_TYPE_AS_SEQUENCE = 'AS_SEQUENCE';
+        public const PATH_SEGMENT_TYPE_AS_SET = 'AS_SET';
+        protected $collection_key = 'asLists';
+        /**
+         * [Output Only] The AS numbers of the AS Path.
+         *
+         * @var string[]
+         */
+        public $asLists;
+        /**
+         * [Output Only] The type of the AS Path, which can be one of the following
+         * values:  - 'AS_SET': unordered set of autonomous systems that the route in
+         * has traversed   - 'AS_SEQUENCE': ordered set of autonomous systems that the
+         * route has traversed   - 'AS_CONFED_SEQUENCE': ordered set of Member
+         * Autonomous Systems in the local confederation that the route has traversed
+         * - 'AS_CONFED_SET': unordered set of Member Autonomous Systems in the local
+         * confederation that the route has traversed
+         *
+         * @var string
+         */
+        public $pathSegmentType;
+        /**
+         * [Output Only] The AS numbers of the AS Path.
+         *
+         * @param string[] $asLists
+         */
+        public function setAsLists($asLists)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAsLists()
+        {
+        }
+        /**
+         * [Output Only] The type of the AS Path, which can be one of the following
+         * values:  - 'AS_SET': unordered set of autonomous systems that the route in
+         * has traversed   - 'AS_SEQUENCE': ordered set of autonomous systems that the
+         * route has traversed   - 'AS_CONFED_SEQUENCE': ordered set of Member
+         * Autonomous Systems in the local confederation that the route has traversed
+         * - 'AS_CONFED_SET': unordered set of Member Autonomous Systems in the local
+         * confederation that the route has traversed
+         *
+         * Accepted values: AS_CONFED_SEQUENCE, AS_CONFED_SET, AS_SEQUENCE, AS_SET
+         *
+         * @param self::PATH_SEGMENT_TYPE_* $pathSegmentType
+         */
+        public function setPathSegmentType($pathSegmentType)
+        {
+        }
+        /**
+         * @return self::PATH_SEGMENT_TYPE_*
+         */
+        public function getPathSegmentType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Compute\RouteAsPath registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAsLists()
-    {
-    }
-    /**
-     * [Output Only] The type of the AS Path, which can be one of the following
-     * values:  - 'AS_SET': unordered set of autonomous systems that the route in
-     * has traversed   - 'AS_SEQUENCE': ordered set of autonomous systems that the
-     * route has traversed   - 'AS_CONFED_SEQUENCE': ordered set of Member
-     * Autonomous Systems in the local confederation that the route has traversed
-     * - 'AS_CONFED_SET': unordered set of Member Autonomous Systems in the local
-     * confederation that the route has traversed
-     *
-     * Accepted values: AS_CONFED_SEQUENCE, AS_CONFED_SET, AS_SEQUENCE, AS_SET
-     *
-     * @param self::PATH_SEGMENT_TYPE_* $pathSegmentType
-     */
-    public function setPathSegmentType($pathSegmentType)
-    {
-    }
-    /**
-     * @return self::PATH_SEGMENT_TYPE_*
-     */
-    public function getPathSegmentType()
+    class Google_Service_Compute_RouteAsPath extends \Google\Service\Compute\RouteAsPath
     {
     }
 }

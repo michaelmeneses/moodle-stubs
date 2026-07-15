@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Texttospeech;
-
-class ListVoicesResponse extends \Google\Collection
-{
-    protected $collection_key = 'voices';
-    protected $voicesType = Voice::class;
-    protected $voicesDataType = 'array';
-    /**
-     * The list of voices.
-     *
-     * @param Voice[] $voices
-     */
-    public function setVoices($voices)
+namespace Google\Service\Texttospeech {
+    class ListVoicesResponse extends \Google\Collection
     {
+        protected $collection_key = 'voices';
+        protected $voicesType = Voice::class;
+        protected $voicesDataType = 'array';
+        /**
+         * The list of voices.
+         *
+         * @param Voice[] $voices
+         */
+        public function setVoices($voices)
+        {
+        }
+        /**
+         * @return Voice[]
+         */
+        public function getVoices()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Voice[]
+     * Runtime class alias of \Google\Service\Texttospeech\ListVoicesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getVoices()
+    class Google_Service_Texttospeech_ListVoicesResponse extends \Google\Service\Texttospeech\ListVoicesResponse
     {
     }
 }

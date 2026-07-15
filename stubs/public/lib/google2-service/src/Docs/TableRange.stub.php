@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class TableRange extends \Google\Model
-{
-    /**
-     * The column span of the table range.
-     *
-     * @var int
-     */
-    public $columnSpan;
-    /**
-     * The row span of the table range.
-     *
-     * @var int
-     */
-    public $rowSpan;
-    protected $tableCellLocationType = TableCellLocation::class;
-    protected $tableCellLocationDataType = '';
-    /**
-     * The column span of the table range.
-     *
-     * @param int $columnSpan
-     */
-    public function setColumnSpan($columnSpan)
+namespace Google\Service\Docs {
+    class TableRange extends \Google\Model
     {
+        /**
+         * The column span of the table range.
+         *
+         * @var int
+         */
+        public $columnSpan;
+        /**
+         * The row span of the table range.
+         *
+         * @var int
+         */
+        public $rowSpan;
+        protected $tableCellLocationType = TableCellLocation::class;
+        protected $tableCellLocationDataType = '';
+        /**
+         * The column span of the table range.
+         *
+         * @param int $columnSpan
+         */
+        public function setColumnSpan($columnSpan)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getColumnSpan()
+        {
+        }
+        /**
+         * The row span of the table range.
+         *
+         * @param int $rowSpan
+         */
+        public function setRowSpan($rowSpan)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRowSpan()
+        {
+        }
+        /**
+         * The cell location where the table range starts.
+         *
+         * @param TableCellLocation $tableCellLocation
+         */
+        public function setTableCellLocation(TableCellLocation $tableCellLocation)
+        {
+        }
+        /**
+         * @return TableCellLocation
+         */
+        public function getTableCellLocation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Docs\TableRange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumnSpan()
-    {
-    }
-    /**
-     * The row span of the table range.
-     *
-     * @param int $rowSpan
-     */
-    public function setRowSpan($rowSpan)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getRowSpan()
-    {
-    }
-    /**
-     * The cell location where the table range starts.
-     *
-     * @param TableCellLocation $tableCellLocation
-     */
-    public function setTableCellLocation(TableCellLocation $tableCellLocation)
-    {
-    }
-    /**
-     * @return TableCellLocation
-     */
-    public function getTableCellLocation()
+    class Google_Service_Docs_TableRange extends \Google\Service\Docs\TableRange
     {
     }
 }

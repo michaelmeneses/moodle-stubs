@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMMigrationService;
-
-class ReplicationSync extends \Google\Model
-{
-    /**
-     * The most updated snapshot created time in the source that finished
-     * replication.
-     *
-     * @var string
-     */
-    public $lastSyncTime;
-    /**
-     * The most updated snapshot created time in the source that finished
-     * replication.
-     *
-     * @param string $lastSyncTime
-     */
-    public function setLastSyncTime($lastSyncTime)
+namespace Google\Service\VMMigrationService {
+    class ReplicationSync extends \Google\Model
     {
+        /**
+         * The most updated snapshot created time in the source that finished
+         * replication.
+         *
+         * @var string
+         */
+        public $lastSyncTime;
+        /**
+         * The most updated snapshot created time in the source that finished
+         * replication.
+         *
+         * @param string $lastSyncTime
+         */
+        public function setLastSyncTime($lastSyncTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastSyncTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\VMMigrationService\ReplicationSync registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLastSyncTime()
+    class Google_Service_VMMigrationService_ReplicationSync extends \Google\Service\VMMigrationService\ReplicationSync
     {
     }
 }

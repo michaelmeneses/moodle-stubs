@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ListSchedulesResponse extends \Google\Collection
-{
-    protected $collection_key = 'schedules';
-    /**
-     * A token to retrieve the next page of results. Pass to
-     * ListSchedulesRequest.page_token to obtain that page.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $schedulesType = GoogleCloudAiplatformV1Schedule::class;
-    protected $schedulesDataType = 'array';
-    /**
-     * A token to retrieve the next page of results. Pass to
-     * ListSchedulesRequest.page_token to obtain that page.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ListSchedulesResponse extends \Google\Collection
     {
+        protected $collection_key = 'schedules';
+        /**
+         * A token to retrieve the next page of results. Pass to
+         * ListSchedulesRequest.page_token to obtain that page.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $schedulesType = GoogleCloudAiplatformV1Schedule::class;
+        protected $schedulesDataType = 'array';
+        /**
+         * A token to retrieve the next page of results. Pass to
+         * ListSchedulesRequest.page_token to obtain that page.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * List of Schedules in the requested page.
+         *
+         * @param GoogleCloudAiplatformV1Schedule[] $schedules
+         */
+        public function setSchedules($schedules)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1Schedule[]
+         */
+        public function getSchedules()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListSchedulesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * List of Schedules in the requested page.
-     *
-     * @param GoogleCloudAiplatformV1Schedule[] $schedules
-     */
-    public function setSchedules($schedules)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1Schedule[]
-     */
-    public function getSchedules()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ListSchedulesResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListSchedulesResponse
     {
     }
 }

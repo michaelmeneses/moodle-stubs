@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataManager;
-
-class IngestAudienceMembersStatus extends \Google\Model
-{
-    protected $mobileDataIngestionStatusType = IngestMobileDataStatus::class;
-    protected $mobileDataIngestionStatusDataType = '';
-    protected $pairDataIngestionStatusType = IngestPairDataStatus::class;
-    protected $pairDataIngestionStatusDataType = '';
-    protected $userDataIngestionStatusType = IngestUserDataStatus::class;
-    protected $userDataIngestionStatusDataType = '';
-    /**
-     * The status of the mobile data ingestion to the destination.
-     *
-     * @param IngestMobileDataStatus $mobileDataIngestionStatus
-     */
-    public function setMobileDataIngestionStatus(IngestMobileDataStatus $mobileDataIngestionStatus)
+namespace Google\Service\DataManager {
+    class IngestAudienceMembersStatus extends \Google\Model
     {
+        protected $mobileDataIngestionStatusType = IngestMobileDataStatus::class;
+        protected $mobileDataIngestionStatusDataType = '';
+        protected $pairDataIngestionStatusType = IngestPairDataStatus::class;
+        protected $pairDataIngestionStatusDataType = '';
+        protected $userDataIngestionStatusType = IngestUserDataStatus::class;
+        protected $userDataIngestionStatusDataType = '';
+        /**
+         * The status of the mobile data ingestion to the destination.
+         *
+         * @param IngestMobileDataStatus $mobileDataIngestionStatus
+         */
+        public function setMobileDataIngestionStatus(IngestMobileDataStatus $mobileDataIngestionStatus)
+        {
+        }
+        /**
+         * @return IngestMobileDataStatus
+         */
+        public function getMobileDataIngestionStatus()
+        {
+        }
+        /**
+         * The status of the pair data ingestion to the destination.
+         *
+         * @param IngestPairDataStatus $pairDataIngestionStatus
+         */
+        public function setPairDataIngestionStatus(IngestPairDataStatus $pairDataIngestionStatus)
+        {
+        }
+        /**
+         * @return IngestPairDataStatus
+         */
+        public function getPairDataIngestionStatus()
+        {
+        }
+        /**
+         * The status of the user data ingestion to the destination.
+         *
+         * @param IngestUserDataStatus $userDataIngestionStatus
+         */
+        public function setUserDataIngestionStatus(IngestUserDataStatus $userDataIngestionStatus)
+        {
+        }
+        /**
+         * @return IngestUserDataStatus
+         */
+        public function getUserDataIngestionStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return IngestMobileDataStatus
+     * Runtime class alias of \Google\Service\DataManager\IngestAudienceMembersStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMobileDataIngestionStatus()
-    {
-    }
-    /**
-     * The status of the pair data ingestion to the destination.
-     *
-     * @param IngestPairDataStatus $pairDataIngestionStatus
-     */
-    public function setPairDataIngestionStatus(IngestPairDataStatus $pairDataIngestionStatus)
-    {
-    }
-    /**
-     * @return IngestPairDataStatus
-     */
-    public function getPairDataIngestionStatus()
-    {
-    }
-    /**
-     * The status of the user data ingestion to the destination.
-     *
-     * @param IngestUserDataStatus $userDataIngestionStatus
-     */
-    public function setUserDataIngestionStatus(IngestUserDataStatus $userDataIngestionStatus)
-    {
-    }
-    /**
-     * @return IngestUserDataStatus
-     */
-    public function getUserDataIngestionStatus()
+    class Google_Service_DataManager_IngestAudienceMembersStatus extends \Google\Service\DataManager\IngestAudienceMembersStatus
     {
     }
 }

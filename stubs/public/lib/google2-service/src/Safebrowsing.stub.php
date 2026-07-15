@@ -21,39 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for Safebrowsing (v5).
- *
- * <p>
- * Enables client applications to check web resources (most commonly URLs)
- * against Google-generated lists of unsafe web resources. The Safe Browsing
- * APIs are for non-commercial use only. If you need to use APIs to detect
- * malicious URLs for commercial purposes – meaning “for sale or revenue-
- * generating purposes” – please refer to the Web Risk API.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://developers.google.com/safe-browsing/" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class Safebrowsing extends \Google\Service
-{
-    public $hashList;
-    public $hashLists;
-    public $hashes;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the Safebrowsing service.
+     * Service definition for Safebrowsing (v5).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * Enables client applications to check web resources (most commonly URLs)
+     * against Google-generated lists of unsafe web resources. The Safe Browsing
+     * APIs are for non-commercial use only. If you need to use APIs to detect
+     * malicious URLs for commercial purposes – meaning “for sale or revenue-
+     * generating purposes” – please refer to the Web Risk API.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://developers.google.com/safe-browsing/" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class Safebrowsing extends \Google\Service
+    {
+        public $hashList;
+        public $hashLists;
+        public $hashes;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the Safebrowsing service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Safebrowsing registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Safebrowsing extends \Google\Service\Safebrowsing
     {
     }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class LoyaltyClassAddMessageResponse extends \Google\Model
-{
-    protected $resourceType = LoyaltyClass::class;
-    protected $resourceDataType = '';
-    /**
-     * The updated LoyaltyClass resource.
-     *
-     * @param LoyaltyClass $resource
-     */
-    public function setResource(LoyaltyClass $resource)
+namespace Google\Service\Walletobjects {
+    class LoyaltyClassAddMessageResponse extends \Google\Model
     {
+        protected $resourceType = LoyaltyClass::class;
+        protected $resourceDataType = '';
+        /**
+         * The updated LoyaltyClass resource.
+         *
+         * @param LoyaltyClass $resource
+         */
+        public function setResource(LoyaltyClass $resource)
+        {
+        }
+        /**
+         * @return LoyaltyClass
+         */
+        public function getResource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LoyaltyClass
+     * Runtime class alias of \Google\Service\Walletobjects\LoyaltyClassAddMessageResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResource()
+    class Google_Service_Walletobjects_LoyaltyClassAddMessageResponse extends \Google\Service\Walletobjects\LoyaltyClassAddMessageResponse
     {
     }
 }

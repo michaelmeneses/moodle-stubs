@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OnDemandScanning;
-
-class GitSourceContext extends \Google\Model
-{
-    /**
-     * Git commit hash.
-     *
-     * @var string
-     */
-    public $revisionId;
-    /**
-     * Git repository URL.
-     *
-     * @var string
-     */
-    public $url;
-    /**
-     * Git commit hash.
-     *
-     * @param string $revisionId
-     */
-    public function setRevisionId($revisionId)
+namespace Google\Service\OnDemandScanning {
+    class GitSourceContext extends \Google\Model
     {
+        /**
+         * Git commit hash.
+         *
+         * @var string
+         */
+        public $revisionId;
+        /**
+         * Git repository URL.
+         *
+         * @var string
+         */
+        public $url;
+        /**
+         * Git commit hash.
+         *
+         * @param string $revisionId
+         */
+        public function setRevisionId($revisionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRevisionId()
+        {
+        }
+        /**
+         * Git repository URL.
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OnDemandScanning\GitSourceContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRevisionId()
-    {
-    }
-    /**
-     * Git repository URL.
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
+    class Google_Service_OnDemandScanning_GitSourceContext extends \Google\Service\OnDemandScanning\GitSourceContext
     {
     }
 }

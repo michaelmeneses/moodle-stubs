@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetAppFiles;
-
-class ListVolumesResponse extends \Google\Collection
-{
-    protected $collection_key = 'volumes';
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    protected $volumesType = Volume::class;
-    protected $volumesDataType = 'array';
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\NetAppFiles {
+    class ListVolumesResponse extends \Google\Collection
     {
+        protected $collection_key = 'volumes';
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        protected $volumesType = Volume::class;
+        protected $volumesDataType = 'array';
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
+        /**
+         * The list of Volume
+         *
+         * @param Volume[] $volumes
+         */
+        public function setVolumes($volumes)
+        {
+        }
+        /**
+         * @return Volume[]
+         */
+        public function getVolumes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetAppFiles\ListVolumesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
-    {
-    }
-    /**
-     * The list of Volume
-     *
-     * @param Volume[] $volumes
-     */
-    public function setVolumes($volumes)
-    {
-    }
-    /**
-     * @return Volume[]
-     */
-    public function getVolumes()
+    class Google_Service_NetAppFiles_ListVolumesResponse extends \Google\Service\NetAppFiles\ListVolumesResponse
     {
     }
 }

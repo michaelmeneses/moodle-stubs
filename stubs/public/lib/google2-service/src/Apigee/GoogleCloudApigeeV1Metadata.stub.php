@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1Metadata extends \Google\Collection
-{
-    protected $collection_key = 'notices';
-    /**
-     * List of error messages as strings.
-     *
-     * @var string[]
-     */
-    public $errors;
-    /**
-     * List of additional information such as data source, if result was
-     * truncated. For example: ``` "notices": [ "Source:Postgres", "PG
-     * Host:uappg0rw.e2e.apigeeks.net", "query served
-     * by:4b64601e-40de-4eb1-bfb9-eeee7ac929ed", "Table used:
-     * edge.api.uapgroup2.agg_api" ]```
-     *
-     * @var string[]
-     */
-    public $notices;
-    /**
-     * List of error messages as strings.
-     *
-     * @param string[] $errors
-     */
-    public function setErrors($errors)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1Metadata extends \Google\Collection
     {
+        protected $collection_key = 'notices';
+        /**
+         * List of error messages as strings.
+         *
+         * @var string[]
+         */
+        public $errors;
+        /**
+         * List of additional information such as data source, if result was
+         * truncated. For example: ``` "notices": [ "Source:Postgres", "PG
+         * Host:uappg0rw.e2e.apigeeks.net", "query served
+         * by:4b64601e-40de-4eb1-bfb9-eeee7ac929ed", "Table used:
+         * edge.api.uapgroup2.agg_api" ]```
+         *
+         * @var string[]
+         */
+        public $notices;
+        /**
+         * List of error messages as strings.
+         *
+         * @param string[] $errors
+         */
+        public function setErrors($errors)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getErrors()
+        {
+        }
+        /**
+         * List of additional information such as data source, if result was
+         * truncated. For example: ``` "notices": [ "Source:Postgres", "PG
+         * Host:uappg0rw.e2e.apigeeks.net", "query served
+         * by:4b64601e-40de-4eb1-bfb9-eeee7ac929ed", "Table used:
+         * edge.api.uapgroup2.agg_api" ]```
+         *
+         * @param string[] $notices
+         */
+        public function setNotices($notices)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getNotices()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1Metadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrors()
-    {
-    }
-    /**
-     * List of additional information such as data source, if result was
-     * truncated. For example: ``` "notices": [ "Source:Postgres", "PG
-     * Host:uappg0rw.e2e.apigeeks.net", "query served
-     * by:4b64601e-40de-4eb1-bfb9-eeee7ac929ed", "Table used:
-     * edge.api.uapgroup2.agg_api" ]```
-     *
-     * @param string[] $notices
-     */
-    public function setNotices($notices)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getNotices()
+    class Google_Service_Apigee_GoogleCloudApigeeV1Metadata extends \Google\Service\Apigee\GoogleCloudApigeeV1Metadata
     {
     }
 }

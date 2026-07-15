@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class GoogleBigtableAdminV2TypeStructField extends \Google\Model
-{
-    /**
-     * The field name (optional). Fields without a `field_name` are considered
-     * anonymous and cannot be referenced by name.
-     *
-     * @var string
-     */
-    public $fieldName;
-    protected $typeType = Type::class;
-    protected $typeDataType = '';
-    /**
-     * The field name (optional). Fields without a `field_name` are considered
-     * anonymous and cannot be referenced by name.
-     *
-     * @param string $fieldName
-     */
-    public function setFieldName($fieldName)
+namespace Google\Service\BigtableAdmin {
+    class GoogleBigtableAdminV2TypeStructField extends \Google\Model
     {
+        /**
+         * The field name (optional). Fields without a `field_name` are considered
+         * anonymous and cannot be referenced by name.
+         *
+         * @var string
+         */
+        public $fieldName;
+        protected $typeType = Type::class;
+        protected $typeDataType = '';
+        /**
+         * The field name (optional). Fields without a `field_name` are considered
+         * anonymous and cannot be referenced by name.
+         *
+         * @param string $fieldName
+         */
+        public function setFieldName($fieldName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFieldName()
+        {
+        }
+        /**
+         * The type of values in this field.
+         *
+         * @param Type $type
+         */
+        public function setType(Type $type)
+        {
+        }
+        /**
+         * @return Type
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BigtableAdmin\GoogleBigtableAdminV2TypeStructField registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFieldName()
-    {
-    }
-    /**
-     * The type of values in this field.
-     *
-     * @param Type $type
-     */
-    public function setType(Type $type)
-    {
-    }
-    /**
-     * @return Type
-     */
-    public function getType()
+    class Google_Service_BigtableAdmin_GoogleBigtableAdminV2TypeStructField extends \Google\Service\BigtableAdmin\GoogleBigtableAdminV2TypeStructField
     {
     }
 }

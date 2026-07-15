@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1PrebuiltVoiceConfig extends \Google\Model
-{
-    /**
-     * The name of the prebuilt voice to use.
-     *
-     * @var string
-     */
-    public $voiceName;
-    /**
-     * The name of the prebuilt voice to use.
-     *
-     * @param string $voiceName
-     */
-    public function setVoiceName($voiceName)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1PrebuiltVoiceConfig extends \Google\Model
     {
+        /**
+         * The name of the prebuilt voice to use.
+         *
+         * @var string
+         */
+        public $voiceName;
+        /**
+         * The name of the prebuilt voice to use.
+         *
+         * @param string $voiceName
+         */
+        public function setVoiceName($voiceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVoiceName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1PrebuiltVoiceConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getVoiceName()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1PrebuiltVoiceConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1PrebuiltVoiceConfig
     {
     }
 }

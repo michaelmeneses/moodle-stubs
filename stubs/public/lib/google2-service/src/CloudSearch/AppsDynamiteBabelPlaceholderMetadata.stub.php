@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteBabelPlaceholderMetadata extends \Google\Model
-{
-    protected $deleteMetadataType = AppsDynamiteBabelPlaceholderMetadataDeleteMetadata::class;
-    protected $deleteMetadataDataType = '';
-    protected $editMetadataType = AppsDynamiteBabelPlaceholderMetadataEditMetadata::class;
-    protected $editMetadataDataType = '';
-    protected $hangoutVideoMetadataType = AppsDynamiteBabelPlaceholderMetadataHangoutVideoEventMetadata::class;
-    protected $hangoutVideoMetadataDataType = '';
-    /**
-     * @param AppsDynamiteBabelPlaceholderMetadataDeleteMetadata
-     */
-    public function setDeleteMetadata(AppsDynamiteBabelPlaceholderMetadataDeleteMetadata $deleteMetadata)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteBabelPlaceholderMetadata extends \Google\Model
     {
+        protected $deleteMetadataType = AppsDynamiteBabelPlaceholderMetadataDeleteMetadata::class;
+        protected $deleteMetadataDataType = '';
+        protected $editMetadataType = AppsDynamiteBabelPlaceholderMetadataEditMetadata::class;
+        protected $editMetadataDataType = '';
+        protected $hangoutVideoMetadataType = AppsDynamiteBabelPlaceholderMetadataHangoutVideoEventMetadata::class;
+        protected $hangoutVideoMetadataDataType = '';
+        /**
+         * @param AppsDynamiteBabelPlaceholderMetadataDeleteMetadata
+         */
+        public function setDeleteMetadata(AppsDynamiteBabelPlaceholderMetadataDeleteMetadata $deleteMetadata)
+        {
+        }
+        /**
+         * @return AppsDynamiteBabelPlaceholderMetadataDeleteMetadata
+         */
+        public function getDeleteMetadata()
+        {
+        }
+        /**
+         * @param AppsDynamiteBabelPlaceholderMetadataEditMetadata
+         */
+        public function setEditMetadata(AppsDynamiteBabelPlaceholderMetadataEditMetadata $editMetadata)
+        {
+        }
+        /**
+         * @return AppsDynamiteBabelPlaceholderMetadataEditMetadata
+         */
+        public function getEditMetadata()
+        {
+        }
+        /**
+         * @param AppsDynamiteBabelPlaceholderMetadataHangoutVideoEventMetadata
+         */
+        public function setHangoutVideoMetadata(AppsDynamiteBabelPlaceholderMetadataHangoutVideoEventMetadata $hangoutVideoMetadata)
+        {
+        }
+        /**
+         * @return AppsDynamiteBabelPlaceholderMetadataHangoutVideoEventMetadata
+         */
+        public function getHangoutVideoMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppsDynamiteBabelPlaceholderMetadataDeleteMetadata
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteBabelPlaceholderMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeleteMetadata()
-    {
-    }
-    /**
-     * @param AppsDynamiteBabelPlaceholderMetadataEditMetadata
-     */
-    public function setEditMetadata(AppsDynamiteBabelPlaceholderMetadataEditMetadata $editMetadata)
-    {
-    }
-    /**
-     * @return AppsDynamiteBabelPlaceholderMetadataEditMetadata
-     */
-    public function getEditMetadata()
-    {
-    }
-    /**
-     * @param AppsDynamiteBabelPlaceholderMetadataHangoutVideoEventMetadata
-     */
-    public function setHangoutVideoMetadata(AppsDynamiteBabelPlaceholderMetadataHangoutVideoEventMetadata $hangoutVideoMetadata)
-    {
-    }
-    /**
-     * @return AppsDynamiteBabelPlaceholderMetadataHangoutVideoEventMetadata
-     */
-    public function getHangoutVideoMetadata()
+    class Google_Service_CloudSearch_AppsDynamiteBabelPlaceholderMetadata extends \Google\Service\CloudSearch\AppsDynamiteBabelPlaceholderMetadata
     {
     }
 }

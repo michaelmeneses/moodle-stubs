@@ -21,75 +21,84 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class SubscriptionContentDetails extends \Google\Model
-{
-    public const ACTIVITY_TYPE_subscriptionActivityTypeUnspecified = 'subscriptionActivityTypeUnspecified';
-    public const ACTIVITY_TYPE_all = 'all';
-    public const ACTIVITY_TYPE_uploads = 'uploads';
-    /**
-     * The type of activity this subscription is for (only uploads, everything).
-     *
-     * @var string
-     */
-    public $activityType;
-    /**
-     * The number of new items in the subscription since its content was last
-     * read.
-     *
-     * @var string
-     */
-    public $newItemCount;
-    /**
-     * The approximate number of items that the subscription points to.
-     *
-     * @var string
-     */
-    public $totalItemCount;
-    /**
-     * The type of activity this subscription is for (only uploads, everything).
-     *
-     * Accepted values: subscriptionActivityTypeUnspecified, all, uploads
-     *
-     * @param self::ACTIVITY_TYPE_* $activityType
-     */
-    public function setActivityType($activityType)
+namespace Google\Service\YouTube {
+    class SubscriptionContentDetails extends \Google\Model
     {
+        public const ACTIVITY_TYPE_subscriptionActivityTypeUnspecified = 'subscriptionActivityTypeUnspecified';
+        public const ACTIVITY_TYPE_all = 'all';
+        public const ACTIVITY_TYPE_uploads = 'uploads';
+        /**
+         * The type of activity this subscription is for (only uploads, everything).
+         *
+         * @var string
+         */
+        public $activityType;
+        /**
+         * The number of new items in the subscription since its content was last
+         * read.
+         *
+         * @var string
+         */
+        public $newItemCount;
+        /**
+         * The approximate number of items that the subscription points to.
+         *
+         * @var string
+         */
+        public $totalItemCount;
+        /**
+         * The type of activity this subscription is for (only uploads, everything).
+         *
+         * Accepted values: subscriptionActivityTypeUnspecified, all, uploads
+         *
+         * @param self::ACTIVITY_TYPE_* $activityType
+         */
+        public function setActivityType($activityType)
+        {
+        }
+        /**
+         * @return self::ACTIVITY_TYPE_*
+         */
+        public function getActivityType()
+        {
+        }
+        /**
+         * The number of new items in the subscription since its content was last
+         * read.
+         *
+         * @param string $newItemCount
+         */
+        public function setNewItemCount($newItemCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNewItemCount()
+        {
+        }
+        /**
+         * The approximate number of items that the subscription points to.
+         *
+         * @param string $totalItemCount
+         */
+        public function setTotalItemCount($totalItemCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalItemCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::ACTIVITY_TYPE_*
+     * Runtime class alias of \Google\Service\YouTube\SubscriptionContentDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActivityType()
-    {
-    }
-    /**
-     * The number of new items in the subscription since its content was last
-     * read.
-     *
-     * @param string $newItemCount
-     */
-    public function setNewItemCount($newItemCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNewItemCount()
-    {
-    }
-    /**
-     * The approximate number of items that the subscription points to.
-     *
-     * @param string $totalItemCount
-     */
-    public function setTotalItemCount($totalItemCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalItemCount()
+    class Google_Service_YouTube_SubscriptionContentDetails extends \Google\Service\YouTube\SubscriptionContentDetails
     {
     }
 }

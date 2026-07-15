@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class DoubleHparamSearchSpace extends \Google\Model
-{
-    protected $candidatesType = DoubleCandidates::class;
-    protected $candidatesDataType = '';
-    protected $rangeType = DoubleRange::class;
-    protected $rangeDataType = '';
-    /**
-     * Candidates of the double hyperparameter.
-     *
-     * @param DoubleCandidates $candidates
-     */
-    public function setCandidates(DoubleCandidates $candidates)
+namespace Google\Service\Bigquery {
+    class DoubleHparamSearchSpace extends \Google\Model
     {
+        protected $candidatesType = DoubleCandidates::class;
+        protected $candidatesDataType = '';
+        protected $rangeType = DoubleRange::class;
+        protected $rangeDataType = '';
+        /**
+         * Candidates of the double hyperparameter.
+         *
+         * @param DoubleCandidates $candidates
+         */
+        public function setCandidates(DoubleCandidates $candidates)
+        {
+        }
+        /**
+         * @return DoubleCandidates
+         */
+        public function getCandidates()
+        {
+        }
+        /**
+         * Range of the double hyperparameter.
+         *
+         * @param DoubleRange $range
+         */
+        public function setRange(DoubleRange $range)
+        {
+        }
+        /**
+         * @return DoubleRange
+         */
+        public function getRange()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DoubleCandidates
+     * Runtime class alias of \Google\Service\Bigquery\DoubleHparamSearchSpace registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCandidates()
-    {
-    }
-    /**
-     * Range of the double hyperparameter.
-     *
-     * @param DoubleRange $range
-     */
-    public function setRange(DoubleRange $range)
-    {
-    }
-    /**
-     * @return DoubleRange
-     */
-    public function getRange()
+    class Google_Service_Bigquery_DoubleHparamSearchSpace extends \Google\Service\Bigquery\DoubleHparamSearchSpace
     {
     }
 }

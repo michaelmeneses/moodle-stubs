@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Gmail;
-
-class ModifyThreadRequest extends \Google\Collection
-{
-    protected $collection_key = 'removeLabelIds';
-    /**
-     * A list of IDs of labels to add to this thread. You can add up to 100 labels
-     * with each update.
-     *
-     * @var string[]
-     */
-    public $addLabelIds;
-    /**
-     * A list of IDs of labels to remove from this thread. You can remove up to
-     * 100 labels with each update.
-     *
-     * @var string[]
-     */
-    public $removeLabelIds;
-    /**
-     * A list of IDs of labels to add to this thread. You can add up to 100 labels
-     * with each update.
-     *
-     * @param string[] $addLabelIds
-     */
-    public function setAddLabelIds($addLabelIds)
+namespace Google\Service\Gmail {
+    class ModifyThreadRequest extends \Google\Collection
     {
+        protected $collection_key = 'removeLabelIds';
+        /**
+         * A list of IDs of labels to add to this thread. You can add up to 100 labels
+         * with each update.
+         *
+         * @var string[]
+         */
+        public $addLabelIds;
+        /**
+         * A list of IDs of labels to remove from this thread. You can remove up to
+         * 100 labels with each update.
+         *
+         * @var string[]
+         */
+        public $removeLabelIds;
+        /**
+         * A list of IDs of labels to add to this thread. You can add up to 100 labels
+         * with each update.
+         *
+         * @param string[] $addLabelIds
+         */
+        public function setAddLabelIds($addLabelIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAddLabelIds()
+        {
+        }
+        /**
+         * A list of IDs of labels to remove from this thread. You can remove up to
+         * 100 labels with each update.
+         *
+         * @param string[] $removeLabelIds
+         */
+        public function setRemoveLabelIds($removeLabelIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRemoveLabelIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Gmail\ModifyThreadRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddLabelIds()
-    {
-    }
-    /**
-     * A list of IDs of labels to remove from this thread. You can remove up to
-     * 100 labels with each update.
-     *
-     * @param string[] $removeLabelIds
-     */
-    public function setRemoveLabelIds($removeLabelIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRemoveLabelIds()
+    class Google_Service_Gmail_ModifyThreadRequest extends \Google\Service\Gmail\ModifyThreadRequest
     {
     }
 }

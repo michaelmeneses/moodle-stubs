@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class TiersListResponse extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    protected $itemsType = Tier::class;
-    protected $itemsDataType = 'array';
-    /**
-     * This is always `sql#tiersList`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * List of tiers.
-     *
-     * @param Tier[] $items
-     */
-    public function setItems($items)
+namespace Google\Service\SQLAdmin {
+    class TiersListResponse extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        protected $itemsType = Tier::class;
+        protected $itemsDataType = 'array';
+        /**
+         * This is always `sql#tiersList`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * List of tiers.
+         *
+         * @param Tier[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return Tier[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * This is always `sql#tiersList`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Tier[]
+     * Runtime class alias of \Google\Service\SQLAdmin\TiersListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItems()
-    {
-    }
-    /**
-     * This is always `sql#tiersList`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_SQLAdmin_TiersListResponse extends \Google\Service\SQLAdmin\TiersListResponse
     {
     }
 }

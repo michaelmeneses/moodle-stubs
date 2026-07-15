@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class BackendServiceCdnPolicyBypassCacheOnRequestHeader extends \Google\Model
-{
-    /**
-     * The header field name to match on when bypassing cache. Values are case-
-     * insensitive.
-     *
-     * @var string
-     */
-    public $headerName;
-    /**
-     * The header field name to match on when bypassing cache. Values are case-
-     * insensitive.
-     *
-     * @param string $headerName
-     */
-    public function setHeaderName($headerName)
+namespace Google\Service\Compute {
+    class BackendServiceCdnPolicyBypassCacheOnRequestHeader extends \Google\Model
     {
+        /**
+         * The header field name to match on when bypassing cache. Values are case-
+         * insensitive.
+         *
+         * @var string
+         */
+        public $headerName;
+        /**
+         * The header field name to match on when bypassing cache. Values are case-
+         * insensitive.
+         *
+         * @param string $headerName
+         */
+        public function setHeaderName($headerName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHeaderName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\BackendServiceCdnPolicyBypassCacheOnRequestHeader registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHeaderName()
+    class Google_Service_Compute_BackendServiceCdnPolicyBypassCacheOnRequestHeader extends \Google\Service\Compute\BackendServiceCdnPolicyBypassCacheOnRequestHeader
     {
     }
 }

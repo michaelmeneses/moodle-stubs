@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CertificateManager;
-
-class ListCertificateMapsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $certificateMapsType = CertificateMap::class;
-    protected $certificateMapsDataType = 'array';
-    /**
-     * If there might be more results than those appearing in this response, then
-     * `next_page_token` is included. To get the next set of results, call this
-     * method again using the value of `next_page_token` as `page_token`.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * A list of certificate maps for the parent resource.
-     *
-     * @param CertificateMap[] $certificateMaps
-     */
-    public function setCertificateMaps($certificateMaps)
+namespace Google\Service\CertificateManager {
+    class ListCertificateMapsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $certificateMapsType = CertificateMap::class;
+        protected $certificateMapsDataType = 'array';
+        /**
+         * If there might be more results than those appearing in this response, then
+         * `next_page_token` is included. To get the next set of results, call this
+         * method again using the value of `next_page_token` as `page_token`.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * A list of certificate maps for the parent resource.
+         *
+         * @param CertificateMap[] $certificateMaps
+         */
+        public function setCertificateMaps($certificateMaps)
+        {
+        }
+        /**
+         * @return CertificateMap[]
+         */
+        public function getCertificateMaps()
+        {
+        }
+        /**
+         * If there might be more results than those appearing in this response, then
+         * `next_page_token` is included. To get the next set of results, call this
+         * method again using the value of `next_page_token` as `page_token`.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CertificateMap[]
+     * Runtime class alias of \Google\Service\CertificateManager\ListCertificateMapsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCertificateMaps()
-    {
-    }
-    /**
-     * If there might be more results than those appearing in this response, then
-     * `next_page_token` is included. To get the next set of results, call this
-     * method again using the value of `next_page_token` as `page_token`.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_CertificateManager_ListCertificateMapsResponse extends \Google\Service\CertificateManager\ListCertificateMapsResponse
     {
     }
 }

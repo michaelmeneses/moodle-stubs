@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class ContaineranalysisGoogleDevtoolsCloudbuildV1FileHashes extends \Google\Collection
-{
-    protected $collection_key = 'fileHash';
-    protected $fileHashType = ContaineranalysisGoogleDevtoolsCloudbuildV1Hash::class;
-    protected $fileHashDataType = 'array';
-    /**
-     * Collection of file hashes.
-     *
-     * @param ContaineranalysisGoogleDevtoolsCloudbuildV1Hash[] $fileHash
-     */
-    public function setFileHash($fileHash)
+namespace Google\Service\ContainerAnalysis {
+    class ContaineranalysisGoogleDevtoolsCloudbuildV1FileHashes extends \Google\Collection
     {
+        protected $collection_key = 'fileHash';
+        protected $fileHashType = ContaineranalysisGoogleDevtoolsCloudbuildV1Hash::class;
+        protected $fileHashDataType = 'array';
+        /**
+         * Collection of file hashes.
+         *
+         * @param ContaineranalysisGoogleDevtoolsCloudbuildV1Hash[] $fileHash
+         */
+        public function setFileHash($fileHash)
+        {
+        }
+        /**
+         * @return ContaineranalysisGoogleDevtoolsCloudbuildV1Hash[]
+         */
+        public function getFileHash()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ContaineranalysisGoogleDevtoolsCloudbuildV1Hash[]
+     * Runtime class alias of \Google\Service\ContainerAnalysis\ContaineranalysisGoogleDevtoolsCloudbuildV1FileHashes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFileHash()
+    class Google_Service_ContainerAnalysis_ContaineranalysisGoogleDevtoolsCloudbuildV1FileHashes extends \Google\Service\ContainerAnalysis\ContaineranalysisGoogleDevtoolsCloudbuildV1FileHashes
     {
     }
 }

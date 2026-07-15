@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class InlineObjectProperties extends \Google\Model
-{
-    protected $embeddedObjectType = EmbeddedObject::class;
-    protected $embeddedObjectDataType = '';
-    /**
-     * The embedded object of this inline object.
-     *
-     * @param EmbeddedObject $embeddedObject
-     */
-    public function setEmbeddedObject(EmbeddedObject $embeddedObject)
+namespace Google\Service\Docs {
+    class InlineObjectProperties extends \Google\Model
     {
+        protected $embeddedObjectType = EmbeddedObject::class;
+        protected $embeddedObjectDataType = '';
+        /**
+         * The embedded object of this inline object.
+         *
+         * @param EmbeddedObject $embeddedObject
+         */
+        public function setEmbeddedObject(EmbeddedObject $embeddedObject)
+        {
+        }
+        /**
+         * @return EmbeddedObject
+         */
+        public function getEmbeddedObject()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EmbeddedObject
+     * Runtime class alias of \Google\Service\Docs\InlineObjectProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmbeddedObject()
+    class Google_Service_Docs_InlineObjectProperties extends \Google\Service\Docs\InlineObjectProperties
     {
     }
 }

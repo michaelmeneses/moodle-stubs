@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIManagement;
-
-class HttpOperationHttpRequest extends \Google\Model
-{
-    protected $headersType = HttpOperationHeader::class;
-    protected $headersDataType = 'map';
-    /**
-     * Unordered map from header name to header metadata
-     *
-     * @param HttpOperationHeader[] $headers
-     */
-    public function setHeaders($headers)
+namespace Google\Service\APIManagement {
+    class HttpOperationHttpRequest extends \Google\Model
     {
+        protected $headersType = HttpOperationHeader::class;
+        protected $headersDataType = 'map';
+        /**
+         * Unordered map from header name to header metadata
+         *
+         * @param HttpOperationHeader[] $headers
+         */
+        public function setHeaders($headers)
+        {
+        }
+        /**
+         * @return HttpOperationHeader[]
+         */
+        public function getHeaders()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return HttpOperationHeader[]
+     * Runtime class alias of \Google\Service\APIManagement\HttpOperationHttpRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHeaders()
+    class Google_Service_APIManagement_HttpOperationHttpRequest extends \Google\Service\APIManagement\HttpOperationHttpRequest
     {
     }
 }

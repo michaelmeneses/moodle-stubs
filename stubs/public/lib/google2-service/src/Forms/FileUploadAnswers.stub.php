@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Forms;
-
-class FileUploadAnswers extends \Google\Collection
-{
-    protected $collection_key = 'answers';
-    protected $answersType = FileUploadAnswer::class;
-    protected $answersDataType = 'array';
-    /**
-     * Output only. All submitted files for a FileUpload question.
-     *
-     * @param FileUploadAnswer[] $answers
-     */
-    public function setAnswers($answers)
+namespace Google\Service\Forms {
+    class FileUploadAnswers extends \Google\Collection
     {
+        protected $collection_key = 'answers';
+        protected $answersType = FileUploadAnswer::class;
+        protected $answersDataType = 'array';
+        /**
+         * Output only. All submitted files for a FileUpload question.
+         *
+         * @param FileUploadAnswer[] $answers
+         */
+        public function setAnswers($answers)
+        {
+        }
+        /**
+         * @return FileUploadAnswer[]
+         */
+        public function getAnswers()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FileUploadAnswer[]
+     * Runtime class alias of \Google\Service\Forms\FileUploadAnswers registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnswers()
+    class Google_Service_Forms_FileUploadAnswers extends \Google\Service\Forms\FileUploadAnswers
     {
     }
 }

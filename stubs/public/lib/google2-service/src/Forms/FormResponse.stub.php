@@ -21,141 +21,150 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Forms;
-
-class FormResponse extends \Google\Model
-{
-    protected $answersType = Answer::class;
-    protected $answersDataType = 'map';
-    /**
-     * Output only. Timestamp for the first time the response was submitted.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Output only. The form ID.
-     *
-     * @var string
-     */
-    public $formId;
-    /**
-     * Output only. Timestamp for the most recent time the response was submitted.
-     * Does not track changes to grades.
-     *
-     * @var string
-     */
-    public $lastSubmittedTime;
-    /**
-     * Output only. The email address (if collected) for the respondent.
-     *
-     * @var string
-     */
-    public $respondentEmail;
-    /**
-     * Output only. The response ID.
-     *
-     * @var string
-     */
-    public $responseId;
-    /**
-     * Output only. The total number of points the respondent received for their
-     * submission Only set if the form was a quiz and the response was graded.
-     * This includes points automatically awarded via autograding adjusted by any
-     * manual corrections entered by the form owner.
-     *
-     * @var 
-     */
-    public $totalScore;
-    /**
-     * Output only. The actual answers to the questions, keyed by question_id.
-     *
-     * @param Answer[] $answers
-     */
-    public function setAnswers($answers)
+namespace Google\Service\Forms {
+    class FormResponse extends \Google\Model
     {
+        protected $answersType = Answer::class;
+        protected $answersDataType = 'map';
+        /**
+         * Output only. Timestamp for the first time the response was submitted.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Output only. The form ID.
+         *
+         * @var string
+         */
+        public $formId;
+        /**
+         * Output only. Timestamp for the most recent time the response was submitted.
+         * Does not track changes to grades.
+         *
+         * @var string
+         */
+        public $lastSubmittedTime;
+        /**
+         * Output only. The email address (if collected) for the respondent.
+         *
+         * @var string
+         */
+        public $respondentEmail;
+        /**
+         * Output only. The response ID.
+         *
+         * @var string
+         */
+        public $responseId;
+        /**
+         * Output only. The total number of points the respondent received for their
+         * submission Only set if the form was a quiz and the response was graded.
+         * This includes points automatically awarded via autograding adjusted by any
+         * manual corrections entered by the form owner.
+         *
+         * @var 
+         */
+        public $totalScore;
+        /**
+         * Output only. The actual answers to the questions, keyed by question_id.
+         *
+         * @param Answer[] $answers
+         */
+        public function setAnswers($answers)
+        {
+        }
+        /**
+         * @return Answer[]
+         */
+        public function getAnswers()
+        {
+        }
+        /**
+         * Output only. Timestamp for the first time the response was submitted.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. The form ID.
+         *
+         * @param string $formId
+         */
+        public function setFormId($formId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFormId()
+        {
+        }
+        /**
+         * Output only. Timestamp for the most recent time the response was submitted.
+         * Does not track changes to grades.
+         *
+         * @param string $lastSubmittedTime
+         */
+        public function setLastSubmittedTime($lastSubmittedTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastSubmittedTime()
+        {
+        }
+        /**
+         * Output only. The email address (if collected) for the respondent.
+         *
+         * @param string $respondentEmail
+         */
+        public function setRespondentEmail($respondentEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRespondentEmail()
+        {
+        }
+        /**
+         * Output only. The response ID.
+         *
+         * @param string $responseId
+         */
+        public function setResponseId($responseId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResponseId()
+        {
+        }
+        public function setTotalScore($totalScore)
+        {
+        }
+        public function getTotalScore()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Answer[]
+     * Runtime class alias of \Google\Service\Forms\FormResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnswers()
-    {
-    }
-    /**
-     * Output only. Timestamp for the first time the response was submitted.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. The form ID.
-     *
-     * @param string $formId
-     */
-    public function setFormId($formId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFormId()
-    {
-    }
-    /**
-     * Output only. Timestamp for the most recent time the response was submitted.
-     * Does not track changes to grades.
-     *
-     * @param string $lastSubmittedTime
-     */
-    public function setLastSubmittedTime($lastSubmittedTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastSubmittedTime()
-    {
-    }
-    /**
-     * Output only. The email address (if collected) for the respondent.
-     *
-     * @param string $respondentEmail
-     */
-    public function setRespondentEmail($respondentEmail)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRespondentEmail()
-    {
-    }
-    /**
-     * Output only. The response ID.
-     *
-     * @param string $responseId
-     */
-    public function setResponseId($responseId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResponseId()
-    {
-    }
-    public function setTotalScore($totalScore)
-    {
-    }
-    public function getTotalScore()
+    class Google_Service_Forms_FormResponse extends \Google\Service\Forms\FormResponse
     {
     }
 }

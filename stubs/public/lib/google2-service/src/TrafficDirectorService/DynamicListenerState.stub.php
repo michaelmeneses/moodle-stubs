@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TrafficDirectorService;
-
-class DynamicListenerState extends \Google\Model
-{
-    /**
-     * The timestamp when the Listener was last successfully updated.
-     *
-     * @var string
-     */
-    public $lastUpdated;
-    /**
-     * The listener config.
-     *
-     * @var array[]
-     */
-    public $listener;
-    /**
-     * This is the per-resource version information. This version is currently
-     * taken from the :ref:`version_info ` field at the time that the listener was
-     * loaded. In the future, discrete per-listener versions may be supported by
-     * the API.
-     *
-     * @var string
-     */
-    public $versionInfo;
-    /**
-     * The timestamp when the Listener was last successfully updated.
-     *
-     * @param string $lastUpdated
-     */
-    public function setLastUpdated($lastUpdated)
+namespace Google\Service\TrafficDirectorService {
+    class DynamicListenerState extends \Google\Model
     {
+        /**
+         * The timestamp when the Listener was last successfully updated.
+         *
+         * @var string
+         */
+        public $lastUpdated;
+        /**
+         * The listener config.
+         *
+         * @var array[]
+         */
+        public $listener;
+        /**
+         * This is the per-resource version information. This version is currently
+         * taken from the :ref:`version_info ` field at the time that the listener was
+         * loaded. In the future, discrete per-listener versions may be supported by
+         * the API.
+         *
+         * @var string
+         */
+        public $versionInfo;
+        /**
+         * The timestamp when the Listener was last successfully updated.
+         *
+         * @param string $lastUpdated
+         */
+        public function setLastUpdated($lastUpdated)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastUpdated()
+        {
+        }
+        /**
+         * The listener config.
+         *
+         * @param array[] $listener
+         */
+        public function setListener($listener)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getListener()
+        {
+        }
+        /**
+         * This is the per-resource version information. This version is currently
+         * taken from the :ref:`version_info ` field at the time that the listener was
+         * loaded. In the future, discrete per-listener versions may be supported by
+         * the API.
+         *
+         * @param string $versionInfo
+         */
+        public function setVersionInfo($versionInfo)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersionInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\TrafficDirectorService\DynamicListenerState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLastUpdated()
-    {
-    }
-    /**
-     * The listener config.
-     *
-     * @param array[] $listener
-     */
-    public function setListener($listener)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getListener()
-    {
-    }
-    /**
-     * This is the per-resource version information. This version is currently
-     * taken from the :ref:`version_info ` field at the time that the listener was
-     * loaded. In the future, discrete per-listener versions may be supported by
-     * the API.
-     *
-     * @param string $versionInfo
-     */
-    public function setVersionInfo($versionInfo)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersionInfo()
+    class Google_Service_TrafficDirectorService_DynamicListenerState extends \Google\Service\TrafficDirectorService\DynamicListenerState
     {
     }
 }

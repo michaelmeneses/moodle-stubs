@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FactCheckTools;
-
-class GoogleFactcheckingFactchecktoolsV1alpha1FactCheckedClaimImageSearchResponseResult extends \Google\Model
-{
-    protected $claimType = GoogleFactcheckingFactchecktoolsV1alpha1Claim::class;
-    protected $claimDataType = '';
-    /**
-     * A claim which matched the query.
-     *
-     * @param GoogleFactcheckingFactchecktoolsV1alpha1Claim $claim
-     */
-    public function setClaim(GoogleFactcheckingFactchecktoolsV1alpha1Claim $claim)
+namespace Google\Service\FactCheckTools {
+    class GoogleFactcheckingFactchecktoolsV1alpha1FactCheckedClaimImageSearchResponseResult extends \Google\Model
     {
+        protected $claimType = GoogleFactcheckingFactchecktoolsV1alpha1Claim::class;
+        protected $claimDataType = '';
+        /**
+         * A claim which matched the query.
+         *
+         * @param GoogleFactcheckingFactchecktoolsV1alpha1Claim $claim
+         */
+        public function setClaim(GoogleFactcheckingFactchecktoolsV1alpha1Claim $claim)
+        {
+        }
+        /**
+         * @return GoogleFactcheckingFactchecktoolsV1alpha1Claim
+         */
+        public function getClaim()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleFactcheckingFactchecktoolsV1alpha1Claim
+     * Runtime class alias of \Google\Service\FactCheckTools\GoogleFactcheckingFactchecktoolsV1alpha1FactCheckedClaimImageSearchResponseResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClaim()
+    class Google_Service_FactCheckTools_GoogleFactcheckingFactchecktoolsV1alpha1FactCheckedClaimImageSearchResponseResult extends \Google\Service\FactCheckTools\GoogleFactcheckingFactchecktoolsV1alpha1FactCheckedClaimImageSearchResponseResult
     {
     }
 }

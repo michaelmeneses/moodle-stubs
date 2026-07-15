@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class GkeNodePoolConfig extends \Google\Collection
-{
-    protected $collection_key = 'locations';
-    protected $autoscalingType = GkeNodePoolAutoscalingConfig::class;
-    protected $autoscalingDataType = '';
-    protected $configType = GkeNodeConfig::class;
-    protected $configDataType = '';
-    /**
-     * Optional. The list of Compute Engine zones
-     * (https://cloud.google.com/compute/docs/zones#available) where node pool
-     * nodes associated with a Dataproc on GKE virtual cluster will be
-     * located.Note: All node pools associated with a virtual cluster must be
-     * located in the same region as the virtual cluster, and they must be located
-     * in the same zone within that region.If a location is not specified during
-     * node pool creation, Dataproc on GKE will choose the zone.
-     *
-     * @var string[]
-     */
-    public $locations;
-    /**
-     * Optional. The autoscaler configuration for this node pool. The autoscaler
-     * is enabled only when a valid configuration is present.
-     *
-     * @param GkeNodePoolAutoscalingConfig $autoscaling
-     */
-    public function setAutoscaling(GkeNodePoolAutoscalingConfig $autoscaling)
+namespace Google\Service\Dataproc {
+    class GkeNodePoolConfig extends \Google\Collection
     {
+        protected $collection_key = 'locations';
+        protected $autoscalingType = GkeNodePoolAutoscalingConfig::class;
+        protected $autoscalingDataType = '';
+        protected $configType = GkeNodeConfig::class;
+        protected $configDataType = '';
+        /**
+         * Optional. The list of Compute Engine zones
+         * (https://cloud.google.com/compute/docs/zones#available) where node pool
+         * nodes associated with a Dataproc on GKE virtual cluster will be
+         * located.Note: All node pools associated with a virtual cluster must be
+         * located in the same region as the virtual cluster, and they must be located
+         * in the same zone within that region.If a location is not specified during
+         * node pool creation, Dataproc on GKE will choose the zone.
+         *
+         * @var string[]
+         */
+        public $locations;
+        /**
+         * Optional. The autoscaler configuration for this node pool. The autoscaler
+         * is enabled only when a valid configuration is present.
+         *
+         * @param GkeNodePoolAutoscalingConfig $autoscaling
+         */
+        public function setAutoscaling(GkeNodePoolAutoscalingConfig $autoscaling)
+        {
+        }
+        /**
+         * @return GkeNodePoolAutoscalingConfig
+         */
+        public function getAutoscaling()
+        {
+        }
+        /**
+         * Optional. The node pool configuration.
+         *
+         * @param GkeNodeConfig $config
+         */
+        public function setConfig(GkeNodeConfig $config)
+        {
+        }
+        /**
+         * @return GkeNodeConfig
+         */
+        public function getConfig()
+        {
+        }
+        /**
+         * Optional. The list of Compute Engine zones
+         * (https://cloud.google.com/compute/docs/zones#available) where node pool
+         * nodes associated with a Dataproc on GKE virtual cluster will be
+         * located.Note: All node pools associated with a virtual cluster must be
+         * located in the same region as the virtual cluster, and they must be located
+         * in the same zone within that region.If a location is not specified during
+         * node pool creation, Dataproc on GKE will choose the zone.
+         *
+         * @param string[] $locations
+         */
+        public function setLocations($locations)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLocations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GkeNodePoolAutoscalingConfig
+     * Runtime class alias of \Google\Service\Dataproc\GkeNodePoolConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAutoscaling()
-    {
-    }
-    /**
-     * Optional. The node pool configuration.
-     *
-     * @param GkeNodeConfig $config
-     */
-    public function setConfig(GkeNodeConfig $config)
-    {
-    }
-    /**
-     * @return GkeNodeConfig
-     */
-    public function getConfig()
-    {
-    }
-    /**
-     * Optional. The list of Compute Engine zones
-     * (https://cloud.google.com/compute/docs/zones#available) where node pool
-     * nodes associated with a Dataproc on GKE virtual cluster will be
-     * located.Note: All node pools associated with a virtual cluster must be
-     * located in the same region as the virtual cluster, and they must be located
-     * in the same zone within that region.If a location is not specified during
-     * node pool creation, Dataproc on GKE will choose the zone.
-     *
-     * @param string[] $locations
-     */
-    public function setLocations($locations)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLocations()
+    class Google_Service_Dataproc_GkeNodePoolConfig extends \Google\Service\Dataproc\GkeNodePoolConfig
     {
     }
 }

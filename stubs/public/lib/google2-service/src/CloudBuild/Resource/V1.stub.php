@@ -21,30 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild\Resource;
-
-/**
- * The "v1" collection of methods.
- * Typical usage is:
- *  <code>
- *   $cloudbuildService = new Google\Service\CloudBuild(...);
- *   $v1 = $cloudbuildService->v1;
- *  </code>
- */
-class V1 extends \Google\Service\Resource
-{
+namespace Google\Service\CloudBuild\Resource {
+    use Google\Service\CloudBuild\CloudbuildEmpty;
+    use Google\Service\CloudBuild\HttpBody;
     /**
-     * ReceiveWebhook is called when the API receives a GitHub webhook. (v1.webhook)
-     *
-     * @param HttpBody $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string webhookKey For GitHub Enterprise webhooks, this key is used
-     * to associate the webhook request with the GitHubEnterpriseConfig to use for
-     * validation.
-     * @return CloudbuildEmpty
+     * The "v1" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $cloudbuildService = new Google\Service\CloudBuild(...);
+     *   $v1 = $cloudbuildService->v1;
+     *  </code>
      */
-    public function webhook(HttpBody $postBody, $optParams = [])
+    class V1 extends \Google\Service\Resource
+    {
+        /**
+         * ReceiveWebhook is called when the API receives a GitHub webhook. (v1.webhook)
+         *
+         * @param HttpBody $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string webhookKey For GitHub Enterprise webhooks, this key is used
+         * to associate the webhook request with the GitHubEnterpriseConfig to use for
+         * validation.
+         * @return CloudbuildEmpty
+         */
+        public function webhook(HttpBody $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudBuild\Resource\V1 registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudBuild_Resource_V1 extends \Google\Service\CloudBuild\Resource\V1
     {
     }
 }

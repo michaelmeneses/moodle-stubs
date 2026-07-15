@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class ContaineranalysisGoogleDevtoolsCloudbuildV1GCSLocation extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $bucket;
-    /**
-     * @var string
-     */
-    public $generation;
-    /**
-     * @var string
-     */
-    public $object;
-    /**
-     * @param string
-     */
-    public function setBucket($bucket)
+namespace Google\Service\ContainerAnalysis {
+    class ContaineranalysisGoogleDevtoolsCloudbuildV1GCSLocation extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $bucket;
+        /**
+         * @var string
+         */
+        public $generation;
+        /**
+         * @var string
+         */
+        public $object;
+        /**
+         * @param string
+         */
+        public function setBucket($bucket)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBucket()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setGeneration($generation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGeneration()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setObject($object)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObject()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ContainerAnalysis\ContaineranalysisGoogleDevtoolsCloudbuildV1GCSLocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBucket()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setGeneration($generation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGeneration()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setObject($object)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObject()
+    class Google_Service_ContainerAnalysis_ContaineranalysisGoogleDevtoolsCloudbuildV1GCSLocation extends \Google\Service\ContainerAnalysis\ContaineranalysisGoogleDevtoolsCloudbuildV1GCSLocation
     {
     }
 }

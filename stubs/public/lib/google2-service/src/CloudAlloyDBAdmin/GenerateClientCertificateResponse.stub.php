@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAlloyDBAdmin;
-
-class GenerateClientCertificateResponse extends \Google\Collection
-{
-    protected $collection_key = 'pemCertificateChain';
-    /**
-     * @var string
-     */
-    public $caCert;
-    /**
-     * @var string[]
-     */
-    public $pemCertificateChain;
-    /**
-     * @param string
-     */
-    public function setCaCert($caCert)
+namespace Google\Service\CloudAlloyDBAdmin {
+    class GenerateClientCertificateResponse extends \Google\Collection
     {
+        protected $collection_key = 'pemCertificateChain';
+        /**
+         * @var string
+         */
+        public $caCert;
+        /**
+         * @var string[]
+         */
+        public $pemCertificateChain;
+        /**
+         * @param string
+         */
+        public function setCaCert($caCert)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCaCert()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setPemCertificateChain($pemCertificateChain)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPemCertificateChain()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudAlloyDBAdmin\GenerateClientCertificateResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCaCert()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setPemCertificateChain($pemCertificateChain)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPemCertificateChain()
+    class Google_Service_CloudAlloyDBAdmin_GenerateClientCertificateResponse extends \Google\Service\CloudAlloyDBAdmin\GenerateClientCertificateResponse
     {
     }
 }

@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class ResourceUtilizationReport extends \Google\Collection
-{
-    protected $collection_key = 'memoryInfo';
-    protected $containersType = ResourceUtilizationReport::class;
-    protected $containersDataType = 'map';
-    protected $cpuTimeType = CPUTime::class;
-    protected $cpuTimeDataType = 'array';
-    protected $gpuUsageType = GPUUsage::class;
-    protected $gpuUsageDataType = 'array';
-    protected $memoryInfoType = MemInfo::class;
-    protected $memoryInfoDataType = 'array';
-    /**
-     * Per container information. Key: container name.
-     *
-     * @param ResourceUtilizationReport[] $containers
-     */
-    public function setContainers($containers)
+namespace Google\Service\Dataflow {
+    class ResourceUtilizationReport extends \Google\Collection
     {
+        protected $collection_key = 'memoryInfo';
+        protected $containersType = ResourceUtilizationReport::class;
+        protected $containersDataType = 'map';
+        protected $cpuTimeType = CPUTime::class;
+        protected $cpuTimeDataType = 'array';
+        protected $gpuUsageType = GPUUsage::class;
+        protected $gpuUsageDataType = 'array';
+        protected $memoryInfoType = MemInfo::class;
+        protected $memoryInfoDataType = 'array';
+        /**
+         * Per container information. Key: container name.
+         *
+         * @param ResourceUtilizationReport[] $containers
+         */
+        public function setContainers($containers)
+        {
+        }
+        /**
+         * @return ResourceUtilizationReport[]
+         */
+        public function getContainers()
+        {
+        }
+        /**
+         * CPU utilization samples.
+         *
+         * @param CPUTime[] $cpuTime
+         */
+        public function setCpuTime($cpuTime)
+        {
+        }
+        /**
+         * @return CPUTime[]
+         */
+        public function getCpuTime()
+        {
+        }
+        /**
+         * Optional. GPU usage samples.
+         *
+         * @param GPUUsage[] $gpuUsage
+         */
+        public function setGpuUsage($gpuUsage)
+        {
+        }
+        /**
+         * @return GPUUsage[]
+         */
+        public function getGpuUsage()
+        {
+        }
+        /**
+         * Memory utilization samples.
+         *
+         * @param MemInfo[] $memoryInfo
+         */
+        public function setMemoryInfo($memoryInfo)
+        {
+        }
+        /**
+         * @return MemInfo[]
+         */
+        public function getMemoryInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ResourceUtilizationReport[]
+     * Runtime class alias of \Google\Service\Dataflow\ResourceUtilizationReport registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContainers()
-    {
-    }
-    /**
-     * CPU utilization samples.
-     *
-     * @param CPUTime[] $cpuTime
-     */
-    public function setCpuTime($cpuTime)
-    {
-    }
-    /**
-     * @return CPUTime[]
-     */
-    public function getCpuTime()
-    {
-    }
-    /**
-     * Optional. GPU usage samples.
-     *
-     * @param GPUUsage[] $gpuUsage
-     */
-    public function setGpuUsage($gpuUsage)
-    {
-    }
-    /**
-     * @return GPUUsage[]
-     */
-    public function getGpuUsage()
-    {
-    }
-    /**
-     * Memory utilization samples.
-     *
-     * @param MemInfo[] $memoryInfo
-     */
-    public function setMemoryInfo($memoryInfo)
-    {
-    }
-    /**
-     * @return MemInfo[]
-     */
-    public function getMemoryInfo()
+    class Google_Service_Dataflow_ResourceUtilizationReport extends \Google\Service\Dataflow\ResourceUtilizationReport
     {
     }
 }

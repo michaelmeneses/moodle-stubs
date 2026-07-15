@@ -21,87 +21,96 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class RevisionStatus extends \Google\Collection
-{
-    protected $collection_key = 'conditions';
-    protected $conditionsType = GoogleCloudRunV1Condition::class;
-    protected $conditionsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $imageDigest;
-    /**
-     * @var string
-     */
-    public $logUrl;
-    /**
-     * @var int
-     */
-    public $observedGeneration;
-    /**
-     * @var string
-     */
-    public $serviceName;
-    /**
-     * @param GoogleCloudRunV1Condition[]
-     */
-    public function setConditions($conditions)
+namespace Google\Service\CloudRun {
+    class RevisionStatus extends \Google\Collection
     {
+        protected $collection_key = 'conditions';
+        protected $conditionsType = GoogleCloudRunV1Condition::class;
+        protected $conditionsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $imageDigest;
+        /**
+         * @var string
+         */
+        public $logUrl;
+        /**
+         * @var int
+         */
+        public $observedGeneration;
+        /**
+         * @var string
+         */
+        public $serviceName;
+        /**
+         * @param GoogleCloudRunV1Condition[]
+         */
+        public function setConditions($conditions)
+        {
+        }
+        /**
+         * @return GoogleCloudRunV1Condition[]
+         */
+        public function getConditions()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setImageDigest($imageDigest)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImageDigest()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLogUrl($logUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLogUrl()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setObservedGeneration($observedGeneration)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getObservedGeneration()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setServiceName($serviceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRunV1Condition[]
+     * Runtime class alias of \Google\Service\CloudRun\RevisionStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConditions()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setImageDigest($imageDigest)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImageDigest()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLogUrl($logUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLogUrl()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setObservedGeneration($observedGeneration)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getObservedGeneration()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setServiceName($serviceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceName()
+    class Google_Service_CloudRun_RevisionStatus extends \Google\Service\CloudRun\RevisionStatus
     {
     }
 }

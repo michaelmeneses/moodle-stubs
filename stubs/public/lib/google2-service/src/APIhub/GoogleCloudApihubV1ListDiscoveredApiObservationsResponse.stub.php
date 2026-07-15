@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1ListDiscoveredApiObservationsResponse extends \Google\Collection
-{
-    protected $collection_key = 'discoveredApiObservations';
-    protected $discoveredApiObservationsType = GoogleCloudApihubV1DiscoveredApiObservation::class;
-    protected $discoveredApiObservationsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The DiscoveredApiObservation from the specified project and location.
-     *
-     * @param GoogleCloudApihubV1DiscoveredApiObservation[] $discoveredApiObservations
-     */
-    public function setDiscoveredApiObservations($discoveredApiObservations)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1ListDiscoveredApiObservationsResponse extends \Google\Collection
     {
+        protected $collection_key = 'discoveredApiObservations';
+        protected $discoveredApiObservationsType = GoogleCloudApihubV1DiscoveredApiObservation::class;
+        protected $discoveredApiObservationsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The DiscoveredApiObservation from the specified project and location.
+         *
+         * @param GoogleCloudApihubV1DiscoveredApiObservation[] $discoveredApiObservations
+         */
+        public function setDiscoveredApiObservations($discoveredApiObservations)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1DiscoveredApiObservation[]
+         */
+        public function getDiscoveredApiObservations()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApihubV1DiscoveredApiObservation[]
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1ListDiscoveredApiObservationsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDiscoveredApiObservations()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_APIhub_GoogleCloudApihubV1ListDiscoveredApiObservationsResponse extends \Google\Service\APIhub\GoogleCloudApihubV1ListDiscoveredApiObservationsResponse
     {
     }
 }

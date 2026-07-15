@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PlayIntegrity;
-
-class AccountActivity extends \Google\Model
-{
-    /**
-     * Activity level has not been set.
-     */
-    public const ACTIVITY_LEVEL_ACTIVITY_LEVEL_UNSPECIFIED = 'ACTIVITY_LEVEL_UNSPECIFIED';
-    /**
-     * Account activity level is not evaluated.
-     */
-    public const ACTIVITY_LEVEL_UNEVALUATED = 'UNEVALUATED';
-    /**
-     * Unusual activity for at least one of the user accounts on the device.
-     */
-    public const ACTIVITY_LEVEL_UNUSUAL = 'UNUSUAL';
-    /**
-     * Insufficient activity to verify the user account on the device.
-     */
-    public const ACTIVITY_LEVEL_UNKNOWN = 'UNKNOWN';
-    /**
-     * Typical activity for the user account or accounts on the device.
-     */
-    public const ACTIVITY_LEVEL_TYPICAL_BASIC = 'TYPICAL_BASIC';
-    /**
-     * Typical for the user account or accounts on the device, with harder to
-     * replicate signals.
-     */
-    public const ACTIVITY_LEVEL_TYPICAL_STRONG = 'TYPICAL_STRONG';
-    /**
-     * Required. Indicates the activity level of the account.
-     *
-     * @var string
-     */
-    public $activityLevel;
-    /**
-     * Required. Indicates the activity level of the account.
-     *
-     * Accepted values: ACTIVITY_LEVEL_UNSPECIFIED, UNEVALUATED, UNUSUAL, UNKNOWN,
-     * TYPICAL_BASIC, TYPICAL_STRONG
-     *
-     * @param self::ACTIVITY_LEVEL_* $activityLevel
-     */
-    public function setActivityLevel($activityLevel)
+namespace Google\Service\PlayIntegrity {
+    class AccountActivity extends \Google\Model
     {
+        /**
+         * Activity level has not been set.
+         */
+        public const ACTIVITY_LEVEL_ACTIVITY_LEVEL_UNSPECIFIED = 'ACTIVITY_LEVEL_UNSPECIFIED';
+        /**
+         * Account activity level is not evaluated.
+         */
+        public const ACTIVITY_LEVEL_UNEVALUATED = 'UNEVALUATED';
+        /**
+         * Unusual activity for at least one of the user accounts on the device.
+         */
+        public const ACTIVITY_LEVEL_UNUSUAL = 'UNUSUAL';
+        /**
+         * Insufficient activity to verify the user account on the device.
+         */
+        public const ACTIVITY_LEVEL_UNKNOWN = 'UNKNOWN';
+        /**
+         * Typical activity for the user account or accounts on the device.
+         */
+        public const ACTIVITY_LEVEL_TYPICAL_BASIC = 'TYPICAL_BASIC';
+        /**
+         * Typical for the user account or accounts on the device, with harder to
+         * replicate signals.
+         */
+        public const ACTIVITY_LEVEL_TYPICAL_STRONG = 'TYPICAL_STRONG';
+        /**
+         * Required. Indicates the activity level of the account.
+         *
+         * @var string
+         */
+        public $activityLevel;
+        /**
+         * Required. Indicates the activity level of the account.
+         *
+         * Accepted values: ACTIVITY_LEVEL_UNSPECIFIED, UNEVALUATED, UNUSUAL, UNKNOWN,
+         * TYPICAL_BASIC, TYPICAL_STRONG
+         *
+         * @param self::ACTIVITY_LEVEL_* $activityLevel
+         */
+        public function setActivityLevel($activityLevel)
+        {
+        }
+        /**
+         * @return self::ACTIVITY_LEVEL_*
+         */
+        public function getActivityLevel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::ACTIVITY_LEVEL_*
+     * Runtime class alias of \Google\Service\PlayIntegrity\AccountActivity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActivityLevel()
+    class Google_Service_PlayIntegrity_AccountActivity extends \Google\Service\PlayIntegrity\AccountActivity
     {
     }
 }

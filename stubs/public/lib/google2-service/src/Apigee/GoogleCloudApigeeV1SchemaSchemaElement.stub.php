@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1SchemaSchemaElement extends \Google\Model
-{
-    /**
-     * Name of the field.
-     *
-     * @var string
-     */
-    public $name;
-    protected $propertiesType = GoogleCloudApigeeV1SchemaSchemaProperty::class;
-    protected $propertiesDataType = '';
-    /**
-     * Name of the field.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1SchemaSchemaElement extends \Google\Model
     {
+        /**
+         * Name of the field.
+         *
+         * @var string
+         */
+        public $name;
+        protected $propertiesType = GoogleCloudApigeeV1SchemaSchemaProperty::class;
+        protected $propertiesDataType = '';
+        /**
+         * Name of the field.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Properties for the schema field. For example: { "createTime":
+         * "2016-02-26T10:23:09.592Z", "custom": "false", "type": "string" }
+         *
+         * @param GoogleCloudApigeeV1SchemaSchemaProperty $properties
+         */
+        public function setProperties(GoogleCloudApigeeV1SchemaSchemaProperty $properties)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1SchemaSchemaProperty
+         */
+        public function getProperties()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1SchemaSchemaElement registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Properties for the schema field. For example: { "createTime":
-     * "2016-02-26T10:23:09.592Z", "custom": "false", "type": "string" }
-     *
-     * @param GoogleCloudApigeeV1SchemaSchemaProperty $properties
-     */
-    public function setProperties(GoogleCloudApigeeV1SchemaSchemaProperty $properties)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1SchemaSchemaProperty
-     */
-    public function getProperties()
+    class Google_Service_Apigee_GoogleCloudApigeeV1SchemaSchemaElement extends \Google\Service\Apigee\GoogleCloudApigeeV1SchemaSchemaElement
     {
     }
 }

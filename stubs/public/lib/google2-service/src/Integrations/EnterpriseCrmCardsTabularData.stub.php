@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmCardsTabularData extends \Google\Collection
-{
-    protected $collection_key = 'rows';
-    /**
-     * @var string[]
-     */
-    public $headers;
-    protected $rowsType = EnterpriseCrmCardsRow::class;
-    protected $rowsDataType = 'array';
-    public $rows;
-    /**
-     * @param string[]
-     */
-    public function setHeaders($headers)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmCardsTabularData extends \Google\Collection
     {
+        protected $collection_key = 'rows';
+        /**
+         * @var string[]
+         */
+        public $headers;
+        protected $rowsType = EnterpriseCrmCardsRow::class;
+        protected $rowsDataType = 'array';
+        public $rows;
+        /**
+         * @param string[]
+         */
+        public function setHeaders($headers)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getHeaders()
+        {
+        }
+        /**
+         * @param EnterpriseCrmCardsRow[]
+         */
+        public function setRows($rows)
+        {
+        }
+        /**
+         * @return EnterpriseCrmCardsRow[]
+         */
+        public function getRows()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmCardsTabularData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHeaders()
-    {
-    }
-    /**
-     * @param EnterpriseCrmCardsRow[]
-     */
-    public function setRows($rows)
-    {
-    }
-    /**
-     * @return EnterpriseCrmCardsRow[]
-     */
-    public function getRows()
+    class Google_Service_Integrations_EnterpriseCrmCardsTabularData extends \Google\Service\Integrations\EnterpriseCrmCardsTabularData
     {
     }
 }

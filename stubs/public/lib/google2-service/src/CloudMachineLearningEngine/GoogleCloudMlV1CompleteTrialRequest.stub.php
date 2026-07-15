@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudMachineLearningEngine;
-
-class GoogleCloudMlV1CompleteTrialRequest extends \Google\Model
-{
-    protected $finalMeasurementType = GoogleCloudMlV1Measurement::class;
-    protected $finalMeasurementDataType = '';
-    /**
-     * Optional. A human readable reason why the trial was infeasible. This should
-     * only be provided if `trial_infeasible` is true.
-     *
-     * @var string
-     */
-    public $infeasibleReason;
-    /**
-     * Optional. True if the trial cannot be run with the given Parameter, and
-     * final_measurement will be ignored.
-     *
-     * @var bool
-     */
-    public $trialInfeasible;
-    /**
-     * Optional. If provided, it will be used as the completed trial's
-     * final_measurement; Otherwise, the service will auto-select a previously
-     * reported measurement as the final-measurement
-     *
-     * @param GoogleCloudMlV1Measurement $finalMeasurement
-     */
-    public function setFinalMeasurement(GoogleCloudMlV1Measurement $finalMeasurement)
+namespace Google\Service\CloudMachineLearningEngine {
+    class GoogleCloudMlV1CompleteTrialRequest extends \Google\Model
     {
+        protected $finalMeasurementType = GoogleCloudMlV1Measurement::class;
+        protected $finalMeasurementDataType = '';
+        /**
+         * Optional. A human readable reason why the trial was infeasible. This should
+         * only be provided if `trial_infeasible` is true.
+         *
+         * @var string
+         */
+        public $infeasibleReason;
+        /**
+         * Optional. True if the trial cannot be run with the given Parameter, and
+         * final_measurement will be ignored.
+         *
+         * @var bool
+         */
+        public $trialInfeasible;
+        /**
+         * Optional. If provided, it will be used as the completed trial's
+         * final_measurement; Otherwise, the service will auto-select a previously
+         * reported measurement as the final-measurement
+         *
+         * @param GoogleCloudMlV1Measurement $finalMeasurement
+         */
+        public function setFinalMeasurement(GoogleCloudMlV1Measurement $finalMeasurement)
+        {
+        }
+        /**
+         * @return GoogleCloudMlV1Measurement
+         */
+        public function getFinalMeasurement()
+        {
+        }
+        /**
+         * Optional. A human readable reason why the trial was infeasible. This should
+         * only be provided if `trial_infeasible` is true.
+         *
+         * @param string $infeasibleReason
+         */
+        public function setInfeasibleReason($infeasibleReason)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInfeasibleReason()
+        {
+        }
+        /**
+         * Optional. True if the trial cannot be run with the given Parameter, and
+         * final_measurement will be ignored.
+         *
+         * @param bool $trialInfeasible
+         */
+        public function setTrialInfeasible($trialInfeasible)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getTrialInfeasible()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudMlV1Measurement
+     * Runtime class alias of \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1CompleteTrialRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFinalMeasurement()
-    {
-    }
-    /**
-     * Optional. A human readable reason why the trial was infeasible. This should
-     * only be provided if `trial_infeasible` is true.
-     *
-     * @param string $infeasibleReason
-     */
-    public function setInfeasibleReason($infeasibleReason)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInfeasibleReason()
-    {
-    }
-    /**
-     * Optional. True if the trial cannot be run with the given Parameter, and
-     * final_measurement will be ignored.
-     *
-     * @param bool $trialInfeasible
-     */
-    public function setTrialInfeasible($trialInfeasible)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getTrialInfeasible()
+    class Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1CompleteTrialRequest extends \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1CompleteTrialRequest
     {
     }
 }

@@ -21,181 +21,190 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManufacturerCenter;
-
-class Grocery extends \Google\Collection
-{
-    protected $collection_key = 'nutritionClaim';
-    /**
-     * Active ingredients.
-     *
-     * @var string
-     */
-    public $activeIngredients;
-    /**
-     * Alcohol by volume.
-     *
-     * @var 
-     */
-    public $alcoholByVolume;
-    /**
-     * Allergens.
-     *
-     * @var string
-     */
-    public $allergens;
-    /**
-     * Derived nutrition claim.
-     *
-     * @var string[]
-     */
-    public $derivedNutritionClaim;
-    /**
-     * Directions.
-     *
-     * @var string
-     */
-    public $directions;
-    /**
-     * Indications.
-     *
-     * @var string
-     */
-    public $indications;
-    /**
-     * Ingredients.
-     *
-     * @var string
-     */
-    public $ingredients;
-    /**
-     * Nutrition claim.
-     *
-     * @var string[]
-     */
-    public $nutritionClaim;
-    /**
-     * Storage instructions.
-     *
-     * @var string
-     */
-    public $storageInstructions;
-    /**
-     * Active ingredients.
-     *
-     * @param string $activeIngredients
-     */
-    public function setActiveIngredients($activeIngredients)
+namespace Google\Service\ManufacturerCenter {
+    class Grocery extends \Google\Collection
     {
+        protected $collection_key = 'nutritionClaim';
+        /**
+         * Active ingredients.
+         *
+         * @var string
+         */
+        public $activeIngredients;
+        /**
+         * Alcohol by volume.
+         *
+         * @var 
+         */
+        public $alcoholByVolume;
+        /**
+         * Allergens.
+         *
+         * @var string
+         */
+        public $allergens;
+        /**
+         * Derived nutrition claim.
+         *
+         * @var string[]
+         */
+        public $derivedNutritionClaim;
+        /**
+         * Directions.
+         *
+         * @var string
+         */
+        public $directions;
+        /**
+         * Indications.
+         *
+         * @var string
+         */
+        public $indications;
+        /**
+         * Ingredients.
+         *
+         * @var string
+         */
+        public $ingredients;
+        /**
+         * Nutrition claim.
+         *
+         * @var string[]
+         */
+        public $nutritionClaim;
+        /**
+         * Storage instructions.
+         *
+         * @var string
+         */
+        public $storageInstructions;
+        /**
+         * Active ingredients.
+         *
+         * @param string $activeIngredients
+         */
+        public function setActiveIngredients($activeIngredients)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getActiveIngredients()
+        {
+        }
+        public function setAlcoholByVolume($alcoholByVolume)
+        {
+        }
+        public function getAlcoholByVolume()
+        {
+        }
+        /**
+         * Allergens.
+         *
+         * @param string $allergens
+         */
+        public function setAllergens($allergens)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAllergens()
+        {
+        }
+        /**
+         * Derived nutrition claim.
+         *
+         * @param string[] $derivedNutritionClaim
+         */
+        public function setDerivedNutritionClaim($derivedNutritionClaim)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDerivedNutritionClaim()
+        {
+        }
+        /**
+         * Directions.
+         *
+         * @param string $directions
+         */
+        public function setDirections($directions)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDirections()
+        {
+        }
+        /**
+         * Indications.
+         *
+         * @param string $indications
+         */
+        public function setIndications($indications)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIndications()
+        {
+        }
+        /**
+         * Ingredients.
+         *
+         * @param string $ingredients
+         */
+        public function setIngredients($ingredients)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIngredients()
+        {
+        }
+        /**
+         * Nutrition claim.
+         *
+         * @param string[] $nutritionClaim
+         */
+        public function setNutritionClaim($nutritionClaim)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getNutritionClaim()
+        {
+        }
+        /**
+         * Storage instructions.
+         *
+         * @param string $storageInstructions
+         */
+        public function setStorageInstructions($storageInstructions)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStorageInstructions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ManufacturerCenter\Grocery registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActiveIngredients()
-    {
-    }
-    public function setAlcoholByVolume($alcoholByVolume)
-    {
-    }
-    public function getAlcoholByVolume()
-    {
-    }
-    /**
-     * Allergens.
-     *
-     * @param string $allergens
-     */
-    public function setAllergens($allergens)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAllergens()
-    {
-    }
-    /**
-     * Derived nutrition claim.
-     *
-     * @param string[] $derivedNutritionClaim
-     */
-    public function setDerivedNutritionClaim($derivedNutritionClaim)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getDerivedNutritionClaim()
-    {
-    }
-    /**
-     * Directions.
-     *
-     * @param string $directions
-     */
-    public function setDirections($directions)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDirections()
-    {
-    }
-    /**
-     * Indications.
-     *
-     * @param string $indications
-     */
-    public function setIndications($indications)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIndications()
-    {
-    }
-    /**
-     * Ingredients.
-     *
-     * @param string $ingredients
-     */
-    public function setIngredients($ingredients)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIngredients()
-    {
-    }
-    /**
-     * Nutrition claim.
-     *
-     * @param string[] $nutritionClaim
-     */
-    public function setNutritionClaim($nutritionClaim)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getNutritionClaim()
-    {
-    }
-    /**
-     * Storage instructions.
-     *
-     * @param string $storageInstructions
-     */
-    public function setStorageInstructions($storageInstructions)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStorageInstructions()
+    class Google_Service_ManufacturerCenter_Grocery extends \Google\Service\ManufacturerCenter\Grocery
     {
     }
 }

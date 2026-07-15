@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementV1GraphicsAdapterInfo extends \Google\Model
-{
-    /**
-     * Output only. Adapter name. Example: Mesa DRI Intel(R) UHD Graphics 620
-     * (Kabylake GT2).
-     *
-     * @var string
-     */
-    public $adapter;
-    /**
-     * Output only. Represents the graphics card device id.
-     *
-     * @var string
-     */
-    public $deviceId;
-    /**
-     * Output only. Version of the GPU driver.
-     *
-     * @var string
-     */
-    public $driverVersion;
-    /**
-     * Output only. Adapter name. Example: Mesa DRI Intel(R) UHD Graphics 620
-     * (Kabylake GT2).
-     *
-     * @param string $adapter
-     */
-    public function setAdapter($adapter)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementV1GraphicsAdapterInfo extends \Google\Model
     {
+        /**
+         * Output only. Adapter name. Example: Mesa DRI Intel(R) UHD Graphics 620
+         * (Kabylake GT2).
+         *
+         * @var string
+         */
+        public $adapter;
+        /**
+         * Output only. Represents the graphics card device id.
+         *
+         * @var string
+         */
+        public $deviceId;
+        /**
+         * Output only. Version of the GPU driver.
+         *
+         * @var string
+         */
+        public $driverVersion;
+        /**
+         * Output only. Adapter name. Example: Mesa DRI Intel(R) UHD Graphics 620
+         * (Kabylake GT2).
+         *
+         * @param string $adapter
+         */
+        public function setAdapter($adapter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdapter()
+        {
+        }
+        /**
+         * Output only. Represents the graphics card device id.
+         *
+         * @param string $deviceId
+         */
+        public function setDeviceId($deviceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeviceId()
+        {
+        }
+        /**
+         * Output only. Version of the GPU driver.
+         *
+         * @param string $driverVersion
+         */
+        public function setDriverVersion($driverVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDriverVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementV1GraphicsAdapterInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdapter()
-    {
-    }
-    /**
-     * Output only. Represents the graphics card device id.
-     *
-     * @param string $deviceId
-     */
-    public function setDeviceId($deviceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeviceId()
-    {
-    }
-    /**
-     * Output only. Version of the GPU driver.
-     *
-     * @param string $driverVersion
-     */
-    public function setDriverVersion($driverVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDriverVersion()
+    class Google_Service_ChromeManagement_GoogleChromeManagementV1GraphicsAdapterInfo extends \Google\Service\ChromeManagement\GoogleChromeManagementV1GraphicsAdapterInfo
     {
     }
 }

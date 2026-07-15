@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3SafetySettingsRaiSettings extends \Google\Collection
-{
-    protected $collection_key = 'categoryFilters';
-    protected $categoryFiltersType = GoogleCloudDialogflowCxV3SafetySettingsRaiSettingsCategoryFilter::class;
-    protected $categoryFiltersDataType = 'array';
-    /**
-     * Optional. RAI blocking configurations.
-     *
-     * @param GoogleCloudDialogflowCxV3SafetySettingsRaiSettingsCategoryFilter[] $categoryFilters
-     */
-    public function setCategoryFilters($categoryFilters)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3SafetySettingsRaiSettings extends \Google\Collection
     {
+        protected $collection_key = 'categoryFilters';
+        protected $categoryFiltersType = GoogleCloudDialogflowCxV3SafetySettingsRaiSettingsCategoryFilter::class;
+        protected $categoryFiltersDataType = 'array';
+        /**
+         * Optional. RAI blocking configurations.
+         *
+         * @param GoogleCloudDialogflowCxV3SafetySettingsRaiSettingsCategoryFilter[] $categoryFilters
+         */
+        public function setCategoryFilters($categoryFilters)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3SafetySettingsRaiSettingsCategoryFilter[]
+         */
+        public function getCategoryFilters()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowCxV3SafetySettingsRaiSettingsCategoryFilter[]
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3SafetySettingsRaiSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCategoryFilters()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3SafetySettingsRaiSettings extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3SafetySettingsRaiSettings
     {
     }
 }

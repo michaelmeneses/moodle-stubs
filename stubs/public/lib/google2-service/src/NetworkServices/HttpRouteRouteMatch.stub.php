@@ -21,139 +21,148 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkServices;
-
-class HttpRouteRouteMatch extends \Google\Collection
-{
-    protected $collection_key = 'queryParameters';
-    /**
-     * The HTTP request path value should exactly match this value. Only one of
-     * full_path_match, prefix_match, or regex_match should be used.
-     *
-     * @var string
-     */
-    public $fullPathMatch;
-    protected $headersType = HttpRouteHeaderMatch::class;
-    protected $headersDataType = 'array';
-    /**
-     * Specifies if prefix_match and full_path_match matches are case sensitive.
-     * The default value is false.
-     *
-     * @var bool
-     */
-    public $ignoreCase;
-    /**
-     * The HTTP request path value must begin with specified prefix_match.
-     * prefix_match must begin with a /. Only one of full_path_match,
-     * prefix_match, or regex_match should be used.
-     *
-     * @var string
-     */
-    public $prefixMatch;
-    protected $queryParametersType = HttpRouteQueryParameterMatch::class;
-    protected $queryParametersDataType = 'array';
-    /**
-     * The HTTP request path value must satisfy the regular expression specified
-     * by regex_match after removing any query parameters and anchor supplied with
-     * the original URL. For regular expression grammar, please see
-     * https://github.com/google/re2/wiki/Syntax Only one of full_path_match,
-     * prefix_match, or regex_match should be used.
-     *
-     * @var string
-     */
-    public $regexMatch;
-    /**
-     * The HTTP request path value should exactly match this value. Only one of
-     * full_path_match, prefix_match, or regex_match should be used.
-     *
-     * @param string $fullPathMatch
-     */
-    public function setFullPathMatch($fullPathMatch)
+namespace Google\Service\NetworkServices {
+    class HttpRouteRouteMatch extends \Google\Collection
     {
+        protected $collection_key = 'queryParameters';
+        /**
+         * The HTTP request path value should exactly match this value. Only one of
+         * full_path_match, prefix_match, or regex_match should be used.
+         *
+         * @var string
+         */
+        public $fullPathMatch;
+        protected $headersType = HttpRouteHeaderMatch::class;
+        protected $headersDataType = 'array';
+        /**
+         * Specifies if prefix_match and full_path_match matches are case sensitive.
+         * The default value is false.
+         *
+         * @var bool
+         */
+        public $ignoreCase;
+        /**
+         * The HTTP request path value must begin with specified prefix_match.
+         * prefix_match must begin with a /. Only one of full_path_match,
+         * prefix_match, or regex_match should be used.
+         *
+         * @var string
+         */
+        public $prefixMatch;
+        protected $queryParametersType = HttpRouteQueryParameterMatch::class;
+        protected $queryParametersDataType = 'array';
+        /**
+         * The HTTP request path value must satisfy the regular expression specified
+         * by regex_match after removing any query parameters and anchor supplied with
+         * the original URL. For regular expression grammar, please see
+         * https://github.com/google/re2/wiki/Syntax Only one of full_path_match,
+         * prefix_match, or regex_match should be used.
+         *
+         * @var string
+         */
+        public $regexMatch;
+        /**
+         * The HTTP request path value should exactly match this value. Only one of
+         * full_path_match, prefix_match, or regex_match should be used.
+         *
+         * @param string $fullPathMatch
+         */
+        public function setFullPathMatch($fullPathMatch)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFullPathMatch()
+        {
+        }
+        /**
+         * Specifies a list of HTTP request headers to match against. ALL of the
+         * supplied headers must be matched.
+         *
+         * @param HttpRouteHeaderMatch[] $headers
+         */
+        public function setHeaders($headers)
+        {
+        }
+        /**
+         * @return HttpRouteHeaderMatch[]
+         */
+        public function getHeaders()
+        {
+        }
+        /**
+         * Specifies if prefix_match and full_path_match matches are case sensitive.
+         * The default value is false.
+         *
+         * @param bool $ignoreCase
+         */
+        public function setIgnoreCase($ignoreCase)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIgnoreCase()
+        {
+        }
+        /**
+         * The HTTP request path value must begin with specified prefix_match.
+         * prefix_match must begin with a /. Only one of full_path_match,
+         * prefix_match, or regex_match should be used.
+         *
+         * @param string $prefixMatch
+         */
+        public function setPrefixMatch($prefixMatch)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrefixMatch()
+        {
+        }
+        /**
+         * Specifies a list of query parameters to match against. ALL of the query
+         * parameters must be matched.
+         *
+         * @param HttpRouteQueryParameterMatch[] $queryParameters
+         */
+        public function setQueryParameters($queryParameters)
+        {
+        }
+        /**
+         * @return HttpRouteQueryParameterMatch[]
+         */
+        public function getQueryParameters()
+        {
+        }
+        /**
+         * The HTTP request path value must satisfy the regular expression specified
+         * by regex_match after removing any query parameters and anchor supplied with
+         * the original URL. For regular expression grammar, please see
+         * https://github.com/google/re2/wiki/Syntax Only one of full_path_match,
+         * prefix_match, or regex_match should be used.
+         *
+         * @param string $regexMatch
+         */
+        public function setRegexMatch($regexMatch)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegexMatch()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetworkServices\HttpRouteRouteMatch registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFullPathMatch()
-    {
-    }
-    /**
-     * Specifies a list of HTTP request headers to match against. ALL of the
-     * supplied headers must be matched.
-     *
-     * @param HttpRouteHeaderMatch[] $headers
-     */
-    public function setHeaders($headers)
-    {
-    }
-    /**
-     * @return HttpRouteHeaderMatch[]
-     */
-    public function getHeaders()
-    {
-    }
-    /**
-     * Specifies if prefix_match and full_path_match matches are case sensitive.
-     * The default value is false.
-     *
-     * @param bool $ignoreCase
-     */
-    public function setIgnoreCase($ignoreCase)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIgnoreCase()
-    {
-    }
-    /**
-     * The HTTP request path value must begin with specified prefix_match.
-     * prefix_match must begin with a /. Only one of full_path_match,
-     * prefix_match, or regex_match should be used.
-     *
-     * @param string $prefixMatch
-     */
-    public function setPrefixMatch($prefixMatch)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrefixMatch()
-    {
-    }
-    /**
-     * Specifies a list of query parameters to match against. ALL of the query
-     * parameters must be matched.
-     *
-     * @param HttpRouteQueryParameterMatch[] $queryParameters
-     */
-    public function setQueryParameters($queryParameters)
-    {
-    }
-    /**
-     * @return HttpRouteQueryParameterMatch[]
-     */
-    public function getQueryParameters()
-    {
-    }
-    /**
-     * The HTTP request path value must satisfy the regular expression specified
-     * by regex_match after removing any query parameters and anchor supplied with
-     * the original URL. For regular expression grammar, please see
-     * https://github.com/google/re2/wiki/Syntax Only one of full_path_match,
-     * prefix_match, or regex_match should be used.
-     *
-     * @param string $regexMatch
-     */
-    public function setRegexMatch($regexMatch)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegexMatch()
+    class Google_Service_NetworkServices_HttpRouteRouteMatch extends \Google\Service\NetworkServices\HttpRouteRouteMatch
     {
     }
 }

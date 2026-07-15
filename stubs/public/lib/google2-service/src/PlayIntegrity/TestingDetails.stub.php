@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PlayIntegrity;
-
-class TestingDetails extends \Google\Model
-{
-    /**
-     * Required. Indicates that the information contained in this payload is a
-     * testing response that is statically overridden for a tester.
-     *
-     * @var bool
-     */
-    public $isTestingResponse;
-    /**
-     * Required. Indicates that the information contained in this payload is a
-     * testing response that is statically overridden for a tester.
-     *
-     * @param bool $isTestingResponse
-     */
-    public function setIsTestingResponse($isTestingResponse)
+namespace Google\Service\PlayIntegrity {
+    class TestingDetails extends \Google\Model
     {
+        /**
+         * Required. Indicates that the information contained in this payload is a
+         * testing response that is statically overridden for a tester.
+         *
+         * @var bool
+         */
+        public $isTestingResponse;
+        /**
+         * Required. Indicates that the information contained in this payload is a
+         * testing response that is statically overridden for a tester.
+         *
+         * @param bool $isTestingResponse
+         */
+        public function setIsTestingResponse($isTestingResponse)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsTestingResponse()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\PlayIntegrity\TestingDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIsTestingResponse()
+    class Google_Service_PlayIntegrity_TestingDetails extends \Google\Service\PlayIntegrity\TestingDetails
     {
     }
 }

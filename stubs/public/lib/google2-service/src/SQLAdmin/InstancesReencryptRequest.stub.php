@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class InstancesReencryptRequest extends \Google\Model
-{
-    protected $backupReencryptionConfigType = BackupReencryptionConfig::class;
-    protected $backupReencryptionConfigDataType = '';
-    /**
-     * Configuration specific to backup re-encryption
-     *
-     * @param BackupReencryptionConfig $backupReencryptionConfig
-     */
-    public function setBackupReencryptionConfig(BackupReencryptionConfig $backupReencryptionConfig)
+namespace Google\Service\SQLAdmin {
+    class InstancesReencryptRequest extends \Google\Model
     {
+        protected $backupReencryptionConfigType = BackupReencryptionConfig::class;
+        protected $backupReencryptionConfigDataType = '';
+        /**
+         * Configuration specific to backup re-encryption
+         *
+         * @param BackupReencryptionConfig $backupReencryptionConfig
+         */
+        public function setBackupReencryptionConfig(BackupReencryptionConfig $backupReencryptionConfig)
+        {
+        }
+        /**
+         * @return BackupReencryptionConfig
+         */
+        public function getBackupReencryptionConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BackupReencryptionConfig
+     * Runtime class alias of \Google\Service\SQLAdmin\InstancesReencryptRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackupReencryptionConfig()
+    class Google_Service_SQLAdmin_InstancesReencryptRequest extends \Google\Service\SQLAdmin\InstancesReencryptRequest
     {
     }
 }

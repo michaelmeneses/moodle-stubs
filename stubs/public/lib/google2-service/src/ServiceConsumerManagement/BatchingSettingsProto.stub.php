@@ -21,196 +21,205 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceConsumerManagement;
-
-class BatchingSettingsProto extends \Google\Model
-{
-    /**
-     * Default behavior, system-defined.
-     */
-    public const FLOW_CONTROL_LIMIT_EXCEEDED_BEHAVIOR_UNSET_BEHAVIOR = 'UNSET_BEHAVIOR';
-    /**
-     * Stop operation, raise error.
-     */
-    public const FLOW_CONTROL_LIMIT_EXCEEDED_BEHAVIOR_THROW_EXCEPTION = 'THROW_EXCEPTION';
-    /**
-     * Pause operation until limit clears.
-     */
-    public const FLOW_CONTROL_LIMIT_EXCEEDED_BEHAVIOR_BLOCK = 'BLOCK';
-    /**
-     * Continue operation, disregard limit.
-     */
-    public const FLOW_CONTROL_LIMIT_EXCEEDED_BEHAVIOR_IGNORE = 'IGNORE';
-    /**
-     * The duration after which a batch should be sent, starting from the addition
-     * of the first message to that batch.
-     *
-     * @var string
-     */
-    public $delayThreshold;
-    /**
-     * The maximum number of elements collected in a batch that could be accepted
-     * by server.
-     *
-     * @var int
-     */
-    public $elementCountLimit;
-    /**
-     * The number of elements of a field collected into a batch which, if
-     * exceeded, causes the batch to be sent.
-     *
-     * @var int
-     */
-    public $elementCountThreshold;
-    /**
-     * The maximum size of data allowed by flow control.
-     *
-     * @var int
-     */
-    public $flowControlByteLimit;
-    /**
-     * The maximum number of elements allowed by flow control.
-     *
-     * @var int
-     */
-    public $flowControlElementLimit;
-    /**
-     * The behavior to take when the flow control limit is exceeded.
-     *
-     * @var string
-     */
-    public $flowControlLimitExceededBehavior;
-    /**
-     * The maximum size of the request that could be accepted by server.
-     *
-     * @var int
-     */
-    public $requestByteLimit;
-    /**
-     * The aggregated size of the batched field which, if exceeded, causes the
-     * batch to be sent. This size is computed by aggregating the sizes of the
-     * request field to be batched, not of the entire request message.
-     *
-     * @var string
-     */
-    public $requestByteThreshold;
-    /**
-     * The duration after which a batch should be sent, starting from the addition
-     * of the first message to that batch.
-     *
-     * @param string $delayThreshold
-     */
-    public function setDelayThreshold($delayThreshold)
+namespace Google\Service\ServiceConsumerManagement {
+    class BatchingSettingsProto extends \Google\Model
     {
+        /**
+         * Default behavior, system-defined.
+         */
+        public const FLOW_CONTROL_LIMIT_EXCEEDED_BEHAVIOR_UNSET_BEHAVIOR = 'UNSET_BEHAVIOR';
+        /**
+         * Stop operation, raise error.
+         */
+        public const FLOW_CONTROL_LIMIT_EXCEEDED_BEHAVIOR_THROW_EXCEPTION = 'THROW_EXCEPTION';
+        /**
+         * Pause operation until limit clears.
+         */
+        public const FLOW_CONTROL_LIMIT_EXCEEDED_BEHAVIOR_BLOCK = 'BLOCK';
+        /**
+         * Continue operation, disregard limit.
+         */
+        public const FLOW_CONTROL_LIMIT_EXCEEDED_BEHAVIOR_IGNORE = 'IGNORE';
+        /**
+         * The duration after which a batch should be sent, starting from the addition
+         * of the first message to that batch.
+         *
+         * @var string
+         */
+        public $delayThreshold;
+        /**
+         * The maximum number of elements collected in a batch that could be accepted
+         * by server.
+         *
+         * @var int
+         */
+        public $elementCountLimit;
+        /**
+         * The number of elements of a field collected into a batch which, if
+         * exceeded, causes the batch to be sent.
+         *
+         * @var int
+         */
+        public $elementCountThreshold;
+        /**
+         * The maximum size of data allowed by flow control.
+         *
+         * @var int
+         */
+        public $flowControlByteLimit;
+        /**
+         * The maximum number of elements allowed by flow control.
+         *
+         * @var int
+         */
+        public $flowControlElementLimit;
+        /**
+         * The behavior to take when the flow control limit is exceeded.
+         *
+         * @var string
+         */
+        public $flowControlLimitExceededBehavior;
+        /**
+         * The maximum size of the request that could be accepted by server.
+         *
+         * @var int
+         */
+        public $requestByteLimit;
+        /**
+         * The aggregated size of the batched field which, if exceeded, causes the
+         * batch to be sent. This size is computed by aggregating the sizes of the
+         * request field to be batched, not of the entire request message.
+         *
+         * @var string
+         */
+        public $requestByteThreshold;
+        /**
+         * The duration after which a batch should be sent, starting from the addition
+         * of the first message to that batch.
+         *
+         * @param string $delayThreshold
+         */
+        public function setDelayThreshold($delayThreshold)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDelayThreshold()
+        {
+        }
+        /**
+         * The maximum number of elements collected in a batch that could be accepted
+         * by server.
+         *
+         * @param int $elementCountLimit
+         */
+        public function setElementCountLimit($elementCountLimit)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getElementCountLimit()
+        {
+        }
+        /**
+         * The number of elements of a field collected into a batch which, if
+         * exceeded, causes the batch to be sent.
+         *
+         * @param int $elementCountThreshold
+         */
+        public function setElementCountThreshold($elementCountThreshold)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getElementCountThreshold()
+        {
+        }
+        /**
+         * The maximum size of data allowed by flow control.
+         *
+         * @param int $flowControlByteLimit
+         */
+        public function setFlowControlByteLimit($flowControlByteLimit)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getFlowControlByteLimit()
+        {
+        }
+        /**
+         * The maximum number of elements allowed by flow control.
+         *
+         * @param int $flowControlElementLimit
+         */
+        public function setFlowControlElementLimit($flowControlElementLimit)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getFlowControlElementLimit()
+        {
+        }
+        /**
+         * The behavior to take when the flow control limit is exceeded.
+         *
+         * Accepted values: UNSET_BEHAVIOR, THROW_EXCEPTION, BLOCK, IGNORE
+         *
+         * @param self::FLOW_CONTROL_LIMIT_EXCEEDED_BEHAVIOR_* $flowControlLimitExceededBehavior
+         */
+        public function setFlowControlLimitExceededBehavior($flowControlLimitExceededBehavior)
+        {
+        }
+        /**
+         * @return self::FLOW_CONTROL_LIMIT_EXCEEDED_BEHAVIOR_*
+         */
+        public function getFlowControlLimitExceededBehavior()
+        {
+        }
+        /**
+         * The maximum size of the request that could be accepted by server.
+         *
+         * @param int $requestByteLimit
+         */
+        public function setRequestByteLimit($requestByteLimit)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRequestByteLimit()
+        {
+        }
+        /**
+         * The aggregated size of the batched field which, if exceeded, causes the
+         * batch to be sent. This size is computed by aggregating the sizes of the
+         * request field to be batched, not of the entire request message.
+         *
+         * @param string $requestByteThreshold
+         */
+        public function setRequestByteThreshold($requestByteThreshold)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestByteThreshold()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ServiceConsumerManagement\BatchingSettingsProto registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDelayThreshold()
-    {
-    }
-    /**
-     * The maximum number of elements collected in a batch that could be accepted
-     * by server.
-     *
-     * @param int $elementCountLimit
-     */
-    public function setElementCountLimit($elementCountLimit)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getElementCountLimit()
-    {
-    }
-    /**
-     * The number of elements of a field collected into a batch which, if
-     * exceeded, causes the batch to be sent.
-     *
-     * @param int $elementCountThreshold
-     */
-    public function setElementCountThreshold($elementCountThreshold)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getElementCountThreshold()
-    {
-    }
-    /**
-     * The maximum size of data allowed by flow control.
-     *
-     * @param int $flowControlByteLimit
-     */
-    public function setFlowControlByteLimit($flowControlByteLimit)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getFlowControlByteLimit()
-    {
-    }
-    /**
-     * The maximum number of elements allowed by flow control.
-     *
-     * @param int $flowControlElementLimit
-     */
-    public function setFlowControlElementLimit($flowControlElementLimit)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getFlowControlElementLimit()
-    {
-    }
-    /**
-     * The behavior to take when the flow control limit is exceeded.
-     *
-     * Accepted values: UNSET_BEHAVIOR, THROW_EXCEPTION, BLOCK, IGNORE
-     *
-     * @param self::FLOW_CONTROL_LIMIT_EXCEEDED_BEHAVIOR_* $flowControlLimitExceededBehavior
-     */
-    public function setFlowControlLimitExceededBehavior($flowControlLimitExceededBehavior)
-    {
-    }
-    /**
-     * @return self::FLOW_CONTROL_LIMIT_EXCEEDED_BEHAVIOR_*
-     */
-    public function getFlowControlLimitExceededBehavior()
-    {
-    }
-    /**
-     * The maximum size of the request that could be accepted by server.
-     *
-     * @param int $requestByteLimit
-     */
-    public function setRequestByteLimit($requestByteLimit)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getRequestByteLimit()
-    {
-    }
-    /**
-     * The aggregated size of the batched field which, if exceeded, causes the
-     * batch to be sent. This size is computed by aggregating the sizes of the
-     * request field to be batched, not of the entire request message.
-     *
-     * @param string $requestByteThreshold
-     */
-    public function setRequestByteThreshold($requestByteThreshold)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestByteThreshold()
+    class Google_Service_ServiceConsumerManagement_BatchingSettingsProto extends \Google\Service\ServiceConsumerManagement\BatchingSettingsProto
     {
     }
 }

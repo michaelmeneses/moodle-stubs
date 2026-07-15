@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class FailureInfo extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $detail;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @param string
-     */
-    public function setDetail($detail)
+namespace Google\Service\CloudBuild {
+    class FailureInfo extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $detail;
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @param string
+         */
+        public function setDetail($detail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDetail()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudBuild\FailureInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDetail()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_CloudBuild_FailureInfo extends \Google\Service\CloudBuild\FailureInfo
     {
     }
 }

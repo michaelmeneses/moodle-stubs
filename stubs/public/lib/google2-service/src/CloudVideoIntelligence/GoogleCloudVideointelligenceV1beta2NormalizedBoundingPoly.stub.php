@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudVideoIntelligence;
-
-class GoogleCloudVideointelligenceV1beta2NormalizedBoundingPoly extends \Google\Collection
-{
-    protected $collection_key = 'vertices';
-    protected $verticesType = GoogleCloudVideointelligenceV1beta2NormalizedVertex::class;
-    protected $verticesDataType = 'array';
-    /**
-     * Normalized vertices of the bounding polygon.
-     *
-     * @param GoogleCloudVideointelligenceV1beta2NormalizedVertex[] $vertices
-     */
-    public function setVertices($vertices)
+namespace Google\Service\CloudVideoIntelligence {
+    class GoogleCloudVideointelligenceV1beta2NormalizedBoundingPoly extends \Google\Collection
     {
+        protected $collection_key = 'vertices';
+        protected $verticesType = GoogleCloudVideointelligenceV1beta2NormalizedVertex::class;
+        protected $verticesDataType = 'array';
+        /**
+         * Normalized vertices of the bounding polygon.
+         *
+         * @param GoogleCloudVideointelligenceV1beta2NormalizedVertex[] $vertices
+         */
+        public function setVertices($vertices)
+        {
+        }
+        /**
+         * @return GoogleCloudVideointelligenceV1beta2NormalizedVertex[]
+         */
+        public function getVertices()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudVideointelligenceV1beta2NormalizedVertex[]
+     * Runtime class alias of \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1beta2NormalizedBoundingPoly registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getVertices()
+    class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1beta2NormalizedBoundingPoly extends \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1beta2NormalizedBoundingPoly
     {
     }
 }

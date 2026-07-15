@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class AudioContentTypeAssignedTargetingOptionDetails extends \Google\Model
-{
-    /**
-     * Audio content type is not specified in this version. This enum is a place
-     * holder for a default value and does not represent a real content stream
-     * type.
-     */
-    public const AUDIO_CONTENT_TYPE_AUDIO_CONTENT_TYPE_UNSPECIFIED = 'AUDIO_CONTENT_TYPE_UNSPECIFIED';
-    /**
-     * The audio content type is unknown.
-     */
-    public const AUDIO_CONTENT_TYPE_AUDIO_CONTENT_TYPE_UNKNOWN = 'AUDIO_CONTENT_TYPE_UNKNOWN';
-    /**
-     * The audio content type is music.
-     */
-    public const AUDIO_CONTENT_TYPE_AUDIO_CONTENT_TYPE_MUSIC = 'AUDIO_CONTENT_TYPE_MUSIC';
-    /**
-     * The audio content type is broadcast.
-     */
-    public const AUDIO_CONTENT_TYPE_AUDIO_CONTENT_TYPE_BROADCAST = 'AUDIO_CONTENT_TYPE_BROADCAST';
-    /**
-     * The audio content type is podcast.
-     */
-    public const AUDIO_CONTENT_TYPE_AUDIO_CONTENT_TYPE_PODCAST = 'AUDIO_CONTENT_TYPE_PODCAST';
-    /**
-     * Required. The audio content type.
-     *
-     * @var string
-     */
-    public $audioContentType;
-    /**
-     * Required. The audio content type.
-     *
-     * Accepted values: AUDIO_CONTENT_TYPE_UNSPECIFIED,
-     * AUDIO_CONTENT_TYPE_UNKNOWN, AUDIO_CONTENT_TYPE_MUSIC,
-     * AUDIO_CONTENT_TYPE_BROADCAST, AUDIO_CONTENT_TYPE_PODCAST
-     *
-     * @param self::AUDIO_CONTENT_TYPE_* $audioContentType
-     */
-    public function setAudioContentType($audioContentType)
+namespace Google\Service\DisplayVideo {
+    class AudioContentTypeAssignedTargetingOptionDetails extends \Google\Model
     {
+        /**
+         * Audio content type is not specified in this version. This enum is a place
+         * holder for a default value and does not represent a real content stream
+         * type.
+         */
+        public const AUDIO_CONTENT_TYPE_AUDIO_CONTENT_TYPE_UNSPECIFIED = 'AUDIO_CONTENT_TYPE_UNSPECIFIED';
+        /**
+         * The audio content type is unknown.
+         */
+        public const AUDIO_CONTENT_TYPE_AUDIO_CONTENT_TYPE_UNKNOWN = 'AUDIO_CONTENT_TYPE_UNKNOWN';
+        /**
+         * The audio content type is music.
+         */
+        public const AUDIO_CONTENT_TYPE_AUDIO_CONTENT_TYPE_MUSIC = 'AUDIO_CONTENT_TYPE_MUSIC';
+        /**
+         * The audio content type is broadcast.
+         */
+        public const AUDIO_CONTENT_TYPE_AUDIO_CONTENT_TYPE_BROADCAST = 'AUDIO_CONTENT_TYPE_BROADCAST';
+        /**
+         * The audio content type is podcast.
+         */
+        public const AUDIO_CONTENT_TYPE_AUDIO_CONTENT_TYPE_PODCAST = 'AUDIO_CONTENT_TYPE_PODCAST';
+        /**
+         * Required. The audio content type.
+         *
+         * @var string
+         */
+        public $audioContentType;
+        /**
+         * Required. The audio content type.
+         *
+         * Accepted values: AUDIO_CONTENT_TYPE_UNSPECIFIED,
+         * AUDIO_CONTENT_TYPE_UNKNOWN, AUDIO_CONTENT_TYPE_MUSIC,
+         * AUDIO_CONTENT_TYPE_BROADCAST, AUDIO_CONTENT_TYPE_PODCAST
+         *
+         * @param self::AUDIO_CONTENT_TYPE_* $audioContentType
+         */
+        public function setAudioContentType($audioContentType)
+        {
+        }
+        /**
+         * @return self::AUDIO_CONTENT_TYPE_*
+         */
+        public function getAudioContentType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::AUDIO_CONTENT_TYPE_*
+     * Runtime class alias of \Google\Service\DisplayVideo\AudioContentTypeAssignedTargetingOptionDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAudioContentType()
+    class Google_Service_DisplayVideo_AudioContentTypeAssignedTargetingOptionDetails extends \Google\Service\DisplayVideo\AudioContentTypeAssignedTargetingOptionDetails
     {
     }
 }

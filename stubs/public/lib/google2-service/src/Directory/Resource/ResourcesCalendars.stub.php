@@ -21,127 +21,138 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory\Resource;
-
-/**
- * The "calendars" collection of methods.
- * Typical usage is:
- *  <code>
- *   $adminService = new Google\Service\Directory(...);
- *   $calendars = $adminService->resources_calendars;
- *  </code>
- */
-class ResourcesCalendars extends \Google\Service\Resource
-{
+namespace Google\Service\Directory\Resource {
+    use Google\Service\Directory\CalendarResource;
+    use Google\Service\Directory\CalendarResources;
     /**
-     * Deletes a calendar resource. (calendars.delete)
-     *
-     * @param string $customer The unique ID for the customer's Google Workspace
-     * account. As an account administrator, you can also use the `my_customer`
-     * alias to represent your account's customer ID.
-     * @param string $calendarResourceId The unique ID of the calendar resource to
-     * delete.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * The "calendars" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $adminService = new Google\Service\Directory(...);
+     *   $calendars = $adminService->resources_calendars;
+     *  </code>
      */
-    public function delete($customer, $calendarResourceId, $optParams = [])
+    class ResourcesCalendars extends \Google\Service\Resource
     {
+        /**
+         * Deletes a calendar resource. (calendars.delete)
+         *
+         * @param string $customer The unique ID for the customer's Google Workspace
+         * account. As an account administrator, you can also use the `my_customer`
+         * alias to represent your account's customer ID.
+         * @param string $calendarResourceId The unique ID of the calendar resource to
+         * delete.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($customer, $calendarResourceId, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves a calendar resource. (calendars.get)
+         *
+         * @param string $customer The unique ID for the customer's Google Workspace
+         * account. As an account administrator, you can also use the `my_customer`
+         * alias to represent your account's customer ID.
+         * @param string $calendarResourceId The unique ID of the calendar resource to
+         * retrieve.
+         * @param array $optParams Optional parameters.
+         * @return CalendarResource
+         * @throws \Google\Service\Exception
+         */
+        public function get($customer, $calendarResourceId, $optParams = [])
+        {
+        }
+        /**
+         * Inserts a calendar resource. (calendars.insert)
+         *
+         * @param string $customer The unique ID for the customer's Google Workspace
+         * account. As an account administrator, you can also use the `my_customer`
+         * alias to represent your account's customer ID.
+         * @param CalendarResource $postBody
+         * @param array $optParams Optional parameters.
+         * @return CalendarResource
+         * @throws \Google\Service\Exception
+         */
+        public function insert($customer, CalendarResource $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves a list of calendar resources for an account.
+         * (calendars.listResourcesCalendars)
+         *
+         * @param string $customer The unique ID for the customer's Google Workspace
+         * account. As an account administrator, you can also use the `my_customer`
+         * alias to represent your account's customer ID.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int maxResults Maximum number of results to return.
+         * @opt_param string orderBy Field(s) to sort results by in either ascending or
+         * descending order. Supported fields include `resourceId`, `resourceName`,
+         * `capacity`, `buildingId`, and `floorName`. If no order is specified, defaults
+         * to ascending. Should be of the form "field [asc|desc], field [asc|desc],
+         * ...". For example `buildingId, capacity desc` would return results sorted
+         * first by `buildingId` in ascending order then by `capacity` in descending
+         * order.
+         * @opt_param string pageToken Token to specify the next page in the list.
+         * @opt_param string query String query used to filter results. Contains one or
+         * more search clauses, each with a field, operator, and value. A field can be
+         * any of supported fields and operators can be any of supported operations.
+         * Operators include '=' for exact match, '!=' for mismatch and ':' for prefix
+         * match or HAS match where applicable. For prefix match, the value should
+         * always be followed by a *. Logical operators NOT and AND are supported (in
+         * this order of precedence). Supported fields include `generatedResourceName`,
+         * `name`, `buildingId`, `floor_name`, `capacity`,
+         * `featureInstances.feature.name`, `resourceEmail`, `resourceCategory`. For
+         * example `buildingId=US-NYC-9TH AND featureInstances.feature.name:Phone`.
+         * @return CalendarResources
+         * @throws \Google\Service\Exception
+         */
+        public function listResourcesCalendars($customer, $optParams = [])
+        {
+        }
+        /**
+         * Patches a calendar resource. (calendars.patch)
+         *
+         * @param string $customer The unique ID for the customer's Google Workspace
+         * account. As an account administrator, you can also use the `my_customer`
+         * alias to represent your account's customer ID.
+         * @param string $calendarResourceId The unique ID of the calendar resource to
+         * update.
+         * @param CalendarResource $postBody
+         * @param array $optParams Optional parameters.
+         * @return CalendarResource
+         * @throws \Google\Service\Exception
+         */
+        public function patch($customer, $calendarResourceId, CalendarResource $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Updates a calendar resource. This method supports patch semantics, meaning
+         * you only need to include the fields you wish to update. Fields that are not
+         * present in the request will be preserved. (calendars.update)
+         *
+         * @param string $customer The unique ID for the customer's Google Workspace
+         * account. As an account administrator, you can also use the `my_customer`
+         * alias to represent your account's customer ID.
+         * @param string $calendarResourceId The unique ID of the calendar resource to
+         * update.
+         * @param CalendarResource $postBody
+         * @param array $optParams Optional parameters.
+         * @return CalendarResource
+         * @throws \Google\Service\Exception
+         */
+        public function update($customer, $calendarResourceId, CalendarResource $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Retrieves a calendar resource. (calendars.get)
-     *
-     * @param string $customer The unique ID for the customer's Google Workspace
-     * account. As an account administrator, you can also use the `my_customer`
-     * alias to represent your account's customer ID.
-     * @param string $calendarResourceId The unique ID of the calendar resource to
-     * retrieve.
-     * @param array $optParams Optional parameters.
-     * @return CalendarResource
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Directory\Resource\ResourcesCalendars registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($customer, $calendarResourceId, $optParams = [])
-    {
-    }
-    /**
-     * Inserts a calendar resource. (calendars.insert)
-     *
-     * @param string $customer The unique ID for the customer's Google Workspace
-     * account. As an account administrator, you can also use the `my_customer`
-     * alias to represent your account's customer ID.
-     * @param CalendarResource $postBody
-     * @param array $optParams Optional parameters.
-     * @return CalendarResource
-     * @throws \Google\Service\Exception
-     */
-    public function insert($customer, CalendarResource $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Retrieves a list of calendar resources for an account.
-     * (calendars.listResourcesCalendars)
-     *
-     * @param string $customer The unique ID for the customer's Google Workspace
-     * account. As an account administrator, you can also use the `my_customer`
-     * alias to represent your account's customer ID.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int maxResults Maximum number of results to return.
-     * @opt_param string orderBy Field(s) to sort results by in either ascending or
-     * descending order. Supported fields include `resourceId`, `resourceName`,
-     * `capacity`, `buildingId`, and `floorName`. If no order is specified, defaults
-     * to ascending. Should be of the form "field [asc|desc], field [asc|desc],
-     * ...". For example `buildingId, capacity desc` would return results sorted
-     * first by `buildingId` in ascending order then by `capacity` in descending
-     * order.
-     * @opt_param string pageToken Token to specify the next page in the list.
-     * @opt_param string query String query used to filter results. Contains one or
-     * more search clauses, each with a field, operator, and value. A field can be
-     * any of supported fields and operators can be any of supported operations.
-     * Operators include '=' for exact match, '!=' for mismatch and ':' for prefix
-     * match or HAS match where applicable. For prefix match, the value should
-     * always be followed by a *. Logical operators NOT and AND are supported (in
-     * this order of precedence). Supported fields include `generatedResourceName`,
-     * `name`, `buildingId`, `floor_name`, `capacity`,
-     * `featureInstances.feature.name`, `resourceEmail`, `resourceCategory`. For
-     * example `buildingId=US-NYC-9TH AND featureInstances.feature.name:Phone`.
-     * @return CalendarResources
-     * @throws \Google\Service\Exception
-     */
-    public function listResourcesCalendars($customer, $optParams = [])
-    {
-    }
-    /**
-     * Patches a calendar resource. (calendars.patch)
-     *
-     * @param string $customer The unique ID for the customer's Google Workspace
-     * account. As an account administrator, you can also use the `my_customer`
-     * alias to represent your account's customer ID.
-     * @param string $calendarResourceId The unique ID of the calendar resource to
-     * update.
-     * @param CalendarResource $postBody
-     * @param array $optParams Optional parameters.
-     * @return CalendarResource
-     * @throws \Google\Service\Exception
-     */
-    public function patch($customer, $calendarResourceId, CalendarResource $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Updates a calendar resource. This method supports patch semantics, meaning
-     * you only need to include the fields you wish to update. Fields that are not
-     * present in the request will be preserved. (calendars.update)
-     *
-     * @param string $customer The unique ID for the customer's Google Workspace
-     * account. As an account administrator, you can also use the `my_customer`
-     * alias to represent your account's customer ID.
-     * @param string $calendarResourceId The unique ID of the calendar resource to
-     * update.
-     * @param CalendarResource $postBody
-     * @param array $optParams Optional parameters.
-     * @return CalendarResource
-     * @throws \Google\Service\Exception
-     */
-    public function update($customer, $calendarResourceId, CalendarResource $postBody, $optParams = [])
+    class Google_Service_Directory_Resource_ResourcesCalendars extends \Google\Service\Directory\Resource\ResourcesCalendars
     {
     }
 }

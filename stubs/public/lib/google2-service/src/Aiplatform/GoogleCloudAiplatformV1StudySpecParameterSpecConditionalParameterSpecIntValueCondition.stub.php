@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1StudySpecParameterSpecConditionalParameterSpecIntValueCondition extends \Google\Collection
-{
-    protected $collection_key = 'values';
-    /**
-     * Required. Matches values of the parent parameter of 'INTEGER' type. All
-     * values must lie in `integer_value_spec` of parent parameter.
-     *
-     * @var string[]
-     */
-    public $values;
-    /**
-     * Required. Matches values of the parent parameter of 'INTEGER' type. All
-     * values must lie in `integer_value_spec` of parent parameter.
-     *
-     * @param string[] $values
-     */
-    public function setValues($values)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1StudySpecParameterSpecConditionalParameterSpecIntValueCondition extends \Google\Collection
     {
+        protected $collection_key = 'values';
+        /**
+         * Required. Matches values of the parent parameter of 'INTEGER' type. All
+         * values must lie in `integer_value_spec` of parent parameter.
+         *
+         * @var string[]
+         */
+        public $values;
+        /**
+         * Required. Matches values of the parent parameter of 'INTEGER' type. All
+         * values must lie in `integer_value_spec` of parent parameter.
+         *
+         * @param string[] $values
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1StudySpecParameterSpecConditionalParameterSpecIntValueCondition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getValues()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1StudySpecParameterSpecConditionalParameterSpecIntValueCondition extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1StudySpecParameterSpecConditionalParameterSpecIntValueCondition
     {
     }
 }

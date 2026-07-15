@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class ApplicationSigningKeyCert extends \Google\Model
-{
-    /**
-     * Required. The SHA-256 hash value of the signing key certificate of the app.
-     * This must be a valid SHA-256 hash value, i.e. 32 bytes. Otherwise, the
-     * policy is rejected.
-     *
-     * @var string
-     */
-    public $signingKeyCertFingerprintSha256;
-    /**
-     * Required. The SHA-256 hash value of the signing key certificate of the app.
-     * This must be a valid SHA-256 hash value, i.e. 32 bytes. Otherwise, the
-     * policy is rejected.
-     *
-     * @param string $signingKeyCertFingerprintSha256
-     */
-    public function setSigningKeyCertFingerprintSha256($signingKeyCertFingerprintSha256)
+namespace Google\Service\AndroidManagement {
+    class ApplicationSigningKeyCert extends \Google\Model
     {
+        /**
+         * Required. The SHA-256 hash value of the signing key certificate of the app.
+         * This must be a valid SHA-256 hash value, i.e. 32 bytes. Otherwise, the
+         * policy is rejected.
+         *
+         * @var string
+         */
+        public $signingKeyCertFingerprintSha256;
+        /**
+         * Required. The SHA-256 hash value of the signing key certificate of the app.
+         * This must be a valid SHA-256 hash value, i.e. 32 bytes. Otherwise, the
+         * policy is rejected.
+         *
+         * @param string $signingKeyCertFingerprintSha256
+         */
+        public function setSigningKeyCertFingerprintSha256($signingKeyCertFingerprintSha256)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSigningKeyCertFingerprintSha256()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidManagement\ApplicationSigningKeyCert registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSigningKeyCertFingerprintSha256()
+    class Google_Service_AndroidManagement_ApplicationSigningKeyCert extends \Google\Service\AndroidManagement\ApplicationSigningKeyCert
     {
     }
 }

@@ -21,119 +21,128 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceUsage;
-
-class McpPolicy extends \Google\Collection
-{
-    protected $collection_key = 'mcpEnableRules';
-    /**
-     * Output only. The time the policy was created. For singleton policies (such
-     * as the `default` policy), this is the first touch of the policy.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * An opaque tag indicating the current version of the policy, used for
-     * concurrency control.
-     *
-     * @var string
-     */
-    public $etag;
-    protected $mcpEnableRulesType = McpEnableRule::class;
-    protected $mcpEnableRulesDataType = 'array';
-    /**
-     * Output only. The resource name of the policy. Only the `default` policy is
-     * supported. We allow the following formats:
-     * `projects/{PROJECT_NUMBER}/mcpPolicies/default`,
-     * `projects/{PROJECT_ID}/mcpPolicies/default`,
-     * `folders/{FOLDER_ID}/mcpPolicies/default`,
-     * `organizations/{ORG_ID}/mcpPolicies/default`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The time the policy was last updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. The time the policy was created. For singleton policies (such
-     * as the `default` policy), this is the first touch of the policy.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\ServiceUsage {
+    class McpPolicy extends \Google\Collection
     {
+        protected $collection_key = 'mcpEnableRules';
+        /**
+         * Output only. The time the policy was created. For singleton policies (such
+         * as the `default` policy), this is the first touch of the policy.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * An opaque tag indicating the current version of the policy, used for
+         * concurrency control.
+         *
+         * @var string
+         */
+        public $etag;
+        protected $mcpEnableRulesType = McpEnableRule::class;
+        protected $mcpEnableRulesDataType = 'array';
+        /**
+         * Output only. The resource name of the policy. Only the `default` policy is
+         * supported. We allow the following formats:
+         * `projects/{PROJECT_NUMBER}/mcpPolicies/default`,
+         * `projects/{PROJECT_ID}/mcpPolicies/default`,
+         * `folders/{FOLDER_ID}/mcpPolicies/default`,
+         * `organizations/{ORG_ID}/mcpPolicies/default`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The time the policy was last updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. The time the policy was created. For singleton policies (such
+         * as the `default` policy), this is the first touch of the policy.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * An opaque tag indicating the current version of the policy, used for
+         * concurrency control.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * McpEnableRules contains MCP enablement related rules.
+         *
+         * @param McpEnableRule[] $mcpEnableRules
+         */
+        public function setMcpEnableRules($mcpEnableRules)
+        {
+        }
+        /**
+         * @return McpEnableRule[]
+         */
+        public function getMcpEnableRules()
+        {
+        }
+        /**
+         * Output only. The resource name of the policy. Only the `default` policy is
+         * supported. We allow the following formats:
+         * `projects/{PROJECT_NUMBER}/mcpPolicies/default`,
+         * `projects/{PROJECT_ID}/mcpPolicies/default`,
+         * `folders/{FOLDER_ID}/mcpPolicies/default`,
+         * `organizations/{ORG_ID}/mcpPolicies/default`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The time the policy was last updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ServiceUsage\McpPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * An opaque tag indicating the current version of the policy, used for
-     * concurrency control.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * McpEnableRules contains MCP enablement related rules.
-     *
-     * @param McpEnableRule[] $mcpEnableRules
-     */
-    public function setMcpEnableRules($mcpEnableRules)
-    {
-    }
-    /**
-     * @return McpEnableRule[]
-     */
-    public function getMcpEnableRules()
-    {
-    }
-    /**
-     * Output only. The resource name of the policy. Only the `default` policy is
-     * supported. We allow the following formats:
-     * `projects/{PROJECT_NUMBER}/mcpPolicies/default`,
-     * `projects/{PROJECT_ID}/mcpPolicies/default`,
-     * `folders/{FOLDER_ID}/mcpPolicies/default`,
-     * `organizations/{ORG_ID}/mcpPolicies/default`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The time the policy was last updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_ServiceUsage_McpPolicy extends \Google\Service\ServiceUsage\McpPolicy
     {
     }
 }

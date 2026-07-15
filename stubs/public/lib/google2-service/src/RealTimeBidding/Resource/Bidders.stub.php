@@ -21,46 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RealTimeBidding\Resource;
-
-/**
- * The "bidders" collection of methods.
- * Typical usage is:
- *  <code>
- *   $realtimebiddingService = new Google\Service\RealTimeBidding(...);
- *   $bidders = $realtimebiddingService->bidders;
- *  </code>
- */
-class Bidders extends \Google\Service\Resource
-{
+namespace Google\Service\RealTimeBidding\Resource {
+    use Google\Service\RealTimeBidding\Bidder;
+    use Google\Service\RealTimeBidding\ListBiddersResponse;
     /**
-     * Gets a bidder account by its name. (bidders.get)
-     *
-     * @param string $name Required. Name of the bidder to get. Format:
-     * `bidders/{bidderAccountId}`
-     * @param array $optParams Optional parameters.
-     * @return Bidder
-     * @throws \Google\Service\Exception
+     * The "bidders" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $realtimebiddingService = new Google\Service\RealTimeBidding(...);
+     *   $bidders = $realtimebiddingService->bidders;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class Bidders extends \Google\Service\Resource
     {
+        /**
+         * Gets a bidder account by its name. (bidders.get)
+         *
+         * @param string $name Required. Name of the bidder to get. Format:
+         * `bidders/{bidderAccountId}`
+         * @param array $optParams Optional parameters.
+         * @return Bidder
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists all the bidder accounts that belong to the caller.
+         * (bidders.listBidders)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The maximum number of bidders to return. If
+         * unspecified, at most 100 bidders will be returned. The maximum value is 500;
+         * values above 500 will be coerced to 500.
+         * @opt_param string pageToken A token identifying a page of results the server
+         * should return. This value is received from a previous `ListBidders` call in
+         * ListBiddersResponse.nextPageToken.
+         * @return ListBiddersResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listBidders($optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists all the bidder accounts that belong to the caller.
-     * (bidders.listBidders)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The maximum number of bidders to return. If
-     * unspecified, at most 100 bidders will be returned. The maximum value is 500;
-     * values above 500 will be coerced to 500.
-     * @opt_param string pageToken A token identifying a page of results the server
-     * should return. This value is received from a previous `ListBidders` call in
-     * ListBiddersResponse.nextPageToken.
-     * @return ListBiddersResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\RealTimeBidding\Resource\Bidders registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listBidders($optParams = [])
+    class Google_Service_RealTimeBidding_Resource_Bidders extends \Google\Service\RealTimeBidding\Resource\Bidders
     {
     }
 }

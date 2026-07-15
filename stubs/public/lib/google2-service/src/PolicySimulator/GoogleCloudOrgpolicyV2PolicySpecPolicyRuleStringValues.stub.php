@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PolicySimulator;
-
-class GoogleCloudOrgpolicyV2PolicySpecPolicyRuleStringValues extends \Google\Collection
-{
-    protected $collection_key = 'deniedValues';
-    /**
-     * List of values allowed at this resource.
-     *
-     * @var string[]
-     */
-    public $allowedValues;
-    /**
-     * List of values denied at this resource.
-     *
-     * @var string[]
-     */
-    public $deniedValues;
-    /**
-     * List of values allowed at this resource.
-     *
-     * @param string[] $allowedValues
-     */
-    public function setAllowedValues($allowedValues)
+namespace Google\Service\PolicySimulator {
+    class GoogleCloudOrgpolicyV2PolicySpecPolicyRuleStringValues extends \Google\Collection
     {
+        protected $collection_key = 'deniedValues';
+        /**
+         * List of values allowed at this resource.
+         *
+         * @var string[]
+         */
+        public $allowedValues;
+        /**
+         * List of values denied at this resource.
+         *
+         * @var string[]
+         */
+        public $deniedValues;
+        /**
+         * List of values allowed at this resource.
+         *
+         * @param string[] $allowedValues
+         */
+        public function setAllowedValues($allowedValues)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAllowedValues()
+        {
+        }
+        /**
+         * List of values denied at this resource.
+         *
+         * @param string[] $deniedValues
+         */
+        public function setDeniedValues($deniedValues)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDeniedValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\PolicySimulator\GoogleCloudOrgpolicyV2PolicySpecPolicyRuleStringValues registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowedValues()
-    {
-    }
-    /**
-     * List of values denied at this resource.
-     *
-     * @param string[] $deniedValues
-     */
-    public function setDeniedValues($deniedValues)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getDeniedValues()
+    class Google_Service_PolicySimulator_GoogleCloudOrgpolicyV2PolicySpecPolicyRuleStringValues extends \Google\Service\PolicySimulator\GoogleCloudOrgpolicyV2PolicySpecPolicyRuleStringValues
     {
     }
 }

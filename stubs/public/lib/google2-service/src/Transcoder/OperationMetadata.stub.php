@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Transcoder;
-
-class OperationMetadata extends \Google\Model
-{
-    public $apiVersion;
-    public $cancelRequested;
-    public $createTime;
-    public $endTime;
-    public $statusDetail;
-    public $target;
-    public $verb;
-    public function setApiVersion($apiVersion)
+namespace Google\Service\Transcoder {
+    class OperationMetadata extends \Google\Model
     {
+        public $apiVersion;
+        public $cancelRequested;
+        public $createTime;
+        public $endTime;
+        public $statusDetail;
+        public $target;
+        public $verb;
+        public function setApiVersion($apiVersion)
+        {
+        }
+        public function getApiVersion()
+        {
+        }
+        public function setCancelRequested($cancelRequested)
+        {
+        }
+        public function getCancelRequested()
+        {
+        }
+        public function setCreateTime($createTime)
+        {
+        }
+        public function getCreateTime()
+        {
+        }
+        public function setEndTime($endTime)
+        {
+        }
+        public function getEndTime()
+        {
+        }
+        public function setStatusDetail($statusDetail)
+        {
+        }
+        public function getStatusDetail()
+        {
+        }
+        public function setTarget($target)
+        {
+        }
+        public function getTarget()
+        {
+        }
+        public function setVerb($verb)
+        {
+        }
+        public function getVerb()
+        {
+        }
     }
-    public function getApiVersion()
-    {
-    }
-    public function setCancelRequested($cancelRequested)
-    {
-    }
-    public function getCancelRequested()
-    {
-    }
-    public function setCreateTime($createTime)
-    {
-    }
-    public function getCreateTime()
-    {
-    }
-    public function setEndTime($endTime)
-    {
-    }
-    public function getEndTime()
-    {
-    }
-    public function setStatusDetail($statusDetail)
-    {
-    }
-    public function getStatusDetail()
-    {
-    }
-    public function setTarget($target)
-    {
-    }
-    public function getTarget()
-    {
-    }
-    public function setVerb($verb)
-    {
-    }
-    public function getVerb()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Transcoder\OperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Transcoder_OperationMetadata extends \Google\Service\Transcoder\OperationMetadata
     {
     }
 }

@@ -21,77 +21,86 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager;
-
-class FolderEntities extends \Google\Collection
-{
-    protected $collection_key = 'variable';
-    /**
-     * Continuation token for fetching the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $tagType = Tag::class;
-    protected $tagDataType = 'array';
-    protected $triggerType = Trigger::class;
-    protected $triggerDataType = 'array';
-    protected $variableType = Variable::class;
-    protected $variableDataType = 'array';
-    /**
-     * Continuation token for fetching the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\TagManager {
+    class FolderEntities extends \Google\Collection
     {
+        protected $collection_key = 'variable';
+        /**
+         * Continuation token for fetching the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $tagType = Tag::class;
+        protected $tagDataType = 'array';
+        protected $triggerType = Trigger::class;
+        protected $triggerDataType = 'array';
+        protected $variableType = Variable::class;
+        protected $variableDataType = 'array';
+        /**
+         * Continuation token for fetching the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of tags inside the folder.
+         *
+         * @param Tag[] $tag
+         */
+        public function setTag($tag)
+        {
+        }
+        /**
+         * @return Tag[]
+         */
+        public function getTag()
+        {
+        }
+        /**
+         * The list of triggers inside the folder.
+         *
+         * @param Trigger[] $trigger
+         */
+        public function setTrigger($trigger)
+        {
+        }
+        /**
+         * @return Trigger[]
+         */
+        public function getTrigger()
+        {
+        }
+        /**
+         * The list of variables inside the folder.
+         *
+         * @param Variable[] $variable
+         */
+        public function setVariable($variable)
+        {
+        }
+        /**
+         * @return Variable[]
+         */
+        public function getVariable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\TagManager\FolderEntities registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of tags inside the folder.
-     *
-     * @param Tag[] $tag
-     */
-    public function setTag($tag)
-    {
-    }
-    /**
-     * @return Tag[]
-     */
-    public function getTag()
-    {
-    }
-    /**
-     * The list of triggers inside the folder.
-     *
-     * @param Trigger[] $trigger
-     */
-    public function setTrigger($trigger)
-    {
-    }
-    /**
-     * @return Trigger[]
-     */
-    public function getTrigger()
-    {
-    }
-    /**
-     * The list of variables inside the folder.
-     *
-     * @param Variable[] $variable
-     */
-    public function setVariable($variable)
-    {
-    }
-    /**
-     * @return Variable[]
-     */
-    public function getVariable()
+    class Google_Service_TagManager_FolderEntities extends \Google\Service\TagManager\FolderEntities
     {
     }
 }

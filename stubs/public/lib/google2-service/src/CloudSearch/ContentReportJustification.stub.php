@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class ContentReportJustification extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $userJustification;
-    /**
-     * @param string
-     */
-    public function setUserJustification($userJustification)
+namespace Google\Service\CloudSearch {
+    class ContentReportJustification extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $userJustification;
+        /**
+         * @param string
+         */
+        public function setUserJustification($userJustification)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserJustification()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\ContentReportJustification registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUserJustification()
+    class Google_Service_CloudSearch_ContentReportJustification extends \Google\Service\CloudSearch\ContentReportJustification
     {
     }
 }

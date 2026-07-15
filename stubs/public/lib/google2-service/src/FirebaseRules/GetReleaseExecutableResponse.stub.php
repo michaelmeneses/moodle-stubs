@@ -21,160 +21,169 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseRules;
-
-class GetReleaseExecutableResponse extends \Google\Model
-{
-    /**
-     * Executable format unspecified. Defaults to FIREBASE_RULES_EXECUTABLE_V1
-     */
-    public const EXECUTABLE_VERSION_RELEASE_EXECUTABLE_VERSION_UNSPECIFIED = 'RELEASE_EXECUTABLE_VERSION_UNSPECIFIED';
-    /**
-     * Firebase Rules syntax 'rules2' executable versions: Custom AST for use with
-     * Java clients.
-     */
-    public const EXECUTABLE_VERSION_FIREBASE_RULES_EXECUTABLE_V1 = 'FIREBASE_RULES_EXECUTABLE_V1';
-    /**
-     * CEL-based executable for use with C++ clients.
-     */
-    public const EXECUTABLE_VERSION_FIREBASE_RULES_EXECUTABLE_V2 = 'FIREBASE_RULES_EXECUTABLE_V2';
-    /**
-     * Language unspecified. Defaults to FIREBASE_RULES.
-     */
-    public const LANGUAGE_LANGUAGE_UNSPECIFIED = 'LANGUAGE_UNSPECIFIED';
-    /**
-     * Firebase Rules language.
-     */
-    public const LANGUAGE_FIREBASE_RULES = 'FIREBASE_RULES';
-    /**
-     * Event Flow triggers.
-     */
-    public const LANGUAGE_EVENT_FLOW_TRIGGERS = 'EVENT_FLOW_TRIGGERS';
-    /**
-     * Executable view of the `Ruleset` referenced by the `Release`.
-     *
-     * @var string
-     */
-    public $executable;
-    /**
-     * The Rules runtime version of the executable.
-     *
-     * @var string
-     */
-    public $executableVersion;
-    /**
-     * `Language` used to generate the executable bytes.
-     *
-     * @var string
-     */
-    public $language;
-    /**
-     * `Ruleset` name associated with the `Release` executable.
-     *
-     * @var string
-     */
-    public $rulesetName;
-    /**
-     * Optional, indicates the freshness of the result. The response is guaranteed
-     * to be the latest within an interval up to the sync_time (inclusive).
-     *
-     * @var string
-     */
-    public $syncTime;
-    /**
-     * Timestamp for the most recent `Release.update_time`.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Executable view of the `Ruleset` referenced by the `Release`.
-     *
-     * @param string $executable
-     */
-    public function setExecutable($executable)
+namespace Google\Service\FirebaseRules {
+    class GetReleaseExecutableResponse extends \Google\Model
     {
+        /**
+         * Executable format unspecified. Defaults to FIREBASE_RULES_EXECUTABLE_V1
+         */
+        public const EXECUTABLE_VERSION_RELEASE_EXECUTABLE_VERSION_UNSPECIFIED = 'RELEASE_EXECUTABLE_VERSION_UNSPECIFIED';
+        /**
+         * Firebase Rules syntax 'rules2' executable versions: Custom AST for use with
+         * Java clients.
+         */
+        public const EXECUTABLE_VERSION_FIREBASE_RULES_EXECUTABLE_V1 = 'FIREBASE_RULES_EXECUTABLE_V1';
+        /**
+         * CEL-based executable for use with C++ clients.
+         */
+        public const EXECUTABLE_VERSION_FIREBASE_RULES_EXECUTABLE_V2 = 'FIREBASE_RULES_EXECUTABLE_V2';
+        /**
+         * Language unspecified. Defaults to FIREBASE_RULES.
+         */
+        public const LANGUAGE_LANGUAGE_UNSPECIFIED = 'LANGUAGE_UNSPECIFIED';
+        /**
+         * Firebase Rules language.
+         */
+        public const LANGUAGE_FIREBASE_RULES = 'FIREBASE_RULES';
+        /**
+         * Event Flow triggers.
+         */
+        public const LANGUAGE_EVENT_FLOW_TRIGGERS = 'EVENT_FLOW_TRIGGERS';
+        /**
+         * Executable view of the `Ruleset` referenced by the `Release`.
+         *
+         * @var string
+         */
+        public $executable;
+        /**
+         * The Rules runtime version of the executable.
+         *
+         * @var string
+         */
+        public $executableVersion;
+        /**
+         * `Language` used to generate the executable bytes.
+         *
+         * @var string
+         */
+        public $language;
+        /**
+         * `Ruleset` name associated with the `Release` executable.
+         *
+         * @var string
+         */
+        public $rulesetName;
+        /**
+         * Optional, indicates the freshness of the result. The response is guaranteed
+         * to be the latest within an interval up to the sync_time (inclusive).
+         *
+         * @var string
+         */
+        public $syncTime;
+        /**
+         * Timestamp for the most recent `Release.update_time`.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Executable view of the `Ruleset` referenced by the `Release`.
+         *
+         * @param string $executable
+         */
+        public function setExecutable($executable)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExecutable()
+        {
+        }
+        /**
+         * The Rules runtime version of the executable.
+         *
+         * Accepted values: RELEASE_EXECUTABLE_VERSION_UNSPECIFIED,
+         * FIREBASE_RULES_EXECUTABLE_V1, FIREBASE_RULES_EXECUTABLE_V2
+         *
+         * @param self::EXECUTABLE_VERSION_* $executableVersion
+         */
+        public function setExecutableVersion($executableVersion)
+        {
+        }
+        /**
+         * @return self::EXECUTABLE_VERSION_*
+         */
+        public function getExecutableVersion()
+        {
+        }
+        /**
+         * `Language` used to generate the executable bytes.
+         *
+         * Accepted values: LANGUAGE_UNSPECIFIED, FIREBASE_RULES, EVENT_FLOW_TRIGGERS
+         *
+         * @param self::LANGUAGE_* $language
+         */
+        public function setLanguage($language)
+        {
+        }
+        /**
+         * @return self::LANGUAGE_*
+         */
+        public function getLanguage()
+        {
+        }
+        /**
+         * `Ruleset` name associated with the `Release` executable.
+         *
+         * @param string $rulesetName
+         */
+        public function setRulesetName($rulesetName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRulesetName()
+        {
+        }
+        /**
+         * Optional, indicates the freshness of the result. The response is guaranteed
+         * to be the latest within an interval up to the sync_time (inclusive).
+         *
+         * @param string $syncTime
+         */
+        public function setSyncTime($syncTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSyncTime()
+        {
+        }
+        /**
+         * Timestamp for the most recent `Release.update_time`.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\FirebaseRules\GetReleaseExecutableResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExecutable()
-    {
-    }
-    /**
-     * The Rules runtime version of the executable.
-     *
-     * Accepted values: RELEASE_EXECUTABLE_VERSION_UNSPECIFIED,
-     * FIREBASE_RULES_EXECUTABLE_V1, FIREBASE_RULES_EXECUTABLE_V2
-     *
-     * @param self::EXECUTABLE_VERSION_* $executableVersion
-     */
-    public function setExecutableVersion($executableVersion)
-    {
-    }
-    /**
-     * @return self::EXECUTABLE_VERSION_*
-     */
-    public function getExecutableVersion()
-    {
-    }
-    /**
-     * `Language` used to generate the executable bytes.
-     *
-     * Accepted values: LANGUAGE_UNSPECIFIED, FIREBASE_RULES, EVENT_FLOW_TRIGGERS
-     *
-     * @param self::LANGUAGE_* $language
-     */
-    public function setLanguage($language)
-    {
-    }
-    /**
-     * @return self::LANGUAGE_*
-     */
-    public function getLanguage()
-    {
-    }
-    /**
-     * `Ruleset` name associated with the `Release` executable.
-     *
-     * @param string $rulesetName
-     */
-    public function setRulesetName($rulesetName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRulesetName()
-    {
-    }
-    /**
-     * Optional, indicates the freshness of the result. The response is guaranteed
-     * to be the latest within an interval up to the sync_time (inclusive).
-     *
-     * @param string $syncTime
-     */
-    public function setSyncTime($syncTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSyncTime()
-    {
-    }
-    /**
-     * Timestamp for the most recent `Release.update_time`.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_FirebaseRules_GetReleaseExecutableResponse extends \Google\Service\FirebaseRules\GetReleaseExecutableResponse
     {
     }
 }

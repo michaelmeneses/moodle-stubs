@@ -21,35 +21,44 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BinaryAuthorization;
-
-class AttestationSource extends \Google\Collection
-{
-    protected $collection_key = 'containerAnalysisAttestationProjects';
-    /**
-     * The IDs of the Google Cloud projects that store the SLSA attestations as
-     * Container Analysis Occurrences, in the format `projects/[PROJECT_ID]`.
-     * Maximum number of `container_analysis_attestation_projects` allowed in each
-     * `AttestationSource` is 10.
-     *
-     * @var string[]
-     */
-    public $containerAnalysisAttestationProjects;
-    /**
-     * The IDs of the Google Cloud projects that store the SLSA attestations as
-     * Container Analysis Occurrences, in the format `projects/[PROJECT_ID]`.
-     * Maximum number of `container_analysis_attestation_projects` allowed in each
-     * `AttestationSource` is 10.
-     *
-     * @param string[] $containerAnalysisAttestationProjects
-     */
-    public function setContainerAnalysisAttestationProjects($containerAnalysisAttestationProjects)
+namespace Google\Service\BinaryAuthorization {
+    class AttestationSource extends \Google\Collection
     {
+        protected $collection_key = 'containerAnalysisAttestationProjects';
+        /**
+         * The IDs of the Google Cloud projects that store the SLSA attestations as
+         * Container Analysis Occurrences, in the format `projects/[PROJECT_ID]`.
+         * Maximum number of `container_analysis_attestation_projects` allowed in each
+         * `AttestationSource` is 10.
+         *
+         * @var string[]
+         */
+        public $containerAnalysisAttestationProjects;
+        /**
+         * The IDs of the Google Cloud projects that store the SLSA attestations as
+         * Container Analysis Occurrences, in the format `projects/[PROJECT_ID]`.
+         * Maximum number of `container_analysis_attestation_projects` allowed in each
+         * `AttestationSource` is 10.
+         *
+         * @param string[] $containerAnalysisAttestationProjects
+         */
+        public function setContainerAnalysisAttestationProjects($containerAnalysisAttestationProjects)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getContainerAnalysisAttestationProjects()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\BinaryAuthorization\AttestationSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContainerAnalysisAttestationProjects()
+    class Google_Service_BinaryAuthorization_AttestationSource extends \Google\Service\BinaryAuthorization\AttestationSource
     {
     }
 }

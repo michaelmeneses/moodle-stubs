@@ -21,168 +21,177 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0CommonSearchAds360ExpandedTextAdInfo extends \Google\Model
-{
-    /**
-     * The tracking id of the ad.
-     *
-     * @var string
-     */
-    public $adTrackingId;
-    /**
-     * The first line of the ad's description.
-     *
-     * @var string
-     */
-    public $description1;
-    /**
-     * The second line of the ad's description.
-     *
-     * @var string
-     */
-    public $description2;
-    /**
-     * The headline of the ad.
-     *
-     * @var string
-     */
-    public $headline;
-    /**
-     * The second headline of the ad.
-     *
-     * @var string
-     */
-    public $headline2;
-    /**
-     * The third headline of the ad.
-     *
-     * @var string
-     */
-    public $headline3;
-    /**
-     * Text appended to the auto-generated visible URL with a delimiter.
-     *
-     * @var string
-     */
-    public $path1;
-    /**
-     * Text appended to path1 with a delimiter.
-     *
-     * @var string
-     */
-    public $path2;
-    /**
-     * The tracking id of the ad.
-     *
-     * @param string $adTrackingId
-     */
-    public function setAdTrackingId($adTrackingId)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0CommonSearchAds360ExpandedTextAdInfo extends \Google\Model
     {
+        /**
+         * The tracking id of the ad.
+         *
+         * @var string
+         */
+        public $adTrackingId;
+        /**
+         * The first line of the ad's description.
+         *
+         * @var string
+         */
+        public $description1;
+        /**
+         * The second line of the ad's description.
+         *
+         * @var string
+         */
+        public $description2;
+        /**
+         * The headline of the ad.
+         *
+         * @var string
+         */
+        public $headline;
+        /**
+         * The second headline of the ad.
+         *
+         * @var string
+         */
+        public $headline2;
+        /**
+         * The third headline of the ad.
+         *
+         * @var string
+         */
+        public $headline3;
+        /**
+         * Text appended to the auto-generated visible URL with a delimiter.
+         *
+         * @var string
+         */
+        public $path1;
+        /**
+         * Text appended to path1 with a delimiter.
+         *
+         * @var string
+         */
+        public $path2;
+        /**
+         * The tracking id of the ad.
+         *
+         * @param string $adTrackingId
+         */
+        public function setAdTrackingId($adTrackingId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdTrackingId()
+        {
+        }
+        /**
+         * The first line of the ad's description.
+         *
+         * @param string $description1
+         */
+        public function setDescription1($description1)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription1()
+        {
+        }
+        /**
+         * The second line of the ad's description.
+         *
+         * @param string $description2
+         */
+        public function setDescription2($description2)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription2()
+        {
+        }
+        /**
+         * The headline of the ad.
+         *
+         * @param string $headline
+         */
+        public function setHeadline($headline)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHeadline()
+        {
+        }
+        /**
+         * The second headline of the ad.
+         *
+         * @param string $headline2
+         */
+        public function setHeadline2($headline2)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHeadline2()
+        {
+        }
+        /**
+         * The third headline of the ad.
+         *
+         * @param string $headline3
+         */
+        public function setHeadline3($headline3)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHeadline3()
+        {
+        }
+        /**
+         * Text appended to the auto-generated visible URL with a delimiter.
+         *
+         * @param string $path1
+         */
+        public function setPath1($path1)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath1()
+        {
+        }
+        /**
+         * Text appended to path1 with a delimiter.
+         *
+         * @param string $path2
+         */
+        public function setPath2($path2)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath2()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0CommonSearchAds360ExpandedTextAdInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdTrackingId()
-    {
-    }
-    /**
-     * The first line of the ad's description.
-     *
-     * @param string $description1
-     */
-    public function setDescription1($description1)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription1()
-    {
-    }
-    /**
-     * The second line of the ad's description.
-     *
-     * @param string $description2
-     */
-    public function setDescription2($description2)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription2()
-    {
-    }
-    /**
-     * The headline of the ad.
-     *
-     * @param string $headline
-     */
-    public function setHeadline($headline)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHeadline()
-    {
-    }
-    /**
-     * The second headline of the ad.
-     *
-     * @param string $headline2
-     */
-    public function setHeadline2($headline2)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHeadline2()
-    {
-    }
-    /**
-     * The third headline of the ad.
-     *
-     * @param string $headline3
-     */
-    public function setHeadline3($headline3)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHeadline3()
-    {
-    }
-    /**
-     * Text appended to the auto-generated visible URL with a delimiter.
-     *
-     * @param string $path1
-     */
-    public function setPath1($path1)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPath1()
-    {
-    }
-    /**
-     * Text appended to path1 with a delimiter.
-     *
-     * @param string $path2
-     */
-    public function setPath2($path2)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPath2()
+    class Google_Service_SA360_GoogleAdsSearchads360V0CommonSearchAds360ExpandedTextAdInfo extends \Google\Service\SA360\GoogleAdsSearchads360V0CommonSearchAds360ExpandedTextAdInfo
     {
     }
 }

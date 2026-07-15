@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveLabels;
-
-class GoogleAppsDriveLabelsV2FieldAppliedCapabilities extends \Google\Model
-{
-    /**
-     * Whether the user can read related applied metadata on items.
-     *
-     * @var bool
-     */
-    public $canRead;
-    /**
-     * Whether the user can search for Drive items referencing this field.
-     *
-     * @var bool
-     */
-    public $canSearch;
-    /**
-     * Whether the user can set this field on Drive items.
-     *
-     * @var bool
-     */
-    public $canWrite;
-    /**
-     * Whether the user can read related applied metadata on items.
-     *
-     * @param bool $canRead
-     */
-    public function setCanRead($canRead)
+namespace Google\Service\DriveLabels {
+    class GoogleAppsDriveLabelsV2FieldAppliedCapabilities extends \Google\Model
     {
+        /**
+         * Whether the user can read related applied metadata on items.
+         *
+         * @var bool
+         */
+        public $canRead;
+        /**
+         * Whether the user can search for Drive items referencing this field.
+         *
+         * @var bool
+         */
+        public $canSearch;
+        /**
+         * Whether the user can set this field on Drive items.
+         *
+         * @var bool
+         */
+        public $canWrite;
+        /**
+         * Whether the user can read related applied metadata on items.
+         *
+         * @param bool $canRead
+         */
+        public function setCanRead($canRead)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanRead()
+        {
+        }
+        /**
+         * Whether the user can search for Drive items referencing this field.
+         *
+         * @param bool $canSearch
+         */
+        public function setCanSearch($canSearch)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanSearch()
+        {
+        }
+        /**
+         * Whether the user can set this field on Drive items.
+         *
+         * @param bool $canWrite
+         */
+        public function setCanWrite($canWrite)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanWrite()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2FieldAppliedCapabilities registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCanRead()
-    {
-    }
-    /**
-     * Whether the user can search for Drive items referencing this field.
-     *
-     * @param bool $canSearch
-     */
-    public function setCanSearch($canSearch)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanSearch()
-    {
-    }
-    /**
-     * Whether the user can set this field on Drive items.
-     *
-     * @param bool $canWrite
-     */
-    public function setCanWrite($canWrite)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanWrite()
+    class Google_Service_DriveLabels_GoogleAppsDriveLabelsV2FieldAppliedCapabilities extends \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2FieldAppliedCapabilities
     {
     }
 }

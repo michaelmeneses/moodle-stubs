@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2ExportAnalyticsMetricsRequest extends \Google\Model
-{
-    /**
-     * A filtering expression to specify restrictions on returned metrics. The
-     * expression is a sequence of terms. Each term applies a restriction to the
-     * returned metrics. Use this expression to restrict results to a specific
-     * time range. Currently we expect only one types of fields: * `timestamp`:
-     * This can be specified twice, once with a less than operator and once with a
-     * greater than operator. The `timestamp` restriction should result in one,
-     * contiguous, valid, `timestamp` range. Some examples of valid filters
-     * expressions: * Example 1: `timestamp > "2012-04-23T18:25:43.511Z" timestamp
-     * < "2012-04-23T18:30:43.511Z"` * Example 2: `timestamp >
-     * "2012-04-23T18:25:43.511Z"`
-     *
-     * @var string
-     */
-    public $filter;
-    protected $outputConfigType = GoogleCloudRetailV2OutputConfig::class;
-    protected $outputConfigDataType = '';
-    /**
-     * A filtering expression to specify restrictions on returned metrics. The
-     * expression is a sequence of terms. Each term applies a restriction to the
-     * returned metrics. Use this expression to restrict results to a specific
-     * time range. Currently we expect only one types of fields: * `timestamp`:
-     * This can be specified twice, once with a less than operator and once with a
-     * greater than operator. The `timestamp` restriction should result in one,
-     * contiguous, valid, `timestamp` range. Some examples of valid filters
-     * expressions: * Example 1: `timestamp > "2012-04-23T18:25:43.511Z" timestamp
-     * < "2012-04-23T18:30:43.511Z"` * Example 2: `timestamp >
-     * "2012-04-23T18:25:43.511Z"`
-     *
-     * @param string $filter
-     */
-    public function setFilter($filter)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2ExportAnalyticsMetricsRequest extends \Google\Model
     {
+        /**
+         * A filtering expression to specify restrictions on returned metrics. The
+         * expression is a sequence of terms. Each term applies a restriction to the
+         * returned metrics. Use this expression to restrict results to a specific
+         * time range. Currently we expect only one types of fields: * `timestamp`:
+         * This can be specified twice, once with a less than operator and once with a
+         * greater than operator. The `timestamp` restriction should result in one,
+         * contiguous, valid, `timestamp` range. Some examples of valid filters
+         * expressions: * Example 1: `timestamp > "2012-04-23T18:25:43.511Z" timestamp
+         * < "2012-04-23T18:30:43.511Z"` * Example 2: `timestamp >
+         * "2012-04-23T18:25:43.511Z"`
+         *
+         * @var string
+         */
+        public $filter;
+        protected $outputConfigType = GoogleCloudRetailV2OutputConfig::class;
+        protected $outputConfigDataType = '';
+        /**
+         * A filtering expression to specify restrictions on returned metrics. The
+         * expression is a sequence of terms. Each term applies a restriction to the
+         * returned metrics. Use this expression to restrict results to a specific
+         * time range. Currently we expect only one types of fields: * `timestamp`:
+         * This can be specified twice, once with a less than operator and once with a
+         * greater than operator. The `timestamp` restriction should result in one,
+         * contiguous, valid, `timestamp` range. Some examples of valid filters
+         * expressions: * Example 1: `timestamp > "2012-04-23T18:25:43.511Z" timestamp
+         * < "2012-04-23T18:30:43.511Z"` * Example 2: `timestamp >
+         * "2012-04-23T18:25:43.511Z"`
+         *
+         * @param string $filter
+         */
+        public function setFilter($filter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilter()
+        {
+        }
+        /**
+         * Required. The output location of the data.
+         *
+         * @param GoogleCloudRetailV2OutputConfig $outputConfig
+         */
+        public function setOutputConfig(GoogleCloudRetailV2OutputConfig $outputConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2OutputConfig
+         */
+        public function getOutputConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2ExportAnalyticsMetricsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFilter()
-    {
-    }
-    /**
-     * Required. The output location of the data.
-     *
-     * @param GoogleCloudRetailV2OutputConfig $outputConfig
-     */
-    public function setOutputConfig(GoogleCloudRetailV2OutputConfig $outputConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudRetailV2OutputConfig
-     */
-    public function getOutputConfig()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2ExportAnalyticsMetricsRequest extends \Google\Service\CloudRetail\GoogleCloudRetailV2ExportAnalyticsMetricsRequest
     {
     }
 }

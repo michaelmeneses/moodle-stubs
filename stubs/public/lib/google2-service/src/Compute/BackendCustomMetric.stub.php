@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class BackendCustomMetric extends \Google\Model
-{
-    /**
-     * If true, the metric data is collected and reported to Cloud Monitoring, but
-     * is not used for load balancing.
-     *
-     * @var bool
-     */
-    public $dryRun;
-    /**
-     * Optional parameter to define a target utilization for the Custom Metrics
-     * balancing mode. The valid range is [0.0, 1.0].
-     *
-     * @var float
-     */
-    public $maxUtilization;
-    /**
-     * Name of a custom utilization signal. The name must be 1-64 characters long
-     * and match the regular expression `[a-z]([-_.a-z0-9]*[a-z0-9])?` which means
-     * that the first character must be a lowercase letter, and all following
-     * characters must be a dash, period, underscore, lowercase letter, or digit,
-     * except the last character, which cannot be a dash, period, or underscore.
-     * For usage guidelines, see Custom Metrics balancing mode. This field can
-     * only be used for a global or regional backend service with the
-     * loadBalancingScheme set to EXTERNAL_MANAGED,INTERNAL_MANAGED
-     * INTERNAL_SELF_MANAGED.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * If true, the metric data is collected and reported to Cloud Monitoring, but
-     * is not used for load balancing.
-     *
-     * @param bool $dryRun
-     */
-    public function setDryRun($dryRun)
+namespace Google\Service\Compute {
+    class BackendCustomMetric extends \Google\Model
     {
+        /**
+         * If true, the metric data is collected and reported to Cloud Monitoring, but
+         * is not used for load balancing.
+         *
+         * @var bool
+         */
+        public $dryRun;
+        /**
+         * Optional parameter to define a target utilization for the Custom Metrics
+         * balancing mode. The valid range is [0.0, 1.0].
+         *
+         * @var float
+         */
+        public $maxUtilization;
+        /**
+         * Name of a custom utilization signal. The name must be 1-64 characters long
+         * and match the regular expression `[a-z]([-_.a-z0-9]*[a-z0-9])?` which means
+         * that the first character must be a lowercase letter, and all following
+         * characters must be a dash, period, underscore, lowercase letter, or digit,
+         * except the last character, which cannot be a dash, period, or underscore.
+         * For usage guidelines, see Custom Metrics balancing mode. This field can
+         * only be used for a global or regional backend service with the
+         * loadBalancingScheme set to EXTERNAL_MANAGED,INTERNAL_MANAGED
+         * INTERNAL_SELF_MANAGED.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * If true, the metric data is collected and reported to Cloud Monitoring, but
+         * is not used for load balancing.
+         *
+         * @param bool $dryRun
+         */
+        public function setDryRun($dryRun)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDryRun()
+        {
+        }
+        /**
+         * Optional parameter to define a target utilization for the Custom Metrics
+         * balancing mode. The valid range is [0.0, 1.0].
+         *
+         * @param float $maxUtilization
+         */
+        public function setMaxUtilization($maxUtilization)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getMaxUtilization()
+        {
+        }
+        /**
+         * Name of a custom utilization signal. The name must be 1-64 characters long
+         * and match the regular expression `[a-z]([-_.a-z0-9]*[a-z0-9])?` which means
+         * that the first character must be a lowercase letter, and all following
+         * characters must be a dash, period, underscore, lowercase letter, or digit,
+         * except the last character, which cannot be a dash, period, or underscore.
+         * For usage guidelines, see Custom Metrics balancing mode. This field can
+         * only be used for a global or regional backend service with the
+         * loadBalancingScheme set to EXTERNAL_MANAGED,INTERNAL_MANAGED
+         * INTERNAL_SELF_MANAGED.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Compute\BackendCustomMetric registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDryRun()
-    {
-    }
-    /**
-     * Optional parameter to define a target utilization for the Custom Metrics
-     * balancing mode. The valid range is [0.0, 1.0].
-     *
-     * @param float $maxUtilization
-     */
-    public function setMaxUtilization($maxUtilization)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getMaxUtilization()
-    {
-    }
-    /**
-     * Name of a custom utilization signal. The name must be 1-64 characters long
-     * and match the regular expression `[a-z]([-_.a-z0-9]*[a-z0-9])?` which means
-     * that the first character must be a lowercase letter, and all following
-     * characters must be a dash, period, underscore, lowercase letter, or digit,
-     * except the last character, which cannot be a dash, period, or underscore.
-     * For usage guidelines, see Custom Metrics balancing mode. This field can
-     * only be used for a global or regional backend service with the
-     * loadBalancingScheme set to EXTERNAL_MANAGED,INTERNAL_MANAGED
-     * INTERNAL_SELF_MANAGED.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Compute_BackendCustomMetric extends \Google\Service\Compute\BackendCustomMetric
     {
     }
 }

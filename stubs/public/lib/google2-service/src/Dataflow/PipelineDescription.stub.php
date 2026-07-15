@@ -21,77 +21,86 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class PipelineDescription extends \Google\Collection
-{
-    protected $collection_key = 'originalPipelineTransform';
-    protected $displayDataType = DisplayData::class;
-    protected $displayDataDataType = 'array';
-    protected $executionPipelineStageType = ExecutionStageSummary::class;
-    protected $executionPipelineStageDataType = 'array';
-    protected $originalPipelineTransformType = TransformSummary::class;
-    protected $originalPipelineTransformDataType = 'array';
-    /**
-     * A hash value of the submitted pipeline portable graph step names if exists.
-     *
-     * @var string
-     */
-    public $stepNamesHash;
-    /**
-     * Pipeline level display data.
-     *
-     * @param DisplayData[] $displayData
-     */
-    public function setDisplayData($displayData)
+namespace Google\Service\Dataflow {
+    class PipelineDescription extends \Google\Collection
     {
+        protected $collection_key = 'originalPipelineTransform';
+        protected $displayDataType = DisplayData::class;
+        protected $displayDataDataType = 'array';
+        protected $executionPipelineStageType = ExecutionStageSummary::class;
+        protected $executionPipelineStageDataType = 'array';
+        protected $originalPipelineTransformType = TransformSummary::class;
+        protected $originalPipelineTransformDataType = 'array';
+        /**
+         * A hash value of the submitted pipeline portable graph step names if exists.
+         *
+         * @var string
+         */
+        public $stepNamesHash;
+        /**
+         * Pipeline level display data.
+         *
+         * @param DisplayData[] $displayData
+         */
+        public function setDisplayData($displayData)
+        {
+        }
+        /**
+         * @return DisplayData[]
+         */
+        public function getDisplayData()
+        {
+        }
+        /**
+         * Description of each stage of execution of the pipeline.
+         *
+         * @param ExecutionStageSummary[] $executionPipelineStage
+         */
+        public function setExecutionPipelineStage($executionPipelineStage)
+        {
+        }
+        /**
+         * @return ExecutionStageSummary[]
+         */
+        public function getExecutionPipelineStage()
+        {
+        }
+        /**
+         * Description of each transform in the pipeline and collections between them.
+         *
+         * @param TransformSummary[] $originalPipelineTransform
+         */
+        public function setOriginalPipelineTransform($originalPipelineTransform)
+        {
+        }
+        /**
+         * @return TransformSummary[]
+         */
+        public function getOriginalPipelineTransform()
+        {
+        }
+        /**
+         * A hash value of the submitted pipeline portable graph step names if exists.
+         *
+         * @param string $stepNamesHash
+         */
+        public function setStepNamesHash($stepNamesHash)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStepNamesHash()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DisplayData[]
+     * Runtime class alias of \Google\Service\Dataflow\PipelineDescription registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayData()
-    {
-    }
-    /**
-     * Description of each stage of execution of the pipeline.
-     *
-     * @param ExecutionStageSummary[] $executionPipelineStage
-     */
-    public function setExecutionPipelineStage($executionPipelineStage)
-    {
-    }
-    /**
-     * @return ExecutionStageSummary[]
-     */
-    public function getExecutionPipelineStage()
-    {
-    }
-    /**
-     * Description of each transform in the pipeline and collections between them.
-     *
-     * @param TransformSummary[] $originalPipelineTransform
-     */
-    public function setOriginalPipelineTransform($originalPipelineTransform)
-    {
-    }
-    /**
-     * @return TransformSummary[]
-     */
-    public function getOriginalPipelineTransform()
-    {
-    }
-    /**
-     * A hash value of the submitted pipeline portable graph step names if exists.
-     *
-     * @param string $stepNamesHash
-     */
-    public function setStepNamesHash($stepNamesHash)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStepNamesHash()
+    class Google_Service_Dataflow_PipelineDescription extends \Google\Service\Dataflow\PipelineDescription
     {
     }
 }

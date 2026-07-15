@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceUsage;
-
-class AddEnableRulesResponse extends \Google\Collection
-{
-    protected $collection_key = 'addedValues';
-    /**
-     * The values added to the parent consumer policy.
-     *
-     * @var string[]
-     */
-    public $addedValues;
-    /**
-     * The parent consumer policy. It can be
-     * `projects/12345/consumerPolicies/default`, or
-     * `folders/12345/consumerPolicies/default`, or
-     * `organizations/12345/consumerPolicies/default`.
-     *
-     * @var string
-     */
-    public $parent;
-    /**
-     * The values added to the parent consumer policy.
-     *
-     * @param string[] $addedValues
-     */
-    public function setAddedValues($addedValues)
+namespace Google\Service\ServiceUsage {
+    class AddEnableRulesResponse extends \Google\Collection
     {
+        protected $collection_key = 'addedValues';
+        /**
+         * The values added to the parent consumer policy.
+         *
+         * @var string[]
+         */
+        public $addedValues;
+        /**
+         * The parent consumer policy. It can be
+         * `projects/12345/consumerPolicies/default`, or
+         * `folders/12345/consumerPolicies/default`, or
+         * `organizations/12345/consumerPolicies/default`.
+         *
+         * @var string
+         */
+        public $parent;
+        /**
+         * The values added to the parent consumer policy.
+         *
+         * @param string[] $addedValues
+         */
+        public function setAddedValues($addedValues)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAddedValues()
+        {
+        }
+        /**
+         * The parent consumer policy. It can be
+         * `projects/12345/consumerPolicies/default`, or
+         * `folders/12345/consumerPolicies/default`, or
+         * `organizations/12345/consumerPolicies/default`.
+         *
+         * @param string $parent
+         */
+        public function setParent($parent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\ServiceUsage\AddEnableRulesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddedValues()
-    {
-    }
-    /**
-     * The parent consumer policy. It can be
-     * `projects/12345/consumerPolicies/default`, or
-     * `folders/12345/consumerPolicies/default`, or
-     * `organizations/12345/consumerPolicies/default`.
-     *
-     * @param string $parent
-     */
-    public function setParent($parent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParent()
+    class Google_Service_ServiceUsage_AddEnableRulesResponse extends \Google\Service\ServiceUsage\AddEnableRulesResponse
     {
     }
 }

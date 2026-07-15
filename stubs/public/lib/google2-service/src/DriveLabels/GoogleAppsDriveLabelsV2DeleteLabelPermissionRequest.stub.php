@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveLabels;
-
-class GoogleAppsDriveLabelsV2DeleteLabelPermissionRequest extends \Google\Model
-{
-    /**
-     * Required. Label permission resource name.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Set to `true` in order to use the user's admin credentials. The server will
-     * verify the user is an admin for the label before allowing access.
-     *
-     * @var bool
-     */
-    public $useAdminAccess;
-    /**
-     * Required. Label permission resource name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\DriveLabels {
+    class GoogleAppsDriveLabelsV2DeleteLabelPermissionRequest extends \Google\Model
     {
+        /**
+         * Required. Label permission resource name.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Set to `true` in order to use the user's admin credentials. The server will
+         * verify the user is an admin for the label before allowing access.
+         *
+         * @var bool
+         */
+        public $useAdminAccess;
+        /**
+         * Required. Label permission resource name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Set to `true` in order to use the user's admin credentials. The server will
+         * verify the user is an admin for the label before allowing access.
+         *
+         * @param bool $useAdminAccess
+         */
+        public function setUseAdminAccess($useAdminAccess)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUseAdminAccess()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2DeleteLabelPermissionRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Set to `true` in order to use the user's admin credentials. The server will
-     * verify the user is an admin for the label before allowing access.
-     *
-     * @param bool $useAdminAccess
-     */
-    public function setUseAdminAccess($useAdminAccess)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUseAdminAccess()
+    class Google_Service_DriveLabels_GoogleAppsDriveLabelsV2DeleteLabelPermissionRequest extends \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2DeleteLabelPermissionRequest
     {
     }
 }

@@ -21,136 +21,145 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class PasteDataRequest extends \Google\Model
-{
-    /**
-     * Paste values, formulas, formats, and merges.
-     */
-    public const TYPE_PASTE_NORMAL = 'PASTE_NORMAL';
-    /**
-     * Paste the values ONLY without formats, formulas, or merges.
-     */
-    public const TYPE_PASTE_VALUES = 'PASTE_VALUES';
-    /**
-     * Paste the format and data validation only.
-     */
-    public const TYPE_PASTE_FORMAT = 'PASTE_FORMAT';
-    /**
-     * Like `PASTE_NORMAL` but without borders.
-     */
-    public const TYPE_PASTE_NO_BORDERS = 'PASTE_NO_BORDERS';
-    /**
-     * Paste the formulas only.
-     */
-    public const TYPE_PASTE_FORMULA = 'PASTE_FORMULA';
-    /**
-     * Paste the data validation only.
-     */
-    public const TYPE_PASTE_DATA_VALIDATION = 'PASTE_DATA_VALIDATION';
-    /**
-     * Paste the conditional formatting rules only.
-     */
-    public const TYPE_PASTE_CONDITIONAL_FORMATTING = 'PASTE_CONDITIONAL_FORMATTING';
-    protected $coordinateType = GridCoordinate::class;
-    protected $coordinateDataType = '';
-    /**
-     * The data to insert.
-     *
-     * @var string
-     */
-    public $data;
-    /**
-     * The delimiter in the data.
-     *
-     * @var string
-     */
-    public $delimiter;
-    /**
-     * True if the data is HTML.
-     *
-     * @var bool
-     */
-    public $html;
-    /**
-     * How the data should be pasted.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The coordinate at which the data should start being inserted.
-     *
-     * @param GridCoordinate $coordinate
-     */
-    public function setCoordinate(GridCoordinate $coordinate)
+namespace Google\Service\Sheets {
+    class PasteDataRequest extends \Google\Model
     {
+        /**
+         * Paste values, formulas, formats, and merges.
+         */
+        public const TYPE_PASTE_NORMAL = 'PASTE_NORMAL';
+        /**
+         * Paste the values ONLY without formats, formulas, or merges.
+         */
+        public const TYPE_PASTE_VALUES = 'PASTE_VALUES';
+        /**
+         * Paste the format and data validation only.
+         */
+        public const TYPE_PASTE_FORMAT = 'PASTE_FORMAT';
+        /**
+         * Like `PASTE_NORMAL` but without borders.
+         */
+        public const TYPE_PASTE_NO_BORDERS = 'PASTE_NO_BORDERS';
+        /**
+         * Paste the formulas only.
+         */
+        public const TYPE_PASTE_FORMULA = 'PASTE_FORMULA';
+        /**
+         * Paste the data validation only.
+         */
+        public const TYPE_PASTE_DATA_VALIDATION = 'PASTE_DATA_VALIDATION';
+        /**
+         * Paste the conditional formatting rules only.
+         */
+        public const TYPE_PASTE_CONDITIONAL_FORMATTING = 'PASTE_CONDITIONAL_FORMATTING';
+        protected $coordinateType = GridCoordinate::class;
+        protected $coordinateDataType = '';
+        /**
+         * The data to insert.
+         *
+         * @var string
+         */
+        public $data;
+        /**
+         * The delimiter in the data.
+         *
+         * @var string
+         */
+        public $delimiter;
+        /**
+         * True if the data is HTML.
+         *
+         * @var bool
+         */
+        public $html;
+        /**
+         * How the data should be pasted.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The coordinate at which the data should start being inserted.
+         *
+         * @param GridCoordinate $coordinate
+         */
+        public function setCoordinate(GridCoordinate $coordinate)
+        {
+        }
+        /**
+         * @return GridCoordinate
+         */
+        public function getCoordinate()
+        {
+        }
+        /**
+         * The data to insert.
+         *
+         * @param string $data
+         */
+        public function setData($data)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getData()
+        {
+        }
+        /**
+         * The delimiter in the data.
+         *
+         * @param string $delimiter
+         */
+        public function setDelimiter($delimiter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDelimiter()
+        {
+        }
+        /**
+         * True if the data is HTML.
+         *
+         * @param bool $html
+         */
+        public function setHtml($html)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getHtml()
+        {
+        }
+        /**
+         * How the data should be pasted.
+         *
+         * Accepted values: PASTE_NORMAL, PASTE_VALUES, PASTE_FORMAT,
+         * PASTE_NO_BORDERS, PASTE_FORMULA, PASTE_DATA_VALIDATION,
+         * PASTE_CONDITIONAL_FORMATTING
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GridCoordinate
+     * Runtime class alias of \Google\Service\Sheets\PasteDataRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCoordinate()
-    {
-    }
-    /**
-     * The data to insert.
-     *
-     * @param string $data
-     */
-    public function setData($data)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getData()
-    {
-    }
-    /**
-     * The delimiter in the data.
-     *
-     * @param string $delimiter
-     */
-    public function setDelimiter($delimiter)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDelimiter()
-    {
-    }
-    /**
-     * True if the data is HTML.
-     *
-     * @param bool $html
-     */
-    public function setHtml($html)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getHtml()
-    {
-    }
-    /**
-     * How the data should be pasted.
-     *
-     * Accepted values: PASTE_NORMAL, PASTE_VALUES, PASTE_FORMAT,
-     * PASTE_NO_BORDERS, PASTE_FORMULA, PASTE_DATA_VALIDATION,
-     * PASTE_CONDITIONAL_FORMATTING
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_Sheets_PasteDataRequest extends \Google\Service\Sheets\PasteDataRequest
     {
     }
 }

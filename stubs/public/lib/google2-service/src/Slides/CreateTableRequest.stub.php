@@ -21,100 +21,109 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides;
-
-class CreateTableRequest extends \Google\Model
-{
-    /**
-     * Number of columns in the table.
-     *
-     * @var int
-     */
-    public $columns;
-    protected $elementPropertiesType = PageElementProperties::class;
-    protected $elementPropertiesDataType = '';
-    /**
-     * A user-supplied object ID. If you specify an ID, it must be unique among
-     * all pages and page elements in the presentation. The ID must start with an
-     * alphanumeric character or an underscore (matches regex `[a-zA-Z0-9_]`);
-     * remaining characters may include those as well as a hyphen or colon
-     * (matches regex `[a-zA-Z0-9_-:]`). The length of the ID must not be less
-     * than 5 or greater than 50. If you don't specify an ID, a unique one is
-     * generated.
-     *
-     * @var string
-     */
-    public $objectId;
-    /**
-     * Number of rows in the table.
-     *
-     * @var int
-     */
-    public $rows;
-    /**
-     * Number of columns in the table.
-     *
-     * @param int $columns
-     */
-    public function setColumns($columns)
+namespace Google\Service\Slides {
+    class CreateTableRequest extends \Google\Model
     {
+        /**
+         * Number of columns in the table.
+         *
+         * @var int
+         */
+        public $columns;
+        protected $elementPropertiesType = PageElementProperties::class;
+        protected $elementPropertiesDataType = '';
+        /**
+         * A user-supplied object ID. If you specify an ID, it must be unique among
+         * all pages and page elements in the presentation. The ID must start with an
+         * alphanumeric character or an underscore (matches regex `[a-zA-Z0-9_]`);
+         * remaining characters may include those as well as a hyphen or colon
+         * (matches regex `[a-zA-Z0-9_-:]`). The length of the ID must not be less
+         * than 5 or greater than 50. If you don't specify an ID, a unique one is
+         * generated.
+         *
+         * @var string
+         */
+        public $objectId;
+        /**
+         * Number of rows in the table.
+         *
+         * @var int
+         */
+        public $rows;
+        /**
+         * Number of columns in the table.
+         *
+         * @param int $columns
+         */
+        public function setColumns($columns)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getColumns()
+        {
+        }
+        /**
+         * The element properties for the table. The table will be created at the
+         * provided size, subject to a minimum size. If no size is provided, the table
+         * will be automatically sized. Table transforms must have a scale of 1 and no
+         * shear components. If no transform is provided, the table will be centered
+         * on the page.
+         *
+         * @param PageElementProperties $elementProperties
+         */
+        public function setElementProperties(PageElementProperties $elementProperties)
+        {
+        }
+        /**
+         * @return PageElementProperties
+         */
+        public function getElementProperties()
+        {
+        }
+        /**
+         * A user-supplied object ID. If you specify an ID, it must be unique among
+         * all pages and page elements in the presentation. The ID must start with an
+         * alphanumeric character or an underscore (matches regex `[a-zA-Z0-9_]`);
+         * remaining characters may include those as well as a hyphen or colon
+         * (matches regex `[a-zA-Z0-9_-:]`). The length of the ID must not be less
+         * than 5 or greater than 50. If you don't specify an ID, a unique one is
+         * generated.
+         *
+         * @param string $objectId
+         */
+        public function setObjectId($objectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectId()
+        {
+        }
+        /**
+         * Number of rows in the table.
+         *
+         * @param int $rows
+         */
+        public function setRows($rows)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRows()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Slides\CreateTableRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumns()
-    {
-    }
-    /**
-     * The element properties for the table. The table will be created at the
-     * provided size, subject to a minimum size. If no size is provided, the table
-     * will be automatically sized. Table transforms must have a scale of 1 and no
-     * shear components. If no transform is provided, the table will be centered
-     * on the page.
-     *
-     * @param PageElementProperties $elementProperties
-     */
-    public function setElementProperties(PageElementProperties $elementProperties)
-    {
-    }
-    /**
-     * @return PageElementProperties
-     */
-    public function getElementProperties()
-    {
-    }
-    /**
-     * A user-supplied object ID. If you specify an ID, it must be unique among
-     * all pages and page elements in the presentation. The ID must start with an
-     * alphanumeric character or an underscore (matches regex `[a-zA-Z0-9_]`);
-     * remaining characters may include those as well as a hyphen or colon
-     * (matches regex `[a-zA-Z0-9_-:]`). The length of the ID must not be less
-     * than 5 or greater than 50. If you don't specify an ID, a unique one is
-     * generated.
-     *
-     * @param string $objectId
-     */
-    public function setObjectId($objectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObjectId()
-    {
-    }
-    /**
-     * Number of rows in the table.
-     *
-     * @param int $rows
-     */
-    public function setRows($rows)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getRows()
+    class Google_Service_Slides_CreateTableRequest extends \Google\Service\Slides\CreateTableRequest
     {
     }
 }

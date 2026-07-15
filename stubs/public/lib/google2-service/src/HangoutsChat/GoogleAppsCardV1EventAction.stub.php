@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class GoogleAppsCardV1EventAction extends \Google\Collection
-{
-    protected $collection_key = 'postEventTriggers';
-    /**
-     * The unique identifier of the ActionRule.
-     *
-     * @var string
-     */
-    public $actionRuleId;
-    protected $commonWidgetActionType = GoogleAppsCardV1CommonWidgetAction::class;
-    protected $commonWidgetActionDataType = '';
-    protected $postEventTriggersType = GoogleAppsCardV1Trigger::class;
-    protected $postEventTriggersDataType = 'array';
-    /**
-     * The unique identifier of the ActionRule.
-     *
-     * @param string $actionRuleId
-     */
-    public function setActionRuleId($actionRuleId)
+namespace Google\Service\HangoutsChat {
+    class GoogleAppsCardV1EventAction extends \Google\Collection
     {
+        protected $collection_key = 'postEventTriggers';
+        /**
+         * The unique identifier of the ActionRule.
+         *
+         * @var string
+         */
+        public $actionRuleId;
+        protected $commonWidgetActionType = GoogleAppsCardV1CommonWidgetAction::class;
+        protected $commonWidgetActionDataType = '';
+        protected $postEventTriggersType = GoogleAppsCardV1Trigger::class;
+        protected $postEventTriggersDataType = 'array';
+        /**
+         * The unique identifier of the ActionRule.
+         *
+         * @param string $actionRuleId
+         */
+        public function setActionRuleId($actionRuleId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getActionRuleId()
+        {
+        }
+        /**
+         * Common widget action.
+         *
+         * @param GoogleAppsCardV1CommonWidgetAction $commonWidgetAction
+         */
+        public function setCommonWidgetAction(GoogleAppsCardV1CommonWidgetAction $commonWidgetAction)
+        {
+        }
+        /**
+         * @return GoogleAppsCardV1CommonWidgetAction
+         */
+        public function getCommonWidgetAction()
+        {
+        }
+        /**
+         * The list of triggers that will be triggered after the EventAction is
+         * executed.
+         *
+         * @param GoogleAppsCardV1Trigger[] $postEventTriggers
+         */
+        public function setPostEventTriggers($postEventTriggers)
+        {
+        }
+        /**
+         * @return GoogleAppsCardV1Trigger[]
+         */
+        public function getPostEventTriggers()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\HangoutsChat\GoogleAppsCardV1EventAction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActionRuleId()
-    {
-    }
-    /**
-     * Common widget action.
-     *
-     * @param GoogleAppsCardV1CommonWidgetAction $commonWidgetAction
-     */
-    public function setCommonWidgetAction(GoogleAppsCardV1CommonWidgetAction $commonWidgetAction)
-    {
-    }
-    /**
-     * @return GoogleAppsCardV1CommonWidgetAction
-     */
-    public function getCommonWidgetAction()
-    {
-    }
-    /**
-     * The list of triggers that will be triggered after the EventAction is
-     * executed.
-     *
-     * @param GoogleAppsCardV1Trigger[] $postEventTriggers
-     */
-    public function setPostEventTriggers($postEventTriggers)
-    {
-    }
-    /**
-     * @return GoogleAppsCardV1Trigger[]
-     */
-    public function getPostEventTriggers()
+    class Google_Service_HangoutsChat_GoogleAppsCardV1EventAction extends \Google\Service\HangoutsChat\GoogleAppsCardV1EventAction
     {
     }
 }

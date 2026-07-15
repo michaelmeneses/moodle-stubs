@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ApiKeysService;
-
-class V2LookupKeyResponse extends \Google\Model
-{
-    /**
-     * The resource name of the API key. If the API key has been purged, resource
-     * name is empty.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The project that owns the key with the value specified in the request.
-     *
-     * @var string
-     */
-    public $parent;
-    /**
-     * The resource name of the API key. If the API key has been purged, resource
-     * name is empty.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\ApiKeysService {
+    class V2LookupKeyResponse extends \Google\Model
     {
+        /**
+         * The resource name of the API key. If the API key has been purged, resource
+         * name is empty.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The project that owns the key with the value specified in the request.
+         *
+         * @var string
+         */
+        public $parent;
+        /**
+         * The resource name of the API key. If the API key has been purged, resource
+         * name is empty.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The project that owns the key with the value specified in the request.
+         *
+         * @param string $parent
+         */
+        public function setParent($parent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ApiKeysService\V2LookupKeyResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * The project that owns the key with the value specified in the request.
-     *
-     * @param string $parent
-     */
-    public function setParent($parent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParent()
+    class Google_Service_ApiKeysService_V2LookupKeyResponse extends \Google\Service\ApiKeysService\V2LookupKeyResponse
     {
     }
 }

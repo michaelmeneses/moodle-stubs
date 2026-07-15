@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides;
-
-class TextRun extends \Google\Model
-{
-    /**
-     * The text of this run.
-     *
-     * @var string
-     */
-    public $content;
-    protected $styleType = TextStyle::class;
-    protected $styleDataType = '';
-    /**
-     * The text of this run.
-     *
-     * @param string $content
-     */
-    public function setContent($content)
+namespace Google\Service\Slides {
+    class TextRun extends \Google\Model
     {
+        /**
+         * The text of this run.
+         *
+         * @var string
+         */
+        public $content;
+        protected $styleType = TextStyle::class;
+        protected $styleDataType = '';
+        /**
+         * The text of this run.
+         *
+         * @param string $content
+         */
+        public function setContent($content)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContent()
+        {
+        }
+        /**
+         * The styling applied to this run.
+         *
+         * @param TextStyle $style
+         */
+        public function setStyle(TextStyle $style)
+        {
+        }
+        /**
+         * @return TextStyle
+         */
+        public function getStyle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Slides\TextRun registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContent()
-    {
-    }
-    /**
-     * The styling applied to this run.
-     *
-     * @param TextStyle $style
-     */
-    public function setStyle(TextStyle $style)
-    {
-    }
-    /**
-     * @return TextStyle
-     */
-    public function getStyle()
+    class Google_Service_Slides_TextRun extends \Google\Service\Slides\TextRun
     {
     }
 }

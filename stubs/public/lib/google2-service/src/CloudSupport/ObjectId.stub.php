@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSupport;
-
-class ObjectId extends \Google\Model
-{
-    /**
-     * # gdata.* are outside protos with mising documentation
-     *
-     * @var string
-     */
-    public $bucketName;
-    /**
-     * # gdata.* are outside protos with mising documentation
-     *
-     * @var string
-     */
-    public $generation;
-    /**
-     * # gdata.* are outside protos with mising documentation
-     *
-     * @var string
-     */
-    public $objectName;
-    /**
-     * # gdata.* are outside protos with mising documentation
-     *
-     * @param string $bucketName
-     */
-    public function setBucketName($bucketName)
+namespace Google\Service\CloudSupport {
+    class ObjectId extends \Google\Model
     {
+        /**
+         * # gdata.* are outside protos with mising documentation
+         *
+         * @var string
+         */
+        public $bucketName;
+        /**
+         * # gdata.* are outside protos with mising documentation
+         *
+         * @var string
+         */
+        public $generation;
+        /**
+         * # gdata.* are outside protos with mising documentation
+         *
+         * @var string
+         */
+        public $objectName;
+        /**
+         * # gdata.* are outside protos with mising documentation
+         *
+         * @param string $bucketName
+         */
+        public function setBucketName($bucketName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBucketName()
+        {
+        }
+        /**
+         * # gdata.* are outside protos with mising documentation
+         *
+         * @param string $generation
+         */
+        public function setGeneration($generation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGeneration()
+        {
+        }
+        /**
+         * # gdata.* are outside protos with mising documentation
+         *
+         * @param string $objectName
+         */
+        public function setObjectName($objectName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSupport\ObjectId registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBucketName()
-    {
-    }
-    /**
-     * # gdata.* are outside protos with mising documentation
-     *
-     * @param string $generation
-     */
-    public function setGeneration($generation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGeneration()
-    {
-    }
-    /**
-     * # gdata.* are outside protos with mising documentation
-     *
-     * @param string $objectName
-     */
-    public function setObjectName($objectName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObjectName()
+    class Google_Service_CloudSupport_ObjectId extends \Google\Service\CloudSupport\ObjectId
     {
     }
 }

@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIAP;
-
-class PolicyDelegationSettings extends \Google\Model
-{
-    /**
-     * Permission to check in IAM.
-     *
-     * @var string
-     */
-    public $iamPermission;
-    /**
-     * The DNS name of the service (e.g. "resourcemanager.googleapis.com"). This
-     * should be the domain name part of the full resource names (see
-     * https://aip.dev/122#full-resource-names), which is usually the same as
-     * IamServiceSpec.service of the service where the resource type is defined.
-     *
-     * @var string
-     */
-    public $iamServiceName;
-    protected $policyNameType = PolicyName::class;
-    protected $policyNameDataType = '';
-    protected $resourceType = IapResource::class;
-    protected $resourceDataType = '';
-    /**
-     * Permission to check in IAM.
-     *
-     * @param string $iamPermission
-     */
-    public function setIamPermission($iamPermission)
+namespace Google\Service\CloudIAP {
+    class PolicyDelegationSettings extends \Google\Model
     {
+        /**
+         * Permission to check in IAM.
+         *
+         * @var string
+         */
+        public $iamPermission;
+        /**
+         * The DNS name of the service (e.g. "resourcemanager.googleapis.com"). This
+         * should be the domain name part of the full resource names (see
+         * https://aip.dev/122#full-resource-names), which is usually the same as
+         * IamServiceSpec.service of the service where the resource type is defined.
+         *
+         * @var string
+         */
+        public $iamServiceName;
+        protected $policyNameType = PolicyName::class;
+        protected $policyNameDataType = '';
+        protected $resourceType = IapResource::class;
+        protected $resourceDataType = '';
+        /**
+         * Permission to check in IAM.
+         *
+         * @param string $iamPermission
+         */
+        public function setIamPermission($iamPermission)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIamPermission()
+        {
+        }
+        /**
+         * The DNS name of the service (e.g. "resourcemanager.googleapis.com"). This
+         * should be the domain name part of the full resource names (see
+         * https://aip.dev/122#full-resource-names), which is usually the same as
+         * IamServiceSpec.service of the service where the resource type is defined.
+         *
+         * @param string $iamServiceName
+         */
+        public function setIamServiceName($iamServiceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIamServiceName()
+        {
+        }
+        /**
+         * Policy name to be checked
+         *
+         * @param PolicyName $policyName
+         */
+        public function setPolicyName(PolicyName $policyName)
+        {
+        }
+        /**
+         * @return PolicyName
+         */
+        public function getPolicyName()
+        {
+        }
+        /**
+         * IAM resource to check permission on
+         *
+         * @param IapResource $resource
+         */
+        public function setResource(IapResource $resource)
+        {
+        }
+        /**
+         * @return IapResource
+         */
+        public function getResource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudIAP\PolicyDelegationSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIamPermission()
-    {
-    }
-    /**
-     * The DNS name of the service (e.g. "resourcemanager.googleapis.com"). This
-     * should be the domain name part of the full resource names (see
-     * https://aip.dev/122#full-resource-names), which is usually the same as
-     * IamServiceSpec.service of the service where the resource type is defined.
-     *
-     * @param string $iamServiceName
-     */
-    public function setIamServiceName($iamServiceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIamServiceName()
-    {
-    }
-    /**
-     * Policy name to be checked
-     *
-     * @param PolicyName $policyName
-     */
-    public function setPolicyName(PolicyName $policyName)
-    {
-    }
-    /**
-     * @return PolicyName
-     */
-    public function getPolicyName()
-    {
-    }
-    /**
-     * IAM resource to check permission on
-     *
-     * @param IapResource $resource
-     */
-    public function setResource(IapResource $resource)
-    {
-    }
-    /**
-     * @return IapResource
-     */
-    public function getResource()
+    class Google_Service_CloudIAP_PolicyDelegationSettings extends \Google\Service\CloudIAP\PolicyDelegationSettings
     {
     }
 }

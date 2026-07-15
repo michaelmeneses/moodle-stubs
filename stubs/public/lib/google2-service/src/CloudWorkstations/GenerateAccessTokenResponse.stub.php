@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudWorkstations;
-
-class GenerateAccessTokenResponse extends \Google\Model
-{
-    /**
-     * The generated bearer access token. To use this token, include it in an
-     * Authorization header of an HTTP request sent to the associated
-     * workstation's hostname—for example, `Authorization: Bearer `.
-     *
-     * @var string
-     */
-    public $accessToken;
-    /**
-     * Time at which the generated token will expire.
-     *
-     * @var string
-     */
-    public $expireTime;
-    /**
-     * The generated bearer access token. To use this token, include it in an
-     * Authorization header of an HTTP request sent to the associated
-     * workstation's hostname—for example, `Authorization: Bearer `.
-     *
-     * @param string $accessToken
-     */
-    public function setAccessToken($accessToken)
+namespace Google\Service\CloudWorkstations {
+    class GenerateAccessTokenResponse extends \Google\Model
     {
+        /**
+         * The generated bearer access token. To use this token, include it in an
+         * Authorization header of an HTTP request sent to the associated
+         * workstation's hostname—for example, `Authorization: Bearer `.
+         *
+         * @var string
+         */
+        public $accessToken;
+        /**
+         * Time at which the generated token will expire.
+         *
+         * @var string
+         */
+        public $expireTime;
+        /**
+         * The generated bearer access token. To use this token, include it in an
+         * Authorization header of an HTTP request sent to the associated
+         * workstation's hostname—for example, `Authorization: Bearer `.
+         *
+         * @param string $accessToken
+         */
+        public function setAccessToken($accessToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccessToken()
+        {
+        }
+        /**
+         * Time at which the generated token will expire.
+         *
+         * @param string $expireTime
+         */
+        public function setExpireTime($expireTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpireTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudWorkstations\GenerateAccessTokenResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccessToken()
-    {
-    }
-    /**
-     * Time at which the generated token will expire.
-     *
-     * @param string $expireTime
-     */
-    public function setExpireTime($expireTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExpireTime()
+    class Google_Service_CloudWorkstations_GenerateAccessTokenResponse extends \Google\Service\CloudWorkstations\GenerateAccessTokenResponse
     {
     }
 }

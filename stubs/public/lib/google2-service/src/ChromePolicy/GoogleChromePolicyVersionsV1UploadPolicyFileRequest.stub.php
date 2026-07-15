@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromePolicy;
-
-class GoogleChromePolicyVersionsV1UploadPolicyFileRequest extends \Google\Model
-{
-    /**
-     * Required. The fully qualified policy schema and field name this file is
-     * uploaded for. This information will be used to validate the content type of
-     * the file.
-     *
-     * @var string
-     */
-    public $policyField;
-    /**
-     * Required. The fully qualified policy schema and field name this file is
-     * uploaded for. This information will be used to validate the content type of
-     * the file.
-     *
-     * @param string $policyField
-     */
-    public function setPolicyField($policyField)
+namespace Google\Service\ChromePolicy {
+    class GoogleChromePolicyVersionsV1UploadPolicyFileRequest extends \Google\Model
     {
+        /**
+         * Required. The fully qualified policy schema and field name this file is
+         * uploaded for. This information will be used to validate the content type of
+         * the file.
+         *
+         * @var string
+         */
+        public $policyField;
+        /**
+         * Required. The fully qualified policy schema and field name this file is
+         * uploaded for. This information will be used to validate the content type of
+         * the file.
+         *
+         * @param string $policyField
+         */
+        public function setPolicyField($policyField)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPolicyField()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1UploadPolicyFileRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPolicyField()
+    class Google_Service_ChromePolicy_GoogleChromePolicyVersionsV1UploadPolicyFileRequest extends \Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1UploadPolicyFileRequest
     {
     }
 }

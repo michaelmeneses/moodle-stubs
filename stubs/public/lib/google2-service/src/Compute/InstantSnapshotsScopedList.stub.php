@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InstantSnapshotsScopedList extends \Google\Collection
-{
-    protected $collection_key = 'instantSnapshots';
-    protected $instantSnapshotsType = InstantSnapshot::class;
-    protected $instantSnapshotsDataType = 'array';
-    protected $warningType = InstantSnapshotsScopedListWarning::class;
-    protected $warningDataType = '';
-    /**
-     * [Output Only] A list of instantSnapshots contained in this scope.
-     *
-     * @param InstantSnapshot[] $instantSnapshots
-     */
-    public function setInstantSnapshots($instantSnapshots)
+namespace Google\Service\Compute {
+    class InstantSnapshotsScopedList extends \Google\Collection
     {
+        protected $collection_key = 'instantSnapshots';
+        protected $instantSnapshotsType = InstantSnapshot::class;
+        protected $instantSnapshotsDataType = 'array';
+        protected $warningType = InstantSnapshotsScopedListWarning::class;
+        protected $warningDataType = '';
+        /**
+         * [Output Only] A list of instantSnapshots contained in this scope.
+         *
+         * @param InstantSnapshot[] $instantSnapshots
+         */
+        public function setInstantSnapshots($instantSnapshots)
+        {
+        }
+        /**
+         * @return InstantSnapshot[]
+         */
+        public function getInstantSnapshots()
+        {
+        }
+        /**
+         * [Output Only] Informational warning which replaces the list of
+         * instantSnapshots when the list is empty.
+         *
+         * @param InstantSnapshotsScopedListWarning $warning
+         */
+        public function setWarning(InstantSnapshotsScopedListWarning $warning)
+        {
+        }
+        /**
+         * @return InstantSnapshotsScopedListWarning
+         */
+        public function getWarning()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InstantSnapshot[]
+     * Runtime class alias of \Google\Service\Compute\InstantSnapshotsScopedList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstantSnapshots()
-    {
-    }
-    /**
-     * [Output Only] Informational warning which replaces the list of
-     * instantSnapshots when the list is empty.
-     *
-     * @param InstantSnapshotsScopedListWarning $warning
-     */
-    public function setWarning(InstantSnapshotsScopedListWarning $warning)
-    {
-    }
-    /**
-     * @return InstantSnapshotsScopedListWarning
-     */
-    public function getWarning()
+    class Google_Service_Compute_InstantSnapshotsScopedList extends \Google\Service\Compute\InstantSnapshotsScopedList
     {
     }
 }

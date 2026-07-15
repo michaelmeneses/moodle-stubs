@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\StreetViewPublish;
-
-class Measurement3d extends \Google\Model
-{
-    /**
-     * The timestamp of the IMU measurement.
-     *
-     * @var string
-     */
-    public $captureTime;
-    /**
-     * The sensor measurement in the x axis.
-     *
-     * @var float
-     */
-    public $x;
-    /**
-     * The sensor measurement in the y axis.
-     *
-     * @var float
-     */
-    public $y;
-    /**
-     * The sensor measurement in the z axis.
-     *
-     * @var float
-     */
-    public $z;
-    /**
-     * The timestamp of the IMU measurement.
-     *
-     * @param string $captureTime
-     */
-    public function setCaptureTime($captureTime)
+namespace Google\Service\StreetViewPublish {
+    class Measurement3d extends \Google\Model
     {
+        /**
+         * The timestamp of the IMU measurement.
+         *
+         * @var string
+         */
+        public $captureTime;
+        /**
+         * The sensor measurement in the x axis.
+         *
+         * @var float
+         */
+        public $x;
+        /**
+         * The sensor measurement in the y axis.
+         *
+         * @var float
+         */
+        public $y;
+        /**
+         * The sensor measurement in the z axis.
+         *
+         * @var float
+         */
+        public $z;
+        /**
+         * The timestamp of the IMU measurement.
+         *
+         * @param string $captureTime
+         */
+        public function setCaptureTime($captureTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCaptureTime()
+        {
+        }
+        /**
+         * The sensor measurement in the x axis.
+         *
+         * @param float $x
+         */
+        public function setX($x)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getX()
+        {
+        }
+        /**
+         * The sensor measurement in the y axis.
+         *
+         * @param float $y
+         */
+        public function setY($y)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getY()
+        {
+        }
+        /**
+         * The sensor measurement in the z axis.
+         *
+         * @param float $z
+         */
+        public function setZ($z)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getZ()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\StreetViewPublish\Measurement3d registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCaptureTime()
-    {
-    }
-    /**
-     * The sensor measurement in the x axis.
-     *
-     * @param float $x
-     */
-    public function setX($x)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getX()
-    {
-    }
-    /**
-     * The sensor measurement in the y axis.
-     *
-     * @param float $y
-     */
-    public function setY($y)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getY()
-    {
-    }
-    /**
-     * The sensor measurement in the z axis.
-     *
-     * @param float $z
-     */
-    public function setZ($z)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getZ()
+    class Google_Service_StreetViewPublish_Measurement3d extends \Google\Service\StreetViewPublish\Measurement3d
     {
     }
 }

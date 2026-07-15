@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class Error extends \Google\Model
-{
-    /**
-     * The number of points that couldn't be written because of status.
-     *
-     * @var int
-     */
-    public $pointCount;
-    protected $statusType = Status::class;
-    protected $statusDataType = '';
-    /**
-     * The number of points that couldn't be written because of status.
-     *
-     * @param int $pointCount
-     */
-    public function setPointCount($pointCount)
+namespace Google\Service\Monitoring {
+    class Error extends \Google\Model
     {
+        /**
+         * The number of points that couldn't be written because of status.
+         *
+         * @var int
+         */
+        public $pointCount;
+        protected $statusType = Status::class;
+        protected $statusDataType = '';
+        /**
+         * The number of points that couldn't be written because of status.
+         *
+         * @param int $pointCount
+         */
+        public function setPointCount($pointCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPointCount()
+        {
+        }
+        /**
+         * The status of the requested write operation.
+         *
+         * @param Status $status
+         */
+        public function setStatus(Status $status)
+        {
+        }
+        /**
+         * @return Status
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Monitoring\Error registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPointCount()
-    {
-    }
-    /**
-     * The status of the requested write operation.
-     *
-     * @param Status $status
-     */
-    public function setStatus(Status $status)
-    {
-    }
-    /**
-     * @return Status
-     */
-    public function getStatus()
+    class Google_Service_Monitoring_Error extends \Google\Service\Monitoring\Error
     {
     }
 }

@@ -8,6 +8,12 @@
  */
 namespace OpenSpout\Writer\XLSX\Manager;
 
+use OpenSpout\Writer\Common\Entity\Workbook;
+use OpenSpout\Writer\Common\Manager\AbstractWorkbookManager;
+use OpenSpout\Writer\Common\Manager\Style\StyleMerger;
+use OpenSpout\Writer\XLSX\Helper\FileSystemHelper;
+use OpenSpout\Writer\XLSX\Manager\Style\StyleManager;
+use OpenSpout\Writer\XLSX\Options;
 /**
  * @internal
  *

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class RequestPhoneVerificationResponse extends \Google\Model
-{
-    /**
-     * The verification ID to use in subsequent calls to `verifyphonenumber`.
-     *
-     * @var string
-     */
-    public $verificationId;
-    /**
-     * The verification ID to use in subsequent calls to `verifyphonenumber`.
-     *
-     * @param string $verificationId
-     */
-    public function setVerificationId($verificationId)
+namespace Google\Service\ShoppingContent {
+    class RequestPhoneVerificationResponse extends \Google\Model
     {
+        /**
+         * The verification ID to use in subsequent calls to `verifyphonenumber`.
+         *
+         * @var string
+         */
+        public $verificationId;
+        /**
+         * The verification ID to use in subsequent calls to `verifyphonenumber`.
+         *
+         * @param string $verificationId
+         */
+        public function setVerificationId($verificationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVerificationId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\RequestPhoneVerificationResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getVerificationId()
+    class Google_Service_ShoppingContent_RequestPhoneVerificationResponse extends \Google\Service\ShoppingContent\RequestPhoneVerificationResponse
     {
     }
 }

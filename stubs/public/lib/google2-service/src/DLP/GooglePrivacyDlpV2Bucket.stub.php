@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2Bucket extends \Google\Model
-{
-    protected $maxType = GooglePrivacyDlpV2Value::class;
-    protected $maxDataType = '';
-    protected $minType = GooglePrivacyDlpV2Value::class;
-    protected $minDataType = '';
-    protected $replacementValueType = GooglePrivacyDlpV2Value::class;
-    protected $replacementValueDataType = '';
-    /**
-     * Upper bound of the range, exclusive; type must match min.
-     *
-     * @param GooglePrivacyDlpV2Value $max
-     */
-    public function setMax(GooglePrivacyDlpV2Value $max)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2Bucket extends \Google\Model
     {
+        protected $maxType = GooglePrivacyDlpV2Value::class;
+        protected $maxDataType = '';
+        protected $minType = GooglePrivacyDlpV2Value::class;
+        protected $minDataType = '';
+        protected $replacementValueType = GooglePrivacyDlpV2Value::class;
+        protected $replacementValueDataType = '';
+        /**
+         * Upper bound of the range, exclusive; type must match min.
+         *
+         * @param GooglePrivacyDlpV2Value $max
+         */
+        public function setMax(GooglePrivacyDlpV2Value $max)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2Value
+         */
+        public function getMax()
+        {
+        }
+        /**
+         * Lower bound of the range, inclusive. Type should be the same as max if
+         * used.
+         *
+         * @param GooglePrivacyDlpV2Value $min
+         */
+        public function setMin(GooglePrivacyDlpV2Value $min)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2Value
+         */
+        public function getMin()
+        {
+        }
+        /**
+         * Required. Replacement value for this bucket.
+         *
+         * @param GooglePrivacyDlpV2Value $replacementValue
+         */
+        public function setReplacementValue(GooglePrivacyDlpV2Value $replacementValue)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2Value
+         */
+        public function getReplacementValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2Value
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2Bucket registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMax()
-    {
-    }
-    /**
-     * Lower bound of the range, inclusive. Type should be the same as max if
-     * used.
-     *
-     * @param GooglePrivacyDlpV2Value $min
-     */
-    public function setMin(GooglePrivacyDlpV2Value $min)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2Value
-     */
-    public function getMin()
-    {
-    }
-    /**
-     * Required. Replacement value for this bucket.
-     *
-     * @param GooglePrivacyDlpV2Value $replacementValue
-     */
-    public function setReplacementValue(GooglePrivacyDlpV2Value $replacementValue)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2Value
-     */
-    public function getReplacementValue()
+    class Google_Service_DLP_GooglePrivacyDlpV2Bucket extends \Google\Service\DLP\GooglePrivacyDlpV2Bucket
     {
     }
 }

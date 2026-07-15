@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class GoogleAppsCardV1OverflowMenu extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    protected $itemsType = GoogleAppsCardV1OverflowMenuItem::class;
-    protected $itemsDataType = 'array';
-    /**
-     * Required. The list of menu options.
-     *
-     * @param GoogleAppsCardV1OverflowMenuItem[] $items
-     */
-    public function setItems($items)
+namespace Google\Service\HangoutsChat {
+    class GoogleAppsCardV1OverflowMenu extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        protected $itemsType = GoogleAppsCardV1OverflowMenuItem::class;
+        protected $itemsDataType = 'array';
+        /**
+         * Required. The list of menu options.
+         *
+         * @param GoogleAppsCardV1OverflowMenuItem[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return GoogleAppsCardV1OverflowMenuItem[]
+         */
+        public function getItems()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAppsCardV1OverflowMenuItem[]
+     * Runtime class alias of \Google\Service\HangoutsChat\GoogleAppsCardV1OverflowMenu registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItems()
+    class Google_Service_HangoutsChat_GoogleAppsCardV1OverflowMenu extends \Google\Service\HangoutsChat\GoogleAppsCardV1OverflowMenu
     {
     }
 }

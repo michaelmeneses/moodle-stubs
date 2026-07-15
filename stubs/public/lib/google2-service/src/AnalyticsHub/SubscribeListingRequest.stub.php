@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsHub;
-
-class SubscribeListingRequest extends \Google\Model
-{
-    protected $destinationDatasetType = DestinationDataset::class;
-    protected $destinationDatasetDataType = '';
-    protected $destinationPubsubSubscriptionType = DestinationPubSubSubscription::class;
-    protected $destinationPubsubSubscriptionDataType = '';
-    /**
-     * Input only. BigQuery destination dataset to create for the subscriber.
-     *
-     * @param DestinationDataset $destinationDataset
-     */
-    public function setDestinationDataset(DestinationDataset $destinationDataset)
+namespace Google\Service\AnalyticsHub {
+    class SubscribeListingRequest extends \Google\Model
     {
+        protected $destinationDatasetType = DestinationDataset::class;
+        protected $destinationDatasetDataType = '';
+        protected $destinationPubsubSubscriptionType = DestinationPubSubSubscription::class;
+        protected $destinationPubsubSubscriptionDataType = '';
+        /**
+         * Input only. BigQuery destination dataset to create for the subscriber.
+         *
+         * @param DestinationDataset $destinationDataset
+         */
+        public function setDestinationDataset(DestinationDataset $destinationDataset)
+        {
+        }
+        /**
+         * @return DestinationDataset
+         */
+        public function getDestinationDataset()
+        {
+        }
+        /**
+         * Input only. Destination Pub/Sub subscription to create for the subscriber.
+         *
+         * @param DestinationPubSubSubscription $destinationPubsubSubscription
+         */
+        public function setDestinationPubsubSubscription(DestinationPubSubSubscription $destinationPubsubSubscription)
+        {
+        }
+        /**
+         * @return DestinationPubSubSubscription
+         */
+        public function getDestinationPubsubSubscription()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DestinationDataset
+     * Runtime class alias of \Google\Service\AnalyticsHub\SubscribeListingRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDestinationDataset()
-    {
-    }
-    /**
-     * Input only. Destination Pub/Sub subscription to create for the subscriber.
-     *
-     * @param DestinationPubSubSubscription $destinationPubsubSubscription
-     */
-    public function setDestinationPubsubSubscription(DestinationPubSubSubscription $destinationPubsubSubscription)
-    {
-    }
-    /**
-     * @return DestinationPubSubSubscription
-     */
-    public function getDestinationPubsubSubscription()
+    class Google_Service_AnalyticsHub_SubscribeListingRequest extends \Google\Service\AnalyticsHub\SubscribeListingRequest
     {
     }
 }

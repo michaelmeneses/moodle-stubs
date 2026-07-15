@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class ExternalCatalogDatasetOptions extends \Google\Model
-{
-    /**
-     * Optional. The storage location URI for all tables in the dataset.
-     * Equivalent to hive metastore's database locationUri. Maximum length of 1024
-     * characters.
-     *
-     * @var string
-     */
-    public $defaultStorageLocationUri;
-    /**
-     * Optional. A map of key value pairs defining the parameters and properties
-     * of the open source schema. Maximum size of 2MiB.
-     *
-     * @var string[]
-     */
-    public $parameters;
-    /**
-     * Optional. The storage location URI for all tables in the dataset.
-     * Equivalent to hive metastore's database locationUri. Maximum length of 1024
-     * characters.
-     *
-     * @param string $defaultStorageLocationUri
-     */
-    public function setDefaultStorageLocationUri($defaultStorageLocationUri)
+namespace Google\Service\Bigquery {
+    class ExternalCatalogDatasetOptions extends \Google\Model
     {
+        /**
+         * Optional. The storage location URI for all tables in the dataset.
+         * Equivalent to hive metastore's database locationUri. Maximum length of 1024
+         * characters.
+         *
+         * @var string
+         */
+        public $defaultStorageLocationUri;
+        /**
+         * Optional. A map of key value pairs defining the parameters and properties
+         * of the open source schema. Maximum size of 2MiB.
+         *
+         * @var string[]
+         */
+        public $parameters;
+        /**
+         * Optional. The storage location URI for all tables in the dataset.
+         * Equivalent to hive metastore's database locationUri. Maximum length of 1024
+         * characters.
+         *
+         * @param string $defaultStorageLocationUri
+         */
+        public function setDefaultStorageLocationUri($defaultStorageLocationUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDefaultStorageLocationUri()
+        {
+        }
+        /**
+         * Optional. A map of key value pairs defining the parameters and properties
+         * of the open source schema. Maximum size of 2MiB.
+         *
+         * @param string[] $parameters
+         */
+        public function setParameters($parameters)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getParameters()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Bigquery\ExternalCatalogDatasetOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDefaultStorageLocationUri()
-    {
-    }
-    /**
-     * Optional. A map of key value pairs defining the parameters and properties
-     * of the open source schema. Maximum size of 2MiB.
-     *
-     * @param string[] $parameters
-     */
-    public function setParameters($parameters)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getParameters()
+    class Google_Service_Bigquery_ExternalCatalogDatasetOptions extends \Google\Service\Bigquery\ExternalCatalogDatasetOptions
     {
     }
 }

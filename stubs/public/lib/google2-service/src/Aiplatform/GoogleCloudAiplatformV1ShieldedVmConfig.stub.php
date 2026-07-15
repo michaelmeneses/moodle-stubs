@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ShieldedVmConfig extends \Google\Model
-{
-    /**
-     * Defines whether the instance has [Secure
-     * Boot](https://cloud.google.com/compute/shielded-vm/docs/shielded-vm#secure-
-     * boot) enabled. Secure Boot helps ensure that the system only runs authentic
-     * software by verifying the digital signature of all boot components, and
-     * halting the boot process if signature verification fails.
-     *
-     * @var bool
-     */
-    public $enableSecureBoot;
-    /**
-     * Defines whether the instance has [Secure
-     * Boot](https://cloud.google.com/compute/shielded-vm/docs/shielded-vm#secure-
-     * boot) enabled. Secure Boot helps ensure that the system only runs authentic
-     * software by verifying the digital signature of all boot components, and
-     * halting the boot process if signature verification fails.
-     *
-     * @param bool $enableSecureBoot
-     */
-    public function setEnableSecureBoot($enableSecureBoot)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ShieldedVmConfig extends \Google\Model
     {
+        /**
+         * Defines whether the instance has [Secure
+         * Boot](https://cloud.google.com/compute/shielded-vm/docs/shielded-vm#secure-
+         * boot) enabled. Secure Boot helps ensure that the system only runs authentic
+         * software by verifying the digital signature of all boot components, and
+         * halting the boot process if signature verification fails.
+         *
+         * @var bool
+         */
+        public $enableSecureBoot;
+        /**
+         * Defines whether the instance has [Secure
+         * Boot](https://cloud.google.com/compute/shielded-vm/docs/shielded-vm#secure-
+         * boot) enabled. Secure Boot helps ensure that the system only runs authentic
+         * software by verifying the digital signature of all boot components, and
+         * halting the boot process if signature verification fails.
+         *
+         * @param bool $enableSecureBoot
+         */
+        public function setEnableSecureBoot($enableSecureBoot)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableSecureBoot()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ShieldedVmConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnableSecureBoot()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ShieldedVmConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ShieldedVmConfig
     {
     }
 }

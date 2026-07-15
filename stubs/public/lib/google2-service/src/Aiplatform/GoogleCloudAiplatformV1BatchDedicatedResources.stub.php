@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1BatchDedicatedResources extends \Google\Model
-{
-    protected $machineSpecType = GoogleCloudAiplatformV1MachineSpec::class;
-    protected $machineSpecDataType = '';
-    /**
-     * Immutable. The maximum number of machine replicas the batch operation may
-     * be scaled to. The default value is 10.
-     *
-     * @var int
-     */
-    public $maxReplicaCount;
-    /**
-     * Immutable. The number of machine replicas used at the start of the batch
-     * operation. If not set, Vertex AI decides starting number, not greater than
-     * max_replica_count
-     *
-     * @var int
-     */
-    public $startingReplicaCount;
-    /**
-     * Required. Immutable. The specification of a single machine.
-     *
-     * @param GoogleCloudAiplatformV1MachineSpec $machineSpec
-     */
-    public function setMachineSpec(GoogleCloudAiplatformV1MachineSpec $machineSpec)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1BatchDedicatedResources extends \Google\Model
     {
+        protected $machineSpecType = GoogleCloudAiplatformV1MachineSpec::class;
+        protected $machineSpecDataType = '';
+        /**
+         * Immutable. The maximum number of machine replicas the batch operation may
+         * be scaled to. The default value is 10.
+         *
+         * @var int
+         */
+        public $maxReplicaCount;
+        /**
+         * Immutable. The number of machine replicas used at the start of the batch
+         * operation. If not set, Vertex AI decides starting number, not greater than
+         * max_replica_count
+         *
+         * @var int
+         */
+        public $startingReplicaCount;
+        /**
+         * Required. Immutable. The specification of a single machine.
+         *
+         * @param GoogleCloudAiplatformV1MachineSpec $machineSpec
+         */
+        public function setMachineSpec(GoogleCloudAiplatformV1MachineSpec $machineSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1MachineSpec
+         */
+        public function getMachineSpec()
+        {
+        }
+        /**
+         * Immutable. The maximum number of machine replicas the batch operation may
+         * be scaled to. The default value is 10.
+         *
+         * @param int $maxReplicaCount
+         */
+        public function setMaxReplicaCount($maxReplicaCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxReplicaCount()
+        {
+        }
+        /**
+         * Immutable. The number of machine replicas used at the start of the batch
+         * operation. If not set, Vertex AI decides starting number, not greater than
+         * max_replica_count
+         *
+         * @param int $startingReplicaCount
+         */
+        public function setStartingReplicaCount($startingReplicaCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getStartingReplicaCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1MachineSpec
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1BatchDedicatedResources registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMachineSpec()
-    {
-    }
-    /**
-     * Immutable. The maximum number of machine replicas the batch operation may
-     * be scaled to. The default value is 10.
-     *
-     * @param int $maxReplicaCount
-     */
-    public function setMaxReplicaCount($maxReplicaCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxReplicaCount()
-    {
-    }
-    /**
-     * Immutable. The number of machine replicas used at the start of the batch
-     * operation. If not set, Vertex AI decides starting number, not greater than
-     * max_replica_count
-     *
-     * @param int $startingReplicaCount
-     */
-    public function setStartingReplicaCount($startingReplicaCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getStartingReplicaCount()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1BatchDedicatedResources extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1BatchDedicatedResources
     {
     }
 }

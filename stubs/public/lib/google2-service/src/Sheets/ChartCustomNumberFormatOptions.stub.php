@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class ChartCustomNumberFormatOptions extends \Google\Model
-{
-    /**
-     * Custom prefix to be prepended to the chart attribute. This field is
-     * optional.
-     *
-     * @var string
-     */
-    public $prefix;
-    /**
-     * Custom suffix to be appended to the chart attribute. This field is
-     * optional.
-     *
-     * @var string
-     */
-    public $suffix;
-    /**
-     * Custom prefix to be prepended to the chart attribute. This field is
-     * optional.
-     *
-     * @param string $prefix
-     */
-    public function setPrefix($prefix)
+namespace Google\Service\Sheets {
+    class ChartCustomNumberFormatOptions extends \Google\Model
     {
+        /**
+         * Custom prefix to be prepended to the chart attribute. This field is
+         * optional.
+         *
+         * @var string
+         */
+        public $prefix;
+        /**
+         * Custom suffix to be appended to the chart attribute. This field is
+         * optional.
+         *
+         * @var string
+         */
+        public $suffix;
+        /**
+         * Custom prefix to be prepended to the chart attribute. This field is
+         * optional.
+         *
+         * @param string $prefix
+         */
+        public function setPrefix($prefix)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrefix()
+        {
+        }
+        /**
+         * Custom suffix to be appended to the chart attribute. This field is
+         * optional.
+         *
+         * @param string $suffix
+         */
+        public function setSuffix($suffix)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSuffix()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Sheets\ChartCustomNumberFormatOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPrefix()
-    {
-    }
-    /**
-     * Custom suffix to be appended to the chart attribute. This field is
-     * optional.
-     *
-     * @param string $suffix
-     */
-    public function setSuffix($suffix)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSuffix()
+    class Google_Service_Sheets_ChartCustomNumberFormatOptions extends \Google\Service\Sheets\ChartCustomNumberFormatOptions
     {
     }
 }

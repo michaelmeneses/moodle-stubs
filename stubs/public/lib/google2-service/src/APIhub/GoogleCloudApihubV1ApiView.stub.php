@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1ApiView extends \Google\Model
-{
-    protected $mcpServerViewType = GoogleCloudApihubV1FlattenedApiVersionDeploymentView::class;
-    protected $mcpServerViewDataType = '';
-    protected $mcpToolViewType = GoogleCloudApihubV1FlattenedApiVersionOperationDeploymentView::class;
-    protected $mcpToolViewDataType = '';
-    /**
-     * Output only. MCP server view.
-     *
-     * @param GoogleCloudApihubV1FlattenedApiVersionDeploymentView $mcpServerView
-     */
-    public function setMcpServerView(GoogleCloudApihubV1FlattenedApiVersionDeploymentView $mcpServerView)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1ApiView extends \Google\Model
     {
+        protected $mcpServerViewType = GoogleCloudApihubV1FlattenedApiVersionDeploymentView::class;
+        protected $mcpServerViewDataType = '';
+        protected $mcpToolViewType = GoogleCloudApihubV1FlattenedApiVersionOperationDeploymentView::class;
+        protected $mcpToolViewDataType = '';
+        /**
+         * Output only. MCP server view.
+         *
+         * @param GoogleCloudApihubV1FlattenedApiVersionDeploymentView $mcpServerView
+         */
+        public function setMcpServerView(GoogleCloudApihubV1FlattenedApiVersionDeploymentView $mcpServerView)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1FlattenedApiVersionDeploymentView
+         */
+        public function getMcpServerView()
+        {
+        }
+        /**
+         * Output only. MCP tools view.
+         *
+         * @param GoogleCloudApihubV1FlattenedApiVersionOperationDeploymentView $mcpToolView
+         */
+        public function setMcpToolView(GoogleCloudApihubV1FlattenedApiVersionOperationDeploymentView $mcpToolView)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1FlattenedApiVersionOperationDeploymentView
+         */
+        public function getMcpToolView()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApihubV1FlattenedApiVersionDeploymentView
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1ApiView registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMcpServerView()
-    {
-    }
-    /**
-     * Output only. MCP tools view.
-     *
-     * @param GoogleCloudApihubV1FlattenedApiVersionOperationDeploymentView $mcpToolView
-     */
-    public function setMcpToolView(GoogleCloudApihubV1FlattenedApiVersionOperationDeploymentView $mcpToolView)
-    {
-    }
-    /**
-     * @return GoogleCloudApihubV1FlattenedApiVersionOperationDeploymentView
-     */
-    public function getMcpToolView()
+    class Google_Service_APIhub_GoogleCloudApihubV1ApiView extends \Google\Service\APIhub\GoogleCloudApihubV1ApiView
     {
     }
 }

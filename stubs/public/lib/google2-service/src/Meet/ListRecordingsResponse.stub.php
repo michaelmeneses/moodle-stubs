@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Meet;
-
-class ListRecordingsResponse extends \Google\Collection
-{
-    protected $collection_key = 'recordings';
-    /**
-     * Token to be circulated back for further List call if current List doesn't
-     * include all the recordings. Unset if all recordings are returned.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $recordingsType = Recording::class;
-    protected $recordingsDataType = 'array';
-    /**
-     * Token to be circulated back for further List call if current List doesn't
-     * include all the recordings. Unset if all recordings are returned.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Meet {
+    class ListRecordingsResponse extends \Google\Collection
     {
+        protected $collection_key = 'recordings';
+        /**
+         * Token to be circulated back for further List call if current List doesn't
+         * include all the recordings. Unset if all recordings are returned.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $recordingsType = Recording::class;
+        protected $recordingsDataType = 'array';
+        /**
+         * Token to be circulated back for further List call if current List doesn't
+         * include all the recordings. Unset if all recordings are returned.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * List of recordings in one page.
+         *
+         * @param Recording[] $recordings
+         */
+        public function setRecordings($recordings)
+        {
+        }
+        /**
+         * @return Recording[]
+         */
+        public function getRecordings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Meet\ListRecordingsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * List of recordings in one page.
-     *
-     * @param Recording[] $recordings
-     */
-    public function setRecordings($recordings)
-    {
-    }
-    /**
-     * @return Recording[]
-     */
-    public function getRecordings()
+    class Google_Service_Meet_ListRecordingsResponse extends \Google\Service\Meet\ListRecordingsResponse
     {
     }
 }

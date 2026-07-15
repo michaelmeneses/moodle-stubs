@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1SequentialSegment extends \Google\Model
-{
-    /**
-     * End position (exclusive).
-     *
-     * @var int
-     */
-    public $end;
-    /**
-     * Start position (inclusive).
-     *
-     * @var int
-     */
-    public $start;
-    /**
-     * End position (exclusive).
-     *
-     * @param int $end
-     */
-    public function setEnd($end)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1SequentialSegment extends \Google\Model
     {
+        /**
+         * End position (exclusive).
+         *
+         * @var int
+         */
+        public $end;
+        /**
+         * Start position (inclusive).
+         *
+         * @var int
+         */
+        public $start;
+        /**
+         * End position (exclusive).
+         *
+         * @param int $end
+         */
+        public function setEnd($end)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getEnd()
+        {
+        }
+        /**
+         * Start position (inclusive).
+         *
+         * @param int $start
+         */
+        public function setStart($start)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getStart()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1SequentialSegment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnd()
-    {
-    }
-    /**
-     * Start position (inclusive).
-     *
-     * @param int $start
-     */
-    public function setStart($start)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getStart()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1SequentialSegment extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1SequentialSegment
     {
     }
 }

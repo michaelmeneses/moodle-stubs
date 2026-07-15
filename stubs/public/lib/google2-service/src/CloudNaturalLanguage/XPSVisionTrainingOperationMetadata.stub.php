@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSVisionTrainingOperationMetadata extends \Google\Model
-{
-    protected $explanationUsageType = InfraUsage::class;
-    protected $explanationUsageDataType = '';
-    /**
-     * Aggregated infra usage within certain time period, for billing report
-     * purpose if XAI is enable in training request.
-     *
-     * @param InfraUsage $explanationUsage
-     */
-    public function setExplanationUsage(InfraUsage $explanationUsage)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSVisionTrainingOperationMetadata extends \Google\Model
     {
+        protected $explanationUsageType = InfraUsage::class;
+        protected $explanationUsageDataType = '';
+        /**
+         * Aggregated infra usage within certain time period, for billing report
+         * purpose if XAI is enable in training request.
+         *
+         * @param InfraUsage $explanationUsage
+         */
+        public function setExplanationUsage(InfraUsage $explanationUsage)
+        {
+        }
+        /**
+         * @return InfraUsage
+         */
+        public function getExplanationUsage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InfraUsage
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSVisionTrainingOperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExplanationUsage()
+    class Google_Service_CloudNaturalLanguage_XPSVisionTrainingOperationMetadata extends \Google\Service\CloudNaturalLanguage\XPSVisionTrainingOperationMetadata
     {
     }
 }

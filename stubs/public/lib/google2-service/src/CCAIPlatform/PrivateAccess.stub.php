@@ -21,59 +21,68 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CCAIPlatform;
-
-class PrivateAccess extends \Google\Collection
-{
-    protected $collection_key = 'ingressSettings';
-    protected $egressSettingsType = Component::class;
-    protected $egressSettingsDataType = 'array';
-    protected $ingressSettingsType = Component::class;
-    protected $ingressSettingsDataType = 'array';
-    protected $pscSettingType = PscSetting::class;
-    protected $pscSettingDataType = '';
-    /**
-     * List of egress components that should not be accessed via the Internet. For
-     * more information see go/ccaip-private-path-v2.
-     *
-     * @param Component[] $egressSettings
-     */
-    public function setEgressSettings($egressSettings)
+namespace Google\Service\CCAIPlatform {
+    class PrivateAccess extends \Google\Collection
     {
+        protected $collection_key = 'ingressSettings';
+        protected $egressSettingsType = Component::class;
+        protected $egressSettingsDataType = 'array';
+        protected $ingressSettingsType = Component::class;
+        protected $ingressSettingsDataType = 'array';
+        protected $pscSettingType = PscSetting::class;
+        protected $pscSettingDataType = '';
+        /**
+         * List of egress components that should not be accessed via the Internet. For
+         * more information see go/ccaip-private-path-v2.
+         *
+         * @param Component[] $egressSettings
+         */
+        public function setEgressSettings($egressSettings)
+        {
+        }
+        /**
+         * @return Component[]
+         */
+        public function getEgressSettings()
+        {
+        }
+        /**
+         * List of ingress components that should not be accessed via the Internet.
+         * For more information see go/ccaip-private-path-v2.
+         *
+         * @param Component[] $ingressSettings
+         */
+        public function setIngressSettings($ingressSettings)
+        {
+        }
+        /**
+         * @return Component[]
+         */
+        public function getIngressSettings()
+        {
+        }
+        /**
+         * Private service connect settings.
+         *
+         * @param PscSetting $pscSetting
+         */
+        public function setPscSetting(PscSetting $pscSetting)
+        {
+        }
+        /**
+         * @return PscSetting
+         */
+        public function getPscSetting()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Component[]
+     * Runtime class alias of \Google\Service\CCAIPlatform\PrivateAccess registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEgressSettings()
-    {
-    }
-    /**
-     * List of ingress components that should not be accessed via the Internet.
-     * For more information see go/ccaip-private-path-v2.
-     *
-     * @param Component[] $ingressSettings
-     */
-    public function setIngressSettings($ingressSettings)
-    {
-    }
-    /**
-     * @return Component[]
-     */
-    public function getIngressSettings()
-    {
-    }
-    /**
-     * Private service connect settings.
-     *
-     * @param PscSetting $pscSetting
-     */
-    public function setPscSetting(PscSetting $pscSetting)
-    {
-    }
-    /**
-     * @return PscSetting
-     */
-    public function getPscSetting()
+    class Google_Service_CCAIPlatform_PrivateAccess extends \Google\Service\CCAIPlatform\PrivateAccess
     {
     }
 }

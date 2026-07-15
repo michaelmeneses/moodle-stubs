@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudMachineLearningEngine;
-
-class GoogleCloudMlV1AutomatedStoppingConfigMedianAutomatedStoppingConfig extends \Google\Model
-{
-    /**
-     * If true, the median automated stopping rule applies to
-     * measurement.use_elapsed_time, which means the elapsed_time field of the
-     * current trial's latest measurement is used to compute the median objective
-     * value for each completed trial.
-     *
-     * @var bool
-     */
-    public $useElapsedTime;
-    /**
-     * If true, the median automated stopping rule applies to
-     * measurement.use_elapsed_time, which means the elapsed_time field of the
-     * current trial's latest measurement is used to compute the median objective
-     * value for each completed trial.
-     *
-     * @param bool $useElapsedTime
-     */
-    public function setUseElapsedTime($useElapsedTime)
+namespace Google\Service\CloudMachineLearningEngine {
+    class GoogleCloudMlV1AutomatedStoppingConfigMedianAutomatedStoppingConfig extends \Google\Model
     {
+        /**
+         * If true, the median automated stopping rule applies to
+         * measurement.use_elapsed_time, which means the elapsed_time field of the
+         * current trial's latest measurement is used to compute the median objective
+         * value for each completed trial.
+         *
+         * @var bool
+         */
+        public $useElapsedTime;
+        /**
+         * If true, the median automated stopping rule applies to
+         * measurement.use_elapsed_time, which means the elapsed_time field of the
+         * current trial's latest measurement is used to compute the median objective
+         * value for each completed trial.
+         *
+         * @param bool $useElapsedTime
+         */
+        public function setUseElapsedTime($useElapsedTime)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUseElapsedTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1AutomatedStoppingConfigMedianAutomatedStoppingConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUseElapsedTime()
+    class Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1AutomatedStoppingConfigMedianAutomatedStoppingConfig extends \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1AutomatedStoppingConfigMedianAutomatedStoppingConfig
     {
     }
 }

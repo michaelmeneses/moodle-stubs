@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class AlwaysOnVpnPackage extends \Google\Model
-{
-    /**
-     * Disallows networking when the VPN is not connected.
-     *
-     * @var bool
-     */
-    public $lockdownEnabled;
-    /**
-     * The package name of the VPN app.
-     *
-     * @var string
-     */
-    public $packageName;
-    /**
-     * Disallows networking when the VPN is not connected.
-     *
-     * @param bool $lockdownEnabled
-     */
-    public function setLockdownEnabled($lockdownEnabled)
+namespace Google\Service\AndroidManagement {
+    class AlwaysOnVpnPackage extends \Google\Model
     {
+        /**
+         * Disallows networking when the VPN is not connected.
+         *
+         * @var bool
+         */
+        public $lockdownEnabled;
+        /**
+         * The package name of the VPN app.
+         *
+         * @var string
+         */
+        public $packageName;
+        /**
+         * Disallows networking when the VPN is not connected.
+         *
+         * @param bool $lockdownEnabled
+         */
+        public function setLockdownEnabled($lockdownEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getLockdownEnabled()
+        {
+        }
+        /**
+         * The package name of the VPN app.
+         *
+         * @param string $packageName
+         */
+        public function setPackageName($packageName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPackageName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\AndroidManagement\AlwaysOnVpnPackage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLockdownEnabled()
-    {
-    }
-    /**
-     * The package name of the VPN app.
-     *
-     * @param string $packageName
-     */
-    public function setPackageName($packageName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPackageName()
+    class Google_Service_AndroidManagement_AlwaysOnVpnPackage extends \Google\Service\AndroidManagement\AlwaysOnVpnPackage
     {
     }
 }

@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PaymentsResellerSubscription;
-
-class CreateSubscriptionIntent extends \Google\Model
-{
-    protected $cycleOptionsType = CycleOptions::class;
-    protected $cycleOptionsDataType = '';
-    /**
-     * Required. The parent resource name, which is the identifier of the partner.
-     *
-     * @var string
-     */
-    public $parent;
-    protected $subscriptionType = Subscription::class;
-    protected $subscriptionDataType = '';
-    /**
-     * Required. Identifies the subscription resource on the Partner side. The
-     * value is restricted to 63 ASCII characters at the maximum. If a
-     * subscription was previously created with the same subscription_id, we will
-     * directly return that one.
-     *
-     * @var string
-     */
-    public $subscriptionId;
-    /**
-     * Optional. The cycle options for the subscription.
-     *
-     * @param CycleOptions $cycleOptions
-     */
-    public function setCycleOptions(CycleOptions $cycleOptions)
+namespace Google\Service\PaymentsResellerSubscription {
+    class CreateSubscriptionIntent extends \Google\Model
     {
+        protected $cycleOptionsType = CycleOptions::class;
+        protected $cycleOptionsDataType = '';
+        /**
+         * Required. The parent resource name, which is the identifier of the partner.
+         *
+         * @var string
+         */
+        public $parent;
+        protected $subscriptionType = Subscription::class;
+        protected $subscriptionDataType = '';
+        /**
+         * Required. Identifies the subscription resource on the Partner side. The
+         * value is restricted to 63 ASCII characters at the maximum. If a
+         * subscription was previously created with the same subscription_id, we will
+         * directly return that one.
+         *
+         * @var string
+         */
+        public $subscriptionId;
+        /**
+         * Optional. The cycle options for the subscription.
+         *
+         * @param CycleOptions $cycleOptions
+         */
+        public function setCycleOptions(CycleOptions $cycleOptions)
+        {
+        }
+        /**
+         * @return CycleOptions
+         */
+        public function getCycleOptions()
+        {
+        }
+        /**
+         * Required. The parent resource name, which is the identifier of the partner.
+         *
+         * @param string $parent
+         */
+        public function setParent($parent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParent()
+        {
+        }
+        /**
+         * Required. The Subscription to be created.
+         *
+         * @param Subscription $subscription
+         */
+        public function setSubscription(Subscription $subscription)
+        {
+        }
+        /**
+         * @return Subscription
+         */
+        public function getSubscription()
+        {
+        }
+        /**
+         * Required. Identifies the subscription resource on the Partner side. The
+         * value is restricted to 63 ASCII characters at the maximum. If a
+         * subscription was previously created with the same subscription_id, we will
+         * directly return that one.
+         *
+         * @param string $subscriptionId
+         */
+        public function setSubscriptionId($subscriptionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubscriptionId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CycleOptions
+     * Runtime class alias of \Google\Service\PaymentsResellerSubscription\CreateSubscriptionIntent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCycleOptions()
-    {
-    }
-    /**
-     * Required. The parent resource name, which is the identifier of the partner.
-     *
-     * @param string $parent
-     */
-    public function setParent($parent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParent()
-    {
-    }
-    /**
-     * Required. The Subscription to be created.
-     *
-     * @param Subscription $subscription
-     */
-    public function setSubscription(Subscription $subscription)
-    {
-    }
-    /**
-     * @return Subscription
-     */
-    public function getSubscription()
-    {
-    }
-    /**
-     * Required. Identifies the subscription resource on the Partner side. The
-     * value is restricted to 63 ASCII characters at the maximum. If a
-     * subscription was previously created with the same subscription_id, we will
-     * directly return that one.
-     *
-     * @param string $subscriptionId
-     */
-    public function setSubscriptionId($subscriptionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubscriptionId()
+    class Google_Service_PaymentsResellerSubscription_CreateSubscriptionIntent extends \Google\Service\PaymentsResellerSubscription\CreateSubscriptionIntent
     {
     }
 }

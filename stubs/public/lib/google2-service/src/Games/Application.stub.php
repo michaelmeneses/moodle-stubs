@@ -21,262 +21,271 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Games;
-
-class Application extends \Google\Collection
-{
-    protected $collection_key = 'instances';
-    protected $internal_gapi_mappings = ["achievementCount" => "achievement_count", "leaderboardCount" => "leaderboard_count"];
-    /**
-     * The number of achievements visible to the currently authenticated player.
-     *
-     * @var int
-     */
-    public $achievementCount;
-    protected $assetsType = ImageAsset::class;
-    protected $assetsDataType = 'array';
-    /**
-     * The author of the application.
-     *
-     * @var string
-     */
-    public $author;
-    protected $categoryType = ApplicationCategory::class;
-    protected $categoryDataType = '';
-    /**
-     * The description of the application.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * A list of features that have been enabled for the application.
-     *
-     * @var string[]
-     */
-    public $enabledFeatures;
-    /**
-     * The ID of the application.
-     *
-     * @var string
-     */
-    public $id;
-    protected $instancesType = Instance::class;
-    protected $instancesDataType = 'array';
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#application`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The last updated timestamp of the application.
-     *
-     * @var string
-     */
-    public $lastUpdatedTimestamp;
-    /**
-     * The number of leaderboards visible to the currently authenticated player.
-     *
-     * @var int
-     */
-    public $leaderboardCount;
-    /**
-     * The name of the application.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * A hint to the client UI for what color to use as an app-themed color. The
-     * color is given as an RGB triplet (e.g. "E0E0E0").
-     *
-     * @var string
-     */
-    public $themeColor;
-    /**
-     * The number of achievements visible to the currently authenticated player.
-     *
-     * @param int $achievementCount
-     */
-    public function setAchievementCount($achievementCount)
+namespace Google\Service\Games {
+    class Application extends \Google\Collection
     {
+        protected $collection_key = 'instances';
+        protected $internal_gapi_mappings = ["achievementCount" => "achievement_count", "leaderboardCount" => "leaderboard_count"];
+        /**
+         * The number of achievements visible to the currently authenticated player.
+         *
+         * @var int
+         */
+        public $achievementCount;
+        protected $assetsType = ImageAsset::class;
+        protected $assetsDataType = 'array';
+        /**
+         * The author of the application.
+         *
+         * @var string
+         */
+        public $author;
+        protected $categoryType = ApplicationCategory::class;
+        protected $categoryDataType = '';
+        /**
+         * The description of the application.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * A list of features that have been enabled for the application.
+         *
+         * @var string[]
+         */
+        public $enabledFeatures;
+        /**
+         * The ID of the application.
+         *
+         * @var string
+         */
+        public $id;
+        protected $instancesType = Instance::class;
+        protected $instancesDataType = 'array';
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#application`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The last updated timestamp of the application.
+         *
+         * @var string
+         */
+        public $lastUpdatedTimestamp;
+        /**
+         * The number of leaderboards visible to the currently authenticated player.
+         *
+         * @var int
+         */
+        public $leaderboardCount;
+        /**
+         * The name of the application.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * A hint to the client UI for what color to use as an app-themed color. The
+         * color is given as an RGB triplet (e.g. "E0E0E0").
+         *
+         * @var string
+         */
+        public $themeColor;
+        /**
+         * The number of achievements visible to the currently authenticated player.
+         *
+         * @param int $achievementCount
+         */
+        public function setAchievementCount($achievementCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getAchievementCount()
+        {
+        }
+        /**
+         * The assets of the application.
+         *
+         * @param ImageAsset[] $assets
+         */
+        public function setAssets($assets)
+        {
+        }
+        /**
+         * @return ImageAsset[]
+         */
+        public function getAssets()
+        {
+        }
+        /**
+         * The author of the application.
+         *
+         * @param string $author
+         */
+        public function setAuthor($author)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAuthor()
+        {
+        }
+        /**
+         * The category of the application.
+         *
+         * @param ApplicationCategory $category
+         */
+        public function setCategory(ApplicationCategory $category)
+        {
+        }
+        /**
+         * @return ApplicationCategory
+         */
+        public function getCategory()
+        {
+        }
+        /**
+         * The description of the application.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * A list of features that have been enabled for the application.
+         *
+         * @param string[] $enabledFeatures
+         */
+        public function setEnabledFeatures($enabledFeatures)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getEnabledFeatures()
+        {
+        }
+        /**
+         * The ID of the application.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * The instances of the application.
+         *
+         * @param Instance[] $instances
+         */
+        public function setInstances($instances)
+        {
+        }
+        /**
+         * @return Instance[]
+         */
+        public function getInstances()
+        {
+        }
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#application`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The last updated timestamp of the application.
+         *
+         * @param string $lastUpdatedTimestamp
+         */
+        public function setLastUpdatedTimestamp($lastUpdatedTimestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastUpdatedTimestamp()
+        {
+        }
+        /**
+         * The number of leaderboards visible to the currently authenticated player.
+         *
+         * @param int $leaderboardCount
+         */
+        public function setLeaderboardCount($leaderboardCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getLeaderboardCount()
+        {
+        }
+        /**
+         * The name of the application.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * A hint to the client UI for what color to use as an app-themed color. The
+         * color is given as an RGB triplet (e.g. "E0E0E0").
+         *
+         * @param string $themeColor
+         */
+        public function setThemeColor($themeColor)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getThemeColor()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Games\Application registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAchievementCount()
-    {
-    }
-    /**
-     * The assets of the application.
-     *
-     * @param ImageAsset[] $assets
-     */
-    public function setAssets($assets)
-    {
-    }
-    /**
-     * @return ImageAsset[]
-     */
-    public function getAssets()
-    {
-    }
-    /**
-     * The author of the application.
-     *
-     * @param string $author
-     */
-    public function setAuthor($author)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAuthor()
-    {
-    }
-    /**
-     * The category of the application.
-     *
-     * @param ApplicationCategory $category
-     */
-    public function setCategory(ApplicationCategory $category)
-    {
-    }
-    /**
-     * @return ApplicationCategory
-     */
-    public function getCategory()
-    {
-    }
-    /**
-     * The description of the application.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * A list of features that have been enabled for the application.
-     *
-     * @param string[] $enabledFeatures
-     */
-    public function setEnabledFeatures($enabledFeatures)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getEnabledFeatures()
-    {
-    }
-    /**
-     * The ID of the application.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * The instances of the application.
-     *
-     * @param Instance[] $instances
-     */
-    public function setInstances($instances)
-    {
-    }
-    /**
-     * @return Instance[]
-     */
-    public function getInstances()
-    {
-    }
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#application`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The last updated timestamp of the application.
-     *
-     * @param string $lastUpdatedTimestamp
-     */
-    public function setLastUpdatedTimestamp($lastUpdatedTimestamp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastUpdatedTimestamp()
-    {
-    }
-    /**
-     * The number of leaderboards visible to the currently authenticated player.
-     *
-     * @param int $leaderboardCount
-     */
-    public function setLeaderboardCount($leaderboardCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getLeaderboardCount()
-    {
-    }
-    /**
-     * The name of the application.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * A hint to the client UI for what color to use as an app-themed color. The
-     * color is given as an RGB triplet (e.g. "E0E0E0").
-     *
-     * @param string $themeColor
-     */
-    public function setThemeColor($themeColor)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getThemeColor()
+    class Google_Service_Games_Application extends \Google\Service\Games\Application
     {
     }
 }

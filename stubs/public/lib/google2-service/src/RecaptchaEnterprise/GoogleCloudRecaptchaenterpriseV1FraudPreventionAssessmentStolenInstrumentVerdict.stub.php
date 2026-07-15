@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecaptchaEnterprise;
-
-class GoogleCloudRecaptchaenterpriseV1FraudPreventionAssessmentStolenInstrumentVerdict extends \Google\Model
-{
-    /**
-     * Output only. Probability of this transaction being executed with a stolen
-     * instrument. Values are from 0.0 (lowest) to 1.0 (highest).
-     *
-     * @var float
-     */
-    public $risk;
-    /**
-     * Output only. Probability of this transaction being executed with a stolen
-     * instrument. Values are from 0.0 (lowest) to 1.0 (highest).
-     *
-     * @param float $risk
-     */
-    public function setRisk($risk)
+namespace Google\Service\RecaptchaEnterprise {
+    class GoogleCloudRecaptchaenterpriseV1FraudPreventionAssessmentStolenInstrumentVerdict extends \Google\Model
     {
+        /**
+         * Output only. Probability of this transaction being executed with a stolen
+         * instrument. Values are from 0.0 (lowest) to 1.0 (highest).
+         *
+         * @var float
+         */
+        public $risk;
+        /**
+         * Output only. Probability of this transaction being executed with a stolen
+         * instrument. Values are from 0.0 (lowest) to 1.0 (highest).
+         *
+         * @param float $risk
+         */
+        public function setRisk($risk)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getRisk()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1FraudPreventionAssessmentStolenInstrumentVerdict registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRisk()
+    class Google_Service_RecaptchaEnterprise_GoogleCloudRecaptchaenterpriseV1FraudPreventionAssessmentStolenInstrumentVerdict extends \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1FraudPreventionAssessmentStolenInstrumentVerdict
     {
     }
 }

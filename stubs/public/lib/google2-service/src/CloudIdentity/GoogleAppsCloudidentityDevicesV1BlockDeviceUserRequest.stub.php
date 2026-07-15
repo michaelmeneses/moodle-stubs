@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIdentity;
-
-class GoogleAppsCloudidentityDevicesV1BlockDeviceUserRequest extends \Google\Model
-{
-    /**
-     * Optional. [Resource
-     * name](https://cloud.google.com/apis/design/resource_names) of the customer.
-     * If you're using this API for your own organization, use
-     * `customers/my_customer` If you're using this API to manage another
-     * organization, use `customers/{customer}`, where customer is the customer to
-     * whom the device belongs.
-     *
-     * @var string
-     */
-    public $customer;
-    /**
-     * Optional. [Resource
-     * name](https://cloud.google.com/apis/design/resource_names) of the customer.
-     * If you're using this API for your own organization, use
-     * `customers/my_customer` If you're using this API to manage another
-     * organization, use `customers/{customer}`, where customer is the customer to
-     * whom the device belongs.
-     *
-     * @param string $customer
-     */
-    public function setCustomer($customer)
+namespace Google\Service\CloudIdentity {
+    class GoogleAppsCloudidentityDevicesV1BlockDeviceUserRequest extends \Google\Model
     {
+        /**
+         * Optional. [Resource
+         * name](https://cloud.google.com/apis/design/resource_names) of the customer.
+         * If you're using this API for your own organization, use
+         * `customers/my_customer` If you're using this API to manage another
+         * organization, use `customers/{customer}`, where customer is the customer to
+         * whom the device belongs.
+         *
+         * @var string
+         */
+        public $customer;
+        /**
+         * Optional. [Resource
+         * name](https://cloud.google.com/apis/design/resource_names) of the customer.
+         * If you're using this API for your own organization, use
+         * `customers/my_customer` If you're using this API to manage another
+         * organization, use `customers/{customer}`, where customer is the customer to
+         * whom the device belongs.
+         *
+         * @param string $customer
+         */
+        public function setCustomer($customer)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomer()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudIdentity\GoogleAppsCloudidentityDevicesV1BlockDeviceUserRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomer()
+    class Google_Service_CloudIdentity_GoogleAppsCloudidentityDevicesV1BlockDeviceUserRequest extends \Google\Service\CloudIdentity\GoogleAppsCloudidentityDevicesV1BlockDeviceUserRequest
     {
     }
 }

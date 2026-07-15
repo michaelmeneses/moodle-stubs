@@ -21,98 +21,107 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdMob;
-
-class PublisherAccount extends \Google\Model
-{
-    /**
-     * Currency code of the earning-related metrics, which is the 3-letter code
-     * defined in ISO 4217. The daily average rate is used for the currency
-     * conversion.
-     *
-     * @var string
-     */
-    public $currencyCode;
-    /**
-     * Resource name of this account. Format is accounts/{publisher_id}.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The unique ID by which this publisher account can be identified in the API
-     * requests (for example, pub-1234567890).
-     *
-     * @var string
-     */
-    public $publisherId;
-    /**
-     * The time zone that is used in reports that are generated for this account.
-     * The value is a time-zone ID as specified by the CLDR project, for example,
-     * "America/Los_Angeles".
-     *
-     * @var string
-     */
-    public $reportingTimeZone;
-    /**
-     * Currency code of the earning-related metrics, which is the 3-letter code
-     * defined in ISO 4217. The daily average rate is used for the currency
-     * conversion.
-     *
-     * @param string $currencyCode
-     */
-    public function setCurrencyCode($currencyCode)
+namespace Google\Service\AdMob {
+    class PublisherAccount extends \Google\Model
     {
+        /**
+         * Currency code of the earning-related metrics, which is the 3-letter code
+         * defined in ISO 4217. The daily average rate is used for the currency
+         * conversion.
+         *
+         * @var string
+         */
+        public $currencyCode;
+        /**
+         * Resource name of this account. Format is accounts/{publisher_id}.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The unique ID by which this publisher account can be identified in the API
+         * requests (for example, pub-1234567890).
+         *
+         * @var string
+         */
+        public $publisherId;
+        /**
+         * The time zone that is used in reports that are generated for this account.
+         * The value is a time-zone ID as specified by the CLDR project, for example,
+         * "America/Los_Angeles".
+         *
+         * @var string
+         */
+        public $reportingTimeZone;
+        /**
+         * Currency code of the earning-related metrics, which is the 3-letter code
+         * defined in ISO 4217. The daily average rate is used for the currency
+         * conversion.
+         *
+         * @param string $currencyCode
+         */
+        public function setCurrencyCode($currencyCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCurrencyCode()
+        {
+        }
+        /**
+         * Resource name of this account. Format is accounts/{publisher_id}.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The unique ID by which this publisher account can be identified in the API
+         * requests (for example, pub-1234567890).
+         *
+         * @param string $publisherId
+         */
+        public function setPublisherId($publisherId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPublisherId()
+        {
+        }
+        /**
+         * The time zone that is used in reports that are generated for this account.
+         * The value is a time-zone ID as specified by the CLDR project, for example,
+         * "America/Los_Angeles".
+         *
+         * @param string $reportingTimeZone
+         */
+        public function setReportingTimeZone($reportingTimeZone)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReportingTimeZone()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AdMob\PublisherAccount registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCurrencyCode()
-    {
-    }
-    /**
-     * Resource name of this account. Format is accounts/{publisher_id}.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The unique ID by which this publisher account can be identified in the API
-     * requests (for example, pub-1234567890).
-     *
-     * @param string $publisherId
-     */
-    public function setPublisherId($publisherId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPublisherId()
-    {
-    }
-    /**
-     * The time zone that is used in reports that are generated for this account.
-     * The value is a time-zone ID as specified by the CLDR project, for example,
-     * "America/Los_Angeles".
-     *
-     * @param string $reportingTimeZone
-     */
-    public function setReportingTimeZone($reportingTimeZone)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReportingTimeZone()
+    class Google_Service_AdMob_PublisherAccount extends \Google\Service\AdMob\PublisherAccount
     {
     }
 }

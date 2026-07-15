@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudProfiler\Resource;
-
-/**
- * The "projects" collection of methods.
- * Typical usage is:
- *  <code>
- *   $cloudprofilerService = new Google\Service\CloudProfiler(...);
- *   $projects = $cloudprofilerService->projects;
- *  </code>
- */
-class Projects extends \Google\Service\Resource
-{
+namespace Google\Service\CloudProfiler\Resource {
+    /**
+     * The "projects" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $cloudprofilerService = new Google\Service\CloudProfiler(...);
+     *   $projects = $cloudprofilerService->projects;
+     *  </code>
+     */
+    class Projects extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudProfiler\Resource\Projects registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudProfiler_Resource_Projects extends \Google\Service\CloudProfiler\Resource\Projects
+    {
+    }
 }

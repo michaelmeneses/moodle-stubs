@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1beta1OutputConfig extends \Google\Model
-{
-    protected $gcsDestinationType = GoogleCloudDocumentaiV1beta1GcsDestination::class;
-    protected $gcsDestinationDataType = '';
-    /**
-     * @var int
-     */
-    public $pagesPerShard;
-    /**
-     * @param GoogleCloudDocumentaiV1beta1GcsDestination
-     */
-    public function setGcsDestination(GoogleCloudDocumentaiV1beta1GcsDestination $gcsDestination)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1beta1OutputConfig extends \Google\Model
     {
+        protected $gcsDestinationType = GoogleCloudDocumentaiV1beta1GcsDestination::class;
+        protected $gcsDestinationDataType = '';
+        /**
+         * @var int
+         */
+        public $pagesPerShard;
+        /**
+         * @param GoogleCloudDocumentaiV1beta1GcsDestination
+         */
+        public function setGcsDestination(GoogleCloudDocumentaiV1beta1GcsDestination $gcsDestination)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta1GcsDestination
+         */
+        public function getGcsDestination()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setPagesPerShard($pagesPerShard)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPagesPerShard()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiV1beta1GcsDestination
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1beta1OutputConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGcsDestination()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setPagesPerShard($pagesPerShard)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPagesPerShard()
+    class Google_Service_Document_GoogleCloudDocumentaiV1beta1OutputConfig extends \Google\Service\Document\GoogleCloudDocumentaiV1beta1OutputConfig
     {
     }
 }

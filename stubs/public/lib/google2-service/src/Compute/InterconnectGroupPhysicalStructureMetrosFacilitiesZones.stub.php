@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InterconnectGroupPhysicalStructureMetrosFacilitiesZones extends \Google\Collection
-{
-    protected $collection_key = 'interconnects';
-    /**
-     * Output only. [Output Only] URLs of Interconnects in this redundancy group
-     * in the given metro, facility, and zone.
-     *
-     * @var string[]
-     */
-    public $interconnects;
-    /**
-     * Output only. [Output Only] The name of the zone, either "zone1" or "zone2".
-     * This is the second component of the location of Interconnects in this
-     * facility.
-     *
-     * @var string
-     */
-    public $zone;
-    /**
-     * Output only. [Output Only] URLs of Interconnects in this redundancy group
-     * in the given metro, facility, and zone.
-     *
-     * @param string[] $interconnects
-     */
-    public function setInterconnects($interconnects)
+namespace Google\Service\Compute {
+    class InterconnectGroupPhysicalStructureMetrosFacilitiesZones extends \Google\Collection
     {
+        protected $collection_key = 'interconnects';
+        /**
+         * Output only. [Output Only] URLs of Interconnects in this redundancy group
+         * in the given metro, facility, and zone.
+         *
+         * @var string[]
+         */
+        public $interconnects;
+        /**
+         * Output only. [Output Only] The name of the zone, either "zone1" or "zone2".
+         * This is the second component of the location of Interconnects in this
+         * facility.
+         *
+         * @var string
+         */
+        public $zone;
+        /**
+         * Output only. [Output Only] URLs of Interconnects in this redundancy group
+         * in the given metro, facility, and zone.
+         *
+         * @param string[] $interconnects
+         */
+        public function setInterconnects($interconnects)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getInterconnects()
+        {
+        }
+        /**
+         * Output only. [Output Only] The name of the zone, either "zone1" or "zone2".
+         * This is the second component of the location of Interconnects in this
+         * facility.
+         *
+         * @param string $zone
+         */
+        public function setZone($zone)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getZone()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Compute\InterconnectGroupPhysicalStructureMetrosFacilitiesZones registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInterconnects()
-    {
-    }
-    /**
-     * Output only. [Output Only] The name of the zone, either "zone1" or "zone2".
-     * This is the second component of the location of Interconnects in this
-     * facility.
-     *
-     * @param string $zone
-     */
-    public function setZone($zone)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getZone()
+    class Google_Service_Compute_InterconnectGroupPhysicalStructureMetrosFacilitiesZones extends \Google\Service\Compute\InterconnectGroupPhysicalStructureMetrosFacilitiesZones
     {
     }
 }

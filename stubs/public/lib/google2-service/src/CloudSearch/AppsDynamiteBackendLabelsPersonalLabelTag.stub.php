@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteBackendLabelsPersonalLabelTag extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $labelId;
-    /**
-     * @param string
-     */
-    public function setLabelId($labelId)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteBackendLabelsPersonalLabelTag extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $labelId;
+        /**
+         * @param string
+         */
+        public function setLabelId($labelId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLabelId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteBackendLabelsPersonalLabelTag registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLabelId()
+    class Google_Service_CloudSearch_AppsDynamiteBackendLabelsPersonalLabelTag extends \Google\Service\CloudSearch\AppsDynamiteBackendLabelsPersonalLabelTag
     {
     }
 }

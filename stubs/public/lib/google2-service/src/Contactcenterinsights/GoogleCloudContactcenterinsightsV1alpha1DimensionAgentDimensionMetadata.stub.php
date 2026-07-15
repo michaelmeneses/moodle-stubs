@@ -21,164 +21,173 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1alpha1DimensionAgentDimensionMetadata extends \Google\Model
-{
-    /**
-     * Optional. The agent's deployment display name. Only applicable to automated
-     * agents. This will be populated for AGENT_DEPLOYMENT_ID dimensions.
-     *
-     * @var string
-     */
-    public $agentDeploymentDisplayName;
-    /**
-     * Optional. The agent's deployment ID. Only applicable to automated agents.
-     * This will be populated for AGENT and AGENT_DEPLOYMENT_ID dimensions.
-     *
-     * @var string
-     */
-    public $agentDeploymentId;
-    /**
-     * Optional. The agent's name This will be populated for AGENT, AGENT_TEAM,
-     * AGENT_VERSION_ID, and AGENT_DEPLOYMENT_ID dimensions.
-     *
-     * @var string
-     */
-    public $agentDisplayName;
-    /**
-     * Optional. A user-specified string representing the agent. This will be
-     * populated for AGENT, AGENT_TEAM, AGENT_VERSION_ID, and AGENT_DEPLOYMENT_ID
-     * dimensions.
-     *
-     * @var string
-     */
-    public $agentId;
-    /**
-     * Optional. A user-specified string representing the agent's team.
-     *
-     * @var string
-     */
-    public $agentTeam;
-    /**
-     * Optional. The agent's version display name. Only applicable to automated
-     * agents. This will be populated for AGENT_VERSION_ID, and
-     * AGENT_DEPLOYMENT_ID dimensions.
-     *
-     * @var string
-     */
-    public $agentVersionDisplayName;
-    /**
-     * Optional. The agent's version ID. Only applicable to automated agents. This
-     * will be populated for AGENT_VERSION_ID, and AGENT_DEPLOYMENT_ID dimensions.
-     *
-     * @var string
-     */
-    public $agentVersionId;
-    /**
-     * Optional. The agent's deployment display name. Only applicable to automated
-     * agents. This will be populated for AGENT_DEPLOYMENT_ID dimensions.
-     *
-     * @param string $agentDeploymentDisplayName
-     */
-    public function setAgentDeploymentDisplayName($agentDeploymentDisplayName)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1alpha1DimensionAgentDimensionMetadata extends \Google\Model
     {
+        /**
+         * Optional. The agent's deployment display name. Only applicable to automated
+         * agents. This will be populated for AGENT_DEPLOYMENT_ID dimensions.
+         *
+         * @var string
+         */
+        public $agentDeploymentDisplayName;
+        /**
+         * Optional. The agent's deployment ID. Only applicable to automated agents.
+         * This will be populated for AGENT and AGENT_DEPLOYMENT_ID dimensions.
+         *
+         * @var string
+         */
+        public $agentDeploymentId;
+        /**
+         * Optional. The agent's name This will be populated for AGENT, AGENT_TEAM,
+         * AGENT_VERSION_ID, and AGENT_DEPLOYMENT_ID dimensions.
+         *
+         * @var string
+         */
+        public $agentDisplayName;
+        /**
+         * Optional. A user-specified string representing the agent. This will be
+         * populated for AGENT, AGENT_TEAM, AGENT_VERSION_ID, and AGENT_DEPLOYMENT_ID
+         * dimensions.
+         *
+         * @var string
+         */
+        public $agentId;
+        /**
+         * Optional. A user-specified string representing the agent's team.
+         *
+         * @var string
+         */
+        public $agentTeam;
+        /**
+         * Optional. The agent's version display name. Only applicable to automated
+         * agents. This will be populated for AGENT_VERSION_ID, and
+         * AGENT_DEPLOYMENT_ID dimensions.
+         *
+         * @var string
+         */
+        public $agentVersionDisplayName;
+        /**
+         * Optional. The agent's version ID. Only applicable to automated agents. This
+         * will be populated for AGENT_VERSION_ID, and AGENT_DEPLOYMENT_ID dimensions.
+         *
+         * @var string
+         */
+        public $agentVersionId;
+        /**
+         * Optional. The agent's deployment display name. Only applicable to automated
+         * agents. This will be populated for AGENT_DEPLOYMENT_ID dimensions.
+         *
+         * @param string $agentDeploymentDisplayName
+         */
+        public function setAgentDeploymentDisplayName($agentDeploymentDisplayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAgentDeploymentDisplayName()
+        {
+        }
+        /**
+         * Optional. The agent's deployment ID. Only applicable to automated agents.
+         * This will be populated for AGENT and AGENT_DEPLOYMENT_ID dimensions.
+         *
+         * @param string $agentDeploymentId
+         */
+        public function setAgentDeploymentId($agentDeploymentId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAgentDeploymentId()
+        {
+        }
+        /**
+         * Optional. The agent's name This will be populated for AGENT, AGENT_TEAM,
+         * AGENT_VERSION_ID, and AGENT_DEPLOYMENT_ID dimensions.
+         *
+         * @param string $agentDisplayName
+         */
+        public function setAgentDisplayName($agentDisplayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAgentDisplayName()
+        {
+        }
+        /**
+         * Optional. A user-specified string representing the agent. This will be
+         * populated for AGENT, AGENT_TEAM, AGENT_VERSION_ID, and AGENT_DEPLOYMENT_ID
+         * dimensions.
+         *
+         * @param string $agentId
+         */
+        public function setAgentId($agentId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAgentId()
+        {
+        }
+        /**
+         * Optional. A user-specified string representing the agent's team.
+         *
+         * @param string $agentTeam
+         */
+        public function setAgentTeam($agentTeam)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAgentTeam()
+        {
+        }
+        /**
+         * Optional. The agent's version display name. Only applicable to automated
+         * agents. This will be populated for AGENT_VERSION_ID, and
+         * AGENT_DEPLOYMENT_ID dimensions.
+         *
+         * @param string $agentVersionDisplayName
+         */
+        public function setAgentVersionDisplayName($agentVersionDisplayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAgentVersionDisplayName()
+        {
+        }
+        /**
+         * Optional. The agent's version ID. Only applicable to automated agents. This
+         * will be populated for AGENT_VERSION_ID, and AGENT_DEPLOYMENT_ID dimensions.
+         *
+         * @param string $agentVersionId
+         */
+        public function setAgentVersionId($agentVersionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAgentVersionId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1DimensionAgentDimensionMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAgentDeploymentDisplayName()
-    {
-    }
-    /**
-     * Optional. The agent's deployment ID. Only applicable to automated agents.
-     * This will be populated for AGENT and AGENT_DEPLOYMENT_ID dimensions.
-     *
-     * @param string $agentDeploymentId
-     */
-    public function setAgentDeploymentId($agentDeploymentId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAgentDeploymentId()
-    {
-    }
-    /**
-     * Optional. The agent's name This will be populated for AGENT, AGENT_TEAM,
-     * AGENT_VERSION_ID, and AGENT_DEPLOYMENT_ID dimensions.
-     *
-     * @param string $agentDisplayName
-     */
-    public function setAgentDisplayName($agentDisplayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAgentDisplayName()
-    {
-    }
-    /**
-     * Optional. A user-specified string representing the agent. This will be
-     * populated for AGENT, AGENT_TEAM, AGENT_VERSION_ID, and AGENT_DEPLOYMENT_ID
-     * dimensions.
-     *
-     * @param string $agentId
-     */
-    public function setAgentId($agentId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAgentId()
-    {
-    }
-    /**
-     * Optional. A user-specified string representing the agent's team.
-     *
-     * @param string $agentTeam
-     */
-    public function setAgentTeam($agentTeam)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAgentTeam()
-    {
-    }
-    /**
-     * Optional. The agent's version display name. Only applicable to automated
-     * agents. This will be populated for AGENT_VERSION_ID, and
-     * AGENT_DEPLOYMENT_ID dimensions.
-     *
-     * @param string $agentVersionDisplayName
-     */
-    public function setAgentVersionDisplayName($agentVersionDisplayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAgentVersionDisplayName()
-    {
-    }
-    /**
-     * Optional. The agent's version ID. Only applicable to automated agents. This
-     * will be populated for AGENT_VERSION_ID, and AGENT_DEPLOYMENT_ID dimensions.
-     *
-     * @param string $agentVersionId
-     */
-    public function setAgentVersionId($agentVersionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAgentVersionId()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1alpha1DimensionAgentDimensionMetadata extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1DimensionAgentDimensionMetadata
     {
     }
 }

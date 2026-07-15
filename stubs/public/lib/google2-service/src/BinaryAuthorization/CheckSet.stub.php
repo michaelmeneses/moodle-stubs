@@ -21,87 +21,96 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BinaryAuthorization;
-
-class CheckSet extends \Google\Collection
-{
-    protected $collection_key = 'checks';
-    protected $checksType = Check::class;
-    protected $checksDataType = 'array';
-    /**
-     * Optional. A user-provided name for this `CheckSet`. This field has no
-     * effect on the policy evaluation behavior except to improve readability of
-     * messages in evaluation results.
-     *
-     * @var string
-     */
-    public $displayName;
-    protected $imageAllowlistType = ImageAllowlist::class;
-    protected $imageAllowlistDataType = '';
-    protected $scopeType = Scope::class;
-    protected $scopeDataType = '';
-    /**
-     * Optional. The checks to apply. The ultimate result of evaluating the check
-     * set will be "allow" if and only if every check in `checks` evaluates to
-     * "allow". If `checks` is empty, the default behavior is "always allow".
-     *
-     * @param Check[] $checks
-     */
-    public function setChecks($checks)
+namespace Google\Service\BinaryAuthorization {
+    class CheckSet extends \Google\Collection
     {
+        protected $collection_key = 'checks';
+        protected $checksType = Check::class;
+        protected $checksDataType = 'array';
+        /**
+         * Optional. A user-provided name for this `CheckSet`. This field has no
+         * effect on the policy evaluation behavior except to improve readability of
+         * messages in evaluation results.
+         *
+         * @var string
+         */
+        public $displayName;
+        protected $imageAllowlistType = ImageAllowlist::class;
+        protected $imageAllowlistDataType = '';
+        protected $scopeType = Scope::class;
+        protected $scopeDataType = '';
+        /**
+         * Optional. The checks to apply. The ultimate result of evaluating the check
+         * set will be "allow" if and only if every check in `checks` evaluates to
+         * "allow". If `checks` is empty, the default behavior is "always allow".
+         *
+         * @param Check[] $checks
+         */
+        public function setChecks($checks)
+        {
+        }
+        /**
+         * @return Check[]
+         */
+        public function getChecks()
+        {
+        }
+        /**
+         * Optional. A user-provided name for this `CheckSet`. This field has no
+         * effect on the policy evaluation behavior except to improve readability of
+         * messages in evaluation results.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Optional. Images exempted from this `CheckSet`. If any of the patterns
+         * match the image being evaluated, no checks in the `CheckSet` will be
+         * evaluated.
+         *
+         * @param ImageAllowlist $imageAllowlist
+         */
+        public function setImageAllowlist(ImageAllowlist $imageAllowlist)
+        {
+        }
+        /**
+         * @return ImageAllowlist
+         */
+        public function getImageAllowlist()
+        {
+        }
+        /**
+         * Optional. The scope to which this `CheckSet` applies. If unset or an empty
+         * string (the default), applies to all namespaces and service accounts. See
+         * the `Scope` message documentation for details on scoping rules.
+         *
+         * @param Scope $scope
+         */
+        public function setScope(Scope $scope)
+        {
+        }
+        /**
+         * @return Scope
+         */
+        public function getScope()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Check[]
+     * Runtime class alias of \Google\Service\BinaryAuthorization\CheckSet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChecks()
-    {
-    }
-    /**
-     * Optional. A user-provided name for this `CheckSet`. This field has no
-     * effect on the policy evaluation behavior except to improve readability of
-     * messages in evaluation results.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Optional. Images exempted from this `CheckSet`. If any of the patterns
-     * match the image being evaluated, no checks in the `CheckSet` will be
-     * evaluated.
-     *
-     * @param ImageAllowlist $imageAllowlist
-     */
-    public function setImageAllowlist(ImageAllowlist $imageAllowlist)
-    {
-    }
-    /**
-     * @return ImageAllowlist
-     */
-    public function getImageAllowlist()
-    {
-    }
-    /**
-     * Optional. The scope to which this `CheckSet` applies. If unset or an empty
-     * string (the default), applies to all namespaces and service accounts. See
-     * the `Scope` message documentation for details on scoping rules.
-     *
-     * @param Scope $scope
-     */
-    public function setScope(Scope $scope)
-    {
-    }
-    /**
-     * @return Scope
-     */
-    public function getScope()
+    class Google_Service_BinaryAuthorization_CheckSet extends \Google\Service\BinaryAuthorization\CheckSet
     {
     }
 }

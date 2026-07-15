@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class Postdeploy extends \Google\Collection
-{
-    protected $collection_key = 'actions';
-    /**
-     * Optional. A sequence of Skaffold custom actions to invoke during execution
-     * of the postdeploy job.
-     *
-     * @var string[]
-     */
-    public $actions;
-    /**
-     * Optional. A sequence of Skaffold custom actions to invoke during execution
-     * of the postdeploy job.
-     *
-     * @param string[] $actions
-     */
-    public function setActions($actions)
+namespace Google\Service\CloudDeploy {
+    class Postdeploy extends \Google\Collection
     {
+        protected $collection_key = 'actions';
+        /**
+         * Optional. A sequence of Skaffold custom actions to invoke during execution
+         * of the postdeploy job.
+         *
+         * @var string[]
+         */
+        public $actions;
+        /**
+         * Optional. A sequence of Skaffold custom actions to invoke during execution
+         * of the postdeploy job.
+         *
+         * @param string[] $actions
+         */
+        public function setActions($actions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getActions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudDeploy\Postdeploy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActions()
+    class Google_Service_CloudDeploy_Postdeploy extends \Google\Service\CloudDeploy\Postdeploy
     {
     }
 }

@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Appengine;
-
-class ZipInfo extends \Google\Model
-{
-    /**
-     * An estimate of the number of files in a zip for a zip deployment. If set,
-     * must be greater than or equal to the actual number of files. Used for
-     * optimizing performance; if not provided, deployment may be slow.
-     *
-     * @var int
-     */
-    public $filesCount;
-    /**
-     * URL of the zip file to deploy from. Must be a URL to a resource in Google
-     * Cloud Storage in the form 'http(s)://storage.googleapis.com//'.
-     *
-     * @var string
-     */
-    public $sourceUrl;
-    /**
-     * An estimate of the number of files in a zip for a zip deployment. If set,
-     * must be greater than or equal to the actual number of files. Used for
-     * optimizing performance; if not provided, deployment may be slow.
-     *
-     * @param int $filesCount
-     */
-    public function setFilesCount($filesCount)
+namespace Google\Service\Appengine {
+    class ZipInfo extends \Google\Model
     {
+        /**
+         * An estimate of the number of files in a zip for a zip deployment. If set,
+         * must be greater than or equal to the actual number of files. Used for
+         * optimizing performance; if not provided, deployment may be slow.
+         *
+         * @var int
+         */
+        public $filesCount;
+        /**
+         * URL of the zip file to deploy from. Must be a URL to a resource in Google
+         * Cloud Storage in the form 'http(s)://storage.googleapis.com//'.
+         *
+         * @var string
+         */
+        public $sourceUrl;
+        /**
+         * An estimate of the number of files in a zip for a zip deployment. If set,
+         * must be greater than or equal to the actual number of files. Used for
+         * optimizing performance; if not provided, deployment may be slow.
+         *
+         * @param int $filesCount
+         */
+        public function setFilesCount($filesCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getFilesCount()
+        {
+        }
+        /**
+         * URL of the zip file to deploy from. Must be a URL to a resource in Google
+         * Cloud Storage in the form 'http(s)://storage.googleapis.com//'.
+         *
+         * @param string $sourceUrl
+         */
+        public function setSourceUrl($sourceUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Appengine\ZipInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFilesCount()
-    {
-    }
-    /**
-     * URL of the zip file to deploy from. Must be a URL to a resource in Google
-     * Cloud Storage in the form 'http(s)://storage.googleapis.com//'.
-     *
-     * @param string $sourceUrl
-     */
-    public function setSourceUrl($sourceUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourceUrl()
+    class Google_Service_Appengine_ZipInfo extends \Google\Service\Appengine\ZipInfo
     {
     }
 }

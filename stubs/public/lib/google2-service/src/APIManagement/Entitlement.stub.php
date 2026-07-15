@@ -21,112 +21,121 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIManagement;
-
-class Entitlement extends \Google\Model
-{
-    /**
-     * Whether API Observation is entitled.
-     *
-     * @var bool
-     */
-    public $apiObservationEntitled;
-    /**
-     * Project number of associated billing project that has Apigee and Advanced
-     * API Security entitled.
-     *
-     * @var string
-     */
-    public $billingProjectNumber;
-    /**
-     * Output only. The time of the entitlement creation.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Identifier. The entitlement resource name
-     * `projects/{project}/locations/{location}/entitlement`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The time of the entitlement update.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Whether API Observation is entitled.
-     *
-     * @param bool $apiObservationEntitled
-     */
-    public function setApiObservationEntitled($apiObservationEntitled)
+namespace Google\Service\APIManagement {
+    class Entitlement extends \Google\Model
     {
+        /**
+         * Whether API Observation is entitled.
+         *
+         * @var bool
+         */
+        public $apiObservationEntitled;
+        /**
+         * Project number of associated billing project that has Apigee and Advanced
+         * API Security entitled.
+         *
+         * @var string
+         */
+        public $billingProjectNumber;
+        /**
+         * Output only. The time of the entitlement creation.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Identifier. The entitlement resource name
+         * `projects/{project}/locations/{location}/entitlement`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The time of the entitlement update.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Whether API Observation is entitled.
+         *
+         * @param bool $apiObservationEntitled
+         */
+        public function setApiObservationEntitled($apiObservationEntitled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getApiObservationEntitled()
+        {
+        }
+        /**
+         * Project number of associated billing project that has Apigee and Advanced
+         * API Security entitled.
+         *
+         * @param string $billingProjectNumber
+         */
+        public function setBillingProjectNumber($billingProjectNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBillingProjectNumber()
+        {
+        }
+        /**
+         * Output only. The time of the entitlement creation.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Identifier. The entitlement resource name
+         * `projects/{project}/locations/{location}/entitlement`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The time of the entitlement update.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\APIManagement\Entitlement registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiObservationEntitled()
-    {
-    }
-    /**
-     * Project number of associated billing project that has Apigee and Advanced
-     * API Security entitled.
-     *
-     * @param string $billingProjectNumber
-     */
-    public function setBillingProjectNumber($billingProjectNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBillingProjectNumber()
-    {
-    }
-    /**
-     * Output only. The time of the entitlement creation.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Identifier. The entitlement resource name
-     * `projects/{project}/locations/{location}/entitlement`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The time of the entitlement update.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_APIManagement_Entitlement extends \Google\Service\APIManagement\Entitlement
     {
     }
 }

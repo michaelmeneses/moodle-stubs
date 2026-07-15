@@ -21,112 +21,121 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class Country extends \Google\Model
-{
-    /**
-     * Country code.
-     *
-     * @var string
-     */
-    public $countryCode;
-    /**
-     * DART ID of this country. This is the ID used for targeting and generating
-     * reports.
-     *
-     * @var string
-     */
-    public $dartId;
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#country".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Name of this country.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Whether ad serving supports secure servers in this country.
-     *
-     * @var bool
-     */
-    public $sslEnabled;
-    /**
-     * Country code.
-     *
-     * @param string $countryCode
-     */
-    public function setCountryCode($countryCode)
+namespace Google\Service\Dfareporting {
+    class Country extends \Google\Model
     {
+        /**
+         * Country code.
+         *
+         * @var string
+         */
+        public $countryCode;
+        /**
+         * DART ID of this country. This is the ID used for targeting and generating
+         * reports.
+         *
+         * @var string
+         */
+        public $dartId;
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#country".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Name of this country.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Whether ad serving supports secure servers in this country.
+         *
+         * @var bool
+         */
+        public $sslEnabled;
+        /**
+         * Country code.
+         *
+         * @param string $countryCode
+         */
+        public function setCountryCode($countryCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCountryCode()
+        {
+        }
+        /**
+         * DART ID of this country. This is the ID used for targeting and generating
+         * reports.
+         *
+         * @param string $dartId
+         */
+        public function setDartId($dartId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDartId()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#country".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Name of this country.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Whether ad serving supports secure servers in this country.
+         *
+         * @param bool $sslEnabled
+         */
+        public function setSslEnabled($sslEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSslEnabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\Country registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCountryCode()
-    {
-    }
-    /**
-     * DART ID of this country. This is the ID used for targeting and generating
-     * reports.
-     *
-     * @param string $dartId
-     */
-    public function setDartId($dartId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDartId()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#country".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Name of this country.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Whether ad serving supports secure servers in this country.
-     *
-     * @param bool $sslEnabled
-     */
-    public function setSslEnabled($sslEnabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSslEnabled()
+    class Google_Service_Dfareporting_Country extends \Google\Service\Dfareporting\Country
     {
     }
 }

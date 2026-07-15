@@ -21,127 +21,136 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class RepairRolloutRule extends \Google\Collection
-{
-    protected $collection_key = 'repairPhases';
-    protected $conditionType = AutomationRuleCondition::class;
-    protected $conditionDataType = '';
-    /**
-     * Required. ID of the rule. This id must be unique in the `Automation`
-     * resource to which this rule belongs. The format is
-     * `[a-z]([a-z0-9-]{0,61}[a-z0-9])?`.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Optional. Jobs to repair. Proceeds only after job name matched any one in
-     * the list, or for all jobs if unspecified or empty. The phase that includes
-     * the job must match the phase ID specified in `source_phase`. This value
-     * must consist of lower-case letters, numbers, and hyphens, start with a
-     * letter and end with a letter or a number, and have a max length of 63
-     * characters. In other words, it must match the following regex:
-     * `^[a-z]([a-z0-9-]{0,61}[a-z0-9])?$`.
-     *
-     * @var string[]
-     */
-    public $jobs;
-    /**
-     * Optional. Phases within which jobs are subject to automatic repair actions
-     * on failure. Proceeds only after phase name matched any one in the list, or
-     * for all phases if unspecified. This value must consist of lower-case
-     * letters, numbers, and hyphens, start with a letter and end with a letter or
-     * a number, and have a max length of 63 characters. In other words, it must
-     * match the following regex: `^[a-z]([a-z0-9-]{0,61}[a-z0-9])?$`.
-     *
-     * @var string[]
-     */
-    public $phases;
-    protected $repairPhasesType = RepairPhaseConfig::class;
-    protected $repairPhasesDataType = 'array';
-    /**
-     * Output only. Information around the state of the 'Automation' rule.
-     *
-     * @param AutomationRuleCondition $condition
-     */
-    public function setCondition(AutomationRuleCondition $condition)
+namespace Google\Service\CloudDeploy {
+    class RepairRolloutRule extends \Google\Collection
     {
+        protected $collection_key = 'repairPhases';
+        protected $conditionType = AutomationRuleCondition::class;
+        protected $conditionDataType = '';
+        /**
+         * Required. ID of the rule. This id must be unique in the `Automation`
+         * resource to which this rule belongs. The format is
+         * `[a-z]([a-z0-9-]{0,61}[a-z0-9])?`.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Optional. Jobs to repair. Proceeds only after job name matched any one in
+         * the list, or for all jobs if unspecified or empty. The phase that includes
+         * the job must match the phase ID specified in `source_phase`. This value
+         * must consist of lower-case letters, numbers, and hyphens, start with a
+         * letter and end with a letter or a number, and have a max length of 63
+         * characters. In other words, it must match the following regex:
+         * `^[a-z]([a-z0-9-]{0,61}[a-z0-9])?$`.
+         *
+         * @var string[]
+         */
+        public $jobs;
+        /**
+         * Optional. Phases within which jobs are subject to automatic repair actions
+         * on failure. Proceeds only after phase name matched any one in the list, or
+         * for all phases if unspecified. This value must consist of lower-case
+         * letters, numbers, and hyphens, start with a letter and end with a letter or
+         * a number, and have a max length of 63 characters. In other words, it must
+         * match the following regex: `^[a-z]([a-z0-9-]{0,61}[a-z0-9])?$`.
+         *
+         * @var string[]
+         */
+        public $phases;
+        protected $repairPhasesType = RepairPhaseConfig::class;
+        protected $repairPhasesDataType = 'array';
+        /**
+         * Output only. Information around the state of the 'Automation' rule.
+         *
+         * @param AutomationRuleCondition $condition
+         */
+        public function setCondition(AutomationRuleCondition $condition)
+        {
+        }
+        /**
+         * @return AutomationRuleCondition
+         */
+        public function getCondition()
+        {
+        }
+        /**
+         * Required. ID of the rule. This id must be unique in the `Automation`
+         * resource to which this rule belongs. The format is
+         * `[a-z]([a-z0-9-]{0,61}[a-z0-9])?`.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Optional. Jobs to repair. Proceeds only after job name matched any one in
+         * the list, or for all jobs if unspecified or empty. The phase that includes
+         * the job must match the phase ID specified in `source_phase`. This value
+         * must consist of lower-case letters, numbers, and hyphens, start with a
+         * letter and end with a letter or a number, and have a max length of 63
+         * characters. In other words, it must match the following regex:
+         * `^[a-z]([a-z0-9-]{0,61}[a-z0-9])?$`.
+         *
+         * @param string[] $jobs
+         */
+        public function setJobs($jobs)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getJobs()
+        {
+        }
+        /**
+         * Optional. Phases within which jobs are subject to automatic repair actions
+         * on failure. Proceeds only after phase name matched any one in the list, or
+         * for all phases if unspecified. This value must consist of lower-case
+         * letters, numbers, and hyphens, start with a letter and end with a letter or
+         * a number, and have a max length of 63 characters. In other words, it must
+         * match the following regex: `^[a-z]([a-z0-9-]{0,61}[a-z0-9])?$`.
+         *
+         * @param string[] $phases
+         */
+        public function setPhases($phases)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPhases()
+        {
+        }
+        /**
+         * Required. Defines the types of automatic repair phases for failed jobs.
+         *
+         * @param RepairPhaseConfig[] $repairPhases
+         */
+        public function setRepairPhases($repairPhases)
+        {
+        }
+        /**
+         * @return RepairPhaseConfig[]
+         */
+        public function getRepairPhases()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AutomationRuleCondition
+     * Runtime class alias of \Google\Service\CloudDeploy\RepairRolloutRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCondition()
-    {
-    }
-    /**
-     * Required. ID of the rule. This id must be unique in the `Automation`
-     * resource to which this rule belongs. The format is
-     * `[a-z]([a-z0-9-]{0,61}[a-z0-9])?`.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Optional. Jobs to repair. Proceeds only after job name matched any one in
-     * the list, or for all jobs if unspecified or empty. The phase that includes
-     * the job must match the phase ID specified in `source_phase`. This value
-     * must consist of lower-case letters, numbers, and hyphens, start with a
-     * letter and end with a letter or a number, and have a max length of 63
-     * characters. In other words, it must match the following regex:
-     * `^[a-z]([a-z0-9-]{0,61}[a-z0-9])?$`.
-     *
-     * @param string[] $jobs
-     */
-    public function setJobs($jobs)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getJobs()
-    {
-    }
-    /**
-     * Optional. Phases within which jobs are subject to automatic repair actions
-     * on failure. Proceeds only after phase name matched any one in the list, or
-     * for all phases if unspecified. This value must consist of lower-case
-     * letters, numbers, and hyphens, start with a letter and end with a letter or
-     * a number, and have a max length of 63 characters. In other words, it must
-     * match the following regex: `^[a-z]([a-z0-9-]{0,61}[a-z0-9])?$`.
-     *
-     * @param string[] $phases
-     */
-    public function setPhases($phases)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPhases()
-    {
-    }
-    /**
-     * Required. Defines the types of automatic repair phases for failed jobs.
-     *
-     * @param RepairPhaseConfig[] $repairPhases
-     */
-    public function setRepairPhases($repairPhases)
-    {
-    }
-    /**
-     * @return RepairPhaseConfig[]
-     */
-    public function getRepairPhases()
+    class Google_Service_CloudDeploy_RepairRolloutRule extends \Google\Service\CloudDeploy\RepairRolloutRule
     {
     }
 }

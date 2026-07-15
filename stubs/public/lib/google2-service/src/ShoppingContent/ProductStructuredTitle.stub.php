@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class ProductStructuredTitle extends \Google\Model
-{
-    /**
-     * Required. The title text. Maximum length is 150 characters.
-     *
-     * @var string
-     */
-    public $content;
-    /**
-     * Optional. The digital source type. Acceptable values are: -
-     * "`trained_algorithmic_media`" - "`default`"
-     *
-     * @var string
-     */
-    public $digitalSourceType;
-    /**
-     * Required. The title text. Maximum length is 150 characters.
-     *
-     * @param string $content
-     */
-    public function setContent($content)
+namespace Google\Service\ShoppingContent {
+    class ProductStructuredTitle extends \Google\Model
     {
+        /**
+         * Required. The title text. Maximum length is 150 characters.
+         *
+         * @var string
+         */
+        public $content;
+        /**
+         * Optional. The digital source type. Acceptable values are: -
+         * "`trained_algorithmic_media`" - "`default`"
+         *
+         * @var string
+         */
+        public $digitalSourceType;
+        /**
+         * Required. The title text. Maximum length is 150 characters.
+         *
+         * @param string $content
+         */
+        public function setContent($content)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContent()
+        {
+        }
+        /**
+         * Optional. The digital source type. Acceptable values are: -
+         * "`trained_algorithmic_media`" - "`default`"
+         *
+         * @param string $digitalSourceType
+         */
+        public function setDigitalSourceType($digitalSourceType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDigitalSourceType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\ProductStructuredTitle registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContent()
-    {
-    }
-    /**
-     * Optional. The digital source type. Acceptable values are: -
-     * "`trained_algorithmic_media`" - "`default`"
-     *
-     * @param string $digitalSourceType
-     */
-    public function setDigitalSourceType($digitalSourceType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDigitalSourceType()
+    class Google_Service_ShoppingContent_ProductStructuredTitle extends \Google\Service\ShoppingContent\ProductStructuredTitle
     {
     }
 }

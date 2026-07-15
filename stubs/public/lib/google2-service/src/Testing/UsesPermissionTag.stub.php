@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Testing;
-
-class UsesPermissionTag extends \Google\Model
-{
-    /**
-     * The android:name value
-     *
-     * @var int
-     */
-    public $maxSdkVersion;
-    /**
-     * The android:name value
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The android:name value
-     *
-     * @param int $maxSdkVersion
-     */
-    public function setMaxSdkVersion($maxSdkVersion)
+namespace Google\Service\Testing {
+    class UsesPermissionTag extends \Google\Model
     {
+        /**
+         * The android:name value
+         *
+         * @var int
+         */
+        public $maxSdkVersion;
+        /**
+         * The android:name value
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The android:name value
+         *
+         * @param int $maxSdkVersion
+         */
+        public function setMaxSdkVersion($maxSdkVersion)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxSdkVersion()
+        {
+        }
+        /**
+         * The android:name value
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Testing\UsesPermissionTag registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaxSdkVersion()
-    {
-    }
-    /**
-     * The android:name value
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Testing_UsesPermissionTag extends \Google\Service\Testing\UsesPermissionTag
     {
     }
 }

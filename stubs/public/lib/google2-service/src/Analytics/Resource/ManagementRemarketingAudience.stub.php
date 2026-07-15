@@ -21,119 +21,130 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics\Resource;
-
-/**
- * The "remarketingAudience" collection of methods.
- * Typical usage is:
- *  <code>
- *   $analyticsService = new Google\Service\Analytics(...);
- *   $remarketingAudience = $analyticsService->management_remarketingAudience;
- *  </code>
- */
-class ManagementRemarketingAudience extends \Google\Service\Resource
-{
+namespace Google\Service\Analytics\Resource {
+    use Google\Service\Analytics\RemarketingAudience;
+    use Google\Service\Analytics\RemarketingAudiences;
     /**
-     * Delete a remarketing audience. (remarketingAudience.delete)
-     *
-     * @param string $accountId Account ID to which the remarketing audience
-     * belongs.
-     * @param string $webPropertyId Web property ID to which the remarketing
-     * audience belongs.
-     * @param string $remarketingAudienceId The ID of the remarketing audience to
-     * delete.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * The "remarketingAudience" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $analyticsService = new Google\Service\Analytics(...);
+     *   $remarketingAudience = $analyticsService->management_remarketingAudience;
+     *  </code>
      */
-    public function delete($accountId, $webPropertyId, $remarketingAudienceId, $optParams = [])
+    class ManagementRemarketingAudience extends \Google\Service\Resource
     {
+        /**
+         * Delete a remarketing audience. (remarketingAudience.delete)
+         *
+         * @param string $accountId Account ID to which the remarketing audience
+         * belongs.
+         * @param string $webPropertyId Web property ID to which the remarketing
+         * audience belongs.
+         * @param string $remarketingAudienceId The ID of the remarketing audience to
+         * delete.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($accountId, $webPropertyId, $remarketingAudienceId, $optParams = [])
+        {
+        }
+        /**
+         * Gets a remarketing audience to which the user has access.
+         * (remarketingAudience.get)
+         *
+         * @param string $accountId The account ID of the remarketing audience to
+         * retrieve.
+         * @param string $webPropertyId The web property ID of the remarketing audience
+         * to retrieve.
+         * @param string $remarketingAudienceId The ID of the remarketing audience to
+         * retrieve.
+         * @param array $optParams Optional parameters.
+         * @return RemarketingAudience
+         * @throws \Google\Service\Exception
+         */
+        public function get($accountId, $webPropertyId, $remarketingAudienceId, $optParams = [])
+        {
+        }
+        /**
+         * Creates a new remarketing audience. (remarketingAudience.insert)
+         *
+         * @param string $accountId The account ID for which to create the remarketing
+         * audience.
+         * @param string $webPropertyId Web property ID for which to create the
+         * remarketing audience.
+         * @param RemarketingAudience $postBody
+         * @param array $optParams Optional parameters.
+         * @return RemarketingAudience
+         * @throws \Google\Service\Exception
+         */
+        public function insert($accountId, $webPropertyId, RemarketingAudience $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Lists remarketing audiences to which the user has access.
+         * (remarketingAudience.listManagementRemarketingAudience)
+         *
+         * @param string $accountId The account ID of the remarketing audiences to
+         * retrieve.
+         * @param string $webPropertyId The web property ID of the remarketing audiences
+         * to retrieve.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int max-results The maximum number of remarketing audiences to
+         * include in this response.
+         * @opt_param int start-index An index of the first entity to retrieve. Use this
+         * parameter as a pagination mechanism along with the max-results parameter.
+         * @opt_param string type
+         * @return RemarketingAudiences
+         * @throws \Google\Service\Exception
+         */
+        public function listManagementRemarketingAudience($accountId, $webPropertyId, $optParams = [])
+        {
+        }
+        /**
+         * Updates an existing remarketing audience. This method supports patch
+         * semantics. (remarketingAudience.patch)
+         *
+         * @param string $accountId The account ID of the remarketing audience to
+         * update.
+         * @param string $webPropertyId The web property ID of the remarketing audience
+         * to update.
+         * @param string $remarketingAudienceId The ID of the remarketing audience to
+         * update.
+         * @param RemarketingAudience $postBody
+         * @param array $optParams Optional parameters.
+         * @return RemarketingAudience
+         * @throws \Google\Service\Exception
+         */
+        public function patch($accountId, $webPropertyId, $remarketingAudienceId, RemarketingAudience $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Updates an existing remarketing audience. (remarketingAudience.update)
+         *
+         * @param string $accountId The account ID of the remarketing audience to
+         * update.
+         * @param string $webPropertyId The web property ID of the remarketing audience
+         * to update.
+         * @param string $remarketingAudienceId The ID of the remarketing audience to
+         * update.
+         * @param RemarketingAudience $postBody
+         * @param array $optParams Optional parameters.
+         * @return RemarketingAudience
+         * @throws \Google\Service\Exception
+         */
+        public function update($accountId, $webPropertyId, $remarketingAudienceId, RemarketingAudience $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets a remarketing audience to which the user has access.
-     * (remarketingAudience.get)
-     *
-     * @param string $accountId The account ID of the remarketing audience to
-     * retrieve.
-     * @param string $webPropertyId The web property ID of the remarketing audience
-     * to retrieve.
-     * @param string $remarketingAudienceId The ID of the remarketing audience to
-     * retrieve.
-     * @param array $optParams Optional parameters.
-     * @return RemarketingAudience
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Analytics\Resource\ManagementRemarketingAudience registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($accountId, $webPropertyId, $remarketingAudienceId, $optParams = [])
-    {
-    }
-    /**
-     * Creates a new remarketing audience. (remarketingAudience.insert)
-     *
-     * @param string $accountId The account ID for which to create the remarketing
-     * audience.
-     * @param string $webPropertyId Web property ID for which to create the
-     * remarketing audience.
-     * @param RemarketingAudience $postBody
-     * @param array $optParams Optional parameters.
-     * @return RemarketingAudience
-     * @throws \Google\Service\Exception
-     */
-    public function insert($accountId, $webPropertyId, RemarketingAudience $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Lists remarketing audiences to which the user has access.
-     * (remarketingAudience.listManagementRemarketingAudience)
-     *
-     * @param string $accountId The account ID of the remarketing audiences to
-     * retrieve.
-     * @param string $webPropertyId The web property ID of the remarketing audiences
-     * to retrieve.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int max-results The maximum number of remarketing audiences to
-     * include in this response.
-     * @opt_param int start-index An index of the first entity to retrieve. Use this
-     * parameter as a pagination mechanism along with the max-results parameter.
-     * @opt_param string type
-     * @return RemarketingAudiences
-     * @throws \Google\Service\Exception
-     */
-    public function listManagementRemarketingAudience($accountId, $webPropertyId, $optParams = [])
-    {
-    }
-    /**
-     * Updates an existing remarketing audience. This method supports patch
-     * semantics. (remarketingAudience.patch)
-     *
-     * @param string $accountId The account ID of the remarketing audience to
-     * update.
-     * @param string $webPropertyId The web property ID of the remarketing audience
-     * to update.
-     * @param string $remarketingAudienceId The ID of the remarketing audience to
-     * update.
-     * @param RemarketingAudience $postBody
-     * @param array $optParams Optional parameters.
-     * @return RemarketingAudience
-     * @throws \Google\Service\Exception
-     */
-    public function patch($accountId, $webPropertyId, $remarketingAudienceId, RemarketingAudience $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Updates an existing remarketing audience. (remarketingAudience.update)
-     *
-     * @param string $accountId The account ID of the remarketing audience to
-     * update.
-     * @param string $webPropertyId The web property ID of the remarketing audience
-     * to update.
-     * @param string $remarketingAudienceId The ID of the remarketing audience to
-     * update.
-     * @param RemarketingAudience $postBody
-     * @param array $optParams Optional parameters.
-     * @return RemarketingAudience
-     * @throws \Google\Service\Exception
-     */
-    public function update($accountId, $webPropertyId, $remarketingAudienceId, RemarketingAudience $postBody, $optParams = [])
+    class Google_Service_Analytics_Resource_ManagementRemarketingAudience extends \Google\Service\Analytics\Resource\ManagementRemarketingAudience
     {
     }
 }

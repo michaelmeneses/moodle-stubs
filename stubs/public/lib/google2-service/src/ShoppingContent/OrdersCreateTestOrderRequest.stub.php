@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class OrdersCreateTestOrderRequest extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $country;
-    /**
-     * @var string
-     */
-    public $templateName;
-    protected $testOrderType = TestOrder::class;
-    protected $testOrderDataType = '';
-    /**
-     * @param string
-     */
-    public function setCountry($country)
+namespace Google\Service\ShoppingContent {
+    class OrdersCreateTestOrderRequest extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $country;
+        /**
+         * @var string
+         */
+        public $templateName;
+        protected $testOrderType = TestOrder::class;
+        protected $testOrderDataType = '';
+        /**
+         * @param string
+         */
+        public function setCountry($country)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCountry()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTemplateName($templateName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTemplateName()
+        {
+        }
+        /**
+         * @param TestOrder
+         */
+        public function setTestOrder(TestOrder $testOrder)
+        {
+        }
+        /**
+         * @return TestOrder
+         */
+        public function getTestOrder()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\OrdersCreateTestOrderRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCountry()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTemplateName($templateName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTemplateName()
-    {
-    }
-    /**
-     * @param TestOrder
-     */
-    public function setTestOrder(TestOrder $testOrder)
-    {
-    }
-    /**
-     * @return TestOrder
-     */
-    public function getTestOrder()
+    class Google_Service_ShoppingContent_OrdersCreateTestOrderRequest extends \Google\Service\ShoppingContent\OrdersCreateTestOrderRequest
     {
     }
 }

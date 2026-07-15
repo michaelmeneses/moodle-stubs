@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1SearchResponseQueryExpansionInfo extends \Google\Model
-{
-    /**
-     * Bool describing whether query expansion has occurred.
-     *
-     * @var bool
-     */
-    public $expandedQuery;
-    /**
-     * Number of pinned results. This field will only be set when expansion
-     * happens and SearchRequest.QueryExpansionSpec.pin_unexpanded_results is set
-     * to true.
-     *
-     * @var string
-     */
-    public $pinnedResultCount;
-    /**
-     * Bool describing whether query expansion has occurred.
-     *
-     * @param bool $expandedQuery
-     */
-    public function setExpandedQuery($expandedQuery)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1SearchResponseQueryExpansionInfo extends \Google\Model
     {
+        /**
+         * Bool describing whether query expansion has occurred.
+         *
+         * @var bool
+         */
+        public $expandedQuery;
+        /**
+         * Number of pinned results. This field will only be set when expansion
+         * happens and SearchRequest.QueryExpansionSpec.pin_unexpanded_results is set
+         * to true.
+         *
+         * @var string
+         */
+        public $pinnedResultCount;
+        /**
+         * Bool describing whether query expansion has occurred.
+         *
+         * @param bool $expandedQuery
+         */
+        public function setExpandedQuery($expandedQuery)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getExpandedQuery()
+        {
+        }
+        /**
+         * Number of pinned results. This field will only be set when expansion
+         * happens and SearchRequest.QueryExpansionSpec.pin_unexpanded_results is set
+         * to true.
+         *
+         * @param string $pinnedResultCount
+         */
+        public function setPinnedResultCount($pinnedResultCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPinnedResultCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1SearchResponseQueryExpansionInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExpandedQuery()
-    {
-    }
-    /**
-     * Number of pinned results. This field will only be set when expansion
-     * happens and SearchRequest.QueryExpansionSpec.pin_unexpanded_results is set
-     * to true.
-     *
-     * @param string $pinnedResultCount
-     */
-    public function setPinnedResultCount($pinnedResultCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPinnedResultCount()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1SearchResponseQueryExpansionInfo extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1SearchResponseQueryExpansionInfo
     {
     }
 }

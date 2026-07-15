@@ -21,107 +21,116 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseHosting;
-
-class HttpUpdate extends \Google\Model
-{
-    protected $checkErrorType = Status::class;
-    protected $checkErrorDataType = '';
-    /**
-     * Output only. A text string to serve at the path.
-     *
-     * @var string
-     */
-    public $desired;
-    /**
-     * Output only. Whether Hosting was able to find the required file contents on
-     * the specified path during its last check.
-     *
-     * @var string
-     */
-    public $discovered;
-    /**
-     * Output only. The last time Hosting systems checked for the file contents.
-     *
-     * @var string
-     */
-    public $lastCheckTime;
-    /**
-     * Output only. The path to the file.
-     *
-     * @var string
-     */
-    public $path;
-    /**
-     * Output only. An error encountered during the last contents check. If null,
-     * the check completed successfully.
-     *
-     * @param Status $checkError
-     */
-    public function setCheckError(Status $checkError)
+namespace Google\Service\FirebaseHosting {
+    class HttpUpdate extends \Google\Model
     {
+        protected $checkErrorType = Status::class;
+        protected $checkErrorDataType = '';
+        /**
+         * Output only. A text string to serve at the path.
+         *
+         * @var string
+         */
+        public $desired;
+        /**
+         * Output only. Whether Hosting was able to find the required file contents on
+         * the specified path during its last check.
+         *
+         * @var string
+         */
+        public $discovered;
+        /**
+         * Output only. The last time Hosting systems checked for the file contents.
+         *
+         * @var string
+         */
+        public $lastCheckTime;
+        /**
+         * Output only. The path to the file.
+         *
+         * @var string
+         */
+        public $path;
+        /**
+         * Output only. An error encountered during the last contents check. If null,
+         * the check completed successfully.
+         *
+         * @param Status $checkError
+         */
+        public function setCheckError(Status $checkError)
+        {
+        }
+        /**
+         * @return Status
+         */
+        public function getCheckError()
+        {
+        }
+        /**
+         * Output only. A text string to serve at the path.
+         *
+         * @param string $desired
+         */
+        public function setDesired($desired)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDesired()
+        {
+        }
+        /**
+         * Output only. Whether Hosting was able to find the required file contents on
+         * the specified path during its last check.
+         *
+         * @param string $discovered
+         */
+        public function setDiscovered($discovered)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDiscovered()
+        {
+        }
+        /**
+         * Output only. The last time Hosting systems checked for the file contents.
+         *
+         * @param string $lastCheckTime
+         */
+        public function setLastCheckTime($lastCheckTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastCheckTime()
+        {
+        }
+        /**
+         * Output only. The path to the file.
+         *
+         * @param string $path
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Status
+     * Runtime class alias of \Google\Service\FirebaseHosting\HttpUpdate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCheckError()
-    {
-    }
-    /**
-     * Output only. A text string to serve at the path.
-     *
-     * @param string $desired
-     */
-    public function setDesired($desired)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDesired()
-    {
-    }
-    /**
-     * Output only. Whether Hosting was able to find the required file contents on
-     * the specified path during its last check.
-     *
-     * @param string $discovered
-     */
-    public function setDiscovered($discovered)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDiscovered()
-    {
-    }
-    /**
-     * Output only. The last time Hosting systems checked for the file contents.
-     *
-     * @param string $lastCheckTime
-     */
-    public function setLastCheckTime($lastCheckTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastCheckTime()
-    {
-    }
-    /**
-     * Output only. The path to the file.
-     *
-     * @param string $path
-     */
-    public function setPath($path)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPath()
+    class Google_Service_FirebaseHosting_HttpUpdate extends \Google\Service\FirebaseHosting\HttpUpdate
     {
     }
 }

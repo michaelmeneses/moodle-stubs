@@ -21,71 +21,88 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Logging\Resource;
-
-/**
- * The "entries" collection of methods.
- * Typical usage is:
- *  <code>
- *   $loggingService = new Google\Service\Logging(...);
- *   $entries = $loggingService->entries;
- *  </code>
- */
-class Entries extends \Google\Service\Resource
-{
+namespace Google\Service\Logging\Resource {
+    use Google\Service\Logging\CopyLogEntriesRequest;
+    use Google\Service\Logging\ListLogEntriesRequest;
+    use Google\Service\Logging\ListLogEntriesResponse;
+    use Google\Service\Logging\Operation;
+    use Google\Service\Logging\TailLogEntriesRequest;
+    use Google\Service\Logging\TailLogEntriesResponse;
+    use Google\Service\Logging\WriteLogEntriesRequest;
+    use Google\Service\Logging\WriteLogEntriesResponse;
     /**
-     * Copies a set of log entries from a log bucket to a Cloud Storage bucket.
-     * (entries.copy)
-     *
-     * @param CopyLogEntriesRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * The "entries" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $loggingService = new Google\Service\Logging(...);
+     *   $entries = $loggingService->entries;
+     *  </code>
      */
-    public function copy(CopyLogEntriesRequest $postBody, $optParams = [])
+    class Entries extends \Google\Service\Resource
     {
+        /**
+         * Copies a set of log entries from a log bucket to a Cloud Storage bucket.
+         * (entries.copy)
+         *
+         * @param CopyLogEntriesRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function copy(CopyLogEntriesRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Lists log entries. Use this method to retrieve log entries that originated
+         * from a project/folder/organization/billing account. For ways to export log
+         * entries, see Exporting Logs (https://cloud.google.com/logging/docs/export).
+         * (entries.listEntries)
+         *
+         * @param ListLogEntriesRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return ListLogEntriesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listEntries(ListLogEntriesRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Streaming read of log entries as they are received. Until the stream is
+         * terminated, it will continue reading logs. (entries.tail)
+         *
+         * @param TailLogEntriesRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return TailLogEntriesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function tail(TailLogEntriesRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Writes log entries to Logging. This API method is the only way to send log
+         * entries to Logging. This method is used, directly or indirectly, by the
+         * Logging agent (fluentd) and all logging libraries configured to use Logging.
+         * A single request may contain log entries for a maximum of 1000 different
+         * resource names (projects, organizations, billing accounts or folders), where
+         * the resource name for a log entry is determined from its logName field.
+         * (entries.write)
+         *
+         * @param WriteLogEntriesRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return WriteLogEntriesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function write(WriteLogEntriesRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists log entries. Use this method to retrieve log entries that originated
-     * from a project/folder/organization/billing account. For ways to export log
-     * entries, see Exporting Logs (https://cloud.google.com/logging/docs/export).
-     * (entries.listEntries)
-     *
-     * @param ListLogEntriesRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return ListLogEntriesResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Logging\Resource\Entries registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listEntries(ListLogEntriesRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Streaming read of log entries as they are received. Until the stream is
-     * terminated, it will continue reading logs. (entries.tail)
-     *
-     * @param TailLogEntriesRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return TailLogEntriesResponse
-     * @throws \Google\Service\Exception
-     */
-    public function tail(TailLogEntriesRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Writes log entries to Logging. This API method is the only way to send log
-     * entries to Logging. This method is used, directly or indirectly, by the
-     * Logging agent (fluentd) and all logging libraries configured to use Logging.
-     * A single request may contain log entries for a maximum of 1000 different
-     * resource names (projects, organizations, billing accounts or folders), where
-     * the resource name for a log entry is determined from its logName field.
-     * (entries.write)
-     *
-     * @param WriteLogEntriesRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return WriteLogEntriesResponse
-     * @throws \Google\Service\Exception
-     */
-    public function write(WriteLogEntriesRequest $postBody, $optParams = [])
+    class Google_Service_Logging_Resource_Entries extends \Google\Service\Logging\Resource\Entries
     {
     }
 }

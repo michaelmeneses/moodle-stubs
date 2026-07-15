@@ -21,101 +21,110 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ReasoningEngineContextSpecMemoryBankConfig extends \Google\Collection
-{
-    protected $collection_key = 'customizationConfigs';
-    protected $customizationConfigsType = GoogleCloudAiplatformV1MemoryBankCustomizationConfig::class;
-    protected $customizationConfigsDataType = 'array';
-    /**
-     * If true, no memory revisions will be created for any requests to the Memory
-     * Bank.
-     *
-     * @var bool
-     */
-    public $disableMemoryRevisions;
-    protected $generationConfigType = GoogleCloudAiplatformV1ReasoningEngineContextSpecMemoryBankConfigGenerationConfig::class;
-    protected $generationConfigDataType = '';
-    protected $similaritySearchConfigType = GoogleCloudAiplatformV1ReasoningEngineContextSpecMemoryBankConfigSimilaritySearchConfig::class;
-    protected $similaritySearchConfigDataType = '';
-    protected $ttlConfigType = GoogleCloudAiplatformV1ReasoningEngineContextSpecMemoryBankConfigTtlConfig::class;
-    protected $ttlConfigDataType = '';
-    /**
-     * Optional. Configuration for how to customize Memory Bank behavior for a
-     * particular scope.
-     *
-     * @param GoogleCloudAiplatformV1MemoryBankCustomizationConfig[] $customizationConfigs
-     */
-    public function setCustomizationConfigs($customizationConfigs)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ReasoningEngineContextSpecMemoryBankConfig extends \Google\Collection
     {
+        protected $collection_key = 'customizationConfigs';
+        protected $customizationConfigsType = GoogleCloudAiplatformV1MemoryBankCustomizationConfig::class;
+        protected $customizationConfigsDataType = 'array';
+        /**
+         * If true, no memory revisions will be created for any requests to the Memory
+         * Bank.
+         *
+         * @var bool
+         */
+        public $disableMemoryRevisions;
+        protected $generationConfigType = GoogleCloudAiplatformV1ReasoningEngineContextSpecMemoryBankConfigGenerationConfig::class;
+        protected $generationConfigDataType = '';
+        protected $similaritySearchConfigType = GoogleCloudAiplatformV1ReasoningEngineContextSpecMemoryBankConfigSimilaritySearchConfig::class;
+        protected $similaritySearchConfigDataType = '';
+        protected $ttlConfigType = GoogleCloudAiplatformV1ReasoningEngineContextSpecMemoryBankConfigTtlConfig::class;
+        protected $ttlConfigDataType = '';
+        /**
+         * Optional. Configuration for how to customize Memory Bank behavior for a
+         * particular scope.
+         *
+         * @param GoogleCloudAiplatformV1MemoryBankCustomizationConfig[] $customizationConfigs
+         */
+        public function setCustomizationConfigs($customizationConfigs)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1MemoryBankCustomizationConfig[]
+         */
+        public function getCustomizationConfigs()
+        {
+        }
+        /**
+         * If true, no memory revisions will be created for any requests to the Memory
+         * Bank.
+         *
+         * @param bool $disableMemoryRevisions
+         */
+        public function setDisableMemoryRevisions($disableMemoryRevisions)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisableMemoryRevisions()
+        {
+        }
+        /**
+         * Optional. Configuration for how to generate memories for the Memory Bank.
+         *
+         * @param GoogleCloudAiplatformV1ReasoningEngineContextSpecMemoryBankConfigGenerationConfig $generationConfig
+         */
+        public function setGenerationConfig(GoogleCloudAiplatformV1ReasoningEngineContextSpecMemoryBankConfigGenerationConfig $generationConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ReasoningEngineContextSpecMemoryBankConfigGenerationConfig
+         */
+        public function getGenerationConfig()
+        {
+        }
+        /**
+         * Optional. Configuration for how to perform similarity search on memories.
+         * If not set, the Memory Bank will use the default embedding model `text-
+         * embedding-005`.
+         *
+         * @param GoogleCloudAiplatformV1ReasoningEngineContextSpecMemoryBankConfigSimilaritySearchConfig $similaritySearchConfig
+         */
+        public function setSimilaritySearchConfig(GoogleCloudAiplatformV1ReasoningEngineContextSpecMemoryBankConfigSimilaritySearchConfig $similaritySearchConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ReasoningEngineContextSpecMemoryBankConfigSimilaritySearchConfig
+         */
+        public function getSimilaritySearchConfig()
+        {
+        }
+        /**
+         * Optional. Configuration for automatic TTL ("time-to-live") of the memories
+         * in the Memory Bank. If not set, TTL will not be applied automatically. The
+         * TTL can be explicitly set by modifying the `expire_time` of each Memory
+         * resource.
+         *
+         * @param GoogleCloudAiplatformV1ReasoningEngineContextSpecMemoryBankConfigTtlConfig $ttlConfig
+         */
+        public function setTtlConfig(GoogleCloudAiplatformV1ReasoningEngineContextSpecMemoryBankConfigTtlConfig $ttlConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ReasoningEngineContextSpecMemoryBankConfigTtlConfig
+         */
+        public function getTtlConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1MemoryBankCustomizationConfig[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ReasoningEngineContextSpecMemoryBankConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomizationConfigs()
-    {
-    }
-    /**
-     * If true, no memory revisions will be created for any requests to the Memory
-     * Bank.
-     *
-     * @param bool $disableMemoryRevisions
-     */
-    public function setDisableMemoryRevisions($disableMemoryRevisions)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDisableMemoryRevisions()
-    {
-    }
-    /**
-     * Optional. Configuration for how to generate memories for the Memory Bank.
-     *
-     * @param GoogleCloudAiplatformV1ReasoningEngineContextSpecMemoryBankConfigGenerationConfig $generationConfig
-     */
-    public function setGenerationConfig(GoogleCloudAiplatformV1ReasoningEngineContextSpecMemoryBankConfigGenerationConfig $generationConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1ReasoningEngineContextSpecMemoryBankConfigGenerationConfig
-     */
-    public function getGenerationConfig()
-    {
-    }
-    /**
-     * Optional. Configuration for how to perform similarity search on memories.
-     * If not set, the Memory Bank will use the default embedding model `text-
-     * embedding-005`.
-     *
-     * @param GoogleCloudAiplatformV1ReasoningEngineContextSpecMemoryBankConfigSimilaritySearchConfig $similaritySearchConfig
-     */
-    public function setSimilaritySearchConfig(GoogleCloudAiplatformV1ReasoningEngineContextSpecMemoryBankConfigSimilaritySearchConfig $similaritySearchConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1ReasoningEngineContextSpecMemoryBankConfigSimilaritySearchConfig
-     */
-    public function getSimilaritySearchConfig()
-    {
-    }
-    /**
-     * Optional. Configuration for automatic TTL ("time-to-live") of the memories
-     * in the Memory Bank. If not set, TTL will not be applied automatically. The
-     * TTL can be explicitly set by modifying the `expire_time` of each Memory
-     * resource.
-     *
-     * @param GoogleCloudAiplatformV1ReasoningEngineContextSpecMemoryBankConfigTtlConfig $ttlConfig
-     */
-    public function setTtlConfig(GoogleCloudAiplatformV1ReasoningEngineContextSpecMemoryBankConfigTtlConfig $ttlConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1ReasoningEngineContextSpecMemoryBankConfigTtlConfig
-     */
-    public function getTtlConfig()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ReasoningEngineContextSpecMemoryBankConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ReasoningEngineContextSpecMemoryBankConfig
     {
     }
 }

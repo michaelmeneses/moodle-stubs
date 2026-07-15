@@ -21,109 +21,118 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class ReportPathCriteria extends \Google\Collection
-{
-    protected $collection_key = 'pathFilters';
-    protected $activityFiltersType = DimensionValue::class;
-    protected $activityFiltersDataType = 'array';
-    protected $customChannelGroupingType = ChannelGrouping::class;
-    protected $customChannelGroupingDataType = '';
-    protected $dateRangeType = DateRange::class;
-    protected $dateRangeDataType = '';
-    protected $dimensionsType = SortedDimension::class;
-    protected $dimensionsDataType = 'array';
-    protected $floodlightConfigIdType = DimensionValue::class;
-    protected $floodlightConfigIdDataType = '';
-    /**
-     * @var string[]
-     */
-    public $metricNames;
-    protected $pathFiltersType = PathFilter::class;
-    protected $pathFiltersDataType = 'array';
-    /**
-     * @param DimensionValue[]
-     */
-    public function setActivityFilters($activityFilters)
+namespace Google\Service\Dfareporting {
+    class ReportPathCriteria extends \Google\Collection
     {
+        protected $collection_key = 'pathFilters';
+        protected $activityFiltersType = DimensionValue::class;
+        protected $activityFiltersDataType = 'array';
+        protected $customChannelGroupingType = ChannelGrouping::class;
+        protected $customChannelGroupingDataType = '';
+        protected $dateRangeType = DateRange::class;
+        protected $dateRangeDataType = '';
+        protected $dimensionsType = SortedDimension::class;
+        protected $dimensionsDataType = 'array';
+        protected $floodlightConfigIdType = DimensionValue::class;
+        protected $floodlightConfigIdDataType = '';
+        /**
+         * @var string[]
+         */
+        public $metricNames;
+        protected $pathFiltersType = PathFilter::class;
+        protected $pathFiltersDataType = 'array';
+        /**
+         * @param DimensionValue[]
+         */
+        public function setActivityFilters($activityFilters)
+        {
+        }
+        /**
+         * @return DimensionValue[]
+         */
+        public function getActivityFilters()
+        {
+        }
+        /**
+         * @param ChannelGrouping
+         */
+        public function setCustomChannelGrouping(ChannelGrouping $customChannelGrouping)
+        {
+        }
+        /**
+         * @return ChannelGrouping
+         */
+        public function getCustomChannelGrouping()
+        {
+        }
+        /**
+         * @param DateRange
+         */
+        public function setDateRange(DateRange $dateRange)
+        {
+        }
+        /**
+         * @return DateRange
+         */
+        public function getDateRange()
+        {
+        }
+        /**
+         * @param SortedDimension[]
+         */
+        public function setDimensions($dimensions)
+        {
+        }
+        /**
+         * @return SortedDimension[]
+         */
+        public function getDimensions()
+        {
+        }
+        /**
+         * @param DimensionValue
+         */
+        public function setFloodlightConfigId(DimensionValue $floodlightConfigId)
+        {
+        }
+        /**
+         * @return DimensionValue
+         */
+        public function getFloodlightConfigId()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setMetricNames($metricNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMetricNames()
+        {
+        }
+        /**
+         * @param PathFilter[]
+         */
+        public function setPathFilters($pathFilters)
+        {
+        }
+        /**
+         * @return PathFilter[]
+         */
+        public function getPathFilters()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DimensionValue[]
+     * Runtime class alias of \Google\Service\Dfareporting\ReportPathCriteria registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActivityFilters()
-    {
-    }
-    /**
-     * @param ChannelGrouping
-     */
-    public function setCustomChannelGrouping(ChannelGrouping $customChannelGrouping)
-    {
-    }
-    /**
-     * @return ChannelGrouping
-     */
-    public function getCustomChannelGrouping()
-    {
-    }
-    /**
-     * @param DateRange
-     */
-    public function setDateRange(DateRange $dateRange)
-    {
-    }
-    /**
-     * @return DateRange
-     */
-    public function getDateRange()
-    {
-    }
-    /**
-     * @param SortedDimension[]
-     */
-    public function setDimensions($dimensions)
-    {
-    }
-    /**
-     * @return SortedDimension[]
-     */
-    public function getDimensions()
-    {
-    }
-    /**
-     * @param DimensionValue
-     */
-    public function setFloodlightConfigId(DimensionValue $floodlightConfigId)
-    {
-    }
-    /**
-     * @return DimensionValue
-     */
-    public function getFloodlightConfigId()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setMetricNames($metricNames)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getMetricNames()
-    {
-    }
-    /**
-     * @param PathFilter[]
-     */
-    public function setPathFilters($pathFilters)
-    {
-    }
-    /**
-     * @return PathFilter[]
-     */
-    public function getPathFilters()
+    class Google_Service_Dfareporting_ReportPathCriteria extends \Google\Service\Dfareporting\ReportPathCriteria
     {
     }
 }

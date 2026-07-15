@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAlloyDBAdmin;
-
-class ExportClusterResponse extends \Google\Model
-{
-    protected $gcsDestinationType = GcsDestination::class;
-    protected $gcsDestinationDataType = '';
-    /**
-     * Required. Option to export data to cloud storage.
-     *
-     * @param GcsDestination $gcsDestination
-     */
-    public function setGcsDestination(GcsDestination $gcsDestination)
+namespace Google\Service\CloudAlloyDBAdmin {
+    class ExportClusterResponse extends \Google\Model
     {
+        protected $gcsDestinationType = GcsDestination::class;
+        protected $gcsDestinationDataType = '';
+        /**
+         * Required. Option to export data to cloud storage.
+         *
+         * @param GcsDestination $gcsDestination
+         */
+        public function setGcsDestination(GcsDestination $gcsDestination)
+        {
+        }
+        /**
+         * @return GcsDestination
+         */
+        public function getGcsDestination()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GcsDestination
+     * Runtime class alias of \Google\Service\CloudAlloyDBAdmin\ExportClusterResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGcsDestination()
+    class Google_Service_CloudAlloyDBAdmin_ExportClusterResponse extends \Google\Service\CloudAlloyDBAdmin\ExportClusterResponse
     {
     }
 }

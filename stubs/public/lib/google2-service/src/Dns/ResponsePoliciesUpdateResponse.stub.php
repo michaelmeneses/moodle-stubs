@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dns;
-
-class ResponsePoliciesUpdateResponse extends \Google\Model
-{
-    protected $responsePolicyType = ResponsePolicy::class;
-    protected $responsePolicyDataType = '';
-    /**
-     * @param ResponsePolicy $responsePolicy
-     */
-    public function setResponsePolicy(ResponsePolicy $responsePolicy)
+namespace Google\Service\Dns {
+    class ResponsePoliciesUpdateResponse extends \Google\Model
     {
+        protected $responsePolicyType = ResponsePolicy::class;
+        protected $responsePolicyDataType = '';
+        /**
+         * @param ResponsePolicy $responsePolicy
+         */
+        public function setResponsePolicy(ResponsePolicy $responsePolicy)
+        {
+        }
+        /**
+         * @return ResponsePolicy
+         */
+        public function getResponsePolicy()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ResponsePolicy
+     * Runtime class alias of \Google\Service\Dns\ResponsePoliciesUpdateResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResponsePolicy()
+    class Google_Service_Dns_ResponsePoliciesUpdateResponse extends \Google\Service\Dns\ResponsePoliciesUpdateResponse
     {
     }
 }

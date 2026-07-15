@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIdentity;
-
-class SecuritySettings extends \Google\Model
-{
-    protected $memberRestrictionType = MemberRestriction::class;
-    protected $memberRestrictionDataType = '';
-    /**
-     * Output only. The resource name of the security settings. Shall be of the
-     * form `groups/{group_id}/securitySettings`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The Member Restriction value
-     *
-     * @param MemberRestriction $memberRestriction
-     */
-    public function setMemberRestriction(MemberRestriction $memberRestriction)
+namespace Google\Service\CloudIdentity {
+    class SecuritySettings extends \Google\Model
     {
+        protected $memberRestrictionType = MemberRestriction::class;
+        protected $memberRestrictionDataType = '';
+        /**
+         * Output only. The resource name of the security settings. Shall be of the
+         * form `groups/{group_id}/securitySettings`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The Member Restriction value
+         *
+         * @param MemberRestriction $memberRestriction
+         */
+        public function setMemberRestriction(MemberRestriction $memberRestriction)
+        {
+        }
+        /**
+         * @return MemberRestriction
+         */
+        public function getMemberRestriction()
+        {
+        }
+        /**
+         * Output only. The resource name of the security settings. Shall be of the
+         * form `groups/{group_id}/securitySettings`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MemberRestriction
+     * Runtime class alias of \Google\Service\CloudIdentity\SecuritySettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMemberRestriction()
-    {
-    }
-    /**
-     * Output only. The resource name of the security settings. Shall be of the
-     * form `groups/{group_id}/securitySettings`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_CloudIdentity_SecuritySettings extends \Google\Service\CloudIdentity\SecuritySettings
     {
     }
 }

@@ -21,21 +21,30 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class DimensionalityReductionMetrics extends \Google\Model
-{
-    /**
-     * Total percentage of variance explained by the selected principal
-     * components.
-     *
-     * @var 
-     */
-    public $totalExplainedVarianceRatio;
-    public function setTotalExplainedVarianceRatio($totalExplainedVarianceRatio)
+namespace Google\Service\Bigquery {
+    class DimensionalityReductionMetrics extends \Google\Model
     {
+        /**
+         * Total percentage of variance explained by the selected principal
+         * components.
+         *
+         * @var 
+         */
+        public $totalExplainedVarianceRatio;
+        public function setTotalExplainedVarianceRatio($totalExplainedVarianceRatio)
+        {
+        }
+        public function getTotalExplainedVarianceRatio()
+        {
+        }
     }
-    public function getTotalExplainedVarianceRatio()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Bigquery\DimensionalityReductionMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Bigquery_DimensionalityReductionMetrics extends \Google\Service\Bigquery\DimensionalityReductionMetrics
     {
     }
 }

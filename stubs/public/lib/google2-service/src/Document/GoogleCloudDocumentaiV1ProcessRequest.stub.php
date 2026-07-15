@@ -21,169 +21,178 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1ProcessRequest extends \Google\Model
-{
-    /**
-     * Specifies which fields to include in the ProcessResponse.document output.
-     * Only supports top-level document and pages field, so it must be in the form
-     * of `{document_field_name}` or `pages.{page_field_name}`.
-     *
-     * @var string
-     */
-    public $fieldMask;
-    protected $gcsDocumentType = GoogleCloudDocumentaiV1GcsDocument::class;
-    protected $gcsDocumentDataType = '';
-    /**
-     * Optional. Option to remove images from the document.
-     *
-     * @var bool
-     */
-    public $imagelessMode;
-    protected $inlineDocumentType = GoogleCloudDocumentaiV1Document::class;
-    protected $inlineDocumentDataType = '';
-    /**
-     * Optional. The labels with user-defined metadata for the request. Label keys
-     * and values can be no longer than 63 characters (Unicode codepoints) and can
-     * only contain lowercase letters, numeric characters, underscores, and
-     * dashes. International characters are allowed. Label values are optional.
-     * Label keys must start with a letter.
-     *
-     * @var string[]
-     */
-    public $labels;
-    protected $processOptionsType = GoogleCloudDocumentaiV1ProcessOptions::class;
-    protected $processOptionsDataType = '';
-    protected $rawDocumentType = GoogleCloudDocumentaiV1RawDocument::class;
-    protected $rawDocumentDataType = '';
-    /**
-     * Whether human review should be skipped for this request. Default to
-     * `false`.
-     *
-     * @deprecated
-     * @var bool
-     */
-    public $skipHumanReview;
-    /**
-     * Specifies which fields to include in the ProcessResponse.document output.
-     * Only supports top-level document and pages field, so it must be in the form
-     * of `{document_field_name}` or `pages.{page_field_name}`.
-     *
-     * @param string $fieldMask
-     */
-    public function setFieldMask($fieldMask)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1ProcessRequest extends \Google\Model
     {
+        /**
+         * Specifies which fields to include in the ProcessResponse.document output.
+         * Only supports top-level document and pages field, so it must be in the form
+         * of `{document_field_name}` or `pages.{page_field_name}`.
+         *
+         * @var string
+         */
+        public $fieldMask;
+        protected $gcsDocumentType = GoogleCloudDocumentaiV1GcsDocument::class;
+        protected $gcsDocumentDataType = '';
+        /**
+         * Optional. Option to remove images from the document.
+         *
+         * @var bool
+         */
+        public $imagelessMode;
+        protected $inlineDocumentType = GoogleCloudDocumentaiV1Document::class;
+        protected $inlineDocumentDataType = '';
+        /**
+         * Optional. The labels with user-defined metadata for the request. Label keys
+         * and values can be no longer than 63 characters (Unicode codepoints) and can
+         * only contain lowercase letters, numeric characters, underscores, and
+         * dashes. International characters are allowed. Label values are optional.
+         * Label keys must start with a letter.
+         *
+         * @var string[]
+         */
+        public $labels;
+        protected $processOptionsType = GoogleCloudDocumentaiV1ProcessOptions::class;
+        protected $processOptionsDataType = '';
+        protected $rawDocumentType = GoogleCloudDocumentaiV1RawDocument::class;
+        protected $rawDocumentDataType = '';
+        /**
+         * Whether human review should be skipped for this request. Default to
+         * `false`.
+         *
+         * @deprecated
+         * @var bool
+         */
+        public $skipHumanReview;
+        /**
+         * Specifies which fields to include in the ProcessResponse.document output.
+         * Only supports top-level document and pages field, so it must be in the form
+         * of `{document_field_name}` or `pages.{page_field_name}`.
+         *
+         * @param string $fieldMask
+         */
+        public function setFieldMask($fieldMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFieldMask()
+        {
+        }
+        /**
+         * A raw document on Google Cloud Storage.
+         *
+         * @param GoogleCloudDocumentaiV1GcsDocument $gcsDocument
+         */
+        public function setGcsDocument(GoogleCloudDocumentaiV1GcsDocument $gcsDocument)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1GcsDocument
+         */
+        public function getGcsDocument()
+        {
+        }
+        /**
+         * Optional. Option to remove images from the document.
+         *
+         * @param bool $imagelessMode
+         */
+        public function setImagelessMode($imagelessMode)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getImagelessMode()
+        {
+        }
+        /**
+         * An inline document proto.
+         *
+         * @param GoogleCloudDocumentaiV1Document $inlineDocument
+         */
+        public function setInlineDocument(GoogleCloudDocumentaiV1Document $inlineDocument)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1Document
+         */
+        public function getInlineDocument()
+        {
+        }
+        /**
+         * Optional. The labels with user-defined metadata for the request. Label keys
+         * and values can be no longer than 63 characters (Unicode codepoints) and can
+         * only contain lowercase letters, numeric characters, underscores, and
+         * dashes. International characters are allowed. Label values are optional.
+         * Label keys must start with a letter.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Inference-time options for the process API
+         *
+         * @param GoogleCloudDocumentaiV1ProcessOptions $processOptions
+         */
+        public function setProcessOptions(GoogleCloudDocumentaiV1ProcessOptions $processOptions)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1ProcessOptions
+         */
+        public function getProcessOptions()
+        {
+        }
+        /**
+         * A raw document content (bytes).
+         *
+         * @param GoogleCloudDocumentaiV1RawDocument $rawDocument
+         */
+        public function setRawDocument(GoogleCloudDocumentaiV1RawDocument $rawDocument)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1RawDocument
+         */
+        public function getRawDocument()
+        {
+        }
+        /**
+         * Whether human review should be skipped for this request. Default to
+         * `false`.
+         *
+         * @deprecated
+         * @param bool $skipHumanReview
+         */
+        public function setSkipHumanReview($skipHumanReview)
+        {
+        }
+        /**
+         * @deprecated
+         * @return bool
+         */
+        public function getSkipHumanReview()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1ProcessRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFieldMask()
-    {
-    }
-    /**
-     * A raw document on Google Cloud Storage.
-     *
-     * @param GoogleCloudDocumentaiV1GcsDocument $gcsDocument
-     */
-    public function setGcsDocument(GoogleCloudDocumentaiV1GcsDocument $gcsDocument)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1GcsDocument
-     */
-    public function getGcsDocument()
-    {
-    }
-    /**
-     * Optional. Option to remove images from the document.
-     *
-     * @param bool $imagelessMode
-     */
-    public function setImagelessMode($imagelessMode)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getImagelessMode()
-    {
-    }
-    /**
-     * An inline document proto.
-     *
-     * @param GoogleCloudDocumentaiV1Document $inlineDocument
-     */
-    public function setInlineDocument(GoogleCloudDocumentaiV1Document $inlineDocument)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1Document
-     */
-    public function getInlineDocument()
-    {
-    }
-    /**
-     * Optional. The labels with user-defined metadata for the request. Label keys
-     * and values can be no longer than 63 characters (Unicode codepoints) and can
-     * only contain lowercase letters, numeric characters, underscores, and
-     * dashes. International characters are allowed. Label values are optional.
-     * Label keys must start with a letter.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Inference-time options for the process API
-     *
-     * @param GoogleCloudDocumentaiV1ProcessOptions $processOptions
-     */
-    public function setProcessOptions(GoogleCloudDocumentaiV1ProcessOptions $processOptions)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1ProcessOptions
-     */
-    public function getProcessOptions()
-    {
-    }
-    /**
-     * A raw document content (bytes).
-     *
-     * @param GoogleCloudDocumentaiV1RawDocument $rawDocument
-     */
-    public function setRawDocument(GoogleCloudDocumentaiV1RawDocument $rawDocument)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1RawDocument
-     */
-    public function getRawDocument()
-    {
-    }
-    /**
-     * Whether human review should be skipped for this request. Default to
-     * `false`.
-     *
-     * @deprecated
-     * @param bool $skipHumanReview
-     */
-    public function setSkipHumanReview($skipHumanReview)
-    {
-    }
-    /**
-     * @deprecated
-     * @return bool
-     */
-    public function getSkipHumanReview()
+    class Google_Service_Document_GoogleCloudDocumentaiV1ProcessRequest extends \Google\Service\Document\GoogleCloudDocumentaiV1ProcessRequest
     {
     }
 }

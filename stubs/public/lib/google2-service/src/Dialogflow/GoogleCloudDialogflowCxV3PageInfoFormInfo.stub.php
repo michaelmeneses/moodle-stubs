@@ -21,27 +21,36 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3PageInfoFormInfo extends \Google\Collection
-{
-    protected $collection_key = 'parameterInfo';
-    protected $parameterInfoType = GoogleCloudDialogflowCxV3PageInfoFormInfoParameterInfo::class;
-    protected $parameterInfoDataType = 'array';
-    /**
-     * Optional for both WebhookRequest and WebhookResponse. The parameters
-     * contained in the form. Note that the webhook cannot add or remove any form
-     * parameter.
-     *
-     * @param GoogleCloudDialogflowCxV3PageInfoFormInfoParameterInfo[] $parameterInfo
-     */
-    public function setParameterInfo($parameterInfo)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3PageInfoFormInfo extends \Google\Collection
     {
+        protected $collection_key = 'parameterInfo';
+        protected $parameterInfoType = GoogleCloudDialogflowCxV3PageInfoFormInfoParameterInfo::class;
+        protected $parameterInfoDataType = 'array';
+        /**
+         * Optional for both WebhookRequest and WebhookResponse. The parameters
+         * contained in the form. Note that the webhook cannot add or remove any form
+         * parameter.
+         *
+         * @param GoogleCloudDialogflowCxV3PageInfoFormInfoParameterInfo[] $parameterInfo
+         */
+        public function setParameterInfo($parameterInfo)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3PageInfoFormInfoParameterInfo[]
+         */
+        public function getParameterInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowCxV3PageInfoFormInfoParameterInfo[]
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3PageInfoFormInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getParameterInfo()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3PageInfoFormInfo extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3PageInfoFormInfo
     {
     }
 }

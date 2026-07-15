@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaBigtableOptionsBigtableColumn extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $encoding;
-    /**
-     * @var string
-     */
-    public $fieldName;
-    /**
-     * @var string
-     */
-    public $qualifier;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @param string
-     */
-    public function setEncoding($encoding)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaBigtableOptionsBigtableColumn extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $encoding;
+        /**
+         * @var string
+         */
+        public $fieldName;
+        /**
+         * @var string
+         */
+        public $qualifier;
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @param string
+         */
+        public function setEncoding($encoding)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEncoding()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setFieldName($fieldName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFieldName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setQualifier($qualifier)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQualifier()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaBigtableOptionsBigtableColumn registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEncoding()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setFieldName($fieldName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFieldName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setQualifier($qualifier)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQualifier()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaBigtableOptionsBigtableColumn extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaBigtableOptionsBigtableColumn
     {
     }
 }

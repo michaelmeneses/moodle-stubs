@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class FirstAndThirdPartyAudienceTargetingSetting extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $firstAndThirdPartyAudienceId;
-    /**
-     * @var string
-     */
-    public $recency;
-    /**
-     * @param string
-     */
-    public function setFirstAndThirdPartyAudienceId($firstAndThirdPartyAudienceId)
+namespace Google\Service\DisplayVideo {
+    class FirstAndThirdPartyAudienceTargetingSetting extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $firstAndThirdPartyAudienceId;
+        /**
+         * @var string
+         */
+        public $recency;
+        /**
+         * @param string
+         */
+        public function setFirstAndThirdPartyAudienceId($firstAndThirdPartyAudienceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFirstAndThirdPartyAudienceId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRecency($recency)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRecency()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\FirstAndThirdPartyAudienceTargetingSetting registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFirstAndThirdPartyAudienceId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRecency($recency)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRecency()
+    class Google_Service_DisplayVideo_FirstAndThirdPartyAudienceTargetingSetting extends \Google\Service\DisplayVideo\FirstAndThirdPartyAudienceTargetingSetting
     {
     }
 }

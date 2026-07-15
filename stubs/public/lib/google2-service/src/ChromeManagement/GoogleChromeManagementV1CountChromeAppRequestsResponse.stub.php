@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementV1CountChromeAppRequestsResponse extends \Google\Collection
-{
-    protected $collection_key = 'requestedApps';
-    /**
-     * Token to specify the next page in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $requestedAppsType = GoogleChromeManagementV1ChromeAppRequest::class;
-    protected $requestedAppsDataType = 'array';
-    /**
-     * Total number of matching app requests.
-     *
-     * @var int
-     */
-    public $totalSize;
-    /**
-     * Token to specify the next page in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementV1CountChromeAppRequestsResponse extends \Google\Collection
     {
+        protected $collection_key = 'requestedApps';
+        /**
+         * Token to specify the next page in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $requestedAppsType = GoogleChromeManagementV1ChromeAppRequest::class;
+        protected $requestedAppsDataType = 'array';
+        /**
+         * Total number of matching app requests.
+         *
+         * @var int
+         */
+        public $totalSize;
+        /**
+         * Token to specify the next page in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Count of requested apps matching request.
+         *
+         * @param GoogleChromeManagementV1ChromeAppRequest[] $requestedApps
+         */
+        public function setRequestedApps($requestedApps)
+        {
+        }
+        /**
+         * @return GoogleChromeManagementV1ChromeAppRequest[]
+         */
+        public function getRequestedApps()
+        {
+        }
+        /**
+         * Total number of matching app requests.
+         *
+         * @param int $totalSize
+         */
+        public function setTotalSize($totalSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalSize()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementV1CountChromeAppRequestsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Count of requested apps matching request.
-     *
-     * @param GoogleChromeManagementV1ChromeAppRequest[] $requestedApps
-     */
-    public function setRequestedApps($requestedApps)
-    {
-    }
-    /**
-     * @return GoogleChromeManagementV1ChromeAppRequest[]
-     */
-    public function getRequestedApps()
-    {
-    }
-    /**
-     * Total number of matching app requests.
-     *
-     * @param int $totalSize
-     */
-    public function setTotalSize($totalSize)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalSize()
+    class Google_Service_ChromeManagement_GoogleChromeManagementV1CountChromeAppRequestsResponse extends \Google\Service\ChromeManagement\GoogleChromeManagementV1CountChromeAppRequestsResponse
     {
     }
 }

@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ListIndexEndpointsResponse extends \Google\Collection
-{
-    protected $collection_key = 'indexEndpoints';
-    protected $indexEndpointsType = GoogleCloudAiplatformV1IndexEndpoint::class;
-    protected $indexEndpointsDataType = 'array';
-    /**
-     * A token to retrieve next page of results. Pass to
-     * ListIndexEndpointsRequest.page_token to obtain that page.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of IndexEndpoints in the requested page.
-     *
-     * @param GoogleCloudAiplatformV1IndexEndpoint[] $indexEndpoints
-     */
-    public function setIndexEndpoints($indexEndpoints)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ListIndexEndpointsResponse extends \Google\Collection
     {
+        protected $collection_key = 'indexEndpoints';
+        protected $indexEndpointsType = GoogleCloudAiplatformV1IndexEndpoint::class;
+        protected $indexEndpointsDataType = 'array';
+        /**
+         * A token to retrieve next page of results. Pass to
+         * ListIndexEndpointsRequest.page_token to obtain that page.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of IndexEndpoints in the requested page.
+         *
+         * @param GoogleCloudAiplatformV1IndexEndpoint[] $indexEndpoints
+         */
+        public function setIndexEndpoints($indexEndpoints)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1IndexEndpoint[]
+         */
+        public function getIndexEndpoints()
+        {
+        }
+        /**
+         * A token to retrieve next page of results. Pass to
+         * ListIndexEndpointsRequest.page_token to obtain that page.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1IndexEndpoint[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListIndexEndpointsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIndexEndpoints()
-    {
-    }
-    /**
-     * A token to retrieve next page of results. Pass to
-     * ListIndexEndpointsRequest.page_token to obtain that page.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ListIndexEndpointsResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListIndexEndpointsResponse
     {
     }
 }

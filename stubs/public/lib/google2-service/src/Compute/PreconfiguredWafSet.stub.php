@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class PreconfiguredWafSet extends \Google\Collection
-{
-    protected $collection_key = 'expressionSets';
-    protected $expressionSetsType = WafExpressionSet::class;
-    protected $expressionSetsDataType = 'array';
-    /**
-     * List of entities that are currently supported for WAF rules.
-     *
-     * @param WafExpressionSet[] $expressionSets
-     */
-    public function setExpressionSets($expressionSets)
+namespace Google\Service\Compute {
+    class PreconfiguredWafSet extends \Google\Collection
     {
+        protected $collection_key = 'expressionSets';
+        protected $expressionSetsType = WafExpressionSet::class;
+        protected $expressionSetsDataType = 'array';
+        /**
+         * List of entities that are currently supported for WAF rules.
+         *
+         * @param WafExpressionSet[] $expressionSets
+         */
+        public function setExpressionSets($expressionSets)
+        {
+        }
+        /**
+         * @return WafExpressionSet[]
+         */
+        public function getExpressionSets()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return WafExpressionSet[]
+     * Runtime class alias of \Google\Service\Compute\PreconfiguredWafSet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExpressionSets()
+    class Google_Service_Compute_PreconfiguredWafSet extends \Google\Service\Compute\PreconfiguredWafSet
     {
     }
 }

@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class PolicyControllerMembershipState extends \Google\Model
-{
-    protected $componentStatesType = PolicyControllerOnClusterState::class;
-    protected $componentStatesDataType = 'map';
-    protected $policyContentStateType = PolicyControllerPolicyContentState::class;
-    protected $policyContentStateDataType = '';
-    /**
-     * @var string
-     */
-    public $state;
-    /**
-     * @param PolicyControllerOnClusterState[]
-     */
-    public function setComponentStates($componentStates)
+namespace Google\Service\GKEHub {
+    class PolicyControllerMembershipState extends \Google\Model
     {
+        protected $componentStatesType = PolicyControllerOnClusterState::class;
+        protected $componentStatesDataType = 'map';
+        protected $policyContentStateType = PolicyControllerPolicyContentState::class;
+        protected $policyContentStateDataType = '';
+        /**
+         * @var string
+         */
+        public $state;
+        /**
+         * @param PolicyControllerOnClusterState[]
+         */
+        public function setComponentStates($componentStates)
+        {
+        }
+        /**
+         * @return PolicyControllerOnClusterState[]
+         */
+        public function getComponentStates()
+        {
+        }
+        /**
+         * @param PolicyControllerPolicyContentState
+         */
+        public function setPolicyContentState(PolicyControllerPolicyContentState $policyContentState)
+        {
+        }
+        /**
+         * @return PolicyControllerPolicyContentState
+         */
+        public function getPolicyContentState()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PolicyControllerOnClusterState[]
+     * Runtime class alias of \Google\Service\GKEHub\PolicyControllerMembershipState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getComponentStates()
-    {
-    }
-    /**
-     * @param PolicyControllerPolicyContentState
-     */
-    public function setPolicyContentState(PolicyControllerPolicyContentState $policyContentState)
-    {
-    }
-    /**
-     * @return PolicyControllerPolicyContentState
-     */
-    public function getPolicyContentState()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getState()
+    class Google_Service_GKEHub_PolicyControllerMembershipState extends \Google\Service\GKEHub\PolicyControllerMembershipState
     {
     }
 }

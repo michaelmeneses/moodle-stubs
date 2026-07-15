@@ -21,120 +21,129 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class StreamingQueryData extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $endTimestamp;
-    /**
-     * @var string
-     */
-    public $exception;
-    /**
-     * @var bool
-     */
-    public $isActive;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $runId;
-    /**
-     * @var string
-     */
-    public $startTimestamp;
-    /**
-     * @var string
-     */
-    public $streamingQueryId;
-    /**
-     * @param string $endTimestamp
-     */
-    public function setEndTimestamp($endTimestamp)
+namespace Google\Service\Dataproc {
+    class StreamingQueryData extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $endTimestamp;
+        /**
+         * @var string
+         */
+        public $exception;
+        /**
+         * @var bool
+         */
+        public $isActive;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $runId;
+        /**
+         * @var string
+         */
+        public $startTimestamp;
+        /**
+         * @var string
+         */
+        public $streamingQueryId;
+        /**
+         * @param string $endTimestamp
+         */
+        public function setEndTimestamp($endTimestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTimestamp()
+        {
+        }
+        /**
+         * @param string $exception
+         */
+        public function setException($exception)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getException()
+        {
+        }
+        /**
+         * @param bool $isActive
+         */
+        public function setIsActive($isActive)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsActive()
+        {
+        }
+        /**
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string $runId
+         */
+        public function setRunId($runId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRunId()
+        {
+        }
+        /**
+         * @param string $startTimestamp
+         */
+        public function setStartTimestamp($startTimestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTimestamp()
+        {
+        }
+        /**
+         * @param string $streamingQueryId
+         */
+        public function setStreamingQueryId($streamingQueryId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStreamingQueryId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\StreamingQueryData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndTimestamp()
-    {
-    }
-    /**
-     * @param string $exception
-     */
-    public function setException($exception)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getException()
-    {
-    }
-    /**
-     * @param bool $isActive
-     */
-    public function setIsActive($isActive)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsActive()
-    {
-    }
-    /**
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string $runId
-     */
-    public function setRunId($runId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRunId()
-    {
-    }
-    /**
-     * @param string $startTimestamp
-     */
-    public function setStartTimestamp($startTimestamp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTimestamp()
-    {
-    }
-    /**
-     * @param string $streamingQueryId
-     */
-    public function setStreamingQueryId($streamingQueryId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStreamingQueryId()
+    class Google_Service_Dataproc_StreamingQueryData extends \Google\Service\Dataproc\StreamingQueryData
     {
     }
 }

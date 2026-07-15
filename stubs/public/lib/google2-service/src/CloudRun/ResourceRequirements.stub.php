@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class ResourceRequirements extends \Google\Model
-{
-    /**
-     * @var string[]
-     */
-    public $limits;
-    /**
-     * @var string[]
-     */
-    public $requests;
-    /**
-     * @param string[]
-     */
-    public function setLimits($limits)
+namespace Google\Service\CloudRun {
+    class ResourceRequirements extends \Google\Model
     {
+        /**
+         * @var string[]
+         */
+        public $limits;
+        /**
+         * @var string[]
+         */
+        public $requests;
+        /**
+         * @param string[]
+         */
+        public function setLimits($limits)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLimits()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setRequests($requests)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRequests()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudRun\ResourceRequirements registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLimits()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setRequests($requests)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRequests()
+    class Google_Service_CloudRun_ResourceRequirements extends \Google\Service\CloudRun\ResourceRequirements
     {
     }
 }

@@ -21,113 +21,122 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class SslCertificateManagedSslCertificate extends \Google\Collection
-{
-    /**
-     * The certificate management is working, and a certificate has been
-     * provisioned.
-     */
-    public const STATUS_ACTIVE = 'ACTIVE';
-    public const STATUS_MANAGED_CERTIFICATE_STATUS_UNSPECIFIED = 'MANAGED_CERTIFICATE_STATUS_UNSPECIFIED';
-    /**
-     * The certificate management is working. GCP will attempt to provision the
-     * first certificate.
-     */
-    public const STATUS_PROVISIONING = 'PROVISIONING';
-    /**
-     * Certificate provisioning failed due to an issue with the DNS or load
-     * balancing configuration. For details of which domain failed, consult
-     * domain_status field.
-     */
-    public const STATUS_PROVISIONING_FAILED = 'PROVISIONING_FAILED';
-    /**
-     * Certificate provisioning failed due to an issue with the DNS or load
-     * balancing configuration. It won't be retried. To try again delete and
-     * create a new managed SslCertificate resource. For details of which domain
-     * failed, consult domain_status field.
-     */
-    public const STATUS_PROVISIONING_FAILED_PERMANENTLY = 'PROVISIONING_FAILED_PERMANENTLY';
-    /**
-     * Renewal of the certificate has failed due to an issue with the DNS or load
-     * balancing configuration. The existing cert is still serving; however, it
-     * will expire shortly. To provision a renewed certificate, delete and create
-     * a new managed SslCertificate resource. For details on which domain failed,
-     * consult domain_status field.
-     */
-    public const STATUS_RENEWAL_FAILED = 'RENEWAL_FAILED';
-    protected $collection_key = 'domains';
-    /**
-     * Output only. [Output only] Detailed statuses of the domains specified for
-     * managed certificate resource.
-     *
-     * @var string[]
-     */
-    public $domainStatus;
-    /**
-     * The domains for which a managed SSL certificate will be generated. Each
-     * Google-managed SSL certificate supports up to the [maximum number of
-     * domains per Google-managed SSL certificate](/load-
-     * balancing/docs/quotas#ssl_certificates).
-     *
-     * @var string[]
-     */
-    public $domains;
-    /**
-     * Output only. [Output only] Status of the managed certificate resource.
-     *
-     * @var string
-     */
-    public $status;
-    /**
-     * Output only. [Output only] Detailed statuses of the domains specified for
-     * managed certificate resource.
-     *
-     * @param string[] $domainStatus
-     */
-    public function setDomainStatus($domainStatus)
+namespace Google\Service\Compute {
+    class SslCertificateManagedSslCertificate extends \Google\Collection
     {
+        /**
+         * The certificate management is working, and a certificate has been
+         * provisioned.
+         */
+        public const STATUS_ACTIVE = 'ACTIVE';
+        public const STATUS_MANAGED_CERTIFICATE_STATUS_UNSPECIFIED = 'MANAGED_CERTIFICATE_STATUS_UNSPECIFIED';
+        /**
+         * The certificate management is working. GCP will attempt to provision the
+         * first certificate.
+         */
+        public const STATUS_PROVISIONING = 'PROVISIONING';
+        /**
+         * Certificate provisioning failed due to an issue with the DNS or load
+         * balancing configuration. For details of which domain failed, consult
+         * domain_status field.
+         */
+        public const STATUS_PROVISIONING_FAILED = 'PROVISIONING_FAILED';
+        /**
+         * Certificate provisioning failed due to an issue with the DNS or load
+         * balancing configuration. It won't be retried. To try again delete and
+         * create a new managed SslCertificate resource. For details of which domain
+         * failed, consult domain_status field.
+         */
+        public const STATUS_PROVISIONING_FAILED_PERMANENTLY = 'PROVISIONING_FAILED_PERMANENTLY';
+        /**
+         * Renewal of the certificate has failed due to an issue with the DNS or load
+         * balancing configuration. The existing cert is still serving; however, it
+         * will expire shortly. To provision a renewed certificate, delete and create
+         * a new managed SslCertificate resource. For details on which domain failed,
+         * consult domain_status field.
+         */
+        public const STATUS_RENEWAL_FAILED = 'RENEWAL_FAILED';
+        protected $collection_key = 'domains';
+        /**
+         * Output only. [Output only] Detailed statuses of the domains specified for
+         * managed certificate resource.
+         *
+         * @var string[]
+         */
+        public $domainStatus;
+        /**
+         * The domains for which a managed SSL certificate will be generated. Each
+         * Google-managed SSL certificate supports up to the [maximum number of
+         * domains per Google-managed SSL certificate](/load-
+         * balancing/docs/quotas#ssl_certificates).
+         *
+         * @var string[]
+         */
+        public $domains;
+        /**
+         * Output only. [Output only] Status of the managed certificate resource.
+         *
+         * @var string
+         */
+        public $status;
+        /**
+         * Output only. [Output only] Detailed statuses of the domains specified for
+         * managed certificate resource.
+         *
+         * @param string[] $domainStatus
+         */
+        public function setDomainStatus($domainStatus)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDomainStatus()
+        {
+        }
+        /**
+         * The domains for which a managed SSL certificate will be generated. Each
+         * Google-managed SSL certificate supports up to the [maximum number of
+         * domains per Google-managed SSL certificate](/load-
+         * balancing/docs/quotas#ssl_certificates).
+         *
+         * @param string[] $domains
+         */
+        public function setDomains($domains)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDomains()
+        {
+        }
+        /**
+         * Output only. [Output only] Status of the managed certificate resource.
+         *
+         * Accepted values: ACTIVE, MANAGED_CERTIFICATE_STATUS_UNSPECIFIED,
+         * PROVISIONING, PROVISIONING_FAILED, PROVISIONING_FAILED_PERMANENTLY,
+         * RENEWAL_FAILED
+         *
+         * @param self::STATUS_* $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return self::STATUS_*
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Compute\SslCertificateManagedSslCertificate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDomainStatus()
-    {
-    }
-    /**
-     * The domains for which a managed SSL certificate will be generated. Each
-     * Google-managed SSL certificate supports up to the [maximum number of
-     * domains per Google-managed SSL certificate](/load-
-     * balancing/docs/quotas#ssl_certificates).
-     *
-     * @param string[] $domains
-     */
-    public function setDomains($domains)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getDomains()
-    {
-    }
-    /**
-     * Output only. [Output only] Status of the managed certificate resource.
-     *
-     * Accepted values: ACTIVE, MANAGED_CERTIFICATE_STATUS_UNSPECIFIED,
-     * PROVISIONING, PROVISIONING_FAILED, PROVISIONING_FAILED_PERMANENTLY,
-     * RENEWAL_FAILED
-     *
-     * @param self::STATUS_* $status
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return self::STATUS_*
-     */
-    public function getStatus()
+    class Google_Service_Compute_SslCertificateManagedSslCertificate extends \Google\Service\Compute\SslCertificateManagedSslCertificate
     {
     }
 }

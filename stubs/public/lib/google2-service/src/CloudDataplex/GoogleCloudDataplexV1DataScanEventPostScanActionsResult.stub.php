@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1DataScanEventPostScanActionsResult extends \Google\Model
-{
-    protected $bigqueryExportResultType = GoogleCloudDataplexV1DataScanEventPostScanActionsResultBigQueryExportResult::class;
-    protected $bigqueryExportResultDataType = '';
-    /**
-     * The result of BigQuery export post scan action.
-     *
-     * @param GoogleCloudDataplexV1DataScanEventPostScanActionsResultBigQueryExportResult $bigqueryExportResult
-     */
-    public function setBigqueryExportResult(GoogleCloudDataplexV1DataScanEventPostScanActionsResultBigQueryExportResult $bigqueryExportResult)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1DataScanEventPostScanActionsResult extends \Google\Model
     {
+        protected $bigqueryExportResultType = GoogleCloudDataplexV1DataScanEventPostScanActionsResultBigQueryExportResult::class;
+        protected $bigqueryExportResultDataType = '';
+        /**
+         * The result of BigQuery export post scan action.
+         *
+         * @param GoogleCloudDataplexV1DataScanEventPostScanActionsResultBigQueryExportResult $bigqueryExportResult
+         */
+        public function setBigqueryExportResult(GoogleCloudDataplexV1DataScanEventPostScanActionsResultBigQueryExportResult $bigqueryExportResult)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1DataScanEventPostScanActionsResultBigQueryExportResult
+         */
+        public function getBigqueryExportResult()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDataplexV1DataScanEventPostScanActionsResultBigQueryExportResult
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataScanEventPostScanActionsResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBigqueryExportResult()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1DataScanEventPostScanActionsResult extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataScanEventPostScanActionsResult
     {
     }
 }

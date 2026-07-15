@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Clouderrorreporting;
-
-class ErrorEvent extends \Google\Model
-{
-    protected $contextType = ErrorContext::class;
-    protected $contextDataType = '';
-    /**
-     * Time when the event occurred as provided in the error report. If the report
-     * did not contain a timestamp, the time the error was received by the Error
-     * Reporting system is used.
-     *
-     * @var string
-     */
-    public $eventTime;
-    /**
-     * The stack trace that was reported or logged by the service.
-     *
-     * @var string
-     */
-    public $message;
-    protected $serviceContextType = ServiceContext::class;
-    protected $serviceContextDataType = '';
-    /**
-     * Data about the context in which the error occurred.
-     *
-     * @param ErrorContext $context
-     */
-    public function setContext(ErrorContext $context)
+namespace Google\Service\Clouderrorreporting {
+    class ErrorEvent extends \Google\Model
     {
+        protected $contextType = ErrorContext::class;
+        protected $contextDataType = '';
+        /**
+         * Time when the event occurred as provided in the error report. If the report
+         * did not contain a timestamp, the time the error was received by the Error
+         * Reporting system is used.
+         *
+         * @var string
+         */
+        public $eventTime;
+        /**
+         * The stack trace that was reported or logged by the service.
+         *
+         * @var string
+         */
+        public $message;
+        protected $serviceContextType = ServiceContext::class;
+        protected $serviceContextDataType = '';
+        /**
+         * Data about the context in which the error occurred.
+         *
+         * @param ErrorContext $context
+         */
+        public function setContext(ErrorContext $context)
+        {
+        }
+        /**
+         * @return ErrorContext
+         */
+        public function getContext()
+        {
+        }
+        /**
+         * Time when the event occurred as provided in the error report. If the report
+         * did not contain a timestamp, the time the error was received by the Error
+         * Reporting system is used.
+         *
+         * @param string $eventTime
+         */
+        public function setEventTime($eventTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEventTime()
+        {
+        }
+        /**
+         * The stack trace that was reported or logged by the service.
+         *
+         * @param string $message
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
+        /**
+         * The `ServiceContext` for which this error was reported.
+         *
+         * @param ServiceContext $serviceContext
+         */
+        public function setServiceContext(ServiceContext $serviceContext)
+        {
+        }
+        /**
+         * @return ServiceContext
+         */
+        public function getServiceContext()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ErrorContext
+     * Runtime class alias of \Google\Service\Clouderrorreporting\ErrorEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContext()
-    {
-    }
-    /**
-     * Time when the event occurred as provided in the error report. If the report
-     * did not contain a timestamp, the time the error was received by the Error
-     * Reporting system is used.
-     *
-     * @param string $eventTime
-     */
-    public function setEventTime($eventTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEventTime()
-    {
-    }
-    /**
-     * The stack trace that was reported or logged by the service.
-     *
-     * @param string $message
-     */
-    public function setMessage($message)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMessage()
-    {
-    }
-    /**
-     * The `ServiceContext` for which this error was reported.
-     *
-     * @param ServiceContext $serviceContext
-     */
-    public function setServiceContext(ServiceContext $serviceContext)
-    {
-    }
-    /**
-     * @return ServiceContext
-     */
-    public function getServiceContext()
+    class Google_Service_Clouderrorreporting_ErrorEvent extends \Google\Service\Clouderrorreporting\ErrorEvent
     {
     }
 }

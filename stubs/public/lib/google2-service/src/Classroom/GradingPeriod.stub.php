@@ -21,80 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Classroom;
-
-class GradingPeriod extends \Google\Model
-{
-    protected $endDateType = Date::class;
-    protected $endDateDataType = '';
-    /**
-     * Output only. System generated grading period ID. Read-only.
-     *
-     * @var string
-     */
-    public $id;
-    protected $startDateType = Date::class;
-    protected $startDateDataType = '';
-    /**
-     * Required. Title of the grading period. For example, “Semester 1”.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * Required. End date, in UTC, of the grading period. Inclusive.
-     *
-     * @param Date $endDate
-     */
-    public function setEndDate(Date $endDate)
+namespace Google\Service\Classroom {
+    class GradingPeriod extends \Google\Model
     {
+        protected $endDateType = Date::class;
+        protected $endDateDataType = '';
+        /**
+         * Output only. System generated grading period ID. Read-only.
+         *
+         * @var string
+         */
+        public $id;
+        protected $startDateType = Date::class;
+        protected $startDateDataType = '';
+        /**
+         * Required. Title of the grading period. For example, “Semester 1”.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * Required. End date, in UTC, of the grading period. Inclusive.
+         *
+         * @param Date $endDate
+         */
+        public function setEndDate(Date $endDate)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getEndDate()
+        {
+        }
+        /**
+         * Output only. System generated grading period ID. Read-only.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Required. Start date, in UTC, of the grading period. Inclusive.
+         *
+         * @param Date $startDate
+         */
+        public function setStartDate(Date $startDate)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getStartDate()
+        {
+        }
+        /**
+         * Required. Title of the grading period. For example, “Semester 1”.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Date
+     * Runtime class alias of \Google\Service\Classroom\GradingPeriod registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndDate()
-    {
-    }
-    /**
-     * Output only. System generated grading period ID. Read-only.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Required. Start date, in UTC, of the grading period. Inclusive.
-     *
-     * @param Date $startDate
-     */
-    public function setStartDate(Date $startDate)
-    {
-    }
-    /**
-     * @return Date
-     */
-    public function getStartDate()
-    {
-    }
-    /**
-     * Required. Title of the grading period. For example, “Semester 1”.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_Classroom_GradingPeriod extends \Google\Service\Classroom\GradingPeriod
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class CrashDialogError extends \Google\Model
-{
-    /**
-     * The name of the package that caused the dialog.
-     *
-     * @var string
-     */
-    public $crashPackage;
-    /**
-     * The name of the package that caused the dialog.
-     *
-     * @param string $crashPackage
-     */
-    public function setCrashPackage($crashPackage)
+namespace Google\Service\ToolResults {
+    class CrashDialogError extends \Google\Model
     {
+        /**
+         * The name of the package that caused the dialog.
+         *
+         * @var string
+         */
+        public $crashPackage;
+        /**
+         * The name of the package that caused the dialog.
+         *
+         * @param string $crashPackage
+         */
+        public function setCrashPackage($crashPackage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCrashPackage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ToolResults\CrashDialogError registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCrashPackage()
+    class Google_Service_ToolResults_CrashDialogError extends \Google\Service\ToolResults\CrashDialogError
     {
     }
 }

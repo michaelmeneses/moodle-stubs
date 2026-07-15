@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1GenerateGroundedContentResponse extends \Google\Collection
-{
-    protected $collection_key = 'candidates';
-    protected $candidatesType = GoogleCloudDiscoveryengineV1GenerateGroundedContentResponseCandidate::class;
-    protected $candidatesDataType = 'array';
-    /**
-     * @param GoogleCloudDiscoveryengineV1GenerateGroundedContentResponseCandidate[]
-     */
-    public function setCandidates($candidates)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1GenerateGroundedContentResponse extends \Google\Collection
     {
+        protected $collection_key = 'candidates';
+        protected $candidatesType = GoogleCloudDiscoveryengineV1GenerateGroundedContentResponseCandidate::class;
+        protected $candidatesDataType = 'array';
+        /**
+         * @param GoogleCloudDiscoveryengineV1GenerateGroundedContentResponseCandidate[]
+         */
+        public function setCandidates($candidates)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1GenerateGroundedContentResponseCandidate[]
+         */
+        public function getCandidates()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1GenerateGroundedContentResponseCandidate[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1GenerateGroundedContentResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCandidates()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1GenerateGroundedContentResponse extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1GenerateGroundedContentResponse
     {
     }
 }

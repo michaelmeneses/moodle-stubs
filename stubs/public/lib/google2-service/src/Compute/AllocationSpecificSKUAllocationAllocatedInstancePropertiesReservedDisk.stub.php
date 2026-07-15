@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class AllocationSpecificSKUAllocationAllocatedInstancePropertiesReservedDisk extends \Google\Model
-{
-    public const INTERFACE_NVME = 'NVME';
-    public const INTERFACE_SCSI = 'SCSI';
-    /**
-     * Specifies the size of the disk in base-2 GB.
-     *
-     * @var string
-     */
-    public $diskSizeGb;
-    /**
-     * Specifies the disk interface to use for attaching this disk, which is
-     * either SCSI or NVME. The default isSCSI. For performance characteristics of
-     * SCSI over NVMe, seeLocal SSD performance.
-     *
-     * @var string
-     */
-    public $interface;
-    /**
-     * Specifies the size of the disk in base-2 GB.
-     *
-     * @param string $diskSizeGb
-     */
-    public function setDiskSizeGb($diskSizeGb)
+namespace Google\Service\Compute {
+    class AllocationSpecificSKUAllocationAllocatedInstancePropertiesReservedDisk extends \Google\Model
     {
+        public const INTERFACE_NVME = 'NVME';
+        public const INTERFACE_SCSI = 'SCSI';
+        /**
+         * Specifies the size of the disk in base-2 GB.
+         *
+         * @var string
+         */
+        public $diskSizeGb;
+        /**
+         * Specifies the disk interface to use for attaching this disk, which is
+         * either SCSI or NVME. The default isSCSI. For performance characteristics of
+         * SCSI over NVMe, seeLocal SSD performance.
+         *
+         * @var string
+         */
+        public $interface;
+        /**
+         * Specifies the size of the disk in base-2 GB.
+         *
+         * @param string $diskSizeGb
+         */
+        public function setDiskSizeGb($diskSizeGb)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDiskSizeGb()
+        {
+        }
+        /**
+         * Specifies the disk interface to use for attaching this disk, which is
+         * either SCSI or NVME. The default isSCSI. For performance characteristics of
+         * SCSI over NVMe, seeLocal SSD performance.
+         *
+         * Accepted values: NVME, SCSI
+         *
+         * @param self::INTERFACE_* $interface
+         */
+        public function setInterface($interface)
+        {
+        }
+        /**
+         * @return self::INTERFACE_*
+         */
+        public function getInterface()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\AllocationSpecificSKUAllocationAllocatedInstancePropertiesReservedDisk registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDiskSizeGb()
-    {
-    }
-    /**
-     * Specifies the disk interface to use for attaching this disk, which is
-     * either SCSI or NVME. The default isSCSI. For performance characteristics of
-     * SCSI over NVMe, seeLocal SSD performance.
-     *
-     * Accepted values: NVME, SCSI
-     *
-     * @param self::INTERFACE_* $interface
-     */
-    public function setInterface($interface)
-    {
-    }
-    /**
-     * @return self::INTERFACE_*
-     */
-    public function getInterface()
+    class Google_Service_Compute_AllocationSpecificSKUAllocationAllocatedInstancePropertiesReservedDisk extends \Google\Service\Compute\AllocationSpecificSKUAllocationAllocatedInstancePropertiesReservedDisk
     {
     }
 }

@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudFunctions;
-
-class GoogleCloudFunctionsV2StateMessage extends \Google\Model
-{
-    /**
-     * Not specified. Invalid severity.
-     */
-    public const SEVERITY_SEVERITY_UNSPECIFIED = 'SEVERITY_UNSPECIFIED';
-    /**
-     * ERROR-level severity.
-     */
-    public const SEVERITY_ERROR = 'ERROR';
-    /**
-     * WARNING-level severity.
-     */
-    public const SEVERITY_WARNING = 'WARNING';
-    /**
-     * INFO-level severity.
-     */
-    public const SEVERITY_INFO = 'INFO';
-    /**
-     * The message.
-     *
-     * @var string
-     */
-    public $message;
-    /**
-     * Severity of the state message.
-     *
-     * @var string
-     */
-    public $severity;
-    /**
-     * One-word CamelCase type of the state message.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The message.
-     *
-     * @param string $message
-     */
-    public function setMessage($message)
+namespace Google\Service\CloudFunctions {
+    class GoogleCloudFunctionsV2StateMessage extends \Google\Model
     {
+        /**
+         * Not specified. Invalid severity.
+         */
+        public const SEVERITY_SEVERITY_UNSPECIFIED = 'SEVERITY_UNSPECIFIED';
+        /**
+         * ERROR-level severity.
+         */
+        public const SEVERITY_ERROR = 'ERROR';
+        /**
+         * WARNING-level severity.
+         */
+        public const SEVERITY_WARNING = 'WARNING';
+        /**
+         * INFO-level severity.
+         */
+        public const SEVERITY_INFO = 'INFO';
+        /**
+         * The message.
+         *
+         * @var string
+         */
+        public $message;
+        /**
+         * Severity of the state message.
+         *
+         * @var string
+         */
+        public $severity;
+        /**
+         * One-word CamelCase type of the state message.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The message.
+         *
+         * @param string $message
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
+        /**
+         * Severity of the state message.
+         *
+         * Accepted values: SEVERITY_UNSPECIFIED, ERROR, WARNING, INFO
+         *
+         * @param self::SEVERITY_* $severity
+         */
+        public function setSeverity($severity)
+        {
+        }
+        /**
+         * @return self::SEVERITY_*
+         */
+        public function getSeverity()
+        {
+        }
+        /**
+         * One-word CamelCase type of the state message.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudFunctions\GoogleCloudFunctionsV2StateMessage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMessage()
-    {
-    }
-    /**
-     * Severity of the state message.
-     *
-     * Accepted values: SEVERITY_UNSPECIFIED, ERROR, WARNING, INFO
-     *
-     * @param self::SEVERITY_* $severity
-     */
-    public function setSeverity($severity)
-    {
-    }
-    /**
-     * @return self::SEVERITY_*
-     */
-    public function getSeverity()
-    {
-    }
-    /**
-     * One-word CamelCase type of the state message.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_CloudFunctions_GoogleCloudFunctionsV2StateMessage extends \Google\Service\CloudFunctions\GoogleCloudFunctionsV2StateMessage
     {
     }
 }

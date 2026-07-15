@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaPurgeSuggestionDenyListEntriesResponse extends \Google\Collection
-{
-    protected $collection_key = 'errorSamples';
-    protected $errorSamplesType = GoogleRpcStatus::class;
-    protected $errorSamplesDataType = 'array';
-    /**
-     * Number of suggestion deny list entries purged.
-     *
-     * @var string
-     */
-    public $purgeCount;
-    /**
-     * A sample of errors encountered while processing the request.
-     *
-     * @param GoogleRpcStatus[] $errorSamples
-     */
-    public function setErrorSamples($errorSamples)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaPurgeSuggestionDenyListEntriesResponse extends \Google\Collection
     {
+        protected $collection_key = 'errorSamples';
+        protected $errorSamplesType = GoogleRpcStatus::class;
+        protected $errorSamplesDataType = 'array';
+        /**
+         * Number of suggestion deny list entries purged.
+         *
+         * @var string
+         */
+        public $purgeCount;
+        /**
+         * A sample of errors encountered while processing the request.
+         *
+         * @param GoogleRpcStatus[] $errorSamples
+         */
+        public function setErrorSamples($errorSamples)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus[]
+         */
+        public function getErrorSamples()
+        {
+        }
+        /**
+         * Number of suggestion deny list entries purged.
+         *
+         * @param string $purgeCount
+         */
+        public function setPurgeCount($purgeCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPurgeCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleRpcStatus[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaPurgeSuggestionDenyListEntriesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrorSamples()
-    {
-    }
-    /**
-     * Number of suggestion deny list entries purged.
-     *
-     * @param string $purgeCount
-     */
-    public function setPurgeCount($purgeCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPurgeCount()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaPurgeSuggestionDenyListEntriesResponse extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaPurgeSuggestionDenyListEntriesResponse
     {
     }
 }

@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaAnswerStepAction extends \Google\Model
-{
-    protected $observationType = GoogleCloudDiscoveryengineV1alphaAnswerStepActionObservation::class;
-    protected $observationDataType = '';
-    protected $searchActionType = GoogleCloudDiscoveryengineV1alphaAnswerStepActionSearchAction::class;
-    protected $searchActionDataType = '';
-    /**
-     * Observation.
-     *
-     * @param GoogleCloudDiscoveryengineV1alphaAnswerStepActionObservation $observation
-     */
-    public function setObservation(GoogleCloudDiscoveryengineV1alphaAnswerStepActionObservation $observation)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaAnswerStepAction extends \Google\Model
     {
+        protected $observationType = GoogleCloudDiscoveryengineV1alphaAnswerStepActionObservation::class;
+        protected $observationDataType = '';
+        protected $searchActionType = GoogleCloudDiscoveryengineV1alphaAnswerStepActionSearchAction::class;
+        protected $searchActionDataType = '';
+        /**
+         * Observation.
+         *
+         * @param GoogleCloudDiscoveryengineV1alphaAnswerStepActionObservation $observation
+         */
+        public function setObservation(GoogleCloudDiscoveryengineV1alphaAnswerStepActionObservation $observation)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1alphaAnswerStepActionObservation
+         */
+        public function getObservation()
+        {
+        }
+        /**
+         * Search action.
+         *
+         * @param GoogleCloudDiscoveryengineV1alphaAnswerStepActionSearchAction $searchAction
+         */
+        public function setSearchAction(GoogleCloudDiscoveryengineV1alphaAnswerStepActionSearchAction $searchAction)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1alphaAnswerStepActionSearchAction
+         */
+        public function getSearchAction()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1alphaAnswerStepActionObservation
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaAnswerStepAction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getObservation()
-    {
-    }
-    /**
-     * Search action.
-     *
-     * @param GoogleCloudDiscoveryengineV1alphaAnswerStepActionSearchAction $searchAction
-     */
-    public function setSearchAction(GoogleCloudDiscoveryengineV1alphaAnswerStepActionSearchAction $searchAction)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1alphaAnswerStepActionSearchAction
-     */
-    public function getSearchAction()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaAnswerStepAction extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaAnswerStepAction
     {
     }
 }

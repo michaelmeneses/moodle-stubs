@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveLabels;
-
-class GoogleAppsDriveLabelsV2LongTextLimits extends \Google\Model
-{
-    /**
-     * Maximum length allowed for a long text field type.
-     *
-     * @var int
-     */
-    public $maxLength;
-    /**
-     * Minimum length allowed for a long text field type.
-     *
-     * @var int
-     */
-    public $minLength;
-    /**
-     * Maximum length allowed for a long text field type.
-     *
-     * @param int $maxLength
-     */
-    public function setMaxLength($maxLength)
+namespace Google\Service\DriveLabels {
+    class GoogleAppsDriveLabelsV2LongTextLimits extends \Google\Model
     {
+        /**
+         * Maximum length allowed for a long text field type.
+         *
+         * @var int
+         */
+        public $maxLength;
+        /**
+         * Minimum length allowed for a long text field type.
+         *
+         * @var int
+         */
+        public $minLength;
+        /**
+         * Maximum length allowed for a long text field type.
+         *
+         * @param int $maxLength
+         */
+        public function setMaxLength($maxLength)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxLength()
+        {
+        }
+        /**
+         * Minimum length allowed for a long text field type.
+         *
+         * @param int $minLength
+         */
+        public function setMinLength($minLength)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMinLength()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2LongTextLimits registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaxLength()
-    {
-    }
-    /**
-     * Minimum length allowed for a long text field type.
-     *
-     * @param int $minLength
-     */
-    public function setMinLength($minLength)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMinLength()
+    class Google_Service_DriveLabels_GoogleAppsDriveLabelsV2LongTextLimits extends \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2LongTextLimits
     {
     }
 }

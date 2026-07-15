@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class ListDeliveryPipelinesResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $deliveryPipelinesType = DeliveryPipeline::class;
-    protected $deliveryPipelinesDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * The `DeliveryPipeline` objects.
-     *
-     * @param DeliveryPipeline[] $deliveryPipelines
-     */
-    public function setDeliveryPipelines($deliveryPipelines)
+namespace Google\Service\CloudDeploy {
+    class ListDeliveryPipelinesResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $deliveryPipelinesType = DeliveryPipeline::class;
+        protected $deliveryPipelinesDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * The `DeliveryPipeline` objects.
+         *
+         * @param DeliveryPipeline[] $deliveryPipelines
+         */
+        public function setDeliveryPipelines($deliveryPipelines)
+        {
+        }
+        /**
+         * @return DeliveryPipeline[]
+         */
+        public function getDeliveryPipelines()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DeliveryPipeline[]
+     * Runtime class alias of \Google\Service\CloudDeploy\ListDeliveryPipelinesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeliveryPipelines()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_CloudDeploy_ListDeliveryPipelinesResponse extends \Google\Service\CloudDeploy\ListDeliveryPipelinesResponse
     {
     }
 }

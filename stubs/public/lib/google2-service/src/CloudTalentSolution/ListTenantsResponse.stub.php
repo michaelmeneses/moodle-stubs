@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudTalentSolution;
-
-class ListTenantsResponse extends \Google\Collection
-{
-    protected $collection_key = 'tenants';
-    protected $metadataType = ResponseMetadata::class;
-    protected $metadataDataType = '';
-    /**
-     * A token to retrieve the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $tenantsType = Tenant::class;
-    protected $tenantsDataType = 'array';
-    /**
-     * Additional information for the API invocation, such as the request tracking
-     * id.
-     *
-     * @param ResponseMetadata $metadata
-     */
-    public function setMetadata(ResponseMetadata $metadata)
+namespace Google\Service\CloudTalentSolution {
+    class ListTenantsResponse extends \Google\Collection
     {
+        protected $collection_key = 'tenants';
+        protected $metadataType = ResponseMetadata::class;
+        protected $metadataDataType = '';
+        /**
+         * A token to retrieve the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $tenantsType = Tenant::class;
+        protected $tenantsDataType = 'array';
+        /**
+         * Additional information for the API invocation, such as the request tracking
+         * id.
+         *
+         * @param ResponseMetadata $metadata
+         */
+        public function setMetadata(ResponseMetadata $metadata)
+        {
+        }
+        /**
+         * @return ResponseMetadata
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * A token to retrieve the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Tenants for the current client.
+         *
+         * @param Tenant[] $tenants
+         */
+        public function setTenants($tenants)
+        {
+        }
+        /**
+         * @return Tenant[]
+         */
+        public function getTenants()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ResponseMetadata
+     * Runtime class alias of \Google\Service\CloudTalentSolution\ListTenantsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetadata()
-    {
-    }
-    /**
-     * A token to retrieve the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Tenants for the current client.
-     *
-     * @param Tenant[] $tenants
-     */
-    public function setTenants($tenants)
-    {
-    }
-    /**
-     * @return Tenant[]
-     */
-    public function getTenants()
+    class Google_Service_CloudTalentSolution_ListTenantsResponse extends \Google\Service\CloudTalentSolution\ListTenantsResponse
     {
     }
 }

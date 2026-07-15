@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class GiftCardObjectAddMessageResponse extends \Google\Model
-{
-    protected $resourceType = GiftCardObject::class;
-    protected $resourceDataType = '';
-    /**
-     * The updated GiftCardObject resource.
-     *
-     * @param GiftCardObject $resource
-     */
-    public function setResource(GiftCardObject $resource)
+namespace Google\Service\Walletobjects {
+    class GiftCardObjectAddMessageResponse extends \Google\Model
     {
+        protected $resourceType = GiftCardObject::class;
+        protected $resourceDataType = '';
+        /**
+         * The updated GiftCardObject resource.
+         *
+         * @param GiftCardObject $resource
+         */
+        public function setResource(GiftCardObject $resource)
+        {
+        }
+        /**
+         * @return GiftCardObject
+         */
+        public function getResource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GiftCardObject
+     * Runtime class alias of \Google\Service\Walletobjects\GiftCardObjectAddMessageResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResource()
+    class Google_Service_Walletobjects_GiftCardObjectAddMessageResponse extends \Google\Service\Walletobjects\GiftCardObjectAddMessageResponse
     {
     }
 }

@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataform;
-
-class SearchResult extends \Google\Model
-{
-    protected $directoryType = DirectorySearchResult::class;
-    protected $directoryDataType = '';
-    protected $fileType = FileSearchResult::class;
-    protected $fileDataType = '';
-    /**
-     * Details when search result is a directory.
-     *
-     * @param DirectorySearchResult $directory
-     */
-    public function setDirectory(DirectorySearchResult $directory)
+namespace Google\Service\Dataform {
+    class SearchResult extends \Google\Model
     {
+        protected $directoryType = DirectorySearchResult::class;
+        protected $directoryDataType = '';
+        protected $fileType = FileSearchResult::class;
+        protected $fileDataType = '';
+        /**
+         * Details when search result is a directory.
+         *
+         * @param DirectorySearchResult $directory
+         */
+        public function setDirectory(DirectorySearchResult $directory)
+        {
+        }
+        /**
+         * @return DirectorySearchResult
+         */
+        public function getDirectory()
+        {
+        }
+        /**
+         * Details when search result is a file.
+         *
+         * @param FileSearchResult $file
+         */
+        public function setFile(FileSearchResult $file)
+        {
+        }
+        /**
+         * @return FileSearchResult
+         */
+        public function getFile()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DirectorySearchResult
+     * Runtime class alias of \Google\Service\Dataform\SearchResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDirectory()
-    {
-    }
-    /**
-     * Details when search result is a file.
-     *
-     * @param FileSearchResult $file
-     */
-    public function setFile(FileSearchResult $file)
-    {
-    }
-    /**
-     * @return FileSearchResult
-     */
-    public function getFile()
+    class Google_Service_Dataform_SearchResult extends \Google\Service\Dataform\SearchResult
     {
     }
 }

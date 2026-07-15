@@ -21,226 +21,235 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1beta2DocumentPageTokenStyleInfo extends \Google\Model
-{
-    protected $backgroundColorType = GoogleTypeColor::class;
-    protected $backgroundColorDataType = '';
-    /**
-     * @var bool
-     */
-    public $bold;
-    /**
-     * @var int
-     */
-    public $fontSize;
-    /**
-     * @var string
-     */
-    public $fontType;
-    /**
-     * @var int
-     */
-    public $fontWeight;
-    /**
-     * @var bool
-     */
-    public $handwritten;
-    /**
-     * @var bool
-     */
-    public $italic;
-    public $letterSpacing;
-    public $pixelFontSize;
-    /**
-     * @var bool
-     */
-    public $smallcaps;
-    /**
-     * @var bool
-     */
-    public $strikeout;
-    /**
-     * @var bool
-     */
-    public $subscript;
-    /**
-     * @var bool
-     */
-    public $superscript;
-    protected $textColorType = GoogleTypeColor::class;
-    protected $textColorDataType = '';
-    /**
-     * @var bool
-     */
-    public $underlined;
-    /**
-     * @param GoogleTypeColor
-     */
-    public function setBackgroundColor(GoogleTypeColor $backgroundColor)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1beta2DocumentPageTokenStyleInfo extends \Google\Model
     {
+        protected $backgroundColorType = GoogleTypeColor::class;
+        protected $backgroundColorDataType = '';
+        /**
+         * @var bool
+         */
+        public $bold;
+        /**
+         * @var int
+         */
+        public $fontSize;
+        /**
+         * @var string
+         */
+        public $fontType;
+        /**
+         * @var int
+         */
+        public $fontWeight;
+        /**
+         * @var bool
+         */
+        public $handwritten;
+        /**
+         * @var bool
+         */
+        public $italic;
+        public $letterSpacing;
+        public $pixelFontSize;
+        /**
+         * @var bool
+         */
+        public $smallcaps;
+        /**
+         * @var bool
+         */
+        public $strikeout;
+        /**
+         * @var bool
+         */
+        public $subscript;
+        /**
+         * @var bool
+         */
+        public $superscript;
+        protected $textColorType = GoogleTypeColor::class;
+        protected $textColorDataType = '';
+        /**
+         * @var bool
+         */
+        public $underlined;
+        /**
+         * @param GoogleTypeColor
+         */
+        public function setBackgroundColor(GoogleTypeColor $backgroundColor)
+        {
+        }
+        /**
+         * @return GoogleTypeColor
+         */
+        public function getBackgroundColor()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setBold($bold)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getBold()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setFontSize($fontSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getFontSize()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setFontType($fontType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFontType()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setFontWeight($fontWeight)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getFontWeight()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setHandwritten($handwritten)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getHandwritten()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setItalic($italic)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getItalic()
+        {
+        }
+        public function setLetterSpacing($letterSpacing)
+        {
+        }
+        public function getLetterSpacing()
+        {
+        }
+        public function setPixelFontSize($pixelFontSize)
+        {
+        }
+        public function getPixelFontSize()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setSmallcaps($smallcaps)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSmallcaps()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setStrikeout($strikeout)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getStrikeout()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setSubscript($subscript)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSubscript()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setSuperscript($superscript)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSuperscript()
+        {
+        }
+        /**
+         * @param GoogleTypeColor
+         */
+        public function setTextColor(GoogleTypeColor $textColor)
+        {
+        }
+        /**
+         * @return GoogleTypeColor
+         */
+        public function getTextColor()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setUnderlined($underlined)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUnderlined()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleTypeColor
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1beta2DocumentPageTokenStyleInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackgroundColor()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setBold($bold)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getBold()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setFontSize($fontSize)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getFontSize()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setFontType($fontType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFontType()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setFontWeight($fontWeight)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getFontWeight()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setHandwritten($handwritten)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getHandwritten()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setItalic($italic)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getItalic()
-    {
-    }
-    public function setLetterSpacing($letterSpacing)
-    {
-    }
-    public function getLetterSpacing()
-    {
-    }
-    public function setPixelFontSize($pixelFontSize)
-    {
-    }
-    public function getPixelFontSize()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setSmallcaps($smallcaps)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSmallcaps()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setStrikeout($strikeout)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getStrikeout()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setSubscript($subscript)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSubscript()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setSuperscript($superscript)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSuperscript()
-    {
-    }
-    /**
-     * @param GoogleTypeColor
-     */
-    public function setTextColor(GoogleTypeColor $textColor)
-    {
-    }
-    /**
-     * @return GoogleTypeColor
-     */
-    public function getTextColor()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setUnderlined($underlined)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUnderlined()
+    class Google_Service_Document_GoogleCloudDocumentaiV1beta2DocumentPageTokenStyleInfo extends \Google\Service\Document\GoogleCloudDocumentaiV1beta2DocumentPageTokenStyleInfo
     {
     }
 }

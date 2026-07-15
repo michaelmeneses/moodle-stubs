@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BeyondCorp;
-
-class GoogleCloudBeyondcorpSecuritygatewaysV1ServiceDiscoveryApiGateway extends \Google\Model
-{
-    protected $resourceOverrideType = GoogleCloudBeyondcorpSecuritygatewaysV1ServiceDiscoveryApiGatewayOperationDescriptor::class;
-    protected $resourceOverrideDataType = '';
-    /**
-     * Required. Enables fetching resource model updates to alter service behavior
-     * per Chrome profile.
-     *
-     * @param GoogleCloudBeyondcorpSecuritygatewaysV1ServiceDiscoveryApiGatewayOperationDescriptor $resourceOverride
-     */
-    public function setResourceOverride(GoogleCloudBeyondcorpSecuritygatewaysV1ServiceDiscoveryApiGatewayOperationDescriptor $resourceOverride)
+namespace Google\Service\BeyondCorp {
+    class GoogleCloudBeyondcorpSecuritygatewaysV1ServiceDiscoveryApiGateway extends \Google\Model
     {
+        protected $resourceOverrideType = GoogleCloudBeyondcorpSecuritygatewaysV1ServiceDiscoveryApiGatewayOperationDescriptor::class;
+        protected $resourceOverrideDataType = '';
+        /**
+         * Required. Enables fetching resource model updates to alter service behavior
+         * per Chrome profile.
+         *
+         * @param GoogleCloudBeyondcorpSecuritygatewaysV1ServiceDiscoveryApiGatewayOperationDescriptor $resourceOverride
+         */
+        public function setResourceOverride(GoogleCloudBeyondcorpSecuritygatewaysV1ServiceDiscoveryApiGatewayOperationDescriptor $resourceOverride)
+        {
+        }
+        /**
+         * @return GoogleCloudBeyondcorpSecuritygatewaysV1ServiceDiscoveryApiGatewayOperationDescriptor
+         */
+        public function getResourceOverride()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudBeyondcorpSecuritygatewaysV1ServiceDiscoveryApiGatewayOperationDescriptor
+     * Runtime class alias of \Google\Service\BeyondCorp\GoogleCloudBeyondcorpSecuritygatewaysV1ServiceDiscoveryApiGateway registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResourceOverride()
+    class Google_Service_BeyondCorp_GoogleCloudBeyondcorpSecuritygatewaysV1ServiceDiscoveryApiGateway extends \Google\Service\BeyondCorp\GoogleCloudBeyondcorpSecuritygatewaysV1ServiceDiscoveryApiGateway
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BinaryAuthorization;
-
-class EvaluationResult extends \Google\Model
-{
-    /**
-     * Not specified. This should never be used.
-     */
-    public const VERDICT_CHECK_VERDICT_UNSPECIFIED = 'CHECK_VERDICT_UNSPECIFIED';
-    /**
-     * The check was successfully evaluated and the image satisfied the check.
-     */
-    public const VERDICT_CONFORMANT = 'CONFORMANT';
-    /**
-     * The check was successfully evaluated and the image did not satisfy the
-     * check.
-     */
-    public const VERDICT_NON_CONFORMANT = 'NON_CONFORMANT';
-    /**
-     * The check was not successfully evaluated.
-     */
-    public const VERDICT_ERROR = 'ERROR';
-    /**
-     * The result of evaluating this check.
-     *
-     * @var string
-     */
-    public $verdict;
-    /**
-     * The result of evaluating this check.
-     *
-     * Accepted values: CHECK_VERDICT_UNSPECIFIED, CONFORMANT, NON_CONFORMANT,
-     * ERROR
-     *
-     * @param self::VERDICT_* $verdict
-     */
-    public function setVerdict($verdict)
+namespace Google\Service\BinaryAuthorization {
+    class EvaluationResult extends \Google\Model
     {
+        /**
+         * Not specified. This should never be used.
+         */
+        public const VERDICT_CHECK_VERDICT_UNSPECIFIED = 'CHECK_VERDICT_UNSPECIFIED';
+        /**
+         * The check was successfully evaluated and the image satisfied the check.
+         */
+        public const VERDICT_CONFORMANT = 'CONFORMANT';
+        /**
+         * The check was successfully evaluated and the image did not satisfy the
+         * check.
+         */
+        public const VERDICT_NON_CONFORMANT = 'NON_CONFORMANT';
+        /**
+         * The check was not successfully evaluated.
+         */
+        public const VERDICT_ERROR = 'ERROR';
+        /**
+         * The result of evaluating this check.
+         *
+         * @var string
+         */
+        public $verdict;
+        /**
+         * The result of evaluating this check.
+         *
+         * Accepted values: CHECK_VERDICT_UNSPECIFIED, CONFORMANT, NON_CONFORMANT,
+         * ERROR
+         *
+         * @param self::VERDICT_* $verdict
+         */
+        public function setVerdict($verdict)
+        {
+        }
+        /**
+         * @return self::VERDICT_*
+         */
+        public function getVerdict()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::VERDICT_*
+     * Runtime class alias of \Google\Service\BinaryAuthorization\EvaluationResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getVerdict()
+    class Google_Service_BinaryAuthorization_EvaluationResult extends \Google\Service\BinaryAuthorization\EvaluationResult
     {
     }
 }

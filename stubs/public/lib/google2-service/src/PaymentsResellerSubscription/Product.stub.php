@@ -21,170 +21,179 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PaymentsResellerSubscription;
-
-class Product extends \Google\Collection
-{
-    /**
-     * Unspecified. It's reserved as an unexpected value, should not be used.
-     */
-    public const PRODUCT_TYPE_PRODUCT_TYPE_UNSPECIFIED = 'PRODUCT_TYPE_UNSPECIFIED';
-    /**
-     * The product is a subscription.
-     */
-    public const PRODUCT_TYPE_PRODUCT_TYPE_SUBSCRIPTION = 'PRODUCT_TYPE_SUBSCRIPTION';
-    /**
-     * The product is a bundled subscription plan, which includes multiple
-     * subscription elements.
-     */
-    public const PRODUCT_TYPE_PRODUCT_TYPE_BUNDLE_SUBSCRIPTION = 'PRODUCT_TYPE_BUNDLE_SUBSCRIPTION';
-    protected $collection_key = 'titles';
-    protected $bundleDetailsType = ProductBundleDetails::class;
-    protected $bundleDetailsDataType = '';
-    protected $finiteBillingCycleDetailsType = FiniteBillingCycleDetails::class;
-    protected $finiteBillingCycleDetailsDataType = '';
-    /**
-     * Identifier. Response only. Resource name of the product. It will have the
-     * format of "partners/{partner_id}/products/{product_id}"
-     *
-     * @var string
-     */
-    public $name;
-    protected $priceConfigsType = ProductPriceConfig::class;
-    protected $priceConfigsDataType = 'array';
-    /**
-     * Output only. Specifies the type of the product.
-     *
-     * @var string
-     */
-    public $productType;
-    /**
-     * Output only. 2-letter ISO region code where the product is available in.
-     * Ex. "US" Please refers to: https://en.wikipedia.org/wiki/ISO_3166-1
-     *
-     * @var string[]
-     */
-    public $regionCodes;
-    protected $subscriptionBillingCycleDurationType = Duration::class;
-    protected $subscriptionBillingCycleDurationDataType = '';
-    protected $titlesType = GoogleTypeLocalizedText::class;
-    protected $titlesDataType = 'array';
-    /**
-     * Output only. Specifies the details for a bundle product.
-     *
-     * @param ProductBundleDetails $bundleDetails
-     */
-    public function setBundleDetails(ProductBundleDetails $bundleDetails)
+namespace Google\Service\PaymentsResellerSubscription {
+    class Product extends \Google\Collection
     {
+        /**
+         * Unspecified. It's reserved as an unexpected value, should not be used.
+         */
+        public const PRODUCT_TYPE_PRODUCT_TYPE_UNSPECIFIED = 'PRODUCT_TYPE_UNSPECIFIED';
+        /**
+         * The product is a subscription.
+         */
+        public const PRODUCT_TYPE_PRODUCT_TYPE_SUBSCRIPTION = 'PRODUCT_TYPE_SUBSCRIPTION';
+        /**
+         * The product is a bundled subscription plan, which includes multiple
+         * subscription elements.
+         */
+        public const PRODUCT_TYPE_PRODUCT_TYPE_BUNDLE_SUBSCRIPTION = 'PRODUCT_TYPE_BUNDLE_SUBSCRIPTION';
+        protected $collection_key = 'titles';
+        protected $bundleDetailsType = ProductBundleDetails::class;
+        protected $bundleDetailsDataType = '';
+        protected $finiteBillingCycleDetailsType = FiniteBillingCycleDetails::class;
+        protected $finiteBillingCycleDetailsDataType = '';
+        /**
+         * Identifier. Response only. Resource name of the product. It will have the
+         * format of "partners/{partner_id}/products/{product_id}"
+         *
+         * @var string
+         */
+        public $name;
+        protected $priceConfigsType = ProductPriceConfig::class;
+        protected $priceConfigsDataType = 'array';
+        /**
+         * Output only. Specifies the type of the product.
+         *
+         * @var string
+         */
+        public $productType;
+        /**
+         * Output only. 2-letter ISO region code where the product is available in.
+         * Ex. "US" Please refers to: https://en.wikipedia.org/wiki/ISO_3166-1
+         *
+         * @var string[]
+         */
+        public $regionCodes;
+        protected $subscriptionBillingCycleDurationType = Duration::class;
+        protected $subscriptionBillingCycleDurationDataType = '';
+        protected $titlesType = GoogleTypeLocalizedText::class;
+        protected $titlesDataType = 'array';
+        /**
+         * Output only. Specifies the details for a bundle product.
+         *
+         * @param ProductBundleDetails $bundleDetails
+         */
+        public function setBundleDetails(ProductBundleDetails $bundleDetails)
+        {
+        }
+        /**
+         * @return ProductBundleDetails
+         */
+        public function getBundleDetails()
+        {
+        }
+        /**
+         * Optional. Details for a subscription line item with finite billing cycles.
+         * If unset, the line item will be charged indefinitely.
+         *
+         * @param FiniteBillingCycleDetails $finiteBillingCycleDetails
+         */
+        public function setFiniteBillingCycleDetails(FiniteBillingCycleDetails $finiteBillingCycleDetails)
+        {
+        }
+        /**
+         * @return FiniteBillingCycleDetails
+         */
+        public function getFiniteBillingCycleDetails()
+        {
+        }
+        /**
+         * Identifier. Response only. Resource name of the product. It will have the
+         * format of "partners/{partner_id}/products/{product_id}"
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. Price configs for the product in the available regions.
+         *
+         * @param ProductPriceConfig[] $priceConfigs
+         */
+        public function setPriceConfigs($priceConfigs)
+        {
+        }
+        /**
+         * @return ProductPriceConfig[]
+         */
+        public function getPriceConfigs()
+        {
+        }
+        /**
+         * Output only. Specifies the type of the product.
+         *
+         * Accepted values: PRODUCT_TYPE_UNSPECIFIED, PRODUCT_TYPE_SUBSCRIPTION,
+         * PRODUCT_TYPE_BUNDLE_SUBSCRIPTION
+         *
+         * @param self::PRODUCT_TYPE_* $productType
+         */
+        public function setProductType($productType)
+        {
+        }
+        /**
+         * @return self::PRODUCT_TYPE_*
+         */
+        public function getProductType()
+        {
+        }
+        /**
+         * Output only. 2-letter ISO region code where the product is available in.
+         * Ex. "US" Please refers to: https://en.wikipedia.org/wiki/ISO_3166-1
+         *
+         * @param string[] $regionCodes
+         */
+        public function setRegionCodes($regionCodes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRegionCodes()
+        {
+        }
+        /**
+         * Output only. Specifies the length of the billing cycle of the subscription.
+         *
+         * @param Duration $subscriptionBillingCycleDuration
+         */
+        public function setSubscriptionBillingCycleDuration(Duration $subscriptionBillingCycleDuration)
+        {
+        }
+        /**
+         * @return Duration
+         */
+        public function getSubscriptionBillingCycleDuration()
+        {
+        }
+        /**
+         * Output only. Localized human readable name of the product.
+         *
+         * @param GoogleTypeLocalizedText[] $titles
+         */
+        public function setTitles($titles)
+        {
+        }
+        /**
+         * @return GoogleTypeLocalizedText[]
+         */
+        public function getTitles()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ProductBundleDetails
+     * Runtime class alias of \Google\Service\PaymentsResellerSubscription\Product registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBundleDetails()
-    {
-    }
-    /**
-     * Optional. Details for a subscription line item with finite billing cycles.
-     * If unset, the line item will be charged indefinitely.
-     *
-     * @param FiniteBillingCycleDetails $finiteBillingCycleDetails
-     */
-    public function setFiniteBillingCycleDetails(FiniteBillingCycleDetails $finiteBillingCycleDetails)
-    {
-    }
-    /**
-     * @return FiniteBillingCycleDetails
-     */
-    public function getFiniteBillingCycleDetails()
-    {
-    }
-    /**
-     * Identifier. Response only. Resource name of the product. It will have the
-     * format of "partners/{partner_id}/products/{product_id}"
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. Price configs for the product in the available regions.
-     *
-     * @param ProductPriceConfig[] $priceConfigs
-     */
-    public function setPriceConfigs($priceConfigs)
-    {
-    }
-    /**
-     * @return ProductPriceConfig[]
-     */
-    public function getPriceConfigs()
-    {
-    }
-    /**
-     * Output only. Specifies the type of the product.
-     *
-     * Accepted values: PRODUCT_TYPE_UNSPECIFIED, PRODUCT_TYPE_SUBSCRIPTION,
-     * PRODUCT_TYPE_BUNDLE_SUBSCRIPTION
-     *
-     * @param self::PRODUCT_TYPE_* $productType
-     */
-    public function setProductType($productType)
-    {
-    }
-    /**
-     * @return self::PRODUCT_TYPE_*
-     */
-    public function getProductType()
-    {
-    }
-    /**
-     * Output only. 2-letter ISO region code where the product is available in.
-     * Ex. "US" Please refers to: https://en.wikipedia.org/wiki/ISO_3166-1
-     *
-     * @param string[] $regionCodes
-     */
-    public function setRegionCodes($regionCodes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRegionCodes()
-    {
-    }
-    /**
-     * Output only. Specifies the length of the billing cycle of the subscription.
-     *
-     * @param Duration $subscriptionBillingCycleDuration
-     */
-    public function setSubscriptionBillingCycleDuration(Duration $subscriptionBillingCycleDuration)
-    {
-    }
-    /**
-     * @return Duration
-     */
-    public function getSubscriptionBillingCycleDuration()
-    {
-    }
-    /**
-     * Output only. Localized human readable name of the product.
-     *
-     * @param GoogleTypeLocalizedText[] $titles
-     */
-    public function setTitles($titles)
-    {
-    }
-    /**
-     * @return GoogleTypeLocalizedText[]
-     */
-    public function getTitles()
+    class Google_Service_PaymentsResellerSubscription_Product extends \Google\Service\PaymentsResellerSubscription\Product
     {
     }
 }

@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class ConfigurationSpec extends \Google\Model
-{
-    protected $templateType = RevisionTemplate::class;
-    protected $templateDataType = '';
-    /**
-     * @param RevisionTemplate
-     */
-    public function setTemplate(RevisionTemplate $template)
+namespace Google\Service\CloudRun {
+    class ConfigurationSpec extends \Google\Model
     {
+        protected $templateType = RevisionTemplate::class;
+        protected $templateDataType = '';
+        /**
+         * @param RevisionTemplate
+         */
+        public function setTemplate(RevisionTemplate $template)
+        {
+        }
+        /**
+         * @return RevisionTemplate
+         */
+        public function getTemplate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RevisionTemplate
+     * Runtime class alias of \Google\Service\CloudRun\ConfigurationSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTemplate()
+    class Google_Service_CloudRun_ConfigurationSpec extends \Google\Service\CloudRun\ConfigurationSpec
     {
     }
 }

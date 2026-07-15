@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ArtifactRegistry;
-
-class ListTagsResponse extends \Google\Collection
-{
-    protected $collection_key = 'tags';
-    /**
-     * The token to retrieve the next page of tags, or empty if there are no more
-     * tags to return.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $tagsType = Tag::class;
-    protected $tagsDataType = 'array';
-    /**
-     * The token to retrieve the next page of tags, or empty if there are no more
-     * tags to return.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\ArtifactRegistry {
+    class ListTagsResponse extends \Google\Collection
     {
+        protected $collection_key = 'tags';
+        /**
+         * The token to retrieve the next page of tags, or empty if there are no more
+         * tags to return.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $tagsType = Tag::class;
+        protected $tagsDataType = 'array';
+        /**
+         * The token to retrieve the next page of tags, or empty if there are no more
+         * tags to return.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The tags returned.
+         *
+         * @param Tag[] $tags
+         */
+        public function setTags($tags)
+        {
+        }
+        /**
+         * @return Tag[]
+         */
+        public function getTags()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ArtifactRegistry\ListTagsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The tags returned.
-     *
-     * @param Tag[] $tags
-     */
-    public function setTags($tags)
-    {
-    }
-    /**
-     * @return Tag[]
-     */
-    public function getTags()
+    class Google_Service_ArtifactRegistry_ListTagsResponse extends \Google\Service\ArtifactRegistry\ListTagsResponse
     {
     }
 }

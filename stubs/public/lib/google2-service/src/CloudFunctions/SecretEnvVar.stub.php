@@ -21,96 +21,105 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudFunctions;
-
-class SecretEnvVar extends \Google\Model
-{
-    /**
-     * Name of the environment variable.
-     *
-     * @var string
-     */
-    public $key;
-    /**
-     * Project identifier (preferably project number but can also be the project
-     * ID) of the project that contains the secret. If not set, it is assumed that
-     * the secret is in the same project as the function.
-     *
-     * @var string
-     */
-    public $projectId;
-    /**
-     * Name of the secret in secret manager (not the full resource name).
-     *
-     * @var string
-     */
-    public $secret;
-    /**
-     * Version of the secret (version number or the string 'latest'). It is
-     * recommended to use a numeric version for secret environment variables as
-     * any updates to the secret value is not reflected until new instances start.
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * Name of the environment variable.
-     *
-     * @param string $key
-     */
-    public function setKey($key)
+namespace Google\Service\CloudFunctions {
+    class SecretEnvVar extends \Google\Model
     {
+        /**
+         * Name of the environment variable.
+         *
+         * @var string
+         */
+        public $key;
+        /**
+         * Project identifier (preferably project number but can also be the project
+         * ID) of the project that contains the secret. If not set, it is assumed that
+         * the secret is in the same project as the function.
+         *
+         * @var string
+         */
+        public $projectId;
+        /**
+         * Name of the secret in secret manager (not the full resource name).
+         *
+         * @var string
+         */
+        public $secret;
+        /**
+         * Version of the secret (version number or the string 'latest'). It is
+         * recommended to use a numeric version for secret environment variables as
+         * any updates to the secret value is not reflected until new instances start.
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * Name of the environment variable.
+         *
+         * @param string $key
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * Project identifier (preferably project number but can also be the project
+         * ID) of the project that contains the secret. If not set, it is assumed that
+         * the secret is in the same project as the function.
+         *
+         * @param string $projectId
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
+        /**
+         * Name of the secret in secret manager (not the full resource name).
+         *
+         * @param string $secret
+         */
+        public function setSecret($secret)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSecret()
+        {
+        }
+        /**
+         * Version of the secret (version number or the string 'latest'). It is
+         * recommended to use a numeric version for secret environment variables as
+         * any updates to the secret value is not reflected until new instances start.
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudFunctions\SecretEnvVar registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKey()
-    {
-    }
-    /**
-     * Project identifier (preferably project number but can also be the project
-     * ID) of the project that contains the secret. If not set, it is assumed that
-     * the secret is in the same project as the function.
-     *
-     * @param string $projectId
-     */
-    public function setProjectId($projectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProjectId()
-    {
-    }
-    /**
-     * Name of the secret in secret manager (not the full resource name).
-     *
-     * @param string $secret
-     */
-    public function setSecret($secret)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSecret()
-    {
-    }
-    /**
-     * Version of the secret (version number or the string 'latest'). It is
-     * recommended to use a numeric version for secret environment variables as
-     * any updates to the secret value is not reflected until new instances start.
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_CloudFunctions_SecretEnvVar extends \Google\Service\CloudFunctions\SecretEnvVar
     {
     }
 }

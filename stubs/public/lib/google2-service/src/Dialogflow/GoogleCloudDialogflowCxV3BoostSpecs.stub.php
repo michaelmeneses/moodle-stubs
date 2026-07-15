@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3BoostSpecs extends \Google\Collection
-{
-    protected $collection_key = 'spec';
-    /**
-     * Optional. Data Stores where the boosting configuration is applied. The full
-     * names of the referenced data stores. Formats: `projects/{project}/locations
-     * /{location}/collections/{collection}/dataStores/{data_store}`
-     * `projects/{project}/locations/{location}/dataStores/{data_store}`
-     *
-     * @var string[]
-     */
-    public $dataStores;
-    protected $specType = GoogleCloudDialogflowCxV3BoostSpec::class;
-    protected $specDataType = 'array';
-    /**
-     * Optional. Data Stores where the boosting configuration is applied. The full
-     * names of the referenced data stores. Formats: `projects/{project}/locations
-     * /{location}/collections/{collection}/dataStores/{data_store}`
-     * `projects/{project}/locations/{location}/dataStores/{data_store}`
-     *
-     * @param string[] $dataStores
-     */
-    public function setDataStores($dataStores)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3BoostSpecs extends \Google\Collection
     {
+        protected $collection_key = 'spec';
+        /**
+         * Optional. Data Stores where the boosting configuration is applied. The full
+         * names of the referenced data stores. Formats: `projects/{project}/locations
+         * /{location}/collections/{collection}/dataStores/{data_store}`
+         * `projects/{project}/locations/{location}/dataStores/{data_store}`
+         *
+         * @var string[]
+         */
+        public $dataStores;
+        protected $specType = GoogleCloudDialogflowCxV3BoostSpec::class;
+        protected $specDataType = 'array';
+        /**
+         * Optional. Data Stores where the boosting configuration is applied. The full
+         * names of the referenced data stores. Formats: `projects/{project}/locations
+         * /{location}/collections/{collection}/dataStores/{data_store}`
+         * `projects/{project}/locations/{location}/dataStores/{data_store}`
+         *
+         * @param string[] $dataStores
+         */
+        public function setDataStores($dataStores)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDataStores()
+        {
+        }
+        /**
+         * Optional. A list of boosting specifications.
+         *
+         * @param GoogleCloudDialogflowCxV3BoostSpec[] $spec
+         */
+        public function setSpec($spec)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3BoostSpec[]
+         */
+        public function getSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3BoostSpecs registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataStores()
-    {
-    }
-    /**
-     * Optional. A list of boosting specifications.
-     *
-     * @param GoogleCloudDialogflowCxV3BoostSpec[] $spec
-     */
-    public function setSpec($spec)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3BoostSpec[]
-     */
-    public function getSpec()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3BoostSpecs extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3BoostSpecs
     {
     }
 }

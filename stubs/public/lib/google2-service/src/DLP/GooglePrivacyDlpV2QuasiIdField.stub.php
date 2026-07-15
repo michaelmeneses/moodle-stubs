@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2QuasiIdField extends \Google\Model
-{
-    /**
-     * A auxiliary field.
-     *
-     * @var string
-     */
-    public $customTag;
-    protected $fieldType = GooglePrivacyDlpV2FieldId::class;
-    protected $fieldDataType = '';
-    /**
-     * A auxiliary field.
-     *
-     * @param string $customTag
-     */
-    public function setCustomTag($customTag)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2QuasiIdField extends \Google\Model
     {
+        /**
+         * A auxiliary field.
+         *
+         * @var string
+         */
+        public $customTag;
+        protected $fieldType = GooglePrivacyDlpV2FieldId::class;
+        protected $fieldDataType = '';
+        /**
+         * A auxiliary field.
+         *
+         * @param string $customTag
+         */
+        public function setCustomTag($customTag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomTag()
+        {
+        }
+        /**
+         * Identifies the column.
+         *
+         * @param GooglePrivacyDlpV2FieldId $field
+         */
+        public function setField(GooglePrivacyDlpV2FieldId $field)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2FieldId
+         */
+        public function getField()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2QuasiIdField registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomTag()
-    {
-    }
-    /**
-     * Identifies the column.
-     *
-     * @param GooglePrivacyDlpV2FieldId $field
-     */
-    public function setField(GooglePrivacyDlpV2FieldId $field)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2FieldId
-     */
-    public function getField()
+    class Google_Service_DLP_GooglePrivacyDlpV2QuasiIdField extends \Google\Service\DLP\GooglePrivacyDlpV2QuasiIdField
     {
     }
 }

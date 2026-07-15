@@ -21,79 +21,88 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class UpdateAuthorizedViewRequest extends \Google\Model
-{
-    protected $authorizedViewType = AuthorizedView::class;
-    protected $authorizedViewDataType = '';
-    /**
-     * Optional. If true, ignore the safety checks when updating the
-     * AuthorizedView.
-     *
-     * @var bool
-     */
-    public $ignoreWarnings;
-    /**
-     * Optional. The list of fields to update. A mask specifying which fields in
-     * the AuthorizedView resource should be updated. This mask is relative to the
-     * AuthorizedView resource, not to the request message. A field will be
-     * overwritten if it is in the mask. If empty, all fields set in the request
-     * will be overwritten. A special value `*` means to overwrite all fields
-     * (including fields not set in the request).
-     *
-     * @var string
-     */
-    public $updateMask;
-    /**
-     * Required. The AuthorizedView to update. The `name` in `authorized_view` is
-     * used to identify the AuthorizedView. AuthorizedView name must in this
-     * format: `projects/{project}/instances/{instance}/tables/{table}/authorizedV
-     * iews/{authorized_view}`.
-     *
-     * @param AuthorizedView $authorizedView
-     */
-    public function setAuthorizedView(AuthorizedView $authorizedView)
+namespace Google\Service\BigtableAdmin {
+    class UpdateAuthorizedViewRequest extends \Google\Model
     {
+        protected $authorizedViewType = AuthorizedView::class;
+        protected $authorizedViewDataType = '';
+        /**
+         * Optional. If true, ignore the safety checks when updating the
+         * AuthorizedView.
+         *
+         * @var bool
+         */
+        public $ignoreWarnings;
+        /**
+         * Optional. The list of fields to update. A mask specifying which fields in
+         * the AuthorizedView resource should be updated. This mask is relative to the
+         * AuthorizedView resource, not to the request message. A field will be
+         * overwritten if it is in the mask. If empty, all fields set in the request
+         * will be overwritten. A special value `*` means to overwrite all fields
+         * (including fields not set in the request).
+         *
+         * @var string
+         */
+        public $updateMask;
+        /**
+         * Required. The AuthorizedView to update. The `name` in `authorized_view` is
+         * used to identify the AuthorizedView. AuthorizedView name must in this
+         * format: `projects/{project}/instances/{instance}/tables/{table}/authorizedV
+         * iews/{authorized_view}`.
+         *
+         * @param AuthorizedView $authorizedView
+         */
+        public function setAuthorizedView(AuthorizedView $authorizedView)
+        {
+        }
+        /**
+         * @return AuthorizedView
+         */
+        public function getAuthorizedView()
+        {
+        }
+        /**
+         * Optional. If true, ignore the safety checks when updating the
+         * AuthorizedView.
+         *
+         * @param bool $ignoreWarnings
+         */
+        public function setIgnoreWarnings($ignoreWarnings)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIgnoreWarnings()
+        {
+        }
+        /**
+         * Optional. The list of fields to update. A mask specifying which fields in
+         * the AuthorizedView resource should be updated. This mask is relative to the
+         * AuthorizedView resource, not to the request message. A field will be
+         * overwritten if it is in the mask. If empty, all fields set in the request
+         * will be overwritten. A special value `*` means to overwrite all fields
+         * (including fields not set in the request).
+         *
+         * @param string $updateMask
+         */
+        public function setUpdateMask($updateMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateMask()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AuthorizedView
+     * Runtime class alias of \Google\Service\BigtableAdmin\UpdateAuthorizedViewRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuthorizedView()
-    {
-    }
-    /**
-     * Optional. If true, ignore the safety checks when updating the
-     * AuthorizedView.
-     *
-     * @param bool $ignoreWarnings
-     */
-    public function setIgnoreWarnings($ignoreWarnings)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIgnoreWarnings()
-    {
-    }
-    /**
-     * Optional. The list of fields to update. A mask specifying which fields in
-     * the AuthorizedView resource should be updated. This mask is relative to the
-     * AuthorizedView resource, not to the request message. A field will be
-     * overwritten if it is in the mask. If empty, all fields set in the request
-     * will be overwritten. A special value `*` means to overwrite all fields
-     * (including fields not set in the request).
-     *
-     * @param string $updateMask
-     */
-    public function setUpdateMask($updateMask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateMask()
+    class Google_Service_BigtableAdmin_UpdateAuthorizedViewRequest extends \Google\Service\BigtableAdmin\UpdateAuthorizedViewRequest
     {
     }
 }

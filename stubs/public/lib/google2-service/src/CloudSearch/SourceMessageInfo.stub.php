@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class SourceMessageInfo extends \Google\Model
-{
-    protected $messageIdType = MessageId::class;
-    protected $messageIdDataType = '';
-    /**
-     * @var string
-     */
-    public $messageType;
-    /**
-     * @param MessageId
-     */
-    public function setMessageId(MessageId $messageId)
+namespace Google\Service\CloudSearch {
+    class SourceMessageInfo extends \Google\Model
     {
+        protected $messageIdType = MessageId::class;
+        protected $messageIdDataType = '';
+        /**
+         * @var string
+         */
+        public $messageType;
+        /**
+         * @param MessageId
+         */
+        public function setMessageId(MessageId $messageId)
+        {
+        }
+        /**
+         * @return MessageId
+         */
+        public function getMessageId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMessageType($messageType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessageType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MessageId
+     * Runtime class alias of \Google\Service\CloudSearch\SourceMessageInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMessageId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMessageType($messageType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMessageType()
+    class Google_Service_CloudSearch_SourceMessageInfo extends \Google\Service\CloudSearch\SourceMessageInfo
     {
     }
 }

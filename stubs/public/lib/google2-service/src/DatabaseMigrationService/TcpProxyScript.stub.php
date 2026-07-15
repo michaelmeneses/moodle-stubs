@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class TcpProxyScript extends \Google\Model
-{
-    /**
-     * The TCP Proxy configuration script.
-     *
-     * @var string
-     */
-    public $script;
-    /**
-     * The TCP Proxy configuration script.
-     *
-     * @param string $script
-     */
-    public function setScript($script)
+namespace Google\Service\DatabaseMigrationService {
+    class TcpProxyScript extends \Google\Model
     {
+        /**
+         * The TCP Proxy configuration script.
+         *
+         * @var string
+         */
+        public $script;
+        /**
+         * The TCP Proxy configuration script.
+         *
+         * @param string $script
+         */
+        public function setScript($script)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScript()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\TcpProxyScript registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getScript()
+    class Google_Service_DatabaseMigrationService_TcpProxyScript extends \Google\Service\DatabaseMigrationService\TcpProxyScript
     {
     }
 }

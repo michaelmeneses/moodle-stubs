@@ -21,115 +21,124 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Css;
-
-class QuotaGroup extends \Google\Collection
-{
-    protected $collection_key = 'methodDetails';
-    protected $methodDetailsType = MethodDetails::class;
-    protected $methodDetailsDataType = 'array';
-    /**
-     * Identifier. The resource name of the quota group. Format:
-     * accounts/{account}/quotas/{group} Example: `accounts/12345678/quotas/css-
-     * products-insert` Note: The {group} part is not guaranteed to follow a
-     * specific pattern.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The maximum number of calls allowed per day for the group.
-     *
-     * @var string
-     */
-    public $quotaLimit;
-    /**
-     * Output only. The maximum number of calls allowed per minute for the group.
-     *
-     * @var string
-     */
-    public $quotaMinuteLimit;
-    /**
-     * Output only. The current quota usage, meaning the number of calls already
-     * made on a given day to the methods in the group. The daily quota limits
-     * reset at at 12:00 PM midday UTC.
-     *
-     * @var string
-     */
-    public $quotaUsage;
-    /**
-     * Output only. List of all methods group quota applies to.
-     *
-     * @param MethodDetails[] $methodDetails
-     */
-    public function setMethodDetails($methodDetails)
+namespace Google\Service\Css {
+    class QuotaGroup extends \Google\Collection
     {
+        protected $collection_key = 'methodDetails';
+        protected $methodDetailsType = MethodDetails::class;
+        protected $methodDetailsDataType = 'array';
+        /**
+         * Identifier. The resource name of the quota group. Format:
+         * accounts/{account}/quotas/{group} Example: `accounts/12345678/quotas/css-
+         * products-insert` Note: The {group} part is not guaranteed to follow a
+         * specific pattern.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The maximum number of calls allowed per day for the group.
+         *
+         * @var string
+         */
+        public $quotaLimit;
+        /**
+         * Output only. The maximum number of calls allowed per minute for the group.
+         *
+         * @var string
+         */
+        public $quotaMinuteLimit;
+        /**
+         * Output only. The current quota usage, meaning the number of calls already
+         * made on a given day to the methods in the group. The daily quota limits
+         * reset at at 12:00 PM midday UTC.
+         *
+         * @var string
+         */
+        public $quotaUsage;
+        /**
+         * Output only. List of all methods group quota applies to.
+         *
+         * @param MethodDetails[] $methodDetails
+         */
+        public function setMethodDetails($methodDetails)
+        {
+        }
+        /**
+         * @return MethodDetails[]
+         */
+        public function getMethodDetails()
+        {
+        }
+        /**
+         * Identifier. The resource name of the quota group. Format:
+         * accounts/{account}/quotas/{group} Example: `accounts/12345678/quotas/css-
+         * products-insert` Note: The {group} part is not guaranteed to follow a
+         * specific pattern.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The maximum number of calls allowed per day for the group.
+         *
+         * @param string $quotaLimit
+         */
+        public function setQuotaLimit($quotaLimit)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQuotaLimit()
+        {
+        }
+        /**
+         * Output only. The maximum number of calls allowed per minute for the group.
+         *
+         * @param string $quotaMinuteLimit
+         */
+        public function setQuotaMinuteLimit($quotaMinuteLimit)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQuotaMinuteLimit()
+        {
+        }
+        /**
+         * Output only. The current quota usage, meaning the number of calls already
+         * made on a given day to the methods in the group. The daily quota limits
+         * reset at at 12:00 PM midday UTC.
+         *
+         * @param string $quotaUsage
+         */
+        public function setQuotaUsage($quotaUsage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQuotaUsage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MethodDetails[]
+     * Runtime class alias of \Google\Service\Css\QuotaGroup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMethodDetails()
-    {
-    }
-    /**
-     * Identifier. The resource name of the quota group. Format:
-     * accounts/{account}/quotas/{group} Example: `accounts/12345678/quotas/css-
-     * products-insert` Note: The {group} part is not guaranteed to follow a
-     * specific pattern.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The maximum number of calls allowed per day for the group.
-     *
-     * @param string $quotaLimit
-     */
-    public function setQuotaLimit($quotaLimit)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQuotaLimit()
-    {
-    }
-    /**
-     * Output only. The maximum number of calls allowed per minute for the group.
-     *
-     * @param string $quotaMinuteLimit
-     */
-    public function setQuotaMinuteLimit($quotaMinuteLimit)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQuotaMinuteLimit()
-    {
-    }
-    /**
-     * Output only. The current quota usage, meaning the number of calls already
-     * made on a given day to the methods in the group. The daily quota limits
-     * reset at at 12:00 PM midday UTC.
-     *
-     * @param string $quotaUsage
-     */
-    public function setQuotaUsage($quotaUsage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQuotaUsage()
+    class Google_Service_Css_QuotaGroup extends \Google\Service\Css\QuotaGroup
     {
     }
 }

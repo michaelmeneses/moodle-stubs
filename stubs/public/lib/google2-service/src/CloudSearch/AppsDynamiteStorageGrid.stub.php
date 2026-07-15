@@ -21,83 +21,92 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteStorageGrid extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    protected $borderStyleType = AppsDynamiteStorageBorderStyle::class;
-    protected $borderStyleDataType = '';
-    /**
-     * @var int
-     */
-    public $columnCount;
-    protected $itemsType = AppsDynamiteStorageGridGridItem::class;
-    protected $itemsDataType = 'array';
-    protected $onClickType = AppsDynamiteStorageOnClick::class;
-    protected $onClickDataType = '';
-    /**
-     * @var string
-     */
-    public $title;
-    /**
-     * @param AppsDynamiteStorageBorderStyle
-     */
-    public function setBorderStyle(AppsDynamiteStorageBorderStyle $borderStyle)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteStorageGrid extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        protected $borderStyleType = AppsDynamiteStorageBorderStyle::class;
+        protected $borderStyleDataType = '';
+        /**
+         * @var int
+         */
+        public $columnCount;
+        protected $itemsType = AppsDynamiteStorageGridGridItem::class;
+        protected $itemsDataType = 'array';
+        protected $onClickType = AppsDynamiteStorageOnClick::class;
+        protected $onClickDataType = '';
+        /**
+         * @var string
+         */
+        public $title;
+        /**
+         * @param AppsDynamiteStorageBorderStyle
+         */
+        public function setBorderStyle(AppsDynamiteStorageBorderStyle $borderStyle)
+        {
+        }
+        /**
+         * @return AppsDynamiteStorageBorderStyle
+         */
+        public function getBorderStyle()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setColumnCount($columnCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getColumnCount()
+        {
+        }
+        /**
+         * @param AppsDynamiteStorageGridGridItem[]
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return AppsDynamiteStorageGridGridItem[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * @param AppsDynamiteStorageOnClick
+         */
+        public function setOnClick(AppsDynamiteStorageOnClick $onClick)
+        {
+        }
+        /**
+         * @return AppsDynamiteStorageOnClick
+         */
+        public function getOnClick()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppsDynamiteStorageBorderStyle
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteStorageGrid registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBorderStyle()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setColumnCount($columnCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getColumnCount()
-    {
-    }
-    /**
-     * @param AppsDynamiteStorageGridGridItem[]
-     */
-    public function setItems($items)
-    {
-    }
-    /**
-     * @return AppsDynamiteStorageGridGridItem[]
-     */
-    public function getItems()
-    {
-    }
-    /**
-     * @param AppsDynamiteStorageOnClick
-     */
-    public function setOnClick(AppsDynamiteStorageOnClick $onClick)
-    {
-    }
-    /**
-     * @return AppsDynamiteStorageOnClick
-     */
-    public function getOnClick()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_CloudSearch_AppsDynamiteStorageGrid extends \Google\Service\CloudSearch\AppsDynamiteStorageGrid
     {
     }
 }

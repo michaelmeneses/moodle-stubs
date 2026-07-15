@@ -21,162 +21,171 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class UserLocation extends \Google\Model
-{
-    /**
-     * Textual location. This is most useful for display purposes to concisely
-     * describe the location. For example 'Mountain View, CA', 'Near Seattle',
-     * 'US-NYC-9TH 9A209A.''
-     *
-     * @var string
-     */
-    public $area;
-    /**
-     * Building Identifier.
-     *
-     * @var string
-     */
-    public $buildingId;
-    /**
-     * Custom Type.
-     *
-     * @var string
-     */
-    public $customType;
-    /**
-     * Most specific textual code of individual desk location.
-     *
-     * @var string
-     */
-    public $deskCode;
-    /**
-     * Floor name/number.
-     *
-     * @var string
-     */
-    public $floorName;
-    /**
-     * Floor section. More specific location within the floor. For example if a
-     * floor is divided into sections 'A', 'B' and 'C' this field would identify
-     * one of those values.
-     *
-     * @var string
-     */
-    public $floorSection;
-    /**
-     * Each entry can have a type which indicates standard types of that entry.
-     * For example location could be of types default and desk. In addition to
-     * standard type an entry can have a custom type and can give it any name.
-     * Such types should have 'custom' as type and also have a customType value.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Textual location. This is most useful for display purposes to concisely
-     * describe the location. For example 'Mountain View, CA', 'Near Seattle',
-     * 'US-NYC-9TH 9A209A.''
-     *
-     * @param string $area
-     */
-    public function setArea($area)
+namespace Google\Service\Directory {
+    class UserLocation extends \Google\Model
     {
+        /**
+         * Textual location. This is most useful for display purposes to concisely
+         * describe the location. For example 'Mountain View, CA', 'Near Seattle',
+         * 'US-NYC-9TH 9A209A.''
+         *
+         * @var string
+         */
+        public $area;
+        /**
+         * Building Identifier.
+         *
+         * @var string
+         */
+        public $buildingId;
+        /**
+         * Custom Type.
+         *
+         * @var string
+         */
+        public $customType;
+        /**
+         * Most specific textual code of individual desk location.
+         *
+         * @var string
+         */
+        public $deskCode;
+        /**
+         * Floor name/number.
+         *
+         * @var string
+         */
+        public $floorName;
+        /**
+         * Floor section. More specific location within the floor. For example if a
+         * floor is divided into sections 'A', 'B' and 'C' this field would identify
+         * one of those values.
+         *
+         * @var string
+         */
+        public $floorSection;
+        /**
+         * Each entry can have a type which indicates standard types of that entry.
+         * For example location could be of types default and desk. In addition to
+         * standard type an entry can have a custom type and can give it any name.
+         * Such types should have 'custom' as type and also have a customType value.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Textual location. This is most useful for display purposes to concisely
+         * describe the location. For example 'Mountain View, CA', 'Near Seattle',
+         * 'US-NYC-9TH 9A209A.''
+         *
+         * @param string $area
+         */
+        public function setArea($area)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getArea()
+        {
+        }
+        /**
+         * Building Identifier.
+         *
+         * @param string $buildingId
+         */
+        public function setBuildingId($buildingId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBuildingId()
+        {
+        }
+        /**
+         * Custom Type.
+         *
+         * @param string $customType
+         */
+        public function setCustomType($customType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomType()
+        {
+        }
+        /**
+         * Most specific textual code of individual desk location.
+         *
+         * @param string $deskCode
+         */
+        public function setDeskCode($deskCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeskCode()
+        {
+        }
+        /**
+         * Floor name/number.
+         *
+         * @param string $floorName
+         */
+        public function setFloorName($floorName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFloorName()
+        {
+        }
+        /**
+         * Floor section. More specific location within the floor. For example if a
+         * floor is divided into sections 'A', 'B' and 'C' this field would identify
+         * one of those values.
+         *
+         * @param string $floorSection
+         */
+        public function setFloorSection($floorSection)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFloorSection()
+        {
+        }
+        /**
+         * Each entry can have a type which indicates standard types of that entry.
+         * For example location could be of types default and desk. In addition to
+         * standard type an entry can have a custom type and can give it any name.
+         * Such types should have 'custom' as type and also have a customType value.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Directory\UserLocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArea()
-    {
-    }
-    /**
-     * Building Identifier.
-     *
-     * @param string $buildingId
-     */
-    public function setBuildingId($buildingId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBuildingId()
-    {
-    }
-    /**
-     * Custom Type.
-     *
-     * @param string $customType
-     */
-    public function setCustomType($customType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCustomType()
-    {
-    }
-    /**
-     * Most specific textual code of individual desk location.
-     *
-     * @param string $deskCode
-     */
-    public function setDeskCode($deskCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeskCode()
-    {
-    }
-    /**
-     * Floor name/number.
-     *
-     * @param string $floorName
-     */
-    public function setFloorName($floorName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFloorName()
-    {
-    }
-    /**
-     * Floor section. More specific location within the floor. For example if a
-     * floor is divided into sections 'A', 'B' and 'C' this field would identify
-     * one of those values.
-     *
-     * @param string $floorSection
-     */
-    public function setFloorSection($floorSection)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFloorSection()
-    {
-    }
-    /**
-     * Each entry can have a type which indicates standard types of that entry.
-     * For example location could be of types default and desk. In addition to
-     * standard type an entry can have a custom type and can give it any name.
-     * Such types should have 'custom' as type and also have a customType value.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_Directory_UserLocation extends \Google\Service\Directory\UserLocation
     {
     }
 }

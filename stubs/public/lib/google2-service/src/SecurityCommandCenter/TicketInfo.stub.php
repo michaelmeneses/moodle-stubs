@@ -21,130 +21,139 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class TicketInfo extends \Google\Model
-{
-    /**
-     * The assignee of the ticket in the ticket system.
-     *
-     * @var string
-     */
-    public $assignee;
-    /**
-     * The description of the ticket in the ticket system.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * The identifier of the ticket in the ticket system.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * The latest status of the ticket, as reported by the ticket system.
-     *
-     * @var string
-     */
-    public $status;
-    /**
-     * The time when the ticket was last updated, as reported by the ticket
-     * system.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * The link to the ticket in the ticket system.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * The assignee of the ticket in the ticket system.
-     *
-     * @param string $assignee
-     */
-    public function setAssignee($assignee)
+namespace Google\Service\SecurityCommandCenter {
+    class TicketInfo extends \Google\Model
     {
+        /**
+         * The assignee of the ticket in the ticket system.
+         *
+         * @var string
+         */
+        public $assignee;
+        /**
+         * The description of the ticket in the ticket system.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * The identifier of the ticket in the ticket system.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * The latest status of the ticket, as reported by the ticket system.
+         *
+         * @var string
+         */
+        public $status;
+        /**
+         * The time when the ticket was last updated, as reported by the ticket
+         * system.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * The link to the ticket in the ticket system.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * The assignee of the ticket in the ticket system.
+         *
+         * @param string $assignee
+         */
+        public function setAssignee($assignee)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAssignee()
+        {
+        }
+        /**
+         * The description of the ticket in the ticket system.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * The identifier of the ticket in the ticket system.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * The latest status of the ticket, as reported by the ticket system.
+         *
+         * @param string $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStatus()
+        {
+        }
+        /**
+         * The time when the ticket was last updated, as reported by the ticket
+         * system.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
+        /**
+         * The link to the ticket in the ticket system.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\TicketInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssignee()
-    {
-    }
-    /**
-     * The description of the ticket in the ticket system.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * The identifier of the ticket in the ticket system.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * The latest status of the ticket, as reported by the ticket system.
-     *
-     * @param string $status
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStatus()
-    {
-    }
-    /**
-     * The time when the ticket was last updated, as reported by the ticket
-     * system.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
-    {
-    }
-    /**
-     * The link to the ticket in the ticket system.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_SecurityCommandCenter_TicketInfo extends \Google\Service\SecurityCommandCenter\TicketInfo
     {
     }
 }

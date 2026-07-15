@@ -21,116 +21,125 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SubscriptionLinking;
-
-class Reader extends \Google\Model
-{
-    /**
-     * Output only. Time the publication reader was created and associated with a
-     * Google user.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Output only. The resource name of the reader. The last part of ppid in the
-     * resource name is the publisher provided id.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The SwG publication id that the reader's subscription linking
-     * was originating from.
-     *
-     * @var string
-     */
-    public $originatingPublicationId;
-    /**
-     * Output only. The publisher provided id of the reader.
-     *
-     * @var string
-     */
-    public $ppid;
-    /**
-     * Output only. The SwG publication id that the reader has linked their
-     * subscription to.
-     *
-     * @var string
-     */
-    public $publicationId;
-    /**
-     * Output only. Time the publication reader was created and associated with a
-     * Google user.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\SubscriptionLinking {
+    class Reader extends \Google\Model
     {
+        /**
+         * Output only. Time the publication reader was created and associated with a
+         * Google user.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Output only. The resource name of the reader. The last part of ppid in the
+         * resource name is the publisher provided id.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The SwG publication id that the reader's subscription linking
+         * was originating from.
+         *
+         * @var string
+         */
+        public $originatingPublicationId;
+        /**
+         * Output only. The publisher provided id of the reader.
+         *
+         * @var string
+         */
+        public $ppid;
+        /**
+         * Output only. The SwG publication id that the reader has linked their
+         * subscription to.
+         *
+         * @var string
+         */
+        public $publicationId;
+        /**
+         * Output only. Time the publication reader was created and associated with a
+         * Google user.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. The resource name of the reader. The last part of ppid in the
+         * resource name is the publisher provided id.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The SwG publication id that the reader's subscription linking
+         * was originating from.
+         *
+         * @param string $originatingPublicationId
+         */
+        public function setOriginatingPublicationId($originatingPublicationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOriginatingPublicationId()
+        {
+        }
+        /**
+         * Output only. The publisher provided id of the reader.
+         *
+         * @param string $ppid
+         */
+        public function setPpid($ppid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPpid()
+        {
+        }
+        /**
+         * Output only. The SwG publication id that the reader has linked their
+         * subscription to.
+         *
+         * @param string $publicationId
+         */
+        public function setPublicationId($publicationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPublicationId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SubscriptionLinking\Reader registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. The resource name of the reader. The last part of ppid in the
-     * resource name is the publisher provided id.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The SwG publication id that the reader's subscription linking
-     * was originating from.
-     *
-     * @param string $originatingPublicationId
-     */
-    public function setOriginatingPublicationId($originatingPublicationId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOriginatingPublicationId()
-    {
-    }
-    /**
-     * Output only. The publisher provided id of the reader.
-     *
-     * @param string $ppid
-     */
-    public function setPpid($ppid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPpid()
-    {
-    }
-    /**
-     * Output only. The SwG publication id that the reader has linked their
-     * subscription to.
-     *
-     * @param string $publicationId
-     */
-    public function setPublicationId($publicationId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPublicationId()
+    class Google_Service_SubscriptionLinking_Reader extends \Google\Service\SubscriptionLinking\Reader
     {
     }
 }

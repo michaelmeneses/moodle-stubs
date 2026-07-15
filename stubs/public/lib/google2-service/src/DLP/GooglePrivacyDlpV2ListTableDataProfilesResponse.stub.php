@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2ListTableDataProfilesResponse extends \Google\Collection
-{
-    protected $collection_key = 'tableDataProfiles';
-    /**
-     * The next page token.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $tableDataProfilesType = GooglePrivacyDlpV2TableDataProfile::class;
-    protected $tableDataProfilesDataType = 'array';
-    /**
-     * The next page token.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2ListTableDataProfilesResponse extends \Google\Collection
     {
+        protected $collection_key = 'tableDataProfiles';
+        /**
+         * The next page token.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $tableDataProfilesType = GooglePrivacyDlpV2TableDataProfile::class;
+        protected $tableDataProfilesDataType = 'array';
+        /**
+         * The next page token.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * List of data profiles.
+         *
+         * @param GooglePrivacyDlpV2TableDataProfile[] $tableDataProfiles
+         */
+        public function setTableDataProfiles($tableDataProfiles)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2TableDataProfile[]
+         */
+        public function getTableDataProfiles()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2ListTableDataProfilesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * List of data profiles.
-     *
-     * @param GooglePrivacyDlpV2TableDataProfile[] $tableDataProfiles
-     */
-    public function setTableDataProfiles($tableDataProfiles)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2TableDataProfile[]
-     */
-    public function getTableDataProfiles()
+    class Google_Service_DLP_GooglePrivacyDlpV2ListTableDataProfilesResponse extends \Google\Service\DLP\GooglePrivacyDlpV2ListTableDataProfilesResponse
     {
     }
 }

@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1ProfileConfig extends \Google\Collection
-{
-    protected $collection_key = 'categories';
-    protected $categoriesType = GoogleCloudApigeeV1ProfileConfigCategory::class;
-    protected $categoriesDataType = 'array';
-    /**
-     * List of categories of profile config.
-     *
-     * @param GoogleCloudApigeeV1ProfileConfigCategory[] $categories
-     */
-    public function setCategories($categories)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1ProfileConfig extends \Google\Collection
     {
+        protected $collection_key = 'categories';
+        protected $categoriesType = GoogleCloudApigeeV1ProfileConfigCategory::class;
+        protected $categoriesDataType = 'array';
+        /**
+         * List of categories of profile config.
+         *
+         * @param GoogleCloudApigeeV1ProfileConfigCategory[] $categories
+         */
+        public function setCategories($categories)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1ProfileConfigCategory[]
+         */
+        public function getCategories()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApigeeV1ProfileConfigCategory[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1ProfileConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCategories()
+    class Google_Service_Apigee_GoogleCloudApigeeV1ProfileConfig extends \Google\Service\Apigee\GoogleCloudApigeeV1ProfileConfig
     {
     }
 }

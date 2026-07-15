@@ -21,45 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine\Resource;
-
-/**
- * The "completionSuggestions" collection of methods.
- * Typical usage is:
- *  <code>
- *   $discoveryengineService = new Google\Service\DiscoveryEngine(...);
- *   $completionSuggestions = $discoveryengineService->projects_locations_collections_dataStores_completionSuggestions;
- *  </code>
- */
-class ProjectsLocationsCollectionsDataStoresCompletionSuggestions extends \Google\Service\Resource
-{
+namespace Google\Service\DiscoveryEngine\Resource {
+    use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ImportCompletionSuggestionsRequest;
+    use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1PurgeCompletionSuggestionsRequest;
+    use Google\Service\DiscoveryEngine\GoogleLongrunningOperation;
     /**
-     * Imports CompletionSuggestions for a DataStore. (completionSuggestions.import)
-     *
-     * @param string $parent Required. The parent data store resource name for which
-     * to import customer autocomplete suggestions. Follows pattern
-     * `projects/locations/collections/dataStores`
-     * @param GoogleCloudDiscoveryengineV1ImportCompletionSuggestionsRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
+     * The "completionSuggestions" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $discoveryengineService = new Google\Service\DiscoveryEngine(...);
+     *   $completionSuggestions = $discoveryengineService->projects_locations_collections_dataStores_completionSuggestions;
+     *  </code>
      */
-    public function import($parent, GoogleCloudDiscoveryengineV1ImportCompletionSuggestionsRequest $postBody, $optParams = [])
+    class ProjectsLocationsCollectionsDataStoresCompletionSuggestions extends \Google\Service\Resource
     {
+        /**
+         * Imports CompletionSuggestions for a DataStore. (completionSuggestions.import)
+         *
+         * @param string $parent Required. The parent data store resource name for which
+         * to import customer autocomplete suggestions. Follows pattern
+         * `projects/locations/collections/dataStores`
+         * @param GoogleCloudDiscoveryengineV1ImportCompletionSuggestionsRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function import($parent, GoogleCloudDiscoveryengineV1ImportCompletionSuggestionsRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Permanently deletes all CompletionSuggestions for a DataStore.
+         * (completionSuggestions.purge)
+         *
+         * @param string $parent Required. The parent data store resource name for which
+         * to purge completion suggestions. Follows pattern
+         * projects/locations/collections/dataStores.
+         * @param GoogleCloudDiscoveryengineV1PurgeCompletionSuggestionsRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function purge($parent, GoogleCloudDiscoveryengineV1PurgeCompletionSuggestionsRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Permanently deletes all CompletionSuggestions for a DataStore.
-     * (completionSuggestions.purge)
-     *
-     * @param string $parent Required. The parent data store resource name for which
-     * to purge completion suggestions. Follows pattern
-     * projects/locations/collections/dataStores.
-     * @param GoogleCloudDiscoveryengineV1PurgeCompletionSuggestionsRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\DiscoveryEngine\Resource\ProjectsLocationsCollectionsDataStoresCompletionSuggestions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function purge($parent, GoogleCloudDiscoveryengineV1PurgeCompletionSuggestionsRequest $postBody, $optParams = [])
+    class Google_Service_DiscoveryEngine_Resource_ProjectsLocationsCollectionsDataStoresCompletionSuggestions extends \Google\Service\DiscoveryEngine\Resource\ProjectsLocationsCollectionsDataStoresCompletionSuggestions
     {
     }
 }

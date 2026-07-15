@@ -21,75 +21,84 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMwareEngine;
-
-class ThirdPartyFileService extends \Google\Collection
-{
-    protected $collection_key = 'servers';
-    /**
-     * Required. Required Mount Folder name
-     *
-     * @var string
-     */
-    public $fileShare;
-    /**
-     * Required. Required to identify vpc peering used for NFS access network name
-     * of NFS's vpc e.g. projects/project-id/global/networks/my-network_id
-     *
-     * @var string
-     */
-    public $network;
-    /**
-     * Required. Server IP addresses of the NFS file service. NFS v3, provide a
-     * single IP address or DNS name. Multiple servers can be supported in future
-     * when NFS 4.1 protocol support is enabled.
-     *
-     * @var string[]
-     */
-    public $servers;
-    /**
-     * Required. Required Mount Folder name
-     *
-     * @param string $fileShare
-     */
-    public function setFileShare($fileShare)
+namespace Google\Service\VMwareEngine {
+    class ThirdPartyFileService extends \Google\Collection
     {
+        protected $collection_key = 'servers';
+        /**
+         * Required. Required Mount Folder name
+         *
+         * @var string
+         */
+        public $fileShare;
+        /**
+         * Required. Required to identify vpc peering used for NFS access network name
+         * of NFS's vpc e.g. projects/project-id/global/networks/my-network_id
+         *
+         * @var string
+         */
+        public $network;
+        /**
+         * Required. Server IP addresses of the NFS file service. NFS v3, provide a
+         * single IP address or DNS name. Multiple servers can be supported in future
+         * when NFS 4.1 protocol support is enabled.
+         *
+         * @var string[]
+         */
+        public $servers;
+        /**
+         * Required. Required Mount Folder name
+         *
+         * @param string $fileShare
+         */
+        public function setFileShare($fileShare)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFileShare()
+        {
+        }
+        /**
+         * Required. Required to identify vpc peering used for NFS access network name
+         * of NFS's vpc e.g. projects/project-id/global/networks/my-network_id
+         *
+         * @param string $network
+         */
+        public function setNetwork($network)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNetwork()
+        {
+        }
+        /**
+         * Required. Server IP addresses of the NFS file service. NFS v3, provide a
+         * single IP address or DNS name. Multiple servers can be supported in future
+         * when NFS 4.1 protocol support is enabled.
+         *
+         * @param string[] $servers
+         */
+        public function setServers($servers)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getServers()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\VMwareEngine\ThirdPartyFileService registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFileShare()
-    {
-    }
-    /**
-     * Required. Required to identify vpc peering used for NFS access network name
-     * of NFS's vpc e.g. projects/project-id/global/networks/my-network_id
-     *
-     * @param string $network
-     */
-    public function setNetwork($network)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNetwork()
-    {
-    }
-    /**
-     * Required. Server IP addresses of the NFS file service. NFS v3, provide a
-     * single IP address or DNS name. Multiple servers can be supported in future
-     * when NFS 4.1 protocol support is enabled.
-     *
-     * @param string[] $servers
-     */
-    public function setServers($servers)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getServers()
+    class Google_Service_VMwareEngine_ThirdPartyFileService extends \Google\Service\VMwareEngine\ThirdPartyFileService
     {
     }
 }

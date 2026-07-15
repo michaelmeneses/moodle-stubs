@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class LiveChatMessageRetractedDetails extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $retractedMessageId;
-    /**
-     * @param string $retractedMessageId
-     */
-    public function setRetractedMessageId($retractedMessageId)
+namespace Google\Service\YouTube {
+    class LiveChatMessageRetractedDetails extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $retractedMessageId;
+        /**
+         * @param string $retractedMessageId
+         */
+        public function setRetractedMessageId($retractedMessageId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRetractedMessageId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\LiveChatMessageRetractedDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRetractedMessageId()
+    class Google_Service_YouTube_LiveChatMessageRetractedDetails extends \Google\Service\YouTube\LiveChatMessageRetractedDetails
     {
     }
 }

@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution;
-
-class BuildBazelRemoteExecutionV2ExecuteOperationMetadata extends \Google\Model
-{
-    protected $actionDigestType = BuildBazelRemoteExecutionV2Digest::class;
-    protected $actionDigestDataType = '';
-    public $stage;
-    public $stderrStreamName;
-    public $stdoutStreamName;
+namespace Google\Service\RemoteBuildExecution {
+    class BuildBazelRemoteExecutionV2ExecuteOperationMetadata extends \Google\Model
+    {
+        protected $actionDigestType = BuildBazelRemoteExecutionV2Digest::class;
+        protected $actionDigestDataType = '';
+        public $stage;
+        public $stderrStreamName;
+        public $stdoutStreamName;
+        /**
+         * @param BuildBazelRemoteExecutionV2Digest
+         */
+        public function setActionDigest(BuildBazelRemoteExecutionV2Digest $actionDigest)
+        {
+        }
+        /**
+         * @return BuildBazelRemoteExecutionV2Digest
+         */
+        public function getActionDigest()
+        {
+        }
+        public function setStage($stage)
+        {
+        }
+        public function getStage()
+        {
+        }
+        public function setStderrStreamName($stderrStreamName)
+        {
+        }
+        public function getStderrStreamName()
+        {
+        }
+        public function setStdoutStreamName($stdoutStreamName)
+        {
+        }
+        public function getStdoutStreamName()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @param BuildBazelRemoteExecutionV2Digest
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2ExecuteOperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setActionDigest(BuildBazelRemoteExecutionV2Digest $actionDigest)
-    {
-    }
-    /**
-     * @return BuildBazelRemoteExecutionV2Digest
-     */
-    public function getActionDigest()
-    {
-    }
-    public function setStage($stage)
-    {
-    }
-    public function getStage()
-    {
-    }
-    public function setStderrStreamName($stderrStreamName)
-    {
-    }
-    public function getStderrStreamName()
-    {
-    }
-    public function setStdoutStreamName($stdoutStreamName)
-    {
-    }
-    public function getStdoutStreamName()
+    class Google_Service_RemoteBuildExecution_BuildBazelRemoteExecutionV2ExecuteOperationMetadata extends \Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2ExecuteOperationMetadata
     {
     }
 }

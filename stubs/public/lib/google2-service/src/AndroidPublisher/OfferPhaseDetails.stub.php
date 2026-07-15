@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class OfferPhaseDetails extends \Google\Model
-{
-    protected $baseDetailsType = BaseDetails::class;
-    protected $baseDetailsDataType = '';
-    protected $freeTrialDetailsType = FreeTrialDetails::class;
-    protected $freeTrialDetailsDataType = '';
-    protected $introductoryPriceDetailsType = IntroductoryPriceDetails::class;
-    protected $introductoryPriceDetailsDataType = '';
-    protected $prorationPeriodDetailsType = ProrationPeriodDetails::class;
-    protected $prorationPeriodDetailsDataType = '';
-    /**
-     * The order funds a base price period.
-     *
-     * @param BaseDetails $baseDetails
-     */
-    public function setBaseDetails(BaseDetails $baseDetails)
+namespace Google\Service\AndroidPublisher {
+    class OfferPhaseDetails extends \Google\Model
     {
+        protected $baseDetailsType = BaseDetails::class;
+        protected $baseDetailsDataType = '';
+        protected $freeTrialDetailsType = FreeTrialDetails::class;
+        protected $freeTrialDetailsDataType = '';
+        protected $introductoryPriceDetailsType = IntroductoryPriceDetails::class;
+        protected $introductoryPriceDetailsDataType = '';
+        protected $prorationPeriodDetailsType = ProrationPeriodDetails::class;
+        protected $prorationPeriodDetailsDataType = '';
+        /**
+         * The order funds a base price period.
+         *
+         * @param BaseDetails $baseDetails
+         */
+        public function setBaseDetails(BaseDetails $baseDetails)
+        {
+        }
+        /**
+         * @return BaseDetails
+         */
+        public function getBaseDetails()
+        {
+        }
+        /**
+         * The order funds a free trial period.
+         *
+         * @param FreeTrialDetails $freeTrialDetails
+         */
+        public function setFreeTrialDetails(FreeTrialDetails $freeTrialDetails)
+        {
+        }
+        /**
+         * @return FreeTrialDetails
+         */
+        public function getFreeTrialDetails()
+        {
+        }
+        /**
+         * The order funds an introductory pricing period.
+         *
+         * @param IntroductoryPriceDetails $introductoryPriceDetails
+         */
+        public function setIntroductoryPriceDetails(IntroductoryPriceDetails $introductoryPriceDetails)
+        {
+        }
+        /**
+         * @return IntroductoryPriceDetails
+         */
+        public function getIntroductoryPriceDetails()
+        {
+        }
+        /**
+         * The order funds a proration period.
+         *
+         * @param ProrationPeriodDetails $prorationPeriodDetails
+         */
+        public function setProrationPeriodDetails(ProrationPeriodDetails $prorationPeriodDetails)
+        {
+        }
+        /**
+         * @return ProrationPeriodDetails
+         */
+        public function getProrationPeriodDetails()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BaseDetails
+     * Runtime class alias of \Google\Service\AndroidPublisher\OfferPhaseDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBaseDetails()
-    {
-    }
-    /**
-     * The order funds a free trial period.
-     *
-     * @param FreeTrialDetails $freeTrialDetails
-     */
-    public function setFreeTrialDetails(FreeTrialDetails $freeTrialDetails)
-    {
-    }
-    /**
-     * @return FreeTrialDetails
-     */
-    public function getFreeTrialDetails()
-    {
-    }
-    /**
-     * The order funds an introductory pricing period.
-     *
-     * @param IntroductoryPriceDetails $introductoryPriceDetails
-     */
-    public function setIntroductoryPriceDetails(IntroductoryPriceDetails $introductoryPriceDetails)
-    {
-    }
-    /**
-     * @return IntroductoryPriceDetails
-     */
-    public function getIntroductoryPriceDetails()
-    {
-    }
-    /**
-     * The order funds a proration period.
-     *
-     * @param ProrationPeriodDetails $prorationPeriodDetails
-     */
-    public function setProrationPeriodDetails(ProrationPeriodDetails $prorationPeriodDetails)
-    {
-    }
-    /**
-     * @return ProrationPeriodDetails
-     */
-    public function getProrationPeriodDetails()
+    class Google_Service_AndroidPublisher_OfferPhaseDetails extends \Google\Service\AndroidPublisher\OfferPhaseDetails
     {
     }
 }

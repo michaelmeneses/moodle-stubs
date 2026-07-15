@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3ResourceName extends \Google\Model
-{
-    /**
-     * Display name.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Name.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Display name.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3ResourceName extends \Google\Model
     {
+        /**
+         * Display name.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Name.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Display name.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ResourceName registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3ResourceName extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ResourceName
     {
     }
 }

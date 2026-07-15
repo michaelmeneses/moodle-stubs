@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementV1CountInstalledAppsResponse extends \Google\Collection
-{
-    protected $collection_key = 'installedApps';
-    protected $installedAppsType = GoogleChromeManagementV1InstalledApp::class;
-    protected $installedAppsDataType = 'array';
-    /**
-     * Token to specify the next page of the request.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Total number of installed apps matching request.
-     *
-     * @var int
-     */
-    public $totalSize;
-    /**
-     * List of installed apps matching request.
-     *
-     * @param GoogleChromeManagementV1InstalledApp[] $installedApps
-     */
-    public function setInstalledApps($installedApps)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementV1CountInstalledAppsResponse extends \Google\Collection
     {
+        protected $collection_key = 'installedApps';
+        protected $installedAppsType = GoogleChromeManagementV1InstalledApp::class;
+        protected $installedAppsDataType = 'array';
+        /**
+         * Token to specify the next page of the request.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Total number of installed apps matching request.
+         *
+         * @var int
+         */
+        public $totalSize;
+        /**
+         * List of installed apps matching request.
+         *
+         * @param GoogleChromeManagementV1InstalledApp[] $installedApps
+         */
+        public function setInstalledApps($installedApps)
+        {
+        }
+        /**
+         * @return GoogleChromeManagementV1InstalledApp[]
+         */
+        public function getInstalledApps()
+        {
+        }
+        /**
+         * Token to specify the next page of the request.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Total number of installed apps matching request.
+         *
+         * @param int $totalSize
+         */
+        public function setTotalSize($totalSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalSize()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleChromeManagementV1InstalledApp[]
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementV1CountInstalledAppsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstalledApps()
-    {
-    }
-    /**
-     * Token to specify the next page of the request.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Total number of installed apps matching request.
-     *
-     * @param int $totalSize
-     */
-    public function setTotalSize($totalSize)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalSize()
+    class Google_Service_ChromeManagement_GoogleChromeManagementV1CountInstalledAppsResponse extends \Google\Service\ChromeManagement\GoogleChromeManagementV1CountInstalledAppsResponse
     {
     }
 }

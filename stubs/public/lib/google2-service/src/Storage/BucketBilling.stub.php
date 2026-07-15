@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storage;
-
-class BucketBilling extends \Google\Model
-{
-    /**
-     * When set to true, Requester Pays is enabled for this bucket.
-     *
-     * @var bool
-     */
-    public $requesterPays;
-    /**
-     * When set to true, Requester Pays is enabled for this bucket.
-     *
-     * @param bool $requesterPays
-     */
-    public function setRequesterPays($requesterPays)
+namespace Google\Service\Storage {
+    class BucketBilling extends \Google\Model
     {
+        /**
+         * When set to true, Requester Pays is enabled for this bucket.
+         *
+         * @var bool
+         */
+        public $requesterPays;
+        /**
+         * When set to true, Requester Pays is enabled for this bucket.
+         *
+         * @param bool $requesterPays
+         */
+        public function setRequesterPays($requesterPays)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getRequesterPays()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Storage\BucketBilling registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequesterPays()
+    class Google_Service_Storage_BucketBilling extends \Google\Service\Storage\BucketBilling
     {
     }
 }

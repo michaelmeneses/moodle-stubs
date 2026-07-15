@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecaptchaEnterprise;
-
-class GoogleCloudRecaptchaenterpriseV1FraudSignalsCardSignals extends \Google\Collection
-{
-    protected $collection_key = 'cardLabels';
-    /**
-     * Output only. The labels for the payment card in this transaction.
-     *
-     * @var string[]
-     */
-    public $cardLabels;
-    /**
-     * Output only. The labels for the payment card in this transaction.
-     *
-     * @param string[] $cardLabels
-     */
-    public function setCardLabels($cardLabels)
+namespace Google\Service\RecaptchaEnterprise {
+    class GoogleCloudRecaptchaenterpriseV1FraudSignalsCardSignals extends \Google\Collection
     {
+        protected $collection_key = 'cardLabels';
+        /**
+         * Output only. The labels for the payment card in this transaction.
+         *
+         * @var string[]
+         */
+        public $cardLabels;
+        /**
+         * Output only. The labels for the payment card in this transaction.
+         *
+         * @param string[] $cardLabels
+         */
+        public function setCardLabels($cardLabels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCardLabels()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1FraudSignalsCardSignals registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCardLabels()
+    class Google_Service_RecaptchaEnterprise_GoogleCloudRecaptchaenterpriseV1FraudSignalsCardSignals extends \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1FraudSignalsCardSignals
     {
     }
 }

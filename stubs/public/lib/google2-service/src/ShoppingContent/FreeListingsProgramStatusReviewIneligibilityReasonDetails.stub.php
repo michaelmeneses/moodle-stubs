@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class FreeListingsProgramStatusReviewIneligibilityReasonDetails extends \Google\Model
-{
-    /**
-     * This timestamp represents end of cooldown period for review ineligbility
-     * reason `IN_COOLDOWN_PERIOD`.
-     *
-     * @var string
-     */
-    public $cooldownTime;
-    /**
-     * This timestamp represents end of cooldown period for review ineligbility
-     * reason `IN_COOLDOWN_PERIOD`.
-     *
-     * @param string $cooldownTime
-     */
-    public function setCooldownTime($cooldownTime)
+namespace Google\Service\ShoppingContent {
+    class FreeListingsProgramStatusReviewIneligibilityReasonDetails extends \Google\Model
     {
+        /**
+         * This timestamp represents end of cooldown period for review ineligbility
+         * reason `IN_COOLDOWN_PERIOD`.
+         *
+         * @var string
+         */
+        public $cooldownTime;
+        /**
+         * This timestamp represents end of cooldown period for review ineligbility
+         * reason `IN_COOLDOWN_PERIOD`.
+         *
+         * @param string $cooldownTime
+         */
+        public function setCooldownTime($cooldownTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCooldownTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\FreeListingsProgramStatusReviewIneligibilityReasonDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCooldownTime()
+    class Google_Service_ShoppingContent_FreeListingsProgramStatusReviewIneligibilityReasonDetails extends \Google\Service\ShoppingContent\FreeListingsProgramStatusReviewIneligibilityReasonDetails
     {
     }
 }

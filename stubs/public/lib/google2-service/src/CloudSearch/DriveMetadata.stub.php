@@ -21,396 +21,405 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class DriveMetadata extends \Google\Model
-{
-    protected $aclFixRequestType = AclFixRequest::class;
-    protected $aclFixRequestDataType = '';
-    protected $aclFixStatusType = AclFixStatus::class;
-    protected $aclFixStatusDataType = '';
-    /**
-     * @var bool
-     */
-    public $canEdit;
-    /**
-     * @var bool
-     */
-    public $canShare;
-    /**
-     * @var bool
-     */
-    public $canView;
-    /**
-     * @var string
-     */
-    public $driveAction;
-    /**
-     * @var string
-     */
-    public $driveState;
-    protected $embedUrlType = TrustedResourceUrlProto::class;
-    protected $embedUrlDataType = '';
-    /**
-     * @var bool
-     */
-    public $encryptedDocId;
-    /**
-     * @var string
-     */
-    public $encryptedResourceKey;
-    /**
-     * @var string
-     */
-    public $externalMimetype;
-    /**
-     * @var string
-     */
-    public $id;
-    /**
-     * @var bool
-     */
-    public $isDownloadRestricted;
-    /**
-     * @var bool
-     */
-    public $isOwner;
-    protected $legacyUploadMetadataType = LegacyUploadMetadata::class;
-    protected $legacyUploadMetadataDataType = '';
-    /**
-     * @var string
-     */
-    public $mimetype;
-    /**
-     * @var string
-     */
-    public $organizationDisplayName;
-    protected $shortcutAuthorizedItemIdType = AuthorizedItemId::class;
-    protected $shortcutAuthorizedItemIdDataType = '';
-    /**
-     * @var bool
-     */
-    public $shouldNotRender;
-    /**
-     * @var int
-     */
-    public $thumbnailHeight;
-    /**
-     * @var string
-     */
-    public $thumbnailUrl;
-    /**
-     * @var int
-     */
-    public $thumbnailWidth;
-    /**
-     * @var string
-     */
-    public $title;
-    /**
-     * @var string
-     */
-    public $urlFragment;
-    protected $wrappedResourceKeyType = WrappedResourceKey::class;
-    protected $wrappedResourceKeyDataType = '';
-    /**
-     * @param AclFixRequest
-     */
-    public function setAclFixRequest(AclFixRequest $aclFixRequest)
+namespace Google\Service\CloudSearch {
+    class DriveMetadata extends \Google\Model
     {
+        protected $aclFixRequestType = AclFixRequest::class;
+        protected $aclFixRequestDataType = '';
+        protected $aclFixStatusType = AclFixStatus::class;
+        protected $aclFixStatusDataType = '';
+        /**
+         * @var bool
+         */
+        public $canEdit;
+        /**
+         * @var bool
+         */
+        public $canShare;
+        /**
+         * @var bool
+         */
+        public $canView;
+        /**
+         * @var string
+         */
+        public $driveAction;
+        /**
+         * @var string
+         */
+        public $driveState;
+        protected $embedUrlType = TrustedResourceUrlProto::class;
+        protected $embedUrlDataType = '';
+        /**
+         * @var bool
+         */
+        public $encryptedDocId;
+        /**
+         * @var string
+         */
+        public $encryptedResourceKey;
+        /**
+         * @var string
+         */
+        public $externalMimetype;
+        /**
+         * @var string
+         */
+        public $id;
+        /**
+         * @var bool
+         */
+        public $isDownloadRestricted;
+        /**
+         * @var bool
+         */
+        public $isOwner;
+        protected $legacyUploadMetadataType = LegacyUploadMetadata::class;
+        protected $legacyUploadMetadataDataType = '';
+        /**
+         * @var string
+         */
+        public $mimetype;
+        /**
+         * @var string
+         */
+        public $organizationDisplayName;
+        protected $shortcutAuthorizedItemIdType = AuthorizedItemId::class;
+        protected $shortcutAuthorizedItemIdDataType = '';
+        /**
+         * @var bool
+         */
+        public $shouldNotRender;
+        /**
+         * @var int
+         */
+        public $thumbnailHeight;
+        /**
+         * @var string
+         */
+        public $thumbnailUrl;
+        /**
+         * @var int
+         */
+        public $thumbnailWidth;
+        /**
+         * @var string
+         */
+        public $title;
+        /**
+         * @var string
+         */
+        public $urlFragment;
+        protected $wrappedResourceKeyType = WrappedResourceKey::class;
+        protected $wrappedResourceKeyDataType = '';
+        /**
+         * @param AclFixRequest
+         */
+        public function setAclFixRequest(AclFixRequest $aclFixRequest)
+        {
+        }
+        /**
+         * @return AclFixRequest
+         */
+        public function getAclFixRequest()
+        {
+        }
+        /**
+         * @param AclFixStatus
+         */
+        public function setAclFixStatus(AclFixStatus $aclFixStatus)
+        {
+        }
+        /**
+         * @return AclFixStatus
+         */
+        public function getAclFixStatus()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setCanEdit($canEdit)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanEdit()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setCanShare($canShare)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanShare()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setCanView($canView)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanView()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDriveAction($driveAction)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDriveAction()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDriveState($driveState)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDriveState()
+        {
+        }
+        /**
+         * @param TrustedResourceUrlProto
+         */
+        public function setEmbedUrl(TrustedResourceUrlProto $embedUrl)
+        {
+        }
+        /**
+         * @return TrustedResourceUrlProto
+         */
+        public function getEmbedUrl()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setEncryptedDocId($encryptedDocId)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEncryptedDocId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEncryptedResourceKey($encryptedResourceKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEncryptedResourceKey()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setExternalMimetype($externalMimetype)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExternalMimetype()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setIsDownloadRestricted($isDownloadRestricted)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsDownloadRestricted()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setIsOwner($isOwner)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsOwner()
+        {
+        }
+        /**
+         * @param LegacyUploadMetadata
+         */
+        public function setLegacyUploadMetadata(LegacyUploadMetadata $legacyUploadMetadata)
+        {
+        }
+        /**
+         * @return LegacyUploadMetadata
+         */
+        public function getLegacyUploadMetadata()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMimetype($mimetype)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMimetype()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOrganizationDisplayName($organizationDisplayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOrganizationDisplayName()
+        {
+        }
+        /**
+         * @param AuthorizedItemId
+         */
+        public function setShortcutAuthorizedItemId(AuthorizedItemId $shortcutAuthorizedItemId)
+        {
+        }
+        /**
+         * @return AuthorizedItemId
+         */
+        public function getShortcutAuthorizedItemId()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setShouldNotRender($shouldNotRender)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getShouldNotRender()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setThumbnailHeight($thumbnailHeight)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getThumbnailHeight()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setThumbnailUrl($thumbnailUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getThumbnailUrl()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setThumbnailWidth($thumbnailWidth)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getThumbnailWidth()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUrlFragment($urlFragment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrlFragment()
+        {
+        }
+        /**
+         * @param WrappedResourceKey
+         */
+        public function setWrappedResourceKey(WrappedResourceKey $wrappedResourceKey)
+        {
+        }
+        /**
+         * @return WrappedResourceKey
+         */
+        public function getWrappedResourceKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AclFixRequest
+     * Runtime class alias of \Google\Service\CloudSearch\DriveMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAclFixRequest()
-    {
-    }
-    /**
-     * @param AclFixStatus
-     */
-    public function setAclFixStatus(AclFixStatus $aclFixStatus)
-    {
-    }
-    /**
-     * @return AclFixStatus
-     */
-    public function getAclFixStatus()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setCanEdit($canEdit)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanEdit()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setCanShare($canShare)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanShare()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setCanView($canView)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanView()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDriveAction($driveAction)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDriveAction()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDriveState($driveState)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDriveState()
-    {
-    }
-    /**
-     * @param TrustedResourceUrlProto
-     */
-    public function setEmbedUrl(TrustedResourceUrlProto $embedUrl)
-    {
-    }
-    /**
-     * @return TrustedResourceUrlProto
-     */
-    public function getEmbedUrl()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setEncryptedDocId($encryptedDocId)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEncryptedDocId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEncryptedResourceKey($encryptedResourceKey)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEncryptedResourceKey()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setExternalMimetype($externalMimetype)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExternalMimetype()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setIsDownloadRestricted($isDownloadRestricted)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsDownloadRestricted()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setIsOwner($isOwner)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsOwner()
-    {
-    }
-    /**
-     * @param LegacyUploadMetadata
-     */
-    public function setLegacyUploadMetadata(LegacyUploadMetadata $legacyUploadMetadata)
-    {
-    }
-    /**
-     * @return LegacyUploadMetadata
-     */
-    public function getLegacyUploadMetadata()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMimetype($mimetype)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMimetype()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOrganizationDisplayName($organizationDisplayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOrganizationDisplayName()
-    {
-    }
-    /**
-     * @param AuthorizedItemId
-     */
-    public function setShortcutAuthorizedItemId(AuthorizedItemId $shortcutAuthorizedItemId)
-    {
-    }
-    /**
-     * @return AuthorizedItemId
-     */
-    public function getShortcutAuthorizedItemId()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setShouldNotRender($shouldNotRender)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getShouldNotRender()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setThumbnailHeight($thumbnailHeight)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getThumbnailHeight()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setThumbnailUrl($thumbnailUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getThumbnailUrl()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setThumbnailWidth($thumbnailWidth)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getThumbnailWidth()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUrlFragment($urlFragment)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrlFragment()
-    {
-    }
-    /**
-     * @param WrappedResourceKey
-     */
-    public function setWrappedResourceKey(WrappedResourceKey $wrappedResourceKey)
-    {
-    }
-    /**
-     * @return WrappedResourceKey
-     */
-    public function getWrappedResourceKey()
+    class Google_Service_CloudSearch_DriveMetadata extends \Google\Service\CloudSearch\DriveMetadata
     {
     }
 }

@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RealTimeBidding;
-
-class HtmlContent extends \Google\Model
-{
-    /**
-     * The height of the HTML snippet in pixels. Can be used to filter the
-     * response of the creatives.list method.
-     *
-     * @var int
-     */
-    public $height;
-    /**
-     * The HTML snippet that displays the ad when inserted in the web page.
-     *
-     * @var string
-     */
-    public $snippet;
-    /**
-     * The width of the HTML snippet in pixels. Can be used to filter the response
-     * of the creatives.list method.
-     *
-     * @var int
-     */
-    public $width;
-    /**
-     * The height of the HTML snippet in pixels. Can be used to filter the
-     * response of the creatives.list method.
-     *
-     * @param int $height
-     */
-    public function setHeight($height)
+namespace Google\Service\RealTimeBidding {
+    class HtmlContent extends \Google\Model
     {
+        /**
+         * The height of the HTML snippet in pixels. Can be used to filter the
+         * response of the creatives.list method.
+         *
+         * @var int
+         */
+        public $height;
+        /**
+         * The HTML snippet that displays the ad when inserted in the web page.
+         *
+         * @var string
+         */
+        public $snippet;
+        /**
+         * The width of the HTML snippet in pixels. Can be used to filter the response
+         * of the creatives.list method.
+         *
+         * @var int
+         */
+        public $width;
+        /**
+         * The height of the HTML snippet in pixels. Can be used to filter the
+         * response of the creatives.list method.
+         *
+         * @param int $height
+         */
+        public function setHeight($height)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getHeight()
+        {
+        }
+        /**
+         * The HTML snippet that displays the ad when inserted in the web page.
+         *
+         * @param string $snippet
+         */
+        public function setSnippet($snippet)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSnippet()
+        {
+        }
+        /**
+         * The width of the HTML snippet in pixels. Can be used to filter the response
+         * of the creatives.list method.
+         *
+         * @param int $width
+         */
+        public function setWidth($width)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getWidth()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\RealTimeBidding\HtmlContent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHeight()
-    {
-    }
-    /**
-     * The HTML snippet that displays the ad when inserted in the web page.
-     *
-     * @param string $snippet
-     */
-    public function setSnippet($snippet)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSnippet()
-    {
-    }
-    /**
-     * The width of the HTML snippet in pixels. Can be used to filter the response
-     * of the creatives.list method.
-     *
-     * @param int $width
-     */
-    public function setWidth($width)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getWidth()
+    class Google_Service_RealTimeBidding_HtmlContent extends \Google\Service\RealTimeBidding\HtmlContent
     {
     }
 }

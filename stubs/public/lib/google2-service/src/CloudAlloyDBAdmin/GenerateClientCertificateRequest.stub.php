@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAlloyDBAdmin;
-
-class GenerateClientCertificateRequest extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $certDuration;
-    /**
-     * @var string
-     */
-    public $publicKey;
-    /**
-     * @var string
-     */
-    public $requestId;
-    /**
-     * @var bool
-     */
-    public $useMetadataExchange;
-    /**
-     * @param string
-     */
-    public function setCertDuration($certDuration)
+namespace Google\Service\CloudAlloyDBAdmin {
+    class GenerateClientCertificateRequest extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $certDuration;
+        /**
+         * @var string
+         */
+        public $publicKey;
+        /**
+         * @var string
+         */
+        public $requestId;
+        /**
+         * @var bool
+         */
+        public $useMetadataExchange;
+        /**
+         * @param string
+         */
+        public function setCertDuration($certDuration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCertDuration()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPublicKey($publicKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPublicKey()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRequestId($requestId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestId()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setUseMetadataExchange($useMetadataExchange)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUseMetadataExchange()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudAlloyDBAdmin\GenerateClientCertificateRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCertDuration()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPublicKey($publicKey)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPublicKey()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRequestId($requestId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestId()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setUseMetadataExchange($useMetadataExchange)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUseMetadataExchange()
+    class Google_Service_CloudAlloyDBAdmin_GenerateClientCertificateRequest extends \Google\Service\CloudAlloyDBAdmin\GenerateClientCertificateRequest
     {
     }
 }

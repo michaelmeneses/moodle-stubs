@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class RunDetails extends \Google\Collection
-{
-    protected $collection_key = 'byproducts';
-    protected $builderType = ProvenanceBuilder::class;
-    protected $builderDataType = '';
-    protected $byproductsType = ResourceDescriptor::class;
-    protected $byproductsDataType = 'array';
-    protected $metadataType = BuildMetadata::class;
-    protected $metadataDataType = '';
-    /**
-     * @param ProvenanceBuilder $builder
-     */
-    public function setBuilder(ProvenanceBuilder $builder)
+namespace Google\Service\ContainerAnalysis {
+    class RunDetails extends \Google\Collection
     {
+        protected $collection_key = 'byproducts';
+        protected $builderType = ProvenanceBuilder::class;
+        protected $builderDataType = '';
+        protected $byproductsType = ResourceDescriptor::class;
+        protected $byproductsDataType = 'array';
+        protected $metadataType = BuildMetadata::class;
+        protected $metadataDataType = '';
+        /**
+         * @param ProvenanceBuilder $builder
+         */
+        public function setBuilder(ProvenanceBuilder $builder)
+        {
+        }
+        /**
+         * @return ProvenanceBuilder
+         */
+        public function getBuilder()
+        {
+        }
+        /**
+         * @param ResourceDescriptor[] $byproducts
+         */
+        public function setByproducts($byproducts)
+        {
+        }
+        /**
+         * @return ResourceDescriptor[]
+         */
+        public function getByproducts()
+        {
+        }
+        /**
+         * @param BuildMetadata $metadata
+         */
+        public function setMetadata(BuildMetadata $metadata)
+        {
+        }
+        /**
+         * @return BuildMetadata
+         */
+        public function getMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ProvenanceBuilder
+     * Runtime class alias of \Google\Service\ContainerAnalysis\RunDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBuilder()
-    {
-    }
-    /**
-     * @param ResourceDescriptor[] $byproducts
-     */
-    public function setByproducts($byproducts)
-    {
-    }
-    /**
-     * @return ResourceDescriptor[]
-     */
-    public function getByproducts()
-    {
-    }
-    /**
-     * @param BuildMetadata $metadata
-     */
-    public function setMetadata(BuildMetadata $metadata)
-    {
-    }
-    /**
-     * @return BuildMetadata
-     */
-    public function getMetadata()
+    class Google_Service_ContainerAnalysis_RunDetails extends \Google\Service\ContainerAnalysis\RunDetails
     {
     }
 }

@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessAccountManagement;
-
-class ListAccountsResponse extends \Google\Collection
-{
-    protected $collection_key = 'accounts';
-    protected $accountsType = Account::class;
-    protected $accountsDataType = 'array';
-    /**
-     * If the number of accounts exceeds the requested page size, this field is
-     * populated with a token to fetch the next page of accounts on a subsequent
-     * call to `accounts.list`. If there are no more accounts, this field is not
-     * present in the response.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * A collection of accounts to which the user has access. The personal account
-     * of the user doing the query will always be the first item of the result,
-     * unless it is filtered out.
-     *
-     * @param Account[] $accounts
-     */
-    public function setAccounts($accounts)
+namespace Google\Service\MyBusinessAccountManagement {
+    class ListAccountsResponse extends \Google\Collection
     {
+        protected $collection_key = 'accounts';
+        protected $accountsType = Account::class;
+        protected $accountsDataType = 'array';
+        /**
+         * If the number of accounts exceeds the requested page size, this field is
+         * populated with a token to fetch the next page of accounts on a subsequent
+         * call to `accounts.list`. If there are no more accounts, this field is not
+         * present in the response.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * A collection of accounts to which the user has access. The personal account
+         * of the user doing the query will always be the first item of the result,
+         * unless it is filtered out.
+         *
+         * @param Account[] $accounts
+         */
+        public function setAccounts($accounts)
+        {
+        }
+        /**
+         * @return Account[]
+         */
+        public function getAccounts()
+        {
+        }
+        /**
+         * If the number of accounts exceeds the requested page size, this field is
+         * populated with a token to fetch the next page of accounts on a subsequent
+         * call to `accounts.list`. If there are no more accounts, this field is not
+         * present in the response.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Account[]
+     * Runtime class alias of \Google\Service\MyBusinessAccountManagement\ListAccountsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccounts()
-    {
-    }
-    /**
-     * If the number of accounts exceeds the requested page size, this field is
-     * populated with a token to fetch the next page of accounts on a subsequent
-     * call to `accounts.list`. If there are no more accounts, this field is not
-     * present in the response.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_MyBusinessAccountManagement_ListAccountsResponse extends \Google\Service\MyBusinessAccountManagement\ListAccountsResponse
     {
     }
 }

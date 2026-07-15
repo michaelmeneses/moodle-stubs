@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ClientConnectionConfig extends \Google\Model
-{
-    /**
-     * Customizable online prediction request timeout.
-     *
-     * @var string
-     */
-    public $inferenceTimeout;
-    /**
-     * Customizable online prediction request timeout.
-     *
-     * @param string $inferenceTimeout
-     */
-    public function setInferenceTimeout($inferenceTimeout)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ClientConnectionConfig extends \Google\Model
     {
+        /**
+         * Customizable online prediction request timeout.
+         *
+         * @var string
+         */
+        public $inferenceTimeout;
+        /**
+         * Customizable online prediction request timeout.
+         *
+         * @param string $inferenceTimeout
+         */
+        public function setInferenceTimeout($inferenceTimeout)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInferenceTimeout()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ClientConnectionConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInferenceTimeout()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ClientConnectionConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ClientConnectionConfig
     {
     }
 }

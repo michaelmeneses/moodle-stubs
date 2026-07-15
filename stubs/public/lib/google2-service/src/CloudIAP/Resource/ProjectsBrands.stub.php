@@ -21,59 +21,70 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIAP\Resource;
-
-/**
- * The "brands" collection of methods.
- * Typical usage is:
- *  <code>
- *   $iapService = new Google\Service\CloudIAP(...);
- *   $brands = $iapService->projects_brands;
- *  </code>
- */
-class ProjectsBrands extends \Google\Service\Resource
-{
+namespace Google\Service\CloudIAP\Resource {
+    use Google\Service\CloudIAP\Brand;
+    use Google\Service\CloudIAP\ListBrandsResponse;
     /**
-     * Constructs a new OAuth brand for the project if one does not exist. The
-     * created brand is "internal only", meaning that OAuth clients created under it
-     * only accept requests from users who belong to the same Google Workspace
-     * organization as the project. The brand is created in an un-reviewed status.
-     * NOTE: The "internal only" status can be manually changed in the Google Cloud
-     * Console. Requires that a brand does not already exist for the project, and
-     * that the specified support email is owned by the caller. (brands.create)
-     *
-     * @param string $parent Required. GCP Project number/id under which the brand
-     * is to be created. In the following format: projects/{project_number/id}.
-     * @param Brand $postBody
-     * @param array $optParams Optional parameters.
-     * @return Brand
-     * @throws \Google\Service\Exception
+     * The "brands" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $iapService = new Google\Service\CloudIAP(...);
+     *   $brands = $iapService->projects_brands;
+     *  </code>
      */
-    public function create($parent, Brand $postBody, $optParams = [])
+    class ProjectsBrands extends \Google\Service\Resource
     {
+        /**
+         * Constructs a new OAuth brand for the project if one does not exist. The
+         * created brand is "internal only", meaning that OAuth clients created under it
+         * only accept requests from users who belong to the same Google Workspace
+         * organization as the project. The brand is created in an un-reviewed status.
+         * NOTE: The "internal only" status can be manually changed in the Google Cloud
+         * Console. Requires that a brand does not already exist for the project, and
+         * that the specified support email is owned by the caller. (brands.create)
+         *
+         * @param string $parent Required. GCP Project number/id under which the brand
+         * is to be created. In the following format: projects/{project_number/id}.
+         * @param Brand $postBody
+         * @param array $optParams Optional parameters.
+         * @return Brand
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, Brand $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves the OAuth brand of the project. (brands.get)
+         *
+         * @param string $name Required. Name of the brand to be fetched. In the
+         * following format: projects/{project_number/id}/brands/{brand}.
+         * @param array $optParams Optional parameters.
+         * @return Brand
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists the existing brands for the project. (brands.listProjectsBrands)
+         *
+         * @param string $parent Required. GCP Project number/id. In the following
+         * format: projects/{project_number/id}.
+         * @param array $optParams Optional parameters.
+         * @return ListBrandsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsBrands($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Retrieves the OAuth brand of the project. (brands.get)
-     *
-     * @param string $name Required. Name of the brand to be fetched. In the
-     * following format: projects/{project_number/id}/brands/{brand}.
-     * @param array $optParams Optional parameters.
-     * @return Brand
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\CloudIAP\Resource\ProjectsBrands registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists the existing brands for the project. (brands.listProjectsBrands)
-     *
-     * @param string $parent Required. GCP Project number/id. In the following
-     * format: projects/{project_number/id}.
-     * @param array $optParams Optional parameters.
-     * @return ListBrandsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsBrands($parent, $optParams = [])
+    class Google_Service_CloudIAP_Resource_ProjectsBrands extends \Google\Service\CloudIAP\Resource\ProjectsBrands
     {
     }
 }

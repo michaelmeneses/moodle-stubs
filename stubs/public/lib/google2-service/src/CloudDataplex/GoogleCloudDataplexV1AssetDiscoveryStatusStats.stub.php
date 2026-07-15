@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1AssetDiscoveryStatusStats extends \Google\Model
-{
-    /**
-     * The count of data items within the referenced resource.
-     *
-     * @var string
-     */
-    public $dataItems;
-    /**
-     * The number of stored data bytes within the referenced resource.
-     *
-     * @var string
-     */
-    public $dataSize;
-    /**
-     * The count of fileset entities within the referenced resource.
-     *
-     * @var string
-     */
-    public $filesets;
-    /**
-     * The count of table entities within the referenced resource.
-     *
-     * @var string
-     */
-    public $tables;
-    /**
-     * The count of data items within the referenced resource.
-     *
-     * @param string $dataItems
-     */
-    public function setDataItems($dataItems)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1AssetDiscoveryStatusStats extends \Google\Model
     {
+        /**
+         * The count of data items within the referenced resource.
+         *
+         * @var string
+         */
+        public $dataItems;
+        /**
+         * The number of stored data bytes within the referenced resource.
+         *
+         * @var string
+         */
+        public $dataSize;
+        /**
+         * The count of fileset entities within the referenced resource.
+         *
+         * @var string
+         */
+        public $filesets;
+        /**
+         * The count of table entities within the referenced resource.
+         *
+         * @var string
+         */
+        public $tables;
+        /**
+         * The count of data items within the referenced resource.
+         *
+         * @param string $dataItems
+         */
+        public function setDataItems($dataItems)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataItems()
+        {
+        }
+        /**
+         * The number of stored data bytes within the referenced resource.
+         *
+         * @param string $dataSize
+         */
+        public function setDataSize($dataSize)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataSize()
+        {
+        }
+        /**
+         * The count of fileset entities within the referenced resource.
+         *
+         * @param string $filesets
+         */
+        public function setFilesets($filesets)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilesets()
+        {
+        }
+        /**
+         * The count of table entities within the referenced resource.
+         *
+         * @param string $tables
+         */
+        public function setTables($tables)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTables()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1AssetDiscoveryStatusStats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataItems()
-    {
-    }
-    /**
-     * The number of stored data bytes within the referenced resource.
-     *
-     * @param string $dataSize
-     */
-    public function setDataSize($dataSize)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDataSize()
-    {
-    }
-    /**
-     * The count of fileset entities within the referenced resource.
-     *
-     * @param string $filesets
-     */
-    public function setFilesets($filesets)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFilesets()
-    {
-    }
-    /**
-     * The count of table entities within the referenced resource.
-     *
-     * @param string $tables
-     */
-    public function setTables($tables)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTables()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1AssetDiscoveryStatusStats extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1AssetDiscoveryStatusStats
     {
     }
 }

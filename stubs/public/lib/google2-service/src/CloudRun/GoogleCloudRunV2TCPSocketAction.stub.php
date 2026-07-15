@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleCloudRunV2TCPSocketAction extends \Google\Model
-{
-    /**
-     * Optional. Port number to access on the container. Must be in the range 1 to
-     * 65535. If not specified, defaults to the exposed port of the container,
-     * which is the value of container.ports[0].containerPort.
-     *
-     * @var int
-     */
-    public $port;
-    /**
-     * Optional. Port number to access on the container. Must be in the range 1 to
-     * 65535. If not specified, defaults to the exposed port of the container,
-     * which is the value of container.ports[0].containerPort.
-     *
-     * @param int $port
-     */
-    public function setPort($port)
+namespace Google\Service\CloudRun {
+    class GoogleCloudRunV2TCPSocketAction extends \Google\Model
     {
+        /**
+         * Optional. Port number to access on the container. Must be in the range 1 to
+         * 65535. If not specified, defaults to the exposed port of the container,
+         * which is the value of container.ports[0].containerPort.
+         *
+         * @var int
+         */
+        public $port;
+        /**
+         * Optional. Port number to access on the container. Must be in the range 1 to
+         * 65535. If not specified, defaults to the exposed port of the container,
+         * which is the value of container.ports[0].containerPort.
+         *
+         * @param int $port
+         */
+        public function setPort($port)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPort()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudRun\GoogleCloudRunV2TCPSocketAction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPort()
+    class Google_Service_CloudRun_GoogleCloudRunV2TCPSocketAction extends \Google\Service\CloudRun\GoogleCloudRunV2TCPSocketAction
     {
     }
 }

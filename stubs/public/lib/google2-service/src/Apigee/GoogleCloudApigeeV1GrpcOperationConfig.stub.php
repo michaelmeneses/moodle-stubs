@@ -21,116 +21,125 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1GrpcOperationConfig extends \Google\Collection
-{
-    protected $collection_key = 'methods';
-    /**
-     * Required. Name of the API proxy with which the gRPC operation and quota are
-     * associated.
-     *
-     * @var string
-     */
-    public $apiSource;
-    protected $attributesType = GoogleCloudApigeeV1Attribute::class;
-    protected $attributesDataType = 'array';
-    /**
-     * List of unqualified gRPC method names for the proxy to which quota will be
-     * applied. If this field is empty, the Quota will apply to all operations on
-     * the gRPC service defined on the proxy. Example: Given a proxy that is
-     * configured to serve com.petstore.PetService, the methods
-     * com.petstore.PetService.ListPets and com.petstore.PetService.GetPet would
-     * be specified here as simply ["ListPets", "GetPet"].
-     *
-     * @var string[]
-     */
-    public $methods;
-    protected $quotaType = GoogleCloudApigeeV1Quota::class;
-    protected $quotaDataType = '';
-    /**
-     * Required. gRPC Service name associated to be associated with the API proxy,
-     * on which quota rules can be applied upon.
-     *
-     * @var string
-     */
-    public $service;
-    /**
-     * Required. Name of the API proxy with which the gRPC operation and quota are
-     * associated.
-     *
-     * @param string $apiSource
-     */
-    public function setApiSource($apiSource)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1GrpcOperationConfig extends \Google\Collection
     {
+        protected $collection_key = 'methods';
+        /**
+         * Required. Name of the API proxy with which the gRPC operation and quota are
+         * associated.
+         *
+         * @var string
+         */
+        public $apiSource;
+        protected $attributesType = GoogleCloudApigeeV1Attribute::class;
+        protected $attributesDataType = 'array';
+        /**
+         * List of unqualified gRPC method names for the proxy to which quota will be
+         * applied. If this field is empty, the Quota will apply to all operations on
+         * the gRPC service defined on the proxy. Example: Given a proxy that is
+         * configured to serve com.petstore.PetService, the methods
+         * com.petstore.PetService.ListPets and com.petstore.PetService.GetPet would
+         * be specified here as simply ["ListPets", "GetPet"].
+         *
+         * @var string[]
+         */
+        public $methods;
+        protected $quotaType = GoogleCloudApigeeV1Quota::class;
+        protected $quotaDataType = '';
+        /**
+         * Required. gRPC Service name associated to be associated with the API proxy,
+         * on which quota rules can be applied upon.
+         *
+         * @var string
+         */
+        public $service;
+        /**
+         * Required. Name of the API proxy with which the gRPC operation and quota are
+         * associated.
+         *
+         * @param string $apiSource
+         */
+        public function setApiSource($apiSource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApiSource()
+        {
+        }
+        /**
+         * Custom attributes associated with the operation.
+         *
+         * @param GoogleCloudApigeeV1Attribute[] $attributes
+         */
+        public function setAttributes($attributes)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1Attribute[]
+         */
+        public function getAttributes()
+        {
+        }
+        /**
+         * List of unqualified gRPC method names for the proxy to which quota will be
+         * applied. If this field is empty, the Quota will apply to all operations on
+         * the gRPC service defined on the proxy. Example: Given a proxy that is
+         * configured to serve com.petstore.PetService, the methods
+         * com.petstore.PetService.ListPets and com.petstore.PetService.GetPet would
+         * be specified here as simply ["ListPets", "GetPet"].
+         *
+         * @param string[] $methods
+         */
+        public function setMethods($methods)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMethods()
+        {
+        }
+        /**
+         * Quota parameters to be enforced for the methods and API source combination.
+         * If none are specified, quota enforcement will not be done.
+         *
+         * @param GoogleCloudApigeeV1Quota $quota
+         */
+        public function setQuota(GoogleCloudApigeeV1Quota $quota)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1Quota
+         */
+        public function getQuota()
+        {
+        }
+        /**
+         * Required. gRPC Service name associated to be associated with the API proxy,
+         * on which quota rules can be applied upon.
+         *
+         * @param string $service
+         */
+        public function setService($service)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getService()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1GrpcOperationConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiSource()
-    {
-    }
-    /**
-     * Custom attributes associated with the operation.
-     *
-     * @param GoogleCloudApigeeV1Attribute[] $attributes
-     */
-    public function setAttributes($attributes)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1Attribute[]
-     */
-    public function getAttributes()
-    {
-    }
-    /**
-     * List of unqualified gRPC method names for the proxy to which quota will be
-     * applied. If this field is empty, the Quota will apply to all operations on
-     * the gRPC service defined on the proxy. Example: Given a proxy that is
-     * configured to serve com.petstore.PetService, the methods
-     * com.petstore.PetService.ListPets and com.petstore.PetService.GetPet would
-     * be specified here as simply ["ListPets", "GetPet"].
-     *
-     * @param string[] $methods
-     */
-    public function setMethods($methods)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getMethods()
-    {
-    }
-    /**
-     * Quota parameters to be enforced for the methods and API source combination.
-     * If none are specified, quota enforcement will not be done.
-     *
-     * @param GoogleCloudApigeeV1Quota $quota
-     */
-    public function setQuota(GoogleCloudApigeeV1Quota $quota)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1Quota
-     */
-    public function getQuota()
-    {
-    }
-    /**
-     * Required. gRPC Service name associated to be associated with the API proxy,
-     * on which quota rules can be applied upon.
-     *
-     * @param string $service
-     */
-    public function setService($service)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getService()
+    class Google_Service_Apigee_GoogleCloudApigeeV1GrpcOperationConfig extends \Google\Service\Apigee\GoogleCloudApigeeV1GrpcOperationConfig
     {
     }
 }

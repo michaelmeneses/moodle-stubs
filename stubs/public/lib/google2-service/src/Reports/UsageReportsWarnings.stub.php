@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Reports;
-
-class UsageReportsWarnings extends \Google\Collection
-{
-    protected $collection_key = 'data';
-    /**
-     * Machine readable code or warning type. The warning code value is `200`.
-     *
-     * @var string
-     */
-    public $code;
-    protected $dataType = UsageReportsWarningsData::class;
-    protected $dataDataType = 'array';
-    /**
-     * The human readable messages for a warning are: - Data is not available
-     * warning - Sorry, data for date yyyy-mm-dd for application "`application
-     * name`" is not available. - Partial data is available warning - Data for
-     * date yyyy-mm-dd for application "`application name`" is not available right
-     * now, please try again after a few hours.
-     *
-     * @var string
-     */
-    public $message;
-    /**
-     * Machine readable code or warning type. The warning code value is `200`.
-     *
-     * @param string $code
-     */
-    public function setCode($code)
+namespace Google\Service\Reports {
+    class UsageReportsWarnings extends \Google\Collection
     {
+        protected $collection_key = 'data';
+        /**
+         * Machine readable code or warning type. The warning code value is `200`.
+         *
+         * @var string
+         */
+        public $code;
+        protected $dataType = UsageReportsWarningsData::class;
+        protected $dataDataType = 'array';
+        /**
+         * The human readable messages for a warning are: - Data is not available
+         * warning - Sorry, data for date yyyy-mm-dd for application "`application
+         * name`" is not available. - Partial data is available warning - Data for
+         * date yyyy-mm-dd for application "`application name`" is not available right
+         * now, please try again after a few hours.
+         *
+         * @var string
+         */
+        public $message;
+        /**
+         * Machine readable code or warning type. The warning code value is `200`.
+         *
+         * @param string $code
+         */
+        public function setCode($code)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCode()
+        {
+        }
+        /**
+         * Key-value pairs to give detailed information on the warning.
+         *
+         * @param UsageReportsWarningsData[] $data
+         */
+        public function setData($data)
+        {
+        }
+        /**
+         * @return UsageReportsWarningsData[]
+         */
+        public function getData()
+        {
+        }
+        /**
+         * The human readable messages for a warning are: - Data is not available
+         * warning - Sorry, data for date yyyy-mm-dd for application "`application
+         * name`" is not available. - Partial data is available warning - Data for
+         * date yyyy-mm-dd for application "`application name`" is not available right
+         * now, please try again after a few hours.
+         *
+         * @param string $message
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Reports\UsageReportsWarnings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCode()
-    {
-    }
-    /**
-     * Key-value pairs to give detailed information on the warning.
-     *
-     * @param UsageReportsWarningsData[] $data
-     */
-    public function setData($data)
-    {
-    }
-    /**
-     * @return UsageReportsWarningsData[]
-     */
-    public function getData()
-    {
-    }
-    /**
-     * The human readable messages for a warning are: - Data is not available
-     * warning - Sorry, data for date yyyy-mm-dd for application "`application
-     * name`" is not available. - Partial data is available warning - Data for
-     * date yyyy-mm-dd for application "`application name`" is not available right
-     * now, please try again after a few hours.
-     *
-     * @param string $message
-     */
-    public function setMessage($message)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMessage()
+    class Google_Service_Reports_UsageReportsWarnings extends \Google\Service\Reports\UsageReportsWarnings
     {
     }
 }

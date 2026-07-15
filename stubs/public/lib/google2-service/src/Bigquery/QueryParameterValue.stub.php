@@ -21,77 +21,86 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class QueryParameterValue extends \Google\Collection
-{
-    protected $collection_key = 'arrayValues';
-    protected $arrayValuesType = QueryParameterValue::class;
-    protected $arrayValuesDataType = 'array';
-    protected $rangeValueType = RangeValue::class;
-    protected $rangeValueDataType = '';
-    protected $structValuesType = QueryParameterValue::class;
-    protected $structValuesDataType = 'map';
-    /**
-     * Optional. The value of this value, if a simple scalar type.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Optional. The array values, if this is an array type.
-     *
-     * @param QueryParameterValue[] $arrayValues
-     */
-    public function setArrayValues($arrayValues)
+namespace Google\Service\Bigquery {
+    class QueryParameterValue extends \Google\Collection
     {
+        protected $collection_key = 'arrayValues';
+        protected $arrayValuesType = QueryParameterValue::class;
+        protected $arrayValuesDataType = 'array';
+        protected $rangeValueType = RangeValue::class;
+        protected $rangeValueDataType = '';
+        protected $structValuesType = QueryParameterValue::class;
+        protected $structValuesDataType = 'map';
+        /**
+         * Optional. The value of this value, if a simple scalar type.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Optional. The array values, if this is an array type.
+         *
+         * @param QueryParameterValue[] $arrayValues
+         */
+        public function setArrayValues($arrayValues)
+        {
+        }
+        /**
+         * @return QueryParameterValue[]
+         */
+        public function getArrayValues()
+        {
+        }
+        /**
+         * Optional. The range value, if this is a range type.
+         *
+         * @param RangeValue $rangeValue
+         */
+        public function setRangeValue(RangeValue $rangeValue)
+        {
+        }
+        /**
+         * @return RangeValue
+         */
+        public function getRangeValue()
+        {
+        }
+        /**
+         * The struct field values.
+         *
+         * @param QueryParameterValue[] $structValues
+         */
+        public function setStructValues($structValues)
+        {
+        }
+        /**
+         * @return QueryParameterValue[]
+         */
+        public function getStructValues()
+        {
+        }
+        /**
+         * Optional. The value of this value, if a simple scalar type.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return QueryParameterValue[]
+     * Runtime class alias of \Google\Service\Bigquery\QueryParameterValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArrayValues()
-    {
-    }
-    /**
-     * Optional. The range value, if this is a range type.
-     *
-     * @param RangeValue $rangeValue
-     */
-    public function setRangeValue(RangeValue $rangeValue)
-    {
-    }
-    /**
-     * @return RangeValue
-     */
-    public function getRangeValue()
-    {
-    }
-    /**
-     * The struct field values.
-     *
-     * @param QueryParameterValue[] $structValues
-     */
-    public function setStructValues($structValues)
-    {
-    }
-    /**
-     * @return QueryParameterValue[]
-     */
-    public function getStructValues()
-    {
-    }
-    /**
-     * Optional. The value of this value, if a simple scalar type.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_Bigquery_QueryParameterValue extends \Google\Service\Bigquery\QueryParameterValue
     {
     }
 }

@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1BAPConfig extends \Google\Collection
-{
-    protected $collection_key = 'supportedConnectorModes';
-    /**
-     * Optional. The actions enabled on the associated BAP connection.
-     *
-     * @var string[]
-     */
-    public $enabledActions;
-    /**
-     * Required. The supported connector modes for the associated BAP connection.
-     *
-     * @var string[]
-     */
-    public $supportedConnectorModes;
-    /**
-     * Optional. The actions enabled on the associated BAP connection.
-     *
-     * @param string[] $enabledActions
-     */
-    public function setEnabledActions($enabledActions)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1BAPConfig extends \Google\Collection
     {
+        protected $collection_key = 'supportedConnectorModes';
+        /**
+         * Optional. The actions enabled on the associated BAP connection.
+         *
+         * @var string[]
+         */
+        public $enabledActions;
+        /**
+         * Required. The supported connector modes for the associated BAP connection.
+         *
+         * @var string[]
+         */
+        public $supportedConnectorModes;
+        /**
+         * Optional. The actions enabled on the associated BAP connection.
+         *
+         * @param string[] $enabledActions
+         */
+        public function setEnabledActions($enabledActions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getEnabledActions()
+        {
+        }
+        /**
+         * Required. The supported connector modes for the associated BAP connection.
+         *
+         * @param string[] $supportedConnectorModes
+         */
+        public function setSupportedConnectorModes($supportedConnectorModes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSupportedConnectorModes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1BAPConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnabledActions()
-    {
-    }
-    /**
-     * Required. The supported connector modes for the associated BAP connection.
-     *
-     * @param string[] $supportedConnectorModes
-     */
-    public function setSupportedConnectorModes($supportedConnectorModes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSupportedConnectorModes()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1BAPConfig extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1BAPConfig
     {
     }
 }

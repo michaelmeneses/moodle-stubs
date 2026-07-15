@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class CategoryCount extends \Google\Model
-{
-    /**
-     * The name of category.
-     *
-     * @var string
-     */
-    public $category;
-    /**
-     * The count of training samples matching the category within the cluster.
-     *
-     * @var string
-     */
-    public $count;
-    /**
-     * The name of category.
-     *
-     * @param string $category
-     */
-    public function setCategory($category)
+namespace Google\Service\Bigquery {
+    class CategoryCount extends \Google\Model
     {
+        /**
+         * The name of category.
+         *
+         * @var string
+         */
+        public $category;
+        /**
+         * The count of training samples matching the category within the cluster.
+         *
+         * @var string
+         */
+        public $count;
+        /**
+         * The name of category.
+         *
+         * @param string $category
+         */
+        public function setCategory($category)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCategory()
+        {
+        }
+        /**
+         * The count of training samples matching the category within the cluster.
+         *
+         * @param string $count
+         */
+        public function setCount($count)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Bigquery\CategoryCount registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCategory()
-    {
-    }
-    /**
-     * The count of training samples matching the category within the cluster.
-     *
-     * @param string $count
-     */
-    public function setCount($count)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCount()
+    class Google_Service_Bigquery_CategoryCount extends \Google\Service\Bigquery\CategoryCount
     {
     }
 }

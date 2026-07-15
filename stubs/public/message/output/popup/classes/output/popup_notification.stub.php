@@ -29,6 +29,10 @@
  */
 namespace message_popup\output;
 
+use renderable;
+use templatable;
+use moodle_url;
+use core_user;
 /**
  * Class to prepare a popup notification for display.
  *

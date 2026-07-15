@@ -21,129 +21,138 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1ScoreComponent extends \Google\Collection
-{
-    protected $collection_key = 'recommendations';
-    /**
-     * Time when score was calculated.
-     *
-     * @var string
-     */
-    public $calculateTime;
-    /**
-     * Time in the requested time period when data was last captured to compute
-     * the score.
-     *
-     * @var string
-     */
-    public $dataCaptureTime;
-    /**
-     * List of paths for next components.
-     *
-     * @var string[]
-     */
-    public $drilldownPaths;
-    protected $recommendationsType = GoogleCloudApigeeV1ScoreComponentRecommendation::class;
-    protected $recommendationsDataType = 'array';
-    /**
-     * Score for the component.
-     *
-     * @var int
-     */
-    public $score;
-    /**
-     * Path of the component. Example:
-     * /org@myorg/envgroup@myenvgroup/proxies/proxy@myproxy
-     *
-     * @var string
-     */
-    public $scorePath;
-    /**
-     * Time when score was calculated.
-     *
-     * @param string $calculateTime
-     */
-    public function setCalculateTime($calculateTime)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1ScoreComponent extends \Google\Collection
     {
+        protected $collection_key = 'recommendations';
+        /**
+         * Time when score was calculated.
+         *
+         * @var string
+         */
+        public $calculateTime;
+        /**
+         * Time in the requested time period when data was last captured to compute
+         * the score.
+         *
+         * @var string
+         */
+        public $dataCaptureTime;
+        /**
+         * List of paths for next components.
+         *
+         * @var string[]
+         */
+        public $drilldownPaths;
+        protected $recommendationsType = GoogleCloudApigeeV1ScoreComponentRecommendation::class;
+        protected $recommendationsDataType = 'array';
+        /**
+         * Score for the component.
+         *
+         * @var int
+         */
+        public $score;
+        /**
+         * Path of the component. Example:
+         * /org@myorg/envgroup@myenvgroup/proxies/proxy@myproxy
+         *
+         * @var string
+         */
+        public $scorePath;
+        /**
+         * Time when score was calculated.
+         *
+         * @param string $calculateTime
+         */
+        public function setCalculateTime($calculateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCalculateTime()
+        {
+        }
+        /**
+         * Time in the requested time period when data was last captured to compute
+         * the score.
+         *
+         * @param string $dataCaptureTime
+         */
+        public function setDataCaptureTime($dataCaptureTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataCaptureTime()
+        {
+        }
+        /**
+         * List of paths for next components.
+         *
+         * @param string[] $drilldownPaths
+         */
+        public function setDrilldownPaths($drilldownPaths)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDrilldownPaths()
+        {
+        }
+        /**
+         * List of recommendations to improve API security.
+         *
+         * @param GoogleCloudApigeeV1ScoreComponentRecommendation[] $recommendations
+         */
+        public function setRecommendations($recommendations)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1ScoreComponentRecommendation[]
+         */
+        public function getRecommendations()
+        {
+        }
+        /**
+         * Score for the component.
+         *
+         * @param int $score
+         */
+        public function setScore($score)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getScore()
+        {
+        }
+        /**
+         * Path of the component. Example:
+         * /org@myorg/envgroup@myenvgroup/proxies/proxy@myproxy
+         *
+         * @param string $scorePath
+         */
+        public function setScorePath($scorePath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScorePath()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1ScoreComponent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCalculateTime()
-    {
-    }
-    /**
-     * Time in the requested time period when data was last captured to compute
-     * the score.
-     *
-     * @param string $dataCaptureTime
-     */
-    public function setDataCaptureTime($dataCaptureTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDataCaptureTime()
-    {
-    }
-    /**
-     * List of paths for next components.
-     *
-     * @param string[] $drilldownPaths
-     */
-    public function setDrilldownPaths($drilldownPaths)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getDrilldownPaths()
-    {
-    }
-    /**
-     * List of recommendations to improve API security.
-     *
-     * @param GoogleCloudApigeeV1ScoreComponentRecommendation[] $recommendations
-     */
-    public function setRecommendations($recommendations)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1ScoreComponentRecommendation[]
-     */
-    public function getRecommendations()
-    {
-    }
-    /**
-     * Score for the component.
-     *
-     * @param int $score
-     */
-    public function setScore($score)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getScore()
-    {
-    }
-    /**
-     * Path of the component. Example:
-     * /org@myorg/envgroup@myenvgroup/proxies/proxy@myproxy
-     *
-     * @param string $scorePath
-     */
-    public function setScorePath($scorePath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getScorePath()
+    class Google_Service_Apigee_GoogleCloudApigeeV1ScoreComponent extends \Google\Service\Apigee\GoogleCloudApigeeV1ScoreComponent
     {
     }
 }

@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class DailyResourceUsageAggregationStats extends \Google\Model
-{
-    /**
-     * Average usage value.
-     *
-     * @var float
-     */
-    public $average;
-    /**
-     * Median usage value.
-     *
-     * @var float
-     */
-    public $median;
-    /**
-     * 95th percentile usage value.
-     *
-     * @var float
-     */
-    public $ninteyFifthPercentile;
-    /**
-     * Peak usage value.
-     *
-     * @var float
-     */
-    public $peak;
-    /**
-     * Average usage value.
-     *
-     * @param float $average
-     */
-    public function setAverage($average)
+namespace Google\Service\MigrationCenterAPI {
+    class DailyResourceUsageAggregationStats extends \Google\Model
     {
+        /**
+         * Average usage value.
+         *
+         * @var float
+         */
+        public $average;
+        /**
+         * Median usage value.
+         *
+         * @var float
+         */
+        public $median;
+        /**
+         * 95th percentile usage value.
+         *
+         * @var float
+         */
+        public $ninteyFifthPercentile;
+        /**
+         * Peak usage value.
+         *
+         * @var float
+         */
+        public $peak;
+        /**
+         * Average usage value.
+         *
+         * @param float $average
+         */
+        public function setAverage($average)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getAverage()
+        {
+        }
+        /**
+         * Median usage value.
+         *
+         * @param float $median
+         */
+        public function setMedian($median)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getMedian()
+        {
+        }
+        /**
+         * 95th percentile usage value.
+         *
+         * @param float $ninteyFifthPercentile
+         */
+        public function setNinteyFifthPercentile($ninteyFifthPercentile)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getNinteyFifthPercentile()
+        {
+        }
+        /**
+         * Peak usage value.
+         *
+         * @param float $peak
+         */
+        public function setPeak($peak)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getPeak()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\DailyResourceUsageAggregationStats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAverage()
-    {
-    }
-    /**
-     * Median usage value.
-     *
-     * @param float $median
-     */
-    public function setMedian($median)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getMedian()
-    {
-    }
-    /**
-     * 95th percentile usage value.
-     *
-     * @param float $ninteyFifthPercentile
-     */
-    public function setNinteyFifthPercentile($ninteyFifthPercentile)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getNinteyFifthPercentile()
-    {
-    }
-    /**
-     * Peak usage value.
-     *
-     * @param float $peak
-     */
-    public function setPeak($peak)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getPeak()
+    class Google_Service_MigrationCenterAPI_DailyResourceUsageAggregationStats extends \Google\Service\MigrationCenterAPI\DailyResourceUsageAggregationStats
     {
     }
 }

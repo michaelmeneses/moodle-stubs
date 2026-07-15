@@ -21,96 +21,105 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1StorageFormatCsvOptions extends \Google\Model
-{
-    /**
-     * Optional. The delimiter used to separate values. Defaults to ','.
-     *
-     * @var string
-     */
-    public $delimiter;
-    /**
-     * Optional. The character encoding of the data. Accepts "US-ASCII", "UTF-8",
-     * and "ISO-8859-1". Defaults to UTF-8 if unspecified.
-     *
-     * @var string
-     */
-    public $encoding;
-    /**
-     * Optional. The number of rows to interpret as header rows that should be
-     * skipped when reading data rows. Defaults to 0.
-     *
-     * @var int
-     */
-    public $headerRows;
-    /**
-     * Optional. The character used to quote column values. Accepts '"' (double
-     * quotation mark) or ''' (single quotation mark). Defaults to '"' (double
-     * quotation mark) if unspecified.
-     *
-     * @var string
-     */
-    public $quote;
-    /**
-     * Optional. The delimiter used to separate values. Defaults to ','.
-     *
-     * @param string $delimiter
-     */
-    public function setDelimiter($delimiter)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1StorageFormatCsvOptions extends \Google\Model
     {
+        /**
+         * Optional. The delimiter used to separate values. Defaults to ','.
+         *
+         * @var string
+         */
+        public $delimiter;
+        /**
+         * Optional. The character encoding of the data. Accepts "US-ASCII", "UTF-8",
+         * and "ISO-8859-1". Defaults to UTF-8 if unspecified.
+         *
+         * @var string
+         */
+        public $encoding;
+        /**
+         * Optional. The number of rows to interpret as header rows that should be
+         * skipped when reading data rows. Defaults to 0.
+         *
+         * @var int
+         */
+        public $headerRows;
+        /**
+         * Optional. The character used to quote column values. Accepts '"' (double
+         * quotation mark) or ''' (single quotation mark). Defaults to '"' (double
+         * quotation mark) if unspecified.
+         *
+         * @var string
+         */
+        public $quote;
+        /**
+         * Optional. The delimiter used to separate values. Defaults to ','.
+         *
+         * @param string $delimiter
+         */
+        public function setDelimiter($delimiter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDelimiter()
+        {
+        }
+        /**
+         * Optional. The character encoding of the data. Accepts "US-ASCII", "UTF-8",
+         * and "ISO-8859-1". Defaults to UTF-8 if unspecified.
+         *
+         * @param string $encoding
+         */
+        public function setEncoding($encoding)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEncoding()
+        {
+        }
+        /**
+         * Optional. The number of rows to interpret as header rows that should be
+         * skipped when reading data rows. Defaults to 0.
+         *
+         * @param int $headerRows
+         */
+        public function setHeaderRows($headerRows)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getHeaderRows()
+        {
+        }
+        /**
+         * Optional. The character used to quote column values. Accepts '"' (double
+         * quotation mark) or ''' (single quotation mark). Defaults to '"' (double
+         * quotation mark) if unspecified.
+         *
+         * @param string $quote
+         */
+        public function setQuote($quote)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQuote()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1StorageFormatCsvOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDelimiter()
-    {
-    }
-    /**
-     * Optional. The character encoding of the data. Accepts "US-ASCII", "UTF-8",
-     * and "ISO-8859-1". Defaults to UTF-8 if unspecified.
-     *
-     * @param string $encoding
-     */
-    public function setEncoding($encoding)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEncoding()
-    {
-    }
-    /**
-     * Optional. The number of rows to interpret as header rows that should be
-     * skipped when reading data rows. Defaults to 0.
-     *
-     * @param int $headerRows
-     */
-    public function setHeaderRows($headerRows)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getHeaderRows()
-    {
-    }
-    /**
-     * Optional. The character used to quote column values. Accepts '"' (double
-     * quotation mark) or ''' (single quotation mark). Defaults to '"' (double
-     * quotation mark) if unspecified.
-     *
-     * @param string $quote
-     */
-    public function setQuote($quote)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQuote()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1StorageFormatCsvOptions extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1StorageFormatCsvOptions
     {
     }
 }

@@ -21,59 +21,68 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecureSourceManager;
-
-class ResolvePullRequestCommentsRequest extends \Google\Collection
-{
-    protected $collection_key = 'names';
-    /**
-     * Optional. If set, at least one comment in a thread is required, rest of the
-     * comments in the same thread will be automatically updated to resolved. If
-     * unset, all comments in the same thread need be present.
-     *
-     * @var bool
-     */
-    public $autoFill;
-    /**
-     * Required. The names of the pull request comments to resolve. Format: `proje
-     * cts/{project_number}/locations/{location_id}/repositories/{repository_id}/p
-     * ullRequests/{pull_request_id}/pullRequestComments/{comment_id}` Only
-     * comments from the same threads are allowed in the same request.
-     *
-     * @var string[]
-     */
-    public $names;
-    /**
-     * Optional. If set, at least one comment in a thread is required, rest of the
-     * comments in the same thread will be automatically updated to resolved. If
-     * unset, all comments in the same thread need be present.
-     *
-     * @param bool $autoFill
-     */
-    public function setAutoFill($autoFill)
+namespace Google\Service\SecureSourceManager {
+    class ResolvePullRequestCommentsRequest extends \Google\Collection
     {
+        protected $collection_key = 'names';
+        /**
+         * Optional. If set, at least one comment in a thread is required, rest of the
+         * comments in the same thread will be automatically updated to resolved. If
+         * unset, all comments in the same thread need be present.
+         *
+         * @var bool
+         */
+        public $autoFill;
+        /**
+         * Required. The names of the pull request comments to resolve. Format: `proje
+         * cts/{project_number}/locations/{location_id}/repositories/{repository_id}/p
+         * ullRequests/{pull_request_id}/pullRequestComments/{comment_id}` Only
+         * comments from the same threads are allowed in the same request.
+         *
+         * @var string[]
+         */
+        public $names;
+        /**
+         * Optional. If set, at least one comment in a thread is required, rest of the
+         * comments in the same thread will be automatically updated to resolved. If
+         * unset, all comments in the same thread need be present.
+         *
+         * @param bool $autoFill
+         */
+        public function setAutoFill($autoFill)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAutoFill()
+        {
+        }
+        /**
+         * Required. The names of the pull request comments to resolve. Format: `proje
+         * cts/{project_number}/locations/{location_id}/repositories/{repository_id}/p
+         * ullRequests/{pull_request_id}/pullRequestComments/{comment_id}` Only
+         * comments from the same threads are allowed in the same request.
+         *
+         * @param string[] $names
+         */
+        public function setNames($names)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getNames()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\SecureSourceManager\ResolvePullRequestCommentsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAutoFill()
-    {
-    }
-    /**
-     * Required. The names of the pull request comments to resolve. Format: `proje
-     * cts/{project_number}/locations/{location_id}/repositories/{repository_id}/p
-     * ullRequests/{pull_request_id}/pullRequestComments/{comment_id}` Only
-     * comments from the same threads are allowed in the same request.
-     *
-     * @param string[] $names
-     */
-    public function setNames($names)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getNames()
+    class Google_Service_SecureSourceManager_ResolvePullRequestCommentsRequest extends \Google\Service\SecureSourceManager\ResolvePullRequestCommentsRequest
     {
     }
 }

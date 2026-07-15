@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1NearestNeighborsNeighbor extends \Google\Model
-{
-    /**
-     * The distance between the neighbor and the query vector.
-     *
-     * @var 
-     */
-    public $distance;
-    /**
-     * The id of the similar entity.
-     *
-     * @var string
-     */
-    public $entityId;
-    protected $entityKeyValuesType = GoogleCloudAiplatformV1FetchFeatureValuesResponse::class;
-    protected $entityKeyValuesDataType = '';
-    public function setDistance($distance)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1NearestNeighborsNeighbor extends \Google\Model
     {
+        /**
+         * The distance between the neighbor and the query vector.
+         *
+         * @var 
+         */
+        public $distance;
+        /**
+         * The id of the similar entity.
+         *
+         * @var string
+         */
+        public $entityId;
+        protected $entityKeyValuesType = GoogleCloudAiplatformV1FetchFeatureValuesResponse::class;
+        protected $entityKeyValuesDataType = '';
+        public function setDistance($distance)
+        {
+        }
+        public function getDistance()
+        {
+        }
+        /**
+         * The id of the similar entity.
+         *
+         * @param string $entityId
+         */
+        public function setEntityId($entityId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEntityId()
+        {
+        }
+        /**
+         * The attributes of the neighbor, e.g. filters, crowding and metadata Note
+         * that full entities are returned only when "return_full_entity" is set to
+         * true. Otherwise, only the "entity_id" and "distance" fields are populated.
+         *
+         * @param GoogleCloudAiplatformV1FetchFeatureValuesResponse $entityKeyValues
+         */
+        public function setEntityKeyValues(GoogleCloudAiplatformV1FetchFeatureValuesResponse $entityKeyValues)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1FetchFeatureValuesResponse
+         */
+        public function getEntityKeyValues()
+        {
+        }
     }
-    public function getDistance()
-    {
-    }
+}
+namespace {
     /**
-     * The id of the similar entity.
-     *
-     * @param string $entityId
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1NearestNeighborsNeighbor registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setEntityId($entityId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEntityId()
-    {
-    }
-    /**
-     * The attributes of the neighbor, e.g. filters, crowding and metadata Note
-     * that full entities are returned only when "return_full_entity" is set to
-     * true. Otherwise, only the "entity_id" and "distance" fields are populated.
-     *
-     * @param GoogleCloudAiplatformV1FetchFeatureValuesResponse $entityKeyValues
-     */
-    public function setEntityKeyValues(GoogleCloudAiplatformV1FetchFeatureValuesResponse $entityKeyValues)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1FetchFeatureValuesResponse
-     */
-    public function getEntityKeyValues()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1NearestNeighborsNeighbor extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1NearestNeighborsNeighbor
     {
     }
 }

@@ -21,41 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects\Resource;
-
-/**
- * The "permissions" collection of methods.
- * Typical usage is:
- *  <code>
- *   $walletobjectsService = new Google\Service\Walletobjects(...);
- *   $permissions = $walletobjectsService->permissions;
- *  </code>
- */
-class Permissions extends \Google\Service\Resource
-{
+namespace Google\Service\Walletobjects\Resource {
+    use Google\Service\Walletobjects\Permissions as PermissionsModel;
     /**
-     * Returns the permissions for the given issuer id. (permissions.get)
-     *
-     * @param string $resourceId The unique identifier for an issuer. This ID must
-     * be unique across all issuers.
-     * @param array $optParams Optional parameters.
-     * @return PermissionsModel
-     * @throws \Google\Service\Exception
+     * The "permissions" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $walletobjectsService = new Google\Service\Walletobjects(...);
+     *   $permissions = $walletobjectsService->permissions;
+     *  </code>
      */
-    public function get($resourceId, $optParams = [])
+    class Permissions extends \Google\Service\Resource
     {
+        /**
+         * Returns the permissions for the given issuer id. (permissions.get)
+         *
+         * @param string $resourceId The unique identifier for an issuer. This ID must
+         * be unique across all issuers.
+         * @param array $optParams Optional parameters.
+         * @return PermissionsModel
+         * @throws \Google\Service\Exception
+         */
+        public function get($resourceId, $optParams = [])
+        {
+        }
+        /**
+         * Updates the permissions for the given issuer. (permissions.update)
+         *
+         * @param string $resourceId The unique identifier for an issuer. This ID must
+         * be unique across all issuers.
+         * @param PermissionsModel $postBody
+         * @param array $optParams Optional parameters.
+         * @return PermissionsModel
+         * @throws \Google\Service\Exception
+         */
+        public function update($resourceId, PermissionsModel $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Updates the permissions for the given issuer. (permissions.update)
-     *
-     * @param string $resourceId The unique identifier for an issuer. This ID must
-     * be unique across all issuers.
-     * @param PermissionsModel $postBody
-     * @param array $optParams Optional parameters.
-     * @return PermissionsModel
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Walletobjects\Resource\Permissions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function update($resourceId, PermissionsModel $postBody, $optParams = [])
+    class Google_Service_Walletobjects_Resource_Permissions extends \Google\Service\Walletobjects\Resource\Permissions
     {
     }
 }

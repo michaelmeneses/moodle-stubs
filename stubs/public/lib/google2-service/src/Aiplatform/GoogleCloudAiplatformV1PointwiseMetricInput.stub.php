@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1PointwiseMetricInput extends \Google\Model
-{
-    protected $instanceType = GoogleCloudAiplatformV1PointwiseMetricInstance::class;
-    protected $instanceDataType = '';
-    protected $metricSpecType = GoogleCloudAiplatformV1PointwiseMetricSpec::class;
-    protected $metricSpecDataType = '';
-    /**
-     * Required. Pointwise metric instance.
-     *
-     * @param GoogleCloudAiplatformV1PointwiseMetricInstance $instance
-     */
-    public function setInstance(GoogleCloudAiplatformV1PointwiseMetricInstance $instance)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1PointwiseMetricInput extends \Google\Model
     {
+        protected $instanceType = GoogleCloudAiplatformV1PointwiseMetricInstance::class;
+        protected $instanceDataType = '';
+        protected $metricSpecType = GoogleCloudAiplatformV1PointwiseMetricSpec::class;
+        protected $metricSpecDataType = '';
+        /**
+         * Required. Pointwise metric instance.
+         *
+         * @param GoogleCloudAiplatformV1PointwiseMetricInstance $instance
+         */
+        public function setInstance(GoogleCloudAiplatformV1PointwiseMetricInstance $instance)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1PointwiseMetricInstance
+         */
+        public function getInstance()
+        {
+        }
+        /**
+         * Required. Spec for pointwise metric.
+         *
+         * @param GoogleCloudAiplatformV1PointwiseMetricSpec $metricSpec
+         */
+        public function setMetricSpec(GoogleCloudAiplatformV1PointwiseMetricSpec $metricSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1PointwiseMetricSpec
+         */
+        public function getMetricSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1PointwiseMetricInstance
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1PointwiseMetricInput registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstance()
-    {
-    }
-    /**
-     * Required. Spec for pointwise metric.
-     *
-     * @param GoogleCloudAiplatformV1PointwiseMetricSpec $metricSpec
-     */
-    public function setMetricSpec(GoogleCloudAiplatformV1PointwiseMetricSpec $metricSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1PointwiseMetricSpec
-     */
-    public function getMetricSpec()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1PointwiseMetricInput extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1PointwiseMetricInput
     {
     }
 }

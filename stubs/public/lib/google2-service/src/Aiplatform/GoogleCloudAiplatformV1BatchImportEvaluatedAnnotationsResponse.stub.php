@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1BatchImportEvaluatedAnnotationsResponse extends \Google\Model
-{
-    /**
-     * Output only. Number of EvaluatedAnnotations imported.
-     *
-     * @var int
-     */
-    public $importedEvaluatedAnnotationsCount;
-    /**
-     * Output only. Number of EvaluatedAnnotations imported.
-     *
-     * @param int $importedEvaluatedAnnotationsCount
-     */
-    public function setImportedEvaluatedAnnotationsCount($importedEvaluatedAnnotationsCount)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1BatchImportEvaluatedAnnotationsResponse extends \Google\Model
     {
+        /**
+         * Output only. Number of EvaluatedAnnotations imported.
+         *
+         * @var int
+         */
+        public $importedEvaluatedAnnotationsCount;
+        /**
+         * Output only. Number of EvaluatedAnnotations imported.
+         *
+         * @param int $importedEvaluatedAnnotationsCount
+         */
+        public function setImportedEvaluatedAnnotationsCount($importedEvaluatedAnnotationsCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getImportedEvaluatedAnnotationsCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1BatchImportEvaluatedAnnotationsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getImportedEvaluatedAnnotationsCount()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1BatchImportEvaluatedAnnotationsResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1BatchImportEvaluatedAnnotationsResponse
     {
     }
 }

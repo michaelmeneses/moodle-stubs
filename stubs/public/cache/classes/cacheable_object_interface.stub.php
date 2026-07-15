@@ -20,35 +20,44 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core_cache;
-
-/**
- * Cacheable object.
- *
- * This interface can be implemented by any class that is going to be passed into a cache and allows it to take control of the
- * structure and the information about to be cached, as well as how to deal with it when it is retrieved from a cache.
- * Think of it like serialisation and the __sleep and __wakeup methods.
- * This is used because cache stores are responsible for how they interact with data and what they do when storing it. This
- * interface ensures there is always a guaranteed action.
- *
- * @package core_cache
- * @copyright Sam Hemelryk
- * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-interface cacheable_object_interface
-{
+namespace core_cache {
     /**
-     * Prepares the object for caching. Works like the __sleep method.
+     * Cacheable object.
      *
-     * @return mixed The data to cache, can be anything except a class that implements the cacheable_object... that would
-     *      be dumb.
+     * This interface can be implemented by any class that is going to be passed into a cache and allows it to take control of the
+     * structure and the information about to be cached, as well as how to deal with it when it is retrieved from a cache.
+     * Think of it like serialisation and the __sleep and __wakeup methods.
+     * This is used because cache stores are responsible for how they interact with data and what they do when storing it. This
+     * interface ensures there is always a guaranteed action.
+     *
+     * @package core_cache
+     * @copyright Sam Hemelryk
+     * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
      */
-    public function prepare_to_cache();
+    interface cacheable_object_interface
+    {
+        /**
+         * Prepares the object for caching. Works like the __sleep method.
+         *
+         * @return mixed The data to cache, can be anything except a class that implements the cacheable_object... that would
+         *      be dumb.
+         */
+        public function prepare_to_cache();
+        /**
+         * Takes the data provided by prepare_to_cache and reinitialises an instance of the associated from it.
+         *
+         * @param mixed $data
+         * @return object The instance for the given data.
+         */
+        public static function wake_from_cache($data);
+    }
+}
+namespace {
     /**
-     * Takes the data provided by prepare_to_cache and reinitialises an instance of the associated from it.
-     *
-     * @param mixed $data
-     * @return object The instance for the given data.
+     * Runtime class alias of \core_cache\cacheable_object_interface registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public static function wake_from_cache($data);
+    interface cacheable_object extends \core_cache\cacheable_object_interface
+    {
+    }
 }

@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseDynamicLinks;
-
-class ITunesConnectAnalytics extends \Google\Model
-{
-    /**
-     * Affiliate token used to create affiliate-coded links.
-     *
-     * @var string
-     */
-    public $at;
-    /**
-     * Campaign text that developers can optionally add to any link in order to
-     * track sales from a specific marketing campaign.
-     *
-     * @var string
-     */
-    public $ct;
-    /**
-     * iTune media types, including music, podcasts, audiobooks and so on.
-     *
-     * @var string
-     */
-    public $mt;
-    /**
-     * Provider token that enables analytics for Dynamic Links from within iTunes
-     * Connect.
-     *
-     * @var string
-     */
-    public $pt;
-    /**
-     * Affiliate token used to create affiliate-coded links.
-     *
-     * @param string $at
-     */
-    public function setAt($at)
+namespace Google\Service\FirebaseDynamicLinks {
+    class ITunesConnectAnalytics extends \Google\Model
     {
+        /**
+         * Affiliate token used to create affiliate-coded links.
+         *
+         * @var string
+         */
+        public $at;
+        /**
+         * Campaign text that developers can optionally add to any link in order to
+         * track sales from a specific marketing campaign.
+         *
+         * @var string
+         */
+        public $ct;
+        /**
+         * iTune media types, including music, podcasts, audiobooks and so on.
+         *
+         * @var string
+         */
+        public $mt;
+        /**
+         * Provider token that enables analytics for Dynamic Links from within iTunes
+         * Connect.
+         *
+         * @var string
+         */
+        public $pt;
+        /**
+         * Affiliate token used to create affiliate-coded links.
+         *
+         * @param string $at
+         */
+        public function setAt($at)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAt()
+        {
+        }
+        /**
+         * Campaign text that developers can optionally add to any link in order to
+         * track sales from a specific marketing campaign.
+         *
+         * @param string $ct
+         */
+        public function setCt($ct)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCt()
+        {
+        }
+        /**
+         * iTune media types, including music, podcasts, audiobooks and so on.
+         *
+         * @param string $mt
+         */
+        public function setMt($mt)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMt()
+        {
+        }
+        /**
+         * Provider token that enables analytics for Dynamic Links from within iTunes
+         * Connect.
+         *
+         * @param string $pt
+         */
+        public function setPt($pt)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPt()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\FirebaseDynamicLinks\ITunesConnectAnalytics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAt()
-    {
-    }
-    /**
-     * Campaign text that developers can optionally add to any link in order to
-     * track sales from a specific marketing campaign.
-     *
-     * @param string $ct
-     */
-    public function setCt($ct)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCt()
-    {
-    }
-    /**
-     * iTune media types, including music, podcasts, audiobooks and so on.
-     *
-     * @param string $mt
-     */
-    public function setMt($mt)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMt()
-    {
-    }
-    /**
-     * Provider token that enables analytics for Dynamic Links from within iTunes
-     * Connect.
-     *
-     * @param string $pt
-     */
-    public function setPt($pt)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPt()
+    class Google_Service_FirebaseDynamicLinks_ITunesConnectAnalytics extends \Google\Service\FirebaseDynamicLinks\ITunesConnectAnalytics
     {
     }
 }

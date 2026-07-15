@@ -21,80 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRedis;
-
-class DatabaseMetadata extends \Google\Model
-{
-    protected $backupConfigurationType = BackupConfiguration::class;
-    protected $backupConfigurationDataType = '';
-    protected $backupRunType = BackupRun::class;
-    protected $backupRunDataType = '';
-    protected $productType = Product::class;
-    protected $productDataType = '';
-    protected $resourceIdType = DatabaseResourceId::class;
-    protected $resourceIdDataType = '';
-    /**
-     * @var string
-     */
-    public $resourceName;
-    /**
-     * @param BackupConfiguration
-     */
-    public function setBackupConfiguration(BackupConfiguration $backupConfiguration)
+namespace Google\Service\CloudRedis {
+    class DatabaseMetadata extends \Google\Model
     {
+        protected $backupConfigurationType = BackupConfiguration::class;
+        protected $backupConfigurationDataType = '';
+        protected $backupRunType = BackupRun::class;
+        protected $backupRunDataType = '';
+        protected $productType = Product::class;
+        protected $productDataType = '';
+        protected $resourceIdType = DatabaseResourceId::class;
+        protected $resourceIdDataType = '';
+        /**
+         * @var string
+         */
+        public $resourceName;
+        /**
+         * @param BackupConfiguration
+         */
+        public function setBackupConfiguration(BackupConfiguration $backupConfiguration)
+        {
+        }
+        /**
+         * @return BackupConfiguration
+         */
+        public function getBackupConfiguration()
+        {
+        }
+        /**
+         * @param BackupRun
+         */
+        public function setBackupRun(BackupRun $backupRun)
+        {
+        }
+        /**
+         * @return BackupRun
+         */
+        public function getBackupRun()
+        {
+        }
+        /**
+         * @param Product
+         */
+        public function setProduct(Product $product)
+        {
+        }
+        /**
+         * @return Product
+         */
+        public function getProduct()
+        {
+        }
+        /**
+         * @param DatabaseResourceId
+         */
+        public function setResourceId(DatabaseResourceId $resourceId)
+        {
+        }
+        /**
+         * @return DatabaseResourceId
+         */
+        public function getResourceId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setResourceName($resourceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BackupConfiguration
+     * Runtime class alias of \Google\Service\CloudRedis\DatabaseMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackupConfiguration()
-    {
-    }
-    /**
-     * @param BackupRun
-     */
-    public function setBackupRun(BackupRun $backupRun)
-    {
-    }
-    /**
-     * @return BackupRun
-     */
-    public function getBackupRun()
-    {
-    }
-    /**
-     * @param Product
-     */
-    public function setProduct(Product $product)
-    {
-    }
-    /**
-     * @return Product
-     */
-    public function getProduct()
-    {
-    }
-    /**
-     * @param DatabaseResourceId
-     */
-    public function setResourceId(DatabaseResourceId $resourceId)
-    {
-    }
-    /**
-     * @return DatabaseResourceId
-     */
-    public function getResourceId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setResourceName($resourceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceName()
+    class Google_Service_CloudRedis_DatabaseMetadata extends \Google\Service\CloudRedis\DatabaseMetadata
     {
     }
 }

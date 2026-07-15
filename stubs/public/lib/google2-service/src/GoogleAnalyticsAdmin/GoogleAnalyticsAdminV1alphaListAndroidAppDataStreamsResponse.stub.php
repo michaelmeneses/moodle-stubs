@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaListAndroidAppDataStreamsResponse extends \Google\Collection
-{
-    protected $collection_key = 'androidAppDataStreams';
-    protected $androidAppDataStreamsType = GoogleAnalyticsAdminV1alphaAndroidAppDataStream::class;
-    protected $androidAppDataStreamsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * @param GoogleAnalyticsAdminV1alphaAndroidAppDataStream[]
-     */
-    public function setAndroidAppDataStreams($androidAppDataStreams)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaListAndroidAppDataStreamsResponse extends \Google\Collection
     {
+        protected $collection_key = 'androidAppDataStreams';
+        protected $androidAppDataStreamsType = GoogleAnalyticsAdminV1alphaAndroidAppDataStream::class;
+        protected $androidAppDataStreamsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * @param GoogleAnalyticsAdminV1alphaAndroidAppDataStream[]
+         */
+        public function setAndroidAppDataStreams($androidAppDataStreams)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaAndroidAppDataStream[]
+         */
+        public function getAndroidAppDataStreams()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAnalyticsAdminV1alphaAndroidAppDataStream[]
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaListAndroidAppDataStreamsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAndroidAppDataStreams()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaListAndroidAppDataStreamsResponse extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaListAndroidAppDataStreamsResponse
     {
     }
 }

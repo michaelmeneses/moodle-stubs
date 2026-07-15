@@ -21,97 +21,108 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting\Resource;
-
-/**
- * The "accountUserProfiles" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dfareportingService = new Google\Service\Dfareporting(...);
- *   $accountUserProfiles = $dfareportingService->accountUserProfiles;
- *  </code>
- */
-class AccountUserProfiles extends \Google\Service\Resource
-{
+namespace Google\Service\Dfareporting\Resource {
+    use Google\Service\Dfareporting\AccountUserProfile;
+    use Google\Service\Dfareporting\AccountUserProfilesListResponse;
     /**
-     * Gets one account user profile by ID. (accountUserProfiles.get)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param string $id User profile ID.
-     * @param array $optParams Optional parameters.
-     * @return AccountUserProfile
-     * @throws \Google\Service\Exception
+     * The "accountUserProfiles" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dfareportingService = new Google\Service\Dfareporting(...);
+     *   $accountUserProfiles = $dfareportingService->accountUserProfiles;
+     *  </code>
      */
-    public function get($profileId, $id, $optParams = [])
+    class AccountUserProfiles extends \Google\Service\Resource
     {
+        /**
+         * Gets one account user profile by ID. (accountUserProfiles.get)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param string $id User profile ID.
+         * @param array $optParams Optional parameters.
+         * @return AccountUserProfile
+         * @throws \Google\Service\Exception
+         */
+        public function get($profileId, $id, $optParams = [])
+        {
+        }
+        /**
+         * Inserts a new account user profile. (accountUserProfiles.insert)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param AccountUserProfile $postBody
+         * @param array $optParams Optional parameters.
+         * @return AccountUserProfile
+         * @throws \Google\Service\Exception
+         */
+        public function insert($profileId, AccountUserProfile $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves a list of account user profiles, possibly filtered. This method
+         * supports paging. (accountUserProfiles.listAccountUserProfiles)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool active Select only active user profiles.
+         * @opt_param string ids Select only user profiles with these IDs.
+         * @opt_param int maxResults Maximum number of results to return.
+         * @opt_param string pageToken Value of the nextPageToken from the previous
+         * result page.
+         * @opt_param string searchString Allows searching for objects by name, ID or
+         * email. Wildcards (*) are allowed. For example, "user profile*2015" will
+         * return objects with names like "user profile June 2015", "user profile April
+         * 2015", or simply "user profile 2015". Most of the searches also add wildcards
+         * implicitly at the start and the end of the search string. For example, a
+         * search string of "user profile" will match objects with name "my user
+         * profile", "user profile 2015", or simply "user profile".
+         * @opt_param string sortField Field by which to sort the list.
+         * @opt_param string sortOrder Order of sorted results.
+         * @opt_param string subaccountId Select only user profiles with the specified
+         * subaccount ID.
+         * @opt_param string userRoleId Select only user profiles with the specified
+         * user role ID.
+         * @return AccountUserProfilesListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listAccountUserProfiles($profileId, $optParams = [])
+        {
+        }
+        /**
+         * Updates an existing account user profile. This method supports patch
+         * semantics. (accountUserProfiles.patch)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param string $id Required. AccountUserProfile ID.
+         * @param AccountUserProfile $postBody
+         * @param array $optParams Optional parameters.
+         * @return AccountUserProfile
+         * @throws \Google\Service\Exception
+         */
+        public function patch($profileId, $id, AccountUserProfile $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Updates an existing account user profile. (accountUserProfiles.update)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param AccountUserProfile $postBody
+         * @param array $optParams Optional parameters.
+         * @return AccountUserProfile
+         * @throws \Google\Service\Exception
+         */
+        public function update($profileId, AccountUserProfile $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Inserts a new account user profile. (accountUserProfiles.insert)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param AccountUserProfile $postBody
-     * @param array $optParams Optional parameters.
-     * @return AccountUserProfile
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Dfareporting\Resource\AccountUserProfiles registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function insert($profileId, AccountUserProfile $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Retrieves a list of account user profiles, possibly filtered. This method
-     * supports paging. (accountUserProfiles.listAccountUserProfiles)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool active Select only active user profiles.
-     * @opt_param string ids Select only user profiles with these IDs.
-     * @opt_param int maxResults Maximum number of results to return.
-     * @opt_param string pageToken Value of the nextPageToken from the previous
-     * result page.
-     * @opt_param string searchString Allows searching for objects by name, ID or
-     * email. Wildcards (*) are allowed. For example, "user profile*2015" will
-     * return objects with names like "user profile June 2015", "user profile April
-     * 2015", or simply "user profile 2015". Most of the searches also add wildcards
-     * implicitly at the start and the end of the search string. For example, a
-     * search string of "user profile" will match objects with name "my user
-     * profile", "user profile 2015", or simply "user profile".
-     * @opt_param string sortField Field by which to sort the list.
-     * @opt_param string sortOrder Order of sorted results.
-     * @opt_param string subaccountId Select only user profiles with the specified
-     * subaccount ID.
-     * @opt_param string userRoleId Select only user profiles with the specified
-     * user role ID.
-     * @return AccountUserProfilesListResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listAccountUserProfiles($profileId, $optParams = [])
-    {
-    }
-    /**
-     * Updates an existing account user profile. This method supports patch
-     * semantics. (accountUserProfiles.patch)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param string $id Required. AccountUserProfile ID.
-     * @param AccountUserProfile $postBody
-     * @param array $optParams Optional parameters.
-     * @return AccountUserProfile
-     * @throws \Google\Service\Exception
-     */
-    public function patch($profileId, $id, AccountUserProfile $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Updates an existing account user profile. (accountUserProfiles.update)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param AccountUserProfile $postBody
-     * @param array $optParams Optional parameters.
-     * @return AccountUserProfile
-     * @throws \Google\Service\Exception
-     */
-    public function update($profileId, AccountUserProfile $postBody, $optParams = [])
+    class Google_Service_Dfareporting_Resource_AccountUserProfiles extends \Google\Service\Dfareporting\Resource\AccountUserProfiles
     {
     }
 }

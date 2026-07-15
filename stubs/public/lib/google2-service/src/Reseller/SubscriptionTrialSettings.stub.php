@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Reseller;
-
-class SubscriptionTrialSettings extends \Google\Model
-{
-    /**
-     * Determines if a subscription's plan is in a 30-day free trial or not: -
-     * `true` — The plan is in trial. - `false` — The plan is not in trial.
-     *
-     * @var bool
-     */
-    public $isInTrial;
-    /**
-     * Date when the trial ends. The value is in milliseconds using the UNIX Epoch
-     * format. See an example Epoch converter.
-     *
-     * @var string
-     */
-    public $trialEndTime;
-    /**
-     * Determines if a subscription's plan is in a 30-day free trial or not: -
-     * `true` — The plan is in trial. - `false` — The plan is not in trial.
-     *
-     * @param bool $isInTrial
-     */
-    public function setIsInTrial($isInTrial)
+namespace Google\Service\Reseller {
+    class SubscriptionTrialSettings extends \Google\Model
     {
+        /**
+         * Determines if a subscription's plan is in a 30-day free trial or not: -
+         * `true` — The plan is in trial. - `false` — The plan is not in trial.
+         *
+         * @var bool
+         */
+        public $isInTrial;
+        /**
+         * Date when the trial ends. The value is in milliseconds using the UNIX Epoch
+         * format. See an example Epoch converter.
+         *
+         * @var string
+         */
+        public $trialEndTime;
+        /**
+         * Determines if a subscription's plan is in a 30-day free trial or not: -
+         * `true` — The plan is in trial. - `false` — The plan is not in trial.
+         *
+         * @param bool $isInTrial
+         */
+        public function setIsInTrial($isInTrial)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsInTrial()
+        {
+        }
+        /**
+         * Date when the trial ends. The value is in milliseconds using the UNIX Epoch
+         * format. See an example Epoch converter.
+         *
+         * @param string $trialEndTime
+         */
+        public function setTrialEndTime($trialEndTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTrialEndTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Reseller\SubscriptionTrialSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIsInTrial()
-    {
-    }
-    /**
-     * Date when the trial ends. The value is in milliseconds using the UNIX Epoch
-     * format. See an example Epoch converter.
-     *
-     * @param string $trialEndTime
-     */
-    public function setTrialEndTime($trialEndTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTrialEndTime()
+    class Google_Service_Reseller_SubscriptionTrialSettings extends \Google\Service\Reseller\SubscriptionTrialSettings
     {
     }
 }

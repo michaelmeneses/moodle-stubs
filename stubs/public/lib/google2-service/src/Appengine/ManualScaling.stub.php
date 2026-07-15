@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Appengine;
-
-class ManualScaling extends \Google\Model
-{
-    /**
-     * Number of instances to assign to the service at the start. This number can
-     * later be altered by using the Modules API
-     * (https://cloud.google.com/appengine/docs/python/modules/functions)
-     * set_num_instances() function.
-     *
-     * @var int
-     */
-    public $instances;
-    /**
-     * Number of instances to assign to the service at the start. This number can
-     * later be altered by using the Modules API
-     * (https://cloud.google.com/appengine/docs/python/modules/functions)
-     * set_num_instances() function.
-     *
-     * @param int $instances
-     */
-    public function setInstances($instances)
+namespace Google\Service\Appengine {
+    class ManualScaling extends \Google\Model
     {
+        /**
+         * Number of instances to assign to the service at the start. This number can
+         * later be altered by using the Modules API
+         * (https://cloud.google.com/appengine/docs/python/modules/functions)
+         * set_num_instances() function.
+         *
+         * @var int
+         */
+        public $instances;
+        /**
+         * Number of instances to assign to the service at the start. This number can
+         * later be altered by using the Modules API
+         * (https://cloud.google.com/appengine/docs/python/modules/functions)
+         * set_num_instances() function.
+         *
+         * @param int $instances
+         */
+        public function setInstances($instances)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getInstances()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Appengine\ManualScaling registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstances()
+    class Google_Service_Appengine_ManualScaling extends \Google\Service\Appengine\ManualScaling
     {
     }
 }

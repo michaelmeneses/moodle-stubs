@@ -21,143 +21,152 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Area120Tables;
-
-class Table extends \Google\Collection
-{
-    protected $collection_key = 'savedViews';
-    protected $columnsType = ColumnDescription::class;
-    protected $columnsDataType = 'array';
-    /**
-     * Time when the table was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * The human readable title of the table.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The resource name of the table. Table names have the form `tables/{table}`.
-     *
-     * @var string
-     */
-    public $name;
-    protected $savedViewsType = SavedView::class;
-    protected $savedViewsDataType = 'array';
-    /**
-     * The time zone of the table. IANA Time Zone Database time zone, e.g.
-     * "America/New_York".
-     *
-     * @var string
-     */
-    public $timeZone;
-    /**
-     * Time when the table was last updated excluding updates to individual rows
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * List of columns in this table. Order of columns matches the display order.
-     *
-     * @param ColumnDescription[] $columns
-     */
-    public function setColumns($columns)
+namespace Google\Service\Area120Tables {
+    class Table extends \Google\Collection
     {
+        protected $collection_key = 'savedViews';
+        protected $columnsType = ColumnDescription::class;
+        protected $columnsDataType = 'array';
+        /**
+         * Time when the table was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * The human readable title of the table.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The resource name of the table. Table names have the form `tables/{table}`.
+         *
+         * @var string
+         */
+        public $name;
+        protected $savedViewsType = SavedView::class;
+        protected $savedViewsDataType = 'array';
+        /**
+         * The time zone of the table. IANA Time Zone Database time zone, e.g.
+         * "America/New_York".
+         *
+         * @var string
+         */
+        public $timeZone;
+        /**
+         * Time when the table was last updated excluding updates to individual rows
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * List of columns in this table. Order of columns matches the display order.
+         *
+         * @param ColumnDescription[] $columns
+         */
+        public function setColumns($columns)
+        {
+        }
+        /**
+         * @return ColumnDescription[]
+         */
+        public function getColumns()
+        {
+        }
+        /**
+         * Time when the table was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * The human readable title of the table.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The resource name of the table. Table names have the form `tables/{table}`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Saved views for this table.
+         *
+         * @param SavedView[] $savedViews
+         */
+        public function setSavedViews($savedViews)
+        {
+        }
+        /**
+         * @return SavedView[]
+         */
+        public function getSavedViews()
+        {
+        }
+        /**
+         * The time zone of the table. IANA Time Zone Database time zone, e.g.
+         * "America/New_York".
+         *
+         * @param string $timeZone
+         */
+        public function setTimeZone($timeZone)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimeZone()
+        {
+        }
+        /**
+         * Time when the table was last updated excluding updates to individual rows
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ColumnDescription[]
+     * Runtime class alias of \Google\Service\Area120Tables\Table registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumns()
-    {
-    }
-    /**
-     * Time when the table was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * The human readable title of the table.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The resource name of the table. Table names have the form `tables/{table}`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Saved views for this table.
-     *
-     * @param SavedView[] $savedViews
-     */
-    public function setSavedViews($savedViews)
-    {
-    }
-    /**
-     * @return SavedView[]
-     */
-    public function getSavedViews()
-    {
-    }
-    /**
-     * The time zone of the table. IANA Time Zone Database time zone, e.g.
-     * "America/New_York".
-     *
-     * @param string $timeZone
-     */
-    public function setTimeZone($timeZone)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimeZone()
-    {
-    }
-    /**
-     * Time when the table was last updated excluding updates to individual rows
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_Area120Tables_Table extends \Google\Service\Area120Tables\Table
     {
     }
 }

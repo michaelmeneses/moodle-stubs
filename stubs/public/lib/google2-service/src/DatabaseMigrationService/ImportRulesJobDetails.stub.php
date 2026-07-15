@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class ImportRulesJobDetails extends \Google\Collection
-{
-    /**
-     * Unspecified rules format.
-     */
-    public const FILE_FORMAT_IMPORT_RULES_FILE_FORMAT_UNSPECIFIED = 'IMPORT_RULES_FILE_FORMAT_UNSPECIFIED';
-    /**
-     * HarbourBridge session file.
-     */
-    public const FILE_FORMAT_IMPORT_RULES_FILE_FORMAT_HARBOUR_BRIDGE_SESSION_FILE = 'IMPORT_RULES_FILE_FORMAT_HARBOUR_BRIDGE_SESSION_FILE';
-    /**
-     * Ora2Pg configuration file.
-     */
-    public const FILE_FORMAT_IMPORT_RULES_FILE_FORMAT_ORATOPG_CONFIG_FILE = 'IMPORT_RULES_FILE_FORMAT_ORATOPG_CONFIG_FILE';
-    protected $collection_key = 'files';
-    /**
-     * Output only. The requested file format.
-     *
-     * @var string
-     */
-    public $fileFormat;
-    /**
-     * Output only. File names used for the import rules job.
-     *
-     * @var string[]
-     */
-    public $files;
-    /**
-     * Output only. The requested file format.
-     *
-     * Accepted values: IMPORT_RULES_FILE_FORMAT_UNSPECIFIED,
-     * IMPORT_RULES_FILE_FORMAT_HARBOUR_BRIDGE_SESSION_FILE,
-     * IMPORT_RULES_FILE_FORMAT_ORATOPG_CONFIG_FILE
-     *
-     * @param self::FILE_FORMAT_* $fileFormat
-     */
-    public function setFileFormat($fileFormat)
+namespace Google\Service\DatabaseMigrationService {
+    class ImportRulesJobDetails extends \Google\Collection
     {
+        /**
+         * Unspecified rules format.
+         */
+        public const FILE_FORMAT_IMPORT_RULES_FILE_FORMAT_UNSPECIFIED = 'IMPORT_RULES_FILE_FORMAT_UNSPECIFIED';
+        /**
+         * HarbourBridge session file.
+         */
+        public const FILE_FORMAT_IMPORT_RULES_FILE_FORMAT_HARBOUR_BRIDGE_SESSION_FILE = 'IMPORT_RULES_FILE_FORMAT_HARBOUR_BRIDGE_SESSION_FILE';
+        /**
+         * Ora2Pg configuration file.
+         */
+        public const FILE_FORMAT_IMPORT_RULES_FILE_FORMAT_ORATOPG_CONFIG_FILE = 'IMPORT_RULES_FILE_FORMAT_ORATOPG_CONFIG_FILE';
+        protected $collection_key = 'files';
+        /**
+         * Output only. The requested file format.
+         *
+         * @var string
+         */
+        public $fileFormat;
+        /**
+         * Output only. File names used for the import rules job.
+         *
+         * @var string[]
+         */
+        public $files;
+        /**
+         * Output only. The requested file format.
+         *
+         * Accepted values: IMPORT_RULES_FILE_FORMAT_UNSPECIFIED,
+         * IMPORT_RULES_FILE_FORMAT_HARBOUR_BRIDGE_SESSION_FILE,
+         * IMPORT_RULES_FILE_FORMAT_ORATOPG_CONFIG_FILE
+         *
+         * @param self::FILE_FORMAT_* $fileFormat
+         */
+        public function setFileFormat($fileFormat)
+        {
+        }
+        /**
+         * @return self::FILE_FORMAT_*
+         */
+        public function getFileFormat()
+        {
+        }
+        /**
+         * Output only. File names used for the import rules job.
+         *
+         * @param string[] $files
+         */
+        public function setFiles($files)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getFiles()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::FILE_FORMAT_*
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\ImportRulesJobDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFileFormat()
-    {
-    }
-    /**
-     * Output only. File names used for the import rules job.
-     *
-     * @param string[] $files
-     */
-    public function setFiles($files)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getFiles()
+    class Google_Service_DatabaseMigrationService_ImportRulesJobDetails extends \Google\Service\DatabaseMigrationService\ImportRulesJobDetails
     {
     }
 }

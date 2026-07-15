@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class TextSpan extends \Google\Model
-{
-    /**
-     * The unicode codepoint index of the beginning of this span.
-     *
-     * @var int
-     */
-    public $beginOffset;
-    /**
-     * The original text contained in this span.
-     *
-     * @var string
-     */
-    public $content;
-    /**
-     * The unicode codepoint index of the beginning of this span.
-     *
-     * @param int $beginOffset
-     */
-    public function setBeginOffset($beginOffset)
+namespace Google\Service\CloudHealthcare {
+    class TextSpan extends \Google\Model
     {
+        /**
+         * The unicode codepoint index of the beginning of this span.
+         *
+         * @var int
+         */
+        public $beginOffset;
+        /**
+         * The original text contained in this span.
+         *
+         * @var string
+         */
+        public $content;
+        /**
+         * The unicode codepoint index of the beginning of this span.
+         *
+         * @param int $beginOffset
+         */
+        public function setBeginOffset($beginOffset)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getBeginOffset()
+        {
+        }
+        /**
+         * The original text contained in this span.
+         *
+         * @param string $content
+         */
+        public function setContent($content)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudHealthcare\TextSpan registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBeginOffset()
-    {
-    }
-    /**
-     * The original text contained in this span.
-     *
-     * @param string $content
-     */
-    public function setContent($content)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContent()
+    class Google_Service_CloudHealthcare_TextSpan extends \Google\Service\CloudHealthcare\TextSpan
     {
     }
 }

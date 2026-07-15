@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaListAccountSummariesResponse extends \Google\Collection
-{
-    protected $collection_key = 'accountSummaries';
-    protected $accountSummariesType = GoogleAnalyticsAdminV1alphaAccountSummary::class;
-    protected $accountSummariesDataType = 'array';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * @param GoogleAnalyticsAdminV1alphaAccountSummary[]
-     */
-    public function setAccountSummaries($accountSummaries)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaListAccountSummariesResponse extends \Google\Collection
     {
+        protected $collection_key = 'accountSummaries';
+        protected $accountSummariesType = GoogleAnalyticsAdminV1alphaAccountSummary::class;
+        protected $accountSummariesDataType = 'array';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * @param GoogleAnalyticsAdminV1alphaAccountSummary[]
+         */
+        public function setAccountSummaries($accountSummaries)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaAccountSummary[]
+         */
+        public function getAccountSummaries()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAnalyticsAdminV1alphaAccountSummary[]
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaListAccountSummariesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountSummaries()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaListAccountSummariesResponse extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaListAccountSummariesResponse
     {
     }
 }

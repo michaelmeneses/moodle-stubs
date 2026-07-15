@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class AccountShippingImprovements extends \Google\Model
-{
-    /**
-     * Enables automatic shipping improvements.
-     *
-     * @var bool
-     */
-    public $allowShippingImprovements;
-    /**
-     * Enables automatic shipping improvements.
-     *
-     * @param bool $allowShippingImprovements
-     */
-    public function setAllowShippingImprovements($allowShippingImprovements)
+namespace Google\Service\ShoppingContent {
+    class AccountShippingImprovements extends \Google\Model
     {
+        /**
+         * Enables automatic shipping improvements.
+         *
+         * @var bool
+         */
+        public $allowShippingImprovements;
+        /**
+         * Enables automatic shipping improvements.
+         *
+         * @param bool $allowShippingImprovements
+         */
+        public function setAllowShippingImprovements($allowShippingImprovements)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAllowShippingImprovements()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\ShoppingContent\AccountShippingImprovements registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowShippingImprovements()
+    class Google_Service_ShoppingContent_AccountShippingImprovements extends \Google\Service\ShoppingContent\AccountShippingImprovements
     {
     }
 }

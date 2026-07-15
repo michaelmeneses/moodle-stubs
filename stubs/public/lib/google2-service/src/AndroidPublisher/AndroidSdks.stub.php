@@ -21,33 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class AndroidSdks extends \Google\Collection
-{
-    protected $collection_key = 'sdkLevels';
-    /**
-     * Android api levels of devices targeted by recovery action. See
-     * https://developer.android.com/guide/topics/manifest/uses-sdk-
-     * element#ApiLevels for different api levels in android.
-     *
-     * @var string[]
-     */
-    public $sdkLevels;
-    /**
-     * Android api levels of devices targeted by recovery action. See
-     * https://developer.android.com/guide/topics/manifest/uses-sdk-
-     * element#ApiLevels for different api levels in android.
-     *
-     * @param string[] $sdkLevels
-     */
-    public function setSdkLevels($sdkLevels)
+namespace Google\Service\AndroidPublisher {
+    class AndroidSdks extends \Google\Collection
     {
+        protected $collection_key = 'sdkLevels';
+        /**
+         * Android api levels of devices targeted by recovery action. See
+         * https://developer.android.com/guide/topics/manifest/uses-sdk-
+         * element#ApiLevels for different api levels in android.
+         *
+         * @var string[]
+         */
+        public $sdkLevels;
+        /**
+         * Android api levels of devices targeted by recovery action. See
+         * https://developer.android.com/guide/topics/manifest/uses-sdk-
+         * element#ApiLevels for different api levels in android.
+         *
+         * @param string[] $sdkLevels
+         */
+        public function setSdkLevels($sdkLevels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSdkLevels()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\AndroidPublisher\AndroidSdks registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSdkLevels()
+    class Google_Service_AndroidPublisher_AndroidSdks extends \Google\Service\AndroidPublisher\AndroidSdks
     {
     }
 }

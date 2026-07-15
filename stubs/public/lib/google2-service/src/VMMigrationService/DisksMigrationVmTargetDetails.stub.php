@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMMigrationService;
-
-class DisksMigrationVmTargetDetails extends \Google\Model
-{
-    /**
-     * Output only. The URI of the Compute Engine VM.
-     *
-     * @var string
-     */
-    public $vmUri;
-    /**
-     * Output only. The URI of the Compute Engine VM.
-     *
-     * @param string $vmUri
-     */
-    public function setVmUri($vmUri)
+namespace Google\Service\VMMigrationService {
+    class DisksMigrationVmTargetDetails extends \Google\Model
     {
+        /**
+         * Output only. The URI of the Compute Engine VM.
+         *
+         * @var string
+         */
+        public $vmUri;
+        /**
+         * Output only. The URI of the Compute Engine VM.
+         *
+         * @param string $vmUri
+         */
+        public function setVmUri($vmUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVmUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\VMMigrationService\DisksMigrationVmTargetDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getVmUri()
+    class Google_Service_VMMigrationService_DisksMigrationVmTargetDetails extends \Google\Service\VMMigrationService\DisksMigrationVmTargetDetails
     {
     }
 }

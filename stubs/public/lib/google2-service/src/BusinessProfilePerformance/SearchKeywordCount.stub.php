@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BusinessProfilePerformance;
-
-class SearchKeywordCount extends \Google\Model
-{
-    protected $insightsValueType = InsightsValue::class;
-    protected $insightsValueDataType = '';
-    /**
-     * The lower-cased string that the user entered.
-     *
-     * @var string
-     */
-    public $searchKeyword;
-    /**
-     * One of either: 1) The sum of the number of unique users that used the
-     * keyword in a month, aggregated for each month requested. 2) A threshold
-     * that indicates that the actual value is below this threshold.
-     *
-     * @param InsightsValue $insightsValue
-     */
-    public function setInsightsValue(InsightsValue $insightsValue)
+namespace Google\Service\BusinessProfilePerformance {
+    class SearchKeywordCount extends \Google\Model
     {
+        protected $insightsValueType = InsightsValue::class;
+        protected $insightsValueDataType = '';
+        /**
+         * The lower-cased string that the user entered.
+         *
+         * @var string
+         */
+        public $searchKeyword;
+        /**
+         * One of either: 1) The sum of the number of unique users that used the
+         * keyword in a month, aggregated for each month requested. 2) A threshold
+         * that indicates that the actual value is below this threshold.
+         *
+         * @param InsightsValue $insightsValue
+         */
+        public function setInsightsValue(InsightsValue $insightsValue)
+        {
+        }
+        /**
+         * @return InsightsValue
+         */
+        public function getInsightsValue()
+        {
+        }
+        /**
+         * The lower-cased string that the user entered.
+         *
+         * @param string $searchKeyword
+         */
+        public function setSearchKeyword($searchKeyword)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSearchKeyword()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InsightsValue
+     * Runtime class alias of \Google\Service\BusinessProfilePerformance\SearchKeywordCount registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInsightsValue()
-    {
-    }
-    /**
-     * The lower-cased string that the user entered.
-     *
-     * @param string $searchKeyword
-     */
-    public function setSearchKeyword($searchKeyword)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSearchKeyword()
+    class Google_Service_BusinessProfilePerformance_SearchKeywordCount extends \Google\Service\BusinessProfilePerformance\SearchKeywordCount
     {
     }
 }

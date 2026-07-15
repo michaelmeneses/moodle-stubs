@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsReporting;
-
-class SegmentFilter extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $not;
-    protected $sequenceSegmentType = SequenceSegment::class;
-    protected $sequenceSegmentDataType = '';
-    protected $simpleSegmentType = SimpleSegment::class;
-    protected $simpleSegmentDataType = '';
-    /**
-     * @param bool
-     */
-    public function setNot($not)
+namespace Google\Service\AnalyticsReporting {
+    class SegmentFilter extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $not;
+        protected $sequenceSegmentType = SequenceSegment::class;
+        protected $sequenceSegmentDataType = '';
+        protected $simpleSegmentType = SimpleSegment::class;
+        protected $simpleSegmentDataType = '';
+        /**
+         * @param bool
+         */
+        public function setNot($not)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getNot()
+        {
+        }
+        /**
+         * @param SequenceSegment
+         */
+        public function setSequenceSegment(SequenceSegment $sequenceSegment)
+        {
+        }
+        /**
+         * @return SequenceSegment
+         */
+        public function getSequenceSegment()
+        {
+        }
+        /**
+         * @param SimpleSegment
+         */
+        public function setSimpleSegment(SimpleSegment $simpleSegment)
+        {
+        }
+        /**
+         * @return SimpleSegment
+         */
+        public function getSimpleSegment()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\AnalyticsReporting\SegmentFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNot()
-    {
-    }
-    /**
-     * @param SequenceSegment
-     */
-    public function setSequenceSegment(SequenceSegment $sequenceSegment)
-    {
-    }
-    /**
-     * @return SequenceSegment
-     */
-    public function getSequenceSegment()
-    {
-    }
-    /**
-     * @param SimpleSegment
-     */
-    public function setSimpleSegment(SimpleSegment $simpleSegment)
-    {
-    }
-    /**
-     * @return SimpleSegment
-     */
-    public function getSimpleSegment()
+    class Google_Service_AnalyticsReporting_SegmentFilter extends \Google\Service\AnalyticsReporting\SegmentFilter
     {
     }
 }

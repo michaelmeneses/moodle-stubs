@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResult extends \Google\Model
-{
-    protected $chunkInfoType = GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResultChunkInfo::class;
-    protected $chunkInfoDataType = '';
-    protected $unstructuredDocumentInfoType = GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResultUnstructuredDocumentInfo::class;
-    protected $unstructuredDocumentInfoDataType = '';
-    /**
-     * Chunk information.
-     *
-     * @param GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResultChunkInfo $chunkInfo
-     */
-    public function setChunkInfo(GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResultChunkInfo $chunkInfo)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResult extends \Google\Model
     {
+        protected $chunkInfoType = GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResultChunkInfo::class;
+        protected $chunkInfoDataType = '';
+        protected $unstructuredDocumentInfoType = GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResultUnstructuredDocumentInfo::class;
+        protected $unstructuredDocumentInfoDataType = '';
+        /**
+         * Chunk information.
+         *
+         * @param GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResultChunkInfo $chunkInfo
+         */
+        public function setChunkInfo(GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResultChunkInfo $chunkInfo)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResultChunkInfo
+         */
+        public function getChunkInfo()
+        {
+        }
+        /**
+         * Unstructured document information.
+         *
+         * @param GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResultUnstructuredDocumentInfo $unstructuredDocumentInfo
+         */
+        public function setUnstructuredDocumentInfo(GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResultUnstructuredDocumentInfo $unstructuredDocumentInfo)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResultUnstructuredDocumentInfo
+         */
+        public function getUnstructuredDocumentInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResultChunkInfo
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChunkInfo()
-    {
-    }
-    /**
-     * Unstructured document information.
-     *
-     * @param GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResultUnstructuredDocumentInfo $unstructuredDocumentInfo
-     */
-    public function setUnstructuredDocumentInfo(GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResultUnstructuredDocumentInfo $unstructuredDocumentInfo)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResultUnstructuredDocumentInfo
-     */
-    public function getUnstructuredDocumentInfo()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResult extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AnswerQueryRequestSearchSpecSearchResultListSearchResult
     {
     }
 }

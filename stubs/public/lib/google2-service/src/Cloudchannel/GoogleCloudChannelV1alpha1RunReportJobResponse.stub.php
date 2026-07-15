@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1alpha1RunReportJobResponse extends \Google\Model
-{
-    protected $reportJobType = GoogleCloudChannelV1alpha1ReportJob::class;
-    protected $reportJobDataType = '';
-    protected $reportMetadataType = GoogleCloudChannelV1alpha1ReportResultsMetadata::class;
-    protected $reportMetadataDataType = '';
-    /**
-     * Pass `report_job.name` to FetchReportResultsRequest.report_job to retrieve
-     * the report's results.
-     *
-     * @param GoogleCloudChannelV1alpha1ReportJob $reportJob
-     */
-    public function setReportJob(GoogleCloudChannelV1alpha1ReportJob $reportJob)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1alpha1RunReportJobResponse extends \Google\Model
     {
+        protected $reportJobType = GoogleCloudChannelV1alpha1ReportJob::class;
+        protected $reportJobDataType = '';
+        protected $reportMetadataType = GoogleCloudChannelV1alpha1ReportResultsMetadata::class;
+        protected $reportMetadataDataType = '';
+        /**
+         * Pass `report_job.name` to FetchReportResultsRequest.report_job to retrieve
+         * the report's results.
+         *
+         * @param GoogleCloudChannelV1alpha1ReportJob $reportJob
+         */
+        public function setReportJob(GoogleCloudChannelV1alpha1ReportJob $reportJob)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1alpha1ReportJob
+         */
+        public function getReportJob()
+        {
+        }
+        /**
+         * The metadata for the report's results (display name, columns, row count,
+         * and date range). If you view this before the operation finishes, you may
+         * see incomplete data.
+         *
+         * @param GoogleCloudChannelV1alpha1ReportResultsMetadata $reportMetadata
+         */
+        public function setReportMetadata(GoogleCloudChannelV1alpha1ReportResultsMetadata $reportMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1alpha1ReportResultsMetadata
+         */
+        public function getReportMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudChannelV1alpha1ReportJob
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1alpha1RunReportJobResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReportJob()
-    {
-    }
-    /**
-     * The metadata for the report's results (display name, columns, row count,
-     * and date range). If you view this before the operation finishes, you may
-     * see incomplete data.
-     *
-     * @param GoogleCloudChannelV1alpha1ReportResultsMetadata $reportMetadata
-     */
-    public function setReportMetadata(GoogleCloudChannelV1alpha1ReportResultsMetadata $reportMetadata)
-    {
-    }
-    /**
-     * @return GoogleCloudChannelV1alpha1ReportResultsMetadata
-     */
-    public function getReportMetadata()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1alpha1RunReportJobResponse extends \Google\Service\Cloudchannel\GoogleCloudChannelV1alpha1RunReportJobResponse
     {
     }
 }

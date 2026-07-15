@@ -21,131 +21,140 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InterconnectDiagnostics extends \Google\Collection
-{
-    /**
-     * LACP is enabled.
-     */
-    public const BUNDLE_AGGREGATION_TYPE_BUNDLE_AGGREGATION_TYPE_LACP = 'BUNDLE_AGGREGATION_TYPE_LACP';
-    /**
-     * LACP is disabled.
-     */
-    public const BUNDLE_AGGREGATION_TYPE_BUNDLE_AGGREGATION_TYPE_STATIC = 'BUNDLE_AGGREGATION_TYPE_STATIC';
-    /**
-     * If bundleAggregationType is LACP: LACP is not established and/or all links
-     * in the bundle have DOWN operational status. If bundleAggregationType is
-     * STATIC: one or more links in the bundle has DOWN operational status.
-     */
-    public const BUNDLE_OPERATIONAL_STATUS_BUNDLE_OPERATIONAL_STATUS_DOWN = 'BUNDLE_OPERATIONAL_STATUS_DOWN';
-    /**
-     * If bundleAggregationType is LACP: LACP is established and at least one link
-     * in the bundle has UP operational status. If bundleAggregationType is
-     * STATIC: all links in the bundle (typically just one) have UP operational
-     * status.
-     */
-    public const BUNDLE_OPERATIONAL_STATUS_BUNDLE_OPERATIONAL_STATUS_UP = 'BUNDLE_OPERATIONAL_STATUS_UP';
-    protected $collection_key = 'links';
-    protected $arpCachesType = InterconnectDiagnosticsARPEntry::class;
-    protected $arpCachesDataType = 'array';
-    /**
-     * The aggregation type of the bundle interface.
-     *
-     * @var string
-     */
-    public $bundleAggregationType;
-    /**
-     * The operational status of the bundle interface.
-     *
-     * @var string
-     */
-    public $bundleOperationalStatus;
-    protected $linksType = InterconnectDiagnosticsLinkStatus::class;
-    protected $linksDataType = 'array';
-    /**
-     * The MAC address of the Interconnect's bundle interface.
-     *
-     * @var string
-     */
-    public $macAddress;
-    /**
-     * A list of InterconnectDiagnostics.ARPEntry objects, describing individual
-     * neighbors currently seen by the Google router in the ARP cache for the
-     * Interconnect. This will be empty when the Interconnect is not bundled.
-     *
-     * @param InterconnectDiagnosticsARPEntry[] $arpCaches
-     */
-    public function setArpCaches($arpCaches)
+namespace Google\Service\Compute {
+    class InterconnectDiagnostics extends \Google\Collection
     {
+        /**
+         * LACP is enabled.
+         */
+        public const BUNDLE_AGGREGATION_TYPE_BUNDLE_AGGREGATION_TYPE_LACP = 'BUNDLE_AGGREGATION_TYPE_LACP';
+        /**
+         * LACP is disabled.
+         */
+        public const BUNDLE_AGGREGATION_TYPE_BUNDLE_AGGREGATION_TYPE_STATIC = 'BUNDLE_AGGREGATION_TYPE_STATIC';
+        /**
+         * If bundleAggregationType is LACP: LACP is not established and/or all links
+         * in the bundle have DOWN operational status. If bundleAggregationType is
+         * STATIC: one or more links in the bundle has DOWN operational status.
+         */
+        public const BUNDLE_OPERATIONAL_STATUS_BUNDLE_OPERATIONAL_STATUS_DOWN = 'BUNDLE_OPERATIONAL_STATUS_DOWN';
+        /**
+         * If bundleAggregationType is LACP: LACP is established and at least one link
+         * in the bundle has UP operational status. If bundleAggregationType is
+         * STATIC: all links in the bundle (typically just one) have UP operational
+         * status.
+         */
+        public const BUNDLE_OPERATIONAL_STATUS_BUNDLE_OPERATIONAL_STATUS_UP = 'BUNDLE_OPERATIONAL_STATUS_UP';
+        protected $collection_key = 'links';
+        protected $arpCachesType = InterconnectDiagnosticsARPEntry::class;
+        protected $arpCachesDataType = 'array';
+        /**
+         * The aggregation type of the bundle interface.
+         *
+         * @var string
+         */
+        public $bundleAggregationType;
+        /**
+         * The operational status of the bundle interface.
+         *
+         * @var string
+         */
+        public $bundleOperationalStatus;
+        protected $linksType = InterconnectDiagnosticsLinkStatus::class;
+        protected $linksDataType = 'array';
+        /**
+         * The MAC address of the Interconnect's bundle interface.
+         *
+         * @var string
+         */
+        public $macAddress;
+        /**
+         * A list of InterconnectDiagnostics.ARPEntry objects, describing individual
+         * neighbors currently seen by the Google router in the ARP cache for the
+         * Interconnect. This will be empty when the Interconnect is not bundled.
+         *
+         * @param InterconnectDiagnosticsARPEntry[] $arpCaches
+         */
+        public function setArpCaches($arpCaches)
+        {
+        }
+        /**
+         * @return InterconnectDiagnosticsARPEntry[]
+         */
+        public function getArpCaches()
+        {
+        }
+        /**
+         * The aggregation type of the bundle interface.
+         *
+         * Accepted values: BUNDLE_AGGREGATION_TYPE_LACP,
+         * BUNDLE_AGGREGATION_TYPE_STATIC
+         *
+         * @param self::BUNDLE_AGGREGATION_TYPE_* $bundleAggregationType
+         */
+        public function setBundleAggregationType($bundleAggregationType)
+        {
+        }
+        /**
+         * @return self::BUNDLE_AGGREGATION_TYPE_*
+         */
+        public function getBundleAggregationType()
+        {
+        }
+        /**
+         * The operational status of the bundle interface.
+         *
+         * Accepted values: BUNDLE_OPERATIONAL_STATUS_DOWN,
+         * BUNDLE_OPERATIONAL_STATUS_UP
+         *
+         * @param self::BUNDLE_OPERATIONAL_STATUS_* $bundleOperationalStatus
+         */
+        public function setBundleOperationalStatus($bundleOperationalStatus)
+        {
+        }
+        /**
+         * @return self::BUNDLE_OPERATIONAL_STATUS_*
+         */
+        public function getBundleOperationalStatus()
+        {
+        }
+        /**
+         * A list of InterconnectDiagnostics.LinkStatus objects, describing the status
+         * for each link on the Interconnect.
+         *
+         * @param InterconnectDiagnosticsLinkStatus[] $links
+         */
+        public function setLinks($links)
+        {
+        }
+        /**
+         * @return InterconnectDiagnosticsLinkStatus[]
+         */
+        public function getLinks()
+        {
+        }
+        /**
+         * The MAC address of the Interconnect's bundle interface.
+         *
+         * @param string $macAddress
+         */
+        public function setMacAddress($macAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMacAddress()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InterconnectDiagnosticsARPEntry[]
+     * Runtime class alias of \Google\Service\Compute\InterconnectDiagnostics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArpCaches()
-    {
-    }
-    /**
-     * The aggregation type of the bundle interface.
-     *
-     * Accepted values: BUNDLE_AGGREGATION_TYPE_LACP,
-     * BUNDLE_AGGREGATION_TYPE_STATIC
-     *
-     * @param self::BUNDLE_AGGREGATION_TYPE_* $bundleAggregationType
-     */
-    public function setBundleAggregationType($bundleAggregationType)
-    {
-    }
-    /**
-     * @return self::BUNDLE_AGGREGATION_TYPE_*
-     */
-    public function getBundleAggregationType()
-    {
-    }
-    /**
-     * The operational status of the bundle interface.
-     *
-     * Accepted values: BUNDLE_OPERATIONAL_STATUS_DOWN,
-     * BUNDLE_OPERATIONAL_STATUS_UP
-     *
-     * @param self::BUNDLE_OPERATIONAL_STATUS_* $bundleOperationalStatus
-     */
-    public function setBundleOperationalStatus($bundleOperationalStatus)
-    {
-    }
-    /**
-     * @return self::BUNDLE_OPERATIONAL_STATUS_*
-     */
-    public function getBundleOperationalStatus()
-    {
-    }
-    /**
-     * A list of InterconnectDiagnostics.LinkStatus objects, describing the status
-     * for each link on the Interconnect.
-     *
-     * @param InterconnectDiagnosticsLinkStatus[] $links
-     */
-    public function setLinks($links)
-    {
-    }
-    /**
-     * @return InterconnectDiagnosticsLinkStatus[]
-     */
-    public function getLinks()
-    {
-    }
-    /**
-     * The MAC address of the Interconnect's bundle interface.
-     *
-     * @param string $macAddress
-     */
-    public function setMacAddress($macAddress)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMacAddress()
+    class Google_Service_Compute_InterconnectDiagnostics extends \Google\Service\Compute\InterconnectDiagnostics
     {
     }
 }

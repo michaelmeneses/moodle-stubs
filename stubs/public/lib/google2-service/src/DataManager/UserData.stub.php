@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataManager;
-
-class UserData extends \Google\Collection
-{
-    protected $collection_key = 'userIdentifiers';
-    protected $userIdentifiersType = UserIdentifier::class;
-    protected $userIdentifiersDataType = 'array';
-    /**
-     * Required. The identifiers for the user. It's possible to provide multiple
-     * instances of the same type of data (for example, multiple email addresses).
-     * To increase the likelihood of a match, provide as many identifiers as
-     * possible. At most 10 `userIdentifiers` can be provided in a single
-     * AudienceMember or Event.
-     *
-     * @param UserIdentifier[] $userIdentifiers
-     */
-    public function setUserIdentifiers($userIdentifiers)
+namespace Google\Service\DataManager {
+    class UserData extends \Google\Collection
     {
+        protected $collection_key = 'userIdentifiers';
+        protected $userIdentifiersType = UserIdentifier::class;
+        protected $userIdentifiersDataType = 'array';
+        /**
+         * Required. The identifiers for the user. It's possible to provide multiple
+         * instances of the same type of data (for example, multiple email addresses).
+         * To increase the likelihood of a match, provide as many identifiers as
+         * possible. At most 10 `userIdentifiers` can be provided in a single
+         * AudienceMember or Event.
+         *
+         * @param UserIdentifier[] $userIdentifiers
+         */
+        public function setUserIdentifiers($userIdentifiers)
+        {
+        }
+        /**
+         * @return UserIdentifier[]
+         */
+        public function getUserIdentifiers()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return UserIdentifier[]
+     * Runtime class alias of \Google\Service\DataManager\UserData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUserIdentifiers()
+    class Google_Service_DataManager_UserData extends \Google\Service\DataManager\UserData
     {
     }
 }

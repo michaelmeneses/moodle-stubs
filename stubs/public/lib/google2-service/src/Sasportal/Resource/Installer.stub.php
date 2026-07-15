@@ -21,40 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sasportal\Resource;
-
-/**
- * The "installer" collection of methods.
- * Typical usage is:
- *  <code>
- *   $sasportalService = new Google\Service\Sasportal(...);
- *   $installer = $sasportalService->installer;
- *  </code>
- */
-class Installer extends \Google\Service\Resource
-{
+namespace Google\Service\Sasportal\Resource {
+    use Google\Service\Sasportal\SasPortalGenerateSecretRequest;
+    use Google\Service\Sasportal\SasPortalGenerateSecretResponse;
+    use Google\Service\Sasportal\SasPortalValidateInstallerRequest;
+    use Google\Service\Sasportal\SasPortalValidateInstallerResponse;
     /**
-     * Generates a secret to be used with the ValidateInstaller.
-     * (installer.generateSecret)
-     *
-     * @param SasPortalGenerateSecretRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return SasPortalGenerateSecretResponse
-     * @throws \Google\Service\Exception
+     * The "installer" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $sasportalService = new Google\Service\Sasportal(...);
+     *   $installer = $sasportalService->installer;
+     *  </code>
      */
-    public function generateSecret(SasPortalGenerateSecretRequest $postBody, $optParams = [])
+    class Installer extends \Google\Service\Resource
     {
+        /**
+         * Generates a secret to be used with the ValidateInstaller.
+         * (installer.generateSecret)
+         *
+         * @param SasPortalGenerateSecretRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return SasPortalGenerateSecretResponse
+         * @throws \Google\Service\Exception
+         */
+        public function generateSecret(SasPortalGenerateSecretRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Validates the identity of a Certified Professional Installer (CPI).
+         * (installer.validate)
+         *
+         * @param SasPortalValidateInstallerRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return SasPortalValidateInstallerResponse
+         * @throws \Google\Service\Exception
+         */
+        public function validate(SasPortalValidateInstallerRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Validates the identity of a Certified Professional Installer (CPI).
-     * (installer.validate)
-     *
-     * @param SasPortalValidateInstallerRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return SasPortalValidateInstallerResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Sasportal\Resource\Installer registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function validate(SasPortalValidateInstallerRequest $postBody, $optParams = [])
+    class Google_Service_Sasportal_Resource_Installer extends \Google\Service\Sasportal\Resource\Installer
     {
     }
 }

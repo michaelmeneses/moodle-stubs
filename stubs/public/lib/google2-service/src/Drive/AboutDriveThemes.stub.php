@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Drive;
-
-class AboutDriveThemes extends \Google\Model
-{
-    /**
-     * A link to this theme's background image.
-     *
-     * @var string
-     */
-    public $backgroundImageLink;
-    /**
-     * The color of this theme as an RGB hex string.
-     *
-     * @var string
-     */
-    public $colorRgb;
-    /**
-     * The ID of the theme.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * A link to this theme's background image.
-     *
-     * @param string $backgroundImageLink
-     */
-    public function setBackgroundImageLink($backgroundImageLink)
+namespace Google\Service\Drive {
+    class AboutDriveThemes extends \Google\Model
     {
+        /**
+         * A link to this theme's background image.
+         *
+         * @var string
+         */
+        public $backgroundImageLink;
+        /**
+         * The color of this theme as an RGB hex string.
+         *
+         * @var string
+         */
+        public $colorRgb;
+        /**
+         * The ID of the theme.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * A link to this theme's background image.
+         *
+         * @param string $backgroundImageLink
+         */
+        public function setBackgroundImageLink($backgroundImageLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBackgroundImageLink()
+        {
+        }
+        /**
+         * The color of this theme as an RGB hex string.
+         *
+         * @param string $colorRgb
+         */
+        public function setColorRgb($colorRgb)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getColorRgb()
+        {
+        }
+        /**
+         * The ID of the theme.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Drive\AboutDriveThemes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackgroundImageLink()
-    {
-    }
-    /**
-     * The color of this theme as an RGB hex string.
-     *
-     * @param string $colorRgb
-     */
-    public function setColorRgb($colorRgb)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getColorRgb()
-    {
-    }
-    /**
-     * The ID of the theme.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
+    class Google_Service_Drive_AboutDriveThemes extends \Google\Service\Drive\AboutDriveThemes
     {
     }
 }

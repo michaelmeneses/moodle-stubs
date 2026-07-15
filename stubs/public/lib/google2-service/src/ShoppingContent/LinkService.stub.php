@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class LinkService extends \Google\Model
-{
-    /**
-     * Service provided to or by the linked account. Acceptable values are: -
-     * "`shoppingActionsOrderManagement`" - "`shoppingActionsProductManagement`" -
-     * "`shoppingAdsProductManagement`" - "`paymentProcessing`"
-     *
-     * @var string
-     */
-    public $service;
-    /**
-     * Status of the link Acceptable values are: - "`active`" - "`inactive`" -
-     * "`pending`"
-     *
-     * @var string
-     */
-    public $status;
-    /**
-     * Service provided to or by the linked account. Acceptable values are: -
-     * "`shoppingActionsOrderManagement`" - "`shoppingActionsProductManagement`" -
-     * "`shoppingAdsProductManagement`" - "`paymentProcessing`"
-     *
-     * @param string $service
-     */
-    public function setService($service)
+namespace Google\Service\ShoppingContent {
+    class LinkService extends \Google\Model
     {
+        /**
+         * Service provided to or by the linked account. Acceptable values are: -
+         * "`shoppingActionsOrderManagement`" - "`shoppingActionsProductManagement`" -
+         * "`shoppingAdsProductManagement`" - "`paymentProcessing`"
+         *
+         * @var string
+         */
+        public $service;
+        /**
+         * Status of the link Acceptable values are: - "`active`" - "`inactive`" -
+         * "`pending`"
+         *
+         * @var string
+         */
+        public $status;
+        /**
+         * Service provided to or by the linked account. Acceptable values are: -
+         * "`shoppingActionsOrderManagement`" - "`shoppingActionsProductManagement`" -
+         * "`shoppingAdsProductManagement`" - "`paymentProcessing`"
+         *
+         * @param string $service
+         */
+        public function setService($service)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getService()
+        {
+        }
+        /**
+         * Status of the link Acceptable values are: - "`active`" - "`inactive`" -
+         * "`pending`"
+         *
+         * @param string $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\LinkService registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getService()
-    {
-    }
-    /**
-     * Status of the link Acceptable values are: - "`active`" - "`inactive`" -
-     * "`pending`"
-     *
-     * @param string $status
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStatus()
+    class Google_Service_ShoppingContent_LinkService extends \Google\Service\ShoppingContent\LinkService
     {
     }
 }

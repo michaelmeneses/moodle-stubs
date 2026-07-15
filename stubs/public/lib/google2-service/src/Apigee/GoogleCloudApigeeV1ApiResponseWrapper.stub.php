@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1ApiResponseWrapper extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $errorCode;
-    /**
-     * @var string
-     */
-    public $message;
-    /**
-     * @var string
-     */
-    public $requestId;
-    /**
-     * @var string
-     */
-    public $status;
-    /**
-     * @param string
-     */
-    public function setErrorCode($errorCode)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1ApiResponseWrapper extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $errorCode;
+        /**
+         * @var string
+         */
+        public $message;
+        /**
+         * @var string
+         */
+        public $requestId;
+        /**
+         * @var string
+         */
+        public $status;
+        /**
+         * @param string
+         */
+        public function setErrorCode($errorCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getErrorCode()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRequestId($requestId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1ApiResponseWrapper registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrorCode()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMessage($message)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMessage()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRequestId($requestId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStatus()
+    class Google_Service_Apigee_GoogleCloudApigeeV1ApiResponseWrapper extends \Google\Service\Apigee\GoogleCloudApigeeV1ApiResponseWrapper
     {
     }
 }

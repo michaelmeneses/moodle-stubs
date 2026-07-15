@@ -21,47 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting\Resource;
-
-/**
- * The "files" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dfareportingService = new Google\Service\Dfareporting(...);
- *   $files = $dfareportingService->files;
- *  </code>
- */
-class Files extends \Google\Service\Resource
-{
+namespace Google\Service\Dfareporting\Resource {
+    use Google\Service\Dfareporting\DfareportingFile;
+    use Google\Service\Dfareporting\FileList;
     /**
-     * Retrieves a report file by its report ID and file ID. This method supports
-     * media download. (files.get)
-     *
-     * @param string $reportId The ID of the report.
-     * @param string $fileId The ID of the report file.
-     * @param array $optParams Optional parameters.
-     * @return DfareportingFile
-     * @throws \Google\Service\Exception
+     * The "files" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dfareportingService = new Google\Service\Dfareporting(...);
+     *   $files = $dfareportingService->files;
+     *  </code>
      */
-    public function get($reportId, $fileId, $optParams = [])
+    class Files extends \Google\Service\Resource
     {
+        /**
+         * Retrieves a report file by its report ID and file ID. This method supports
+         * media download. (files.get)
+         *
+         * @param string $reportId The ID of the report.
+         * @param string $fileId The ID of the report file.
+         * @param array $optParams Optional parameters.
+         * @return DfareportingFile
+         * @throws \Google\Service\Exception
+         */
+        public function get($reportId, $fileId, $optParams = [])
+        {
+        }
+        /**
+         * Lists files for a user profile. (files.listFiles)
+         *
+         * @param string $profileId The Campaign Manager 360 user profile ID.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int maxResults Maximum number of results to return.
+         * @opt_param string pageToken The value of the nextToken from the previous
+         * result page.
+         * @opt_param string scope The scope that defines which results are returned.
+         * @opt_param string sortField The field by which to sort the list.
+         * @opt_param string sortOrder Order of sorted results.
+         * @return FileList
+         * @throws \Google\Service\Exception
+         */
+        public function listFiles($profileId, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists files for a user profile. (files.listFiles)
-     *
-     * @param string $profileId The Campaign Manager 360 user profile ID.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int maxResults Maximum number of results to return.
-     * @opt_param string pageToken The value of the nextToken from the previous
-     * result page.
-     * @opt_param string scope The scope that defines which results are returned.
-     * @opt_param string sortField The field by which to sort the list.
-     * @opt_param string sortOrder Order of sorted results.
-     * @return FileList
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Dfareporting\Resource\Files registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listFiles($profileId, $optParams = [])
+    class Google_Service_Dfareporting_Resource_Files extends \Google\Service\Dfareporting\Resource\Files
     {
     }
 }

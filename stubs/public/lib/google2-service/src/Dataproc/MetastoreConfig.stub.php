@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class MetastoreConfig extends \Google\Model
-{
-    /**
-     * Required. Resource name of an existing Dataproc Metastore service.Example:
-     * projects/[project_id]/locations/[dataproc_region]/services/[service-name]
-     *
-     * @var string
-     */
-    public $dataprocMetastoreService;
-    /**
-     * Required. Resource name of an existing Dataproc Metastore service.Example:
-     * projects/[project_id]/locations/[dataproc_region]/services/[service-name]
-     *
-     * @param string $dataprocMetastoreService
-     */
-    public function setDataprocMetastoreService($dataprocMetastoreService)
+namespace Google\Service\Dataproc {
+    class MetastoreConfig extends \Google\Model
     {
+        /**
+         * Required. Resource name of an existing Dataproc Metastore service.Example:
+         * projects/[project_id]/locations/[dataproc_region]/services/[service-name]
+         *
+         * @var string
+         */
+        public $dataprocMetastoreService;
+        /**
+         * Required. Resource name of an existing Dataproc Metastore service.Example:
+         * projects/[project_id]/locations/[dataproc_region]/services/[service-name]
+         *
+         * @param string $dataprocMetastoreService
+         */
+        public function setDataprocMetastoreService($dataprocMetastoreService)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataprocMetastoreService()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\MetastoreConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataprocMetastoreService()
+    class Google_Service_Dataproc_MetastoreConfig extends \Google\Service\Dataproc\MetastoreConfig
     {
     }
 }

@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AppHub;
-
-class Environment extends \Google\Model
-{
-    /**
-     * Unspecified type.
-     */
-    public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
-    /**
-     * Production environment.
-     */
-    public const TYPE_PRODUCTION = 'PRODUCTION';
-    /**
-     * Staging environment.
-     */
-    public const TYPE_STAGING = 'STAGING';
-    /**
-     * Test environment.
-     */
-    public const TYPE_TEST = 'TEST';
-    /**
-     * Development environment.
-     */
-    public const TYPE_DEVELOPMENT = 'DEVELOPMENT';
-    /**
-     * Required. Environment Type.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Required. Environment Type.
-     *
-     * Accepted values: TYPE_UNSPECIFIED, PRODUCTION, STAGING, TEST, DEVELOPMENT
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
+namespace Google\Service\AppHub {
+    class Environment extends \Google\Model
     {
+        /**
+         * Unspecified type.
+         */
+        public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
+        /**
+         * Production environment.
+         */
+        public const TYPE_PRODUCTION = 'PRODUCTION';
+        /**
+         * Staging environment.
+         */
+        public const TYPE_STAGING = 'STAGING';
+        /**
+         * Test environment.
+         */
+        public const TYPE_TEST = 'TEST';
+        /**
+         * Development environment.
+         */
+        public const TYPE_DEVELOPMENT = 'DEVELOPMENT';
+        /**
+         * Required. Environment Type.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Required. Environment Type.
+         *
+         * Accepted values: TYPE_UNSPECIFIED, PRODUCTION, STAGING, TEST, DEVELOPMENT
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::TYPE_*
+     * Runtime class alias of \Google\Service\AppHub\Environment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getType()
+    class Google_Service_AppHub_Environment extends \Google\Service\AppHub\Environment
     {
     }
 }

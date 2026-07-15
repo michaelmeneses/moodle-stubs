@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2QuasiIdentifierField extends \Google\Model
-{
-    /**
-     * A column can be tagged with a custom tag. In this case, the user must
-     * indicate an auxiliary table that contains statistical information on the
-     * possible values of this column.
-     *
-     * @var string
-     */
-    public $customTag;
-    protected $fieldType = GooglePrivacyDlpV2FieldId::class;
-    protected $fieldDataType = '';
-    /**
-     * A column can be tagged with a custom tag. In this case, the user must
-     * indicate an auxiliary table that contains statistical information on the
-     * possible values of this column.
-     *
-     * @param string $customTag
-     */
-    public function setCustomTag($customTag)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2QuasiIdentifierField extends \Google\Model
     {
+        /**
+         * A column can be tagged with a custom tag. In this case, the user must
+         * indicate an auxiliary table that contains statistical information on the
+         * possible values of this column.
+         *
+         * @var string
+         */
+        public $customTag;
+        protected $fieldType = GooglePrivacyDlpV2FieldId::class;
+        protected $fieldDataType = '';
+        /**
+         * A column can be tagged with a custom tag. In this case, the user must
+         * indicate an auxiliary table that contains statistical information on the
+         * possible values of this column.
+         *
+         * @param string $customTag
+         */
+        public function setCustomTag($customTag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomTag()
+        {
+        }
+        /**
+         * Identifies the column.
+         *
+         * @param GooglePrivacyDlpV2FieldId $field
+         */
+        public function setField(GooglePrivacyDlpV2FieldId $field)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2FieldId
+         */
+        public function getField()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2QuasiIdentifierField registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomTag()
-    {
-    }
-    /**
-     * Identifies the column.
-     *
-     * @param GooglePrivacyDlpV2FieldId $field
-     */
-    public function setField(GooglePrivacyDlpV2FieldId $field)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2FieldId
-     */
-    public function getField()
+    class Google_Service_DLP_GooglePrivacyDlpV2QuasiIdentifierField extends \Google\Service\DLP\GooglePrivacyDlpV2QuasiIdentifierField
     {
     }
 }

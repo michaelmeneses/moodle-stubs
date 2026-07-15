@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1PairwiseMetricInstance extends \Google\Model
-{
-    protected $contentMapInstanceType = GoogleCloudAiplatformV1ContentMap::class;
-    protected $contentMapInstanceDataType = '';
-    /**
-     * Instance specified as a json string. String key-value pairs are expected in
-     * the json_instance to render PairwiseMetricSpec.instance_prompt_template.
-     *
-     * @var string
-     */
-    public $jsonInstance;
-    /**
-     * Key-value contents for the mutlimodality input, including text, image,
-     * video, audio, and pdf, etc. The key is placeholder in metric prompt
-     * template, and the value is the multimodal content.
-     *
-     * @param GoogleCloudAiplatformV1ContentMap $contentMapInstance
-     */
-    public function setContentMapInstance(GoogleCloudAiplatformV1ContentMap $contentMapInstance)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1PairwiseMetricInstance extends \Google\Model
     {
+        protected $contentMapInstanceType = GoogleCloudAiplatformV1ContentMap::class;
+        protected $contentMapInstanceDataType = '';
+        /**
+         * Instance specified as a json string. String key-value pairs are expected in
+         * the json_instance to render PairwiseMetricSpec.instance_prompt_template.
+         *
+         * @var string
+         */
+        public $jsonInstance;
+        /**
+         * Key-value contents for the mutlimodality input, including text, image,
+         * video, audio, and pdf, etc. The key is placeholder in metric prompt
+         * template, and the value is the multimodal content.
+         *
+         * @param GoogleCloudAiplatformV1ContentMap $contentMapInstance
+         */
+        public function setContentMapInstance(GoogleCloudAiplatformV1ContentMap $contentMapInstance)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ContentMap
+         */
+        public function getContentMapInstance()
+        {
+        }
+        /**
+         * Instance specified as a json string. String key-value pairs are expected in
+         * the json_instance to render PairwiseMetricSpec.instance_prompt_template.
+         *
+         * @param string $jsonInstance
+         */
+        public function setJsonInstance($jsonInstance)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getJsonInstance()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1ContentMap
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1PairwiseMetricInstance registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContentMapInstance()
-    {
-    }
-    /**
-     * Instance specified as a json string. String key-value pairs are expected in
-     * the json_instance to render PairwiseMetricSpec.instance_prompt_template.
-     *
-     * @param string $jsonInstance
-     */
-    public function setJsonInstance($jsonInstance)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getJsonInstance()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1PairwiseMetricInstance extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1PairwiseMetricInstance
     {
     }
 }

@@ -21,171 +21,199 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse\Resource;
-
-/**
- * The "documents" collection of methods.
- * Typical usage is:
- *  <code>
- *   $contentwarehouseService = new Google\Service\Contentwarehouse(...);
- *   $documents = $contentwarehouseService->projects_locations_documents;
- *  </code>
- */
-class ProjectsLocationsDocuments extends \Google\Service\Resource
-{
+namespace Google\Service\Contentwarehouse\Resource {
+    use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1CreateDocumentRequest;
+    use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1CreateDocumentResponse;
+    use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1DeleteDocumentRequest;
+    use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1Document;
+    use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1FetchAclRequest;
+    use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1FetchAclResponse;
+    use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1GetDocumentRequest;
+    use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1ListLinkedSourcesRequest;
+    use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1ListLinkedSourcesResponse;
+    use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1ListLinkedTargetsRequest;
+    use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1ListLinkedTargetsResponse;
+    use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1LockDocumentRequest;
+    use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1SearchDocumentsRequest;
+    use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1SearchDocumentsResponse;
+    use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1SetAclRequest;
+    use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1SetAclResponse;
+    use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1UpdateDocumentRequest;
+    use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1UpdateDocumentResponse;
+    use Google\Service\Contentwarehouse\GoogleProtobufEmpty;
     /**
-     * Creates a document. (documents.create)
-     *
-     * @param string $parent Required. The parent name. Format:
-     * projects/{project_number}/locations/{location}.
-     * @param GoogleCloudContentwarehouseV1CreateDocumentRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudContentwarehouseV1CreateDocumentResponse
-     * @throws \Google\Service\Exception
+     * The "documents" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $contentwarehouseService = new Google\Service\Contentwarehouse(...);
+     *   $documents = $contentwarehouseService->projects_locations_documents;
+     *  </code>
      */
-    public function create($parent, GoogleCloudContentwarehouseV1CreateDocumentRequest $postBody, $optParams = [])
+    class ProjectsLocationsDocuments extends \Google\Service\Resource
     {
+        /**
+         * Creates a document. (documents.create)
+         *
+         * @param string $parent Required. The parent name. Format:
+         * projects/{project_number}/locations/{location}.
+         * @param GoogleCloudContentwarehouseV1CreateDocumentRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudContentwarehouseV1CreateDocumentResponse
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, GoogleCloudContentwarehouseV1CreateDocumentRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a document. Returns NOT_FOUND if the document does not exist.
+         * (documents.delete)
+         *
+         * @param string $name Required. The name of the document to delete. Format:
+         * projects/{project_number}/locations/{location}/documents/{document_id} or pro
+         * jects/{project_number}/locations/{location}/documents/referenceId/{reference_
+         * id}.
+         * @param GoogleCloudContentwarehouseV1DeleteDocumentRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleProtobufEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, GoogleCloudContentwarehouseV1DeleteDocumentRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Gets the access control policy for a resource. Returns NOT_FOUND error if the
+         * resource does not exist. Returns an empty policy if the resource exists but
+         * does not have a policy set. (documents.fetchAcl)
+         *
+         * @param string $resource Required. REQUIRED: The resource for which the policy
+         * is being requested. Format for document:
+         * projects/{project_number}/locations/{location}/documents/{document_id}.
+         * Format for collection:
+         * projects/{project_number}/locations/{location}/collections/{collection_id}.
+         * Format for project: projects/{project_number}.
+         * @param GoogleCloudContentwarehouseV1FetchAclRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudContentwarehouseV1FetchAclResponse
+         * @throws \Google\Service\Exception
+         */
+        public function fetchAcl($resource, GoogleCloudContentwarehouseV1FetchAclRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Gets a document. Returns NOT_FOUND if the document does not exist.
+         * (documents.get)
+         *
+         * @param string $name Required. The name of the document to retrieve. Format:
+         * projects/{project_number}/locations/{location}/documents/{document_id} or pro
+         * jects/{project_number}/locations/{location}/documents/referenceId/{reference_
+         * id}.
+         * @param GoogleCloudContentwarehouseV1GetDocumentRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudContentwarehouseV1Document
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, GoogleCloudContentwarehouseV1GetDocumentRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Return all source document-links from the document. (documents.linkedSources)
+         *
+         * @param string $parent Required. The name of the document, for which all
+         * source links are returned. Format: projects/{project_number}/locations/{locat
+         * ion}/documents/{source_document_id}.
+         * @param GoogleCloudContentwarehouseV1ListLinkedSourcesRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudContentwarehouseV1ListLinkedSourcesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function linkedSources($parent, GoogleCloudContentwarehouseV1ListLinkedSourcesRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Return all target document-links from the document. (documents.linkedTargets)
+         *
+         * @param string $parent Required. The name of the document, for which all
+         * target links are returned. Format: projects/{project_number}/locations/{locat
+         * ion}/documents/{target_document_id}.
+         * @param GoogleCloudContentwarehouseV1ListLinkedTargetsRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudContentwarehouseV1ListLinkedTargetsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function linkedTargets($parent, GoogleCloudContentwarehouseV1ListLinkedTargetsRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Lock the document so the document cannot be updated by other users.
+         * (documents.lock)
+         *
+         * @param string $name Required. The name of the document to lock. Format:
+         * projects/{project_number}/locations/{location}/documents/{document}.
+         * @param GoogleCloudContentwarehouseV1LockDocumentRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudContentwarehouseV1Document
+         * @throws \Google\Service\Exception
+         */
+        public function lock($name, GoogleCloudContentwarehouseV1LockDocumentRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Updates a document. Returns INVALID_ARGUMENT if the name of the document is
+         * non-empty and does not equal the existing name. (documents.patch)
+         *
+         * @param string $name Required. The name of the document to update. Format:
+         * projects/{project_number}/locations/{location}/documents/{document_id} or pro
+         * jects/{project_number}/locations/{location}/documents/referenceId/{reference_
+         * id}.
+         * @param GoogleCloudContentwarehouseV1UpdateDocumentRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudContentwarehouseV1UpdateDocumentResponse
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, GoogleCloudContentwarehouseV1UpdateDocumentRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Searches for documents using provided SearchDocumentsRequest. This call only
+         * returns documents that the caller has permission to search against.
+         * (documents.search)
+         *
+         * @param string $parent Required. The parent, which owns this collection of
+         * documents. Format: projects/{project_number}/locations/{location}.
+         * @param GoogleCloudContentwarehouseV1SearchDocumentsRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudContentwarehouseV1SearchDocumentsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function search($parent, GoogleCloudContentwarehouseV1SearchDocumentsRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Sets the access control policy for a resource. Replaces any existing policy.
+         * (documents.setAcl)
+         *
+         * @param string $resource Required. REQUIRED: The resource for which the policy
+         * is being requested. Format for document:
+         * projects/{project_number}/locations/{location}/documents/{document_id}.
+         * Format for collection:
+         * projects/{project_number}/locations/{location}/collections/{collection_id}.
+         * Format for project: projects/{project_number}.
+         * @param GoogleCloudContentwarehouseV1SetAclRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudContentwarehouseV1SetAclResponse
+         * @throws \Google\Service\Exception
+         */
+        public function setAcl($resource, GoogleCloudContentwarehouseV1SetAclRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a document. Returns NOT_FOUND if the document does not exist.
-     * (documents.delete)
-     *
-     * @param string $name Required. The name of the document to delete. Format:
-     * projects/{project_number}/locations/{location}/documents/{document_id} or pro
-     * jects/{project_number}/locations/{location}/documents/referenceId/{reference_
-     * id}.
-     * @param GoogleCloudContentwarehouseV1DeleteDocumentRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleProtobufEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Contentwarehouse\Resource\ProjectsLocationsDocuments registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, GoogleCloudContentwarehouseV1DeleteDocumentRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Gets the access control policy for a resource. Returns NOT_FOUND error if the
-     * resource does not exist. Returns an empty policy if the resource exists but
-     * does not have a policy set. (documents.fetchAcl)
-     *
-     * @param string $resource Required. REQUIRED: The resource for which the policy
-     * is being requested. Format for document:
-     * projects/{project_number}/locations/{location}/documents/{document_id}.
-     * Format for collection:
-     * projects/{project_number}/locations/{location}/collections/{collection_id}.
-     * Format for project: projects/{project_number}.
-     * @param GoogleCloudContentwarehouseV1FetchAclRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudContentwarehouseV1FetchAclResponse
-     * @throws \Google\Service\Exception
-     */
-    public function fetchAcl($resource, GoogleCloudContentwarehouseV1FetchAclRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Gets a document. Returns NOT_FOUND if the document does not exist.
-     * (documents.get)
-     *
-     * @param string $name Required. The name of the document to retrieve. Format:
-     * projects/{project_number}/locations/{location}/documents/{document_id} or pro
-     * jects/{project_number}/locations/{location}/documents/referenceId/{reference_
-     * id}.
-     * @param GoogleCloudContentwarehouseV1GetDocumentRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudContentwarehouseV1Document
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, GoogleCloudContentwarehouseV1GetDocumentRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Return all source document-links from the document. (documents.linkedSources)
-     *
-     * @param string $parent Required. The name of the document, for which all
-     * source links are returned. Format: projects/{project_number}/locations/{locat
-     * ion}/documents/{source_document_id}.
-     * @param GoogleCloudContentwarehouseV1ListLinkedSourcesRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudContentwarehouseV1ListLinkedSourcesResponse
-     * @throws \Google\Service\Exception
-     */
-    public function linkedSources($parent, GoogleCloudContentwarehouseV1ListLinkedSourcesRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Return all target document-links from the document. (documents.linkedTargets)
-     *
-     * @param string $parent Required. The name of the document, for which all
-     * target links are returned. Format: projects/{project_number}/locations/{locat
-     * ion}/documents/{target_document_id}.
-     * @param GoogleCloudContentwarehouseV1ListLinkedTargetsRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudContentwarehouseV1ListLinkedTargetsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function linkedTargets($parent, GoogleCloudContentwarehouseV1ListLinkedTargetsRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Lock the document so the document cannot be updated by other users.
-     * (documents.lock)
-     *
-     * @param string $name Required. The name of the document to lock. Format:
-     * projects/{project_number}/locations/{location}/documents/{document}.
-     * @param GoogleCloudContentwarehouseV1LockDocumentRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudContentwarehouseV1Document
-     * @throws \Google\Service\Exception
-     */
-    public function lock($name, GoogleCloudContentwarehouseV1LockDocumentRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Updates a document. Returns INVALID_ARGUMENT if the name of the document is
-     * non-empty and does not equal the existing name. (documents.patch)
-     *
-     * @param string $name Required. The name of the document to update. Format:
-     * projects/{project_number}/locations/{location}/documents/{document_id} or pro
-     * jects/{project_number}/locations/{location}/documents/referenceId/{reference_
-     * id}.
-     * @param GoogleCloudContentwarehouseV1UpdateDocumentRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudContentwarehouseV1UpdateDocumentResponse
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, GoogleCloudContentwarehouseV1UpdateDocumentRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Searches for documents using provided SearchDocumentsRequest. This call only
-     * returns documents that the caller has permission to search against.
-     * (documents.search)
-     *
-     * @param string $parent Required. The parent, which owns this collection of
-     * documents. Format: projects/{project_number}/locations/{location}.
-     * @param GoogleCloudContentwarehouseV1SearchDocumentsRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudContentwarehouseV1SearchDocumentsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function search($parent, GoogleCloudContentwarehouseV1SearchDocumentsRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Sets the access control policy for a resource. Replaces any existing policy.
-     * (documents.setAcl)
-     *
-     * @param string $resource Required. REQUIRED: The resource for which the policy
-     * is being requested. Format for document:
-     * projects/{project_number}/locations/{location}/documents/{document_id}.
-     * Format for collection:
-     * projects/{project_number}/locations/{location}/collections/{collection_id}.
-     * Format for project: projects/{project_number}.
-     * @param GoogleCloudContentwarehouseV1SetAclRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudContentwarehouseV1SetAclResponse
-     * @throws \Google\Service\Exception
-     */
-    public function setAcl($resource, GoogleCloudContentwarehouseV1SetAclRequest $postBody, $optParams = [])
+    class Google_Service_Contentwarehouse_Resource_ProjectsLocationsDocuments extends \Google\Service\Contentwarehouse\Resource\ProjectsLocationsDocuments
     {
     }
 }

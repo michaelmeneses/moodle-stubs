@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class ContainerPort extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $containerPort;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $protocol;
-    /**
-     * @param int
-     */
-    public function setContainerPort($containerPort)
+namespace Google\Service\CloudRun {
+    class ContainerPort extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $containerPort;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $protocol;
+        /**
+         * @param int
+         */
+        public function setContainerPort($containerPort)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getContainerPort()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setProtocol($protocol)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProtocol()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudRun\ContainerPort registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContainerPort()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setProtocol($protocol)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProtocol()
+    class Google_Service_CloudRun_ContainerPort extends \Google\Service\CloudRun\ContainerPort
     {
     }
 }

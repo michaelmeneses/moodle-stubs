@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class InstallmentPlan extends \Google\Model
-{
-    /**
-     * Total number of payments the user is initially committed for.
-     *
-     * @var int
-     */
-    public $initialCommittedPaymentsCount;
-    protected $pendingCancellationType = PendingCancellation::class;
-    protected $pendingCancellationDataType = '';
-    /**
-     * Total number of committed payments remaining to be paid for in this renewal
-     * cycle.
-     *
-     * @var int
-     */
-    public $remainingCommittedPaymentsCount;
-    /**
-     * Total number of payments the user will be committed for after each
-     * commitment period. Empty means the installment plan will fall back to a
-     * normal auto-renew subscription after initial commitment.
-     *
-     * @var int
-     */
-    public $subsequentCommittedPaymentsCount;
-    /**
-     * Total number of payments the user is initially committed for.
-     *
-     * @param int $initialCommittedPaymentsCount
-     */
-    public function setInitialCommittedPaymentsCount($initialCommittedPaymentsCount)
+namespace Google\Service\AndroidPublisher {
+    class InstallmentPlan extends \Google\Model
     {
+        /**
+         * Total number of payments the user is initially committed for.
+         *
+         * @var int
+         */
+        public $initialCommittedPaymentsCount;
+        protected $pendingCancellationType = PendingCancellation::class;
+        protected $pendingCancellationDataType = '';
+        /**
+         * Total number of committed payments remaining to be paid for in this renewal
+         * cycle.
+         *
+         * @var int
+         */
+        public $remainingCommittedPaymentsCount;
+        /**
+         * Total number of payments the user will be committed for after each
+         * commitment period. Empty means the installment plan will fall back to a
+         * normal auto-renew subscription after initial commitment.
+         *
+         * @var int
+         */
+        public $subsequentCommittedPaymentsCount;
+        /**
+         * Total number of payments the user is initially committed for.
+         *
+         * @param int $initialCommittedPaymentsCount
+         */
+        public function setInitialCommittedPaymentsCount($initialCommittedPaymentsCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getInitialCommittedPaymentsCount()
+        {
+        }
+        /**
+         * If present, this installment plan is pending to be canceled. The
+         * cancellation will happen only after the user finished all committed
+         * payments.
+         *
+         * @param PendingCancellation $pendingCancellation
+         */
+        public function setPendingCancellation(PendingCancellation $pendingCancellation)
+        {
+        }
+        /**
+         * @return PendingCancellation
+         */
+        public function getPendingCancellation()
+        {
+        }
+        /**
+         * Total number of committed payments remaining to be paid for in this renewal
+         * cycle.
+         *
+         * @param int $remainingCommittedPaymentsCount
+         */
+        public function setRemainingCommittedPaymentsCount($remainingCommittedPaymentsCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRemainingCommittedPaymentsCount()
+        {
+        }
+        /**
+         * Total number of payments the user will be committed for after each
+         * commitment period. Empty means the installment plan will fall back to a
+         * normal auto-renew subscription after initial commitment.
+         *
+         * @param int $subsequentCommittedPaymentsCount
+         */
+        public function setSubsequentCommittedPaymentsCount($subsequentCommittedPaymentsCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSubsequentCommittedPaymentsCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\AndroidPublisher\InstallmentPlan registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInitialCommittedPaymentsCount()
-    {
-    }
-    /**
-     * If present, this installment plan is pending to be canceled. The
-     * cancellation will happen only after the user finished all committed
-     * payments.
-     *
-     * @param PendingCancellation $pendingCancellation
-     */
-    public function setPendingCancellation(PendingCancellation $pendingCancellation)
-    {
-    }
-    /**
-     * @return PendingCancellation
-     */
-    public function getPendingCancellation()
-    {
-    }
-    /**
-     * Total number of committed payments remaining to be paid for in this renewal
-     * cycle.
-     *
-     * @param int $remainingCommittedPaymentsCount
-     */
-    public function setRemainingCommittedPaymentsCount($remainingCommittedPaymentsCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getRemainingCommittedPaymentsCount()
-    {
-    }
-    /**
-     * Total number of payments the user will be committed for after each
-     * commitment period. Empty means the installment plan will fall back to a
-     * normal auto-renew subscription after initial commitment.
-     *
-     * @param int $subsequentCommittedPaymentsCount
-     */
-    public function setSubsequentCommittedPaymentsCount($subsequentCommittedPaymentsCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSubsequentCommittedPaymentsCount()
+    class Google_Service_AndroidPublisher_InstallmentPlan extends \Google\Service\AndroidPublisher\InstallmentPlan
     {
     }
 }

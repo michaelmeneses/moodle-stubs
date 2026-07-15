@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1GroundingChunkWeb extends \Google\Model
-{
-    /**
-     * The domain of the web page that contains the evidence. This can be used to
-     * filter out low-quality sources.
-     *
-     * @var string
-     */
-    public $domain;
-    /**
-     * The title of the web page that contains the evidence.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * The URI of the web page that contains the evidence.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * The domain of the web page that contains the evidence. This can be used to
-     * filter out low-quality sources.
-     *
-     * @param string $domain
-     */
-    public function setDomain($domain)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1GroundingChunkWeb extends \Google\Model
     {
+        /**
+         * The domain of the web page that contains the evidence. This can be used to
+         * filter out low-quality sources.
+         *
+         * @var string
+         */
+        public $domain;
+        /**
+         * The title of the web page that contains the evidence.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * The URI of the web page that contains the evidence.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * The domain of the web page that contains the evidence. This can be used to
+         * filter out low-quality sources.
+         *
+         * @param string $domain
+         */
+        public function setDomain($domain)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDomain()
+        {
+        }
+        /**
+         * The title of the web page that contains the evidence.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * The URI of the web page that contains the evidence.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1GroundingChunkWeb registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDomain()
-    {
-    }
-    /**
-     * The title of the web page that contains the evidence.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
-    {
-    }
-    /**
-     * The URI of the web page that contains the evidence.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1GroundingChunkWeb extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1GroundingChunkWeb
     {
     }
 }

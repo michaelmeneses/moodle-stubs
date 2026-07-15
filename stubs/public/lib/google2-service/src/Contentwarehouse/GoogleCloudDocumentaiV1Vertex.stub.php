@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudDocumentaiV1Vertex extends \Google\Model
-{
-    /**
-     * X coordinate.
-     *
-     * @var int
-     */
-    public $x;
-    /**
-     * Y coordinate (starts from the top of the image).
-     *
-     * @var int
-     */
-    public $y;
-    /**
-     * X coordinate.
-     *
-     * @param int $x
-     */
-    public function setX($x)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudDocumentaiV1Vertex extends \Google\Model
     {
+        /**
+         * X coordinate.
+         *
+         * @var int
+         */
+        public $x;
+        /**
+         * Y coordinate (starts from the top of the image).
+         *
+         * @var int
+         */
+        public $y;
+        /**
+         * X coordinate.
+         *
+         * @param int $x
+         */
+        public function setX($x)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getX()
+        {
+        }
+        /**
+         * Y coordinate (starts from the top of the image).
+         *
+         * @param int $y
+         */
+        public function setY($y)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getY()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudDocumentaiV1Vertex registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getX()
-    {
-    }
-    /**
-     * Y coordinate (starts from the top of the image).
-     *
-     * @param int $y
-     */
-    public function setY($y)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getY()
+    class Google_Service_Contentwarehouse_GoogleCloudDocumentaiV1Vertex extends \Google\Service\Contentwarehouse\GoogleCloudDocumentaiV1Vertex
     {
     }
 }

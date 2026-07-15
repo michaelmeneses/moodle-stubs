@@ -21,102 +21,114 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Appengine\Resource;
-
-/**
- * The "authorizedCertificates" collection of methods.
- * Typical usage is:
- *  <code>
- *   $appengineService = new Google\Service\Appengine(...);
- *   $authorizedCertificates = $appengineService->apps_authorizedCertificates;
- *  </code>
- */
-class AppsAuthorizedCertificates extends \Google\Service\Resource
-{
+namespace Google\Service\Appengine\Resource {
+    use Google\Service\Appengine\AppengineEmpty;
+    use Google\Service\Appengine\AuthorizedCertificate;
+    use Google\Service\Appengine\ListAuthorizedCertificatesResponse;
     /**
-     * Uploads the specified SSL certificate. (authorizedCertificates.create)
-     *
-     * @param string $appsId Part of `parent`. Required. Name of the parent
-     * Application resource. Example: apps/myapp.
-     * @param AuthorizedCertificate $postBody
-     * @param array $optParams Optional parameters.
-     * @return AuthorizedCertificate
-     * @throws \Google\Service\Exception
+     * The "authorizedCertificates" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $appengineService = new Google\Service\Appengine(...);
+     *   $authorizedCertificates = $appengineService->apps_authorizedCertificates;
+     *  </code>
      */
-    public function create($appsId, AuthorizedCertificate $postBody, $optParams = [])
+    class AppsAuthorizedCertificates extends \Google\Service\Resource
     {
+        /**
+         * Uploads the specified SSL certificate. (authorizedCertificates.create)
+         *
+         * @param string $appsId Part of `parent`. Required. Name of the parent
+         * Application resource. Example: apps/myapp.
+         * @param AuthorizedCertificate $postBody
+         * @param array $optParams Optional parameters.
+         * @return AuthorizedCertificate
+         * @throws \Google\Service\Exception
+         */
+        public function create($appsId, AuthorizedCertificate $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes the specified SSL certificate. (authorizedCertificates.delete)
+         *
+         * @param string $appsId Part of `name`. Required. Name of the resource to
+         * delete. Example: apps/myapp/authorizedCertificates/12345.
+         * @param string $authorizedCertificatesId Part of `name`. See documentation of
+         * `appsId`.
+         * @param array $optParams Optional parameters.
+         * @return AppengineEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($appsId, $authorizedCertificatesId, $optParams = [])
+        {
+        }
+        /**
+         * Gets the specified SSL certificate. (authorizedCertificates.get)
+         *
+         * @param string $appsId Part of `name`. Required. Name of the resource
+         * requested. Example: apps/myapp/authorizedCertificates/12345.
+         * @param string $authorizedCertificatesId Part of `name`. See documentation of
+         * `appsId`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string view Controls the set of fields returned in the GET
+         * response.
+         * @return AuthorizedCertificate
+         * @throws \Google\Service\Exception
+         */
+        public function get($appsId, $authorizedCertificatesId, $optParams = [])
+        {
+        }
+        /**
+         * Lists all SSL certificates the user is authorized to administer.
+         * (authorizedCertificates.listAppsAuthorizedCertificates)
+         *
+         * @param string $appsId Part of `parent`. Required. Name of the parent
+         * Application resource. Example: apps/myapp.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Maximum results to return per page.
+         * @opt_param string pageToken Continuation token for fetching the next page of
+         * results.
+         * @opt_param string view Controls the set of fields returned in the LIST
+         * response.
+         * @return ListAuthorizedCertificatesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listAppsAuthorizedCertificates($appsId, $optParams = [])
+        {
+        }
+        /**
+         * Updates the specified SSL certificate. To renew a certificate and maintain
+         * its existing domain mappings, update certificate_data with a new certificate.
+         * The new certificate must be applicable to the same domains as the original
+         * certificate. The certificate display_name may also be updated.
+         * (authorizedCertificates.patch)
+         *
+         * @param string $appsId Part of `name`. Required. Name of the resource to
+         * update. Example: apps/myapp/authorizedCertificates/12345.
+         * @param string $authorizedCertificatesId Part of `name`. See documentation of
+         * `appsId`.
+         * @param AuthorizedCertificate $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Standard field mask for the set of fields to be
+         * updated. Updates are only supported on the certificate_raw_data and
+         * display_name fields.
+         * @return AuthorizedCertificate
+         * @throws \Google\Service\Exception
+         */
+        public function patch($appsId, $authorizedCertificatesId, AuthorizedCertificate $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes the specified SSL certificate. (authorizedCertificates.delete)
-     *
-     * @param string $appsId Part of `name`. Required. Name of the resource to
-     * delete. Example: apps/myapp/authorizedCertificates/12345.
-     * @param string $authorizedCertificatesId Part of `name`. See documentation of
-     * `appsId`.
-     * @param array $optParams Optional parameters.
-     * @return AppengineEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Appengine\Resource\AppsAuthorizedCertificates registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($appsId, $authorizedCertificatesId, $optParams = [])
-    {
-    }
-    /**
-     * Gets the specified SSL certificate. (authorizedCertificates.get)
-     *
-     * @param string $appsId Part of `name`. Required. Name of the resource
-     * requested. Example: apps/myapp/authorizedCertificates/12345.
-     * @param string $authorizedCertificatesId Part of `name`. See documentation of
-     * `appsId`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string view Controls the set of fields returned in the GET
-     * response.
-     * @return AuthorizedCertificate
-     * @throws \Google\Service\Exception
-     */
-    public function get($appsId, $authorizedCertificatesId, $optParams = [])
-    {
-    }
-    /**
-     * Lists all SSL certificates the user is authorized to administer.
-     * (authorizedCertificates.listAppsAuthorizedCertificates)
-     *
-     * @param string $appsId Part of `parent`. Required. Name of the parent
-     * Application resource. Example: apps/myapp.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Maximum results to return per page.
-     * @opt_param string pageToken Continuation token for fetching the next page of
-     * results.
-     * @opt_param string view Controls the set of fields returned in the LIST
-     * response.
-     * @return ListAuthorizedCertificatesResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listAppsAuthorizedCertificates($appsId, $optParams = [])
-    {
-    }
-    /**
-     * Updates the specified SSL certificate. To renew a certificate and maintain
-     * its existing domain mappings, update certificate_data with a new certificate.
-     * The new certificate must be applicable to the same domains as the original
-     * certificate. The certificate display_name may also be updated.
-     * (authorizedCertificates.patch)
-     *
-     * @param string $appsId Part of `name`. Required. Name of the resource to
-     * update. Example: apps/myapp/authorizedCertificates/12345.
-     * @param string $authorizedCertificatesId Part of `name`. See documentation of
-     * `appsId`.
-     * @param AuthorizedCertificate $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Standard field mask for the set of fields to be
-     * updated. Updates are only supported on the certificate_raw_data and
-     * display_name fields.
-     * @return AuthorizedCertificate
-     * @throws \Google\Service\Exception
-     */
-    public function patch($appsId, $authorizedCertificatesId, AuthorizedCertificate $postBody, $optParams = [])
+    class Google_Service_Appengine_Resource_AppsAuthorizedCertificates extends \Google\Service\Appengine\Resource\AppsAuthorizedCertificates
     {
     }
 }

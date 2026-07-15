@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CertificateManager;
-
-class CertificateAuthorityServiceConfig extends \Google\Model
-{
-    /**
-     * Required. A CA pool resource used to issue a certificate. The CA pool
-     * string has a relative resource path following the form
-     * "projects/{project}/locations/{location}/caPools/{ca_pool}".
-     *
-     * @var string
-     */
-    public $caPool;
-    /**
-     * Required. A CA pool resource used to issue a certificate. The CA pool
-     * string has a relative resource path following the form
-     * "projects/{project}/locations/{location}/caPools/{ca_pool}".
-     *
-     * @param string $caPool
-     */
-    public function setCaPool($caPool)
+namespace Google\Service\CertificateManager {
+    class CertificateAuthorityServiceConfig extends \Google\Model
     {
+        /**
+         * Required. A CA pool resource used to issue a certificate. The CA pool
+         * string has a relative resource path following the form
+         * "projects/{project}/locations/{location}/caPools/{ca_pool}".
+         *
+         * @var string
+         */
+        public $caPool;
+        /**
+         * Required. A CA pool resource used to issue a certificate. The CA pool
+         * string has a relative resource path following the form
+         * "projects/{project}/locations/{location}/caPools/{ca_pool}".
+         *
+         * @param string $caPool
+         */
+        public function setCaPool($caPool)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCaPool()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CertificateManager\CertificateAuthorityServiceConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCaPool()
+    class Google_Service_CertificateManager_CertificateAuthorityServiceConfig extends \Google\Service\CertificateManager\CertificateAuthorityServiceConfig
     {
     }
 }

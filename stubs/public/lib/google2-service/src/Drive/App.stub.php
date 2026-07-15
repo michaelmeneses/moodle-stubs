@@ -21,501 +21,510 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Drive;
-
-class App extends \Google\Collection
-{
-    protected $collection_key = 'secondaryMimeTypes';
-    /**
-     * Whether the app is authorized to access data on the user's Drive.
-     *
-     * @var bool
-     */
-    public $authorized;
-    /**
-     * The template URL to create a file with this app in a given folder. The
-     * template contains the {folderId} to be replaced by the folder ID house the
-     * new file.
-     *
-     * @var string
-     */
-    public $createInFolderTemplate;
-    /**
-     * The URL to create a file with this app.
-     *
-     * @var string
-     */
-    public $createUrl;
-    /**
-     * Whether the app has Drive-wide scope. An app with Drive-wide scope can
-     * access all files in the user's Drive.
-     *
-     * @var bool
-     */
-    public $hasDriveWideScope;
-    protected $iconsType = AppIcons::class;
-    protected $iconsDataType = 'array';
-    /**
-     * The ID of the app.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Whether the app is installed.
-     *
-     * @var bool
-     */
-    public $installed;
-    /**
-     * Output only. Identifies what kind of resource this is. Value: the fixed
-     * string "drive#app".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * A long description of the app.
-     *
-     * @var string
-     */
-    public $longDescription;
-    /**
-     * The name of the app.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The type of object this app creates such as a Chart. If empty, the app name
-     * should be used instead.
-     *
-     * @var string
-     */
-    public $objectType;
-    /**
-     * The template URL for opening files with this app. The template contains
-     * {ids} or {exportIds} to be replaced by the actual file IDs. For more
-     * information, see Open Files for the full documentation.
-     *
-     * @var string
-     */
-    public $openUrlTemplate;
-    /**
-     * The list of primary file extensions.
-     *
-     * @var string[]
-     */
-    public $primaryFileExtensions;
-    /**
-     * The list of primary MIME types.
-     *
-     * @var string[]
-     */
-    public $primaryMimeTypes;
-    /**
-     * The ID of the product listing for this app.
-     *
-     * @var string
-     */
-    public $productId;
-    /**
-     * A link to the product listing for this app.
-     *
-     * @var string
-     */
-    public $productUrl;
-    /**
-     * The list of secondary file extensions.
-     *
-     * @var string[]
-     */
-    public $secondaryFileExtensions;
-    /**
-     * The list of secondary MIME types.
-     *
-     * @var string[]
-     */
-    public $secondaryMimeTypes;
-    /**
-     * A short description of the app.
-     *
-     * @var string
-     */
-    public $shortDescription;
-    /**
-     * Whether this app supports creating objects.
-     *
-     * @var bool
-     */
-    public $supportsCreate;
-    /**
-     * Whether this app supports importing from Google Docs.
-     *
-     * @var bool
-     */
-    public $supportsImport;
-    /**
-     * Whether this app supports opening more than one file.
-     *
-     * @var bool
-     */
-    public $supportsMultiOpen;
-    /**
-     * Whether this app supports creating files when offline.
-     *
-     * @var bool
-     */
-    public $supportsOfflineCreate;
-    /**
-     * Whether the app is selected as the default handler for the types it
-     * supports.
-     *
-     * @var bool
-     */
-    public $useByDefault;
-    /**
-     * Whether the app is authorized to access data on the user's Drive.
-     *
-     * @param bool $authorized
-     */
-    public function setAuthorized($authorized)
+namespace Google\Service\Drive {
+    class App extends \Google\Collection
     {
+        protected $collection_key = 'secondaryMimeTypes';
+        /**
+         * Whether the app is authorized to access data on the user's Drive.
+         *
+         * @var bool
+         */
+        public $authorized;
+        /**
+         * The template URL to create a file with this app in a given folder. The
+         * template contains the {folderId} to be replaced by the folder ID house the
+         * new file.
+         *
+         * @var string
+         */
+        public $createInFolderTemplate;
+        /**
+         * The URL to create a file with this app.
+         *
+         * @var string
+         */
+        public $createUrl;
+        /**
+         * Whether the app has Drive-wide scope. An app with Drive-wide scope can
+         * access all files in the user's Drive.
+         *
+         * @var bool
+         */
+        public $hasDriveWideScope;
+        protected $iconsType = AppIcons::class;
+        protected $iconsDataType = 'array';
+        /**
+         * The ID of the app.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Whether the app is installed.
+         *
+         * @var bool
+         */
+        public $installed;
+        /**
+         * Output only. Identifies what kind of resource this is. Value: the fixed
+         * string "drive#app".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * A long description of the app.
+         *
+         * @var string
+         */
+        public $longDescription;
+        /**
+         * The name of the app.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The type of object this app creates such as a Chart. If empty, the app name
+         * should be used instead.
+         *
+         * @var string
+         */
+        public $objectType;
+        /**
+         * The template URL for opening files with this app. The template contains
+         * {ids} or {exportIds} to be replaced by the actual file IDs. For more
+         * information, see Open Files for the full documentation.
+         *
+         * @var string
+         */
+        public $openUrlTemplate;
+        /**
+         * The list of primary file extensions.
+         *
+         * @var string[]
+         */
+        public $primaryFileExtensions;
+        /**
+         * The list of primary MIME types.
+         *
+         * @var string[]
+         */
+        public $primaryMimeTypes;
+        /**
+         * The ID of the product listing for this app.
+         *
+         * @var string
+         */
+        public $productId;
+        /**
+         * A link to the product listing for this app.
+         *
+         * @var string
+         */
+        public $productUrl;
+        /**
+         * The list of secondary file extensions.
+         *
+         * @var string[]
+         */
+        public $secondaryFileExtensions;
+        /**
+         * The list of secondary MIME types.
+         *
+         * @var string[]
+         */
+        public $secondaryMimeTypes;
+        /**
+         * A short description of the app.
+         *
+         * @var string
+         */
+        public $shortDescription;
+        /**
+         * Whether this app supports creating objects.
+         *
+         * @var bool
+         */
+        public $supportsCreate;
+        /**
+         * Whether this app supports importing from Google Docs.
+         *
+         * @var bool
+         */
+        public $supportsImport;
+        /**
+         * Whether this app supports opening more than one file.
+         *
+         * @var bool
+         */
+        public $supportsMultiOpen;
+        /**
+         * Whether this app supports creating files when offline.
+         *
+         * @var bool
+         */
+        public $supportsOfflineCreate;
+        /**
+         * Whether the app is selected as the default handler for the types it
+         * supports.
+         *
+         * @var bool
+         */
+        public $useByDefault;
+        /**
+         * Whether the app is authorized to access data on the user's Drive.
+         *
+         * @param bool $authorized
+         */
+        public function setAuthorized($authorized)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAuthorized()
+        {
+        }
+        /**
+         * The template URL to create a file with this app in a given folder. The
+         * template contains the {folderId} to be replaced by the folder ID house the
+         * new file.
+         *
+         * @param string $createInFolderTemplate
+         */
+        public function setCreateInFolderTemplate($createInFolderTemplate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateInFolderTemplate()
+        {
+        }
+        /**
+         * The URL to create a file with this app.
+         *
+         * @param string $createUrl
+         */
+        public function setCreateUrl($createUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateUrl()
+        {
+        }
+        /**
+         * Whether the app has Drive-wide scope. An app with Drive-wide scope can
+         * access all files in the user's Drive.
+         *
+         * @param bool $hasDriveWideScope
+         */
+        public function setHasDriveWideScope($hasDriveWideScope)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getHasDriveWideScope()
+        {
+        }
+        /**
+         * The various icons for the app.
+         *
+         * @param AppIcons[] $icons
+         */
+        public function setIcons($icons)
+        {
+        }
+        /**
+         * @return AppIcons[]
+         */
+        public function getIcons()
+        {
+        }
+        /**
+         * The ID of the app.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Whether the app is installed.
+         *
+         * @param bool $installed
+         */
+        public function setInstalled($installed)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getInstalled()
+        {
+        }
+        /**
+         * Output only. Identifies what kind of resource this is. Value: the fixed
+         * string "drive#app".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * A long description of the app.
+         *
+         * @param string $longDescription
+         */
+        public function setLongDescription($longDescription)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLongDescription()
+        {
+        }
+        /**
+         * The name of the app.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The type of object this app creates such as a Chart. If empty, the app name
+         * should be used instead.
+         *
+         * @param string $objectType
+         */
+        public function setObjectType($objectType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectType()
+        {
+        }
+        /**
+         * The template URL for opening files with this app. The template contains
+         * {ids} or {exportIds} to be replaced by the actual file IDs. For more
+         * information, see Open Files for the full documentation.
+         *
+         * @param string $openUrlTemplate
+         */
+        public function setOpenUrlTemplate($openUrlTemplate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOpenUrlTemplate()
+        {
+        }
+        /**
+         * The list of primary file extensions.
+         *
+         * @param string[] $primaryFileExtensions
+         */
+        public function setPrimaryFileExtensions($primaryFileExtensions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPrimaryFileExtensions()
+        {
+        }
+        /**
+         * The list of primary MIME types.
+         *
+         * @param string[] $primaryMimeTypes
+         */
+        public function setPrimaryMimeTypes($primaryMimeTypes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPrimaryMimeTypes()
+        {
+        }
+        /**
+         * The ID of the product listing for this app.
+         *
+         * @param string $productId
+         */
+        public function setProductId($productId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProductId()
+        {
+        }
+        /**
+         * A link to the product listing for this app.
+         *
+         * @param string $productUrl
+         */
+        public function setProductUrl($productUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProductUrl()
+        {
+        }
+        /**
+         * The list of secondary file extensions.
+         *
+         * @param string[] $secondaryFileExtensions
+         */
+        public function setSecondaryFileExtensions($secondaryFileExtensions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSecondaryFileExtensions()
+        {
+        }
+        /**
+         * The list of secondary MIME types.
+         *
+         * @param string[] $secondaryMimeTypes
+         */
+        public function setSecondaryMimeTypes($secondaryMimeTypes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSecondaryMimeTypes()
+        {
+        }
+        /**
+         * A short description of the app.
+         *
+         * @param string $shortDescription
+         */
+        public function setShortDescription($shortDescription)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getShortDescription()
+        {
+        }
+        /**
+         * Whether this app supports creating objects.
+         *
+         * @param bool $supportsCreate
+         */
+        public function setSupportsCreate($supportsCreate)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSupportsCreate()
+        {
+        }
+        /**
+         * Whether this app supports importing from Google Docs.
+         *
+         * @param bool $supportsImport
+         */
+        public function setSupportsImport($supportsImport)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSupportsImport()
+        {
+        }
+        /**
+         * Whether this app supports opening more than one file.
+         *
+         * @param bool $supportsMultiOpen
+         */
+        public function setSupportsMultiOpen($supportsMultiOpen)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSupportsMultiOpen()
+        {
+        }
+        /**
+         * Whether this app supports creating files when offline.
+         *
+         * @param bool $supportsOfflineCreate
+         */
+        public function setSupportsOfflineCreate($supportsOfflineCreate)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSupportsOfflineCreate()
+        {
+        }
+        /**
+         * Whether the app is selected as the default handler for the types it
+         * supports.
+         *
+         * @param bool $useByDefault
+         */
+        public function setUseByDefault($useByDefault)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUseByDefault()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Drive\App registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuthorized()
-    {
-    }
-    /**
-     * The template URL to create a file with this app in a given folder. The
-     * template contains the {folderId} to be replaced by the folder ID house the
-     * new file.
-     *
-     * @param string $createInFolderTemplate
-     */
-    public function setCreateInFolderTemplate($createInFolderTemplate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateInFolderTemplate()
-    {
-    }
-    /**
-     * The URL to create a file with this app.
-     *
-     * @param string $createUrl
-     */
-    public function setCreateUrl($createUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateUrl()
-    {
-    }
-    /**
-     * Whether the app has Drive-wide scope. An app with Drive-wide scope can
-     * access all files in the user's Drive.
-     *
-     * @param bool $hasDriveWideScope
-     */
-    public function setHasDriveWideScope($hasDriveWideScope)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getHasDriveWideScope()
-    {
-    }
-    /**
-     * The various icons for the app.
-     *
-     * @param AppIcons[] $icons
-     */
-    public function setIcons($icons)
-    {
-    }
-    /**
-     * @return AppIcons[]
-     */
-    public function getIcons()
-    {
-    }
-    /**
-     * The ID of the app.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Whether the app is installed.
-     *
-     * @param bool $installed
-     */
-    public function setInstalled($installed)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getInstalled()
-    {
-    }
-    /**
-     * Output only. Identifies what kind of resource this is. Value: the fixed
-     * string "drive#app".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * A long description of the app.
-     *
-     * @param string $longDescription
-     */
-    public function setLongDescription($longDescription)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLongDescription()
-    {
-    }
-    /**
-     * The name of the app.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The type of object this app creates such as a Chart. If empty, the app name
-     * should be used instead.
-     *
-     * @param string $objectType
-     */
-    public function setObjectType($objectType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObjectType()
-    {
-    }
-    /**
-     * The template URL for opening files with this app. The template contains
-     * {ids} or {exportIds} to be replaced by the actual file IDs. For more
-     * information, see Open Files for the full documentation.
-     *
-     * @param string $openUrlTemplate
-     */
-    public function setOpenUrlTemplate($openUrlTemplate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOpenUrlTemplate()
-    {
-    }
-    /**
-     * The list of primary file extensions.
-     *
-     * @param string[] $primaryFileExtensions
-     */
-    public function setPrimaryFileExtensions($primaryFileExtensions)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPrimaryFileExtensions()
-    {
-    }
-    /**
-     * The list of primary MIME types.
-     *
-     * @param string[] $primaryMimeTypes
-     */
-    public function setPrimaryMimeTypes($primaryMimeTypes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPrimaryMimeTypes()
-    {
-    }
-    /**
-     * The ID of the product listing for this app.
-     *
-     * @param string $productId
-     */
-    public function setProductId($productId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProductId()
-    {
-    }
-    /**
-     * A link to the product listing for this app.
-     *
-     * @param string $productUrl
-     */
-    public function setProductUrl($productUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProductUrl()
-    {
-    }
-    /**
-     * The list of secondary file extensions.
-     *
-     * @param string[] $secondaryFileExtensions
-     */
-    public function setSecondaryFileExtensions($secondaryFileExtensions)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSecondaryFileExtensions()
-    {
-    }
-    /**
-     * The list of secondary MIME types.
-     *
-     * @param string[] $secondaryMimeTypes
-     */
-    public function setSecondaryMimeTypes($secondaryMimeTypes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSecondaryMimeTypes()
-    {
-    }
-    /**
-     * A short description of the app.
-     *
-     * @param string $shortDescription
-     */
-    public function setShortDescription($shortDescription)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getShortDescription()
-    {
-    }
-    /**
-     * Whether this app supports creating objects.
-     *
-     * @param bool $supportsCreate
-     */
-    public function setSupportsCreate($supportsCreate)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSupportsCreate()
-    {
-    }
-    /**
-     * Whether this app supports importing from Google Docs.
-     *
-     * @param bool $supportsImport
-     */
-    public function setSupportsImport($supportsImport)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSupportsImport()
-    {
-    }
-    /**
-     * Whether this app supports opening more than one file.
-     *
-     * @param bool $supportsMultiOpen
-     */
-    public function setSupportsMultiOpen($supportsMultiOpen)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSupportsMultiOpen()
-    {
-    }
-    /**
-     * Whether this app supports creating files when offline.
-     *
-     * @param bool $supportsOfflineCreate
-     */
-    public function setSupportsOfflineCreate($supportsOfflineCreate)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSupportsOfflineCreate()
-    {
-    }
-    /**
-     * Whether the app is selected as the default handler for the types it
-     * supports.
-     *
-     * @param bool $useByDefault
-     */
-    public function setUseByDefault($useByDefault)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUseByDefault()
+    class Google_Service_Drive_App extends \Google\Service\Drive\App
     {
     }
 }

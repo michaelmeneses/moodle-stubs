@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors;
-
-class ListRuntimeActionSchemasResponse extends \Google\Collection
-{
-    protected $collection_key = 'runtimeActionSchemas';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    protected $runtimeActionSchemasType = RuntimeActionSchema::class;
-    protected $runtimeActionSchemasDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Connectors {
+    class ListRuntimeActionSchemasResponse extends \Google\Collection
     {
+        protected $collection_key = 'runtimeActionSchemas';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        protected $runtimeActionSchemasType = RuntimeActionSchema::class;
+        protected $runtimeActionSchemasDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param RuntimeActionSchema[]
+         */
+        public function setRuntimeActionSchemas($runtimeActionSchemas)
+        {
+        }
+        /**
+         * @return RuntimeActionSchema[]
+         */
+        public function getRuntimeActionSchemas()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Connectors\ListRuntimeActionSchemasResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param RuntimeActionSchema[]
-     */
-    public function setRuntimeActionSchemas($runtimeActionSchemas)
-    {
-    }
-    /**
-     * @return RuntimeActionSchema[]
-     */
-    public function getRuntimeActionSchemas()
+    class Google_Service_Connectors_ListRuntimeActionSchemasResponse extends \Google\Service\Connectors\ListRuntimeActionSchemasResponse
     {
     }
 }

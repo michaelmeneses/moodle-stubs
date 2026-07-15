@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkSecurity;
-
-class AuthzPolicyAuthzRuleTo extends \Google\Collection
-{
-    protected $collection_key = 'operations';
-    protected $notOperationsType = AuthzPolicyAuthzRuleToRequestOperation::class;
-    protected $notOperationsDataType = 'array';
-    protected $operationsType = AuthzPolicyAuthzRuleToRequestOperation::class;
-    protected $operationsDataType = 'array';
-    /**
-     * Optional. Describes the negated properties of the targets of a request.
-     * Matches requests for operations that do not match the criteria specified in
-     * this field. At least one of operations or notOperations must be specified.
-     *
-     * @param AuthzPolicyAuthzRuleToRequestOperation[] $notOperations
-     */
-    public function setNotOperations($notOperations)
+namespace Google\Service\NetworkSecurity {
+    class AuthzPolicyAuthzRuleTo extends \Google\Collection
     {
+        protected $collection_key = 'operations';
+        protected $notOperationsType = AuthzPolicyAuthzRuleToRequestOperation::class;
+        protected $notOperationsDataType = 'array';
+        protected $operationsType = AuthzPolicyAuthzRuleToRequestOperation::class;
+        protected $operationsDataType = 'array';
+        /**
+         * Optional. Describes the negated properties of the targets of a request.
+         * Matches requests for operations that do not match the criteria specified in
+         * this field. At least one of operations or notOperations must be specified.
+         *
+         * @param AuthzPolicyAuthzRuleToRequestOperation[] $notOperations
+         */
+        public function setNotOperations($notOperations)
+        {
+        }
+        /**
+         * @return AuthzPolicyAuthzRuleToRequestOperation[]
+         */
+        public function getNotOperations()
+        {
+        }
+        /**
+         * Optional. Describes properties of one or more targets of a request. At
+         * least one of operations or notOperations must be specified. Limited to 1
+         * operation. A match occurs when ANY operation (in operations or
+         * notOperations) matches. Within an operation, the match follows AND
+         * semantics across fields and OR semantics within a field, i.e. a match
+         * occurs when ANY path matches AND ANY header matches and ANY method matches.
+         *
+         * @param AuthzPolicyAuthzRuleToRequestOperation[] $operations
+         */
+        public function setOperations($operations)
+        {
+        }
+        /**
+         * @return AuthzPolicyAuthzRuleToRequestOperation[]
+         */
+        public function getOperations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AuthzPolicyAuthzRuleToRequestOperation[]
+     * Runtime class alias of \Google\Service\NetworkSecurity\AuthzPolicyAuthzRuleTo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNotOperations()
-    {
-    }
-    /**
-     * Optional. Describes properties of one or more targets of a request. At
-     * least one of operations or notOperations must be specified. Limited to 1
-     * operation. A match occurs when ANY operation (in operations or
-     * notOperations) matches. Within an operation, the match follows AND
-     * semantics across fields and OR semantics within a field, i.e. a match
-     * occurs when ANY path matches AND ANY header matches and ANY method matches.
-     *
-     * @param AuthzPolicyAuthzRuleToRequestOperation[] $operations
-     */
-    public function setOperations($operations)
-    {
-    }
-    /**
-     * @return AuthzPolicyAuthzRuleToRequestOperation[]
-     */
-    public function getOperations()
+    class Google_Service_NetworkSecurity_AuthzPolicyAuthzRuleTo extends \Google\Service\NetworkSecurity\AuthzPolicyAuthzRuleTo
     {
     }
 }

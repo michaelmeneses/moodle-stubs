@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Batch;
-
-class NetworkPolicy extends \Google\Collection
-{
-    protected $collection_key = 'networkInterfaces';
-    protected $networkInterfacesType = NetworkInterface::class;
-    protected $networkInterfacesDataType = 'array';
-    /**
-     * Network configurations.
-     *
-     * @param NetworkInterface[] $networkInterfaces
-     */
-    public function setNetworkInterfaces($networkInterfaces)
+namespace Google\Service\Batch {
+    class NetworkPolicy extends \Google\Collection
     {
+        protected $collection_key = 'networkInterfaces';
+        protected $networkInterfacesType = NetworkInterface::class;
+        protected $networkInterfacesDataType = 'array';
+        /**
+         * Network configurations.
+         *
+         * @param NetworkInterface[] $networkInterfaces
+         */
+        public function setNetworkInterfaces($networkInterfaces)
+        {
+        }
+        /**
+         * @return NetworkInterface[]
+         */
+        public function getNetworkInterfaces()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return NetworkInterface[]
+     * Runtime class alias of \Google\Service\Batch\NetworkPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNetworkInterfaces()
+    class Google_Service_Batch_NetworkPolicy extends \Google\Service\Batch\NetworkPolicy
     {
     }
 }

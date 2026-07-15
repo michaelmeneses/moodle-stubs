@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1CheckGroundingResponseCheckGroundingFactChunk extends \Google\Model
-{
-    /**
-     * Text content of the fact chunk. Can be at most 10K characters long.
-     *
-     * @var string
-     */
-    public $chunkText;
-    /**
-     * Text content of the fact chunk. Can be at most 10K characters long.
-     *
-     * @param string $chunkText
-     */
-    public function setChunkText($chunkText)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1CheckGroundingResponseCheckGroundingFactChunk extends \Google\Model
     {
+        /**
+         * Text content of the fact chunk. Can be at most 10K characters long.
+         *
+         * @var string
+         */
+        public $chunkText;
+        /**
+         * Text content of the fact chunk. Can be at most 10K characters long.
+         *
+         * @param string $chunkText
+         */
+        public function setChunkText($chunkText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChunkText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1CheckGroundingResponseCheckGroundingFactChunk registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChunkText()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1CheckGroundingResponseCheckGroundingFactChunk extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1CheckGroundingResponseCheckGroundingFactChunk
     {
     }
 }

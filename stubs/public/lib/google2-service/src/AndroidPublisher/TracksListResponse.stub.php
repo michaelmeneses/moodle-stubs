@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class TracksListResponse extends \Google\Collection
-{
-    protected $collection_key = 'tracks';
-    /**
-     * The kind of this response ("androidpublisher#tracksListResponse").
-     *
-     * @var string
-     */
-    public $kind;
-    protected $tracksType = Track::class;
-    protected $tracksDataType = 'array';
-    /**
-     * The kind of this response ("androidpublisher#tracksListResponse").
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\AndroidPublisher {
+    class TracksListResponse extends \Google\Collection
     {
+        protected $collection_key = 'tracks';
+        /**
+         * The kind of this response ("androidpublisher#tracksListResponse").
+         *
+         * @var string
+         */
+        public $kind;
+        protected $tracksType = Track::class;
+        protected $tracksDataType = 'array';
+        /**
+         * The kind of this response ("androidpublisher#tracksListResponse").
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * All tracks (including tracks with no releases).
+         *
+         * @param Track[] $tracks
+         */
+        public function setTracks($tracks)
+        {
+        }
+        /**
+         * @return Track[]
+         */
+        public function getTracks()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidPublisher\TracksListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * All tracks (including tracks with no releases).
-     *
-     * @param Track[] $tracks
-     */
-    public function setTracks($tracks)
-    {
-    }
-    /**
-     * @return Track[]
-     */
-    public function getTracks()
+    class Google_Service_AndroidPublisher_TracksListResponse extends \Google\Service\AndroidPublisher\TracksListResponse
     {
     }
 }

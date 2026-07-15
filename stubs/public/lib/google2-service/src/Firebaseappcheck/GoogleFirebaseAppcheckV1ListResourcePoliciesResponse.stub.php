@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firebaseappcheck;
-
-class GoogleFirebaseAppcheckV1ListResourcePoliciesResponse extends \Google\Collection
-{
-    protected $collection_key = 'resourcePolicies';
-    /**
-     * If the result list is too large to fit in a single response, then a token
-     * is returned. If the string is empty or omitted, then this response is the
-     * last page of results. This token can be used in a subsequent call to
-     * ListResourcePolicies to find the next group of ResourcePolicy objects. Page
-     * tokens are short-lived and should not be persisted.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $resourcePoliciesType = GoogleFirebaseAppcheckV1ResourcePolicy::class;
-    protected $resourcePoliciesDataType = 'array';
-    /**
-     * If the result list is too large to fit in a single response, then a token
-     * is returned. If the string is empty or omitted, then this response is the
-     * last page of results. This token can be used in a subsequent call to
-     * ListResourcePolicies to find the next group of ResourcePolicy objects. Page
-     * tokens are short-lived and should not be persisted.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Firebaseappcheck {
+    class GoogleFirebaseAppcheckV1ListResourcePoliciesResponse extends \Google\Collection
     {
+        protected $collection_key = 'resourcePolicies';
+        /**
+         * If the result list is too large to fit in a single response, then a token
+         * is returned. If the string is empty or omitted, then this response is the
+         * last page of results. This token can be used in a subsequent call to
+         * ListResourcePolicies to find the next group of ResourcePolicy objects. Page
+         * tokens are short-lived and should not be persisted.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $resourcePoliciesType = GoogleFirebaseAppcheckV1ResourcePolicy::class;
+        protected $resourcePoliciesDataType = 'array';
+        /**
+         * If the result list is too large to fit in a single response, then a token
+         * is returned. If the string is empty or omitted, then this response is the
+         * last page of results. This token can be used in a subsequent call to
+         * ListResourcePolicies to find the next group of ResourcePolicy objects. Page
+         * tokens are short-lived and should not be persisted.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The ResourcePolicy objects retrieved.
+         *
+         * @param GoogleFirebaseAppcheckV1ResourcePolicy[] $resourcePolicies
+         */
+        public function setResourcePolicies($resourcePolicies)
+        {
+        }
+        /**
+         * @return GoogleFirebaseAppcheckV1ResourcePolicy[]
+         */
+        public function getResourcePolicies()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1ListResourcePoliciesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The ResourcePolicy objects retrieved.
-     *
-     * @param GoogleFirebaseAppcheckV1ResourcePolicy[] $resourcePolicies
-     */
-    public function setResourcePolicies($resourcePolicies)
-    {
-    }
-    /**
-     * @return GoogleFirebaseAppcheckV1ResourcePolicy[]
-     */
-    public function getResourcePolicies()
+    class Google_Service_Firebaseappcheck_GoogleFirebaseAppcheckV1ListResourcePoliciesResponse extends \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1ListResourcePoliciesResponse
     {
     }
 }

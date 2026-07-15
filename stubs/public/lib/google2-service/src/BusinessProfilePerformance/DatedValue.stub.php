@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BusinessProfilePerformance;
-
-class DatedValue extends \Google\Model
-{
-    protected $dateType = Date::class;
-    protected $dateDataType = '';
-    /**
-     * The value of the datapoint. This will not be present when the value is
-     * zero.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * The date that the datapoint corresponds to. This represents a month value
-     * if the day field is not set.
-     *
-     * @param Date $date
-     */
-    public function setDate(Date $date)
+namespace Google\Service\BusinessProfilePerformance {
+    class DatedValue extends \Google\Model
     {
+        protected $dateType = Date::class;
+        protected $dateDataType = '';
+        /**
+         * The value of the datapoint. This will not be present when the value is
+         * zero.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * The date that the datapoint corresponds to. This represents a month value
+         * if the day field is not set.
+         *
+         * @param Date $date
+         */
+        public function setDate(Date $date)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getDate()
+        {
+        }
+        /**
+         * The value of the datapoint. This will not be present when the value is
+         * zero.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Date
+     * Runtime class alias of \Google\Service\BusinessProfilePerformance\DatedValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDate()
-    {
-    }
-    /**
-     * The value of the datapoint. This will not be present when the value is
-     * zero.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_BusinessProfilePerformance_DatedValue extends \Google\Service\BusinessProfilePerformance\DatedValue
     {
     }
 }

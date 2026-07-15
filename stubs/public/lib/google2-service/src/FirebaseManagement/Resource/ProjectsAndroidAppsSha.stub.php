@@ -21,71 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseManagement\Resource;
-
-/**
- * The "sha" collection of methods.
- * Typical usage is:
- *  <code>
- *   $firebaseService = new Google\Service\FirebaseManagement(...);
- *   $sha = $firebaseService->projects_androidApps_sha;
- *  </code>
- */
-class ProjectsAndroidAppsSha extends \Google\Service\Resource
-{
+namespace Google\Service\FirebaseManagement\Resource {
+    use Google\Service\FirebaseManagement\FirebaseEmpty;
+    use Google\Service\FirebaseManagement\ListShaCertificatesResponse;
+    use Google\Service\FirebaseManagement\ShaCertificate;
     /**
-     * Adds a ShaCertificate to the specified AndroidApp. (sha.create)
-     *
-     * @param string $parent The resource name of the parent AndroidApp to which to
-     * add a ShaCertificate, in the format: projects/PROJECT_IDENTIFIER/androidApps/
-     * APP_ID Since an APP_ID is a unique identifier, the Unique Resource from Sub-
-     * Collection access pattern may be used here, in the format:
-     * projects/-/androidApps/APP_ID Refer to the `AndroidApp`
-     * [`name`](../projects.androidApps#AndroidApp.FIELDS.name) field for details
-     * about PROJECT_IDENTIFIER and APP_ID values.
-     * @param ShaCertificate $postBody
-     * @param array $optParams Optional parameters.
-     * @return ShaCertificate
-     * @throws \Google\Service\Exception
+     * The "sha" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $firebaseService = new Google\Service\FirebaseManagement(...);
+     *   $sha = $firebaseService->projects_androidApps_sha;
+     *  </code>
      */
-    public function create($parent, ShaCertificate $postBody, $optParams = [])
+    class ProjectsAndroidAppsSha extends \Google\Service\Resource
     {
+        /**
+         * Adds a ShaCertificate to the specified AndroidApp. (sha.create)
+         *
+         * @param string $parent The resource name of the parent AndroidApp to which to
+         * add a ShaCertificate, in the format: projects/PROJECT_IDENTIFIER/androidApps/
+         * APP_ID Since an APP_ID is a unique identifier, the Unique Resource from Sub-
+         * Collection access pattern may be used here, in the format:
+         * projects/-/androidApps/APP_ID Refer to the `AndroidApp`
+         * [`name`](../projects.androidApps#AndroidApp.FIELDS.name) field for details
+         * about PROJECT_IDENTIFIER and APP_ID values.
+         * @param ShaCertificate $postBody
+         * @param array $optParams Optional parameters.
+         * @return ShaCertificate
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, ShaCertificate $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Removes a ShaCertificate from the specified AndroidApp. (sha.delete)
+         *
+         * @param string $name The resource name of the ShaCertificate to remove from
+         * the parent AndroidApp, in the format:
+         * projects/PROJECT_IDENTIFIER/androidApps/APP_ID /sha/SHA_HASH Refer to the
+         * `ShaCertificate`
+         * [`name`](../projects.androidApps.sha#ShaCertificate.FIELDS.name) field for
+         * details about PROJECT_IDENTIFIER, APP_ID, and SHA_HASH values. You can obtain
+         * the full resource name of the `ShaCertificate` from the response of
+         * [`ListShaCertificates`](../projects.androidApps.sha/list) or the original
+         * [`CreateShaCertificate`](../projects.androidApps.sha/create).
+         * @param array $optParams Optional parameters.
+         * @return FirebaseEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists the SHA-1 and SHA-256 certificates for the specified AndroidApp.
+         * (sha.listProjectsAndroidAppsSha)
+         *
+         * @param string $parent The resource name of the parent AndroidApp for which to
+         * list each associated ShaCertificate, in the format:
+         * projects/PROJECT_IDENTIFIER /androidApps/APP_ID Since an APP_ID is a unique
+         * identifier, the Unique Resource from Sub-Collection access pattern may be
+         * used here, in the format: projects/-/androidApps/APP_ID Refer to the
+         * `AndroidApp` [`name`](../projects.androidApps#AndroidApp.FIELDS.name) field
+         * for details about PROJECT_IDENTIFIER and APP_ID values.
+         * @param array $optParams Optional parameters.
+         * @return ListShaCertificatesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsAndroidAppsSha($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Removes a ShaCertificate from the specified AndroidApp. (sha.delete)
-     *
-     * @param string $name The resource name of the ShaCertificate to remove from
-     * the parent AndroidApp, in the format:
-     * projects/PROJECT_IDENTIFIER/androidApps/APP_ID /sha/SHA_HASH Refer to the
-     * `ShaCertificate`
-     * [`name`](../projects.androidApps.sha#ShaCertificate.FIELDS.name) field for
-     * details about PROJECT_IDENTIFIER, APP_ID, and SHA_HASH values. You can obtain
-     * the full resource name of the `ShaCertificate` from the response of
-     * [`ListShaCertificates`](../projects.androidApps.sha/list) or the original
-     * [`CreateShaCertificate`](../projects.androidApps.sha/create).
-     * @param array $optParams Optional parameters.
-     * @return FirebaseEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\FirebaseManagement\Resource\ProjectsAndroidAppsSha registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists the SHA-1 and SHA-256 certificates for the specified AndroidApp.
-     * (sha.listProjectsAndroidAppsSha)
-     *
-     * @param string $parent The resource name of the parent AndroidApp for which to
-     * list each associated ShaCertificate, in the format:
-     * projects/PROJECT_IDENTIFIER /androidApps/APP_ID Since an APP_ID is a unique
-     * identifier, the Unique Resource from Sub-Collection access pattern may be
-     * used here, in the format: projects/-/androidApps/APP_ID Refer to the
-     * `AndroidApp` [`name`](../projects.androidApps#AndroidApp.FIELDS.name) field
-     * for details about PROJECT_IDENTIFIER and APP_ID values.
-     * @param array $optParams Optional parameters.
-     * @return ListShaCertificatesResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsAndroidAppsSha($parent, $optParams = [])
+    class Google_Service_FirebaseManagement_Resource_ProjectsAndroidAppsSha extends \Google\Service\FirebaseManagement\Resource\ProjectsAndroidAppsSha
     {
     }
 }

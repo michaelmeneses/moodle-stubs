@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BinaryAuthorization;
-
-class ValidateAttestationOccurrenceRequest extends \Google\Model
-{
-    protected $attestationType = AttestationOccurrence::class;
-    protected $attestationDataType = '';
-    /**
-     * Required. The resource name of the Note to which the containing Occurrence
-     * is associated.
-     *
-     * @var string
-     */
-    public $occurrenceNote;
-    /**
-     * Required. The URI of the artifact (e.g. container image) that is the
-     * subject of the containing Occurrence.
-     *
-     * @var string
-     */
-    public $occurrenceResourceUri;
-    /**
-     * Required. An AttestationOccurrence to be checked that it can be verified by
-     * the `Attestor`. It does not have to be an existing entity in Container
-     * Analysis. It must otherwise be a valid `AttestationOccurrence`.
-     *
-     * @param AttestationOccurrence $attestation
-     */
-    public function setAttestation(AttestationOccurrence $attestation)
+namespace Google\Service\BinaryAuthorization {
+    class ValidateAttestationOccurrenceRequest extends \Google\Model
     {
+        protected $attestationType = AttestationOccurrence::class;
+        protected $attestationDataType = '';
+        /**
+         * Required. The resource name of the Note to which the containing Occurrence
+         * is associated.
+         *
+         * @var string
+         */
+        public $occurrenceNote;
+        /**
+         * Required. The URI of the artifact (e.g. container image) that is the
+         * subject of the containing Occurrence.
+         *
+         * @var string
+         */
+        public $occurrenceResourceUri;
+        /**
+         * Required. An AttestationOccurrence to be checked that it can be verified by
+         * the `Attestor`. It does not have to be an existing entity in Container
+         * Analysis. It must otherwise be a valid `AttestationOccurrence`.
+         *
+         * @param AttestationOccurrence $attestation
+         */
+        public function setAttestation(AttestationOccurrence $attestation)
+        {
+        }
+        /**
+         * @return AttestationOccurrence
+         */
+        public function getAttestation()
+        {
+        }
+        /**
+         * Required. The resource name of the Note to which the containing Occurrence
+         * is associated.
+         *
+         * @param string $occurrenceNote
+         */
+        public function setOccurrenceNote($occurrenceNote)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOccurrenceNote()
+        {
+        }
+        /**
+         * Required. The URI of the artifact (e.g. container image) that is the
+         * subject of the containing Occurrence.
+         *
+         * @param string $occurrenceResourceUri
+         */
+        public function setOccurrenceResourceUri($occurrenceResourceUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOccurrenceResourceUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AttestationOccurrence
+     * Runtime class alias of \Google\Service\BinaryAuthorization\ValidateAttestationOccurrenceRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttestation()
-    {
-    }
-    /**
-     * Required. The resource name of the Note to which the containing Occurrence
-     * is associated.
-     *
-     * @param string $occurrenceNote
-     */
-    public function setOccurrenceNote($occurrenceNote)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOccurrenceNote()
-    {
-    }
-    /**
-     * Required. The URI of the artifact (e.g. container image) that is the
-     * subject of the containing Occurrence.
-     *
-     * @param string $occurrenceResourceUri
-     */
-    public function setOccurrenceResourceUri($occurrenceResourceUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOccurrenceResourceUri()
+    class Google_Service_BinaryAuthorization_ValidateAttestationOccurrenceRequest extends \Google\Service\BinaryAuthorization\ValidateAttestationOccurrenceRequest
     {
     }
 }

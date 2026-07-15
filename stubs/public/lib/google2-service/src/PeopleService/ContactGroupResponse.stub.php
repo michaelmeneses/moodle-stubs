@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PeopleService;
-
-class ContactGroupResponse extends \Google\Model
-{
-    protected $contactGroupType = ContactGroup::class;
-    protected $contactGroupDataType = '';
-    /**
-     * The original requested resource name.
-     *
-     * @var string
-     */
-    public $requestedResourceName;
-    protected $statusType = Status::class;
-    protected $statusDataType = '';
-    /**
-     * The contact group.
-     *
-     * @param ContactGroup $contactGroup
-     */
-    public function setContactGroup(ContactGroup $contactGroup)
+namespace Google\Service\PeopleService {
+    class ContactGroupResponse extends \Google\Model
     {
+        protected $contactGroupType = ContactGroup::class;
+        protected $contactGroupDataType = '';
+        /**
+         * The original requested resource name.
+         *
+         * @var string
+         */
+        public $requestedResourceName;
+        protected $statusType = Status::class;
+        protected $statusDataType = '';
+        /**
+         * The contact group.
+         *
+         * @param ContactGroup $contactGroup
+         */
+        public function setContactGroup(ContactGroup $contactGroup)
+        {
+        }
+        /**
+         * @return ContactGroup
+         */
+        public function getContactGroup()
+        {
+        }
+        /**
+         * The original requested resource name.
+         *
+         * @param string $requestedResourceName
+         */
+        public function setRequestedResourceName($requestedResourceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestedResourceName()
+        {
+        }
+        /**
+         * The status of the response.
+         *
+         * @param Status $status
+         */
+        public function setStatus(Status $status)
+        {
+        }
+        /**
+         * @return Status
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ContactGroup
+     * Runtime class alias of \Google\Service\PeopleService\ContactGroupResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContactGroup()
-    {
-    }
-    /**
-     * The original requested resource name.
-     *
-     * @param string $requestedResourceName
-     */
-    public function setRequestedResourceName($requestedResourceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestedResourceName()
-    {
-    }
-    /**
-     * The status of the response.
-     *
-     * @param Status $status
-     */
-    public function setStatus(Status $status)
-    {
-    }
-    /**
-     * @return Status
-     */
-    public function getStatus()
+    class Google_Service_PeopleService_ContactGroupResponse extends \Google\Service\PeopleService\ContactGroupResponse
     {
     }
 }

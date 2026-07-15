@@ -21,59 +21,68 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2FixedSizeBucketingConfig extends \Google\Model
-{
-    /**
-     * Required. Size of each bucket (except for minimum and maximum buckets). So
-     * if `lower_bound` = 10, `upper_bound` = 89, and `bucket_size` = 10, then the
-     * following buckets would be used: -10, 10-20, 20-30, 30-40, 40-50, 50-60,
-     * 60-70, 70-80, 80-89, 89+. Precision up to 2 decimals works.
-     *
-     * @var 
-     */
-    public $bucketSize;
-    protected $lowerBoundType = GooglePrivacyDlpV2Value::class;
-    protected $lowerBoundDataType = '';
-    protected $upperBoundType = GooglePrivacyDlpV2Value::class;
-    protected $upperBoundDataType = '';
-    public function setBucketSize($bucketSize)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2FixedSizeBucketingConfig extends \Google\Model
     {
+        /**
+         * Required. Size of each bucket (except for minimum and maximum buckets). So
+         * if `lower_bound` = 10, `upper_bound` = 89, and `bucket_size` = 10, then the
+         * following buckets would be used: -10, 10-20, 20-30, 30-40, 40-50, 50-60,
+         * 60-70, 70-80, 80-89, 89+. Precision up to 2 decimals works.
+         *
+         * @var 
+         */
+        public $bucketSize;
+        protected $lowerBoundType = GooglePrivacyDlpV2Value::class;
+        protected $lowerBoundDataType = '';
+        protected $upperBoundType = GooglePrivacyDlpV2Value::class;
+        protected $upperBoundDataType = '';
+        public function setBucketSize($bucketSize)
+        {
+        }
+        public function getBucketSize()
+        {
+        }
+        /**
+         * Required. Lower bound value of buckets. All values less than `lower_bound`
+         * are grouped together into a single bucket; for example if `lower_bound` =
+         * 10, then all values less than 10 are replaced with the value "-10".
+         *
+         * @param GooglePrivacyDlpV2Value $lowerBound
+         */
+        public function setLowerBound(GooglePrivacyDlpV2Value $lowerBound)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2Value
+         */
+        public function getLowerBound()
+        {
+        }
+        /**
+         * Required. Upper bound value of buckets. All values greater than upper_bound
+         * are grouped together into a single bucket; for example if `upper_bound` =
+         * 89, then all values greater than 89 are replaced with the value "89+".
+         *
+         * @param GooglePrivacyDlpV2Value $upperBound
+         */
+        public function setUpperBound(GooglePrivacyDlpV2Value $upperBound)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2Value
+         */
+        public function getUpperBound()
+        {
+        }
     }
-    public function getBucketSize()
-    {
-    }
+}
+namespace {
     /**
-     * Required. Lower bound value of buckets. All values less than `lower_bound`
-     * are grouped together into a single bucket; for example if `lower_bound` =
-     * 10, then all values less than 10 are replaced with the value "-10".
-     *
-     * @param GooglePrivacyDlpV2Value $lowerBound
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2FixedSizeBucketingConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setLowerBound(GooglePrivacyDlpV2Value $lowerBound)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2Value
-     */
-    public function getLowerBound()
-    {
-    }
-    /**
-     * Required. Upper bound value of buckets. All values greater than upper_bound
-     * are grouped together into a single bucket; for example if `upper_bound` =
-     * 89, then all values greater than 89 are replaced with the value "89+".
-     *
-     * @param GooglePrivacyDlpV2Value $upperBound
-     */
-    public function setUpperBound(GooglePrivacyDlpV2Value $upperBound)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2Value
-     */
-    public function getUpperBound()
+    class Google_Service_DLP_GooglePrivacyDlpV2FixedSizeBucketingConfig extends \Google\Service\DLP\GooglePrivacyDlpV2FixedSizeBucketingConfig
     {
     }
 }

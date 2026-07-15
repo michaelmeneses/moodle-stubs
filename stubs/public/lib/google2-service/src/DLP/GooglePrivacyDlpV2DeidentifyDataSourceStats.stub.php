@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2DeidentifyDataSourceStats extends \Google\Model
-{
-    /**
-     * Number of successfully applied transformations.
-     *
-     * @var string
-     */
-    public $transformationCount;
-    /**
-     * Number of errors encountered while trying to apply transformations.
-     *
-     * @var string
-     */
-    public $transformationErrorCount;
-    /**
-     * Total size in bytes that were transformed in some way.
-     *
-     * @var string
-     */
-    public $transformedBytes;
-    /**
-     * Number of successfully applied transformations.
-     *
-     * @param string $transformationCount
-     */
-    public function setTransformationCount($transformationCount)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2DeidentifyDataSourceStats extends \Google\Model
     {
+        /**
+         * Number of successfully applied transformations.
+         *
+         * @var string
+         */
+        public $transformationCount;
+        /**
+         * Number of errors encountered while trying to apply transformations.
+         *
+         * @var string
+         */
+        public $transformationErrorCount;
+        /**
+         * Total size in bytes that were transformed in some way.
+         *
+         * @var string
+         */
+        public $transformedBytes;
+        /**
+         * Number of successfully applied transformations.
+         *
+         * @param string $transformationCount
+         */
+        public function setTransformationCount($transformationCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTransformationCount()
+        {
+        }
+        /**
+         * Number of errors encountered while trying to apply transformations.
+         *
+         * @param string $transformationErrorCount
+         */
+        public function setTransformationErrorCount($transformationErrorCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTransformationErrorCount()
+        {
+        }
+        /**
+         * Total size in bytes that were transformed in some way.
+         *
+         * @param string $transformedBytes
+         */
+        public function setTransformedBytes($transformedBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTransformedBytes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2DeidentifyDataSourceStats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTransformationCount()
-    {
-    }
-    /**
-     * Number of errors encountered while trying to apply transformations.
-     *
-     * @param string $transformationErrorCount
-     */
-    public function setTransformationErrorCount($transformationErrorCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTransformationErrorCount()
-    {
-    }
-    /**
-     * Total size in bytes that were transformed in some way.
-     *
-     * @param string $transformedBytes
-     */
-    public function setTransformedBytes($transformedBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTransformedBytes()
+    class Google_Service_DLP_GooglePrivacyDlpV2DeidentifyDataSourceStats extends \Google\Service\DLP\GooglePrivacyDlpV2DeidentifyDataSourceStats
     {
     }
 }

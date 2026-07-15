@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1ConfusionMatrixEntry extends \Google\Model
-{
-    protected $annotationSpecType = GoogleCloudDatalabelingV1beta1AnnotationSpec::class;
-    protected $annotationSpecDataType = '';
-    /**
-     * Number of items predicted to have this label. (The ground truth label for
-     * these items is the `Row.annotationSpec` of this entry's parent.)
-     *
-     * @var int
-     */
-    public $itemCount;
-    /**
-     * The annotation spec of a predicted label.
-     *
-     * @param GoogleCloudDatalabelingV1beta1AnnotationSpec $annotationSpec
-     */
-    public function setAnnotationSpec(GoogleCloudDatalabelingV1beta1AnnotationSpec $annotationSpec)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1ConfusionMatrixEntry extends \Google\Model
     {
+        protected $annotationSpecType = GoogleCloudDatalabelingV1beta1AnnotationSpec::class;
+        protected $annotationSpecDataType = '';
+        /**
+         * Number of items predicted to have this label. (The ground truth label for
+         * these items is the `Row.annotationSpec` of this entry's parent.)
+         *
+         * @var int
+         */
+        public $itemCount;
+        /**
+         * The annotation spec of a predicted label.
+         *
+         * @param GoogleCloudDatalabelingV1beta1AnnotationSpec $annotationSpec
+         */
+        public function setAnnotationSpec(GoogleCloudDatalabelingV1beta1AnnotationSpec $annotationSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1AnnotationSpec
+         */
+        public function getAnnotationSpec()
+        {
+        }
+        /**
+         * Number of items predicted to have this label. (The ground truth label for
+         * these items is the `Row.annotationSpec` of this entry's parent.)
+         *
+         * @param int $itemCount
+         */
+        public function setItemCount($itemCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getItemCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatalabelingV1beta1AnnotationSpec
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1ConfusionMatrixEntry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotationSpec()
-    {
-    }
-    /**
-     * Number of items predicted to have this label. (The ground truth label for
-     * these items is the `Row.annotationSpec` of this entry's parent.)
-     *
-     * @param int $itemCount
-     */
-    public function setItemCount($itemCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getItemCount()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1ConfusionMatrixEntry extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1ConfusionMatrixEntry
     {
     }
 }

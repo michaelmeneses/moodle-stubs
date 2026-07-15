@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigQueryReservation;
-
-class Autoscale extends \Google\Model
-{
-    /**
-     * Output only. The slot capacity added to this reservation when autoscale
-     * happens. Will be between [0, max_slots]. Note: after users reduce
-     * max_slots, it may take a while before it can be propagated, so
-     * current_slots may stay in the original value and could be larger than
-     * max_slots for that brief period (less than one minute)
-     *
-     * @var string
-     */
-    public $currentSlots;
-    /**
-     * Optional. Number of slots to be scaled when needed.
-     *
-     * @var string
-     */
-    public $maxSlots;
-    /**
-     * Output only. The slot capacity added to this reservation when autoscale
-     * happens. Will be between [0, max_slots]. Note: after users reduce
-     * max_slots, it may take a while before it can be propagated, so
-     * current_slots may stay in the original value and could be larger than
-     * max_slots for that brief period (less than one minute)
-     *
-     * @param string $currentSlots
-     */
-    public function setCurrentSlots($currentSlots)
+namespace Google\Service\BigQueryReservation {
+    class Autoscale extends \Google\Model
     {
+        /**
+         * Output only. The slot capacity added to this reservation when autoscale
+         * happens. Will be between [0, max_slots]. Note: after users reduce
+         * max_slots, it may take a while before it can be propagated, so
+         * current_slots may stay in the original value and could be larger than
+         * max_slots for that brief period (less than one minute)
+         *
+         * @var string
+         */
+        public $currentSlots;
+        /**
+         * Optional. Number of slots to be scaled when needed.
+         *
+         * @var string
+         */
+        public $maxSlots;
+        /**
+         * Output only. The slot capacity added to this reservation when autoscale
+         * happens. Will be between [0, max_slots]. Note: after users reduce
+         * max_slots, it may take a while before it can be propagated, so
+         * current_slots may stay in the original value and could be larger than
+         * max_slots for that brief period (less than one minute)
+         *
+         * @param string $currentSlots
+         */
+        public function setCurrentSlots($currentSlots)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCurrentSlots()
+        {
+        }
+        /**
+         * Optional. Number of slots to be scaled when needed.
+         *
+         * @param string $maxSlots
+         */
+        public function setMaxSlots($maxSlots)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaxSlots()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BigQueryReservation\Autoscale registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCurrentSlots()
-    {
-    }
-    /**
-     * Optional. Number of slots to be scaled when needed.
-     *
-     * @param string $maxSlots
-     */
-    public function setMaxSlots($maxSlots)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMaxSlots()
+    class Google_Service_BigQueryReservation_Autoscale extends \Google\Service\BigQueryReservation\Autoscale
     {
     }
 }

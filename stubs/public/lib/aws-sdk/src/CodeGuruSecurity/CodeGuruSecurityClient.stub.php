@@ -8,6 +8,7 @@
  */
 namespace Aws\CodeGuruSecurity;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon CodeGuru Security** service.
  * @method \Aws\Result batchGetFindings(array $args = [])

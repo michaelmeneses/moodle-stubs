@@ -21,33 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1BatchDeletePipelineJobsRequest extends \Google\Collection
-{
-    protected $collection_key = 'names';
-    /**
-     * Required. The names of the PipelineJobs to delete. A maximum of 32
-     * PipelineJobs can be deleted in a batch. Format:
-     * `projects/{project}/locations/{location}/pipelineJobs/{pipelineJob}`
-     *
-     * @var string[]
-     */
-    public $names;
-    /**
-     * Required. The names of the PipelineJobs to delete. A maximum of 32
-     * PipelineJobs can be deleted in a batch. Format:
-     * `projects/{project}/locations/{location}/pipelineJobs/{pipelineJob}`
-     *
-     * @param string[] $names
-     */
-    public function setNames($names)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1BatchDeletePipelineJobsRequest extends \Google\Collection
     {
+        protected $collection_key = 'names';
+        /**
+         * Required. The names of the PipelineJobs to delete. A maximum of 32
+         * PipelineJobs can be deleted in a batch. Format:
+         * `projects/{project}/locations/{location}/pipelineJobs/{pipelineJob}`
+         *
+         * @var string[]
+         */
+        public $names;
+        /**
+         * Required. The names of the PipelineJobs to delete. A maximum of 32
+         * PipelineJobs can be deleted in a batch. Format:
+         * `projects/{project}/locations/{location}/pipelineJobs/{pipelineJob}`
+         *
+         * @param string[] $names
+         */
+        public function setNames($names)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getNames()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1BatchDeletePipelineJobsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNames()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1BatchDeletePipelineJobsRequest extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1BatchDeletePipelineJobsRequest
     {
     }
 }

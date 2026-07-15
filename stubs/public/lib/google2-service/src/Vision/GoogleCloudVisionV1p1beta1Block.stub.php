@@ -21,129 +21,138 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class GoogleCloudVisionV1p1beta1Block extends \Google\Collection
-{
-    /**
-     * Unknown block type.
-     */
-    public const BLOCK_TYPE_UNKNOWN = 'UNKNOWN';
-    /**
-     * Regular text block.
-     */
-    public const BLOCK_TYPE_TEXT = 'TEXT';
-    /**
-     * Table block.
-     */
-    public const BLOCK_TYPE_TABLE = 'TABLE';
-    /**
-     * Image block.
-     */
-    public const BLOCK_TYPE_PICTURE = 'PICTURE';
-    /**
-     * Horizontal/vertical line box.
-     */
-    public const BLOCK_TYPE_RULER = 'RULER';
-    /**
-     * Barcode block.
-     */
-    public const BLOCK_TYPE_BARCODE = 'BARCODE';
-    protected $collection_key = 'paragraphs';
-    /**
-     * Detected block type (text, image etc) for this block.
-     *
-     * @var string
-     */
-    public $blockType;
-    protected $boundingBoxType = GoogleCloudVisionV1p1beta1BoundingPoly::class;
-    protected $boundingBoxDataType = '';
-    /**
-     * Confidence of the OCR results on the block. Range [0, 1].
-     *
-     * @var float
-     */
-    public $confidence;
-    protected $paragraphsType = GoogleCloudVisionV1p1beta1Paragraph::class;
-    protected $paragraphsDataType = 'array';
-    protected $propertyType = GoogleCloudVisionV1p1beta1TextAnnotationTextProperty::class;
-    protected $propertyDataType = '';
-    /**
-     * Detected block type (text, image etc) for this block.
-     *
-     * Accepted values: UNKNOWN, TEXT, TABLE, PICTURE, RULER, BARCODE
-     *
-     * @param self::BLOCK_TYPE_* $blockType
-     */
-    public function setBlockType($blockType)
+namespace Google\Service\Vision {
+    class GoogleCloudVisionV1p1beta1Block extends \Google\Collection
     {
+        /**
+         * Unknown block type.
+         */
+        public const BLOCK_TYPE_UNKNOWN = 'UNKNOWN';
+        /**
+         * Regular text block.
+         */
+        public const BLOCK_TYPE_TEXT = 'TEXT';
+        /**
+         * Table block.
+         */
+        public const BLOCK_TYPE_TABLE = 'TABLE';
+        /**
+         * Image block.
+         */
+        public const BLOCK_TYPE_PICTURE = 'PICTURE';
+        /**
+         * Horizontal/vertical line box.
+         */
+        public const BLOCK_TYPE_RULER = 'RULER';
+        /**
+         * Barcode block.
+         */
+        public const BLOCK_TYPE_BARCODE = 'BARCODE';
+        protected $collection_key = 'paragraphs';
+        /**
+         * Detected block type (text, image etc) for this block.
+         *
+         * @var string
+         */
+        public $blockType;
+        protected $boundingBoxType = GoogleCloudVisionV1p1beta1BoundingPoly::class;
+        protected $boundingBoxDataType = '';
+        /**
+         * Confidence of the OCR results on the block. Range [0, 1].
+         *
+         * @var float
+         */
+        public $confidence;
+        protected $paragraphsType = GoogleCloudVisionV1p1beta1Paragraph::class;
+        protected $paragraphsDataType = 'array';
+        protected $propertyType = GoogleCloudVisionV1p1beta1TextAnnotationTextProperty::class;
+        protected $propertyDataType = '';
+        /**
+         * Detected block type (text, image etc) for this block.
+         *
+         * Accepted values: UNKNOWN, TEXT, TABLE, PICTURE, RULER, BARCODE
+         *
+         * @param self::BLOCK_TYPE_* $blockType
+         */
+        public function setBlockType($blockType)
+        {
+        }
+        /**
+         * @return self::BLOCK_TYPE_*
+         */
+        public function getBlockType()
+        {
+        }
+        /**
+         * The bounding box for the block. The vertices are in the order of top-left,
+         * top-right, bottom-right, bottom-left. When a rotation of the bounding box
+         * is detected the rotation is represented as around the top-left corner as
+         * defined when the text is read in the 'natural' orientation. For example: *
+         * when the text is horizontal it might look like: 0----1 | | 3----2 * when
+         * it's rotated 180 degrees around the top-left corner it becomes: 2----3 | |
+         * 1----0 and the vertex order will still be (0, 1, 2, 3).
+         *
+         * @param GoogleCloudVisionV1p1beta1BoundingPoly $boundingBox
+         */
+        public function setBoundingBox(GoogleCloudVisionV1p1beta1BoundingPoly $boundingBox)
+        {
+        }
+        /**
+         * @return GoogleCloudVisionV1p1beta1BoundingPoly
+         */
+        public function getBoundingBox()
+        {
+        }
+        /**
+         * Confidence of the OCR results on the block. Range [0, 1].
+         *
+         * @param float $confidence
+         */
+        public function setConfidence($confidence)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getConfidence()
+        {
+        }
+        /**
+         * List of paragraphs in this block (if this blocks is of type text).
+         *
+         * @param GoogleCloudVisionV1p1beta1Paragraph[] $paragraphs
+         */
+        public function setParagraphs($paragraphs)
+        {
+        }
+        /**
+         * @return GoogleCloudVisionV1p1beta1Paragraph[]
+         */
+        public function getParagraphs()
+        {
+        }
+        /**
+         * Additional information detected for the block.
+         *
+         * @param GoogleCloudVisionV1p1beta1TextAnnotationTextProperty $property
+         */
+        public function setProperty(GoogleCloudVisionV1p1beta1TextAnnotationTextProperty $property)
+        {
+        }
+        /**
+         * @return GoogleCloudVisionV1p1beta1TextAnnotationTextProperty
+         */
+        public function getProperty()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::BLOCK_TYPE_*
+     * Runtime class alias of \Google\Service\Vision\GoogleCloudVisionV1p1beta1Block registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBlockType()
-    {
-    }
-    /**
-     * The bounding box for the block. The vertices are in the order of top-left,
-     * top-right, bottom-right, bottom-left. When a rotation of the bounding box
-     * is detected the rotation is represented as around the top-left corner as
-     * defined when the text is read in the 'natural' orientation. For example: *
-     * when the text is horizontal it might look like: 0----1 | | 3----2 * when
-     * it's rotated 180 degrees around the top-left corner it becomes: 2----3 | |
-     * 1----0 and the vertex order will still be (0, 1, 2, 3).
-     *
-     * @param GoogleCloudVisionV1p1beta1BoundingPoly $boundingBox
-     */
-    public function setBoundingBox(GoogleCloudVisionV1p1beta1BoundingPoly $boundingBox)
-    {
-    }
-    /**
-     * @return GoogleCloudVisionV1p1beta1BoundingPoly
-     */
-    public function getBoundingBox()
-    {
-    }
-    /**
-     * Confidence of the OCR results on the block. Range [0, 1].
-     *
-     * @param float $confidence
-     */
-    public function setConfidence($confidence)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getConfidence()
-    {
-    }
-    /**
-     * List of paragraphs in this block (if this blocks is of type text).
-     *
-     * @param GoogleCloudVisionV1p1beta1Paragraph[] $paragraphs
-     */
-    public function setParagraphs($paragraphs)
-    {
-    }
-    /**
-     * @return GoogleCloudVisionV1p1beta1Paragraph[]
-     */
-    public function getParagraphs()
-    {
-    }
-    /**
-     * Additional information detected for the block.
-     *
-     * @param GoogleCloudVisionV1p1beta1TextAnnotationTextProperty $property
-     */
-    public function setProperty(GoogleCloudVisionV1p1beta1TextAnnotationTextProperty $property)
-    {
-    }
-    /**
-     * @return GoogleCloudVisionV1p1beta1TextAnnotationTextProperty
-     */
-    public function getProperty()
+    class Google_Service_Vision_GoogleCloudVisionV1p1beta1Block extends \Google\Service\Vision\GoogleCloudVisionV1p1beta1Block
     {
     }
 }

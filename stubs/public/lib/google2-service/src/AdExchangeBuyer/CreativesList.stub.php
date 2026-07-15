@@ -21,37 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer;
-
-class CreativesList extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    protected $itemsType = Creative::class;
-    protected $itemsDataType = 'array';
-    public $kind;
-    public $nextPageToken;
+namespace Google\Service\AdExchangeBuyer {
+    class CreativesList extends \Google\Collection
+    {
+        protected $collection_key = 'items';
+        protected $itemsType = Creative::class;
+        protected $itemsDataType = 'array';
+        public $kind;
+        public $nextPageToken;
+        /**
+         * @param Creative[]
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return Creative[]
+         */
+        public function getItems()
+        {
+        }
+        public function setKind($kind)
+        {
+        }
+        public function getKind()
+        {
+        }
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        public function getNextPageToken()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @param Creative[]
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\CreativesList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setItems($items)
-    {
-    }
-    /**
-     * @return Creative[]
-     */
-    public function getItems()
-    {
-    }
-    public function setKind($kind)
-    {
-    }
-    public function getKind()
-    {
-    }
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    public function getNextPageToken()
+    class Google_Service_AdExchangeBuyer_CreativesList extends \Google\Service\AdExchangeBuyer\CreativesList
     {
     }
 }

@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudKMS;
-
-class ShowEffectiveAutokeyConfigResponse extends \Google\Model
-{
-    /**
-     * Name of the key project configured in the resource project's folder
-     * ancestry.
-     *
-     * @var string
-     */
-    public $keyProject;
-    /**
-     * Name of the key project configured in the resource project's folder
-     * ancestry.
-     *
-     * @param string $keyProject
-     */
-    public function setKeyProject($keyProject)
+namespace Google\Service\CloudKMS {
+    class ShowEffectiveAutokeyConfigResponse extends \Google\Model
     {
+        /**
+         * Name of the key project configured in the resource project's folder
+         * ancestry.
+         *
+         * @var string
+         */
+        public $keyProject;
+        /**
+         * Name of the key project configured in the resource project's folder
+         * ancestry.
+         *
+         * @param string $keyProject
+         */
+        public function setKeyProject($keyProject)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKeyProject()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudKMS\ShowEffectiveAutokeyConfigResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKeyProject()
+    class Google_Service_CloudKMS_ShowEffectiveAutokeyConfigResponse extends \Google\Service\CloudKMS\ShowEffectiveAutokeyConfigResponse
     {
     }
 }

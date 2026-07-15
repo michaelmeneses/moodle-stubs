@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceNetworking;
-
-class CppSettings extends \Google\Model
-{
-    protected $commonType = CommonLanguageSettings::class;
-    protected $commonDataType = '';
-    /**
-     * Some settings.
-     *
-     * @param CommonLanguageSettings $common
-     */
-    public function setCommon(CommonLanguageSettings $common)
+namespace Google\Service\ServiceNetworking {
+    class CppSettings extends \Google\Model
     {
+        protected $commonType = CommonLanguageSettings::class;
+        protected $commonDataType = '';
+        /**
+         * Some settings.
+         *
+         * @param CommonLanguageSettings $common
+         */
+        public function setCommon(CommonLanguageSettings $common)
+        {
+        }
+        /**
+         * @return CommonLanguageSettings
+         */
+        public function getCommon()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CommonLanguageSettings
+     * Runtime class alias of \Google\Service\ServiceNetworking\CppSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCommon()
+    class Google_Service_ServiceNetworking_CppSettings extends \Google\Service\ServiceNetworking\CppSettings
     {
     }
 }

@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class Discovered extends \Google\Model
-{
-    public $analysisStatus;
-    protected $analysisStatusErrorType = Status::class;
-    protected $analysisStatusErrorDataType = '';
-    public $continuousAnalysis;
-    public $lastAnalysisTime;
-    public function setAnalysisStatus($analysisStatus)
+namespace Google\Service\ContainerAnalysis {
+    class Discovered extends \Google\Model
     {
+        public $analysisStatus;
+        protected $analysisStatusErrorType = Status::class;
+        protected $analysisStatusErrorDataType = '';
+        public $continuousAnalysis;
+        public $lastAnalysisTime;
+        public function setAnalysisStatus($analysisStatus)
+        {
+        }
+        public function getAnalysisStatus()
+        {
+        }
+        /**
+         * @param Status
+         */
+        public function setAnalysisStatusError(Status $analysisStatusError)
+        {
+        }
+        /**
+         * @return Status
+         */
+        public function getAnalysisStatusError()
+        {
+        }
+        public function setContinuousAnalysis($continuousAnalysis)
+        {
+        }
+        public function getContinuousAnalysis()
+        {
+        }
+        public function setLastAnalysisTime($lastAnalysisTime)
+        {
+        }
+        public function getLastAnalysisTime()
+        {
+        }
     }
-    public function getAnalysisStatus()
-    {
-    }
+}
+namespace {
     /**
-     * @param Status
+     * Runtime class alias of \Google\Service\ContainerAnalysis\Discovered registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setAnalysisStatusError(Status $analysisStatusError)
-    {
-    }
-    /**
-     * @return Status
-     */
-    public function getAnalysisStatusError()
-    {
-    }
-    public function setContinuousAnalysis($continuousAnalysis)
-    {
-    }
-    public function getContinuousAnalysis()
-    {
-    }
-    public function setLastAnalysisTime($lastAnalysisTime)
-    {
-    }
-    public function getLastAnalysisTime()
+    class Google_Service_ContainerAnalysis_Discovered extends \Google\Service\ContainerAnalysis\Discovered
     {
     }
 }

@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class DictlayerdataDictWordsSensesDefinitions extends \Google\Collection
-{
-    protected $collection_key = 'examples';
-    /**
-     * @var string
-     */
-    public $definition;
-    protected $examplesType = DictlayerdataDictWordsSensesDefinitionsExamples::class;
-    protected $examplesDataType = 'array';
-    /**
-     * @param string $definition
-     */
-    public function setDefinition($definition)
+namespace Google\Service\Books {
+    class DictlayerdataDictWordsSensesDefinitions extends \Google\Collection
     {
+        protected $collection_key = 'examples';
+        /**
+         * @var string
+         */
+        public $definition;
+        protected $examplesType = DictlayerdataDictWordsSensesDefinitionsExamples::class;
+        protected $examplesDataType = 'array';
+        /**
+         * @param string $definition
+         */
+        public function setDefinition($definition)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDefinition()
+        {
+        }
+        /**
+         * @param DictlayerdataDictWordsSensesDefinitionsExamples[] $examples
+         */
+        public function setExamples($examples)
+        {
+        }
+        /**
+         * @return DictlayerdataDictWordsSensesDefinitionsExamples[]
+         */
+        public function getExamples()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Books\DictlayerdataDictWordsSensesDefinitions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDefinition()
-    {
-    }
-    /**
-     * @param DictlayerdataDictWordsSensesDefinitionsExamples[] $examples
-     */
-    public function setExamples($examples)
-    {
-    }
-    /**
-     * @return DictlayerdataDictWordsSensesDefinitionsExamples[]
-     */
-    public function getExamples()
+    class Google_Service_Books_DictlayerdataDictWordsSensesDefinitions extends \Google\Service\Books\DictlayerdataDictWordsSensesDefinitions
     {
     }
 }

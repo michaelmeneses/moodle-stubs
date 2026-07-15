@@ -20,27 +20,36 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\exception;
-
-/**
- * Exception indicating malformed response problem.
- * This exception is not supposed to be thrown when processing
- * user submitted data in forms. It is more suitable
- * for WS and other low level stuff.
- *
- * @package    core
- * @subpackage exception
- * @copyright  Jerome Mouneyrac
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-class invalid_response_exception extends moodle_exception
-{
+namespace core\exception {
     /**
-     * Constructor.
+     * Exception indicating malformed response problem.
+     * This exception is not supposed to be thrown when processing
+     * user submitted data in forms. It is more suitable
+     * for WS and other low level stuff.
      *
-     * @param string $debuginfo some detailed information
+     * @package    core
+     * @subpackage exception
+     * @copyright  Jerome Mouneyrac
+     * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
      */
-    public function __construct($debuginfo = null)
+    class invalid_response_exception extends moodle_exception
+    {
+        /**
+         * Constructor.
+         *
+         * @param string $debuginfo some detailed information
+         */
+        public function __construct($debuginfo = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \core\exception\invalid_response_exception registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class invalid_response_exception extends \core\exception\invalid_response_exception
     {
     }
 }

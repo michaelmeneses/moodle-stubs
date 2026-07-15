@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GameServices;
-
-class FetchDeploymentStateResponse extends \Google\Collection
-{
-    protected $collection_key = 'unavailable';
-    protected $clusterStateType = DeployedClusterState::class;
-    protected $clusterStateDataType = 'array';
-    /**
-     * @var string[]
-     */
-    public $unavailable;
-    /**
-     * @param DeployedClusterState[]
-     */
-    public function setClusterState($clusterState)
+namespace Google\Service\GameServices {
+    class FetchDeploymentStateResponse extends \Google\Collection
     {
+        protected $collection_key = 'unavailable';
+        protected $clusterStateType = DeployedClusterState::class;
+        protected $clusterStateDataType = 'array';
+        /**
+         * @var string[]
+         */
+        public $unavailable;
+        /**
+         * @param DeployedClusterState[]
+         */
+        public function setClusterState($clusterState)
+        {
+        }
+        /**
+         * @return DeployedClusterState[]
+         */
+        public function getClusterState()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setUnavailable($unavailable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnavailable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DeployedClusterState[]
+     * Runtime class alias of \Google\Service\GameServices\FetchDeploymentStateResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClusterState()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setUnavailable($unavailable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnavailable()
+    class Google_Service_GameServices_FetchDeploymentStateResponse extends \Google\Service\GameServices\FetchDeploymentStateResponse
     {
     }
 }

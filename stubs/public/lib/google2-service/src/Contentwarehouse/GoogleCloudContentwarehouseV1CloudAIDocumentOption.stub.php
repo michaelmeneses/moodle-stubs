@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudContentwarehouseV1CloudAIDocumentOption extends \Google\Model
-{
-    /**
-     * If set, only selected entities will be converted to properties.
-     *
-     * @var string[]
-     */
-    public $customizedEntitiesPropertiesConversions;
-    /**
-     * Whether to convert all the entities to properties.
-     *
-     * @var bool
-     */
-    public $enableEntitiesConversions;
-    /**
-     * If set, only selected entities will be converted to properties.
-     *
-     * @param string[] $customizedEntitiesPropertiesConversions
-     */
-    public function setCustomizedEntitiesPropertiesConversions($customizedEntitiesPropertiesConversions)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudContentwarehouseV1CloudAIDocumentOption extends \Google\Model
     {
+        /**
+         * If set, only selected entities will be converted to properties.
+         *
+         * @var string[]
+         */
+        public $customizedEntitiesPropertiesConversions;
+        /**
+         * Whether to convert all the entities to properties.
+         *
+         * @var bool
+         */
+        public $enableEntitiesConversions;
+        /**
+         * If set, only selected entities will be converted to properties.
+         *
+         * @param string[] $customizedEntitiesPropertiesConversions
+         */
+        public function setCustomizedEntitiesPropertiesConversions($customizedEntitiesPropertiesConversions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCustomizedEntitiesPropertiesConversions()
+        {
+        }
+        /**
+         * Whether to convert all the entities to properties.
+         *
+         * @param bool $enableEntitiesConversions
+         */
+        public function setEnableEntitiesConversions($enableEntitiesConversions)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableEntitiesConversions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1CloudAIDocumentOption registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomizedEntitiesPropertiesConversions()
-    {
-    }
-    /**
-     * Whether to convert all the entities to properties.
-     *
-     * @param bool $enableEntitiesConversions
-     */
-    public function setEnableEntitiesConversions($enableEntitiesConversions)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnableEntitiesConversions()
+    class Google_Service_Contentwarehouse_GoogleCloudContentwarehouseV1CloudAIDocumentOption extends \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1CloudAIDocumentOption
     {
     }
 }

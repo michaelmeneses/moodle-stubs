@@ -21,190 +21,199 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1alpha1CallAnnotation extends \Google\Model
-{
-    protected $annotationEndBoundaryType = GoogleCloudContactcenterinsightsV1alpha1AnnotationBoundary::class;
-    protected $annotationEndBoundaryDataType = '';
-    protected $annotationStartBoundaryType = GoogleCloudContactcenterinsightsV1alpha1AnnotationBoundary::class;
-    protected $annotationStartBoundaryDataType = '';
-    /**
-     * The channel of the audio where the annotation occurs. For single-channel
-     * audio, this field is not populated.
-     *
-     * @var int
-     */
-    public $channelTag;
-    protected $entityMentionDataType = GoogleCloudContactcenterinsightsV1alpha1EntityMentionData::class;
-    protected $entityMentionDataDataType = '';
-    protected $holdDataType = GoogleCloudContactcenterinsightsV1alpha1HoldData::class;
-    protected $holdDataDataType = '';
-    protected $intentMatchDataType = GoogleCloudContactcenterinsightsV1alpha1IntentMatchData::class;
-    protected $intentMatchDataDataType = '';
-    protected $interruptionDataType = GoogleCloudContactcenterinsightsV1alpha1InterruptionData::class;
-    protected $interruptionDataDataType = '';
-    protected $issueMatchDataType = GoogleCloudContactcenterinsightsV1alpha1IssueMatchData::class;
-    protected $issueMatchDataDataType = '';
-    protected $phraseMatchDataType = GoogleCloudContactcenterinsightsV1alpha1PhraseMatchData::class;
-    protected $phraseMatchDataDataType = '';
-    protected $sentimentDataType = GoogleCloudContactcenterinsightsV1alpha1SentimentData::class;
-    protected $sentimentDataDataType = '';
-    protected $silenceDataType = GoogleCloudContactcenterinsightsV1alpha1SilenceData::class;
-    protected $silenceDataDataType = '';
-    /**
-     * The boundary in the conversation where the annotation ends, inclusive.
-     *
-     * @param GoogleCloudContactcenterinsightsV1alpha1AnnotationBoundary $annotationEndBoundary
-     */
-    public function setAnnotationEndBoundary(GoogleCloudContactcenterinsightsV1alpha1AnnotationBoundary $annotationEndBoundary)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1alpha1CallAnnotation extends \Google\Model
     {
+        protected $annotationEndBoundaryType = GoogleCloudContactcenterinsightsV1alpha1AnnotationBoundary::class;
+        protected $annotationEndBoundaryDataType = '';
+        protected $annotationStartBoundaryType = GoogleCloudContactcenterinsightsV1alpha1AnnotationBoundary::class;
+        protected $annotationStartBoundaryDataType = '';
+        /**
+         * The channel of the audio where the annotation occurs. For single-channel
+         * audio, this field is not populated.
+         *
+         * @var int
+         */
+        public $channelTag;
+        protected $entityMentionDataType = GoogleCloudContactcenterinsightsV1alpha1EntityMentionData::class;
+        protected $entityMentionDataDataType = '';
+        protected $holdDataType = GoogleCloudContactcenterinsightsV1alpha1HoldData::class;
+        protected $holdDataDataType = '';
+        protected $intentMatchDataType = GoogleCloudContactcenterinsightsV1alpha1IntentMatchData::class;
+        protected $intentMatchDataDataType = '';
+        protected $interruptionDataType = GoogleCloudContactcenterinsightsV1alpha1InterruptionData::class;
+        protected $interruptionDataDataType = '';
+        protected $issueMatchDataType = GoogleCloudContactcenterinsightsV1alpha1IssueMatchData::class;
+        protected $issueMatchDataDataType = '';
+        protected $phraseMatchDataType = GoogleCloudContactcenterinsightsV1alpha1PhraseMatchData::class;
+        protected $phraseMatchDataDataType = '';
+        protected $sentimentDataType = GoogleCloudContactcenterinsightsV1alpha1SentimentData::class;
+        protected $sentimentDataDataType = '';
+        protected $silenceDataType = GoogleCloudContactcenterinsightsV1alpha1SilenceData::class;
+        protected $silenceDataDataType = '';
+        /**
+         * The boundary in the conversation where the annotation ends, inclusive.
+         *
+         * @param GoogleCloudContactcenterinsightsV1alpha1AnnotationBoundary $annotationEndBoundary
+         */
+        public function setAnnotationEndBoundary(GoogleCloudContactcenterinsightsV1alpha1AnnotationBoundary $annotationEndBoundary)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1alpha1AnnotationBoundary
+         */
+        public function getAnnotationEndBoundary()
+        {
+        }
+        /**
+         * The boundary in the conversation where the annotation starts, inclusive.
+         *
+         * @param GoogleCloudContactcenterinsightsV1alpha1AnnotationBoundary $annotationStartBoundary
+         */
+        public function setAnnotationStartBoundary(GoogleCloudContactcenterinsightsV1alpha1AnnotationBoundary $annotationStartBoundary)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1alpha1AnnotationBoundary
+         */
+        public function getAnnotationStartBoundary()
+        {
+        }
+        /**
+         * The channel of the audio where the annotation occurs. For single-channel
+         * audio, this field is not populated.
+         *
+         * @param int $channelTag
+         */
+        public function setChannelTag($channelTag)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getChannelTag()
+        {
+        }
+        /**
+         * Data specifying an entity mention.
+         *
+         * @param GoogleCloudContactcenterinsightsV1alpha1EntityMentionData $entityMentionData
+         */
+        public function setEntityMentionData(GoogleCloudContactcenterinsightsV1alpha1EntityMentionData $entityMentionData)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1alpha1EntityMentionData
+         */
+        public function getEntityMentionData()
+        {
+        }
+        /**
+         * Data specifying a hold.
+         *
+         * @param GoogleCloudContactcenterinsightsV1alpha1HoldData $holdData
+         */
+        public function setHoldData(GoogleCloudContactcenterinsightsV1alpha1HoldData $holdData)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1alpha1HoldData
+         */
+        public function getHoldData()
+        {
+        }
+        /**
+         * Data specifying an intent match.
+         *
+         * @param GoogleCloudContactcenterinsightsV1alpha1IntentMatchData $intentMatchData
+         */
+        public function setIntentMatchData(GoogleCloudContactcenterinsightsV1alpha1IntentMatchData $intentMatchData)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1alpha1IntentMatchData
+         */
+        public function getIntentMatchData()
+        {
+        }
+        /**
+         * Data specifying an interruption.
+         *
+         * @param GoogleCloudContactcenterinsightsV1alpha1InterruptionData $interruptionData
+         */
+        public function setInterruptionData(GoogleCloudContactcenterinsightsV1alpha1InterruptionData $interruptionData)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1alpha1InterruptionData
+         */
+        public function getInterruptionData()
+        {
+        }
+        /**
+         * Data specifying an issue match.
+         *
+         * @param GoogleCloudContactcenterinsightsV1alpha1IssueMatchData $issueMatchData
+         */
+        public function setIssueMatchData(GoogleCloudContactcenterinsightsV1alpha1IssueMatchData $issueMatchData)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1alpha1IssueMatchData
+         */
+        public function getIssueMatchData()
+        {
+        }
+        /**
+         * Data specifying a phrase match.
+         *
+         * @param GoogleCloudContactcenterinsightsV1alpha1PhraseMatchData $phraseMatchData
+         */
+        public function setPhraseMatchData(GoogleCloudContactcenterinsightsV1alpha1PhraseMatchData $phraseMatchData)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1alpha1PhraseMatchData
+         */
+        public function getPhraseMatchData()
+        {
+        }
+        /**
+         * Data specifying sentiment.
+         *
+         * @param GoogleCloudContactcenterinsightsV1alpha1SentimentData $sentimentData
+         */
+        public function setSentimentData(GoogleCloudContactcenterinsightsV1alpha1SentimentData $sentimentData)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1alpha1SentimentData
+         */
+        public function getSentimentData()
+        {
+        }
+        /**
+         * Data specifying silence.
+         *
+         * @param GoogleCloudContactcenterinsightsV1alpha1SilenceData $silenceData
+         */
+        public function setSilenceData(GoogleCloudContactcenterinsightsV1alpha1SilenceData $silenceData)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1alpha1SilenceData
+         */
+        public function getSilenceData()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudContactcenterinsightsV1alpha1AnnotationBoundary
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1CallAnnotation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotationEndBoundary()
-    {
-    }
-    /**
-     * The boundary in the conversation where the annotation starts, inclusive.
-     *
-     * @param GoogleCloudContactcenterinsightsV1alpha1AnnotationBoundary $annotationStartBoundary
-     */
-    public function setAnnotationStartBoundary(GoogleCloudContactcenterinsightsV1alpha1AnnotationBoundary $annotationStartBoundary)
-    {
-    }
-    /**
-     * @return GoogleCloudContactcenterinsightsV1alpha1AnnotationBoundary
-     */
-    public function getAnnotationStartBoundary()
-    {
-    }
-    /**
-     * The channel of the audio where the annotation occurs. For single-channel
-     * audio, this field is not populated.
-     *
-     * @param int $channelTag
-     */
-    public function setChannelTag($channelTag)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getChannelTag()
-    {
-    }
-    /**
-     * Data specifying an entity mention.
-     *
-     * @param GoogleCloudContactcenterinsightsV1alpha1EntityMentionData $entityMentionData
-     */
-    public function setEntityMentionData(GoogleCloudContactcenterinsightsV1alpha1EntityMentionData $entityMentionData)
-    {
-    }
-    /**
-     * @return GoogleCloudContactcenterinsightsV1alpha1EntityMentionData
-     */
-    public function getEntityMentionData()
-    {
-    }
-    /**
-     * Data specifying a hold.
-     *
-     * @param GoogleCloudContactcenterinsightsV1alpha1HoldData $holdData
-     */
-    public function setHoldData(GoogleCloudContactcenterinsightsV1alpha1HoldData $holdData)
-    {
-    }
-    /**
-     * @return GoogleCloudContactcenterinsightsV1alpha1HoldData
-     */
-    public function getHoldData()
-    {
-    }
-    /**
-     * Data specifying an intent match.
-     *
-     * @param GoogleCloudContactcenterinsightsV1alpha1IntentMatchData $intentMatchData
-     */
-    public function setIntentMatchData(GoogleCloudContactcenterinsightsV1alpha1IntentMatchData $intentMatchData)
-    {
-    }
-    /**
-     * @return GoogleCloudContactcenterinsightsV1alpha1IntentMatchData
-     */
-    public function getIntentMatchData()
-    {
-    }
-    /**
-     * Data specifying an interruption.
-     *
-     * @param GoogleCloudContactcenterinsightsV1alpha1InterruptionData $interruptionData
-     */
-    public function setInterruptionData(GoogleCloudContactcenterinsightsV1alpha1InterruptionData $interruptionData)
-    {
-    }
-    /**
-     * @return GoogleCloudContactcenterinsightsV1alpha1InterruptionData
-     */
-    public function getInterruptionData()
-    {
-    }
-    /**
-     * Data specifying an issue match.
-     *
-     * @param GoogleCloudContactcenterinsightsV1alpha1IssueMatchData $issueMatchData
-     */
-    public function setIssueMatchData(GoogleCloudContactcenterinsightsV1alpha1IssueMatchData $issueMatchData)
-    {
-    }
-    /**
-     * @return GoogleCloudContactcenterinsightsV1alpha1IssueMatchData
-     */
-    public function getIssueMatchData()
-    {
-    }
-    /**
-     * Data specifying a phrase match.
-     *
-     * @param GoogleCloudContactcenterinsightsV1alpha1PhraseMatchData $phraseMatchData
-     */
-    public function setPhraseMatchData(GoogleCloudContactcenterinsightsV1alpha1PhraseMatchData $phraseMatchData)
-    {
-    }
-    /**
-     * @return GoogleCloudContactcenterinsightsV1alpha1PhraseMatchData
-     */
-    public function getPhraseMatchData()
-    {
-    }
-    /**
-     * Data specifying sentiment.
-     *
-     * @param GoogleCloudContactcenterinsightsV1alpha1SentimentData $sentimentData
-     */
-    public function setSentimentData(GoogleCloudContactcenterinsightsV1alpha1SentimentData $sentimentData)
-    {
-    }
-    /**
-     * @return GoogleCloudContactcenterinsightsV1alpha1SentimentData
-     */
-    public function getSentimentData()
-    {
-    }
-    /**
-     * Data specifying silence.
-     *
-     * @param GoogleCloudContactcenterinsightsV1alpha1SilenceData $silenceData
-     */
-    public function setSilenceData(GoogleCloudContactcenterinsightsV1alpha1SilenceData $silenceData)
-    {
-    }
-    /**
-     * @return GoogleCloudContactcenterinsightsV1alpha1SilenceData
-     */
-    public function getSilenceData()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1alpha1CallAnnotation extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1CallAnnotation
     {
     }
 }

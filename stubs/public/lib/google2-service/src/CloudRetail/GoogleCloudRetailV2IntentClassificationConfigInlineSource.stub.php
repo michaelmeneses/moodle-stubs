@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2IntentClassificationConfigInlineSource extends \Google\Collection
-{
-    protected $collection_key = 'inlineForceIntents';
-    protected $inlineForceIntentsType = GoogleCloudRetailV2IntentClassificationConfigInlineForceIntent::class;
-    protected $inlineForceIntentsDataType = 'array';
-    /**
-     * Optional. A list of inline force intent classifications.
-     *
-     * @param GoogleCloudRetailV2IntentClassificationConfigInlineForceIntent[] $inlineForceIntents
-     */
-    public function setInlineForceIntents($inlineForceIntents)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2IntentClassificationConfigInlineSource extends \Google\Collection
     {
+        protected $collection_key = 'inlineForceIntents';
+        protected $inlineForceIntentsType = GoogleCloudRetailV2IntentClassificationConfigInlineForceIntent::class;
+        protected $inlineForceIntentsDataType = 'array';
+        /**
+         * Optional. A list of inline force intent classifications.
+         *
+         * @param GoogleCloudRetailV2IntentClassificationConfigInlineForceIntent[] $inlineForceIntents
+         */
+        public function setInlineForceIntents($inlineForceIntents)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2IntentClassificationConfigInlineForceIntent[]
+         */
+        public function getInlineForceIntents()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRetailV2IntentClassificationConfigInlineForceIntent[]
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2IntentClassificationConfigInlineSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInlineForceIntents()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2IntentClassificationConfigInlineSource extends \Google\Service\CloudRetail\GoogleCloudRetailV2IntentClassificationConfigInlineSource
     {
     }
 }

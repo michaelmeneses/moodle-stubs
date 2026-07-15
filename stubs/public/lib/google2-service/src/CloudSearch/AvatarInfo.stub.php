@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AvatarInfo extends \Google\Model
-{
-    protected $emojiType = Emoji::class;
-    protected $emojiDataType = '';
-    /**
-     * @param Emoji
-     */
-    public function setEmoji(Emoji $emoji)
+namespace Google\Service\CloudSearch {
+    class AvatarInfo extends \Google\Model
     {
+        protected $emojiType = Emoji::class;
+        protected $emojiDataType = '';
+        /**
+         * @param Emoji
+         */
+        public function setEmoji(Emoji $emoji)
+        {
+        }
+        /**
+         * @return Emoji
+         */
+        public function getEmoji()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Emoji
+     * Runtime class alias of \Google\Service\CloudSearch\AvatarInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmoji()
+    class Google_Service_CloudSearch_AvatarInfo extends \Google\Service\CloudSearch\AvatarInfo
     {
     }
 }

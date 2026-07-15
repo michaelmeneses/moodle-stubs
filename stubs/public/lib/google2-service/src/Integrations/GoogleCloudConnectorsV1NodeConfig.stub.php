@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudConnectorsV1NodeConfig extends \Google\Model
-{
-    /**
-     * Optional. Maximum number of nodes in the runtime nodes.
-     *
-     * @var int
-     */
-    public $maxNodeCount;
-    /**
-     * Optional. Minimum number of nodes in the runtime nodes.
-     *
-     * @var int
-     */
-    public $minNodeCount;
-    /**
-     * Optional. Maximum number of nodes in the runtime nodes.
-     *
-     * @param int $maxNodeCount
-     */
-    public function setMaxNodeCount($maxNodeCount)
+namespace Google\Service\Integrations {
+    class GoogleCloudConnectorsV1NodeConfig extends \Google\Model
     {
+        /**
+         * Optional. Maximum number of nodes in the runtime nodes.
+         *
+         * @var int
+         */
+        public $maxNodeCount;
+        /**
+         * Optional. Minimum number of nodes in the runtime nodes.
+         *
+         * @var int
+         */
+        public $minNodeCount;
+        /**
+         * Optional. Maximum number of nodes in the runtime nodes.
+         *
+         * @param int $maxNodeCount
+         */
+        public function setMaxNodeCount($maxNodeCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxNodeCount()
+        {
+        }
+        /**
+         * Optional. Minimum number of nodes in the runtime nodes.
+         *
+         * @param int $minNodeCount
+         */
+        public function setMinNodeCount($minNodeCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMinNodeCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudConnectorsV1NodeConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaxNodeCount()
-    {
-    }
-    /**
-     * Optional. Minimum number of nodes in the runtime nodes.
-     *
-     * @param int $minNodeCount
-     */
-    public function setMinNodeCount($minNodeCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMinNodeCount()
+    class Google_Service_Integrations_GoogleCloudConnectorsV1NodeConfig extends \Google\Service\Integrations\GoogleCloudConnectorsV1NodeConfig
     {
     }
 }

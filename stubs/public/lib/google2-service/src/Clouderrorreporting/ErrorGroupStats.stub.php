@@ -21,209 +21,218 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Clouderrorreporting;
-
-class ErrorGroupStats extends \Google\Collection
-{
-    protected $collection_key = 'timedCounts';
-    protected $affectedServicesType = ServiceContext::class;
-    protected $affectedServicesDataType = 'array';
-    /**
-     * Approximate number of affected users in the given group that match the
-     * filter criteria. Users are distinguished by data in the ErrorContext of the
-     * individual error events, such as their login name or their remote IP
-     * address in case of HTTP requests. The number of affected users can be zero
-     * even if the number of errors is non-zero if no data was provided from which
-     * the affected user could be deduced. Users are counted based on data in the
-     * request context that was provided in the error report. If more users are
-     * implicitly affected, such as due to a crash of the whole service, this is
-     * not reflected here.
-     *
-     * @var string
-     */
-    public $affectedUsersCount;
-    /**
-     * Approximate total number of events in the given group that match the filter
-     * criteria.
-     *
-     * @var string
-     */
-    public $count;
-    /**
-     * Approximate first occurrence that was ever seen for this group and which
-     * matches the given filter criteria, ignoring the time_range that was
-     * specified in the request.
-     *
-     * @var string
-     */
-    public $firstSeenTime;
-    protected $groupType = ErrorGroup::class;
-    protected $groupDataType = '';
-    /**
-     * Approximate last occurrence that was ever seen for this group and which
-     * matches the given filter criteria, ignoring the time_range that was
-     * specified in the request.
-     *
-     * @var string
-     */
-    public $lastSeenTime;
-    /**
-     * The total number of services with a non-zero error count for the given
-     * filter criteria.
-     *
-     * @var int
-     */
-    public $numAffectedServices;
-    protected $representativeType = ErrorEvent::class;
-    protected $representativeDataType = '';
-    protected $timedCountsType = TimedCount::class;
-    protected $timedCountsDataType = 'array';
-    /**
-     * Service contexts with a non-zero error count for the given filter criteria.
-     * This list can be truncated if multiple services are affected. Refer to
-     * `num_affected_services` for the total count.
-     *
-     * @param ServiceContext[] $affectedServices
-     */
-    public function setAffectedServices($affectedServices)
+namespace Google\Service\Clouderrorreporting {
+    class ErrorGroupStats extends \Google\Collection
     {
+        protected $collection_key = 'timedCounts';
+        protected $affectedServicesType = ServiceContext::class;
+        protected $affectedServicesDataType = 'array';
+        /**
+         * Approximate number of affected users in the given group that match the
+         * filter criteria. Users are distinguished by data in the ErrorContext of the
+         * individual error events, such as their login name or their remote IP
+         * address in case of HTTP requests. The number of affected users can be zero
+         * even if the number of errors is non-zero if no data was provided from which
+         * the affected user could be deduced. Users are counted based on data in the
+         * request context that was provided in the error report. If more users are
+         * implicitly affected, such as due to a crash of the whole service, this is
+         * not reflected here.
+         *
+         * @var string
+         */
+        public $affectedUsersCount;
+        /**
+         * Approximate total number of events in the given group that match the filter
+         * criteria.
+         *
+         * @var string
+         */
+        public $count;
+        /**
+         * Approximate first occurrence that was ever seen for this group and which
+         * matches the given filter criteria, ignoring the time_range that was
+         * specified in the request.
+         *
+         * @var string
+         */
+        public $firstSeenTime;
+        protected $groupType = ErrorGroup::class;
+        protected $groupDataType = '';
+        /**
+         * Approximate last occurrence that was ever seen for this group and which
+         * matches the given filter criteria, ignoring the time_range that was
+         * specified in the request.
+         *
+         * @var string
+         */
+        public $lastSeenTime;
+        /**
+         * The total number of services with a non-zero error count for the given
+         * filter criteria.
+         *
+         * @var int
+         */
+        public $numAffectedServices;
+        protected $representativeType = ErrorEvent::class;
+        protected $representativeDataType = '';
+        protected $timedCountsType = TimedCount::class;
+        protected $timedCountsDataType = 'array';
+        /**
+         * Service contexts with a non-zero error count for the given filter criteria.
+         * This list can be truncated if multiple services are affected. Refer to
+         * `num_affected_services` for the total count.
+         *
+         * @param ServiceContext[] $affectedServices
+         */
+        public function setAffectedServices($affectedServices)
+        {
+        }
+        /**
+         * @return ServiceContext[]
+         */
+        public function getAffectedServices()
+        {
+        }
+        /**
+         * Approximate number of affected users in the given group that match the
+         * filter criteria. Users are distinguished by data in the ErrorContext of the
+         * individual error events, such as their login name or their remote IP
+         * address in case of HTTP requests. The number of affected users can be zero
+         * even if the number of errors is non-zero if no data was provided from which
+         * the affected user could be deduced. Users are counted based on data in the
+         * request context that was provided in the error report. If more users are
+         * implicitly affected, such as due to a crash of the whole service, this is
+         * not reflected here.
+         *
+         * @param string $affectedUsersCount
+         */
+        public function setAffectedUsersCount($affectedUsersCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAffectedUsersCount()
+        {
+        }
+        /**
+         * Approximate total number of events in the given group that match the filter
+         * criteria.
+         *
+         * @param string $count
+         */
+        public function setCount($count)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCount()
+        {
+        }
+        /**
+         * Approximate first occurrence that was ever seen for this group and which
+         * matches the given filter criteria, ignoring the time_range that was
+         * specified in the request.
+         *
+         * @param string $firstSeenTime
+         */
+        public function setFirstSeenTime($firstSeenTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFirstSeenTime()
+        {
+        }
+        /**
+         * Group data that is independent of the filter criteria.
+         *
+         * @param ErrorGroup $group
+         */
+        public function setGroup(ErrorGroup $group)
+        {
+        }
+        /**
+         * @return ErrorGroup
+         */
+        public function getGroup()
+        {
+        }
+        /**
+         * Approximate last occurrence that was ever seen for this group and which
+         * matches the given filter criteria, ignoring the time_range that was
+         * specified in the request.
+         *
+         * @param string $lastSeenTime
+         */
+        public function setLastSeenTime($lastSeenTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastSeenTime()
+        {
+        }
+        /**
+         * The total number of services with a non-zero error count for the given
+         * filter criteria.
+         *
+         * @param int $numAffectedServices
+         */
+        public function setNumAffectedServices($numAffectedServices)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumAffectedServices()
+        {
+        }
+        /**
+         * An arbitrary event that is chosen as representative for the whole group.
+         * The representative event is intended to be used as a quick preview for the
+         * whole group. Events in the group are usually sufficiently similar to each
+         * other such that showing an arbitrary representative provides insight into
+         * the characteristics of the group as a whole.
+         *
+         * @param ErrorEvent $representative
+         */
+        public function setRepresentative(ErrorEvent $representative)
+        {
+        }
+        /**
+         * @return ErrorEvent
+         */
+        public function getRepresentative()
+        {
+        }
+        /**
+         * Approximate number of occurrences over time. Timed counts returned by
+         * ListGroups are guaranteed to be: - Inside the requested time interval -
+         * Non-overlapping, and - Ordered by ascending time.
+         *
+         * @param TimedCount[] $timedCounts
+         */
+        public function setTimedCounts($timedCounts)
+        {
+        }
+        /**
+         * @return TimedCount[]
+         */
+        public function getTimedCounts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ServiceContext[]
+     * Runtime class alias of \Google\Service\Clouderrorreporting\ErrorGroupStats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAffectedServices()
-    {
-    }
-    /**
-     * Approximate number of affected users in the given group that match the
-     * filter criteria. Users are distinguished by data in the ErrorContext of the
-     * individual error events, such as their login name or their remote IP
-     * address in case of HTTP requests. The number of affected users can be zero
-     * even if the number of errors is non-zero if no data was provided from which
-     * the affected user could be deduced. Users are counted based on data in the
-     * request context that was provided in the error report. If more users are
-     * implicitly affected, such as due to a crash of the whole service, this is
-     * not reflected here.
-     *
-     * @param string $affectedUsersCount
-     */
-    public function setAffectedUsersCount($affectedUsersCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAffectedUsersCount()
-    {
-    }
-    /**
-     * Approximate total number of events in the given group that match the filter
-     * criteria.
-     *
-     * @param string $count
-     */
-    public function setCount($count)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCount()
-    {
-    }
-    /**
-     * Approximate first occurrence that was ever seen for this group and which
-     * matches the given filter criteria, ignoring the time_range that was
-     * specified in the request.
-     *
-     * @param string $firstSeenTime
-     */
-    public function setFirstSeenTime($firstSeenTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFirstSeenTime()
-    {
-    }
-    /**
-     * Group data that is independent of the filter criteria.
-     *
-     * @param ErrorGroup $group
-     */
-    public function setGroup(ErrorGroup $group)
-    {
-    }
-    /**
-     * @return ErrorGroup
-     */
-    public function getGroup()
-    {
-    }
-    /**
-     * Approximate last occurrence that was ever seen for this group and which
-     * matches the given filter criteria, ignoring the time_range that was
-     * specified in the request.
-     *
-     * @param string $lastSeenTime
-     */
-    public function setLastSeenTime($lastSeenTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastSeenTime()
-    {
-    }
-    /**
-     * The total number of services with a non-zero error count for the given
-     * filter criteria.
-     *
-     * @param int $numAffectedServices
-     */
-    public function setNumAffectedServices($numAffectedServices)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNumAffectedServices()
-    {
-    }
-    /**
-     * An arbitrary event that is chosen as representative for the whole group.
-     * The representative event is intended to be used as a quick preview for the
-     * whole group. Events in the group are usually sufficiently similar to each
-     * other such that showing an arbitrary representative provides insight into
-     * the characteristics of the group as a whole.
-     *
-     * @param ErrorEvent $representative
-     */
-    public function setRepresentative(ErrorEvent $representative)
-    {
-    }
-    /**
-     * @return ErrorEvent
-     */
-    public function getRepresentative()
-    {
-    }
-    /**
-     * Approximate number of occurrences over time. Timed counts returned by
-     * ListGroups are guaranteed to be: - Inside the requested time interval -
-     * Non-overlapping, and - Ordered by ascending time.
-     *
-     * @param TimedCount[] $timedCounts
-     */
-    public function setTimedCounts($timedCounts)
-    {
-    }
-    /**
-     * @return TimedCount[]
-     */
-    public function getTimedCounts()
+    class Google_Service_Clouderrorreporting_ErrorGroupStats extends \Google\Service\Clouderrorreporting\ErrorGroupStats
     {
     }
 }

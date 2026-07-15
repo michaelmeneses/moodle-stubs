@@ -21,59 +21,68 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2TimePartConfig extends \Google\Model
-{
-    /**
-     * Unused
-     */
-    public const PART_TO_EXTRACT_TIME_PART_UNSPECIFIED = 'TIME_PART_UNSPECIFIED';
-    /**
-     * [0-9999]
-     */
-    public const PART_TO_EXTRACT_YEAR = 'YEAR';
-    /**
-     * [1-12]
-     */
-    public const PART_TO_EXTRACT_MONTH = 'MONTH';
-    /**
-     * [1-31]
-     */
-    public const PART_TO_EXTRACT_DAY_OF_MONTH = 'DAY_OF_MONTH';
-    /**
-     * [1-7]
-     */
-    public const PART_TO_EXTRACT_DAY_OF_WEEK = 'DAY_OF_WEEK';
-    /**
-     * [1-53]
-     */
-    public const PART_TO_EXTRACT_WEEK_OF_YEAR = 'WEEK_OF_YEAR';
-    /**
-     * [0-23]
-     */
-    public const PART_TO_EXTRACT_HOUR_OF_DAY = 'HOUR_OF_DAY';
-    /**
-     * The part of the time to keep.
-     *
-     * @var string
-     */
-    public $partToExtract;
-    /**
-     * The part of the time to keep.
-     *
-     * Accepted values: TIME_PART_UNSPECIFIED, YEAR, MONTH, DAY_OF_MONTH,
-     * DAY_OF_WEEK, WEEK_OF_YEAR, HOUR_OF_DAY
-     *
-     * @param self::PART_TO_EXTRACT_* $partToExtract
-     */
-    public function setPartToExtract($partToExtract)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2TimePartConfig extends \Google\Model
     {
+        /**
+         * Unused
+         */
+        public const PART_TO_EXTRACT_TIME_PART_UNSPECIFIED = 'TIME_PART_UNSPECIFIED';
+        /**
+         * [0-9999]
+         */
+        public const PART_TO_EXTRACT_YEAR = 'YEAR';
+        /**
+         * [1-12]
+         */
+        public const PART_TO_EXTRACT_MONTH = 'MONTH';
+        /**
+         * [1-31]
+         */
+        public const PART_TO_EXTRACT_DAY_OF_MONTH = 'DAY_OF_MONTH';
+        /**
+         * [1-7]
+         */
+        public const PART_TO_EXTRACT_DAY_OF_WEEK = 'DAY_OF_WEEK';
+        /**
+         * [1-53]
+         */
+        public const PART_TO_EXTRACT_WEEK_OF_YEAR = 'WEEK_OF_YEAR';
+        /**
+         * [0-23]
+         */
+        public const PART_TO_EXTRACT_HOUR_OF_DAY = 'HOUR_OF_DAY';
+        /**
+         * The part of the time to keep.
+         *
+         * @var string
+         */
+        public $partToExtract;
+        /**
+         * The part of the time to keep.
+         *
+         * Accepted values: TIME_PART_UNSPECIFIED, YEAR, MONTH, DAY_OF_MONTH,
+         * DAY_OF_WEEK, WEEK_OF_YEAR, HOUR_OF_DAY
+         *
+         * @param self::PART_TO_EXTRACT_* $partToExtract
+         */
+        public function setPartToExtract($partToExtract)
+        {
+        }
+        /**
+         * @return self::PART_TO_EXTRACT_*
+         */
+        public function getPartToExtract()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::PART_TO_EXTRACT_*
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2TimePartConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPartToExtract()
+    class Google_Service_DLP_GooglePrivacyDlpV2TimePartConfig extends \Google\Service\DLP\GooglePrivacyDlpV2TimePartConfig
     {
     }
 }

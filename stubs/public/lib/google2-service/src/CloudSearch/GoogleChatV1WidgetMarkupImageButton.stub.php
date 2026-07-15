@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class GoogleChatV1WidgetMarkupImageButton extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $icon;
-    /**
-     * @var string
-     */
-    public $iconUrl;
-    /**
-     * @var string
-     */
-    public $name;
-    protected $onClickType = GoogleChatV1WidgetMarkupOnClick::class;
-    protected $onClickDataType = '';
-    /**
-     * @param string
-     */
-    public function setIcon($icon)
+namespace Google\Service\CloudSearch {
+    class GoogleChatV1WidgetMarkupImageButton extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $icon;
+        /**
+         * @var string
+         */
+        public $iconUrl;
+        /**
+         * @var string
+         */
+        public $name;
+        protected $onClickType = GoogleChatV1WidgetMarkupOnClick::class;
+        protected $onClickDataType = '';
+        /**
+         * @param string
+         */
+        public function setIcon($icon)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIcon()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setIconUrl($iconUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIconUrl()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param GoogleChatV1WidgetMarkupOnClick
+         */
+        public function setOnClick(GoogleChatV1WidgetMarkupOnClick $onClick)
+        {
+        }
+        /**
+         * @return GoogleChatV1WidgetMarkupOnClick
+         */
+        public function getOnClick()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\GoogleChatV1WidgetMarkupImageButton registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIcon()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setIconUrl($iconUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIconUrl()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param GoogleChatV1WidgetMarkupOnClick
-     */
-    public function setOnClick(GoogleChatV1WidgetMarkupOnClick $onClick)
-    {
-    }
-    /**
-     * @return GoogleChatV1WidgetMarkupOnClick
-     */
-    public function getOnClick()
+    class Google_Service_CloudSearch_GoogleChatV1WidgetMarkupImageButton extends \Google\Service\CloudSearch\GoogleChatV1WidgetMarkupImageButton
     {
     }
 }

@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class GoogleAppsCardV1Carousel extends \Google\Collection
-{
-    protected $collection_key = 'carouselCards';
-    protected $carouselCardsType = GoogleAppsCardV1CarouselCard::class;
-    protected $carouselCardsDataType = 'array';
-    /**
-     * A list of cards included in the carousel.
-     *
-     * @param GoogleAppsCardV1CarouselCard[] $carouselCards
-     */
-    public function setCarouselCards($carouselCards)
+namespace Google\Service\HangoutsChat {
+    class GoogleAppsCardV1Carousel extends \Google\Collection
     {
+        protected $collection_key = 'carouselCards';
+        protected $carouselCardsType = GoogleAppsCardV1CarouselCard::class;
+        protected $carouselCardsDataType = 'array';
+        /**
+         * A list of cards included in the carousel.
+         *
+         * @param GoogleAppsCardV1CarouselCard[] $carouselCards
+         */
+        public function setCarouselCards($carouselCards)
+        {
+        }
+        /**
+         * @return GoogleAppsCardV1CarouselCard[]
+         */
+        public function getCarouselCards()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAppsCardV1CarouselCard[]
+     * Runtime class alias of \Google\Service\HangoutsChat\GoogleAppsCardV1Carousel registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCarouselCards()
+    class Google_Service_HangoutsChat_GoogleAppsCardV1Carousel extends \Google\Service\HangoutsChat\GoogleAppsCardV1Carousel
     {
     }
 }

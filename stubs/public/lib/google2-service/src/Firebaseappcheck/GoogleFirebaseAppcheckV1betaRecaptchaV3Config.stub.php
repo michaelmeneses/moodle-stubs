@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firebaseappcheck;
-
-class GoogleFirebaseAppcheckV1betaRecaptchaV3Config extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $siteSecret;
-    /**
-     * @var bool
-     */
-    public $siteSecretSet;
-    /**
-     * @var string
-     */
-    public $tokenTtl;
-    /**
-     * @param string
-     */
-    public function setName($name)
+namespace Google\Service\Firebaseappcheck {
+    class GoogleFirebaseAppcheckV1betaRecaptchaV3Config extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $siteSecret;
+        /**
+         * @var bool
+         */
+        public $siteSecretSet;
+        /**
+         * @var string
+         */
+        public $tokenTtl;
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSiteSecret($siteSecret)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSiteSecret()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setSiteSecretSet($siteSecretSet)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSiteSecretSet()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTokenTtl($tokenTtl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTokenTtl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1betaRecaptchaV3Config registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSiteSecret($siteSecret)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSiteSecret()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setSiteSecretSet($siteSecretSet)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSiteSecretSet()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTokenTtl($tokenTtl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTokenTtl()
+    class Google_Service_Firebaseappcheck_GoogleFirebaseAppcheckV1betaRecaptchaV3Config extends \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1betaRecaptchaV3Config
     {
     }
 }

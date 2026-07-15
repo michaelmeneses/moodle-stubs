@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class MessageBatchDeletedEventData extends \Google\Collection
-{
-    protected $collection_key = 'messages';
-    protected $messagesType = MessageDeletedEventData::class;
-    protected $messagesDataType = 'array';
-    /**
-     * A list of deleted messages.
-     *
-     * @param MessageDeletedEventData[] $messages
-     */
-    public function setMessages($messages)
+namespace Google\Service\HangoutsChat {
+    class MessageBatchDeletedEventData extends \Google\Collection
     {
+        protected $collection_key = 'messages';
+        protected $messagesType = MessageDeletedEventData::class;
+        protected $messagesDataType = 'array';
+        /**
+         * A list of deleted messages.
+         *
+         * @param MessageDeletedEventData[] $messages
+         */
+        public function setMessages($messages)
+        {
+        }
+        /**
+         * @return MessageDeletedEventData[]
+         */
+        public function getMessages()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MessageDeletedEventData[]
+     * Runtime class alias of \Google\Service\HangoutsChat\MessageBatchDeletedEventData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMessages()
+    class Google_Service_HangoutsChat_MessageBatchDeletedEventData extends \Google\Service\HangoutsChat\MessageBatchDeletedEventData
     {
     }
 }

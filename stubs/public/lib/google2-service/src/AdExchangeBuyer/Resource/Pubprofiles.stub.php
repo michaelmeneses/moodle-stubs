@@ -21,27 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer\Resource;
-
-/**
- * The "pubprofiles" collection of methods.
- * Typical usage is:
- *  <code>
- *   $adexchangebuyerService = new Google\Service\AdExchangeBuyer(...);
- *   $pubprofiles = $adexchangebuyerService->pubprofiles;
- *  </code>
- */
-class Pubprofiles extends \Google\Service\Resource
-{
+namespace Google\Service\AdExchangeBuyer\Resource {
+    use Google\Service\AdExchangeBuyer\GetPublisherProfilesByAccountIdResponse;
     /**
-     * Gets the requested publisher profile(s) by publisher accountId.
-     * (pubprofiles.listPubprofiles)
-     *
-     * @param int $accountId The accountId of the publisher to get profiles for.
-     * @param array $optParams Optional parameters.
-     * @return GetPublisherProfilesByAccountIdResponse
+     * The "pubprofiles" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $adexchangebuyerService = new Google\Service\AdExchangeBuyer(...);
+     *   $pubprofiles = $adexchangebuyerService->pubprofiles;
+     *  </code>
      */
-    public function listPubprofiles($accountId, $optParams = [])
+    class Pubprofiles extends \Google\Service\Resource
+    {
+        /**
+         * Gets the requested publisher profile(s) by publisher accountId.
+         * (pubprofiles.listPubprofiles)
+         *
+         * @param int $accountId The accountId of the publisher to get profiles for.
+         * @param array $optParams Optional parameters.
+         * @return GetPublisherProfilesByAccountIdResponse
+         */
+        public function listPubprofiles($accountId, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\Resource\Pubprofiles registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AdExchangeBuyer_Resource_Pubprofiles extends \Google\Service\AdExchangeBuyer\Resource\Pubprofiles
     {
     }
 }

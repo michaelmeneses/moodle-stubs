@@ -21,61 +21,70 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmEventbusProtoBaseValue extends \Google\Model
-{
-    protected $baseFunctionType = EnterpriseCrmEventbusProtoFunction::class;
-    protected $baseFunctionDataType = '';
-    protected $literalValueType = EnterpriseCrmEventbusProtoParameterValueType::class;
-    protected $literalValueDataType = '';
-    /**
-     * Start with a reference value to dereference.
-     *
-     * @var string
-     */
-    public $referenceValue;
-    /**
-     * Start with a function that does not build on existing values. Eg.
-     * CurrentTime, Min, Max, Exists, etc.
-     *
-     * @param EnterpriseCrmEventbusProtoFunction $baseFunction
-     */
-    public function setBaseFunction(EnterpriseCrmEventbusProtoFunction $baseFunction)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmEventbusProtoBaseValue extends \Google\Model
     {
+        protected $baseFunctionType = EnterpriseCrmEventbusProtoFunction::class;
+        protected $baseFunctionDataType = '';
+        protected $literalValueType = EnterpriseCrmEventbusProtoParameterValueType::class;
+        protected $literalValueDataType = '';
+        /**
+         * Start with a reference value to dereference.
+         *
+         * @var string
+         */
+        public $referenceValue;
+        /**
+         * Start with a function that does not build on existing values. Eg.
+         * CurrentTime, Min, Max, Exists, etc.
+         *
+         * @param EnterpriseCrmEventbusProtoFunction $baseFunction
+         */
+        public function setBaseFunction(EnterpriseCrmEventbusProtoFunction $baseFunction)
+        {
+        }
+        /**
+         * @return EnterpriseCrmEventbusProtoFunction
+         */
+        public function getBaseFunction()
+        {
+        }
+        /**
+         * Start with a literal value.
+         *
+         * @param EnterpriseCrmEventbusProtoParameterValueType $literalValue
+         */
+        public function setLiteralValue(EnterpriseCrmEventbusProtoParameterValueType $literalValue)
+        {
+        }
+        /**
+         * @return EnterpriseCrmEventbusProtoParameterValueType
+         */
+        public function getLiteralValue()
+        {
+        }
+        /**
+         * Start with a reference value to dereference.
+         *
+         * @param string $referenceValue
+         */
+        public function setReferenceValue($referenceValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReferenceValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EnterpriseCrmEventbusProtoFunction
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmEventbusProtoBaseValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBaseFunction()
-    {
-    }
-    /**
-     * Start with a literal value.
-     *
-     * @param EnterpriseCrmEventbusProtoParameterValueType $literalValue
-     */
-    public function setLiteralValue(EnterpriseCrmEventbusProtoParameterValueType $literalValue)
-    {
-    }
-    /**
-     * @return EnterpriseCrmEventbusProtoParameterValueType
-     */
-    public function getLiteralValue()
-    {
-    }
-    /**
-     * Start with a reference value to dereference.
-     *
-     * @param string $referenceValue
-     */
-    public function setReferenceValue($referenceValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReferenceValue()
+    class Google_Service_Integrations_EnterpriseCrmEventbusProtoBaseValue extends \Google\Service\Integrations\EnterpriseCrmEventbusProtoBaseValue
     {
     }
 }

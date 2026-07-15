@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class SubnetworksScopedList extends \Google\Collection
-{
-    protected $collection_key = 'subnetworks';
-    protected $subnetworksType = Subnetwork::class;
-    protected $subnetworksDataType = 'array';
-    protected $warningType = SubnetworksScopedListWarning::class;
-    protected $warningDataType = '';
-    /**
-     * A list of subnetworks contained in this scope.
-     *
-     * @param Subnetwork[] $subnetworks
-     */
-    public function setSubnetworks($subnetworks)
+namespace Google\Service\Compute {
+    class SubnetworksScopedList extends \Google\Collection
     {
+        protected $collection_key = 'subnetworks';
+        protected $subnetworksType = Subnetwork::class;
+        protected $subnetworksDataType = 'array';
+        protected $warningType = SubnetworksScopedListWarning::class;
+        protected $warningDataType = '';
+        /**
+         * A list of subnetworks contained in this scope.
+         *
+         * @param Subnetwork[] $subnetworks
+         */
+        public function setSubnetworks($subnetworks)
+        {
+        }
+        /**
+         * @return Subnetwork[]
+         */
+        public function getSubnetworks()
+        {
+        }
+        /**
+         * An informational warning that appears when the list of addresses is empty.
+         *
+         * @param SubnetworksScopedListWarning $warning
+         */
+        public function setWarning(SubnetworksScopedListWarning $warning)
+        {
+        }
+        /**
+         * @return SubnetworksScopedListWarning
+         */
+        public function getWarning()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Subnetwork[]
+     * Runtime class alias of \Google\Service\Compute\SubnetworksScopedList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSubnetworks()
-    {
-    }
-    /**
-     * An informational warning that appears when the list of addresses is empty.
-     *
-     * @param SubnetworksScopedListWarning $warning
-     */
-    public function setWarning(SubnetworksScopedListWarning $warning)
-    {
-    }
-    /**
-     * @return SubnetworksScopedListWarning
-     */
-    public function getWarning()
+    class Google_Service_Compute_SubnetworksScopedList extends \Google\Service\Compute\SubnetworksScopedList
     {
     }
 }

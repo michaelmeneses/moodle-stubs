@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class GenerateEphemeralCertResponse extends \Google\Model
-{
-    protected $ephemeralCertType = SslCert::class;
-    protected $ephemeralCertDataType = '';
-    /**
-     * Generated cert
-     *
-     * @param SslCert $ephemeralCert
-     */
-    public function setEphemeralCert(SslCert $ephemeralCert)
+namespace Google\Service\SQLAdmin {
+    class GenerateEphemeralCertResponse extends \Google\Model
     {
+        protected $ephemeralCertType = SslCert::class;
+        protected $ephemeralCertDataType = '';
+        /**
+         * Generated cert
+         *
+         * @param SslCert $ephemeralCert
+         */
+        public function setEphemeralCert(SslCert $ephemeralCert)
+        {
+        }
+        /**
+         * @return SslCert
+         */
+        public function getEphemeralCert()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SslCert
+     * Runtime class alias of \Google\Service\SQLAdmin\GenerateEphemeralCertResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEphemeralCert()
+    class Google_Service_SQLAdmin_GenerateEphemeralCertResponse extends \Google\Service\SQLAdmin\GenerateEphemeralCertResponse
     {
     }
 }

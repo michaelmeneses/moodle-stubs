@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class PerformanceThreshold extends \Google\Model
-{
-    protected $basicSliPerformanceType = BasicSli::class;
-    protected $basicSliPerformanceDataType = '';
-    protected $performanceType = RequestBasedSli::class;
-    protected $performanceDataType = '';
-    /**
-     * If window performance >= threshold, the window is counted as good.
-     *
-     * @var 
-     */
-    public $threshold;
-    /**
-     * BasicSli to evaluate to judge window quality.
-     *
-     * @param BasicSli $basicSliPerformance
-     */
-    public function setBasicSliPerformance(BasicSli $basicSliPerformance)
+namespace Google\Service\Monitoring {
+    class PerformanceThreshold extends \Google\Model
     {
+        protected $basicSliPerformanceType = BasicSli::class;
+        protected $basicSliPerformanceDataType = '';
+        protected $performanceType = RequestBasedSli::class;
+        protected $performanceDataType = '';
+        /**
+         * If window performance >= threshold, the window is counted as good.
+         *
+         * @var 
+         */
+        public $threshold;
+        /**
+         * BasicSli to evaluate to judge window quality.
+         *
+         * @param BasicSli $basicSliPerformance
+         */
+        public function setBasicSliPerformance(BasicSli $basicSliPerformance)
+        {
+        }
+        /**
+         * @return BasicSli
+         */
+        public function getBasicSliPerformance()
+        {
+        }
+        /**
+         * RequestBasedSli to evaluate to judge window quality.
+         *
+         * @param RequestBasedSli $performance
+         */
+        public function setPerformance(RequestBasedSli $performance)
+        {
+        }
+        /**
+         * @return RequestBasedSli
+         */
+        public function getPerformance()
+        {
+        }
+        public function setThreshold($threshold)
+        {
+        }
+        public function getThreshold()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BasicSli
+     * Runtime class alias of \Google\Service\Monitoring\PerformanceThreshold registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBasicSliPerformance()
-    {
-    }
-    /**
-     * RequestBasedSli to evaluate to judge window quality.
-     *
-     * @param RequestBasedSli $performance
-     */
-    public function setPerformance(RequestBasedSli $performance)
-    {
-    }
-    /**
-     * @return RequestBasedSli
-     */
-    public function getPerformance()
-    {
-    }
-    public function setThreshold($threshold)
-    {
-    }
-    public function getThreshold()
+    class Google_Service_Monitoring_PerformanceThreshold extends \Google\Service\Monitoring\PerformanceThreshold
     {
     }
 }

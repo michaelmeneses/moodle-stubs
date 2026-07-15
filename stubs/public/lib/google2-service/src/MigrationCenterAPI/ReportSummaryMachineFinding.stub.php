@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class ReportSummaryMachineFinding extends \Google\Collection
-{
-    protected $collection_key = 'machineSeriesAllocations';
-    /**
-     * @var string
-     */
-    public $allocatedAssetCount;
-    /**
-     * @var string[]
-     */
-    public $allocatedDiskTypes;
-    /**
-     * @var string[]
-     */
-    public $allocatedRegions;
-    protected $machineSeriesAllocationsType = ReportSummaryMachineSeriesAllocation::class;
-    protected $machineSeriesAllocationsDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setAllocatedAssetCount($allocatedAssetCount)
+namespace Google\Service\MigrationCenterAPI {
+    class ReportSummaryMachineFinding extends \Google\Collection
     {
+        protected $collection_key = 'machineSeriesAllocations';
+        /**
+         * @var string
+         */
+        public $allocatedAssetCount;
+        /**
+         * @var string[]
+         */
+        public $allocatedDiskTypes;
+        /**
+         * @var string[]
+         */
+        public $allocatedRegions;
+        protected $machineSeriesAllocationsType = ReportSummaryMachineSeriesAllocation::class;
+        protected $machineSeriesAllocationsDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setAllocatedAssetCount($allocatedAssetCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAllocatedAssetCount()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setAllocatedDiskTypes($allocatedDiskTypes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAllocatedDiskTypes()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setAllocatedRegions($allocatedRegions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAllocatedRegions()
+        {
+        }
+        /**
+         * @param ReportSummaryMachineSeriesAllocation[]
+         */
+        public function setMachineSeriesAllocations($machineSeriesAllocations)
+        {
+        }
+        /**
+         * @return ReportSummaryMachineSeriesAllocation[]
+         */
+        public function getMachineSeriesAllocations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\ReportSummaryMachineFinding registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllocatedAssetCount()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setAllocatedDiskTypes($allocatedDiskTypes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getAllocatedDiskTypes()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setAllocatedRegions($allocatedRegions)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getAllocatedRegions()
-    {
-    }
-    /**
-     * @param ReportSummaryMachineSeriesAllocation[]
-     */
-    public function setMachineSeriesAllocations($machineSeriesAllocations)
-    {
-    }
-    /**
-     * @return ReportSummaryMachineSeriesAllocation[]
-     */
-    public function getMachineSeriesAllocations()
+    class Google_Service_MigrationCenterAPI_ReportSummaryMachineFinding extends \Google\Service\MigrationCenterAPI\ReportSummaryMachineFinding
     {
     }
 }

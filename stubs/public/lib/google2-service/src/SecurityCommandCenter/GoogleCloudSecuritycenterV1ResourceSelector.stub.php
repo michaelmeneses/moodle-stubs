@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GoogleCloudSecuritycenterV1ResourceSelector extends \Google\Collection
-{
-    protected $collection_key = 'resourceTypes';
-    /**
-     * The resource types to run the detector on.
-     *
-     * @var string[]
-     */
-    public $resourceTypes;
-    /**
-     * The resource types to run the detector on.
-     *
-     * @param string[] $resourceTypes
-     */
-    public function setResourceTypes($resourceTypes)
+namespace Google\Service\SecurityCommandCenter {
+    class GoogleCloudSecuritycenterV1ResourceSelector extends \Google\Collection
     {
+        protected $collection_key = 'resourceTypes';
+        /**
+         * The resource types to run the detector on.
+         *
+         * @var string[]
+         */
+        public $resourceTypes;
+        /**
+         * The resource types to run the detector on.
+         *
+         * @param string[] $resourceTypes
+         */
+        public function setResourceTypes($resourceTypes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getResourceTypes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV1ResourceSelector registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResourceTypes()
+    class Google_Service_SecurityCommandCenter_GoogleCloudSecuritycenterV1ResourceSelector extends \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV1ResourceSelector
     {
     }
 }

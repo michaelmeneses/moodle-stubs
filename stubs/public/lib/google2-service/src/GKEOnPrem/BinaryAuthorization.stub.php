@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class BinaryAuthorization extends \Google\Model
-{
-    /**
-     * Default value
-     */
-    public const EVALUATION_MODE_EVALUATION_MODE_UNSPECIFIED = 'EVALUATION_MODE_UNSPECIFIED';
-    /**
-     * Disable BinaryAuthorization
-     */
-    public const EVALUATION_MODE_DISABLED = 'DISABLED';
-    /**
-     * Enforce Kubernetes admission requests with BinaryAuthorization using the
-     * project's singleton policy.
-     */
-    public const EVALUATION_MODE_PROJECT_SINGLETON_POLICY_ENFORCE = 'PROJECT_SINGLETON_POLICY_ENFORCE';
-    /**
-     * Mode of operation for binauthz policy evaluation. If unspecified, defaults
-     * to DISABLED.
-     *
-     * @var string
-     */
-    public $evaluationMode;
-    /**
-     * Mode of operation for binauthz policy evaluation. If unspecified, defaults
-     * to DISABLED.
-     *
-     * Accepted values: EVALUATION_MODE_UNSPECIFIED, DISABLED,
-     * PROJECT_SINGLETON_POLICY_ENFORCE
-     *
-     * @param self::EVALUATION_MODE_* $evaluationMode
-     */
-    public function setEvaluationMode($evaluationMode)
+namespace Google\Service\GKEOnPrem {
+    class BinaryAuthorization extends \Google\Model
     {
+        /**
+         * Default value
+         */
+        public const EVALUATION_MODE_EVALUATION_MODE_UNSPECIFIED = 'EVALUATION_MODE_UNSPECIFIED';
+        /**
+         * Disable BinaryAuthorization
+         */
+        public const EVALUATION_MODE_DISABLED = 'DISABLED';
+        /**
+         * Enforce Kubernetes admission requests with BinaryAuthorization using the
+         * project's singleton policy.
+         */
+        public const EVALUATION_MODE_PROJECT_SINGLETON_POLICY_ENFORCE = 'PROJECT_SINGLETON_POLICY_ENFORCE';
+        /**
+         * Mode of operation for binauthz policy evaluation. If unspecified, defaults
+         * to DISABLED.
+         *
+         * @var string
+         */
+        public $evaluationMode;
+        /**
+         * Mode of operation for binauthz policy evaluation. If unspecified, defaults
+         * to DISABLED.
+         *
+         * Accepted values: EVALUATION_MODE_UNSPECIFIED, DISABLED,
+         * PROJECT_SINGLETON_POLICY_ENFORCE
+         *
+         * @param self::EVALUATION_MODE_* $evaluationMode
+         */
+        public function setEvaluationMode($evaluationMode)
+        {
+        }
+        /**
+         * @return self::EVALUATION_MODE_*
+         */
+        public function getEvaluationMode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::EVALUATION_MODE_*
+     * Runtime class alias of \Google\Service\GKEOnPrem\BinaryAuthorization registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEvaluationMode()
+    class Google_Service_GKEOnPrem_BinaryAuthorization extends \Google\Service\GKEOnPrem\BinaryAuthorization
     {
     }
 }

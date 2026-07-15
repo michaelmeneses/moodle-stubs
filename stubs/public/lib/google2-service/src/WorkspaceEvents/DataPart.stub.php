@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkspaceEvents;
-
-class DataPart extends \Google\Model
-{
-    /**
-     * @var array[]
-     */
-    public $data;
-    /**
-     * @param array[] $data
-     */
-    public function setData($data)
+namespace Google\Service\WorkspaceEvents {
+    class DataPart extends \Google\Model
     {
+        /**
+         * @var array[]
+         */
+        public $data;
+        /**
+         * @param array[] $data
+         */
+        public function setData($data)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getData()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\WorkspaceEvents\DataPart registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getData()
+    class Google_Service_WorkspaceEvents_DataPart extends \Google\Service\WorkspaceEvents\DataPart
     {
     }
 }

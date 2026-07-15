@@ -21,133 +21,142 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storage;
-
-class RewriteResponse extends \Google\Model
-{
-    /**
-     * true if the copy is finished; otherwise, false if the copy is in progress.
-     * This property is always present in the response.
-     *
-     * @var bool
-     */
-    public $done;
-    /**
-     * The kind of item this is.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The total size of the object being copied in bytes. This property is always
-     * present in the response.
-     *
-     * @var string
-     */
-    public $objectSize;
-    protected $resourceType = StorageObject::class;
-    protected $resourceDataType = '';
-    /**
-     * A token to use in subsequent requests to continue copying data. This token
-     * is present in the response only when there is more data to copy.
-     *
-     * @var string
-     */
-    public $rewriteToken;
-    /**
-     * The total bytes written so far, which can be used to provide a waiting user
-     * with a progress indicator. This property is always present in the response.
-     *
-     * @var string
-     */
-    public $totalBytesRewritten;
-    /**
-     * true if the copy is finished; otherwise, false if the copy is in progress.
-     * This property is always present in the response.
-     *
-     * @param bool $done
-     */
-    public function setDone($done)
+namespace Google\Service\Storage {
+    class RewriteResponse extends \Google\Model
     {
+        /**
+         * true if the copy is finished; otherwise, false if the copy is in progress.
+         * This property is always present in the response.
+         *
+         * @var bool
+         */
+        public $done;
+        /**
+         * The kind of item this is.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The total size of the object being copied in bytes. This property is always
+         * present in the response.
+         *
+         * @var string
+         */
+        public $objectSize;
+        protected $resourceType = StorageObject::class;
+        protected $resourceDataType = '';
+        /**
+         * A token to use in subsequent requests to continue copying data. This token
+         * is present in the response only when there is more data to copy.
+         *
+         * @var string
+         */
+        public $rewriteToken;
+        /**
+         * The total bytes written so far, which can be used to provide a waiting user
+         * with a progress indicator. This property is always present in the response.
+         *
+         * @var string
+         */
+        public $totalBytesRewritten;
+        /**
+         * true if the copy is finished; otherwise, false if the copy is in progress.
+         * This property is always present in the response.
+         *
+         * @param bool $done
+         */
+        public function setDone($done)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDone()
+        {
+        }
+        /**
+         * The kind of item this is.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The total size of the object being copied in bytes. This property is always
+         * present in the response.
+         *
+         * @param string $objectSize
+         */
+        public function setObjectSize($objectSize)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectSize()
+        {
+        }
+        /**
+         * A resource containing the metadata for the copied-to object. This property
+         * is present in the response only when copying completes.
+         *
+         * @param StorageObject $resource
+         */
+        public function setResource(StorageObject $resource)
+        {
+        }
+        /**
+         * @return StorageObject
+         */
+        public function getResource()
+        {
+        }
+        /**
+         * A token to use in subsequent requests to continue copying data. This token
+         * is present in the response only when there is more data to copy.
+         *
+         * @param string $rewriteToken
+         */
+        public function setRewriteToken($rewriteToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRewriteToken()
+        {
+        }
+        /**
+         * The total bytes written so far, which can be used to provide a waiting user
+         * with a progress indicator. This property is always present in the response.
+         *
+         * @param string $totalBytesRewritten
+         */
+        public function setTotalBytesRewritten($totalBytesRewritten)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalBytesRewritten()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Storage\RewriteResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDone()
-    {
-    }
-    /**
-     * The kind of item this is.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The total size of the object being copied in bytes. This property is always
-     * present in the response.
-     *
-     * @param string $objectSize
-     */
-    public function setObjectSize($objectSize)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObjectSize()
-    {
-    }
-    /**
-     * A resource containing the metadata for the copied-to object. This property
-     * is present in the response only when copying completes.
-     *
-     * @param StorageObject $resource
-     */
-    public function setResource(StorageObject $resource)
-    {
-    }
-    /**
-     * @return StorageObject
-     */
-    public function getResource()
-    {
-    }
-    /**
-     * A token to use in subsequent requests to continue copying data. This token
-     * is present in the response only when there is more data to copy.
-     *
-     * @param string $rewriteToken
-     */
-    public function setRewriteToken($rewriteToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRewriteToken()
-    {
-    }
-    /**
-     * The total bytes written so far, which can be used to provide a waiting user
-     * with a progress indicator. This property is always present in the response.
-     *
-     * @param string $totalBytesRewritten
-     */
-    public function setTotalBytesRewritten($totalBytesRewritten)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalBytesRewritten()
+    class Google_Service_Storage_RewriteResponse extends \Google\Service\Storage\RewriteResponse
     {
     }
 }

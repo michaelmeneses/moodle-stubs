@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Localservices;
-
-class GoogleAdsHomeservicesLocalservicesV1SearchAccountReportsResponse extends \Google\Collection
-{
-    protected $collection_key = 'accountReports';
-    protected $accountReportsType = GoogleAdsHomeservicesLocalservicesV1AccountReport::class;
-    protected $accountReportsDataType = 'array';
-    /**
-     * Pagination token to retrieve the next page of results. When
-     * `next_page_token` is not filled in, there is no next page and the list
-     * returned is the last page in the result set.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of account reports which maps 1:1 to a particular linked GLS account.
-     *
-     * @param GoogleAdsHomeservicesLocalservicesV1AccountReport[] $accountReports
-     */
-    public function setAccountReports($accountReports)
+namespace Google\Service\Localservices {
+    class GoogleAdsHomeservicesLocalservicesV1SearchAccountReportsResponse extends \Google\Collection
     {
+        protected $collection_key = 'accountReports';
+        protected $accountReportsType = GoogleAdsHomeservicesLocalservicesV1AccountReport::class;
+        protected $accountReportsDataType = 'array';
+        /**
+         * Pagination token to retrieve the next page of results. When
+         * `next_page_token` is not filled in, there is no next page and the list
+         * returned is the last page in the result set.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of account reports which maps 1:1 to a particular linked GLS account.
+         *
+         * @param GoogleAdsHomeservicesLocalservicesV1AccountReport[] $accountReports
+         */
+        public function setAccountReports($accountReports)
+        {
+        }
+        /**
+         * @return GoogleAdsHomeservicesLocalservicesV1AccountReport[]
+         */
+        public function getAccountReports()
+        {
+        }
+        /**
+         * Pagination token to retrieve the next page of results. When
+         * `next_page_token` is not filled in, there is no next page and the list
+         * returned is the last page in the result set.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAdsHomeservicesLocalservicesV1AccountReport[]
+     * Runtime class alias of \Google\Service\Localservices\GoogleAdsHomeservicesLocalservicesV1SearchAccountReportsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountReports()
-    {
-    }
-    /**
-     * Pagination token to retrieve the next page of results. When
-     * `next_page_token` is not filled in, there is no next page and the list
-     * returned is the last page in the result set.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Localservices_GoogleAdsHomeservicesLocalservicesV1SearchAccountReportsResponse extends \Google\Service\Localservices\GoogleAdsHomeservicesLocalservicesV1SearchAccountReportsResponse
     {
     }
 }

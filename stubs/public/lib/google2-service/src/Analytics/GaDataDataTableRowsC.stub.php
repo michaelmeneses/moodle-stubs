@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics;
-
-class GaDataDataTableRowsC extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $v;
-    /**
-     * @param string $v
-     */
-    public function setV($v)
+namespace Google\Service\Analytics {
+    class GaDataDataTableRowsC extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $v;
+        /**
+         * @param string $v
+         */
+        public function setV($v)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getV()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Analytics\GaDataDataTableRowsC registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getV()
+    class Google_Service_Analytics_GaDataDataTableRowsC extends \Google\Service\Analytics\GaDataDataTableRowsC
     {
     }
 }

@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class ActivationStatus extends \Google\Model
-{
-    public const STATE_UNKNOWN_STATE = 'UNKNOWN_STATE';
-    /**
-     * Not-Activated, this is the default status
-     */
-    public const STATE_NOT_ACTIVATED = 'NOT_ACTIVATED';
-    /**
-     * Legacy alias for `NOT_ACTIVATED`. Deprecated.
-     *
-     * @deprecated
-     */
-    public const STATE_not_activated = 'not_activated';
-    /**
-     * Activated
-     */
-    public const STATE_ACTIVATED = 'ACTIVATED';
-    /**
-     * Legacy alias for `ACTIVATED`. Deprecated.
-     *
-     * @deprecated
-     */
-    public const STATE_activated = 'activated';
-    /**
-     * @var string
-     */
-    public $state;
-    /**
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
+namespace Google\Service\Walletobjects {
+    class ActivationStatus extends \Google\Model
     {
+        public const STATE_UNKNOWN_STATE = 'UNKNOWN_STATE';
+        /**
+         * Not-Activated, this is the default status
+         */
+        public const STATE_NOT_ACTIVATED = 'NOT_ACTIVATED';
+        /**
+         * Legacy alias for `NOT_ACTIVATED`. Deprecated.
+         *
+         * @deprecated
+         */
+        public const STATE_not_activated = 'not_activated';
+        /**
+         * Activated
+         */
+        public const STATE_ACTIVATED = 'ACTIVATED';
+        /**
+         * Legacy alias for `ACTIVATED`. Deprecated.
+         *
+         * @deprecated
+         */
+        public const STATE_activated = 'activated';
+        /**
+         * @var string
+         */
+        public $state;
+        /**
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::STATE_*
+     * Runtime class alias of \Google\Service\Walletobjects\ActivationStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getState()
+    class Google_Service_Walletobjects_ActivationStatus extends \Google\Service\Walletobjects\ActivationStatus
     {
     }
 }

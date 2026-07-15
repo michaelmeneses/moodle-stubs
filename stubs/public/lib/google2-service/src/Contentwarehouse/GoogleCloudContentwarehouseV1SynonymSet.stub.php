@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudContentwarehouseV1SynonymSet extends \Google\Collection
-{
-    protected $collection_key = 'synonyms';
-    /**
-     * This is a freeform field. Example contexts can be "sales," "engineering,"
-     * "real estate," "accounting," etc. The context can be supplied during search
-     * requests.
-     *
-     * @var string
-     */
-    public $context;
-    /**
-     * The resource name of the SynonymSet This is mandatory for
-     * google.api.resource. Format:
-     * projects/{project_number}/locations/{location}/synonymSets/{context}.
-     *
-     * @var string
-     */
-    public $name;
-    protected $synonymsType = GoogleCloudContentwarehouseV1SynonymSetSynonym::class;
-    protected $synonymsDataType = 'array';
-    /**
-     * This is a freeform field. Example contexts can be "sales," "engineering,"
-     * "real estate," "accounting," etc. The context can be supplied during search
-     * requests.
-     *
-     * @param string $context
-     */
-    public function setContext($context)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudContentwarehouseV1SynonymSet extends \Google\Collection
     {
+        protected $collection_key = 'synonyms';
+        /**
+         * This is a freeform field. Example contexts can be "sales," "engineering,"
+         * "real estate," "accounting," etc. The context can be supplied during search
+         * requests.
+         *
+         * @var string
+         */
+        public $context;
+        /**
+         * The resource name of the SynonymSet This is mandatory for
+         * google.api.resource. Format:
+         * projects/{project_number}/locations/{location}/synonymSets/{context}.
+         *
+         * @var string
+         */
+        public $name;
+        protected $synonymsType = GoogleCloudContentwarehouseV1SynonymSetSynonym::class;
+        protected $synonymsDataType = 'array';
+        /**
+         * This is a freeform field. Example contexts can be "sales," "engineering,"
+         * "real estate," "accounting," etc. The context can be supplied during search
+         * requests.
+         *
+         * @param string $context
+         */
+        public function setContext($context)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContext()
+        {
+        }
+        /**
+         * The resource name of the SynonymSet This is mandatory for
+         * google.api.resource. Format:
+         * projects/{project_number}/locations/{location}/synonymSets/{context}.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * List of Synonyms for the context.
+         *
+         * @param GoogleCloudContentwarehouseV1SynonymSetSynonym[] $synonyms
+         */
+        public function setSynonyms($synonyms)
+        {
+        }
+        /**
+         * @return GoogleCloudContentwarehouseV1SynonymSetSynonym[]
+         */
+        public function getSynonyms()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1SynonymSet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContext()
-    {
-    }
-    /**
-     * The resource name of the SynonymSet This is mandatory for
-     * google.api.resource. Format:
-     * projects/{project_number}/locations/{location}/synonymSets/{context}.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * List of Synonyms for the context.
-     *
-     * @param GoogleCloudContentwarehouseV1SynonymSetSynonym[] $synonyms
-     */
-    public function setSynonyms($synonyms)
-    {
-    }
-    /**
-     * @return GoogleCloudContentwarehouseV1SynonymSetSynonym[]
-     */
-    public function getSynonyms()
+    class Google_Service_Contentwarehouse_GoogleCloudContentwarehouseV1SynonymSet extends \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1SynonymSet
     {
     }
 }

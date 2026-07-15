@@ -21,100 +21,109 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class GoogleDocsResultInfo extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $attachmentSha1;
-    protected $cosmoIdType = Id::class;
-    protected $cosmoIdDataType = '';
-    /**
-     * @var int
-     */
-    public $cosmoNameSpace;
-    /**
-     * @var string
-     */
-    public $encryptedId;
-    /**
-     * @var string
-     */
-    public $mimeType;
-    protected $shareScopeType = ShareScope::class;
-    protected $shareScopeDataType = '';
-    /**
-     * @param string
-     */
-    public function setAttachmentSha1($attachmentSha1)
+namespace Google\Service\CloudSearch {
+    class GoogleDocsResultInfo extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $attachmentSha1;
+        protected $cosmoIdType = Id::class;
+        protected $cosmoIdDataType = '';
+        /**
+         * @var int
+         */
+        public $cosmoNameSpace;
+        /**
+         * @var string
+         */
+        public $encryptedId;
+        /**
+         * @var string
+         */
+        public $mimeType;
+        protected $shareScopeType = ShareScope::class;
+        protected $shareScopeDataType = '';
+        /**
+         * @param string
+         */
+        public function setAttachmentSha1($attachmentSha1)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAttachmentSha1()
+        {
+        }
+        /**
+         * @param Id
+         */
+        public function setCosmoId(Id $cosmoId)
+        {
+        }
+        /**
+         * @return Id
+         */
+        public function getCosmoId()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setCosmoNameSpace($cosmoNameSpace)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCosmoNameSpace()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEncryptedId($encryptedId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEncryptedId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMimeType($mimeType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMimeType()
+        {
+        }
+        /**
+         * @param ShareScope
+         */
+        public function setShareScope(ShareScope $shareScope)
+        {
+        }
+        /**
+         * @return ShareScope
+         */
+        public function getShareScope()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\GoogleDocsResultInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttachmentSha1()
-    {
-    }
-    /**
-     * @param Id
-     */
-    public function setCosmoId(Id $cosmoId)
-    {
-    }
-    /**
-     * @return Id
-     */
-    public function getCosmoId()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setCosmoNameSpace($cosmoNameSpace)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getCosmoNameSpace()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEncryptedId($encryptedId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEncryptedId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMimeType($mimeType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMimeType()
-    {
-    }
-    /**
-     * @param ShareScope
-     */
-    public function setShareScope(ShareScope $shareScope)
-    {
-    }
-    /**
-     * @return ShareScope
-     */
-    public function getShareScope()
+    class Google_Service_CloudSearch_GoogleDocsResultInfo extends \Google\Service\CloudSearch\GoogleDocsResultInfo
     {
     }
 }

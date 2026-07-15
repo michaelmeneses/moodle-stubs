@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class Sentence extends \Google\Model
-{
-    protected $sentimentType = Sentiment::class;
-    protected $sentimentDataType = '';
-    protected $textType = TextSpan::class;
-    protected $textDataType = '';
-    /**
-     * For calls to AnalyzeSentiment or if
-     * AnnotateTextRequest.Features.extract_document_sentiment is set to true,
-     * this field will contain the sentiment for the sentence.
-     *
-     * @param Sentiment $sentiment
-     */
-    public function setSentiment(Sentiment $sentiment)
+namespace Google\Service\CloudNaturalLanguage {
+    class Sentence extends \Google\Model
     {
+        protected $sentimentType = Sentiment::class;
+        protected $sentimentDataType = '';
+        protected $textType = TextSpan::class;
+        protected $textDataType = '';
+        /**
+         * For calls to AnalyzeSentiment or if
+         * AnnotateTextRequest.Features.extract_document_sentiment is set to true,
+         * this field will contain the sentiment for the sentence.
+         *
+         * @param Sentiment $sentiment
+         */
+        public function setSentiment(Sentiment $sentiment)
+        {
+        }
+        /**
+         * @return Sentiment
+         */
+        public function getSentiment()
+        {
+        }
+        /**
+         * The sentence text.
+         *
+         * @param TextSpan $text
+         */
+        public function setText(TextSpan $text)
+        {
+        }
+        /**
+         * @return TextSpan
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Sentiment
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\Sentence registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSentiment()
-    {
-    }
-    /**
-     * The sentence text.
-     *
-     * @param TextSpan $text
-     */
-    public function setText(TextSpan $text)
-    {
-    }
-    /**
-     * @return TextSpan
-     */
-    public function getText()
+    class Google_Service_CloudNaturalLanguage_Sentence extends \Google\Service\CloudNaturalLanguage\Sentence
     {
     }
 }

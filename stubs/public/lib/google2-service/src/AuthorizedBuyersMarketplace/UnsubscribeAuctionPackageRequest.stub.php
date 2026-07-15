@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AuthorizedBuyersMarketplace;
-
-class UnsubscribeAuctionPackageRequest extends \Google\Model
-{
+namespace Google\Service\AuthorizedBuyersMarketplace {
+    class UnsubscribeAuctionPackageRequest extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AuthorizedBuyersMarketplace\UnsubscribeAuctionPackageRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AuthorizedBuyersMarketplace_UnsubscribeAuctionPackageRequest extends \Google\Service\AuthorizedBuyersMarketplace\UnsubscribeAuctionPackageRequest
+    {
+    }
 }

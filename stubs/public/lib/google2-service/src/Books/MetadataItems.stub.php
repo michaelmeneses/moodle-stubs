@@ -21,89 +21,98 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class MetadataItems extends \Google\Model
-{
-    protected $internal_gapi_mappings = ["downloadUrl" => "download_url", "encryptedKey" => "encrypted_key"];
-    /**
-     * @var string
-     */
-    public $downloadUrl;
-    /**
-     * @var string
-     */
-    public $encryptedKey;
-    /**
-     * @var string
-     */
-    public $language;
-    /**
-     * @var string
-     */
-    public $size;
-    /**
-     * @var string
-     */
-    public $version;
-    /**
-     * @param string $downloadUrl
-     */
-    public function setDownloadUrl($downloadUrl)
+namespace Google\Service\Books {
+    class MetadataItems extends \Google\Model
     {
+        protected $internal_gapi_mappings = ["downloadUrl" => "download_url", "encryptedKey" => "encrypted_key"];
+        /**
+         * @var string
+         */
+        public $downloadUrl;
+        /**
+         * @var string
+         */
+        public $encryptedKey;
+        /**
+         * @var string
+         */
+        public $language;
+        /**
+         * @var string
+         */
+        public $size;
+        /**
+         * @var string
+         */
+        public $version;
+        /**
+         * @param string $downloadUrl
+         */
+        public function setDownloadUrl($downloadUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDownloadUrl()
+        {
+        }
+        /**
+         * @param string $encryptedKey
+         */
+        public function setEncryptedKey($encryptedKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEncryptedKey()
+        {
+        }
+        /**
+         * @param string $language
+         */
+        public function setLanguage($language)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLanguage()
+        {
+        }
+        /**
+         * @param string $size
+         */
+        public function setSize($size)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSize()
+        {
+        }
+        /**
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Books\MetadataItems registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDownloadUrl()
-    {
-    }
-    /**
-     * @param string $encryptedKey
-     */
-    public function setEncryptedKey($encryptedKey)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEncryptedKey()
-    {
-    }
-    /**
-     * @param string $language
-     */
-    public function setLanguage($language)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLanguage()
-    {
-    }
-    /**
-     * @param string $size
-     */
-    public function setSize($size)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSize()
-    {
-    }
-    /**
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_Books_MetadataItems extends \Google\Service\Books\MetadataItems
     {
     }
 }

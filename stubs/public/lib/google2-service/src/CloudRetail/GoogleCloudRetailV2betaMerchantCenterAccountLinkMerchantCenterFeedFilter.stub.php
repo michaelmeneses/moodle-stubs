@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2betaMerchantCenterAccountLinkMerchantCenterFeedFilter extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $primaryFeedId;
-    /**
-     * @var string
-     */
-    public $primaryFeedName;
-    /**
-     * @param string
-     */
-    public function setPrimaryFeedId($primaryFeedId)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2betaMerchantCenterAccountLinkMerchantCenterFeedFilter extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $primaryFeedId;
+        /**
+         * @var string
+         */
+        public $primaryFeedName;
+        /**
+         * @param string
+         */
+        public function setPrimaryFeedId($primaryFeedId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrimaryFeedId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPrimaryFeedName($primaryFeedName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrimaryFeedName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2betaMerchantCenterAccountLinkMerchantCenterFeedFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPrimaryFeedId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPrimaryFeedName($primaryFeedName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrimaryFeedName()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2betaMerchantCenterAccountLinkMerchantCenterFeedFilter extends \Google\Service\CloudRetail\GoogleCloudRetailV2betaMerchantCenterAccountLinkMerchantCenterFeedFilter
     {
     }
 }

@@ -22,6 +22,13 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace aiprovider_awsbedrock;
 
+use aiprovider_awsbedrock\aimodel\ai21;
+use aiprovider_awsbedrock\aimodel\amazon;
+use aiprovider_awsbedrock\aimodel\anthropic;
+use aiprovider_awsbedrock\aimodel\meta;
+use aiprovider_awsbedrock\aimodel\mistral;
+use aiprovider_awsbedrock\aimodel\stability;
+use aiprovider_awsbedrock\model_definition;
 /**
  * AWS Bedrock model registry.
  *

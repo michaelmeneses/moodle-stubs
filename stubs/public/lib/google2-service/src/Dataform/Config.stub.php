@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataform;
-
-class Config extends \Google\Model
-{
-    /**
-     * Optional. The default KMS key that is used if no encryption key is provided
-     * when a repository is created.
-     *
-     * @var string
-     */
-    public $defaultKmsKeyName;
-    /**
-     * Output only. All the metadata information that is used internally to serve
-     * the resource. For example: timestamps, flags, status fields, etc. The
-     * format of this field is a JSON string.
-     *
-     * @var string
-     */
-    public $internalMetadata;
-    /**
-     * Identifier. The config name.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optional. The default KMS key that is used if no encryption key is provided
-     * when a repository is created.
-     *
-     * @param string $defaultKmsKeyName
-     */
-    public function setDefaultKmsKeyName($defaultKmsKeyName)
+namespace Google\Service\Dataform {
+    class Config extends \Google\Model
     {
+        /**
+         * Optional. The default KMS key that is used if no encryption key is provided
+         * when a repository is created.
+         *
+         * @var string
+         */
+        public $defaultKmsKeyName;
+        /**
+         * Output only. All the metadata information that is used internally to serve
+         * the resource. For example: timestamps, flags, status fields, etc. The
+         * format of this field is a JSON string.
+         *
+         * @var string
+         */
+        public $internalMetadata;
+        /**
+         * Identifier. The config name.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optional. The default KMS key that is used if no encryption key is provided
+         * when a repository is created.
+         *
+         * @param string $defaultKmsKeyName
+         */
+        public function setDefaultKmsKeyName($defaultKmsKeyName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDefaultKmsKeyName()
+        {
+        }
+        /**
+         * Output only. All the metadata information that is used internally to serve
+         * the resource. For example: timestamps, flags, status fields, etc. The
+         * format of this field is a JSON string.
+         *
+         * @param string $internalMetadata
+         */
+        public function setInternalMetadata($internalMetadata)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInternalMetadata()
+        {
+        }
+        /**
+         * Identifier. The config name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataform\Config registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDefaultKmsKeyName()
-    {
-    }
-    /**
-     * Output only. All the metadata information that is used internally to serve
-     * the resource. For example: timestamps, flags, status fields, etc. The
-     * format of this field is a JSON string.
-     *
-     * @param string $internalMetadata
-     */
-    public function setInternalMetadata($internalMetadata)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInternalMetadata()
-    {
-    }
-    /**
-     * Identifier. The config name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Dataform_Config extends \Google\Service\Dataform\Config
     {
     }
 }

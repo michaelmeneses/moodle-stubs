@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsReporting;
-
-class CustomDimension extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $index;
-    /**
-     * @var string
-     */
-    public $value;
-    /**
-     * @param int
-     */
-    public function setIndex($index)
+namespace Google\Service\AnalyticsReporting {
+    class CustomDimension extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $index;
+        /**
+         * @var string
+         */
+        public $value;
+        /**
+         * @param int
+         */
+        public function setIndex($index)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getIndex()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\AnalyticsReporting\CustomDimension registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIndex()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_AnalyticsReporting_CustomDimension extends \Google\Service\AnalyticsReporting\CustomDimension
     {
     }
 }

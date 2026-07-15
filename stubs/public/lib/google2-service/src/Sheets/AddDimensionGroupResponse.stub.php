@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class AddDimensionGroupResponse extends \Google\Collection
-{
-    protected $collection_key = 'dimensionGroups';
-    protected $dimensionGroupsType = DimensionGroup::class;
-    protected $dimensionGroupsDataType = 'array';
-    /**
-     * All groups of a dimension after adding a group to that dimension.
-     *
-     * @param DimensionGroup[] $dimensionGroups
-     */
-    public function setDimensionGroups($dimensionGroups)
+namespace Google\Service\Sheets {
+    class AddDimensionGroupResponse extends \Google\Collection
     {
+        protected $collection_key = 'dimensionGroups';
+        protected $dimensionGroupsType = DimensionGroup::class;
+        protected $dimensionGroupsDataType = 'array';
+        /**
+         * All groups of a dimension after adding a group to that dimension.
+         *
+         * @param DimensionGroup[] $dimensionGroups
+         */
+        public function setDimensionGroups($dimensionGroups)
+        {
+        }
+        /**
+         * @return DimensionGroup[]
+         */
+        public function getDimensionGroups()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DimensionGroup[]
+     * Runtime class alias of \Google\Service\Sheets\AddDimensionGroupResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDimensionGroups()
+    class Google_Service_Sheets_AddDimensionGroupResponse extends \Google\Service\Sheets\AddDimensionGroupResponse
     {
     }
 }

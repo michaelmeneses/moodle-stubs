@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class ListInventorySourceGroupsResponse extends \Google\Collection
-{
-    protected $collection_key = 'inventorySourceGroups';
-    protected $inventorySourceGroupsType = InventorySourceGroup::class;
-    protected $inventorySourceGroupsDataType = 'array';
-    /**
-     * A token to retrieve the next page of results. Pass this value in the
-     * page_token field in the subsequent call to `ListInventorySourceGroups`
-     * method to retrieve the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of inventory source groups. This list will be absent if empty.
-     *
-     * @param InventorySourceGroup[] $inventorySourceGroups
-     */
-    public function setInventorySourceGroups($inventorySourceGroups)
+namespace Google\Service\DisplayVideo {
+    class ListInventorySourceGroupsResponse extends \Google\Collection
     {
+        protected $collection_key = 'inventorySourceGroups';
+        protected $inventorySourceGroupsType = InventorySourceGroup::class;
+        protected $inventorySourceGroupsDataType = 'array';
+        /**
+         * A token to retrieve the next page of results. Pass this value in the
+         * page_token field in the subsequent call to `ListInventorySourceGroups`
+         * method to retrieve the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of inventory source groups. This list will be absent if empty.
+         *
+         * @param InventorySourceGroup[] $inventorySourceGroups
+         */
+        public function setInventorySourceGroups($inventorySourceGroups)
+        {
+        }
+        /**
+         * @return InventorySourceGroup[]
+         */
+        public function getInventorySourceGroups()
+        {
+        }
+        /**
+         * A token to retrieve the next page of results. Pass this value in the
+         * page_token field in the subsequent call to `ListInventorySourceGroups`
+         * method to retrieve the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InventorySourceGroup[]
+     * Runtime class alias of \Google\Service\DisplayVideo\ListInventorySourceGroupsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInventorySourceGroups()
-    {
-    }
-    /**
-     * A token to retrieve the next page of results. Pass this value in the
-     * page_token field in the subsequent call to `ListInventorySourceGroups`
-     * method to retrieve the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_DisplayVideo_ListInventorySourceGroupsResponse extends \Google\Service\DisplayVideo\ListInventorySourceGroupsResponse
     {
     }
 }

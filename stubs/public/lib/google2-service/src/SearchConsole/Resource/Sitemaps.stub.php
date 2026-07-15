@@ -21,75 +21,86 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SearchConsole\Resource;
-
-/**
- * The "sitemaps" collection of methods.
- * Typical usage is:
- *  <code>
- *   $searchconsoleService = new Google\Service\SearchConsole(...);
- *   $sitemaps = $searchconsoleService->sitemaps;
- *  </code>
- */
-class Sitemaps extends \Google\Service\Resource
-{
+namespace Google\Service\SearchConsole\Resource {
+    use Google\Service\SearchConsole\SitemapsListResponse;
+    use Google\Service\SearchConsole\WmxSitemap;
     /**
-     * Deletes a sitemap from the Sitemaps report. Does not stop Google from
-     * crawling this sitemap or the URLs that were previously crawled in the deleted
-     * sitemap. (sitemaps.delete)
-     *
-     * @param string $siteUrl The site's URL, including protocol. For example:
-     * `http://www.example.com/`.
-     * @param string $feedpath The URL of the actual sitemap. For example:
-     * `http://www.example.com/sitemap.xml`.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * The "sitemaps" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $searchconsoleService = new Google\Service\SearchConsole(...);
+     *   $sitemaps = $searchconsoleService->sitemaps;
+     *  </code>
      */
-    public function delete($siteUrl, $feedpath, $optParams = [])
+    class Sitemaps extends \Google\Service\Resource
     {
+        /**
+         * Deletes a sitemap from the Sitemaps report. Does not stop Google from
+         * crawling this sitemap or the URLs that were previously crawled in the deleted
+         * sitemap. (sitemaps.delete)
+         *
+         * @param string $siteUrl The site's URL, including protocol. For example:
+         * `http://www.example.com/`.
+         * @param string $feedpath The URL of the actual sitemap. For example:
+         * `http://www.example.com/sitemap.xml`.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($siteUrl, $feedpath, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves information about a specific sitemap. (sitemaps.get)
+         *
+         * @param string $siteUrl The site's URL, including protocol. For example:
+         * `http://www.example.com/`.
+         * @param string $feedpath The URL of the actual sitemap. For example:
+         * `http://www.example.com/sitemap.xml`.
+         * @param array $optParams Optional parameters.
+         * @return WmxSitemap
+         * @throws \Google\Service\Exception
+         */
+        public function get($siteUrl, $feedpath, $optParams = [])
+        {
+        }
+        /**
+         * Lists the [sitemaps-entries](/webmaster-tools/v3/sitemaps) submitted for this
+         * site, or included in the sitemap index file (if `sitemapIndex` is specified
+         * in the request). (sitemaps.listSitemaps)
+         *
+         * @param string $siteUrl The site's URL, including protocol. For example:
+         * `http://www.example.com/`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string sitemapIndex A URL of a site's sitemap index. For example:
+         * `http://www.example.com/sitemapindex.xml`.
+         * @return SitemapsListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listSitemaps($siteUrl, $optParams = [])
+        {
+        }
+        /**
+         * Submits a sitemap for a site. (sitemaps.submit)
+         *
+         * @param string $siteUrl The site's URL, including protocol. For example:
+         * `http://www.example.com/`.
+         * @param string $feedpath The URL of the actual sitemap. For example:
+         * `http://www.example.com/sitemap.xml`.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function submit($siteUrl, $feedpath, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Retrieves information about a specific sitemap. (sitemaps.get)
-     *
-     * @param string $siteUrl The site's URL, including protocol. For example:
-     * `http://www.example.com/`.
-     * @param string $feedpath The URL of the actual sitemap. For example:
-     * `http://www.example.com/sitemap.xml`.
-     * @param array $optParams Optional parameters.
-     * @return WmxSitemap
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\SearchConsole\Resource\Sitemaps registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($siteUrl, $feedpath, $optParams = [])
-    {
-    }
-    /**
-     * Lists the [sitemaps-entries](/webmaster-tools/v3/sitemaps) submitted for this
-     * site, or included in the sitemap index file (if `sitemapIndex` is specified
-     * in the request). (sitemaps.listSitemaps)
-     *
-     * @param string $siteUrl The site's URL, including protocol. For example:
-     * `http://www.example.com/`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string sitemapIndex A URL of a site's sitemap index. For example:
-     * `http://www.example.com/sitemapindex.xml`.
-     * @return SitemapsListResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listSitemaps($siteUrl, $optParams = [])
-    {
-    }
-    /**
-     * Submits a sitemap for a site. (sitemaps.submit)
-     *
-     * @param string $siteUrl The site's URL, including protocol. For example:
-     * `http://www.example.com/`.
-     * @param string $feedpath The URL of the actual sitemap. For example:
-     * `http://www.example.com/sitemap.xml`.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
-     */
-    public function submit($siteUrl, $feedpath, $optParams = [])
+    class Google_Service_SearchConsole_Resource_Sitemaps extends \Google\Service\SearchConsole\Resource\Sitemaps
     {
     }
 }

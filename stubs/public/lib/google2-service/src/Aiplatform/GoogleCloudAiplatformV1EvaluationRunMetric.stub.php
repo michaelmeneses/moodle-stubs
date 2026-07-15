@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1EvaluationRunMetric extends \Google\Model
-{
-    protected $llmBasedMetricSpecType = GoogleCloudAiplatformV1EvaluationRunMetricLLMBasedMetricSpec::class;
-    protected $llmBasedMetricSpecDataType = '';
-    /**
-     * Required. The name of the metric.
-     *
-     * @var string
-     */
-    public $metric;
-    protected $metricConfigType = GoogleCloudAiplatformV1Metric::class;
-    protected $metricConfigDataType = '';
-    protected $predefinedMetricSpecType = GoogleCloudAiplatformV1EvaluationRunMetricPredefinedMetricSpec::class;
-    protected $predefinedMetricSpecDataType = '';
-    protected $rubricBasedMetricSpecType = GoogleCloudAiplatformV1EvaluationRunMetricRubricBasedMetricSpec::class;
-    protected $rubricBasedMetricSpecDataType = '';
-    /**
-     * Spec for an LLM based metric.
-     *
-     * @param GoogleCloudAiplatformV1EvaluationRunMetricLLMBasedMetricSpec $llmBasedMetricSpec
-     */
-    public function setLlmBasedMetricSpec(GoogleCloudAiplatformV1EvaluationRunMetricLLMBasedMetricSpec $llmBasedMetricSpec)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1EvaluationRunMetric extends \Google\Model
     {
+        protected $llmBasedMetricSpecType = GoogleCloudAiplatformV1EvaluationRunMetricLLMBasedMetricSpec::class;
+        protected $llmBasedMetricSpecDataType = '';
+        /**
+         * Required. The name of the metric.
+         *
+         * @var string
+         */
+        public $metric;
+        protected $metricConfigType = GoogleCloudAiplatformV1Metric::class;
+        protected $metricConfigDataType = '';
+        protected $predefinedMetricSpecType = GoogleCloudAiplatformV1EvaluationRunMetricPredefinedMetricSpec::class;
+        protected $predefinedMetricSpecDataType = '';
+        protected $rubricBasedMetricSpecType = GoogleCloudAiplatformV1EvaluationRunMetricRubricBasedMetricSpec::class;
+        protected $rubricBasedMetricSpecDataType = '';
+        /**
+         * Spec for an LLM based metric.
+         *
+         * @param GoogleCloudAiplatformV1EvaluationRunMetricLLMBasedMetricSpec $llmBasedMetricSpec
+         */
+        public function setLlmBasedMetricSpec(GoogleCloudAiplatformV1EvaluationRunMetricLLMBasedMetricSpec $llmBasedMetricSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1EvaluationRunMetricLLMBasedMetricSpec
+         */
+        public function getLlmBasedMetricSpec()
+        {
+        }
+        /**
+         * Required. The name of the metric.
+         *
+         * @param string $metric
+         */
+        public function setMetric($metric)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMetric()
+        {
+        }
+        /**
+         * The metric config.
+         *
+         * @param GoogleCloudAiplatformV1Metric $metricConfig
+         */
+        public function setMetricConfig(GoogleCloudAiplatformV1Metric $metricConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1Metric
+         */
+        public function getMetricConfig()
+        {
+        }
+        /**
+         * Spec for a pre-defined metric.
+         *
+         * @param GoogleCloudAiplatformV1EvaluationRunMetricPredefinedMetricSpec $predefinedMetricSpec
+         */
+        public function setPredefinedMetricSpec(GoogleCloudAiplatformV1EvaluationRunMetricPredefinedMetricSpec $predefinedMetricSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1EvaluationRunMetricPredefinedMetricSpec
+         */
+        public function getPredefinedMetricSpec()
+        {
+        }
+        /**
+         * Spec for rubric based metric.
+         *
+         * @param GoogleCloudAiplatformV1EvaluationRunMetricRubricBasedMetricSpec $rubricBasedMetricSpec
+         */
+        public function setRubricBasedMetricSpec(GoogleCloudAiplatformV1EvaluationRunMetricRubricBasedMetricSpec $rubricBasedMetricSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1EvaluationRunMetricRubricBasedMetricSpec
+         */
+        public function getRubricBasedMetricSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1EvaluationRunMetricLLMBasedMetricSpec
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1EvaluationRunMetric registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLlmBasedMetricSpec()
-    {
-    }
-    /**
-     * Required. The name of the metric.
-     *
-     * @param string $metric
-     */
-    public function setMetric($metric)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMetric()
-    {
-    }
-    /**
-     * The metric config.
-     *
-     * @param GoogleCloudAiplatformV1Metric $metricConfig
-     */
-    public function setMetricConfig(GoogleCloudAiplatformV1Metric $metricConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1Metric
-     */
-    public function getMetricConfig()
-    {
-    }
-    /**
-     * Spec for a pre-defined metric.
-     *
-     * @param GoogleCloudAiplatformV1EvaluationRunMetricPredefinedMetricSpec $predefinedMetricSpec
-     */
-    public function setPredefinedMetricSpec(GoogleCloudAiplatformV1EvaluationRunMetricPredefinedMetricSpec $predefinedMetricSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1EvaluationRunMetricPredefinedMetricSpec
-     */
-    public function getPredefinedMetricSpec()
-    {
-    }
-    /**
-     * Spec for rubric based metric.
-     *
-     * @param GoogleCloudAiplatformV1EvaluationRunMetricRubricBasedMetricSpec $rubricBasedMetricSpec
-     */
-    public function setRubricBasedMetricSpec(GoogleCloudAiplatformV1EvaluationRunMetricRubricBasedMetricSpec $rubricBasedMetricSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1EvaluationRunMetricRubricBasedMetricSpec
-     */
-    public function getRubricBasedMetricSpec()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1EvaluationRunMetric extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1EvaluationRunMetric
     {
     }
 }

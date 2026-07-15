@@ -21,130 +21,139 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class GoogleDocsMetadata extends \Google\Model
-{
-    protected $aclInfoType = AclInfo::class;
-    protected $aclInfoDataType = '';
-    /**
-     * @var string
-     */
-    public $documentType;
-    /**
-     * @var string
-     */
-    public $fileExtension;
-    /**
-     * @var string
-     */
-    public $lastContentModifiedTimestamp;
-    /**
-     * @var int
-     */
-    public $numSubscribers;
-    /**
-     * @var int
-     */
-    public $numViewers;
-    protected $resultInfoType = GoogleDocsResultInfo::class;
-    protected $resultInfoDataType = '';
-    protected $typeInfoType = TypeInfo::class;
-    protected $typeInfoDataType = '';
-    /**
-     * @param AclInfo
-     */
-    public function setAclInfo(AclInfo $aclInfo)
+namespace Google\Service\CloudSearch {
+    class GoogleDocsMetadata extends \Google\Model
     {
+        protected $aclInfoType = AclInfo::class;
+        protected $aclInfoDataType = '';
+        /**
+         * @var string
+         */
+        public $documentType;
+        /**
+         * @var string
+         */
+        public $fileExtension;
+        /**
+         * @var string
+         */
+        public $lastContentModifiedTimestamp;
+        /**
+         * @var int
+         */
+        public $numSubscribers;
+        /**
+         * @var int
+         */
+        public $numViewers;
+        protected $resultInfoType = GoogleDocsResultInfo::class;
+        protected $resultInfoDataType = '';
+        protected $typeInfoType = TypeInfo::class;
+        protected $typeInfoDataType = '';
+        /**
+         * @param AclInfo
+         */
+        public function setAclInfo(AclInfo $aclInfo)
+        {
+        }
+        /**
+         * @return AclInfo
+         */
+        public function getAclInfo()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDocumentType($documentType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDocumentType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setFileExtension($fileExtension)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFileExtension()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLastContentModifiedTimestamp($lastContentModifiedTimestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastContentModifiedTimestamp()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setNumSubscribers($numSubscribers)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumSubscribers()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setNumViewers($numViewers)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumViewers()
+        {
+        }
+        /**
+         * @param GoogleDocsResultInfo
+         */
+        public function setResultInfo(GoogleDocsResultInfo $resultInfo)
+        {
+        }
+        /**
+         * @return GoogleDocsResultInfo
+         */
+        public function getResultInfo()
+        {
+        }
+        /**
+         * @param TypeInfo
+         */
+        public function setTypeInfo(TypeInfo $typeInfo)
+        {
+        }
+        /**
+         * @return TypeInfo
+         */
+        public function getTypeInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AclInfo
+     * Runtime class alias of \Google\Service\CloudSearch\GoogleDocsMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAclInfo()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDocumentType($documentType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDocumentType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setFileExtension($fileExtension)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFileExtension()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLastContentModifiedTimestamp($lastContentModifiedTimestamp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastContentModifiedTimestamp()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setNumSubscribers($numSubscribers)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNumSubscribers()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setNumViewers($numViewers)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNumViewers()
-    {
-    }
-    /**
-     * @param GoogleDocsResultInfo
-     */
-    public function setResultInfo(GoogleDocsResultInfo $resultInfo)
-    {
-    }
-    /**
-     * @return GoogleDocsResultInfo
-     */
-    public function getResultInfo()
-    {
-    }
-    /**
-     * @param TypeInfo
-     */
-    public function setTypeInfo(TypeInfo $typeInfo)
-    {
-    }
-    /**
-     * @return TypeInfo
-     */
-    public function getTypeInfo()
+    class Google_Service_CloudSearch_GoogleDocsMetadata extends \Google\Service\CloudSearch\GoogleDocsMetadata
     {
     }
 }

@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1Parameter extends \Google\Model
-{
-    /**
-     * Output only. Specifies whether this parameter is allowed to be changed. For
-     * example, for a Google Workspace Business Starter entitlement in commitment
-     * plan, num_units is editable when entitlement is active.
-     *
-     * @var bool
-     */
-    public $editable;
-    /**
-     * Name of the parameter.
-     *
-     * @var string
-     */
-    public $name;
-    protected $valueType = GoogleCloudChannelV1Value::class;
-    protected $valueDataType = '';
-    /**
-     * Output only. Specifies whether this parameter is allowed to be changed. For
-     * example, for a Google Workspace Business Starter entitlement in commitment
-     * plan, num_units is editable when entitlement is active.
-     *
-     * @param bool $editable
-     */
-    public function setEditable($editable)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1Parameter extends \Google\Model
     {
+        /**
+         * Output only. Specifies whether this parameter is allowed to be changed. For
+         * example, for a Google Workspace Business Starter entitlement in commitment
+         * plan, num_units is editable when entitlement is active.
+         *
+         * @var bool
+         */
+        public $editable;
+        /**
+         * Name of the parameter.
+         *
+         * @var string
+         */
+        public $name;
+        protected $valueType = GoogleCloudChannelV1Value::class;
+        protected $valueDataType = '';
+        /**
+         * Output only. Specifies whether this parameter is allowed to be changed. For
+         * example, for a Google Workspace Business Starter entitlement in commitment
+         * plan, num_units is editable when entitlement is active.
+         *
+         * @param bool $editable
+         */
+        public function setEditable($editable)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEditable()
+        {
+        }
+        /**
+         * Name of the parameter.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Value of the parameter.
+         *
+         * @param GoogleCloudChannelV1Value $value
+         */
+        public function setValue(GoogleCloudChannelV1Value $value)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1Value
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1Parameter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEditable()
-    {
-    }
-    /**
-     * Name of the parameter.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Value of the parameter.
-     *
-     * @param GoogleCloudChannelV1Value $value
-     */
-    public function setValue(GoogleCloudChannelV1Value $value)
-    {
-    }
-    /**
-     * @return GoogleCloudChannelV1Value
-     */
-    public function getValue()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1Parameter extends \Google\Service\Cloudchannel\GoogleCloudChannelV1Parameter
     {
     }
 }

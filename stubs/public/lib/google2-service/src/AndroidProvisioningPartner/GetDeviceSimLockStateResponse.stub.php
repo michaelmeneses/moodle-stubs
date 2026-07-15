@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidProvisioningPartner;
-
-class GetDeviceSimLockStateResponse extends \Google\Model
-{
-    /**
-     * Invalid code. Shouldn't be used.
-     */
-    public const SIM_LOCK_STATE_SIM_LOCK_STATE_UNSPECIFIED = 'SIM_LOCK_STATE_UNSPECIFIED';
-    /**
-     * Device is not SIM locked.
-     */
-    public const SIM_LOCK_STATE_UNLOCKED = 'UNLOCKED';
-    /**
-     * Device is SIM locked to the partner querying SIM lock state.
-     */
-    public const SIM_LOCK_STATE_LOCKED_TO_PARTNER = 'LOCKED_TO_PARTNER';
-    /**
-     * Device is SIM locked to a different partner.
-     */
-    public const SIM_LOCK_STATE_LOCKED_TO_OTHER_PARTNER = 'LOCKED_TO_OTHER_PARTNER';
-    /**
-     * @var string
-     */
-    public $simLockState;
-    /**
-     * @param self::SIM_LOCK_STATE_* $simLockState
-     */
-    public function setSimLockState($simLockState)
+namespace Google\Service\AndroidProvisioningPartner {
+    class GetDeviceSimLockStateResponse extends \Google\Model
     {
+        /**
+         * Invalid code. Shouldn't be used.
+         */
+        public const SIM_LOCK_STATE_SIM_LOCK_STATE_UNSPECIFIED = 'SIM_LOCK_STATE_UNSPECIFIED';
+        /**
+         * Device is not SIM locked.
+         */
+        public const SIM_LOCK_STATE_UNLOCKED = 'UNLOCKED';
+        /**
+         * Device is SIM locked to the partner querying SIM lock state.
+         */
+        public const SIM_LOCK_STATE_LOCKED_TO_PARTNER = 'LOCKED_TO_PARTNER';
+        /**
+         * Device is SIM locked to a different partner.
+         */
+        public const SIM_LOCK_STATE_LOCKED_TO_OTHER_PARTNER = 'LOCKED_TO_OTHER_PARTNER';
+        /**
+         * @var string
+         */
+        public $simLockState;
+        /**
+         * @param self::SIM_LOCK_STATE_* $simLockState
+         */
+        public function setSimLockState($simLockState)
+        {
+        }
+        /**
+         * @return self::SIM_LOCK_STATE_*
+         */
+        public function getSimLockState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::SIM_LOCK_STATE_*
+     * Runtime class alias of \Google\Service\AndroidProvisioningPartner\GetDeviceSimLockStateResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSimLockState()
+    class Google_Service_AndroidProvisioningPartner_GetDeviceSimLockStateResponse extends \Google\Service\AndroidProvisioningPartner\GetDeviceSimLockStateResponse
     {
     }
 }

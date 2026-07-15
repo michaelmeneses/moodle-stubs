@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0CommonAssetInteractionTarget extends \Google\Model
-{
-    /**
-     * The asset resource name.
-     *
-     * @var string
-     */
-    public $asset;
-    /**
-     * Only used with CustomerAsset, CampaignAsset and AdGroupAsset metrics.
-     * Indicates whether the interaction metrics occurred on the asset itself or a
-     * different asset or ad unit.
-     *
-     * @var bool
-     */
-    public $interactionOnThisAsset;
-    /**
-     * The asset resource name.
-     *
-     * @param string $asset
-     */
-    public function setAsset($asset)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0CommonAssetInteractionTarget extends \Google\Model
     {
+        /**
+         * The asset resource name.
+         *
+         * @var string
+         */
+        public $asset;
+        /**
+         * Only used with CustomerAsset, CampaignAsset and AdGroupAsset metrics.
+         * Indicates whether the interaction metrics occurred on the asset itself or a
+         * different asset or ad unit.
+         *
+         * @var bool
+         */
+        public $interactionOnThisAsset;
+        /**
+         * The asset resource name.
+         *
+         * @param string $asset
+         */
+        public function setAsset($asset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAsset()
+        {
+        }
+        /**
+         * Only used with CustomerAsset, CampaignAsset and AdGroupAsset metrics.
+         * Indicates whether the interaction metrics occurred on the asset itself or a
+         * different asset or ad unit.
+         *
+         * @param bool $interactionOnThisAsset
+         */
+        public function setInteractionOnThisAsset($interactionOnThisAsset)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getInteractionOnThisAsset()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0CommonAssetInteractionTarget registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAsset()
-    {
-    }
-    /**
-     * Only used with CustomerAsset, CampaignAsset and AdGroupAsset metrics.
-     * Indicates whether the interaction metrics occurred on the asset itself or a
-     * different asset or ad unit.
-     *
-     * @param bool $interactionOnThisAsset
-     */
-    public function setInteractionOnThisAsset($interactionOnThisAsset)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getInteractionOnThisAsset()
+    class Google_Service_SA360_GoogleAdsSearchads360V0CommonAssetInteractionTarget extends \Google\Service\SA360\GoogleAdsSearchads360V0CommonAssetInteractionTarget
     {
     }
 }

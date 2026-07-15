@@ -21,126 +21,135 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1AuthConfigApiKeyConfig extends \Google\Model
-{
-    public const HTTP_ELEMENT_LOCATION_HTTP_IN_UNSPECIFIED = 'HTTP_IN_UNSPECIFIED';
-    /**
-     * Element is in the HTTP request query.
-     */
-    public const HTTP_ELEMENT_LOCATION_HTTP_IN_QUERY = 'HTTP_IN_QUERY';
-    /**
-     * Element is in the HTTP request header.
-     */
-    public const HTTP_ELEMENT_LOCATION_HTTP_IN_HEADER = 'HTTP_IN_HEADER';
-    /**
-     * Element is in the HTTP request path.
-     */
-    public const HTTP_ELEMENT_LOCATION_HTTP_IN_PATH = 'HTTP_IN_PATH';
-    /**
-     * Element is in the HTTP request body.
-     */
-    public const HTTP_ELEMENT_LOCATION_HTTP_IN_BODY = 'HTTP_IN_BODY';
-    /**
-     * Element is in the HTTP request cookie.
-     */
-    public const HTTP_ELEMENT_LOCATION_HTTP_IN_COOKIE = 'HTTP_IN_COOKIE';
-    /**
-     * Optional. The name of the SecretManager secret version resource storing the
-     * API key. Format: `projects/{project}/secrets/{secrete}/versions/{version}`
-     * - If both `api_key_secret` and `api_key_string` are specified, this field
-     * takes precedence over `api_key_string`. - If specified, the
-     * `secretmanager.versions.access` permission should be granted to Vertex AI
-     * Extension Service Agent (https://cloud.google.com/vertex-
-     * ai/docs/general/access-control#service-agents) on the specified resource.
-     *
-     * @var string
-     */
-    public $apiKeySecret;
-    /**
-     * Optional. The API key to be used in the request directly.
-     *
-     * @var string
-     */
-    public $apiKeyString;
-    /**
-     * Optional. The location of the API key.
-     *
-     * @var string
-     */
-    public $httpElementLocation;
-    /**
-     * Optional. The parameter name of the API key. E.g. If the API request is
-     * "https://example.com/act?api_key=", "api_key" would be the parameter name.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optional. The name of the SecretManager secret version resource storing the
-     * API key. Format: `projects/{project}/secrets/{secrete}/versions/{version}`
-     * - If both `api_key_secret` and `api_key_string` are specified, this field
-     * takes precedence over `api_key_string`. - If specified, the
-     * `secretmanager.versions.access` permission should be granted to Vertex AI
-     * Extension Service Agent (https://cloud.google.com/vertex-
-     * ai/docs/general/access-control#service-agents) on the specified resource.
-     *
-     * @param string $apiKeySecret
-     */
-    public function setApiKeySecret($apiKeySecret)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1AuthConfigApiKeyConfig extends \Google\Model
     {
+        public const HTTP_ELEMENT_LOCATION_HTTP_IN_UNSPECIFIED = 'HTTP_IN_UNSPECIFIED';
+        /**
+         * Element is in the HTTP request query.
+         */
+        public const HTTP_ELEMENT_LOCATION_HTTP_IN_QUERY = 'HTTP_IN_QUERY';
+        /**
+         * Element is in the HTTP request header.
+         */
+        public const HTTP_ELEMENT_LOCATION_HTTP_IN_HEADER = 'HTTP_IN_HEADER';
+        /**
+         * Element is in the HTTP request path.
+         */
+        public const HTTP_ELEMENT_LOCATION_HTTP_IN_PATH = 'HTTP_IN_PATH';
+        /**
+         * Element is in the HTTP request body.
+         */
+        public const HTTP_ELEMENT_LOCATION_HTTP_IN_BODY = 'HTTP_IN_BODY';
+        /**
+         * Element is in the HTTP request cookie.
+         */
+        public const HTTP_ELEMENT_LOCATION_HTTP_IN_COOKIE = 'HTTP_IN_COOKIE';
+        /**
+         * Optional. The name of the SecretManager secret version resource storing the
+         * API key. Format: `projects/{project}/secrets/{secrete}/versions/{version}`
+         * - If both `api_key_secret` and `api_key_string` are specified, this field
+         * takes precedence over `api_key_string`. - If specified, the
+         * `secretmanager.versions.access` permission should be granted to Vertex AI
+         * Extension Service Agent (https://cloud.google.com/vertex-
+         * ai/docs/general/access-control#service-agents) on the specified resource.
+         *
+         * @var string
+         */
+        public $apiKeySecret;
+        /**
+         * Optional. The API key to be used in the request directly.
+         *
+         * @var string
+         */
+        public $apiKeyString;
+        /**
+         * Optional. The location of the API key.
+         *
+         * @var string
+         */
+        public $httpElementLocation;
+        /**
+         * Optional. The parameter name of the API key. E.g. If the API request is
+         * "https://example.com/act?api_key=", "api_key" would be the parameter name.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optional. The name of the SecretManager secret version resource storing the
+         * API key. Format: `projects/{project}/secrets/{secrete}/versions/{version}`
+         * - If both `api_key_secret` and `api_key_string` are specified, this field
+         * takes precedence over `api_key_string`. - If specified, the
+         * `secretmanager.versions.access` permission should be granted to Vertex AI
+         * Extension Service Agent (https://cloud.google.com/vertex-
+         * ai/docs/general/access-control#service-agents) on the specified resource.
+         *
+         * @param string $apiKeySecret
+         */
+        public function setApiKeySecret($apiKeySecret)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApiKeySecret()
+        {
+        }
+        /**
+         * Optional. The API key to be used in the request directly.
+         *
+         * @param string $apiKeyString
+         */
+        public function setApiKeyString($apiKeyString)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApiKeyString()
+        {
+        }
+        /**
+         * Optional. The location of the API key.
+         *
+         * Accepted values: HTTP_IN_UNSPECIFIED, HTTP_IN_QUERY, HTTP_IN_HEADER,
+         * HTTP_IN_PATH, HTTP_IN_BODY, HTTP_IN_COOKIE
+         *
+         * @param self::HTTP_ELEMENT_LOCATION_* $httpElementLocation
+         */
+        public function setHttpElementLocation($httpElementLocation)
+        {
+        }
+        /**
+         * @return self::HTTP_ELEMENT_LOCATION_*
+         */
+        public function getHttpElementLocation()
+        {
+        }
+        /**
+         * Optional. The parameter name of the API key. E.g. If the API request is
+         * "https://example.com/act?api_key=", "api_key" would be the parameter name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1AuthConfigApiKeyConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiKeySecret()
-    {
-    }
-    /**
-     * Optional. The API key to be used in the request directly.
-     *
-     * @param string $apiKeyString
-     */
-    public function setApiKeyString($apiKeyString)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getApiKeyString()
-    {
-    }
-    /**
-     * Optional. The location of the API key.
-     *
-     * Accepted values: HTTP_IN_UNSPECIFIED, HTTP_IN_QUERY, HTTP_IN_HEADER,
-     * HTTP_IN_PATH, HTTP_IN_BODY, HTTP_IN_COOKIE
-     *
-     * @param self::HTTP_ELEMENT_LOCATION_* $httpElementLocation
-     */
-    public function setHttpElementLocation($httpElementLocation)
-    {
-    }
-    /**
-     * @return self::HTTP_ELEMENT_LOCATION_*
-     */
-    public function getHttpElementLocation()
-    {
-    }
-    /**
-     * Optional. The parameter name of the API key. E.g. If the API request is
-     * "https://example.com/act?api_key=", "api_key" would be the parameter name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1AuthConfigApiKeyConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1AuthConfigApiKeyConfig
     {
     }
 }

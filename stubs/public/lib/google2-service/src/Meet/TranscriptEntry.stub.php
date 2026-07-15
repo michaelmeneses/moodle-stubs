@@ -21,134 +21,143 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Meet;
-
-class TranscriptEntry extends \Google\Model
-{
-    /**
-     * Output only. Timestamp when the transcript entry ended.
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * Output only. Language of spoken text, such as "en-US". IETF BCP 47 syntax
-     * (https://tools.ietf.org/html/bcp47)
-     *
-     * @var string
-     */
-    public $languageCode;
-    /**
-     * Output only. Resource name of the entry. Format: "conferenceRecords/{confer
-     * ence_record}/transcripts/{transcript}/entries/{entry}"
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. Refers to the participant who speaks.
-     *
-     * @var string
-     */
-    public $participant;
-    /**
-     * Output only. Timestamp when the transcript entry started.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * Output only. The transcribed text of the participant's voice, at maximum
-     * 10K words. Note that the limit is subject to change.
-     *
-     * @var string
-     */
-    public $text;
-    /**
-     * Output only. Timestamp when the transcript entry ended.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
+namespace Google\Service\Meet {
+    class TranscriptEntry extends \Google\Model
     {
+        /**
+         * Output only. Timestamp when the transcript entry ended.
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * Output only. Language of spoken text, such as "en-US". IETF BCP 47 syntax
+         * (https://tools.ietf.org/html/bcp47)
+         *
+         * @var string
+         */
+        public $languageCode;
+        /**
+         * Output only. Resource name of the entry. Format: "conferenceRecords/{confer
+         * ence_record}/transcripts/{transcript}/entries/{entry}"
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. Refers to the participant who speaks.
+         *
+         * @var string
+         */
+        public $participant;
+        /**
+         * Output only. Timestamp when the transcript entry started.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * Output only. The transcribed text of the participant's voice, at maximum
+         * 10K words. Note that the limit is subject to change.
+         *
+         * @var string
+         */
+        public $text;
+        /**
+         * Output only. Timestamp when the transcript entry ended.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * Output only. Language of spoken text, such as "en-US". IETF BCP 47 syntax
+         * (https://tools.ietf.org/html/bcp47)
+         *
+         * @param string $languageCode
+         */
+        public function setLanguageCode($languageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLanguageCode()
+        {
+        }
+        /**
+         * Output only. Resource name of the entry. Format: "conferenceRecords/{confer
+         * ence_record}/transcripts/{transcript}/entries/{entry}"
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. Refers to the participant who speaks.
+         *
+         * @param string $participant
+         */
+        public function setParticipant($participant)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParticipant()
+        {
+        }
+        /**
+         * Output only. Timestamp when the transcript entry started.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
+        /**
+         * Output only. The transcribed text of the participant's voice, at maximum
+         * 10K words. Note that the limit is subject to change.
+         *
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Meet\TranscriptEntry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndTime()
-    {
-    }
-    /**
-     * Output only. Language of spoken text, such as "en-US". IETF BCP 47 syntax
-     * (https://tools.ietf.org/html/bcp47)
-     *
-     * @param string $languageCode
-     */
-    public function setLanguageCode($languageCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLanguageCode()
-    {
-    }
-    /**
-     * Output only. Resource name of the entry. Format: "conferenceRecords/{confer
-     * ence_record}/transcripts/{transcript}/entries/{entry}"
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. Refers to the participant who speaks.
-     *
-     * @param string $participant
-     */
-    public function setParticipant($participant)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParticipant()
-    {
-    }
-    /**
-     * Output only. Timestamp when the transcript entry started.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
-    {
-    }
-    /**
-     * Output only. The transcribed text of the participant's voice, at maximum
-     * 10K words. Note that the limit is subject to change.
-     *
-     * @param string $text
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
+    class Google_Service_Meet_TranscriptEntry extends \Google\Service\Meet\TranscriptEntry
     {
     }
 }

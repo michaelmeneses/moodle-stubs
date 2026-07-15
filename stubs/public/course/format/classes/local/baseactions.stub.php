@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_courseformat\local;
 
+use core_courseformat\base as course_format;
+use section_info;
+use cm_info;
+use stdClass;
 /**
  * Format base actions.
  *

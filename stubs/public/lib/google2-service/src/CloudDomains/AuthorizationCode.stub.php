@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDomains;
-
-class AuthorizationCode extends \Google\Model
-{
-    /**
-     * The Authorization Code in ASCII. It can be used to transfer the domain to
-     * or from another registrar.
-     *
-     * @var string
-     */
-    public $code;
-    /**
-     * The Authorization Code in ASCII. It can be used to transfer the domain to
-     * or from another registrar.
-     *
-     * @param string $code
-     */
-    public function setCode($code)
+namespace Google\Service\CloudDomains {
+    class AuthorizationCode extends \Google\Model
     {
+        /**
+         * The Authorization Code in ASCII. It can be used to transfer the domain to
+         * or from another registrar.
+         *
+         * @var string
+         */
+        public $code;
+        /**
+         * The Authorization Code in ASCII. It can be used to transfer the domain to
+         * or from another registrar.
+         *
+         * @param string $code
+         */
+        public function setCode($code)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDomains\AuthorizationCode registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCode()
+    class Google_Service_CloudDomains_AuthorizationCode extends \Google\Service\CloudDomains\AuthorizationCode
     {
     }
 }

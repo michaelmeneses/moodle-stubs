@@ -21,162 +21,171 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudDocumentaiV1DocumentPageFormField extends \Google\Collection
-{
-    protected $collection_key = 'valueDetectedLanguages';
-    /**
-     * Created for Labeling UI to export key text. If corrections were made to the
-     * text identified by the `field_name.text_anchor`, this field will contain
-     * the correction.
-     *
-     * @var string
-     */
-    public $correctedKeyText;
-    /**
-     * Created for Labeling UI to export value text. If corrections were made to
-     * the text identified by the `field_value.text_anchor`, this field will
-     * contain the correction.
-     *
-     * @var string
-     */
-    public $correctedValueText;
-    protected $fieldNameType = GoogleCloudDocumentaiV1DocumentPageLayout::class;
-    protected $fieldNameDataType = '';
-    protected $fieldValueType = GoogleCloudDocumentaiV1DocumentPageLayout::class;
-    protected $fieldValueDataType = '';
-    protected $nameDetectedLanguagesType = GoogleCloudDocumentaiV1DocumentPageDetectedLanguage::class;
-    protected $nameDetectedLanguagesDataType = 'array';
-    protected $provenanceType = GoogleCloudDocumentaiV1DocumentProvenance::class;
-    protected $provenanceDataType = '';
-    protected $valueDetectedLanguagesType = GoogleCloudDocumentaiV1DocumentPageDetectedLanguage::class;
-    protected $valueDetectedLanguagesDataType = 'array';
-    /**
-     * If the value is non-textual, this field represents the type. Current valid
-     * values are: - blank (this indicates the `field_value` is normal text) -
-     * `unfilled_checkbox` - `filled_checkbox`
-     *
-     * @var string
-     */
-    public $valueType;
-    /**
-     * Created for Labeling UI to export key text. If corrections were made to the
-     * text identified by the `field_name.text_anchor`, this field will contain
-     * the correction.
-     *
-     * @param string $correctedKeyText
-     */
-    public function setCorrectedKeyText($correctedKeyText)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudDocumentaiV1DocumentPageFormField extends \Google\Collection
     {
+        protected $collection_key = 'valueDetectedLanguages';
+        /**
+         * Created for Labeling UI to export key text. If corrections were made to the
+         * text identified by the `field_name.text_anchor`, this field will contain
+         * the correction.
+         *
+         * @var string
+         */
+        public $correctedKeyText;
+        /**
+         * Created for Labeling UI to export value text. If corrections were made to
+         * the text identified by the `field_value.text_anchor`, this field will
+         * contain the correction.
+         *
+         * @var string
+         */
+        public $correctedValueText;
+        protected $fieldNameType = GoogleCloudDocumentaiV1DocumentPageLayout::class;
+        protected $fieldNameDataType = '';
+        protected $fieldValueType = GoogleCloudDocumentaiV1DocumentPageLayout::class;
+        protected $fieldValueDataType = '';
+        protected $nameDetectedLanguagesType = GoogleCloudDocumentaiV1DocumentPageDetectedLanguage::class;
+        protected $nameDetectedLanguagesDataType = 'array';
+        protected $provenanceType = GoogleCloudDocumentaiV1DocumentProvenance::class;
+        protected $provenanceDataType = '';
+        protected $valueDetectedLanguagesType = GoogleCloudDocumentaiV1DocumentPageDetectedLanguage::class;
+        protected $valueDetectedLanguagesDataType = 'array';
+        /**
+         * If the value is non-textual, this field represents the type. Current valid
+         * values are: - blank (this indicates the `field_value` is normal text) -
+         * `unfilled_checkbox` - `filled_checkbox`
+         *
+         * @var string
+         */
+        public $valueType;
+        /**
+         * Created for Labeling UI to export key text. If corrections were made to the
+         * text identified by the `field_name.text_anchor`, this field will contain
+         * the correction.
+         *
+         * @param string $correctedKeyText
+         */
+        public function setCorrectedKeyText($correctedKeyText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCorrectedKeyText()
+        {
+        }
+        /**
+         * Created for Labeling UI to export value text. If corrections were made to
+         * the text identified by the `field_value.text_anchor`, this field will
+         * contain the correction.
+         *
+         * @param string $correctedValueText
+         */
+        public function setCorrectedValueText($correctedValueText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCorrectedValueText()
+        {
+        }
+        /**
+         * Layout for the FormField name. e.g. `Address`, `Email`, `Grand total`,
+         * `Phone number`, etc.
+         *
+         * @param GoogleCloudDocumentaiV1DocumentPageLayout $fieldName
+         */
+        public function setFieldName(GoogleCloudDocumentaiV1DocumentPageLayout $fieldName)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1DocumentPageLayout
+         */
+        public function getFieldName()
+        {
+        }
+        /**
+         * Layout for the FormField value.
+         *
+         * @param GoogleCloudDocumentaiV1DocumentPageLayout $fieldValue
+         */
+        public function setFieldValue(GoogleCloudDocumentaiV1DocumentPageLayout $fieldValue)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1DocumentPageLayout
+         */
+        public function getFieldValue()
+        {
+        }
+        /**
+         * A list of detected languages for name together with confidence.
+         *
+         * @param GoogleCloudDocumentaiV1DocumentPageDetectedLanguage[] $nameDetectedLanguages
+         */
+        public function setNameDetectedLanguages($nameDetectedLanguages)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1DocumentPageDetectedLanguage[]
+         */
+        public function getNameDetectedLanguages()
+        {
+        }
+        /**
+         * The history of this annotation.
+         *
+         * @param GoogleCloudDocumentaiV1DocumentProvenance $provenance
+         */
+        public function setProvenance(GoogleCloudDocumentaiV1DocumentProvenance $provenance)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1DocumentProvenance
+         */
+        public function getProvenance()
+        {
+        }
+        /**
+         * A list of detected languages for value together with confidence.
+         *
+         * @param GoogleCloudDocumentaiV1DocumentPageDetectedLanguage[] $valueDetectedLanguages
+         */
+        public function setValueDetectedLanguages($valueDetectedLanguages)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1DocumentPageDetectedLanguage[]
+         */
+        public function getValueDetectedLanguages()
+        {
+        }
+        /**
+         * If the value is non-textual, this field represents the type. Current valid
+         * values are: - blank (this indicates the `field_value` is normal text) -
+         * `unfilled_checkbox` - `filled_checkbox`
+         *
+         * @param string $valueType
+         */
+        public function setValueType($valueType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValueType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudDocumentaiV1DocumentPageFormField registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCorrectedKeyText()
-    {
-    }
-    /**
-     * Created for Labeling UI to export value text. If corrections were made to
-     * the text identified by the `field_value.text_anchor`, this field will
-     * contain the correction.
-     *
-     * @param string $correctedValueText
-     */
-    public function setCorrectedValueText($correctedValueText)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCorrectedValueText()
-    {
-    }
-    /**
-     * Layout for the FormField name. e.g. `Address`, `Email`, `Grand total`,
-     * `Phone number`, etc.
-     *
-     * @param GoogleCloudDocumentaiV1DocumentPageLayout $fieldName
-     */
-    public function setFieldName(GoogleCloudDocumentaiV1DocumentPageLayout $fieldName)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1DocumentPageLayout
-     */
-    public function getFieldName()
-    {
-    }
-    /**
-     * Layout for the FormField value.
-     *
-     * @param GoogleCloudDocumentaiV1DocumentPageLayout $fieldValue
-     */
-    public function setFieldValue(GoogleCloudDocumentaiV1DocumentPageLayout $fieldValue)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1DocumentPageLayout
-     */
-    public function getFieldValue()
-    {
-    }
-    /**
-     * A list of detected languages for name together with confidence.
-     *
-     * @param GoogleCloudDocumentaiV1DocumentPageDetectedLanguage[] $nameDetectedLanguages
-     */
-    public function setNameDetectedLanguages($nameDetectedLanguages)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1DocumentPageDetectedLanguage[]
-     */
-    public function getNameDetectedLanguages()
-    {
-    }
-    /**
-     * The history of this annotation.
-     *
-     * @param GoogleCloudDocumentaiV1DocumentProvenance $provenance
-     */
-    public function setProvenance(GoogleCloudDocumentaiV1DocumentProvenance $provenance)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1DocumentProvenance
-     */
-    public function getProvenance()
-    {
-    }
-    /**
-     * A list of detected languages for value together with confidence.
-     *
-     * @param GoogleCloudDocumentaiV1DocumentPageDetectedLanguage[] $valueDetectedLanguages
-     */
-    public function setValueDetectedLanguages($valueDetectedLanguages)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1DocumentPageDetectedLanguage[]
-     */
-    public function getValueDetectedLanguages()
-    {
-    }
-    /**
-     * If the value is non-textual, this field represents the type. Current valid
-     * values are: - blank (this indicates the `field_value` is normal text) -
-     * `unfilled_checkbox` - `filled_checkbox`
-     *
-     * @param string $valueType
-     */
-    public function setValueType($valueType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValueType()
+    class Google_Service_Contentwarehouse_GoogleCloudDocumentaiV1DocumentPageFormField extends \Google\Service\Contentwarehouse\GoogleCloudDocumentaiV1DocumentPageFormField
     {
     }
 }

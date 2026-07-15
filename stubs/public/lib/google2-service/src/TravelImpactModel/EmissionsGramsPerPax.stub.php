@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TravelImpactModel;
-
-class EmissionsGramsPerPax extends \Google\Model
-{
-    /**
-     * Emissions for one passenger in business class in grams. This field is
-     * always computed and populated, regardless of whether the aircraft has
-     * business class seats or not.
-     *
-     * @var int
-     */
-    public $business;
-    /**
-     * Emissions for one passenger in economy class in grams. This field is always
-     * computed and populated, regardless of whether the aircraft has economy
-     * class seats or not.
-     *
-     * @var int
-     */
-    public $economy;
-    /**
-     * Emissions for one passenger in first class in grams. This field is always
-     * computed and populated, regardless of whether the aircraft has first class
-     * seats or not.
-     *
-     * @var int
-     */
-    public $first;
-    /**
-     * Emissions for one passenger in premium economy class in grams. This field
-     * is always computed and populated, regardless of whether the aircraft has
-     * premium economy class seats or not.
-     *
-     * @var int
-     */
-    public $premiumEconomy;
-    /**
-     * Emissions for one passenger in business class in grams. This field is
-     * always computed and populated, regardless of whether the aircraft has
-     * business class seats or not.
-     *
-     * @param int $business
-     */
-    public function setBusiness($business)
+namespace Google\Service\TravelImpactModel {
+    class EmissionsGramsPerPax extends \Google\Model
     {
+        /**
+         * Emissions for one passenger in business class in grams. This field is
+         * always computed and populated, regardless of whether the aircraft has
+         * business class seats or not.
+         *
+         * @var int
+         */
+        public $business;
+        /**
+         * Emissions for one passenger in economy class in grams. This field is always
+         * computed and populated, regardless of whether the aircraft has economy
+         * class seats or not.
+         *
+         * @var int
+         */
+        public $economy;
+        /**
+         * Emissions for one passenger in first class in grams. This field is always
+         * computed and populated, regardless of whether the aircraft has first class
+         * seats or not.
+         *
+         * @var int
+         */
+        public $first;
+        /**
+         * Emissions for one passenger in premium economy class in grams. This field
+         * is always computed and populated, regardless of whether the aircraft has
+         * premium economy class seats or not.
+         *
+         * @var int
+         */
+        public $premiumEconomy;
+        /**
+         * Emissions for one passenger in business class in grams. This field is
+         * always computed and populated, regardless of whether the aircraft has
+         * business class seats or not.
+         *
+         * @param int $business
+         */
+        public function setBusiness($business)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getBusiness()
+        {
+        }
+        /**
+         * Emissions for one passenger in economy class in grams. This field is always
+         * computed and populated, regardless of whether the aircraft has economy
+         * class seats or not.
+         *
+         * @param int $economy
+         */
+        public function setEconomy($economy)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getEconomy()
+        {
+        }
+        /**
+         * Emissions for one passenger in first class in grams. This field is always
+         * computed and populated, regardless of whether the aircraft has first class
+         * seats or not.
+         *
+         * @param int $first
+         */
+        public function setFirst($first)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getFirst()
+        {
+        }
+        /**
+         * Emissions for one passenger in premium economy class in grams. This field
+         * is always computed and populated, regardless of whether the aircraft has
+         * premium economy class seats or not.
+         *
+         * @param int $premiumEconomy
+         */
+        public function setPremiumEconomy($premiumEconomy)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPremiumEconomy()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\TravelImpactModel\EmissionsGramsPerPax registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBusiness()
-    {
-    }
-    /**
-     * Emissions for one passenger in economy class in grams. This field is always
-     * computed and populated, regardless of whether the aircraft has economy
-     * class seats or not.
-     *
-     * @param int $economy
-     */
-    public function setEconomy($economy)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getEconomy()
-    {
-    }
-    /**
-     * Emissions for one passenger in first class in grams. This field is always
-     * computed and populated, regardless of whether the aircraft has first class
-     * seats or not.
-     *
-     * @param int $first
-     */
-    public function setFirst($first)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getFirst()
-    {
-    }
-    /**
-     * Emissions for one passenger in premium economy class in grams. This field
-     * is always computed and populated, regardless of whether the aircraft has
-     * premium economy class seats or not.
-     *
-     * @param int $premiumEconomy
-     */
-    public function setPremiumEconomy($premiumEconomy)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPremiumEconomy()
+    class Google_Service_TravelImpactModel_EmissionsGramsPerPax extends \Google\Service\TravelImpactModel\EmissionsGramsPerPax
     {
     }
 }

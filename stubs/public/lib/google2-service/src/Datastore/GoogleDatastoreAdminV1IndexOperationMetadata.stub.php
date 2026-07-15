@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastore;
-
-class GoogleDatastoreAdminV1IndexOperationMetadata extends \Google\Model
-{
-    protected $commonType = GoogleDatastoreAdminV1CommonMetadata::class;
-    protected $commonDataType = '';
-    /**
-     * The index resource ID that this operation is acting on.
-     *
-     * @var string
-     */
-    public $indexId;
-    protected $progressEntitiesType = GoogleDatastoreAdminV1Progress::class;
-    protected $progressEntitiesDataType = '';
-    /**
-     * Metadata common to all Datastore Admin operations.
-     *
-     * @param GoogleDatastoreAdminV1CommonMetadata $common
-     */
-    public function setCommon(GoogleDatastoreAdminV1CommonMetadata $common)
+namespace Google\Service\Datastore {
+    class GoogleDatastoreAdminV1IndexOperationMetadata extends \Google\Model
     {
+        protected $commonType = GoogleDatastoreAdminV1CommonMetadata::class;
+        protected $commonDataType = '';
+        /**
+         * The index resource ID that this operation is acting on.
+         *
+         * @var string
+         */
+        public $indexId;
+        protected $progressEntitiesType = GoogleDatastoreAdminV1Progress::class;
+        protected $progressEntitiesDataType = '';
+        /**
+         * Metadata common to all Datastore Admin operations.
+         *
+         * @param GoogleDatastoreAdminV1CommonMetadata $common
+         */
+        public function setCommon(GoogleDatastoreAdminV1CommonMetadata $common)
+        {
+        }
+        /**
+         * @return GoogleDatastoreAdminV1CommonMetadata
+         */
+        public function getCommon()
+        {
+        }
+        /**
+         * The index resource ID that this operation is acting on.
+         *
+         * @param string $indexId
+         */
+        public function setIndexId($indexId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIndexId()
+        {
+        }
+        /**
+         * An estimate of the number of entities processed.
+         *
+         * @param GoogleDatastoreAdminV1Progress $progressEntities
+         */
+        public function setProgressEntities(GoogleDatastoreAdminV1Progress $progressEntities)
+        {
+        }
+        /**
+         * @return GoogleDatastoreAdminV1Progress
+         */
+        public function getProgressEntities()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleDatastoreAdminV1CommonMetadata
+     * Runtime class alias of \Google\Service\Datastore\GoogleDatastoreAdminV1IndexOperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCommon()
-    {
-    }
-    /**
-     * The index resource ID that this operation is acting on.
-     *
-     * @param string $indexId
-     */
-    public function setIndexId($indexId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIndexId()
-    {
-    }
-    /**
-     * An estimate of the number of entities processed.
-     *
-     * @param GoogleDatastoreAdminV1Progress $progressEntities
-     */
-    public function setProgressEntities(GoogleDatastoreAdminV1Progress $progressEntities)
-    {
-    }
-    /**
-     * @return GoogleDatastoreAdminV1Progress
-     */
-    public function getProgressEntities()
+    class Google_Service_Datastore_GoogleDatastoreAdminV1IndexOperationMetadata extends \Google\Service\Datastore\GoogleDatastoreAdminV1IndexOperationMetadata
     {
     }
 }

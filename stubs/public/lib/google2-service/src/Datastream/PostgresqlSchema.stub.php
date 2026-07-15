@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class PostgresqlSchema extends \Google\Collection
-{
-    protected $collection_key = 'postgresqlTables';
-    protected $postgresqlTablesType = PostgresqlTable::class;
-    protected $postgresqlTablesDataType = 'array';
-    /**
-     * Schema name.
-     *
-     * @var string
-     */
-    public $schema;
-    /**
-     * Tables in the schema.
-     *
-     * @param PostgresqlTable[] $postgresqlTables
-     */
-    public function setPostgresqlTables($postgresqlTables)
+namespace Google\Service\Datastream {
+    class PostgresqlSchema extends \Google\Collection
     {
+        protected $collection_key = 'postgresqlTables';
+        protected $postgresqlTablesType = PostgresqlTable::class;
+        protected $postgresqlTablesDataType = 'array';
+        /**
+         * Schema name.
+         *
+         * @var string
+         */
+        public $schema;
+        /**
+         * Tables in the schema.
+         *
+         * @param PostgresqlTable[] $postgresqlTables
+         */
+        public function setPostgresqlTables($postgresqlTables)
+        {
+        }
+        /**
+         * @return PostgresqlTable[]
+         */
+        public function getPostgresqlTables()
+        {
+        }
+        /**
+         * Schema name.
+         *
+         * @param string $schema
+         */
+        public function setSchema($schema)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSchema()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PostgresqlTable[]
+     * Runtime class alias of \Google\Service\Datastream\PostgresqlSchema registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPostgresqlTables()
-    {
-    }
-    /**
-     * Schema name.
-     *
-     * @param string $schema
-     */
-    public function setSchema($schema)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSchema()
+    class Google_Service_Datastream_PostgresqlSchema extends \Google\Service\Datastream\PostgresqlSchema
     {
     }
 }

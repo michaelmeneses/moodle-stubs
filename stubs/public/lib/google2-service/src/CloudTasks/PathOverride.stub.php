@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudTasks;
-
-class PathOverride extends \Google\Model
-{
-    /**
-     * The URI path (e.g., /users/1234). Default is an empty string.
-     *
-     * @var string
-     */
-    public $path;
-    /**
-     * The URI path (e.g., /users/1234). Default is an empty string.
-     *
-     * @param string $path
-     */
-    public function setPath($path)
+namespace Google\Service\CloudTasks {
+    class PathOverride extends \Google\Model
     {
+        /**
+         * The URI path (e.g., /users/1234). Default is an empty string.
+         *
+         * @var string
+         */
+        public $path;
+        /**
+         * The URI path (e.g., /users/1234). Default is an empty string.
+         *
+         * @param string $path
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudTasks\PathOverride registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPath()
+    class Google_Service_CloudTasks_PathOverride extends \Google\Service\CloudTasks\PathOverride
     {
     }
 }

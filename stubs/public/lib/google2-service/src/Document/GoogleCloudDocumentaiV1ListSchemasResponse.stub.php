@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1ListSchemasResponse extends \Google\Collection
-{
-    protected $collection_key = 'schemas';
-    /**
-     * Points to the next Schema, otherwise empty.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $schemasType = GoogleCloudDocumentaiV1NextSchema::class;
-    protected $schemasDataType = 'array';
-    /**
-     * Points to the next Schema, otherwise empty.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1ListSchemasResponse extends \Google\Collection
     {
+        protected $collection_key = 'schemas';
+        /**
+         * Points to the next Schema, otherwise empty.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $schemasType = GoogleCloudDocumentaiV1NextSchema::class;
+        protected $schemasDataType = 'array';
+        /**
+         * Points to the next Schema, otherwise empty.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of Schemas.
+         *
+         * @param GoogleCloudDocumentaiV1NextSchema[] $schemas
+         */
+        public function setSchemas($schemas)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1NextSchema[]
+         */
+        public function getSchemas()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1ListSchemasResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of Schemas.
-     *
-     * @param GoogleCloudDocumentaiV1NextSchema[] $schemas
-     */
-    public function setSchemas($schemas)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1NextSchema[]
-     */
-    public function getSchemas()
+    class Google_Service_Document_GoogleCloudDocumentaiV1ListSchemasResponse extends \Google\Service\Document\GoogleCloudDocumentaiV1ListSchemasResponse
     {
     }
 }

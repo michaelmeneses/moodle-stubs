@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class PartnerGeneralConfig extends \Google\Model
-{
-    /**
-     * Immutable. Partner's currency in ISO 4217 format.
-     *
-     * @var string
-     */
-    public $currencyCode;
-    /**
-     * Immutable. The standard TZ database name of the partner's time zone. For
-     * example, `America/New_York`. See more at:
-     * https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-     *
-     * @var string
-     */
-    public $timeZone;
-    /**
-     * Immutable. Partner's currency in ISO 4217 format.
-     *
-     * @param string $currencyCode
-     */
-    public function setCurrencyCode($currencyCode)
+namespace Google\Service\DisplayVideo {
+    class PartnerGeneralConfig extends \Google\Model
     {
+        /**
+         * Immutable. Partner's currency in ISO 4217 format.
+         *
+         * @var string
+         */
+        public $currencyCode;
+        /**
+         * Immutable. The standard TZ database name of the partner's time zone. For
+         * example, `America/New_York`. See more at:
+         * https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+         *
+         * @var string
+         */
+        public $timeZone;
+        /**
+         * Immutable. Partner's currency in ISO 4217 format.
+         *
+         * @param string $currencyCode
+         */
+        public function setCurrencyCode($currencyCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCurrencyCode()
+        {
+        }
+        /**
+         * Immutable. The standard TZ database name of the partner's time zone. For
+         * example, `America/New_York`. See more at:
+         * https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+         *
+         * @param string $timeZone
+         */
+        public function setTimeZone($timeZone)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimeZone()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\PartnerGeneralConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCurrencyCode()
-    {
-    }
-    /**
-     * Immutable. The standard TZ database name of the partner's time zone. For
-     * example, `America/New_York`. See more at:
-     * https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-     *
-     * @param string $timeZone
-     */
-    public function setTimeZone($timeZone)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimeZone()
+    class Google_Service_DisplayVideo_PartnerGeneralConfig extends \Google\Service\DisplayVideo\PartnerGeneralConfig
     {
     }
 }

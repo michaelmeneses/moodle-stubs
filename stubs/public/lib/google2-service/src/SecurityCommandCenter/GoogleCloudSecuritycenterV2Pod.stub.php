@@ -21,81 +21,90 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GoogleCloudSecuritycenterV2Pod extends \Google\Collection
-{
-    protected $collection_key = 'labels';
-    protected $containersType = GoogleCloudSecuritycenterV2Container::class;
-    protected $containersDataType = 'array';
-    protected $labelsType = GoogleCloudSecuritycenterV2Label::class;
-    protected $labelsDataType = 'array';
-    /**
-     * Kubernetes Pod name.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Kubernetes Pod namespace.
-     *
-     * @var string
-     */
-    public $ns;
-    /**
-     * Pod containers associated with this finding, if any.
-     *
-     * @param GoogleCloudSecuritycenterV2Container[] $containers
-     */
-    public function setContainers($containers)
+namespace Google\Service\SecurityCommandCenter {
+    class GoogleCloudSecuritycenterV2Pod extends \Google\Collection
     {
+        protected $collection_key = 'labels';
+        protected $containersType = GoogleCloudSecuritycenterV2Container::class;
+        protected $containersDataType = 'array';
+        protected $labelsType = GoogleCloudSecuritycenterV2Label::class;
+        protected $labelsDataType = 'array';
+        /**
+         * Kubernetes Pod name.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Kubernetes Pod namespace.
+         *
+         * @var string
+         */
+        public $ns;
+        /**
+         * Pod containers associated with this finding, if any.
+         *
+         * @param GoogleCloudSecuritycenterV2Container[] $containers
+         */
+        public function setContainers($containers)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV2Container[]
+         */
+        public function getContainers()
+        {
+        }
+        /**
+         * Pod labels. For Kubernetes containers, these are applied to the container.
+         *
+         * @param GoogleCloudSecuritycenterV2Label[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV2Label[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Kubernetes Pod name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Kubernetes Pod namespace.
+         *
+         * @param string $ns
+         */
+        public function setNs($ns)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudSecuritycenterV2Container[]
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2Pod registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContainers()
-    {
-    }
-    /**
-     * Pod labels. For Kubernetes containers, these are applied to the container.
-     *
-     * @param GoogleCloudSecuritycenterV2Label[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return GoogleCloudSecuritycenterV2Label[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Kubernetes Pod name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Kubernetes Pod namespace.
-     *
-     * @param string $ns
-     */
-    public function setNs($ns)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNs()
+    class Google_Service_SecurityCommandCenter_GoogleCloudSecuritycenterV2Pod extends \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2Pod
     {
     }
 }

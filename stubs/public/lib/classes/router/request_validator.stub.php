@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\router;
 
+use invalid_parameter_exception;
+use Psr\Http\Message\ServerRequestInterface;
+use Slim\Exception\HttpNotFoundException;
+use Slim\Interfaces\RouteInterface;
+use Slim\Routing\RouteContext;
 /**
  * Routing attribute.
  *

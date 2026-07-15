@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BeyondCorp;
-
-class GoogleCloudBeyondcorpSecuritygatewaysV1InternetGateway extends \Google\Collection
-{
-    protected $collection_key = 'assignedIps';
-    /**
-     * Output only. List of IP addresses assigned to the Cloud NAT.
-     *
-     * @var string[]
-     */
-    public $assignedIps;
-    /**
-     * Output only. List of IP addresses assigned to the Cloud NAT.
-     *
-     * @param string[] $assignedIps
-     */
-    public function setAssignedIps($assignedIps)
+namespace Google\Service\BeyondCorp {
+    class GoogleCloudBeyondcorpSecuritygatewaysV1InternetGateway extends \Google\Collection
     {
+        protected $collection_key = 'assignedIps';
+        /**
+         * Output only. List of IP addresses assigned to the Cloud NAT.
+         *
+         * @var string[]
+         */
+        public $assignedIps;
+        /**
+         * Output only. List of IP addresses assigned to the Cloud NAT.
+         *
+         * @param string[] $assignedIps
+         */
+        public function setAssignedIps($assignedIps)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAssignedIps()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\BeyondCorp\GoogleCloudBeyondcorpSecuritygatewaysV1InternetGateway registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssignedIps()
+    class Google_Service_BeyondCorp_GoogleCloudBeyondcorpSecuritygatewaysV1InternetGateway extends \Google\Service\BeyondCorp\GoogleCloudBeyondcorpSecuritygatewaysV1InternetGateway
     {
     }
 }

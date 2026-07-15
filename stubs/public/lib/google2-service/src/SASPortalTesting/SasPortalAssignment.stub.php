@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SASPortalTesting;
-
-class SasPortalAssignment extends \Google\Collection
-{
-    protected $collection_key = 'members';
-    /**
-     * The identities the role is assigned to. It can have the following values: *
-     * `{user_email}`: An email address that represents a specific Google account.
-     * For example: `alice@gmail.com`. * `{group_email}`: An email address that
-     * represents a Google group. For example, `viewers@gmail.com`.
-     *
-     * @var string[]
-     */
-    public $members;
-    /**
-     * Required. Role that is assigned to `members`.
-     *
-     * @var string
-     */
-    public $role;
-    /**
-     * The identities the role is assigned to. It can have the following values: *
-     * `{user_email}`: An email address that represents a specific Google account.
-     * For example: `alice@gmail.com`. * `{group_email}`: An email address that
-     * represents a Google group. For example, `viewers@gmail.com`.
-     *
-     * @param string[] $members
-     */
-    public function setMembers($members)
+namespace Google\Service\SASPortalTesting {
+    class SasPortalAssignment extends \Google\Collection
     {
+        protected $collection_key = 'members';
+        /**
+         * The identities the role is assigned to. It can have the following values: *
+         * `{user_email}`: An email address that represents a specific Google account.
+         * For example: `alice@gmail.com`. * `{group_email}`: An email address that
+         * represents a Google group. For example, `viewers@gmail.com`.
+         *
+         * @var string[]
+         */
+        public $members;
+        /**
+         * Required. Role that is assigned to `members`.
+         *
+         * @var string
+         */
+        public $role;
+        /**
+         * The identities the role is assigned to. It can have the following values: *
+         * `{user_email}`: An email address that represents a specific Google account.
+         * For example: `alice@gmail.com`. * `{group_email}`: An email address that
+         * represents a Google group. For example, `viewers@gmail.com`.
+         *
+         * @param string[] $members
+         */
+        public function setMembers($members)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMembers()
+        {
+        }
+        /**
+         * Required. Role that is assigned to `members`.
+         *
+         * @param string $role
+         */
+        public function setRole($role)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRole()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\SASPortalTesting\SasPortalAssignment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMembers()
-    {
-    }
-    /**
-     * Required. Role that is assigned to `members`.
-     *
-     * @param string $role
-     */
-    public function setRole($role)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRole()
+    class Google_Service_SASPortalTesting_SasPortalAssignment extends \Google\Service\SASPortalTesting\SasPortalAssignment
     {
     }
 }

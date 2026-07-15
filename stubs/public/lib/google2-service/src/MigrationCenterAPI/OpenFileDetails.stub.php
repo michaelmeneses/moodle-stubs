@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class OpenFileDetails extends \Google\Model
-{
-    /**
-     * Opened file command.
-     *
-     * @var string
-     */
-    public $command;
-    /**
-     * Opened file file path.
-     *
-     * @var string
-     */
-    public $filePath;
-    /**
-     * Opened file file type.
-     *
-     * @var string
-     */
-    public $fileType;
-    /**
-     * Opened file user.
-     *
-     * @var string
-     */
-    public $user;
-    /**
-     * Opened file command.
-     *
-     * @param string $command
-     */
-    public function setCommand($command)
+namespace Google\Service\MigrationCenterAPI {
+    class OpenFileDetails extends \Google\Model
     {
+        /**
+         * Opened file command.
+         *
+         * @var string
+         */
+        public $command;
+        /**
+         * Opened file file path.
+         *
+         * @var string
+         */
+        public $filePath;
+        /**
+         * Opened file file type.
+         *
+         * @var string
+         */
+        public $fileType;
+        /**
+         * Opened file user.
+         *
+         * @var string
+         */
+        public $user;
+        /**
+         * Opened file command.
+         *
+         * @param string $command
+         */
+        public function setCommand($command)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCommand()
+        {
+        }
+        /**
+         * Opened file file path.
+         *
+         * @param string $filePath
+         */
+        public function setFilePath($filePath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilePath()
+        {
+        }
+        /**
+         * Opened file file type.
+         *
+         * @param string $fileType
+         */
+        public function setFileType($fileType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFileType()
+        {
+        }
+        /**
+         * Opened file user.
+         *
+         * @param string $user
+         */
+        public function setUser($user)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUser()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\OpenFileDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCommand()
-    {
-    }
-    /**
-     * Opened file file path.
-     *
-     * @param string $filePath
-     */
-    public function setFilePath($filePath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFilePath()
-    {
-    }
-    /**
-     * Opened file file type.
-     *
-     * @param string $fileType
-     */
-    public function setFileType($fileType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFileType()
-    {
-    }
-    /**
-     * Opened file user.
-     *
-     * @param string $user
-     */
-    public function setUser($user)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUser()
+    class Google_Service_MigrationCenterAPI_OpenFileDetails extends \Google\Service\MigrationCenterAPI\OpenFileDetails
     {
     }
 }

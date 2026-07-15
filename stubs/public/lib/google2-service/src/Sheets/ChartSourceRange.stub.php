@@ -21,33 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class ChartSourceRange extends \Google\Collection
-{
-    protected $collection_key = 'sources';
-    protected $sourcesType = GridRange::class;
-    protected $sourcesDataType = 'array';
-    /**
-     * The ranges of data for a series or domain. Exactly one dimension must have
-     * a length of 1, and all sources in the list must have the same dimension
-     * with length 1. The domain (if it exists) & all series must have the same
-     * number of source ranges. If using more than one source range, then the
-     * source range at a given offset must be in order and contiguous across the
-     * domain and series. For example, these are valid configurations: domain
-     * sources: A1:A5 series1 sources: B1:B5 series2 sources: D6:D10 domain
-     * sources: A1:A5, C10:C12 series1 sources: B1:B5, D10:D12 series2 sources:
-     * C1:C5, E10:E12
-     *
-     * @param GridRange[] $sources
-     */
-    public function setSources($sources)
+namespace Google\Service\Sheets {
+    class ChartSourceRange extends \Google\Collection
     {
+        protected $collection_key = 'sources';
+        protected $sourcesType = GridRange::class;
+        protected $sourcesDataType = 'array';
+        /**
+         * The ranges of data for a series or domain. Exactly one dimension must have
+         * a length of 1, and all sources in the list must have the same dimension
+         * with length 1. The domain (if it exists) & all series must have the same
+         * number of source ranges. If using more than one source range, then the
+         * source range at a given offset must be in order and contiguous across the
+         * domain and series. For example, these are valid configurations: domain
+         * sources: A1:A5 series1 sources: B1:B5 series2 sources: D6:D10 domain
+         * sources: A1:A5, C10:C12 series1 sources: B1:B5, D10:D12 series2 sources:
+         * C1:C5, E10:E12
+         *
+         * @param GridRange[] $sources
+         */
+        public function setSources($sources)
+        {
+        }
+        /**
+         * @return GridRange[]
+         */
+        public function getSources()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GridRange[]
+     * Runtime class alias of \Google\Service\Sheets\ChartSourceRange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSources()
+    class Google_Service_Sheets_ChartSourceRange extends \Google\Service\Sheets\ChartSourceRange
     {
     }
 }

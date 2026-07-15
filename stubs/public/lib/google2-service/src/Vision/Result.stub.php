@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class Result extends \Google\Model
-{
-    /**
-     * The resource name of the image from the product that is the closest match
-     * to the query.
-     *
-     * @var string
-     */
-    public $image;
-    protected $productType = Product::class;
-    protected $productDataType = '';
-    /**
-     * A confidence level on the match, ranging from 0 (no confidence) to 1 (full
-     * confidence).
-     *
-     * @var float
-     */
-    public $score;
-    /**
-     * The resource name of the image from the product that is the closest match
-     * to the query.
-     *
-     * @param string $image
-     */
-    public function setImage($image)
+namespace Google\Service\Vision {
+    class Result extends \Google\Model
     {
+        /**
+         * The resource name of the image from the product that is the closest match
+         * to the query.
+         *
+         * @var string
+         */
+        public $image;
+        protected $productType = Product::class;
+        protected $productDataType = '';
+        /**
+         * A confidence level on the match, ranging from 0 (no confidence) to 1 (full
+         * confidence).
+         *
+         * @var float
+         */
+        public $score;
+        /**
+         * The resource name of the image from the product that is the closest match
+         * to the query.
+         *
+         * @param string $image
+         */
+        public function setImage($image)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImage()
+        {
+        }
+        /**
+         * The Product.
+         *
+         * @param Product $product
+         */
+        public function setProduct(Product $product)
+        {
+        }
+        /**
+         * @return Product
+         */
+        public function getProduct()
+        {
+        }
+        /**
+         * A confidence level on the match, ranging from 0 (no confidence) to 1 (full
+         * confidence).
+         *
+         * @param float $score
+         */
+        public function setScore($score)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getScore()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Vision\Result registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getImage()
-    {
-    }
-    /**
-     * The Product.
-     *
-     * @param Product $product
-     */
-    public function setProduct(Product $product)
-    {
-    }
-    /**
-     * @return Product
-     */
-    public function getProduct()
-    {
-    }
-    /**
-     * A confidence level on the match, ranging from 0 (no confidence) to 1 (full
-     * confidence).
-     *
-     * @param float $score
-     */
-    public function setScore($score)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getScore()
+    class Google_Service_Vision_Result extends \Google\Service\Vision\Result
     {
     }
 }

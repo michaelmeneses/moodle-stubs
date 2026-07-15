@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSFloat64StatsHistogramBucket extends \Google\Model
-{
-    /**
-     * The number of data values that are in the bucket, i.e. are between min and
-     * max values.
-     *
-     * @var string
-     */
-    public $count;
-    /**
-     * The maximum value of the bucket, exclusive unless max = `"Infinity"`, in
-     * which case it's inclusive.
-     *
-     * @var 
-     */
-    public $max;
-    /**
-     * The minimum value of the bucket, inclusive.
-     *
-     * @var 
-     */
-    public $min;
-    /**
-     * The number of data values that are in the bucket, i.e. are between min and
-     * max values.
-     *
-     * @param string $count
-     */
-    public function setCount($count)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSFloat64StatsHistogramBucket extends \Google\Model
     {
+        /**
+         * The number of data values that are in the bucket, i.e. are between min and
+         * max values.
+         *
+         * @var string
+         */
+        public $count;
+        /**
+         * The maximum value of the bucket, exclusive unless max = `"Infinity"`, in
+         * which case it's inclusive.
+         *
+         * @var 
+         */
+        public $max;
+        /**
+         * The minimum value of the bucket, inclusive.
+         *
+         * @var 
+         */
+        public $min;
+        /**
+         * The number of data values that are in the bucket, i.e. are between min and
+         * max values.
+         *
+         * @param string $count
+         */
+        public function setCount($count)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCount()
+        {
+        }
+        public function setMax($max)
+        {
+        }
+        public function getMax()
+        {
+        }
+        public function setMin($min)
+        {
+        }
+        public function getMin()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSFloat64StatsHistogramBucket registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCount()
-    {
-    }
-    public function setMax($max)
-    {
-    }
-    public function getMax()
-    {
-    }
-    public function setMin($min)
-    {
-    }
-    public function getMin()
+    class Google_Service_CloudNaturalLanguage_XPSFloat64StatsHistogramBucket extends \Google\Service\CloudNaturalLanguage\XPSFloat64StatsHistogramBucket
     {
     }
 }

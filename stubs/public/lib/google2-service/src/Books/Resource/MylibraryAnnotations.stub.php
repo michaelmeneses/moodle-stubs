@@ -21,102 +21,115 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books\Resource;
-
-/**
- * The "annotations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $booksService = new Google\Service\Books(...);
- *   $annotations = $booksService->mylibrary_annotations;
- *  </code>
- */
-class MylibraryAnnotations extends \Google\Service\Resource
-{
+namespace Google\Service\Books\Resource {
+    use Google\Service\Books\Annotation;
+    use Google\Service\Books\Annotations;
+    use Google\Service\Books\AnnotationsSummary;
+    use Google\Service\Books\BooksEmpty;
     /**
-     * Deletes an annotation. (annotations.delete)
-     *
-     * @param string $annotationId The ID for the annotation to delete.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string source String to identify the originator of this request.
-     * @return BooksEmpty
-     * @throws \Google\Service\Exception
+     * The "annotations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $booksService = new Google\Service\Books(...);
+     *   $annotations = $booksService->mylibrary_annotations;
+     *  </code>
      */
-    public function delete($annotationId, $optParams = [])
+    class MylibraryAnnotations extends \Google\Service\Resource
     {
+        /**
+         * Deletes an annotation. (annotations.delete)
+         *
+         * @param string $annotationId The ID for the annotation to delete.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string source String to identify the originator of this request.
+         * @return BooksEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($annotationId, $optParams = [])
+        {
+        }
+        /**
+         * Inserts a new annotation. (annotations.insert)
+         *
+         * @param Annotation $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string annotationId The ID for the annotation to insert.
+         * @opt_param string country ISO-3166-1 code to override the IP-based location.
+         * @opt_param bool showOnlySummaryInResponse Requests that only the summary of
+         * the specified layer be provided in the response.
+         * @opt_param string source String to identify the originator of this request.
+         * @return Annotation
+         * @throws \Google\Service\Exception
+         */
+        public function insert(Annotation $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves a list of annotations, possibly filtered.
+         * (annotations.listMylibraryAnnotations)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string contentVersion The content version for the requested
+         * volume.
+         * @opt_param string layerId The layer ID to limit annotation by.
+         * @opt_param string layerIds The layer ID(s) to limit annotation by.
+         * @opt_param string maxResults Maximum number of results to return
+         * @opt_param string pageToken The value of the nextToken from the previous
+         * page.
+         * @opt_param bool showDeleted Set to true to return deleted annotations.
+         * updatedMin must be in the request to use this. Defaults to false.
+         * @opt_param string source String to identify the originator of this request.
+         * @opt_param string updatedMax RFC 3339 timestamp to restrict to items updated
+         * prior to this timestamp (exclusive).
+         * @opt_param string updatedMin RFC 3339 timestamp to restrict to items updated
+         * since this timestamp (inclusive).
+         * @opt_param string volumeId The volume to restrict annotations to.
+         * @return Annotations
+         * @throws \Google\Service\Exception
+         */
+        public function listMylibraryAnnotations($optParams = [])
+        {
+        }
+        /**
+         * Gets the summary of specified layers. (annotations.summary)
+         *
+         * @param string|array $layerIds Array of layer IDs to get the summary for.
+         * @param string $volumeId Volume id to get the summary for.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string source Optional. String to identify the originator of this
+         * request.
+         * @return AnnotationsSummary
+         * @throws \Google\Service\Exception
+         */
+        public function summary($layerIds, $volumeId, $optParams = [])
+        {
+        }
+        /**
+         * Updates an existing annotation. (annotations.update)
+         *
+         * @param string $annotationId The ID for the annotation to update.
+         * @param Annotation $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string source String to identify the originator of this request.
+         * @return Annotation
+         * @throws \Google\Service\Exception
+         */
+        public function update($annotationId, Annotation $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Inserts a new annotation. (annotations.insert)
-     *
-     * @param Annotation $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string annotationId The ID for the annotation to insert.
-     * @opt_param string country ISO-3166-1 code to override the IP-based location.
-     * @opt_param bool showOnlySummaryInResponse Requests that only the summary of
-     * the specified layer be provided in the response.
-     * @opt_param string source String to identify the originator of this request.
-     * @return Annotation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Books\Resource\MylibraryAnnotations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function insert(Annotation $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Retrieves a list of annotations, possibly filtered.
-     * (annotations.listMylibraryAnnotations)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string contentVersion The content version for the requested
-     * volume.
-     * @opt_param string layerId The layer ID to limit annotation by.
-     * @opt_param string layerIds The layer ID(s) to limit annotation by.
-     * @opt_param string maxResults Maximum number of results to return
-     * @opt_param string pageToken The value of the nextToken from the previous
-     * page.
-     * @opt_param bool showDeleted Set to true to return deleted annotations.
-     * updatedMin must be in the request to use this. Defaults to false.
-     * @opt_param string source String to identify the originator of this request.
-     * @opt_param string updatedMax RFC 3339 timestamp to restrict to items updated
-     * prior to this timestamp (exclusive).
-     * @opt_param string updatedMin RFC 3339 timestamp to restrict to items updated
-     * since this timestamp (inclusive).
-     * @opt_param string volumeId The volume to restrict annotations to.
-     * @return Annotations
-     * @throws \Google\Service\Exception
-     */
-    public function listMylibraryAnnotations($optParams = [])
-    {
-    }
-    /**
-     * Gets the summary of specified layers. (annotations.summary)
-     *
-     * @param string|array $layerIds Array of layer IDs to get the summary for.
-     * @param string $volumeId Volume id to get the summary for.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string source Optional. String to identify the originator of this
-     * request.
-     * @return AnnotationsSummary
-     * @throws \Google\Service\Exception
-     */
-    public function summary($layerIds, $volumeId, $optParams = [])
-    {
-    }
-    /**
-     * Updates an existing annotation. (annotations.update)
-     *
-     * @param string $annotationId The ID for the annotation to update.
-     * @param Annotation $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string source String to identify the originator of this request.
-     * @return Annotation
-     * @throws \Google\Service\Exception
-     */
-    public function update($annotationId, Annotation $postBody, $optParams = [])
+    class Google_Service_Books_Resource_MylibraryAnnotations extends \Google\Service\Books\Resource\MylibraryAnnotations
     {
     }
 }

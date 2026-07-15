@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaAccountSummary extends \Google\Collection
-{
-    protected $collection_key = 'propertySummaries';
-    /**
-     * @var string
-     */
-    public $account;
-    /**
-     * @var string
-     */
-    public $displayName;
-    /**
-     * @var string
-     */
-    public $name;
-    protected $propertySummariesType = GoogleAnalyticsAdminV1alphaPropertySummary::class;
-    protected $propertySummariesDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setAccount($account)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaAccountSummary extends \Google\Collection
     {
+        protected $collection_key = 'propertySummaries';
+        /**
+         * @var string
+         */
+        public $account;
+        /**
+         * @var string
+         */
+        public $displayName;
+        /**
+         * @var string
+         */
+        public $name;
+        protected $propertySummariesType = GoogleAnalyticsAdminV1alphaPropertySummary::class;
+        protected $propertySummariesDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setAccount($account)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccount()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param GoogleAnalyticsAdminV1alphaPropertySummary[]
+         */
+        public function setPropertySummaries($propertySummaries)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaPropertySummary[]
+         */
+        public function getPropertySummaries()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaAccountSummary registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccount()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param GoogleAnalyticsAdminV1alphaPropertySummary[]
-     */
-    public function setPropertySummaries($propertySummaries)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1alphaPropertySummary[]
-     */
-    public function getPropertySummaries()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaAccountSummary extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaAccountSummary
     {
     }
 }

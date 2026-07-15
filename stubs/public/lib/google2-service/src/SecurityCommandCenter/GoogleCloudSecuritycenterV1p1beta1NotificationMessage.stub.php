@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GoogleCloudSecuritycenterV1p1beta1NotificationMessage extends \Google\Model
-{
-    protected $findingType = GoogleCloudSecuritycenterV1p1beta1Finding::class;
-    protected $findingDataType = '';
-    /**
-     * Name of the notification config that generated current notification.
-     *
-     * @var string
-     */
-    public $notificationConfigName;
-    protected $resourceType = GoogleCloudSecuritycenterV1p1beta1Resource::class;
-    protected $resourceDataType = '';
-    /**
-     * If it's a Finding based notification config, this field will be populated.
-     *
-     * @param GoogleCloudSecuritycenterV1p1beta1Finding $finding
-     */
-    public function setFinding(GoogleCloudSecuritycenterV1p1beta1Finding $finding)
+namespace Google\Service\SecurityCommandCenter {
+    class GoogleCloudSecuritycenterV1p1beta1NotificationMessage extends \Google\Model
     {
+        protected $findingType = GoogleCloudSecuritycenterV1p1beta1Finding::class;
+        protected $findingDataType = '';
+        /**
+         * Name of the notification config that generated current notification.
+         *
+         * @var string
+         */
+        public $notificationConfigName;
+        protected $resourceType = GoogleCloudSecuritycenterV1p1beta1Resource::class;
+        protected $resourceDataType = '';
+        /**
+         * If it's a Finding based notification config, this field will be populated.
+         *
+         * @param GoogleCloudSecuritycenterV1p1beta1Finding $finding
+         */
+        public function setFinding(GoogleCloudSecuritycenterV1p1beta1Finding $finding)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV1p1beta1Finding
+         */
+        public function getFinding()
+        {
+        }
+        /**
+         * Name of the notification config that generated current notification.
+         *
+         * @param string $notificationConfigName
+         */
+        public function setNotificationConfigName($notificationConfigName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNotificationConfigName()
+        {
+        }
+        /**
+         * The Cloud resource tied to the notification.
+         *
+         * @param GoogleCloudSecuritycenterV1p1beta1Resource $resource
+         */
+        public function setResource(GoogleCloudSecuritycenterV1p1beta1Resource $resource)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV1p1beta1Resource
+         */
+        public function getResource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudSecuritycenterV1p1beta1Finding
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV1p1beta1NotificationMessage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFinding()
-    {
-    }
-    /**
-     * Name of the notification config that generated current notification.
-     *
-     * @param string $notificationConfigName
-     */
-    public function setNotificationConfigName($notificationConfigName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNotificationConfigName()
-    {
-    }
-    /**
-     * The Cloud resource tied to the notification.
-     *
-     * @param GoogleCloudSecuritycenterV1p1beta1Resource $resource
-     */
-    public function setResource(GoogleCloudSecuritycenterV1p1beta1Resource $resource)
-    {
-    }
-    /**
-     * @return GoogleCloudSecuritycenterV1p1beta1Resource
-     */
-    public function getResource()
+    class Google_Service_SecurityCommandCenter_GoogleCloudSecuritycenterV1p1beta1NotificationMessage extends \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV1p1beta1NotificationMessage
     {
     }
 }

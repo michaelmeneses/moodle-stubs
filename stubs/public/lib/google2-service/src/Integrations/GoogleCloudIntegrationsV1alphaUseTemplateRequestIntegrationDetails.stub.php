@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaUseTemplateRequestIntegrationDetails extends \Google\Model
-{
-    /**
-     * Required. Name of the sub integration which would be created via templates.
-     *
-     * @var string
-     */
-    public $integration;
-    /**
-     * Optional. Description of the sub integration which would be created via
-     * templates.
-     *
-     * @var string
-     */
-    public $integrationDescription;
-    /**
-     * Required. Name of the sub integration which would be created via templates.
-     *
-     * @param string $integration
-     */
-    public function setIntegration($integration)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaUseTemplateRequestIntegrationDetails extends \Google\Model
     {
+        /**
+         * Required. Name of the sub integration which would be created via templates.
+         *
+         * @var string
+         */
+        public $integration;
+        /**
+         * Optional. Description of the sub integration which would be created via
+         * templates.
+         *
+         * @var string
+         */
+        public $integrationDescription;
+        /**
+         * Required. Name of the sub integration which would be created via templates.
+         *
+         * @param string $integration
+         */
+        public function setIntegration($integration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIntegration()
+        {
+        }
+        /**
+         * Optional. Description of the sub integration which would be created via
+         * templates.
+         *
+         * @param string $integrationDescription
+         */
+        public function setIntegrationDescription($integrationDescription)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIntegrationDescription()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaUseTemplateRequestIntegrationDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIntegration()
-    {
-    }
-    /**
-     * Optional. Description of the sub integration which would be created via
-     * templates.
-     *
-     * @param string $integrationDescription
-     */
-    public function setIntegrationDescription($integrationDescription)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIntegrationDescription()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaUseTemplateRequestIntegrationDetails extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaUseTemplateRequestIntegrationDetails
     {
     }
 }

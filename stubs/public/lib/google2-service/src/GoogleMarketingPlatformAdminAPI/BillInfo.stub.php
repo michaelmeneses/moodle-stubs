@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleMarketingPlatformAdminAPI;
-
-class BillInfo extends \Google\Model
-{
-    protected $baseFeeType = Money::class;
-    protected $baseFeeDataType = '';
-    protected $eventFeeType = Money::class;
-    protected $eventFeeDataType = '';
-    protected $priceProtectionCreditType = Money::class;
-    protected $priceProtectionCreditDataType = '';
-    protected $totalType = Money::class;
-    protected $totalDataType = '';
-    /**
-     * The amount of the monthly base fee.
-     *
-     * @param Money $baseFee
-     */
-    public function setBaseFee(Money $baseFee)
+namespace Google\Service\GoogleMarketingPlatformAdminAPI {
+    class BillInfo extends \Google\Model
     {
+        protected $baseFeeType = Money::class;
+        protected $baseFeeDataType = '';
+        protected $eventFeeType = Money::class;
+        protected $eventFeeDataType = '';
+        protected $priceProtectionCreditType = Money::class;
+        protected $priceProtectionCreditDataType = '';
+        protected $totalType = Money::class;
+        protected $totalDataType = '';
+        /**
+         * The amount of the monthly base fee.
+         *
+         * @param Money $baseFee
+         */
+        public function setBaseFee(Money $baseFee)
+        {
+        }
+        /**
+         * @return Money
+         */
+        public function getBaseFee()
+        {
+        }
+        /**
+         * The amount of the event fee.
+         *
+         * @param Money $eventFee
+         */
+        public function setEventFee(Money $eventFee)
+        {
+        }
+        /**
+         * @return Money
+         */
+        public function getEventFee()
+        {
+        }
+        /**
+         * The amount of the price protection credit, this is only available for
+         * eligible customers.
+         *
+         * @param Money $priceProtectionCredit
+         */
+        public function setPriceProtectionCredit(Money $priceProtectionCredit)
+        {
+        }
+        /**
+         * @return Money
+         */
+        public function getPriceProtectionCredit()
+        {
+        }
+        /**
+         * The total amount of the bill.
+         *
+         * @param Money $total
+         */
+        public function setTotal(Money $total)
+        {
+        }
+        /**
+         * @return Money
+         */
+        public function getTotal()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Money
+     * Runtime class alias of \Google\Service\GoogleMarketingPlatformAdminAPI\BillInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBaseFee()
-    {
-    }
-    /**
-     * The amount of the event fee.
-     *
-     * @param Money $eventFee
-     */
-    public function setEventFee(Money $eventFee)
-    {
-    }
-    /**
-     * @return Money
-     */
-    public function getEventFee()
-    {
-    }
-    /**
-     * The amount of the price protection credit, this is only available for
-     * eligible customers.
-     *
-     * @param Money $priceProtectionCredit
-     */
-    public function setPriceProtectionCredit(Money $priceProtectionCredit)
-    {
-    }
-    /**
-     * @return Money
-     */
-    public function getPriceProtectionCredit()
-    {
-    }
-    /**
-     * The total amount of the bill.
-     *
-     * @param Money $total
-     */
-    public function setTotal(Money $total)
-    {
-    }
-    /**
-     * @return Money
-     */
-    public function getTotal()
+    class Google_Service_GoogleMarketingPlatformAdminAPI_BillInfo extends \Google\Service\GoogleMarketingPlatformAdminAPI\BillInfo
     {
     }
 }

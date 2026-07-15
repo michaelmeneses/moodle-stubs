@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class SparkPlanGraphNode extends \Google\Collection
-{
-    protected $collection_key = 'metrics';
-    /**
-     * @var string
-     */
-    public $desc;
-    protected $metricsType = SqlPlanMetric::class;
-    protected $metricsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $sparkPlanGraphNodeId;
-    /**
-     * @param string $desc
-     */
-    public function setDesc($desc)
+namespace Google\Service\Dataproc {
+    class SparkPlanGraphNode extends \Google\Collection
     {
+        protected $collection_key = 'metrics';
+        /**
+         * @var string
+         */
+        public $desc;
+        protected $metricsType = SqlPlanMetric::class;
+        protected $metricsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $sparkPlanGraphNodeId;
+        /**
+         * @param string $desc
+         */
+        public function setDesc($desc)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDesc()
+        {
+        }
+        /**
+         * @param SqlPlanMetric[] $metrics
+         */
+        public function setMetrics($metrics)
+        {
+        }
+        /**
+         * @return SqlPlanMetric[]
+         */
+        public function getMetrics()
+        {
+        }
+        /**
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string $sparkPlanGraphNodeId
+         */
+        public function setSparkPlanGraphNodeId($sparkPlanGraphNodeId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSparkPlanGraphNodeId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\SparkPlanGraphNode registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDesc()
-    {
-    }
-    /**
-     * @param SqlPlanMetric[] $metrics
-     */
-    public function setMetrics($metrics)
-    {
-    }
-    /**
-     * @return SqlPlanMetric[]
-     */
-    public function getMetrics()
-    {
-    }
-    /**
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string $sparkPlanGraphNodeId
-     */
-    public function setSparkPlanGraphNodeId($sparkPlanGraphNodeId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSparkPlanGraphNodeId()
+    class Google_Service_Dataproc_SparkPlanGraphNode extends \Google\Service\Dataproc\SparkPlanGraphNode
     {
     }
 }

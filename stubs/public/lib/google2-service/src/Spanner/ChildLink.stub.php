@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class ChildLink extends \Google\Model
-{
-    /**
-     * The node to which the link points.
-     *
-     * @var int
-     */
-    public $childIndex;
-    /**
-     * The type of the link. For example, in Hash Joins this could be used to
-     * distinguish between the build child and the probe child, or in the case of
-     * the child being an output variable, to represent the tag associated with
-     * the output variable.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Only present if the child node is SCALAR and corresponds to an output
-     * variable of the parent node. The field carries the name of the output
-     * variable. For example, a `TableScan` operator that reads rows from a table
-     * will have child links to the `SCALAR` nodes representing the output
-     * variables created for each column that is read by the operator. The
-     * corresponding `variable` fields will be set to the variable names assigned
-     * to the columns.
-     *
-     * @var string
-     */
-    public $variable;
-    /**
-     * The node to which the link points.
-     *
-     * @param int $childIndex
-     */
-    public function setChildIndex($childIndex)
+namespace Google\Service\Spanner {
+    class ChildLink extends \Google\Model
     {
+        /**
+         * The node to which the link points.
+         *
+         * @var int
+         */
+        public $childIndex;
+        /**
+         * The type of the link. For example, in Hash Joins this could be used to
+         * distinguish between the build child and the probe child, or in the case of
+         * the child being an output variable, to represent the tag associated with
+         * the output variable.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Only present if the child node is SCALAR and corresponds to an output
+         * variable of the parent node. The field carries the name of the output
+         * variable. For example, a `TableScan` operator that reads rows from a table
+         * will have child links to the `SCALAR` nodes representing the output
+         * variables created for each column that is read by the operator. The
+         * corresponding `variable` fields will be set to the variable names assigned
+         * to the columns.
+         *
+         * @var string
+         */
+        public $variable;
+        /**
+         * The node to which the link points.
+         *
+         * @param int $childIndex
+         */
+        public function setChildIndex($childIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getChildIndex()
+        {
+        }
+        /**
+         * The type of the link. For example, in Hash Joins this could be used to
+         * distinguish between the build child and the probe child, or in the case of
+         * the child being an output variable, to represent the tag associated with
+         * the output variable.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
+        /**
+         * Only present if the child node is SCALAR and corresponds to an output
+         * variable of the parent node. The field carries the name of the output
+         * variable. For example, a `TableScan` operator that reads rows from a table
+         * will have child links to the `SCALAR` nodes representing the output
+         * variables created for each column that is read by the operator. The
+         * corresponding `variable` fields will be set to the variable names assigned
+         * to the columns.
+         *
+         * @param string $variable
+         */
+        public function setVariable($variable)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVariable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Spanner\ChildLink registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChildIndex()
-    {
-    }
-    /**
-     * The type of the link. For example, in Hash Joins this could be used to
-     * distinguish between the build child and the probe child, or in the case of
-     * the child being an output variable, to represent the tag associated with
-     * the output variable.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
-    {
-    }
-    /**
-     * Only present if the child node is SCALAR and corresponds to an output
-     * variable of the parent node. The field carries the name of the output
-     * variable. For example, a `TableScan` operator that reads rows from a table
-     * will have child links to the `SCALAR` nodes representing the output
-     * variables created for each column that is read by the operator. The
-     * corresponding `variable` fields will be set to the variable names assigned
-     * to the columns.
-     *
-     * @param string $variable
-     */
-    public function setVariable($variable)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVariable()
+    class Google_Service_Spanner_ChildLink extends \Google\Service\Spanner\ChildLink
     {
     }
 }

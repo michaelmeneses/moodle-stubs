@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1ImagePolylineAnnotation extends \Google\Model
-{
-    protected $annotationSpecType = GoogleCloudDatalabelingV1beta1AnnotationSpec::class;
-    protected $annotationSpecDataType = '';
-    protected $normalizedPolylineType = GoogleCloudDatalabelingV1beta1NormalizedPolyline::class;
-    protected $normalizedPolylineDataType = '';
-    protected $polylineType = GoogleCloudDatalabelingV1beta1Polyline::class;
-    protected $polylineDataType = '';
-    /**
-     * Label of this polyline.
-     *
-     * @param GoogleCloudDatalabelingV1beta1AnnotationSpec $annotationSpec
-     */
-    public function setAnnotationSpec(GoogleCloudDatalabelingV1beta1AnnotationSpec $annotationSpec)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1ImagePolylineAnnotation extends \Google\Model
     {
+        protected $annotationSpecType = GoogleCloudDatalabelingV1beta1AnnotationSpec::class;
+        protected $annotationSpecDataType = '';
+        protected $normalizedPolylineType = GoogleCloudDatalabelingV1beta1NormalizedPolyline::class;
+        protected $normalizedPolylineDataType = '';
+        protected $polylineType = GoogleCloudDatalabelingV1beta1Polyline::class;
+        protected $polylineDataType = '';
+        /**
+         * Label of this polyline.
+         *
+         * @param GoogleCloudDatalabelingV1beta1AnnotationSpec $annotationSpec
+         */
+        public function setAnnotationSpec(GoogleCloudDatalabelingV1beta1AnnotationSpec $annotationSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1AnnotationSpec
+         */
+        public function getAnnotationSpec()
+        {
+        }
+        /**
+         * @param GoogleCloudDatalabelingV1beta1NormalizedPolyline $normalizedPolyline
+         */
+        public function setNormalizedPolyline(GoogleCloudDatalabelingV1beta1NormalizedPolyline $normalizedPolyline)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1NormalizedPolyline
+         */
+        public function getNormalizedPolyline()
+        {
+        }
+        /**
+         * @param GoogleCloudDatalabelingV1beta1Polyline $polyline
+         */
+        public function setPolyline(GoogleCloudDatalabelingV1beta1Polyline $polyline)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1Polyline
+         */
+        public function getPolyline()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatalabelingV1beta1AnnotationSpec
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1ImagePolylineAnnotation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotationSpec()
-    {
-    }
-    /**
-     * @param GoogleCloudDatalabelingV1beta1NormalizedPolyline $normalizedPolyline
-     */
-    public function setNormalizedPolyline(GoogleCloudDatalabelingV1beta1NormalizedPolyline $normalizedPolyline)
-    {
-    }
-    /**
-     * @return GoogleCloudDatalabelingV1beta1NormalizedPolyline
-     */
-    public function getNormalizedPolyline()
-    {
-    }
-    /**
-     * @param GoogleCloudDatalabelingV1beta1Polyline $polyline
-     */
-    public function setPolyline(GoogleCloudDatalabelingV1beta1Polyline $polyline)
-    {
-    }
-    /**
-     * @return GoogleCloudDatalabelingV1beta1Polyline
-     */
-    public function getPolyline()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1ImagePolylineAnnotation extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1ImagePolylineAnnotation
     {
     }
 }

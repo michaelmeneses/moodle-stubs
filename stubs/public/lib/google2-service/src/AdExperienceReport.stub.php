@@ -21,35 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for AdExperienceReport (v1).
- *
- * <p>
- * Views Ad Experience Report data, and gets a list of sites that have a
- * significant number of annoying ads.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://developers.google.com/ad-experience-report/" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class AdExperienceReport extends \Google\Service
-{
-    public $sites;
-    public $violatingSites;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the AdExperienceReport service.
+     * Service definition for AdExperienceReport (v1).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * Views Ad Experience Report data, and gets a list of sites that have a
+     * significant number of annoying ads.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://developers.google.com/ad-experience-report/" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class AdExperienceReport extends \Google\Service
+    {
+        public $sites;
+        public $violatingSites;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the AdExperienceReport service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AdExperienceReport registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AdExperienceReport extends \Google\Service\AdExperienceReport
     {
     }
 }

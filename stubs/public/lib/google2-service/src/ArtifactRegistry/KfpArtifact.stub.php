@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ArtifactRegistry;
-
-class KfpArtifact extends \Google\Model
-{
-    /**
-     * Output only. Resource name of the KFP artifact. Since users don't directly
-     * interact with this resource, the name will be derived from the associated
-     * version. For example, when version = ".../versions/sha256:abcdef...", the
-     * name will be ".../kfpArtifacts/sha256:abcdef...".
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The version associated with the KFP artifact. Must follow the Semantic
-     * Versioning standard.
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * Output only. Resource name of the KFP artifact. Since users don't directly
-     * interact with this resource, the name will be derived from the associated
-     * version. For example, when version = ".../versions/sha256:abcdef...", the
-     * name will be ".../kfpArtifacts/sha256:abcdef...".
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\ArtifactRegistry {
+    class KfpArtifact extends \Google\Model
     {
+        /**
+         * Output only. Resource name of the KFP artifact. Since users don't directly
+         * interact with this resource, the name will be derived from the associated
+         * version. For example, when version = ".../versions/sha256:abcdef...", the
+         * name will be ".../kfpArtifacts/sha256:abcdef...".
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The version associated with the KFP artifact. Must follow the Semantic
+         * Versioning standard.
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * Output only. Resource name of the KFP artifact. Since users don't directly
+         * interact with this resource, the name will be derived from the associated
+         * version. For example, when version = ".../versions/sha256:abcdef...", the
+         * name will be ".../kfpArtifacts/sha256:abcdef...".
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The version associated with the KFP artifact. Must follow the Semantic
+         * Versioning standard.
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ArtifactRegistry\KfpArtifact registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * The version associated with the KFP artifact. Must follow the Semantic
-     * Versioning standard.
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_ArtifactRegistry_KfpArtifact extends \Google\Service\ArtifactRegistry\KfpArtifact
     {
     }
 }

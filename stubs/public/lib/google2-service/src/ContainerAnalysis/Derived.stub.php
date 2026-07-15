@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class Derived extends \Google\Collection
-{
-    protected $collection_key = 'layerInfo';
-    public $baseResourceUrl;
-    public $distance;
-    protected $fingerprintType = Fingerprint::class;
-    protected $fingerprintDataType = '';
-    protected $layerInfoType = Layer::class;
-    protected $layerInfoDataType = 'array';
-    public function setBaseResourceUrl($baseResourceUrl)
+namespace Google\Service\ContainerAnalysis {
+    class Derived extends \Google\Collection
     {
+        protected $collection_key = 'layerInfo';
+        public $baseResourceUrl;
+        public $distance;
+        protected $fingerprintType = Fingerprint::class;
+        protected $fingerprintDataType = '';
+        protected $layerInfoType = Layer::class;
+        protected $layerInfoDataType = 'array';
+        public function setBaseResourceUrl($baseResourceUrl)
+        {
+        }
+        public function getBaseResourceUrl()
+        {
+        }
+        public function setDistance($distance)
+        {
+        }
+        public function getDistance()
+        {
+        }
+        /**
+         * @param Fingerprint
+         */
+        public function setFingerprint(Fingerprint $fingerprint)
+        {
+        }
+        /**
+         * @return Fingerprint
+         */
+        public function getFingerprint()
+        {
+        }
+        /**
+         * @param Layer[]
+         */
+        public function setLayerInfo($layerInfo)
+        {
+        }
+        /**
+         * @return Layer[]
+         */
+        public function getLayerInfo()
+        {
+        }
     }
-    public function getBaseResourceUrl()
-    {
-    }
-    public function setDistance($distance)
-    {
-    }
-    public function getDistance()
-    {
-    }
+}
+namespace {
     /**
-     * @param Fingerprint
+     * Runtime class alias of \Google\Service\ContainerAnalysis\Derived registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setFingerprint(Fingerprint $fingerprint)
-    {
-    }
-    /**
-     * @return Fingerprint
-     */
-    public function getFingerprint()
-    {
-    }
-    /**
-     * @param Layer[]
-     */
-    public function setLayerInfo($layerInfo)
-    {
-    }
-    /**
-     * @return Layer[]
-     */
-    public function getLayerInfo()
+    class Google_Service_ContainerAnalysis_Derived extends \Google\Service\ContainerAnalysis\Derived
     {
     }
 }

@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaModelevaluationMetricsQuestionAnsweringEvaluationMetrics extends \Google\Model
-{
-    /**
-     * The rate at which the input predicted strings exactly match their
-     * references.
-     *
-     * @var float
-     */
-    public $exactMatch;
-    /**
-     * The rate at which the input predicted strings exactly match their
-     * references.
-     *
-     * @param float $exactMatch
-     */
-    public function setExactMatch($exactMatch)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaModelevaluationMetricsQuestionAnsweringEvaluationMetrics extends \Google\Model
     {
+        /**
+         * The rate at which the input predicted strings exactly match their
+         * references.
+         *
+         * @var float
+         */
+        public $exactMatch;
+        /**
+         * The rate at which the input predicted strings exactly match their
+         * references.
+         *
+         * @param float $exactMatch
+         */
+        public function setExactMatch($exactMatch)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getExactMatch()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaModelevaluationMetricsQuestionAnsweringEvaluationMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExactMatch()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaModelevaluationMetricsQuestionAnsweringEvaluationMetrics extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaModelevaluationMetricsQuestionAnsweringEvaluationMetrics
     {
     }
 }

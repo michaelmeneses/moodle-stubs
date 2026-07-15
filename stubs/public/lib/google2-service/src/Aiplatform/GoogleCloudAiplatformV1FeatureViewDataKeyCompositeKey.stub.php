@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1FeatureViewDataKeyCompositeKey extends \Google\Collection
-{
-    protected $collection_key = 'parts';
-    /**
-     * Parts to construct Entity ID. Should match with the same ID columns as
-     * defined in FeatureView in the same order.
-     *
-     * @var string[]
-     */
-    public $parts;
-    /**
-     * Parts to construct Entity ID. Should match with the same ID columns as
-     * defined in FeatureView in the same order.
-     *
-     * @param string[] $parts
-     */
-    public function setParts($parts)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1FeatureViewDataKeyCompositeKey extends \Google\Collection
     {
+        protected $collection_key = 'parts';
+        /**
+         * Parts to construct Entity ID. Should match with the same ID columns as
+         * defined in FeatureView in the same order.
+         *
+         * @var string[]
+         */
+        public $parts;
+        /**
+         * Parts to construct Entity ID. Should match with the same ID columns as
+         * defined in FeatureView in the same order.
+         *
+         * @param string[] $parts
+         */
+        public function setParts($parts)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getParts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1FeatureViewDataKeyCompositeKey registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getParts()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1FeatureViewDataKeyCompositeKey extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1FeatureViewDataKeyCompositeKey
     {
     }
 }

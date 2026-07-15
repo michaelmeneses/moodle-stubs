@@ -8,6 +8,9 @@
  */
 namespace core_reportbuilder\local\aggregation;
 
+use lang_string;
+use core_reportbuilder\local\helpers\format;
+use core_reportbuilder\local\report\column;
 /**
  * Column percent aggregation type
  *

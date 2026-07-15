@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OSConfig;
-
-class AptSettings extends \Google\Collection
-{
-    protected $collection_key = 'exclusivePackages';
-    /**
-     * @var string[]
-     */
-    public $excludes;
-    /**
-     * @var string[]
-     */
-    public $exclusivePackages;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @param string[]
-     */
-    public function setExcludes($excludes)
+namespace Google\Service\OSConfig {
+    class AptSettings extends \Google\Collection
     {
+        protected $collection_key = 'exclusivePackages';
+        /**
+         * @var string[]
+         */
+        public $excludes;
+        /**
+         * @var string[]
+         */
+        public $exclusivePackages;
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @param string[]
+         */
+        public function setExcludes($excludes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getExcludes()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setExclusivePackages($exclusivePackages)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getExclusivePackages()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\OSConfig\AptSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExcludes()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setExclusivePackages($exclusivePackages)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getExclusivePackages()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_OSConfig_AptSettings extends \Google\Service\OSConfig\AptSettings
     {
     }
 }

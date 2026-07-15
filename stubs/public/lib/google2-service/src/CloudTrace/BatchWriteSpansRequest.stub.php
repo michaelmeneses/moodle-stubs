@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudTrace;
-
-class BatchWriteSpansRequest extends \Google\Collection
-{
-    protected $collection_key = 'spans';
-    protected $spansType = Span::class;
-    protected $spansDataType = 'array';
-    /**
-     * Required. A list of new spans. The span names must not match existing
-     * spans, otherwise the results are undefined.
-     *
-     * @param Span[] $spans
-     */
-    public function setSpans($spans)
+namespace Google\Service\CloudTrace {
+    class BatchWriteSpansRequest extends \Google\Collection
     {
+        protected $collection_key = 'spans';
+        protected $spansType = Span::class;
+        protected $spansDataType = 'array';
+        /**
+         * Required. A list of new spans. The span names must not match existing
+         * spans, otherwise the results are undefined.
+         *
+         * @param Span[] $spans
+         */
+        public function setSpans($spans)
+        {
+        }
+        /**
+         * @return Span[]
+         */
+        public function getSpans()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Span[]
+     * Runtime class alias of \Google\Service\CloudTrace\BatchWriteSpansRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSpans()
+    class Google_Service_CloudTrace_BatchWriteSpansRequest extends \Google\Service\CloudTrace\BatchWriteSpansRequest
     {
     }
 }

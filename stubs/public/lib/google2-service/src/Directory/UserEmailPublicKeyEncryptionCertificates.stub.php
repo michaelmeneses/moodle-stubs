@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class UserEmailPublicKeyEncryptionCertificates extends \Google\Model
-{
-    protected $internal_gapi_mappings = ["isDefault" => "is_default"];
-    /**
-     * X.509 encryption certificate in `PEM` format. Must only be an end-entity
-     * (leaf) certificate.
-     *
-     * @var string
-     */
-    public $certificate;
-    /**
-     * Whether this is the default certificate for the given email address.
-     *
-     * @var bool
-     */
-    public $isDefault;
-    /**
-     * Denotes the certificate's state in its lifecycle. Possible values are
-     * `not_yet_validated`, `valid`, `invalid`, `expired`, and `revoked`.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * X.509 encryption certificate in `PEM` format. Must only be an end-entity
-     * (leaf) certificate.
-     *
-     * @param string $certificate
-     */
-    public function setCertificate($certificate)
+namespace Google\Service\Directory {
+    class UserEmailPublicKeyEncryptionCertificates extends \Google\Model
     {
+        protected $internal_gapi_mappings = ["isDefault" => "is_default"];
+        /**
+         * X.509 encryption certificate in `PEM` format. Must only be an end-entity
+         * (leaf) certificate.
+         *
+         * @var string
+         */
+        public $certificate;
+        /**
+         * Whether this is the default certificate for the given email address.
+         *
+         * @var bool
+         */
+        public $isDefault;
+        /**
+         * Denotes the certificate's state in its lifecycle. Possible values are
+         * `not_yet_validated`, `valid`, `invalid`, `expired`, and `revoked`.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * X.509 encryption certificate in `PEM` format. Must only be an end-entity
+         * (leaf) certificate.
+         *
+         * @param string $certificate
+         */
+        public function setCertificate($certificate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCertificate()
+        {
+        }
+        /**
+         * Whether this is the default certificate for the given email address.
+         *
+         * @param bool $isDefault
+         */
+        public function setIsDefault($isDefault)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsDefault()
+        {
+        }
+        /**
+         * Denotes the certificate's state in its lifecycle. Possible values are
+         * `not_yet_validated`, `valid`, `invalid`, `expired`, and `revoked`.
+         *
+         * @param string $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Directory\UserEmailPublicKeyEncryptionCertificates registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCertificate()
-    {
-    }
-    /**
-     * Whether this is the default certificate for the given email address.
-     *
-     * @param bool $isDefault
-     */
-    public function setIsDefault($isDefault)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsDefault()
-    {
-    }
-    /**
-     * Denotes the certificate's state in its lifecycle. Possible values are
-     * `not_yet_validated`, `valid`, `invalid`, `expired`, and `revoked`.
-     *
-     * @param string $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getState()
+    class Google_Service_Directory_UserEmailPublicKeyEncryptionCertificates extends \Google\Service\Directory\UserEmailPublicKeyEncryptionCertificates
     {
     }
 }

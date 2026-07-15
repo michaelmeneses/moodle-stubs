@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class AggregateAssetsValuesRequest extends \Google\Collection
-{
-    protected $collection_key = 'aggregations';
-    protected $aggregationsType = Aggregation::class;
-    protected $aggregationsDataType = 'array';
-    /**
-     * Optional. The aggregation will be performed on assets that match the
-     * provided filter.
-     *
-     * @var string
-     */
-    public $filter;
-    /**
-     * Optional. When this value is set to 'true' the response will include all
-     * assets, including those that are hidden.
-     *
-     * @var bool
-     */
-    public $showHidden;
-    /**
-     * Array of aggregations to perform. Up to 25 aggregations can be defined.
-     *
-     * @param Aggregation[] $aggregations
-     */
-    public function setAggregations($aggregations)
+namespace Google\Service\MigrationCenterAPI {
+    class AggregateAssetsValuesRequest extends \Google\Collection
     {
+        protected $collection_key = 'aggregations';
+        protected $aggregationsType = Aggregation::class;
+        protected $aggregationsDataType = 'array';
+        /**
+         * Optional. The aggregation will be performed on assets that match the
+         * provided filter.
+         *
+         * @var string
+         */
+        public $filter;
+        /**
+         * Optional. When this value is set to 'true' the response will include all
+         * assets, including those that are hidden.
+         *
+         * @var bool
+         */
+        public $showHidden;
+        /**
+         * Array of aggregations to perform. Up to 25 aggregations can be defined.
+         *
+         * @param Aggregation[] $aggregations
+         */
+        public function setAggregations($aggregations)
+        {
+        }
+        /**
+         * @return Aggregation[]
+         */
+        public function getAggregations()
+        {
+        }
+        /**
+         * Optional. The aggregation will be performed on assets that match the
+         * provided filter.
+         *
+         * @param string $filter
+         */
+        public function setFilter($filter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilter()
+        {
+        }
+        /**
+         * Optional. When this value is set to 'true' the response will include all
+         * assets, including those that are hidden.
+         *
+         * @param bool $showHidden
+         */
+        public function setShowHidden($showHidden)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getShowHidden()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Aggregation[]
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\AggregateAssetsValuesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAggregations()
-    {
-    }
-    /**
-     * Optional. The aggregation will be performed on assets that match the
-     * provided filter.
-     *
-     * @param string $filter
-     */
-    public function setFilter($filter)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFilter()
-    {
-    }
-    /**
-     * Optional. When this value is set to 'true' the response will include all
-     * assets, including those that are hidden.
-     *
-     * @param bool $showHidden
-     */
-    public function setShowHidden($showHidden)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getShowHidden()
+    class Google_Service_MigrationCenterAPI_AggregateAssetsValuesRequest extends \Google\Service\MigrationCenterAPI\AggregateAssetsValuesRequest
     {
     }
 }

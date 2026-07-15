@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InterconnectDiagnosticsMacsecStatus extends \Google\Model
-{
-    /**
-     * Indicates the Connectivity Association Key Name (CKN) currently being used
-     * if MACsec is operational.
-     *
-     * @var string
-     */
-    public $ckn;
-    /**
-     * Indicates whether or not MACsec is operational on this link.
-     *
-     * @var bool
-     */
-    public $operational;
-    /**
-     * Indicates the Connectivity Association Key Name (CKN) currently being used
-     * if MACsec is operational.
-     *
-     * @param string $ckn
-     */
-    public function setCkn($ckn)
+namespace Google\Service\Compute {
+    class InterconnectDiagnosticsMacsecStatus extends \Google\Model
     {
+        /**
+         * Indicates the Connectivity Association Key Name (CKN) currently being used
+         * if MACsec is operational.
+         *
+         * @var string
+         */
+        public $ckn;
+        /**
+         * Indicates whether or not MACsec is operational on this link.
+         *
+         * @var bool
+         */
+        public $operational;
+        /**
+         * Indicates the Connectivity Association Key Name (CKN) currently being used
+         * if MACsec is operational.
+         *
+         * @param string $ckn
+         */
+        public function setCkn($ckn)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCkn()
+        {
+        }
+        /**
+         * Indicates whether or not MACsec is operational on this link.
+         *
+         * @param bool $operational
+         */
+        public function setOperational($operational)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getOperational()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\InterconnectDiagnosticsMacsecStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCkn()
-    {
-    }
-    /**
-     * Indicates whether or not MACsec is operational on this link.
-     *
-     * @param bool $operational
-     */
-    public function setOperational($operational)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getOperational()
+    class Google_Service_Compute_InterconnectDiagnosticsMacsecStatus extends \Google\Service\Compute\InterconnectDiagnosticsMacsecStatus
     {
     }
 }

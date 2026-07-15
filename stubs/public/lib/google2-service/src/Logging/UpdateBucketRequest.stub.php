@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Logging;
-
-class UpdateBucketRequest extends \Google\Model
-{
-    protected $bucketType = LogBucket::class;
-    protected $bucketDataType = '';
-    /**
-     * Required. The full resource name of the bucket to update.
-     * "projects/[PROJECT_ID]/locations/[LOCATION_ID]/buckets/[BUCKET_ID]" "organi
-     * zations/[ORGANIZATION_ID]/locations/[LOCATION_ID]/buckets/[BUCKET_ID]" "bil
-     * lingAccounts/[BILLING_ACCOUNT_ID]/locations/[LOCATION_ID]/buckets/[BUCKET_I
-     * D]" "folders/[FOLDER_ID]/locations/[LOCATION_ID]/buckets/[BUCKET_ID]" For
-     * example:"projects/my-project/locations/global/buckets/my-bucket"
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. Field mask that specifies the fields in bucket that need an
-     * update. A bucket field will be overwritten if, and only if, it is in the
-     * update mask. name and output only fields cannot be updated.For a detailed
-     * FieldMask definition, see: https://developers.google.com/protocol-
-     * buffers/docs/reference/google.protobuf#google.protobuf.FieldMaskFor
-     * example: updateMask=retention_days
-     *
-     * @var string
-     */
-    public $updateMask;
-    /**
-     * Required. The updated bucket.
-     *
-     * @param LogBucket $bucket
-     */
-    public function setBucket(LogBucket $bucket)
+namespace Google\Service\Logging {
+    class UpdateBucketRequest extends \Google\Model
     {
+        protected $bucketType = LogBucket::class;
+        protected $bucketDataType = '';
+        /**
+         * Required. The full resource name of the bucket to update.
+         * "projects/[PROJECT_ID]/locations/[LOCATION_ID]/buckets/[BUCKET_ID]" "organi
+         * zations/[ORGANIZATION_ID]/locations/[LOCATION_ID]/buckets/[BUCKET_ID]" "bil
+         * lingAccounts/[BILLING_ACCOUNT_ID]/locations/[LOCATION_ID]/buckets/[BUCKET_I
+         * D]" "folders/[FOLDER_ID]/locations/[LOCATION_ID]/buckets/[BUCKET_ID]" For
+         * example:"projects/my-project/locations/global/buckets/my-bucket"
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. Field mask that specifies the fields in bucket that need an
+         * update. A bucket field will be overwritten if, and only if, it is in the
+         * update mask. name and output only fields cannot be updated.For a detailed
+         * FieldMask definition, see: https://developers.google.com/protocol-
+         * buffers/docs/reference/google.protobuf#google.protobuf.FieldMaskFor
+         * example: updateMask=retention_days
+         *
+         * @var string
+         */
+        public $updateMask;
+        /**
+         * Required. The updated bucket.
+         *
+         * @param LogBucket $bucket
+         */
+        public function setBucket(LogBucket $bucket)
+        {
+        }
+        /**
+         * @return LogBucket
+         */
+        public function getBucket()
+        {
+        }
+        /**
+         * Required. The full resource name of the bucket to update.
+         * "projects/[PROJECT_ID]/locations/[LOCATION_ID]/buckets/[BUCKET_ID]" "organi
+         * zations/[ORGANIZATION_ID]/locations/[LOCATION_ID]/buckets/[BUCKET_ID]" "bil
+         * lingAccounts/[BILLING_ACCOUNT_ID]/locations/[LOCATION_ID]/buckets/[BUCKET_I
+         * D]" "folders/[FOLDER_ID]/locations/[LOCATION_ID]/buckets/[BUCKET_ID]" For
+         * example:"projects/my-project/locations/global/buckets/my-bucket"
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Required. Field mask that specifies the fields in bucket that need an
+         * update. A bucket field will be overwritten if, and only if, it is in the
+         * update mask. name and output only fields cannot be updated.For a detailed
+         * FieldMask definition, see: https://developers.google.com/protocol-
+         * buffers/docs/reference/google.protobuf#google.protobuf.FieldMaskFor
+         * example: updateMask=retention_days
+         *
+         * @param string $updateMask
+         */
+        public function setUpdateMask($updateMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateMask()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LogBucket
+     * Runtime class alias of \Google\Service\Logging\UpdateBucketRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBucket()
-    {
-    }
-    /**
-     * Required. The full resource name of the bucket to update.
-     * "projects/[PROJECT_ID]/locations/[LOCATION_ID]/buckets/[BUCKET_ID]" "organi
-     * zations/[ORGANIZATION_ID]/locations/[LOCATION_ID]/buckets/[BUCKET_ID]" "bil
-     * lingAccounts/[BILLING_ACCOUNT_ID]/locations/[LOCATION_ID]/buckets/[BUCKET_I
-     * D]" "folders/[FOLDER_ID]/locations/[LOCATION_ID]/buckets/[BUCKET_ID]" For
-     * example:"projects/my-project/locations/global/buckets/my-bucket"
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Required. Field mask that specifies the fields in bucket that need an
-     * update. A bucket field will be overwritten if, and only if, it is in the
-     * update mask. name and output only fields cannot be updated.For a detailed
-     * FieldMask definition, see: https://developers.google.com/protocol-
-     * buffers/docs/reference/google.protobuf#google.protobuf.FieldMaskFor
-     * example: updateMask=retention_days
-     *
-     * @param string $updateMask
-     */
-    public function setUpdateMask($updateMask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateMask()
+    class Google_Service_Logging_UpdateBucketRequest extends \Google\Service\Logging\UpdateBucketRequest
     {
     }
 }

@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class PrivatePoolV1Config extends \Google\Model
-{
-    protected $networkConfigType = NetworkConfig::class;
-    protected $networkConfigDataType = '';
-    protected $workerConfigType = WorkerConfig::class;
-    protected $workerConfigDataType = '';
-    /**
-     * @param NetworkConfig
-     */
-    public function setNetworkConfig(NetworkConfig $networkConfig)
+namespace Google\Service\CloudBuild {
+    class PrivatePoolV1Config extends \Google\Model
     {
+        protected $networkConfigType = NetworkConfig::class;
+        protected $networkConfigDataType = '';
+        protected $workerConfigType = WorkerConfig::class;
+        protected $workerConfigDataType = '';
+        /**
+         * @param NetworkConfig
+         */
+        public function setNetworkConfig(NetworkConfig $networkConfig)
+        {
+        }
+        /**
+         * @return NetworkConfig
+         */
+        public function getNetworkConfig()
+        {
+        }
+        /**
+         * @param WorkerConfig
+         */
+        public function setWorkerConfig(WorkerConfig $workerConfig)
+        {
+        }
+        /**
+         * @return WorkerConfig
+         */
+        public function getWorkerConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return NetworkConfig
+     * Runtime class alias of \Google\Service\CloudBuild\PrivatePoolV1Config registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNetworkConfig()
-    {
-    }
-    /**
-     * @param WorkerConfig
-     */
-    public function setWorkerConfig(WorkerConfig $workerConfig)
-    {
-    }
-    /**
-     * @return WorkerConfig
-     */
-    public function getWorkerConfig()
+    class Google_Service_CloudBuild_PrivatePoolV1Config extends \Google\Service\CloudBuild\PrivatePoolV1Config
     {
     }
 }

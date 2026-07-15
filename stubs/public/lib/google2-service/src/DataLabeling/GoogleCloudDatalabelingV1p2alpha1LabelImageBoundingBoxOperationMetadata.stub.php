@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1p2alpha1LabelImageBoundingBoxOperationMetadata extends \Google\Model
-{
-    protected $basicConfigType = GoogleCloudDatalabelingV1p2alpha1HumanAnnotationConfig::class;
-    protected $basicConfigDataType = '';
-    /**
-     * Basic human annotation config used in labeling request.
-     *
-     * @param GoogleCloudDatalabelingV1p2alpha1HumanAnnotationConfig $basicConfig
-     */
-    public function setBasicConfig(GoogleCloudDatalabelingV1p2alpha1HumanAnnotationConfig $basicConfig)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1p2alpha1LabelImageBoundingBoxOperationMetadata extends \Google\Model
     {
+        protected $basicConfigType = GoogleCloudDatalabelingV1p2alpha1HumanAnnotationConfig::class;
+        protected $basicConfigDataType = '';
+        /**
+         * Basic human annotation config used in labeling request.
+         *
+         * @param GoogleCloudDatalabelingV1p2alpha1HumanAnnotationConfig $basicConfig
+         */
+        public function setBasicConfig(GoogleCloudDatalabelingV1p2alpha1HumanAnnotationConfig $basicConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1p2alpha1HumanAnnotationConfig
+         */
+        public function getBasicConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatalabelingV1p2alpha1HumanAnnotationConfig
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1p2alpha1LabelImageBoundingBoxOperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBasicConfig()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1p2alpha1LabelImageBoundingBoxOperationMetadata extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1p2alpha1LabelImageBoundingBoxOperationMetadata
     {
     }
 }

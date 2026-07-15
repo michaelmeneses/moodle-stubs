@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BeyondCorp;
-
-class GoogleCloudBeyondcorpAppconnectorsV1alphaReportStatusRequest extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $requestId;
-    protected $resourceInfoType = GoogleCloudBeyondcorpAppconnectorsV1alphaResourceInfo::class;
-    protected $resourceInfoDataType = '';
-    /**
-     * @var bool
-     */
-    public $validateOnly;
-    /**
-     * @param string
-     */
-    public function setRequestId($requestId)
+namespace Google\Service\BeyondCorp {
+    class GoogleCloudBeyondcorpAppconnectorsV1alphaReportStatusRequest extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $requestId;
+        protected $resourceInfoType = GoogleCloudBeyondcorpAppconnectorsV1alphaResourceInfo::class;
+        protected $resourceInfoDataType = '';
+        /**
+         * @var bool
+         */
+        public $validateOnly;
+        /**
+         * @param string
+         */
+        public function setRequestId($requestId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestId()
+        {
+        }
+        /**
+         * @param GoogleCloudBeyondcorpAppconnectorsV1alphaResourceInfo
+         */
+        public function setResourceInfo(GoogleCloudBeyondcorpAppconnectorsV1alphaResourceInfo $resourceInfo)
+        {
+        }
+        /**
+         * @return GoogleCloudBeyondcorpAppconnectorsV1alphaResourceInfo
+         */
+        public function getResourceInfo()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setValidateOnly($validateOnly)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getValidateOnly()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BeyondCorp\GoogleCloudBeyondcorpAppconnectorsV1alphaReportStatusRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequestId()
-    {
-    }
-    /**
-     * @param GoogleCloudBeyondcorpAppconnectorsV1alphaResourceInfo
-     */
-    public function setResourceInfo(GoogleCloudBeyondcorpAppconnectorsV1alphaResourceInfo $resourceInfo)
-    {
-    }
-    /**
-     * @return GoogleCloudBeyondcorpAppconnectorsV1alphaResourceInfo
-     */
-    public function getResourceInfo()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setValidateOnly($validateOnly)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getValidateOnly()
+    class Google_Service_BeyondCorp_GoogleCloudBeyondcorpAppconnectorsV1alphaReportStatusRequest extends \Google\Service\BeyondCorp\GoogleCloudBeyondcorpAppconnectorsV1alphaReportStatusRequest
     {
     }
 }

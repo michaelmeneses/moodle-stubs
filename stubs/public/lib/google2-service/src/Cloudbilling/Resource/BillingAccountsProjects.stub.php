@@ -21,40 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudbilling\Resource;
-
-/**
- * The "projects" collection of methods.
- * Typical usage is:
- *  <code>
- *   $cloudbillingService = new Google\Service\Cloudbilling(...);
- *   $projects = $cloudbillingService->billingAccounts_projects;
- *  </code>
- */
-class BillingAccountsProjects extends \Google\Service\Resource
-{
+namespace Google\Service\Cloudbilling\Resource {
+    use Google\Service\Cloudbilling\ListProjectBillingInfoResponse;
     /**
-     * Lists the projects associated with a billing account. The current
-     * authenticated user must have the `billing.resourceAssociations.list` IAM
-     * permission, which is often given to billing account
-     * [viewers](https://cloud.google.com/billing/docs/how-to/billing-access).
-     * (projects.listBillingAccountsProjects)
-     *
-     * @param string $name Required. The resource name of the billing account
-     * associated with the projects that you want to list. For example,
-     * `billingAccounts/012345-567890-ABCDEF`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Requested page size. The maximum page size is 100;
-     * this is also the default.
-     * @opt_param string pageToken A token identifying a page of results to be
-     * returned. This should be a `next_page_token` value returned from a previous
-     * `ListProjectBillingInfo` call. If unspecified, the first page of results is
-     * returned.
-     * @return ListProjectBillingInfoResponse
-     * @throws \Google\Service\Exception
+     * The "projects" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $cloudbillingService = new Google\Service\Cloudbilling(...);
+     *   $projects = $cloudbillingService->billingAccounts_projects;
+     *  </code>
      */
-    public function listBillingAccountsProjects($name, $optParams = [])
+    class BillingAccountsProjects extends \Google\Service\Resource
+    {
+        /**
+         * Lists the projects associated with a billing account. The current
+         * authenticated user must have the `billing.resourceAssociations.list` IAM
+         * permission, which is often given to billing account
+         * [viewers](https://cloud.google.com/billing/docs/how-to/billing-access).
+         * (projects.listBillingAccountsProjects)
+         *
+         * @param string $name Required. The resource name of the billing account
+         * associated with the projects that you want to list. For example,
+         * `billingAccounts/012345-567890-ABCDEF`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Requested page size. The maximum page size is 100;
+         * this is also the default.
+         * @opt_param string pageToken A token identifying a page of results to be
+         * returned. This should be a `next_page_token` value returned from a previous
+         * `ListProjectBillingInfo` call. If unspecified, the first page of results is
+         * returned.
+         * @return ListProjectBillingInfoResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listBillingAccountsProjects($name, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Cloudbilling\Resource\BillingAccountsProjects registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Cloudbilling_Resource_BillingAccountsProjects extends \Google\Service\Cloudbilling\Resource\BillingAccountsProjects
     {
     }
 }

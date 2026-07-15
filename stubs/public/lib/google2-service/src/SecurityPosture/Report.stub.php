@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityPosture;
-
-class Report extends \Google\Model
-{
-    /**
-     * Output only. The time at which the report was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    protected $iacValidationReportType = IaCValidationReport::class;
-    protected $iacValidationReportDataType = '';
-    /**
-     * Required. The name of the report, in the format
-     * `organizations/{organization}/locations/global/reports/{report_id}`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The time at which the report was last updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. The time at which the report was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\SecurityPosture {
+    class Report extends \Google\Model
     {
+        /**
+         * Output only. The time at which the report was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        protected $iacValidationReportType = IaCValidationReport::class;
+        protected $iacValidationReportDataType = '';
+        /**
+         * Required. The name of the report, in the format
+         * `organizations/{organization}/locations/global/reports/{report_id}`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The time at which the report was last updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. The time at which the report was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. An infrastructure-as-code (IaC) validation report.
+         *
+         * @param IaCValidationReport $iacValidationReport
+         */
+        public function setIacValidationReport(IaCValidationReport $iacValidationReport)
+        {
+        }
+        /**
+         * @return IaCValidationReport
+         */
+        public function getIacValidationReport()
+        {
+        }
+        /**
+         * Required. The name of the report, in the format
+         * `organizations/{organization}/locations/global/reports/{report_id}`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The time at which the report was last updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityPosture\Report registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. An infrastructure-as-code (IaC) validation report.
-     *
-     * @param IaCValidationReport $iacValidationReport
-     */
-    public function setIacValidationReport(IaCValidationReport $iacValidationReport)
-    {
-    }
-    /**
-     * @return IaCValidationReport
-     */
-    public function getIacValidationReport()
-    {
-    }
-    /**
-     * Required. The name of the report, in the format
-     * `organizations/{organization}/locations/global/reports/{report_id}`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The time at which the report was last updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_SecurityPosture_Report extends \Google\Service\SecurityPosture\Report
     {
     }
 }

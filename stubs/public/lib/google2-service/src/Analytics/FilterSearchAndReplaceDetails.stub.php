@@ -21,108 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics;
-
-class FilterSearchAndReplaceDetails extends \Google\Model
-{
-    /**
-     * Determines if the filter is case sensitive.
-     *
-     * @var bool
-     */
-    public $caseSensitive;
-    /**
-     * Field to use in the filter.
-     *
-     * @var string
-     */
-    public $field;
-    /**
-     * The Index of the custom dimension. Required if field is a CUSTOM_DIMENSION.
-     *
-     * @var int
-     */
-    public $fieldIndex;
-    /**
-     * Term to replace the search term with.
-     *
-     * @var string
-     */
-    public $replaceString;
-    /**
-     * Term to search.
-     *
-     * @var string
-     */
-    public $searchString;
-    /**
-     * Determines if the filter is case sensitive.
-     *
-     * @param bool $caseSensitive
-     */
-    public function setCaseSensitive($caseSensitive)
+namespace Google\Service\Analytics {
+    class FilterSearchAndReplaceDetails extends \Google\Model
     {
+        /**
+         * Determines if the filter is case sensitive.
+         *
+         * @var bool
+         */
+        public $caseSensitive;
+        /**
+         * Field to use in the filter.
+         *
+         * @var string
+         */
+        public $field;
+        /**
+         * The Index of the custom dimension. Required if field is a CUSTOM_DIMENSION.
+         *
+         * @var int
+         */
+        public $fieldIndex;
+        /**
+         * Term to replace the search term with.
+         *
+         * @var string
+         */
+        public $replaceString;
+        /**
+         * Term to search.
+         *
+         * @var string
+         */
+        public $searchString;
+        /**
+         * Determines if the filter is case sensitive.
+         *
+         * @param bool $caseSensitive
+         */
+        public function setCaseSensitive($caseSensitive)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCaseSensitive()
+        {
+        }
+        /**
+         * Field to use in the filter.
+         *
+         * @param string $field
+         */
+        public function setField($field)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getField()
+        {
+        }
+        /**
+         * The Index of the custom dimension. Required if field is a CUSTOM_DIMENSION.
+         *
+         * @param int $fieldIndex
+         */
+        public function setFieldIndex($fieldIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getFieldIndex()
+        {
+        }
+        /**
+         * Term to replace the search term with.
+         *
+         * @param string $replaceString
+         */
+        public function setReplaceString($replaceString)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReplaceString()
+        {
+        }
+        /**
+         * Term to search.
+         *
+         * @param string $searchString
+         */
+        public function setSearchString($searchString)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSearchString()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Analytics\FilterSearchAndReplaceDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCaseSensitive()
-    {
-    }
-    /**
-     * Field to use in the filter.
-     *
-     * @param string $field
-     */
-    public function setField($field)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getField()
-    {
-    }
-    /**
-     * The Index of the custom dimension. Required if field is a CUSTOM_DIMENSION.
-     *
-     * @param int $fieldIndex
-     */
-    public function setFieldIndex($fieldIndex)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getFieldIndex()
-    {
-    }
-    /**
-     * Term to replace the search term with.
-     *
-     * @param string $replaceString
-     */
-    public function setReplaceString($replaceString)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReplaceString()
-    {
-    }
-    /**
-     * Term to search.
-     *
-     * @param string $searchString
-     */
-    public function setSearchString($searchString)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSearchString()
+    class Google_Service_Analytics_FilterSearchAndReplaceDetails extends \Google\Service\Analytics\FilterSearchAndReplaceDetails
     {
     }
 }

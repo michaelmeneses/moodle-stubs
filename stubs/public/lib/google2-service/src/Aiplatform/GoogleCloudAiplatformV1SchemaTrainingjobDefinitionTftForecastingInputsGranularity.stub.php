@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaTrainingjobDefinitionTftForecastingInputsGranularity extends \Google\Model
-{
-    /**
-     * The number of granularity_units between data points in the training data.
-     * If `granularity_unit` is `minute`, can be 1, 5, 10, 15, or 30. For all
-     * other values of `granularity_unit`, must be 1.
-     *
-     * @var string
-     */
-    public $quantity;
-    /**
-     * The time granularity unit of this time period. The supported units are: *
-     * "minute" * "hour" * "day" * "week" * "month" * "year"
-     *
-     * @var string
-     */
-    public $unit;
-    /**
-     * The number of granularity_units between data points in the training data.
-     * If `granularity_unit` is `minute`, can be 1, 5, 10, 15, or 30. For all
-     * other values of `granularity_unit`, must be 1.
-     *
-     * @param string $quantity
-     */
-    public function setQuantity($quantity)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaTrainingjobDefinitionTftForecastingInputsGranularity extends \Google\Model
     {
+        /**
+         * The number of granularity_units between data points in the training data.
+         * If `granularity_unit` is `minute`, can be 1, 5, 10, 15, or 30. For all
+         * other values of `granularity_unit`, must be 1.
+         *
+         * @var string
+         */
+        public $quantity;
+        /**
+         * The time granularity unit of this time period. The supported units are: *
+         * "minute" * "hour" * "day" * "week" * "month" * "year"
+         *
+         * @var string
+         */
+        public $unit;
+        /**
+         * The number of granularity_units between data points in the training data.
+         * If `granularity_unit` is `minute`, can be 1, 5, 10, 15, or 30. For all
+         * other values of `granularity_unit`, must be 1.
+         *
+         * @param string $quantity
+         */
+        public function setQuantity($quantity)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQuantity()
+        {
+        }
+        /**
+         * The time granularity unit of this time period. The supported units are: *
+         * "minute" * "hour" * "day" * "week" * "month" * "year"
+         *
+         * @param string $unit
+         */
+        public function setUnit($unit)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUnit()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaTrainingjobDefinitionTftForecastingInputsGranularity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getQuantity()
-    {
-    }
-    /**
-     * The time granularity unit of this time period. The supported units are: *
-     * "minute" * "hour" * "day" * "week" * "month" * "year"
-     *
-     * @param string $unit
-     */
-    public function setUnit($unit)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUnit()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaTrainingjobDefinitionTftForecastingInputsGranularity extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaTrainingjobDefinitionTftForecastingInputsGranularity
     {
     }
 }

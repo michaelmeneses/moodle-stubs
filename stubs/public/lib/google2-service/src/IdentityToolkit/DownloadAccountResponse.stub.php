@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\IdentityToolkit;
-
-class DownloadAccountResponse extends \Google\Collection
-{
-    protected $collection_key = 'users';
-    /**
-     * The fixed string "identitytoolkit#DownloadAccountResponse".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The next page token. To be used in a subsequent request to return the next
-     * page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $usersType = UserInfo::class;
-    protected $usersDataType = 'array';
-    /**
-     * The fixed string "identitytoolkit#DownloadAccountResponse".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\IdentityToolkit {
+    class DownloadAccountResponse extends \Google\Collection
     {
+        protected $collection_key = 'users';
+        /**
+         * The fixed string "identitytoolkit#DownloadAccountResponse".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The next page token. To be used in a subsequent request to return the next
+         * page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $usersType = UserInfo::class;
+        protected $usersDataType = 'array';
+        /**
+         * The fixed string "identitytoolkit#DownloadAccountResponse".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The next page token. To be used in a subsequent request to return the next
+         * page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The user accounts data.
+         *
+         * @param UserInfo[] $users
+         */
+        public function setUsers($users)
+        {
+        }
+        /**
+         * @return UserInfo[]
+         */
+        public function getUsers()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\IdentityToolkit\DownloadAccountResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * The next page token. To be used in a subsequent request to return the next
-     * page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The user accounts data.
-     *
-     * @param UserInfo[] $users
-     */
-    public function setUsers($users)
-    {
-    }
-    /**
-     * @return UserInfo[]
-     */
-    public function getUsers()
+    class Google_Service_IdentityToolkit_DownloadAccountResponse extends \Google\Service\IdentityToolkit\DownloadAccountResponse
     {
     }
 }

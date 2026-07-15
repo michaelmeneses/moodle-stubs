@@ -8,6 +8,9 @@
  */
 namespace Aws\Api\ErrorParser;
 
+use Aws\Api\Parser\PayloadParserTrait;
+use Aws\Api\StructureShape;
+use Psr\Http\Message\ResponseInterface;
 /**
  * Provides basic JSON error parsing functionality.
  */

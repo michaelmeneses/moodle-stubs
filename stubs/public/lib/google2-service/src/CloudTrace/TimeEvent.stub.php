@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudTrace;
-
-class TimeEvent extends \Google\Model
-{
-    protected $annotationType = Annotation::class;
-    protected $annotationDataType = '';
-    protected $messageEventType = MessageEvent::class;
-    protected $messageEventDataType = '';
-    /**
-     * The timestamp indicating the time the event occurred.
-     *
-     * @var string
-     */
-    public $time;
-    /**
-     * Text annotation with a set of attributes.
-     *
-     * @param Annotation $annotation
-     */
-    public function setAnnotation(Annotation $annotation)
+namespace Google\Service\CloudTrace {
+    class TimeEvent extends \Google\Model
     {
+        protected $annotationType = Annotation::class;
+        protected $annotationDataType = '';
+        protected $messageEventType = MessageEvent::class;
+        protected $messageEventDataType = '';
+        /**
+         * The timestamp indicating the time the event occurred.
+         *
+         * @var string
+         */
+        public $time;
+        /**
+         * Text annotation with a set of attributes.
+         *
+         * @param Annotation $annotation
+         */
+        public function setAnnotation(Annotation $annotation)
+        {
+        }
+        /**
+         * @return Annotation
+         */
+        public function getAnnotation()
+        {
+        }
+        /**
+         * An event describing a message sent/received between Spans.
+         *
+         * @param MessageEvent $messageEvent
+         */
+        public function setMessageEvent(MessageEvent $messageEvent)
+        {
+        }
+        /**
+         * @return MessageEvent
+         */
+        public function getMessageEvent()
+        {
+        }
+        /**
+         * The timestamp indicating the time the event occurred.
+         *
+         * @param string $time
+         */
+        public function setTime($time)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Annotation
+     * Runtime class alias of \Google\Service\CloudTrace\TimeEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotation()
-    {
-    }
-    /**
-     * An event describing a message sent/received between Spans.
-     *
-     * @param MessageEvent $messageEvent
-     */
-    public function setMessageEvent(MessageEvent $messageEvent)
-    {
-    }
-    /**
-     * @return MessageEvent
-     */
-    public function getMessageEvent()
-    {
-    }
-    /**
-     * The timestamp indicating the time the event occurred.
-     *
-     * @param string $time
-     */
-    public function setTime($time)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTime()
+    class Google_Service_CloudTrace_TimeEvent extends \Google\Service\CloudTrace\TimeEvent
     {
     }
 }

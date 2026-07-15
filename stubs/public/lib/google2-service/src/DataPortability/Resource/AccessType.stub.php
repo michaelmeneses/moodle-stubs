@@ -21,27 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataPortability\Resource;
-
-/**
- * The "accessType" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dataportabilityService = new Google\Service\DataPortability(...);
- *   $accessType = $dataportabilityService->accessType;
- *  </code>
- */
-class AccessType extends \Google\Service\Resource
-{
+namespace Google\Service\DataPortability\Resource {
+    use Google\Service\DataPortability\CheckAccessTypeRequest;
+    use Google\Service\DataPortability\CheckAccessTypeResponse;
     /**
-     * Gets the access type of the token. (accessType.check)
-     *
-     * @param CheckAccessTypeRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return CheckAccessTypeResponse
-     * @throws \Google\Service\Exception
+     * The "accessType" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dataportabilityService = new Google\Service\DataPortability(...);
+     *   $accessType = $dataportabilityService->accessType;
+     *  </code>
      */
-    public function check(CheckAccessTypeRequest $postBody, $optParams = [])
+    class AccessType extends \Google\Service\Resource
+    {
+        /**
+         * Gets the access type of the token. (accessType.check)
+         *
+         * @param CheckAccessTypeRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return CheckAccessTypeResponse
+         * @throws \Google\Service\Exception
+         */
+        public function check(CheckAccessTypeRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\DataPortability\Resource\AccessType registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_DataPortability_Resource_AccessType extends \Google\Service\DataPortability\Resource\AccessType
     {
     }
 }

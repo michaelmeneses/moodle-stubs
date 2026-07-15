@@ -21,251 +21,260 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class OrderTrackingSignalShippingInfo extends \Google\Model
-{
-    /**
-     * The shipping status is not known to merchant.
-     */
-    public const SHIPPING_STATUS_SHIPPING_STATE_UNSPECIFIED = 'SHIPPING_STATE_UNSPECIFIED';
-    /**
-     * All items are shipped.
-     */
-    public const SHIPPING_STATUS_SHIPPED = 'SHIPPED';
-    /**
-     * The shipment is already delivered.
-     */
-    public const SHIPPING_STATUS_DELIVERED = 'DELIVERED';
-    protected $actualDeliveryTimeType = DateTime::class;
-    protected $actualDeliveryTimeDataType = '';
-    /**
-     * The name of the shipping carrier for the delivery. This field is required
-     * if one of the following fields is absent: earliest_delivery_promise_time,
-     * latest_delivery_promise_time, and actual_delivery_time.
-     *
-     * @var string
-     */
-    public $carrierName;
-    /**
-     * The service type for fulfillment, e.g., GROUND, FIRST_CLASS, etc.
-     *
-     * @var string
-     */
-    public $carrierServiceName;
-    protected $earliestDeliveryPromiseTimeType = DateTime::class;
-    protected $earliestDeliveryPromiseTimeDataType = '';
-    protected $latestDeliveryPromiseTimeType = DateTime::class;
-    protected $latestDeliveryPromiseTimeDataType = '';
-    /**
-     * The origin postal code, as a continuous string without spaces or dashes,
-     * e.g. "95016". This field will be anonymized in returned OrderTrackingSignal
-     * creation response.
-     *
-     * @var string
-     */
-    public $originPostalCode;
-    /**
-     * The [CLDR territory code]
-     * (http://www.unicode.org/repos/cldr/tags/latest/common/main/en.xml) for the
-     * shipping origin.
-     *
-     * @var string
-     */
-    public $originRegionCode;
-    /**
-     * Required. The shipment ID. This field will be hashed in returned
-     * OrderTrackingSignal creation response.
-     *
-     * @var string
-     */
-    public $shipmentId;
-    protected $shippedTimeType = DateTime::class;
-    protected $shippedTimeDataType = '';
-    /**
-     * The status of the shipment.
-     *
-     * @var string
-     */
-    public $shippingStatus;
-    /**
-     * The tracking ID of the shipment. This field is required if one of the
-     * following fields is absent: earliest_delivery_promise_time,
-     * latest_delivery_promise_time, and actual_delivery_time.
-     *
-     * @var string
-     */
-    public $trackingId;
-    /**
-     * The time when the shipment was actually delivered. Include the year and
-     * timezone string, if available. This field is required, if one of the
-     * following fields is absent: tracking_id or carrier_name.
-     *
-     * @param DateTime $actualDeliveryTime
-     */
-    public function setActualDeliveryTime(DateTime $actualDeliveryTime)
+namespace Google\Service\ShoppingContent {
+    class OrderTrackingSignalShippingInfo extends \Google\Model
     {
+        /**
+         * The shipping status is not known to merchant.
+         */
+        public const SHIPPING_STATUS_SHIPPING_STATE_UNSPECIFIED = 'SHIPPING_STATE_UNSPECIFIED';
+        /**
+         * All items are shipped.
+         */
+        public const SHIPPING_STATUS_SHIPPED = 'SHIPPED';
+        /**
+         * The shipment is already delivered.
+         */
+        public const SHIPPING_STATUS_DELIVERED = 'DELIVERED';
+        protected $actualDeliveryTimeType = DateTime::class;
+        protected $actualDeliveryTimeDataType = '';
+        /**
+         * The name of the shipping carrier for the delivery. This field is required
+         * if one of the following fields is absent: earliest_delivery_promise_time,
+         * latest_delivery_promise_time, and actual_delivery_time.
+         *
+         * @var string
+         */
+        public $carrierName;
+        /**
+         * The service type for fulfillment, e.g., GROUND, FIRST_CLASS, etc.
+         *
+         * @var string
+         */
+        public $carrierServiceName;
+        protected $earliestDeliveryPromiseTimeType = DateTime::class;
+        protected $earliestDeliveryPromiseTimeDataType = '';
+        protected $latestDeliveryPromiseTimeType = DateTime::class;
+        protected $latestDeliveryPromiseTimeDataType = '';
+        /**
+         * The origin postal code, as a continuous string without spaces or dashes,
+         * e.g. "95016". This field will be anonymized in returned OrderTrackingSignal
+         * creation response.
+         *
+         * @var string
+         */
+        public $originPostalCode;
+        /**
+         * The [CLDR territory code]
+         * (http://www.unicode.org/repos/cldr/tags/latest/common/main/en.xml) for the
+         * shipping origin.
+         *
+         * @var string
+         */
+        public $originRegionCode;
+        /**
+         * Required. The shipment ID. This field will be hashed in returned
+         * OrderTrackingSignal creation response.
+         *
+         * @var string
+         */
+        public $shipmentId;
+        protected $shippedTimeType = DateTime::class;
+        protected $shippedTimeDataType = '';
+        /**
+         * The status of the shipment.
+         *
+         * @var string
+         */
+        public $shippingStatus;
+        /**
+         * The tracking ID of the shipment. This field is required if one of the
+         * following fields is absent: earliest_delivery_promise_time,
+         * latest_delivery_promise_time, and actual_delivery_time.
+         *
+         * @var string
+         */
+        public $trackingId;
+        /**
+         * The time when the shipment was actually delivered. Include the year and
+         * timezone string, if available. This field is required, if one of the
+         * following fields is absent: tracking_id or carrier_name.
+         *
+         * @param DateTime $actualDeliveryTime
+         */
+        public function setActualDeliveryTime(DateTime $actualDeliveryTime)
+        {
+        }
+        /**
+         * @return DateTime
+         */
+        public function getActualDeliveryTime()
+        {
+        }
+        /**
+         * The name of the shipping carrier for the delivery. This field is required
+         * if one of the following fields is absent: earliest_delivery_promise_time,
+         * latest_delivery_promise_time, and actual_delivery_time.
+         *
+         * @param string $carrierName
+         */
+        public function setCarrierName($carrierName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCarrierName()
+        {
+        }
+        /**
+         * The service type for fulfillment, e.g., GROUND, FIRST_CLASS, etc.
+         *
+         * @param string $carrierServiceName
+         */
+        public function setCarrierServiceName($carrierServiceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCarrierServiceName()
+        {
+        }
+        /**
+         * The earliest delivery promised time. Include the year and timezone string,
+         * if available. This field is required, if one of the following fields is
+         * absent: tracking_id or carrier_name.
+         *
+         * @param DateTime $earliestDeliveryPromiseTime
+         */
+        public function setEarliestDeliveryPromiseTime(DateTime $earliestDeliveryPromiseTime)
+        {
+        }
+        /**
+         * @return DateTime
+         */
+        public function getEarliestDeliveryPromiseTime()
+        {
+        }
+        /**
+         * The latest delivery promised time. Include the year and timezone string, if
+         * available. This field is required, if one of the following fields is
+         * absent: tracking_id or carrier_name.
+         *
+         * @param DateTime $latestDeliveryPromiseTime
+         */
+        public function setLatestDeliveryPromiseTime(DateTime $latestDeliveryPromiseTime)
+        {
+        }
+        /**
+         * @return DateTime
+         */
+        public function getLatestDeliveryPromiseTime()
+        {
+        }
+        /**
+         * The origin postal code, as a continuous string without spaces or dashes,
+         * e.g. "95016". This field will be anonymized in returned OrderTrackingSignal
+         * creation response.
+         *
+         * @param string $originPostalCode
+         */
+        public function setOriginPostalCode($originPostalCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOriginPostalCode()
+        {
+        }
+        /**
+         * The [CLDR territory code]
+         * (http://www.unicode.org/repos/cldr/tags/latest/common/main/en.xml) for the
+         * shipping origin.
+         *
+         * @param string $originRegionCode
+         */
+        public function setOriginRegionCode($originRegionCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOriginRegionCode()
+        {
+        }
+        /**
+         * Required. The shipment ID. This field will be hashed in returned
+         * OrderTrackingSignal creation response.
+         *
+         * @param string $shipmentId
+         */
+        public function setShipmentId($shipmentId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getShipmentId()
+        {
+        }
+        /**
+         * The time when the shipment was shipped. Include the year and timezone
+         * string, if available.
+         *
+         * @param DateTime $shippedTime
+         */
+        public function setShippedTime(DateTime $shippedTime)
+        {
+        }
+        /**
+         * @return DateTime
+         */
+        public function getShippedTime()
+        {
+        }
+        /**
+         * The status of the shipment.
+         *
+         * Accepted values: SHIPPING_STATE_UNSPECIFIED, SHIPPED, DELIVERED
+         *
+         * @param self::SHIPPING_STATUS_* $shippingStatus
+         */
+        public function setShippingStatus($shippingStatus)
+        {
+        }
+        /**
+         * @return self::SHIPPING_STATUS_*
+         */
+        public function getShippingStatus()
+        {
+        }
+        /**
+         * The tracking ID of the shipment. This field is required if one of the
+         * following fields is absent: earliest_delivery_promise_time,
+         * latest_delivery_promise_time, and actual_delivery_time.
+         *
+         * @param string $trackingId
+         */
+        public function setTrackingId($trackingId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTrackingId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DateTime
+     * Runtime class alias of \Google\Service\ShoppingContent\OrderTrackingSignalShippingInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActualDeliveryTime()
-    {
-    }
-    /**
-     * The name of the shipping carrier for the delivery. This field is required
-     * if one of the following fields is absent: earliest_delivery_promise_time,
-     * latest_delivery_promise_time, and actual_delivery_time.
-     *
-     * @param string $carrierName
-     */
-    public function setCarrierName($carrierName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCarrierName()
-    {
-    }
-    /**
-     * The service type for fulfillment, e.g., GROUND, FIRST_CLASS, etc.
-     *
-     * @param string $carrierServiceName
-     */
-    public function setCarrierServiceName($carrierServiceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCarrierServiceName()
-    {
-    }
-    /**
-     * The earliest delivery promised time. Include the year and timezone string,
-     * if available. This field is required, if one of the following fields is
-     * absent: tracking_id or carrier_name.
-     *
-     * @param DateTime $earliestDeliveryPromiseTime
-     */
-    public function setEarliestDeliveryPromiseTime(DateTime $earliestDeliveryPromiseTime)
-    {
-    }
-    /**
-     * @return DateTime
-     */
-    public function getEarliestDeliveryPromiseTime()
-    {
-    }
-    /**
-     * The latest delivery promised time. Include the year and timezone string, if
-     * available. This field is required, if one of the following fields is
-     * absent: tracking_id or carrier_name.
-     *
-     * @param DateTime $latestDeliveryPromiseTime
-     */
-    public function setLatestDeliveryPromiseTime(DateTime $latestDeliveryPromiseTime)
-    {
-    }
-    /**
-     * @return DateTime
-     */
-    public function getLatestDeliveryPromiseTime()
-    {
-    }
-    /**
-     * The origin postal code, as a continuous string without spaces or dashes,
-     * e.g. "95016". This field will be anonymized in returned OrderTrackingSignal
-     * creation response.
-     *
-     * @param string $originPostalCode
-     */
-    public function setOriginPostalCode($originPostalCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOriginPostalCode()
-    {
-    }
-    /**
-     * The [CLDR territory code]
-     * (http://www.unicode.org/repos/cldr/tags/latest/common/main/en.xml) for the
-     * shipping origin.
-     *
-     * @param string $originRegionCode
-     */
-    public function setOriginRegionCode($originRegionCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOriginRegionCode()
-    {
-    }
-    /**
-     * Required. The shipment ID. This field will be hashed in returned
-     * OrderTrackingSignal creation response.
-     *
-     * @param string $shipmentId
-     */
-    public function setShipmentId($shipmentId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getShipmentId()
-    {
-    }
-    /**
-     * The time when the shipment was shipped. Include the year and timezone
-     * string, if available.
-     *
-     * @param DateTime $shippedTime
-     */
-    public function setShippedTime(DateTime $shippedTime)
-    {
-    }
-    /**
-     * @return DateTime
-     */
-    public function getShippedTime()
-    {
-    }
-    /**
-     * The status of the shipment.
-     *
-     * Accepted values: SHIPPING_STATE_UNSPECIFIED, SHIPPED, DELIVERED
-     *
-     * @param self::SHIPPING_STATUS_* $shippingStatus
-     */
-    public function setShippingStatus($shippingStatus)
-    {
-    }
-    /**
-     * @return self::SHIPPING_STATUS_*
-     */
-    public function getShippingStatus()
-    {
-    }
-    /**
-     * The tracking ID of the shipment. This field is required if one of the
-     * following fields is absent: earliest_delivery_promise_time,
-     * latest_delivery_promise_time, and actual_delivery_time.
-     *
-     * @param string $trackingId
-     */
-    public function setTrackingId($trackingId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTrackingId()
+    class Google_Service_ShoppingContent_OrderTrackingSignalShippingInfo extends \Google\Service\ShoppingContent\OrderTrackingSignalShippingInfo
     {
     }
 }

@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3CreateDocumentOperationMetadata extends \Google\Model
-{
-    protected $genericMetadataType = GoogleCloudDialogflowCxV3GenericKnowledgeOperationMetadata::class;
-    protected $genericMetadataDataType = '';
-    /**
-     * @param GoogleCloudDialogflowCxV3GenericKnowledgeOperationMetadata
-     */
-    public function setGenericMetadata(GoogleCloudDialogflowCxV3GenericKnowledgeOperationMetadata $genericMetadata)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3CreateDocumentOperationMetadata extends \Google\Model
     {
+        protected $genericMetadataType = GoogleCloudDialogflowCxV3GenericKnowledgeOperationMetadata::class;
+        protected $genericMetadataDataType = '';
+        /**
+         * @param GoogleCloudDialogflowCxV3GenericKnowledgeOperationMetadata
+         */
+        public function setGenericMetadata(GoogleCloudDialogflowCxV3GenericKnowledgeOperationMetadata $genericMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3GenericKnowledgeOperationMetadata
+         */
+        public function getGenericMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowCxV3GenericKnowledgeOperationMetadata
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3CreateDocumentOperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGenericMetadata()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3CreateDocumentOperationMetadata extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3CreateDocumentOperationMetadata
     {
     }
 }

@@ -21,61 +21,70 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudVideoIntelligence;
-
-class GoogleCloudVideointelligenceV1beta2FaceAnnotation extends \Google\Collection
-{
-    protected $collection_key = 'segments';
-    protected $framesType = GoogleCloudVideointelligenceV1beta2FaceFrame::class;
-    protected $framesDataType = 'array';
-    protected $segmentsType = GoogleCloudVideointelligenceV1beta2FaceSegment::class;
-    protected $segmentsDataType = 'array';
-    /**
-     * Thumbnail of a representative face view (in JPEG format).
-     *
-     * @var string
-     */
-    public $thumbnail;
-    /**
-     * All video frames where a face was detected.
-     *
-     * @param GoogleCloudVideointelligenceV1beta2FaceFrame[] $frames
-     */
-    public function setFrames($frames)
+namespace Google\Service\CloudVideoIntelligence {
+    class GoogleCloudVideointelligenceV1beta2FaceAnnotation extends \Google\Collection
     {
+        protected $collection_key = 'segments';
+        protected $framesType = GoogleCloudVideointelligenceV1beta2FaceFrame::class;
+        protected $framesDataType = 'array';
+        protected $segmentsType = GoogleCloudVideointelligenceV1beta2FaceSegment::class;
+        protected $segmentsDataType = 'array';
+        /**
+         * Thumbnail of a representative face view (in JPEG format).
+         *
+         * @var string
+         */
+        public $thumbnail;
+        /**
+         * All video frames where a face was detected.
+         *
+         * @param GoogleCloudVideointelligenceV1beta2FaceFrame[] $frames
+         */
+        public function setFrames($frames)
+        {
+        }
+        /**
+         * @return GoogleCloudVideointelligenceV1beta2FaceFrame[]
+         */
+        public function getFrames()
+        {
+        }
+        /**
+         * All video segments where a face was detected.
+         *
+         * @param GoogleCloudVideointelligenceV1beta2FaceSegment[] $segments
+         */
+        public function setSegments($segments)
+        {
+        }
+        /**
+         * @return GoogleCloudVideointelligenceV1beta2FaceSegment[]
+         */
+        public function getSegments()
+        {
+        }
+        /**
+         * Thumbnail of a representative face view (in JPEG format).
+         *
+         * @param string $thumbnail
+         */
+        public function setThumbnail($thumbnail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getThumbnail()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudVideointelligenceV1beta2FaceFrame[]
+     * Runtime class alias of \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1beta2FaceAnnotation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFrames()
-    {
-    }
-    /**
-     * All video segments where a face was detected.
-     *
-     * @param GoogleCloudVideointelligenceV1beta2FaceSegment[] $segments
-     */
-    public function setSegments($segments)
-    {
-    }
-    /**
-     * @return GoogleCloudVideointelligenceV1beta2FaceSegment[]
-     */
-    public function getSegments()
-    {
-    }
-    /**
-     * Thumbnail of a representative face view (in JPEG format).
-     *
-     * @param string $thumbnail
-     */
-    public function setThumbnail($thumbnail)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getThumbnail()
+    class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1beta2FaceAnnotation extends \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1beta2FaceAnnotation
     {
     }
 }

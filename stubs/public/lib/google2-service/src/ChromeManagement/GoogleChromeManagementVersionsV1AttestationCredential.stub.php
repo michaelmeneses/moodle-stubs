@@ -21,117 +21,126 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementVersionsV1AttestationCredential extends \Google\Model
-{
-    /**
-     * Represents an unspecified public key trust level.
-     */
-    public const KEY_TRUST_LEVEL_KEY_TRUST_LEVEL_UNSPECIFIED = 'KEY_TRUST_LEVEL_UNSPECIFIED';
-    /**
-     * Represents a HW key.
-     */
-    public const KEY_TRUST_LEVEL_CHROME_BROWSER_HW_KEY = 'CHROME_BROWSER_HW_KEY';
-    /**
-     * Represents an OS key.
-     */
-    public const KEY_TRUST_LEVEL_CHROME_BROWSER_OS_KEY = 'CHROME_BROWSER_OS_KEY';
-    /**
-     * Represents an unspecified public key type.
-     */
-    public const KEY_TYPE_KEY_TYPE_UNSPECIFIED = 'KEY_TYPE_UNSPECIFIED';
-    /**
-     * Represents a RSA key.
-     */
-    public const KEY_TYPE_RSA_KEY = 'RSA_KEY';
-    /**
-     * Represents an EC key.
-     */
-    public const KEY_TYPE_EC_KEY = 'EC_KEY';
-    /**
-     * Output only. Latest rotation timestamp of the public key rotation.
-     *
-     * @var string
-     */
-    public $keyRotationTime;
-    /**
-     * Output only. Trust level of the public key.
-     *
-     * @var string
-     */
-    public $keyTrustLevel;
-    /**
-     * Output only. Type of the public key.
-     *
-     * @var string
-     */
-    public $keyType;
-    /**
-     * Output only. Value of the public key.
-     *
-     * @var string
-     */
-    public $publicKey;
-    /**
-     * Output only. Latest rotation timestamp of the public key rotation.
-     *
-     * @param string $keyRotationTime
-     */
-    public function setKeyRotationTime($keyRotationTime)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementVersionsV1AttestationCredential extends \Google\Model
     {
+        /**
+         * Represents an unspecified public key trust level.
+         */
+        public const KEY_TRUST_LEVEL_KEY_TRUST_LEVEL_UNSPECIFIED = 'KEY_TRUST_LEVEL_UNSPECIFIED';
+        /**
+         * Represents a HW key.
+         */
+        public const KEY_TRUST_LEVEL_CHROME_BROWSER_HW_KEY = 'CHROME_BROWSER_HW_KEY';
+        /**
+         * Represents an OS key.
+         */
+        public const KEY_TRUST_LEVEL_CHROME_BROWSER_OS_KEY = 'CHROME_BROWSER_OS_KEY';
+        /**
+         * Represents an unspecified public key type.
+         */
+        public const KEY_TYPE_KEY_TYPE_UNSPECIFIED = 'KEY_TYPE_UNSPECIFIED';
+        /**
+         * Represents a RSA key.
+         */
+        public const KEY_TYPE_RSA_KEY = 'RSA_KEY';
+        /**
+         * Represents an EC key.
+         */
+        public const KEY_TYPE_EC_KEY = 'EC_KEY';
+        /**
+         * Output only. Latest rotation timestamp of the public key rotation.
+         *
+         * @var string
+         */
+        public $keyRotationTime;
+        /**
+         * Output only. Trust level of the public key.
+         *
+         * @var string
+         */
+        public $keyTrustLevel;
+        /**
+         * Output only. Type of the public key.
+         *
+         * @var string
+         */
+        public $keyType;
+        /**
+         * Output only. Value of the public key.
+         *
+         * @var string
+         */
+        public $publicKey;
+        /**
+         * Output only. Latest rotation timestamp of the public key rotation.
+         *
+         * @param string $keyRotationTime
+         */
+        public function setKeyRotationTime($keyRotationTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKeyRotationTime()
+        {
+        }
+        /**
+         * Output only. Trust level of the public key.
+         *
+         * Accepted values: KEY_TRUST_LEVEL_UNSPECIFIED, CHROME_BROWSER_HW_KEY,
+         * CHROME_BROWSER_OS_KEY
+         *
+         * @param self::KEY_TRUST_LEVEL_* $keyTrustLevel
+         */
+        public function setKeyTrustLevel($keyTrustLevel)
+        {
+        }
+        /**
+         * @return self::KEY_TRUST_LEVEL_*
+         */
+        public function getKeyTrustLevel()
+        {
+        }
+        /**
+         * Output only. Type of the public key.
+         *
+         * Accepted values: KEY_TYPE_UNSPECIFIED, RSA_KEY, EC_KEY
+         *
+         * @param self::KEY_TYPE_* $keyType
+         */
+        public function setKeyType($keyType)
+        {
+        }
+        /**
+         * @return self::KEY_TYPE_*
+         */
+        public function getKeyType()
+        {
+        }
+        /**
+         * Output only. Value of the public key.
+         *
+         * @param string $publicKey
+         */
+        public function setPublicKey($publicKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPublicKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1AttestationCredential registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKeyRotationTime()
-    {
-    }
-    /**
-     * Output only. Trust level of the public key.
-     *
-     * Accepted values: KEY_TRUST_LEVEL_UNSPECIFIED, CHROME_BROWSER_HW_KEY,
-     * CHROME_BROWSER_OS_KEY
-     *
-     * @param self::KEY_TRUST_LEVEL_* $keyTrustLevel
-     */
-    public function setKeyTrustLevel($keyTrustLevel)
-    {
-    }
-    /**
-     * @return self::KEY_TRUST_LEVEL_*
-     */
-    public function getKeyTrustLevel()
-    {
-    }
-    /**
-     * Output only. Type of the public key.
-     *
-     * Accepted values: KEY_TYPE_UNSPECIFIED, RSA_KEY, EC_KEY
-     *
-     * @param self::KEY_TYPE_* $keyType
-     */
-    public function setKeyType($keyType)
-    {
-    }
-    /**
-     * @return self::KEY_TYPE_*
-     */
-    public function getKeyType()
-    {
-    }
-    /**
-     * Output only. Value of the public key.
-     *
-     * @param string $publicKey
-     */
-    public function setPublicKey($publicKey)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPublicKey()
+    class Google_Service_ChromeManagement_GoogleChromeManagementVersionsV1AttestationCredential extends \Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1AttestationCredential
     {
     }
 }

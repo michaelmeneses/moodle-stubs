@@ -21,77 +21,86 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AlertCenter;
-
-class PhishingSpike extends \Google\Collection
-{
-    protected $collection_key = 'messages';
-    protected $domainIdType = DomainId::class;
-    protected $domainIdDataType = '';
-    /**
-     * If `true`, the email originated from within the organization.
-     *
-     * @var bool
-     */
-    public $isInternal;
-    protected $maliciousEntityType = MaliciousEntity::class;
-    protected $maliciousEntityDataType = '';
-    protected $messagesType = GmailMessageInfo::class;
-    protected $messagesDataType = 'array';
-    /**
-     * The domain ID.
-     *
-     * @param DomainId $domainId
-     */
-    public function setDomainId(DomainId $domainId)
+namespace Google\Service\AlertCenter {
+    class PhishingSpike extends \Google\Collection
     {
+        protected $collection_key = 'messages';
+        protected $domainIdType = DomainId::class;
+        protected $domainIdDataType = '';
+        /**
+         * If `true`, the email originated from within the organization.
+         *
+         * @var bool
+         */
+        public $isInternal;
+        protected $maliciousEntityType = MaliciousEntity::class;
+        protected $maliciousEntityDataType = '';
+        protected $messagesType = GmailMessageInfo::class;
+        protected $messagesDataType = 'array';
+        /**
+         * The domain ID.
+         *
+         * @param DomainId $domainId
+         */
+        public function setDomainId(DomainId $domainId)
+        {
+        }
+        /**
+         * @return DomainId
+         */
+        public function getDomainId()
+        {
+        }
+        /**
+         * If `true`, the email originated from within the organization.
+         *
+         * @param bool $isInternal
+         */
+        public function setIsInternal($isInternal)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsInternal()
+        {
+        }
+        /**
+         * The entity whose actions triggered a Gmail phishing alert.
+         *
+         * @param MaliciousEntity $maliciousEntity
+         */
+        public function setMaliciousEntity(MaliciousEntity $maliciousEntity)
+        {
+        }
+        /**
+         * @return MaliciousEntity
+         */
+        public function getMaliciousEntity()
+        {
+        }
+        /**
+         * The list of messages contained by this alert.
+         *
+         * @param GmailMessageInfo[] $messages
+         */
+        public function setMessages($messages)
+        {
+        }
+        /**
+         * @return GmailMessageInfo[]
+         */
+        public function getMessages()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DomainId
+     * Runtime class alias of \Google\Service\AlertCenter\PhishingSpike registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDomainId()
-    {
-    }
-    /**
-     * If `true`, the email originated from within the organization.
-     *
-     * @param bool $isInternal
-     */
-    public function setIsInternal($isInternal)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsInternal()
-    {
-    }
-    /**
-     * The entity whose actions triggered a Gmail phishing alert.
-     *
-     * @param MaliciousEntity $maliciousEntity
-     */
-    public function setMaliciousEntity(MaliciousEntity $maliciousEntity)
-    {
-    }
-    /**
-     * @return MaliciousEntity
-     */
-    public function getMaliciousEntity()
-    {
-    }
-    /**
-     * The list of messages contained by this alert.
-     *
-     * @param GmailMessageInfo[] $messages
-     */
-    public function setMessages($messages)
-    {
-    }
-    /**
-     * @return GmailMessageInfo[]
-     */
-    public function getMessages()
+    class Google_Service_AlertCenter_PhishingSpike extends \Google\Service\AlertCenter\PhishingSpike
     {
     }
 }

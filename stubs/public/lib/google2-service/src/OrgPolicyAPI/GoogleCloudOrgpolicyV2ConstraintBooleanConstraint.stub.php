@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OrgPolicyAPI;
-
-class GoogleCloudOrgpolicyV2ConstraintBooleanConstraint extends \Google\Model
-{
-    protected $customConstraintDefinitionType = GoogleCloudOrgpolicyV2ConstraintCustomConstraintDefinition::class;
-    protected $customConstraintDefinitionDataType = '';
-    /**
-     * Custom constraint definition. Defines this as a managed constraint.
-     *
-     * @param GoogleCloudOrgpolicyV2ConstraintCustomConstraintDefinition $customConstraintDefinition
-     */
-    public function setCustomConstraintDefinition(GoogleCloudOrgpolicyV2ConstraintCustomConstraintDefinition $customConstraintDefinition)
+namespace Google\Service\OrgPolicyAPI {
+    class GoogleCloudOrgpolicyV2ConstraintBooleanConstraint extends \Google\Model
     {
+        protected $customConstraintDefinitionType = GoogleCloudOrgpolicyV2ConstraintCustomConstraintDefinition::class;
+        protected $customConstraintDefinitionDataType = '';
+        /**
+         * Custom constraint definition. Defines this as a managed constraint.
+         *
+         * @param GoogleCloudOrgpolicyV2ConstraintCustomConstraintDefinition $customConstraintDefinition
+         */
+        public function setCustomConstraintDefinition(GoogleCloudOrgpolicyV2ConstraintCustomConstraintDefinition $customConstraintDefinition)
+        {
+        }
+        /**
+         * @return GoogleCloudOrgpolicyV2ConstraintCustomConstraintDefinition
+         */
+        public function getCustomConstraintDefinition()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudOrgpolicyV2ConstraintCustomConstraintDefinition
+     * Runtime class alias of \Google\Service\OrgPolicyAPI\GoogleCloudOrgpolicyV2ConstraintBooleanConstraint registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomConstraintDefinition()
+    class Google_Service_OrgPolicyAPI_GoogleCloudOrgpolicyV2ConstraintBooleanConstraint extends \Google\Service\OrgPolicyAPI\GoogleCloudOrgpolicyV2ConstraintBooleanConstraint
     {
     }
 }

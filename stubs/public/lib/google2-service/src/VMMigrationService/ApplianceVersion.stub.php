@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMMigrationService;
-
-class ApplianceVersion extends \Google\Model
-{
-    /**
-     * Determine whether it's critical to upgrade the appliance to this version.
-     *
-     * @var bool
-     */
-    public $critical;
-    /**
-     * Link to a page that contains the version release notes.
-     *
-     * @var string
-     */
-    public $releaseNotesUri;
-    /**
-     * A link for downloading the version.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * The appliance version.
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * Determine whether it's critical to upgrade the appliance to this version.
-     *
-     * @param bool $critical
-     */
-    public function setCritical($critical)
+namespace Google\Service\VMMigrationService {
+    class ApplianceVersion extends \Google\Model
     {
+        /**
+         * Determine whether it's critical to upgrade the appliance to this version.
+         *
+         * @var bool
+         */
+        public $critical;
+        /**
+         * Link to a page that contains the version release notes.
+         *
+         * @var string
+         */
+        public $releaseNotesUri;
+        /**
+         * A link for downloading the version.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * The appliance version.
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * Determine whether it's critical to upgrade the appliance to this version.
+         *
+         * @param bool $critical
+         */
+        public function setCritical($critical)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCritical()
+        {
+        }
+        /**
+         * Link to a page that contains the version release notes.
+         *
+         * @param string $releaseNotesUri
+         */
+        public function setReleaseNotesUri($releaseNotesUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReleaseNotesUri()
+        {
+        }
+        /**
+         * A link for downloading the version.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
+        /**
+         * The appliance version.
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\VMMigrationService\ApplianceVersion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCritical()
-    {
-    }
-    /**
-     * Link to a page that contains the version release notes.
-     *
-     * @param string $releaseNotesUri
-     */
-    public function setReleaseNotesUri($releaseNotesUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReleaseNotesUri()
-    {
-    }
-    /**
-     * A link for downloading the version.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
-    {
-    }
-    /**
-     * The appliance version.
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_VMMigrationService_ApplianceVersion extends \Google\Service\VMMigrationService\ApplianceVersion
     {
     }
 }

@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsHub;
-
-class DcrExchangeConfig extends \Google\Model
-{
-    /**
-     * Output only. If True, when subscribing to this DCR, it will create only one
-     * linked dataset containing all resources shared within the cleanroom. If
-     * False, when subscribing to this DCR, it will create 1 linked dataset per
-     * listing. This is not configurable, and by default, all new DCRs will have
-     * the restriction set to True.
-     *
-     * @var bool
-     */
-    public $singleLinkedDatasetPerCleanroom;
-    /**
-     * Output only. If True, this DCR restricts the contributors to sharing only a
-     * single resource in a Listing. And no two resources should have the same
-     * IDs. So if a contributor adds a view with a conflicting name, the
-     * CreateListing API will reject the request. if False, the data contributor
-     * can publish an entire dataset (as before). This is not configurable, and by
-     * default, all new DCRs will have the restriction set to True.
-     *
-     * @var bool
-     */
-    public $singleSelectedResourceSharingRestriction;
-    /**
-     * Output only. If True, when subscribing to this DCR, it will create only one
-     * linked dataset containing all resources shared within the cleanroom. If
-     * False, when subscribing to this DCR, it will create 1 linked dataset per
-     * listing. This is not configurable, and by default, all new DCRs will have
-     * the restriction set to True.
-     *
-     * @param bool $singleLinkedDatasetPerCleanroom
-     */
-    public function setSingleLinkedDatasetPerCleanroom($singleLinkedDatasetPerCleanroom)
+namespace Google\Service\AnalyticsHub {
+    class DcrExchangeConfig extends \Google\Model
     {
+        /**
+         * Output only. If True, when subscribing to this DCR, it will create only one
+         * linked dataset containing all resources shared within the cleanroom. If
+         * False, when subscribing to this DCR, it will create 1 linked dataset per
+         * listing. This is not configurable, and by default, all new DCRs will have
+         * the restriction set to True.
+         *
+         * @var bool
+         */
+        public $singleLinkedDatasetPerCleanroom;
+        /**
+         * Output only. If True, this DCR restricts the contributors to sharing only a
+         * single resource in a Listing. And no two resources should have the same
+         * IDs. So if a contributor adds a view with a conflicting name, the
+         * CreateListing API will reject the request. if False, the data contributor
+         * can publish an entire dataset (as before). This is not configurable, and by
+         * default, all new DCRs will have the restriction set to True.
+         *
+         * @var bool
+         */
+        public $singleSelectedResourceSharingRestriction;
+        /**
+         * Output only. If True, when subscribing to this DCR, it will create only one
+         * linked dataset containing all resources shared within the cleanroom. If
+         * False, when subscribing to this DCR, it will create 1 linked dataset per
+         * listing. This is not configurable, and by default, all new DCRs will have
+         * the restriction set to True.
+         *
+         * @param bool $singleLinkedDatasetPerCleanroom
+         */
+        public function setSingleLinkedDatasetPerCleanroom($singleLinkedDatasetPerCleanroom)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSingleLinkedDatasetPerCleanroom()
+        {
+        }
+        /**
+         * Output only. If True, this DCR restricts the contributors to sharing only a
+         * single resource in a Listing. And no two resources should have the same
+         * IDs. So if a contributor adds a view with a conflicting name, the
+         * CreateListing API will reject the request. if False, the data contributor
+         * can publish an entire dataset (as before). This is not configurable, and by
+         * default, all new DCRs will have the restriction set to True.
+         *
+         * @param bool $singleSelectedResourceSharingRestriction
+         */
+        public function setSingleSelectedResourceSharingRestriction($singleSelectedResourceSharingRestriction)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSingleSelectedResourceSharingRestriction()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\AnalyticsHub\DcrExchangeConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSingleLinkedDatasetPerCleanroom()
-    {
-    }
-    /**
-     * Output only. If True, this DCR restricts the contributors to sharing only a
-     * single resource in a Listing. And no two resources should have the same
-     * IDs. So if a contributor adds a view with a conflicting name, the
-     * CreateListing API will reject the request. if False, the data contributor
-     * can publish an entire dataset (as before). This is not configurable, and by
-     * default, all new DCRs will have the restriction set to True.
-     *
-     * @param bool $singleSelectedResourceSharingRestriction
-     */
-    public function setSingleSelectedResourceSharingRestriction($singleSelectedResourceSharingRestriction)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSingleSelectedResourceSharingRestriction()
+    class Google_Service_AnalyticsHub_DcrExchangeConfig extends \Google\Service\AnalyticsHub\DcrExchangeConfig
     {
     }
 }

@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class ConfigManagementManaged extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $enabled;
-    /**
-     * @var bool
-     */
-    public $stopSyncing;
-    /**
-     * @param bool
-     */
-    public function setEnabled($enabled)
+namespace Google\Service\GKEHub {
+    class ConfigManagementManaged extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $enabled;
+        /**
+         * @var bool
+         */
+        public $stopSyncing;
+        /**
+         * @param bool
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setStopSyncing($stopSyncing)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getStopSyncing()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\GKEHub\ConfigManagementManaged registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnabled()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setStopSyncing($stopSyncing)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getStopSyncing()
+    class Google_Service_GKEHub_ConfigManagementManaged extends \Google\Service\GKEHub\ConfigManagementManaged
     {
     }
 }

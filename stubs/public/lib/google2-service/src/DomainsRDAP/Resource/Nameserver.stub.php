@@ -21,28 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DomainsRDAP\Resource;
-
-/**
- * The "nameserver" collection of methods.
- * Typical usage is:
- *  <code>
- *   $domainsrdapService = new Google\Service\DomainsRDAP(...);
- *   $nameserver = $domainsrdapService->nameserver;
- *  </code>
- */
-class Nameserver extends \Google\Service\Resource
-{
+namespace Google\Service\DomainsRDAP\Resource {
+    use Google\Service\DomainsRDAP\RdapResponse;
     /**
-     * The RDAP API recognizes this command from the RDAP specification but does not
-     * support it. The response is a formatted 501 error. (nameserver.get)
-     *
-     * @param string $nameserverId
-     * @param array $optParams Optional parameters.
-     * @return RdapResponse
-     * @throws \Google\Service\Exception
+     * The "nameserver" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $domainsrdapService = new Google\Service\DomainsRDAP(...);
+     *   $nameserver = $domainsrdapService->nameserver;
+     *  </code>
      */
-    public function get($nameserverId, $optParams = [])
+    class Nameserver extends \Google\Service\Resource
+    {
+        /**
+         * The RDAP API recognizes this command from the RDAP specification but does not
+         * support it. The response is a formatted 501 error. (nameserver.get)
+         *
+         * @param string $nameserverId
+         * @param array $optParams Optional parameters.
+         * @return RdapResponse
+         * @throws \Google\Service\Exception
+         */
+        public function get($nameserverId, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\DomainsRDAP\Resource\Nameserver registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_DomainsRDAP_Resource_Nameserver extends \Google\Service\DomainsRDAP\Resource\Nameserver
     {
     }
 }

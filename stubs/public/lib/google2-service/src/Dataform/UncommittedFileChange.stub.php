@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataform;
-
-class UncommittedFileChange extends \Google\Model
-{
-    /**
-     * Default value. This value is unused.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * The file has been newly added.
-     */
-    public const STATE_ADDED = 'ADDED';
-    /**
-     * The file has been deleted.
-     */
-    public const STATE_DELETED = 'DELETED';
-    /**
-     * The file has been modified.
-     */
-    public const STATE_MODIFIED = 'MODIFIED';
-    /**
-     * The file contains merge conflicts.
-     */
-    public const STATE_HAS_CONFLICTS = 'HAS_CONFLICTS';
-    /**
-     * The file's full path including filename, relative to the workspace root.
-     *
-     * @var string
-     */
-    public $path;
-    /**
-     * Output only. Indicates the status of the file.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * The file's full path including filename, relative to the workspace root.
-     *
-     * @param string $path
-     */
-    public function setPath($path)
+namespace Google\Service\Dataform {
+    class UncommittedFileChange extends \Google\Model
     {
+        /**
+         * Default value. This value is unused.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * The file has been newly added.
+         */
+        public const STATE_ADDED = 'ADDED';
+        /**
+         * The file has been deleted.
+         */
+        public const STATE_DELETED = 'DELETED';
+        /**
+         * The file has been modified.
+         */
+        public const STATE_MODIFIED = 'MODIFIED';
+        /**
+         * The file contains merge conflicts.
+         */
+        public const STATE_HAS_CONFLICTS = 'HAS_CONFLICTS';
+        /**
+         * The file's full path including filename, relative to the workspace root.
+         *
+         * @var string
+         */
+        public $path;
+        /**
+         * Output only. Indicates the status of the file.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * The file's full path including filename, relative to the workspace root.
+         *
+         * @param string $path
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
+        /**
+         * Output only. Indicates the status of the file.
+         *
+         * Accepted values: STATE_UNSPECIFIED, ADDED, DELETED, MODIFIED, HAS_CONFLICTS
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataform\UncommittedFileChange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPath()
-    {
-    }
-    /**
-     * Output only. Indicates the status of the file.
-     *
-     * Accepted values: STATE_UNSPECIFIED, ADDED, DELETED, MODIFIED, HAS_CONFLICTS
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
+    class Google_Service_Dataform_UncommittedFileChange extends \Google\Service\Dataform\UncommittedFileChange
     {
     }
 }

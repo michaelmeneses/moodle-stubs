@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChecksService;
-
-class GoogleChecksReportV1alphaCheckDataSecurityEvidence extends \Google\Collection
-{
-    protected $collection_key = 'dataInTransitInfo';
-    protected $dataInTransitInfoType = GoogleChecksReportV1alphaCheckDataSecurityEvidenceDataInTransitInfo::class;
-    protected $dataInTransitInfoDataType = 'array';
-    /**
-     * Evidence related to data in transit.
-     *
-     * @param GoogleChecksReportV1alphaCheckDataSecurityEvidenceDataInTransitInfo[] $dataInTransitInfo
-     */
-    public function setDataInTransitInfo($dataInTransitInfo)
+namespace Google\Service\ChecksService {
+    class GoogleChecksReportV1alphaCheckDataSecurityEvidence extends \Google\Collection
     {
+        protected $collection_key = 'dataInTransitInfo';
+        protected $dataInTransitInfoType = GoogleChecksReportV1alphaCheckDataSecurityEvidenceDataInTransitInfo::class;
+        protected $dataInTransitInfoDataType = 'array';
+        /**
+         * Evidence related to data in transit.
+         *
+         * @param GoogleChecksReportV1alphaCheckDataSecurityEvidenceDataInTransitInfo[] $dataInTransitInfo
+         */
+        public function setDataInTransitInfo($dataInTransitInfo)
+        {
+        }
+        /**
+         * @return GoogleChecksReportV1alphaCheckDataSecurityEvidenceDataInTransitInfo[]
+         */
+        public function getDataInTransitInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleChecksReportV1alphaCheckDataSecurityEvidenceDataInTransitInfo[]
+     * Runtime class alias of \Google\Service\ChecksService\GoogleChecksReportV1alphaCheckDataSecurityEvidence registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataInTransitInfo()
+    class Google_Service_ChecksService_GoogleChecksReportV1alphaCheckDataSecurityEvidence extends \Google\Service\ChecksService\GoogleChecksReportV1alphaCheckDataSecurityEvidence
     {
     }
 }

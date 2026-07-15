@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class Group extends \Google\Model
-{
-    /**
-     * Resource name for a Google Group. Represents a
-     * [group](https://cloud.google.com/identity/docs/reference/rest/v1/groups) in
-     * Cloud Identity Groups API. Format: groups/{group}
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Resource name for a Google Group. Represents a
-     * [group](https://cloud.google.com/identity/docs/reference/rest/v1/groups) in
-     * Cloud Identity Groups API. Format: groups/{group}
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\HangoutsChat {
+    class Group extends \Google\Model
     {
+        /**
+         * Resource name for a Google Group. Represents a
+         * [group](https://cloud.google.com/identity/docs/reference/rest/v1/groups) in
+         * Cloud Identity Groups API. Format: groups/{group}
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Resource name for a Google Group. Represents a
+         * [group](https://cloud.google.com/identity/docs/reference/rest/v1/groups) in
+         * Cloud Identity Groups API. Format: groups/{group}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\HangoutsChat\Group registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
+    class Google_Service_HangoutsChat_Group extends \Google\Service\HangoutsChat\Group
     {
     }
 }

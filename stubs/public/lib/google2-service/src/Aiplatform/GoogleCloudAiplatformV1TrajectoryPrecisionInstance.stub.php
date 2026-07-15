@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1TrajectoryPrecisionInstance extends \Google\Model
-{
-    protected $predictedTrajectoryType = GoogleCloudAiplatformV1Trajectory::class;
-    protected $predictedTrajectoryDataType = '';
-    protected $referenceTrajectoryType = GoogleCloudAiplatformV1Trajectory::class;
-    protected $referenceTrajectoryDataType = '';
-    /**
-     * Required. Spec for predicted tool call trajectory.
-     *
-     * @param GoogleCloudAiplatformV1Trajectory $predictedTrajectory
-     */
-    public function setPredictedTrajectory(GoogleCloudAiplatformV1Trajectory $predictedTrajectory)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1TrajectoryPrecisionInstance extends \Google\Model
     {
+        protected $predictedTrajectoryType = GoogleCloudAiplatformV1Trajectory::class;
+        protected $predictedTrajectoryDataType = '';
+        protected $referenceTrajectoryType = GoogleCloudAiplatformV1Trajectory::class;
+        protected $referenceTrajectoryDataType = '';
+        /**
+         * Required. Spec for predicted tool call trajectory.
+         *
+         * @param GoogleCloudAiplatformV1Trajectory $predictedTrajectory
+         */
+        public function setPredictedTrajectory(GoogleCloudAiplatformV1Trajectory $predictedTrajectory)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1Trajectory
+         */
+        public function getPredictedTrajectory()
+        {
+        }
+        /**
+         * Required. Spec for reference tool call trajectory.
+         *
+         * @param GoogleCloudAiplatformV1Trajectory $referenceTrajectory
+         */
+        public function setReferenceTrajectory(GoogleCloudAiplatformV1Trajectory $referenceTrajectory)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1Trajectory
+         */
+        public function getReferenceTrajectory()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1Trajectory
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1TrajectoryPrecisionInstance registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPredictedTrajectory()
-    {
-    }
-    /**
-     * Required. Spec for reference tool call trajectory.
-     *
-     * @param GoogleCloudAiplatformV1Trajectory $referenceTrajectory
-     */
-    public function setReferenceTrajectory(GoogleCloudAiplatformV1Trajectory $referenceTrajectory)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1Trajectory
-     */
-    public function getReferenceTrajectory()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1TrajectoryPrecisionInstance extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1TrajectoryPrecisionInstance
     {
     }
 }

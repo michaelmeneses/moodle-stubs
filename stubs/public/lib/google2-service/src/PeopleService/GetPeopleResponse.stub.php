@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PeopleService;
-
-class GetPeopleResponse extends \Google\Collection
-{
-    protected $collection_key = 'responses';
-    protected $responsesType = PersonResponse::class;
-    protected $responsesDataType = 'array';
-    /**
-     * The response for each requested resource name.
-     *
-     * @param PersonResponse[] $responses
-     */
-    public function setResponses($responses)
+namespace Google\Service\PeopleService {
+    class GetPeopleResponse extends \Google\Collection
     {
+        protected $collection_key = 'responses';
+        protected $responsesType = PersonResponse::class;
+        protected $responsesDataType = 'array';
+        /**
+         * The response for each requested resource name.
+         *
+         * @param PersonResponse[] $responses
+         */
+        public function setResponses($responses)
+        {
+        }
+        /**
+         * @return PersonResponse[]
+         */
+        public function getResponses()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PersonResponse[]
+     * Runtime class alias of \Google\Service\PeopleService\GetPeopleResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResponses()
+    class Google_Service_PeopleService_GetPeopleResponse extends \Google\Service\PeopleService\GetPeopleResponse
     {
     }
 }

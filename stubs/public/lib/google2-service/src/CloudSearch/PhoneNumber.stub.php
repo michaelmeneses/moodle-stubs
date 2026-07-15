@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class PhoneNumber extends \Google\Model
-{
-    public const TYPE_OTHER = 'OTHER';
-    public const TYPE_MOBILE = 'MOBILE';
-    public const TYPE_OFFICE = 'OFFICE';
-    /**
-     * The phone number of the person.
-     *
-     * @var string
-     */
-    public $phoneNumber;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * The phone number of the person.
-     *
-     * @param string $phoneNumber
-     */
-    public function setPhoneNumber($phoneNumber)
+namespace Google\Service\CloudSearch {
+    class PhoneNumber extends \Google\Model
     {
+        public const TYPE_OTHER = 'OTHER';
+        public const TYPE_MOBILE = 'MOBILE';
+        public const TYPE_OFFICE = 'OFFICE';
+        /**
+         * The phone number of the person.
+         *
+         * @var string
+         */
+        public $phoneNumber;
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * The phone number of the person.
+         *
+         * @param string $phoneNumber
+         */
+        public function setPhoneNumber($phoneNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPhoneNumber()
+        {
+        }
+        /**
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\PhoneNumber registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPhoneNumber()
-    {
-    }
-    /**
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_CloudSearch_PhoneNumber extends \Google\Service\CloudSearch\PhoneNumber
     {
     }
 }

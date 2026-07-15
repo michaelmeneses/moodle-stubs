@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1beta1BatchProcessDocumentsResponse extends \Google\Collection
-{
-    protected $collection_key = 'responses';
-    protected $responsesType = GoogleCloudDocumentaiV1beta1ProcessDocumentResponse::class;
-    protected $responsesDataType = 'array';
-    /**
-     * @param GoogleCloudDocumentaiV1beta1ProcessDocumentResponse[]
-     */
-    public function setResponses($responses)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1beta1BatchProcessDocumentsResponse extends \Google\Collection
     {
+        protected $collection_key = 'responses';
+        protected $responsesType = GoogleCloudDocumentaiV1beta1ProcessDocumentResponse::class;
+        protected $responsesDataType = 'array';
+        /**
+         * @param GoogleCloudDocumentaiV1beta1ProcessDocumentResponse[]
+         */
+        public function setResponses($responses)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta1ProcessDocumentResponse[]
+         */
+        public function getResponses()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiV1beta1ProcessDocumentResponse[]
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1beta1BatchProcessDocumentsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResponses()
+    class Google_Service_Document_GoogleCloudDocumentaiV1beta1BatchProcessDocumentsResponse extends \Google\Service\Document\GoogleCloudDocumentaiV1beta1BatchProcessDocumentsResponse
     {
     }
 }

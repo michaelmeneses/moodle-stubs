@@ -16,6 +16,7 @@
  */
 namespace Monolog\Formatter;
 
+use Monolog\LogRecord;
 /**
  * Encodes message information into JSON in a format compatible with Loggly.
  *

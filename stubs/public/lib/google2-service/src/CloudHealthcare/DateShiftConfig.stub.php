@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class DateShiftConfig extends \Google\Model
-{
-    /**
-     * An AES 128/192/256 bit key. The date shift is computed based on this key
-     * and the patient ID. If the patient ID is empty for a DICOM resource, the
-     * date shift is computed based on this key and the study instance UID. If
-     * `crypto_key` is not set, then `kms_wrapped` is used to calculate the date
-     * shift. If neither is set, a default key is generated for each de-identify
-     * operation. Must not be set if `kms_wrapped` is set.
-     *
-     * @var string
-     */
-    public $cryptoKey;
-    protected $kmsWrappedType = KmsWrappedCryptoKey::class;
-    protected $kmsWrappedDataType = '';
-    /**
-     * An AES 128/192/256 bit key. The date shift is computed based on this key
-     * and the patient ID. If the patient ID is empty for a DICOM resource, the
-     * date shift is computed based on this key and the study instance UID. If
-     * `crypto_key` is not set, then `kms_wrapped` is used to calculate the date
-     * shift. If neither is set, a default key is generated for each de-identify
-     * operation. Must not be set if `kms_wrapped` is set.
-     *
-     * @param string $cryptoKey
-     */
-    public function setCryptoKey($cryptoKey)
+namespace Google\Service\CloudHealthcare {
+    class DateShiftConfig extends \Google\Model
     {
+        /**
+         * An AES 128/192/256 bit key. The date shift is computed based on this key
+         * and the patient ID. If the patient ID is empty for a DICOM resource, the
+         * date shift is computed based on this key and the study instance UID. If
+         * `crypto_key` is not set, then `kms_wrapped` is used to calculate the date
+         * shift. If neither is set, a default key is generated for each de-identify
+         * operation. Must not be set if `kms_wrapped` is set.
+         *
+         * @var string
+         */
+        public $cryptoKey;
+        protected $kmsWrappedType = KmsWrappedCryptoKey::class;
+        protected $kmsWrappedDataType = '';
+        /**
+         * An AES 128/192/256 bit key. The date shift is computed based on this key
+         * and the patient ID. If the patient ID is empty for a DICOM resource, the
+         * date shift is computed based on this key and the study instance UID. If
+         * `crypto_key` is not set, then `kms_wrapped` is used to calculate the date
+         * shift. If neither is set, a default key is generated for each de-identify
+         * operation. Must not be set if `kms_wrapped` is set.
+         *
+         * @param string $cryptoKey
+         */
+        public function setCryptoKey($cryptoKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCryptoKey()
+        {
+        }
+        /**
+         * KMS wrapped key. If `kms_wrapped` is not set, then `crypto_key` is used to
+         * calculate the date shift. If neither is set, a default key is generated for
+         * each de-identify operation. Must not be set if `crypto_key` is set.
+         *
+         * @param KmsWrappedCryptoKey $kmsWrapped
+         */
+        public function setKmsWrapped(KmsWrappedCryptoKey $kmsWrapped)
+        {
+        }
+        /**
+         * @return KmsWrappedCryptoKey
+         */
+        public function getKmsWrapped()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudHealthcare\DateShiftConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCryptoKey()
-    {
-    }
-    /**
-     * KMS wrapped key. If `kms_wrapped` is not set, then `crypto_key` is used to
-     * calculate the date shift. If neither is set, a default key is generated for
-     * each de-identify operation. Must not be set if `crypto_key` is set.
-     *
-     * @param KmsWrappedCryptoKey $kmsWrapped
-     */
-    public function setKmsWrapped(KmsWrappedCryptoKey $kmsWrapped)
-    {
-    }
-    /**
-     * @return KmsWrappedCryptoKey
-     */
-    public function getKmsWrapped()
+    class Google_Service_CloudHealthcare_DateShiftConfig extends \Google\Service\CloudHealthcare\DateShiftConfig
     {
     }
 }

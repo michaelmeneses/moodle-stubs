@@ -21,97 +21,106 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAlloyDBAdmin;
-
-class SslConfig extends \Google\Model
-{
-    /**
-     * Certificate Authority (CA) source not specified. Defaults to
-     * CA_SOURCE_MANAGED.
-     */
-    public const CA_SOURCE_CA_SOURCE_UNSPECIFIED = 'CA_SOURCE_UNSPECIFIED';
-    /**
-     * Certificate Authority (CA) managed by the AlloyDB Cluster.
-     */
-    public const CA_SOURCE_CA_SOURCE_MANAGED = 'CA_SOURCE_MANAGED';
-    /**
-     * SSL mode is not specified. Defaults to ENCRYPTED_ONLY.
-     */
-    public const SSL_MODE_SSL_MODE_UNSPECIFIED = 'SSL_MODE_UNSPECIFIED';
-    /**
-     * SSL connections are optional. CA verification not enforced.
-     *
-     * @deprecated
-     */
-    public const SSL_MODE_SSL_MODE_ALLOW = 'SSL_MODE_ALLOW';
-    /**
-     * SSL connections are required. CA verification not enforced. Clients may use
-     * locally self-signed certificates (default psql client behavior).
-     *
-     * @deprecated
-     */
-    public const SSL_MODE_SSL_MODE_REQUIRE = 'SSL_MODE_REQUIRE';
-    /**
-     * SSL connections are required. CA verification enforced. Clients must have
-     * certificates signed by a Cluster CA, for example, using
-     * GenerateClientCertificate.
-     *
-     * @deprecated
-     */
-    public const SSL_MODE_SSL_MODE_VERIFY_CA = 'SSL_MODE_VERIFY_CA';
-    /**
-     * SSL connections are optional. CA verification not enforced.
-     */
-    public const SSL_MODE_ALLOW_UNENCRYPTED_AND_ENCRYPTED = 'ALLOW_UNENCRYPTED_AND_ENCRYPTED';
-    /**
-     * SSL connections are required. CA verification not enforced.
-     */
-    public const SSL_MODE_ENCRYPTED_ONLY = 'ENCRYPTED_ONLY';
-    /**
-     * Optional. Certificate Authority (CA) source. Only CA_SOURCE_MANAGED is
-     * supported currently, and is the default value.
-     *
-     * @var string
-     */
-    public $caSource;
-    /**
-     * Optional. SSL mode. Specifies client-server SSL/TLS connection behavior.
-     *
-     * @var string
-     */
-    public $sslMode;
-    /**
-     * Optional. Certificate Authority (CA) source. Only CA_SOURCE_MANAGED is
-     * supported currently, and is the default value.
-     *
-     * Accepted values: CA_SOURCE_UNSPECIFIED, CA_SOURCE_MANAGED
-     *
-     * @param self::CA_SOURCE_* $caSource
-     */
-    public function setCaSource($caSource)
+namespace Google\Service\CloudAlloyDBAdmin {
+    class SslConfig extends \Google\Model
     {
+        /**
+         * Certificate Authority (CA) source not specified. Defaults to
+         * CA_SOURCE_MANAGED.
+         */
+        public const CA_SOURCE_CA_SOURCE_UNSPECIFIED = 'CA_SOURCE_UNSPECIFIED';
+        /**
+         * Certificate Authority (CA) managed by the AlloyDB Cluster.
+         */
+        public const CA_SOURCE_CA_SOURCE_MANAGED = 'CA_SOURCE_MANAGED';
+        /**
+         * SSL mode is not specified. Defaults to ENCRYPTED_ONLY.
+         */
+        public const SSL_MODE_SSL_MODE_UNSPECIFIED = 'SSL_MODE_UNSPECIFIED';
+        /**
+         * SSL connections are optional. CA verification not enforced.
+         *
+         * @deprecated
+         */
+        public const SSL_MODE_SSL_MODE_ALLOW = 'SSL_MODE_ALLOW';
+        /**
+         * SSL connections are required. CA verification not enforced. Clients may use
+         * locally self-signed certificates (default psql client behavior).
+         *
+         * @deprecated
+         */
+        public const SSL_MODE_SSL_MODE_REQUIRE = 'SSL_MODE_REQUIRE';
+        /**
+         * SSL connections are required. CA verification enforced. Clients must have
+         * certificates signed by a Cluster CA, for example, using
+         * GenerateClientCertificate.
+         *
+         * @deprecated
+         */
+        public const SSL_MODE_SSL_MODE_VERIFY_CA = 'SSL_MODE_VERIFY_CA';
+        /**
+         * SSL connections are optional. CA verification not enforced.
+         */
+        public const SSL_MODE_ALLOW_UNENCRYPTED_AND_ENCRYPTED = 'ALLOW_UNENCRYPTED_AND_ENCRYPTED';
+        /**
+         * SSL connections are required. CA verification not enforced.
+         */
+        public const SSL_MODE_ENCRYPTED_ONLY = 'ENCRYPTED_ONLY';
+        /**
+         * Optional. Certificate Authority (CA) source. Only CA_SOURCE_MANAGED is
+         * supported currently, and is the default value.
+         *
+         * @var string
+         */
+        public $caSource;
+        /**
+         * Optional. SSL mode. Specifies client-server SSL/TLS connection behavior.
+         *
+         * @var string
+         */
+        public $sslMode;
+        /**
+         * Optional. Certificate Authority (CA) source. Only CA_SOURCE_MANAGED is
+         * supported currently, and is the default value.
+         *
+         * Accepted values: CA_SOURCE_UNSPECIFIED, CA_SOURCE_MANAGED
+         *
+         * @param self::CA_SOURCE_* $caSource
+         */
+        public function setCaSource($caSource)
+        {
+        }
+        /**
+         * @return self::CA_SOURCE_*
+         */
+        public function getCaSource()
+        {
+        }
+        /**
+         * Optional. SSL mode. Specifies client-server SSL/TLS connection behavior.
+         *
+         * Accepted values: SSL_MODE_UNSPECIFIED, SSL_MODE_ALLOW, SSL_MODE_REQUIRE,
+         * SSL_MODE_VERIFY_CA, ALLOW_UNENCRYPTED_AND_ENCRYPTED, ENCRYPTED_ONLY
+         *
+         * @param self::SSL_MODE_* $sslMode
+         */
+        public function setSslMode($sslMode)
+        {
+        }
+        /**
+         * @return self::SSL_MODE_*
+         */
+        public function getSslMode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::CA_SOURCE_*
+     * Runtime class alias of \Google\Service\CloudAlloyDBAdmin\SslConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCaSource()
-    {
-    }
-    /**
-     * Optional. SSL mode. Specifies client-server SSL/TLS connection behavior.
-     *
-     * Accepted values: SSL_MODE_UNSPECIFIED, SSL_MODE_ALLOW, SSL_MODE_REQUIRE,
-     * SSL_MODE_VERIFY_CA, ALLOW_UNENCRYPTED_AND_ENCRYPTED, ENCRYPTED_ONLY
-     *
-     * @param self::SSL_MODE_* $sslMode
-     */
-    public function setSslMode($sslMode)
-    {
-    }
-    /**
-     * @return self::SSL_MODE_*
-     */
-    public function getSslMode()
+    class Google_Service_CloudAlloyDBAdmin_SslConfig extends \Google\Service\CloudAlloyDBAdmin\SslConfig
     {
     }
 }

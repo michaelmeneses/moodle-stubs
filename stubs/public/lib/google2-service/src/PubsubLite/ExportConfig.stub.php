@@ -21,149 +21,158 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PubsubLite;
-
-class ExportConfig extends \Google\Model
-{
-    /**
-     * Default value. This value is unused.
-     */
-    public const CURRENT_STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * Messages are being exported.
-     */
-    public const CURRENT_STATE_ACTIVE = 'ACTIVE';
-    /**
-     * Exporting messages is suspended.
-     */
-    public const CURRENT_STATE_PAUSED = 'PAUSED';
-    /**
-     * Messages cannot be exported due to permission denied errors. Output only.
-     */
-    public const CURRENT_STATE_PERMISSION_DENIED = 'PERMISSION_DENIED';
-    /**
-     * Messages cannot be exported due to missing resources. Output only.
-     */
-    public const CURRENT_STATE_NOT_FOUND = 'NOT_FOUND';
-    /**
-     * Default value. This value is unused.
-     */
-    public const DESIRED_STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * Messages are being exported.
-     */
-    public const DESIRED_STATE_ACTIVE = 'ACTIVE';
-    /**
-     * Exporting messages is suspended.
-     */
-    public const DESIRED_STATE_PAUSED = 'PAUSED';
-    /**
-     * Messages cannot be exported due to permission denied errors. Output only.
-     */
-    public const DESIRED_STATE_PERMISSION_DENIED = 'PERMISSION_DENIED';
-    /**
-     * Messages cannot be exported due to missing resources. Output only.
-     */
-    public const DESIRED_STATE_NOT_FOUND = 'NOT_FOUND';
-    /**
-     * Output only. The current state of the export, which may be different to the
-     * desired state due to errors. This field is output only.
-     *
-     * @var string
-     */
-    public $currentState;
-    /**
-     * Optional. The name of an optional Pub/Sub Lite topic to publish messages
-     * that can not be exported to the destination. For example, the message can
-     * not be published to the Pub/Sub service because it does not satisfy the
-     * constraints documented at https://cloud.google.com/pubsub/docs/publisher.
-     * Structured like:
-     * projects/{project_number}/locations/{location}/topics/{topic_id}. Must be
-     * within the same project and location as the subscription. The topic may be
-     * changed or removed.
-     *
-     * @var string
-     */
-    public $deadLetterTopic;
-    /**
-     * The desired state of this export. Setting this to values other than
-     * `ACTIVE` and `PAUSED` will result in an error.
-     *
-     * @var string
-     */
-    public $desiredState;
-    protected $pubsubConfigType = PubSubConfig::class;
-    protected $pubsubConfigDataType = '';
-    /**
-     * Output only. The current state of the export, which may be different to the
-     * desired state due to errors. This field is output only.
-     *
-     * Accepted values: STATE_UNSPECIFIED, ACTIVE, PAUSED, PERMISSION_DENIED,
-     * NOT_FOUND
-     *
-     * @param self::CURRENT_STATE_* $currentState
-     */
-    public function setCurrentState($currentState)
+namespace Google\Service\PubsubLite {
+    class ExportConfig extends \Google\Model
     {
+        /**
+         * Default value. This value is unused.
+         */
+        public const CURRENT_STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * Messages are being exported.
+         */
+        public const CURRENT_STATE_ACTIVE = 'ACTIVE';
+        /**
+         * Exporting messages is suspended.
+         */
+        public const CURRENT_STATE_PAUSED = 'PAUSED';
+        /**
+         * Messages cannot be exported due to permission denied errors. Output only.
+         */
+        public const CURRENT_STATE_PERMISSION_DENIED = 'PERMISSION_DENIED';
+        /**
+         * Messages cannot be exported due to missing resources. Output only.
+         */
+        public const CURRENT_STATE_NOT_FOUND = 'NOT_FOUND';
+        /**
+         * Default value. This value is unused.
+         */
+        public const DESIRED_STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * Messages are being exported.
+         */
+        public const DESIRED_STATE_ACTIVE = 'ACTIVE';
+        /**
+         * Exporting messages is suspended.
+         */
+        public const DESIRED_STATE_PAUSED = 'PAUSED';
+        /**
+         * Messages cannot be exported due to permission denied errors. Output only.
+         */
+        public const DESIRED_STATE_PERMISSION_DENIED = 'PERMISSION_DENIED';
+        /**
+         * Messages cannot be exported due to missing resources. Output only.
+         */
+        public const DESIRED_STATE_NOT_FOUND = 'NOT_FOUND';
+        /**
+         * Output only. The current state of the export, which may be different to the
+         * desired state due to errors. This field is output only.
+         *
+         * @var string
+         */
+        public $currentState;
+        /**
+         * Optional. The name of an optional Pub/Sub Lite topic to publish messages
+         * that can not be exported to the destination. For example, the message can
+         * not be published to the Pub/Sub service because it does not satisfy the
+         * constraints documented at https://cloud.google.com/pubsub/docs/publisher.
+         * Structured like:
+         * projects/{project_number}/locations/{location}/topics/{topic_id}. Must be
+         * within the same project and location as the subscription. The topic may be
+         * changed or removed.
+         *
+         * @var string
+         */
+        public $deadLetterTopic;
+        /**
+         * The desired state of this export. Setting this to values other than
+         * `ACTIVE` and `PAUSED` will result in an error.
+         *
+         * @var string
+         */
+        public $desiredState;
+        protected $pubsubConfigType = PubSubConfig::class;
+        protected $pubsubConfigDataType = '';
+        /**
+         * Output only. The current state of the export, which may be different to the
+         * desired state due to errors. This field is output only.
+         *
+         * Accepted values: STATE_UNSPECIFIED, ACTIVE, PAUSED, PERMISSION_DENIED,
+         * NOT_FOUND
+         *
+         * @param self::CURRENT_STATE_* $currentState
+         */
+        public function setCurrentState($currentState)
+        {
+        }
+        /**
+         * @return self::CURRENT_STATE_*
+         */
+        public function getCurrentState()
+        {
+        }
+        /**
+         * Optional. The name of an optional Pub/Sub Lite topic to publish messages
+         * that can not be exported to the destination. For example, the message can
+         * not be published to the Pub/Sub service because it does not satisfy the
+         * constraints documented at https://cloud.google.com/pubsub/docs/publisher.
+         * Structured like:
+         * projects/{project_number}/locations/{location}/topics/{topic_id}. Must be
+         * within the same project and location as the subscription. The topic may be
+         * changed or removed.
+         *
+         * @param string $deadLetterTopic
+         */
+        public function setDeadLetterTopic($deadLetterTopic)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeadLetterTopic()
+        {
+        }
+        /**
+         * The desired state of this export. Setting this to values other than
+         * `ACTIVE` and `PAUSED` will result in an error.
+         *
+         * Accepted values: STATE_UNSPECIFIED, ACTIVE, PAUSED, PERMISSION_DENIED,
+         * NOT_FOUND
+         *
+         * @param self::DESIRED_STATE_* $desiredState
+         */
+        public function setDesiredState($desiredState)
+        {
+        }
+        /**
+         * @return self::DESIRED_STATE_*
+         */
+        public function getDesiredState()
+        {
+        }
+        /**
+         * Messages are automatically written from the Pub/Sub Lite topic associated
+         * with this subscription to a Pub/Sub topic.
+         *
+         * @param PubSubConfig $pubsubConfig
+         */
+        public function setPubsubConfig(PubSubConfig $pubsubConfig)
+        {
+        }
+        /**
+         * @return PubSubConfig
+         */
+        public function getPubsubConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::CURRENT_STATE_*
+     * Runtime class alias of \Google\Service\PubsubLite\ExportConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCurrentState()
-    {
-    }
-    /**
-     * Optional. The name of an optional Pub/Sub Lite topic to publish messages
-     * that can not be exported to the destination. For example, the message can
-     * not be published to the Pub/Sub service because it does not satisfy the
-     * constraints documented at https://cloud.google.com/pubsub/docs/publisher.
-     * Structured like:
-     * projects/{project_number}/locations/{location}/topics/{topic_id}. Must be
-     * within the same project and location as the subscription. The topic may be
-     * changed or removed.
-     *
-     * @param string $deadLetterTopic
-     */
-    public function setDeadLetterTopic($deadLetterTopic)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeadLetterTopic()
-    {
-    }
-    /**
-     * The desired state of this export. Setting this to values other than
-     * `ACTIVE` and `PAUSED` will result in an error.
-     *
-     * Accepted values: STATE_UNSPECIFIED, ACTIVE, PAUSED, PERMISSION_DENIED,
-     * NOT_FOUND
-     *
-     * @param self::DESIRED_STATE_* $desiredState
-     */
-    public function setDesiredState($desiredState)
-    {
-    }
-    /**
-     * @return self::DESIRED_STATE_*
-     */
-    public function getDesiredState()
-    {
-    }
-    /**
-     * Messages are automatically written from the Pub/Sub Lite topic associated
-     * with this subscription to a Pub/Sub topic.
-     *
-     * @param PubSubConfig $pubsubConfig
-     */
-    public function setPubsubConfig(PubSubConfig $pubsubConfig)
-    {
-    }
-    /**
-     * @return PubSubConfig
-     */
-    public function getPubsubConfig()
+    class Google_Service_PubsubLite_ExportConfig extends \Google\Service\PubsubLite\ExportConfig
     {
     }
 }

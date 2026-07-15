@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Translate;
-
-class ListModelsResponse extends \Google\Collection
-{
-    protected $collection_key = 'models';
-    protected $modelsType = Model::class;
-    protected $modelsDataType = 'array';
-    /**
-     * A token to retrieve next page of results. Pass this token to the page_token
-     * field in the ListModelsRequest to obtain the corresponding page.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The models read.
-     *
-     * @param Model[] $models
-     */
-    public function setModels($models)
+namespace Google\Service\Translate {
+    class ListModelsResponse extends \Google\Collection
     {
+        protected $collection_key = 'models';
+        protected $modelsType = Model::class;
+        protected $modelsDataType = 'array';
+        /**
+         * A token to retrieve next page of results. Pass this token to the page_token
+         * field in the ListModelsRequest to obtain the corresponding page.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The models read.
+         *
+         * @param Model[] $models
+         */
+        public function setModels($models)
+        {
+        }
+        /**
+         * @return Model[]
+         */
+        public function getModels()
+        {
+        }
+        /**
+         * A token to retrieve next page of results. Pass this token to the page_token
+         * field in the ListModelsRequest to obtain the corresponding page.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Model[]
+     * Runtime class alias of \Google\Service\Translate\ListModelsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getModels()
-    {
-    }
-    /**
-     * A token to retrieve next page of results. Pass this token to the page_token
-     * field in the ListModelsRequest to obtain the corresponding page.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Translate_ListModelsResponse extends \Google\Service\Translate\ListModelsResponse
     {
     }
 }

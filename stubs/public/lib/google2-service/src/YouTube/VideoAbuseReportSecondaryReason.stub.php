@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class VideoAbuseReportSecondaryReason extends \Google\Model
-{
-    /**
-     * The ID of this abuse report secondary reason.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * The localized label for this abuse report secondary reason.
-     *
-     * @var string
-     */
-    public $label;
-    /**
-     * The ID of this abuse report secondary reason.
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\YouTube {
+    class VideoAbuseReportSecondaryReason extends \Google\Model
     {
+        /**
+         * The ID of this abuse report secondary reason.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * The localized label for this abuse report secondary reason.
+         *
+         * @var string
+         */
+        public $label;
+        /**
+         * The ID of this abuse report secondary reason.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * The localized label for this abuse report secondary reason.
+         *
+         * @param string $label
+         */
+        public function setLabel($label)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLabel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\VideoAbuseReportSecondaryReason registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * The localized label for this abuse report secondary reason.
-     *
-     * @param string $label
-     */
-    public function setLabel($label)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLabel()
+    class Google_Service_YouTube_VideoAbuseReportSecondaryReason extends \Google\Service\YouTube\VideoAbuseReportSecondaryReason
     {
     }
 }

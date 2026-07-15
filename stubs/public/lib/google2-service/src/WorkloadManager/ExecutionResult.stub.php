@@ -21,171 +21,180 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager;
-
-class ExecutionResult extends \Google\Collection
-{
-    /**
-     * Unknown state
-     */
-    public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
-    /**
-     * resource successfully passed the rule
-     */
-    public const TYPE_TYPE_PASSED = 'TYPE_PASSED';
-    /**
-     * resource violated the rule
-     */
-    public const TYPE_TYPE_VIOLATED = 'TYPE_VIOLATED';
-    protected $collection_key = 'commands';
-    protected $commandsType = Command::class;
-    protected $commandsDataType = 'array';
-    /**
-     * The URL for the documentation of the rule.
-     *
-     * @var string
-     */
-    public $documentationUrl;
-    protected $resourceType = WorkloadmanagerResource::class;
-    protected $resourceDataType = '';
-    /**
-     * The rule that is violated in an evaluation.
-     *
-     * @var string
-     */
-    public $rule;
-    /**
-     * The severity of violation.
-     *
-     * @var string
-     */
-    public $severity;
-    /**
-     * Execution result type of the scanned resource
-     *
-     * @var string
-     */
-    public $type;
-    protected $violationDetailsType = ViolationDetails::class;
-    protected $violationDetailsDataType = '';
-    /**
-     * The violation message of an execution.
-     *
-     * @var string
-     */
-    public $violationMessage;
-    /**
-     * The commands to remediate the violation.
-     *
-     * @param Command[] $commands
-     */
-    public function setCommands($commands)
+namespace Google\Service\WorkloadManager {
+    class ExecutionResult extends \Google\Collection
     {
+        /**
+         * Unknown state
+         */
+        public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
+        /**
+         * resource successfully passed the rule
+         */
+        public const TYPE_TYPE_PASSED = 'TYPE_PASSED';
+        /**
+         * resource violated the rule
+         */
+        public const TYPE_TYPE_VIOLATED = 'TYPE_VIOLATED';
+        protected $collection_key = 'commands';
+        protected $commandsType = Command::class;
+        protected $commandsDataType = 'array';
+        /**
+         * The URL for the documentation of the rule.
+         *
+         * @var string
+         */
+        public $documentationUrl;
+        protected $resourceType = WorkloadmanagerResource::class;
+        protected $resourceDataType = '';
+        /**
+         * The rule that is violated in an evaluation.
+         *
+         * @var string
+         */
+        public $rule;
+        /**
+         * The severity of violation.
+         *
+         * @var string
+         */
+        public $severity;
+        /**
+         * Execution result type of the scanned resource
+         *
+         * @var string
+         */
+        public $type;
+        protected $violationDetailsType = ViolationDetails::class;
+        protected $violationDetailsDataType = '';
+        /**
+         * The violation message of an execution.
+         *
+         * @var string
+         */
+        public $violationMessage;
+        /**
+         * The commands to remediate the violation.
+         *
+         * @param Command[] $commands
+         */
+        public function setCommands($commands)
+        {
+        }
+        /**
+         * @return Command[]
+         */
+        public function getCommands()
+        {
+        }
+        /**
+         * The URL for the documentation of the rule.
+         *
+         * @param string $documentationUrl
+         */
+        public function setDocumentationUrl($documentationUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDocumentationUrl()
+        {
+        }
+        /**
+         * The resource that violates the rule.
+         *
+         * @param WorkloadmanagerResource $resource
+         */
+        public function setResource(WorkloadmanagerResource $resource)
+        {
+        }
+        /**
+         * @return WorkloadmanagerResource
+         */
+        public function getResource()
+        {
+        }
+        /**
+         * The rule that is violated in an evaluation.
+         *
+         * @param string $rule
+         */
+        public function setRule($rule)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRule()
+        {
+        }
+        /**
+         * The severity of violation.
+         *
+         * @param string $severity
+         */
+        public function setSeverity($severity)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSeverity()
+        {
+        }
+        /**
+         * Execution result type of the scanned resource
+         *
+         * Accepted values: TYPE_UNSPECIFIED, TYPE_PASSED, TYPE_VIOLATED
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
+        /**
+         * The details of violation in an evaluation result.
+         *
+         * @param ViolationDetails $violationDetails
+         */
+        public function setViolationDetails(ViolationDetails $violationDetails)
+        {
+        }
+        /**
+         * @return ViolationDetails
+         */
+        public function getViolationDetails()
+        {
+        }
+        /**
+         * The violation message of an execution.
+         *
+         * @param string $violationMessage
+         */
+        public function setViolationMessage($violationMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getViolationMessage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Command[]
+     * Runtime class alias of \Google\Service\WorkloadManager\ExecutionResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCommands()
-    {
-    }
-    /**
-     * The URL for the documentation of the rule.
-     *
-     * @param string $documentationUrl
-     */
-    public function setDocumentationUrl($documentationUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDocumentationUrl()
-    {
-    }
-    /**
-     * The resource that violates the rule.
-     *
-     * @param WorkloadmanagerResource $resource
-     */
-    public function setResource(WorkloadmanagerResource $resource)
-    {
-    }
-    /**
-     * @return WorkloadmanagerResource
-     */
-    public function getResource()
-    {
-    }
-    /**
-     * The rule that is violated in an evaluation.
-     *
-     * @param string $rule
-     */
-    public function setRule($rule)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRule()
-    {
-    }
-    /**
-     * The severity of violation.
-     *
-     * @param string $severity
-     */
-    public function setSeverity($severity)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSeverity()
-    {
-    }
-    /**
-     * Execution result type of the scanned resource
-     *
-     * Accepted values: TYPE_UNSPECIFIED, TYPE_PASSED, TYPE_VIOLATED
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
-    {
-    }
-    /**
-     * The details of violation in an evaluation result.
-     *
-     * @param ViolationDetails $violationDetails
-     */
-    public function setViolationDetails(ViolationDetails $violationDetails)
-    {
-    }
-    /**
-     * @return ViolationDetails
-     */
-    public function getViolationDetails()
-    {
-    }
-    /**
-     * The violation message of an execution.
-     *
-     * @param string $violationMessage
-     */
-    public function setViolationMessage($violationMessage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getViolationMessage()
+    class Google_Service_WorkloadManager_ExecutionResult extends \Google\Service\WorkloadManager\ExecutionResult
     {
     }
 }

@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIAP;
-
-class AllowedDomainsSettings extends \Google\Collection
-{
-    protected $collection_key = 'domains';
-    /**
-     * Optional. List of trusted domains.
-     *
-     * @var string[]
-     */
-    public $domains;
-    /**
-     * Optional. Configuration for customers to opt in for the feature.
-     *
-     * @var bool
-     */
-    public $enable;
-    /**
-     * Optional. List of trusted domains.
-     *
-     * @param string[] $domains
-     */
-    public function setDomains($domains)
+namespace Google\Service\CloudIAP {
+    class AllowedDomainsSettings extends \Google\Collection
     {
+        protected $collection_key = 'domains';
+        /**
+         * Optional. List of trusted domains.
+         *
+         * @var string[]
+         */
+        public $domains;
+        /**
+         * Optional. Configuration for customers to opt in for the feature.
+         *
+         * @var bool
+         */
+        public $enable;
+        /**
+         * Optional. List of trusted domains.
+         *
+         * @param string[] $domains
+         */
+        public function setDomains($domains)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDomains()
+        {
+        }
+        /**
+         * Optional. Configuration for customers to opt in for the feature.
+         *
+         * @param bool $enable
+         */
+        public function setEnable($enable)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudIAP\AllowedDomainsSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDomains()
-    {
-    }
-    /**
-     * Optional. Configuration for customers to opt in for the feature.
-     *
-     * @param bool $enable
-     */
-    public function setEnable($enable)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnable()
+    class Google_Service_CloudIAP_AllowedDomainsSettings extends \Google\Service\CloudIAP\AllowedDomainsSettings
     {
     }
 }

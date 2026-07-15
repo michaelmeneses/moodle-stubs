@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class SheetsClientActionMarkup extends \Google\Model
-{
-    protected $customFunctionReturnValueMarkupType = CustomFunctionReturnValueMarkup::class;
-    protected $customFunctionReturnValueMarkupDataType = '';
-    /**
-     * @param CustomFunctionReturnValueMarkup
-     */
-    public function setCustomFunctionReturnValueMarkup(CustomFunctionReturnValueMarkup $customFunctionReturnValueMarkup)
+namespace Google\Service\CloudSearch {
+    class SheetsClientActionMarkup extends \Google\Model
     {
+        protected $customFunctionReturnValueMarkupType = CustomFunctionReturnValueMarkup::class;
+        protected $customFunctionReturnValueMarkupDataType = '';
+        /**
+         * @param CustomFunctionReturnValueMarkup
+         */
+        public function setCustomFunctionReturnValueMarkup(CustomFunctionReturnValueMarkup $customFunctionReturnValueMarkup)
+        {
+        }
+        /**
+         * @return CustomFunctionReturnValueMarkup
+         */
+        public function getCustomFunctionReturnValueMarkup()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CustomFunctionReturnValueMarkup
+     * Runtime class alias of \Google\Service\CloudSearch\SheetsClientActionMarkup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomFunctionReturnValueMarkup()
+    class Google_Service_CloudSearch_SheetsClientActionMarkup extends \Google\Service\CloudSearch\SheetsClientActionMarkup
     {
     }
 }

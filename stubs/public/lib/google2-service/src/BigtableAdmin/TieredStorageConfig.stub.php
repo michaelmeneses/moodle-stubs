@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class TieredStorageConfig extends \Google\Model
-{
-    protected $infrequentAccessType = TieredStorageRule::class;
-    protected $infrequentAccessDataType = '';
-    /**
-     * Rule to specify what data is stored in the infrequent access(IA) tier. The
-     * IA tier allows storing more data per node with reduced performance.
-     *
-     * @param TieredStorageRule $infrequentAccess
-     */
-    public function setInfrequentAccess(TieredStorageRule $infrequentAccess)
+namespace Google\Service\BigtableAdmin {
+    class TieredStorageConfig extends \Google\Model
     {
+        protected $infrequentAccessType = TieredStorageRule::class;
+        protected $infrequentAccessDataType = '';
+        /**
+         * Rule to specify what data is stored in the infrequent access(IA) tier. The
+         * IA tier allows storing more data per node with reduced performance.
+         *
+         * @param TieredStorageRule $infrequentAccess
+         */
+        public function setInfrequentAccess(TieredStorageRule $infrequentAccess)
+        {
+        }
+        /**
+         * @return TieredStorageRule
+         */
+        public function getInfrequentAccess()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TieredStorageRule
+     * Runtime class alias of \Google\Service\BigtableAdmin\TieredStorageConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInfrequentAccess()
+    class Google_Service_BigtableAdmin_TieredStorageConfig extends \Google\Service\BigtableAdmin\TieredStorageConfig
     {
     }
 }

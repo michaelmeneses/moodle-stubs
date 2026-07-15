@@ -21,81 +21,90 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class DeidentifyDatasetRequest extends \Google\Model
-{
-    protected $configType = DeidentifyConfig::class;
-    protected $configDataType = '';
-    /**
-     * Required. The name of the dataset resource to create and write the redacted
-     * data to. * The destination dataset must not exist. * The destination
-     * dataset must be in the same location as the source dataset. De-identifying
-     * data across multiple locations is not supported.
-     *
-     * @var string
-     */
-    public $destinationDataset;
-    /**
-     * Cloud Storage location to read the JSON
-     * cloud.healthcare.deidentify.DeidentifyConfig from, overriding the default
-     * config. Must be of the form `gs://{bucket_id}/path/to/object`. The Cloud
-     * Storage location must grant the Cloud IAM role `roles/storage.objectViewer`
-     * to the project's Cloud Healthcare Service Agent service account. Only one
-     * of `config` and `gcs_config_uri` can be specified.
-     *
-     * @var string
-     */
-    public $gcsConfigUri;
-    /**
-     * Deidentify configuration. Only one of `config` and `gcs_config_uri` can be
-     * specified.
-     *
-     * @param DeidentifyConfig $config
-     */
-    public function setConfig(DeidentifyConfig $config)
+namespace Google\Service\CloudHealthcare {
+    class DeidentifyDatasetRequest extends \Google\Model
     {
+        protected $configType = DeidentifyConfig::class;
+        protected $configDataType = '';
+        /**
+         * Required. The name of the dataset resource to create and write the redacted
+         * data to. * The destination dataset must not exist. * The destination
+         * dataset must be in the same location as the source dataset. De-identifying
+         * data across multiple locations is not supported.
+         *
+         * @var string
+         */
+        public $destinationDataset;
+        /**
+         * Cloud Storage location to read the JSON
+         * cloud.healthcare.deidentify.DeidentifyConfig from, overriding the default
+         * config. Must be of the form `gs://{bucket_id}/path/to/object`. The Cloud
+         * Storage location must grant the Cloud IAM role `roles/storage.objectViewer`
+         * to the project's Cloud Healthcare Service Agent service account. Only one
+         * of `config` and `gcs_config_uri` can be specified.
+         *
+         * @var string
+         */
+        public $gcsConfigUri;
+        /**
+         * Deidentify configuration. Only one of `config` and `gcs_config_uri` can be
+         * specified.
+         *
+         * @param DeidentifyConfig $config
+         */
+        public function setConfig(DeidentifyConfig $config)
+        {
+        }
+        /**
+         * @return DeidentifyConfig
+         */
+        public function getConfig()
+        {
+        }
+        /**
+         * Required. The name of the dataset resource to create and write the redacted
+         * data to. * The destination dataset must not exist. * The destination
+         * dataset must be in the same location as the source dataset. De-identifying
+         * data across multiple locations is not supported.
+         *
+         * @param string $destinationDataset
+         */
+        public function setDestinationDataset($destinationDataset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDestinationDataset()
+        {
+        }
+        /**
+         * Cloud Storage location to read the JSON
+         * cloud.healthcare.deidentify.DeidentifyConfig from, overriding the default
+         * config. Must be of the form `gs://{bucket_id}/path/to/object`. The Cloud
+         * Storage location must grant the Cloud IAM role `roles/storage.objectViewer`
+         * to the project's Cloud Healthcare Service Agent service account. Only one
+         * of `config` and `gcs_config_uri` can be specified.
+         *
+         * @param string $gcsConfigUri
+         */
+        public function setGcsConfigUri($gcsConfigUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGcsConfigUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DeidentifyConfig
+     * Runtime class alias of \Google\Service\CloudHealthcare\DeidentifyDatasetRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfig()
-    {
-    }
-    /**
-     * Required. The name of the dataset resource to create and write the redacted
-     * data to. * The destination dataset must not exist. * The destination
-     * dataset must be in the same location as the source dataset. De-identifying
-     * data across multiple locations is not supported.
-     *
-     * @param string $destinationDataset
-     */
-    public function setDestinationDataset($destinationDataset)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDestinationDataset()
-    {
-    }
-    /**
-     * Cloud Storage location to read the JSON
-     * cloud.healthcare.deidentify.DeidentifyConfig from, overriding the default
-     * config. Must be of the form `gs://{bucket_id}/path/to/object`. The Cloud
-     * Storage location must grant the Cloud IAM role `roles/storage.objectViewer`
-     * to the project's Cloud Healthcare Service Agent service account. Only one
-     * of `config` and `gcs_config_uri` can be specified.
-     *
-     * @param string $gcsConfigUri
-     */
-    public function setGcsConfigUri($gcsConfigUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGcsConfigUri()
+    class Google_Service_CloudHealthcare_DeidentifyDatasetRequest extends \Google\Service\CloudHealthcare\DeidentifyDatasetRequest
     {
     }
 }

@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudScheduler;
-
-class CmekConfig extends \Google\Model
-{
-    /**
-     * Optional. Resource name of the Cloud KMS key, of the form `projects/PROJECT
-     * _ID/locations/LOCATION_ID/keyRings/KEY_RING_ID/cryptoKeys/KEY_ID`, that
-     * will be used to encrypt Jobs in the region. Setting this as blank will turn
-     * off CMEK encryption.
-     *
-     * @var string
-     */
-    public $kmsKeyName;
-    /**
-     * Identifier. The config resource name which includes the project and
-     * location and must end in 'cmekConfig', in the format
-     * projects/PROJECT_ID/locations/LOCATION_ID/cmekConfig`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optional. Resource name of the Cloud KMS key, of the form `projects/PROJECT
-     * _ID/locations/LOCATION_ID/keyRings/KEY_RING_ID/cryptoKeys/KEY_ID`, that
-     * will be used to encrypt Jobs in the region. Setting this as blank will turn
-     * off CMEK encryption.
-     *
-     * @param string $kmsKeyName
-     */
-    public function setKmsKeyName($kmsKeyName)
+namespace Google\Service\CloudScheduler {
+    class CmekConfig extends \Google\Model
     {
+        /**
+         * Optional. Resource name of the Cloud KMS key, of the form `projects/PROJECT
+         * _ID/locations/LOCATION_ID/keyRings/KEY_RING_ID/cryptoKeys/KEY_ID`, that
+         * will be used to encrypt Jobs in the region. Setting this as blank will turn
+         * off CMEK encryption.
+         *
+         * @var string
+         */
+        public $kmsKeyName;
+        /**
+         * Identifier. The config resource name which includes the project and
+         * location and must end in 'cmekConfig', in the format
+         * projects/PROJECT_ID/locations/LOCATION_ID/cmekConfig`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optional. Resource name of the Cloud KMS key, of the form `projects/PROJECT
+         * _ID/locations/LOCATION_ID/keyRings/KEY_RING_ID/cryptoKeys/KEY_ID`, that
+         * will be used to encrypt Jobs in the region. Setting this as blank will turn
+         * off CMEK encryption.
+         *
+         * @param string $kmsKeyName
+         */
+        public function setKmsKeyName($kmsKeyName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKmsKeyName()
+        {
+        }
+        /**
+         * Identifier. The config resource name which includes the project and
+         * location and must end in 'cmekConfig', in the format
+         * projects/PROJECT_ID/locations/LOCATION_ID/cmekConfig`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudScheduler\CmekConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKmsKeyName()
-    {
-    }
-    /**
-     * Identifier. The config resource name which includes the project and
-     * location and must end in 'cmekConfig', in the format
-     * projects/PROJECT_ID/locations/LOCATION_ID/cmekConfig`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_CloudScheduler_CmekConfig extends \Google\Service\CloudScheduler\CmekConfig
     {
     }
 }

@@ -21,94 +21,103 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class BackupInfo extends \Google\Model
-{
-    /**
-     * Name of the backup.
-     *
-     * @var string
-     */
-    public $backup;
-    /**
-     * The time the CreateBackup request was received.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Name of the database the backup was created from.
-     *
-     * @var string
-     */
-    public $sourceDatabase;
-    /**
-     * The backup contains an externally consistent copy of `source_database` at
-     * the timestamp specified by `version_time`. If the CreateBackup request did
-     * not specify `version_time`, the `version_time` of the backup is equivalent
-     * to the `create_time`.
-     *
-     * @var string
-     */
-    public $versionTime;
-    /**
-     * Name of the backup.
-     *
-     * @param string $backup
-     */
-    public function setBackup($backup)
+namespace Google\Service\Spanner {
+    class BackupInfo extends \Google\Model
     {
+        /**
+         * Name of the backup.
+         *
+         * @var string
+         */
+        public $backup;
+        /**
+         * The time the CreateBackup request was received.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Name of the database the backup was created from.
+         *
+         * @var string
+         */
+        public $sourceDatabase;
+        /**
+         * The backup contains an externally consistent copy of `source_database` at
+         * the timestamp specified by `version_time`. If the CreateBackup request did
+         * not specify `version_time`, the `version_time` of the backup is equivalent
+         * to the `create_time`.
+         *
+         * @var string
+         */
+        public $versionTime;
+        /**
+         * Name of the backup.
+         *
+         * @param string $backup
+         */
+        public function setBackup($backup)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBackup()
+        {
+        }
+        /**
+         * The time the CreateBackup request was received.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Name of the database the backup was created from.
+         *
+         * @param string $sourceDatabase
+         */
+        public function setSourceDatabase($sourceDatabase)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceDatabase()
+        {
+        }
+        /**
+         * The backup contains an externally consistent copy of `source_database` at
+         * the timestamp specified by `version_time`. If the CreateBackup request did
+         * not specify `version_time`, the `version_time` of the backup is equivalent
+         * to the `create_time`.
+         *
+         * @param string $versionTime
+         */
+        public function setVersionTime($versionTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersionTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Spanner\BackupInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackup()
-    {
-    }
-    /**
-     * The time the CreateBackup request was received.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Name of the database the backup was created from.
-     *
-     * @param string $sourceDatabase
-     */
-    public function setSourceDatabase($sourceDatabase)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourceDatabase()
-    {
-    }
-    /**
-     * The backup contains an externally consistent copy of `source_database` at
-     * the timestamp specified by `version_time`. If the CreateBackup request did
-     * not specify `version_time`, the `version_time` of the backup is equivalent
-     * to the `create_time`.
-     *
-     * @param string $versionTime
-     */
-    public function setVersionTime($versionTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersionTime()
+    class Google_Service_Spanner_BackupInfo extends \Google\Service\Spanner\BackupInfo
     {
     }
 }

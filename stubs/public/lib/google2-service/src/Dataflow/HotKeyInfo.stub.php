@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class HotKeyInfo extends \Google\Model
-{
-    /**
-     * The age of the hot key measured from when it was first detected.
-     *
-     * @var string
-     */
-    public $hotKeyAge;
-    /**
-     * A detected hot key that is causing limited parallelism. This field will be
-     * populated only if the following flag is set to true: "--
-     * enable_hot_key_logging".
-     *
-     * @var string
-     */
-    public $key;
-    /**
-     * If true, then the above key is truncated and cannot be deserialized. This
-     * occurs if the key above is populated and the key size is >5MB.
-     *
-     * @var bool
-     */
-    public $keyTruncated;
-    /**
-     * The age of the hot key measured from when it was first detected.
-     *
-     * @param string $hotKeyAge
-     */
-    public function setHotKeyAge($hotKeyAge)
+namespace Google\Service\Dataflow {
+    class HotKeyInfo extends \Google\Model
     {
+        /**
+         * The age of the hot key measured from when it was first detected.
+         *
+         * @var string
+         */
+        public $hotKeyAge;
+        /**
+         * A detected hot key that is causing limited parallelism. This field will be
+         * populated only if the following flag is set to true: "--
+         * enable_hot_key_logging".
+         *
+         * @var string
+         */
+        public $key;
+        /**
+         * If true, then the above key is truncated and cannot be deserialized. This
+         * occurs if the key above is populated and the key size is >5MB.
+         *
+         * @var bool
+         */
+        public $keyTruncated;
+        /**
+         * The age of the hot key measured from when it was first detected.
+         *
+         * @param string $hotKeyAge
+         */
+        public function setHotKeyAge($hotKeyAge)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHotKeyAge()
+        {
+        }
+        /**
+         * A detected hot key that is causing limited parallelism. This field will be
+         * populated only if the following flag is set to true: "--
+         * enable_hot_key_logging".
+         *
+         * @param string $key
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * If true, then the above key is truncated and cannot be deserialized. This
+         * occurs if the key above is populated and the key size is >5MB.
+         *
+         * @param bool $keyTruncated
+         */
+        public function setKeyTruncated($keyTruncated)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getKeyTruncated()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataflow\HotKeyInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHotKeyAge()
-    {
-    }
-    /**
-     * A detected hot key that is causing limited parallelism. This field will be
-     * populated only if the following flag is set to true: "--
-     * enable_hot_key_logging".
-     *
-     * @param string $key
-     */
-    public function setKey($key)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKey()
-    {
-    }
-    /**
-     * If true, then the above key is truncated and cannot be deserialized. This
-     * occurs if the key above is populated and the key size is >5MB.
-     *
-     * @param bool $keyTruncated
-     */
-    public function setKeyTruncated($keyTruncated)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getKeyTruncated()
+    class Google_Service_Dataflow_HotKeyInfo extends \Google\Service\Dataflow\HotKeyInfo
     {
     }
 }

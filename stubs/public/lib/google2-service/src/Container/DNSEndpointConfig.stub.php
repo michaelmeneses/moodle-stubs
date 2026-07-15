@@ -21,96 +21,105 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class DNSEndpointConfig extends \Google\Model
-{
-    /**
-     * Controls whether user traffic is allowed over this endpoint. Note that
-     * Google-managed services may still use the endpoint even if this is false.
-     *
-     * @var bool
-     */
-    public $allowExternalTraffic;
-    /**
-     * Controls whether the k8s certs auth is allowed via DNS.
-     *
-     * @var bool
-     */
-    public $enableK8sCertsViaDns;
-    /**
-     * Controls whether the k8s token auth is allowed via DNS.
-     *
-     * @var bool
-     */
-    public $enableK8sTokensViaDns;
-    /**
-     * Output only. The cluster's DNS endpoint configuration. A DNS format
-     * address. This is accessible from the public internet. Ex: uid.us-
-     * central1.gke.goog. Always present, but the behavior may change according to
-     * the value of DNSEndpointConfig.allow_external_traffic.
-     *
-     * @var string
-     */
-    public $endpoint;
-    /**
-     * Controls whether user traffic is allowed over this endpoint. Note that
-     * Google-managed services may still use the endpoint even if this is false.
-     *
-     * @param bool $allowExternalTraffic
-     */
-    public function setAllowExternalTraffic($allowExternalTraffic)
+namespace Google\Service\Container {
+    class DNSEndpointConfig extends \Google\Model
     {
+        /**
+         * Controls whether user traffic is allowed over this endpoint. Note that
+         * Google-managed services may still use the endpoint even if this is false.
+         *
+         * @var bool
+         */
+        public $allowExternalTraffic;
+        /**
+         * Controls whether the k8s certs auth is allowed via DNS.
+         *
+         * @var bool
+         */
+        public $enableK8sCertsViaDns;
+        /**
+         * Controls whether the k8s token auth is allowed via DNS.
+         *
+         * @var bool
+         */
+        public $enableK8sTokensViaDns;
+        /**
+         * Output only. The cluster's DNS endpoint configuration. A DNS format
+         * address. This is accessible from the public internet. Ex: uid.us-
+         * central1.gke.goog. Always present, but the behavior may change according to
+         * the value of DNSEndpointConfig.allow_external_traffic.
+         *
+         * @var string
+         */
+        public $endpoint;
+        /**
+         * Controls whether user traffic is allowed over this endpoint. Note that
+         * Google-managed services may still use the endpoint even if this is false.
+         *
+         * @param bool $allowExternalTraffic
+         */
+        public function setAllowExternalTraffic($allowExternalTraffic)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAllowExternalTraffic()
+        {
+        }
+        /**
+         * Controls whether the k8s certs auth is allowed via DNS.
+         *
+         * @param bool $enableK8sCertsViaDns
+         */
+        public function setEnableK8sCertsViaDns($enableK8sCertsViaDns)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableK8sCertsViaDns()
+        {
+        }
+        /**
+         * Controls whether the k8s token auth is allowed via DNS.
+         *
+         * @param bool $enableK8sTokensViaDns
+         */
+        public function setEnableK8sTokensViaDns($enableK8sTokensViaDns)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableK8sTokensViaDns()
+        {
+        }
+        /**
+         * Output only. The cluster's DNS endpoint configuration. A DNS format
+         * address. This is accessible from the public internet. Ex: uid.us-
+         * central1.gke.goog. Always present, but the behavior may change according to
+         * the value of DNSEndpointConfig.allow_external_traffic.
+         *
+         * @param string $endpoint
+         */
+        public function setEndpoint($endpoint)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndpoint()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Container\DNSEndpointConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowExternalTraffic()
-    {
-    }
-    /**
-     * Controls whether the k8s certs auth is allowed via DNS.
-     *
-     * @param bool $enableK8sCertsViaDns
-     */
-    public function setEnableK8sCertsViaDns($enableK8sCertsViaDns)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnableK8sCertsViaDns()
-    {
-    }
-    /**
-     * Controls whether the k8s token auth is allowed via DNS.
-     *
-     * @param bool $enableK8sTokensViaDns
-     */
-    public function setEnableK8sTokensViaDns($enableK8sTokensViaDns)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnableK8sTokensViaDns()
-    {
-    }
-    /**
-     * Output only. The cluster's DNS endpoint configuration. A DNS format
-     * address. This is accessible from the public internet. Ex: uid.us-
-     * central1.gke.goog. Always present, but the behavior may change according to
-     * the value of DNSEndpointConfig.allow_external_traffic.
-     *
-     * @param string $endpoint
-     */
-    public function setEndpoint($endpoint)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndpoint()
+    class Google_Service_Container_DNSEndpointConfig extends \Google\Service\Container\DNSEndpointConfig
     {
     }
 }

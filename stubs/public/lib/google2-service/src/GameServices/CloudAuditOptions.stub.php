@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GameServices;
-
-class CloudAuditOptions extends \Google\Model
-{
-    protected $authorizationLoggingOptionsType = AuthorizationLoggingOptions::class;
-    protected $authorizationLoggingOptionsDataType = '';
-    /**
-     * @var string
-     */
-    public $logName;
-    /**
-     * @param AuthorizationLoggingOptions
-     */
-    public function setAuthorizationLoggingOptions(AuthorizationLoggingOptions $authorizationLoggingOptions)
+namespace Google\Service\GameServices {
+    class CloudAuditOptions extends \Google\Model
     {
+        protected $authorizationLoggingOptionsType = AuthorizationLoggingOptions::class;
+        protected $authorizationLoggingOptionsDataType = '';
+        /**
+         * @var string
+         */
+        public $logName;
+        /**
+         * @param AuthorizationLoggingOptions
+         */
+        public function setAuthorizationLoggingOptions(AuthorizationLoggingOptions $authorizationLoggingOptions)
+        {
+        }
+        /**
+         * @return AuthorizationLoggingOptions
+         */
+        public function getAuthorizationLoggingOptions()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLogName($logName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLogName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AuthorizationLoggingOptions
+     * Runtime class alias of \Google\Service\GameServices\CloudAuditOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuthorizationLoggingOptions()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLogName($logName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLogName()
+    class Google_Service_GameServices_CloudAuditOptions extends \Google\Service\GameServices\CloudAuditOptions
     {
     }
 }

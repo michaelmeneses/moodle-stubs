@@ -21,81 +21,90 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class GoogleAppsCardV1Validation extends \Google\Model
-{
-    /**
-     * Unspecified type. Do not use.
-     */
-    public const INPUT_TYPE_INPUT_TYPE_UNSPECIFIED = 'INPUT_TYPE_UNSPECIFIED';
-    /**
-     * Regular text that accepts all characters.
-     */
-    public const INPUT_TYPE_TEXT = 'TEXT';
-    /**
-     * An integer value.
-     */
-    public const INPUT_TYPE_INTEGER = 'INTEGER';
-    /**
-     * A float value.
-     */
-    public const INPUT_TYPE_FLOAT = 'FLOAT';
-    /**
-     * An email address.
-     */
-    public const INPUT_TYPE_EMAIL = 'EMAIL';
-    /**
-     * A emoji selected from system-provided emoji picker.
-     */
-    public const INPUT_TYPE_EMOJI_PICKER = 'EMOJI_PICKER';
-    /**
-     * Specify the character limit for text input widgets. Note that this is only
-     * used for text input and is ignored for other widgets. [Google Workspace
-     * add-ons and Chat apps](https://developers.google.com/workspace/extend):
-     *
-     * @var int
-     */
-    public $characterLimit;
-    /**
-     * Specify the type of the input widgets. [Google Workspace add-ons and Chat
-     * apps](https://developers.google.com/workspace/extend):
-     *
-     * @var string
-     */
-    public $inputType;
-    /**
-     * Specify the character limit for text input widgets. Note that this is only
-     * used for text input and is ignored for other widgets. [Google Workspace
-     * add-ons and Chat apps](https://developers.google.com/workspace/extend):
-     *
-     * @param int $characterLimit
-     */
-    public function setCharacterLimit($characterLimit)
+namespace Google\Service\HangoutsChat {
+    class GoogleAppsCardV1Validation extends \Google\Model
     {
+        /**
+         * Unspecified type. Do not use.
+         */
+        public const INPUT_TYPE_INPUT_TYPE_UNSPECIFIED = 'INPUT_TYPE_UNSPECIFIED';
+        /**
+         * Regular text that accepts all characters.
+         */
+        public const INPUT_TYPE_TEXT = 'TEXT';
+        /**
+         * An integer value.
+         */
+        public const INPUT_TYPE_INTEGER = 'INTEGER';
+        /**
+         * A float value.
+         */
+        public const INPUT_TYPE_FLOAT = 'FLOAT';
+        /**
+         * An email address.
+         */
+        public const INPUT_TYPE_EMAIL = 'EMAIL';
+        /**
+         * A emoji selected from system-provided emoji picker.
+         */
+        public const INPUT_TYPE_EMOJI_PICKER = 'EMOJI_PICKER';
+        /**
+         * Specify the character limit for text input widgets. Note that this is only
+         * used for text input and is ignored for other widgets. [Google Workspace
+         * add-ons and Chat apps](https://developers.google.com/workspace/extend):
+         *
+         * @var int
+         */
+        public $characterLimit;
+        /**
+         * Specify the type of the input widgets. [Google Workspace add-ons and Chat
+         * apps](https://developers.google.com/workspace/extend):
+         *
+         * @var string
+         */
+        public $inputType;
+        /**
+         * Specify the character limit for text input widgets. Note that this is only
+         * used for text input and is ignored for other widgets. [Google Workspace
+         * add-ons and Chat apps](https://developers.google.com/workspace/extend):
+         *
+         * @param int $characterLimit
+         */
+        public function setCharacterLimit($characterLimit)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCharacterLimit()
+        {
+        }
+        /**
+         * Specify the type of the input widgets. [Google Workspace add-ons and Chat
+         * apps](https://developers.google.com/workspace/extend):
+         *
+         * Accepted values: INPUT_TYPE_UNSPECIFIED, TEXT, INTEGER, FLOAT, EMAIL,
+         * EMOJI_PICKER
+         *
+         * @param self::INPUT_TYPE_* $inputType
+         */
+        public function setInputType($inputType)
+        {
+        }
+        /**
+         * @return self::INPUT_TYPE_*
+         */
+        public function getInputType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\HangoutsChat\GoogleAppsCardV1Validation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCharacterLimit()
-    {
-    }
-    /**
-     * Specify the type of the input widgets. [Google Workspace add-ons and Chat
-     * apps](https://developers.google.com/workspace/extend):
-     *
-     * Accepted values: INPUT_TYPE_UNSPECIFIED, TEXT, INTEGER, FLOAT, EMAIL,
-     * EMOJI_PICKER
-     *
-     * @param self::INPUT_TYPE_* $inputType
-     */
-    public function setInputType($inputType)
-    {
-    }
-    /**
-     * @return self::INPUT_TYPE_*
-     */
-    public function getInputType()
+    class Google_Service_HangoutsChat_GoogleAppsCardV1Validation extends \Google\Service\HangoutsChat\GoogleAppsCardV1Validation
     {
     }
 }

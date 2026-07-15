@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class DatasetAccessEntry extends \Google\Collection
-{
-    protected $collection_key = 'targetTypes';
-    protected $datasetType = DatasetReference::class;
-    protected $datasetDataType = '';
-    /**
-     * Which resources in the dataset this entry applies to. Currently, only views
-     * are supported, but additional target types may be added in the future.
-     *
-     * @var string[]
-     */
-    public $targetTypes;
-    /**
-     * The dataset this entry applies to
-     *
-     * @param DatasetReference $dataset
-     */
-    public function setDataset(DatasetReference $dataset)
+namespace Google\Service\Bigquery {
+    class DatasetAccessEntry extends \Google\Collection
     {
+        protected $collection_key = 'targetTypes';
+        protected $datasetType = DatasetReference::class;
+        protected $datasetDataType = '';
+        /**
+         * Which resources in the dataset this entry applies to. Currently, only views
+         * are supported, but additional target types may be added in the future.
+         *
+         * @var string[]
+         */
+        public $targetTypes;
+        /**
+         * The dataset this entry applies to
+         *
+         * @param DatasetReference $dataset
+         */
+        public function setDataset(DatasetReference $dataset)
+        {
+        }
+        /**
+         * @return DatasetReference
+         */
+        public function getDataset()
+        {
+        }
+        /**
+         * Which resources in the dataset this entry applies to. Currently, only views
+         * are supported, but additional target types may be added in the future.
+         *
+         * @param string[] $targetTypes
+         */
+        public function setTargetTypes($targetTypes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTargetTypes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DatasetReference
+     * Runtime class alias of \Google\Service\Bigquery\DatasetAccessEntry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataset()
-    {
-    }
-    /**
-     * Which resources in the dataset this entry applies to. Currently, only views
-     * are supported, but additional target types may be added in the future.
-     *
-     * @param string[] $targetTypes
-     */
-    public function setTargetTypes($targetTypes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTargetTypes()
+    class Google_Service_Bigquery_DatasetAccessEntry extends \Google\Service\Bigquery\DatasetAccessEntry
     {
     }
 }

@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Forms;
-
-class Answer extends \Google\Model
-{
-    protected $fileUploadAnswersType = FileUploadAnswers::class;
-    protected $fileUploadAnswersDataType = '';
-    protected $gradeType = Grade::class;
-    protected $gradeDataType = '';
-    /**
-     * Output only. The question's ID. See also Question.question_id.
-     *
-     * @var string
-     */
-    public $questionId;
-    protected $textAnswersType = TextAnswers::class;
-    protected $textAnswersDataType = '';
-    /**
-     * Output only. The answers to a file upload question.
-     *
-     * @param FileUploadAnswers $fileUploadAnswers
-     */
-    public function setFileUploadAnswers(FileUploadAnswers $fileUploadAnswers)
+namespace Google\Service\Forms {
+    class Answer extends \Google\Model
     {
+        protected $fileUploadAnswersType = FileUploadAnswers::class;
+        protected $fileUploadAnswersDataType = '';
+        protected $gradeType = Grade::class;
+        protected $gradeDataType = '';
+        /**
+         * Output only. The question's ID. See also Question.question_id.
+         *
+         * @var string
+         */
+        public $questionId;
+        protected $textAnswersType = TextAnswers::class;
+        protected $textAnswersDataType = '';
+        /**
+         * Output only. The answers to a file upload question.
+         *
+         * @param FileUploadAnswers $fileUploadAnswers
+         */
+        public function setFileUploadAnswers(FileUploadAnswers $fileUploadAnswers)
+        {
+        }
+        /**
+         * @return FileUploadAnswers
+         */
+        public function getFileUploadAnswers()
+        {
+        }
+        /**
+         * Output only. The grade for the answer if the form was a quiz.
+         *
+         * @param Grade $grade
+         */
+        public function setGrade(Grade $grade)
+        {
+        }
+        /**
+         * @return Grade
+         */
+        public function getGrade()
+        {
+        }
+        /**
+         * Output only. The question's ID. See also Question.question_id.
+         *
+         * @param string $questionId
+         */
+        public function setQuestionId($questionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQuestionId()
+        {
+        }
+        /**
+         * Output only. The specific answers as text.
+         *
+         * @param TextAnswers $textAnswers
+         */
+        public function setTextAnswers(TextAnswers $textAnswers)
+        {
+        }
+        /**
+         * @return TextAnswers
+         */
+        public function getTextAnswers()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FileUploadAnswers
+     * Runtime class alias of \Google\Service\Forms\Answer registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFileUploadAnswers()
-    {
-    }
-    /**
-     * Output only. The grade for the answer if the form was a quiz.
-     *
-     * @param Grade $grade
-     */
-    public function setGrade(Grade $grade)
-    {
-    }
-    /**
-     * @return Grade
-     */
-    public function getGrade()
-    {
-    }
-    /**
-     * Output only. The question's ID. See also Question.question_id.
-     *
-     * @param string $questionId
-     */
-    public function setQuestionId($questionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQuestionId()
-    {
-    }
-    /**
-     * Output only. The specific answers as text.
-     *
-     * @param TextAnswers $textAnswers
-     */
-    public function setTextAnswers(TextAnswers $textAnswers)
-    {
-    }
-    /**
-     * @return TextAnswers
-     */
-    public function getTextAnswers()
+    class Google_Service_Forms_Answer extends \Google\Service\Forms\Answer
     {
     }
 }

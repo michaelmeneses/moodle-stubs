@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise;
-
-class ProductPermissions extends \Google\Collection
-{
-    protected $collection_key = 'permission';
-    protected $permissionType = ProductPermission::class;
-    protected $permissionDataType = 'array';
-    /**
-     * The ID of the app that the permissions relate to, e.g.
-     * "app:com.google.android.gm".
-     *
-     * @var string
-     */
-    public $productId;
-    /**
-     * The permissions required by the app.
-     *
-     * @param ProductPermission[] $permission
-     */
-    public function setPermission($permission)
+namespace Google\Service\AndroidEnterprise {
+    class ProductPermissions extends \Google\Collection
     {
+        protected $collection_key = 'permission';
+        protected $permissionType = ProductPermission::class;
+        protected $permissionDataType = 'array';
+        /**
+         * The ID of the app that the permissions relate to, e.g.
+         * "app:com.google.android.gm".
+         *
+         * @var string
+         */
+        public $productId;
+        /**
+         * The permissions required by the app.
+         *
+         * @param ProductPermission[] $permission
+         */
+        public function setPermission($permission)
+        {
+        }
+        /**
+         * @return ProductPermission[]
+         */
+        public function getPermission()
+        {
+        }
+        /**
+         * The ID of the app that the permissions relate to, e.g.
+         * "app:com.google.android.gm".
+         *
+         * @param string $productId
+         */
+        public function setProductId($productId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProductId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ProductPermission[]
+     * Runtime class alias of \Google\Service\AndroidEnterprise\ProductPermissions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPermission()
-    {
-    }
-    /**
-     * The ID of the app that the permissions relate to, e.g.
-     * "app:com.google.android.gm".
-     *
-     * @param string $productId
-     */
-    public function setProductId($productId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProductId()
+    class Google_Service_AndroidEnterprise_ProductPermissions extends \Google\Service\AndroidEnterprise\ProductPermissions
     {
     }
 }

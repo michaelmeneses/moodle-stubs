@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedRetentionSettings extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $expiryTimestamp;
-    /**
-     * @var string
-     */
-    public $state;
-    /**
-     * @param string
-     */
-    public function setExpiryTimestamp($expiryTimestamp)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedRetentionSettings extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $expiryTimestamp;
+        /**
+         * @var string
+         */
+        public $state;
+        /**
+         * @param string
+         */
+        public function setExpiryTimestamp($expiryTimestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpiryTimestamp()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedRetentionSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExpiryTimestamp()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getState()
+    class Google_Service_CloudSearch_AppsDynamiteSharedRetentionSettings extends \Google\Service\CloudSearch\AppsDynamiteSharedRetentionSettings
     {
     }
 }

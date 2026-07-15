@@ -22,6 +22,14 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_external;
 
+use context;
+use context_course;
+use context_helper;
+use context_system;
+use core_user;
+use moodle_exception;
+use moodle_url;
+use stdClass;
 /**
  * Utility functions for the external API.
  *

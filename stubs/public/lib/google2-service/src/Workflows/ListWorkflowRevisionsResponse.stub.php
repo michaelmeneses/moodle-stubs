@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Workflows;
-
-class ListWorkflowRevisionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'workflows';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $workflowsType = Workflow::class;
-    protected $workflowsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Workflows {
+    class ListWorkflowRevisionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'workflows';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $workflowsType = Workflow::class;
+        protected $workflowsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The revisions of the workflow, ordered in reverse chronological order.
+         *
+         * @param Workflow[] $workflows
+         */
+        public function setWorkflows($workflows)
+        {
+        }
+        /**
+         * @return Workflow[]
+         */
+        public function getWorkflows()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Workflows\ListWorkflowRevisionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The revisions of the workflow, ordered in reverse chronological order.
-     *
-     * @param Workflow[] $workflows
-     */
-    public function setWorkflows($workflows)
-    {
-    }
-    /**
-     * @return Workflow[]
-     */
-    public function getWorkflows()
+    class Google_Service_Workflows_ListWorkflowRevisionsResponse extends \Google\Service\Workflows\ListWorkflowRevisionsResponse
     {
     }
 }

@@ -21,77 +21,86 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaExecutionSnapshot extends \Google\Collection
-{
-    protected $collection_key = 'taskExecutionDetails';
-    /**
-     * Indicates "after which checkpoint task's execution" this snapshot is taken.
-     *
-     * @var string
-     */
-    public $checkpointTaskNumber;
-    protected $executionSnapshotMetadataType = GoogleCloudIntegrationsV1alphaExecutionSnapshotExecutionSnapshotMetadata::class;
-    protected $executionSnapshotMetadataDataType = '';
-    protected $paramsType = GoogleCloudIntegrationsV1alphaValueType::class;
-    protected $paramsDataType = 'map';
-    protected $taskExecutionDetailsType = GoogleCloudIntegrationsV1alphaTaskExecutionDetails::class;
-    protected $taskExecutionDetailsDataType = 'array';
-    /**
-     * Indicates "after which checkpoint task's execution" this snapshot is taken.
-     *
-     * @param string $checkpointTaskNumber
-     */
-    public function setCheckpointTaskNumber($checkpointTaskNumber)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaExecutionSnapshot extends \Google\Collection
     {
+        protected $collection_key = 'taskExecutionDetails';
+        /**
+         * Indicates "after which checkpoint task's execution" this snapshot is taken.
+         *
+         * @var string
+         */
+        public $checkpointTaskNumber;
+        protected $executionSnapshotMetadataType = GoogleCloudIntegrationsV1alphaExecutionSnapshotExecutionSnapshotMetadata::class;
+        protected $executionSnapshotMetadataDataType = '';
+        protected $paramsType = GoogleCloudIntegrationsV1alphaValueType::class;
+        protected $paramsDataType = 'map';
+        protected $taskExecutionDetailsType = GoogleCloudIntegrationsV1alphaTaskExecutionDetails::class;
+        protected $taskExecutionDetailsDataType = 'array';
+        /**
+         * Indicates "after which checkpoint task's execution" this snapshot is taken.
+         *
+         * @param string $checkpointTaskNumber
+         */
+        public function setCheckpointTaskNumber($checkpointTaskNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCheckpointTaskNumber()
+        {
+        }
+        /**
+         * Metadata of the execution snapshot.
+         *
+         * @param GoogleCloudIntegrationsV1alphaExecutionSnapshotExecutionSnapshotMetadata $executionSnapshotMetadata
+         */
+        public function setExecutionSnapshotMetadata(GoogleCloudIntegrationsV1alphaExecutionSnapshotExecutionSnapshotMetadata $executionSnapshotMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudIntegrationsV1alphaExecutionSnapshotExecutionSnapshotMetadata
+         */
+        public function getExecutionSnapshotMetadata()
+        {
+        }
+        /**
+         * Parameters used during the execution.
+         *
+         * @param GoogleCloudIntegrationsV1alphaValueType[] $params
+         */
+        public function setParams($params)
+        {
+        }
+        /**
+         * @return GoogleCloudIntegrationsV1alphaValueType[]
+         */
+        public function getParams()
+        {
+        }
+        /**
+         * All of the task execution details at the given point of time.
+         *
+         * @param GoogleCloudIntegrationsV1alphaTaskExecutionDetails[] $taskExecutionDetails
+         */
+        public function setTaskExecutionDetails($taskExecutionDetails)
+        {
+        }
+        /**
+         * @return GoogleCloudIntegrationsV1alphaTaskExecutionDetails[]
+         */
+        public function getTaskExecutionDetails()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaExecutionSnapshot registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCheckpointTaskNumber()
-    {
-    }
-    /**
-     * Metadata of the execution snapshot.
-     *
-     * @param GoogleCloudIntegrationsV1alphaExecutionSnapshotExecutionSnapshotMetadata $executionSnapshotMetadata
-     */
-    public function setExecutionSnapshotMetadata(GoogleCloudIntegrationsV1alphaExecutionSnapshotExecutionSnapshotMetadata $executionSnapshotMetadata)
-    {
-    }
-    /**
-     * @return GoogleCloudIntegrationsV1alphaExecutionSnapshotExecutionSnapshotMetadata
-     */
-    public function getExecutionSnapshotMetadata()
-    {
-    }
-    /**
-     * Parameters used during the execution.
-     *
-     * @param GoogleCloudIntegrationsV1alphaValueType[] $params
-     */
-    public function setParams($params)
-    {
-    }
-    /**
-     * @return GoogleCloudIntegrationsV1alphaValueType[]
-     */
-    public function getParams()
-    {
-    }
-    /**
-     * All of the task execution details at the given point of time.
-     *
-     * @param GoogleCloudIntegrationsV1alphaTaskExecutionDetails[] $taskExecutionDetails
-     */
-    public function setTaskExecutionDetails($taskExecutionDetails)
-    {
-    }
-    /**
-     * @return GoogleCloudIntegrationsV1alphaTaskExecutionDetails[]
-     */
-    public function getTaskExecutionDetails()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaExecutionSnapshot extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaExecutionSnapshot
     {
     }
 }

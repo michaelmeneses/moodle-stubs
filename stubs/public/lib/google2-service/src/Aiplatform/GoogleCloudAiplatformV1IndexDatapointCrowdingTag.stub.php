@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1IndexDatapointCrowdingTag extends \Google\Model
-{
-    /**
-     * The attribute value used for crowding. The maximum number of neighbors to
-     * return per crowding attribute value (per_crowding_attribute_num_neighbors)
-     * is configured per-query. This field is ignored if
-     * per_crowding_attribute_num_neighbors is larger than the total number of
-     * neighbors to return for a given query.
-     *
-     * @var string
-     */
-    public $crowdingAttribute;
-    /**
-     * The attribute value used for crowding. The maximum number of neighbors to
-     * return per crowding attribute value (per_crowding_attribute_num_neighbors)
-     * is configured per-query. This field is ignored if
-     * per_crowding_attribute_num_neighbors is larger than the total number of
-     * neighbors to return for a given query.
-     *
-     * @param string $crowdingAttribute
-     */
-    public function setCrowdingAttribute($crowdingAttribute)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1IndexDatapointCrowdingTag extends \Google\Model
     {
+        /**
+         * The attribute value used for crowding. The maximum number of neighbors to
+         * return per crowding attribute value (per_crowding_attribute_num_neighbors)
+         * is configured per-query. This field is ignored if
+         * per_crowding_attribute_num_neighbors is larger than the total number of
+         * neighbors to return for a given query.
+         *
+         * @var string
+         */
+        public $crowdingAttribute;
+        /**
+         * The attribute value used for crowding. The maximum number of neighbors to
+         * return per crowding attribute value (per_crowding_attribute_num_neighbors)
+         * is configured per-query. This field is ignored if
+         * per_crowding_attribute_num_neighbors is larger than the total number of
+         * neighbors to return for a given query.
+         *
+         * @param string $crowdingAttribute
+         */
+        public function setCrowdingAttribute($crowdingAttribute)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCrowdingAttribute()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1IndexDatapointCrowdingTag registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCrowdingAttribute()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1IndexDatapointCrowdingTag extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1IndexDatapointCrowdingTag
     {
     }
 }

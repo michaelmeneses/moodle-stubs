@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Classroom;
-
-class SubmissionHistory extends \Google\Model
-{
-    protected $gradeHistoryType = GradeHistory::class;
-    protected $gradeHistoryDataType = '';
-    protected $stateHistoryType = StateHistory::class;
-    protected $stateHistoryDataType = '';
-    /**
-     * The grade history information of the submission, if present.
-     *
-     * @param GradeHistory $gradeHistory
-     */
-    public function setGradeHistory(GradeHistory $gradeHistory)
+namespace Google\Service\Classroom {
+    class SubmissionHistory extends \Google\Model
     {
+        protected $gradeHistoryType = GradeHistory::class;
+        protected $gradeHistoryDataType = '';
+        protected $stateHistoryType = StateHistory::class;
+        protected $stateHistoryDataType = '';
+        /**
+         * The grade history information of the submission, if present.
+         *
+         * @param GradeHistory $gradeHistory
+         */
+        public function setGradeHistory(GradeHistory $gradeHistory)
+        {
+        }
+        /**
+         * @return GradeHistory
+         */
+        public function getGradeHistory()
+        {
+        }
+        /**
+         * The state history information of the submission, if present.
+         *
+         * @param StateHistory $stateHistory
+         */
+        public function setStateHistory(StateHistory $stateHistory)
+        {
+        }
+        /**
+         * @return StateHistory
+         */
+        public function getStateHistory()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GradeHistory
+     * Runtime class alias of \Google\Service\Classroom\SubmissionHistory registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGradeHistory()
-    {
-    }
-    /**
-     * The state history information of the submission, if present.
-     *
-     * @param StateHistory $stateHistory
-     */
-    public function setStateHistory(StateHistory $stateHistory)
-    {
-    }
-    /**
-     * @return StateHistory
-     */
-    public function getStateHistory()
+    class Google_Service_Classroom_SubmissionHistory extends \Google\Service\Classroom\SubmissionHistory
     {
     }
 }

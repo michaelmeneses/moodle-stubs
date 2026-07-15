@@ -21,83 +21,92 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class AnalyzeEntitiesRequest extends \Google\Collection
-{
-    /**
-     * No alternative output format is specified.
-     */
-    public const ALTERNATIVE_OUTPUT_FORMAT_ALTERNATIVE_OUTPUT_FORMAT_UNSPECIFIED = 'ALTERNATIVE_OUTPUT_FORMAT_UNSPECIFIED';
-    /**
-     * FHIR bundle output.
-     */
-    public const ALTERNATIVE_OUTPUT_FORMAT_FHIR_BUNDLE = 'FHIR_BUNDLE';
-    protected $collection_key = 'licensedVocabularies';
-    /**
-     * Optional. Alternative output format to be generated based on the results of
-     * analysis.
-     *
-     * @var string
-     */
-    public $alternativeOutputFormat;
-    /**
-     * document_content is a document to be annotated.
-     *
-     * @var string
-     */
-    public $documentContent;
-    /**
-     * A list of licensed vocabularies to use in the request, in addition to the
-     * default unlicensed vocabularies.
-     *
-     * @var string[]
-     */
-    public $licensedVocabularies;
-    /**
-     * Optional. Alternative output format to be generated based on the results of
-     * analysis.
-     *
-     * Accepted values: ALTERNATIVE_OUTPUT_FORMAT_UNSPECIFIED, FHIR_BUNDLE
-     *
-     * @param self::ALTERNATIVE_OUTPUT_FORMAT_* $alternativeOutputFormat
-     */
-    public function setAlternativeOutputFormat($alternativeOutputFormat)
+namespace Google\Service\CloudHealthcare {
+    class AnalyzeEntitiesRequest extends \Google\Collection
     {
+        /**
+         * No alternative output format is specified.
+         */
+        public const ALTERNATIVE_OUTPUT_FORMAT_ALTERNATIVE_OUTPUT_FORMAT_UNSPECIFIED = 'ALTERNATIVE_OUTPUT_FORMAT_UNSPECIFIED';
+        /**
+         * FHIR bundle output.
+         */
+        public const ALTERNATIVE_OUTPUT_FORMAT_FHIR_BUNDLE = 'FHIR_BUNDLE';
+        protected $collection_key = 'licensedVocabularies';
+        /**
+         * Optional. Alternative output format to be generated based on the results of
+         * analysis.
+         *
+         * @var string
+         */
+        public $alternativeOutputFormat;
+        /**
+         * document_content is a document to be annotated.
+         *
+         * @var string
+         */
+        public $documentContent;
+        /**
+         * A list of licensed vocabularies to use in the request, in addition to the
+         * default unlicensed vocabularies.
+         *
+         * @var string[]
+         */
+        public $licensedVocabularies;
+        /**
+         * Optional. Alternative output format to be generated based on the results of
+         * analysis.
+         *
+         * Accepted values: ALTERNATIVE_OUTPUT_FORMAT_UNSPECIFIED, FHIR_BUNDLE
+         *
+         * @param self::ALTERNATIVE_OUTPUT_FORMAT_* $alternativeOutputFormat
+         */
+        public function setAlternativeOutputFormat($alternativeOutputFormat)
+        {
+        }
+        /**
+         * @return self::ALTERNATIVE_OUTPUT_FORMAT_*
+         */
+        public function getAlternativeOutputFormat()
+        {
+        }
+        /**
+         * document_content is a document to be annotated.
+         *
+         * @param string $documentContent
+         */
+        public function setDocumentContent($documentContent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDocumentContent()
+        {
+        }
+        /**
+         * A list of licensed vocabularies to use in the request, in addition to the
+         * default unlicensed vocabularies.
+         *
+         * @param string[] $licensedVocabularies
+         */
+        public function setLicensedVocabularies($licensedVocabularies)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLicensedVocabularies()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::ALTERNATIVE_OUTPUT_FORMAT_*
+     * Runtime class alias of \Google\Service\CloudHealthcare\AnalyzeEntitiesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAlternativeOutputFormat()
-    {
-    }
-    /**
-     * document_content is a document to be annotated.
-     *
-     * @param string $documentContent
-     */
-    public function setDocumentContent($documentContent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDocumentContent()
-    {
-    }
-    /**
-     * A list of licensed vocabularies to use in the request, in addition to the
-     * default unlicensed vocabularies.
-     *
-     * @param string[] $licensedVocabularies
-     */
-    public function setLicensedVocabularies($licensedVocabularies)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLicensedVocabularies()
+    class Google_Service_CloudHealthcare_AnalyzeEntitiesRequest extends \Google\Service\CloudHealthcare\AnalyzeEntitiesRequest
     {
     }
 }

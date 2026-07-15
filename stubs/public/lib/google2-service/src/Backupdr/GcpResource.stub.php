@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Backupdr;
-
-class GcpResource extends \Google\Model
-{
-    /**
-     * Name of the Google Cloud resource.
-     *
-     * @var string
-     */
-    public $gcpResourcename;
-    /**
-     * Location of the resource: //"global"/"unspecified".
-     *
-     * @var string
-     */
-    public $location;
-    /**
-     * Type of the resource. Use the Unified Resource Type, eg.
-     * compute.googleapis.com/Instance.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Name of the Google Cloud resource.
-     *
-     * @param string $gcpResourcename
-     */
-    public function setGcpResourcename($gcpResourcename)
+namespace Google\Service\Backupdr {
+    class GcpResource extends \Google\Model
     {
+        /**
+         * Name of the Google Cloud resource.
+         *
+         * @var string
+         */
+        public $gcpResourcename;
+        /**
+         * Location of the resource: //"global"/"unspecified".
+         *
+         * @var string
+         */
+        public $location;
+        /**
+         * Type of the resource. Use the Unified Resource Type, eg.
+         * compute.googleapis.com/Instance.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Name of the Google Cloud resource.
+         *
+         * @param string $gcpResourcename
+         */
+        public function setGcpResourcename($gcpResourcename)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGcpResourcename()
+        {
+        }
+        /**
+         * Location of the resource: //"global"/"unspecified".
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * Type of the resource. Use the Unified Resource Type, eg.
+         * compute.googleapis.com/Instance.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Backupdr\GcpResource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGcpResourcename()
-    {
-    }
-    /**
-     * Location of the resource: //"global"/"unspecified".
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocation()
-    {
-    }
-    /**
-     * Type of the resource. Use the Unified Resource Type, eg.
-     * compute.googleapis.com/Instance.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_Backupdr_GcpResource extends \Google\Service\Backupdr\GcpResource
     {
     }
 }

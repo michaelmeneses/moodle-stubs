@@ -21,28 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AbusiveExperienceReport\Resource;
-
-/**
- * The "sites" collection of methods.
- * Typical usage is:
- *  <code>
- *   $abusiveexperiencereportService = new Google\Service\AbusiveExperienceReport(...);
- *   $sites = $abusiveexperiencereportService->sites;
- *  </code>
- */
-class Sites extends \Google\Service\Resource
-{
+namespace Google\Service\AbusiveExperienceReport\Resource {
+    use Google\Service\AbusiveExperienceReport\SiteSummaryResponse;
     /**
-     * Gets a site's Abusive Experience Report summary. (sites.get)
-     *
-     * @param string $name Required. The name of the site whose summary to get, e.g.
-     * `sites/http%3A%2F%2Fwww.google.com%2F`. Format: `sites/{site}`
-     * @param array $optParams Optional parameters.
-     * @return SiteSummaryResponse
-     * @throws \Google\Service\Exception
+     * The "sites" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $abusiveexperiencereportService = new Google\Service\AbusiveExperienceReport(...);
+     *   $sites = $abusiveexperiencereportService->sites;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class Sites extends \Google\Service\Resource
+    {
+        /**
+         * Gets a site's Abusive Experience Report summary. (sites.get)
+         *
+         * @param string $name Required. The name of the site whose summary to get, e.g.
+         * `sites/http%3A%2F%2Fwww.google.com%2F`. Format: `sites/{site}`
+         * @param array $optParams Optional parameters.
+         * @return SiteSummaryResponse
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AbusiveExperienceReport\Resource\Sites registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AbusiveExperienceReport_Resource_Sites extends \Google\Service\AbusiveExperienceReport\Resource\Sites
     {
     }
 }

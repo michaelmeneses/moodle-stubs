@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class ClusterConfig extends \Google\Model
-{
-    protected $clusterAutoscalingConfigType = ClusterAutoscalingConfig::class;
-    protected $clusterAutoscalingConfigDataType = '';
-    /**
-     * Autoscaling configuration for this cluster.
-     *
-     * @param ClusterAutoscalingConfig $clusterAutoscalingConfig
-     */
-    public function setClusterAutoscalingConfig(ClusterAutoscalingConfig $clusterAutoscalingConfig)
+namespace Google\Service\BigtableAdmin {
+    class ClusterConfig extends \Google\Model
     {
+        protected $clusterAutoscalingConfigType = ClusterAutoscalingConfig::class;
+        protected $clusterAutoscalingConfigDataType = '';
+        /**
+         * Autoscaling configuration for this cluster.
+         *
+         * @param ClusterAutoscalingConfig $clusterAutoscalingConfig
+         */
+        public function setClusterAutoscalingConfig(ClusterAutoscalingConfig $clusterAutoscalingConfig)
+        {
+        }
+        /**
+         * @return ClusterAutoscalingConfig
+         */
+        public function getClusterAutoscalingConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ClusterAutoscalingConfig
+     * Runtime class alias of \Google\Service\BigtableAdmin\ClusterConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClusterAutoscalingConfig()
+    class Google_Service_BigtableAdmin_ClusterConfig extends \Google\Service\BigtableAdmin\ClusterConfig
     {
     }
 }

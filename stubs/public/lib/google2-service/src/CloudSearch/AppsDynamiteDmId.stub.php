@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteDmId extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $dmId;
-    /**
-     * @param string
-     */
-    public function setDmId($dmId)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteDmId extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $dmId;
+        /**
+         * @param string
+         */
+        public function setDmId($dmId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDmId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteDmId registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDmId()
+    class Google_Service_CloudSearch_AppsDynamiteDmId extends \Google\Service\CloudSearch\AppsDynamiteDmId
     {
     }
 }

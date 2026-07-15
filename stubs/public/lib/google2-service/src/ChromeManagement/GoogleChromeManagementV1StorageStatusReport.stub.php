@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementV1StorageStatusReport extends \Google\Collection
-{
-    protected $collection_key = 'disk';
-    protected $diskType = GoogleChromeManagementV1DiskInfo::class;
-    protected $diskDataType = 'array';
-    /**
-     * Output only. Timestamp of when the sample was collected on device
-     *
-     * @var string
-     */
-    public $reportTime;
-    /**
-     * Output only. Reports on disk.
-     *
-     * @param GoogleChromeManagementV1DiskInfo[] $disk
-     */
-    public function setDisk($disk)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementV1StorageStatusReport extends \Google\Collection
     {
+        protected $collection_key = 'disk';
+        protected $diskType = GoogleChromeManagementV1DiskInfo::class;
+        protected $diskDataType = 'array';
+        /**
+         * Output only. Timestamp of when the sample was collected on device
+         *
+         * @var string
+         */
+        public $reportTime;
+        /**
+         * Output only. Reports on disk.
+         *
+         * @param GoogleChromeManagementV1DiskInfo[] $disk
+         */
+        public function setDisk($disk)
+        {
+        }
+        /**
+         * @return GoogleChromeManagementV1DiskInfo[]
+         */
+        public function getDisk()
+        {
+        }
+        /**
+         * Output only. Timestamp of when the sample was collected on device
+         *
+         * @param string $reportTime
+         */
+        public function setReportTime($reportTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReportTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleChromeManagementV1DiskInfo[]
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementV1StorageStatusReport registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisk()
-    {
-    }
-    /**
-     * Output only. Timestamp of when the sample was collected on device
-     *
-     * @param string $reportTime
-     */
-    public function setReportTime($reportTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReportTime()
+    class Google_Service_ChromeManagement_GoogleChromeManagementV1StorageStatusReport extends \Google\Service\ChromeManagement\GoogleChromeManagementV1StorageStatusReport
     {
     }
 }

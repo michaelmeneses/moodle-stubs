@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1DatabaseTableSpec extends \Google\Model
-{
-    /**
-     * Default unknown table type.
-     */
-    public const TYPE_TABLE_TYPE_UNSPECIFIED = 'TABLE_TYPE_UNSPECIFIED';
-    /**
-     * Native table.
-     */
-    public const TYPE_NATIVE = 'NATIVE';
-    /**
-     * External table.
-     */
-    public const TYPE_EXTERNAL = 'EXTERNAL';
-    protected $databaseViewSpecType = GoogleCloudDatacatalogV1DatabaseTableSpecDatabaseViewSpec::class;
-    protected $databaseViewSpecDataType = '';
-    protected $dataplexTableType = GoogleCloudDatacatalogV1DataplexTableSpec::class;
-    protected $dataplexTableDataType = '';
-    /**
-     * Type of this table.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Spec what applies to tables that are actually views. Not set for "real"
-     * tables.
-     *
-     * @param GoogleCloudDatacatalogV1DatabaseTableSpecDatabaseViewSpec $databaseViewSpec
-     */
-    public function setDatabaseViewSpec(GoogleCloudDatacatalogV1DatabaseTableSpecDatabaseViewSpec $databaseViewSpec)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1DatabaseTableSpec extends \Google\Model
     {
+        /**
+         * Default unknown table type.
+         */
+        public const TYPE_TABLE_TYPE_UNSPECIFIED = 'TABLE_TYPE_UNSPECIFIED';
+        /**
+         * Native table.
+         */
+        public const TYPE_NATIVE = 'NATIVE';
+        /**
+         * External table.
+         */
+        public const TYPE_EXTERNAL = 'EXTERNAL';
+        protected $databaseViewSpecType = GoogleCloudDatacatalogV1DatabaseTableSpecDatabaseViewSpec::class;
+        protected $databaseViewSpecDataType = '';
+        protected $dataplexTableType = GoogleCloudDatacatalogV1DataplexTableSpec::class;
+        protected $dataplexTableDataType = '';
+        /**
+         * Type of this table.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Spec what applies to tables that are actually views. Not set for "real"
+         * tables.
+         *
+         * @param GoogleCloudDatacatalogV1DatabaseTableSpecDatabaseViewSpec $databaseViewSpec
+         */
+        public function setDatabaseViewSpec(GoogleCloudDatacatalogV1DatabaseTableSpecDatabaseViewSpec $databaseViewSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1DatabaseTableSpecDatabaseViewSpec
+         */
+        public function getDatabaseViewSpec()
+        {
+        }
+        /**
+         * Output only. Fields specific to a Dataplex Universal Catalog table and
+         * present only in the Dataplex Universal Catalog table entries.
+         *
+         * @param GoogleCloudDatacatalogV1DataplexTableSpec $dataplexTable
+         */
+        public function setDataplexTable(GoogleCloudDatacatalogV1DataplexTableSpec $dataplexTable)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1DataplexTableSpec
+         */
+        public function getDataplexTable()
+        {
+        }
+        /**
+         * Type of this table.
+         *
+         * Accepted values: TABLE_TYPE_UNSPECIFIED, NATIVE, EXTERNAL
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatacatalogV1DatabaseTableSpecDatabaseViewSpec
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1DatabaseTableSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatabaseViewSpec()
-    {
-    }
-    /**
-     * Output only. Fields specific to a Dataplex Universal Catalog table and
-     * present only in the Dataplex Universal Catalog table entries.
-     *
-     * @param GoogleCloudDatacatalogV1DataplexTableSpec $dataplexTable
-     */
-    public function setDataplexTable(GoogleCloudDatacatalogV1DataplexTableSpec $dataplexTable)
-    {
-    }
-    /**
-     * @return GoogleCloudDatacatalogV1DataplexTableSpec
-     */
-    public function getDataplexTable()
-    {
-    }
-    /**
-     * Type of this table.
-     *
-     * Accepted values: TABLE_TYPE_UNSPECIFIED, NATIVE, EXTERNAL
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1DatabaseTableSpec extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1DatabaseTableSpec
     {
     }
 }

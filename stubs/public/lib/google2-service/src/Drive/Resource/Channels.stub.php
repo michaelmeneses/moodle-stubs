@@ -21,29 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Drive\Resource;
-
-/**
- * The "channels" collection of methods.
- * Typical usage is:
- *  <code>
- *   $driveService = new Google\Service\Drive(...);
- *   $channels = $driveService->channels;
- *  </code>
- */
-class Channels extends \Google\Service\Resource
-{
+namespace Google\Service\Drive\Resource {
+    use Google\Service\Drive\Channel;
     /**
-     * Stops watching resources through this channel. For more information, see
-     * [Notifications for resource
-     * changes](https://developers.google.com/workspace/drive/api/guides/push).
-     * (channels.stop)
-     *
-     * @param Channel $postBody
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * The "channels" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $driveService = new Google\Service\Drive(...);
+     *   $channels = $driveService->channels;
+     *  </code>
      */
-    public function stop(Channel $postBody, $optParams = [])
+    class Channels extends \Google\Service\Resource
+    {
+        /**
+         * Stops watching resources through this channel. For more information, see
+         * [Notifications for resource
+         * changes](https://developers.google.com/workspace/drive/api/guides/push).
+         * (channels.stop)
+         *
+         * @param Channel $postBody
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function stop(Channel $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Drive\Resource\Channels registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Drive_Resource_Channels extends \Google\Service\Drive\Resource\Channels
     {
     }
 }

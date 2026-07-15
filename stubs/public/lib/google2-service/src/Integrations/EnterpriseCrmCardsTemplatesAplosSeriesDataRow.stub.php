@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmCardsTemplatesAplosSeriesDataRow extends \Google\Model
-{
-    protected $xType = EnterpriseCrmCardsCellValue::class;
-    protected $xDataType = '';
-    public $x;
-    protected $yType = EnterpriseCrmCardsCellValue::class;
-    protected $yDataType = '';
-    public $y;
-    /**
-     * @param EnterpriseCrmCardsCellValue
-     */
-    public function setX(EnterpriseCrmCardsCellValue $x)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmCardsTemplatesAplosSeriesDataRow extends \Google\Model
     {
+        protected $xType = EnterpriseCrmCardsCellValue::class;
+        protected $xDataType = '';
+        public $x;
+        protected $yType = EnterpriseCrmCardsCellValue::class;
+        protected $yDataType = '';
+        public $y;
+        /**
+         * @param EnterpriseCrmCardsCellValue
+         */
+        public function setX(EnterpriseCrmCardsCellValue $x)
+        {
+        }
+        /**
+         * @return EnterpriseCrmCardsCellValue
+         */
+        public function getX()
+        {
+        }
+        /**
+         * @param EnterpriseCrmCardsCellValue
+         */
+        public function setY(EnterpriseCrmCardsCellValue $y)
+        {
+        }
+        /**
+         * @return EnterpriseCrmCardsCellValue
+         */
+        public function getY()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EnterpriseCrmCardsCellValue
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmCardsTemplatesAplosSeriesDataRow registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getX()
-    {
-    }
-    /**
-     * @param EnterpriseCrmCardsCellValue
-     */
-    public function setY(EnterpriseCrmCardsCellValue $y)
-    {
-    }
-    /**
-     * @return EnterpriseCrmCardsCellValue
-     */
-    public function getY()
+    class Google_Service_Integrations_EnterpriseCrmCardsTemplatesAplosSeriesDataRow extends \Google\Service\Integrations\EnterpriseCrmCardsTemplatesAplosSeriesDataRow
     {
     }
 }

@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PlayIntegrity;
-
-class WriteDates extends \Google\Model
-{
-    /**
-     * Optional. Write time in YYYYMM format (in UTC, e.g. 202402) for the first
-     * bit. Note that this value won't be set if the first bit is false.
-     *
-     * @var int
-     */
-    public $yyyymmFirst;
-    /**
-     * Optional. Write time in YYYYMM format (in UTC, e.g. 202402) for the second
-     * bit. Note that this value won't be set if the second bit is false.
-     *
-     * @var int
-     */
-    public $yyyymmSecond;
-    /**
-     * Optional. Write time in YYYYMM format (in UTC, e.g. 202402) for the third
-     * bit. Note that this value won't be set if the third bit is false.
-     *
-     * @var int
-     */
-    public $yyyymmThird;
-    /**
-     * Optional. Write time in YYYYMM format (in UTC, e.g. 202402) for the first
-     * bit. Note that this value won't be set if the first bit is false.
-     *
-     * @param int $yyyymmFirst
-     */
-    public function setYyyymmFirst($yyyymmFirst)
+namespace Google\Service\PlayIntegrity {
+    class WriteDates extends \Google\Model
     {
+        /**
+         * Optional. Write time in YYYYMM format (in UTC, e.g. 202402) for the first
+         * bit. Note that this value won't be set if the first bit is false.
+         *
+         * @var int
+         */
+        public $yyyymmFirst;
+        /**
+         * Optional. Write time in YYYYMM format (in UTC, e.g. 202402) for the second
+         * bit. Note that this value won't be set if the second bit is false.
+         *
+         * @var int
+         */
+        public $yyyymmSecond;
+        /**
+         * Optional. Write time in YYYYMM format (in UTC, e.g. 202402) for the third
+         * bit. Note that this value won't be set if the third bit is false.
+         *
+         * @var int
+         */
+        public $yyyymmThird;
+        /**
+         * Optional. Write time in YYYYMM format (in UTC, e.g. 202402) for the first
+         * bit. Note that this value won't be set if the first bit is false.
+         *
+         * @param int $yyyymmFirst
+         */
+        public function setYyyymmFirst($yyyymmFirst)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getYyyymmFirst()
+        {
+        }
+        /**
+         * Optional. Write time in YYYYMM format (in UTC, e.g. 202402) for the second
+         * bit. Note that this value won't be set if the second bit is false.
+         *
+         * @param int $yyyymmSecond
+         */
+        public function setYyyymmSecond($yyyymmSecond)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getYyyymmSecond()
+        {
+        }
+        /**
+         * Optional. Write time in YYYYMM format (in UTC, e.g. 202402) for the third
+         * bit. Note that this value won't be set if the third bit is false.
+         *
+         * @param int $yyyymmThird
+         */
+        public function setYyyymmThird($yyyymmThird)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getYyyymmThird()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\PlayIntegrity\WriteDates registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getYyyymmFirst()
-    {
-    }
-    /**
-     * Optional. Write time in YYYYMM format (in UTC, e.g. 202402) for the second
-     * bit. Note that this value won't be set if the second bit is false.
-     *
-     * @param int $yyyymmSecond
-     */
-    public function setYyyymmSecond($yyyymmSecond)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getYyyymmSecond()
-    {
-    }
-    /**
-     * Optional. Write time in YYYYMM format (in UTC, e.g. 202402) for the third
-     * bit. Note that this value won't be set if the third bit is false.
-     *
-     * @param int $yyyymmThird
-     */
-    public function setYyyymmThird($yyyymmThird)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getYyyymmThird()
+    class Google_Service_PlayIntegrity_WriteDates extends \Google\Service\PlayIntegrity\WriteDates
     {
     }
 }

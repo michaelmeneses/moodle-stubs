@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Script;
-
-class GoogleAppsScriptTypeFunctionSet extends \Google\Collection
-{
-    protected $collection_key = 'values';
-    protected $valuesType = GoogleAppsScriptTypeFunction::class;
-    protected $valuesDataType = 'array';
-    /**
-     * A list of functions composing the set.
-     *
-     * @param GoogleAppsScriptTypeFunction[] $values
-     */
-    public function setValues($values)
+namespace Google\Service\Script {
+    class GoogleAppsScriptTypeFunctionSet extends \Google\Collection
     {
+        protected $collection_key = 'values';
+        protected $valuesType = GoogleAppsScriptTypeFunction::class;
+        protected $valuesDataType = 'array';
+        /**
+         * A list of functions composing the set.
+         *
+         * @param GoogleAppsScriptTypeFunction[] $values
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return GoogleAppsScriptTypeFunction[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAppsScriptTypeFunction[]
+     * Runtime class alias of \Google\Service\Script\GoogleAppsScriptTypeFunctionSet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getValues()
+    class Google_Service_Script_GoogleAppsScriptTypeFunctionSet extends \Google\Service\Script\GoogleAppsScriptTypeFunctionSet
     {
     }
 }

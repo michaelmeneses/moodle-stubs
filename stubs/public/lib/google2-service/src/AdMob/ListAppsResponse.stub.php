@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdMob;
-
-class ListAppsResponse extends \Google\Collection
-{
-    protected $collection_key = 'apps';
-    protected $appsType = App::class;
-    protected $appsDataType = 'array';
-    /**
-     * If not empty, indicates that there may be more apps for the request; this
-     * value should be passed in a new `ListAppsRequest`.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The resulting apps for the requested account.
-     *
-     * @param App[] $apps
-     */
-    public function setApps($apps)
+namespace Google\Service\AdMob {
+    class ListAppsResponse extends \Google\Collection
     {
+        protected $collection_key = 'apps';
+        protected $appsType = App::class;
+        protected $appsDataType = 'array';
+        /**
+         * If not empty, indicates that there may be more apps for the request; this
+         * value should be passed in a new `ListAppsRequest`.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The resulting apps for the requested account.
+         *
+         * @param App[] $apps
+         */
+        public function setApps($apps)
+        {
+        }
+        /**
+         * @return App[]
+         */
+        public function getApps()
+        {
+        }
+        /**
+         * If not empty, indicates that there may be more apps for the request; this
+         * value should be passed in a new `ListAppsRequest`.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return App[]
+     * Runtime class alias of \Google\Service\AdMob\ListAppsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApps()
-    {
-    }
-    /**
-     * If not empty, indicates that there may be more apps for the request; this
-     * value should be passed in a new `ListAppsRequest`.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_AdMob_ListAppsResponse extends \Google\Service\AdMob\ListAppsResponse
     {
     }
 }

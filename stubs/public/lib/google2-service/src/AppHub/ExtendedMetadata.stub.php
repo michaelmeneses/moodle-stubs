@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AppHub;
-
-class ExtendedMetadata extends \Google\Model
-{
-    /**
-     * Output only. The metadata contents.
-     *
-     * @var array[]
-     */
-    public $metadataStruct;
-    /**
-     * Output only. The metadata contents.
-     *
-     * @param array[] $metadataStruct
-     */
-    public function setMetadataStruct($metadataStruct)
+namespace Google\Service\AppHub {
+    class ExtendedMetadata extends \Google\Model
     {
+        /**
+         * Output only. The metadata contents.
+         *
+         * @var array[]
+         */
+        public $metadataStruct;
+        /**
+         * Output only. The metadata contents.
+         *
+         * @param array[] $metadataStruct
+         */
+        public function setMetadataStruct($metadataStruct)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getMetadataStruct()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\AppHub\ExtendedMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetadataStruct()
+    class Google_Service_AppHub_ExtendedMetadata extends \Google\Service\AppHub\ExtendedMetadata
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChecksService;
-
-class GoogleChecksAisafetyV1alphaClassifyContentRequestContext extends \Google\Model
-{
-    /**
-     * Optional. Prompt that generated the model response.
-     *
-     * @var string
-     */
-    public $prompt;
-    /**
-     * Optional. Prompt that generated the model response.
-     *
-     * @param string $prompt
-     */
-    public function setPrompt($prompt)
+namespace Google\Service\ChecksService {
+    class GoogleChecksAisafetyV1alphaClassifyContentRequestContext extends \Google\Model
     {
+        /**
+         * Optional. Prompt that generated the model response.
+         *
+         * @var string
+         */
+        public $prompt;
+        /**
+         * Optional. Prompt that generated the model response.
+         *
+         * @param string $prompt
+         */
+        public function setPrompt($prompt)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrompt()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChecksService\GoogleChecksAisafetyV1alphaClassifyContentRequestContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPrompt()
+    class Google_Service_ChecksService_GoogleChecksAisafetyV1alphaClassifyContentRequestContext extends \Google\Service\ChecksService\GoogleChecksAisafetyV1alphaClassifyContentRequestContext
     {
     }
 }

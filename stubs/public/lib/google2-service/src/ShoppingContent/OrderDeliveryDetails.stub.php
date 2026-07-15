@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class OrderDeliveryDetails extends \Google\Model
-{
-    protected $addressType = OrderAddress::class;
-    protected $addressDataType = '';
-    /**
-     * @var string
-     */
-    public $phoneNumber;
-    /**
-     * @param OrderAddress
-     */
-    public function setAddress(OrderAddress $address)
+namespace Google\Service\ShoppingContent {
+    class OrderDeliveryDetails extends \Google\Model
     {
+        protected $addressType = OrderAddress::class;
+        protected $addressDataType = '';
+        /**
+         * @var string
+         */
+        public $phoneNumber;
+        /**
+         * @param OrderAddress
+         */
+        public function setAddress(OrderAddress $address)
+        {
+        }
+        /**
+         * @return OrderAddress
+         */
+        public function getAddress()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPhoneNumber($phoneNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPhoneNumber()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return OrderAddress
+     * Runtime class alias of \Google\Service\ShoppingContent\OrderDeliveryDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddress()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPhoneNumber($phoneNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPhoneNumber()
+    class Google_Service_ShoppingContent_OrderDeliveryDetails extends \Google\Service\ShoppingContent\OrderDeliveryDetails
     {
     }
 }

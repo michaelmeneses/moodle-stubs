@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class LiveBroadcastMonetizationDetails extends \Google\Model
-{
-    protected $cuepointScheduleType = CuepointSchedule::class;
-    protected $cuepointScheduleDataType = '';
-    /**
-     * @param CuepointSchedule $cuepointSchedule
-     */
-    public function setCuepointSchedule(CuepointSchedule $cuepointSchedule)
+namespace Google\Service\YouTube {
+    class LiveBroadcastMonetizationDetails extends \Google\Model
     {
+        protected $cuepointScheduleType = CuepointSchedule::class;
+        protected $cuepointScheduleDataType = '';
+        /**
+         * @param CuepointSchedule $cuepointSchedule
+         */
+        public function setCuepointSchedule(CuepointSchedule $cuepointSchedule)
+        {
+        }
+        /**
+         * @return CuepointSchedule
+         */
+        public function getCuepointSchedule()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CuepointSchedule
+     * Runtime class alias of \Google\Service\YouTube\LiveBroadcastMonetizationDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCuepointSchedule()
+    class Google_Service_YouTube_LiveBroadcastMonetizationDetails extends \Google\Service\YouTube\LiveBroadcastMonetizationDetails
     {
     }
 }

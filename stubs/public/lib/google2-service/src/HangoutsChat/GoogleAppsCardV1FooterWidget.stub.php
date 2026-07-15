@@ -21,78 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class GoogleAppsCardV1FooterWidget extends \Google\Model
-{
-    protected $buttonListType = GoogleAppsCardV1ButtonList::class;
-    protected $buttonListDataType = '';
-    protected $dateTimePickerType = GoogleAppsCardV1DateTimePicker::class;
-    protected $dateTimePickerDataType = '';
-    protected $decoratedTextType = GoogleAppsCardV1DecoratedText::class;
-    protected $decoratedTextDataType = '';
-    protected $textInputType = GoogleAppsCardV1TextInput::class;
-    protected $textInputDataType = '';
-    protected $textParagraphType = GoogleAppsCardV1TextParagraph::class;
-    protected $textParagraphDataType = '';
-    /**
-     * @param GoogleAppsCardV1ButtonList
-     */
-    public function setButtonList(GoogleAppsCardV1ButtonList $buttonList)
+namespace Google\Service\HangoutsChat {
+    class GoogleAppsCardV1FooterWidget extends \Google\Model
     {
+        protected $buttonListType = GoogleAppsCardV1ButtonList::class;
+        protected $buttonListDataType = '';
+        protected $dateTimePickerType = GoogleAppsCardV1DateTimePicker::class;
+        protected $dateTimePickerDataType = '';
+        protected $decoratedTextType = GoogleAppsCardV1DecoratedText::class;
+        protected $decoratedTextDataType = '';
+        protected $textInputType = GoogleAppsCardV1TextInput::class;
+        protected $textInputDataType = '';
+        protected $textParagraphType = GoogleAppsCardV1TextParagraph::class;
+        protected $textParagraphDataType = '';
+        /**
+         * @param GoogleAppsCardV1ButtonList
+         */
+        public function setButtonList(GoogleAppsCardV1ButtonList $buttonList)
+        {
+        }
+        /**
+         * @return GoogleAppsCardV1ButtonList
+         */
+        public function getButtonList()
+        {
+        }
+        /**
+         * @param GoogleAppsCardV1DateTimePicker
+         */
+        public function setDateTimePicker(GoogleAppsCardV1DateTimePicker $dateTimePicker)
+        {
+        }
+        /**
+         * @return GoogleAppsCardV1DateTimePicker
+         */
+        public function getDateTimePicker()
+        {
+        }
+        /**
+         * @param GoogleAppsCardV1DecoratedText
+         */
+        public function setDecoratedText(GoogleAppsCardV1DecoratedText $decoratedText)
+        {
+        }
+        /**
+         * @return GoogleAppsCardV1DecoratedText
+         */
+        public function getDecoratedText()
+        {
+        }
+        /**
+         * @param GoogleAppsCardV1TextInput
+         */
+        public function setTextInput(GoogleAppsCardV1TextInput $textInput)
+        {
+        }
+        /**
+         * @return GoogleAppsCardV1TextInput
+         */
+        public function getTextInput()
+        {
+        }
+        /**
+         * @param GoogleAppsCardV1TextParagraph
+         */
+        public function setTextParagraph(GoogleAppsCardV1TextParagraph $textParagraph)
+        {
+        }
+        /**
+         * @return GoogleAppsCardV1TextParagraph
+         */
+        public function getTextParagraph()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAppsCardV1ButtonList
+     * Runtime class alias of \Google\Service\HangoutsChat\GoogleAppsCardV1FooterWidget registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getButtonList()
-    {
-    }
-    /**
-     * @param GoogleAppsCardV1DateTimePicker
-     */
-    public function setDateTimePicker(GoogleAppsCardV1DateTimePicker $dateTimePicker)
-    {
-    }
-    /**
-     * @return GoogleAppsCardV1DateTimePicker
-     */
-    public function getDateTimePicker()
-    {
-    }
-    /**
-     * @param GoogleAppsCardV1DecoratedText
-     */
-    public function setDecoratedText(GoogleAppsCardV1DecoratedText $decoratedText)
-    {
-    }
-    /**
-     * @return GoogleAppsCardV1DecoratedText
-     */
-    public function getDecoratedText()
-    {
-    }
-    /**
-     * @param GoogleAppsCardV1TextInput
-     */
-    public function setTextInput(GoogleAppsCardV1TextInput $textInput)
-    {
-    }
-    /**
-     * @return GoogleAppsCardV1TextInput
-     */
-    public function getTextInput()
-    {
-    }
-    /**
-     * @param GoogleAppsCardV1TextParagraph
-     */
-    public function setTextParagraph(GoogleAppsCardV1TextParagraph $textParagraph)
-    {
-    }
-    /**
-     * @return GoogleAppsCardV1TextParagraph
-     */
-    public function getTextParagraph()
+    class Google_Service_HangoutsChat_GoogleAppsCardV1FooterWidget extends \Google\Service\HangoutsChat\GoogleAppsCardV1FooterWidget
     {
     }
 }

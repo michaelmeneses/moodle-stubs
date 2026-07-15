@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class RetryJobRequest extends \Google\Collection
-{
-    protected $collection_key = 'overrideDeployPolicy';
-    /**
-     * Required. The job ID for the Job to retry.
-     *
-     * @var string
-     */
-    public $jobId;
-    /**
-     * Optional. Deploy policies to override. Format is
-     * `projects/{project}/locations/{location}/deployPolicies/{deployPolicy}`.
-     *
-     * @var string[]
-     */
-    public $overrideDeployPolicy;
-    /**
-     * Required. The phase ID the Job to retry belongs to.
-     *
-     * @var string
-     */
-    public $phaseId;
-    /**
-     * Required. The job ID for the Job to retry.
-     *
-     * @param string $jobId
-     */
-    public function setJobId($jobId)
+namespace Google\Service\CloudDeploy {
+    class RetryJobRequest extends \Google\Collection
     {
+        protected $collection_key = 'overrideDeployPolicy';
+        /**
+         * Required. The job ID for the Job to retry.
+         *
+         * @var string
+         */
+        public $jobId;
+        /**
+         * Optional. Deploy policies to override. Format is
+         * `projects/{project}/locations/{location}/deployPolicies/{deployPolicy}`.
+         *
+         * @var string[]
+         */
+        public $overrideDeployPolicy;
+        /**
+         * Required. The phase ID the Job to retry belongs to.
+         *
+         * @var string
+         */
+        public $phaseId;
+        /**
+         * Required. The job ID for the Job to retry.
+         *
+         * @param string $jobId
+         */
+        public function setJobId($jobId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getJobId()
+        {
+        }
+        /**
+         * Optional. Deploy policies to override. Format is
+         * `projects/{project}/locations/{location}/deployPolicies/{deployPolicy}`.
+         *
+         * @param string[] $overrideDeployPolicy
+         */
+        public function setOverrideDeployPolicy($overrideDeployPolicy)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getOverrideDeployPolicy()
+        {
+        }
+        /**
+         * Required. The phase ID the Job to retry belongs to.
+         *
+         * @param string $phaseId
+         */
+        public function setPhaseId($phaseId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPhaseId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDeploy\RetryJobRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getJobId()
-    {
-    }
-    /**
-     * Optional. Deploy policies to override. Format is
-     * `projects/{project}/locations/{location}/deployPolicies/{deployPolicy}`.
-     *
-     * @param string[] $overrideDeployPolicy
-     */
-    public function setOverrideDeployPolicy($overrideDeployPolicy)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getOverrideDeployPolicy()
-    {
-    }
-    /**
-     * Required. The phase ID the Job to retry belongs to.
-     *
-     * @param string $phaseId
-     */
-    public function setPhaseId($phaseId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPhaseId()
+    class Google_Service_CloudDeploy_RetryJobRequest extends \Google\Service\CloudDeploy\RetryJobRequest
     {
     }
 }

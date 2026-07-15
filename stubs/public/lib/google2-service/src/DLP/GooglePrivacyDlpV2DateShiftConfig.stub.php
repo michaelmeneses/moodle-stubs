@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2DateShiftConfig extends \Google\Model
-{
-    protected $contextType = GooglePrivacyDlpV2FieldId::class;
-    protected $contextDataType = '';
-    protected $cryptoKeyType = GooglePrivacyDlpV2CryptoKey::class;
-    protected $cryptoKeyDataType = '';
-    /**
-     * Required. For example, -5 means shift date to at most 5 days back in the
-     * past.
-     *
-     * @var int
-     */
-    public $lowerBoundDays;
-    /**
-     * Required. Range of shift in days. Actual shift will be selected at random
-     * within this range (inclusive ends). Negative means shift to earlier in
-     * time. Must not be more than 365250 days (1000 years) each direction. For
-     * example, 3 means shift date to at most 3 days into the future.
-     *
-     * @var int
-     */
-    public $upperBoundDays;
-    /**
-     * Points to the field that contains the context, for example, an entity id.
-     * If set, must also set cryptoKey. If set, shift will be consistent for the
-     * given context.
-     *
-     * @param GooglePrivacyDlpV2FieldId $context
-     */
-    public function setContext(GooglePrivacyDlpV2FieldId $context)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2DateShiftConfig extends \Google\Model
     {
+        protected $contextType = GooglePrivacyDlpV2FieldId::class;
+        protected $contextDataType = '';
+        protected $cryptoKeyType = GooglePrivacyDlpV2CryptoKey::class;
+        protected $cryptoKeyDataType = '';
+        /**
+         * Required. For example, -5 means shift date to at most 5 days back in the
+         * past.
+         *
+         * @var int
+         */
+        public $lowerBoundDays;
+        /**
+         * Required. Range of shift in days. Actual shift will be selected at random
+         * within this range (inclusive ends). Negative means shift to earlier in
+         * time. Must not be more than 365250 days (1000 years) each direction. For
+         * example, 3 means shift date to at most 3 days into the future.
+         *
+         * @var int
+         */
+        public $upperBoundDays;
+        /**
+         * Points to the field that contains the context, for example, an entity id.
+         * If set, must also set cryptoKey. If set, shift will be consistent for the
+         * given context.
+         *
+         * @param GooglePrivacyDlpV2FieldId $context
+         */
+        public function setContext(GooglePrivacyDlpV2FieldId $context)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2FieldId
+         */
+        public function getContext()
+        {
+        }
+        /**
+         * Causes the shift to be computed based on this key and the context. This
+         * results in the same shift for the same context and crypto_key. If set, must
+         * also set context. Can only be applied to table items.
+         *
+         * @param GooglePrivacyDlpV2CryptoKey $cryptoKey
+         */
+        public function setCryptoKey(GooglePrivacyDlpV2CryptoKey $cryptoKey)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2CryptoKey
+         */
+        public function getCryptoKey()
+        {
+        }
+        /**
+         * Required. For example, -5 means shift date to at most 5 days back in the
+         * past.
+         *
+         * @param int $lowerBoundDays
+         */
+        public function setLowerBoundDays($lowerBoundDays)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getLowerBoundDays()
+        {
+        }
+        /**
+         * Required. Range of shift in days. Actual shift will be selected at random
+         * within this range (inclusive ends). Negative means shift to earlier in
+         * time. Must not be more than 365250 days (1000 years) each direction. For
+         * example, 3 means shift date to at most 3 days into the future.
+         *
+         * @param int $upperBoundDays
+         */
+        public function setUpperBoundDays($upperBoundDays)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getUpperBoundDays()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2FieldId
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2DateShiftConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContext()
-    {
-    }
-    /**
-     * Causes the shift to be computed based on this key and the context. This
-     * results in the same shift for the same context and crypto_key. If set, must
-     * also set context. Can only be applied to table items.
-     *
-     * @param GooglePrivacyDlpV2CryptoKey $cryptoKey
-     */
-    public function setCryptoKey(GooglePrivacyDlpV2CryptoKey $cryptoKey)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2CryptoKey
-     */
-    public function getCryptoKey()
-    {
-    }
-    /**
-     * Required. For example, -5 means shift date to at most 5 days back in the
-     * past.
-     *
-     * @param int $lowerBoundDays
-     */
-    public function setLowerBoundDays($lowerBoundDays)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getLowerBoundDays()
-    {
-    }
-    /**
-     * Required. Range of shift in days. Actual shift will be selected at random
-     * within this range (inclusive ends). Negative means shift to earlier in
-     * time. Must not be more than 365250 days (1000 years) each direction. For
-     * example, 3 means shift date to at most 3 days into the future.
-     *
-     * @param int $upperBoundDays
-     */
-    public function setUpperBoundDays($upperBoundDays)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getUpperBoundDays()
+    class Google_Service_DLP_GooglePrivacyDlpV2DateShiftConfig extends \Google\Service\DLP\GooglePrivacyDlpV2DateShiftConfig
     {
     }
 }

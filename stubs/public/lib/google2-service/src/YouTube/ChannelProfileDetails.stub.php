@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class ChannelProfileDetails extends \Google\Model
-{
-    /**
-     * The YouTube channel ID.
-     *
-     * @var string
-     */
-    public $channelId;
-    /**
-     * The channel's URL.
-     *
-     * @var string
-     */
-    public $channelUrl;
-    /**
-     * The channel's display name.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The channels's avatar URL.
-     *
-     * @var string
-     */
-    public $profileImageUrl;
-    /**
-     * The YouTube channel ID.
-     *
-     * @param string $channelId
-     */
-    public function setChannelId($channelId)
+namespace Google\Service\YouTube {
+    class ChannelProfileDetails extends \Google\Model
     {
+        /**
+         * The YouTube channel ID.
+         *
+         * @var string
+         */
+        public $channelId;
+        /**
+         * The channel's URL.
+         *
+         * @var string
+         */
+        public $channelUrl;
+        /**
+         * The channel's display name.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The channels's avatar URL.
+         *
+         * @var string
+         */
+        public $profileImageUrl;
+        /**
+         * The YouTube channel ID.
+         *
+         * @param string $channelId
+         */
+        public function setChannelId($channelId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChannelId()
+        {
+        }
+        /**
+         * The channel's URL.
+         *
+         * @param string $channelUrl
+         */
+        public function setChannelUrl($channelUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChannelUrl()
+        {
+        }
+        /**
+         * The channel's display name.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The channels's avatar URL.
+         *
+         * @param string $profileImageUrl
+         */
+        public function setProfileImageUrl($profileImageUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProfileImageUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\ChannelProfileDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChannelId()
-    {
-    }
-    /**
-     * The channel's URL.
-     *
-     * @param string $channelUrl
-     */
-    public function setChannelUrl($channelUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getChannelUrl()
-    {
-    }
-    /**
-     * The channel's display name.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The channels's avatar URL.
-     *
-     * @param string $profileImageUrl
-     */
-    public function setProfileImageUrl($profileImageUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProfileImageUrl()
+    class Google_Service_YouTube_ChannelProfileDetails extends \Google\Service\YouTube\ChannelProfileDetails
     {
     }
 }

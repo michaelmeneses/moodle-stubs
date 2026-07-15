@@ -21,105 +21,114 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsReporting;
-
-class SegmentDimensionFilter extends \Google\Collection
-{
-    protected $collection_key = 'expressions';
-    /**
-     * @var bool
-     */
-    public $caseSensitive;
-    /**
-     * @var string
-     */
-    public $dimensionName;
-    /**
-     * @var string[]
-     */
-    public $expressions;
-    /**
-     * @var string
-     */
-    public $maxComparisonValue;
-    /**
-     * @var string
-     */
-    public $minComparisonValue;
-    /**
-     * @var string
-     */
-    public $operator;
-    /**
-     * @param bool
-     */
-    public function setCaseSensitive($caseSensitive)
+namespace Google\Service\AnalyticsReporting {
+    class SegmentDimensionFilter extends \Google\Collection
     {
+        protected $collection_key = 'expressions';
+        /**
+         * @var bool
+         */
+        public $caseSensitive;
+        /**
+         * @var string
+         */
+        public $dimensionName;
+        /**
+         * @var string[]
+         */
+        public $expressions;
+        /**
+         * @var string
+         */
+        public $maxComparisonValue;
+        /**
+         * @var string
+         */
+        public $minComparisonValue;
+        /**
+         * @var string
+         */
+        public $operator;
+        /**
+         * @param bool
+         */
+        public function setCaseSensitive($caseSensitive)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCaseSensitive()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDimensionName($dimensionName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDimensionName()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setExpressions($expressions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getExpressions()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMaxComparisonValue($maxComparisonValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaxComparisonValue()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMinComparisonValue($minComparisonValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMinComparisonValue()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOperator($operator)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOperator()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\AnalyticsReporting\SegmentDimensionFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCaseSensitive()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDimensionName($dimensionName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDimensionName()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setExpressions($expressions)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getExpressions()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMaxComparisonValue($maxComparisonValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMaxComparisonValue()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMinComparisonValue($minComparisonValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMinComparisonValue()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOperator($operator)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOperator()
+    class Google_Service_AnalyticsReporting_SegmentDimensionFilter extends \Google\Service\AnalyticsReporting\SegmentDimensionFilter
     {
     }
 }

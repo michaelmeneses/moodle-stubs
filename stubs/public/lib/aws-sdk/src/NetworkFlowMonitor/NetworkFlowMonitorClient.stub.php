@@ -8,6 +8,7 @@
  */
 namespace Aws\NetworkFlowMonitor;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Network Flow Monitor** service.
  * @method \Aws\Result createMonitor(array $args = [])

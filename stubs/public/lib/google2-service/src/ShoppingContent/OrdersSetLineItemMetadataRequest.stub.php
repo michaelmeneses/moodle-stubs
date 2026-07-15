@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class OrdersSetLineItemMetadataRequest extends \Google\Collection
-{
-    protected $collection_key = 'annotations';
-    protected $annotationsType = OrderMerchantProvidedAnnotation::class;
-    protected $annotationsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $lineItemId;
-    /**
-     * @var string
-     */
-    public $operationId;
-    /**
-     * @var string
-     */
-    public $productId;
-    /**
-     * @param OrderMerchantProvidedAnnotation[]
-     */
-    public function setAnnotations($annotations)
+namespace Google\Service\ShoppingContent {
+    class OrdersSetLineItemMetadataRequest extends \Google\Collection
     {
+        protected $collection_key = 'annotations';
+        protected $annotationsType = OrderMerchantProvidedAnnotation::class;
+        protected $annotationsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $lineItemId;
+        /**
+         * @var string
+         */
+        public $operationId;
+        /**
+         * @var string
+         */
+        public $productId;
+        /**
+         * @param OrderMerchantProvidedAnnotation[]
+         */
+        public function setAnnotations($annotations)
+        {
+        }
+        /**
+         * @return OrderMerchantProvidedAnnotation[]
+         */
+        public function getAnnotations()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLineItemId($lineItemId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLineItemId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOperationId($operationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOperationId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setProductId($productId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProductId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return OrderMerchantProvidedAnnotation[]
+     * Runtime class alias of \Google\Service\ShoppingContent\OrdersSetLineItemMetadataRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotations()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLineItemId($lineItemId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLineItemId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOperationId($operationId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOperationId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setProductId($productId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProductId()
+    class Google_Service_ShoppingContent_OrdersSetLineItemMetadataRequest extends \Google\Service\ShoppingContent\OrdersSetLineItemMetadataRequest
     {
     }
 }

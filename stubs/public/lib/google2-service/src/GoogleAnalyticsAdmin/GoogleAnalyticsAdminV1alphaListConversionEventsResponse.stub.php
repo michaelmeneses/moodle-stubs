@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaListConversionEventsResponse extends \Google\Collection
-{
-    protected $collection_key = 'conversionEvents';
-    protected $conversionEventsType = GoogleAnalyticsAdminV1alphaConversionEvent::class;
-    protected $conversionEventsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * @param GoogleAnalyticsAdminV1alphaConversionEvent[]
-     */
-    public function setConversionEvents($conversionEvents)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaListConversionEventsResponse extends \Google\Collection
     {
+        protected $collection_key = 'conversionEvents';
+        protected $conversionEventsType = GoogleAnalyticsAdminV1alphaConversionEvent::class;
+        protected $conversionEventsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * @param GoogleAnalyticsAdminV1alphaConversionEvent[]
+         */
+        public function setConversionEvents($conversionEvents)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaConversionEvent[]
+         */
+        public function getConversionEvents()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAnalyticsAdminV1alphaConversionEvent[]
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaListConversionEventsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConversionEvents()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaListConversionEventsResponse extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaListConversionEventsResponse
     {
     }
 }

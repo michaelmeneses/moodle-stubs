@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class AuthenticatorGroupsConfig extends \Google\Model
-{
-    /**
-     * Whether this cluster should return group membership lookups during
-     * authentication using a group of security groups.
-     *
-     * @var bool
-     */
-    public $enabled;
-    /**
-     * The name of the security group-of-groups to be used. Only relevant if
-     * enabled = true.
-     *
-     * @var string
-     */
-    public $securityGroup;
-    /**
-     * Whether this cluster should return group membership lookups during
-     * authentication using a group of security groups.
-     *
-     * @param bool $enabled
-     */
-    public function setEnabled($enabled)
+namespace Google\Service\Container {
+    class AuthenticatorGroupsConfig extends \Google\Model
     {
+        /**
+         * Whether this cluster should return group membership lookups during
+         * authentication using a group of security groups.
+         *
+         * @var bool
+         */
+        public $enabled;
+        /**
+         * The name of the security group-of-groups to be used. Only relevant if
+         * enabled = true.
+         *
+         * @var string
+         */
+        public $securityGroup;
+        /**
+         * Whether this cluster should return group membership lookups during
+         * authentication using a group of security groups.
+         *
+         * @param bool $enabled
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
+        /**
+         * The name of the security group-of-groups to be used. Only relevant if
+         * enabled = true.
+         *
+         * @param string $securityGroup
+         */
+        public function setSecurityGroup($securityGroup)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSecurityGroup()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Container\AuthenticatorGroupsConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnabled()
-    {
-    }
-    /**
-     * The name of the security group-of-groups to be used. Only relevant if
-     * enabled = true.
-     *
-     * @param string $securityGroup
-     */
-    public function setSecurityGroup($securityGroup)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSecurityGroup()
+    class Google_Service_Container_AuthenticatorGroupsConfig extends \Google\Service\Container\AuthenticatorGroupsConfig
     {
     }
 }

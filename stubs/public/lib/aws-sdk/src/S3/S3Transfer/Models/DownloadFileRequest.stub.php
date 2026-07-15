@@ -8,6 +8,7 @@
  */
 namespace Aws\S3\S3Transfer\Models;
 
+use Aws\S3\S3Transfer\Utils\FileDownloadHandler;
 final class DownloadFileRequest
 {
     /** @var string */

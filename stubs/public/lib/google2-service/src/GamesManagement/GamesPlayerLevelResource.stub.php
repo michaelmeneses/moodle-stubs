@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GamesManagement;
-
-class GamesPlayerLevelResource extends \Google\Model
-{
-    /**
-     * The level for the user.
-     *
-     * @var int
-     */
-    public $level;
-    /**
-     * The maximum experience points for this level.
-     *
-     * @var string
-     */
-    public $maxExperiencePoints;
-    /**
-     * The minimum experience points for this level.
-     *
-     * @var string
-     */
-    public $minExperiencePoints;
-    /**
-     * The level for the user.
-     *
-     * @param int $level
-     */
-    public function setLevel($level)
+namespace Google\Service\GamesManagement {
+    class GamesPlayerLevelResource extends \Google\Model
     {
+        /**
+         * The level for the user.
+         *
+         * @var int
+         */
+        public $level;
+        /**
+         * The maximum experience points for this level.
+         *
+         * @var string
+         */
+        public $maxExperiencePoints;
+        /**
+         * The minimum experience points for this level.
+         *
+         * @var string
+         */
+        public $minExperiencePoints;
+        /**
+         * The level for the user.
+         *
+         * @param int $level
+         */
+        public function setLevel($level)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getLevel()
+        {
+        }
+        /**
+         * The maximum experience points for this level.
+         *
+         * @param string $maxExperiencePoints
+         */
+        public function setMaxExperiencePoints($maxExperiencePoints)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaxExperiencePoints()
+        {
+        }
+        /**
+         * The minimum experience points for this level.
+         *
+         * @param string $minExperiencePoints
+         */
+        public function setMinExperiencePoints($minExperiencePoints)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMinExperiencePoints()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\GamesManagement\GamesPlayerLevelResource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLevel()
-    {
-    }
-    /**
-     * The maximum experience points for this level.
-     *
-     * @param string $maxExperiencePoints
-     */
-    public function setMaxExperiencePoints($maxExperiencePoints)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMaxExperiencePoints()
-    {
-    }
-    /**
-     * The minimum experience points for this level.
-     *
-     * @param string $minExperiencePoints
-     */
-    public function setMinExperiencePoints($minExperiencePoints)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMinExperiencePoints()
+    class Google_Service_GamesManagement_GamesPlayerLevelResource extends \Google\Service\GamesManagement\GamesPlayerLevelResource
     {
     }
 }

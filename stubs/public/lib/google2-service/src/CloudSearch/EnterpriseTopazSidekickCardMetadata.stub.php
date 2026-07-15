@@ -21,221 +21,230 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class EnterpriseTopazSidekickCardMetadata extends \Google\Model
-{
-    /**
-     * Let MSCR decide how this card should be packed. Most cards should choose
-     * this type. This type should largely be considered equivalent to ANSWER.
-     * However, this is not guaranteed to be the case as the request to MSCR may
-     * override the static configuration.
-     */
-    public const CARD_CATEGORY_DEFAULT = 'DEFAULT';
-    /**
-     * This card should be rendered as an answer card.
-     */
-    public const CARD_CATEGORY_ANSWER = 'ANSWER';
-    /**
-     * This card should be rendered as a knowledge card (a non-organic result).
-     */
-    public const CARD_CATEGORY_KNOWLEDGE = 'KNOWLEDGE';
-    /**
-     * This card should be rendered in the Homepage.
-     */
-    public const CARD_CATEGORY_HOMEPAGE = 'HOMEPAGE';
-    /**
-     * Unknown chronology (default).
-     */
-    public const CHRONOLOGY_UNKNOWN = 'UNKNOWN';
-    /**
-     * Past.
-     */
-    public const CHRONOLOGY_PAST = 'PAST';
-    /**
-     * Recently past.
-     */
-    public const CHRONOLOGY_RECENTLY_PAST = 'RECENTLY_PAST';
-    /**
-     * Present.
-     */
-    public const CHRONOLOGY_PRESENT = 'PRESENT';
-    /**
-     * Near future.
-     */
-    public const CHRONOLOGY_NEAR_FUTURE = 'NEAR_FUTURE';
-    /**
-     * Future.
-     */
-    public const CHRONOLOGY_FUTURE = 'FUTURE';
-    /**
-     * Unknown mode (default).
-     */
-    public const RENDER_MODE_UNKNOWN_RENDER = 'UNKNOWN_RENDER';
-    /**
-     * Collapsed.
-     */
-    public const RENDER_MODE_COLLAPSED = 'COLLAPSED';
-    /**
-     * Expanded.
-     */
-    public const RENDER_MODE_EXPANDED = 'EXPANDED';
-    /**
-     * Declares a preference for how this card should be packed in MSCR. All cards
-     * in a response must correspond to a single category. As a result, cards may
-     * be dropped from the response if this field is set. Any card that does not
-     * match the category of the card with the highest priority in the response
-     * will be dropped.
-     *
-     * @var string
-     */
-    public $cardCategory;
-    /**
-     * An ID to identify the card and match actions to it. Be thoughtful of new
-     * card IDs since actions will be associated to that ID. E.g., if two card IDs
-     * collide, the system will think that the actions have been applied to the
-     * same card. Similarly, if EAS can return multiple cards of the same type
-     * (e.g., Meetings), ensure that the card_id identifies a given instance of
-     * the card so that, e.g., dismissals only affect the dismissed card as
-     * opposed to affecting all meeting cards.
-     *
-     * @var string
-     */
-    public $cardId;
-    /**
-     * Chronology.
-     *
-     * @var string
-     */
-    public $chronology;
-    /**
-     * Debug info (only reported if request's debug_level > 0).
-     *
-     * @var string
-     */
-    public $debugInfo;
-    protected $nlpMetadataType = EnterpriseTopazSidekickNlpMetadata::class;
-    protected $nlpMetadataDataType = '';
-    protected $rankingParamsType = EnterpriseTopazSidekickRankingParams::class;
-    protected $rankingParamsDataType = '';
-    /**
-     * Render mode.
-     *
-     * @var string
-     */
-    public $renderMode;
-    /**
-     * Declares a preference for how this card should be packed in MSCR. All cards
-     * in a response must correspond to a single category. As a result, cards may
-     * be dropped from the response if this field is set. Any card that does not
-     * match the category of the card with the highest priority in the response
-     * will be dropped.
-     *
-     * Accepted values: DEFAULT, ANSWER, KNOWLEDGE, HOMEPAGE
-     *
-     * @param self::CARD_CATEGORY_* $cardCategory
-     */
-    public function setCardCategory($cardCategory)
+namespace Google\Service\CloudSearch {
+    class EnterpriseTopazSidekickCardMetadata extends \Google\Model
     {
+        /**
+         * Let MSCR decide how this card should be packed. Most cards should choose
+         * this type. This type should largely be considered equivalent to ANSWER.
+         * However, this is not guaranteed to be the case as the request to MSCR may
+         * override the static configuration.
+         */
+        public const CARD_CATEGORY_DEFAULT = 'DEFAULT';
+        /**
+         * This card should be rendered as an answer card.
+         */
+        public const CARD_CATEGORY_ANSWER = 'ANSWER';
+        /**
+         * This card should be rendered as a knowledge card (a non-organic result).
+         */
+        public const CARD_CATEGORY_KNOWLEDGE = 'KNOWLEDGE';
+        /**
+         * This card should be rendered in the Homepage.
+         */
+        public const CARD_CATEGORY_HOMEPAGE = 'HOMEPAGE';
+        /**
+         * Unknown chronology (default).
+         */
+        public const CHRONOLOGY_UNKNOWN = 'UNKNOWN';
+        /**
+         * Past.
+         */
+        public const CHRONOLOGY_PAST = 'PAST';
+        /**
+         * Recently past.
+         */
+        public const CHRONOLOGY_RECENTLY_PAST = 'RECENTLY_PAST';
+        /**
+         * Present.
+         */
+        public const CHRONOLOGY_PRESENT = 'PRESENT';
+        /**
+         * Near future.
+         */
+        public const CHRONOLOGY_NEAR_FUTURE = 'NEAR_FUTURE';
+        /**
+         * Future.
+         */
+        public const CHRONOLOGY_FUTURE = 'FUTURE';
+        /**
+         * Unknown mode (default).
+         */
+        public const RENDER_MODE_UNKNOWN_RENDER = 'UNKNOWN_RENDER';
+        /**
+         * Collapsed.
+         */
+        public const RENDER_MODE_COLLAPSED = 'COLLAPSED';
+        /**
+         * Expanded.
+         */
+        public const RENDER_MODE_EXPANDED = 'EXPANDED';
+        /**
+         * Declares a preference for how this card should be packed in MSCR. All cards
+         * in a response must correspond to a single category. As a result, cards may
+         * be dropped from the response if this field is set. Any card that does not
+         * match the category of the card with the highest priority in the response
+         * will be dropped.
+         *
+         * @var string
+         */
+        public $cardCategory;
+        /**
+         * An ID to identify the card and match actions to it. Be thoughtful of new
+         * card IDs since actions will be associated to that ID. E.g., if two card IDs
+         * collide, the system will think that the actions have been applied to the
+         * same card. Similarly, if EAS can return multiple cards of the same type
+         * (e.g., Meetings), ensure that the card_id identifies a given instance of
+         * the card so that, e.g., dismissals only affect the dismissed card as
+         * opposed to affecting all meeting cards.
+         *
+         * @var string
+         */
+        public $cardId;
+        /**
+         * Chronology.
+         *
+         * @var string
+         */
+        public $chronology;
+        /**
+         * Debug info (only reported if request's debug_level > 0).
+         *
+         * @var string
+         */
+        public $debugInfo;
+        protected $nlpMetadataType = EnterpriseTopazSidekickNlpMetadata::class;
+        protected $nlpMetadataDataType = '';
+        protected $rankingParamsType = EnterpriseTopazSidekickRankingParams::class;
+        protected $rankingParamsDataType = '';
+        /**
+         * Render mode.
+         *
+         * @var string
+         */
+        public $renderMode;
+        /**
+         * Declares a preference for how this card should be packed in MSCR. All cards
+         * in a response must correspond to a single category. As a result, cards may
+         * be dropped from the response if this field is set. Any card that does not
+         * match the category of the card with the highest priority in the response
+         * will be dropped.
+         *
+         * Accepted values: DEFAULT, ANSWER, KNOWLEDGE, HOMEPAGE
+         *
+         * @param self::CARD_CATEGORY_* $cardCategory
+         */
+        public function setCardCategory($cardCategory)
+        {
+        }
+        /**
+         * @return self::CARD_CATEGORY_*
+         */
+        public function getCardCategory()
+        {
+        }
+        /**
+         * An ID to identify the card and match actions to it. Be thoughtful of new
+         * card IDs since actions will be associated to that ID. E.g., if two card IDs
+         * collide, the system will think that the actions have been applied to the
+         * same card. Similarly, if EAS can return multiple cards of the same type
+         * (e.g., Meetings), ensure that the card_id identifies a given instance of
+         * the card so that, e.g., dismissals only affect the dismissed card as
+         * opposed to affecting all meeting cards.
+         *
+         * @param string $cardId
+         */
+        public function setCardId($cardId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCardId()
+        {
+        }
+        /**
+         * Chronology.
+         *
+         * Accepted values: UNKNOWN, PAST, RECENTLY_PAST, PRESENT, NEAR_FUTURE, FUTURE
+         *
+         * @param self::CHRONOLOGY_* $chronology
+         */
+        public function setChronology($chronology)
+        {
+        }
+        /**
+         * @return self::CHRONOLOGY_*
+         */
+        public function getChronology()
+        {
+        }
+        /**
+         * Debug info (only reported if request's debug_level > 0).
+         *
+         * @param string $debugInfo
+         */
+        public function setDebugInfo($debugInfo)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDebugInfo()
+        {
+        }
+        /**
+         * Information about the NLP done to get the card.
+         *
+         * @param EnterpriseTopazSidekickNlpMetadata $nlpMetadata
+         */
+        public function setNlpMetadata(EnterpriseTopazSidekickNlpMetadata $nlpMetadata)
+        {
+        }
+        /**
+         * @return EnterpriseTopazSidekickNlpMetadata
+         */
+        public function getNlpMetadata()
+        {
+        }
+        /**
+         * Ranking params.
+         *
+         * @param EnterpriseTopazSidekickRankingParams $rankingParams
+         */
+        public function setRankingParams(EnterpriseTopazSidekickRankingParams $rankingParams)
+        {
+        }
+        /**
+         * @return EnterpriseTopazSidekickRankingParams
+         */
+        public function getRankingParams()
+        {
+        }
+        /**
+         * Render mode.
+         *
+         * Accepted values: UNKNOWN_RENDER, COLLAPSED, EXPANDED
+         *
+         * @param self::RENDER_MODE_* $renderMode
+         */
+        public function setRenderMode($renderMode)
+        {
+        }
+        /**
+         * @return self::RENDER_MODE_*
+         */
+        public function getRenderMode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::CARD_CATEGORY_*
+     * Runtime class alias of \Google\Service\CloudSearch\EnterpriseTopazSidekickCardMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCardCategory()
-    {
-    }
-    /**
-     * An ID to identify the card and match actions to it. Be thoughtful of new
-     * card IDs since actions will be associated to that ID. E.g., if two card IDs
-     * collide, the system will think that the actions have been applied to the
-     * same card. Similarly, if EAS can return multiple cards of the same type
-     * (e.g., Meetings), ensure that the card_id identifies a given instance of
-     * the card so that, e.g., dismissals only affect the dismissed card as
-     * opposed to affecting all meeting cards.
-     *
-     * @param string $cardId
-     */
-    public function setCardId($cardId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCardId()
-    {
-    }
-    /**
-     * Chronology.
-     *
-     * Accepted values: UNKNOWN, PAST, RECENTLY_PAST, PRESENT, NEAR_FUTURE, FUTURE
-     *
-     * @param self::CHRONOLOGY_* $chronology
-     */
-    public function setChronology($chronology)
-    {
-    }
-    /**
-     * @return self::CHRONOLOGY_*
-     */
-    public function getChronology()
-    {
-    }
-    /**
-     * Debug info (only reported if request's debug_level > 0).
-     *
-     * @param string $debugInfo
-     */
-    public function setDebugInfo($debugInfo)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDebugInfo()
-    {
-    }
-    /**
-     * Information about the NLP done to get the card.
-     *
-     * @param EnterpriseTopazSidekickNlpMetadata $nlpMetadata
-     */
-    public function setNlpMetadata(EnterpriseTopazSidekickNlpMetadata $nlpMetadata)
-    {
-    }
-    /**
-     * @return EnterpriseTopazSidekickNlpMetadata
-     */
-    public function getNlpMetadata()
-    {
-    }
-    /**
-     * Ranking params.
-     *
-     * @param EnterpriseTopazSidekickRankingParams $rankingParams
-     */
-    public function setRankingParams(EnterpriseTopazSidekickRankingParams $rankingParams)
-    {
-    }
-    /**
-     * @return EnterpriseTopazSidekickRankingParams
-     */
-    public function getRankingParams()
-    {
-    }
-    /**
-     * Render mode.
-     *
-     * Accepted values: UNKNOWN_RENDER, COLLAPSED, EXPANDED
-     *
-     * @param self::RENDER_MODE_* $renderMode
-     */
-    public function setRenderMode($renderMode)
-    {
-    }
-    /**
-     * @return self::RENDER_MODE_*
-     */
-    public function getRenderMode()
+    class Google_Service_CloudSearch_EnterpriseTopazSidekickCardMetadata extends \Google\Service\CloudSearch\EnterpriseTopazSidekickCardMetadata
     {
     }
 }

@@ -21,195 +21,204 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIdentity;
-
-class GoogleAppsCloudidentityDevicesV1AndroidAttributes extends \Google\Model
-{
-    /**
-     * Ownership privilege is not set.
-     */
-    public const OWNERSHIP_PRIVILEGE_OWNERSHIP_PRIVILEGE_UNSPECIFIED = 'OWNERSHIP_PRIVILEGE_UNSPECIFIED';
-    /**
-     * Active device administrator privileges on the device.
-     */
-    public const OWNERSHIP_PRIVILEGE_DEVICE_ADMINISTRATOR = 'DEVICE_ADMINISTRATOR';
-    /**
-     * Profile Owner privileges. The account is in a managed corporate profile.
-     */
-    public const OWNERSHIP_PRIVILEGE_PROFILE_OWNER = 'PROFILE_OWNER';
-    /**
-     * Device Owner privileges on the device.
-     */
-    public const OWNERSHIP_PRIVILEGE_DEVICE_OWNER = 'DEVICE_OWNER';
-    /**
-     * Whether the device passes Android CTS compliance.
-     *
-     * @var bool
-     */
-    public $ctsProfileMatch;
-    /**
-     * Whether applications from unknown sources can be installed on device.
-     *
-     * @var bool
-     */
-    public $enabledUnknownSources;
-    /**
-     * Whether any potentially harmful apps were detected on the device.
-     *
-     * @var bool
-     */
-    public $hasPotentiallyHarmfulApps;
-    /**
-     * Whether this account is on an owner/primary profile. For phones, only true
-     * for owner profiles. Android 4+ devices can have secondary or restricted
-     * user profiles.
-     *
-     * @var bool
-     */
-    public $ownerProfileAccount;
-    /**
-     * Ownership privileges on device.
-     *
-     * @var string
-     */
-    public $ownershipPrivilege;
-    /**
-     * Whether device supports Android work profiles. If false, this service will
-     * not block access to corp data even if an administrator turns on the
-     * "Enforce Work Profile" policy.
-     *
-     * @var bool
-     */
-    public $supportsWorkProfile;
-    /**
-     * Whether Android verified boot status is GREEN.
-     *
-     * @var bool
-     */
-    public $verifiedBoot;
-    /**
-     * Whether Google Play Protect Verify Apps is enabled.
-     *
-     * @var bool
-     */
-    public $verifyAppsEnabled;
-    /**
-     * Whether the device passes Android CTS compliance.
-     *
-     * @param bool $ctsProfileMatch
-     */
-    public function setCtsProfileMatch($ctsProfileMatch)
+namespace Google\Service\CloudIdentity {
+    class GoogleAppsCloudidentityDevicesV1AndroidAttributes extends \Google\Model
     {
+        /**
+         * Ownership privilege is not set.
+         */
+        public const OWNERSHIP_PRIVILEGE_OWNERSHIP_PRIVILEGE_UNSPECIFIED = 'OWNERSHIP_PRIVILEGE_UNSPECIFIED';
+        /**
+         * Active device administrator privileges on the device.
+         */
+        public const OWNERSHIP_PRIVILEGE_DEVICE_ADMINISTRATOR = 'DEVICE_ADMINISTRATOR';
+        /**
+         * Profile Owner privileges. The account is in a managed corporate profile.
+         */
+        public const OWNERSHIP_PRIVILEGE_PROFILE_OWNER = 'PROFILE_OWNER';
+        /**
+         * Device Owner privileges on the device.
+         */
+        public const OWNERSHIP_PRIVILEGE_DEVICE_OWNER = 'DEVICE_OWNER';
+        /**
+         * Whether the device passes Android CTS compliance.
+         *
+         * @var bool
+         */
+        public $ctsProfileMatch;
+        /**
+         * Whether applications from unknown sources can be installed on device.
+         *
+         * @var bool
+         */
+        public $enabledUnknownSources;
+        /**
+         * Whether any potentially harmful apps were detected on the device.
+         *
+         * @var bool
+         */
+        public $hasPotentiallyHarmfulApps;
+        /**
+         * Whether this account is on an owner/primary profile. For phones, only true
+         * for owner profiles. Android 4+ devices can have secondary or restricted
+         * user profiles.
+         *
+         * @var bool
+         */
+        public $ownerProfileAccount;
+        /**
+         * Ownership privileges on device.
+         *
+         * @var string
+         */
+        public $ownershipPrivilege;
+        /**
+         * Whether device supports Android work profiles. If false, this service will
+         * not block access to corp data even if an administrator turns on the
+         * "Enforce Work Profile" policy.
+         *
+         * @var bool
+         */
+        public $supportsWorkProfile;
+        /**
+         * Whether Android verified boot status is GREEN.
+         *
+         * @var bool
+         */
+        public $verifiedBoot;
+        /**
+         * Whether Google Play Protect Verify Apps is enabled.
+         *
+         * @var bool
+         */
+        public $verifyAppsEnabled;
+        /**
+         * Whether the device passes Android CTS compliance.
+         *
+         * @param bool $ctsProfileMatch
+         */
+        public function setCtsProfileMatch($ctsProfileMatch)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCtsProfileMatch()
+        {
+        }
+        /**
+         * Whether applications from unknown sources can be installed on device.
+         *
+         * @param bool $enabledUnknownSources
+         */
+        public function setEnabledUnknownSources($enabledUnknownSources)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabledUnknownSources()
+        {
+        }
+        /**
+         * Whether any potentially harmful apps were detected on the device.
+         *
+         * @param bool $hasPotentiallyHarmfulApps
+         */
+        public function setHasPotentiallyHarmfulApps($hasPotentiallyHarmfulApps)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getHasPotentiallyHarmfulApps()
+        {
+        }
+        /**
+         * Whether this account is on an owner/primary profile. For phones, only true
+         * for owner profiles. Android 4+ devices can have secondary or restricted
+         * user profiles.
+         *
+         * @param bool $ownerProfileAccount
+         */
+        public function setOwnerProfileAccount($ownerProfileAccount)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getOwnerProfileAccount()
+        {
+        }
+        /**
+         * Ownership privileges on device.
+         *
+         * Accepted values: OWNERSHIP_PRIVILEGE_UNSPECIFIED, DEVICE_ADMINISTRATOR,
+         * PROFILE_OWNER, DEVICE_OWNER
+         *
+         * @param self::OWNERSHIP_PRIVILEGE_* $ownershipPrivilege
+         */
+        public function setOwnershipPrivilege($ownershipPrivilege)
+        {
+        }
+        /**
+         * @return self::OWNERSHIP_PRIVILEGE_*
+         */
+        public function getOwnershipPrivilege()
+        {
+        }
+        /**
+         * Whether device supports Android work profiles. If false, this service will
+         * not block access to corp data even if an administrator turns on the
+         * "Enforce Work Profile" policy.
+         *
+         * @param bool $supportsWorkProfile
+         */
+        public function setSupportsWorkProfile($supportsWorkProfile)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSupportsWorkProfile()
+        {
+        }
+        /**
+         * Whether Android verified boot status is GREEN.
+         *
+         * @param bool $verifiedBoot
+         */
+        public function setVerifiedBoot($verifiedBoot)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getVerifiedBoot()
+        {
+        }
+        /**
+         * Whether Google Play Protect Verify Apps is enabled.
+         *
+         * @param bool $verifyAppsEnabled
+         */
+        public function setVerifyAppsEnabled($verifyAppsEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getVerifyAppsEnabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudIdentity\GoogleAppsCloudidentityDevicesV1AndroidAttributes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCtsProfileMatch()
-    {
-    }
-    /**
-     * Whether applications from unknown sources can be installed on device.
-     *
-     * @param bool $enabledUnknownSources
-     */
-    public function setEnabledUnknownSources($enabledUnknownSources)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnabledUnknownSources()
-    {
-    }
-    /**
-     * Whether any potentially harmful apps were detected on the device.
-     *
-     * @param bool $hasPotentiallyHarmfulApps
-     */
-    public function setHasPotentiallyHarmfulApps($hasPotentiallyHarmfulApps)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getHasPotentiallyHarmfulApps()
-    {
-    }
-    /**
-     * Whether this account is on an owner/primary profile. For phones, only true
-     * for owner profiles. Android 4+ devices can have secondary or restricted
-     * user profiles.
-     *
-     * @param bool $ownerProfileAccount
-     */
-    public function setOwnerProfileAccount($ownerProfileAccount)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getOwnerProfileAccount()
-    {
-    }
-    /**
-     * Ownership privileges on device.
-     *
-     * Accepted values: OWNERSHIP_PRIVILEGE_UNSPECIFIED, DEVICE_ADMINISTRATOR,
-     * PROFILE_OWNER, DEVICE_OWNER
-     *
-     * @param self::OWNERSHIP_PRIVILEGE_* $ownershipPrivilege
-     */
-    public function setOwnershipPrivilege($ownershipPrivilege)
-    {
-    }
-    /**
-     * @return self::OWNERSHIP_PRIVILEGE_*
-     */
-    public function getOwnershipPrivilege()
-    {
-    }
-    /**
-     * Whether device supports Android work profiles. If false, this service will
-     * not block access to corp data even if an administrator turns on the
-     * "Enforce Work Profile" policy.
-     *
-     * @param bool $supportsWorkProfile
-     */
-    public function setSupportsWorkProfile($supportsWorkProfile)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSupportsWorkProfile()
-    {
-    }
-    /**
-     * Whether Android verified boot status is GREEN.
-     *
-     * @param bool $verifiedBoot
-     */
-    public function setVerifiedBoot($verifiedBoot)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getVerifiedBoot()
-    {
-    }
-    /**
-     * Whether Google Play Protect Verify Apps is enabled.
-     *
-     * @param bool $verifyAppsEnabled
-     */
-    public function setVerifyAppsEnabled($verifyAppsEnabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getVerifyAppsEnabled()
+    class Google_Service_CloudIdentity_GoogleAppsCloudidentityDevicesV1AndroidAttributes extends \Google\Service\CloudIdentity\GoogleAppsCloudidentityDevicesV1AndroidAttributes
     {
     }
 }

@@ -21,85 +21,94 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSColorMap extends \Google\Model
-{
-    /**
-     * Should be used during training.
-     *
-     * @var string
-     */
-    public $annotationSpecIdToken;
-    protected $colorType = Color::class;
-    protected $colorDataType = '';
-    /**
-     * Should be used during preprocessing.
-     *
-     * @var string
-     */
-    public $displayName;
-    protected $intColorType = XPSColorMapIntColor::class;
-    protected $intColorDataType = '';
-    /**
-     * Should be used during training.
-     *
-     * @param string $annotationSpecIdToken
-     */
-    public function setAnnotationSpecIdToken($annotationSpecIdToken)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSColorMap extends \Google\Model
     {
+        /**
+         * Should be used during training.
+         *
+         * @var string
+         */
+        public $annotationSpecIdToken;
+        protected $colorType = Color::class;
+        protected $colorDataType = '';
+        /**
+         * Should be used during preprocessing.
+         *
+         * @var string
+         */
+        public $displayName;
+        protected $intColorType = XPSColorMapIntColor::class;
+        protected $intColorDataType = '';
+        /**
+         * Should be used during training.
+         *
+         * @param string $annotationSpecIdToken
+         */
+        public function setAnnotationSpecIdToken($annotationSpecIdToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnnotationSpecIdToken()
+        {
+        }
+        /**
+         * This type is deprecated in favor of the IntColor below. This is because
+         * google.type.Color represent color has a float which semantically does not
+         * reflect discrete classes/categories concept. Moreover, to handle it well we
+         * need to have some tolerance when converting to a discretized color. As
+         * such, the recommendation is to have API surface still use google.type.Color
+         * while internally IntColor is used.
+         *
+         * @deprecated
+         * @param Color $color
+         */
+        public function setColor(Color $color)
+        {
+        }
+        /**
+         * @deprecated
+         * @return Color
+         */
+        public function getColor()
+        {
+        }
+        /**
+         * Should be used during preprocessing.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * @param XPSColorMapIntColor $intColor
+         */
+        public function setIntColor(XPSColorMapIntColor $intColor)
+        {
+        }
+        /**
+         * @return XPSColorMapIntColor
+         */
+        public function getIntColor()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSColorMap registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotationSpecIdToken()
-    {
-    }
-    /**
-     * This type is deprecated in favor of the IntColor below. This is because
-     * google.type.Color represent color has a float which semantically does not
-     * reflect discrete classes/categories concept. Moreover, to handle it well we
-     * need to have some tolerance when converting to a discretized color. As
-     * such, the recommendation is to have API surface still use google.type.Color
-     * while internally IntColor is used.
-     *
-     * @deprecated
-     * @param Color $color
-     */
-    public function setColor(Color $color)
-    {
-    }
-    /**
-     * @deprecated
-     * @return Color
-     */
-    public function getColor()
-    {
-    }
-    /**
-     * Should be used during preprocessing.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * @param XPSColorMapIntColor $intColor
-     */
-    public function setIntColor(XPSColorMapIntColor $intColor)
-    {
-    }
-    /**
-     * @return XPSColorMapIntColor
-     */
-    public function getIntColor()
+    class Google_Service_CloudNaturalLanguage_XPSColorMap extends \Google\Service\CloudNaturalLanguage\XPSColorMap
     {
     }
 }

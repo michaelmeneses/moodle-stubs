@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class AutoUpgradeOptions extends \Google\Model
-{
-    /**
-     * Output only. This field is set when upgrades are about to commence with the
-     * approximate start time for the upgrades, in
-     * [RFC3339](https://www.ietf.org/rfc/rfc3339.txt) text format.
-     *
-     * @var string
-     */
-    public $autoUpgradeStartTime;
-    /**
-     * Output only. This field is set when upgrades are about to commence with the
-     * description of the upgrade.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Output only. This field is set when upgrades are about to commence with the
-     * approximate start time for the upgrades, in
-     * [RFC3339](https://www.ietf.org/rfc/rfc3339.txt) text format.
-     *
-     * @param string $autoUpgradeStartTime
-     */
-    public function setAutoUpgradeStartTime($autoUpgradeStartTime)
+namespace Google\Service\Container {
+    class AutoUpgradeOptions extends \Google\Model
     {
+        /**
+         * Output only. This field is set when upgrades are about to commence with the
+         * approximate start time for the upgrades, in
+         * [RFC3339](https://www.ietf.org/rfc/rfc3339.txt) text format.
+         *
+         * @var string
+         */
+        public $autoUpgradeStartTime;
+        /**
+         * Output only. This field is set when upgrades are about to commence with the
+         * description of the upgrade.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Output only. This field is set when upgrades are about to commence with the
+         * approximate start time for the upgrades, in
+         * [RFC3339](https://www.ietf.org/rfc/rfc3339.txt) text format.
+         *
+         * @param string $autoUpgradeStartTime
+         */
+        public function setAutoUpgradeStartTime($autoUpgradeStartTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAutoUpgradeStartTime()
+        {
+        }
+        /**
+         * Output only. This field is set when upgrades are about to commence with the
+         * description of the upgrade.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Container\AutoUpgradeOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAutoUpgradeStartTime()
-    {
-    }
-    /**
-     * Output only. This field is set when upgrades are about to commence with the
-     * description of the upgrade.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
+    class Google_Service_Container_AutoUpgradeOptions extends \Google\Service\Container\AutoUpgradeOptions
     {
     }
 }

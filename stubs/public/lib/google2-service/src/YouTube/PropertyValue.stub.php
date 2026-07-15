@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class PropertyValue extends \Google\Model
-{
-    /**
-     * A property.
-     *
-     * @var string
-     */
-    public $property;
-    /**
-     * The property's value.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * A property.
-     *
-     * @param string $property
-     */
-    public function setProperty($property)
+namespace Google\Service\YouTube {
+    class PropertyValue extends \Google\Model
     {
+        /**
+         * A property.
+         *
+         * @var string
+         */
+        public $property;
+        /**
+         * The property's value.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * A property.
+         *
+         * @param string $property
+         */
+        public function setProperty($property)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProperty()
+        {
+        }
+        /**
+         * The property's value.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\PropertyValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProperty()
-    {
-    }
-    /**
-     * The property's value.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_YouTube_PropertyValue extends \Google\Service\YouTube\PropertyValue
     {
     }
 }

@@ -21,97 +21,106 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Solar;
-
-class CashPurchaseSavings extends \Google\Model
-{
-    protected $outOfPocketCostType = Money::class;
-    protected $outOfPocketCostDataType = '';
-    /**
-     * Number of years until payback occurs. A negative value means payback never
-     * occurs within the lifetime period.
-     *
-     * @var float
-     */
-    public $paybackYears;
-    protected $rebateValueType = Money::class;
-    protected $rebateValueDataType = '';
-    protected $savingsType = SavingsOverTime::class;
-    protected $savingsDataType = '';
-    protected $upfrontCostType = Money::class;
-    protected $upfrontCostDataType = '';
-    /**
-     * Initial cost before tax incentives: the amount that must be paid out-of-
-     * pocket. Contrast with `upfront_cost`, which is after tax incentives.
-     *
-     * @param Money $outOfPocketCost
-     */
-    public function setOutOfPocketCost(Money $outOfPocketCost)
+namespace Google\Service\Solar {
+    class CashPurchaseSavings extends \Google\Model
     {
+        protected $outOfPocketCostType = Money::class;
+        protected $outOfPocketCostDataType = '';
+        /**
+         * Number of years until payback occurs. A negative value means payback never
+         * occurs within the lifetime period.
+         *
+         * @var float
+         */
+        public $paybackYears;
+        protected $rebateValueType = Money::class;
+        protected $rebateValueDataType = '';
+        protected $savingsType = SavingsOverTime::class;
+        protected $savingsDataType = '';
+        protected $upfrontCostType = Money::class;
+        protected $upfrontCostDataType = '';
+        /**
+         * Initial cost before tax incentives: the amount that must be paid out-of-
+         * pocket. Contrast with `upfront_cost`, which is after tax incentives.
+         *
+         * @param Money $outOfPocketCost
+         */
+        public function setOutOfPocketCost(Money $outOfPocketCost)
+        {
+        }
+        /**
+         * @return Money
+         */
+        public function getOutOfPocketCost()
+        {
+        }
+        /**
+         * Number of years until payback occurs. A negative value means payback never
+         * occurs within the lifetime period.
+         *
+         * @param float $paybackYears
+         */
+        public function setPaybackYears($paybackYears)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getPaybackYears()
+        {
+        }
+        /**
+         * The value of all tax rebates.
+         *
+         * @param Money $rebateValue
+         */
+        public function setRebateValue(Money $rebateValue)
+        {
+        }
+        /**
+         * @return Money
+         */
+        public function getRebateValue()
+        {
+        }
+        /**
+         * How much is saved (or not) over the lifetime period.
+         *
+         * @param SavingsOverTime $savings
+         */
+        public function setSavings(SavingsOverTime $savings)
+        {
+        }
+        /**
+         * @return SavingsOverTime
+         */
+        public function getSavings()
+        {
+        }
+        /**
+         * Initial cost after tax incentives: it's the amount that must be paid during
+         * first year. Contrast with `out_of_pocket_cost`, which is before tax
+         * incentives.
+         *
+         * @param Money $upfrontCost
+         */
+        public function setUpfrontCost(Money $upfrontCost)
+        {
+        }
+        /**
+         * @return Money
+         */
+        public function getUpfrontCost()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Money
+     * Runtime class alias of \Google\Service\Solar\CashPurchaseSavings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOutOfPocketCost()
-    {
-    }
-    /**
-     * Number of years until payback occurs. A negative value means payback never
-     * occurs within the lifetime period.
-     *
-     * @param float $paybackYears
-     */
-    public function setPaybackYears($paybackYears)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getPaybackYears()
-    {
-    }
-    /**
-     * The value of all tax rebates.
-     *
-     * @param Money $rebateValue
-     */
-    public function setRebateValue(Money $rebateValue)
-    {
-    }
-    /**
-     * @return Money
-     */
-    public function getRebateValue()
-    {
-    }
-    /**
-     * How much is saved (or not) over the lifetime period.
-     *
-     * @param SavingsOverTime $savings
-     */
-    public function setSavings(SavingsOverTime $savings)
-    {
-    }
-    /**
-     * @return SavingsOverTime
-     */
-    public function getSavings()
-    {
-    }
-    /**
-     * Initial cost after tax incentives: it's the amount that must be paid during
-     * first year. Contrast with `out_of_pocket_cost`, which is before tax
-     * incentives.
-     *
-     * @param Money $upfrontCost
-     */
-    public function setUpfrontCost(Money $upfrontCost)
-    {
-    }
-    /**
-     * @return Money
-     */
-    public function getUpfrontCost()
+    class Google_Service_Solar_CashPurchaseSavings extends \Google\Service\Solar\CashPurchaseSavings
     {
     }
 }

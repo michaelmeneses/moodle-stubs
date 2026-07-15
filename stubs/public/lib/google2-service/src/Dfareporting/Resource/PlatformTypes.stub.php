@@ -21,39 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting\Resource;
-
-/**
- * The "platformTypes" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dfareportingService = new Google\Service\Dfareporting(...);
- *   $platformTypes = $dfareportingService->platformTypes;
- *  </code>
- */
-class PlatformTypes extends \Google\Service\Resource
-{
+namespace Google\Service\Dfareporting\Resource {
+    use Google\Service\Dfareporting\PlatformType;
+    use Google\Service\Dfareporting\PlatformTypesListResponse;
     /**
-     * Gets one platform type by ID. (platformTypes.get)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param string $id Platform type ID.
-     * @param array $optParams Optional parameters.
-     * @return PlatformType
-     * @throws \Google\Service\Exception
+     * The "platformTypes" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dfareportingService = new Google\Service\Dfareporting(...);
+     *   $platformTypes = $dfareportingService->platformTypes;
+     *  </code>
      */
-    public function get($profileId, $id, $optParams = [])
+    class PlatformTypes extends \Google\Service\Resource
     {
+        /**
+         * Gets one platform type by ID. (platformTypes.get)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param string $id Platform type ID.
+         * @param array $optParams Optional parameters.
+         * @return PlatformType
+         * @throws \Google\Service\Exception
+         */
+        public function get($profileId, $id, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves a list of platform types. (platformTypes.listPlatformTypes)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param array $optParams Optional parameters.
+         * @return PlatformTypesListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listPlatformTypes($profileId, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Retrieves a list of platform types. (platformTypes.listPlatformTypes)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param array $optParams Optional parameters.
-     * @return PlatformTypesListResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Dfareporting\Resource\PlatformTypes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listPlatformTypes($profileId, $optParams = [])
+    class Google_Service_Dfareporting_Resource_PlatformTypes extends \Google\Service\Dfareporting\Resource\PlatformTypes
     {
     }
 }

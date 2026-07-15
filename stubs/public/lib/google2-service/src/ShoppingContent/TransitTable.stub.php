@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class TransitTable extends \Google\Collection
-{
-    protected $collection_key = 'transitTimeLabels';
-    /**
-     * A list of postal group names. The last value can be `"all other
-     * locations"`. Example: `["zone 1", "zone 2", "all other locations"]`. The
-     * referred postal code groups must match the delivery country of the service.
-     *
-     * @var string[]
-     */
-    public $postalCodeGroupNames;
-    protected $rowsType = TransitTableTransitTimeRow::class;
-    protected $rowsDataType = 'array';
-    /**
-     * A list of transit time labels. The last value can be `"all other labels"`.
-     * Example: `["food", "electronics", "all other labels"]`.
-     *
-     * @var string[]
-     */
-    public $transitTimeLabels;
-    /**
-     * A list of postal group names. The last value can be `"all other
-     * locations"`. Example: `["zone 1", "zone 2", "all other locations"]`. The
-     * referred postal code groups must match the delivery country of the service.
-     *
-     * @param string[] $postalCodeGroupNames
-     */
-    public function setPostalCodeGroupNames($postalCodeGroupNames)
+namespace Google\Service\ShoppingContent {
+    class TransitTable extends \Google\Collection
     {
+        protected $collection_key = 'transitTimeLabels';
+        /**
+         * A list of postal group names. The last value can be `"all other
+         * locations"`. Example: `["zone 1", "zone 2", "all other locations"]`. The
+         * referred postal code groups must match the delivery country of the service.
+         *
+         * @var string[]
+         */
+        public $postalCodeGroupNames;
+        protected $rowsType = TransitTableTransitTimeRow::class;
+        protected $rowsDataType = 'array';
+        /**
+         * A list of transit time labels. The last value can be `"all other labels"`.
+         * Example: `["food", "electronics", "all other labels"]`.
+         *
+         * @var string[]
+         */
+        public $transitTimeLabels;
+        /**
+         * A list of postal group names. The last value can be `"all other
+         * locations"`. Example: `["zone 1", "zone 2", "all other locations"]`. The
+         * referred postal code groups must match the delivery country of the service.
+         *
+         * @param string[] $postalCodeGroupNames
+         */
+        public function setPostalCodeGroupNames($postalCodeGroupNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPostalCodeGroupNames()
+        {
+        }
+        /**
+         * @param TransitTableTransitTimeRow[] $rows
+         */
+        public function setRows($rows)
+        {
+        }
+        /**
+         * @return TransitTableTransitTimeRow[]
+         */
+        public function getRows()
+        {
+        }
+        /**
+         * A list of transit time labels. The last value can be `"all other labels"`.
+         * Example: `["food", "electronics", "all other labels"]`.
+         *
+         * @param string[] $transitTimeLabels
+         */
+        public function setTransitTimeLabels($transitTimeLabels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTransitTimeLabels()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\ShoppingContent\TransitTable registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPostalCodeGroupNames()
-    {
-    }
-    /**
-     * @param TransitTableTransitTimeRow[] $rows
-     */
-    public function setRows($rows)
-    {
-    }
-    /**
-     * @return TransitTableTransitTimeRow[]
-     */
-    public function getRows()
-    {
-    }
-    /**
-     * A list of transit time labels. The last value can be `"all other labels"`.
-     * Example: `["food", "electronics", "all other labels"]`.
-     *
-     * @param string[] $transitTimeLabels
-     */
-    public function setTransitTimeLabels($transitTimeLabels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTransitTimeLabels()
+    class Google_Service_ShoppingContent_TransitTable extends \Google\Service\ShoppingContent\TransitTable
     {
     }
 }

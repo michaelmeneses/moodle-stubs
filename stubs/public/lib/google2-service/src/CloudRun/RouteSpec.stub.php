@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class RouteSpec extends \Google\Collection
-{
-    protected $collection_key = 'traffic';
-    protected $trafficType = TrafficTarget::class;
-    protected $trafficDataType = 'array';
-    /**
-     * @param TrafficTarget[]
-     */
-    public function setTraffic($traffic)
+namespace Google\Service\CloudRun {
+    class RouteSpec extends \Google\Collection
     {
+        protected $collection_key = 'traffic';
+        protected $trafficType = TrafficTarget::class;
+        protected $trafficDataType = 'array';
+        /**
+         * @param TrafficTarget[]
+         */
+        public function setTraffic($traffic)
+        {
+        }
+        /**
+         * @return TrafficTarget[]
+         */
+        public function getTraffic()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TrafficTarget[]
+     * Runtime class alias of \Google\Service\CloudRun\RouteSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTraffic()
+    class Google_Service_CloudRun_RouteSpec extends \Google\Service\CloudRun\RouteSpec
     {
     }
 }

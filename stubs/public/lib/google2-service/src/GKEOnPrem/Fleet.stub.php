@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class Fleet extends \Google\Model
-{
-    /**
-     * Output only. The name of the managed fleet Membership resource associated
-     * to this cluster. Membership names are formatted as
-     * `projects//locations//memberships/`.
-     *
-     * @var string
-     */
-    public $membership;
-    /**
-     * Output only. The name of the managed fleet Membership resource associated
-     * to this cluster. Membership names are formatted as
-     * `projects//locations//memberships/`.
-     *
-     * @param string $membership
-     */
-    public function setMembership($membership)
+namespace Google\Service\GKEOnPrem {
+    class Fleet extends \Google\Model
     {
+        /**
+         * Output only. The name of the managed fleet Membership resource associated
+         * to this cluster. Membership names are formatted as
+         * `projects//locations//memberships/`.
+         *
+         * @var string
+         */
+        public $membership;
+        /**
+         * Output only. The name of the managed fleet Membership resource associated
+         * to this cluster. Membership names are formatted as
+         * `projects//locations//memberships/`.
+         *
+         * @param string $membership
+         */
+        public function setMembership($membership)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMembership()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEOnPrem\Fleet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMembership()
+    class Google_Service_GKEOnPrem_Fleet extends \Google\Service\GKEOnPrem\Fleet
     {
     }
 }

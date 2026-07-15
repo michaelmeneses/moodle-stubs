@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class IosAppInfo extends \Google\Model
-{
-    /**
-     * The name of the app. Required
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The name of the app. Required
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\ToolResults {
+    class IosAppInfo extends \Google\Model
     {
+        /**
+         * The name of the app. Required
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The name of the app. Required
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ToolResults\IosAppInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
+    class Google_Service_ToolResults_IosAppInfo extends \Google\Service\ToolResults\IosAppInfo
     {
     }
 }

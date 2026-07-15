@@ -8,6 +8,7 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Writer;
 
+use PhpOffice\PhpSpreadsheet\Spreadsheet;
 interface IWriter
 {
     public const SAVE_WITH_CHARTS = 1;

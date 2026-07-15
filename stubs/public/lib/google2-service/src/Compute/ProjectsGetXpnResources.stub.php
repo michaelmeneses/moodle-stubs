@@ -21,78 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class ProjectsGetXpnResources extends \Google\Collection
-{
-    protected $collection_key = 'resources';
-    /**
-     * Output only. [Output Only] Type of resource.
-     * Alwayscompute#projectsGetXpnResources for lists of service resources (a.k.a
-     * service projects)
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Output only. [Output Only] This token allows you to get the next page of
-     * results for list requests. If the number of results is larger
-     * thanmaxResults, use the nextPageToken as a value for the query parameter
-     * pageToken in the next list request. Subsequent list requests will have
-     * their own nextPageToken to continue paging through the results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $resourcesType = XpnResourceId::class;
-    protected $resourcesDataType = 'array';
-    /**
-     * Output only. [Output Only] Type of resource.
-     * Alwayscompute#projectsGetXpnResources for lists of service resources (a.k.a
-     * service projects)
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Compute {
+    class ProjectsGetXpnResources extends \Google\Collection
     {
+        protected $collection_key = 'resources';
+        /**
+         * Output only. [Output Only] Type of resource.
+         * Alwayscompute#projectsGetXpnResources for lists of service resources (a.k.a
+         * service projects)
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Output only. [Output Only] This token allows you to get the next page of
+         * results for list requests. If the number of results is larger
+         * thanmaxResults, use the nextPageToken as a value for the query parameter
+         * pageToken in the next list request. Subsequent list requests will have
+         * their own nextPageToken to continue paging through the results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $resourcesType = XpnResourceId::class;
+        protected $resourcesDataType = 'array';
+        /**
+         * Output only. [Output Only] Type of resource.
+         * Alwayscompute#projectsGetXpnResources for lists of service resources (a.k.a
+         * service projects)
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Output only. [Output Only] This token allows you to get the next page of
+         * results for list requests. If the number of results is larger
+         * thanmaxResults, use the nextPageToken as a value for the query parameter
+         * pageToken in the next list request. Subsequent list requests will have
+         * their own nextPageToken to continue paging through the results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Service resources (a.k.a service projects) attached to this project as
+         * their shared VPC host.
+         *
+         * @param XpnResourceId[] $resources
+         */
+        public function setResources($resources)
+        {
+        }
+        /**
+         * @return XpnResourceId[]
+         */
+        public function getResources()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\ProjectsGetXpnResources registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * Output only. [Output Only] This token allows you to get the next page of
-     * results for list requests. If the number of results is larger
-     * thanmaxResults, use the nextPageToken as a value for the query parameter
-     * pageToken in the next list request. Subsequent list requests will have
-     * their own nextPageToken to continue paging through the results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Service resources (a.k.a service projects) attached to this project as
-     * their shared VPC host.
-     *
-     * @param XpnResourceId[] $resources
-     */
-    public function setResources($resources)
-    {
-    }
-    /**
-     * @return XpnResourceId[]
-     */
-    public function getResources()
+    class Google_Service_Compute_ProjectsGetXpnResources extends \Google\Service\Compute\ProjectsGetXpnResources
     {
     }
 }

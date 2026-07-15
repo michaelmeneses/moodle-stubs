@@ -21,114 +21,123 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigLakeService;
-
-class Catalog extends \Google\Model
-{
-    /**
-     * Output only. The creation time of the catalog.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Output only. The deletion time of the catalog. Only set after the catalog
-     * is deleted.
-     *
-     * @var string
-     */
-    public $deleteTime;
-    /**
-     * Output only. The time when this catalog is considered expired. Only set
-     * after the catalog is deleted.
-     *
-     * @var string
-     */
-    public $expireTime;
-    /**
-     * Output only. The resource name. Format: projects/{project_id_or_number}/loc
-     * ations/{location_id}/catalogs/{catalog_id}
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The last modification time of the catalog.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. The creation time of the catalog.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\BigLakeService {
+    class Catalog extends \Google\Model
     {
+        /**
+         * Output only. The creation time of the catalog.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Output only. The deletion time of the catalog. Only set after the catalog
+         * is deleted.
+         *
+         * @var string
+         */
+        public $deleteTime;
+        /**
+         * Output only. The time when this catalog is considered expired. Only set
+         * after the catalog is deleted.
+         *
+         * @var string
+         */
+        public $expireTime;
+        /**
+         * Output only. The resource name. Format: projects/{project_id_or_number}/loc
+         * ations/{location_id}/catalogs/{catalog_id}
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The last modification time of the catalog.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. The creation time of the catalog.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. The deletion time of the catalog. Only set after the catalog
+         * is deleted.
+         *
+         * @param string $deleteTime
+         */
+        public function setDeleteTime($deleteTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeleteTime()
+        {
+        }
+        /**
+         * Output only. The time when this catalog is considered expired. Only set
+         * after the catalog is deleted.
+         *
+         * @param string $expireTime
+         */
+        public function setExpireTime($expireTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpireTime()
+        {
+        }
+        /**
+         * Output only. The resource name. Format: projects/{project_id_or_number}/loc
+         * ations/{location_id}/catalogs/{catalog_id}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The last modification time of the catalog.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BigLakeService\Catalog registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. The deletion time of the catalog. Only set after the catalog
-     * is deleted.
-     *
-     * @param string $deleteTime
-     */
-    public function setDeleteTime($deleteTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeleteTime()
-    {
-    }
-    /**
-     * Output only. The time when this catalog is considered expired. Only set
-     * after the catalog is deleted.
-     *
-     * @param string $expireTime
-     */
-    public function setExpireTime($expireTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExpireTime()
-    {
-    }
-    /**
-     * Output only. The resource name. Format: projects/{project_id_or_number}/loc
-     * ations/{location_id}/catalogs/{catalog_id}
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The last modification time of the catalog.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_BigLakeService_Catalog extends \Google\Service\BigLakeService\Catalog
     {
     }
 }

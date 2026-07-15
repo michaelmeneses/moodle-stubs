@@ -8,6 +8,10 @@
  */
 namespace Aws;
 
+use Aws\Credentials\CredentialsInterface;
+use Aws\Credentials\CredentialSources;
+use Aws\Token;
+use Aws\Token\TokenInterface;
 /**
  * A placeholder for gathering metrics in a request.
  *

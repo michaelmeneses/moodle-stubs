@@ -21,257 +21,266 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class Connection extends \Google\Model
-{
-    /**
-     * Optional. Allows clients to store small amounts of arbitrary data.
-     *
-     * @var string[]
-     */
-    public $annotations;
-    protected $bitbucketCloudConfigType = BitbucketCloudConfig::class;
-    protected $bitbucketCloudConfigDataType = '';
-    protected $bitbucketDataCenterConfigType = BitbucketDataCenterConfig::class;
-    protected $bitbucketDataCenterConfigDataType = '';
-    /**
-     * Output only. Server assigned timestamp for when the connection was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Optional. If disabled is set to true, functionality is disabled for this
-     * connection. Repository based API methods and webhooks processing for
-     * repositories in this connection will be disabled.
-     *
-     * @var bool
-     */
-    public $disabled;
-    /**
-     * This checksum is computed by the server based on the value of other fields,
-     * and may be sent on update and delete requests to ensure the client has an
-     * up-to-date value before proceeding.
-     *
-     * @var string
-     */
-    public $etag;
-    protected $githubConfigType = GitHubConfig::class;
-    protected $githubConfigDataType = '';
-    protected $githubEnterpriseConfigType = GoogleDevtoolsCloudbuildV2GitHubEnterpriseConfig::class;
-    protected $githubEnterpriseConfigDataType = '';
-    protected $gitlabConfigType = GoogleDevtoolsCloudbuildV2GitLabConfig::class;
-    protected $gitlabConfigDataType = '';
-    protected $installationStateType = InstallationState::class;
-    protected $installationStateDataType = '';
-    /**
-     * Immutable. The resource name of the connection, in the format
-     * `projects/{project}/locations/{location}/connections/{connection_id}`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. Set to true when the connection is being set up or updated in
-     * the background.
-     *
-     * @var bool
-     */
-    public $reconciling;
-    /**
-     * Output only. Server assigned timestamp for when the connection was updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Optional. Allows clients to store small amounts of arbitrary data.
-     *
-     * @param string[] $annotations
-     */
-    public function setAnnotations($annotations)
+namespace Google\Service\CloudBuild {
+    class Connection extends \Google\Model
     {
+        /**
+         * Optional. Allows clients to store small amounts of arbitrary data.
+         *
+         * @var string[]
+         */
+        public $annotations;
+        protected $bitbucketCloudConfigType = BitbucketCloudConfig::class;
+        protected $bitbucketCloudConfigDataType = '';
+        protected $bitbucketDataCenterConfigType = BitbucketDataCenterConfig::class;
+        protected $bitbucketDataCenterConfigDataType = '';
+        /**
+         * Output only. Server assigned timestamp for when the connection was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Optional. If disabled is set to true, functionality is disabled for this
+         * connection. Repository based API methods and webhooks processing for
+         * repositories in this connection will be disabled.
+         *
+         * @var bool
+         */
+        public $disabled;
+        /**
+         * This checksum is computed by the server based on the value of other fields,
+         * and may be sent on update and delete requests to ensure the client has an
+         * up-to-date value before proceeding.
+         *
+         * @var string
+         */
+        public $etag;
+        protected $githubConfigType = GitHubConfig::class;
+        protected $githubConfigDataType = '';
+        protected $githubEnterpriseConfigType = GoogleDevtoolsCloudbuildV2GitHubEnterpriseConfig::class;
+        protected $githubEnterpriseConfigDataType = '';
+        protected $gitlabConfigType = GoogleDevtoolsCloudbuildV2GitLabConfig::class;
+        protected $gitlabConfigDataType = '';
+        protected $installationStateType = InstallationState::class;
+        protected $installationStateDataType = '';
+        /**
+         * Immutable. The resource name of the connection, in the format
+         * `projects/{project}/locations/{location}/connections/{connection_id}`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. Set to true when the connection is being set up or updated in
+         * the background.
+         *
+         * @var bool
+         */
+        public $reconciling;
+        /**
+         * Output only. Server assigned timestamp for when the connection was updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Optional. Allows clients to store small amounts of arbitrary data.
+         *
+         * @param string[] $annotations
+         */
+        public function setAnnotations($annotations)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAnnotations()
+        {
+        }
+        /**
+         * Configuration for connections to Bitbucket Cloud.
+         *
+         * @param BitbucketCloudConfig $bitbucketCloudConfig
+         */
+        public function setBitbucketCloudConfig(BitbucketCloudConfig $bitbucketCloudConfig)
+        {
+        }
+        /**
+         * @return BitbucketCloudConfig
+         */
+        public function getBitbucketCloudConfig()
+        {
+        }
+        /**
+         * Configuration for connections to Bitbucket Data Center.
+         *
+         * @param BitbucketDataCenterConfig $bitbucketDataCenterConfig
+         */
+        public function setBitbucketDataCenterConfig(BitbucketDataCenterConfig $bitbucketDataCenterConfig)
+        {
+        }
+        /**
+         * @return BitbucketDataCenterConfig
+         */
+        public function getBitbucketDataCenterConfig()
+        {
+        }
+        /**
+         * Output only. Server assigned timestamp for when the connection was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Optional. If disabled is set to true, functionality is disabled for this
+         * connection. Repository based API methods and webhooks processing for
+         * repositories in this connection will be disabled.
+         *
+         * @param bool $disabled
+         */
+        public function setDisabled($disabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisabled()
+        {
+        }
+        /**
+         * This checksum is computed by the server based on the value of other fields,
+         * and may be sent on update and delete requests to ensure the client has an
+         * up-to-date value before proceeding.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * Configuration for connections to github.com.
+         *
+         * @param GitHubConfig $githubConfig
+         */
+        public function setGithubConfig(GitHubConfig $githubConfig)
+        {
+        }
+        /**
+         * @return GitHubConfig
+         */
+        public function getGithubConfig()
+        {
+        }
+        /**
+         * Configuration for connections to an instance of GitHub Enterprise.
+         *
+         * @param GoogleDevtoolsCloudbuildV2GitHubEnterpriseConfig $githubEnterpriseConfig
+         */
+        public function setGithubEnterpriseConfig(GoogleDevtoolsCloudbuildV2GitHubEnterpriseConfig $githubEnterpriseConfig)
+        {
+        }
+        /**
+         * @return GoogleDevtoolsCloudbuildV2GitHubEnterpriseConfig
+         */
+        public function getGithubEnterpriseConfig()
+        {
+        }
+        /**
+         * Configuration for connections to gitlab.com or an instance of GitLab
+         * Enterprise.
+         *
+         * @param GoogleDevtoolsCloudbuildV2GitLabConfig $gitlabConfig
+         */
+        public function setGitlabConfig(GoogleDevtoolsCloudbuildV2GitLabConfig $gitlabConfig)
+        {
+        }
+        /**
+         * @return GoogleDevtoolsCloudbuildV2GitLabConfig
+         */
+        public function getGitlabConfig()
+        {
+        }
+        /**
+         * Output only. Installation state of the Connection.
+         *
+         * @param InstallationState $installationState
+         */
+        public function setInstallationState(InstallationState $installationState)
+        {
+        }
+        /**
+         * @return InstallationState
+         */
+        public function getInstallationState()
+        {
+        }
+        /**
+         * Immutable. The resource name of the connection, in the format
+         * `projects/{project}/locations/{location}/connections/{connection_id}`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. Set to true when the connection is being set up or updated in
+         * the background.
+         *
+         * @param bool $reconciling
+         */
+        public function setReconciling($reconciling)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getReconciling()
+        {
+        }
+        /**
+         * Output only. Server assigned timestamp for when the connection was updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudBuild\Connection registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotations()
-    {
-    }
-    /**
-     * Configuration for connections to Bitbucket Cloud.
-     *
-     * @param BitbucketCloudConfig $bitbucketCloudConfig
-     */
-    public function setBitbucketCloudConfig(BitbucketCloudConfig $bitbucketCloudConfig)
-    {
-    }
-    /**
-     * @return BitbucketCloudConfig
-     */
-    public function getBitbucketCloudConfig()
-    {
-    }
-    /**
-     * Configuration for connections to Bitbucket Data Center.
-     *
-     * @param BitbucketDataCenterConfig $bitbucketDataCenterConfig
-     */
-    public function setBitbucketDataCenterConfig(BitbucketDataCenterConfig $bitbucketDataCenterConfig)
-    {
-    }
-    /**
-     * @return BitbucketDataCenterConfig
-     */
-    public function getBitbucketDataCenterConfig()
-    {
-    }
-    /**
-     * Output only. Server assigned timestamp for when the connection was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Optional. If disabled is set to true, functionality is disabled for this
-     * connection. Repository based API methods and webhooks processing for
-     * repositories in this connection will be disabled.
-     *
-     * @param bool $disabled
-     */
-    public function setDisabled($disabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDisabled()
-    {
-    }
-    /**
-     * This checksum is computed by the server based on the value of other fields,
-     * and may be sent on update and delete requests to ensure the client has an
-     * up-to-date value before proceeding.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * Configuration for connections to github.com.
-     *
-     * @param GitHubConfig $githubConfig
-     */
-    public function setGithubConfig(GitHubConfig $githubConfig)
-    {
-    }
-    /**
-     * @return GitHubConfig
-     */
-    public function getGithubConfig()
-    {
-    }
-    /**
-     * Configuration for connections to an instance of GitHub Enterprise.
-     *
-     * @param GoogleDevtoolsCloudbuildV2GitHubEnterpriseConfig $githubEnterpriseConfig
-     */
-    public function setGithubEnterpriseConfig(GoogleDevtoolsCloudbuildV2GitHubEnterpriseConfig $githubEnterpriseConfig)
-    {
-    }
-    /**
-     * @return GoogleDevtoolsCloudbuildV2GitHubEnterpriseConfig
-     */
-    public function getGithubEnterpriseConfig()
-    {
-    }
-    /**
-     * Configuration for connections to gitlab.com or an instance of GitLab
-     * Enterprise.
-     *
-     * @param GoogleDevtoolsCloudbuildV2GitLabConfig $gitlabConfig
-     */
-    public function setGitlabConfig(GoogleDevtoolsCloudbuildV2GitLabConfig $gitlabConfig)
-    {
-    }
-    /**
-     * @return GoogleDevtoolsCloudbuildV2GitLabConfig
-     */
-    public function getGitlabConfig()
-    {
-    }
-    /**
-     * Output only. Installation state of the Connection.
-     *
-     * @param InstallationState $installationState
-     */
-    public function setInstallationState(InstallationState $installationState)
-    {
-    }
-    /**
-     * @return InstallationState
-     */
-    public function getInstallationState()
-    {
-    }
-    /**
-     * Immutable. The resource name of the connection, in the format
-     * `projects/{project}/locations/{location}/connections/{connection_id}`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. Set to true when the connection is being set up or updated in
-     * the background.
-     *
-     * @param bool $reconciling
-     */
-    public function setReconciling($reconciling)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getReconciling()
-    {
-    }
-    /**
-     * Output only. Server assigned timestamp for when the connection was updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_CloudBuild_Connection extends \Google\Service\CloudBuild\Connection
     {
     }
 }

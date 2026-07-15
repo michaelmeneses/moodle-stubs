@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1MultiSpeakerVoiceConfig extends \Google\Collection
-{
-    protected $collection_key = 'speakerVoiceConfigs';
-    protected $speakerVoiceConfigsType = GoogleCloudAiplatformV1SpeakerVoiceConfig::class;
-    protected $speakerVoiceConfigsDataType = 'array';
-    /**
-     * Required. A list of configurations for the voices of the speakers. Exactly
-     * two speaker voice configurations must be provided.
-     *
-     * @param GoogleCloudAiplatformV1SpeakerVoiceConfig[] $speakerVoiceConfigs
-     */
-    public function setSpeakerVoiceConfigs($speakerVoiceConfigs)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1MultiSpeakerVoiceConfig extends \Google\Collection
     {
+        protected $collection_key = 'speakerVoiceConfigs';
+        protected $speakerVoiceConfigsType = GoogleCloudAiplatformV1SpeakerVoiceConfig::class;
+        protected $speakerVoiceConfigsDataType = 'array';
+        /**
+         * Required. A list of configurations for the voices of the speakers. Exactly
+         * two speaker voice configurations must be provided.
+         *
+         * @param GoogleCloudAiplatformV1SpeakerVoiceConfig[] $speakerVoiceConfigs
+         */
+        public function setSpeakerVoiceConfigs($speakerVoiceConfigs)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SpeakerVoiceConfig[]
+         */
+        public function getSpeakerVoiceConfigs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1SpeakerVoiceConfig[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1MultiSpeakerVoiceConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSpeakerVoiceConfigs()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1MultiSpeakerVoiceConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1MultiSpeakerVoiceConfig
     {
     }
 }

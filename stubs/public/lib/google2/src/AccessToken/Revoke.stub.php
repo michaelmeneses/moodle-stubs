@@ -23,6 +23,11 @@
  */
 namespace Google\AccessToken;
 
+use Google\Auth\HttpHandler\HttpHandlerFactory;
+use Google\Client;
+use GuzzleHttp\ClientInterface;
+use GuzzleHttp\Psr7;
+use GuzzleHttp\Psr7\Request;
 /**
  * Wrapper around Google Access Tokens which provides convenience functions
  *

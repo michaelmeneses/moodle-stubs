@@ -21,128 +21,137 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class OperatingSystemVersion extends \Google\Model
-{
-    /**
-     * ID of this operating system version.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#operatingSystemVersion".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Major version (leftmost number) of this operating system version.
-     *
-     * @var string
-     */
-    public $majorVersion;
-    /**
-     * Minor version (number after the first dot) of this operating system
-     * version.
-     *
-     * @var string
-     */
-    public $minorVersion;
-    /**
-     * Name of this operating system version.
-     *
-     * @var string
-     */
-    public $name;
-    protected $operatingSystemType = OperatingSystem::class;
-    protected $operatingSystemDataType = '';
-    /**
-     * ID of this operating system version.
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\Dfareporting {
+    class OperatingSystemVersion extends \Google\Model
     {
+        /**
+         * ID of this operating system version.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#operatingSystemVersion".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Major version (leftmost number) of this operating system version.
+         *
+         * @var string
+         */
+        public $majorVersion;
+        /**
+         * Minor version (number after the first dot) of this operating system
+         * version.
+         *
+         * @var string
+         */
+        public $minorVersion;
+        /**
+         * Name of this operating system version.
+         *
+         * @var string
+         */
+        public $name;
+        protected $operatingSystemType = OperatingSystem::class;
+        protected $operatingSystemDataType = '';
+        /**
+         * ID of this operating system version.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#operatingSystemVersion".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Major version (leftmost number) of this operating system version.
+         *
+         * @param string $majorVersion
+         */
+        public function setMajorVersion($majorVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMajorVersion()
+        {
+        }
+        /**
+         * Minor version (number after the first dot) of this operating system
+         * version.
+         *
+         * @param string $minorVersion
+         */
+        public function setMinorVersion($minorVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMinorVersion()
+        {
+        }
+        /**
+         * Name of this operating system version.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Operating system of this operating system version.
+         *
+         * @param OperatingSystem $operatingSystem
+         */
+        public function setOperatingSystem(OperatingSystem $operatingSystem)
+        {
+        }
+        /**
+         * @return OperatingSystem
+         */
+        public function getOperatingSystem()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\OperatingSystemVersion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#operatingSystemVersion".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Major version (leftmost number) of this operating system version.
-     *
-     * @param string $majorVersion
-     */
-    public function setMajorVersion($majorVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMajorVersion()
-    {
-    }
-    /**
-     * Minor version (number after the first dot) of this operating system
-     * version.
-     *
-     * @param string $minorVersion
-     */
-    public function setMinorVersion($minorVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMinorVersion()
-    {
-    }
-    /**
-     * Name of this operating system version.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Operating system of this operating system version.
-     *
-     * @param OperatingSystem $operatingSystem
-     */
-    public function setOperatingSystem(OperatingSystem $operatingSystem)
-    {
-    }
-    /**
-     * @return OperatingSystem
-     */
-    public function getOperatingSystem()
+    class Google_Service_Dfareporting_OperatingSystemVersion extends \Google\Service\Dfareporting\OperatingSystemVersion
     {
     }
 }

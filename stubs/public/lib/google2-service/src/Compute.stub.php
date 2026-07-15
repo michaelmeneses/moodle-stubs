@@ -21,155 +21,165 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for Compute (v1).
- *
- * <p>
- * Creates and runs virtual machines on Google Cloud Platform.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://cloud.google.com/compute/" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class Compute extends \Google\Service
-{
-    /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
-    const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
-    /** View and manage your Google Compute Engine resources. */
-    const COMPUTE = "https://www.googleapis.com/auth/compute";
-    /** View your Google Compute Engine resources. */
-    const COMPUTE_READONLY = "https://www.googleapis.com/auth/compute.readonly";
-    /** Manage your data and permissions in Cloud Storage and see the email address for your Google Account. */
-    const DEVSTORAGE_FULL_CONTROL = "https://www.googleapis.com/auth/devstorage.full_control";
-    /** View your data in Google Cloud Storage. */
-    const DEVSTORAGE_READ_ONLY = "https://www.googleapis.com/auth/devstorage.read_only";
-    /** Manage your data in Cloud Storage and see the email address of your Google Account. */
-    const DEVSTORAGE_READ_WRITE = "https://www.googleapis.com/auth/devstorage.read_write";
-    public $acceleratorTypes;
-    public $addresses;
-    public $advice;
-    public $autoscalers;
-    public $backendBuckets;
-    public $backendServices;
-    public $crossSiteNetworks;
-    public $diskTypes;
-    public $disks;
-    public $externalVpnGateways;
-    public $firewallPolicies;
-    public $firewalls;
-    public $forwardingRules;
-    public $futureReservations;
-    public $globalAddresses;
-    public $globalForwardingRules;
-    public $globalNetworkEndpointGroups;
-    public $globalOperations;
-    public $globalOrganizationOperations;
-    public $globalPublicDelegatedPrefixes;
-    public $healthChecks;
-    public $httpHealthChecks;
-    public $httpsHealthChecks;
-    public $imageFamilyViews;
-    public $images;
-    public $instanceGroupManagerResizeRequests;
-    public $instanceGroupManagers;
-    public $instanceGroups;
-    public $instanceSettings;
-    public $instanceTemplates;
-    public $instances;
-    public $instantSnapshots;
-    public $interconnectAttachmentGroups;
-    public $interconnectAttachments;
-    public $interconnectGroups;
-    public $interconnectLocations;
-    public $interconnectRemoteLocations;
-    public $interconnects;
-    public $licenseCodes;
-    public $licenses;
-    public $machineImages;
-    public $machineTypes;
-    public $networkAttachments;
-    public $networkEdgeSecurityServices;
-    public $networkEndpointGroups;
-    public $networkFirewallPolicies;
-    public $networkProfiles;
-    public $networks;
-    public $nodeGroups;
-    public $nodeTemplates;
-    public $nodeTypes;
-    public $organizationSecurityPolicies;
-    public $packetMirrorings;
-    public $previewFeatures;
-    public $projects;
-    public $publicAdvertisedPrefixes;
-    public $publicDelegatedPrefixes;
-    public $regionAutoscalers;
-    public $regionBackendServices;
-    public $regionCommitments;
-    public $regionDiskTypes;
-    public $regionDisks;
-    public $regionHealthCheckServices;
-    public $regionHealthChecks;
-    public $regionInstanceGroupManagers;
-    public $regionInstanceGroups;
-    public $regionInstanceTemplates;
-    public $regionInstances;
-    public $regionInstantSnapshots;
-    public $regionNetworkEndpointGroups;
-    public $regionNetworkFirewallPolicies;
-    public $regionNotificationEndpoints;
-    public $regionOperations;
-    public $regionSecurityPolicies;
-    public $regionSslCertificates;
-    public $regionSslPolicies;
-    public $regionTargetHttpProxies;
-    public $regionTargetHttpsProxies;
-    public $regionTargetTcpProxies;
-    public $regionUrlMaps;
-    public $regionZones;
-    public $regions;
-    public $reservationBlocks;
-    public $reservationSubBlocks;
-    public $reservations;
-    public $resourcePolicies;
-    public $routers;
-    public $routes;
-    public $securityPolicies;
-    public $serviceAttachments;
-    public $snapshotSettings;
-    public $snapshots;
-    public $sslCertificates;
-    public $sslPolicies;
-    public $storagePoolTypes;
-    public $storagePools;
-    public $subnetworks;
-    public $targetGrpcProxies;
-    public $targetHttpProxies;
-    public $targetHttpsProxies;
-    public $targetInstances;
-    public $targetPools;
-    public $targetSslProxies;
-    public $targetTcpProxies;
-    public $targetVpnGateways;
-    public $urlMaps;
-    public $vpnGateways;
-    public $vpnTunnels;
-    public $wireGroups;
-    public $zoneOperations;
-    public $zones;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the Compute service.
+     * Service definition for Compute (v1).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * Creates and runs virtual machines on Google Cloud Platform.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://cloud.google.com/compute/" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class Compute extends \Google\Service
+    {
+        /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
+        const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
+        /** View and manage your Google Compute Engine resources. */
+        const COMPUTE = "https://www.googleapis.com/auth/compute";
+        /** View your Google Compute Engine resources. */
+        const COMPUTE_READONLY = "https://www.googleapis.com/auth/compute.readonly";
+        /** Manage your data and permissions in Cloud Storage and see the email address for your Google Account. */
+        const DEVSTORAGE_FULL_CONTROL = "https://www.googleapis.com/auth/devstorage.full_control";
+        /** View your data in Google Cloud Storage. */
+        const DEVSTORAGE_READ_ONLY = "https://www.googleapis.com/auth/devstorage.read_only";
+        /** Manage your data in Cloud Storage and see the email address of your Google Account. */
+        const DEVSTORAGE_READ_WRITE = "https://www.googleapis.com/auth/devstorage.read_write";
+        public $acceleratorTypes;
+        public $addresses;
+        public $advice;
+        public $autoscalers;
+        public $backendBuckets;
+        public $backendServices;
+        public $crossSiteNetworks;
+        public $diskTypes;
+        public $disks;
+        public $externalVpnGateways;
+        public $firewallPolicies;
+        public $firewalls;
+        public $forwardingRules;
+        public $futureReservations;
+        public $globalAddresses;
+        public $globalForwardingRules;
+        public $globalNetworkEndpointGroups;
+        public $globalOperations;
+        public $globalOrganizationOperations;
+        public $globalPublicDelegatedPrefixes;
+        public $healthChecks;
+        public $httpHealthChecks;
+        public $httpsHealthChecks;
+        public $imageFamilyViews;
+        public $images;
+        public $instanceGroupManagerResizeRequests;
+        public $instanceGroupManagers;
+        public $instanceGroups;
+        public $instanceSettings;
+        public $instanceTemplates;
+        public $instances;
+        public $instantSnapshots;
+        public $interconnectAttachmentGroups;
+        public $interconnectAttachments;
+        public $interconnectGroups;
+        public $interconnectLocations;
+        public $interconnectRemoteLocations;
+        public $interconnects;
+        public $licenseCodes;
+        public $licenses;
+        public $machineImages;
+        public $machineTypes;
+        public $networkAttachments;
+        public $networkEdgeSecurityServices;
+        public $networkEndpointGroups;
+        public $networkFirewallPolicies;
+        public $networkProfiles;
+        public $networks;
+        public $nodeGroups;
+        public $nodeTemplates;
+        public $nodeTypes;
+        public $organizationSecurityPolicies;
+        public $packetMirrorings;
+        public $previewFeatures;
+        public $projects;
+        public $publicAdvertisedPrefixes;
+        public $publicDelegatedPrefixes;
+        public $regionAutoscalers;
+        public $regionBackendServices;
+        public $regionCommitments;
+        public $regionDiskTypes;
+        public $regionDisks;
+        public $regionHealthCheckServices;
+        public $regionHealthChecks;
+        public $regionInstanceGroupManagers;
+        public $regionInstanceGroups;
+        public $regionInstanceTemplates;
+        public $regionInstances;
+        public $regionInstantSnapshots;
+        public $regionNetworkEndpointGroups;
+        public $regionNetworkFirewallPolicies;
+        public $regionNotificationEndpoints;
+        public $regionOperations;
+        public $regionSecurityPolicies;
+        public $regionSslCertificates;
+        public $regionSslPolicies;
+        public $regionTargetHttpProxies;
+        public $regionTargetHttpsProxies;
+        public $regionTargetTcpProxies;
+        public $regionUrlMaps;
+        public $regionZones;
+        public $regions;
+        public $reservationBlocks;
+        public $reservationSubBlocks;
+        public $reservations;
+        public $resourcePolicies;
+        public $routers;
+        public $routes;
+        public $securityPolicies;
+        public $serviceAttachments;
+        public $snapshotSettings;
+        public $snapshots;
+        public $sslCertificates;
+        public $sslPolicies;
+        public $storagePoolTypes;
+        public $storagePools;
+        public $subnetworks;
+        public $targetGrpcProxies;
+        public $targetHttpProxies;
+        public $targetHttpsProxies;
+        public $targetInstances;
+        public $targetPools;
+        public $targetSslProxies;
+        public $targetTcpProxies;
+        public $targetVpnGateways;
+        public $urlMaps;
+        public $vpnGateways;
+        public $vpnTunnels;
+        public $wireGroups;
+        public $zoneOperations;
+        public $zones;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the Compute service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Compute registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Compute extends \Google\Service\Compute
     {
     }
 }

@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseAppHosting;
-
-class TrafficSet extends \Google\Collection
-{
-    protected $collection_key = 'splits';
-    protected $splitsType = TrafficSplit::class;
-    protected $splitsDataType = 'array';
-    /**
-     * Required. The list of traffic splits.
-     *
-     * @param TrafficSplit[] $splits
-     */
-    public function setSplits($splits)
+namespace Google\Service\FirebaseAppHosting {
+    class TrafficSet extends \Google\Collection
     {
+        protected $collection_key = 'splits';
+        protected $splitsType = TrafficSplit::class;
+        protected $splitsDataType = 'array';
+        /**
+         * Required. The list of traffic splits.
+         *
+         * @param TrafficSplit[] $splits
+         */
+        public function setSplits($splits)
+        {
+        }
+        /**
+         * @return TrafficSplit[]
+         */
+        public function getSplits()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TrafficSplit[]
+     * Runtime class alias of \Google\Service\FirebaseAppHosting\TrafficSet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSplits()
+    class Google_Service_FirebaseAppHosting_TrafficSet extends \Google\Service\FirebaseAppHosting\TrafficSet
     {
     }
 }

@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class NodeGroupsDeleteNodesRequest extends \Google\Collection
-{
-    protected $collection_key = 'nodes';
-    /**
-     * Names of the nodes to delete.
-     *
-     * @var string[]
-     */
-    public $nodes;
-    /**
-     * Names of the nodes to delete.
-     *
-     * @param string[] $nodes
-     */
-    public function setNodes($nodes)
+namespace Google\Service\Compute {
+    class NodeGroupsDeleteNodesRequest extends \Google\Collection
     {
+        protected $collection_key = 'nodes';
+        /**
+         * Names of the nodes to delete.
+         *
+         * @var string[]
+         */
+        public $nodes;
+        /**
+         * Names of the nodes to delete.
+         *
+         * @param string[] $nodes
+         */
+        public function setNodes($nodes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getNodes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Compute\NodeGroupsDeleteNodesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNodes()
+    class Google_Service_Compute_NodeGroupsDeleteNodesRequest extends \Google\Service\Compute\NodeGroupsDeleteNodesRequest
     {
     }
 }

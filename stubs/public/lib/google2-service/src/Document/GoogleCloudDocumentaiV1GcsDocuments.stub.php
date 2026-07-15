@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1GcsDocuments extends \Google\Collection
-{
-    protected $collection_key = 'documents';
-    protected $documentsType = GoogleCloudDocumentaiV1GcsDocument::class;
-    protected $documentsDataType = 'array';
-    /**
-     * The list of documents.
-     *
-     * @param GoogleCloudDocumentaiV1GcsDocument[] $documents
-     */
-    public function setDocuments($documents)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1GcsDocuments extends \Google\Collection
     {
+        protected $collection_key = 'documents';
+        protected $documentsType = GoogleCloudDocumentaiV1GcsDocument::class;
+        protected $documentsDataType = 'array';
+        /**
+         * The list of documents.
+         *
+         * @param GoogleCloudDocumentaiV1GcsDocument[] $documents
+         */
+        public function setDocuments($documents)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1GcsDocument[]
+         */
+        public function getDocuments()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiV1GcsDocument[]
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1GcsDocuments registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDocuments()
+    class Google_Service_Document_GoogleCloudDocumentaiV1GcsDocuments extends \Google\Service\Document\GoogleCloudDocumentaiV1GcsDocuments
     {
     }
 }

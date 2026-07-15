@@ -21,151 +21,160 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise;
-
-class ManagedProperty extends \Google\Collection
-{
-    protected $collection_key = 'valueStringArray';
-    /**
-     * The unique key that identifies the property.
-     *
-     * @var string
-     */
-    public $key;
-    /**
-     * The boolean value - this will only be present if type of the property is
-     * bool.
-     *
-     * @var bool
-     */
-    public $valueBool;
-    protected $valueBundleType = ManagedPropertyBundle::class;
-    protected $valueBundleDataType = '';
-    protected $valueBundleArrayType = ManagedPropertyBundle::class;
-    protected $valueBundleArrayDataType = 'array';
-    /**
-     * The integer value - this will only be present if type of the property is
-     * integer.
-     *
-     * @var int
-     */
-    public $valueInteger;
-    /**
-     * The string value - this will only be present if type of the property is
-     * string, choice or hidden.
-     *
-     * @var string
-     */
-    public $valueString;
-    /**
-     * The list of string values - this will only be present if type of the
-     * property is multiselect.
-     *
-     * @var string[]
-     */
-    public $valueStringArray;
-    /**
-     * The unique key that identifies the property.
-     *
-     * @param string $key
-     */
-    public function setKey($key)
+namespace Google\Service\AndroidEnterprise {
+    class ManagedProperty extends \Google\Collection
     {
+        protected $collection_key = 'valueStringArray';
+        /**
+         * The unique key that identifies the property.
+         *
+         * @var string
+         */
+        public $key;
+        /**
+         * The boolean value - this will only be present if type of the property is
+         * bool.
+         *
+         * @var bool
+         */
+        public $valueBool;
+        protected $valueBundleType = ManagedPropertyBundle::class;
+        protected $valueBundleDataType = '';
+        protected $valueBundleArrayType = ManagedPropertyBundle::class;
+        protected $valueBundleArrayDataType = 'array';
+        /**
+         * The integer value - this will only be present if type of the property is
+         * integer.
+         *
+         * @var int
+         */
+        public $valueInteger;
+        /**
+         * The string value - this will only be present if type of the property is
+         * string, choice or hidden.
+         *
+         * @var string
+         */
+        public $valueString;
+        /**
+         * The list of string values - this will only be present if type of the
+         * property is multiselect.
+         *
+         * @var string[]
+         */
+        public $valueStringArray;
+        /**
+         * The unique key that identifies the property.
+         *
+         * @param string $key
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * The boolean value - this will only be present if type of the property is
+         * bool.
+         *
+         * @param bool $valueBool
+         */
+        public function setValueBool($valueBool)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getValueBool()
+        {
+        }
+        /**
+         * The bundle of managed properties - this will only be present if type of the
+         * property is bundle.
+         *
+         * @param ManagedPropertyBundle $valueBundle
+         */
+        public function setValueBundle(ManagedPropertyBundle $valueBundle)
+        {
+        }
+        /**
+         * @return ManagedPropertyBundle
+         */
+        public function getValueBundle()
+        {
+        }
+        /**
+         * The list of bundles of properties - this will only be present if type of
+         * the property is bundle_array.
+         *
+         * @param ManagedPropertyBundle[] $valueBundleArray
+         */
+        public function setValueBundleArray($valueBundleArray)
+        {
+        }
+        /**
+         * @return ManagedPropertyBundle[]
+         */
+        public function getValueBundleArray()
+        {
+        }
+        /**
+         * The integer value - this will only be present if type of the property is
+         * integer.
+         *
+         * @param int $valueInteger
+         */
+        public function setValueInteger($valueInteger)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getValueInteger()
+        {
+        }
+        /**
+         * The string value - this will only be present if type of the property is
+         * string, choice or hidden.
+         *
+         * @param string $valueString
+         */
+        public function setValueString($valueString)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValueString()
+        {
+        }
+        /**
+         * The list of string values - this will only be present if type of the
+         * property is multiselect.
+         *
+         * @param string[] $valueStringArray
+         */
+        public function setValueStringArray($valueStringArray)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getValueStringArray()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidEnterprise\ManagedProperty registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKey()
-    {
-    }
-    /**
-     * The boolean value - this will only be present if type of the property is
-     * bool.
-     *
-     * @param bool $valueBool
-     */
-    public function setValueBool($valueBool)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getValueBool()
-    {
-    }
-    /**
-     * The bundle of managed properties - this will only be present if type of the
-     * property is bundle.
-     *
-     * @param ManagedPropertyBundle $valueBundle
-     */
-    public function setValueBundle(ManagedPropertyBundle $valueBundle)
-    {
-    }
-    /**
-     * @return ManagedPropertyBundle
-     */
-    public function getValueBundle()
-    {
-    }
-    /**
-     * The list of bundles of properties - this will only be present if type of
-     * the property is bundle_array.
-     *
-     * @param ManagedPropertyBundle[] $valueBundleArray
-     */
-    public function setValueBundleArray($valueBundleArray)
-    {
-    }
-    /**
-     * @return ManagedPropertyBundle[]
-     */
-    public function getValueBundleArray()
-    {
-    }
-    /**
-     * The integer value - this will only be present if type of the property is
-     * integer.
-     *
-     * @param int $valueInteger
-     */
-    public function setValueInteger($valueInteger)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getValueInteger()
-    {
-    }
-    /**
-     * The string value - this will only be present if type of the property is
-     * string, choice or hidden.
-     *
-     * @param string $valueString
-     */
-    public function setValueString($valueString)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValueString()
-    {
-    }
-    /**
-     * The list of string values - this will only be present if type of the
-     * property is multiselect.
-     *
-     * @param string[] $valueStringArray
-     */
-    public function setValueStringArray($valueStringArray)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getValueStringArray()
+    class Google_Service_AndroidEnterprise_ManagedProperty extends \Google\Service\AndroidEnterprise\ManagedProperty
     {
     }
 }

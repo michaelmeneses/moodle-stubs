@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1Contacts extends \Google\Collection
-{
-    protected $collection_key = 'people';
-    protected $peopleType = GoogleCloudDatacatalogV1ContactsPerson::class;
-    protected $peopleDataType = 'array';
-    /**
-     * The list of contact people for the entry.
-     *
-     * @param GoogleCloudDatacatalogV1ContactsPerson[] $people
-     */
-    public function setPeople($people)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1Contacts extends \Google\Collection
     {
+        protected $collection_key = 'people';
+        protected $peopleType = GoogleCloudDatacatalogV1ContactsPerson::class;
+        protected $peopleDataType = 'array';
+        /**
+         * The list of contact people for the entry.
+         *
+         * @param GoogleCloudDatacatalogV1ContactsPerson[] $people
+         */
+        public function setPeople($people)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1ContactsPerson[]
+         */
+        public function getPeople()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatacatalogV1ContactsPerson[]
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1Contacts registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPeople()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1Contacts extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1Contacts
     {
     }
 }

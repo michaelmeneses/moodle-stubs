@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIdentity;
-
-class RestrictionEvaluations extends \Google\Model
-{
-    protected $memberRestrictionEvaluationType = MembershipRoleRestrictionEvaluation::class;
-    protected $memberRestrictionEvaluationDataType = '';
-    /**
-     * Evaluation of the member restriction applied to this membership. Empty if
-     * the user lacks permission to view the restriction evaluation.
-     *
-     * @param MembershipRoleRestrictionEvaluation $memberRestrictionEvaluation
-     */
-    public function setMemberRestrictionEvaluation(MembershipRoleRestrictionEvaluation $memberRestrictionEvaluation)
+namespace Google\Service\CloudIdentity {
+    class RestrictionEvaluations extends \Google\Model
     {
+        protected $memberRestrictionEvaluationType = MembershipRoleRestrictionEvaluation::class;
+        protected $memberRestrictionEvaluationDataType = '';
+        /**
+         * Evaluation of the member restriction applied to this membership. Empty if
+         * the user lacks permission to view the restriction evaluation.
+         *
+         * @param MembershipRoleRestrictionEvaluation $memberRestrictionEvaluation
+         */
+        public function setMemberRestrictionEvaluation(MembershipRoleRestrictionEvaluation $memberRestrictionEvaluation)
+        {
+        }
+        /**
+         * @return MembershipRoleRestrictionEvaluation
+         */
+        public function getMemberRestrictionEvaluation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MembershipRoleRestrictionEvaluation
+     * Runtime class alias of \Google\Service\CloudIdentity\RestrictionEvaluations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMemberRestrictionEvaluation()
+    class Google_Service_CloudIdentity_RestrictionEvaluations extends \Google\Service\CloudIdentity\RestrictionEvaluations
     {
     }
 }

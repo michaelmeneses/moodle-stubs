@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors;
-
-class SupportedRuntimeFeatures extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $actionApis;
-    /**
-     * @var bool
-     */
-    public $entityApis;
-    /**
-     * @var bool
-     */
-    public $sqlQuery;
-    /**
-     * @param bool
-     */
-    public function setActionApis($actionApis)
+namespace Google\Service\Connectors {
+    class SupportedRuntimeFeatures extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $actionApis;
+        /**
+         * @var bool
+         */
+        public $entityApis;
+        /**
+         * @var bool
+         */
+        public $sqlQuery;
+        /**
+         * @param bool
+         */
+        public function setActionApis($actionApis)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getActionApis()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setEntityApis($entityApis)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEntityApis()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setSqlQuery($sqlQuery)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSqlQuery()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Connectors\SupportedRuntimeFeatures registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActionApis()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setEntityApis($entityApis)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEntityApis()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setSqlQuery($sqlQuery)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSqlQuery()
+    class Google_Service_Connectors_SupportedRuntimeFeatures extends \Google\Service\Connectors\SupportedRuntimeFeatures
     {
     }
 }

@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1ListDatastoresResponse extends \Google\Collection
-{
-    protected $collection_key = 'datastores';
-    protected $datastoresType = GoogleCloudApigeeV1Datastore::class;
-    protected $datastoresDataType = 'array';
-    /**
-     * A list of datastores
-     *
-     * @param GoogleCloudApigeeV1Datastore[] $datastores
-     */
-    public function setDatastores($datastores)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1ListDatastoresResponse extends \Google\Collection
     {
+        protected $collection_key = 'datastores';
+        protected $datastoresType = GoogleCloudApigeeV1Datastore::class;
+        protected $datastoresDataType = 'array';
+        /**
+         * A list of datastores
+         *
+         * @param GoogleCloudApigeeV1Datastore[] $datastores
+         */
+        public function setDatastores($datastores)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1Datastore[]
+         */
+        public function getDatastores()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApigeeV1Datastore[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1ListDatastoresResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatastores()
+    class Google_Service_Apigee_GoogleCloudApigeeV1ListDatastoresResponse extends \Google\Service\Apigee\GoogleCloudApigeeV1ListDatastoresResponse
     {
     }
 }

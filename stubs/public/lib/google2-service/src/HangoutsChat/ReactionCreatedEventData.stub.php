@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class ReactionCreatedEventData extends \Google\Model
-{
-    protected $reactionType = Reaction::class;
-    protected $reactionDataType = '';
-    /**
-     * The new reaction.
-     *
-     * @param Reaction $reaction
-     */
-    public function setReaction(Reaction $reaction)
+namespace Google\Service\HangoutsChat {
+    class ReactionCreatedEventData extends \Google\Model
     {
+        protected $reactionType = Reaction::class;
+        protected $reactionDataType = '';
+        /**
+         * The new reaction.
+         *
+         * @param Reaction $reaction
+         */
+        public function setReaction(Reaction $reaction)
+        {
+        }
+        /**
+         * @return Reaction
+         */
+        public function getReaction()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Reaction
+     * Runtime class alias of \Google\Service\HangoutsChat\ReactionCreatedEventData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReaction()
+    class Google_Service_HangoutsChat_ReactionCreatedEventData extends \Google\Service\HangoutsChat\ReactionCreatedEventData
     {
     }
 }

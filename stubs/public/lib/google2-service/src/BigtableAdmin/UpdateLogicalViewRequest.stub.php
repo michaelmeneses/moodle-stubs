@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class UpdateLogicalViewRequest extends \Google\Model
-{
-    protected $logicalViewType = LogicalView::class;
-    protected $logicalViewDataType = '';
-    /**
-     * Optional. The list of fields to update.
-     *
-     * @var string
-     */
-    public $updateMask;
-    /**
-     * Required. The logical view to update. The logical view's `name` field is
-     * used to identify the view to update. Format:
-     * `projects/{project}/instances/{instance}/logicalViews/{logical_view}`.
-     *
-     * @param LogicalView $logicalView
-     */
-    public function setLogicalView(LogicalView $logicalView)
+namespace Google\Service\BigtableAdmin {
+    class UpdateLogicalViewRequest extends \Google\Model
     {
+        protected $logicalViewType = LogicalView::class;
+        protected $logicalViewDataType = '';
+        /**
+         * Optional. The list of fields to update.
+         *
+         * @var string
+         */
+        public $updateMask;
+        /**
+         * Required. The logical view to update. The logical view's `name` field is
+         * used to identify the view to update. Format:
+         * `projects/{project}/instances/{instance}/logicalViews/{logical_view}`.
+         *
+         * @param LogicalView $logicalView
+         */
+        public function setLogicalView(LogicalView $logicalView)
+        {
+        }
+        /**
+         * @return LogicalView
+         */
+        public function getLogicalView()
+        {
+        }
+        /**
+         * Optional. The list of fields to update.
+         *
+         * @param string $updateMask
+         */
+        public function setUpdateMask($updateMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateMask()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LogicalView
+     * Runtime class alias of \Google\Service\BigtableAdmin\UpdateLogicalViewRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLogicalView()
-    {
-    }
-    /**
-     * Optional. The list of fields to update.
-     *
-     * @param string $updateMask
-     */
-    public function setUpdateMask($updateMask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateMask()
+    class Google_Service_BigtableAdmin_UpdateLogicalViewRequest extends \Google\Service\BigtableAdmin\UpdateLogicalViewRequest
     {
     }
 }

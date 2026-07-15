@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class TriggerAction extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $action;
-    /**
-     * @var string
-     */
-    public $data;
-    /**
-     * @var string
-     */
-    public $dataInt;
-    /**
-     * @param string
-     */
-    public function setAction($action)
+namespace Google\Service\CloudSearch {
+    class TriggerAction extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $action;
+        /**
+         * @var string
+         */
+        public $data;
+        /**
+         * @var string
+         */
+        public $dataInt;
+        /**
+         * @param string
+         */
+        public function setAction($action)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAction()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setData($data)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getData()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDataInt($dataInt)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataInt()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\TriggerAction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAction()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setData($data)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getData()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDataInt($dataInt)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDataInt()
+    class Google_Service_CloudSearch_TriggerAction extends \Google\Service\CloudSearch\TriggerAction
     {
     }
 }

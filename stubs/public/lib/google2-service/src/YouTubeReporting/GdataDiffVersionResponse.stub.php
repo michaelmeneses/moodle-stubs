@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTubeReporting;
-
-class GdataDiffVersionResponse extends \Google\Model
-{
-    /**
-     * gdata
-     *
-     * @var string
-     */
-    public $objectSizeBytes;
-    /**
-     * gdata
-     *
-     * @var string
-     */
-    public $objectVersion;
-    /**
-     * gdata
-     *
-     * @param string $objectSizeBytes
-     */
-    public function setObjectSizeBytes($objectSizeBytes)
+namespace Google\Service\YouTubeReporting {
+    class GdataDiffVersionResponse extends \Google\Model
     {
+        /**
+         * gdata
+         *
+         * @var string
+         */
+        public $objectSizeBytes;
+        /**
+         * gdata
+         *
+         * @var string
+         */
+        public $objectVersion;
+        /**
+         * gdata
+         *
+         * @param string $objectSizeBytes
+         */
+        public function setObjectSizeBytes($objectSizeBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectSizeBytes()
+        {
+        }
+        /**
+         * gdata
+         *
+         * @param string $objectVersion
+         */
+        public function setObjectVersion($objectVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTubeReporting\GdataDiffVersionResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getObjectSizeBytes()
-    {
-    }
-    /**
-     * gdata
-     *
-     * @param string $objectVersion
-     */
-    public function setObjectVersion($objectVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObjectVersion()
+    class Google_Service_YouTubeReporting_GdataDiffVersionResponse extends \Google\Service\YouTubeReporting\GdataDiffVersionResponse
     {
     }
 }

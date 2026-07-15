@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Forms;
-
-class VideoLink extends \Google\Model
-{
-    /**
-     * Required. The display text for the link.
-     *
-     * @var string
-     */
-    public $displayText;
-    /**
-     * The URI of a YouTube video.
-     *
-     * @var string
-     */
-    public $youtubeUri;
-    /**
-     * Required. The display text for the link.
-     *
-     * @param string $displayText
-     */
-    public function setDisplayText($displayText)
+namespace Google\Service\Forms {
+    class VideoLink extends \Google\Model
     {
+        /**
+         * Required. The display text for the link.
+         *
+         * @var string
+         */
+        public $displayText;
+        /**
+         * The URI of a YouTube video.
+         *
+         * @var string
+         */
+        public $youtubeUri;
+        /**
+         * Required. The display text for the link.
+         *
+         * @param string $displayText
+         */
+        public function setDisplayText($displayText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayText()
+        {
+        }
+        /**
+         * The URI of a YouTube video.
+         *
+         * @param string $youtubeUri
+         */
+        public function setYoutubeUri($youtubeUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getYoutubeUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Forms\VideoLink registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayText()
-    {
-    }
-    /**
-     * The URI of a YouTube video.
-     *
-     * @param string $youtubeUri
-     */
-    public function setYoutubeUri($youtubeUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getYoutubeUri()
+    class Google_Service_Forms_VideoLink extends \Google\Service\Forms\VideoLink
     {
     }
 }

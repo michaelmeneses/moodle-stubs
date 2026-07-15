@@ -21,237 +21,246 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OnDemandScanning;
-
-class PackageIssue extends \Google\Collection
-{
-    /**
-     * Unknown.
-     */
-    public const EFFECTIVE_SEVERITY_SEVERITY_UNSPECIFIED = 'SEVERITY_UNSPECIFIED';
-    /**
-     * Minimal severity.
-     */
-    public const EFFECTIVE_SEVERITY_MINIMAL = 'MINIMAL';
-    /**
-     * Low severity.
-     */
-    public const EFFECTIVE_SEVERITY_LOW = 'LOW';
-    /**
-     * Medium severity.
-     */
-    public const EFFECTIVE_SEVERITY_MEDIUM = 'MEDIUM';
-    /**
-     * High severity.
-     */
-    public const EFFECTIVE_SEVERITY_HIGH = 'HIGH';
-    /**
-     * Critical severity.
-     */
-    public const EFFECTIVE_SEVERITY_CRITICAL = 'CRITICAL';
-    protected $collection_key = 'fileLocation';
-    /**
-     * Required. The [CPE URI](https://cpe.mitre.org/specification/) this
-     * vulnerability was found in.
-     *
-     * @var string
-     */
-    public $affectedCpeUri;
-    /**
-     * Required. The package this vulnerability was found in.
-     *
-     * @var string
-     */
-    public $affectedPackage;
-    protected $affectedVersionType = Version::class;
-    protected $affectedVersionDataType = '';
-    /**
-     * Output only. The distro or language system assigned severity for this
-     * vulnerability when that is available and note provider assigned severity
-     * when it is not available.
-     *
-     * @var string
-     */
-    public $effectiveSeverity;
-    protected $fileLocationType = GrafeasV1FileLocation::class;
-    protected $fileLocationDataType = 'array';
-    /**
-     * Output only. Whether a fix is available for this package.
-     *
-     * @var bool
-     */
-    public $fixAvailable;
-    /**
-     * The [CPE URI](https://cpe.mitre.org/specification/) this vulnerability was
-     * fixed in. It is possible for this to be different from the
-     * affected_cpe_uri.
-     *
-     * @var string
-     */
-    public $fixedCpeUri;
-    /**
-     * The package this vulnerability was fixed in. It is possible for this to be
-     * different from the affected_package.
-     *
-     * @var string
-     */
-    public $fixedPackage;
-    protected $fixedVersionType = Version::class;
-    protected $fixedVersionDataType = '';
-    /**
-     * The type of package (e.g. OS, MAVEN, GO).
-     *
-     * @var string
-     */
-    public $packageType;
-    /**
-     * Required. The [CPE URI](https://cpe.mitre.org/specification/) this
-     * vulnerability was found in.
-     *
-     * @param string $affectedCpeUri
-     */
-    public function setAffectedCpeUri($affectedCpeUri)
+namespace Google\Service\OnDemandScanning {
+    class PackageIssue extends \Google\Collection
     {
+        /**
+         * Unknown.
+         */
+        public const EFFECTIVE_SEVERITY_SEVERITY_UNSPECIFIED = 'SEVERITY_UNSPECIFIED';
+        /**
+         * Minimal severity.
+         */
+        public const EFFECTIVE_SEVERITY_MINIMAL = 'MINIMAL';
+        /**
+         * Low severity.
+         */
+        public const EFFECTIVE_SEVERITY_LOW = 'LOW';
+        /**
+         * Medium severity.
+         */
+        public const EFFECTIVE_SEVERITY_MEDIUM = 'MEDIUM';
+        /**
+         * High severity.
+         */
+        public const EFFECTIVE_SEVERITY_HIGH = 'HIGH';
+        /**
+         * Critical severity.
+         */
+        public const EFFECTIVE_SEVERITY_CRITICAL = 'CRITICAL';
+        protected $collection_key = 'fileLocation';
+        /**
+         * Required. The [CPE URI](https://cpe.mitre.org/specification/) this
+         * vulnerability was found in.
+         *
+         * @var string
+         */
+        public $affectedCpeUri;
+        /**
+         * Required. The package this vulnerability was found in.
+         *
+         * @var string
+         */
+        public $affectedPackage;
+        protected $affectedVersionType = Version::class;
+        protected $affectedVersionDataType = '';
+        /**
+         * Output only. The distro or language system assigned severity for this
+         * vulnerability when that is available and note provider assigned severity
+         * when it is not available.
+         *
+         * @var string
+         */
+        public $effectiveSeverity;
+        protected $fileLocationType = GrafeasV1FileLocation::class;
+        protected $fileLocationDataType = 'array';
+        /**
+         * Output only. Whether a fix is available for this package.
+         *
+         * @var bool
+         */
+        public $fixAvailable;
+        /**
+         * The [CPE URI](https://cpe.mitre.org/specification/) this vulnerability was
+         * fixed in. It is possible for this to be different from the
+         * affected_cpe_uri.
+         *
+         * @var string
+         */
+        public $fixedCpeUri;
+        /**
+         * The package this vulnerability was fixed in. It is possible for this to be
+         * different from the affected_package.
+         *
+         * @var string
+         */
+        public $fixedPackage;
+        protected $fixedVersionType = Version::class;
+        protected $fixedVersionDataType = '';
+        /**
+         * The type of package (e.g. OS, MAVEN, GO).
+         *
+         * @var string
+         */
+        public $packageType;
+        /**
+         * Required. The [CPE URI](https://cpe.mitre.org/specification/) this
+         * vulnerability was found in.
+         *
+         * @param string $affectedCpeUri
+         */
+        public function setAffectedCpeUri($affectedCpeUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAffectedCpeUri()
+        {
+        }
+        /**
+         * Required. The package this vulnerability was found in.
+         *
+         * @param string $affectedPackage
+         */
+        public function setAffectedPackage($affectedPackage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAffectedPackage()
+        {
+        }
+        /**
+         * Required. The version of the package that is installed on the resource
+         * affected by this vulnerability.
+         *
+         * @param Version $affectedVersion
+         */
+        public function setAffectedVersion(Version $affectedVersion)
+        {
+        }
+        /**
+         * @return Version
+         */
+        public function getAffectedVersion()
+        {
+        }
+        /**
+         * Output only. The distro or language system assigned severity for this
+         * vulnerability when that is available and note provider assigned severity
+         * when it is not available.
+         *
+         * Accepted values: SEVERITY_UNSPECIFIED, MINIMAL, LOW, MEDIUM, HIGH, CRITICAL
+         *
+         * @param self::EFFECTIVE_SEVERITY_* $effectiveSeverity
+         */
+        public function setEffectiveSeverity($effectiveSeverity)
+        {
+        }
+        /**
+         * @return self::EFFECTIVE_SEVERITY_*
+         */
+        public function getEffectiveSeverity()
+        {
+        }
+        /**
+         * The location at which this package was found.
+         *
+         * @param GrafeasV1FileLocation[] $fileLocation
+         */
+        public function setFileLocation($fileLocation)
+        {
+        }
+        /**
+         * @return GrafeasV1FileLocation[]
+         */
+        public function getFileLocation()
+        {
+        }
+        /**
+         * Output only. Whether a fix is available for this package.
+         *
+         * @param bool $fixAvailable
+         */
+        public function setFixAvailable($fixAvailable)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getFixAvailable()
+        {
+        }
+        /**
+         * The [CPE URI](https://cpe.mitre.org/specification/) this vulnerability was
+         * fixed in. It is possible for this to be different from the
+         * affected_cpe_uri.
+         *
+         * @param string $fixedCpeUri
+         */
+        public function setFixedCpeUri($fixedCpeUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFixedCpeUri()
+        {
+        }
+        /**
+         * The package this vulnerability was fixed in. It is possible for this to be
+         * different from the affected_package.
+         *
+         * @param string $fixedPackage
+         */
+        public function setFixedPackage($fixedPackage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFixedPackage()
+        {
+        }
+        /**
+         * Required. The version of the package this vulnerability was fixed in.
+         * Setting this to VersionKind.MAXIMUM means no fix is yet available.
+         *
+         * @param Version $fixedVersion
+         */
+        public function setFixedVersion(Version $fixedVersion)
+        {
+        }
+        /**
+         * @return Version
+         */
+        public function getFixedVersion()
+        {
+        }
+        /**
+         * The type of package (e.g. OS, MAVEN, GO).
+         *
+         * @param string $packageType
+         */
+        public function setPackageType($packageType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPackageType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OnDemandScanning\PackageIssue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAffectedCpeUri()
-    {
-    }
-    /**
-     * Required. The package this vulnerability was found in.
-     *
-     * @param string $affectedPackage
-     */
-    public function setAffectedPackage($affectedPackage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAffectedPackage()
-    {
-    }
-    /**
-     * Required. The version of the package that is installed on the resource
-     * affected by this vulnerability.
-     *
-     * @param Version $affectedVersion
-     */
-    public function setAffectedVersion(Version $affectedVersion)
-    {
-    }
-    /**
-     * @return Version
-     */
-    public function getAffectedVersion()
-    {
-    }
-    /**
-     * Output only. The distro or language system assigned severity for this
-     * vulnerability when that is available and note provider assigned severity
-     * when it is not available.
-     *
-     * Accepted values: SEVERITY_UNSPECIFIED, MINIMAL, LOW, MEDIUM, HIGH, CRITICAL
-     *
-     * @param self::EFFECTIVE_SEVERITY_* $effectiveSeverity
-     */
-    public function setEffectiveSeverity($effectiveSeverity)
-    {
-    }
-    /**
-     * @return self::EFFECTIVE_SEVERITY_*
-     */
-    public function getEffectiveSeverity()
-    {
-    }
-    /**
-     * The location at which this package was found.
-     *
-     * @param GrafeasV1FileLocation[] $fileLocation
-     */
-    public function setFileLocation($fileLocation)
-    {
-    }
-    /**
-     * @return GrafeasV1FileLocation[]
-     */
-    public function getFileLocation()
-    {
-    }
-    /**
-     * Output only. Whether a fix is available for this package.
-     *
-     * @param bool $fixAvailable
-     */
-    public function setFixAvailable($fixAvailable)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getFixAvailable()
-    {
-    }
-    /**
-     * The [CPE URI](https://cpe.mitre.org/specification/) this vulnerability was
-     * fixed in. It is possible for this to be different from the
-     * affected_cpe_uri.
-     *
-     * @param string $fixedCpeUri
-     */
-    public function setFixedCpeUri($fixedCpeUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFixedCpeUri()
-    {
-    }
-    /**
-     * The package this vulnerability was fixed in. It is possible for this to be
-     * different from the affected_package.
-     *
-     * @param string $fixedPackage
-     */
-    public function setFixedPackage($fixedPackage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFixedPackage()
-    {
-    }
-    /**
-     * Required. The version of the package this vulnerability was fixed in.
-     * Setting this to VersionKind.MAXIMUM means no fix is yet available.
-     *
-     * @param Version $fixedVersion
-     */
-    public function setFixedVersion(Version $fixedVersion)
-    {
-    }
-    /**
-     * @return Version
-     */
-    public function getFixedVersion()
-    {
-    }
-    /**
-     * The type of package (e.g. OS, MAVEN, GO).
-     *
-     * @param string $packageType
-     */
-    public function setPackageType($packageType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPackageType()
+    class Google_Service_OnDemandScanning_PackageIssue extends \Google\Service\OnDemandScanning\PackageIssue
     {
     }
 }

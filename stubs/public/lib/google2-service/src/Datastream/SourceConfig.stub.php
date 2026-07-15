@@ -21,126 +21,135 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class SourceConfig extends \Google\Model
-{
-    protected $mongodbSourceConfigType = MongodbSourceConfig::class;
-    protected $mongodbSourceConfigDataType = '';
-    protected $mysqlSourceConfigType = MysqlSourceConfig::class;
-    protected $mysqlSourceConfigDataType = '';
-    protected $oracleSourceConfigType = OracleSourceConfig::class;
-    protected $oracleSourceConfigDataType = '';
-    protected $postgresqlSourceConfigType = PostgresqlSourceConfig::class;
-    protected $postgresqlSourceConfigDataType = '';
-    protected $salesforceSourceConfigType = SalesforceSourceConfig::class;
-    protected $salesforceSourceConfigDataType = '';
-    /**
-     * Required. Source connection profile resource. Format:
-     * `projects/{project}/locations/{location}/connectionProfiles/{name}`
-     *
-     * @var string
-     */
-    public $sourceConnectionProfile;
-    protected $sqlServerSourceConfigType = SqlServerSourceConfig::class;
-    protected $sqlServerSourceConfigDataType = '';
-    /**
-     * MongoDB data source configuration.
-     *
-     * @param MongodbSourceConfig $mongodbSourceConfig
-     */
-    public function setMongodbSourceConfig(MongodbSourceConfig $mongodbSourceConfig)
+namespace Google\Service\Datastream {
+    class SourceConfig extends \Google\Model
     {
+        protected $mongodbSourceConfigType = MongodbSourceConfig::class;
+        protected $mongodbSourceConfigDataType = '';
+        protected $mysqlSourceConfigType = MysqlSourceConfig::class;
+        protected $mysqlSourceConfigDataType = '';
+        protected $oracleSourceConfigType = OracleSourceConfig::class;
+        protected $oracleSourceConfigDataType = '';
+        protected $postgresqlSourceConfigType = PostgresqlSourceConfig::class;
+        protected $postgresqlSourceConfigDataType = '';
+        protected $salesforceSourceConfigType = SalesforceSourceConfig::class;
+        protected $salesforceSourceConfigDataType = '';
+        /**
+         * Required. Source connection profile resource. Format:
+         * `projects/{project}/locations/{location}/connectionProfiles/{name}`
+         *
+         * @var string
+         */
+        public $sourceConnectionProfile;
+        protected $sqlServerSourceConfigType = SqlServerSourceConfig::class;
+        protected $sqlServerSourceConfigDataType = '';
+        /**
+         * MongoDB data source configuration.
+         *
+         * @param MongodbSourceConfig $mongodbSourceConfig
+         */
+        public function setMongodbSourceConfig(MongodbSourceConfig $mongodbSourceConfig)
+        {
+        }
+        /**
+         * @return MongodbSourceConfig
+         */
+        public function getMongodbSourceConfig()
+        {
+        }
+        /**
+         * MySQL data source configuration.
+         *
+         * @param MysqlSourceConfig $mysqlSourceConfig
+         */
+        public function setMysqlSourceConfig(MysqlSourceConfig $mysqlSourceConfig)
+        {
+        }
+        /**
+         * @return MysqlSourceConfig
+         */
+        public function getMysqlSourceConfig()
+        {
+        }
+        /**
+         * Oracle data source configuration.
+         *
+         * @param OracleSourceConfig $oracleSourceConfig
+         */
+        public function setOracleSourceConfig(OracleSourceConfig $oracleSourceConfig)
+        {
+        }
+        /**
+         * @return OracleSourceConfig
+         */
+        public function getOracleSourceConfig()
+        {
+        }
+        /**
+         * PostgreSQL data source configuration.
+         *
+         * @param PostgresqlSourceConfig $postgresqlSourceConfig
+         */
+        public function setPostgresqlSourceConfig(PostgresqlSourceConfig $postgresqlSourceConfig)
+        {
+        }
+        /**
+         * @return PostgresqlSourceConfig
+         */
+        public function getPostgresqlSourceConfig()
+        {
+        }
+        /**
+         * Salesforce data source configuration.
+         *
+         * @param SalesforceSourceConfig $salesforceSourceConfig
+         */
+        public function setSalesforceSourceConfig(SalesforceSourceConfig $salesforceSourceConfig)
+        {
+        }
+        /**
+         * @return SalesforceSourceConfig
+         */
+        public function getSalesforceSourceConfig()
+        {
+        }
+        /**
+         * Required. Source connection profile resource. Format:
+         * `projects/{project}/locations/{location}/connectionProfiles/{name}`
+         *
+         * @param string $sourceConnectionProfile
+         */
+        public function setSourceConnectionProfile($sourceConnectionProfile)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceConnectionProfile()
+        {
+        }
+        /**
+         * SQLServer data source configuration.
+         *
+         * @param SqlServerSourceConfig $sqlServerSourceConfig
+         */
+        public function setSqlServerSourceConfig(SqlServerSourceConfig $sqlServerSourceConfig)
+        {
+        }
+        /**
+         * @return SqlServerSourceConfig
+         */
+        public function getSqlServerSourceConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MongodbSourceConfig
+     * Runtime class alias of \Google\Service\Datastream\SourceConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMongodbSourceConfig()
-    {
-    }
-    /**
-     * MySQL data source configuration.
-     *
-     * @param MysqlSourceConfig $mysqlSourceConfig
-     */
-    public function setMysqlSourceConfig(MysqlSourceConfig $mysqlSourceConfig)
-    {
-    }
-    /**
-     * @return MysqlSourceConfig
-     */
-    public function getMysqlSourceConfig()
-    {
-    }
-    /**
-     * Oracle data source configuration.
-     *
-     * @param OracleSourceConfig $oracleSourceConfig
-     */
-    public function setOracleSourceConfig(OracleSourceConfig $oracleSourceConfig)
-    {
-    }
-    /**
-     * @return OracleSourceConfig
-     */
-    public function getOracleSourceConfig()
-    {
-    }
-    /**
-     * PostgreSQL data source configuration.
-     *
-     * @param PostgresqlSourceConfig $postgresqlSourceConfig
-     */
-    public function setPostgresqlSourceConfig(PostgresqlSourceConfig $postgresqlSourceConfig)
-    {
-    }
-    /**
-     * @return PostgresqlSourceConfig
-     */
-    public function getPostgresqlSourceConfig()
-    {
-    }
-    /**
-     * Salesforce data source configuration.
-     *
-     * @param SalesforceSourceConfig $salesforceSourceConfig
-     */
-    public function setSalesforceSourceConfig(SalesforceSourceConfig $salesforceSourceConfig)
-    {
-    }
-    /**
-     * @return SalesforceSourceConfig
-     */
-    public function getSalesforceSourceConfig()
-    {
-    }
-    /**
-     * Required. Source connection profile resource. Format:
-     * `projects/{project}/locations/{location}/connectionProfiles/{name}`
-     *
-     * @param string $sourceConnectionProfile
-     */
-    public function setSourceConnectionProfile($sourceConnectionProfile)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourceConnectionProfile()
-    {
-    }
-    /**
-     * SQLServer data source configuration.
-     *
-     * @param SqlServerSourceConfig $sqlServerSourceConfig
-     */
-    public function setSqlServerSourceConfig(SqlServerSourceConfig $sqlServerSourceConfig)
-    {
-    }
-    /**
-     * @return SqlServerSourceConfig
-     */
-    public function getSqlServerSourceConfig()
+    class Google_Service_Datastream_SourceConfig extends \Google\Service\Datastream\SourceConfig
     {
     }
 }

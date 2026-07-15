@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1SearchResponseSummaryCitationSource extends \Google\Model
-{
-    /**
-     * Document reference index from SummaryWithMetadata.references. It is
-     * 0-indexed and the value will be zero if the reference_index is not set
-     * explicitly.
-     *
-     * @var string
-     */
-    public $referenceIndex;
-    /**
-     * Document reference index from SummaryWithMetadata.references. It is
-     * 0-indexed and the value will be zero if the reference_index is not set
-     * explicitly.
-     *
-     * @param string $referenceIndex
-     */
-    public function setReferenceIndex($referenceIndex)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1SearchResponseSummaryCitationSource extends \Google\Model
     {
+        /**
+         * Document reference index from SummaryWithMetadata.references. It is
+         * 0-indexed and the value will be zero if the reference_index is not set
+         * explicitly.
+         *
+         * @var string
+         */
+        public $referenceIndex;
+        /**
+         * Document reference index from SummaryWithMetadata.references. It is
+         * 0-indexed and the value will be zero if the reference_index is not set
+         * explicitly.
+         *
+         * @param string $referenceIndex
+         */
+        public function setReferenceIndex($referenceIndex)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReferenceIndex()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1SearchResponseSummaryCitationSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReferenceIndex()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1SearchResponseSummaryCitationSource extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1SearchResponseSummaryCitationSource
     {
     }
 }

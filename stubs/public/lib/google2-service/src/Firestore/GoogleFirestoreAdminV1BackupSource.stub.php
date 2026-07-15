@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class GoogleFirestoreAdminV1BackupSource extends \Google\Model
-{
-    /**
-     * The resource name of the backup that was used to restore this database.
-     * Format: `projects/{project}/locations/{location}/backups/{backup}`.
-     *
-     * @var string
-     */
-    public $backup;
-    /**
-     * The resource name of the backup that was used to restore this database.
-     * Format: `projects/{project}/locations/{location}/backups/{backup}`.
-     *
-     * @param string $backup
-     */
-    public function setBackup($backup)
+namespace Google\Service\Firestore {
+    class GoogleFirestoreAdminV1BackupSource extends \Google\Model
     {
+        /**
+         * The resource name of the backup that was used to restore this database.
+         * Format: `projects/{project}/locations/{location}/backups/{backup}`.
+         *
+         * @var string
+         */
+        public $backup;
+        /**
+         * The resource name of the backup that was used to restore this database.
+         * Format: `projects/{project}/locations/{location}/backups/{backup}`.
+         *
+         * @param string $backup
+         */
+        public function setBackup($backup)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBackup()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Firestore\GoogleFirestoreAdminV1BackupSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackup()
+    class Google_Service_Firestore_GoogleFirestoreAdminV1BackupSource extends \Google\Service\Firestore\GoogleFirestoreAdminV1BackupSource
     {
     }
 }

@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class SubscriptionOfferTargeting extends \Google\Model
-{
-    protected $acquisitionRuleType = AcquisitionTargetingRule::class;
-    protected $acquisitionRuleDataType = '';
-    protected $upgradeRuleType = UpgradeTargetingRule::class;
-    protected $upgradeRuleDataType = '';
-    /**
-     * Offer targeting rule for new user acquisition.
-     *
-     * @param AcquisitionTargetingRule $acquisitionRule
-     */
-    public function setAcquisitionRule(AcquisitionTargetingRule $acquisitionRule)
+namespace Google\Service\AndroidPublisher {
+    class SubscriptionOfferTargeting extends \Google\Model
     {
+        protected $acquisitionRuleType = AcquisitionTargetingRule::class;
+        protected $acquisitionRuleDataType = '';
+        protected $upgradeRuleType = UpgradeTargetingRule::class;
+        protected $upgradeRuleDataType = '';
+        /**
+         * Offer targeting rule for new user acquisition.
+         *
+         * @param AcquisitionTargetingRule $acquisitionRule
+         */
+        public function setAcquisitionRule(AcquisitionTargetingRule $acquisitionRule)
+        {
+        }
+        /**
+         * @return AcquisitionTargetingRule
+         */
+        public function getAcquisitionRule()
+        {
+        }
+        /**
+         * Offer targeting rule for upgrading users' existing plans.
+         *
+         * @param UpgradeTargetingRule $upgradeRule
+         */
+        public function setUpgradeRule(UpgradeTargetingRule $upgradeRule)
+        {
+        }
+        /**
+         * @return UpgradeTargetingRule
+         */
+        public function getUpgradeRule()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AcquisitionTargetingRule
+     * Runtime class alias of \Google\Service\AndroidPublisher\SubscriptionOfferTargeting registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAcquisitionRule()
-    {
-    }
-    /**
-     * Offer targeting rule for upgrading users' existing plans.
-     *
-     * @param UpgradeTargetingRule $upgradeRule
-     */
-    public function setUpgradeRule(UpgradeTargetingRule $upgradeRule)
-    {
-    }
-    /**
-     * @return UpgradeTargetingRule
-     */
-    public function getUpgradeRule()
+    class Google_Service_AndroidPublisher_SubscriptionOfferTargeting extends \Google\Service\AndroidPublisher\SubscriptionOfferTargeting
     {
     }
 }

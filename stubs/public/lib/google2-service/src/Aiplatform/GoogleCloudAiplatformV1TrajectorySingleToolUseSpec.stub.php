@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1TrajectorySingleToolUseSpec extends \Google\Model
-{
-    /**
-     * Required. Spec for tool name to be checked for in the predicted trajectory.
-     *
-     * @var string
-     */
-    public $toolName;
-    /**
-     * Required. Spec for tool name to be checked for in the predicted trajectory.
-     *
-     * @param string $toolName
-     */
-    public function setToolName($toolName)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1TrajectorySingleToolUseSpec extends \Google\Model
     {
+        /**
+         * Required. Spec for tool name to be checked for in the predicted trajectory.
+         *
+         * @var string
+         */
+        public $toolName;
+        /**
+         * Required. Spec for tool name to be checked for in the predicted trajectory.
+         *
+         * @param string $toolName
+         */
+        public function setToolName($toolName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getToolName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1TrajectorySingleToolUseSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getToolName()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1TrajectorySingleToolUseSpec extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1TrajectorySingleToolUseSpec
     {
     }
 }

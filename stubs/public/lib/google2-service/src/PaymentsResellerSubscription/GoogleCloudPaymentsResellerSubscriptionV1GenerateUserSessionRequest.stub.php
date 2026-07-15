@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PaymentsResellerSubscription;
-
-class GoogleCloudPaymentsResellerSubscriptionV1GenerateUserSessionRequest extends \Google\Model
-{
-    protected $intentPayloadType = GoogleCloudPaymentsResellerSubscriptionV1IntentPayload::class;
-    protected $intentPayloadDataType = '';
-    /**
-     * @param GoogleCloudPaymentsResellerSubscriptionV1IntentPayload
-     */
-    public function setIntentPayload(GoogleCloudPaymentsResellerSubscriptionV1IntentPayload $intentPayload)
+namespace Google\Service\PaymentsResellerSubscription {
+    class GoogleCloudPaymentsResellerSubscriptionV1GenerateUserSessionRequest extends \Google\Model
     {
+        protected $intentPayloadType = GoogleCloudPaymentsResellerSubscriptionV1IntentPayload::class;
+        protected $intentPayloadDataType = '';
+        /**
+         * @param GoogleCloudPaymentsResellerSubscriptionV1IntentPayload
+         */
+        public function setIntentPayload(GoogleCloudPaymentsResellerSubscriptionV1IntentPayload $intentPayload)
+        {
+        }
+        /**
+         * @return GoogleCloudPaymentsResellerSubscriptionV1IntentPayload
+         */
+        public function getIntentPayload()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudPaymentsResellerSubscriptionV1IntentPayload
+     * Runtime class alias of \Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1GenerateUserSessionRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIntentPayload()
+    class Google_Service_PaymentsResellerSubscription_GoogleCloudPaymentsResellerSubscriptionV1GenerateUserSessionRequest extends \Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1GenerateUserSessionRequest
     {
     }
 }

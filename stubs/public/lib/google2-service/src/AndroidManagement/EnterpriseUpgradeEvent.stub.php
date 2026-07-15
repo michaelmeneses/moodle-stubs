@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class EnterpriseUpgradeEvent extends \Google\Model
-{
-    /**
-     * Unspecified. This value is not used.
-     */
-    public const UPGRADE_STATE_UPGRADE_STATE_UNSPECIFIED = 'UPGRADE_STATE_UNSPECIFIED';
-    /**
-     * The upgrade has succeeded.
-     */
-    public const UPGRADE_STATE_UPGRADE_STATE_SUCCEEDED = 'UPGRADE_STATE_SUCCEEDED';
-    /**
-     * The name of upgraded enterprise in the format "enterprises/{enterprise}"
-     *
-     * @var string
-     */
-    public $enterprise;
-    /**
-     * Output only. The upgrade state of the enterprise.
-     *
-     * @var string
-     */
-    public $upgradeState;
-    /**
-     * The name of upgraded enterprise in the format "enterprises/{enterprise}"
-     *
-     * @param string $enterprise
-     */
-    public function setEnterprise($enterprise)
+namespace Google\Service\AndroidManagement {
+    class EnterpriseUpgradeEvent extends \Google\Model
     {
+        /**
+         * Unspecified. This value is not used.
+         */
+        public const UPGRADE_STATE_UPGRADE_STATE_UNSPECIFIED = 'UPGRADE_STATE_UNSPECIFIED';
+        /**
+         * The upgrade has succeeded.
+         */
+        public const UPGRADE_STATE_UPGRADE_STATE_SUCCEEDED = 'UPGRADE_STATE_SUCCEEDED';
+        /**
+         * The name of upgraded enterprise in the format "enterprises/{enterprise}"
+         *
+         * @var string
+         */
+        public $enterprise;
+        /**
+         * Output only. The upgrade state of the enterprise.
+         *
+         * @var string
+         */
+        public $upgradeState;
+        /**
+         * The name of upgraded enterprise in the format "enterprises/{enterprise}"
+         *
+         * @param string $enterprise
+         */
+        public function setEnterprise($enterprise)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEnterprise()
+        {
+        }
+        /**
+         * Output only. The upgrade state of the enterprise.
+         *
+         * Accepted values: UPGRADE_STATE_UNSPECIFIED, UPGRADE_STATE_SUCCEEDED
+         *
+         * @param self::UPGRADE_STATE_* $upgradeState
+         */
+        public function setUpgradeState($upgradeState)
+        {
+        }
+        /**
+         * @return self::UPGRADE_STATE_*
+         */
+        public function getUpgradeState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidManagement\EnterpriseUpgradeEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnterprise()
-    {
-    }
-    /**
-     * Output only. The upgrade state of the enterprise.
-     *
-     * Accepted values: UPGRADE_STATE_UNSPECIFIED, UPGRADE_STATE_SUCCEEDED
-     *
-     * @param self::UPGRADE_STATE_* $upgradeState
-     */
-    public function setUpgradeState($upgradeState)
-    {
-    }
-    /**
-     * @return self::UPGRADE_STATE_*
-     */
-    public function getUpgradeState()
+    class Google_Service_AndroidManagement_EnterpriseUpgradeEvent extends \Google\Service\AndroidManagement\EnterpriseUpgradeEvent
     {
     }
 }

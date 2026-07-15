@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudCommercePartnerProcurementService;
-
-class ListEntitlementsResponse extends \Google\Collection
-{
-    protected $collection_key = 'entitlements';
-    protected $entitlementsType = Entitlement::class;
-    protected $entitlementsDataType = 'array';
-    /**
-     * The token for fetching the next page.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of entitlements in this response.
-     *
-     * @param Entitlement[] $entitlements
-     */
-    public function setEntitlements($entitlements)
+namespace Google\Service\CloudCommercePartnerProcurementService {
+    class ListEntitlementsResponse extends \Google\Collection
     {
+        protected $collection_key = 'entitlements';
+        protected $entitlementsType = Entitlement::class;
+        protected $entitlementsDataType = 'array';
+        /**
+         * The token for fetching the next page.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of entitlements in this response.
+         *
+         * @param Entitlement[] $entitlements
+         */
+        public function setEntitlements($entitlements)
+        {
+        }
+        /**
+         * @return Entitlement[]
+         */
+        public function getEntitlements()
+        {
+        }
+        /**
+         * The token for fetching the next page.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Entitlement[]
+     * Runtime class alias of \Google\Service\CloudCommercePartnerProcurementService\ListEntitlementsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntitlements()
-    {
-    }
-    /**
-     * The token for fetching the next page.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_CloudCommercePartnerProcurementService_ListEntitlementsResponse extends \Google\Service\CloudCommercePartnerProcurementService\ListEntitlementsResponse
     {
     }
 }

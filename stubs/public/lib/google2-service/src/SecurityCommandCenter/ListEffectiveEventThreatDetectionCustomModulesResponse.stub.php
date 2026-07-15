@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class ListEffectiveEventThreatDetectionCustomModulesResponse extends \Google\Collection
-{
-    protected $collection_key = 'effectiveEventThreatDetectionCustomModules';
-    protected $effectiveEventThreatDetectionCustomModulesType = EffectiveEventThreatDetectionCustomModule::class;
-    protected $effectiveEventThreatDetectionCustomModulesDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Effective custom modules belonging to the requested parent.
-     *
-     * @param EffectiveEventThreatDetectionCustomModule[] $effectiveEventThreatDetectionCustomModules
-     */
-    public function setEffectiveEventThreatDetectionCustomModules($effectiveEventThreatDetectionCustomModules)
+namespace Google\Service\SecurityCommandCenter {
+    class ListEffectiveEventThreatDetectionCustomModulesResponse extends \Google\Collection
     {
+        protected $collection_key = 'effectiveEventThreatDetectionCustomModules';
+        protected $effectiveEventThreatDetectionCustomModulesType = EffectiveEventThreatDetectionCustomModule::class;
+        protected $effectiveEventThreatDetectionCustomModulesDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Effective custom modules belonging to the requested parent.
+         *
+         * @param EffectiveEventThreatDetectionCustomModule[] $effectiveEventThreatDetectionCustomModules
+         */
+        public function setEffectiveEventThreatDetectionCustomModules($effectiveEventThreatDetectionCustomModules)
+        {
+        }
+        /**
+         * @return EffectiveEventThreatDetectionCustomModule[]
+         */
+        public function getEffectiveEventThreatDetectionCustomModules()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EffectiveEventThreatDetectionCustomModule[]
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\ListEffectiveEventThreatDetectionCustomModulesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEffectiveEventThreatDetectionCustomModules()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_SecurityCommandCenter_ListEffectiveEventThreatDetectionCustomModulesResponse extends \Google\Service\SecurityCommandCenter\ListEffectiveEventThreatDetectionCustomModulesResponse
     {
     }
 }

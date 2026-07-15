@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Texttospeech;
-
-class MultispeakerPrebuiltVoice extends \Google\Model
-{
-    /**
-     * Required. The speaker alias of the voice. This is the user-chosen speaker
-     * name that is used in the multispeaker text input, such as "Speaker1".
-     *
-     * @var string
-     */
-    public $speakerAlias;
-    /**
-     * Required. The speaker ID of the voice. See https://cloud.google.com/text-
-     * to-speech/docs/gemini-tts#voice_options for available values.
-     *
-     * @var string
-     */
-    public $speakerId;
-    /**
-     * Required. The speaker alias of the voice. This is the user-chosen speaker
-     * name that is used in the multispeaker text input, such as "Speaker1".
-     *
-     * @param string $speakerAlias
-     */
-    public function setSpeakerAlias($speakerAlias)
+namespace Google\Service\Texttospeech {
+    class MultispeakerPrebuiltVoice extends \Google\Model
     {
+        /**
+         * Required. The speaker alias of the voice. This is the user-chosen speaker
+         * name that is used in the multispeaker text input, such as "Speaker1".
+         *
+         * @var string
+         */
+        public $speakerAlias;
+        /**
+         * Required. The speaker ID of the voice. See https://cloud.google.com/text-
+         * to-speech/docs/gemini-tts#voice_options for available values.
+         *
+         * @var string
+         */
+        public $speakerId;
+        /**
+         * Required. The speaker alias of the voice. This is the user-chosen speaker
+         * name that is used in the multispeaker text input, such as "Speaker1".
+         *
+         * @param string $speakerAlias
+         */
+        public function setSpeakerAlias($speakerAlias)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSpeakerAlias()
+        {
+        }
+        /**
+         * Required. The speaker ID of the voice. See https://cloud.google.com/text-
+         * to-speech/docs/gemini-tts#voice_options for available values.
+         *
+         * @param string $speakerId
+         */
+        public function setSpeakerId($speakerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSpeakerId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Texttospeech\MultispeakerPrebuiltVoice registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSpeakerAlias()
-    {
-    }
-    /**
-     * Required. The speaker ID of the voice. See https://cloud.google.com/text-
-     * to-speech/docs/gemini-tts#voice_options for available values.
-     *
-     * @param string $speakerId
-     */
-    public function setSpeakerId($speakerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSpeakerId()
+    class Google_Service_Texttospeech_MultispeakerPrebuiltVoice extends \Google\Service\Texttospeech\MultispeakerPrebuiltVoice
     {
     }
 }

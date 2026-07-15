@@ -21,206 +21,215 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class KeyValue extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $bottomLabel;
-    protected $buttonType = Button::class;
-    protected $buttonDataType = '';
-    /**
-     * @var string
-     */
-    public $content;
-    /**
-     * @var bool
-     */
-    public $contentMultiline;
-    protected $endIconType = IconImage::class;
-    protected $endIconDataType = '';
-    /**
-     * @var string
-     */
-    public $icon;
-    /**
-     * @var string
-     */
-    public $iconAltText;
-    /**
-     * @var string
-     */
-    public $iconUrl;
-    /**
-     * @var string
-     */
-    public $imageStyle;
-    protected $onClickType = OnClick::class;
-    protected $onClickDataType = '';
-    protected $startIconType = IconImage::class;
-    protected $startIconDataType = '';
-    protected $switchWidgetType = SwitchWidget::class;
-    protected $switchWidgetDataType = '';
-    /**
-     * @var string
-     */
-    public $topLabel;
-    /**
-     * @param string
-     */
-    public function setBottomLabel($bottomLabel)
+namespace Google\Service\CloudSearch {
+    class KeyValue extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $bottomLabel;
+        protected $buttonType = Button::class;
+        protected $buttonDataType = '';
+        /**
+         * @var string
+         */
+        public $content;
+        /**
+         * @var bool
+         */
+        public $contentMultiline;
+        protected $endIconType = IconImage::class;
+        protected $endIconDataType = '';
+        /**
+         * @var string
+         */
+        public $icon;
+        /**
+         * @var string
+         */
+        public $iconAltText;
+        /**
+         * @var string
+         */
+        public $iconUrl;
+        /**
+         * @var string
+         */
+        public $imageStyle;
+        protected $onClickType = OnClick::class;
+        protected $onClickDataType = '';
+        protected $startIconType = IconImage::class;
+        protected $startIconDataType = '';
+        protected $switchWidgetType = SwitchWidget::class;
+        protected $switchWidgetDataType = '';
+        /**
+         * @var string
+         */
+        public $topLabel;
+        /**
+         * @param string
+         */
+        public function setBottomLabel($bottomLabel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBottomLabel()
+        {
+        }
+        /**
+         * @param Button
+         */
+        public function setButton(Button $button)
+        {
+        }
+        /**
+         * @return Button
+         */
+        public function getButton()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setContent($content)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContent()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setContentMultiline($contentMultiline)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getContentMultiline()
+        {
+        }
+        /**
+         * @param IconImage
+         */
+        public function setEndIcon(IconImage $endIcon)
+        {
+        }
+        /**
+         * @return IconImage
+         */
+        public function getEndIcon()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setIcon($icon)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIcon()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setIconAltText($iconAltText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIconAltText()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setIconUrl($iconUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIconUrl()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setImageStyle($imageStyle)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImageStyle()
+        {
+        }
+        /**
+         * @param OnClick
+         */
+        public function setOnClick(OnClick $onClick)
+        {
+        }
+        /**
+         * @return OnClick
+         */
+        public function getOnClick()
+        {
+        }
+        /**
+         * @param IconImage
+         */
+        public function setStartIcon(IconImage $startIcon)
+        {
+        }
+        /**
+         * @return IconImage
+         */
+        public function getStartIcon()
+        {
+        }
+        /**
+         * @param SwitchWidget
+         */
+        public function setSwitchWidget(SwitchWidget $switchWidget)
+        {
+        }
+        /**
+         * @return SwitchWidget
+         */
+        public function getSwitchWidget()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTopLabel($topLabel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTopLabel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\KeyValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBottomLabel()
-    {
-    }
-    /**
-     * @param Button
-     */
-    public function setButton(Button $button)
-    {
-    }
-    /**
-     * @return Button
-     */
-    public function getButton()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setContent($content)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContent()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setContentMultiline($contentMultiline)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getContentMultiline()
-    {
-    }
-    /**
-     * @param IconImage
-     */
-    public function setEndIcon(IconImage $endIcon)
-    {
-    }
-    /**
-     * @return IconImage
-     */
-    public function getEndIcon()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setIcon($icon)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIcon()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setIconAltText($iconAltText)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIconAltText()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setIconUrl($iconUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIconUrl()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setImageStyle($imageStyle)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImageStyle()
-    {
-    }
-    /**
-     * @param OnClick
-     */
-    public function setOnClick(OnClick $onClick)
-    {
-    }
-    /**
-     * @return OnClick
-     */
-    public function getOnClick()
-    {
-    }
-    /**
-     * @param IconImage
-     */
-    public function setStartIcon(IconImage $startIcon)
-    {
-    }
-    /**
-     * @return IconImage
-     */
-    public function getStartIcon()
-    {
-    }
-    /**
-     * @param SwitchWidget
-     */
-    public function setSwitchWidget(SwitchWidget $switchWidget)
-    {
-    }
-    /**
-     * @return SwitchWidget
-     */
-    public function getSwitchWidget()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTopLabel($topLabel)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTopLabel()
+    class Google_Service_CloudSearch_KeyValue extends \Google\Service\CloudSearch\KeyValue
     {
     }
 }

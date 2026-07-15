@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsHub;
-
-class AnalyticsHubSubscriptionInfo extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $listing;
-    /**
-     * @var string
-     */
-    public $subscription;
-    /**
-     * @param string
-     */
-    public function setListing($listing)
+namespace Google\Service\AnalyticsHub {
+    class AnalyticsHubSubscriptionInfo extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $listing;
+        /**
+         * @var string
+         */
+        public $subscription;
+        /**
+         * @param string
+         */
+        public function setListing($listing)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getListing()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSubscription($subscription)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubscription()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AnalyticsHub\AnalyticsHubSubscriptionInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getListing()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSubscription($subscription)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubscription()
+    class Google_Service_AnalyticsHub_AnalyticsHubSubscriptionInfo extends \Google\Service\AnalyticsHub\AnalyticsHubSubscriptionInfo
     {
     }
 }

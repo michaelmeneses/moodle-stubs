@@ -21,76 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling\Resource;
-
-/**
- * The "annotationSpecSets" collection of methods.
- * Typical usage is:
- *  <code>
- *   $datalabelingService = new Google\Service\DataLabeling(...);
- *   $annotationSpecSets = $datalabelingService->projects_annotationSpecSets;
- *  </code>
- */
-class ProjectsAnnotationSpecSets extends \Google\Service\Resource
-{
+namespace Google\Service\DataLabeling\Resource {
+    use Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1AnnotationSpecSet;
+    use Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1CreateAnnotationSpecSetRequest;
+    use Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1ListAnnotationSpecSetsResponse;
+    use Google\Service\DataLabeling\GoogleProtobufEmpty;
     /**
-     * Creates an annotation spec set by providing a set of labels.
-     * (annotationSpecSets.create)
-     *
-     * @param string $parent Required. AnnotationSpecSet resource parent, format:
-     * projects/{project_id}
-     * @param GoogleCloudDatalabelingV1beta1CreateAnnotationSpecSetRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudDatalabelingV1beta1AnnotationSpecSet
-     * @throws \Google\Service\Exception
+     * The "annotationSpecSets" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $datalabelingService = new Google\Service\DataLabeling(...);
+     *   $annotationSpecSets = $datalabelingService->projects_annotationSpecSets;
+     *  </code>
      */
-    public function create($parent, GoogleCloudDatalabelingV1beta1CreateAnnotationSpecSetRequest $postBody, $optParams = [])
+    class ProjectsAnnotationSpecSets extends \Google\Service\Resource
     {
+        /**
+         * Creates an annotation spec set by providing a set of labels.
+         * (annotationSpecSets.create)
+         *
+         * @param string $parent Required. AnnotationSpecSet resource parent, format:
+         * projects/{project_id}
+         * @param GoogleCloudDatalabelingV1beta1CreateAnnotationSpecSetRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudDatalabelingV1beta1AnnotationSpecSet
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, GoogleCloudDatalabelingV1beta1CreateAnnotationSpecSetRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes an annotation spec set by resource name. (annotationSpecSets.delete)
+         *
+         * @param string $name Required. AnnotationSpec resource name, format:
+         * `projects/{project_id}/annotationSpecSets/{annotation_spec_set_id}`.
+         * @param array $optParams Optional parameters.
+         * @return GoogleProtobufEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets an annotation spec set by resource name. (annotationSpecSets.get)
+         *
+         * @param string $name Required. AnnotationSpecSet resource name, format:
+         * projects/{project_id}/annotationSpecSets/{annotation_spec_set_id}
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudDatalabelingV1beta1AnnotationSpecSet
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists annotation spec sets for a project. Pagination is supported.
+         * (annotationSpecSets.listProjectsAnnotationSpecSets)
+         *
+         * @param string $parent Required. Parent of AnnotationSpecSet resource, format:
+         * projects/{project_id}
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Optional. Filter is not supported at this moment.
+         * @opt_param int pageSize Optional. Requested page size. Server may return
+         * fewer results than requested. Default value is 100.
+         * @opt_param string pageToken Optional. A token identifying a page of results
+         * for the server to return. Typically obtained by
+         * ListAnnotationSpecSetsResponse.next_page_token of the previous
+         * [DataLabelingService.ListAnnotationSpecSets] call. Return first page if
+         * empty.
+         * @return GoogleCloudDatalabelingV1beta1ListAnnotationSpecSetsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsAnnotationSpecSets($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes an annotation spec set by resource name. (annotationSpecSets.delete)
-     *
-     * @param string $name Required. AnnotationSpec resource name, format:
-     * `projects/{project_id}/annotationSpecSets/{annotation_spec_set_id}`.
-     * @param array $optParams Optional parameters.
-     * @return GoogleProtobufEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\DataLabeling\Resource\ProjectsAnnotationSpecSets registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets an annotation spec set by resource name. (annotationSpecSets.get)
-     *
-     * @param string $name Required. AnnotationSpecSet resource name, format:
-     * projects/{project_id}/annotationSpecSets/{annotation_spec_set_id}
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudDatalabelingV1beta1AnnotationSpecSet
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists annotation spec sets for a project. Pagination is supported.
-     * (annotationSpecSets.listProjectsAnnotationSpecSets)
-     *
-     * @param string $parent Required. Parent of AnnotationSpecSet resource, format:
-     * projects/{project_id}
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Optional. Filter is not supported at this moment.
-     * @opt_param int pageSize Optional. Requested page size. Server may return
-     * fewer results than requested. Default value is 100.
-     * @opt_param string pageToken Optional. A token identifying a page of results
-     * for the server to return. Typically obtained by
-     * ListAnnotationSpecSetsResponse.next_page_token of the previous
-     * [DataLabelingService.ListAnnotationSpecSets] call. Return first page if
-     * empty.
-     * @return GoogleCloudDatalabelingV1beta1ListAnnotationSpecSetsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsAnnotationSpecSets($parent, $optParams = [])
+    class Google_Service_DataLabeling_Resource_ProjectsAnnotationSpecSets extends \Google\Service\DataLabeling\Resource\ProjectsAnnotationSpecSets
     {
     }
 }

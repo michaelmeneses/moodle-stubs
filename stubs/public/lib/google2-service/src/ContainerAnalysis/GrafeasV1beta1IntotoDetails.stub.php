@@ -21,37 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class GrafeasV1beta1IntotoDetails extends \Google\Collection
-{
-    protected $collection_key = 'signatures';
-    protected $signaturesType = GrafeasV1beta1IntotoSignature::class;
-    protected $signaturesDataType = 'array';
-    protected $signedType = Link::class;
-    protected $signedDataType = '';
-    /**
-     * @param GrafeasV1beta1IntotoSignature[]
-     */
-    public function setSignatures($signatures)
+namespace Google\Service\ContainerAnalysis {
+    class GrafeasV1beta1IntotoDetails extends \Google\Collection
     {
+        protected $collection_key = 'signatures';
+        protected $signaturesType = GrafeasV1beta1IntotoSignature::class;
+        protected $signaturesDataType = 'array';
+        protected $signedType = Link::class;
+        protected $signedDataType = '';
+        /**
+         * @param GrafeasV1beta1IntotoSignature[]
+         */
+        public function setSignatures($signatures)
+        {
+        }
+        /**
+         * @return GrafeasV1beta1IntotoSignature[]
+         */
+        public function getSignatures()
+        {
+        }
+        /**
+         * @param Link
+         */
+        public function setSigned(Link $signed)
+        {
+        }
+        /**
+         * @return Link
+         */
+        public function getSigned()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GrafeasV1beta1IntotoSignature[]
+     * Runtime class alias of \Google\Service\ContainerAnalysis\GrafeasV1beta1IntotoDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSignatures()
-    {
-    }
-    /**
-     * @param Link
-     */
-    public function setSigned(Link $signed)
-    {
-    }
-    /**
-     * @return Link
-     */
-    public function getSigned()
+    class Google_Service_ContainerAnalysis_GrafeasV1beta1IntotoDetails extends \Google\Service\ContainerAnalysis\GrafeasV1beta1IntotoDetails
     {
     }
 }

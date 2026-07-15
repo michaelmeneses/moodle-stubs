@@ -21,29 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360\Resource;
-
-/**
- * The "customers" collection of methods.
- * Typical usage is:
- *  <code>
- *   $searchads360Service = new Google\Service\SA360(...);
- *   $customers = $searchads360Service->customers;
- *  </code>
- */
-class Customers extends \Google\Service\Resource
-{
+namespace Google\Service\SA360\Resource {
+    use Google\Service\SA360\GoogleAdsSearchads360V0ServicesListAccessibleCustomersResponse;
     /**
-     * Returns resource names of customers directly accessible by the user
-     * authenticating the call. List of thrown errors: [AuthenticationError]()
-     * [AuthorizationError]() [HeaderError]() [InternalError]() [QuotaError]()
-     * [RequestError]() (customers.listAccessibleCustomers)
-     *
-     * @param array $optParams Optional parameters.
-     * @return GoogleAdsSearchads360V0ServicesListAccessibleCustomersResponse
-     * @throws \Google\Service\Exception
+     * The "customers" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $searchads360Service = new Google\Service\SA360(...);
+     *   $customers = $searchads360Service->customers;
+     *  </code>
      */
-    public function listAccessibleCustomers($optParams = [])
+    class Customers extends \Google\Service\Resource
+    {
+        /**
+         * Returns resource names of customers directly accessible by the user
+         * authenticating the call. List of thrown errors: [AuthenticationError]()
+         * [AuthorizationError]() [HeaderError]() [InternalError]() [QuotaError]()
+         * [RequestError]() (customers.listAccessibleCustomers)
+         *
+         * @param array $optParams Optional parameters.
+         * @return GoogleAdsSearchads360V0ServicesListAccessibleCustomersResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listAccessibleCustomers($optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\SA360\Resource\Customers registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_SA360_Resource_Customers extends \Google\Service\SA360\Resource\Customers
     {
     }
 }

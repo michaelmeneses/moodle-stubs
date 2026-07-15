@@ -21,40 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OracleDatabase\Resource;
-
-/**
- * The "autonomousDatabaseCharacterSets" collection of methods.
- * Typical usage is:
- *  <code>
- *   $oracledatabaseService = new Google\Service\OracleDatabase(...);
- *   $autonomousDatabaseCharacterSets = $oracledatabaseService->projects_locations_autonomousDatabaseCharacterSets;
- *  </code>
- */
-class ProjectsLocationsAutonomousDatabaseCharacterSets extends \Google\Service\Resource
-{
+namespace Google\Service\OracleDatabase\Resource {
+    use Google\Service\OracleDatabase\ListAutonomousDatabaseCharacterSetsResponse;
     /**
-     * Lists Autonomous Database Character Sets in a given project and location. (au
-     * tonomousDatabaseCharacterSets.listProjectsLocationsAutonomousDatabaseCharacte
-     * rSets)
-     *
-     * @param string $parent Required. The parent value for the Autonomous Database
-     * in the following format: projects/{project}/locations/{location}.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Optional. An expression for filtering the results of
-     * the request. Only the **character_set_type** field is supported in the
-     * following format: `character_set_type="{characterSetType}"`. Accepted values
-     * include `DATABASE` and `NATIONAL`.
-     * @opt_param int pageSize Optional. The maximum number of items to return. If
-     * unspecified, at most 50 Autonomous DB Character Sets will be returned. The
-     * maximum value is 1000; values above 1000 will be coerced to 1000.
-     * @opt_param string pageToken Optional. A token identifying a page of results
-     * the server should return.
-     * @return ListAutonomousDatabaseCharacterSetsResponse
-     * @throws \Google\Service\Exception
+     * The "autonomousDatabaseCharacterSets" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $oracledatabaseService = new Google\Service\OracleDatabase(...);
+     *   $autonomousDatabaseCharacterSets = $oracledatabaseService->projects_locations_autonomousDatabaseCharacterSets;
+     *  </code>
      */
-    public function listProjectsLocationsAutonomousDatabaseCharacterSets($parent, $optParams = [])
+    class ProjectsLocationsAutonomousDatabaseCharacterSets extends \Google\Service\Resource
+    {
+        /**
+         * Lists Autonomous Database Character Sets in a given project and location. (au
+         * tonomousDatabaseCharacterSets.listProjectsLocationsAutonomousDatabaseCharacte
+         * rSets)
+         *
+         * @param string $parent Required. The parent value for the Autonomous Database
+         * in the following format: projects/{project}/locations/{location}.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Optional. An expression for filtering the results of
+         * the request. Only the **character_set_type** field is supported in the
+         * following format: `character_set_type="{characterSetType}"`. Accepted values
+         * include `DATABASE` and `NATIONAL`.
+         * @opt_param int pageSize Optional. The maximum number of items to return. If
+         * unspecified, at most 50 Autonomous DB Character Sets will be returned. The
+         * maximum value is 1000; values above 1000 will be coerced to 1000.
+         * @opt_param string pageToken Optional. A token identifying a page of results
+         * the server should return.
+         * @return ListAutonomousDatabaseCharacterSetsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsAutonomousDatabaseCharacterSets($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\OracleDatabase\Resource\ProjectsLocationsAutonomousDatabaseCharacterSets registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_OracleDatabase_Resource_ProjectsLocationsAutonomousDatabaseCharacterSets extends \Google\Service\OracleDatabase\Resource\ProjectsLocationsAutonomousDatabaseCharacterSets
     {
     }
 }

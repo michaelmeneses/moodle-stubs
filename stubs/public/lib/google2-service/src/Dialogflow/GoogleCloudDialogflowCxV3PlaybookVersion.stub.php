@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3PlaybookVersion extends \Google\Collection
-{
-    protected $collection_key = 'examples';
-    /**
-     * Optional. The description of the playbook version.
-     *
-     * @var string
-     */
-    public $description;
-    protected $examplesType = GoogleCloudDialogflowCxV3Example::class;
-    protected $examplesDataType = 'array';
-    /**
-     * The unique identifier of the playbook version. Format:
-     * `projects//locations//agents//playbooks//versions/`.
-     *
-     * @var string
-     */
-    public $name;
-    protected $playbookType = GoogleCloudDialogflowCxV3Playbook::class;
-    protected $playbookDataType = '';
-    /**
-     * Output only. Last time the playbook version was created or modified.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Optional. The description of the playbook version.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3PlaybookVersion extends \Google\Collection
     {
+        protected $collection_key = 'examples';
+        /**
+         * Optional. The description of the playbook version.
+         *
+         * @var string
+         */
+        public $description;
+        protected $examplesType = GoogleCloudDialogflowCxV3Example::class;
+        protected $examplesDataType = 'array';
+        /**
+         * The unique identifier of the playbook version. Format:
+         * `projects//locations//agents//playbooks//versions/`.
+         *
+         * @var string
+         */
+        public $name;
+        protected $playbookType = GoogleCloudDialogflowCxV3Playbook::class;
+        protected $playbookDataType = '';
+        /**
+         * Output only. Last time the playbook version was created or modified.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Optional. The description of the playbook version.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Output only. Snapshot of the examples belonging to the playbook when the
+         * playbook version is created.
+         *
+         * @param GoogleCloudDialogflowCxV3Example[] $examples
+         */
+        public function setExamples($examples)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3Example[]
+         */
+        public function getExamples()
+        {
+        }
+        /**
+         * The unique identifier of the playbook version. Format:
+         * `projects//locations//agents//playbooks//versions/`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. Snapshot of the playbook when the playbook version is created.
+         *
+         * @param GoogleCloudDialogflowCxV3Playbook $playbook
+         */
+        public function setPlaybook(GoogleCloudDialogflowCxV3Playbook $playbook)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3Playbook
+         */
+        public function getPlaybook()
+        {
+        }
+        /**
+         * Output only. Last time the playbook version was created or modified.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3PlaybookVersion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * Output only. Snapshot of the examples belonging to the playbook when the
-     * playbook version is created.
-     *
-     * @param GoogleCloudDialogflowCxV3Example[] $examples
-     */
-    public function setExamples($examples)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3Example[]
-     */
-    public function getExamples()
-    {
-    }
-    /**
-     * The unique identifier of the playbook version. Format:
-     * `projects//locations//agents//playbooks//versions/`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. Snapshot of the playbook when the playbook version is created.
-     *
-     * @param GoogleCloudDialogflowCxV3Playbook $playbook
-     */
-    public function setPlaybook(GoogleCloudDialogflowCxV3Playbook $playbook)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3Playbook
-     */
-    public function getPlaybook()
-    {
-    }
-    /**
-     * Output only. Last time the playbook version was created or modified.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3PlaybookVersion extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3PlaybookVersion
     {
     }
 }

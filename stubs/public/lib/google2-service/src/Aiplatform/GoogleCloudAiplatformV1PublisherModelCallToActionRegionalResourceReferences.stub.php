@@ -21,146 +21,155 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1PublisherModelCallToActionRegionalResourceReferences extends \Google\Model
-{
-    /**
-     * Optional. For notebook resource. When set to true, the Colab Enterprise
-     * link will be disabled in the "open notebook" dialog in UI.
-     *
-     * @var bool
-     */
-    public $colabNotebookDisabled;
-    protected $referencesType = GoogleCloudAiplatformV1PublisherModelResourceReference::class;
-    protected $referencesDataType = 'map';
-    /**
-     * Optional. Description of the resource.
-     *
-     * @var string
-     */
-    public $resourceDescription;
-    /**
-     * Optional. Title of the resource.
-     *
-     * @var string
-     */
-    public $resourceTitle;
-    /**
-     * Optional. Use case (CUJ) of the resource.
-     *
-     * @var string
-     */
-    public $resourceUseCase;
-    /**
-     * Optional. For notebook resource, whether the notebook supports Workbench.
-     *
-     * @var bool
-     */
-    public $supportsWorkbench;
-    /**
-     * Required.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * Optional. For notebook resource. When set to true, the Colab Enterprise
-     * link will be disabled in the "open notebook" dialog in UI.
-     *
-     * @param bool $colabNotebookDisabled
-     */
-    public function setColabNotebookDisabled($colabNotebookDisabled)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1PublisherModelCallToActionRegionalResourceReferences extends \Google\Model
     {
+        /**
+         * Optional. For notebook resource. When set to true, the Colab Enterprise
+         * link will be disabled in the "open notebook" dialog in UI.
+         *
+         * @var bool
+         */
+        public $colabNotebookDisabled;
+        protected $referencesType = GoogleCloudAiplatformV1PublisherModelResourceReference::class;
+        protected $referencesDataType = 'map';
+        /**
+         * Optional. Description of the resource.
+         *
+         * @var string
+         */
+        public $resourceDescription;
+        /**
+         * Optional. Title of the resource.
+         *
+         * @var string
+         */
+        public $resourceTitle;
+        /**
+         * Optional. Use case (CUJ) of the resource.
+         *
+         * @var string
+         */
+        public $resourceUseCase;
+        /**
+         * Optional. For notebook resource, whether the notebook supports Workbench.
+         *
+         * @var bool
+         */
+        public $supportsWorkbench;
+        /**
+         * Required.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * Optional. For notebook resource. When set to true, the Colab Enterprise
+         * link will be disabled in the "open notebook" dialog in UI.
+         *
+         * @param bool $colabNotebookDisabled
+         */
+        public function setColabNotebookDisabled($colabNotebookDisabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getColabNotebookDisabled()
+        {
+        }
+        /**
+         * Required.
+         *
+         * @param GoogleCloudAiplatformV1PublisherModelResourceReference[] $references
+         */
+        public function setReferences($references)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1PublisherModelResourceReference[]
+         */
+        public function getReferences()
+        {
+        }
+        /**
+         * Optional. Description of the resource.
+         *
+         * @param string $resourceDescription
+         */
+        public function setResourceDescription($resourceDescription)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceDescription()
+        {
+        }
+        /**
+         * Optional. Title of the resource.
+         *
+         * @param string $resourceTitle
+         */
+        public function setResourceTitle($resourceTitle)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceTitle()
+        {
+        }
+        /**
+         * Optional. Use case (CUJ) of the resource.
+         *
+         * @param string $resourceUseCase
+         */
+        public function setResourceUseCase($resourceUseCase)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceUseCase()
+        {
+        }
+        /**
+         * Optional. For notebook resource, whether the notebook supports Workbench.
+         *
+         * @param bool $supportsWorkbench
+         */
+        public function setSupportsWorkbench($supportsWorkbench)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSupportsWorkbench()
+        {
+        }
+        /**
+         * Required.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1PublisherModelCallToActionRegionalResourceReferences registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColabNotebookDisabled()
-    {
-    }
-    /**
-     * Required.
-     *
-     * @param GoogleCloudAiplatformV1PublisherModelResourceReference[] $references
-     */
-    public function setReferences($references)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1PublisherModelResourceReference[]
-     */
-    public function getReferences()
-    {
-    }
-    /**
-     * Optional. Description of the resource.
-     *
-     * @param string $resourceDescription
-     */
-    public function setResourceDescription($resourceDescription)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceDescription()
-    {
-    }
-    /**
-     * Optional. Title of the resource.
-     *
-     * @param string $resourceTitle
-     */
-    public function setResourceTitle($resourceTitle)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceTitle()
-    {
-    }
-    /**
-     * Optional. Use case (CUJ) of the resource.
-     *
-     * @param string $resourceUseCase
-     */
-    public function setResourceUseCase($resourceUseCase)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceUseCase()
-    {
-    }
-    /**
-     * Optional. For notebook resource, whether the notebook supports Workbench.
-     *
-     * @param bool $supportsWorkbench
-     */
-    public function setSupportsWorkbench($supportsWorkbench)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSupportsWorkbench()
-    {
-    }
-    /**
-     * Required.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1PublisherModelCallToActionRegionalResourceReferences extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1PublisherModelCallToActionRegionalResourceReferences
     {
     }
 }

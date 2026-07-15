@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class SecurityConfig extends \Google\Model
-{
-    protected $identityConfigType = IdentityConfig::class;
-    protected $identityConfigDataType = '';
-    protected $kerberosConfigType = KerberosConfig::class;
-    protected $kerberosConfigDataType = '';
-    /**
-     * Optional. Identity related configuration, including service account based
-     * secure multi-tenancy user mappings.
-     *
-     * @param IdentityConfig $identityConfig
-     */
-    public function setIdentityConfig(IdentityConfig $identityConfig)
+namespace Google\Service\Dataproc {
+    class SecurityConfig extends \Google\Model
     {
+        protected $identityConfigType = IdentityConfig::class;
+        protected $identityConfigDataType = '';
+        protected $kerberosConfigType = KerberosConfig::class;
+        protected $kerberosConfigDataType = '';
+        /**
+         * Optional. Identity related configuration, including service account based
+         * secure multi-tenancy user mappings.
+         *
+         * @param IdentityConfig $identityConfig
+         */
+        public function setIdentityConfig(IdentityConfig $identityConfig)
+        {
+        }
+        /**
+         * @return IdentityConfig
+         */
+        public function getIdentityConfig()
+        {
+        }
+        /**
+         * Optional. Kerberos related configuration.
+         *
+         * @param KerberosConfig $kerberosConfig
+         */
+        public function setKerberosConfig(KerberosConfig $kerberosConfig)
+        {
+        }
+        /**
+         * @return KerberosConfig
+         */
+        public function getKerberosConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return IdentityConfig
+     * Runtime class alias of \Google\Service\Dataproc\SecurityConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIdentityConfig()
-    {
-    }
-    /**
-     * Optional. Kerberos related configuration.
-     *
-     * @param KerberosConfig $kerberosConfig
-     */
-    public function setKerberosConfig(KerberosConfig $kerberosConfig)
-    {
-    }
-    /**
-     * @return KerberosConfig
-     */
-    public function getKerberosConfig()
+    class Google_Service_Dataproc_SecurityConfig extends \Google\Service\Dataproc\SecurityConfig
     {
     }
 }

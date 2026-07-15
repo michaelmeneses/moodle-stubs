@@ -21,118 +21,127 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTubeAnalytics;
-
-class Group extends \Google\Model
-{
-    protected $contentDetailsType = GroupContentDetails::class;
-    protected $contentDetailsDataType = '';
-    protected $errorsType = Errors::class;
-    protected $errorsDataType = '';
-    /**
-     * The Etag of this resource.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * The ID that YouTube uses to uniquely identify the group.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Identifies the API resource's type. The value will be `youtube#group`.
-     *
-     * @var string
-     */
-    public $kind;
-    protected $snippetType = GroupSnippet::class;
-    protected $snippetDataType = '';
-    /**
-     * The `contentDetails` object contains additional information about the
-     * group, such as the number and type of items that it contains.
-     *
-     * @param GroupContentDetails $contentDetails
-     */
-    public function setContentDetails(GroupContentDetails $contentDetails)
+namespace Google\Service\YouTubeAnalytics {
+    class Group extends \Google\Model
     {
+        protected $contentDetailsType = GroupContentDetails::class;
+        protected $contentDetailsDataType = '';
+        protected $errorsType = Errors::class;
+        protected $errorsDataType = '';
+        /**
+         * The Etag of this resource.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * The ID that YouTube uses to uniquely identify the group.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Identifies the API resource's type. The value will be `youtube#group`.
+         *
+         * @var string
+         */
+        public $kind;
+        protected $snippetType = GroupSnippet::class;
+        protected $snippetDataType = '';
+        /**
+         * The `contentDetails` object contains additional information about the
+         * group, such as the number and type of items that it contains.
+         *
+         * @param GroupContentDetails $contentDetails
+         */
+        public function setContentDetails(GroupContentDetails $contentDetails)
+        {
+        }
+        /**
+         * @return GroupContentDetails
+         */
+        public function getContentDetails()
+        {
+        }
+        /**
+         * Apiary error details
+         *
+         * @param Errors $errors
+         */
+        public function setErrors(Errors $errors)
+        {
+        }
+        /**
+         * @return Errors
+         */
+        public function getErrors()
+        {
+        }
+        /**
+         * The Etag of this resource.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * The ID that YouTube uses to uniquely identify the group.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Identifies the API resource's type. The value will be `youtube#group`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The `snippet` object contains basic information about the group, including
+         * its creation date and name.
+         *
+         * @param GroupSnippet $snippet
+         */
+        public function setSnippet(GroupSnippet $snippet)
+        {
+        }
+        /**
+         * @return GroupSnippet
+         */
+        public function getSnippet()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GroupContentDetails
+     * Runtime class alias of \Google\Service\YouTubeAnalytics\Group registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContentDetails()
-    {
-    }
-    /**
-     * Apiary error details
-     *
-     * @param Errors $errors
-     */
-    public function setErrors(Errors $errors)
-    {
-    }
-    /**
-     * @return Errors
-     */
-    public function getErrors()
-    {
-    }
-    /**
-     * The Etag of this resource.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * The ID that YouTube uses to uniquely identify the group.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Identifies the API resource's type. The value will be `youtube#group`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The `snippet` object contains basic information about the group, including
-     * its creation date and name.
-     *
-     * @param GroupSnippet $snippet
-     */
-    public function setSnippet(GroupSnippet $snippet)
-    {
-    }
-    /**
-     * @return GroupSnippet
-     */
-    public function getSnippet()
+    class Google_Service_YouTubeAnalytics_Group extends \Google\Service\YouTubeAnalytics\Group
     {
     }
 }

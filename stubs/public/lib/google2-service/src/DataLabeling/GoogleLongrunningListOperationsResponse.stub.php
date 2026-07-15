@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleLongrunningListOperationsResponse extends \Google\Collection
-{
-    protected $collection_key = 'operations';
-    /**
-     * The standard List next-page token.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $operationsType = GoogleLongrunningOperation::class;
-    protected $operationsDataType = 'array';
-    /**
-     * The standard List next-page token.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\DataLabeling {
+    class GoogleLongrunningListOperationsResponse extends \Google\Collection
     {
+        protected $collection_key = 'operations';
+        /**
+         * The standard List next-page token.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $operationsType = GoogleLongrunningOperation::class;
+        protected $operationsDataType = 'array';
+        /**
+         * The standard List next-page token.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * A list of operations that matches the specified filter in the request.
+         *
+         * @param GoogleLongrunningOperation[] $operations
+         */
+        public function setOperations($operations)
+        {
+        }
+        /**
+         * @return GoogleLongrunningOperation[]
+         */
+        public function getOperations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleLongrunningListOperationsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * A list of operations that matches the specified filter in the request.
-     *
-     * @param GoogleLongrunningOperation[] $operations
-     */
-    public function setOperations($operations)
-    {
-    }
-    /**
-     * @return GoogleLongrunningOperation[]
-     */
-    public function getOperations()
+    class Google_Service_DataLabeling_GoogleLongrunningListOperationsResponse extends \Google\Service\DataLabeling\GoogleLongrunningListOperationsResponse
     {
     }
 }

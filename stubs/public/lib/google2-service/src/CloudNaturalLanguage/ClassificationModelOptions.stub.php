@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class ClassificationModelOptions extends \Google\Model
-{
-    protected $v1ModelType = V1Model::class;
-    protected $v1ModelDataType = '';
-    protected $v2ModelType = V2Model::class;
-    protected $v2ModelDataType = '';
-    /**
-     * @param V1Model
-     */
-    public function setV1Model(V1Model $v1Model)
+namespace Google\Service\CloudNaturalLanguage {
+    class ClassificationModelOptions extends \Google\Model
     {
+        protected $v1ModelType = V1Model::class;
+        protected $v1ModelDataType = '';
+        protected $v2ModelType = V2Model::class;
+        protected $v2ModelDataType = '';
+        /**
+         * @param V1Model
+         */
+        public function setV1Model(V1Model $v1Model)
+        {
+        }
+        /**
+         * @return V1Model
+         */
+        public function getV1Model()
+        {
+        }
+        /**
+         * @param V2Model
+         */
+        public function setV2Model(V2Model $v2Model)
+        {
+        }
+        /**
+         * @return V2Model
+         */
+        public function getV2Model()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return V1Model
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\ClassificationModelOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getV1Model()
-    {
-    }
-    /**
-     * @param V2Model
-     */
-    public function setV2Model(V2Model $v2Model)
-    {
-    }
-    /**
-     * @return V2Model
-     */
-    public function getV2Model()
+    class Google_Service_CloudNaturalLanguage_ClassificationModelOptions extends \Google\Service\CloudNaturalLanguage\ClassificationModelOptions
     {
     }
 }

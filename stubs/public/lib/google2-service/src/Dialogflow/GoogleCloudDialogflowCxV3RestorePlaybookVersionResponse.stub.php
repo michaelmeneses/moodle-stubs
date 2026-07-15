@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3RestorePlaybookVersionResponse extends \Google\Model
-{
-    protected $playbookType = GoogleCloudDialogflowCxV3Playbook::class;
-    protected $playbookDataType = '';
-    /**
-     * The updated playbook.
-     *
-     * @param GoogleCloudDialogflowCxV3Playbook $playbook
-     */
-    public function setPlaybook(GoogleCloudDialogflowCxV3Playbook $playbook)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3RestorePlaybookVersionResponse extends \Google\Model
     {
+        protected $playbookType = GoogleCloudDialogflowCxV3Playbook::class;
+        protected $playbookDataType = '';
+        /**
+         * The updated playbook.
+         *
+         * @param GoogleCloudDialogflowCxV3Playbook $playbook
+         */
+        public function setPlaybook(GoogleCloudDialogflowCxV3Playbook $playbook)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3Playbook
+         */
+        public function getPlaybook()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowCxV3Playbook
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3RestorePlaybookVersionResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPlaybook()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3RestorePlaybookVersionResponse extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3RestorePlaybookVersionResponse
     {
     }
 }

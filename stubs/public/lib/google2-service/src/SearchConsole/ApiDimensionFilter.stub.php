@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SearchConsole;
-
-class ApiDimensionFilter extends \Google\Model
-{
-    public const DIMENSION_QUERY = 'QUERY';
-    public const DIMENSION_PAGE = 'PAGE';
-    public const DIMENSION_COUNTRY = 'COUNTRY';
-    public const DIMENSION_DEVICE = 'DEVICE';
-    public const DIMENSION_SEARCH_APPEARANCE = 'SEARCH_APPEARANCE';
-    public const OPERATOR_EQUALS = 'EQUALS';
-    public const OPERATOR_NOT_EQUALS = 'NOT_EQUALS';
-    public const OPERATOR_CONTAINS = 'CONTAINS';
-    public const OPERATOR_NOT_CONTAINS = 'NOT_CONTAINS';
-    public const OPERATOR_INCLUDING_REGEX = 'INCLUDING_REGEX';
-    public const OPERATOR_EXCLUDING_REGEX = 'EXCLUDING_REGEX';
-    /**
-     * @var string
-     */
-    public $dimension;
-    /**
-     * @var string
-     */
-    public $expression;
-    /**
-     * @var string
-     */
-    public $operator;
-    /**
-     * @param self::DIMENSION_* $dimension
-     */
-    public function setDimension($dimension)
+namespace Google\Service\SearchConsole {
+    class ApiDimensionFilter extends \Google\Model
     {
+        public const DIMENSION_QUERY = 'QUERY';
+        public const DIMENSION_PAGE = 'PAGE';
+        public const DIMENSION_COUNTRY = 'COUNTRY';
+        public const DIMENSION_DEVICE = 'DEVICE';
+        public const DIMENSION_SEARCH_APPEARANCE = 'SEARCH_APPEARANCE';
+        public const OPERATOR_EQUALS = 'EQUALS';
+        public const OPERATOR_NOT_EQUALS = 'NOT_EQUALS';
+        public const OPERATOR_CONTAINS = 'CONTAINS';
+        public const OPERATOR_NOT_CONTAINS = 'NOT_CONTAINS';
+        public const OPERATOR_INCLUDING_REGEX = 'INCLUDING_REGEX';
+        public const OPERATOR_EXCLUDING_REGEX = 'EXCLUDING_REGEX';
+        /**
+         * @var string
+         */
+        public $dimension;
+        /**
+         * @var string
+         */
+        public $expression;
+        /**
+         * @var string
+         */
+        public $operator;
+        /**
+         * @param self::DIMENSION_* $dimension
+         */
+        public function setDimension($dimension)
+        {
+        }
+        /**
+         * @return self::DIMENSION_*
+         */
+        public function getDimension()
+        {
+        }
+        /**
+         * @param string $expression
+         */
+        public function setExpression($expression)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpression()
+        {
+        }
+        /**
+         * @param self::OPERATOR_* $operator
+         */
+        public function setOperator($operator)
+        {
+        }
+        /**
+         * @return self::OPERATOR_*
+         */
+        public function getOperator()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::DIMENSION_*
+     * Runtime class alias of \Google\Service\SearchConsole\ApiDimensionFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDimension()
-    {
-    }
-    /**
-     * @param string $expression
-     */
-    public function setExpression($expression)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExpression()
-    {
-    }
-    /**
-     * @param self::OPERATOR_* $operator
-     */
-    public function setOperator($operator)
-    {
-    }
-    /**
-     * @return self::OPERATOR_*
-     */
-    public function getOperator()
+    class Google_Service_SearchConsole_ApiDimensionFilter extends \Google\Service\SearchConsole\ApiDimensionFilter
     {
     }
 }

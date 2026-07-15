@@ -21,203 +21,212 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkServices;
-
-class LbEdgeExtension extends \Google\Collection
-{
-    /**
-     * Default value. Do not use.
-     */
-    public const LOAD_BALANCING_SCHEME_LOAD_BALANCING_SCHEME_UNSPECIFIED = 'LOAD_BALANCING_SCHEME_UNSPECIFIED';
-    /**
-     * Signifies that this is used for Internal HTTP(S) Load Balancing.
-     */
-    public const LOAD_BALANCING_SCHEME_INTERNAL_MANAGED = 'INTERNAL_MANAGED';
-    /**
-     * Signifies that this is used for External Managed HTTP(S) Load Balancing.
-     */
-    public const LOAD_BALANCING_SCHEME_EXTERNAL_MANAGED = 'EXTERNAL_MANAGED';
-    protected $collection_key = 'forwardingRules';
-    /**
-     * Output only. The timestamp when the resource was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Optional. A human-readable description of the resource.
-     *
-     * @var string
-     */
-    public $description;
-    protected $extensionChainsType = ExtensionChain::class;
-    protected $extensionChainsDataType = 'array';
-    /**
-     * Required. A list of references to the forwarding rules to which this
-     * service extension is attached. At least one forwarding rule is required.
-     * Only one `LbEdgeExtension` resource can be associated with a forwarding
-     * rule.
-     *
-     * @var string[]
-     */
-    public $forwardingRules;
-    /**
-     * Optional. Set of labels associated with the `LbEdgeExtension` resource. The
-     * format must comply with [the requirements for
-     * labels](https://cloud.google.com/compute/docs/labeling-
-     * resources#requirements) for Google Cloud resources.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Required. All forwarding rules referenced by this extension must share the
-     * same load balancing scheme. Supported values: `EXTERNAL_MANAGED`.
-     *
-     * @var string
-     */
-    public $loadBalancingScheme;
-    /**
-     * Required. Identifier. Name of the `LbEdgeExtension` resource in the
-     * following format: `projects/{project}/locations/{location}/lbEdgeExtensions
-     * /{lb_edge_extension}`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The timestamp when the resource was updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. The timestamp when the resource was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\NetworkServices {
+    class LbEdgeExtension extends \Google\Collection
     {
+        /**
+         * Default value. Do not use.
+         */
+        public const LOAD_BALANCING_SCHEME_LOAD_BALANCING_SCHEME_UNSPECIFIED = 'LOAD_BALANCING_SCHEME_UNSPECIFIED';
+        /**
+         * Signifies that this is used for Internal HTTP(S) Load Balancing.
+         */
+        public const LOAD_BALANCING_SCHEME_INTERNAL_MANAGED = 'INTERNAL_MANAGED';
+        /**
+         * Signifies that this is used for External Managed HTTP(S) Load Balancing.
+         */
+        public const LOAD_BALANCING_SCHEME_EXTERNAL_MANAGED = 'EXTERNAL_MANAGED';
+        protected $collection_key = 'forwardingRules';
+        /**
+         * Output only. The timestamp when the resource was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Optional. A human-readable description of the resource.
+         *
+         * @var string
+         */
+        public $description;
+        protected $extensionChainsType = ExtensionChain::class;
+        protected $extensionChainsDataType = 'array';
+        /**
+         * Required. A list of references to the forwarding rules to which this
+         * service extension is attached. At least one forwarding rule is required.
+         * Only one `LbEdgeExtension` resource can be associated with a forwarding
+         * rule.
+         *
+         * @var string[]
+         */
+        public $forwardingRules;
+        /**
+         * Optional. Set of labels associated with the `LbEdgeExtension` resource. The
+         * format must comply with [the requirements for
+         * labels](https://cloud.google.com/compute/docs/labeling-
+         * resources#requirements) for Google Cloud resources.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Required. All forwarding rules referenced by this extension must share the
+         * same load balancing scheme. Supported values: `EXTERNAL_MANAGED`.
+         *
+         * @var string
+         */
+        public $loadBalancingScheme;
+        /**
+         * Required. Identifier. Name of the `LbEdgeExtension` resource in the
+         * following format: `projects/{project}/locations/{location}/lbEdgeExtensions
+         * /{lb_edge_extension}`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The timestamp when the resource was updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. The timestamp when the resource was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Optional. A human-readable description of the resource.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Required. A set of ordered extension chains that contain the match
+         * conditions and extensions to execute. Match conditions for each extension
+         * chain are evaluated in sequence for a given request. The first extension
+         * chain that has a condition that matches the request is executed. Any
+         * subsequent extension chains do not execute. Limited to 5 extension chains
+         * per resource.
+         *
+         * @param ExtensionChain[] $extensionChains
+         */
+        public function setExtensionChains($extensionChains)
+        {
+        }
+        /**
+         * @return ExtensionChain[]
+         */
+        public function getExtensionChains()
+        {
+        }
+        /**
+         * Required. A list of references to the forwarding rules to which this
+         * service extension is attached. At least one forwarding rule is required.
+         * Only one `LbEdgeExtension` resource can be associated with a forwarding
+         * rule.
+         *
+         * @param string[] $forwardingRules
+         */
+        public function setForwardingRules($forwardingRules)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getForwardingRules()
+        {
+        }
+        /**
+         * Optional. Set of labels associated with the `LbEdgeExtension` resource. The
+         * format must comply with [the requirements for
+         * labels](https://cloud.google.com/compute/docs/labeling-
+         * resources#requirements) for Google Cloud resources.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Required. All forwarding rules referenced by this extension must share the
+         * same load balancing scheme. Supported values: `EXTERNAL_MANAGED`.
+         *
+         * Accepted values: LOAD_BALANCING_SCHEME_UNSPECIFIED, INTERNAL_MANAGED,
+         * EXTERNAL_MANAGED
+         *
+         * @param self::LOAD_BALANCING_SCHEME_* $loadBalancingScheme
+         */
+        public function setLoadBalancingScheme($loadBalancingScheme)
+        {
+        }
+        /**
+         * @return self::LOAD_BALANCING_SCHEME_*
+         */
+        public function getLoadBalancingScheme()
+        {
+        }
+        /**
+         * Required. Identifier. Name of the `LbEdgeExtension` resource in the
+         * following format: `projects/{project}/locations/{location}/lbEdgeExtensions
+         * /{lb_edge_extension}`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The timestamp when the resource was updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetworkServices\LbEdgeExtension registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Optional. A human-readable description of the resource.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Required. A set of ordered extension chains that contain the match
-     * conditions and extensions to execute. Match conditions for each extension
-     * chain are evaluated in sequence for a given request. The first extension
-     * chain that has a condition that matches the request is executed. Any
-     * subsequent extension chains do not execute. Limited to 5 extension chains
-     * per resource.
-     *
-     * @param ExtensionChain[] $extensionChains
-     */
-    public function setExtensionChains($extensionChains)
-    {
-    }
-    /**
-     * @return ExtensionChain[]
-     */
-    public function getExtensionChains()
-    {
-    }
-    /**
-     * Required. A list of references to the forwarding rules to which this
-     * service extension is attached. At least one forwarding rule is required.
-     * Only one `LbEdgeExtension` resource can be associated with a forwarding
-     * rule.
-     *
-     * @param string[] $forwardingRules
-     */
-    public function setForwardingRules($forwardingRules)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getForwardingRules()
-    {
-    }
-    /**
-     * Optional. Set of labels associated with the `LbEdgeExtension` resource. The
-     * format must comply with [the requirements for
-     * labels](https://cloud.google.com/compute/docs/labeling-
-     * resources#requirements) for Google Cloud resources.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Required. All forwarding rules referenced by this extension must share the
-     * same load balancing scheme. Supported values: `EXTERNAL_MANAGED`.
-     *
-     * Accepted values: LOAD_BALANCING_SCHEME_UNSPECIFIED, INTERNAL_MANAGED,
-     * EXTERNAL_MANAGED
-     *
-     * @param self::LOAD_BALANCING_SCHEME_* $loadBalancingScheme
-     */
-    public function setLoadBalancingScheme($loadBalancingScheme)
-    {
-    }
-    /**
-     * @return self::LOAD_BALANCING_SCHEME_*
-     */
-    public function getLoadBalancingScheme()
-    {
-    }
-    /**
-     * Required. Identifier. Name of the `LbEdgeExtension` resource in the
-     * following format: `projects/{project}/locations/{location}/lbEdgeExtensions
-     * /{lb_edge_extension}`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The timestamp when the resource was updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_NetworkServices_LbEdgeExtension extends \Google\Service\NetworkServices\LbEdgeExtension
     {
     }
 }

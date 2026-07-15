@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2beta1ResponseMessageMixedAudio extends \Google\Collection
-{
-    protected $collection_key = 'segments';
-    protected $segmentsType = GoogleCloudDialogflowV2beta1ResponseMessageMixedAudioSegment::class;
-    protected $segmentsDataType = 'array';
-    /**
-     * Segments this audio response is composed of.
-     *
-     * @param GoogleCloudDialogflowV2beta1ResponseMessageMixedAudioSegment[] $segments
-     */
-    public function setSegments($segments)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2beta1ResponseMessageMixedAudio extends \Google\Collection
     {
+        protected $collection_key = 'segments';
+        protected $segmentsType = GoogleCloudDialogflowV2beta1ResponseMessageMixedAudioSegment::class;
+        protected $segmentsDataType = 'array';
+        /**
+         * Segments this audio response is composed of.
+         *
+         * @param GoogleCloudDialogflowV2beta1ResponseMessageMixedAudioSegment[] $segments
+         */
+        public function setSegments($segments)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2beta1ResponseMessageMixedAudioSegment[]
+         */
+        public function getSegments()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowV2beta1ResponseMessageMixedAudioSegment[]
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1ResponseMessageMixedAudio registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSegments()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1ResponseMessageMixedAudio extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1ResponseMessageMixedAudio
     {
     }
 }

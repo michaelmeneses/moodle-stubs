@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GoogleCloudSecuritycenterV2Application extends \Google\Model
-{
-    /**
-     * The base URI that identifies the network location of the application in
-     * which the vulnerability was detected. For example, `http://example.com`.
-     *
-     * @var string
-     */
-    public $baseUri;
-    /**
-     * The full URI with payload that could be used to reproduce the
-     * vulnerability. For example, `http://example.com?p=aMmYgI6H`.
-     *
-     * @var string
-     */
-    public $fullUri;
-    /**
-     * The base URI that identifies the network location of the application in
-     * which the vulnerability was detected. For example, `http://example.com`.
-     *
-     * @param string $baseUri
-     */
-    public function setBaseUri($baseUri)
+namespace Google\Service\SecurityCommandCenter {
+    class GoogleCloudSecuritycenterV2Application extends \Google\Model
     {
+        /**
+         * The base URI that identifies the network location of the application in
+         * which the vulnerability was detected. For example, `http://example.com`.
+         *
+         * @var string
+         */
+        public $baseUri;
+        /**
+         * The full URI with payload that could be used to reproduce the
+         * vulnerability. For example, `http://example.com?p=aMmYgI6H`.
+         *
+         * @var string
+         */
+        public $fullUri;
+        /**
+         * The base URI that identifies the network location of the application in
+         * which the vulnerability was detected. For example, `http://example.com`.
+         *
+         * @param string $baseUri
+         */
+        public function setBaseUri($baseUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBaseUri()
+        {
+        }
+        /**
+         * The full URI with payload that could be used to reproduce the
+         * vulnerability. For example, `http://example.com?p=aMmYgI6H`.
+         *
+         * @param string $fullUri
+         */
+        public function setFullUri($fullUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFullUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2Application registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBaseUri()
-    {
-    }
-    /**
-     * The full URI with payload that could be used to reproduce the
-     * vulnerability. For example, `http://example.com?p=aMmYgI6H`.
-     *
-     * @param string $fullUri
-     */
-    public function setFullUri($fullUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFullUri()
+    class Google_Service_SecurityCommandCenter_GoogleCloudSecuritycenterV2Application extends \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2Application
     {
     }
 }

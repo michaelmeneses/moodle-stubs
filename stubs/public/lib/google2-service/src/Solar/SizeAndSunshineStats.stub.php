@@ -21,77 +21,86 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Solar;
-
-class SizeAndSunshineStats extends \Google\Collection
-{
-    protected $collection_key = 'sunshineQuantiles';
-    /**
-     * The area of the roof or roof segment, in m^2. This is the roof area
-     * (accounting for tilt), not the ground footprint area.
-     *
-     * @var float
-     */
-    public $areaMeters2;
-    /**
-     * The ground footprint area covered by the roof or roof segment, in m^2.
-     *
-     * @var float
-     */
-    public $groundAreaMeters2;
-    /**
-     * Quantiles of the pointwise sunniness across the area. If there are N values
-     * here, this represents the (N-1)-iles. For example, if there are 5 values,
-     * then they would be the quartiles (min, 25%, 50%, 75%, max). Values are in
-     * annual kWh/kW like max_sunshine_hours_per_year.
-     *
-     * @var float[]
-     */
-    public $sunshineQuantiles;
-    /**
-     * The area of the roof or roof segment, in m^2. This is the roof area
-     * (accounting for tilt), not the ground footprint area.
-     *
-     * @param float $areaMeters2
-     */
-    public function setAreaMeters2($areaMeters2)
+namespace Google\Service\Solar {
+    class SizeAndSunshineStats extends \Google\Collection
     {
+        protected $collection_key = 'sunshineQuantiles';
+        /**
+         * The area of the roof or roof segment, in m^2. This is the roof area
+         * (accounting for tilt), not the ground footprint area.
+         *
+         * @var float
+         */
+        public $areaMeters2;
+        /**
+         * The ground footprint area covered by the roof or roof segment, in m^2.
+         *
+         * @var float
+         */
+        public $groundAreaMeters2;
+        /**
+         * Quantiles of the pointwise sunniness across the area. If there are N values
+         * here, this represents the (N-1)-iles. For example, if there are 5 values,
+         * then they would be the quartiles (min, 25%, 50%, 75%, max). Values are in
+         * annual kWh/kW like max_sunshine_hours_per_year.
+         *
+         * @var float[]
+         */
+        public $sunshineQuantiles;
+        /**
+         * The area of the roof or roof segment, in m^2. This is the roof area
+         * (accounting for tilt), not the ground footprint area.
+         *
+         * @param float $areaMeters2
+         */
+        public function setAreaMeters2($areaMeters2)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getAreaMeters2()
+        {
+        }
+        /**
+         * The ground footprint area covered by the roof or roof segment, in m^2.
+         *
+         * @param float $groundAreaMeters2
+         */
+        public function setGroundAreaMeters2($groundAreaMeters2)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getGroundAreaMeters2()
+        {
+        }
+        /**
+         * Quantiles of the pointwise sunniness across the area. If there are N values
+         * here, this represents the (N-1)-iles. For example, if there are 5 values,
+         * then they would be the quartiles (min, 25%, 50%, 75%, max). Values are in
+         * annual kWh/kW like max_sunshine_hours_per_year.
+         *
+         * @param float[] $sunshineQuantiles
+         */
+        public function setSunshineQuantiles($sunshineQuantiles)
+        {
+        }
+        /**
+         * @return float[]
+         */
+        public function getSunshineQuantiles()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\Solar\SizeAndSunshineStats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAreaMeters2()
-    {
-    }
-    /**
-     * The ground footprint area covered by the roof or roof segment, in m^2.
-     *
-     * @param float $groundAreaMeters2
-     */
-    public function setGroundAreaMeters2($groundAreaMeters2)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getGroundAreaMeters2()
-    {
-    }
-    /**
-     * Quantiles of the pointwise sunniness across the area. If there are N values
-     * here, this represents the (N-1)-iles. For example, if there are 5 values,
-     * then they would be the quartiles (min, 25%, 50%, 75%, max). Values are in
-     * annual kWh/kW like max_sunshine_hours_per_year.
-     *
-     * @param float[] $sunshineQuantiles
-     */
-    public function setSunshineQuantiles($sunshineQuantiles)
-    {
-    }
-    /**
-     * @return float[]
-     */
-    public function getSunshineQuantiles()
+    class Google_Service_Solar_SizeAndSunshineStats extends \Google\Service\Solar\SizeAndSunshineStats
     {
     }
 }

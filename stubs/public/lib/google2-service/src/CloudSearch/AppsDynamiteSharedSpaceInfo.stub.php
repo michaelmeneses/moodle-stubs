@@ -21,162 +21,171 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedSpaceInfo extends \Google\Model
-{
-    protected $avatarInfoType = AppsDynamiteSharedAvatarInfo::class;
-    protected $avatarInfoDataType = '';
-    /**
-     * @var string
-     */
-    public $avatarUrl;
-    /**
-     * @var string
-     */
-    public $description;
-    protected $groupIdType = GroupId::class;
-    protected $groupIdDataType = '';
-    /**
-     * @var string
-     */
-    public $inviterEmail;
-    /**
-     * @var bool
-     */
-    public $isExternal;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var int
-     */
-    public $numMembers;
-    protected $segmentedMembershipCountsType = AppsDynamiteSharedSegmentedMembershipCounts::class;
-    protected $segmentedMembershipCountsDataType = '';
-    /**
-     * @var string
-     */
-    public $userMembershipState;
-    /**
-     * @param AppsDynamiteSharedAvatarInfo
-     */
-    public function setAvatarInfo(AppsDynamiteSharedAvatarInfo $avatarInfo)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedSpaceInfo extends \Google\Model
     {
+        protected $avatarInfoType = AppsDynamiteSharedAvatarInfo::class;
+        protected $avatarInfoDataType = '';
+        /**
+         * @var string
+         */
+        public $avatarUrl;
+        /**
+         * @var string
+         */
+        public $description;
+        protected $groupIdType = GroupId::class;
+        protected $groupIdDataType = '';
+        /**
+         * @var string
+         */
+        public $inviterEmail;
+        /**
+         * @var bool
+         */
+        public $isExternal;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var int
+         */
+        public $numMembers;
+        protected $segmentedMembershipCountsType = AppsDynamiteSharedSegmentedMembershipCounts::class;
+        protected $segmentedMembershipCountsDataType = '';
+        /**
+         * @var string
+         */
+        public $userMembershipState;
+        /**
+         * @param AppsDynamiteSharedAvatarInfo
+         */
+        public function setAvatarInfo(AppsDynamiteSharedAvatarInfo $avatarInfo)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedAvatarInfo
+         */
+        public function getAvatarInfo()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setAvatarUrl($avatarUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAvatarUrl()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * @param GroupId
+         */
+        public function setGroupId(GroupId $groupId)
+        {
+        }
+        /**
+         * @return GroupId
+         */
+        public function getGroupId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setInviterEmail($inviterEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInviterEmail()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setIsExternal($isExternal)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsExternal()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setNumMembers($numMembers)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumMembers()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedSegmentedMembershipCounts
+         */
+        public function setSegmentedMembershipCounts(AppsDynamiteSharedSegmentedMembershipCounts $segmentedMembershipCounts)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedSegmentedMembershipCounts
+         */
+        public function getSegmentedMembershipCounts()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUserMembershipState($userMembershipState)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserMembershipState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppsDynamiteSharedAvatarInfo
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedSpaceInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAvatarInfo()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setAvatarUrl($avatarUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAvatarUrl()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * @param GroupId
-     */
-    public function setGroupId(GroupId $groupId)
-    {
-    }
-    /**
-     * @return GroupId
-     */
-    public function getGroupId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setInviterEmail($inviterEmail)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInviterEmail()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setIsExternal($isExternal)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsExternal()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setNumMembers($numMembers)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNumMembers()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedSegmentedMembershipCounts
-     */
-    public function setSegmentedMembershipCounts(AppsDynamiteSharedSegmentedMembershipCounts $segmentedMembershipCounts)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedSegmentedMembershipCounts
-     */
-    public function getSegmentedMembershipCounts()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUserMembershipState($userMembershipState)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserMembershipState()
+    class Google_Service_CloudSearch_AppsDynamiteSharedSpaceInfo extends \Google\Service\CloudSearch\AppsDynamiteSharedSpaceInfo
     {
     }
 }

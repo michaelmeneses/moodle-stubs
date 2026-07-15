@@ -21,29 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail\Resource;
-
-/**
- * The "generativeQuestion" collection of methods.
- * Typical usage is:
- *  <code>
- *   $retailService = new Google\Service\CloudRetail(...);
- *   $generativeQuestion = $retailService->projects_locations_catalogs_generativeQuestion;
- *  </code>
- */
-class ProjectsLocationsCatalogsGenerativeQuestion extends \Google\Service\Resource
-{
+namespace Google\Service\CloudRetail\Resource {
+    use Google\Service\CloudRetail\GoogleCloudRetailV2BatchUpdateGenerativeQuestionConfigsRequest;
+    use Google\Service\CloudRetail\GoogleCloudRetailV2BatchUpdateGenerativeQuestionConfigsResponse;
     /**
-     * Allows management of multiple questions. (generativeQuestion.batchUpdate)
-     *
-     * @param string $parent Optional. Resource name of the parent catalog. Format:
-     * projects/{project}/locations/{location}/catalogs/{catalog}
-     * @param GoogleCloudRetailV2BatchUpdateGenerativeQuestionConfigsRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudRetailV2BatchUpdateGenerativeQuestionConfigsResponse
-     * @throws \Google\Service\Exception
+     * The "generativeQuestion" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $retailService = new Google\Service\CloudRetail(...);
+     *   $generativeQuestion = $retailService->projects_locations_catalogs_generativeQuestion;
+     *  </code>
      */
-    public function batchUpdate($parent, GoogleCloudRetailV2BatchUpdateGenerativeQuestionConfigsRequest $postBody, $optParams = [])
+    class ProjectsLocationsCatalogsGenerativeQuestion extends \Google\Service\Resource
+    {
+        /**
+         * Allows management of multiple questions. (generativeQuestion.batchUpdate)
+         *
+         * @param string $parent Optional. Resource name of the parent catalog. Format:
+         * projects/{project}/locations/{location}/catalogs/{catalog}
+         * @param GoogleCloudRetailV2BatchUpdateGenerativeQuestionConfigsRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudRetailV2BatchUpdateGenerativeQuestionConfigsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function batchUpdate($parent, GoogleCloudRetailV2BatchUpdateGenerativeQuestionConfigsRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudRetail\Resource\ProjectsLocationsCatalogsGenerativeQuestion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudRetail_Resource_ProjectsLocationsCatalogsGenerativeQuestion extends \Google\Service\CloudRetail\Resource\ProjectsLocationsCatalogsGenerativeQuestion
     {
     }
 }

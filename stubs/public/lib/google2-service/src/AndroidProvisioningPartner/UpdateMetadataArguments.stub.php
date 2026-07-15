@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidProvisioningPartner;
-
-class UpdateMetadataArguments extends \Google\Model
-{
-    /**
-     * Required. Device ID of the device.
-     *
-     * @var string
-     */
-    public $deviceId;
-    protected $deviceIdentifierType = DeviceIdentifier::class;
-    protected $deviceIdentifierDataType = '';
-    protected $deviceMetadataType = DeviceMetadata::class;
-    protected $deviceMetadataDataType = '';
-    /**
-     * Required. Device ID of the device.
-     *
-     * @param string $deviceId
-     */
-    public function setDeviceId($deviceId)
+namespace Google\Service\AndroidProvisioningPartner {
+    class UpdateMetadataArguments extends \Google\Model
     {
+        /**
+         * Required. Device ID of the device.
+         *
+         * @var string
+         */
+        public $deviceId;
+        protected $deviceIdentifierType = DeviceIdentifier::class;
+        protected $deviceIdentifierDataType = '';
+        protected $deviceMetadataType = DeviceMetadata::class;
+        protected $deviceMetadataDataType = '';
+        /**
+         * Required. Device ID of the device.
+         *
+         * @param string $deviceId
+         */
+        public function setDeviceId($deviceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeviceId()
+        {
+        }
+        /**
+         * Required. Device identifier.
+         *
+         * @param DeviceIdentifier $deviceIdentifier
+         */
+        public function setDeviceIdentifier(DeviceIdentifier $deviceIdentifier)
+        {
+        }
+        /**
+         * @return DeviceIdentifier
+         */
+        public function getDeviceIdentifier()
+        {
+        }
+        /**
+         * Required. The metadata to update.
+         *
+         * @param DeviceMetadata $deviceMetadata
+         */
+        public function setDeviceMetadata(DeviceMetadata $deviceMetadata)
+        {
+        }
+        /**
+         * @return DeviceMetadata
+         */
+        public function getDeviceMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidProvisioningPartner\UpdateMetadataArguments registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeviceId()
-    {
-    }
-    /**
-     * Required. Device identifier.
-     *
-     * @param DeviceIdentifier $deviceIdentifier
-     */
-    public function setDeviceIdentifier(DeviceIdentifier $deviceIdentifier)
-    {
-    }
-    /**
-     * @return DeviceIdentifier
-     */
-    public function getDeviceIdentifier()
-    {
-    }
-    /**
-     * Required. The metadata to update.
-     *
-     * @param DeviceMetadata $deviceMetadata
-     */
-    public function setDeviceMetadata(DeviceMetadata $deviceMetadata)
-    {
-    }
-    /**
-     * @return DeviceMetadata
-     */
-    public function getDeviceMetadata()
+    class Google_Service_AndroidProvisioningPartner_UpdateMetadataArguments extends \Google\Service\AndroidProvisioningPartner\UpdateMetadataArguments
     {
     }
 }

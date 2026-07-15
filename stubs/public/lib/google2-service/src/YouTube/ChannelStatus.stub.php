@@ -21,137 +21,146 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class ChannelStatus extends \Google\Model
-{
-    public const LONG_UPLOADS_STATUS_longUploadsUnspecified = 'longUploadsUnspecified';
-    public const LONG_UPLOADS_STATUS_allowed = 'allowed';
-    public const LONG_UPLOADS_STATUS_eligible = 'eligible';
-    public const LONG_UPLOADS_STATUS_disallowed = 'disallowed';
-    public const PRIVACY_STATUS_public = 'public';
-    public const PRIVACY_STATUS_unlisted = 'unlisted';
-    public const PRIVACY_STATUS_private = 'private';
-    /**
-     * Whether the channel is considered ypp monetization enabled. See go/yppornot
-     * for more details.
-     *
-     * @var bool
-     */
-    public $isChannelMonetizationEnabled;
-    /**
-     * If true, then the user is linked to either a YouTube username or G+
-     * account. Otherwise, the user doesn't have a public YouTube identity.
-     *
-     * @var bool
-     */
-    public $isLinked;
-    /**
-     * The long uploads status of this channel. See
-     * https://support.google.com/youtube/answer/71673 for more information.
-     *
-     * @var string
-     */
-    public $longUploadsStatus;
-    /**
-     * @var bool
-     */
-    public $madeForKids;
-    /**
-     * Privacy status of the channel.
-     *
-     * @var string
-     */
-    public $privacyStatus;
-    /**
-     * @var bool
-     */
-    public $selfDeclaredMadeForKids;
-    /**
-     * Whether the channel is considered ypp monetization enabled. See go/yppornot
-     * for more details.
-     *
-     * @param bool $isChannelMonetizationEnabled
-     */
-    public function setIsChannelMonetizationEnabled($isChannelMonetizationEnabled)
+namespace Google\Service\YouTube {
+    class ChannelStatus extends \Google\Model
     {
+        public const LONG_UPLOADS_STATUS_longUploadsUnspecified = 'longUploadsUnspecified';
+        public const LONG_UPLOADS_STATUS_allowed = 'allowed';
+        public const LONG_UPLOADS_STATUS_eligible = 'eligible';
+        public const LONG_UPLOADS_STATUS_disallowed = 'disallowed';
+        public const PRIVACY_STATUS_public = 'public';
+        public const PRIVACY_STATUS_unlisted = 'unlisted';
+        public const PRIVACY_STATUS_private = 'private';
+        /**
+         * Whether the channel is considered ypp monetization enabled. See go/yppornot
+         * for more details.
+         *
+         * @var bool
+         */
+        public $isChannelMonetizationEnabled;
+        /**
+         * If true, then the user is linked to either a YouTube username or G+
+         * account. Otherwise, the user doesn't have a public YouTube identity.
+         *
+         * @var bool
+         */
+        public $isLinked;
+        /**
+         * The long uploads status of this channel. See
+         * https://support.google.com/youtube/answer/71673 for more information.
+         *
+         * @var string
+         */
+        public $longUploadsStatus;
+        /**
+         * @var bool
+         */
+        public $madeForKids;
+        /**
+         * Privacy status of the channel.
+         *
+         * @var string
+         */
+        public $privacyStatus;
+        /**
+         * @var bool
+         */
+        public $selfDeclaredMadeForKids;
+        /**
+         * Whether the channel is considered ypp monetization enabled. See go/yppornot
+         * for more details.
+         *
+         * @param bool $isChannelMonetizationEnabled
+         */
+        public function setIsChannelMonetizationEnabled($isChannelMonetizationEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsChannelMonetizationEnabled()
+        {
+        }
+        /**
+         * If true, then the user is linked to either a YouTube username or G+
+         * account. Otherwise, the user doesn't have a public YouTube identity.
+         *
+         * @param bool $isLinked
+         */
+        public function setIsLinked($isLinked)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsLinked()
+        {
+        }
+        /**
+         * The long uploads status of this channel. See
+         * https://support.google.com/youtube/answer/71673 for more information.
+         *
+         * Accepted values: longUploadsUnspecified, allowed, eligible, disallowed
+         *
+         * @param self::LONG_UPLOADS_STATUS_* $longUploadsStatus
+         */
+        public function setLongUploadsStatus($longUploadsStatus)
+        {
+        }
+        /**
+         * @return self::LONG_UPLOADS_STATUS_*
+         */
+        public function getLongUploadsStatus()
+        {
+        }
+        /**
+         * @param bool $madeForKids
+         */
+        public function setMadeForKids($madeForKids)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getMadeForKids()
+        {
+        }
+        /**
+         * Privacy status of the channel.
+         *
+         * Accepted values: public, unlisted, private
+         *
+         * @param self::PRIVACY_STATUS_* $privacyStatus
+         */
+        public function setPrivacyStatus($privacyStatus)
+        {
+        }
+        /**
+         * @return self::PRIVACY_STATUS_*
+         */
+        public function getPrivacyStatus()
+        {
+        }
+        /**
+         * @param bool $selfDeclaredMadeForKids
+         */
+        public function setSelfDeclaredMadeForKids($selfDeclaredMadeForKids)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSelfDeclaredMadeForKids()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\YouTube\ChannelStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIsChannelMonetizationEnabled()
-    {
-    }
-    /**
-     * If true, then the user is linked to either a YouTube username or G+
-     * account. Otherwise, the user doesn't have a public YouTube identity.
-     *
-     * @param bool $isLinked
-     */
-    public function setIsLinked($isLinked)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsLinked()
-    {
-    }
-    /**
-     * The long uploads status of this channel. See
-     * https://support.google.com/youtube/answer/71673 for more information.
-     *
-     * Accepted values: longUploadsUnspecified, allowed, eligible, disallowed
-     *
-     * @param self::LONG_UPLOADS_STATUS_* $longUploadsStatus
-     */
-    public function setLongUploadsStatus($longUploadsStatus)
-    {
-    }
-    /**
-     * @return self::LONG_UPLOADS_STATUS_*
-     */
-    public function getLongUploadsStatus()
-    {
-    }
-    /**
-     * @param bool $madeForKids
-     */
-    public function setMadeForKids($madeForKids)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getMadeForKids()
-    {
-    }
-    /**
-     * Privacy status of the channel.
-     *
-     * Accepted values: public, unlisted, private
-     *
-     * @param self::PRIVACY_STATUS_* $privacyStatus
-     */
-    public function setPrivacyStatus($privacyStatus)
-    {
-    }
-    /**
-     * @return self::PRIVACY_STATUS_*
-     */
-    public function getPrivacyStatus()
-    {
-    }
-    /**
-     * @param bool $selfDeclaredMadeForKids
-     */
-    public function setSelfDeclaredMadeForKids($selfDeclaredMadeForKids)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSelfDeclaredMadeForKids()
+    class Google_Service_YouTube_ChannelStatus extends \Google\Service\YouTube\ChannelStatus
     {
     }
 }

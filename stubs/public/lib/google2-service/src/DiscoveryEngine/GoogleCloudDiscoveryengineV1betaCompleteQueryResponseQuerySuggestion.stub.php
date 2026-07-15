@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaCompleteQueryResponseQuerySuggestion extends \Google\Collection
-{
-    protected $collection_key = 'completableFieldPaths';
-    /**
-     * @var string[]
-     */
-    public $completableFieldPaths;
-    /**
-     * @var string
-     */
-    public $suggestion;
-    /**
-     * @param string[]
-     */
-    public function setCompletableFieldPaths($completableFieldPaths)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaCompleteQueryResponseQuerySuggestion extends \Google\Collection
     {
+        protected $collection_key = 'completableFieldPaths';
+        /**
+         * @var string[]
+         */
+        public $completableFieldPaths;
+        /**
+         * @var string
+         */
+        public $suggestion;
+        /**
+         * @param string[]
+         */
+        public function setCompletableFieldPaths($completableFieldPaths)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCompletableFieldPaths()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSuggestion($suggestion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSuggestion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaCompleteQueryResponseQuerySuggestion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCompletableFieldPaths()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSuggestion($suggestion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSuggestion()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaCompleteQueryResponseQuerySuggestion extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaCompleteQueryResponseQuerySuggestion
     {
     }
 }

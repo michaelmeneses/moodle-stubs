@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdSensePlatform\Resource;
-
-/**
- * The "platforms" collection of methods.
- * Typical usage is:
- *  <code>
- *   $adsenseplatformService = new Google\Service\AdSensePlatform(...);
- *   $platforms = $adsenseplatformService->platforms;
- *  </code>
- */
-class Platforms extends \Google\Service\Resource
-{
+namespace Google\Service\AdSensePlatform\Resource {
+    /**
+     * The "platforms" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $adsenseplatformService = new Google\Service\AdSensePlatform(...);
+     *   $platforms = $adsenseplatformService->platforms;
+     *  </code>
+     */
+    class Platforms extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AdSensePlatform\Resource\Platforms registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AdSensePlatform_Resource_Platforms extends \Google\Service\AdSensePlatform\Resource\Platforms
+    {
+    }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class CelPolicySpec extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $spec;
-    /**
-     * @param string
-     */
-    public function setSpec($spec)
+namespace Google\Service\SecurityCommandCenter {
+    class CelPolicySpec extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $spec;
+        /**
+         * @param string
+         */
+        public function setSpec($spec)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\CelPolicySpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSpec()
+    class Google_Service_SecurityCommandCenter_CelPolicySpec extends \Google\Service\SecurityCommandCenter\CelPolicySpec
     {
     }
 }

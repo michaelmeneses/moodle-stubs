@@ -21,97 +21,106 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChecksService;
-
-class GoogleChecksReportV1alphaReport extends \Google\Collection
-{
-    protected $collection_key = 'checks';
-    protected $appBundleType = GoogleChecksReportV1alphaAppBundle::class;
-    protected $appBundleDataType = '';
-    protected $checksType = GoogleChecksReportV1alphaCheck::class;
-    protected $checksDataType = 'array';
-    protected $dataMonitoringType = GoogleChecksReportV1alphaDataMonitoring::class;
-    protected $dataMonitoringDataType = '';
-    /**
-     * Resource name of the report.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * A URL to view results.
-     *
-     * @var string
-     */
-    public $resultsUri;
-    /**
-     * Information about the analyzed app bundle.
-     *
-     * @param GoogleChecksReportV1alphaAppBundle $appBundle
-     */
-    public function setAppBundle(GoogleChecksReportV1alphaAppBundle $appBundle)
+namespace Google\Service\ChecksService {
+    class GoogleChecksReportV1alphaReport extends \Google\Collection
     {
+        protected $collection_key = 'checks';
+        protected $appBundleType = GoogleChecksReportV1alphaAppBundle::class;
+        protected $appBundleDataType = '';
+        protected $checksType = GoogleChecksReportV1alphaCheck::class;
+        protected $checksDataType = 'array';
+        protected $dataMonitoringType = GoogleChecksReportV1alphaDataMonitoring::class;
+        protected $dataMonitoringDataType = '';
+        /**
+         * Resource name of the report.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * A URL to view results.
+         *
+         * @var string
+         */
+        public $resultsUri;
+        /**
+         * Information about the analyzed app bundle.
+         *
+         * @param GoogleChecksReportV1alphaAppBundle $appBundle
+         */
+        public function setAppBundle(GoogleChecksReportV1alphaAppBundle $appBundle)
+        {
+        }
+        /**
+         * @return GoogleChecksReportV1alphaAppBundle
+         */
+        public function getAppBundle()
+        {
+        }
+        /**
+         * List of checks that were run on the app bundle.
+         *
+         * @param GoogleChecksReportV1alphaCheck[] $checks
+         */
+        public function setChecks($checks)
+        {
+        }
+        /**
+         * @return GoogleChecksReportV1alphaCheck[]
+         */
+        public function getChecks()
+        {
+        }
+        /**
+         * Information related to data monitoring.
+         *
+         * @param GoogleChecksReportV1alphaDataMonitoring $dataMonitoring
+         */
+        public function setDataMonitoring(GoogleChecksReportV1alphaDataMonitoring $dataMonitoring)
+        {
+        }
+        /**
+         * @return GoogleChecksReportV1alphaDataMonitoring
+         */
+        public function getDataMonitoring()
+        {
+        }
+        /**
+         * Resource name of the report.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * A URL to view results.
+         *
+         * @param string $resultsUri
+         */
+        public function setResultsUri($resultsUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResultsUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleChecksReportV1alphaAppBundle
+     * Runtime class alias of \Google\Service\ChecksService\GoogleChecksReportV1alphaReport registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAppBundle()
-    {
-    }
-    /**
-     * List of checks that were run on the app bundle.
-     *
-     * @param GoogleChecksReportV1alphaCheck[] $checks
-     */
-    public function setChecks($checks)
-    {
-    }
-    /**
-     * @return GoogleChecksReportV1alphaCheck[]
-     */
-    public function getChecks()
-    {
-    }
-    /**
-     * Information related to data monitoring.
-     *
-     * @param GoogleChecksReportV1alphaDataMonitoring $dataMonitoring
-     */
-    public function setDataMonitoring(GoogleChecksReportV1alphaDataMonitoring $dataMonitoring)
-    {
-    }
-    /**
-     * @return GoogleChecksReportV1alphaDataMonitoring
-     */
-    public function getDataMonitoring()
-    {
-    }
-    /**
-     * Resource name of the report.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * A URL to view results.
-     *
-     * @param string $resultsUri
-     */
-    public function setResultsUri($resultsUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResultsUri()
+    class Google_Service_ChecksService_GoogleChecksReportV1alphaReport extends \Google\Service\ChecksService\GoogleChecksReportV1alphaReport
     {
     }
 }

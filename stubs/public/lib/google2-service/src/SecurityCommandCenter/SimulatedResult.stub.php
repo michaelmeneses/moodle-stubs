@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class SimulatedResult extends \Google\Model
-{
-    protected $errorType = Status::class;
-    protected $errorDataType = '';
-    protected $findingType = Finding::class;
-    protected $findingDataType = '';
-    protected $noViolationType = SecuritycenterEmpty::class;
-    protected $noViolationDataType = '';
-    /**
-     * Error encountered during the test.
-     *
-     * @param Status $error
-     */
-    public function setError(Status $error)
+namespace Google\Service\SecurityCommandCenter {
+    class SimulatedResult extends \Google\Model
     {
+        protected $errorType = Status::class;
+        protected $errorDataType = '';
+        protected $findingType = Finding::class;
+        protected $findingDataType = '';
+        protected $noViolationType = SecuritycenterEmpty::class;
+        protected $noViolationDataType = '';
+        /**
+         * Error encountered during the test.
+         *
+         * @param Status $error
+         */
+        public function setError(Status $error)
+        {
+        }
+        /**
+         * @return Status
+         */
+        public function getError()
+        {
+        }
+        /**
+         * Finding that would be published for the test case, if a violation is
+         * detected.
+         *
+         * @param Finding $finding
+         */
+        public function setFinding(Finding $finding)
+        {
+        }
+        /**
+         * @return Finding
+         */
+        public function getFinding()
+        {
+        }
+        /**
+         * Indicates that the test case does not trigger any violation.
+         *
+         * @param SecuritycenterEmpty $noViolation
+         */
+        public function setNoViolation(SecuritycenterEmpty $noViolation)
+        {
+        }
+        /**
+         * @return SecuritycenterEmpty
+         */
+        public function getNoViolation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Status
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\SimulatedResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getError()
-    {
-    }
-    /**
-     * Finding that would be published for the test case, if a violation is
-     * detected.
-     *
-     * @param Finding $finding
-     */
-    public function setFinding(Finding $finding)
-    {
-    }
-    /**
-     * @return Finding
-     */
-    public function getFinding()
-    {
-    }
-    /**
-     * Indicates that the test case does not trigger any violation.
-     *
-     * @param SecuritycenterEmpty $noViolation
-     */
-    public function setNoViolation(SecuritycenterEmpty $noViolation)
-    {
-    }
-    /**
-     * @return SecuritycenterEmpty
-     */
-    public function getNoViolation()
+    class Google_Service_SecurityCommandCenter_SimulatedResult extends \Google\Service\SecurityCommandCenter\SimulatedResult
     {
     }
 }

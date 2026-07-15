@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceConsumerManagement;
-
-class UsageRule extends \Google\Model
-{
-    /**
-     * Use this rule to configure unregistered calls for the service. Unregistered
-     * calls are calls that do not contain consumer project identity. (Example:
-     * calls that do not contain an API key). WARNING: By default, API methods do
-     * not allow unregistered calls, and each method call must be identified by a
-     * consumer project identity.
-     *
-     * @var bool
-     */
-    public $allowUnregisteredCalls;
-    /**
-     * Selects the methods to which this rule applies. Use '*' to indicate all
-     * methods in all APIs. Refer to selector for syntax details.
-     *
-     * @var string
-     */
-    public $selector;
-    /**
-     * If true, the selected method should skip service control and the control
-     * plane features, such as quota and billing, will not be available. This flag
-     * is used by Google Cloud Endpoints to bypass checks for internal methods,
-     * such as service health check methods.
-     *
-     * @var bool
-     */
-    public $skipServiceControl;
-    /**
-     * Use this rule to configure unregistered calls for the service. Unregistered
-     * calls are calls that do not contain consumer project identity. (Example:
-     * calls that do not contain an API key). WARNING: By default, API methods do
-     * not allow unregistered calls, and each method call must be identified by a
-     * consumer project identity.
-     *
-     * @param bool $allowUnregisteredCalls
-     */
-    public function setAllowUnregisteredCalls($allowUnregisteredCalls)
+namespace Google\Service\ServiceConsumerManagement {
+    class UsageRule extends \Google\Model
     {
+        /**
+         * Use this rule to configure unregistered calls for the service. Unregistered
+         * calls are calls that do not contain consumer project identity. (Example:
+         * calls that do not contain an API key). WARNING: By default, API methods do
+         * not allow unregistered calls, and each method call must be identified by a
+         * consumer project identity.
+         *
+         * @var bool
+         */
+        public $allowUnregisteredCalls;
+        /**
+         * Selects the methods to which this rule applies. Use '*' to indicate all
+         * methods in all APIs. Refer to selector for syntax details.
+         *
+         * @var string
+         */
+        public $selector;
+        /**
+         * If true, the selected method should skip service control and the control
+         * plane features, such as quota and billing, will not be available. This flag
+         * is used by Google Cloud Endpoints to bypass checks for internal methods,
+         * such as service health check methods.
+         *
+         * @var bool
+         */
+        public $skipServiceControl;
+        /**
+         * Use this rule to configure unregistered calls for the service. Unregistered
+         * calls are calls that do not contain consumer project identity. (Example:
+         * calls that do not contain an API key). WARNING: By default, API methods do
+         * not allow unregistered calls, and each method call must be identified by a
+         * consumer project identity.
+         *
+         * @param bool $allowUnregisteredCalls
+         */
+        public function setAllowUnregisteredCalls($allowUnregisteredCalls)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAllowUnregisteredCalls()
+        {
+        }
+        /**
+         * Selects the methods to which this rule applies. Use '*' to indicate all
+         * methods in all APIs. Refer to selector for syntax details.
+         *
+         * @param string $selector
+         */
+        public function setSelector($selector)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelector()
+        {
+        }
+        /**
+         * If true, the selected method should skip service control and the control
+         * plane features, such as quota and billing, will not be available. This flag
+         * is used by Google Cloud Endpoints to bypass checks for internal methods,
+         * such as service health check methods.
+         *
+         * @param bool $skipServiceControl
+         */
+        public function setSkipServiceControl($skipServiceControl)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSkipServiceControl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\ServiceConsumerManagement\UsageRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowUnregisteredCalls()
-    {
-    }
-    /**
-     * Selects the methods to which this rule applies. Use '*' to indicate all
-     * methods in all APIs. Refer to selector for syntax details.
-     *
-     * @param string $selector
-     */
-    public function setSelector($selector)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelector()
-    {
-    }
-    /**
-     * If true, the selected method should skip service control and the control
-     * plane features, such as quota and billing, will not be available. This flag
-     * is used by Google Cloud Endpoints to bypass checks for internal methods,
-     * such as service health check methods.
-     *
-     * @param bool $skipServiceControl
-     */
-    public function setSkipServiceControl($skipServiceControl)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSkipServiceControl()
+    class Google_Service_ServiceConsumerManagement_UsageRule extends \Google\Service\ServiceConsumerManagement\UsageRule
     {
     }
 }

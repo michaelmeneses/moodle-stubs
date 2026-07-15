@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class Authorization extends \Google\Collection
-{
-    protected $collection_key = 'adminUsers';
-    protected $adminUsersType = ClusterUser::class;
-    protected $adminUsersDataType = 'array';
-    /**
-     * For VMware and bare metal user clusters, users will be granted the cluster-
-     * admin role on the cluster, which provides full administrative access to the
-     * cluster. For bare metal admin clusters, users will be granted the cluster-
-     * view role, which limits users to read-only access.
-     *
-     * @param ClusterUser[] $adminUsers
-     */
-    public function setAdminUsers($adminUsers)
+namespace Google\Service\GKEOnPrem {
+    class Authorization extends \Google\Collection
     {
+        protected $collection_key = 'adminUsers';
+        protected $adminUsersType = ClusterUser::class;
+        protected $adminUsersDataType = 'array';
+        /**
+         * For VMware and bare metal user clusters, users will be granted the cluster-
+         * admin role on the cluster, which provides full administrative access to the
+         * cluster. For bare metal admin clusters, users will be granted the cluster-
+         * view role, which limits users to read-only access.
+         *
+         * @param ClusterUser[] $adminUsers
+         */
+        public function setAdminUsers($adminUsers)
+        {
+        }
+        /**
+         * @return ClusterUser[]
+         */
+        public function getAdminUsers()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ClusterUser[]
+     * Runtime class alias of \Google\Service\GKEOnPrem\Authorization registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdminUsers()
+    class Google_Service_GKEOnPrem_Authorization extends \Google\Service\GKEOnPrem\Authorization
     {
     }
 }

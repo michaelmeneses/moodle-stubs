@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1BigQueryConnectionSpec extends \Google\Model
-{
-    /**
-     * Unspecified type.
-     */
-    public const CONNECTION_TYPE_CONNECTION_TYPE_UNSPECIFIED = 'CONNECTION_TYPE_UNSPECIFIED';
-    /**
-     * Cloud SQL connection.
-     */
-    public const CONNECTION_TYPE_CLOUD_SQL = 'CLOUD_SQL';
-    protected $cloudSqlType = GoogleCloudDatacatalogV1CloudSqlBigQueryConnectionSpec::class;
-    protected $cloudSqlDataType = '';
-    /**
-     * The type of the BigQuery connection.
-     *
-     * @var string
-     */
-    public $connectionType;
-    /**
-     * True if there are credentials attached to the BigQuery connection; false
-     * otherwise.
-     *
-     * @var bool
-     */
-    public $hasCredential;
-    /**
-     * Specification for the BigQuery connection to a Cloud SQL instance.
-     *
-     * @param GoogleCloudDatacatalogV1CloudSqlBigQueryConnectionSpec $cloudSql
-     */
-    public function setCloudSql(GoogleCloudDatacatalogV1CloudSqlBigQueryConnectionSpec $cloudSql)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1BigQueryConnectionSpec extends \Google\Model
     {
+        /**
+         * Unspecified type.
+         */
+        public const CONNECTION_TYPE_CONNECTION_TYPE_UNSPECIFIED = 'CONNECTION_TYPE_UNSPECIFIED';
+        /**
+         * Cloud SQL connection.
+         */
+        public const CONNECTION_TYPE_CLOUD_SQL = 'CLOUD_SQL';
+        protected $cloudSqlType = GoogleCloudDatacatalogV1CloudSqlBigQueryConnectionSpec::class;
+        protected $cloudSqlDataType = '';
+        /**
+         * The type of the BigQuery connection.
+         *
+         * @var string
+         */
+        public $connectionType;
+        /**
+         * True if there are credentials attached to the BigQuery connection; false
+         * otherwise.
+         *
+         * @var bool
+         */
+        public $hasCredential;
+        /**
+         * Specification for the BigQuery connection to a Cloud SQL instance.
+         *
+         * @param GoogleCloudDatacatalogV1CloudSqlBigQueryConnectionSpec $cloudSql
+         */
+        public function setCloudSql(GoogleCloudDatacatalogV1CloudSqlBigQueryConnectionSpec $cloudSql)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1CloudSqlBigQueryConnectionSpec
+         */
+        public function getCloudSql()
+        {
+        }
+        /**
+         * The type of the BigQuery connection.
+         *
+         * Accepted values: CONNECTION_TYPE_UNSPECIFIED, CLOUD_SQL
+         *
+         * @param self::CONNECTION_TYPE_* $connectionType
+         */
+        public function setConnectionType($connectionType)
+        {
+        }
+        /**
+         * @return self::CONNECTION_TYPE_*
+         */
+        public function getConnectionType()
+        {
+        }
+        /**
+         * True if there are credentials attached to the BigQuery connection; false
+         * otherwise.
+         *
+         * @param bool $hasCredential
+         */
+        public function setHasCredential($hasCredential)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getHasCredential()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatacatalogV1CloudSqlBigQueryConnectionSpec
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1BigQueryConnectionSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCloudSql()
-    {
-    }
-    /**
-     * The type of the BigQuery connection.
-     *
-     * Accepted values: CONNECTION_TYPE_UNSPECIFIED, CLOUD_SQL
-     *
-     * @param self::CONNECTION_TYPE_* $connectionType
-     */
-    public function setConnectionType($connectionType)
-    {
-    }
-    /**
-     * @return self::CONNECTION_TYPE_*
-     */
-    public function getConnectionType()
-    {
-    }
-    /**
-     * True if there are credentials attached to the BigQuery connection; false
-     * otherwise.
-     *
-     * @param bool $hasCredential
-     */
-    public function setHasCredential($hasCredential)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getHasCredential()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1BigQueryConnectionSpec extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1BigQueryConnectionSpec
     {
     }
 }

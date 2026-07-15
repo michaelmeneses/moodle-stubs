@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PolicyAnalyzer;
-
-class GoogleCloudPolicyanalyzerV1ObservationPeriod extends \Google\Model
-{
-    /**
-     * The observation end time. The time in this timestamp is always `07:00:00Z`.
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * The observation start time. The time in this timestamp is always
-     * `07:00:00Z`.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * The observation end time. The time in this timestamp is always `07:00:00Z`.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
+namespace Google\Service\PolicyAnalyzer {
+    class GoogleCloudPolicyanalyzerV1ObservationPeriod extends \Google\Model
     {
+        /**
+         * The observation end time. The time in this timestamp is always `07:00:00Z`.
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * The observation start time. The time in this timestamp is always
+         * `07:00:00Z`.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * The observation end time. The time in this timestamp is always `07:00:00Z`.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * The observation start time. The time in this timestamp is always
+         * `07:00:00Z`.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PolicyAnalyzer\GoogleCloudPolicyanalyzerV1ObservationPeriod registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndTime()
-    {
-    }
-    /**
-     * The observation start time. The time in this timestamp is always
-     * `07:00:00Z`.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
+    class Google_Service_PolicyAnalyzer_GoogleCloudPolicyanalyzerV1ObservationPeriod extends \Google\Service\PolicyAnalyzer\GoogleCloudPolicyanalyzerV1ObservationPeriod
     {
     }
 }

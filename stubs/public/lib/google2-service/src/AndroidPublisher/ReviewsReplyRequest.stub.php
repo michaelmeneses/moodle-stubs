@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class ReviewsReplyRequest extends \Google\Model
-{
-    /**
-     * The text to set as the reply. Replies of more than approximately 350
-     * characters will be rejected. HTML tags will be stripped.
-     *
-     * @var string
-     */
-    public $replyText;
-    /**
-     * The text to set as the reply. Replies of more than approximately 350
-     * characters will be rejected. HTML tags will be stripped.
-     *
-     * @param string $replyText
-     */
-    public function setReplyText($replyText)
+namespace Google\Service\AndroidPublisher {
+    class ReviewsReplyRequest extends \Google\Model
     {
+        /**
+         * The text to set as the reply. Replies of more than approximately 350
+         * characters will be rejected. HTML tags will be stripped.
+         *
+         * @var string
+         */
+        public $replyText;
+        /**
+         * The text to set as the reply. Replies of more than approximately 350
+         * characters will be rejected. HTML tags will be stripped.
+         *
+         * @param string $replyText
+         */
+        public function setReplyText($replyText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReplyText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidPublisher\ReviewsReplyRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReplyText()
+    class Google_Service_AndroidPublisher_ReviewsReplyRequest extends \Google\Service\AndroidPublisher\ReviewsReplyRequest
     {
     }
 }

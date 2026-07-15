@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudCommercePartnerProcurementService;
-
-class ApproveEntitlementPlanChangeRequest extends \Google\Model
-{
-    /**
-     * Required. Name of the pending plan that's being approved.
-     *
-     * @var string
-     */
-    public $pendingPlanName;
-    /**
-     * Required. Name of the pending plan that's being approved.
-     *
-     * @param string $pendingPlanName
-     */
-    public function setPendingPlanName($pendingPlanName)
+namespace Google\Service\CloudCommercePartnerProcurementService {
+    class ApproveEntitlementPlanChangeRequest extends \Google\Model
     {
+        /**
+         * Required. Name of the pending plan that's being approved.
+         *
+         * @var string
+         */
+        public $pendingPlanName;
+        /**
+         * Required. Name of the pending plan that's being approved.
+         *
+         * @param string $pendingPlanName
+         */
+        public function setPendingPlanName($pendingPlanName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPendingPlanName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudCommercePartnerProcurementService\ApproveEntitlementPlanChangeRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPendingPlanName()
+    class Google_Service_CloudCommercePartnerProcurementService_ApproveEntitlementPlanChangeRequest extends \Google\Service\CloudCommercePartnerProcurementService\ApproveEntitlementPlanChangeRequest
     {
     }
 }

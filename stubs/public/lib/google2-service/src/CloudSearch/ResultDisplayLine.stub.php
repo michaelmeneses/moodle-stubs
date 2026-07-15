@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class ResultDisplayLine extends \Google\Collection
-{
-    protected $collection_key = 'fields';
-    protected $fieldsType = ResultDisplayField::class;
-    protected $fieldsDataType = 'array';
-    /**
-     * @param ResultDisplayField[] $fields
-     */
-    public function setFields($fields)
+namespace Google\Service\CloudSearch {
+    class ResultDisplayLine extends \Google\Collection
     {
+        protected $collection_key = 'fields';
+        protected $fieldsType = ResultDisplayField::class;
+        protected $fieldsDataType = 'array';
+        /**
+         * @param ResultDisplayField[] $fields
+         */
+        public function setFields($fields)
+        {
+        }
+        /**
+         * @return ResultDisplayField[]
+         */
+        public function getFields()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ResultDisplayField[]
+     * Runtime class alias of \Google\Service\CloudSearch\ResultDisplayLine registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFields()
+    class Google_Service_CloudSearch_ResultDisplayLine extends \Google\Service\CloudSearch\ResultDisplayLine
     {
     }
 }

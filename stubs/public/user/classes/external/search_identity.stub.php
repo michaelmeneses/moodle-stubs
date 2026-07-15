@@ -22,6 +22,12 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 namespace core_user\external;
 
+use core_external\external_api;
+use core_external\external_description;
+use core_external\external_function_parameters;
+use core_external\external_multiple_structure;
+use core_external\external_single_structure;
+use core_external\external_value;
 /**
  * Provides the core_user_search_identity external function.
  *

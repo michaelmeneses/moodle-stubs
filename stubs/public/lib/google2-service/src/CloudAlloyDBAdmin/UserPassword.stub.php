@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAlloyDBAdmin;
-
-class UserPassword extends \Google\Model
-{
-    /**
-     * The initial password for the user.
-     *
-     * @var string
-     */
-    public $password;
-    /**
-     * The database username.
-     *
-     * @var string
-     */
-    public $user;
-    /**
-     * The initial password for the user.
-     *
-     * @param string $password
-     */
-    public function setPassword($password)
+namespace Google\Service\CloudAlloyDBAdmin {
+    class UserPassword extends \Google\Model
     {
+        /**
+         * The initial password for the user.
+         *
+         * @var string
+         */
+        public $password;
+        /**
+         * The database username.
+         *
+         * @var string
+         */
+        public $user;
+        /**
+         * The initial password for the user.
+         *
+         * @param string $password
+         */
+        public function setPassword($password)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPassword()
+        {
+        }
+        /**
+         * The database username.
+         *
+         * @param string $user
+         */
+        public function setUser($user)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUser()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudAlloyDBAdmin\UserPassword registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPassword()
-    {
-    }
-    /**
-     * The database username.
-     *
-     * @param string $user
-     */
-    public function setUser($user)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUser()
+    class Google_Service_CloudAlloyDBAdmin_UserPassword extends \Google\Service\CloudAlloyDBAdmin\UserPassword
     {
     }
 }

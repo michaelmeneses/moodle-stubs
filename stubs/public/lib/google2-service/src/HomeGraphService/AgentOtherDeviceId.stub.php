@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HomeGraphService;
-
-class AgentOtherDeviceId extends \Google\Model
-{
-    /**
-     * Project ID for your smart home Action.
-     *
-     * @var string
-     */
-    public $agentId;
-    /**
-     * Unique third-party device ID.
-     *
-     * @var string
-     */
-    public $deviceId;
-    /**
-     * Project ID for your smart home Action.
-     *
-     * @param string $agentId
-     */
-    public function setAgentId($agentId)
+namespace Google\Service\HomeGraphService {
+    class AgentOtherDeviceId extends \Google\Model
     {
+        /**
+         * Project ID for your smart home Action.
+         *
+         * @var string
+         */
+        public $agentId;
+        /**
+         * Unique third-party device ID.
+         *
+         * @var string
+         */
+        public $deviceId;
+        /**
+         * Project ID for your smart home Action.
+         *
+         * @param string $agentId
+         */
+        public function setAgentId($agentId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAgentId()
+        {
+        }
+        /**
+         * Unique third-party device ID.
+         *
+         * @param string $deviceId
+         */
+        public function setDeviceId($deviceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeviceId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\HomeGraphService\AgentOtherDeviceId registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAgentId()
-    {
-    }
-    /**
-     * Unique third-party device ID.
-     *
-     * @param string $deviceId
-     */
-    public function setDeviceId($deviceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeviceId()
+    class Google_Service_HomeGraphService_AgentOtherDeviceId extends \Google\Service\HomeGraphService\AgentOtherDeviceId
     {
     }
 }

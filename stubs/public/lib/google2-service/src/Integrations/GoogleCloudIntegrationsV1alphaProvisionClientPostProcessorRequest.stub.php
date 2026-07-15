@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaProvisionClientPostProcessorRequest extends \Google\Collection
-{
-    protected $collection_key = 'workflows';
-    /**
-     * Optional. Indicate which workflows to create
-     *
-     * @var string[]
-     */
-    public $workflows;
-    /**
-     * Optional. Indicate which workflows to create
-     *
-     * @param string[] $workflows
-     */
-    public function setWorkflows($workflows)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaProvisionClientPostProcessorRequest extends \Google\Collection
     {
+        protected $collection_key = 'workflows';
+        /**
+         * Optional. Indicate which workflows to create
+         *
+         * @var string[]
+         */
+        public $workflows;
+        /**
+         * Optional. Indicate which workflows to create
+         *
+         * @param string[] $workflows
+         */
+        public function setWorkflows($workflows)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getWorkflows()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaProvisionClientPostProcessorRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getWorkflows()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaProvisionClientPostProcessorRequest extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaProvisionClientPostProcessorRequest
     {
     }
 }

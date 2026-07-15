@@ -8,6 +8,9 @@
  */
 namespace Aws\Script\Composer;
 
+use Composer\Script\Event;
+use Symfony\Component\Filesystem\Exception\IOException;
+use Symfony\Component\Filesystem\Filesystem;
 class Composer
 {
     private static array $unsafeForDeletion = ['Kms' => true, 'S3' => true, 'SSO' => true, 'SSOOIDC' => true, 'Sts' => true, 'Signin' => true];

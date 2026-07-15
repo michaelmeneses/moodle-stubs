@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class Date extends \Google\Model
-{
-    /**
-     * Day of month. Must be from 1 to 31 and valid for the year and month.
-     *
-     * @var int
-     */
-    public $day;
-    /**
-     * Month of date. Must be from 1 to 12.
-     *
-     * @var int
-     */
-    public $month;
-    /**
-     * Year of date. Must be from 1 to 9999.
-     *
-     * @var int
-     */
-    public $year;
-    /**
-     * Day of month. Must be from 1 to 31 and valid for the year and month.
-     *
-     * @param int $day
-     */
-    public function setDay($day)
+namespace Google\Service\CloudSearch {
+    class Date extends \Google\Model
     {
+        /**
+         * Day of month. Must be from 1 to 31 and valid for the year and month.
+         *
+         * @var int
+         */
+        public $day;
+        /**
+         * Month of date. Must be from 1 to 12.
+         *
+         * @var int
+         */
+        public $month;
+        /**
+         * Year of date. Must be from 1 to 9999.
+         *
+         * @var int
+         */
+        public $year;
+        /**
+         * Day of month. Must be from 1 to 31 and valid for the year and month.
+         *
+         * @param int $day
+         */
+        public function setDay($day)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getDay()
+        {
+        }
+        /**
+         * Month of date. Must be from 1 to 12.
+         *
+         * @param int $month
+         */
+        public function setMonth($month)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMonth()
+        {
+        }
+        /**
+         * Year of date. Must be from 1 to 9999.
+         *
+         * @param int $year
+         */
+        public function setYear($year)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getYear()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudSearch\Date registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDay()
-    {
-    }
-    /**
-     * Month of date. Must be from 1 to 12.
-     *
-     * @param int $month
-     */
-    public function setMonth($month)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMonth()
-    {
-    }
-    /**
-     * Year of date. Must be from 1 to 9999.
-     *
-     * @param int $year
-     */
-    public function setYear($year)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getYear()
+    class Google_Service_CloudSearch_Date extends \Google\Service\CloudSearch\Date
     {
     }
 }

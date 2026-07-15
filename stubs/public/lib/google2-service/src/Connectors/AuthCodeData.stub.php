@@ -21,95 +21,104 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors;
-
-class AuthCodeData extends \Google\Collection
-{
-    protected $collection_key = 'scopes';
-    /**
-     * OAuth authorization code.
-     *
-     * @var string
-     */
-    public $authCode;
-    /**
-     * OAuth PKCE verifier, needed if PKCE is enabled for this particular
-     * connection.
-     *
-     * @var string
-     */
-    public $pkceVerifier;
-    /**
-     * OAuth redirect URI passed in during the auth code flow, required by some
-     * OAuth backends.
-     *
-     * @var string
-     */
-    public $redirectUri;
-    /**
-     * Scopes the connection will request when the user performs the auth code
-     * flow.
-     *
-     * @var string[]
-     */
-    public $scopes;
-    /**
-     * OAuth authorization code.
-     *
-     * @param string $authCode
-     */
-    public function setAuthCode($authCode)
+namespace Google\Service\Connectors {
+    class AuthCodeData extends \Google\Collection
     {
+        protected $collection_key = 'scopes';
+        /**
+         * OAuth authorization code.
+         *
+         * @var string
+         */
+        public $authCode;
+        /**
+         * OAuth PKCE verifier, needed if PKCE is enabled for this particular
+         * connection.
+         *
+         * @var string
+         */
+        public $pkceVerifier;
+        /**
+         * OAuth redirect URI passed in during the auth code flow, required by some
+         * OAuth backends.
+         *
+         * @var string
+         */
+        public $redirectUri;
+        /**
+         * Scopes the connection will request when the user performs the auth code
+         * flow.
+         *
+         * @var string[]
+         */
+        public $scopes;
+        /**
+         * OAuth authorization code.
+         *
+         * @param string $authCode
+         */
+        public function setAuthCode($authCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAuthCode()
+        {
+        }
+        /**
+         * OAuth PKCE verifier, needed if PKCE is enabled for this particular
+         * connection.
+         *
+         * @param string $pkceVerifier
+         */
+        public function setPkceVerifier($pkceVerifier)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPkceVerifier()
+        {
+        }
+        /**
+         * OAuth redirect URI passed in during the auth code flow, required by some
+         * OAuth backends.
+         *
+         * @param string $redirectUri
+         */
+        public function setRedirectUri($redirectUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRedirectUri()
+        {
+        }
+        /**
+         * Scopes the connection will request when the user performs the auth code
+         * flow.
+         *
+         * @param string[] $scopes
+         */
+        public function setScopes($scopes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getScopes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Connectors\AuthCodeData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuthCode()
-    {
-    }
-    /**
-     * OAuth PKCE verifier, needed if PKCE is enabled for this particular
-     * connection.
-     *
-     * @param string $pkceVerifier
-     */
-    public function setPkceVerifier($pkceVerifier)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPkceVerifier()
-    {
-    }
-    /**
-     * OAuth redirect URI passed in during the auth code flow, required by some
-     * OAuth backends.
-     *
-     * @param string $redirectUri
-     */
-    public function setRedirectUri($redirectUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRedirectUri()
-    {
-    }
-    /**
-     * Scopes the connection will request when the user performs the auth code
-     * flow.
-     *
-     * @param string[] $scopes
-     */
-    public function setScopes($scopes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getScopes()
+    class Google_Service_Connectors_AuthCodeData extends \Google\Service\Connectors\AuthCodeData
     {
     }
 }

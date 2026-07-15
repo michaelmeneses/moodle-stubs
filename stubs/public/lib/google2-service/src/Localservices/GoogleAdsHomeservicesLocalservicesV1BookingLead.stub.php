@@ -21,108 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Localservices;
-
-class GoogleAdsHomeservicesLocalservicesV1BookingLead extends \Google\Model
-{
-    /**
-     * Timestamp of when service is provided by advertiser.
-     *
-     * @var string
-     */
-    public $bookingAppointmentTimestamp;
-    /**
-     * Consumer email associated with the booking lead.
-     *
-     * @var string
-     */
-    public $consumerEmail;
-    /**
-     * Consumer phone number associated with the booking lead.
-     *
-     * @var string
-     */
-    public $consumerPhoneNumber;
-    /**
-     * Name of the customer who created the lead.
-     *
-     * @var string
-     */
-    public $customerName;
-    /**
-     * The job type of the specified lead.
-     *
-     * @var string
-     */
-    public $jobType;
-    /**
-     * Timestamp of when service is provided by advertiser.
-     *
-     * @param string $bookingAppointmentTimestamp
-     */
-    public function setBookingAppointmentTimestamp($bookingAppointmentTimestamp)
+namespace Google\Service\Localservices {
+    class GoogleAdsHomeservicesLocalservicesV1BookingLead extends \Google\Model
     {
+        /**
+         * Timestamp of when service is provided by advertiser.
+         *
+         * @var string
+         */
+        public $bookingAppointmentTimestamp;
+        /**
+         * Consumer email associated with the booking lead.
+         *
+         * @var string
+         */
+        public $consumerEmail;
+        /**
+         * Consumer phone number associated with the booking lead.
+         *
+         * @var string
+         */
+        public $consumerPhoneNumber;
+        /**
+         * Name of the customer who created the lead.
+         *
+         * @var string
+         */
+        public $customerName;
+        /**
+         * The job type of the specified lead.
+         *
+         * @var string
+         */
+        public $jobType;
+        /**
+         * Timestamp of when service is provided by advertiser.
+         *
+         * @param string $bookingAppointmentTimestamp
+         */
+        public function setBookingAppointmentTimestamp($bookingAppointmentTimestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBookingAppointmentTimestamp()
+        {
+        }
+        /**
+         * Consumer email associated with the booking lead.
+         *
+         * @param string $consumerEmail
+         */
+        public function setConsumerEmail($consumerEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConsumerEmail()
+        {
+        }
+        /**
+         * Consumer phone number associated with the booking lead.
+         *
+         * @param string $consumerPhoneNumber
+         */
+        public function setConsumerPhoneNumber($consumerPhoneNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConsumerPhoneNumber()
+        {
+        }
+        /**
+         * Name of the customer who created the lead.
+         *
+         * @param string $customerName
+         */
+        public function setCustomerName($customerName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomerName()
+        {
+        }
+        /**
+         * The job type of the specified lead.
+         *
+         * @param string $jobType
+         */
+        public function setJobType($jobType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getJobType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Localservices\GoogleAdsHomeservicesLocalservicesV1BookingLead registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBookingAppointmentTimestamp()
-    {
-    }
-    /**
-     * Consumer email associated with the booking lead.
-     *
-     * @param string $consumerEmail
-     */
-    public function setConsumerEmail($consumerEmail)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getConsumerEmail()
-    {
-    }
-    /**
-     * Consumer phone number associated with the booking lead.
-     *
-     * @param string $consumerPhoneNumber
-     */
-    public function setConsumerPhoneNumber($consumerPhoneNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getConsumerPhoneNumber()
-    {
-    }
-    /**
-     * Name of the customer who created the lead.
-     *
-     * @param string $customerName
-     */
-    public function setCustomerName($customerName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCustomerName()
-    {
-    }
-    /**
-     * The job type of the specified lead.
-     *
-     * @param string $jobType
-     */
-    public function setJobType($jobType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getJobType()
+    class Google_Service_Localservices_GoogleAdsHomeservicesLocalservicesV1BookingLead extends \Google\Service\Localservices\GoogleAdsHomeservicesLocalservicesV1BookingLead
     {
     }
 }

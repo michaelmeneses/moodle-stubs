@@ -21,76 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform\Resource;
-
-/**
- * The "batchPredictionJobs" collection of methods.
- * Typical usage is:
- *  <code>
- *   $aiplatformService = new Google\Service\Aiplatform(...);
- *   $batchPredictionJobs = $aiplatformService->batchPredictionJobs;
- *  </code>
- */
-class BatchPredictionJobs extends \Google\Service\Resource
-{
+namespace Google\Service\Aiplatform\Resource {
+    use Google\Service\Aiplatform\GoogleCloudAiplatformV1BatchPredictionJob;
+    use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListBatchPredictionJobsResponse;
     /**
-     * Creates a BatchPredictionJob. A BatchPredictionJob once created will right
-     * away be attempted to start. (batchPredictionJobs.create)
-     *
-     * @param GoogleCloudAiplatformV1BatchPredictionJob $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string parent Required. The resource name of the Location to
-     * create the BatchPredictionJob in. Format:
-     * `projects/{project}/locations/{location}`
-     * @return GoogleCloudAiplatformV1BatchPredictionJob
-     * @throws \Google\Service\Exception
+     * The "batchPredictionJobs" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $aiplatformService = new Google\Service\Aiplatform(...);
+     *   $batchPredictionJobs = $aiplatformService->batchPredictionJobs;
+     *  </code>
      */
-    public function create(GoogleCloudAiplatformV1BatchPredictionJob $postBody, $optParams = [])
+    class BatchPredictionJobs extends \Google\Service\Resource
     {
+        /**
+         * Creates a BatchPredictionJob. A BatchPredictionJob once created will right
+         * away be attempted to start. (batchPredictionJobs.create)
+         *
+         * @param GoogleCloudAiplatformV1BatchPredictionJob $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string parent Required. The resource name of the Location to
+         * create the BatchPredictionJob in. Format:
+         * `projects/{project}/locations/{location}`
+         * @return GoogleCloudAiplatformV1BatchPredictionJob
+         * @throws \Google\Service\Exception
+         */
+        public function create(GoogleCloudAiplatformV1BatchPredictionJob $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Gets a BatchPredictionJob (batchPredictionJobs.get)
+         *
+         * @param string $name Required. The name of the BatchPredictionJob resource.
+         * Format: `projects/{project}/locations/{location}/batchPredictionJobs/{batch_p
+         * rediction_job}`
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudAiplatformV1BatchPredictionJob
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists BatchPredictionJobs in a Location.
+         * (batchPredictionJobs.listBatchPredictionJobs)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter The standard list filter. Supported fields: *
+         * `display_name` supports `=`, `!=` comparisons, and `:` wildcard. *
+         * `model_display_name` supports `=`, `!=` comparisons. * `state` supports `=`,
+         * `!=` comparisons. * `create_time` supports `=`, `!=`,`<`, `<=`,`>`, `>=`
+         * comparisons. `create_time` must be in RFC 3339 format. * `labels` supports
+         * general map functions that is: `labels.key=value` - key:value equality
+         * `labels.key:* - key existence Some examples of using the filter are: *
+         * `state="JOB_STATE_SUCCEEDED" AND display_name:"my_job_*"` *
+         * `state!="JOB_STATE_FAILED" OR display_name="my_job"` * `NOT
+         * display_name="my_job"` * `create_time>"2021-05-18T00:00:00Z"` *
+         * `labels.keyA=valueA` * `labels.keyB:*`
+         * @opt_param int pageSize The standard list page size.
+         * @opt_param string pageToken The standard list page token. Typically obtained
+         * via ListBatchPredictionJobsResponse.next_page_token of the previous
+         * JobService.ListBatchPredictionJobs call.
+         * @opt_param string parent Required. The resource name of the Location to list
+         * the BatchPredictionJobs from. Format:
+         * `projects/{project}/locations/{location}`
+         * @opt_param string readMask Mask specifying which fields to read.
+         * @return GoogleCloudAiplatformV1ListBatchPredictionJobsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listBatchPredictionJobs($optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets a BatchPredictionJob (batchPredictionJobs.get)
-     *
-     * @param string $name Required. The name of the BatchPredictionJob resource.
-     * Format: `projects/{project}/locations/{location}/batchPredictionJobs/{batch_p
-     * rediction_job}`
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudAiplatformV1BatchPredictionJob
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Aiplatform\Resource\BatchPredictionJobs registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists BatchPredictionJobs in a Location.
-     * (batchPredictionJobs.listBatchPredictionJobs)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter The standard list filter. Supported fields: *
-     * `display_name` supports `=`, `!=` comparisons, and `:` wildcard. *
-     * `model_display_name` supports `=`, `!=` comparisons. * `state` supports `=`,
-     * `!=` comparisons. * `create_time` supports `=`, `!=`,`<`, `<=`,`>`, `>=`
-     * comparisons. `create_time` must be in RFC 3339 format. * `labels` supports
-     * general map functions that is: `labels.key=value` - key:value equality
-     * `labels.key:* - key existence Some examples of using the filter are: *
-     * `state="JOB_STATE_SUCCEEDED" AND display_name:"my_job_*"` *
-     * `state!="JOB_STATE_FAILED" OR display_name="my_job"` * `NOT
-     * display_name="my_job"` * `create_time>"2021-05-18T00:00:00Z"` *
-     * `labels.keyA=valueA` * `labels.keyB:*`
-     * @opt_param int pageSize The standard list page size.
-     * @opt_param string pageToken The standard list page token. Typically obtained
-     * via ListBatchPredictionJobsResponse.next_page_token of the previous
-     * JobService.ListBatchPredictionJobs call.
-     * @opt_param string parent Required. The resource name of the Location to list
-     * the BatchPredictionJobs from. Format:
-     * `projects/{project}/locations/{location}`
-     * @opt_param string readMask Mask specifying which fields to read.
-     * @return GoogleCloudAiplatformV1ListBatchPredictionJobsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listBatchPredictionJobs($optParams = [])
+    class Google_Service_Aiplatform_Resource_BatchPredictionJobs extends \Google\Service\Aiplatform\Resource\BatchPredictionJobs
     {
     }
 }

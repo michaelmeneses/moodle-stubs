@@ -21,171 +21,180 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ArtifactRegistry;
-
-class GoogleDevtoolsArtifactregistryV1File extends \Google\Collection
-{
-    protected $collection_key = 'hashes';
-    /**
-     * Optional. Client specified annotations.
-     *
-     * @var string[]
-     */
-    public $annotations;
-    /**
-     * Output only. The time when the File was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Output only. The time when the last attempt to refresh the file's data was
-     * made. Only set when the repository is remote.
-     *
-     * @var string
-     */
-    public $fetchTime;
-    protected $hashesType = Hash::class;
-    protected $hashesDataType = 'array';
-    /**
-     * The name of the file, for example: `projects/p1/locations/us-
-     * central1/repositories/repo1/files/a%2Fb%2Fc.txt`. If the file ID part
-     * contains slashes, they are escaped.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The name of the Package or Version that owns this file, if any.
-     *
-     * @var string
-     */
-    public $owner;
-    /**
-     * The size of the File in bytes.
-     *
-     * @var string
-     */
-    public $sizeBytes;
-    /**
-     * Output only. The time when the File was last updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Optional. Client specified annotations.
-     *
-     * @param string[] $annotations
-     */
-    public function setAnnotations($annotations)
+namespace Google\Service\ArtifactRegistry {
+    class GoogleDevtoolsArtifactregistryV1File extends \Google\Collection
     {
+        protected $collection_key = 'hashes';
+        /**
+         * Optional. Client specified annotations.
+         *
+         * @var string[]
+         */
+        public $annotations;
+        /**
+         * Output only. The time when the File was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Output only. The time when the last attempt to refresh the file's data was
+         * made. Only set when the repository is remote.
+         *
+         * @var string
+         */
+        public $fetchTime;
+        protected $hashesType = Hash::class;
+        protected $hashesDataType = 'array';
+        /**
+         * The name of the file, for example: `projects/p1/locations/us-
+         * central1/repositories/repo1/files/a%2Fb%2Fc.txt`. If the file ID part
+         * contains slashes, they are escaped.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The name of the Package or Version that owns this file, if any.
+         *
+         * @var string
+         */
+        public $owner;
+        /**
+         * The size of the File in bytes.
+         *
+         * @var string
+         */
+        public $sizeBytes;
+        /**
+         * Output only. The time when the File was last updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Optional. Client specified annotations.
+         *
+         * @param string[] $annotations
+         */
+        public function setAnnotations($annotations)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAnnotations()
+        {
+        }
+        /**
+         * Output only. The time when the File was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. The time when the last attempt to refresh the file's data was
+         * made. Only set when the repository is remote.
+         *
+         * @param string $fetchTime
+         */
+        public function setFetchTime($fetchTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFetchTime()
+        {
+        }
+        /**
+         * The hashes of the file content.
+         *
+         * @param Hash[] $hashes
+         */
+        public function setHashes($hashes)
+        {
+        }
+        /**
+         * @return Hash[]
+         */
+        public function getHashes()
+        {
+        }
+        /**
+         * The name of the file, for example: `projects/p1/locations/us-
+         * central1/repositories/repo1/files/a%2Fb%2Fc.txt`. If the file ID part
+         * contains slashes, they are escaped.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The name of the Package or Version that owns this file, if any.
+         *
+         * @param string $owner
+         */
+        public function setOwner($owner)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOwner()
+        {
+        }
+        /**
+         * The size of the File in bytes.
+         *
+         * @param string $sizeBytes
+         */
+        public function setSizeBytes($sizeBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSizeBytes()
+        {
+        }
+        /**
+         * Output only. The time when the File was last updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\ArtifactRegistry\GoogleDevtoolsArtifactregistryV1File registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotations()
-    {
-    }
-    /**
-     * Output only. The time when the File was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. The time when the last attempt to refresh the file's data was
-     * made. Only set when the repository is remote.
-     *
-     * @param string $fetchTime
-     */
-    public function setFetchTime($fetchTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFetchTime()
-    {
-    }
-    /**
-     * The hashes of the file content.
-     *
-     * @param Hash[] $hashes
-     */
-    public function setHashes($hashes)
-    {
-    }
-    /**
-     * @return Hash[]
-     */
-    public function getHashes()
-    {
-    }
-    /**
-     * The name of the file, for example: `projects/p1/locations/us-
-     * central1/repositories/repo1/files/a%2Fb%2Fc.txt`. If the file ID part
-     * contains slashes, they are escaped.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The name of the Package or Version that owns this file, if any.
-     *
-     * @param string $owner
-     */
-    public function setOwner($owner)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOwner()
-    {
-    }
-    /**
-     * The size of the File in bytes.
-     *
-     * @param string $sizeBytes
-     */
-    public function setSizeBytes($sizeBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSizeBytes()
-    {
-    }
-    /**
-     * Output only. The time when the File was last updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_ArtifactRegistry_GoogleDevtoolsArtifactregistryV1File extends \Google\Service\ArtifactRegistry\GoogleDevtoolsArtifactregistryV1File
     {
     }
 }

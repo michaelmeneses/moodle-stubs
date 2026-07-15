@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseManagement;
-
-class StreamMapping extends \Google\Model
-{
-    /**
-     * The resource name of the Firebase App associated with the Google Analytics
-     * data stream, in the format: projects/PROJECT_IDENTIFIER/androidApps/APP_ID
-     * or projects/PROJECT_IDENTIFIER/iosApps/APP_ID or
-     * projects/PROJECT_IDENTIFIER /webApps/APP_ID Refer to the `FirebaseProject`
-     * [`name`](../projects#FirebaseProject.FIELDS.name) field for details about
-     * PROJECT_IDENTIFIER values.
-     *
-     * @var string
-     */
-    public $app;
-    /**
-     * Applicable for Firebase Web Apps only. The unique Google-assigned
-     * identifier of the Google Analytics web stream associated with the Firebase
-     * Web App. Firebase SDKs use this ID to interact with Google Analytics APIs.
-     * Learn more about this ID and Google Analytics web streams in the [Analytics
-     * documentation](https://support.google.com/analytics/answer/9304153).
-     *
-     * @var string
-     */
-    public $measurementId;
-    /**
-     * The unique Google-assigned identifier of the Google Analytics data stream
-     * associated with the Firebase App. Learn more about Google Analytics data
-     * streams in the [Analytics
-     * documentation](https://support.google.com/analytics/answer/9303323).
-     *
-     * @var string
-     */
-    public $streamId;
-    /**
-     * The resource name of the Firebase App associated with the Google Analytics
-     * data stream, in the format: projects/PROJECT_IDENTIFIER/androidApps/APP_ID
-     * or projects/PROJECT_IDENTIFIER/iosApps/APP_ID or
-     * projects/PROJECT_IDENTIFIER /webApps/APP_ID Refer to the `FirebaseProject`
-     * [`name`](../projects#FirebaseProject.FIELDS.name) field for details about
-     * PROJECT_IDENTIFIER values.
-     *
-     * @param string $app
-     */
-    public function setApp($app)
+namespace Google\Service\FirebaseManagement {
+    class StreamMapping extends \Google\Model
     {
+        /**
+         * The resource name of the Firebase App associated with the Google Analytics
+         * data stream, in the format: projects/PROJECT_IDENTIFIER/androidApps/APP_ID
+         * or projects/PROJECT_IDENTIFIER/iosApps/APP_ID or
+         * projects/PROJECT_IDENTIFIER /webApps/APP_ID Refer to the `FirebaseProject`
+         * [`name`](../projects#FirebaseProject.FIELDS.name) field for details about
+         * PROJECT_IDENTIFIER values.
+         *
+         * @var string
+         */
+        public $app;
+        /**
+         * Applicable for Firebase Web Apps only. The unique Google-assigned
+         * identifier of the Google Analytics web stream associated with the Firebase
+         * Web App. Firebase SDKs use this ID to interact with Google Analytics APIs.
+         * Learn more about this ID and Google Analytics web streams in the [Analytics
+         * documentation](https://support.google.com/analytics/answer/9304153).
+         *
+         * @var string
+         */
+        public $measurementId;
+        /**
+         * The unique Google-assigned identifier of the Google Analytics data stream
+         * associated with the Firebase App. Learn more about Google Analytics data
+         * streams in the [Analytics
+         * documentation](https://support.google.com/analytics/answer/9303323).
+         *
+         * @var string
+         */
+        public $streamId;
+        /**
+         * The resource name of the Firebase App associated with the Google Analytics
+         * data stream, in the format: projects/PROJECT_IDENTIFIER/androidApps/APP_ID
+         * or projects/PROJECT_IDENTIFIER/iosApps/APP_ID or
+         * projects/PROJECT_IDENTIFIER /webApps/APP_ID Refer to the `FirebaseProject`
+         * [`name`](../projects#FirebaseProject.FIELDS.name) field for details about
+         * PROJECT_IDENTIFIER values.
+         *
+         * @param string $app
+         */
+        public function setApp($app)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApp()
+        {
+        }
+        /**
+         * Applicable for Firebase Web Apps only. The unique Google-assigned
+         * identifier of the Google Analytics web stream associated with the Firebase
+         * Web App. Firebase SDKs use this ID to interact with Google Analytics APIs.
+         * Learn more about this ID and Google Analytics web streams in the [Analytics
+         * documentation](https://support.google.com/analytics/answer/9304153).
+         *
+         * @param string $measurementId
+         */
+        public function setMeasurementId($measurementId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMeasurementId()
+        {
+        }
+        /**
+         * The unique Google-assigned identifier of the Google Analytics data stream
+         * associated with the Firebase App. Learn more about Google Analytics data
+         * streams in the [Analytics
+         * documentation](https://support.google.com/analytics/answer/9303323).
+         *
+         * @param string $streamId
+         */
+        public function setStreamId($streamId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStreamId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\FirebaseManagement\StreamMapping registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApp()
-    {
-    }
-    /**
-     * Applicable for Firebase Web Apps only. The unique Google-assigned
-     * identifier of the Google Analytics web stream associated with the Firebase
-     * Web App. Firebase SDKs use this ID to interact with Google Analytics APIs.
-     * Learn more about this ID and Google Analytics web streams in the [Analytics
-     * documentation](https://support.google.com/analytics/answer/9304153).
-     *
-     * @param string $measurementId
-     */
-    public function setMeasurementId($measurementId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMeasurementId()
-    {
-    }
-    /**
-     * The unique Google-assigned identifier of the Google Analytics data stream
-     * associated with the Firebase App. Learn more about Google Analytics data
-     * streams in the [Analytics
-     * documentation](https://support.google.com/analytics/answer/9303323).
-     *
-     * @param string $streamId
-     */
-    public function setStreamId($streamId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStreamId()
+    class Google_Service_FirebaseManagement_StreamMapping extends \Google\Service\FirebaseManagement\StreamMapping
     {
     }
 }

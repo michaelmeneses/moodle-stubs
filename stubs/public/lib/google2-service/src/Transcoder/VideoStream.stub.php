@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Transcoder;
-
-class VideoStream extends \Google\Model
-{
-    protected $h264Type = H264CodecSettings::class;
-    protected $h264DataType = '';
-    protected $h265Type = H265CodecSettings::class;
-    protected $h265DataType = '';
-    protected $vp9Type = Vp9CodecSettings::class;
-    protected $vp9DataType = '';
-    /**
-     * H264 codec settings.
-     *
-     * @param H264CodecSettings $h264
-     */
-    public function setH264(H264CodecSettings $h264)
+namespace Google\Service\Transcoder {
+    class VideoStream extends \Google\Model
     {
+        protected $h264Type = H264CodecSettings::class;
+        protected $h264DataType = '';
+        protected $h265Type = H265CodecSettings::class;
+        protected $h265DataType = '';
+        protected $vp9Type = Vp9CodecSettings::class;
+        protected $vp9DataType = '';
+        /**
+         * H264 codec settings.
+         *
+         * @param H264CodecSettings $h264
+         */
+        public function setH264(H264CodecSettings $h264)
+        {
+        }
+        /**
+         * @return H264CodecSettings
+         */
+        public function getH264()
+        {
+        }
+        /**
+         * H265 codec settings.
+         *
+         * @param H265CodecSettings $h265
+         */
+        public function setH265(H265CodecSettings $h265)
+        {
+        }
+        /**
+         * @return H265CodecSettings
+         */
+        public function getH265()
+        {
+        }
+        /**
+         * VP9 codec settings.
+         *
+         * @param Vp9CodecSettings $vp9
+         */
+        public function setVp9(Vp9CodecSettings $vp9)
+        {
+        }
+        /**
+         * @return Vp9CodecSettings
+         */
+        public function getVp9()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return H264CodecSettings
+     * Runtime class alias of \Google\Service\Transcoder\VideoStream registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getH264()
-    {
-    }
-    /**
-     * H265 codec settings.
-     *
-     * @param H265CodecSettings $h265
-     */
-    public function setH265(H265CodecSettings $h265)
-    {
-    }
-    /**
-     * @return H265CodecSettings
-     */
-    public function getH265()
-    {
-    }
-    /**
-     * VP9 codec settings.
-     *
-     * @param Vp9CodecSettings $vp9
-     */
-    public function setVp9(Vp9CodecSettings $vp9)
-    {
-    }
-    /**
-     * @return Vp9CodecSettings
-     */
-    public function getVp9()
+    class Google_Service_Transcoder_VideoStream extends \Google\Service\Transcoder\VideoStream
     {
     }
 }

@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTubeAnalytics;
-
-class ListGroupItemsResponse extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    protected $errorsType = Errors::class;
-    protected $errorsDataType = '';
-    /**
-     * The Etag of this resource.
-     *
-     * @var string
-     */
-    public $etag;
-    protected $itemsType = GroupItem::class;
-    protected $itemsDataType = 'array';
-    /**
-     * Identifies the API resource's type. The value will be
-     * `youtube#groupItemListResponse`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Apiary error details
-     *
-     * @param Errors $errors
-     */
-    public function setErrors(Errors $errors)
+namespace Google\Service\YouTubeAnalytics {
+    class ListGroupItemsResponse extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        protected $errorsType = Errors::class;
+        protected $errorsDataType = '';
+        /**
+         * The Etag of this resource.
+         *
+         * @var string
+         */
+        public $etag;
+        protected $itemsType = GroupItem::class;
+        protected $itemsDataType = 'array';
+        /**
+         * Identifies the API resource's type. The value will be
+         * `youtube#groupItemListResponse`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Apiary error details
+         *
+         * @param Errors $errors
+         */
+        public function setErrors(Errors $errors)
+        {
+        }
+        /**
+         * @return Errors
+         */
+        public function getErrors()
+        {
+        }
+        /**
+         * The Etag of this resource.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * A list of groups that match the API request parameters. Each item in the
+         * list represents a `groupItem` resource.
+         *
+         * @param GroupItem[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return GroupItem[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * Identifies the API resource's type. The value will be
+         * `youtube#groupItemListResponse`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Errors
+     * Runtime class alias of \Google\Service\YouTubeAnalytics\ListGroupItemsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrors()
-    {
-    }
-    /**
-     * The Etag of this resource.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * A list of groups that match the API request parameters. Each item in the
-     * list represents a `groupItem` resource.
-     *
-     * @param GroupItem[] $items
-     */
-    public function setItems($items)
-    {
-    }
-    /**
-     * @return GroupItem[]
-     */
-    public function getItems()
-    {
-    }
-    /**
-     * Identifies the API resource's type. The value will be
-     * `youtube#groupItemListResponse`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_YouTubeAnalytics_ListGroupItemsResponse extends \Google\Service\YouTubeAnalytics\ListGroupItemsResponse
     {
     }
 }

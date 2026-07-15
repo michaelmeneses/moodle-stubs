@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Recommender;
-
-class GoogleCloudRecommenderV1RecommendationStateInfo extends \Google\Model
-{
-    /**
-     * Default state. Don't use directly.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * Recommendation is active and can be applied. Recommendations content can be
-     * updated by Google. ACTIVE recommendations can be marked as CLAIMED,
-     * SUCCEEDED, or FAILED.
-     */
-    public const STATE_ACTIVE = 'ACTIVE';
-    /**
-     * Recommendation is in claimed state. Recommendations content is immutable
-     * and cannot be updated by Google. CLAIMED recommendations can be marked as
-     * CLAIMED, SUCCEEDED, or FAILED.
-     */
-    public const STATE_CLAIMED = 'CLAIMED';
-    /**
-     * Recommendation is in succeeded state. Recommendations content is immutable
-     * and cannot be updated by Google. SUCCEEDED recommendations can be marked as
-     * SUCCEEDED, or FAILED.
-     */
-    public const STATE_SUCCEEDED = 'SUCCEEDED';
-    /**
-     * Recommendation is in failed state. Recommendations content is immutable and
-     * cannot be updated by Google. FAILED recommendations can be marked as
-     * SUCCEEDED, or FAILED.
-     */
-    public const STATE_FAILED = 'FAILED';
-    /**
-     * Recommendation is in dismissed state. Recommendation content can be updated
-     * by Google. DISMISSED recommendations can be marked as ACTIVE.
-     */
-    public const STATE_DISMISSED = 'DISMISSED';
-    /**
-     * The state of the recommendation, Eg ACTIVE, SUCCEEDED, FAILED.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * A map of metadata for the state, provided by user or automations systems.
-     *
-     * @var string[]
-     */
-    public $stateMetadata;
-    /**
-     * The state of the recommendation, Eg ACTIVE, SUCCEEDED, FAILED.
-     *
-     * Accepted values: STATE_UNSPECIFIED, ACTIVE, CLAIMED, SUCCEEDED, FAILED,
-     * DISMISSED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
+namespace Google\Service\Recommender {
+    class GoogleCloudRecommenderV1RecommendationStateInfo extends \Google\Model
     {
+        /**
+         * Default state. Don't use directly.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * Recommendation is active and can be applied. Recommendations content can be
+         * updated by Google. ACTIVE recommendations can be marked as CLAIMED,
+         * SUCCEEDED, or FAILED.
+         */
+        public const STATE_ACTIVE = 'ACTIVE';
+        /**
+         * Recommendation is in claimed state. Recommendations content is immutable
+         * and cannot be updated by Google. CLAIMED recommendations can be marked as
+         * CLAIMED, SUCCEEDED, or FAILED.
+         */
+        public const STATE_CLAIMED = 'CLAIMED';
+        /**
+         * Recommendation is in succeeded state. Recommendations content is immutable
+         * and cannot be updated by Google. SUCCEEDED recommendations can be marked as
+         * SUCCEEDED, or FAILED.
+         */
+        public const STATE_SUCCEEDED = 'SUCCEEDED';
+        /**
+         * Recommendation is in failed state. Recommendations content is immutable and
+         * cannot be updated by Google. FAILED recommendations can be marked as
+         * SUCCEEDED, or FAILED.
+         */
+        public const STATE_FAILED = 'FAILED';
+        /**
+         * Recommendation is in dismissed state. Recommendation content can be updated
+         * by Google. DISMISSED recommendations can be marked as ACTIVE.
+         */
+        public const STATE_DISMISSED = 'DISMISSED';
+        /**
+         * The state of the recommendation, Eg ACTIVE, SUCCEEDED, FAILED.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * A map of metadata for the state, provided by user or automations systems.
+         *
+         * @var string[]
+         */
+        public $stateMetadata;
+        /**
+         * The state of the recommendation, Eg ACTIVE, SUCCEEDED, FAILED.
+         *
+         * Accepted values: STATE_UNSPECIFIED, ACTIVE, CLAIMED, SUCCEEDED, FAILED,
+         * DISMISSED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * A map of metadata for the state, provided by user or automations systems.
+         *
+         * @param string[] $stateMetadata
+         */
+        public function setStateMetadata($stateMetadata)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getStateMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::STATE_*
+     * Runtime class alias of \Google\Service\Recommender\GoogleCloudRecommenderV1RecommendationStateInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getState()
-    {
-    }
-    /**
-     * A map of metadata for the state, provided by user or automations systems.
-     *
-     * @param string[] $stateMetadata
-     */
-    public function setStateMetadata($stateMetadata)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getStateMetadata()
+    class Google_Service_Recommender_GoogleCloudRecommenderV1RecommendationStateInfo extends \Google\Service\Recommender\GoogleCloudRecommenderV1RecommendationStateInfo
     {
     }
 }

@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Speech;
-
-class RecognizeRequest extends \Google\Model
-{
-    protected $audioType = RecognitionAudio::class;
-    protected $audioDataType = '';
-    protected $configType = RecognitionConfig::class;
-    protected $configDataType = '';
-    /**
-     * Required. The audio data to be recognized.
-     *
-     * @param RecognitionAudio $audio
-     */
-    public function setAudio(RecognitionAudio $audio)
+namespace Google\Service\Speech {
+    class RecognizeRequest extends \Google\Model
     {
+        protected $audioType = RecognitionAudio::class;
+        protected $audioDataType = '';
+        protected $configType = RecognitionConfig::class;
+        protected $configDataType = '';
+        /**
+         * Required. The audio data to be recognized.
+         *
+         * @param RecognitionAudio $audio
+         */
+        public function setAudio(RecognitionAudio $audio)
+        {
+        }
+        /**
+         * @return RecognitionAudio
+         */
+        public function getAudio()
+        {
+        }
+        /**
+         * Required. Provides information to the recognizer that specifies how to
+         * process the request.
+         *
+         * @param RecognitionConfig $config
+         */
+        public function setConfig(RecognitionConfig $config)
+        {
+        }
+        /**
+         * @return RecognitionConfig
+         */
+        public function getConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RecognitionAudio
+     * Runtime class alias of \Google\Service\Speech\RecognizeRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAudio()
-    {
-    }
-    /**
-     * Required. Provides information to the recognizer that specifies how to
-     * process the request.
-     *
-     * @param RecognitionConfig $config
-     */
-    public function setConfig(RecognitionConfig $config)
-    {
-    }
-    /**
-     * @return RecognitionConfig
-     */
-    public function getConfig()
+    class Google_Service_Speech_RecognizeRequest extends \Google\Service\Speech\RecognizeRequest
     {
     }
 }

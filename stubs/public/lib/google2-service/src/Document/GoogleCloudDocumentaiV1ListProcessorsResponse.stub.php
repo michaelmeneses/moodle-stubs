@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1ListProcessorsResponse extends \Google\Collection
-{
-    protected $collection_key = 'processors';
-    /**
-     * Points to the next processor, otherwise empty.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $processorsType = GoogleCloudDocumentaiV1Processor::class;
-    protected $processorsDataType = 'array';
-    /**
-     * Points to the next processor, otherwise empty.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1ListProcessorsResponse extends \Google\Collection
     {
+        protected $collection_key = 'processors';
+        /**
+         * Points to the next processor, otherwise empty.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $processorsType = GoogleCloudDocumentaiV1Processor::class;
+        protected $processorsDataType = 'array';
+        /**
+         * Points to the next processor, otherwise empty.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of processors.
+         *
+         * @param GoogleCloudDocumentaiV1Processor[] $processors
+         */
+        public function setProcessors($processors)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1Processor[]
+         */
+        public function getProcessors()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1ListProcessorsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of processors.
-     *
-     * @param GoogleCloudDocumentaiV1Processor[] $processors
-     */
-    public function setProcessors($processors)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1Processor[]
-     */
-    public function getProcessors()
+    class Google_Service_Document_GoogleCloudDocumentaiV1ListProcessorsResponse extends \Google\Service\Document\GoogleCloudDocumentaiV1ListProcessorsResponse
     {
     }
 }

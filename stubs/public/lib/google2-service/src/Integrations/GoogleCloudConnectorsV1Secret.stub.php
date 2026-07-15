@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudConnectorsV1Secret extends \Google\Model
-{
-    /**
-     * Optional. The resource name of the secret version in the format, format as:
-     * `projects/secrets/versions`.
-     *
-     * @var string
-     */
-    public $secretVersion;
-    /**
-     * Optional. The resource name of the secret version in the format, format as:
-     * `projects/secrets/versions`.
-     *
-     * @param string $secretVersion
-     */
-    public function setSecretVersion($secretVersion)
+namespace Google\Service\Integrations {
+    class GoogleCloudConnectorsV1Secret extends \Google\Model
     {
+        /**
+         * Optional. The resource name of the secret version in the format, format as:
+         * `projects/secrets/versions`.
+         *
+         * @var string
+         */
+        public $secretVersion;
+        /**
+         * Optional. The resource name of the secret version in the format, format as:
+         * `projects/secrets/versions`.
+         *
+         * @param string $secretVersion
+         */
+        public function setSecretVersion($secretVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSecretVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudConnectorsV1Secret registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSecretVersion()
+    class Google_Service_Integrations_GoogleCloudConnectorsV1Secret extends \Google\Service\Integrations\GoogleCloudConnectorsV1Secret
     {
     }
 }

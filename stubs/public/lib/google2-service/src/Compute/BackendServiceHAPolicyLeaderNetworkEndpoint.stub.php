@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class BackendServiceHAPolicyLeaderNetworkEndpoint extends \Google\Model
-{
-    /**
-     * The name of the VM instance of the leader network endpoint. The instance
-     * must already be attached to the NEG specified in the
-     * haPolicy.leader.backendGroup.
-     *
-     * The name must be 1-63 characters long, and comply with RFC1035.
-     * Authorization requires the following IAM permission on the specified
-     * resource instance: compute.instances.use
-     *
-     * @var string
-     */
-    public $instance;
-    /**
-     * The name of the VM instance of the leader network endpoint. The instance
-     * must already be attached to the NEG specified in the
-     * haPolicy.leader.backendGroup.
-     *
-     * The name must be 1-63 characters long, and comply with RFC1035.
-     * Authorization requires the following IAM permission on the specified
-     * resource instance: compute.instances.use
-     *
-     * @param string $instance
-     */
-    public function setInstance($instance)
+namespace Google\Service\Compute {
+    class BackendServiceHAPolicyLeaderNetworkEndpoint extends \Google\Model
     {
+        /**
+         * The name of the VM instance of the leader network endpoint. The instance
+         * must already be attached to the NEG specified in the
+         * haPolicy.leader.backendGroup.
+         *
+         * The name must be 1-63 characters long, and comply with RFC1035.
+         * Authorization requires the following IAM permission on the specified
+         * resource instance: compute.instances.use
+         *
+         * @var string
+         */
+        public $instance;
+        /**
+         * The name of the VM instance of the leader network endpoint. The instance
+         * must already be attached to the NEG specified in the
+         * haPolicy.leader.backendGroup.
+         *
+         * The name must be 1-63 characters long, and comply with RFC1035.
+         * Authorization requires the following IAM permission on the specified
+         * resource instance: compute.instances.use
+         *
+         * @param string $instance
+         */
+        public function setInstance($instance)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstance()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\BackendServiceHAPolicyLeaderNetworkEndpoint registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstance()
+    class Google_Service_Compute_BackendServiceHAPolicyLeaderNetworkEndpoint extends \Google\Service\Compute\BackendServiceHAPolicyLeaderNetworkEndpoint
     {
     }
 }

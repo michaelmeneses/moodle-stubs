@@ -21,63 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1ProcessorVersionGenAiModelInfoCustomGenAiModelInfo extends \Google\Model
-{
-    /**
-     * The model type is unspecified.
-     */
-    public const CUSTOM_MODEL_TYPE_CUSTOM_MODEL_TYPE_UNSPECIFIED = 'CUSTOM_MODEL_TYPE_UNSPECIFIED';
-    /**
-     * The model is a versioned foundation model.
-     */
-    public const CUSTOM_MODEL_TYPE_VERSIONED_FOUNDATION = 'VERSIONED_FOUNDATION';
-    /**
-     * The model is a finetuned foundation model.
-     */
-    public const CUSTOM_MODEL_TYPE_FINE_TUNED = 'FINE_TUNED';
-    /**
-     * The base processor version ID for the custom model.
-     *
-     * @var string
-     */
-    public $baseProcessorVersionId;
-    /**
-     * The type of custom model created by the user.
-     *
-     * @var string
-     */
-    public $customModelType;
-    /**
-     * The base processor version ID for the custom model.
-     *
-     * @param string $baseProcessorVersionId
-     */
-    public function setBaseProcessorVersionId($baseProcessorVersionId)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1ProcessorVersionGenAiModelInfoCustomGenAiModelInfo extends \Google\Model
     {
+        /**
+         * The model type is unspecified.
+         */
+        public const CUSTOM_MODEL_TYPE_CUSTOM_MODEL_TYPE_UNSPECIFIED = 'CUSTOM_MODEL_TYPE_UNSPECIFIED';
+        /**
+         * The model is a versioned foundation model.
+         */
+        public const CUSTOM_MODEL_TYPE_VERSIONED_FOUNDATION = 'VERSIONED_FOUNDATION';
+        /**
+         * The model is a finetuned foundation model.
+         */
+        public const CUSTOM_MODEL_TYPE_FINE_TUNED = 'FINE_TUNED';
+        /**
+         * The base processor version ID for the custom model.
+         *
+         * @var string
+         */
+        public $baseProcessorVersionId;
+        /**
+         * The type of custom model created by the user.
+         *
+         * @var string
+         */
+        public $customModelType;
+        /**
+         * The base processor version ID for the custom model.
+         *
+         * @param string $baseProcessorVersionId
+         */
+        public function setBaseProcessorVersionId($baseProcessorVersionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBaseProcessorVersionId()
+        {
+        }
+        /**
+         * The type of custom model created by the user.
+         *
+         * Accepted values: CUSTOM_MODEL_TYPE_UNSPECIFIED, VERSIONED_FOUNDATION,
+         * FINE_TUNED
+         *
+         * @param self::CUSTOM_MODEL_TYPE_* $customModelType
+         */
+        public function setCustomModelType($customModelType)
+        {
+        }
+        /**
+         * @return self::CUSTOM_MODEL_TYPE_*
+         */
+        public function getCustomModelType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1ProcessorVersionGenAiModelInfoCustomGenAiModelInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBaseProcessorVersionId()
-    {
-    }
-    /**
-     * The type of custom model created by the user.
-     *
-     * Accepted values: CUSTOM_MODEL_TYPE_UNSPECIFIED, VERSIONED_FOUNDATION,
-     * FINE_TUNED
-     *
-     * @param self::CUSTOM_MODEL_TYPE_* $customModelType
-     */
-    public function setCustomModelType($customModelType)
-    {
-    }
-    /**
-     * @return self::CUSTOM_MODEL_TYPE_*
-     */
-    public function getCustomModelType()
+    class Google_Service_Document_GoogleCloudDocumentaiV1ProcessorVersionGenAiModelInfoCustomGenAiModelInfo extends \Google\Service\Document\GoogleCloudDocumentaiV1ProcessorVersionGenAiModelInfoCustomGenAiModelInfo
     {
     }
 }

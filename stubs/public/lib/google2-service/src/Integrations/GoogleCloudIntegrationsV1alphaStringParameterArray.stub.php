@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaStringParameterArray extends \Google\Collection
-{
-    protected $collection_key = 'stringValues';
-    /**
-     * String array.
-     *
-     * @var string[]
-     */
-    public $stringValues;
-    /**
-     * String array.
-     *
-     * @param string[] $stringValues
-     */
-    public function setStringValues($stringValues)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaStringParameterArray extends \Google\Collection
     {
+        protected $collection_key = 'stringValues';
+        /**
+         * String array.
+         *
+         * @var string[]
+         */
+        public $stringValues;
+        /**
+         * String array.
+         *
+         * @param string[] $stringValues
+         */
+        public function setStringValues($stringValues)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getStringValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaStringParameterArray registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStringValues()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaStringParameterArray extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaStringParameterArray
     {
     }
 }

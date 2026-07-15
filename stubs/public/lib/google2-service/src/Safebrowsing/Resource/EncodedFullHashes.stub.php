@@ -21,30 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Safebrowsing\Resource;
-
-/**
- * The "encodedFullHashes" collection of methods.
- * Typical usage is:
- *  <code>
- *   $safebrowsingService = new Google\Service\Safebrowsing(...);
- *   $encodedFullHashes = $safebrowsingService->encodedFullHashes;
- *  </code>
- */
-class EncodedFullHashes extends \Google\Service\Resource
-{
+namespace Google\Service\Safebrowsing\Resource {
+    use Google\Service\Safebrowsing\GoogleSecuritySafebrowsingV4FindFullHashesResponse;
     /**
-     * (encodedFullHashes.get)
-     *
-     * @param string $encodedRequest A serialized FindFullHashesRequest proto.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string clientId A client ID that (hopefully) uniquely identifies
-     * the client implementation of the Safe Browsing API.
-     * @opt_param string clientVersion The version of the client implementation.
-     * @return GoogleSecuritySafebrowsingV4FindFullHashesResponse
+     * The "encodedFullHashes" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $safebrowsingService = new Google\Service\Safebrowsing(...);
+     *   $encodedFullHashes = $safebrowsingService->encodedFullHashes;
+     *  </code>
      */
-    public function get($encodedRequest, $optParams = [])
+    class EncodedFullHashes extends \Google\Service\Resource
+    {
+        /**
+         * (encodedFullHashes.get)
+         *
+         * @param string $encodedRequest A serialized FindFullHashesRequest proto.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string clientId A client ID that (hopefully) uniquely identifies
+         * the client implementation of the Safe Browsing API.
+         * @opt_param string clientVersion The version of the client implementation.
+         * @return GoogleSecuritySafebrowsingV4FindFullHashesResponse
+         */
+        public function get($encodedRequest, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Safebrowsing\Resource\EncodedFullHashes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Safebrowsing_Resource_EncodedFullHashes extends \Google\Service\Safebrowsing\Resource\EncodedFullHashes
     {
     }
 }

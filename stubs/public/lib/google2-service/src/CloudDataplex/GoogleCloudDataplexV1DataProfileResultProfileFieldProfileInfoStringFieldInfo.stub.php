@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1DataProfileResultProfileFieldProfileInfoStringFieldInfo extends \Google\Model
-{
-    /**
-     * Output only. Average length of non-null values in the scanned data.
-     *
-     * @var 
-     */
-    public $averageLength;
-    /**
-     * Output only. Maximum length of non-null values in the scanned data.
-     *
-     * @var string
-     */
-    public $maxLength;
-    /**
-     * Output only. Minimum length of non-null values in the scanned data.
-     *
-     * @var string
-     */
-    public $minLength;
-    public function setAverageLength($averageLength)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1DataProfileResultProfileFieldProfileInfoStringFieldInfo extends \Google\Model
     {
+        /**
+         * Output only. Average length of non-null values in the scanned data.
+         *
+         * @var 
+         */
+        public $averageLength;
+        /**
+         * Output only. Maximum length of non-null values in the scanned data.
+         *
+         * @var string
+         */
+        public $maxLength;
+        /**
+         * Output only. Minimum length of non-null values in the scanned data.
+         *
+         * @var string
+         */
+        public $minLength;
+        public function setAverageLength($averageLength)
+        {
+        }
+        public function getAverageLength()
+        {
+        }
+        /**
+         * Output only. Maximum length of non-null values in the scanned data.
+         *
+         * @param string $maxLength
+         */
+        public function setMaxLength($maxLength)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaxLength()
+        {
+        }
+        /**
+         * Output only. Minimum length of non-null values in the scanned data.
+         *
+         * @param string $minLength
+         */
+        public function setMinLength($minLength)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMinLength()
+        {
+        }
     }
-    public function getAverageLength()
-    {
-    }
+}
+namespace {
     /**
-     * Output only. Maximum length of non-null values in the scanned data.
-     *
-     * @param string $maxLength
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataProfileResultProfileFieldProfileInfoStringFieldInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setMaxLength($maxLength)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMaxLength()
-    {
-    }
-    /**
-     * Output only. Minimum length of non-null values in the scanned data.
-     *
-     * @param string $minLength
-     */
-    public function setMinLength($minLength)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMinLength()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1DataProfileResultProfileFieldProfileInfoStringFieldInfo extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataProfileResultProfileFieldProfileInfoStringFieldInfo
     {
     }
 }

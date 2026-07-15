@@ -21,37 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Baremetalsolution;
-
-class Policy extends \Google\Collection
-{
-    protected $collection_key = 'bindings';
-    protected $bindingsType = Binding::class;
-    protected $bindingsDataType = 'array';
-    public $etag;
-    public $version;
+namespace Google\Service\Baremetalsolution {
+    class Policy extends \Google\Collection
+    {
+        protected $collection_key = 'bindings';
+        protected $bindingsType = Binding::class;
+        protected $bindingsDataType = 'array';
+        public $etag;
+        public $version;
+        /**
+         * @param Binding[]
+         */
+        public function setBindings($bindings)
+        {
+        }
+        /**
+         * @return Binding[]
+         */
+        public function getBindings()
+        {
+        }
+        public function setEtag($etag)
+        {
+        }
+        public function getEtag()
+        {
+        }
+        public function setVersion($version)
+        {
+        }
+        public function getVersion()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @param Binding[]
+     * Runtime class alias of \Google\Service\Baremetalsolution\Policy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setBindings($bindings)
-    {
-    }
-    /**
-     * @return Binding[]
-     */
-    public function getBindings()
-    {
-    }
-    public function setEtag($etag)
-    {
-    }
-    public function getEtag()
-    {
-    }
-    public function setVersion($version)
-    {
-    }
-    public function getVersion()
+    class Google_Service_Baremetalsolution_Policy extends \Google\Service\Baremetalsolution\Policy
     {
     }
 }

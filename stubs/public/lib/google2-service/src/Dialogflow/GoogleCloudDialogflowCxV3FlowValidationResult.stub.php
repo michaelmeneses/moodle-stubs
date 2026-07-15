@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3FlowValidationResult extends \Google\Collection
-{
-    protected $collection_key = 'validationMessages';
-    /**
-     * The unique identifier of the flow validation result. Format:
-     * `projects//locations//agents//flows//validationResult`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Last time the flow was validated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    protected $validationMessagesType = GoogleCloudDialogflowCxV3ValidationMessage::class;
-    protected $validationMessagesDataType = 'array';
-    /**
-     * The unique identifier of the flow validation result. Format:
-     * `projects//locations//agents//flows//validationResult`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3FlowValidationResult extends \Google\Collection
     {
+        protected $collection_key = 'validationMessages';
+        /**
+         * The unique identifier of the flow validation result. Format:
+         * `projects//locations//agents//flows//validationResult`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Last time the flow was validated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        protected $validationMessagesType = GoogleCloudDialogflowCxV3ValidationMessage::class;
+        protected $validationMessagesDataType = 'array';
+        /**
+         * The unique identifier of the flow validation result. Format:
+         * `projects//locations//agents//flows//validationResult`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Last time the flow was validated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
+        /**
+         * Contains all validation messages.
+         *
+         * @param GoogleCloudDialogflowCxV3ValidationMessage[] $validationMessages
+         */
+        public function setValidationMessages($validationMessages)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3ValidationMessage[]
+         */
+        public function getValidationMessages()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3FlowValidationResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Last time the flow was validated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
-    {
-    }
-    /**
-     * Contains all validation messages.
-     *
-     * @param GoogleCloudDialogflowCxV3ValidationMessage[] $validationMessages
-     */
-    public function setValidationMessages($validationMessages)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3ValidationMessage[]
-     */
-    public function getValidationMessages()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3FlowValidationResult extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3FlowValidationResult
     {
     }
 }

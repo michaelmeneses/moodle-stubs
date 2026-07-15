@@ -21,132 +21,141 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRedis;
-
-class AvailabilityConfiguration extends \Google\Model
-{
-    public const AVAILABILITY_TYPE_AVAILABILITY_TYPE_UNSPECIFIED = 'AVAILABILITY_TYPE_UNSPECIFIED';
-    /**
-     * Zonal available instance.
-     */
-    public const AVAILABILITY_TYPE_ZONAL = 'ZONAL';
-    /**
-     * Regional available instance.
-     */
-    public const AVAILABILITY_TYPE_REGIONAL = 'REGIONAL';
-    /**
-     * Multi regional instance
-     */
-    public const AVAILABILITY_TYPE_MULTI_REGIONAL = 'MULTI_REGIONAL';
-    /**
-     * For rest of the other category
-     */
-    public const AVAILABILITY_TYPE_AVAILABILITY_TYPE_OTHER = 'AVAILABILITY_TYPE_OTHER';
-    /**
-     * Checks for existence of (multi-cluster) routing configuration that allows
-     * automatic failover to a different zone/region in case of an outage.
-     * Applicable to Bigtable resources.
-     *
-     * @var bool
-     */
-    public $automaticFailoverRoutingConfigured;
-    /**
-     * Availability type. Potential values: * `ZONAL`: The instance serves data
-     * from only one zone. Outages in that zone affect data accessibility. *
-     * `REGIONAL`: The instance can serve data from more than one zone in a region
-     * (it is highly available).
-     *
-     * @var string
-     */
-    public $availabilityType;
-    /**
-     * Checks for resources that are configured to have redundancy, and ongoing
-     * replication across regions
-     *
-     * @var bool
-     */
-    public $crossRegionReplicaConfigured;
-    /**
-     * @var bool
-     */
-    public $externalReplicaConfigured;
-    /**
-     * @var bool
-     */
-    public $promotableReplicaConfigured;
-    /**
-     * Checks for existence of (multi-cluster) routing configuration that allows
-     * automatic failover to a different zone/region in case of an outage.
-     * Applicable to Bigtable resources.
-     *
-     * @param bool $automaticFailoverRoutingConfigured
-     */
-    public function setAutomaticFailoverRoutingConfigured($automaticFailoverRoutingConfigured)
+namespace Google\Service\CloudRedis {
+    class AvailabilityConfiguration extends \Google\Model
     {
+        public const AVAILABILITY_TYPE_AVAILABILITY_TYPE_UNSPECIFIED = 'AVAILABILITY_TYPE_UNSPECIFIED';
+        /**
+         * Zonal available instance.
+         */
+        public const AVAILABILITY_TYPE_ZONAL = 'ZONAL';
+        /**
+         * Regional available instance.
+         */
+        public const AVAILABILITY_TYPE_REGIONAL = 'REGIONAL';
+        /**
+         * Multi regional instance
+         */
+        public const AVAILABILITY_TYPE_MULTI_REGIONAL = 'MULTI_REGIONAL';
+        /**
+         * For rest of the other category
+         */
+        public const AVAILABILITY_TYPE_AVAILABILITY_TYPE_OTHER = 'AVAILABILITY_TYPE_OTHER';
+        /**
+         * Checks for existence of (multi-cluster) routing configuration that allows
+         * automatic failover to a different zone/region in case of an outage.
+         * Applicable to Bigtable resources.
+         *
+         * @var bool
+         */
+        public $automaticFailoverRoutingConfigured;
+        /**
+         * Availability type. Potential values: * `ZONAL`: The instance serves data
+         * from only one zone. Outages in that zone affect data accessibility. *
+         * `REGIONAL`: The instance can serve data from more than one zone in a region
+         * (it is highly available).
+         *
+         * @var string
+         */
+        public $availabilityType;
+        /**
+         * Checks for resources that are configured to have redundancy, and ongoing
+         * replication across regions
+         *
+         * @var bool
+         */
+        public $crossRegionReplicaConfigured;
+        /**
+         * @var bool
+         */
+        public $externalReplicaConfigured;
+        /**
+         * @var bool
+         */
+        public $promotableReplicaConfigured;
+        /**
+         * Checks for existence of (multi-cluster) routing configuration that allows
+         * automatic failover to a different zone/region in case of an outage.
+         * Applicable to Bigtable resources.
+         *
+         * @param bool $automaticFailoverRoutingConfigured
+         */
+        public function setAutomaticFailoverRoutingConfigured($automaticFailoverRoutingConfigured)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAutomaticFailoverRoutingConfigured()
+        {
+        }
+        /**
+         * Availability type. Potential values: * `ZONAL`: The instance serves data
+         * from only one zone. Outages in that zone affect data accessibility. *
+         * `REGIONAL`: The instance can serve data from more than one zone in a region
+         * (it is highly available).
+         *
+         * Accepted values: AVAILABILITY_TYPE_UNSPECIFIED, ZONAL, REGIONAL,
+         * MULTI_REGIONAL, AVAILABILITY_TYPE_OTHER
+         *
+         * @param self::AVAILABILITY_TYPE_* $availabilityType
+         */
+        public function setAvailabilityType($availabilityType)
+        {
+        }
+        /**
+         * @return self::AVAILABILITY_TYPE_*
+         */
+        public function getAvailabilityType()
+        {
+        }
+        /**
+         * Checks for resources that are configured to have redundancy, and ongoing
+         * replication across regions
+         *
+         * @param bool $crossRegionReplicaConfigured
+         */
+        public function setCrossRegionReplicaConfigured($crossRegionReplicaConfigured)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCrossRegionReplicaConfigured()
+        {
+        }
+        /**
+         * @param bool $externalReplicaConfigured
+         */
+        public function setExternalReplicaConfigured($externalReplicaConfigured)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getExternalReplicaConfigured()
+        {
+        }
+        /**
+         * @param bool $promotableReplicaConfigured
+         */
+        public function setPromotableReplicaConfigured($promotableReplicaConfigured)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPromotableReplicaConfigured()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudRedis\AvailabilityConfiguration registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAutomaticFailoverRoutingConfigured()
-    {
-    }
-    /**
-     * Availability type. Potential values: * `ZONAL`: The instance serves data
-     * from only one zone. Outages in that zone affect data accessibility. *
-     * `REGIONAL`: The instance can serve data from more than one zone in a region
-     * (it is highly available).
-     *
-     * Accepted values: AVAILABILITY_TYPE_UNSPECIFIED, ZONAL, REGIONAL,
-     * MULTI_REGIONAL, AVAILABILITY_TYPE_OTHER
-     *
-     * @param self::AVAILABILITY_TYPE_* $availabilityType
-     */
-    public function setAvailabilityType($availabilityType)
-    {
-    }
-    /**
-     * @return self::AVAILABILITY_TYPE_*
-     */
-    public function getAvailabilityType()
-    {
-    }
-    /**
-     * Checks for resources that are configured to have redundancy, and ongoing
-     * replication across regions
-     *
-     * @param bool $crossRegionReplicaConfigured
-     */
-    public function setCrossRegionReplicaConfigured($crossRegionReplicaConfigured)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCrossRegionReplicaConfigured()
-    {
-    }
-    /**
-     * @param bool $externalReplicaConfigured
-     */
-    public function setExternalReplicaConfigured($externalReplicaConfigured)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getExternalReplicaConfigured()
-    {
-    }
-    /**
-     * @param bool $promotableReplicaConfigured
-     */
-    public function setPromotableReplicaConfigured($promotableReplicaConfigured)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPromotableReplicaConfigured()
+    class Google_Service_CloudRedis_AvailabilityConfiguration extends \Google\Service\CloudRedis\AvailabilityConfiguration
     {
     }
 }

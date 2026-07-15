@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2OtherCloudResourceRegex extends \Google\Model
-{
-    protected $amazonS3BucketRegexType = GooglePrivacyDlpV2AmazonS3BucketRegex::class;
-    protected $amazonS3BucketRegexDataType = '';
-    /**
-     * Regex for Amazon S3 buckets.
-     *
-     * @param GooglePrivacyDlpV2AmazonS3BucketRegex $amazonS3BucketRegex
-     */
-    public function setAmazonS3BucketRegex(GooglePrivacyDlpV2AmazonS3BucketRegex $amazonS3BucketRegex)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2OtherCloudResourceRegex extends \Google\Model
     {
+        protected $amazonS3BucketRegexType = GooglePrivacyDlpV2AmazonS3BucketRegex::class;
+        protected $amazonS3BucketRegexDataType = '';
+        /**
+         * Regex for Amazon S3 buckets.
+         *
+         * @param GooglePrivacyDlpV2AmazonS3BucketRegex $amazonS3BucketRegex
+         */
+        public function setAmazonS3BucketRegex(GooglePrivacyDlpV2AmazonS3BucketRegex $amazonS3BucketRegex)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2AmazonS3BucketRegex
+         */
+        public function getAmazonS3BucketRegex()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2AmazonS3BucketRegex
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2OtherCloudResourceRegex registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAmazonS3BucketRegex()
+    class Google_Service_DLP_GooglePrivacyDlpV2OtherCloudResourceRegex extends \Google\Service\DLP\GooglePrivacyDlpV2OtherCloudResourceRegex
     {
     }
 }

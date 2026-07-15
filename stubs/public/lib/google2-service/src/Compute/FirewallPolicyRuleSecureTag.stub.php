@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class FirewallPolicyRuleSecureTag extends \Google\Model
-{
-    public const STATE_EFFECTIVE = 'EFFECTIVE';
-    public const STATE_INEFFECTIVE = 'INEFFECTIVE';
-    /**
-     * Name of the secure tag, created with TagManager's TagValue API.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. [Output Only] State of the secure tag, either `EFFECTIVE` or
-     * `INEFFECTIVE`. A secure tag is `INEFFECTIVE` when it is deleted or its
-     * network is deleted.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Name of the secure tag, created with TagManager's TagValue API.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Compute {
+    class FirewallPolicyRuleSecureTag extends \Google\Model
     {
+        public const STATE_EFFECTIVE = 'EFFECTIVE';
+        public const STATE_INEFFECTIVE = 'INEFFECTIVE';
+        /**
+         * Name of the secure tag, created with TagManager's TagValue API.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. [Output Only] State of the secure tag, either `EFFECTIVE` or
+         * `INEFFECTIVE`. A secure tag is `INEFFECTIVE` when it is deleted or its
+         * network is deleted.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Name of the secure tag, created with TagManager's TagValue API.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. [Output Only] State of the secure tag, either `EFFECTIVE` or
+         * `INEFFECTIVE`. A secure tag is `INEFFECTIVE` when it is deleted or its
+         * network is deleted.
+         *
+         * Accepted values: EFFECTIVE, INEFFECTIVE
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\FirewallPolicyRuleSecureTag registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. [Output Only] State of the secure tag, either `EFFECTIVE` or
-     * `INEFFECTIVE`. A secure tag is `INEFFECTIVE` when it is deleted or its
-     * network is deleted.
-     *
-     * Accepted values: EFFECTIVE, INEFFECTIVE
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
+    class Google_Service_Compute_FirewallPolicyRuleSecureTag extends \Google\Service\Compute\FirewallPolicyRuleSecureTag
     {
     }
 }

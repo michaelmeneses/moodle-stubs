@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2ReplaceCatalogAttributeRequest extends \Google\Model
-{
-    protected $catalogAttributeType = GoogleCloudRetailV2CatalogAttribute::class;
-    protected $catalogAttributeDataType = '';
-    /**
-     * Indicates which fields in the provided CatalogAttribute to update. The
-     * following are NOT supported: * CatalogAttribute.key If not set, all
-     * supported fields are updated.
-     *
-     * @var string
-     */
-    public $updateMask;
-    /**
-     * Required. The updated CatalogAttribute.
-     *
-     * @param GoogleCloudRetailV2CatalogAttribute $catalogAttribute
-     */
-    public function setCatalogAttribute(GoogleCloudRetailV2CatalogAttribute $catalogAttribute)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2ReplaceCatalogAttributeRequest extends \Google\Model
     {
+        protected $catalogAttributeType = GoogleCloudRetailV2CatalogAttribute::class;
+        protected $catalogAttributeDataType = '';
+        /**
+         * Indicates which fields in the provided CatalogAttribute to update. The
+         * following are NOT supported: * CatalogAttribute.key If not set, all
+         * supported fields are updated.
+         *
+         * @var string
+         */
+        public $updateMask;
+        /**
+         * Required. The updated CatalogAttribute.
+         *
+         * @param GoogleCloudRetailV2CatalogAttribute $catalogAttribute
+         */
+        public function setCatalogAttribute(GoogleCloudRetailV2CatalogAttribute $catalogAttribute)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2CatalogAttribute
+         */
+        public function getCatalogAttribute()
+        {
+        }
+        /**
+         * Indicates which fields in the provided CatalogAttribute to update. The
+         * following are NOT supported: * CatalogAttribute.key If not set, all
+         * supported fields are updated.
+         *
+         * @param string $updateMask
+         */
+        public function setUpdateMask($updateMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateMask()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRetailV2CatalogAttribute
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2ReplaceCatalogAttributeRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCatalogAttribute()
-    {
-    }
-    /**
-     * Indicates which fields in the provided CatalogAttribute to update. The
-     * following are NOT supported: * CatalogAttribute.key If not set, all
-     * supported fields are updated.
-     *
-     * @param string $updateMask
-     */
-    public function setUpdateMask($updateMask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateMask()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2ReplaceCatalogAttributeRequest extends \Google\Service\CloudRetail\GoogleCloudRetailV2ReplaceCatalogAttributeRequest
     {
     }
 }

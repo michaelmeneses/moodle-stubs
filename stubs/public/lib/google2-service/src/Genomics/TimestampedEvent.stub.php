@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Genomics;
-
-class TimestampedEvent extends \Google\Model
-{
-    /**
-     * @var array[]
-     */
-    public $data;
-    /**
-     * @var string
-     */
-    public $timestamp;
-    /**
-     * @param array[]
-     */
-    public function setData($data)
+namespace Google\Service\Genomics {
+    class TimestampedEvent extends \Google\Model
     {
+        /**
+         * @var array[]
+         */
+        public $data;
+        /**
+         * @var string
+         */
+        public $timestamp;
+        /**
+         * @param array[]
+         */
+        public function setData($data)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getData()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTimestamp($timestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimestamp()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\Genomics\TimestampedEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getData()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTimestamp($timestamp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimestamp()
+    class Google_Service_Genomics_TimestampedEvent extends \Google\Service\Genomics\TimestampedEvent
     {
     }
 }

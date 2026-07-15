@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PaymentsResellerSubscription;
-
-class GoogleCloudPaymentsResellerSubscriptionV1GenerateUserSessionResponse extends \Google\Model
-{
-    protected $userSessionType = GoogleCloudPaymentsResellerSubscriptionV1UserSession::class;
-    protected $userSessionDataType = '';
-    /**
-     * @param GoogleCloudPaymentsResellerSubscriptionV1UserSession
-     */
-    public function setUserSession(GoogleCloudPaymentsResellerSubscriptionV1UserSession $userSession)
+namespace Google\Service\PaymentsResellerSubscription {
+    class GoogleCloudPaymentsResellerSubscriptionV1GenerateUserSessionResponse extends \Google\Model
     {
+        protected $userSessionType = GoogleCloudPaymentsResellerSubscriptionV1UserSession::class;
+        protected $userSessionDataType = '';
+        /**
+         * @param GoogleCloudPaymentsResellerSubscriptionV1UserSession
+         */
+        public function setUserSession(GoogleCloudPaymentsResellerSubscriptionV1UserSession $userSession)
+        {
+        }
+        /**
+         * @return GoogleCloudPaymentsResellerSubscriptionV1UserSession
+         */
+        public function getUserSession()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudPaymentsResellerSubscriptionV1UserSession
+     * Runtime class alias of \Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1GenerateUserSessionResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUserSession()
+    class Google_Service_PaymentsResellerSubscription_GoogleCloudPaymentsResellerSubscriptionV1GenerateUserSessionResponse extends \Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1GenerateUserSessionResponse
     {
     }
 }

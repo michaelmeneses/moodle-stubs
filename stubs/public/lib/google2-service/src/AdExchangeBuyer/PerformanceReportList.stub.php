@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer;
-
-class PerformanceReportList extends \Google\Collection
-{
-    protected $collection_key = 'performanceReport';
-    public $kind;
-    protected $performanceReportType = PerformanceReport::class;
-    protected $performanceReportDataType = 'array';
-    public function setKind($kind)
+namespace Google\Service\AdExchangeBuyer {
+    class PerformanceReportList extends \Google\Collection
     {
+        protected $collection_key = 'performanceReport';
+        public $kind;
+        protected $performanceReportType = PerformanceReport::class;
+        protected $performanceReportDataType = 'array';
+        public function setKind($kind)
+        {
+        }
+        public function getKind()
+        {
+        }
+        /**
+         * @param PerformanceReport[]
+         */
+        public function setPerformanceReport($performanceReport)
+        {
+        }
+        /**
+         * @return PerformanceReport[]
+         */
+        public function getPerformanceReport()
+        {
+        }
     }
-    public function getKind()
-    {
-    }
+}
+namespace {
     /**
-     * @param PerformanceReport[]
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\PerformanceReportList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setPerformanceReport($performanceReport)
-    {
-    }
-    /**
-     * @return PerformanceReport[]
-     */
-    public function getPerformanceReport()
+    class Google_Service_AdExchangeBuyer_PerformanceReportList extends \Google\Service\AdExchangeBuyer\PerformanceReportList
     {
     }
 }

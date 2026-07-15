@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class GenerateReportArtifactLinkRequest extends \Google\Model
-{
-    /**
-     * Unspecified (default value).
-     */
-    public const ARTIFACT_TYPE_ARTIFACT_TYPE_UNSPECIFIED = 'ARTIFACT_TYPE_UNSPECIFIED';
-    /**
-     * Google Slides presentation.
-     */
-    public const ARTIFACT_TYPE_PRESENTATION = 'PRESENTATION';
-    /**
-     * Google Sheets document.
-     */
-    public const ARTIFACT_TYPE_SPREADSHEET = 'SPREADSHEET';
-    /**
-     * Comma Separated Value Text File.
-     */
-    public const ARTIFACT_TYPE_CSV = 'CSV';
-    /**
-     * Required. Type of the artifact requested.
-     *
-     * @var string
-     */
-    public $artifactType;
-    /**
-     * Required. Type of the artifact requested.
-     *
-     * Accepted values: ARTIFACT_TYPE_UNSPECIFIED, PRESENTATION, SPREADSHEET, CSV
-     *
-     * @param self::ARTIFACT_TYPE_* $artifactType
-     */
-    public function setArtifactType($artifactType)
+namespace Google\Service\MigrationCenterAPI {
+    class GenerateReportArtifactLinkRequest extends \Google\Model
     {
+        /**
+         * Unspecified (default value).
+         */
+        public const ARTIFACT_TYPE_ARTIFACT_TYPE_UNSPECIFIED = 'ARTIFACT_TYPE_UNSPECIFIED';
+        /**
+         * Google Slides presentation.
+         */
+        public const ARTIFACT_TYPE_PRESENTATION = 'PRESENTATION';
+        /**
+         * Google Sheets document.
+         */
+        public const ARTIFACT_TYPE_SPREADSHEET = 'SPREADSHEET';
+        /**
+         * Comma Separated Value Text File.
+         */
+        public const ARTIFACT_TYPE_CSV = 'CSV';
+        /**
+         * Required. Type of the artifact requested.
+         *
+         * @var string
+         */
+        public $artifactType;
+        /**
+         * Required. Type of the artifact requested.
+         *
+         * Accepted values: ARTIFACT_TYPE_UNSPECIFIED, PRESENTATION, SPREADSHEET, CSV
+         *
+         * @param self::ARTIFACT_TYPE_* $artifactType
+         */
+        public function setArtifactType($artifactType)
+        {
+        }
+        /**
+         * @return self::ARTIFACT_TYPE_*
+         */
+        public function getArtifactType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::ARTIFACT_TYPE_*
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\GenerateReportArtifactLinkRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArtifactType()
+    class Google_Service_MigrationCenterAPI_GenerateReportArtifactLinkRequest extends \Google\Service\MigrationCenterAPI\GenerateReportArtifactLinkRequest
     {
     }
 }

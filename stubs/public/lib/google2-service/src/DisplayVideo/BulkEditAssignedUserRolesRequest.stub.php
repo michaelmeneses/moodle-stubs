@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class BulkEditAssignedUserRolesRequest extends \Google\Collection
-{
-    protected $collection_key = 'deletedAssignedUserRoles';
-    protected $createdAssignedUserRolesType = AssignedUserRole::class;
-    protected $createdAssignedUserRolesDataType = 'array';
-    /**
-     * The assigned user roles to delete in batch, specified as a list of
-     * assigned_user_role_ids. The format of assigned_user_role_id is `entityType-
-     * entityid`, for example `partner-123`.
-     *
-     * @var string[]
-     */
-    public $deletedAssignedUserRoles;
-    /**
-     * The assigned user roles to create in batch, specified as a list of
-     * AssignedUserRoles.
-     *
-     * @param AssignedUserRole[] $createdAssignedUserRoles
-     */
-    public function setCreatedAssignedUserRoles($createdAssignedUserRoles)
+namespace Google\Service\DisplayVideo {
+    class BulkEditAssignedUserRolesRequest extends \Google\Collection
     {
+        protected $collection_key = 'deletedAssignedUserRoles';
+        protected $createdAssignedUserRolesType = AssignedUserRole::class;
+        protected $createdAssignedUserRolesDataType = 'array';
+        /**
+         * The assigned user roles to delete in batch, specified as a list of
+         * assigned_user_role_ids. The format of assigned_user_role_id is `entityType-
+         * entityid`, for example `partner-123`.
+         *
+         * @var string[]
+         */
+        public $deletedAssignedUserRoles;
+        /**
+         * The assigned user roles to create in batch, specified as a list of
+         * AssignedUserRoles.
+         *
+         * @param AssignedUserRole[] $createdAssignedUserRoles
+         */
+        public function setCreatedAssignedUserRoles($createdAssignedUserRoles)
+        {
+        }
+        /**
+         * @return AssignedUserRole[]
+         */
+        public function getCreatedAssignedUserRoles()
+        {
+        }
+        /**
+         * The assigned user roles to delete in batch, specified as a list of
+         * assigned_user_role_ids. The format of assigned_user_role_id is `entityType-
+         * entityid`, for example `partner-123`.
+         *
+         * @param string[] $deletedAssignedUserRoles
+         */
+        public function setDeletedAssignedUserRoles($deletedAssignedUserRoles)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDeletedAssignedUserRoles()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AssignedUserRole[]
+     * Runtime class alias of \Google\Service\DisplayVideo\BulkEditAssignedUserRolesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreatedAssignedUserRoles()
-    {
-    }
-    /**
-     * The assigned user roles to delete in batch, specified as a list of
-     * assigned_user_role_ids. The format of assigned_user_role_id is `entityType-
-     * entityid`, for example `partner-123`.
-     *
-     * @param string[] $deletedAssignedUserRoles
-     */
-    public function setDeletedAssignedUserRoles($deletedAssignedUserRoles)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getDeletedAssignedUserRoles()
+    class Google_Service_DisplayVideo_BulkEditAssignedUserRolesRequest extends \Google\Service\DisplayVideo\BulkEditAssignedUserRolesRequest
     {
     }
 }

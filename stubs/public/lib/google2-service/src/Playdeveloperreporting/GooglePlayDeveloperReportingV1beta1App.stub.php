@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Playdeveloperreporting;
-
-class GooglePlayDeveloperReportingV1beta1App extends \Google\Model
-{
-    /**
-     * Title of the app. This is the latest title as set in the Play Console and
-     * may not yet have been reviewed, so might not match the Play Store. Example:
-     * `Google Maps`.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Identifier. The resource name. Format: apps/{app}
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Package name of the app. Example: `com.example.app123`.
-     *
-     * @var string
-     */
-    public $packageName;
-    /**
-     * Title of the app. This is the latest title as set in the Play Console and
-     * may not yet have been reviewed, so might not match the Play Store. Example:
-     * `Google Maps`.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\Playdeveloperreporting {
+    class GooglePlayDeveloperReportingV1beta1App extends \Google\Model
     {
+        /**
+         * Title of the app. This is the latest title as set in the Play Console and
+         * may not yet have been reviewed, so might not match the Play Store. Example:
+         * `Google Maps`.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Identifier. The resource name. Format: apps/{app}
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Package name of the app. Example: `com.example.app123`.
+         *
+         * @var string
+         */
+        public $packageName;
+        /**
+         * Title of the app. This is the latest title as set in the Play Console and
+         * may not yet have been reviewed, so might not match the Play Store. Example:
+         * `Google Maps`.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Identifier. The resource name. Format: apps/{app}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Package name of the app. Example: `com.example.app123`.
+         *
+         * @param string $packageName
+         */
+        public function setPackageName($packageName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPackageName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1App registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Identifier. The resource name. Format: apps/{app}
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Package name of the app. Example: `com.example.app123`.
-     *
-     * @param string $packageName
-     */
-    public function setPackageName($packageName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPackageName()
+    class Google_Service_Playdeveloperreporting_GooglePlayDeveloperReportingV1beta1App extends \Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1App
     {
     }
 }

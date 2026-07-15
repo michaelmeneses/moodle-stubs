@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1ListQaScorecardsResponse extends \Google\Collection
-{
-    protected $collection_key = 'qaScorecards';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $qaScorecardsType = GoogleCloudContactcenterinsightsV1QaScorecard::class;
-    protected $qaScorecardsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1ListQaScorecardsResponse extends \Google\Collection
     {
+        protected $collection_key = 'qaScorecards';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $qaScorecardsType = GoogleCloudContactcenterinsightsV1QaScorecard::class;
+        protected $qaScorecardsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The QaScorecards under the parent.
+         *
+         * @param GoogleCloudContactcenterinsightsV1QaScorecard[] $qaScorecards
+         */
+        public function setQaScorecards($qaScorecards)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1QaScorecard[]
+         */
+        public function getQaScorecards()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1ListQaScorecardsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The QaScorecards under the parent.
-     *
-     * @param GoogleCloudContactcenterinsightsV1QaScorecard[] $qaScorecards
-     */
-    public function setQaScorecards($qaScorecards)
-    {
-    }
-    /**
-     * @return GoogleCloudContactcenterinsightsV1QaScorecard[]
-     */
-    public function getQaScorecards()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1ListQaScorecardsResponse extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1ListQaScorecardsResponse
     {
     }
 }

@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDebugger;
-
-class FormatMessage extends \Google\Collection
-{
-    protected $collection_key = 'parameters';
-    /**
-     * @var string
-     */
-    public $format;
-    /**
-     * @var string[]
-     */
-    public $parameters;
-    /**
-     * @param string
-     */
-    public function setFormat($format)
+namespace Google\Service\CloudDebugger {
+    class FormatMessage extends \Google\Collection
     {
+        protected $collection_key = 'parameters';
+        /**
+         * @var string
+         */
+        public $format;
+        /**
+         * @var string[]
+         */
+        public $parameters;
+        /**
+         * @param string
+         */
+        public function setFormat($format)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFormat()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setParameters($parameters)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getParameters()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDebugger\FormatMessage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFormat()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setParameters($parameters)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getParameters()
+    class Google_Service_CloudDebugger_FormatMessage extends \Google\Service\CloudDebugger\FormatMessage
     {
     }
 }

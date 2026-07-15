@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudWorkstations;
-
-class ListWorkstationClustersResponse extends \Google\Collection
-{
-    protected $collection_key = 'workstationClusters';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Unreachable resources.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    protected $workstationClustersType = WorkstationCluster::class;
-    protected $workstationClustersDataType = 'array';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\CloudWorkstations {
+    class ListWorkstationClustersResponse extends \Google\Collection
     {
+        protected $collection_key = 'workstationClusters';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Unreachable resources.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        protected $workstationClustersType = WorkstationCluster::class;
+        protected $workstationClustersDataType = 'array';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Unreachable resources.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
+        /**
+         * The requested workstation clusters.
+         *
+         * @param WorkstationCluster[] $workstationClusters
+         */
+        public function setWorkstationClusters($workstationClusters)
+        {
+        }
+        /**
+         * @return WorkstationCluster[]
+         */
+        public function getWorkstationClusters()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudWorkstations\ListWorkstationClustersResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Unreachable resources.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
-    {
-    }
-    /**
-     * The requested workstation clusters.
-     *
-     * @param WorkstationCluster[] $workstationClusters
-     */
-    public function setWorkstationClusters($workstationClusters)
-    {
-    }
-    /**
-     * @return WorkstationCluster[]
-     */
-    public function getWorkstationClusters()
+    class Google_Service_CloudWorkstations_ListWorkstationClustersResponse extends \Google\Service\CloudWorkstations\ListWorkstationClustersResponse
     {
     }
 }

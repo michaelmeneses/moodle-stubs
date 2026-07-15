@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1BigQuerySource extends \Google\Model
-{
-    /**
-     * Required. BigQuery URI to a table, up to 2000 characters long. Accepted
-     * forms: * BigQuery path. For example:
-     * `bq://projectId.bqDatasetId.bqTableId`.
-     *
-     * @var string
-     */
-    public $inputUri;
-    /**
-     * Required. BigQuery URI to a table, up to 2000 characters long. Accepted
-     * forms: * BigQuery path. For example:
-     * `bq://projectId.bqDatasetId.bqTableId`.
-     *
-     * @param string $inputUri
-     */
-    public function setInputUri($inputUri)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1BigQuerySource extends \Google\Model
     {
+        /**
+         * Required. BigQuery URI to a table, up to 2000 characters long. Accepted
+         * forms: * BigQuery path. For example:
+         * `bq://projectId.bqDatasetId.bqTableId`.
+         *
+         * @var string
+         */
+        public $inputUri;
+        /**
+         * Required. BigQuery URI to a table, up to 2000 characters long. Accepted
+         * forms: * BigQuery path. For example:
+         * `bq://projectId.bqDatasetId.bqTableId`.
+         *
+         * @param string $inputUri
+         */
+        public function setInputUri($inputUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInputUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1BigQuerySource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInputUri()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1BigQuerySource extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1BigQuerySource
     {
     }
 }

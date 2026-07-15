@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class BulkEditAdvertiserAssignedTargetingOptionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'createdAssignedTargetingOptions';
-    protected $createdAssignedTargetingOptionsType = AssignedTargetingOption::class;
-    protected $createdAssignedTargetingOptionsDataType = 'array';
-    /**
-     * The list of assigned targeting options that have been successfully created.
-     * This list will be absent if empty.
-     *
-     * @param AssignedTargetingOption[] $createdAssignedTargetingOptions
-     */
-    public function setCreatedAssignedTargetingOptions($createdAssignedTargetingOptions)
+namespace Google\Service\DisplayVideo {
+    class BulkEditAdvertiserAssignedTargetingOptionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'createdAssignedTargetingOptions';
+        protected $createdAssignedTargetingOptionsType = AssignedTargetingOption::class;
+        protected $createdAssignedTargetingOptionsDataType = 'array';
+        /**
+         * The list of assigned targeting options that have been successfully created.
+         * This list will be absent if empty.
+         *
+         * @param AssignedTargetingOption[] $createdAssignedTargetingOptions
+         */
+        public function setCreatedAssignedTargetingOptions($createdAssignedTargetingOptions)
+        {
+        }
+        /**
+         * @return AssignedTargetingOption[]
+         */
+        public function getCreatedAssignedTargetingOptions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AssignedTargetingOption[]
+     * Runtime class alias of \Google\Service\DisplayVideo\BulkEditAdvertiserAssignedTargetingOptionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreatedAssignedTargetingOptions()
+    class Google_Service_DisplayVideo_BulkEditAdvertiserAssignedTargetingOptionsResponse extends \Google\Service\DisplayVideo\BulkEditAdvertiserAssignedTargetingOptionsResponse
     {
     }
 }

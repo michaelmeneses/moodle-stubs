@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecommendationsAI;
-
-class GoogleCloudRecommendationengineV1beta1FeatureMap extends \Google\Model
-{
-    protected $categoricalFeaturesType = GoogleCloudRecommendationengineV1beta1FeatureMapStringList::class;
-    protected $categoricalFeaturesDataType = 'map';
-    protected $numericalFeaturesType = GoogleCloudRecommendationengineV1beta1FeatureMapFloatList::class;
-    protected $numericalFeaturesDataType = 'map';
-    /**
-     * Categorical features that can take on one of a limited number of possible
-     * values. Some examples would be the brand/maker of a product, or country of
-     * a customer. Feature names and values must be UTF-8 encoded strings. For
-     * example: `{ "colors": {"value": ["yellow", "green"]}, "sizes":
-     * {"value":["S", "M"]}`
-     *
-     * @param GoogleCloudRecommendationengineV1beta1FeatureMapStringList[] $categoricalFeatures
-     */
-    public function setCategoricalFeatures($categoricalFeatures)
+namespace Google\Service\RecommendationsAI {
+    class GoogleCloudRecommendationengineV1beta1FeatureMap extends \Google\Model
     {
+        protected $categoricalFeaturesType = GoogleCloudRecommendationengineV1beta1FeatureMapStringList::class;
+        protected $categoricalFeaturesDataType = 'map';
+        protected $numericalFeaturesType = GoogleCloudRecommendationengineV1beta1FeatureMapFloatList::class;
+        protected $numericalFeaturesDataType = 'map';
+        /**
+         * Categorical features that can take on one of a limited number of possible
+         * values. Some examples would be the brand/maker of a product, or country of
+         * a customer. Feature names and values must be UTF-8 encoded strings. For
+         * example: `{ "colors": {"value": ["yellow", "green"]}, "sizes":
+         * {"value":["S", "M"]}`
+         *
+         * @param GoogleCloudRecommendationengineV1beta1FeatureMapStringList[] $categoricalFeatures
+         */
+        public function setCategoricalFeatures($categoricalFeatures)
+        {
+        }
+        /**
+         * @return GoogleCloudRecommendationengineV1beta1FeatureMapStringList[]
+         */
+        public function getCategoricalFeatures()
+        {
+        }
+        /**
+         * Numerical features. Some examples would be the height/weight of a product,
+         * or age of a customer. Feature names must be UTF-8 encoded strings. For
+         * example: `{ "lengths_cm": {"value":[2.3, 15.4]}, "heights_cm":
+         * {"value":[8.1, 6.4]} }`
+         *
+         * @param GoogleCloudRecommendationengineV1beta1FeatureMapFloatList[] $numericalFeatures
+         */
+        public function setNumericalFeatures($numericalFeatures)
+        {
+        }
+        /**
+         * @return GoogleCloudRecommendationengineV1beta1FeatureMapFloatList[]
+         */
+        public function getNumericalFeatures()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRecommendationengineV1beta1FeatureMapStringList[]
+     * Runtime class alias of \Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1FeatureMap registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCategoricalFeatures()
-    {
-    }
-    /**
-     * Numerical features. Some examples would be the height/weight of a product,
-     * or age of a customer. Feature names must be UTF-8 encoded strings. For
-     * example: `{ "lengths_cm": {"value":[2.3, 15.4]}, "heights_cm":
-     * {"value":[8.1, 6.4]} }`
-     *
-     * @param GoogleCloudRecommendationengineV1beta1FeatureMapFloatList[] $numericalFeatures
-     */
-    public function setNumericalFeatures($numericalFeatures)
-    {
-    }
-    /**
-     * @return GoogleCloudRecommendationengineV1beta1FeatureMapFloatList[]
-     */
-    public function getNumericalFeatures()
+    class Google_Service_RecommendationsAI_GoogleCloudRecommendationengineV1beta1FeatureMap extends \Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1FeatureMap
     {
     }
 }

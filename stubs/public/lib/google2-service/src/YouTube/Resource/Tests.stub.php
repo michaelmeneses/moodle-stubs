@@ -21,30 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube\Resource;
-
-/**
- * The "tests" collection of methods.
- * Typical usage is:
- *  <code>
- *   $youtubeService = new Google\Service\YouTube(...);
- *   $tests = $youtubeService->tests;
- *  </code>
- */
-class Tests extends \Google\Service\Resource
-{
+namespace Google\Service\YouTube\Resource {
+    use Google\Service\YouTube\TestItem;
     /**
-     * POST method. (tests.insert)
-     *
-     * @param string|array $part
-     * @param TestItem $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string externalChannelId
-     * @return TestItem
-     * @throws \Google\Service\Exception
+     * The "tests" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $youtubeService = new Google\Service\YouTube(...);
+     *   $tests = $youtubeService->tests;
+     *  </code>
      */
-    public function insert($part, TestItem $postBody, $optParams = [])
+    class Tests extends \Google\Service\Resource
+    {
+        /**
+         * POST method. (tests.insert)
+         *
+         * @param string|array $part
+         * @param TestItem $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string externalChannelId
+         * @return TestItem
+         * @throws \Google\Service\Exception
+         */
+        public function insert($part, TestItem $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\YouTube\Resource\Tests registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_YouTube_Resource_Tests extends \Google\Service\YouTube\Resource\Tests
     {
     }
 }

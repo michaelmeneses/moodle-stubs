@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Meet;
-
-class DriveDestination extends \Google\Model
-{
-    /**
-     * Output only. Link used to play back the recording file in the browser. For
-     * example, `https://drive.google.com/file/d/{$fileId}/view`.
-     *
-     * @var string
-     */
-    public $exportUri;
-    /**
-     * Output only. The `fileId` for the underlying MP4 file. For example,
-     * "1kuceFZohVoCh6FulBHxwy6I15Ogpc4hP". Use `$ GET
-     * https://www.googleapis.com/drive/v3/files/{$fileId}?alt=media` to download
-     * the blob. For more information, see
-     * https://developers.google.com/drive/api/v3/reference/files/get.
-     *
-     * @var string
-     */
-    public $file;
-    /**
-     * Output only. Link used to play back the recording file in the browser. For
-     * example, `https://drive.google.com/file/d/{$fileId}/view`.
-     *
-     * @param string $exportUri
-     */
-    public function setExportUri($exportUri)
+namespace Google\Service\Meet {
+    class DriveDestination extends \Google\Model
     {
+        /**
+         * Output only. Link used to play back the recording file in the browser. For
+         * example, `https://drive.google.com/file/d/{$fileId}/view`.
+         *
+         * @var string
+         */
+        public $exportUri;
+        /**
+         * Output only. The `fileId` for the underlying MP4 file. For example,
+         * "1kuceFZohVoCh6FulBHxwy6I15Ogpc4hP". Use `$ GET
+         * https://www.googleapis.com/drive/v3/files/{$fileId}?alt=media` to download
+         * the blob. For more information, see
+         * https://developers.google.com/drive/api/v3/reference/files/get.
+         *
+         * @var string
+         */
+        public $file;
+        /**
+         * Output only. Link used to play back the recording file in the browser. For
+         * example, `https://drive.google.com/file/d/{$fileId}/view`.
+         *
+         * @param string $exportUri
+         */
+        public function setExportUri($exportUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExportUri()
+        {
+        }
+        /**
+         * Output only. The `fileId` for the underlying MP4 file. For example,
+         * "1kuceFZohVoCh6FulBHxwy6I15Ogpc4hP". Use `$ GET
+         * https://www.googleapis.com/drive/v3/files/{$fileId}?alt=media` to download
+         * the blob. For more information, see
+         * https://developers.google.com/drive/api/v3/reference/files/get.
+         *
+         * @param string $file
+         */
+        public function setFile($file)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFile()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Meet\DriveDestination registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExportUri()
-    {
-    }
-    /**
-     * Output only. The `fileId` for the underlying MP4 file. For example,
-     * "1kuceFZohVoCh6FulBHxwy6I15Ogpc4hP". Use `$ GET
-     * https://www.googleapis.com/drive/v3/files/{$fileId}?alt=media` to download
-     * the blob. For more information, see
-     * https://developers.google.com/drive/api/v3/reference/files/get.
-     *
-     * @param string $file
-     */
-    public function setFile($file)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFile()
+    class Google_Service_Meet_DriveDestination extends \Google\Service\Meet\DriveDestination
     {
     }
 }

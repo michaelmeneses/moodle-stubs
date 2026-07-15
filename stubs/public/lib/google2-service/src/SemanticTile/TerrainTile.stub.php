@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SemanticTile;
-
-class TerrainTile extends \Google\Model
-{
-    protected $coordinatesType = TileCoordinates::class;
-    protected $coordinatesDataType = '';
-    protected $firstDerivativeType = FirstDerivativeElevationGrid::class;
-    protected $firstDerivativeDataType = '';
-    public $name;
-    protected $secondDerivativeType = SecondDerivativeElevationGrid::class;
-    protected $secondDerivativeDataType = '';
+namespace Google\Service\SemanticTile {
+    class TerrainTile extends \Google\Model
+    {
+        protected $coordinatesType = TileCoordinates::class;
+        protected $coordinatesDataType = '';
+        protected $firstDerivativeType = FirstDerivativeElevationGrid::class;
+        protected $firstDerivativeDataType = '';
+        public $name;
+        protected $secondDerivativeType = SecondDerivativeElevationGrid::class;
+        protected $secondDerivativeDataType = '';
+        /**
+         * @param TileCoordinates
+         */
+        public function setCoordinates(TileCoordinates $coordinates)
+        {
+        }
+        /**
+         * @return TileCoordinates
+         */
+        public function getCoordinates()
+        {
+        }
+        /**
+         * @param FirstDerivativeElevationGrid
+         */
+        public function setFirstDerivative(FirstDerivativeElevationGrid $firstDerivative)
+        {
+        }
+        /**
+         * @return FirstDerivativeElevationGrid
+         */
+        public function getFirstDerivative()
+        {
+        }
+        public function setName($name)
+        {
+        }
+        public function getName()
+        {
+        }
+        /**
+         * @param SecondDerivativeElevationGrid
+         */
+        public function setSecondDerivative(SecondDerivativeElevationGrid $secondDerivative)
+        {
+        }
+        /**
+         * @return SecondDerivativeElevationGrid
+         */
+        public function getSecondDerivative()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @param TileCoordinates
+     * Runtime class alias of \Google\Service\SemanticTile\TerrainTile registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setCoordinates(TileCoordinates $coordinates)
-    {
-    }
-    /**
-     * @return TileCoordinates
-     */
-    public function getCoordinates()
-    {
-    }
-    /**
-     * @param FirstDerivativeElevationGrid
-     */
-    public function setFirstDerivative(FirstDerivativeElevationGrid $firstDerivative)
-    {
-    }
-    /**
-     * @return FirstDerivativeElevationGrid
-     */
-    public function getFirstDerivative()
-    {
-    }
-    public function setName($name)
-    {
-    }
-    public function getName()
-    {
-    }
-    /**
-     * @param SecondDerivativeElevationGrid
-     */
-    public function setSecondDerivative(SecondDerivativeElevationGrid $secondDerivative)
-    {
-    }
-    /**
-     * @return SecondDerivativeElevationGrid
-     */
-    public function getSecondDerivative()
+    class Google_Service_SemanticTile_TerrainTile extends \Google\Service\SemanticTile\TerrainTile
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PolicySimulator;
-
-class GoogleCloudPolicysimulatorV1ReplayOperationMetadata extends \Google\Model
-{
-    /**
-     * Time when the request was received.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * Time when the request was received.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
+namespace Google\Service\PolicySimulator {
+    class GoogleCloudPolicysimulatorV1ReplayOperationMetadata extends \Google\Model
     {
+        /**
+         * Time when the request was received.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * Time when the request was received.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PolicySimulator\GoogleCloudPolicysimulatorV1ReplayOperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStartTime()
+    class Google_Service_PolicySimulator_GoogleCloudPolicysimulatorV1ReplayOperationMetadata extends \Google\Service\PolicySimulator\GoogleCloudPolicysimulatorV1ReplayOperationMetadata
     {
     }
 }

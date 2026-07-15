@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMMigrationService;
-
-class AwsDiskDetails extends \Google\Model
-{
-    /**
-     * Output only. The ordinal number of the disk.
-     *
-     * @var int
-     */
-    public $diskNumber;
-    /**
-     * Output only. Size in GB.
-     *
-     * @var string
-     */
-    public $sizeGb;
-    /**
-     * Output only. AWS volume ID.
-     *
-     * @var string
-     */
-    public $volumeId;
-    /**
-     * Output only. The ordinal number of the disk.
-     *
-     * @param int $diskNumber
-     */
-    public function setDiskNumber($diskNumber)
+namespace Google\Service\VMMigrationService {
+    class AwsDiskDetails extends \Google\Model
     {
+        /**
+         * Output only. The ordinal number of the disk.
+         *
+         * @var int
+         */
+        public $diskNumber;
+        /**
+         * Output only. Size in GB.
+         *
+         * @var string
+         */
+        public $sizeGb;
+        /**
+         * Output only. AWS volume ID.
+         *
+         * @var string
+         */
+        public $volumeId;
+        /**
+         * Output only. The ordinal number of the disk.
+         *
+         * @param int $diskNumber
+         */
+        public function setDiskNumber($diskNumber)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getDiskNumber()
+        {
+        }
+        /**
+         * Output only. Size in GB.
+         *
+         * @param string $sizeGb
+         */
+        public function setSizeGb($sizeGb)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSizeGb()
+        {
+        }
+        /**
+         * Output only. AWS volume ID.
+         *
+         * @param string $volumeId
+         */
+        public function setVolumeId($volumeId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVolumeId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\VMMigrationService\AwsDiskDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDiskNumber()
-    {
-    }
-    /**
-     * Output only. Size in GB.
-     *
-     * @param string $sizeGb
-     */
-    public function setSizeGb($sizeGb)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSizeGb()
-    {
-    }
-    /**
-     * Output only. AWS volume ID.
-     *
-     * @param string $volumeId
-     */
-    public function setVolumeId($volumeId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVolumeId()
+    class Google_Service_VMMigrationService_AwsDiskDetails extends \Google\Service\VMMigrationService\AwsDiskDetails
     {
     }
 }

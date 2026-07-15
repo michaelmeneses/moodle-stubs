@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAlloyDBAdmin;
-
-class QuantityBasedRetention extends \Google\Model
-{
-    /**
-     * The number of backups to retain.
-     *
-     * @var int
-     */
-    public $count;
-    /**
-     * The number of backups to retain.
-     *
-     * @param int $count
-     */
-    public function setCount($count)
+namespace Google\Service\CloudAlloyDBAdmin {
+    class QuantityBasedRetention extends \Google\Model
     {
+        /**
+         * The number of backups to retain.
+         *
+         * @var int
+         */
+        public $count;
+        /**
+         * The number of backups to retain.
+         *
+         * @param int $count
+         */
+        public function setCount($count)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudAlloyDBAdmin\QuantityBasedRetention registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCount()
+    class Google_Service_CloudAlloyDBAdmin_QuantityBasedRetention extends \Google\Service\CloudAlloyDBAdmin\QuantityBasedRetention
     {
     }
 }

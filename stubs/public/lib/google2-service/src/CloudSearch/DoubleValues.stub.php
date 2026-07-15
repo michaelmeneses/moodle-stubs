@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class DoubleValues extends \Google\Collection
-{
-    protected $collection_key = 'values';
-    public $values;
-    public function setValues($values)
+namespace Google\Service\CloudSearch {
+    class DoubleValues extends \Google\Collection
     {
+        protected $collection_key = 'values';
+        public $values;
+        public function setValues($values)
+        {
+        }
+        public function getValues()
+        {
+        }
     }
-    public function getValues()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudSearch\DoubleValues registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudSearch_DoubleValues extends \Google\Service\CloudSearch\DoubleValues
     {
     }
 }

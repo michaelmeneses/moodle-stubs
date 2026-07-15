@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsData;
-
-class FilterExpressionList extends \Google\Collection
-{
-    protected $collection_key = 'expressions';
-    protected $expressionsType = FilterExpression::class;
-    protected $expressionsDataType = 'array';
-    /**
-     * A list of filter expressions.
-     *
-     * @param FilterExpression[] $expressions
-     */
-    public function setExpressions($expressions)
+namespace Google\Service\AnalyticsData {
+    class FilterExpressionList extends \Google\Collection
     {
+        protected $collection_key = 'expressions';
+        protected $expressionsType = FilterExpression::class;
+        protected $expressionsDataType = 'array';
+        /**
+         * A list of filter expressions.
+         *
+         * @param FilterExpression[] $expressions
+         */
+        public function setExpressions($expressions)
+        {
+        }
+        /**
+         * @return FilterExpression[]
+         */
+        public function getExpressions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FilterExpression[]
+     * Runtime class alias of \Google\Service\AnalyticsData\FilterExpressionList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExpressions()
+    class Google_Service_AnalyticsData_FilterExpressionList extends \Google\Service\AnalyticsData\FilterExpressionList
     {
     }
 }

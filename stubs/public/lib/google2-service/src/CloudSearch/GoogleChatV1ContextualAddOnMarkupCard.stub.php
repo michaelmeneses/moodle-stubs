@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class GoogleChatV1ContextualAddOnMarkupCard extends \Google\Collection
-{
-    protected $collection_key = 'sections';
-    protected $cardActionsType = GoogleChatV1ContextualAddOnMarkupCardCardAction::class;
-    protected $cardActionsDataType = 'array';
-    protected $headerType = GoogleChatV1ContextualAddOnMarkupCardCardHeader::class;
-    protected $headerDataType = '';
-    /**
-     * @var string
-     */
-    public $name;
-    protected $sectionsType = GoogleChatV1ContextualAddOnMarkupCardSection::class;
-    protected $sectionsDataType = 'array';
-    /**
-     * @param GoogleChatV1ContextualAddOnMarkupCardCardAction[]
-     */
-    public function setCardActions($cardActions)
+namespace Google\Service\CloudSearch {
+    class GoogleChatV1ContextualAddOnMarkupCard extends \Google\Collection
     {
+        protected $collection_key = 'sections';
+        protected $cardActionsType = GoogleChatV1ContextualAddOnMarkupCardCardAction::class;
+        protected $cardActionsDataType = 'array';
+        protected $headerType = GoogleChatV1ContextualAddOnMarkupCardCardHeader::class;
+        protected $headerDataType = '';
+        /**
+         * @var string
+         */
+        public $name;
+        protected $sectionsType = GoogleChatV1ContextualAddOnMarkupCardSection::class;
+        protected $sectionsDataType = 'array';
+        /**
+         * @param GoogleChatV1ContextualAddOnMarkupCardCardAction[]
+         */
+        public function setCardActions($cardActions)
+        {
+        }
+        /**
+         * @return GoogleChatV1ContextualAddOnMarkupCardCardAction[]
+         */
+        public function getCardActions()
+        {
+        }
+        /**
+         * @param GoogleChatV1ContextualAddOnMarkupCardCardHeader
+         */
+        public function setHeader(GoogleChatV1ContextualAddOnMarkupCardCardHeader $header)
+        {
+        }
+        /**
+         * @return GoogleChatV1ContextualAddOnMarkupCardCardHeader
+         */
+        public function getHeader()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param GoogleChatV1ContextualAddOnMarkupCardSection[]
+         */
+        public function setSections($sections)
+        {
+        }
+        /**
+         * @return GoogleChatV1ContextualAddOnMarkupCardSection[]
+         */
+        public function getSections()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleChatV1ContextualAddOnMarkupCardCardAction[]
+     * Runtime class alias of \Google\Service\CloudSearch\GoogleChatV1ContextualAddOnMarkupCard registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCardActions()
-    {
-    }
-    /**
-     * @param GoogleChatV1ContextualAddOnMarkupCardCardHeader
-     */
-    public function setHeader(GoogleChatV1ContextualAddOnMarkupCardCardHeader $header)
-    {
-    }
-    /**
-     * @return GoogleChatV1ContextualAddOnMarkupCardCardHeader
-     */
-    public function getHeader()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param GoogleChatV1ContextualAddOnMarkupCardSection[]
-     */
-    public function setSections($sections)
-    {
-    }
-    /**
-     * @return GoogleChatV1ContextualAddOnMarkupCardSection[]
-     */
-    public function getSections()
+    class Google_Service_CloudSearch_GoogleChatV1ContextualAddOnMarkupCard extends \Google\Service\CloudSearch\GoogleChatV1ContextualAddOnMarkupCard
     {
     }
 }

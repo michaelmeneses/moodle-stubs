@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromePolicy;
-
-class GoogleChromePolicyVersionsV1RemoveNetworkResponse extends \Google\Model
-{
+namespace Google\Service\ChromePolicy {
+    class GoogleChromePolicyVersionsV1RemoveNetworkResponse extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1RemoveNetworkResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ChromePolicy_GoogleChromePolicyVersionsV1RemoveNetworkResponse extends \Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1RemoveNetworkResponse
+    {
+    }
 }

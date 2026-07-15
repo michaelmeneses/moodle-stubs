@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Recommender;
-
-class GoogleCloudRecommenderV1MarkRecommendationSucceededRequest extends \Google\Model
-{
-    /**
-     * Required. Fingerprint of the Recommendation. Provides optimistic locking.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * State properties to include with this state. Overwrites any existing
-     * `state_metadata`. Keys must match the regex `/^a-z0-9{0,62}$/`. Values must
-     * match the regex `/^[a-zA-Z0-9_./-]{0,255}$/`.
-     *
-     * @var string[]
-     */
-    public $stateMetadata;
-    /**
-     * Required. Fingerprint of the Recommendation. Provides optimistic locking.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
+namespace Google\Service\Recommender {
+    class GoogleCloudRecommenderV1MarkRecommendationSucceededRequest extends \Google\Model
     {
+        /**
+         * Required. Fingerprint of the Recommendation. Provides optimistic locking.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * State properties to include with this state. Overwrites any existing
+         * `state_metadata`. Keys must match the regex `/^a-z0-9{0,62}$/`. Values must
+         * match the regex `/^[a-zA-Z0-9_./-]{0,255}$/`.
+         *
+         * @var string[]
+         */
+        public $stateMetadata;
+        /**
+         * Required. Fingerprint of the Recommendation. Provides optimistic locking.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * State properties to include with this state. Overwrites any existing
+         * `state_metadata`. Keys must match the regex `/^a-z0-9{0,62}$/`. Values must
+         * match the regex `/^[a-zA-Z0-9_./-]{0,255}$/`.
+         *
+         * @param string[] $stateMetadata
+         */
+        public function setStateMetadata($stateMetadata)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getStateMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Recommender\GoogleCloudRecommenderV1MarkRecommendationSucceededRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
-    {
-    }
-    /**
-     * State properties to include with this state. Overwrites any existing
-     * `state_metadata`. Keys must match the regex `/^a-z0-9{0,62}$/`. Values must
-     * match the regex `/^[a-zA-Z0-9_./-]{0,255}$/`.
-     *
-     * @param string[] $stateMetadata
-     */
-    public function setStateMetadata($stateMetadata)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getStateMetadata()
+    class Google_Service_Recommender_GoogleCloudRecommenderV1MarkRecommendationSucceededRequest extends \Google\Service\Recommender\GoogleCloudRecommenderV1MarkRecommendationSucceededRequest
     {
     }
 }

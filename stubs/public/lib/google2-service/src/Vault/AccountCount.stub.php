@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vault;
-
-class AccountCount extends \Google\Model
-{
-    protected $accountType = UserInfo::class;
-    protected $accountDataType = '';
-    /**
-     * The number of results (messages or files) found for this account.
-     *
-     * @var string
-     */
-    public $count;
-    /**
-     * Account owner.
-     *
-     * @param UserInfo $account
-     */
-    public function setAccount(UserInfo $account)
+namespace Google\Service\Vault {
+    class AccountCount extends \Google\Model
     {
+        protected $accountType = UserInfo::class;
+        protected $accountDataType = '';
+        /**
+         * The number of results (messages or files) found for this account.
+         *
+         * @var string
+         */
+        public $count;
+        /**
+         * Account owner.
+         *
+         * @param UserInfo $account
+         */
+        public function setAccount(UserInfo $account)
+        {
+        }
+        /**
+         * @return UserInfo
+         */
+        public function getAccount()
+        {
+        }
+        /**
+         * The number of results (messages or files) found for this account.
+         *
+         * @param string $count
+         */
+        public function setCount($count)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return UserInfo
+     * Runtime class alias of \Google\Service\Vault\AccountCount registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccount()
-    {
-    }
-    /**
-     * The number of results (messages or files) found for this account.
-     *
-     * @param string $count
-     */
-    public function setCount($count)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCount()
+    class Google_Service_Vault_AccountCount extends \Google\Service\Vault\AccountCount
     {
     }
 }

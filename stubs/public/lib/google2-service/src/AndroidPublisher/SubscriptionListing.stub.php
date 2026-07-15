@@ -21,97 +21,106 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class SubscriptionListing extends \Google\Collection
-{
-    protected $collection_key = 'benefits';
-    /**
-     * A list of benefits shown to the user on platforms such as the Play Store
-     * and in restoration flows in the language of this listing. Plain text.
-     * Ordered list of at most four benefits.
-     *
-     * @var string[]
-     */
-    public $benefits;
-    /**
-     * The description of this subscription in the language of this listing.
-     * Maximum length - 80 characters. Plain text.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Required. The language of this listing, as defined by BCP-47, e.g. "en-US".
-     *
-     * @var string
-     */
-    public $languageCode;
-    /**
-     * Required. The title of this subscription in the language of this listing.
-     * Plain text.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * A list of benefits shown to the user on platforms such as the Play Store
-     * and in restoration flows in the language of this listing. Plain text.
-     * Ordered list of at most four benefits.
-     *
-     * @param string[] $benefits
-     */
-    public function setBenefits($benefits)
+namespace Google\Service\AndroidPublisher {
+    class SubscriptionListing extends \Google\Collection
     {
+        protected $collection_key = 'benefits';
+        /**
+         * A list of benefits shown to the user on platforms such as the Play Store
+         * and in restoration flows in the language of this listing. Plain text.
+         * Ordered list of at most four benefits.
+         *
+         * @var string[]
+         */
+        public $benefits;
+        /**
+         * The description of this subscription in the language of this listing.
+         * Maximum length - 80 characters. Plain text.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Required. The language of this listing, as defined by BCP-47, e.g. "en-US".
+         *
+         * @var string
+         */
+        public $languageCode;
+        /**
+         * Required. The title of this subscription in the language of this listing.
+         * Plain text.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * A list of benefits shown to the user on platforms such as the Play Store
+         * and in restoration flows in the language of this listing. Plain text.
+         * Ordered list of at most four benefits.
+         *
+         * @param string[] $benefits
+         */
+        public function setBenefits($benefits)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getBenefits()
+        {
+        }
+        /**
+         * The description of this subscription in the language of this listing.
+         * Maximum length - 80 characters. Plain text.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Required. The language of this listing, as defined by BCP-47, e.g. "en-US".
+         *
+         * @param string $languageCode
+         */
+        public function setLanguageCode($languageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLanguageCode()
+        {
+        }
+        /**
+         * Required. The title of this subscription in the language of this listing.
+         * Plain text.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\AndroidPublisher\SubscriptionListing registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBenefits()
-    {
-    }
-    /**
-     * The description of this subscription in the language of this listing.
-     * Maximum length - 80 characters. Plain text.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Required. The language of this listing, as defined by BCP-47, e.g. "en-US".
-     *
-     * @param string $languageCode
-     */
-    public function setLanguageCode($languageCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLanguageCode()
-    {
-    }
-    /**
-     * Required. The title of this subscription in the language of this listing.
-     * Plain text.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_AndroidPublisher_SubscriptionListing extends \Google\Service\AndroidPublisher\SubscriptionListing
     {
     }
 }

@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataform;
-
-class Target extends \Google\Model
-{
-    /**
-     * Optional. The action's database (Google Cloud project ID) .
-     *
-     * @var string
-     */
-    public $database;
-    /**
-     * Optional. The action's name, within `database` and `schema`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optional. The action's schema (BigQuery dataset ID), within `database`.
-     *
-     * @var string
-     */
-    public $schema;
-    /**
-     * Optional. The action's database (Google Cloud project ID) .
-     *
-     * @param string $database
-     */
-    public function setDatabase($database)
+namespace Google\Service\Dataform {
+    class Target extends \Google\Model
     {
+        /**
+         * Optional. The action's database (Google Cloud project ID) .
+         *
+         * @var string
+         */
+        public $database;
+        /**
+         * Optional. The action's name, within `database` and `schema`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optional. The action's schema (BigQuery dataset ID), within `database`.
+         *
+         * @var string
+         */
+        public $schema;
+        /**
+         * Optional. The action's database (Google Cloud project ID) .
+         *
+         * @param string $database
+         */
+        public function setDatabase($database)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatabase()
+        {
+        }
+        /**
+         * Optional. The action's name, within `database` and `schema`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. The action's schema (BigQuery dataset ID), within `database`.
+         *
+         * @param string $schema
+         */
+        public function setSchema($schema)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSchema()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataform\Target registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatabase()
-    {
-    }
-    /**
-     * Optional. The action's name, within `database` and `schema`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. The action's schema (BigQuery dataset ID), within `database`.
-     *
-     * @param string $schema
-     */
-    public function setSchema($schema)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSchema()
+    class Google_Service_Dataform_Target extends \Google\Service\Dataform\Target
     {
     }
 }

@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1UpdatePersistentResourceOperationMetadata extends \Google\Model
-{
-    protected $genericMetadataType = GoogleCloudAiplatformV1GenericOperationMetadata::class;
-    protected $genericMetadataDataType = '';
-    /**
-     * Progress Message for Update LRO
-     *
-     * @var string
-     */
-    public $progressMessage;
-    /**
-     * Operation metadata for PersistentResource.
-     *
-     * @param GoogleCloudAiplatformV1GenericOperationMetadata $genericMetadata
-     */
-    public function setGenericMetadata(GoogleCloudAiplatformV1GenericOperationMetadata $genericMetadata)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1UpdatePersistentResourceOperationMetadata extends \Google\Model
     {
+        protected $genericMetadataType = GoogleCloudAiplatformV1GenericOperationMetadata::class;
+        protected $genericMetadataDataType = '';
+        /**
+         * Progress Message for Update LRO
+         *
+         * @var string
+         */
+        public $progressMessage;
+        /**
+         * Operation metadata for PersistentResource.
+         *
+         * @param GoogleCloudAiplatformV1GenericOperationMetadata $genericMetadata
+         */
+        public function setGenericMetadata(GoogleCloudAiplatformV1GenericOperationMetadata $genericMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1GenericOperationMetadata
+         */
+        public function getGenericMetadata()
+        {
+        }
+        /**
+         * Progress Message for Update LRO
+         *
+         * @param string $progressMessage
+         */
+        public function setProgressMessage($progressMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProgressMessage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1GenericOperationMetadata
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1UpdatePersistentResourceOperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGenericMetadata()
-    {
-    }
-    /**
-     * Progress Message for Update LRO
-     *
-     * @param string $progressMessage
-     */
-    public function setProgressMessage($progressMessage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProgressMessage()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1UpdatePersistentResourceOperationMetadata extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1UpdatePersistentResourceOperationMetadata
     {
     }
 }

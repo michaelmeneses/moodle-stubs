@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Pubsub;
-
-class SeekRequest extends \Google\Model
-{
-    /**
-     * Optional. The snapshot to seek to. The snapshot's topic must be the same as
-     * that of the provided subscription. Format is
-     * `projects/{project}/snapshots/{snap}`.
-     *
-     * @var string
-     */
-    public $snapshot;
-    /**
-     * Optional. The time to seek to. Messages retained in the subscription that
-     * were published before this time are marked as acknowledged, and messages
-     * retained in the subscription that were published after this time are marked
-     * as unacknowledged. Note that this operation affects only those messages
-     * retained in the subscription (configured by the combination of
-     * `message_retention_duration` and `retain_acked_messages`). For example, if
-     * `time` corresponds to a point before the message retention window (or to a
-     * point before the system's notion of the subscription creation time), only
-     * retained messages will be marked as unacknowledged, and already-expunged
-     * messages will not be restored.
-     *
-     * @var string
-     */
-    public $time;
-    /**
-     * Optional. The snapshot to seek to. The snapshot's topic must be the same as
-     * that of the provided subscription. Format is
-     * `projects/{project}/snapshots/{snap}`.
-     *
-     * @param string $snapshot
-     */
-    public function setSnapshot($snapshot)
+namespace Google\Service\Pubsub {
+    class SeekRequest extends \Google\Model
     {
+        /**
+         * Optional. The snapshot to seek to. The snapshot's topic must be the same as
+         * that of the provided subscription. Format is
+         * `projects/{project}/snapshots/{snap}`.
+         *
+         * @var string
+         */
+        public $snapshot;
+        /**
+         * Optional. The time to seek to. Messages retained in the subscription that
+         * were published before this time are marked as acknowledged, and messages
+         * retained in the subscription that were published after this time are marked
+         * as unacknowledged. Note that this operation affects only those messages
+         * retained in the subscription (configured by the combination of
+         * `message_retention_duration` and `retain_acked_messages`). For example, if
+         * `time` corresponds to a point before the message retention window (or to a
+         * point before the system's notion of the subscription creation time), only
+         * retained messages will be marked as unacknowledged, and already-expunged
+         * messages will not be restored.
+         *
+         * @var string
+         */
+        public $time;
+        /**
+         * Optional. The snapshot to seek to. The snapshot's topic must be the same as
+         * that of the provided subscription. Format is
+         * `projects/{project}/snapshots/{snap}`.
+         *
+         * @param string $snapshot
+         */
+        public function setSnapshot($snapshot)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSnapshot()
+        {
+        }
+        /**
+         * Optional. The time to seek to. Messages retained in the subscription that
+         * were published before this time are marked as acknowledged, and messages
+         * retained in the subscription that were published after this time are marked
+         * as unacknowledged. Note that this operation affects only those messages
+         * retained in the subscription (configured by the combination of
+         * `message_retention_duration` and `retain_acked_messages`). For example, if
+         * `time` corresponds to a point before the message retention window (or to a
+         * point before the system's notion of the subscription creation time), only
+         * retained messages will be marked as unacknowledged, and already-expunged
+         * messages will not be restored.
+         *
+         * @param string $time
+         */
+        public function setTime($time)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Pubsub\SeekRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSnapshot()
-    {
-    }
-    /**
-     * Optional. The time to seek to. Messages retained in the subscription that
-     * were published before this time are marked as acknowledged, and messages
-     * retained in the subscription that were published after this time are marked
-     * as unacknowledged. Note that this operation affects only those messages
-     * retained in the subscription (configured by the combination of
-     * `message_retention_duration` and `retain_acked_messages`). For example, if
-     * `time` corresponds to a point before the message retention window (or to a
-     * point before the system's notion of the subscription creation time), only
-     * retained messages will be marked as unacknowledged, and already-expunged
-     * messages will not be restored.
-     *
-     * @param string $time
-     */
-    public function setTime($time)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTime()
+    class Google_Service_Pubsub_SeekRequest extends \Google\Service\Pubsub\SeekRequest
     {
     }
 }

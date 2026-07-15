@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigQueryConnectionService;
-
-class ListConnectionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'connections';
-    protected $connectionsType = Connection::class;
-    protected $connectionsDataType = 'array';
-    /**
-     * Next page token.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of connections.
-     *
-     * @param Connection[] $connections
-     */
-    public function setConnections($connections)
+namespace Google\Service\BigQueryConnectionService {
+    class ListConnectionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'connections';
+        protected $connectionsType = Connection::class;
+        protected $connectionsDataType = 'array';
+        /**
+         * Next page token.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of connections.
+         *
+         * @param Connection[] $connections
+         */
+        public function setConnections($connections)
+        {
+        }
+        /**
+         * @return Connection[]
+         */
+        public function getConnections()
+        {
+        }
+        /**
+         * Next page token.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Connection[]
+     * Runtime class alias of \Google\Service\BigQueryConnectionService\ListConnectionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConnections()
-    {
-    }
-    /**
-     * Next page token.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_BigQueryConnectionService_ListConnectionsResponse extends \Google\Service\BigQueryConnectionService\ListConnectionsResponse
     {
     }
 }

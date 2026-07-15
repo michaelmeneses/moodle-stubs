@@ -16,6 +16,7 @@
  */
 namespace Monolog\Processor;
 
+use Monolog\LogRecord;
 /**
  * Adds a tags array into record
  *

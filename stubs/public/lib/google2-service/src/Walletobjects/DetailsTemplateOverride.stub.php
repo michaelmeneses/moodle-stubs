@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class DetailsTemplateOverride extends \Google\Collection
-{
-    protected $collection_key = 'detailsItemInfos';
-    protected $detailsItemInfosType = DetailsItemInfo::class;
-    protected $detailsItemInfosDataType = 'array';
-    /**
-     * Information for the "nth" item displayed in the details list.
-     *
-     * @param DetailsItemInfo[] $detailsItemInfos
-     */
-    public function setDetailsItemInfos($detailsItemInfos)
+namespace Google\Service\Walletobjects {
+    class DetailsTemplateOverride extends \Google\Collection
     {
+        protected $collection_key = 'detailsItemInfos';
+        protected $detailsItemInfosType = DetailsItemInfo::class;
+        protected $detailsItemInfosDataType = 'array';
+        /**
+         * Information for the "nth" item displayed in the details list.
+         *
+         * @param DetailsItemInfo[] $detailsItemInfos
+         */
+        public function setDetailsItemInfos($detailsItemInfos)
+        {
+        }
+        /**
+         * @return DetailsItemInfo[]
+         */
+        public function getDetailsItemInfos()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DetailsItemInfo[]
+     * Runtime class alias of \Google\Service\Walletobjects\DetailsTemplateOverride registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDetailsItemInfos()
+    class Google_Service_Walletobjects_DetailsTemplateOverride extends \Google\Service\Walletobjects\DetailsTemplateOverride
     {
     }
 }

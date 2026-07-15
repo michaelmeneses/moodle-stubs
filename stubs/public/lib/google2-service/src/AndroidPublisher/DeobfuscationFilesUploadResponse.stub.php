@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class DeobfuscationFilesUploadResponse extends \Google\Model
-{
-    protected $deobfuscationFileType = DeobfuscationFile::class;
-    protected $deobfuscationFileDataType = '';
-    /**
-     * The uploaded Deobfuscation File configuration.
-     *
-     * @param DeobfuscationFile $deobfuscationFile
-     */
-    public function setDeobfuscationFile(DeobfuscationFile $deobfuscationFile)
+namespace Google\Service\AndroidPublisher {
+    class DeobfuscationFilesUploadResponse extends \Google\Model
     {
+        protected $deobfuscationFileType = DeobfuscationFile::class;
+        protected $deobfuscationFileDataType = '';
+        /**
+         * The uploaded Deobfuscation File configuration.
+         *
+         * @param DeobfuscationFile $deobfuscationFile
+         */
+        public function setDeobfuscationFile(DeobfuscationFile $deobfuscationFile)
+        {
+        }
+        /**
+         * @return DeobfuscationFile
+         */
+        public function getDeobfuscationFile()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DeobfuscationFile
+     * Runtime class alias of \Google\Service\AndroidPublisher\DeobfuscationFilesUploadResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeobfuscationFile()
+    class Google_Service_AndroidPublisher_DeobfuscationFilesUploadResponse extends \Google\Service\AndroidPublisher\DeobfuscationFilesUploadResponse
     {
     }
 }

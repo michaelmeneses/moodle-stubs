@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PeopleService;
-
-class UserDefined extends \Google\Model
-{
-    /**
-     * The end user specified key of the user defined data.
-     *
-     * @var string
-     */
-    public $key;
-    protected $metadataType = FieldMetadata::class;
-    protected $metadataDataType = '';
-    /**
-     * The end user specified value of the user defined data.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * The end user specified key of the user defined data.
-     *
-     * @param string $key
-     */
-    public function setKey($key)
+namespace Google\Service\PeopleService {
+    class UserDefined extends \Google\Model
     {
+        /**
+         * The end user specified key of the user defined data.
+         *
+         * @var string
+         */
+        public $key;
+        protected $metadataType = FieldMetadata::class;
+        protected $metadataDataType = '';
+        /**
+         * The end user specified value of the user defined data.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * The end user specified key of the user defined data.
+         *
+         * @param string $key
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * Metadata about the user defined data.
+         *
+         * @param FieldMetadata $metadata
+         */
+        public function setMetadata(FieldMetadata $metadata)
+        {
+        }
+        /**
+         * @return FieldMetadata
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * The end user specified value of the user defined data.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PeopleService\UserDefined registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKey()
-    {
-    }
-    /**
-     * Metadata about the user defined data.
-     *
-     * @param FieldMetadata $metadata
-     */
-    public function setMetadata(FieldMetadata $metadata)
-    {
-    }
-    /**
-     * @return FieldMetadata
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * The end user specified value of the user defined data.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_PeopleService_UserDefined extends \Google\Service\PeopleService\UserDefined
     {
     }
 }

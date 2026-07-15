@@ -21,15 +21,24 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PlayableLocations;
-
-class GoogleMapsPlayablelocationsV3SampleAreaFilter extends \Google\Model
-{
-    public $s2CellId;
-    public function setS2CellId($s2CellId)
+namespace Google\Service\PlayableLocations {
+    class GoogleMapsPlayablelocationsV3SampleAreaFilter extends \Google\Model
     {
+        public $s2CellId;
+        public function setS2CellId($s2CellId)
+        {
+        }
+        public function getS2CellId()
+        {
+        }
     }
-    public function getS2CellId()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\PlayableLocations\GoogleMapsPlayablelocationsV3SampleAreaFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_PlayableLocations_GoogleMapsPlayablelocationsV3SampleAreaFilter extends \Google\Service\PlayableLocations\GoogleMapsPlayablelocationsV3SampleAreaFilter
     {
     }
 }

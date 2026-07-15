@@ -21,136 +21,145 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataprocMetastore;
-
-class CloudSQLConnectionConfig extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $hiveDatabaseName;
-    /**
-     * @var string
-     */
-    public $instanceConnectionName;
-    /**
-     * @var string
-     */
-    public $ipAddress;
-    /**
-     * @var string
-     */
-    public $natSubnet;
-    /**
-     * @var string
-     */
-    public $password;
-    /**
-     * @var int
-     */
-    public $port;
-    /**
-     * @var string
-     */
-    public $proxySubnet;
-    /**
-     * @var string
-     */
-    public $username;
-    /**
-     * @param string
-     */
-    public function setHiveDatabaseName($hiveDatabaseName)
+namespace Google\Service\DataprocMetastore {
+    class CloudSQLConnectionConfig extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $hiveDatabaseName;
+        /**
+         * @var string
+         */
+        public $instanceConnectionName;
+        /**
+         * @var string
+         */
+        public $ipAddress;
+        /**
+         * @var string
+         */
+        public $natSubnet;
+        /**
+         * @var string
+         */
+        public $password;
+        /**
+         * @var int
+         */
+        public $port;
+        /**
+         * @var string
+         */
+        public $proxySubnet;
+        /**
+         * @var string
+         */
+        public $username;
+        /**
+         * @param string
+         */
+        public function setHiveDatabaseName($hiveDatabaseName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHiveDatabaseName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setInstanceConnectionName($instanceConnectionName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstanceConnectionName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setIpAddress($ipAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIpAddress()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNatSubnet($natSubnet)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNatSubnet()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPassword($password)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPassword()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setPort($port)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPort()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setProxySubnet($proxySubnet)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProxySubnet()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUsername($username)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUsername()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataprocMetastore\CloudSQLConnectionConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHiveDatabaseName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setInstanceConnectionName($instanceConnectionName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInstanceConnectionName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setIpAddress($ipAddress)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIpAddress()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNatSubnet($natSubnet)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNatSubnet()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPassword($password)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPassword()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setPort($port)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPort()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setProxySubnet($proxySubnet)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProxySubnet()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUsername($username)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUsername()
+    class Google_Service_DataprocMetastore_CloudSQLConnectionConfig extends \Google\Service\DataprocMetastore\CloudSQLConnectionConfig
     {
     }
 }

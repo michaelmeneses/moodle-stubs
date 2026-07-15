@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3BatchRunTestCasesResponse extends \Google\Collection
-{
-    protected $collection_key = 'results';
-    protected $resultsType = GoogleCloudDialogflowCxV3TestCaseResult::class;
-    protected $resultsDataType = 'array';
-    /**
-     * The test case results. The detailed conversation turns are empty in this
-     * response.
-     *
-     * @param GoogleCloudDialogflowCxV3TestCaseResult[] $results
-     */
-    public function setResults($results)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3BatchRunTestCasesResponse extends \Google\Collection
     {
+        protected $collection_key = 'results';
+        protected $resultsType = GoogleCloudDialogflowCxV3TestCaseResult::class;
+        protected $resultsDataType = 'array';
+        /**
+         * The test case results. The detailed conversation turns are empty in this
+         * response.
+         *
+         * @param GoogleCloudDialogflowCxV3TestCaseResult[] $results
+         */
+        public function setResults($results)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3TestCaseResult[]
+         */
+        public function getResults()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowCxV3TestCaseResult[]
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3BatchRunTestCasesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResults()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3BatchRunTestCasesResponse extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3BatchRunTestCasesResponse
     {
     }
 }

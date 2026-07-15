@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class ContaineranalysisGoogleDevtoolsCloudbuildV1ArtifactsNpmPackage extends \Google\Model
-{
-    /**
-     * Optional. Path to the package.json. e.g. workspace/path/to/package Only one
-     * of `archive` or `package_path` can be specified.
-     *
-     * @var string
-     */
-    public $packagePath;
-    /**
-     * Artifact Registry repository, in the form "https://$REGION-
-     * npm.pkg.dev/$PROJECT/$REPOSITORY" Npm package in the workspace specified by
-     * path will be zipped and uploaded to Artifact Registry with this location as
-     * a prefix.
-     *
-     * @var string
-     */
-    public $repository;
-    /**
-     * Optional. Path to the package.json. e.g. workspace/path/to/package Only one
-     * of `archive` or `package_path` can be specified.
-     *
-     * @param string $packagePath
-     */
-    public function setPackagePath($packagePath)
+namespace Google\Service\ContainerAnalysis {
+    class ContaineranalysisGoogleDevtoolsCloudbuildV1ArtifactsNpmPackage extends \Google\Model
     {
+        /**
+         * Optional. Path to the package.json. e.g. workspace/path/to/package Only one
+         * of `archive` or `package_path` can be specified.
+         *
+         * @var string
+         */
+        public $packagePath;
+        /**
+         * Artifact Registry repository, in the form "https://$REGION-
+         * npm.pkg.dev/$PROJECT/$REPOSITORY" Npm package in the workspace specified by
+         * path will be zipped and uploaded to Artifact Registry with this location as
+         * a prefix.
+         *
+         * @var string
+         */
+        public $repository;
+        /**
+         * Optional. Path to the package.json. e.g. workspace/path/to/package Only one
+         * of `archive` or `package_path` can be specified.
+         *
+         * @param string $packagePath
+         */
+        public function setPackagePath($packagePath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPackagePath()
+        {
+        }
+        /**
+         * Artifact Registry repository, in the form "https://$REGION-
+         * npm.pkg.dev/$PROJECT/$REPOSITORY" Npm package in the workspace specified by
+         * path will be zipped and uploaded to Artifact Registry with this location as
+         * a prefix.
+         *
+         * @param string $repository
+         */
+        public function setRepository($repository)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRepository()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ContainerAnalysis\ContaineranalysisGoogleDevtoolsCloudbuildV1ArtifactsNpmPackage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPackagePath()
-    {
-    }
-    /**
-     * Artifact Registry repository, in the form "https://$REGION-
-     * npm.pkg.dev/$PROJECT/$REPOSITORY" Npm package in the workspace specified by
-     * path will be zipped and uploaded to Artifact Registry with this location as
-     * a prefix.
-     *
-     * @param string $repository
-     */
-    public function setRepository($repository)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRepository()
+    class Google_Service_ContainerAnalysis_ContaineranalysisGoogleDevtoolsCloudbuildV1ArtifactsNpmPackage extends \Google\Service\ContainerAnalysis\ContaineranalysisGoogleDevtoolsCloudbuildV1ArtifactsNpmPackage
     {
     }
 }

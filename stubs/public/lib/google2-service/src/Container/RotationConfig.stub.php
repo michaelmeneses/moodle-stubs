@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class RotationConfig extends \Google\Model
-{
-    /**
-     * Whether the rotation is enabled.
-     *
-     * @var bool
-     */
-    public $enabled;
-    /**
-     * The interval between two consecutive rotations. Default rotation interval
-     * is 2 minutes.
-     *
-     * @var string
-     */
-    public $rotationInterval;
-    /**
-     * Whether the rotation is enabled.
-     *
-     * @param bool $enabled
-     */
-    public function setEnabled($enabled)
+namespace Google\Service\Container {
+    class RotationConfig extends \Google\Model
     {
+        /**
+         * Whether the rotation is enabled.
+         *
+         * @var bool
+         */
+        public $enabled;
+        /**
+         * The interval between two consecutive rotations. Default rotation interval
+         * is 2 minutes.
+         *
+         * @var string
+         */
+        public $rotationInterval;
+        /**
+         * Whether the rotation is enabled.
+         *
+         * @param bool $enabled
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
+        /**
+         * The interval between two consecutive rotations. Default rotation interval
+         * is 2 minutes.
+         *
+         * @param string $rotationInterval
+         */
+        public function setRotationInterval($rotationInterval)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRotationInterval()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Container\RotationConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnabled()
-    {
-    }
-    /**
-     * The interval between two consecutive rotations. Default rotation interval
-     * is 2 minutes.
-     *
-     * @param string $rotationInterval
-     */
-    public function setRotationInterval($rotationInterval)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRotationInterval()
+    class Google_Service_Container_RotationConfig extends \Google\Service\Container\RotationConfig
     {
     }
 }

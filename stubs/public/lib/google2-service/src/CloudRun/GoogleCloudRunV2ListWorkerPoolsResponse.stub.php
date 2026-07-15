@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleCloudRunV2ListWorkerPoolsResponse extends \Google\Collection
-{
-    protected $collection_key = 'workerPools';
-    /**
-     * A token indicating there are more items than page_size. Use it in the next
-     * ListWorkerPools request to continue.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $workerPoolsType = GoogleCloudRunV2WorkerPool::class;
-    protected $workerPoolsDataType = 'array';
-    /**
-     * A token indicating there are more items than page_size. Use it in the next
-     * ListWorkerPools request to continue.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\CloudRun {
+    class GoogleCloudRunV2ListWorkerPoolsResponse extends \Google\Collection
     {
+        protected $collection_key = 'workerPools';
+        /**
+         * A token indicating there are more items than page_size. Use it in the next
+         * ListWorkerPools request to continue.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $workerPoolsType = GoogleCloudRunV2WorkerPool::class;
+        protected $workerPoolsDataType = 'array';
+        /**
+         * A token indicating there are more items than page_size. Use it in the next
+         * ListWorkerPools request to continue.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The resulting list of WorkerPools.
+         *
+         * @param GoogleCloudRunV2WorkerPool[] $workerPools
+         */
+        public function setWorkerPools($workerPools)
+        {
+        }
+        /**
+         * @return GoogleCloudRunV2WorkerPool[]
+         */
+        public function getWorkerPools()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRun\GoogleCloudRunV2ListWorkerPoolsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The resulting list of WorkerPools.
-     *
-     * @param GoogleCloudRunV2WorkerPool[] $workerPools
-     */
-    public function setWorkerPools($workerPools)
-    {
-    }
-    /**
-     * @return GoogleCloudRunV2WorkerPool[]
-     */
-    public function getWorkerPools()
+    class Google_Service_CloudRun_GoogleCloudRunV2ListWorkerPoolsResponse extends \Google\Service\CloudRun\GoogleCloudRunV2ListWorkerPoolsResponse
     {
     }
 }

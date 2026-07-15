@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class SubscriptionPurchasesDeferRequest extends \Google\Model
-{
-    protected $deferralInfoType = SubscriptionDeferralInfo::class;
-    protected $deferralInfoDataType = '';
-    /**
-     * The information about the new desired expiry time for the subscription.
-     *
-     * @param SubscriptionDeferralInfo $deferralInfo
-     */
-    public function setDeferralInfo(SubscriptionDeferralInfo $deferralInfo)
+namespace Google\Service\AndroidPublisher {
+    class SubscriptionPurchasesDeferRequest extends \Google\Model
     {
+        protected $deferralInfoType = SubscriptionDeferralInfo::class;
+        protected $deferralInfoDataType = '';
+        /**
+         * The information about the new desired expiry time for the subscription.
+         *
+         * @param SubscriptionDeferralInfo $deferralInfo
+         */
+        public function setDeferralInfo(SubscriptionDeferralInfo $deferralInfo)
+        {
+        }
+        /**
+         * @return SubscriptionDeferralInfo
+         */
+        public function getDeferralInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SubscriptionDeferralInfo
+     * Runtime class alias of \Google\Service\AndroidPublisher\SubscriptionPurchasesDeferRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeferralInfo()
+    class Google_Service_AndroidPublisher_SubscriptionPurchasesDeferRequest extends \Google\Service\AndroidPublisher\SubscriptionPurchasesDeferRequest
     {
     }
 }

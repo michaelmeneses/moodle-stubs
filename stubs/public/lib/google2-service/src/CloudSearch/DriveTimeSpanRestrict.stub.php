@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class DriveTimeSpanRestrict extends \Google\Model
-{
-    public const TYPE_UNSPECIFIED = 'UNSPECIFIED';
-    public const TYPE_TODAY = 'TODAY';
-    public const TYPE_YESTERDAY = 'YESTERDAY';
-    public const TYPE_LAST_7_DAYS = 'LAST_7_DAYS';
-    /**
-     * Not Enabled
-     */
-    public const TYPE_LAST_30_DAYS = 'LAST_30_DAYS';
-    /**
-     * Not Enabled
-     */
-    public const TYPE_LAST_90_DAYS = 'LAST_90_DAYS';
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
+namespace Google\Service\CloudSearch {
+    class DriveTimeSpanRestrict extends \Google\Model
     {
+        public const TYPE_UNSPECIFIED = 'UNSPECIFIED';
+        public const TYPE_TODAY = 'TODAY';
+        public const TYPE_YESTERDAY = 'YESTERDAY';
+        public const TYPE_LAST_7_DAYS = 'LAST_7_DAYS';
+        /**
+         * Not Enabled
+         */
+        public const TYPE_LAST_30_DAYS = 'LAST_30_DAYS';
+        /**
+         * Not Enabled
+         */
+        public const TYPE_LAST_90_DAYS = 'LAST_90_DAYS';
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::TYPE_*
+     * Runtime class alias of \Google\Service\CloudSearch\DriveTimeSpanRestrict registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getType()
+    class Google_Service_CloudSearch_DriveTimeSpanRestrict extends \Google\Service\CloudSearch\DriveTimeSpanRestrict
     {
     }
 }

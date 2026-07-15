@@ -21,43 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SmartDeviceManagement\Resource;
-
-/**
- * The "structures" collection of methods.
- * Typical usage is:
- *  <code>
- *   $smartdevicemanagementService = new Google\Service\SmartDeviceManagement(...);
- *   $structures = $smartdevicemanagementService->enterprises_structures;
- *  </code>
- */
-class EnterprisesStructures extends \Google\Service\Resource
-{
+namespace Google\Service\SmartDeviceManagement\Resource {
+    use Google\Service\SmartDeviceManagement\GoogleHomeEnterpriseSdmV1ListStructuresResponse;
+    use Google\Service\SmartDeviceManagement\GoogleHomeEnterpriseSdmV1Structure;
     /**
-     * Gets a structure managed by the enterprise. (structures.get)
-     *
-     * @param string $name The name of the structure requested. For example:
-     * "enterprises/XYZ/structures/ABC".
-     * @param array $optParams Optional parameters.
-     * @return GoogleHomeEnterpriseSdmV1Structure
-     * @throws \Google\Service\Exception
+     * The "structures" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $smartdevicemanagementService = new Google\Service\SmartDeviceManagement(...);
+     *   $structures = $smartdevicemanagementService->enterprises_structures;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class EnterprisesStructures extends \Google\Service\Resource
     {
+        /**
+         * Gets a structure managed by the enterprise. (structures.get)
+         *
+         * @param string $name The name of the structure requested. For example:
+         * "enterprises/XYZ/structures/ABC".
+         * @param array $optParams Optional parameters.
+         * @return GoogleHomeEnterpriseSdmV1Structure
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists structures managed by the enterprise.
+         * (structures.listEnterprisesStructures)
+         *
+         * @param string $parent The parent enterprise to list structures under. E.g.
+         * "enterprises/XYZ".
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Optional filter to list structures.
+         * @return GoogleHomeEnterpriseSdmV1ListStructuresResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listEnterprisesStructures($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists structures managed by the enterprise.
-     * (structures.listEnterprisesStructures)
-     *
-     * @param string $parent The parent enterprise to list structures under. E.g.
-     * "enterprises/XYZ".
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Optional filter to list structures.
-     * @return GoogleHomeEnterpriseSdmV1ListStructuresResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\SmartDeviceManagement\Resource\EnterprisesStructures registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listEnterprisesStructures($parent, $optParams = [])
+    class Google_Service_SmartDeviceManagement_Resource_EnterprisesStructures extends \Google\Service\SmartDeviceManagement\Resource\EnterprisesStructures
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class DynamicProfileGenerateCodeResponse extends \Google\Model
-{
-    /**
-     * Generated code for the dynamic profile.
-     *
-     * @var string
-     */
-    public $code;
-    /**
-     * Generated code for the dynamic profile.
-     *
-     * @param string $code
-     */
-    public function setCode($code)
+namespace Google\Service\Dfareporting {
+    class DynamicProfileGenerateCodeResponse extends \Google\Model
     {
+        /**
+         * Generated code for the dynamic profile.
+         *
+         * @var string
+         */
+        public $code;
+        /**
+         * Generated code for the dynamic profile.
+         *
+         * @param string $code
+         */
+        public function setCode($code)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\DynamicProfileGenerateCodeResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCode()
+    class Google_Service_Dfareporting_DynamicProfileGenerateCodeResponse extends \Google\Service\Dfareporting\DynamicProfileGenerateCodeResponse
     {
     }
 }

@@ -21,120 +21,129 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class MembershipFeatureState extends \Google\Model
-{
-    protected $appdevexperienceType = AppDevExperienceFeatureState::class;
-    protected $appdevexperienceDataType = '';
-    protected $clusterupgradeType = ClusterUpgradeMembershipState::class;
-    protected $clusterupgradeDataType = '';
-    protected $configmanagementType = ConfigManagementMembershipState::class;
-    protected $configmanagementDataType = '';
-    protected $fleetobservabilityType = FleetObservabilityMembershipState::class;
-    protected $fleetobservabilityDataType = '';
-    protected $identityserviceType = IdentityServiceMembershipState::class;
-    protected $identityserviceDataType = '';
-    protected $policycontrollerType = PolicyControllerMembershipState::class;
-    protected $policycontrollerDataType = '';
-    protected $servicemeshType = ServiceMeshMembershipState::class;
-    protected $servicemeshDataType = '';
-    protected $stateType = FeatureState::class;
-    protected $stateDataType = '';
-    /**
-     * @param AppDevExperienceFeatureState
-     */
-    public function setAppdevexperience(AppDevExperienceFeatureState $appdevexperience)
+namespace Google\Service\GKEHub {
+    class MembershipFeatureState extends \Google\Model
     {
+        protected $appdevexperienceType = AppDevExperienceFeatureState::class;
+        protected $appdevexperienceDataType = '';
+        protected $clusterupgradeType = ClusterUpgradeMembershipState::class;
+        protected $clusterupgradeDataType = '';
+        protected $configmanagementType = ConfigManagementMembershipState::class;
+        protected $configmanagementDataType = '';
+        protected $fleetobservabilityType = FleetObservabilityMembershipState::class;
+        protected $fleetobservabilityDataType = '';
+        protected $identityserviceType = IdentityServiceMembershipState::class;
+        protected $identityserviceDataType = '';
+        protected $policycontrollerType = PolicyControllerMembershipState::class;
+        protected $policycontrollerDataType = '';
+        protected $servicemeshType = ServiceMeshMembershipState::class;
+        protected $servicemeshDataType = '';
+        protected $stateType = FeatureState::class;
+        protected $stateDataType = '';
+        /**
+         * @param AppDevExperienceFeatureState
+         */
+        public function setAppdevexperience(AppDevExperienceFeatureState $appdevexperience)
+        {
+        }
+        /**
+         * @return AppDevExperienceFeatureState
+         */
+        public function getAppdevexperience()
+        {
+        }
+        /**
+         * @param ClusterUpgradeMembershipState
+         */
+        public function setClusterupgrade(ClusterUpgradeMembershipState $clusterupgrade)
+        {
+        }
+        /**
+         * @return ClusterUpgradeMembershipState
+         */
+        public function getClusterupgrade()
+        {
+        }
+        /**
+         * @param ConfigManagementMembershipState
+         */
+        public function setConfigmanagement(ConfigManagementMembershipState $configmanagement)
+        {
+        }
+        /**
+         * @return ConfigManagementMembershipState
+         */
+        public function getConfigmanagement()
+        {
+        }
+        /**
+         * @param FleetObservabilityMembershipState
+         */
+        public function setFleetobservability(FleetObservabilityMembershipState $fleetobservability)
+        {
+        }
+        /**
+         * @return FleetObservabilityMembershipState
+         */
+        public function getFleetobservability()
+        {
+        }
+        /**
+         * @param IdentityServiceMembershipState
+         */
+        public function setIdentityservice(IdentityServiceMembershipState $identityservice)
+        {
+        }
+        /**
+         * @return IdentityServiceMembershipState
+         */
+        public function getIdentityservice()
+        {
+        }
+        /**
+         * @param PolicyControllerMembershipState
+         */
+        public function setPolicycontroller(PolicyControllerMembershipState $policycontroller)
+        {
+        }
+        /**
+         * @return PolicyControllerMembershipState
+         */
+        public function getPolicycontroller()
+        {
+        }
+        /**
+         * @param ServiceMeshMembershipState
+         */
+        public function setServicemesh(ServiceMeshMembershipState $servicemesh)
+        {
+        }
+        /**
+         * @return ServiceMeshMembershipState
+         */
+        public function getServicemesh()
+        {
+        }
+        /**
+         * @param FeatureState
+         */
+        public function setState(FeatureState $state)
+        {
+        }
+        /**
+         * @return FeatureState
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppDevExperienceFeatureState
+     * Runtime class alias of \Google\Service\GKEHub\MembershipFeatureState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAppdevexperience()
-    {
-    }
-    /**
-     * @param ClusterUpgradeMembershipState
-     */
-    public function setClusterupgrade(ClusterUpgradeMembershipState $clusterupgrade)
-    {
-    }
-    /**
-     * @return ClusterUpgradeMembershipState
-     */
-    public function getClusterupgrade()
-    {
-    }
-    /**
-     * @param ConfigManagementMembershipState
-     */
-    public function setConfigmanagement(ConfigManagementMembershipState $configmanagement)
-    {
-    }
-    /**
-     * @return ConfigManagementMembershipState
-     */
-    public function getConfigmanagement()
-    {
-    }
-    /**
-     * @param FleetObservabilityMembershipState
-     */
-    public function setFleetobservability(FleetObservabilityMembershipState $fleetobservability)
-    {
-    }
-    /**
-     * @return FleetObservabilityMembershipState
-     */
-    public function getFleetobservability()
-    {
-    }
-    /**
-     * @param IdentityServiceMembershipState
-     */
-    public function setIdentityservice(IdentityServiceMembershipState $identityservice)
-    {
-    }
-    /**
-     * @return IdentityServiceMembershipState
-     */
-    public function getIdentityservice()
-    {
-    }
-    /**
-     * @param PolicyControllerMembershipState
-     */
-    public function setPolicycontroller(PolicyControllerMembershipState $policycontroller)
-    {
-    }
-    /**
-     * @return PolicyControllerMembershipState
-     */
-    public function getPolicycontroller()
-    {
-    }
-    /**
-     * @param ServiceMeshMembershipState
-     */
-    public function setServicemesh(ServiceMeshMembershipState $servicemesh)
-    {
-    }
-    /**
-     * @return ServiceMeshMembershipState
-     */
-    public function getServicemesh()
-    {
-    }
-    /**
-     * @param FeatureState
-     */
-    public function setState(FeatureState $state)
-    {
-    }
-    /**
-     * @return FeatureState
-     */
-    public function getState()
+    class Google_Service_GKEHub_MembershipFeatureState extends \Google\Service\GKEHub\MembershipFeatureState
     {
     }
 }

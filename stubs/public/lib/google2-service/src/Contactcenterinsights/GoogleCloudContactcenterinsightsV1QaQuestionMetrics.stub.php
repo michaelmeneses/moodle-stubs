@@ -21,21 +21,30 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1QaQuestionMetrics extends \Google\Model
-{
-    /**
-     * Output only. Accuracy of the model. Measures the percentage of correct
-     * answers the model gave on the test set.
-     *
-     * @var 
-     */
-    public $accuracy;
-    public function setAccuracy($accuracy)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1QaQuestionMetrics extends \Google\Model
     {
+        /**
+         * Output only. Accuracy of the model. Measures the percentage of correct
+         * answers the model gave on the test set.
+         *
+         * @var 
+         */
+        public $accuracy;
+        public function setAccuracy($accuracy)
+        {
+        }
+        public function getAccuracy()
+        {
+        }
     }
-    public function getAccuracy()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1QaQuestionMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1QaQuestionMetrics extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1QaQuestionMetrics
     {
     }
 }

@@ -21,96 +21,105 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigLakeService;
-
-class Expr extends \Google\Model
-{
-    /**
-     * Optional. Description of the expression. This is a longer text which
-     * describes the expression, e.g. when hovered over it in a UI.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Textual representation of an expression in Common Expression Language
-     * syntax.
-     *
-     * @var string
-     */
-    public $expression;
-    /**
-     * Optional. String indicating the location of the expression for error
-     * reporting, e.g. a file name and a position in the file.
-     *
-     * @var string
-     */
-    public $location;
-    /**
-     * Optional. Title for the expression, i.e. a short string describing its
-     * purpose. This can be used e.g. in UIs which allow to enter the expression.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * Optional. Description of the expression. This is a longer text which
-     * describes the expression, e.g. when hovered over it in a UI.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\BigLakeService {
+    class Expr extends \Google\Model
     {
+        /**
+         * Optional. Description of the expression. This is a longer text which
+         * describes the expression, e.g. when hovered over it in a UI.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Textual representation of an expression in Common Expression Language
+         * syntax.
+         *
+         * @var string
+         */
+        public $expression;
+        /**
+         * Optional. String indicating the location of the expression for error
+         * reporting, e.g. a file name and a position in the file.
+         *
+         * @var string
+         */
+        public $location;
+        /**
+         * Optional. Title for the expression, i.e. a short string describing its
+         * purpose. This can be used e.g. in UIs which allow to enter the expression.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * Optional. Description of the expression. This is a longer text which
+         * describes the expression, e.g. when hovered over it in a UI.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Textual representation of an expression in Common Expression Language
+         * syntax.
+         *
+         * @param string $expression
+         */
+        public function setExpression($expression)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpression()
+        {
+        }
+        /**
+         * Optional. String indicating the location of the expression for error
+         * reporting, e.g. a file name and a position in the file.
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * Optional. Title for the expression, i.e. a short string describing its
+         * purpose. This can be used e.g. in UIs which allow to enter the expression.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BigLakeService\Expr registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * Textual representation of an expression in Common Expression Language
-     * syntax.
-     *
-     * @param string $expression
-     */
-    public function setExpression($expression)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExpression()
-    {
-    }
-    /**
-     * Optional. String indicating the location of the expression for error
-     * reporting, e.g. a file name and a position in the file.
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocation()
-    {
-    }
-    /**
-     * Optional. Title for the expression, i.e. a short string describing its
-     * purpose. This can be used e.g. in UIs which allow to enter the expression.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_BigLakeService_Expr extends \Google\Service\BigLakeService\Expr
     {
     }
 }

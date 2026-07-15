@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner\Resource;
-
-/**
- * The "ssdCaches" collection of methods.
- * Typical usage is:
- *  <code>
- *   $spannerService = new Google\Service\Spanner(...);
- *   $ssdCaches = $spannerService->projects_instanceConfigs_ssdCaches;
- *  </code>
- */
-class ProjectsInstanceConfigsSsdCaches extends \Google\Service\Resource
-{
+namespace Google\Service\Spanner\Resource {
+    /**
+     * The "ssdCaches" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $spannerService = new Google\Service\Spanner(...);
+     *   $ssdCaches = $spannerService->projects_instanceConfigs_ssdCaches;
+     *  </code>
+     */
+    class ProjectsInstanceConfigsSsdCaches extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Spanner\Resource\ProjectsInstanceConfigsSsdCaches registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Spanner_Resource_ProjectsInstanceConfigsSsdCaches extends \Google\Service\Spanner\Resource\ProjectsInstanceConfigsSsdCaches
+    {
+    }
 }

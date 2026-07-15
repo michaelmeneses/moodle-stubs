@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudContentwarehouseV1RunPipelineMetadataIndividualDocumentStatus extends \Google\Model
-{
-    /**
-     * Document identifier of an existing document.
-     *
-     * @var string
-     */
-    public $documentId;
-    protected $statusType = GoogleRpcStatus::class;
-    protected $statusDataType = '';
-    /**
-     * Document identifier of an existing document.
-     *
-     * @param string $documentId
-     */
-    public function setDocumentId($documentId)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudContentwarehouseV1RunPipelineMetadataIndividualDocumentStatus extends \Google\Model
     {
+        /**
+         * Document identifier of an existing document.
+         *
+         * @var string
+         */
+        public $documentId;
+        protected $statusType = GoogleRpcStatus::class;
+        protected $statusDataType = '';
+        /**
+         * Document identifier of an existing document.
+         *
+         * @param string $documentId
+         */
+        public function setDocumentId($documentId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDocumentId()
+        {
+        }
+        /**
+         * The status processing the document.
+         *
+         * @param GoogleRpcStatus $status
+         */
+        public function setStatus(GoogleRpcStatus $status)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1RunPipelineMetadataIndividualDocumentStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDocumentId()
-    {
-    }
-    /**
-     * The status processing the document.
-     *
-     * @param GoogleRpcStatus $status
-     */
-    public function setStatus(GoogleRpcStatus $status)
-    {
-    }
-    /**
-     * @return GoogleRpcStatus
-     */
-    public function getStatus()
+    class Google_Service_Contentwarehouse_GoogleCloudContentwarehouseV1RunPipelineMetadataIndividualDocumentStatus extends \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1RunPipelineMetadataIndividualDocumentStatus
     {
     }
 }

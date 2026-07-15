@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class FieldViolation extends \Google\Model
-{
-    /**
-     * The description of the error.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Path of field with violation.
-     *
-     * @var string
-     */
-    public $field;
-    /**
-     * The description of the error.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\CloudSearch {
+    class FieldViolation extends \Google\Model
     {
+        /**
+         * The description of the error.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Path of field with violation.
+         *
+         * @var string
+         */
+        public $field;
+        /**
+         * The description of the error.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Path of field with violation.
+         *
+         * @param string $field
+         */
+        public function setField($field)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getField()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\FieldViolation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * Path of field with violation.
-     *
-     * @param string $field
-     */
-    public function setField($field)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getField()
+    class Google_Service_CloudSearch_FieldViolation extends \Google\Service\CloudSearch\FieldViolation
     {
     }
 }

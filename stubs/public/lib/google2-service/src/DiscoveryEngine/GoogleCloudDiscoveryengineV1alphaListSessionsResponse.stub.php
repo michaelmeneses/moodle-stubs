@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaListSessionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'sessions';
-    /**
-     * Pagination token, if not returned indicates the last page.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $sessionsType = GoogleCloudDiscoveryengineV1alphaSession::class;
-    protected $sessionsDataType = 'array';
-    /**
-     * Pagination token, if not returned indicates the last page.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaListSessionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'sessions';
+        /**
+         * Pagination token, if not returned indicates the last page.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $sessionsType = GoogleCloudDiscoveryengineV1alphaSession::class;
+        protected $sessionsDataType = 'array';
+        /**
+         * Pagination token, if not returned indicates the last page.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * All the Sessions for a given data store.
+         *
+         * @param GoogleCloudDiscoveryengineV1alphaSession[] $sessions
+         */
+        public function setSessions($sessions)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1alphaSession[]
+         */
+        public function getSessions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaListSessionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * All the Sessions for a given data store.
-     *
-     * @param GoogleCloudDiscoveryengineV1alphaSession[] $sessions
-     */
-    public function setSessions($sessions)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1alphaSession[]
-     */
-    public function getSessions()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaListSessionsResponse extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaListSessionsResponse
     {
     }
 }

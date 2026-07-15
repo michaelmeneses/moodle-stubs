@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class SlashCommand extends \Google\Model
-{
-    /**
-     * The ID of the slash command.
-     *
-     * @var string
-     */
-    public $commandId;
-    /**
-     * The ID of the slash command.
-     *
-     * @param string $commandId
-     */
-    public function setCommandId($commandId)
+namespace Google\Service\HangoutsChat {
+    class SlashCommand extends \Google\Model
     {
+        /**
+         * The ID of the slash command.
+         *
+         * @var string
+         */
+        public $commandId;
+        /**
+         * The ID of the slash command.
+         *
+         * @param string $commandId
+         */
+        public function setCommandId($commandId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCommandId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\HangoutsChat\SlashCommand registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCommandId()
+    class Google_Service_HangoutsChat_SlashCommand extends \Google\Service\HangoutsChat\SlashCommand
     {
     }
 }

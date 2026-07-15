@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3SecuritySettingsInsightsExportSettings extends \Google\Model
-{
-    /**
-     * If enabled, we will automatically exports conversations to Insights and
-     * Insights runs its analyzers.
-     *
-     * @var bool
-     */
-    public $enableInsightsExport;
-    /**
-     * If enabled, we will automatically exports conversations to Insights and
-     * Insights runs its analyzers.
-     *
-     * @param bool $enableInsightsExport
-     */
-    public function setEnableInsightsExport($enableInsightsExport)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3SecuritySettingsInsightsExportSettings extends \Google\Model
     {
+        /**
+         * If enabled, we will automatically exports conversations to Insights and
+         * Insights runs its analyzers.
+         *
+         * @var bool
+         */
+        public $enableInsightsExport;
+        /**
+         * If enabled, we will automatically exports conversations to Insights and
+         * Insights runs its analyzers.
+         *
+         * @param bool $enableInsightsExport
+         */
+        public function setEnableInsightsExport($enableInsightsExport)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableInsightsExport()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3SecuritySettingsInsightsExportSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnableInsightsExport()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3SecuritySettingsInsightsExportSettings extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3SecuritySettingsInsightsExportSettings
     {
     }
 }

@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudComposer;
-
-class UserWorkloadsSecret extends \Google\Model
-{
-    /**
-     * Optional. The "data" field of Kubernetes Secret, organized in key-value
-     * pairs, which can contain sensitive values such as a password, a token, or a
-     * key. The values for all keys have to be base64-encoded strings. For details
-     * see: https://kubernetes.io/docs/concepts/configuration/secret/ Example: {
-     * "example": "ZXhhbXBsZV92YWx1ZQ==", "another-example":
-     * "YW5vdGhlcl9leGFtcGxlX3ZhbHVl" }
-     *
-     * @var string[]
-     */
-    public $data;
-    /**
-     * Identifier. The resource name of the Secret, in the form: "projects/{projec
-     * tId}/locations/{locationId}/environments/{environmentId}/userWorkloadsSecre
-     * ts/{userWorkloadsSecretId}"
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optional. The "data" field of Kubernetes Secret, organized in key-value
-     * pairs, which can contain sensitive values such as a password, a token, or a
-     * key. The values for all keys have to be base64-encoded strings. For details
-     * see: https://kubernetes.io/docs/concepts/configuration/secret/ Example: {
-     * "example": "ZXhhbXBsZV92YWx1ZQ==", "another-example":
-     * "YW5vdGhlcl9leGFtcGxlX3ZhbHVl" }
-     *
-     * @param string[] $data
-     */
-    public function setData($data)
+namespace Google\Service\CloudComposer {
+    class UserWorkloadsSecret extends \Google\Model
     {
+        /**
+         * Optional. The "data" field of Kubernetes Secret, organized in key-value
+         * pairs, which can contain sensitive values such as a password, a token, or a
+         * key. The values for all keys have to be base64-encoded strings. For details
+         * see: https://kubernetes.io/docs/concepts/configuration/secret/ Example: {
+         * "example": "ZXhhbXBsZV92YWx1ZQ==", "another-example":
+         * "YW5vdGhlcl9leGFtcGxlX3ZhbHVl" }
+         *
+         * @var string[]
+         */
+        public $data;
+        /**
+         * Identifier. The resource name of the Secret, in the form: "projects/{projec
+         * tId}/locations/{locationId}/environments/{environmentId}/userWorkloadsSecre
+         * ts/{userWorkloadsSecretId}"
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optional. The "data" field of Kubernetes Secret, organized in key-value
+         * pairs, which can contain sensitive values such as a password, a token, or a
+         * key. The values for all keys have to be base64-encoded strings. For details
+         * see: https://kubernetes.io/docs/concepts/configuration/secret/ Example: {
+         * "example": "ZXhhbXBsZV92YWx1ZQ==", "another-example":
+         * "YW5vdGhlcl9leGFtcGxlX3ZhbHVl" }
+         *
+         * @param string[] $data
+         */
+        public function setData($data)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getData()
+        {
+        }
+        /**
+         * Identifier. The resource name of the Secret, in the form: "projects/{projec
+         * tId}/locations/{locationId}/environments/{environmentId}/userWorkloadsSecre
+         * ts/{userWorkloadsSecretId}"
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudComposer\UserWorkloadsSecret registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getData()
-    {
-    }
-    /**
-     * Identifier. The resource name of the Secret, in the form: "projects/{projec
-     * tId}/locations/{locationId}/environments/{environmentId}/userWorkloadsSecre
-     * ts/{userWorkloadsSecretId}"
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_CloudComposer_UserWorkloadsSecret extends \Google\Service\CloudComposer\UserWorkloadsSecret
     {
     }
 }

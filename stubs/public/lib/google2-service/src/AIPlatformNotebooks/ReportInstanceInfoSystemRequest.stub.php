@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AIPlatformNotebooks;
-
-class ReportInstanceInfoSystemRequest extends \Google\Model
-{
-    protected $eventType = Event::class;
-    protected $eventDataType = '';
-    /**
-     * Required. The VM hardware token for authenticating the VM.
-     * https://cloud.google.com/compute/docs/instances/verifying-instance-identity
-     *
-     * @var string
-     */
-    public $vmId;
-    /**
-     * Required. The Event to be reported.
-     *
-     * @param Event $event
-     */
-    public function setEvent(Event $event)
+namespace Google\Service\AIPlatformNotebooks {
+    class ReportInstanceInfoSystemRequest extends \Google\Model
     {
+        protected $eventType = Event::class;
+        protected $eventDataType = '';
+        /**
+         * Required. The VM hardware token for authenticating the VM.
+         * https://cloud.google.com/compute/docs/instances/verifying-instance-identity
+         *
+         * @var string
+         */
+        public $vmId;
+        /**
+         * Required. The Event to be reported.
+         *
+         * @param Event $event
+         */
+        public function setEvent(Event $event)
+        {
+        }
+        /**
+         * @return Event
+         */
+        public function getEvent()
+        {
+        }
+        /**
+         * Required. The VM hardware token for authenticating the VM.
+         * https://cloud.google.com/compute/docs/instances/verifying-instance-identity
+         *
+         * @param string $vmId
+         */
+        public function setVmId($vmId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVmId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Event
+     * Runtime class alias of \Google\Service\AIPlatformNotebooks\ReportInstanceInfoSystemRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEvent()
-    {
-    }
-    /**
-     * Required. The VM hardware token for authenticating the VM.
-     * https://cloud.google.com/compute/docs/instances/verifying-instance-identity
-     *
-     * @param string $vmId
-     */
-    public function setVmId($vmId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVmId()
+    class Google_Service_AIPlatformNotebooks_ReportInstanceInfoSystemRequest extends \Google\Service\AIPlatformNotebooks\ReportInstanceInfoSystemRequest
     {
     }
 }

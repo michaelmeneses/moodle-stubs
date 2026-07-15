@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSTrainingObjectivePoint extends \Google\Model
-{
-    /**
-     * The time at which this point was recorded.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * The objective value when this point was recorded.
-     *
-     * @var float
-     */
-    public $value;
-    /**
-     * The time at which this point was recorded.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSTrainingObjectivePoint extends \Google\Model
     {
+        /**
+         * The time at which this point was recorded.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * The objective value when this point was recorded.
+         *
+         * @var float
+         */
+        public $value;
+        /**
+         * The time at which this point was recorded.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * The objective value when this point was recorded.
+         *
+         * @param float $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSTrainingObjectivePoint registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * The objective value when this point was recorded.
-     *
-     * @param float $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getValue()
+    class Google_Service_CloudNaturalLanguage_XPSTrainingObjectivePoint extends \Google\Service\CloudNaturalLanguage\XPSTrainingObjectivePoint
     {
     }
 }

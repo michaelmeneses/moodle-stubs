@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AccessContextManager;
-
-class ReplaceServicePerimetersRequest extends \Google\Collection
-{
-    protected $collection_key = 'servicePerimeters';
-    /**
-     * Optional. The etag for the version of the Access Policy that this replace
-     * operation is to be performed on. If, at the time of replace, the etag for
-     * the Access Policy stored in Access Context Manager is different from the
-     * specified etag, then the replace operation will not be performed and the
-     * call will fail. This field is not required. If etag is not provided, the
-     * operation will be performed as if a valid etag is provided.
-     *
-     * @var string
-     */
-    public $etag;
-    protected $servicePerimetersType = ServicePerimeter::class;
-    protected $servicePerimetersDataType = 'array';
-    /**
-     * Optional. The etag for the version of the Access Policy that this replace
-     * operation is to be performed on. If, at the time of replace, the etag for
-     * the Access Policy stored in Access Context Manager is different from the
-     * specified etag, then the replace operation will not be performed and the
-     * call will fail. This field is not required. If etag is not provided, the
-     * operation will be performed as if a valid etag is provided.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
+namespace Google\Service\AccessContextManager {
+    class ReplaceServicePerimetersRequest extends \Google\Collection
     {
+        protected $collection_key = 'servicePerimeters';
+        /**
+         * Optional. The etag for the version of the Access Policy that this replace
+         * operation is to be performed on. If, at the time of replace, the etag for
+         * the Access Policy stored in Access Context Manager is different from the
+         * specified etag, then the replace operation will not be performed and the
+         * call will fail. This field is not required. If etag is not provided, the
+         * operation will be performed as if a valid etag is provided.
+         *
+         * @var string
+         */
+        public $etag;
+        protected $servicePerimetersType = ServicePerimeter::class;
+        protected $servicePerimetersDataType = 'array';
+        /**
+         * Optional. The etag for the version of the Access Policy that this replace
+         * operation is to be performed on. If, at the time of replace, the etag for
+         * the Access Policy stored in Access Context Manager is different from the
+         * specified etag, then the replace operation will not be performed and the
+         * call will fail. This field is not required. If etag is not provided, the
+         * operation will be performed as if a valid etag is provided.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * Required. The desired Service Perimeters that should replace all existing
+         * Service Perimeters in the Access Policy.
+         *
+         * @param ServicePerimeter[] $servicePerimeters
+         */
+        public function setServicePerimeters($servicePerimeters)
+        {
+        }
+        /**
+         * @return ServicePerimeter[]
+         */
+        public function getServicePerimeters()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AccessContextManager\ReplaceServicePerimetersRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
-    {
-    }
-    /**
-     * Required. The desired Service Perimeters that should replace all existing
-     * Service Perimeters in the Access Policy.
-     *
-     * @param ServicePerimeter[] $servicePerimeters
-     */
-    public function setServicePerimeters($servicePerimeters)
-    {
-    }
-    /**
-     * @return ServicePerimeter[]
-     */
-    public function getServicePerimeters()
+    class Google_Service_AccessContextManager_ReplaceServicePerimetersRequest extends \Google\Service\AccessContextManager\ReplaceServicePerimetersRequest
     {
     }
 }

@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BeyondCorp;
-
-class GoogleCloudBeyondcorpAppconnectionsV1alphaListAppConnectionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $appConnectionsType = GoogleCloudBeyondcorpAppconnectionsV1alphaAppConnection::class;
-    protected $appConnectionsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * @param GoogleCloudBeyondcorpAppconnectionsV1alphaAppConnection[]
-     */
-    public function setAppConnections($appConnections)
+namespace Google\Service\BeyondCorp {
+    class GoogleCloudBeyondcorpAppconnectionsV1alphaListAppConnectionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $appConnectionsType = GoogleCloudBeyondcorpAppconnectionsV1alphaAppConnection::class;
+        protected $appConnectionsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * @param GoogleCloudBeyondcorpAppconnectionsV1alphaAppConnection[]
+         */
+        public function setAppConnections($appConnections)
+        {
+        }
+        /**
+         * @return GoogleCloudBeyondcorpAppconnectionsV1alphaAppConnection[]
+         */
+        public function getAppConnections()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudBeyondcorpAppconnectionsV1alphaAppConnection[]
+     * Runtime class alias of \Google\Service\BeyondCorp\GoogleCloudBeyondcorpAppconnectionsV1alphaListAppConnectionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAppConnections()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_BeyondCorp_GoogleCloudBeyondcorpAppconnectionsV1alphaListAppConnectionsResponse extends \Google\Service\BeyondCorp\GoogleCloudBeyondcorpAppconnectionsV1alphaListAppConnectionsResponse
     {
     }
 }

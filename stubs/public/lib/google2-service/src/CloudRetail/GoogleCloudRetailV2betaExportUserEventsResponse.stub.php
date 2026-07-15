@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2betaExportUserEventsResponse extends \Google\Collection
-{
-    protected $collection_key = 'errorSamples';
-    protected $errorSamplesType = GoogleRpcStatus::class;
-    protected $errorSamplesDataType = 'array';
-    protected $errorsConfigType = GoogleCloudRetailV2betaExportErrorsConfig::class;
-    protected $errorsConfigDataType = '';
-    protected $outputResultType = GoogleCloudRetailV2betaOutputResult::class;
-    protected $outputResultDataType = '';
-    /**
-     * A sample of errors encountered while processing the request.
-     *
-     * @param GoogleRpcStatus[] $errorSamples
-     */
-    public function setErrorSamples($errorSamples)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2betaExportUserEventsResponse extends \Google\Collection
     {
+        protected $collection_key = 'errorSamples';
+        protected $errorSamplesType = GoogleRpcStatus::class;
+        protected $errorSamplesDataType = 'array';
+        protected $errorsConfigType = GoogleCloudRetailV2betaExportErrorsConfig::class;
+        protected $errorsConfigDataType = '';
+        protected $outputResultType = GoogleCloudRetailV2betaOutputResult::class;
+        protected $outputResultDataType = '';
+        /**
+         * A sample of errors encountered while processing the request.
+         *
+         * @param GoogleRpcStatus[] $errorSamples
+         */
+        public function setErrorSamples($errorSamples)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus[]
+         */
+        public function getErrorSamples()
+        {
+        }
+        /**
+         * This field is never set.
+         *
+         * @param GoogleCloudRetailV2betaExportErrorsConfig $errorsConfig
+         */
+        public function setErrorsConfig(GoogleCloudRetailV2betaExportErrorsConfig $errorsConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2betaExportErrorsConfig
+         */
+        public function getErrorsConfig()
+        {
+        }
+        /**
+         * Output result indicating where the data were exported to.
+         *
+         * @param GoogleCloudRetailV2betaOutputResult $outputResult
+         */
+        public function setOutputResult(GoogleCloudRetailV2betaOutputResult $outputResult)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2betaOutputResult
+         */
+        public function getOutputResult()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleRpcStatus[]
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2betaExportUserEventsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrorSamples()
-    {
-    }
-    /**
-     * This field is never set.
-     *
-     * @param GoogleCloudRetailV2betaExportErrorsConfig $errorsConfig
-     */
-    public function setErrorsConfig(GoogleCloudRetailV2betaExportErrorsConfig $errorsConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudRetailV2betaExportErrorsConfig
-     */
-    public function getErrorsConfig()
-    {
-    }
-    /**
-     * Output result indicating where the data were exported to.
-     *
-     * @param GoogleCloudRetailV2betaOutputResult $outputResult
-     */
-    public function setOutputResult(GoogleCloudRetailV2betaOutputResult $outputResult)
-    {
-    }
-    /**
-     * @return GoogleCloudRetailV2betaOutputResult
-     */
-    public function getOutputResult()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2betaExportUserEventsResponse extends \Google\Service\CloudRetail\GoogleCloudRetailV2betaExportUserEventsResponse
     {
     }
 }

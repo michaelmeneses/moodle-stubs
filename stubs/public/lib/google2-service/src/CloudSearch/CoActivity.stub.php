@@ -21,118 +21,127 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class CoActivity extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $activityTitle;
-    /**
-     * @var string
-     */
-    public $addOnId;
-    protected $addOnStartingStateType = AddOnStartingState::class;
-    protected $addOnStartingStateDataType = '';
-    /**
-     * @var string
-     */
-    public $coActivityApp;
-    /**
-     * @var string
-     */
-    public $initiatorDeviceId;
-    /**
-     * @var string
-     */
-    public $presentationDeviceId;
-    /**
-     * @var string
-     */
-    public $projectNumber;
-    /**
-     * @param string
-     */
-    public function setActivityTitle($activityTitle)
+namespace Google\Service\CloudSearch {
+    class CoActivity extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $activityTitle;
+        /**
+         * @var string
+         */
+        public $addOnId;
+        protected $addOnStartingStateType = AddOnStartingState::class;
+        protected $addOnStartingStateDataType = '';
+        /**
+         * @var string
+         */
+        public $coActivityApp;
+        /**
+         * @var string
+         */
+        public $initiatorDeviceId;
+        /**
+         * @var string
+         */
+        public $presentationDeviceId;
+        /**
+         * @var string
+         */
+        public $projectNumber;
+        /**
+         * @param string
+         */
+        public function setActivityTitle($activityTitle)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getActivityTitle()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setAddOnId($addOnId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAddOnId()
+        {
+        }
+        /**
+         * @param AddOnStartingState
+         */
+        public function setAddOnStartingState(AddOnStartingState $addOnStartingState)
+        {
+        }
+        /**
+         * @return AddOnStartingState
+         */
+        public function getAddOnStartingState()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCoActivityApp($coActivityApp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCoActivityApp()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setInitiatorDeviceId($initiatorDeviceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInitiatorDeviceId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPresentationDeviceId($presentationDeviceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPresentationDeviceId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setProjectNumber($projectNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectNumber()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\CoActivity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActivityTitle()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setAddOnId($addOnId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAddOnId()
-    {
-    }
-    /**
-     * @param AddOnStartingState
-     */
-    public function setAddOnStartingState(AddOnStartingState $addOnStartingState)
-    {
-    }
-    /**
-     * @return AddOnStartingState
-     */
-    public function getAddOnStartingState()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCoActivityApp($coActivityApp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCoActivityApp()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setInitiatorDeviceId($initiatorDeviceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInitiatorDeviceId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPresentationDeviceId($presentationDeviceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPresentationDeviceId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setProjectNumber($projectNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProjectNumber()
+    class Google_Service_CloudSearch_CoActivity extends \Google\Service\CloudSearch\CoActivity
     {
     }
 }

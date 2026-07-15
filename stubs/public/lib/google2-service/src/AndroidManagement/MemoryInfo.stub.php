@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class MemoryInfo extends \Google\Model
-{
-    /**
-     * Total internal storage on device in bytes.
-     *
-     * @var string
-     */
-    public $totalInternalStorage;
-    /**
-     * Total RAM on device in bytes.
-     *
-     * @var string
-     */
-    public $totalRam;
-    /**
-     * Total internal storage on device in bytes.
-     *
-     * @param string $totalInternalStorage
-     */
-    public function setTotalInternalStorage($totalInternalStorage)
+namespace Google\Service\AndroidManagement {
+    class MemoryInfo extends \Google\Model
     {
+        /**
+         * Total internal storage on device in bytes.
+         *
+         * @var string
+         */
+        public $totalInternalStorage;
+        /**
+         * Total RAM on device in bytes.
+         *
+         * @var string
+         */
+        public $totalRam;
+        /**
+         * Total internal storage on device in bytes.
+         *
+         * @param string $totalInternalStorage
+         */
+        public function setTotalInternalStorage($totalInternalStorage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalInternalStorage()
+        {
+        }
+        /**
+         * Total RAM on device in bytes.
+         *
+         * @param string $totalRam
+         */
+        public function setTotalRam($totalRam)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalRam()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidManagement\MemoryInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTotalInternalStorage()
-    {
-    }
-    /**
-     * Total RAM on device in bytes.
-     *
-     * @param string $totalRam
-     */
-    public function setTotalRam($totalRam)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalRam()
+    class Google_Service_AndroidManagement_MemoryInfo extends \Google\Service\AndroidManagement\MemoryInfo
     {
     }
 }

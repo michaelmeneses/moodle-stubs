@@ -21,79 +21,88 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class ExternalAction extends \Google\Model
-{
-    /**
-     * Default value. Will never be provided by the API.
-     */
-    public const TYPE_EXTERNAL_ACTION_TYPE_UNSPECIFIED = 'EXTERNAL_ACTION_TYPE_UNSPECIFIED';
-    /**
-     * Redirect to Merchant Center where the merchant can request a review for
-     * issue related to their product.
-     */
-    public const TYPE_REVIEW_PRODUCT_ISSUE_IN_MERCHANT_CENTER = 'REVIEW_PRODUCT_ISSUE_IN_MERCHANT_CENTER';
-    /**
-     * Redirect to Merchant Center where the merchant can request a review for
-     * issue related to their account.
-     */
-    public const TYPE_REVIEW_ACCOUNT_ISSUE_IN_MERCHANT_CENTER = 'REVIEW_ACCOUNT_ISSUE_IN_MERCHANT_CENTER';
-    /**
-     * Redirect to the form in Help Center where the merchant can request a legal
-     * appeal for the issue.
-     */
-    public const TYPE_LEGAL_APPEAL_IN_HELP_CENTER = 'LEGAL_APPEAL_IN_HELP_CENTER';
-    /**
-     * Redirect to Merchant Center where the merchant can perform identity
-     * verification.
-     */
-    public const TYPE_VERIFY_IDENTITY_IN_MERCHANT_CENTER = 'VERIFY_IDENTITY_IN_MERCHANT_CENTER';
-    /**
-     * The type of external action.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * URL to external system, for example Merchant Center, where the merchant can
-     * perform the action.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * The type of external action.
-     *
-     * Accepted values: EXTERNAL_ACTION_TYPE_UNSPECIFIED,
-     * REVIEW_PRODUCT_ISSUE_IN_MERCHANT_CENTER,
-     * REVIEW_ACCOUNT_ISSUE_IN_MERCHANT_CENTER, LEGAL_APPEAL_IN_HELP_CENTER,
-     * VERIFY_IDENTITY_IN_MERCHANT_CENTER
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
+namespace Google\Service\ShoppingContent {
+    class ExternalAction extends \Google\Model
     {
+        /**
+         * Default value. Will never be provided by the API.
+         */
+        public const TYPE_EXTERNAL_ACTION_TYPE_UNSPECIFIED = 'EXTERNAL_ACTION_TYPE_UNSPECIFIED';
+        /**
+         * Redirect to Merchant Center where the merchant can request a review for
+         * issue related to their product.
+         */
+        public const TYPE_REVIEW_PRODUCT_ISSUE_IN_MERCHANT_CENTER = 'REVIEW_PRODUCT_ISSUE_IN_MERCHANT_CENTER';
+        /**
+         * Redirect to Merchant Center where the merchant can request a review for
+         * issue related to their account.
+         */
+        public const TYPE_REVIEW_ACCOUNT_ISSUE_IN_MERCHANT_CENTER = 'REVIEW_ACCOUNT_ISSUE_IN_MERCHANT_CENTER';
+        /**
+         * Redirect to the form in Help Center where the merchant can request a legal
+         * appeal for the issue.
+         */
+        public const TYPE_LEGAL_APPEAL_IN_HELP_CENTER = 'LEGAL_APPEAL_IN_HELP_CENTER';
+        /**
+         * Redirect to Merchant Center where the merchant can perform identity
+         * verification.
+         */
+        public const TYPE_VERIFY_IDENTITY_IN_MERCHANT_CENTER = 'VERIFY_IDENTITY_IN_MERCHANT_CENTER';
+        /**
+         * The type of external action.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * URL to external system, for example Merchant Center, where the merchant can
+         * perform the action.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * The type of external action.
+         *
+         * Accepted values: EXTERNAL_ACTION_TYPE_UNSPECIFIED,
+         * REVIEW_PRODUCT_ISSUE_IN_MERCHANT_CENTER,
+         * REVIEW_ACCOUNT_ISSUE_IN_MERCHANT_CENTER, LEGAL_APPEAL_IN_HELP_CENTER,
+         * VERIFY_IDENTITY_IN_MERCHANT_CENTER
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
+        /**
+         * URL to external system, for example Merchant Center, where the merchant can
+         * perform the action.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::TYPE_*
+     * Runtime class alias of \Google\Service\ShoppingContent\ExternalAction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getType()
-    {
-    }
-    /**
-     * URL to external system, for example Merchant Center, where the merchant can
-     * perform the action.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_ShoppingContent_ExternalAction extends \Google\Service\ShoppingContent\ExternalAction
     {
     }
 }

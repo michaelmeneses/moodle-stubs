@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class Dimension extends \Google\Model
-{
-    /**
-     * The units are unknown.
-     */
-    public const UNIT_UNIT_UNSPECIFIED = 'UNIT_UNSPECIFIED';
-    /**
-     * A point, 1/72 of an inch.
-     */
-    public const UNIT_PT = 'PT';
-    /**
-     * The magnitude.
-     *
-     * @var 
-     */
-    public $magnitude;
-    /**
-     * The units for magnitude.
-     *
-     * @var string
-     */
-    public $unit;
-    public function setMagnitude($magnitude)
+namespace Google\Service\Docs {
+    class Dimension extends \Google\Model
     {
+        /**
+         * The units are unknown.
+         */
+        public const UNIT_UNIT_UNSPECIFIED = 'UNIT_UNSPECIFIED';
+        /**
+         * A point, 1/72 of an inch.
+         */
+        public const UNIT_PT = 'PT';
+        /**
+         * The magnitude.
+         *
+         * @var 
+         */
+        public $magnitude;
+        /**
+         * The units for magnitude.
+         *
+         * @var string
+         */
+        public $unit;
+        public function setMagnitude($magnitude)
+        {
+        }
+        public function getMagnitude()
+        {
+        }
+        /**
+         * The units for magnitude.
+         *
+         * Accepted values: UNIT_UNSPECIFIED, PT
+         *
+         * @param self::UNIT_* $unit
+         */
+        public function setUnit($unit)
+        {
+        }
+        /**
+         * @return self::UNIT_*
+         */
+        public function getUnit()
+        {
+        }
     }
-    public function getMagnitude()
-    {
-    }
+}
+namespace {
     /**
-     * The units for magnitude.
-     *
-     * Accepted values: UNIT_UNSPECIFIED, PT
-     *
-     * @param self::UNIT_* $unit
+     * Runtime class alias of \Google\Service\Docs\Dimension registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setUnit($unit)
-    {
-    }
-    /**
-     * @return self::UNIT_*
-     */
-    public function getUnit()
+    class Google_Service_Docs_Dimension extends \Google\Service\Docs\Dimension
     {
     }
 }

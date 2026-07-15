@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0ErrorsErrorDetails extends \Google\Model
-{
-    protected $quotaErrorDetailsType = GoogleAdsSearchads360V0ErrorsQuotaErrorDetails::class;
-    protected $quotaErrorDetailsDataType = '';
-    /**
-     * The error code that should have been returned, but wasn't. This is used
-     * when the error code is not published in the client specified version.
-     *
-     * @var string
-     */
-    public $unpublishedErrorCode;
-    /**
-     * Details on the quota error, including the scope (account or developer), the
-     * rate bucket name and the retry delay.
-     *
-     * @param GoogleAdsSearchads360V0ErrorsQuotaErrorDetails $quotaErrorDetails
-     */
-    public function setQuotaErrorDetails(GoogleAdsSearchads360V0ErrorsQuotaErrorDetails $quotaErrorDetails)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0ErrorsErrorDetails extends \Google\Model
     {
+        protected $quotaErrorDetailsType = GoogleAdsSearchads360V0ErrorsQuotaErrorDetails::class;
+        protected $quotaErrorDetailsDataType = '';
+        /**
+         * The error code that should have been returned, but wasn't. This is used
+         * when the error code is not published in the client specified version.
+         *
+         * @var string
+         */
+        public $unpublishedErrorCode;
+        /**
+         * Details on the quota error, including the scope (account or developer), the
+         * rate bucket name and the retry delay.
+         *
+         * @param GoogleAdsSearchads360V0ErrorsQuotaErrorDetails $quotaErrorDetails
+         */
+        public function setQuotaErrorDetails(GoogleAdsSearchads360V0ErrorsQuotaErrorDetails $quotaErrorDetails)
+        {
+        }
+        /**
+         * @return GoogleAdsSearchads360V0ErrorsQuotaErrorDetails
+         */
+        public function getQuotaErrorDetails()
+        {
+        }
+        /**
+         * The error code that should have been returned, but wasn't. This is used
+         * when the error code is not published in the client specified version.
+         *
+         * @param string $unpublishedErrorCode
+         */
+        public function setUnpublishedErrorCode($unpublishedErrorCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUnpublishedErrorCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAdsSearchads360V0ErrorsQuotaErrorDetails
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0ErrorsErrorDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getQuotaErrorDetails()
-    {
-    }
-    /**
-     * The error code that should have been returned, but wasn't. This is used
-     * when the error code is not published in the client specified version.
-     *
-     * @param string $unpublishedErrorCode
-     */
-    public function setUnpublishedErrorCode($unpublishedErrorCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUnpublishedErrorCode()
+    class Google_Service_SA360_GoogleAdsSearchads360V0ErrorsErrorDetails extends \Google\Service\SA360\GoogleAdsSearchads360V0ErrorsErrorDetails
     {
     }
 }

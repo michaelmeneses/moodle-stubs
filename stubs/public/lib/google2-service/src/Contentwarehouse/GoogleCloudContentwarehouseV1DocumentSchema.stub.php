@@ -21,151 +21,160 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudContentwarehouseV1DocumentSchema extends \Google\Collection
-{
-    protected $collection_key = 'propertyDefinitions';
-    /**
-     * Output only. The time when the document schema is created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Schema description.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Required. Name of the schema given by the user. Must be unique per project.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Document Type, true refers the document is a folder, otherwise it is a
-     * typical document.
-     *
-     * @var bool
-     */
-    public $documentIsFolder;
-    /**
-     * The resource name of the document schema. Format: projects/{project_number}
-     * /locations/{location}/documentSchemas/{document_schema_id}. The name is
-     * ignored when creating a document schema.
-     *
-     * @var string
-     */
-    public $name;
-    protected $propertyDefinitionsType = GoogleCloudContentwarehouseV1PropertyDefinition::class;
-    protected $propertyDefinitionsDataType = 'array';
-    /**
-     * Output only. The time when the document schema is last updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. The time when the document schema is created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudContentwarehouseV1DocumentSchema extends \Google\Collection
     {
+        protected $collection_key = 'propertyDefinitions';
+        /**
+         * Output only. The time when the document schema is created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Schema description.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Required. Name of the schema given by the user. Must be unique per project.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Document Type, true refers the document is a folder, otherwise it is a
+         * typical document.
+         *
+         * @var bool
+         */
+        public $documentIsFolder;
+        /**
+         * The resource name of the document schema. Format: projects/{project_number}
+         * /locations/{location}/documentSchemas/{document_schema_id}. The name is
+         * ignored when creating a document schema.
+         *
+         * @var string
+         */
+        public $name;
+        protected $propertyDefinitionsType = GoogleCloudContentwarehouseV1PropertyDefinition::class;
+        protected $propertyDefinitionsDataType = 'array';
+        /**
+         * Output only. The time when the document schema is last updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. The time when the document schema is created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Schema description.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Required. Name of the schema given by the user. Must be unique per project.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Document Type, true refers the document is a folder, otherwise it is a
+         * typical document.
+         *
+         * @param bool $documentIsFolder
+         */
+        public function setDocumentIsFolder($documentIsFolder)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDocumentIsFolder()
+        {
+        }
+        /**
+         * The resource name of the document schema. Format: projects/{project_number}
+         * /locations/{location}/documentSchemas/{document_schema_id}. The name is
+         * ignored when creating a document schema.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Document details.
+         *
+         * @param GoogleCloudContentwarehouseV1PropertyDefinition[] $propertyDefinitions
+         */
+        public function setPropertyDefinitions($propertyDefinitions)
+        {
+        }
+        /**
+         * @return GoogleCloudContentwarehouseV1PropertyDefinition[]
+         */
+        public function getPropertyDefinitions()
+        {
+        }
+        /**
+         * Output only. The time when the document schema is last updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1DocumentSchema registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Schema description.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Required. Name of the schema given by the user. Must be unique per project.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Document Type, true refers the document is a folder, otherwise it is a
-     * typical document.
-     *
-     * @param bool $documentIsFolder
-     */
-    public function setDocumentIsFolder($documentIsFolder)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDocumentIsFolder()
-    {
-    }
-    /**
-     * The resource name of the document schema. Format: projects/{project_number}
-     * /locations/{location}/documentSchemas/{document_schema_id}. The name is
-     * ignored when creating a document schema.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Document details.
-     *
-     * @param GoogleCloudContentwarehouseV1PropertyDefinition[] $propertyDefinitions
-     */
-    public function setPropertyDefinitions($propertyDefinitions)
-    {
-    }
-    /**
-     * @return GoogleCloudContentwarehouseV1PropertyDefinition[]
-     */
-    public function getPropertyDefinitions()
-    {
-    }
-    /**
-     * Output only. The time when the document schema is last updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_Contentwarehouse_GoogleCloudContentwarehouseV1DocumentSchema extends \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1DocumentSchema
     {
     }
 }

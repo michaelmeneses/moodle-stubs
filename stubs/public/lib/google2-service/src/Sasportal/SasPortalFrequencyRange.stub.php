@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sasportal;
-
-class SasPortalFrequencyRange extends \Google\Model
-{
+namespace Google\Service\Sasportal {
+    class SasPortalFrequencyRange extends \Google\Model
+    {
+        /**
+         * The highest frequency of the frequency range in MHz.
+         *
+         * @var 
+         */
+        public $highFrequencyMhz;
+        /**
+         * The lowest frequency of the frequency range in MHz.
+         *
+         * @var 
+         */
+        public $lowFrequencyMhz;
+        public function setHighFrequencyMhz($highFrequencyMhz)
+        {
+        }
+        public function getHighFrequencyMhz()
+        {
+        }
+        public function setLowFrequencyMhz($lowFrequencyMhz)
+        {
+        }
+        public function getLowFrequencyMhz()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * The highest frequency of the frequency range in MHz.
-     *
-     * @var 
+     * Runtime class alias of \Google\Service\Sasportal\SasPortalFrequencyRange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public $highFrequencyMhz;
-    /**
-     * The lowest frequency of the frequency range in MHz.
-     *
-     * @var 
-     */
-    public $lowFrequencyMhz;
-    public function setHighFrequencyMhz($highFrequencyMhz)
-    {
-    }
-    public function getHighFrequencyMhz()
-    {
-    }
-    public function setLowFrequencyMhz($lowFrequencyMhz)
-    {
-    }
-    public function getLowFrequencyMhz()
+    class Google_Service_Sasportal_SasPortalFrequencyRange extends \Google\Service\Sasportal\SasPortalFrequencyRange
     {
     }
 }

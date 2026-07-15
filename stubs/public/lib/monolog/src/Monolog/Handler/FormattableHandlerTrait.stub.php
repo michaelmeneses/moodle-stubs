@@ -16,6 +16,8 @@
  */
 namespace Monolog\Handler;
 
+use Monolog\Formatter\FormatterInterface;
+use Monolog\Formatter\LineFormatter;
 /**
  * Helper trait for implementing FormattableInterface
  *

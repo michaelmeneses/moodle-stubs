@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CCAIPlatform;
-
-class SamlConfig extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $cert;
-    /**
-     * @var string
-     */
-    public $emailMapping;
-    /**
-     * @var string
-     */
-    public $entityId;
-    /**
-     * @var string
-     */
-    public $loginUri;
-    /**
-     * @param string
-     */
-    public function setCert($cert)
+namespace Google\Service\CCAIPlatform {
+    class SamlConfig extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $cert;
+        /**
+         * @var string
+         */
+        public $emailMapping;
+        /**
+         * @var string
+         */
+        public $entityId;
+        /**
+         * @var string
+         */
+        public $loginUri;
+        /**
+         * @param string
+         */
+        public function setCert($cert)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCert()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEmailMapping($emailMapping)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmailMapping()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEntityId($entityId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEntityId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLoginUri($loginUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLoginUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CCAIPlatform\SamlConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCert()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEmailMapping($emailMapping)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEmailMapping()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEntityId($entityId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEntityId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLoginUri($loginUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLoginUri()
+    class Google_Service_CCAIPlatform_SamlConfig extends \Google\Service\CCAIPlatform\SamlConfig
     {
     }
 }

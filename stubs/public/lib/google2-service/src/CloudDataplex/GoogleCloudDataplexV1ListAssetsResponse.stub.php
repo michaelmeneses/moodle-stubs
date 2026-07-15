@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1ListAssetsResponse extends \Google\Collection
-{
-    protected $collection_key = 'assets';
-    protected $assetsType = GoogleCloudDataplexV1Asset::class;
-    protected $assetsDataType = 'array';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Asset under the given parent zone.
-     *
-     * @param GoogleCloudDataplexV1Asset[] $assets
-     */
-    public function setAssets($assets)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1ListAssetsResponse extends \Google\Collection
     {
+        protected $collection_key = 'assets';
+        protected $assetsType = GoogleCloudDataplexV1Asset::class;
+        protected $assetsDataType = 'array';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Asset under the given parent zone.
+         *
+         * @param GoogleCloudDataplexV1Asset[] $assets
+         */
+        public function setAssets($assets)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1Asset[]
+         */
+        public function getAssets()
+        {
+        }
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDataplexV1Asset[]
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1ListAssetsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssets()
-    {
-    }
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1ListAssetsResponse extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1ListAssetsResponse
     {
     }
 }

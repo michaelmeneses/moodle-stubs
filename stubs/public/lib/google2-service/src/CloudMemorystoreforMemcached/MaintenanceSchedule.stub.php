@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudMemorystoreforMemcached;
-
-class MaintenanceSchedule extends \Google\Model
-{
-    /**
-     * Output only. The end time of any upcoming scheduled maintenance for this
-     * instance.
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * Output only. The deadline that the maintenance schedule start time can not
-     * go beyond, including reschedule.
-     *
-     * @var string
-     */
-    public $scheduleDeadlineTime;
-    /**
-     * Output only. The start time of any upcoming scheduled maintenance for this
-     * instance.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * Output only. The end time of any upcoming scheduled maintenance for this
-     * instance.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
+namespace Google\Service\CloudMemorystoreforMemcached {
+    class MaintenanceSchedule extends \Google\Model
     {
+        /**
+         * Output only. The end time of any upcoming scheduled maintenance for this
+         * instance.
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * Output only. The deadline that the maintenance schedule start time can not
+         * go beyond, including reschedule.
+         *
+         * @var string
+         */
+        public $scheduleDeadlineTime;
+        /**
+         * Output only. The start time of any upcoming scheduled maintenance for this
+         * instance.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * Output only. The end time of any upcoming scheduled maintenance for this
+         * instance.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * Output only. The deadline that the maintenance schedule start time can not
+         * go beyond, including reschedule.
+         *
+         * @param string $scheduleDeadlineTime
+         */
+        public function setScheduleDeadlineTime($scheduleDeadlineTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScheduleDeadlineTime()
+        {
+        }
+        /**
+         * Output only. The start time of any upcoming scheduled maintenance for this
+         * instance.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudMemorystoreforMemcached\MaintenanceSchedule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndTime()
-    {
-    }
-    /**
-     * Output only. The deadline that the maintenance schedule start time can not
-     * go beyond, including reschedule.
-     *
-     * @param string $scheduleDeadlineTime
-     */
-    public function setScheduleDeadlineTime($scheduleDeadlineTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getScheduleDeadlineTime()
-    {
-    }
-    /**
-     * Output only. The start time of any upcoming scheduled maintenance for this
-     * instance.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
+    class Google_Service_CloudMemorystoreforMemcached_MaintenanceSchedule extends \Google\Service\CloudMemorystoreforMemcached\MaintenanceSchedule
     {
     }
 }

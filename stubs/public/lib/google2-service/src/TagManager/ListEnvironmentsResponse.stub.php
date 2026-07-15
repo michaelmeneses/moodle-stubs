@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager;
-
-class ListEnvironmentsResponse extends \Google\Collection
-{
-    protected $collection_key = 'environment';
-    protected $environmentType = Environment::class;
-    protected $environmentDataType = 'array';
-    /**
-     * Continuation token for fetching the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * All Environments of a GTM Container.
-     *
-     * @param Environment[] $environment
-     */
-    public function setEnvironment($environment)
+namespace Google\Service\TagManager {
+    class ListEnvironmentsResponse extends \Google\Collection
     {
+        protected $collection_key = 'environment';
+        protected $environmentType = Environment::class;
+        protected $environmentDataType = 'array';
+        /**
+         * Continuation token for fetching the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * All Environments of a GTM Container.
+         *
+         * @param Environment[] $environment
+         */
+        public function setEnvironment($environment)
+        {
+        }
+        /**
+         * @return Environment[]
+         */
+        public function getEnvironment()
+        {
+        }
+        /**
+         * Continuation token for fetching the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Environment[]
+     * Runtime class alias of \Google\Service\TagManager\ListEnvironmentsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnvironment()
-    {
-    }
-    /**
-     * Continuation token for fetching the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_TagManager_ListEnvironmentsResponse extends \Google\Service\TagManager\ListEnvironmentsResponse
     {
     }
 }

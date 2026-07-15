@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class AssetSliceSet extends \Google\Collection
-{
-    protected $collection_key = 'apkDescription';
-    protected $apkDescriptionType = ApkDescription::class;
-    protected $apkDescriptionDataType = 'array';
-    protected $assetModuleMetadataType = AssetModuleMetadata::class;
-    protected $assetModuleMetadataDataType = '';
-    /**
-     * Asset slices.
-     *
-     * @param ApkDescription[] $apkDescription
-     */
-    public function setApkDescription($apkDescription)
+namespace Google\Service\AndroidPublisher {
+    class AssetSliceSet extends \Google\Collection
     {
+        protected $collection_key = 'apkDescription';
+        protected $apkDescriptionType = ApkDescription::class;
+        protected $apkDescriptionDataType = 'array';
+        protected $assetModuleMetadataType = AssetModuleMetadata::class;
+        protected $assetModuleMetadataDataType = '';
+        /**
+         * Asset slices.
+         *
+         * @param ApkDescription[] $apkDescription
+         */
+        public function setApkDescription($apkDescription)
+        {
+        }
+        /**
+         * @return ApkDescription[]
+         */
+        public function getApkDescription()
+        {
+        }
+        /**
+         * Module level metadata.
+         *
+         * @param AssetModuleMetadata $assetModuleMetadata
+         */
+        public function setAssetModuleMetadata(AssetModuleMetadata $assetModuleMetadata)
+        {
+        }
+        /**
+         * @return AssetModuleMetadata
+         */
+        public function getAssetModuleMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ApkDescription[]
+     * Runtime class alias of \Google\Service\AndroidPublisher\AssetSliceSet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApkDescription()
-    {
-    }
-    /**
-     * Module level metadata.
-     *
-     * @param AssetModuleMetadata $assetModuleMetadata
-     */
-    public function setAssetModuleMetadata(AssetModuleMetadata $assetModuleMetadata)
-    {
-    }
-    /**
-     * @return AssetModuleMetadata
-     */
-    public function getAssetModuleMetadata()
+    class Google_Service_AndroidPublisher_AssetSliceSet extends \Google\Service\AndroidPublisher\AssetSliceSet
     {
     }
 }

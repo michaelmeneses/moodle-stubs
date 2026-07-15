@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1PairwiseSummarizationQualityInput extends \Google\Model
-{
-    protected $instanceType = GoogleCloudAiplatformV1PairwiseSummarizationQualityInstance::class;
-    protected $instanceDataType = '';
-    protected $metricSpecType = GoogleCloudAiplatformV1PairwiseSummarizationQualitySpec::class;
-    protected $metricSpecDataType = '';
-    /**
-     * Required. Pairwise summarization quality instance.
-     *
-     * @param GoogleCloudAiplatformV1PairwiseSummarizationQualityInstance $instance
-     */
-    public function setInstance(GoogleCloudAiplatformV1PairwiseSummarizationQualityInstance $instance)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1PairwiseSummarizationQualityInput extends \Google\Model
     {
+        protected $instanceType = GoogleCloudAiplatformV1PairwiseSummarizationQualityInstance::class;
+        protected $instanceDataType = '';
+        protected $metricSpecType = GoogleCloudAiplatformV1PairwiseSummarizationQualitySpec::class;
+        protected $metricSpecDataType = '';
+        /**
+         * Required. Pairwise summarization quality instance.
+         *
+         * @param GoogleCloudAiplatformV1PairwiseSummarizationQualityInstance $instance
+         */
+        public function setInstance(GoogleCloudAiplatformV1PairwiseSummarizationQualityInstance $instance)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1PairwiseSummarizationQualityInstance
+         */
+        public function getInstance()
+        {
+        }
+        /**
+         * Required. Spec for pairwise summarization quality score metric.
+         *
+         * @param GoogleCloudAiplatformV1PairwiseSummarizationQualitySpec $metricSpec
+         */
+        public function setMetricSpec(GoogleCloudAiplatformV1PairwiseSummarizationQualitySpec $metricSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1PairwiseSummarizationQualitySpec
+         */
+        public function getMetricSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1PairwiseSummarizationQualityInstance
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1PairwiseSummarizationQualityInput registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstance()
-    {
-    }
-    /**
-     * Required. Spec for pairwise summarization quality score metric.
-     *
-     * @param GoogleCloudAiplatformV1PairwiseSummarizationQualitySpec $metricSpec
-     */
-    public function setMetricSpec(GoogleCloudAiplatformV1PairwiseSummarizationQualitySpec $metricSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1PairwiseSummarizationQualitySpec
-     */
-    public function getMetricSpec()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1PairwiseSummarizationQualityInput extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1PairwiseSummarizationQualityInput
     {
     }
 }

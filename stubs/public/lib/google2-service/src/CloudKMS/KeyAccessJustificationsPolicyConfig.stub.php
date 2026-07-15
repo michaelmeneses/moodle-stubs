@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudKMS;
-
-class KeyAccessJustificationsPolicyConfig extends \Google\Model
-{
-    protected $defaultKeyAccessJustificationPolicyType = KeyAccessJustificationsPolicy::class;
-    protected $defaultKeyAccessJustificationPolicyDataType = '';
-    /**
-     * Identifier. The resource name for this KeyAccessJustificationsPolicyConfig
-     * in the format of "{organizations|folders|projects}/kajPolicyConfig".
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optional. The default key access justification policy used when a CryptoKey
-     * is created in this folder. This is only used when a Key Access
-     * Justifications policy is not provided in the CreateCryptoKeyRequest. This
-     * overrides any default policies in its ancestry.
-     *
-     * @param KeyAccessJustificationsPolicy $defaultKeyAccessJustificationPolicy
-     */
-    public function setDefaultKeyAccessJustificationPolicy(KeyAccessJustificationsPolicy $defaultKeyAccessJustificationPolicy)
+namespace Google\Service\CloudKMS {
+    class KeyAccessJustificationsPolicyConfig extends \Google\Model
     {
+        protected $defaultKeyAccessJustificationPolicyType = KeyAccessJustificationsPolicy::class;
+        protected $defaultKeyAccessJustificationPolicyDataType = '';
+        /**
+         * Identifier. The resource name for this KeyAccessJustificationsPolicyConfig
+         * in the format of "{organizations|folders|projects}/kajPolicyConfig".
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optional. The default key access justification policy used when a CryptoKey
+         * is created in this folder. This is only used when a Key Access
+         * Justifications policy is not provided in the CreateCryptoKeyRequest. This
+         * overrides any default policies in its ancestry.
+         *
+         * @param KeyAccessJustificationsPolicy $defaultKeyAccessJustificationPolicy
+         */
+        public function setDefaultKeyAccessJustificationPolicy(KeyAccessJustificationsPolicy $defaultKeyAccessJustificationPolicy)
+        {
+        }
+        /**
+         * @return KeyAccessJustificationsPolicy
+         */
+        public function getDefaultKeyAccessJustificationPolicy()
+        {
+        }
+        /**
+         * Identifier. The resource name for this KeyAccessJustificationsPolicyConfig
+         * in the format of "{organizations|folders|projects}/kajPolicyConfig".
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return KeyAccessJustificationsPolicy
+     * Runtime class alias of \Google\Service\CloudKMS\KeyAccessJustificationsPolicyConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDefaultKeyAccessJustificationPolicy()
-    {
-    }
-    /**
-     * Identifier. The resource name for this KeyAccessJustificationsPolicyConfig
-     * in the format of "{organizations|folders|projects}/kajPolicyConfig".
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_CloudKMS_KeyAccessJustificationsPolicyConfig extends \Google\Service\CloudKMS\KeyAccessJustificationsPolicyConfig
     {
     }
 }

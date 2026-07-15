@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyerII;
-
-class DealServingMetadata extends \Google\Model
-{
-    protected $dealPauseStatusType = DealPauseStatus::class;
-    protected $dealPauseStatusDataType = '';
-    /**
-     * Output only. Tracks which parties (if any) have paused a deal.
-     *
-     * @param DealPauseStatus $dealPauseStatus
-     */
-    public function setDealPauseStatus(DealPauseStatus $dealPauseStatus)
+namespace Google\Service\AdExchangeBuyerII {
+    class DealServingMetadata extends \Google\Model
     {
+        protected $dealPauseStatusType = DealPauseStatus::class;
+        protected $dealPauseStatusDataType = '';
+        /**
+         * Output only. Tracks which parties (if any) have paused a deal.
+         *
+         * @param DealPauseStatus $dealPauseStatus
+         */
+        public function setDealPauseStatus(DealPauseStatus $dealPauseStatus)
+        {
+        }
+        /**
+         * @return DealPauseStatus
+         */
+        public function getDealPauseStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DealPauseStatus
+     * Runtime class alias of \Google\Service\AdExchangeBuyerII\DealServingMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDealPauseStatus()
+    class Google_Service_AdExchangeBuyerII_DealServingMetadata extends \Google\Service\AdExchangeBuyerII\DealServingMetadata
     {
     }
 }

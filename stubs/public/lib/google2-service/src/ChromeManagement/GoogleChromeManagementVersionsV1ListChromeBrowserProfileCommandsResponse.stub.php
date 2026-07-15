@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementVersionsV1ListChromeBrowserProfileCommandsResponse extends \Google\Collection
-{
-    protected $collection_key = 'chromeBrowserProfileCommands';
-    protected $chromeBrowserProfileCommandsType = GoogleChromeManagementVersionsV1ChromeBrowserProfileCommand::class;
-    protected $chromeBrowserProfileCommandsDataType = 'array';
-    /**
-     * The pagination token that can be used to list the next page.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Total size represents an estimated number of resources returned.
-     *
-     * @var string
-     */
-    public $totalSize;
-    /**
-     * The list of commands returned.
-     *
-     * @param GoogleChromeManagementVersionsV1ChromeBrowserProfileCommand[] $chromeBrowserProfileCommands
-     */
-    public function setChromeBrowserProfileCommands($chromeBrowserProfileCommands)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementVersionsV1ListChromeBrowserProfileCommandsResponse extends \Google\Collection
     {
+        protected $collection_key = 'chromeBrowserProfileCommands';
+        protected $chromeBrowserProfileCommandsType = GoogleChromeManagementVersionsV1ChromeBrowserProfileCommand::class;
+        protected $chromeBrowserProfileCommandsDataType = 'array';
+        /**
+         * The pagination token that can be used to list the next page.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Total size represents an estimated number of resources returned.
+         *
+         * @var string
+         */
+        public $totalSize;
+        /**
+         * The list of commands returned.
+         *
+         * @param GoogleChromeManagementVersionsV1ChromeBrowserProfileCommand[] $chromeBrowserProfileCommands
+         */
+        public function setChromeBrowserProfileCommands($chromeBrowserProfileCommands)
+        {
+        }
+        /**
+         * @return GoogleChromeManagementVersionsV1ChromeBrowserProfileCommand[]
+         */
+        public function getChromeBrowserProfileCommands()
+        {
+        }
+        /**
+         * The pagination token that can be used to list the next page.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Total size represents an estimated number of resources returned.
+         *
+         * @param string $totalSize
+         */
+        public function setTotalSize($totalSize)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalSize()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleChromeManagementVersionsV1ChromeBrowserProfileCommand[]
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1ListChromeBrowserProfileCommandsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChromeBrowserProfileCommands()
-    {
-    }
-    /**
-     * The pagination token that can be used to list the next page.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Total size represents an estimated number of resources returned.
-     *
-     * @param string $totalSize
-     */
-    public function setTotalSize($totalSize)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalSize()
+    class Google_Service_ChromeManagement_GoogleChromeManagementVersionsV1ListChromeBrowserProfileCommandsResponse extends \Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1ListChromeBrowserProfileCommandsResponse
     {
     }
 }

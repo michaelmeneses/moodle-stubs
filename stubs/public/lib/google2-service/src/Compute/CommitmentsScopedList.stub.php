@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class CommitmentsScopedList extends \Google\Collection
-{
-    protected $collection_key = 'commitments';
-    protected $commitmentsType = Commitment::class;
-    protected $commitmentsDataType = 'array';
-    protected $warningType = CommitmentsScopedListWarning::class;
-    protected $warningDataType = '';
-    /**
-     * [Output Only] The list of commitments contained in this scope.
-     *
-     * @param Commitment[] $commitments
-     */
-    public function setCommitments($commitments)
+namespace Google\Service\Compute {
+    class CommitmentsScopedList extends \Google\Collection
     {
+        protected $collection_key = 'commitments';
+        protected $commitmentsType = Commitment::class;
+        protected $commitmentsDataType = 'array';
+        protected $warningType = CommitmentsScopedListWarning::class;
+        protected $warningDataType = '';
+        /**
+         * [Output Only] The list of commitments contained in this scope.
+         *
+         * @param Commitment[] $commitments
+         */
+        public function setCommitments($commitments)
+        {
+        }
+        /**
+         * @return Commitment[]
+         */
+        public function getCommitments()
+        {
+        }
+        /**
+         * [Output Only] Informational warning which replaces the list of commitments
+         * when the list is empty.
+         *
+         * @param CommitmentsScopedListWarning $warning
+         */
+        public function setWarning(CommitmentsScopedListWarning $warning)
+        {
+        }
+        /**
+         * @return CommitmentsScopedListWarning
+         */
+        public function getWarning()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Commitment[]
+     * Runtime class alias of \Google\Service\Compute\CommitmentsScopedList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCommitments()
-    {
-    }
-    /**
-     * [Output Only] Informational warning which replaces the list of commitments
-     * when the list is empty.
-     *
-     * @param CommitmentsScopedListWarning $warning
-     */
-    public function setWarning(CommitmentsScopedListWarning $warning)
-    {
-    }
-    /**
-     * @return CommitmentsScopedListWarning
-     */
-    public function getWarning()
+    class Google_Service_Compute_CommitmentsScopedList extends \Google\Service\Compute\CommitmentsScopedList
     {
     }
 }

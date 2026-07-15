@@ -29,6 +29,10 @@
  */
 namespace core_competency;
 
+use coding_exception;
+use context;
+use lang_string;
+use stdClass;
 /**
  * Class for loading/storing competency frameworks from the DB.
  *

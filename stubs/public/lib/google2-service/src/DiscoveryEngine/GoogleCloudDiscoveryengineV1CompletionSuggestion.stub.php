@@ -21,140 +21,149 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1CompletionSuggestion extends \Google\Collection
-{
-    protected $collection_key = 'alternativePhrases';
-    /**
-     * Alternative matching phrases for this suggestion.
-     *
-     * @var string[]
-     */
-    public $alternativePhrases;
-    /**
-     * Frequency of this suggestion. Will be used to rank suggestions when score
-     * is not available.
-     *
-     * @var string
-     */
-    public $frequency;
-    /**
-     * Global score of this suggestion. Control how this suggestion would be
-     * scored / ranked.
-     *
-     * @var 
-     */
-    public $globalScore;
-    /**
-     * If two suggestions have the same groupId, they will not be returned
-     * together. Instead the one ranked higher will be returned. This can be used
-     * to deduplicate semantically identical suggestions.
-     *
-     * @var string
-     */
-    public $groupId;
-    /**
-     * The score of this suggestion within its group.
-     *
-     * @var 
-     */
-    public $groupScore;
-    /**
-     * BCP-47 language code of this suggestion.
-     *
-     * @var string
-     */
-    public $languageCode;
-    /**
-     * Required. The suggestion text.
-     *
-     * @var string
-     */
-    public $suggestion;
-    /**
-     * Alternative matching phrases for this suggestion.
-     *
-     * @param string[] $alternativePhrases
-     */
-    public function setAlternativePhrases($alternativePhrases)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1CompletionSuggestion extends \Google\Collection
     {
+        protected $collection_key = 'alternativePhrases';
+        /**
+         * Alternative matching phrases for this suggestion.
+         *
+         * @var string[]
+         */
+        public $alternativePhrases;
+        /**
+         * Frequency of this suggestion. Will be used to rank suggestions when score
+         * is not available.
+         *
+         * @var string
+         */
+        public $frequency;
+        /**
+         * Global score of this suggestion. Control how this suggestion would be
+         * scored / ranked.
+         *
+         * @var 
+         */
+        public $globalScore;
+        /**
+         * If two suggestions have the same groupId, they will not be returned
+         * together. Instead the one ranked higher will be returned. This can be used
+         * to deduplicate semantically identical suggestions.
+         *
+         * @var string
+         */
+        public $groupId;
+        /**
+         * The score of this suggestion within its group.
+         *
+         * @var 
+         */
+        public $groupScore;
+        /**
+         * BCP-47 language code of this suggestion.
+         *
+         * @var string
+         */
+        public $languageCode;
+        /**
+         * Required. The suggestion text.
+         *
+         * @var string
+         */
+        public $suggestion;
+        /**
+         * Alternative matching phrases for this suggestion.
+         *
+         * @param string[] $alternativePhrases
+         */
+        public function setAlternativePhrases($alternativePhrases)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAlternativePhrases()
+        {
+        }
+        /**
+         * Frequency of this suggestion. Will be used to rank suggestions when score
+         * is not available.
+         *
+         * @param string $frequency
+         */
+        public function setFrequency($frequency)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFrequency()
+        {
+        }
+        public function setGlobalScore($globalScore)
+        {
+        }
+        public function getGlobalScore()
+        {
+        }
+        /**
+         * If two suggestions have the same groupId, they will not be returned
+         * together. Instead the one ranked higher will be returned. This can be used
+         * to deduplicate semantically identical suggestions.
+         *
+         * @param string $groupId
+         */
+        public function setGroupId($groupId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGroupId()
+        {
+        }
+        public function setGroupScore($groupScore)
+        {
+        }
+        public function getGroupScore()
+        {
+        }
+        /**
+         * BCP-47 language code of this suggestion.
+         *
+         * @param string $languageCode
+         */
+        public function setLanguageCode($languageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLanguageCode()
+        {
+        }
+        /**
+         * Required. The suggestion text.
+         *
+         * @param string $suggestion
+         */
+        public function setSuggestion($suggestion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSuggestion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1CompletionSuggestion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAlternativePhrases()
-    {
-    }
-    /**
-     * Frequency of this suggestion. Will be used to rank suggestions when score
-     * is not available.
-     *
-     * @param string $frequency
-     */
-    public function setFrequency($frequency)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFrequency()
-    {
-    }
-    public function setGlobalScore($globalScore)
-    {
-    }
-    public function getGlobalScore()
-    {
-    }
-    /**
-     * If two suggestions have the same groupId, they will not be returned
-     * together. Instead the one ranked higher will be returned. This can be used
-     * to deduplicate semantically identical suggestions.
-     *
-     * @param string $groupId
-     */
-    public function setGroupId($groupId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGroupId()
-    {
-    }
-    public function setGroupScore($groupScore)
-    {
-    }
-    public function getGroupScore()
-    {
-    }
-    /**
-     * BCP-47 language code of this suggestion.
-     *
-     * @param string $languageCode
-     */
-    public function setLanguageCode($languageCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLanguageCode()
-    {
-    }
-    /**
-     * Required. The suggestion text.
-     *
-     * @param string $suggestion
-     */
-    public function setSuggestion($suggestion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSuggestion()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1CompletionSuggestion extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1CompletionSuggestion
     {
     }
 }

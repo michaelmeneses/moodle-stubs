@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class IndexItemOptions extends \Google\Model
-{
-    /**
-     * Specifies if the index request should allow Google Workspace principals
-     * that do not exist or are deleted.
-     *
-     * @var bool
-     */
-    public $allowUnknownGsuitePrincipals;
-    /**
-     * Specifies if the index request should allow Google Workspace principals
-     * that do not exist or are deleted.
-     *
-     * @param bool $allowUnknownGsuitePrincipals
-     */
-    public function setAllowUnknownGsuitePrincipals($allowUnknownGsuitePrincipals)
+namespace Google\Service\CloudSearch {
+    class IndexItemOptions extends \Google\Model
     {
+        /**
+         * Specifies if the index request should allow Google Workspace principals
+         * that do not exist or are deleted.
+         *
+         * @var bool
+         */
+        public $allowUnknownGsuitePrincipals;
+        /**
+         * Specifies if the index request should allow Google Workspace principals
+         * that do not exist or are deleted.
+         *
+         * @param bool $allowUnknownGsuitePrincipals
+         */
+        public function setAllowUnknownGsuitePrincipals($allowUnknownGsuitePrincipals)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAllowUnknownGsuitePrincipals()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudSearch\IndexItemOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowUnknownGsuitePrincipals()
+    class Google_Service_CloudSearch_IndexItemOptions extends \Google\Service\CloudSearch\IndexItemOptions
     {
     }
 }

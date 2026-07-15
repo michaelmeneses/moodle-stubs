@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class SensitivityScore extends \Google\Model
-{
-    /**
-     * Unused.
-     */
-    public const SCORE_SENSITIVITY_SCORE_LEVEL_UNSPECIFIED = 'SENSITIVITY_SCORE_LEVEL_UNSPECIFIED';
-    /**
-     * No sensitive information detected. The resource isn't publicly accessible.
-     */
-    public const SCORE_SENSITIVITY_LOW = 'SENSITIVITY_LOW';
-    /**
-     * Unable to determine sensitivity.
-     */
-    public const SCORE_SENSITIVITY_UNKNOWN = 'SENSITIVITY_UNKNOWN';
-    /**
-     * Medium risk. Contains personally identifiable information (PII),
-     * potentially sensitive data, or fields with free-text data that are at a
-     * higher risk of having intermittent sensitive data. Consider limiting
-     * access.
-     */
-    public const SCORE_SENSITIVITY_MODERATE = 'SENSITIVITY_MODERATE';
-    /**
-     * High risk. Sensitive personally identifiable information (SPII) can be
-     * present. Exfiltration of data can lead to user data loss. Re-identification
-     * of users might be possible. Consider limiting usage and or removing SPII.
-     */
-    public const SCORE_SENSITIVITY_HIGH = 'SENSITIVITY_HIGH';
-    /**
-     * The sensitivity score applied to the resource.
-     *
-     * @var string
-     */
-    public $score;
-    /**
-     * The sensitivity score applied to the resource.
-     *
-     * Accepted values: SENSITIVITY_SCORE_LEVEL_UNSPECIFIED, SENSITIVITY_LOW,
-     * SENSITIVITY_UNKNOWN, SENSITIVITY_MODERATE, SENSITIVITY_HIGH
-     *
-     * @param self::SCORE_* $score
-     */
-    public function setScore($score)
+namespace Google\Service\SecurityCommandCenter {
+    class SensitivityScore extends \Google\Model
     {
+        /**
+         * Unused.
+         */
+        public const SCORE_SENSITIVITY_SCORE_LEVEL_UNSPECIFIED = 'SENSITIVITY_SCORE_LEVEL_UNSPECIFIED';
+        /**
+         * No sensitive information detected. The resource isn't publicly accessible.
+         */
+        public const SCORE_SENSITIVITY_LOW = 'SENSITIVITY_LOW';
+        /**
+         * Unable to determine sensitivity.
+         */
+        public const SCORE_SENSITIVITY_UNKNOWN = 'SENSITIVITY_UNKNOWN';
+        /**
+         * Medium risk. Contains personally identifiable information (PII),
+         * potentially sensitive data, or fields with free-text data that are at a
+         * higher risk of having intermittent sensitive data. Consider limiting
+         * access.
+         */
+        public const SCORE_SENSITIVITY_MODERATE = 'SENSITIVITY_MODERATE';
+        /**
+         * High risk. Sensitive personally identifiable information (SPII) can be
+         * present. Exfiltration of data can lead to user data loss. Re-identification
+         * of users might be possible. Consider limiting usage and or removing SPII.
+         */
+        public const SCORE_SENSITIVITY_HIGH = 'SENSITIVITY_HIGH';
+        /**
+         * The sensitivity score applied to the resource.
+         *
+         * @var string
+         */
+        public $score;
+        /**
+         * The sensitivity score applied to the resource.
+         *
+         * Accepted values: SENSITIVITY_SCORE_LEVEL_UNSPECIFIED, SENSITIVITY_LOW,
+         * SENSITIVITY_UNKNOWN, SENSITIVITY_MODERATE, SENSITIVITY_HIGH
+         *
+         * @param self::SCORE_* $score
+         */
+        public function setScore($score)
+        {
+        }
+        /**
+         * @return self::SCORE_*
+         */
+        public function getScore()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::SCORE_*
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\SensitivityScore registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getScore()
+    class Google_Service_SecurityCommandCenter_SensitivityScore extends \Google\Service\SecurityCommandCenter\SensitivityScore
     {
     }
 }

@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace enrol_lti\local\ltiadvantage\repository;
 
+use core_availability\info_module;
+use enrol_lti\local\ltiadvantage\viewobject\published_resource;
 /**
  * Class published_resource_repository for fetching the published_resource instances from the store.
  *

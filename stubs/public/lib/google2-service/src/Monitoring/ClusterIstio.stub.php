@@ -21,98 +21,107 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class ClusterIstio extends \Google\Model
-{
-    /**
-     * The name of the Kubernetes cluster in which this Istio service is defined.
-     * Corresponds to the cluster_name resource label in k8s_cluster resources.
-     *
-     * @var string
-     */
-    public $clusterName;
-    /**
-     * The location of the Kubernetes cluster in which this Istio service is
-     * defined. Corresponds to the location resource label in k8s_cluster
-     * resources.
-     *
-     * @var string
-     */
-    public $location;
-    /**
-     * The name of the Istio service underlying this service. Corresponds to the
-     * destination_service_name metric label in Istio metrics.
-     *
-     * @var string
-     */
-    public $serviceName;
-    /**
-     * The namespace of the Istio service underlying this service. Corresponds to
-     * the destination_service_namespace metric label in Istio metrics.
-     *
-     * @var string
-     */
-    public $serviceNamespace;
-    /**
-     * The name of the Kubernetes cluster in which this Istio service is defined.
-     * Corresponds to the cluster_name resource label in k8s_cluster resources.
-     *
-     * @param string $clusterName
-     */
-    public function setClusterName($clusterName)
+namespace Google\Service\Monitoring {
+    class ClusterIstio extends \Google\Model
     {
+        /**
+         * The name of the Kubernetes cluster in which this Istio service is defined.
+         * Corresponds to the cluster_name resource label in k8s_cluster resources.
+         *
+         * @var string
+         */
+        public $clusterName;
+        /**
+         * The location of the Kubernetes cluster in which this Istio service is
+         * defined. Corresponds to the location resource label in k8s_cluster
+         * resources.
+         *
+         * @var string
+         */
+        public $location;
+        /**
+         * The name of the Istio service underlying this service. Corresponds to the
+         * destination_service_name metric label in Istio metrics.
+         *
+         * @var string
+         */
+        public $serviceName;
+        /**
+         * The namespace of the Istio service underlying this service. Corresponds to
+         * the destination_service_namespace metric label in Istio metrics.
+         *
+         * @var string
+         */
+        public $serviceNamespace;
+        /**
+         * The name of the Kubernetes cluster in which this Istio service is defined.
+         * Corresponds to the cluster_name resource label in k8s_cluster resources.
+         *
+         * @param string $clusterName
+         */
+        public function setClusterName($clusterName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClusterName()
+        {
+        }
+        /**
+         * The location of the Kubernetes cluster in which this Istio service is
+         * defined. Corresponds to the location resource label in k8s_cluster
+         * resources.
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * The name of the Istio service underlying this service. Corresponds to the
+         * destination_service_name metric label in Istio metrics.
+         *
+         * @param string $serviceName
+         */
+        public function setServiceName($serviceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceName()
+        {
+        }
+        /**
+         * The namespace of the Istio service underlying this service. Corresponds to
+         * the destination_service_namespace metric label in Istio metrics.
+         *
+         * @param string $serviceNamespace
+         */
+        public function setServiceNamespace($serviceNamespace)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceNamespace()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Monitoring\ClusterIstio registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClusterName()
-    {
-    }
-    /**
-     * The location of the Kubernetes cluster in which this Istio service is
-     * defined. Corresponds to the location resource label in k8s_cluster
-     * resources.
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocation()
-    {
-    }
-    /**
-     * The name of the Istio service underlying this service. Corresponds to the
-     * destination_service_name metric label in Istio metrics.
-     *
-     * @param string $serviceName
-     */
-    public function setServiceName($serviceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceName()
-    {
-    }
-    /**
-     * The namespace of the Istio service underlying this service. Corresponds to
-     * the destination_service_namespace metric label in Istio metrics.
-     *
-     * @param string $serviceNamespace
-     */
-    public function setServiceNamespace($serviceNamespace)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceNamespace()
+    class Google_Service_Monitoring_ClusterIstio extends \Google\Service\Monitoring\ClusterIstio
     {
     }
 }

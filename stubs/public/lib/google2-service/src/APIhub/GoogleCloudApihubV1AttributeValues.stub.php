@@ -21,98 +21,107 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1AttributeValues extends \Google\Model
-{
-    /**
-     * Output only. The name of the attribute. Format:
-     * projects/{project}/locations/{location}/attributes/{attribute}
-     *
-     * @var string
-     */
-    public $attribute;
-    protected $enumValuesType = GoogleCloudApihubV1EnumAttributeValues::class;
-    protected $enumValuesDataType = '';
-    protected $jsonValuesType = GoogleCloudApihubV1StringAttributeValues::class;
-    protected $jsonValuesDataType = '';
-    protected $stringValuesType = GoogleCloudApihubV1StringAttributeValues::class;
-    protected $stringValuesDataType = '';
-    protected $uriValuesType = GoogleCloudApihubV1StringAttributeValues::class;
-    protected $uriValuesDataType = '';
-    /**
-     * Output only. The name of the attribute. Format:
-     * projects/{project}/locations/{location}/attributes/{attribute}
-     *
-     * @param string $attribute
-     */
-    public function setAttribute($attribute)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1AttributeValues extends \Google\Model
     {
+        /**
+         * Output only. The name of the attribute. Format:
+         * projects/{project}/locations/{location}/attributes/{attribute}
+         *
+         * @var string
+         */
+        public $attribute;
+        protected $enumValuesType = GoogleCloudApihubV1EnumAttributeValues::class;
+        protected $enumValuesDataType = '';
+        protected $jsonValuesType = GoogleCloudApihubV1StringAttributeValues::class;
+        protected $jsonValuesDataType = '';
+        protected $stringValuesType = GoogleCloudApihubV1StringAttributeValues::class;
+        protected $stringValuesDataType = '';
+        protected $uriValuesType = GoogleCloudApihubV1StringAttributeValues::class;
+        protected $uriValuesDataType = '';
+        /**
+         * Output only. The name of the attribute. Format:
+         * projects/{project}/locations/{location}/attributes/{attribute}
+         *
+         * @param string $attribute
+         */
+        public function setAttribute($attribute)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAttribute()
+        {
+        }
+        /**
+         * The attribute values associated with a resource in case attribute data type
+         * is enum.
+         *
+         * @param GoogleCloudApihubV1EnumAttributeValues $enumValues
+         */
+        public function setEnumValues(GoogleCloudApihubV1EnumAttributeValues $enumValues)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1EnumAttributeValues
+         */
+        public function getEnumValues()
+        {
+        }
+        /**
+         * The attribute values associated with a resource in case attribute data type
+         * is JSON.
+         *
+         * @param GoogleCloudApihubV1StringAttributeValues $jsonValues
+         */
+        public function setJsonValues(GoogleCloudApihubV1StringAttributeValues $jsonValues)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1StringAttributeValues
+         */
+        public function getJsonValues()
+        {
+        }
+        /**
+         * The attribute values associated with a resource in case attribute data type
+         * is string.
+         *
+         * @param GoogleCloudApihubV1StringAttributeValues $stringValues
+         */
+        public function setStringValues(GoogleCloudApihubV1StringAttributeValues $stringValues)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1StringAttributeValues
+         */
+        public function getStringValues()
+        {
+        }
+        /**
+         * The attribute values associated with a resource in case attribute data type
+         * is URL, URI or IP, like gs://bucket-name/object-name.
+         *
+         * @param GoogleCloudApihubV1StringAttributeValues $uriValues
+         */
+        public function setUriValues(GoogleCloudApihubV1StringAttributeValues $uriValues)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1StringAttributeValues
+         */
+        public function getUriValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1AttributeValues registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttribute()
-    {
-    }
-    /**
-     * The attribute values associated with a resource in case attribute data type
-     * is enum.
-     *
-     * @param GoogleCloudApihubV1EnumAttributeValues $enumValues
-     */
-    public function setEnumValues(GoogleCloudApihubV1EnumAttributeValues $enumValues)
-    {
-    }
-    /**
-     * @return GoogleCloudApihubV1EnumAttributeValues
-     */
-    public function getEnumValues()
-    {
-    }
-    /**
-     * The attribute values associated with a resource in case attribute data type
-     * is JSON.
-     *
-     * @param GoogleCloudApihubV1StringAttributeValues $jsonValues
-     */
-    public function setJsonValues(GoogleCloudApihubV1StringAttributeValues $jsonValues)
-    {
-    }
-    /**
-     * @return GoogleCloudApihubV1StringAttributeValues
-     */
-    public function getJsonValues()
-    {
-    }
-    /**
-     * The attribute values associated with a resource in case attribute data type
-     * is string.
-     *
-     * @param GoogleCloudApihubV1StringAttributeValues $stringValues
-     */
-    public function setStringValues(GoogleCloudApihubV1StringAttributeValues $stringValues)
-    {
-    }
-    /**
-     * @return GoogleCloudApihubV1StringAttributeValues
-     */
-    public function getStringValues()
-    {
-    }
-    /**
-     * The attribute values associated with a resource in case attribute data type
-     * is URL, URI or IP, like gs://bucket-name/object-name.
-     *
-     * @param GoogleCloudApihubV1StringAttributeValues $uriValues
-     */
-    public function setUriValues(GoogleCloudApihubV1StringAttributeValues $uriValues)
-    {
-    }
-    /**
-     * @return GoogleCloudApihubV1StringAttributeValues
-     */
-    public function getUriValues()
+    class Google_Service_APIhub_GoogleCloudApihubV1AttributeValues extends \Google\Service\APIhub\GoogleCloudApihubV1AttributeValues
     {
     }
 }

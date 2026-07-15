@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class VolumeSaleInfoOffersRentalDuration extends \Google\Model
-{
-    public $count;
-    /**
-     * @var string
-     */
-    public $unit;
-    public function setCount($count)
+namespace Google\Service\Books {
+    class VolumeSaleInfoOffersRentalDuration extends \Google\Model
     {
+        public $count;
+        /**
+         * @var string
+         */
+        public $unit;
+        public function setCount($count)
+        {
+        }
+        public function getCount()
+        {
+        }
+        /**
+         * @param string $unit
+         */
+        public function setUnit($unit)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUnit()
+        {
+        }
     }
-    public function getCount()
-    {
-    }
+}
+namespace {
     /**
-     * @param string $unit
+     * Runtime class alias of \Google\Service\Books\VolumeSaleInfoOffersRentalDuration registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setUnit($unit)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUnit()
+    class Google_Service_Books_VolumeSaleInfoOffersRentalDuration extends \Google\Service\Books\VolumeSaleInfoOffersRentalDuration
     {
     }
 }

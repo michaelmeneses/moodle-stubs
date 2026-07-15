@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Tasks;
-
-class TaskLinks extends \Google\Model
-{
-    /**
-     * The description (might be empty).
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * The URL.
-     *
-     * @var string
-     */
-    public $link;
-    /**
-     * Type of the link, e.g. "email", "generic", "chat_message", "keep_note".
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The description (might be empty).
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\Tasks {
+    class TaskLinks extends \Google\Model
     {
+        /**
+         * The description (might be empty).
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * The URL.
+         *
+         * @var string
+         */
+        public $link;
+        /**
+         * Type of the link, e.g. "email", "generic", "chat_message", "keep_note".
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The description (might be empty).
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * The URL.
+         *
+         * @param string $link
+         */
+        public function setLink($link)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLink()
+        {
+        }
+        /**
+         * Type of the link, e.g. "email", "generic", "chat_message", "keep_note".
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Tasks\TaskLinks registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * The URL.
-     *
-     * @param string $link
-     */
-    public function setLink($link)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLink()
-    {
-    }
-    /**
-     * Type of the link, e.g. "email", "generic", "chat_message", "keep_note".
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_Tasks_TaskLinks extends \Google\Service\Tasks\TaskLinks
     {
     }
 }

@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class ResultDisplayField extends \Google\Model
-{
-    /**
-     * The display label for the property.
-     *
-     * @var string
-     */
-    public $label;
-    /**
-     * The operator name of the property.
-     *
-     * @var string
-     */
-    public $operatorName;
-    protected $propertyType = NamedProperty::class;
-    protected $propertyDataType = '';
-    /**
-     * The display label for the property.
-     *
-     * @param string $label
-     */
-    public function setLabel($label)
+namespace Google\Service\CloudSearch {
+    class ResultDisplayField extends \Google\Model
     {
+        /**
+         * The display label for the property.
+         *
+         * @var string
+         */
+        public $label;
+        /**
+         * The operator name of the property.
+         *
+         * @var string
+         */
+        public $operatorName;
+        protected $propertyType = NamedProperty::class;
+        protected $propertyDataType = '';
+        /**
+         * The display label for the property.
+         *
+         * @param string $label
+         */
+        public function setLabel($label)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLabel()
+        {
+        }
+        /**
+         * The operator name of the property.
+         *
+         * @param string $operatorName
+         */
+        public function setOperatorName($operatorName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOperatorName()
+        {
+        }
+        /**
+         * The name value pair for the property.
+         *
+         * @param NamedProperty $property
+         */
+        public function setProperty(NamedProperty $property)
+        {
+        }
+        /**
+         * @return NamedProperty
+         */
+        public function getProperty()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\ResultDisplayField registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLabel()
-    {
-    }
-    /**
-     * The operator name of the property.
-     *
-     * @param string $operatorName
-     */
-    public function setOperatorName($operatorName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOperatorName()
-    {
-    }
-    /**
-     * The name value pair for the property.
-     *
-     * @param NamedProperty $property
-     */
-    public function setProperty(NamedProperty $property)
-    {
-    }
-    /**
-     * @return NamedProperty
-     */
-    public function getProperty()
+    class Google_Service_CloudSearch_ResultDisplayField extends \Google\Service\CloudSearch\ResultDisplayField
     {
     }
 }

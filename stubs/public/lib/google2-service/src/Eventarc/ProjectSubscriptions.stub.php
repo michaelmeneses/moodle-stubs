@@ -21,37 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Eventarc;
-
-class ProjectSubscriptions extends \Google\Collection
-{
-    protected $collection_key = 'list';
-    /**
-     * Required. A list of projects to receive events from. All the projects must
-     * be in the same org. The listed projects should have the format
-     * project/{identifier} where identifier can be either the project id for
-     * project number. A single list may contain both formats. At most 100
-     * projects can be listed.
-     *
-     * @var string[]
-     */
-    public $list;
-    /**
-     * Required. A list of projects to receive events from. All the projects must
-     * be in the same org. The listed projects should have the format
-     * project/{identifier} where identifier can be either the project id for
-     * project number. A single list may contain both formats. At most 100
-     * projects can be listed.
-     *
-     * @param string[] $list
-     */
-    public function setList($list)
+namespace Google\Service\Eventarc {
+    class ProjectSubscriptions extends \Google\Collection
     {
+        protected $collection_key = 'list';
+        /**
+         * Required. A list of projects to receive events from. All the projects must
+         * be in the same org. The listed projects should have the format
+         * project/{identifier} where identifier can be either the project id for
+         * project number. A single list may contain both formats. At most 100
+         * projects can be listed.
+         *
+         * @var string[]
+         */
+        public $list;
+        /**
+         * Required. A list of projects to receive events from. All the projects must
+         * be in the same org. The listed projects should have the format
+         * project/{identifier} where identifier can be either the project id for
+         * project number. A single list may contain both formats. At most 100
+         * projects can be listed.
+         *
+         * @param string[] $list
+         */
+        public function setList($list)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getList()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Eventarc\ProjectSubscriptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getList()
+    class Google_Service_Eventarc_ProjectSubscriptions extends \Google\Service\Eventarc\ProjectSubscriptions
     {
     }
 }

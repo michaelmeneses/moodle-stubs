@@ -21,119 +21,128 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaExpandedDataSet extends \Google\Collection
-{
-    protected $collection_key = 'metricNames';
-    /**
-     * @var string
-     */
-    public $dataCollectionStartTime;
-    /**
-     * @var string
-     */
-    public $description;
-    protected $dimensionFilterExpressionType = GoogleAnalyticsAdminV1alphaExpandedDataSetFilterExpression::class;
-    protected $dimensionFilterExpressionDataType = '';
-    /**
-     * @var string[]
-     */
-    public $dimensionNames;
-    /**
-     * @var string
-     */
-    public $displayName;
-    /**
-     * @var string[]
-     */
-    public $metricNames;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @param string
-     */
-    public function setDataCollectionStartTime($dataCollectionStartTime)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaExpandedDataSet extends \Google\Collection
     {
+        protected $collection_key = 'metricNames';
+        /**
+         * @var string
+         */
+        public $dataCollectionStartTime;
+        /**
+         * @var string
+         */
+        public $description;
+        protected $dimensionFilterExpressionType = GoogleAnalyticsAdminV1alphaExpandedDataSetFilterExpression::class;
+        protected $dimensionFilterExpressionDataType = '';
+        /**
+         * @var string[]
+         */
+        public $dimensionNames;
+        /**
+         * @var string
+         */
+        public $displayName;
+        /**
+         * @var string[]
+         */
+        public $metricNames;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @param string
+         */
+        public function setDataCollectionStartTime($dataCollectionStartTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataCollectionStartTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * @param GoogleAnalyticsAdminV1alphaExpandedDataSetFilterExpression
+         */
+        public function setDimensionFilterExpression(GoogleAnalyticsAdminV1alphaExpandedDataSetFilterExpression $dimensionFilterExpression)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaExpandedDataSetFilterExpression
+         */
+        public function getDimensionFilterExpression()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setDimensionNames($dimensionNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDimensionNames()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setMetricNames($metricNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMetricNames()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaExpandedDataSet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataCollectionStartTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * @param GoogleAnalyticsAdminV1alphaExpandedDataSetFilterExpression
-     */
-    public function setDimensionFilterExpression(GoogleAnalyticsAdminV1alphaExpandedDataSetFilterExpression $dimensionFilterExpression)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1alphaExpandedDataSetFilterExpression
-     */
-    public function getDimensionFilterExpression()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setDimensionNames($dimensionNames)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getDimensionNames()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setMetricNames($metricNames)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getMetricNames()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaExpandedDataSet extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaExpandedDataSet
     {
     }
 }

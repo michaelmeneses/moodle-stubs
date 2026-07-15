@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1ListConversationsResponse extends \Google\Collection
-{
-    protected $collection_key = 'conversations';
-    protected $conversationsType = GoogleCloudContactcenterinsightsV1Conversation::class;
-    protected $conversationsDataType = 'array';
-    /**
-     * A token which can be sent as `page_token` to retrieve the next page. If
-     * this field is set, it means there is another page available. If it is not
-     * set, it means no other pages are available.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The conversations that match the request.
-     *
-     * @param GoogleCloudContactcenterinsightsV1Conversation[] $conversations
-     */
-    public function setConversations($conversations)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1ListConversationsResponse extends \Google\Collection
     {
+        protected $collection_key = 'conversations';
+        protected $conversationsType = GoogleCloudContactcenterinsightsV1Conversation::class;
+        protected $conversationsDataType = 'array';
+        /**
+         * A token which can be sent as `page_token` to retrieve the next page. If
+         * this field is set, it means there is another page available. If it is not
+         * set, it means no other pages are available.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The conversations that match the request.
+         *
+         * @param GoogleCloudContactcenterinsightsV1Conversation[] $conversations
+         */
+        public function setConversations($conversations)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1Conversation[]
+         */
+        public function getConversations()
+        {
+        }
+        /**
+         * A token which can be sent as `page_token` to retrieve the next page. If
+         * this field is set, it means there is another page available. If it is not
+         * set, it means no other pages are available.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudContactcenterinsightsV1Conversation[]
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1ListConversationsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConversations()
-    {
-    }
-    /**
-     * A token which can be sent as `page_token` to retrieve the next page. If
-     * this field is set, it means there is another page available. If it is not
-     * set, it means no other pages are available.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1ListConversationsResponse extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1ListConversationsResponse
     {
     }
 }

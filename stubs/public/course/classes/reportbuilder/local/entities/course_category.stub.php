@@ -8,6 +8,17 @@
  */
 namespace core_course\reportbuilder\local\entities;
 
+use core\{context, context_helper};
+use core\url;
+use html_writer;
+use lang_string;
+use stdClass;
+use theme_config;
+use core_course_category;
+use core_reportbuilder\local\aggregation\{groupconcat, groupconcatdistinct};
+use core_reportbuilder\local\entities\base;
+use core_reportbuilder\local\filters\{category, number, select, text};
+use core_reportbuilder\local\report\{column, filter};
 /**
  * Course category entity
  *

@@ -21,91 +21,100 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides;
-
-class Image extends \Google\Model
-{
-    /**
-     * An URL to an image with a default lifetime of 30 minutes. This URL is
-     * tagged with the account of the requester. Anyone with the URL effectively
-     * accesses the image as the original requester. Access to the image may be
-     * lost if the presentation's sharing settings change.
-     *
-     * @var string
-     */
-    public $contentUrl;
-    protected $imagePropertiesType = ImageProperties::class;
-    protected $imagePropertiesDataType = '';
-    protected $placeholderType = Placeholder::class;
-    protected $placeholderDataType = '';
-    /**
-     * The source URL is the URL used to insert the image. The source URL can be
-     * empty.
-     *
-     * @var string
-     */
-    public $sourceUrl;
-    /**
-     * An URL to an image with a default lifetime of 30 minutes. This URL is
-     * tagged with the account of the requester. Anyone with the URL effectively
-     * accesses the image as the original requester. Access to the image may be
-     * lost if the presentation's sharing settings change.
-     *
-     * @param string $contentUrl
-     */
-    public function setContentUrl($contentUrl)
+namespace Google\Service\Slides {
+    class Image extends \Google\Model
     {
+        /**
+         * An URL to an image with a default lifetime of 30 minutes. This URL is
+         * tagged with the account of the requester. Anyone with the URL effectively
+         * accesses the image as the original requester. Access to the image may be
+         * lost if the presentation's sharing settings change.
+         *
+         * @var string
+         */
+        public $contentUrl;
+        protected $imagePropertiesType = ImageProperties::class;
+        protected $imagePropertiesDataType = '';
+        protected $placeholderType = Placeholder::class;
+        protected $placeholderDataType = '';
+        /**
+         * The source URL is the URL used to insert the image. The source URL can be
+         * empty.
+         *
+         * @var string
+         */
+        public $sourceUrl;
+        /**
+         * An URL to an image with a default lifetime of 30 minutes. This URL is
+         * tagged with the account of the requester. Anyone with the URL effectively
+         * accesses the image as the original requester. Access to the image may be
+         * lost if the presentation's sharing settings change.
+         *
+         * @param string $contentUrl
+         */
+        public function setContentUrl($contentUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContentUrl()
+        {
+        }
+        /**
+         * The properties of the image.
+         *
+         * @param ImageProperties $imageProperties
+         */
+        public function setImageProperties(ImageProperties $imageProperties)
+        {
+        }
+        /**
+         * @return ImageProperties
+         */
+        public function getImageProperties()
+        {
+        }
+        /**
+         * Placeholders are page elements that inherit from corresponding placeholders
+         * on layouts and masters. If set, the image is a placeholder image and any
+         * inherited properties can be resolved by looking at the parent placeholder
+         * identified by the Placeholder.parent_object_id field.
+         *
+         * @param Placeholder $placeholder
+         */
+        public function setPlaceholder(Placeholder $placeholder)
+        {
+        }
+        /**
+         * @return Placeholder
+         */
+        public function getPlaceholder()
+        {
+        }
+        /**
+         * The source URL is the URL used to insert the image. The source URL can be
+         * empty.
+         *
+         * @param string $sourceUrl
+         */
+        public function setSourceUrl($sourceUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Slides\Image registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContentUrl()
-    {
-    }
-    /**
-     * The properties of the image.
-     *
-     * @param ImageProperties $imageProperties
-     */
-    public function setImageProperties(ImageProperties $imageProperties)
-    {
-    }
-    /**
-     * @return ImageProperties
-     */
-    public function getImageProperties()
-    {
-    }
-    /**
-     * Placeholders are page elements that inherit from corresponding placeholders
-     * on layouts and masters. If set, the image is a placeholder image and any
-     * inherited properties can be resolved by looking at the parent placeholder
-     * identified by the Placeholder.parent_object_id field.
-     *
-     * @param Placeholder $placeholder
-     */
-    public function setPlaceholder(Placeholder $placeholder)
-    {
-    }
-    /**
-     * @return Placeholder
-     */
-    public function getPlaceholder()
-    {
-    }
-    /**
-     * The source URL is the URL used to insert the image. The source URL can be
-     * empty.
-     *
-     * @param string $sourceUrl
-     */
-    public function setSourceUrl($sourceUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourceUrl()
+    class Google_Service_Slides_Image extends \Google\Service\Slides\Image
     {
     }
 }

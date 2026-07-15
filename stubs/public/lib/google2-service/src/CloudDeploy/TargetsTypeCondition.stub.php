@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class TargetsTypeCondition extends \Google\Model
-{
-    /**
-     * Human readable error message.
-     *
-     * @var string
-     */
-    public $errorDetails;
-    /**
-     * True if the targets are all a comparable type. For example this is true if
-     * all targets are GKE clusters. This is false if some targets are Cloud Run
-     * targets and others are GKE clusters.
-     *
-     * @var bool
-     */
-    public $status;
-    /**
-     * Human readable error message.
-     *
-     * @param string $errorDetails
-     */
-    public function setErrorDetails($errorDetails)
+namespace Google\Service\CloudDeploy {
+    class TargetsTypeCondition extends \Google\Model
     {
+        /**
+         * Human readable error message.
+         *
+         * @var string
+         */
+        public $errorDetails;
+        /**
+         * True if the targets are all a comparable type. For example this is true if
+         * all targets are GKE clusters. This is false if some targets are Cloud Run
+         * targets and others are GKE clusters.
+         *
+         * @var bool
+         */
+        public $status;
+        /**
+         * Human readable error message.
+         *
+         * @param string $errorDetails
+         */
+        public function setErrorDetails($errorDetails)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getErrorDetails()
+        {
+        }
+        /**
+         * True if the targets are all a comparable type. For example this is true if
+         * all targets are GKE clusters. This is false if some targets are Cloud Run
+         * targets and others are GKE clusters.
+         *
+         * @param bool $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDeploy\TargetsTypeCondition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrorDetails()
-    {
-    }
-    /**
-     * True if the targets are all a comparable type. For example this is true if
-     * all targets are GKE clusters. This is false if some targets are Cloud Run
-     * targets and others are GKE clusters.
-     *
-     * @param bool $status
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getStatus()
+    class Google_Service_CloudDeploy_TargetsTypeCondition extends \Google\Service\CloudDeploy\TargetsTypeCondition
     {
     }
 }

@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseAppHosting;
-
-class TrafficSplit extends \Google\Model
-{
-    /**
-     * Required. The build that traffic is being routed to.
-     *
-     * @var string
-     */
-    public $build;
-    /**
-     * Required. The percentage of traffic to send to the build. Currently must be
-     * 100% or 0%.
-     *
-     * @var int
-     */
-    public $percent;
-    /**
-     * Required. The build that traffic is being routed to.
-     *
-     * @param string $build
-     */
-    public function setBuild($build)
+namespace Google\Service\FirebaseAppHosting {
+    class TrafficSplit extends \Google\Model
     {
+        /**
+         * Required. The build that traffic is being routed to.
+         *
+         * @var string
+         */
+        public $build;
+        /**
+         * Required. The percentage of traffic to send to the build. Currently must be
+         * 100% or 0%.
+         *
+         * @var int
+         */
+        public $percent;
+        /**
+         * Required. The build that traffic is being routed to.
+         *
+         * @param string $build
+         */
+        public function setBuild($build)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBuild()
+        {
+        }
+        /**
+         * Required. The percentage of traffic to send to the build. Currently must be
+         * 100% or 0%.
+         *
+         * @param int $percent
+         */
+        public function setPercent($percent)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPercent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\FirebaseAppHosting\TrafficSplit registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBuild()
-    {
-    }
-    /**
-     * Required. The percentage of traffic to send to the build. Currently must be
-     * 100% or 0%.
-     *
-     * @param int $percent
-     */
-    public function setPercent($percent)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPercent()
+    class Google_Service_FirebaseAppHosting_TrafficSplit extends \Google\Service\FirebaseAppHosting\TrafficSplit
     {
     }
 }

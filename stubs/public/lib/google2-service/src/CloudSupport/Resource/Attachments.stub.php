@@ -21,29 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSupport\Resource;
-
-/**
- * The "attachments" collection of methods.
- * Typical usage is:
- *  <code>
- *   $cloudsupportService = new Google\Service\CloudSupport(...);
- *   $attachments = $cloudsupportService->attachments;
- *  </code>
- */
-class Attachments extends \Google\Service\Resource
-{
+namespace Google\Service\CloudSupport\Resource {
+    use Google\Service\CloudSupport\Attachment;
+    use Google\Service\CloudSupport\CreateAttachmentRequest;
     /**
-     * Create a file attachment on a case or Cloud resource. The attachment object
-     * must have the following fields set: filename. (attachments.create)
-     *
-     * @param string $parent Required. The resource name of the case (or case
-     * parent) to which the attachment should be attached.
-     * @param CreateAttachmentRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Attachment
+     * The "attachments" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $cloudsupportService = new Google\Service\CloudSupport(...);
+     *   $attachments = $cloudsupportService->attachments;
+     *  </code>
      */
-    public function create($parent, CreateAttachmentRequest $postBody, $optParams = [])
+    class Attachments extends \Google\Service\Resource
+    {
+        /**
+         * Create a file attachment on a case or Cloud resource. The attachment object
+         * must have the following fields set: filename. (attachments.create)
+         *
+         * @param string $parent Required. The resource name of the case (or case
+         * parent) to which the attachment should be attached.
+         * @param CreateAttachmentRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Attachment
+         */
+        public function create($parent, CreateAttachmentRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudSupport\Resource\Attachments registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudSupport_Resource_Attachments extends \Google\Service\CloudSupport\Resource\Attachments
     {
     }
 }

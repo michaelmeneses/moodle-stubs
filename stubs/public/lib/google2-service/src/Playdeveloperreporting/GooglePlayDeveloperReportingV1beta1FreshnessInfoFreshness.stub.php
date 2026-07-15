@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Playdeveloperreporting;
-
-class GooglePlayDeveloperReportingV1beta1FreshnessInfoFreshness extends \Google\Model
-{
-    /**
-     * Unspecified granularity.
-     */
-    public const AGGREGATION_PERIOD_AGGREGATION_PERIOD_UNSPECIFIED = 'AGGREGATION_PERIOD_UNSPECIFIED';
-    /**
-     * Data is aggregated in hourly intervals.
-     */
-    public const AGGREGATION_PERIOD_HOURLY = 'HOURLY';
-    /**
-     * Data is aggregated in daily intervals.
-     */
-    public const AGGREGATION_PERIOD_DAILY = 'DAILY';
-    /**
-     * Data is aggregated over the full timeline range. Effectively this produces
-     * a single value rather than a timeline.
-     */
-    public const AGGREGATION_PERIOD_FULL_RANGE = 'FULL_RANGE';
-    /**
-     * Aggregation period for which data is available.
-     *
-     * @var string
-     */
-    public $aggregationPeriod;
-    protected $latestEndTimeType = GoogleTypeDateTime::class;
-    protected $latestEndTimeDataType = '';
-    /**
-     * Aggregation period for which data is available.
-     *
-     * Accepted values: AGGREGATION_PERIOD_UNSPECIFIED, HOURLY, DAILY, FULL_RANGE
-     *
-     * @param self::AGGREGATION_PERIOD_* $aggregationPeriod
-     */
-    public function setAggregationPeriod($aggregationPeriod)
+namespace Google\Service\Playdeveloperreporting {
+    class GooglePlayDeveloperReportingV1beta1FreshnessInfoFreshness extends \Google\Model
     {
+        /**
+         * Unspecified granularity.
+         */
+        public const AGGREGATION_PERIOD_AGGREGATION_PERIOD_UNSPECIFIED = 'AGGREGATION_PERIOD_UNSPECIFIED';
+        /**
+         * Data is aggregated in hourly intervals.
+         */
+        public const AGGREGATION_PERIOD_HOURLY = 'HOURLY';
+        /**
+         * Data is aggregated in daily intervals.
+         */
+        public const AGGREGATION_PERIOD_DAILY = 'DAILY';
+        /**
+         * Data is aggregated over the full timeline range. Effectively this produces
+         * a single value rather than a timeline.
+         */
+        public const AGGREGATION_PERIOD_FULL_RANGE = 'FULL_RANGE';
+        /**
+         * Aggregation period for which data is available.
+         *
+         * @var string
+         */
+        public $aggregationPeriod;
+        protected $latestEndTimeType = GoogleTypeDateTime::class;
+        protected $latestEndTimeDataType = '';
+        /**
+         * Aggregation period for which data is available.
+         *
+         * Accepted values: AGGREGATION_PERIOD_UNSPECIFIED, HOURLY, DAILY, FULL_RANGE
+         *
+         * @param self::AGGREGATION_PERIOD_* $aggregationPeriod
+         */
+        public function setAggregationPeriod($aggregationPeriod)
+        {
+        }
+        /**
+         * @return self::AGGREGATION_PERIOD_*
+         */
+        public function getAggregationPeriod()
+        {
+        }
+        /**
+         * Latest end time for which data is available, for the aggregation period.
+         * The time is specified in the metric set's default timezone. *Note:* time
+         * ranges in TimelineSpec are represented as `start_time, end_time)`. For
+         * example, if the latest available timeline data point for a `DAILY`
+         * aggregation period is `2021-06-23 00:00:00 America/Los_Angeles`, the value
+         * of this field would be `2021-06-24 00:00:00 America/Los_Angeles` so it can
+         * be easily reused in [TimelineSpec.end_time.
+         *
+         * @param GoogleTypeDateTime $latestEndTime
+         */
+        public function setLatestEndTime(GoogleTypeDateTime $latestEndTime)
+        {
+        }
+        /**
+         * @return GoogleTypeDateTime
+         */
+        public function getLatestEndTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::AGGREGATION_PERIOD_*
+     * Runtime class alias of \Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1FreshnessInfoFreshness registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAggregationPeriod()
-    {
-    }
-    /**
-     * Latest end time for which data is available, for the aggregation period.
-     * The time is specified in the metric set's default timezone. *Note:* time
-     * ranges in TimelineSpec are represented as `start_time, end_time)`. For
-     * example, if the latest available timeline data point for a `DAILY`
-     * aggregation period is `2021-06-23 00:00:00 America/Los_Angeles`, the value
-     * of this field would be `2021-06-24 00:00:00 America/Los_Angeles` so it can
-     * be easily reused in [TimelineSpec.end_time.
-     *
-     * @param GoogleTypeDateTime $latestEndTime
-     */
-    public function setLatestEndTime(GoogleTypeDateTime $latestEndTime)
-    {
-    }
-    /**
-     * @return GoogleTypeDateTime
-     */
-    public function getLatestEndTime()
+    class Google_Service_Playdeveloperreporting_GooglePlayDeveloperReportingV1beta1FreshnessInfoFreshness extends \Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1FreshnessInfoFreshness
     {
     }
 }

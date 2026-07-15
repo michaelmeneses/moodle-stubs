@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class InjectSessionCredentialsRequest extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $credentialsCiphertext;
-    /**
-     * @var string
-     */
-    public $requestId;
-    /**
-     * @param string
-     */
-    public function setCredentialsCiphertext($credentialsCiphertext)
+namespace Google\Service\Dataproc {
+    class InjectSessionCredentialsRequest extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $credentialsCiphertext;
+        /**
+         * @var string
+         */
+        public $requestId;
+        /**
+         * @param string
+         */
+        public function setCredentialsCiphertext($credentialsCiphertext)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCredentialsCiphertext()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRequestId($requestId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\InjectSessionCredentialsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCredentialsCiphertext()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRequestId($requestId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestId()
+    class Google_Service_Dataproc_InjectSessionCredentialsRequest extends \Google\Service\Dataproc\InjectSessionCredentialsRequest
     {
     }
 }

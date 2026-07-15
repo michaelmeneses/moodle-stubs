@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class ConnectPoolNodeConfig extends \Google\Collection
-{
-    protected $collection_key = 'ipAddresses';
-    /**
-     * Output only. The DNS name of the read pool node.
-     *
-     * @var string
-     */
-    public $dnsName;
-    protected $dnsNamesType = DnsNameMapping::class;
-    protected $dnsNamesDataType = 'array';
-    protected $ipAddressesType = IpMapping::class;
-    protected $ipAddressesDataType = 'array';
-    /**
-     * Output only. The name of the read pool node. Doesn't include the project
-     * ID.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The DNS name of the read pool node.
-     *
-     * @param string $dnsName
-     */
-    public function setDnsName($dnsName)
+namespace Google\Service\SQLAdmin {
+    class ConnectPoolNodeConfig extends \Google\Collection
     {
+        protected $collection_key = 'ipAddresses';
+        /**
+         * Output only. The DNS name of the read pool node.
+         *
+         * @var string
+         */
+        public $dnsName;
+        protected $dnsNamesType = DnsNameMapping::class;
+        protected $dnsNamesDataType = 'array';
+        protected $ipAddressesType = IpMapping::class;
+        protected $ipAddressesDataType = 'array';
+        /**
+         * Output only. The name of the read pool node. Doesn't include the project
+         * ID.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The DNS name of the read pool node.
+         *
+         * @param string $dnsName
+         */
+        public function setDnsName($dnsName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDnsName()
+        {
+        }
+        /**
+         * Output only. The list of DNS names used by this read pool node.
+         *
+         * @param DnsNameMapping[] $dnsNames
+         */
+        public function setDnsNames($dnsNames)
+        {
+        }
+        /**
+         * @return DnsNameMapping[]
+         */
+        public function getDnsNames()
+        {
+        }
+        /**
+         * Output only. Mappings containing IP addresses that can be used to connect
+         * to the read pool node.
+         *
+         * @param IpMapping[] $ipAddresses
+         */
+        public function setIpAddresses($ipAddresses)
+        {
+        }
+        /**
+         * @return IpMapping[]
+         */
+        public function getIpAddresses()
+        {
+        }
+        /**
+         * Output only. The name of the read pool node. Doesn't include the project
+         * ID.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SQLAdmin\ConnectPoolNodeConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDnsName()
-    {
-    }
-    /**
-     * Output only. The list of DNS names used by this read pool node.
-     *
-     * @param DnsNameMapping[] $dnsNames
-     */
-    public function setDnsNames($dnsNames)
-    {
-    }
-    /**
-     * @return DnsNameMapping[]
-     */
-    public function getDnsNames()
-    {
-    }
-    /**
-     * Output only. Mappings containing IP addresses that can be used to connect
-     * to the read pool node.
-     *
-     * @param IpMapping[] $ipAddresses
-     */
-    public function setIpAddresses($ipAddresses)
-    {
-    }
-    /**
-     * @return IpMapping[]
-     */
-    public function getIpAddresses()
-    {
-    }
-    /**
-     * Output only. The name of the read pool node. Doesn't include the project
-     * ID.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_SQLAdmin_ConnectPoolNodeConfig extends \Google\Service\SQLAdmin\ConnectPoolNodeConfig
     {
     }
 }

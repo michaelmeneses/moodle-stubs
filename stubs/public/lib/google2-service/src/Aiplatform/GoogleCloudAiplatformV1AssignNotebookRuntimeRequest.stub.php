@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1AssignNotebookRuntimeRequest extends \Google\Model
-{
-    protected $notebookRuntimeType = GoogleCloudAiplatformV1NotebookRuntime::class;
-    protected $notebookRuntimeDataType = '';
-    /**
-     * Optional. User specified ID for the notebook runtime.
-     *
-     * @var string
-     */
-    public $notebookRuntimeId;
-    /**
-     * Required. The resource name of the NotebookRuntimeTemplate based on which a
-     * NotebookRuntime will be assigned (reuse or create a new one).
-     *
-     * @var string
-     */
-    public $notebookRuntimeTemplate;
-    /**
-     * Required. Provide runtime specific information (e.g. runtime owner,
-     * notebook id) used for NotebookRuntime assignment.
-     *
-     * @param GoogleCloudAiplatformV1NotebookRuntime $notebookRuntime
-     */
-    public function setNotebookRuntime(GoogleCloudAiplatformV1NotebookRuntime $notebookRuntime)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1AssignNotebookRuntimeRequest extends \Google\Model
     {
+        protected $notebookRuntimeType = GoogleCloudAiplatformV1NotebookRuntime::class;
+        protected $notebookRuntimeDataType = '';
+        /**
+         * Optional. User specified ID for the notebook runtime.
+         *
+         * @var string
+         */
+        public $notebookRuntimeId;
+        /**
+         * Required. The resource name of the NotebookRuntimeTemplate based on which a
+         * NotebookRuntime will be assigned (reuse or create a new one).
+         *
+         * @var string
+         */
+        public $notebookRuntimeTemplate;
+        /**
+         * Required. Provide runtime specific information (e.g. runtime owner,
+         * notebook id) used for NotebookRuntime assignment.
+         *
+         * @param GoogleCloudAiplatformV1NotebookRuntime $notebookRuntime
+         */
+        public function setNotebookRuntime(GoogleCloudAiplatformV1NotebookRuntime $notebookRuntime)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1NotebookRuntime
+         */
+        public function getNotebookRuntime()
+        {
+        }
+        /**
+         * Optional. User specified ID for the notebook runtime.
+         *
+         * @param string $notebookRuntimeId
+         */
+        public function setNotebookRuntimeId($notebookRuntimeId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNotebookRuntimeId()
+        {
+        }
+        /**
+         * Required. The resource name of the NotebookRuntimeTemplate based on which a
+         * NotebookRuntime will be assigned (reuse or create a new one).
+         *
+         * @param string $notebookRuntimeTemplate
+         */
+        public function setNotebookRuntimeTemplate($notebookRuntimeTemplate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNotebookRuntimeTemplate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1NotebookRuntime
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1AssignNotebookRuntimeRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNotebookRuntime()
-    {
-    }
-    /**
-     * Optional. User specified ID for the notebook runtime.
-     *
-     * @param string $notebookRuntimeId
-     */
-    public function setNotebookRuntimeId($notebookRuntimeId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNotebookRuntimeId()
-    {
-    }
-    /**
-     * Required. The resource name of the NotebookRuntimeTemplate based on which a
-     * NotebookRuntime will be assigned (reuse or create a new one).
-     *
-     * @param string $notebookRuntimeTemplate
-     */
-    public function setNotebookRuntimeTemplate($notebookRuntimeTemplate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNotebookRuntimeTemplate()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1AssignNotebookRuntimeRequest extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1AssignNotebookRuntimeRequest
     {
     }
 }

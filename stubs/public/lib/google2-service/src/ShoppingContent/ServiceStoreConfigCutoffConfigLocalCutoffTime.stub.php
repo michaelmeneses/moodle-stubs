@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class ServiceStoreConfigCutoffConfigLocalCutoffTime extends \Google\Model
-{
-    /**
-     * Hour local delivery orders must be placed by to process the same day.
-     *
-     * @var string
-     */
-    public $hour;
-    /**
-     * Minute local delivery orders must be placed by to process the same day.
-     *
-     * @var string
-     */
-    public $minute;
-    /**
-     * Hour local delivery orders must be placed by to process the same day.
-     *
-     * @param string $hour
-     */
-    public function setHour($hour)
+namespace Google\Service\ShoppingContent {
+    class ServiceStoreConfigCutoffConfigLocalCutoffTime extends \Google\Model
     {
+        /**
+         * Hour local delivery orders must be placed by to process the same day.
+         *
+         * @var string
+         */
+        public $hour;
+        /**
+         * Minute local delivery orders must be placed by to process the same day.
+         *
+         * @var string
+         */
+        public $minute;
+        /**
+         * Hour local delivery orders must be placed by to process the same day.
+         *
+         * @param string $hour
+         */
+        public function setHour($hour)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHour()
+        {
+        }
+        /**
+         * Minute local delivery orders must be placed by to process the same day.
+         *
+         * @param string $minute
+         */
+        public function setMinute($minute)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMinute()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\ServiceStoreConfigCutoffConfigLocalCutoffTime registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHour()
-    {
-    }
-    /**
-     * Minute local delivery orders must be placed by to process the same day.
-     *
-     * @param string $minute
-     */
-    public function setMinute($minute)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMinute()
+    class Google_Service_ShoppingContent_ServiceStoreConfigCutoffConfigLocalCutoffTime extends \Google\Service\ShoppingContent\ServiceStoreConfigCutoffConfigLocalCutoffTime
     {
     }
 }

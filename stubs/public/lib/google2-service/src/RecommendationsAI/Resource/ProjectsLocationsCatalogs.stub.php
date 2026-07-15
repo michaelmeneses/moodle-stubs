@@ -21,51 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecommendationsAI\Resource;
-
-/**
- * The "catalogs" collection of methods.
- * Typical usage is:
- *  <code>
- *   $recommendationengineService = new Google\Service\RecommendationsAI(...);
- *   $catalogs = $recommendationengineService->projects_locations_catalogs;
- *  </code>
- */
-class ProjectsLocationsCatalogs extends \Google\Service\Resource
-{
+namespace Google\Service\RecommendationsAI\Resource {
+    use Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1Catalog;
+    use Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1ListCatalogsResponse;
     /**
-     * Lists all the catalog configurations associated with the project.
-     * (catalogs.listProjectsLocationsCatalogs)
-     *
-     * @param string $parent Required. The account resource name with an associated
-     * location.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Optional. Maximum number of results to return. If
-     * unspecified, defaults to 50. Max allowed value is 1000.
-     * @opt_param string pageToken Optional. A page token, received from a previous
-     * `ListCatalogs` call. Provide this to retrieve the subsequent page.
-     * @return GoogleCloudRecommendationengineV1beta1ListCatalogsResponse
-     * @throws \Google\Service\Exception
+     * The "catalogs" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $recommendationengineService = new Google\Service\RecommendationsAI(...);
+     *   $catalogs = $recommendationengineService->projects_locations_catalogs;
+     *  </code>
      */
-    public function listProjectsLocationsCatalogs($parent, $optParams = [])
+    class ProjectsLocationsCatalogs extends \Google\Service\Resource
     {
+        /**
+         * Lists all the catalog configurations associated with the project.
+         * (catalogs.listProjectsLocationsCatalogs)
+         *
+         * @param string $parent Required. The account resource name with an associated
+         * location.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Optional. Maximum number of results to return. If
+         * unspecified, defaults to 50. Max allowed value is 1000.
+         * @opt_param string pageToken Optional. A page token, received from a previous
+         * `ListCatalogs` call. Provide this to retrieve the subsequent page.
+         * @return GoogleCloudRecommendationengineV1beta1ListCatalogsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsCatalogs($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates the catalog configuration. (catalogs.patch)
+         *
+         * @param string $name The fully qualified resource name of the catalog.
+         * @param GoogleCloudRecommendationengineV1beta1Catalog $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Optional. Indicates which fields in the provided
+         * 'catalog' to update. If not set, will only update the
+         * catalog_item_level_config field. Currently only fields that can be updated
+         * are catalog_item_level_config.
+         * @return GoogleCloudRecommendationengineV1beta1Catalog
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, GoogleCloudRecommendationengineV1beta1Catalog $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Updates the catalog configuration. (catalogs.patch)
-     *
-     * @param string $name The fully qualified resource name of the catalog.
-     * @param GoogleCloudRecommendationengineV1beta1Catalog $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Optional. Indicates which fields in the provided
-     * 'catalog' to update. If not set, will only update the
-     * catalog_item_level_config field. Currently only fields that can be updated
-     * are catalog_item_level_config.
-     * @return GoogleCloudRecommendationengineV1beta1Catalog
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\RecommendationsAI\Resource\ProjectsLocationsCatalogs registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function patch($name, GoogleCloudRecommendationengineV1beta1Catalog $postBody, $optParams = [])
+    class Google_Service_RecommendationsAI_Resource_ProjectsLocationsCatalogs extends \Google\Service\RecommendationsAI\Resource\ProjectsLocationsCatalogs
     {
     }
 }

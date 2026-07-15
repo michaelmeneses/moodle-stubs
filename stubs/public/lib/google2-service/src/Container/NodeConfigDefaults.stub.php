@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class NodeConfigDefaults extends \Google\Model
-{
-    protected $containerdConfigType = ContainerdConfig::class;
-    protected $containerdConfigDataType = '';
-    protected $gcfsConfigType = GcfsConfig::class;
-    protected $gcfsConfigDataType = '';
-    protected $loggingConfigType = NodePoolLoggingConfig::class;
-    protected $loggingConfigDataType = '';
-    protected $nodeKubeletConfigType = NodeKubeletConfig::class;
-    protected $nodeKubeletConfigDataType = '';
-    /**
-     * Parameters for containerd customization.
-     *
-     * @param ContainerdConfig $containerdConfig
-     */
-    public function setContainerdConfig(ContainerdConfig $containerdConfig)
+namespace Google\Service\Container {
+    class NodeConfigDefaults extends \Google\Model
     {
+        protected $containerdConfigType = ContainerdConfig::class;
+        protected $containerdConfigDataType = '';
+        protected $gcfsConfigType = GcfsConfig::class;
+        protected $gcfsConfigDataType = '';
+        protected $loggingConfigType = NodePoolLoggingConfig::class;
+        protected $loggingConfigDataType = '';
+        protected $nodeKubeletConfigType = NodeKubeletConfig::class;
+        protected $nodeKubeletConfigDataType = '';
+        /**
+         * Parameters for containerd customization.
+         *
+         * @param ContainerdConfig $containerdConfig
+         */
+        public function setContainerdConfig(ContainerdConfig $containerdConfig)
+        {
+        }
+        /**
+         * @return ContainerdConfig
+         */
+        public function getContainerdConfig()
+        {
+        }
+        /**
+         * GCFS (Google Container File System, also known as Riptide) options.
+         *
+         * @param GcfsConfig $gcfsConfig
+         */
+        public function setGcfsConfig(GcfsConfig $gcfsConfig)
+        {
+        }
+        /**
+         * @return GcfsConfig
+         */
+        public function getGcfsConfig()
+        {
+        }
+        /**
+         * Logging configuration for node pools.
+         *
+         * @param NodePoolLoggingConfig $loggingConfig
+         */
+        public function setLoggingConfig(NodePoolLoggingConfig $loggingConfig)
+        {
+        }
+        /**
+         * @return NodePoolLoggingConfig
+         */
+        public function getLoggingConfig()
+        {
+        }
+        /**
+         * NodeKubeletConfig controls the defaults for new node-pools. Currently only
+         * `insecure_kubelet_readonly_port_enabled` can be set here.
+         *
+         * @param NodeKubeletConfig $nodeKubeletConfig
+         */
+        public function setNodeKubeletConfig(NodeKubeletConfig $nodeKubeletConfig)
+        {
+        }
+        /**
+         * @return NodeKubeletConfig
+         */
+        public function getNodeKubeletConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ContainerdConfig
+     * Runtime class alias of \Google\Service\Container\NodeConfigDefaults registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContainerdConfig()
-    {
-    }
-    /**
-     * GCFS (Google Container File System, also known as Riptide) options.
-     *
-     * @param GcfsConfig $gcfsConfig
-     */
-    public function setGcfsConfig(GcfsConfig $gcfsConfig)
-    {
-    }
-    /**
-     * @return GcfsConfig
-     */
-    public function getGcfsConfig()
-    {
-    }
-    /**
-     * Logging configuration for node pools.
-     *
-     * @param NodePoolLoggingConfig $loggingConfig
-     */
-    public function setLoggingConfig(NodePoolLoggingConfig $loggingConfig)
-    {
-    }
-    /**
-     * @return NodePoolLoggingConfig
-     */
-    public function getLoggingConfig()
-    {
-    }
-    /**
-     * NodeKubeletConfig controls the defaults for new node-pools. Currently only
-     * `insecure_kubelet_readonly_port_enabled` can be set here.
-     *
-     * @param NodeKubeletConfig $nodeKubeletConfig
-     */
-    public function setNodeKubeletConfig(NodeKubeletConfig $nodeKubeletConfig)
-    {
-    }
-    /**
-     * @return NodeKubeletConfig
-     */
-    public function getNodeKubeletConfig()
+    class Google_Service_Container_NodeConfigDefaults extends \Google\Service\Container\NodeConfigDefaults
     {
     }
 }

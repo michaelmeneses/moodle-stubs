@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlTextSentimentInputs extends \Google\Model
-{
-    /**
-     * A sentiment is expressed as an integer ordinal, where higher value means a
-     * more positive sentiment. The range of sentiments that will be used is
-     * between 0 and sentimentMax (inclusive on both ends), and all the values in
-     * the range must be represented in the dataset before a model can be created.
-     * Only the Annotations with this sentimentMax will be used for training.
-     * sentimentMax value must be between 1 and 10 (inclusive).
-     *
-     * @var int
-     */
-    public $sentimentMax;
-    /**
-     * A sentiment is expressed as an integer ordinal, where higher value means a
-     * more positive sentiment. The range of sentiments that will be used is
-     * between 0 and sentimentMax (inclusive on both ends), and all the values in
-     * the range must be represented in the dataset before a model can be created.
-     * Only the Annotations with this sentimentMax will be used for training.
-     * sentimentMax value must be between 1 and 10 (inclusive).
-     *
-     * @param int $sentimentMax
-     */
-    public function setSentimentMax($sentimentMax)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlTextSentimentInputs extends \Google\Model
     {
+        /**
+         * A sentiment is expressed as an integer ordinal, where higher value means a
+         * more positive sentiment. The range of sentiments that will be used is
+         * between 0 and sentimentMax (inclusive on both ends), and all the values in
+         * the range must be represented in the dataset before a model can be created.
+         * Only the Annotations with this sentimentMax will be used for training.
+         * sentimentMax value must be between 1 and 10 (inclusive).
+         *
+         * @var int
+         */
+        public $sentimentMax;
+        /**
+         * A sentiment is expressed as an integer ordinal, where higher value means a
+         * more positive sentiment. The range of sentiments that will be used is
+         * between 0 and sentimentMax (inclusive on both ends), and all the values in
+         * the range must be represented in the dataset before a model can be created.
+         * Only the Annotations with this sentimentMax will be used for training.
+         * sentimentMax value must be between 1 and 10 (inclusive).
+         *
+         * @param int $sentimentMax
+         */
+        public function setSentimentMax($sentimentMax)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSentimentMax()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlTextSentimentInputs registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSentimentMax()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlTextSentimentInputs extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlTextSentimentInputs
     {
     }
 }

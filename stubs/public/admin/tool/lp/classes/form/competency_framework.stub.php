@@ -29,6 +29,8 @@
  */
 namespace tool_lp\form;
 
+use stdClass;
+use core\form\persistent;
 /**
  * Competency framework form.
  *

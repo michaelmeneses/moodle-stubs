@@ -21,184 +21,193 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class ReportRow extends \Google\Model
-{
-    protected $bestSellersType = BestSellers::class;
-    protected $bestSellersDataType = '';
-    protected $brandType = Brand::class;
-    protected $brandDataType = '';
-    protected $competitiveVisibilityType = CompetitiveVisibility::class;
-    protected $competitiveVisibilityDataType = '';
-    protected $metricsType = Metrics::class;
-    protected $metricsDataType = '';
-    protected $priceCompetitivenessType = PriceCompetitiveness::class;
-    protected $priceCompetitivenessDataType = '';
-    protected $priceInsightsType = PriceInsights::class;
-    protected $priceInsightsDataType = '';
-    protected $productClusterType = ProductCluster::class;
-    protected $productClusterDataType = '';
-    protected $productViewType = ProductView::class;
-    protected $productViewDataType = '';
-    protected $segmentsType = Segments::class;
-    protected $segmentsDataType = '';
-    protected $topicTrendsType = TopicTrends::class;
-    protected $topicTrendsDataType = '';
-    /**
-     * Best sellers fields requested by the merchant in the query. Field values
-     * are only set if the merchant queries `BestSellersProductClusterView` or
-     * `BestSellersBrandView`.
-     *
-     * @param BestSellers $bestSellers
-     */
-    public function setBestSellers(BestSellers $bestSellers)
+namespace Google\Service\ShoppingContent {
+    class ReportRow extends \Google\Model
     {
+        protected $bestSellersType = BestSellers::class;
+        protected $bestSellersDataType = '';
+        protected $brandType = Brand::class;
+        protected $brandDataType = '';
+        protected $competitiveVisibilityType = CompetitiveVisibility::class;
+        protected $competitiveVisibilityDataType = '';
+        protected $metricsType = Metrics::class;
+        protected $metricsDataType = '';
+        protected $priceCompetitivenessType = PriceCompetitiveness::class;
+        protected $priceCompetitivenessDataType = '';
+        protected $priceInsightsType = PriceInsights::class;
+        protected $priceInsightsDataType = '';
+        protected $productClusterType = ProductCluster::class;
+        protected $productClusterDataType = '';
+        protected $productViewType = ProductView::class;
+        protected $productViewDataType = '';
+        protected $segmentsType = Segments::class;
+        protected $segmentsDataType = '';
+        protected $topicTrendsType = TopicTrends::class;
+        protected $topicTrendsDataType = '';
+        /**
+         * Best sellers fields requested by the merchant in the query. Field values
+         * are only set if the merchant queries `BestSellersProductClusterView` or
+         * `BestSellersBrandView`.
+         *
+         * @param BestSellers $bestSellers
+         */
+        public function setBestSellers(BestSellers $bestSellers)
+        {
+        }
+        /**
+         * @return BestSellers
+         */
+        public function getBestSellers()
+        {
+        }
+        /**
+         * Brand fields requested by the merchant in the query. Field values are only
+         * set if the merchant queries `BestSellersBrandView`.
+         *
+         * @param Brand $brand
+         */
+        public function setBrand(Brand $brand)
+        {
+        }
+        /**
+         * @return Brand
+         */
+        public function getBrand()
+        {
+        }
+        /**
+         * Competitive visibility fields requested by the merchant in the query. Field
+         * values are only set if the merchant queries
+         * `CompetitiveVisibilityTopMerchantView`,
+         * `CompetitiveVisibilityBenchmarkView` or
+         * `CompetitiveVisibilityCompetitorView`.
+         *
+         * @param CompetitiveVisibility $competitiveVisibility
+         */
+        public function setCompetitiveVisibility(CompetitiveVisibility $competitiveVisibility)
+        {
+        }
+        /**
+         * @return CompetitiveVisibility
+         */
+        public function getCompetitiveVisibility()
+        {
+        }
+        /**
+         * Metrics requested by the merchant in the query. Metric values are only set
+         * for metrics requested explicitly in the query.
+         *
+         * @param Metrics $metrics
+         */
+        public function setMetrics(Metrics $metrics)
+        {
+        }
+        /**
+         * @return Metrics
+         */
+        public function getMetrics()
+        {
+        }
+        /**
+         * Price competitiveness fields requested by the merchant in the query. Field
+         * values are only set if the merchant queries
+         * `PriceCompetitivenessProductView`.
+         *
+         * @param PriceCompetitiveness $priceCompetitiveness
+         */
+        public function setPriceCompetitiveness(PriceCompetitiveness $priceCompetitiveness)
+        {
+        }
+        /**
+         * @return PriceCompetitiveness
+         */
+        public function getPriceCompetitiveness()
+        {
+        }
+        /**
+         * Price insights fields requested by the merchant in the query. Field values
+         * are only set if the merchant queries `PriceInsightsProductView`.
+         *
+         * @param PriceInsights $priceInsights
+         */
+        public function setPriceInsights(PriceInsights $priceInsights)
+        {
+        }
+        /**
+         * @return PriceInsights
+         */
+        public function getPriceInsights()
+        {
+        }
+        /**
+         * Product cluster fields requested by the merchant in the query. Field values
+         * are only set if the merchant queries `BestSellersProductClusterView`.
+         *
+         * @param ProductCluster $productCluster
+         */
+        public function setProductCluster(ProductCluster $productCluster)
+        {
+        }
+        /**
+         * @return ProductCluster
+         */
+        public function getProductCluster()
+        {
+        }
+        /**
+         * Product fields requested by the merchant in the query. Field values are
+         * only set if the merchant queries `ProductView`.
+         *
+         * @param ProductView $productView
+         */
+        public function setProductView(ProductView $productView)
+        {
+        }
+        /**
+         * @return ProductView
+         */
+        public function getProductView()
+        {
+        }
+        /**
+         * Segmentation dimensions requested by the merchant in the query. Dimension
+         * values are only set for dimensions requested explicitly in the query.
+         *
+         * @param Segments $segments
+         */
+        public function setSegments(Segments $segments)
+        {
+        }
+        /**
+         * @return Segments
+         */
+        public function getSegments()
+        {
+        }
+        /**
+         * [Topic trends](https://support.google.com/merchants/answer/13542370) fields
+         * requested by the merchant in the query. Field values are only set if the
+         * merchant queries `TopicTrendsView`.
+         *
+         * @param TopicTrends $topicTrends
+         */
+        public function setTopicTrends(TopicTrends $topicTrends)
+        {
+        }
+        /**
+         * @return TopicTrends
+         */
+        public function getTopicTrends()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BestSellers
+     * Runtime class alias of \Google\Service\ShoppingContent\ReportRow registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBestSellers()
-    {
-    }
-    /**
-     * Brand fields requested by the merchant in the query. Field values are only
-     * set if the merchant queries `BestSellersBrandView`.
-     *
-     * @param Brand $brand
-     */
-    public function setBrand(Brand $brand)
-    {
-    }
-    /**
-     * @return Brand
-     */
-    public function getBrand()
-    {
-    }
-    /**
-     * Competitive visibility fields requested by the merchant in the query. Field
-     * values are only set if the merchant queries
-     * `CompetitiveVisibilityTopMerchantView`,
-     * `CompetitiveVisibilityBenchmarkView` or
-     * `CompetitiveVisibilityCompetitorView`.
-     *
-     * @param CompetitiveVisibility $competitiveVisibility
-     */
-    public function setCompetitiveVisibility(CompetitiveVisibility $competitiveVisibility)
-    {
-    }
-    /**
-     * @return CompetitiveVisibility
-     */
-    public function getCompetitiveVisibility()
-    {
-    }
-    /**
-     * Metrics requested by the merchant in the query. Metric values are only set
-     * for metrics requested explicitly in the query.
-     *
-     * @param Metrics $metrics
-     */
-    public function setMetrics(Metrics $metrics)
-    {
-    }
-    /**
-     * @return Metrics
-     */
-    public function getMetrics()
-    {
-    }
-    /**
-     * Price competitiveness fields requested by the merchant in the query. Field
-     * values are only set if the merchant queries
-     * `PriceCompetitivenessProductView`.
-     *
-     * @param PriceCompetitiveness $priceCompetitiveness
-     */
-    public function setPriceCompetitiveness(PriceCompetitiveness $priceCompetitiveness)
-    {
-    }
-    /**
-     * @return PriceCompetitiveness
-     */
-    public function getPriceCompetitiveness()
-    {
-    }
-    /**
-     * Price insights fields requested by the merchant in the query. Field values
-     * are only set if the merchant queries `PriceInsightsProductView`.
-     *
-     * @param PriceInsights $priceInsights
-     */
-    public function setPriceInsights(PriceInsights $priceInsights)
-    {
-    }
-    /**
-     * @return PriceInsights
-     */
-    public function getPriceInsights()
-    {
-    }
-    /**
-     * Product cluster fields requested by the merchant in the query. Field values
-     * are only set if the merchant queries `BestSellersProductClusterView`.
-     *
-     * @param ProductCluster $productCluster
-     */
-    public function setProductCluster(ProductCluster $productCluster)
-    {
-    }
-    /**
-     * @return ProductCluster
-     */
-    public function getProductCluster()
-    {
-    }
-    /**
-     * Product fields requested by the merchant in the query. Field values are
-     * only set if the merchant queries `ProductView`.
-     *
-     * @param ProductView $productView
-     */
-    public function setProductView(ProductView $productView)
-    {
-    }
-    /**
-     * @return ProductView
-     */
-    public function getProductView()
-    {
-    }
-    /**
-     * Segmentation dimensions requested by the merchant in the query. Dimension
-     * values are only set for dimensions requested explicitly in the query.
-     *
-     * @param Segments $segments
-     */
-    public function setSegments(Segments $segments)
-    {
-    }
-    /**
-     * @return Segments
-     */
-    public function getSegments()
-    {
-    }
-    /**
-     * [Topic trends](https://support.google.com/merchants/answer/13542370) fields
-     * requested by the merchant in the query. Field values are only set if the
-     * merchant queries `TopicTrendsView`.
-     *
-     * @param TopicTrends $topicTrends
-     */
-    public function setTopicTrends(TopicTrends $topicTrends)
-    {
-    }
-    /**
-     * @return TopicTrends
-     */
-    public function getTopicTrends()
+    class Google_Service_ShoppingContent_ReportRow extends \Google\Service\ShoppingContent\ReportRow
     {
     }
 }

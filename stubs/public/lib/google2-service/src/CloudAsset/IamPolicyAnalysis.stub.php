@@ -21,80 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class IamPolicyAnalysis extends \Google\Collection
-{
-    protected $collection_key = 'nonCriticalErrors';
-    protected $analysisQueryType = IamPolicyAnalysisQuery::class;
-    protected $analysisQueryDataType = '';
-    protected $analysisResultsType = IamPolicyAnalysisResult::class;
-    protected $analysisResultsDataType = 'array';
-    /**
-     * Represents whether all entries in the analysis_results have been fully
-     * explored to answer the query.
-     *
-     * @var bool
-     */
-    public $fullyExplored;
-    protected $nonCriticalErrorsType = IamPolicyAnalysisState::class;
-    protected $nonCriticalErrorsDataType = 'array';
-    /**
-     * The analysis query.
-     *
-     * @param IamPolicyAnalysisQuery $analysisQuery
-     */
-    public function setAnalysisQuery(IamPolicyAnalysisQuery $analysisQuery)
+namespace Google\Service\CloudAsset {
+    class IamPolicyAnalysis extends \Google\Collection
     {
+        protected $collection_key = 'nonCriticalErrors';
+        protected $analysisQueryType = IamPolicyAnalysisQuery::class;
+        protected $analysisQueryDataType = '';
+        protected $analysisResultsType = IamPolicyAnalysisResult::class;
+        protected $analysisResultsDataType = 'array';
+        /**
+         * Represents whether all entries in the analysis_results have been fully
+         * explored to answer the query.
+         *
+         * @var bool
+         */
+        public $fullyExplored;
+        protected $nonCriticalErrorsType = IamPolicyAnalysisState::class;
+        protected $nonCriticalErrorsDataType = 'array';
+        /**
+         * The analysis query.
+         *
+         * @param IamPolicyAnalysisQuery $analysisQuery
+         */
+        public function setAnalysisQuery(IamPolicyAnalysisQuery $analysisQuery)
+        {
+        }
+        /**
+         * @return IamPolicyAnalysisQuery
+         */
+        public function getAnalysisQuery()
+        {
+        }
+        /**
+         * A list of IamPolicyAnalysisResult that matches the analysis query, or empty
+         * if no result is found.
+         *
+         * @param IamPolicyAnalysisResult[] $analysisResults
+         */
+        public function setAnalysisResults($analysisResults)
+        {
+        }
+        /**
+         * @return IamPolicyAnalysisResult[]
+         */
+        public function getAnalysisResults()
+        {
+        }
+        /**
+         * Represents whether all entries in the analysis_results have been fully
+         * explored to answer the query.
+         *
+         * @param bool $fullyExplored
+         */
+        public function setFullyExplored($fullyExplored)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getFullyExplored()
+        {
+        }
+        /**
+         * A list of non-critical errors happened during the query handling.
+         *
+         * @param IamPolicyAnalysisState[] $nonCriticalErrors
+         */
+        public function setNonCriticalErrors($nonCriticalErrors)
+        {
+        }
+        /**
+         * @return IamPolicyAnalysisState[]
+         */
+        public function getNonCriticalErrors()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return IamPolicyAnalysisQuery
+     * Runtime class alias of \Google\Service\CloudAsset\IamPolicyAnalysis registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnalysisQuery()
-    {
-    }
-    /**
-     * A list of IamPolicyAnalysisResult that matches the analysis query, or empty
-     * if no result is found.
-     *
-     * @param IamPolicyAnalysisResult[] $analysisResults
-     */
-    public function setAnalysisResults($analysisResults)
-    {
-    }
-    /**
-     * @return IamPolicyAnalysisResult[]
-     */
-    public function getAnalysisResults()
-    {
-    }
-    /**
-     * Represents whether all entries in the analysis_results have been fully
-     * explored to answer the query.
-     *
-     * @param bool $fullyExplored
-     */
-    public function setFullyExplored($fullyExplored)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getFullyExplored()
-    {
-    }
-    /**
-     * A list of non-critical errors happened during the query handling.
-     *
-     * @param IamPolicyAnalysisState[] $nonCriticalErrors
-     */
-    public function setNonCriticalErrors($nonCriticalErrors)
-    {
-    }
-    /**
-     * @return IamPolicyAnalysisState[]
-     */
-    public function getNonCriticalErrors()
+    class Google_Service_CloudAsset_IamPolicyAnalysis extends \Google\Service\CloudAsset\IamPolicyAnalysis
     {
     }
 }

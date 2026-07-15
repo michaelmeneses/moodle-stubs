@@ -16,6 +16,12 @@
  */
 namespace Monolog\Handler;
 
+use Monolog\Formatter\ChromePHPFormatter;
+use Monolog\Formatter\FormatterInterface;
+use Monolog\Level;
+use Monolog\Utils;
+use Monolog\LogRecord;
+use Monolog\JsonSerializableDateTimeImmutable;
 /**
  * Handler sending logs to the ChromePHP extension (http://www.chromephp.com/)
  *

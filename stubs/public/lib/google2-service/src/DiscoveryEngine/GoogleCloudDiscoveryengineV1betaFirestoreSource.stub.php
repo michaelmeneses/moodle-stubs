@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaFirestoreSource extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $collectionId;
-    /**
-     * @var string
-     */
-    public $databaseId;
-    /**
-     * @var string
-     */
-    public $gcsStagingDir;
-    /**
-     * @var string
-     */
-    public $projectId;
-    /**
-     * @param string
-     */
-    public function setCollectionId($collectionId)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaFirestoreSource extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $collectionId;
+        /**
+         * @var string
+         */
+        public $databaseId;
+        /**
+         * @var string
+         */
+        public $gcsStagingDir;
+        /**
+         * @var string
+         */
+        public $projectId;
+        /**
+         * @param string
+         */
+        public function setCollectionId($collectionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCollectionId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDatabaseId($databaseId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatabaseId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setGcsStagingDir($gcsStagingDir)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGcsStagingDir()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaFirestoreSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCollectionId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDatabaseId($databaseId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDatabaseId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setGcsStagingDir($gcsStagingDir)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGcsStagingDir()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setProjectId($projectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProjectId()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaFirestoreSource extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaFirestoreSource
     {
     }
 }

@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkServices;
-
-class EndpointMatcherMetadataLabelMatcherMetadataLabels extends \Google\Model
-{
-    /**
-     * Required. Label name presented as key in xDS Node Metadata.
-     *
-     * @var string
-     */
-    public $labelName;
-    /**
-     * Required. Label value presented as value corresponding to the above key, in
-     * xDS Node Metadata.
-     *
-     * @var string
-     */
-    public $labelValue;
-    /**
-     * Required. Label name presented as key in xDS Node Metadata.
-     *
-     * @param string $labelName
-     */
-    public function setLabelName($labelName)
+namespace Google\Service\NetworkServices {
+    class EndpointMatcherMetadataLabelMatcherMetadataLabels extends \Google\Model
     {
+        /**
+         * Required. Label name presented as key in xDS Node Metadata.
+         *
+         * @var string
+         */
+        public $labelName;
+        /**
+         * Required. Label value presented as value corresponding to the above key, in
+         * xDS Node Metadata.
+         *
+         * @var string
+         */
+        public $labelValue;
+        /**
+         * Required. Label name presented as key in xDS Node Metadata.
+         *
+         * @param string $labelName
+         */
+        public function setLabelName($labelName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLabelName()
+        {
+        }
+        /**
+         * Required. Label value presented as value corresponding to the above key, in
+         * xDS Node Metadata.
+         *
+         * @param string $labelValue
+         */
+        public function setLabelValue($labelValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLabelValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetworkServices\EndpointMatcherMetadataLabelMatcherMetadataLabels registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLabelName()
-    {
-    }
-    /**
-     * Required. Label value presented as value corresponding to the above key, in
-     * xDS Node Metadata.
-     *
-     * @param string $labelValue
-     */
-    public function setLabelValue($labelValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLabelValue()
+    class Google_Service_NetworkServices_EndpointMatcherMetadataLabelMatcherMetadataLabels extends \Google\Service\NetworkServices\EndpointMatcherMetadataLabelMatcherMetadataLabels
     {
     }
 }

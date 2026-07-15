@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class SingleClusterRouting extends \Google\Model
-{
-    /**
-     * Whether or not `CheckAndMutateRow` and `ReadModifyWriteRow` requests are
-     * allowed by this app profile. It is unsafe to send these requests to the
-     * same table/row/column in multiple clusters.
-     *
-     * @var bool
-     */
-    public $allowTransactionalWrites;
-    /**
-     * The cluster to which read/write requests should be routed.
-     *
-     * @var string
-     */
-    public $clusterId;
-    /**
-     * Whether or not `CheckAndMutateRow` and `ReadModifyWriteRow` requests are
-     * allowed by this app profile. It is unsafe to send these requests to the
-     * same table/row/column in multiple clusters.
-     *
-     * @param bool $allowTransactionalWrites
-     */
-    public function setAllowTransactionalWrites($allowTransactionalWrites)
+namespace Google\Service\BigtableAdmin {
+    class SingleClusterRouting extends \Google\Model
     {
+        /**
+         * Whether or not `CheckAndMutateRow` and `ReadModifyWriteRow` requests are
+         * allowed by this app profile. It is unsafe to send these requests to the
+         * same table/row/column in multiple clusters.
+         *
+         * @var bool
+         */
+        public $allowTransactionalWrites;
+        /**
+         * The cluster to which read/write requests should be routed.
+         *
+         * @var string
+         */
+        public $clusterId;
+        /**
+         * Whether or not `CheckAndMutateRow` and `ReadModifyWriteRow` requests are
+         * allowed by this app profile. It is unsafe to send these requests to the
+         * same table/row/column in multiple clusters.
+         *
+         * @param bool $allowTransactionalWrites
+         */
+        public function setAllowTransactionalWrites($allowTransactionalWrites)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAllowTransactionalWrites()
+        {
+        }
+        /**
+         * The cluster to which read/write requests should be routed.
+         *
+         * @param string $clusterId
+         */
+        public function setClusterId($clusterId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClusterId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\BigtableAdmin\SingleClusterRouting registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowTransactionalWrites()
-    {
-    }
-    /**
-     * The cluster to which read/write requests should be routed.
-     *
-     * @param string $clusterId
-     */
-    public function setClusterId($clusterId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getClusterId()
+    class Google_Service_BigtableAdmin_SingleClusterRouting extends \Google\Service\BigtableAdmin\SingleClusterRouting
     {
     }
 }

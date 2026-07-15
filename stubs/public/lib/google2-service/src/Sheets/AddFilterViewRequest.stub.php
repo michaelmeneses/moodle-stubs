@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class AddFilterViewRequest extends \Google\Model
-{
-    protected $filterType = FilterView::class;
-    protected $filterDataType = '';
-    /**
-     * The filter to add. The filterViewId field is optional; if one is not set,
-     * an id will be randomly generated. (It is an error to specify the ID of a
-     * filter that already exists.)
-     *
-     * @param FilterView $filter
-     */
-    public function setFilter(FilterView $filter)
+namespace Google\Service\Sheets {
+    class AddFilterViewRequest extends \Google\Model
     {
+        protected $filterType = FilterView::class;
+        protected $filterDataType = '';
+        /**
+         * The filter to add. The filterViewId field is optional; if one is not set,
+         * an id will be randomly generated. (It is an error to specify the ID of a
+         * filter that already exists.)
+         *
+         * @param FilterView $filter
+         */
+        public function setFilter(FilterView $filter)
+        {
+        }
+        /**
+         * @return FilterView
+         */
+        public function getFilter()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FilterView
+     * Runtime class alias of \Google\Service\Sheets\AddFilterViewRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFilter()
+    class Google_Service_Sheets_AddFilterViewRequest extends \Google\Service\Sheets\AddFilterViewRequest
     {
     }
 }

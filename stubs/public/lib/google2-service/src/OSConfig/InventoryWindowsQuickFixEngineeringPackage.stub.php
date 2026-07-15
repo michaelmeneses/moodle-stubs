@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OSConfig;
-
-class InventoryWindowsQuickFixEngineeringPackage extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $caption;
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var string
-     */
-    public $hotFixId;
-    /**
-     * @var string
-     */
-    public $installTime;
-    /**
-     * @param string
-     */
-    public function setCaption($caption)
+namespace Google\Service\OSConfig {
+    class InventoryWindowsQuickFixEngineeringPackage extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $caption;
+        /**
+         * @var string
+         */
+        public $description;
+        /**
+         * @var string
+         */
+        public $hotFixId;
+        /**
+         * @var string
+         */
+        public $installTime;
+        /**
+         * @param string
+         */
+        public function setCaption($caption)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCaption()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setHotFixId($hotFixId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHotFixId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setInstallTime($installTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstallTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OSConfig\InventoryWindowsQuickFixEngineeringPackage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCaption()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setHotFixId($hotFixId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHotFixId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setInstallTime($installTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInstallTime()
+    class Google_Service_OSConfig_InventoryWindowsQuickFixEngineeringPackage extends \Google\Service\OSConfig\InventoryWindowsQuickFixEngineeringPackage
     {
     }
 }

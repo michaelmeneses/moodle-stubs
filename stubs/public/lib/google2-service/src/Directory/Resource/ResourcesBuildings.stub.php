@@ -21,113 +21,124 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory\Resource;
-
-/**
- * The "buildings" collection of methods.
- * Typical usage is:
- *  <code>
- *   $adminService = new Google\Service\Directory(...);
- *   $buildings = $adminService->resources_buildings;
- *  </code>
- */
-class ResourcesBuildings extends \Google\Service\Resource
-{
+namespace Google\Service\Directory\Resource {
+    use Google\Service\Directory\Building;
+    use Google\Service\Directory\Buildings;
     /**
-     * Deletes a building. (buildings.delete)
-     *
-     * @param string $customer The unique ID for the customer's Google Workspace
-     * account. As an account administrator, you can also use the `my_customer`
-     * alias to represent your account's customer ID.
-     * @param string $buildingId The id of the building to delete.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * The "buildings" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $adminService = new Google\Service\Directory(...);
+     *   $buildings = $adminService->resources_buildings;
+     *  </code>
      */
-    public function delete($customer, $buildingId, $optParams = [])
+    class ResourcesBuildings extends \Google\Service\Resource
     {
+        /**
+         * Deletes a building. (buildings.delete)
+         *
+         * @param string $customer The unique ID for the customer's Google Workspace
+         * account. As an account administrator, you can also use the `my_customer`
+         * alias to represent your account's customer ID.
+         * @param string $buildingId The id of the building to delete.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($customer, $buildingId, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves a building. (buildings.get)
+         *
+         * @param string $customer The unique ID for the customer's Google Workspace
+         * account. As an account administrator, you can also use the `my_customer`
+         * alias to represent your account's customer ID.
+         * @param string $buildingId The unique ID of the building to retrieve.
+         * @param array $optParams Optional parameters.
+         * @return Building
+         * @throws \Google\Service\Exception
+         */
+        public function get($customer, $buildingId, $optParams = [])
+        {
+        }
+        /**
+         * Inserts a building. (buildings.insert)
+         *
+         * @param string $customer The unique ID for the customer's Google Workspace
+         * account. As an account administrator, you can also use the `my_customer`
+         * alias to represent your account's customer ID.
+         * @param Building $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string coordinatesSource Source from which Building.coordinates
+         * are derived.
+         * @return Building
+         * @throws \Google\Service\Exception
+         */
+        public function insert($customer, Building $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves a list of buildings for an account.
+         * (buildings.listResourcesBuildings)
+         *
+         * @param string $customer The unique ID for the customer's Google Workspace
+         * account. As an account administrator, you can also use the `my_customer`
+         * alias to represent your account's customer ID.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int maxResults Maximum number of results to return.
+         * @opt_param string pageToken Token to specify the next page in the list.
+         * @return Buildings
+         * @throws \Google\Service\Exception
+         */
+        public function listResourcesBuildings($customer, $optParams = [])
+        {
+        }
+        /**
+         * Patches a building. (buildings.patch)
+         *
+         * @param string $customer The unique ID for the customer's Google Workspace
+         * account. As an account administrator, you can also use the `my_customer`
+         * alias to represent your account's customer ID.
+         * @param string $buildingId The id of the building to update.
+         * @param Building $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string coordinatesSource Source from which Building.coordinates
+         * are derived.
+         * @return Building
+         * @throws \Google\Service\Exception
+         */
+        public function patch($customer, $buildingId, Building $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Updates a building. (buildings.update)
+         *
+         * @param string $customer The unique ID for the customer's Google Workspace
+         * account. As an account administrator, you can also use the `my_customer`
+         * alias to represent your account's customer ID.
+         * @param string $buildingId The id of the building to update.
+         * @param Building $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string coordinatesSource Source from which Building.coordinates
+         * are derived.
+         * @return Building
+         * @throws \Google\Service\Exception
+         */
+        public function update($customer, $buildingId, Building $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Retrieves a building. (buildings.get)
-     *
-     * @param string $customer The unique ID for the customer's Google Workspace
-     * account. As an account administrator, you can also use the `my_customer`
-     * alias to represent your account's customer ID.
-     * @param string $buildingId The unique ID of the building to retrieve.
-     * @param array $optParams Optional parameters.
-     * @return Building
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Directory\Resource\ResourcesBuildings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($customer, $buildingId, $optParams = [])
-    {
-    }
-    /**
-     * Inserts a building. (buildings.insert)
-     *
-     * @param string $customer The unique ID for the customer's Google Workspace
-     * account. As an account administrator, you can also use the `my_customer`
-     * alias to represent your account's customer ID.
-     * @param Building $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string coordinatesSource Source from which Building.coordinates
-     * are derived.
-     * @return Building
-     * @throws \Google\Service\Exception
-     */
-    public function insert($customer, Building $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Retrieves a list of buildings for an account.
-     * (buildings.listResourcesBuildings)
-     *
-     * @param string $customer The unique ID for the customer's Google Workspace
-     * account. As an account administrator, you can also use the `my_customer`
-     * alias to represent your account's customer ID.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int maxResults Maximum number of results to return.
-     * @opt_param string pageToken Token to specify the next page in the list.
-     * @return Buildings
-     * @throws \Google\Service\Exception
-     */
-    public function listResourcesBuildings($customer, $optParams = [])
-    {
-    }
-    /**
-     * Patches a building. (buildings.patch)
-     *
-     * @param string $customer The unique ID for the customer's Google Workspace
-     * account. As an account administrator, you can also use the `my_customer`
-     * alias to represent your account's customer ID.
-     * @param string $buildingId The id of the building to update.
-     * @param Building $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string coordinatesSource Source from which Building.coordinates
-     * are derived.
-     * @return Building
-     * @throws \Google\Service\Exception
-     */
-    public function patch($customer, $buildingId, Building $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Updates a building. (buildings.update)
-     *
-     * @param string $customer The unique ID for the customer's Google Workspace
-     * account. As an account administrator, you can also use the `my_customer`
-     * alias to represent your account's customer ID.
-     * @param string $buildingId The id of the building to update.
-     * @param Building $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string coordinatesSource Source from which Building.coordinates
-     * are derived.
-     * @return Building
-     * @throws \Google\Service\Exception
-     */
-    public function update($customer, $buildingId, Building $postBody, $optParams = [])
+    class Google_Service_Directory_Resource_ResourcesBuildings extends \Google\Service\Directory\Resource\ResourcesBuildings
     {
     }
 }

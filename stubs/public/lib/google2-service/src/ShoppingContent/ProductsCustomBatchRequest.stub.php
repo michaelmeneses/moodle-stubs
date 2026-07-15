@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class ProductsCustomBatchRequest extends \Google\Collection
-{
-    protected $collection_key = 'entries';
-    protected $entriesType = ProductsCustomBatchRequestEntry::class;
-    protected $entriesDataType = 'array';
-    /**
-     * The request entries to be processed in the batch.
-     *
-     * @param ProductsCustomBatchRequestEntry[] $entries
-     */
-    public function setEntries($entries)
+namespace Google\Service\ShoppingContent {
+    class ProductsCustomBatchRequest extends \Google\Collection
     {
+        protected $collection_key = 'entries';
+        protected $entriesType = ProductsCustomBatchRequestEntry::class;
+        protected $entriesDataType = 'array';
+        /**
+         * The request entries to be processed in the batch.
+         *
+         * @param ProductsCustomBatchRequestEntry[] $entries
+         */
+        public function setEntries($entries)
+        {
+        }
+        /**
+         * @return ProductsCustomBatchRequestEntry[]
+         */
+        public function getEntries()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ProductsCustomBatchRequestEntry[]
+     * Runtime class alias of \Google\Service\ShoppingContent\ProductsCustomBatchRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntries()
+    class Google_Service_ShoppingContent_ProductsCustomBatchRequest extends \Google\Service\ShoppingContent\ProductsCustomBatchRequest
     {
     }
 }

@@ -21,248 +21,257 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class TableCellStyleSuggestionState extends \Google\Model
-{
-    /**
-     * Indicates if there was a suggested change to background_color.
-     *
-     * @var bool
-     */
-    public $backgroundColorSuggested;
-    /**
-     * Indicates if there was a suggested change to border_bottom.
-     *
-     * @var bool
-     */
-    public $borderBottomSuggested;
-    /**
-     * Indicates if there was a suggested change to border_left.
-     *
-     * @var bool
-     */
-    public $borderLeftSuggested;
-    /**
-     * Indicates if there was a suggested change to border_right.
-     *
-     * @var bool
-     */
-    public $borderRightSuggested;
-    /**
-     * Indicates if there was a suggested change to border_top.
-     *
-     * @var bool
-     */
-    public $borderTopSuggested;
-    /**
-     * Indicates if there was a suggested change to column_span.
-     *
-     * @var bool
-     */
-    public $columnSpanSuggested;
-    /**
-     * Indicates if there was a suggested change to content_alignment.
-     *
-     * @var bool
-     */
-    public $contentAlignmentSuggested;
-    /**
-     * Indicates if there was a suggested change to padding_bottom.
-     *
-     * @var bool
-     */
-    public $paddingBottomSuggested;
-    /**
-     * Indicates if there was a suggested change to padding_left.
-     *
-     * @var bool
-     */
-    public $paddingLeftSuggested;
-    /**
-     * Indicates if there was a suggested change to padding_right.
-     *
-     * @var bool
-     */
-    public $paddingRightSuggested;
-    /**
-     * Indicates if there was a suggested change to padding_top.
-     *
-     * @var bool
-     */
-    public $paddingTopSuggested;
-    /**
-     * Indicates if there was a suggested change to row_span.
-     *
-     * @var bool
-     */
-    public $rowSpanSuggested;
-    /**
-     * Indicates if there was a suggested change to background_color.
-     *
-     * @param bool $backgroundColorSuggested
-     */
-    public function setBackgroundColorSuggested($backgroundColorSuggested)
+namespace Google\Service\Docs {
+    class TableCellStyleSuggestionState extends \Google\Model
     {
+        /**
+         * Indicates if there was a suggested change to background_color.
+         *
+         * @var bool
+         */
+        public $backgroundColorSuggested;
+        /**
+         * Indicates if there was a suggested change to border_bottom.
+         *
+         * @var bool
+         */
+        public $borderBottomSuggested;
+        /**
+         * Indicates if there was a suggested change to border_left.
+         *
+         * @var bool
+         */
+        public $borderLeftSuggested;
+        /**
+         * Indicates if there was a suggested change to border_right.
+         *
+         * @var bool
+         */
+        public $borderRightSuggested;
+        /**
+         * Indicates if there was a suggested change to border_top.
+         *
+         * @var bool
+         */
+        public $borderTopSuggested;
+        /**
+         * Indicates if there was a suggested change to column_span.
+         *
+         * @var bool
+         */
+        public $columnSpanSuggested;
+        /**
+         * Indicates if there was a suggested change to content_alignment.
+         *
+         * @var bool
+         */
+        public $contentAlignmentSuggested;
+        /**
+         * Indicates if there was a suggested change to padding_bottom.
+         *
+         * @var bool
+         */
+        public $paddingBottomSuggested;
+        /**
+         * Indicates if there was a suggested change to padding_left.
+         *
+         * @var bool
+         */
+        public $paddingLeftSuggested;
+        /**
+         * Indicates if there was a suggested change to padding_right.
+         *
+         * @var bool
+         */
+        public $paddingRightSuggested;
+        /**
+         * Indicates if there was a suggested change to padding_top.
+         *
+         * @var bool
+         */
+        public $paddingTopSuggested;
+        /**
+         * Indicates if there was a suggested change to row_span.
+         *
+         * @var bool
+         */
+        public $rowSpanSuggested;
+        /**
+         * Indicates if there was a suggested change to background_color.
+         *
+         * @param bool $backgroundColorSuggested
+         */
+        public function setBackgroundColorSuggested($backgroundColorSuggested)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getBackgroundColorSuggested()
+        {
+        }
+        /**
+         * Indicates if there was a suggested change to border_bottom.
+         *
+         * @param bool $borderBottomSuggested
+         */
+        public function setBorderBottomSuggested($borderBottomSuggested)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getBorderBottomSuggested()
+        {
+        }
+        /**
+         * Indicates if there was a suggested change to border_left.
+         *
+         * @param bool $borderLeftSuggested
+         */
+        public function setBorderLeftSuggested($borderLeftSuggested)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getBorderLeftSuggested()
+        {
+        }
+        /**
+         * Indicates if there was a suggested change to border_right.
+         *
+         * @param bool $borderRightSuggested
+         */
+        public function setBorderRightSuggested($borderRightSuggested)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getBorderRightSuggested()
+        {
+        }
+        /**
+         * Indicates if there was a suggested change to border_top.
+         *
+         * @param bool $borderTopSuggested
+         */
+        public function setBorderTopSuggested($borderTopSuggested)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getBorderTopSuggested()
+        {
+        }
+        /**
+         * Indicates if there was a suggested change to column_span.
+         *
+         * @param bool $columnSpanSuggested
+         */
+        public function setColumnSpanSuggested($columnSpanSuggested)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getColumnSpanSuggested()
+        {
+        }
+        /**
+         * Indicates if there was a suggested change to content_alignment.
+         *
+         * @param bool $contentAlignmentSuggested
+         */
+        public function setContentAlignmentSuggested($contentAlignmentSuggested)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getContentAlignmentSuggested()
+        {
+        }
+        /**
+         * Indicates if there was a suggested change to padding_bottom.
+         *
+         * @param bool $paddingBottomSuggested
+         */
+        public function setPaddingBottomSuggested($paddingBottomSuggested)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPaddingBottomSuggested()
+        {
+        }
+        /**
+         * Indicates if there was a suggested change to padding_left.
+         *
+         * @param bool $paddingLeftSuggested
+         */
+        public function setPaddingLeftSuggested($paddingLeftSuggested)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPaddingLeftSuggested()
+        {
+        }
+        /**
+         * Indicates if there was a suggested change to padding_right.
+         *
+         * @param bool $paddingRightSuggested
+         */
+        public function setPaddingRightSuggested($paddingRightSuggested)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPaddingRightSuggested()
+        {
+        }
+        /**
+         * Indicates if there was a suggested change to padding_top.
+         *
+         * @param bool $paddingTopSuggested
+         */
+        public function setPaddingTopSuggested($paddingTopSuggested)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPaddingTopSuggested()
+        {
+        }
+        /**
+         * Indicates if there was a suggested change to row_span.
+         *
+         * @param bool $rowSpanSuggested
+         */
+        public function setRowSpanSuggested($rowSpanSuggested)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getRowSpanSuggested()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Docs\TableCellStyleSuggestionState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackgroundColorSuggested()
-    {
-    }
-    /**
-     * Indicates if there was a suggested change to border_bottom.
-     *
-     * @param bool $borderBottomSuggested
-     */
-    public function setBorderBottomSuggested($borderBottomSuggested)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getBorderBottomSuggested()
-    {
-    }
-    /**
-     * Indicates if there was a suggested change to border_left.
-     *
-     * @param bool $borderLeftSuggested
-     */
-    public function setBorderLeftSuggested($borderLeftSuggested)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getBorderLeftSuggested()
-    {
-    }
-    /**
-     * Indicates if there was a suggested change to border_right.
-     *
-     * @param bool $borderRightSuggested
-     */
-    public function setBorderRightSuggested($borderRightSuggested)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getBorderRightSuggested()
-    {
-    }
-    /**
-     * Indicates if there was a suggested change to border_top.
-     *
-     * @param bool $borderTopSuggested
-     */
-    public function setBorderTopSuggested($borderTopSuggested)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getBorderTopSuggested()
-    {
-    }
-    /**
-     * Indicates if there was a suggested change to column_span.
-     *
-     * @param bool $columnSpanSuggested
-     */
-    public function setColumnSpanSuggested($columnSpanSuggested)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getColumnSpanSuggested()
-    {
-    }
-    /**
-     * Indicates if there was a suggested change to content_alignment.
-     *
-     * @param bool $contentAlignmentSuggested
-     */
-    public function setContentAlignmentSuggested($contentAlignmentSuggested)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getContentAlignmentSuggested()
-    {
-    }
-    /**
-     * Indicates if there was a suggested change to padding_bottom.
-     *
-     * @param bool $paddingBottomSuggested
-     */
-    public function setPaddingBottomSuggested($paddingBottomSuggested)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPaddingBottomSuggested()
-    {
-    }
-    /**
-     * Indicates if there was a suggested change to padding_left.
-     *
-     * @param bool $paddingLeftSuggested
-     */
-    public function setPaddingLeftSuggested($paddingLeftSuggested)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPaddingLeftSuggested()
-    {
-    }
-    /**
-     * Indicates if there was a suggested change to padding_right.
-     *
-     * @param bool $paddingRightSuggested
-     */
-    public function setPaddingRightSuggested($paddingRightSuggested)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPaddingRightSuggested()
-    {
-    }
-    /**
-     * Indicates if there was a suggested change to padding_top.
-     *
-     * @param bool $paddingTopSuggested
-     */
-    public function setPaddingTopSuggested($paddingTopSuggested)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPaddingTopSuggested()
-    {
-    }
-    /**
-     * Indicates if there was a suggested change to row_span.
-     *
-     * @param bool $rowSpanSuggested
-     */
-    public function setRowSpanSuggested($rowSpanSuggested)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getRowSpanSuggested()
+    class Google_Service_Docs_TableCellStyleSuggestionState extends \Google\Service\Docs\TableCellStyleSuggestionState
     {
     }
 }

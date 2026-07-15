@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudShell;
-
-class AddPublicKeyResponse extends \Google\Model
-{
-    /**
-     * Key that was added to the environment.
-     *
-     * @var string
-     */
-    public $key;
-    /**
-     * Key that was added to the environment.
-     *
-     * @param string $key
-     */
-    public function setKey($key)
+namespace Google\Service\CloudShell {
+    class AddPublicKeyResponse extends \Google\Model
     {
+        /**
+         * Key that was added to the environment.
+         *
+         * @var string
+         */
+        public $key;
+        /**
+         * Key that was added to the environment.
+         *
+         * @param string $key
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudShell\AddPublicKeyResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKey()
+    class Google_Service_CloudShell_AddPublicKeyResponse extends \Google\Service\CloudShell\AddPublicKeyResponse
     {
     }
 }

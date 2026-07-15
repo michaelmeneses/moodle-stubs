@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1ListDependenciesResponse extends \Google\Collection
-{
-    protected $collection_key = 'dependencies';
-    protected $dependenciesType = GoogleCloudApihubV1Dependency::class;
-    protected $dependenciesDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The dependency resources present in the API hub.
-     *
-     * @param GoogleCloudApihubV1Dependency[] $dependencies
-     */
-    public function setDependencies($dependencies)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1ListDependenciesResponse extends \Google\Collection
     {
+        protected $collection_key = 'dependencies';
+        protected $dependenciesType = GoogleCloudApihubV1Dependency::class;
+        protected $dependenciesDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The dependency resources present in the API hub.
+         *
+         * @param GoogleCloudApihubV1Dependency[] $dependencies
+         */
+        public function setDependencies($dependencies)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1Dependency[]
+         */
+        public function getDependencies()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApihubV1Dependency[]
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1ListDependenciesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDependencies()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_APIhub_GoogleCloudApihubV1ListDependenciesResponse extends \Google\Service\APIhub\GoogleCloudApihubV1ListDependenciesResponse
     {
     }
 }

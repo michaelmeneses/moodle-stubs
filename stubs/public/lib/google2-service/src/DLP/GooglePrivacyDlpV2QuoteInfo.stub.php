@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2QuoteInfo extends \Google\Model
-{
-    protected $dateTimeType = GooglePrivacyDlpV2DateTime::class;
-    protected $dateTimeDataType = '';
-    /**
-     * The date time indicated by the quote.
-     *
-     * @param GooglePrivacyDlpV2DateTime $dateTime
-     */
-    public function setDateTime(GooglePrivacyDlpV2DateTime $dateTime)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2QuoteInfo extends \Google\Model
     {
+        protected $dateTimeType = GooglePrivacyDlpV2DateTime::class;
+        protected $dateTimeDataType = '';
+        /**
+         * The date time indicated by the quote.
+         *
+         * @param GooglePrivacyDlpV2DateTime $dateTime
+         */
+        public function setDateTime(GooglePrivacyDlpV2DateTime $dateTime)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2DateTime
+         */
+        public function getDateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2DateTime
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2QuoteInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDateTime()
+    class Google_Service_DLP_GooglePrivacyDlpV2QuoteInfo extends \Google\Service\DLP\GooglePrivacyDlpV2QuoteInfo
     {
     }
 }

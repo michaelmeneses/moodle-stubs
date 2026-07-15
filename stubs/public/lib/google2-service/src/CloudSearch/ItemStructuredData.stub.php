@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class ItemStructuredData extends \Google\Model
-{
-    /**
-     * Hashing value provided by the API caller. This can be used with the
-     * items.push method to calculate modified state. The maximum length is 2048
-     * characters.
-     *
-     * @var string
-     */
-    public $hash;
-    protected $objectType = StructuredDataObject::class;
-    protected $objectDataType = '';
-    /**
-     * Hashing value provided by the API caller. This can be used with the
-     * items.push method to calculate modified state. The maximum length is 2048
-     * characters.
-     *
-     * @param string $hash
-     */
-    public function setHash($hash)
+namespace Google\Service\CloudSearch {
+    class ItemStructuredData extends \Google\Model
     {
+        /**
+         * Hashing value provided by the API caller. This can be used with the
+         * items.push method to calculate modified state. The maximum length is 2048
+         * characters.
+         *
+         * @var string
+         */
+        public $hash;
+        protected $objectType = StructuredDataObject::class;
+        protected $objectDataType = '';
+        /**
+         * Hashing value provided by the API caller. This can be used with the
+         * items.push method to calculate modified state. The maximum length is 2048
+         * characters.
+         *
+         * @param string $hash
+         */
+        public function setHash($hash)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHash()
+        {
+        }
+        /**
+         * The structured data object that should conform to a registered object
+         * definition in the schema for the data source.
+         *
+         * @param StructuredDataObject $object
+         */
+        public function setObject(StructuredDataObject $object)
+        {
+        }
+        /**
+         * @return StructuredDataObject
+         */
+        public function getObject()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\ItemStructuredData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHash()
-    {
-    }
-    /**
-     * The structured data object that should conform to a registered object
-     * definition in the schema for the data source.
-     *
-     * @param StructuredDataObject $object
-     */
-    public function setObject(StructuredDataObject $object)
-    {
-    }
-    /**
-     * @return StructuredDataObject
-     */
-    public function getObject()
+    class Google_Service_CloudSearch_ItemStructuredData extends \Google\Service\CloudSearch\ItemStructuredData
     {
     }
 }

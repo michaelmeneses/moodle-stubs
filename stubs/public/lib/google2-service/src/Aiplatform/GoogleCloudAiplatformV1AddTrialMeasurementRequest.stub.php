@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1AddTrialMeasurementRequest extends \Google\Model
-{
-    protected $measurementType = GoogleCloudAiplatformV1Measurement::class;
-    protected $measurementDataType = '';
-    /**
-     * Required. The measurement to be added to a Trial.
-     *
-     * @param GoogleCloudAiplatformV1Measurement $measurement
-     */
-    public function setMeasurement(GoogleCloudAiplatformV1Measurement $measurement)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1AddTrialMeasurementRequest extends \Google\Model
     {
+        protected $measurementType = GoogleCloudAiplatformV1Measurement::class;
+        protected $measurementDataType = '';
+        /**
+         * Required. The measurement to be added to a Trial.
+         *
+         * @param GoogleCloudAiplatformV1Measurement $measurement
+         */
+        public function setMeasurement(GoogleCloudAiplatformV1Measurement $measurement)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1Measurement
+         */
+        public function getMeasurement()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1Measurement
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1AddTrialMeasurementRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMeasurement()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1AddTrialMeasurementRequest extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1AddTrialMeasurementRequest
     {
     }
 }

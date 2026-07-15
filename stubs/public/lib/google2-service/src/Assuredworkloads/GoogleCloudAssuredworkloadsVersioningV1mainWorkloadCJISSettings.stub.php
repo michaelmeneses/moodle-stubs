@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Assuredworkloads;
-
-class GoogleCloudAssuredworkloadsVersioningV1mainWorkloadCJISSettings extends \Google\Model
-{
-    protected $kmsSettingsType = GoogleCloudAssuredworkloadsVersioningV1mainWorkloadKMSSettings::class;
-    protected $kmsSettingsDataType = '';
-    /**
-     * @param GoogleCloudAssuredworkloadsVersioningV1mainWorkloadKMSSettings
-     */
-    public function setKmsSettings(GoogleCloudAssuredworkloadsVersioningV1mainWorkloadKMSSettings $kmsSettings)
+namespace Google\Service\Assuredworkloads {
+    class GoogleCloudAssuredworkloadsVersioningV1mainWorkloadCJISSettings extends \Google\Model
     {
+        protected $kmsSettingsType = GoogleCloudAssuredworkloadsVersioningV1mainWorkloadKMSSettings::class;
+        protected $kmsSettingsDataType = '';
+        /**
+         * @param GoogleCloudAssuredworkloadsVersioningV1mainWorkloadKMSSettings
+         */
+        public function setKmsSettings(GoogleCloudAssuredworkloadsVersioningV1mainWorkloadKMSSettings $kmsSettings)
+        {
+        }
+        /**
+         * @return GoogleCloudAssuredworkloadsVersioningV1mainWorkloadKMSSettings
+         */
+        public function getKmsSettings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAssuredworkloadsVersioningV1mainWorkloadKMSSettings
+     * Runtime class alias of \Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsVersioningV1mainWorkloadCJISSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKmsSettings()
+    class Google_Service_Assuredworkloads_GoogleCloudAssuredworkloadsVersioningV1mainWorkloadCJISSettings extends \Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsVersioningV1mainWorkloadCJISSettings
     {
     }
 }

@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides;
-
-class TableBorderCell extends \Google\Model
-{
-    protected $locationType = TableCellLocation::class;
-    protected $locationDataType = '';
-    protected $tableBorderPropertiesType = TableBorderProperties::class;
-    protected $tableBorderPropertiesDataType = '';
-    /**
-     * The location of the border within the border table.
-     *
-     * @param TableCellLocation $location
-     */
-    public function setLocation(TableCellLocation $location)
+namespace Google\Service\Slides {
+    class TableBorderCell extends \Google\Model
     {
+        protected $locationType = TableCellLocation::class;
+        protected $locationDataType = '';
+        protected $tableBorderPropertiesType = TableBorderProperties::class;
+        protected $tableBorderPropertiesDataType = '';
+        /**
+         * The location of the border within the border table.
+         *
+         * @param TableCellLocation $location
+         */
+        public function setLocation(TableCellLocation $location)
+        {
+        }
+        /**
+         * @return TableCellLocation
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * The border properties.
+         *
+         * @param TableBorderProperties $tableBorderProperties
+         */
+        public function setTableBorderProperties(TableBorderProperties $tableBorderProperties)
+        {
+        }
+        /**
+         * @return TableBorderProperties
+         */
+        public function getTableBorderProperties()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TableCellLocation
+     * Runtime class alias of \Google\Service\Slides\TableBorderCell registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLocation()
-    {
-    }
-    /**
-     * The border properties.
-     *
-     * @param TableBorderProperties $tableBorderProperties
-     */
-    public function setTableBorderProperties(TableBorderProperties $tableBorderProperties)
-    {
-    }
-    /**
-     * @return TableBorderProperties
-     */
-    public function getTableBorderProperties()
+    class Google_Service_Slides_TableBorderCell extends \Google\Service\Slides\TableBorderCell
     {
     }
 }

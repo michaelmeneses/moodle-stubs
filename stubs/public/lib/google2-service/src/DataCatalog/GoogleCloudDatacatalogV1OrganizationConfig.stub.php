@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1OrganizationConfig extends \Google\Model
-{
-    protected $configType = GoogleCloudDatacatalogV1MigrationConfig::class;
-    protected $configDataType = 'map';
-    /**
-     * Map of organizations and project resource names and their configuration.
-     * The format for the map keys is `organizations/{organizationId}` or
-     * `projects/{projectId}`.
-     *
-     * @param GoogleCloudDatacatalogV1MigrationConfig[] $config
-     */
-    public function setConfig($config)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1OrganizationConfig extends \Google\Model
     {
+        protected $configType = GoogleCloudDatacatalogV1MigrationConfig::class;
+        protected $configDataType = 'map';
+        /**
+         * Map of organizations and project resource names and their configuration.
+         * The format for the map keys is `organizations/{organizationId}` or
+         * `projects/{projectId}`.
+         *
+         * @param GoogleCloudDatacatalogV1MigrationConfig[] $config
+         */
+        public function setConfig($config)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1MigrationConfig[]
+         */
+        public function getConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatacatalogV1MigrationConfig[]
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1OrganizationConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfig()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1OrganizationConfig extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1OrganizationConfig
     {
     }
 }

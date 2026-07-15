@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Recommender;
-
-class GoogleCloudRecommenderV1RecommendationContent extends \Google\Collection
-{
-    protected $collection_key = 'operationGroups';
-    protected $operationGroupsType = GoogleCloudRecommenderV1OperationGroup::class;
-    protected $operationGroupsDataType = 'array';
-    /**
-     * Condensed overview information about the recommendation.
-     *
-     * @var array[]
-     */
-    public $overview;
-    /**
-     * Operations to one or more Google Cloud resources grouped in such a way
-     * that, all operations within one group are expected to be performed
-     * atomically and in an order.
-     *
-     * @param GoogleCloudRecommenderV1OperationGroup[] $operationGroups
-     */
-    public function setOperationGroups($operationGroups)
+namespace Google\Service\Recommender {
+    class GoogleCloudRecommenderV1RecommendationContent extends \Google\Collection
     {
+        protected $collection_key = 'operationGroups';
+        protected $operationGroupsType = GoogleCloudRecommenderV1OperationGroup::class;
+        protected $operationGroupsDataType = 'array';
+        /**
+         * Condensed overview information about the recommendation.
+         *
+         * @var array[]
+         */
+        public $overview;
+        /**
+         * Operations to one or more Google Cloud resources grouped in such a way
+         * that, all operations within one group are expected to be performed
+         * atomically and in an order.
+         *
+         * @param GoogleCloudRecommenderV1OperationGroup[] $operationGroups
+         */
+        public function setOperationGroups($operationGroups)
+        {
+        }
+        /**
+         * @return GoogleCloudRecommenderV1OperationGroup[]
+         */
+        public function getOperationGroups()
+        {
+        }
+        /**
+         * Condensed overview information about the recommendation.
+         *
+         * @param array[] $overview
+         */
+        public function setOverview($overview)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getOverview()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRecommenderV1OperationGroup[]
+     * Runtime class alias of \Google\Service\Recommender\GoogleCloudRecommenderV1RecommendationContent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOperationGroups()
-    {
-    }
-    /**
-     * Condensed overview information about the recommendation.
-     *
-     * @param array[] $overview
-     */
-    public function setOverview($overview)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getOverview()
+    class Google_Service_Recommender_GoogleCloudRecommenderV1RecommendationContent extends \Google\Service\Recommender\GoogleCloudRecommenderV1RecommendationContent
     {
     }
 }

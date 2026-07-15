@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Backupdr;
-
-class DiskDataSourceProperties extends \Google\Model
-{
-    /**
-     * The description of the disk.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Name of the disk backed up by the datasource.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The size of the disk in GB.
-     *
-     * @var string
-     */
-    public $sizeGb;
-    /**
-     * The type of the disk.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The description of the disk.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\Backupdr {
+    class DiskDataSourceProperties extends \Google\Model
     {
+        /**
+         * The description of the disk.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Name of the disk backed up by the datasource.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The size of the disk in GB.
+         *
+         * @var string
+         */
+        public $sizeGb;
+        /**
+         * The type of the disk.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The description of the disk.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Name of the disk backed up by the datasource.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The size of the disk in GB.
+         *
+         * @param string $sizeGb
+         */
+        public function setSizeGb($sizeGb)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSizeGb()
+        {
+        }
+        /**
+         * The type of the disk.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Backupdr\DiskDataSourceProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * Name of the disk backed up by the datasource.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The size of the disk in GB.
-     *
-     * @param string $sizeGb
-     */
-    public function setSizeGb($sizeGb)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSizeGb()
-    {
-    }
-    /**
-     * The type of the disk.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_Backupdr_DiskDataSourceProperties extends \Google\Service\Backupdr\DiskDataSourceProperties
     {
     }
 }

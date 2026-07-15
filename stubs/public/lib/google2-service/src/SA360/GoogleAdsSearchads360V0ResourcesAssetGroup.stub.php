@@ -21,280 +21,289 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0ResourcesAssetGroup extends \Google\Collection
-{
-    /**
-     * Not specified.
-     */
-    public const AD_STRENGTH_UNSPECIFIED = 'UNSPECIFIED';
-    /**
-     * Used for return value only. Represents value unknown in this version.
-     */
-    public const AD_STRENGTH_UNKNOWN = 'UNKNOWN';
-    /**
-     * The ad strength is currently pending.
-     */
-    public const AD_STRENGTH_PENDING = 'PENDING';
-    /**
-     * No ads could be generated.
-     */
-    public const AD_STRENGTH_NO_ADS = 'NO_ADS';
-    /**
-     * Poor strength.
-     */
-    public const AD_STRENGTH_POOR = 'POOR';
-    /**
-     * Average strength.
-     */
-    public const AD_STRENGTH_AVERAGE = 'AVERAGE';
-    /**
-     * Good strength.
-     */
-    public const AD_STRENGTH_GOOD = 'GOOD';
-    /**
-     * Excellent strength.
-     */
-    public const AD_STRENGTH_EXCELLENT = 'EXCELLENT';
-    /**
-     * The status has not been specified.
-     */
-    public const STATUS_UNSPECIFIED = 'UNSPECIFIED';
-    /**
-     * The received value is not known in this version.
-     */
-    public const STATUS_UNKNOWN = 'UNKNOWN';
-    /**
-     * The asset group is enabled.
-     */
-    public const STATUS_ENABLED = 'ENABLED';
-    /**
-     * The asset group is paused.
-     */
-    public const STATUS_PAUSED = 'PAUSED';
-    /**
-     * The asset group is removed.
-     */
-    public const STATUS_REMOVED = 'REMOVED';
-    protected $collection_key = 'finalUrls';
-    /**
-     * Output only. Overall ad strength of this asset group.
-     *
-     * @var string
-     */
-    public $adStrength;
-    /**
-     * Immutable. The campaign with which this asset group is associated. The
-     * asset which is linked to the asset group.
-     *
-     * @var string
-     */
-    public $campaign;
-    /**
-     * A list of final mobile URLs after all cross domain redirects. In
-     * performance max, by default, the urls are eligible for expansion unless
-     * opted out.
-     *
-     * @var string[]
-     */
-    public $finalMobileUrls;
-    /**
-     * A list of final URLs after all cross domain redirects. In performance max,
-     * by default, the urls are eligible for expansion unless opted out.
-     *
-     * @var string[]
-     */
-    public $finalUrls;
-    /**
-     * Output only. The ID of the asset group.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Required. Name of the asset group. Required. It must have a minimum length
-     * of 1 and maximum length of 128. It must be unique under a campaign.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * First part of text that may appear appended to the url displayed in the ad.
-     *
-     * @var string
-     */
-    public $path1;
-    /**
-     * Second part of text that may appear appended to the url displayed in the
-     * ad. This field can only be set when path1 is set.
-     *
-     * @var string
-     */
-    public $path2;
-    /**
-     * Immutable. The resource name of the asset group. Asset group resource names
-     * have the form: `customers/{customer_id}/assetGroups/{asset_group_id}`
-     *
-     * @var string
-     */
-    public $resourceName;
-    /**
-     * The status of the asset group.
-     *
-     * @var string
-     */
-    public $status;
-    /**
-     * Output only. Overall ad strength of this asset group.
-     *
-     * Accepted values: UNSPECIFIED, UNKNOWN, PENDING, NO_ADS, POOR, AVERAGE,
-     * GOOD, EXCELLENT
-     *
-     * @param self::AD_STRENGTH_* $adStrength
-     */
-    public function setAdStrength($adStrength)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0ResourcesAssetGroup extends \Google\Collection
     {
+        /**
+         * Not specified.
+         */
+        public const AD_STRENGTH_UNSPECIFIED = 'UNSPECIFIED';
+        /**
+         * Used for return value only. Represents value unknown in this version.
+         */
+        public const AD_STRENGTH_UNKNOWN = 'UNKNOWN';
+        /**
+         * The ad strength is currently pending.
+         */
+        public const AD_STRENGTH_PENDING = 'PENDING';
+        /**
+         * No ads could be generated.
+         */
+        public const AD_STRENGTH_NO_ADS = 'NO_ADS';
+        /**
+         * Poor strength.
+         */
+        public const AD_STRENGTH_POOR = 'POOR';
+        /**
+         * Average strength.
+         */
+        public const AD_STRENGTH_AVERAGE = 'AVERAGE';
+        /**
+         * Good strength.
+         */
+        public const AD_STRENGTH_GOOD = 'GOOD';
+        /**
+         * Excellent strength.
+         */
+        public const AD_STRENGTH_EXCELLENT = 'EXCELLENT';
+        /**
+         * The status has not been specified.
+         */
+        public const STATUS_UNSPECIFIED = 'UNSPECIFIED';
+        /**
+         * The received value is not known in this version.
+         */
+        public const STATUS_UNKNOWN = 'UNKNOWN';
+        /**
+         * The asset group is enabled.
+         */
+        public const STATUS_ENABLED = 'ENABLED';
+        /**
+         * The asset group is paused.
+         */
+        public const STATUS_PAUSED = 'PAUSED';
+        /**
+         * The asset group is removed.
+         */
+        public const STATUS_REMOVED = 'REMOVED';
+        protected $collection_key = 'finalUrls';
+        /**
+         * Output only. Overall ad strength of this asset group.
+         *
+         * @var string
+         */
+        public $adStrength;
+        /**
+         * Immutable. The campaign with which this asset group is associated. The
+         * asset which is linked to the asset group.
+         *
+         * @var string
+         */
+        public $campaign;
+        /**
+         * A list of final mobile URLs after all cross domain redirects. In
+         * performance max, by default, the urls are eligible for expansion unless
+         * opted out.
+         *
+         * @var string[]
+         */
+        public $finalMobileUrls;
+        /**
+         * A list of final URLs after all cross domain redirects. In performance max,
+         * by default, the urls are eligible for expansion unless opted out.
+         *
+         * @var string[]
+         */
+        public $finalUrls;
+        /**
+         * Output only. The ID of the asset group.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Required. Name of the asset group. Required. It must have a minimum length
+         * of 1 and maximum length of 128. It must be unique under a campaign.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * First part of text that may appear appended to the url displayed in the ad.
+         *
+         * @var string
+         */
+        public $path1;
+        /**
+         * Second part of text that may appear appended to the url displayed in the
+         * ad. This field can only be set when path1 is set.
+         *
+         * @var string
+         */
+        public $path2;
+        /**
+         * Immutable. The resource name of the asset group. Asset group resource names
+         * have the form: `customers/{customer_id}/assetGroups/{asset_group_id}`
+         *
+         * @var string
+         */
+        public $resourceName;
+        /**
+         * The status of the asset group.
+         *
+         * @var string
+         */
+        public $status;
+        /**
+         * Output only. Overall ad strength of this asset group.
+         *
+         * Accepted values: UNSPECIFIED, UNKNOWN, PENDING, NO_ADS, POOR, AVERAGE,
+         * GOOD, EXCELLENT
+         *
+         * @param self::AD_STRENGTH_* $adStrength
+         */
+        public function setAdStrength($adStrength)
+        {
+        }
+        /**
+         * @return self::AD_STRENGTH_*
+         */
+        public function getAdStrength()
+        {
+        }
+        /**
+         * Immutable. The campaign with which this asset group is associated. The
+         * asset which is linked to the asset group.
+         *
+         * @param string $campaign
+         */
+        public function setCampaign($campaign)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCampaign()
+        {
+        }
+        /**
+         * A list of final mobile URLs after all cross domain redirects. In
+         * performance max, by default, the urls are eligible for expansion unless
+         * opted out.
+         *
+         * @param string[] $finalMobileUrls
+         */
+        public function setFinalMobileUrls($finalMobileUrls)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getFinalMobileUrls()
+        {
+        }
+        /**
+         * A list of final URLs after all cross domain redirects. In performance max,
+         * by default, the urls are eligible for expansion unless opted out.
+         *
+         * @param string[] $finalUrls
+         */
+        public function setFinalUrls($finalUrls)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getFinalUrls()
+        {
+        }
+        /**
+         * Output only. The ID of the asset group.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Required. Name of the asset group. Required. It must have a minimum length
+         * of 1 and maximum length of 128. It must be unique under a campaign.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * First part of text that may appear appended to the url displayed in the ad.
+         *
+         * @param string $path1
+         */
+        public function setPath1($path1)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath1()
+        {
+        }
+        /**
+         * Second part of text that may appear appended to the url displayed in the
+         * ad. This field can only be set when path1 is set.
+         *
+         * @param string $path2
+         */
+        public function setPath2($path2)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath2()
+        {
+        }
+        /**
+         * Immutable. The resource name of the asset group. Asset group resource names
+         * have the form: `customers/{customer_id}/assetGroups/{asset_group_id}`
+         *
+         * @param string $resourceName
+         */
+        public function setResourceName($resourceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceName()
+        {
+        }
+        /**
+         * The status of the asset group.
+         *
+         * Accepted values: UNSPECIFIED, UNKNOWN, ENABLED, PAUSED, REMOVED
+         *
+         * @param self::STATUS_* $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return self::STATUS_*
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::AD_STRENGTH_*
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0ResourcesAssetGroup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdStrength()
-    {
-    }
-    /**
-     * Immutable. The campaign with which this asset group is associated. The
-     * asset which is linked to the asset group.
-     *
-     * @param string $campaign
-     */
-    public function setCampaign($campaign)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCampaign()
-    {
-    }
-    /**
-     * A list of final mobile URLs after all cross domain redirects. In
-     * performance max, by default, the urls are eligible for expansion unless
-     * opted out.
-     *
-     * @param string[] $finalMobileUrls
-     */
-    public function setFinalMobileUrls($finalMobileUrls)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getFinalMobileUrls()
-    {
-    }
-    /**
-     * A list of final URLs after all cross domain redirects. In performance max,
-     * by default, the urls are eligible for expansion unless opted out.
-     *
-     * @param string[] $finalUrls
-     */
-    public function setFinalUrls($finalUrls)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getFinalUrls()
-    {
-    }
-    /**
-     * Output only. The ID of the asset group.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Required. Name of the asset group. Required. It must have a minimum length
-     * of 1 and maximum length of 128. It must be unique under a campaign.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * First part of text that may appear appended to the url displayed in the ad.
-     *
-     * @param string $path1
-     */
-    public function setPath1($path1)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPath1()
-    {
-    }
-    /**
-     * Second part of text that may appear appended to the url displayed in the
-     * ad. This field can only be set when path1 is set.
-     *
-     * @param string $path2
-     */
-    public function setPath2($path2)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPath2()
-    {
-    }
-    /**
-     * Immutable. The resource name of the asset group. Asset group resource names
-     * have the form: `customers/{customer_id}/assetGroups/{asset_group_id}`
-     *
-     * @param string $resourceName
-     */
-    public function setResourceName($resourceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceName()
-    {
-    }
-    /**
-     * The status of the asset group.
-     *
-     * Accepted values: UNSPECIFIED, UNKNOWN, ENABLED, PAUSED, REMOVED
-     *
-     * @param self::STATUS_* $status
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return self::STATUS_*
-     */
-    public function getStatus()
+    class Google_Service_SA360_GoogleAdsSearchads360V0ResourcesAssetGroup extends \Google\Service\SA360\GoogleAdsSearchads360V0ResourcesAssetGroup
     {
     }
 }

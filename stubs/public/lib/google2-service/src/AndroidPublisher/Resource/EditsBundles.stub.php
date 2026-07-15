@@ -21,51 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher\Resource;
-
-/**
- * The "bundles" collection of methods.
- * Typical usage is:
- *  <code>
- *   $androidpublisherService = new Google\Service\AndroidPublisher(...);
- *   $bundles = $androidpublisherService->edits_bundles;
- *  </code>
- */
-class EditsBundles extends \Google\Service\Resource
-{
+namespace Google\Service\AndroidPublisher\Resource {
+    use Google\Service\AndroidPublisher\Bundle;
+    use Google\Service\AndroidPublisher\BundlesListResponse;
     /**
-     * Lists all current Android App Bundles of the app and edit.
-     * (bundles.listEditsBundles)
-     *
-     * @param string $packageName Package name of the app.
-     * @param string $editId Identifier of the edit.
-     * @param array $optParams Optional parameters.
-     * @return BundlesListResponse
-     * @throws \Google\Service\Exception
+     * The "bundles" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $androidpublisherService = new Google\Service\AndroidPublisher(...);
+     *   $bundles = $androidpublisherService->edits_bundles;
+     *  </code>
      */
-    public function listEditsBundles($packageName, $editId, $optParams = [])
+    class EditsBundles extends \Google\Service\Resource
     {
+        /**
+         * Lists all current Android App Bundles of the app and edit.
+         * (bundles.listEditsBundles)
+         *
+         * @param string $packageName Package name of the app.
+         * @param string $editId Identifier of the edit.
+         * @param array $optParams Optional parameters.
+         * @return BundlesListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listEditsBundles($packageName, $editId, $optParams = [])
+        {
+        }
+        /**
+         * Uploads a new Android App Bundle to this edit. If you are using the Google
+         * API client libraries, please increase the timeout of the http request before
+         * calling this endpoint (a timeout of 2 minutes is recommended). See [Timeouts
+         * and Errors](https://developers.google.com/api-client-library/java/google-api-
+         * java-client/errors) for an example in java. (bundles.upload)
+         *
+         * @param string $packageName Package name of the app.
+         * @param string $editId Identifier of the edit.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool ackBundleInstallationWarning Deprecated. The installation
+         * warning has been removed, it's not necessary to set this field anymore.
+         * @opt_param string deviceTierConfigId Device tier config (DTC) to be used for
+         * generating deliverables (APKs). Contains id of the DTC or "LATEST" for last
+         * uploaded DTC.
+         * @return Bundle
+         * @throws \Google\Service\Exception
+         */
+        public function upload($packageName, $editId, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Uploads a new Android App Bundle to this edit. If you are using the Google
-     * API client libraries, please increase the timeout of the http request before
-     * calling this endpoint (a timeout of 2 minutes is recommended). See [Timeouts
-     * and Errors](https://developers.google.com/api-client-library/java/google-api-
-     * java-client/errors) for an example in java. (bundles.upload)
-     *
-     * @param string $packageName Package name of the app.
-     * @param string $editId Identifier of the edit.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool ackBundleInstallationWarning Deprecated. The installation
-     * warning has been removed, it's not necessary to set this field anymore.
-     * @opt_param string deviceTierConfigId Device tier config (DTC) to be used for
-     * generating deliverables (APKs). Contains id of the DTC or "LATEST" for last
-     * uploaded DTC.
-     * @return Bundle
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\AndroidPublisher\Resource\EditsBundles registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function upload($packageName, $editId, $optParams = [])
+    class Google_Service_AndroidPublisher_Resource_EditsBundles extends \Google\Service\AndroidPublisher\Resource\EditsBundles
     {
     }
 }

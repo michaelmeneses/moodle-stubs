@@ -21,52 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for CloudRetail (v2).
- *
- * <p>
- * Vertex AI Search for commerce API is made up of Retail Search, Browse and
- * Recommendations. These discovery AI solutions help you implement personalized
- * search, browse and recommendations, based on machine learning models, across
- * your websites and mobile applications.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://cloud.google.com/recommendations" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class CloudRetail extends \Google\Service
-{
-    /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
-    const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
-    public $projects_locations_catalogs;
-    public $projects_locations_catalogs_attributesConfig;
-    public $projects_locations_catalogs_branches_operations;
-    public $projects_locations_catalogs_branches_products;
-    public $projects_locations_catalogs_completionData;
-    public $projects_locations_catalogs_controls;
-    public $projects_locations_catalogs_generativeQuestion;
-    public $projects_locations_catalogs_generativeQuestions;
-    public $projects_locations_catalogs_models;
-    public $projects_locations_catalogs_operations;
-    public $projects_locations_catalogs_placements;
-    public $projects_locations_catalogs_servingConfigs;
-    public $projects_locations_catalogs_userEvents;
-    public $projects_locations_operations;
-    public $projects_operations;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the CloudRetail service.
+     * Service definition for CloudRetail (v2).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * Vertex AI Search for commerce API is made up of Retail Search, Browse and
+     * Recommendations. These discovery AI solutions help you implement personalized
+     * search, browse and recommendations, based on machine learning models, across
+     * your websites and mobile applications.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://cloud.google.com/recommendations" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class CloudRetail extends \Google\Service
+    {
+        /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
+        const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
+        public $projects_locations_catalogs;
+        public $projects_locations_catalogs_attributesConfig;
+        public $projects_locations_catalogs_branches_operations;
+        public $projects_locations_catalogs_branches_products;
+        public $projects_locations_catalogs_completionData;
+        public $projects_locations_catalogs_controls;
+        public $projects_locations_catalogs_generativeQuestion;
+        public $projects_locations_catalogs_generativeQuestions;
+        public $projects_locations_catalogs_models;
+        public $projects_locations_catalogs_operations;
+        public $projects_locations_catalogs_placements;
+        public $projects_locations_catalogs_servingConfigs;
+        public $projects_locations_catalogs_userEvents;
+        public $projects_locations_operations;
+        public $projects_operations;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the CloudRetail service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudRetail registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudRetail extends \Google\Service\CloudRetail
     {
     }
 }

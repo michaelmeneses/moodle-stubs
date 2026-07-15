@@ -21,98 +21,107 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsHub;
-
-class Replica extends \Google\Model
-{
-    /**
-     * Default value. This value is unused.
-     */
-    public const PRIMARY_STATE_PRIMARY_STATE_UNSPECIFIED = 'PRIMARY_STATE_UNSPECIFIED';
-    /**
-     * The replica is the primary replica.
-     */
-    public const PRIMARY_STATE_PRIMARY_REPLICA = 'PRIMARY_REPLICA';
-    /**
-     * Default value. This value is unused.
-     */
-    public const REPLICA_STATE_REPLICA_STATE_UNSPECIFIED = 'REPLICA_STATE_UNSPECIFIED';
-    /**
-     * The replica is backfilled and ready to use.
-     */
-    public const REPLICA_STATE_READY_TO_USE = 'READY_TO_USE';
-    /**
-     * The replica is unavailable, does not exist, or has not been backfilled yet.
-     */
-    public const REPLICA_STATE_UNAVAILABLE = 'UNAVAILABLE';
-    /**
-     * Output only. The geographic location where the replica resides. See
-     * [BigQuery locations](https://cloud.google.com/bigquery/docs/locations) for
-     * supported locations. Eg. "us-central1".
-     *
-     * @var string
-     */
-    public $location;
-    /**
-     * Output only. Indicates that this replica is the primary replica.
-     *
-     * @var string
-     */
-    public $primaryState;
-    /**
-     * Output only. Assigned by Analytics Hub based on real BigQuery replication
-     * state.
-     *
-     * @var string
-     */
-    public $replicaState;
-    /**
-     * Output only. The geographic location where the replica resides. See
-     * [BigQuery locations](https://cloud.google.com/bigquery/docs/locations) for
-     * supported locations. Eg. "us-central1".
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
+namespace Google\Service\AnalyticsHub {
+    class Replica extends \Google\Model
     {
+        /**
+         * Default value. This value is unused.
+         */
+        public const PRIMARY_STATE_PRIMARY_STATE_UNSPECIFIED = 'PRIMARY_STATE_UNSPECIFIED';
+        /**
+         * The replica is the primary replica.
+         */
+        public const PRIMARY_STATE_PRIMARY_REPLICA = 'PRIMARY_REPLICA';
+        /**
+         * Default value. This value is unused.
+         */
+        public const REPLICA_STATE_REPLICA_STATE_UNSPECIFIED = 'REPLICA_STATE_UNSPECIFIED';
+        /**
+         * The replica is backfilled and ready to use.
+         */
+        public const REPLICA_STATE_READY_TO_USE = 'READY_TO_USE';
+        /**
+         * The replica is unavailable, does not exist, or has not been backfilled yet.
+         */
+        public const REPLICA_STATE_UNAVAILABLE = 'UNAVAILABLE';
+        /**
+         * Output only. The geographic location where the replica resides. See
+         * [BigQuery locations](https://cloud.google.com/bigquery/docs/locations) for
+         * supported locations. Eg. "us-central1".
+         *
+         * @var string
+         */
+        public $location;
+        /**
+         * Output only. Indicates that this replica is the primary replica.
+         *
+         * @var string
+         */
+        public $primaryState;
+        /**
+         * Output only. Assigned by Analytics Hub based on real BigQuery replication
+         * state.
+         *
+         * @var string
+         */
+        public $replicaState;
+        /**
+         * Output only. The geographic location where the replica resides. See
+         * [BigQuery locations](https://cloud.google.com/bigquery/docs/locations) for
+         * supported locations. Eg. "us-central1".
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * Output only. Indicates that this replica is the primary replica.
+         *
+         * Accepted values: PRIMARY_STATE_UNSPECIFIED, PRIMARY_REPLICA
+         *
+         * @param self::PRIMARY_STATE_* $primaryState
+         */
+        public function setPrimaryState($primaryState)
+        {
+        }
+        /**
+         * @return self::PRIMARY_STATE_*
+         */
+        public function getPrimaryState()
+        {
+        }
+        /**
+         * Output only. Assigned by Analytics Hub based on real BigQuery replication
+         * state.
+         *
+         * Accepted values: REPLICA_STATE_UNSPECIFIED, READY_TO_USE, UNAVAILABLE
+         *
+         * @param self::REPLICA_STATE_* $replicaState
+         */
+        public function setReplicaState($replicaState)
+        {
+        }
+        /**
+         * @return self::REPLICA_STATE_*
+         */
+        public function getReplicaState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AnalyticsHub\Replica registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLocation()
-    {
-    }
-    /**
-     * Output only. Indicates that this replica is the primary replica.
-     *
-     * Accepted values: PRIMARY_STATE_UNSPECIFIED, PRIMARY_REPLICA
-     *
-     * @param self::PRIMARY_STATE_* $primaryState
-     */
-    public function setPrimaryState($primaryState)
-    {
-    }
-    /**
-     * @return self::PRIMARY_STATE_*
-     */
-    public function getPrimaryState()
-    {
-    }
-    /**
-     * Output only. Assigned by Analytics Hub based on real BigQuery replication
-     * state.
-     *
-     * Accepted values: REPLICA_STATE_UNSPECIFIED, READY_TO_USE, UNAVAILABLE
-     *
-     * @param self::REPLICA_STATE_* $replicaState
-     */
-    public function setReplicaState($replicaState)
-    {
-    }
-    /**
-     * @return self::REPLICA_STATE_*
-     */
-    public function getReplicaState()
+    class Google_Service_AnalyticsHub_Replica extends \Google\Service\AnalyticsHub\Replica
     {
     }
 }

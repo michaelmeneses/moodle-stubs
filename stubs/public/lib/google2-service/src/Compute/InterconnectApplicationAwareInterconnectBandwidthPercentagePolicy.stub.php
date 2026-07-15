@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InterconnectApplicationAwareInterconnectBandwidthPercentagePolicy extends \Google\Collection
-{
-    protected $collection_key = 'bandwidthPercentages';
-    protected $bandwidthPercentagesType = InterconnectApplicationAwareInterconnectBandwidthPercentage::class;
-    protected $bandwidthPercentagesDataType = 'array';
-    /**
-     * Specify bandwidth percentages for various traffic classes for queuing type
-     * Bandwidth Percent.
-     *
-     * @param InterconnectApplicationAwareInterconnectBandwidthPercentage[] $bandwidthPercentages
-     */
-    public function setBandwidthPercentages($bandwidthPercentages)
+namespace Google\Service\Compute {
+    class InterconnectApplicationAwareInterconnectBandwidthPercentagePolicy extends \Google\Collection
     {
+        protected $collection_key = 'bandwidthPercentages';
+        protected $bandwidthPercentagesType = InterconnectApplicationAwareInterconnectBandwidthPercentage::class;
+        protected $bandwidthPercentagesDataType = 'array';
+        /**
+         * Specify bandwidth percentages for various traffic classes for queuing type
+         * Bandwidth Percent.
+         *
+         * @param InterconnectApplicationAwareInterconnectBandwidthPercentage[] $bandwidthPercentages
+         */
+        public function setBandwidthPercentages($bandwidthPercentages)
+        {
+        }
+        /**
+         * @return InterconnectApplicationAwareInterconnectBandwidthPercentage[]
+         */
+        public function getBandwidthPercentages()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InterconnectApplicationAwareInterconnectBandwidthPercentage[]
+     * Runtime class alias of \Google\Service\Compute\InterconnectApplicationAwareInterconnectBandwidthPercentagePolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBandwidthPercentages()
+    class Google_Service_Compute_InterconnectApplicationAwareInterconnectBandwidthPercentagePolicy extends \Google\Service\Compute\InterconnectApplicationAwareInterconnectBandwidthPercentagePolicy
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1DeleteCustomReportResponse extends \Google\Model
-{
-    /**
-     * The response contains only a message field.
-     *
-     * @var string
-     */
-    public $message;
-    /**
-     * The response contains only a message field.
-     *
-     * @param string $message
-     */
-    public function setMessage($message)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1DeleteCustomReportResponse extends \Google\Model
     {
+        /**
+         * The response contains only a message field.
+         *
+         * @var string
+         */
+        public $message;
+        /**
+         * The response contains only a message field.
+         *
+         * @param string $message
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1DeleteCustomReportResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMessage()
+    class Google_Service_Apigee_GoogleCloudApigeeV1DeleteCustomReportResponse extends \Google\Service\Apigee\GoogleCloudApigeeV1DeleteCustomReportResponse
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class Worker extends \Google\Model
-{
-    /**
-     * Optional. Machine type of a worker, default is "e2-standard-2".
-     *
-     * @var string
-     */
-    public $machineType;
-    /**
-     * Optional. Machine type of a worker, default is "e2-standard-2".
-     *
-     * @param string $machineType
-     */
-    public function setMachineType($machineType)
+namespace Google\Service\CloudBuild {
+    class Worker extends \Google\Model
     {
+        /**
+         * Optional. Machine type of a worker, default is "e2-standard-2".
+         *
+         * @var string
+         */
+        public $machineType;
+        /**
+         * Optional. Machine type of a worker, default is "e2-standard-2".
+         *
+         * @param string $machineType
+         */
+        public function setMachineType($machineType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMachineType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudBuild\Worker registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMachineType()
+    class Google_Service_CloudBuild_Worker extends \Google\Service\CloudBuild\Worker
     {
     }
 }

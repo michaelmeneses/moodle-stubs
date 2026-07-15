@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteIntegrationConfigMutation extends \Google\Model
-{
-    protected $addAppType = AppsDynamiteAppId::class;
-    protected $addAppDataType = '';
-    protected $addPinnedItemType = AppsDynamitePinnedItemId::class;
-    protected $addPinnedItemDataType = '';
-    protected $removeAppType = AppsDynamiteAppId::class;
-    protected $removeAppDataType = '';
-    protected $removePinnedItemType = AppsDynamitePinnedItemId::class;
-    protected $removePinnedItemDataType = '';
-    /**
-     * @param AppsDynamiteAppId
-     */
-    public function setAddApp(AppsDynamiteAppId $addApp)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteIntegrationConfigMutation extends \Google\Model
     {
+        protected $addAppType = AppsDynamiteAppId::class;
+        protected $addAppDataType = '';
+        protected $addPinnedItemType = AppsDynamitePinnedItemId::class;
+        protected $addPinnedItemDataType = '';
+        protected $removeAppType = AppsDynamiteAppId::class;
+        protected $removeAppDataType = '';
+        protected $removePinnedItemType = AppsDynamitePinnedItemId::class;
+        protected $removePinnedItemDataType = '';
+        /**
+         * @param AppsDynamiteAppId
+         */
+        public function setAddApp(AppsDynamiteAppId $addApp)
+        {
+        }
+        /**
+         * @return AppsDynamiteAppId
+         */
+        public function getAddApp()
+        {
+        }
+        /**
+         * @param AppsDynamitePinnedItemId
+         */
+        public function setAddPinnedItem(AppsDynamitePinnedItemId $addPinnedItem)
+        {
+        }
+        /**
+         * @return AppsDynamitePinnedItemId
+         */
+        public function getAddPinnedItem()
+        {
+        }
+        /**
+         * @param AppsDynamiteAppId
+         */
+        public function setRemoveApp(AppsDynamiteAppId $removeApp)
+        {
+        }
+        /**
+         * @return AppsDynamiteAppId
+         */
+        public function getRemoveApp()
+        {
+        }
+        /**
+         * @param AppsDynamitePinnedItemId
+         */
+        public function setRemovePinnedItem(AppsDynamitePinnedItemId $removePinnedItem)
+        {
+        }
+        /**
+         * @return AppsDynamitePinnedItemId
+         */
+        public function getRemovePinnedItem()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppsDynamiteAppId
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteIntegrationConfigMutation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddApp()
-    {
-    }
-    /**
-     * @param AppsDynamitePinnedItemId
-     */
-    public function setAddPinnedItem(AppsDynamitePinnedItemId $addPinnedItem)
-    {
-    }
-    /**
-     * @return AppsDynamitePinnedItemId
-     */
-    public function getAddPinnedItem()
-    {
-    }
-    /**
-     * @param AppsDynamiteAppId
-     */
-    public function setRemoveApp(AppsDynamiteAppId $removeApp)
-    {
-    }
-    /**
-     * @return AppsDynamiteAppId
-     */
-    public function getRemoveApp()
-    {
-    }
-    /**
-     * @param AppsDynamitePinnedItemId
-     */
-    public function setRemovePinnedItem(AppsDynamitePinnedItemId $removePinnedItem)
-    {
-    }
-    /**
-     * @return AppsDynamitePinnedItemId
-     */
-    public function getRemovePinnedItem()
+    class Google_Service_CloudSearch_AppsDynamiteIntegrationConfigMutation extends \Google\Service\CloudSearch\AppsDynamiteIntegrationConfigMutation
     {
     }
 }

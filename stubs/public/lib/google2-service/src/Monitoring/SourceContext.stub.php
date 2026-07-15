@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class SourceContext extends \Google\Model
-{
-    /**
-     * The path-qualified name of the .proto file that contained the associated
-     * protobuf element. For example: "google/protobuf/source_context.proto".
-     *
-     * @var string
-     */
-    public $fileName;
-    /**
-     * The path-qualified name of the .proto file that contained the associated
-     * protobuf element. For example: "google/protobuf/source_context.proto".
-     *
-     * @param string $fileName
-     */
-    public function setFileName($fileName)
+namespace Google\Service\Monitoring {
+    class SourceContext extends \Google\Model
     {
+        /**
+         * The path-qualified name of the .proto file that contained the associated
+         * protobuf element. For example: "google/protobuf/source_context.proto".
+         *
+         * @var string
+         */
+        public $fileName;
+        /**
+         * The path-qualified name of the .proto file that contained the associated
+         * protobuf element. For example: "google/protobuf/source_context.proto".
+         *
+         * @param string $fileName
+         */
+        public function setFileName($fileName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFileName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Monitoring\SourceContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFileName()
+    class Google_Service_Monitoring_SourceContext extends \Google\Service\Monitoring\SourceContext
     {
     }
 }

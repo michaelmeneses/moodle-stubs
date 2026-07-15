@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace communication_matrix\local\spec\features\matrix;
 
+use communication_matrix\local\command;
+use GuzzleHttp\Psr7\Response;
 /**
  * Matrix API feature to update a room topic.
  *

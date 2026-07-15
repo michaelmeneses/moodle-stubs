@@ -21,126 +21,135 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Assuredworkloads;
-
-class GoogleCloudAssuredworkloadsV1WorkloadUpdate extends \Google\Model
-{
-    /**
-     * Unspecified.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * The update is available to be applied.
-     */
-    public const STATE_AVAILABLE = 'AVAILABLE';
-    /**
-     * The update has been applied.
-     */
-    public const STATE_APPLIED = 'APPLIED';
-    /**
-     * The update has been withdrawn by the service.
-     */
-    public const STATE_WITHDRAWN = 'WITHDRAWN';
-    /**
-     * The time the update was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    protected $detailsType = GoogleCloudAssuredworkloadsV1UpdateDetails::class;
-    protected $detailsDataType = '';
-    /**
-     * Output only. Immutable. Identifier. Resource name of the WorkloadUpdate.
-     * Format: organizations/{organization}/locations/{location}/workloads/{worklo
-     * ad}/updates/{update}
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The state of the update.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * The time the update was last updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * The time the update was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\Assuredworkloads {
+    class GoogleCloudAssuredworkloadsV1WorkloadUpdate extends \Google\Model
     {
+        /**
+         * Unspecified.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * The update is available to be applied.
+         */
+        public const STATE_AVAILABLE = 'AVAILABLE';
+        /**
+         * The update has been applied.
+         */
+        public const STATE_APPLIED = 'APPLIED';
+        /**
+         * The update has been withdrawn by the service.
+         */
+        public const STATE_WITHDRAWN = 'WITHDRAWN';
+        /**
+         * The time the update was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        protected $detailsType = GoogleCloudAssuredworkloadsV1UpdateDetails::class;
+        protected $detailsDataType = '';
+        /**
+         * Output only. Immutable. Identifier. Resource name of the WorkloadUpdate.
+         * Format: organizations/{organization}/locations/{location}/workloads/{worklo
+         * ad}/updates/{update}
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The state of the update.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * The time the update was last updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * The time the update was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * The details of the update.
+         *
+         * @param GoogleCloudAssuredworkloadsV1UpdateDetails $details
+         */
+        public function setDetails(GoogleCloudAssuredworkloadsV1UpdateDetails $details)
+        {
+        }
+        /**
+         * @return GoogleCloudAssuredworkloadsV1UpdateDetails
+         */
+        public function getDetails()
+        {
+        }
+        /**
+         * Output only. Immutable. Identifier. Resource name of the WorkloadUpdate.
+         * Format: organizations/{organization}/locations/{location}/workloads/{worklo
+         * ad}/updates/{update}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The state of the update.
+         *
+         * Accepted values: STATE_UNSPECIFIED, AVAILABLE, APPLIED, WITHDRAWN
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * The time the update was last updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1WorkloadUpdate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * The details of the update.
-     *
-     * @param GoogleCloudAssuredworkloadsV1UpdateDetails $details
-     */
-    public function setDetails(GoogleCloudAssuredworkloadsV1UpdateDetails $details)
-    {
-    }
-    /**
-     * @return GoogleCloudAssuredworkloadsV1UpdateDetails
-     */
-    public function getDetails()
-    {
-    }
-    /**
-     * Output only. Immutable. Identifier. Resource name of the WorkloadUpdate.
-     * Format: organizations/{organization}/locations/{location}/workloads/{worklo
-     * ad}/updates/{update}
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The state of the update.
-     *
-     * Accepted values: STATE_UNSPECIFIED, AVAILABLE, APPLIED, WITHDRAWN
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * The time the update was last updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_Assuredworkloads_GoogleCloudAssuredworkloadsV1WorkloadUpdate extends \Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1WorkloadUpdate
     {
     }
 }

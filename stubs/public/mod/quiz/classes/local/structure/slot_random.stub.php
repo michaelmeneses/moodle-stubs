@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_quiz\local\structure;
 
+use core\context\module;
+use core\exception\coding_exception;
+use mod_quiz\event\slot_created;
+use mod_quiz\event\slot_filtercondition_updated;
 /**
  * Class slot_random, represents a random question slot type.
  *

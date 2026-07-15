@@ -21,110 +21,119 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1NextSchema extends \Google\Model
-{
-    /**
-     * Output only. The time when the Schema was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Required. The user-defined name of the Schema.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Optional. The GCP labels for the Schema.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Identifier. The resource name of the Schema. Format:
-     * `projects/{project}/locations/{location}/schemas/{schema}`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The time when the Schema was last updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. The time when the Schema was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1NextSchema extends \Google\Model
     {
+        /**
+         * Output only. The time when the Schema was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Required. The user-defined name of the Schema.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Optional. The GCP labels for the Schema.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Identifier. The resource name of the Schema. Format:
+         * `projects/{project}/locations/{location}/schemas/{schema}`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The time when the Schema was last updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. The time when the Schema was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Required. The user-defined name of the Schema.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Optional. The GCP labels for the Schema.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Identifier. The resource name of the Schema. Format:
+         * `projects/{project}/locations/{location}/schemas/{schema}`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The time when the Schema was last updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1NextSchema registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Required. The user-defined name of the Schema.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Optional. The GCP labels for the Schema.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Identifier. The resource name of the Schema. Format:
-     * `projects/{project}/locations/{location}/schemas/{schema}`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The time when the Schema was last updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_Document_GoogleCloudDocumentaiV1NextSchema extends \Google\Service\Document\GoogleCloudDocumentaiV1NextSchema
     {
     }
 }

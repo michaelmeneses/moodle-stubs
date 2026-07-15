@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleCloudRunV2Overrides extends \Google\Collection
-{
-    protected $collection_key = 'containerOverrides';
-    protected $containerOverridesType = GoogleCloudRunV2ContainerOverride::class;
-    protected $containerOverridesDataType = 'array';
-    /**
-     * Optional. The desired number of tasks the execution should run. Will
-     * replace existing task_count value.
-     *
-     * @var int
-     */
-    public $taskCount;
-    /**
-     * Duration in seconds the task may be active before the system will actively
-     * try to mark it failed and kill associated containers. Will replace existing
-     * timeout_seconds value.
-     *
-     * @var string
-     */
-    public $timeout;
-    /**
-     * Per container override specification.
-     *
-     * @param GoogleCloudRunV2ContainerOverride[] $containerOverrides
-     */
-    public function setContainerOverrides($containerOverrides)
+namespace Google\Service\CloudRun {
+    class GoogleCloudRunV2Overrides extends \Google\Collection
     {
+        protected $collection_key = 'containerOverrides';
+        protected $containerOverridesType = GoogleCloudRunV2ContainerOverride::class;
+        protected $containerOverridesDataType = 'array';
+        /**
+         * Optional. The desired number of tasks the execution should run. Will
+         * replace existing task_count value.
+         *
+         * @var int
+         */
+        public $taskCount;
+        /**
+         * Duration in seconds the task may be active before the system will actively
+         * try to mark it failed and kill associated containers. Will replace existing
+         * timeout_seconds value.
+         *
+         * @var string
+         */
+        public $timeout;
+        /**
+         * Per container override specification.
+         *
+         * @param GoogleCloudRunV2ContainerOverride[] $containerOverrides
+         */
+        public function setContainerOverrides($containerOverrides)
+        {
+        }
+        /**
+         * @return GoogleCloudRunV2ContainerOverride[]
+         */
+        public function getContainerOverrides()
+        {
+        }
+        /**
+         * Optional. The desired number of tasks the execution should run. Will
+         * replace existing task_count value.
+         *
+         * @param int $taskCount
+         */
+        public function setTaskCount($taskCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTaskCount()
+        {
+        }
+        /**
+         * Duration in seconds the task may be active before the system will actively
+         * try to mark it failed and kill associated containers. Will replace existing
+         * timeout_seconds value.
+         *
+         * @param string $timeout
+         */
+        public function setTimeout($timeout)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimeout()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRunV2ContainerOverride[]
+     * Runtime class alias of \Google\Service\CloudRun\GoogleCloudRunV2Overrides registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContainerOverrides()
-    {
-    }
-    /**
-     * Optional. The desired number of tasks the execution should run. Will
-     * replace existing task_count value.
-     *
-     * @param int $taskCount
-     */
-    public function setTaskCount($taskCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTaskCount()
-    {
-    }
-    /**
-     * Duration in seconds the task may be active before the system will actively
-     * try to mark it failed and kill associated containers. Will replace existing
-     * timeout_seconds value.
-     *
-     * @param string $timeout
-     */
-    public function setTimeout($timeout)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimeout()
+    class Google_Service_CloudRun_GoogleCloudRunV2Overrides extends \Google\Service\CloudRun\GoogleCloudRunV2Overrides
     {
     }
 }

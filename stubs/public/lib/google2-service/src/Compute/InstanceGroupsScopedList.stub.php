@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InstanceGroupsScopedList extends \Google\Collection
-{
-    protected $collection_key = 'instanceGroups';
-    protected $instanceGroupsType = InstanceGroup::class;
-    protected $instanceGroupsDataType = 'array';
-    protected $warningType = InstanceGroupsScopedListWarning::class;
-    protected $warningDataType = '';
-    /**
-     * Output only. [Output Only] The list ofinstance groups that are contained in
-     * this scope.
-     *
-     * @param InstanceGroup[] $instanceGroups
-     */
-    public function setInstanceGroups($instanceGroups)
+namespace Google\Service\Compute {
+    class InstanceGroupsScopedList extends \Google\Collection
     {
+        protected $collection_key = 'instanceGroups';
+        protected $instanceGroupsType = InstanceGroup::class;
+        protected $instanceGroupsDataType = 'array';
+        protected $warningType = InstanceGroupsScopedListWarning::class;
+        protected $warningDataType = '';
+        /**
+         * Output only. [Output Only] The list ofinstance groups that are contained in
+         * this scope.
+         *
+         * @param InstanceGroup[] $instanceGroups
+         */
+        public function setInstanceGroups($instanceGroups)
+        {
+        }
+        /**
+         * @return InstanceGroup[]
+         */
+        public function getInstanceGroups()
+        {
+        }
+        /**
+         * Output only. [Output Only] An informational warning that replaces the list
+         * of instance groups when the list is empty.
+         *
+         * @param InstanceGroupsScopedListWarning $warning
+         */
+        public function setWarning(InstanceGroupsScopedListWarning $warning)
+        {
+        }
+        /**
+         * @return InstanceGroupsScopedListWarning
+         */
+        public function getWarning()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InstanceGroup[]
+     * Runtime class alias of \Google\Service\Compute\InstanceGroupsScopedList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstanceGroups()
-    {
-    }
-    /**
-     * Output only. [Output Only] An informational warning that replaces the list
-     * of instance groups when the list is empty.
-     *
-     * @param InstanceGroupsScopedListWarning $warning
-     */
-    public function setWarning(InstanceGroupsScopedListWarning $warning)
-    {
-    }
-    /**
-     * @return InstanceGroupsScopedListWarning
-     */
-    public function getWarning()
+    class Google_Service_Compute_InstanceGroupsScopedList extends \Google\Service\Compute\InstanceGroupsScopedList
     {
     }
 }

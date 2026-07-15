@@ -21,85 +21,94 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity;
-
-class MetricValue extends \Google\Model
-{
-    public $boolValue;
-    protected $distributionValueType = Distribution::class;
-    protected $distributionValueDataType = '';
-    public $doubleValue;
-    public $endTime;
-    public $int64Value;
-    public $labels;
-    protected $moneyValueType = Money::class;
-    protected $moneyValueDataType = '';
-    public $startTime;
-    public $stringValue;
-    public function setBoolValue($boolValue)
+namespace Google\Service\Networkconnectivity {
+    class MetricValue extends \Google\Model
     {
+        public $boolValue;
+        protected $distributionValueType = Distribution::class;
+        protected $distributionValueDataType = '';
+        public $doubleValue;
+        public $endTime;
+        public $int64Value;
+        public $labels;
+        protected $moneyValueType = Money::class;
+        protected $moneyValueDataType = '';
+        public $startTime;
+        public $stringValue;
+        public function setBoolValue($boolValue)
+        {
+        }
+        public function getBoolValue()
+        {
+        }
+        /**
+         * @param Distribution
+         */
+        public function setDistributionValue(Distribution $distributionValue)
+        {
+        }
+        /**
+         * @return Distribution
+         */
+        public function getDistributionValue()
+        {
+        }
+        public function setDoubleValue($doubleValue)
+        {
+        }
+        public function getDoubleValue()
+        {
+        }
+        public function setEndTime($endTime)
+        {
+        }
+        public function getEndTime()
+        {
+        }
+        public function setInt64Value($int64Value)
+        {
+        }
+        public function getInt64Value()
+        {
+        }
+        public function setLabels($labels)
+        {
+        }
+        public function getLabels()
+        {
+        }
+        /**
+         * @param Money
+         */
+        public function setMoneyValue(Money $moneyValue)
+        {
+        }
+        /**
+         * @return Money
+         */
+        public function getMoneyValue()
+        {
+        }
+        public function setStartTime($startTime)
+        {
+        }
+        public function getStartTime()
+        {
+        }
+        public function setStringValue($stringValue)
+        {
+        }
+        public function getStringValue()
+        {
+        }
     }
-    public function getBoolValue()
-    {
-    }
+}
+namespace {
     /**
-     * @param Distribution
+     * Runtime class alias of \Google\Service\Networkconnectivity\MetricValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setDistributionValue(Distribution $distributionValue)
-    {
-    }
-    /**
-     * @return Distribution
-     */
-    public function getDistributionValue()
-    {
-    }
-    public function setDoubleValue($doubleValue)
-    {
-    }
-    public function getDoubleValue()
-    {
-    }
-    public function setEndTime($endTime)
-    {
-    }
-    public function getEndTime()
-    {
-    }
-    public function setInt64Value($int64Value)
-    {
-    }
-    public function getInt64Value()
-    {
-    }
-    public function setLabels($labels)
-    {
-    }
-    public function getLabels()
-    {
-    }
-    /**
-     * @param Money
-     */
-    public function setMoneyValue(Money $moneyValue)
-    {
-    }
-    /**
-     * @return Money
-     */
-    public function getMoneyValue()
-    {
-    }
-    public function setStartTime($startTime)
-    {
-    }
-    public function getStartTime()
-    {
-    }
-    public function setStringValue($stringValue)
-    {
-    }
-    public function getStringValue()
+    class Google_Service_Networkconnectivity_MetricValue extends \Google\Service\Networkconnectivity\MetricValue
     {
     }
 }

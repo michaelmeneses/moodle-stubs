@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ArtifactRegistry;
-
-class GoModule extends \Google\Model
-{
-    /**
-     * Output only. The time when the Go module is created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * The resource name of a Go module.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The time when the Go module is updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * The version of the Go module. Must be a valid canonical version as defined
-     * in https://go.dev/ref/mod#glos-canonical-version.
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * Output only. The time when the Go module is created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\ArtifactRegistry {
+    class GoModule extends \Google\Model
     {
+        /**
+         * Output only. The time when the Go module is created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * The resource name of a Go module.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The time when the Go module is updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * The version of the Go module. Must be a valid canonical version as defined
+         * in https://go.dev/ref/mod#glos-canonical-version.
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * Output only. The time when the Go module is created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * The resource name of a Go module.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The time when the Go module is updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
+        /**
+         * The version of the Go module. Must be a valid canonical version as defined
+         * in https://go.dev/ref/mod#glos-canonical-version.
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ArtifactRegistry\GoModule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * The resource name of a Go module.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The time when the Go module is updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
-    {
-    }
-    /**
-     * The version of the Go module. Must be a valid canonical version as defined
-     * in https://go.dev/ref/mod#glos-canonical-version.
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_ArtifactRegistry_GoModule extends \Google\Service\ArtifactRegistry\GoModule
     {
     }
 }

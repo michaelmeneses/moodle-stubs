@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GroupsMigration;
-
-class Groups extends \Google\Model
-{
-    /**
-     * The kind of insert resource this is.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The status of the insert request.
-     *
-     * @var string
-     */
-    public $responseCode;
-    /**
-     * The kind of insert resource this is.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\GroupsMigration {
+    class Groups extends \Google\Model
     {
+        /**
+         * The kind of insert resource this is.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The status of the insert request.
+         *
+         * @var string
+         */
+        public $responseCode;
+        /**
+         * The kind of insert resource this is.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The status of the insert request.
+         *
+         * @param string $responseCode
+         */
+        public function setResponseCode($responseCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResponseCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GroupsMigration\Groups registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * The status of the insert request.
-     *
-     * @param string $responseCode
-     */
-    public function setResponseCode($responseCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResponseCode()
+    class Google_Service_GroupsMigration_Groups extends \Google\Service\GroupsMigration\Groups
     {
     }
 }

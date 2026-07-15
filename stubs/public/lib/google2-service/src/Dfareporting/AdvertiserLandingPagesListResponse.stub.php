@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class AdvertiserLandingPagesListResponse extends \Google\Collection
-{
-    protected $collection_key = 'landingPages';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#advertiserLandingPagesListResponse".
-     *
-     * @var string
-     */
-    public $kind;
-    protected $landingPagesType = LandingPage::class;
-    protected $landingPagesDataType = 'array';
-    /**
-     * Pagination token to be used for the next list operation.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#advertiserLandingPagesListResponse".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Dfareporting {
+    class AdvertiserLandingPagesListResponse extends \Google\Collection
     {
+        protected $collection_key = 'landingPages';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#advertiserLandingPagesListResponse".
+         *
+         * @var string
+         */
+        public $kind;
+        protected $landingPagesType = LandingPage::class;
+        protected $landingPagesDataType = 'array';
+        /**
+         * Pagination token to be used for the next list operation.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#advertiserLandingPagesListResponse".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Landing page collection
+         *
+         * @param LandingPage[] $landingPages
+         */
+        public function setLandingPages($landingPages)
+        {
+        }
+        /**
+         * @return LandingPage[]
+         */
+        public function getLandingPages()
+        {
+        }
+        /**
+         * Pagination token to be used for the next list operation.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\AdvertiserLandingPagesListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * Landing page collection
-     *
-     * @param LandingPage[] $landingPages
-     */
-    public function setLandingPages($landingPages)
-    {
-    }
-    /**
-     * @return LandingPage[]
-     */
-    public function getLandingPages()
-    {
-    }
-    /**
-     * Pagination token to be used for the next list operation.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Dfareporting_AdvertiserLandingPagesListResponse extends \Google\Service\Dfareporting\AdvertiserLandingPagesListResponse
     {
     }
 }

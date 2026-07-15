@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise;
-
-class DeviceReport extends \Google\Collection
-{
-    protected $collection_key = 'appState';
-    protected $appStateType = AppState::class;
-    protected $appStateDataType = 'array';
-    /**
-     * The timestamp of the last report update in milliseconds since epoch. This
-     * field will always be present.
-     *
-     * @var string
-     */
-    public $lastUpdatedTimestampMillis;
-    /**
-     * List of app states set by managed apps on the device. App states are
-     * defined by the app's developers. This field will always be present.
-     *
-     * @param AppState[] $appState
-     */
-    public function setAppState($appState)
+namespace Google\Service\AndroidEnterprise {
+    class DeviceReport extends \Google\Collection
     {
+        protected $collection_key = 'appState';
+        protected $appStateType = AppState::class;
+        protected $appStateDataType = 'array';
+        /**
+         * The timestamp of the last report update in milliseconds since epoch. This
+         * field will always be present.
+         *
+         * @var string
+         */
+        public $lastUpdatedTimestampMillis;
+        /**
+         * List of app states set by managed apps on the device. App states are
+         * defined by the app's developers. This field will always be present.
+         *
+         * @param AppState[] $appState
+         */
+        public function setAppState($appState)
+        {
+        }
+        /**
+         * @return AppState[]
+         */
+        public function getAppState()
+        {
+        }
+        /**
+         * The timestamp of the last report update in milliseconds since epoch. This
+         * field will always be present.
+         *
+         * @param string $lastUpdatedTimestampMillis
+         */
+        public function setLastUpdatedTimestampMillis($lastUpdatedTimestampMillis)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastUpdatedTimestampMillis()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppState[]
+     * Runtime class alias of \Google\Service\AndroidEnterprise\DeviceReport registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAppState()
-    {
-    }
-    /**
-     * The timestamp of the last report update in milliseconds since epoch. This
-     * field will always be present.
-     *
-     * @param string $lastUpdatedTimestampMillis
-     */
-    public function setLastUpdatedTimestampMillis($lastUpdatedTimestampMillis)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastUpdatedTimestampMillis()
+    class Google_Service_AndroidEnterprise_DeviceReport extends \Google\Service\AndroidEnterprise\DeviceReport
     {
     }
 }

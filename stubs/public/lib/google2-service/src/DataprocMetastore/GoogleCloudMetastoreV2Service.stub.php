@@ -21,221 +21,230 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataprocMetastore;
-
-class GoogleCloudMetastoreV2Service extends \Google\Collection
-{
-    protected $collection_key = 'endpoints';
-    /**
-     * @var string
-     */
-    public $createTime;
-    protected $encryptionConfigType = GoogleCloudMetastoreV2EncryptionConfig::class;
-    protected $encryptionConfigDataType = '';
-    protected $endpointsType = GoogleCloudMetastoreV2Endpoint::class;
-    protected $endpointsDataType = 'array';
-    protected $hiveMetastoreConfigType = GoogleCloudMetastoreV2HiveMetastoreConfig::class;
-    protected $hiveMetastoreConfigDataType = '';
-    /**
-     * @var string[]
-     */
-    public $labels;
-    protected $metadataIntegrationType = GoogleCloudMetastoreV2MetadataIntegration::class;
-    protected $metadataIntegrationDataType = '';
-    /**
-     * @var string
-     */
-    public $name;
-    protected $scalingConfigType = GoogleCloudMetastoreV2ScalingConfig::class;
-    protected $scalingConfigDataType = '';
-    protected $scheduledBackupType = GoogleCloudMetastoreV2ScheduledBackup::class;
-    protected $scheduledBackupDataType = '';
-    /**
-     * @var string
-     */
-    public $state;
-    /**
-     * @var string
-     */
-    public $stateMessage;
-    /**
-     * @var string
-     */
-    public $uid;
-    /**
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * @var string
-     */
-    public $warehouseGcsUri;
-    /**
-     * @param string
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\DataprocMetastore {
+    class GoogleCloudMetastoreV2Service extends \Google\Collection
     {
+        protected $collection_key = 'endpoints';
+        /**
+         * @var string
+         */
+        public $createTime;
+        protected $encryptionConfigType = GoogleCloudMetastoreV2EncryptionConfig::class;
+        protected $encryptionConfigDataType = '';
+        protected $endpointsType = GoogleCloudMetastoreV2Endpoint::class;
+        protected $endpointsDataType = 'array';
+        protected $hiveMetastoreConfigType = GoogleCloudMetastoreV2HiveMetastoreConfig::class;
+        protected $hiveMetastoreConfigDataType = '';
+        /**
+         * @var string[]
+         */
+        public $labels;
+        protected $metadataIntegrationType = GoogleCloudMetastoreV2MetadataIntegration::class;
+        protected $metadataIntegrationDataType = '';
+        /**
+         * @var string
+         */
+        public $name;
+        protected $scalingConfigType = GoogleCloudMetastoreV2ScalingConfig::class;
+        protected $scalingConfigDataType = '';
+        protected $scheduledBackupType = GoogleCloudMetastoreV2ScheduledBackup::class;
+        protected $scheduledBackupDataType = '';
+        /**
+         * @var string
+         */
+        public $state;
+        /**
+         * @var string
+         */
+        public $stateMessage;
+        /**
+         * @var string
+         */
+        public $uid;
+        /**
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * @var string
+         */
+        public $warehouseGcsUri;
+        /**
+         * @param string
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * @param GoogleCloudMetastoreV2EncryptionConfig
+         */
+        public function setEncryptionConfig(GoogleCloudMetastoreV2EncryptionConfig $encryptionConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudMetastoreV2EncryptionConfig
+         */
+        public function getEncryptionConfig()
+        {
+        }
+        /**
+         * @param GoogleCloudMetastoreV2Endpoint[]
+         */
+        public function setEndpoints($endpoints)
+        {
+        }
+        /**
+         * @return GoogleCloudMetastoreV2Endpoint[]
+         */
+        public function getEndpoints()
+        {
+        }
+        /**
+         * @param GoogleCloudMetastoreV2HiveMetastoreConfig
+         */
+        public function setHiveMetastoreConfig(GoogleCloudMetastoreV2HiveMetastoreConfig $hiveMetastoreConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudMetastoreV2HiveMetastoreConfig
+         */
+        public function getHiveMetastoreConfig()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * @param GoogleCloudMetastoreV2MetadataIntegration
+         */
+        public function setMetadataIntegration(GoogleCloudMetastoreV2MetadataIntegration $metadataIntegration)
+        {
+        }
+        /**
+         * @return GoogleCloudMetastoreV2MetadataIntegration
+         */
+        public function getMetadataIntegration()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param GoogleCloudMetastoreV2ScalingConfig
+         */
+        public function setScalingConfig(GoogleCloudMetastoreV2ScalingConfig $scalingConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudMetastoreV2ScalingConfig
+         */
+        public function getScalingConfig()
+        {
+        }
+        /**
+         * @param GoogleCloudMetastoreV2ScheduledBackup
+         */
+        public function setScheduledBackup(GoogleCloudMetastoreV2ScheduledBackup $scheduledBackup)
+        {
+        }
+        /**
+         * @return GoogleCloudMetastoreV2ScheduledBackup
+         */
+        public function getScheduledBackup()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getState()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setStateMessage($stateMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStateMessage()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUid($uid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUid()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setWarehouseGcsUri($warehouseGcsUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWarehouseGcsUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataprocMetastore\GoogleCloudMetastoreV2Service registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * @param GoogleCloudMetastoreV2EncryptionConfig
-     */
-    public function setEncryptionConfig(GoogleCloudMetastoreV2EncryptionConfig $encryptionConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudMetastoreV2EncryptionConfig
-     */
-    public function getEncryptionConfig()
-    {
-    }
-    /**
-     * @param GoogleCloudMetastoreV2Endpoint[]
-     */
-    public function setEndpoints($endpoints)
-    {
-    }
-    /**
-     * @return GoogleCloudMetastoreV2Endpoint[]
-     */
-    public function getEndpoints()
-    {
-    }
-    /**
-     * @param GoogleCloudMetastoreV2HiveMetastoreConfig
-     */
-    public function setHiveMetastoreConfig(GoogleCloudMetastoreV2HiveMetastoreConfig $hiveMetastoreConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudMetastoreV2HiveMetastoreConfig
-     */
-    public function getHiveMetastoreConfig()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * @param GoogleCloudMetastoreV2MetadataIntegration
-     */
-    public function setMetadataIntegration(GoogleCloudMetastoreV2MetadataIntegration $metadataIntegration)
-    {
-    }
-    /**
-     * @return GoogleCloudMetastoreV2MetadataIntegration
-     */
-    public function getMetadataIntegration()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param GoogleCloudMetastoreV2ScalingConfig
-     */
-    public function setScalingConfig(GoogleCloudMetastoreV2ScalingConfig $scalingConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudMetastoreV2ScalingConfig
-     */
-    public function getScalingConfig()
-    {
-    }
-    /**
-     * @param GoogleCloudMetastoreV2ScheduledBackup
-     */
-    public function setScheduledBackup(GoogleCloudMetastoreV2ScheduledBackup $scheduledBackup)
-    {
-    }
-    /**
-     * @return GoogleCloudMetastoreV2ScheduledBackup
-     */
-    public function getScheduledBackup()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getState()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setStateMessage($stateMessage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStateMessage()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUid($uid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUid()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setWarehouseGcsUri($warehouseGcsUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWarehouseGcsUri()
+    class Google_Service_DataprocMetastore_GoogleCloudMetastoreV2Service extends \Google\Service\DataprocMetastore\GoogleCloudMetastoreV2Service
     {
     }
 }

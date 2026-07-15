@@ -21,207 +21,216 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudTalentSolution;
-
-class BatchOperationMetadata extends \Google\Model
-{
-    /**
-     * Default value.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * The batch operation is being prepared for processing.
-     */
-    public const STATE_INITIALIZING = 'INITIALIZING';
-    /**
-     * The batch operation is actively being processed.
-     */
-    public const STATE_PROCESSING = 'PROCESSING';
-    /**
-     * The batch operation is processed, and at least one item has been
-     * successfully processed.
-     */
-    public const STATE_SUCCEEDED = 'SUCCEEDED';
-    /**
-     * The batch operation is done and no item has been successfully processed.
-     */
-    public const STATE_FAILED = 'FAILED';
-    /**
-     * The batch operation is in the process of cancelling after
-     * google.longrunning.Operations.CancelOperation is called.
-     */
-    public const STATE_CANCELLING = 'CANCELLING';
-    /**
-     * The batch operation is done after
-     * google.longrunning.Operations.CancelOperation is called. Any items
-     * processed before cancelling are returned in the response.
-     */
-    public const STATE_CANCELLED = 'CANCELLED';
-    /**
-     * The time when the batch operation is created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * The time when the batch operation is finished and
-     * google.longrunning.Operation.done is set to `true`.
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * Count of failed item(s) inside an operation.
-     *
-     * @var int
-     */
-    public $failureCount;
-    /**
-     * The state of a long running operation.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * More detailed information about operation state.
-     *
-     * @var string
-     */
-    public $stateDescription;
-    /**
-     * Count of successful item(s) inside an operation.
-     *
-     * @var int
-     */
-    public $successCount;
-    /**
-     * Count of total item(s) inside an operation.
-     *
-     * @var int
-     */
-    public $totalCount;
-    /**
-     * The time when the batch operation status is updated. The metadata and the
-     * update_time is refreshed every minute otherwise cached data is returned.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * The time when the batch operation is created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\CloudTalentSolution {
+    class BatchOperationMetadata extends \Google\Model
     {
+        /**
+         * Default value.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * The batch operation is being prepared for processing.
+         */
+        public const STATE_INITIALIZING = 'INITIALIZING';
+        /**
+         * The batch operation is actively being processed.
+         */
+        public const STATE_PROCESSING = 'PROCESSING';
+        /**
+         * The batch operation is processed, and at least one item has been
+         * successfully processed.
+         */
+        public const STATE_SUCCEEDED = 'SUCCEEDED';
+        /**
+         * The batch operation is done and no item has been successfully processed.
+         */
+        public const STATE_FAILED = 'FAILED';
+        /**
+         * The batch operation is in the process of cancelling after
+         * google.longrunning.Operations.CancelOperation is called.
+         */
+        public const STATE_CANCELLING = 'CANCELLING';
+        /**
+         * The batch operation is done after
+         * google.longrunning.Operations.CancelOperation is called. Any items
+         * processed before cancelling are returned in the response.
+         */
+        public const STATE_CANCELLED = 'CANCELLED';
+        /**
+         * The time when the batch operation is created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * The time when the batch operation is finished and
+         * google.longrunning.Operation.done is set to `true`.
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * Count of failed item(s) inside an operation.
+         *
+         * @var int
+         */
+        public $failureCount;
+        /**
+         * The state of a long running operation.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * More detailed information about operation state.
+         *
+         * @var string
+         */
+        public $stateDescription;
+        /**
+         * Count of successful item(s) inside an operation.
+         *
+         * @var int
+         */
+        public $successCount;
+        /**
+         * Count of total item(s) inside an operation.
+         *
+         * @var int
+         */
+        public $totalCount;
+        /**
+         * The time when the batch operation status is updated. The metadata and the
+         * update_time is refreshed every minute otherwise cached data is returned.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * The time when the batch operation is created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * The time when the batch operation is finished and
+         * google.longrunning.Operation.done is set to `true`.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * Count of failed item(s) inside an operation.
+         *
+         * @param int $failureCount
+         */
+        public function setFailureCount($failureCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getFailureCount()
+        {
+        }
+        /**
+         * The state of a long running operation.
+         *
+         * Accepted values: STATE_UNSPECIFIED, INITIALIZING, PROCESSING, SUCCEEDED,
+         * FAILED, CANCELLING, CANCELLED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * More detailed information about operation state.
+         *
+         * @param string $stateDescription
+         */
+        public function setStateDescription($stateDescription)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStateDescription()
+        {
+        }
+        /**
+         * Count of successful item(s) inside an operation.
+         *
+         * @param int $successCount
+         */
+        public function setSuccessCount($successCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSuccessCount()
+        {
+        }
+        /**
+         * Count of total item(s) inside an operation.
+         *
+         * @param int $totalCount
+         */
+        public function setTotalCount($totalCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalCount()
+        {
+        }
+        /**
+         * The time when the batch operation status is updated. The metadata and the
+         * update_time is refreshed every minute otherwise cached data is returned.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudTalentSolution\BatchOperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * The time when the batch operation is finished and
-     * google.longrunning.Operation.done is set to `true`.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndTime()
-    {
-    }
-    /**
-     * Count of failed item(s) inside an operation.
-     *
-     * @param int $failureCount
-     */
-    public function setFailureCount($failureCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getFailureCount()
-    {
-    }
-    /**
-     * The state of a long running operation.
-     *
-     * Accepted values: STATE_UNSPECIFIED, INITIALIZING, PROCESSING, SUCCEEDED,
-     * FAILED, CANCELLING, CANCELLED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * More detailed information about operation state.
-     *
-     * @param string $stateDescription
-     */
-    public function setStateDescription($stateDescription)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStateDescription()
-    {
-    }
-    /**
-     * Count of successful item(s) inside an operation.
-     *
-     * @param int $successCount
-     */
-    public function setSuccessCount($successCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSuccessCount()
-    {
-    }
-    /**
-     * Count of total item(s) inside an operation.
-     *
-     * @param int $totalCount
-     */
-    public function setTotalCount($totalCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalCount()
-    {
-    }
-    /**
-     * The time when the batch operation status is updated. The metadata and the
-     * update_time is refreshed every minute otherwise cached data is returned.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_CloudTalentSolution_BatchOperationMetadata extends \Google\Service\CloudTalentSolution\BatchOperationMetadata
     {
     }
 }

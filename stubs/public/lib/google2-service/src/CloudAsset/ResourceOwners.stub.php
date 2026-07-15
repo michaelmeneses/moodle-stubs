@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class ResourceOwners extends \Google\Collection
-{
-    protected $collection_key = 'resourceOwners';
-    /**
-     * List of resource owners.
-     *
-     * @var string[]
-     */
-    public $resourceOwners;
-    /**
-     * List of resource owners.
-     *
-     * @param string[] $resourceOwners
-     */
-    public function setResourceOwners($resourceOwners)
+namespace Google\Service\CloudAsset {
+    class ResourceOwners extends \Google\Collection
     {
+        protected $collection_key = 'resourceOwners';
+        /**
+         * List of resource owners.
+         *
+         * @var string[]
+         */
+        public $resourceOwners;
+        /**
+         * List of resource owners.
+         *
+         * @param string[] $resourceOwners
+         */
+        public function setResourceOwners($resourceOwners)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getResourceOwners()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudAsset\ResourceOwners registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResourceOwners()
+    class Google_Service_CloudAsset_ResourceOwners extends \Google\Service\CloudAsset\ResourceOwners
     {
     }
 }

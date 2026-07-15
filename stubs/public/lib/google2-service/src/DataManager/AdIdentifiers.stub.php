@@ -21,109 +21,118 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataManager;
-
-class AdIdentifiers extends \Google\Model
-{
-    /**
-     * Optional. The click identifier for clicks associated with app events and
-     * originating from iOS devices starting with iOS14.
-     *
-     * @var string
-     */
-    public $gbraid;
-    /**
-     * Optional. The Google click ID (gclid) associated with this event.
-     *
-     * @var string
-     */
-    public $gclid;
-    protected $landingPageDeviceInfoType = DeviceInfo::class;
-    protected $landingPageDeviceInfoDataType = '';
-    /**
-     * Optional. Session attributes for event attribution and modeling.
-     *
-     * @var string
-     */
-    public $sessionAttributes;
-    /**
-     * Optional. The click identifier for clicks associated with web events and
-     * originating from iOS devices starting with iOS14.
-     *
-     * @var string
-     */
-    public $wbraid;
-    /**
-     * Optional. The click identifier for clicks associated with app events and
-     * originating from iOS devices starting with iOS14.
-     *
-     * @param string $gbraid
-     */
-    public function setGbraid($gbraid)
+namespace Google\Service\DataManager {
+    class AdIdentifiers extends \Google\Model
     {
+        /**
+         * Optional. The click identifier for clicks associated with app events and
+         * originating from iOS devices starting with iOS14.
+         *
+         * @var string
+         */
+        public $gbraid;
+        /**
+         * Optional. The Google click ID (gclid) associated with this event.
+         *
+         * @var string
+         */
+        public $gclid;
+        protected $landingPageDeviceInfoType = DeviceInfo::class;
+        protected $landingPageDeviceInfoDataType = '';
+        /**
+         * Optional. Session attributes for event attribution and modeling.
+         *
+         * @var string
+         */
+        public $sessionAttributes;
+        /**
+         * Optional. The click identifier for clicks associated with web events and
+         * originating from iOS devices starting with iOS14.
+         *
+         * @var string
+         */
+        public $wbraid;
+        /**
+         * Optional. The click identifier for clicks associated with app events and
+         * originating from iOS devices starting with iOS14.
+         *
+         * @param string $gbraid
+         */
+        public function setGbraid($gbraid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGbraid()
+        {
+        }
+        /**
+         * Optional. The Google click ID (gclid) associated with this event.
+         *
+         * @param string $gclid
+         */
+        public function setGclid($gclid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGclid()
+        {
+        }
+        /**
+         * Optional. Information gathered about the device being used (if any) at the
+         * time of landing onto the advertiser’s site after interacting with the ad.
+         *
+         * @param DeviceInfo $landingPageDeviceInfo
+         */
+        public function setLandingPageDeviceInfo(DeviceInfo $landingPageDeviceInfo)
+        {
+        }
+        /**
+         * @return DeviceInfo
+         */
+        public function getLandingPageDeviceInfo()
+        {
+        }
+        /**
+         * Optional. Session attributes for event attribution and modeling.
+         *
+         * @param string $sessionAttributes
+         */
+        public function setSessionAttributes($sessionAttributes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSessionAttributes()
+        {
+        }
+        /**
+         * Optional. The click identifier for clicks associated with web events and
+         * originating from iOS devices starting with iOS14.
+         *
+         * @param string $wbraid
+         */
+        public function setWbraid($wbraid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWbraid()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataManager\AdIdentifiers registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGbraid()
-    {
-    }
-    /**
-     * Optional. The Google click ID (gclid) associated with this event.
-     *
-     * @param string $gclid
-     */
-    public function setGclid($gclid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGclid()
-    {
-    }
-    /**
-     * Optional. Information gathered about the device being used (if any) at the
-     * time of landing onto the advertiser’s site after interacting with the ad.
-     *
-     * @param DeviceInfo $landingPageDeviceInfo
-     */
-    public function setLandingPageDeviceInfo(DeviceInfo $landingPageDeviceInfo)
-    {
-    }
-    /**
-     * @return DeviceInfo
-     */
-    public function getLandingPageDeviceInfo()
-    {
-    }
-    /**
-     * Optional. Session attributes for event attribution and modeling.
-     *
-     * @param string $sessionAttributes
-     */
-    public function setSessionAttributes($sessionAttributes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSessionAttributes()
-    {
-    }
-    /**
-     * Optional. The click identifier for clicks associated with web events and
-     * originating from iOS devices starting with iOS14.
-     *
-     * @param string $wbraid
-     */
-    public function setWbraid($wbraid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWbraid()
+    class Google_Service_DataManager_AdIdentifiers extends \Google\Service\DataManager\AdIdentifiers
     {
     }
 }

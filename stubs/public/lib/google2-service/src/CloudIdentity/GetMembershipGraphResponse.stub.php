@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIdentity;
-
-class GetMembershipGraphResponse extends \Google\Collection
-{
-    protected $collection_key = 'groups';
-    protected $adjacencyListType = MembershipAdjacencyList::class;
-    protected $adjacencyListDataType = 'array';
-    protected $groupsType = Group::class;
-    protected $groupsDataType = 'array';
-    /**
-     * The membership graph's path information represented as an adjacency list.
-     *
-     * @param MembershipAdjacencyList[] $adjacencyList
-     */
-    public function setAdjacencyList($adjacencyList)
+namespace Google\Service\CloudIdentity {
+    class GetMembershipGraphResponse extends \Google\Collection
     {
+        protected $collection_key = 'groups';
+        protected $adjacencyListType = MembershipAdjacencyList::class;
+        protected $adjacencyListDataType = 'array';
+        protected $groupsType = Group::class;
+        protected $groupsDataType = 'array';
+        /**
+         * The membership graph's path information represented as an adjacency list.
+         *
+         * @param MembershipAdjacencyList[] $adjacencyList
+         */
+        public function setAdjacencyList($adjacencyList)
+        {
+        }
+        /**
+         * @return MembershipAdjacencyList[]
+         */
+        public function getAdjacencyList()
+        {
+        }
+        /**
+         * The resources representing each group in the adjacency list. Each group in
+         * this list can be correlated to a 'group' of the MembershipAdjacencyList
+         * using the 'name' of the Group resource.
+         *
+         * @param Group[] $groups
+         */
+        public function setGroups($groups)
+        {
+        }
+        /**
+         * @return Group[]
+         */
+        public function getGroups()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MembershipAdjacencyList[]
+     * Runtime class alias of \Google\Service\CloudIdentity\GetMembershipGraphResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdjacencyList()
-    {
-    }
-    /**
-     * The resources representing each group in the adjacency list. Each group in
-     * this list can be correlated to a 'group' of the MembershipAdjacencyList
-     * using the 'name' of the Group resource.
-     *
-     * @param Group[] $groups
-     */
-    public function setGroups($groups)
-    {
-    }
-    /**
-     * @return Group[]
-     */
-    public function getGroups()
+    class Google_Service_CloudIdentity_GetMembershipGraphResponse extends \Google\Service\CloudIdentity\GetMembershipGraphResponse
     {
     }
 }

@@ -21,35 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform\Resource;
-
-/**
- * The "science" collection of methods.
- * Typical usage is:
- *  <code>
- *   $aiplatformService = new Google\Service\Aiplatform(...);
- *   $science = $aiplatformService->projects_locations_endpoints_google_science;
- *  </code>
- */
-class ProjectsLocationsEndpointsGoogleScience extends \Google\Service\Resource
-{
+namespace Google\Service\Aiplatform\Resource {
+    use Google\Service\Aiplatform\GoogleApiHttpBody;
     /**
-     * Forwards arbitrary HTTP requests for both streaming and non-streaming cases.
-     * To use this method, invoke_route_prefix must be set to allow the paths that
-     * will be specified in the request. (science.inference)
-     *
-     * @param string $endpoint Required. The name of the Endpoint requested to serve
-     * the prediction. Format:
-     * `projects/{project}/locations/{location}/endpoints/{endpoint}`
-     * @param GoogleApiHttpBody $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string deployedModelId ID of the DeployedModel that serves the
-     * invoke request.
-     * @return GoogleApiHttpBody
-     * @throws \Google\Service\Exception
+     * The "science" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $aiplatformService = new Google\Service\Aiplatform(...);
+     *   $science = $aiplatformService->projects_locations_endpoints_google_science;
+     *  </code>
      */
-    public function inference($endpoint, GoogleApiHttpBody $postBody, $optParams = [])
+    class ProjectsLocationsEndpointsGoogleScience extends \Google\Service\Resource
+    {
+        /**
+         * Forwards arbitrary HTTP requests for both streaming and non-streaming cases.
+         * To use this method, invoke_route_prefix must be set to allow the paths that
+         * will be specified in the request. (science.inference)
+         *
+         * @param string $endpoint Required. The name of the Endpoint requested to serve
+         * the prediction. Format:
+         * `projects/{project}/locations/{location}/endpoints/{endpoint}`
+         * @param GoogleApiHttpBody $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string deployedModelId ID of the DeployedModel that serves the
+         * invoke request.
+         * @return GoogleApiHttpBody
+         * @throws \Google\Service\Exception
+         */
+        public function inference($endpoint, GoogleApiHttpBody $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Aiplatform\Resource\ProjectsLocationsEndpointsGoogleScience registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Aiplatform_Resource_ProjectsLocationsEndpointsGoogleScience extends \Google\Service\Aiplatform\Resource\ProjectsLocationsEndpointsGoogleScience
     {
     }
 }

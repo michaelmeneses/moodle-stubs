@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class GoogleAppsCardV1Divider extends \Google\Model
-{
+namespace Google\Service\HangoutsChat {
+    class GoogleAppsCardV1Divider extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\HangoutsChat\GoogleAppsCardV1Divider registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_HangoutsChat_GoogleAppsCardV1Divider extends \Google\Service\HangoutsChat\GoogleAppsCardV1Divider
+    {
+    }
 }

@@ -21,69 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIManagement\Resource;
-
-/**
- * The "apiObservations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $apimService = new Google\Service\APIManagement(...);
- *   $apiObservations = $apimService->projects_locations_observationJobs_apiObservations;
- *  </code>
- */
-class ProjectsLocationsObservationJobsApiObservations extends \Google\Service\Resource
-{
+namespace Google\Service\APIManagement\Resource {
+    use Google\Service\APIManagement\ApiObservation;
+    use Google\Service\APIManagement\BatchEditTagsApiObservationsRequest;
+    use Google\Service\APIManagement\BatchEditTagsApiObservationsResponse;
+    use Google\Service\APIManagement\ListApiObservationsResponse;
     /**
-     * BatchEditTagsApiObservations adds or removes Tags for ApiObservations.
-     * (apiObservations.batchEditTags)
-     *
-     * @param string $parent Required. The parent resource shared by all
-     * ApiObservations being edited. Format:
-     * projects/{project}/locations/{location}/observationJobs/{observation_job}
-     * @param BatchEditTagsApiObservationsRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return BatchEditTagsApiObservationsResponse
-     * @throws \Google\Service\Exception
+     * The "apiObservations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $apimService = new Google\Service\APIManagement(...);
+     *   $apiObservations = $apimService->projects_locations_observationJobs_apiObservations;
+     *  </code>
      */
-    public function batchEditTags($parent, BatchEditTagsApiObservationsRequest $postBody, $optParams = [])
+    class ProjectsLocationsObservationJobsApiObservations extends \Google\Service\Resource
     {
+        /**
+         * BatchEditTagsApiObservations adds or removes Tags for ApiObservations.
+         * (apiObservations.batchEditTags)
+         *
+         * @param string $parent Required. The parent resource shared by all
+         * ApiObservations being edited. Format:
+         * projects/{project}/locations/{location}/observationJobs/{observation_job}
+         * @param BatchEditTagsApiObservationsRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return BatchEditTagsApiObservationsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function batchEditTags($parent, BatchEditTagsApiObservationsRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * GetApiObservation retrieves a single ApiObservation by name.
+         * (apiObservations.get)
+         *
+         * @param string $name Required. The name of the ApiObservation to retrieve.
+         * Format: projects/{project}/locations/{location}/observationJobs/{observation_
+         * job}/apiObservations/{api_observation}
+         * @param array $optParams Optional parameters.
+         * @return ApiObservation
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * ListApiObservations gets all ApiObservations for a given project and location
+         * and ObservationJob.
+         * (apiObservations.listProjectsLocationsObservationJobsApiObservations)
+         *
+         * @param string $parent Required. The parent, which owns this collection of
+         * ApiObservations. Format:
+         * projects/{project}/locations/{location}/observationJobs/{observation_job}
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Optional. The maximum number of ApiObservations to
+         * return. The service may return fewer than this value. If unspecified, at most
+         * 10 ApiObservations will be returned. The maximum value is 1000; values above
+         * 1000 will be coerced to 1000.
+         * @opt_param string pageToken Optional. A page token, received from a previous
+         * `ListApiObservations` call. Provide this to retrieve the subsequent page.
+         * When paginating, all other parameters provided to `ListApiObservations` must
+         * match the call that provided the page token.
+         * @return ListApiObservationsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsObservationJobsApiObservations($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * GetApiObservation retrieves a single ApiObservation by name.
-     * (apiObservations.get)
-     *
-     * @param string $name Required. The name of the ApiObservation to retrieve.
-     * Format: projects/{project}/locations/{location}/observationJobs/{observation_
-     * job}/apiObservations/{api_observation}
-     * @param array $optParams Optional parameters.
-     * @return ApiObservation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\APIManagement\Resource\ProjectsLocationsObservationJobsApiObservations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * ListApiObservations gets all ApiObservations for a given project and location
-     * and ObservationJob.
-     * (apiObservations.listProjectsLocationsObservationJobsApiObservations)
-     *
-     * @param string $parent Required. The parent, which owns this collection of
-     * ApiObservations. Format:
-     * projects/{project}/locations/{location}/observationJobs/{observation_job}
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Optional. The maximum number of ApiObservations to
-     * return. The service may return fewer than this value. If unspecified, at most
-     * 10 ApiObservations will be returned. The maximum value is 1000; values above
-     * 1000 will be coerced to 1000.
-     * @opt_param string pageToken Optional. A page token, received from a previous
-     * `ListApiObservations` call. Provide this to retrieve the subsequent page.
-     * When paginating, all other parameters provided to `ListApiObservations` must
-     * match the call that provided the page token.
-     * @return ListApiObservationsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsObservationJobsApiObservations($parent, $optParams = [])
+    class Google_Service_APIManagement_Resource_ProjectsLocationsObservationJobsApiObservations extends \Google\Service\APIManagement\Resource\ProjectsLocationsObservationJobsApiObservations
     {
     }
 }

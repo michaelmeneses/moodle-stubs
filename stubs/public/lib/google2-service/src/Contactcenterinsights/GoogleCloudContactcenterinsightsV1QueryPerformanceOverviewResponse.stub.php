@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1QueryPerformanceOverviewResponse extends \Google\Model
-{
-    /**
-     * The summary text of the performance.
-     *
-     * @var string
-     */
-    public $summaryText;
-    /**
-     * The summary text of the performance.
-     *
-     * @param string $summaryText
-     */
-    public function setSummaryText($summaryText)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1QueryPerformanceOverviewResponse extends \Google\Model
     {
+        /**
+         * The summary text of the performance.
+         *
+         * @var string
+         */
+        public $summaryText;
+        /**
+         * The summary text of the performance.
+         *
+         * @param string $summaryText
+         */
+        public function setSummaryText($summaryText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSummaryText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1QueryPerformanceOverviewResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSummaryText()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1QueryPerformanceOverviewResponse extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1QueryPerformanceOverviewResponse
     {
     }
 }

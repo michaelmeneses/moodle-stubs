@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class TimeWindow extends \Google\Model
-{
-    /**
-     * The time that the window ends. The end time should take place after the
-     * start time.
-     *
-     * @var string
-     */
-    public $endTime;
-    protected $maintenanceExclusionOptionsType = MaintenanceExclusionOptions::class;
-    protected $maintenanceExclusionOptionsDataType = '';
-    /**
-     * The time that the window first starts.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * The time that the window ends. The end time should take place after the
-     * start time.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
+namespace Google\Service\Container {
+    class TimeWindow extends \Google\Model
     {
+        /**
+         * The time that the window ends. The end time should take place after the
+         * start time.
+         *
+         * @var string
+         */
+        public $endTime;
+        protected $maintenanceExclusionOptionsType = MaintenanceExclusionOptions::class;
+        protected $maintenanceExclusionOptionsDataType = '';
+        /**
+         * The time that the window first starts.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * The time that the window ends. The end time should take place after the
+         * start time.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * MaintenanceExclusionOptions provides maintenance exclusion related options.
+         *
+         * @param MaintenanceExclusionOptions $maintenanceExclusionOptions
+         */
+        public function setMaintenanceExclusionOptions(MaintenanceExclusionOptions $maintenanceExclusionOptions)
+        {
+        }
+        /**
+         * @return MaintenanceExclusionOptions
+         */
+        public function getMaintenanceExclusionOptions()
+        {
+        }
+        /**
+         * The time that the window first starts.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Container\TimeWindow registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndTime()
-    {
-    }
-    /**
-     * MaintenanceExclusionOptions provides maintenance exclusion related options.
-     *
-     * @param MaintenanceExclusionOptions $maintenanceExclusionOptions
-     */
-    public function setMaintenanceExclusionOptions(MaintenanceExclusionOptions $maintenanceExclusionOptions)
-    {
-    }
-    /**
-     * @return MaintenanceExclusionOptions
-     */
-    public function getMaintenanceExclusionOptions()
-    {
-    }
-    /**
-     * The time that the window first starts.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
+    class Google_Service_Container_TimeWindow extends \Google\Service\Container\TimeWindow
     {
     }
 }

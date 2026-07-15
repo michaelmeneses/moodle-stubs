@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class BuildingCoordinates extends \Google\Model
-{
+namespace Google\Service\Directory {
+    class BuildingCoordinates extends \Google\Model
+    {
+        /**
+         * Latitude in decimal degrees.
+         *
+         * @var 
+         */
+        public $latitude;
+        /**
+         * Longitude in decimal degrees.
+         *
+         * @var 
+         */
+        public $longitude;
+        public function setLatitude($latitude)
+        {
+        }
+        public function getLatitude()
+        {
+        }
+        public function setLongitude($longitude)
+        {
+        }
+        public function getLongitude()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * Latitude in decimal degrees.
-     *
-     * @var 
+     * Runtime class alias of \Google\Service\Directory\BuildingCoordinates registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public $latitude;
-    /**
-     * Longitude in decimal degrees.
-     *
-     * @var 
-     */
-    public $longitude;
-    public function setLatitude($latitude)
-    {
-    }
-    public function getLatitude()
-    {
-    }
-    public function setLongitude($longitude)
-    {
-    }
-    public function getLongitude()
+    class Google_Service_Directory_BuildingCoordinates extends \Google\Service\Directory\BuildingCoordinates
     {
     }
 }

@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace aiprovider_openai\form;
 
+use aiprovider_openai\helper;
+use core_ai\form\action_settings_form;
 /**
  * Base action settings form for OpenAI provider.
  *

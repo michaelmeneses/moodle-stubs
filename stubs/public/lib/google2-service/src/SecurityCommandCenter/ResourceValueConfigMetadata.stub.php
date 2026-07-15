@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class ResourceValueConfigMetadata extends \Google\Model
-{
-    /**
-     * Resource value config name
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Resource value config name
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\SecurityCommandCenter {
+    class ResourceValueConfigMetadata extends \Google\Model
     {
+        /**
+         * Resource value config name
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Resource value config name
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\ResourceValueConfigMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
+    class Google_Service_SecurityCommandCenter_ResourceValueConfigMetadata extends \Google\Service\SecurityCommandCenter\ResourceValueConfigMetadata
     {
     }
 }

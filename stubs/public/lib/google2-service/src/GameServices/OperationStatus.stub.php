@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GameServices;
-
-class OperationStatus extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $done;
-    /**
-     * @var string
-     */
-    public $errorCode;
-    /**
-     * @var string
-     */
-    public $errorMessage;
-    /**
-     * @param bool
-     */
-    public function setDone($done)
+namespace Google\Service\GameServices {
+    class OperationStatus extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $done;
+        /**
+         * @var string
+         */
+        public $errorCode;
+        /**
+         * @var string
+         */
+        public $errorMessage;
+        /**
+         * @param bool
+         */
+        public function setDone($done)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDone()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setErrorCode($errorCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getErrorCode()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setErrorMessage($errorMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getErrorMessage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\GameServices\OperationStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDone()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setErrorCode($errorCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getErrorCode()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setErrorMessage($errorMessage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getErrorMessage()
+    class Google_Service_GameServices_OperationStatus extends \Google\Service\GameServices\OperationStatus
     {
     }
 }

@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class EditCustomerMatchMembersResponse extends \Google\Model
-{
-    /**
-     * Required. The ID of the updated Customer Match
-     * FirstPartyAndPartnerAudience.
-     *
-     * @var string
-     */
-    public $firstPartyAndPartnerAudienceId;
-    /**
-     * Required. The ID of the updated Customer Match
-     * FirstPartyAndPartnerAudience.
-     *
-     * @param string $firstPartyAndPartnerAudienceId
-     */
-    public function setFirstPartyAndPartnerAudienceId($firstPartyAndPartnerAudienceId)
+namespace Google\Service\DisplayVideo {
+    class EditCustomerMatchMembersResponse extends \Google\Model
     {
+        /**
+         * Required. The ID of the updated Customer Match
+         * FirstPartyAndPartnerAudience.
+         *
+         * @var string
+         */
+        public $firstPartyAndPartnerAudienceId;
+        /**
+         * Required. The ID of the updated Customer Match
+         * FirstPartyAndPartnerAudience.
+         *
+         * @param string $firstPartyAndPartnerAudienceId
+         */
+        public function setFirstPartyAndPartnerAudienceId($firstPartyAndPartnerAudienceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFirstPartyAndPartnerAudienceId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\EditCustomerMatchMembersResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFirstPartyAndPartnerAudienceId()
+    class Google_Service_DisplayVideo_EditCustomerMatchMembersResponse extends \Google\Service\DisplayVideo\EditCustomerMatchMembersResponse
     {
     }
 }

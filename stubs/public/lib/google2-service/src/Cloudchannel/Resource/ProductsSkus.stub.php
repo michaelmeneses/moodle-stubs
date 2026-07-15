@@ -21,42 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel\Resource;
-
-/**
- * The "skus" collection of methods.
- * Typical usage is:
- *  <code>
- *   $cloudchannelService = new Google\Service\Cloudchannel(...);
- *   $skus = $cloudchannelService->products_skus;
- *  </code>
- */
-class ProductsSkus extends \Google\Service\Resource
-{
+namespace Google\Service\Cloudchannel\Resource {
+    use Google\Service\Cloudchannel\GoogleCloudChannelV1ListSkusResponse;
     /**
-     * Lists the SKUs for a product the reseller is authorized to sell. Possible
-     * error codes: * INVALID_ARGUMENT: Required request parameters are missing or
-     * invalid. (skus.listProductsSkus)
-     *
-     * @param string $parent Required. The resource name of the Product to list SKUs
-     * for. Parent uses the format: products/{product_id}. Supports products/- to
-     * retrieve SKUs for all products.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string account Required. Resource name of the reseller. Format:
-     * accounts/{account_id}.
-     * @opt_param string languageCode Optional. The BCP-47 language code. For
-     * example, "en-US". The response will localize in the corresponding language
-     * code, if specified. The default value is "en-US".
-     * @opt_param int pageSize Optional. Requested page size. Server might return
-     * fewer results than requested. If unspecified, returns at most 100 SKUs. The
-     * maximum value is 1000; the server will coerce values above 1000.
-     * @opt_param string pageToken Optional. A token for a page of results other
-     * than the first page. Optional.
-     * @return GoogleCloudChannelV1ListSkusResponse
-     * @throws \Google\Service\Exception
+     * The "skus" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $cloudchannelService = new Google\Service\Cloudchannel(...);
+     *   $skus = $cloudchannelService->products_skus;
+     *  </code>
      */
-    public function listProductsSkus($parent, $optParams = [])
+    class ProductsSkus extends \Google\Service\Resource
+    {
+        /**
+         * Lists the SKUs for a product the reseller is authorized to sell. Possible
+         * error codes: * INVALID_ARGUMENT: Required request parameters are missing or
+         * invalid. (skus.listProductsSkus)
+         *
+         * @param string $parent Required. The resource name of the Product to list SKUs
+         * for. Parent uses the format: products/{product_id}. Supports products/- to
+         * retrieve SKUs for all products.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string account Required. Resource name of the reseller. Format:
+         * accounts/{account_id}.
+         * @opt_param string languageCode Optional. The BCP-47 language code. For
+         * example, "en-US". The response will localize in the corresponding language
+         * code, if specified. The default value is "en-US".
+         * @opt_param int pageSize Optional. Requested page size. Server might return
+         * fewer results than requested. If unspecified, returns at most 100 SKUs. The
+         * maximum value is 1000; the server will coerce values above 1000.
+         * @opt_param string pageToken Optional. A token for a page of results other
+         * than the first page. Optional.
+         * @return GoogleCloudChannelV1ListSkusResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProductsSkus($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Cloudchannel\Resource\ProductsSkus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Cloudchannel_Resource_ProductsSkus extends \Google\Service\Cloudchannel\Resource\ProductsSkus
     {
     }
 }

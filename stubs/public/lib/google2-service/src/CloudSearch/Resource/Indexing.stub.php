@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch\Resource;
-
-/**
- * The "indexing" collection of methods.
- * Typical usage is:
- *  <code>
- *   $cloudsearchService = new Google\Service\CloudSearch(...);
- *   $indexing = $cloudsearchService->indexing;
- *  </code>
- */
-class Indexing extends \Google\Service\Resource
-{
+namespace Google\Service\CloudSearch\Resource {
+    /**
+     * The "indexing" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $cloudsearchService = new Google\Service\CloudSearch(...);
+     *   $indexing = $cloudsearchService->indexing;
+     *  </code>
+     */
+    class Indexing extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudSearch\Resource\Indexing registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudSearch_Resource_Indexing extends \Google\Service\CloudSearch\Resource\Indexing
+    {
+    }
 }

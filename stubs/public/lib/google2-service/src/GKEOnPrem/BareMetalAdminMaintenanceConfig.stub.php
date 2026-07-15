@@ -21,35 +21,44 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class BareMetalAdminMaintenanceConfig extends \Google\Collection
-{
-    protected $collection_key = 'maintenanceAddressCidrBlocks';
-    /**
-     * Required. All IPv4 address from these ranges will be placed into
-     * maintenance mode. Nodes in maintenance mode will be cordoned and drained.
-     * When both of these are true, the "baremetal.cluster.gke.io/maintenance"
-     * annotation will be set on the node resource.
-     *
-     * @var string[]
-     */
-    public $maintenanceAddressCidrBlocks;
-    /**
-     * Required. All IPv4 address from these ranges will be placed into
-     * maintenance mode. Nodes in maintenance mode will be cordoned and drained.
-     * When both of these are true, the "baremetal.cluster.gke.io/maintenance"
-     * annotation will be set on the node resource.
-     *
-     * @param string[] $maintenanceAddressCidrBlocks
-     */
-    public function setMaintenanceAddressCidrBlocks($maintenanceAddressCidrBlocks)
+namespace Google\Service\GKEOnPrem {
+    class BareMetalAdminMaintenanceConfig extends \Google\Collection
     {
+        protected $collection_key = 'maintenanceAddressCidrBlocks';
+        /**
+         * Required. All IPv4 address from these ranges will be placed into
+         * maintenance mode. Nodes in maintenance mode will be cordoned and drained.
+         * When both of these are true, the "baremetal.cluster.gke.io/maintenance"
+         * annotation will be set on the node resource.
+         *
+         * @var string[]
+         */
+        public $maintenanceAddressCidrBlocks;
+        /**
+         * Required. All IPv4 address from these ranges will be placed into
+         * maintenance mode. Nodes in maintenance mode will be cordoned and drained.
+         * When both of these are true, the "baremetal.cluster.gke.io/maintenance"
+         * annotation will be set on the node resource.
+         *
+         * @param string[] $maintenanceAddressCidrBlocks
+         */
+        public function setMaintenanceAddressCidrBlocks($maintenanceAddressCidrBlocks)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMaintenanceAddressCidrBlocks()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\GKEOnPrem\BareMetalAdminMaintenanceConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaintenanceAddressCidrBlocks()
+    class Google_Service_GKEOnPrem_BareMetalAdminMaintenanceConfig extends \Google\Service\GKEOnPrem\BareMetalAdminMaintenanceConfig
     {
     }
 }

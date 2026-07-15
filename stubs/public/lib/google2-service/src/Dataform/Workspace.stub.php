@@ -21,106 +21,115 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataform;
-
-class Workspace extends \Google\Model
-{
-    /**
-     * Output only. The timestamp of when the workspace was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    protected $dataEncryptionStateType = DataEncryptionState::class;
-    protected $dataEncryptionStateDataType = '';
-    /**
-     * Output only. All the metadata information that is used internally to serve
-     * the resource. For example: timestamps, flags, status fields, etc. The
-     * format of this field is a JSON string.
-     *
-     * @var string
-     */
-    public $internalMetadata;
-    /**
-     * Identifier. The workspace's name.
-     *
-     * @var string
-     */
-    public $name;
-    protected $privateResourceMetadataType = PrivateResourceMetadata::class;
-    protected $privateResourceMetadataDataType = '';
-    /**
-     * Output only. The timestamp of when the workspace was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\Dataform {
+    class Workspace extends \Google\Model
     {
+        /**
+         * Output only. The timestamp of when the workspace was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        protected $dataEncryptionStateType = DataEncryptionState::class;
+        protected $dataEncryptionStateDataType = '';
+        /**
+         * Output only. All the metadata information that is used internally to serve
+         * the resource. For example: timestamps, flags, status fields, etc. The
+         * format of this field is a JSON string.
+         *
+         * @var string
+         */
+        public $internalMetadata;
+        /**
+         * Identifier. The workspace's name.
+         *
+         * @var string
+         */
+        public $name;
+        protected $privateResourceMetadataType = PrivateResourceMetadata::class;
+        protected $privateResourceMetadataDataType = '';
+        /**
+         * Output only. The timestamp of when the workspace was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. A data encryption state of a Git repository if this Workspace
+         * is protected by a KMS key.
+         *
+         * @param DataEncryptionState $dataEncryptionState
+         */
+        public function setDataEncryptionState(DataEncryptionState $dataEncryptionState)
+        {
+        }
+        /**
+         * @return DataEncryptionState
+         */
+        public function getDataEncryptionState()
+        {
+        }
+        /**
+         * Output only. All the metadata information that is used internally to serve
+         * the resource. For example: timestamps, flags, status fields, etc. The
+         * format of this field is a JSON string.
+         *
+         * @param string $internalMetadata
+         */
+        public function setInternalMetadata($internalMetadata)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInternalMetadata()
+        {
+        }
+        /**
+         * Identifier. The workspace's name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. Metadata indicating whether this resource is user-scoped. For
+         * `Workspace` resources, the `user_scoped` field is always `true`.
+         *
+         * @param PrivateResourceMetadata $privateResourceMetadata
+         */
+        public function setPrivateResourceMetadata(PrivateResourceMetadata $privateResourceMetadata)
+        {
+        }
+        /**
+         * @return PrivateResourceMetadata
+         */
+        public function getPrivateResourceMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataform\Workspace registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. A data encryption state of a Git repository if this Workspace
-     * is protected by a KMS key.
-     *
-     * @param DataEncryptionState $dataEncryptionState
-     */
-    public function setDataEncryptionState(DataEncryptionState $dataEncryptionState)
-    {
-    }
-    /**
-     * @return DataEncryptionState
-     */
-    public function getDataEncryptionState()
-    {
-    }
-    /**
-     * Output only. All the metadata information that is used internally to serve
-     * the resource. For example: timestamps, flags, status fields, etc. The
-     * format of this field is a JSON string.
-     *
-     * @param string $internalMetadata
-     */
-    public function setInternalMetadata($internalMetadata)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInternalMetadata()
-    {
-    }
-    /**
-     * Identifier. The workspace's name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. Metadata indicating whether this resource is user-scoped. For
-     * `Workspace` resources, the `user_scoped` field is always `true`.
-     *
-     * @param PrivateResourceMetadata $privateResourceMetadata
-     */
-    public function setPrivateResourceMetadata(PrivateResourceMetadata $privateResourceMetadata)
-    {
-    }
-    /**
-     * @return PrivateResourceMetadata
-     */
-    public function getPrivateResourceMetadata()
+    class Google_Service_Dataform_Workspace extends \Google\Service\Dataform\Workspace
     {
     }
 }

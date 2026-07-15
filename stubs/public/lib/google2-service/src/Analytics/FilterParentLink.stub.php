@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics;
-
-class FilterParentLink extends \Google\Model
-{
-    /**
-     * Link to the account to which this filter belongs.
-     *
-     * @var string
-     */
-    public $href;
-    /**
-     * Value is "analytics#account".
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Link to the account to which this filter belongs.
-     *
-     * @param string $href
-     */
-    public function setHref($href)
+namespace Google\Service\Analytics {
+    class FilterParentLink extends \Google\Model
     {
+        /**
+         * Link to the account to which this filter belongs.
+         *
+         * @var string
+         */
+        public $href;
+        /**
+         * Value is "analytics#account".
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Link to the account to which this filter belongs.
+         *
+         * @param string $href
+         */
+        public function setHref($href)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHref()
+        {
+        }
+        /**
+         * Value is "analytics#account".
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Analytics\FilterParentLink registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHref()
-    {
-    }
-    /**
-     * Value is "analytics#account".
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_Analytics_FilterParentLink extends \Google\Service\Analytics\FilterParentLink
     {
     }
 }

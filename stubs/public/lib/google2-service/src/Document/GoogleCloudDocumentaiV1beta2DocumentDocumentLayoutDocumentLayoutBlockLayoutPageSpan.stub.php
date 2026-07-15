@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1beta2DocumentDocumentLayoutDocumentLayoutBlockLayoutPageSpan extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $pageEnd;
-    /**
-     * @var int
-     */
-    public $pageStart;
-    /**
-     * @param int
-     */
-    public function setPageEnd($pageEnd)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1beta2DocumentDocumentLayoutDocumentLayoutBlockLayoutPageSpan extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $pageEnd;
+        /**
+         * @var int
+         */
+        public $pageStart;
+        /**
+         * @param int
+         */
+        public function setPageEnd($pageEnd)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPageEnd()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setPageStart($pageStart)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPageStart()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1beta2DocumentDocumentLayoutDocumentLayoutBlockLayoutPageSpan registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPageEnd()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setPageStart($pageStart)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPageStart()
+    class Google_Service_Document_GoogleCloudDocumentaiV1beta2DocumentDocumentLayoutDocumentLayoutBlockLayoutPageSpan extends \Google\Service\Document\GoogleCloudDocumentaiV1beta2DocumentDocumentLayoutDocumentLayoutBlockLayoutPageSpan
     {
     }
 }

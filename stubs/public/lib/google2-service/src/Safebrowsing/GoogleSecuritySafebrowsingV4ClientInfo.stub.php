@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Safebrowsing;
-
-class GoogleSecuritySafebrowsingV4ClientInfo extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $clientId;
-    /**
-     * @var string
-     */
-    public $clientVersion;
-    /**
-     * @param string
-     */
-    public function setClientId($clientId)
+namespace Google\Service\Safebrowsing {
+    class GoogleSecuritySafebrowsingV4ClientInfo extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $clientId;
+        /**
+         * @var string
+         */
+        public $clientVersion;
+        /**
+         * @param string
+         */
+        public function setClientId($clientId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClientId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setClientVersion($clientVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClientVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Safebrowsing\GoogleSecuritySafebrowsingV4ClientInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClientId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setClientVersion($clientVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getClientVersion()
+    class Google_Service_Safebrowsing_GoogleSecuritySafebrowsingV4ClientInfo extends \Google\Service\Safebrowsing\GoogleSecuritySafebrowsingV4ClientInfo
     {
     }
 }

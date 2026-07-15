@@ -21,141 +21,150 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class AnnotateTextResponse extends \Google\Collection
-{
-    protected $collection_key = 'sentences';
-    protected $categoriesType = ClassificationCategory::class;
-    protected $categoriesDataType = 'array';
-    protected $documentSentimentType = Sentiment::class;
-    protected $documentSentimentDataType = '';
-    protected $entitiesType = Entity::class;
-    protected $entitiesDataType = 'array';
-    /**
-     * The language of the text, which will be the same as the language specified
-     * in the request or, if not specified, the automatically-detected language.
-     * See Document.language_code field for more details.
-     *
-     * @var string
-     */
-    public $languageCode;
-    /**
-     * Whether the language is officially supported by all requested features. The
-     * API may still return a response when the language is not supported, but it
-     * is on a best effort basis.
-     *
-     * @var bool
-     */
-    public $languageSupported;
-    protected $moderationCategoriesType = ClassificationCategory::class;
-    protected $moderationCategoriesDataType = 'array';
-    protected $sentencesType = Sentence::class;
-    protected $sentencesDataType = 'array';
-    /**
-     * Categories identified in the input document.
-     *
-     * @param ClassificationCategory[] $categories
-     */
-    public function setCategories($categories)
+namespace Google\Service\CloudNaturalLanguage {
+    class AnnotateTextResponse extends \Google\Collection
     {
+        protected $collection_key = 'sentences';
+        protected $categoriesType = ClassificationCategory::class;
+        protected $categoriesDataType = 'array';
+        protected $documentSentimentType = Sentiment::class;
+        protected $documentSentimentDataType = '';
+        protected $entitiesType = Entity::class;
+        protected $entitiesDataType = 'array';
+        /**
+         * The language of the text, which will be the same as the language specified
+         * in the request or, if not specified, the automatically-detected language.
+         * See Document.language_code field for more details.
+         *
+         * @var string
+         */
+        public $languageCode;
+        /**
+         * Whether the language is officially supported by all requested features. The
+         * API may still return a response when the language is not supported, but it
+         * is on a best effort basis.
+         *
+         * @var bool
+         */
+        public $languageSupported;
+        protected $moderationCategoriesType = ClassificationCategory::class;
+        protected $moderationCategoriesDataType = 'array';
+        protected $sentencesType = Sentence::class;
+        protected $sentencesDataType = 'array';
+        /**
+         * Categories identified in the input document.
+         *
+         * @param ClassificationCategory[] $categories
+         */
+        public function setCategories($categories)
+        {
+        }
+        /**
+         * @return ClassificationCategory[]
+         */
+        public function getCategories()
+        {
+        }
+        /**
+         * The overall sentiment for the document. Populated if the user enables
+         * AnnotateTextRequest.Features.extract_document_sentiment.
+         *
+         * @param Sentiment $documentSentiment
+         */
+        public function setDocumentSentiment(Sentiment $documentSentiment)
+        {
+        }
+        /**
+         * @return Sentiment
+         */
+        public function getDocumentSentiment()
+        {
+        }
+        /**
+         * Entities, along with their semantic information, in the input document.
+         * Populated if the user enables AnnotateTextRequest.Features.extract_entities
+         * .
+         *
+         * @param Entity[] $entities
+         */
+        public function setEntities($entities)
+        {
+        }
+        /**
+         * @return Entity[]
+         */
+        public function getEntities()
+        {
+        }
+        /**
+         * The language of the text, which will be the same as the language specified
+         * in the request or, if not specified, the automatically-detected language.
+         * See Document.language_code field for more details.
+         *
+         * @param string $languageCode
+         */
+        public function setLanguageCode($languageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLanguageCode()
+        {
+        }
+        /**
+         * Whether the language is officially supported by all requested features. The
+         * API may still return a response when the language is not supported, but it
+         * is on a best effort basis.
+         *
+         * @param bool $languageSupported
+         */
+        public function setLanguageSupported($languageSupported)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getLanguageSupported()
+        {
+        }
+        /**
+         * Harmful and sensitive categories identified in the input document.
+         *
+         * @param ClassificationCategory[] $moderationCategories
+         */
+        public function setModerationCategories($moderationCategories)
+        {
+        }
+        /**
+         * @return ClassificationCategory[]
+         */
+        public function getModerationCategories()
+        {
+        }
+        /**
+         * Sentences in the input document. Populated if the user enables
+         * AnnotateTextRequest.Features.extract_document_sentiment.
+         *
+         * @param Sentence[] $sentences
+         */
+        public function setSentences($sentences)
+        {
+        }
+        /**
+         * @return Sentence[]
+         */
+        public function getSentences()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ClassificationCategory[]
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\AnnotateTextResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCategories()
-    {
-    }
-    /**
-     * The overall sentiment for the document. Populated if the user enables
-     * AnnotateTextRequest.Features.extract_document_sentiment.
-     *
-     * @param Sentiment $documentSentiment
-     */
-    public function setDocumentSentiment(Sentiment $documentSentiment)
-    {
-    }
-    /**
-     * @return Sentiment
-     */
-    public function getDocumentSentiment()
-    {
-    }
-    /**
-     * Entities, along with their semantic information, in the input document.
-     * Populated if the user enables AnnotateTextRequest.Features.extract_entities
-     * .
-     *
-     * @param Entity[] $entities
-     */
-    public function setEntities($entities)
-    {
-    }
-    /**
-     * @return Entity[]
-     */
-    public function getEntities()
-    {
-    }
-    /**
-     * The language of the text, which will be the same as the language specified
-     * in the request or, if not specified, the automatically-detected language.
-     * See Document.language_code field for more details.
-     *
-     * @param string $languageCode
-     */
-    public function setLanguageCode($languageCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLanguageCode()
-    {
-    }
-    /**
-     * Whether the language is officially supported by all requested features. The
-     * API may still return a response when the language is not supported, but it
-     * is on a best effort basis.
-     *
-     * @param bool $languageSupported
-     */
-    public function setLanguageSupported($languageSupported)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getLanguageSupported()
-    {
-    }
-    /**
-     * Harmful and sensitive categories identified in the input document.
-     *
-     * @param ClassificationCategory[] $moderationCategories
-     */
-    public function setModerationCategories($moderationCategories)
-    {
-    }
-    /**
-     * @return ClassificationCategory[]
-     */
-    public function getModerationCategories()
-    {
-    }
-    /**
-     * Sentences in the input document. Populated if the user enables
-     * AnnotateTextRequest.Features.extract_document_sentiment.
-     *
-     * @param Sentence[] $sentences
-     */
-    public function setSentences($sentences)
-    {
-    }
-    /**
-     * @return Sentence[]
-     */
-    public function getSentences()
+    class Google_Service_CloudNaturalLanguage_AnnotateTextResponse extends \Google\Service\CloudNaturalLanguage\AnnotateTextResponse
     {
     }
 }

@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1PrCurve extends \Google\Collection
-{
-    protected $collection_key = 'confidenceMetricsEntries';
-    protected $annotationSpecType = GoogleCloudDatalabelingV1beta1AnnotationSpec::class;
-    protected $annotationSpecDataType = '';
-    /**
-     * Area under the precision-recall curve. Not to be confused with area under a
-     * receiver operating characteristic (ROC) curve.
-     *
-     * @var float
-     */
-    public $areaUnderCurve;
-    protected $confidenceMetricsEntriesType = GoogleCloudDatalabelingV1beta1ConfidenceMetricsEntry::class;
-    protected $confidenceMetricsEntriesDataType = 'array';
-    /**
-     * Mean average prcision of this curve.
-     *
-     * @var float
-     */
-    public $meanAveragePrecision;
-    /**
-     * The annotation spec of the label for which the precision-recall curve
-     * calculated. If this field is empty, that means the precision-recall curve
-     * is an aggregate curve for all labels.
-     *
-     * @param GoogleCloudDatalabelingV1beta1AnnotationSpec $annotationSpec
-     */
-    public function setAnnotationSpec(GoogleCloudDatalabelingV1beta1AnnotationSpec $annotationSpec)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1PrCurve extends \Google\Collection
     {
+        protected $collection_key = 'confidenceMetricsEntries';
+        protected $annotationSpecType = GoogleCloudDatalabelingV1beta1AnnotationSpec::class;
+        protected $annotationSpecDataType = '';
+        /**
+         * Area under the precision-recall curve. Not to be confused with area under a
+         * receiver operating characteristic (ROC) curve.
+         *
+         * @var float
+         */
+        public $areaUnderCurve;
+        protected $confidenceMetricsEntriesType = GoogleCloudDatalabelingV1beta1ConfidenceMetricsEntry::class;
+        protected $confidenceMetricsEntriesDataType = 'array';
+        /**
+         * Mean average prcision of this curve.
+         *
+         * @var float
+         */
+        public $meanAveragePrecision;
+        /**
+         * The annotation spec of the label for which the precision-recall curve
+         * calculated. If this field is empty, that means the precision-recall curve
+         * is an aggregate curve for all labels.
+         *
+         * @param GoogleCloudDatalabelingV1beta1AnnotationSpec $annotationSpec
+         */
+        public function setAnnotationSpec(GoogleCloudDatalabelingV1beta1AnnotationSpec $annotationSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1AnnotationSpec
+         */
+        public function getAnnotationSpec()
+        {
+        }
+        /**
+         * Area under the precision-recall curve. Not to be confused with area under a
+         * receiver operating characteristic (ROC) curve.
+         *
+         * @param float $areaUnderCurve
+         */
+        public function setAreaUnderCurve($areaUnderCurve)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getAreaUnderCurve()
+        {
+        }
+        /**
+         * Entries that make up the precision-recall graph. Each entry is a "point" on
+         * the graph drawn for a different `confidence_threshold`.
+         *
+         * @param GoogleCloudDatalabelingV1beta1ConfidenceMetricsEntry[] $confidenceMetricsEntries
+         */
+        public function setConfidenceMetricsEntries($confidenceMetricsEntries)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1ConfidenceMetricsEntry[]
+         */
+        public function getConfidenceMetricsEntries()
+        {
+        }
+        /**
+         * Mean average prcision of this curve.
+         *
+         * @param float $meanAveragePrecision
+         */
+        public function setMeanAveragePrecision($meanAveragePrecision)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getMeanAveragePrecision()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatalabelingV1beta1AnnotationSpec
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1PrCurve registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotationSpec()
-    {
-    }
-    /**
-     * Area under the precision-recall curve. Not to be confused with area under a
-     * receiver operating characteristic (ROC) curve.
-     *
-     * @param float $areaUnderCurve
-     */
-    public function setAreaUnderCurve($areaUnderCurve)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getAreaUnderCurve()
-    {
-    }
-    /**
-     * Entries that make up the precision-recall graph. Each entry is a "point" on
-     * the graph drawn for a different `confidence_threshold`.
-     *
-     * @param GoogleCloudDatalabelingV1beta1ConfidenceMetricsEntry[] $confidenceMetricsEntries
-     */
-    public function setConfidenceMetricsEntries($confidenceMetricsEntries)
-    {
-    }
-    /**
-     * @return GoogleCloudDatalabelingV1beta1ConfidenceMetricsEntry[]
-     */
-    public function getConfidenceMetricsEntries()
-    {
-    }
-    /**
-     * Mean average prcision of this curve.
-     *
-     * @param float $meanAveragePrecision
-     */
-    public function setMeanAveragePrecision($meanAveragePrecision)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getMeanAveragePrecision()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1PrCurve extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1PrCurve
     {
     }
 }

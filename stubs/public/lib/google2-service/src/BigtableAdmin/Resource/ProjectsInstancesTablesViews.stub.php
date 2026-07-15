@@ -21,61 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin\Resource;
-
-/**
- * The "views" collection of methods.
- * Typical usage is:
- *  <code>
- *   $bigtableadminService = new Google\Service\BigtableAdmin(...);
- *   $views = $bigtableadminService->projects_instances_tables_views;
- *  </code>
- */
-class ProjectsInstancesTablesViews extends \Google\Service\Resource
-{
+namespace Google\Service\BigtableAdmin\Resource {
+    use Google\Service\BigtableAdmin\GetIamPolicyRequest;
+    use Google\Service\BigtableAdmin\Policy;
+    use Google\Service\BigtableAdmin\SetIamPolicyRequest;
+    use Google\Service\BigtableAdmin\TestIamPermissionsRequest;
+    use Google\Service\BigtableAdmin\TestIamPermissionsResponse;
     /**
-     * Gets the access control policy for a Table resource. Returns an empty policy
-     * if the resource exists but does not have a policy set. (views.getIamPolicy)
-     *
-     * @param string $resource REQUIRED: The resource for which the policy is being
-     * requested. See [Resource
-     * names](https://cloud.google.com/apis/design/resource_names) for the
-     * appropriate value for this field.
-     * @param GetIamPolicyRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Policy
+     * The "views" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $bigtableadminService = new Google\Service\BigtableAdmin(...);
+     *   $views = $bigtableadminService->projects_instances_tables_views;
+     *  </code>
      */
-    public function getIamPolicy($resource, GetIamPolicyRequest $postBody, $optParams = [])
+    class ProjectsInstancesTablesViews extends \Google\Service\Resource
     {
+        /**
+         * Gets the access control policy for a Table resource. Returns an empty policy
+         * if the resource exists but does not have a policy set. (views.getIamPolicy)
+         *
+         * @param string $resource REQUIRED: The resource for which the policy is being
+         * requested. See [Resource
+         * names](https://cloud.google.com/apis/design/resource_names) for the
+         * appropriate value for this field.
+         * @param GetIamPolicyRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Policy
+         */
+        public function getIamPolicy($resource, GetIamPolicyRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Sets the access control policy on a Table resource. Replaces any existing
+         * policy. (views.setIamPolicy)
+         *
+         * @param string $resource REQUIRED: The resource for which the policy is being
+         * specified. See [Resource
+         * names](https://cloud.google.com/apis/design/resource_names) for the
+         * appropriate value for this field.
+         * @param SetIamPolicyRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Policy
+         */
+        public function setIamPolicy($resource, SetIamPolicyRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Returns permissions that the caller has on the specified table resource.
+         * (views.testIamPermissions)
+         *
+         * @param string $resource REQUIRED: The resource for which the policy detail is
+         * being requested. See [Resource
+         * names](https://cloud.google.com/apis/design/resource_names) for the
+         * appropriate value for this field.
+         * @param TestIamPermissionsRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return TestIamPermissionsResponse
+         */
+        public function testIamPermissions($resource, TestIamPermissionsRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Sets the access control policy on a Table resource. Replaces any existing
-     * policy. (views.setIamPolicy)
-     *
-     * @param string $resource REQUIRED: The resource for which the policy is being
-     * specified. See [Resource
-     * names](https://cloud.google.com/apis/design/resource_names) for the
-     * appropriate value for this field.
-     * @param SetIamPolicyRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Policy
+     * Runtime class alias of \Google\Service\BigtableAdmin\Resource\ProjectsInstancesTablesViews registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setIamPolicy($resource, SetIamPolicyRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Returns permissions that the caller has on the specified table resource.
-     * (views.testIamPermissions)
-     *
-     * @param string $resource REQUIRED: The resource for which the policy detail is
-     * being requested. See [Resource
-     * names](https://cloud.google.com/apis/design/resource_names) for the
-     * appropriate value for this field.
-     * @param TestIamPermissionsRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return TestIamPermissionsResponse
-     */
-    public function testIamPermissions($resource, TestIamPermissionsRequest $postBody, $optParams = [])
+    class Google_Service_BigtableAdmin_Resource_ProjectsInstancesTablesViews extends \Google\Service\BigtableAdmin\Resource\ProjectsInstancesTablesViews
     {
     }
 }

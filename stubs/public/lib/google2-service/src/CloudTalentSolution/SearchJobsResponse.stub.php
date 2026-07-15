@@ -21,169 +21,178 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudTalentSolution;
-
-class SearchJobsResponse extends \Google\Collection
-{
-    protected $collection_key = 'matchingJobs';
-    /**
-     * If query broadening is enabled, we may append additional results from the
-     * broadened query. This number indicates how many of the jobs returned in the
-     * jobs field are from the broadened query. These results are always at the
-     * end of the jobs list. In particular, a value of 0, or if the field isn't
-     * set, all the jobs in the jobs list are from the original (without
-     * broadening) query. If this field is non-zero, subsequent requests with
-     * offset after this result set should contain all broadened results.
-     *
-     * @var int
-     */
-    public $broadenedQueryJobsCount;
-    protected $histogramQueryResultsType = HistogramQueryResult::class;
-    protected $histogramQueryResultsDataType = 'array';
-    protected $locationFiltersType = Location::class;
-    protected $locationFiltersDataType = 'array';
-    protected $matchingJobsType = MatchingJob::class;
-    protected $matchingJobsDataType = 'array';
-    protected $metadataType = ResponseMetadata::class;
-    protected $metadataDataType = '';
-    /**
-     * The token that specifies the starting position of the next page of results.
-     * This field is empty if there are no more results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $spellCorrectionType = SpellingCorrection::class;
-    protected $spellCorrectionDataType = '';
-    /**
-     * Number of jobs that match the specified query. Note: This size is precise
-     * only if the total is less than 100,000.
-     *
-     * @var int
-     */
-    public $totalSize;
-    /**
-     * If query broadening is enabled, we may append additional results from the
-     * broadened query. This number indicates how many of the jobs returned in the
-     * jobs field are from the broadened query. These results are always at the
-     * end of the jobs list. In particular, a value of 0, or if the field isn't
-     * set, all the jobs in the jobs list are from the original (without
-     * broadening) query. If this field is non-zero, subsequent requests with
-     * offset after this result set should contain all broadened results.
-     *
-     * @param int $broadenedQueryJobsCount
-     */
-    public function setBroadenedQueryJobsCount($broadenedQueryJobsCount)
+namespace Google\Service\CloudTalentSolution {
+    class SearchJobsResponse extends \Google\Collection
     {
+        protected $collection_key = 'matchingJobs';
+        /**
+         * If query broadening is enabled, we may append additional results from the
+         * broadened query. This number indicates how many of the jobs returned in the
+         * jobs field are from the broadened query. These results are always at the
+         * end of the jobs list. In particular, a value of 0, or if the field isn't
+         * set, all the jobs in the jobs list are from the original (without
+         * broadening) query. If this field is non-zero, subsequent requests with
+         * offset after this result set should contain all broadened results.
+         *
+         * @var int
+         */
+        public $broadenedQueryJobsCount;
+        protected $histogramQueryResultsType = HistogramQueryResult::class;
+        protected $histogramQueryResultsDataType = 'array';
+        protected $locationFiltersType = Location::class;
+        protected $locationFiltersDataType = 'array';
+        protected $matchingJobsType = MatchingJob::class;
+        protected $matchingJobsDataType = 'array';
+        protected $metadataType = ResponseMetadata::class;
+        protected $metadataDataType = '';
+        /**
+         * The token that specifies the starting position of the next page of results.
+         * This field is empty if there are no more results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $spellCorrectionType = SpellingCorrection::class;
+        protected $spellCorrectionDataType = '';
+        /**
+         * Number of jobs that match the specified query. Note: This size is precise
+         * only if the total is less than 100,000.
+         *
+         * @var int
+         */
+        public $totalSize;
+        /**
+         * If query broadening is enabled, we may append additional results from the
+         * broadened query. This number indicates how many of the jobs returned in the
+         * jobs field are from the broadened query. These results are always at the
+         * end of the jobs list. In particular, a value of 0, or if the field isn't
+         * set, all the jobs in the jobs list are from the original (without
+         * broadening) query. If this field is non-zero, subsequent requests with
+         * offset after this result set should contain all broadened results.
+         *
+         * @param int $broadenedQueryJobsCount
+         */
+        public function setBroadenedQueryJobsCount($broadenedQueryJobsCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getBroadenedQueryJobsCount()
+        {
+        }
+        /**
+         * The histogram results that match with specified
+         * SearchJobsRequest.histogram_queries.
+         *
+         * @param HistogramQueryResult[] $histogramQueryResults
+         */
+        public function setHistogramQueryResults($histogramQueryResults)
+        {
+        }
+        /**
+         * @return HistogramQueryResult[]
+         */
+        public function getHistogramQueryResults()
+        {
+        }
+        /**
+         * The location filters that the service applied to the specified query. If
+         * any filters are lat-lng based, the Location.location_type is
+         * Location.LocationType.LOCATION_TYPE_UNSPECIFIED.
+         *
+         * @param Location[] $locationFilters
+         */
+        public function setLocationFilters($locationFilters)
+        {
+        }
+        /**
+         * @return Location[]
+         */
+        public function getLocationFilters()
+        {
+        }
+        /**
+         * The Job entities that match the specified SearchJobsRequest.
+         *
+         * @param MatchingJob[] $matchingJobs
+         */
+        public function setMatchingJobs($matchingJobs)
+        {
+        }
+        /**
+         * @return MatchingJob[]
+         */
+        public function getMatchingJobs()
+        {
+        }
+        /**
+         * Additional information for the API invocation, such as the request tracking
+         * id.
+         *
+         * @param ResponseMetadata $metadata
+         */
+        public function setMetadata(ResponseMetadata $metadata)
+        {
+        }
+        /**
+         * @return ResponseMetadata
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * The token that specifies the starting position of the next page of results.
+         * This field is empty if there are no more results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The spell checking result, and correction.
+         *
+         * @param SpellingCorrection $spellCorrection
+         */
+        public function setSpellCorrection(SpellingCorrection $spellCorrection)
+        {
+        }
+        /**
+         * @return SpellingCorrection
+         */
+        public function getSpellCorrection()
+        {
+        }
+        /**
+         * Number of jobs that match the specified query. Note: This size is precise
+         * only if the total is less than 100,000.
+         *
+         * @param int $totalSize
+         */
+        public function setTotalSize($totalSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalSize()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudTalentSolution\SearchJobsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBroadenedQueryJobsCount()
-    {
-    }
-    /**
-     * The histogram results that match with specified
-     * SearchJobsRequest.histogram_queries.
-     *
-     * @param HistogramQueryResult[] $histogramQueryResults
-     */
-    public function setHistogramQueryResults($histogramQueryResults)
-    {
-    }
-    /**
-     * @return HistogramQueryResult[]
-     */
-    public function getHistogramQueryResults()
-    {
-    }
-    /**
-     * The location filters that the service applied to the specified query. If
-     * any filters are lat-lng based, the Location.location_type is
-     * Location.LocationType.LOCATION_TYPE_UNSPECIFIED.
-     *
-     * @param Location[] $locationFilters
-     */
-    public function setLocationFilters($locationFilters)
-    {
-    }
-    /**
-     * @return Location[]
-     */
-    public function getLocationFilters()
-    {
-    }
-    /**
-     * The Job entities that match the specified SearchJobsRequest.
-     *
-     * @param MatchingJob[] $matchingJobs
-     */
-    public function setMatchingJobs($matchingJobs)
-    {
-    }
-    /**
-     * @return MatchingJob[]
-     */
-    public function getMatchingJobs()
-    {
-    }
-    /**
-     * Additional information for the API invocation, such as the request tracking
-     * id.
-     *
-     * @param ResponseMetadata $metadata
-     */
-    public function setMetadata(ResponseMetadata $metadata)
-    {
-    }
-    /**
-     * @return ResponseMetadata
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * The token that specifies the starting position of the next page of results.
-     * This field is empty if there are no more results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The spell checking result, and correction.
-     *
-     * @param SpellingCorrection $spellCorrection
-     */
-    public function setSpellCorrection(SpellingCorrection $spellCorrection)
-    {
-    }
-    /**
-     * @return SpellingCorrection
-     */
-    public function getSpellCorrection()
-    {
-    }
-    /**
-     * Number of jobs that match the specified query. Note: This size is precise
-     * only if the total is less than 100,000.
-     *
-     * @param int $totalSize
-     */
-    public function setTotalSize($totalSize)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalSize()
+    class Google_Service_CloudTalentSolution_SearchJobsResponse extends \Google\Service\CloudTalentSolution\SearchJobsResponse
     {
     }
 }

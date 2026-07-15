@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity;
-
-class LogEntrySourceLocation extends \Google\Model
-{
-    public $file;
-    public $function;
-    public $line;
-    public function setFile($file)
+namespace Google\Service\Networkconnectivity {
+    class LogEntrySourceLocation extends \Google\Model
     {
+        public $file;
+        public $function;
+        public $line;
+        public function setFile($file)
+        {
+        }
+        public function getFile()
+        {
+        }
+        public function setFunction($function)
+        {
+        }
+        public function getFunction()
+        {
+        }
+        public function setLine($line)
+        {
+        }
+        public function getLine()
+        {
+        }
     }
-    public function getFile()
-    {
-    }
-    public function setFunction($function)
-    {
-    }
-    public function getFunction()
-    {
-    }
-    public function setLine($line)
-    {
-    }
-    public function getLine()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Networkconnectivity\LogEntrySourceLocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Networkconnectivity_LogEntrySourceLocation extends \Google\Service\Networkconnectivity\LogEntrySourceLocation
     {
     }
 }

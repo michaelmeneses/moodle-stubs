@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors;
-
-class AclInfo extends \Google\Collection
-{
-    protected $collection_key = 'readers';
-    protected $readersType = Readers::class;
-    protected $readersDataType = 'array';
-    /**
-     * @param Readers[]
-     */
-    public function setReaders($readers)
+namespace Google\Service\Connectors {
+    class AclInfo extends \Google\Collection
     {
+        protected $collection_key = 'readers';
+        protected $readersType = Readers::class;
+        protected $readersDataType = 'array';
+        /**
+         * @param Readers[]
+         */
+        public function setReaders($readers)
+        {
+        }
+        /**
+         * @return Readers[]
+         */
+        public function getReaders()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Readers[]
+     * Runtime class alias of \Google\Service\Connectors\AclInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReaders()
+    class Google_Service_Connectors_AclInfo extends \Google\Service\Connectors\AclInfo
     {
     }
 }

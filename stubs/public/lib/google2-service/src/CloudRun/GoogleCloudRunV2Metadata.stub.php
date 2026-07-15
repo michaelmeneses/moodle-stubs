@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleCloudRunV2Metadata extends \Google\Model
-{
-    /**
-     * JSON encoded Google-generated Customer Metadata for a given
-     * resource/project.
-     *
-     * @var string
-     */
-    public $metadata;
-    /**
-     * JSON encoded Google-generated Customer Metadata for a given
-     * resource/project.
-     *
-     * @param string $metadata
-     */
-    public function setMetadata($metadata)
+namespace Google\Service\CloudRun {
+    class GoogleCloudRunV2Metadata extends \Google\Model
     {
+        /**
+         * JSON encoded Google-generated Customer Metadata for a given
+         * resource/project.
+         *
+         * @var string
+         */
+        public $metadata;
+        /**
+         * JSON encoded Google-generated Customer Metadata for a given
+         * resource/project.
+         *
+         * @param string $metadata
+         */
+        public function setMetadata($metadata)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRun\GoogleCloudRunV2Metadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetadata()
+    class Google_Service_CloudRun_GoogleCloudRunV2Metadata extends \Google\Service\CloudRun\GoogleCloudRunV2Metadata
     {
     }
 }

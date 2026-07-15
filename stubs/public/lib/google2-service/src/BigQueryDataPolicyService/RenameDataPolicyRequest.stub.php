@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigQueryDataPolicyService;
-
-class RenameDataPolicyRequest extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $newDataPolicyId;
-    /**
-     * @param string
-     */
-    public function setNewDataPolicyId($newDataPolicyId)
+namespace Google\Service\BigQueryDataPolicyService {
+    class RenameDataPolicyRequest extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $newDataPolicyId;
+        /**
+         * @param string
+         */
+        public function setNewDataPolicyId($newDataPolicyId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNewDataPolicyId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BigQueryDataPolicyService\RenameDataPolicyRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNewDataPolicyId()
+    class Google_Service_BigQueryDataPolicyService_RenameDataPolicyRequest extends \Google\Service\BigQueryDataPolicyService\RenameDataPolicyRequest
     {
     }
 }

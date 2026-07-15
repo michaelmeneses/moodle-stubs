@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class FutureResourcesSpecLocationPolicyLocation extends \Google\Model
-{
-    /**
-     * Location is allowed for use.
-     */
-    public const PREFERENCE_ALLOW = 'ALLOW';
-    /**
-     * Location is prohibited.
-     */
-    public const PREFERENCE_DENY = 'DENY';
-    /**
-     * Default value, unused.
-     */
-    public const PREFERENCE_PREFERENCE_UNSPECIFIED = 'PREFERENCE_UNSPECIFIED';
-    /**
-     * Preference for this location.
-     *
-     * @var string
-     */
-    public $preference;
-    /**
-     * Preference for this location.
-     *
-     * Accepted values: ALLOW, DENY, PREFERENCE_UNSPECIFIED
-     *
-     * @param self::PREFERENCE_* $preference
-     */
-    public function setPreference($preference)
+namespace Google\Service\Compute {
+    class FutureResourcesSpecLocationPolicyLocation extends \Google\Model
     {
+        /**
+         * Location is allowed for use.
+         */
+        public const PREFERENCE_ALLOW = 'ALLOW';
+        /**
+         * Location is prohibited.
+         */
+        public const PREFERENCE_DENY = 'DENY';
+        /**
+         * Default value, unused.
+         */
+        public const PREFERENCE_PREFERENCE_UNSPECIFIED = 'PREFERENCE_UNSPECIFIED';
+        /**
+         * Preference for this location.
+         *
+         * @var string
+         */
+        public $preference;
+        /**
+         * Preference for this location.
+         *
+         * Accepted values: ALLOW, DENY, PREFERENCE_UNSPECIFIED
+         *
+         * @param self::PREFERENCE_* $preference
+         */
+        public function setPreference($preference)
+        {
+        }
+        /**
+         * @return self::PREFERENCE_*
+         */
+        public function getPreference()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::PREFERENCE_*
+     * Runtime class alias of \Google\Service\Compute\FutureResourcesSpecLocationPolicyLocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPreference()
+    class Google_Service_Compute_FutureResourcesSpecLocationPolicyLocation extends \Google\Service\Compute\FutureResourcesSpecLocationPolicyLocation
     {
     }
 }

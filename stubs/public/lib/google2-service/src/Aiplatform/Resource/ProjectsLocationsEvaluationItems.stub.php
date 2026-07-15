@@ -21,81 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform\Resource;
-
-/**
- * The "evaluationItems" collection of methods.
- * Typical usage is:
- *  <code>
- *   $aiplatformService = new Google\Service\Aiplatform(...);
- *   $evaluationItems = $aiplatformService->projects_locations_evaluationItems;
- *  </code>
- */
-class ProjectsLocationsEvaluationItems extends \Google\Service\Resource
-{
+namespace Google\Service\Aiplatform\Resource {
+    use Google\Service\Aiplatform\GoogleCloudAiplatformV1EvaluationItem;
+    use Google\Service\Aiplatform\GoogleCloudAiplatformV1ListEvaluationItemsResponse;
+    use Google\Service\Aiplatform\GoogleLongrunningOperation;
     /**
-     * Creates an Evaluation Item. (evaluationItems.create)
-     *
-     * @param string $parent Required. The resource name of the Location to create
-     * the Evaluation Item in. Format: `projects/{project}/locations/{location}`
-     * @param GoogleCloudAiplatformV1EvaluationItem $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudAiplatformV1EvaluationItem
-     * @throws \Google\Service\Exception
+     * The "evaluationItems" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $aiplatformService = new Google\Service\Aiplatform(...);
+     *   $evaluationItems = $aiplatformService->projects_locations_evaluationItems;
+     *  </code>
      */
-    public function create($parent, GoogleCloudAiplatformV1EvaluationItem $postBody, $optParams = [])
+    class ProjectsLocationsEvaluationItems extends \Google\Service\Resource
     {
+        /**
+         * Creates an Evaluation Item. (evaluationItems.create)
+         *
+         * @param string $parent Required. The resource name of the Location to create
+         * the Evaluation Item in. Format: `projects/{project}/locations/{location}`
+         * @param GoogleCloudAiplatformV1EvaluationItem $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudAiplatformV1EvaluationItem
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, GoogleCloudAiplatformV1EvaluationItem $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes an Evaluation Item. (evaluationItems.delete)
+         *
+         * @param string $name Required. The name of the EvaluationItem resource to be
+         * deleted. Format:
+         * `projects/{project}/locations/{location}/evaluationItems/{evaluation_item}`
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets an Evaluation Item. (evaluationItems.get)
+         *
+         * @param string $name Required. The name of the EvaluationItem resource.
+         * Format:
+         * `projects/{project}/locations/{location}/evaluationItems/{evaluation_item}`
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudAiplatformV1EvaluationItem
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists Evaluation Items.
+         * (evaluationItems.listProjectsLocationsEvaluationItems)
+         *
+         * @param string $parent Required. The resource name of the Location from which
+         * to list the Evaluation Items. Format:
+         * `projects/{project}/locations/{location}`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Optional. Filter expression that matches a subset of
+         * the EvaluationItems to show. For field names both snake_case and camelCase
+         * are supported. For more information about filter syntax, see
+         * [AIP-160](https://google.aip.dev/160).
+         * @opt_param string orderBy Optional. A comma-separated list of fields to order
+         * by, sorted in ascending order by default. Use `desc` after a field name for
+         * descending.
+         * @opt_param int pageSize Optional. The maximum number of Evaluation Items to
+         * return.
+         * @opt_param string pageToken Optional. A page token, received from a previous
+         * `ListEvaluationItems` call. Provide this to retrieve the subsequent page.
+         * @return GoogleCloudAiplatformV1ListEvaluationItemsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsEvaluationItems($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes an Evaluation Item. (evaluationItems.delete)
-     *
-     * @param string $name Required. The name of the EvaluationItem resource to be
-     * deleted. Format:
-     * `projects/{project}/locations/{location}/evaluationItems/{evaluation_item}`
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Aiplatform\Resource\ProjectsLocationsEvaluationItems registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets an Evaluation Item. (evaluationItems.get)
-     *
-     * @param string $name Required. The name of the EvaluationItem resource.
-     * Format:
-     * `projects/{project}/locations/{location}/evaluationItems/{evaluation_item}`
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudAiplatformV1EvaluationItem
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists Evaluation Items.
-     * (evaluationItems.listProjectsLocationsEvaluationItems)
-     *
-     * @param string $parent Required. The resource name of the Location from which
-     * to list the Evaluation Items. Format:
-     * `projects/{project}/locations/{location}`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Optional. Filter expression that matches a subset of
-     * the EvaluationItems to show. For field names both snake_case and camelCase
-     * are supported. For more information about filter syntax, see
-     * [AIP-160](https://google.aip.dev/160).
-     * @opt_param string orderBy Optional. A comma-separated list of fields to order
-     * by, sorted in ascending order by default. Use `desc` after a field name for
-     * descending.
-     * @opt_param int pageSize Optional. The maximum number of Evaluation Items to
-     * return.
-     * @opt_param string pageToken Optional. A page token, received from a previous
-     * `ListEvaluationItems` call. Provide this to retrieve the subsequent page.
-     * @return GoogleCloudAiplatformV1ListEvaluationItemsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsEvaluationItems($parent, $optParams = [])
+    class Google_Service_Aiplatform_Resource_ProjectsLocationsEvaluationItems extends \Google\Service\Aiplatform\Resource\ProjectsLocationsEvaluationItems
     {
     }
 }

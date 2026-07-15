@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigQueryConnectionService;
-
-class ConnectorConfigurationUsernamePassword extends \Google\Model
-{
-    protected $passwordType = ConnectorConfigurationSecret::class;
-    protected $passwordDataType = '';
-    /**
-     * Required. Username.
-     *
-     * @var string
-     */
-    public $username;
-    /**
-     * Required. Password.
-     *
-     * @param ConnectorConfigurationSecret $password
-     */
-    public function setPassword(ConnectorConfigurationSecret $password)
+namespace Google\Service\BigQueryConnectionService {
+    class ConnectorConfigurationUsernamePassword extends \Google\Model
     {
+        protected $passwordType = ConnectorConfigurationSecret::class;
+        protected $passwordDataType = '';
+        /**
+         * Required. Username.
+         *
+         * @var string
+         */
+        public $username;
+        /**
+         * Required. Password.
+         *
+         * @param ConnectorConfigurationSecret $password
+         */
+        public function setPassword(ConnectorConfigurationSecret $password)
+        {
+        }
+        /**
+         * @return ConnectorConfigurationSecret
+         */
+        public function getPassword()
+        {
+        }
+        /**
+         * Required. Username.
+         *
+         * @param string $username
+         */
+        public function setUsername($username)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUsername()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ConnectorConfigurationSecret
+     * Runtime class alias of \Google\Service\BigQueryConnectionService\ConnectorConfigurationUsernamePassword registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPassword()
-    {
-    }
-    /**
-     * Required. Username.
-     *
-     * @param string $username
-     */
-    public function setUsername($username)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUsername()
+    class Google_Service_BigQueryConnectionService_ConnectorConfigurationUsernamePassword extends \Google\Service\BigQueryConnectionService\ConnectorConfigurationUsernamePassword
     {
     }
 }

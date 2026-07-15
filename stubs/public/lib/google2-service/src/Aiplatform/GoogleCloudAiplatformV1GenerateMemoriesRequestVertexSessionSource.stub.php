@@ -21,78 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1GenerateMemoriesRequestVertexSessionSource extends \Google\Model
-{
-    /**
-     * Optional. End time (exclusive) of the time range. If not set, the end time
-     * is unbounded.
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * Required. The resource name of the Session to generate memories for.
-     * Format: `projects/{project}/locations/{location}/reasoningEngines/{reasonin
-     * g_engine}/sessions/{session}`
-     *
-     * @var string
-     */
-    public $session;
-    /**
-     * Optional. Time range to define which session events should be used to
-     * generate memories. Start time (inclusive) of the time range. If not set,
-     * the start time is unbounded.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * Optional. End time (exclusive) of the time range. If not set, the end time
-     * is unbounded.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1GenerateMemoriesRequestVertexSessionSource extends \Google\Model
     {
+        /**
+         * Optional. End time (exclusive) of the time range. If not set, the end time
+         * is unbounded.
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * Required. The resource name of the Session to generate memories for.
+         * Format: `projects/{project}/locations/{location}/reasoningEngines/{reasonin
+         * g_engine}/sessions/{session}`
+         *
+         * @var string
+         */
+        public $session;
+        /**
+         * Optional. Time range to define which session events should be used to
+         * generate memories. Start time (inclusive) of the time range. If not set,
+         * the start time is unbounded.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * Optional. End time (exclusive) of the time range. If not set, the end time
+         * is unbounded.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * Required. The resource name of the Session to generate memories for.
+         * Format: `projects/{project}/locations/{location}/reasoningEngines/{reasonin
+         * g_engine}/sessions/{session}`
+         *
+         * @param string $session
+         */
+        public function setSession($session)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSession()
+        {
+        }
+        /**
+         * Optional. Time range to define which session events should be used to
+         * generate memories. Start time (inclusive) of the time range. If not set,
+         * the start time is unbounded.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1GenerateMemoriesRequestVertexSessionSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndTime()
-    {
-    }
-    /**
-     * Required. The resource name of the Session to generate memories for.
-     * Format: `projects/{project}/locations/{location}/reasoningEngines/{reasonin
-     * g_engine}/sessions/{session}`
-     *
-     * @param string $session
-     */
-    public function setSession($session)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSession()
-    {
-    }
-    /**
-     * Optional. Time range to define which session events should be used to
-     * generate memories. Start time (inclusive) of the time range. If not set,
-     * the start time is unbounded.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1GenerateMemoriesRequestVertexSessionSource extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1GenerateMemoriesRequestVertexSessionSource
     {
     }
 }

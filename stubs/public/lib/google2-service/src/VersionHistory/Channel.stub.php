@@ -21,85 +21,94 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VersionHistory;
-
-class Channel extends \Google\Model
-{
-    public const CHANNEL_TYPE_CHANNEL_TYPE_UNSPECIFIED = 'CHANNEL_TYPE_UNSPECIFIED';
-    /**
-     * The Stable channel.
-     */
-    public const CHANNEL_TYPE_STABLE = 'STABLE';
-    /**
-     * The Beta channel.
-     */
-    public const CHANNEL_TYPE_BETA = 'BETA';
-    /**
-     * The Dev channel.
-     */
-    public const CHANNEL_TYPE_DEV = 'DEV';
-    /**
-     * The Canary channel.
-     */
-    public const CHANNEL_TYPE_CANARY = 'CANARY';
-    /**
-     * The Canary channel for Chrome, with DCHECK/ASAN enabled.
-     */
-    public const CHANNEL_TYPE_CANARY_ASAN = 'CANARY_ASAN';
-    public const CHANNEL_TYPE_ALL = 'ALL';
-    /**
-     * The Extended Stable channel for Chrome.
-     */
-    public const CHANNEL_TYPE_EXTENDED = 'EXTENDED';
-    /**
-     * The Long-term support channel for ChromeOS.
-     */
-    public const CHANNEL_TYPE_LTS = 'LTS';
-    /**
-     * The Long-term support candidate channel for ChromeOS.
-     */
-    public const CHANNEL_TYPE_LTC = 'LTC';
-    /**
-     * Type of channel.
-     *
-     * @var string
-     */
-    public $channelType;
-    /**
-     * Channel name. Format is "{product}/platforms/{platform}/channels/{channel}"
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Type of channel.
-     *
-     * Accepted values: CHANNEL_TYPE_UNSPECIFIED, STABLE, BETA, DEV, CANARY,
-     * CANARY_ASAN, ALL, EXTENDED, LTS, LTC
-     *
-     * @param self::CHANNEL_TYPE_* $channelType
-     */
-    public function setChannelType($channelType)
+namespace Google\Service\VersionHistory {
+    class Channel extends \Google\Model
     {
+        public const CHANNEL_TYPE_CHANNEL_TYPE_UNSPECIFIED = 'CHANNEL_TYPE_UNSPECIFIED';
+        /**
+         * The Stable channel.
+         */
+        public const CHANNEL_TYPE_STABLE = 'STABLE';
+        /**
+         * The Beta channel.
+         */
+        public const CHANNEL_TYPE_BETA = 'BETA';
+        /**
+         * The Dev channel.
+         */
+        public const CHANNEL_TYPE_DEV = 'DEV';
+        /**
+         * The Canary channel.
+         */
+        public const CHANNEL_TYPE_CANARY = 'CANARY';
+        /**
+         * The Canary channel for Chrome, with DCHECK/ASAN enabled.
+         */
+        public const CHANNEL_TYPE_CANARY_ASAN = 'CANARY_ASAN';
+        public const CHANNEL_TYPE_ALL = 'ALL';
+        /**
+         * The Extended Stable channel for Chrome.
+         */
+        public const CHANNEL_TYPE_EXTENDED = 'EXTENDED';
+        /**
+         * The Long-term support channel for ChromeOS.
+         */
+        public const CHANNEL_TYPE_LTS = 'LTS';
+        /**
+         * The Long-term support candidate channel for ChromeOS.
+         */
+        public const CHANNEL_TYPE_LTC = 'LTC';
+        /**
+         * Type of channel.
+         *
+         * @var string
+         */
+        public $channelType;
+        /**
+         * Channel name. Format is "{product}/platforms/{platform}/channels/{channel}"
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Type of channel.
+         *
+         * Accepted values: CHANNEL_TYPE_UNSPECIFIED, STABLE, BETA, DEV, CANARY,
+         * CANARY_ASAN, ALL, EXTENDED, LTS, LTC
+         *
+         * @param self::CHANNEL_TYPE_* $channelType
+         */
+        public function setChannelType($channelType)
+        {
+        }
+        /**
+         * @return self::CHANNEL_TYPE_*
+         */
+        public function getChannelType()
+        {
+        }
+        /**
+         * Channel name. Format is "{product}/platforms/{platform}/channels/{channel}"
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::CHANNEL_TYPE_*
+     * Runtime class alias of \Google\Service\VersionHistory\Channel registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChannelType()
-    {
-    }
-    /**
-     * Channel name. Format is "{product}/platforms/{platform}/channels/{channel}"
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_VersionHistory_Channel extends \Google\Service\VersionHistory\Channel
     {
     }
 }

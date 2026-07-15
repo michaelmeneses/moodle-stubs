@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TPU;
-
-class Tpu extends \Google\Collection
-{
-    protected $collection_key = 'nodeSpec';
-    protected $nodeSpecType = NodeSpec::class;
-    protected $nodeSpecDataType = 'array';
-    /**
-     * Optional. The TPU node(s) being requested.
-     *
-     * @param NodeSpec[] $nodeSpec
-     */
-    public function setNodeSpec($nodeSpec)
+namespace Google\Service\TPU {
+    class Tpu extends \Google\Collection
     {
+        protected $collection_key = 'nodeSpec';
+        protected $nodeSpecType = NodeSpec::class;
+        protected $nodeSpecDataType = 'array';
+        /**
+         * Optional. The TPU node(s) being requested.
+         *
+         * @param NodeSpec[] $nodeSpec
+         */
+        public function setNodeSpec($nodeSpec)
+        {
+        }
+        /**
+         * @return NodeSpec[]
+         */
+        public function getNodeSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return NodeSpec[]
+     * Runtime class alias of \Google\Service\TPU\Tpu registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNodeSpec()
+    class Google_Service_TPU_Tpu extends \Google\Service\TPU\Tpu
     {
     }
 }

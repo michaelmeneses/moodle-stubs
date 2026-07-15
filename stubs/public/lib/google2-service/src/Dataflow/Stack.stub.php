@@ -21,112 +21,121 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class Stack extends \Google\Model
-{
-    /**
-     * The raw stack trace.
-     *
-     * @var string
-     */
-    public $stackContent;
-    /**
-     * With java thread dumps we may get collapsed stacks e.g., N threads in stack
-     * "". Instead of having to copy over the same stack trace N times, this int
-     * field captures this.
-     *
-     * @var int
-     */
-    public $threadCount;
-    /**
-     * Thread name. For example, "CommitThread-0,10,main"
-     *
-     * @var string
-     */
-    public $threadName;
-    /**
-     * The state of the thread. For example, "WAITING".
-     *
-     * @var string
-     */
-    public $threadState;
-    /**
-     * Timestamp at which the stack was captured.
-     *
-     * @var string
-     */
-    public $timestamp;
-    /**
-     * The raw stack trace.
-     *
-     * @param string $stackContent
-     */
-    public function setStackContent($stackContent)
+namespace Google\Service\Dataflow {
+    class Stack extends \Google\Model
     {
+        /**
+         * The raw stack trace.
+         *
+         * @var string
+         */
+        public $stackContent;
+        /**
+         * With java thread dumps we may get collapsed stacks e.g., N threads in stack
+         * "". Instead of having to copy over the same stack trace N times, this int
+         * field captures this.
+         *
+         * @var int
+         */
+        public $threadCount;
+        /**
+         * Thread name. For example, "CommitThread-0,10,main"
+         *
+         * @var string
+         */
+        public $threadName;
+        /**
+         * The state of the thread. For example, "WAITING".
+         *
+         * @var string
+         */
+        public $threadState;
+        /**
+         * Timestamp at which the stack was captured.
+         *
+         * @var string
+         */
+        public $timestamp;
+        /**
+         * The raw stack trace.
+         *
+         * @param string $stackContent
+         */
+        public function setStackContent($stackContent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStackContent()
+        {
+        }
+        /**
+         * With java thread dumps we may get collapsed stacks e.g., N threads in stack
+         * "". Instead of having to copy over the same stack trace N times, this int
+         * field captures this.
+         *
+         * @param int $threadCount
+         */
+        public function setThreadCount($threadCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getThreadCount()
+        {
+        }
+        /**
+         * Thread name. For example, "CommitThread-0,10,main"
+         *
+         * @param string $threadName
+         */
+        public function setThreadName($threadName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getThreadName()
+        {
+        }
+        /**
+         * The state of the thread. For example, "WAITING".
+         *
+         * @param string $threadState
+         */
+        public function setThreadState($threadState)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getThreadState()
+        {
+        }
+        /**
+         * Timestamp at which the stack was captured.
+         *
+         * @param string $timestamp
+         */
+        public function setTimestamp($timestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimestamp()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataflow\Stack registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStackContent()
-    {
-    }
-    /**
-     * With java thread dumps we may get collapsed stacks e.g., N threads in stack
-     * "". Instead of having to copy over the same stack trace N times, this int
-     * field captures this.
-     *
-     * @param int $threadCount
-     */
-    public function setThreadCount($threadCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getThreadCount()
-    {
-    }
-    /**
-     * Thread name. For example, "CommitThread-0,10,main"
-     *
-     * @param string $threadName
-     */
-    public function setThreadName($threadName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getThreadName()
-    {
-    }
-    /**
-     * The state of the thread. For example, "WAITING".
-     *
-     * @param string $threadState
-     */
-    public function setThreadState($threadState)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getThreadState()
-    {
-    }
-    /**
-     * Timestamp at which the stack was captured.
-     *
-     * @param string $timestamp
-     */
-    public function setTimestamp($timestamp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimestamp()
+    class Google_Service_Dataflow_Stack extends \Google\Service\Dataflow\Stack
     {
     }
 }

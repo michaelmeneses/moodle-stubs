@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PaymentsResellerSubscription;
-
-class GoogleCloudPaymentsResellerSubscriptionV1EntitleSubscriptionRequest extends \Google\Collection
-{
-    protected $collection_key = 'lineItemEntitlementDetails';
-    protected $lineItemEntitlementDetailsType = GoogleCloudPaymentsResellerSubscriptionV1EntitleSubscriptionRequestLineItemEntitlementDetails::class;
-    protected $lineItemEntitlementDetailsDataType = 'array';
-    /**
-     * @param GoogleCloudPaymentsResellerSubscriptionV1EntitleSubscriptionRequestLineItemEntitlementDetails[]
-     */
-    public function setLineItemEntitlementDetails($lineItemEntitlementDetails)
+namespace Google\Service\PaymentsResellerSubscription {
+    class GoogleCloudPaymentsResellerSubscriptionV1EntitleSubscriptionRequest extends \Google\Collection
     {
+        protected $collection_key = 'lineItemEntitlementDetails';
+        protected $lineItemEntitlementDetailsType = GoogleCloudPaymentsResellerSubscriptionV1EntitleSubscriptionRequestLineItemEntitlementDetails::class;
+        protected $lineItemEntitlementDetailsDataType = 'array';
+        /**
+         * @param GoogleCloudPaymentsResellerSubscriptionV1EntitleSubscriptionRequestLineItemEntitlementDetails[]
+         */
+        public function setLineItemEntitlementDetails($lineItemEntitlementDetails)
+        {
+        }
+        /**
+         * @return GoogleCloudPaymentsResellerSubscriptionV1EntitleSubscriptionRequestLineItemEntitlementDetails[]
+         */
+        public function getLineItemEntitlementDetails()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudPaymentsResellerSubscriptionV1EntitleSubscriptionRequestLineItemEntitlementDetails[]
+     * Runtime class alias of \Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1EntitleSubscriptionRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLineItemEntitlementDetails()
+    class Google_Service_PaymentsResellerSubscription_GoogleCloudPaymentsResellerSubscriptionV1EntitleSubscriptionRequest extends \Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1EntitleSubscriptionRequest
     {
     }
 }

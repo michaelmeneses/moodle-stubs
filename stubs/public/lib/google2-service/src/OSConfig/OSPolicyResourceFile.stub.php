@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OSConfig;
-
-class OSPolicyResourceFile extends \Google\Model
-{
-    /**
-     * Defaults to false. When false, files are subject to validations based on
-     * the file type: Remote: A checksum must be specified. Cloud Storage: An
-     * object generation number must be specified.
-     *
-     * @var bool
-     */
-    public $allowInsecure;
-    protected $gcsType = OSPolicyResourceFileGcs::class;
-    protected $gcsDataType = '';
-    /**
-     * A local path within the VM to use.
-     *
-     * @var string
-     */
-    public $localPath;
-    protected $remoteType = OSPolicyResourceFileRemote::class;
-    protected $remoteDataType = '';
-    /**
-     * Defaults to false. When false, files are subject to validations based on
-     * the file type: Remote: A checksum must be specified. Cloud Storage: An
-     * object generation number must be specified.
-     *
-     * @param bool $allowInsecure
-     */
-    public function setAllowInsecure($allowInsecure)
+namespace Google\Service\OSConfig {
+    class OSPolicyResourceFile extends \Google\Model
     {
+        /**
+         * Defaults to false. When false, files are subject to validations based on
+         * the file type: Remote: A checksum must be specified. Cloud Storage: An
+         * object generation number must be specified.
+         *
+         * @var bool
+         */
+        public $allowInsecure;
+        protected $gcsType = OSPolicyResourceFileGcs::class;
+        protected $gcsDataType = '';
+        /**
+         * A local path within the VM to use.
+         *
+         * @var string
+         */
+        public $localPath;
+        protected $remoteType = OSPolicyResourceFileRemote::class;
+        protected $remoteDataType = '';
+        /**
+         * Defaults to false. When false, files are subject to validations based on
+         * the file type: Remote: A checksum must be specified. Cloud Storage: An
+         * object generation number must be specified.
+         *
+         * @param bool $allowInsecure
+         */
+        public function setAllowInsecure($allowInsecure)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAllowInsecure()
+        {
+        }
+        /**
+         * A Cloud Storage object.
+         *
+         * @param OSPolicyResourceFileGcs $gcs
+         */
+        public function setGcs(OSPolicyResourceFileGcs $gcs)
+        {
+        }
+        /**
+         * @return OSPolicyResourceFileGcs
+         */
+        public function getGcs()
+        {
+        }
+        /**
+         * A local path within the VM to use.
+         *
+         * @param string $localPath
+         */
+        public function setLocalPath($localPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocalPath()
+        {
+        }
+        /**
+         * A generic remote file.
+         *
+         * @param OSPolicyResourceFileRemote $remote
+         */
+        public function setRemote(OSPolicyResourceFileRemote $remote)
+        {
+        }
+        /**
+         * @return OSPolicyResourceFileRemote
+         */
+        public function getRemote()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\OSConfig\OSPolicyResourceFile registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowInsecure()
-    {
-    }
-    /**
-     * A Cloud Storage object.
-     *
-     * @param OSPolicyResourceFileGcs $gcs
-     */
-    public function setGcs(OSPolicyResourceFileGcs $gcs)
-    {
-    }
-    /**
-     * @return OSPolicyResourceFileGcs
-     */
-    public function getGcs()
-    {
-    }
-    /**
-     * A local path within the VM to use.
-     *
-     * @param string $localPath
-     */
-    public function setLocalPath($localPath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocalPath()
-    {
-    }
-    /**
-     * A generic remote file.
-     *
-     * @param OSPolicyResourceFileRemote $remote
-     */
-    public function setRemote(OSPolicyResourceFileRemote $remote)
-    {
-    }
-    /**
-     * @return OSPolicyResourceFileRemote
-     */
-    public function getRemote()
+    class Google_Service_OSConfig_OSPolicyResourceFile extends \Google\Service\OSConfig\OSPolicyResourceFile
     {
     }
 }

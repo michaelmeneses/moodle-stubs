@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1ProcessOptionsIndividualPageSelector extends \Google\Collection
-{
-    protected $collection_key = 'pages';
-    /**
-     * Optional. Indices of the pages (starting from 1).
-     *
-     * @var int[]
-     */
-    public $pages;
-    /**
-     * Optional. Indices of the pages (starting from 1).
-     *
-     * @param int[] $pages
-     */
-    public function setPages($pages)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1ProcessOptionsIndividualPageSelector extends \Google\Collection
     {
+        protected $collection_key = 'pages';
+        /**
+         * Optional. Indices of the pages (starting from 1).
+         *
+         * @var int[]
+         */
+        public $pages;
+        /**
+         * Optional. Indices of the pages (starting from 1).
+         *
+         * @param int[] $pages
+         */
+        public function setPages($pages)
+        {
+        }
+        /**
+         * @return int[]
+         */
+        public function getPages()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int[]
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1ProcessOptionsIndividualPageSelector registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPages()
+    class Google_Service_Document_GoogleCloudDocumentaiV1ProcessOptionsIndividualPageSelector extends \Google\Service\Document\GoogleCloudDocumentaiV1ProcessOptionsIndividualPageSelector
     {
     }
 }

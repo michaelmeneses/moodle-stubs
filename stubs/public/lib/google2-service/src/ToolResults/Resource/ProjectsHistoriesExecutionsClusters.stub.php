@@ -21,49 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults\Resource;
-
-/**
- * The "clusters" collection of methods.
- * Typical usage is:
- *  <code>
- *   $toolresultsService = new Google\Service\ToolResults(...);
- *   $clusters = $toolresultsService->projects_histories_executions_clusters;
- *  </code>
- */
-class ProjectsHistoriesExecutionsClusters extends \Google\Service\Resource
-{
+namespace Google\Service\ToolResults\Resource {
+    use Google\Service\ToolResults\ListScreenshotClustersResponse;
+    use Google\Service\ToolResults\ScreenshotCluster;
     /**
-     * Retrieves a single screenshot cluster by its ID (clusters.get)
-     *
-     * @param string $projectId A Project id. Required.
-     * @param string $historyId A History id. Required.
-     * @param string $executionId An Execution id. Required.
-     * @param string $clusterId A Cluster id Required.
-     * @param array $optParams Optional parameters.
-     * @return ScreenshotCluster
-     * @throws \Google\Service\Exception
+     * The "clusters" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $toolresultsService = new Google\Service\ToolResults(...);
+     *   $clusters = $toolresultsService->projects_histories_executions_clusters;
+     *  </code>
      */
-    public function get($projectId, $historyId, $executionId, $clusterId, $optParams = [])
+    class ProjectsHistoriesExecutionsClusters extends \Google\Service\Resource
     {
+        /**
+         * Retrieves a single screenshot cluster by its ID (clusters.get)
+         *
+         * @param string $projectId A Project id. Required.
+         * @param string $historyId A History id. Required.
+         * @param string $executionId An Execution id. Required.
+         * @param string $clusterId A Cluster id Required.
+         * @param array $optParams Optional parameters.
+         * @return ScreenshotCluster
+         * @throws \Google\Service\Exception
+         */
+        public function get($projectId, $historyId, $executionId, $clusterId, $optParams = [])
+        {
+        }
+        /**
+         * Lists Screenshot Clusters Returns the list of screenshot clusters
+         * corresponding to an execution. Screenshot clusters are created after the
+         * execution is finished. Clusters are created from a set of screenshots.
+         * Between any two screenshots, a matching score is calculated based off their
+         * metadata that determines how similar they are. Screenshots are placed in the
+         * cluster that has screens which have the highest matching scores.
+         * (clusters.listProjectsHistoriesExecutionsClusters)
+         *
+         * @param string $projectId A Project id. Required.
+         * @param string $historyId A History id. Required.
+         * @param string $executionId An Execution id. Required.
+         * @param array $optParams Optional parameters.
+         * @return ListScreenshotClustersResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsHistoriesExecutionsClusters($projectId, $historyId, $executionId, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists Screenshot Clusters Returns the list of screenshot clusters
-     * corresponding to an execution. Screenshot clusters are created after the
-     * execution is finished. Clusters are created from a set of screenshots.
-     * Between any two screenshots, a matching score is calculated based off their
-     * metadata that determines how similar they are. Screenshots are placed in the
-     * cluster that has screens which have the highest matching scores.
-     * (clusters.listProjectsHistoriesExecutionsClusters)
-     *
-     * @param string $projectId A Project id. Required.
-     * @param string $historyId A History id. Required.
-     * @param string $executionId An Execution id. Required.
-     * @param array $optParams Optional parameters.
-     * @return ListScreenshotClustersResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\ToolResults\Resource\ProjectsHistoriesExecutionsClusters registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listProjectsHistoriesExecutionsClusters($projectId, $historyId, $executionId, $optParams = [])
+    class Google_Service_ToolResults_Resource_ProjectsHistoriesExecutionsClusters extends \Google\Service\ToolResults\Resource\ProjectsHistoriesExecutionsClusters
     {
     }
 }

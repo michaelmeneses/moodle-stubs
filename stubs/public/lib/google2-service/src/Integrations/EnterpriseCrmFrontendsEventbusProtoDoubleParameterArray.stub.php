@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmFrontendsEventbusProtoDoubleParameterArray extends \Google\Collection
-{
-    protected $collection_key = 'doubleValues';
-    public $doubleValues;
-    public function setDoubleValues($doubleValues)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmFrontendsEventbusProtoDoubleParameterArray extends \Google\Collection
     {
+        protected $collection_key = 'doubleValues';
+        public $doubleValues;
+        public function setDoubleValues($doubleValues)
+        {
+        }
+        public function getDoubleValues()
+        {
+        }
     }
-    public function getDoubleValues()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmFrontendsEventbusProtoDoubleParameterArray registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Integrations_EnterpriseCrmFrontendsEventbusProtoDoubleParameterArray extends \Google\Service\Integrations\EnterpriseCrmFrontendsEventbusProtoDoubleParameterArray
     {
     }
 }

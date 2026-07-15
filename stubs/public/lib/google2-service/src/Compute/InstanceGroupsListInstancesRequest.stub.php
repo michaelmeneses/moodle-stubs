@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InstanceGroupsListInstancesRequest extends \Google\Model
-{
-    /**
-     * Includes all instances in the generated list regardless of their state.
-     */
-    public const INSTANCE_STATE_ALL = 'ALL';
-    /**
-     * Includes instances in the generated list only if they have a RUNNING state.
-     */
-    public const INSTANCE_STATE_RUNNING = 'RUNNING';
-    /**
-     * A filter for the state of the instances in the instance group. Valid
-     * options are ALL or RUNNING. If you do not specify this parameter the list
-     * includes all instances regardless of their state.
-     *
-     * @var string
-     */
-    public $instanceState;
-    /**
-     * A filter for the state of the instances in the instance group. Valid
-     * options are ALL or RUNNING. If you do not specify this parameter the list
-     * includes all instances regardless of their state.
-     *
-     * Accepted values: ALL, RUNNING
-     *
-     * @param self::INSTANCE_STATE_* $instanceState
-     */
-    public function setInstanceState($instanceState)
+namespace Google\Service\Compute {
+    class InstanceGroupsListInstancesRequest extends \Google\Model
     {
+        /**
+         * Includes all instances in the generated list regardless of their state.
+         */
+        public const INSTANCE_STATE_ALL = 'ALL';
+        /**
+         * Includes instances in the generated list only if they have a RUNNING state.
+         */
+        public const INSTANCE_STATE_RUNNING = 'RUNNING';
+        /**
+         * A filter for the state of the instances in the instance group. Valid
+         * options are ALL or RUNNING. If you do not specify this parameter the list
+         * includes all instances regardless of their state.
+         *
+         * @var string
+         */
+        public $instanceState;
+        /**
+         * A filter for the state of the instances in the instance group. Valid
+         * options are ALL or RUNNING. If you do not specify this parameter the list
+         * includes all instances regardless of their state.
+         *
+         * Accepted values: ALL, RUNNING
+         *
+         * @param self::INSTANCE_STATE_* $instanceState
+         */
+        public function setInstanceState($instanceState)
+        {
+        }
+        /**
+         * @return self::INSTANCE_STATE_*
+         */
+        public function getInstanceState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::INSTANCE_STATE_*
+     * Runtime class alias of \Google\Service\Compute\InstanceGroupsListInstancesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstanceState()
+    class Google_Service_Compute_InstanceGroupsListInstancesRequest extends \Google\Service\Compute\InstanceGroupsListInstancesRequest
     {
     }
 }

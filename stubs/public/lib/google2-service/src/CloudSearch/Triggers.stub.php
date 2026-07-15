@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class Triggers extends \Google\Collection
-{
-    protected $collection_key = 'triggers';
-    protected $triggersType = Trigger::class;
-    protected $triggersDataType = 'array';
-    /**
-     * @param Trigger[]
-     */
-    public function setTriggers($triggers)
+namespace Google\Service\CloudSearch {
+    class Triggers extends \Google\Collection
     {
+        protected $collection_key = 'triggers';
+        protected $triggersType = Trigger::class;
+        protected $triggersDataType = 'array';
+        /**
+         * @param Trigger[]
+         */
+        public function setTriggers($triggers)
+        {
+        }
+        /**
+         * @return Trigger[]
+         */
+        public function getTriggers()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Trigger[]
+     * Runtime class alias of \Google\Service\CloudSearch\Triggers registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTriggers()
+    class Google_Service_CloudSearch_Triggers extends \Google\Service\CloudSearch\Triggers
     {
     }
 }

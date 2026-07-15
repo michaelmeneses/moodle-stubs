@@ -8,6 +8,7 @@
  */
 namespace Aws\MemoryDB;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon MemoryDB** service.
  * @method \Aws\Result batchUpdateCluster(array $args = [])

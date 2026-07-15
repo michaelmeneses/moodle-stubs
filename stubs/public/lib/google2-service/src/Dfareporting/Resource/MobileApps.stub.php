@@ -21,51 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting\Resource;
-
-/**
- * The "mobileApps" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dfareportingService = new Google\Service\Dfareporting(...);
- *   $mobileApps = $dfareportingService->mobileApps;
- *  </code>
- */
-class MobileApps extends \Google\Service\Resource
-{
+namespace Google\Service\Dfareporting\Resource {
+    use Google\Service\Dfareporting\MobileApp;
+    use Google\Service\Dfareporting\MobileAppsListResponse;
     /**
-     * Gets one mobile app by ID. (mobileApps.get)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param string $id Mobile app ID.
-     * @param array $optParams Optional parameters.
-     * @return MobileApp
-     * @throws \Google\Service\Exception
+     * The "mobileApps" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dfareportingService = new Google\Service\Dfareporting(...);
+     *   $mobileApps = $dfareportingService->mobileApps;
+     *  </code>
      */
-    public function get($profileId, $id, $optParams = [])
+    class MobileApps extends \Google\Service\Resource
     {
+        /**
+         * Gets one mobile app by ID. (mobileApps.get)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param string $id Mobile app ID.
+         * @param array $optParams Optional parameters.
+         * @return MobileApp
+         * @throws \Google\Service\Exception
+         */
+        public function get($profileId, $id, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves list of available mobile apps. (mobileApps.listMobileApps)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string directories Select only apps from these directories.
+         * @opt_param string ids Select only apps with these IDs.
+         * @opt_param int maxResults Maximum number of results to return.
+         * @opt_param string pageToken Value of the nextPageToken from the previous
+         * result page.
+         * @opt_param string searchString Allows searching for objects by name or ID.
+         * Wildcards (*) are allowed. For example, "app*2015" will return objects with
+         * names like "app Jan 2018", "app Jan 2018", or simply "app 2018". Most of the
+         * searches also add wildcards implicitly at the start and the end of the search
+         * string. For example, a search string of "app" will match objects with name
+         * "my app", "app 2018", or simply "app".
+         * @return MobileAppsListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listMobileApps($profileId, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Retrieves list of available mobile apps. (mobileApps.listMobileApps)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string directories Select only apps from these directories.
-     * @opt_param string ids Select only apps with these IDs.
-     * @opt_param int maxResults Maximum number of results to return.
-     * @opt_param string pageToken Value of the nextPageToken from the previous
-     * result page.
-     * @opt_param string searchString Allows searching for objects by name or ID.
-     * Wildcards (*) are allowed. For example, "app*2015" will return objects with
-     * names like "app Jan 2018", "app Jan 2018", or simply "app 2018". Most of the
-     * searches also add wildcards implicitly at the start and the end of the search
-     * string. For example, a search string of "app" will match objects with name
-     * "my app", "app 2018", or simply "app".
-     * @return MobileAppsListResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Dfareporting\Resource\MobileApps registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listMobileApps($profileId, $optParams = [])
+    class Google_Service_Dfareporting_Resource_MobileApps extends \Google\Service\Dfareporting\Resource\MobileApps
     {
     }
 }

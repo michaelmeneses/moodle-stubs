@@ -21,109 +21,118 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaModelevaluationMetricsTrackMetrics extends \Google\Collection
-{
-    protected $collection_key = 'confidenceMetrics';
-    protected $confidenceMetricsType = GoogleCloudAiplatformV1SchemaModelevaluationMetricsTrackMetricsConfidenceMetrics::class;
-    protected $confidenceMetricsDataType = 'array';
-    /**
-     * The intersection-over-union threshold value between bounding boxes across
-     * frames used to compute this metric entry.
-     *
-     * @var float
-     */
-    public $iouThreshold;
-    /**
-     * The mean bounding box iou over all confidence thresholds.
-     *
-     * @var float
-     */
-    public $meanBoundingBoxIou;
-    /**
-     * The mean mismatch rate over all confidence thresholds.
-     *
-     * @var float
-     */
-    public $meanMismatchRate;
-    /**
-     * The mean average precision over all confidence thresholds.
-     *
-     * @var float
-     */
-    public $meanTrackingAveragePrecision;
-    /**
-     * Metrics for each label-match `confidenceThreshold` from
-     * 0.05,0.10,...,0.95,0.96,0.97,0.98,0.99. Precision-recall curve is derived
-     * from them.
-     *
-     * @param GoogleCloudAiplatformV1SchemaModelevaluationMetricsTrackMetricsConfidenceMetrics[] $confidenceMetrics
-     */
-    public function setConfidenceMetrics($confidenceMetrics)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaModelevaluationMetricsTrackMetrics extends \Google\Collection
     {
+        protected $collection_key = 'confidenceMetrics';
+        protected $confidenceMetricsType = GoogleCloudAiplatformV1SchemaModelevaluationMetricsTrackMetricsConfidenceMetrics::class;
+        protected $confidenceMetricsDataType = 'array';
+        /**
+         * The intersection-over-union threshold value between bounding boxes across
+         * frames used to compute this metric entry.
+         *
+         * @var float
+         */
+        public $iouThreshold;
+        /**
+         * The mean bounding box iou over all confidence thresholds.
+         *
+         * @var float
+         */
+        public $meanBoundingBoxIou;
+        /**
+         * The mean mismatch rate over all confidence thresholds.
+         *
+         * @var float
+         */
+        public $meanMismatchRate;
+        /**
+         * The mean average precision over all confidence thresholds.
+         *
+         * @var float
+         */
+        public $meanTrackingAveragePrecision;
+        /**
+         * Metrics for each label-match `confidenceThreshold` from
+         * 0.05,0.10,...,0.95,0.96,0.97,0.98,0.99. Precision-recall curve is derived
+         * from them.
+         *
+         * @param GoogleCloudAiplatformV1SchemaModelevaluationMetricsTrackMetricsConfidenceMetrics[] $confidenceMetrics
+         */
+        public function setConfidenceMetrics($confidenceMetrics)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SchemaModelevaluationMetricsTrackMetricsConfidenceMetrics[]
+         */
+        public function getConfidenceMetrics()
+        {
+        }
+        /**
+         * The intersection-over-union threshold value between bounding boxes across
+         * frames used to compute this metric entry.
+         *
+         * @param float $iouThreshold
+         */
+        public function setIouThreshold($iouThreshold)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getIouThreshold()
+        {
+        }
+        /**
+         * The mean bounding box iou over all confidence thresholds.
+         *
+         * @param float $meanBoundingBoxIou
+         */
+        public function setMeanBoundingBoxIou($meanBoundingBoxIou)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getMeanBoundingBoxIou()
+        {
+        }
+        /**
+         * The mean mismatch rate over all confidence thresholds.
+         *
+         * @param float $meanMismatchRate
+         */
+        public function setMeanMismatchRate($meanMismatchRate)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getMeanMismatchRate()
+        {
+        }
+        /**
+         * The mean average precision over all confidence thresholds.
+         *
+         * @param float $meanTrackingAveragePrecision
+         */
+        public function setMeanTrackingAveragePrecision($meanTrackingAveragePrecision)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getMeanTrackingAveragePrecision()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1SchemaModelevaluationMetricsTrackMetricsConfidenceMetrics[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaModelevaluationMetricsTrackMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfidenceMetrics()
-    {
-    }
-    /**
-     * The intersection-over-union threshold value between bounding boxes across
-     * frames used to compute this metric entry.
-     *
-     * @param float $iouThreshold
-     */
-    public function setIouThreshold($iouThreshold)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getIouThreshold()
-    {
-    }
-    /**
-     * The mean bounding box iou over all confidence thresholds.
-     *
-     * @param float $meanBoundingBoxIou
-     */
-    public function setMeanBoundingBoxIou($meanBoundingBoxIou)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getMeanBoundingBoxIou()
-    {
-    }
-    /**
-     * The mean mismatch rate over all confidence thresholds.
-     *
-     * @param float $meanMismatchRate
-     */
-    public function setMeanMismatchRate($meanMismatchRate)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getMeanMismatchRate()
-    {
-    }
-    /**
-     * The mean average precision over all confidence thresholds.
-     *
-     * @param float $meanTrackingAveragePrecision
-     */
-    public function setMeanTrackingAveragePrecision($meanTrackingAveragePrecision)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getMeanTrackingAveragePrecision()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaModelevaluationMetricsTrackMetrics extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaModelevaluationMetricsTrackMetrics
     {
     }
 }

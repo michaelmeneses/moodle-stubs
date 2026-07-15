@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Recommender;
-
-class GoogleCloudRecommenderV1SecurityProjection extends \Google\Model
-{
-    /**
-     * Additional security impact details that is provided by the recommender.
-     *
-     * @var array[]
-     */
-    public $details;
-    /**
-     * Additional security impact details that is provided by the recommender.
-     *
-     * @param array[] $details
-     */
-    public function setDetails($details)
+namespace Google\Service\Recommender {
+    class GoogleCloudRecommenderV1SecurityProjection extends \Google\Model
     {
+        /**
+         * Additional security impact details that is provided by the recommender.
+         *
+         * @var array[]
+         */
+        public $details;
+        /**
+         * Additional security impact details that is provided by the recommender.
+         *
+         * @param array[] $details
+         */
+        public function setDetails($details)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getDetails()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\Recommender\GoogleCloudRecommenderV1SecurityProjection registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDetails()
+    class Google_Service_Recommender_GoogleCloudRecommenderV1SecurityProjection extends \Google\Service\Recommender\GoogleCloudRecommenderV1SecurityProjection
     {
     }
 }

@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2MetadataLocation extends \Google\Model
-{
-    /**
-     * Unused
-     */
-    public const TYPE_METADATATYPE_UNSPECIFIED = 'METADATATYPE_UNSPECIFIED';
-    /**
-     * General file metadata provided by Cloud Storage.
-     */
-    public const TYPE_STORAGE_METADATA = 'STORAGE_METADATA';
-    protected $storageLabelType = GooglePrivacyDlpV2StorageMetadataLabel::class;
-    protected $storageLabelDataType = '';
-    /**
-     * Type of metadata containing the finding.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Storage metadata.
-     *
-     * @param GooglePrivacyDlpV2StorageMetadataLabel $storageLabel
-     */
-    public function setStorageLabel(GooglePrivacyDlpV2StorageMetadataLabel $storageLabel)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2MetadataLocation extends \Google\Model
     {
+        /**
+         * Unused
+         */
+        public const TYPE_METADATATYPE_UNSPECIFIED = 'METADATATYPE_UNSPECIFIED';
+        /**
+         * General file metadata provided by Cloud Storage.
+         */
+        public const TYPE_STORAGE_METADATA = 'STORAGE_METADATA';
+        protected $storageLabelType = GooglePrivacyDlpV2StorageMetadataLabel::class;
+        protected $storageLabelDataType = '';
+        /**
+         * Type of metadata containing the finding.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Storage metadata.
+         *
+         * @param GooglePrivacyDlpV2StorageMetadataLabel $storageLabel
+         */
+        public function setStorageLabel(GooglePrivacyDlpV2StorageMetadataLabel $storageLabel)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2StorageMetadataLabel
+         */
+        public function getStorageLabel()
+        {
+        }
+        /**
+         * Type of metadata containing the finding.
+         *
+         * Accepted values: METADATATYPE_UNSPECIFIED, STORAGE_METADATA
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2StorageMetadataLabel
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2MetadataLocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStorageLabel()
-    {
-    }
-    /**
-     * Type of metadata containing the finding.
-     *
-     * Accepted values: METADATATYPE_UNSPECIFIED, STORAGE_METADATA
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_DLP_GooglePrivacyDlpV2MetadataLocation extends \Google\Service\DLP\GooglePrivacyDlpV2MetadataLocation
     {
     }
 }

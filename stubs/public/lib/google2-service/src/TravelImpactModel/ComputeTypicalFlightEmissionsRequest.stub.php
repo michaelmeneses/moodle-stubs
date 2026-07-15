@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TravelImpactModel;
-
-class ComputeTypicalFlightEmissionsRequest extends \Google\Collection
-{
-    protected $collection_key = 'markets';
-    protected $marketsType = Market::class;
-    protected $marketsDataType = 'array';
-    /**
-     * Required. Request the typical flight emissions estimates for this market
-     * pair. A maximum of 1000 markets can be requested.
-     *
-     * @param Market[] $markets
-     */
-    public function setMarkets($markets)
+namespace Google\Service\TravelImpactModel {
+    class ComputeTypicalFlightEmissionsRequest extends \Google\Collection
     {
+        protected $collection_key = 'markets';
+        protected $marketsType = Market::class;
+        protected $marketsDataType = 'array';
+        /**
+         * Required. Request the typical flight emissions estimates for this market
+         * pair. A maximum of 1000 markets can be requested.
+         *
+         * @param Market[] $markets
+         */
+        public function setMarkets($markets)
+        {
+        }
+        /**
+         * @return Market[]
+         */
+        public function getMarkets()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Market[]
+     * Runtime class alias of \Google\Service\TravelImpactModel\ComputeTypicalFlightEmissionsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMarkets()
+    class Google_Service_TravelImpactModel_ComputeTypicalFlightEmissionsRequest extends \Google\Service\TravelImpactModel\ComputeTypicalFlightEmissionsRequest
     {
     }
 }

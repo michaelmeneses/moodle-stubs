@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class InviteeInfo extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $email;
-    protected $userIdType = UserId::class;
-    protected $userIdDataType = '';
-    /**
-     * @param string
-     */
-    public function setEmail($email)
+namespace Google\Service\CloudSearch {
+    class InviteeInfo extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $email;
+        protected $userIdType = UserId::class;
+        protected $userIdDataType = '';
+        /**
+         * @param string
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
+        /**
+         * @param UserId
+         */
+        public function setUserId(UserId $userId)
+        {
+        }
+        /**
+         * @return UserId
+         */
+        public function getUserId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\InviteeInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmail()
-    {
-    }
-    /**
-     * @param UserId
-     */
-    public function setUserId(UserId $userId)
-    {
-    }
-    /**
-     * @return UserId
-     */
-    public function getUserId()
+    class Google_Service_CloudSearch_InviteeInfo extends \Google\Service\CloudSearch\InviteeInfo
     {
     }
 }

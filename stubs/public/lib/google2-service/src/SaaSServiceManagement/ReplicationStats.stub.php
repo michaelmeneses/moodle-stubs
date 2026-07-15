@@ -21,106 +21,115 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SaaSServiceManagement;
-
-class ReplicationStats extends \Google\Collection
-{
-    protected $collection_key = 'retryCount';
-    protected $errorsType = Status::class;
-    protected $errorsDataType = 'array';
-    /**
-     * The resources that are failed replication.
-     *
-     * @var string[]
-     */
-    public $failedResources;
-    /**
-     * The resources that are finished replication.
-     *
-     * @var string[]
-     */
-    public $finishedResources;
-    /**
-     * The resources that are pending replication.
-     *
-     * @var string[]
-     */
-    public $pendingResources;
-    /**
-     * The number of retries for the failed resources.
-     *
-     * @var int[]
-     */
-    public $retryCount;
-    /**
-     * The errors that occurred during replication, one error for each failed
-     * resource.
-     *
-     * @param Status[] $errors
-     */
-    public function setErrors($errors)
+namespace Google\Service\SaaSServiceManagement {
+    class ReplicationStats extends \Google\Collection
     {
+        protected $collection_key = 'retryCount';
+        protected $errorsType = Status::class;
+        protected $errorsDataType = 'array';
+        /**
+         * The resources that are failed replication.
+         *
+         * @var string[]
+         */
+        public $failedResources;
+        /**
+         * The resources that are finished replication.
+         *
+         * @var string[]
+         */
+        public $finishedResources;
+        /**
+         * The resources that are pending replication.
+         *
+         * @var string[]
+         */
+        public $pendingResources;
+        /**
+         * The number of retries for the failed resources.
+         *
+         * @var int[]
+         */
+        public $retryCount;
+        /**
+         * The errors that occurred during replication, one error for each failed
+         * resource.
+         *
+         * @param Status[] $errors
+         */
+        public function setErrors($errors)
+        {
+        }
+        /**
+         * @return Status[]
+         */
+        public function getErrors()
+        {
+        }
+        /**
+         * The resources that are failed replication.
+         *
+         * @param string[] $failedResources
+         */
+        public function setFailedResources($failedResources)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getFailedResources()
+        {
+        }
+        /**
+         * The resources that are finished replication.
+         *
+         * @param string[] $finishedResources
+         */
+        public function setFinishedResources($finishedResources)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getFinishedResources()
+        {
+        }
+        /**
+         * The resources that are pending replication.
+         *
+         * @param string[] $pendingResources
+         */
+        public function setPendingResources($pendingResources)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPendingResources()
+        {
+        }
+        /**
+         * The number of retries for the failed resources.
+         *
+         * @param int[] $retryCount
+         */
+        public function setRetryCount($retryCount)
+        {
+        }
+        /**
+         * @return int[]
+         */
+        public function getRetryCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Status[]
+     * Runtime class alias of \Google\Service\SaaSServiceManagement\ReplicationStats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrors()
-    {
-    }
-    /**
-     * The resources that are failed replication.
-     *
-     * @param string[] $failedResources
-     */
-    public function setFailedResources($failedResources)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getFailedResources()
-    {
-    }
-    /**
-     * The resources that are finished replication.
-     *
-     * @param string[] $finishedResources
-     */
-    public function setFinishedResources($finishedResources)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getFinishedResources()
-    {
-    }
-    /**
-     * The resources that are pending replication.
-     *
-     * @param string[] $pendingResources
-     */
-    public function setPendingResources($pendingResources)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPendingResources()
-    {
-    }
-    /**
-     * The number of retries for the failed resources.
-     *
-     * @param int[] $retryCount
-     */
-    public function setRetryCount($retryCount)
-    {
-    }
-    /**
-     * @return int[]
-     */
-    public function getRetryCount()
+    class Google_Service_SaaSServiceManagement_ReplicationStats extends \Google\Service\SaaSServiceManagement\ReplicationStats
     {
     }
 }

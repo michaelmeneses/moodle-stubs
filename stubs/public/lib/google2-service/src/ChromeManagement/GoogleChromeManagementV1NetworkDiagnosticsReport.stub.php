@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementV1NetworkDiagnosticsReport extends \Google\Model
-{
-    protected $httpsLatencyDataType = GoogleChromeManagementV1HttpsLatencyRoutineData::class;
-    protected $httpsLatencyDataDataType = '';
-    /**
-     * Output only. Timestamp of when the diagnostics were collected.
-     *
-     * @var string
-     */
-    public $reportTime;
-    /**
-     * Output only. HTTPS latency test data.
-     *
-     * @param GoogleChromeManagementV1HttpsLatencyRoutineData $httpsLatencyData
-     */
-    public function setHttpsLatencyData(GoogleChromeManagementV1HttpsLatencyRoutineData $httpsLatencyData)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementV1NetworkDiagnosticsReport extends \Google\Model
     {
+        protected $httpsLatencyDataType = GoogleChromeManagementV1HttpsLatencyRoutineData::class;
+        protected $httpsLatencyDataDataType = '';
+        /**
+         * Output only. Timestamp of when the diagnostics were collected.
+         *
+         * @var string
+         */
+        public $reportTime;
+        /**
+         * Output only. HTTPS latency test data.
+         *
+         * @param GoogleChromeManagementV1HttpsLatencyRoutineData $httpsLatencyData
+         */
+        public function setHttpsLatencyData(GoogleChromeManagementV1HttpsLatencyRoutineData $httpsLatencyData)
+        {
+        }
+        /**
+         * @return GoogleChromeManagementV1HttpsLatencyRoutineData
+         */
+        public function getHttpsLatencyData()
+        {
+        }
+        /**
+         * Output only. Timestamp of when the diagnostics were collected.
+         *
+         * @param string $reportTime
+         */
+        public function setReportTime($reportTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReportTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleChromeManagementV1HttpsLatencyRoutineData
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementV1NetworkDiagnosticsReport registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHttpsLatencyData()
-    {
-    }
-    /**
-     * Output only. Timestamp of when the diagnostics were collected.
-     *
-     * @param string $reportTime
-     */
-    public function setReportTime($reportTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReportTime()
+    class Google_Service_ChromeManagement_GoogleChromeManagementV1NetworkDiagnosticsReport extends \Google\Service\ChromeManagement\GoogleChromeManagementV1NetworkDiagnosticsReport
     {
     }
 }

@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PlayIntegrity;
-
-class AccountRiskVerdict extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $risk;
-    /**
-     * @var string
-     */
-    public $riskLevel;
-    /**
-     * @param string
-     */
-    public function setRisk($risk)
+namespace Google\Service\PlayIntegrity {
+    class AccountRiskVerdict extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $risk;
+        /**
+         * @var string
+         */
+        public $riskLevel;
+        /**
+         * @param string
+         */
+        public function setRisk($risk)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRisk()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRiskLevel($riskLevel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRiskLevel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PlayIntegrity\AccountRiskVerdict registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRisk()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRiskLevel($riskLevel)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRiskLevel()
+    class Google_Service_PlayIntegrity_AccountRiskVerdict extends \Google\Service\PlayIntegrity\AccountRiskVerdict
     {
     }
 }

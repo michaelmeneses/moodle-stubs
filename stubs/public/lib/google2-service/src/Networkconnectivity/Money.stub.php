@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity;
-
-class Money extends \Google\Model
-{
-    public $currencyCode;
-    public $nanos;
-    public $units;
-    public function setCurrencyCode($currencyCode)
+namespace Google\Service\Networkconnectivity {
+    class Money extends \Google\Model
     {
+        public $currencyCode;
+        public $nanos;
+        public $units;
+        public function setCurrencyCode($currencyCode)
+        {
+        }
+        public function getCurrencyCode()
+        {
+        }
+        public function setNanos($nanos)
+        {
+        }
+        public function getNanos()
+        {
+        }
+        public function setUnits($units)
+        {
+        }
+        public function getUnits()
+        {
+        }
     }
-    public function getCurrencyCode()
-    {
-    }
-    public function setNanos($nanos)
-    {
-    }
-    public function getNanos()
-    {
-    }
-    public function setUnits($units)
-    {
-    }
-    public function getUnits()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Networkconnectivity\Money registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Networkconnectivity_Money extends \Google\Service\Networkconnectivity\Money
     {
     }
 }

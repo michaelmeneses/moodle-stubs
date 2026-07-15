@@ -21,67 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for Dialogflow (v3).
- *
- * <p>
- * Builds conversational interfaces (for example, chatbots, and voice-powered
- * apps and devices).</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://cloud.google.com/dialogflow/" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class Dialogflow extends \Google\Service
-{
-    /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
-    const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
-    /** View, manage and query your Dialogflow agents. */
-    const DIALOGFLOW = "https://www.googleapis.com/auth/dialogflow";
-    public $projects_locations;
-    public $projects_locations_agents;
-    public $projects_locations_agents_changelogs;
-    public $projects_locations_agents_entityTypes;
-    public $projects_locations_agents_environments;
-    public $projects_locations_agents_environments_continuousTestResults;
-    public $projects_locations_agents_environments_deployments;
-    public $projects_locations_agents_environments_experiments;
-    public $projects_locations_agents_environments_sessions;
-    public $projects_locations_agents_environments_sessions_entityTypes;
-    public $projects_locations_agents_flows;
-    public $projects_locations_agents_flows_pages;
-    public $projects_locations_agents_flows_transitionRouteGroups;
-    public $projects_locations_agents_flows_versions;
-    public $projects_locations_agents_generators;
-    public $projects_locations_agents_intents;
-    public $projects_locations_agents_playbooks;
-    public $projects_locations_agents_playbooks_examples;
-    public $projects_locations_agents_playbooks_versions;
-    public $projects_locations_agents_sessions;
-    public $projects_locations_agents_sessions_entityTypes;
-    public $projects_locations_agents_testCases;
-    public $projects_locations_agents_testCases_results;
-    public $projects_locations_agents_tools;
-    public $projects_locations_agents_tools_versions;
-    public $projects_locations_agents_transitionRouteGroups;
-    public $projects_locations_agents_webhooks;
-    public $projects_locations_operations;
-    public $projects_locations_securitySettings;
-    public $projects_operations;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the Dialogflow service.
+     * Service definition for Dialogflow (v3).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * Builds conversational interfaces (for example, chatbots, and voice-powered
+     * apps and devices).</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://cloud.google.com/dialogflow/" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class Dialogflow extends \Google\Service
+    {
+        /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
+        const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
+        /** View, manage and query your Dialogflow agents. */
+        const DIALOGFLOW = "https://www.googleapis.com/auth/dialogflow";
+        public $projects_locations;
+        public $projects_locations_agents;
+        public $projects_locations_agents_changelogs;
+        public $projects_locations_agents_entityTypes;
+        public $projects_locations_agents_environments;
+        public $projects_locations_agents_environments_continuousTestResults;
+        public $projects_locations_agents_environments_deployments;
+        public $projects_locations_agents_environments_experiments;
+        public $projects_locations_agents_environments_sessions;
+        public $projects_locations_agents_environments_sessions_entityTypes;
+        public $projects_locations_agents_flows;
+        public $projects_locations_agents_flows_pages;
+        public $projects_locations_agents_flows_transitionRouteGroups;
+        public $projects_locations_agents_flows_versions;
+        public $projects_locations_agents_generators;
+        public $projects_locations_agents_intents;
+        public $projects_locations_agents_playbooks;
+        public $projects_locations_agents_playbooks_examples;
+        public $projects_locations_agents_playbooks_versions;
+        public $projects_locations_agents_sessions;
+        public $projects_locations_agents_sessions_entityTypes;
+        public $projects_locations_agents_testCases;
+        public $projects_locations_agents_testCases_results;
+        public $projects_locations_agents_tools;
+        public $projects_locations_agents_tools_versions;
+        public $projects_locations_agents_transitionRouteGroups;
+        public $projects_locations_agents_webhooks;
+        public $projects_locations_operations;
+        public $projects_locations_securitySettings;
+        public $projects_operations;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the Dialogflow service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Dialogflow registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Dialogflow extends \Google\Service\Dialogflow
     {
     }
 }

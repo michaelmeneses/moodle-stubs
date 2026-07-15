@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Gmail\Resource;
-
-/**
- * The "cse" collection of methods.
- * Typical usage is:
- *  <code>
- *   $gmailService = new Google\Service\Gmail(...);
- *   $cse = $gmailService->users_settings_cse;
- *  </code>
- */
-class UsersSettingsCse extends \Google\Service\Resource
-{
+namespace Google\Service\Gmail\Resource {
+    /**
+     * The "cse" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $gmailService = new Google\Service\Gmail(...);
+     *   $cse = $gmailService->users_settings_cse;
+     *  </code>
+     */
+    class UsersSettingsCse extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Gmail\Resource\UsersSettingsCse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Gmail_Resource_UsersSettingsCse extends \Google\Service\Gmail\Resource\UsersSettingsCse
+    {
+    }
 }

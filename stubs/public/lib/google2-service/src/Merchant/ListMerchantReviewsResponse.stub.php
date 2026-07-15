@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Merchant;
-
-class ListMerchantReviewsResponse extends \Google\Collection
-{
-    protected $collection_key = 'merchantReviews';
-    protected $merchantReviewsType = MerchantReview::class;
-    protected $merchantReviewsDataType = 'array';
-    /**
-     * The token to retrieve the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The merchant review.
-     *
-     * @param MerchantReview[] $merchantReviews
-     */
-    public function setMerchantReviews($merchantReviews)
+namespace Google\Service\Merchant {
+    class ListMerchantReviewsResponse extends \Google\Collection
     {
+        protected $collection_key = 'merchantReviews';
+        protected $merchantReviewsType = MerchantReview::class;
+        protected $merchantReviewsDataType = 'array';
+        /**
+         * The token to retrieve the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The merchant review.
+         *
+         * @param MerchantReview[] $merchantReviews
+         */
+        public function setMerchantReviews($merchantReviews)
+        {
+        }
+        /**
+         * @return MerchantReview[]
+         */
+        public function getMerchantReviews()
+        {
+        }
+        /**
+         * The token to retrieve the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MerchantReview[]
+     * Runtime class alias of \Google\Service\Merchant\ListMerchantReviewsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMerchantReviews()
-    {
-    }
-    /**
-     * The token to retrieve the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Merchant_ListMerchantReviewsResponse extends \Google\Service\Merchant\ListMerchantReviewsResponse
     {
     }
 }

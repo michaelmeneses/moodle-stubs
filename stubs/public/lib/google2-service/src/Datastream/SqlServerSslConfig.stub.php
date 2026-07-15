@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class SqlServerSslConfig extends \Google\Model
-{
-    protected $basicEncryptionType = BasicEncryption::class;
-    protected $basicEncryptionDataType = '';
-    protected $encryptionAndServerValidationType = EncryptionAndServerValidation::class;
-    protected $encryptionAndServerValidationDataType = '';
-    protected $encryptionNotEnforcedType = EncryptionNotEnforced::class;
-    protected $encryptionNotEnforcedDataType = '';
-    /**
-     * If set, Datastream will enforce encryption without authenticating server
-     * identity. Server certificates will be trusted by default.
-     *
-     * @param BasicEncryption $basicEncryption
-     */
-    public function setBasicEncryption(BasicEncryption $basicEncryption)
+namespace Google\Service\Datastream {
+    class SqlServerSslConfig extends \Google\Model
     {
+        protected $basicEncryptionType = BasicEncryption::class;
+        protected $basicEncryptionDataType = '';
+        protected $encryptionAndServerValidationType = EncryptionAndServerValidation::class;
+        protected $encryptionAndServerValidationDataType = '';
+        protected $encryptionNotEnforcedType = EncryptionNotEnforced::class;
+        protected $encryptionNotEnforcedDataType = '';
+        /**
+         * If set, Datastream will enforce encryption without authenticating server
+         * identity. Server certificates will be trusted by default.
+         *
+         * @param BasicEncryption $basicEncryption
+         */
+        public function setBasicEncryption(BasicEncryption $basicEncryption)
+        {
+        }
+        /**
+         * @return BasicEncryption
+         */
+        public function getBasicEncryption()
+        {
+        }
+        /**
+         * If set, Datastream will enforce encryption and authenticate server
+         * identity.
+         *
+         * @param EncryptionAndServerValidation $encryptionAndServerValidation
+         */
+        public function setEncryptionAndServerValidation(EncryptionAndServerValidation $encryptionAndServerValidation)
+        {
+        }
+        /**
+         * @return EncryptionAndServerValidation
+         */
+        public function getEncryptionAndServerValidation()
+        {
+        }
+        /**
+         * If set, Datastream will not enforce encryption. If the DB server mandates
+         * encryption, then connection will be encrypted but server identity will not
+         * be authenticated.
+         *
+         * @param EncryptionNotEnforced $encryptionNotEnforced
+         */
+        public function setEncryptionNotEnforced(EncryptionNotEnforced $encryptionNotEnforced)
+        {
+        }
+        /**
+         * @return EncryptionNotEnforced
+         */
+        public function getEncryptionNotEnforced()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BasicEncryption
+     * Runtime class alias of \Google\Service\Datastream\SqlServerSslConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBasicEncryption()
-    {
-    }
-    /**
-     * If set, Datastream will enforce encryption and authenticate server
-     * identity.
-     *
-     * @param EncryptionAndServerValidation $encryptionAndServerValidation
-     */
-    public function setEncryptionAndServerValidation(EncryptionAndServerValidation $encryptionAndServerValidation)
-    {
-    }
-    /**
-     * @return EncryptionAndServerValidation
-     */
-    public function getEncryptionAndServerValidation()
-    {
-    }
-    /**
-     * If set, Datastream will not enforce encryption. If the DB server mandates
-     * encryption, then connection will be encrypted but server identity will not
-     * be authenticated.
-     *
-     * @param EncryptionNotEnforced $encryptionNotEnforced
-     */
-    public function setEncryptionNotEnforced(EncryptionNotEnforced $encryptionNotEnforced)
-    {
-    }
-    /**
-     * @return EncryptionNotEnforced
-     */
-    public function getEncryptionNotEnforced()
+    class Google_Service_Datastream_SqlServerSslConfig extends \Google\Service\Datastream\SqlServerSslConfig
     {
     }
 }

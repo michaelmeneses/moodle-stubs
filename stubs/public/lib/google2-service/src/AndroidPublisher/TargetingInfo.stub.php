@@ -21,61 +21,70 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class TargetingInfo extends \Google\Collection
-{
-    protected $collection_key = 'variant';
-    protected $assetSliceSetType = AssetSliceSet::class;
-    protected $assetSliceSetDataType = 'array';
-    /**
-     * The package name of this app.
-     *
-     * @var string
-     */
-    public $packageName;
-    protected $variantType = SplitApkVariant::class;
-    protected $variantDataType = 'array';
-    /**
-     * List of created asset slices.
-     *
-     * @param AssetSliceSet[] $assetSliceSet
-     */
-    public function setAssetSliceSet($assetSliceSet)
+namespace Google\Service\AndroidPublisher {
+    class TargetingInfo extends \Google\Collection
     {
+        protected $collection_key = 'variant';
+        protected $assetSliceSetType = AssetSliceSet::class;
+        protected $assetSliceSetDataType = 'array';
+        /**
+         * The package name of this app.
+         *
+         * @var string
+         */
+        public $packageName;
+        protected $variantType = SplitApkVariant::class;
+        protected $variantDataType = 'array';
+        /**
+         * List of created asset slices.
+         *
+         * @param AssetSliceSet[] $assetSliceSet
+         */
+        public function setAssetSliceSet($assetSliceSet)
+        {
+        }
+        /**
+         * @return AssetSliceSet[]
+         */
+        public function getAssetSliceSet()
+        {
+        }
+        /**
+         * The package name of this app.
+         *
+         * @param string $packageName
+         */
+        public function setPackageName($packageName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPackageName()
+        {
+        }
+        /**
+         * List of the created variants.
+         *
+         * @param SplitApkVariant[] $variant
+         */
+        public function setVariant($variant)
+        {
+        }
+        /**
+         * @return SplitApkVariant[]
+         */
+        public function getVariant()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AssetSliceSet[]
+     * Runtime class alias of \Google\Service\AndroidPublisher\TargetingInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssetSliceSet()
-    {
-    }
-    /**
-     * The package name of this app.
-     *
-     * @param string $packageName
-     */
-    public function setPackageName($packageName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPackageName()
-    {
-    }
-    /**
-     * List of the created variants.
-     *
-     * @param SplitApkVariant[] $variant
-     */
-    public function setVariant($variant)
-    {
-    }
-    /**
-     * @return SplitApkVariant[]
-     */
-    public function getVariant()
+    class Google_Service_AndroidPublisher_TargetingInfo extends \Google\Service\AndroidPublisher\TargetingInfo
     {
     }
 }

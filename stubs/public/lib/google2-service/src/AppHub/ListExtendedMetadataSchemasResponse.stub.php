@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AppHub;
-
-class ListExtendedMetadataSchemasResponse extends \Google\Collection
-{
-    protected $collection_key = 'extendedMetadataSchemas';
-    protected $extendedMetadataSchemasType = ExtendedMetadataSchema::class;
-    protected $extendedMetadataSchemasDataType = 'array';
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of Extended Metadata Schemas.
-     *
-     * @param ExtendedMetadataSchema[] $extendedMetadataSchemas
-     */
-    public function setExtendedMetadataSchemas($extendedMetadataSchemas)
+namespace Google\Service\AppHub {
+    class ListExtendedMetadataSchemasResponse extends \Google\Collection
     {
+        protected $collection_key = 'extendedMetadataSchemas';
+        protected $extendedMetadataSchemasType = ExtendedMetadataSchema::class;
+        protected $extendedMetadataSchemasDataType = 'array';
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of Extended Metadata Schemas.
+         *
+         * @param ExtendedMetadataSchema[] $extendedMetadataSchemas
+         */
+        public function setExtendedMetadataSchemas($extendedMetadataSchemas)
+        {
+        }
+        /**
+         * @return ExtendedMetadataSchema[]
+         */
+        public function getExtendedMetadataSchemas()
+        {
+        }
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ExtendedMetadataSchema[]
+     * Runtime class alias of \Google\Service\AppHub\ListExtendedMetadataSchemasResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExtendedMetadataSchemas()
-    {
-    }
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_AppHub_ListExtendedMetadataSchemasResponse extends \Google\Service\AppHub\ListExtendedMetadataSchemasResponse
     {
     }
 }

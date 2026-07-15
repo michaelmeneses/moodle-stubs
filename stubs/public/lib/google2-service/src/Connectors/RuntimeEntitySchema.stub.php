@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors;
-
-class RuntimeEntitySchema extends \Google\Collection
-{
-    protected $collection_key = 'fields';
-    /**
-     * @var string
-     */
-    public $entity;
-    protected $fieldsType = Field::class;
-    protected $fieldsDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setEntity($entity)
+namespace Google\Service\Connectors {
+    class RuntimeEntitySchema extends \Google\Collection
     {
+        protected $collection_key = 'fields';
+        /**
+         * @var string
+         */
+        public $entity;
+        protected $fieldsType = Field::class;
+        protected $fieldsDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setEntity($entity)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEntity()
+        {
+        }
+        /**
+         * @param Field[]
+         */
+        public function setFields($fields)
+        {
+        }
+        /**
+         * @return Field[]
+         */
+        public function getFields()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Connectors\RuntimeEntitySchema registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntity()
-    {
-    }
-    /**
-     * @param Field[]
-     */
-    public function setFields($fields)
-    {
-    }
-    /**
-     * @return Field[]
-     */
-    public function getFields()
+    class Google_Service_Connectors_RuntimeEntitySchema extends \Google\Service\Connectors\RuntimeEntitySchema
     {
     }
 }

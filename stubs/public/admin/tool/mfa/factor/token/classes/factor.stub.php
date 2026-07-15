@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace factor_token;
 
+use stdClass;
+use tool_mfa\local\factor\object_factor_base;
+use tool_mfa\local\secret_manager;
 /**
  * Token factor class.
  *

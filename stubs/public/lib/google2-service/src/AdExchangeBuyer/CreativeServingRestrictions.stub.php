@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer;
-
-class CreativeServingRestrictions extends \Google\Collection
-{
-    protected $collection_key = 'disapprovalReasons';
-    protected $contextsType = CreativeServingRestrictionsContexts::class;
-    protected $contextsDataType = 'array';
-    protected $disapprovalReasonsType = CreativeServingRestrictionsDisapprovalReasons::class;
-    protected $disapprovalReasonsDataType = 'array';
-    public $reason;
+namespace Google\Service\AdExchangeBuyer {
+    class CreativeServingRestrictions extends \Google\Collection
+    {
+        protected $collection_key = 'disapprovalReasons';
+        protected $contextsType = CreativeServingRestrictionsContexts::class;
+        protected $contextsDataType = 'array';
+        protected $disapprovalReasonsType = CreativeServingRestrictionsDisapprovalReasons::class;
+        protected $disapprovalReasonsDataType = 'array';
+        public $reason;
+        /**
+         * @param CreativeServingRestrictionsContexts[]
+         */
+        public function setContexts($contexts)
+        {
+        }
+        /**
+         * @return CreativeServingRestrictionsContexts[]
+         */
+        public function getContexts()
+        {
+        }
+        /**
+         * @param CreativeServingRestrictionsDisapprovalReasons[]
+         */
+        public function setDisapprovalReasons($disapprovalReasons)
+        {
+        }
+        /**
+         * @return CreativeServingRestrictionsDisapprovalReasons[]
+         */
+        public function getDisapprovalReasons()
+        {
+        }
+        public function setReason($reason)
+        {
+        }
+        public function getReason()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @param CreativeServingRestrictionsContexts[]
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\CreativeServingRestrictions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setContexts($contexts)
-    {
-    }
-    /**
-     * @return CreativeServingRestrictionsContexts[]
-     */
-    public function getContexts()
-    {
-    }
-    /**
-     * @param CreativeServingRestrictionsDisapprovalReasons[]
-     */
-    public function setDisapprovalReasons($disapprovalReasons)
-    {
-    }
-    /**
-     * @return CreativeServingRestrictionsDisapprovalReasons[]
-     */
-    public function getDisapprovalReasons()
-    {
-    }
-    public function setReason($reason)
-    {
-    }
-    public function getReason()
+    class Google_Service_AdExchangeBuyer_CreativeServingRestrictions extends \Google\Service\AdExchangeBuyer\CreativeServingRestrictions
     {
     }
 }

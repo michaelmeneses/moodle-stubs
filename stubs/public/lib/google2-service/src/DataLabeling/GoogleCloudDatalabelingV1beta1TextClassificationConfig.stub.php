@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1TextClassificationConfig extends \Google\Model
-{
-    /**
-     * Optional. If allow_multi_label is true, contributors are able to choose
-     * multiple labels for one text segment.
-     *
-     * @var bool
-     */
-    public $allowMultiLabel;
-    /**
-     * Required. Annotation spec set resource name.
-     *
-     * @var string
-     */
-    public $annotationSpecSet;
-    protected $sentimentConfigType = GoogleCloudDatalabelingV1beta1SentimentConfig::class;
-    protected $sentimentConfigDataType = '';
-    /**
-     * Optional. If allow_multi_label is true, contributors are able to choose
-     * multiple labels for one text segment.
-     *
-     * @param bool $allowMultiLabel
-     */
-    public function setAllowMultiLabel($allowMultiLabel)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1TextClassificationConfig extends \Google\Model
     {
+        /**
+         * Optional. If allow_multi_label is true, contributors are able to choose
+         * multiple labels for one text segment.
+         *
+         * @var bool
+         */
+        public $allowMultiLabel;
+        /**
+         * Required. Annotation spec set resource name.
+         *
+         * @var string
+         */
+        public $annotationSpecSet;
+        protected $sentimentConfigType = GoogleCloudDatalabelingV1beta1SentimentConfig::class;
+        protected $sentimentConfigDataType = '';
+        /**
+         * Optional. If allow_multi_label is true, contributors are able to choose
+         * multiple labels for one text segment.
+         *
+         * @param bool $allowMultiLabel
+         */
+        public function setAllowMultiLabel($allowMultiLabel)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAllowMultiLabel()
+        {
+        }
+        /**
+         * Required. Annotation spec set resource name.
+         *
+         * @param string $annotationSpecSet
+         */
+        public function setAnnotationSpecSet($annotationSpecSet)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnnotationSpecSet()
+        {
+        }
+        /**
+         * Optional. Configs for sentiment selection. We deprecate sentiment analysis
+         * in data labeling side as it is incompatible with uCAIP.
+         *
+         * @deprecated
+         * @param GoogleCloudDatalabelingV1beta1SentimentConfig $sentimentConfig
+         */
+        public function setSentimentConfig(GoogleCloudDatalabelingV1beta1SentimentConfig $sentimentConfig)
+        {
+        }
+        /**
+         * @deprecated
+         * @return GoogleCloudDatalabelingV1beta1SentimentConfig
+         */
+        public function getSentimentConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1TextClassificationConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowMultiLabel()
-    {
-    }
-    /**
-     * Required. Annotation spec set resource name.
-     *
-     * @param string $annotationSpecSet
-     */
-    public function setAnnotationSpecSet($annotationSpecSet)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAnnotationSpecSet()
-    {
-    }
-    /**
-     * Optional. Configs for sentiment selection. We deprecate sentiment analysis
-     * in data labeling side as it is incompatible with uCAIP.
-     *
-     * @deprecated
-     * @param GoogleCloudDatalabelingV1beta1SentimentConfig $sentimentConfig
-     */
-    public function setSentimentConfig(GoogleCloudDatalabelingV1beta1SentimentConfig $sentimentConfig)
-    {
-    }
-    /**
-     * @deprecated
-     * @return GoogleCloudDatalabelingV1beta1SentimentConfig
-     */
-    public function getSentimentConfig()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1TextClassificationConfig extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1TextClassificationConfig
     {
     }
 }

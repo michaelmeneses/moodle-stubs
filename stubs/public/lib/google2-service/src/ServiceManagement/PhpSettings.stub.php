@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceManagement;
-
-class PhpSettings extends \Google\Model
-{
-    protected $commonType = CommonLanguageSettings::class;
-    protected $commonDataType = '';
-    /**
-     * The package name to use in Php. Clobbers the php_namespace option set in
-     * the protobuf. This should be used **only** by APIs who have already set the
-     * language_settings.php.package_name" field in gapic.yaml. API teams should
-     * use the protobuf php_namespace option where possible. Example of a YAML
-     * configuration:: publishing: library_settings: php_settings:
-     * library_package: Google\Cloud\PubSub\V1
-     *
-     * @var string
-     */
-    public $libraryPackage;
-    /**
-     * Some settings.
-     *
-     * @param CommonLanguageSettings $common
-     */
-    public function setCommon(CommonLanguageSettings $common)
+namespace Google\Service\ServiceManagement {
+    class PhpSettings extends \Google\Model
     {
+        protected $commonType = CommonLanguageSettings::class;
+        protected $commonDataType = '';
+        /**
+         * The package name to use in Php. Clobbers the php_namespace option set in
+         * the protobuf. This should be used **only** by APIs who have already set the
+         * language_settings.php.package_name" field in gapic.yaml. API teams should
+         * use the protobuf php_namespace option where possible. Example of a YAML
+         * configuration:: publishing: library_settings: php_settings:
+         * library_package: Google\Cloud\PubSub\V1
+         *
+         * @var string
+         */
+        public $libraryPackage;
+        /**
+         * Some settings.
+         *
+         * @param CommonLanguageSettings $common
+         */
+        public function setCommon(CommonLanguageSettings $common)
+        {
+        }
+        /**
+         * @return CommonLanguageSettings
+         */
+        public function getCommon()
+        {
+        }
+        /**
+         * The package name to use in Php. Clobbers the php_namespace option set in
+         * the protobuf. This should be used **only** by APIs who have already set the
+         * language_settings.php.package_name" field in gapic.yaml. API teams should
+         * use the protobuf php_namespace option where possible. Example of a YAML
+         * configuration:: publishing: library_settings: php_settings:
+         * library_package: Google\Cloud\PubSub\V1
+         *
+         * @param string $libraryPackage
+         */
+        public function setLibraryPackage($libraryPackage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLibraryPackage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CommonLanguageSettings
+     * Runtime class alias of \Google\Service\ServiceManagement\PhpSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCommon()
-    {
-    }
-    /**
-     * The package name to use in Php. Clobbers the php_namespace option set in
-     * the protobuf. This should be used **only** by APIs who have already set the
-     * language_settings.php.package_name" field in gapic.yaml. API teams should
-     * use the protobuf php_namespace option where possible. Example of a YAML
-     * configuration:: publishing: library_settings: php_settings:
-     * library_package: Google\Cloud\PubSub\V1
-     *
-     * @param string $libraryPackage
-     */
-    public function setLibraryPackage($libraryPackage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLibraryPackage()
+    class Google_Service_ServiceManagement_PhpSettings extends \Google\Service\ServiceManagement\PhpSettings
     {
     }
 }

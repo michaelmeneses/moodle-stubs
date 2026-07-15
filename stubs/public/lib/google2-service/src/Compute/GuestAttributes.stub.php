@@ -21,128 +21,137 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class GuestAttributes extends \Google\Model
-{
-    /**
-     * Output only. [Output Only] Type of the resource.
-     * Alwayscompute#guestAttributes for guest attributes entry.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The path to be queried. This can be the default namespace ('') or a nested
-     * namespace ('\/') or a specified key ('\/\').
-     *
-     * @var string
-     */
-    public $queryPath;
-    protected $queryValueType = GuestAttributesValue::class;
-    protected $queryValueDataType = '';
-    /**
-     * Output only. [Output Only] Server-defined URL for this resource.
-     *
-     * @var string
-     */
-    public $selfLink;
-    /**
-     * The key to search for.
-     *
-     * @var string
-     */
-    public $variableKey;
-    /**
-     * Output only. [Output Only] The value found for the requested key.
-     *
-     * @var string
-     */
-    public $variableValue;
-    /**
-     * Output only. [Output Only] Type of the resource.
-     * Alwayscompute#guestAttributes for guest attributes entry.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Compute {
+    class GuestAttributes extends \Google\Model
     {
+        /**
+         * Output only. [Output Only] Type of the resource.
+         * Alwayscompute#guestAttributes for guest attributes entry.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The path to be queried. This can be the default namespace ('') or a nested
+         * namespace ('\/') or a specified key ('\/\').
+         *
+         * @var string
+         */
+        public $queryPath;
+        protected $queryValueType = GuestAttributesValue::class;
+        protected $queryValueDataType = '';
+        /**
+         * Output only. [Output Only] Server-defined URL for this resource.
+         *
+         * @var string
+         */
+        public $selfLink;
+        /**
+         * The key to search for.
+         *
+         * @var string
+         */
+        public $variableKey;
+        /**
+         * Output only. [Output Only] The value found for the requested key.
+         *
+         * @var string
+         */
+        public $variableValue;
+        /**
+         * Output only. [Output Only] Type of the resource.
+         * Alwayscompute#guestAttributes for guest attributes entry.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The path to be queried. This can be the default namespace ('') or a nested
+         * namespace ('\/') or a specified key ('\/\').
+         *
+         * @param string $queryPath
+         */
+        public function setQueryPath($queryPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQueryPath()
+        {
+        }
+        /**
+         * Output only. [Output Only] The value of the requested queried path.
+         *
+         * @param GuestAttributesValue $queryValue
+         */
+        public function setQueryValue(GuestAttributesValue $queryValue)
+        {
+        }
+        /**
+         * @return GuestAttributesValue
+         */
+        public function getQueryValue()
+        {
+        }
+        /**
+         * Output only. [Output Only] Server-defined URL for this resource.
+         *
+         * @param string $selfLink
+         */
+        public function setSelfLink($selfLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelfLink()
+        {
+        }
+        /**
+         * The key to search for.
+         *
+         * @param string $variableKey
+         */
+        public function setVariableKey($variableKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVariableKey()
+        {
+        }
+        /**
+         * Output only. [Output Only] The value found for the requested key.
+         *
+         * @param string $variableValue
+         */
+        public function setVariableValue($variableValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVariableValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\GuestAttributes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * The path to be queried. This can be the default namespace ('') or a nested
-     * namespace ('\/') or a specified key ('\/\').
-     *
-     * @param string $queryPath
-     */
-    public function setQueryPath($queryPath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQueryPath()
-    {
-    }
-    /**
-     * Output only. [Output Only] The value of the requested queried path.
-     *
-     * @param GuestAttributesValue $queryValue
-     */
-    public function setQueryValue(GuestAttributesValue $queryValue)
-    {
-    }
-    /**
-     * @return GuestAttributesValue
-     */
-    public function getQueryValue()
-    {
-    }
-    /**
-     * Output only. [Output Only] Server-defined URL for this resource.
-     *
-     * @param string $selfLink
-     */
-    public function setSelfLink($selfLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelfLink()
-    {
-    }
-    /**
-     * The key to search for.
-     *
-     * @param string $variableKey
-     */
-    public function setVariableKey($variableKey)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVariableKey()
-    {
-    }
-    /**
-     * Output only. [Output Only] The value found for the requested key.
-     *
-     * @param string $variableValue
-     */
-    public function setVariableValue($variableValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVariableValue()
+    class Google_Service_Compute_GuestAttributes extends \Google\Service\Compute\GuestAttributes
     {
     }
 }

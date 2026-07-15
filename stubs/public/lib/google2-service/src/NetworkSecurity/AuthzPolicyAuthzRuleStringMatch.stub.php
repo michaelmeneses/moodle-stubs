@@ -21,126 +21,135 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkSecurity;
-
-class AuthzPolicyAuthzRuleStringMatch extends \Google\Model
-{
-    /**
-     * The input string must have the substring specified here. Note: empty
-     * contains match is not allowed, please use regex instead. Examples: *
-     * ``abc`` matches the value ``xyz.abc.def``
-     *
-     * @var string
-     */
-    public $contains;
-    /**
-     * The input string must match exactly the string specified here. Examples: *
-     * ``abc`` only matches the value ``abc``.
-     *
-     * @var string
-     */
-    public $exact;
-    /**
-     * If true, indicates the exact/prefix/suffix/contains matching should be case
-     * insensitive. For example, the matcher ``data`` will match both input string
-     * ``Data`` and ``data`` if set to true.
-     *
-     * @var bool
-     */
-    public $ignoreCase;
-    /**
-     * The input string must have the prefix specified here. Note: empty prefix is
-     * not allowed, please use regex instead. Examples: * ``abc`` matches the
-     * value ``abc.xyz``
-     *
-     * @var string
-     */
-    public $prefix;
-    /**
-     * The input string must have the suffix specified here. Note: empty prefix is
-     * not allowed, please use regex instead. Examples: * ``abc`` matches the
-     * value ``xyz.abc``
-     *
-     * @var string
-     */
-    public $suffix;
-    /**
-     * The input string must have the substring specified here. Note: empty
-     * contains match is not allowed, please use regex instead. Examples: *
-     * ``abc`` matches the value ``xyz.abc.def``
-     *
-     * @param string $contains
-     */
-    public function setContains($contains)
+namespace Google\Service\NetworkSecurity {
+    class AuthzPolicyAuthzRuleStringMatch extends \Google\Model
     {
+        /**
+         * The input string must have the substring specified here. Note: empty
+         * contains match is not allowed, please use regex instead. Examples: *
+         * ``abc`` matches the value ``xyz.abc.def``
+         *
+         * @var string
+         */
+        public $contains;
+        /**
+         * The input string must match exactly the string specified here. Examples: *
+         * ``abc`` only matches the value ``abc``.
+         *
+         * @var string
+         */
+        public $exact;
+        /**
+         * If true, indicates the exact/prefix/suffix/contains matching should be case
+         * insensitive. For example, the matcher ``data`` will match both input string
+         * ``Data`` and ``data`` if set to true.
+         *
+         * @var bool
+         */
+        public $ignoreCase;
+        /**
+         * The input string must have the prefix specified here. Note: empty prefix is
+         * not allowed, please use regex instead. Examples: * ``abc`` matches the
+         * value ``abc.xyz``
+         *
+         * @var string
+         */
+        public $prefix;
+        /**
+         * The input string must have the suffix specified here. Note: empty prefix is
+         * not allowed, please use regex instead. Examples: * ``abc`` matches the
+         * value ``xyz.abc``
+         *
+         * @var string
+         */
+        public $suffix;
+        /**
+         * The input string must have the substring specified here. Note: empty
+         * contains match is not allowed, please use regex instead. Examples: *
+         * ``abc`` matches the value ``xyz.abc.def``
+         *
+         * @param string $contains
+         */
+        public function setContains($contains)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContains()
+        {
+        }
+        /**
+         * The input string must match exactly the string specified here. Examples: *
+         * ``abc`` only matches the value ``abc``.
+         *
+         * @param string $exact
+         */
+        public function setExact($exact)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExact()
+        {
+        }
+        /**
+         * If true, indicates the exact/prefix/suffix/contains matching should be case
+         * insensitive. For example, the matcher ``data`` will match both input string
+         * ``Data`` and ``data`` if set to true.
+         *
+         * @param bool $ignoreCase
+         */
+        public function setIgnoreCase($ignoreCase)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIgnoreCase()
+        {
+        }
+        /**
+         * The input string must have the prefix specified here. Note: empty prefix is
+         * not allowed, please use regex instead. Examples: * ``abc`` matches the
+         * value ``abc.xyz``
+         *
+         * @param string $prefix
+         */
+        public function setPrefix($prefix)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrefix()
+        {
+        }
+        /**
+         * The input string must have the suffix specified here. Note: empty prefix is
+         * not allowed, please use regex instead. Examples: * ``abc`` matches the
+         * value ``xyz.abc``
+         *
+         * @param string $suffix
+         */
+        public function setSuffix($suffix)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSuffix()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetworkSecurity\AuthzPolicyAuthzRuleStringMatch registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContains()
-    {
-    }
-    /**
-     * The input string must match exactly the string specified here. Examples: *
-     * ``abc`` only matches the value ``abc``.
-     *
-     * @param string $exact
-     */
-    public function setExact($exact)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExact()
-    {
-    }
-    /**
-     * If true, indicates the exact/prefix/suffix/contains matching should be case
-     * insensitive. For example, the matcher ``data`` will match both input string
-     * ``Data`` and ``data`` if set to true.
-     *
-     * @param bool $ignoreCase
-     */
-    public function setIgnoreCase($ignoreCase)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIgnoreCase()
-    {
-    }
-    /**
-     * The input string must have the prefix specified here. Note: empty prefix is
-     * not allowed, please use regex instead. Examples: * ``abc`` matches the
-     * value ``abc.xyz``
-     *
-     * @param string $prefix
-     */
-    public function setPrefix($prefix)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrefix()
-    {
-    }
-    /**
-     * The input string must have the suffix specified here. Note: empty prefix is
-     * not allowed, please use regex instead. Examples: * ``abc`` matches the
-     * value ``xyz.abc``
-     *
-     * @param string $suffix
-     */
-    public function setSuffix($suffix)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSuffix()
+    class Google_Service_NetworkSecurity_AuthzPolicyAuthzRuleStringMatch extends \Google\Service\NetworkSecurity\AuthzPolicyAuthzRuleStringMatch
     {
     }
 }

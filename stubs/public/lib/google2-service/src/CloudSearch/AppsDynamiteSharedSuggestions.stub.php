@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedSuggestions extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    protected $itemsType = AppsDynamiteSharedSuggestionsSuggestionItem::class;
-    protected $itemsDataType = 'array';
-    public $items;
-    /**
-     * @param AppsDynamiteSharedSuggestionsSuggestionItem[]
-     */
-    public function setItems($items)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedSuggestions extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        protected $itemsType = AppsDynamiteSharedSuggestionsSuggestionItem::class;
+        protected $itemsDataType = 'array';
+        public $items;
+        /**
+         * @param AppsDynamiteSharedSuggestionsSuggestionItem[]
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedSuggestionsSuggestionItem[]
+         */
+        public function getItems()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppsDynamiteSharedSuggestionsSuggestionItem[]
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedSuggestions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItems()
+    class Google_Service_CloudSearch_AppsDynamiteSharedSuggestions extends \Google\Service\CloudSearch\AppsDynamiteSharedSuggestions
     {
     }
 }

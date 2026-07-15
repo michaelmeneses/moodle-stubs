@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class Pagination extends \Google\Model
-{
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * `"walletobjects#pagination"`.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $kind;
-    /**
-     * Page token to send to fetch the next page.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Number of results returned in this page.
-     *
-     * @var int
-     */
-    public $resultsPerPage;
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * `"walletobjects#pagination"`.
-     *
-     * @deprecated
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Walletobjects {
+    class Pagination extends \Google\Model
     {
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * `"walletobjects#pagination"`.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $kind;
+        /**
+         * Page token to send to fetch the next page.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Number of results returned in this page.
+         *
+         * @var int
+         */
+        public $resultsPerPage;
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * `"walletobjects#pagination"`.
+         *
+         * @deprecated
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Page token to send to fetch the next page.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Number of results returned in this page.
+         *
+         * @param int $resultsPerPage
+         */
+        public function setResultsPerPage($resultsPerPage)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getResultsPerPage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return string
+     * Runtime class alias of \Google\Service\Walletobjects\Pagination registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * Page token to send to fetch the next page.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Number of results returned in this page.
-     *
-     * @param int $resultsPerPage
-     */
-    public function setResultsPerPage($resultsPerPage)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getResultsPerPage()
+    class Google_Service_Walletobjects_Pagination extends \Google\Service\Walletobjects\Pagination
     {
     }
 }

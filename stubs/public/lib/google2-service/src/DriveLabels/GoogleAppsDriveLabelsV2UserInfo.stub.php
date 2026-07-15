@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveLabels;
-
-class GoogleAppsDriveLabelsV2UserInfo extends \Google\Model
-{
-    /**
-     * The identifier for this user that can be used with the [People
-     * API](https://developers.google.com/people) to get more information. For
-     * example, `people/12345678`.
-     *
-     * @var string
-     */
-    public $person;
-    /**
-     * The identifier for this user that can be used with the [People
-     * API](https://developers.google.com/people) to get more information. For
-     * example, `people/12345678`.
-     *
-     * @param string $person
-     */
-    public function setPerson($person)
+namespace Google\Service\DriveLabels {
+    class GoogleAppsDriveLabelsV2UserInfo extends \Google\Model
     {
+        /**
+         * The identifier for this user that can be used with the [People
+         * API](https://developers.google.com/people) to get more information. For
+         * example, `people/12345678`.
+         *
+         * @var string
+         */
+        public $person;
+        /**
+         * The identifier for this user that can be used with the [People
+         * API](https://developers.google.com/people) to get more information. For
+         * example, `people/12345678`.
+         *
+         * @param string $person
+         */
+        public function setPerson($person)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPerson()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2UserInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPerson()
+    class Google_Service_DriveLabels_GoogleAppsDriveLabelsV2UserInfo extends \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2UserInfo
     {
     }
 }

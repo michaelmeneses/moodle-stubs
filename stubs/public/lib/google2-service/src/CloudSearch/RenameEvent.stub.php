@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class RenameEvent extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $newName;
-    /**
-     * @var string
-     */
-    public $originalName;
-    /**
-     * @param string
-     */
-    public function setNewName($newName)
+namespace Google\Service\CloudSearch {
+    class RenameEvent extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $newName;
+        /**
+         * @var string
+         */
+        public $originalName;
+        /**
+         * @param string
+         */
+        public function setNewName($newName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNewName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOriginalName($originalName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOriginalName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\RenameEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNewName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOriginalName($originalName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOriginalName()
+    class Google_Service_CloudSearch_RenameEvent extends \Google\Service\CloudSearch\RenameEvent
     {
     }
 }

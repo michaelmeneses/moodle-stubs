@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceControl;
-
-class PolicyViolationInfo extends \Google\Model
-{
-    protected $orgPolicyViolationInfoType = OrgPolicyViolationInfo::class;
-    protected $orgPolicyViolationInfoDataType = '';
-    /**
-     * Indicates the orgpolicy violations for this resource.
-     *
-     * @param OrgPolicyViolationInfo $orgPolicyViolationInfo
-     */
-    public function setOrgPolicyViolationInfo(OrgPolicyViolationInfo $orgPolicyViolationInfo)
+namespace Google\Service\ServiceControl {
+    class PolicyViolationInfo extends \Google\Model
     {
+        protected $orgPolicyViolationInfoType = OrgPolicyViolationInfo::class;
+        protected $orgPolicyViolationInfoDataType = '';
+        /**
+         * Indicates the orgpolicy violations for this resource.
+         *
+         * @param OrgPolicyViolationInfo $orgPolicyViolationInfo
+         */
+        public function setOrgPolicyViolationInfo(OrgPolicyViolationInfo $orgPolicyViolationInfo)
+        {
+        }
+        /**
+         * @return OrgPolicyViolationInfo
+         */
+        public function getOrgPolicyViolationInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return OrgPolicyViolationInfo
+     * Runtime class alias of \Google\Service\ServiceControl\PolicyViolationInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOrgPolicyViolationInfo()
+    class Google_Service_ServiceControl_PolicyViolationInfo extends \Google\Service\ServiceControl\PolicyViolationInfo
     {
     }
 }

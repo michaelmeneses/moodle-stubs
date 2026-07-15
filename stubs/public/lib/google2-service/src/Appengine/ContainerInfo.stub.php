@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Appengine;
-
-class ContainerInfo extends \Google\Model
-{
-    /**
-     * URI to the hosted container image in Google Container Registry. The URI
-     * must be fully qualified and include a tag or digest. Examples: "gcr.io/my-
-     * project/image:tag" or "gcr.io/my-project/image@digest"
-     *
-     * @var string
-     */
-    public $image;
-    /**
-     * URI to the hosted container image in Google Container Registry. The URI
-     * must be fully qualified and include a tag or digest. Examples: "gcr.io/my-
-     * project/image:tag" or "gcr.io/my-project/image@digest"
-     *
-     * @param string $image
-     */
-    public function setImage($image)
+namespace Google\Service\Appengine {
+    class ContainerInfo extends \Google\Model
     {
+        /**
+         * URI to the hosted container image in Google Container Registry. The URI
+         * must be fully qualified and include a tag or digest. Examples: "gcr.io/my-
+         * project/image:tag" or "gcr.io/my-project/image@digest"
+         *
+         * @var string
+         */
+        public $image;
+        /**
+         * URI to the hosted container image in Google Container Registry. The URI
+         * must be fully qualified and include a tag or digest. Examples: "gcr.io/my-
+         * project/image:tag" or "gcr.io/my-project/image@digest"
+         *
+         * @param string $image
+         */
+        public function setImage($image)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Appengine\ContainerInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getImage()
+    class Google_Service_Appengine_ContainerInfo extends \Google\Service\Appengine\ContainerInfo
     {
     }
 }

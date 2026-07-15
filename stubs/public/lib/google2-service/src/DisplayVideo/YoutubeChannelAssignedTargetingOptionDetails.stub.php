@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class YoutubeChannelAssignedTargetingOptionDetails extends \Google\Model
-{
-    /**
-     * The YouTube uploader channel id or the channel code of a YouTube channel.
-     *
-     * @var string
-     */
-    public $channelId;
-    /**
-     * Indicates if this option is being negatively targeted.
-     *
-     * @var bool
-     */
-    public $negative;
-    /**
-     * The YouTube uploader channel id or the channel code of a YouTube channel.
-     *
-     * @param string $channelId
-     */
-    public function setChannelId($channelId)
+namespace Google\Service\DisplayVideo {
+    class YoutubeChannelAssignedTargetingOptionDetails extends \Google\Model
     {
+        /**
+         * The YouTube uploader channel id or the channel code of a YouTube channel.
+         *
+         * @var string
+         */
+        public $channelId;
+        /**
+         * Indicates if this option is being negatively targeted.
+         *
+         * @var bool
+         */
+        public $negative;
+        /**
+         * The YouTube uploader channel id or the channel code of a YouTube channel.
+         *
+         * @param string $channelId
+         */
+        public function setChannelId($channelId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChannelId()
+        {
+        }
+        /**
+         * Indicates if this option is being negatively targeted.
+         *
+         * @param bool $negative
+         */
+        public function setNegative($negative)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getNegative()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\YoutubeChannelAssignedTargetingOptionDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChannelId()
-    {
-    }
-    /**
-     * Indicates if this option is being negatively targeted.
-     *
-     * @param bool $negative
-     */
-    public function setNegative($negative)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getNegative()
+    class Google_Service_DisplayVideo_YoutubeChannelAssignedTargetingOptionDetails extends \Google\Service\DisplayVideo\YoutubeChannelAssignedTargetingOptionDetails
     {
     }
 }

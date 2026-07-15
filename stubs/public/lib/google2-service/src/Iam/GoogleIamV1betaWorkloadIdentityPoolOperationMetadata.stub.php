@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Iam;
-
-class GoogleIamV1betaWorkloadIdentityPoolOperationMetadata extends \Google\Model
-{
+namespace Google\Service\Iam {
+    class GoogleIamV1betaWorkloadIdentityPoolOperationMetadata extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Iam\GoogleIamV1betaWorkloadIdentityPoolOperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Iam_GoogleIamV1betaWorkloadIdentityPoolOperationMetadata extends \Google\Service\Iam\GoogleIamV1betaWorkloadIdentityPoolOperationMetadata
+    {
+    }
 }

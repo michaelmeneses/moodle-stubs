@@ -21,168 +21,177 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors;
-
-class Connector extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $createTime;
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var string
-     */
-    public $displayName;
-    /**
-     * @var string
-     */
-    public $documentationUri;
-    /**
-     * @var string
-     */
-    public $externalUri;
-    /**
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * @var string
-     */
-    public $launchStage;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * @var string
-     */
-    public $webAssetsLocation;
-    /**
-     * @param string
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\Connectors {
+    class Connector extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $createTime;
+        /**
+         * @var string
+         */
+        public $description;
+        /**
+         * @var string
+         */
+        public $displayName;
+        /**
+         * @var string
+         */
+        public $documentationUri;
+        /**
+         * @var string
+         */
+        public $externalUri;
+        /**
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * @var string
+         */
+        public $launchStage;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * @var string
+         */
+        public $webAssetsLocation;
+        /**
+         * @param string
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDocumentationUri($documentationUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDocumentationUri()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setExternalUri($externalUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExternalUri()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLaunchStage($launchStage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLaunchStage()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setWebAssetsLocation($webAssetsLocation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWebAssetsLocation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Connectors\Connector registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDocumentationUri($documentationUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDocumentationUri()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setExternalUri($externalUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExternalUri()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLaunchStage($launchStage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLaunchStage()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setWebAssetsLocation($webAssetsLocation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWebAssetsLocation()
+    class Google_Service_Connectors_Connector extends \Google\Service\Connectors\Connector
     {
     }
 }

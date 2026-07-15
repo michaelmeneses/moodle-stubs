@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 namespace mod_quiz\cache;
 
+use core_cache\data_source_interface;
+use core_cache\definition;
 /**
  * Data source implementation for the new quiz_overrides cache.
  *

@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class MavenArtifact extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $artifactId;
-    /**
-     * @var string
-     */
-    public $groupId;
-    /**
-     * @var string
-     */
-    public $path;
-    /**
-     * @var string
-     */
-    public $repository;
-    /**
-     * @var string
-     */
-    public $version;
-    /**
-     * @param string
-     */
-    public function setArtifactId($artifactId)
+namespace Google\Service\CloudBuild {
+    class MavenArtifact extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $artifactId;
+        /**
+         * @var string
+         */
+        public $groupId;
+        /**
+         * @var string
+         */
+        public $path;
+        /**
+         * @var string
+         */
+        public $repository;
+        /**
+         * @var string
+         */
+        public $version;
+        /**
+         * @param string
+         */
+        public function setArtifactId($artifactId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getArtifactId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setGroupId($groupId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGroupId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRepository($repository)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRepository()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudBuild\MavenArtifact registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArtifactId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setGroupId($groupId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGroupId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPath($path)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPath()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRepository($repository)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRepository()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_CloudBuild_MavenArtifact extends \Google\Service\CloudBuild\MavenArtifact
     {
     }
 }

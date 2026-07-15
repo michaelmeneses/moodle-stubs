@@ -21,77 +21,86 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CivicInfo;
-
-class GeocodingSummary extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $addressUnderstood;
-    protected $featureIdType = FeatureIdProto::class;
-    protected $featureIdDataType = '';
-    /**
-     * @var string
-     */
-    public $featureType;
-    public $positionPrecisionMeters;
-    /**
-     * @var string
-     */
-    public $queryString;
-    /**
-     * @param bool
-     */
-    public function setAddressUnderstood($addressUnderstood)
+namespace Google\Service\CivicInfo {
+    class GeocodingSummary extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $addressUnderstood;
+        protected $featureIdType = FeatureIdProto::class;
+        protected $featureIdDataType = '';
+        /**
+         * @var string
+         */
+        public $featureType;
+        public $positionPrecisionMeters;
+        /**
+         * @var string
+         */
+        public $queryString;
+        /**
+         * @param bool
+         */
+        public function setAddressUnderstood($addressUnderstood)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAddressUnderstood()
+        {
+        }
+        /**
+         * @param FeatureIdProto
+         */
+        public function setFeatureId(FeatureIdProto $featureId)
+        {
+        }
+        /**
+         * @return FeatureIdProto
+         */
+        public function getFeatureId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setFeatureType($featureType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFeatureType()
+        {
+        }
+        public function setPositionPrecisionMeters($positionPrecisionMeters)
+        {
+        }
+        public function getPositionPrecisionMeters()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setQueryString($queryString)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQueryString()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CivicInfo\GeocodingSummary registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddressUnderstood()
-    {
-    }
-    /**
-     * @param FeatureIdProto
-     */
-    public function setFeatureId(FeatureIdProto $featureId)
-    {
-    }
-    /**
-     * @return FeatureIdProto
-     */
-    public function getFeatureId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setFeatureType($featureType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFeatureType()
-    {
-    }
-    public function setPositionPrecisionMeters($positionPrecisionMeters)
-    {
-    }
-    public function getPositionPrecisionMeters()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setQueryString($queryString)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQueryString()
+    class Google_Service_CivicInfo_GeocodingSummary extends \Google\Service\CivicInfo\GeocodingSummary
     {
     }
 }

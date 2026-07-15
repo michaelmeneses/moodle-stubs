@@ -8,6 +8,8 @@
  */
 namespace customfield_number;
 
+use context;
+use MoodleQuickForm;
 /**
  * Class provider_base
  *

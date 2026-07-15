@@ -21,105 +21,114 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Games;
-
-class PlayerExperienceInfo extends \Google\Model
-{
-    /**
-     * The current number of experience points for the player.
-     *
-     * @var string
-     */
-    public $currentExperiencePoints;
-    protected $currentLevelType = PlayerLevel::class;
-    protected $currentLevelDataType = '';
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#playerExperienceInfo`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The timestamp when the player was leveled up, in millis since Unix epoch
-     * UTC.
-     *
-     * @var string
-     */
-    public $lastLevelUpTimestampMillis;
-    protected $nextLevelType = PlayerLevel::class;
-    protected $nextLevelDataType = '';
-    /**
-     * The current number of experience points for the player.
-     *
-     * @param string $currentExperiencePoints
-     */
-    public function setCurrentExperiencePoints($currentExperiencePoints)
+namespace Google\Service\Games {
+    class PlayerExperienceInfo extends \Google\Model
     {
+        /**
+         * The current number of experience points for the player.
+         *
+         * @var string
+         */
+        public $currentExperiencePoints;
+        protected $currentLevelType = PlayerLevel::class;
+        protected $currentLevelDataType = '';
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#playerExperienceInfo`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The timestamp when the player was leveled up, in millis since Unix epoch
+         * UTC.
+         *
+         * @var string
+         */
+        public $lastLevelUpTimestampMillis;
+        protected $nextLevelType = PlayerLevel::class;
+        protected $nextLevelDataType = '';
+        /**
+         * The current number of experience points for the player.
+         *
+         * @param string $currentExperiencePoints
+         */
+        public function setCurrentExperiencePoints($currentExperiencePoints)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCurrentExperiencePoints()
+        {
+        }
+        /**
+         * The current level of the player.
+         *
+         * @param PlayerLevel $currentLevel
+         */
+        public function setCurrentLevel(PlayerLevel $currentLevel)
+        {
+        }
+        /**
+         * @return PlayerLevel
+         */
+        public function getCurrentLevel()
+        {
+        }
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#playerExperienceInfo`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The timestamp when the player was leveled up, in millis since Unix epoch
+         * UTC.
+         *
+         * @param string $lastLevelUpTimestampMillis
+         */
+        public function setLastLevelUpTimestampMillis($lastLevelUpTimestampMillis)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastLevelUpTimestampMillis()
+        {
+        }
+        /**
+         * The next level of the player. If the current level is the maximum level,
+         * this should be same as the current level.
+         *
+         * @param PlayerLevel $nextLevel
+         */
+        public function setNextLevel(PlayerLevel $nextLevel)
+        {
+        }
+        /**
+         * @return PlayerLevel
+         */
+        public function getNextLevel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Games\PlayerExperienceInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCurrentExperiencePoints()
-    {
-    }
-    /**
-     * The current level of the player.
-     *
-     * @param PlayerLevel $currentLevel
-     */
-    public function setCurrentLevel(PlayerLevel $currentLevel)
-    {
-    }
-    /**
-     * @return PlayerLevel
-     */
-    public function getCurrentLevel()
-    {
-    }
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#playerExperienceInfo`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The timestamp when the player was leveled up, in millis since Unix epoch
-     * UTC.
-     *
-     * @param string $lastLevelUpTimestampMillis
-     */
-    public function setLastLevelUpTimestampMillis($lastLevelUpTimestampMillis)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastLevelUpTimestampMillis()
-    {
-    }
-    /**
-     * The next level of the player. If the current level is the maximum level,
-     * this should be same as the current level.
-     *
-     * @param PlayerLevel $nextLevel
-     */
-    public function setNextLevel(PlayerLevel $nextLevel)
-    {
-    }
-    /**
-     * @return PlayerLevel
-     */
-    public function getNextLevel()
+    class Google_Service_Games_PlayerExperienceInfo extends \Google\Service\Games\PlayerExperienceInfo
     {
     }
 }

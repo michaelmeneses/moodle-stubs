@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementVersionsV1ChromeOsUserSession extends \Google\Model
-{
-    protected $chromeOsDeviceType = GoogleChromeManagementVersionsV1ChromeOsDevice::class;
-    protected $chromeOsDeviceDataType = '';
-    /**
-     * Output only. The unique Directory API ID of the user.
-     *
-     * @var string
-     */
-    public $userDirectoryApiId;
-    /**
-     * Output only. The primary e-mail address of the user.
-     *
-     * @var string
-     */
-    public $userPrimaryEmail;
-    /**
-     * Output only. This field contains information about the ChromeOS device that
-     * the user session is running on. It is only set if the user is affiliated,
-     * i.e., if the user is managed by the same organization that manages the
-     * ChromeOS device.
-     *
-     * @param GoogleChromeManagementVersionsV1ChromeOsDevice $chromeOsDevice
-     */
-    public function setChromeOsDevice(GoogleChromeManagementVersionsV1ChromeOsDevice $chromeOsDevice)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementVersionsV1ChromeOsUserSession extends \Google\Model
     {
+        protected $chromeOsDeviceType = GoogleChromeManagementVersionsV1ChromeOsDevice::class;
+        protected $chromeOsDeviceDataType = '';
+        /**
+         * Output only. The unique Directory API ID of the user.
+         *
+         * @var string
+         */
+        public $userDirectoryApiId;
+        /**
+         * Output only. The primary e-mail address of the user.
+         *
+         * @var string
+         */
+        public $userPrimaryEmail;
+        /**
+         * Output only. This field contains information about the ChromeOS device that
+         * the user session is running on. It is only set if the user is affiliated,
+         * i.e., if the user is managed by the same organization that manages the
+         * ChromeOS device.
+         *
+         * @param GoogleChromeManagementVersionsV1ChromeOsDevice $chromeOsDevice
+         */
+        public function setChromeOsDevice(GoogleChromeManagementVersionsV1ChromeOsDevice $chromeOsDevice)
+        {
+        }
+        /**
+         * @return GoogleChromeManagementVersionsV1ChromeOsDevice
+         */
+        public function getChromeOsDevice()
+        {
+        }
+        /**
+         * Output only. The unique Directory API ID of the user.
+         *
+         * @param string $userDirectoryApiId
+         */
+        public function setUserDirectoryApiId($userDirectoryApiId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserDirectoryApiId()
+        {
+        }
+        /**
+         * Output only. The primary e-mail address of the user.
+         *
+         * @param string $userPrimaryEmail
+         */
+        public function setUserPrimaryEmail($userPrimaryEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserPrimaryEmail()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleChromeManagementVersionsV1ChromeOsDevice
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1ChromeOsUserSession registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChromeOsDevice()
-    {
-    }
-    /**
-     * Output only. The unique Directory API ID of the user.
-     *
-     * @param string $userDirectoryApiId
-     */
-    public function setUserDirectoryApiId($userDirectoryApiId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserDirectoryApiId()
-    {
-    }
-    /**
-     * Output only. The primary e-mail address of the user.
-     *
-     * @param string $userPrimaryEmail
-     */
-    public function setUserPrimaryEmail($userPrimaryEmail)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserPrimaryEmail()
+    class Google_Service_ChromeManagement_GoogleChromeManagementVersionsV1ChromeOsUserSession extends \Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1ChromeOsUserSession
     {
     }
 }

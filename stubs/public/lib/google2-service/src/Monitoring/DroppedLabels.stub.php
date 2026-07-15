@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class DroppedLabels extends \Google\Model
-{
-    /**
-     * Map from label to its value, for all labels dropped in any aggregation.
-     *
-     * @var string[]
-     */
-    public $label;
-    /**
-     * Map from label to its value, for all labels dropped in any aggregation.
-     *
-     * @param string[] $label
-     */
-    public function setLabel($label)
+namespace Google\Service\Monitoring {
+    class DroppedLabels extends \Google\Model
     {
+        /**
+         * Map from label to its value, for all labels dropped in any aggregation.
+         *
+         * @var string[]
+         */
+        public $label;
+        /**
+         * Map from label to its value, for all labels dropped in any aggregation.
+         *
+         * @param string[] $label
+         */
+        public function setLabel($label)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Monitoring\DroppedLabels registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLabel()
+    class Google_Service_Monitoring_DroppedLabels extends \Google\Service\Monitoring\DroppedLabels
     {
     }
 }

@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class NodeTemplatesScopedList extends \Google\Collection
-{
-    protected $collection_key = 'nodeTemplates';
-    protected $nodeTemplatesType = NodeTemplate::class;
-    protected $nodeTemplatesDataType = 'array';
-    protected $warningType = NodeTemplatesScopedListWarning::class;
-    protected $warningDataType = '';
-    /**
-     * [Output Only] A list of node templates contained in this scope.
-     *
-     * @param NodeTemplate[] $nodeTemplates
-     */
-    public function setNodeTemplates($nodeTemplates)
+namespace Google\Service\Compute {
+    class NodeTemplatesScopedList extends \Google\Collection
     {
+        protected $collection_key = 'nodeTemplates';
+        protected $nodeTemplatesType = NodeTemplate::class;
+        protected $nodeTemplatesDataType = 'array';
+        protected $warningType = NodeTemplatesScopedListWarning::class;
+        protected $warningDataType = '';
+        /**
+         * [Output Only] A list of node templates contained in this scope.
+         *
+         * @param NodeTemplate[] $nodeTemplates
+         */
+        public function setNodeTemplates($nodeTemplates)
+        {
+        }
+        /**
+         * @return NodeTemplate[]
+         */
+        public function getNodeTemplates()
+        {
+        }
+        /**
+         * [Output Only] An informational warning that appears when the node templates
+         * list is empty.
+         *
+         * @param NodeTemplatesScopedListWarning $warning
+         */
+        public function setWarning(NodeTemplatesScopedListWarning $warning)
+        {
+        }
+        /**
+         * @return NodeTemplatesScopedListWarning
+         */
+        public function getWarning()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return NodeTemplate[]
+     * Runtime class alias of \Google\Service\Compute\NodeTemplatesScopedList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNodeTemplates()
-    {
-    }
-    /**
-     * [Output Only] An informational warning that appears when the node templates
-     * list is empty.
-     *
-     * @param NodeTemplatesScopedListWarning $warning
-     */
-    public function setWarning(NodeTemplatesScopedListWarning $warning)
-    {
-    }
-    /**
-     * @return NodeTemplatesScopedListWarning
-     */
-    public function getWarning()
+    class Google_Service_Compute_NodeTemplatesScopedList extends \Google\Service\Compute\NodeTemplatesScopedList
     {
     }
 }

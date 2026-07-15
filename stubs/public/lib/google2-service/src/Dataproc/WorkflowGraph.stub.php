@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class WorkflowGraph extends \Google\Collection
-{
-    protected $collection_key = 'nodes';
-    protected $nodesType = WorkflowNode::class;
-    protected $nodesDataType = 'array';
-    /**
-     * Output only. The workflow nodes.
-     *
-     * @param WorkflowNode[] $nodes
-     */
-    public function setNodes($nodes)
+namespace Google\Service\Dataproc {
+    class WorkflowGraph extends \Google\Collection
     {
+        protected $collection_key = 'nodes';
+        protected $nodesType = WorkflowNode::class;
+        protected $nodesDataType = 'array';
+        /**
+         * Output only. The workflow nodes.
+         *
+         * @param WorkflowNode[] $nodes
+         */
+        public function setNodes($nodes)
+        {
+        }
+        /**
+         * @return WorkflowNode[]
+         */
+        public function getNodes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return WorkflowNode[]
+     * Runtime class alias of \Google\Service\Dataproc\WorkflowGraph registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNodes()
+    class Google_Service_Dataproc_WorkflowGraph extends \Google\Service\Dataproc\WorkflowGraph
     {
     }
 }

@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSTablesEvaluationMetrics extends \Google\Model
-{
-    protected $classificationMetricsType = XPSTablesClassificationMetrics::class;
-    protected $classificationMetricsDataType = '';
-    protected $regressionMetricsType = XPSTablesRegressionMetrics::class;
-    protected $regressionMetricsDataType = '';
-    /**
-     * Classification metrics.
-     *
-     * @param XPSTablesClassificationMetrics $classificationMetrics
-     */
-    public function setClassificationMetrics(XPSTablesClassificationMetrics $classificationMetrics)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSTablesEvaluationMetrics extends \Google\Model
     {
+        protected $classificationMetricsType = XPSTablesClassificationMetrics::class;
+        protected $classificationMetricsDataType = '';
+        protected $regressionMetricsType = XPSTablesRegressionMetrics::class;
+        protected $regressionMetricsDataType = '';
+        /**
+         * Classification metrics.
+         *
+         * @param XPSTablesClassificationMetrics $classificationMetrics
+         */
+        public function setClassificationMetrics(XPSTablesClassificationMetrics $classificationMetrics)
+        {
+        }
+        /**
+         * @return XPSTablesClassificationMetrics
+         */
+        public function getClassificationMetrics()
+        {
+        }
+        /**
+         * Regression metrics.
+         *
+         * @param XPSTablesRegressionMetrics $regressionMetrics
+         */
+        public function setRegressionMetrics(XPSTablesRegressionMetrics $regressionMetrics)
+        {
+        }
+        /**
+         * @return XPSTablesRegressionMetrics
+         */
+        public function getRegressionMetrics()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return XPSTablesClassificationMetrics
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSTablesEvaluationMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClassificationMetrics()
-    {
-    }
-    /**
-     * Regression metrics.
-     *
-     * @param XPSTablesRegressionMetrics $regressionMetrics
-     */
-    public function setRegressionMetrics(XPSTablesRegressionMetrics $regressionMetrics)
-    {
-    }
-    /**
-     * @return XPSTablesRegressionMetrics
-     */
-    public function getRegressionMetrics()
+    class Google_Service_CloudNaturalLanguage_XPSTablesEvaluationMetrics extends \Google\Service\CloudNaturalLanguage\XPSTablesEvaluationMetrics
     {
     }
 }

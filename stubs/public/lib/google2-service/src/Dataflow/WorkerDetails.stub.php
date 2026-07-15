@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class WorkerDetails extends \Google\Collection
-{
-    protected $collection_key = 'workItems';
-    protected $workItemsType = WorkItemDetails::class;
-    protected $workItemsDataType = 'array';
-    /**
-     * Name of this worker
-     *
-     * @var string
-     */
-    public $workerName;
-    /**
-     * Work items processed by this worker, sorted by time.
-     *
-     * @param WorkItemDetails[] $workItems
-     */
-    public function setWorkItems($workItems)
+namespace Google\Service\Dataflow {
+    class WorkerDetails extends \Google\Collection
     {
+        protected $collection_key = 'workItems';
+        protected $workItemsType = WorkItemDetails::class;
+        protected $workItemsDataType = 'array';
+        /**
+         * Name of this worker
+         *
+         * @var string
+         */
+        public $workerName;
+        /**
+         * Work items processed by this worker, sorted by time.
+         *
+         * @param WorkItemDetails[] $workItems
+         */
+        public function setWorkItems($workItems)
+        {
+        }
+        /**
+         * @return WorkItemDetails[]
+         */
+        public function getWorkItems()
+        {
+        }
+        /**
+         * Name of this worker
+         *
+         * @param string $workerName
+         */
+        public function setWorkerName($workerName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWorkerName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return WorkItemDetails[]
+     * Runtime class alias of \Google\Service\Dataflow\WorkerDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getWorkItems()
-    {
-    }
-    /**
-     * Name of this worker
-     *
-     * @param string $workerName
-     */
-    public function setWorkerName($workerName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWorkerName()
+    class Google_Service_Dataflow_WorkerDetails extends \Google\Service\Dataflow\WorkerDetails
     {
     }
 }

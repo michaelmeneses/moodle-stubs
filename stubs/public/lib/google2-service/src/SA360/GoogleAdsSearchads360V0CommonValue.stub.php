@@ -21,100 +21,109 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0CommonValue extends \Google\Model
-{
-    /**
-     * A boolean.
-     *
-     * @var bool
-     */
-    public $booleanValue;
-    /**
-     * A double.
-     *
-     * @var 
-     */
-    public $doubleValue;
-    /**
-     * A float.
-     *
-     * @var float
-     */
-    public $floatValue;
-    /**
-     * An int64.
-     *
-     * @var string
-     */
-    public $int64Value;
-    /**
-     * A string.
-     *
-     * @var string
-     */
-    public $stringValue;
-    /**
-     * A boolean.
-     *
-     * @param bool $booleanValue
-     */
-    public function setBooleanValue($booleanValue)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0CommonValue extends \Google\Model
     {
+        /**
+         * A boolean.
+         *
+         * @var bool
+         */
+        public $booleanValue;
+        /**
+         * A double.
+         *
+         * @var 
+         */
+        public $doubleValue;
+        /**
+         * A float.
+         *
+         * @var float
+         */
+        public $floatValue;
+        /**
+         * An int64.
+         *
+         * @var string
+         */
+        public $int64Value;
+        /**
+         * A string.
+         *
+         * @var string
+         */
+        public $stringValue;
+        /**
+         * A boolean.
+         *
+         * @param bool $booleanValue
+         */
+        public function setBooleanValue($booleanValue)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getBooleanValue()
+        {
+        }
+        public function setDoubleValue($doubleValue)
+        {
+        }
+        public function getDoubleValue()
+        {
+        }
+        /**
+         * A float.
+         *
+         * @param float $floatValue
+         */
+        public function setFloatValue($floatValue)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getFloatValue()
+        {
+        }
+        /**
+         * An int64.
+         *
+         * @param string $int64Value
+         */
+        public function setInt64Value($int64Value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInt64Value()
+        {
+        }
+        /**
+         * A string.
+         *
+         * @param string $stringValue
+         */
+        public function setStringValue($stringValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStringValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0CommonValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBooleanValue()
-    {
-    }
-    public function setDoubleValue($doubleValue)
-    {
-    }
-    public function getDoubleValue()
-    {
-    }
-    /**
-     * A float.
-     *
-     * @param float $floatValue
-     */
-    public function setFloatValue($floatValue)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getFloatValue()
-    {
-    }
-    /**
-     * An int64.
-     *
-     * @param string $int64Value
-     */
-    public function setInt64Value($int64Value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInt64Value()
-    {
-    }
-    /**
-     * A string.
-     *
-     * @param string $stringValue
-     */
-    public function setStringValue($stringValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStringValue()
+    class Google_Service_SA360_GoogleAdsSearchads360V0CommonValue extends \Google\Service\SA360\GoogleAdsSearchads360V0CommonValue
     {
     }
 }

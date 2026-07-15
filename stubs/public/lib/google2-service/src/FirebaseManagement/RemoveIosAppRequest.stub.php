@@ -21,102 +21,111 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseManagement;
-
-class RemoveIosAppRequest extends \Google\Model
-{
-    /**
-     * If set to true, and the App is not found, the request will succeed but no
-     * action will be taken on the server.
-     *
-     * @var bool
-     */
-    public $allowMissing;
-    /**
-     * Checksum provided in the IosApp resource. If provided, this checksum
-     * ensures that the client has an up-to-date value before proceeding.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * Determines whether to _immediately_ delete the IosApp. If set to true, the
-     * App is immediately deleted from the Project and cannot be undeleted (that
-     * is, restored to the Project). If not set, defaults to false, which means
-     * the App will be set to expire in 30 days. Within the 30 days, the App may
-     * be restored to the Project using UndeleteIosApp
-     *
-     * @var bool
-     */
-    public $immediate;
-    /**
-     * If set to true, the request is only validated. The App will _not_ be
-     * removed.
-     *
-     * @var bool
-     */
-    public $validateOnly;
-    /**
-     * If set to true, and the App is not found, the request will succeed but no
-     * action will be taken on the server.
-     *
-     * @param bool $allowMissing
-     */
-    public function setAllowMissing($allowMissing)
+namespace Google\Service\FirebaseManagement {
+    class RemoveIosAppRequest extends \Google\Model
     {
+        /**
+         * If set to true, and the App is not found, the request will succeed but no
+         * action will be taken on the server.
+         *
+         * @var bool
+         */
+        public $allowMissing;
+        /**
+         * Checksum provided in the IosApp resource. If provided, this checksum
+         * ensures that the client has an up-to-date value before proceeding.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * Determines whether to _immediately_ delete the IosApp. If set to true, the
+         * App is immediately deleted from the Project and cannot be undeleted (that
+         * is, restored to the Project). If not set, defaults to false, which means
+         * the App will be set to expire in 30 days. Within the 30 days, the App may
+         * be restored to the Project using UndeleteIosApp
+         *
+         * @var bool
+         */
+        public $immediate;
+        /**
+         * If set to true, the request is only validated. The App will _not_ be
+         * removed.
+         *
+         * @var bool
+         */
+        public $validateOnly;
+        /**
+         * If set to true, and the App is not found, the request will succeed but no
+         * action will be taken on the server.
+         *
+         * @param bool $allowMissing
+         */
+        public function setAllowMissing($allowMissing)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAllowMissing()
+        {
+        }
+        /**
+         * Checksum provided in the IosApp resource. If provided, this checksum
+         * ensures that the client has an up-to-date value before proceeding.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * Determines whether to _immediately_ delete the IosApp. If set to true, the
+         * App is immediately deleted from the Project and cannot be undeleted (that
+         * is, restored to the Project). If not set, defaults to false, which means
+         * the App will be set to expire in 30 days. Within the 30 days, the App may
+         * be restored to the Project using UndeleteIosApp
+         *
+         * @param bool $immediate
+         */
+        public function setImmediate($immediate)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getImmediate()
+        {
+        }
+        /**
+         * If set to true, the request is only validated. The App will _not_ be
+         * removed.
+         *
+         * @param bool $validateOnly
+         */
+        public function setValidateOnly($validateOnly)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getValidateOnly()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\FirebaseManagement\RemoveIosAppRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowMissing()
-    {
-    }
-    /**
-     * Checksum provided in the IosApp resource. If provided, this checksum
-     * ensures that the client has an up-to-date value before proceeding.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * Determines whether to _immediately_ delete the IosApp. If set to true, the
-     * App is immediately deleted from the Project and cannot be undeleted (that
-     * is, restored to the Project). If not set, defaults to false, which means
-     * the App will be set to expire in 30 days. Within the 30 days, the App may
-     * be restored to the Project using UndeleteIosApp
-     *
-     * @param bool $immediate
-     */
-    public function setImmediate($immediate)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getImmediate()
-    {
-    }
-    /**
-     * If set to true, the request is only validated. The App will _not_ be
-     * removed.
-     *
-     * @param bool $validateOnly
-     */
-    public function setValidateOnly($validateOnly)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getValidateOnly()
+    class Google_Service_FirebaseManagement_RemoveIosAppRequest extends \Google\Service\FirebaseManagement\RemoveIosAppRequest
     {
     }
 }

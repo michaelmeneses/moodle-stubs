@@ -21,31 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books\Resource;
-
-/**
- * The "notification" collection of methods.
- * Typical usage is:
- *  <code>
- *   $booksService = new Google\Service\Books(...);
- *   $notification = $booksService->notification;
- *  </code>
- */
-class Notification extends \Google\Service\Resource
-{
+namespace Google\Service\Books\Resource {
+    use Google\Service\Books\Notification as NotificationModel;
     /**
-     * Returns notification details for a given notification id. (notification.get)
-     *
-     * @param string $notificationId String to identify the notification.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string locale ISO-639-1 language and ISO-3166-1 country code. Ex:
-     * 'en_US'. Used for generating notification title and body.
-     * @opt_param string source String to identify the originator of this request.
-     * @return NotificationModel
-     * @throws \Google\Service\Exception
+     * The "notification" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $booksService = new Google\Service\Books(...);
+     *   $notification = $booksService->notification;
+     *  </code>
      */
-    public function get($notificationId, $optParams = [])
+    class Notification extends \Google\Service\Resource
+    {
+        /**
+         * Returns notification details for a given notification id. (notification.get)
+         *
+         * @param string $notificationId String to identify the notification.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string locale ISO-639-1 language and ISO-3166-1 country code. Ex:
+         * 'en_US'. Used for generating notification title and body.
+         * @opt_param string source String to identify the originator of this request.
+         * @return NotificationModel
+         * @throws \Google\Service\Exception
+         */
+        public function get($notificationId, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Books\Resource\Notification registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Books_Resource_Notification extends \Google\Service\Books\Resource\Notification
     {
     }
 }

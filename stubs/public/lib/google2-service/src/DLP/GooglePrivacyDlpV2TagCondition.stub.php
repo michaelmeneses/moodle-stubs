@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2TagCondition extends \Google\Model
-{
-    protected $sensitivityScoreType = GooglePrivacyDlpV2SensitivityScore::class;
-    protected $sensitivityScoreDataType = '';
-    protected $tagType = GooglePrivacyDlpV2TagValue::class;
-    protected $tagDataType = '';
-    /**
-     * Conditions attaching the tag to a resource on its profile having this
-     * sensitivity score.
-     *
-     * @param GooglePrivacyDlpV2SensitivityScore $sensitivityScore
-     */
-    public function setSensitivityScore(GooglePrivacyDlpV2SensitivityScore $sensitivityScore)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2TagCondition extends \Google\Model
     {
+        protected $sensitivityScoreType = GooglePrivacyDlpV2SensitivityScore::class;
+        protected $sensitivityScoreDataType = '';
+        protected $tagType = GooglePrivacyDlpV2TagValue::class;
+        protected $tagDataType = '';
+        /**
+         * Conditions attaching the tag to a resource on its profile having this
+         * sensitivity score.
+         *
+         * @param GooglePrivacyDlpV2SensitivityScore $sensitivityScore
+         */
+        public function setSensitivityScore(GooglePrivacyDlpV2SensitivityScore $sensitivityScore)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2SensitivityScore
+         */
+        public function getSensitivityScore()
+        {
+        }
+        /**
+         * The tag value to attach to resources.
+         *
+         * @param GooglePrivacyDlpV2TagValue $tag
+         */
+        public function setTag(GooglePrivacyDlpV2TagValue $tag)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2TagValue
+         */
+        public function getTag()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2SensitivityScore
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2TagCondition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSensitivityScore()
-    {
-    }
-    /**
-     * The tag value to attach to resources.
-     *
-     * @param GooglePrivacyDlpV2TagValue $tag
-     */
-    public function setTag(GooglePrivacyDlpV2TagValue $tag)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2TagValue
-     */
-    public function getTag()
+    class Google_Service_DLP_GooglePrivacyDlpV2TagCondition extends \Google\Service\DLP\GooglePrivacyDlpV2TagCondition
     {
     }
 }

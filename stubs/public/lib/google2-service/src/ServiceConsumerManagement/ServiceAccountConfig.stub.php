@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceConsumerManagement;
-
-class ServiceAccountConfig extends \Google\Collection
-{
-    protected $collection_key = 'tenantProjectRoles';
-    /**
-     * ID of the IAM service account to be created in tenant project. The email
-     * format of the service account is "@.iam.gserviceaccount.com". This account
-     * ID must be unique within tenant project and service producers have to
-     * guarantee it. The ID must be 6-30 characters long, and match the following
-     * regular expression: `[a-z]([-a-z0-9]*[a-z0-9])`.
-     *
-     * @var string
-     */
-    public $accountId;
-    /**
-     * Roles for the associated service account for the tenant project.
-     *
-     * @var string[]
-     */
-    public $tenantProjectRoles;
-    /**
-     * ID of the IAM service account to be created in tenant project. The email
-     * format of the service account is "@.iam.gserviceaccount.com". This account
-     * ID must be unique within tenant project and service producers have to
-     * guarantee it. The ID must be 6-30 characters long, and match the following
-     * regular expression: `[a-z]([-a-z0-9]*[a-z0-9])`.
-     *
-     * @param string $accountId
-     */
-    public function setAccountId($accountId)
+namespace Google\Service\ServiceConsumerManagement {
+    class ServiceAccountConfig extends \Google\Collection
     {
+        protected $collection_key = 'tenantProjectRoles';
+        /**
+         * ID of the IAM service account to be created in tenant project. The email
+         * format of the service account is "@.iam.gserviceaccount.com". This account
+         * ID must be unique within tenant project and service producers have to
+         * guarantee it. The ID must be 6-30 characters long, and match the following
+         * regular expression: `[a-z]([-a-z0-9]*[a-z0-9])`.
+         *
+         * @var string
+         */
+        public $accountId;
+        /**
+         * Roles for the associated service account for the tenant project.
+         *
+         * @var string[]
+         */
+        public $tenantProjectRoles;
+        /**
+         * ID of the IAM service account to be created in tenant project. The email
+         * format of the service account is "@.iam.gserviceaccount.com". This account
+         * ID must be unique within tenant project and service producers have to
+         * guarantee it. The ID must be 6-30 characters long, and match the following
+         * regular expression: `[a-z]([-a-z0-9]*[a-z0-9])`.
+         *
+         * @param string $accountId
+         */
+        public function setAccountId($accountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccountId()
+        {
+        }
+        /**
+         * Roles for the associated service account for the tenant project.
+         *
+         * @param string[] $tenantProjectRoles
+         */
+        public function setTenantProjectRoles($tenantProjectRoles)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTenantProjectRoles()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ServiceConsumerManagement\ServiceAccountConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountId()
-    {
-    }
-    /**
-     * Roles for the associated service account for the tenant project.
-     *
-     * @param string[] $tenantProjectRoles
-     */
-    public function setTenantProjectRoles($tenantProjectRoles)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTenantProjectRoles()
+    class Google_Service_ServiceConsumerManagement_ServiceAccountConfig extends \Google\Service\ServiceConsumerManagement\ServiceAccountConfig
     {
     }
 }

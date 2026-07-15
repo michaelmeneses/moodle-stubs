@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastore;
-
-class ReserveIdsRequest extends \Google\Collection
-{
-    protected $collection_key = 'keys';
-    /**
-     * The ID of the database against which to make the request. '(default)' is
-     * not allowed; please use empty string '' to refer the default database.
-     *
-     * @var string
-     */
-    public $databaseId;
-    protected $keysType = Key::class;
-    protected $keysDataType = 'array';
-    /**
-     * The ID of the database against which to make the request. '(default)' is
-     * not allowed; please use empty string '' to refer the default database.
-     *
-     * @param string $databaseId
-     */
-    public function setDatabaseId($databaseId)
+namespace Google\Service\Datastore {
+    class ReserveIdsRequest extends \Google\Collection
     {
+        protected $collection_key = 'keys';
+        /**
+         * The ID of the database against which to make the request. '(default)' is
+         * not allowed; please use empty string '' to refer the default database.
+         *
+         * @var string
+         */
+        public $databaseId;
+        protected $keysType = Key::class;
+        protected $keysDataType = 'array';
+        /**
+         * The ID of the database against which to make the request. '(default)' is
+         * not allowed; please use empty string '' to refer the default database.
+         *
+         * @param string $databaseId
+         */
+        public function setDatabaseId($databaseId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatabaseId()
+        {
+        }
+        /**
+         * Required. A list of keys with complete key paths whose numeric IDs should
+         * not be auto-allocated.
+         *
+         * @param Key[] $keys
+         */
+        public function setKeys($keys)
+        {
+        }
+        /**
+         * @return Key[]
+         */
+        public function getKeys()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Datastore\ReserveIdsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatabaseId()
-    {
-    }
-    /**
-     * Required. A list of keys with complete key paths whose numeric IDs should
-     * not be auto-allocated.
-     *
-     * @param Key[] $keys
-     */
-    public function setKeys($keys)
-    {
-    }
-    /**
-     * @return Key[]
-     */
-    public function getKeys()
+    class Google_Service_Datastore_ReserveIdsRequest extends \Google\Service\Datastore\ReserveIdsRequest
     {
     }
 }

@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveActivity;
-
-class FieldValueChange extends \Google\Model
-{
-    /**
-     * The human-readable display name for this field.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The ID of this field. Field IDs are unique within a Label.
-     *
-     * @var string
-     */
-    public $fieldId;
-    protected $newValueType = FieldValue::class;
-    protected $newValueDataType = '';
-    protected $oldValueType = FieldValue::class;
-    protected $oldValueDataType = '';
-    /**
-     * The human-readable display name for this field.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\DriveActivity {
+    class FieldValueChange extends \Google\Model
     {
+        /**
+         * The human-readable display name for this field.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The ID of this field. Field IDs are unique within a Label.
+         *
+         * @var string
+         */
+        public $fieldId;
+        protected $newValueType = FieldValue::class;
+        protected $newValueDataType = '';
+        protected $oldValueType = FieldValue::class;
+        protected $oldValueDataType = '';
+        /**
+         * The human-readable display name for this field.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The ID of this field. Field IDs are unique within a Label.
+         *
+         * @param string $fieldId
+         */
+        public function setFieldId($fieldId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFieldId()
+        {
+        }
+        /**
+         * The value that is now set on the field. If not present, the field was
+         * cleared. At least one of {old_value|new_value} is always set.
+         *
+         * @param FieldValue $newValue
+         */
+        public function setNewValue(FieldValue $newValue)
+        {
+        }
+        /**
+         * @return FieldValue
+         */
+        public function getNewValue()
+        {
+        }
+        /**
+         * The value that was previously set on the field. If not present, the field
+         * was newly set. At least one of {old_value|new_value} is always set.
+         *
+         * @param FieldValue $oldValue
+         */
+        public function setOldValue(FieldValue $oldValue)
+        {
+        }
+        /**
+         * @return FieldValue
+         */
+        public function getOldValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DriveActivity\FieldValueChange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The ID of this field. Field IDs are unique within a Label.
-     *
-     * @param string $fieldId
-     */
-    public function setFieldId($fieldId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFieldId()
-    {
-    }
-    /**
-     * The value that is now set on the field. If not present, the field was
-     * cleared. At least one of {old_value|new_value} is always set.
-     *
-     * @param FieldValue $newValue
-     */
-    public function setNewValue(FieldValue $newValue)
-    {
-    }
-    /**
-     * @return FieldValue
-     */
-    public function getNewValue()
-    {
-    }
-    /**
-     * The value that was previously set on the field. If not present, the field
-     * was newly set. At least one of {old_value|new_value} is always set.
-     *
-     * @param FieldValue $oldValue
-     */
-    public function setOldValue(FieldValue $oldValue)
-    {
-    }
-    /**
-     * @return FieldValue
-     */
-    public function getOldValue()
+    class Google_Service_DriveActivity_FieldValueChange extends \Google\Service\DriveActivity\FieldValueChange
     {
     }
 }

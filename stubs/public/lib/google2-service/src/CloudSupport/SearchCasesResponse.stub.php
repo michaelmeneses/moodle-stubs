@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSupport;
-
-class SearchCasesResponse extends \Google\Collection
-{
-    protected $collection_key = 'cases';
-    protected $casesType = CloudsupportCase::class;
-    protected $casesDataType = 'array';
-    /**
-     * A token to retrieve the next page of results. Set this in the `page_token`
-     * field of subsequent `cases.search` requests. If unspecified, there are no
-     * more results to retrieve.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of cases associated with the parent after any filters have been
-     * applied.
-     *
-     * @param CloudsupportCase[] $cases
-     */
-    public function setCases($cases)
+namespace Google\Service\CloudSupport {
+    class SearchCasesResponse extends \Google\Collection
     {
+        protected $collection_key = 'cases';
+        protected $casesType = CloudsupportCase::class;
+        protected $casesDataType = 'array';
+        /**
+         * A token to retrieve the next page of results. Set this in the `page_token`
+         * field of subsequent `cases.search` requests. If unspecified, there are no
+         * more results to retrieve.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of cases associated with the parent after any filters have been
+         * applied.
+         *
+         * @param CloudsupportCase[] $cases
+         */
+        public function setCases($cases)
+        {
+        }
+        /**
+         * @return CloudsupportCase[]
+         */
+        public function getCases()
+        {
+        }
+        /**
+         * A token to retrieve the next page of results. Set this in the `page_token`
+         * field of subsequent `cases.search` requests. If unspecified, there are no
+         * more results to retrieve.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CloudsupportCase[]
+     * Runtime class alias of \Google\Service\CloudSupport\SearchCasesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCases()
-    {
-    }
-    /**
-     * A token to retrieve the next page of results. Set this in the `page_token`
-     * field of subsequent `cases.search` requests. If unspecified, there are no
-     * more results to retrieve.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_CloudSupport_SearchCasesResponse extends \Google\Service\CloudSupport\SearchCasesResponse
     {
     }
 }

@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyerII;
-
-class AbsoluteDateRange extends \Google\Model
-{
-    protected $endDateType = Date::class;
-    protected $endDateDataType = '';
-    protected $startDateType = Date::class;
-    protected $startDateDataType = '';
-    /**
-     * The end date of the range (inclusive). Must be within the 30 days leading
-     * up to current date, and must be equal to or after start_date.
-     *
-     * @param Date $endDate
-     */
-    public function setEndDate(Date $endDate)
+namespace Google\Service\AdExchangeBuyerII {
+    class AbsoluteDateRange extends \Google\Model
     {
+        protected $endDateType = Date::class;
+        protected $endDateDataType = '';
+        protected $startDateType = Date::class;
+        protected $startDateDataType = '';
+        /**
+         * The end date of the range (inclusive). Must be within the 30 days leading
+         * up to current date, and must be equal to or after start_date.
+         *
+         * @param Date $endDate
+         */
+        public function setEndDate(Date $endDate)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getEndDate()
+        {
+        }
+        /**
+         * The start date of the range (inclusive). Must be within the 30 days leading
+         * up to current date, and must be equal to or before end_date.
+         *
+         * @param Date $startDate
+         */
+        public function setStartDate(Date $startDate)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getStartDate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Date
+     * Runtime class alias of \Google\Service\AdExchangeBuyerII\AbsoluteDateRange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndDate()
-    {
-    }
-    /**
-     * The start date of the range (inclusive). Must be within the 30 days leading
-     * up to current date, and must be equal to or before end_date.
-     *
-     * @param Date $startDate
-     */
-    public function setStartDate(Date $startDate)
-    {
-    }
-    /**
-     * @return Date
-     */
-    public function getStartDate()
+    class Google_Service_AdExchangeBuyerII_AbsoluteDateRange extends \Google\Service\AdExchangeBuyerII\AbsoluteDateRange
     {
     }
 }

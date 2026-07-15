@@ -21,94 +21,103 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0ResourcesCustomerAsset extends \Google\Model
-{
-    /**
-     * Not specified.
-     */
-    public const STATUS_UNSPECIFIED = 'UNSPECIFIED';
-    /**
-     * Used for return value only. Represents value unknown in this version.
-     */
-    public const STATUS_UNKNOWN = 'UNKNOWN';
-    /**
-     * Asset link is enabled.
-     */
-    public const STATUS_ENABLED = 'ENABLED';
-    /**
-     * Asset link has been removed.
-     */
-    public const STATUS_REMOVED = 'REMOVED';
-    /**
-     * Asset link is paused.
-     */
-    public const STATUS_PAUSED = 'PAUSED';
-    /**
-     * Required. Immutable. The asset which is linked to the customer.
-     *
-     * @var string
-     */
-    public $asset;
-    /**
-     * Immutable. The resource name of the customer asset. CustomerAsset resource
-     * names have the form:
-     * `customers/{customer_id}/customerAssets/{asset_id}~{field_type}`
-     *
-     * @var string
-     */
-    public $resourceName;
-    /**
-     * Status of the customer asset.
-     *
-     * @var string
-     */
-    public $status;
-    /**
-     * Required. Immutable. The asset which is linked to the customer.
-     *
-     * @param string $asset
-     */
-    public function setAsset($asset)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0ResourcesCustomerAsset extends \Google\Model
     {
+        /**
+         * Not specified.
+         */
+        public const STATUS_UNSPECIFIED = 'UNSPECIFIED';
+        /**
+         * Used for return value only. Represents value unknown in this version.
+         */
+        public const STATUS_UNKNOWN = 'UNKNOWN';
+        /**
+         * Asset link is enabled.
+         */
+        public const STATUS_ENABLED = 'ENABLED';
+        /**
+         * Asset link has been removed.
+         */
+        public const STATUS_REMOVED = 'REMOVED';
+        /**
+         * Asset link is paused.
+         */
+        public const STATUS_PAUSED = 'PAUSED';
+        /**
+         * Required. Immutable. The asset which is linked to the customer.
+         *
+         * @var string
+         */
+        public $asset;
+        /**
+         * Immutable. The resource name of the customer asset. CustomerAsset resource
+         * names have the form:
+         * `customers/{customer_id}/customerAssets/{asset_id}~{field_type}`
+         *
+         * @var string
+         */
+        public $resourceName;
+        /**
+         * Status of the customer asset.
+         *
+         * @var string
+         */
+        public $status;
+        /**
+         * Required. Immutable. The asset which is linked to the customer.
+         *
+         * @param string $asset
+         */
+        public function setAsset($asset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAsset()
+        {
+        }
+        /**
+         * Immutable. The resource name of the customer asset. CustomerAsset resource
+         * names have the form:
+         * `customers/{customer_id}/customerAssets/{asset_id}~{field_type}`
+         *
+         * @param string $resourceName
+         */
+        public function setResourceName($resourceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceName()
+        {
+        }
+        /**
+         * Status of the customer asset.
+         *
+         * Accepted values: UNSPECIFIED, UNKNOWN, ENABLED, REMOVED, PAUSED
+         *
+         * @param self::STATUS_* $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return self::STATUS_*
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0ResourcesCustomerAsset registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAsset()
-    {
-    }
-    /**
-     * Immutable. The resource name of the customer asset. CustomerAsset resource
-     * names have the form:
-     * `customers/{customer_id}/customerAssets/{asset_id}~{field_type}`
-     *
-     * @param string $resourceName
-     */
-    public function setResourceName($resourceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceName()
-    {
-    }
-    /**
-     * Status of the customer asset.
-     *
-     * Accepted values: UNSPECIFIED, UNKNOWN, ENABLED, REMOVED, PAUSED
-     *
-     * @param self::STATUS_* $status
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return self::STATUS_*
-     */
-    public function getStatus()
+    class Google_Service_SA360_GoogleAdsSearchads360V0ResourcesCustomerAsset extends \Google\Service\SA360\GoogleAdsSearchads360V0ResourcesCustomerAsset
     {
     }
 }

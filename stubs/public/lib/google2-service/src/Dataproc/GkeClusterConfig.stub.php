@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class GkeClusterConfig extends \Google\Collection
-{
-    protected $collection_key = 'nodePoolTarget';
-    /**
-     * Optional. A target GKE cluster to deploy to. It must be in the same project
-     * and region as the Dataproc cluster (the GKE cluster can be zonal or
-     * regional). Format:
-     * 'projects/{project}/locations/{location}/clusters/{cluster_id}'
-     *
-     * @var string
-     */
-    public $gkeClusterTarget;
-    protected $namespacedGkeDeploymentTargetType = NamespacedGkeDeploymentTarget::class;
-    protected $namespacedGkeDeploymentTargetDataType = '';
-    protected $nodePoolTargetType = GkeNodePoolTarget::class;
-    protected $nodePoolTargetDataType = 'array';
-    /**
-     * Optional. A target GKE cluster to deploy to. It must be in the same project
-     * and region as the Dataproc cluster (the GKE cluster can be zonal or
-     * regional). Format:
-     * 'projects/{project}/locations/{location}/clusters/{cluster_id}'
-     *
-     * @param string $gkeClusterTarget
-     */
-    public function setGkeClusterTarget($gkeClusterTarget)
+namespace Google\Service\Dataproc {
+    class GkeClusterConfig extends \Google\Collection
     {
+        protected $collection_key = 'nodePoolTarget';
+        /**
+         * Optional. A target GKE cluster to deploy to. It must be in the same project
+         * and region as the Dataproc cluster (the GKE cluster can be zonal or
+         * regional). Format:
+         * 'projects/{project}/locations/{location}/clusters/{cluster_id}'
+         *
+         * @var string
+         */
+        public $gkeClusterTarget;
+        protected $namespacedGkeDeploymentTargetType = NamespacedGkeDeploymentTarget::class;
+        protected $namespacedGkeDeploymentTargetDataType = '';
+        protected $nodePoolTargetType = GkeNodePoolTarget::class;
+        protected $nodePoolTargetDataType = 'array';
+        /**
+         * Optional. A target GKE cluster to deploy to. It must be in the same project
+         * and region as the Dataproc cluster (the GKE cluster can be zonal or
+         * regional). Format:
+         * 'projects/{project}/locations/{location}/clusters/{cluster_id}'
+         *
+         * @param string $gkeClusterTarget
+         */
+        public function setGkeClusterTarget($gkeClusterTarget)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGkeClusterTarget()
+        {
+        }
+        /**
+         * Optional. Deprecated. Use gkeClusterTarget. Used only for the deprecated
+         * beta. A target for the deployment.
+         *
+         * @deprecated
+         * @param NamespacedGkeDeploymentTarget $namespacedGkeDeploymentTarget
+         */
+        public function setNamespacedGkeDeploymentTarget(NamespacedGkeDeploymentTarget $namespacedGkeDeploymentTarget)
+        {
+        }
+        /**
+         * @deprecated
+         * @return NamespacedGkeDeploymentTarget
+         */
+        public function getNamespacedGkeDeploymentTarget()
+        {
+        }
+        /**
+         * Optional. GKE node pools where workloads will be scheduled. At least one
+         * node pool must be assigned the DEFAULT GkeNodePoolTarget.Role. If a
+         * GkeNodePoolTarget is not specified, Dataproc constructs a DEFAULT
+         * GkeNodePoolTarget. Each role can be given to only one GkeNodePoolTarget.
+         * All node pools must have the same location settings.
+         *
+         * @param GkeNodePoolTarget[] $nodePoolTarget
+         */
+        public function setNodePoolTarget($nodePoolTarget)
+        {
+        }
+        /**
+         * @return GkeNodePoolTarget[]
+         */
+        public function getNodePoolTarget()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\GkeClusterConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGkeClusterTarget()
-    {
-    }
-    /**
-     * Optional. Deprecated. Use gkeClusterTarget. Used only for the deprecated
-     * beta. A target for the deployment.
-     *
-     * @deprecated
-     * @param NamespacedGkeDeploymentTarget $namespacedGkeDeploymentTarget
-     */
-    public function setNamespacedGkeDeploymentTarget(NamespacedGkeDeploymentTarget $namespacedGkeDeploymentTarget)
-    {
-    }
-    /**
-     * @deprecated
-     * @return NamespacedGkeDeploymentTarget
-     */
-    public function getNamespacedGkeDeploymentTarget()
-    {
-    }
-    /**
-     * Optional. GKE node pools where workloads will be scheduled. At least one
-     * node pool must be assigned the DEFAULT GkeNodePoolTarget.Role. If a
-     * GkeNodePoolTarget is not specified, Dataproc constructs a DEFAULT
-     * GkeNodePoolTarget. Each role can be given to only one GkeNodePoolTarget.
-     * All node pools must have the same location settings.
-     *
-     * @param GkeNodePoolTarget[] $nodePoolTarget
-     */
-    public function setNodePoolTarget($nodePoolTarget)
-    {
-    }
-    /**
-     * @return GkeNodePoolTarget[]
-     */
-    public function getNodePoolTarget()
+    class Google_Service_Dataproc_GkeClusterConfig extends \Google\Service\Dataproc\GkeClusterConfig
     {
     }
 }

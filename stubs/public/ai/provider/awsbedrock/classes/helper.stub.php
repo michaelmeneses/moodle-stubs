@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace aiprovider_awsbedrock;
 
+use aiprovider_awsbedrock\model_definition;
+use core_ai\aimodel\base;
 /**
  * Helper class for the AWS Bedrock provider.
  *

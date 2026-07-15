@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudMachineLearningEngine;
-
-class GoogleCloudMlV1Location extends \Google\Collection
-{
-    protected $collection_key = 'capabilities';
-    protected $capabilitiesType = GoogleCloudMlV1Capability::class;
-    protected $capabilitiesDataType = 'array';
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * Capabilities available in the location.
-     *
-     * @param GoogleCloudMlV1Capability[] $capabilities
-     */
-    public function setCapabilities($capabilities)
+namespace Google\Service\CloudMachineLearningEngine {
+    class GoogleCloudMlV1Location extends \Google\Collection
     {
+        protected $collection_key = 'capabilities';
+        protected $capabilitiesType = GoogleCloudMlV1Capability::class;
+        protected $capabilitiesDataType = 'array';
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * Capabilities available in the location.
+         *
+         * @param GoogleCloudMlV1Capability[] $capabilities
+         */
+        public function setCapabilities($capabilities)
+        {
+        }
+        /**
+         * @return GoogleCloudMlV1Capability[]
+         */
+        public function getCapabilities()
+        {
+        }
+        /**
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudMlV1Capability[]
+     * Runtime class alias of \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1Location registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCapabilities()
-    {
-    }
-    /**
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1Location extends \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1Location
     {
     }
 }

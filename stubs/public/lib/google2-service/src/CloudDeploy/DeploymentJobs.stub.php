@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class DeploymentJobs extends \Google\Model
-{
-    protected $deployJobType = Job::class;
-    protected $deployJobDataType = '';
-    protected $postdeployJobType = Job::class;
-    protected $postdeployJobDataType = '';
-    protected $predeployJobType = Job::class;
-    protected $predeployJobDataType = '';
-    protected $verifyJobType = Job::class;
-    protected $verifyJobDataType = '';
-    /**
-     * Output only. The deploy Job. This is the deploy job in the phase.
-     *
-     * @param Job $deployJob
-     */
-    public function setDeployJob(Job $deployJob)
+namespace Google\Service\CloudDeploy {
+    class DeploymentJobs extends \Google\Model
     {
+        protected $deployJobType = Job::class;
+        protected $deployJobDataType = '';
+        protected $postdeployJobType = Job::class;
+        protected $postdeployJobDataType = '';
+        protected $predeployJobType = Job::class;
+        protected $predeployJobDataType = '';
+        protected $verifyJobType = Job::class;
+        protected $verifyJobDataType = '';
+        /**
+         * Output only. The deploy Job. This is the deploy job in the phase.
+         *
+         * @param Job $deployJob
+         */
+        public function setDeployJob(Job $deployJob)
+        {
+        }
+        /**
+         * @return Job
+         */
+        public function getDeployJob()
+        {
+        }
+        /**
+         * Output only. The postdeploy Job, which is the last job on the phase.
+         *
+         * @param Job $postdeployJob
+         */
+        public function setPostdeployJob(Job $postdeployJob)
+        {
+        }
+        /**
+         * @return Job
+         */
+        public function getPostdeployJob()
+        {
+        }
+        /**
+         * Output only. The predeploy Job, which is the first job on the phase.
+         *
+         * @param Job $predeployJob
+         */
+        public function setPredeployJob(Job $predeployJob)
+        {
+        }
+        /**
+         * @return Job
+         */
+        public function getPredeployJob()
+        {
+        }
+        /**
+         * Output only. The verify Job. Runs after a deploy if the deploy succeeds.
+         *
+         * @param Job $verifyJob
+         */
+        public function setVerifyJob(Job $verifyJob)
+        {
+        }
+        /**
+         * @return Job
+         */
+        public function getVerifyJob()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Job
+     * Runtime class alias of \Google\Service\CloudDeploy\DeploymentJobs registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeployJob()
-    {
-    }
-    /**
-     * Output only. The postdeploy Job, which is the last job on the phase.
-     *
-     * @param Job $postdeployJob
-     */
-    public function setPostdeployJob(Job $postdeployJob)
-    {
-    }
-    /**
-     * @return Job
-     */
-    public function getPostdeployJob()
-    {
-    }
-    /**
-     * Output only. The predeploy Job, which is the first job on the phase.
-     *
-     * @param Job $predeployJob
-     */
-    public function setPredeployJob(Job $predeployJob)
-    {
-    }
-    /**
-     * @return Job
-     */
-    public function getPredeployJob()
-    {
-    }
-    /**
-     * Output only. The verify Job. Runs after a deploy if the deploy succeeds.
-     *
-     * @param Job $verifyJob
-     */
-    public function setVerifyJob(Job $verifyJob)
-    {
-    }
-    /**
-     * @return Job
-     */
-    public function getVerifyJob()
+    class Google_Service_CloudDeploy_DeploymentJobs extends \Google\Service\CloudDeploy\DeploymentJobs
     {
     }
 }

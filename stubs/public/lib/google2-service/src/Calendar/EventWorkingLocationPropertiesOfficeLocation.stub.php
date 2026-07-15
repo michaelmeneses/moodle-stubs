@@ -21,114 +21,123 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Calendar;
-
-class EventWorkingLocationPropertiesOfficeLocation extends \Google\Model
-{
-    /**
-     * An optional building identifier. This should reference a building ID in the
-     * organization's Resources database.
-     *
-     * @var string
-     */
-    public $buildingId;
-    /**
-     * An optional desk identifier.
-     *
-     * @var string
-     */
-    public $deskId;
-    /**
-     * An optional floor identifier.
-     *
-     * @var string
-     */
-    public $floorId;
-    /**
-     * An optional floor section identifier.
-     *
-     * @var string
-     */
-    public $floorSectionId;
-    /**
-     * The office name that's displayed in Calendar Web and Mobile clients. We
-     * recommend you reference a building name in the organization's Resources
-     * database.
-     *
-     * @var string
-     */
-    public $label;
-    /**
-     * An optional building identifier. This should reference a building ID in the
-     * organization's Resources database.
-     *
-     * @param string $buildingId
-     */
-    public function setBuildingId($buildingId)
+namespace Google\Service\Calendar {
+    class EventWorkingLocationPropertiesOfficeLocation extends \Google\Model
     {
+        /**
+         * An optional building identifier. This should reference a building ID in the
+         * organization's Resources database.
+         *
+         * @var string
+         */
+        public $buildingId;
+        /**
+         * An optional desk identifier.
+         *
+         * @var string
+         */
+        public $deskId;
+        /**
+         * An optional floor identifier.
+         *
+         * @var string
+         */
+        public $floorId;
+        /**
+         * An optional floor section identifier.
+         *
+         * @var string
+         */
+        public $floorSectionId;
+        /**
+         * The office name that's displayed in Calendar Web and Mobile clients. We
+         * recommend you reference a building name in the organization's Resources
+         * database.
+         *
+         * @var string
+         */
+        public $label;
+        /**
+         * An optional building identifier. This should reference a building ID in the
+         * organization's Resources database.
+         *
+         * @param string $buildingId
+         */
+        public function setBuildingId($buildingId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBuildingId()
+        {
+        }
+        /**
+         * An optional desk identifier.
+         *
+         * @param string $deskId
+         */
+        public function setDeskId($deskId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeskId()
+        {
+        }
+        /**
+         * An optional floor identifier.
+         *
+         * @param string $floorId
+         */
+        public function setFloorId($floorId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFloorId()
+        {
+        }
+        /**
+         * An optional floor section identifier.
+         *
+         * @param string $floorSectionId
+         */
+        public function setFloorSectionId($floorSectionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFloorSectionId()
+        {
+        }
+        /**
+         * The office name that's displayed in Calendar Web and Mobile clients. We
+         * recommend you reference a building name in the organization's Resources
+         * database.
+         *
+         * @param string $label
+         */
+        public function setLabel($label)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLabel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Calendar\EventWorkingLocationPropertiesOfficeLocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBuildingId()
-    {
-    }
-    /**
-     * An optional desk identifier.
-     *
-     * @param string $deskId
-     */
-    public function setDeskId($deskId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeskId()
-    {
-    }
-    /**
-     * An optional floor identifier.
-     *
-     * @param string $floorId
-     */
-    public function setFloorId($floorId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFloorId()
-    {
-    }
-    /**
-     * An optional floor section identifier.
-     *
-     * @param string $floorSectionId
-     */
-    public function setFloorSectionId($floorSectionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFloorSectionId()
-    {
-    }
-    /**
-     * The office name that's displayed in Calendar Web and Mobile clients. We
-     * recommend you reference a building name in the organization's Resources
-     * database.
-     *
-     * @param string $label
-     */
-    public function setLabel($label)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLabel()
+    class Google_Service_Calendar_EventWorkingLocationPropertiesOfficeLocation extends \Google\Service\Calendar\EventWorkingLocationPropertiesOfficeLocation
     {
     }
 }

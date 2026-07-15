@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Eventarc;
-
-class GoogleCloudEventarcV1PipelineDestinationAuthenticationConfigOidcToken extends \Google\Model
-{
-    /**
-     * Optional. Audience to be used to generate the OIDC Token. The audience
-     * claim identifies the recipient that the JWT is intended for. If
-     * unspecified, the destination URI will be used.
-     *
-     * @var string
-     */
-    public $audience;
-    /**
-     * Required. Service account email used to generate the OIDC Token. The
-     * principal who calls this API must have iam.serviceAccounts.actAs permission
-     * in the service account. See
-     * https://cloud.google.com/iam/docs/understanding-service-accounts for more
-     * information. Eventarc service agents must have
-     * roles/roles/iam.serviceAccountTokenCreator role to allow the Pipeline to
-     * create OpenID tokens for authenticated requests.
-     *
-     * @var string
-     */
-    public $serviceAccount;
-    /**
-     * Optional. Audience to be used to generate the OIDC Token. The audience
-     * claim identifies the recipient that the JWT is intended for. If
-     * unspecified, the destination URI will be used.
-     *
-     * @param string $audience
-     */
-    public function setAudience($audience)
+namespace Google\Service\Eventarc {
+    class GoogleCloudEventarcV1PipelineDestinationAuthenticationConfigOidcToken extends \Google\Model
     {
+        /**
+         * Optional. Audience to be used to generate the OIDC Token. The audience
+         * claim identifies the recipient that the JWT is intended for. If
+         * unspecified, the destination URI will be used.
+         *
+         * @var string
+         */
+        public $audience;
+        /**
+         * Required. Service account email used to generate the OIDC Token. The
+         * principal who calls this API must have iam.serviceAccounts.actAs permission
+         * in the service account. See
+         * https://cloud.google.com/iam/docs/understanding-service-accounts for more
+         * information. Eventarc service agents must have
+         * roles/roles/iam.serviceAccountTokenCreator role to allow the Pipeline to
+         * create OpenID tokens for authenticated requests.
+         *
+         * @var string
+         */
+        public $serviceAccount;
+        /**
+         * Optional. Audience to be used to generate the OIDC Token. The audience
+         * claim identifies the recipient that the JWT is intended for. If
+         * unspecified, the destination URI will be used.
+         *
+         * @param string $audience
+         */
+        public function setAudience($audience)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAudience()
+        {
+        }
+        /**
+         * Required. Service account email used to generate the OIDC Token. The
+         * principal who calls this API must have iam.serviceAccounts.actAs permission
+         * in the service account. See
+         * https://cloud.google.com/iam/docs/understanding-service-accounts for more
+         * information. Eventarc service agents must have
+         * roles/roles/iam.serviceAccountTokenCreator role to allow the Pipeline to
+         * create OpenID tokens for authenticated requests.
+         *
+         * @param string $serviceAccount
+         */
+        public function setServiceAccount($serviceAccount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceAccount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Eventarc\GoogleCloudEventarcV1PipelineDestinationAuthenticationConfigOidcToken registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAudience()
-    {
-    }
-    /**
-     * Required. Service account email used to generate the OIDC Token. The
-     * principal who calls this API must have iam.serviceAccounts.actAs permission
-     * in the service account. See
-     * https://cloud.google.com/iam/docs/understanding-service-accounts for more
-     * information. Eventarc service agents must have
-     * roles/roles/iam.serviceAccountTokenCreator role to allow the Pipeline to
-     * create OpenID tokens for authenticated requests.
-     *
-     * @param string $serviceAccount
-     */
-    public function setServiceAccount($serviceAccount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceAccount()
+    class Google_Service_Eventarc_GoogleCloudEventarcV1PipelineDestinationAuthenticationConfigOidcToken extends \Google\Service\Eventarc\GoogleCloudEventarcV1PipelineDestinationAuthenticationConfigOidcToken
     {
     }
 }

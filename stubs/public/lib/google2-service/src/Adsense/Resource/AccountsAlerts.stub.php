@@ -21,34 +21,44 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Adsense\Resource;
-
-/**
- * The "alerts" collection of methods.
- * Typical usage is:
- *  <code>
- *   $adsenseService = new Google\Service\Adsense(...);
- *   $alerts = $adsenseService->accounts_alerts;
- *  </code>
- */
-class AccountsAlerts extends \Google\Service\Resource
-{
+namespace Google\Service\Adsense\Resource {
+    use Google\Service\Adsense\ListAlertsResponse;
     /**
-     * Lists all the alerts available in an account. (alerts.listAccountsAlerts)
-     *
-     * @param string $parent Required. The account which owns the collection of
-     * alerts. Format: accounts/{account}
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string languageCode The language to use for translating alert
-     * messages. If unspecified, this defaults to the user's display language. If
-     * the given language is not supported, alerts will be returned in English. The
-     * language is specified as an [IETF BCP-47 language
-     * code](https://en.wikipedia.org/wiki/IETF_language_tag).
-     * @return ListAlertsResponse
-     * @throws \Google\Service\Exception
+     * The "alerts" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $adsenseService = new Google\Service\Adsense(...);
+     *   $alerts = $adsenseService->accounts_alerts;
+     *  </code>
      */
-    public function listAccountsAlerts($parent, $optParams = [])
+    class AccountsAlerts extends \Google\Service\Resource
+    {
+        /**
+         * Lists all the alerts available in an account. (alerts.listAccountsAlerts)
+         *
+         * @param string $parent Required. The account which owns the collection of
+         * alerts. Format: accounts/{account}
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string languageCode The language to use for translating alert
+         * messages. If unspecified, this defaults to the user's display language. If
+         * the given language is not supported, alerts will be returned in English. The
+         * language is specified as an [IETF BCP-47 language
+         * code](https://en.wikipedia.org/wiki/IETF_language_tag).
+         * @return ListAlertsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listAccountsAlerts($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Adsense\Resource\AccountsAlerts registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Adsense_Resource_AccountsAlerts extends \Google\Service\Adsense\Resource\AccountsAlerts
     {
     }
 }

@@ -21,168 +21,177 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementV1CountDevicesPerReleaseChannelResponse extends \Google\Model
-{
-    /**
-     * Number of devices with beta release channel.
-     *
-     * @var string
-     */
-    public $betaChannelCount;
-    /**
-     * Number of devices with canary release channel.
-     *
-     * @var string
-     */
-    public $canaryChannelCount;
-    /**
-     * Number of devices with dev release channel.
-     *
-     * @var string
-     */
-    public $devChannelCount;
-    /**
-     * Number of devices with ltc release channel.
-     *
-     * @var string
-     */
-    public $ltcChannelCount;
-    /**
-     * Number of devices with lts release channel.
-     *
-     * @var string
-     */
-    public $ltsChannelCount;
-    /**
-     * Number of devices with stable release channel.
-     *
-     * @var string
-     */
-    public $stableChannelCount;
-    /**
-     * Number of devices with an unreported release channel.
-     *
-     * @var string
-     */
-    public $unreportedChannelCount;
-    /**
-     * Number of devices with unsupported release channel.
-     *
-     * @var string
-     */
-    public $unsupportedChannelCount;
-    /**
-     * Number of devices with beta release channel.
-     *
-     * @param string $betaChannelCount
-     */
-    public function setBetaChannelCount($betaChannelCount)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementV1CountDevicesPerReleaseChannelResponse extends \Google\Model
     {
+        /**
+         * Number of devices with beta release channel.
+         *
+         * @var string
+         */
+        public $betaChannelCount;
+        /**
+         * Number of devices with canary release channel.
+         *
+         * @var string
+         */
+        public $canaryChannelCount;
+        /**
+         * Number of devices with dev release channel.
+         *
+         * @var string
+         */
+        public $devChannelCount;
+        /**
+         * Number of devices with ltc release channel.
+         *
+         * @var string
+         */
+        public $ltcChannelCount;
+        /**
+         * Number of devices with lts release channel.
+         *
+         * @var string
+         */
+        public $ltsChannelCount;
+        /**
+         * Number of devices with stable release channel.
+         *
+         * @var string
+         */
+        public $stableChannelCount;
+        /**
+         * Number of devices with an unreported release channel.
+         *
+         * @var string
+         */
+        public $unreportedChannelCount;
+        /**
+         * Number of devices with unsupported release channel.
+         *
+         * @var string
+         */
+        public $unsupportedChannelCount;
+        /**
+         * Number of devices with beta release channel.
+         *
+         * @param string $betaChannelCount
+         */
+        public function setBetaChannelCount($betaChannelCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBetaChannelCount()
+        {
+        }
+        /**
+         * Number of devices with canary release channel.
+         *
+         * @param string $canaryChannelCount
+         */
+        public function setCanaryChannelCount($canaryChannelCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCanaryChannelCount()
+        {
+        }
+        /**
+         * Number of devices with dev release channel.
+         *
+         * @param string $devChannelCount
+         */
+        public function setDevChannelCount($devChannelCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDevChannelCount()
+        {
+        }
+        /**
+         * Number of devices with ltc release channel.
+         *
+         * @param string $ltcChannelCount
+         */
+        public function setLtcChannelCount($ltcChannelCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLtcChannelCount()
+        {
+        }
+        /**
+         * Number of devices with lts release channel.
+         *
+         * @param string $ltsChannelCount
+         */
+        public function setLtsChannelCount($ltsChannelCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLtsChannelCount()
+        {
+        }
+        /**
+         * Number of devices with stable release channel.
+         *
+         * @param string $stableChannelCount
+         */
+        public function setStableChannelCount($stableChannelCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStableChannelCount()
+        {
+        }
+        /**
+         * Number of devices with an unreported release channel.
+         *
+         * @param string $unreportedChannelCount
+         */
+        public function setUnreportedChannelCount($unreportedChannelCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUnreportedChannelCount()
+        {
+        }
+        /**
+         * Number of devices with unsupported release channel.
+         *
+         * @param string $unsupportedChannelCount
+         */
+        public function setUnsupportedChannelCount($unsupportedChannelCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUnsupportedChannelCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementV1CountDevicesPerReleaseChannelResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBetaChannelCount()
-    {
-    }
-    /**
-     * Number of devices with canary release channel.
-     *
-     * @param string $canaryChannelCount
-     */
-    public function setCanaryChannelCount($canaryChannelCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCanaryChannelCount()
-    {
-    }
-    /**
-     * Number of devices with dev release channel.
-     *
-     * @param string $devChannelCount
-     */
-    public function setDevChannelCount($devChannelCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDevChannelCount()
-    {
-    }
-    /**
-     * Number of devices with ltc release channel.
-     *
-     * @param string $ltcChannelCount
-     */
-    public function setLtcChannelCount($ltcChannelCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLtcChannelCount()
-    {
-    }
-    /**
-     * Number of devices with lts release channel.
-     *
-     * @param string $ltsChannelCount
-     */
-    public function setLtsChannelCount($ltsChannelCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLtsChannelCount()
-    {
-    }
-    /**
-     * Number of devices with stable release channel.
-     *
-     * @param string $stableChannelCount
-     */
-    public function setStableChannelCount($stableChannelCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStableChannelCount()
-    {
-    }
-    /**
-     * Number of devices with an unreported release channel.
-     *
-     * @param string $unreportedChannelCount
-     */
-    public function setUnreportedChannelCount($unreportedChannelCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUnreportedChannelCount()
-    {
-    }
-    /**
-     * Number of devices with unsupported release channel.
-     *
-     * @param string $unsupportedChannelCount
-     */
-    public function setUnsupportedChannelCount($unsupportedChannelCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUnsupportedChannelCount()
+    class Google_Service_ChromeManagement_GoogleChromeManagementV1CountDevicesPerReleaseChannelResponse extends \Google\Service\ChromeManagement\GoogleChromeManagementV1CountDevicesPerReleaseChannelResponse
     {
     }
 }

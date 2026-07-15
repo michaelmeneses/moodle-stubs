@@ -21,96 +21,105 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceConsumerManagement;
-
-class V1GenerateDefaultIdentityResponse extends \Google\Model
-{
-    /**
-     * Indicates that the AttachStatus was not set.
-     */
-    public const ATTACH_STATUS_ATTACH_STATUS_UNSPECIFIED = 'ATTACH_STATUS_UNSPECIFIED';
-    /**
-     * The default identity was attached to a role successfully in this request.
-     */
-    public const ATTACH_STATUS_ATTACHED = 'ATTACHED';
-    /**
-     * The request specified that no attempt should be made to attach the role.
-     */
-    public const ATTACH_STATUS_ATTACH_SKIPPED = 'ATTACH_SKIPPED';
-    /**
-     * Role was attached to the consumer project at some point in time. Tenant
-     * manager doesn't make assertion about the current state of the identity with
-     * respect to the consumer. Role attachment should happen only once after
-     * activation and cannot be reattached after customer removes it. (go/si-
-     * attach-role)
-     */
-    public const ATTACH_STATUS_PREVIOUSLY_ATTACHED = 'PREVIOUSLY_ATTACHED';
-    /**
-     * Role attachment was denied in this request by customer set org policy.
-     * (go/si-attach-role)
-     */
-    public const ATTACH_STATUS_ATTACH_DENIED_BY_ORG_POLICY = 'ATTACH_DENIED_BY_ORG_POLICY';
-    /**
-     * Status of the role attachment. Under development (go/si-attach-role),
-     * currently always return ATTACH_STATUS_UNSPECIFIED)
-     *
-     * @var string
-     */
-    public $attachStatus;
-    protected $identityType = V1DefaultIdentity::class;
-    protected $identityDataType = '';
-    /**
-     * Role attached to consumer project. Empty if not attached in this request.
-     * (Under development, currently always return empty.)
-     *
-     * @var string
-     */
-    public $role;
-    /**
-     * Status of the role attachment. Under development (go/si-attach-role),
-     * currently always return ATTACH_STATUS_UNSPECIFIED)
-     *
-     * Accepted values: ATTACH_STATUS_UNSPECIFIED, ATTACHED, ATTACH_SKIPPED,
-     * PREVIOUSLY_ATTACHED, ATTACH_DENIED_BY_ORG_POLICY
-     *
-     * @param self::ATTACH_STATUS_* $attachStatus
-     */
-    public function setAttachStatus($attachStatus)
+namespace Google\Service\ServiceConsumerManagement {
+    class V1GenerateDefaultIdentityResponse extends \Google\Model
     {
+        /**
+         * Indicates that the AttachStatus was not set.
+         */
+        public const ATTACH_STATUS_ATTACH_STATUS_UNSPECIFIED = 'ATTACH_STATUS_UNSPECIFIED';
+        /**
+         * The default identity was attached to a role successfully in this request.
+         */
+        public const ATTACH_STATUS_ATTACHED = 'ATTACHED';
+        /**
+         * The request specified that no attempt should be made to attach the role.
+         */
+        public const ATTACH_STATUS_ATTACH_SKIPPED = 'ATTACH_SKIPPED';
+        /**
+         * Role was attached to the consumer project at some point in time. Tenant
+         * manager doesn't make assertion about the current state of the identity with
+         * respect to the consumer. Role attachment should happen only once after
+         * activation and cannot be reattached after customer removes it. (go/si-
+         * attach-role)
+         */
+        public const ATTACH_STATUS_PREVIOUSLY_ATTACHED = 'PREVIOUSLY_ATTACHED';
+        /**
+         * Role attachment was denied in this request by customer set org policy.
+         * (go/si-attach-role)
+         */
+        public const ATTACH_STATUS_ATTACH_DENIED_BY_ORG_POLICY = 'ATTACH_DENIED_BY_ORG_POLICY';
+        /**
+         * Status of the role attachment. Under development (go/si-attach-role),
+         * currently always return ATTACH_STATUS_UNSPECIFIED)
+         *
+         * @var string
+         */
+        public $attachStatus;
+        protected $identityType = V1DefaultIdentity::class;
+        protected $identityDataType = '';
+        /**
+         * Role attached to consumer project. Empty if not attached in this request.
+         * (Under development, currently always return empty.)
+         *
+         * @var string
+         */
+        public $role;
+        /**
+         * Status of the role attachment. Under development (go/si-attach-role),
+         * currently always return ATTACH_STATUS_UNSPECIFIED)
+         *
+         * Accepted values: ATTACH_STATUS_UNSPECIFIED, ATTACHED, ATTACH_SKIPPED,
+         * PREVIOUSLY_ATTACHED, ATTACH_DENIED_BY_ORG_POLICY
+         *
+         * @param self::ATTACH_STATUS_* $attachStatus
+         */
+        public function setAttachStatus($attachStatus)
+        {
+        }
+        /**
+         * @return self::ATTACH_STATUS_*
+         */
+        public function getAttachStatus()
+        {
+        }
+        /**
+         * DefaultIdentity that was created or retrieved.
+         *
+         * @param V1DefaultIdentity $identity
+         */
+        public function setIdentity(V1DefaultIdentity $identity)
+        {
+        }
+        /**
+         * @return V1DefaultIdentity
+         */
+        public function getIdentity()
+        {
+        }
+        /**
+         * Role attached to consumer project. Empty if not attached in this request.
+         * (Under development, currently always return empty.)
+         *
+         * @param string $role
+         */
+        public function setRole($role)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRole()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::ATTACH_STATUS_*
+     * Runtime class alias of \Google\Service\ServiceConsumerManagement\V1GenerateDefaultIdentityResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttachStatus()
-    {
-    }
-    /**
-     * DefaultIdentity that was created or retrieved.
-     *
-     * @param V1DefaultIdentity $identity
-     */
-    public function setIdentity(V1DefaultIdentity $identity)
-    {
-    }
-    /**
-     * @return V1DefaultIdentity
-     */
-    public function getIdentity()
-    {
-    }
-    /**
-     * Role attached to consumer project. Empty if not attached in this request.
-     * (Under development, currently always return empty.)
-     *
-     * @param string $role
-     */
-    public function setRole($role)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRole()
+    class Google_Service_ServiceConsumerManagement_V1GenerateDefaultIdentityResponse extends \Google\Service\ServiceConsumerManagement\V1GenerateDefaultIdentityResponse
     {
     }
 }

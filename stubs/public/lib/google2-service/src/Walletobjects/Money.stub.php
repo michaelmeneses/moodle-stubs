@@ -21,75 +21,84 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class Money extends \Google\Model
-{
-    /**
-     * The currency code, such as "USD" or "EUR."
-     *
-     * @var string
-     */
-    public $currencyCode;
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * `"walletobjects#money"`.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $kind;
-    /**
-     * The unit of money amount in micros. For example, $1 USD would be
-     * represented as 1000000 micros.
-     *
-     * @var string
-     */
-    public $micros;
-    /**
-     * The currency code, such as "USD" or "EUR."
-     *
-     * @param string $currencyCode
-     */
-    public function setCurrencyCode($currencyCode)
+namespace Google\Service\Walletobjects {
+    class Money extends \Google\Model
     {
+        /**
+         * The currency code, such as "USD" or "EUR."
+         *
+         * @var string
+         */
+        public $currencyCode;
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * `"walletobjects#money"`.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $kind;
+        /**
+         * The unit of money amount in micros. For example, $1 USD would be
+         * represented as 1000000 micros.
+         *
+         * @var string
+         */
+        public $micros;
+        /**
+         * The currency code, such as "USD" or "EUR."
+         *
+         * @param string $currencyCode
+         */
+        public function setCurrencyCode($currencyCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCurrencyCode()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * `"walletobjects#money"`.
+         *
+         * @deprecated
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The unit of money amount in micros. For example, $1 USD would be
+         * represented as 1000000 micros.
+         *
+         * @param string $micros
+         */
+        public function setMicros($micros)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMicros()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Walletobjects\Money registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCurrencyCode()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * `"walletobjects#money"`.
-     *
-     * @deprecated
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The unit of money amount in micros. For example, $1 USD would be
-     * represented as 1000000 micros.
-     *
-     * @param string $micros
-     */
-    public function setMicros($micros)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMicros()
+    class Google_Service_Walletobjects_Money extends \Google\Service\Walletobjects\Money
     {
     }
 }

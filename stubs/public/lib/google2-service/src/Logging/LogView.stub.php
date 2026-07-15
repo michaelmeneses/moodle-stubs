@@ -21,124 +21,133 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Logging;
-
-class LogView extends \Google\Model
-{
-    /**
-     * Output only. The creation timestamp of the view.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Optional. Describes this view.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Optional. Filter that restricts which log entries in a bucket are visible
-     * in this view.Filters must be logical conjunctions that use the AND
-     * operator, and they can use any of the following qualifiers: SOURCE(), which
-     * specifies a project, folder, organization, or billing account of origin.
-     * resource.type, which specifies the resource type. LOG_ID(), which
-     * identifies the log.They can also use the negations of these qualifiers with
-     * the NOT operator.For example:SOURCE("projects/myproject") AND resource.type
-     * = "gce_instance" AND NOT LOG_ID("stdout")
-     *
-     * @var string
-     */
-    public $filter;
-    /**
-     * Output only. The resource name of the view.For example:projects/my-
-     * project/locations/global/buckets/my-bucket/views/my-view
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The last update timestamp of the view.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. The creation timestamp of the view.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\Logging {
+    class LogView extends \Google\Model
     {
+        /**
+         * Output only. The creation timestamp of the view.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Optional. Describes this view.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Optional. Filter that restricts which log entries in a bucket are visible
+         * in this view.Filters must be logical conjunctions that use the AND
+         * operator, and they can use any of the following qualifiers: SOURCE(), which
+         * specifies a project, folder, organization, or billing account of origin.
+         * resource.type, which specifies the resource type. LOG_ID(), which
+         * identifies the log.They can also use the negations of these qualifiers with
+         * the NOT operator.For example:SOURCE("projects/myproject") AND resource.type
+         * = "gce_instance" AND NOT LOG_ID("stdout")
+         *
+         * @var string
+         */
+        public $filter;
+        /**
+         * Output only. The resource name of the view.For example:projects/my-
+         * project/locations/global/buckets/my-bucket/views/my-view
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The last update timestamp of the view.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. The creation timestamp of the view.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Optional. Describes this view.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Optional. Filter that restricts which log entries in a bucket are visible
+         * in this view.Filters must be logical conjunctions that use the AND
+         * operator, and they can use any of the following qualifiers: SOURCE(), which
+         * specifies a project, folder, organization, or billing account of origin.
+         * resource.type, which specifies the resource type. LOG_ID(), which
+         * identifies the log.They can also use the negations of these qualifiers with
+         * the NOT operator.For example:SOURCE("projects/myproject") AND resource.type
+         * = "gce_instance" AND NOT LOG_ID("stdout")
+         *
+         * @param string $filter
+         */
+        public function setFilter($filter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilter()
+        {
+        }
+        /**
+         * Output only. The resource name of the view.For example:projects/my-
+         * project/locations/global/buckets/my-bucket/views/my-view
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The last update timestamp of the view.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Logging\LogView registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Optional. Describes this view.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Optional. Filter that restricts which log entries in a bucket are visible
-     * in this view.Filters must be logical conjunctions that use the AND
-     * operator, and they can use any of the following qualifiers: SOURCE(), which
-     * specifies a project, folder, organization, or billing account of origin.
-     * resource.type, which specifies the resource type. LOG_ID(), which
-     * identifies the log.They can also use the negations of these qualifiers with
-     * the NOT operator.For example:SOURCE("projects/myproject") AND resource.type
-     * = "gce_instance" AND NOT LOG_ID("stdout")
-     *
-     * @param string $filter
-     */
-    public function setFilter($filter)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFilter()
-    {
-    }
-    /**
-     * Output only. The resource name of the view.For example:projects/my-
-     * project/locations/global/buckets/my-bucket/views/my-view
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The last update timestamp of the view.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_Logging_LogView extends \Google\Service\Logging\LogView
     {
     }
 }

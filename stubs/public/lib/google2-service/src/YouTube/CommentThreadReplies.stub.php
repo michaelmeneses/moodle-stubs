@@ -21,27 +21,36 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class CommentThreadReplies extends \Google\Collection
-{
-    protected $collection_key = 'comments';
-    protected $commentsType = Comment::class;
-    protected $commentsDataType = 'array';
-    /**
-     * A limited number of replies. Unless the number of replies returned equals
-     * total_reply_count in the snippet the returned replies are only a subset of
-     * the total number of replies.
-     *
-     * @param Comment[] $comments
-     */
-    public function setComments($comments)
+namespace Google\Service\YouTube {
+    class CommentThreadReplies extends \Google\Collection
     {
+        protected $collection_key = 'comments';
+        protected $commentsType = Comment::class;
+        protected $commentsDataType = 'array';
+        /**
+         * A limited number of replies. Unless the number of replies returned equals
+         * total_reply_count in the snippet the returned replies are only a subset of
+         * the total number of replies.
+         *
+         * @param Comment[] $comments
+         */
+        public function setComments($comments)
+        {
+        }
+        /**
+         * @return Comment[]
+         */
+        public function getComments()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Comment[]
+     * Runtime class alias of \Google\Service\YouTube\CommentThreadReplies registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getComments()
+    class Google_Service_YouTube_CommentThreadReplies extends \Google\Service\YouTube\CommentThreadReplies
     {
     }
 }

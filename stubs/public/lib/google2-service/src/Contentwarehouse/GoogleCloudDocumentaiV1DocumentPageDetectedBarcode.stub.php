@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudDocumentaiV1DocumentPageDetectedBarcode extends \Google\Model
-{
-    protected $barcodeType = GoogleCloudDocumentaiV1Barcode::class;
-    protected $barcodeDataType = '';
-    protected $layoutType = GoogleCloudDocumentaiV1DocumentPageLayout::class;
-    protected $layoutDataType = '';
-    /**
-     * Detailed barcode information of the DetectedBarcode.
-     *
-     * @param GoogleCloudDocumentaiV1Barcode $barcode
-     */
-    public function setBarcode(GoogleCloudDocumentaiV1Barcode $barcode)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudDocumentaiV1DocumentPageDetectedBarcode extends \Google\Model
     {
+        protected $barcodeType = GoogleCloudDocumentaiV1Barcode::class;
+        protected $barcodeDataType = '';
+        protected $layoutType = GoogleCloudDocumentaiV1DocumentPageLayout::class;
+        protected $layoutDataType = '';
+        /**
+         * Detailed barcode information of the DetectedBarcode.
+         *
+         * @param GoogleCloudDocumentaiV1Barcode $barcode
+         */
+        public function setBarcode(GoogleCloudDocumentaiV1Barcode $barcode)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1Barcode
+         */
+        public function getBarcode()
+        {
+        }
+        /**
+         * Layout for DetectedBarcode.
+         *
+         * @param GoogleCloudDocumentaiV1DocumentPageLayout $layout
+         */
+        public function setLayout(GoogleCloudDocumentaiV1DocumentPageLayout $layout)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1DocumentPageLayout
+         */
+        public function getLayout()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiV1Barcode
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudDocumentaiV1DocumentPageDetectedBarcode registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBarcode()
-    {
-    }
-    /**
-     * Layout for DetectedBarcode.
-     *
-     * @param GoogleCloudDocumentaiV1DocumentPageLayout $layout
-     */
-    public function setLayout(GoogleCloudDocumentaiV1DocumentPageLayout $layout)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1DocumentPageLayout
-     */
-    public function getLayout()
+    class Google_Service_Contentwarehouse_GoogleCloudDocumentaiV1DocumentPageDetectedBarcode extends \Google\Service\Contentwarehouse\GoogleCloudDocumentaiV1DocumentPageDetectedBarcode
     {
     }
 }

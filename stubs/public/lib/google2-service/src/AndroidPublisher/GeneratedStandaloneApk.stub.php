@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class GeneratedStandaloneApk extends \Google\Model
-{
-    /**
-     * Download ID, which uniquely identifies the APK to download. Should be
-     * supplied to `generatedapks.download` method.
-     *
-     * @var string
-     */
-    public $downloadId;
-    /**
-     * ID of the generated variant.
-     *
-     * @var int
-     */
-    public $variantId;
-    /**
-     * Download ID, which uniquely identifies the APK to download. Should be
-     * supplied to `generatedapks.download` method.
-     *
-     * @param string $downloadId
-     */
-    public function setDownloadId($downloadId)
+namespace Google\Service\AndroidPublisher {
+    class GeneratedStandaloneApk extends \Google\Model
     {
+        /**
+         * Download ID, which uniquely identifies the APK to download. Should be
+         * supplied to `generatedapks.download` method.
+         *
+         * @var string
+         */
+        public $downloadId;
+        /**
+         * ID of the generated variant.
+         *
+         * @var int
+         */
+        public $variantId;
+        /**
+         * Download ID, which uniquely identifies the APK to download. Should be
+         * supplied to `generatedapks.download` method.
+         *
+         * @param string $downloadId
+         */
+        public function setDownloadId($downloadId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDownloadId()
+        {
+        }
+        /**
+         * ID of the generated variant.
+         *
+         * @param int $variantId
+         */
+        public function setVariantId($variantId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getVariantId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidPublisher\GeneratedStandaloneApk registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDownloadId()
-    {
-    }
-    /**
-     * ID of the generated variant.
-     *
-     * @param int $variantId
-     */
-    public function setVariantId($variantId)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getVariantId()
+    class Google_Service_AndroidPublisher_GeneratedStandaloneApk extends \Google\Service\AndroidPublisher\GeneratedStandaloneApk
     {
     }
 }

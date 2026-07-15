@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkspaceEvents;
-
-class NotificationEndpoint extends \Google\Model
-{
-    /**
-     * Immutable. The Pub/Sub topic that receives events for the subscription.
-     * Format: `projects/{project}/topics/{topic}` You must create the topic in
-     * the same Google Cloud project where you create this subscription. Note: The
-     * Google Workspace Events API uses [ordering
-     * keys](https://cloud.google.com/pubsub/docs/ordering) for the benefit of
-     * sequential events. If the Cloud Pub/Sub topic has a [message storage
-     * policy](https://cloud.google.com/pubsub/docs/resource-location-
-     * restriction#exceptions) configured to exclude the nearest Google Cloud
-     * region, publishing events with ordering keys will fail. When the topic
-     * receives events, the events are encoded as Pub/Sub messages. For details,
-     * see the [Google Cloud Pub/Sub Protocol Binding for
-     * CloudEvents](https://github.com/googleapis/google-
-     * cloudevents/blob/main/docs/spec/pubsub.md).
-     *
-     * @var string
-     */
-    public $pubsubTopic;
-    /**
-     * Immutable. The Pub/Sub topic that receives events for the subscription.
-     * Format: `projects/{project}/topics/{topic}` You must create the topic in
-     * the same Google Cloud project where you create this subscription. Note: The
-     * Google Workspace Events API uses [ordering
-     * keys](https://cloud.google.com/pubsub/docs/ordering) for the benefit of
-     * sequential events. If the Cloud Pub/Sub topic has a [message storage
-     * policy](https://cloud.google.com/pubsub/docs/resource-location-
-     * restriction#exceptions) configured to exclude the nearest Google Cloud
-     * region, publishing events with ordering keys will fail. When the topic
-     * receives events, the events are encoded as Pub/Sub messages. For details,
-     * see the [Google Cloud Pub/Sub Protocol Binding for
-     * CloudEvents](https://github.com/googleapis/google-
-     * cloudevents/blob/main/docs/spec/pubsub.md).
-     *
-     * @param string $pubsubTopic
-     */
-    public function setPubsubTopic($pubsubTopic)
+namespace Google\Service\WorkspaceEvents {
+    class NotificationEndpoint extends \Google\Model
     {
+        /**
+         * Immutable. The Pub/Sub topic that receives events for the subscription.
+         * Format: `projects/{project}/topics/{topic}` You must create the topic in
+         * the same Google Cloud project where you create this subscription. Note: The
+         * Google Workspace Events API uses [ordering
+         * keys](https://cloud.google.com/pubsub/docs/ordering) for the benefit of
+         * sequential events. If the Cloud Pub/Sub topic has a [message storage
+         * policy](https://cloud.google.com/pubsub/docs/resource-location-
+         * restriction#exceptions) configured to exclude the nearest Google Cloud
+         * region, publishing events with ordering keys will fail. When the topic
+         * receives events, the events are encoded as Pub/Sub messages. For details,
+         * see the [Google Cloud Pub/Sub Protocol Binding for
+         * CloudEvents](https://github.com/googleapis/google-
+         * cloudevents/blob/main/docs/spec/pubsub.md).
+         *
+         * @var string
+         */
+        public $pubsubTopic;
+        /**
+         * Immutable. The Pub/Sub topic that receives events for the subscription.
+         * Format: `projects/{project}/topics/{topic}` You must create the topic in
+         * the same Google Cloud project where you create this subscription. Note: The
+         * Google Workspace Events API uses [ordering
+         * keys](https://cloud.google.com/pubsub/docs/ordering) for the benefit of
+         * sequential events. If the Cloud Pub/Sub topic has a [message storage
+         * policy](https://cloud.google.com/pubsub/docs/resource-location-
+         * restriction#exceptions) configured to exclude the nearest Google Cloud
+         * region, publishing events with ordering keys will fail. When the topic
+         * receives events, the events are encoded as Pub/Sub messages. For details,
+         * see the [Google Cloud Pub/Sub Protocol Binding for
+         * CloudEvents](https://github.com/googleapis/google-
+         * cloudevents/blob/main/docs/spec/pubsub.md).
+         *
+         * @param string $pubsubTopic
+         */
+        public function setPubsubTopic($pubsubTopic)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPubsubTopic()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\WorkspaceEvents\NotificationEndpoint registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPubsubTopic()
+    class Google_Service_WorkspaceEvents_NotificationEndpoint extends \Google\Service\WorkspaceEvents\NotificationEndpoint
     {
     }
 }

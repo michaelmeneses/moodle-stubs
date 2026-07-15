@@ -21,341 +21,350 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class TaskData extends \Google\Collection
-{
-    protected $collection_key = 'accumulatorUpdates';
-    protected $accumulatorUpdatesType = AccumulableInfo::class;
-    protected $accumulatorUpdatesDataType = 'array';
-    /**
-     * @var int
-     */
-    public $attempt;
-    /**
-     * @var string
-     */
-    public $durationMillis;
-    /**
-     * @var string
-     */
-    public $errorMessage;
-    /**
-     * @var string
-     */
-    public $executorId;
-    /**
-     * @var string[]
-     */
-    public $executorLogs;
-    /**
-     * @var string
-     */
-    public $gettingResultTimeMillis;
-    /**
-     * @var bool
-     */
-    public $hasMetrics;
-    /**
-     * @var string
-     */
-    public $host;
-    /**
-     * @var int
-     */
-    public $index;
-    /**
-     * @var string
-     */
-    public $launchTime;
-    /**
-     * @var int
-     */
-    public $partitionId;
-    /**
-     * @var string
-     */
-    public $resultFetchStart;
-    /**
-     * @var string
-     */
-    public $schedulerDelayMillis;
-    /**
-     * @var bool
-     */
-    public $speculative;
-    /**
-     * @var int
-     */
-    public $stageAttemptId;
-    /**
-     * @var string
-     */
-    public $stageId;
-    /**
-     * @var string
-     */
-    public $status;
-    /**
-     * @var string
-     */
-    public $taskId;
-    /**
-     * @var string
-     */
-    public $taskLocality;
-    protected $taskMetricsType = TaskMetrics::class;
-    protected $taskMetricsDataType = '';
-    /**
-     * @param AccumulableInfo[] $accumulatorUpdates
-     */
-    public function setAccumulatorUpdates($accumulatorUpdates)
+namespace Google\Service\Dataproc {
+    class TaskData extends \Google\Collection
     {
+        protected $collection_key = 'accumulatorUpdates';
+        protected $accumulatorUpdatesType = AccumulableInfo::class;
+        protected $accumulatorUpdatesDataType = 'array';
+        /**
+         * @var int
+         */
+        public $attempt;
+        /**
+         * @var string
+         */
+        public $durationMillis;
+        /**
+         * @var string
+         */
+        public $errorMessage;
+        /**
+         * @var string
+         */
+        public $executorId;
+        /**
+         * @var string[]
+         */
+        public $executorLogs;
+        /**
+         * @var string
+         */
+        public $gettingResultTimeMillis;
+        /**
+         * @var bool
+         */
+        public $hasMetrics;
+        /**
+         * @var string
+         */
+        public $host;
+        /**
+         * @var int
+         */
+        public $index;
+        /**
+         * @var string
+         */
+        public $launchTime;
+        /**
+         * @var int
+         */
+        public $partitionId;
+        /**
+         * @var string
+         */
+        public $resultFetchStart;
+        /**
+         * @var string
+         */
+        public $schedulerDelayMillis;
+        /**
+         * @var bool
+         */
+        public $speculative;
+        /**
+         * @var int
+         */
+        public $stageAttemptId;
+        /**
+         * @var string
+         */
+        public $stageId;
+        /**
+         * @var string
+         */
+        public $status;
+        /**
+         * @var string
+         */
+        public $taskId;
+        /**
+         * @var string
+         */
+        public $taskLocality;
+        protected $taskMetricsType = TaskMetrics::class;
+        protected $taskMetricsDataType = '';
+        /**
+         * @param AccumulableInfo[] $accumulatorUpdates
+         */
+        public function setAccumulatorUpdates($accumulatorUpdates)
+        {
+        }
+        /**
+         * @return AccumulableInfo[]
+         */
+        public function getAccumulatorUpdates()
+        {
+        }
+        /**
+         * @param int $attempt
+         */
+        public function setAttempt($attempt)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getAttempt()
+        {
+        }
+        /**
+         * @param string $durationMillis
+         */
+        public function setDurationMillis($durationMillis)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDurationMillis()
+        {
+        }
+        /**
+         * @param string $errorMessage
+         */
+        public function setErrorMessage($errorMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getErrorMessage()
+        {
+        }
+        /**
+         * @param string $executorId
+         */
+        public function setExecutorId($executorId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExecutorId()
+        {
+        }
+        /**
+         * @param string[] $executorLogs
+         */
+        public function setExecutorLogs($executorLogs)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getExecutorLogs()
+        {
+        }
+        /**
+         * @param string $gettingResultTimeMillis
+         */
+        public function setGettingResultTimeMillis($gettingResultTimeMillis)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGettingResultTimeMillis()
+        {
+        }
+        /**
+         * @param bool $hasMetrics
+         */
+        public function setHasMetrics($hasMetrics)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getHasMetrics()
+        {
+        }
+        /**
+         * @param string $host
+         */
+        public function setHost($host)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHost()
+        {
+        }
+        /**
+         * @param int $index
+         */
+        public function setIndex($index)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getIndex()
+        {
+        }
+        /**
+         * @param string $launchTime
+         */
+        public function setLaunchTime($launchTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLaunchTime()
+        {
+        }
+        /**
+         * @param int $partitionId
+         */
+        public function setPartitionId($partitionId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPartitionId()
+        {
+        }
+        /**
+         * @param string $resultFetchStart
+         */
+        public function setResultFetchStart($resultFetchStart)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResultFetchStart()
+        {
+        }
+        /**
+         * @param string $schedulerDelayMillis
+         */
+        public function setSchedulerDelayMillis($schedulerDelayMillis)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSchedulerDelayMillis()
+        {
+        }
+        /**
+         * @param bool $speculative
+         */
+        public function setSpeculative($speculative)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSpeculative()
+        {
+        }
+        /**
+         * @param int $stageAttemptId
+         */
+        public function setStageAttemptId($stageAttemptId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getStageAttemptId()
+        {
+        }
+        /**
+         * @param string $stageId
+         */
+        public function setStageId($stageId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStageId()
+        {
+        }
+        /**
+         * @param string $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStatus()
+        {
+        }
+        /**
+         * @param string $taskId
+         */
+        public function setTaskId($taskId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTaskId()
+        {
+        }
+        /**
+         * @param string $taskLocality
+         */
+        public function setTaskLocality($taskLocality)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTaskLocality()
+        {
+        }
+        /**
+         * @param TaskMetrics $taskMetrics
+         */
+        public function setTaskMetrics(TaskMetrics $taskMetrics)
+        {
+        }
+        /**
+         * @return TaskMetrics
+         */
+        public function getTaskMetrics()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AccumulableInfo[]
+     * Runtime class alias of \Google\Service\Dataproc\TaskData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccumulatorUpdates()
-    {
-    }
-    /**
-     * @param int $attempt
-     */
-    public function setAttempt($attempt)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getAttempt()
-    {
-    }
-    /**
-     * @param string $durationMillis
-     */
-    public function setDurationMillis($durationMillis)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDurationMillis()
-    {
-    }
-    /**
-     * @param string $errorMessage
-     */
-    public function setErrorMessage($errorMessage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getErrorMessage()
-    {
-    }
-    /**
-     * @param string $executorId
-     */
-    public function setExecutorId($executorId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExecutorId()
-    {
-    }
-    /**
-     * @param string[] $executorLogs
-     */
-    public function setExecutorLogs($executorLogs)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getExecutorLogs()
-    {
-    }
-    /**
-     * @param string $gettingResultTimeMillis
-     */
-    public function setGettingResultTimeMillis($gettingResultTimeMillis)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGettingResultTimeMillis()
-    {
-    }
-    /**
-     * @param bool $hasMetrics
-     */
-    public function setHasMetrics($hasMetrics)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getHasMetrics()
-    {
-    }
-    /**
-     * @param string $host
-     */
-    public function setHost($host)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHost()
-    {
-    }
-    /**
-     * @param int $index
-     */
-    public function setIndex($index)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getIndex()
-    {
-    }
-    /**
-     * @param string $launchTime
-     */
-    public function setLaunchTime($launchTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLaunchTime()
-    {
-    }
-    /**
-     * @param int $partitionId
-     */
-    public function setPartitionId($partitionId)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPartitionId()
-    {
-    }
-    /**
-     * @param string $resultFetchStart
-     */
-    public function setResultFetchStart($resultFetchStart)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResultFetchStart()
-    {
-    }
-    /**
-     * @param string $schedulerDelayMillis
-     */
-    public function setSchedulerDelayMillis($schedulerDelayMillis)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSchedulerDelayMillis()
-    {
-    }
-    /**
-     * @param bool $speculative
-     */
-    public function setSpeculative($speculative)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSpeculative()
-    {
-    }
-    /**
-     * @param int $stageAttemptId
-     */
-    public function setStageAttemptId($stageAttemptId)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getStageAttemptId()
-    {
-    }
-    /**
-     * @param string $stageId
-     */
-    public function setStageId($stageId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStageId()
-    {
-    }
-    /**
-     * @param string $status
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStatus()
-    {
-    }
-    /**
-     * @param string $taskId
-     */
-    public function setTaskId($taskId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTaskId()
-    {
-    }
-    /**
-     * @param string $taskLocality
-     */
-    public function setTaskLocality($taskLocality)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTaskLocality()
-    {
-    }
-    /**
-     * @param TaskMetrics $taskMetrics
-     */
-    public function setTaskMetrics(TaskMetrics $taskMetrics)
-    {
-    }
-    /**
-     * @return TaskMetrics
-     */
-    public function getTaskMetrics()
+    class Google_Service_Dataproc_TaskData extends \Google\Service\Dataproc\TaskData
     {
     }
 }

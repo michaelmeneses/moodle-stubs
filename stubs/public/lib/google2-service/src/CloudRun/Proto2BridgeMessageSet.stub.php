@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class Proto2BridgeMessageSet extends \Google\Model
-{
+namespace Google\Service\CloudRun {
+    class Proto2BridgeMessageSet extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudRun\Proto2BridgeMessageSet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudRun_Proto2BridgeMessageSet extends \Google\Service\CloudRun\Proto2BridgeMessageSet
+    {
+    }
 }

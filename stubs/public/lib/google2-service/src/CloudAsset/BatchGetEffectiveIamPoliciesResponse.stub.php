@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class BatchGetEffectiveIamPoliciesResponse extends \Google\Collection
-{
-    protected $collection_key = 'policyResults';
-    protected $policyResultsType = EffectiveIamPolicy::class;
-    protected $policyResultsDataType = 'array';
-    /**
-     * The effective policies for a batch of resources. Note that the results
-     * order is the same as the order of
-     * BatchGetEffectiveIamPoliciesRequest.names. When a resource does not have
-     * any effective IAM policies, its corresponding policy_result will contain
-     * empty EffectiveIamPolicy.policies.
-     *
-     * @param EffectiveIamPolicy[] $policyResults
-     */
-    public function setPolicyResults($policyResults)
+namespace Google\Service\CloudAsset {
+    class BatchGetEffectiveIamPoliciesResponse extends \Google\Collection
     {
+        protected $collection_key = 'policyResults';
+        protected $policyResultsType = EffectiveIamPolicy::class;
+        protected $policyResultsDataType = 'array';
+        /**
+         * The effective policies for a batch of resources. Note that the results
+         * order is the same as the order of
+         * BatchGetEffectiveIamPoliciesRequest.names. When a resource does not have
+         * any effective IAM policies, its corresponding policy_result will contain
+         * empty EffectiveIamPolicy.policies.
+         *
+         * @param EffectiveIamPolicy[] $policyResults
+         */
+        public function setPolicyResults($policyResults)
+        {
+        }
+        /**
+         * @return EffectiveIamPolicy[]
+         */
+        public function getPolicyResults()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EffectiveIamPolicy[]
+     * Runtime class alias of \Google\Service\CloudAsset\BatchGetEffectiveIamPoliciesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPolicyResults()
+    class Google_Service_CloudAsset_BatchGetEffectiveIamPoliciesResponse extends \Google\Service\CloudAsset\BatchGetEffectiveIamPoliciesResponse
     {
     }
 }

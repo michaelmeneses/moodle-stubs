@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaSearchRequestImageQuery extends \Google\Model
-{
-    /**
-     * Base64 encoded image bytes. Supported image formats: JPEG, PNG, and BMP.
-     *
-     * @var string
-     */
-    public $imageBytes;
-    /**
-     * Base64 encoded image bytes. Supported image formats: JPEG, PNG, and BMP.
-     *
-     * @param string $imageBytes
-     */
-    public function setImageBytes($imageBytes)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaSearchRequestImageQuery extends \Google\Model
     {
+        /**
+         * Base64 encoded image bytes. Supported image formats: JPEG, PNG, and BMP.
+         *
+         * @var string
+         */
+        public $imageBytes;
+        /**
+         * Base64 encoded image bytes. Supported image formats: JPEG, PNG, and BMP.
+         *
+         * @param string $imageBytes
+         */
+        public function setImageBytes($imageBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImageBytes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaSearchRequestImageQuery registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getImageBytes()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaSearchRequestImageQuery extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaSearchRequestImageQuery
     {
     }
 }

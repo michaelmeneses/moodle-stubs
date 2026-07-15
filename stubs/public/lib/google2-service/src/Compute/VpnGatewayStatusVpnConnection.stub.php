@@ -21,89 +21,98 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class VpnGatewayStatusVpnConnection extends \Google\Collection
-{
-    protected $collection_key = 'tunnels';
-    /**
-     * Output only. URL reference to the peer external VPN gateways to which the
-     * VPN tunnels in this VPN connection are connected. This field is mutually
-     * exclusive with peer_gcp_gateway.
-     *
-     * @var string
-     */
-    public $peerExternalGateway;
-    /**
-     * Output only. URL reference to the peer side VPN gateways to which the VPN
-     * tunnels in this VPN connection are connected. This field is mutually
-     * exclusive with peer_gcp_gateway.
-     *
-     * @var string
-     */
-    public $peerGcpGateway;
-    protected $stateType = VpnGatewayStatusHighAvailabilityRequirementState::class;
-    protected $stateDataType = '';
-    protected $tunnelsType = VpnGatewayStatusTunnel::class;
-    protected $tunnelsDataType = 'array';
-    /**
-     * Output only. URL reference to the peer external VPN gateways to which the
-     * VPN tunnels in this VPN connection are connected. This field is mutually
-     * exclusive with peer_gcp_gateway.
-     *
-     * @param string $peerExternalGateway
-     */
-    public function setPeerExternalGateway($peerExternalGateway)
+namespace Google\Service\Compute {
+    class VpnGatewayStatusVpnConnection extends \Google\Collection
     {
+        protected $collection_key = 'tunnels';
+        /**
+         * Output only. URL reference to the peer external VPN gateways to which the
+         * VPN tunnels in this VPN connection are connected. This field is mutually
+         * exclusive with peer_gcp_gateway.
+         *
+         * @var string
+         */
+        public $peerExternalGateway;
+        /**
+         * Output only. URL reference to the peer side VPN gateways to which the VPN
+         * tunnels in this VPN connection are connected. This field is mutually
+         * exclusive with peer_gcp_gateway.
+         *
+         * @var string
+         */
+        public $peerGcpGateway;
+        protected $stateType = VpnGatewayStatusHighAvailabilityRequirementState::class;
+        protected $stateDataType = '';
+        protected $tunnelsType = VpnGatewayStatusTunnel::class;
+        protected $tunnelsDataType = 'array';
+        /**
+         * Output only. URL reference to the peer external VPN gateways to which the
+         * VPN tunnels in this VPN connection are connected. This field is mutually
+         * exclusive with peer_gcp_gateway.
+         *
+         * @param string $peerExternalGateway
+         */
+        public function setPeerExternalGateway($peerExternalGateway)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPeerExternalGateway()
+        {
+        }
+        /**
+         * Output only. URL reference to the peer side VPN gateways to which the VPN
+         * tunnels in this VPN connection are connected. This field is mutually
+         * exclusive with peer_gcp_gateway.
+         *
+         * @param string $peerGcpGateway
+         */
+        public function setPeerGcpGateway($peerGcpGateway)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPeerGcpGateway()
+        {
+        }
+        /**
+         * HighAvailabilityRequirementState for the VPN connection.
+         *
+         * @param VpnGatewayStatusHighAvailabilityRequirementState $state
+         */
+        public function setState(VpnGatewayStatusHighAvailabilityRequirementState $state)
+        {
+        }
+        /**
+         * @return VpnGatewayStatusHighAvailabilityRequirementState
+         */
+        public function getState()
+        {
+        }
+        /**
+         * List of VPN tunnels that are in this VPN connection.
+         *
+         * @param VpnGatewayStatusTunnel[] $tunnels
+         */
+        public function setTunnels($tunnels)
+        {
+        }
+        /**
+         * @return VpnGatewayStatusTunnel[]
+         */
+        public function getTunnels()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\VpnGatewayStatusVpnConnection registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPeerExternalGateway()
-    {
-    }
-    /**
-     * Output only. URL reference to the peer side VPN gateways to which the VPN
-     * tunnels in this VPN connection are connected. This field is mutually
-     * exclusive with peer_gcp_gateway.
-     *
-     * @param string $peerGcpGateway
-     */
-    public function setPeerGcpGateway($peerGcpGateway)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPeerGcpGateway()
-    {
-    }
-    /**
-     * HighAvailabilityRequirementState for the VPN connection.
-     *
-     * @param VpnGatewayStatusHighAvailabilityRequirementState $state
-     */
-    public function setState(VpnGatewayStatusHighAvailabilityRequirementState $state)
-    {
-    }
-    /**
-     * @return VpnGatewayStatusHighAvailabilityRequirementState
-     */
-    public function getState()
-    {
-    }
-    /**
-     * List of VPN tunnels that are in this VPN connection.
-     *
-     * @param VpnGatewayStatusTunnel[] $tunnels
-     */
-    public function setTunnels($tunnels)
-    {
-    }
-    /**
-     * @return VpnGatewayStatusTunnel[]
-     */
-    public function getTunnels()
+    class Google_Service_Compute_VpnGatewayStatusVpnConnection extends \Google\Service\Compute\VpnGatewayStatusVpnConnection
     {
     }
 }

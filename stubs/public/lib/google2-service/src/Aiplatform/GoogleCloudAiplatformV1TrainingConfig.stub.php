@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1TrainingConfig extends \Google\Model
-{
-    /**
-     * The timeout hours for the CMLE training job, expressed in milli hours i.e.
-     * 1,000 value in this field means 1 hour.
-     *
-     * @var string
-     */
-    public $timeoutTrainingMilliHours;
-    /**
-     * The timeout hours for the CMLE training job, expressed in milli hours i.e.
-     * 1,000 value in this field means 1 hour.
-     *
-     * @param string $timeoutTrainingMilliHours
-     */
-    public function setTimeoutTrainingMilliHours($timeoutTrainingMilliHours)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1TrainingConfig extends \Google\Model
     {
+        /**
+         * The timeout hours for the CMLE training job, expressed in milli hours i.e.
+         * 1,000 value in this field means 1 hour.
+         *
+         * @var string
+         */
+        public $timeoutTrainingMilliHours;
+        /**
+         * The timeout hours for the CMLE training job, expressed in milli hours i.e.
+         * 1,000 value in this field means 1 hour.
+         *
+         * @param string $timeoutTrainingMilliHours
+         */
+        public function setTimeoutTrainingMilliHours($timeoutTrainingMilliHours)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimeoutTrainingMilliHours()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1TrainingConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTimeoutTrainingMilliHours()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1TrainingConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1TrainingConfig
     {
     }
 }

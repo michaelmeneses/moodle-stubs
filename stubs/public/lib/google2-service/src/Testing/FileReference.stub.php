@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Testing;
-
-class FileReference extends \Google\Model
-{
-    /**
-     * A path to a file in Google Cloud Storage. Example: gs://build-
-     * app-1414623860166/app%40debug-unaligned.apk These paths are expected to be
-     * url encoded (percent encoding)
-     *
-     * @var string
-     */
-    public $gcsPath;
-    /**
-     * A path to a file in Google Cloud Storage. Example: gs://build-
-     * app-1414623860166/app%40debug-unaligned.apk These paths are expected to be
-     * url encoded (percent encoding)
-     *
-     * @param string $gcsPath
-     */
-    public function setGcsPath($gcsPath)
+namespace Google\Service\Testing {
+    class FileReference extends \Google\Model
     {
+        /**
+         * A path to a file in Google Cloud Storage. Example: gs://build-
+         * app-1414623860166/app%40debug-unaligned.apk These paths are expected to be
+         * url encoded (percent encoding)
+         *
+         * @var string
+         */
+        public $gcsPath;
+        /**
+         * A path to a file in Google Cloud Storage. Example: gs://build-
+         * app-1414623860166/app%40debug-unaligned.apk These paths are expected to be
+         * url encoded (percent encoding)
+         *
+         * @param string $gcsPath
+         */
+        public function setGcsPath($gcsPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGcsPath()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Testing\FileReference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGcsPath()
+    class Google_Service_Testing_FileReference extends \Google\Service\Testing\FileReference
     {
     }
 }

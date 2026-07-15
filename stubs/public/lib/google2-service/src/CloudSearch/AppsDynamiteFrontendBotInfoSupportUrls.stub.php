@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteFrontendBotInfoSupportUrls extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $adminConfigUrl;
-    /**
-     * @var string
-     */
-    public $deletionPolicyUrl;
-    /**
-     * @var string
-     */
-    public $privacyPolicyUrl;
-    /**
-     * @var string
-     */
-    public $setupUrl;
-    /**
-     * @var string
-     */
-    public $supportUrl;
-    /**
-     * @var string
-     */
-    public $tosUrl;
-    /**
-     * @param string
-     */
-    public function setAdminConfigUrl($adminConfigUrl)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteFrontendBotInfoSupportUrls extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $adminConfigUrl;
+        /**
+         * @var string
+         */
+        public $deletionPolicyUrl;
+        /**
+         * @var string
+         */
+        public $privacyPolicyUrl;
+        /**
+         * @var string
+         */
+        public $setupUrl;
+        /**
+         * @var string
+         */
+        public $supportUrl;
+        /**
+         * @var string
+         */
+        public $tosUrl;
+        /**
+         * @param string
+         */
+        public function setAdminConfigUrl($adminConfigUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdminConfigUrl()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDeletionPolicyUrl($deletionPolicyUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeletionPolicyUrl()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPrivacyPolicyUrl($privacyPolicyUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrivacyPolicyUrl()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSetupUrl($setupUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSetupUrl()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSupportUrl($supportUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSupportUrl()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTosUrl($tosUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTosUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteFrontendBotInfoSupportUrls registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdminConfigUrl()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDeletionPolicyUrl($deletionPolicyUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeletionPolicyUrl()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPrivacyPolicyUrl($privacyPolicyUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrivacyPolicyUrl()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSetupUrl($setupUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSetupUrl()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSupportUrl($supportUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSupportUrl()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTosUrl($tosUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTosUrl()
+    class Google_Service_CloudSearch_AppsDynamiteFrontendBotInfoSupportUrls extends \Google\Service\CloudSearch\AppsDynamiteFrontendBotInfoSupportUrls
     {
     }
 }
